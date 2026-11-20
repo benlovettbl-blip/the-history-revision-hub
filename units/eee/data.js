@@ -1,4 +1,4 @@
-const unitData = {
+export default {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -1629,7 +1629,116 @@ const unitData = {
         "kt1.1",
         "lesson_1_1"
       ],
-      "enquiry_question": "How did an inexperienced queen secure an impoverished and divided England amidst acute foreign encirclement in 1558?"
+      "enquiry_question": "How did an inexperienced queen secure an impoverished and divided England amidst acute foreign encirclement in 1558?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "eee_l01_visual_story_sheet",
+        "ktBadge": "Key Topic 1.1 • Lesson 1",
+        "datesBadge": "1558–1560",
+        "topicLabel": "Key Topic 1: Queen, Government and Religion, 1558–69",
+        "title": "Why Was Elizabeth’s Throne So Fragile in 1558?",
+        "spokenTitle": "Why was Elizabeth’s throne so fragile in 1558?",
+        "thumbUrl": "/images/elizabeth_coronation_portrait.jpg",
+        "provenanceNote": "National Portrait Gallery, Parliamentary Archives, BnF & Sherborne Castle (Zero AI Imagery)",
+        "bridges": [
+          "Royal Patronage",
+          "Catholic Doubts",
+          "Tax Leverage",
+          "Auld Alliance",
+          "Cecil’s Grip"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Accession & £300,000 Debt",
+            "date": "17 Nov 1558",
+            "img": "/images/elizabeth_coronation_portrait.jpg",
+            "mode": "contain",
+            "stat": "£300,000 Crown Debt & 14% Antwerp Loans",
+            "html": "Aged twenty-five, Elizabeth inherited a weakened realm burdened by a <strong>£300,000 Crown debt</strong> and costly Antwerp loans. On day one, she appointed <strong>Sir William Cecil</strong> as Principal Secretary.",
+            "spoken": "Why was Elizabeth’s throne so fragile in 1558? <short pause> Aged twenty-five, Elizabeth inherited a weakened realm burdened by a 300,000 pounds Crown debt and costly Antwerp loans. On day one, she appointed Sir William Cecil as Principal Secretary.",
+            "paired_prose_hash": "ac477b18f6",
+            "connective": "Why was Elizabeth’s throne so fragile in 1558?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Court & Privy Council Rule",
+            "date": "Nov–Dec 1558",
+            "img": "/images/elizabeth_procession_1601.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "19-Man Privy Council Directed Daily Rule",
+            "html": "Lacking a standing army or police force, Elizabeth governed through a 19-man <strong>Privy Council</strong>. She balanced rival nobles using royal <strong>patronage</strong>, offices, and trade <strong>monopolies</strong>.",
+            "spoken": "With no standing army, she needed loyal nobles to govern. <short pause> Lacking a standing army or police force, Elizabeth governed through a 19-man Privy Council . She balanced rival nobles using royal patronage , offices, and trade monopolies .",
+            "paired_prose_hash": "9d3b16903e",
+            "connective": "With no standing army, she needed loyal nobles to govern."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Gender & Legitimacy Doubts",
+            "date": "Dec 1558",
+            "img": "/units/eee/assets/portraits/anne_boleyn.jpg",
+            "mode": "contain",
+            "stat": "Catholics Rejected Henry VIII’s 1533 Marriage",
+            "html": "Critics doubted a female ruler, while devout Catholics rejected Henry VIII’s marriage to <strong>Anne Boleyn</strong> and called Elizabeth <strong>illegitimate</strong>. MPs urged her to wed and bear a <strong>Protestant heir</strong>.",
+            "spoken": "Yet her gender and birth sparked immediate doubts over her crown. <short pause> Critics doubted a female ruler, while devout Catholics rejected Henry VIII’s marriage to Anne Boleyn and called Elizabeth illegitimate . MPs urged her to wed and bear a Protestant heir .",
+            "paired_prose_hash": "b19bc56fa1",
+            "connective": "Yet her gender and birth sparked immediate doubts over her crown."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Parliament & Shire Elites",
+            "date": "Jan–May 1559",
+            "img": "/images/elizabeth_i_in_parliament_1559.jpg",
+            "mode": "contain-light",
+            "stat": "Extraordinary War Taxes Needed MPs’ Consent",
+            "html": "Unpaid <strong>Lords Lieutenant</strong> led county militias while gentry <strong>Justices of the Peace</strong> enforced local laws. Elizabeth guarded royal powers, yet needed <strong>Parliament</strong> to vote emergency taxes.",
+            "spoken": "Beyond Whitehall, royal power depended on county elites and Parliament. <short pause> Unpaid Lords Lieutenant led county militias while gentry Justices of the Peace enforced local laws. Elizabeth guarded royal powers, yet needed Parliament to vote emergency taxes.",
+            "paired_prose_hash": "b3faa70265",
+            "connective": "Beyond Whitehall, royal power depended on county elites and Parliament."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "France, Calais & Scotland",
+            "date": "1558–1560",
+            "img": "/units/eee/assets/portraits/francis_ii.jpg",
+            "mode": "contain",
+            "stat": "Calais Lost Jan 1558; French Troops in Scotland",
+            "html": "After losing <strong>Calais</strong> in 1558, England faced hostile Catholic neighbours. Through the <strong>Auld Alliance</strong>, French troops garrisoned Scotland while <strong>Mary, Queen of Scots</strong> claimed England’s crown.",
+            "spoken": "Abroad, hostile Catholic powers surrounded England on two fronts. <short pause> After losing Calais in 1558, England faced hostile Catholic neighbours. Through the Auld Alliance , French troops garrisoned Scotland while Mary, Queen of Scots claimed England’s crown.",
+            "paired_prose_hash": "5694462350",
+            "connective": "Abroad, hostile Catholic powers surrounded England on two fronts."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Cautious Grip Secures the Crown",
+            "date": "By 1559",
+            "img": "/images/sir_william_cecil_lord_burghley.jpg",
+            "mode": "contain",
+            "stat": "40-Year Political Partnership With William Cecil",
+            "html": "Surrounded by debt, legitimacy doubts, and foreign troops, Elizabeth avoided rash wars. Guided by <strong>William Cecil</strong> and <strong>royal patronage</strong>, she stabilised royal rule and prepared a <strong>religious settlement</strong>.",
+            "spoken": "Careful statecraft kept the young Queen secure on her throne. <short pause> Surrounded by debt, legitimacy doubts, and foreign troops, Elizabeth avoided rash wars. Guided by William Cecil and royal patronage , she stabilised royal rule and prepared a religious settlement .",
+            "connective": "Careful statecraft kept the young Queen secure on her throne."
+          }
+        ],
+        "takeaway": "In 1558 Elizabeth inherited £300,000 of debt, Catholic doubts over her birth, and French encirclement, but secured her throne through William Cecil and patronage.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> In 1558 Elizabeth inherited 300,000 pounds of debt, Catholic doubts over her birth, and French encirclement, but secured her throne through William Cecil and patronage.",
+        "vocab": [
+          [
+            "1. Privy Council",
+            "19 trusted advisers chosen by Elizabeth to run daily government and defence."
+          ],
+          [
+            "2. Patronage",
+            "Granting royal offices, lands, and monopolies to keep powerful nobles loyal."
+          ],
+          [
+            "3. Legitimacy",
+            "Lawful right to rule; Catholics called Elizabeth illegitimate by birth."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_1_2",
@@ -3106,7 +3215,115 @@ const unitData = {
         "kt1.2",
         "lesson_1_2"
       ],
-      "enquiry_question": "To what extent was the 1559 Religious Settlement an enduring theological compromise designed to prevent civil war?"
+      "enquiry_question": "To what extent was the 1559 Religious Settlement an enduring theological compromise designed to prevent civil war?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "eee_l02_visual_story_sheet",
+        "ktBadge": "Key Topic 1.2 • Lesson 2",
+        "datesBadge": "1558–1560s",
+        "topicLabel": "Key Topic 1: Queen, Government and Religion, 1558–69",
+        "title": "How Did Elizabeth’s 1559 Religious Settlement Avoid Civil War?",
+        "spokenTitle": "How did Elizabeth’s 1559 Religious Settlement avoid civil war?",
+        "thumbUrl": "/images/book_of_common_prayer_1559_authentic.png",
+        "provenanceNote": "British Library, National Portrait Gallery, British Museum & TNA Kew (Zero AI Imagery)",
+        "bridges": [
+          "Break With Rome",
+          "Common Prayer",
+          "57 Injunctions",
+          "125 Visitors",
+          "Peaceful Parishes"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "A Nation Split Over Faith",
+            "date": "Nov 1558–Jan 1559",
+            "img": "/images/queen_mary_i_mary_tudor.jpg",
+            "mode": "contain",
+            "stat": "26 Catholic Marian Bishops Sat in the Lords",
+            "html": "Conservative <strong>northern gentry</strong> stayed loyal to Catholic Mass, whereas London and south-eastern ports favoured Protestantism. Returning <strong>Marian exiles</strong> clashed sharply with 26 Catholic <strong>Marian bishops</strong>.",
+            "spoken": "How did Elizabeth’s 1559 Religious Settlement avoid civil war? <short pause> Conservative northern gentry stayed loyal to Catholic Mass, whereas London and south-eastern ports favoured Protestantism. Returning Marian exiles clashed sharply with 26 Catholic Marian bishops .",
+            "paired_prose_hash": "06e8175088",
+            "connective": "How did Elizabeth’s 1559 Religious Settlement avoid civil war?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "The Act of Supremacy",
+            "date": "May 1559",
+            "img": "/images/elizabeth_i_in_parliament_engraving.jpg",
+            "mode": "contain-light",
+            "stat": "8,000 Parish Priests Took the Oath of Supremacy",
+            "html": "The <strong>Act of Supremacy</strong> ended papal rule and named Elizabeth <strong>Supreme Governor</strong> to calm critics. Nearly all Marian bishops resigned, yet roughly <strong>8,000 parish priests</strong> swore the oath.",
+            "spoken": "First, Parliament restored royal authority over the English Church. <short pause> The Act of Supremacy ended papal rule and named Elizabeth Supreme Governor to calm critics. Nearly all Marian bishops resigned, yet roughly 8,000 parish priests swore the oath.",
+            "paired_prose_hash": "b534f20625",
+            "connective": "First, Parliament restored royal authority over the English Church."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The Act of Uniformity",
+            "date": "May 1559",
+            "img": "/images/book_of_common_prayer_1559_authentic.png",
+            "mode": "contain-light",
+            "stat": "12-Pence Weekly Fine for Missing Sunday Church",
+            "html": "The <strong>Act of Uniformity</strong> required one English <strong>Book of Common Prayer</strong> and fined <strong>recusants</strong> twelve pence for missing church. Blended communion words and priestly vestments reassured traditionalists.",
+            "spoken": "Alongside royal supremacy came a single pattern of Sunday worship. <short pause> The Act of Uniformity required one English Book of Common Prayer and fined recusants twelve pence for missing church. Blended communion words and priestly vestments reassured traditionalists.",
+            "paired_prose_hash": "d7beca36b3",
+            "connective": "Alongside royal supremacy came a single pattern of Sunday worship."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "57 Royal Injunctions",
+            "date": "Summer 1559",
+            "img": "/images/great_bible_frontispiece.jpg",
+            "mode": "contain-light",
+            "stat": "Every Parish Had to Display an English Bible",
+            "html": "William Cecil’s 57 <strong>Royal Injunctions</strong> ordered every parish to display an <strong>English Bible</strong> and denounce papal rule. They banned Catholic <strong>pilgrimages</strong> and fake miracles while keeping hymns.",
+            "spoken": "Detailed royal instructions then showed local clergy how to obey. <short pause> William Cecil’s 57 Royal Injunctions ordered every parish to display an English Bible and denounce papal rule. They banned Catholic pilgrimages and fake miracles while keeping hymns.",
+            "paired_prose_hash": "d036777363",
+            "connective": "Detailed royal instructions then showed local clergy how to obey."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Visitations & Church Courts",
+            "date": "1559–1560s",
+            "img": "/units/eee/assets/portraits/william_cecil.jpg",
+            "mode": "contain",
+            "stat": "Only ~400 Clergy Resigned or Were Dismissed",
+            "html": "In autumn 1559, 125 royal commissioners held nationwide <strong>visitations</strong>; only around <strong>400 clergy</strong> left office. Local <strong>church courts</strong> policed morals while pulpits broadcast royal proclamations.",
+            "spoken": "Nationwide inspections enforced the new rules across every diocese. <short pause> In autumn 1559, 125 royal commissioners held nationwide visitations ; only around 400 clergy left office. Local church courts policed morals while pulpits broadcast royal proclamations.",
+            "paired_prose_hash": "6fc5319a3d",
+            "connective": "Nationwide inspections enforced the new rules across every diocese."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "A Durable Protestant Middle Way",
+            "date": "By Mid-1560s",
+            "img": "/images/elizabeth_ermine_portrait.jpg",
+            "mode": "contain",
+            "stat": "Protestant Doctrine With Familiar Traditional Form",
+            "html": "By pairing <strong>Protestant scripture</strong> with familiar church ceremony, Elizabeth’s <strong>1559 Settlement</strong> satisfied moderate subjects. Most parishes conformed peacefully, sparing England from religious <strong>civil war</strong>.",
+            "spoken": "This cautious middle way gave England vital religious stability. <short pause> By pairing Protestant scripture with familiar church ceremony, Elizabeth’s 1559 Settlement satisfied moderate subjects. Most parishes conformed peacefully, sparing England from religious civil war .",
+            "connective": "This cautious middle way gave England vital religious stability."
+          }
+        ],
+        "takeaway": "Elizabeth’s 1559 Religious Settlement paired Protestant doctrine and an English Prayer Book with traditional church dignity, winning broad acceptance and avoiding civil war.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Elizabeth’s 1559 Religious Settlement paired Protestant doctrine and an English Prayer Book with traditional church dignity, winning broad acceptance and avoiding civil war.",
+        "vocab": [
+          [
+            "1. Supreme Governor",
+            "Elizabeth’s 1559 Church title, chosen to calm Catholics and male critics."
+          ],
+          [
+            "2. Recusant",
+            "Anyone refusing to attend Sunday Anglican services, fined 12 pence a week."
+          ],
+          [
+            "3. Visitations",
+            "Official royal or bishop inspections checking clergy obeyed Church laws."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_1_3",
@@ -4580,7 +4797,115 @@ const unitData = {
         "kt1.3",
         "lesson_1_3"
       ],
-      "enquiry_question": "Why did opposition from Puritan zealots and Catholic traditionalists test Elizabeth’s middle way during the 1560s?"
+      "enquiry_question": "Why did opposition from Puritan zealots and Catholic traditionalists test Elizabeth’s middle way during the 1560s?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "eee_l03_visual_story_sheet",
+        "ktBadge": "Key Topic 1.3 • Lesson 3",
+        "datesBadge": "1559–1569",
+        "topicLabel": "Key Topic 1: Queen, Government and Religion, 1558–69",
+        "title": "Why Did Puritans and Catholics Test Elizabeth’s Middle Way?",
+        "spokenTitle": "Why did Puritans and Catholics test Elizabeth’s middle way?",
+        "thumbUrl": "/units/eee/assets/portraits/alba.jpg",
+        "provenanceNote": "National Portrait Gallery, British Library, Prado & Vatican Archive (Zero AI Imagery)",
+        "bridges": [
+          "Surplice Clash",
+          "Counter-Reform",
+          "Alba’s Army",
+          "Bullion Seized",
+          "Danger Abroad"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Puritans & Crucifix Dispute",
+            "date": "1559–1563",
+            "img": "/images/queen_elizabeth_i.jpg",
+            "mode": "contain",
+            "stat": "1563 Puritan Reforms Missed by Just One Vote",
+            "html": "Zealous <strong>Puritans</strong> wanted plain Geneva-style worship without organs or silver <strong>crucifix</strong> ornaments. At the <strong>1563 Convocation</strong>, Puritan plans to scrap kneeling and feast days lost by one vote.",
+            "spoken": "Why did Puritans and Catholics test Elizabeth’s middle way? <short pause> Zealous Puritans wanted plain Geneva-style worship without organs or silver crucifix ornaments. At the 1563 Convocation , Puritan plans to scrap kneeling and feast days lost by one vote.",
+            "paired_prose_hash": "776036be91",
+            "connective": "Why did Puritans and Catholics test Elizabeth’s middle way?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "1566 Vestments Controversy",
+            "date": "March 1566",
+            "img": "/images/book_of_common_prayer_1559_authentic.png",
+            "mode": "contain-light",
+            "stat": "37 London Puritan Priests Deprived of Posts",
+            "html": "Puritans condemned the white linen <strong>surplice</strong> as ‘rags of Rome’. Ordered by Elizabeth, Archbishop <strong>Matthew Parker’s</strong> 1566 <em>Book of Advertisements</em> suspended <strong>37 Puritan priests</strong> who refused.",
+            "spoken": "Conflict soon peaked over the robes priests had to wear. <short pause> Puritans condemned the white linen surplice as ‘rags of Rome’. Ordered by Elizabeth, Archbishop Matthew Parker’s 1566 Book of Advertisements suspended 37 Puritan priests who refused.",
+            "paired_prose_hash": "62c22358c6",
+            "connective": "Conflict soon peaked over the robes priests had to wear."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Church Papists & Douai",
+            "date": "1559–1568",
+            "img": "/units/eee/assets/portraits/pius_v.jpg",
+            "mode": "contain",
+            "stat": "1568: Douai Seminary Founded to Train Priests",
+            "html": "Many northern Catholics acted as <strong>Church Papists</strong>, attending Sunday church to dodge fines before private Mass. By 1566–68, the <strong>Counter-Reformation</strong>, <strong>Pope Pius V</strong>, and Douai hardened resistance.",
+            "spoken": "Meanwhile, quiet Catholic conformity began hardening under papal pressure. <short pause> Many northern Catholics acted as Church Papists , attending Sunday church to dodge fines before private Mass. By 1566, 68, the Counter-Reformation , Pope Pius V , and Douai hardened resistance.",
+            "paired_prose_hash": "e55820bdc1",
+            "connective": "Meanwhile, quiet Catholic conformity began hardening under papal pressure."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Alba’s Army in Flanders",
+            "date": "1562–1568",
+            "img": "/units/eee/assets/portraits/alba.jpg",
+            "mode": "contain",
+            "stat": "10,000 Spanish Veterans Sent Across the Channel",
+            "html": "After failed aid to French Huguenots, far worse danger rose in the Spanish Netherlands. In 1567, Philip II sent the <strong>Duke of Alba</strong> with <strong>10,000 troops</strong> and his brutal <strong>Council of Troubles</strong>.",
+            "spoken": "Far graver Catholic danger then appeared right across the English Channel. <short pause> After failed aid to French Huguenots, far worse danger rose in the Spanish Netherlands. In 1567, Philip II sent the Duke of Alba with 10,000 troops and his brutal Council of Troubles .",
+            "paired_prose_hash": "de7751d72b",
+            "connective": "Far graver Catholic danger then appeared right across the English Channel."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Seizing the Genoese Loan",
+            "date": "Nov 1568–1569",
+            "img": "/images/king_philip_ii_of_spain.jpg",
+            "mode": "contain",
+            "stat": "£85,000 Bullion Impounded; Antwerp Trade Halted",
+            "html": "When storm-hit Spanish ships carrying the <strong>£85,000 Genoese Loan</strong> sheltered in England, Elizabeth impounded the gold to weaken Alba. Outraged, Alba imposed a punishing <strong>Antwerp trade embargo</strong>.",
+            "spoken": "Tensions with Spain exploded when treasure ships sheltered in English ports. <short pause> When storm-hit Spanish ships carrying the 85,000 pounds Genoese Loan sheltered in England, Elizabeth impounded the gold to weaken Alba. Outraged, Alba imposed a punishing Antwerp trade embargo .",
+            "paired_prose_hash": "40ffc9d253",
+            "connective": "Tensions with Spain exploded when treasure ships sheltered in English ports."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Home Conformers, Foreign Threat",
+            "date": "By 1569",
+            "img": "/images/sir_william_cecil_lord_burghley.jpg",
+            "mode": "contain",
+            "stat": "Puritans Contained, But Anglo-Spanish Crisis Grew",
+            "html": "Lacking noble support, most <strong>Puritans</strong> grudgingly wore the surplice. Yet <strong>Alba’s Spanish army</strong> in Flanders and Counter-Reformation zeal turned Catholic opposition into an urgent <strong>security threat</strong>.",
+            "spoken": "Elizabeth held the line at home, but foreign Catholic danger was rising fast. <short pause> Lacking noble support, most Puritans grudgingly wore the surplice. Yet Alba’s Spanish army in Flanders and Counter-Reformation zeal turned Catholic opposition into an urgent security threat .",
+            "connective": "Elizabeth held the line at home, but foreign Catholic danger was rising fast."
+          }
+        ],
+        "takeaway": "During the 1560s Elizabeth contained Puritan protests over crucifixes and vestments, while Alba’s army in Flanders and the Genoese Loan turned Spain into a grave threat.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> During the 1560s Elizabeth contained Puritan protests over crucifixes and vestments, while Alba’s army in Flanders and the Genoese Loan turned Spain into a grave threat.",
+        "vocab": [
+          [
+            "1. Puritans",
+            "Strict Protestants wanting to strip all Catholic ritual from the Church."
+          ],
+          [
+            "2. Church Papists",
+            "Catholics who attended Sunday Anglican services solely to avoid fines."
+          ],
+          [
+            "3. Genoese Loan",
+            "£85,000 of Italian gold bound for Alba’s army, seized by Elizabeth in 1568."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_1_4",
@@ -6053,7 +6378,115 @@ const unitData = {
         "kt1.4",
         "lesson_1_4"
       ],
-      "enquiry_question": "How did the arrival of Mary, Queen of Scots in 1568 transform Elizabeth’s dynastic security into a permanent national crisis?"
+      "enquiry_question": "How did the arrival of Mary, Queen of Scots in 1568 transform Elizabeth’s dynastic security into a permanent national crisis?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "eee_l04_visual_story_sheet",
+        "ktBadge": "Key Topic 1.4 • Lesson 4",
+        "datesBadge": "1560–1569",
+        "topicLabel": "Key Topic 1: Queen, Government and Religion, 1558–69",
+        "title": "Why Did Mary, Queen of Scots Become a Crisis for Elizabeth?",
+        "spokenTitle": "Why did Mary, Queen of Scots become a crisis for Elizabeth?",
+        "thumbUrl": "/images/mary_queen_of_scots_pink_portrait.jpg",
+        "provenanceNote": "Scottish National Portrait Gallery, NPG London & TNA Kew (Zero AI Imagery)",
+        "bridges": [
+          "Edinburgh Scandal",
+          "Flight South",
+          "Casket Letters",
+          "Norfolk Scheme",
+          "Tower & Revolt"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "A Rival Catholic Tudor Heir",
+            "date": "1560–May 1568",
+            "img": "/images/mary_queen_of_scots_pink_portrait.jpg",
+            "mode": "contain",
+            "stat": "Direct Tudor Claim + Healthy Son James VI (1566)",
+            "html": "As Catholic granddaughter of <strong>Margaret Tudor</strong> and mother of Prince <strong>James VI</strong>, <strong>Mary, Queen of Scots</strong> held a strong claim to England’s throne, rallying hopes among Catholic nobles.",
+            "spoken": "Why did Mary, Queen of Scots become a crisis for Elizabeth? <short pause> As Catholic granddaughter of Margaret Tudor and mother of Prince James VI , Mary, Queen of Scots held a strong claim to England’s throne, rallying hopes among Catholic nobles.",
+            "paired_prose_hash": "e470021de4",
+            "connective": "Why did Mary, Queen of Scots become a crisis for Elizabeth?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Darnley’s Murder & Bothwell",
+            "date": "Feb–June 1567",
+            "img": "/units/eee/assets/portraits/darnley.jpg",
+            "mode": "contain",
+            "stat": "Feb 1567: Explosion at Kirk o’ Field Kills Darnley",
+            "html": "In February 1567, a blast destroyed <strong>Kirk o’ Field</strong> and Mary’s husband <strong>Lord Darnley</strong> was found strangled. When Mary wed chief suspect <strong>Earl of Bothwell</strong>, Protestant Scots rebelled.",
+            "spoken": "Scandal and murder in Edinburgh shattered Mary’s Scottish rule. <short pause> In February 1567, a blast destroyed Kirk o’ Field and Mary’s husband Lord Darnley was found strangled. When Mary wed chief suspect Earl of Bothwell , Protestant Scots rebelled.",
+            "paired_prose_hash": "4a5a4149e1",
+            "connective": "Scandal and murder in Edinburgh shattered Mary’s Scottish rule."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Lochleven Escape & Dilemma",
+            "date": "July 1567–May 1568",
+            "img": "/images/queen_elizabeth_i.jpg",
+            "mode": "contain",
+            "stat": "May 1568: Mary Flees Across Solway Firth",
+            "html": "Forced to abdicate at <strong>Lochleven</strong> for infant James VI under Regent <strong>Moray</strong>, Mary escaped, lost at Langside, and fled to England. Trapped in a dilemma, Elizabeth placed her under <strong>house arrest</strong>.",
+            "spoken": "Her sudden flight across the border trapped Elizabeth in an impossible choice. <short pause> Forced to abdicate at Lochleven for infant James VI under Regent Moray , Mary escaped, lost at Langside, and fled to England. Trapped in a dilemma, Elizabeth placed her under house arrest .",
+            "paired_prose_hash": "f0ea61e87d",
+            "connective": "Her sudden flight across the border trapped Elizabeth in an impossible choice."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "York Inquiry & Casket Letters",
+            "date": "Oct 1568–Jan 1569",
+            "img": "/images/sir_william_cecil_lord_burghley.jpg",
+            "mode": "contain",
+            "stat": "Jan 1569: Shrewd “Not Proven” Verdict Delivered",
+            "html": "At the <strong>York Inquiry</strong>, Regent Moray presented eight French <strong>Casket Letters</strong> linking Mary to Darnley’s murder. William Cecil delivered a <strong>not proven verdict</strong>, keeping Mary captive without executing a queen.",
+            "spoken": "An official inquiry gave Elizabeth an excuse to hold Mary indefinitely. <short pause> At the York Inquiry , Regent Moray presented eight French Casket Letters linking Mary to Darnley’s murder. William Cecil delivered a not proven verdict , keeping Mary captive without executing a queen.",
+            "paired_prose_hash": "2a55afeed1",
+            "connective": "An official inquiry gave Elizabeth an excuse to hold Mary indefinitely."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Secret Norfolk Marriage Plot",
+            "date": "Spring–Sept 1569",
+            "img": "/images/robert_dudley_earl_of_leicester.jpg",
+            "mode": "contain",
+            "stat": "Plot to Wed Captive Mary to the Duke of Norfolk",
+            "html": "Even under guard at Tutbury, Mary inspired a secret <strong>court marriage plot</strong>. Courtiers including <strong>Robert Dudley</strong> backed marrying her to England’s richest noble, the <strong>Duke of Norfolk</strong>, while Catholic earls schemed.",
+            "spoken": "Even behind castle walls, Mary immediately became a magnet for court intrigue. <short pause> Even under guard at Tutbury, Mary inspired a secret court marriage plot . Courtiers including Robert Dudley backed marrying her to England’s richest noble, the Duke of Norfolk , while Catholic earls schemed.",
+            "paired_prose_hash": "3342dd6946",
+            "connective": "Even behind castle walls, Mary immediately became a magnet for court intrigue."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Norfolk Jailed, North Ignites",
+            "date": "Autumn 1569",
+            "img": "/images/the_duke_of_norfolk_thomas_howard.jpg",
+            "mode": "contain",
+            "stat": "Sept 1569: Norfolk Sent to the Tower of London",
+            "html": "When Dudley confessed the secret marriage scheme in September 1569, Elizabeth locked the <strong>Duke of Norfolk</strong> in the Tower. Fearing ruin, the Catholic <strong>Northern Earls</strong> launched an armed <strong>rebellion</strong>.",
+            "spoken": "Exposing that secret marriage plot triggered open rebellion in the north. <short pause> When Dudley confessed the secret marriage scheme in September 1569, Elizabeth locked the Duke of Norfolk in the Tower. Fearing ruin, the Catholic Northern Earls launched an armed rebellion .",
+            "connective": "Exposing that secret marriage plot triggered open rebellion in the north."
+          }
+        ],
+        "takeaway": "Mary Stuart’s flight to England in 1568 trapped Elizabeth into keeping a legitimate Catholic rival in captivity, where she inspired the 1569 Norfolk plot and Northern Revolt.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Mary Stuart’s flight to England in 1568 trapped Elizabeth into keeping a legitimate Catholic rival in captivity, where she inspired the 1569 Norfolk plot and Northern Revolt.",
+        "vocab": [
+          [
+            "1. Heir Presumptive",
+            "Next in line to inherit the throne unless the reigning monarch has a child."
+          ],
+          [
+            "2. Abdicate",
+            "To formally give up a royal throne and sovereign power."
+          ],
+          [
+            "3. Casket Letters",
+            "Eight letters and sonnets used at York to accuse Mary of Darnley’s murder."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2_1",
@@ -7559,7 +7992,115 @@ const unitData = {
         "kt2.1",
         "lesson_2_1"
       ],
-      "enquiry_question": "Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?"
+      "enquiry_question": "Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "eee_l05_visual_story_sheet",
+        "ktBadge": "Key Topic 2.1 • Lesson 5",
+        "datesBadge": "1569–1587",
+        "topicLabel": "Key Topic 2: Challenges to Elizabeth at Home and Abroad, 1569–88",
+        "title": "Why Did Catholic Plots Lead to Mary Stuart’s Execution?",
+        "spokenTitle": "Why did Catholic plots lead to Mary Stuart’s execution?",
+        "thumbUrl": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+        "provenanceNote": "The National Archives Kew, NPG London, Musée Condé & Vatican Archive (Zero AI Imagery)",
+        "bridges": [
+          "1570 Papal Bull",
+          "Guise & Mendoza",
+          "Barrel Ciphers",
+          "Fotheringhay Axe",
+          "Spain Provoked"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Revolt of the Northern Earls",
+            "date": "Nov 1569–Jan 1570",
+            "img": "/images/the_earl_of_northumberland_thomas_percy.jpg",
+            "mode": "contain",
+            "stat": "4,600 Rebels Held Mass; 450 Executed Afterwards",
+            "html": "The <strong>Northern Earls</strong> marched 4,600 men into <strong>Durham Cathedral</strong> to hold Latin Mass and free Mary. Without Spanish aid, the revolt collapsed and Elizabeth ordered <strong>450 rebels executed</strong>.",
+            "spoken": "Why did Catholic plots lead to Mary Stuart’s execution? <short pause> The Northern Earls marched 4,600 men into Durham Cathedral to hold Latin Mass and free Mary. Without Spanish aid, the revolt collapsed and Elizabeth ordered 450 rebels executed .",
+            "paired_prose_hash": "7fd5ed1979",
+            "connective": "Why did Catholic plots lead to Mary Stuart’s execution?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Papal Bull & Ridolfi Plot",
+            "date": "1570–1572",
+            "img": "/images/regnans_in_excelsis_1570.jpg",
+            "mode": "contain",
+            "stat": "1570 Bull Freed Catholics From Obeying Elizabeth",
+            "html": "Pope Pius V’s 1570 bull <strong>Regnans in Excelsis</strong> excommunicated Elizabeth and urged rebellion. After spies exposed the <strong>1571 Ridolfi Plot</strong> for a Spanish invasion, the <strong>Duke of Norfolk</strong> was executed.",
+            "spoken": "Days later, the Pope turned English Catholic loyalty into treason. <short pause> Pope Pius V’s 1570 bull Regnans in Excelsis excommunicated Elizabeth and urged rebellion. After spies exposed the 1571 Ridolfi Plot for a Spanish invasion, the Duke of Norfolk was executed.",
+            "paired_prose_hash": "c17a16de2c",
+            "connective": "Days later, the Pope turned English Catholic loyalty into treason."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Throckmorton & Bond of 1584",
+            "date": "1583–1584",
+            "img": "/units/eee/assets/portraits/duke_of_guise.jpg",
+            "mode": "contain",
+            "stat": "Spanish Envoy Mendoza Expelled From London",
+            "html": "<strong>Francis Walsingham</strong> uncovered the <strong>1583 Throckmorton Plot</strong> for the French Duke of Guise to invade with Spanish gold. Mendoza was expelled and nobles signed the <strong>1584 Bond of Association</strong>.",
+            "spoken": "As Jesuit priests entered England, foreign invasion plots grew deadlier. <short pause> Francis Walsingham uncovered the 1583 Throckmorton Plot for the French Duke of Guise to invade with Spanish gold. Mendoza was expelled and nobles signed the 1584 Bond of Association .",
+            "paired_prose_hash": "4f44b0f090",
+            "connective": "As Jesuit priests entered England, foreign invasion plots grew deadlier."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Babington Beer-Barrel Trap",
+            "date": "July 1586",
+            "img": "/images/babington_cipher_postscript.jpg",
+            "mode": "contain-light",
+            "stat": "17 July 1586: Mary Backed Assassinating Elizabeth",
+            "html": "In the <strong>1586 Babington Plot</strong>, double agent Gifford passed coded letters hidden in <strong>beer barrels</strong> to Walsingham. Codebreaker <strong>Thomas Phelippes</strong> deciphered Mary’s letter backing Elizabeth’s murder.",
+            "spoken": "Walsingham’s spy web finally caught Mary endorsing assassination in writing. <short pause> In the 1586 Babington Plot , double agent Gifford passed coded letters hidden in beer barrels to Walsingham. Codebreaker Thomas Phelippes deciphered Mary’s letter backing Elizabeth’s murder.",
+            "paired_prose_hash": "b236be516c",
+            "connective": "Walsingham’s spy web finally caught Mary endorsing assassination in writing."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Execution at Fotheringhay",
+            "date": "8 Feb 1587",
+            "img": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+            "mode": "contain-light",
+            "stat": "8 Feb 1587: First Trial & Execution of a Queen",
+            "html": "Convicted of treason at <strong>Fotheringhay Castle</strong>, Mary went to the block on <strong>8 February 1587</strong> in bright <strong>crimson martyrdom</strong> robes, leaving her claim to England’s throne to Philip II.",
+            "spoken": "Convicted of high treason, Mary met the axe at Fotheringhay Castle. <short pause> Convicted of treason at Fotheringhay Castle , Mary went to the block on the eighth of February 1587 in bright crimson martyrdom robes, leaving her claim to England’s throne to Philip II.",
+            "paired_prose_hash": "aabb46f8d6",
+            "connective": "Convicted of high treason, Mary met the axe at Fotheringhay Castle."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Home Plotters Crushed, War Next",
+            "date": "1587",
+            "img": "/images/sir_francis_walsingham.jpg",
+            "mode": "contain",
+            "stat": "Catholic Figurehead Removed; Philip II Spurred On",
+            "html": "<strong>Walsingham’s spies</strong> removed the Catholic rival inside England without Scottish King James VI declaring war. Yet executing an anointed Catholic monarch spurred <strong>Philip II</strong> to launch the <strong>Armada</strong>.",
+            "spoken": "Removing the domestic figurehead pushed Spain straight toward invasion. <short pause> Walsingham’s spies removed the Catholic rival inside England without Scottish King James VI declaring war. Yet executing an anointed Catholic monarch spurred Philip II to launch the Armada .",
+            "connective": "Removing the domestic figurehead pushed Spain straight toward invasion."
+          }
+        ],
+        "takeaway": "After the 1570 Papal Bull turned plots toward foreign invasion and murder, Walsingham’s beer-barrel trap proved Mary Stuart’s treason and led to her 1587 execution.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After the 1570 Papal Bull turned plots toward foreign invasion and murder, Walsingham’s beer-barrel trap proved Mary Stuart’s treason and led to her 1587 execution.",
+        "vocab": [
+          [
+            "1. Excommunication",
+            "1570 papal decree expelling Elizabeth and freeing Catholics from loyalty."
+          ],
+          [
+            "2. Bond of Association",
+            "1584 pledge to execute anyone linked to a plot on Elizabeth’s life."
+          ],
+          [
+            "3. Babington Plot",
+            "1586 Catholic plot whose decoded barrel letters proved Mary’s treason."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2_2",
@@ -9034,7 +9575,115 @@ const unitData = {
         "kt2.2",
         "lesson_2_2"
       ],
-      "enquiry_question": "How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?"
+      "enquiry_question": "How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "eee_l06_visual_story_sheet",
+        "ktBadge": "Key Topic 2.2 • Lesson 6",
+        "datesBadge": "1569–1585",
+        "topicLabel": "Key Topic 2: Challenges to Elizabeth at Home and Abroad, 1569–88",
+        "title": "How Did Sea Raids and Dutch Aid Push England into War?",
+        "spokenTitle": "How did sea raids and Dutch aid push England into war?",
+        "thumbUrl": "/images/hondius_drake_circumnavigation_map_1595.jpg",
+        "provenanceNote": "British Library, National Portrait Gallery, Prado & Kunsthistorisches Museum (Zero AI Imagery)",
+        "bridges": [
+          "Atlantic Raids",
+          "£400k Plunder",
+          "Deptford Insult",
+          "Nonsuch Alliance",
+          "Open Conflict"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Dutch Revolt & Sea Beggars",
+            "date": "1570–1577",
+            "img": "/units/eee/assets/portraits/william_of_orange.jpg",
+            "mode": "contain",
+            "stat": "Antwerp Handled Most English Woollen Cloth Trade",
+            "html": "Fearing a Spanish army opposite the Thames and protecting Antwerp cloth trade, Elizabeth sent quiet loans to <strong>William of Orange</strong>. Expelled Dutch <strong>Sea Beggars</strong> seized Brielle in 1572, widening revolt.",
+            "spoken": "How did sea raids and Dutch aid push England into war? <short pause> Fearing a Spanish army opposite the Thames and protecting Antwerp cloth trade, Elizabeth sent quiet loans to William of Orange . Expelled Dutch Sea Beggars seized Brielle in 1572, widening revolt.",
+            "paired_prose_hash": "0e9f285196",
+            "connective": "How did sea raids and Dutch aid push England into war?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Privateers & Spanish Fury",
+            "date": "1570–1579",
+            "img": "/images/sir_john_hawkins.JPG",
+            "mode": "contain",
+            "stat": "£100,000 English Loan After 1576 Sack of Antwerp",
+            "html": "Avenging Spain’s 1568 ambush on Hawkins and <strong>Francis Drake</strong>, English <strong>privateers</strong> raided Panama silver. After mutinous troops sacked Antwerp in the <strong>1576 Spanish Fury</strong>, Elizabeth lent £100,000.",
+            "spoken": "Across the Atlantic, English sea captains attacked Spain’s closed empire. <short pause> Avenging Spain’s 1568 ambush on Hawkins and Francis Drake , English privateers raided Panama silver. After mutinous troops sacked Antwerp in the 1576 Spanish Fury , Elizabeth lent 100,000 pounds.",
+            "paired_prose_hash": "2b8e7ad1f1",
+            "connective": "Across the Atlantic, English sea captains attacked Spain’s closed empire."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Drake’s Global Plunder",
+            "date": "1577–1580",
+            "img": "/images/hondius_drake_circumnavigation_map_1595.jpg",
+            "mode": "contain-light",
+            "stat": "£400,000 Spanish Treasure Cleared Crown Debt",
+            "html": "Secretly backed by Elizabeth, Drake sailed the <strong>Golden Hind</strong> into the Pacific and captured Spain’s treasure galleon <strong>Cacafuego</strong>. Returning in 1580 with <strong>£400,000</strong>, he cleared England’s debt.",
+            "spoken": "Drake then raided unguarded Spanish treasure ports right across the Pacific. <short pause> Secretly backed by Elizabeth, Drake sailed the Golden Hind into the Pacific and captured Spain’s treasure galleon Cacafuego . Returning in 1580 with 400,000 pounds , he cleared England’s debt.",
+            "paired_prose_hash": "6a14ab72ec",
+            "connective": "Drake then raided unguarded Spanish treasure ports right across the Pacific."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Knighted Aboard Golden Hind",
+            "date": "April 1581",
+            "img": "/images/sir_francis_drake.jpg",
+            "mode": "contain",
+            "stat": "April 1581: Public Knighthood Defied Philip II",
+            "html": "Strengthened by annexing Portugal, Philip II demanded Drake’s execution as a pirate. Instead, Elizabeth publicly awarded <strong>Drake’s knighthood</strong> at <strong>Deptford</strong> and funded the French <strong>Duke of Alençon</strong>.",
+            "spoken": "Rather than apologising to Madrid, Elizabeth publicly honoured her sea rover. <short pause> Strengthened by annexing Portugal, Philip II demanded Drake’s execution as a pirate. Instead, Elizabeth publicly awarded Drake’s knighthood at Deptford and funded the French Duke of Alençon .",
+            "paired_prose_hash": "be940e4ce2",
+            "connective": "Rather than apologising to Madrid, Elizabeth publicly honoured her sea rover."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Joinville & Nonsuch Treaties",
+            "date": "1584–Aug 1585",
+            "img": "/units/eee/assets/portraits/parma.png",
+            "mode": "contain",
+            "stat": "Aug 1585: 7,400 English Troops Pledged to Dutch",
+            "html": "In 1584 the <strong>Duke of Parma</strong> advanced, William of Orange was murdered, and Spain allied with Catholic France at <strong>Joinville</strong>. Elizabeth signed the <strong>1585 Treaty of Nonsuch</strong>, sending 7,400 soldiers.",
+            "spoken": "By 1584, indirect aid collapsed and forced direct military intervention. <short pause> In 1584 the Duke of Parma advanced, William of Orange was murdered, and Spain allied with Catholic France at Joinville . Elizabeth signed the 1585 Treaty of Nonsuch , sending 7,400 soldiers.",
+            "paired_prose_hash": "c16163513b",
+            "connective": "By 1584, indirect aid collapsed and forced direct military intervention."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Undeclared Cold War Turns Hot",
+            "date": "Late 1585",
+            "img": "/images/king_philip_ii_of_spain.jpg",
+            "mode": "contain",
+            "stat": "Philip II Ordered Plans for the Invasion Armada",
+            "html": "Garrisoning Dutch ports under <strong>Robert Dudley</strong> crossed Spain’s final red line. Treating the <strong>Treaty of Nonsuch</strong> as open war, <strong>Philip II</strong> began building a Catholic Armada to invade England.",
+            "spoken": "Sending an English army into Flanders meant open war with Spain. <short pause> Garrisoning Dutch ports under Robert Dudley crossed Spain’s final red line. Treating the Treaty of Nonsuch as open war, Philip II began building a Catholic Armada to invade England.",
+            "connective": "Sending an English army into Flanders meant open war with Spain."
+          }
+        ],
+        "takeaway": "Years of Atlantic privateering, Drake’s £400,000 voyage, and Parma’s reconquest of Flanders forced Elizabeth into the 1585 Treaty of Nonsuch and war with Spain.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Years of Atlantic privateering, Drake’s 400,000 pounds voyage, and Parma’s reconquest of Flanders forced Elizabeth into the 1585 Treaty of Nonsuch and war with Spain.",
+        "vocab": [
+          [
+            "1. Privateer",
+            "Armed merchant captain backed by the Crown to raid enemy shipping."
+          ],
+          [
+            "2. Spanish Fury",
+            "Brutal 1576 sack of Antwerp by unpaid mutinous Spanish soldiers."
+          ],
+          [
+            "3. Treaty of Nonsuch",
+            "August 1585 pact pledging 7,400 English troops to aid Dutch rebels."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2_3",
@@ -10516,7 +11165,115 @@ const unitData = {
         "kt2.3",
         "lesson_2_3"
       ],
-      "enquiry_question": "Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?"
+      "enquiry_question": "Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?",
+      "visual_story_sheet": {
+        "num": "07",
+        "slug": "eee_l07_visual_story_sheet",
+        "ktBadge": "Key Topic 2.3 • Lesson 7",
+        "datesBadge": "1585–July 1588",
+        "topicLabel": "Key Topic 2: Challenges to Elizabeth at Home and Abroad, 1569–88",
+        "title": "Why Did War in Flanders and Cadiz Lead to the Armada?",
+        "spokenTitle": "Why did war in Flanders and Cadiz lead to the Armada?",
+        "thumbUrl": "/images/drake_cadiz_1587.jpg",
+        "provenanceNote": "The National Archives Kew, National Maritime Museum & Palacio Medina Sidonia (Zero AI Imagery)",
+        "bridges": [
+          "Fort Betrayals",
+          "Raid on Cadiz",
+          "Rotting Barrels",
+          "Missing Deep Port",
+          "Flawed Launch"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Dudley’s Starved Campaign",
+            "date": "Dec 1585–1586",
+            "img": "/images/robert_dudley_earl_of_leicester.jpg",
+            "mode": "contain",
+            "stat": "English Held Deep-Water Ostend Against Parma",
+            "html": "<strong>Robert Dudley</strong> enraged Elizabeth by taking the title <strong>Governor-General</strong> in the Netherlands. Though starved of Crown funds and troops, his garrisons slowed <strong>Parma</strong> and held deep-water Ostend.",
+            "spoken": "Why did war in Flanders and Cadiz lead to the Armada? <short pause> Robert Dudley enraged Elizabeth by taking the title Governor-General in the Netherlands. Though starved of Crown funds and troops, his garrisons slowed Parma and held deep-water Ostend.",
+            "paired_prose_hash": "6cb51a2d54",
+            "connective": "Why did war in Flanders and Cadiz lead to the Armada?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Betrayal at Deventer & Zutphen",
+            "date": "1586–Jan 1587",
+            "img": "/images/the_duke_of_parma.png",
+            "mode": "contain",
+            "stat": "Jan 1587: Stanley & Yorke Defected to Spain",
+            "html": "In January 1587, Catholic English officers Sir William Stanley and <strong>Rowland Yorke</strong> betrayed <strong>Deventer</strong> and <strong>Zutphen</strong> fort to Parma, wrecking Dutch trust and forcing Dudley’s recall.",
+            "spoken": "Treachery by two English Catholic officers soon wrecked Dutch trust. <short pause> In January 1587, Catholic English officers Sir William Stanley and Rowland Yorke betrayed Deventer and Zutphen fort to Parma, wrecking Dutch trust and forcing Dudley’s recall.",
+            "paired_prose_hash": "2431417528",
+            "connective": "Treachery by two English Catholic officers soon wrecked Dutch trust."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Drake’s 1587 Raid on Cadiz",
+            "date": "19 April 1587",
+            "img": "/images/drake_cadiz_1587.jpg",
+            "mode": "contain-light",
+            "stat": "30 Spanish Ships Burned; Armada Delayed 1 Year",
+            "html": "Learning Spain was building an Armada, Francis Drake sailed straight into <strong>Cadiz</strong> harbour. Nicknamed <strong>‘Singeing the King of Spain’s Beard’</strong>, the raid destroyed <strong>30 ships</strong> and delayed invasion a year.",
+            "spoken": "Learning of Spain’s invasion fleet, Elizabeth sent Drake to strike first. <short pause> Learning Spain was building an Armada, Francis Drake sailed straight into Cadiz harbour. Nicknamed ‘Singeing the King of Spain’s Beard’ , the raid destroyed 30 ships and delayed invasion a year.",
+            "paired_prose_hash": "cffd19d808",
+            "connective": "Learning of Spain’s invasion fleet, Elizabeth sent Drake to strike first."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Green Barrels & Reluctant Chief",
+            "date": "1587–Feb 1588",
+            "img": "/units/eee/assets/portraits/medina_sidonia.jpg",
+            "mode": "contain",
+            "stat": "Burned Oak Staves Forced Leaky Green Pine Casks",
+            "html": "Drake burned seasoned oak <strong>barrel staves</strong>, forcing Spain to store Armada food and water in leaky green pine casks. After Santa Cruz died, seasick <strong>Medina Sidonia</strong> reluctantly took command.",
+            "spoken": "Drake’s raids also inflicted hidden damage on Spain’s food and command. <short pause> Drake burned seasoned oak barrel staves , forcing Spain to store Armada food and water in leaky green pine casks. After Santa Cruz died, seasick Medina Sidonia reluctantly took command.",
+            "paired_prose_hash": "066d4f7bc2",
+            "connective": "Drake’s raids also inflicted hidden damage on Spain’s food and command."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "130 Ships & The Port Flaw",
+            "date": "May–July 1588",
+            "img": "/images/ark_royal.jpg",
+            "mode": "contain-light",
+            "stat": "130 Ships & 30,000 Men; 0 Deep-Water Ports Held",
+            "html": "Philip II sent <strong>130 ships</strong> up the Channel to escort Parma’s barges from Flanders to Kent. Crucially, Parma held <strong>no deep-water port</strong>, and nimble <strong>Dutch flyboats</strong> blockaded his shallow canals.",
+            "spoken": "When the vast fleet finally sailed, Philip’s master plan had a fatal flaw. <short pause> Philip II sent 130 ships up the Channel to escort Parma’s barges from Flanders to Kent. Crucially, Parma held no deep-water port , and nimble Dutch flyboats blockaded his shallow canals.",
+            "paired_prose_hash": "736b766a7a",
+            "connective": "When the vast fleet finally sailed, Philip’s master plan had a fatal flaw."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "A Crippled Fleet Enters Trap",
+            "date": "Late July 1588",
+            "img": "/images/drake.jpg",
+            "mode": "contain",
+            "stat": "Slow Couriers Meant Fleets Could Not Coordinate",
+            "html": "Delayed a year by <strong>Drake’s Cadiz raid</strong> and carrying foul supplies, Spain’s fleet could not time its link-up with <strong>Parma’s army</strong>—sailing straight toward fast <strong>English galleons</strong>.",
+            "spoken": "Delayed and poorly supplied, the Armada sailed straight into danger. <short pause> Delayed a year by Drake’s Cadiz raid and carrying foul supplies, Spain’s fleet could not time its link-up with Parma’s army, sailing straight toward fast English galleons .",
+            "connective": "Delayed and poorly supplied, the Armada sailed straight into danger."
+          }
+        ],
+        "takeaway": "Dudley’s holding of Ostend and Drake’s 1587 Cadiz raid delayed Spain by a year, rotted Armada supplies, and left Medina Sidonia without a deep-water port in Flanders.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Dudley’s holding of Ostend and Drake’s 1587 Cadiz raid delayed Spain by a year, rotted Armada supplies, and left Medina Sidonia without a deep-water port in Flanders.",
+        "vocab": [
+          [
+            "1. Governor-General",
+            "Supreme Dutch title accepted by Dudley in 1586 without Elizabeth’s consent."
+          ],
+          [
+            "2. Cadiz Raid (1587)",
+            "Drake’s pre-emptive attack destroying 30 Spanish ships and barrel staves."
+          ],
+          [
+            "3. Dutch Flyboats",
+            "Shallow-draught rebel warships that trapped Parma’s barges inside canals."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2_4",
@@ -12019,7 +12776,116 @@ const unitData = {
         "kt2.4",
         "lesson_2_4"
       ],
-      "enquiry_question": "Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?"
+      "enquiry_question": "Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?",
+      "visual_story_sheet": {
+        "num": "08",
+        "slug": "eee_l08_visual_story_sheet",
+        "ktBadge": "Key Topic 2.4 • Lesson 8",
+        "datesBadge": "July–Sept 1588",
+        "topicLabel": "Key Topic 2: Challenges to Elizabeth at Home and Abroad, 1569–88",
+        "title": "Why Was the Spanish Armada Defeated in 1588?",
+        "spokenTitle": "Why was the Spanish Armada defeated in 1588?",
+        "thumbUrl": "/images/battle_of_gravelines_1588.jpg",
+        "provenanceNote": "National Maritime Museum Greenwich, British Library & West Point Atlas (Zero AI Imagery)",
+        "bridges": [
+          "Midnight Fireships",
+          "Gravelines Guns",
+          "Protestant Wind",
+          "Tilbury Rally",
+          "England Saved"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Running Fights Up the Channel",
+            "date": "29 Jul–6 Aug 1588",
+            "img": "/images/spanish_armada_1588_ryther_maritime_museum_auth.jpg",
+            "mode": "contain-light",
+            "stat": "7-Mile Spanish Crescent Herded Past the Solent",
+            "html": "Spain’s 130 ships sailed in a tight seven-mile <strong>crescent formation</strong>. Seizing the wind behind them, <strong>Lord Howard</strong>, Drake, and Hawkins blocked the <strong>Isle of Wight</strong> and forced Spain to Calais.",
+            "spoken": "Why was the Spanish Armada defeated in 1588? <short pause> Spain’s 130 ships sailed in a tight seven-mile crescent formation . Seizing the wind behind them, Lord Howard , Drake, and Hawkins blocked the Isle of Wight and forced Spain to Calais.",
+            "paired_prose_hash": "9995733643",
+            "connective": "Why was the Spanish Armada defeated in 1588?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Eight Fireships at Calais",
+            "date": "7–8 Aug 1588",
+            "img": "/images/armada_gravelines_chart_1590.jpg",
+            "mode": "contain-light",
+            "stat": "Midnight Panic Broke Spain’s Defensive Formation",
+            "html": "Anchored at exposed <strong>Calais Roads</strong> with Parma unready, Spain faced eight blazing English <strong>fireships</strong> at midnight on 7 August. Panicked captains <strong>cut anchor cables</strong> and scattered.",
+            "spoken": "At midnight off Calais, blazing fireships shattered Spain’s tight formation. <short pause> Anchored at exposed Calais Roads with Parma unready, Spain faced eight blazing English fireships at midnight on the seventh of August. Panicked captains cut anchor cables and scattered.",
+            "paired_prose_hash": "7c228cde76",
+            "connective": "At midnight off Calais, blazing fireships shattered Spain’s tight formation."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The Battle of Gravelines",
+            "date": "8 Aug 1588",
+            "img": "/images/battle_of_gravelines_1588.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "English Bronze Culverins Fired 3x Faster",
+            "html": "Off <strong>Gravelines</strong>, agile English <strong>race-built galleons</strong> out-turned scattered Spanish warships. Compact four-wheeled bronze <strong>culverins</strong> fired three times faster, wrecking five ships and ending invasion hopes.",
+            "spoken": "At dawn, fast English broadsides hammered the scattered Spanish galleons. <short pause> Off Gravelines , agile English race-built galleons out-turned scattered Spanish warships. Compact four-wheeled bronze culverins fired three times faster, wrecking five ships and ending invasion hopes.",
+            "paired_prose_hash": "50516c13a6",
+            "connective": "At dawn, fast English broadsides hammered the scattered Spanish galleons."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Gales & Irish Shipwrecks",
+            "date": "Aug–Sept 1588",
+            "img": "/images/spanish_armada_west_point_routes_map_auth.png",
+            "mode": "contain-light",
+            "stat": "25+ Ships Wrecked; Barely 67 of 130 Returned",
+            "html": "Blown north by the <strong>‘Protestant Wind’</strong> around Scotland and <strong>Ireland</strong> without main anchors, over twenty-five Spanish ships wrecked in fierce gales. Barely <strong>67 ships</strong> limped home.",
+            "spoken": "Fierce Atlantic storms then turned Spain’s northern retreat into disaster. <short pause> Blown north by the ‘Protestant Wind’ around Scotland and Ireland without main anchors, over twenty-five Spanish ships wrecked in fierce gales. Barely 67 ships limped home.",
+            "paired_prose_hash": "6d857449f5",
+            "connective": "Fierce Atlantic storms then turned Spain’s northern retreat into disaster."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Tilbury Speech & Pride",
+            "date": "18 Aug 1588",
+            "img": "/images/elizabeth_tilbury_speech.jpg",
+            "mode": "contain-light",
+            "stat": "“God Blew and They Were Scattered” Royal Medal",
+            "html": "In silver breastplate before 4,000 troops at <strong>Tilbury</strong>, Elizabeth proclaimed ‘the heart and stomach of a king’. Victory medals declared <strong>‘God blew’</strong>, saving <strong>Dutch independence</strong>.",
+            "spoken": "In England, Elizabeth turned naval victory into a Protestant triumph. <short pause> In silver breastplate before 4,000 troops at Tilbury , Elizabeth proclaimed ‘the heart and stomach of a king’. Victory medals declared ‘God blew’ , saving Dutch independence .",
+            "paired_prose_hash": "bd6d6e4db5",
+            "connective": "In England, Elizabeth turned naval victory into a Protestant triumph."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Protestant Sea Power Secured",
+            "date": "1588–1604",
+            "img": "/images/armada_portrait.jpg",
+            "mode": "contain",
+            "stat": "Invasion Defeated; Anglo-Spanish War Lasted to 1604",
+            "html": "Superior <strong>English gunnery</strong>, Calais <strong>fireships</strong>, flawed Spanish port plans, and Atlantic storms crushed the invasion—securing Elizabeth’s throne and boosting <strong>English naval prestige</strong>.",
+            "spoken": "Naval skill, Spanish flaws, and Atlantic storms together saved England. <short pause> Superior English gunnery , Calais fireships , flawed Spanish port plans, and Atlantic storms crushed the invasion, securing Elizabeth’s throne and boosting English naval prestige .",
+            "connective": "Naval skill, Spanish flaws, and Atlantic storms together saved England."
+          }
+        ],
+        "takeaway": "English fireships at Calais, fast race-built galleons at Gravelines, Parma’s lack of a deep port, and Atlantic storms destroyed half of Spain’s 1588 Armada.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> English fireships at Calais, fast race-built galleons at Gravelines, Parma’s lack of a deep port, and Atlantic storms destroyed half of Spain’s 1588 Armada.",
+        "vocab": [
+          [
+            "1. Fireships",
+            "Eight burning tar-and-gunpowder ships drifted at Calais to scatter Spain."
+          ],
+          [
+            "2. Race-Built Galleons",
+            "Fast, low-hulled English warships built by Hawkins for broadside gunnery."
+          ],
+          [
+            "3. Protestant Wind",
+            "Gale that blew the battered Armada north around Scotland and Ireland."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3_1",
@@ -13505,7 +14371,116 @@ const unitData = {
         "kt3.1",
         "lesson_3_1"
       ],
-      "enquiry_question": "How did educational expansion and popular theatrical culture reflect both social change and strict Tudor hierarchy?"
+      "enquiry_question": "How did educational expansion and popular theatrical culture reflect both social change and strict Tudor hierarchy?",
+      "visual_story_sheet": {
+        "num": "09",
+        "slug": "eee_l09_visual_story_sheet",
+        "ktBadge": "Key Topic 3.1 • Lesson 9",
+        "datesBadge": "1558–1588",
+        "topicLabel": "Key Topic 3: Elizabethan Society in the Age of Exploration, 1558–88",
+        "title": "How Did Education and Leisure Reflect Tudor Social Rank?",
+        "spokenTitle": "How did education and leisure reflect Tudor social rank?",
+        "thumbUrl": "/images/swan_theatre_interior_de_witt.jpg",
+        "provenanceNote": "Utrecht University Library, TNA Kew, Trinity Oxford & Sherborne Castle (Zero AI Imagery)",
+        "bridges": [
+          "Grammar Boom",
+          "Elite Colleges",
+          "Class Pastimes",
+          "Public Playhouses",
+          "Rank Preserved"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Petty Schools & Literacy",
+            "date": "1558–1580s",
+            "img": "/images/tudor_wooden_hornbook_alphabet.jpg",
+            "mode": "contain",
+            "stat": "Literacy Reached ~30% of Men & 10% of Women",
+            "html": "<strong>Literacy</strong> rose to roughly 30% of men and 10% of women, mainly among townsfolk and gentry. Boys read wooden hornbooks in <strong>petty schools</strong>, learning obedience to the <strong>Great Chain of Being</strong>.",
+            "spoken": "How did education and leisure reflect Tudor social rank? <short pause> Literacy rose to roughly 30% of men and 10% of women, mainly among townsfolk and gentry. Boys read wooden hornbooks in petty schools , learning obedience to the Great Chain of Being .",
+            "paired_prose_hash": "0bd347884b",
+            "connective": "How did education and leisure reflect Tudor social rank?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "72 New Grammar Schools",
+            "date": "1560s–1570s",
+            "img": "/images/renaissance_printing_house_stradanus.jpg",
+            "mode": "contain-light",
+            "stat": "72 Town Grammar Schools Founded in Two Decades",
+            "html": "Wealthy benefactors founded 72 town <strong>grammar schools</strong> in the 1560s–70s. Gentry and merchant boys studied strict <strong>Latin</strong> and Greek from 6 a.m., while craft boys entered trade <strong>apprenticeships</strong>.",
+            "spoken": "Town grammar schools expanded fastest for gentry and merchant sons. <short pause> Wealthy benefactors founded 72 town grammar schools in the 1560s, 70s. Gentry and merchant boys studied strict Latin and Greek from 6 a.m., while craft boys entered trade apprenticeships .",
+            "paired_prose_hash": "f731416497",
+            "connective": "Town grammar schools expanded fastest for gentry and merchant sons."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Tutors, Oxford & Cambridge",
+            "date": "1558–1580s",
+            "img": "/units/eee/assets/portraits/harriot.jpg",
+            "mode": "contain",
+            "stat": "Women Barred From Oxford, Cambridge & Law Inns",
+            "html": "Noble children studied languages and music under home <strong>private tutors</strong>, though women stayed barred from university. Gentlemen’s sons trained at <strong>Oxford and Cambridge</strong> or London’s <strong>Inns of Court</strong>.",
+            "spoken": "At the top of society, nobles and gentlemen trained for royal service. <short pause> Noble children studied languages and music under home private tutors , though women stayed barred from university. Gentlemen’s sons trained at Oxford and Cambridge or London’s Inns of Court .",
+            "paired_prose_hash": "cb438eb873",
+            "connective": "At the top of society, nobles and gentlemen trained for royal service."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Divided Sports & Blood Arenas",
+            "date": "1558–1580s",
+            "img": "/images/elizabethan_bear_baiting_southwark.jpg",
+            "mode": "contain-light",
+            "stat": "Hunting for Nobles; Bear-Baiting for All Classes",
+            "html": "Only landowners enjoyed walled deer parks for <strong>hunting, hawking</strong>, and indoor real tennis, while labourers played rough <strong>folk football</strong>. Yet Southwark <strong>bear-baiting</strong> drew spectators of every rank.",
+            "spoken": "Sports and pastimes were just as sharply divided by wealth and rank. <short pause> Only landowners enjoyed walled deer parks for hunting, hawking , and indoor real tennis, while labourers played rough folk football . Yet Southwark bear-baiting drew spectators of every rank.",
+            "paired_prose_hash": "dce007bb97",
+            "connective": "Sports and pastimes were just as sharply divided by wealth and rank."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Rise of London Playhouses",
+            "date": "1576–1588",
+            "img": "/images/swan_theatre_interior_de_witt.jpg",
+            "mode": "contain-light",
+            "stat": "1576: First Purpose-Built Playhouse in Shoreditch",
+            "html": "In 1576 <strong>James Burbage</strong> built <strong>‘The Theatre’</strong> for licensed troupes like the Queen’s Men. Poor <strong>groundlings</strong> stood for a penny below covered gentry galleries, despite fierce Puritan protests.",
+            "spoken": "Purpose-built theatres soon brought all classes under one open roof. <short pause> In 1576 James Burbage built ‘The Theatre’ for licensed troupes like the Queen’s Men. Poor groundlings stood for a penny below covered gentry galleries, despite fierce Puritan protests.",
+            "paired_prose_hash": "3837c954e1",
+            "connective": "Purpose-built theatres soon brought all classes under one open roof."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Vibrant Culture, Fixed Ranks",
+            "date": "By 1588",
+            "img": "/images/elizabeth_procession_1601.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Farm Labourers’ Children Still Worked From Age 6",
+            "html": "Printing, <strong>grammar schools</strong>, and thriving <strong>London theatres</strong> widened cultural life, yet farm children still worked young and every classroom and gallery kept rich and poor in <strong>strict hierarchy</strong>.",
+            "spoken": "Culture and literacy grew, yet Tudor social hierarchy stayed firmly intact. <short pause> Printing, grammar schools , and thriving London theatres widened cultural life, yet farm children still worked young and every classroom and gallery kept rich and poor in strict hierarchy .",
+            "connective": "Culture and literacy grew, yet Tudor social hierarchy stayed firmly intact."
+          }
+        ],
+        "takeaway": "Grammar schools and purpose-built theatres boosted male literacy and popular drama, yet Elizabethan schooling and leisure still kept rich, poor, and women in fixed ranks.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Grammar schools and purpose-built theatres boosted male literacy and popular drama, yet Elizabethan schooling and leisure still kept rich, poor, and women in fixed ranks.",
+        "vocab": [
+          [
+            "1. Petty School",
+            "Elementary home school teaching young boys reading with a wooden hornbook."
+          ],
+          [
+            "2. Grammar School",
+            "Fee-paying town school teaching Latin and Greek to middling and gentry boys."
+          ],
+          [
+            "3. Groundlings",
+            "Poor theatre-goers paying one penny to stand in the open yard by the stage."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3_2",
@@ -14968,7 +15943,115 @@ const unitData = {
         "kt3.2",
         "lesson_3_2"
       ],
-      "enquiry_question": "Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?"
+      "enquiry_question": "Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?",
+      "visual_story_sheet": {
+        "num": "10",
+        "slug": "eee_l10_visual_story_sheet",
+        "ktBadge": "Key Topic 3.2 • Lesson 10",
+        "datesBadge": "1558–1588",
+        "topicLabel": "Key Topic 3: Elizabethan Society in the Age of Exploration, 1558–88",
+        "title": "Why Did Poverty Surge and How Did Tudor Poor Laws Change?",
+        "spokenTitle": "Why did poverty surge and how did Tudor Poor Laws change?",
+        "thumbUrl": "/images/caveat_for_cursitors.png",
+        "provenanceNote": "British Library, Parliamentary Archives, Royal Collection & NPG London (Zero AI Imagery)",
+        "bridges": [
+          "Sheep Enclosure",
+          "Vagrant Panic",
+          "1572 Whip & Tax",
+          "1576 Work Relief",
+          "National System"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Population Boom & High Prices",
+            "date": "1558–1580s",
+            "img": "/images/sir_william_cecil_lord_burghley.jpg",
+            "mode": "contain",
+            "stat": "Population Rose ~35% From 3 Million to 4 Million",
+            "html": "England’s population climbed from <strong>3 million to 4 million</strong>, outstripping food output. Wet <strong>bad harvests</strong> (1573–77) and coin debasement caused steep <strong>price inflation</strong> and falling real wages.",
+            "spoken": "Why did poverty surge and how did Tudor Poor Laws change? <short pause> England’s population climbed from 3 million to 4 million , outstripping food output. Wet bad harvests (1573, 77) and coin debasement caused steep price inflation and falling real wages.",
+            "paired_prose_hash": "9fa224903f",
+            "connective": "Why did poverty surge and how did Tudor Poor Laws change?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Enclosure & Sheep Farming",
+            "date": "1558–1580s",
+            "img": "/units/eee/assets/portraits/norfolk.jpg",
+            "mode": "contain",
+            "stat": "Wool & Cloth Made Up Over 80% of English Exports",
+            "html": "Because wool and cloth formed <strong>80% of exports</strong>, gentry landlords hedged village fields through <strong>enclosure</strong> for <strong>sheep farming</strong>—needing one-tenth the workers—while raising rents sharply.",
+            "spoken": "Countryside farming changes pushed thousands more families off the land. <short pause> Because wool and cloth formed 80% of exports , gentry landlords hedged village fields through enclosure for sheep farming, needing one-tenth the workers, while raising rents sharply.",
+            "paired_prose_hash": "a0d6bc8a00",
+            "connective": "Countryside farming changes pushed thousands more families off the land."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Deserving Poor vs Vagabonds",
+            "date": "1567–1570s",
+            "img": "/images/caveat_for_cursitors.png",
+            "mode": "contain-light",
+            "stat": "1567: Harman’s Book Stoked Fear of Fake Beggars",
+            "html": "Authorities helped the sick and elderly <strong>impotent poor</strong>, but blamed able-bodied <strong>sturdy beggars</strong> for laziness. <strong>Thomas Harman’s</strong> 1567 book stoked gentry fears of crime, plague, and rebellion.",
+            "spoken": "Townsfolk pitied the helpless poor, yet deeply feared wandering beggars. <short pause> Authorities helped the sick and elderly impotent poor , but blamed able-bodied sturdy beggars for laziness. Thomas Harman’s 1567 book stoked gentry fears of crime, plague, and rebellion.",
+            "paired_prose_hash": "0eb420d998",
+            "connective": "Townsfolk pitied the helpless poor, yet deeply feared wandering beggars."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "The 1572 Vagabonds Act",
+            "date": "1572",
+            "img": "/images/tudor_vagrant_whipping.jpg",
+            "mode": "contain-light",
+            "stat": "Compulsory Poor Rate + Hot Iron Through the Ear",
+            "html": "The <strong>1572 Vagabonds Act</strong> forced rich householders to pay a weekly <strong>compulsory poor rate</strong>. Yet unlicensed vagrants were whipped bloody and <strong>bored through the ear</strong>, or hanged if caught again.",
+            "spoken": "In 1572, Parliament paired compulsory local poor taxes with brutal punishment. <short pause> The 1572 Vagabonds Act forced rich householders to pay a weekly compulsory poor rate . Yet unlicensed vagrants were whipped bloody and bored through the ear , or hanged if caught again.",
+            "paired_prose_hash": "e9267bd9d5",
+            "connective": "In 1572, Parliament paired compulsory local poor taxes with brutal punishment."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "1576 Poor Relief & Bridewells",
+            "date": "1576",
+            "img": "/images/edward_vi_bridewell_hospital_charter.jpg",
+            "mode": "contain-light",
+            "stat": "Parishes Supplied Wool & Hemp to Create Paid Work",
+            "html": "Realising trade slumps caused genuine unemployment, the <strong>1576 Poor Relief Act</strong> gave parishes <strong>raw wool</strong> and hemp for jobless locals to spin, sending refusers to hard-labour <strong>Bridewells</strong>.",
+            "spoken": "Four years later, MPs recognised that many jobless people genuinely wanted work. <short pause> Realising trade slumps caused genuine unemployment, the 1576 Poor Relief Act gave parishes raw wool and hemp for jobless locals to spin, sending refusers to hard-labour Bridewells .",
+            "paired_prose_hash": "8e44b7bc4b",
+            "connective": "Four years later, MPs recognised that many jobless people genuinely wanted work."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Blueprint for the 1601 Law",
+            "date": "1576–1601",
+            "img": "/images/poor_law_1601.jpg",
+            "mode": "contain-light",
+            "stat": "State Accepted National Duty Toward Unemployment",
+            "html": "By combining local <strong>poor rates</strong>, parish <strong>work stocks</strong>, and Houses of Correction, the <strong>1572 and 1576 Acts</strong> accepted national duty for unemployment and shaped the 1601 Poor Law.",
+            "spoken": "Together, these laws transformed how England treated poverty and unemployment. <short pause> By combining local poor rates , parish work stocks , and Houses of Correction, the 1572 and 1576 Acts accepted national duty for unemployment and shaped the 1601 Poor Law.",
+            "connective": "Together, these laws transformed how England treated poverty and unemployment."
+          }
+        ],
+        "takeaway": "Rapid population growth, bad harvests, and sheep enclosure caused Tudor poverty to surge, pushing Parliament from whipping vagrants toward parish rates and work relief.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Rapid population growth, bad harvests, and sheep enclosure caused Tudor poverty to surge, pushing Parliament from whipping vagrants toward parish rates and work relief.",
+        "vocab": [
+          [
+            "1. Enclosure",
+            "Fencing open village fields into private sheep pasture, cutting farm jobs."
+          ],
+          [
+            "2. Impotent Poor",
+            "Deserving poor unable to work through age, sickness, or disability."
+          ],
+          [
+            "3. Poor Rate",
+            "Compulsory weekly parish tax on rich householders to fund poor relief."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3_3",
@@ -16465,7 +17548,115 @@ const unitData = {
         "kt3.3",
         "lesson_3_3"
       ],
-      "enquiry_question": "How did navigational science, galleon engineering, and Drake’s circumnavigation turn England into an oceanic sea power?"
+      "enquiry_question": "How did navigational science, galleon engineering, and Drake’s circumnavigation turn England into an oceanic sea power?",
+      "visual_story_sheet": {
+        "num": "11",
+        "slug": "eee_l11_visual_story_sheet",
+        "ktBadge": "Key Topic 3.3 • Lesson 11",
+        "datesBadge": "1558–1588",
+        "topicLabel": "Key Topic 3: Elizabethan Society in the Age of Exploration, 1558–88",
+        "title": "How Did Navigation, Ships, and Drake Make England a Sea Power?",
+        "spokenTitle": "How did navigation, ships, and Drake make England a sea power?",
+        "thumbUrl": "/images/mariners_astrolabe_1603.jpg",
+        "provenanceNote": "National Maritime Museum Greenwich, British Library & NPG London (Zero AI Imagery)",
+        "bridges": [
+          "Sleek Galleons",
+          "Distant Markets",
+          "Pacific Voyage",
+          "4,700% Profit",
+          "Global Ambition"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Astrolabes & Mercator Maps",
+            "date": "1558–1575",
+            "img": "/images/mariners_astrolabe_1603.jpg",
+            "mode": "contain",
+            "stat": "1569: Mercator World Map Grid Aided Ocean Courses",
+            "html": "Sailors measured ocean latitude using brass <strong>astrolabes</strong> and steadier <strong>quadrants</strong>. Gerardus <strong>Mercator’s 1569 map</strong> grid, compasses, and log-and-line ropes made Atlantic voyages far safer.",
+            "spoken": "How did navigation, ships, and Drake make England a sea power? <short pause> Sailors measured ocean latitude using brass astrolabes and steadier quadrants . Gerardus Mercator’s 1569 map grid, compasses, and log-and-line ropes made Atlantic voyages far safer.",
+            "paired_prose_hash": "068e9456f3",
+            "connective": "How did navigation, ships, and Drake make England a sea power?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Hawkins’s Race-Built Galleons",
+            "date": "1570s",
+            "img": "/images/ark_royal.jpg",
+            "mode": "contain-light",
+            "stat": "Lower Hulls, Lateen Sails & Long-Range Culverins",
+            "html": "Naval Treasurer Sir John Hawkins replaced top-heavy carracks with sleek <strong>race-built galleons</strong>. Triangular <strong>lateen sails</strong> and full decks of bronze <strong>culverins</strong> gave speed and heavy firepower.",
+            "spoken": "English shipyards paired those new charts with faster, tougher warships. <short pause> Naval Treasurer Sir John Hawkins replaced top-heavy carracks with sleek race-built galleons . Triangular lateen sails and full decks of bronze culverins gave speed and heavy firepower.",
+            "paired_prose_hash": "5d688b1af1",
+            "connective": "English shipyards paired those new charts with faster, tougher warships."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "New Companies & Trade Routes",
+            "date": "1555–1587",
+            "img": "/images/sir_john_hawkins.JPG",
+            "mode": "contain",
+            "stat": "Muscovy (1555) & Levant (1581) Trading Companies",
+            "html": "Choked by Antwerp trade slumps, merchants formed the <strong>Muscovy</strong> and <strong>Levant Companies</strong> for Russian and Ottoman goods, while <strong>Martin Frobisher</strong> braved Arctic ice seeking a Northwest Passage.",
+            "spoken": "Blocked from Antwerp cloth markets, English merchants hunted distant sea routes. <short pause> Choked by Antwerp trade slumps, merchants formed the Muscovy and Levant Companies for Russian and Ottoman goods, while Martin Frobisher braved Arctic ice seeking a Northwest Passage.",
+            "paired_prose_hash": "17bfd659c6",
+            "connective": "Blocked from Antwerp cloth markets, English merchants hunted distant sea routes."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Drake’s Circumnavigation",
+            "date": "Dec 1577–Sept 1580",
+            "img": "/images/hondius_drake_circumnavigation_map_1595.jpg",
+            "mode": "contain-light",
+            "stat": "First English Captain to Lead a Global Voyage",
+            "html": "Sailing the <em>Golden Hind</em> through the <strong>Strait of Magellan</strong>, <strong>Francis Drake</strong> seized Spain’s silver ship <em>Cacafuego</em>, claimed <strong>Nova Albion</strong> in North America, and traded Moluccan cloves.",
+            "spoken": "These advances came together in Francis Drake’s three-year voyage round the globe. <short pause> Sailing the Golden Hind through the Strait of Magellan , Francis Drake seized Spain’s silver ship Cacafuego , claimed Nova Albion in North America, and traded Moluccan cloves.",
+            "paired_prose_hash": "dacc667fd2",
+            "connective": "These advances came together in Francis Drake’s three-year voyage round the globe."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Treasure, Pride & Knighthood",
+            "date": "1580–1581",
+            "img": "/images/sir_francis_drake_portrait.jpg",
+            "mode": "contain",
+            "stat": "£400,000 Plunder Gave Investors a 4,700% Profit",
+            "html": "Drake’s £400,000 haul gave investors a <strong>4,700% profit</strong> and cleared England’s national debt. His 1581 <strong>Deptford knighting</strong> shattered Spain’s Pacific monopoly and inspired <strong>Raleigh’s</strong> colonies.",
+            "spoken": "Drake’s return brought dazzling wealth, national pride, and Spanish fury. <short pause> Drake’s 400,000 pounds haul gave investors a 4,700% profit and cleared England’s national debt. His 1581 Deptford knighting shattered Spain’s Pacific monopoly and inspired Raleigh’s colonies.",
+            "paired_prose_hash": "80ceae7cf1",
+            "connective": "Drake’s return brought dazzling wealth, national pride, and Spanish fury."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "An Oceanic Sea Power Emerges",
+            "date": "By 1588",
+            "img": "/images/armada_portrait.jpg",
+            "mode": "contain",
+            "stat": "Sea Charts, Global Trade & Colonial Ambition",
+            "html": "Precision <strong>navigation</strong>, <strong>race-built galleons</strong>, and <strong>Drake’s circumnavigation</strong> turned England into an oceanic sea power ready to defeat the Armada and attempt American settlement.",
+            "spoken": "Within thirty years, England had grown into a bold oceanic sea power. <short pause> Precision navigation , race-built galleons , and Drake’s circumnavigation turned England into an oceanic sea power ready to defeat the Armada and attempt American settlement.",
+            "connective": "Within thirty years, England had grown into a bold oceanic sea power."
+          }
+        ],
+        "takeaway": "Mercator charts, Hawkins’s race-built galleons, joint-stock companies, and Drake’s 1577–80 circumnavigation transformed England into an oceanic trading and naval power.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Mercator charts, Hawkins’s race-built galleons, joint-stock companies, and Drake’s 1577, 80 circumnavigation transformed England into an oceanic trading and naval power.",
+        "vocab": [
+          [
+            "1. Astrolabe",
+            "Brass instrument measuring the sun or stars to find a ship’s latitude."
+          ],
+          [
+            "2. Mercator Map (1569)",
+            "World map grid letting sailors plot straight-line compass courses at sea."
+          ],
+          [
+            "3. Circumnavigation",
+            "Sailing right around the globe, led by Drake in 1577–80 on Golden Hind."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3_4",
@@ -17973,7 +19164,115 @@ const unitData = {
         "kt3.4",
         "lesson_3_4"
       ],
-      "enquiry_question": "Why did Sir Walter Raleigh promote Virginia, and why did both the 1585 and 1587 Roanoke settlements fail?"
+      "enquiry_question": "Why did Sir Walter Raleigh promote Virginia, and why did both the 1585 and 1587 Roanoke settlements fail?",
+      "visual_story_sheet": {
+        "num": "12",
+        "slug": "eee_l12_visual_story_sheet",
+        "ktBadge": "Key Topic 3.4 • Lesson 12",
+        "datesBadge": "1584–1590",
+        "topicLabel": "Key Topic 3: Elizabethan Society in the Age of Exploration, 1558–88",
+        "title": "Why Did Raleigh’s Roanoke Colonies in Virginia Fail?",
+        "spokenTitle": "Why did Raleigh’s Roanoke colonies in Virginia fail?",
+        "thumbUrl": "/images/john_white_roanoke_map_1585_authentic.jpg",
+        "provenanceNote": "British Museum (John White Watercolours) & National Portrait Gallery London (Zero AI Imagery)",
+        "bridges": [
+          "Flawed Recruits",
+          "Tiger Sandbar",
+          "Wingina Ambush",
+          "Armada Delay",
+          "Lasting Blueprint"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Raleigh’s 1584 Royal Patent",
+            "date": "1584",
+            "img": "/images/sir_walter_raleigh.jpg",
+            "mode": "contain",
+            "stat": "£40,000 Raised; Manteo & Wanchese Brought Back",
+            "html": "Granted a royal patent in 1584, <strong>Sir Walter Raleigh</strong> named <strong>Virginia</strong> for Elizabeth and sent scouts to <strong>Roanoke</strong>, while Richard Hakluyt urged colonies to raid Spain and expand trade.",
+            "spoken": "Why did Raleigh’s Roanoke colonies in Virginia fail? <short pause> Granted a royal patent in 1584, Sir Walter Raleigh named Virginia for Elizabeth and sent scouts to Roanoke , while Richard Hakluyt urged colonies to raid Spain and expand trade.",
+            "paired_prose_hash": "d2b1deb142",
+            "connective": "Why did Raleigh’s Roanoke colonies in Virginia fail?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "107 Men & Divided Leaders",
+            "date": "April 1585",
+            "img": "/images/sir_richard_grenville.jpg",
+            "mode": "contain",
+            "stat": "Too Many Soldiers & Gentlemen, Too Few Farmers",
+            "html": "Raleigh sent <strong>107 male colonists</strong> under sea commander <strong>Sir Richard Grenville</strong> and governor Ralph Lane. Bitter clashes and a shortage of <strong>skilled farmers</strong> weakened the venture early.",
+            "spoken": "From the start, poor recruitment and clashing leaders weakened the first voyage. <short pause> Raleigh sent 107 male colonists under sea commander Sir Richard Grenville and governor Ralph Lane. Bitter clashes and a shortage of skilled farmers weakened the venture early.",
+            "paired_prose_hash": "786d88ac3b",
+            "connective": "From the start, poor recruitment and clashing leaders weakened the first voyage."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Wreck of the Tiger’s Stores",
+            "date": "June 1585–1586",
+            "img": "/images/john_white_indians_fishing.jpg",
+            "mode": "contain-light",
+            "stat": "29 June 1585: Seawater Ruined Seed Corn & Powder",
+            "html": "Arriving too late for spring planting, flagship <strong>Tiger</strong> hit a sandbar and seawater ruined most <strong>seed corn</strong>. Hungry colonists depended on Algonquian maize and woven <strong>Secotan fish traps</strong>.",
+            "spoken": "Disaster struck at the outer sandbars before the settlers even landed. <short pause> Arriving too late for spring planting, flagship Tiger hit a sandbar and seawater ruined most seed corn . Hungry colonists depended on Algonquian maize and woven Secotan fish traps .",
+            "paired_prose_hash": "2034c93fa6",
+            "connective": "Disaster struck at the outer sandbars before the settlers even landed."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Wingina Killed & Evacuation",
+            "date": "June 1586",
+            "img": "/images/john_white_chief_herowan.jpg",
+            "mode": "contain-light",
+            "stat": "18 June 1586: Starving Settlers Fled With Drake",
+            "html": "Amid drought and English raids, Secotan ruler <strong>Chief Wingina</strong> halted food trade. After Ralph Lane killed Wingina in a <strong>1 June 1586 ambush</strong>, starving colonists fled aboard <strong>Francis Drake’s</strong> fleet.",
+            "spoken": "Food shortages and English violence soon turned local Algonquian tribes hostile. <short pause> Amid drought and English raids, Secotan ruler Chief Wingina halted food trade. After Ralph Lane killed Wingina in a first of June 1586 ambush , starving colonists fled aboard Francis Drake’s fleet.",
+            "paired_prose_hash": "179cc6bc8f",
+            "connective": "Food shortages and English violence soon turned local Algonquian tribes hostile."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "1587 “Lost Colony” Vanishes",
+            "date": "1587–Aug 1590",
+            "img": "/images/john_white_roanoke_map_1585_authentic.jpg",
+            "mode": "contain-light",
+            "stat": "1588 Armada Blocked Resupply Ships Until 1590",
+            "html": "Governor <strong>John White</strong> returned in 1587 with 118 men, women, and children on Roanoke. Kept home by the <strong>1588 Spanish Armada</strong>, White returned in 1590 to find only <strong>‘CROATOAN’</strong> carved.",
+            "spoken": "A second family settlement was cut off when Spain’s Armada attacked England. <short pause> Governor John White returned in 1587 with 118 men, women, and children on Roanoke. Kept home by the 1588 Spanish Armada , White returned in 1590 to find only ‘CROATOAN’ carved.",
+            "paired_prose_hash": "76e4e5ffcc",
+            "connective": "A second family settlement was cut off when Spain’s Armada attacked England."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Failed Colonies, Future Blueprint",
+            "date": "By 1590",
+            "img": "/images/john_white_village_secotan.jpg",
+            "mode": "contain-light",
+            "stat": "Harriot & White Mapped Virginia for Later Empire",
+            "html": "Ruined <strong>Tiger supplies</strong>, war with Algonquians, and <strong>Armada delays</strong> doomed Roanoke. Yet Thomas Harriot’s notes and <strong>John White’s maps</strong> guided successful seventeenth-century colonies.",
+            "spoken": "Though both Roanoke settlements failed, they left a vital blueprint for empire. <short pause> Ruined Tiger supplies , war with Algonquians, and Armada delays doomed Roanoke. Yet Thomas Harriot’s notes and John White’s maps guided successful seventeenth-century colonies.",
+            "connective": "Though both Roanoke settlements failed, they left a vital blueprint for empire."
+          }
+        ],
+        "takeaway": "Both 1585 and 1587 Roanoke settlements failed through ruined Tiger food stores, few farmers, violence against Chief Wingina, and 1588 Armada resupply delays.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Both 1585 and 1587 Roanoke settlements failed through ruined Tiger food stores, few farmers, violence against Chief Wingina, and 1588 Armada resupply delays.",
+        "vocab": [
+          [
+            "1. Virginia",
+            "North American land claimed by Raleigh in 1584 for the Virgin Queen."
+          ],
+          [
+            "2. Algonquians",
+            "Indigenous coastal peoples of Roanoke led locally by Chief Wingina."
+          ],
+          [
+            "3. Lost Colony (1587)",
+            "White’s Roanoke settlement found deserted in 1590 with CROATOAN carved."
+          ]
+        ]
+      }
     }
   ],
   "key_individuals": [
@@ -18179,5 +19478,3 @@ const unitData = {
   "year_group": "Years 10–11",
   "category": "GCSE"
 };
-if (typeof window !== "undefined") { window.unitData = unitData; window.eeeData = unitData; }
-if (typeof module !== "undefined") { module.exports = unitData; }

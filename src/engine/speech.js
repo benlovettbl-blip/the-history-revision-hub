@@ -6,6 +6,9 @@
  */
 
 let activeUtterance = null;
+let activeStudioAudio = null;
+let activeStudioVoiceLabel = '';
+let studioTimelineSpans = [];
 let activeButton = null;
 let activeStopBtn = null;
 let activeChunk = null;
@@ -343,7 +346,14 @@ export function setSpeechRate(rate) {
       });
     }
 
-    // If currently speaking, smoothly resume at the new speed from current sentence
+    // If currently speaking via Studio Audio, adjust playbackRate immediately with pitch preservation
+    if (activeStudioAudio) {
+      activeStudioAudio.playbackRate = currentSpeechRate;
+      if ('preservesPitch' in activeStudioAudio) activeStudioAudio.preservesPitch = true;
+      return;
+    }
+
+    // If currently speaking via browser TTS, smoothly resume at the new speed from current sentence
     if (
       activeButton &&
       typeof window !== 'undefined' &&
@@ -389,6 +399,57 @@ export function renderAudioPlaybackBar(buttonTitle = 'Read Aloud', customClass =
  * @param {HTMLElement} rootEl - The text container to tokenize
  * @returns {{ spokenText: string, spans: Array<{ el: HTMLElement, start: number, end: number, sentenceIdx: number, word: string }> }}
  */
+const ABBREV_NON_END_RE =
+  /^(?:[A-Z]\.|(?:[A-Z]\.){2,}|Mr\.|Mrs\.|Ms\.|Dr\.|Prof\.|Sir\.|St\.|Gen\.|Col\.|Lt\.|Sgt\.|Capt\.|Rev\.|Gov\.|Pres\.|vs\.|etc\.|approx\.|ca\.|c\.|No\.|Fig\.|Vol\.|pp\.|p\.)$/i;
+
+function isSentenceEndingWordToken(token) {
+  const clean = String(token || '').replace(/["'”’)\]]+$/g, '');
+  if (!/[.!?]$/.test(clean)) return false;
+  if (clean.endsWith('!') || clean.endsWith('?')) return true;
+  if (ABBREV_NON_END_RE.test(clean)) return false;
+  return true;
+}
+
+function spokenPhoneticWeight(rawWord) {
+  const w = String(rawWord || '').trim();
+  if (!w) return 2;
+
+  let base = 0;
+  const digitsOnly = w.replace(/[^0-9]/g, '');
+  if (/^\d{4}s?$/.test(w.replace(/[^0-9s]/gi, ''))) {
+    base = 17;
+  } else if (digitsOnly.length >= 4) {
+    base = 14 + digitsOnly.length * 1.6;
+  } else if (digitsOnly.length >= 1) {
+    base = 7 + digitsOnly.length * 2.5 + (w.includes('%') ? 7 : 0);
+  } else if (/^[A-Z]{2,6}$/.test(w.replace(/[^A-Za-z]/g, ''))) {
+    const letters = w.replace(/[^A-Za-z]/g, '');
+    base = letters === 'WWII' || letters === 'WWI' ? 13 : letters.length * 3.6;
+  } else {
+    base = Math.max(2.2, w.replace(/[^a-zA-Z0-9]/g, '').length);
+  }
+
+  let pause = 0;
+  if (isSentenceEndingWordToken(w)) pause = 6.5;
+  else if (/[:;—–]$/.test(w) || w === '—' || w === '–') pause = 3.8;
+  else if (/[,]["'”’)]*$/.test(w)) pause = 2.4;
+
+  return base + pause;
+}
+
+const audioTimingsCache = new Map();
+
+function fetchAudioTimings(category, unitId) {
+  if (!category || !unitId) return Promise.resolve(null);
+  const cacheKey = `${category}:${unitId}`;
+  if (audioTimingsCache.has(cacheKey)) return audioTimingsCache.get(cacheKey);
+  const p = fetch(`/audio/${encodeURIComponent(category)}/${encodeURIComponent(unitId)}/timings.json`)
+    .then((r) => (r.ok ? r.json() : null))
+    .catch(() => null);
+  audioTimingsCache.set(cacheKey, p);
+  return p;
+}
+
 function prepareHighlightableText(rootEl) {
   if (!rootEl) return { spokenText: '', spans: [] };
 
@@ -402,12 +463,16 @@ function prepareHighlightableText(rootEl) {
     acceptNode(node) {
       const parent = node.parentElement;
       if (!parent) return NodeFilter.FILTER_REJECT;
-      // Skip non-printable, scripts, buttons, and paragraph markers from speech text collection
+      // Skip hidden print duplicates, icons, buttons, scripts, and paragraph markers
       if (
         parent.closest(
-          '.no-print, .print-only, button, style, script, .para-ref, [style*="display: none"], [style*="display:none"]',
+          '.print-only, button, style, script, .para-ref, [aria-hidden="true"], [style*="display: none"], [style*="display:none"]',
         )
       ) {
+        return NodeFilter.FILTER_REJECT;
+      }
+      // Skip UI toolbars marked .no-print, EXCEPT inline Dossier Entity Chips (.key-individual-inline-link) which ARE spoken words!
+      if (parent.closest('.no-print') && !parent.closest('.key-individual-inline-link')) {
         return NodeFilter.FILTER_REJECT;
       }
       if (!node.nodeValue || !node.nodeValue.trim()) {
@@ -469,8 +534,8 @@ function prepareHighlightableText(rootEl) {
         fragment.appendChild(span);
         spans.push({ el: span, start, end, sentenceIdx, word: token });
 
-        // Advance sentence index on sentence-ending punctuation
-        if (/[.!?]["']?$/.test(token)) {
+        // Advance sentence index on genuine sentence-ending punctuation (skipping initials like "S." or "Dr.")
+        if (isSentenceEndingWordToken(token)) {
           sentenceIdx++;
         }
       }
@@ -495,6 +560,10 @@ function updateFloatingAudioPlayerState() {
   const pauseBtn = floatingAudioPlayerEl.querySelector('#sfp-pause-btn');
   const speedBtn = floatingAudioPlayerEl.querySelector('#sfp-speed-btn');
   const voiceBtn = floatingAudioPlayerEl.querySelector('#sfp-voice-btn');
+  const labelEl = floatingAudioPlayerEl.querySelector('.sfp-label');
+  if (labelEl) {
+    labelEl.textContent = activeStudioAudio ? (activeStudioVoiceLabel || 'Studio Historian') : 'Reading';
+  }
   if (pauseBtn) {
     pauseBtn.innerHTML = isPaused
       ? '<i class="fa-solid fa-play"></i>'
@@ -506,9 +575,16 @@ function updateFloatingAudioPlayerState() {
     speedBtn.title = `Playback speed: ${currentSpeechRate}x (Click to cycle 0.85x, 1x, 1.15x)`;
   }
   if (voiceBtn) {
-    const isMale = currentVoiceGender === 'male';
-    voiceBtn.innerHTML = isMale ? '<i class="fa-solid fa-mars"></i> <span class="sfp-voice-text">UK ♂</span>' : '<i class="fa-solid fa-venus"></i> <span class="sfp-voice-text">UK ♀</span>';
-    voiceBtn.title = `Voice: ${isMale ? 'Natural UK Male' : 'Natural UK Female'} (Click to switch)`;
+    if (activeStudioAudio) {
+      voiceBtn.innerHTML = '<i class="fa-solid fa-microphone-lines"></i> <span class="sfp-voice-text">Studio AI</span>';
+      voiceBtn.title = 'Studio British Historian Narration';
+      voiceBtn.style.opacity = '0.92';
+    } else {
+      voiceBtn.style.opacity = '1';
+      const isMale = currentVoiceGender === 'male';
+      voiceBtn.innerHTML = isMale ? '<i class="fa-solid fa-mars"></i> <span class="sfp-voice-text">UK ♂</span>' : '<i class="fa-solid fa-venus"></i> <span class="sfp-voice-text">UK ♀</span>';
+      voiceBtn.title = `Voice: ${isMale ? 'Natural UK Male' : 'Natural UK Female'} (Click to switch)`;
+    }
   }
 }
 
@@ -551,6 +627,7 @@ function showFloatingAudioPlayer() {
 
     floatingAudioPlayerEl.querySelector('#sfp-voice-btn')?.addEventListener('click', (e) => {
       e.stopPropagation();
+      if (activeStudioAudio) return;
       toggleVoiceGender();
       updateFloatingAudioPlayerState();
     });
@@ -576,7 +653,7 @@ function showFloatingAudioPlayer() {
     floatingAudioObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (!activeUtterance && !window.speechSynthesis?.speaking) {
+          if (!activeStudioAudio && !activeUtterance && !window.speechSynthesis?.speaking) {
             hideFloatingAudioPlayer();
             return;
           }
@@ -603,7 +680,12 @@ function hideFloatingAudioPlayer() {
   if (floatingAudioPlayerEl) {
     floatingAudioPlayerEl.classList.remove('is-visible');
     setTimeout(() => {
-      if (floatingAudioPlayerEl && !activeUtterance && !window.speechSynthesis?.speaking) {
+      if (
+        floatingAudioPlayerEl &&
+        !activeStudioAudio &&
+        !activeUtterance &&
+        !window.speechSynthesis?.speaking
+      ) {
         floatingAudioPlayerEl.remove();
         floatingAudioPlayerEl = null;
       }
@@ -623,6 +705,17 @@ export function resetActiveSpeech() {
     clearInterval(softwareTickerTimer);
     softwareTickerTimer = null;
   }
+  if (activeStudioAudio) {
+    try {
+      activeStudioAudio.onended = null;
+      activeStudioAudio.onerror = null;
+      activeStudioAudio.pause();
+      activeStudioAudio.removeAttribute('src');
+    } catch (e) {}
+    activeStudioAudio = null;
+  }
+  activeStudioVoiceLabel = '';
+  studioTimelineSpans = [];
   hideFloatingAudioPlayer();
 
   // Restore original pristine DOM without leftover spans
@@ -687,6 +780,15 @@ export function resetActiveSpeech() {
 export function cancelSpeech() {
   activeUtterance = null;
   window._activeSpeechUtterance = null;
+  if (activeStudioAudio) {
+    try {
+      activeStudioAudio.onended = null;
+      activeStudioAudio.onerror = null;
+      activeStudioAudio.pause();
+      activeStudioAudio.removeAttribute('src');
+    } catch (e) {}
+    activeStudioAudio = null;
+  }
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.cancel();
   }
@@ -708,6 +810,29 @@ export function jumpToSentence(sentenceIdx) {
   }
 
   const firstSpan = remainingSpans[0];
+
+  // Studio Audio Path: Seek MP3 directly to the exact acoustic sentence start!
+  if (activeStudioAudio && studioTimelineSpans.length > 0) {
+    const matchTimeline = studioTimelineSpans.find((s) => s.sentenceIdx >= sentenceIdx) || studioTimelineSpans[0];
+    highlightSpanAndSentence(matchTimeline);
+    if (typeof matchTimeline.secStart === 'number' && isFinite(matchTimeline.secStart)) {
+      activeStudioAudio.currentTime = Math.max(0, matchTimeline.secStart);
+    } else if (activeStudioAudio.duration && isFinite(activeStudioAudio.duration)) {
+      activeStudioAudio.currentTime = Math.max(0, matchTimeline.tStart * activeStudioAudio.duration);
+    }
+    if (isPaused) {
+      isPaused = false;
+      if (activeButton) {
+        activeButton.classList.remove('reading-paused');
+        activeButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        activeButton.title = 'Pause Reading';
+      }
+      activeStudioAudio.play().catch(() => resetActiveSpeech());
+    }
+    updateFloatingAudioPlayerState();
+    return;
+  }
+
   const charOffset = firstSpan.start;
   const remainingText = activeSpokenText.slice(charOffset).trim();
 
@@ -879,7 +1004,8 @@ function highlightSpanAndSentence(matchSpan) {
     activeHighlightedWord = matchSpan.el;
 
     // Update sentence background shading
-    if (activeHighlightedSentenceIdx !== matchSpan.sentenceIdx) {
+    const sentenceChanged = activeHighlightedSentenceIdx !== matchSpan.sentenceIdx;
+    if (sentenceChanged) {
       if (activeHighlightedSentenceIdx !== null) {
         activeWordSpans
           .filter((s) => s.sentenceIdx === activeHighlightedSentenceIdx)
@@ -889,30 +1015,228 @@ function highlightSpanAndSentence(matchSpan) {
       activeWordSpans
         .filter((s) => s.sentenceIdx === activeHighlightedSentenceIdx)
         .forEach((s) => s.el.classList.add('speaking-sentence-highlight'));
-    }
 
-    // Smooth scroll word into view if near viewport boundary
-    try {
-      matchSpan.el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-    } catch (e) {}
+      // Only nudge scroll on sentence transitions when text is actually outside comfortable viewport bounds
+      try {
+        const rect = matchSpan.el.getBoundingClientRect();
+        const vh = window.innerHeight || document.documentElement.clientHeight || 800;
+        if (rect.top < 76 || rect.bottom > vh - 96) {
+          matchSpan.el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }
+      } catch (e) {}
+    }
   }
 }
 
 /**
+ * Build acoustic-anchored [secStart, secEnd] & fallback [tStart, tEnd] timing brackets
+ * across spoken word spans. When `blockTimings` (extracted via `ffmpeg silencedetect`)
+ * matches the DOM sentence count, every sentence is locked to its exact millisecond
+ * spoken window so cumulative drift across numbers, dates, and pauses is 0.00s.
+ */
+function buildStudioSpanTimeline(spans, blockTimings = null, knownDuration = 0) {
+  if (!spans || spans.length === 0) return [];
+  const weights = spans.map((sp) => spokenPhoneticWeight(sp.word));
+  const total = weights.reduce((acc, w) => acc + w, 0) || 1;
+
+  // Group spans by sentenceIdx
+  const bySentence = new Map();
+  spans.forEach((sp, idx) => {
+    if (!bySentence.has(sp.sentenceIdx)) bySentence.set(sp.sentenceIdx, []);
+    bySentence.get(sp.sentenceIdx).push({ sp, w: weights[idx] });
+  });
+  const sentenceKeys = [...bySentence.keys()].sort((a, b) => a - b);
+
+  // Path A: Exact acoustic sentence windows from `timings.json`
+  if (
+    blockTimings &&
+    Array.isArray(blockTimings.sentences) &&
+    blockTimings.sentences.length === sentenceKeys.length
+  ) {
+    const dur = knownDuration || blockTimings.dur || 1;
+    const result = [];
+    sentenceKeys.forEach((sKey, k) => {
+      const [sStart, sEnd] = blockTimings.sentences[k];
+      const items = bySentence.get(sKey);
+      const sentW = items.reduce((a, x) => a + x.w, 0) || 1;
+      const spanSec = Math.max(0.1, sEnd - sStart);
+      let cum = 0;
+      items.forEach(({ sp, w }) => {
+        const secStart = sStart + (cum / sentW) * spanSec;
+        cum += w;
+        const secEnd = sStart + (cum / sentW) * spanSec;
+        result.push({
+          ...sp,
+          secStart,
+          secEnd,
+          tStart: secStart / dur,
+          tEnd: secEnd / dur,
+        });
+      });
+    });
+    return result;
+  }
+
+  // Path B: Phonetic number/syllable-weighted timeline across [speechStart, speechEnd]
+  const dur = knownDuration || blockTimings?.dur || 0;
+  const speechStart = blockTimings?.sentences?.[0]?.[0] ?? 0.22;
+  const lastWin = blockTimings?.sentences?.[blockTimings.sentences.length - 1];
+  const speechEnd = lastWin ? lastWin[1] : dur > 1 ? Math.max(0.5, dur - 0.3) : 0;
+  const activeSec = speechEnd > speechStart ? speechEnd - speechStart : 0;
+
+  let cum = 0;
+  return spans.map((sp, i) => {
+    const tStart = cum / total;
+    cum += weights[i];
+    const tEnd = cum / total;
+    const secStart = activeSec > 0 ? speechStart + tStart * activeSec : null;
+    const secEnd = activeSec > 0 ? speechStart + tEnd * activeSec : null;
+    return { ...sp, secStart, secEnd, tStart, tEnd };
+  });
+}
+
+/**
+ * Play a pre-synthesized Studio Historian MP3 with real-time acoustic-anchored sentence
+ * & word highlighting, falling back transparently to browser SpeechSynthesis if unvoiced.
+ */
+function startStudioAudioWithFallback(studioSrc, spokenText, spans, voiceLabel = 'Studio Historian') {
+  const audio = new Audio();
+  audio.preload = 'auto';
+  activeStudioAudio = audio;
+  activeStudioVoiceLabel = voiceLabel || 'Studio Historian';
+  let loadedBlockTimings = null;
+  studioTimelineSpans = buildStudioSpanTimeline(spans, null, 0);
+  isPaused = false;
+
+  // Parse `/audio/<category>/<unitId>/<clipKey>.mp3` to load exact acoustic sentence timings
+  const pathMatch = String(studioSrc || '').match(/\/audio\/(lessons|sources|reading)\/([^/]+)\/([^/]+)\.mp3/i);
+  if (pathMatch) {
+    const category = decodeURIComponent(pathMatch[1]);
+    const unitId = decodeURIComponent(pathMatch[2]);
+    const blockKey = decodeURIComponent(pathMatch[3]);
+    fetchAudioTimings(category, unitId).then((allTimings) => {
+      if (activeStudioAudio !== audio || !allTimings || !allTimings[blockKey]) return;
+      loadedBlockTimings = allTimings[blockKey];
+      studioTimelineSpans = buildStudioSpanTimeline(
+        spans,
+        loadedBlockTimings,
+        audio.duration && isFinite(audio.duration) ? audio.duration : loadedBlockTimings.dur,
+      );
+    });
+  }
+
+  const fallbackToBrowserTts = () => {
+    if (activeStudioAudio !== audio) return;
+    if (softwareTickerTimer) {
+      clearInterval(softwareTickerTimer);
+      softwareTickerTimer = null;
+    }
+    try {
+      audio.onended = null;
+      audio.onerror = null;
+      audio.pause();
+      audio.removeAttribute('src');
+    } catch (e) {}
+    activeStudioAudio = null;
+    activeStudioVoiceLabel = '';
+    studioTimelineSpans = [];
+    updateFloatingAudioPlayerState();
+    startUtterance(spokenText, 0, spans[0]);
+  };
+
+  audio.onerror = fallbackToBrowserTts;
+  audio.onloadedmetadata = () => {
+    if (activeStudioAudio !== audio) return;
+    audio.playbackRate = currentSpeechRate;
+    if ('preservesPitch' in audio) audio.preservesPitch = true;
+    studioTimelineSpans = buildStudioSpanTimeline(spans, loadedBlockTimings, audio.duration);
+  };
+  audio.onended = () => {
+    if (activeStudioAudio !== audio) return;
+    resetActiveSpeech();
+  };
+
+  if (spans[0]) {
+    highlightSpanAndSentence(spans[0]);
+  }
+  showFloatingAudioPlayer();
+
+  if (softwareTickerTimer) clearInterval(softwareTickerTimer);
+  softwareTickerTimer = setInterval(() => {
+    if (!activeStudioAudio || activeStudioAudio !== audio || isPaused) return;
+    const t = audio.currentTime;
+    const dur = audio.duration;
+    if (!dur || !isFinite(dur) || dur <= 0) return;
+
+    let match = null;
+    if (studioTimelineSpans.length > 0 && typeof studioTimelineSpans[0].secStart === 'number') {
+      // Find exact span containing `t`, or hold on the last spoken span during inter-sentence pauses
+      for (let i = 0; i < studioTimelineSpans.length; i++) {
+        const s = studioTimelineSpans[i];
+        if (t >= s.secStart && t <= s.secEnd) {
+          match = s;
+          break;
+        }
+        if (t > s.secEnd) {
+          match = s;
+        } else if (t < s.secStart) {
+          if (!match) match = s;
+          break;
+        }
+      }
+    } else {
+      const ratio = Math.min(0.9999, Math.max(0, t / dur));
+      match =
+        studioTimelineSpans.find((s) => ratio >= s.tStart && ratio < s.tEnd) ||
+        studioTimelineSpans[studioTimelineSpans.length - 1];
+    }
+
+    if (match) {
+      highlightSpanAndSentence(match);
+    }
+  }, 40);
+
+  audio.src = studioSrc;
+  audio.playbackRate = currentSpeechRate;
+  if ('preservesPitch' in audio) audio.preservesPitch = true;
+  audio.play().catch((err) => {
+    if (err && err.name === 'AbortError') return;
+    fallbackToBrowserTts();
+  });
+}
+
+/**
  * Read aloud the narrative paragraph or source container associated with the clicked button.
- * Supports Play / Pause / Resume and Stop.
+ * Supports Studio Historian MP3 playback (with sentence-level highlight tracking + click-to-seek)
+ * and transparent fallback to browser SpeechSynthesis.
  * @param {HTMLElement} btnElement - The clicked speaker/play button
  */
 export function readAloudText(btnElement) {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    console.warn('SpeechSynthesis API is not supported in this browser.');
+  if (typeof window === 'undefined') return;
+
+  // 1a. Toggle Play / Pause / Resume if currently playing via Studio Audio
+  if (btnElement === activeButton && activeStudioAudio) {
+    if (!isPaused) {
+      activeStudioAudio.pause();
+      isPaused = true;
+      btnElement.classList.add('reading-paused');
+      btnElement.innerHTML = '<i class="fa-solid fa-play"></i>';
+      btnElement.title = 'Resume Reading';
+      updateFloatingAudioPlayerState();
+    } else {
+      isPaused = false;
+      btnElement.classList.remove('reading-paused');
+      btnElement.innerHTML = '<i class="fa-solid fa-pause"></i>';
+      btnElement.title = 'Pause Reading';
+      updateFloatingAudioPlayerState();
+      activeStudioAudio.play().catch(() => resetActiveSpeech());
+    }
     return;
   }
 
-  // 1. If user clicked the currently active button: toggle Play / Pause / Resume
-  if (btnElement === activeButton && window.speechSynthesis.speaking) {
+  // 1b. Toggle Play / Pause / Resume if currently playing via browser SpeechSynthesis
+  if (btnElement === activeButton && window.speechSynthesis?.speaking) {
     if (!isPaused) {
-      // Pause
       window.speechSynthesis.pause();
       isPaused = true;
       btnElement.classList.add('reading-paused');
@@ -921,14 +1245,12 @@ export function readAloudText(btnElement) {
       updateFloatingAudioPlayerState();
       return;
     } else {
-      // Resume
       window.speechSynthesis.resume();
       isPaused = false;
       btnElement.classList.remove('reading-paused');
       btnElement.innerHTML = '<i class="fa-solid fa-pause"></i>';
       btnElement.title = 'Pause Reading';
       updateFloatingAudioPlayerState();
-      // Safety guard: if resume stalled, restart cleanly from current sentence
       if (!window.speechSynthesis.speaking) {
         resumeSpeechFromCurrentSentence();
       }
@@ -939,15 +1261,16 @@ export function readAloudText(btnElement) {
   // 2. If another button was clicked, cancel previous speech and start fresh
   cancelSpeech();
 
-  // Find parent container (narrative chunk, source box, or card)
+  // Find parent container (narrative chunk, prologue lede, source box, or card)
   const chunk =
     btnElement.closest(
-      '.narrative-chunk, .archival-source-box, .gcse-source-container, .standard-narrative-container, .card, .content-section',
+      '.narrative-chunk, .historical-editorial-lede, .archival-source-box, .gcse-source-container, .standard-narrative-container, .card, .content-section',
     ) || btnElement.parentElement;
   if (!chunk) return;
 
   const textEl =
     chunk.querySelector('.narrative-text') ||
+    chunk.querySelector('.historical-editorial-lede-text') ||
     chunk.querySelector('.archival-verse-stanzas') ||
     chunk.querySelector('.archival-source-body') ||
     chunk;
@@ -961,6 +1284,18 @@ export function readAloudText(btnElement) {
     }
     return;
   }
+
+  // Enable click-any-sentence-to-seek inside active container (leaving Dossier Chips free to open their popover)
+  spans.forEach((span) => {
+    if (span.el.closest('.key-individual-inline-link')) return;
+    span.el.classList.add('speech-interactive-sentence');
+    span.el.title = 'Click to jump narration to this sentence';
+    span.el.addEventListener('click', (e) => {
+      if (!activeHighlightContainer) return;
+      e.stopPropagation();
+      jumpToSentence(span.sentenceIdx);
+    });
+  });
 
   // Find playback bar and stop button
   const playbackBar = btnElement.closest('.read-aloud-playback-bar');
@@ -981,34 +1316,88 @@ export function readAloudText(btnElement) {
   if (stopBtn) stopBtn.style.display = 'inline-flex';
   chunk.classList.add('reading-highlight');
 
-  // Start reading from the very beginning
-  startUtterance(spokenText, 0, spans[0]);
+  // Check if this is a Studio-voiced Source (`data-studio-source-audio`) or Narrative/Prologue (`data-studio-audio`)
+  const isSourceOrL4 = Boolean(
+    btnElement.closest(
+      '.archival-source-box, .gcse-source-container, .source-audio-bar, .level4-narrative-container',
+    ),
+  );
+  const studioSourceWrapper = isSourceOrL4 ? btnElement.closest('[data-studio-source-audio]') : null;
+  const studioSourceSrc = studioSourceWrapper
+    ? studioSourceWrapper.getAttribute('data-studio-source-audio')
+    : null;
+  const studioWrapper = !isSourceOrL4 ? btnElement.closest('[data-studio-audio]') : null;
+  const studioAudioSrc =
+    studioSourceSrc || (studioWrapper ? studioWrapper.getAttribute('data-studio-audio') : null);
+  const studioVoiceLabel =
+    (studioSourceWrapper && studioSourceWrapper.getAttribute('data-studio-voice-label')) ||
+    (studioWrapper && studioWrapper.getAttribute('data-studio-voice-label')) ||
+    'Studio Historian';
+
+  if (studioAudioSrc) {
+    startStudioAudioWithFallback(studioAudioSrc, spokenText, spans, studioVoiceLabel);
+  } else if ('speechSynthesis' in window) {
+    startUtterance(spokenText, 0, spans[0]);
+  } else {
+    resetActiveSpeech();
+  }
 }
 
 /**
  * Read aloud an arbitrary text container (e.g. Literary Companion homework extract).
  * Provides interactive sentence clicking, real-time karaoke sentence & word highlighting,
- * custom play/pause/stop button synchronization, and status updates.
- * @param {HTMLElement} textEl - The element containing the extract text
- * @param {Object} [options]
- * @param {HTMLElement} [options.playBtn] - Play/pause trigger button
- * @param {HTMLElement} [options.stopBtn] - Stop button to show/hide
- * @param {HTMLElement} [options.statusEl] - Text element for reading status
- * @param {HTMLElement} [options.activeVoiceEl] - Element to show active voice name
- * @param {Function} [options.onStateChange] - State change callback ('playing'|'paused'|'stopped')
+ * Studio Cast MP3 narration with exact `timings.json` alignment, and fallback browser TTS.
  */
 export function readAloudContainer(textEl, options = {}) {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+  if (typeof window === 'undefined') return;
+
+  const {
+    playBtn,
+    stopBtn,
+    statusEl,
+    activeVoiceEl,
+    onStateChange,
+    studioAudioUrl,
+    studioVoiceLabel,
+  } = options;
+
+  if (!studioAudioUrl && !('speechSynthesis' in window)) {
     console.warn('SpeechSynthesis API is not supported in this browser.');
     return;
   }
 
-  const { playBtn, stopBtn, statusEl, activeVoiceEl, onStateChange } = options;
-
-  // 1. If this container is already active and speech is speaking: toggle pause/resume
-  if (activeHighlightContainer === textEl && window.speechSynthesis.speaking) {
+  // 1a. If this container is already active via Studio Audio: toggle pause/resume
+  if (activeHighlightContainer === textEl && activeStudioAudio) {
     if (!isPaused) {
-      // Pause
+      activeStudioAudio.pause();
+      isPaused = true;
+      if (playBtn) {
+        playBtn.classList.add('reading-paused');
+        playBtn.innerHTML = '<i class="fa-solid fa-play" id="play-icon"></i> <span id="play-btn-text">Resume Reading</span>';
+      }
+      if (statusEl) statusEl.textContent = '⏸ Paused';
+      updateFloatingAudioPlayerState();
+      if (onStateChange) onStateChange('paused');
+      return;
+    } else {
+      isPaused = false;
+      if (playBtn) {
+        playBtn.classList.remove('reading-paused');
+        playBtn.innerHTML = '<i class="fa-solid fa-pause" id="play-icon"></i> <span id="play-btn-text">Pause Reading</span>';
+      }
+      if (statusEl) {
+        statusEl.textContent = `🔊 ${activeStudioVoiceLabel || studioVoiceLabel || 'Studio Cast'} (${currentSpeechRate}x)...`;
+      }
+      updateFloatingAudioPlayerState();
+      if (onStateChange) onStateChange('playing');
+      activeStudioAudio.play().catch(() => resetActiveSpeech());
+      return;
+    }
+  }
+
+  // 1b. If this container is already active and browser speech is speaking: toggle pause/resume
+  if (activeHighlightContainer === textEl && window.speechSynthesis?.speaking) {
+    if (!isPaused) {
       window.speechSynthesis.pause();
       isPaused = true;
       if (playBtn) {
@@ -1020,7 +1409,6 @@ export function readAloudContainer(textEl, options = {}) {
       if (onStateChange) onStateChange('paused');
       return;
     } else {
-      // Resume
       window.speechSynthesis.resume();
       isPaused = false;
       if (playBtn) {
@@ -1060,8 +1448,10 @@ export function readAloudContainer(textEl, options = {}) {
       e.stopPropagation();
       jumpToSentence(span.sentenceIdx);
       if (statusEl) {
-        const details = getActiveVoiceDetails();
-        statusEl.textContent = `🔊 Reading sentence ${span.sentenceIdx + 1} (${details.friendlyName}, ${currentSpeechRate}x)...`;
+        const vName = activeStudioAudio
+          ? activeStudioVoiceLabel || studioVoiceLabel || 'Studio Cast'
+          : getActiveVoiceDetails().friendlyName;
+        statusEl.textContent = `🔊 Sentence ${span.sentenceIdx + 1} (${vName}, ${currentSpeechRate}x)...`;
       }
       if (playBtn) {
         playBtn.classList.add('reading-active');
@@ -1094,17 +1484,24 @@ export function readAloudContainer(textEl, options = {}) {
     playBtn.innerHTML = '<i class="fa-solid fa-pause" id="play-icon"></i> <span id="play-btn-text">Pause Reading</span>';
   }
   if (stopBtn) stopBtn.style.display = 'inline-flex';
+
+  const resolvedVoiceLabel = studioAudioUrl
+    ? studioVoiceLabel || 'Studio Cast Voice'
+    : getActiveVoiceDetails().friendlyName;
+
   if (statusEl) {
-    const details = getActiveVoiceDetails();
-    statusEl.textContent = `🔊 Reading aloud (${details.friendlyName}, ${currentSpeechRate}x)...`;
+    statusEl.textContent = `🔊 ${studioAudioUrl ? resolvedVoiceLabel : `Reading aloud (${resolvedVoiceLabel})`} (${currentSpeechRate}x)...`;
   }
   if (activeVoiceEl) {
-    const details = getActiveVoiceDetails();
-    activeVoiceEl.textContent = details.friendlyName;
+    activeVoiceEl.textContent = resolvedVoiceLabel;
   }
   if (onStateChange) onStateChange('playing');
 
-  startUtterance(spokenText, 0, spans[0]);
+  if (studioAudioUrl) {
+    startStudioAudioWithFallback(studioAudioUrl, spokenText, spans, resolvedVoiceLabel);
+  } else {
+    startUtterance(spokenText, 0, spans[0]);
+  }
 }
 
 /**
@@ -1144,7 +1541,7 @@ export function initSpeech() {
     // Auto-suspend speech when any modal dialog or interactive overlay opens (Recommendation 4)
     document.addEventListener('click', (e) => {
       const modalTrigger = e.target.closest('[data-action*="modal"], [data-action*="open-"], [data-action*="launch-"], .btn-guided-reading-launcher, #btn-launch-diagnostic, #btn-start-diagnostic');
-      if (modalTrigger && window.speechSynthesis?.speaking) {
+      if (modalTrigger && (activeStudioAudio || window.speechSynthesis?.speaking)) {
         cancelSpeech();
       }
     }, true);

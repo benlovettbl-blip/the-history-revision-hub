@@ -1,0 +1,138 @@
+{
+  "unitId": "great_war",
+  "clips": {
+    "lesson_2_sE": {
+      "hash": "6c1b84d4d05df28e99b95db76f525d663bc5595a55ad010a7fcc914ab40ac9be",
+      "bytes": 178892,
+      "voiceKey": "ww1_british_officer",
+      "badge": "David Lloyd George (1911)",
+      "updatedAt": "2026-11-19T22:34:57.666Z"
+    },
+    "lesson_3_sC": {
+      "hash": "6d14c3e399c7aedb3740fbe148f022eb9697e428e98c5aa4a19ea87050e57ca2",
+      "bytes": 130988,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Admiral Sir John Fisher (1904)",
+      "updatedAt": "2026-11-19T22:34:58.126Z"
+    },
+    "lesson_5_sD": {
+      "hash": "33aac78df6ccbf1845ef268bcd3eb55ddbdc61614ef1967473a3e99e674d9a0f",
+      "bytes": 132908,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Tsar Nicholas II Decree (30 July 1914)",
+      "updatedAt": "2026-11-19T23:28:54.517Z"
+    },
+    "lesson_6_sD": {
+      "hash": "beccb6a15b2c3c896bb1792419a5dfce918b0b5571724ca55eb4fe89426048f5",
+      "bytes": 200588,
+      "voiceKey": "ww1_british_officer",
+      "badge": "PM H. H. Asquith (2 Aug 1914)",
+      "updatedAt": "2026-11-19T22:34:59.027Z"
+    },
+    "lesson_1_sC": {
+      "hash": "75de310e1ce552889647cf38c388114f5b895a4d6cc9b9715899806e0aa86c1d",
+      "bytes": 184940,
+      "voiceKey": "male_historian",
+      "badge": "Treaty of Frankfurt (1871)",
+      "updatedAt": "2026-11-19T22:35:10.311Z"
+    },
+    "lesson_3_sA": {
+      "hash": "1f0ad21abc5c9ef96d70019413072bbc49d806712465bc9e4b8dd353f9e87f47",
+      "bytes": 121580,
+      "voiceKey": "male_historian",
+      "badge": "Naval Defence Act (1889)",
+      "updatedAt": "2026-11-19T22:35:10.713Z"
+    },
+    "lesson_3_sE": {
+      "hash": "7813a457514302f7589ed14959907f0443110ba5385e623c2229bf70fe40d8a4",
+      "bytes": 232748,
+      "voiceKey": "male_historian",
+      "badge": "Admiralty Return (1914)",
+      "updatedAt": "2026-11-19T22:35:11.280Z"
+    },
+    "lesson_4_sB": {
+      "hash": "8bc28b38c09b19433a273434309c2667dff9e81ccfb247fc70125b2a7c634066",
+      "bytes": 167180,
+      "voiceKey": "male_historian",
+      "badge": "Franco-Russian Pact (1894)",
+      "updatedAt": "2026-11-19T22:35:11.754Z"
+    },
+    "lesson_6_sC": {
+      "hash": "15a8b1b6a5caa824394dc4a849d5978bc280a7dd07cf222e30311d559348bdcb",
+      "bytes": 150860,
+      "voiceKey": "male_historian",
+      "badge": "Fischer Thesis · Fritz Fischer",
+      "updatedAt": "2026-11-19T22:35:12.207Z"
+    },
+    "lesson_6_sB": {
+      "hash": "941f378822288a3979ff9dc317909a5818935f3b22e62d9eed8b95dd6ab171b1",
+      "bytes": 143660,
+      "voiceKey": "female_historian",
+      "badge": "Modern View · Christopher Clark",
+      "updatedAt": "2026-11-19T22:36:17.565Z"
+    },
+    "lesson_1_sE": {
+      "hash": "f1e1d4f6446824c3c6edb4d4ecb4ebedd1d377d2e5862cb75f678bd22bbd8679",
+      "bytes": 206060,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Secret Reinsurance Treaty (1887)",
+      "updatedAt": "2026-11-19T22:37:06.697Z"
+    },
+    "lesson_2_sB": {
+      "hash": "6b6e67432a43921a25c7ec77e80139cc5b6f296b63650fb8026db479d88e8973",
+      "bytes": 123692,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Bernhard von Bülow (1897)",
+      "updatedAt": "2026-11-19T22:37:07.136Z"
+    },
+    "lesson_2_sD": {
+      "hash": "c7c2419ca255007f65490e8c8d34bfaaa8d51511abbbd8af29b7275b04aa5358",
+      "bytes": 122348,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Kaiser Wilhelm II (1905)",
+      "updatedAt": "2026-11-19T22:37:07.526Z"
+    },
+    "lesson_3_sB": {
+      "hash": "7fe0b724db5a15f5a35844c564d5214bdd3abbe079a1cdd05e1f106166e1dc4d",
+      "bytes": 165740,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Admiral Tirpitz · Naval Law (1900)",
+      "updatedAt": "2026-11-19T22:37:07.975Z"
+    },
+    "lesson_4_sA": {
+      "hash": "b9d6a4fb47a521b17b2effa6d295da97cab8ef2ba8b9664368ab3620fd2400ca",
+      "bytes": 193580,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Dual Alliance Treaty (1879)",
+      "updatedAt": "2026-11-19T22:37:08.479Z"
+    },
+    "lesson_4_sC": {
+      "hash": "45d6d6bbbcfc2cb01df6373040615889de0c610e7229d27100862aea11e4cbf1",
+      "bytes": 144620,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Emperor Franz Joseph (1908)",
+      "updatedAt": "2026-11-19T22:37:08.910Z"
+    },
+    "lesson_5_sB": {
+      "hash": "3c0574d84ce9430abbc542fb41ac476b45e939355f318cf4f1e4b0e8fb8f56dd",
+      "bytes": 203468,
+      "voiceKey": "ww1_german_voice",
+      "badge": "German \"Blank Cheque\" (6 July 1914)",
+      "updatedAt": "2026-11-19T22:37:09.444Z"
+    },
+    "lesson_5_sC": {
+      "hash": "2ac64c35c9baf87ac5a73170789ea093cf899741fee55f7cc690e6e721392db1",
+      "bytes": 188300,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Vienna Ultimatum (23 July 1914)",
+      "updatedAt": "2026-11-19T22:37:09.917Z"
+    },
+    "lesson_6_sA": {
+      "hash": "52a3c9a0aebc7f4a5c0f431531414b6fed8108ee6a691384075c48c046aa6844",
+      "bytes": 204812,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Admiral von Müller Diary (1912)",
+      "updatedAt": "2026-11-19T22:37:10.444Z"
+    }
+  }
+}

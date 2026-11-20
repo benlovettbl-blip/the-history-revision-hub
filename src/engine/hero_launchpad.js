@@ -1,882 +1,542 @@
 import { isVerifiedPdf } from '../verified_pdf_manifest.js';
+import {
+  UNIT_RESOURCES_CATALOG,
+  getUnitCatalogEntry,
+  isStaffModeActive,
+  resolveCanonicalPdfUrl,
+} from '../data/unit_resources_catalog.js';
 
 /**
- * Hero Curricular Launchpad Engine
- * Renders the high-status 3-Pillars Quick-Launch Bar (Master Textbook, Pupil Workbook,
- * and Knowledge Retrieval Companion) directly inside the unit Hero Banner.
+ * Unit Sticky Classroom Bar & On-Demand Resource Drawers
+ *
+ * Replaces the legacy 8-pill Hero Launchpad, duplicate "Visual Knowledge Architecture" strip,
+ * giant Revision Guide promo banner, and orphan bottom Quizzing banner with ONE slim sticky bar:
+ *   Left:  [ ▶ Resume Lesson ] + [ KT1 · KT2 · KT3 ] instant jump pills
+ *   Right: [ 📄 PDFs & Booklets ▾ ] [ 🖼️ Infographics ▾ ] [ 🎮 Games, Quiz & Timeline ▾ ] [ 📝 Exam Practice ]
  */
 
-// Window-level launcher ensuring instant in-page preview or tab opening
+export const CURRICULAR_PILLARS_CATALOG = UNIT_RESOURCES_CATALOG;
+
 if (typeof window !== 'undefined') {
   window.openCurricularPillar = function (htmlUrl, title, pdfUrl, badge) {
+    const resolvedPdf = resolveCanonicalPdfUrl(htmlUrl, pdfUrl);
     if (typeof window.openTeacherPrintPreview === 'function') {
-      window.openTeacherPrintPreview(htmlUrl, title, pdfUrl);
+      window.openTeacherPrintPreview(htmlUrl, title, resolvedPdf);
       return;
     }
     if (
       typeof window.openInPagePreview === 'function' &&
       document.getElementById('inpage-preview-console')
     ) {
-      window.openInPagePreview(htmlUrl, title, pdfUrl, { badge: badge || 'DOCUMENT' });
+      window.openInPagePreview(htmlUrl, title, resolvedPdf, { badge: badge || 'DOCUMENT' });
       return;
     }
     window.open(htmlUrl, '_blank');
   };
-}
 
-export const CURRICULAR_PILLARS_CATALOG = {
-  ks2_ww2: {
-    textbook: {
-      title: 'World War II & The Home Front (1933–1945) Master Classroom Textbook',
-      label: 'Master Textbook (16 Pages)',
-      htmlUrl: '/units/ks2_ww2/textbook.html',
-      pdfUrl: '/pdfs/ks2_ww2_textbook.pdf',
-    },
-    workbook: {
-      title: 'World War II & The Home Front (1933–1945) Pupil Workbook',
-      label: 'Pupil Workbook (28 Pages)',
-      htmlUrl: '/units/ks2_ww2/pupil_workbook.html',
-      pdfUrl: '/pdfs/ks2_ww2_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'World War II & The Home Front Retrieval Quiz Pack',
-      label: 'Quiz Pack (44 Qs)',
-      htmlUrl: '/units/ks2_ww2/quiz_pack.html',
-      pdfUrl: '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-    schemeOfWork: {
-      title: 'Key Stage 2 World War II Walk-In Teacher Guide & Scheme of Work',
-      label: 'Teacher Guide & SOW',
-      htmlUrl: '/units/ks2_ww2/ks2_ww2_scheme_of_work.html',
-      pdfUrl: '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf',
-    },
-    timelineUrl: {
-      label: 'Timeline Slider',
-      url: '/units/ks2_ww2/timeline_slider.html',
-    },
-  },
-  great_war: {
-    textbook: {
-      title: 'Causes of the Great War (1871–1914) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/great_war/textbook.html',
-      pdfUrl: '/pdfs/great_war_textbook.pdf',
-    },
-    workbook: {
-      title: 'Causes of the Great War Pupil Workbook',
-      label: 'Pupil Workbook',
-      htmlUrl: '/units/great_war/pupil_workbook.html',
-      pdfUrl: '/pdfs/great_war_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'Causes of the Great War Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/great_war/great_war_retrieval_companion.html',
-      pdfUrl: '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  great_war_part2: {
-    textbook: {
-      title: 'The Course of the Great War (1914–1918) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/great_war_part2/textbook.html',
-      pdfUrl: '/pdfs/great_war_part2_textbook.pdf',
-    },
-    workbook: {
-      title: 'Course of the Great War Pupil Workbook',
-      label: 'Pupil Workbook (16p)',
-      htmlUrl: '/units/great_war_part2/pupil_workbook.html',
-      pdfUrl: '/pdfs/great_war_part2_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'The Course of the Great War Master Retrieval & Literary Companion (12 Pages)',
-      label: 'Retrieval & Literary Companion (12p)',
-      htmlUrl: '/units/great_war_part2/great_war_part2_retrieval_companion.html',
-      pdfUrl: '/pdfs/The_Course_of_the_Great_War_Master_Retrieval_and_Literary_Companion.pdf',
-    },
-    combined: {
-      title: 'The Course of the Great War Combined Master Scholar Workbook (24 Pages)',
-      label: 'Combined Workbook (24p)',
-      htmlUrl: '/units/great_war_part2/great_war_part2_combined_workbook.html',
-      pdfUrl: '/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf',
-    },
-  },
-  medieval_england: {
-    textbook: {
-      title: 'Medieval England (1066–1381) Master Classroom Textbook',
-      label: 'Master Textbook (8 Pages)',
-      htmlUrl: '/units/medieval_england/textbook.html',
-      pdfUrl: '/pdfs/medieval_england_textbook.pdf',
-    },
-    workbook: {
-      title: 'Medieval England Pupil Workbook',
-      label: 'Pupil Workbook (16 Pages)',
-      htmlUrl: '/units/medieval_england/pupil_workbook.html',
-      pdfUrl: '/pdfs/medieval_england_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'Medieval England Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/medieval_england/medieval_england_retrieval_companion.html',
-      pdfUrl: '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  monarchy_religion_power: {
-    textbook: {
-      title: 'Crown, Church, or Parliament (1517–1689) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/monarchy_religion_power/textbook.html',
-      pdfUrl: '/pdfs/monarchy_religion_power_textbook.pdf',
-    },
-    workbook: {
-      title: 'Crown, Church, or Parliament 16-Page Pupil Workbook',
-      label: 'Pupil Workbook (16 Pages)',
-      htmlUrl: '/units/monarchy_religion_power/pupil_workbook.html',
-      pdfUrl: '/pdfs/monarchy_religion_power_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'Crown, Church, or Parliament Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/monarchy_religion_power/monarchy_religion_power_retrieval_companion.html',
-      pdfUrl: '/pdfs/Crown_Church_or_Parliament_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  first_british_empire: {
-    textbook: {
-      title: 'The First British Empire (1600–1783) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/first_british_empire/textbook.html',
-      pdfUrl: '/pdfs/first_british_empire_textbook.pdf',
-    },
-    workbook: {
-      title: 'The First British Empire 16-Page Pupil Workbook',
-      label: 'Pupil Workbook (16 Pages)',
-      htmlUrl: '/units/first_british_empire/pupil_workbook.html',
-      pdfUrl: '/pdfs/first_british_empire_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'The First British Empire Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/first_british_empire/first_british_empire_retrieval_companion.html',
-      pdfUrl: '/pdfs/The_First_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  industrialisation_and_empire: {
-    textbook: {
-      title: 'Industrialisation, Power & Protest (1750–1901) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/industrialisation_and_empire/textbook.html',
-      pdfUrl: '/pdfs/industrialisation_and_empire_textbook.pdf',
-    },
-    workbook: {
-      title: 'Industrialisation & Empire Pupil Workbook',
-      label: 'Pupil Workbook',
-      htmlUrl: '/units/industrialisation_and_empire/pupil_workbook.html',
-      pdfUrl: '/pdfs/industrialisation_and_empire_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'The Industrial Revolution Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl:
-        '/units/industrialisation_and_empire/industrialisation_and_empire_retrieval_companion.html',
-      pdfUrl: '/pdfs/Industrialisation_Power_and_Protest_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  second_british_empire: {
-    textbook: {
-      title: 'The Second British Empire (1783–1914) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/second_british_empire/textbook.html',
-      pdfUrl: '/pdfs/second_british_empire_textbook.pdf',
-    },
-    workbook: {
-      title: 'The Second British Empire 16-Page Pupil Workbook',
-      label: 'Pupil Workbook (16 Pages)',
-      htmlUrl: '/units/second_british_empire/pupil_workbook.html',
-      pdfUrl: '/pdfs/second_british_empire_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'The Second British Empire Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/second_british_empire/second_british_empire_retrieval_companion.html',
-      pdfUrl: '/pdfs/The_Second_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  water_and_sanitation: {
-    textbook: {
-      title: 'Water & Sanitation Through Time (1250–Present) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/water_and_sanitation/textbook.html',
-      pdfUrl: '/pdfs/water_and_sanitation_textbook.pdf',
-    },
-    workbook: {
-      title: 'Water & Sanitation 20-Page Pupil Workbook',
-      label: 'Pupil Workbook (20 Pages)',
-      htmlUrl: '/units/water_and_sanitation/pupil_workbook.html',
-      pdfUrl: '/pdfs/water_and_sanitation_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'Water & Sanitation Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/water_and_sanitation/water_and_sanitation_retrieval_companion.html',
-      pdfUrl: '/pdfs/Water_and_Sanitation_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  the_shoah: {
-    textbook: {
-      title: 'The Shoah / The Holocaust Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/the_shoah/textbook.html',
-      pdfUrl: '/pdfs/the_shoah_textbook.pdf',
-    },
-    workbook: {
-      title: 'The Shoah 20-Page Pupil Workbook',
-      label: 'Pupil Workbook (20 Pages)',
-      htmlUrl: '/units/the_shoah/pupil_workbook.html',
-      pdfUrl: '/pdfs/the_shoah_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'The Shoah Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/the_shoah/the_shoah_retrieval_companion.html',
-      pdfUrl: '/pdfs/The_Shoah_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  post_war_britain: {
-    textbook: {
-      title: 'Post-War Britain (1945–1990) Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/post_war_britain/textbook.html',
-      pdfUrl: '/pdfs/post_war_britain_textbook.pdf',
-    },
-    workbook: {
-      title: 'Post-War Britain Pupil Workbook',
-      label: 'Pupil Workbook',
-      htmlUrl: '/units/post_war_britain/pupil_workbook.html',
-      pdfUrl: '/pdfs/post_war_britain_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'Post-War Britain Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/post_war_britain/post_war_britain_retrieval_companion.html',
-      pdfUrl: '/pdfs/Post_War_Britain_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  australia: {
-    textbook: {
-      title: 'History of Australia & The Pacific Master Classroom Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/australia/textbook.html',
-      pdfUrl: '/pdfs/australia_textbook.pdf',
-    },
-    workbook: {
-      title: 'Australia & The Pacific Pupil Workbook',
-      label: 'Pupil Workbook',
-      htmlUrl: '/units/australia/pupil_workbook.html',
-      pdfUrl: '/pdfs/australia_pupil_workbook.pdf',
-    },
-    retrieval: {
-      title: 'History of Australia Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (30 Qs)',
-      htmlUrl: '/units/australia/australia_retrieval_companion.html',
-      pdfUrl: '/pdfs/History_of_Australia_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  cme_new: {
-    textbook: {
-      title: 'Conflict in the Middle East Classroom Textbooks (KT1, KT2 & KT3)',
-      label: 'Textbooks (KT1–KT3)',
-      openHub: true,
-      editions: [
-        {
-          label: 'Key Topic 1: Birth of the State of Israel (1945–63)',
-          pages: '12 Pages',
-          htmlUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html',
-          pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf',
-        },
-        {
-          label: 'Key Topic 2: The Escalating Conflict (1963–73)',
-          pages: '16 Pages',
-          htmlUrl: '/units/cme_new/textbook_KT2_PUBLISHER.html',
-          pdfUrl: '/pdfs/cme_new_textbook_KT2.pdf',
-        },
-        {
-          label: 'Key Topic 3: Attempts at a Solution (1974–95)',
-          pages: '12 Pages',
-          htmlUrl: '/units/cme_new/textbook_KT3_PUBLISHER.html',
-          pdfUrl: '/pdfs/cme_new_textbook_KT3.pdf',
-        },
-      ],
-    },
-    workbook: {
-      title: 'Conflict in the Middle East Pupil Workbooks (KT1, KT2 & KT3)',
-      label: 'Pupil Workbooks (KT1–KT3)',
-      openHub: true,
-      icon: 'fa-solid fa-pen-to-square',
-    },
-    retrieval: {
-      title: 'Conflict in the Middle East Master Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (96 Qs)',
-      htmlUrl: '/units/cme_new/cme_master_retrieval_companion.html',
-      pdfUrl: '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-    revisionGuide: {
-      title: 'Conflict in the Middle East (1945–1995) 14-Page Ultra-Condensed Revision Guide',
-      label: 'Revision Guide (14p)',
-      htmlUrl: '/units/cme_new/revision_guide.html',
-      pdfUrl: '/pdfs/cme_revision_guide.pdf',
-    },
-    overviewInfographic: {
-      slug: 'cme_edexcel_spec_roadmap',
-      label: 'Specification Roadmap (1945–1995)',
-      title: 'GCSE (9–1) Conflict in the Middle East Specification Roadmap',
-      icon: 'fa-solid fa-route',
-    },
-  },
-  usa: {
-    textbook: {
-      title: 'USA, 1954–1975 Classroom Textbooks (KT1–KT4)',
-      label: 'Textbooks (KT1–KT4)',
-      openHub: true,
-      editions: [
-        {
-          label: 'Key Topic 1: Development of Civil Rights (1954–60)',
-          pages: '12 Pages',
-          htmlUrl: '/units/usa/textbook_KT1_PUBLISHER.html',
-          pdfUrl: '/pdfs/usa_textbook_KT1.pdf',
-        },
-        {
-          label: 'Key Topic 2: Protest, Progress & Radicalism (1960–75)',
-          pages: '12 Pages',
-          htmlUrl: '/units/usa/textbook_KT2_PUBLISHER.html',
-          pdfUrl: '/pdfs/usa_textbook_KT2.pdf',
-        },
-        {
-          label: 'Key Topic 3: US Involvement in the Vietnam War (1954–75)',
-          pages: '12 Pages',
-          htmlUrl: '/units/usa/textbook_KT3_PUBLISHER.html',
-          pdfUrl: '/pdfs/usa_textbook_KT3.pdf',
-        },
-        {
-          label: 'Key Topic 4: Reactions & End of US Involvement (1964–75)',
-          pages: '12 Pages',
-          htmlUrl: '/units/usa/textbook_KT4_PUBLISHER.html',
-          pdfUrl: '/pdfs/usa_textbook_KT4.pdf',
-        },
-      ],
-    },
-    workbook: {
-      title: 'USA, 1954–1975 Pupil Workbooks (KT1–KT4)',
-      label: 'Pupil Workbooks (KT1–KT4)',
-      openHub: true,
-      icon: 'fa-solid fa-pen-to-square',
-    },
-    retrieval: {
-      title: 'USA 1954–1975 Master Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (128 Qs)',
-      htmlUrl: '/units/usa/usa_master_retrieval_companion.html',
-      pdfUrl: '/pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-    overviewInfographic: {
-      slug: 'usa_paper3_exam_strategy_guide',
-      label: 'Paper 3 Exam Strategy Guide',
-      title: 'Mastering Edexcel GCSE Paper 3: USA 1954–1975 Exam Strategy Guide',
-      icon: 'fa-solid fa-graduation-cap',
-    },
-  },
-  edexcel_medicine: {
-    textbook: {
-      title: 'Medicine Through Time & Western Front Classroom Textbooks (5 Eras)',
-      label: 'Textbooks (5 Eras)',
-      openHub: true,
-      editions: [
-        {
-          label: 'Era 1: Medieval Britain (c1250–c1500)',
-          pages: '16 Pages',
-          htmlUrl: '/units/edexcel_medicine/textbook_medieval_PUBLISHER.html',
-          pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
-        },
-        {
-          label: 'Era 2: The Medical Renaissance (c1500–c1700)',
-          pages: '16 Pages',
-          htmlUrl: '/units/edexcel_medicine/textbook_renaissance_PUBLISHER.html',
-          pdfUrl: '/pdfs/edexcel_medicine_textbook_renaissance.pdf',
-        },
-        {
-          label: 'Era 3: 18th & 19th Century Britain (c1700–c1900)',
-          pages: '16 Pages',
-          htmlUrl: '/units/edexcel_medicine/textbook_18th_19th_PUBLISHER.html',
-          pdfUrl: '/pdfs/edexcel_medicine_textbook_18th_19th.pdf',
-        },
-        {
-          label: 'Era 4: Modern Britain (c1900–present)',
-          pages: '16 Pages',
-          htmlUrl: '/units/edexcel_medicine/textbook_modern_PUBLISHER.html',
-          pdfUrl: '/pdfs/edexcel_medicine_textbook_modern.pdf',
-        },
-        {
-          label: 'Historic Env: The British Sector of the Western Front (1914–18)',
-          pages: '16 Pages',
-          htmlUrl: '/units/edexcel_medicine/textbook_western_front_PUBLISHER.html',
-          pdfUrl: '/pdfs/edexcel_medicine_textbook_western_front.pdf',
-        },
-      ],
-    },
-    workbook: {
-      title: 'Medicine Through Time & Western Front Pupil Workbooks (5 Booklets)',
-      label: 'Pupil Workbooks (5 Booklets)',
-      openHub: true,
-      icon: 'fa-solid fa-pen-to-square',
-    },
-    retrieval: {
-      title: 'Medicine in Britain Master Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (96 Qs)',
-      htmlUrl: '/units/edexcel_medicine/medicine_master_retrieval_companion.html',
-      pdfUrl: '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-    overviewInfographic: {
-      slug: 'med_course_overview_c1250_present',
-      label: 'Course Overview (c1250–Present)',
-      title: 'Medicine in Britain: c1250–Present Master Course Overview & Timeline',
-      icon: 'fa-solid fa-map-location-dot',
-    },
-  },
-  weimar_nazi_germany: {
-    textbook: {
-      title: 'Weimar & Nazi Germany Classroom Textbooks (KT1–KT4)',
-      label: 'Textbooks (KT1–KT4)',
-      openHub: true,
-      editions: [
-        {
-          label: 'Key Topic 1: The Weimar Republic (1918–29)',
-          pages: '12 Pages',
-          htmlUrl: '/units/weimar_nazi_germany/textbook_KT1_PUBLISHER.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT1.pdf',
-        },
-        {
-          label: 'Key Topic 2: Hitler’s Rise to Power (1919–33)',
-          pages: '12 Pages',
-          htmlUrl: '/units/weimar_nazi_germany/textbook_KT2_PUBLISHER.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT2.pdf',
-        },
-        {
-          label: 'Key Topic 3: Nazi Control & Dictatorship (1933–39)',
-          pages: '12 Pages',
-          htmlUrl: '/units/weimar_nazi_germany/textbook_KT3_PUBLISHER.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT3.pdf',
-        },
-        {
-          label: 'Key Topic 4: Life in Nazi Germany (1933–39)',
-          pages: '12 Pages',
-          htmlUrl: '/units/weimar_nazi_germany/textbook_KT4_PUBLISHER.html',
-          pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT4.pdf',
-        },
-      ],
-    },
-    workbook: {
-      title: 'Weimar & Nazi Germany Pupil Workbooks (KT1–KT4)',
-      label: 'Pupil Workbooks (KT1–KT4)',
-      openHub: true,
-      icon: 'fa-solid fa-pen-to-square',
-    },
-    retrieval: {
-      title: 'Weimar and Nazi Germany Master Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (128 Qs)',
-      htmlUrl: '/units/weimar_nazi_germany/weimar_master_retrieval_companion.html',
-      pdfUrl: '/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  eee: {
-    textbook: {
-      title: 'Early Elizabethan England Classroom Textbooks (KT1–KT3)',
-      label: 'Textbooks (KT1–KT3)',
-      openHub: true,
-      editions: [
-        {
-          label: 'Key Topic 1: Queen, Government & Religion (1558–69)',
-          pages: '12 Pages',
-          htmlUrl: '/units/eee/textbook_KT1_PUBLISHER.html',
-          pdfUrl: '/pdfs/eee_textbook_KT1.pdf',
-        },
-        {
-          label: 'Key Topic 2: Challenges at Home & Abroad (1569–88)',
-          pages: '12 Pages',
-          htmlUrl: '/units/eee/textbook_KT2_PUBLISHER.html',
-          pdfUrl: '/pdfs/eee_textbook_KT2.pdf',
-        },
-        {
-          label: 'Key Topic 3: Elizabethan Society & Exploration (1558–88)',
-          pages: '12 Pages',
-          htmlUrl: '/units/eee/textbook_KT3_PUBLISHER.html',
-          pdfUrl: '/pdfs/eee_textbook_KT3.pdf',
-        },
-      ],
-    },
-    workbook: {
-      title: 'Early Elizabethan England Pupil Workbooks (KT1–KT3)',
-      label: 'Pupil Workbooks (KT1–KT3)',
-      openHub: true,
-      icon: 'fa-solid fa-pen-to-square',
-    },
-    retrieval: {
-      title: 'Early Elizabethan England Master Knowledge Retrieval Companion',
-      label: 'Retrieval Companion (120 Qs)',
-      htmlUrl: '/units/eee/eee_master_retrieval_companion.html',
-      pdfUrl: '/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-  cold_war: {
-    textbook: {
-      title: 'The Cold War & Global Flashpoints Master Textbook',
-      label: 'Master Textbook',
-      htmlUrl: '/units/cold_war/textbook.html',
-      pdfUrl: '/pdfs/cold_war_textbook.pdf',
-    },
-    workbook: {
-      title: 'Superpower Relations & Cold War Pupil Workbook',
-      label: 'Pupil Workbook (20 Pages)',
-      htmlUrl: '/units/cold_war/pupil_workbook.html',
-      pdfUrl: '/pdfs/cold_war_pupil_workbook.pdf',
-      icon: 'fa-solid fa-pen-to-square',
-    },
-    retrieval: {
-      title: 'Superpower Relations Knowledge Retrieval Companion',
-      label: 'Retrieval Companion',
-      htmlUrl: '/units/cold_war/cold_war_master_retrieval_companion.html',
-      pdfUrl: '/pdfs/Superpower_Relations_and_Cold_War_Master_Knowledge_Retrieval_Companion.pdf',
-    },
-  },
-};
+  window.toggleUnitResourceDrawer = function (panelKey) {
+    const shell = document.getElementById('unit-sticky-drawer-shell');
+    if (!shell) return;
+    const current = shell.getAttribute('data-open-panel') || '';
+    const next = current === panelKey ? '' : panelKey;
+    shell.setAttribute('data-open-panel', next);
+    shell.style.display = next ? 'block' : 'none';
 
-/**
- * Returns HTML string for the 3-Pillars Quick-Launch Bar in the Hero Banner.
- * @param {string} unitId
- * @param {object} unitData
- * @returns {string} HTML markup
- */
-export function renderHeroCurricularLaunchpad(unitId, unitData) {
-  if (!unitId) return '';
-  const isTrip = unitId === 'trip_ypres' || (unitData && unitData.type === 'trip');
-  if (isTrip) return '';
-
-  const config = CURRICULAR_PILLARS_CATALOG[unitId] || {
-    workbook: {
-      title: `${unitData?.title || 'Unit'} Pupil Workbook`,
-      label: 'Pupil Workbook',
-      htmlUrl: `/units/${unitId}/pupil_workbook.html`,
-      pdfUrl: `/pdfs/${unitId}_pupil_workbook.pdf`,
-    },
-    retrieval: {
-      title: `${unitData?.title || 'Unit'} Knowledge Retrieval Companion`,
-      label: 'Retrieval Companion',
-      htmlUrl: `/units/${unitId}/quiz_pack.html`,
-      pdfUrl: `/pdfs/${unitId}_quiz_pack.pdf`,
-    },
+    ['booklets', 'infographics', 'practice'].forEach((k) => {
+      const panel = document.getElementById(`unit-drawer-panel-${k}`);
+      const btn = document.getElementById(`unit-bar-btn-${k}`);
+      if (panel) panel.style.display = k === next ? 'block' : 'none';
+      if (btn) {
+        if (k === next) {
+          btn.style.background = '#2563eb';
+          btn.style.borderColor = '#60a5fa';
+          btn.style.color = '#ffffff';
+        } else {
+          btn.style.background = '#1e293b';
+          btn.style.borderColor = '#475569';
+          btn.style.color = '#f8fafc';
+        }
+      }
+    });
   };
 
-  const tb = config.textbook;
-  const wb = config.workbook;
-  const rc = config.retrieval;
-  const cb = config.combined;
-  const ov = config.overviewInfographic;
-  const sow = config.schemeOfWork;
-  const tl = config.timelineUrl;
-  const rg = config.revisionGuide;
+  window.openUnitResourceDrawer = function (unitId, panelKey = 'booklets') {
+    const bar = document.getElementById('unit-sticky-classroom-bar');
+    if (bar && window.currentLessonIndex === null) {
+      const shell = document.getElementById('unit-sticky-drawer-shell');
+      if (shell && shell.getAttribute('data-open-panel') !== panelKey) {
+        window.toggleUnitResourceDrawer(panelKey);
+      }
+      return;
+    }
+    if (typeof window.switchView === 'function') {
+      Promise.resolve(window.switchView('lessons', unitId)).then(() => {
+        setTimeout(() => {
+          window.toggleUnitResourceDrawer(panelKey);
+        }, 120);
+      });
+    }
+  };
 
-  const hasDistinctTextbook = Boolean(
-    tb && (tb.openHub || !wb || tb.htmlUrl !== wb.htmlUrl || tb.pdfUrl !== wb.pdfUrl),
-  );
+  if (!window.__urbEscBound) {
+    window.__urbEscBound = true;
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const shell = document.getElementById('unit-sticky-drawer-shell');
+        if (shell && shell.getAttribute('data-open-panel')) {
+          window.toggleUnitResourceDrawer('');
+        }
+      }
+    });
+  }
 
-  const cleanTbTitle = (tb?.title || '').replace(/'/g, "\\'");
-  const cleanWbTitle = (wb?.title || '').replace(/'/g, "\\'");
-  const cleanRcTitle = (rc?.title || '').replace(/'/g, "\\'");
-  const cleanRgTitle = (rg?.title || '').replace(/'/g, "\\'");
-  const cleanCbTitle = (cb?.title || '').replace(/'/g, "\\'");
-  const cleanOvTitle = (ov?.title || ov?.label || '').replace(/'/g, "\\'");
-  const cleanSowTitle = (sow?.title || sow?.label || '').replace(/'/g, "\\'");
+  window.onDrawerEditionSelect = function (selectEl, unitId, bucketKey) {
+    const cfg = getUnitCatalogEntry(unitId);
+    const bucket = cfg && cfg[bucketKey];
+    if (!bucket || !Array.isArray(bucket.editions)) return;
+    const ed = bucket.editions.find((e) => e.id === selectEl.value) || bucket.editions[0];
+    const card = selectEl.closest('.urb-booklet-card');
+    if (!card || !ed) return;
 
-  const textbookPill = hasDistinctTextbook
-    ? tb.openHub
-      ? `
-        <!-- Pillar 1: Individual Key Topic / Era Classroom Textbooks Picker -->
-        <div class="launchpad-pill-group pill-textbook">
-          <button type="button" class="launchpad-pill-btn" onclick="if(window.openTextbookEditionPicker){window.openTextbookEditionPicker('${unitId}');}else if(window.switchView){window.switchView('booklet', '${unitId}');}" title="Select an Era or Key Topic Classroom Textbook to read or download">
-            <i class="fa-solid fa-book-open"></i>
-            <span>${tb.label}</span>
-          </button>
-        </div>`
-      : `
-        <!-- Pillar 1: Master Textbook -->
-        <div class="launchpad-pill-group pill-textbook">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${tb.htmlUrl}', '${cleanTbTitle}', '${tb.pdfUrl}', 'TEXTBOOK')" title="Open Classroom Textbook in reader">
-            <i class="fa-solid fa-book-open"></i>
-            <span>${tb.label}</span>
-          </button>
-          ${
-            isVerifiedPdf(tb.pdfUrl)
-              ? `
-          <a href="${tb.pdfUrl}" target="_blank" download title="Download Classroom Textbook PDF" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
+    const pagesEl = card.querySelector('.urb-pages-badge');
+    const readBtn = card.querySelector('.urb-btn-read');
+    const pdfLink = card.querySelector('.urb-btn-pdf');
+    const msBtn = card.querySelector('.urb-btn-ms');
+
+    if (pagesEl && ed.pages) pagesEl.textContent = ed.pages;
+    const safeTitle = String(ed.label || bucket.title || '').replace(/'/g, "\\'");
+
+    if (readBtn) {
+      readBtn.onclick = () => {
+        window.openCurricularPillar(ed.htmlUrl, ed.label || bucket.title, ed.pdfUrl, bucket.label.toUpperCase());
+      };
+    }
+
+    if (pdfLink) {
+      if (ed.pdfUrl && isVerifiedPdf(ed.pdfUrl)) {
+        pdfLink.href = ed.pdfUrl;
+        pdfLink.setAttribute('download', ed.downloadName || ed.pdfUrl.split('/').pop());
+        pdfLink.target = '_blank';
+        pdfLink.onclick = null;
+        pdfLink.innerHTML = '<i class="fa-solid fa-file-pdf" style="color:#dc2626;"></i> <span>PDF ↓</span>';
+      } else {
+        pdfLink.href = '#';
+        pdfLink.removeAttribute('download');
+        pdfLink.target = '';
+        pdfLink.onclick = (ev) => {
+          ev.preventDefault();
+          window.openCurricularPillar(ed.htmlUrl, safeTitle, null, bucket.label.toUpperCase());
+        };
+        pdfLink.innerHTML = '<i class="fa-solid fa-print" style="color:#2563eb;"></i> <span>Print</span>';
+      }
+    }
+
+    if (msBtn) {
+      if (ed.msHtmlUrl || ed.msPdfUrl) {
+        msBtn.style.display = 'inline-flex';
+        msBtn.onclick = () => {
+          if (ed.msPdfUrl && isVerifiedPdf(ed.msPdfUrl)) {
+            window.open(ed.msPdfUrl, '_blank');
+          } else if (ed.msHtmlUrl) {
+            window.openCurricularPillar(ed.msHtmlUrl, `${ed.label} — Mark Scheme`, ed.msPdfUrl, 'MARK_SCHEME');
           }
-        </div>`
-    : '';
+        };
+      } else {
+        msBtn.style.display = 'none';
+      }
+    }
+  };
 
-  const isExamPack = wb?.label?.includes('Exam') || wb?.icon?.includes('signature');
-  const wbIcon =
-    wb?.icon || (isExamPack ? 'fa-solid fa-file-signature' : 'fa-solid fa-pen-to-square');
-  const wbPillClass = isExamPack
-    ? 'launchpad-pill-group pill-workbook pill-exam-pack'
-    : 'launchpad-pill-group pill-workbook';
-  const wbAction = isExamPack ? 'EXAM_PACK' : 'WORKBOOK';
-  const wbTooltip = isExamPack
-    ? `Open ${wb.label} in classroom reader`
-    : 'Open Pupil Workbook in classroom reader';
-  const wbDownloadTooltip = isExamPack ? `Download ${wb.label} PDF` : 'Download Pupil Workbook PDF';
+  window.onDrawerWorksheetSelect = function (selectEl, unitId) {
+    const cfg = getUnitCatalogEntry(unitId);
+    if (!cfg || !Array.isArray(cfg.worksheets)) return;
+    const ws = cfg.worksheets.find((w) => w.id === selectEl.value) || cfg.worksheets[0];
+    const card = selectEl.closest('.urb-booklet-card');
+    if (!card || !ws) return;
+    const readBtn = card.querySelector('.urb-btn-read');
+    const pdfLink = card.querySelector('.urb-btn-pdf');
+    if (readBtn) {
+      readBtn.onclick = () => window.openCurricularPillar(ws.htmlUrl, ws.label, ws.pdfUrl, 'WORKSHEET');
+    }
+    if (pdfLink && ws.pdfUrl) {
+      pdfLink.href = ws.pdfUrl;
+      pdfLink.setAttribute('download', ws.pdfUrl.split('/').pop());
+    }
+  };
 
-  const workbookPill = wb
-    ? wb.openHub
-      ? `
-        <!-- Pillar 2: Individual Key Topic / Era Pupil Workbooks Hub -->
-        <div class="${wbPillClass}">
-          <button type="button" class="launchpad-pill-btn" onclick="window.switchView && window.switchView('booklet', '${unitId}')" title="Open Workbooks Hub to view or print individual Key Topic booklets & Mark Schemes">
-            <i class="${wbIcon}"></i>
-            <span>${wb.label}</span>
-          </button>
-        </div>`
-      : `
-        <!-- Pillar 2: Pupil Workbook / Mastery Exam Pack -->
-        <div class="${wbPillClass}">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${wb.htmlUrl}', '${cleanWbTitle}', '${wb.pdfUrl}', '${wbAction}')" title="${wbTooltip}">
-            <i class="${wbIcon}"></i>
-            <span>${wb.label}</span>
-          </button>
-          ${
-            isVerifiedPdf(wb.pdfUrl)
-              ? `
-          <a href="${wb.pdfUrl}" target="_blank" download title="${wbDownloadTooltip}" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
-          }
-        </div>`
-    : '';
+  window.jumpToKeyTopicSection = function (ktId) {
+    const el = document.getElementById(`kt-section-${ktId}`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+}
 
-  const workbookMarkSchemePill =
-    wb && wb.markSchemeHtmlUrl
-      ? `
-        <!-- Pillar 2b: Page-Matched Workbook Teacher Mark Scheme & WAGOLLs -->
-        <div class="launchpad-pill-group pill-workbook">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${wb.markSchemeHtmlUrl}', '${(wb.markSchemeTitle || 'Workbook Mark Scheme').replace(/'/g, "\\'")}', '${wb.markSchemePdfUrl || ''}', 'MARK_SCHEME')" title="Open Page-Matched Printed Workbook Mark Scheme & Grade 9 WAGOLLs">
-            <i class="fa-solid fa-check-double"></i>
-            <span>${wb.markSchemeLabel || 'Workbook Mark Scheme'}</span>
-          </button>
-          ${
-            wb.markSchemePdfUrl && isVerifiedPdf(wb.markSchemePdfUrl)
-              ? `
-          <a href="${wb.markSchemePdfUrl}" target="_blank" download title="Download Page-Matched Workbook Mark Scheme PDF" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
-          }
-        </div>`
-      : '';
+/**
+ * Legacy Hero Curricular Launchpad retired so the Hero photograph stays clean and uncluttered.
+ */
+export function renderHeroCurricularLaunchpad() {
+  return '';
+}
 
-  const retrievalPill = rc
+export function openTextbookEditionPicker(unitId) {
+  if (typeof window !== 'undefined' && window.openUnitResourceDrawer) {
+    window.openUnitResourceDrawer(unitId, 'booklets');
+  }
+}
+
+function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, staffActive) {
+  if (!bucket) return '';
+  if (bucket.staffOnly && !staffActive) return '';
+
+  const hasEditions = Array.isArray(bucket.editions) && bucket.editions.length > 1;
+  const defaultItem = hasEditions ? bucket.editions[0] : bucket;
+  const htmlUrl = defaultItem.htmlUrl || bucket.htmlUrl;
+  const pdfUrl = defaultItem.pdfUrl || bucket.pdfUrl;
+  const dlName = defaultItem.downloadName || bucket.downloadName || (pdfUrl ? pdfUrl.split('/').pop() : 'booklet.pdf');
+  const pages = defaultItem.pages || bucket.pages || 'Booklet';
+  const safeTitle = String(defaultItem.label || bucket.title || bucket.label).replace(/'/g, "\\'");
+  const hasPdf = Boolean(pdfUrl && isVerifiedPdf(pdfUrl));
+
+  const msHtml = defaultItem.msHtmlUrl || bucket.markSchemeHtmlUrl || '';
+  const msPdf = defaultItem.msPdfUrl || bucket.markSchemePdfUrl || '';
+  const showMs = staffActive && Boolean(msHtml || msPdf);
+
+  const selectHtml = hasEditions
     ? `
-        <!-- Pillar 3: Knowledge Retrieval Companion -->
-        <div class="launchpad-pill-group pill-retrieval">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${rc.htmlUrl}', '${cleanRcTitle}', '${rc.pdfUrl}', 'RETRIEVAL')" title="Open ${cleanRcTitle || rc.label} in classroom reader">
-            <i class="fa-solid fa-brain"></i>
-            <span>${rc.label}</span>
-          </button>
-          ${
-            isVerifiedPdf(rc.pdfUrl)
-              ? `
-          <a href="${rc.pdfUrl}" target="_blank" download title="Download ${cleanRcTitle || rc.label} PDF" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
-          }
-        </div>`
+      <select class="urb-edition-select" aria-label="Select Key Topic or Era" onchange="window.onDrawerEditionSelect(this, '${unitId}', '${bucketKey}')" style="margin-top: 8px; width: 100%; padding: 6px 8px; font-size: 0.75rem; font-weight: 700; color: #0f172a; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer;">
+        ${bucket.editions.map((ed) => `<option value="${ed.id}">${ed.label}</option>`).join('')}
+      </select>
+    `
     : '';
 
-  const revisionGuidePill = rg
-    ? `
-        <!-- Optional Pillar: 14-Page Ultra-Condensed Revision Guide -->
-        <div class="launchpad-pill-group pill-revision-guide">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${rg.htmlUrl}', '${cleanRgTitle}', '${rg.pdfUrl}', 'REVISION_GUIDE')" title="Open 14-Page Revision Guide in classroom reader">
-            <i class="fa-solid fa-book-bookmark"></i>
-            <span>${rg.label}</span>
-          </button>
-          ${
-            isVerifiedPdf(rg.pdfUrl)
-              ? `
-          <a href="${rg.pdfUrl}" target="_blank" download title="Download 14-Page Revision Guide PDF" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
-          }
-        </div>`
-    : '';
+  const pdfActionHtml = hasPdf
+    ? `<a href="${pdfUrl}" download="${dlName}" target="_blank" class="urb-btn-pdf" style="flex: 1; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 5px;" title="Download PDF (${dlName})"><i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> <span>PDF ↓</span></a>`
+    : `<a href="#" onclick="event.preventDefault(); window.openCurricularPillar('${htmlUrl}', '${safeTitle}', null, '${bucket.label.toUpperCase()}');" class="urb-btn-pdf" style="flex: 1; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 5px;" title="Open printable booklet"><i class="fa-solid fa-print" style="color: #2563eb;"></i> <span>Print</span></a>`;
 
-  const combinedPill = cb
-    ? `
-        <!-- Optional Pillar: Combined Master Scholar Workbook -->
-        <div class="launchpad-pill-group pill-combined">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${cb.htmlUrl}', '${cleanCbTitle}', '${cb.pdfUrl}', 'COMBINED')" title="Open Combined Master Scholar Workbook (24 Pages) in classroom reader">
-            <i class="fa-solid fa-layer-group"></i>
-            <span>${cb.label}</span>
-          </button>
-          ${
-            isVerifiedPdf(cb.pdfUrl)
-              ? `
-          <a href="${cb.pdfUrl}" target="_blank" download title="Download Combined Master Scholar Workbook (24 Pages) PDF" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
-          }
-        </div>`
-    : '';
+  const msActionHtml = `
+    <button type="button" class="urb-btn-ms" onclick="${msPdf && isVerifiedPdf(msPdf) ? `window.open('${msPdf}', '_blank')` : `window.openCurricularPillar('${msHtml}', '${safeTitle} — Mark Scheme', '${msPdf}', 'MARK_SCHEME')`}" style="display: ${showMs ? 'inline-flex' : 'none'}; padding: 7px 9px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; cursor: pointer; align-items: center; justify-content: center; gap: 4px;" title="Staff Only: Open Workbook Mark Scheme & WAGOLLs">
+      <i class="fa-solid fa-key"></i> <span>Key</span>
+    </button>
+  `;
 
-  const overviewPill = ov
-    ? `
-        <!-- Optional Pillar: Master Course Overview & Timeline Infographic -->
-        <div class="launchpad-pill-group pill-overview">
-          <button type="button" class="launchpad-pill-btn" onclick="if(window.openInfographicModal){window.openInfographicModal('${ov.slug}');}" title="Open ${cleanOvTitle} in visual lightbox">
-            <i class="${ov.icon || 'fa-solid fa-map-location-dot'}"></i>
-            <span>${ov.label}</span>
-          </button>
-        </div>`
-    : '';
-
-  const sowPill = sow
-    ? `
-        <!-- Optional Pillar: Teacher Guide & Scheme of Work -->
-        <div class="launchpad-pill-group pill-combined">
-          <button type="button" class="launchpad-pill-btn" onclick="window.openCurricularPillar('${sow.htmlUrl}', '${cleanSowTitle}', '${sow.pdfUrl}', 'SCHEME_OF_WORK')" title="Open ${cleanSowTitle} in classroom reader">
-            <i class="fa-solid fa-chalkboard-user"></i>
-            <span>${sow.label}</span>
-          </button>
-          ${
-            sow.pdfUrl && isVerifiedPdf(sow.pdfUrl)
-              ? `
-          <a href="${sow.pdfUrl}" target="_blank" download title="Download ${cleanSowTitle} PDF" class="launchpad-pill-pdf">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>`
-              : ''
-          }
-        </div>`
-    : '';
-
-  const timelinePill = tl
-    ? `
-        <!-- Optional Pillar: Standalone Interactive Timeline Slider -->
-        <div class="launchpad-pill-group pill-overview">
-          <a href="${tl.url}" target="_blank" class="launchpad-pill-btn" style="text-decoration: none;" title="Open Interactive Classroom Timeline Slider">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span>${tl.label}</span>
-          </a>
-        </div>`
-    : '';
-
-  const arcadePill =
-    unitId && unitId !== 'battlefield_trip'
-      ? `
-        <!-- Pillar: Interactive 7-Game Revision Arcade -->
-        <div class="launchpad-pill-group pill-overview">
-          <button type="button" class="launchpad-pill-btn" onclick="if(window.launchUnitArcade){window.launchUnitArcade('${unitId}', 'all', 'lobby');}else if(window.switchView){window.switchView('arcade', '${unitId}');}" title="Launch the 7-Game Revision Arcade (Keyword Stack, Timeline Blitz, Connections Wall, Redacted, Boss Sprint & more)">
-            <i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i>
-            <span>Revision Arcade</span>
-          </button>
-        </div>`
+  const staffPrintNote =
+    staffActive && bucket.printSpec
+      ? `<div style="margin-top: 7px; font-size: 0.68rem; color: #64748b; background: #f8fafc; padding: 4px 7px; border-radius: 4px; border: 1px dashed #cbd5e1;"><i class="fa-solid fa-print" style="margin-right: 4px; color: #475569;"></i>${bucket.printSpec}</div>`
       : '';
 
   return `
-    <div class="hero-curricular-launchpad">
-      <div class="hero-launchpad-capsule">
-        ${textbookPill}
-        ${workbookPill}
-        ${workbookMarkSchemePill}
-        ${retrievalPill}
-        ${arcadePill}
-        ${revisionGuidePill}
-        ${sowPill}
-        ${timelinePill}
-        ${combinedPill}
-        ${overviewPill}
+    <div class="urb-booklet-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 3.5px solid ${accentColor}; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; box-shadow: 0 2px 6px rgba(15,23,42,0.03);">
+      <div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 7px;">
+          <span style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 7px; border-radius: 4px; ${badgeClass}">
+            ${bucket.staffOnly ? 'STAFF GUIDE' : 'PDF BOOKLET'}
+          </span>
+          <span class="urb-pages-badge" style="font-size: 0.69rem; font-weight: 700; color: #475569; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px 7px; border-radius: 4px;">${pages}</span>
+        </div>
+        <h4 style="margin: 0 0 4px 0; font-size: 0.92rem; font-weight: 800; color: #0f172a; line-height: 1.25;">${bucket.label}</h4>
+        <p style="margin: 0; font-size: 0.76rem; line-height: 1.42; color: #475569;">${bucket.desc || ''}</p>
+        ${selectHtml}
+        ${staffPrintNote}
+      </div>
+      <div style="display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9;">
+        <button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${htmlUrl}', '${safeTitle}', '${pdfUrl || ''}', '${bucket.label.toUpperCase()}')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+          <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
+        </button>
+        ${pdfActionHtml}
+        ${msActionHtml}
       </div>
     </div>
   `;
 }
 
-/**
- * Opens an instant Key Topic / Era Textbook Picker Modal so GCSE courses
- * present slim individual Era / KT booklets directly instead of giant 28-page books.
- */
-export function openTextbookEditionPicker(unitId) {
-  const cfg = CURRICULAR_PILLARS_CATALOG[unitId]?.textbook;
-  if (!cfg || !Array.isArray(cfg.editions) || cfg.editions.length === 0) {
-    if (window.switchView) window.switchView('booklet', unitId);
-    return;
+function renderWorksheetsCard(unitId, worksheets) {
+  if (!Array.isArray(worksheets) || worksheets.length === 0) return '';
+  const first = worksheets[0];
+  const safeTitle = String(first.label).replace(/'/g, "\\'");
+  return `
+    <div class="urb-booklet-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 3.5px solid #0284c7; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px;">
+      <div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 7px;">
+          <span style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 7px; border-radius: 4px; background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd;">A4 WORKSHEETS</span>
+          <span style="font-size: 0.69rem; font-weight: 700; color: #475569; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px 7px; border-radius: 4px;">11 Lessons</span>
+        </div>
+        <h4 style="margin: 0 0 4px 0; font-size: 0.92rem; font-weight: 800; color: #0f172a;">Single-Lesson Worksheets</h4>
+        <p style="margin: 0; font-size: 0.76rem; line-height: 1.42; color: #475569;">Individual 2–3 page A4 companion worksheets with optional craft sheets.</p>
+        <select aria-label="Select Lesson Worksheet" onchange="window.onDrawerWorksheetSelect(this, '${unitId}')" style="margin-top: 8px; width: 100%; padding: 6px 8px; font-size: 0.75rem; font-weight: 700; color: #0f172a; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer;">
+          ${worksheets.map((w) => `<option value="${w.id}">${w.label}</option>`).join('')}
+        </select>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9;">
+        <button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${first.htmlUrl}', '${safeTitle}', '${first.pdfUrl}', 'WORKSHEET')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+          <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
+        </button>
+        <a href="${first.pdfUrl}" download="${first.pdfUrl.split('/').pop()}" target="_blank" class="urb-btn-pdf" style="flex: 1; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+          <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> <span>PDF ↓</span>
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+export function renderStickyUnitResourceBar(unitId, unitData) {
+  if (!unitId || unitId === 'trip_ypres' || unitData?.type === 'trip') return '';
+  const cfg = getUnitCatalogEntry(unitId) || {};
+  const staffActive = isStaffModeActive();
+  const isKs2 = unitId === 'ks2_ww2' || String(unitId).startsWith('ks2');
+
+  // 1. Check last visited lesson on this device for 1-click Resume
+  let resumePillHtml = '';
+  if (typeof window !== 'undefined') {
+    try {
+      const savedIdxRaw = localStorage.getItem(`hh_last_lesson_${unitId}`);
+      const lessons = Array.isArray(unitData?.lessons) ? unitData.lessons : [];
+      if (savedIdxRaw !== null && lessons.length > 0) {
+        const idx = parseInt(savedIdxRaw, 10);
+        if (!isNaN(idx) && idx >= 0 && idx < lessons.length) {
+          const hasL0 = lessons[0] && (lessons[0].id === 'lesson_0' || /KT\s*1\.0/i.test(lessons[0].title || ''));
+          const numLabel = hasL0 ? (idx === 0 ? 'Intro' : `Lesson ${idx}`) : `Lesson ${idx + 1}`;
+          resumePillHtml = `
+            <button type="button" onclick="window.viewLessonDetail && window.viewLessonDetail(${idx})" style="background: #059669; color: #ffffff; border: 1px solid #34d399; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" title="Continue where you left off (${(lessons[idx].title || '').replace(/"/g, '&quot;')})">
+              <i class="fa-solid fa-play" style="font-size: 0.68rem;"></i>
+              <span>Resume: ${numLabel}</span>
+            </button>
+          `;
+        }
+      }
+    } catch (e) {}
   }
 
-  const existing = document.getElementById('textbook-edition-picker-modal');
-  if (existing) existing.remove();
+  // 2. Key Topic instant jump pills (GCSE courses)
+  const ktPillsHtml = Array.isArray(cfg.keyTopics)
+    ? cfg.keyTopics
+        .map(
+          (kt) => `
+        <button type="button" onclick="window.jumpToKeyTopicSection('${kt.id}')" title="Jump to ${kt.label}" style="background: #1e293b; color: #e2e8f0; border: 1px solid #475569; border-radius: 7px; padding: 6px 10px; font-size: 0.76rem; font-weight: 700; cursor: pointer; white-space: nowrap; transition: all 0.15s ease;" onmouseover="this.style.background='#2563eb';this.style.borderColor='#60a5fa';this.style.color='#fff';" onmouseout="this.style.background='#1e293b';this.style.borderColor='#475569';this.style.color='#e2e8f0';">
+          ${kt.shortLabel}
+        </button>
+      `,
+        )
+        .join('')
+    : '';
 
-  const rowsHtml = cfg.editions
-    .map((ed) => {
-      const safeTitle = (ed.label || '').replace(/'/g, "\\'");
-      const hasPdf = isVerifiedPdf(ed.pdfUrl);
-      return `
-        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; background:#f8fafc; border:1.5px solid #e2e8f0; border-left:4px solid #0284c7; border-radius:8px; flex-wrap:wrap;">
-          <div style="flex:1 1 240px; min-width:0;">
-            <div style="font-size:0.92rem; font-weight:800; color:#0f172a; line-height:1.3;">${ed.label}</div>
-            ${ed.pages ? `<div style="font-size:0.74rem; font-weight:700; color:#64748b; margin-top:2px;">${ed.pages} &bull; Pure Narrative Classroom Booklet</div>` : ''}
+  // 3. Build Printable Booklets Panel
+  const bookletCards = [
+    renderBookletCard(unitId, 'textbook', cfg.textbook, '#2563eb', 'background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;', staffActive),
+    renderBookletCard(unitId, 'workbook', cfg.workbook, '#d97706', 'background:#fffbeb;color:#b45309;border:1px solid #fde68a;', staffActive),
+    renderBookletCard(unitId, 'retrieval', cfg.retrieval, '#7c3aed', 'background:#f5f3ff;color:#6d28d9;border:1px solid #ddd6fe;', staffActive),
+    renderBookletCard(unitId, 'revisionGuide', cfg.revisionGuide, '#0d9488', 'background:#f0fdfa;color:#0f766e;border:1px solid #99f6e4;', staffActive),
+    renderWorksheetsCard(unitId, cfg.worksheets),
+    renderBookletCard(unitId, 'schemeOfWork', cfg.schemeOfWork, '#be185d', 'background:#fdf2f8;color:#9d174d;border:1px solid #fbcfe8;', staffActive),
+  ].filter(Boolean);
+
+  // 4. Build Infographics Panel (whole-course roadmaps + gallery)
+  const manifest = (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__) || {};
+  const rawManifestItems = Array.isArray(manifest[unitId])
+    ? manifest[unitId].filter((it) => it && (isKs2 ? it.type === 'visual_story_sheet' : (it.image || it.interactiveUrl)))
+    : [];
+  const courseInfos = Array.isArray(cfg.courseInfographics) && cfg.courseInfographics.length > 0
+    ? cfg.courseInfographics
+    : rawManifestItems.slice(0, 4).map((it) => ({
+        slug: it.slug,
+        label: it.title,
+        desc: it.type === 'visual_story_sheet'
+          ? `1-page visual story with studio audio • ${it.topic || ''}`.replace(/\s*•\s*$/, '')
+          : (it.topic || ''),
+        thumbUrl: it.thumbUrl || it.image || '',
+      }));
+  const hasInfographics = courseInfos.length > 0;
+
+  const infographicCardsHtml = courseInfos
+    .map(
+      (info) => `
+      <div onclick="if(window.openInfographicModal){window.openInfographicModal('${info.slug}');}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; overflow: hidden; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.15s ease, box-shadow 0.15s ease;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 18px rgba(15,23,42,0.08)';" onmouseout="this.style.transform='none';this.style.boxShadow='none';">
+        <div style="height: 112px; background-image: url('${info.thumbUrl}'); background-size: cover; background-position: top center; position: relative; border-bottom: 1px solid #e2e8f0;">
+          <span style="position: absolute; bottom: 7px; right: 7px; background: rgba(15, 23, 42, 0.88); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.45); font-size: 0.62rem; font-weight: 800; text-transform: uppercase; padding: 2px 7px; border-radius: 4px;">1-Page Story + Audio</span>
+        </div>
+        <div style="padding: 11px 13px; display: flex; flex-direction: column; gap: 6px; flex: 1; justify-content: space-between;">
+          <div>
+            <h4 style="margin: 0 0 3px 0; font-size: 0.86rem; font-weight: 800; color: #0f172a; line-height: 1.25;">${info.label}</h4>
+            <p style="margin: 0; font-size: 0.73rem; color: #64748b; line-height: 1.38;">${info.desc || ''}</p>
           </div>
-          <div style="display:flex; align-items:center; gap:8px; flex-shrink:0;">
-            <button type="button" onclick="document.getElementById('textbook-edition-picker-modal')?.remove(); window.openCurricularPillar('${ed.htmlUrl}', '${safeTitle}', '${ed.pdfUrl}', 'TEXTBOOK');" style="background:#ffffff; color:#0f172a; border:1.5px solid #cbd5e1; padding:7px 12px; border-radius:6px; font-size:0.78rem; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-              <i class="fa-solid fa-book-open-reader" style="color:#0284c7;"></i> Read Online
+          <span style="font-size: 0.75rem; font-weight: 700; color: #0284c7; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+          </span>
+        </div>
+      </div>
+    `,
+    )
+    .join('');
+
+  // 5. Build Games, Quiz & Timeline Panel
+  const hasTimeline = Boolean(
+    cfg.timelineUrl ||
+      unitId === 'cme_new' ||
+      unitId === 'edexcel_medicine' ||
+      unitId === 'usa' ||
+      unitId === 'weimar_nazi_germany' ||
+      unitId === 'eee' ||
+      (Array.isArray(unitData?.timeline) && unitData.timeline.length > 0),
+  );
+  const individualsCount = Array.isArray(unitData?.key_individuals) ? unitData.key_individuals.length : 0;
+
+  const hasExamHub = Boolean(
+    !isKs2 &&
+      (cfg.stage === 'gcse' ||
+        cfg.masteryExamPack ||
+        (Array.isArray(unitData?.mock_exams) && unitData.mock_exams.length > 0)),
+  );
+
+  return `
+    <div id="unit-sticky-bar-wrapper" class="no-print" style="position: sticky; top: 0; z-index: 45;">
+      <div id="unit-sticky-classroom-bar" style="background: #0f172a; border-bottom: 1px solid #334155; padding: 9px 20px;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+          <!-- Left: Daily Lesson Speed Launch -->
+          <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+            ${resumePillHtml}
+            ${ktPillsHtml}
+            ${!resumePillHtml && !ktPillsHtml ? `<span style="font-size: 0.76rem; font-weight: 700; color: #94a3b8; letter-spacing: 0.03em;"><i class="fa-solid fa-compass" style="color:#38bdf8;margin-right:5px;"></i>Select an enquiry below to begin</span>` : ''}
+          </div>
+
+          <!-- Right: Single-Home On-Demand Resource Drawers -->
+          <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
+            ${
+              bookletCards.length > 0
+                ? `
+              <button type="button" id="unit-bar-btn-booklets" onclick="window.toggleUnitResourceDrawer('booklets')" style="background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                <i class="fa-solid fa-file-pdf" style="color: #f87171;"></i>
+                <span>PDFs &amp; Booklets (${bookletCards.length})</span>
+                <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.75;"></i>
+              </button>`
+                : ''
+            }
+            ${
+              hasInfographics
+                ? `
+              <button type="button" id="unit-bar-btn-infographics" onclick="window.toggleUnitResourceDrawer('infographics')" style="background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                <i class="fa-solid fa-image" style="color: #38bdf8;"></i>
+                <span>Infographics (${rawManifestItems.length || courseInfos.length})</span>
+                <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.75;"></i>
+              </button>`
+                : ''
+            }
+            <button type="button" id="unit-bar-btn-practice" onclick="window.toggleUnitResourceDrawer('practice')" style="background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-gamepad" style="color: #34d399;"></i>
+              <span>Games, Quiz${hasTimeline ? ' &amp; Timeline' : ''}</span>
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.75;"></i>
             </button>
             ${
-              hasPdf
-                ? `<a href="${ed.pdfUrl}" target="_blank" download onclick="document.getElementById('textbook-edition-picker-modal')?.remove();" style="background:#0284c7; color:#ffffff; border:1.5px solid #0284c7; padding:7px 12px; border-radius:6px; font-size:0.78rem; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-                    <i class="fa-solid fa-file-pdf"></i> Download PDF
-                  </a>`
+              hasExamHub
+                ? `
+              <button type="button" onclick="window.switchView && window.switchView('mock-exams', '${unitId}')" style="background: #1e293b; color: #c7d2fe; border: 1px solid #6366f1; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Mastery Exam Packs, Mock Papers & Past Papers">
+                <i class="fa-solid fa-file-signature" style="color: #818cf8;"></i>
+                <span>Exam Practice</span>
+              </button>`
                 : ''
             }
           </div>
         </div>
-      `;
-    })
-    .join('');
-
-  const modal = document.createElement('div');
-  modal.id = 'textbook-edition-picker-modal';
-  modal.style.cssText =
-    'position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.72); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; padding:16px; font-family:Inter,system-ui,sans-serif;';
-  modal.onclick = (e) => {
-    if (e.target === modal) modal.remove();
-  };
-
-  modal.innerHTML = `
-    <div style="width:100%; max-width:640px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 24px 48px rgba(0,0,0,0.35); border:1px solid #334155;">
-      <div style="background:#0f172a; color:#ffffff; padding:16px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:3px solid #0284c7;">
-        <div>
-          <div style="font-size:0.68rem; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; color:#38bdf8;">Pillar 1 &bull; Classroom Textbooks</div>
-          <div style="font-size:1.08rem; font-weight:800; margin-top:2px;">${cfg.title}</div>
-        </div>
-        <button type="button" onclick="document.getElementById('textbook-edition-picker-modal')?.remove();" aria-label="Close" style="background:rgba(255,255,255,0.1); color:#e2e8f0; border:1px solid rgba(255,255,255,0.2); width:32px; height:32px; border-radius:6px; font-size:1rem; font-weight:800; cursor:pointer;">&times;</button>
       </div>
-      <div style="padding:16px 20px; display:flex; flex-direction:column; gap:10px; max-height:72vh; overflow-y:auto;">
-        ${rowsHtml}
+
+      <!-- Collapsible On-Demand Drawer Shell (Pinned beneath sticky bar even when scrolled mid-page) -->
+      <div id="unit-sticky-drawer-shell" data-open-panel="" style="display: none; background: #f8fafc; border-bottom: 1.5px solid #cbd5e1; padding: 18px 24px; max-height: calc(100vh - 56px); overflow-y: auto; box-shadow: 0 14px 28px rgba(15, 23, 42, 0.16);">
+      <div style="max-width: 1160px; margin: 0 auto;">
+        <!-- Panel 1: PDFs & Booklets -->
+        <div id="unit-drawer-panel-booklets" style="display: none;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;">
+              <i class="fa-solid fa-file-pdf" style="color: #dc2626; margin-right: 6px;"></i>Printable Course Booklets${staffActive ? ' <span style="color:#059669;margin-left:6px;">(Staff Mode: Mark Schemes &amp; Print Notes Visible)</span>' : ''}
+            </span>
+            <button type="button" onclick="window.toggleUnitResourceDrawer('')" style="background: transparent; border: none; color: #64748b; font-size: 0.78rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-xmark"></i> Close</button>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 14px;">
+            ${bookletCards.join('')}
+          </div>
+        </div>
+
+        <!-- Panel 2: Infographics -->
+        <div id="unit-drawer-panel-infographics" style="display: none;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;">
+              <i class="fa-solid fa-image" style="color: #0284c7; margin-right: 6px;"></i>Course Infographics &amp; Roadmaps (Single-Sheet Visual Overviews)
+            </span>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              ${
+                rawManifestItems.length > courseInfos.length
+                  ? `<button type="button" onclick="if(window.openInfographicModal){window.openInfographicModal({ unitId: '${unitId}', items: window.__INFOGRAPHICS_MANIFEST__['${unitId}'], startIndex: 0 });}" style="background: #0284c7; color: #ffffff; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.75rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-images" style="margin-right: 5px;"></i>Browse All ${rawManifestItems.length} Unit Infographics</button>`
+                  : ''
+              }
+              <button type="button" onclick="window.toggleUnitResourceDrawer('')" style="background: transparent; border: none; color: #64748b; font-size: 0.78rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;">
+            ${infographicCardsHtml}
+          </div>
+        </div>
+
+        <!-- Panel 3: Games, Quiz & Timeline -->
+        <div id="unit-drawer-panel-practice" style="display: none;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;">
+              <i class="fa-solid fa-bolt" style="color: #059669; margin-right: 6px;"></i>Digital Revision, Retrieval Games &amp; Chronology
+            </span>
+            <button type="button" onclick="window.toggleUnitResourceDrawer('')" style="background: transparent; border: none; color: #64748b; font-size: 0.78rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-xmark"></i> Close</button>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+            <button type="button" onclick="if(window.launchUnitArcade){window.launchUnitArcade('${unitId}', 'all', 'lobby');}else if(window.switchView){window.switchView('arcade', '${unitId}');}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
+              <div style="width: 38px; height: 38px; border-radius: 8px; background: #f0f9ff; color: #0284c7; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-gamepad"></i></div>
+              <div>
+                <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Revision Arcade</div>
+                <div style="font-size: 0.73rem; color: #64748b;">Retrieval games &amp; boss sprints</div>
+              </div>
+            </button>
+
+            <button type="button" onclick="window.switchView && window.switchView('interactive', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
+              <div style="width: 38px; height: 38px; border-radius: 8px; background: #fffbeb; color: #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-circle-question"></i></div>
+              <div>
+                <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">${isKs2 ? 'Class Quiz &amp; Flashcards' : 'Quizzing &amp; Flashcards'}</div>
+                <div style="font-size: 0.73rem; color: #64748b;">Self-marking quiz &amp; Leitner recall</div>
+              </div>
+            </button>
+
+            ${
+              hasTimeline
+                ? cfg.timelineUrl
+                  ? `
+                <a href="${cfg.timelineUrl}" target="_blank" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; text-decoration: none;">
+                  <div style="width: 38px; height: 38px; border-radius: 8px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                  <div>
+                    <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Interactive Timeline</div>
+                    <div style="font-size: 0.73rem; color: #64748b;">Visual chronological slider</div>
+                  </div>
+                </a>`
+                  : `
+                <button type="button" onclick="window.switchView && window.switchView('timeline', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
+                  <div style="width: 38px; height: 38px; border-radius: 8px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                  <div>
+                    <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Living Timeline</div>
+                    <div style="font-size: 0.73rem; color: #64748b;">Explore turning-point milestones</div>
+                  </div>
+                </button>`
+                : ''
+            }
+
+            ${
+              individualsCount > 0 && !isKs2
+                ? `
+              <button type="button" onclick="window.switchView && window.switchView('individuals', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
+                <div style="width: 38px; height: 38px; border-radius: 8px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-users-rectangle"></i></div>
+                <div>
+                  <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Key Individuals (${individualsCount})</div>
+                  <div style="font-size: 0.73rem; color: #64748b;">Biographical &amp; organisation cards</div>
+                </div>
+              </button>`
+                : ''
+            }
+          </div>
+        </div>
       </div>
     </div>
+    </div>
   `;
-  document.body.appendChild(modal);
-}
-
-if (typeof window !== 'undefined') {
-  window.openTextbookEditionPicker = openTextbookEditionPicker;
 }

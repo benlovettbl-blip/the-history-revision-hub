@@ -134,8 +134,8 @@ export async function renderCurriculumMap() {
 /**
  * View 1: Curriculum Sequence (Termly Grid)
  */
-async function renderSequenceView() {
-  const body = document.getElementById('curriculum-map-body');
+export async function renderSequenceView(targetBody = null) {
+  const body = targetBody || document.getElementById('curriculum-map-body');
   if (!body) return;
 
   body.innerHTML = `
@@ -172,7 +172,7 @@ async function renderSequenceView() {
     const safeYearName = yearGroup.year.toLowerCase().replace(/\s+/g, '_');
     const sowPdfUrl =
       yearGroup.year === 'Key Stage 2'
-        ? '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf'
+        ? '/pdfs/ks2_ww2_scheme_of_work.pdf'
         : `/pdfs/${safeYearName}_sow.pdf`;
     section.innerHTML = `
       <div style="background:${colours.bg}; color:#fff; padding:14px 20px; border-bottom:3px solid ${colours.accent}; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">

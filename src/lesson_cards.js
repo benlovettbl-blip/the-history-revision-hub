@@ -164,44 +164,53 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
   let lessonsHTML = `
       <style>
         .premium-banner {
-          position: relative; overflow: hidden; border-radius: 12px; padding: 25px 30px; margin-top: 30px; margin-bottom: 20px; 
-          box-shadow: 0 10px 25px -10px rgba(0,0,0,0.4); display: flex; flex-direction: column; align-items: flex-start; gap: 8px; 
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); cursor: default;
-        }
-        .premium-banner:hover {
-          transform: scale(1.01) translateY(-3px);
-          box-shadow: 0 15px 30px -10px rgba(0,0,0,0.5);
+          position: relative; overflow: hidden; border-radius: 10px; padding: 13px 20px; margin-top: 22px; margin-bottom: 14px;
+          scroll-margin-top: 66px;
+          box-shadow: 0 6px 16px -8px rgba(0,0,0,0.35); display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;
+          cursor: default;
         }
         .premium-banner-bg {
           position: absolute; top: -5%; left: -5%; width: 110%; height: 110%; 
           background-position: center; background-size: cover; 
-          z-index: 1; filter: brightness(0.9); transition: transform 0.8s ease;
+          z-index: 1; filter: brightness(0.88); transition: transform 0.6s ease;
         }
         .premium-banner:hover .premium-banner-bg {
-          transform: scale(1.03);
+          transform: scale(1.02);
         }
         .premium-banner-overlay-1 {
           position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
-          background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%); z-index: 2;
+          background: linear-gradient(135deg, rgba(15,23,42,0.78) 0%, rgba(15,23,42,0.32) 100%); z-index: 2;
         }
         .premium-banner-overlay-2 {
           position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
-          opacity: 0.45; mix-blend-mode: multiply; z-index: 3;
+          opacity: 0.42; mix-blend-mode: multiply; z-index: 3;
         }
         .premium-banner-glow {
-          position: absolute; bottom: -50px; right: -50px; width: 300px; height: 300px; 
-          filter: blur(40px); z-index: 3; opacity: 0.6; border-radius: 50%;
+          position: absolute; bottom: -50px; right: -50px; width: 240px; height: 240px; 
+          filter: blur(40px); z-index: 3; opacity: 0.5; border-radius: 50%;
         }
         .premium-banner-content {
-          position: relative; z-index: 4; padding-left: 20px;
+          position: relative; z-index: 4; padding-left: 14px;
         }
         .premium-banner-title {
-          margin: 0; color: #ffffff; font-size: 2rem; font-weight: 700; 
-          font-family: 'Playfair Display', serif; text-shadow: 0px 4px 12px rgba(0,0,0,0.8); letter-spacing: -0.5px;
+          margin: 0; color: #ffffff; font-size: 1.24rem; font-weight: 800; line-height: 1.22;
+          font-family: 'Playfair Display', serif; text-shadow: 0px 2px 8px rgba(0,0,0,0.75); letter-spacing: -0.2px;
         }
         .premium-banner-enquiry {
-          margin: 8px 0 0 0; color: #f8fafc; font-size: 1.05rem; font-style: italic; 
-          max-width: 800px; font-weight: 300; text-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+          margin: 3px 0 0 0; color: #e2e8f0; font-size: 0.86rem; font-style: italic; line-height: 1.35;
+          max-width: 820px; font-weight: 400; text-shadow: 0px 1px 6px rgba(0,0,0,0.75);
+        }
+        .compact-lessons-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+          gap: 16px;
+          text-align: left;
+        }
+        .lesson-enquiry-clamp {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
       </style>
     `;
@@ -274,30 +283,31 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       periods = [
         {
           id: 'KT1',
-          title: 'Key Topic 1: The Birth of Israel',
+          title: 'Key Topic 1: The Birth of Israel, 1945–63',
           prefix: 'KT 1',
           gradient: 'linear-gradient(135deg, #1e3a8a, #3b82f6)',
           border: '#3b82f6',
-          image: '/assets/cme_new_kt1_cover.png',
-          enquiry: 'How and why was the state of Israel established?',
+          image: '/images/cme_ben_gurion.jpg',
+          bgPos: 'center 25%',
+          enquiry: 'How and why was the state of Israel established, and why did conflict escalate by 1956?',
         },
         {
           id: 'KT2',
-          title: 'Key Topic 2: Escalating Conflict',
+          title: 'Key Topic 2: Escalating Conflict, 1963–73',
           prefix: 'KT 2',
           gradient: 'linear-gradient(135deg, #7f1d1d, #ef4444)',
           border: '#ef4444',
           image: '/assets/cme_new_yom_kippur_crossing.png',
-          enquiry: 'What drove the major conflicts in the Middle East from 1967-1973?',
+          enquiry: 'What drove the major wars in the Middle East between 1967 and 1973?',
         },
         {
           id: 'KT3',
-          title: 'Key Topic 3: Attempts at Peace',
+          title: 'Key Topic 3: Attempts at Peace, 1974–95',
           prefix: 'KT 3',
           gradient: 'linear-gradient(135deg, #064e3b, #10b981)',
           border: '#10b981',
           image: '/assets/cme_new_camp_david_accords.png',
-          enquiry: 'Why has lasting peace in the Middle East been so difficult to achieve?',
+          enquiry: 'Why did diplomatic breakthroughs still leave lasting peace elusive by 1995?',
           bgPos: 'center 20%',
         },
       ];
@@ -308,39 +318,39 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       periods = [
         {
           id: 'KT1',
-          title: 'Key Topic 1: The Weimar Republic (1918-29)',
+          title: 'Key Topic 1: The Weimar Republic (1918–29)',
           prefix: 'lesson_1_',
           gradient: 'linear-gradient(135deg, #1e3a8a, #3b82f6)',
           border: '#3b82f6',
           image: 'images/weimar_kt1_cover.jpg',
-          enquiry: 'To what extent did the Weimar Republic recover from its early crises?',
+          enquiry: 'To what extent did the Weimar Republic recover from its early crises by 1929?',
         },
         {
           id: 'KT2',
-          title: "Key Topic 2: Hitler's Rise to Power, 1919-33",
+          title: "Key Topic 2: Hitler's Rise to Power (1919–33)",
           prefix: 'lesson_2_',
           gradient: 'linear-gradient(135deg, #7f1d1d, #dc2626)',
           border: '#dc2626',
           image: 'images/weimar_kt2_cover.jpg',
-          enquiry: 'How did a tiny obscure political group transform?',
+          enquiry: 'How did the Nazi Party grow from a fringe movement into the ruling party of Germany by 1933?',
         },
         {
           id: 'KT3',
-          title: 'Key Topic 3: Nazi Control and Dictatorship',
+          title: 'Key Topic 3: Nazi Control and Dictatorship (1933–39)',
           prefix: 'lesson_3_',
           gradient: 'linear-gradient(135deg, #4b5563, #1f2937)',
           border: '#1f2937',
           image: 'images/weimar_kt3_cover.jpg',
-          enquiry: 'From chains to absolute control',
+          enquiry: 'How did Hitler dismantle democracy and maintain control through terror and propaganda?',
         },
         {
           id: 'KT4',
-          title: 'Key Topic 4: Life in Nazi Germany, 1933-39',
+          title: 'Key Topic 4: Life in Nazi Germany (1933–39)',
           prefix: 'lesson_4_',
           gradient: 'linear-gradient(135deg, #4d7c0f, #65a30d)',
           border: '#65a30d',
           image: 'images/weimar_kt4_cover.jpg',
-          enquiry: 'Did life improve under the Nazis?',
+          enquiry: 'How far did Nazi policies transform everyday life for women, youth, workers, and minorities?',
         },
       ];
     } else if (
@@ -350,30 +360,33 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       periods = [
         {
           id: 'KT1',
-          title: 'Key Topic 1: Queen, government and religion, 1558-69',
+          title: 'Key Topic 1: Queen, government and religion, 1558–69',
           prefix: 'lesson_1_',
           gradient: 'linear-gradient(135deg, #1e3a8a, #3b82f6)',
           border: '#3b82f6',
-          image: 'assets/placeholder_cover.jpg',
-          enquiry: 'From religious division to the Armada: How did Elizabeth secure her throne?',
+          image: '/images/elizabeth_i_in_parliament_1559.jpg',
+          bgPos: 'center 25%',
+          enquiry: 'How successfully did Elizabeth I secure her throne and settle religious division by 1569?',
         },
         {
           id: 'KT2',
-          title: 'Key Topic 2: Challenges to Elizabeth at home and abroad, 1569-88',
+          title: 'Key Topic 2: Challenges to Elizabeth at home and abroad, 1569–88',
           prefix: 'lesson_2_',
           gradient: 'linear-gradient(135deg, #7f1d1d, #dc2626)',
           border: '#dc2626',
-          image: 'assets/placeholder_cover.jpg',
-          enquiry: 'Why did plots and foreign threats push Elizabeth towards war?',
+          image: '/images/elizabeth_tilbury_speech.jpg',
+          bgPos: 'center 22%',
+          enquiry: 'Why did Catholic plots and rivalry with Spain culminate in the Armada of 1588?',
         },
         {
           id: 'KT3',
-          title: 'Key Topic 3: Elizabethan society in the Age of Exploration, 1558-88',
+          title: 'Key Topic 3: Elizabethan society in the Age of Exploration, 1558–88',
           prefix: 'lesson_3_',
           gradient: 'linear-gradient(135deg, #4b5563, #1f2937)',
           border: '#1f2937',
-          image: 'assets/placeholder_cover.jpg',
-          enquiry: 'What was life like during the Elizabethan Golden Age?',
+          image: '/images/elizabethan_england_saxton_1579_map_auth.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'How far was the Elizabethan era truly a Golden Age of culture, education, and exploration?',
         },
       ];
     } else if (
@@ -430,94 +443,20 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
     }
 
     periods.forEach((p) => {
-      // Determine textbook & workbook links for this topic/era
-      let pdfTextbookUrl = '';
-      let digitalTextbookUrl = '';
-      let pdfWorkbookUrl = '';
-      let digitalWorkbookUrl = '';
-      if (currentUnitId === 'edexcel_medicine') {
-        pdfTextbookUrl = `/pdfs/edexcel_medicine_textbook_${p.id}.pdf`;
-        digitalTextbookUrl = `/units/edexcel_medicine/textbook_${p.id}_PUBLISHER.html`;
-        pdfWorkbookUrl = `/pdfs/edexcel_medicine_pupil_workbook_${p.id}.pdf`;
-        digitalWorkbookUrl = `/units/edexcel_medicine/pupil_workbook_${p.id}.html`;
-      } else if (currentUnitId === 'cme_new') {
-        pdfWorkbookUrl = `/pdfs/cme_new_pupil_workbook_${p.id}.pdf`;
-        digitalWorkbookUrl = `/units/cme_new/pupil_workbook_${p.id}.html`;
-      } else if (currentUnitId === 'eee') {
-        pdfWorkbookUrl = `/pdfs/eee_pupil_workbook_${p.id}.pdf`;
-        digitalWorkbookUrl = `/units/eee/pupil_workbook_${p.id}.html`;
-      } else if (currentUnitId === 'weimar_nazi_germany') {
-        pdfWorkbookUrl = `/pdfs/weimar_nazi_germany_pupil_workbook_${p.id}.pdf`;
-        digitalWorkbookUrl = `/units/weimar_nazi_germany/pupil_workbook_${p.id}.html`;
-      } else if (currentUnitId === 'usa') {
-        pdfWorkbookUrl = `/pdfs/usa_pupil_workbook_${p.id}.pdf`;
-        digitalWorkbookUrl = `/units/usa/pupil_workbook_${p.id}.html`;
-      }
-
-      const infographicBtns = (p.infographics || [])
-        .map(
-          (info) => `
-        <button type="button" class="btn-banner-infographic" onclick="if(window.openInfographicModal){window.openInfographicModal('${info.slug}');}" title="View ${info.title || info.label} Visual Revision Mat" style="text-decoration: none; background: rgba(2, 132, 199, 0.7); color: #ffffff; border: 1.5px solid rgba(56, 189, 248, 0.6); padding: 8px 13px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.82rem; display: inline-flex; align-items: center; gap: 7px; backdrop-filter: blur(6px); box-shadow: 0 4px 12px rgba(2,132,199,0.3); cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='rgba(2, 132, 199, 0.95)'; this.style.borderColor='#38bdf8'; this.style.transform='translateY(-1.5px)';" onmouseout="this.style.background='rgba(2, 132, 199, 0.7)'; this.style.borderColor='rgba(56, 189, 248, 0.6)'; this.style.transform='none';">
-          <i class="${info.icon || 'fa-solid fa-chart-pie'}" style="color: #7dd3fc; font-size: 0.92rem;"></i>
-          <span>${info.label}</span>
-        </button>
-      `,
-        )
-        .join('');
-
       lessonsHTML += `
-        <div class="premium-banner" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div class="premium-banner" id="kt-section-${p.id}">
           <div class="premium-banner-bg" style="background-image: url('${p.image}'); background-position: ${p.bgPos || 'center'};"></div>
           <div class="premium-banner-overlay-1"></div>
           <div class="premium-banner-overlay-2" style="background: ${p.gradient};"></div>
           <div class="premium-banner-glow" style="background: radial-gradient(circle, ${p.border} 0%, transparent 70%);"></div>
-          <div class="premium-banner-content" style="border-left: 6px solid ${p.border}; flex: 1; min-width: 260px;">
+          <div class="premium-banner-content" style="border-left: 5px solid ${p.border}; flex: 1; min-width: 240px;">
             <h3 class="premium-banner-title">${p.title}</h3>
             <p class="premium-banner-enquiry">${p.enquiry}</p>
           </div>
-          ${
-            pdfTextbookUrl || pdfWorkbookUrl || (p.infographics && p.infographics.length > 0)
-              ? `
-          <div class="premium-banner-actions" style="position: relative; z-index: 5; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-left: auto;">
-            ${infographicBtns}
-            ${
-              pdfTextbookUrl
-                ? `
-            <a href="${pdfTextbookUrl}" target="_blank" download="${pdfTextbookUrl.split('/').pop()}" class="btn-banner-textbook-pdf" onclick="if(window.openTeacherPrintPreview && '${digitalTextbookUrl}'){ event.preventDefault(); window.openTeacherPrintPreview('${digitalTextbookUrl}', '${(p.title || '').replace(/'/g, "\\'")} Master Textbook', '${pdfTextbookUrl}'); }" title="Open or download ${p.title} pure-narrative Master Textbook" style="text-decoration: none; background: rgba(15, 23, 42, 0.82); color: #ffffff; border: 1.5px solid rgba(147, 197, 253, 0.55); padding: 9px 14px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 7px; backdrop-filter: blur(6px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.2s ease;" onmouseover="this.style.background='rgba(30,58,138,0.95)'; this.style.borderColor='#93c5fd';" onmouseout="this.style.background='rgba(15,23,42,0.82)'; this.style.borderColor='rgba(147,197,253,0.55)';">
-              <i class="fa-solid fa-book" style="color: #60a5fa; font-size: 0.95rem;"></i>
-              <span>Master Textbook</span>
-            </a>`
-                : ''
-            }
-            ${
-              pdfWorkbookUrl
-                ? `
-            <a href="${pdfWorkbookUrl}" target="_blank" download="${pdfWorkbookUrl.split('/').pop()}" class="btn-banner-pdf" title="Download or open compiled ${p.title} pupil workbook PDF in new tab" style="text-decoration: none; background: rgba(0, 0, 0, 0.7); color: #ffffff; border: 1.5px solid rgba(255, 255, 255, 0.4); padding: 9px 15px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 7px; backdrop-filter: blur(6px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.2s ease;" onmouseover="this.style.background='rgba(255,255,255,0.95)'; this.style.color='#0f172a'; this.style.borderColor='#ffffff';" onmouseout="this.style.background='rgba(0,0,0,0.7)'; this.style.color='#ffffff'; this.style.borderColor='rgba(255,255,255,0.4)';">
-              <i class="fa-solid fa-file-pdf" style="color: #ef4444; font-size: 1rem;"></i>
-              <span>Pupil Workbook (PDF)</span>
-            </a>
-            ${
-              digitalWorkbookUrl
-                ? `
-            <a href="${digitalWorkbookUrl}" target="_blank" class="btn-banner-web" onclick="if(window.openTeacherPrintPreview){ event.preventDefault(); window.openTeacherPrintPreview('${digitalWorkbookUrl}', '${(p.title || '').replace(/'/g, "\\'")} Pupil Workbook', '${pdfWorkbookUrl}'); }" title="Open interactive digital A4 workbook in browser" style="text-decoration: none; background: rgba(255, 255, 255, 0.18); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.3); padding: 9px 13px; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.83rem; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(4px); transition: all 0.2s ease;" onmouseover="this.style.background='rgba(255,255,255,0.3)';" onmouseout="this.style.background='rgba(255,255,255,0.18)';">
-              <i class="fa-solid fa-book-open" style="color: #93c5fd;"></i>
-              <span>Digital HTML</span>
-            </a>
-            `
-                : ''
-            }
-            `
-                : ''
-            }
-          </div>
-          `
-              : ''
-          }
         </div>
       `;
 
-      lessonsHTML +=
-        '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; text-align: left;">';
+      lessonsHTML += '<div class="compact-lessons-grid">';
 
       let foundAny = false;
       unitData.lessons.forEach((lesson, index) => {
@@ -558,10 +497,33 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
         if (isMatch) {
           foundAny = true;
-          const cardBadge = renderSidebarVideoBadgeHTML(lesson, { isCard: true });
+
+          let displayTitle = (lesson.title || '')
+            .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
+            .trim();
+          let shortCode = `Lesson ${index + 1}`;
+          let overlayBadge = `LESSON ${index + 1}`;
+          const ktMatch = displayTitle.match(/^(KT\s*\d+\.\d+)\s*(?:Enquiry)?:\s*(.*)$/i);
+          if (ktMatch) {
+            if (currentUnitId === 'cme_new' || lesson.id === 'lesson_0' || ktMatch[1] === 'KT 1.0') {
+              if (index === 0 || lesson.id === 'lesson_0' || ktMatch[1] === 'KT 1.0') {
+                shortCode = `${ktMatch[1]} • Intro`;
+                overlayBadge = `INTRO • ${ktMatch[1]}`;
+              } else {
+                shortCode = `${ktMatch[1]} • Lesson ${index}`;
+                overlayBadge = `LESSON ${index}`;
+              }
+            } else {
+              shortCode = `${ktMatch[1]} • Lesson ${index + 1}`;
+              overlayBadge = `LESSON ${index + 1}`;
+            }
+            displayTitle = ktMatch[2].trim();
+          } else if (currentUnitId === 'cme_new' && (index === 0 || lesson.id === 'lesson_0')) {
+            shortCode = `Intro Lesson`;
+            overlayBadge = `INTRO`;
+          }
 
           let candidateImg = resolveLessonCardImage(lesson);
-
           let topMediaHTML = '';
           if (candidateImg) {
             let imgUrl = getAssetUrl(candidateImg);
@@ -584,54 +546,33 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
             const useCoverFit = Boolean(lesson.card_image) || unitData?.id === 'ks2_ww2' || currentUnitId === 'ks2_ww2';
             topMediaHTML = `
-              <div style="position: relative; width: 100%; height: 165px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
-                ${useCoverFit ? '' : `<div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
-                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));'}" />
+              <div style="position: relative; width: 100%; height: 112px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+                ${useCoverFit ? '' : `<div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(12px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
+                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 3px 10px rgba(0,0,0,0.45));'}" />
+                <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
+                  ${overlayBadge}
+                </span>
               </div>
             `;
           } else {
-            const hasL0 = currentUnitId === 'cme_new' || lesson.id === 'lesson_0';
-            const badgeLabel = unitData.type === 'trip'
-              ? `Day ${index + 1}`
-              : (hasL0 && index === 0 ? 'Intro Lesson' : (hasL0 ? `Lesson ${index}` : `Lesson ${index + 1}`));
             topMediaHTML = `
-              <div style="position: relative; width: 100%; height: 50px; background: linear-gradient(135deg, ${p.border || '#1e3a8a'} 0%, #3b82f6 100%); display: flex; align-items: center; padding: 0 16px; flex-shrink: 0;">
-                <span style="background: rgba(255,255,255,0.22); color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 14px; text-transform: uppercase; letter-spacing: 0.04em;">
-                  ${badgeLabel}
+              <div style="position: relative; width: 100%; height: 42px; background: linear-gradient(135deg, ${p.border || '#1e3a8a'} 0%, #3b82f6 100%); display: flex; align-items: center; padding: 0 12px; flex-shrink: 0;">
+                <span style="background: rgba(255,255,255,0.22); color: #ffffff; font-size: 0.68rem; font-weight: 800; padding: 2.5px 9px; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.04em;">
+                  ${overlayBadge}
                 </span>
               </div>
             `;
           }
 
-          let displayTitle = (lesson.title || '')
-            .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
-            .trim();
-          let shortCode = `Lesson ${index + 1}`;
-          const ktMatch = displayTitle.match(/^(KT\s*\d+\.\d+)\s*(?:Enquiry)?:\s*(.*)$/i);
-          if (ktMatch) {
-            if (currentUnitId === 'cme_new' || lesson.id === 'lesson_0' || ktMatch[1] === 'KT 1.0') {
-              if (index === 0 || lesson.id === 'lesson_0' || ktMatch[1] === 'KT 1.0') {
-                shortCode = `${ktMatch[1]} • Intro Lesson`;
-              } else {
-                shortCode = `${ktMatch[1]} • Lesson ${index}`;
-              }
-            } else {
-              shortCode = `${ktMatch[1]} • Lesson ${index + 1}`;
-            }
-            displayTitle = ktMatch[2].trim();
-          } else if (currentUnitId === 'cme_new' && (index === 0 || lesson.id === 'lesson_0')) {
-            shortCode = `Intro Lesson`;
-          }
-
           const displayEnquiry = getLessonEnquiryQuestion(lesson);
 
           lessonsHTML += `
-            <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${index}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 4px solid ${p.border || '#2563eb'}; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 20px -3px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05)';">
+            <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${index}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 3.5px solid ${p.border || '#2563eb'}; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(15,23,42,0.05); cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 18px rgba(15,23,42,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(15,23,42,0.05)';">
               ${topMediaHTML}
-              <div style="padding: 16px 18px 20px 18px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; gap: 8px;">
+              <div style="padding: 11px 13px 13px 13px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; gap: 6px;">
                 <div>
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; gap: 6px;">
-                    <span style="font-size: 0.75rem; font-weight: 700; color: ${p.border || '#2563eb'}; text-transform: uppercase; letter-spacing: 0.05em;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; gap: 6px;">
+                    <span style="font-size: 0.68rem; font-weight: 700; color: ${p.border || '#2563eb'}; text-transform: uppercase; letter-spacing: 0.04em;">
                       ${shortCode}
                     </span>
                     ${(() => {
@@ -641,22 +582,26 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                       const posterItems = Array.isArray(items) ? items.filter(it => it && it.image && it.image.trim().length > 0) : [];
                       if (posterItems.length > 0) {
                         const label = posterItems.length > 1 ? `Infographics (${posterItems.length})` : 'Infographic';
-                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Visual Revision Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#0284c7'; this.style.color='#ffffff';" onmouseout="this.style.background='#e0f2fe'; this.style.color='#0284c7';"><i class="fa-solid fa-chart-pie" style="font-size: 0.7rem;"></i> <span>${label}</span></button>`;
+                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Lesson Infographic" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-image" style="font-size: 0.65rem;"></i> <span>${label}</span></button>`;
+                      }
+                      const storyItems = Array.isArray(items) ? items.filter(it => it && it.type === 'visual_story_sheet' && it.interactiveUrl) : [];
+                      if (storyItems.length > 0) {
+                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open 1-Page Visual Story Sheet with Studio Voice" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-diagram-project" style="font-size: 0.63rem; color: #d97706;"></i> <span>Story Sheet</span></button>`;
                       }
                       const isKs2Card = currentUnitId === 'ks2_ww2' || String(currentUnitId || '').startsWith('ks2');
                       if (isKs2Card && items && items.some(it => it.interactiveUrl)) {
-                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open Interactive Presentation Mat" style="padding: 2.5px 8px; font-size: 0.72rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#f59e0b'; this.style.color='#000000';" onmouseout="this.style.background='#fef3c7'; this.style.color='#b45309';"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 0.7rem; color: #d97706;"></i> <span>Interactive Mat</span></button>`;
+                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open Interactive Infographic" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 0.65rem; color: #d97706;"></i> <span>Infographic</span></button>`;
                       }
                       return '';
                     })()}
                   </div>
-                  <h3 style="margin: 0 0 8px 0; color: #0f172a; font-size: 1.02rem; font-weight: 700; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
+                  <h3 style="margin: 0 0 5px 0; color: #0f172a; font-size: 0.94rem; font-weight: 700; line-height: 1.3; font-family: 'Playfair Display', Georgia, serif;">
                     ${displayTitle}
                   </h3>
                   ${
                     displayEnquiry
                       ? `
-                    <p style="margin: 0; color: #475569; font-weight: 400; font-size: 0.85rem; line-height: 1.45; font-style: italic;">
+                    <p class="lesson-enquiry-clamp" style="margin: 0; color: #475569; font-weight: 400; font-size: 0.79rem; line-height: 1.38; font-style: italic;">
                       ${displayEnquiry}
                     </p>
                   `
@@ -674,532 +619,19 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       }
       lessonsHTML += '</div>';
     });
-  } else if (
-    (unitData &&
-      (unitData.type === 'trip' || (unitData.title && unitData.title.includes('Battlefield')))) ||
-    (currentUnitData &&
-      (currentUnitData.type === 'trip' ||
-        (currentUnitData.title && currentUnitData.title.includes('Battlefield'))))
-  ) {
-    const targetData = unitData && unitData.lessons ? unitData : currentUnitData || {};
-    const days = [];
-    const meninGateHeroes = [];
-    const tyneCotHeroes = [];
-    const lowryBrothers = [];
-    let crummackHero = null;
-    let prepPack = null;
-
-    (targetData.lessons || []).forEach((lesson, index) => {
-      if (lesson.id === 'day_0') {
-        prepPack = { lesson, index };
-      } else if (lesson.id === 'day_1' || lesson.id === 'day_2' || lesson.id === 'day_3') {
-        days.push({ lesson, index });
-      } else if (lesson.id === 'hero_0' || lesson.id === 'hero_1') {
-        meninGateHeroes.push({ lesson, index });
-      } else if (lesson.id && ['hero_2', 'hero_3', 'hero_4', 'hero_5'].includes(lesson.id)) {
-        tyneCotHeroes.push({ lesson, index });
-      } else if (lesson.id && lesson.id.startsWith('hero_lowry_')) {
-        lowryBrothers.push({ lesson, index });
-      } else if (lesson.id === 'hero_crummack') {
-        crummackHero = { lesson, index };
-      }
-    });
-
-    lessonsHTML += `
-      <div id="trip-hub-container" style="margin-top: 25px;">
-        <!-- Three-Tab Switcher Bar -->
-        <div class="trip-hub-tab-bar" style="display: flex; gap: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 14px; margin-bottom: 25px; flex-wrap: wrap;">
-          <button class="btn trip-hub-tab-btn active" data-action="switch-trip-hub-tab" data-tab="itinerary" style="padding: 10px 22px; font-size: 0.95rem; border-radius: 8px; border: 1.5px solid #1e3a8a; background: #1e3a8a; color: #ffffff; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(30, 58, 138, 0.25); transition: all 0.2s;">
-            <i class="fa-solid fa-route" style="font-size: 1rem;"></i>
-            <span>3-Day Field Itinerary</span>
-            <span class="tab-badge" style="font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: rgba(255, 255, 255, 0.25); color: #ffffff; margin-left: 4px;">3 Days</span>
-          </button>
-          <button class="btn trip-hub-tab-btn" data-action="switch-trip-hub-tab" data-tab="fallen" style="padding: 10px 22px; font-size: 0.95rem; border-radius: 8px; border: 1.5px solid #cbd5e1; background: #f8fafc; color: #475569; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s;">
-            <i class="fa-solid fa-monument" style="font-size: 1rem;"></i>
-            <span>Village Fallen &amp; Memorials</span>
-            <span class="tab-badge" style="font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #e2e8f0; color: #475569; margin-left: 4px;">9 Heroes</span>
-          </button>
-          <button class="btn trip-hub-tab-btn" data-action="switch-trip-hub-tab" data-tab="crummack" style="padding: 10px 22px; font-size: 0.95rem; border-radius: 8px; border: 1.5px solid #cbd5e1; background: #f8fafc; color: #475569; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s;">
-            <i class="fa-solid fa-medal" style="font-size: 1rem; color: #d97706;"></i>
-            <span>Pupil Family Hero: 2nd Lt Crummack MC</span>
-            <span class="tab-badge" style="font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #fef3c7; color: #92400e; margin-left: 4px;">Year 10 Family</span>
-          </button>
-        </div>
-
-        <!-- Tab 1: 3-Day Field Itinerary -->
-        <div id="trip-panel-itinerary" style="display: block; scroll-margin-top: 80px;">
-    `;
-
-    if (prepPack) {
-      lessonsHTML += `
-        <div style="margin-bottom: 25px;">
-          <div class="prep-pack-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #0284c7; border-radius: 8px; padding: 18px 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-sizing: border-box; max-width: 100%;">
-            <div style="flex: 1; min-width: 0; width: 100%; cursor: pointer;" data-action="view-lesson-detail" data-index="${prepPack.index}">
-              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px; flex-wrap: wrap;">
-                <h3 style="margin: 0; color: #0369a1; font-size: 1.18rem; font-family: 'Playfair Display', serif; word-break: break-word; overflow-wrap: break-word;">Pre-Trip Information &amp; Parental Briefing</h3>
-                <span style="background: #eff6ff; color: #0284c7; border: 1px solid #bfdbfe; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; text-transform: uppercase;">Thu 10 Sep · 16:15 Briefing</span>
-              </div>
-              <p style="margin: 0; color: #475569; font-size: 0.88rem; line-height: 1.4; word-break: break-word; overflow-wrap: break-word;">Fieldwork study expedition led by Department Lead &amp; Humanities Staff. Packing checklist, catering, itinerary, and preparation guidance.</p>
-            </div>
-            <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; max-width: 100%;">
-              <a href="/pdfs/ypres_tour_leader_companion_a4.pdf" target="_blank" style="padding: 7px 12px; font-size: 0.8rem; font-weight: 700; background: #f5f3ff; color: #5b21b6; border: 1.5px solid #c4b5fd; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;" onmouseover="this.style.background='#ede9fe';" onmouseout="this.style.background='#f5f3ff';">
-                <i class="fa-solid fa-compass" style="color: #7c3aed;"></i> Tour Companion (A4 PDF)
-              </a>
-              <a href="/pdfs/ypres_2026_parent_information_pack_v2.pdf" target="_blank" style="padding: 7px 12px; font-size: 0.8rem; font-weight: 700; background: #fefce8; color: #b45309; border: 1.5px solid #fde68a; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;" onmouseover="this.style.background='#fef08a';" onmouseout="this.style.background='#fefce8';">
-                <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> Parent Pack (PDF)
-              </a>
-              <a href="/briefings/ypres_2026_parent_briefing.pptx" download="ypres_2026_parent_briefing.pptx" target="_blank" style="padding: 7px 12px; font-size: 0.8rem; font-weight: 700; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;" onmouseover="this.style.background='#dcfce7';" onmouseout="this.style.background='#f0fdf4';">
-                <i class="fa-solid fa-file-powerpoint" style="color: #ea580c;"></i> Slides (.pptx)
-              </a>
-              <button class="btn" data-action="view-lesson-detail" data-index="${prepPack.index}" style="padding: 7px 12px; font-size: 0.8rem; font-weight: 700; background: #0284c7; color: #ffffff; border: 1.5px solid #0284c7; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-                View Guide &rarr;
-              </button>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-    if (crummackHero) {
-      lessonsHTML += `
-        <div class="crummack-spotlight-card" style="margin-bottom: 25px; background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 1.5px solid #fde68a; border-left: 5px solid #d97706; border-radius: 8px; padding: 18px 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; box-sizing: border-box; max-width: 100%;">
-          <div style="flex: 1; min-width: 0; width: 100%; cursor: pointer;" data-action="view-lesson-detail" data-index="${crummackHero.index}">
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap;">
-              <span style="background: #b45309; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 10px; text-transform: uppercase;">Fieldwork Archive · Western Front</span>
-              <h3 style="margin: 0; color: #78350f; font-size: 1.18rem; font-family: 'Playfair Display', serif; word-break: break-word; overflow-wrap: break-word;">2nd Lieutenant Ernest Edward Crummack MC, DCM</h3>
-            </div>
-            <p style="margin: 0; color: #451a03; font-size: 0.88rem; line-height: 1.4; word-break: break-word; overflow-wrap: break-word;">
-              Fieldwork archive commemorating 2nd Lieutenant Ernest Edward Crummack MC, DCM, researched by the family archive researcher. Held the Boesinghe canal (Day 1 link); rescued Siegfried Sassoon's friend Marcus Goodall (Somme DCM); awarded MC breaching Hindenburg Line.
-            </p>
-          </div>
-          <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-            <button class="btn" data-action="view-lesson-detail" data-index="${crummackHero.index}" style="padding: 8px 16px; font-size: 0.82rem; font-weight: 700; background: #d97706; color: #ffffff; border: 1.5px solid #b45309; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(217, 119, 6, 0.25);">
-              <i class="fa-solid fa-medal"></i> Read Full Dossier &rarr;
-            </button>
-          </div>
-        </div>
-      `;
-    }
-
-    lessonsHTML += `
-          <div id="trip-daily-itinerary-section" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; scroll-margin-top: 80px;">
-            <h2 style="margin: 0; text-align: left; color: #0f172a; font-family: 'Playfair Display', serif; font-size: 1.35rem;">
-              <i class="fa-solid fa-calendar-check" style="color: #1e3a8a; margin-right: 8px;"></i>Daily Field Itinerary
-            </h2>
-            <span style="font-size: 0.8rem; font-family: sans-serif; font-weight: 600; background: #eff6ff; color: #1d4ed8; padding: 4px 12px; border-radius: 20px; border: 1px solid #bfdbfe;">3 Days · 1st–3rd October 2026</span>
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: left;">
-    `;
-
-    days.forEach((d, i) => {
-      const isDay1 = d.lesson && (d.lesson.id === 'day_1' || i === 0);
-      lessonsHTML += `
-          <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${d.index}" style="background: white; border: 1px solid #e2e8f0; border-top: 4px solid #1e3a8a; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.04); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.04)';">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <h3 style="margin: 0; color: #1e3a8a; font-size: 1.2rem; font-family: 'Playfair Display', serif;">Day ${i + 1}</h3>
-              <span style="font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; padding: 3px 8px; border-radius: 12px; border: 1px solid #bfdbfe;">Field Guide</span>
-            </div>
-            <p style="margin: 0; color: #334155; font-weight: 600; font-size: 0.95rem; line-height: 1.4;">${d.lesson.title.replace(/^Day \d+:\s*/, '')}</p>
-            <p style="margin: 8px 0 0 0; color: #64748b; font-size: 0.85rem; font-style: italic;">${d.lesson.enquiry || ''}</p>
-            ${
-              isDay1
-                ? `
-              <div style="margin-top: 14px; padding-top: 10px; border-top: 1px dashed #e2e8f0; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-                <span style="font-size: 0.76rem; color: #78350f; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
-                  <span style="background: #fef3c7; color: #92400e; padding: 2px 6px; border-radius: 4px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase;">Family Link</span>
-                  Boesinghe &amp; 2nd Lt Crummack
-                </span>
-                <span style="font-size: 0.75rem; color: #1e3a8a; font-weight: 700;">View &rarr;</span>
-              </div>
-            `
-                : ''
-            }
-          </div>
-      `;
-    });
-
-    lessonsHTML += `
-          </div>
-
-          <!-- Voices & Poetry of the Salient Banner -->
-          <div style="margin-top: 30px; background: #faf8f5; border: 1px solid #e7dfd5; border-left: 5px solid #7f1d1d; border-radius: 8px; padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-            <div>
-              <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; background: #fee2e2; color: #991b1b; padding: 3px 10px; border-radius: 12px;">Expedition Literature</span>
-              <h3 style="margin: 6px 0 4px 0; color: #7f1d1d; font-size: 1.25rem; font-family: 'Playfair Display', serif;">Voices &amp; Poetry of the Salient</h3>
-              <p style="margin: 0; color: #475569; font-size: 0.9rem; max-width: 600px;">16 unabridged poems by 12 First World War soldier-poets across our 11 expedition stops, including McCrae, Owen, Sassoon, Rosenberg, Sorley, and Brittain.</p>
-            </div>
-            <button class="btn" data-action="open-anthology-modal" style="padding: 10px 18px; font-size: 0.9rem; font-weight: 700; background: #7f1d1d; color: white; border: none; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 5px rgba(127, 29, 29, 0.25); transition: background 0.2s;" onmouseover="this.style.background='#991b1b';" onmouseout="this.style.background='#7f1d1d';">
-              Browse 16-Poem Anthology &rarr;
-            </button>
-          </div>
-        </div>
-
-        <!-- Tab 2: Village Fallen & Memorials -->
-        <div id="trip-panel-fallen" style="display: none; scroll-margin-top: 80px;">
-          <div style="margin-bottom: 25px;">
-            <h2 style="margin: 0 0 6px 0; text-align: left; color: #991b1b; font-family: 'Playfair Display', serif; font-size: 1.35rem;">
-              The Fallen: Local Heroes of the Salient
-            </h2>
-            <p style="color: #475569; font-size: 0.95rem; margin: 0; line-height: 1.5;">
-              During our 3-day tour, pupils will locate these young men from our home villages (Stubbington, Chark, Lee-on-the-Solent) who died in the Ypres Salient. They are commemorated on the physical memorial panels visited during Days 1, 2, and 3.
-            </p>
-          </div>
-
-          <!-- Crofton Parish Memorial Tablet Spotlight -->
-          <div style="background: #fdfaf6; border: 1.5px solid #dcd3c6; border-radius: 10px; padding: 20px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; box-shadow: 0 2px 6px rgba(0,0,0,0.04); margin-bottom: 25px;">
-            <div style="flex: 0 0 160px; text-align: center;">
-              <img src="/images/stubbington_memorial_2.jpg" alt="Crofton Parish Memorial Tablet" style="max-width: 100%; border-radius: 6px; border: 1px solid #cbd5e1; cursor: zoom-in; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-action="open-modal" data-src="/images/stubbington_memorial_2.jpg">
-              <small style="display: block; margin-top: 5px; color: #78350f; font-weight: 600; font-size: 0.78rem;">Holy Rood Church, Stubbington</small>
-            </div>
-            <div style="flex: 1; min-width: 250px;">
-              <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; background: #fef3c7; color: #92400e; padding: 3px 9px; border-radius: 12px;">The Home Link</span>
-              <h4 style="margin: 6px 0 8px 0; color: #1e3a8a; font-size: 1.15rem; font-family: 'Playfair Display', serif;">The Crofton Parish Memorial Tablet</h4>
-              <p style="margin: 0; color: #475569; font-size: 0.9rem; line-height: 1.5;">
-                Every one of our six Salient fallen—along with the three Lowry brothers—is carved side-by-side into this marble tablet in Holy Rood Church. On this tour, our mission is to trace their names from our home village to the great memorial walls of Flanders.
-              </p>
-            </div>
-          </div>
-
-          <!-- Stubbington War Memorial Lychgate - 4 Sides Showcase -->
-          <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); margin-bottom: 30px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
-              <div>
-                <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; background: #fee2e2; color: #991b1b; padding: 3px 9px; border-radius: 12px;">Village Memorial Heritage</span>
-                <h4 style="margin: 6px 0 0 0; color: #0f172a; font-size: 1.15rem; font-family: 'Playfair Display', serif;">The Stubbington War Memorial Lychgate (All 4 Sides)</h4>
-              </div>
-              <span style="font-size: 0.8rem; color: #64748b; font-style: italic;">Carved oak tie-beams commemorating the parish dead · Click any photo to zoom</span>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
-              <div style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                <div style="height: 110px; overflow: hidden; background: #0f172a; cursor: zoom-in;" data-action="open-modal" data-src="/images/stubbington_names_4.jpg">
-                  <img src="/images/stubbington_names_4.jpg" alt="West Beam: Adams to Franklin" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
-                </div>
-                <div style="padding: 10px; font-size: 0.82rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                  <div>
-                    <strong style="color: #1e3a8a; display: block; font-size: 0.88rem;">Side 1 (West Beam)</strong>
-                    <span style="color: #475569; display: block; margin-top: 3px;">Adams · Ayling · Franklin</span>
-                  </div>
-                  <span style="display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 700; color: #1d4ed8; background: #eff6ff; padding: 2px 6px; border-radius: 4px; align-self: flex-start;">Day 2 · Menin Gate</span>
-                </div>
-              </div>
-              <div style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                <div style="height: 110px; overflow: hidden; background: #0f172a; cursor: zoom-in;" data-action="open-modal" data-src="/images/stubbington_names_1.jpg">
-                  <img src="/images/stubbington_names_1.jpg" alt="East Beam: Muckett to Smith" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
-                </div>
-                <div style="padding: 10px; font-size: 0.82rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                  <div>
-                    <strong style="color: #1e3a8a; display: block; font-size: 0.88rem;">Side 2 (East Beam)</strong>
-                    <span style="color: #475569; display: block; margin-top: 3px;">Muckett · Rye · Smith</span>
-                  </div>
-                  <span style="display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 700; color: #b91c1c; background: #fef2f2; padding: 2px 6px; border-radius: 4px; align-self: flex-start;">Day 2 · Tyne Cot</span>
-                </div>
-              </div>
-              <div style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                <div style="height: 110px; overflow: hidden; background: #0f172a; cursor: zoom-in;" data-action="open-modal" data-src="/images/stubbington_names_2.jpg">
-                  <img src="/images/stubbington_names_2.jpg" alt="South Beam: Warland to Wells" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
-                </div>
-                <div style="padding: 10px; font-size: 0.82rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                  <div>
-                    <strong style="color: #1e3a8a; display: block; font-size: 0.88rem;">Side 3 (South Beam)</strong>
-                    <span style="color: #475569; display: block; margin-top: 3px;">Warland · Ward · Wells</span>
-                  </div>
-                  <span style="display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 700; color: #047857; background: #ecfdf5; padding: 2px 6px; border-radius: 4px; align-self: flex-start;">Day 2 · Tyne Cot</span>
-                </div>
-              </div>
-              <div style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                <div style="height: 110px; overflow: hidden; background: #0f172a; cursor: zoom-in;" data-action="open-modal" data-src="/images/stubbington_names_3.jpg">
-                  <img src="/images/stubbington_names_3.jpg" alt="North Beam: Lowry Brothers & Halahan" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
-                </div>
-                <div style="padding: 10px; font-size: 0.82rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                  <div>
-                    <strong style="color: #1e3a8a; display: block; font-size: 0.88rem;">Side 4 (North Beam)</strong>
-                    <span style="color: #475569; display: block; margin-top: 3px;">Lowry Brothers · Halahan · King</span>
-                  </div>
-                  <span style="display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 700; color: #7c3aed; background: #f5f3ff; padding: 2px 6px; border-radius: 4px; align-self: flex-start;">Tour Hub &amp; Pre-Trip</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Menin Gate Group -->
-          <div style="margin-bottom: 30px;">
-            <div style="background: #f8fafc; border-left: 4px solid #b91c1c; padding: 12px 16px; border-radius: 4px; margin-bottom: 16px;">
-              <h4 style="margin: 0; color: #7f1d1d; font-size: 1.1rem; font-family: 'Playfair Display', serif;">
-                Ypres (Menin Gate) Memorial · Panel 35
-              </h4>
-              <span style="font-size: 0.85rem; color: #64748b;">Visited on Day 2 during the 8:00 PM Last Post Ceremony</span>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; text-align: left;">
-    `;
-
-    meninGateHeroes.forEach((h) => {
-      const heroData =
-        targetData.local_heroes?.find(
-          (lh) =>
-            lh.name.includes(h.lesson.title.split(' ')[1]) ||
-            h.lesson.title.includes(lh.name.split(' ')[lh.name.split(' ').length - 1]),
-        ) || {};
-      lessonsHTML += `
-        <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${h.index}" style="background: #fff; border: 1px solid #e2e8f0; border-left: 5px solid #ea580c; border-radius: 8px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-            <h3 style="margin: 0; color: #7f1d1d; font-size: 1.1rem; font-family: 'Playfair Display', serif;">${h.lesson.title.split('(')[0].trim()}</h3>
-            <span style="font-size: 0.75rem; font-weight: 700; background: #ffedd5; color: #c2410c; padding: 2px 8px; border-radius: 10px; white-space: nowrap;">Panel 35</span>
-          </div>
-          <p style="margin: 0 0 6px 0; color: #475569; font-size: 0.88rem; font-weight: 600;">${heroData.regiment || '1st Battalion, Hampshire Regiment'}</p>
-          <p style="margin: 0 0 8px 0; color: #64748b; font-size: 0.83rem; line-height: 1.4;">Home: ${heroData.connection || 'Local Hampshire connection'}</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px dashed #fed7aa; padding-top: 8px; font-size: 0.78rem;">
-            <span style="color: #1e3a8a; font-weight: 600;">Parish Tablet: <code>${heroData.tablet_inscription || ''}</code></span>
-            <span style="color: #c2410c; font-weight: 600;"><i class="fa-solid fa-monument"></i> Menin Gate</span>
-          </div>
-        </div>
-      `;
-    });
-
-    lessonsHTML += `
-            </div>
-          </div>
-
-          <!-- Tyne Cot Group -->
-          <div style="margin-bottom: 30px;">
-            <div style="background: #f8fafc; border-left: 4px solid #b91c1c; padding: 12px 16px; border-radius: 4px; margin-bottom: 16px;">
-              <h4 style="margin: 0; color: #7f1d1d; font-size: 1.1rem; font-family: 'Playfair Display', serif;">
-                Tyne Cot Memorial to the Missing · Passchendaele
-              </h4>
-              <span style="font-size: 0.85rem; color: #64748b;">Visited on Day 2 · Inscribed on the rear memorial wall</span>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; text-align: left;">
-    `;
-
-    tyneCotHeroes.forEach((h) => {
-      const heroData =
-        targetData.local_heroes?.find(
-          (lh) =>
-            lh.name.includes(h.lesson.title.split(' ')[1]) ||
-            h.lesson.title.includes(lh.name.split(' ')[lh.name.split(' ').length - 1]),
-        ) || {};
-      const panelLabel = h.lesson.id === 'hero_5' ? 'Panels 14–17' : 'Panels 88–90';
-      lessonsHTML += `
-        <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${h.index}" style="background: #fff; border: 1px solid #e2e8f0; border-left: 5px solid #dc2626; border-radius: 8px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-            <h3 style="margin: 0; color: #7f1d1d; font-size: 1.1rem; font-family: 'Playfair Display', serif;">${h.lesson.title.split('(')[0].trim()}</h3>
-            <span style="font-size: 0.75rem; font-weight: 700; background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 10px; white-space: nowrap;">${panelLabel}</span>
-          </div>
-          <p style="margin: 0 0 6px 0; color: #475569; font-size: 0.88rem; font-weight: 600;">${heroData.regiment || ''}</p>
-          <p style="margin: 0 0 8px 0; color: #64748b; font-size: 0.83rem; line-height: 1.4;">Home: ${heroData.connection || 'Local Hampshire connection'}</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px dashed #fecaca; padding-top: 8px; font-size: 0.78rem;">
-            <span style="color: #1e3a8a; font-weight: 600;">Parish Tablet: <code>${heroData.tablet_inscription || ''}</code></span>
-            <span style="color: #991b1b; font-weight: 600;"><i class="fa-solid fa-monument"></i> Tyne Cot Memorial</span>
-          </div>
-        </div>
-      `;
-    });
-
-    lessonsHTML += `
-            </div>
-          </div>
-    `;
-
-    // The Lowry Brothers
-    if (lowryBrothers.length > 0) {
-      lessonsHTML += `
-        <div style="margin-top: 35px; background: #fdfaf6; border: 1.5px solid #e7dfd5; border-radius: 10px; padding: 25px;">
-          <div style="border-bottom: 1.5px solid #e7dfd5; padding-bottom: 12px; margin-bottom: 18px;">
-            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; background: #fef3c7; color: #92400e; padding: 3px 9px; border-radius: 12px; display: inline-block; margin-bottom: 8px;">
-              Home Front Memorial Story
-            </span>
-            <h3 style="margin: 0 0 6px 0; color: #1e293b; font-size: 1.35rem; font-family: 'Playfair Display', serif;">
-              A Village's Sacrifice: The Lowry Brothers of Manor Way Grange
-            </h3>
-            <p style="margin: 0; color: #475569; font-size: 0.92rem; line-height: 1.5;">
-              The names of William ('Harper'), Auriol ('Eric'), and Cyril ('Patrick') Lowry are carved into the Stubbington War Memorial. While their graves and memorials lie across Gallipoli, Arras, and the Somme rather than the Ypres Salient, their story represents the devastating cost of the war on individual Hampshire families.
-            </p>
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; text-align: left;">
-      `;
-      lowryBrothers.forEach((b) => {
-        const heroData =
-          targetData.local_heroes?.find(
-            (lh) =>
-              lh.name.includes('Lowry') &&
-              ((b.lesson.id.includes('william') && lh.name.includes('William')) ||
-                (b.lesson.id.includes('auriol') && lh.name.includes('Auriol')) ||
-                (b.lesson.id.includes('cyril') && lh.name.includes('Cyril'))),
-          ) || {};
-        const theatreBadge = b.lesson.id.includes('william')
-          ? 'Gallipoli (1915)'
-          : b.lesson.id.includes('auriol')
-            ? 'Arras (1918)'
-            : 'Somme (1918)';
-        lessonsHTML += `
-          <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${b.index}" style="background: #fff; border: 1px solid #e2e8f0; border-left: 5px solid #d97706; border-radius: 8px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-              <h3 style="margin: 0; color: #92400e; font-size: 1.05rem; font-family: 'Playfair Display', serif;">${b.lesson.title.split('(')[0].trim()}</h3>
-              <span style="font-size: 0.72rem; font-weight: 700; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 10px; white-space: nowrap;">${theatreBadge}</span>
-            </div>
-            <p style="margin: 0 0 6px 0; color: #475569; font-size: 0.88rem; font-weight: 600;">${heroData.regiment || ''}</p>
-            <p style="margin: 0 0 8px 0; color: #64748b; font-size: 0.83rem; line-height: 1.4;">Home: ${heroData.connection || 'Manor Way Grange, Lee-on-the-Solent'}</p>
-            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px dashed #fed7aa; padding-top: 8px; font-size: 0.78rem;">
-              <span style="color: #1e3a8a; font-weight: 600;">Tablet: <code>${heroData.tablet_inscription || ''}</code></span>
-              <span style="color: #64748b; font-style: italic;">${(heroData.memorial || '').split(',')[0]}</span>
-            </div>
-          </div>
-        `;
-      });
-      lessonsHTML += `
-          </div>
-        </div>
-      `;
-    }
-
-    // Pupil Family Hero Showcase in Village Fallen tab
-    if (crummackHero) {
-      lessonsHTML += `
-        <div style="margin-top: 35px; background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 10px; padding: 25px;">
-          <div style="border-bottom: 1.5px solid #fde68a; padding-bottom: 12px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-            <div>
-              <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: #fbbf24; color: #78350f; padding: 3px 10px; border-radius: 12px; display: inline-block; margin-bottom: 8px;">
-                Fieldwork Archive · Western Front
-              </span>
-              <h3 style="margin: 0 0 6px 0; color: #78350f; font-size: 1.35rem; font-family: 'Playfair Display', serif;">
-                Archival Case Study: 2nd Lieutenant Ernest Edward Crummack MC, DCM
-              </h3>
-              <p style="margin: 0; color: #451a03; font-size: 0.92rem; line-height: 1.5;">
-                Commemorating 2nd Lieutenant Ernest Edward Crummack MC, DCM. Researched by the family archive researcher and generously shared with our study archive. A South Yorkshire hero who rose through the ranks to win the DCM, the Russian Medal of St George, and the Military Cross.
-              </p>
-            </div>
-            <button class="btn" data-action="view-lesson-detail" data-index="${crummackHero.index}" style="padding: 9px 18px; font-size: 0.85rem; font-weight: 700; background: #d97706; color: #ffffff; border: 1.5px solid #b45309; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(217, 119, 6, 0.25);">
-              <i class="fa-solid fa-book-open"></i> Open Full Dossier &amp; Archive &rarr;
-            </button>
-          </div>
-
-          <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${crummackHero.index}" style="background: #fff; border: 1.5px solid #fde68a; border-left: 5px solid #d97706; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
-              <div style="flex: 0 0 110px; text-align: center;">
-                <img src="/images/crummack/portrait_sgt_ernest_crummack_1916.jpg" alt="Ernest Crummack" style="width: 100%; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-              </div>
-              <div style="flex: 1; min-width: 250px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;">
-                  <h4 style="margin: 0; color: #78350f; font-size: 1.15rem; font-family: 'Playfair Display', serif;">2nd Lieutenant Ernest Edward Crummack MC, DCM</h4>
-                  <span style="font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; padding: 3px 9px; border-radius: 10px; border: 1px solid #fde68a;">Survived (1888–1968)</span>
-                </div>
-                <p style="margin: 0 0 6px 0; color: #475569; font-size: 0.88rem; font-weight: 600;">1/5th &amp; 2/4th Battalions, York and Lancaster Regiment (49th &amp; 62nd Divisions)</p>
-                <p style="margin: 0 0 10px 0; color: #334155; font-size: 0.85rem; line-height: 1.4;">
-                  Held the Yser Canal at Boesinghe under the first German phosgene gas attacks (1915); awarded the DCM and Russian Medal of St George for crawling under heavy machine-gun fire at Thiepval Wood to rescue 2nd Lt Marcus Goodall (friend of poet Siegfried Sassoon); commissioned from the ranks and awarded the Military Cross breaching the Hindenburg Line at the Canal du Nord (1918).
-                </p>
-                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px dashed #fde68a; padding-top: 10px; font-size: 0.8rem;">
-                  <span style="color: #92400e; font-weight: 700;"><i class="fa-solid fa-award" style="color: #d97706; margin-right: 4px;"></i> MC, DCM, Russian Medal of St George (2nd Class, Gold)</span>
-                  <span style="color: #1e3a8a; font-weight: 700;"><i class="fa-solid fa-graduation-cap" style="color: #2563eb; margin-right: 4px;"></i> Year 10 Family Archive</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-    lessonsHTML += `
-        </div>
-    `;
-
-    // Tab 3: Dedicated Pupil Family Hero Panel
-    if (crummackHero) {
-      lessonsHTML += `
-        <div id="trip-panel-crummack" style="display: none; scroll-margin-top: 80px;">
-          <div style="background: linear-gradient(135deg, #fefce8 0%, #fffbeb 50%, #fef3c7 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 28px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.15); margin-bottom: 25px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; border-bottom: 1.5px dashed #d97706; padding-bottom: 16px; margin-bottom: 20px;">
-              <div>
-                <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: #fbbf24; color: #78350f; padding: 3px 10px; border-radius: 12px; display: inline-block; margin-bottom: 8px;">
-                  Pupil Family Archive · Year 10
-                </span>
-                <h3 style="margin: 0 0 6px 0; color: #78350f; font-size: 1.6rem; font-family: 'Playfair Display', serif;">
-                  2nd Lieutenant Ernest Edward Crummack MC, DCM
-                </h3>
-                <p style="margin: 0; color: #451a03; font-size: 0.95rem; line-height: 1.5;">
-                  The Great War Odyssey of a South Yorkshire Ironworker: From the Poison Gas of Boesinghe and Thiepval Wood to the Hindenburg Line.
-                </p>
-              </div>
-              <button class="btn" data-action="view-lesson-detail" data-index="${crummackHero.index}" style="padding: 10px 22px; font-size: 0.92rem; font-weight: 700; background: #d97706; color: #ffffff; border: 1.5px solid #b45309; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(217, 119, 6, 0.3);">
-                <i class="fa-solid fa-book-open"></i> Read Full Illustrated Dossier &rarr;
-              </button>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 22px;">
-              <div style="background: white; border: 1px solid #fde68a; border-radius: 10px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-                <h4 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 1.05rem; font-family: 'Playfair Display', serif;">
-                  <i class="fa-solid fa-users" style="color: #2563eb; margin-right: 6px;"></i> Primary Archival Custodianship
-                </h4>
-                <p style="margin: 0 0 10px 0; color: #334155; font-size: 0.88rem; line-height: 1.5;">
-                  Researched and compiled by the family archive researcher. Generously shared with our study archive in living remembrance of <strong>2nd Lt Ernest Crummack MC, DCM</strong>.
-                </p>
-                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px; font-size: 0.8rem; color: #475569; line-height: 1.6;">
-                  <strong>Medals &amp; Custodianship:</strong> Original gallantry medal group preserved and on permanent display at the York and Lancaster Regimental Museum at Clifton Park, Rotherham.
-                </div>
-              </div>
-
-              <div style="background: white; border: 1px solid #fde68a; border-radius: 10px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-                <h4 style="margin: 0 0 10px 0; color: #92400e; font-size: 1.05rem; font-family: 'Playfair Display', serif;">
-                  <i class="fa-solid fa-feather-pointed" style="color: #d97706; margin-right: 6px;"></i> The Siegfried Sassoon Connection
-                </h4>
-                <p style="margin: 0; color: #334155; font-size: 0.88rem; line-height: 1.5;">
-                  On 3 July 1916 at Thiepval Wood, Sergeant Crummack crawled into No Man's Land under heavy machine-gun fire to rescue wounded officer <strong>2nd Lt Marcus Goodall</strong>, earning the DCM and Russian Medal of St George (Second Class, Gold). The family archive researcher's work confirmed Goodall was the beloved close friend of Great War poet <strong>Siegfried Sassoon</strong>, who wrote an elegy for him.
-                </p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; align-items: center; text-align: center;">
-              <div style="flex: 1; min-width: 180px; max-width: 220px; background: white; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; cursor: pointer;" data-action="view-lesson-detail" data-index="${crummackHero.index}">
-                <img src="/images/crummack/portrait_sgt_ernest_crummack_1916.jpg" alt="Ernest Crummack 1916" style="width: 100%; height: 140px; object-fit: cover; border-radius: 6px;">
-                <small style="display: block; margin-top: 6px; font-weight: 600; color: #1e3a8a; font-size: 0.78rem;">Sgt Crummack (Somme 1916)</small>
-              </div>
-              <div style="flex: 1; min-width: 180px; max-width: 220px; background: white; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; cursor: pointer;" data-action="view-lesson-detail" data-index="${crummackHero.index}">
-                <img src="/images/crummack/portrait_2nd_lt_ernest_crummack.jpg" alt="2nd Lt Crummack 1918" style="width: 100%; height: 140px; object-fit: cover; border-radius: 6px;">
-                <small style="display: block; margin-top: 6px; font-weight: 600; color: #1e3a8a; font-size: 0.78rem;">2nd Lt Crummack (Commissioned 1918)</small>
-              </div>
-              <div style="flex: 1; min-width: 180px; max-width: 220px; background: white; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; cursor: pointer;" data-action="view-lesson-detail" data-index="${crummackHero.index}">
-                <img src="/images/crummack/crummack_medals_display.jpg" alt="Six Medals" style="width: 100%; height: 140px; object-fit: cover; border-radius: 6px;">
-                <small style="display: block; margin-top: 6px; font-weight: 600; color: #1e3a8a; font-size: 0.78rem;">Original Mounted 6 Medals</small>
-              </div>
-              <div style="flex: 1; min-width: 180px; max-width: 220px; background: white; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; cursor: pointer;" data-action="view-lesson-detail" data-index="${crummackHero.index}">
-                <img src="/images/crummack/map_ypres_boesinghe_1915.jpg" alt="Boesinghe Map" style="width: 100%; height: 140px; object-fit: cover; border-radius: 6px;">
-                <small style="display: block; margin-top: 6px; font-weight: 600; color: #1e3a8a; font-size: 0.78rem;">Boesinghe Canal Map (1915)</small>
-              </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 22px;">
-              <button class="btn" data-action="view-lesson-detail" data-index="${crummackHero.index}" style="padding: 12px 28px; font-size: 1rem; font-weight: 700; background: #1e3a8a; color: #ffffff; border: 1.5px solid #1e3a8a; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(30, 58, 138, 0.25);">
-                <i class="fa-solid fa-book-open"></i> Open Complete Illustrated Dossier &amp; Pupil Tasks &rarr;
-              </button>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-    lessonsHTML += `
-      </div>
-    `;
-
-    return lessonsHTML;
   } else {
     const isKs2UnitCards =
       unitData?.id === 'ks2_ww2' ||
       currentUnitId === 'ks2_ww2' ||
       Boolean(unitData?.is_ks2) ||
       Boolean(currentUnitData && currentUnitData.id === 'ks2_ww2');
-    lessonsHTML =
-      `<h2 style="font-family: 'Playfair Display', serif; color: #1a237e; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 40px; margin-bottom: 24px;">${isKs2UnitCards ? 'Enquiry Lessons (1–11)' : 'Key Topic Lessons'}</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; text-align: left;">`;
+    const totalLessonsCount = Array.isArray(unitData.lessons) ? unitData.lessons.length : 0;
+    lessonsHTML +=
+      `<h2 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-top: 22px; margin-bottom: 16px;">${isKs2UnitCards ? `Enquiry Lessons (1–${totalLessonsCount || 11})` : `Enquiry Lessons (${totalLessonsCount})`}</h2><div class="compact-lessons-grid">`;
     if (unitData.lessons) {
       unitData.lessons.forEach((lesson, index) => {
-        let cardBadge = `Lesson ${index + 1}`;
-        if (lesson.id === 'hero_crummack') {
-          cardBadge = 'Pupil Family Archive';
-        } else if (lesson.id && lesson.id.startsWith('hero_')) {
-          cardBadge = 'Local Hero';
-        } else if (lesson.id === 'day_0') {
-          cardBadge = 'Pre-Trip';
-        } else if (lesson.id && lesson.id.startsWith('day_')) {
-          cardBadge = `Day ${lesson.id.split('_')[1]}`;
-        }
+        const cardBadge = `Lesson ${index + 1}`;
+        const overlayBadge = `LESSON ${index + 1}`;
 
         let candidateImg = resolveLessonCardImage(lesson);
 
@@ -1226,16 +658,19 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           const useCoverFit = Boolean(lesson.card_image) || isKs2UnitCards;
 
           topMediaHTML = `
-            <div style="position: relative; width: 100%; height: 175px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
-              ${useCoverFit ? '' : `<div style="position: absolute; top: -12px; left: -12px; right: -12px; bottom: -12px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
-              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));'}" />
+            <div style="position: relative; width: 100%; height: 112px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+              ${useCoverFit ? '' : `<div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(12px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
+              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 3px 10px rgba(0,0,0,0.45));'}" />
+              <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
+                ${overlayBadge}
+              </span>
             </div>
           `;
         } else {
           topMediaHTML = `
-            <div style="position: relative; width: 100%; height: 50px; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); display: flex; align-items: center; padding: 0 16px; flex-shrink: 0;">
-              <span style="background: rgba(255,255,255,0.22); color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 14px; text-transform: uppercase; letter-spacing: 0.04em;">
-                ${cardBadge}
+            <div style="position: relative; width: 100%; height: 42px; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); display: flex; align-items: center; padding: 0 12px; flex-shrink: 0;">
+              <span style="background: rgba(255,255,255,0.22); color: #ffffff; font-size: 0.68rem; font-weight: 800; padding: 2.5px 9px; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.04em;">
+                ${overlayBadge}
               </span>
             </div>
           `;
@@ -1247,20 +682,40 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
         const displayEnquiry = getLessonEnquiryQuestion(lesson);
 
         lessonsHTML += `
-          <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${index}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s; display: flex; flex-direction: column;">
+          <div class="homepage-lesson-card" data-action="view-lesson-detail" data-index="${index}" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 3.5px solid #2563eb; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(15,23,42,0.05); cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 18px rgba(15,23,42,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(15,23,42,0.05)';">
             ${topMediaHTML}
-            <div style="padding: 16px 18px 20px 18px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; gap: 8px;">
+            <div style="padding: 11px 13px 13px 13px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; gap: 6px;">
               <div>
-                <div style="font-size: 0.75rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px;">
-                  ${cardBadge}
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; gap: 6px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.04em;">
+                    ${cardBadge}
+                  </span>
+                  ${(() => {
+                    const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(currentUnitId, lesson.id || index) : 0;
+                    if (!cnt || cnt === 0) return '';
+                    const items = typeof window !== 'undefined' && window.getLessonInfographicsSync ? window.getLessonInfographicsSync(currentUnitId, lesson.id || index) : [];
+                    const posterItems = Array.isArray(items) ? items.filter(it => it && it.image && it.image.trim().length > 0) : [];
+                    if (posterItems.length > 0) {
+                      const label = posterItems.length > 1 ? `Infographics (${posterItems.length})` : 'Infographic';
+                      return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}');}" title="Open Lesson Infographic" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-image" style="font-size: 0.65rem;"></i> <span>${label}</span></button>`;
+                    }
+                    const storyItems = Array.isArray(items) ? items.filter(it => it && it.type === 'visual_story_sheet' && it.interactiveUrl) : [];
+                    if (storyItems.length > 0) {
+                      return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open 1-Page Visual Story Sheet with Studio Voice" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-diagram-project" style="font-size: 0.63rem; color: #d97706;"></i> <span>Story Sheet</span></button>`;
+                    }
+                    if (isKs2UnitCards && items && items.some(it => it.interactiveUrl)) {
+                      return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || index}', '${currentUnitId}', { initialMode: 'interactive' });}" title="Open Interactive Infographic" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 0.65rem; color: #d97706;"></i> <span>Infographic</span></button>`;
+                    }
+                    return '';
+                  })()}
                 </div>
-                <h3 style="margin: 0 0 8px 0; color: #0f172a; font-size: 1.05rem; font-weight: 700; line-height: 1.35; font-family: 'Playfair Display', Georgia, serif;">
+                <h3 style="margin: 0 0 5px 0; color: #0f172a; font-size: 0.94rem; font-weight: 700; line-height: 1.3; font-family: 'Playfair Display', Georgia, serif;">
                   ${displayTitle}
                 </h3>
                 ${
                   displayEnquiry
                     ? `
-                  <p style="margin: 0; color: #475569; font-weight: 400; font-size: 0.88rem; line-height: 1.45; font-style: italic;">
+                  <p class="lesson-enquiry-clamp" style="margin: 0; color: #475569; font-weight: 400; font-size: 0.79rem; line-height: 1.38; font-style: italic;">
                     ${displayEnquiry}
                   </p>
                 `
@@ -1273,29 +728,6 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       });
     }
     lessonsHTML += '</div>';
-
-    if (
-      unitData.mock_exams &&
-      Array.isArray(unitData.mock_exams) &&
-      unitData.mock_exams.length > 0
-    ) {
-      lessonsHTML +=
-        '<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Mock Exams</h2>';
-      lessonsHTML +=
-        '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; text-align: left;">';
-      unitData.mock_exams.forEach((mock) => {
-        const mockUrl = currentUnitId ? `/units/${currentUnitId}/${mock.url}` : mock.url;
-        lessonsHTML += `
-          <div class="homepage-lesson-card" style="background: #fdf2f8; border: 2px dashed #db2777; border-radius: 8px; padding: 15px; text-align: center; cursor: pointer; transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: center; align-items: center;" data-action="open-link" data-url="${mockUrl}" onmouseover="this.style.background='white'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.1)';" onmouseout="this.style.background='#fdf2f8'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <i class="fa-solid fa-file-signature fa-2x" style="color: #db2777; margin-bottom: 10px;"></i>
-            <h3 style="margin: 0; color: #334155; font-size: 0.9rem;">${mock.title}</h3>
-          </div>
-        `;
-      });
-      lessonsHTML += '</div>';
-    }
-
-    // Removed legacy PDF Materials rendering
   }
 
   return lessonsHTML;

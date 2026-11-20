@@ -1,4 +1,4 @@
-window.cold_war_data = {
+export default {
   "id": "cold_war",
   "title": "The Cold War & Global Flashpoints (1945–1991)",
   "enquiry": "Superpower Relations and the Cold War: How did ideological rivalry divide the globe on the brink of nuclear destruction?",
@@ -1887,7 +1887,117 @@ window.cold_war_data = {
           "question": "Using paragraph [1.5], how did President Harry S. Truman change the dynamic at the Potsdam Conference in July 1945?",
           "answer": "Truman adopted a much more aggressive, suspicious stance toward Stalin following the successful Trinity atomic bomb test."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "cold_war_l01_visual_story_sheet",
+        "ktBadge": "Key Topic 1 • Ideology",
+        "datesBadge": "1917 – 1946",
+        "topicLabel": "Enquiry 01: Ideological Clash — Capitalism vs Communism (1917–1946)",
+        "title": "Why Could Capitalism and Communism Never Peacefully Coexist?",
+        "spokenTitle": "Why could Capitalism and Communism never peacefully coexist?",
+        "thumbUrl": "/images/cold_war/reichstag_soviet_flag_1945.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "Rival Politics",
+          "Bitter Memories",
+          "Atomic Monopoly",
+          "Ruined Europe",
+          "Bipolar Deadlock"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Two Rival Economic Worlds",
+            "date": "1917–1945",
+            "img": "/images/cold_war/stalin_bolshoi_speech_1946.jpg",
+            "mode": "contain-light",
+            "stat": "Private Free Markets vs Moscow State Planning",
+            "html": "After 1945, two giants rose above ruined Europe. America backed <strong>free-market capitalism</strong> and private wealth, while the USSR abolished private property under <strong>state-planned socialism</strong>.",
+            "spoken": "Why could Capitalism and Communism never peacefully coexist? <short pause> After 1945, two giants rose above ruined Europe. America backed free-market capitalism and private wealth, while the USSR abolished private property under state-planned socialism .",
+            "paired_prose_hash": "ce858b081b",
+            "connective": "Why could Capitalism and Communism never peacefully coexist?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Democracy vs One-Party Rule",
+            "date": "1920s–1930s",
+            "img": "/images/cold_war/vladimir_lenin_speech_1920.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Free Multi-Party Votes vs Politburo Dictatorship",
+            "html": "Politics widened the gulf. Americans prized <strong>multi-party democracy</strong> and a free press, whereas the Communist Party <strong>Politburo</strong> ruled the USSR as a <strong>one-party dictatorship</strong>.",
+            "spoken": "Competing political systems sharpened this economic divide. <short pause> Politics widened the gulf. Americans prized multi-party democracy and a free press, whereas the Communist Party Politburo ruled the USSR as a one-party dictatorship .",
+            "paired_prose_hash": "2fa56c4cf1",
+            "connective": "Competing political systems sharpened this economic divide."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Decades of Bitter Distrust",
+            "date": "1918–1939",
+            "img": "/images/cold_war/molotov_ribbentrop_pact_1939.jpg",
+            "mode": "contain",
+            "stat": "Aug 1939: Nazi-Soviet Pact Divides Poland",
+            "html": "Old wounds ran deep. Stalin resented Western troops aiding White armies after the <strong>1917 Revolution</strong>, while the West hated Stalin’s 1939 <strong>Nazi-Soviet Pact</strong> dividing <strong>Poland</strong> with Hitler.",
+            "spoken": "Decades of pre-war betrayal poisoned trust further. <short pause> Old wounds ran deep. Stalin resented Western troops aiding White armies after the 1917 Revolution , while the West hated Stalin’s 1939 Nazi-Soviet Pact dividing Poland with Hitler.",
+            "paired_prose_hash": "e0c89e8236",
+            "connective": "Decades of pre-war betrayal poisoned trust further."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "America’s Nuclear Monopoly",
+            "date": "July–Aug 1945",
+            "img": "/images/cold_war/hiroshima_atomic_cloud_1945.jpg",
+            "mode": "contain",
+            "stat": "Aug 1945: Hiroshima Sparks Nuclear Arms Race",
+            "html": "When <strong>President Truman</strong> dropped atomic bombs on <strong>Hiroshima and Nagasaki</strong> in August 1945, Stalin saw America’s <strong>nuclear monopoly</strong> as blackmail and rushed to build a Soviet bomb.",
+            "spoken": "Then atomic weapons raised the stakes overnight. <short pause> When President Truman dropped atomic bombs on Hiroshima and Nagasaki in August 1945, Stalin saw America’s nuclear monopoly as blackmail and rushed to build a Soviet bomb.",
+            "paired_prose_hash": "081bca1aeb",
+            "connective": "Then atomic weapons raised the stakes overnight."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Power Vacuum in Ruined Europe",
+            "date": "1945–1946",
+            "img": "/images/cold_war/reichstag_soviet_flag_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Red Army & Western Allies Meet Along the Elbe",
+            "html": "Meeting along the <strong>River Elbe</strong>, the <strong>Red Army</strong> and Western Allies faced off across shattered Europe. Each side misread the other’s security moves, creating a <strong>bipolar rivalry</strong>.",
+            "spoken": "Across ruined Europe, wartime allies stood face to face. <short pause> Meeting along the River Elbe , the Red Army and Western Allies faced off across shattered Europe. Each side misread the other’s security moves, creating a bipolar rivalry .",
+            "paired_prose_hash": "c818d2af4d",
+            "connective": "Across ruined Europe, wartime allies stood face to face."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Peace Impossible, War Unlikely",
+            "date": "By Early 1946",
+            "img": "/images/cold_war/illingworth_iron_curtain_1946.jpg",
+            "mode": "contain-light",
+            "stat": "Two Armed Superpowers Lock Europe in Deadlock",
+            "html": "With Hitler gone, clashing <strong>ideologies</strong>, bitter memories, and <strong>atomic fear</strong> split Europe into rival East and West spheres—where open peace proved impossible yet <strong>total war</strong> risked ruin.",
+            "spoken": "The wartime partnership froze into Cold War deadlock. <short pause> With Hitler gone, clashing ideologies , bitter memories, and atomic fear split Europe into rival East and West spheres, where open peace proved impossible yet total war risked ruin.",
+            "connective": "The wartime partnership froze into Cold War deadlock."
+          }
+        ],
+        "takeaway": "Clashing capitalist and communist systems, pre-war betrayals, and atomic fear turned wartime allies into rival superpowers across ruined Europe.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Clashing capitalist and communist systems, pre-war betrayals, and atomic fear turned wartime allies into rival superpowers across ruined Europe.",
+        "vocab": [
+          [
+            "1. Capitalism",
+            "Economic system built on private business, open trade, and individual profit."
+          ],
+          [
+            "2. Communism",
+            "One-party system abolishing private property for state-planned production."
+          ],
+          [
+            "3. Nuclear Monopoly",
+            "Exclusive US possession of atomic weapons from 1945 until Moscow’s 1949 test."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2",
@@ -3564,7 +3674,119 @@ window.cold_war_data = {
           "question": "Using paragraph [2.5], when did the Soviet Union successfully detonate its first atomic bomb (First Lightning)?",
           "answer": "August 1949, shattering America's nuclear monopoly years ahead of Western intelligence estimates."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "cold_war_l02_visual_story_sheet",
+        "ktBadge": "Key Topic 1 • Summits",
+        "datesBadge": "Feb – Aug 1945",
+        "topicLabel": "Enquiry 02: From Yalta to Potsdam — Wartime Allies to Rivals (1945)",
+        "title": "How Did Wartime Allies Turn Into Bitter Rivals in 1945?",
+        "spokenTitle": "How did wartime allies turn into bitter rivals in 1945?",
+        "thumbUrl": "/images/cold_war/yalta_conference_1945.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "Polish Dispute",
+          "New Leaders",
+          "Atomic Secret",
+          "Reparations Row",
+          "Alliance Broken"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Fragile Compromise at Yalta",
+            "date": "Feb 1945",
+            "img": "/images/cold_war/yalta_conference_1945.jpg",
+            "mode": "contain",
+            "stat": "Germany & Berlin Split Into 4 Allied Zones",
+            "html": "At <strong>Yalta</strong> in February 1945, Roosevelt, Churchill, and Stalin agreed to split defeated Germany and Berlin into <strong>four occupation zones</strong>, launch the <strong>United Nations</strong>, and fight Japan.",
+            "spoken": "How did wartime allies turn into bitter rivals in 1945? <short pause> At Yalta in February 1945, Roosevelt, Churchill, and Stalin agreed to split defeated Germany and Berlin into four occupation zones , launch the United Nations , and fight Japan.",
+            "paired_prose_hash": "4f8b0e5569",
+            "connective": "How did wartime allies turn into bitter rivals in 1945?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Broken Promises Over Poland",
+            "date": "Feb–Mar 1945",
+            "img": "/images/cold_war/yalta_agreement_document_1945.png",
+            "mode": "contain-light",
+            "stat": "27 Million Soviet Dead Drive Buffer-Zone Demand",
+            "html": "After losing <strong>27 million people</strong>, Stalin wanted a friendly Polish <strong>buffer zone</strong>. Despite promising free elections, he installed the communist <strong>Lublin Government</strong> and sidelined London Poles.",
+            "spoken": "Beneath polite smiles lay a bitter clash over Poland. <short pause> After losing 27 million people , Stalin wanted a friendly Polish buffer zone . Despite promising free elections, he installed the communist Lublin Government and sidelined London Poles.",
+            "paired_prose_hash": "0e219c02b3",
+            "connective": "Beneath polite smiles lay a bitter clash over Poland."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "New Leaders Clash at Potsdam",
+            "date": "July 1945",
+            "img": "/images/cold_war/potsdam_conference_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Truman & Attlee Replace Roosevelt & Churchill",
+            "html": "By the <strong>Potsdam Conference</strong> in July 1945, Roosevelt had died and tough anti-communist <strong>Harry S. Truman</strong> led America, while <strong>Clement Attlee</strong> replaced Churchill opposite Stalin.",
+            "spoken": "By July, new leaders brought a far tougher mood. <short pause> By the Potsdam Conference in July 1945, Roosevelt had died and tough anti-communist Harry S. Truman led America, while Clement Attlee replaced Churchill opposite Stalin.",
+            "paired_prose_hash": "a79e029e06",
+            "connective": "By July, new leaders brought a far tougher mood."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Truman’s Atomic Leverage",
+            "date": "16–24 July 1945",
+            "img": "/images/cold_war/truman_molotov_potsdam_1945.png",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Trinity Test Sparks Atomic Diplomacy at Potsdam",
+            "html": "Backed by the secret <strong>Trinity nuclear test</strong> on 16 July, <strong>Truman</strong> warned Stalin of a powerful new weapon. Briefed by spies, <strong>Stalin</strong> felt Washington was trying to bully Moscow.",
+            "spoken": "A secret desert explosion hardened American diplomacy at Potsdam. <short pause> Backed by the secret Trinity nuclear test on the sixteenth of July, Truman warned Stalin of a powerful new weapon. Briefed by spies, Stalin felt Washington was trying to bully Moscow.",
+            "paired_prose_hash": "4394b59269",
+            "connective": "A secret desert explosion hardened American diplomacy at Potsdam."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Clash Over German Reparations",
+            "date": "July–Aug 1945",
+            "img": "/images/cold_war/berlin_ruins_brandenburg_gate_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Stalin’s $20 Billion Reparations Demand Rejected",
+            "html": "Stalin demanded <strong>$20 billion</strong> in German <strong>reparations</strong> to rebuild western Russia. Truman and Attlee refused, agreeing instead that each power would take resources mainly from <strong>its own zone</strong>.",
+            "spoken": "Meanwhile, fierce arguments erupted over how Germany should pay. <short pause> Stalin demanded 20 dollars billion in German reparations to rebuild western Russia. Truman and Attlee refused, agreeing instead that each power would take resources mainly from its own zone .",
+            "paired_prose_hash": "2e776e8e5f",
+            "connective": "Meanwhile, fierce arguments erupted over how Germany should pay."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "The Grand Alliance Collapses",
+            "date": "Late 1945",
+            "img": "/images/cold_war/potsdam_terrace_allies_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "Rival Spheres of Influence Harden Across Europe",
+            "html": "Once Nazi Germany fell, disputes over <strong>Polish elections</strong>, German reparations, and <strong>atomic diplomacy</strong> killed the wartime <strong>Grand Alliance</strong> and split Europe into rival spheres.",
+            "spoken": "Within six months, the wartime alliance was effectively dead. <short pause> Once Nazi Germany fell, disputes over Polish elections , German reparations, and atomic diplomacy killed the wartime Grand Alliance and split Europe into rival spheres.",
+            "connective": "Within six months, the wartime alliance was effectively dead."
+          }
+        ],
+        "takeaway": "Between February and August 1945, Nazi defeat, leadership changes, atomic secrecy, and clashes over Poland and Germany broke the Grand Alliance.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between February and August 1945, Nazi defeat, leadership changes, atomic secrecy, and clashes over Poland and Germany broke the Grand Alliance.",
+        "vocab": [
+          [
+            "1. Buffer Zone",
+            "Friendly border states shielding the USSR against another western invasion."
+          ],
+          [
+            "2. Reparations",
+            "Money, goods, or machinery taken from defeated Germany to pay for war damage."
+          ],
+          [
+            "3. Grand Alliance",
+            "Wartime coalition of Britain, the USA, and the USSR against Nazi Germany."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3",
@@ -5303,7 +5525,117 @@ window.cold_war_data = {
           "question": "Using paragraph [3.5], what military alliance was founded by Western nations in April 1949 to deter Soviet aggression?",
           "answer": "The North Atlantic Treaty Organization (NATO), establishing collective defence (an attack on one is an attack on all)."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "cold_war_l03_visual_story_sheet",
+        "ktBadge": "Key Topic 1 • Berlin",
+        "datesBadge": "1946 – 1955",
+        "topicLabel": "Enquiry 03: The Iron Curtain & The Berlin Blockade (1946–1955)",
+        "title": "How Did the Berlin Blockade Split Europe Into Two Armed Camps?",
+        "spokenTitle": "How did the Berlin Blockade split Europe into two armed camps?",
+        "thumbUrl": "/images/cold_war/berlin_airlift_c54_tempelhof.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "US Containment",
+          "Soviet Grip",
+          "Berlin Sealed",
+          "Two Germanys",
+          "Armed Alliances"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Churchill’s Iron Curtain Speech",
+            "date": "March 1946",
+            "img": "/images/cold_war/iron_curtain_churchill_speech_page.png",
+            "mode": "contain",
+            "stat": "Salami Tactics Create Soviet Satellite States",
+            "html": "Using rigged votes and <strong>“salami tactics”</strong>, Moscow built loyal satellite states across Eastern Europe. At Fulton in March 1946, <strong>Winston Churchill</strong> warned an <strong>“iron curtain”</strong> split Europe.",
+            "spoken": "How did the Berlin Blockade split Europe into two armed camps? <short pause> Using rigged votes and “salami tactics” , Moscow built loyal satellite states across Eastern Europe. At Fulton in March 1946, Winston Churchill warned an “iron curtain” split Europe.",
+            "paired_prose_hash": "e2d37fdf47",
+            "connective": "How did the Berlin Blockade split Europe into two armed camps?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Truman Doctrine & Marshall Aid",
+            "date": "Mar–June 1947",
+            "img": "/images/cold_war/truman_doctrine_speech_1947.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Over $13 Billion Rebuilds Western Europe",
+            "html": "To protect Greece and Turkey, the <strong>Truman Doctrine</strong> pledged US aid to contain communism. Soon after, the <strong>Marshall Plan</strong> sent <strong>over $13 billion</strong> to rebuild Western Europe.",
+            "spoken": "Washington answered Soviet expansion with money and containment. <short pause> To protect Greece and Turkey, the Truman Doctrine pledged US aid to contain communism. Soon after, the Marshall Plan sent over 13 dollars billion to rebuild Western Europe.",
+            "paired_prose_hash": "c4efdb8695",
+            "connective": "Washington answered Soviet expansion with money and containment."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Cominform & The Prague Coup",
+            "date": "1947–Feb 1948",
+            "img": "/images/cold_war/marshall_plan_aid_germany_1948.jpg",
+            "mode": "contain",
+            "stat": "Stalin Bans Satellites From Taking Marshall Aid",
+            "html": "Branding US aid <strong>“dollar imperialism”</strong>, Stalin barred eastern states from taking it and founded <strong>Cominform</strong>. In February 1948, communists seized full power in the <strong>Prague Coup</strong>.",
+            "spoken": "Stalin hit back by tightening Moscow’s grip across the East. <short pause> Branding US aid “dollar imperialism” , Stalin barred eastern states from taking it and founded Cominform . In February 1948, communists seized full power in the Prague Coup .",
+            "paired_prose_hash": "0c12e4c5ff",
+            "connective": "Stalin hit back by tightening Moscow’s grip across the East."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Blockade & The Berlin Airlift",
+            "date": "1948–May 1949",
+            "img": "/images/cold_war/berlin_airlift_c54_tempelhof.jpg",
+            "mode": "contain",
+            "stat": "2.3 Million Tons Flown In Over 324 Days",
+            "html": "After the West united <strong>Trizonia</strong> and launched the Deutsche Mark, Stalin cut all land routes to West Berlin in June 1948. The <strong>Berlin Airlift</strong> flew in <strong>2.3 million tons</strong> over 324 days.",
+            "spoken": "The first Cold War showdown then erupted inside divided Berlin. <short pause> After the West united Trizonia and launched the Deutsche Mark, Stalin cut all land routes to West Berlin in June 1948. The Berlin Airlift flew in 2.3 million tons over 324 days.",
+            "paired_prose_hash": "0da743d5e4",
+            "connective": "The first Cold War showdown then erupted inside divided Berlin."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Two Germanys & Rival Alliances",
+            "date": "1949–1955",
+            "img": "/images/cold_war/nato_treaty_signing_1949.gif",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "NATO (1949) Faces the Soviet Warsaw Pact (1955)",
+            "html": "In 1949, Germany split into West Germany (<strong>FRG</strong>) and East Germany (<strong>GDR</strong>). Twelve Western nations formed <strong>NATO</strong> in 1949, and Moscow created the rival Warsaw Pact in 1955.",
+            "spoken": "Stalin’s failed blockade permanently split Germany and Europe. <short pause> In 1949, Germany split into West Germany ( FRG ) and East Germany ( GDR ). Twelve Western nations formed NATO in 1949, and Moscow created the rival Warsaw Pact in 1955.",
+            "paired_prose_hash": "8ca9624798",
+            "connective": "Stalin’s failed blockade permanently split Germany and Europe."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Europe Locked Into Armed Blocs",
+            "date": "By May 1955",
+            "img": "/images/cold_war/berlin_blockade_air_corridors_map.png",
+            "mode": "contain-light",
+            "stat": "FRG & GDR Cement Cold War Border Across Europe",
+            "html": "Stalin lifted the blockade in May 1949 without firing a shot, yet Europe now stood split behind the <strong>Iron Curtain</strong> into two rival economies, <strong>two German states</strong>, and two military alliances.",
+            "spoken": "Europe now stood divided behind heavily armed borders. <short pause> Stalin lifted the blockade in May 1949 without firing a shot, yet Europe now stood split behind the Iron Curtain into two rival economies, two German states , and two military alliances.",
+            "connective": "Europe now stood divided behind heavily armed borders."
+          }
+        ],
+        "takeaway": "US containment and Stalin’s failed 1948–49 Berlin Blockade split Germany in two and locked Europe into rival NATO and Warsaw Pact blocs.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> US containment and Stalin’s failed 1948, 49 Berlin Blockade split Germany in two and locked Europe into rival NATO and Warsaw Pact blocs.",
+        "vocab": [
+          [
+            "1. Truman Doctrine",
+            "1947 US pledge to send money and arms to stop communist takeovers abroad."
+          ],
+          [
+            "2. Marshall Plan",
+            "Over $13 billion in US economic aid sent to rebuild post-war Western Europe."
+          ],
+          [
+            "3. NATO",
+            "Western mutual defence alliance formed in April 1949 against Soviet attack."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_4",
@@ -7047,7 +7379,118 @@ window.cold_war_data = {
           "question": "Using paragraph [4.5], what secret deal ended the Cuban Missile Crisis and what safety measures were established?",
           "answer": "Khrushchev removed missiles from Cuba in return for a US pledge not to invade Cuba and a secret agreement to remove US Jupiter missiles from Turkey; the Moscow-Washington Hotline was established."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "cold_war_l04_visual_story_sheet",
+        "ktBadge": "Key Topic 2 • Crises",
+        "datesBadge": "1959 – 1963",
+        "topicLabel": "Enquiry 04: Nuclear Brinkmanship — The Cuban Missile Crisis (1959–1963)",
+        "title": "How Close Did the Cuban Missile Crisis Come to Nuclear War?",
+        "spokenTitle": "How close did the Cuban Missile Crisis come to nuclear war?",
+        "thumbUrl": "/images/cold_war/jfk_excomm_cabinet_room_1962.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "Secret Missiles",
+          "Naval Blockade",
+          "Midnight Deal",
+          "Safer Talks",
+          "Stepping Back"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Castro, Cuba & Bay of Pigs",
+            "date": "1959–Apr 1961",
+            "img": "/images/cold_war/jfk_excomm_cabinet_room_1962.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Cuba Lies Just 90 Miles Off the Florida Coast",
+            "html": "After <strong>Fidel Castro</strong> seized US businesses in Cuba, Washington cut sugar trade. When Kennedy’s CIA-backed <strong>Bay of Pigs invasion</strong> failed in April 1961, Castro sought <strong>Soviet protection</strong>.",
+            "spoken": "How close did the Cuban Missile Crisis come to nuclear war? <short pause> After Fidel Castro seized US businesses in Cuba, Washington cut sugar trade. When Kennedy’s CIA-backed Bay of Pigs invasion failed in April 1961, Castro sought Soviet protection .",
+            "paired_prose_hash": "36b9da24ae",
+            "connective": "How close did the Cuban Missile Crisis come to nuclear war?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "U-2 Spots Missiles in Cuba",
+            "date": "14 Oct 1962",
+            "img": "/images/cold_war/u2_cuba_missile_site_1962.jpg",
+            "mode": "contain",
+            "stat": "US Held a 17-to-1 Lead in Long-Range ICBMs",
+            "html": "To shield Cuba and offset America’s <strong>17-to-1 ICBM lead</strong>, Khrushchev secretly shipped nuclear missiles under <strong>Operation Anadyr</strong>. On 14 October 1962, a US <strong>U-2 spy plane</strong> photographed them.",
+            "spoken": "Khrushchev then gambled by secretly placing missiles on Cuba. <short pause> To shield Cuba and offset America’s 17-to-1 ICBM lead , Khrushchev secretly shipped nuclear missiles under Operation Anadyr . On the fourteenth of October 1962, a US U-2 spy plane photographed them.",
+            "paired_prose_hash": "bfb866a8ed",
+            "connective": "Khrushchev then gambled by secretly placing missiles on Cuba."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Naval Quarantine & DEFCON 2",
+            "date": "22–24 Oct 1962",
+            "img": "/images/cold_war/us_navy_p2_neptune_cuban_missile_1962.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "US Navy Quarantines Cuba at DEFCON 2 Alert",
+            "html": "Rejecting airstrikes that might spark war over Berlin, <strong>President Kennedy</strong> consulted <strong>ExComm</strong> and ordered a <strong>naval quarantine</strong> around Cuba on 22 October while US forces hit DEFCON 2.",
+            "spoken": "For thirteen tense days, the world stood on the brink. <short pause> Rejecting airstrikes that might spark war over Berlin, President Kennedy consulted ExComm and ordered a naval quarantine around Cuba on the twenty-second of October while US forces hit DEFCON 2.",
+            "paired_prose_hash": "60330a2f1b",
+            "connective": "For thirteen tense days, the world stood on the brink."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Black Saturday & Secret Deal",
+            "date": "26–27 Oct 1962",
+            "img": "/images/cold_war/soviet_b59_submarine_1962.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Arkhipov Stops Torpedo; Secret Turkey Swap",
+            "html": "On 27 October, submarine officer <strong>Vasili Arkhipov</strong> blocked a nuclear torpedo launch. That night, <strong>Robert Kennedy</strong> and Dobrynin traded Soviet withdrawal from Cuba for US missiles in <strong>Turkey</strong>.",
+            "spoken": "One calm naval officer and quiet diplomacy averted disaster. <short pause> On the twenty-seventh of October, submarine officer Vasili Arkhipov blocked a nuclear torpedo launch. That night, Robert Kennedy and Dobrynin traded Soviet withdrawal from Cuba for US missiles in Turkey .",
+            "paired_prose_hash": "cef1712c1a",
+            "connective": "One calm naval officer and quiet diplomacy averted disaster."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "The Hotline & Test Ban Treaty",
+            "date": "June–Aug 1963",
+            "img": "/images/cold_war/jfk_letter_khrushchev_draft_1962.jpg",
+            "mode": "contain-light",
+            "stat": "1963: Direct Hotline & Partial Test Ban Signed",
+            "html": "Shaken by near disaster, Washington and Moscow installed a direct <strong>“hotline” teletype link</strong> in June 1963 and signed the <strong>Partial Test Ban Treaty</strong> outlawing atmospheric <strong>nuclear tests</strong>.",
+            "spoken": "Shaken by how close war came, both leaders built safeguards. <short pause> Shaken by near disaster, Washington and Moscow installed a direct “hotline” teletype link in June 1963 and signed the Partial Test Ban Treaty outlawing atmospheric nuclear tests .",
+            "paired_prose_hash": "18ed6a6e07",
+            "connective": "Shaken by how close war came, both leaders built safeguards."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Saved From the Nuclear Brink",
+            "date": "1962–1963",
+            "img": "/images/cold_war/illingworth_arm_wrestle_1962.jpg",
+            "mode": "contain-light",
+            "stat": "Mutually Assured Destruction Forces Restraint",
+            "html": "Thirteen days of <strong>brinkmanship</strong> brought humanity within a hair’s breadth of nuclear war—proving that <strong>Mutually Assured Destruction</strong> required direct talks and <strong>arms control</strong>.",
+            "spoken": "Fear of mutual annihilation forced both superpowers to step back. <short pause> Thirteen days of brinkmanship brought humanity within a hair’s breadth of nuclear war, proving that Mutually Assured Destruction required direct talks and arms control .",
+            "connective": "Fear of mutual annihilation forced both superpowers to step back."
+          }
+        ],
+        "takeaway": "Soviet missiles in Cuba brought the world to DEFCON 2 in October 1962 before a secret Turkey deal led to the 1963 Hotline and Partial Test Ban.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Soviet missiles in Cuba brought the world to DEFCON 2 in October 1962 before a secret Turkey deal led to the 1963 Hotline and Partial Test Ban.",
+        "vocab": [
+          [
+            "1. Brinkmanship",
+            "Pushing a dangerous crisis to the edge of war to force rival concessions."
+          ],
+          [
+            "2. Naval Quarantine",
+            "Kennedy’s October 1962 sea blockade stopping Soviet missile ships to Cuba."
+          ],
+          [
+            "3. MAD",
+            "Mutually Assured Destruction: nuclear war would wipe out both superpowers."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_5",
@@ -8780,7 +9223,118 @@ window.cold_war_data = {
           "question": "Using paragraph [5.4], why did American military superiority fail to defeat the Vietcong in the Vietnam War?",
           "answer": "The Vietcong used asymmetric guerrilla tactics, underground tunnels, and the Ho Chi Minh Trail, while US bombing and chemical weapons alienated the peasant population."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "cold_war_l05_visual_story_sheet",
+        "ktBadge": "Global Cold War • Asia",
+        "datesBadge": "1949 – 1975",
+        "topicLabel": "Enquiry 05: Cold War Proxy Wars in Asia — Korea & Vietnam (1949–1975)",
+        "title": "Why Did the Superpowers Fight Proxy Wars in Korea and Vietnam?",
+        "spokenTitle": "Why did the superpowers fight proxy wars in Korea and Vietnam?",
+        "thumbUrl": "/images/cold_war/huey_combat_landing_vietnam.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "War in Korea",
+          "Split Vietnam",
+          "Jungle War",
+          "Tet Shock",
+          "Limits of Power"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Mao’s China, NSC-68 & Dominoes",
+            "date": "1949–Apr 1950",
+            "img": "/images/cold_war/nsc_68_frontpage_1950.gif",
+            "mode": "contain-light",
+            "stat": "NSC-68 Calls for a 4x Surge in US Arms Spending",
+            "html": "After the 1949 Soviet atom test and <strong>Mao Zedong’s victory</strong> in China, US directive <strong>NSC-68</strong> urged fourfold arms spending to stop Asian states falling under the <strong>Domino Theory</strong>.",
+            "spoken": "Why did the superpowers fight proxy wars in Korea and Vietnam? <short pause> After the 1949 Soviet atom test and Mao Zedong’s victory in China, US directive NSC-68 urged fourfold arms spending to stop Asian states falling under the Domino Theory .",
+            "paired_prose_hash": "28244a3638",
+            "connective": "Why did the superpowers fight proxy wars in Korea and Vietnam?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Stalemate in the Korean War",
+            "date": "1950–July 1953",
+            "img": "/images/cold_war/korean_war_inchon_landing_1950.jpg",
+            "mode": "landscape",
+            "pos": "center 75%",
+            "stat": "Over 3 Million Dead Along the 38th Parallel",
+            "html": "When <strong>Kim Il-sung’s</strong> North invaded South Korea in June 1950, <strong>General MacArthur’s</strong> UN troops landed at Inchon—triggering Chinese intervention and a 1953 stalemate along the <strong>38th Parallel</strong>.",
+            "spoken": "Containment soon turned into a bloody hot war in Korea. <short pause> When Kim Il-sung’s North invaded South Korea in June 1950, General MacArthur’s UN troops landed at Inchon, triggering Chinese intervention and a 1953 stalemate along the 38th Parallel .",
+            "paired_prose_hash": "5448c77f48",
+            "connective": "Containment soon turned into a bloody hot war in Korea."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Divided Vietnam & US Escalation",
+            "date": "1954–1968",
+            "img": "/images/cold_war/huey_combat_landing_vietnam.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "Over 500,000 US Soldiers Sent to Vietnam by 1968",
+            "html": "After <strong>Ho Chi Minh</strong> beat France at Dien Bien Phu in 1954, Vietnam split at the <strong>17th parallel</strong>. Following the 1964 <strong>Gulf of Tonkin incident</strong>, President Johnson sent over 500,000 US troops.",
+            "spoken": "Next, American leaders tried to hold the line in Vietnam. <short pause> After Ho Chi Minh beat France at Dien Bien Phu in 1954, Vietnam split at the 17th parallel . Following the 1964 Gulf of Tonkin incident , President Johnson sent over 500,000 US troops.",
+            "paired_prose_hash": "26ef98519f",
+            "connective": "Next, American leaders tried to hold the line in Vietnam."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Guerrilla Tunnels vs US Bombing",
+            "date": "1965–1968",
+            "img": "/images/cold_war/cu_chi_tunnel_rats_1967.jpg",
+            "mode": "contain",
+            "stat": "250 km of Underground Tunnels Dug at Cu Chi",
+            "html": "Southern <strong>Vietcong</strong> fighters used jungle ambushes, the Ho Chi Minh Trail, and 250 km of <strong>Cu Chi tunnels</strong>. US bombing, <strong>napalm, and Agent Orange</strong> killed civilians and fuelled protests.",
+            "spoken": "In South Vietnam’s jungles, high-tech firepower met stubborn guerrilla tactics. <short pause> Southern Vietcong fighters used jungle ambushes, the Ho Chi Minh Trail, and 250 km of Cu Chi tunnels . US bombing, napalm, and Agent Orange killed civilians and fuelled protests.",
+            "paired_prose_hash": "59ef84e355",
+            "connective": "In South Vietnam’s jungles, high-tech firepower met stubborn guerrilla tactics."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Tet Offensive & Fall of Saigon",
+            "date": "1968–Apr 1975",
+            "img": "/images/vietnam_war_tet_offensive_theater_map.png",
+            "mode": "contain-light",
+            "stat": "April 1975: Saigon Falls as Vietnam Unites",
+            "html": "The surprise 1968 <strong>Tet Offensive</strong> pushed Nixon toward <strong>Vietnamization</strong> and the 1973 <strong>Paris Peace Accords</strong>. After US troops left, Northern tanks captured Saigon in April 1975.",
+            "spoken": "A shock offensive in 1968 broke American support for the war. <short pause> The surprise 1968 Tet Offensive pushed Nixon toward Vietnamization and the 1973 Paris Peace Accords . After US troops left, Northern tanks captured Saigon in April 1975.",
+            "paired_prose_hash": "c3e769cb57",
+            "connective": "A shock offensive in 1968 broke American support for the war."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Limits of Superpower Might",
+            "date": "1953 & 1975",
+            "img": "/images/cold_war/us_soldier_letter_vietnam_1967.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Millions Killed Across Two Asian Proxy Wars",
+            "html": "Fearing the <strong>Domino Theory</strong>, Washington fought two costly Asian <strong>proxy wars</strong>—containing communism at Korea’s 38th Parallel in 1953, yet failing to defeat nationalist <strong>guerrilla war</strong> in Vietnam.",
+            "spoken": "Asia exposed the hard limits of superpower military strength. <short pause> Fearing the Domino Theory , Washington fought two costly Asian proxy wars, containing communism at Korea’s 38th Parallel in 1953, yet failing to defeat nationalist guerrilla war in Vietnam.",
+            "connective": "Asia exposed the hard limits of superpower military strength."
+          }
+        ],
+        "takeaway": "Driven by the Domino Theory, the USA contained communism in Korea (1950–53) but could not defeat Vietcong guerrilla warfare before Saigon fell in 1975.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Driven by the Domino Theory, the USA contained communism in Korea (1950, 53) but could not defeat Vietcong guerrilla warfare before Saigon fell in 1975.",
+        "vocab": [
+          [
+            "1. Proxy War",
+            "Local war where rival superpowers arm opposing sides without fighting directly."
+          ],
+          [
+            "2. Domino Theory",
+            "US belief that if one Asian state turned communist, neighbours would topple too."
+          ],
+          [
+            "3. Guerrilla Warfare",
+            "Hit-and-run ambushes, booby traps, and tunnel combat avoiding open battles."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_6",
@@ -10522,7 +11076,119 @@ window.cold_war_data = {
           "question": "Using paragraph [6.5], on what date was the hammer-and-sickle Soviet flag lowered for the last time over the Kremlin?",
           "answer": "25 December 1991, marking the formal dissolution of the Soviet Union into fifteen independent republics."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "cold_war_l06_visual_story_sheet",
+        "ktBadge": "Key Topic 3 • Collapse",
+        "datesBadge": "1961 – 1991",
+        "topicLabel": "Enquiry 06: Fall of the Berlin Wall & Soviet Collapse (1961–1991)",
+        "title": "Why Did the Berlin Wall Fall and the Soviet Union Collapse?",
+        "spokenTitle": "Why did the Berlin Wall fall and the Soviet Union collapse?",
+        "thumbUrl": "/images/cold_war/berlin_wall_fall_1989.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "Economic Drain",
+          "Bold Reforms",
+          "Wall Breached",
+          "Hardline Coup",
+          "Cold War Ends"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Building the Berlin Wall",
+            "date": "13 Aug 1961",
+            "img": "/images/cold_war/berlin_wall_barbed_wire_1961.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Over 2.7 Million East Germans Fled Before 1961",
+            "html": "After <strong>2.7 million East Germans</strong> fled west, Khrushchev backed <strong>Walter Ulbricht</strong> in sealing the border on <strong>13 August 1961</strong> with barbed wire and the concrete Berlin Wall.",
+            "spoken": "Why did the Berlin Wall fall and the Soviet Union collapse? <short pause> After 2.7 million East Germans fled west, Khrushchev backed Walter Ulbricht in sealing the border on the thirteenth of August 1961 with barbed wire and the concrete Berlin Wall.",
+            "paired_prose_hash": "343d8e9e44",
+            "connective": "Why did the Berlin Wall fall and the Soviet Union collapse?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Stagnation, Afghanistan & SDI",
+            "date": "1979–1985",
+            "img": "/images/cold_war/soviet_consumer_goods_shortage_shoes.jpg",
+            "mode": "contain",
+            "stat": "25% of Soviet Wealth Spent on Arms + Afghan War",
+            "html": "Under Brezhnev, Soviet families queued for shoes while Moscow spent 25% of wealth on arms, fought <strong>mujahideen</strong> in <strong>Afghanistan</strong> after 1979, and faced Reagan’s costly <strong>“Star Wars”</strong> shield.",
+            "spoken": "By the 1980s, war and military spending bankrupted the Soviet economy. <short pause> Under Brezhnev, Soviet families queued for shoes while Moscow spent 25% of wealth on arms, fought mujahideen in Afghanistan after 1979, and faced Reagan’s costly “Star Wars” shield.",
+            "paired_prose_hash": "609b653613",
+            "connective": "By the 1980s, war and military spending bankrupted the Soviet economy."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Glasnost & Sinatra Doctrine",
+            "date": "1985–1988",
+            "img": "/images/cold_war/reagan_gorbachev_geneva_summit_1985.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Gorbachev Ends Red Army Intervention in Europe",
+            "html": "Taking office in 1985, <strong>Mikhail Gorbachev</strong> launched <strong>Glasnost</strong> (openness) and <strong>Perestroika</strong> (economic reform), while his “Sinatra Doctrine” let Eastern Europe choose its own path.",
+            "spoken": "In 1985, a reformist Soviet leader tried to save communism. <short pause> Taking office in 1985, Mikhail Gorbachev launched Glasnost (openness) and Perestroika (economic reform), while his “Sinatra Doctrine” let Eastern Europe choose its own path.",
+            "paired_prose_hash": "3b6dc00e82",
+            "connective": "In 1985, a reformist Soviet leader tried to save communism."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "9 Nov 1989: Opening the Gates",
+            "date": "9 Nov 1989",
+            "img": "/images/cold_war/schabowski_press_conference_1989.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Crowds Breach Berlin Wall; Germany Unites 1990",
+            "html": "After Poland’s <strong>Solidarity</strong> won elections and Hungary opened its border, spokesman <strong>Günter Schabowski’s</strong> live TV slip on <strong>9 November 1989</strong> sent crowds surging to tear down the Wall.",
+            "spoken": "Without fear of Soviet tanks, peaceful revolutions swept Eastern Europe. <short pause> After Poland’s Solidarity won elections and Hungary opened its border, spokesman Günter Schabowski’s live TV slip on the ninth of November 1989 sent crowds surging to tear down the Wall.",
+            "paired_prose_hash": "94a7ea8ac4",
+            "connective": "Without fear of Soviet tanks, peaceful revolutions swept Eastern Europe."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Failed Coup & Soviet Collapse",
+            "date": "Aug–25 Dec 1991",
+            "img": "/images/cold_war/mikhail_gorbachev_kremlin_1991.jpg",
+            "mode": "contain",
+            "stat": "15 Soviet Republics Break Away as USSR Dissolves",
+            "html": "When communist hardliners staged an <strong>August 1991 coup</strong>, <strong>Boris Yeltsin</strong> rallied crowds atop a Moscow tank. Fifteen republics broke away, and Gorbachev resigned on <strong>25 December 1991</strong>.",
+            "spoken": "Freedom in Eastern Europe soon unravelled the Soviet Union itself. <short pause> When communist hardliners staged an August 1991 coup , Boris Yeltsin rallied crowds atop a Moscow tank. Fifteen republics broke away, and Gorbachev resigned on the twenty-fifth of December 1991 .",
+            "paired_prose_hash": "1a47bd3402",
+            "connective": "Freedom in Eastern Europe soon unravelled the Soviet Union itself."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "The Red Flag Comes Down",
+            "date": "25 Dec 1991",
+            "img": "/images/cold_war/berlin_wall_fall_1989.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Germany Reunited (1990) & Cold War Ended (1991)",
+            "html": "Drained by <strong>economic stagnation</strong> and Afghanistan, Gorbachev’s reforms unleashed peaceful 1989 revolutions, reunited <strong>Germany in 1990</strong>, and ended the <strong>Soviet superpower</strong> in 1991.",
+            "spoken": "After forty-six years of tension, the Cold War ended peacefully. <short pause> Drained by economic stagnation and Afghanistan, Gorbachev’s reforms unleashed peaceful 1989 revolutions, reunited Germany in 1990 , and ended the Soviet superpower in 1991.",
+            "connective": "After forty-six years of tension, the Cold War ended peacefully."
+          }
+        ],
+        "takeaway": "Economic stagnation, the Afghan war, and Gorbachev’s reforms sparked peaceful 1989 revolutions that toppled the Berlin Wall and dissolved the USSR in 1991.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Economic stagnation, the Afghan war, and Gorbachev’s reforms sparked peaceful 1989 revolutions that toppled the Berlin Wall and dissolved the USSR in 1991.",
+        "vocab": [
+          [
+            "1. Glasnost",
+            "Gorbachev’s policy of openness allowing freer speech, news, and public debate."
+          ],
+          [
+            "2. Perestroika",
+            "Gorbachev’s economic restructuring allowing limited private small businesses."
+          ],
+          [
+            "3. Solidarity",
+            "Polish free trade union led by Lech Wałęsa that won June 1989 elections."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_7",
@@ -12250,7 +12916,116 @@ window.cold_war_data = {
           "question": "Using paragraph [7.4], how did the Space Race serve as an ideological battleground between the superpowers?",
           "answer": "It was a test of technological and ideological superiority, from Sputnik in 1957 and Yuri Gagarin in 1961 to the American Apollo 11 Moon landing in 1969."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "07",
+        "slug": "cold_war_l07_visual_story_sheet",
+        "ktBadge": "Synoptic Verdict • 1945–91",
+        "datesBadge": "1945 – 1991",
+        "topicLabel": "Enquiry 07: Historical Assessment — Was the Cold War Ever Truly 'Cold'?",
+        "title": "Was the Cold War Ever Truly ‘Cold’ Across the Globe?",
+        "spokenTitle": "Was the Cold War ever truly cold across the globe?",
+        "thumbUrl": "/images/cold_war/apollo_11_aldrin_moon.jpg",
+        "provenanceNote": "US National Archives, JFK/Reagan Libraries, IWM & CIA Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "20 Million Dead",
+          "Secret Spy War",
+          "Race to Space",
+          "Nuclear Terror",
+          "Cold vs Hot"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Europe’s ‘Long Peace’ Myth",
+            "date": "1945–1991",
+            "img": "/images/cold_war/cold_war_global_alliances_map_1980.svg",
+            "mode": "contain-light",
+            "stat": "Calm European Borders vs Hot Third World Wars",
+            "html": "Historians like Gaddis called 1945–91 Europe’s <strong>“Long Peace”</strong> under nuclear deterrence. Yet global historians call this <strong>Eurocentric</strong>, as <strong>Third World proxy wars</strong> raged outside Europe.",
+            "spoken": "Was the Cold War ever truly cold across the globe? <short pause> Historians like Gaddis called 1945, 91 Europe’s “Long Peace” under nuclear deterrence. Yet global historians call this Eurocentric , as Third World proxy wars raged outside Europe.",
+            "paired_prose_hash": "2645adc215",
+            "connective": "Was the Cold War ever truly cold across the globe?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "20 Million Dead in Proxy Wars",
+            "date": "1945–1990",
+            "img": "/images/cold_war/vietnam_field_medic_1966.jpg",
+            "mode": "contain",
+            "stat": "Over 20 Million Killed Across the Global South",
+            "html": "Across the <strong>Global South</strong>, Cold War conflicts killed <strong>over 20 million people</strong>—including three million in Korea and over two million in Vietnam—as superpowers armed rival <strong>insurgencies</strong>.",
+            "spoken": "Across four continents, superpower rivalry cost millions of human lives. <short pause> Across the Global South , Cold War conflicts killed over 20 million people, including three million in Korea and over two million in Vietnam, as superpowers armed rival insurgencies .",
+            "paired_prose_hash": "f98e0dcd37",
+            "connective": "Across four continents, superpower rivalry cost millions of human lives."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "CIA vs KGB: The Secret Spy War",
+            "date": "1947–1989",
+            "img": "/images/cold_war/gary_powers_moscow_trial_1960.jpg",
+            "mode": "contain",
+            "stat": "Covert Coups in Iran (1953) & Guatemala (1954)",
+            "html": "Beneath open war raged covert <strong>espionage</strong> between the <strong>CIA and KGB</strong>. Washington backed coups in <strong>Iran (1953) and Guatemala (1954)</strong>, while East Germany’s Stasi spied on millions.",
+            "spoken": "Meanwhile, an invisible war of spies and coups toppled governments. <short pause> Beneath open war raged covert espionage between the CIA and KGB . Washington backed coups in Iran (1953) and Guatemala (1954) , while East Germany’s Stasi spied on millions.",
+            "paired_prose_hash": "1b053f885a",
+            "connective": "Meanwhile, an invisible war of spies and coups toppled governments."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "The Space Race & Missile Race",
+            "date": "1957–1969",
+            "img": "/images/cold_war/apollo_11_aldrin_moon.jpg",
+            "mode": "contain",
+            "stat": "Sputnik (1957) to Apollo 11 Moon Landing (1969)",
+            "html": "Science became a battlefield too. After Moscow launched <strong>Sputnik 1</strong> (1957) and Yuri Gagarin, NASA landed <strong>Apollo 11</strong> on the Moon in July 1969 alongside a vast nuclear <strong>arms race</strong>.",
+            "spoken": "Rivalry also reached into orbit and deep into outer space. <short pause> Science became a battlefield too. After Moscow launched Sputnik 1 (1957) and Yuri Gagarin, NASA landed Apollo 11 on the Moon in July 1969 alongside a vast nuclear arms race .",
+            "paired_prose_hash": "26c08285d4",
+            "connective": "Rivalry also reached into orbit and deep into outer space."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "MAD Prevents Direct Armageddon",
+            "date": "1945–1991",
+            "img": "/images/cold_war/castle_bravo_thermonuclear_test_1954.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Nuclear Weapons Made Direct War Mutual Suicide",
+            "html": "Direct US–Soviet combat was avoided only through <strong>Mutually Assured Destruction</strong>, which made nuclear war collective suicide. Even during 1970s <strong>détente</strong>, both armed <strong>Global South</strong> rivals.",
+            "spoken": "Only nuclear terror stopped Washington and Moscow fighting face to face. <short pause> Direct US, Soviet combat was avoided only through Mutually Assured Destruction , which made nuclear war collective suicide. Even during 1970s détente , both armed Global South rivals.",
+            "paired_prose_hash": "329dabec77",
+            "connective": "Only nuclear terror stopped Washington and Moscow fighting face to face."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Cold in Europe, Hot Worldwide",
+            "date": "1945–1991",
+            "img": "/images/cold_war/protect_and_survive_1980.jpg",
+            "mode": "contain",
+            "stat": "Frozen European Front vs Global Proxy Bloodshed",
+            "html": "The Cold War stayed <strong>“cold” in Europe</strong> only because H-bombs deterred direct clash—while covert coups, spy agencies, and bloody <strong>proxy wars</strong> made it scorching hot across <strong>four continents</strong>.",
+            "spoken": "In truth, the peace depended on where people lived. <short pause> The Cold War stayed “cold” in Europe only because H-bombs deterred direct clash, while covert coups, spy agencies, and bloody proxy wars made it scorching hot across four continents .",
+            "connective": "In truth, the peace depended on where people lived."
+          }
+        ],
+        "takeaway": "Nuclear deterrence kept Europe at peace from 1945 to 1991, yet covert coups and Global South proxy wars killed over 20 million people worldwide.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Nuclear deterrence kept Europe at peace from 1945 to 1991, yet covert coups and Global South proxy wars killed over 20 million people worldwide.",
+        "vocab": [
+          [
+            "1. Bipolar World",
+            "Global order dominated by two rival superpowers leading opposing alliances."
+          ],
+          [
+            "2. Espionage",
+            "Using secret spy agencies like the CIA, KGB, and Stasi to gather state secrets."
+          ],
+          [
+            "3. Détente",
+            "1970s easing of strained superpower tensions through arms-control talks."
+          ]
+        ]
+      }
     }
   ],
   "homepage_background": "/images/cold_war_cover.jpg",

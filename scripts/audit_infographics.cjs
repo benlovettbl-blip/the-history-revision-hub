@@ -40,7 +40,26 @@ console.log('\n============================================================');
 console.log('🛡️  INFOGRAPHIC ENGINE SUSTAINABILITY & INTEGRITY AUDIT');
 console.log('============================================================\n');
 
-const units = ['cme_new', 'eee', 'edexcel_medicine', 'usa', 'weimar_nazi_germany'];
+const units = [
+  'cme_new',
+  'cold_war',
+  'eee',
+  'edexcel_medicine',
+  'usa',
+  'weimar_nazi_germany',
+  'medieval_england',
+  'monarchy_religion_power',
+  'water_and_sanitation',
+  'first_british_empire',
+  'industrialisation_and_empire',
+  'second_british_empire',
+  'australia',
+  'great_war',
+  'great_war_part2',
+  'the_shoah',
+  'post_war_britain',
+  'ks2_ww2',
+];
 
 // Runtime matcher parity helper
 function getLessonInfographicsSyncLocal(unitId, lessonIdOrIndex) {
@@ -79,12 +98,51 @@ for (const unitId of units) {
     totalInspected++;
     const prefix = `  [${item.slug || `Item #${idx}`}]`;
 
-    // 1. Asset File Existence
-    const imageRelPath = item.image ? item.image.replace(/^\//, '') : '';
-    const fullImagePath = path.join(ROOT_DIR, 'public', imageRelPath);
-    if (!item.image || !fs.existsSync(fullImagePath)) {
-      console.error(`  ❌ ${prefix} Missing image file on disk: ${item.image}`);
-      totalErrors++;
+    // 1. Asset File Existence & Visual Story Sheet Gate
+    if (item.type === 'visual_story_sheet') {
+      if (item.image && /\.webp$/i.test(item.image)) {
+        console.error(`  ❌ ${prefix} Retired AI .webp poster detected on visual_story_sheet: ${item.image}`);
+        totalErrors++;
+      }
+      const interactiveRel = item.interactiveUrl ? item.interactiveUrl.replace(/^\//, '') : '';
+      const fullInteractivePath = path.join(ROOT_DIR, 'public', interactiveRel);
+      if (!interactiveRel || !fs.existsSync(fullInteractivePath)) {
+        console.error(`  ❌ ${prefix} Missing compiled Visual Story Sheet HTML on disk: ${item.interactiveUrl}`);
+        totalErrors++;
+      }
+      const thumbRel = item.thumbUrl ? item.thumbUrl.replace(/^\//, '') : '';
+      const fullThumbPath = path.join(ROOT_DIR, 'public', thumbRel);
+      if (!thumbRel || !fs.existsSync(fullThumbPath) || /\.webp$/i.test(thumbRel)) {
+        console.error(`  ❌ ${prefix} Missing or invalid authentic thumbUrl on disk: ${item.thumbUrl}`);
+        totalErrors++;
+      }
+      const expectedCardCount = unitId === 'ks2_ww2' ? 4 : 6;
+      if (!Array.isArray(item.keyPoints) || item.keyPoints.length !== expectedCardCount) {
+        console.error(`  ❌ ${prefix} Expected ${expectedCardCount} keyPoints, got ${item.keyPoints?.length || 0}`);
+        totalErrors++;
+      }
+      const numMatch = interactiveRel.match(/lesson_(\d+)_visual_story\.html$/);
+      if (numMatch) {
+        const lPrefix = `l${numMatch[1]}`;
+        const expectedClips =
+          expectedCardCount === 4
+            ? ['s1', 's2', 's3', 's4', 'takeaway']
+            : ['s1', 's2', 's3', 's4', 's5', 's6', 'takeaway'];
+        for (const suffix of expectedClips) {
+          const mp3Path = path.join(ROOT_DIR, 'public', 'audio', 'visual_sheets', unitId, `${lPrefix}_${suffix}.mp3`);
+          if (!fs.existsSync(mp3Path)) {
+            console.error(`  ❌ ${prefix} Missing Studio Voice MP3: public/audio/visual_sheets/${unitId}/${lPrefix}_${suffix}.mp3`);
+            totalErrors++;
+          }
+        }
+      }
+    } else {
+      const imageRelPath = item.image ? item.image.replace(/^\//, '') : '';
+      const fullImagePath = path.join(ROOT_DIR, 'public', imageRelPath);
+      if (!item.image || !fs.existsSync(fullImagePath)) {
+        console.error(`  ❌ ${prefix} Missing image file on disk: ${item.image}`);
+        totalErrors++;
+      }
     }
 
     // 2. Zero Legacy ID Pollution
@@ -135,19 +193,21 @@ for (const unitId of units) {
       }
     }
 
-    // 5. Disciplinary Hinge Question & Model Answer Quality Gate
-    const ghostSourceRegex = /\b(this source|the source|Source [A-Z]|the photograph|the cartoon|the extract|the author|in the source)\b/i;
-    if (!item.hingeQuestion || typeof item.hingeQuestion !== 'string' || item.hingeQuestion.trim().length < 20) {
-      console.error(`  ❌ ${prefix} Missing or too short hingeQuestion!`);
-      totalErrors++;
-    } else if (ghostSourceRegex.test(item.hingeQuestion)) {
-      console.error(`  ❌ ${prefix} Hinge question references unseen source: "${item.hingeQuestion}"`);
-      totalErrors++;
-    }
+    // 5. Disciplinary Hinge Question & Model Answer Quality Gate (for legacy poster mats)
+    if (item.type !== 'visual_story_sheet') {
+      const ghostSourceRegex = /\b(this source|the source|Source [A-Z]|the photograph|the cartoon|the extract|the author|in the source)\b/i;
+      if (!item.hingeQuestion || typeof item.hingeQuestion !== 'string' || item.hingeQuestion.trim().length < 20) {
+        console.error(`  ❌ ${prefix} Missing or too short hingeQuestion!`);
+        totalErrors++;
+      } else if (ghostSourceRegex.test(item.hingeQuestion)) {
+        console.error(`  ❌ ${prefix} Hinge question references unseen source: "${item.hingeQuestion}"`);
+        totalErrors++;
+      }
 
-    if (!item.modelAnswer || typeof item.modelAnswer !== 'string' || item.modelAnswer.trim().length < 50) {
-      console.error(`  ❌ ${prefix} Missing or too short modelAnswer!`);
-      totalErrors++;
+      if (!item.modelAnswer || typeof item.modelAnswer !== 'string' || item.modelAnswer.trim().length < 50) {
+        console.error(`  ❌ ${prefix} Missing or too short modelAnswer!`);
+        totalErrors++;
+      }
     }
   });
 

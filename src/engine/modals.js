@@ -8,6 +8,7 @@ import {
 import { getAssetUrl } from './assets.js';
 import { WORKBOOK_PAGE_MAP, getWorkbookPageAnchor } from './workbook_page_map.js';
 import { verifyStaffPasskeySync } from './staff_auth.js';
+import { resolveCanonicalPdfUrl, isStaffModeActive } from '../data/unit_resources_catalog.js';
 
 window.WORKBOOK_PAGE_MAP = WORKBOOK_PAGE_MAP;
 window.getWorkbookPageAnchor = getWorkbookPageAnchor;
@@ -2734,17 +2735,11 @@ window.openParentBriefingModal = function () {
               YPRES 1914–1918: REMEMBRANCE, SACRIFICE &amp; LOCAL HERITAGE
             </h2>
             <div style="font-size: 0.9rem; color: #cbd5e1; margin-top: 4px;">
-              The History Department &amp; The History Boys · Led jointly by <strong>Department Lead</strong> &amp; <strong>Mr James Garrett</strong> · Accompanied by <strong>Fieldwork Staff</strong>
+              The History Department &middot; Fieldwork Archive Briefing
             </div>
           </div>
 
           <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <a href="/pdfs/ypres_2026_parent_information_pack_v2.pdf" target="_blank" style="background: #fefce8; color: #b45309; border: 1.5px solid #fde047; padding: 7px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-              <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> PDF Handout
-            </a>
-            <a href="/briefings/ypres_2026_parent_briefing.pptx" download="ypres_2026_parent_briefing.pptx" target="_blank" style="background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; padding: 7px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-              <i class="fa-solid fa-file-powerpoint" style="color: #ea580c;"></i> Slides (.pptx)
-            </a>
             <button id="closeParentBriefingBtn" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: #ffffff; width: 36px; height: 36px; border-radius: 50%; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: all 0.2s;">
               <i class="fa-solid fa-xmark"></i>
             </button>
@@ -2901,174 +2896,8 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
     }
   }
 
-  // Robust unit-aware PDF resolution
-  if (!pdfUrl || pdfUrl === '#' || pdfUrl === 'undefined' || pdfUrl.endsWith('.html')) {
-    const url = htmlUrl || fileBaseName || '';
-
-    // 1. Conflict in the Middle East (cme_new)
-    if (url.includes('/units/cme_new/')) {
-      if (url.includes('mastery')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_mastery_pack_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_mastery_pack_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_mastery_pack_KT3.pdf';
-        else pdfUrl = '/pdfs/cme_mastery_pack_FULL.pdf';
-      } else if (url.includes('pupil_workbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_pupil_workbook_KT3.pdf';
-        else pdfUrl = '/pdfs/cme_new_pupil_workbook_KT1.pdf';
-      } else if (url.includes('retrieval') || url.includes('companion')) {
-        pdfUrl = '/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf';
-      } else if (url.includes('textbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/cme_new_textbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/cme_new_textbook_KT3.pdf';
-        else pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
-      } else {
-        pdfUrl = '/pdfs/cme_new_textbook_KT1.pdf';
-      }
-    } else if (url.includes('/units/weimar_nazi_germany/')) {
-      if (url.includes('pupil_workbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf';
-        else if (url.includes('KT4')) pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf';
-        else pdfUrl = '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf';
-      } else if (url.includes('mastery')) {
-        pdfUrl = '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf';
-      } else if (url.includes('retrieval') || url.includes('companion')) {
-        pdfUrl = '/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf';
-      } else if (url.includes('textbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT3.pdf';
-        else if (url.includes('KT4')) pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT4.pdf';
-        else pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
-      } else {
-        pdfUrl = '/pdfs/weimar_nazi_germany_textbook_KT1.pdf';
-      }
-    } else if (url.includes('/units/usa/')) {
-      if (url.includes('pupil_workbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_pupil_workbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_pupil_workbook_KT3.pdf';
-        else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_pupil_workbook_KT4.pdf';
-        else pdfUrl = '/pdfs/usa_pupil_workbook_KT1.pdf';
-      } else if (url.includes('mastery')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/usa_mastery_pack_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_mastery_pack_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_mastery_pack_KT3.pdf';
-        else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_mastery_pack_KT4.pdf';
-        else pdfUrl = '/pdfs/usa_mastery_pack_FULL.pdf';
-      } else if (url.includes('retrieval') || url.includes('companion')) {
-        pdfUrl = '/pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf';
-      } else if (url.includes('textbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/usa_textbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/usa_textbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/usa_textbook_KT3.pdf';
-        else if (url.includes('KT4')) pdfUrl = '/pdfs/usa_textbook_KT4.pdf';
-        else pdfUrl = '/pdfs/usa_textbook_KT1.pdf';
-      } else {
-        pdfUrl = '/pdfs/usa_textbook_KT1.pdf';
-      }
-    } else if (url.includes('/units/eee/')) {
-      if (url.includes('pupil_workbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_pupil_workbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_pupil_workbook_KT3.pdf';
-        else pdfUrl = '/pdfs/eee_pupil_workbook_KT1.pdf';
-      } else if (url.includes('mastery')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_mastery_pack_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_mastery_pack_KT3.pdf';
-        else pdfUrl = '/pdfs/eee_mastery_pack_KT1.pdf';
-      } else if (url.includes('retrieval') || url.includes('companion')) {
-        pdfUrl = '/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf';
-      } else if (url.includes('textbook')) {
-        if (url.includes('KT1')) pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
-        else if (url.includes('KT2')) pdfUrl = '/pdfs/eee_textbook_KT2.pdf';
-        else if (url.includes('KT3')) pdfUrl = '/pdfs/eee_textbook_KT3.pdf';
-        else pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
-      } else {
-        pdfUrl = '/pdfs/eee_textbook_KT1.pdf';
-      }
-    } else if (url.includes('/units/edexcel_medicine/')) {
-      if (url.includes('pupil_workbook')) {
-        if (url.includes('medieval')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf';
-        else if (url.includes('renaissance')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_renaissance.pdf';
-        else if (url.includes('18th_19th')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_18th_19th.pdf';
-        else if (url.includes('modern')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_modern.pdf';
-        else if (url.includes('western_front')) pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
-        else pdfUrl = '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf';
-      } else if (url.includes('textbook')) {
-        if (url.includes('medieval')) pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
-        else if (url.includes('renaissance')) pdfUrl = '/pdfs/edexcel_medicine_textbook_renaissance.pdf';
-        else if (url.includes('18th_19th')) pdfUrl = '/pdfs/edexcel_medicine_textbook_18th_19th.pdf';
-        else if (url.includes('modern')) pdfUrl = '/pdfs/edexcel_medicine_textbook_modern.pdf';
-        else if (url.includes('western_front')) pdfUrl = '/pdfs/edexcel_medicine_textbook_western_front.pdf';
-        else pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
-      } else if (url.includes('retrieval') || url.includes('companion')) {
-        if (url.includes('western_front')) pdfUrl = '/pdfs/Western_Front_Master_Knowledge_Retrieval_Companion.pdf';
-        else pdfUrl = '/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf';
-      } else {
-        pdfUrl = '/pdfs/edexcel_medicine_textbook_medieval.pdf';
-      }
-    } else if (url.includes('/units/ks2_ww2/')) {
-      if (url.includes('pupil_workbook')) {
-        pdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
-      } else if (url.includes('scheme_of_work')) {
-        pdfUrl = '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf';
-      } else if (
-        url.includes('quiz_pack') ||
-        url.includes('retrieval') ||
-        url.includes('companion')
-      ) {
-        pdfUrl = '/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf';
-      } else if (url.includes('textbook')) {
-        pdfUrl = '/pdfs/ks2_ww2_textbook.pdf';
-      } else if (url.includes('/worksheets/')) {
-        const file = url.split('/').pop().replace('.html', '.pdf');
-        pdfUrl = `/pdfs/ks2_ww2/${file}`;
-      } else {
-        pdfUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
-      }
-    } else {
-      const ks3Companions = {
-        medieval_england: '/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf',
-        great_war: '/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf',
-        great_war_part2: '/pdfs/The_Course_of_the_Great_War_Master_Retrieval_and_Literary_Companion.pdf',
-        monarchy_religion_power: '/pdfs/Crown_Church_or_Parliament_Master_Knowledge_Retrieval_Companion.pdf',
-        first_british_empire: '/pdfs/The_First_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
-        second_british_empire: '/pdfs/The_Second_British_Empire_Master_Knowledge_Retrieval_Companion.pdf',
-        industrialisation_and_empire: '/pdfs/Industrialisation_Power_and_Protest_Master_Knowledge_Retrieval_Companion.pdf',
-        water_and_sanitation: '/pdfs/Water_and_Sanitation_Master_Knowledge_Retrieval_Companion.pdf',
-        the_shoah: '/pdfs/The_Shoah_Master_Knowledge_Retrieval_Companion.pdf',
-        post_war_britain: '/pdfs/Post_War_Britain_Master_Knowledge_Retrieval_Companion.pdf',
-        australia: '/pdfs/History_of_Australia_Master_Knowledge_Retrieval_Companion.pdf',
-        cold_war: '/pdfs/Superpower_Relations_and_Cold_War_Master_Knowledge_Retrieval_Companion.pdf',
-      };
-
-      const mUnit = url.match(/\/units\/([a-z0-9_]+)\//);
-      if (mUnit && mUnit[1]) {
-        const u = mUnit[1];
-        if (url.includes('combined')) {
-          pdfUrl = `/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf`;
-        } else if (url.includes('pupil_workbook')) {
-          pdfUrl = `/pdfs/${u}_pupil_workbook.pdf`;
-        } else if (url.includes('textbook')) {
-          pdfUrl = `/pdfs/${u}_textbook.pdf`;
-        } else if (url.includes('quiz_pack') || url.includes('retrieval') || url.includes('companion')) {
-          const comp = ks3Companions[u];
-          pdfUrl = comp ? comp : `/pdfs/${u}_pupil_workbook.pdf`;
-        } else {
-          pdfUrl = `/pdfs/${u}_pupil_workbook.pdf`;
-        }
-      } else {
-        const cleanBase = url.split('/').pop().replace('.html', '');
-        pdfUrl = `/pdfs/${cleanBase}.pdf`;
-      }
-    }
-  }
+  // Canonical PDF resolution via Single Source of Truth catalog
+  pdfUrl = resolveCanonicalPdfUrl(htmlUrl || fileBaseName || '', pdfUrl);
 
   // Remove existing modal if any
   const existing = document.getElementById('teacherPrintPreviewModal');
@@ -3091,17 +2920,17 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
           </div>
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(14, 165, 233, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.3);">Teacher Planning Hub</span>
-              <span style="font-size: 0.7rem; font-weight: 600; color: #94a3b8;">Classroom Set Print Preview</span>
+              <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(14, 165, 233, 0.2); color: #38bdf8; padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.3);">${isStaffModeActive() ? 'Teacher Planning Hub' : 'Booklet Reader'}</span>
+              <span style="font-size: 0.7rem; font-weight: 600; color: #94a3b8;">${isStaffModeActive() ? 'Classroom Set Print Preview' : 'Printable View'}</span>
             </div>
-            <h3 style="margin: 2px 0 0 0; color: #f8fafc; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em;">${title || 'Classroom Print Preview'}</h3>
+            <h3 style="margin: 2px 0 0 0; color: #f8fafc; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em;">${title || 'Booklet Preview'}</h3>
           </div>
         </div>
 
         <!-- Action Controls -->
         <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
           <button id="teacherPrintModalTrigger" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: #ffffff; border: none; font-weight: 700; font-size: 0.9rem; padding: 9px 18px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(37,99,235,0.4); transition: all 0.2s ease;">
-            <i class="fa-solid fa-print"></i> Print Class Set
+            <i class="fa-solid fa-print"></i> ${isStaffModeActive() ? 'Print Class Set' : 'Print Booklet'}
           </button>
           
           ${
@@ -3136,7 +2965,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
       <div style="background: #1e293b; border-top: 1px solid #334155; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.82rem; color: #94a3b8;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <i class="fa-solid fa-lightbulb" style="color: #facc15;"></i>
-          <span><strong>Teacher Tip:</strong> ${
+          <span><strong>${isStaffModeActive() ? 'Teacher Tip:' : 'Print Tip:'}</strong> ${
             String(htmlUrl || '').includes('ks2_ww2') ||
             window.currentUnitId === 'ks2_ww2' ||
             document.body.classList.contains('ks2-mode-active')

@@ -1780,7 +1780,115 @@
           "question": "How did William’s feigned retreats break the Saxon shield wall?",
           "prose_hash": "17cf7aacc8"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "medieval_england_l01_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 1",
+        "datesBadge": "Jan – Oct 1066",
+        "topicLabel": "Enquiry 01: 1066 & The Battle of Hastings — Why Did William Win?",
+        "title": "Why Did William of Normandy Win the Battle of Hastings in 1066?",
+        "spokenTitle": "Why did William of Normandy win the Battle of Hastings in 1066?",
+        "thumbUrl": "/images/medieval_england/source_d_bayeux_william_unmasks.jpg",
+        "provenanceNote": "Musée de la Tapisserie de Bayeux, Bodleian Library & British Library (Zero AI Imagery)",
+        "bridges": [
+          "Rival Claims",
+          "Northern March",
+          "Hilltop Wall",
+          "Fake Retreat",
+          "Norman Crown"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "A King Dies Without an Heir",
+            "date": "Jan 1066",
+            "img": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
+            "mode": "contain-light",
+            "stat": "5 Jan 1066: Witan Elects Harold Godwinson",
+            "html": "When <strong>Edward the Confessor</strong> died childless in January 1066, England’s noble council, <strong>the Witan</strong>, quickly crowned powerful <strong>Harold Godwinson</strong> as king.",
+            "spoken": "Why did William of Normandy win the Battle of Hastings in 1066? <short pause> When Edward the Confessor died childless in January 1066, England’s noble council, the Witan , quickly crowned powerful Harold Godwinson as king.",
+            "paired_prose_hash": "6b927e1a41",
+            "connective": "Why did William of Normandy win the Battle of Hastings in 1066?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Three Rivals Claim One Crown",
+            "date": "Spring 1066",
+            "img": "/images/medieval_england/source_a_bayeux_harold_oath.jpg",
+            "mode": "contain-light",
+            "stat": "William & Hardrada Prepare Invasion Fleets",
+            "html": "Two foreign warriors challenged Harold. <strong>Duke William</strong> claimed Harold had sworn a <strong>sacred oath</strong> to back him, while Viking king <strong>Harald Hardrada</strong> claimed England too.",
+            "spoken": "Foreign rivals immediately challenged Harold’s new crown. <short pause> Two foreign warriors challenged Harold. Duke William claimed Harold had sworn a sacred oath to back him, while Viking king Harald Hardrada claimed England too.",
+            "paired_prose_hash": "91e13ad0c2",
+            "connective": "Foreign rivals immediately challenged Harold’s new crown."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Victory North Drains the Army",
+            "date": "25 Sept 1066",
+            "img": "/images/medieval_trading_cog_ship.jpg",
+            "mode": "landscape",
+            "stat": "190-Mile Dash Crushes Vikings at Stamford Bridge",
+            "html": "Harold marched <strong>190 miles north</strong> in four days and crushed Hardrada’s Vikings at <strong>Stamford Bridge</strong>, but two days later <strong>William landed</strong> on the south coast.",
+            "spoken": "The first invasion struck suddenly in northern England. <short pause> Harold marched 190 miles north in four days and crushed Hardrada’s Vikings at Stamford Bridge , but two days later William landed on the south coast.",
+            "paired_prose_hash": "9ea1b54268",
+            "connective": "The first invasion struck suddenly in northern England."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "The Shield Wall Holds Firm",
+            "date": "14 Oct 1066",
+            "img": "/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg",
+            "mode": "contain-light",
+            "stat": "Five Hours: Saxon Axes Repel Norman Charges",
+            "html": "Marching 250 miles south, Harold locked a tight <strong>shield wall</strong> atop <strong>Senlac Hill</strong>. For five fierce hours, Saxon battleaxes threw back <strong>Norman cavalry</strong> charges.",
+            "spoken": "Harold’s tired troops raced south without resting. <short pause> Marching 250 miles south, Harold locked a tight shield wall atop Senlac Hill . For five fierce hours, Saxon battleaxes threw back Norman cavalry charges.",
+            "paired_prose_hash": "4702866d39",
+            "connective": "Harold’s tired troops raced south without resting."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Fake Retreats Break the Line",
+            "date": "Late 14 Oct 1066",
+            "img": "/images/medieval_england/source_d_bayeux_william_unmasks.jpg",
+            "mode": "contain-light",
+            "stat": "Lured Saxons Surrounded; King Harold Killed",
+            "html": "William ordered clever <strong>feigned retreats</strong>, tricking Saxon fighters into chasing downhill. Once the <strong>shield wall</strong> broke apart, Norman archers struck and <strong>Harold was killed</strong>.",
+            "spoken": "Late that afternoon, William turned panic into a trap. <short pause> William ordered clever feigned retreats , tricking Saxon fighters into chasing downhill. Once the shield wall broke apart, Norman archers struck and Harold was killed .",
+            "paired_prose_hash": "17cf7aacc8",
+            "connective": "Late that afternoon, William turned panic into a trap."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Anglo-Saxon England Falls",
+            "date": "25 Dec 1066",
+            "img": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+            "mode": "contain-light",
+            "stat": "Christmas 1066: William Crowned at Westminster",
+            "html": "With <strong>King Harold dead</strong> on the ridge, English resistance collapsed. <strong>William the Conqueror</strong> was crowned at Westminster on Christmas Day, ending <strong>Anglo-Saxon rule</strong>.",
+            "spoken": "One autumn afternoon reshaped English history forever. <short pause> With King Harold dead on the ridge, English resistance collapsed. William the Conqueror was crowned at Westminster on Christmas Day, ending Anglo-Saxon rule .",
+            "connective": "One autumn afternoon reshaped English history forever."
+          }
+        ],
+        "takeaway": "Exhausted by marching to Stamford Bridge and tricked downhill by William’s fake retreats, Harold’s shield wall broke at Hastings, handing England to Norman rule.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Exhausted by marching to Stamford Bridge and tricked downhill by William’s fake retreats, Harold’s shield wall broke at Hastings, handing England to Norman rule.",
+        "vocab": [
+          [
+            "1. The Witan",
+            "Council of Anglo-Saxon nobles and bishops who chose the next king."
+          ],
+          [
+            "2. Shield Wall",
+            "Tight defensive line of overlapping shields and battleaxes on high ground."
+          ],
+          [
+            "3. Feigned Retreat",
+            "Battlefield trick where horsemen fake flight to lure foes out of line."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2",
@@ -3123,7 +3231,115 @@
           "question": "What did the Domesday survey show about who owned English land?",
           "prose_hash": "e1558c90bf"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "medieval_england_l02_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 2",
+        "datesBadge": "1066 – 1086",
+        "topicLabel": "Enquiry 02: Castles, Terror & Domesday — Norman Control (1066–1086)",
+        "title": "How Did 10,000 Normans Control 2 Million Hostile Anglo-Saxons?",
+        "spokenTitle": "How did ten thousand Normans control two million hostile Anglo-Saxons?",
+        "thumbUrl": "/images/medieval_england/plate_2_1_bayeux_castle_building.jpg",
+        "provenanceNote": "Musée de la Tapisserie de Bayeux, The National Archives Kew, Bodleian & English Heritage (Zero AI Imagery)",
+        "bridges": [
+          "Northern Revolt",
+          "Stone Fortresses",
+          "Nationwide Audit",
+          "Feudal Pyramid",
+          "Total Control"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Five Hundred Quick Earth Forts",
+            "date": "1066–1068",
+            "img": "/images/medieval_england/plate_2_1_bayeux_castle_building.jpg",
+            "mode": "contain-light",
+            "stat": "8–14 Days to Dig Each Motte-and-Bailey Fort",
+            "html": "Outnumbered two hundred to one, <strong>10,000 Normans</strong> forced locals to dig over <strong>500 Motte-and-Bailey castles</strong>—steep earth mounds topped with <strong>wooden watchtowers</strong>.",
+            "spoken": "How did ten thousand Normans control two million hostile Anglo-Saxons? <short pause> Outnumbered two hundred to one, 10,000 Normans forced locals to dig over 500 Motte-and-Bailey castles, steep earth mounds topped with wooden watchtowers .",
+            "paired_prose_hash": "3862a21392",
+            "connective": "How did ten thousand Normans control two million hostile Anglo-Saxons?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Scorched-Earth Terror North",
+            "date": "1069–1070",
+            "img": "/images/medieval_england/source_c_peterborough_chronicle.jpg",
+            "mode": "contain-light",
+            "stat": "100,000 Starve in the Harrying of the North",
+            "html": "When northern rebels killed York’s garrison, William ordered the <strong>Harrying of the North</strong>—burning crops and farm animals until <strong>100,000 people</strong> died of <strong>winter famine</strong>.",
+            "spoken": "Where wooden forts failed, William used ruthless terror. <short pause> When northern rebels killed York’s garrison, William ordered the Harrying of the North, burning crops and farm animals until 100,000 people died of winter famine .",
+            "paired_prose_hash": "709e68ac1c",
+            "connective": "Where wooden forts failed, William used ruthless terror."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Towering Stone Castle Keeps",
+            "date": "1070–1100",
+            "img": "/images/medieval_england/plate_2_2_portchester_castle_keep.jpg",
+            "mode": "contain",
+            "stat": "Portchester’s Four-Storey Keep Guards the Coast",
+            "html": "To show Normans were staying forever, William replaced timber forts with <strong>giant stone keeps</strong> like <strong>Portchester Castle</strong>, guarding warship harbours and <strong>supply lines</strong>.",
+            "spoken": "Soon temporary timber towers gave way to permanent stone. <short pause> To show Normans were staying forever, William replaced timber forts with giant stone keeps like Portchester Castle , guarding warship harbours and supply lines .",
+            "paired_prose_hash": "ee486c9a37",
+            "connective": "Soon temporary timber towers gave way to permanent stone."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "The Great Domesday Tax Audit",
+            "date": "1085–1086",
+            "img": "/images/medieval_england/source_b_great_domesday_book.jpg",
+            "mode": "contain-light",
+            "stat": "1086: Every Manor, Mill & Pig Recorded for Tax",
+            "html": "Fearing Danish attack in 1085, William sent teams to count every farm, cow, and pig in the <strong>Domesday Book</strong> so he collected <strong>every penny of tax</strong>.",
+            "spoken": "Military force was backed up by strict royal bookkeeping. <short pause> Fearing Danish attack in 1085, William sent teams to count every farm, cow, and pig in the Domesday Book so he collected every penny of tax .",
+            "paired_prose_hash": "511be20d3d",
+            "connective": "Military force was backed up by strict royal bookkeeping."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Norman Barons Take the Land",
+            "date": "1086",
+            "img": "/images/medieval_england/source_d_portchester_castle_church.jpg",
+            "mode": "contain",
+            "stat": "200 Norman Barons Replace English Landowners",
+            "html": "Domesday proved <strong>Anglo-Saxon lords</strong> had been wiped out: roughly <strong>200 Norman barons</strong> now held England’s manors in exchange for supplying <strong>armoured knights</strong>.",
+            "spoken": "The Domesday survey revealed a total handover of wealth. <short pause> Domesday proved Anglo-Saxon lords had been wiped out: roughly 200 Norman barons now held England’s manors in exchange for supplying armoured knights .",
+            "paired_prose_hash": "e1558c90bf",
+            "connective": "The Domesday survey revealed a total handover of wealth."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "England Locked in Feudal Rule",
+            "date": "By 1087",
+            "img": "/images/medieval_england/source_e_william_conqueror_seal.jpg",
+            "mode": "contain-light",
+            "stat": "Castles, Terror & Law Bind a Conquered Realm",
+            "html": "Combining <strong>stone castles</strong>, <strong>famine terror</strong>, and the <strong>Domesday feudal system</strong>, William’s tiny Norman elite reshaped England’s rulers, laws, and language.",
+            "spoken": "Within twenty years, Norman control stood unshakeable. <short pause> Combining stone castles , famine terror , and the Domesday feudal system , William’s tiny Norman elite reshaped England’s rulers, laws, and language.",
+            "connective": "Within twenty years, Norman control stood unshakeable."
+          }
+        ],
+        "takeaway": "William’s outnumbered Normans secured England through rapid castles, brutal northern terror, the Domesday tax survey, and handing English land to feudal barons.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> William’s outnumbered Normans secured England through rapid castles, brutal northern terror, the Domesday tax survey, and handing English land to feudal barons.",
+        "vocab": [
+          [
+            "1. Motte-and-Bailey",
+            "Early Norman fort with a high earth mound and fenced lower yard."
+          ],
+          [
+            "2. Harrying",
+            "Burning crops, villages, and livestock to starve rebels into submission."
+          ],
+          [
+            "3. Domesday Book",
+            "William I’s 1086 survey of all English land and wealth to raise taxes."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3",
@@ -4449,7 +4665,115 @@
           "question": "Why did King Henry II walk barefoot through Canterbury in 1174?",
           "prose_hash": "f99f88d103"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "medieval_england_l03_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 3",
+        "datesBadge": "1154 – 1174",
+        "topicLabel": "Enquiry 03: Crown vs Church — Henry II & Thomas Becket (1154–1174)",
+        "title": "Why Did King Henry II’s Feud with Becket End in Cathedral Murder?",
+        "spokenTitle": "Why did King Henry the Second’s feud with Becket end in cathedral murder?",
+        "thumbUrl": "/images/medieval_england/source_a_henry_exiles_becket_kin.jpg",
+        "provenanceNote": "British Library Illuminated Manuscripts, Metropolitan Museum of Art & Historic England (Zero AI Imagery)",
+        "bridges": [
+          "Sudden Change",
+          "Courtroom Clash",
+          "Royal Outburst",
+          "Public Penance",
+          "Church Victory"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Hoping for an Obedient Friend",
+            "date": "1154–1162",
+            "img": "/images/medieval_church_interior.jpg",
+            "mode": "contain",
+            "stat": "1162: Henry Names Chancellor Becket Archbishop",
+            "html": "<strong>King Henry II</strong> appointed his rich hunting friend <strong>Thomas Becket</strong> as Archbishop of Canterbury in 1162, expecting a loyal helper to control the <strong>English Church</strong>.",
+            "spoken": "Why did King Henry the Second’s feud with Becket end in cathedral murder? <short pause> King Henry II appointed his rich hunting friend Thomas Becket as Archbishop of Canterbury in 1162, expecting a loyal helper to control the English Church .",
+            "paired_prose_hash": "c9e0e3f993",
+            "connective": "Why did King Henry the Second’s feud with Becket end in cathedral murder?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Silk Robes Swapped for Hairshirt",
+            "date": "June 1162",
+            "img": "/images/medieval_england/plate_3_1_henry_becket_dispute.jpg",
+            "mode": "contain-light",
+            "stat": "Becket Puts the Pope Above the English King",
+            "html": "Instead, Becket quit as Chancellor, swapped silk robes for an <strong>itchy goat hairshirt</strong>, and declared himself loyal only to <strong>the Pope</strong> and <strong>God’s Church</strong>.",
+            "spoken": "To Henry’s shock, becoming Archbishop changed Becket overnight. <short pause> Instead, Becket quit as Chancellor, swapped silk robes for an itchy goat hairshirt , and declared himself loyal only to the Pope and God’s Church .",
+            "paired_prose_hash": "a8f1fe1dd1",
+            "connective": "To Henry’s shock, becoming Archbishop changed Becket overnight."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Clash Over Criminal Priests",
+            "date": "Jan 1164",
+            "img": "/images/medieval_england/source_a_henry_exiles_becket_kin.jpg",
+            "mode": "contain-light",
+            "stat": "Clarendon 1164: Who Punishes Guilty Clergy?",
+            "html": "At <strong>Clarendon</strong> in 1164, Henry demanded harsh royal trials for <strong>criminal priests</strong>, but Becket refused to let royal judges punish <strong>Church clergy</strong> and fled to France.",
+            "spoken": "Their quarrel exploded over priests who committed violent crimes. <short pause> At Clarendon in 1164, Henry demanded harsh royal trials for criminal priests , but Becket refused to let royal judges punish Church clergy and fled to France.",
+            "paired_prose_hash": "e938bb63f5",
+            "connective": "Their quarrel exploded over priests who committed violent crimes."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Swords at Canterbury’s Altar",
+            "date": "29 Dec 1170",
+            "img": "/images/medieval_england/source_b_becket_murder_cathedral.jpg",
+            "mode": "contain-light",
+            "stat": "Four Knights Hack Becket Dead in the Cathedral",
+            "html": "When Becket returned and punished royal bishops, <strong>Henry shouted in fury</strong>. Hearing him, <strong>four knights</strong> galloped to <strong>Canterbury Cathedral</strong> and killed Becket at the altar.",
+            "spoken": "A furious royal outburst turned argument into bloodshed. <short pause> When Becket returned and punished royal bishops, Henry shouted in fury . Hearing him, four knights galloped to Canterbury Cathedral and killed Becket at the altar.",
+            "paired_prose_hash": "71b23b2e55",
+            "connective": "A furious royal outburst turned argument into bloodshed."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Barefoot King Whipped by Monks",
+            "date": "July 1174",
+            "img": "/images/medieval_england/plate_3_2_henry_ii_penance_becket.jpg",
+            "mode": "contain-light",
+            "stat": "80 Monks Whip Barefoot Henry at Becket’s Shrine",
+            "html": "Shocked Europe hailed Becket as a <strong>saint and martyr</strong>. In 1174, barefoot <strong>Henry II</strong> walked through Canterbury so monks could <strong>whip his back</strong>.",
+            "spoken": "Outrage across Christian Europe forced the mighty king to kneel. <short pause> Shocked Europe hailed Becket as a saint and martyr . In 1174, barefoot Henry II walked through Canterbury so monks could whip his back .",
+            "paired_prose_hash": "f99f88d103",
+            "connective": "Outrage across Christian Europe forced the mighty king to kneel."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Martyrdom Protects Church Courts",
+            "date": "1174 Onwards",
+            "img": "/images/medieval_england/source_d_becket_pilgrim_badge.jpg",
+            "mode": "contain",
+            "stat": "Church Courts Survive Until Henry VIII’s Reign",
+            "html": "In death, <strong>Saint Thomas Becket</strong> defeated the King: Henry dropped his legal plans, <strong>Church courts</strong> kept their freedoms, and thousands wore <strong>Canterbury pilgrim badges</strong>.",
+            "spoken": "Becket won far more in death than in life. <short pause> In death, Saint Thomas Becket defeated the King: Henry dropped his legal plans, Church courts kept their freedoms, and thousands wore Canterbury pilgrim badges .",
+            "connective": "Becket won far more in death than in life."
+          }
+        ],
+        "takeaway": "Henry II’s bid to control Church courts backfired when four knights murdered Archbishop Becket, turning Becket into a saint and forcing the King into public penance.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Henry II’s bid to control Church courts backfired when four knights murdered Archbishop Becket, turning Becket into a saint and forcing the King into public penance.",
+        "vocab": [
+          [
+            "1. Benefit of Clergy",
+            "Right of churchmen to face lenient Church courts instead of royal judges."
+          ],
+          [
+            "2. Excommunication",
+            "Official Church punishment cutting a person off from Catholic sacraments."
+          ],
+          [
+            "3. Martyr",
+            "Person killed for refusing to give up their religious faith or principles."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_4",
@@ -5856,7 +6180,115 @@
           "question": "Why did civil war break out right after Magna Carta was sealed?",
           "prose_hash": "0c99a35f12"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "medieval_england_l04_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 4",
+        "datesBadge": "1199 – 1216",
+        "topicLabel": "Enquiry 04: Magna Carta (1215) & Medieval Kingship (1199–1216)",
+        "title": "Why Did Rebel Barons Force King John to Seal Magna Carta in 1215?",
+        "spokenTitle": "Why did rebel barons force King John to seal Magna Carta in 1215?",
+        "thumbUrl": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+        "provenanceNote": "British Library Manuscripts, Worcester Cathedral, English Heritage & Sacro Speco Subiaco (Zero AI Imagery)",
+        "bridges": [
+          "Churches Locked",
+          "Barons Revolt",
+          "Runnymede Seal",
+          "Broken Peace",
+          "Law Above Kings"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "“Softsword” Loses Normandy",
+            "date": "1199–1204",
+            "img": "/images/medieval_england/plate_4_1_king_john_matthew_paris.jpg",
+            "mode": "contain",
+            "stat": "1204: France Captures Normandy; Taxes Soar",
+            "html": "After losing <strong>Normandy</strong> to France in 1204, <strong>King John</strong>—mocked by nobles as <strong>“Softsword”</strong>—squeezed English barons with huge taxes to win it back.",
+            "spoken": "Why did rebel barons force King John to seal Magna Carta in 1215? <short pause> After losing Normandy to France in 1204, King John, mocked by nobles as “Softsword”, squeezed English barons with huge taxes to win it back.",
+            "paired_prose_hash": "93af47e205",
+            "connective": "Why did rebel barons force King John to seal Magna Carta in 1215?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Five Years of Silent Churches",
+            "date": "1208–1213",
+            "img": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+            "mode": "contain",
+            "stat": "1208 Interdict Locks Every English Parish Church",
+            "html": "Quarrelling with <strong>Pope Innocent III</strong>, John brought a five-year <strong>Interdict</strong> on England: church doors stayed locked and bells fell silent until <strong>John backed down</strong>.",
+            "spoken": "Next, John picked a disastrous fight with the Pope. <short pause> Quarrelling with Pope Innocent III , John brought a five-year Interdict on England: church doors stayed locked and bells fell silent until John backed down .",
+            "paired_prose_hash": "f656be64e0",
+            "connective": "Next, John picked a disastrous fight with the Pope."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Defeat Sparks Baronial Revolt",
+            "date": "1214–May 1215",
+            "img": "/images/medieval_england/plate_4_2_king_john_runnymede.jpg",
+            "mode": "contain-light",
+            "stat": "May 1215: Rebel Barons Capture London",
+            "html": "When France smashed John’s army at <strong>Bouvines</strong> in 1214, John still demanded <strong>scutage war tax</strong>—driving angry <strong>rebel barons</strong> to march south and seize London.",
+            "spoken": "Defeat in France finally pushed England’s barons into open revolt. <short pause> When France smashed John’s army at Bouvines in 1214, John still demanded scutage war tax, driving angry rebel barons to march south and seize London.",
+            "paired_prose_hash": "783207c9c0",
+            "connective": "Defeat in France finally pushed England’s barons into open revolt."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Sixty-Three Rules at Runnymede",
+            "date": "15 June 1215",
+            "img": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+            "mode": "contain-light",
+            "stat": "Clause 39: No Prison Without Fair Lawful Trial",
+            "html": "Cornered at <strong>Runnymede</strong>, John sealed <strong>Magna Carta</strong>. It banned unfair taxes, while <strong>Clause 39</strong> promised no free man could be jailed without lawful trial.",
+            "spoken": "Trapped and broke beside the Thames, John had to bargain. <short pause> Cornered at Runnymede , John sealed Magna Carta . It banned unfair taxes, while Clause 39 promised no free man could be jailed without lawful trial.",
+            "paired_prose_hash": "8748014c35",
+            "connective": "Trapped and broke beside the Thames, John had to bargain."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Broken Charter and Civil War",
+            "date": "1215–Oct 1216",
+            "img": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
+            "mode": "contain",
+            "stat": "Pope Voids Charter; Rebels Invite French Prince",
+            "html": "Peace lasted weeks: John persuaded the Pope to tear up the charter, sparking <strong>baronial civil war</strong> and a French invasion until <strong>John died</strong> in October 1216.",
+            "spoken": "Instead of bringing peace, the Great Charter triggered immediate war. <short pause> Peace lasted weeks: John persuaded the Pope to tear up the charter, sparking baronial civil war and a French invasion until John died in October 1216.",
+            "paired_prose_hash": "0c99a35f12",
+            "connective": "Instead of bringing peace, the Great Charter triggered immediate war."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Even Kings Must Obey the Law",
+            "date": "1216–1225",
+            "img": "/images/medieval_england/source_a_king_john_effigy_worcester.jpg",
+            "mode": "contain",
+            "stat": "Reissued for Henry III as Bedrock of English Law",
+            "html": "After John’s death, regent William Marshal reissued <strong>Magna Carta</strong> for young <strong>Henry III</strong>, cementing a lasting rule: <strong>royal power sits below the law</strong>.",
+            "spoken": "John’s sudden death saved the charter he hated. <short pause> After John’s death, regent William Marshal reissued Magna Carta for young Henry III , cementing a lasting rule: royal power sits below the law .",
+            "connective": "John’s sudden death saved the charter he hated."
+          }
+        ],
+        "takeaway": "Heavy war taxes, defeat in France, and church conflict drove rebel barons to force King John into sealing Magna Carta—placing English kings under the rule of law.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Heavy war taxes, defeat in France, and church conflict drove rebel barons to force King John into sealing Magna Carta, placing English kings under the rule of law.",
+        "vocab": [
+          [
+            "1. Interdict",
+            "Papal order closing churches and banning Christian weddings and burials."
+          ],
+          [
+            "2. Scutage",
+            "Cash tax paid by feudal barons instead of sending knights to fight."
+          ],
+          [
+            "3. Magna Carta",
+            "The 1215 Great Charter placing the English king under the rule of law."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_5",
@@ -7184,7 +7616,115 @@
           "question": "What happened when King Richard II met Wat Tyler’s rebels at Smithfield?",
           "prose_hash": "79665cebf3"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "medieval_england_l05_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 5",
+        "datesBadge": "1348 – 1381",
+        "topicLabel": "Enquiry 05: The Black Death & The Peasants’ Revolt (1348–1381)",
+        "title": "How Did the Black Death Spark the 1381 Peasants’ Revolt?",
+        "spokenTitle": "How did the Black Death spark the 1381 Peasants’ Revolt?",
+        "thumbUrl": "/images/medieval_england/source_c_john_ball_preaching.jpg",
+        "provenanceNote": "British Library Froissart & Knighton Manuscripts, Walters Art Museum & Manorial Archives (Zero AI Imagery)",
+        "bridges": [
+          "Worker Shortage",
+          "Wages Frozen",
+          "Unfair Poll Tax",
+          "March on London",
+          "Serfdom Fades"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Plague Kills Nearly Half England",
+            "date": "1348–1350",
+            "img": "/images/medieval_england/plate_5_1_black_death_burial.jpg",
+            "mode": "contain-light",
+            "stat": "June 1348: Plague Ships Reach Dorset Coast",
+            "html": "Arriving by ship in Dorset in 1348, the <strong>Black Death</strong> gave victims painful <strong>black buboes</strong> and high fever—killing <strong>nearly half</strong> of England’s population.",
+            "spoken": "How did the Black Death spark the 1381 Peasants’ Revolt? <short pause> Arriving by ship in Dorset in 1348, the Black Death gave victims painful black buboes and high fever, killing nearly half of England’s population.",
+            "paired_prose_hash": "cc7c96c840",
+            "connective": "How did the Black Death spark the 1381 Peasants’ Revolt?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Surviving Workers Demand Pay",
+            "date": "1349–1351",
+            "img": "/images/plague_burial.jpg",
+            "mode": "contain",
+            "stat": "Empty Farms Let Scarce Workers Demand Double Pay",
+            "html": "With villages half-empty and crops rotting unpicked, scarce <strong>peasant workers</strong> gained bargaining power—demanding <strong>double wages</strong> and refusing unpaid <strong>feudal labour</strong>.",
+            "spoken": "Mass death suddenly turned England’s countryside upside down. <short pause> With villages half-empty and crops rotting unpicked, scarce peasant workers gained bargaining power, demanding double wages and refusing unpaid feudal labour .",
+            "paired_prose_hash": "adc91de902",
+            "connective": "Mass death suddenly turned England’s countryside upside down."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Lords Freeze Peasant Wages",
+            "date": "1351–1363",
+            "img": "/images/medieval_england/source_a_henry_knighton_chronicle.jpg",
+            "mode": "contain-light",
+            "stat": "1351 Statute of Labourers Caps Pay at 1346 Rates",
+            "html": "Outraged landowners passed the 1351 <strong>Statute of Labourers</strong>, freezing pay at <strong>pre-plague wages</strong>, jailing runaway serfs, and banning poor folk from <strong>fine clothes</strong>.",
+            "spoken": "Furious landowners used Parliament to push peasants back down. <short pause> Outraged landowners passed the 1351 Statute of Labourers , freezing pay at pre-plague wages , jailing runaway serfs, and banning poor folk from fine clothes .",
+            "paired_prose_hash": "a94b6262a2",
+            "connective": "Furious landowners used Parliament to push peasants back down."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Flat Poll Tax Ignites Revolt",
+            "date": "May 1381",
+            "img": "/images/medieval_england/source_c_john_ball_preaching.jpg",
+            "mode": "landscape",
+            "stat": "1381 Poll Tax: 12 Pence From Rich & Poor Alike",
+            "html": "To fund war with France, the <strong>1381 Poll Tax</strong> charged every adult <strong>twelve pence</strong>. Furious <strong>Essex villagers</strong> chased out collectors as John Ball preached equality.",
+            "spoken": "Unfair war taxes finally made peasant anger boil over. <short pause> To fund war with France, the 1381 Poll Tax charged every adult twelve pence . Furious Essex villagers chased out collectors as John Ball preached equality.",
+            "paired_prose_hash": "b842cee3a3",
+            "connective": "Unfair war taxes finally made peasant anger boil over."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Showdown Against the Boy King",
+            "date": "15 June 1381",
+            "img": "/images/medieval_england/source_b_death_wat_tyler_smithfield.jpg",
+            "mode": "landscape",
+            "stat": "30,000 Rebels in London; Wat Tyler Killed",
+            "html": "<strong>Wat Tyler</strong> led 30,000 rebels into London. When London’s mayor stabbed Tyler at <strong>Smithfield</strong>, fourteen-year-old <strong>Richard II</strong> boldly promised freedom to calm the crowd.",
+            "spoken": "Thirty thousand rebels marched straight into the heart of London. <short pause> Wat Tyler led 30,000 rebels into London. When London’s mayor stabbed Tyler at Smithfield , fourteen-year-old Richard II boldly promised freedom to calm the crowd.",
+            "paired_prose_hash": "79665cebf3",
+            "connective": "Thirty thousand rebels marched straight into the heart of London."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Feudal Serfdom Slowly Dies Out",
+            "date": "1381–1450",
+            "img": "/images/medieval_court_roll_manuscript.png",
+            "mode": "landscape",
+            "stat": "Poll Tax Dropped; Serfdom Fades Across England",
+            "html": "Richard soon broke his word and <strong>hanged rebel leaders</strong>, yet Parliament scrapped the <strong>Poll Tax</strong> and unpaid <strong>feudal serfdom</strong> withered away for cash wages.",
+            "spoken": "Although the uprising was crushed, feudalism never fully recovered. <short pause> Richard soon broke his word and hanged rebel leaders , yet Parliament scrapped the Poll Tax and unpaid feudal serfdom withered away for cash wages.",
+            "connective": "Although the uprising was crushed, feudalism never fully recovered."
+          }
+        ],
+        "takeaway": "Plague labour shortages gave surviving workers new power; when lords froze wages and charged unfair Poll Taxes, the 1381 revolt hastened the end of serfdom.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Plague labour shortages gave surviving workers new power; when lords froze wages and charged unfair Poll Taxes, the 1381 revolt hastened the end of serfdom.",
+        "vocab": [
+          [
+            "1. Serfdom",
+            "Feudal rule tying unfree peasants to work a lord’s manor without pay."
+          ],
+          [
+            "2. Statute of Labourers",
+            "1351 law freezing peasant wages at low pre-plague levels."
+          ],
+          [
+            "3. Poll Tax",
+            "Flat tax charging every adult the exact same sum, rich or poor."
+          ]
+        ]
+      }
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",

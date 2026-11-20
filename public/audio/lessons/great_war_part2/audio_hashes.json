@@ -1,0 +1,156 @@
+{
+  "unitId": "great_war_part2",
+  "voiceKey": "male_historian",
+  "blocks": {
+    "lesson_4_home_front_dora_b1": {
+      "hash": "8ca408fa4c29f130",
+      "bytes": 164012,
+      "words": 82,
+      "updatedAt": "2026-11-19T18:19:54.397Z"
+    },
+    "lesson_4_home_front_dora_b2": {
+      "hash": "57bce38b993996a6",
+      "bytes": 156332,
+      "words": 80,
+      "updatedAt": "2026-11-19T18:19:54.715Z"
+    },
+    "lesson_4_home_front_dora_b3": {
+      "hash": "00c14e52fed1506d",
+      "bytes": 159884,
+      "words": 83,
+      "updatedAt": "2026-11-19T18:19:55.025Z"
+    },
+    "lesson_4_home_front_dora_b4": {
+      "hash": "e673eaadf45c7bc2",
+      "bytes": 171596,
+      "words": 85,
+      "updatedAt": "2026-11-19T18:19:55.371Z"
+    },
+    "lesson_4_home_front_dora_b5": {
+      "hash": "ab82f4be7b703bd3",
+      "bytes": 158732,
+      "words": 85,
+      "updatedAt": "2026-11-19T18:19:55.687Z"
+    },
+    "lesson_5_versailles_b1": {
+      "hash": "47a4e88cdf822971",
+      "bytes": 179852,
+      "words": 90,
+      "updatedAt": "2026-11-19T23:16:35.480Z"
+    },
+    "lesson_5_versailles_b2": {
+      "hash": "00da42b73640197e",
+      "bytes": 178796,
+      "words": 88,
+      "updatedAt": "2026-11-19T18:19:56.363Z"
+    },
+    "lesson_5_versailles_b3": {
+      "hash": "6dfc94a47e5b22e3",
+      "bytes": 206828,
+      "words": 91,
+      "updatedAt": "2026-11-19T23:16:36.078Z"
+    },
+    "lesson_5_versailles_b4": {
+      "hash": "02aaad5f3f8187bc",
+      "bytes": 179564,
+      "words": 91,
+      "updatedAt": "2026-11-19T18:19:57.151Z"
+    },
+    "lesson_5_versailles_b5": {
+      "hash": "74ef63fef1f83997",
+      "bytes": 174092,
+      "words": 84,
+      "updatedAt": "2026-11-19T18:19:57.523Z"
+    },
+    "lesson_1_enlistment_b1": {
+      "hash": "10d95d5bf5e220c3",
+      "bytes": 155276,
+      "words": 80,
+      "updatedAt": "2026-11-19T18:23:01.113Z"
+    },
+    "lesson_1_enlistment_b2": {
+      "hash": "3740f60231f6e13f",
+      "bytes": 164108,
+      "words": 85,
+      "updatedAt": "2026-11-19T23:16:34.411Z"
+    },
+    "lesson_1_enlistment_b3": {
+      "hash": "9844ebcb115411ca",
+      "bytes": 155852,
+      "words": 82,
+      "updatedAt": "2026-11-19T18:23:01.802Z"
+    },
+    "lesson_1_enlistment_b4": {
+      "hash": "56838de5171c4422",
+      "bytes": 145292,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:23:02.144Z"
+    },
+    "lesson_1_enlistment_b5": {
+      "hash": "ec24b209aa51498c",
+      "bytes": 150572,
+      "words": 80,
+      "updatedAt": "2026-11-19T18:23:02.476Z"
+    },
+    "lesson_2_trenches_haig_b1": {
+      "hash": "e534043d3b66e943",
+      "bytes": 149516,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:23:02.812Z"
+    },
+    "lesson_2_trenches_haig_b2": {
+      "hash": "c319e78cf427b272",
+      "bytes": 150572,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:23:03.122Z"
+    },
+    "lesson_2_trenches_haig_b3": {
+      "hash": "30af8f3b33ee19bf",
+      "bytes": 154124,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:23:03.474Z"
+    },
+    "lesson_2_trenches_haig_b4": {
+      "hash": "63f3f1d1e65e7299",
+      "bytes": 170060,
+      "words": 81,
+      "updatedAt": "2026-11-19T23:16:34.878Z"
+    },
+    "lesson_2_trenches_haig_b5": {
+      "hash": "c0c7c6b3a13775b1",
+      "bytes": 168332,
+      "words": 81,
+      "updatedAt": "2026-11-19T18:23:04.146Z"
+    },
+    "lesson_3_empire_troops_b1": {
+      "hash": "202923f3f6e9e72d",
+      "bytes": 155852,
+      "words": 83,
+      "updatedAt": "2026-11-19T18:23:04.458Z"
+    },
+    "lesson_3_empire_troops_b2": {
+      "hash": "e628a19f6b69c285",
+      "bytes": 165356,
+      "words": 85,
+      "updatedAt": "2026-11-19T18:23:04.876Z"
+    },
+    "lesson_3_empire_troops_b3": {
+      "hash": "6fa271cbd11bfd7b",
+      "bytes": 156332,
+      "words": 85,
+      "updatedAt": "2026-11-19T18:23:05.209Z"
+    },
+    "lesson_3_empire_troops_b4": {
+      "hash": "9548d4971da62490",
+      "bytes": 175724,
+      "words": 81,
+      "updatedAt": "2026-11-19T18:23:05.565Z"
+    },
+    "lesson_3_empire_troops_b5": {
+      "hash": "b71bde9c853405e7",
+      "bytes": 157484,
+      "words": 82,
+      "updatedAt": "2026-11-19T18:23:05.892Z"
+    }
+  }
+}

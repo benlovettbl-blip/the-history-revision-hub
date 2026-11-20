@@ -15,8 +15,10 @@ import { DISCIPLINARY_STRANDS, YEAR_GROUPS_PROGRESSION } from './disciplinary_sk
 import { PEDAGOGY_RESEARCH_BANK } from './pedagogy_data.js';
 import { SCHEMES_OF_WORK_DATA } from './scheme_of_work_data.js';
 import { isVerifiedPdf } from './verified_pdf_manifest.js';
+import { UNIT_RESOURCES_CATALOG, isStaffModeActive } from './data/unit_resources_catalog.js';
+import { renderSequenceView } from './curriculum_map.js';
 
-let activePortalTab = 'curriculum';
+let activePortalTab = 'tracker';
 let selectedSowUnit = 'medieval_england';
 let guidanceSearchQuery = '';
 let pedagogyCategoryFilter = 'all';
@@ -116,17 +118,17 @@ const DEPARTMENT_POLICIES = [
   {
     id: 'policy_02',
     num: '02',
-    title: 'Fieldwork, Primary Archives & Visits Protocol',
-    subtitle: 'Primary Archival Fieldwork, Memorial Conduct & Safety Standards',
-    category: 'Fieldwork & Enrichment',
+    title: 'Whole-School Curriculum Overview & Progression Map',
+    subtitle: 'Tabular 5-Year Curriculum Sequence & Assessment Endpoints (Years 7–11)',
+    category: 'Curriculum Planning',
     badgeClass: 'badge-emerald',
     summary:
-      'Governs on-site primary archival fieldwork, battlefield study visits (such as the Ypres Salient Field Guide), local history heritage enquiries, and student safety.',
-    pdfUrl: '/pdfs/Ypres trip 2026 Code of Conduct.pdf',
+      'Complete term-by-term departmental curriculum overview across Key Stage 2, Key Stage 3, and Edexcel GCSE (9–1), mapping substantive concepts and disciplinary progression.',
+    pdfUrl: '/pdfs/whole_school_curriculum_overview.pdf',
     keyPoints: [
-      'Primary source handling protocols in local archives.',
-      'Fieldwork companion packs and respectful memorial conduct.',
-      'Integration of local soldier archives into the curriculum.',
+      'Chronological coherence from c.1066 to the modern world across Key Stage 3.',
+      'Deliberate conceptual bridging into Edexcel GCSE Papers 1, 2, and 3.',
+      'Printable single-document overview for department planning and curriculum review.',
     ],
   },
 ];
@@ -140,9 +142,9 @@ const UNIT_HEALTH_DATA = [
     enquiries: '11 Enquiries',
     hours: '11–16 Hours',
     workbookText: '28-Page Pupil Workbook',
-    textbookText: '20-Page Master Textbook',
+    textbookText: '16-Page Classroom Textbook',
     mapText: 'Evacuation, Kindertransport & Blitz Maps',
-    workbookPdf: '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf',
+    workbookPdf: '/pdfs/ks2_ww2_pupil_workbook.pdf',
     textbookPdf: '/pdfs/ks2_ww2_textbook.pdf',
   },
   {
@@ -261,7 +263,7 @@ const UNIT_HEALTH_DATA = [
     mapText: 'Somme & Ypres Salient Battlefields',
     workbookPdf: '/pdfs/great_war_part2_pupil_workbook.pdf',
     textbookPdf: '/pdfs/great_war_part2_textbook.pdf',
-    combinedPdf: '/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf',
+    combinedPdf: '/pdfs/great_war_part2_combined_workbook.pdf',
   },
   {
     year: 'Key Stage 3',
@@ -369,7 +371,11 @@ const UNIT_HEALTH_DATA = [
   },
 ];
 
-export async function renderDepartmentPortal(targetTab = 'curriculum') {
+export async function renderDepartmentPortal(targetTab = 'tracker') {
+  if (!isStaffModeActive()) {
+    switchView('dashboard');
+    return;
+  }
   if (targetTab === 'guidance' || targetTab === 'policies') {
     activePortalTab = 'governance';
   } else {
@@ -429,8 +435,8 @@ export async function renderDepartmentPortal(targetTab = 'curriculum') {
         </div>
 
         <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-          <button type="button" onclick="window.switchView('curriculum')" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; border: 1.5px solid #1e3a8a; color: #1e3a8a; background: #fff; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#eff6ff'" onmouseout="this.style.background='#fff'">
-            <i class="fa-solid fa-table-columns"></i> 5-Year Curriculum Map
+          <button type="button" onclick="window.switchPortalTab('sequence')" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; border: 1.5px solid #1e3a8a; color: #1e3a8a; background: #fff; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#eff6ff'" onmouseout="this.style.background='#fff'">
+            <i class="fa-solid fa-table-columns"></i> 5-Year Termly Sequence
           </button>
           <a href="/pdfs/history_marking_and_feedback_policy_v2.pdf" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #0284c7; color: #0284c7; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fff'">
             <i class="fa-solid fa-file-signature"></i> Marking Policy (PDF)
@@ -495,19 +501,22 @@ export async function renderDepartmentPortal(targetTab = 'curriculum') {
         </div>
       </div>
 
-      <!-- Navigation Tabs Bar (4 Clean Pillars) -->
+      <!-- Navigation Tabs Bar (Unified Single Staff Portal) -->
       <div style="display: flex; gap: 8px; border-bottom: 2px solid #cbd5e1; margin-bottom: 24px; overflow-x: auto; padding-bottom: 2px;">
-        <button type="button" data-tab="curriculum" class="portal-nav-tab ${activePortalTab === 'curriculum' ? 'active' : ''}" onclick="window.switchPortalTab('curriculum')">
-          <i class="fa-solid fa-map-location-dot"></i> 1. Curriculum Intent &amp; SOWs
-        </button>
         <button type="button" data-tab="tracker" class="portal-nav-tab ${activePortalTab === 'tracker' ? 'active' : ''}" onclick="window.switchPortalTab('tracker')">
-          <i class="fa-solid fa-book-open"></i> 2. Curriculum Directory &amp; Print Bank
+          <i class="fa-solid fa-print"></i> 1. Print-Room &amp; All Booklets
+        </button>
+        <button type="button" data-tab="curriculum" class="portal-nav-tab ${activePortalTab === 'curriculum' ? 'active' : ''}" onclick="window.switchPortalTab('curriculum')">
+          <i class="fa-solid fa-map-location-dot"></i> 2. Schemes of Work (KS3)
+        </button>
+        <button type="button" data-tab="sequence" class="portal-nav-tab ${activePortalTab === 'sequence' ? 'active' : ''}" onclick="window.switchPortalTab('sequence')">
+          <i class="fa-solid fa-table-columns"></i> 3. 5-Year Termly Sequence
         </button>
         <button type="button" data-tab="pedagogy" class="portal-nav-tab ${activePortalTab === 'pedagogy' ? 'active' : ''}" onclick="window.switchPortalTab('pedagogy')">
-          <i class="fa-solid fa-brain"></i> 3. Disciplinary Pedagogy &amp; Evidence
+          <i class="fa-solid fa-brain"></i> 4. Disciplinary Pedagogy
         </button>
         <button type="button" data-tab="governance" class="portal-nav-tab ${activePortalTab === 'governance' ? 'active' : ''}" onclick="window.switchPortalTab('governance')">
-          <i class="fa-solid fa-file-shield"></i> 4. Department Handbook &amp; Policies
+          <i class="fa-solid fa-file-shield"></i> 5. Policies &amp; Handbooks
         </button>
       </div>
 
@@ -525,6 +534,8 @@ function renderActivePortalTab() {
 
   if (activePortalTab === 'curriculum') {
     renderCurriculumTab(contentEl);
+  } else if (activePortalTab === 'sequence') {
+    renderSequenceView(contentEl);
   } else if (activePortalTab === 'pedagogy') {
     renderPedagogyTab(contentEl);
   } else if (activePortalTab === 'tracker') {
@@ -539,91 +550,125 @@ function renderActivePortalTab() {
 }
 
 // -------------------------------------------------------------
-// TAB 2: CURRICULUM DIRECTORY & RESOURCE BANK
+// TAB 1: PRINT-ROOM & ALL BOOKLETS DIRECTORY (100% CATALOG DRIVEN)
 // -------------------------------------------------------------
 function renderTrackerTab(container) {
+  const pillLink = (href, label, bg, color, border, title = '') => {
+    if (!href) return '';
+    return `<a href="${href}" target="_blank" title="${title || label}" style="display:inline-flex;align-items:center;gap:4px;font-size:0.74rem;font-weight:700;padding:3px 8px;border-radius:5px;text-decoration:none;background:${bg};color:${color};border:1px solid ${border};white-space:nowrap;">${label}</a>`;
+  };
+
   container.innerHTML = `
     <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
       <div style="padding: 18px 24px; background: #f8fafc; border-bottom: 1.5px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
           <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; font-family: 'Playfair Display', Georgia, serif;">
-            Curriculum Units &amp; Learning Publications Directory
+            Print-Room Directory: Every Booklet, Mark Scheme &amp; Copy Spec
           </h3>
-          <p style="margin: 4px 0 0 0; font-size: 0.88rem; color: #64748b;">
-            Official syllabus alignment, curriculum hours, and direct print-ready publication downloads across Key Stage 3 and GCSE (9–1).
+          <p style="margin: 4px 0 0 0; font-size: 0.86rem; color: #64748b;">
+            Default Print-Room Instruction for all Textbooks, Workbooks &amp; Retrieval Companions: <strong>A3 Landscape &bull; 2-Up Booklet &bull; Flip on Short Edge &bull; Saddle-Stitch</strong> (Revision Guides &amp; Mark Schemes: <strong>A4 Portrait &bull; Flip Long Edge</strong>).
           </p>
-        </div>
-        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 6px;">
-            <i class="fa-solid fa-graduation-cap"></i> KS3 Core (12 Units)
-          </span>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 6px;">
-            <i class="fa-solid fa-award"></i> GCSE 9–1 (5 Papers)
-          </span>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: #15803d; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 4px 10px; border-radius: 6px;">
-            <i class="fa-solid fa-child-reaching"></i> Primary KS2 (1 Unit)
-          </span>
         </div>
       </div>
 
       <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem;">
           <thead>
-            <tr style="background: #0f172a; color: #ffffff; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.08em;">
-              <th style="padding: 12px 18px; border: none;">Key Stage &amp; Paper</th>
-              <th style="padding: 12px 18px; border: none;">Curriculum Unit Title</th>
-              <th style="padding: 12px 18px; border: none;">Teaching Scale</th>
-              <th style="padding: 12px 18px; border: none;">Pupil Workbook (Print)</th>
-              <th style="padding: 12px 18px; border: none;">Classroom Textbook</th>
-              <th style="padding: 12px 18px; border: none;">Cartographic Map</th>
-              <th style="padding: 12px 18px; border: none; text-align: right;">Classroom Actions</th>
+            <tr style="background: #0f172a; color: #ffffff; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.07em;">
+              <th style="padding: 11px 14px;">Stage</th>
+              <th style="padding: 11px 14px;">Curriculum Unit</th>
+              <th style="padding: 11px 14px;">Pupil Workbooks &amp; Mark Schemes</th>
+              <th style="padding: 11px 14px;">Classroom Textbooks</th>
+              <th style="padding: 11px 14px;">Retrieval, Guides &amp; SOW</th>
+              <th style="padding: 11px 14px; text-align: right;">Unit</th>
             </tr>
           </thead>
           <tbody>
             ${UNIT_HEALTH_DATA.map((u, idx) => {
               const bg = idx % 2 === 0 ? '#ffffff' : '#f8fafc';
+              const cat = UNIT_RESOURCES_CATALOG[u.uid] || {};
+
+              // Build Workbook + Mark Scheme links across all Editions / Key Topics or single unit
+              const wbPills = [];
+              if (cat.workbook && Array.isArray(cat.workbook.editions) && cat.workbook.editions.length > 0) {
+                cat.workbook.editions.forEach((ed) => {
+                  const shortCode = ed.id === 'western_front' ? 'WF' : ed.id === '18th_19th' ? 'Era 3' : ed.id === 'medieval' ? 'Era 1' : ed.id === 'renaissance' ? 'Era 2' : ed.id === 'modern' ? 'Era 4' : ed.id;
+                  const href = ed.pdfUrl && isVerifiedPdf(ed.pdfUrl) ? ed.pdfUrl : ed.htmlUrl;
+                  wbPills.push(pillLink(href, `<i class="fa-solid fa-file-pen"></i> ${shortCode} WB`, '#eff6ff', '#1e3a8a', '#bfdbfe', ed.label));
+                  if (ed.msPdfUrl || ed.msHtmlUrl) {
+                    const msHref = ed.msPdfUrl && isVerifiedPdf(ed.msPdfUrl) ? ed.msPdfUrl : ed.msHtmlUrl;
+                    wbPills.push(pillLink(msHref, `<i class="fa-solid fa-key"></i> ${shortCode} MS`, '#ecfdf5', '#065f46', '#a7f3d0', `${ed.label} — Mark Scheme`));
+                  }
+                });
+              } else if (cat.workbook) {
+                const href = cat.workbook.pdfUrl && isVerifiedPdf(cat.workbook.pdfUrl) ? cat.workbook.pdfUrl : cat.workbook.htmlUrl;
+                wbPills.push(pillLink(href, `<i class="fa-solid fa-file-pen"></i> Workbook (${cat.workbook.pages || 'PDF'})`, '#eff6ff', '#1e3a8a', '#bfdbfe'));
+                if (cat.workbook.markSchemePdfUrl || cat.workbook.markSchemeHtmlUrl) {
+                  const msHref = cat.workbook.markSchemePdfUrl && isVerifiedPdf(cat.workbook.markSchemePdfUrl) ? cat.workbook.markSchemePdfUrl : cat.workbook.markSchemeHtmlUrl;
+                  wbPills.push(pillLink(msHref, `<i class="fa-solid fa-key"></i> Mark Scheme`, '#ecfdf5', '#065f46', '#a7f3d0'));
+                }
+              }
+
+              // Build Textbook links across all Editions / Key Topics or single unit
+              const tbPills = [];
+              if (cat.textbook && Array.isArray(cat.textbook.editions) && cat.textbook.editions.length > 0) {
+                cat.textbook.editions.forEach((ed) => {
+                  const shortCode = ed.id === 'western_front' ? 'WF' : ed.id === '18th_19th' ? 'Era 3' : ed.id === 'medieval' ? 'Era 1' : ed.id === 'renaissance' ? 'Era 2' : ed.id === 'modern' ? 'Era 4' : ed.id;
+                  const href = ed.pdfUrl && isVerifiedPdf(ed.pdfUrl) ? ed.pdfUrl : ed.htmlUrl;
+                  tbPills.push(pillLink(href, `<i class="fa-solid fa-book-open"></i> ${shortCode}`, '#f8fafc', '#0f172a', '#cbd5e1', ed.label));
+                });
+              } else if (cat.textbook) {
+                const href = cat.textbook.pdfUrl && isVerifiedPdf(cat.textbook.pdfUrl) ? cat.textbook.pdfUrl : cat.textbook.htmlUrl;
+                tbPills.push(pillLink(href, `<i class="fa-solid fa-book-open"></i> Textbook (${cat.textbook.pages || 'PDF'})`, '#f8fafc', '#0f172a', '#cbd5e1'));
+              }
+
+              // Build Retrieval Companion + Revision Guide + Mastery Pack + SOW links
+              const extraPills = [];
+              if (cat.retrieval && Array.isArray(cat.retrieval.editions) && cat.retrieval.editions.length > 0) {
+                cat.retrieval.editions.forEach((ed) => {
+                  const rcHref = ed.pdfUrl && isVerifiedPdf(ed.pdfUrl) ? ed.pdfUrl : ed.htmlUrl;
+                  extraPills.push(pillLink(rcHref, `<i class="fa-solid fa-list-check"></i> ${ed.id === 'western_front' ? 'WF' : 'Thematic'} RC`, '#f5f3ff', '#5b21b6', '#ddd6fe', ed.label));
+                });
+              } else if (cat.retrieval) {
+                const rcHref = cat.retrieval.pdfUrl && isVerifiedPdf(cat.retrieval.pdfUrl) ? cat.retrieval.pdfUrl : cat.retrieval.htmlUrl;
+                extraPills.push(pillLink(rcHref, `<i class="fa-solid fa-list-check"></i> Retrieval (${cat.retrieval.pages || ''})`, '#f5f3ff', '#5b21b6', '#ddd6fe', cat.retrieval.title));
+              }
+              if (cat.revisionGuide) {
+                const rgHref = cat.revisionGuide.pdfUrl && isVerifiedPdf(cat.revisionGuide.pdfUrl) ? cat.revisionGuide.pdfUrl : cat.revisionGuide.htmlUrl;
+                extraPills.push(pillLink(rgHref, `<i class="fa-solid fa-bolt"></i> Revision Guide`, '#fffbeb', '#92400e', '#fde68a', cat.revisionGuide.title));
+              }
+              if (cat.masteryExamPack) {
+                const mpHref = cat.masteryExamPack.pdfUrl && isVerifiedPdf(cat.masteryExamPack.pdfUrl) ? cat.masteryExamPack.pdfUrl : cat.masteryExamPack.htmlUrl;
+                extraPills.push(pillLink(mpHref, `<i class="fa-solid fa-file-signature"></i> Exam Pack`, '#eef2ff', '#3730a3', '#c7d2fe', cat.masteryExamPack.title));
+              }
+              if (cat.schemeOfWork) {
+                const sowHref = cat.schemeOfWork.pdfUrl && isVerifiedPdf(cat.schemeOfWork.pdfUrl) ? cat.schemeOfWork.pdfUrl : cat.schemeOfWork.htmlUrl;
+                extraPills.push(pillLink(sowHref, `<i class="fa-solid fa-clipboard-list"></i> SOW`, '#f0fdfa', '#0f766e', '#99f6e4', cat.schemeOfWork.title));
+              }
+
               return `
-                <tr style="background: ${bg}; border-bottom: 1px solid #e2e8f0; transition: background 0.15s ease;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='${bg}'">
-                  <td style="padding: 14px 18px; font-weight: 700; color: #1e3a8a; white-space: nowrap;">
+                <tr style="background: ${bg}; border-bottom: 1px solid #e2e8f0;">
+                  <td style="padding: 12px 14px; font-weight: 700; color: #1e3a8a; white-space: nowrap; vertical-align: top;">
                     ${u.year}
-                    <span style="font-size: 0.75rem; font-weight: 600; color: #64748b; display: block;">${u.ks}</span>
+                    <span style="font-size: 0.72rem; font-weight: 600; color: #64748b; display: block;">${u.ks}</span>
                   </td>
-                  <td style="padding: 14px 18px; font-weight: 700; color: #0f172a;">
-                    ${u.name}
+                  <td style="padding: 12px 14px; vertical-align: top;">
+                    <div style="font-weight: 800; color: #0f172a;">${u.name}</div>
+                    <div style="font-size: 0.74rem; color: #64748b; margin-top: 2px;">${u.enquiries} &bull; ${u.hours}</div>
                   </td>
-                  <td style="padding: 14px 18px; color: #475569; font-size: 0.84rem; white-space: nowrap;">
-                    <span style="font-weight: 700; color: #0f172a;">${u.enquiries}</span>
-                    <span style="display: block; font-size: 0.75rem; color: #64748b;">${u.hours}</span>
+                  <td style="padding: 12px 14px; vertical-align: top;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 5px;">${wbPills.join('')}</div>
                   </td>
-                  <td style="padding: 14px 18px;">
-                    <a href="${isVerifiedPdf(u.workbookPdf) ? u.workbookPdf : `/units/${u.uid}/pupil_workbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'">
-                      <i class="fa-solid fa-file-pen" style="color: #2563eb;"></i> ${u.workbookText}
-                    </a>
+                  <td style="padding: 12px 14px; vertical-align: top;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 5px;">${tbPills.join('')}</div>
                   </td>
-                  <td style="padding: 14px 18px;">
-                    <a href="${isVerifiedPdf(u.textbookPdf) ? u.textbookPdf : `/units/${u.uid}/textbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 700; color: #0f172a; background: #f8fafc; border: 1px solid #cbd5e1; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='#f8fafc'">
-                      <i class="fa-solid fa-book-open" style="color: #475569;"></i> ${u.textbookText}
-                    </a>
+                  <td style="padding: 12px 14px; vertical-align: top;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 5px;">${extraPills.join('')}</div>
                   </td>
-                  <td style="padding: 14px 18px; color: #334155; font-size: 0.82rem;">
-                    <i class="fa-solid fa-map-location-dot" style="color: #059669; margin-right: 4px;"></i> ${u.mapText}
-                  </td>
-                  <td style="padding: 14px 18px; text-align: right; white-space: nowrap;">
-                    <div style="display: inline-flex; gap: 6px;">
-                      <a href="${isVerifiedPdf(u.workbookPdf) ? u.workbookPdf : `/units/${u.uid}/pupil_workbook.html`}" target="_blank" title="${isVerifiedPdf(u.workbookPdf) ? 'Download Pupil Workbook (PDF)' : 'Open Pupil Workbook'}" style="padding: 6px 10px; background: #1e3a8a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
-                        <i class="fa-solid fa-file-pen"></i> WB
-                      </a>
-                      <a href="${isVerifiedPdf(u.textbookPdf) ? u.textbookPdf : `/units/${u.uid}/textbook.html`}" target="_blank" title="${isVerifiedPdf(u.textbookPdf) ? 'Download Master Textbook (PDF)' : 'Open Master Textbook'}" style="padding: 6px 10px; background: #475569; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
-                        <i class="fa-solid fa-book-open"></i> TB
-                      </a>
-                      ${u.combinedPdf ? `
-                      <a href="${isVerifiedPdf(u.combinedPdf) ? u.combinedPdf : `/units/${u.uid}/pupil_workbook.html`}" target="_blank" title="Combined Master Scholar Workbook" style="padding: 6px 10px; background: #4f46e5; color: #fff; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: 700;">
-                        <i class="fa-solid fa-layer-group"></i> 24P
-                      </a>` : ''}
-                      <button type="button" onclick="window.switchView('lessons', '${u.uid}')" title="Launch Interactive Unit" style="padding: 6px 10px; background: #059669; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.75rem; font-weight: 700;">
-                        <i class="fa-solid fa-play"></i>
-                      </button>
-                    </div>
+                  <td style="padding: 12px 14px; text-align: right; white-space: nowrap; vertical-align: top;">
+                    <button type="button" onclick="window.switchView('lessons', '${u.uid}')" title="Open Unit Lessons" style="padding: 6px 10px; background: #059669; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.75rem; font-weight: 700;">
+                      <i class="fa-solid fa-play"></i> Open
+                    </button>
                   </td>
                 </tr>
               `;
@@ -707,8 +752,8 @@ function renderGovernanceTab(container) {
               Interactive Years 7–11 progression matrix, Counsell 4-act enquiry sequencing, and printable PDF overviews.
             </p>
           </div>
-          <button type="button" onclick="window.switchView('curriculum')" style="width: 100%; padding: 8px 12px; background: #2563eb; color: #ffffff; border: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
-            <i class="fa-solid fa-arrow-right"></i> Open Curriculum Map
+          <button type="button" onclick="window.switchPortalTab('sequence')" style="width: 100%; padding: 8px 12px; background: #2563eb; color: #ffffff; border: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+            <i class="fa-solid fa-arrow-right"></i> Open 5-Year Sequence
           </button>
         </div>
 
@@ -1215,8 +1260,8 @@ function renderCurriculumTab(container) {
             <a href="${isVerifiedPdf(currentUnit.combinedPdf) ? currentUnit.combinedPdf : `/units/${currentUnit.uid}/pupil_workbook.html`}" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #4f46e5; color: #ffffff; border: 1.5px solid #4f46e5; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; box-shadow: 0 2px 6px rgba(79,70,229,0.25);" title="Download 24-Page Combined Master Scholar Workbook">
               <i class="fa-solid fa-layer-group"></i> Combined Workbook (24p)
             </a>` : ''}
-            <button type="button" onclick="window.switchView('curriculum')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease;">
-              <i class="fa-solid fa-table-columns"></i> Whole-School Progression Map &rarr;
+            <button type="button" onclick="window.switchPortalTab('sequence')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease;">
+              <i class="fa-solid fa-table-columns"></i> 5-Year Termly Sequence &rarr;
             </button>
           </div>
         </div>

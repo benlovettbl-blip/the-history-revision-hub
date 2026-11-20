@@ -19,6 +19,7 @@ import {
   renderMarkingView,
 } from './views.js'; // Trigger HMR
 import { jumpToKeyIndividual } from './key_individuals.js';
+import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_catalog.js';
 
 export { jumpToKeyIndividual };
 
@@ -1203,6 +1204,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       'nav-interactive',
       'nav-arcade',
       'nav-unit-booklet',
+      'nav-unit-infographics',
       'nav-timeline',
       'nav-mock-exams',
       'nav-decisions',
@@ -1214,6 +1216,9 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       if (el) el.style.display = 'none';
     });
 
+    if (typeof window.syncStaffUiState === 'function') {
+      window.syncStaffUiState();
+    }
     if (typeof window.highlightActiveSidebarUnit === 'function') {
       window.highlightActiveSidebarUnit(null);
     }
@@ -1247,12 +1252,16 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     await loadUnit(targetUnit);
     renderIndividualsView();
   } else if (viewName === 'booklet') {
-    // Legacy booklet view decommissioned in favour of Hero Curricular Launchpads
     const targetUnit =
       param && param !== 'all'
         ? param
         : state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
     await switchView('lessons', targetUnit);
+    setTimeout(() => {
+      if (typeof window.openUnitResourceDrawer === 'function') {
+        window.openUnitResourceDrawer(targetUnit, 'booklets');
+      }
+    }, 80);
     return;
   } else if (viewName === 'mock-exams' || viewName === 'exam-practice') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId;
@@ -1273,15 +1282,21 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         window.renderLessonByIndex(options.lessonIndex);
       }
     }
-  } else if (viewName === 'curriculum') {
-    const { renderCurriculumMap } = await import('./curriculum_map.js');
-    await renderCurriculumMap();
-  } else if (viewName === 'department-portal') {
-    const { renderDepartmentPortal } = await import('./department_portal.js');
-    if (param && typeof window !== 'undefined' && typeof window.switchPortalTab === 'function') {
-      window.switchPortalTab(param);
+  } else if (viewName === 'curriculum' || viewName === 'department-portal') {
+    if (!isStaffModeActive()) {
+      const unlocked =
+        typeof window.promptStaffUnlock === 'function' ? window.promptStaffUnlock() : false;
+      if (!unlocked) {
+        await switchView('dashboard');
+        return;
+      }
     }
+    const { renderDepartmentPortal } = await import('./department_portal.js');
+    const portalTab = viewName === 'curriculum' ? 'curriculum' : param;
     await renderDepartmentPortal();
+    if (portalTab && typeof window !== 'undefined' && typeof window.switchPortalTab === 'function') {
+      window.switchPortalTab(portalTab);
+    }
   } else if (viewName === 'competitions') {
     const { renderCompetitionsView } = await import('./competitions_zone.js');
     renderCompetitionsView();
@@ -1539,6 +1554,9 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   const unitWorkspace = document.getElementById('sidebar-unit-workspace');
   if (globalNav) globalNav.style.display = 'none';
   if (unitWorkspace) unitWorkspace.style.display = 'flex';
+  if (typeof window.syncStaffUiState === 'function') {
+    window.syncStaffUiState();
+  }
 
   // Handle classroom lockdown mode and KS2 portal navigation
   const unitBackBtn = document.getElementById('unit-nav-back');
@@ -1605,6 +1623,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   const navArcade = document.getElementById('nav-arcade');
   const navTimeline = document.getElementById('nav-timeline');
   const navUnitBooklet = document.getElementById('nav-unit-booklet');
+  const navUnitInfographics = document.getElementById('nav-unit-infographics');
   const navMockExams = document.getElementById('nav-mock-exams');
   const navIndividuals = document.getElementById('nav-individuals');
   const navReading = document.getElementById('nav-reading');
@@ -1707,45 +1726,6 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   }
 
   if (isTrip) {
-    // Battlefield Tour Unit: Configure Tour Itinerary tab and Pupil Family Hero tab
-    if (navLessons) {
-      navLessons.style.display = 'flex';
-      navLessons.dataset.action = 'switch-view';
-      navLessons.dataset.view = 'lessons';
-      navLessons.dataset.unit = unitId;
-      if (navLessonsLabel) navLessonsLabel.textContent = 'Tour Itinerary';
-      navLessons.onclick = () => switchView('lessons', unitId);
-    }
-    if (navIndividuals) {
-      navIndividuals.style.display = 'flex';
-      delete navIndividuals.dataset.action;
-      delete navIndividuals.dataset.view;
-      delete navIndividuals.dataset.unit;
-      navIndividuals.innerHTML =
-        '<i class="fa-solid fa-medal" style="color: #f59e0b;"></i><span>Family Hero: 2nd Lt Crummack</span>';
-      navIndividuals.onclick = (e) => {
-        if (e) e.preventDefault();
-        const raw =
-          state.db && state.db[unitId] ? state.db[unitId] : state.activeUnitData || unitData;
-        const uData = raw && raw.data ? raw.data : raw || {};
-        const lList = uData.lessons || (state.activeUnitData && state.activeUnitData.lessons) || [];
-        const idx = lList.findIndex((l) => l.id === 'hero_crummack');
-        if (idx !== -1 && typeof window.renderLessonByIndex === 'function') {
-          window.renderLessonByIndex(idx);
-        } else {
-          switchView('lessons', unitId);
-        }
-      };
-    }
-    if (navInteractive) navInteractive.style.display = 'none';
-    if (navArcade) navArcade.style.display = 'none';
-    if (navTimeline) navTimeline.style.display = 'none';
-    if (navUnitBooklet) navUnitBooklet.style.display = 'none';
-    if (navMockExams) navMockExams.style.display = 'none';
-    if (navDecisions) navDecisions.style.display = 'none';
-    if (navTaboo) navTaboo.style.display = 'none';
-    if (navReading) navReading.style.display = 'none';
-
     if (typeof window.highlightActiveSidebarUnit === 'function') {
       window.highlightActiveSidebarUnit(unitId);
     }
@@ -1893,14 +1873,79 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     };
   }
 
-  // Interactive Quizzing & Flashcards - DECOMMISSIONED from sidebar in favour of Hero Curricular Launchpad & In-Lesson Consolidation Station
+  // Interactive Quizzing & Flashcards
   if (navInteractive) {
-    navInteractive.style.display = 'none';
+    navInteractive.style.display = 'flex';
+    delete navInteractive.dataset.action;
+    navInteractive.dataset.view = 'interactive';
+    navInteractive.dataset.unit = unitId;
+    navInteractive.innerHTML =
+      '<i class="fa-solid fa-bolt" style="color: #a78bfa;"></i><span>Quizzing &amp; Flashcards</span>';
+    navInteractive.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('interactive', unitId);
+    };
   }
 
-  // Unit Printable Booklet & Textbook - DECOMMISSIONED in favour of Hero Curricular Launchpad
-  if (navUnitBooklet) {
+  // Unit PDFs & Booklets (opens single-home Booklets drawer on Unit Overview)
+  const catalogEntry = getUnitCatalogEntry(unitId);
+  if (navUnitBooklet && catalogEntry) {
+    navUnitBooklet.style.display = 'flex';
+    delete navUnitBooklet.dataset.action;
+    navUnitBooklet.innerHTML =
+      '<i class="fa-solid fa-file-pdf" style="color: #f59e0b;"></i><span>PDFs &amp; Booklets</span>';
+    navUnitBooklet.onclick = async (e) => {
+      if (e) e.stopPropagation();
+      const curView = appStore.state.currentView || state.currentView;
+      const inLesson = typeof window.currentLessonIndex === 'number' && window.currentLessonIndex >= 0;
+      if (curView !== 'lessons' || inLesson) {
+        window.currentLessonIndex = null;
+        await switchView('lessons', unitId);
+      }
+      setTimeout(() => {
+        if (typeof window.openUnitResourceDrawer === 'function') {
+          window.openUnitResourceDrawer(unitId, 'booklets');
+        }
+      }, 60);
+    };
+  } else if (navUnitBooklet) {
     navUnitBooklet.style.display = 'none';
+  }
+
+  // Unit Infographics (opens single-home Infographics drawer ONLY when unit has infographics)
+  const manifestInfos =
+    typeof window !== 'undefined' &&
+    window.__INFOGRAPHICS_MANIFEST__ &&
+    Array.isArray(window.__INFOGRAPHICS_MANIFEST__[unitId])
+      ? window.__INFOGRAPHICS_MANIFEST__[unitId].filter((it) => it && (it.image || it.interactiveUrl))
+      : [];
+  const hasCatalogInfographics = Boolean(
+    !isKs2UnitIdentifier(unitId, unitData) &&
+      ((catalogEntry &&
+        Array.isArray(catalogEntry.courseInfographics) &&
+        catalogEntry.courseInfographics.length > 0) ||
+        manifestInfos.length > 0),
+  );
+  if (navUnitInfographics) {
+    navUnitInfographics.style.display = hasCatalogInfographics ? 'flex' : 'none';
+    delete navUnitInfographics.dataset.action;
+    navUnitInfographics.innerHTML =
+      '<i class="fa-solid fa-image" style="color: #34d399;"></i><span>Infographics</span>';
+    navUnitInfographics.onclick = async (e) => {
+      if (e) e.stopPropagation();
+      const curView = appStore.state.currentView || state.currentView;
+      const inLesson = typeof window.currentLessonIndex === 'number' && window.currentLessonIndex >= 0;
+      if (curView !== 'lessons' || inLesson) {
+        window.currentLessonIndex = null;
+        await switchView('lessons', unitId);
+      }
+      setTimeout(() => {
+        if (typeof window.openUnitResourceDrawer === 'function') {
+          window.openUnitResourceDrawer(unitId, 'infographics');
+        }
+      }, 60);
+    };
   }
 
   // GCSE Exam Practice (visible only on GCSE assessment units)

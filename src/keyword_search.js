@@ -4,9 +4,12 @@
  * key historical figures, chronology milestones, and syllabus lessons.
  */
 
+import { UNIT_RESOURCES_CATALOG, isStaffModeActive } from './data/unit_resources_catalog.js';
+import { isVerifiedPdf } from './verified_pdf_manifest.js';
+
 let searchIndex = [];
 let isInitialized = false;
-let activeFilter = 'all'; // 'all' | 'figure' | 'vocab' | 'source' | 'lesson' | 'timeline'
+let activeFilter = 'all'; // 'all' | 'resource' | 'figure' | 'vocab' | 'source' | 'lesson' | 'timeline'
 let activeStageFilter = 'all'; // 'all' | 'this_unit' | 'Year 7' | 'Year 8' | 'Year 9' | 'GCSE'
 let currentResults = [];
 let selectedResultIndex = -1;
@@ -498,6 +501,154 @@ export function buildKeywordSearchIndex(db) {
     });
   }
 
+  // 6. Index Canonical PDFs, Booklets, Editions, Infographics & Staff Resources from UNIT_RESOURCES_CATALOG
+  const manifestMap = (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__) || {};
+  for (const [unitId, cat] of Object.entries(UNIT_RESOURCES_CATALOG)) {
+    const unitTitle = cat.unitTitle || getCleanUnitTitle(unitId, {});
+    const stageBadge = getYearStageBadge(unitId);
+
+    const pushDoc = (doc, categoryLabel, pillarType, staffOnly = false, customTitle = '') => {
+      if (!doc || (!doc.pdfUrl && !doc.htmlUrl)) return;
+      const pdfUrl = doc.pdfUrl && isVerifiedPdf(doc.pdfUrl) ? doc.pdfUrl : '';
+      const titleText = customTitle || doc.title || doc.label || `${unitTitle} — ${categoryLabel}`;
+      index.push({
+        type: 'resource',
+        resourceKind: 'booklet',
+        pillarType,
+        staffOnly: Boolean(staffOnly || doc.staffOnly),
+        term: titleText,
+        subtitle: `${categoryLabel}${doc.pages ? ' • ' + doc.pages : ''}${staffOnly || doc.staffOnly ? ' • Staff Only' : ''}`,
+        definition: `${doc.desc || ''} ${unitTitle} ${categoryLabel} PDF booklet printable download`.trim(),
+        htmlUrl: doc.htmlUrl || '',
+        pdfUrl,
+        unitId,
+        unitTitle,
+        stageBadge,
+      });
+
+      if (doc.markSchemePdfUrl || doc.markSchemeHtmlUrl) {
+        const msPdf = doc.markSchemePdfUrl && isVerifiedPdf(doc.markSchemePdfUrl) ? doc.markSchemePdfUrl : '';
+        index.push({
+          type: 'resource',
+          resourceKind: 'booklet',
+          pillarType: 'MARK_SCHEME',
+          staffOnly: true,
+          term: `${unitTitle} — Workbook Mark Scheme`,
+          subtitle: 'Workbook Mark Scheme • Staff Only',
+          definition: `${unitTitle} teacher mark scheme model answers WAGOLLs PDF`.trim(),
+          htmlUrl: doc.markSchemeHtmlUrl || '',
+          pdfUrl: msPdf,
+          unitId,
+          unitTitle,
+          stageBadge,
+        });
+      }
+
+      if (Array.isArray(doc.editions) && doc.editions.length > 0) {
+        doc.editions.forEach((ed) => {
+          const edPdf = ed.pdfUrl && isVerifiedPdf(ed.pdfUrl) ? ed.pdfUrl : '';
+          index.push({
+            type: 'resource',
+            resourceKind: 'booklet',
+            pillarType,
+            staffOnly: Boolean(staffOnly || doc.staffOnly),
+            term: `${unitTitle} — ${ed.label} (${categoryLabel})`,
+            subtitle: `${categoryLabel}${ed.pages ? ' • ' + ed.pages : ''}`,
+            definition: `${ed.label} ${unitTitle} ${categoryLabel} PDF booklet printable`.trim(),
+            htmlUrl: ed.htmlUrl || '',
+            pdfUrl: edPdf,
+            unitId,
+            unitTitle,
+            stageBadge,
+          });
+          if (ed.msPdfUrl || ed.msHtmlUrl) {
+            const edMsPdf = ed.msPdfUrl && isVerifiedPdf(ed.msPdfUrl) ? ed.msPdfUrl : '';
+            index.push({
+              type: 'resource',
+              resourceKind: 'booklet',
+              pillarType: 'MARK_SCHEME',
+              staffOnly: true,
+              term: `${unitTitle} — ${ed.id} Workbook Mark Scheme`,
+              subtitle: 'Workbook Mark Scheme • Staff Only',
+              definition: `${ed.label} ${unitTitle} mark scheme model answers WAGOLLs PDF`.trim(),
+              htmlUrl: ed.msHtmlUrl || '',
+              pdfUrl: edMsPdf,
+              unitId,
+              unitTitle,
+              stageBadge,
+            });
+          }
+        });
+      }
+    };
+
+    pushDoc(cat.textbook, 'Classroom Textbook', 'TEXTBOOK');
+    pushDoc(cat.workbook, 'Pupil Workbook', 'WORKBOOK');
+    pushDoc(cat.retrieval, 'Retrieval Companion', 'RETRIEVAL');
+    pushDoc(cat.revisionGuide, 'Condensed Revision Guide', 'REVISION_GUIDE');
+    pushDoc(cat.masteryExamPack, 'Mastery Exam Pack', 'MASTERY_PACK');
+    pushDoc(cat.schemeOfWork, 'Teacher Guide & Scheme of Work', 'SOW', true);
+
+    if (Array.isArray(cat.worksheets)) {
+      cat.worksheets.forEach((ws) => {
+        pushDoc(ws, 'Lesson Worksheet', 'WORKSHEET', false, `${unitTitle} — ${ws.label} Worksheet`);
+      });
+    }
+
+    const seenSlugs = new Set();
+    if (Array.isArray(cat.courseInfographics)) {
+      cat.courseInfographics.forEach((info) => {
+        if (!info.slug) return;
+        seenSlugs.add(info.slug);
+        index.push({
+          type: 'resource',
+          resourceKind: 'infographic',
+          infographicId: info.slug,
+          term: `${info.label} (${unitTitle})`,
+          subtitle: '1-Sheet Infographic',
+          definition: `${info.desc || ''} ${unitTitle} infographic visual overview`.trim(),
+          image: info.thumbUrl || '',
+          unitId,
+          unitTitle,
+          stageBadge,
+        });
+      });
+    }
+    if (cat.examInfographic && cat.examInfographic.slug) {
+      seenSlugs.add(cat.examInfographic.slug);
+      index.push({
+        type: 'resource',
+        resourceKind: 'infographic',
+        infographicId: cat.examInfographic.slug,
+        term: `${cat.examInfographic.label} (${unitTitle})`,
+        subtitle: 'Exam Technique Infographic',
+        definition: `${cat.examInfographic.desc || ''} ${unitTitle} exam guide infographic`.trim(),
+        image: cat.examInfographic.thumbUrl || '',
+        unitId,
+        unitTitle,
+        stageBadge,
+      });
+    }
+    if (Array.isArray(manifestMap[unitId])) {
+      manifestMap[unitId].forEach((mInf) => {
+        if (!mInf || !mInf.slug || !(mInf.image || mInf.interactiveUrl) || seenSlugs.has(mInf.slug)) return;
+        seenSlugs.add(mInf.slug);
+        index.push({
+          type: 'resource',
+          resourceKind: 'infographic',
+          infographicId: mInf.slug,
+          term: `${mInf.title} (${unitTitle})`,
+          subtitle: mInf.type === 'visual_story_sheet' ? '1-Page Visual Story Sheet' : 'Lesson Infographic',
+          definition: `${mInf.topic || ''} ${unitTitle} visual story sheet infographic`.trim(),
+          image: mInf.thumbUrl || mInf.image || '',
+          unitId,
+          unitTitle,
+          stageBadge,
+        });
+      });
+    }
+  }
+
   return index;
 }
 
@@ -585,6 +736,7 @@ function scoreSearchItem(item, q, qTokens, activeUnit = null) {
 
   // Priority boosts for primary historical entities over generic mentions
   if (score > 0) {
+    if (item.type === 'resource') score += 35;
     if (item.type === 'figure') score += 30;
     if (item.type === 'source') score += 25;
     if (item.type === 'vocab') score += 20;
@@ -617,7 +769,9 @@ export function searchCurriculum(
   const scored = [];
 
   for (const item of index) {
+    if (item.staffOnly && !isStaffModeActive()) continue;
     // Entity type filter
+    if (filter === 'resource' && item.type !== 'resource') continue;
     if (filter === 'figure' && item.type !== 'figure') continue;
     if (filter === 'vocab' && item.type !== 'vocab') continue;
     if (filter === 'source' && item.type !== 'source') continue;
@@ -747,6 +901,12 @@ function ensureModalDOM() {
           <button type="button" class="search-filter-chip active" data-filter="all">
             <i class="fa-solid fa-layer-group"></i> All Results <span class="search-filter-count" id="count-all"></span>
           </button>
+          <button type="button" class="search-filter-chip" data-filter="resource">
+            <i class="fa-solid fa-file-pdf"></i> PDFs &amp; Infographics <span class="search-filter-count" id="count-resource"></span>
+          </button>
+          <button type="button" class="search-filter-chip" data-filter="lesson">
+            <i class="fa-solid fa-book-open"></i> Enquiry Lessons <span class="search-filter-count" id="count-lesson"></span>
+          </button>
           <button type="button" class="search-filter-chip" data-filter="figure">
             <i class="fa-solid fa-user-tie"></i> Key Figures <span class="search-filter-count" id="count-figure"></span>
           </button>
@@ -755,9 +915,6 @@ function ensureModalDOM() {
           </button>
           <button type="button" class="search-filter-chip" data-filter="source">
             <i class="fa-solid fa-scroll"></i> Sources <span class="search-filter-count" id="count-source"></span>
-          </button>
-          <button type="button" class="search-filter-chip" data-filter="lesson">
-            <i class="fa-solid fa-book-open"></i> Enquiry Lessons <span class="search-filter-count" id="count-lesson"></span>
           </button>
           <button type="button" class="search-filter-chip" data-filter="timeline">
             <i class="fa-solid fa-timeline"></i> Timeline <span class="search-filter-count" id="count-timeline"></span>
@@ -999,24 +1156,56 @@ function renderSearchResults(query = '') {
 
   if (activeFilter === 'all') {
     // Group items by category if viewing 'all'
+    const resourceItems = results.filter((r) => r.type === 'resource');
+    const lessonItems = results.filter((r) => r.type === 'lesson');
     const figureItems = results.filter((r) => r.type === 'figure');
     const vocabItems = results.filter((r) => r.type === 'vocab');
     const sourceItems = results.filter((r) => r.type === 'source');
-    const lessonItems = results.filter((r) => r.type === 'lesson');
     const timelineItems = results.filter((r) => r.type === 'timeline');
 
     // Align currentResults strictly with the rendered DOM order so keyboard selection is 100% faithful
     const orderedDisplay = [
+      ...resourceItems,
+      ...lessonItems,
       ...figureItems,
       ...vocabItems,
       ...sourceItems,
-      ...lessonItems,
       ...timelineItems,
     ];
     currentResults = orderedDisplay;
     selectedResultIndex = orderedDisplay.length > 0 ? 0 : -1;
 
-    // 1. Key Historical Figures
+    // 0. PDFs, Booklets & Infographics
+    if (resourceItems.length > 0) {
+      html += `
+        <div class="search-results-group">
+          <div class="search-group-header">
+            <span><i class="fa-solid fa-file-pdf"></i> PDFs, Booklets &amp; Infographics</span>
+            <span class="search-group-count">${resourceItems.length} match${resourceItems.length > 1 ? 'es' : ''}</span>
+          </div>
+          <div class="search-group-list">
+            ${resourceItems.map((item) => renderResultItemHTML(item, orderedDisplay.indexOf(item), trimmed)).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // 1. Enquiry Lessons
+    if (lessonItems.length > 0) {
+      html += `
+        <div class="search-results-group">
+          <div class="search-group-header">
+            <span><i class="fa-solid fa-book-open"></i> Enquiry Lessons</span>
+            <span class="search-group-count">${lessonItems.length} match${lessonItems.length > 1 ? 'es' : ''}</span>
+          </div>
+          <div class="search-group-list">
+            ${lessonItems.map((item) => renderResultItemHTML(item, orderedDisplay.indexOf(item), trimmed)).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // 2. Key Historical Figures
     if (figureItems.length > 0) {
       html += `
         <div class="search-results-group">
@@ -1031,7 +1220,7 @@ function renderSearchResults(query = '') {
       `;
     }
 
-    // 2. Key Terms & Definitions
+    // 3. Key Terms & Definitions
     if (vocabItems.length > 0) {
       html += `
         <div class="search-results-group">
@@ -1046,7 +1235,7 @@ function renderSearchResults(query = '') {
       `;
     }
 
-    // 3. Primary & Historical Sources
+    // 4. Primary & Historical Sources
     if (sourceItems.length > 0) {
       html += `
         <div class="search-results-group">
@@ -1056,21 +1245,6 @@ function renderSearchResults(query = '') {
           </div>
           <div class="search-group-list">
             ${sourceItems.map((item) => renderResultItemHTML(item, orderedDisplay.indexOf(item), trimmed)).join('')}
-          </div>
-        </div>
-      `;
-    }
-
-    // 4. Enquiry Lessons
-    if (lessonItems.length > 0) {
-      html += `
-        <div class="search-results-group">
-          <div class="search-group-header">
-            <span><i class="fa-solid fa-book-open"></i> Enquiry Lessons</span>
-            <span class="search-group-count">${lessonItems.length} match${lessonItems.length > 1 ? 'es' : ''}</span>
-          </div>
-          <div class="search-group-list">
-            ${lessonItems.map((item) => renderResultItemHTML(item, orderedDisplay.indexOf(item), trimmed)).join('')}
           </div>
         </div>
       `;
@@ -1116,7 +1290,7 @@ function renderSearchResults(query = '') {
  */
 function updateFilterCounts(query) {
   if (!query) {
-    ['all', 'figure', 'vocab', 'source', 'lesson', 'timeline'].forEach((f) => {
+    ['all', 'resource', 'figure', 'vocab', 'source', 'lesson', 'timeline'].forEach((f) => {
       const el = document.getElementById(`count-${f}`);
       if (el) el.textContent = '';
     });
@@ -1130,6 +1304,7 @@ function updateFilterCounts(query) {
   };
 
   setEl('count-all', all.length);
+  setEl('count-resource', all.filter((r) => r.type === 'resource').length);
   setEl('count-figure', all.filter((r) => r.type === 'figure').length);
   setEl('count-vocab', all.filter((r) => r.type === 'vocab').length);
   setEl('count-source', all.filter((r) => r.type === 'source').length);
@@ -1141,6 +1316,7 @@ function updateFilterCounts(query) {
  * Generates the HTML for an individual search result card.
  */
 function renderResultItemHTML(item, globalIndex, query) {
+  const isResource = item.type === 'resource';
   const isFigure = item.type === 'figure';
   const isVocab = item.type === 'vocab';
   const isSource = item.type === 'source';
@@ -1161,7 +1337,13 @@ function renderResultItemHTML(item, globalIndex, query) {
   let typeClass = 'is-lesson';
   let iconHtml = '<i class="fa-solid fa-graduation-cap"></i>';
 
-  if (isFigure) {
+  if (isResource) {
+    typeClass = 'is-source';
+    iconHtml =
+      item.resourceKind === 'infographic'
+        ? '<i class="fa-solid fa-image"></i>'
+        : '<i class="fa-solid fa-file-pdf"></i>';
+  } else if (isFigure) {
     typeClass = 'is-figure';
     if (item.image) {
       iconHtml = `<img src="${escapeHtml(item.image)}" class="search-result-avatar" alt="${escapeHtml(item.term)}" onerror="this.outerHTML='<i class=\\'fa-solid fa-user-tie\\'></i>'" />`;
@@ -1183,15 +1365,19 @@ function renderResultItemHTML(item, globalIndex, query) {
     iconHtml = '<i class="fa-solid fa-timeline"></i>';
   }
 
-  const actionText = isFigure
-    ? 'View Historical Figure'
-    : isSource
-      ? 'View Historical Source'
-      : isTimeline
-        ? 'View Milestone'
-        : isVocab
-          ? 'Jump to Definition'
-          : 'Open Enquiry Lesson';
+  const actionText = isResource
+    ? item.resourceKind === 'infographic'
+      ? 'Open Infographic'
+      : 'Open PDF / Booklet'
+    : isFigure
+      ? 'View Historical Figure'
+      : isSource
+        ? 'View Historical Source'
+        : isTimeline
+          ? 'View Milestone'
+          : isVocab
+            ? 'Jump to Definition'
+            : 'Open Enquiry Lesson';
 
   // Quick Fact content for in-modal preview
   const previewText = isSource
@@ -1331,6 +1517,22 @@ export function selectResult(item) {
   }
 
   const highlightTerm = item.term || item.title || '';
+
+  if (item.type === 'resource') {
+    if (item.resourceKind === 'infographic' && item.infographicId && typeof window.openInfographicModal === 'function') {
+      window.openInfographicModal(item.infographicId);
+      return;
+    }
+    if (item.htmlUrl && typeof window.openCurricularPillar === 'function') {
+      window.openCurricularPillar(item.htmlUrl, item.term, item.pdfUrl || '', item.pillarType || 'WORKBOOK');
+      return;
+    }
+    const targetUrl = item.pdfUrl || item.htmlUrl;
+    if (targetUrl) {
+      window.open(targetUrl, '_blank');
+    }
+    return;
+  }
 
   // If it's a vocabulary term, figure, or source, cache it for auto-scrolling & highlighting
   if (highlightTerm) {

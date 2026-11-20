@@ -1,0 +1,204 @@
+{
+  "unitId": "ks2_ww2",
+  "voiceKey": "female_historian",
+  "blocks": {
+    "lesson_11_b1": {
+      "hash": "bb6d2d4f6c5a5c42",
+      "bytes": 200300,
+      "words": 103,
+      "updatedAt": "2026-11-19T23:35:46.035Z"
+    },
+    "lesson_11_b2": {
+      "hash": "412615e19df0e786",
+      "bytes": 182732,
+      "words": 107,
+      "updatedAt": "2026-11-19T18:31:10.606Z"
+    },
+    "lesson_11_b3": {
+      "hash": "90b7e425e0a6b5eb",
+      "bytes": 179084,
+      "words": 101,
+      "updatedAt": "2026-11-19T18:31:11.010Z"
+    },
+    "lesson_1_b1": {
+      "hash": "07c9cca176d5b89e",
+      "bytes": 200492,
+      "words": 103,
+      "updatedAt": "2026-11-19T23:34:39.390Z"
+    },
+    "lesson_1_b2": {
+      "hash": "b313b59c15cfc52b",
+      "bytes": 176204,
+      "words": 99,
+      "updatedAt": "2026-11-19T18:31:23.052Z"
+    },
+    "lesson_1_b3": {
+      "hash": "77eee3fb9e1b6cbc",
+      "bytes": 210092,
+      "words": 106,
+      "updatedAt": "2026-11-19T23:34:46.750Z"
+    },
+    "lesson_2_b1": {
+      "hash": "e36952a357cdcb0f",
+      "bytes": 202988,
+      "words": 100,
+      "updatedAt": "2026-11-19T23:34:54.892Z"
+    },
+    "lesson_2_b2": {
+      "hash": "fcea9849a3bceede",
+      "bytes": 165932,
+      "words": 96,
+      "updatedAt": "2026-11-19T18:31:24.152Z"
+    },
+    "lesson_2_b3": {
+      "hash": "bd7d22260dfadf84",
+      "bytes": 192044,
+      "words": 111,
+      "updatedAt": "2026-11-19T18:31:24.516Z"
+    },
+    "lesson_3_b1": {
+      "hash": "46f6f942116ae0d6",
+      "bytes": 186764,
+      "words": 96,
+      "updatedAt": "2026-11-19T18:31:24.880Z"
+    },
+    "lesson_3_b2": {
+      "hash": "d9db9ccafbee5efe",
+      "bytes": 184172,
+      "words": 101,
+      "updatedAt": "2026-11-19T18:31:25.319Z"
+    },
+    "lesson_3_b3": {
+      "hash": "3dbd9f8049d175b5",
+      "bytes": 201260,
+      "words": 97,
+      "updatedAt": "2026-11-19T23:35:05.323Z"
+    },
+    "lesson_4_b1": {
+      "hash": "1c0efd72dc392652",
+      "bytes": 197132,
+      "words": 99,
+      "updatedAt": "2026-11-19T18:31:26.178Z"
+    },
+    "lesson_4_b2": {
+      "hash": "b2742adf613c39e8",
+      "bytes": 178412,
+      "words": 99,
+      "updatedAt": "2026-11-19T18:31:26.525Z"
+    },
+    "lesson_4_b3": {
+      "hash": "f8782b51039ccee5",
+      "bytes": 186956,
+      "words": 102,
+      "updatedAt": "2026-11-19T18:31:26.886Z"
+    },
+    "lesson_5_b1": {
+      "hash": "3d404e20e1913caf",
+      "bytes": 183404,
+      "words": 99,
+      "updatedAt": "2026-11-19T18:31:27.259Z"
+    },
+    "lesson_5_b2": {
+      "hash": "0c58476064f9433c",
+      "bytes": 180332,
+      "words": 99,
+      "updatedAt": "2026-11-19T18:31:27.614Z"
+    },
+    "lesson_5_b3": {
+      "hash": "1248a5e9e82b6630",
+      "bytes": 207788,
+      "words": 101,
+      "updatedAt": "2026-11-19T23:35:15.477Z"
+    },
+    "lesson_6_b1": {
+      "hash": "3e8839c3dd434617",
+      "bytes": 212972,
+      "words": 97,
+      "updatedAt": "2026-11-19T23:35:22.607Z"
+    },
+    "lesson_6_b2": {
+      "hash": "728399c3a11c620d",
+      "bytes": 187436,
+      "words": 107,
+      "updatedAt": "2026-11-19T18:31:41.259Z"
+    },
+    "lesson_6_b3": {
+      "hash": "3463afd77f8f704c",
+      "bytes": 178124,
+      "words": 89,
+      "updatedAt": "2026-11-19T18:31:41.613Z"
+    },
+    "lesson_7_b1": {
+      "hash": "c485f54f00f0c6fb",
+      "bytes": 193196,
+      "words": 100,
+      "updatedAt": "2026-11-19T18:31:41.994Z"
+    },
+    "lesson_7_b2": {
+      "hash": "5998558aeaa65e8b",
+      "bytes": 177836,
+      "words": 98,
+      "updatedAt": "2026-11-19T18:31:42.370Z"
+    },
+    "lesson_7_b3": {
+      "hash": "1d5bfffc4bbad594",
+      "bytes": 196076,
+      "words": 107,
+      "updatedAt": "2026-11-19T18:31:42.777Z"
+    },
+    "lesson_8_b1": {
+      "hash": "e40d10f482d2c449",
+      "bytes": 179084,
+      "words": 100,
+      "updatedAt": "2026-11-19T18:31:43.157Z"
+    },
+    "lesson_8_b2": {
+      "hash": "5d378ad4d4cf7635",
+      "bytes": 178604,
+      "words": 90,
+      "updatedAt": "2026-11-19T18:31:43.520Z"
+    },
+    "lesson_8_b3": {
+      "hash": "de3897e9d3f95748",
+      "bytes": 204236,
+      "words": 105,
+      "updatedAt": "2026-11-19T18:31:43.927Z"
+    },
+    "lesson_9_b1": {
+      "hash": "39014431406e6b1c",
+      "bytes": 164972,
+      "words": 91,
+      "updatedAt": "2026-11-19T18:31:44.298Z"
+    },
+    "lesson_9_b2": {
+      "hash": "e83013088ceb93a8",
+      "bytes": 191852,
+      "words": 103,
+      "updatedAt": "2026-11-19T18:31:44.672Z"
+    },
+    "lesson_9_b3": {
+      "hash": "7bc00b3ed1eaa805",
+      "bytes": 188396,
+      "words": 97,
+      "updatedAt": "2026-11-19T18:31:45.051Z"
+    },
+    "lesson_10_b1": {
+      "hash": "9fed59247f03ee60",
+      "bytes": 217388,
+      "words": 109,
+      "updatedAt": "2026-11-19T23:35:31.638Z"
+    },
+    "lesson_10_b2": {
+      "hash": "b0aeff69e262516d",
+      "bytes": 194924,
+      "words": 94,
+      "updatedAt": "2026-11-19T18:31:45.877Z"
+    },
+    "lesson_10_b3": {
+      "hash": "257565e8e12ad397",
+      "bytes": 174380,
+      "words": 92,
+      "updatedAt": "2026-11-19T23:35:37.477Z"
+    }
+  }
+}

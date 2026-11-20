@@ -4,6 +4,8 @@ dist/
 *.log
 .gemini/
 .env*
+scripts/.courtyard_gemini_voice_ids.json
+scripts/.studio_voice_ids.json
 src/data/elizabethan_old/
 temp_backups/
 *.zip

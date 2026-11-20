@@ -1,0 +1,281 @@
+{
+  "unitId": "ks2_ww2",
+  "voiceKey": "female_historian",
+  "clips": {
+    "l01_s1": {
+      "hash": "5e28c73b28546e66",
+      "bytes": 80972,
+      "updatedAt": "2026-11-19T23:34:10.811Z"
+    },
+    "l01_s2": {
+      "hash": "9627df928f2c9dab",
+      "bytes": 74348,
+      "updatedAt": "2026-11-19T21:32:36.400Z"
+    },
+    "l01_s3": {
+      "hash": "20083a61ab970db5",
+      "bytes": 63500,
+      "updatedAt": "2026-11-19T21:32:36.843Z"
+    },
+    "l01_s4": {
+      "hash": "343c14595b35ec5f",
+      "bytes": 68588,
+      "updatedAt": "2026-11-19T21:32:37.281Z"
+    },
+    "l01_takeaway": {
+      "hash": "063997b11405061d",
+      "bytes": 76268,
+      "updatedAt": "2026-11-19T21:32:37.861Z"
+    },
+    "l02_s1": {
+      "hash": "5ccfb02de60233e3",
+      "bytes": 71180,
+      "updatedAt": "2026-11-19T21:32:38.308Z"
+    },
+    "l02_s2": {
+      "hash": "dc2cea33ddd4a23a",
+      "bytes": 62540,
+      "updatedAt": "2026-11-19T21:32:38.814Z"
+    },
+    "l02_s3": {
+      "hash": "965c053fd3993e4a",
+      "bytes": 67532,
+      "updatedAt": "2026-11-19T21:32:39.310Z"
+    },
+    "l02_s4": {
+      "hash": "f4ee45746e549515",
+      "bytes": 71372,
+      "updatedAt": "2026-11-19T21:32:39.792Z"
+    },
+    "l02_takeaway": {
+      "hash": "8b43fd19ab8f1d00",
+      "bytes": 68780,
+      "updatedAt": "2026-11-19T21:32:40.229Z"
+    },
+    "l03_s1": {
+      "hash": "a9c0270336284fe4",
+      "bytes": 71468,
+      "updatedAt": "2026-11-19T21:32:40.789Z"
+    },
+    "l03_s2": {
+      "hash": "f419e01be68da0a2",
+      "bytes": 79340,
+      "updatedAt": "2026-11-19T21:32:41.259Z"
+    },
+    "l03_s3": {
+      "hash": "79eb14ad42721e92",
+      "bytes": 70220,
+      "updatedAt": "2026-11-19T21:32:41.835Z"
+    },
+    "l03_s4": {
+      "hash": "a07038366935dd6e",
+      "bytes": 65708,
+      "updatedAt": "2026-11-19T21:32:42.348Z"
+    },
+    "l03_takeaway": {
+      "hash": "4c3626cdf5e69dd6",
+      "bytes": 73388,
+      "updatedAt": "2026-11-19T21:32:42.787Z"
+    },
+    "l04_s1": {
+      "hash": "ec03ef0521349f05",
+      "bytes": 74732,
+      "updatedAt": "2026-11-19T21:32:47.148Z"
+    },
+    "l04_s2": {
+      "hash": "58d78a1434dda621",
+      "bytes": 68300,
+      "updatedAt": "2026-11-19T21:32:47.582Z"
+    },
+    "l04_s3": {
+      "hash": "edf37d772cd168c5",
+      "bytes": 59372,
+      "updatedAt": "2026-11-19T21:32:48.116Z"
+    },
+    "l04_s4": {
+      "hash": "7157624bf8e2c611",
+      "bytes": 73388,
+      "updatedAt": "2026-11-19T21:32:48.602Z"
+    },
+    "l04_takeaway": {
+      "hash": "cf632a5a0c2ab008",
+      "bytes": 75692,
+      "updatedAt": "2026-11-19T21:32:49.039Z"
+    },
+    "l05_s1": {
+      "hash": "70d77d384543aab8",
+      "bytes": 75212,
+      "updatedAt": "2026-11-19T21:32:49.495Z"
+    },
+    "l05_s2": {
+      "hash": "5f54d1dcbc6deb81",
+      "bytes": 62348,
+      "updatedAt": "2026-11-19T21:32:49.931Z"
+    },
+    "l05_s3": {
+      "hash": "03fc58c85eb5db44",
+      "bytes": 77900,
+      "updatedAt": "2026-11-19T21:32:50.441Z"
+    },
+    "l05_s4": {
+      "hash": "364b381a20421fe0",
+      "bytes": 75308,
+      "updatedAt": "2026-11-19T21:32:50.965Z"
+    },
+    "l05_takeaway": {
+      "hash": "11c9aeea6c3dba77",
+      "bytes": 72620,
+      "updatedAt": "2026-11-19T21:32:51.445Z"
+    },
+    "l06_s1": {
+      "hash": "447827968d5de5bf",
+      "bytes": 71468,
+      "updatedAt": "2026-11-19T23:34:15.773Z"
+    },
+    "l06_s2": {
+      "hash": "5a42fd419e125abf",
+      "bytes": 73388,
+      "updatedAt": "2026-11-19T21:32:52.403Z"
+    },
+    "l06_s3": {
+      "hash": "7693d77abb1d3928",
+      "bytes": 71180,
+      "updatedAt": "2026-11-19T21:32:52.901Z"
+    },
+    "l06_s4": {
+      "hash": "298bb07cc7bc9b5c",
+      "bytes": 65612,
+      "updatedAt": "2026-11-19T21:32:53.323Z"
+    },
+    "l06_takeaway": {
+      "hash": "e109aa4d60124e10",
+      "bytes": 68972,
+      "updatedAt": "2026-11-19T21:32:53.780Z"
+    },
+    "l10_s1": {
+      "hash": "331b0454827f5fe2",
+      "bytes": 78860,
+      "updatedAt": "2026-11-19T23:34:22.246Z"
+    },
+    "l10_s2": {
+      "hash": "8c413826acf783e2",
+      "bytes": 69452,
+      "updatedAt": "2026-11-19T21:33:13.939Z"
+    },
+    "l10_s3": {
+      "hash": "21bc1537b24cf02c",
+      "bytes": 61868,
+      "updatedAt": "2026-11-19T21:33:14.223Z"
+    },
+    "l10_s4": {
+      "hash": "887e2f508bce6872",
+      "bytes": 66572,
+      "updatedAt": "2026-11-19T21:33:14.564Z"
+    },
+    "l10_takeaway": {
+      "hash": "5c2bd2d3ab21271c",
+      "bytes": 69548,
+      "updatedAt": "2026-11-19T23:34:32.809Z"
+    },
+    "l11_s1": {
+      "hash": "63f6525d4d24bc4e",
+      "bytes": 72812,
+      "updatedAt": "2026-11-19T21:33:15.268Z"
+    },
+    "l11_s2": {
+      "hash": "35c001d70dce685d",
+      "bytes": 73772,
+      "updatedAt": "2026-11-19T21:33:15.588Z"
+    },
+    "l11_s3": {
+      "hash": "69884f58acd8463b",
+      "bytes": 67148,
+      "updatedAt": "2026-11-19T21:33:15.892Z"
+    },
+    "l11_s4": {
+      "hash": "9717a6ec18d368ba",
+      "bytes": 67052,
+      "updatedAt": "2026-11-19T21:33:16.192Z"
+    },
+    "l11_takeaway": {
+      "hash": "dfe2c2528a870976",
+      "bytes": 71468,
+      "updatedAt": "2026-11-19T21:33:16.566Z"
+    },
+    "l07_s1": {
+      "hash": "9f6b6b565d6319ea",
+      "bytes": 68492,
+      "updatedAt": "2026-11-19T21:33:18.340Z"
+    },
+    "l07_s2": {
+      "hash": "71f4b5cc102e28a6",
+      "bytes": 59948,
+      "updatedAt": "2026-11-19T21:33:18.734Z"
+    },
+    "l07_s3": {
+      "hash": "2e0eb6e157349c5b",
+      "bytes": 65708,
+      "updatedAt": "2026-11-19T21:33:19.017Z"
+    },
+    "l07_s4": {
+      "hash": "458669dcb3301fff",
+      "bytes": 71852,
+      "updatedAt": "2026-11-19T21:33:19.315Z"
+    },
+    "l07_takeaway": {
+      "hash": "61f718d418be0d23",
+      "bytes": 66380,
+      "updatedAt": "2026-11-19T21:33:19.605Z"
+    },
+    "l08_s1": {
+      "hash": "bc26837a6e5f4c3b",
+      "bytes": 71180,
+      "updatedAt": "2026-11-19T21:33:19.897Z"
+    },
+    "l08_s2": {
+      "hash": "c0fb9a567c46f18b",
+      "bytes": 65612,
+      "updatedAt": "2026-11-19T21:33:20.194Z"
+    },
+    "l08_s3": {
+      "hash": "7acd8cd401bf4071",
+      "bytes": 73580,
+      "updatedAt": "2026-11-19T21:33:20.488Z"
+    },
+    "l08_s4": {
+      "hash": "167ff7c6ee17fc0e",
+      "bytes": 70700,
+      "updatedAt": "2026-11-19T21:33:20.796Z"
+    },
+    "l08_takeaway": {
+      "hash": "31cde08572364e81",
+      "bytes": 63692,
+      "updatedAt": "2026-11-19T21:33:21.082Z"
+    },
+    "l09_s1": {
+      "hash": "e06519e3fd588fd0",
+      "bytes": 68012,
+      "updatedAt": "2026-11-19T21:33:21.363Z"
+    },
+    "l09_s2": {
+      "hash": "257d27faae9bbcb4",
+      "bytes": 66668,
+      "updatedAt": "2026-11-19T21:33:21.655Z"
+    },
+    "l09_s3": {
+      "hash": "c7addd6dcb3b12f0",
+      "bytes": 67052,
+      "updatedAt": "2026-11-19T21:33:21.954Z"
+    },
+    "l09_s4": {
+      "hash": "c957000693c55331",
+      "bytes": 66380,
+      "updatedAt": "2026-11-19T21:33:22.249Z"
+    },
+    "l09_takeaway": {
+      "hash": "200c09d8cf97ce06",
+      "bytes": 69260,
+      "updatedAt": "2026-11-19T21:33:22.544Z"
+    }
+  }
+}

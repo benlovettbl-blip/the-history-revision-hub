@@ -999,7 +999,7 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
 
   const currentSheet = KS2_WORKSHEETS_MAP[targetId] || KS2_WORKSHEETS_MAP.lesson_1;
   const fullWorkbookUrl = '/units/ks2_ww2/pupil_workbook.html';
-  const fullWorkbookPdf = '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf';
+  const fullWorkbookPdf = '/pdfs/ks2_ww2_pupil_workbook.pdf';
 
   // Close teacher guidance modal if open to prevent stacked modal overlays
   const existingGuidance = document.getElementById('ks2TeacherGuidanceModalOverlay');
@@ -1354,7 +1354,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
               <button id="openWorksheetFromGuidanceBtn" style="background: #2563eb; color: #ffffff; border: none; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-file-pdf"></i> Open Lesson Worksheet
               </button>
-              <a href="/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf" target="_blank" style="background: #ffffff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+              <a href="/pdfs/ks2_ww2_pupil_workbook.pdf" target="_blank" style="background: #ffffff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-book-bookmark"></i> 28-Page Pupil Workbook (PDF)
               </a>
               <a href="/units/ks2_ww2/ks2_ww2_scheme_of_work.html" target="_blank" style="background: #ffffff; color: #0f766e; border: 1.5px solid #99f6e4; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">

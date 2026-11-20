@@ -285,6 +285,16 @@ export function renderConsolidateStationHTML(lesson) {
               : ''
           }
 
+          ${
+            unitId === 'cme_new'
+              ? `
+            <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'cme_courtyard')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #d9a05b; background: linear-gradient(135deg, rgba(184, 115, 46, 0.28) 0%, rgba(143, 83, 25, 0.28) 100%); color: #fef3c7; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Step directly into Episode ${currentIdx + 1} of Courtyard of Two Keys (Graphic-Novel Living Atlas)">
+              <span>🗝️</span> Graphic Novel (Ep ${currentIdx + 1})
+            </button>
+          `
+              : ''
+          }
+
           <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'tetris')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #10b981; background: rgba(16, 185, 129, 0.15); color: #6ee7b7; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
             <span>🧱</span> Keyword Stack
           </button>

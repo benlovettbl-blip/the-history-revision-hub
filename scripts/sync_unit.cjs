@@ -220,6 +220,24 @@ async function runSync() {
     }
   }
 
+  // Step 2c: Studio Voice Narration & Visual Story Sheet Hash Synchronizer
+  if (unitId !== 'trip_ypres') {
+    console.log(
+      `\n[Step 2c/6] 🎙️ Syncing Visual Story Sheets & delta-checking Studio Audio hashes for ${unitId}...`,
+    );
+    try {
+      execSync(`node scripts/sync_unit_studio_media.mjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(
+        `❌ Fatal: Studio Media & Visual Story Sheet sync failed for ${unitId}. Build aborted.`,
+      );
+      return false;
+    }
+  }
+
   // Step 3: Check if digital-only (trip_ypres) or physical PDF required
   if (unitId === 'trip_ypres') {
     console.log(`\n[Step 3/6] ⏭️ Unit ${unitId} is fully digital. Skipping PDF export.`);

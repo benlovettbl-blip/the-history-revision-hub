@@ -13,6 +13,7 @@ import {
   formatInteractiveTimestamps,
 } from './video_utils.js';
 import './ks2_guidance.js';
+import { isStaffModeActive } from '../data/unit_resources_catalog.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
 import {
   renderLessonExamPracticeHTML,
@@ -3956,8 +3957,13 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
     .map((mat, idx) => {
       const isVisible = idx === 0;
 
-      // If this mat has an interactive HTML version, embed the live interactive mat directly!
+      // If this mat has an interactive HTML or 1-Page Visual Story Sheet version, embed it directly!
       if (mat.interactiveUrl) {
+        const isStorySheet = mat.type === 'visual_story_sheet';
+        const badgeLabel = isStorySheet ? '1-Page Visual Story Sheet' : 'Native Interactive Mat';
+        const frameHeightStyle = isStorySheet
+          ? 'width: 100%; aspect-ratio: 1123 / 794; max-height: 760px;'
+          : 'width: 100%; height: 860px;';
         return `
         <div class="launchpad-mat-item" data-mat-index="${idx}" style="display: ${isVisible ? 'block' : 'none'};">
           <div style="background: #0b1120; border: 1.5px solid #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);">
@@ -3965,7 +3971,7 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
             <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; background: #0f172a; border-bottom: 1.5px solid #1e293b; flex-wrap: wrap; gap: 10px;">
               <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex-wrap: wrap;">
                 <span style="font-size: 0.72rem; font-weight: 800; color: #f59e0b; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); padding: 3px 9px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0;">
-                  <i class="fa-solid fa-wand-magic-sparkles"></i> Native Interactive Mat
+                  <i class="fa-solid ${isStorySheet ? 'fa-diagram-project' : 'fa-wand-magic-sparkles'}"></i> ${badgeLabel}
                 </span>
                 <h4 style="margin: 0; font-size: 0.96rem; font-weight: 700; color: #f8fafc; font-family: 'Playfair Display', Georgia, serif; white-space: normal; overflow-wrap: break-word;">
                   ${mat.title}
@@ -3974,8 +3980,8 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
               <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
                 <a href="${mat.interactiveUrl}" target="_blank"
                   style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #f59e0b; color: #000000; text-decoration: none; border-radius: 6px; font-size: 0.8rem; font-weight: 700; transition: all 0.15s ease; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);"
-                  title="Open interactive revision mat in a new full browser tab">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+                  title="Open 1-page visual sheet in a new full browser tab (for printing or projection)">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open / Print A4
                 </a>
                 <button type="button"
                   onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lessonId}', '${effectiveUnitId}', { startIndex: ${idx} });}else if(window.openInfographicModal){window.openInfographicModal('${mat.slug}');}"
@@ -3986,10 +3992,10 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
               </div>
             </div>
             <!-- Live Interactive Embed Frame -->
-            <div style="position: relative; width: 100%; height: 860px; background: #070d18;">
+            <div style="position: relative; ${frameHeightStyle} background: #070d18;">
               <iframe src="${mat.interactiveUrl}"
                 style="width: 100%; height: 100%; border: none; display: block;"
-                title="${mat.title} Interactive Mat"
+                title="${mat.title}"
                 loading="lazy"></iframe>
             </div>
           </div>
@@ -4270,16 +4276,14 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'infographic',
       label: hasInteractive
-        ? (count > 1
-            ? `Interactive Mats (${count})`
-            : (isKs2Unit ? 'Interactive Presentation Mat' : 'Interactive Revision Mat'))
-        : (count > 1 ? `Visual Revision Mats (${count})` : 'Visual Revision Mat'),
+        ? (count > 1 ? `Interactive Infographics (${count})` : 'Interactive Infographic')
+        : (count > 1 ? `Infographics (${count})` : 'Infographic'),
       icon: hasInteractive
         ? 'fa-solid fa-wand-magic-sparkles icon-infographic'
-        : 'fa-solid fa-chart-pie icon-infographic',
+        : 'fa-solid fa-image icon-infographic',
       badge: hasInteractive
         ? (count > 1 ? `${count} Interactive` : 'Interactive')
-        : (count > 1 ? `${count} Mats` : 'Visual Mat'),
+        : (count > 1 ? `${count} Infographics` : '1-Sheet'),
     });
   }
 
@@ -5927,9 +5931,15 @@ export function renderLesson(lesson) {
               ${isKs2
         ? `
                     <button type="button" class="btn btn-ks2-worksheet-launcher" onclick="window.openKs2WorksheetModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open A4 Companion Worksheet (PDF & Print)"><i class="fa-solid fa-file-pdf" style="color: #2563eb;"></i> <span>Enquiry Worksheet</span></button>
-                    <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Walk-In Primary Teacher Guidance & Model Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
-                    <button type="button" class="btn btn-ks2-teacher-mode btn-teacher-mode-toggle ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'active' : ''}" onclick="window.toggleTeacherMode()" style="padding: 6px 12px; font-size: 0.88rem; background: #f5f3ff; color: #5b21b6; border: 1.5px solid #ddd6fe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(91, 33, 182, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="1-Click Teacher Mode: Reveal all Do Now, Source, Writing & Quiz answers on this page"><i class="fa-solid ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'fa-eye-slash' : 'fa-eye'}" style="color: #7c3aed;"></i> <span class="teacher-btn-label">${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'Teacher Mode: Answers ON' : 'Teacher Mode: Reveal Answers'}</span></button>
-                    <a href="/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete 28-page Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
+                    ${
+                      isStaffModeActive()
+                        ? `
+                    <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Staff Only: Walk-In Primary Teacher Guidance & Model Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
+                    <button type="button" class="btn btn-ks2-teacher-mode btn-teacher-mode-toggle ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'active' : ''}" onclick="window.toggleTeacherMode()" style="padding: 6px 12px; font-size: 0.88rem; background: #f5f3ff; color: #5b21b6; border: 1.5px solid #ddd6fe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(91, 33, 182, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Staff Only: Reveal all Do Now, Source, Writing & Quiz answers on this page"><i class="fa-solid ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'fa-eye-slash' : 'fa-eye'}" style="color: #7c3aed;"></i> <span class="teacher-btn-label">${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'Teacher Mode: Answers ON' : 'Teacher Mode: Reveal Answers'}</span></button>
+                    `
+                        : ''
+                    }
+                    <a href="/pdfs/ks2_ww2_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete 28-page Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
                     <button type="button" class="btn btn-ks2-quiz-jump" onclick="if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && !window.consolidateStations['${lesson.id}'].isOpen){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } else if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && window.consolidateStations['${lesson.id}'].mode !== 'quiz'){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } const qb = document.getElementById('tab-btn-quiz-${lesson.id}'); if(qb) qb.scrollIntoView({ behavior: 'smooth', block: 'start' });" style="padding: 6px 12px; font-size: 0.88rem; background: #fffbeb; color: #92400e; border: 1.5px solid #fde68a; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(146, 64, 14, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump straight to the 5-Question Lesson Quiz"><i class="fa-solid fa-circle-question" style="color: #d97706;"></i> <span>Lesson Quiz</span></button>
                   `
         : ''
@@ -5938,12 +5948,6 @@ export function renderLesson(lesson) {
         ? `<button type="button" class="btn btn-guided-reading-launcher" onclick="if(window.saveUnitReturnOrigin){window.saveUnitReturnOrigin();} if(window.switchView){ window.switchView('reading', '${unitId}', false, { rawLesson: '${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}', lessonIndex: ${currentIndex} }); } else { window.location.href = '/?view=reading&unit=${unitId}&lesson=${grEntry.lesson_key || grEntry.lesson_id || (currentIndex + 1)}'; }" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#fce7f3';" onmouseout="this.style.background='#fdf2f8';" title="Open Literary Companion & Audio Read-Aloud: ${grEntry.book_title}"><i class="fa-solid fa-book-open-reader" style="color: #be185d;"></i> <span>📖 Reading HW: ${grEntry.book_title}</span></button>`
         : ''
       }
-              ${(() => {
-                const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(unitId, lesson.id || currentIndex) : (lesson.infographic ? 1 : 0);
-                if (!cnt || cnt === 0) return '';
-                const label = cnt > 1 ? `Visual Revision Mats (${cnt})` : 'Visual Revision Mat';
-                return `<button type="button" class="btn btn-lesson-infographic" onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="padding: 6px 12px; font-size: 0.88rem; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1.5px solid #38bdf8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 4px rgba(2,132,199,0.35); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';" title="Open high-resolution visual revision mat / infographic"><i class="fa-solid fa-chart-pie" style="color: #fde047;"></i> <span>${label}</span></button>`;
-              })()}
               ${lesson.note_scaffold
         ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
         : ''
@@ -5999,8 +6003,8 @@ export function renderLesson(lesson) {
     }
   }
 
-  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 116px for Secondary/GCSE)
-  const heroBannerHeight = isKs2 ? '210px' : '116px';
+  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 134px for Secondary/GCSE)
+  const heroBannerHeight = isKs2 ? '210px' : '134px';
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();
@@ -6083,7 +6087,7 @@ export function renderLesson(lesson) {
     : `position: relative; width: calc(100% + 8rem); margin-left: -4rem; margin-top: 0; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.4rem; border-bottom: 1px solid var(--border-glass); box-shadow: 0 4px 16px rgba(0,0,0,0.08);`;
   const heroOverlayStyle = isKs2
     ? `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.16) 0%, rgba(15,23,42,0.54) 55%, rgba(15,23,42,0.88) 100%);`
-    : `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.85) 45%, rgba(15,23,42,0.96) 100%); backdrop-filter: blur(1px);`;
+    : `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.26) 0%, rgba(15,23,42,0.66) 55%, rgba(15,23,42,0.92) 100%);`;
   const heroContentPadding = isKs2 ? '0.9rem 1.75rem' : '0.72rem 4rem';
 
   html += `
@@ -7163,11 +7167,25 @@ export function renderLesson(lesson) {
         if (q.includes('<em>') || q.includes('<i>')) return fullMatch;
         return `${prefix}<em class="historical-setting-question">${q}</em>`;
       });
+      const prologueStudioAudio = lesson.prologue_audio || '';
+      const prologueVoiceLabel = lesson.prologue_voice_label || 'Studio Historian';
+      const prologueStudioAttrs = prologueStudioAudio
+        ? ` data-studio-audio="${prologueStudioAudio.replace(/"/g, '&quot;')}" data-studio-voice-label="${prologueVoiceLabel.replace(/"/g, '&quot;')}"`
+        : '';
+      const prologueVoiceBadge = prologueStudioAudio
+        ? `<span class="prologue-studio-badge" style="font-size: 0.68rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 999px; text-transform: none; letter-spacing: 0;">${prologueVoiceLabel}</span>`
+        : '';
       htmlNarrative += `
-        <div class="historical-editorial-lede">
-          <div class="lede-eyebrow">
-            <i class="fa-solid fa-compass"></i>
-            <span>The Historical Setting</span>
+        <div class="historical-editorial-lede"${prologueStudioAttrs}>
+          <div class="lede-eyebrow" style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
+            <div style="display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-compass"></i>
+              <span>The Historical Setting</span>
+            </div>
+            <div style="display: inline-flex; align-items: center; gap: 8px;">
+              ${prologueVoiceBadge}
+              ${renderAudioPlaybackBar('Listen to Historical Setting', 'prologue-audio-bar')}
+            </div>
           </div>
           <p class="historical-editorial-lede-text">
             ${prologueText}
@@ -9435,14 +9453,23 @@ export function renderLesson(lesson) {
               ? `SOURCE ${sLetter}`
               : 'ARCHIVAL EVIDENCE';
 
+          const studioSrcAudioAttr = rawSource.studio_audio
+            ? ` data-studio-source-audio="${String(rawSource.studio_audio).replace(/"/g, '&quot;')}" data-studio-voice-label="${String(rawSource.studio_voice_label || 'Living Archive').replace(/"/g, '&quot;')}"`
+            : '';
+          const studioSrcVoicePill =
+            rawSource.studio_audio && rawSource.studio_voice_label
+              ? `<span class="living-archive-voice-pill" style="font-size: 0.67rem; font-weight: 700; color: #0f766e; background: #f0fdfa; border: 1px solid #99f6e4; padding: 2px 7px; border-radius: 999px; white-space: nowrap;">${String(rawSource.studio_voice_label).replace(/</g, '&lt;')}</span>`
+              : '';
+
           return `
-            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box${hasPerspectivePair ? ' has-perspective-pair' : ''}" ${bCardIdAttr} style="margin: 5px 0 0 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
+            <details class="cme-source-drawer medicine-source-drawer eee-source-drawer weimar-source-drawer usa-source-drawer cold-war-source-drawer gcse-source-drawer archival-drawer gcse-source-container archival-source-box${hasPerspectivePair ? ' has-perspective-pair' : ''}" ${bCardIdAttr}${studioSrcAudioAttr} style="margin: 5px 0 0 0; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: all 0.25s ease;">
               <summary style="padding: 5px 12px; min-height: 32px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between; background: #f1f5f9; color: #0f172a; list-style: none; user-select: none; transition: background 0.15s ease;">
                 <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 10px; flex-wrap: wrap;">
                   <span class="archival-meta-tag${hasPerspectivePair ? ' is-competing-perspectives' : ''}" style="background: #1e40af; color: #ffffff; padding: 2px 7px; border-radius: 4px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4px; line-height: 1.2; white-space: nowrap; flex-shrink: 0;">${drawerPillLabel}</span>
                   <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">${displayTitle}</span>
                 </div>
                 <div style="display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0;">
+                  ${studioSrcVoicePill}
                   ${sourceAudioBtnHtml}
                   <span class="drawer-toggle-indicator" style="cursor: pointer;">
                     <span class="drawer-state-expand">View Source</span><span class="drawer-state-collapse">Close</span> <span class="drawer-caret">&#9660;</span>
@@ -9455,8 +9482,11 @@ export function renderLesson(lesson) {
             </details>
           `;
         } else {
+          const studioSrcAudioAttr = rawSource.studio_audio
+            ? ` data-studio-source-audio="${String(rawSource.studio_audio).replace(/"/g, '&quot;')}" data-studio-voice-label="${String(rawSource.studio_voice_label || 'Living Archive').replace(/"/g, '&quot;')}"`
+            : '';
           return `
-            <div class="gcse-source-container archival-source-box" ${bCardIdAttr} style="text-align: left; transition: all 0.3s ease; margin: 20px 0;">
+            <div class="gcse-source-container archival-source-box" ${bCardIdAttr}${studioSrcAudioAttr} style="text-align: left; transition: all 0.3s ease; margin: 20px 0;">
               ${sourceHeaderHtml}
               ${sourceBodyHtml}
             </div>
@@ -9482,6 +9512,8 @@ export function renderLesson(lesson) {
           source_context: src.source_context || matched.source_context || '',
           text_type: src.text_type || matched.text_type || '',
           perspective_pair: src.perspective_pair || matched.perspective_pair || null,
+          studio_audio: src.studio_audio || matched.studio_audio || '',
+          studio_voice_label: src.studio_voice_label || matched.studio_voice_label || '',
         };
       };
 
@@ -9800,8 +9832,15 @@ export function renderLesson(lesson) {
         `;
       }
 
+      const resolvedStudioUnit = String(window.currentUnitId || unitId || '').trim();
+      const resolvedStudioLesson = lesson && lesson.id ? String(lesson.id).trim() : '';
+      const studioAudioAttr =
+        resolvedStudioUnit && resolvedStudioLesson
+          ? ` data-studio-audio="/audio/lessons/${encodeURIComponent(resolvedStudioUnit)}/${encodeURIComponent(resolvedStudioLesson)}_b${index + 1}.mp3"`
+          : '';
+
       htmlNarrative += `
-            <div class="standard-narrative-container" style="margin-bottom: 20px;">
+            <div class="standard-narrative-container"${studioAudioAttr} style="margin-bottom: 20px;">
               ${topNarrativeHtml}
               ${blockSourceHtml}
             </div>

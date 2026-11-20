@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Key Topic 4 · Reactions &amp; Exit from Vietnam: Why Did So Many Americans Oppose the War in Vietnam? | The History Revision Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4 landscape; margin: 0; }
+    :root { --paper: #fcfbf7; --ink: #0f172a; --muted: #475569; --border: #cbd5e1; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #0b1120;
+      color: var(--ink);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      width: 100vw; height: 100vh; overflow: hidden;
+      display: flex; align-items: center; justify-content: center; padding: 0;
+    }
+    .mat-container {
+      width: 1123px; height: 794px; flex-shrink: 0;
+      transform-origin: center center;
+      background: var(--paper); border-radius: 10px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+      padding: 12px 18px 10px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      gap: 6px; position: relative; overflow: hidden; border: 2px solid #e2e8f0;
+    }
+    .sheet-header {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      background: #0f172a; color: #ffffff; padding: 8px 15px;
+      border-radius: 8px; border-bottom: 4px solid #f59e0b; flex-shrink: 0;
+    }
+    .header-left { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .eyebrow-row {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .pill-kt { background: #f59e0b; color: #0f172a; padding: 2px 8px; border-radius: 4px; }
+    .pill-dates {
+      background: rgba(56, 189, 248, 0.2); color: #7dd3fc;
+      border: 1px solid rgba(125, 211, 252, 0.4); padding: 2px 8px; border-radius: 4px;
+    }
+    .eyebrow-brand { color: #cbd5e1; font-weight: 700; }
+    .sheet-title {
+      font-family: 'Lora', Georgia, serif; font-size: 19.5px; font-weight: 700;
+      line-height: 1.18; color: #ffffff;
+    }
+    .header-actions { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
+    .action-btn {
+      border: 1px solid rgba(255, 255, 255, 0.25); background: #1e293b; color: #f8fafc;
+      font-family: inherit; font-size: 11.5px; font-weight: 800; padding: 6px 12px;
+      border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .action-btn:hover { background: #0284c7; border-color: #7dd3fc; }
+    .action-btn.primary-listen { background: linear-gradient(135deg, #0284c7, #2563eb); border-color: #7dd3fc; }
+    .action-btn.speaking { background: #d97706; border-color: #fde68a; color: #ffffff; }
+    .action-btn.stop-btn {
+      background: rgba(239, 68, 68, 0.2); border-color: rgba(248, 113, 113, 0.5);
+      color: #fca5a5; padding: 6px 9px; display: none;
+    }
+    .story-rows {
+      flex: 1; min-height: 0; display: flex; flex-direction: column;
+      justify-content: space-between; gap: 0;
+    }
+    .story-row {
+      flex: 1; min-height: 0; display: grid;
+      grid-template-columns: 1fr 72px 1fr 72px 1fr; align-items: stretch;
+    }
+    .arrow-col {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 4px; padding: 0 2px;
+    }
+    .arrow-pill {
+      font-size: 8.3px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.03em;
+      color: #0f172a; background: #e2e8f0; border: 1.5px solid #94a3b8;
+      padding: 3px 5px; border-radius: 5px; text-align: center; line-height: 1.15;
+      transition: all 0.2s ease;
+    }
+    .arrow-pill.active-bridge, .row-turn-badge.active-bridge {
+      background: #f59e0b !important; color: #0f172a !important;
+      border-color: #b45309 !important; transform: scale(1.07);
+      box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.28);
+    }
+    .arrow-svg { width: 28px; height: 18px; }
+    .row-turn-connector {
+      height: 22px; flex: 0 0 22px; position: relative;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .row-turn-svg { width: 100%; height: 22px; display: block; }
+    .row-turn-badge {
+      position: absolute; background: #fef3c7; color: #92400e; border: 1.5px solid #d97706;
+      font-size: 8.8px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 1.5px 10px; border-radius: 999px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08); transition: all 0.2s ease;
+    }
+    .story-card {
+      background: #ffffff; border: 2px solid #cbd5e1; border-top-width: 5px;
+      border-radius: 9px; display: flex; flex-direction: column; overflow: hidden;
+      cursor: pointer; box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
+      transition: box-shadow 0.18s ease, outline 0.18s ease, border-color 0.18s ease;
+    }
+    .story-card:hover { border-color: #94a3b8; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1); }
+    .story-card.active-reading, .takeaway-box.active-reading {
+      outline: 3.5px solid #f59e0b; box-shadow: 0 0 0 5px rgba(245, 158, 11, 0.25);
+    }
+    .card-c1 { border-top-color: #0284c7; --accent: #0369a1; --accent-soft: #e0f2fe; }
+    .card-c2 { border-top-color: #d97706; --accent: #b45309; --accent-soft: #fef3c7; }
+    .card-c3 { border-top-color: #dc2626; --accent: #b91c1c; --accent-soft: #fee2e2; }
+    .card-c4 { border-top-color: #7c3aed; --accent: #6d28d9; --accent-soft: #ede9fe; }
+    .card-c5 { border-top-color: #0d9488; --accent: #0f766e; --accent-soft: #ccfbf1; }
+    .card-outcome {
+      border-color: #1e3a8a; border-top-width: 5px; border-top-color: #1e3a8a;
+      background: #f8fafc; --accent: #1e3a8a; --accent-soft: #dbeafe;
+    }
+    .card-top {
+      display: flex; flex-direction: column; gap: 3px; padding: 5px 9px 5px;
+      background: #f8fafc; border-bottom: 1px solid #e2e8f0; flex-shrink: 0;
+    }
+    .card-outcome .card-top { background: #eff6ff; border-bottom-color: #bfdbfe; }
+    .card-meta-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+    .step-badge {
+      height: 18px; padding: 0 6px; border-radius: 4px; background: var(--accent); color: #ffffff;
+      font-size: 9.2px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase;
+      display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .step-badge.outcome-badge { background: #1e3a8a; color: #fde68a; }
+    .card-top-right { display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
+    .step-date {
+      font-size: 9.4px; font-weight: 800; background: var(--accent-soft); color: var(--accent);
+      padding: 1.5px 7px; border-radius: 999px; white-space: nowrap;
+    }
+    .card-speak-btn {
+      width: 19px; height: 19px; border-radius: 4px; border: 1px solid #cbd5e1;
+      background: #ffffff; color: #334155; font-size: 10px; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; transition: all 0.15s ease;
+    }
+    .card-speak-btn:hover, .card-speak-btn.playing {
+      background: #f59e0b; border-color: #d97706; color: #0f172a;
+    }
+    .step-heading {
+      font-size: 12.6px; font-weight: 900; color: #0f172a; line-height: 1.18; white-space: nowrap;
+    }
+    .card-visual {
+      height: 112px; background: #0f172a; position: relative; overflow: hidden;
+      flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    }
+    .card-visual.light-matte { background: #f8fafc; padding: 3px; }
+    .card-visual .bg-blur {
+      position: absolute; inset: -12px; width: calc(100% + 24px); height: calc(100% + 24px);
+      object-fit: cover; filter: blur(10px) brightness(0.42); pointer-events: none;
+    }
+    .card-visual img.archival-contain {
+      position: relative; z-index: 1; max-width: 100%; max-height: 100%;
+      width: auto; height: 100%; object-fit: contain; display: block;
+    }
+    .card-visual img.archival-landscape {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .stat-strip {
+      background: #f1f5f9; border-top: 1px solid #cbd5e1; border-bottom: 1px solid #e2e8f0;
+      color: #0f172a; font-size: 9.6px; font-weight: 800; padding: 2.5px 9px;
+      display: flex; align-items: center; gap: 5px; flex-shrink: 0; letter-spacing: 0.01em;
+      white-space: nowrap; overflow: hidden;
+    }
+    .stat-dot { width: 6.5px; height: 6.5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .partition-visual {
+      background: #f8fafc; display: grid; grid-template-columns: 82px 1fr;
+      align-items: center; padding: 4px 8px; gap: 8px;
+    }
+    .partition-visual img {
+      width: 78px; height: 104px; object-fit: contain; background: #ffffff;
+      border: 1px solid #cbd5e1; border-radius: 4px;
+    }
+    .partition-bars { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+    .p-bar-title { font-size: 8.8px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em; color: #0f766e; }
+    .split-track {
+      display: flex; height: 21px; border-radius: 5px; overflow: hidden;
+      border: 1.5px solid #0f172a; font-size: 9.2px; font-weight: 900; white-space: nowrap;
+    }
+    .split-jewish {
+      background: #ea580c; color: #ffffff; display: flex; align-items: center; justify-content: center; padding: 0 3px;
+    }
+    .split-arab {
+      background: repeating-linear-gradient(-45deg, #fef08a, #fef08a 5px, #fde047 5px, #fde047 10px);
+      color: #0f172a; display: flex; align-items: center; justify-content: center;
+      border-left: 1.5px solid #0f172a; padding: 0 3px;
+    }
+    .p-legend { font-size: 9.3px; line-height: 1.24; color: #1e293b; font-weight: 600; }
+    .card-body { padding: 6px 9px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .story-text { font-size: 11.7px; line-height: 1.35; color: #1e293b; font-weight: 500; }
+    .story-text strong {
+      color: #0f172a; font-weight: 800; background: #fef9c3; padding: 0 1.5px; border-radius: 2px;
+    }
+    .bottom-strip { display: grid; grid-template-columns: 1.12fr 1.38fr; gap: 12px; flex-shrink: 0; }
+    .takeaway-box {
+      background: #eff6ff; border: 2px solid #1e3a8a; border-left-width: 6px; border-radius: 8px;
+      padding: 6px 11px; display: flex; flex-direction: column; justify-content: center; gap: 2px;
+      cursor: pointer; transition: outline 0.18s ease, box-shadow 0.18s ease;
+    }
+    .strip-label { font-size: 9px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; color: #1e3a8a; }
+    .takeaway-text { font-size: 11.6px; line-height: 1.32; font-weight: 700; color: #0f172a; }
+    .vocab-box {
+      background: #ffffff; border: 2px solid #cbd5e1; border-radius: 8px; padding: 6px 10px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: center;
+    }
+    .vocab-item { border-left: 3px solid #f59e0b; padding-left: 7px; font-size: 10.3px; line-height: 1.24; color: #334155; }
+    .vocab-item strong { display: block; font-size: 11px; font-weight: 900; color: #0f172a; margin-bottom: 1px; }
+    .sheet-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 8.6px; color: #64748b; font-weight: 600; padding: 0 2px; flex-shrink: 0;
+    }
+    @media print {
+      html, body { background: #ffffff; width: auto; height: auto; overflow: visible; padding: 0; display: block; }
+      .mat-container {
+        transform: none !important; box-shadow: none; border: none; border-radius: 0;
+        background: #ffffff; width: 297mm; height: 210mm;
+      }
+      .sheet-header {
+        background: #ffffff !important; color: #0f172a !important;
+        border: 2px solid #0f172a !important; border-bottom: 4px solid #0f172a !important;
+      }
+      .sheet-title { color: #0f172a !important; }
+      .pill-dates { background: #f1f5f9 !important; color: #0f172a !important; border-color: #64748b !important; }
+      .eyebrow-brand { color: #334155 !important; }
+      .card-visual { background: #f1f5f9 !important; }
+      .card-visual .bg-blur { display: none !important; }
+      .story-text strong { background: none !important; text-decoration: underline; text-decoration-thickness: 1.5px; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body data-self-fit="true">
+  <main class="mat-container" id="visual-story-sheet">
+    <header class="sheet-header">
+      <div class="header-left">
+        <div class="eyebrow-row">
+          <span class="pill-kt">Key Topic 4 · Reactions &amp; Exit from Vietnam</span>
+          <span class="pill-dates">1965–1971</span>
+          <span class="eyebrow-brand">1-Page Visual Story Sheet • Tap Any Stage to Listen</span>
+        </div>
+        <h1 class="sheet-title" style="font-size:19.5px;">Why Did So Many Americans Oppose the War in Vietnam?</h1>
+      </div>
+      <div class="header-actions no-print">
+        <button type="button" class="action-btn primary-listen" id="btn-read-aloud" onclick="toggleFullStoryAudio()">
+          <span id="read-icon">🎙️</span> <span id="read-label">Listen to Story</span>
+        </button>
+        <button type="button" class="action-btn stop-btn" id="btn-stop-aloud" onclick="stopAllAudio()" title="Stop Narration">
+          ⏹️
+        </button>
+        <button type="button" class="action-btn" onclick="window.print()">
+          🖨️ Print 1-Page A4
+        </button>
+      </div>
+    </header>
+
+    <section class="story-rows" aria-label="Five lesson stages and final outcome">
+      <div class="story-row">
+        <article class="story-card card-c1" id="card-0" onclick="jumpToStage(0)">
+          <div class="card-top">
+            <div class="card-meta-row">
+              <span class="step-badge">Stage 1</span>
+              <div class="card-top-right">
+                <span class="step-date">1965–1968</span>
+                <button type="button" class="card-speak-btn no-print" onclick="event.stopPropagation(); jumpToStage(0);" title="Listen from Stage 1">🔊</button>
+              </div>
+            </div>
+            <h2 class="step-heading">The First 'Living Room War'</h2>
+          </div>
+          <div class="card-visual">
+            <img class="archival-landscape" src="/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg" style="object-position: center 28%;" alt="The First 'Living Room War'" />
+          </div>
+          <div class="stat-strip">
+            <span class="stat-dot"></span>
+            <span>90% of US homes watched uncensored TV reports</span>
+          </div>
+          <div class="card-body">
+            <p class="story-text">Uncensored colour TV footage brought burning villages and wounded soldiers into 90% of homes in the first <strong>Living Room War</strong>, opening a wide <strong>Credibility Gap</strong> with upbeat <strong>Washington briefings</strong>.</p>
+          </div>
+        </article>
+        <div class="arrow-col" aria-hidden="true">
+          <span class="arrow-pill" id="bridge-1">Draft hits<br/>poor youth</span>
+          <svg class="arrow-svg" viewBox="0 0 28 18" fill="none"><path d="M2 9h22m0 0l-6-6m6 6l-6 6" stroke="#0f172a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <article class="story-card card-c2" id="card-1" onclick="jumpToStage(1)">
+          <div class="card-top">
+            <div class="card-meta-row">
+              <span class="step-badge">Stage 2</span>
+              <div class="card-top-right">
+                <span class="step-date">1966–1969</span>
+                <button type="button" class="card-speak-btn no-print" onclick="event.stopPropagation(); jumpToStage(1);" title="Listen from Stage 2">🔊</button>
+              </div>
+            </div>
+            <h2 class="step-heading">Draft Inequality &amp; Defiance</h2>
+          </div>
+          <div class="card-visual">
+            <img class="archival-landscape" src="/units/usa/assets/sources/draft-card-burning-nyc-1967.jpg" style="object-position: center 28%;" alt="Draft Inequality &amp; Defiance" />
+          </div>
+          <div class="stat-strip">
+            <span class="stat-dot"></span>
+            <span>2m+ men drafted; 30,000+ fled to Canada/Sweden</span>
+          </div>
+          <div class="card-body">
+            <p class="story-text">Over two million men faced the <strong>Selective Service draft</strong>, while wealthy youths used <strong>college deferments</strong>. Working-class and Black men bore combat as <strong>Muhammad Ali</strong> refused induction.</p>
+          </div>
+        </article>
+        <div class="arrow-col" aria-hidden="true">
+          <span class="arrow-pill" id="bridge-2">My Lai<br/>shocks nation</span>
+          <svg class="arrow-svg" viewBox="0 0 28 18" fill="none"><path d="M2 9h22m0 0l-6-6m6 6l-6 6" stroke="#0f172a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <article class="story-card card-c3" id="card-2" onclick="jumpToStage(2)">
+          <div class="card-top">
+            <div class="card-meta-row">
+              <span class="step-badge">Stage 3</span>
+              <div class="card-top-right">
+                <span class="step-date">November 1969</span>
+                <button type="button" class="card-speak-btn no-print" onclick="event.stopPropagation(); jumpToStage(2);" title="Listen from Stage 3">🔊</button>
+              </div>
+            </div>
+            <h2 class="step-heading">My Lai Massacre Exposed</h2>
+          </div>
+          <div class="card-visual">
+            <img class="bg-blur" src="/units/usa/assets/sources/my_lai_soldier_hut_fire_1968.jpg" alt="" aria-hidden="true" />
+            <img class="archival-contain" src="/units/usa/assets/sources/my_lai_soldier_hut_fire_1968.jpg" alt="My Lai Massacre Exposed" />
+          </div>
+          <div class="stat-strip">
+            <span class="stat-dot"></span>
+            <span>500+ unarmed villagers killed in March 1968</span>
+          </div>
+          <div class="card-body">
+            <p class="story-text">In March 1968, <strong>Lt William Calley's</strong> troops murdered over 500 unarmed civilians at <strong>My Lai</strong>. Hidden for 20 months until <strong>Seymour Hersh's</strong> Nov 1969 report, photos shattered US moral claims.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="row-turn-connector" aria-hidden="true">
+        <svg class="row-turn-svg" viewBox="0 0 1087 22" preserveAspectRatio="none">
+          <path d="M 930 0 L 930 11 L 156 11 L 156 20" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 4" />
+          <polygon points="156,22 150,15 162,15" fill="#d97706" />
+        </svg>
+        <span class="row-turn-badge" id="bridge-3">Cambodia sparks strikes</span>
+      </div>
+
+      <div class="story-row">
+        <article class="story-card card-c4" id="card-3" onclick="jumpToStage(3)">
+          <div class="card-top">
+            <div class="card-meta-row">
+              <span class="step-badge">Stage 4</span>
+              <div class="card-top-right">
+                <span class="step-date">4 May 1970</span>
+                <button type="button" class="card-speak-btn no-print" onclick="event.stopPropagation(); jumpToStage(3);" title="Listen from Stage 4">🔊</button>
+              </div>
+            </div>
+            <h2 class="step-heading">Kent State Campus Shootings</h2>
+          </div>
+          <div class="card-visual">
+            <img class="archival-landscape" src="/units/usa/assets/sources/kent-state-protests-1970.jpg" style="object-position: center 28%;" alt="Kent State Campus Shootings" />
+          </div>
+          <div class="stat-strip">
+            <span class="stat-dot"></span>
+            <span>4 students killed &amp; 400+ US colleges shut down</span>
+          </div>
+          <div class="card-body">
+            <p class="story-text">Nixon's April 1970 <strong>Cambodian invasion</strong> ignited campus fury. On 4 May, <strong>Ohio National Guardsmen</strong> fired 67 shots into unarmed protesters at <strong>Kent State University</strong>, killing four students.</p>
+          </div>
+        </article>
+        <div class="arrow-col" aria-hidden="true">
+          <span class="arrow-pill" id="bridge-4">Secret lies<br/>leaked</span>
+          <svg class="arrow-svg" viewBox="0 0 28 18" fill="none"><path d="M2 9h22m0 0l-6-6m6 6l-6 6" stroke="#0f172a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <article class="story-card card-c5" id="card-4" onclick="jumpToStage(4)">
+          <div class="card-top">
+            <div class="card-meta-row">
+              <span class="step-badge">Stage 5</span>
+              <div class="card-top-right">
+                <span class="step-date">June 1971</span>
+                <button type="button" class="card-speak-btn no-print" onclick="event.stopPropagation(); jumpToStage(4);" title="Listen from Stage 5">🔊</button>
+              </div>
+            </div>
+            <h2 class="step-heading">The Pentagon Papers Leak</h2>
+          </div>
+          <div class="card-visual">
+            <img class="bg-blur" src="/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg" alt="" aria-hidden="true" />
+            <img class="archival-contain" src="/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg" alt="The Pentagon Papers Leak" />
+          </div>
+          <div class="stat-strip">
+            <span class="stat-dot"></span>
+            <span>7,000 leaked pages exposed 4 presidents' lies</span>
+          </div>
+          <div class="card-body">
+            <p class="story-text">In June 1971, analyst <strong>Daniel Ellsberg</strong> leaked the 7,000-page <strong>Pentagon Papers</strong> to the press. After the <strong>Supreme Court</strong> blocked censorship, Americans saw four presidents had lied.</p>
+          </div>
+        </article>
+        <div class="arrow-col" aria-hidden="true">
+          <span class="arrow-pill" id="bridge-5">War consensus<br/>breaks</span>
+          <svg class="arrow-svg" viewBox="0 0 28 18" fill="none"><path d="M2 9h22m0 0l-6-6m6 6l-6 6" stroke="#1e3a8a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <article class="story-card card-outcome" id="card-5" onclick="jumpToStage(5)">
+          <div class="card-top">
+            <div class="card-meta-row">
+              <span class="step-badge outcome-badge">⚡ Outcome</span>
+              <div class="card-top-right">
+                <span class="step-date">By 1971</span>
+                <button type="button" class="card-speak-btn no-print" onclick="event.stopPropagation(); jumpToStage(5);" title="Listen from ⚡ Outcome">🔊</button>
+              </div>
+            </div>
+            <h2 class="step-heading">Mainstream Anti-War Shift</h2>
+          </div>
+          <div class="card-visual">
+            <img class="bg-blur" src="/units/usa/assets/sources/vvaw-veterans-protest.jpg" alt="" aria-hidden="true" />
+            <img class="archival-contain" src="/units/usa/assets/sources/vvaw-veterans-protest.jpg" alt="Mainstream Anti-War Shift" />
+          </div>
+          <div class="stat-strip">
+            <span class="stat-dot"></span>
+            <span>Veterans, press &amp; Congress demanded US exit</span>
+          </div>
+          <div class="card-body">
+            <p class="story-text">As <strong>Vietnam Veterans Against the War</strong> threw back combat medals in 1971, dissent moved beyond students. Moral revulsion, <strong>casualties, and deceit</strong> forced Washington toward <strong>full withdrawal</strong>.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-strip">
+      <div class="takeaway-box" id="takeaway-box" onclick="jumpToStage(6)">
+        <span class="strip-label">💡 The Big Story in One Sentence</span>
+        <p class="takeaway-text">Graphic TV broadcasts, an unequal draft, the My Lai massacre, Kent State killings, and leaked Pentagon Papers shattered public trust and turned mainstream America against the war.</p>
+      </div>
+      <div class="vocab-box" aria-label="Three key words">
+        <div class="vocab-item">
+          <strong>1. Credibility Gap</strong>
+          Contrast between upbeat White House war claims and grim reality shown on TV.
+        </div>
+        <div class="vocab-item">
+          <strong>2. My Lai Massacre (1968)</strong>
+          March 1968 atrocity where US troops killed 500+ unarmed Vietnamese civilians.
+        </div>
+        <div class="vocab-item">
+          <strong>3. Pentagon Papers (1971)</strong>
+          7,000-page secret DoD history leaked by Daniel Ellsberg exposing war lies.
+        </div>
+      </div>
+    </section>
+
+    <footer class="sheet-footer">
+      <span>The History Revision Hub • Conflict at Home and Abroad: the USA, 1954–75 (Key Topic 4 · Reactions &amp; Exit from Vietnam)</span>
+      <span>Authentic Archival Sources: US National Archives (NARA), Library of Congress, DoD &amp; Nixon Library (Zero AI Imagery)</span>
+    </footer>
+  </main>
+
+  <script>
+    function fitSheetToViewport() {
+      const sheet = document.getElementById('visual-story-sheet');
+      if (!sheet) return;
+      const pad = 16;
+      const availW = Math.max(320, window.innerWidth - pad);
+      const availH = Math.max(240, window.innerHeight - pad);
+      const scale = Math.min(availW / 1123, availH / 794, 1.18);
+      sheet.style.transform = `scale(${scale.toFixed(4)})`;
+    }
+    window.addEventListener('resize', fitSheetToViewport);
+    window.addEventListener('DOMContentLoaded', fitSheetToViewport);
+    fitSheetToViewport();
+
+    const AUDIO_STEPS = [
+      { src: '/audio/visual_sheets/usa/l13_s1.mp3', cardId: 'card-0', bridgeId: null, bridgeHoldMs: 0 },
+      { src: '/audio/visual_sheets/usa/l13_s2.mp3', cardId: 'card-1', bridgeId: 'bridge-1', bridgeHoldMs: 1900 },
+      { src: '/audio/visual_sheets/usa/l13_s3.mp3', cardId: 'card-2', bridgeId: 'bridge-2', bridgeHoldMs: 1900 },
+      { src: '/audio/visual_sheets/usa/l13_s4.mp3', cardId: 'card-3', bridgeId: 'bridge-3', bridgeHoldMs: 2300 },
+      { src: '/audio/visual_sheets/usa/l13_s5.mp3', cardId: 'card-4', bridgeId: 'bridge-4', bridgeHoldMs: 2100 },
+      { src: '/audio/visual_sheets/usa/l13_s6.mp3', cardId: 'card-5', bridgeId: 'bridge-5', bridgeHoldMs: 2100 },
+      { src: '/audio/visual_sheets/usa/l13_takeaway.mp3', cardId: 'takeaway-box', bridgeId: null, bridgeHoldMs: 0 },
+    ];
+
+    const player = new Audio();
+    player.preload = 'none';
+    let mode = 'idle';
+    let currentStepIdx = 0;
+    let bridgeTimer = null;
+
+    function clearVisualHighlights() {
+      if (bridgeTimer) {
+        clearTimeout(bridgeTimer);
+        bridgeTimer = null;
+      }
+      document.querySelectorAll('.story-card, .takeaway-box').forEach((el) => el.classList.remove('active-reading'));
+      document.querySelectorAll('.arrow-pill, .row-turn-badge').forEach((el) => el.classList.remove('active-bridge'));
+      document.querySelectorAll('.card-speak-btn').forEach((el) => el.classList.remove('playing'));
+    }
+
+    function updateHeaderButtons() {
+      const btnMain = document.getElementById('btn-read-aloud');
+      const icon = document.getElementById('read-icon');
+      const label = document.getElementById('read-label');
+      const btnStop = document.getElementById('btn-stop-aloud');
+      if (!btnMain || !icon || !label || !btnStop) return;
+
+      if (mode === 'playing') {
+        btnMain.classList.add('speaking');
+        icon.textContent = '⏸️';
+        label.textContent = 'Pause Story';
+        btnStop.style.display = 'inline-flex';
+      } else if (mode === 'paused') {
+        btnMain.classList.add('speaking');
+        icon.textContent = '▶️';
+        label.textContent = 'Resume Story';
+        btnStop.style.display = 'inline-flex';
+      } else {
+        btnMain.classList.remove('speaking');
+        icon.textContent = '🎙️';
+        label.textContent = 'Listen to Story';
+        btnStop.style.display = 'none';
+      }
+    }
+
+    function applyStepHighlight(idx, skipBridgeLead) {
+      clearVisualHighlights();
+      const step = AUDIO_STEPS[idx];
+      if (!step) return;
+      const cardEl = document.getElementById(step.cardId);
+      const cardBtns = document.querySelectorAll('.card-speak-btn');
+      if (idx < cardBtns.length) cardBtns[idx].classList.add('playing');
+
+      if (!skipBridgeLead && step.bridgeId) {
+        const bEl = document.getElementById(step.bridgeId);
+        if (bEl) bEl.classList.add('active-bridge');
+        bridgeTimer = setTimeout(() => {
+          if (bEl) bEl.classList.remove('active-bridge');
+          if (cardEl) cardEl.classList.add('active-reading');
+        }, step.bridgeHoldMs);
+      } else if (cardEl) {
+        cardEl.classList.add('active-reading');
+      }
+    }
+
+    function playStepAt(idx, jumpedDirectly) {
+      if (idx < 0 || idx >= AUDIO_STEPS.length) {
+        stopAllAudio();
+        return;
+      }
+      currentStepIdx = idx;
+      mode = 'playing';
+      updateHeaderButtons();
+      applyStepHighlight(idx, Boolean(jumpedDirectly));
+
+      player.onended = () => {
+        if (mode === 'playing') {
+          playStepAt(idx + 1, false);
+        }
+      };
+      player.onerror = () => stopAllAudio();
+      player.src = AUDIO_STEPS[idx].src;
+      player.play().catch(() => stopAllAudio());
+    }
+
+    function jumpToStage(targetIdx) {
+      if (mode === 'playing' && currentStepIdx === targetIdx) {
+        player.pause();
+        mode = 'paused';
+        updateHeaderButtons();
+        return;
+      }
+      if (mode === 'paused' && currentStepIdx === targetIdx) {
+        mode = 'playing';
+        updateHeaderButtons();
+        player.play().catch(() => stopAllAudio());
+        return;
+      }
+      playStepAt(targetIdx, true);
+    }
+
+    function toggleFullStoryAudio() {
+      if (mode === 'playing') {
+        player.pause();
+        mode = 'paused';
+        updateHeaderButtons();
+      } else if (mode === 'paused') {
+        mode = 'playing';
+        updateHeaderButtons();
+        player.play().catch(() => stopAllAudio());
+      } else {
+        playStepAt(0, false);
+      }
+    }
+
+    function stopAllAudio() {
+      player.pause();
+      player.currentTime = 0;
+      player.onended = null;
+      mode = 'idle';
+      currentStepIdx = 0;
+      clearVisualHighlights();
+      updateHeaderButtons();
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (mode === 'idle') return;
+      if (e.key === ' ') {
+        e.preventDefault();
+        toggleFullStoryAudio();
+      } else if (e.key === 'ArrowDown' || (e.key === 'ArrowRight' && e.altKey)) {
+        e.preventDefault();
+        playStepAt(Math.min(AUDIO_STEPS.length - 1, currentStepIdx + 1), true);
+      } else if (e.key === 'ArrowUp' || (e.key === 'ArrowLeft' && e.altKey)) {
+        e.preventDefault();
+        playStepAt(Math.max(0, currentStepIdx - 1), true);
+      }
+    });
+
+    window.addEventListener('beforeunload', stopAllAudio);
+  </script>
+</body>
+</html>

@@ -1815,7 +1815,115 @@
           "a": "Fences and permanent towns",
           "explanation": "European property theory recognized ownership only where land was enclosed with fences, tilled with ploughs, and settled with permanent towns."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "australia_l01_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 1",
+        "datesBadge": "1768 – 1788",
+        "topicLabel": "Enquiry 1: Cook, Tupaia & Terra Nullius (1768–1788)",
+        "title": "Why Did Britain Claim Eastern Australia and Call It Terra Nullius?",
+        "spokenTitle": "Why did Britain claim eastern Australia and call it terra nullius?",
+        "thumbUrl": "/images/tupaia_map_1769.jpg",
+        "provenanceNote": "The National Archives Kew, British Library, National Library of Australia & National Portrait Gallery (Zero AI Imagery)",
+        "bridges": [
+          "Polynesian Guide",
+          "Shoreline Clash",
+          "Orders Broken",
+          "Legal Fiction",
+          "200-Year Seizure"
+        ],
+        "cards": [
+          {
+            "heading": "Secret Admiralty Orders",
+            "date": "1768–1769",
+            "img": "/images/james_cook.jpg",
+            "mode": "contain",
+            "stat": "HMS Endeavour Carried Locked Royal Orders",
+            "html": "In 1768, <strong>James Cook</strong> sailed on HMS Endeavour to observe Venus. Secret <strong>Admiralty orders</strong> told him to find and claim the <strong>Great Southern Land</strong>.",
+            "spoken": "Why did Britain claim eastern Australia and call it terra nullius? <short pause> In 1768, James Cook sailed on HMS Endeavour to observe Venus. Secret Admiralty orders told him to find and claim the Great Southern Land .",
+            "badge": "Stage 1",
+            "paired_prose_hash": "b4cbb43eeb",
+            "connective": "Why did Britain claim eastern Australia and call it terra nullius?"
+          },
+          {
+            "heading": "Tupaia’s Star Navigation",
+            "date": "1769–1770",
+            "img": "/images/tupaia_map_1769.jpg",
+            "mode": "contain-light",
+            "stat": "Over 130 Pacific Islands Mapped by Tupaia",
+            "html": "Tahitian priest and master navigator <strong>Tupaia</strong> joined the ship. Reading stars and swells, Tupaia mapped <strong>130 Pacific islands</strong> and translated with <strong>Māori communities</strong>.",
+            "spoken": "Cook could not cross the Pacific alone. <short pause> Tahitian priest and master navigator Tupaia joined the ship. Reading stars and swells, Tupaia mapped 130 Pacific islands and translated with Māori communities .",
+            "badge": "Stage 2",
+            "paired_prose_hash": "c8693193ff",
+            "connective": "Cook could not cross the Pacific alone."
+          },
+          {
+            "heading": "Gweagal Stand at Botany Bay",
+            "date": "April 1770",
+            "img": "/images/gweagal_encounter.jpg",
+            "mode": "contain-light",
+            "stat": "Two Gweagal Warriors Defended Their Country",
+            "html": "At <strong>Botany Bay</strong>, two <strong>Gweagal warriors</strong> raised spears to warn British boats off sacred land. Cook’s men fired <strong>musket shots</strong>, wounding one warrior before landing.",
+            "spoken": "First contact on the Australian shore turned violent. <short pause> At Botany Bay , two Gweagal warriors raised spears to warn British boats off sacred land. Cook’s men fired musket shots , wounding one warrior before landing.",
+            "badge": "Stage 3",
+            "paired_prose_hash": "c349252841",
+            "connective": "First contact on the Australian shore turned violent."
+          },
+          {
+            "heading": "Possession Island Claim",
+            "date": "August 1770",
+            "img": "/images/aus_cook_journal.jpg",
+            "mode": "contain-light",
+            "stat": "Claimed Without First Nations Consent",
+            "html": "In August 1770, Cook raised the Union Jack on <strong>Possession Island</strong> for <strong>King George III</strong>. He broke orders saying land needed <strong>Indigenous consent</strong>.",
+            "spoken": "Four months later, Cook broke his own instructions. <short pause> In August 1770, Cook raised the Union Jack on Possession Island for King George III . He broke orders saying land needed Indigenous consent .",
+            "badge": "Stage 4",
+            "paired_prose_hash": "50430c9411",
+            "connective": "Four months later, Cook broke his own instructions."
+          },
+          {
+            "heading": "The Myth of Terra Nullius",
+            "date": "1770–1788",
+            "img": "/images/sir_william_blackstone_1774.jpg",
+            "mode": "contain",
+            "stat": "Zero Treaties Signed With Clan Elders",
+            "html": "Seeing no European fences or ploughs, British lawyers called Australia <strong>terra nullius</strong>—nobody’s land—signing <strong>zero treaties</strong> and stripping <strong>Indigenous land rights</strong>.",
+            "spoken": "British lawyers then turned false reports into law. <short pause> Seeing no European fences or ploughs, British lawyers called Australia terra nullius, nobody’s land, signing zero treaties and stripping Indigenous land rights .",
+            "badge": "Stage 5",
+            "paired_prose_hash": "ae9d68d8d8",
+            "connective": "British lawyers then turned false reports into law."
+          },
+          {
+            "heading": "Two Centuries of Dispossession",
+            "date": "From 1788",
+            "img": "/images/botany_bay_map.jpg",
+            "mode": "contain-light",
+            "stat": "Over 250 First Nations Stripped of Sovereignty",
+            "html": "That false <strong>terra nullius</strong> claim let Britain send convict ships in 1788 without permission. It began two centuries of <strong>Indigenous dispossession</strong> across <strong>ancestral country</strong>.",
+            "spoken": "That legal lie shaped modern Australian history. <short pause> That false terra nullius claim let Britain send convict ships in 1788 without permission. It began two centuries of Indigenous dispossession across ancestral country .",
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "connective": "That legal lie shaped modern Australian history."
+          }
+        ],
+        "takeaway": "Guided by Tupaia, Cook claimed eastern Australia without consent in 1770, and British lawyers used the myth of terra nullius to seize First Nations land.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Guided by Tupaia, Cook claimed eastern Australia without consent in 1770, and British lawyers used the myth of terra nullius to seize First Nations land.",
+        "vocab": [
+          [
+            "1. Terra Nullius",
+            "Latin for \"nobody’s land\", used by Britain to seize Australia without treaty."
+          ],
+          [
+            "2. Tupaia",
+            "Tahitian priest and master star navigator who guided HMS Endeavour."
+          ],
+          [
+            "3. Sovereignty",
+            "Supreme legal right and authority of a people to govern their own land."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2",
@@ -3387,7 +3495,117 @@
           "a": "James Ruse",
           "explanation": "Emancipist farmer James Ruse successfully harvested wheat and corn, demonstrating that the colony could feed itself."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "australia_l02_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 2",
+        "datesBadge": "1783 – 1792",
+        "topicLabel": "Enquiry 2: The First Fleet & Convict Colony (1783–1792)",
+        "title": "How Did Britain Build Its First Convict Penal Colony at Sydney Cove?",
+        "spokenTitle": "How did Britain build its first convict penal colony at Sydney Cove?",
+        "thumbUrl": "/images/prison_hulks.jpg",
+        "provenanceNote": "National Library of Australia, State Library of NSW & Natural History Museum London (Zero AI Imagery)",
+        "bridges": [
+          "11 Ships Sail",
+          "Move North",
+          "Famine Strikes",
+          "Lash & Farms",
+          "Colony Survives"
+        ],
+        "cards": [
+          {
+            "heading": "Rotting Thames Prison Hulks",
+            "date": "1783–1786",
+            "img": "/images/prison_hulks.jpg",
+            "mode": "landscape",
+            "pos": "center 65%",
+            "stat": "American Independence Closed Convict Routes",
+            "html": "Losing America in 1783 stopped Britain shipping convicts west. As jails overflowed under the <strong>Bloody Code</strong>, typhus-ridden <strong>prison hulks</strong> pushed Britain to pick <strong>Botany Bay</strong>.",
+            "spoken": "How did Britain build its first convict penal colony at Sydney Cove? <short pause> Losing America in 1783 stopped Britain shipping convicts west. As jails overflowed under the Bloody Code , typhus-ridden prison hulks pushed Britain to pick Botany Bay .",
+            "badge": "Stage 1",
+            "paired_prose_hash": "765bc2a337",
+            "connective": "How did Britain build its first convict penal colony at Sydney Cove?"
+          },
+          {
+            "heading": "Sailing the First Fleet",
+            "date": "1787–1788",
+            "img": "/images/first_fleet_portsmouth_1787.jpg",
+            "mode": "contain-light",
+            "stat": "11 Ships, 750+ Convicts & 15,000 Miles",
+            "html": "Governor <strong>Arthur Phillip</strong> led <strong>11 ships</strong> and over 750 convicts across 15,000 miles. Strict clean water and fresh air kept <strong>voyage deaths below fifty</strong>.",
+            "spoken": "In May 1787, the First Fleet set sail. <short pause> Governor Arthur Phillip led 11 ships and over 750 convicts across 15,000 miles. Strict clean water and fresh air kept voyage deaths below fifty .",
+            "badge": "Stage 2",
+            "paired_prose_hash": "ac046b1f9f",
+            "connective": "In May 1787, the First Fleet set sail."
+          },
+          {
+            "heading": "Moving to Sydney Cove",
+            "date": "Jan 1788",
+            "img": "/images/first_fleet_botany_bay_1788.jpg",
+            "mode": "contain-light",
+            "stat": "Flag Raised at Port Jackson on 26 Jan 1788",
+            "html": "Botany Bay proved swampy, shallow, and unsafe. Phillip rowed north to <strong>Port Jackson</strong>, founding <strong>Sydney Cove</strong> beside fresh water on <strong>26 January 1788</strong>.",
+            "spoken": "Yet Botany Bay was unfit for a town. <short pause> Botany Bay proved swampy, shallow, and unsafe. Phillip rowed north to Port Jackson , founding Sydney Cove beside fresh water on the twenty-sixth of January 1788 .",
+            "badge": "Stage 3",
+            "paired_prose_hash": "b777b85cee",
+            "connective": "Yet Botany Bay was unfit for a town."
+          },
+          {
+            "heading": "The Starvation Years",
+            "date": "1788–1790",
+            "img": "/images/francis_fowkes_sydney_cove_1788.jpg",
+            "mode": "contain-light",
+            "stat": "HMS Guardian Wrecked Supply Cargo on Iceberg",
+            "html": "Sandy soil ruined grain and hoes snapped on roots. When supply ship <strong>HMS Guardian</strong> hit an iceberg, Phillip slashed <strong>rations</strong> to stop <strong>starvation</strong>.",
+            "spoken": "Within months, the young settlement nearly starved. <short pause> Sandy soil ruined grain and hoes snapped on roots. When supply ship HMS Guardian hit an iceberg, Phillip slashed rations to stop starvation .",
+            "badge": "Stage 4",
+            "paired_prose_hash": "ffe512aa22",
+            "connective": "Within months, the young settlement nearly starved."
+          },
+          {
+            "heading": "The Lash & Land Grants",
+            "date": "1788–1792",
+            "img": "/images/arthur_phillip.jpg",
+            "mode": "contain",
+            "stat": "30-Acre Land Grants Given to Freed Convicts",
+            "html": "Guards flogged convicts with the <strong>cat-o’-nine-tails</strong>, yet Phillip gave freed <strong>emancipists</strong> 30-acre farms. Ex-convict <strong>James Ruse</strong> grew thriving wheat at Rose Hill.",
+            "spoken": "Phillip combined harsh punishment with practical rewards. <short pause> Guards flogged convicts with the cat-o’-nine-tails , yet Phillip gave freed emancipists 30-acre farms. Ex-convict James Ruse grew thriving wheat at Rose Hill.",
+            "badge": "Stage 5",
+            "paired_prose_hash": "566e76d65e",
+            "connective": "Phillip combined harsh punishment with practical rewards."
+          },
+          {
+            "heading": "Open-Air Prison Becomes Colony",
+            "date": "By 1792",
+            "img": "/images/sydney_cove_1792.jpg",
+            "mode": "landscape",
+            "pos": "center 75%",
+            "stat": "Self-Sufficient British Outpost on Eora Land",
+            "html": "By 1792, convict sweat and <strong>emancipist farms</strong> saved New South Wales from collapse. Yet Britain’s growing survival pushed deeper onto <strong>Eora hunting and fishing lands</strong>.",
+            "spoken": "By 1792, the struggling camp had survived. <short pause> By 1792, convict sweat and emancipist farms saved New South Wales from collapse. Yet Britain’s growing survival pushed deeper onto Eora hunting and fishing lands .",
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "connective": "By 1792, the struggling camp had survived."
+          }
+        ],
+        "takeaway": "Sent to relieve Britain’s crowded prison hulks, First Fleet convicts survived near-starvation at Sydney Cove through harsh discipline and emancipist farms.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sent to relieve Britain’s crowded prison hulks, First Fleet convicts survived near-starvation at Sydney Cove through harsh discipline and emancipist farms.",
+        "vocab": [
+          [
+            "1. Prison Hulk",
+            "Rotting, dismasted warship moored on British rivers as a floating jail."
+          ],
+          [
+            "2. Transportation",
+            "Punishment exiling convicts overseas to work in a penal colony."
+          ],
+          [
+            "3. Emancipist",
+            "A former convict who finished their sentence and regained legal freedom."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3",
@@ -4931,7 +5149,117 @@
           "a": "London",
           "explanation": "Following Pemulwuy’s death in 1802, his severed head was preserved and shipped to London."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "australia_l03_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 3",
+        "datesBadge": "1788 – 1802",
+        "topicLabel": "Enquiry 3: Smallpox, Bennelong & Pemulwuy (1788–1802)",
+        "title": "How Did Eora and Bidjigal Clans Experience and Resist British Colonisation?",
+        "spokenTitle": "How did Eora and Bidjigal clans experience and resist British colonisation?",
+        "thumbUrl": "/images/eora_rock_art_sydney.jpg",
+        "provenanceNote": "State Library of NSW, National Library of Australia, British Museum & The National Archives Kew (Zero AI Imagery)",
+        "bridges": [
+          "Deadly Plague",
+          "Forced Envoy",
+          "Armed Raids",
+          "River Ambush",
+          "Broken Peace"
+        ],
+        "cards": [
+          {
+            "heading": "65,000 Years of Custodianship",
+            "date": "Pre-1788",
+            "img": "/images/eora_rock_art_sydney.jpg",
+            "mode": "landscape",
+            "stat": "Over 250 Language Nations Across Australia",
+            "html": "For over <strong>65,000 years</strong>, more than 250 First Nations cared for country. Clans used <strong>fire-stick farming</strong> to renew grass and followed sacred <strong>Songlines</strong>.",
+            "spoken": "How did Eora and Bidjigal clans experience and resist British colonisation? <short pause> For over 65,000 years , more than 250 First Nations cared for country. Clans used fire-stick farming to renew grass and followed sacred Songlines .",
+            "badge": "Stage 1",
+            "paired_prose_hash": "4729122372",
+            "connective": "How did Eora and Bidjigal clans experience and resist British colonisation?"
+          },
+          {
+            "heading": "The 1789 Smallpox Disaster",
+            "date": "April 1789",
+            "img": "/images/sydney_cove_1792.jpg",
+            "mode": "landscape",
+            "pos": "center 75%",
+            "stat": "50% to 70% of Sydney’s Eora People Died",
+            "html": "In April 1789, <strong>smallpox</strong> swept through Sydney Harbour clans lacking immunity. Killing <strong>50–70% of Eora people</strong>, the epidemic wiped out elders and <strong>sacred law</strong>.",
+            "spoken": "One year after British arrival, disaster struck. <short pause> In April 1789, smallpox swept through Sydney Harbour clans lacking immunity. Killing 50, 70% of Eora people , the epidemic wiped out elders and sacred law .",
+            "badge": "Stage 2",
+            "paired_prose_hash": "c4e49bdc2e",
+            "connective": "One year after British arrival, disaster struck."
+          },
+          {
+            "heading": "Bennelong: Caught in Between",
+            "date": "1789–1795",
+            "img": "/images/bennelong.jpg",
+            "mode": "contain-light",
+            "stat": "Kidnapped in 1789 • Sailed to London in 1792",
+            "html": "Marines kidnapped Wangal man <strong>Bennelong</strong> so Phillip could talk with local clans. After visiting <strong>London in 1792</strong>, Bennelong returned home <strong>trapped between two worlds</strong>.",
+            "spoken": "Governor Phillip forced contact by kidnapping local men. <short pause> Marines kidnapped Wangal man Bennelong so Phillip could talk with local clans. After visiting London in 1792 , Bennelong returned home trapped between two worlds .",
+            "badge": "Stage 3",
+            "paired_prose_hash": "4d53ef7a4b",
+            "connective": "Governor Phillip forced contact by kidnapping local men."
+          },
+          {
+            "heading": "Pemulwuy’s Guerrilla War",
+            "date": "1790–1797",
+            "img": "/images/pemulwuy.jpg",
+            "mode": "landscape",
+            "stat": "Survived Gunshot Wounds at Parramatta (1797)",
+            "html": "Bidjigal warrior <strong>Pemulwuy</strong> united Sydney clans in <strong>guerrilla warfare</strong>, burning settler crops and spearing livestock. Shot during the <strong>1797 Battle of Parramatta</strong>, he escaped.",
+            "spoken": "Other Indigenous leaders chose armed resistance. <short pause> Bidjigal warrior Pemulwuy united Sydney clans in guerrilla warfare , burning settler crops and spearing livestock. Shot during the 1797 Battle of Parramatta , he escaped.",
+            "badge": "Stage 4",
+            "paired_prose_hash": "ac9daf1c0a",
+            "connective": "Other Indigenous leaders chose armed resistance."
+          },
+          {
+            "heading": "Hawkesbury River Frontier War",
+            "date": "1795–1802",
+            "img": "/images/spearing_of_arthur_phillip_1790.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Pemulwuy Ambushed and Killed in 1802",
+            "html": "Settler farms along the <strong>Hawkesbury River</strong> seized Dharug yam beds. Governor King issued <strong>shoot-on-sight orders</strong>, and an ambush killed <strong>Pemulwuy in 1802</strong>.",
+            "spoken": "Fighting soon spread along the fertile Hawkesbury River. <short pause> Settler farms along the Hawkesbury River seized Dharug yam beds. Governor King issued shoot-on-sight orders , and an ambush killed Pemulwuy in 1802 .",
+            "badge": "Stage 5",
+            "paired_prose_hash": "511108109e",
+            "connective": "Fighting soon spread along the fertile Hawkesbury River."
+          },
+          {
+            "heading": "Invasion Met Fierce Resistance",
+            "date": "By 1802",
+            "img": "/images/gweagal_encounter.jpg",
+            "mode": "contain-light",
+            "stat": "12 Years of Guerrilla Defence Around Sydney",
+            "html": "Colonisation was never peaceful settlement. Despite <strong>smallpox</strong> and British muskets, <strong>Pemulwuy’s twelve-year campaign</strong> proved First Nations fiercely <strong>defended country</strong>.",
+            "spoken": "Taken together, these frontier battles shattered the myth of peaceful settlement. <short pause> Colonisation was never peaceful settlement. Despite smallpox and British muskets, Pemulwuy’s twelve-year campaign proved First Nations fiercely defended country .",
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "connective": "Taken together, these frontier battles shattered the myth of peaceful settlement."
+          }
+        ],
+        "takeaway": "After smallpox killed over half of Sydney’s Eora people in 1789, Bennelong tried diplomacy while Pemulwuy led twelve years of fierce guerrilla resistance.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After smallpox killed over half of Sydney’s Eora people in 1789, Bennelong tried diplomacy while Pemulwuy led twelve years of fierce guerrilla resistance.",
+        "vocab": [
+          [
+            "1. Songlines",
+            "Sacred ancestral tracks linking stories, law, and routes across country."
+          ],
+          [
+            "2. Epidemic",
+            "Rapid outbreak of infectious disease striking a community all at once."
+          ],
+          [
+            "3. Guerrilla Warfare",
+            "Fast surprise raids and ambushes fought by small, mobile groups."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_4",
@@ -6484,7 +6812,115 @@
           "a": "7 white stockmen hanged for murder",
           "explanation": "Seven white stockmen were convicted and hanged in Sydney, sparking squatter outrage and rural secrecy over future massacres."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "australia_l04_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 4",
+        "datesBadge": "1803 – 1840",
+        "topicLabel": "Enquiry 4: The Black War, Wool Boom & Myall Creek (1803–1840)",
+        "title": "How Did Sheep Farming and Pastoral Expansion Drive Violent Frontier Wars?",
+        "spokenTitle": "How did sheep farming and pastoral expansion drive violent frontier wars?",
+        "thumbUrl": "/images/imperial_federation_map.jpg",
+        "provenanceNote": "Tasmanian Museum Hobart, National Portrait Gallery London, British Library & NLA (Zero AI Imagery)",
+        "bridges": [
+          "Martial Law",
+          "Forced Exile",
+          "Merino Boom",
+          "Massacre Trial",
+          "Settler Silence"
+        ],
+        "cards": [
+          {
+            "heading": "Invading Van Diemen’s Land",
+            "date": "1803–1824",
+            "img": "/images/first_fleet_portsmouth_1787.jpg",
+            "mode": "contain-light",
+            "stat": "1804 Risdon Cove Cannon Fired on Palawa Hunt",
+            "html": "In 1803, Britain colonised <strong>Van Diemen’s Land</strong> (Tasmania), home to 6,000 <strong>Palawa people</strong>. Soldiers fired cannon at <strong>Risdon Cove in 1804</strong>, sparking frontier war.",
+            "spoken": "How did sheep farming and pastoral expansion drive violent frontier wars? <short pause> In 1803, Britain colonised Van Diemen’s Land (Tasmania), home to 6,000 Palawa people . Soldiers fired cannon at Risdon Cove in 1804 , sparking frontier war.",
+            "badge": "Stage 1",
+            "paired_prose_hash": "3b5c3c1903",
+            "connective": "How did sheep farming and pastoral expansion drive violent frontier wars?"
+          },
+          {
+            "heading": "Martial Law & The Black Line",
+            "date": "1826–1830",
+            "img": "/images/governor_arthur_proclamation_board_1829.jpg",
+            "mode": "contain-light",
+            "stat": "2,200 Armed Men Captured Only 2 Palawa",
+            "html": "In 1828, <strong>Governor Arthur</strong> declared <strong>martial law</strong>, letting troops shoot Palawa people on sight. Yet his 2,200-man <strong>Black Line sweep</strong> captured only two people.",
+            "spoken": "As Palawa raids grew, Governor Arthur declared martial law. <short pause> In 1828, Governor Arthur declared martial law , letting troops shoot Palawa people on sight. Yet his 2,200-man Black Line sweep captured only two people.",
+            "badge": "Stage 2",
+            "paired_prose_hash": "c0002bc861",
+            "connective": "As Palawa raids grew, Governor Arthur declared martial law."
+          },
+          {
+            "heading": "Truganini & Wybalenna Exile",
+            "date": "1830–1835",
+            "img": "/images/eora_rock_art_sydney.jpg",
+            "mode": "landscape",
+            "stat": "Over 150 of 200 Exiled Palawa Died in Camp",
+            "html": "Hoping to save her people, <strong>Truganini</strong> helped persuade surviving Palawa clans to accept protection. Betrayed and exiled to damp <strong>Wybalenna camp</strong>, over <strong>150 died</strong>.",
+            "spoken": "False promises achieved what British soldiers could not. <short pause> Hoping to save her people, Truganini helped persuade surviving Palawa clans to accept protection. Betrayed and exiled to damp Wybalenna camp , over 150 died .",
+            "badge": "Stage 3",
+            "paired_prose_hash": "2378239808",
+            "connective": "False promises achieved what British soldiers could not."
+          },
+          {
+            "heading": "Squatters & Merino Wool Boom",
+            "date": "1820–1838",
+            "img": "/images/john_macarthur.jpg",
+            "mode": "contain",
+            "stat": "Millions of Sheep Destroyed Native Yam Fields",
+            "html": "Hungry <strong>Yorkshire wool mills</strong> sparked a mainland land grab. Wealthy <strong>squatters</strong> drove millions of <strong>Merino sheep</strong> inland, fencing waterholes and ruining Aboriginal food plants.",
+            "spoken": "Meanwhile, British textile mills sparked a mainland land rush. <short pause> Hungry Yorkshire wool mills sparked a mainland land grab. Wealthy squatters drove millions of Merino sheep inland, fencing waterholes and ruining Aboriginal food plants.",
+            "badge": "Stage 4",
+            "paired_prose_hash": "c1c2cb8517",
+            "connective": "Meanwhile, British textile mills sparked a mainland land rush."
+          },
+          {
+            "heading": "The Myall Creek Verdict",
+            "date": "June–Dec 1838",
+            "img": "/images/sir_william_blackstone_1774.jpg",
+            "mode": "contain",
+            "stat": "28 Wirrayaraay Murdered • 7 Stockmen Hanged",
+            "html": "In June 1838, white stockmen murdered <strong>28 unarmed Wirrayaraay people</strong> at <strong>Myall Creek</strong>. Governor Gipps prosecuted the killers, and <strong>seven white men were hanged</strong>.",
+            "spoken": "In 1838, one brutal massacre reached a colonial court. <short pause> In June 1838, white stockmen murdered 28 unarmed Wirrayaraay people at Myall Creek . Governor Gipps prosecuted the killers, and seven white men were hanged .",
+            "badge": "Stage 5",
+            "paired_prose_hash": "28ae5d34f8",
+            "connective": "In 1838, one brutal massacre reached a colonial court."
+          },
+          {
+            "heading": "Wool Wealth & Rural Silence",
+            "date": "After 1838",
+            "img": "/images/imperial_federation_map.jpg",
+            "mode": "contain-light",
+            "stat": "Frontier Violence Hidden Behind Settler Secrecy",
+            "html": "Furious squatters vowed never to testify against white neighbours again. Massive <strong>colonial wool wealth</strong> expanded behind a grim wall of <strong>hidden frontier massacres</strong>.",
+            "spoken": "Instead of stopping violence, the hangings bred secrecy. <short pause> Furious squatters vowed never to testify against white neighbours again. Massive colonial wool wealth expanded behind a grim wall of hidden frontier massacres .",
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "connective": "Instead of stopping violence, the hangings bred secrecy."
+          }
+        ],
+        "takeaway": "Martial law devastated Tasmania’s Palawa clans, while mainland Merino squatters seized Indigenous country and hid killings after the 1838 Myall Creek trials.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Martial law devastated Tasmania’s Palawa clans, while mainland Merino squatters seized Indigenous country and hid killings after the 1838 Myall Creek trials.",
+        "vocab": [
+          [
+            "1. Martial Law",
+            "Military rule allowing soldiers to use lethal force without civilian trial."
+          ],
+          [
+            "2. Squatter",
+            "Wealthy pastoralist who seized vast Indigenous lands to graze Merino sheep."
+          ],
+          [
+            "3. Exile",
+            "Forcing a community off their homeland to live in a distant camp."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_5",
@@ -8008,7 +8444,118 @@
           "a": "Native Title",
           "explanation": "By overturning terra nullius in 1992, the High Court legally recognized First Nations Native Title."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "australia_l05_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 5",
+        "datesBadge": "1851 – 1992",
+        "topicLabel": "Enquiry 5: Gold Rush, Eureka & The Mabo Legacy (1851–1992)",
+        "title": "How Did the Gold Rush and Eureka Stockade Reshape Australia, and Who Was Left Out?",
+        "spokenTitle": "How did the Gold Rush and Eureka Stockade reshape Australia, and who was left out?",
+        "thumbUrl": "/images/aus_gold_rush.jpg",
+        "provenanceNote": "Art Gallery of Ballarat, State Library of NSW & National Library of Australia (Zero AI Imagery)",
+        "bridges": [
+          "Unfair Tax",
+          "Miners Rebel",
+          "Racial Bans",
+          "Civil Protest",
+          "Myth Overturned"
+        ],
+        "cards": [
+          {
+            "heading": "Gold Fever Triples Population",
+            "date": "1851–1853",
+            "img": "/images/aus_gold_rush.jpg",
+            "mode": "landscape",
+            "pos": "center 60%",
+            "stat": "Population Tripled to 1.2 Million in 10 Years",
+            "html": "Rich 1851 gold strikes at <strong>Ballarat and Bendigo</strong> sparked mass migration, tripling Australia’s population to <strong>1.2 million</strong> and enriching grand <strong>Melbourne</strong>.",
+            "spoken": "How did the Gold Rush and Eureka Stockade reshape Australia, and who was left out? <short pause> Rich 1851 gold strikes at Ballarat and Bendigo sparked mass migration, tripling Australia’s population to 1.2 million and enriching grand Melbourne .",
+            "badge": "Stage 1",
+            "paired_prose_hash": "8736431831",
+            "connective": "How did the Gold Rush and Eureka Stockade reshape Australia, and who was left out?"
+          },
+          {
+            "heading": "Hated 30-Shilling Licence Hunts",
+            "date": "1853–1854",
+            "img": "/images/ballarat_gold.jpg",
+            "mode": "landscape",
+            "pos": "center 65%",
+            "stat": "30 Shillings Every Month — Gold or Empty Pit",
+            "html": "Victoria forced every miner to pay a <strong>30-shilling monthly licence</strong> even if they found nothing. Armed police staged <strong>digger hunts</strong>, yet miners had <strong>no vote</strong>.",
+            "spoken": "Angry miners soon clashed with colonial police. <short pause> Victoria forced every miner to pay a 30-shilling monthly licence even if they found nothing. Armed police staged digger hunts , yet miners had no vote .",
+            "badge": "Stage 2",
+            "paired_prose_hash": "2640dc9625",
+            "connective": "Angry miners soon clashed with colonial police."
+          },
+          {
+            "heading": "The Eureka Stockade Rebellion",
+            "date": "3 Dec 1854",
+            "img": "/images/doudiet_southern_cross_eureka_1854.jpg",
+            "mode": "contain-light",
+            "stat": "22 Diggers Killed • Secret Ballot & Votes Won",
+            "html": "Ballarat miners built the <strong>Eureka Stockade</strong> under the <strong>Southern Cross flag</strong>. Redcoats crushed the camp in fifteen minutes, yet public fury won <strong>male voting rights</strong>.",
+            "spoken": "At Ballarat, protest exploded into armed rebellion. <short pause> Ballarat miners built the Eureka Stockade under the Southern Cross flag . Redcoats crushed the camp in fifteen minutes, yet public fury won male voting rights .",
+            "badge": "Stage 3",
+            "paired_prose_hash": "db7aba6ac3",
+            "connective": "At Ballarat, protest exploded into armed rebellion."
+          },
+          {
+            "heading": "Chinese Miners & 1901 Ban",
+            "date": "1855–1901",
+            "img": "/images/chinese_gold_miners_victoria_1850s.jpg",
+            "mode": "landscape",
+            "pos": "center 60%",
+            "stat": "40,000+ Chinese Diggers Faced Violent Riots",
+            "html": "White mobs attacked hardworking <strong>Chinese miners</strong> during the 1861 <strong>Lambing Flat Riots</strong>. Upon Federation in 1901, Parliament passed the racist <strong>White Australia Policy</strong>.",
+            "spoken": "Yet new Australian democracy excluded non-white people. <short pause> White mobs attacked hardworking Chinese miners during the 1861 Lambing Flat Riots . Upon Federation in 1901, Parliament passed the racist White Australia Policy .",
+            "badge": "Stage 4",
+            "paired_prose_hash": "2ccb1b921b",
+            "connective": "Yet new Australian democracy excluded non-white people."
+          },
+          {
+            "heading": "Day of Mourning to Mabo",
+            "date": "1938–1992",
+            "img": "/images/aus_day_of_mourning.jpg",
+            "mode": "contain-light",
+            "stat": "1992 Mabo Ruling Recognised Native Title",
+            "html": "Excluded from citizenship and hurt by the <strong>Stolen Generations</strong>, Aboriginal leaders staged the <strong>1938 Day of Mourning</strong>. In 1992, the <strong>Mabo ruling</strong> overturned terra nullius.",
+            "spoken": "First Nations peoples also fought decades of exclusion. <short pause> Excluded from citizenship and hurt by the Stolen Generations , Aboriginal leaders staged the 1938 Day of Mourning . In 1992, the Mabo ruling overturned terra nullius.",
+            "badge": "Stage 5",
+            "paired_prose_hash": "fb6e96cf99",
+            "connective": "First Nations peoples also fought decades of exclusion."
+          },
+          {
+            "heading": "Equal Votes & Native Title",
+            "date": "Modern Legacy",
+            "img": "/images/imperial_federation_map.jpg",
+            "mode": "contain-light",
+            "stat": "Over 200 Years From Terra Nullius to Mabo",
+            "html": "Eureka won ballots for white men in 1854, while <strong>1901 Federation</strong> shut others out. Only Indigenous campaigning finally won <strong>citizenship</strong> and legal <strong>Native Title</strong>.",
+            "spoken": "Australia’s struggle for equal rights took another century. <short pause> Eureka won ballots for white men in 1854, while 1901 Federation shut others out. Only Indigenous campaigning finally won citizenship and legal Native Title .",
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "connective": "Australia’s struggle for equal rights took another century."
+          }
+        ],
+        "takeaway": "The 1854 Eureka Stockade won votes for white men, while Chinese migrants faced the 1901 White Australia ban and First Nations fought until 1992 for Native Title.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> The 1854 Eureka Stockade won votes for white men, while Chinese migrants faced the 1901 White Australia ban and First Nations fought until 1992 for Native Title.",
+        "vocab": [
+          [
+            "1. Eureka Stockade",
+            "1854 armed Ballarat miners’ rebellion that led to male voting rights."
+          ],
+          [
+            "2. White Australia Policy",
+            "1901 federal law using dictation tests to block non-European migrants."
+          ],
+          [
+            "3. Native Title",
+            "Legal recognition in 1992 that First Nations hold enduring land rights."
+          ]
+        ]
+      }
     }
   ],
   "edition": "2026.1",

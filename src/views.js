@@ -23,8 +23,11 @@ import { initGuidedReadingTask } from './guided_reading.js';
 import { getAssetUrl } from './engine/assets.js';
 import {
   renderHeroCurricularLaunchpad,
+  renderStickyUnitResourceBar,
   CURRICULAR_PILLARS_CATALOG,
 } from './engine/hero_launchpad.js';
+import { getUnitCatalogEntry, isStaffModeActive } from './data/unit_resources_catalog.js';
+import { isVerifiedPdf } from './verified_pdf_manifest.js';
 import './engine/modals.js'; // Side-effect: registers window.renderQuizQuestion, openGallery, etc.
 import {
   renderDiagnosticLauncherHTML,
@@ -55,32 +58,23 @@ export function renderDashboard() {
   let html = `
     <div class="homepage-dashboard-container" style="max-width: 1240px; margin: 0 auto; padding: 0 20px 60px 20px;">
       
-      <!-- Unified Curriculum Navigation & Filter Toolbar -->
-      <div class="homepage-nav-toolbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: var(--bg-card, #ffffff); border: 1.5px solid var(--border-glass, #e2e8f0); border-radius: 12px; padding: 8px 14px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-        
-        <!-- Stage Filters -->
-        <div class="stage-filter-group" style="display: inline-flex; align-items: center; gap: 4px; background: #f1f5f9; border-radius: 8px; padding: 3px; flex-wrap: wrap;">
-          <button class="stage-filter-btn active" data-stage="all" style="background: #0f172a; color: #ffffff; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">All Syllabuses</button>
-          <button class="stage-filter-btn" data-stage="ks2" style="background: transparent; color: #475569; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Key Stage 2</button>
-          <button class="stage-filter-btn" data-stage="ks3" style="background: transparent; color: #475569; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Key Stage 3</button>
-          <button class="stage-filter-btn" data-stage="gcse" style="background: transparent; color: #475569; border: none; border-radius: 6px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE (9–1)</button>
-          <button type="button" onclick="window.switchView('ai-prompt-craft')" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 12px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-microchip" style="font-size: 0.72rem;"></i>
-            <span>Year 9 AI Course</span>
-          </button>
+      <!-- Single-Row Curriculum Filter Bar (Replaces competing stage + jump + sub-filter bars) -->
+      <div class="homepage-nav-toolbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: var(--bg-card, #ffffff); border: 1.5px solid var(--border-glass, #e2e8f0); border-radius: 12px; padding: 8px 14px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+        <div class="unified-course-filter-group" style="display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+          <button type="button" class="course-filter-pill active" data-filter="all" style="background: #0f172a; color: #ffffff; border: 1px solid #0f172a; border-radius: 7px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">All Courses</button>
+          <button type="button" class="course-filter-pill" data-filter="ks2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">KS2</button>
+          <button type="button" class="course-filter-pill" data-filter="y7" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Year 7</button>
+          <button type="button" class="course-filter-pill" data-filter="y8" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Year 8</button>
+          <button type="button" class="course-filter-pill" data-filter="y9" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Year 9</button>
+          <button type="button" class="course-filter-pill" data-filter="p1" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 1</button>
+          <button type="button" class="course-filter-pill" data-filter="p2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 2</button>
+          <button type="button" class="course-filter-pill" data-filter="p3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 3</button>
         </div>
 
-        <!-- Fast Year Jump Chips -->
-        <nav id="year-quick-jump-nav" aria-label="Jump to year group" style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
-          <span style="font-size: 0.7rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 2px;">Jump:</span>
-          <a href="#ks2-section" class="jump-chip jump-ks2" onclick="event.preventDefault(); window.quickFilterYear('ks2', 'all');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; cursor: pointer; transition: all 0.15s;">KS2</a>
-          <a href="#year7-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.quickFilterYear('ks3', '7');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 7</a>
-          <a href="#year8-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.quickFilterYear('ks3', '8');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 8</a>
-          <a href="#year9-section" class="jump-chip jump-ks3" onclick="event.preventDefault(); window.quickFilterYear('ks3', '9');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; cursor: pointer; transition: all 0.15s;">Year 9</a>
-          <a href="#gcse-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.quickFilterPaper('1');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Paper 1</a>
-          <a href="#gcse-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.quickFilterPaper('2');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Paper 2</a>
-          <a href="#gcse-section" class="jump-chip jump-gcse" onclick="event.preventDefault(); window.quickFilterPaper('3');" style="text-decoration:none; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; cursor: pointer; transition: all 0.15s;">Paper 3</a>
-        </nav>
+        <button type="button" onclick="window.switchView('ai-prompt-craft')" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 7px; padding: 5px 12px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+          <i class="fa-solid fa-microchip" style="font-size: 0.72rem;"></i>
+          <span>Year 9 AI Course</span>
+        </button>
       </div>
   `;
 
@@ -293,14 +287,7 @@ export function renderDashboard() {
               Medieval to Modern World (Years 7–9)
             </h3>
           </div>
-
-          <!-- KS3 Year Sub-Filter Chips -->
-          <div class="ks3-subfilter-chips" style="display: inline-flex; align-items: center; gap: 4px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 3px;">
-            <button class="ks3-filter-btn active" data-year="all" style="background: #1e3a8a; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">All KS3 (12)</button>
-            <button class="ks3-filter-btn" data-year="7" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Year 7 (2)</button>
-            <button class="ks3-filter-btn" data-year="8" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Year 8 (5)</button>
-            <button class="ks3-filter-btn" data-year="9" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Year 9 (5)</button>
-          </div>
+          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">12 Curriculum Units</span>
         </div>
 
         <div class="modules-grid ks3-modules-grid" style="margin-bottom: 1.5rem;">
@@ -330,14 +317,7 @@ export function renderDashboard() {
               Edexcel GCSE History (Papers 1–3)
             </h3>
           </div>
-
-          <!-- GCSE Paper Sub-Filter Chips -->
-          <div class="gcse-subfilter-chips" style="display: inline-flex; align-items: center; gap: 4px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 3px;">
-            <button class="gcse-filter-btn active" data-paper="all" style="background: #92400e; color: #ffffff; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">All Papers (${gcseUnits.length})</button>
-            <button class="gcse-filter-btn" data-paper="1" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 1 (${gcseUnits.filter((u) => (gcseMeta[u.id] || {}).paper === '1').length})</button>
-            <button class="gcse-filter-btn" data-paper="2" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 2 (${gcseUnits.filter((u) => (gcseMeta[u.id] || {}).paper === '2').length})</button>
-            <button class="gcse-filter-btn" data-paper="3" style="background: transparent; color: #475569; border: none; border-radius: 5px; padding: 4px 10px; font-size: 0.72rem; font-weight: 700; cursor: pointer; transition: all 0.15s;">Paper 3 (${gcseUnits.filter((u) => (gcseMeta[u.id] || {}).paper === '3').length})</button>
-          </div>
+          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">5 Specification Units</span>
         </div>
 
         <div class="modules-grid gcse-modules-grid" style="margin-bottom: 1.5rem;">
@@ -453,7 +433,7 @@ export function renderDashboard() {
 
 function attachDashboardStageFilter(container) {
   if (!container) return;
-  const filterBtns = container.querySelectorAll('.stage-filter-btn');
+  const filterBtns = container.querySelectorAll('.course-filter-pill');
   if (!filterBtns.length) return;
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -481,174 +461,59 @@ function attachDashboardStageFilter(container) {
   const ks2Blocks = container.querySelectorAll('.stage-block-ks2');
   const ks3Blocks = container.querySelectorAll('.stage-block-ks3');
   const gcseBlocks = container.querySelectorAll('.stage-block-gcse');
-  const jumpKs2 = container.querySelectorAll('.jump-ks2');
-  const jumpKs3 = container.querySelectorAll('.jump-ks3');
-  const jumpGcse = container.querySelectorAll('.jump-gcse');
-
-  // Sub-filter KS3 buttons & cards
-  const ks3FilterBtns = container.querySelectorAll('.ks3-filter-btn');
   const ks3Cards = container.querySelectorAll('.ks3-modules-grid .module-card');
-  ks3FilterBtns.forEach((btn) => {
-    btn.onclick = () => {
-      const year = btn.dataset.year;
-      ks3FilterBtns.forEach((b) => {
-        b.classList.remove('active');
-        b.style.background = 'transparent';
-        b.style.color = '#475569';
-      });
-      btn.classList.add('active');
-      btn.style.background = '#1e3a8a';
-      btn.style.color = '#ffffff';
-
-      ks3Cards.forEach((card) => {
-        if (year === 'all' || card.dataset.year === year) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    };
-  });
-
-  // Sub-filter GCSE buttons & cards by Paper
-  const gcseFilterBtns = container.querySelectorAll('.gcse-filter-btn');
   const gcseCards = container.querySelectorAll('.gcse-modules-grid .module-card');
-  gcseFilterBtns.forEach((btn) => {
-    btn.onclick = () => {
-      const paper = btn.dataset.paper;
-      gcseFilterBtns.forEach((b) => {
-        b.classList.remove('active');
-        b.style.background = 'transparent';
-        b.style.color = '#475569';
-      });
-      btn.classList.add('active');
-      btn.style.background = '#92400e';
-      btn.style.color = '#ffffff';
 
-      gcseCards.forEach((card) => {
-        if (paper === 'all' || card.dataset.paper === paper) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    };
-  });
+  const applyUnifiedFilter = (mode) => {
+    filterBtns.forEach((b) => {
+      const isAct = b.dataset.filter === mode;
+      b.classList.toggle('active', isAct);
+      b.style.background = isAct ? '#0f172a' : '#f8fafc';
+      b.style.color = isAct ? '#ffffff' : '#475569';
+      b.style.borderColor = isAct ? '#0f172a' : '#e2e8f0';
+    });
 
-  // Stage Filter Buttons (All Syllabuses, Key Stage 2, Key Stage 3, GCSE)
-  filterBtns.forEach((btn) => {
-    btn.onclick = () => {
-      const stage = btn.dataset.stage;
-      filterBtns.forEach((b) => {
-        b.classList.remove('active');
-        b.style.background = 'transparent';
-        b.style.color = '#475569';
-        b.style.boxShadow = 'none';
-      });
-      btn.classList.add('active');
-      btn.style.background = '#0f172a';
-      btn.style.color = '#ffffff';
-      btn.style.boxShadow = 'none';
-
-      if (stage === 'all') {
-        ks2Blocks.forEach((el) => (el.style.display = ''));
-        ks3Blocks.forEach((el) => (el.style.display = ''));
-        gcseBlocks.forEach((el) => (el.style.display = ''));
-        jumpKs2.forEach((el) => (el.style.display = ''));
-        jumpKs3.forEach((el) => (el.style.display = ''));
-        jumpGcse.forEach((el) => (el.style.display = ''));
-
-        // Reset sub-filters to 'all'
-        const allKs3Btn = container.querySelector('.ks3-filter-btn[data-year="all"]');
-        if (allKs3Btn) allKs3Btn.click();
-        const allGcseBtn = container.querySelector('.gcse-filter-btn[data-paper="all"]');
-        if (allGcseBtn) allGcseBtn.click();
-      } else if (stage === 'ks2') {
-        ks2Blocks.forEach((el) => (el.style.display = ''));
-        ks3Blocks.forEach((el) => (el.style.display = 'none'));
-        gcseBlocks.forEach((el) => (el.style.display = 'none'));
-        jumpKs2.forEach((el) => (el.style.display = ''));
-        jumpKs3.forEach((el) => (el.style.display = 'none'));
-        jumpGcse.forEach((el) => (el.style.display = 'none'));
-      } else if (stage === 'ks3') {
-        ks2Blocks.forEach((el) => (el.style.display = 'none'));
-        ks3Blocks.forEach((el) => (el.style.display = ''));
-        gcseBlocks.forEach((el) => (el.style.display = 'none'));
-        jumpKs2.forEach((el) => (el.style.display = 'none'));
-        jumpKs3.forEach((el) => (el.style.display = ''));
-        jumpGcse.forEach((el) => (el.style.display = 'none'));
-
-        const allKs3Btn = container.querySelector('.ks3-filter-btn[data-year="all"]');
-        if (allKs3Btn) allKs3Btn.click();
-      } else if (stage === 'gcse') {
-        ks2Blocks.forEach((el) => (el.style.display = 'none'));
-        ks3Blocks.forEach((el) => (el.style.display = 'none'));
-        gcseBlocks.forEach((el) => (el.style.display = ''));
-        jumpKs2.forEach((el) => (el.style.display = 'none'));
-        jumpKs3.forEach((el) => (el.style.display = 'none'));
-        jumpGcse.forEach((el) => (el.style.display = ''));
-
-        const allGcseBtn = container.querySelector('.gcse-filter-btn[data-paper="all"]');
-        if (allGcseBtn) allGcseBtn.click();
-      }
-    };
-  });
-
-  // Global helper for fast jump chips
-  window.quickFilterPaper = function (paper) {
-    // Switch stage filter if currently hiding GCSE
-    const activeStageBtn = container.querySelector('.stage-filter-btn.active');
-    const activeStage = activeStageBtn ? activeStageBtn.dataset.stage : 'all';
-    if (activeStage !== 'all' && activeStage !== 'gcse') {
-      const gcseStageBtn = container.querySelector('.stage-filter-btn[data-stage="gcse"]');
-      if (gcseStageBtn) gcseStageBtn.click();
+    if (mode === 'all') {
+      ks2Blocks.forEach((el) => (el.style.display = ''));
+      ks3Blocks.forEach((el) => (el.style.display = ''));
+      gcseBlocks.forEach((el) => (el.style.display = ''));
+      ks3Cards.forEach((c) => (c.style.display = ''));
+      gcseCards.forEach((c) => (c.style.display = ''));
+    } else if (mode === 'ks2') {
+      ks2Blocks.forEach((el) => (el.style.display = ''));
+      ks3Blocks.forEach((el) => (el.style.display = 'none'));
+      gcseBlocks.forEach((el) => (el.style.display = 'none'));
+    } else if (mode === 'y7' || mode === 'y8' || mode === 'y9' || mode === 'ks3') {
+      const yr = mode === 'ks3' ? 'all' : mode.slice(1);
+      ks2Blocks.forEach((el) => (el.style.display = 'none'));
+      ks3Blocks.forEach((el) => (el.style.display = ''));
+      gcseBlocks.forEach((el) => (el.style.display = 'none'));
+      ks3Cards.forEach((c) => (c.style.display = yr === 'all' || c.dataset.year === yr ? '' : 'none'));
+    } else if (mode === 'p1' || mode === 'p2' || mode === 'p3' || mode === 'gcse') {
+      const pNum = mode === 'gcse' ? 'all' : mode.slice(1);
+      ks2Blocks.forEach((el) => (el.style.display = 'none'));
+      ks3Blocks.forEach((el) => (el.style.display = 'none'));
+      gcseBlocks.forEach((el) => (el.style.display = ''));
+      gcseCards.forEach((c) => (c.style.display = pNum === 'all' || c.dataset.paper === pNum ? '' : 'none'));
     }
-
-    const paperBtn = container.querySelector(`.gcse-filter-btn[data-paper="${paper}"]`);
-    if (paperBtn) paperBtn.click();
-    window.scrollToSection('block-gcse');
   };
 
+  filterBtns.forEach((btn) => {
+    btn.onclick = () => applyUnifiedFilter(btn.dataset.filter);
+  });
+
+  window.quickFilterPaper = function (paper) {
+    applyUnifiedFilter(paper === 'all' ? 'gcse' : `p${paper}`);
+  };
   window.quickFilterYear = function (stage, year) {
-    if (stage === 'ks2') {
-      const ks2Btn = container.querySelector('.stage-filter-btn[data-stage="ks2"]');
-      if (ks2Btn) ks2Btn.click();
-      window.scrollToSection('block-ks2');
-      return;
-    }
-
-    // Switch stage filter if currently hiding the target stage
-    const activeStageBtn = container.querySelector('.stage-filter-btn.active');
-    const activeStage = activeStageBtn ? activeStageBtn.dataset.stage : 'all';
-    if (activeStage !== 'all' && activeStage !== stage) {
-      const stageBtn = container.querySelector(`.stage-filter-btn[data-stage="${stage}"]`);
-      if (stageBtn) stageBtn.click();
-    }
-
-    if (stage === 'ks3') {
-      const yearBtn = container.querySelector(`.ks3-filter-btn[data-year="${year}"]`);
-      if (yearBtn) yearBtn.click();
-      window.scrollToSection('block-ks3');
-    } else if (stage === 'gcse') {
-      window.quickFilterPaper(year);
-    }
+    if (stage === 'ks2') applyUnifiedFilter('ks2');
+    else if (stage === 'ks3') applyUnifiedFilter(year === 'all' ? 'ks3' : `y${year}`);
+    else if (stage === 'gcse') applyUnifiedFilter(year === 'all' ? 'gcse' : `p${year}`);
   };
 
   if (isKs2Portal) {
     if (document.body) document.body.classList.add('ks2-mode-active');
-    const ks2Btn = container.querySelector('.stage-filter-btn[data-stage="ks2"]');
-    if (ks2Btn) {
-      ks2Btn.click();
-    }
-    const allBtn = container.querySelector('.stage-filter-btn[data-stage="all"]');
-    const ks3Btn = container.querySelector('.stage-filter-btn[data-stage="ks3"]');
-    const gcseBtn = container.querySelector('.stage-filter-btn[data-stage="gcse"]');
-    if (allBtn) allBtn.style.display = 'none';
-    if (ks3Btn) ks3Btn.style.display = 'none';
-    if (gcseBtn) gcseBtn.style.display = 'none';
-
-    const quickJump = container.querySelector('#year-quick-jump-nav');
-    if (quickJump) quickJump.style.display = 'none';
+    applyUnifiedFilter('ks2');
     const enrichmentSection = container.querySelector('#enrichment-section');
     if (enrichmentSection) enrichmentSection.style.display = 'none';
     const toolbar = container.querySelector('.homepage-nav-toolbar');
@@ -1966,6 +1831,12 @@ export async function renderLessonsView() {
       window.updateHeaderBackBtn('lessons');
     }
 
+    try {
+      if (unitId && typeof index === 'number' && index >= 0) {
+        localStorage.setItem(`hh_last_lesson_${unitId}`, String(index));
+      }
+    } catch (e) {}
+
     // Update document.title so copied/shared browser links display the exact lesson & unit name
     if (typeof document !== 'undefined') {
       const cleanUnitName = data.title
@@ -2190,241 +2061,45 @@ export async function renderLessonsView() {
       'center';
     const heroOverlayGradient =
       unitId === 'ks2_ww2'
-        ? 'linear-gradient(rgba(15, 23, 42, 0.44), rgba(15, 23, 42, 0.78))'
-        : 'linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88))';
+        ? 'linear-gradient(rgba(15, 23, 42, 0.42), rgba(15, 23, 42, 0.74))'
+        : 'linear-gradient(rgba(15, 23, 42, 0.62), rgba(15, 23, 42, 0.84))';
     headerHtml = `
-      <div style="position: relative; text-align: center; padding: 64px 24px 46px 24px; background-image: url('${heroImageUrl}'); background-size: cover; background-position: ${heroBgPos}; border-radius: 0;">
+      <div style="position: relative; text-align: center; padding: 30px 24px 24px 24px; background-image: url('${heroImageUrl}'); background-size: cover; background-position: ${heroBgPos}; border-radius: 0;">
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: ${heroOverlayGradient};"></div>
-        <div style="position: relative; z-index: 1; max-width: 1160px; margin: 0 auto;">
-          <h1 class="enquiry-title" style="font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 5.2vw, 2.7rem); line-height: 1.25; color: white; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); hyphens: none; -webkit-hyphens: none; word-break: normal; overflow-wrap: normal; text-wrap: balance;">${data.enquiry_question || data.enquiry || 'Unit Enquiry'}</h1>
-          <h2 style="font-size: clamp(1.05rem, 3.5vw, 1.35rem); color: #cbd5e1; font-weight: 500; margin-top: 0; margin-bottom: 0; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+        <div style="position: relative; z-index: 1; max-width: 1120px; margin: 0 auto;">
+          <h1 class="enquiry-title" style="font-family: 'Playfair Display', serif; font-size: clamp(1.45rem, 4vw, 2.25rem); line-height: 1.22; color: white; margin-bottom: 8px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); hyphens: none; -webkit-hyphens: none; word-break: normal; overflow-wrap: normal; text-wrap: balance;">${data.enquiry_question || data.enquiry || 'Unit Enquiry'}</h1>
+          <h2 style="font-size: clamp(0.96rem, 2.5vw, 1.15rem); color: #cbd5e1; font-weight: 500; margin-top: 0; margin-bottom: 0; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
             ${data.title}
           </h2>
           ${launchpadHTML}
-          ${
-            unitId === 'cme_new' || unitId === 'gcse_middle_east_1945_1995'
-              ? `
-          <div style="margin-top: 14px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-            <button type="button" onclick="if(window.switchView){window.switchView('timeline', '${unitId}');}" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.95) 100%); color: #ffffff; border: 1px solid rgba(52, 211, 153, 0.6); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); backdrop-filter: blur(4px); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 16px rgba(16,185,129,0.4)';" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';">
-              <i class="fa-solid fa-clock-rotate-left"></i>
-              <span>Launch Living Chronological Timeline (24 Milestones)</span>
-            </button>
-            ${
-              Array.isArray(data.key_individuals) && data.key_individuals.length > 0
-                ? `<button type="button" onclick="if(window.switchView){window.switchView('individuals', '${unitId}');}" style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(15, 118, 110, 0.95) 100%); color: #ffffff; border: 1px solid rgba(147, 197, 253, 0.6); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); backdrop-filter: blur(4px); transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 16px rgba(30,64,175,0.4)';" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';">
-              <i class="fa-solid fa-users-rectangle"></i>
-              <span>Key Individuals &amp; Organisations (${data.key_individuals.length} Dossiers)</span>
-            </button>`
-                : ''
-            }
-          </div>`
-              : ''
-          }
-          ${data.cover_caption ? `<p style="margin-top: 20px; margin-bottom: 0; font-style: italic; color: #94a3b8; font-size: 0.95rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">${data.cover_caption}</p>` : ''}
+          ${data.cover_caption ? `<p style="margin-top: 10px; margin-bottom: 0; font-style: italic; color: #94a3b8; font-size: 0.84rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">${data.cover_caption}</p>` : ''}
         </div>
       </div>
-      ${renderCoverSourcesHTML(data, true) ? `<div style="padding: 20px 30px 0 30px; background: white;">${renderCoverSourcesHTML(data, true)}</div>` : ''}
+      ${renderCoverSourcesHTML(data, true) ? `<div style="padding: 16px 26px 0 26px; background: white;">${renderCoverSourcesHTML(data, true)}</div>` : ''}
     `;
   } else {
     headerHtml = `
-      <div style="text-align: center; padding: 40px 24px 20px 24px; background: white; max-width: 900px; margin: 0 auto;">
-        <h1 class="enquiry-title" style="font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 5.2vw, 2.7rem); line-height: 1.25; color: #1a237e; margin-bottom: 12px; hyphens: none; -webkit-hyphens: none; word-break: normal; overflow-wrap: normal; text-wrap: balance;">${data.enquiry_question || data.enquiry || 'Unit Enquiry'}</h1>
-        <h2 style="font-size: clamp(1.05rem, 3.5vw, 1.35rem); color: #475569; font-weight: 500; margin-top: 0; margin-bottom: 24px;">
+      <div style="text-align: center; padding: 26px 24px 16px 24px; background: white; max-width: 900px; margin: 0 auto;">
+        <h1 class="enquiry-title" style="font-family: 'Playfair Display', serif; font-size: clamp(1.45rem, 4vw, 2.25rem); line-height: 1.22; color: #1a237e; margin-bottom: 8px; hyphens: none; -webkit-hyphens: none; word-break: normal; overflow-wrap: normal; text-wrap: balance;">${data.enquiry_question || data.enquiry || 'Unit Enquiry'}</h1>
+        <h2 style="font-size: clamp(0.96rem, 2.5vw, 1.15rem); color: #475569; font-weight: 500; margin-top: 0; margin-bottom: 12px;">
           ${data.title}
         </h2>
         ${launchpadHTML}
-        ${
-          unitId === 'cme_new' || unitId === 'gcse_middle_east_1945_1995'
-            ? `
-        <div style="margin-top: 14px; display: flex; justify-content: center;">
-          <button type="button" onclick="if(window.switchView){window.switchView('timeline', '${unitId}');}" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.95) 100%); color: #ffffff; border: 1px solid rgba(52, 211, 153, 0.6); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); backdrop-filter: blur(4px); transition: all 0.2s ease;">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span>Launch Living Chronological Timeline (24 Milestones)</span>
-          </button>
-        </div>`
-            : ''
-        }
         ${renderCoverSourcesHTML(data)}
-        
-        ${data.cover_caption ? `<p style="margin-top: 5px; margin-bottom: 0; font-style: italic; color: #64748b; font-size: 0.95rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">${data.cover_caption}</p>` : ''}
+        ${data.cover_caption ? `<p style="margin-top: 5px; margin-bottom: 0; font-style: italic; color: #64748b; font-size: 0.84rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">${data.cover_caption}</p>` : ''}
       </div>
     `;
   }
 
-  function renderUnitRoadmapBar(uId) {
-    if (uId === 'cme_new') {
-      return `
-        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="background: #0284c7; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(2,132,199,0.4); flex-shrink: 0;">
-              <i class="fa-solid fa-map-location-dot"></i>
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
-                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">GCSE Specification</span>
-              </div>
-              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">Conflict in the Middle East: Specification Roadmaps &amp; Visual Overviews</h4>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East 14-Page Ultra-Condensed Revision Guide', '/pdfs/cme_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0f766e; color: #ffffff; border: 1px solid #2dd4bf; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(15,118,110,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-book-bookmark"></i>
-              <span>14-Page Revision Guide</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_edexcel_spec_roadmap');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-route"></i>
-              <span>Specification Roadmap (1945–1995)</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_narrative_chronology_roadmap');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#1e293b';">
-              <i class="fa-solid fa-scroll"></i>
-              <span>Chronology Scroll</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_visual_course_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0d9488; color: #ffffff; border: 1px solid #2dd4bf; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(13,148,136,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-images"></i>
-              <span>Course Visual Overview</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #3b82f6; color: #ffffff; border: 1px solid #60a5fa; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(59,130,246,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span>Paper 2 Exam Guide</span>
-            </button>
-          </div>
-        </div>
-      `;
-    } else if (uId === 'usa') {
-      return `
-        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="background: #b91c1c; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(185,28,28,0.4); flex-shrink: 0;">
-              <i class="fa-solid fa-flag-usa"></i>
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 0.72rem; font-weight: 700; color: #f87171; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
-                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
-              </div>
-              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">USA 1954–1975: Specification Exam Strategy &amp; Revision Guides</h4>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('usa_paper3_exam_strategy_guide');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #b91c1c; color: #ffffff; border: 1px solid #ef4444; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(185,28,28,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span>Paper 3 Exam Strategy Guide</span>
-            </button>
-          </div>
-        </div>
-      `;
-    } else if (uId === 'edexcel_medicine') {
-      return `
-        <div class="unit-roadmap-strip" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #334155; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="background: #0284c7; color: #ffffff; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 8px rgba(2,132,199,0.4); flex-shrink: 0;">
-              <i class="fa-solid fa-heart-pulse"></i>
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.05em;">Visual Knowledge Architecture</span>
-                <span style="font-size: 0.68rem; font-weight: 600; color: #94a3b8; background: #334155; padding: 1px 6px; border-radius: 4px;">Edexcel Specification</span>
-              </div>
-              <h4 style="margin: 2px 0 0 0; color: #ffffff; font-size: 1.02rem; font-family: 'Playfair Display', Georgia, serif;">Medicine in Britain: Master Course &amp; Era Overviews (c1250–Present)</h4>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_course_overview_c1250_present');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-map-location-dot"></i>
-              <span>Course Master Overview</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_renaissance_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #064e3b; color: #f8fafc; border: 1px solid #059669; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#047857';" onmouseout="this.style.background='#064e3b';">
-              <i class="fa-solid fa-chart-pie"></i>
-              <span>Renaissance Era Overview</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_industrial_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #78350f; color: #ffffff; border: 1px solid #d97706; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(217,119,6,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-industry"></i>
-              <span>Industrial Era Overview</span>
-            </button>
-            <button type="button" class="btn" onclick="if(window.openInfographicModal){window.openInfographicModal('med_modern_era_overview');}" style="padding: 7px 13px; font-size: 0.82rem; font-weight: 700; background: #0c4a6e; color: #ffffff; border: 1px solid #0284c7; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.3); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-              <i class="fa-solid fa-dna"></i>
-              <span>Modern Era Overview</span>
-            </button>
-          </div>
-        </div>
-      `;
-    }
-    return '';
-  }
-
-  function renderCmeRevisionGuideBanner(uId) {
-    if (uId !== 'cme_new' && uId !== 'gcse_middle_east_1945_1995') return '';
-    return `
-      <div class="cme-revision-guide-banner" style="margin: 0 0 24px 0; background: linear-gradient(135deg, #091322 0%, #0f2744 50%, #0a192f 100%); border-radius: 12px; padding: 22px 26px; color: #ffffff; box-shadow: 0 8px 24px -4px rgba(10, 25, 47, 0.35); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; border: 1.5px solid rgba(45, 212, 191, 0.4); position: relative; overflow: hidden;">
-        <div style="position: absolute; right: -15px; top: -25px; font-size: 11rem; color: rgba(45, 212, 191, 0.04); pointer-events: none; z-index: 0;">
-          <i class="fa-solid fa-book-bookmark"></i>
-        </div>
-        <div style="flex: 1; min-width: 290px; position: relative; z-index: 1;">
-          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(13, 148, 136, 0.25); border: 1px solid rgba(45, 212, 191, 0.5); padding: 3px 10px; border-radius: 20px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; color: #2dd4bf;">
-            <i class="fa-solid fa-star"></i> Sole Official GCSE Revision Guide &bull; 14 Pages A4
-          </div>
-          <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.45rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
-            Conflict in the Middle East (1945–1995): Ultra-Condensed Revision Guide
-          </h3>
-          <p style="margin: 0 0 10px 0; color: #cbd5e1; font-size: 0.88rem; line-height: 1.45; max-width: 720px;">
-            The definitive visual revision guide across all 12 lessons: Master Timeline &amp; RAG checklist (p.1), 1 page per lesson with bold dates/stats and causal flow strips (pp.2–13), and Key Treaties &amp; Historical Figures summary (p.14). Pure high-density notes &bull; zero model answers &bull; zero exam lines.
-          </p>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.74rem;">
-            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-file-pdf" style="color: #2dd4bf; margin-right: 4px;"></i>14 Pages A4 Portrait</span>
-            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-book-open" style="color: #38bdf8; margin-right: 4px;"></i>12 Condensed Lessons</span>
-            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-timeline" style="color: #fbbf24; margin-right: 4px;"></i>40 Timeline Milestones</span>
-            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-scale-balanced" style="color: #a78bfa; margin-right: 4px;"></i>14 Treaties &amp; Accords</span>
-            <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"><i class="fa-solid fa-users" style="color: #f472b6; margin-right: 4px;"></i>8 Key Figure Dossiers</span>
-          </div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; position: relative; z-index: 1;">
-          <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East 14-Page Ultra-Condensed Revision Guide', '/pdfs/cme_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid #2dd4bf; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
-            <i class="fa-solid fa-book-open-reader"></i> Read Online
-          </button>
-          <a href="/pdfs/cme_revision_guide.pdf" target="_blank" download="cme_revision_guide.pdf" style="background: rgba(255,255,255,0.1); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.18)';" onmouseout="this.style.background='rgba(255,255,255,0.1)';">
-            <i class="fa-solid fa-file-pdf" style="color: #f87171;"></i> Download PDF (A4)
-          </a>
-        </div>
-      </div>
-    `;
-  }
-
-  const isTrip = data && data.type === 'trip';
+  const stickyResourceBarHTML = renderStickyUnitResourceBar(unitId, data);
 
   container.innerHTML = `
-    <div class="card" style="animation: fadeInUp 0.3s ease-out; padding: 0; overflow: hidden; background: white;">
+    <div class="card" style="animation: fadeInUp 0.3s ease-out; padding: 0; overflow: visible; background: white;">
       ${headerHtml}
-      
-      <div class="lessons-view-body" style="padding: 30px; border-top: 1px solid #e2e8f0; max-width: 100%; box-sizing: border-box;">
+      ${stickyResourceBarHTML}
+      <div class="lessons-view-body" style="padding: 24px 28px 34px 28px; border-top: 1px solid #e2e8f0; max-width: 100%; box-sizing: border-box;">
         ${renderUnitSynopsis(data, unitId)}
-        ${renderUnitRoadmapBar(unitId)}
-        ${renderCmeRevisionGuideBanner(unitId)}
         ${renderKeyTopicLessonsHTML(data, unitId, data)}
-
-        ${
-          isTrip
-            ? ''
-            : `
-          <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: white; border-radius: 12px; padding: 20px 24px; margin-top: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-            <div style="display: flex; align-items: center; gap: 14px;">
-              <div style="background: rgba(245, 158, 11, 0.2); color: #fef08a; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
-                <i class="fa-solid fa-circle-question"></i>
-              </div>
-              <div>
-                <h4 style="margin: 0; font-size: 1.05rem; color: #ffffff; font-family: 'Montserrat', sans-serif;">${unitId === 'ks2_ww2' ? 'Whole-Class Knowledge Check &amp; Flashcards' : 'Unit Revision: Interactive Quizzing &amp; Spaced Recall'}</h4>
-                <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #cbd5e1;">${unitId === 'ks2_ww2' ? 'Check what your class remembers across all 11 enquiry lessons with quick quizzes, flashcards, and whiteboard questions.' : 'Ready to consolidate this unit? Test your knowledge across all unit questions with timed diagnostic quizzes, 3-Box Leitner flashcards &amp; whiteboard drills.'}</p>
-              </div>
-            </div>
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <button class="btn-pedagogy-primary" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 700; border: none; padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35); transition: all 0.15s ease;" onclick="window.switchView('interactive', '${unitId}')" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
-                <i class="fa-solid fa-circle-question"></i>
-                <span>${unitId === 'ks2_ww2' ? 'Open Class Quiz' : 'Open Quizzing Arena'}</span>
-              </button>
-            </div>
-          </div>
-        `
-        }
       </div>
     </div>
   `;
@@ -3271,6 +2946,61 @@ export async function renderMockExamsView() {
       </div>
 
       <div id="mock-papers-wrapper">
+        ${(() => {
+          const catEntry = getUnitCatalogEntry(unitId);
+          if (!catEntry) return '';
+          const mp = catEntry.masteryExamPack || catEntry.masteryPack;
+          const exInfo = catEntry.examInfographic;
+          if (!mp && !exInfo) return '';
+          const mpPdf = mp && mp.pdfUrl && isVerifiedPdf(mp.pdfUrl) ? mp.pdfUrl : '';
+          const editionsPills =
+            mp && Array.isArray(mp.editions) && mp.editions.length > 1
+              ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;">` +
+                mp.editions
+                  .map((ed) => {
+                    const edPdf = ed.pdfUrl && isVerifiedPdf(ed.pdfUrl) ? ed.pdfUrl : '';
+                    const href = edPdf || ed.htmlUrl;
+                    return `<a href="${href}" target="_blank" style="text-decoration:none;font-size:0.74rem;font-weight:800;padding:4px 9px;border-radius:3px;border:1.5px solid #000;background:#f8fafc;color:#0f172a;display:inline-flex;align-items:center;gap:5px;"><i class="fa-solid ${edPdf ? 'fa-file-pdf' : 'fa-book-open'}"></i> ${ed.label}</a>`;
+                  })
+                  .join('') +
+                `</div>`
+              : '';
+          const exSlug = exInfo ? exInfo.slug || exInfo.id : '';
+          const exLabel = exInfo ? exInfo.label || exInfo.title : '';
+          return `
+            <div style="background: #f8fafc; border: 2px solid #000000; border-radius: 4px; padding: 18px 22px; margin-bottom: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+              <div style="flex: 1; min-width: 260px;">
+                <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #4338ca; margin-bottom: 4px;">
+                  MASTERY EXAM PACK &amp; EXAM TECHNIQUE
+                </div>
+                <div style="font-size: 1.15rem; font-weight: 900; color: #000000;">
+                  ${mp ? mp.title : 'Specification Exam Strategy Guide'}
+                </div>
+                <div style="font-size: 0.84rem; color: #334155; margin-top: 4px;">
+                  ${mp ? mp.desc : 'Question-by-question timing, mark allocation, and examiner technique.'}
+                </div>
+                ${editionsPills}
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                ${
+                  mp
+                    ? `<button type="button" onclick="if(window.openCurricularPillar){window.openCurricularPillar('${mp.htmlUrl}', '${mp.title.replace(/'/g, "\\'")}', '${mpPdf}', 'MASTERY_PACK');}else{window.open('${mp.htmlUrl}','_blank');}" style="background:#000000;color:#ffffff;border:2px solid #000000;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-book-open-reader"></i> Read Mastery Pack</button>`
+                    : ''
+                }
+                ${
+                  mpPdf
+                    ? `<a href="${mpPdf}" target="_blank" download="${mp.downloadName || ''}" style="background:#ffffff;color:#000000;border:2px solid #000000;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-file-pdf" style="color:#dc2626;"></i> PDF (${mp.pages || 'A4'})</a>`
+                    : ''
+                }
+                ${
+                  exSlug
+                    ? `<button type="button" onclick="if(window.openInfographicModal){window.openInfographicModal('${exSlug}');}" style="background:#eff6ff;color:#1e3a8a;border:2px solid #1e3a8a;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-graduation-cap"></i> ${exLabel}</button>`
+                    : ''
+                }
+              </div>
+            </div>
+          `;
+        })()}
         <!-- Assessment Specification Quick Audit -->
         <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 16px 20px; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
           <div>
@@ -3408,24 +3138,20 @@ export async function renderMockExamsView() {
               : ''
           }
 
-          <!-- Mark Scheme Actions -->
+          <!-- Mark Scheme Actions (Staff Mode Only) -->
           ${
-            hasMs
+            hasMs && isStaffModeActive()
               ? `
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-              <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #f4f4f5; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#e4e4e7';" onmouseout="this.style.background='#f4f4f5';" title="Open interactive mark scheme with model answers">
-                <i class="fa-solid fa-clipboard-check"></i> Interactive MS
+              <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ecfdf5; color: #065f46; border: 1.5px solid #059669; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" title="Staff Only: Open interactive mark scheme with model answers">
+                <i class="fa-solid fa-lock-open"></i> Interactive MS
               </a>
-              <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #000000; border: 1.5px solid #71717a; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Open printable A4 Mark Scheme">
+              <a href="${fullMsUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #ffffff; color: #065f46; border: 1.5px solid #059669; padding: 8px 6px; border-radius: 4px; font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.15s ease;" title="Staff Only: Open printable A4 Mark Scheme">
                 <i class="fa-solid fa-file-lines" style="color: #16a34a;"></i> Printable MS
               </a>
             </div>
           `
-              : `
-            <div style="font-size: 0.75rem; color: #4b5563; text-align: center; font-style: italic; padding: 4px 0;">
-              Model answers integrated in study bank
-            </div>
-          `
+              : ''
           }
         </div>
       </div>
@@ -3447,8 +3173,8 @@ export async function renderMockExamsView() {
         <button type="button" class="btn" onclick="if(window.returnToSavedOrigin){window.returnToSavedOrigin('${unitId}');}else if(window.switchView){window.switchView('lessons', '${unitId}');}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #ffffff; color: #000000; border: 2px solid #000000;">
           &larr; ${mockReturnLabel}
         </button>
-        <button type="button" class="btn" onclick="if(window.switchView){window.switchView('lessons', '${unitId}');}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #000000; color: #ffffff; border: 2px solid #000000;">
-          View Master Textbooks &amp; Workbooks
+        <button type="button" class="btn" onclick="if(window.switchView){window.switchView('booklet', '${unitId}');}" style="padding: 9px 18px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; background: #000000; color: #ffffff; border: 2px solid #000000;">
+          Open PDFs &amp; Booklets
         </button>
       </div>
     </div>

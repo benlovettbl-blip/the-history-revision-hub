@@ -218,10 +218,10 @@ export function renderHomepage() {
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; position: relative; z-index: 1;">
-          <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East 14-Page Ultra-Condensed Revision Guide', '/pdfs/cme_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid #2dd4bf; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
+          <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East Condensed Revision Guide', '/pdfs/cme_new_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid #2dd4bf; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
             <i class="fa-solid fa-book-open-reader"></i> Read Online
           </button>
-          <a href="/pdfs/cme_revision_guide.pdf" target="_blank" download="cme_revision_guide.pdf" style="background: rgba(255,255,255,0.1); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.18)';" onmouseout="this.style.background='rgba(255,255,255,0.1)';">
+          <a href="/pdfs/cme_new_revision_guide.pdf" target="_blank" download="Conflict_Middle_East_Condensed_Revision_Guide.pdf" style="background: rgba(255,255,255,0.1); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.18)';" onmouseout="this.style.background='rgba(255,255,255,0.1)';">
             <i class="fa-solid fa-file-pdf" style="color: #f87171;"></i> Download PDF (A4)
           </a>
         </div>
@@ -486,28 +486,6 @@ export function renderSidebar() {
       (document.getElementById('content-area') || window).scrollTo({ top: 0, behavior: 'smooth' });
     });
     navContainer.appendChild(quizPackLink);
-  }
-
-  if (
-    appStore.state.activeUnitData.type !== 'trip' &&
-    window.currentUnitId !== 'medieval_england' &&
-    window.currentUnitId !== 'water_and_sanitation' &&
-    window.currentUnitId !== 'edexcel_medicine' &&
-    window.currentUnitId !== 'great_war' &&
-    window.currentUnitId !== 'great_war_part2' &&
-    window.currentUnitId !== 'industrialisation_and_empire' &&
-    window.currentUnitId !== 'australia'
-  ) {
-    const cheatSheetLink = document.createElement('a');
-    cheatSheetLink.className = 'lesson-link';
-    cheatSheetLink.innerHTML = '<i class="fa-solid fa-file-invoice"></i> Revision Cheat Sheet';
-    cheatSheetLink.href = window.currentUnitId
-      ? `/units/${window.currentUnitId}/cheat_sheet.html`
-      : '#';
-    cheatSheetLink.target = '_blank';
-    cheatSheetLink.style.marginTop = '15px';
-
-    navContainer.appendChild(cheatSheetLink);
   }
 
   if (window.currentUnitId && window.currentUnitId !== 'battlefield_trip') {

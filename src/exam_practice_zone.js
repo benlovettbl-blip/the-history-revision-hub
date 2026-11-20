@@ -602,9 +602,6 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
             <button type="button" id="epz-btn-view-matrix" class="main-btn epz-btn" style="background: #1e40af; color: white; border: none; padding: 7px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
               <i class="fa-solid fa-table-cells"></i> Open Question Matrix
             </button>
-            <button type="button" class="main-btn epz-btn" onclick="if(window.openInfographicModal){window.openInfographicModal('cme_paper2_exam_guide');}" style="background: #0284c7; color: white; border: none; padding: 7px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Open Visual Exam Technique Guide">
-              <i class="fa-solid fa-chart-pie" style="color: #fde047;"></i> Question Technique Guide
-            </button>
           </div>
         </div>
 

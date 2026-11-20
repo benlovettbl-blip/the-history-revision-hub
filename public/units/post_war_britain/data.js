@@ -1627,6 +1627,115 @@ export default {
             "prose_hash": "d396edb0b5"
           }
         ]
+      },
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "post_war_britain_l01_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 1",
+        "datesBadge": "1897 – 1918",
+        "topicLabel": "Enquiry 01: Votes for Women — Suffragists vs Suffragettes (1897–1918)",
+        "title": "Were the Peaceful Suffragists or the Militant Suffragettes More Effective in Winning the Vote?",
+        "spokenTitle": "Were the peaceful Suffragists or the militant Suffragettes more effective in winning the vote?",
+        "thumbUrl": "/images/post_war_britain/canary_girls_chilwell_1917.jpg",
+        "provenanceNote": "The National Archives (Kew), Museum of London, IWM, Wellcome Collection & Bristol Archives (Zero AI Imagery)",
+        "bridges": [
+          "Militant Deeds",
+          "Hunger Strikes",
+          "Police Clashes",
+          "Wartime Work",
+          "1918 Breakthrough"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Fawcett’s Peaceful Suffragists",
+            "date": "1897–1903",
+            "img": "/images/post_war_britain/millicent_fawcett_portrait.jpg",
+            "mode": "contain-light",
+            "stat": "1897: NUWSS Unites Over 50,000 Lawful Members",
+            "html": "Led by <strong>Millicent Fawcett</strong>, over 50,000 peaceful <strong>NUWSS Suffragists</strong> used lawful petitions and parliamentary lobbying to prove women were <strong>responsible voters</strong>.",
+            "spoken": "Were the peaceful Suffragists or the militant Suffragettes more effective in winning the vote? <short pause> Led by Millicent Fawcett , over 50,000 peaceful NUWSS Suffragists used lawful petitions and parliamentary lobbying to prove women were responsible voters .",
+            "paired_prose_hash": "7cb6adbdaf",
+            "connective": "Were the peaceful Suffragists or the militant Suffragettes more effective in winning the vote?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Pankhurst: ‘Deeds, Not Words’",
+            "date": "1903–1914",
+            "img": "/images/post_war_britain/pankhurst_arrest_1914.jpg",
+            "mode": "contain",
+            "stat": "Oct 1903: WSPU Launches Militant Action",
+            "html": "Tired of delay, <strong>Emmeline Pankhurst</strong> founded the militant <strong>WSPU Suffragettes</strong> in 1903, chaining themselves to railings under the motto <strong>'Deeds, not words'</strong>.",
+            "spoken": "Frustrated by years of delay, militants broke away in 1903. <short pause> Tired of delay, Emmeline Pankhurst founded the militant WSPU Suffragettes in 1903, chaining themselves to railings under the motto 'Deeds, not words' .",
+            "paired_prose_hash": "00897d0c74",
+            "connective": "Frustrated by years of delay, militants broke away in 1903."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Hunger Strikes & Forced Feeding",
+            "date": "1909–1914",
+            "img": "/images/post_war_britain/wspu_hunger_strike_medal.jpg",
+            "mode": "contain",
+            "stat": "1913: ‘Cat and Mouse Act’ Sparks Outrage",
+            "html": "Jailed Suffragettes staged <strong>hunger strikes</strong>. Brutal <strong>forced tube-feeding</strong> and the 1913 <strong>'Cat and Mouse Act'</strong> shocked the public and won sympathy.",
+            "spoken": "Inside Holloway Prison, Suffragettes turned jail into a protest stage. <short pause> Jailed Suffragettes staged hunger strikes . Brutal forced tube-feeding and the 1913 'Cat and Mouse Act' shocked the public and won sympathy.",
+            "paired_prose_hash": "a7d9bd889b",
+            "connective": "Inside Holloway Prison, Suffragettes turned jail into a protest stage."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Jiu-Jitsu & Epsom Martyrdom",
+            "date": "1910–1914",
+            "img": "/images/post_war_britain/suffragette_jiujitsu_punch_1910.jpg",
+            "mode": "contain-light",
+            "stat": "30-Woman Bodyguard • June 1913 Epsom Derby",
+            "html": "<strong>Edith Garrud</strong> trained a Suffragette Bodyguard in <strong>jiu-jitsu</strong> against police batons, while <strong>Emily Davison</strong> died under the King’s horse at Epsom in 1913.",
+            "spoken": "Street clashes with police grew increasingly physical by 1913. <short pause> Edith Garrud trained a Suffragette Bodyguard in jiu-jitsu against police batons, while Emily Davison died under the King’s horse at Epsom in 1913.",
+            "paired_prose_hash": "c8f6bfd800",
+            "connective": "Street clashes with police grew increasingly physical by 1913."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "War Work & The 1918 Vote",
+            "date": "1914–1918",
+            "img": "/images/post_war_britain/canary_girls_chilwell_1917.jpg",
+            "mode": "landscape",
+            "pos": "center 20%",
+            "stat": "Feb 1918: 8.4m Women Over 30 Win the Vote",
+            "html": "During WWI, <strong>1.5 million women</strong> powered farms and shell factories, helping pass the <strong>1918 Representation Act</strong> giving <strong>8.4 million women</strong> over 30 the vote.",
+            "spoken": "Then the First World War transformed the political mood overnight. <short pause> During World War One, 1.5 million women powered farms and shell factories, helping pass the 1918 Representation Act giving 8.4 million women over 30 the vote.",
+            "paired_prose_hash": "d396edb0b5",
+            "connective": "Then the First World War transformed the political mood overnight."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Combined Pressure Wins Reform",
+            "date": "1918–1928",
+            "img": "/images/suffragettes_kenney_pankhurst.jpg",
+            "mode": "contain",
+            "stat": "Suffragist Persuasion + Suffragette Headlines",
+            "html": "<strong>Suffragettes</strong> kept the issue on front pages, <strong>Suffragists</strong> won MPs’ trust, and <strong>wartime service</strong> clinched the historic 1918 democratic breakthrough.",
+            "spoken": "Victory belonged to pre-war campaigning and wartime service combined. <short pause> Suffragettes kept the issue on front pages, Suffragists won MPs’ trust, and wartime service clinched the historic 1918 democratic breakthrough.",
+            "connective": "Victory belonged to pre-war campaigning and wartime service combined."
+          }
+        ],
+        "takeaway": "Peaceful Suffragist lobbying, bold Suffragette publicity, and vital First World War munitions work combined to win the 1918 vote for 8.4 million women over thirty.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Peaceful Suffragist lobbying, bold Suffragette publicity, and vital First World War munitions work combined to win the 1918 vote for 8.4 million women over thirty.",
+        "vocab": [
+          [
+            "1. Suffrage",
+            "The legal right of citizens to vote in parliamentary elections."
+          ],
+          [
+            "2. Militancy",
+            "Confrontational direct-action protest used by Pankhurst’s WSPU."
+          ],
+          [
+            "3. Cat and Mouse Act",
+            "1913 law releasing weak hunger strikers then re-arresting them later."
+          ]
+        ]
       }
     },
     {
@@ -3105,6 +3214,116 @@ export default {
             "prose_hash": "4e47096dba"
           }
         ]
+      },
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "post_war_britain_l02_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 2",
+        "datesBadge": "1939 – 1948",
+        "topicLabel": "Enquiry 02: Post-War Britain — The Welfare State & The NHS (1939–1948)",
+        "title": "How Did the Aftermath of Total War Build the Welfare State and the NHS?",
+        "spokenTitle": "How did the aftermath of total war build the Welfare State and the NHS?",
+        "thumbUrl": "/images/bevan_first_day_nhs_1948.jpg",
+        "provenanceNote": "The National Archives (Kew), Museum of London, IWM, Wellcome Collection & Bristol Archives (Zero AI Imagery)",
+        "bridges": [
+          "Five Giants Plan",
+          "Labour Landslide",
+          "Workhouses Ended",
+          "Free Healthcare",
+          "Cradle to Grave"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Evacuation & Blitz Solidarity",
+            "date": "1939–1942",
+            "img": "/units/ks2_ww2/assets/evacuees_railway_1939.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Sept 1939: 1.5m Evacuees Expose City Poverty",
+            "html": "<strong>Operation Pied Piper</strong> evacuated 1.5 million city people, exposing urban child poverty, while shared <strong>Blitz rationing</strong> united classes behind building a <strong>fairer Britain</strong>.",
+            "spoken": "How did the aftermath of total war build the Welfare State and the NHS? <short pause> Operation Pied Piper evacuated 1.5 million city people, exposing urban child poverty, while shared Blitz rationing united classes behind building a fairer Britain .",
+            "paired_prose_hash": "c05724a3d3",
+            "connective": "How did the aftermath of total war build the Welfare State and the NHS?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Slaying the Five Giants",
+            "date": "Dec 1942",
+            "img": "/images/post_war_britain/william_beveridge_portrait.jpg",
+            "mode": "contain",
+            "stat": "Dec 1942: 630,000 Copies of Beveridge Report",
+            "html": "<strong>William Beveridge’s</strong> best-selling 1942 report promised <strong>'cradle to grave'</strong> welfare to slay five social giants: <strong>Want, Disease</strong>, Ignorance, Squalor, and Idleness.",
+            "spoken": "In December 1942, Beveridge’s report turned hope into a blueprint. <short pause> William Beveridge’s best-selling 1942 report promised 'cradle to grave' welfare to slay five social giants: Want, Disease , Ignorance, Squalor, and Idleness.",
+            "paired_prose_hash": "fa9ba957dc",
+            "connective": "In December 1942, Beveridge’s report turned hope into a blueprint."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Attlee’s 1945 Labour Landslide",
+            "date": "July 1945",
+            "img": "/images/post_war_britain/clement_attlee_1945.jpg",
+            "mode": "contain",
+            "stat": "July 1945: 146-Seat Majority for Labour",
+            "html": "Rejecting pre-war unemployment, voters gave <strong>Clement Attlee’s Labour Party</strong> a <strong>146-seat landslide</strong> in July 1945 to build the <strong>Welfare State</strong> and nationalise industry.",
+            "spoken": "When peace came in 1945, voters backed bold social change. <short pause> Rejecting pre-war unemployment, voters gave Clement Attlee’s Labour Party a 146-seat landslide in July 1945 to build the Welfare State and nationalise industry.",
+            "paired_prose_hash": "26609746a8",
+            "connective": "When peace came in 1945, voters backed bold social change."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Ending Victorian Workhouses",
+            "date": "1946–1948",
+            "img": "/images/nhs_established.jpg",
+            "mode": "contain-light",
+            "stat": "1946 Insurance Act • 1948 Ends Poor Law",
+            "html": "The 1946 <strong>National Insurance Act</strong> funded universal sick pay and pensions, while the 1948 <strong>National Assistance Act</strong> abolished <strong>Victorian workhouses</strong> forever.",
+            "spoken": "Attlee’s government swiftly passed laws to protect every citizen. <short pause> The 1946 National Insurance Act funded universal sick pay and pensions, while the 1948 National Assistance Act abolished Victorian workhouses forever.",
+            "paired_prose_hash": "071a30036d",
+            "connective": "Attlee’s government swiftly passed laws to protect every citizen."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Bevan Launches the Free NHS",
+            "date": "5 July 1948",
+            "img": "/images/bevan_first_day_nhs_1948.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "5 July 1948: Healthcare Free at Delivery",
+            "html": "Health Minister <strong>Aneurin Bevan</strong> won over doctors by allowing private hospital beds, launching the <strong>National Health Service</strong> on <strong>5 July 1948</strong> free for everyone.",
+            "spoken": "Only fierce resistance from private doctors stood in the way. <short pause> Health Minister Aneurin Bevan won over doctors by allowing private hospital beds, launching the National Health Service on the fifth of July 1948 free for everyone.",
+            "paired_prose_hash": "4e47096dba",
+            "connective": "Only fierce resistance from private doctors stood in the way."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Healthcare Becomes a Right",
+            "date": "From 1948",
+            "img": "/images/post_war_britain/nhs_spectacles_wellcome.jpg",
+            "mode": "contain",
+            "stat": "Millions Gain Free Doctors, Glasses & Teeth",
+            "html": "Born from <strong>wartime solidarity</strong>, Labour’s reforms turned healthcare and <strong>social security</strong> from private luxuries into universal <strong>citizenship rights</strong> across Britain.",
+            "spoken": "Overnight, millions received free doctors, spectacles, and dental care. <short pause> Born from wartime solidarity , Labour’s reforms turned healthcare and social security from private luxuries into universal citizenship rights across Britain.",
+            "connective": "Overnight, millions received free doctors, spectacles, and dental care."
+          }
+        ],
+        "takeaway": "Shared Blitz sacrifice, Beveridge’s 1942 blueprint, and Attlee’s 1945 landslide abolished Victorian workhouses and launched free universal NHS healthcare in 1948.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Shared Blitz sacrifice, Beveridge’s 1942 blueprint, and Attlee’s 1945 landslide abolished Victorian workhouses and launched free universal NHS healthcare in 1948.",
+        "vocab": [
+          [
+            "1. Welfare State",
+            "System where government protects every citizen’s health and security."
+          ],
+          [
+            "2. Five Giants",
+            "Beveridge’s targets: Want, Disease, Ignorance, Squalor, and Idleness."
+          ],
+          [
+            "3. Universal Healthcare",
+            "Medical treatment provided free to everyone at the point of need."
+          ]
+        ]
       }
     },
     {
@@ -4580,6 +4799,116 @@ export default {
             "question": "How did Claudia Jones respond to the 1958 Notting Hill race riots?",
             "prose_hash": "13078fddc1"
           }
+        ]
+      },
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "post_war_britain_l03_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 3",
+        "datesBadge": "1945 – 1959",
+        "topicLabel": "Enquiry 03: The Windrush Generation & Multicultural Britain (1945–1959)",
+        "title": "Why Did Britain Invite Commonwealth Citizens After 1945, and What Did They Face?",
+        "spokenTitle": "Why did Britain invite Commonwealth citizens after 1945, and what did they face?",
+        "thumbUrl": "/images/empire_windrush_1948.jpg",
+        "provenanceNote": "The National Archives (Kew), Museum of London, IWM, Wellcome Collection & Bristol Archives (Zero AI Imagery)",
+        "bridges": [
+          "Equal Passports",
+          "Tilbury Arrival",
+          "Colour Bar",
+          "Carnival Pride",
+          "Britain Changed"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Urgent Post-War Staff Shortage",
+            "date": "1945–1948",
+            "img": "/images/med_banner_kt4_3_nhs_1948_ward.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "1945–48: NHS, Railways & Buses Need Workers",
+            "html": "Exhausted after war, Britain urgently recruited <strong>Commonwealth workers</strong> from the Caribbean and South Asia to rebuild cities and staff the <strong>new NHS</strong> and <strong>railways</strong>.",
+            "spoken": "Why did Britain invite Commonwealth citizens after 1945, and what did they face? <short pause> Exhausted after war, Britain urgently recruited Commonwealth workers from the Caribbean and South Asia to rebuild cities and staff the new NHS and railways .",
+            "paired_prose_hash": "c1342349a4",
+            "connective": "Why did Britain invite Commonwealth citizens after 1945, and what did they face?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Equal Citizens Under 1948 Law",
+            "date": "1948",
+            "img": "/images/post_war_britain/windrush_passenger_manifest_1948.jpg",
+            "mode": "contain-light",
+            "stat": "1948 Nationality Act: 800m Full UK Subjects",
+            "html": "The <strong>British Nationality Act 1948</strong> gave 800 million Empire subjects full <strong>UK citizenship</strong>, with the legal right to settle, work, and <strong>vote in Britain</strong>.",
+            "spoken": "Parliament also confirmed their full legal rights as British subjects. <short pause> The British Nationality Act 1948 gave 800 million Empire subjects full UK citizenship , with the legal right to settle, work, and vote in Britain .",
+            "paired_prose_hash": "8de2448470",
+            "connective": "Parliament also confirmed their full legal rights as British subjects."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Empire Windrush at Tilbury",
+            "date": "22 June 1948",
+            "img": "/images/empire_windrush_1948.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "22 June 1948: 492 Pioneers Dock in Essex",
+            "html": "On <strong>22 June 1948</strong>, <strong>HMT Empire Windrush</strong> docked at Tilbury with <strong>492 Caribbean pioneers</strong>—nurses, RAF veterans, and singers—answering Britain’s call.",
+            "spoken": "In June 1948, a famous arrival marked this new era. <short pause> On the twenty-second of June 1948 , HMT Empire Windrush docked at Tilbury with 492 Caribbean pioneers, nurses, RAF veterans, and singers, answering Britain’s call.",
+            "paired_prose_hash": "b871db236c",
+            "connective": "In June 1948, a famous arrival marked this new era."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Housing Bans & ‘Pardner’ Clubs",
+            "date": "1950s",
+            "img": "/images/post_war_britain/lord_kitchener_1945.jpg",
+            "mode": "contain",
+            "stat": "Cooperative ‘Pardner’ Savings Buy Homes",
+            "html": "Shut out by racist landlords’ <strong>colour bar signs</strong> and bank refusals, Caribbean families pooled weekly cash in <strong>'pardner' savings clubs</strong> to buy <strong>their own homes</strong>.",
+            "spoken": "Despite equal citizenship, newcomers met an ugly informal colour bar. <short pause> Shut out by racist landlords’ colour bar signs and bank refusals, Caribbean families pooled weekly cash in 'pardner' savings clubs to buy their own homes .",
+            "paired_prose_hash": "0cd2ec3b47",
+            "connective": "Despite equal citizenship, newcomers met an ugly informal colour bar."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Claudia Jones & 1959 Carnival",
+            "date": "1958–1959",
+            "img": "/images/post_war_britain/claudia_jones_portrait.jpg",
+            "mode": "contain",
+            "stat": "1958 Riots Answered by 1959 Indoor Carnival",
+            "html": "After the 1958 <strong>Notting Hill race riots</strong>, activist <strong>Claudia Jones</strong> founded the <em>West Indian Gazette</em> and launched the joyful 1959 <strong>Caribbean Carnival</strong>.",
+            "spoken": "Violent Teddy Boy attacks in Notting Hill sparked cultural defiance. <short pause> After the 1958 Notting Hill race riots , activist Claudia Jones founded the West Indian Gazette and launched the joyful 1959 Caribbean Carnival .",
+            "paired_prose_hash": "13078fddc1",
+            "connective": "Violent Teddy Boy attacks in Notting Hill sparked cultural defiance."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Founders of Modern Britain",
+            "date": "Post-1948",
+            "img": "/images/post_war_britain_cover.jpg",
+            "mode": "contain",
+            "stat": "NHS, Transport & Culture Reshaped Forever",
+            "html": "Despite harsh racism, the <strong>Windrush Generation</strong> rebuilt Britain’s hospitals and transport while transforming British music, journalism, and <strong>multicultural life</strong> forever.",
+            "spoken": "Through resilience and pride, Caribbean pioneers reshaped British society forever. <short pause> Despite harsh racism, the Windrush Generation rebuilt Britain’s hospitals and transport while transforming British music, journalism, and multicultural life forever.",
+            "connective": "Through resilience and pride, Caribbean pioneers reshaped British society forever."
+          }
+        ],
+        "takeaway": "Invited as full British citizens to rebuild post-war hospitals and transport, Windrush pioneers overcame housing racism and riots to shape multicultural Britain.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Invited as full British citizens to rebuild post-war hospitals and transport, Windrush pioneers overcame housing racism and riots to shape multicultural Britain.",
+        "vocab": [
+          [
+            "1. British Nationality Act",
+            "1948 law granting Empire and Commonwealth citizens full UK rights."
+          ],
+          [
+            "2. Colour Bar",
+            "Everyday racial bans shutting Black people out of jobs and housing."
+          ],
+          [
+            "3. Pardner Scheme",
+            "Community savings club where Caribbean families pooled cash for homes."
+          ]
         ]
       }
     },
@@ -6080,6 +6409,117 @@ export default {
             "prose_hash": "75827ec25b"
           }
         ]
+      },
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "post_war_britain_l04_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 4",
+        "datesBadge": "1963 – 1968",
+        "topicLabel": "Enquiry 04: The 1963 Bristol Bus Boycott & Civil Rights (1963–1968)",
+        "title": "How Did the 1963 Bristol Bus Boycott Win Britain’s First Civil Rights Laws?",
+        "spokenTitle": "How did the 1963 Bristol Bus Boycott win Britain’s first civil rights laws?",
+        "thumbUrl": "/images/bristol_bus_boycott_mural.jpg",
+        "provenanceNote": "The National Archives (Kew), Museum of London, IWM, Wellcome Collection & Bristol Archives (Zero AI Imagery)",
+        "bridges": [
+          "Phone Sting",
+          "City Boycott",
+          "MPs & Marches",
+          "Colour Bar Ends",
+          "National Laws"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Bristol’s Bus ‘Colour Bar’",
+            "date": "Early 1963",
+            "img": "/images/post_war_britain/bristol_bus_boycott_plaque.jpg",
+            "mode": "contain-light",
+            "stat": "1963: 200 Staff Short Yet Black Crews Banned",
+            "html": "Despite lacking 200 staff, the <strong>Bristol Omnibus Company</strong> and local <strong>TGWU union</strong> enforced a racist <strong>colour bar</strong> banning Black drivers and conductors.",
+            "spoken": "How did the 1963 Bristol Bus Boycott win Britain’s first civil rights laws? <short pause> Despite lacking 200 staff, the Bristol Omnibus Company and local TGWU union enforced a racist colour bar banning Black drivers and conductors.",
+            "paired_prose_hash": "a28d387f36",
+            "connective": "How did the 1963 Bristol Bus Boycott win Britain’s first civil rights laws?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Guy Bailey & The Phone Sting",
+            "date": "April 1963",
+            "img": "/images/bristol_bus_boycott_mural.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Apr 1963: Cancelled Interview Proves Racism",
+            "html": "Activist <strong>Paul Stephenson</strong> booked an interview for qualified teenager <strong>Guy Bailey</strong>. When managers cancelled on hearing Bailey was West Indian, it <strong>proved racism</strong>.",
+            "spoken": "Youth worker Paul Stephenson set a clever trap for proof. <short pause> Activist Paul Stephenson booked an interview for qualified teenager Guy Bailey . When managers cancelled on hearing Bailey was West Indian, it proved racism .",
+            "paired_prose_hash": "ae2fefab3d",
+            "connective": "Youth worker Paul Stephenson set a clever trap for proof."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Thousands Refuse the Buses",
+            "date": "May 1963",
+            "img": "/images/post_war_britain/bristol_bus_boycott_student_march_1963.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "30 Apr 1963: Boycott Slashes Ticket Revenue",
+            "html": "Inspired by Montgomery, <strong>Roy Hackett</strong>, Stephenson, and local leaders launched a <strong>citywide bus boycott</strong>. Thousands walked to work, starving the company of <strong>fares</strong>.",
+            "spoken": "Local campaigners immediately called a peaceful boycott across Bristol. <short pause> Inspired by Montgomery, Roy Hackett , Stephenson, and local leaders launched a citywide bus boycott . Thousands walked to work, starving the company of fares .",
+            "paired_prose_hash": "dd9dfa9dda",
+            "connective": "Local campaigners immediately called a peaceful boycott across Bristol."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Students, Benn & Wilson Unite",
+            "date": "Summer 1963",
+            "img": "/images/post_war_britain/tony_benn_1953.jpg",
+            "mode": "contain",
+            "stat": "Students March • Wilson Pledges New Laws",
+            "html": "<strong>Bristol students</strong> marched with placards while local MP <strong>Tony Benn</strong> backed the protest and Labour leader <strong>Harold Wilson</strong> promised anti-racism laws.",
+            "spoken": "City protests soon drew powerful support from students and Parliament. <short pause> Bristol students marched with placards while local MP Tony Benn backed the protest and Labour leader Harold Wilson promised anti-racism laws.",
+            "paired_prose_hash": "abac83fae6",
+            "connective": "City protests soon drew powerful support from students and Parliament."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "28 August: Colour Bar Broken",
+            "date": "28 Aug 1963",
+            "img": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "28 Aug 1963: Ban Ends • Raghbir Singh Hired",
+            "html": "On <strong>28 August 1963</strong>—the day of King’s Washington speech—the company surrendered, hiring <strong>Raghbir Singh</strong> as Bristol’s first non-white <strong>bus conductor</strong>.",
+            "spoken": "After four months of lost fares, the company surrendered. <short pause> On the twenty-eighth of August 1963, the day of King’s Washington speech, the company surrendered, hiring Raghbir Singh as Bristol’s first non-white bus conductor .",
+            "paired_prose_hash": "75827ec25b",
+            "connective": "After four months of lost fares, the company surrendered."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Britain’s Civil Rights Laws",
+            "date": "1965–1968",
+            "img": "/images/post_war_britain/harold_wilson_1967.jpg",
+            "mode": "contain",
+            "stat": "1965 & 1968: Race Relations Acts Passed",
+            "html": "Bristol’s peaceful victory pushed <strong>Harold Wilson’s government</strong> to pass the <strong>1965 and 1968 Race Relations Acts</strong>, outlawing discrimination in jobs and <strong>housing</strong>.",
+            "spoken": "Bristol’s bus victory soon changed laws across all Britain. <short pause> Bristol’s peaceful victory pushed Harold Wilson’s government to pass the 1965 and 1968 Race Relations Acts , outlawing discrimination in jobs and housing .",
+            "connective": "Bristol’s bus victory soon changed laws across all Britain."
+          }
+        ],
+        "takeaway": "Non-violent community boycotting in Bristol broke the 1963 bus colour bar and directly inspired Britain’s landmark 1965 and 1968 Race Relations Acts.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Non-violent community boycotting in Bristol broke the 1963 bus colour bar and directly inspired Britain’s landmark 1965 and 1968 Race Relations Acts.",
+        "vocab": [
+          [
+            "1. Boycott",
+            "Peaceful protest refusing to buy from or use an unfair company."
+          ],
+          [
+            "2. Direct Action",
+            "Marches, pickets, and boycotts pressuring leaders to end injustice."
+          ],
+          [
+            "3. Race Relations Acts",
+            "1965 and 1968 laws banning racial discrimination in jobs and housing."
+          ]
+        ]
       }
     },
     {
@@ -7534,6 +7974,117 @@ export default {
             "question": "Why did the 1980 Protect and Survive booklet spark Greenham protests?",
             "prose_hash": "db36790038"
           }
+        ]
+      },
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "post_war_britain_l05_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 5",
+        "datesBadge": "1952 – 1983",
+        "topicLabel": "Enquiry 05: Cold War on the Home Front — Deterrence & Protest (1952–1983)",
+        "title": "How Did Cold War Nuclear Fear Shape British Popular Culture and Protest?",
+        "spokenTitle": "How did Cold War nuclear fear shape British popular culture and protest?",
+        "thumbUrl": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
+        "provenanceNote": "The National Archives (Kew), Museum of London, IWM, Wellcome Collection & Bristol Archives (Zero AI Imagery)",
+        "bridges": [
+          "Peace Symbol",
+          "52-Mile March",
+          "Secret Bunkers",
+          "Four-Minute Fear",
+          "Mass Defiance"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Britain Builds the H-Bomb",
+            "date": "1952–1957",
+            "img": "/images/cold_war/castle_bravo_thermonuclear_test_1954.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "1952 Atomic Test • 1957 Pacific H-Bomb",
+            "html": "Seeking superpower status and <strong>nuclear deterrence</strong>, Britain tested its first atomic bomb in <strong>1952</strong> and a megaton <strong>hydrogen bomb</strong> in May 1957.",
+            "spoken": "How did Cold War nuclear fear shape British popular culture and protest? <short pause> Seeking superpower status and nuclear deterrence , Britain tested its first atomic bomb in 1952 and a megaton hydrogen bomb in May 1957.",
+            "paired_prose_hash": "a130b5ac2d",
+            "connective": "How did Cold War nuclear fear shape British popular culture and protest?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "CND & Holtom’s Peace Sign",
+            "date": "Feb 1958",
+            "img": "/images/post_war_britain/cnd_symbol_design.png",
+            "mode": "contain-light",
+            "stat": "Feb 1958: Semaphore ‘N’ + ‘D’ Forms Logo",
+            "html": "Horrified by fallout, campaigners founded <strong>CND</strong> in 1958. Designer <strong>Gerald Holtom</strong> blended naval semaphore letters N and D into the iconic <strong>peace symbol</strong>.",
+            "spoken": "Fear of radioactive fallout quickly sparked a mass peace movement. <short pause> Horrified by fallout, campaigners founded CND in 1958. Designer Gerald Holtom blended naval semaphore letters N and D into the iconic peace symbol .",
+            "paired_prose_hash": "5bc6e904f3",
+            "connective": "Fear of radioactive fallout quickly sparked a mass peace movement."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "52 Miles to Aldermaston",
+            "date": "Easter 1958",
+            "img": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Easter 1958: 4-Day March to Weapons Base",
+            "html": "Over Easter 1958, thousands of students, families, and musicians marched <strong>52 miles</strong> in rain to <strong>Aldermaston</strong> weapons base, sparking a bold <strong>youth protest culture</strong>.",
+            "spoken": "Weeks later, young protesters carried that symbol onto British roads. <short pause> Over Easter 1958, thousands of students, families, and musicians marched 52 miles in rain to Aldermaston weapons base, sparking a bold youth protest culture .",
+            "paired_prose_hash": "cefebf9657",
+            "connective": "Weeks later, young protesters carried that symbol onto British roads."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Secret Bunkers for Officials",
+            "date": "1961–1970",
+            "img": "/images/york_cold_war_bunker.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "1961 York Bunker: 60 Staff Sealed 30 Days",
+            "html": "Ordinary families had no bunkers, yet the state built secret bases like the 1961 <strong>York Cold War Bunker</strong> where 60 <strong>Observer Corps</strong> officers tracked <strong>fallout</strong>.",
+            "spoken": "Meanwhile, the government quietly prepared secret underground rooms for officials. <short pause> Ordinary families had no bunkers, yet the state built secret bases like the 1961 York Cold War Bunker where 60 Observer Corps officers tracked fallout .",
+            "paired_prose_hash": "33aa22abb8",
+            "connective": "Meanwhile, the government quietly prepared secret underground rooms for officials."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "‘Protect and Survive’ Mocked",
+            "date": "1980–1982",
+            "img": "/images/post_war_britain/protect_and_survive_cover.jpg",
+            "mode": "contain",
+            "stat": "1980 Booklet: Hide Under Doors & Mattresses",
+            "html": "In 1980, <strong>Protect and Survive</strong> told families to shelter behind <strong>wooden doors</strong> after a four-minute warning, inspiring <strong>30,000 women</strong> to encircle Greenham Common.",
+            "spoken": "Public anger boiled over at official 1980 survival advice. <short pause> In 1980, Protect and Survive told families to shelter behind wooden doors after a four-minute warning, inspiring 30,000 women to encircle Greenham Common.",
+            "paired_prose_hash": "db36790038",
+            "connective": "Public anger boiled over at official 1980 survival advice."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Protest Reshapes British Culture",
+            "date": "1958–1983",
+            "img": "/images/post_war_britain/greenham_common_embracing_base_1982.jpg",
+            "mode": "contain",
+            "stat": "30,000 Women ‘Embrace the Base’ in Dec 1982",
+            "html": "Although Britain kept its <strong>nuclear arsenal</strong>, atomic fear inspired <strong>CND</strong>, biting satire, and the <strong>Greenham women’s camp</strong>—transforming peaceful protest forever.",
+            "spoken": "Nuclear weapons remained, yet Cold War anxiety transformed Britain. <short pause> Although Britain kept its nuclear arsenal , atomic fear inspired CND , biting satire, and the Greenham women’s camp, transforming peaceful protest forever.",
+            "connective": "Nuclear weapons remained, yet Cold War anxiety transformed Britain."
+          }
+        ],
+        "takeaway": "Britain’s H-bomb tests and secret bunkers sparked CND’s peace symbol, the 52-mile Aldermaston marches, and the 30,000-strong Greenham Common protest.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Britain’s H-bomb tests and secret bunkers sparked CND’s peace symbol, the 52-mile Aldermaston marches, and the 30,000-strong Greenham Common protest.",
+        "vocab": [
+          [
+            "1. Deterrence",
+            "Holding nuclear weapons to scare rivals away from attacking first."
+          ],
+          [
+            "2. Disarmament",
+            "Giving up or abolishing nuclear weapons to promote world peace."
+          ],
+          [
+            "3. Civil Defence",
+            "Government plans and booklets meant to protect civilians in war."
+          ]
         ]
       }
     }

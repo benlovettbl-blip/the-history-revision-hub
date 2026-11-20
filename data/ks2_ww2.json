@@ -999,7 +999,90 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l01.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l01.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?"
+      "enquiry_question": "Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "ks2_ww2_l01_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 1",
+        "datesBadge": "September 1939",
+        "topicLabel": "Enquiry 01: Outbreak 1939 & Home Front Mobilisation",
+        "title": "Why Did British Families Carry Gas Masks and Tape Their Windows in 1939?",
+        "spokenTitle": "Why did British families carry gas masks and tape their windows in 1939?",
+        "thumbUrl": "/units/ks2_ww2/assets/gas_masks_children_1939.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "Gas Mask Boxes",
+          "Pitch-Dark Streets",
+          "Homes Ready"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Sunday Morning Radio News",
+            "date": "3 Sept 1939",
+            "img": "/units/ks2_ww2/assets/neville_chamberlain_1939.jpg",
+            "mode": "contain",
+            "stat": "11:15am: Chamberlain Declares War by Radio",
+            "connective": "Why did British families carry gas masks and tape their windows in 1939?",
+            "html": "On 3 September 1939, families listened to <strong>wireless radios</strong> as <strong>Neville Chamberlain</strong> declared war. Soon after, <strong>air raid sirens</strong> wailed across London.",
+            "paired_prose_hash": "4c0d3ddd73",
+            "spoken": "Why did British families carry gas masks and tape their windows in 1939? <short pause> On the third of September 1939, families listened to wireless radios as Neville Chamberlain declared war. Soon after, air raid sirens wailed across London."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "38 Million Free Gas Masks",
+            "date": "September 1939",
+            "img": "/units/ks2_ww2/assets/gas_mask_warning_poster_1939.jpg",
+            "mode": "contain",
+            "stat": "38 Million Respirators in Cardboard Boxes",
+            "connective": "Fearing poison gas attacks, officials acted before any bombs fell.",
+            "html": "Britain gave out <strong>38 million gas masks</strong> in cardboard shoulder boxes. Schoolchildren practised drills, while toddlers wore bright <strong>Mickey Mouse masks</strong>.",
+            "paired_prose_hash": "fc78bad18a",
+            "spoken": "Fearing poison gas attacks, officials acted before any bombs fell. <short pause> Britain gave out 38 million gas masks in cardboard shoulder boxes. Schoolchildren practised drills, while toddlers wore bright Mickey Mouse masks ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Blackout Curtains & Wardens",
+            "date": "From 1 Sept 1939",
+            "img": "/units/ks2_ww2/assets/arp_warden_duty_1941.jpg",
+            "mode": "contain",
+            "stat": "1.4 Million Volunteer ARP Wardens Patrol",
+            "connective": "Every town also had to hide itself after sunset.",
+            "html": "Strict <strong>Blackout rules</strong> switched off streetlights and covered windows with <strong>thick curtains</strong>, while volunteer <strong>ARP wardens</strong> shouted if light showed.",
+            "paired_prose_hash": "0d54311667",
+            "spoken": "Every town also had to hide itself after sunset. <short pause> Strict Blackout rules switched off streetlights and covered windows with thick curtains , while volunteer ARP wardens shouted if light showed."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Ordinary Homes on Alert",
+            "date": "Autumn 1939",
+            "img": "/units/ks2_ww2/assets/gas_masks_children_1939.jpg",
+            "mode": "landscape",
+            "pos": "center 82%",
+            "stat": "Every Street & School Prepared for Raids",
+            "connective": "Overnight, everyday family life in Britain had changed completely.",
+            "html": "Carrying <strong>gas mask boxes</strong>, taping windows, and walking past <strong>white-striped kerbs</strong> showed that modern war now reached <strong>ordinary homes</strong>.",
+            "spoken": "Overnight, everyday family life in Britain had changed completely. <short pause> Carrying gas mask boxes , taping windows, and walking past white-striped kerbs showed that modern war now reached ordinary homes ."
+          }
+        ],
+        "takeaway": "In September 1939, radio news, 38 million gas masks, and strict Blackout curtains prepared ordinary British families for air raids at home.",
+        "vocab": [
+          [
+            "1. Air Raid Siren",
+            "Loud wailing horn warning towns that enemy bombers were approaching."
+          ],
+          [
+            "2. Blackout",
+            "Rule covering all windows and lamps after dark to hide cities."
+          ],
+          [
+            "3. ARP Warden",
+            "Volunteer in a helmet marked W who checked curtains during raids."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> In September 1939, radio news, 38 million gas masks, and strict Blackout curtains prepared ordinary British families for air raids at home."
+      }
     },
     {
       "id": "lesson_2",
@@ -1966,7 +2049,92 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l02.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l02.jpg",
       "banner_position": "center 22%",
-      "enquiry_question": "What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?"
+      "enquiry_question": "What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "ks2_ww2_l02_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 2",
+        "datesBadge": "1939 – 1941",
+        "topicLabel": "Enquiry 02: Operation Pied Piper & British Evacuation",
+        "title": "What Was It Like for Children Sent Away from Home with a Luggage Label?",
+        "spokenTitle": "What was it like for children sent away from home with a luggage label?",
+        "thumbUrl": "/units/ks2_ww2/assets/evacuees_railway_1939.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "Steam Trains Out",
+          "Village Hall Wait",
+          "Country Farms"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Operation Pied Piper Begins",
+            "date": "1 Sept 1939",
+            "img": "/units/ks2_ww2/assets/evacuation_map_ks2_pupil.png",
+            "mode": "contain-light",
+            "stat": "1.5 Million Evacuees Leave Big Cities",
+            "connective": "What was it like for children sent away from home with a luggage label?",
+            "html": "Under <strong>Operation Pied Piper</strong>, around <strong>1.5 million</strong> children and mothers kissed family goodbye and boarded trains wearing <strong>luggage labels</strong>.",
+            "paired_prose_hash": "077871d58e",
+            "spoken": "What was it like for children sent away from home with a luggage label? <short pause> Under Operation Pied Piper , around 1.5 million children and mothers kissed family goodbye and boarded trains wearing luggage labels ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Waiting in the Village Hall",
+            "date": "Autumn 1939",
+            "img": "/units/ks2_ww2/assets/evacuees_devon_arrival.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Billeting Officers Match Host Families",
+            "connective": "Hours later, steam trains pulled into quiet country stations.",
+            "html": "Inside village halls, a <strong>Billeting Officer</strong> matched tired evacuees with <strong>host families</strong>, while nervous siblings hoped to <strong>stay together</strong>.",
+            "paired_prose_hash": "2cd3d03c9c",
+            "spoken": "Hours later, steam trains pulled into quiet country stations. <short pause> Inside village halls, a Billeting Officer matched tired evacuees with host families , while nervous siblings hoped to stay together ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Surprises on Country Farms",
+            "date": "1940 Onwards",
+            "img": "/units/ks2_ww2/assets/evacuee_feeding_farm_pigs_devon_1941.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Fresh Country Air, Farm Chores & Homesickness",
+            "connective": "Life in rural villages brought big surprises for city children.",
+            "html": "Many children saw <strong>cows and farm pigs</strong> for the first time. Thousands found <strong>kind country homes</strong>, though others felt <strong>lonely and homesick</strong>.",
+            "paired_prose_hash": "492439d928",
+            "spoken": "Life in rural villages brought big surprises for city children. <short pause> Many children saw cows and farm pigs for the first time. Thousands found kind country homes , though others felt lonely and homesick ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Kept Safe from City Bombs",
+            "date": "1939–1945",
+            "img": "/units/ks2_ww2/assets/evacuees_railway_1939.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Biggest Movement of People in UK History",
+            "connective": "Despite tearful station goodbyes, the giant plan saved young lives.",
+            "html": "Moving <strong>schoolchildren</strong> to safer country villages protected a generation from heavy <strong>city bombing</strong> and forged <strong>lifelong friendships</strong>.",
+            "spoken": "Despite tearful station goodbyes, the giant plan saved young lives. <short pause> Moving schoolchildren to safer country villages protected a generation from heavy city bombing and forged lifelong friendships ."
+          }
+        ],
+        "takeaway": "Operation Pied Piper moved 1.5 million children and mothers from dangerous cities to country host families, keeping young lives safe from air raids.",
+        "vocab": [
+          [
+            "1. Evacuee",
+            "A child sent from a busy city to live safely in the countryside."
+          ],
+          [
+            "2. Billeting Officer",
+            "Local volunteer who matched arriving evacuees with country homes."
+          ],
+          [
+            "3. Host Family",
+            "A country household that took in and cared for evacuee children."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Operation Pied Piper moved 1.5 million children and mothers from dangerous cities to country host families, keeping young lives safe from air raids."
+      }
     },
     {
       "id": "lesson_3",
@@ -2900,7 +3068,93 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l03.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l03.jpg",
       "banner_position": "center 18%",
-      "enquiry_question": "What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?"
+      "enquiry_question": "What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "ks2_ww2_l03_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 3",
+        "datesBadge": "1933 – 1938",
+        "topicLabel": "Enquiry 03: Pre-War Life & Rights Lost (1933–1938)",
+        "title": "How Were Everyday Rights Taken Away from Jewish Children After 1933?",
+        "spokenTitle": "How were everyday rights taken away from Jewish children after 1933?",
+        "thumbUrl": "/units/ks2_ww2/assets/prewar_jewish_family_portrait_1938.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "1933 Nazi Laws",
+          "November 1938",
+          "Urgent Escape"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Happy Childhoods Before 1933",
+            "date": "Before 1933",
+            "img": "/units/ks2_ww2/assets/prewar_jewish_family_portrait_1938.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Over 9 Million Jewish Citizens Across Europe",
+            "connective": "How were everyday rights taken away from Jewish children after 1933?",
+            "html": "Before 1933, <strong>Jewish children</strong> across Europe played in <strong>football teams</strong>, rode bicycles, and carried sweet-filled <strong>school cones</strong> on day one.",
+            "paired_prose_hash": "7b5ae3137c",
+            "spoken": "How were everyday rights taken away from Jewish children after 1933? <short pause> Before 1933, Jewish children across Europe played in football teams , rode bicycles, and carried sweet-filled school cones on day one."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Over 400 Unfair Nazi Laws",
+            "date": "1933–1937",
+            "img": "/units/ks2_ww2/assets/nazi_boycott_jewish_shops_berlin_1933.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "1935 Nuremberg Laws Strip German Citizenship",
+            "connective": "Everything changed when Adolf Hitler took power in January 1933.",
+            "html": "Nazi leaders passed over <strong>400 unfair laws</strong> taking away citizenship and banning Jewish children from <strong>public parks</strong>, pools, and <strong>bicycles</strong>.",
+            "paired_prose_hash": "071292abe8",
+            "spoken": "Everything changed when Adolf Hitler took power in January 1933. <short pause> Nazi leaders passed over 400 unfair laws taking away citizenship and banning Jewish children from public parks , pools, and bicycles ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Kristallnacht & School Bans",
+            "date": "November 1938",
+            "img": "/units/ks2_ww2/assets/kristallnacht_berlin_shopfront_1938.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "15 Nov 1938: Banned from All State Schools",
+            "connective": "Cruel classroom isolation soon turned into open street violence.",
+            "html": "In <strong>November 1938</strong>, Nazi mobs smashed <strong>Jewish shops</strong> and burned synagogues, then banned every Jewish child from <strong>state schools</strong>.",
+            "paired_prose_hash": "1a48251c01",
+            "spoken": "Cruel classroom isolation soon turned into open street violence. <short pause> In November 1938 , Nazi mobs smashed Jewish shops and burned synagogues, then banned every Jewish child from state schools ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Parents Search for Safe Refuge",
+            "date": "Late 1938",
+            "img": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Loving Families Seek Foreign Rescue Visas",
+            "connective": "Faced with growing danger, terrified parents made a brave choice.",
+            "html": "Robbed of <strong>civil rights</strong> and safety at home, loving parents urgently looked for <strong>rescue trains</strong> to send their children to <strong>Britain</strong>.",
+            "spoken": "Faced with growing danger, terrified parents made a brave choice. <short pause> Robbed of civil rights and safety at home, loving parents urgently looked for rescue trains to send their children to Britain ."
+          }
+        ],
+        "takeaway": "Between 1933 and 1938, over 400 unfair Nazi laws and the November Pogrom stripped Jewish children of their civil rights, safety, and schooling.",
+        "vocab": [
+          [
+            "1. Civil Rights",
+            "Fair laws and freedoms protecting every citizen equally in society."
+          ],
+          [
+            "2. Discrimination",
+            "Treating people unfairly because of their religion or background."
+          ],
+          [
+            "3. November Pogrom",
+            "Violent 1938 Nazi attacks on Jewish synagogues, homes, and shops."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1933 and 1938, over 400 unfair Nazi laws and the November Pogrom stripped Jewish children of their civil rights, safety, and schooling."
+      }
     },
     {
       "id": "lesson_4",
@@ -3877,7 +4131,91 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l04.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l04.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?"
+      "enquiry_question": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "ks2_ww2_l04_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 4",
+        "datesBadge": "1938 – 1939",
+        "topicLabel": "Enquiry 04: Vera's Journey & The Kindertransport (1938–1939)",
+        "title": "How Did 10,000 Kindertransport Children Travel Alone to Safety in Britain?",
+        "spokenTitle": "How did ten thousand Kindertransport children travel alone to safety in Britain?",
+        "thumbUrl": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "One Small Case",
+          "Dutch Border Tea",
+          "Safe in Britain"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Britain Approves Rescue Trains",
+            "date": "Dec 1938",
+            "img": "/units/ks2_ww2/assets/kindertransport_route_map.jpg",
+            "mode": "contain-light",
+            "stat": "Nearly 10,000 Unaccompanied Children Saved",
+            "connective": "How did ten thousand Kindertransport children travel alone to safety in Britain?",
+            "html": "Shocked by Nazi attacks, <strong>Parliament</strong> let nearly <strong>10,000 refugee children</strong> enter Britain on the <strong>Kindertransport</strong> without their parents.",
+            "paired_prose_hash": "4270c1da49",
+            "spoken": "How did ten thousand Kindertransport children travel alone to safety in Britain? <short pause> Shocked by Nazi attacks, Parliament let nearly 10,000 refugee children enter Britain on the Kindertransport without their parents."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Vera’s One Small Suitcase",
+            "date": "May 1939",
+            "img": "/units/ks2_ww2/assets/vera_portrait.jpg",
+            "mode": "contain",
+            "stat": "Prague Station: 1 Suitcase, Diary & Doll",
+            "connective": "In Prague, nine-year-old Vera packed for a brave solo journey.",
+            "html": "Carrying <strong>one small suitcase</strong>, her signed diary, and a <strong>porcelain doll</strong>, young Vera wore a <strong>numbered tag</strong> and waved goodbye.",
+            "paired_prose_hash": "37963663e5",
+            "spoken": "In Prague, nine-year-old Vera packed for a brave solo journey. <short pause> Carrying one small suitcase , her signed diary, and a porcelain doll , young Vera wore a numbered tag and waved goodbye."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Ferries to Harwich & London",
+            "date": "Summer 1939",
+            "img": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Hook of Holland Ferry to Liverpool Street",
+            "connective": "After two tense days, the train crossed into the Netherlands.",
+            "html": "Kind Dutch helpers served <strong>hot chocolate</strong> before ferries carried the children to <strong>Harwich</strong> and foster families at <strong>Liverpool Street</strong>.",
+            "paired_prose_hash": "ea586cbdcc",
+            "spoken": "After two tense days, the train crossed into the Netherlands. <short pause> Kind Dutch helpers served hot chocolate before ferries carried the children to Harwich and foster families at Liverpool Street ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "New Lives & Lasting Memory",
+            "date": "1939 Onwards",
+            "img": "/units/ks2_ww2/assets/kindertransport_liverpool_street_memorial.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Liverpool Street Bronze Memorial Honours Rescue",
+            "connective": "War soon closed the borders, yet ten thousand young lives were saved.",
+            "html": "British <strong>foster families</strong> gave young refugees schooling and care, though like <strong>Vera Schaufeld</strong>, many sadly never saw their <strong>parents again</strong>.",
+            "spoken": "War soon closed the borders, yet ten thousand young lives were saved. <short pause> British foster families gave young refugees schooling and care, though like Vera Schaufeld , many sadly never saw their parents again ."
+          }
+        ],
+        "takeaway": "Between December 1938 and September 1939, the Kindertransport carried nearly 10,000 unaccompanied children like nine-year-old Vera to safety in Britain.",
+        "vocab": [
+          [
+            "1. Kindertransport",
+            "Rescue mission bringing nearly 10,000 refugee children to Britain."
+          ],
+          [
+            "2. Refugee",
+            "Someone forced to flee their home country to escape war or danger."
+          ],
+          [
+            "3. Sponsor",
+            "British person or charity promising fifty pounds to care for a child."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between December 1938 and September 1939, the Kindertransport carried nearly 10,000 unaccompanied children like nine-year-old Vera to safety in Britain."
+      }
     },
     {
       "id": "lesson_5",
@@ -4843,7 +5181,89 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l05.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l05.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?"
+      "enquiry_question": "How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "ks2_ww2_l05_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 5",
+        "datesBadge": "1938 – 1988",
+        "topicLabel": "Enquiry 05: Who Were the Rescuers? (1938–1939)",
+        "title": "How Did Volunteers Like Nicholas Winton Rescue 669 Children from Prague?",
+        "spokenTitle": "How did volunteers like Nicholas Winton rescue 669 children from Prague?",
+        "thumbUrl": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "Prague Hotel List",
+          "8 Rescue Trains",
+          "Attic Scrapbook"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "A Cancelled Skiing Holiday",
+            "date": "Dec 1938",
+            "img": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
+            "mode": "contain",
+            "stat": "Prague Hotel Dining Table Becomes Rescue Desk",
+            "connective": "How did volunteers like Nicholas Winton rescue 669 children from Prague?",
+            "html": "Cancelling his skiing trip in December 1938, <strong>Nicholas Winton</strong> chose to be an <strong>upstander</strong> and listed endangered children in <strong>Prague</strong>.",
+            "paired_prose_hash": "ae3e649243",
+            "spoken": "How did volunteers like Nicholas Winton rescue 669 children from Prague? <short pause> Cancelling his skiing trip in December 1938, Nicholas Winton chose to be an upstander and listed endangered children in Prague ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Teamwork Across Two Cities",
+            "date": "Spring 1939",
+            "img": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
+            "mode": "contain",
+            "stat": "Warriner, Chadwick & Babi Winton Unite",
+            "connective": "Saving hundreds of children took a brave team across two countries.",
+            "html": "<strong>Doreen Warriner</strong> and teacher <strong>Trevor Chadwick</strong> guided children onto Prague trains while Winton and his mother found British <strong>foster homes</strong>.",
+            "paired_prose_hash": "bc20d2c311",
+            "spoken": "Saving hundreds of children took a brave team across two countries. <short pause> Doreen Warriner and teacher Trevor Chadwick guided children onto Prague trains while Winton and his mother found British foster homes ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "669 Saved & Secret Scrapbook",
+            "date": "1939 & 1988",
+            "img": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
+            "mode": "contain",
+            "stat": "8 Trains Save 669 Children Before War Begins",
+            "connective": "Eight rescue trains reached London before war slammed the borders shut.",
+            "html": "Winton saved <strong>669 children</strong> yet stayed silent for fifty years, until his wife Grete found his <strong>1939 scrapbook</strong> in their <strong>attic</strong>.",
+            "paired_prose_hash": "8776abbf21",
+            "spoken": "Eight rescue trains reached London before war slammed the borders shut. <short pause> Winton saved 669 children yet stayed silent for fifty years, until his wife Grete found his 1939 scrapbook in their attic ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Upstanders Remembered Forever",
+            "date": "1988 Onwards",
+            "img": "/units/ks2_ww2/assets/sir_nicholas_winton_portrait_2007.jpg",
+            "mode": "contain",
+            "stat": "Thousands Alive Today Thanks to Prague Team",
+            "connective": "In 1988, a television surprise revealed the power of their kindness.",
+            "html": "Grown-up survivors stood around <strong>Sir Nicholas Winton</strong>, proving how ordinary <strong>upstanders</strong> working together saved <strong>669 young lives</strong>.",
+            "spoken": "In 1988, a television surprise revealed the power of their kindness. <short pause> Grown-up survivors stood around Sir Nicholas Winton , proving how ordinary upstanders working together saved 669 young lives ."
+          }
+        ],
+        "takeaway": "Refusing to be bystanders, Nicholas Winton, Doreen Warriner, and Trevor Chadwick worked together to rescue 669 children from Prague on eight trains.",
+        "vocab": [
+          [
+            "1. Upstander",
+            "Someone who sees danger or unfairness and steps forward to help."
+          ],
+          [
+            "2. Bystander",
+            "Someone who sees unfairness happening yet chooses to do nothing."
+          ],
+          [
+            "3. Visa",
+            "Official travel permit allowing someone to enter another country."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Refusing to be bystanders, Nicholas Winton, Doreen Warriner, and Trevor Chadwick worked together to rescue 669 children from Prague on eight trains."
+      }
     },
     {
       "id": "lesson_6",
@@ -5820,7 +6240,90 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l06.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l06.jpg",
       "banner_position": "center 30%",
-      "enquiry_question": "How did ordinary families protect themselves when bombs fell night after night during the Blitz?"
+      "enquiry_question": "How did ordinary families protect themselves when bombs fell night after night during the Blitz?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "ks2_ww2_l06_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 6",
+        "datesBadge": "1940 – 1941",
+        "topicLabel": "Enquiry 06: The Blitz & Air Raids (1940–1941)",
+        "title": "How Did Ordinary Families Protect Themselves Night After Night During the Blitz?",
+        "spokenTitle": "How did ordinary families protect themselves night after night during the Blitz?",
+        "thumbUrl": "/units/ks2_ww2/assets/st_pauls_survives_blitz_1940.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "57 Night Raids",
+          "Home Shelters",
+          "Deep Underground"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Black Saturday & Night Raids",
+            "date": "Sept 1940",
+            "img": "/units/ks2_ww2/assets/uk_blitz_cities_map_1940.png",
+            "mode": "contain-light",
+            "stat": "London Bombed for 57 Nights in a Row",
+            "connective": "How did ordinary families protect themselves night after night during the Blitz?",
+            "html": "Starting on <strong>7 September 1940</strong>, German bombers attacked London for <strong>57 nights</strong> and raided ports and factories from <strong>Coventry to Clydebank</strong>.",
+            "paired_prose_hash": "c3d94f0bed",
+            "spoken": "How did ordinary families protect themselves night after night during the Blitz? <short pause> Starting on the seventh of September 1940 , German bombers attacked London for 57 nights and raided ports and factories from Coventry to Clydebank ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Anderson & Morrison Shelters",
+            "date": "1939–1941",
+            "img": "/units/ks2_ww2/assets/anderson_shelter_family.jpg",
+            "mode": "contain",
+            "stat": "Over 2 Million Garden Steel Anderson Shelters",
+            "connective": "Families quickly built strong shelters right inside their gardens and homes.",
+            "html": "Households buried curved steel <strong>Anderson shelters</strong> under <strong>garden soil</strong>, while families without gardens slept inside steel-mesh <strong>Morrison table cages</strong>.",
+            "paired_prose_hash": "1c1f529131",
+            "spoken": "Families quickly built strong shelters right inside their gardens and homes. <short pause> Households buried curved steel Anderson shelters under garden soil , while families without gardens slept inside steel-mesh Morrison table cages ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Tube Platforms & Firewatchers",
+            "date": "Winter 1940–41",
+            "img": "/units/ks2_ww2/assets/tube_station_shelter_1940.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "150,000 Shelter Nightly in Tube Stations",
+            "connective": "Deep beneath London, railway platforms turned into giant bedrooms.",
+            "html": "Over <strong>150,000 Londoners</strong> slept on <strong>Tube station bunks</strong>, while brave <strong>firewatchers</strong> and mobile tea vans worked above in the smoke.",
+            "paired_prose_hash": "dfd2b0a86f",
+            "spoken": "Deep beneath London, railway platforms turned into giant bedrooms. <short pause> Over 150,000 Londoners slept on Tube station bunks , while brave firewatchers and mobile tea vans worked above in the smoke."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "St Paul’s & Communities Endure",
+            "date": "May 1941",
+            "img": "/units/ks2_ww2/assets/st_pauls_survives_blitz_1940.jpg",
+            "mode": "contain",
+            "stat": "Britain Refuses to Surrender Under Bombing",
+            "connective": "Through months of heavy bombing, neighbours refused to give in.",
+            "html": "Just as volunteer firewatchers saved <strong>St Paul's Cathedral</strong>, garden shelters and <strong>community teamwork</strong> helped British cities endure <strong>the Blitz</strong>.",
+            "spoken": "Through months of heavy bombing, neighbours refused to give in. <short pause> Just as volunteer firewatchers saved St Paul's Cathedral , garden shelters and community teamwork helped British cities endure the Blitz ."
+          }
+        ],
+        "takeaway": "During the Blitz, garden Anderson shelters, indoor Morrison cages, deep Tube stations, and brave volunteer firewatchers helped British families survive.",
+        "vocab": [
+          [
+            "1. The Blitz",
+            "Heavy German night bombing raids on British cities in 1940 and 1941."
+          ],
+          [
+            "2. Anderson Shelter",
+            "Curved corrugated steel shelter buried under soil in a family garden."
+          ],
+          [
+            "3. Morrison Shelter",
+            "Strong indoor steel table cage where families slept during air raids."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> During the Blitz, garden Anderson shelters, indoor Morrison cages, deep Tube stations, and brave volunteer firewatchers helped British families survive."
+      }
     },
     {
       "id": "lesson_7",
@@ -6799,7 +7302,90 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l07.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l07.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "Why did the British government ration butter, sugar, and meat, and ask families to \"Dig for Victory\"?"
+      "enquiry_question": "Why did the British government ration butter, sugar, and meat, and ask families to \"Dig for Victory\"?",
+      "visual_story_sheet": {
+        "num": "07",
+        "slug": "ks2_ww2_l07_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 7",
+        "datesBadge": "1940 – 1945",
+        "topicLabel": "Enquiry 07: Dig for Victory & Wartime Rationing (1940–1945)",
+        "title": "Why Did Britain Ration Food and Ask Families to Dig for Victory?",
+        "spokenTitle": "Why did Britain ration food and ask families to Dig for Victory?",
+        "thumbUrl": "/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "U-Boat Danger",
+          "Fair Coupons",
+          "1.4m Allotments"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "U-Boats & Atlantic Convoys",
+            "date": "January 1940",
+            "img": "/units/ks2_ww2/assets/atlantic_lifeline_map.jpg",
+            "mode": "contain-light",
+            "stat": "Over 70% of Pre-War Food Arrived by Ship",
+            "connective": "Why did Britain ration food and ask families to Dig for Victory?",
+            "html": "When German <strong>U-boat submarines</strong> sank food ships crossing the <strong>Atlantic Ocean</strong>, Britain introduced <strong>rationing</strong> in 1940 so nobody went hungry.",
+            "paired_prose_hash": "ddd36e219d",
+            "spoken": "Why did Britain ration food and ask families to Dig for Victory? <short pause> When German U-boat submarines sank food ships crossing the Atlantic Ocean , Britain introduced rationing in 1940 so nobody went hungry."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Ration Books & Fair Shares",
+            "date": "1940–1945",
+            "img": "/units/ks2_ww2/assets/ration_book_coupons_1940.jpg",
+            "mode": "contain",
+            "stat": "Weekly Adult Allowance: 1 Fresh Egg & 2 Bacon",
+            "connective": "Every shopper soon carried a small booklet of paper coupons.",
+            "html": "Shopkeepers stamped <strong>ration coupons</strong> for butter, sugar, and <strong>one egg a week</strong>, while young children received free <strong>orange juice</strong> and milk.",
+            "paired_prose_hash": "9ec7420ef7",
+            "spoken": "Every shopper soon carried a small booklet of paper coupons. <short pause> Shopkeepers stamped ration coupons for butter, sugar, and one egg a week , while young children received free orange juice and milk."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Dig for Victory Allotments",
+            "date": "1941–1945",
+            "img": "/units/ks2_ww2/assets/dig_for_victory_allotment_london_1942.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "1.4 Million Vegetable Allotments by 1943",
+            "connective": "Because home-grown vegetables were never rationed, Britain picked up spades.",
+            "html": "Families and schools turned lawns, parks, and even the <strong>Tower of London moat</strong> into <strong>1.4 million allotments</strong> under <strong>Dig for Victory</strong>.",
+            "paired_prose_hash": "60f9b47f77",
+            "spoken": "Because home-grown vegetables were never rationed, Britain picked up spades. <short pause> Families and schools turned lawns, parks, and even the Tower of London moat into 1.4 million allotments under Dig for Victory ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Potato Pete & Healthier Kids",
+            "date": "By 1945",
+            "img": "/units/ks2_ww2/assets/potato_pete_rationing_poster.jpg",
+            "mode": "contain-light",
+            "stat": "Less Sugar + Fresh Veg = Healthier Generation",
+            "connective": "Fair shares and fresh garden vegetables brought a wonderful surprise.",
+            "html": "Guided by <strong>Potato Pete</strong> and Doctor Carrot, eating less sugar and more <strong>fresh vegetables</strong> helped British children grow <strong>taller and healthier</strong>.",
+            "spoken": "Fair shares and fresh garden vegetables brought a wonderful surprise. <short pause> Guided by Potato Pete and Doctor Carrot, eating less sugar and more fresh vegetables helped British children grow taller and healthier ."
+          }
+        ],
+        "takeaway": "Ration books shared scarce imported food fairly while 1.4 million Dig for Victory allotments helped British children grow up healthier than ever before.",
+        "vocab": [
+          [
+            "1. Rationing",
+            "Fair shares rule limiting how much scarce food each person could buy."
+          ],
+          [
+            "2. Ration Coupon",
+            "Paper slip stamped by a shopkeeper whenever a family bought food."
+          ],
+          [
+            "3. Dig for Victory",
+            "Campaign turning gardens, parks, and school fields into vegetable plots."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Ration books shared scarce imported food fairly while 1.4 million Dig for Victory allotments helped British children grow up healthier than ever before."
+      }
     },
     {
       "id": "lesson_8",
@@ -7776,7 +8362,92 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l08.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l08.jpg",
       "banner_position": "center 22%",
-      "enquiry_question": "How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?"
+      "enquiry_question": "How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?",
+      "visual_story_sheet": {
+        "num": "08",
+        "slug": "ks2_ww2_l08_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 8",
+        "datesBadge": "1941 – 1945",
+        "topicLabel": "Enquiry 08: Women at War (1941–1945)",
+        "title": "How Did Women on Farms and in Factories Keep Britain Fighting in the War?",
+        "spokenTitle": "How did women on farms and in factories keep Britain fighting in the war?",
+        "thumbUrl": "/units/ks2_ww2/assets/land_girl_tractor_ww2.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "1941 Call-Up",
+          "Farms & Forests",
+          "Shells & Planes"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Women Called Up for War Work",
+            "date": "December 1941",
+            "img": "/units/ks2_ww2/assets/princess_elizabeth_ats_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 22%",
+            "stat": "Dec 1941: Unmarried Women Aged 20–30 Conscripted",
+            "connective": "How did women on farms and in factories keep Britain fighting in the war?",
+            "html": "In December 1941, Parliament called up <strong>unmarried women</strong> for war work, and young <strong>Princess Elizabeth</strong> later trained as an <strong>army mechanic</strong>.",
+            "paired_prose_hash": "d52a8976e6",
+            "spoken": "How did women on farms and in factories keep Britain fighting in the war? <short pause> In December 1941, Parliament called up unmarried women for war work, and young Princess Elizabeth later trained as an army mechanic ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Land Girls & Lumberjills",
+            "date": "1939–1945",
+            "img": "/units/ks2_ww2/assets/land_girl_tractor_ww2.jpg",
+            "mode": "contain",
+            "stat": "Over 80,000 Women's Land Army Workers",
+            "connective": "Across the countryside, tens of thousands stepped into fields and woods.",
+            "html": "Over <strong>80,000 Land Girls</strong> ploughed fields and milked cows, while strong <strong>Lumberjills</strong> felled tall forest pines for <strong>coal mines</strong>.",
+            "paired_prose_hash": "f4a73f037c",
+            "spoken": "Across the countryside, tens of thousands stepped into fields and woods. <short pause> Over 80,000 Land Girls ploughed fields and milked cows, while strong Lumberjills felled tall forest pines for coal mines ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Canary Girls & Munitions",
+            "date": "1940–1945",
+            "img": "/units/ks2_ww2/assets/women_munitions_workers_inspecting_shells_1942.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Nearly 1 Million Women Build Shells & Bombs",
+            "connective": "Inside noisy factories, nearly a million women did dangerous work.",
+            "html": "Brave <strong>Canary Girls</strong> packed explosive shells with toxic yellow powder, wearing <strong>wooden-soled shoes</strong> so no stray spark caused an <strong>explosion</strong>.",
+            "paired_prose_hash": "b3361d8957",
+            "spoken": "Inside noisy factories, nearly a million women did dangerous work. <short pause> Brave Canary Girls packed explosive shells with toxic yellow powder, wearing wooden-soled shoes so no stray spark caused an explosion ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Flying Spitfires & Equal Pay",
+            "date": "1943–1945",
+            "img": "/units/ks2_ww2/assets/ata_women_pilots_1942.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "168 Women Ferry Pilots Win Equal Pay in 1943",
+            "connective": "High in the clouds, women pilots proved their skill too.",
+            "html": "Flying new <strong>Spitfires and bombers</strong> to airfields without radios, <strong>168 women ferry pilots</strong> won <strong>equal pay</strong> and changed attitudes forever.",
+            "spoken": "High in the clouds, women pilots proved their skill too. <short pause> Flying new Spitfires and bombers to airfields without radios, 168 women ferry pilots won equal pay and changed attitudes forever."
+          }
+        ],
+        "takeaway": "From Land Girls and Lumberjills to Canary Girls and Spitfire ferry pilots, millions of women powered Britain's farms, factories, and skies.",
+        "vocab": [
+          [
+            "1. Conscription",
+            "Law calling citizens up to join the armed forces or vital war work."
+          ],
+          [
+            "2. Land Girls",
+            "Over 80,000 Women's Land Army workers who farmed fields and crops."
+          ],
+          [
+            "3. Canary Girls",
+            "Factory women whose skin turned yellow while packing explosive shells."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> From Land Girls and Lumberjills to Canary Girls and Spitfire ferry pilots, millions of women powered Britain's farms, factories, and skies."
+      }
     },
     {
       "id": "lesson_9",
@@ -8742,7 +9413,92 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l09.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l09.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "How did secret codebreakers working in wooden huts at Bletchley Park help shorten the Second World War?"
+      "enquiry_question": "How did secret codebreakers working in wooden huts at Bletchley Park help shorten the Second World War?",
+      "visual_story_sheet": {
+        "num": "09",
+        "slug": "ks2_ww2_l09_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 9",
+        "datesBadge": "1939 – 1945",
+        "topicLabel": "Enquiry 09: Secret Codebreakers & Bletchley Park (1941–1945)",
+        "title": "How Did Secret Codebreakers at Bletchley Park Help Shorten the Second World War?",
+        "spokenTitle": "How did secret codebreakers at Bletchley Park help shorten the Second World War?",
+        "thumbUrl": "/units/ks2_ww2/assets/bletchley_park_mansion.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "Scrambled Codes",
+          "Spinning Bombes",
+          "30-Year Secret"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "The German Enigma Machine",
+            "date": "1939",
+            "img": "/units/ks2_ww2/assets/enigma_machine_bletchley.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "Daily Cipher Settings Changed Every Midnight",
+            "connective": "How did secret codebreakers at Bletchley Park help shorten the Second World War?",
+            "html": "German commanders scrambled radio orders using portable <strong>Enigma machines</strong> with spinning <strong>wired wheels</strong> that changed settings every <strong>midnight</strong>.",
+            "paired_prose_hash": "eb92d9daee",
+            "spoken": "How did secret codebreakers at Bletchley Park help shorten the Second World War? <short pause> German commanders scrambled radio orders using portable Enigma machines with spinning wired wheels that changed settings every midnight ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Alan Turing & The Bombe",
+            "date": "1940–1944",
+            "img": "/units/ks2_ww2/assets/alan_turing_portrait.jpg",
+            "mode": "contain",
+            "stat": "Bombe & Colossus Crack Daily German Ciphers",
+            "connective": "Building on Polish clues, puzzle experts gathered at secret Station X.",
+            "html": "At <strong>Bletchley Park</strong>, mathematician <strong>Alan Turing</strong> helped design the electric <strong>Bombe machine</strong> to hunt down daily Enigma settings in minutes.",
+            "paired_prose_hash": "b5d4485d72",
+            "spoken": "Building on Polish clues, puzzle experts gathered at secret Station X. <short pause> At Bletchley Park , mathematician Alan Turing helped design the electric Bombe machine to hunt down daily Enigma settings in minutes."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "7,500 Women & Colossus",
+            "date": "1941–1945",
+            "img": "/units/ks2_ww2/assets/colossus_computer_bletchley.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Three-Quarters of Bletchley's 10,000 Staff",
+            "connective": "Round the clock, thousands of women kept the wooden huts running.",
+            "html": "Around <strong>7,500 women</strong>, including naval <strong>Wrens</strong>, wired Bombe drums and ran the <strong>Colossus computer</strong> while keeping total secrecy.",
+            "paired_prose_hash": "dfaef4c97c",
+            "spoken": "Round the clock, thousands of women kept the wooden huts running. <short pause> Around 7,500 women , including naval Wrens , wired Bombe drums and ran the Colossus computer while keeping total secrecy."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Shortening the War in Secret",
+            "date": "1945–1970s",
+            "img": "/units/ks2_ww2/assets/bletchley_park_mansion.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Ultra Intelligence Shortens War by 2+ Years",
+            "connective": "Nobody breathed a word about their secret work for thirty years.",
+            "html": "Bletchley's decoded <strong>Ultra intelligence</strong> steered food ships past U-boats, shortened the war by <strong>two years</strong>, and saved <strong>millions of lives</strong>.",
+            "spoken": "Nobody breathed a word about their secret work for thirty years. <short pause> Bletchley's decoded Ultra intelligence steered food ships past U-boats, shortened the war by two years , and saved millions of lives ."
+          }
+        ],
+        "takeaway": "Working in total secrecy at Bletchley Park, Alan Turing, Tommy Flowers, and 7,500 women cracked German ciphers and shortened the war by two years.",
+        "vocab": [
+          [
+            "1. Enigma Machine",
+            "German cipher box with spinning wheels that scrambled radio orders."
+          ],
+          [
+            "2. Bletchley Park",
+            "Britain's top-secret codebreaking country house, codenamed Station X."
+          ],
+          [
+            "3. Bombe Machine",
+            "High-speed electric machine designed by Turing to crack Enigma keys."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Working in total secrecy at Bletchley Park, Alan Turing, Tommy Flowers, and 7,500 women cracked German ciphers and shortened the war by two years."
+      }
     },
     {
       "id": "lesson_10",
@@ -9719,7 +10475,92 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l10.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l10.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?"
+      "enquiry_question": "Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?",
+      "visual_story_sheet": {
+        "num": "10",
+        "slug": "ks2_ww2_l10_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 10",
+        "datesBadge": "1945 – Today",
+        "topicLabel": "Enquiry 10: VE Day, Rebuilding Britain & Remembrance (1945)",
+        "title": "Why Was Victory in Europe Day Filled with Both Joyful Parties and Quiet Sadness?",
+        "spokenTitle": "Why was Victory in Europe Day filled with both joyful parties and quiet sadness?",
+        "thumbUrl": "/units/ks2_ww2/assets/ve_day_children_table_1945.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "8 May 1945 Joy",
+          "Homes & Free NHS",
+          "Poppy Silence"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Bunting & Street Parties",
+            "date": "8 May 1945",
+            "img": "/units/ks2_ww2/assets/churchill_ve_day_whitehall_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "3:00pm Broadcast Marks Victory in Europe Day",
+            "connective": "Why was Victory in Europe Day filled with both joyful parties and quiet sadness?",
+            "html": "On <strong>8 May 1945</strong>, <strong>Winston Churchill</strong> announced peace in Europe, and neighbours tore down blackout curtains for <strong>street parties</strong>.",
+            "paired_prose_hash": "f8657e3631",
+            "spoken": "Why was Victory in Europe Day filled with both joyful parties and quiet sadness? <short pause> On the eighth of May 1945 , Winston Churchill announced peace in Europe, and neighbours tore down blackout curtains for street parties ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Sorrow & Building the NHS",
+            "date": "1945–1948",
+            "img": "/units/ks2_ww2/assets/bevan_first_day_nhs_1948.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "2 Million Bombed Homes & Free NHS in 1948",
+            "connective": "Amidst the cheering, millions mourned loved ones who never came home.",
+            "html": "Families mourned fallen <strong>British and Commonwealth</strong> troops, rebuilt bombed homes, and created the free <strong>National Health Service</strong> in <strong>1948</strong>.",
+            "paired_prose_hash": "3d5988604d",
+            "spoken": "Amidst the cheering, millions mourned loved ones who never came home. <short pause> Families mourned fallen British and Commonwealth troops, rebuilt bombed homes, and created the free National Health Service in 1948 ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The Cenotaph & Red Poppies",
+            "date": "Every November",
+            "img": "/units/ks2_ww2/assets/cenotaph_whitehall_remembrance.jpg",
+            "mode": "contain",
+            "stat": "11:00am Two-Minute Silence Across the UK",
+            "connective": "Every autumn, communities still gather quietly at local war memorials.",
+            "html": "Before Whitehall's <strong>Cenotaph</strong> monument on <strong>Remembrance Sunday</strong>, people wear <strong>red poppies</strong> and keep a two-minute silence at eleven o'clock.",
+            "paired_prose_hash": "354a452f3c",
+            "spoken": "Every autumn, communities still gather quietly at local war memorials. <short pause> Before Whitehall's Cenotaph monument on Remembrance Sunday , people wear red poppies and keep a two-minute silence at eleven o'clock."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Guarding Peace Together",
+            "date": "1945 to Today",
+            "img": "/units/ks2_ww2/assets/ve_day_children_table_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Shared Sacrifice Builds a Fairer Peace",
+            "connective": "Waving flags atop bomb rubble showed both relief and heavy loss.",
+            "html": "<strong>VE Day</strong> celebrated freedom while reminding every new generation to honour <strong>ordinary courage</strong> and protect <strong>peace</strong>.",
+            "spoken": "Waving flags atop bomb rubble showed both relief and heavy loss. <short pause> VE Day celebrated freedom while reminding every new generation to honour ordinary courage and protect peace ."
+          }
+        ],
+        "takeaway": "VE Day on 8 May 1945 mixed joyful street parties with quiet grief, inspiring post-war rebuilding, the free NHS, and annual poppy Remembrance.",
+        "vocab": [
+          [
+            "1. VE Day",
+            "Victory in Europe Day on 8 May 1945 when Nazi Germany surrendered."
+          ],
+          [
+            "2. Commonwealth",
+            "Partner nations across the world that served alongside Britain."
+          ],
+          [
+            "3. The Cenotaph",
+            "Whitehall stone memorial where poppy wreaths are laid each November."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> VE Day on the eighth of May 1945 mixed joyful street parties with quiet grief, inspiring post-war rebuilding, the free NHS, and annual poppy Remembrance."
+      }
     },
     {
       "id": "lesson_11",
@@ -10703,7 +11544,92 @@
         }
       ],
       "card_image": "/units/ks2_ww2/assets/card_l11.jpg",
-      "enquiry_question": "How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?"
+      "enquiry_question": "How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?",
+      "visual_story_sheet": {
+        "num": "11",
+        "slug": "ks2_ww2_l11_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 11",
+        "datesBadge": "August 1945",
+        "topicLabel": "Enquiry 11: After the War — The Windermere Children (1945)",
+        "title": "How Did 300 Child Survivors Rebuild Their Lives by Lake Windermere?",
+        "spokenTitle": "How did three hundred child survivors rebuild their lives by Lake Windermere?",
+        "thumbUrl": "/units/ks2_ww2/assets/windermere_raf_stirling_airlift_1945.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
+        "bridges": [
+          "RAF Mercy Flight",
+          "Bread & Bicycles",
+          "Lifelong Family"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "RAF Mercy Flight from Prague",
+            "date": "14 Aug 1945",
+            "img": "/units/ks2_ww2/assets/windermere_rescue_flight_map_1945.png",
+            "mode": "contain-light",
+            "stat": "10 Converted RAF Stirling Bombers Fly 300 Kids",
+            "connective": "How did three hundred child survivors rebuild their lives by Lake Windermere?",
+            "html": "In August 1945, ten converted <strong>RAF bombers</strong> flew <strong>300 orphaned</strong> Holocaust child survivors from Prague to peaceful <strong>Lake Windermere</strong>.",
+            "paired_prose_hash": "630d554309",
+            "spoken": "How did three hundred child survivors rebuild their lives by Lake Windermere? <short pause> In August 1945, ten converted RAF bombers flew 300 orphaned Holocaust child survivors from Prague to peaceful Lake Windermere ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Bread Under Pillows & Bikes",
+            "date": "Autumn 1945",
+            "img": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Calgarth Estate: Art, English & Red Bicycles",
+            "connective": "At first, hungry children hid slices of bread beneath their pillows.",
+            "html": "At <strong>Calgarth Estate</strong>, gentle carers offered <strong>English lessons</strong>, art, football, and donated <strong>red bicycles</strong> until the children felt safe.",
+            "paired_prose_hash": "753564f3e4",
+            "spoken": "At first, hungry children hid slices of bread beneath their pillows. <short pause> At Calgarth Estate , gentle carers offered English lessons , art, football, and donated red bicycles until the children felt safe."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The '45 Aid Society & Voices",
+            "date": "1963 to Today",
+            "img": "/units/ks2_ww2/assets/lake_windermere_cumbria.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Survivors Share Eyewitness Memories in Schools",
+            "connective": "Calling themselves The Boys, those young friends stayed close for life.",
+            "html": "Rebuilding proud lives, survivors founded the <strong>Forty-Five Aid Society</strong> in 1963 and shared <strong>oral history</strong> memories in <strong>British schools</strong>.",
+            "paired_prose_hash": "efc88914e7",
+            "spoken": "Calling themselves The Boys, those young friends stayed close for life. <short pause> Rebuilding proud lives, survivors founded the Forty-Five Aid Society in 1963 and shared oral history memories in British schools ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "From Darkness to Sanctuary",
+            "date": "1945 Onwards",
+            "img": "/units/ks2_ww2/assets/windermere_raf_stirling_airlift_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Bombers of War Turned Into Aeroplanes of Peace",
+            "connective": "Warplanes once built for battle had carried children into peace.",
+            "html": "Kindness beside <strong>Lake Windermere</strong> helped <strong>300 young survivors</strong> heal from trauma, build families, and enrich <strong>modern Britain</strong>.",
+            "spoken": "Warplanes once built for battle had carried children into peace. <short pause> Kindness beside Lake Windermere helped 300 young survivors heal from trauma, build families, and enrich modern Britain ."
+          }
+        ],
+        "takeaway": "Flown from Prague in converted RAF bombers, 300 orphaned child survivors healed through gentle care, English lessons, and red bicycles by Lake Windermere.",
+        "vocab": [
+          [
+            "1. Windermere Children",
+            "300 orphaned child survivors flown by the RAF to Cumbria in 1945."
+          ],
+          [
+            "2. Calgarth Estate",
+            "Lakeside wooden estate where the 300 young survivors lived and healed."
+          ],
+          [
+            "3. Oral History",
+            "Real memories spoken and recorded by eyewitnesses who were there."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Flown from Prague in converted RAF bombers, 300 orphaned child survivors healed through gentle care, English lessons, and red bicycles by Lake Windermere."
+      }
     }
   ],
   "edition": "Key Stage 2 Primary Classroom Edition"

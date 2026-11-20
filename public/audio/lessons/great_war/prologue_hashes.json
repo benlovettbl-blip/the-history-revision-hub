@@ -1,0 +1,35 @@
+{
+  "unitId": "great_war",
+  "clips": {
+    "lesson_1_prologue": {
+      "hash": "bcbc389071d799554be1dca55a1a96230d9c6e88d4dc9457a45b4325f2fd941d",
+      "bytes": 113612,
+      "updatedAt": "2026-11-19T22:35:07.681Z"
+    },
+    "lesson_2_prologue": {
+      "hash": "bacf25b79d0b130699def01194f8dcc555e2d72f0981ddba4d94089f4726b848",
+      "bytes": 108332,
+      "updatedAt": "2026-11-19T22:35:08.067Z"
+    },
+    "lesson_3_prologue": {
+      "hash": "386247c340a1c0a11b48069f285d38671789795114c24efd7d46d6dd60410553",
+      "bytes": 116588,
+      "updatedAt": "2026-11-19T22:35:08.458Z"
+    },
+    "lesson_4_prologue": {
+      "hash": "81190dc08b36f49fc6665ba49e24a7e08f3af3a0ff0ab13f6edd1f60183426a9",
+      "bytes": 111692,
+      "updatedAt": "2026-11-19T22:35:08.847Z"
+    },
+    "lesson_5_prologue": {
+      "hash": "940d4fc4aa803841739c1244610d3da91e1817fe4d02d2d8c7d5dc5eddb6e176",
+      "bytes": 123692,
+      "updatedAt": "2026-11-19T23:28:41.424Z"
+    },
+    "lesson_6_prologue": {
+      "hash": "519f43c44af92dc781258b5dad7b07e95c7ed1d11bc4f7f4c6b16391df4ca088",
+      "bytes": 207500,
+      "updatedAt": "2026-11-19T22:35:09.810Z"
+    }
+  }
+}

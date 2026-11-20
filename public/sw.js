@@ -1,5 +1,5 @@
-const CACHE_NAME = 'history-hub-cache-v18-gdpr';
-const DYNAMIC_CACHE = 'history-hub-dynamic-v18-gdpr';
+const CACHE_NAME = 'history-hub-cache-v19-gdpr';
+const DYNAMIC_CACHE = 'history-hub-dynamic-v19-gdpr';
 
 const CORE_ASSETS = [
   '/',
@@ -8,33 +8,6 @@ const CORE_ASSETS = [
   '/icon-192.svg',
   '/icon-512.svg',
   '/style.css',
-  '/knowledge_bank.js',
-  // Key Ypres Battlefield Tour images for offline coach use in Belgium
-  '/images/stubbington_memorial.jpg',
-  '/images/stubbington_memorial_2.jpg',
-  '/images/stubbington_names_2.jpg',
-  '/images/stubbington_names_3.jpg',
-  '/images/john_mccrae.jpg',
-  '/images/siegfried_sassoon.jpg',
-  '/images/charles_sorley.jpg',
-  '/images/isaac_rosenberg.jpg',
-  '/images/laurence_binyon.jpg',
-  '/images/rupert_brooke.jpg',
-  '/images/wilfred_owen.jpg',
-  '/images/menin_road_nash.jpg',
-  '/images/ww1_wooden_crosses.jpg',
-  '/images/fabian_ware.jpg',
-  '/images/cloth_hall_ruins_1919.jpg',
-  '/images/ypres_cloth_hall.jpg',
-  '/images/talbot_house_relaxing.jpg',
-  '/images/cheshire_regiment_trench.png',
-  '/images/ypres_essex_farm.jpg',
-  '/images/lowry_william.png',
-  '/images/lowry_auriol.png',
-  '/images/lowry_cyril.png',
-  '/images/crummack/map_canal_du_nord_cambrai_1918.jpg',
-  '/images/crummack/map_canal_du_nord_modern_map.jpg',
-  '/images/crummack/map_canal_du_nord_modern_satellite.jpg',
 ];
 
 // Install Event: Precache core assets with resilient per-item handling

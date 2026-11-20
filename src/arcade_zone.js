@@ -23,8 +23,20 @@ import { mountFactOrFallacy } from './arcade/games/fact_or_fallacy.js';
 import { mountQuacksAndCures } from './arcade/games/quacks_and_cures.js';
 import { mountBlitzWardenEnigma } from './arcade/games/blitz_warden_enigma.js';
 import { mountWeimarCrisisDesk } from './arcade/games/weimar_crisis_desk.js';
+import { mountCmeCourtyard } from './arcade/games/cme_courtyard/index.js';
 
 const VISUAL_SHOWCASES = [
+  {
+    id: 'cme_courtyard',
+    emoji: '🗝️',
+    title: 'Courtyard of Two Keys: Two Families, One Land (1914–1995)',
+    subtitle: '12-Chapter Voiced Point-and-Click Graphic-Novel Adventure',
+    accent: '#d9a05b',
+    featuredUnits: ['cme_new'],
+    badge: '12-CHAPTER VOICED POINT-AND-CLICK',
+    desc: 'Travel across 22 hand-inked Palestinian & Israeli scenes spanning three generations (1914–1995): hover to uncover hidden room clues, combine Satchel items across both perspectives, tune live 3-capital wireless broadcasts, and hear full character voice-overs over Oud & Violin chamber music!',
+    mount: mountCmeCourtyard,
+  },
   {
     id: 'quacks',
     emoji: '🩺',
@@ -208,27 +220,39 @@ export function renderArcadeView(options = {}) {
       ),
     ].join('');
 
+    const isGraphicNovelMode = currentGameId === 'cme_courtyard';
+
     container.innerHTML = `
       <div class="arcade-shell">
         <!-- Top Control Masthead -->
-        <div class="arcade-topbar">
+        <div class="arcade-topbar" style="${isGraphicNovelMode ? 'padding:8px 14px;margin-bottom:8px;' : ''}">
           <div class="arcade-brand">
-            <div class="arcade-brand-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="arcade-brand-icon" style="${isGraphicNovelMode ? 'width:34px;height:34px;font-size:1rem;' : ''}"><i class="fa-solid ${isGraphicNovelMode ? 'fa-book-open' : 'fa-gamepad'}"></i></div>
             <div>
-              <h1>Revision Arcade</h1>
-              <p>${pools.unitTitle} &bull; Total Unit Points: <strong style="color:#fde047;">${totalUnitPts.toLocaleString()}</strong></p>
+              <h1 style="${isGraphicNovelMode ? 'font-size:1.05rem;' : ''}">${isGraphicNovelMode ? 'Interactive Graphic-Novel Atlas' : 'Revision Arcade'}</h1>
+              ${
+                isGraphicNovelMode
+                  ? `<p style="font-size:0.74rem;">${pools.unitTitle} &bull; Pearson Edexcel GCSE Option P5 (1914–1995)</p>`
+                  : `<p>${pools.unitTitle} &bull; Total Unit Points: <strong style="color:#fde047;">${totalUnitPts.toLocaleString()}</strong></p>`
+              }
             </div>
           </div>
 
           <div class="arcade-controls-cluster">
-            <select id="arcade-scope-select" class="arcade-scope-select" aria-label="Select Lesson Scope">
-              ${scopeOptionsHtml}
-            </select>
+            ${
+              isGraphicNovelMode
+                ? ''
+                : `
+              <select id="arcade-scope-select" class="arcade-scope-select" aria-label="Select Lesson Scope">
+                ${scopeOptionsHtml}
+              </select>
 
-            <button type="button" class="arcade-pill-btn" id="arcade-sound-btn" title="Toggle Arcade Sound Effects">
-              <i class="fa-solid ${arcadeAudio.enabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color:${arcadeAudio.enabled ? '#34d399' : '#94a3b8'};"></i>
-              <span>${arcadeAudio.enabled ? 'SFX On' : 'Muted'}</span>
-            </button>
+              <button type="button" class="arcade-pill-btn" id="arcade-sound-btn" title="Toggle Arcade Sound Effects">
+                <i class="fa-solid ${arcadeAudio.enabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color:${arcadeAudio.enabled ? '#34d399' : '#94a3b8'};"></i>
+                <span>${arcadeAudio.enabled ? 'SFX On' : 'Muted'}</span>
+              </button>
+            `
+            }
 
             <button type="button" class="arcade-pill-btn" id="arcade-return-btn">
               <i class="fa-solid fa-arrow-left" style="color:#38bdf8;"></i>

@@ -1,0 +1,1152 @@
+/**
+ * The History Revision Hub — Single Source of Truth Resource Catalog
+ *
+ * Enforces the "One Single Home" standard and non-overlapping resource names across all 18 units:
+ * 1. Classroom Textbook         (Pure reading narrative — PDF Booklet + Reader)
+ * 2. Pupil Workbook             (Write-in enquiry spreads — PDF Booklet + Reader + Staff Mark Scheme)
+ * 3. Retrieval Companion        (Short-answer recall questions + Marking Bank — PDF Booklet + Reader)
+ * 4. Condensed Revision Guide   (High-density summary notes — PDF Booklet + Reader)
+ * 5. Mastery Exam Pack          (Summative exam practice — lives inside Exam Practice Hub)
+ * 6. Infographics               (Whole-course visual roadmaps & timelines — 1-Sheet Lightbox)
+ */
+
+const PRINT_SPEC_A3 = 'Print Room: A3 Landscape • 2-Up Booklet • Flip Short Edge • Saddle-Stitch';
+const PRINT_SPEC_A4 = 'Print Room: A4 Portrait • Double-Sided (Flip Long Edge) • Corner Staple';
+
+export function isStaffModeActive() {
+  if (typeof window === 'undefined') return false;
+  try {
+    if (sessionStorage.getItem('hh_preview_as_pupil') === 'true') return false;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('locked') === 'true' || params.get('mode') === 'pupil') return false;
+    return Boolean(
+      window.isTeacherMode ||
+        localStorage.getItem('history_hub_teacher_mode') === 'true' ||
+        localStorage.getItem('history_chess_teacher_auth') === 'true',
+    );
+  } catch (e) {
+    return Boolean(window.isTeacherMode);
+  }
+}
+
+export const UNIT_RESOURCES_CATALOG = {
+  // ============================================================================
+  // KEY STAGE 2
+  // ============================================================================
+  ks2_ww2: {
+    unitTitle: 'World War II & The Home Front (1933–1945)',
+    specSubtitle: 'Key Stage 2 History • Years 5 & 6 • 11 Chronological Enquiries',
+    stage: 'ks2',
+    textbook: {
+      title: 'World War II & The Home Front Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '16 Pages',
+      desc: 'Wide-margin reading anthology across all 11 lessons, Chronological Spine, and Illustrated Vocabulary Bank.',
+      htmlUrl: '/units/ks2_ww2/textbook.html',
+      pdfUrl: '/pdfs/ks2_ww2_textbook.pdf',
+      downloadName: 'KS2_WWII_Home_Front_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'World War II & The Home Front Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '28 Pages',
+      desc: 'Complete pupil workbook across Enquiries 1–11, vocabulary checks, and completion certificate.',
+      htmlUrl: '/units/ks2_ww2/pupil_workbook.html',
+      pdfUrl: '/pdfs/ks2_ww2_pupil_workbook.pdf',
+      downloadName: 'KS2_WWII_Home_Front_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'World War II Retrieval Companion (44 Questions)',
+      label: 'Retrieval Companion',
+      pages: '4 Pages',
+      questionsCount: 44,
+      desc: '4 core recall questions per lesson across all 11 lessons (pp. 1–3) plus back-page Answer Key (p. 4).',
+      htmlUrl: '/units/ks2_ww2/quiz_pack.html',
+      pdfUrl: '/pdfs/ks2_ww2_retrieval_companion.pdf',
+      downloadName: 'KS2_WWII_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Primary Teacher Guide & Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '8 Pages',
+      desc: 'Ready-to-teach 11-lesson primary scheme of work, misconceptions, support/stretch tips, and answer keys.',
+      htmlUrl: '/units/ks2_ww2/ks2_ww2_scheme_of_work.html',
+      pdfUrl: '/pdfs/ks2_ww2_scheme_of_work.pdf',
+      downloadName: 'KS2_WWII_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
+    timelineUrl: '/units/ks2_ww2/timeline_slider.html',
+    worksheets: [
+      { id: 'L01', label: 'Lesson 1: Outbreak 1939 & Gas Masks', htmlUrl: '/units/ks2_ww2/worksheets/lesson_01_outbreak_gasmasks_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_01_outbreak_gasmasks_worksheet.pdf' },
+      { id: 'L02', label: 'Lesson 2: Operation Pied Piper & Evacuation', htmlUrl: '/units/ks2_ww2/worksheets/lesson_02_evacuation_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_02_evacuation_worksheet.pdf' },
+      { id: 'L03', label: 'Lesson 3: Pre-War Life & Rights Lost (1933–38)', htmlUrl: '/units/ks2_ww2/worksheets/lesson_03_prewar_life_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_03_prewar_life_worksheet.pdf' },
+      { id: 'L04', label: "Lesson 4: Vera's Journey & Kindertransport", htmlUrl: '/units/ks2_ww2/worksheets/lesson_04_kindertransport_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_04_kindertransport_worksheet.pdf' },
+      { id: 'L05', label: 'Lesson 5: Who Were the Rescuers? (Winton & Chadwick)', htmlUrl: '/units/ks2_ww2/worksheets/lesson_05_rescuers_winton_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_05_rescuers_winton_worksheet.pdf' },
+      { id: 'L06', label: 'Lesson 6: The Blitz & Air Raid Shelters', htmlUrl: '/units/ks2_ww2/worksheets/lesson_06_the_blitz_shelters_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_06_the_blitz_shelters_worksheet.pdf' },
+      { id: 'L07', label: 'Lesson 7: Dig for Victory & Rationing', htmlUrl: '/units/ks2_ww2/worksheets/lesson_07_dig_for_victory_rationing_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_07_dig_for_victory_rationing_worksheet.pdf' },
+      { id: 'L08', label: 'Lesson 8: Women at War (Land Army & Munitions)', htmlUrl: '/units/ks2_ww2/worksheets/lesson_08_women_at_war_land_army_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_08_women_at_war_land_army_worksheet.pdf' },
+      { id: 'L09', label: 'Lesson 9: Secret Codebreakers & Bletchley Park', htmlUrl: '/units/ks2_ww2/worksheets/lesson_09_bletchley_codebreakers_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_09_bletchley_codebreakers_worksheet.pdf' },
+      { id: 'L10', label: 'Lesson 10: VE Day, Rebuilding & Remembrance', htmlUrl: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_10_ve_day_remembrance_worksheet.pdf' },
+      { id: 'L11', label: 'Lesson 11: After the War — The Windermere Children', htmlUrl: '/units/ks2_ww2/worksheets/lesson_11_windermere_children_worksheet.html', pdfUrl: '/pdfs/ks2_ww2/lesson_11_windermere_children_worksheet.pdf' },
+    ],
+  },
+
+  // ============================================================================
+  // KEY STAGE 3 (YEARS 7–9)
+  // ============================================================================
+  water_and_sanitation: {
+    unitTitle: 'Water & Sanitation Through Time (1250–Present)',
+    specSubtitle: 'Key Stage 3 • Year 7 Thematic Depth Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'Water & Sanitation Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering medieval conduits, King Cholera, John Snow, and Bazalgette.',
+      htmlUrl: '/units/water_and_sanitation/textbook.html',
+      pdfUrl: '/pdfs/water_and_sanitation_textbook.pdf',
+      downloadName: 'Y7_Water_and_Sanitation_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Water & Sanitation Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and extended writing scaffolds.',
+      htmlUrl: '/units/water_and_sanitation/pupil_workbook.html',
+      pdfUrl: '/pdfs/water_and_sanitation_pupil_workbook.pdf',
+      downloadName: 'Y7_Water_and_Sanitation_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Water & Sanitation Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/water_and_sanitation/water_and_sanitation_retrieval_companion.html',
+      pdfUrl: '/pdfs/water_and_sanitation_retrieval_companion.pdf',
+      downloadName: 'Y7_Water_and_Sanitation_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  medieval_england: {
+    unitTitle: 'Medieval England (1066–1485)',
+    specSubtitle: 'Key Stage 3 • Year 7 Period Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'Medieval England Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering 1066, Norman control, Becket, Magna Carta, Black Death & 1381.',
+      htmlUrl: '/units/medieval_england/textbook.html',
+      pdfUrl: '/pdfs/medieval_england_textbook.pdf',
+      downloadName: 'Y7_Medieval_England_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Medieval England Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured writing tasks.',
+      htmlUrl: '/units/medieval_england/pupil_workbook.html',
+      pdfUrl: '/pdfs/medieval_england_pupil_workbook.pdf',
+      downloadName: 'Y7_Medieval_England_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Medieval England Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with pupil score tracker and rear Marking Bank.',
+      htmlUrl: '/units/medieval_england/medieval_england_retrieval_companion.html',
+      pdfUrl: '/pdfs/medieval_england_retrieval_companion.pdf',
+      downloadName: 'Y7_Medieval_England_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  monarchy_religion_power: {
+    unitTitle: 'Crown, Church & Parliament (1517–1689)',
+    specSubtitle: 'Key Stage 3 • Year 8 Early Modern Britain',
+    stage: 'ks3',
+    textbook: {
+      title: 'Crown, Church & Parliament Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook from the Reformation and Civil War to the 1689 Bill of Rights.',
+      htmlUrl: '/units/monarchy_religion_power/textbook.html',
+      pdfUrl: '/pdfs/monarchy_religion_power_textbook.pdf',
+      downloadName: 'Y8_Crown_Church_Parliament_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Crown, Church & Parliament Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and causation writing tasks.',
+      htmlUrl: '/units/monarchy_religion_power/pupil_workbook.html',
+      pdfUrl: '/pdfs/monarchy_religion_power_pupil_workbook.pdf',
+      downloadName: 'Y8_Crown_Church_Parliament_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Crown, Church & Parliament Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/monarchy_religion_power/monarchy_religion_power_retrieval_companion.html',
+      pdfUrl: '/pdfs/monarchy_religion_power_retrieval_companion.pdf',
+      downloadName: 'Y8_Crown_Church_Parliament_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  first_british_empire: {
+    unitTitle: 'The First British Empire (1600–1783)',
+    specSubtitle: 'Key Stage 3 • Year 8 Global & Imperial Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'The First British Empire Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering Jamestown, East India Company, Atlantic slavery, and 1776.',
+      htmlUrl: '/units/first_british_empire/textbook.html',
+      pdfUrl: '/pdfs/first_british_empire_textbook.pdf',
+      downloadName: 'Y8_First_British_Empire_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'The First British Empire Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured source writing.',
+      htmlUrl: '/units/first_british_empire/pupil_workbook.html',
+      pdfUrl: '/pdfs/first_british_empire_pupil_workbook.pdf',
+      downloadName: 'Y8_First_British_Empire_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'The First British Empire Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/first_british_empire/first_british_empire_retrieval_companion.html',
+      pdfUrl: '/pdfs/first_british_empire_retrieval_companion.pdf',
+      downloadName: 'Y8_First_British_Empire_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  industrialisation_and_empire: {
+    unitTitle: 'Industrialisation, Power & Protest (1750–1900)',
+    specSubtitle: 'Key Stage 3 • Year 8 Social & Economic Transformation',
+    stage: 'ks3',
+    textbook: {
+      title: 'Industrialisation, Power & Protest Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering steam power, factory reform, Peterloo, Chartism, and suffrage.',
+      htmlUrl: '/units/industrialisation_and_empire/textbook.html',
+      pdfUrl: '/pdfs/industrialisation_and_empire_textbook.pdf',
+      downloadName: 'Y8_Industrialisation_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Industrialisation, Power & Protest Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured writing scaffolds.',
+      htmlUrl: '/units/industrialisation_and_empire/pupil_workbook.html',
+      pdfUrl: '/pdfs/industrialisation_and_empire_pupil_workbook.pdf',
+      downloadName: 'Y8_Industrialisation_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Industrialisation Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/industrialisation_and_empire/industrialisation_and_empire_retrieval_companion.html',
+      pdfUrl: '/pdfs/industrialisation_and_empire_retrieval_companion.pdf',
+      downloadName: 'Y8_Industrialisation_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  second_british_empire: {
+    unitTitle: 'The Second British Empire (1783–1914)',
+    specSubtitle: 'Key Stage 3 • Year 8 Imperial & Global History',
+    stage: 'ks3',
+    textbook: {
+      title: 'The Second British Empire Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering abolition, India 1857, Scramble for Africa, and contested legacies.',
+      htmlUrl: '/units/second_british_empire/textbook.html',
+      pdfUrl: '/pdfs/second_british_empire_textbook.pdf',
+      downloadName: 'Y8_Second_British_Empire_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'The Second British Empire Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and interpretation tasks.',
+      htmlUrl: '/units/second_british_empire/pupil_workbook.html',
+      pdfUrl: '/pdfs/second_british_empire_pupil_workbook.pdf',
+      downloadName: 'Y8_Second_British_Empire_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'The Second British Empire Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/second_british_empire/second_british_empire_retrieval_companion.html',
+      pdfUrl: '/pdfs/second_british_empire_retrieval_companion.pdf',
+      downloadName: 'Y8_Second_British_Empire_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  australia: {
+    unitTitle: 'Invasion & Survival in Australia (1768–1901)',
+    specSubtitle: 'Key Stage 3 • Year 8 Colonial & Indigenous Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'Invasion & Survival in Australia Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering First Nations culture, Cook, the First Fleet, and frontier resistance.',
+      htmlUrl: '/units/australia/textbook.html',
+      pdfUrl: '/pdfs/australia_textbook.pdf',
+      downloadName: 'Y8_Australia_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Invasion & Survival in Australia Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and source evaluation tasks.',
+      htmlUrl: '/units/australia/pupil_workbook.html',
+      pdfUrl: '/pdfs/australia_pupil_workbook.pdf',
+      downloadName: 'Y8_Australia_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Australia Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/australia/australia_retrieval_companion.html',
+      pdfUrl: '/pdfs/australia_retrieval_companion.pdf',
+      downloadName: 'Y8_Australia_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  great_war: {
+    unitTitle: 'Causes of the Great War (1871–1914)',
+    specSubtitle: 'Key Stage 3 • Year 9 Modern World Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'Causes of the Great War Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering Bismarckian alliances, Weltpolitik, naval race, and July 1914.',
+      htmlUrl: '/units/great_war/textbook.html',
+      pdfUrl: '/pdfs/great_war_textbook.pdf',
+      downloadName: 'Y9_Causes_of_Great_War_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Causes of the Great War Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and causation essay scaffolds.',
+      htmlUrl: '/units/great_war/pupil_workbook.html',
+      pdfUrl: '/pdfs/great_war_pupil_workbook.pdf',
+      downloadName: 'Y9_Causes_of_Great_War_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Causes of the Great War Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/great_war/great_war_retrieval_companion.html',
+      pdfUrl: '/pdfs/great_war_retrieval_companion.pdf',
+      downloadName: 'Y9_Causes_of_Great_War_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  great_war_part2: {
+    unitTitle: 'The Course of the Great War (1914–1919)',
+    specSubtitle: 'Key Stage 3 • Year 9 Modern World Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'The Course of the Great War Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering recruitment, trench warfare, global fronts, Home Front & Versailles.',
+      htmlUrl: '/units/great_war_part2/textbook.html',
+      pdfUrl: '/pdfs/great_war_part2_textbook.pdf',
+      downloadName: 'Y9_Course_of_Great_War_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'The Course of the Great War Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured writing scaffolds.',
+      htmlUrl: '/units/great_war_part2/pupil_workbook.html',
+      pdfUrl: '/pdfs/great_war_part2_pupil_workbook.pdf',
+      downloadName: 'Y9_Course_of_Great_War_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        {
+          id: 'standard',
+          label: 'Standard 16-Page Pupil Workbook',
+          pages: '16 Pages',
+          desc: 'Double-page enquiry spreads covering trench warfare, Empire troops, Home Front, and 1918–19.',
+          htmlUrl: '/units/great_war_part2/pupil_workbook.html',
+          pdfUrl: '/pdfs/great_war_part2_pupil_workbook.pdf',
+          downloadName: 'Y9_Course_of_Great_War_Pupil_Workbook.pdf',
+        },
+        {
+          id: 'combined',
+          label: 'Extended 24-Page Workbook (with Literary Extracts)',
+          pages: '24 Pages',
+          desc: 'Extended edition combining the 16-page inquiry workbook with wartime literary extracts and timeline.',
+          htmlUrl: '/units/great_war_part2/great_war_part2_combined_workbook.html',
+          pdfUrl: '/pdfs/great_war_part2_combined_workbook.pdf',
+          downloadName: 'Y9_Course_of_Great_War_Extended_Workbook.pdf',
+        },
+      ],
+    },
+    retrieval: {
+      title: 'The Course of the Great War Retrieval Companion',
+      label: 'Retrieval Companion',
+      pages: '12 Pages',
+      questionsCount: 30,
+      desc: 'Recall questions and wartime literary extracts with pupil tracking ledger and rear Marking Bank.',
+      htmlUrl: '/units/great_war_part2/great_war_part2_retrieval_companion.html',
+      pdfUrl: '/pdfs/great_war_part2_retrieval_companion.pdf',
+      downloadName: 'Y9_Course_of_Great_War_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  the_shoah: {
+    unitTitle: 'The Shoah (1933–1945)',
+    specSubtitle: 'Key Stage 3 • Year 9 Holocaust Depth Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'The Shoah Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '12 Pages',
+      desc: 'Pure narrative classroom textbook covering pre-war Jewish life, persecution, ghettoisation, resistance & liberation.',
+      htmlUrl: '/units/the_shoah/textbook.html',
+      pdfUrl: '/pdfs/the_shoah_textbook.pdf',
+      downloadName: 'Y9_The_Shoah_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'The Shoah Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '20 Pages',
+      desc: 'Double-page enquiry spreads grounded in authentic archival testimonies and primary records.',
+      htmlUrl: '/units/the_shoah/pupil_workbook.html',
+      pdfUrl: '/pdfs/the_shoah_pupil_workbook.pdf',
+      downloadName: 'Y9_The_Shoah_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'The Shoah Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 carefully calibrated factual retrieval questions with rear Marking Bank.',
+      htmlUrl: '/units/the_shoah/the_shoah_retrieval_companion.html',
+      pdfUrl: '/pdfs/the_shoah_retrieval_companion.pdf',
+      downloadName: 'Y9_The_Shoah_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  post_war_britain: {
+    unitTitle: 'Rights, Protest & Post-War Britain (1945–1990)',
+    specSubtitle: 'Key Stage 3 • Year 9 Contemporary Britain',
+    stage: 'ks3',
+    textbook: {
+      title: 'Post-War Britain Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '8 Pages',
+      desc: 'Pure narrative classroom textbook covering the Welfare State, Windrush, Bristol Bus Boycott & social change.',
+      htmlUrl: '/units/post_war_britain/textbook.html',
+      pdfUrl: '/pdfs/post_war_britain_textbook.pdf',
+      downloadName: 'Y9_Post_War_Britain_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Post-War Britain Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and extended writing scaffolds.',
+      htmlUrl: '/units/post_war_britain/pupil_workbook.html',
+      pdfUrl: '/pdfs/post_war_britain_pupil_workbook.pdf',
+      downloadName: 'Y9_Post_War_Britain_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Post-War Britain Retrieval Companion (30 Questions)',
+      label: 'Retrieval Companion',
+      pages: '8 Pages',
+      questionsCount: 30,
+      desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
+      htmlUrl: '/units/post_war_britain/post_war_britain_retrieval_companion.html',
+      pdfUrl: '/pdfs/post_war_britain_retrieval_companion.pdf',
+      downloadName: 'Y9_Post_War_Britain_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+  },
+
+  cold_war: {
+    unitTitle: 'Superpower Relations & the Cold War (1941–1991)',
+    specSubtitle: 'Year 9 / GCSE Period Study',
+    stage: 'ks3',
+    textbook: {
+      title: 'Superpower Relations & Cold War Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '16 Pages',
+      desc: 'Pure narrative classroom textbook from Yalta/Potsdam and Berlin to Cuba, Détente, and Soviet collapse.',
+      htmlUrl: '/units/cold_war/textbook.html',
+      pdfUrl: '/pdfs/cold_war_textbook.pdf',
+      downloadName: 'Cold_War_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Superpower Relations & Cold War Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '20 Pages',
+      desc: 'Double-page enquiry spreads with 5-stage chronological spines and centrefold living timeline.',
+      htmlUrl: '/units/cold_war/pupil_workbook.html',
+      pdfUrl: '/pdfs/cold_war_pupil_workbook.pdf',
+      downloadName: 'Cold_War_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Cold War Retrieval Companion',
+      label: 'Retrieval Companion',
+      pages: '16 Pages',
+      questionsCount: 56,
+      desc: 'Tiered recall questions across all Cold War flashpoints with pupil tracking ledger and rear Marking Bank.',
+      htmlUrl: '/units/cold_war/cold_war_master_retrieval_companion.html',
+      pdfUrl: '/pdfs/cold_war_retrieval_companion.pdf',
+      downloadName: 'Cold_War_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    courseInfographics: [
+      {
+        slug: 'cold_war_l02_visual_story_sheet',
+        label: 'Enquiry 02: From Yalta to Potsdam (Feb–Aug 1945)',
+        desc: '1-page visual story with studio audio: Divided zones, Poland clash, Trinity test & Grand Alliance collapse.',
+        thumbUrl: '/images/cold_war/yalta_conference_1945.jpg',
+      },
+      {
+        slug: 'cold_war_l03_visual_story_sheet',
+        label: 'Enquiry 03: Iron Curtain & Berlin Blockade (1946–55)',
+        desc: '1-page visual story with studio audio: Truman Doctrine, Marshall Aid, Berlin Airlift, NATO & Warsaw Pact.',
+        thumbUrl: '/images/cold_war/berlin_airlift_c54_tempelhof.jpg',
+      },
+      {
+        slug: 'cold_war_l04_visual_story_sheet',
+        label: 'Enquiry 04: The Cuban Missile Crisis (1959–63)',
+        desc: '1-page visual story with studio audio: Bay of Pigs, U-2 photos, quarantine, Arkhipov & 1963 Hotline.',
+        thumbUrl: '/images/cold_war/jfk_excomm_cabinet_room_1962.jpg',
+      },
+      {
+        slug: 'cold_war_l06_visual_story_sheet',
+        label: 'Enquiry 06: Berlin Wall & Soviet Collapse (1961–91)',
+        desc: '1-page visual story with studio audio: 1961 Wall, Afghanistan, Gorbachev’s reforms & Nov 1989 fall.',
+        thumbUrl: '/images/cold_war/berlin_wall_fall_1989.jpg',
+      },
+    ],
+  },
+
+  // ============================================================================
+  // PEARSON EDEXCEL GCSE (9–1) COURSES
+  // ============================================================================
+  edexcel_medicine: {
+    unitTitle: 'Medicine in Britain, c1250–present & The Western Front',
+    specSubtitle: 'Pearson Edexcel GCSE Paper 1 • Option 11 (1HI0/11)',
+    stage: 'gcse',
+    keyTopics: [
+      { id: 'medieval', shortLabel: 'Era 1', label: 'Medieval (c1250–c1500)' },
+      { id: 'renaissance', shortLabel: 'Era 2', label: 'Renaissance (c1500–c1700)' },
+      { id: '18th_19th', shortLabel: 'Era 3', label: '18th & 19th C (c1700–c1900)' },
+      { id: 'modern', shortLabel: 'Era 4', label: 'Modern (c1900–present)' },
+      { id: 'western_front', shortLabel: 'Western Front', label: 'Western Front (1914–1918)' },
+    ],
+    textbook: {
+      title: 'Medicine in Britain Classroom Textbooks (5 Eras)',
+      label: 'Classroom Textbook',
+      pages: '16 Pages / Era',
+      desc: 'Pure narrative classroom reading booklets across all 4 chronological eras plus the Western Front.',
+      htmlUrl: '/units/edexcel_medicine/textbook_medieval_PUBLISHER.html',
+      pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf',
+      downloadName: 'GCSE_Medicine_Era1_Medieval_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'medieval', label: 'Era 1: Medieval Britain (c1250–c1500)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/textbook_medieval_PUBLISHER.html', pdfUrl: '/pdfs/edexcel_medicine_textbook_medieval.pdf', downloadName: 'GCSE_Medicine_Era1_Medieval_Classroom_Textbook.pdf' },
+        { id: 'renaissance', label: 'Era 2: Medical Renaissance (c1500–c1700)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/textbook_renaissance_PUBLISHER.html', pdfUrl: '/pdfs/edexcel_medicine_textbook_renaissance.pdf', downloadName: 'GCSE_Medicine_Era2_Renaissance_Classroom_Textbook.pdf' },
+        { id: '18th_19th', label: 'Era 3: 18th & 19th C. Britain (c1700–c1900)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/textbook_18th_19th_PUBLISHER.html', pdfUrl: '/pdfs/edexcel_medicine_textbook_18th_19th.pdf', downloadName: 'GCSE_Medicine_Era3_Industrial_Classroom_Textbook.pdf' },
+        { id: 'modern', label: 'Era 4: Modern Britain (c1900–present)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/textbook_modern_PUBLISHER.html', pdfUrl: '/pdfs/edexcel_medicine_textbook_modern.pdf', downloadName: 'GCSE_Medicine_Era4_Modern_Classroom_Textbook.pdf' },
+        { id: 'western_front', label: 'Section A: The Western Front (1914–1918)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/textbook_western_front_PUBLISHER.html', pdfUrl: '/pdfs/edexcel_medicine_textbook_western_front.pdf', downloadName: 'GCSE_Medicine_Western_Front_Classroom_Textbook.pdf' },
+      ],
+    },
+    workbook: {
+      title: 'Medicine in Britain Pupil Workbooks (5 Booklets)',
+      label: 'Pupil Workbook',
+      pages: '16–28 Pages',
+      desc: 'Write-in double-page enquiry spreads, factor comparison grids, and Paper 1 Q1–Q5 exam scaffolds.',
+      htmlUrl: '/units/edexcel_medicine/pupil_workbook_medieval.html',
+      pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf',
+      downloadName: 'GCSE_Medicine_Era1_Medieval_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'medieval', label: 'Era 1: Medieval Britain (20p)', pages: '20 Pages', htmlUrl: '/units/edexcel_medicine/pupil_workbook_medieval.html', pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_medieval.pdf', downloadName: 'GCSE_Medicine_Era1_Medieval_Pupil_Workbook.pdf' },
+        { id: 'renaissance', label: 'Era 2: Medical Renaissance (20p)', pages: '20 Pages', htmlUrl: '/units/edexcel_medicine/pupil_workbook_renaissance.html', pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_renaissance.pdf', downloadName: 'GCSE_Medicine_Era2_Renaissance_Pupil_Workbook.pdf' },
+        { id: '18th_19th', label: 'Era 3: 18th & 19th C. Britain (20p)', pages: '20 Pages', htmlUrl: '/units/edexcel_medicine/pupil_workbook_18th_19th.html', pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_18th_19th.pdf', downloadName: 'GCSE_Medicine_Era3_Industrial_Pupil_Workbook.pdf' },
+        { id: 'modern', label: 'Era 4: Modern Britain (16p)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/pupil_workbook_modern.html', pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_modern.pdf', downloadName: 'GCSE_Medicine_Era4_Modern_Pupil_Workbook.pdf' },
+        { id: 'western_front', label: 'Section A: The Western Front (28p)', pages: '28 Pages', htmlUrl: '/units/edexcel_medicine/pupil_workbook_western_front.html', pdfUrl: '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf', downloadName: 'GCSE_Medicine_Western_Front_Pupil_Workbook.pdf' },
+      ],
+    },
+    retrieval: {
+      title: 'Medicine in Britain Retrieval Companion',
+      label: 'Retrieval Companion',
+      pages: '8–16 Pages',
+      questionsCount: 144,
+      desc: 'Short-answer spaced retrieval questions across Section B (Thematic) and Section A (Western Front) with Marking Banks.',
+      htmlUrl: '/units/edexcel_medicine/medicine_master_retrieval_companion.html',
+      pdfUrl: '/pdfs/edexcel_medicine_retrieval_companion.pdf',
+      downloadName: 'GCSE_Medicine_Thematic_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'thematic', label: 'Section B: Thematic Study (96 Qs • 16p)', pages: '16 Pages', htmlUrl: '/units/edexcel_medicine/medicine_master_retrieval_companion.html', pdfUrl: '/pdfs/edexcel_medicine_retrieval_companion.pdf', downloadName: 'GCSE_Medicine_Thematic_Retrieval_Companion.pdf' },
+        { id: 'western_front', label: 'Section A: Western Front (48 Qs • 8p)', pages: '8 Pages', htmlUrl: '/units/edexcel_medicine/western_front_master_retrieval_companion.html', pdfUrl: '/pdfs/edexcel_medicine_western_front_retrieval_companion.pdf', downloadName: 'GCSE_Medicine_Western_Front_Retrieval_Companion.pdf' },
+      ],
+    },
+    revisionGuide: {
+      title: 'Medicine in Britain Condensed Revision Guide',
+      label: 'Condensed Revision Guide',
+      pages: '36 Pages A4',
+      desc: 'Complete specification summary notes across c1250–present and the Western Front. Zero writing lines.',
+      htmlUrl: '/units/edexcel_medicine/visual_revision_guide.html',
+      pdfUrl: '/pdfs/edexcel_medicine_revision_guide.pdf',
+      downloadName: 'GCSE_Medicine_Condensed_Revision_Guide.pdf',
+      printSpec: PRINT_SPEC_A4,
+    },
+    masteryExamPack: {
+      title: 'Paper 1 Complete Mastery Exam Pack',
+      label: 'Mastery Exam Pack',
+      pages: '32 Pages A4',
+      desc: 'Guided Paper 1 exam practice volume covering Section A source utility/follow-up and Section B 4/12/16-mark essays.',
+      htmlUrl: '/units/edexcel_medicine/mastery_pack_renaissance.html',
+      pdfUrl: '/pdfs/edexcel_medicine_mastery_pack_FULL.pdf',
+      downloadName: 'GCSE_Medicine_Paper1_Mastery_Exam_Pack.pdf',
+    },
+    courseInfographics: [
+      {
+        slug: 'med_l01_visual_story_sheet',
+        label: 'KT 1.1: Medieval Church & Supernatural Beliefs (c1250–1500)',
+        desc: '1-page visual story with studio audio: Sin, Zodiac Man, Canterbury relics & monastic censorship.',
+        thumbUrl: '/images/medieval_church_interior.jpg',
+      },
+      {
+        slug: 'med_l14_visual_story_sheet',
+        label: 'KT 3.4: Simpson, Lister & Safe Surgery (1847–1890s)',
+        desc: '1-page visual story with studio audio: Chloroform, surgery’s Black Period, carbolic spray & aseptic theatres.',
+        thumbUrl: '/images/med_banner_kt3_4_lister_antiseptic.jpg',
+      },
+      {
+        slug: 'med_l19_visual_story_sheet',
+        label: 'KT 4.4: Fleming, Florey, Chain & Penicillin (1928–Present)',
+        desc: '1-page visual story with studio audio: 1928 petri dish, Oxford trials, US deep-vat tanks & 2.3m D-Day doses.',
+        thumbUrl: '/images/fleming_petri_dish.jpg',
+      },
+      {
+        slug: 'med_l24_visual_story_sheet',
+        label: 'KT 5.4: Western Front Chain of Evacuation (1914–18)',
+        desc: '1-page visual story with studio audio: Stretcher bearers, RAPs, Dressing Stations, CCS surgery & barges.',
+        thumbUrl: '/images/stretcher_bearers_passchendaele.jpg',
+      },
+    ],
+  },
+
+  eee: {
+    unitTitle: 'Early Elizabethan England, 1558–1588',
+    specSubtitle: 'Pearson Edexcel GCSE Paper 2 • Option B4 (1HI0/B4)',
+    stage: 'gcse',
+    keyTopics: [
+      { id: 'KT1', shortLabel: 'KT 1', label: 'Queen, Government & Religion (1558–69)' },
+      { id: 'KT2', shortLabel: 'KT 2', label: 'Challenges at Home & Abroad (1569–88)' },
+      { id: 'KT3', shortLabel: 'KT 3', label: 'Society & Exploration (1558–88)' },
+    ],
+    textbook: {
+      title: 'Early Elizabethan England Classroom Textbooks (KT1–KT3)',
+      label: 'Classroom Textbook',
+      pages: '12 Pages / KT',
+      desc: 'Slim pure-narrative classroom reading booklets for Key Topics 1, 2, and 3.',
+      htmlUrl: '/units/eee/textbook_KT1_PUBLISHER.html',
+      pdfUrl: '/pdfs/eee_textbook_KT1.pdf',
+      downloadName: 'GCSE_Elizabethan_England_KT1_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: Queen, Government & Religion (12p)', pages: '12 Pages', htmlUrl: '/units/eee/textbook_KT1_PUBLISHER.html', pdfUrl: '/pdfs/eee_textbook_KT1.pdf', downloadName: 'GCSE_Elizabethan_England_KT1_Classroom_Textbook.pdf' },
+        { id: 'KT2', label: 'KT2: Challenges at Home & Abroad (12p)', pages: '12 Pages', htmlUrl: '/units/eee/textbook_KT2_PUBLISHER.html', pdfUrl: '/pdfs/eee_textbook_KT2.pdf', downloadName: 'GCSE_Elizabethan_England_KT2_Classroom_Textbook.pdf' },
+        { id: 'KT3', label: 'KT3: Society & Exploration (12p)', pages: '12 Pages', htmlUrl: '/units/eee/textbook_KT3_PUBLISHER.html', pdfUrl: '/pdfs/eee_textbook_KT3.pdf', downloadName: 'GCSE_Elizabethan_England_KT3_Classroom_Textbook.pdf' },
+      ],
+    },
+    workbook: {
+      title: 'Early Elizabethan England Pupil Workbooks (KT1–KT3)',
+      label: 'Pupil Workbook',
+      pages: '16 Pages / KT',
+      desc: 'Photocopier-ready 16-page double-page enquiry workbooks with paired Teacher Mark Schemes & WAGOLLs.',
+      htmlUrl: '/units/eee/pupil_workbook_KT1.html',
+      pdfUrl: '/pdfs/eee_pupil_workbook_KT1.pdf',
+      downloadName: 'GCSE_Elizabethan_England_KT1_Pupil_Workbook.pdf',
+      markSchemeHtmlUrl: '/units/eee/pupil_workbook_KT1_markscheme.html',
+      markSchemePdfUrl: '/pdfs/eee_pupil_workbook_KT1_markscheme.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: Queen, Government & Religion (16p)', pages: '16 Pages', htmlUrl: '/units/eee/pupil_workbook_KT1.html', pdfUrl: '/pdfs/eee_pupil_workbook_KT1.pdf', downloadName: 'GCSE_Elizabethan_England_KT1_Pupil_Workbook.pdf', msHtmlUrl: '/units/eee/pupil_workbook_KT1_markscheme.html', msPdfUrl: '/pdfs/eee_pupil_workbook_KT1_markscheme.pdf', msDownloadName: 'GCSE_Elizabethan_England_KT1_Workbook_Mark_Scheme.pdf' },
+        { id: 'KT2', label: 'KT2: Challenges at Home & Abroad (16p)', pages: '16 Pages', htmlUrl: '/units/eee/pupil_workbook_KT2.html', pdfUrl: '/pdfs/eee_pupil_workbook_KT2.pdf', downloadName: 'GCSE_Elizabethan_England_KT2_Pupil_Workbook.pdf', msHtmlUrl: '/units/eee/pupil_workbook_KT2_markscheme.html', msPdfUrl: '/pdfs/eee_pupil_workbook_KT2_markscheme.pdf', msDownloadName: 'GCSE_Elizabethan_England_KT2_Workbook_Mark_Scheme.pdf' },
+        { id: 'KT3', label: 'KT3: Society & Exploration (16p)', pages: '16 Pages', htmlUrl: '/units/eee/pupil_workbook_KT3.html', pdfUrl: '/pdfs/eee_pupil_workbook_KT3.pdf', downloadName: 'GCSE_Elizabethan_England_KT3_Pupil_Workbook.pdf', msHtmlUrl: '/units/eee/pupil_workbook_KT3_markscheme.html', msPdfUrl: '/pdfs/eee_pupil_workbook_KT3_markscheme.pdf', msDownloadName: 'GCSE_Elizabethan_England_KT3_Workbook_Mark_Scheme.pdf' },
+      ],
+    },
+    retrieval: {
+      title: 'Early Elizabethan England Retrieval Companion (120 Questions)',
+      label: 'Retrieval Companion',
+      pages: '24 Pages',
+      questionsCount: 120,
+      desc: 'All 120 short-answer recall questions across KT1–KT3 with Tudor Domino Flowchart and rear Marking Bank.',
+      htmlUrl: '/units/eee/eee_master_retrieval_companion.html',
+      pdfUrl: null,
+      downloadName: 'GCSE_Elizabethan_England_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    masteryExamPack: {
+      title: 'Early Elizabethan England Mastery Exam Packs (KT1–KT3)',
+      label: 'Mastery Exam Pack',
+      pages: '19–21 Pages / KT',
+      desc: 'Paper 2 Section B timed exam practice booklets (Q1 2-features, Q2 12-mark causation, Q3 16-mark essays).',
+      htmlUrl: '/units/eee/mastery_pack_KT1.html',
+      pdfUrl: '/pdfs/eee_mastery_pack_KT1.pdf',
+      editions: [
+        { id: 'KT1', label: 'KT1 Mastery Exam Pack', pages: '21 Pages', htmlUrl: '/units/eee/mastery_pack_KT1.html', pdfUrl: '/pdfs/eee_mastery_pack_KT1.pdf', downloadName: 'GCSE_Elizabethan_England_KT1_Mastery_Exam_Pack.pdf' },
+        { id: 'KT2', label: 'KT2 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/eee/mastery_pack_KT2.html', pdfUrl: '/pdfs/eee_mastery_pack_KT2.pdf', downloadName: 'GCSE_Elizabethan_England_KT2_Mastery_Exam_Pack.pdf' },
+        { id: 'KT3', label: 'KT3 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/eee/mastery_pack_KT3.html', pdfUrl: '/pdfs/eee_mastery_pack_KT3.pdf', downloadName: 'GCSE_Elizabethan_England_KT3_Mastery_Exam_Pack.pdf' },
+      ],
+    },
+    courseInfographics: [
+      {
+        slug: 'eee_l02_visual_story_sheet',
+        label: 'KT 1.2: The 1559 Religious Settlement',
+        desc: '1-page visual story with studio audio: Supremacy, Uniformity, 57 Injunctions & Elizabeth’s Middle Way.',
+        thumbUrl: '/images/book_of_common_prayer_1559_authentic.png',
+      },
+      {
+        slug: 'eee_l05_visual_story_sheet',
+        label: 'KT 2.1: Catholic Plots & Mary’s Execution (1569–87)',
+        desc: '1-page visual story with studio audio: Northern Earls, Ridolfi, Throckmorton, Babington & Fotheringhay.',
+        thumbUrl: '/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg',
+      },
+      {
+        slug: 'eee_l08_visual_story_sheet',
+        label: 'KT 2.4: Defeat of the Spanish Armada (1588)',
+        desc: '1-page visual story with studio audio: Channel running fight, Calais fireships, Gravelines & Atlantic gales.',
+        thumbUrl: '/images/battle_of_gravelines_1588.jpg',
+      },
+      {
+        slug: 'eee_l12_visual_story_sheet',
+        label: 'KT 3.4: Raleigh & The Roanoke Colonies (1584–90)',
+        desc: '1-page visual story with studio audio: 1584 patent, Tiger wreck, Wingina clash & the 1587 Lost Colony.',
+        thumbUrl: '/images/john_white_roanoke_map_1585_authentic.jpg',
+      },
+    ],
+  },
+
+  cme_new: {
+    unitTitle: 'Conflict in the Middle East, 1945–1995',
+    specSubtitle: 'Pearson Edexcel GCSE Paper 2 • Option P5 (1HI0/P5)',
+    stage: 'gcse',
+    keyTopics: [
+      { id: 'KT1', shortLabel: 'KT 1', label: 'Birth of Israel (1945–63)' },
+      { id: 'KT2', shortLabel: 'KT 2', label: 'Escalating Conflict (1963–73)' },
+      { id: 'KT3', shortLabel: 'KT 3', label: 'Attempts at Peace (1974–95)' },
+    ],
+    textbook: {
+      title: 'Conflict in the Middle East Classroom Textbooks (KT1–KT3)',
+      label: 'Classroom Textbook',
+      pages: '12–16 Pages',
+      desc: 'Pure historical narrative reading booklets for Key Topics 1, 2, and 3. Zero writing lines.',
+      htmlUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html',
+      pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf',
+      downloadName: 'GCSE_Middle_East_KT1_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: Birth of the State of Israel (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/textbook_KT1_PUBLISHER.html', pdfUrl: '/pdfs/cme_new_textbook_KT1.pdf', downloadName: 'GCSE_Middle_East_KT1_Classroom_Textbook.pdf' },
+        { id: 'KT2', label: 'KT2: The Escalating Conflict (16p)', pages: '16 Pages', htmlUrl: '/units/cme_new/textbook_KT2_PUBLISHER.html', pdfUrl: '/pdfs/cme_new_textbook_KT2.pdf', downloadName: 'GCSE_Middle_East_KT2_Classroom_Textbook.pdf' },
+        { id: 'KT3', label: 'KT3: Attempts at a Solution (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/textbook_KT3_PUBLISHER.html', pdfUrl: '/pdfs/cme_new_textbook_KT3.pdf', downloadName: 'GCSE_Middle_East_KT3_Classroom_Textbook.pdf' },
+      ],
+    },
+    workbook: {
+      title: 'Conflict in the Middle East Pupil Workbooks (KT1–KT3)',
+      label: 'Pupil Workbook',
+      pages: '12–16 Pages',
+      desc: 'Write-in 5-stage chronological spines, structured enquiry tasks, and paired Teacher Mark Schemes.',
+      htmlUrl: '/units/cme_new/pupil_workbook_KT1.html',
+      pdfUrl: '/pdfs/cme_new_pupil_workbook_KT1.pdf',
+      downloadName: 'GCSE_Middle_East_KT1_Pupil_Workbook.pdf',
+      markSchemeHtmlUrl: '/units/cme_new/pupil_workbook_KT1_markscheme.html',
+      markSchemePdfUrl: '/pdfs/cme_new_pupil_workbook_KT1_markscheme.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: Birth of Israel (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/pupil_workbook_KT1.html', pdfUrl: '/pdfs/cme_new_pupil_workbook_KT1.pdf', downloadName: 'GCSE_Middle_East_KT1_Pupil_Workbook.pdf', msHtmlUrl: '/units/cme_new/pupil_workbook_KT1_markscheme.html', msPdfUrl: '/pdfs/cme_new_pupil_workbook_KT1_markscheme.pdf', msDownloadName: 'GCSE_Middle_East_KT1_Workbook_Mark_Scheme.pdf' },
+        { id: 'KT2', label: 'KT2: Escalating Conflict (16p)', pages: '16 Pages', htmlUrl: '/units/cme_new/pupil_workbook_KT2.html', pdfUrl: '/pdfs/cme_new_pupil_workbook_KT2.pdf', downloadName: 'GCSE_Middle_East_KT2_Pupil_Workbook.pdf', msHtmlUrl: '/units/cme_new/pupil_workbook_KT2_markscheme.html', msPdfUrl: '/pdfs/cme_new_pupil_workbook_KT2_markscheme.pdf', msDownloadName: 'GCSE_Middle_East_KT2_Workbook_Mark_Scheme.pdf' },
+        { id: 'KT3', label: 'KT3: Attempts at Peace (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/pupil_workbook_KT3.html', pdfUrl: '/pdfs/cme_new_pupil_workbook_KT3.pdf', downloadName: 'GCSE_Middle_East_KT3_Pupil_Workbook.pdf', msHtmlUrl: '/units/cme_new/pupil_workbook_KT3_markscheme.html', msPdfUrl: '/pdfs/cme_new_pupil_workbook_KT3_markscheme.pdf', msDownloadName: 'GCSE_Middle_East_KT3_Workbook_Mark_Scheme.pdf' },
+      ],
+    },
+    retrieval: {
+      title: 'Conflict in the Middle East Retrieval Companion (96 Questions)',
+      label: 'Retrieval Companion',
+      pages: '16 Pages A4',
+      questionsCount: 96,
+      desc: 'All 96 short-answer recall questions across KT1–KT3 with pupil score ledger and rear Marking Bank.',
+      htmlUrl: '/units/cme_new/cme_master_retrieval_companion.html',
+      pdfUrl: '/pdfs/cme_new_retrieval_companion.pdf',
+      downloadName: 'GCSE_Middle_East_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    revisionGuide: {
+      title: 'Conflict in the Middle East Condensed Revision Guide',
+      label: 'Condensed Revision Guide',
+      pages: '14 Pages A4',
+      desc: '1 page per lesson across all 12 enquiries: bold dates, causal flow strips, key treaties & figures.',
+      htmlUrl: '/units/cme_new/revision_guide.html',
+      pdfUrl: '/pdfs/cme_new_revision_guide.pdf',
+      downloadName: 'GCSE_Middle_East_Condensed_Revision_Guide.pdf',
+      printSpec: PRINT_SPEC_A4,
+    },
+    masteryExamPack: {
+      title: 'Conflict in the Middle East Mastery Exam Packs',
+      label: 'Mastery Exam Pack',
+      pages: '12–36 Pages',
+      desc: 'Paper 2 Period Study exam practice booklets (Q1 Consequences, Q2 Analytical Narrative, Q3 Importance).',
+      htmlUrl: '/units/cme_new/mastery_pack_full.html',
+      pdfUrl: '/pdfs/cme_new_mastery_pack_FULL.pdf',
+      editions: [
+        { id: 'FULL', label: 'Complete Course Mastery Exam Pack (36p)', pages: '36 Pages', htmlUrl: '/units/cme_new/mastery_pack_full.html', pdfUrl: '/pdfs/cme_new_mastery_pack_FULL.pdf', downloadName: 'GCSE_Middle_East_Complete_Mastery_Exam_Pack.pdf' },
+        { id: 'KT1', label: 'KT1 Mastery Exam Pack (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/mastery_pack_KT1.html', pdfUrl: '/pdfs/cme_new_mastery_pack_KT1.pdf', downloadName: 'GCSE_Middle_East_KT1_Mastery_Exam_Pack.pdf' },
+        { id: 'KT2', label: 'KT2 Mastery Exam Pack (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/mastery_pack_KT2.html', pdfUrl: '/pdfs/cme_new_mastery_pack_KT2.pdf', downloadName: 'GCSE_Middle_East_KT2_Mastery_Exam_Pack.pdf' },
+        { id: 'KT3', label: 'KT3 Mastery Exam Pack (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/mastery_pack_KT3.html', pdfUrl: '/pdfs/cme_new_mastery_pack_KT3.pdf', downloadName: 'GCSE_Middle_East_KT3_Mastery_Exam_Pack.pdf' },
+      ],
+    },
+    courseInfographics: [
+      {
+        slug: 'cme_kt1_1_visual_story_sheet',
+        label: 'KT 1.1: End of Mandate & Birth of Israel (1945–48)',
+        desc: '1-page visual story with studio audio: Survivors, Irgun, King David Hotel & UN 55%/45% split.',
+        thumbUrl: '/images/cme_plate_king_david_etzel_1946.jpg',
+      },
+      {
+        slug: 'cme_kt1_3_visual_story_sheet',
+        label: 'KT 1.3: Nasser & The Suez Crisis (1955–58)',
+        desc: '1-page visual story with studio audio: Gaza Raid, Czech Arms, Suez Canal & US ultimatum.',
+        thumbUrl: '/images/cme_port_said_british_troops_1956.jpg',
+      },
+      {
+        slug: 'cme_kt2_2_visual_story_sheet',
+        label: 'KT 2.2: The Six-Day War (May–June 1967)',
+        desc: '1-page visual story with studio audio: Tiran blockade, Operation Focus & 3-front victory.',
+        thumbUrl: '/images/cme_six_day_war_airfield_1967.jpg',
+      },
+      {
+        slug: 'cme_kt3_3_visual_story_sheet',
+        label: 'KT 3.3: Madrid, Oslo & Rabin’s Murder (1991–95)',
+        desc: '1-page visual story with studio audio: Secret Oslo channel, handshake, Areas A–C & 1995.',
+        thumbUrl: '/images/cme_oslo_handshake_1993.jpg',
+      },
+    ],
+  },
+
+  weimar_nazi_germany: {
+    unitTitle: 'Weimar and Nazi Germany, 1918–1939',
+    specSubtitle: 'Pearson Edexcel GCSE Paper 3 • Option 31 (1HI0/31)',
+    stage: 'gcse',
+    keyTopics: [
+      { id: 'KT1', shortLabel: 'KT 1', label: 'Weimar Republic (1918–29)' },
+      { id: 'KT2', shortLabel: 'KT 2', label: 'Hitler’s Rise to Power (1919–33)' },
+      { id: 'KT3', shortLabel: 'KT 3', label: 'Nazi Control & Dictatorship (1933–39)' },
+      { id: 'KT4', shortLabel: 'KT 4', label: 'Life in Nazi Germany (1933–39)' },
+    ],
+    textbook: {
+      title: 'Weimar & Nazi Germany Classroom Textbooks (KT1–KT4)',
+      label: 'Classroom Textbook',
+      pages: '12 Pages / KT',
+      desc: 'Slim pure-narrative classroom reading booklets for Key Topics 1, 2, 3, and 4.',
+      htmlUrl: '/units/weimar_nazi_germany/textbook_KT1_PUBLISHER.html',
+      pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT1.pdf',
+      downloadName: 'GCSE_Weimar_Germany_KT1_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: The Weimar Republic (12p)', pages: '12 Pages', htmlUrl: '/units/weimar_nazi_germany/textbook_KT1_PUBLISHER.html', pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT1.pdf', downloadName: 'GCSE_Weimar_Germany_KT1_Classroom_Textbook.pdf' },
+        { id: 'KT2', label: 'KT2: Hitler’s Rise to Power (12p)', pages: '12 Pages', htmlUrl: '/units/weimar_nazi_germany/textbook_KT2_PUBLISHER.html', pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT2.pdf', downloadName: 'GCSE_Weimar_Germany_KT2_Classroom_Textbook.pdf' },
+        { id: 'KT3', label: 'KT3: Nazi Control & Dictatorship (12p)', pages: '12 Pages', htmlUrl: '/units/weimar_nazi_germany/textbook_KT3_PUBLISHER.html', pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT3.pdf', downloadName: 'GCSE_Weimar_Germany_KT3_Classroom_Textbook.pdf' },
+        { id: 'KT4', label: 'KT4: Life in Nazi Germany (12p)', pages: '12 Pages', htmlUrl: '/units/weimar_nazi_germany/textbook_KT4_PUBLISHER.html', pdfUrl: '/pdfs/weimar_nazi_germany_textbook_KT4.pdf', downloadName: 'GCSE_Weimar_Germany_KT4_Classroom_Textbook.pdf' },
+      ],
+    },
+    workbook: {
+      title: 'Weimar & Nazi Germany Pupil Workbooks (KT1–KT4)',
+      label: 'Pupil Workbook',
+      pages: '20 Pages / KT',
+      desc: 'Double-page enquiry spreads, source utility grids, and Paper 3 interpretation drills.',
+      htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html',
+      pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf',
+      downloadName: 'GCSE_Weimar_Germany_KT1_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: The Weimar Republic (20p)', pages: '20 Pages', htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT1.html', pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT1.pdf', downloadName: 'GCSE_Weimar_Germany_KT1_Pupil_Workbook.pdf' },
+        { id: 'KT2', label: 'KT2: Hitler’s Rise to Power (20p)', pages: '20 Pages', htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT2.html', pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT2.pdf', downloadName: 'GCSE_Weimar_Germany_KT2_Pupil_Workbook.pdf' },
+        { id: 'KT3', label: 'KT3: Nazi Control & Dictatorship (20p)', pages: '20 Pages', htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT3.html', pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT3.pdf', downloadName: 'GCSE_Weimar_Germany_KT3_Pupil_Workbook.pdf' },
+        { id: 'KT4', label: 'KT4: Life in Nazi Germany (20p)', pages: '20 Pages', htmlUrl: '/units/weimar_nazi_germany/pupil_workbook_KT4.html', pdfUrl: '/pdfs/weimar_nazi_germany_pupil_workbook_KT4.pdf', downloadName: 'GCSE_Weimar_Germany_KT4_Pupil_Workbook.pdf' },
+      ],
+    },
+    retrieval: {
+      title: 'Weimar & Nazi Germany Retrieval Companion (128 Questions)',
+      label: 'Retrieval Companion',
+      pages: '28 Pages',
+      questionsCount: 128,
+      desc: 'All 128 short-answer recall questions across KT1–KT4 with 1918–39 flowchart and rear Marking Bank.',
+      htmlUrl: '/units/weimar_nazi_germany/weimar_master_retrieval_companion.html',
+      pdfUrl: null,
+      downloadName: 'GCSE_Weimar_Germany_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    masteryExamPack: {
+      title: 'Weimar & Nazi Germany Mastery Exam Packs (KT1–KT4)',
+      label: 'Mastery Exam Pack',
+      pages: '19–21 Pages / KT',
+      desc: 'Paper 3 source inference, 12-mark causation, and Q3a–d historical interpretation practice booklets.',
+      htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT1.html',
+      pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf',
+      editions: [
+        { id: 'KT1', label: 'KT1 Mastery Exam Pack', pages: '20 Pages', htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT1.html', pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT1.pdf', downloadName: 'GCSE_Weimar_Germany_KT1_Mastery_Exam_Pack.pdf' },
+        { id: 'KT2', label: 'KT2 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT2.html', pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT2.pdf', downloadName: 'GCSE_Weimar_Germany_KT2_Mastery_Exam_Pack.pdf' },
+        { id: 'KT3', label: 'KT3 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT3.html', pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT3.pdf', downloadName: 'GCSE_Weimar_Germany_KT3_Mastery_Exam_Pack.pdf' },
+        { id: 'KT4', label: 'KT4 Mastery Exam Pack', pages: '21 Pages', htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT4.html', pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT4.pdf', downloadName: 'GCSE_Weimar_Germany_KT4_Mastery_Exam_Pack.pdf' },
+      ],
+    },
+    courseInfographics: [
+      {
+        slug: 'weimar_l02_visual_story_sheet',
+        label: 'KT 1.2: Versailles, Coups & 1923 Hyperinflation',
+        desc: '1-page visual story with studio audio: Spartacists, Versailles Diktat, Kapp Putsch & Ruhr hyperinflation.',
+        thumbUrl: '/images/weimar_versailles_losses_1919_map_auth.png',
+      },
+      {
+        slug: 'weimar_l08_visual_story_sheet',
+        label: 'KT 2.4: How Hitler Became Chancellor (1932–33)',
+        desc: '1-page visual story with studio audio: Papen vs Schleicher, secret Cologne deal & 30 Jan 1933.',
+        thumbUrl: '/images/weimar_torchlight_parade_30jan1933.jpg',
+      },
+      {
+        slug: 'weimar_l09_visual_story_sheet',
+        label: 'KT 3.1: Creation of the Dictatorship (1933–34)',
+        desc: '1-page visual story with studio audio: Reichstag Fire, Enabling Act, Night of the Long Knives & Führer oath.',
+        thumbUrl: '/images/kroll_opera_enabling_act_1933.jpg',
+      },
+      {
+        slug: 'weimar_l16_visual_story_sheet',
+        label: 'KT 4.4: Persecution of Minorities (1933–39)',
+        desc: '1-page visual story with studio audio: 1933 boycott, Nuremberg Laws, Kristallnacht & 1bn mark fine.',
+        thumbUrl: '/images/kristallnacht_berlin_aftermath_1938.jpg',
+      },
+    ],
+  },
+
+  usa: {
+    unitTitle: 'The USA, 1954–75: Conflict at Home and Abroad',
+    specSubtitle: 'Pearson Edexcel GCSE Paper 3 • Option 33 (1HI0/33)',
+    stage: 'gcse',
+    keyTopics: [
+      { id: 'KT1', shortLabel: 'KT 1', label: 'Civil Rights Movement (1954–60)' },
+      { id: 'KT2', shortLabel: 'KT 2', label: 'Protest, Progress & Radicalism (1960–75)' },
+      { id: 'KT3', shortLabel: 'KT 3', label: 'US Involvement in Vietnam (1954–75)' },
+      { id: 'KT4', shortLabel: 'KT 4', label: 'Reactions & End of Vietnam War (1964–75)' },
+    ],
+    textbook: {
+      title: 'USA 1954–1975 Classroom Textbooks (KT1–KT4)',
+      label: 'Classroom Textbook',
+      pages: '12 Pages / KT',
+      desc: 'Slim pure-narrative classroom reading booklets for Civil Rights (KT1–KT2) and Vietnam (KT3–KT4).',
+      htmlUrl: '/units/usa/textbook_KT1_PUBLISHER.html',
+      pdfUrl: '/pdfs/usa_textbook_KT1.pdf',
+      downloadName: 'GCSE_USA_1954_75_KT1_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: Development of Civil Rights, 1954–60 (12p)', pages: '12 Pages', htmlUrl: '/units/usa/textbook_KT1_PUBLISHER.html', pdfUrl: '/pdfs/usa_textbook_KT1.pdf', downloadName: 'GCSE_USA_1954_75_KT1_Classroom_Textbook.pdf' },
+        { id: 'KT2', label: 'KT2: Protest, Progress & Radicalism, 1960–75 (12p)', pages: '12 Pages', htmlUrl: '/units/usa/textbook_KT2_PUBLISHER.html', pdfUrl: '/pdfs/usa_textbook_KT2.pdf', downloadName: 'GCSE_USA_1954_75_KT2_Classroom_Textbook.pdf' },
+        { id: 'KT3', label: 'KT3: US Involvement in Vietnam, 1954–75 (12p)', pages: '12 Pages', htmlUrl: '/units/usa/textbook_KT3_PUBLISHER.html', pdfUrl: '/pdfs/usa_textbook_KT3.pdf', downloadName: 'GCSE_USA_1954_75_KT3_Classroom_Textbook.pdf' },
+        { id: 'KT4', label: 'KT4: Reactions & US Withdrawal, 1964–75 (12p)', pages: '12 Pages', htmlUrl: '/units/usa/textbook_KT4_PUBLISHER.html', pdfUrl: '/pdfs/usa_textbook_KT4.pdf', downloadName: 'GCSE_USA_1954_75_KT4_Classroom_Textbook.pdf' },
+      ],
+    },
+    workbook: {
+      title: 'USA 1954–1975 Pupil Workbooks (KT1–KT4)',
+      label: 'Pupil Workbook',
+      pages: '20 Pages / KT',
+      desc: 'Double-page enquiry spreads, source utility grids, and Paper 3 interpretation drills aligned to KT1–KT4.',
+      htmlUrl: '/units/usa/pupil_workbook_KT1.html',
+      pdfUrl: '/pdfs/usa_pupil_workbook_KT1.pdf',
+      downloadName: 'GCSE_USA_1954_75_KT1_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+      editions: [
+        { id: 'KT1', label: 'KT1: Development of Civil Rights, 1954–60 (20p)', pages: '20 Pages', htmlUrl: '/units/usa/pupil_workbook_KT1.html', pdfUrl: '/pdfs/usa_pupil_workbook_KT1.pdf', downloadName: 'GCSE_USA_1954_75_KT1_Pupil_Workbook.pdf' },
+        { id: 'KT2', label: 'KT2: Protest, Progress & Radicalism, 1960–75 (20p)', pages: '20 Pages', htmlUrl: '/units/usa/pupil_workbook_KT2.html', pdfUrl: '/pdfs/usa_pupil_workbook_KT2.pdf', downloadName: 'GCSE_USA_1954_75_KT2_Pupil_Workbook.pdf' },
+        { id: 'KT3', label: 'KT3: US Involvement in Vietnam, 1954–75 (20p)', pages: '20 Pages', htmlUrl: '/units/usa/pupil_workbook_KT3.html', pdfUrl: '/pdfs/usa_pupil_workbook_KT3.pdf', downloadName: 'GCSE_USA_1954_75_KT3_Pupil_Workbook.pdf' },
+        { id: 'KT4', label: 'KT4: Reactions & US Withdrawal, 1964–75 (20p)', pages: '20 Pages', htmlUrl: '/units/usa/pupil_workbook_KT4.html', pdfUrl: '/pdfs/usa_pupil_workbook_KT4.pdf', downloadName: 'GCSE_USA_1954_75_KT4_Pupil_Workbook.pdf' },
+      ],
+    },
+    retrieval: {
+      title: 'USA 1954–1975 Retrieval Companion (128 Questions)',
+      label: 'Retrieval Companion',
+      pages: '24 Pages',
+      questionsCount: 128,
+      desc: 'Short-answer recall questions across all 16 Civil Rights & Vietnam enquiries with rear Marking Bank.',
+      htmlUrl: '/units/usa/usa_master_retrieval_companion.html',
+      pdfUrl: '/pdfs/usa_retrieval_companion.pdf',
+      downloadName: 'GCSE_USA_1954_75_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    masteryExamPack: {
+      title: 'USA 1954–1975 Mastery Exam Packs',
+      label: 'Mastery Exam Pack',
+      pages: '14–48 Pages',
+      desc: 'Paper 3 exam simulations, source utility scaffolds, and Q3a–d interpretation practice.',
+      htmlUrl: '/units/usa/mastery_pack_full.html',
+      pdfUrl: '/pdfs/usa_mastery_pack_FULL.pdf',
+      editions: [
+        { id: 'FULL', label: 'Complete Course Mastery Exam Pack (48p)', pages: '48 Pages', htmlUrl: '/units/usa/mastery_pack_full.html', pdfUrl: '/pdfs/usa_mastery_pack_FULL.pdf', downloadName: 'GCSE_USA_1954_75_Complete_Mastery_Exam_Pack.pdf' },
+        { id: 'KT1', label: 'KT1 Mastery Exam Pack (14p)', pages: '14 Pages', htmlUrl: '/units/usa/mastery_pack_KT1.html', pdfUrl: '/pdfs/usa_mastery_pack_KT1.pdf', downloadName: 'GCSE_USA_1954_75_KT1_Mastery_Exam_Pack.pdf' },
+        { id: 'KT2', label: 'KT2 Mastery Exam Pack (15p)', pages: '15 Pages', htmlUrl: '/units/usa/mastery_pack_KT2.html', pdfUrl: '/pdfs/usa_mastery_pack_KT2.pdf', downloadName: 'GCSE_USA_1954_75_KT2_Mastery_Exam_Pack.pdf' },
+        { id: 'KT3', label: 'KT3 Mastery Exam Pack (15p)', pages: '15 Pages', htmlUrl: '/units/usa/mastery_pack_KT3.html', pdfUrl: '/pdfs/usa_mastery_pack_KT3.pdf', downloadName: 'GCSE_USA_1954_75_KT3_Mastery_Exam_Pack.pdf' },
+        { id: 'KT4', label: 'KT4 Mastery Exam Pack (15p)', pages: '15 Pages', htmlUrl: '/units/usa/mastery_pack_KT4.html', pdfUrl: '/pdfs/usa_mastery_pack_KT4.pdf', downloadName: 'GCSE_USA_1954_75_KT4_Mastery_Exam_Pack.pdf' },
+      ],
+    },
+    courseInfographics: [
+      {
+        slug: 'usa_l02_visual_story_sheet',
+        label: 'KT 1.2: Brown v. Board & Little Rock Nine (1954–59)',
+        desc: '1-page visual story with studio audio: Unanimous 1954 verdict, Massive Resistance & 101st Airborne.',
+        thumbUrl: '/units/usa/assets/sources/little-rock-nine-1957.jpg',
+      },
+      {
+        slug: 'usa_l06_visual_story_sheet',
+        label: 'KT 2.2: Birmingham, Selma & 1964–65 Acts',
+        desc: '1-page visual story with studio audio: Children’s Crusade, March on Washington, Bloody Sunday & Voting Rights.',
+        thumbUrl: '/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg',
+      },
+      {
+        slug: 'usa_l10_visual_story_sheet',
+        label: 'KT 3.2: Gulf of Tonkin & US Escalation (1963–65)',
+        desc: '1-page visual story with studio audio: August 1964 incident, Rolling Thunder & US Marines at Da Nang.',
+        thumbUrl: '/units/usa/assets/sources/b52_rolling_thunder_vietnam.jpg',
+      },
+      {
+        slug: 'usa_l16_visual_story_sheet',
+        label: 'KT 4.4: Fall of Saigon & Why the US Failed (1954–75)',
+        desc: '1-page visual story with studio audio: 1975 Spring Offensive, Frequent Wind airlift & 4 core failure factors.',
+        thumbUrl: '/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg',
+      },
+    ],
+  },
+};
+
+// Build fast HTML -> PDF lookup index across all units, editions, mark schemes, and worksheets
+const HTML_TO_PDF_MAP = new Map();
+for (const cfg of Object.values(UNIT_RESOURCES_CATALOG)) {
+  const buckets = [cfg.textbook, cfg.workbook, cfg.retrieval, cfg.revisionGuide, cfg.masteryExamPack, cfg.schemeOfWork];
+  for (const b of buckets) {
+    if (!b) continue;
+    if (b.htmlUrl && b.pdfUrl) HTML_TO_PDF_MAP.set(b.htmlUrl, b.pdfUrl);
+    if (b.markSchemeHtmlUrl && b.markSchemePdfUrl) HTML_TO_PDF_MAP.set(b.markSchemeHtmlUrl, b.markSchemePdfUrl);
+    if (Array.isArray(b.editions)) {
+      for (const ed of b.editions) {
+        if (ed.htmlUrl && ed.pdfUrl) HTML_TO_PDF_MAP.set(ed.htmlUrl, ed.pdfUrl);
+        if (ed.msHtmlUrl && ed.msPdfUrl) HTML_TO_PDF_MAP.set(ed.msHtmlUrl, ed.msPdfUrl);
+      }
+    }
+  }
+  if (Array.isArray(cfg.worksheets)) {
+    for (const ws of cfg.worksheets) {
+      if (ws.htmlUrl && ws.pdfUrl) HTML_TO_PDF_MAP.set(ws.htmlUrl, ws.pdfUrl);
+    }
+  }
+}
+
+/**
+ * Resolves the canonical PDF URL for any HTML booklet URL using the Single Source of Truth catalog.
+ */
+export function resolveCanonicalPdfUrl(url, explicitPdfUrl = null) {
+  if (explicitPdfUrl && explicitPdfUrl !== '#' && explicitPdfUrl !== 'undefined' && !explicitPdfUrl.endsWith('.html')) {
+    return explicitPdfUrl;
+  }
+  if (!url) return null;
+  const clean = String(url).split('?')[0].split('#')[0];
+  if (clean.endsWith('.pdf')) return clean;
+  if (HTML_TO_PDF_MAP.has(clean)) return HTML_TO_PDF_MAP.get(clean);
+
+  // Fallback for mock exams & unit booklets (/units/<uId>/<file>.html)
+  const unitMatch = clean.match(/^\/units\/([^/]+)\/(.+)\.html$/);
+  if (unitMatch) {
+    const [, u, file] = unitMatch;
+    if (file.startsWith('worksheets/')) {
+      return `/pdfs/${u}/${file.split('/').pop()}.pdf`;
+    }
+    if (file.includes('mock') || file.includes('notebook')) {
+      return `/pdfs/mocks/${u}/${file}.pdf`;
+    }
+    if (file.includes('retrieval') || file.includes('companion') || file === 'quiz_pack') {
+      return `/pdfs/${u}_retrieval_companion.pdf`;
+    }
+    if (file.includes('pupil_workbook')) {
+      return `/pdfs/${u}_${file}.pdf`;
+    }
+    if (file.includes('textbook')) {
+      const cleanTb = file.replace(/_PUBLISHER$/, '');
+      return `/pdfs/${u}_${cleanTb}.pdf`;
+    }
+  }
+  return null;
+}
+
+export function getUnitCatalogEntry(unitId) {
+  if (!unitId) return null;
+  if (unitId === 'gcse_middle_east_1945_1995') return UNIT_RESOURCES_CATALOG.cme_new;
+  return UNIT_RESOURCES_CATALOG[unitId] || null;
+}

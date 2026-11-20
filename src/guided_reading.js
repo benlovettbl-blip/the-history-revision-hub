@@ -624,25 +624,25 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   let bookletLabel = 'Pupil Workbook';
   let isBookletPdf = false;
 
-  if (unitId === 'great_war' || unitId === 'great_war_part2') {
-    bookletUrl = '/pdfs/The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf';
-    bookletLabel = 'Pupil Booklet (PDF)';
+  if (unitId === 'great_war') {
+    bookletUrl = '/pdfs/great_war_retrieval_companion.pdf';
+    bookletLabel = 'Retrieval Companion (PDF)';
     isBookletPdf = true;
-  } else if (unitId === 'ks2_ww2') {
+  } else if (unitId === 'great_war_part2') {
+    bookletUrl = '/pdfs/great_war_part2_retrieval_companion.pdf';
+    bookletLabel = 'Retrieval Companion (PDF)';
+    isBookletPdf = true;
+  } else if (unitId === 'ks2_ww2' || unitId.startsWith('ks2')) {
     bookletUrl = '/pdfs/ks2_ww2_pupil_workbook.pdf';
-    bookletLabel = 'Pupil Booklet (PDF)';
+    bookletLabel = 'Pupil Workbook (PDF)';
     isBookletPdf = true;
   } else if (unitId === 'industrialisation_and_empire') {
     bookletUrl = '/pdfs/industrialisation_and_empire_pupil_workbook.pdf';
-    bookletLabel = 'Pupil Booklet (PDF)';
+    bookletLabel = 'Pupil Workbook (PDF)';
     isBookletPdf = true;
   } else if (unitId === 'edexcel_medicine') {
     bookletUrl = '/pdfs/edexcel_medicine_pupil_workbook_western_front.pdf';
     bookletLabel = 'Western Front Workbook (PDF)';
-    isBookletPdf = true;
-  } else if (unitId === 'ks2_ww2' || unitId.startsWith('ks2')) {
-    bookletUrl = '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf';
-    bookletLabel = 'Pupil Workbook (PDF)';
     isBookletPdf = true;
   }
 
@@ -828,6 +828,14 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     const glossaryItems = extractGlossaryItems(rawExtract, readingData.vocabVault);
     const lexiconHtml = renderDisciplinaryLexiconHTML(glossaryItems);
 
+    const resolvedStudioReadingUrl =
+      readingData.studio_audio ||
+      (String(readingData.audio_file || '').startsWith('/audio/reading/')
+        ? readingData.audio_file
+        : '');
+    const resolvedStudioReadingLabel =
+      readingData.studio_voice_label || 'Studio Cast Narration';
+
     const isPrimary = readingData.is_primary === true;
     const sourceBadgeLabel = readingData.source_type_label || (
       isPrimary ? 'Eyewitness Primary Source' : 'Curated Literature & Scholarship'
@@ -948,9 +956,16 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
                     </button>
                   </div>
 
-                  <!-- Voice Gender Selector Pills -->
+                  <!-- Voice Selector Pills (Studio Cast + Browser UK Voices) -->
                   <div class="reading-voice-gender-group" style="display: inline-flex; background: rgba(0,0,0,0.3); border: 1px solid #334155; border-radius: 6px; padding: 3px; gap: 3px;">
-                    <button type="button" class="voice-gender-btn active-voice" data-gender="female" title="UK Female Voice (Sonia / Libby / Google UK)" style="padding: 4px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #ec4899; color: #ffffff; display: inline-flex; align-items: center; gap: 5px;">
+                    ${
+                      resolvedStudioReadingUrl
+                        ? `<button type="button" class="voice-gender-btn active-voice" data-gender="studio" title="${resolvedStudioReadingLabel}" style="padding: 4px 10px; font-size: 0.78rem; font-weight: 800; border-radius: 4px; border: none; cursor: pointer; background: #d97706; color: #ffffff; display: inline-flex; align-items: center; gap: 5px;">
+                            <i class="fa-solid fa-microphone-lines"></i> <span>Studio Cast</span>
+                          </button>`
+                        : ''
+                    }
+                    <button type="button" class="voice-gender-btn${resolvedStudioReadingUrl ? '' : ' active-voice'}" data-gender="female" title="UK Female Voice (Sonia / Libby / Google UK)" style="padding: 4px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: ${resolvedStudioReadingUrl ? 'transparent' : '#ec4899'}; color: ${resolvedStudioReadingUrl ? '#94a3b8' : '#ffffff'}; display: inline-flex; align-items: center; gap: 5px;">
                       <i class="fa-solid fa-venus"></i> <span>UK Female</span>
                     </button>
                     <button type="button" class="voice-gender-btn" data-gender="male" title="UK Male Voice (Ryan / Daniel / Google UK)" style="padding: 4px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: #94a3b8; display: inline-flex; align-items: center; gap: 5px;">
@@ -1155,16 +1170,19 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       };
     });
 
-    // Wire Voice Gender Selector
+    // Wire Voice Selector (Studio Cast default when available, plus UK Female/Male browser voices)
+    let useStudioVoiceMode = Boolean(resolvedStudioReadingUrl);
     const voiceBtns = target.querySelectorAll('.voice-gender-btn');
     const activeVoiceLabel = target.querySelector('#reading-voice-name-label');
     const updateVoiceButtonsUI = () => {
       const curGender = getVoiceGender();
       voiceBtns.forEach((btn) => {
         const g = btn.dataset.gender;
-        if (g === curGender) {
+        const isActive = useStudioVoiceMode ? g === 'studio' : g === curGender;
+        if (isActive) {
           btn.classList.add('active-voice');
-          btn.style.background = g === 'female' ? '#ec4899' : '#0ea5e9';
+          btn.style.background =
+            g === 'studio' ? '#d97706' : g === 'female' ? '#ec4899' : '#0ea5e9';
           btn.style.color = '#ffffff';
         } else {
           btn.classList.remove('active-voice');
@@ -1173,8 +1191,12 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
         }
       });
       if (activeVoiceLabel) {
-        const details = getActiveVoiceDetails();
-        activeVoiceLabel.textContent = details.friendlyName;
+        if (useStudioVoiceMode) {
+          activeVoiceLabel.textContent = resolvedStudioReadingLabel;
+        } else {
+          const details = getActiveVoiceDetails();
+          activeVoiceLabel.textContent = details.friendlyName;
+        }
       }
     };
     updateVoiceButtonsUI();
@@ -1182,7 +1204,13 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
     voiceBtns.forEach((btn) => {
       btn.onclick = () => {
         const g = btn.dataset.gender;
-        if (g === 'female' || g === 'male') {
+        if (g === 'studio' && resolvedStudioReadingUrl) {
+          if (!useStudioVoiceMode) cancelSpeech();
+          useStudioVoiceMode = true;
+          updateVoiceButtonsUI();
+        } else if (g === 'female' || g === 'male') {
+          if (useStudioVoiceMode) cancelSpeech();
+          useStudioVoiceMode = false;
           setVoiceGender(g);
           updateVoiceButtonsUI();
         }
@@ -1202,6 +1230,8 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
           stopBtn,
           statusEl: statusText,
           activeVoiceEl: activeVoiceLabel,
+          studioAudioUrl: useStudioVoiceMode ? resolvedStudioReadingUrl : '',
+          studioVoiceLabel: useStudioVoiceMode ? resolvedStudioReadingLabel : '',
         });
       };
     }

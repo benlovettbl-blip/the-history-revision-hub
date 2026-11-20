@@ -6828,45 +6828,75 @@ details.spotlight-drawer .drawer-caret {
 
 /* ==========================================================================
    REAL-TIME READ-ALOUD BOUNDARY HIGHLIGHTING (EAL & DYSLEXIC SUPPORT)
+   Zero-Reflow Paint-Only Geometry: strictly zero padding/margin/font-weight
+   mutations so text lines NEVER shift, jitter, or re-wrap during narration!
    ========================================================================== */
 .speech-word {
   display: inline;
+  padding: 0;
+  margin: 0;
   transition:
-    background-color 0.15s ease,
-    color 0.15s ease;
+    background-color 0.12s ease,
+    color 0.12s ease,
+    box-shadow 0.12s ease;
   border-radius: 2px;
 }
 
-/* Soft Sentence Grouping */
+/* Soft Continuous Sentence Grouping (box-shadow bridges inter-word spaces cleanly without reflow) */
 .speech-word.speaking-sentence-highlight {
-  background-color: rgba(254, 240, 138, 0.45);
+  background-color: rgba(254, 240, 138, 0.5);
+  box-shadow:
+    2.5px 0 0 rgba(254, 240, 138, 0.5),
+    -2px 0 0 rgba(254, 240, 138, 0.5);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
-/* Vibrant Word Focus */
+/* Vibrant Word Focus — Paint-only box-shadow halo (0.00px layout width change!) */
 .speech-word.speaking-word-highlight {
   background-color: #fde047 !important;
   color: #0f172a !important;
-  font-weight: 700;
+  font-weight: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
   border-radius: 3px;
-  padding: 1px 3px;
-  box-shadow: 0 1px 4px rgba(234, 179, 8, 0.45);
+  text-decoration: underline;
+  text-decoration-color: #ca8a04;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  box-shadow:
+    -2px 0 0 1px #fde047,
+    2px 0 0 1px #fde047,
+    0 1px 4px rgba(234, 179, 8, 0.45);
+  position: relative;
+  z-index: 1;
 }
 
-/* Dyslexia / SEN Mode Highlighting Overrides */
+/* Dyslexia / SEN Mode Highlighting Overrides (Zero-Reflow) */
 body.sen-mode .speech-word.speaking-sentence-highlight {
-  background-color: rgba(253, 230, 138, 0.7) !important;
+  background-color: rgba(253, 230, 138, 0.72) !important;
+  box-shadow:
+    2.5px 0 0 rgba(253, 230, 138, 0.72),
+    -2px 0 0 rgba(253, 230, 138, 0.72) !important;
   color: #000000 !important;
 }
 
 body.sen-mode .speech-word.speaking-word-highlight {
   background-color: #f59e0b !important;
   color: #ffffff !important;
-  font-weight: 800;
+  font-weight: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
   text-decoration: underline;
+  text-decoration-color: #ffffff;
   text-decoration-thickness: 2px;
-  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.4);
+  text-underline-offset: 2px;
+  box-shadow:
+    -2px 0 0 1px #f59e0b,
+    2px 0 0 1px #f59e0b,
+    0 2px 6px rgba(217, 119, 6, 0.45);
+  position: relative;
+  z-index: 1;
 }
 
 /* ==========================================================================

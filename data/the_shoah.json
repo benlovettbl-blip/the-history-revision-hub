@@ -1484,7 +1484,116 @@
           "prose_hash": "84f2126d85"
         }
       ],
-      "enquiry": "Who were the Jews of Europe before the Second World War?"
+      "enquiry": "Who were the Jews of Europe before the Second World War?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "the_shoah_l01_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 1",
+        "datesBadge": "1871 – 1933",
+        "topicLabel": "Enquiry 1: Pre-War Jewish Life & Racial Antisemitism",
+        "title": "Who Were the Jewish People of Europe Before the Second World War?",
+        "spokenTitle": "Who were the Jewish people of Europe before the Second World War?",
+        "thumbUrl": "/images/shoah_cover.jpg",
+        "provenanceNote": "USHMM, Yad Vashem, YIVO, Bundesarchiv & Jewish Museum of Greece (Zero AI Imagery)",
+        "bridges": [
+          "Eastern Heartland",
+          "Western Citizens",
+          "Southern Ports",
+          "Toxic New Hatred",
+          "World at Risk"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "9.5 Million European Lives",
+            "date": "c. 1933",
+            "img": "/images/jewish_population_1933_distribution.png",
+            "mode": "contain-light",
+            "stat": "Under 2% of Europe’s Total Population",
+            "html": "In 1933, around <strong>9.5 million Jewish people</strong> lived across Europe. Over 60% lived in <strong>Eastern Europe</strong>, especially Poland and the USSR, speaking <strong>Yiddish</strong>.",
+            "spoken": "Who were the Jewish people of Europe before the Second World War? <short pause> In 1933, around 9.5 million Jewish people lived across Europe. Over 60% lived in Eastern Europe , especially Poland and the USSR, speaking Yiddish .",
+            "paired_prose_hash": "145b6d4ae7",
+            "connective": "Who were the Jewish people of Europe before the Second World War?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Yiddishland’s Rich Culture",
+            "date": "1920s–1930s",
+            "img": "/images/warsaw_nalewki_street_bookstore_1930s.jpg",
+            "mode": "contain",
+            "stat": "Vilna: “Jerusalem of the North”",
+            "html": "Across Eastern Europe, Jews built a lively <strong>Yiddish culture</strong> in market <strong>shtetls</strong> and great cities like Warsaw and <strong>Vilna</strong>, filled with theatres, press, and schools.",
+            "spoken": "Vibrant Jewish culture flourished across towns and cities for centuries. <short pause> Across Eastern Europe, Jews built a lively Yiddish culture in market shtetls and great cities like Warsaw and Vilna , filled with theatres, press, and schools.",
+            "paired_prose_hash": "5f7ca03317",
+            "connective": "Vibrant Jewish culture flourished across towns and cities for centuries."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Proud Citizens in Germany",
+            "date": "1871–1933",
+            "img": "/images/german_jewish_soldiers_hanukkah_1916.jpg",
+            "mode": "landscape",
+            "stat": "100,000 German Jews Fought in WWI",
+            "html": "After winning equality in 1871, <strong>German Jews</strong> integrated deeply into science, arts, and civic life. Over <strong>100,000 served loyally</strong> as German soldiers in <strong>World War One</strong>.",
+            "spoken": "Further west in Germany, Jewish life looked very different. <short pause> After winning equality in 1871, German Jews integrated deeply into science, arts, and civic life. Over 100,000 served loyally as German soldiers in World War One .",
+            "paired_prose_hash": "07b75327fc",
+            "connective": "Further west in Germany, Jewish life looked very different."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Sephardic Life in Salonica",
+            "date": "c. 1910–1930s",
+            "img": "/images/thessaloniki_jewish_heritage.jpg",
+            "mode": "landscape",
+            "stat": "Over Half of Thessaloniki Was Jewish",
+            "html": "In Greece and the Balkans, <strong>Sephardic Jews</strong> spoke <strong>Ladino</strong> and kept Spanish roots. In the port of <strong>Thessaloniki</strong>, the whole harbour closed every Saturday for Sabbath.",
+            "spoken": "In southern Europe, Mediterranean Jewish communities kept unique traditions alive. <short pause> In Greece and the Balkans, Sephardic Jews spoke Ladino and kept Spanish roots. In the port of Thessaloniki , the whole harbour closed every Saturday for Sabbath.",
+            "paired_prose_hash": "8de6838b57",
+            "connective": "In southern Europe, Mediterranean Jewish communities kept unique traditions alive."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Rise of Racial Antisemitism",
+            "date": "Late 19th C.",
+            "img": "/images/wilhelm_marr_antisemitismus_1880.jpg",
+            "mode": "contain-light",
+            "stat": "False “Blood” Racism Adopted by Hitler",
+            "html": "Older Christian hatred targeted faith. Late-19th-century writers like <strong>Wilhelm Marr</strong> invented false <strong>racial antisemitism</strong>, which <strong>Adolf Hitler</strong> made central to Nazism.",
+            "spoken": "Yet in the late nineteenth century, prejudice took a deadly turn. <short pause> Older Christian hatred targeted faith. Late-19th-century writers like Wilhelm Marr invented false racial antisemitism , which Adolf Hitler made central to Nazism.",
+            "paired_prose_hash": "84f2126d85",
+            "connective": "Yet in the late nineteenth century, prejudice took a deadly turn."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "A Living World Under Threat",
+            "date": "By Jan 1933",
+            "img": "/images/shoah_cover.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "1,000 Years of Diverse European Heritage",
+            "html": "Before 1933, European Jews were <strong>9.5 million citizens</strong> across rich, varied cultures. Nazi <strong>racial hatred</strong> now threatened this thousand-year <strong>living civilisation</strong>.",
+            "spoken": "Before Nazi rule began, Jewish life enriched all Europe. <short pause> Before 1933, European Jews were 9.5 million citizens across rich, varied cultures. Nazi racial hatred now threatened this thousand-year living civilisation .",
+            "connective": "Before Nazi rule began, Jewish life enriched all Europe."
+          }
+        ],
+        "takeaway": "Before WWII, 9.5 million Jewish people lived richly varied lives across Europe—until Nazi racial antisemitism targeted them by ancestry rather than faith.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Before World War Two, 9.5 million Jewish people lived richly varied lives across Europe, until Nazi racial antisemitism targeted them by ancestry rather than faith.",
+        "vocab": [
+          [
+            "1. Shtetl",
+            "A small market town in Eastern Europe with a vibrant Yiddish community."
+          ],
+          [
+            "2. Assimilation",
+            "Integrating fully into the language, culture, and civic life of a country."
+          ],
+          [
+            "3. Racial Antisemitism",
+            "False Nazi belief that Jews were a dangerous biological race, not a faith."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2",
@@ -2839,7 +2948,117 @@
           "prose_hash": "11610941b1"
         }
       ],
-      "enquiry": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?"
+      "enquiry": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "the_shoah_l02_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 2",
+        "datesBadge": "1933 – 1939",
+        "topicLabel": "Enquiry 2: Stripping Rights & Kristallnacht (1933–1939)",
+        "title": "How Did the Nazis Strip German Jews of Their Rights Between 1933 and 1939?",
+        "spokenTitle": "How did the Nazis strip German Jews of their rights between 1933 and 1939?",
+        "thumbUrl": "/images/anti_jewish_boycott_1933.jpg",
+        "provenanceNote": "Bundesarchiv, USHMM, Yad Vashem & Archives Nationales France (Zero AI Imagery)",
+        "bridges": [
+          "Legal Exclusion",
+          "400 Anti-Jewish Laws",
+          "Nationwide Pogrom",
+          "Borders Slammed Shut",
+          "Trapped in Reich"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Shop Boycott & State Purge",
+            "date": "April 1933",
+            "img": "/images/anti_jewish_boycott_1933.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "1 April Boycott & 7 April Civil Service Law",
+            "html": "In April 1933, <strong>SA stormtroopers</strong> blocked Jewish shops with warning signs. Days later, a new Nazi law fired <strong>Jewish teachers, judges</strong>, and clerks from <strong>state jobs</strong>.",
+            "spoken": "How did the Nazis strip German Jews of their rights between 1933 and 1939? <short pause> In April 1933, SA stormtroopers blocked Jewish shops with warning signs. Days later, a new Nazi law fired Jewish teachers, judges , and clerks from state jobs .",
+            "paired_prose_hash": "9f915f8208",
+            "connective": "How did the Nazis strip German Jews of their rights between 1933 and 1939?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "The 1935 Nuremberg Laws",
+            "date": "Sept 1935",
+            "img": "/images/nuremberg_laws_text_page.jpg",
+            "mode": "contain-light",
+            "stat": "Citizenship Revoked by Grandparent Ancestry",
+            "html": "In September 1935, the <strong>Nuremberg Laws</strong> stripped German Jews of <strong>citizenship</strong> and banned intermarriage. State charts defined Jews by <strong>three or four grandparents</strong>.",
+            "spoken": "Two years later, Nazi persecution became national law. <short pause> In September 1935, the Nuremberg Laws stripped German Jews of citizenship and banned intermarriage. State charts defined Jews by three or four grandparents .",
+            "paired_prose_hash": "50a49a3904",
+            "connective": "Two years later, Nazi persecution became national law."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "400 Decrees & Social Death",
+            "date": "1935–1938",
+            "img": "/units/ks2_ww2/assets/anti_jewish_sign_germany_1935.jpg",
+            "mode": "contain",
+            "stat": "Forced “Aryanization” Sales of Businesses",
+            "html": "Over <strong>400 anti-Jewish decrees</strong> forced owners to sell shops cheaply under <strong>Aryanization</strong>. Banned from parks, schools, and cinemas, Jews faced cruel <strong>“social death”</strong>.",
+            "spoken": "Hundreds of decrees soon pushed families out of public life. <short pause> Over 400 anti-Jewish decrees forced owners to sell shops cheaply under Aryanization . Banned from parks, schools, and cinemas, Jews faced cruel “social death” .",
+            "paired_prose_hash": "c7608091b6",
+            "connective": "Hundreds of decrees soon pushed families out of public life."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Kristallnacht Pogrom Terror",
+            "date": "9–10 Nov 1938",
+            "img": "/images/boerneplatz_synagogue_burning_1938.png",
+            "mode": "landscape",
+            "stat": "1,400 Synagogues Burned & 30,000 Arrested",
+            "html": "During <strong>Kristallnacht</strong>, Nazi squads burned <strong>1,400 synagogues</strong>, smashed 7,500 shops, and murdered 91 Jews. The Gestapo sent <strong>30,000 Jewish men</strong> to concentration camps.",
+            "spoken": "In November 1938, legal persecution exploded into nationwide state violence. <short pause> During Kristallnacht , Nazi squads burned 1,400 synagogues , smashed 7,500 shops, and murdered 91 Jews. The Gestapo sent 30,000 Jewish men to concentration camps.",
+            "paired_prose_hash": "421027fb73",
+            "connective": "In November 1938, legal persecution exploded into nationwide state violence."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Closed Doors & Child Rescue",
+            "date": "1938–1939",
+            "img": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "32 Nations at Évian; 10,000 Children Saved",
+            "html": "At the 1938 <strong>Évian Conference</strong>, 32 nations refused to open borders to refugees. Britain’s <strong>Kindertransport</strong> rescued nearly <strong>10,000 unaccompanied children</strong> before war.",
+            "spoken": "Desperate families tried to flee, yet borders stayed shut. <short pause> At the 1938 Évian Conference , 32 nations refused to open borders to refugees. Britain’s Kindertransport rescued nearly 10,000 unaccompanied children before war.",
+            "paired_prose_hash": "11610941b1",
+            "connective": "Desperate families tried to flee, yet borders stayed shut."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Outcasts Trapped Before War",
+            "date": "By Sept 1939",
+            "img": "/images/kristallnacht_berlin_aftermath_1938.jpg",
+            "mode": "landscape",
+            "stat": "Stripped of Rights, Wealth & Safe Escape",
+            "html": "In six years, Nazi laws and <strong>pogrom terror</strong> turned German citizens into penniless outcasts. With <strong>foreign borders shut</strong>, hundreds of thousands remained <strong>trapped</strong>.",
+            "spoken": "By September 1939, survival inside Nazi Germany looked impossible. <short pause> In six years, Nazi laws and pogrom terror turned German citizens into penniless outcasts. With foreign borders shut , hundreds of thousands remained trapped .",
+            "connective": "By September 1939, survival inside Nazi Germany looked impossible."
+          }
+        ],
+        "takeaway": "Between 1933 and 1939, boycotts, the Nuremberg Laws, and Kristallnacht stripped German Jews of citizenship and safety while world borders stayed shut.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1933 and 1939, boycotts, the Nuremberg Laws, and Kristallnacht stripped German Jews of citizenship and safety while world borders stayed shut.",
+        "vocab": [
+          [
+            "1. Nuremberg Laws",
+            "1935 Nazi laws stripping Jews of citizenship and banning intermarriage."
+          ],
+          [
+            "2. Kristallnacht",
+            "Violent Nazi pogrom in November 1938 burning 1,400 synagogues across Germany."
+          ],
+          [
+            "3. Kindertransport",
+            "British rescue bringing nearly 10,000 unaccompanied Jewish children to safety."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3",
@@ -4186,7 +4405,115 @@
           "prose_hash": "d13d25038f"
         }
       ],
-      "enquiry": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?"
+      "enquiry": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "the_shoah_l03_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 3",
+        "datesBadge": "1939 – 1941",
+        "topicLabel": "Enquiry 3: WWII Outbreak & Ghettoisation (1939–1941)",
+        "title": "How Did the Outbreak of the Second World War Trap Polish Jews Inside Ghettos?",
+        "spokenTitle": "How did the outbreak of the Second World War trap Polish Jews inside ghettos?",
+        "thumbUrl": "/images/warsaw_ghetto_wall_1941.jpg",
+        "provenanceNote": "USHMM, Yad Vashem, Bundesarchiv & Ringelblum Jewish Historical Institute Warsaw (Zero AI Imagery)",
+        "bridges": [
+          "2 Million Under Rule",
+          "Sealed Brick Walls",
+          "Weaponised Hunger",
+          "Secret Buried Archive",
+          "Dignity Under Siege"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Poland Invaded: Schnellbrief",
+            "date": "Sept 1939",
+            "img": "/images/weimar_individuals/reinhard_heydrich.jpg",
+            "mode": "contain",
+            "stat": "2 Million Polish Jews Under Nazi Control",
+            "html": "Invading Poland in September 1939 put <strong>two million Jews</strong> under Nazi rule. SS chief <strong>Reinhard Heydrich’s</strong> secret <strong>Schnellbrief</strong> herded families near rail hubs.",
+            "spoken": "How did the outbreak of the Second World War trap Polish Jews inside ghettos? <short pause> Invading Poland in September 1939 put two million Jews under Nazi rule. SS chief Reinhard Heydrich’s secret Schnellbrief herded families near rail hubs.",
+            "paired_prose_hash": "d78d171801",
+            "connective": "How did the outbreak of the Second World War trap Polish Jews inside ghettos?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Armbands & Forced Labour",
+            "date": "Nov 1939–1940",
+            "img": "/images/jewish_population_europe_1933_map.jpg",
+            "mode": "contain-light",
+            "stat": "Mandatory Star Armband From Age Ten",
+            "html": "From November 1939, Polish Jews aged ten and up wore <strong>Star of David armbands</strong>. Nazis froze accounts, seized shops, and forced men into <strong>labour gangs</strong>.",
+            "spoken": "Occupation decrees immediately attacked Polish Jewish life and livelihoods. <short pause> From November 1939, Polish Jews aged ten and up wore Star of David armbands . Nazis froze accounts, seized shops, and forced men into labour gangs .",
+            "paired_prose_hash": "6a7bc1b5a2",
+            "connective": "Occupation decrees immediately attacked Polish Jewish life and livelihoods."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Sealing the Warsaw Ghetto",
+            "date": "Oct–Nov 1940",
+            "img": "/images/warsaw_ghetto_wall_1941.jpg",
+            "mode": "landscape",
+            "stat": "450,000 Trapped in 1.3 Square Miles",
+            "html": "In 1940, Nazis locked Polish Jews into sealed <strong>ghettos</strong> like Łódź and Warsaw. Behind a <strong>three-metre brick wall</strong>, 450,000 lived crammed <strong>seven to nine per room</strong>.",
+            "spoken": "In 1940, Nazi authorities sealed entire communities behind brick walls. <short pause> In 1940, Nazis locked Polish Jews into sealed ghettos like Łódź and Warsaw. Behind a three-metre brick wall , 450,000 lived crammed seven to nine per room .",
+            "paired_prose_hash": "c6b24b5808",
+            "connective": "In 1940, Nazi authorities sealed entire communities behind brick walls."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Starvation & Child Smugglers",
+            "date": "1940–1942",
+            "img": "/images/warsaw_ghetto_plan_1940_map.png",
+            "mode": "contain-light",
+            "stat": "180 Calories a Day; 80,000 Died in Warsaw",
+            "html": "Ghetto rations gave barely <strong>180 calories a day</strong>, killing 80,000 in Warsaw from hunger and typhus. Brave <strong>child smugglers</strong> slipped through wall gaps with <strong>vital food</strong>.",
+            "spoken": "Inside the sealed streets, Nazi officials used hunger as a weapon. <short pause> Ghetto rations gave barely 180 calories a day , killing 80,000 in Warsaw from hunger and typhus. Brave child smugglers slipped through wall gaps with vital food .",
+            "paired_prose_hash": "bb729bfb03",
+            "connective": "Inside the sealed streets, Nazi officials used hunger as a weapon."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Ringelblum’s Secret Milk Cans",
+            "date": "1940–1943",
+            "img": "/images/oneg_shabbat_milk_can_1942.jpg",
+            "mode": "contain-light",
+            "stat": "Oyneg Shabes Underground Ghetto Archive",
+            "html": "Families kept dignity through secret schools and soup kitchens. Historian <strong>Emanuel Ringelblum</strong> led <strong>Oyneg Shabes</strong>, burying diaries in <strong>milk cans</strong> so truth survived.",
+            "spoken": "Even behind ghetto walls, Jewish people protected their human dignity. <short pause> Families kept dignity through secret schools and soup kitchens. Historian Emanuel Ringelblum led Oyneg Shabes , burying diaries in milk cans so truth survived.",
+            "paired_prose_hash": "d13d25038f",
+            "connective": "Even behind ghetto walls, Jewish people protected their human dignity."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Truth Outliving Ghetto Terror",
+            "date": "1940–1943",
+            "img": "/images/yiddishland_lodz_students_prewar.jpg",
+            "mode": "landscape",
+            "stat": "Spiritual Defiance Against Dehumanisation",
+            "html": "Ghettos trapped millions along <strong>Polish rail hubs</strong> in deadly hunger. Yet <strong>secret schools</strong> and Ringelblum’s archive proved terror could never erase <strong>Jewish humanity</strong>.",
+            "spoken": "Ghetto walls trapped millions, yet never broke their spirit. <short pause> Ghettos trapped millions along Polish rail hubs in deadly hunger. Yet secret schools and Ringelblum’s archive proved terror could never erase Jewish humanity .",
+            "connective": "Ghetto walls trapped millions, yet never broke their spirit."
+          }
+        ],
+        "takeaway": "After invading Poland in 1939, the Nazis sealed millions into starving walled ghettos—yet child smugglers, secret schools, and buried archives preserved truth.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After invading Poland in 1939, the Nazis sealed millions into starving walled ghettos, yet child smugglers, secret schools, and buried archives preserved truth.",
+        "vocab": [
+          [
+            "1. Schnellbrief",
+            "Heydrich’s September 1939 order concentrating Polish Jews near railway hubs."
+          ],
+          [
+            "2. Ghetto",
+            "A walled, sealed city district where Nazis imprisoned Jewish families."
+          ],
+          [
+            "3. Oyneg Shabes",
+            "Secret Warsaw Ghetto archive led by Emanuel Ringelblum, buried in milk cans."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_4",
@@ -5552,7 +5879,115 @@
           "extract": "The perpetrators of Battalion 101 did not shoot because of peer pressure or administrative obedience. They shot because they believed it was right. For generations, German political culture had been saturated with a virulent, deeply rooted 'eliminationist antisemitism' that viewed Jewish people as demonic enemies of the German nation. Ordinary Germans killed Jewish men, women, and children willingly, enthusiastically, and without moral remorse because they genuinely believed that the extermination of the Jewish people was necessary for Germany's survival. Ideological conviction, not peer pressure, was the decisive driving force."
         }
       ],
-      "enquiry": "How and why did persecution turn into systematic mass murder (1941–1942)?"
+      "enquiry": "How and why did persecution turn into systematic mass murder (1941–1942)?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "the_shoah_l04_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 4",
+        "datesBadge": "1941 – 1942",
+        "topicLabel": "Enquiry 4: Barbarossa & The Holocaust by Bullets (1941–1942)",
+        "title": "How and Why Did Nazi Persecution Turn into Systematic Mass Murder in 1941?",
+        "spokenTitle": "How and why did Nazi persecution turn into systematic mass murder in 1941?",
+        "thumbUrl": "/images/chelmno_gas_van_site_1942.jpg",
+        "provenanceNote": "Bundesarchiv, NARA Nuremberg Exhibits, Vilna Gaon Museum & Chełmno Museum (Zero AI Imagery)",
+        "bridges": [
+          "Mobile Death Squads",
+          "33,771 Shot at Kyiv",
+          "Local Collaborators",
+          "Exhaust Gas Vans",
+          "Industrial Genocide"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Barbarossa: War of Extinction",
+            "date": "22 June 1941",
+            "img": "/images/kommissarbefehl_order_1941.jpg",
+            "mode": "contain-light",
+            "stat": "3 Million Axis Troops Invade the USSR",
+            "html": "In June 1941, Hitler launched <strong>Operation Barbarossa</strong> against the USSR as a racial war of destruction. His <strong>Commissar Order</strong> spread the false <strong>“Judeo-Bolshevism”</strong> lie.",
+            "spoken": "How and why did Nazi persecution turn into systematic mass murder in 1941? <short pause> In June 1941, Hitler launched Operation Barbarossa against the USSR as a racial war of destruction. His Commissar Order spread the false “Judeo-Bolshevism” lie.",
+            "paired_prose_hash": "e5bf9a7d28",
+            "connective": "How and why did Nazi persecution turn into systematic mass murder in 1941?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "SS Einsatzgruppen Squads",
+            "date": "Summer 1941",
+            "img": "/images/stahlecker_einsatzgruppe_a_report_map_1941.jpg",
+            "mode": "contain-light",
+            "stat": "1.5 Million Murdered in Mass Shootings",
+            "html": "Four mobile <strong>SS Einsatzgruppen</strong> squads and <strong>Order Police</strong> battalions followed German troops east. By August 1941, they murdered whole families in the <strong>“Holocaust by Bullets”</strong>.",
+            "spoken": "Behind the advancing army marched mobile killing squads. <short pause> Four mobile SS Einsatzgruppen squads and Order Police battalions followed German troops east. By August 1941, they murdered whole families in the “Holocaust by Bullets” .",
+            "paired_prose_hash": "0d9e74a450",
+            "connective": "Behind the advancing army marched mobile killing squads."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Massacre at Babyn Yar Ravine",
+            "date": "29–30 Sept 1941",
+            "img": "/images/holocaust_railway_deportation_europe_map.png",
+            "mode": "contain-light",
+            "stat": "33,771 Kyiv Jews Murdered in 36 Hours",
+            "html": "Outside Kyiv, <strong>Sonderkommando 4a</strong> and German police marched Jewish families to the <strong>Babyn Yar ravine</strong>. In 36 hours, they murdered <strong>33,771 civilians</strong> and logged the tally.",
+            "spoken": "Outside Kyiv in Ukraine, one ravine showed this terrible scale. <short pause> Outside Kyiv, Sonderkommando 4a and German police marched Jewish families to the Babyn Yar ravine . In 36 hours, they murdered 33,771 civilians and logged the tally.",
+            "paired_prose_hash": "8dd4cb2e54",
+            "connective": "Outside Kyiv in Ukraine, one ravine showed this terrible scale."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Baltic Pits & Collaboration",
+            "date": "Autumn 1941",
+            "img": "/images/ponary_forest_execution_pits_1941.png",
+            "mode": "contain",
+            "stat": "70,000 Murdered in Ponary Forest Near Vilna",
+            "html": "In the Baltic states, <strong>Einsatzgruppe A</strong> murdered 250,000 Jews, including 70,000 at <strong>Ponary Forest</strong>. Local <strong>Baltic auxiliary police</strong> helped guard and shoot their neighbours.",
+            "spoken": "Massacres also swept through the Baltic states with local help. <short pause> In the Baltic states, Einsatzgruppe A murdered 250,000 Jews, including 70,000 at Ponary Forest . Local Baltic auxiliary police helped guard and shoot their neighbours.",
+            "paired_prose_hash": "dcb4191ad6",
+            "connective": "Massacres also swept through the Baltic states with local help."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Shift to Chełmno Gas Vans",
+            "date": "Late 1941",
+            "img": "/images/chelmno_gas_van_site_1942.jpg",
+            "mode": "landscape",
+            "stat": "Exhaust Fumes Used to Protect Executioners",
+            "html": "Worried about shooter stress among his SS men, <strong>Heinrich Himmler</strong> sought impersonal killing. At <strong>Chełmno</strong> in Poland, victims were murdered inside sealed <strong>exhaust-gas vans</strong>.",
+            "spoken": "Soon, SS leaders sought a more industrial method of murder. <short pause> Worried about shooter stress among his SS men, Heinrich Himmler sought impersonal killing. At Chełmno in Poland, victims were murdered inside sealed exhaust-gas vans .",
+            "paired_prose_hash": "d037bd4b4a",
+            "connective": "Soon, SS leaders sought a more industrial method of murder."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Gateway to Death Camps",
+            "date": "Winter 1941–42",
+            "img": "/images/weimar_individuals/heinrich_himmler.jpg",
+            "mode": "contain",
+            "stat": "From Ravine Shootings to Poison Gas",
+            "html": "Barbarossa crossed the line into <strong>total genocide</strong>, murdering 1.5 million Soviet Jews by bullet and triggering the shift toward <strong>stationary poison-gas camps</strong>.",
+            "spoken": "Barbarossa marked the terrible turning point into total genocide. <short pause> Barbarossa crossed the line into total genocide , murdering 1.5 million Soviet Jews by bullet and triggering the shift toward stationary poison-gas camps .",
+            "connective": "Barbarossa marked the terrible turning point into total genocide."
+          }
+        ],
+        "takeaway": "Hitler’s 1941 invasion of the USSR unleashed the “Holocaust by Bullets”, murdering 1.5 million Soviet Jews and prompting Himmler’s shift to poison gas at Chełmno.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Hitler’s 1941 invasion of the USSR unleashed the “Holocaust by Bullets”, murdering 1.5 million Soviet Jews and prompting Himmler’s shift to poison gas at Chełmno.",
+        "vocab": [
+          [
+            "1. Einsatzgruppen",
+            "Mobile SS killing squads that murdered 1.5 million Jews across Eastern Europe."
+          ],
+          [
+            "2. Babyn Yar",
+            "Ravine near Kyiv where Nazi forces murdered 33,771 Jewish people in 36 hours."
+          ],
+          [
+            "3. Chełmno",
+            "First Nazi extermination site in Poland, using sealed carbon-monoxide vans."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_5",
@@ -6954,7 +7389,115 @@
           "prose_hash": "139c6679b9"
         }
       ],
-      "enquiry": "How did the \"Final Solution\" operate, and how did Jews resist?"
+      "enquiry": "How did the \"Final Solution\" operate, and how did Jews resist?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "the_shoah_l05_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 5",
+        "datesBadge": "1942 – 1944",
+        "topicLabel": "Enquiry 5: The “Final Solution” & Armed Resistance (1942–1944)",
+        "title": "How Did the Nazi Final Solution Operate, and How Did Jewish People Resist?",
+        "spokenTitle": "How did the Nazi Final Solution operate, and how did Jewish people resist?",
+        "thumbUrl": "/images/warsaw_ghetto_wall_1941.jpg",
+        "provenanceNote": "NARA, The National Archives UK (Bletchley Park), USHMM & Auschwitz-Birkenau Museum (Zero AI Imagery)",
+        "bridges": [
+          "Pure Death Camps",
+          "Selection & Zyklon B",
+          "27 Days of Defiance",
+          "Death Camp Revolts",
+          "Courage Amid Horror"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "The Wannsee Conference",
+            "date": "20 Jan 1942",
+            "img": "/images/wannsee_heydrich_endlosung_directive_1941.jpg",
+            "mode": "contain-light",
+            "stat": "15 Officials Target 11 Million European Jews",
+            "html": "In January 1942, <strong>15 senior officials</strong> met for 90 minutes at <strong>Wannsee</strong>. Heydrich and <strong>Adolf Eichmann</strong> coordinated ministries and railways to murder 11 million Jews.",
+            "spoken": "How did the Nazi Final Solution operate, and how did Jewish people resist? <short pause> In January 1942, 15 senior officials met for 90 minutes at Wannsee . Heydrich and Adolf Eichmann coordinated ministries and railways to murder 11 million Jews.",
+            "paired_prose_hash": "912af95d0d",
+            "connective": "How did the Nazi Final Solution operate, and how did Jewish people resist?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Operation Reinhard Camps",
+            "date": "1942–1943",
+            "img": "/images/hofle_telegram_intercept_1943.jpg",
+            "mode": "contain-light",
+            "stat": "1.7 Million Murdered at 3 Pure Death Sites",
+            "html": "Under <strong>Operation Reinhard</strong>, the SS built <strong>Bełżec, Sobibór, and Treblinka</strong> purely for murder. With zero labour selection, <strong>1.7 million victims</strong> were gassed within hours.",
+            "spoken": "Across occupied Poland, the SS built camps designed solely for murder. <short pause> Under Operation Reinhard , the SS built Bełżec, Sobibór, and Treblinka purely for murder. With zero labour selection, 1.7 million victims were gassed within hours.",
+            "paired_prose_hash": "56dff9951d",
+            "connective": "Across occupied Poland, the SS built camps designed solely for murder."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Auschwitz-Birkenau Complex",
+            "date": "1942–1944",
+            "img": "/images/extermination_camps_poland_map.png",
+            "mode": "contain-light",
+            "stat": "At Least 1.1 Million Murdered at Auschwitz",
+            "html": "<strong>Auschwitz-Birkenau</strong> combined slave labour with mass murder. SS doctors ran <strong>ramp selections</strong>, sending children and elders straight to <strong>Zyklon B</strong> gas chambers.",
+            "spoken": "The largest killing centre of all was Auschwitz-Birkenau in southern Poland. <short pause> Auschwitz-Birkenau combined slave labour with mass murder. SS doctors ran ramp selections , sending children and elders straight to Zyklon B gas chambers.",
+            "paired_prose_hash": "a98323e7e7",
+            "connective": "The largest killing centre of all was Auschwitz-Birkenau in southern Poland."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Warsaw Ghetto Uprising",
+            "date": "April–May 1943",
+            "img": "/images/warsaw_ghetto_wall_1941.jpg",
+            "mode": "landscape",
+            "stat": "27 Days Fighting German Tanks With Pistols",
+            "html": "Jewish people never went passively. Led by 24-year-old <strong>Mordechai Anielewicz</strong>, young <strong>ŻOB and ŻZW</strong> fighters ambushed SS troops in Warsaw, holding out for <strong>27 days</strong>.",
+            "spoken": "Despite Nazi terror, young Jewish fighters rose up in armed defiance. <short pause> Jewish people never went passively. Led by 24-year-old Mordechai Anielewicz , young ŻOB and ŻZW fighters ambushed SS troops in Warsaw, holding out for 27 days .",
+            "paired_prose_hash": "9fbaae93ab",
+            "connective": "Despite Nazi terror, young Jewish fighters rose up in armed defiance."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Revolts Inside Death Camps",
+            "date": "1943–1944",
+            "img": "/images/auschwitz_crematorium_iv_ruins_1944.jpg",
+            "mode": "contain",
+            "stat": "Treblinka, Sobibór & Crematorium IV Revolts",
+            "html": "Inmates staged armed breakouts of 300 prisoners each at <strong>Treblinka and Sobibór</strong>. At Auschwitz in 1944, <strong>Roza Robota’s</strong> smuggled gunpowder blew up <strong>Crematorium IV</strong>.",
+            "spoken": "Even inside the death camps, prisoners organised daring armed revolts. <short pause> Inmates staged armed breakouts of 300 prisoners each at Treblinka and Sobibór . At Auschwitz in 1944, Roza Robota’s smuggled gunpowder blew up Crematorium IV .",
+            "paired_prose_hash": "139c6679b9",
+            "connective": "Even inside the death camps, prisoners organised daring armed revolts."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Defiance Against Annihilation",
+            "date": "1942–1944",
+            "img": "/images/holocaust_railway_deportation_europe_map.png",
+            "mode": "contain-light",
+            "stat": "Every Act of Survival & Revolt Defied Hitler",
+            "html": "Nazi bureaucracy turned railways into <strong>industrial murder</strong>, yet brave fighters in <strong>Warsaw, Sobibór, and Auschwitz</strong> defended <strong>Jewish honour</strong> against all odds.",
+            "spoken": "Even amid industrial genocide, courageous Jewish resistance never ceased. <short pause> Nazi bureaucracy turned railways into industrial murder , yet brave fighters in Warsaw, Sobibór, and Auschwitz defended Jewish honour against all odds.",
+            "connective": "Even amid industrial genocide, courageous Jewish resistance never ceased."
+          }
+        ],
+        "takeaway": "After Wannsee in 1942, Nazi death camps murdered millions on an industrial scale—yet brave Jewish fighters resisted in Warsaw, Treblinka, Sobibór, and Auschwitz.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After Wannsee in 1942, Nazi death camps murdered millions on an industrial scale, yet brave Jewish fighters resisted in Warsaw, Treblinka, Sobibór, and Auschwitz.",
+        "vocab": [
+          [
+            "1. Wannsee Conference",
+            "January 1942 Berlin meeting coordinating Europe-wide deportations to murder."
+          ],
+          [
+            "2. Operation Reinhard",
+            "Secret Nazi plan creating Bełżec, Sobibór, and Treblinka pure death camps."
+          ],
+          [
+            "3. ŻOB",
+            "Jewish Combat Organisation led by Mordechai Anielewicz in the 1943 uprising."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_6",
@@ -8302,7 +8845,117 @@
           "prose_hash": "e811390209"
         }
       ],
-      "enquiry": "Who was responsible, who collaborated, and who tried to save?"
+      "enquiry": "Who was responsible, who collaborated, and who tried to save?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "the_shoah_l06_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 6",
+        "datesBadge": "1940 – 1945",
+        "topicLabel": "Enquiry 6: Complicity, Bystanders & Rescue Across Europe",
+        "title": "Who Was Responsible, Who Collaborated, and Who Risked Everything to Save Jewish Lives?",
+        "spokenTitle": "Who was responsible, who collaborated, and who risked everything to save Jewish lives?",
+        "thumbUrl": "/images/vel_d_hiv_pithiviers_camp_1942.jpg",
+        "provenanceNote": "Mémorial de la Shoah Paris, Bavarian State Archives, Nationalmuseet Denmark & USHMM (Zero AI Imagery)",
+        "bridges": [
+          "Foreign Police Help",
+          "Silent Indifference",
+          "Courageous Rescuers",
+          "Allied Priorities",
+          "Choices Under Terror"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Clerks & “Desk Murderers”",
+            "date": "1941–1945",
+            "img": "/images/weimar_individuals/joseph_goebbels.jpg",
+            "mode": "contain",
+            "stat": "Reichsbahn Billed Deportees Per Kilometre",
+            "html": "Historian <strong>Raul Hilberg</strong> showed genocide needed ordinary staff, not just SS guards. Lawyers wrote laws and <strong>Reichsbahn clerks</strong> billed <strong>death trains</strong> per kilometre.",
+            "spoken": "Who was responsible, who collaborated, and who risked everything to save Jewish lives? <short pause> Historian Raul Hilberg showed genocide needed ordinary staff, not just SS guards. Lawyers wrote laws and Reichsbahn clerks billed death trains per kilometre.",
+            "paired_prose_hash": "86d12330a2",
+            "connective": "Who was responsible, who collaborated, and who risked everything to save Jewish lives?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Collaboration Across Europe",
+            "date": "1942–1944",
+            "img": "/images/vel_d_hiv_pithiviers_camp_1942.jpg",
+            "mode": "landscape",
+            "pos": "center 65%",
+            "stat": "13,000 Arrested in Paris; 437,000 in Hungary",
+            "html": "Foreign states aided the SS. <strong>Vichy French police</strong> arrested 13,000 Jews in the 1942 <strong>Vél d’Hiv roundup</strong>, while Hungary helped deport <strong>437,000 Jews</strong> in 54 days.",
+            "spoken": "Across occupied Europe, Nazi killers relied heavily on local collaborators. <short pause> Foreign states aided the SS. Vichy French police arrested 13,000 Jews in the 1942 Vél d’Hiv roundup , while Hungary helped deport 437,000 Jews in 54 days.",
+            "paired_prose_hash": "c49ea6bdfd",
+            "connective": "Across occupied Europe, Nazi killers relied heavily on local collaborators."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Silent Bystanders & Profit",
+            "date": "1940–1945",
+            "img": "/images/victor_klemperer_dresden_1938.jpg",
+            "mode": "contain",
+            "stat": "Auctions of Stolen Homes & Furniture",
+            "html": "Most Europeans stood as silent <strong>bystanders</strong>. Terror silenced many, yet others bought <strong>stolen furniture</strong> at public auctions—proving <strong>indifference</strong> aided genocide.",
+            "spoken": "Meanwhile, ordinary neighbours faced stark moral choices every day. <short pause> Most Europeans stood as silent bystanders . Terror silenced many, yet others bought stolen furniture at public auctions, proving indifference aided genocide.",
+            "paired_prose_hash": "5749a73b5f",
+            "connective": "Meanwhile, ordinary neighbours faced stark moral choices every day."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Righteous Rescuers Defy Death",
+            "date": "1940–1945",
+            "img": "/images/danish_rescue_boat_1943.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "7,200 Danish Jews Ferried Safely to Sweden",
+            "html": "A brave minority chose rescue. In 1943, <strong>Danish citizens</strong> ferried <strong>7,200 Jews</strong> by boat to Sweden, while villagers in <strong>Le Chambon</strong> sheltered 3,500 refugees.",
+            "spoken": "Even under Nazi terror, courageous rescuers risked death to save lives. <short pause> A brave minority chose rescue. In 1943, Danish citizens ferried 7,200 Jews by boat to Sweden, while villagers in Le Chambon sheltered 3,500 refugees.",
+            "paired_prose_hash": "620bc42902",
+            "connective": "Even under Nazi terror, courageous rescuers risked death to save lives."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Jan Karski & Allied Response",
+            "date": "1942–1944",
+            "img": "/images/white_rose_leaflet_scholl_1943.jpg",
+            "mode": "contain-light",
+            "stat": "Dec 1942 Allied Warning, Zero Rail Bombings",
+            "html": "In 1942, Polish courier <strong>Jan Karski</strong> brought eyewitness proof of murder to London and Washington. Allies issued a <strong>public warning</strong>, but never bombed <strong>Auschwitz rail lines</strong>.",
+            "spoken": "Eyewitness warnings also reached Allied leaders in London and Washington. <short pause> In 1942, Polish courier Jan Karski brought eyewitness proof of murder to London and Washington. Allies issued a public warning , but never bombed Auschwitz rail lines .",
+            "paired_prose_hash": "e811390209",
+            "connective": "Eyewitness warnings also reached Allied leaders in London and Washington."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Moral Agency Under Terror",
+            "date": "1940–1945",
+            "img": "/images/sophie_scholl_gestapo.jpg",
+            "mode": "contain",
+            "stat": "Righteous Among the Nations Honoured Today",
+            "html": "Genocide relied on <strong>clerks, collaborators</strong>, and silent bystanders across Europe. Yet rescuers in <strong>Denmark and Le Chambon</strong>, and <strong>Sophie Scholl</strong>, proved courage lived.",
+            "spoken": "Across Europe, ordinary people faced stark moral choices under terror. <short pause> Genocide relied on clerks, collaborators , and silent bystanders across Europe. Yet rescuers in Denmark and Le Chambon , and Sophie Scholl , proved courage lived.",
+            "connective": "Across Europe, ordinary people faced stark moral choices under terror."
+          }
+        ],
+        "takeaway": "Desk clerks, European collaborators, and silent bystanders enabled the Shoah—yet rescuers in Denmark and Le Chambon risked everything to save thousands.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Desk clerks, European collaborators, and silent bystanders enabled the Shoah, yet rescuers in Denmark and Le Chambon risked everything to save thousands.",
+        "vocab": [
+          [
+            "1. Desk Murderers",
+            "Civil servants and railway clerks who organised genocide from offices."
+          ],
+          [
+            "2. Vél d’Hiv Roundup",
+            "July 1942 Paris raid where French police arrested 13,000 Jewish people."
+          ],
+          [
+            "3. Righteous Among Nations",
+            "Honour given to non-Jews who risked their lives to rescue Jews."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_7",
@@ -9659,7 +10312,117 @@
           "prose_hash": "2b6e05537b"
         }
       ],
-      "enquiry": "What was lost, and what does survivor testimony teach us?"
+      "enquiry": "What was lost, and what does survivor testimony teach us?",
+      "visual_story_sheet": {
+        "num": "07",
+        "slug": "the_shoah_l07_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 7",
+        "datesBadge": "1944 – 1948",
+        "topicLabel": "Enquiry 7: Liberation, Justice & Legacy of Memory (1944–1948)",
+        "title": "What Was Lost in the Shoah, and What Does Survivor Testimony Teach Us Today?",
+        "spokenTitle": "What was lost in the Shoah, and what does survivor testimony teach us today?",
+        "thumbUrl": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
+        "provenanceNote": "IWM London, Dachau Memorial, USHMM, NARA & Centro Primo Levi Turin (Zero AI Imagery)",
+        "bridges": [
+          "Camps Liberated",
+          "Homeless Survivors",
+          "Genocide Made Crime",
+          "6 Million Lives Lost",
+          "Duty of Memory"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Freezing Winter Death Marches",
+            "date": "Winter 1944–45",
+            "img": "/images/death_march_dachau_auschwitz_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 65%",
+            "stat": "Up to 250,000 Died in Final Forced Marches",
+            "html": "As Allied armies closed in, <strong>Heinrich Himmler</strong> evacuated eastern camps. SS guards forced starving prisoners onto sub-zero <strong>death marches</strong>, killing up to <strong>250,000</strong>.",
+            "spoken": "What was lost in the Shoah, and what does survivor testimony teach us today? <short pause> As Allied armies closed in, Heinrich Himmler evacuated eastern camps. SS guards forced starving prisoners onto sub-zero death marches , killing up to 250,000 .",
+            "paired_prose_hash": "ee395e15cd",
+            "connective": "What was lost in the Shoah, and what does survivor testimony teach us today?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Liberation of Bergen-Belsen",
+            "date": "Jan–April 1945",
+            "img": "/images/bergen_belsen_liberation_british_1945.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Auschwitz 27 Jan; Bergen-Belsen 15 April 1945",
+            "html": "Soviet troops liberated <strong>Auschwitz</strong> on 27 January 1945. In April, British soldiers and BBC reporter <strong>Richard Dimbleby</strong> found 60,000 starving inmates at <strong>Bergen-Belsen</strong>.",
+            "spoken": "In spring 1945, Allied troops uncovered the camps’ full horror. <short pause> Soviet troops liberated Auschwitz on the twenty-seventh of January 1945. In April, British soldiers and BBC reporter Richard Dimbleby found 60,000 starving inmates at Bergen-Belsen .",
+            "paired_prose_hash": "c95ad81673",
+            "connective": "In spring 1945, Allied troops uncovered the camps’ full horror."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "DP Camps, Exodus & Windermere",
+            "date": "1945–1948",
+            "img": "/images/exodus_1947_ship.jpg",
+            "mode": "landscape",
+            "stat": "250,000 in DP Camps; 300 Windermere Children",
+            "html": "Over 250,000 homeless survivors waited in <strong>DP camps</strong>. While <strong>SS Exodus 1947</strong> strengthened demand for Israel in 1948, 300 child orphans healed at <strong>Lake Windermere</strong>.",
+            "spoken": "For survivors, liberation brought freedom mixed with heart-breaking grief. <short pause> Over 250,000 homeless survivors waited in DP camps . While SS Exodus 1947 strengthened demand for Israel in 1948, 300 child orphans healed at Lake Windermere .",
+            "paired_prose_hash": "7e9e027537",
+            "connective": "For survivors, liberation brought freedom mixed with heart-breaking grief."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Nuremberg & Genocide Law",
+            "date": "1945–1948",
+            "img": "/images/weimar_individuals/hermann_goering.jpg",
+            "mode": "contain",
+            "stat": "1948 UN Genocide Convention Adopted",
+            "html": "At the <strong>1945 Nuremberg Trials</strong>, judges ruled obeying orders never excused war crimes. Lawyer <strong>Raphael Lemkin</strong> coined <strong>“genocide”</strong>, inspiring the 1948 UN Convention.",
+            "spoken": "Post-war trials and legal pioneers reshaped international justice forever. <short pause> At the 1945 Nuremberg Trials , judges ruled obeying orders never excused war crimes. Lawyer Raphael Lemkin coined “genocide” , inspiring the 1948 UN Convention.",
+            "paired_prose_hash": "f92fada510",
+            "connective": "Post-war trials and legal pioneers reshaped international justice forever."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Six Million Lost & Testimony",
+            "date": "Post-1945",
+            "img": "/images/primo_levi_testimony_1947.jpg",
+            "mode": "contain",
+            "stat": "6 Million Murdered, Including 1.5M Children",
+            "html": "The Shoah murdered <strong>six million Jews</strong>—including <strong>1.5 million children</strong>—and destroyed Yiddishland. Survivors like <strong>Primo Levi</strong> and Elie Wiesel preserved memory.",
+            "spoken": "Behind every statistic stood an irreplaceable human life and family. <short pause> The Shoah murdered six million Jews, including 1.5 million children, and destroyed Yiddishland. Survivors like Primo Levi and Elie Wiesel preserved memory.",
+            "paired_prose_hash": "2b6e05537b",
+            "connective": "Behind every statistic stood an irreplaceable human life and family."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Rebuilding Lives: Never Again",
+            "date": "1945 – Today",
+            "img": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
+            "mode": "landscape",
+            "stat": "Confronting Hatred Across Every Generation",
+            "html": "Survivors rebuilt new lives while showing where hatred leads. Honouring <strong>survivor testimony</strong> calls every generation to challenge <strong>antisemitism</strong> and defend <strong>human rights</strong>.",
+            "spoken": "From the ashes of loss, survivors rebuilt families, communities, and hope. <short pause> Survivors rebuilt new lives while showing where hatred leads. Honouring survivor testimony calls every generation to challenge antisemitism and defend human rights .",
+            "connective": "From the ashes of loss, survivors rebuilt families, communities, and hope."
+          }
+        ],
+        "takeaway": "Liberation revealed six million murdered Jews and a shattered civilisation—inspiring the UN Genocide Convention, survivor testimony, and the duty of “Never Again”.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Liberation revealed six million murdered Jews and a shattered civilisation, inspiring the UN Genocide Convention, survivor testimony, and the duty of “Never Again”.",
+        "vocab": [
+          [
+            "1. Death Marches",
+            "Forced freezing winter marches of starving prisoners in 1944–1945."
+          ],
+          [
+            "2. Nuremberg Trials",
+            "1945–1946 Allied court trying senior Nazi leaders for war crimes."
+          ],
+          [
+            "3. Genocide",
+            "Term coined by Raphael Lemkin for deliberate destruction of a people."
+          ]
+        ]
+      }
     }
   ],
   "keyStage": "KS3",

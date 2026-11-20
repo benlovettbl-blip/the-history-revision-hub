@@ -271,6 +271,7 @@ function syncUnitStageMirrors(unitId) {
         obj.lessons[idx].narrative_blocks = sl.narrative_blocks;
         if (sl.workbook_stages) obj.lessons[idx].workbook_stages = sl.workbook_stages;
         if (sl.causal_domino_spine) obj.lessons[idx].causal_domino_spine = sl.causal_domino_spine;
+        if (sl.visual_story_sheet) obj.lessons[idx].visual_story_sheet = sl.visual_story_sheet;
       }
     });
     const serializedJs = prefix + JSON.stringify(obj, null, 2) + suffix;
@@ -304,6 +305,9 @@ function updateDatabaseJsonFiles(targets) {
             if (sl.workbook_stages) dbUnit.lessons[idx].workbook_stages = sl.workbook_stages;
             if (sl.causal_domino_spine) {
               dbUnit.lessons[idx].causal_domino_spine = sl.causal_domino_spine;
+            }
+            if (sl.visual_story_sheet) {
+              dbUnit.lessons[idx].visual_story_sheet = sl.visual_story_sheet;
             }
           }
         });

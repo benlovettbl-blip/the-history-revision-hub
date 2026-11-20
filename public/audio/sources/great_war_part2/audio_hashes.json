@@ -1,0 +1,117 @@
+{
+  "unitId": "great_war_part2",
+  "clips": {
+    "lesson_2_trenches_haig_sE": {
+      "hash": "cd4acbaee5677de5f3ebef1234343a785b29b99ca3b0ff6cdb2501aed610d6a8",
+      "bytes": 183884,
+      "multiSpeaker": true,
+      "badge": "2-Voice Debate · Taylor vs Keegan",
+      "updatedAt": "2026-11-19T22:37:42.266Z"
+    },
+    "lesson_1_enlistment_sB": {
+      "hash": "fecd8c3e14bb99f2c31877a0c68f28e53577dd0a508bbb01d24e2c8f761fd483",
+      "bytes": 92780,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Lord Kitchener (Sept 1914)",
+      "updatedAt": "2026-11-19T22:41:11.905Z"
+    },
+    "lesson_2_trenches_haig_sB": {
+      "hash": "11b9f26b1a165ff8de8ee27370724df1a74978f8083263cadddfa72bd9a78cbd",
+      "bytes": 195212,
+      "voiceKey": "ww1_british_officer",
+      "badge": "RAMC Medical Report (1916)",
+      "updatedAt": "2026-11-19T22:41:12.369Z"
+    },
+    "lesson_2_trenches_haig_sC": {
+      "hash": "416e362ea8463807413e1f782dee0ba1e0da26a0887ceed2602d9794b0d5c476",
+      "bytes": 107372,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Fourth Army Somme Plan (June 1916)",
+      "updatedAt": "2026-11-19T22:41:12.707Z"
+    },
+    "lesson_1_enlistment_sC": {
+      "hash": "502bef71a3866e5c60eaf8fc5e65e3cb9c00efe634c3c784dd678f7462d02484",
+      "bytes": 92012,
+      "voiceKey": "male_historian",
+      "badge": "War Office Pals Directive (1914)",
+      "updatedAt": "2026-11-19T22:41:15.190Z"
+    },
+    "lesson_3_empire_troops_sE": {
+      "hash": "175fda33e4184da9760892464d7ad2c6d5263e2173bd3fadefd04807d0a8ac9f",
+      "bytes": 152492,
+      "voiceKey": "male_historian",
+      "badge": "Taranto Inquiry Report (Dec 1918)",
+      "updatedAt": "2026-11-19T22:41:15.592Z"
+    },
+    "lesson_4_home_front_dora_sA": {
+      "hash": "43bd0a16dfd5afb243c5dde7f806562082940a9c270e915aa8a9c3353a3e9a9e",
+      "bytes": 131372,
+      "voiceKey": "male_historian",
+      "badge": "DORA Section 1 (Aug 1914)",
+      "updatedAt": "2026-11-19T23:19:55.772Z"
+    },
+    "lesson_5_versailles_sB": {
+      "hash": "15ac80b01220d8e43f6e6082e70541c7770394fe164de44cf0e0887f725b22b3",
+      "bytes": 166028,
+      "voiceKey": "male_historian",
+      "badge": "Armistice Terms (11 Nov 1918)",
+      "updatedAt": "2026-11-19T23:20:01.531Z"
+    },
+    "lesson_5_versailles_sD": {
+      "hash": "eaf3b044ee91858572f36320286f45812a85fa4952cbb3fc6789b5cd1acaa0b5",
+      "bytes": 180428,
+      "voiceKey": "male_historian",
+      "badge": "Treaty of Versailles (Art. 231–232)",
+      "updatedAt": "2026-11-19T22:41:17.015Z"
+    },
+    "lesson_4_home_front_dora_sD": {
+      "hash": "6ee67abe7882d71473ec90c41f48b496f213bf3430d7a9a4c20edf99efb04594",
+      "bytes": 203852,
+      "multiSpeaker": true,
+      "badge": "2-Voice Tribunal Hearing (1916)",
+      "updatedAt": "2026-11-19T22:41:33.118Z"
+    },
+    "lesson_1_enlistment_sD": {
+      "hash": "51226967424ff1ed23a28d644d95b57b19db3c3b0d06327dafb8f78627db7b0b",
+      "bytes": 88940,
+      "voiceKey": "female_historian",
+      "badge": "Jessie Pope · Recruiting Verse (1915)",
+      "updatedAt": "2026-11-19T22:43:01.550Z"
+    },
+    "lesson_5_versailles_sA": {
+      "hash": "884a25f3c1cfebc9f419af829cca95f5aae9d9bb893885c576dcee85b1ee210a",
+      "bytes": 129548,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Gen. Erich Ludendorff (Aug 1918)",
+      "updatedAt": "2026-11-19T22:43:08.680Z"
+    },
+    "lesson_4_home_front_dora_sC": {
+      "hash": "a4e8704dd9196f68961c7d34a9375a018d0025762ba37f347560e145dad6b9ab",
+      "bytes": 176108,
+      "voiceKey": "ww1_british_woman",
+      "badge": "Lilian Miles · Munitionette (1917)",
+      "updatedAt": "2026-11-19T22:43:14.071Z"
+    },
+    "lesson_1_enlistment_sE": {
+      "hash": "f37d68e07a5be18cc356add96f86394fa844ffe21dd7f66b994a721bfc411c6d",
+      "bytes": 133388,
+      "voiceKey": "ww1_british_tommy",
+      "badge": "Pte. Arthur Savage · Eyewitness",
+      "updatedAt": "2026-11-19T22:44:43.787Z"
+    },
+    "lesson_2_trenches_haig_sD": {
+      "hash": "937d5a8bcd9e4632e1349d9e13354ce4944a275b094fab6877c60dd0bf44d211",
+      "bytes": 149708,
+      "voiceKey": "ww1_british_tommy",
+      "badge": "Pte. George Coppard (1 July 1916)",
+      "updatedAt": "2026-11-19T22:44:44.240Z"
+    },
+    "lesson_4_home_front_dora_sE": {
+      "hash": "96667e6b2ad3762e10a26a78577ded32e6402a03b562db1a902201122189452f",
+      "bytes": 127532,
+      "voiceKey": "ww1_british_tommy",
+      "badge": "Norman Gaudie · Richmond Cell (1916)",
+      "updatedAt": "2026-11-19T22:44:44.629Z"
+    }
+  }
+}

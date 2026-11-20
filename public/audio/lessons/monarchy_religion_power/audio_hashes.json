@@ -1,0 +1,156 @@
+{
+  "unitId": "monarchy_religion_power",
+  "voiceKey": "male_historian",
+  "blocks": {
+    "lesson_4_b1": {
+      "hash": "bae7332753faeab7",
+      "bytes": 155276,
+      "words": 86,
+      "updatedAt": "2026-11-19T18:17:29.069Z"
+    },
+    "lesson_4_b2": {
+      "hash": "7b615f63bed04d3b",
+      "bytes": 174572,
+      "words": 88,
+      "updatedAt": "2026-11-19T23:50:26.122Z"
+    },
+    "lesson_4_b3": {
+      "hash": "e98e62532c73665a",
+      "bytes": 149036,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:17:29.786Z"
+    },
+    "lesson_4_b4": {
+      "hash": "402045876c642ab7",
+      "bytes": 149132,
+      "words": 83,
+      "updatedAt": "2026-11-19T23:50:26.592Z"
+    },
+    "lesson_4_b5": {
+      "hash": "5ddd07d1771fea54",
+      "bytes": 156044,
+      "words": 86,
+      "updatedAt": "2026-11-19T18:17:30.432Z"
+    },
+    "lesson_5_b1": {
+      "hash": "048ae3f806f4a44f",
+      "bytes": 150284,
+      "words": 80,
+      "updatedAt": "2026-11-19T18:17:30.738Z"
+    },
+    "lesson_5_b2": {
+      "hash": "faa26e0972e7b211",
+      "bytes": 154124,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:17:31.086Z"
+    },
+    "lesson_5_b3": {
+      "hash": "27d599d897092b8e",
+      "bytes": 150764,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:17:31.455Z"
+    },
+    "lesson_5_b4": {
+      "hash": "5de492a322c20fb5",
+      "bytes": 136652,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:17:31.770Z"
+    },
+    "lesson_5_b5": {
+      "hash": "4e0695f9a2a869df",
+      "bytes": 160172,
+      "words": 84,
+      "updatedAt": "2026-11-19T18:17:32.125Z"
+    },
+    "lesson_1_b1": {
+      "hash": "0028a26126062d29",
+      "bytes": 127916,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:17:37.168Z"
+    },
+    "lesson_1_b2": {
+      "hash": "784c1d08943f6b9d",
+      "bytes": 133292,
+      "words": 83,
+      "updatedAt": "2026-11-19T18:17:37.467Z"
+    },
+    "lesson_1_b3": {
+      "hash": "b1d7ae95249ccd67",
+      "bytes": 142412,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:17:37.775Z"
+    },
+    "lesson_1_b4": {
+      "hash": "b62967692b5bbb07",
+      "bytes": 146156,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:17:38.071Z"
+    },
+    "lesson_1_b5": {
+      "hash": "2f96d4e2fe86293e",
+      "bytes": 137324,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:17:38.366Z"
+    },
+    "lesson_2_b1": {
+      "hash": "d25502573b4032fa",
+      "bytes": 161804,
+      "words": 81,
+      "updatedAt": "2026-11-19T18:17:38.723Z"
+    },
+    "lesson_2_b2": {
+      "hash": "b7cdb4781213dc2d",
+      "bytes": 136076,
+      "words": 82,
+      "updatedAt": "2026-11-19T18:17:39.015Z"
+    },
+    "lesson_2_b3": {
+      "hash": "81c2c8e465d660d5",
+      "bytes": 171692,
+      "words": 83,
+      "updatedAt": "2026-11-19T18:17:39.360Z"
+    },
+    "lesson_2_b4": {
+      "hash": "544b6a369b6efcd4",
+      "bytes": 176972,
+      "words": 85,
+      "updatedAt": "2026-11-19T18:17:39.752Z"
+    },
+    "lesson_2_b5": {
+      "hash": "2b9f7d002dac05ac",
+      "bytes": 167564,
+      "words": 83,
+      "updatedAt": "2026-11-19T18:17:40.098Z"
+    },
+    "lesson_3_b1": {
+      "hash": "c4cb4b90af2d3a09",
+      "bytes": 151724,
+      "words": 88,
+      "updatedAt": "2026-11-19T18:17:40.421Z"
+    },
+    "lesson_3_b2": {
+      "hash": "8fc53c929714aebb",
+      "bytes": 175820,
+      "words": 89,
+      "updatedAt": "2026-11-19T21:10:59.292Z"
+    },
+    "lesson_3_b3": {
+      "hash": "45e085a0351c5b8a",
+      "bytes": 165932,
+      "words": 85,
+      "updatedAt": "2026-11-19T23:50:25.007Z"
+    },
+    "lesson_3_b4": {
+      "hash": "027d416053e23159",
+      "bytes": 161132,
+      "words": 86,
+      "updatedAt": "2026-11-19T23:50:25.530Z"
+    },
+    "lesson_3_b5": {
+      "hash": "224fc9c6f5442b69",
+      "bytes": 148364,
+      "words": 85,
+      "updatedAt": "2026-11-19T18:17:41.786Z"
+    }
+  }
+}

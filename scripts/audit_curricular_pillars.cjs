@@ -2,18 +2,18 @@ const fs = require('fs');
 const path = require('path');
 
 const rootDir = path.resolve(__dirname, '..');
-const launchpadPath = path.join(rootDir, 'src', 'engine', 'hero_launchpad.js');
-const launchpadContent = fs.readFileSync(launchpadPath, 'utf8');
+const catalogPath = path.join(rootDir, 'src', 'data', 'unit_resources_catalog.js');
 
-const match = launchpadContent.match(
-  /export const CURRICULAR_PILLARS_CATALOG = ({[\s\S]*?});\n\n\/\*\*/,
-);
-if (!match) {
-  console.error('Could not parse CURRICULAR_PILLARS_CATALOG');
+let catalog = {};
+try {
+  const modContent = fs
+    .readFileSync(catalogPath, 'utf8')
+    .replace(/^export\s+/gm, '');
+  catalog = new Function(`${modContent}\nreturn UNIT_RESOURCES_CATALOG;`)();
+} catch (e) {
+  console.error('Could not parse UNIT_RESOURCES_CATALOG:', e.message);
   process.exit(1);
 }
-
-const catalog = eval('(' + match[1] + ')');
 
 const units = [
   'ks2_ww2',
@@ -69,10 +69,13 @@ units.forEach((u) => {
       missing.push({ unit: u, type, htmlCandidates, pdfCandidates });
       return '❌ MISSING';
     }
-    const pdfExists = fs.existsSync(path.join(rootDir, 'public', item.pdfUrl.replace(/^\//, '')));
-    const htmlExists =
-      fs.existsSync(path.join(rootDir, 'public', item.htmlUrl.replace(/^\//, ''))) ||
-      fs.existsSync(path.join(rootDir, item.htmlUrl.replace(/^\//, '')));
+    const pdfExists = item.pdfUrl
+      ? fs.existsSync(path.join(rootDir, 'public', item.pdfUrl.replace(/^\//, '')))
+      : false;
+    const htmlExists = item.htmlUrl
+      ? fs.existsSync(path.join(rootDir, 'public', item.htmlUrl.replace(/^\//, ''))) ||
+        fs.existsSync(path.join(rootDir, item.htmlUrl.replace(/^\//, '')))
+      : false;
 
     if (pdfExists && htmlExists) return '✅ OK (PDF+HTML)';
     if (pdfExists && !htmlExists) return '⚠️ PDF only';

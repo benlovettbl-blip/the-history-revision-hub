@@ -1,0 +1,40 @@
+{
+  "unitId": "great_war_part2",
+  "clips": {
+    "r4": {
+      "hash": "7538f663e3b42ee1ac6904c7c898078b5850ee4b8a82f70b080ea3e594210b53",
+      "bytes": 451340,
+      "voiceKey": "male_historian",
+      "badge": "J. M. Keynes · Versailles Delegate",
+      "updatedAt": "2026-11-19T22:41:18.446Z"
+    },
+    "r0": {
+      "hash": "9bb987eb5aa91599d666a6c68dc79c00989c36d6df894d4810f24183150957a3",
+      "bytes": 421388,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Lt. Siegfried Sassoon · Infantry Officer",
+      "updatedAt": "2026-11-19T22:41:20.057Z"
+    },
+    "r1": {
+      "hash": "4d4ab2b698d1a4f4aae1e2ee1dc41755b04c19be9f3b5ddb0332683af7140856",
+      "bytes": 434636,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Lt. Ernst Jünger · German Frontline",
+      "updatedAt": "2026-11-19T22:41:21.601Z"
+    },
+    "r2": {
+      "hash": "7de7dbf65bb5640d0fee322ae9ce00e02d87e9658058e429fb8ff37c22476f92",
+      "bytes": 290828,
+      "voiceKey": "ww1_indian_sepoy",
+      "badge": "Garhwali Subadar · Indian Army Letters",
+      "updatedAt": "2026-11-19T22:43:20.946Z"
+    },
+    "r3": {
+      "hash": "65b8f91c125cafdd2de5ac30f49bc52b85b30aa96583579e3f219f70892ffa53",
+      "bytes": 335852,
+      "voiceKey": "ww1_british_woman",
+      "badge": "Vera Brittain · Wartime VAD Nurse",
+      "updatedAt": "2026-11-19T22:43:22.038Z"
+    }
+  }
+}

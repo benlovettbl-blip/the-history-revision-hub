@@ -1423,6 +1423,115 @@ export default {
             }
           }
         ]
+      },
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "industrialisation_l01_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 1",
+        "datesBadge": "1750–1800",
+        "topicLabel": "Coal, Steam & Hampshire Iron",
+        "title": "What Powered the Industrial Revolution, and How Did a Fareham Ironmaster Change the World?",
+        "spokenTitle": "What powered the Industrial Revolution, and how did a Fareham ironmaster change the world?",
+        "thumbUrl": "/images/coalbrookdale_by_night.jpg",
+        "provenanceNote": "Verified museum plates from the Science Museum Group, National Archives, and National Maritime Museum.",
+        "bridges": [
+          "Watt’s rotary steam →",
+          "Cort’s Funtley furnace →",
+          "15x faster rollers →",
+          "1787 Navy forge tests →",
+          "Iron empire forged →"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Wood Shortage & Pig Iron",
+            "date": "1750–1770",
+            "img": "/images/coalbrookdale_by_night.jpg",
+            "mode": "landscape",
+            "stat": "Brittle Coal Iron Forced Costly Swedish Imports",
+            "html": "Smelting iron stripped Britain’s <strong>oak forests</strong> bare. Early coal furnaces made brittle <strong>pig iron</strong>, forcing the Royal Navy to buy costly <strong>Swedish iron</strong>.",
+            "spoken": "What powered the Industrial Revolution, and how did a Fareham ironmaster change the world? <short pause> Smelting iron stripped Britain’s oak forests bare. Early coal furnaces made brittle pig iron , forcing the Royal Navy to buy costly Swedish iron .",
+            "paired_prose_hash": "874e4f1bdc",
+            "connective": "What powered the Industrial Revolution, and how did a Fareham ironmaster change the world?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "James Watt’s Rotary Steam",
+            "date": "1769–1781",
+            "img": "/images/james_watt.jpg",
+            "mode": "contain",
+            "stat": "1769 Separate Condenser Freed Mills from Rivers",
+            "html": "In <strong>1769</strong>, <strong>James Watt</strong> cut coal waste with a separate condenser. With Matthew Boulton, his <strong>rotary steam engine</strong> freed factories from rivers.",
+            "spoken": "A Scottish engineer then solved Britain’s power shortage. <short pause> In 1769 , James Watt cut coal waste with a separate condenser. With Matthew Boulton, his rotary steam engine freed factories from rivers.",
+            "paired_prose_hash": "fac2b31874",
+            "connective": "A Scottish engineer then solved Britain’s power shortage."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Cort’s Puddling at Funtley",
+            "date": "1775–1784",
+            "img": "/images/funtley_ironworks.jpg",
+            "mode": "contain-light",
+            "stat": "Stirring Molten Iron Burned Out Carbon & Sulphur",
+            "html": "At <strong>Funtley</strong> near Fareham, <strong>Henry Cort</strong> kept coal smoke away from melted metal. Stirring the molten puddle turned brittle metal into tough <strong>wrought iron</strong>.",
+            "spoken": "Next, a Hampshire ironmaster tackled the brittle metal crisis. <short pause> At Funtley near Fareham, Henry Cort kept coal smoke away from melted metal. Stirring the molten puddle turned brittle metal into tough wrought iron .",
+            "paired_prose_hash": "8b257a32c4",
+            "connective": "Next, a Hampshire ironmaster tackled the brittle metal crisis."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Grooved Rollers Speed Output",
+            "date": "1783–1784",
+            "img": "/images/henry_cort.jpg",
+            "mode": "contain-light",
+            "stat": "15x Faster Than Traditional Forge Trip-Hammers",
+            "html": "In <strong>1783</strong>, Cort replaced slow hammers with steam-powered <strong>grooved rollers</strong>. Heavy rollers squeezed out waste and shaped iron bars <strong>fifteen times faster</strong>.",
+            "spoken": "Cort soon added a second breakthrough to shape hot metal. <short pause> In 1783 , Cort replaced slow hammers with steam-powered grooved rollers . Heavy rollers squeezed out waste and shaped iron bars fifteen times faster .",
+            "paired_prose_hash": "94769b54bc",
+            "connective": "Cort soon added a second breakthrough to shape hot metal."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Portsmouth Dockyard Trials",
+            "date": "1787",
+            "img": "/images/battle_of_trafalgar_turner.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "1787 Navy Tests Proved Funtley Iron Beat Sweden",
+            "html": "In <strong>1787</strong>, <strong>Portsmouth Dockyard</strong> blacksmiths hammered and twisted Cort’s Funtley bars. They forged unbreakable <strong>anchors and bolts</strong>, ending reliance on Sweden.",
+            "spoken": "The Royal Navy soon tested Cort’s local Hampshire iron. <short pause> In 1787 , Portsmouth Dockyard blacksmiths hammered and twisted Cort’s Funtley bars. They forged unbreakable anchors and bolts , ending reliance on Sweden.",
+            "paired_prose_hash": "53420205b3",
+            "connective": "The Royal Navy soon tested Cort’s local Hampshire iron."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Iron & Steam Build Britain",
+            "date": "By 1850",
+            "img": "/images/isambard_kingdom_brunel.jpg",
+            "mode": "contain",
+            "stat": "Coal, Steam & Wrought Iron Made Britain #1",
+            "html": "<strong>Watt’s steam engines</strong> and <strong>Cort’s wrought iron</strong> unlocked mass industry. Cheap British metal built the bridges, railways, and <strong>steamships</strong> of a global empire.",
+            "spoken": "Together, these two inventions transformed world history. <short pause> Watt’s steam engines and Cort’s wrought iron unlocked mass industry. Cheap British metal built the bridges, railways, and steamships of a global empire.",
+            "connective": "Together, these two inventions transformed world history."
+          }
+        ],
+        "takeaway": "Watt’s 1769 rotary steam engine freed factories from rivers, while Henry Cort’s Funtley puddling furnace and rollers gave Britain cheap, tough wrought iron.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Watt’s 1769 rotary steam engine freed factories from rivers, while Henry Cort’s Funtley puddling furnace and rollers gave Britain cheap, tough wrought iron.",
+        "vocab": [
+          [
+            "1. Pig Iron",
+            "Crude, brittle iron from a coal furnace that snapped easily under stress."
+          ],
+          [
+            "2. Puddling Process",
+            "Henry Cort’s furnace method of stirring molten iron to burn out impurities."
+          ],
+          [
+            "3. Wrought Iron",
+            "Tough, bendable iron shaped by grooved rollers for ships, rails, and bridges."
+          ]
+        ]
       }
     },
     {
@@ -2751,6 +2860,114 @@ export default {
             }
           }
         ]
+      },
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "industrialisation_l02_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 2",
+        "datesBadge": "1780–1833",
+        "topicLabel": "Factory Discipline & Child Labour",
+        "title": "Was Industrial Work Progress or Punishment for Ordinary British Families?",
+        "spokenTitle": "Was industrial work progress or punishment for ordinary British families?",
+        "thumbUrl": "/images/19th_century_mill.jpg",
+        "provenanceNote": "Verified engravings and portraits from the British Museum, National Archives, and Library of Congress.",
+        "bridges": [
+          "Strict factory clocks →",
+          "Child mill scavengers →",
+          "1832 Sadler Inquiry →",
+          "1833 Factory Act won →",
+          "First state limits set →"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "From Cottage Looms to Mills",
+            "date": "1780–1820",
+            "img": "/images/19th_century_mill.jpg",
+            "mode": "landscape",
+            "stat": "Steam Powerlooms Ended Independent Home Weaving",
+            "html": "Rural families once wove cloth on <strong>home handlooms</strong> at their own pace. Giant <strong>steam factories</strong> forced workers to match tireless <strong>machine speed</strong> all day.",
+            "spoken": "Was industrial work progress or punishment for ordinary British families? <short pause> Rural families once wove cloth on home handlooms at their own pace. Giant steam factories forced workers to match tireless machine speed all day.",
+            "paired_prose_hash": "876743b445",
+            "connective": "Was industrial work progress or punishment for ordinary British families?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Clocks, Heat & Wage Fines",
+            "date": "1800–1830",
+            "img": "/images/spinning_mule.jpg",
+            "mode": "contain-light",
+            "stat": "14-Hour Shifts in 80°F Choking Cotton Dust",
+            "html": "Mill hands worked <strong>fourteen-hour shifts</strong> in stifling 80°F heat and choking <strong>cotton dust</strong>. Strict overseers docked <strong>lateness fines</strong> from tiny wages.",
+            "spoken": "Inside the new mills, strict rules controlled every single minute. <short pause> Mill hands worked fourteen-hour shifts in stifling 80°F heat and choking cotton dust . Strict overseers docked lateness fines from tiny wages.",
+            "paired_prose_hash": "b178f35372",
+            "connective": "Inside the new mills, strict rules controlled every single minute."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Orphan Child Scavengers",
+            "date": "1810–1832",
+            "img": "/images/child_labour.jpg",
+            "mode": "contain-light",
+            "stat": "Workhouse Orphans Crawled Under Moving Gears",
+            "html": "Parishes sent poor <strong>workhouse orphans</strong> north to tend spinning mules. Tiny <strong>scavengers</strong> crawled under moving gears, suffering <strong>crushed fingers</strong> and scalpings.",
+            "spoken": "Mill owners also exploited vulnerable children to boost their profits. <short pause> Parishes sent poor workhouse orphans north to tend spinning mules. Tiny scavengers crawled under moving gears, suffering crushed fingers and scalpings.",
+            "paired_prose_hash": "d3947bfb97",
+            "connective": "Mill owners also exploited vulnerable children to boost their profits."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Sadler Inquiry & Crabtree",
+            "date": "1832",
+            "img": "/images/capital_labour.jpg",
+            "mode": "contain-light",
+            "stat": "16-Hour Shifts & Strap Beatings Exposed to MPs",
+            "html": "In <strong>1832</strong>, former child worker <strong>Matthew Crabtree</strong> told MPs about 16-hour shifts from age eight. Exhausted children suffered <strong>strap beatings</strong> and bowed legs.",
+            "spoken": "Shocking eyewitness accounts finally forced Parliament to listen. <short pause> In 1832 , former child worker Matthew Crabtree told MPs about 16-hour shifts from age eight. Exhausted children suffered strap beatings and bowed legs.",
+            "paired_prose_hash": "2033aeed26",
+            "connective": "Shocking eyewitness accounts finally forced Parliament to listen."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Shaftesbury & 1833 Act",
+            "date": "1833",
+            "img": "/images/lord_shaftesbury.jpg",
+            "mode": "contain",
+            "stat": "Under-9s Banned & 4 Factory Inspectors Appointed",
+            "html": "Backed by <strong>Lord Shaftesbury</strong>, the <strong>1833 Factory Act</strong> banned textile workers under nine. Four <strong>factory inspectors</strong> enforced eight-hour shifts and schooling.",
+            "spoken": "Public outrage helped reformers win a landmark new law. <short pause> Backed by Lord Shaftesbury , the 1833 Factory Act banned textile workers under nine. Four factory inspectors enforced eight-hour shifts and schooling.",
+            "paired_prose_hash": "2778be5761",
+            "connective": "Public outrage helped reformers win a landmark new law."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Booming Output, Human Cost",
+            "date": "1780–1850",
+            "img": "/images/coalbrookdale_by_night.jpg",
+            "mode": "landscape",
+            "stat": "Cheap Cloth Enriched Britain at Heavy Human Cost",
+            "html": "Factories made Britain rich with <strong>cheap cloth</strong>, yet early workers paid in <strong>broken health</strong>. The <strong>1833 Act</strong> began state limits on private owners.",
+            "spoken": "Industrialisation therefore delivered both national wealth and terrible suffering. <short pause> Factories made Britain rich with cheap cloth , yet early workers paid in broken health . The 1833 Act began state limits on private owners.",
+            "connective": "Industrialisation therefore delivered both national wealth and terrible suffering."
+          }
+        ],
+        "takeaway": "Steam mills boosted cloth output through harsh clocks, fines, and dangerous child labour until shocking 1832 testimony won the 1833 Factory Act.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Steam mills boosted cloth output through harsh clocks, fines, and dangerous child labour until shocking 1832 testimony won the 1833 Factory Act.",
+        "vocab": [
+          [
+            "1. Scavenger",
+            "Young mill child paid to crawl under moving looms to sweep loose cotton."
+          ],
+          [
+            "2. Sadler Committee",
+            "1832 parliamentary inquiry that exposed brutal child labour in textile mills."
+          ],
+          [
+            "3. 1833 Factory Act",
+            "Law banning mill workers under nine and appointing four state inspectors."
+          ]
+        ]
       }
     },
     {
@@ -4072,6 +4289,114 @@ export default {
               ]
             }
           }
+        ]
+      },
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "industrialisation_l03_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 3",
+        "datesBadge": "1800–1865",
+        "topicLabel": "Slums, Cholera & Public Health",
+        "title": "Did Rapid Industrialisation Make British Towns Unlivable?",
+        "spokenTitle": "Did rapid industrialisation make British towns unlivable?",
+        "thumbUrl": "/images/bazalgette_sewer.jpg",
+        "provenanceNote": "Verified prints, cholera maps, and photographs from the Wellcome Collection, British Museum, and London Metropolitan Archives.",
+        "bridges": [
+          "Sewage poisons pumps →",
+          "1831 cholera strikes →",
+          "Chadwick’s 1842 data →",
+          "1858 Great Stink hits →",
+          "82 miles of sewers →"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Back-to-Back Courts & Cellars",
+            "date": "1800–1830",
+            "img": "/images/victorian_slum.jpg",
+            "mode": "contain-light",
+            "stat": "Airless Brick Courts & Sewage-Soaked Cellars",
+            "html": "Millions moved to factory towns like <strong>Manchester</strong>. Landlords crammed families into airless <strong>back-to-back houses</strong> and damp <strong>cellars</strong> soaked with sewage.",
+            "spoken": "Did rapid industrialisation make British towns unlivable? <short pause> Millions moved to factory towns like Manchester . Landlords crammed families into airless back-to-back houses and damp cellars soaked with sewage.",
+            "paired_prose_hash": "63d278c77a",
+            "connective": "Did rapid industrialisation make British towns unlivable?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Overflowing Privies & Wells",
+            "date": "1830–1840",
+            "img": "/images/court_for_king_cholera.png",
+            "mode": "contain-light",
+            "stat": "Dozens of Families Shared One Outdoor Privy",
+            "html": "Dozens of families shared one overflowing <strong>earth privy</strong> beside tall <strong>dunghills</strong>. Rain washed human waste straight into shallow <strong>drinking wells</strong>.",
+            "spoken": "Town sanitation completely collapsed under this huge population surge. <short pause> Dozens of families shared one overflowing earth privy beside tall dunghills . Rain washed human waste straight into shallow drinking wells .",
+            "paired_prose_hash": "191336ad24",
+            "connective": "Town sanitation completely collapsed under this huge population surge."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Cholera & Poisoned Pumps",
+            "date": "1831–1854",
+            "img": "/images/snow_cholera_map.jpg",
+            "mode": "contain-light",
+            "stat": "Deadly Waterborne Cholera Killed Within 12 Hours",
+            "html": "From <strong>1831</strong>, deadly <strong>cholera</strong> spread through dirty water pumps, killing victims within hours. Frightened rich districts finally dropped <strong>laissez-faire</strong> neglect.",
+            "spoken": "Deadly epidemic disease soon punished decades of neglect. <short pause> From 1831 , deadly cholera spread through dirty water pumps, killing victims within hours. Frightened rich districts finally dropped laissez-faire neglect.",
+            "paired_prose_hash": "f62482338e",
+            "connective": "Deadly epidemic disease soon punished decades of neglect."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Chadwick’s 1842 Report",
+            "date": "1842",
+            "img": "/images/chadwick.jpg",
+            "mode": "contain",
+            "stat": "19 Years Average Worker Lifespan in Manchester",
+            "html": "In <strong>1842</strong>, <strong>Edwin Chadwick</strong> proved Manchester workers lived just <strong>nineteen years</strong> on average, half of rural Rutland, urging clean piped water.",
+            "spoken": "Hard statistical evidence soon proved that filth caused early death. <short pause> In 1842 , Edwin Chadwick proved Manchester workers lived just nineteen years on average, half of rural Rutland, urging clean piped water.",
+            "paired_prose_hash": "60a3778eba",
+            "connective": "Hard statistical evidence soon proved that filth caused early death."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "1858 Great Stink & MPs",
+            "date": "July 1858",
+            "img": "/images/father_thames_punch_1858.jpg",
+            "mode": "contain-light",
+            "stat": "Boiling Sewage Stench Forced Westminster Action",
+            "html": "A hot <strong>July 1858</strong> heatwave turned the sewage-choked <strong>River Thames</strong> into the <strong>“Great Stink”</strong>, forcing choking MPs in Parliament to fund new sewers.",
+            "spoken": "Parliament only acted when the stench reached Westminster itself. <short pause> A hot July 1858 heatwave turned the sewage-choked River Thames into the “Great Stink” , forcing choking MPs in Parliament to fund new sewers.",
+            "paired_prose_hash": "ce3b817971",
+            "connective": "Parliament only acted when the stench reached Westminster itself."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Bazalgette’s Sewer Triumph",
+            "date": "1858–1865",
+            "img": "/images/bazalgette_sewer.jpg",
+            "mode": "landscape",
+            "stat": "82 Miles of Brick Sewers Ended London Cholera",
+            "html": "Engineer <strong>Joseph Bazalgette</strong> built <strong>82 miles</strong> of brick interceptor sewers across London. Separating waste from water wiped out urban <strong>cholera</strong>.",
+            "spoken": "Bold engineering finally made London’s water safe to drink. <short pause> Engineer Joseph Bazalgette built 82 miles of brick interceptor sewers across London. Separating waste from water wiped out urban cholera .",
+            "connective": "Bold engineering finally made London’s water safe to drink."
+          }
+        ],
+        "takeaway": "Overcrowded slums and sewage-poisoned wells unleashed deadly cholera until Chadwick’s 1842 Report and the 1858 Great Stink drove Bazalgette’s sewer revolution.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Overcrowded slums and sewage-poisoned wells unleashed deadly cholera until Chadwick’s 1842 Report and the 1858 Great Stink drove Bazalgette’s sewer revolution.",
+        "vocab": [
+          [
+            "1. Back-to-Back Houses",
+            "Cramped terraced homes sharing three walls with no airflow or drains."
+          ],
+          [
+            "2. Laissez-faire",
+            "Belief that government should leave housing and health alone without laws."
+          ],
+          [
+            "3. Cholera",
+            "Deadly bacterial disease spread through drinking water contaminated by sewage."
+          ]
         ]
       }
     },
@@ -5470,6 +5795,115 @@ export default {
             }
           }
         ]
+      },
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "industrialisation_l04_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 4",
+        "datesBadge": "1811–1836",
+        "topicLabel": "Luddites, Peterloo, Swing & Unions",
+        "title": "How Did Ordinary Working People Fight for Fair Wages and a Political Voice?",
+        "spokenTitle": "How did ordinary working people fight for fair wages and a political voice?",
+        "thumbUrl": "/images/chartist_demo.jpg",
+        "provenanceNote": "Verified protest etchings, National Archives Swing letters, and naval records from the British Museum and Kew.",
+        "bridges": [
+          "60,000 meet peacefully →",
+          "Swing farm riots erupt →",
+          "Winchester Hall trials →",
+          "Tolpuddle union formed →",
+          "100,000 march & win →"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "General Ludd’s Loom Raids",
+            "date": "1811–1816",
+            "img": "/images/leader_of_the_luddites.jpg",
+            "mode": "contain-light",
+            "stat": "12,000 Troops Sent & Frame-Breaking Made Fatal",
+            "html": "Steam looms slashed weavers’ pay. Under <strong>“General Ned Ludd”</strong>, workers smashed frames at night until the <strong>1812 Frame-Breaking Act</strong> made it a <strong>hanging crime</strong>.",
+            "spoken": "How did ordinary working people fight for fair wages and a political voice? <short pause> Steam looms slashed weavers’ pay. Under “General Ned Ludd” , workers smashed frames at night until the 1812 Frame-Breaking Act made it a hanging crime .",
+            "paired_prose_hash": "8da1984d63",
+            "connective": "How did ordinary working people fight for fair wages and a political voice?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "The Peterloo Massacre",
+            "date": "16 Aug 1819",
+            "img": "/images/peterloo_massacre_cruikshank.jpg",
+            "mode": "contain-light",
+            "stat": "18 Killed & 600+ Injured at St Peter’s Field",
+            "html": "In <strong>August 1819</strong>, <strong>60,000 peaceful protesters</strong> met in Manchester to demand the vote. Cavalry charged with sabres, <strong>killing eighteen</strong> before the Six Acts banned rallies.",
+            "spoken": "Workers next held peaceful rallies to demand the vote. <short pause> In August 1819 , 60,000 peaceful protesters met in Manchester to demand the vote. Cavalry charged with sabres, killing eighteen before the Six Acts banned rallies.",
+            "paired_prose_hash": "3777901d90",
+            "connective": "Workers next held peaceful rallies to demand the vote."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Captain Swing Harvest Riots",
+            "date": "Nov 1830",
+            "img": "/images/captain_swing_portrait.jpg",
+            "mode": "contain-light",
+            "stat": "Hampshire Farmhands Demanded 2 Shillings a Day",
+            "html": "In <strong>November 1830</strong>, starving southern farmhands signed letters from <strong>“Captain Swing”</strong>. Across Hampshire, they burned hayricks and smashed <strong>threshing machines</strong>.",
+            "spoken": "Eleven years later, hunger sparked rebellion across southern English farms. <short pause> In November 1830 , starving southern farmhands signed letters from “Captain Swing” . Across Hampshire, they burned hayricks and smashed threshing machines .",
+            "paired_prose_hash": "afc65c558e",
+            "connective": "Eleven years later, hunger sparked rebellion across southern English farms."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Winchester Assize Vengeance",
+            "date": "Dec 1830",
+            "img": "/images/captain_swing_letter.jpg",
+            "mode": "contain-light",
+            "stat": "300 Tried at Winchester & 400+ Sent to Australia",
+            "html": "Judges tried <strong>300 Hampshire workers</strong> at Winchester in <strong>December 1830</strong>. Teenager <strong>Henry Cook</strong> was hanged, and over 400 labourers suffered Australian transportation.",
+            "spoken": "The government crushed the rural uprising with fierce courtroom punishments. <short pause> Judges tried 300 Hampshire workers at Winchester in December 1830 . Teenager Henry Cook was hanged, and over 400 labourers suffered Australian transportation.",
+            "paired_prose_hash": "f03d5b9ba6",
+            "connective": "The government crushed the rural uprising with fierce courtroom punishments."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "The Tolpuddle Martyrs",
+            "date": "1834–1836",
+            "img": "/images/prison_hulks.jpg",
+            "mode": "landscape",
+            "pos": "center 65%",
+            "stat": "6 Dorset Union Men Pardoned After Giant Protests",
+            "html": "In <strong>1834</strong>, six Dorset farmhands formed a <strong>trade union</strong> against wage cuts. Exiled for <strong>seven years</strong>, they won full pardons in 1836 after 100,000 marched.",
+            "spoken": "Harsh repression soon backfired when farmworkers organised a peaceful union. <short pause> In 1834 , six Dorset farmhands formed a trade union against wage cuts. Exiled for seven years , they won full pardons in 1836 after 100,000 marched.",
+            "paired_prose_hash": "654f2b8266",
+            "connective": "Harsh repression soon backfired when farmworkers organised a peaceful union."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "From Machine Raids to Unions",
+            "date": "By 1836",
+            "img": "/images/chartist_demo.jpg",
+            "mode": "landscape",
+            "stat": "Peaceful Unions & Marches Proved Stronger",
+            "html": "Soldiers and courts crushed <strong>Luddite and Swing raids</strong>. Yet the <strong>Tolpuddle pardon</strong> proved disciplined <strong>trade unions</strong> and peaceful marches could win change.",
+            "spoken": "Three decades of struggle taught British workers a vital lesson. <short pause> Soldiers and courts crushed Luddite and Swing raids . Yet the Tolpuddle pardon proved disciplined trade unions and peaceful marches could win change.",
+            "connective": "Three decades of struggle taught British workers a vital lesson."
+          }
+        ],
+        "takeaway": "Though troops and courts crushed Luddite raids, Peterloo protesters, and Swing rioters, the 1836 Tolpuddle pardon proved peaceful unions could win.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Though troops and courts crushed Luddite raids, Peterloo protesters, and Swing rioters, the 1836 Tolpuddle pardon proved peaceful unions could win.",
+        "vocab": [
+          [
+            "1. Peterloo Massacre",
+            "1819 cavalry sabre attack on 60,000 peaceful reform protesters in Manchester."
+          ],
+          [
+            "2. Swing Riots",
+            "1830 southern farmworkers’ uprising against low pay and threshing machines."
+          ],
+          [
+            "3. Tolpuddle Martyrs",
+            "Six Dorset farmhands exiled in 1834 for forming a union, pardoned in 1836."
+          ]
+        ]
       }
     },
     {
@@ -6730,6 +7164,114 @@ export default {
               ]
             }
           }
+        ]
+      },
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "industrialisation_l05_visual_story_sheet",
+        "ktBadge": "Year 8 • Enquiry 5",
+        "datesBadge": "1800–1872",
+        "topicLabel": "Reform Acts, Chartism & Secret Ballot",
+        "title": "How Did Britain Move from Rotten Boroughs Toward Modern Democracy?",
+        "spokenTitle": "How did Britain move from rotten boroughs toward modern democracy?",
+        "thumbUrl": "/images/chartist_demo.jpg",
+        "provenanceNote": "Verified electoral maps, lithographs, and Pontefract ballot records from the National Archives, Royal Collection, and Wakefield Museums.",
+        "bridges": [
+          "Riots & gold bank run →",
+          "1832 Reform Act passed →",
+          "Chartist 6-point push →",
+          "1872 Secret Ballot won →",
+          "Road to full suffrage →"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Rotten Boroughs & No MPs",
+            "date": "1800–1830",
+            "img": "/images/map_rotten_boroughs.jpg",
+            "mode": "contain-light",
+            "stat": "Under 5% Voted While Manchester Had Zero MPs",
+            "html": "Before 1832, <strong>under five percent</strong> of adults could vote. Empty <strong>rotten boroughs</strong> like Old Sarum had two MPs, while booming <strong>Manchester</strong> had none.",
+            "spoken": "How did Britain move from rotten boroughs toward modern democracy? <short pause> Before 1832, under five percent of adults could vote. Empty rotten boroughs like Old Sarum had two MPs, while booming Manchester had none.",
+            "paired_prose_hash": "d2f6f0e18f",
+            "connective": "How did Britain move from rotten boroughs toward modern democracy?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Bristol Riots & Days of May",
+            "date": "1831–1832",
+            "img": "/images/school_of_reform.jpg",
+            "mode": "contain-light",
+            "stat": "1832 Gold Bank Run Forced Tory Lords to Yield",
+            "html": "When Lords blocked reform, crowds burned buildings in the <strong>Bristol riots</strong>. In <strong>May 1832</strong>, a nationwide <strong>gold bank run</strong> forced the Tory Lords to give way.",
+            "spoken": "Furious public protests soon pushed Britain close to revolution. <short pause> When Lords blocked reform, crowds burned buildings in the Bristol riots . In May 1832 , a nationwide gold bank run forced the Tory Lords to give way.",
+            "paired_prose_hash": "9487eeef4f",
+            "connective": "Furious public protests soon pushed Britain close to revolution."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "1832 Great Reform Act",
+            "date": "June 1832",
+            "img": "/images/earl_grey.jpg",
+            "mode": "contain",
+            "stat": "56 Rotten Boroughs Cut, £10 Rule Shut Out Poor",
+            "html": "Earl Grey’s <strong>1832 Great Reform Act</strong> scrapped 56 rotten boroughs and gave MPs to <strong>industrial cities</strong>. Yet a <strong>£10 property rule</strong> still shut out workers.",
+            "spoken": "Earl Grey’s Reform Act changed Parliament, yet disappointed workers. <short pause> Earl Grey’s 1832 Great Reform Act scrapped 56 rotten boroughs and gave MPs to industrial cities . Yet a 10 pounds property rule still shut out workers.",
+            "paired_prose_hash": "3e539301da",
+            "connective": "Earl Grey’s Reform Act changed Parliament, yet disappointed workers."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Chartism’s Six Demands",
+            "date": "1838–1848",
+            "img": "/images/chartist_demo.jpg",
+            "mode": "landscape",
+            "stat": "3 Giant Petitions Signed by Millions of Workers",
+            "html": "Shut out in 1832, <strong>Chartists</strong> launched the <strong>1838 People’s Charter</strong>. Millions signed three giant petitions demanding <strong>votes for all men</strong>, paid MPs, and secret ballots.",
+            "spoken": "Shut out again, working people built a giant movement. <short pause> Shut out in 1832, Chartists launched the 1838 People’s Charter . Millions signed three giant petitions demanding votes for all men , paid MPs, and secret ballots.",
+            "paired_prose_hash": "f4cc40cc94",
+            "connective": "Shut out again, working people built a giant movement."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "1872 Secret Ballot Act",
+            "date": "1872",
+            "img": "/images/secret_ballot.jpg",
+            "mode": "contain",
+            "stat": "Private Booths Ended Open Bribery & Evictions",
+            "html": "Before 1872, public voting on <strong>open hustings</strong> let bosses and landlords bully voters. Gladstone’s <strong>1872 Ballot Act</strong> introduced locked boxes and <strong>private booths</strong>.",
+            "spoken": "Decades of campaigning eventually made British elections fair and private. <short pause> Before 1872, public voting on open hustings let bosses and landlords bully voters. Gladstone’s 1872 Ballot Act introduced locked boxes and private booths .",
+            "paired_prose_hash": "e76fbbdc2f",
+            "connective": "Decades of campaigning eventually made British elections fair and private."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Five Chartist Points Won",
+            "date": "1832–1928",
+            "img": "/images/suffragettes_kenney_pankhurst.jpg",
+            "mode": "contain",
+            "stat": "Five of Six Chartist Points Later Became Law",
+            "html": "MPs rejected Chartist petitions at first, yet <strong>five of six demands</strong> later became law. Reform Acts and <strong>women’s suffrage</strong> finally built full democracy by <strong>1928</strong>.",
+            "spoken": "Step by step, ordinary Britons won their democratic voice. <short pause> MPs rejected Chartist petitions at first, yet five of six demands later became law. Reform Acts and women’s suffrage finally built full democracy by 1928 .",
+            "connective": "Step by step, ordinary Britons won their democratic voice."
+          }
+        ],
+        "takeaway": "The 1832 Reform Act scrapped 56 rotten boroughs for middle-class voters, sparking Chartist campaigns that later won the 1872 Secret Ballot and wider suffrage.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> The 1832 Reform Act scrapped 56 rotten boroughs for middle-class voters, sparking Chartist campaigns that later won the 1872 Secret Ballot and wider suffrage.",
+        "vocab": [
+          [
+            "1. Rotten Borough",
+            "Tiny or empty medieval district that still elected two MPs before 1832."
+          ],
+          [
+            "2. Chartism",
+            "1838–1848 working-class campaign demanding six democratic voting reforms."
+          ],
+          [
+            "3. 1872 Ballot Act",
+            "Law replacing open hustings with private booths to stop voter bullying."
+          ]
         ]
       }
     }

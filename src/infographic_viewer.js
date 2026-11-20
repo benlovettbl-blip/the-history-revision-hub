@@ -50,10 +50,7 @@ export async function getInfographicsManifest() {
  * Enforces strict, exact matching by lessonId or lessonIds array to prevent cross-lesson bleed.
  */
 export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
-  // Key Stage 2 (KS2) primary units use dedicated Enquiry Worksheets, Classroom Textbook, and Teacher Guidance — never GCSE Revision Mats.
-  if (unitId === 'ks2_ww2' || String(unitId || '').startsWith('ks2')) {
-    return [];
-  }
+  const isKs2 = unitId === 'ks2_ww2' || String(unitId || '').startsWith('ks2');
   const manifest = manifestCache || (typeof window !== 'undefined' && window.__INFOGRAPHICS_MANIFEST__);
   const unitList = (manifest && unitId && manifest[unitId]) ? manifest[unitId] : [];
 
@@ -62,7 +59,12 @@ export function getLessonInfographicsSync(unitId, lessonIdOrIndex) {
 
   if (unitList.length > 0 && targetStr) {
     const matched = unitList.filter((item) => {
-      if (!item || !item.image || String(item.image).trim().length === 0) return false;
+      // KS2 primary units only surface native Primary Visual Story Sheets (never legacy GCSE revision mats)
+      if (isKs2 && item?.type !== 'visual_story_sheet') return false;
+      const hasMedia =
+        (item && item.image && String(item.image).trim().length > 0) ||
+        (item && item.interactiveUrl && String(item.interactiveUrl).trim().length > 0);
+      if (!hasMedia) return false;
       if (item.lessonId) {
         if (item.lessonId === targetStr) return true;
         if (item.lessonId === `lesson_${targetStr}`) return true;
@@ -131,14 +133,14 @@ function ensureModalElement() {
 
   modal.innerHTML = `
     <!-- Top Control Bar -->
-    <header style="height: 60px; padding: 0 12px; background: #070d19; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; z-index: 10; gap: 8px;">
+    <header style="height: 60px; padding: 0 12px; background: #070d19; border-bottom: 1px solid #1e293b; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; z-index: 10; gap: 8px; overflow: hidden;">
       <!-- Title & Badges -->
-      <div style="display: flex; align-items: center; gap: 9px; min-width: 0; flex: 1 1 auto;">
+      <div style="display: flex; align-items: center; gap: 9px; min-width: 180px; flex: 1 1 auto; overflow: hidden;">
         <div style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; box-shadow: 0 2px 8px rgba(37,99,235,0.4);">
           <i class="fa-solid fa-chart-pie"></i>
         </div>
-        <div style="min-width: 0; flex: 1;">
-          <div style="display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; white-space: nowrap; margin-bottom: 2px;">
+        <div style="min-width: 0; flex: 1; overflow: hidden;">
+          <div style="display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; white-space: nowrap; margin-bottom: 2px; overflow: hidden;">
             <span id="infographic-badge-topic" style="font-size: 0.68rem; font-weight: 800; color: #38bdf8; background: rgba(2, 132, 199, 0.2); border: 1px solid rgba(56, 189, 248, 0.35); padding: 1.5px 6px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; flex-shrink: 0;">Topic</span>
             <span id="infographic-badge-type" style="font-size: 0.66rem; font-weight: 600; color: #94a3b8; background: #1e293b; padding: 1.5px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; border: 1px solid #334155;">Visual Revision Mat</span>
             <span id="infographic-counter" style="font-size: 0.68rem; color: #cbd5e1; font-weight: 700; white-space: nowrap; flex-shrink: 0;">1/1</span>
@@ -149,8 +151,11 @@ function ensureModalElement() {
         </div>
       </div>
 
-      <!-- Multiple Infographics Quick Switcher Tabs (Segmented Control Pill Bar - Zero Scrollbars) -->
+      <!-- Multiple Infographics Switcher: Pills for 2–3 lesson mats; Full-Title Dropdown when browsing >3 unit infographics -->
       <div id="infographic-multi-tabs" style="display: none; align-items: center; background: #0b1329; border: 1px solid #1e293b; border-radius: 8px; padding: 2px; flex-shrink: 0; white-space: nowrap; margin: 0 4px;"></div>
+      <div id="infographic-jump-wrap" style="display: none; align-items: center; gap: 6px; flex: 0 1 320px; min-width: 190px; max-width: 340px; margin: 0 4px;">
+        <select id="infographic-jump-select" aria-label="Jump to Infographic" style="width: 100%; height: 32px; padding: 0 28px 0 10px; background: #0f172a; color: #f8fafc; border: 1px solid #38bdf8; border-radius: 7px; font-size: 0.76rem; font-weight: 700; cursor: pointer; outline: none; text-overflow: ellipsis;"></select>
+      </div>
 
       <!-- Action Toolbar -->
       <div style="display: flex; align-items: center; gap: 5px; flex-shrink: 0;">
@@ -169,7 +174,8 @@ function ensureModalElement() {
           <button type="button" id="infographic-btn-zoom-out" style="background: none; border: none; color: #cbd5e1; width: 24px; height: 24px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.78rem;" title="Zoom Out (-)"><i class="fa-solid fa-minus"></i></button>
           <span id="infographic-zoom-label" style="font-size: 0.72rem; font-weight: 700; color: #f8fafc; min-width: 36px; text-align: center; font-family: monospace;">100%</span>
           <button type="button" id="infographic-btn-zoom-in" style="background: none; border: none; color: #cbd5e1; width: 24px; height: 24px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.78rem;" title="Zoom In (+)"><i class="fa-solid fa-plus"></i></button>
-          <button type="button" id="infographic-btn-zoom-reset" style="background: none; border: none; color: #94a3b8; padding: 0 5px; height: 24px; cursor: pointer; font-size: 0.68rem; font-weight: 700; border-left: 1px solid #334155;" title="Fit / Reset (0)">FIT</button>
+          <button type="button" id="infographic-btn-zoom-reset" style="background: none; border: none; color: #94a3b8; padding: 0 6px; height: 24px; cursor: pointer; font-size: 0.68rem; font-weight: 700; border-left: 1px solid #334155;" title="Fit Whole Poster on Screen (0)">FIT</button>
+          <button type="button" id="infographic-btn-fit-width" style="background: none; border: none; color: #38bdf8; padding: 0 6px; height: 24px; cursor: pointer; font-size: 0.68rem; font-weight: 800; border-left: 1px solid #334155;" title="Zoom to Readable Column Width &amp; Start at Top (W)">WIDTH</button>
         </div>
 
         <!-- Download Poster Image -->
@@ -485,6 +491,10 @@ function setupModalEvents(modal) {
     try {
       const doc = iframeEl.contentDocument;
       if (!doc || !doc.body) return;
+      if (doc.body.getAttribute('data-self-fit') === 'true') {
+        if (btnWhiteboardFit) btnWhiteboardFit.style.display = 'none';
+        return;
+      }
 
       // Reset zoom first to get true natural scrollHeight
       doc.body.style.zoom = '1';
@@ -597,31 +607,95 @@ function setupModalEvents(modal) {
     }
   };
 
+  let isWidthReadingMode = false;
+  const btnFitWidth = modal.querySelector('#infographic-btn-fit-width');
+  const jumpSelect = modal.querySelector('#infographic-jump-select');
+
+  const syncZoomModeButtons = () => {
+    if (btnFitWidth) {
+      btnFitWidth.style.background = isWidthReadingMode ? '#0284c7' : 'none';
+      btnFitWidth.style.color = isWidthReadingMode ? '#ffffff' : '#38bdf8';
+    }
+    if (btnZoomReset) {
+      btnZoomReset.style.color = !isWidthReadingMode && zoomLevel === 1 ? '#f8fafc' : '#94a3b8';
+    }
+  };
+
   const setZoom = (newZoom) => {
+    isWidthReadingMode = false;
     zoomLevel = Math.max(0.6, Math.min(3.5, newZoom));
     if (zoomLevel === 1) {
       panX = 0;
       panY = 0;
     }
+    syncZoomModeButtons();
     applyTransform();
   };
 
   const resetTransform = () => {
+    isWidthReadingMode = false;
     zoomLevel = 1;
     panX = 0;
     panY = 0;
+    syncZoomModeButtons();
     applyTransform();
+  };
+
+  const applyFitWidthMode = () => {
+    const stageW = stage.clientWidth || window.innerWidth || 1280;
+    const stageH = stage.clientHeight || (window.innerHeight - 60) || 720;
+    const baseW = img.clientWidth || 520;
+    const baseH = img.clientHeight || 740;
+    const targetWidthPx = Math.min(stageW * 0.76, 1080);
+    const computedZoom = Math.max(1.35, Math.min(2.4, targetWidthPx / Math.max(baseW, 200)));
+    isWidthReadingMode = true;
+    zoomLevel = Number(computedZoom.toFixed(2));
+    panX = 0;
+    const scaledH = baseH * zoomLevel;
+    panY = scaledH > stageH ? Math.round((scaledH - stageH) / 2 - 20) : 0;
+    syncZoomModeButtons();
+    applyTransform();
+  };
+  window.__hubResetInfographicZoomState = () => {
+    isWidthReadingMode = false;
+    syncZoomModeButtons();
   };
 
   btnZoomIn.addEventListener('click', () => setZoom(zoomLevel + 0.25));
   btnZoomOut.addEventListener('click', () => setZoom(zoomLevel - 0.25));
   btnZoomReset.addEventListener('click', resetTransform);
+  if (btnFitWidth) {
+    btnFitWidth.addEventListener('click', () => {
+      if (isWidthReadingMode) resetTransform();
+      else applyFitWidthMode();
+    });
+  }
 
-  // Wheel zoom
+  if (jumpSelect) {
+    jumpSelect.addEventListener('change', (e) => {
+      const idx = parseInt(e.target.value, 10);
+      if (!isNaN(idx) && idx >= 0 && idx < currentList.length && idx !== currentIndex) {
+        currentIndex = idx;
+        currentItem = currentList[currentIndex];
+        currentRequestedMode = (currentItem && currentItem.image && currentItem.image.trim().length > 0) ? 'poster' : 'interactive';
+        renderCurrentItem();
+      }
+    });
+  }
+
+  // Wheel: smooth vertical scroll in WIDTH reading mode; zoom otherwise (or with Ctrl/Cmd)
   stage.addEventListener(
     'wheel',
     (e) => {
       e.preventDefault();
+      if (isWidthReadingMode && !e.ctrlKey && !e.metaKey && zoomLevel > 1) {
+        const stageH = stage.clientHeight || 720;
+        const scaledH = (img.clientHeight || 720) * zoomLevel;
+        const maxPanY = Math.max(0, Math.round((scaledH - stageH) / 2 + 32));
+        panY = Math.max(-maxPanY, Math.min(maxPanY, panY - e.deltaY * 0.85));
+        applyTransform();
+        return;
+      }
       const delta = e.deltaY > 0 ? -0.15 : 0.15;
       setZoom(zoomLevel + delta);
     },
@@ -661,12 +735,27 @@ function setupModalEvents(modal) {
   // Global Keydown
   window.addEventListener('keydown', (e) => {
     if (modal.style.display === 'none') return;
+    if (e.target && (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+      if (e.key === 'Escape') closeInfographicModal();
+      return;
+    }
     if (e.key === 'Escape') {
       closeInfographicModal();
     } else if (e.key === 'ArrowLeft') {
       navigateInfographic(-1);
     } else if (e.key === 'ArrowRight') {
       navigateInfographic(1);
+    } else if (e.key === 'ArrowDown' && zoomLevel > 1) {
+      e.preventDefault();
+      panY -= 90;
+      applyTransform();
+    } else if (e.key === 'ArrowUp' && zoomLevel > 1) {
+      e.preventDefault();
+      panY += 90;
+      applyTransform();
+    } else if (e.key === 'w' || e.key === 'W') {
+      if (isWidthReadingMode) resetTransform();
+      else applyFitWidthMode();
     } else if (e.key === '+' || e.key === '=') {
       setZoom(zoomLevel + 0.25);
     } else if (e.key === '-') {
@@ -723,7 +812,8 @@ function renderCurrentItem() {
   topicBadge.title = fullTopic;
 
   let typeLabel = 'Revision Mat';
-  if (currentItem.type === 'unit_roadmap') typeLabel = 'Roadmap';
+  if (currentItem.type === 'visual_story_sheet') typeLabel = 'Visual Story Sheet';
+  else if (currentItem.type === 'unit_roadmap') typeLabel = 'Roadmap';
   else if (currentItem.type === 'thematic_timeline') typeLabel = 'Timeline';
   else if (currentItem.type === 'exam_technique') typeLabel = 'Exam Guide';
   else if (currentItem.type === 'thematic_deep_dive') typeLabel = 'Depth Study';
@@ -740,29 +830,48 @@ function renderCurrentItem() {
     btnNext.style.display = 'none';
   }
 
-  // Render multi-item switcher tabs (Segmented Control Pill Bar - Zero Scrollbars)
+  // Switcher UI:
+  // - 2–3 items (single-lesson mats): compact side-by-side pills
+  // - >3 items ("Browse All Unit Infographics"): clean full-title dropdown so header NEVER overflows
   const multiTabs = modal.querySelector('#infographic-multi-tabs');
-  if (multiTabs) {
-    if (currentList.length > 1) {
-      multiTabs.style.display = 'inline-flex';
-      const existingButtons = multiTabs.querySelectorAll('.infographic-switcher-tab');
-      if (existingButtons.length === currentList.length) {
-        existingButtons.forEach((btn, idx) => {
-          const isActive = idx === currentIndex;
-          btn.classList.toggle('active', isActive);
-          btn.style.background = isActive ? '#0284c7' : 'transparent';
-          btn.style.color = isActive ? '#ffffff' : '#94a3b8';
-          btn.style.boxShadow = isActive ? '0 1px 4px rgba(2, 132, 199, 0.4)' : 'none';
-        });
-      } else {
+  const jumpWrap = modal.querySelector('#infographic-jump-wrap');
+  const jumpSelect = modal.querySelector('#infographic-jump-select');
+
+  if (currentList.length > 3 && jumpWrap && jumpSelect) {
+    if (multiTabs) {
+      multiTabs.style.display = 'none';
+      multiTabs.innerHTML = '';
+    }
+    jumpWrap.style.display = 'inline-flex';
+    jumpSelect.innerHTML = '';
+    currentList.forEach((item, idx) => {
+      const opt = document.createElement('option');
+      opt.value = String(idx);
+      const ktShortMatch = String(item.topic || '').match(/^(?:Key Topic|KT)\s*([0-9\.]+)/i);
+      const prefix = ktShortMatch
+        ? `KT ${ktShortMatch[1]}`
+        : item.type === 'unit_roadmap' || item.type === 'unit_overview'
+          ? 'Course Overview'
+          : item.type === 'exam_technique'
+            ? 'Exam Guide'
+            : `Mat ${idx + 1}`;
+      opt.textContent = `${idx + 1}/${currentList.length} • ${prefix} — ${item.title || `Infographic ${idx + 1}`}`;
+      if (idx === currentIndex) opt.selected = true;
+      jumpSelect.appendChild(opt);
+    });
+  } else {
+    if (jumpWrap) jumpWrap.style.display = 'none';
+    if (multiTabs) {
+      if (currentList.length >= 2 && currentList.length <= 3) {
+        multiTabs.style.display = 'inline-flex';
         multiTabs.innerHTML = '';
         currentList.forEach((item, idx) => {
           const btn = document.createElement('button');
           btn.type = 'button';
-          btn.className = 'infographic-switcher-tab';
+          btn.className = `infographic-switcher-tab${idx === currentIndex ? ' active' : ''}`;
           const isActive = idx === currentIndex;
           btn.style.cssText = `
-            padding: 3.5px 8px;
+            padding: 3.5px 9px;
             font-size: 0.72rem;
             font-weight: 700;
             border-radius: 6px;
@@ -774,33 +883,14 @@ function renderCurrentItem() {
             color: ${isActive ? '#ffffff' : '#94a3b8'};
             box-shadow: ${isActive ? '0 1px 4px rgba(2, 132, 199, 0.4)' : 'none'};
           `;
-          btn.addEventListener('mouseenter', () => {
-            if (!btn.classList.contains('active')) {
-              btn.style.color = '#f1f5f9';
-              btn.style.background = 'rgba(255, 255, 255, 0.08)';
-            }
-          });
-          btn.addEventListener('mouseleave', () => {
-            if (!btn.classList.contains('active')) {
-              btn.style.color = '#94a3b8';
-              btn.style.background = 'transparent';
-            }
-          });
-
           let label = `Mat ${idx + 1}`;
           if (item.type === 'thematic_deep_dive') label = 'Depth Study';
           else if (item.type === 'thematic_timeline') label = 'Timeline';
           else if (item.title) {
             let clean = item.title.split(/[:(]/)[0].replace(/^The\s+/i, '').trim();
-            if (/medical revolutions/i.test(clean)) clean = 'Revolutions';
-            else if (/public health/i.test(clean)) clean = 'Public Health';
-            else if (clean.length > 14) {
-              clean = clean.split(/\s+/).slice(0, 2).join(' ');
-              if (clean.length > 14) clean = clean.split(/\s+/)[0];
-            }
+            if (clean.length > 18) clean = clean.split(/\s+/).slice(0, 2).join(' ');
             if (clean) label = clean;
           }
-
           btn.innerHTML = `<span style="opacity: 0.7; margin-right: 4px;">${idx + 1}.</span> ${label}`;
           btn.title = item.title || `Switch to Mat ${idx + 1}`;
           btn.addEventListener('click', (e) => {
@@ -813,10 +903,10 @@ function renderCurrentItem() {
           });
           multiTabs.appendChild(btn);
         });
+      } else {
+        multiTabs.style.display = 'none';
+        multiTabs.innerHTML = '';
       }
-    } else {
-      multiTabs.style.display = 'none';
-      multiTabs.innerHTML = '';
     }
   }
 
@@ -848,9 +938,12 @@ function renderCurrentItem() {
   lastPanY = 0;
   img.style.transform = `translate(0px, 0px) scale(1)`;
   const stage = modal.querySelector('#infographic-stage');
-  if (stage) stage.style.cursor = 'grab';
+  if (stage) stage.style.cursor = 'default';
   const zoomLabel = modal.querySelector('#infographic-zoom-label');
   if (zoomLabel) zoomLabel.textContent = '100%';
+  if (typeof window.__hubResetInfographicZoomState === 'function') {
+    window.__hubResetInfographicZoomState();
+  }
 
   // Dual-Mode Toggle (Poster vs Interactive)
   const modeToggle = modal.querySelector('#infographic-mode-toggle');
@@ -875,7 +968,10 @@ function renderCurrentItem() {
       }
       if (zoomControls) zoomControls.style.display = 'none';
       if (downloadBtn) downloadBtn.style.display = 'none';
-      if (btnWhiteboardFit) btnWhiteboardFit.style.display = 'inline-flex';
+      if (btnWhiteboardFit) {
+        btnWhiteboardFit.style.display =
+          currentItem.type === 'visual_story_sheet' ? 'none' : 'inline-flex';
+      }
       if (tabBtn) {
         tabBtn.href = currentItem.interactiveUrl;
         tabBtn.style.display = 'inline-flex';
@@ -927,7 +1023,11 @@ function renderCurrentItem() {
       (currentItem.unit === 'ks2_ww2' || String(currentItem.unit).startsWith('ks2')),
   );
   const hasPosterImage = Boolean(currentItem.image && currentItem.image.trim().length > 0);
-  const hasInteractive = Boolean(isKs2Item && currentItem.interactiveUrl);
+  const hasInteractive = Boolean(
+    currentItem.interactiveUrl &&
+      String(currentItem.interactiveUrl).trim().length > 0 &&
+      (isKs2Item || !hasPosterImage),
+  );
 
   if (btnToggleDrawer) {
     btnToggleDrawer.style.display = 'none';
@@ -1943,7 +2043,10 @@ export async function openLessonInfographicModal(lessonIdOrIndex, unitId, option
     const unitList = manifest[activeUnit] || [];
     const targetStr = String(targetLesson).replace(/^lesson_/i, '');
     const matched = unitList.filter((item) => {
-      if (!item || !item.image || String(item.image).trim().length === 0) return false;
+      const hasMedia =
+        (item && item.image && String(item.image).trim().length > 0) ||
+        (item && item.interactiveUrl && String(item.interactiveUrl).trim().length > 0);
+      if (!hasMedia) return false;
       const itemLesson = String(item.lessonId || '').replace(/^lesson_/i, '');
       return itemLesson === targetStr;
     });
@@ -1953,11 +2056,22 @@ export async function openLessonInfographicModal(lessonIdOrIndex, unitId, option
   }
 
   if (Array.isArray(items) && !isKs2Active) {
-    items = items.filter((it) => it && it.image && String(it.image).trim().length > 0);
+    items = items.filter(
+      (it) =>
+        it &&
+        ((it.image && String(it.image).trim().length > 0) ||
+          (it.interactiveUrl && String(it.interactiveUrl).trim().length > 0)),
+    );
   }
 
   if (items && items.length > 0) {
-    openInfographicModal({ items, startIndex: 0, ...options, initialMode: isKs2Active ? options.initialMode : 'poster' });
+    const firstHasPoster = Boolean(items[0].image && String(items[0].image).trim().length > 0);
+    openInfographicModal({
+      items,
+      startIndex: 0,
+      ...options,
+      initialMode: options.initialMode || (firstHasPoster ? 'poster' : 'interactive'),
+    });
   }
 }
 
@@ -2011,6 +2125,16 @@ export async function openLessonInfographicModalToPart(partNumber, lessonIdOrInd
 export function closeInfographicModal() {
   const modal = document.getElementById('hub-infographic-modal');
   if (modal) {
+    try {
+      const iframe = modal.querySelector('#infographic-frame');
+      if (iframe) {
+        if (iframe.contentWindow && typeof iframe.contentWindow.stopAllAudio === 'function') {
+          iframe.contentWindow.stopAllAudio();
+        }
+        iframe.src = 'about:blank';
+        iframe.removeAttribute('data-loaded-src');
+      }
+    } catch (e) {}
     modal.style.display = 'none';
   }
   document.body.style.overflow = '';

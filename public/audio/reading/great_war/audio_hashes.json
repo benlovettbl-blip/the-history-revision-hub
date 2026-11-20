@@ -1,0 +1,40 @@
+{
+  "unitId": "great_war",
+  "clips": {
+    "r2": {
+      "hash": "24dc997253291609bda99ca03ff42e87e17dc81120feeb62945684a71e91783e",
+      "bytes": 842348,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Edwardian Yachtsman · Erskine Childers",
+      "updatedAt": "2026-11-19T22:35:17.793Z"
+    },
+    "r1": {
+      "hash": "73f78819d426a6951043e1e5307c723f5f05449aea008a083dfc68e04217330d",
+      "bytes": 1013420,
+      "voiceKey": "ww1_british_officer",
+      "badge": "Edwardian Narrator · Joseph Conrad",
+      "updatedAt": "2026-11-19T22:35:27.496Z"
+    },
+    "r0": {
+      "hash": "5d2ea04adc0efa80e5de9383c21ae024ab8a8ea962287580b64667c69263495c",
+      "bytes": 975308,
+      "voiceKey": "male_historian",
+      "badge": "Studio Historian · Christopher Clark",
+      "updatedAt": "2026-11-19T22:35:32.758Z"
+    },
+    "r3": {
+      "hash": "4aeb8a1324c3fb33ded8751330f60a61df189e0fabc3aab949a96b292e721031",
+      "bytes": 869420,
+      "voiceKey": "female_historian",
+      "badge": "Studio Historian · Barbara W. Tuchman",
+      "updatedAt": "2026-11-19T22:36:31.906Z"
+    },
+    "r4": {
+      "hash": "a60f60fe97b7884d3e4c0d52058d7905ea808b15fd4f8fd3f9acc2bd6a8ccf55",
+      "bytes": 880940,
+      "voiceKey": "ww1_german_voice",
+      "badge": "Paul Bäumer · Young German Soldier",
+      "updatedAt": "2026-11-19T22:37:24.013Z"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "unitId": "industrialisation_and_empire",
+  "voiceKey": "female_historian",
+  "blocks": {
+    "lesson_4_b1": {
+      "hash": "43c23c6d621ff5fe",
+      "bytes": 163052,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:25:05.329Z"
+    },
+    "lesson_4_b2": {
+      "hash": "7c2f3bacbab7ea8b",
+      "bytes": 176588,
+      "words": 80,
+      "updatedAt": "2026-11-19T23:57:48.739Z"
+    },
+    "lesson_4_b3": {
+      "hash": "0061f5f415d7c16c",
+      "bytes": 146444,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:25:05.978Z"
+    },
+    "lesson_4_b4": {
+      "hash": "0c0c09dfb5b2ba77",
+      "bytes": 154892,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:25:06.289Z"
+    },
+    "lesson_4_b5": {
+      "hash": "3b4117b7e104b889",
+      "bytes": 157292,
+      "words": 81,
+      "updatedAt": "2026-11-19T18:25:06.630Z"
+    },
+    "lesson_5_b1": {
+      "hash": "f585f6be4553fe18",
+      "bytes": 176396,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:25:07.001Z"
+    },
+    "lesson_5_b2": {
+      "hash": "ac42b6098645d900",
+      "bytes": 154124,
+      "words": 81,
+      "updatedAt": "2026-11-19T18:25:07.344Z"
+    },
+    "lesson_5_b3": {
+      "hash": "647c1ed040d15217",
+      "bytes": 151436,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:25:07.665Z"
+    },
+    "lesson_5_b4": {
+      "hash": "611cb921f9383179",
+      "bytes": 162092,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:25:08.017Z"
+    },
+    "lesson_5_b5": {
+      "hash": "3731a41384ed9915",
+      "bytes": 159692,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:25:08.360Z"
+    },
+    "lesson_1_b1": {
+      "hash": "7dca35e3ac350024",
+      "bytes": 152876,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:25:12.804Z"
+    },
+    "lesson_1_b2": {
+      "hash": "deaa28485a53303e",
+      "bytes": 157676,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:25:13.168Z"
+    },
+    "lesson_1_b3": {
+      "hash": "df1de77c978ed625",
+      "bytes": 149612,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:25:13.576Z"
+    },
+    "lesson_1_b4": {
+      "hash": "652f42cc3ae6e15d",
+      "bytes": 167372,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:25:13.997Z"
+    },
+    "lesson_1_b5": {
+      "hash": "14be2a1d46589732",
+      "bytes": 164876,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:25:14.331Z"
+    },
+    "lesson_2_b1": {
+      "hash": "558c628cbefb8b96",
+      "bytes": 170156,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:25:14.685Z"
+    },
+    "lesson_2_b2": {
+      "hash": "22edbab06f819005",
+      "bytes": 155756,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:25:15.011Z"
+    },
+    "lesson_2_b3": {
+      "hash": "f23ec6ad055b0977",
+      "bytes": 158924,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:25:15.343Z"
+    },
+    "lesson_2_b4": {
+      "hash": "d23c581d00c2d290",
+      "bytes": 162476,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:25:15.684Z"
+    },
+    "lesson_2_b5": {
+      "hash": "cd4f3527bde66334",
+      "bytes": 148844,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:25:16.012Z"
+    },
+    "lesson_3_b1": {
+      "hash": "8ed0d2914f2654a2",
+      "bytes": 169292,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:25:16.369Z"
+    },
+    "lesson_3_b2": {
+      "hash": "3910dc6c9dbdfa45",
+      "bytes": 141644,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:25:16.677Z"
+    },
+    "lesson_3_b3": {
+      "hash": "ab6e46ff52f53acf",
+      "bytes": 164972,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:25:17.018Z"
+    },
+    "lesson_3_b4": {
+      "hash": "e2d25b2e3cd9cbb1",
+      "bytes": 153836,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:25:17.350Z"
+    },
+    "lesson_3_b5": {
+      "hash": "38e8e793dccb582b",
+      "bytes": 162476,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:25:17.718Z"
+    }
+  }
+}

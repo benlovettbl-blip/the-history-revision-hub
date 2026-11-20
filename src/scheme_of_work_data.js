@@ -972,7 +972,7 @@ export const SCHEMES_OF_WORK_DATA = {
       'How did total industrial warfare transform the human experience of soldiers, civilians, and the global order between 1914 and 1919?',
     textbookPdf: '/pdfs/great_war_part2_textbook.pdf',
     workbookPdf: '/pdfs/great_war_part2_pupil_workbook.pdf',
-    combinedPdf: '/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf',
+    combinedPdf: '/pdfs/great_war_part2_combined_workbook.pdf',
     enquiries: [
       {
         num: 1,
@@ -1427,8 +1427,8 @@ export const SCHEMES_OF_WORK_DATA = {
     overarchingEnquiry:
       'How did ordinary families and children across Britain and Europe experience and survive the Second World War?',
     textbookPdf: '/pdfs/ks2_ww2_textbook.pdf',
-    sowPdf: '/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf',
-    workbookPdf: '/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf',
+    sowPdf: '/pdfs/ks2_ww2_scheme_of_work.pdf',
+    workbookPdf: '/pdfs/ks2_ww2_pupil_workbook.pdf',
     enquiries: [
       {
         num: 1,

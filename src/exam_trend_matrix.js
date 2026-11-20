@@ -45,8 +45,8 @@ const UNIT_CONFIGS = {
     gradient: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
     primary: '#0f172a',
     light: '#f1f5f9',
-    guidePdf: '/pdfs/cme_revision_guide.pdf',
-    guideName: 'Open in 14-Page Revision Guide',
+    guidePdf: '/pdfs/cme_new_revision_guide.pdf',
+    guideName: 'Open Condensed Revision Guide',
   },
   weimar_nazi_germany: {
     id: 'weimar_nazi_germany',

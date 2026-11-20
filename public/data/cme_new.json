@@ -1491,7 +1491,117 @@
           "used_by_b": "British official and Jewish/Israeli usage",
           "note": "Calling it a national revolt stresses a struggle for independence; calling it disturbances or riots stresses violence and disorder."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "00",
+        "slug": "cme_kt1_0_visual_story_sheet",
+        "ktBadge": "Key Topic 1.0 • Origins",
+        "datesBadge": "1915 – 1939",
+        "topicLabel": "Key Topic 1.0: Broken Promises & Imperial Borders (1915–1939)",
+        "title": "Why Did Broken British Promises Spark Conflict in Palestine?",
+        "spokenTitle": "Why did broken British promises spark conflict in Palestine?",
+        "thumbUrl": "/images/cme_arab_revolt_fighters_hejaz_1916.jpg",
+        "provenanceNote": "IWM, The National Archives UK, Library of Congress & Wikimedia Archival Maps (Zero AI Imagery)",
+        "bridges": [
+          "Secret Deal",
+          "3rd Promise",
+          "British Rule",
+          "Arab Revolt",
+          "Both Betrayed"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "McMahon Promise to Arabs",
+            "date": "1915–1916",
+            "img": "/images/cme_arab_revolt_fighters_hejaz_1916.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Arab Revolt Against Turkish Ottoman Rule",
+            "html": "During WWI, Britain needed Arab help to fight the <strong>Ottoman Empire</strong> and guard the Suez Canal. Diplomat <strong>Sir Henry McMahon</strong> promised Sharif Hussein an <strong>independent Arab state</strong>—which Arabs believed included Palestine.",
+            "spoken": "Why did broken British promises spark conflict in Palestine? <short pause> During World War One, Britain needed Arab help to fight the Ottoman Empire and guard the Suez Canal. Diplomat Sir Henry McMahon promised Sharif Hussein an independent Arab state, which Arabs believed included Palestine.",
+            "paired_prose_hash": "51ef0accfe",
+            "connective": "Why did broken British promises spark conflict in Palestine?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Secret Sykes-Picot Carve-Up",
+            "date": "May 1916",
+            "img": "/images/cme_sykes_picot_1916_map.jpg",
+            "mode": "contain-light",
+            "stat": "Britain & France Secretly Divide the Middle East",
+            "html": "Behind Arab backs, Britain and France signed the secret <strong>Sykes-Picot Agreement</strong>. They drew straight lines on a map to split Arab lands for oil and trade, making Palestine an <strong>international zone</strong>.",
+            "spoken": "Behind the scenes came a secret deal. <short pause> Behind Arab backs, Britain and France signed the secret Sykes-Picot Agreement . They drew straight lines on a map to split Arab lands for oil and trade, making Palestine an international zone .",
+            "paired_prose_hash": "ef64f00226",
+            "connective": "Behind the scenes came a secret deal."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The Balfour Declaration",
+            "date": "2 Nov 1917",
+            "img": "/images/cme_balfour_declaration_1917.jpg",
+            "mode": "contain-light",
+            "stat": "Over 90% of Palestine’s Population Was Arab",
+            "html": "Seeking Jewish wartime support, Foreign Secretary <strong>Arthur Balfour</strong> backed a <strong>“national home for the Jewish people”</strong> in Palestine. Yet over <strong>90% of the people</strong> living there were Palestinian Arabs.",
+            "spoken": "Then Britain made a third conflicting promise. <short pause> Seeking Jewish wartime support, Foreign Secretary Arthur Balfour backed a “national home for the Jewish people” in Palestine. Yet over 90% of the people living there were Palestinian Arabs.",
+            "paired_prose_hash": "5aff1e5c83",
+            "connective": "Then Britain made a third conflicting promise."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "British Mandate & Migration",
+            "date": "1920–1936",
+            "img": "/images/cme_gcse_map_1922_british_mandate.svg",
+            "mode": "contain-light",
+            "stat": "Jewish Population Rises to Nearly 30% by 1936",
+            "html": "The League of Nations gave Britain the <strong>Palestine Mandate</strong> in 1922. As Jews fled <strong>Nazi persecution</strong> in the 1930s, Jewish land purchases and numbers surged, sparking deadly communal riots.",
+            "spoken": "British rule brought rising tension. <short pause> The League of Nations gave Britain the Palestine Mandate in 1922. As Jews fled Nazi persecution in the 1930s, Jewish land purchases and numbers surged, sparking deadly communal riots.",
+            "paired_prose_hash": "2cd42b623f",
+            "connective": "British rule brought rising tension."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Arab Revolt & White Paper",
+            "date": "1936–1939",
+            "img": "/images/cme_plate_arab_revolt_rebels_1938.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "1939 White Paper: 75,000 Cap Over 5 Years",
+            "html": "Palestinian Arabs launched the <strong>Great Arab Revolt</strong> against British troops and oil pipelines. With WWII approaching, Britain’s <strong>1939 White Paper</strong> strictly capped Jewish entry at <strong>75,000 over five years</strong>.",
+            "spoken": "Anger boiled over into the Arab Revolt. <short pause> Palestinian Arabs launched the Great Arab Revolt against British troops and oil pipelines. With World War Two approaching, Britain’s 1939 White Paper strictly capped Jewish entry at 75,000 over five years .",
+            "paired_prose_hash": "f2a6ba7a7d",
+            "connective": "Anger boiled over into the Arab Revolt."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Two Peoples, One Promised Land",
+            "date": "By Sept 1939",
+            "img": "/images/cme_white_paper_protest_jerusalem_1939.jpg",
+            "mode": "contain",
+            "stat": "Both Arabs and Jews Felt Betrayed by Britain",
+            "html": "Arabs felt cheated of independence, while Zionists saw the <strong>1939 cap</strong> as a death sentence for European Jews. By 1939, Britain had trapped itself in an <strong>impossible conflict</strong>.",
+            "spoken": "Both sides now felt betrayed. <short pause> Arabs felt cheated of independence, while Zionists saw the 1939 cap as a death sentence for European Jews. By 1939, Britain had trapped itself in an impossible conflict .",
+            "connective": "Both sides now felt betrayed."
+          }
+        ],
+        "takeaway": "During WWI, Britain promised the same land to Arabs, French allies, and Zionists—leaving both Arabs and Jews furious with British rule by 1939.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> During World War One, Britain promised the same land to Arabs, French allies, and Zionists, leaving both Arabs and Jews furious with British rule by 1939.",
+        "vocab": [
+          [
+            "1. Zionism",
+            "Movement to build a safe national homeland for Jewish people in Palestine."
+          ],
+          [
+            "2. Balfour Declaration",
+            "1917 British letter backing a Jewish national home in Arab-majority Palestine."
+          ],
+          [
+            "3. 1939 White Paper",
+            "British policy capping Jewish entry at 75,000 over 5 years to protect Arab oil ties."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_1",
@@ -3305,7 +3415,130 @@
           "used_by_b": "Usage by their supporters",
           "note": "Each label passes a judgement on the same armed groups, so historians usually name the group and describe exactly what it did."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "cme_kt1_1_visual_story_sheet",
+        "ktBadge": "Key Topic 1.1 • Lesson 1",
+        "datesBadge": "1945 – May 1948",
+        "topicLabel": "Key Topic 1.1: British Withdrawal and the Creation of Israel",
+        "title": "Why Did Britain Leave Palestine — and How Was Israel Born?",
+        "spokenTitle": "Why did Britain leave Palestine, and how was Israel born?",
+        "thumbUrl": "/images/cme_plate_king_david_etzel_1946.jpg",
+        "provenanceNote": "IWM, GPO Israel, Palestine Police Archive & UN Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "Sparked Revolt",
+          "Deadliest Attack",
+          "Reprisals & Wartime Debt",
+          "Handed to UN",
+          "Triggered War"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Clash Over Immigration",
+            "date": "1945",
+            "img": "/images/bergen_belsen_liberation_british_1945.jpg",
+            "mode": "contain",
+            "stat": "250,000 Survivors vs 1,500 / Month Limit",
+            "html": "After WWII, <strong>250,000 Jewish Holocaust survivors</strong> wanted a safe home in Palestine. To protect Arab support and oil, Britain capped entry at <strong>1,500 arrivals a month</strong>.",
+            "spoken": "Why did Britain leave Palestine, and how was Israel born? <short pause> After World War Two, 250,000 Jewish Holocaust survivors wanted a safe home in Palestine. To protect Arab support and oil, Britain capped entry at 1,500 arrivals a month .",
+            "paired_prose_hash": "ae9268cd5d",
+            "connective": "Why did Britain leave Palestine, and how was Israel born?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Jewish Armed Rebellion",
+            "date": "Oct 1945",
+            "img": "/images/cme_plate_jerusalem_bevingrad_1948.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "100,000 British Soldiers Sent to Keep Control",
+            "html": "Three Jewish armed groups (<strong>Haganah, Irgun, and Lehi</strong>) united to force Britain out. They bombed railways and bridges while Britain locked Jerusalem behind barbed wire.",
+            "spoken": "This sparked revolt. <short pause> Three Jewish armed groups ( Haganah, Irgun, and Lehi ) united to force Britain out. They bombed railways and bridges while Britain locked Jerusalem behind barbed wire.",
+            "paired_prose_hash": "155eb558a4",
+            "connective": "This sparked revolt."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "King David Hotel Bombing",
+            "date": "July 1946",
+            "img": "/images/cme_plate_king_david_etzel_1946.jpg",
+            "mode": "contain",
+            "stat": "22 July 1946 • 91 Killed at British HQ",
+            "html": "<strong>Irgun</strong> fighters hid milk-can bombs beneath Britain’s headquarters at the <strong>King David Hotel</strong>. The blast collapsed six floors and <strong>killed 91 people</strong> in Jerusalem.",
+            "spoken": "Then came the deadliest attack. <short pause> Irgun fighters hid milk-can bombs beneath Britain’s headquarters at the King David Hotel . The blast collapsed six floors and killed 91 people in Jerusalem.",
+            "paired_prose_hash": "212c53477d",
+            "connective": "Then came the deadliest attack."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Sergeants Affair & Public Anger",
+            "date": "July 1947",
+            "img": "/images/cme_plate_irgun_lehi_wanted_poster_1947.jpg",
+            "mode": "landscape-light",
+            "pos": "center 4%",
+            "stat": "WWII Debt + Two British Sergeants Hanged",
+            "html": "Britain was broke after WWII, and <strong>Irgun</strong> hanged <strong>two captured British sergeants</strong>. Outraged British newspapers and voters demanded <strong>bringing troops home</strong>.",
+            "spoken": "Reprisals and wartime debt pushed Britain to breaking point. <short pause> Britain was broke after World War Two, and Irgun hanged two captured British sergeants . Outraged British newspapers and voters demanded bringing troops home .",
+            "paired_prose_hash": "6c3ba83a68",
+            "connective": "Reprisals and wartime debt pushed Britain to breaking point."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "SS Exodus & UN Partition (181)",
+            "date": "Feb–Nov 1947",
+            "img": "/units/cme_new/assets/UN_Partition_Plan_For_Palestine_1947_fixed.png",
+            "mode": "split-bar",
+            "splitConfig": {
+              "barTitle": "UN Land Split (Res. 181)",
+              "leftWidth": 55,
+              "leftLabel": "55% Jewish",
+              "rightWidth": 45,
+              "rightLabel": "45% Arab",
+              "bullets": [
+                "<strong>Jerusalem:</strong> Run by UN",
+                "<strong>Jews:</strong> Accepted plan",
+                "<strong>Arabs:</strong> Rejected (2/3 of pop.)"
+              ]
+            },
+            "stat": "SS Exodus: 4,515 Survivors Sent Back to Germany",
+            "html": "Shamed after turning back the refugee ship <strong>SS Exodus</strong>, Britain handed Palestine to the <strong>UN</strong>. <strong>UN Resolution 181</strong> split the land (<strong>55% / 45%</strong>), which Arab leaders rejected.",
+            "spoken": "So Britain handed Palestine to the United Nations. <short pause> Shamed after turning back the refugee ship SS Exodus , Britain handed Palestine to the UN . UN Resolution 181 split the land ( 55% / 45% ), which Arab leaders rejected.",
+            "paired_prose_hash": "4f0949917b",
+            "connective": "So Britain handed Palestine to the United Nations."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Israel Born & War Begins",
+            "date": "14 May 1948",
+            "img": "/images/cme_bengurion_declaration_1948.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Civil War ➔ Israel Declared ➔ 5 Arab Armies Invade",
+            "html": "Civil war raged until the last British soldiers left on <strong>14 May 1948</strong>. <strong>David Ben-Gurion</strong> declared the <strong>State of Israel</strong>, and <strong>five Arab armies invaded</strong>.",
+            "spoken": "That rejection triggered immediate war. <short pause> Civil war raged until the last British soldiers left on the fourteenth of May 1948 . David Ben-Gurion declared the State of Israel , and five Arab armies invaded .",
+            "connective": "That rejection triggered immediate war."
+          }
+        ],
+        "takeaway": "WWII debt, Irgun attacks, and shame over SS Exodus forced Britain to hand Palestine to the UN—whose 55%/45% split sparked Israel’s birth and the 1948 War.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> World War Two debt, Irgun attacks, and shame over SS Exodus forced Britain to hand Palestine to the UN, whose 55%/45% split sparked Israel’s birth and the 1948 War.",
+        "vocab": [
+          [
+            "1. British Mandate",
+            "British rule over Palestine (1920–1948), ended when Britain walked away."
+          ],
+          [
+            "2. Irgun",
+            "Radical Jewish armed group that bombed the King David Hotel."
+          ],
+          [
+            "3. UN Partition (181)",
+            "Nov 1947 UN vote splitting Palestine into Jewish (55%) and Arab (45%) states."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2",
@@ -5070,7 +5303,128 @@
           "used_by_b": "Usage preferred by many of the community itself",
           "note": "About 150,000 Arabs stayed inside Israel in 1949 and became citizens; the two names stress either their citizenship or their Palestinian identity."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "cme_kt1_2_visual_story_sheet",
+        "ktBadge": "Key Topic 1.2 • Lesson 2",
+        "datesBadge": "May 1948 – 1954",
+        "topicLabel": "Key Topic 1.2: The 1948–49 War & The Palestinian Refugee Crisis",
+        "title": "How Did Israel Survive 1948 — and Why Did 700,000 Palestinians Flee?",
+        "spokenTitle": "How did Israel survive 1948, and why did 700,000 Palestinians flee?",
+        "thumbUrl": "/images/cme_palestinian_refugees_1948.jpg",
+        "provenanceNote": "US Military Academy Cartographic Archive, GPO Israel & UNRWA Archive (Zero AI Imagery)",
+        "bridges": [
+          "UN Truce",
+          "Mass Flight",
+          "1949 Ceasefire",
+          "Mass Migration",
+          "Bitter Divide"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Israel Declared & 5 Armies Invade",
+            "date": "14–15 May 1948",
+            "img": "/images/cme_1948_arab_invasion_map.png",
+            "mode": "contain-light",
+            "stat": "Egypt, Jordan, Syria, Lebanon & Iraq Attack",
+            "html": "Hours after <strong>David Ben-Gurion</strong> declared Israel on <strong>14 May 1948</strong>, five Arab League armies invaded. Outgunned Israeli fighters fought desperately while Jordan seized <strong>East Jerusalem</strong>.",
+            "spoken": "How did Israel survive 1948, and why did 700,000 Palestinians flee? <short pause> Hours after David Ben-Gurion declared Israel on the fourteenth of May 1948 , five Arab League armies invaded. Outgunned Israeli fighters fought desperately while Jordan seized East Jerusalem .",
+            "paired_prose_hash": "faf70282d7",
+            "connective": "How did Israel survive 1948, and why did 700,000 Palestinians flee?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "First Truce & Czech Arms Deal",
+            "date": "June–July 1948",
+            "img": "/images/cme_avia_s199_israel_1948.png",
+            "mode": "contain",
+            "stat": "Unified IDF + Rifles & Fighter Planes Flown In",
+            "html": "During a four-week <strong>UN truce</strong>, Ben-Gurion merged militias into one <strong>IDF army</strong> and flew in thousands of <strong>Czech weapons and fighter planes</strong>. Divided Arab armies lost the initiative.",
+            "spoken": "A four-week U.N. truce turned the tide. <short pause> During a four-week UN truce , Ben-Gurion merged militias into one IDF army and flew in thousands of Czech weapons and fighter planes . Divided Arab armies lost the initiative.",
+            "paired_prose_hash": "d5eb7503b5",
+            "connective": "A four-week U.N. truce turned the tide."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The Nakba Refugee Crisis",
+            "date": "1948–1949",
+            "img": "/images/cme_palestinian_refugees_1948.jpg",
+            "mode": "contain",
+            "stat": "Over 700,000 Palestinian Arabs Displaced",
+            "html": "Panic after the <strong>Deir Yassin massacre</strong> (over 100 villagers killed) and IDF clearances forced <strong>700,000 Palestinians</strong> from 400+ villages. Palestinians call this catastrophe the <strong>Nakba</strong>.",
+            "spoken": "Fighting caused a massive refugee crisis. <short pause> Panic after the Deir Yassin massacre (over 100 villagers killed) and IDF clearances forced 700,000 Palestinians from 400+ villages. Palestinians call this catastrophe the Nakba .",
+            "paired_prose_hash": "e776547552",
+            "connective": "Fighting caused a massive refugee crisis."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "1949 Armistice & Green Line",
+            "date": "Feb–July 1949",
+            "img": "/images/cme_arab_legion_old_city_walls_1948.jpg",
+            "mode": "split-bar",
+            "splitConfig": {
+              "barTitle": "1949 Land Control (Green Line)",
+              "leftWidth": 78,
+              "leftLabel": "78% Israel",
+              "rightWidth": 22,
+              "rightLabel": "22% Arab",
+              "bullets": [
+                "<strong>West Bank &amp; E. Jerusalem:</strong> Jordan",
+                "<strong>Gaza Strip:</strong> Run by Egypt",
+                "<strong>Palestinian State:</strong> None created"
+              ]
+            },
+            "stat": "Israel Expands From 55% (UN Plan) to 78%",
+            "html": "UN talks on <strong>Rhodes</strong> drew ceasefire borders called the <strong>Green Line</strong>, leaving Israel with <strong>78% of Palestine</strong>. Jordan took the West Bank and Egypt held Gaza, with <strong>zero peace treaties</strong>.",
+            "spoken": "Armistice talks redrew the map in 1949. <short pause> UN talks on Rhodes drew ceasefire borders called the Green Line , leaving Israel with 78% of Palestine . Jordan took the West Bank and Egypt held Gaza, with zero peace treaties .",
+            "paired_prose_hash": "91ea6697e1",
+            "connective": "Armistice talks redrew the map in 1949."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Law of Return Doubles Israel",
+            "date": "1950–1954",
+            "img": "/images/cme_plate_beit_lid_maabara_1950.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Jewish Population Doubles to 1.4 Million + US Aid",
+            "html": "Israel’s <strong>1950 Law of Return</strong> gave every Jewish person worldwide the right to citizenship. Backed by <strong>$100m in US loans</strong>, Israel’s population doubled while Palestinian refugees were barred from returning.",
+            "spoken": "Mass Jewish migration transformed the new state. <short pause> Israel’s 1950 Law of Return gave every Jewish person worldwide the right to citizenship. Backed by 100 million dollars in US loans , Israel’s population doubled while Palestinian refugees were barred from returning.",
+            "paired_prose_hash": "f70d352cda",
+            "connective": "Mass Jewish migration transformed the new state."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Armed Camps & No Peace",
+            "date": "By 1954",
+            "img": "/images/nakba_unrwa_khan_younis_1948.jpg",
+            "mode": "contain",
+            "stat": "UNRWA Tent Camps Surround Israel’s Borders",
+            "html": "Israel survived stronger and larger, but <strong>700,000 stateless refugees</strong> lived in <strong>UNRWA camps</strong> along its borders. Arab states refused recognition, guaranteeing a <strong>second round of war</strong>.",
+            "spoken": "A bitter divide was locked in place. <short pause> Israel survived stronger and larger, but 700,000 stateless refugees lived in UNRWA camps along its borders. Arab states refused recognition, guaranteeing a second round of war .",
+            "connective": "A bitter divide was locked in place."
+          }
+        ],
+        "takeaway": "Unified IDF command and Czech arms let Israel win 78% of the land in 1948–49—while displacing 700,000 Palestinian refugees into camps with no peace treaty.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Unified IDF command and Czech arms let Israel win 78% of the land in 1948, 49, while displacing 700,000 Palestinian refugees into camps with no peace treaty.",
+        "vocab": [
+          [
+            "1. The Nakba",
+            "“The Catastrophe”—the flight and expulsion of 700,000 Palestinians in 1948–49."
+          ],
+          [
+            "2. Green Line",
+            "1949 ceasefire border giving Israel 78%, Jordan the West Bank, and Egypt Gaza."
+          ],
+          [
+            "3. Law of Return (1950)",
+            "Israeli law granting every Jewish person worldwide automatic right to citizenship."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3",
@@ -6857,7 +7211,117 @@
           "used_by_b": "Israeli usage",
           "note": "The same Palestinian raiders from Gaza were described as self-sacrificing fighters by Arab governments and as infiltrators or terrorists by Israel."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "cme_kt1_3_visual_story_sheet",
+        "ktBadge": "Key Topic 1.3 • Lesson 3",
+        "datesBadge": "1955 – 1958",
+        "topicLabel": "Key Topic 1.3: Nasser, Cold War Arms & The Suez Crisis (1955–1963)",
+        "title": "How Did Nasser Turn Military Defeat at Suez into a Huge Political Victory?",
+        "spokenTitle": "How did Nasser turn military defeat at Suez into a huge political victory?",
+        "thumbUrl": "/images/cme_port_said_british_troops_1956.jpg",
+        "provenanceNote": "IWM, IDF Archive, Al-Ahram Archive & Wikimedia Commons (Zero AI Imagery)",
+        "bridges": [
+          "Turned East",
+          "Loan Pulled",
+          "Secret Plot",
+          "US Pressure",
+          "Arab Hero"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Israel’s Gaza Raid Shocks Egypt",
+            "date": "28 Feb 1955",
+            "img": "/images/cme_operation_black_arrow_idf_1955.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Operation Black Arrow • 38 Egyptian Soldiers Killed",
+            "html": "After fedayeen border raids from Gaza, Israeli paratroopers attacked an Egyptian base and <strong>killed 38 Egyptian soldiers</strong>. Humiliated, Egypt’s leader <strong>Gamal Abdel Nasser</strong> urgently sought modern weapons.",
+            "spoken": "How did Nasser turn military defeat at Suez into a huge political victory? <short pause> After fedayeen border raids from Gaza, Israeli paratroopers attacked an Egyptian base and killed 38 Egyptian soldiers . Humiliated, Egypt’s leader Gamal Abdel Nasser urgently sought modern weapons.",
+            "paired_prose_hash": "4b8867a2d2",
+            "connective": "How did Nasser turn military defeat at Suez into a huge political victory?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Soviet Arms via Czechoslovakia",
+            "date": "Sept 1955",
+            "img": "/images/cme_plate_egyptian_mig15_fighter.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "200 Soviet MiG-15 Jets & 300 Tanks for Egypt",
+            "html": "Refusing Western Cold War strings, Nasser signed the <strong>Czech Arms Deal</strong> for Soviet jets and tanks while blockading the <strong>Straits of Tiran</strong>. The Cold War had entered the Middle East.",
+            "spoken": "So Nasser turned East for weapons. <short pause> Refusing Western Cold War strings, Nasser signed the Czech Arms Deal for Soviet jets and tanks while blockading the Straits of Tiran . The Cold War had entered the Middle East.",
+            "paired_prose_hash": "669196b377",
+            "connective": "So Nasser turned East for weapons."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Nasser Seizes the Suez Canal",
+            "date": "26 July 1956",
+            "img": "/images/cme_alahram_suez_1956.jpg",
+            "mode": "contain-light",
+            "stat": "US Cancels $56m Aswan Dam Loan ➔ Canal Taken",
+            "html": "Angry at Nasser’s Communist ties, the USA cancelled loans for his <strong>Aswan High Dam</strong>. Nasser hit back by <strong>nationalising the Anglo-French Suez Canal</strong> so ship tolls would fund the dam.",
+            "spoken": "Cancelled loans sparked a bold counter-move. <short pause> Angry at Nasser’s Communist ties, the USA cancelled loans for his Aswan High Dam . Nasser hit back by nationalising the Anglo-French Suez Canal so ship tolls would fund the dam.",
+            "paired_prose_hash": "7e247e7566",
+            "connective": "Cancelled loans sparked a bold counter-move."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Secret Sèvres Plot & Invasion",
+            "date": "Oct–Nov 1956",
+            "img": "/images/cme_port_said_british_troops_1956.jpg",
+            "mode": "contain",
+            "stat": "Britain, France & Israel Secretly Collude",
+            "html": "Under the secret <strong>Protocol of Sèvres</strong>, Israel invaded <strong>Sinai</strong> on 29 October. Britain and France pretended to play peacekeeper, then bombed Egypt and landed troops at <strong>Port Said</strong>.",
+            "spoken": "Britain, France, and Israel hatched a secret plot. <short pause> Under the secret Protocol of Sèvres , Israel invaded Sinai on the twenty-ninth of October. Britain and France pretended to play peacekeeper, then bombed Egypt and landed troops at Port Said .",
+            "paired_prose_hash": "bec707bc67",
+            "connective": "Britain, France, and Israel hatched a secret plot."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "US Threat Forces Humiliating Exit",
+            "date": "Nov 1956–1957",
+            "img": "/images/cme_plate_unef_peacekeepers_sinai_1957.jpg",
+            "mode": "contain",
+            "stat": "UNEF Peacekeepers Placed in Sinai & Tiran Reopened",
+            "html": "Furious US President <strong>Eisenhower</strong> threatened to crash the British pound, forcing Britain, France, and Israel to withdraw. <strong>UNEF peacekeepers</strong> patrolled Sinai and reopened the <strong>Straits of Tiran</strong>.",
+            "spoken": "Furious American pressure forced a retreat. <short pause> Furious US President Eisenhower threatened to crash the British pound, forcing Britain, France, and Israel to withdraw. UNEF peacekeepers patrolled Sinai and reopened the Straits of Tiran .",
+            "paired_prose_hash": "a6e3e721ed",
+            "connective": "Furious American pressure forced a retreat."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Nasser Champion of the Arab World",
+            "date": "1957–1958",
+            "img": "/images/cme_nasser_nehru_bandung_1955.jpg",
+            "mode": "contain",
+            "stat": "Egypt Keeps Canal + Forms UAR With Syria (1958)",
+            "html": "British imperial power collapsed while <strong>Nasser kept the Suez Canal</strong> and became the hero of <strong>Pan-Arabism</strong>—uniting Egypt and Syria into the <strong>United Arab Republic</strong> in 1958.",
+            "spoken": "Nasser emerged as an undisputed Arab hero. <short pause> British imperial power collapsed while Nasser kept the Suez Canal and became the hero of Pan-Arabism, uniting Egypt and Syria into the United Arab Republic in 1958.",
+            "connective": "Nasser emerged as an undisputed Arab hero."
+          }
+        ],
+        "takeaway": "Israel, Britain, and France won on the battlefield in 1956, but US financial pressure forced them out—leaving Nasser with the Suez Canal and Pan-Arab leadership.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Israel, Britain, and France won on the battlefield in 1956, but US financial pressure forced them out, leaving Nasser with the Suez Canal and Pan-Arab leadership.",
+        "vocab": [
+          [
+            "1. Pan-Arabism",
+            "Nasser’s dream of uniting Arab nations against Western imperialism and Israel."
+          ],
+          [
+            "2. Protocol of Sèvres",
+            "Secret Oct 1956 plot by Britain, France, and Israel to invade Egypt."
+          ],
+          [
+            "3. UNEF",
+            "UN peacekeeping force placed in Sinai (1957–67) while reopening Tiran to Israel."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_4",
@@ -8310,7 +8774,129 @@
         ],
         "timer_seconds": 90
       },
-      "contested_terms": []
+      "contested_terms": [],
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "cme_kt2_1_visual_story_sheet",
+        "ktBadge": "Key Topic 2.1 • Lesson 4",
+        "datesBadge": "1964 – April 1967",
+        "topicLabel": "Key Topic 2.1: Water, Border Raids & Rising Tension (1964–1967)",
+        "title": "How Did Water Disputes and Border Raids Push the Region Toward War?",
+        "spokenTitle": "How did water disputes and border raids push the region toward war?",
+        "thumbUrl": "/images/cme_samu_raid_halftracks_1966.jpg",
+        "provenanceNote": "GPO Israel, Egyptian Presidential Archive & Wikimedia Cartographic Archive (Zero AI Imagery)",
+        "bridges": [
+          "Water Clash",
+          "Guerrilla Raids",
+          "Huge Reprisal",
+          "Air Dogfight",
+          "Brink of War"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Cairo Summit & PLO Founded",
+            "date": "Jan–May 1964",
+            "img": "/images/cme_cairo_summit_1964.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "May 1964: PLO Created Under Arab League Backing",
+            "html": "At the <strong>1964 Cairo Summit</strong>, Nasser warned Arab armies were not yet ready for war. Instead, Arab leaders founded the <strong>PLO</strong> to represent Palestinians and oppose Israel’s existence.",
+            "spoken": "How did water disputes and border raids push the region toward war? <short pause> At the 1964 Cairo Summit , Nasser warned Arab armies were not yet ready for war. Instead, Arab leaders founded the PLO to represent Palestinians and oppose Israel’s existence.",
+            "paired_prose_hash": "fc3600e4f9",
+            "connective": "How did water disputes and border raids push the region toward war?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Battle Over River Jordan Water",
+            "date": "1964–1966",
+            "img": "/images/israel_national_water_carrier_1964_map.png",
+            "mode": "split-bar",
+            "splitConfig": {
+              "barTitle": "1964–66 Water Conflict",
+              "leftWidth": 52,
+              "leftLabel": "Israel Carrier",
+              "rightWidth": 48,
+              "rightLabel": "Arab Diversion",
+              "bullets": [
+                "<strong>Israel:</strong> Pumps Galilee to Negev",
+                "<strong>Syria/Jordan:</strong> Try to divert rivers",
+                "<strong>Result:</strong> IDF tanks &amp; jets destroy canals"
+              ]
+            },
+            "stat": "Israeli Strikes Destroy Syrian Water Diversion Works",
+            "html": "Israel opened its <strong>National Water Carrier</strong> to irrigate the southern desert. When Syria and Jordan tried to divert the <strong>River Jordan’s headwaters</strong>, Israeli tanks and jets bombed their diggers.",
+            "spoken": "Disputes over scarce water sparked border clashes. <short pause> Israel opened its National Water Carrier to irrigate the southern desert. When Syria and Jordan tried to divert the River Jordan’s headwaters , Israeli tanks and jets bombed their diggers.",
+            "paired_prose_hash": "9bb4641f8c",
+            "connective": "Disputes over scarce water sparked border clashes."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Syria Backs Fatah Raids",
+            "date": "1965–1966",
+            "img": "/images/cme_plate_tel_katzir_golan_border.jpg",
+            "mode": "contain",
+            "stat": "Fatah Sabotage + Syrian Shelling From Golan Heights",
+            "html": "Impatient with Arab kings, <strong>Yasser Arafat’s Fatah</strong> launched guerrilla raids into Israel. From 1966, a radical <strong>Syrian government</strong> armed Fatah and shelled Israeli farms from the <strong>Golan Heights</strong>.",
+            "spoken": "Guerrilla raids escalated along the borders. <short pause> Impatient with Arab kings, Yasser Arafat’s Fatah launched guerrilla raids into Israel. From 1966, a radical Syrian government armed Fatah and shelled Israeli farms from the Golan Heights .",
+            "paired_prose_hash": "e65385eb4d",
+            "connective": "Guerrilla raids escalated along the borders."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Israel’s Massive Raid on Samu",
+            "date": "13 Nov 1966",
+            "img": "/images/cme_samu_raid_halftracks_1966.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "15 Jordanian Soldiers Killed • 100+ Homes Flattened",
+            "html": "After a Fatah landmine killed three Israeli soldiers, 4,000 IDF troops attacked <strong>Samu</strong> in Jordan’s <strong>West Bank</strong>. Humiliated by riots, <strong>King Hussein</strong> turned sharply against Israel.",
+            "spoken": "A landmine triggered a huge Israeli reprisal. <short pause> After a Fatah landmine killed three Israeli soldiers, 4,000 IDF troops attacked Samu in Jordan’s West Bank . Humiliated by riots, King Hussein turned sharply against Israel.",
+            "paired_prose_hash": "adfa30c0da",
+            "connective": "A landmine triggered a huge Israeli reprisal."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "6 Syrian Jets Shot Down",
+            "date": "7 April 1967",
+            "img": "/images/cme_iaf_mirage_iiicj_ramat_david_1970.jpg",
+            "mode": "contain",
+            "stat": "6 Syrian MiG-21s Downed • 0 Israeli Losses",
+            "html": "Farming clashes below the Golan Heights sparked a major air battle over Galilee. Israeli <strong>Mirage jets</strong> shot down <strong>six Syrian MiGs</strong> and buzzed Damascus in a stinging humiliation.",
+            "spoken": "Border shelling exploded into an air dogfight. <short pause> Farming clashes below the Golan Heights sparked a major air battle over Galilee. Israeli Mirage jets shot down six Syrian MiGs and buzzed Damascus in a stinging humiliation.",
+            "paired_prose_hash": "7224f5b8e3",
+            "connective": "Border shelling exploded into an air dogfight."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Syria Demands Egyptian Action",
+            "date": "May 1967",
+            "img": "/images/cme_golan_heights_relief_map_1967.jpg",
+            "mode": "contain-light",
+            "stat": "Nov 1966 Egypt-Syria Defence Pact Activated",
+            "html": "Shaken by air defeat, Syria demanded <strong>Nasser</strong> honour their <strong>1966 mutual defence pact</strong>—setting a hair-trigger trap that exploded when Moscow sent a false warning in May 1967.",
+            "spoken": "By May 1967, the region stood on the brink of war. <short pause> Shaken by air defeat, Syria demanded Nasser honour their 1966 mutual defence pact, setting a hair-trigger trap that exploded when Moscow sent a false warning in May 1967.",
+            "connective": "By May 1967, the region stood on the brink of war."
+          }
+        ],
+        "takeaway": "Water clashes, Fatah raids, Israel’s Samu strike, and shooting down 6 Syrian jets trapped Arab leaders in rival alliances—leaving one spark away from war.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Water clashes, Fatah raids, Israel’s Samu strike, and shooting down 6 Syrian jets trapped Arab leaders in rival alliances, leaving one spark away from war.",
+        "vocab": [
+          [
+            "1. PLO (1964)",
+            "Palestine Liberation Organisation, founded to represent displaced Palestinians."
+          ],
+          [
+            "2. Fatah",
+            "Arafat’s guerrilla group that launched cross-border sabotage raids into Israel."
+          ],
+          [
+            "3. Samu Raid (1966)",
+            "Huge IDF raid into the West Bank that pushed Jordan’s King Hussein toward war."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_5",
@@ -9857,7 +10443,116 @@
           "used_by_b": "Palestinian/Arab usage",
           "note": "Israelis named the war after its short length and decisive victory, while Arabs remember it as a \"setback\" that brought new defeat and occupation after the 1948 Nakba."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "cme_kt2_2_visual_story_sheet",
+        "ktBadge": "Key Topic 2.2 • Lesson 5",
+        "datesBadge": "May – 10 June 1967",
+        "topicLabel": "Key Topic 2.2: The Six-Day War (May–June 1967)",
+        "title": "Why Did Israel Win the 1967 Six-Day War in Just Three Hours?",
+        "spokenTitle": "Why did Israel win the 1967 Six-Day War in just three hours?",
+        "thumbUrl": "/images/cme_six_day_war_airfield_1967.jpg",
+        "provenanceNote": "GPO Israel, US Military Academy Cartographic Archive & Egyptian Press Archive (Zero AI Imagery)",
+        "bridges": [
+          "Encircled",
+          "5 June Strike",
+          "Ground Sweep",
+          "Northern Push",
+          "Map Transformed"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "UNEF Expelled & Tiran Closed",
+            "date": "13–22 May 1967",
+            "img": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
+            "mode": "contain-light",
+            "stat": "100,000 Egyptian Troops Enter Sinai • Red Line Crossed",
+            "html": "Fed a <strong>false Soviet rumour</strong> that Israel was about to attack Syria, Nasser sent 100,000 troops into Sinai, expelled <strong>UNEF peacekeepers</strong>, and closed the <strong>Straits of Tiran</strong> to Israeli ships.",
+            "spoken": "Why did Israel win the 1967 Six-Day War in just three hours? <short pause> Fed a false Soviet rumour that Israel was about to attack Syria, Nasser sent 100,000 troops into Sinai, expelled UNEF peacekeepers , and closed the Straits of Tiran to Israeli ships.",
+            "paired_prose_hash": "fab042e9d4",
+            "connective": "Why did Israel win the 1967 Six-Day War in just three hours?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Jordan Pact & Israeli Unity Cabinet",
+            "date": "30 May–4 June",
+            "img": "/images/cme_nasser_hussein_defence_pact_1967.jpg",
+            "mode": "contain",
+            "stat": "Egypt, Syria & Jordan Surround Israel on 3 Fronts",
+            "html": "<strong>King Hussein</strong> signed a defence pact placing Jordan’s army under Egyptian command. Surrounded on three sides, Israel appointed war hero <strong>Moshe Dayan</strong> Defence Minister to strike first.",
+            "spoken": "Israel now felt completely encircled. <short pause> King Hussein signed a defence pact placing Jordan’s army under Egyptian command. Surrounded on three sides, Israel appointed war hero Moshe Dayan Defence Minister to strike first.",
+            "paired_prose_hash": "3dd489a218",
+            "connective": "Israel now felt completely encircled."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Operation Focus Wipes Out Jets",
+            "date": "5 June 1967",
+            "img": "/images/cme_six_day_war_airfield_1967.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "300+ Egyptian Aircraft Destroyed on the Ground",
+            "html": "At 07:45 on <strong>5 June</strong>, nearly 200 Israeli jets flew beneath radar in <strong>Operation Focus</strong>. Bombing runways first, Israel wiped out <strong>Egypt’s air force in three hours</strong> and won total control of the skies.",
+            "spoken": "At dawn on the 5th of June came a decisive strike. <short pause> At 07:45 on the fifth of June , nearly 200 Israeli jets flew beneath radar in Operation Focus . Bombing runways first, Israel wiped out Egypt’s air force in three hours and won total control of the skies.",
+            "paired_prose_hash": "d70f7d5e28",
+            "connective": "At dawn on the 5th of June came a decisive strike."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Sinai & East Jerusalem Captured",
+            "date": "5–8 June 1967",
+            "img": "/units/cme_new/assets/dayan_rabin_lions_gate_1967.jpg",
+            "mode": "contain",
+            "stat": "Sinai, Gaza, West Bank & Old City Taken in 4 Days",
+            "html": "Protected from the air, Israeli tanks routed Egyptian forces across <strong>Sinai</strong> to the Suez Canal. After Jordan shelled West Jerusalem, paratroopers captured the <strong>West Bank</strong> and <strong>East Jerusalem</strong>.",
+            "spoken": "Total air control unleashed a rapid ground sweep. <short pause> Protected from the air, Israeli tanks routed Egyptian forces across Sinai to the Suez Canal. After Jordan shelled West Jerusalem, paratroopers captured the West Bank and East Jerusalem .",
+            "paired_prose_hash": "ced46d118e",
+            "connective": "Total air control unleashed a rapid ground sweep."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Storming the Golan Heights",
+            "date": "9–10 June 1967",
+            "img": "/images/cme_plate_syrian_bunkers_golan_1967.jpg",
+            "mode": "contain",
+            "stat": "Syrian High Ground Seized Before 10 June Ceasefire",
+            "html": "With Egypt and Jordan beaten, Dayan ordered an uphill assault on Syria’s fortified <strong>Golan Heights</strong>. Backed by relentless air strikes, Israeli troops seized the plateau before the <strong>10 June ceasefire</strong>.",
+            "spoken": "Finally, Israel turned north against Syria. <short pause> With Egypt and Jordan beaten, Dayan ordered an uphill assault on Syria’s fortified Golan Heights . Backed by relentless air strikes, Israeli troops seized the plateau before the tenth of June ceasefire .",
+            "paired_prose_hash": "e233e540fd",
+            "connective": "Finally, Israel turned north against Syria."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Territory Tripled in Six Days",
+            "date": "After 10 June",
+            "img": "/images/cme_1967_sinai_campaign_map.jpg",
+            "mode": "contain-light",
+            "stat": "1 Million+ Palestinians Placed Under Occupation",
+            "html": "Israel <strong>tripled the land it controlled</strong>, gaining deep security buffers. Yet ruling over <strong>one million Palestinians</strong> in Gaza and the West Bank turned Israel into an occupying power.",
+            "spoken": "In six days, the map of the Middle East was transformed. <short pause> Israel tripled the land it controlled , gaining deep security buffers. Yet ruling over one million Palestinians in Gaza and the West Bank turned Israel into an occupying power.",
+            "connective": "In six days, the map of the Middle East was transformed."
+          }
+        ],
+        "takeaway": "After Nasser closed the Straits of Tiran, Operation Focus destroyed Arab air forces in 3 hours—letting Israel capture Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After Nasser closed the Straits of Tiran, Operation Focus destroyed Arab air forces in 3 hours, letting Israel capture Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights.",
+        "vocab": [
+          [
+            "1. Straits of Tiran",
+            "Vital sea lane to Eilat; Nasser closing it on 22 May 1967 triggered war."
+          ],
+          [
+            "2. Operation Focus",
+            "Israel’s surprise 5 June air strike destroying 300+ Egyptian aircraft on runways."
+          ],
+          [
+            "3. Occupied Territories",
+            "Sinai, Gaza, West Bank, East Jerusalem, and Golan Heights seized in June 1967."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_6",
@@ -11305,7 +12000,116 @@
           "used_by_b": "Israeli official and religious-nationalist usage",
           "note": "\"West Bank\" describes land west of the River Jordan held by Jordan from 1948 to 1967, while \"Judea and Samaria\" uses the biblical names that settlers stress to show a historic Jewish connection."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "cme_kt2_3_visual_story_sheet",
+        "ktBadge": "Key Topic 2.3 • Lesson 6",
+        "datesBadge": "June 1967 – 1977",
+        "topicLabel": "Key Topic 2.3: Conquered Territories, Khartoum & UN Resolution 242",
+        "title": "Why Did Land for Peace Freeze into a Permanent Stalemate After 1967?",
+        "spokenTitle": "Why did Land for Peace freeze into a permanent stalemate after 1967?",
+        "thumbUrl": "/images/cme_paratroopers_western_wall_1967.jpg",
+        "provenanceNote": "GPO Israel, UN Archives, US CIA Cartographic Archive & Wikimedia Commons (Zero AI Imagery)",
+        "bridges": [
+          "Arab Defiance",
+          "UN Formula",
+          "Canal Fortified",
+          "Settlers Built",
+          "Deadlock"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "East Jerusalem Annexed",
+            "date": "June 1967",
+            "img": "/images/cme_paratroopers_western_wall_1967.jpg",
+            "mode": "contain",
+            "stat": "300,000 New Refugees + 1 Million Under Military Rule",
+            "html": "After capturing the <strong>Western Wall</strong>, Israel annexed <strong>East Jerusalem</strong> as part of its eternal capital. Meanwhile, 300,000 more refugees fled and <strong>one million Palestinians</strong> lived under military rule.",
+            "spoken": "Why did Land for Peace freeze into a permanent stalemate after 1967? <short pause> After capturing the Western Wall , Israel annexed East Jerusalem as part of its eternal capital. Meanwhile, 300,000 more refugees fled and one million Palestinians lived under military rule.",
+            "paired_prose_hash": "f066e0c7c9",
+            "connective": "Why did Land for Peace freeze into a permanent stalemate after 1967?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Khartoum’s “Three Noes”",
+            "date": "1 Sept 1967",
+            "img": "/images/cme_khartoum_summit_1967.jpg",
+            "mode": "contain",
+            "stat": "No Peace • No Recognition • No Negotiations",
+            "html": "Meeting in Sudan, eight Arab states passed the <strong>Khartoum Resolution</strong> declaring the famous <strong>Three Noes</strong>. Hardline refusal convinced Israelis that Arab leaders still wanted Israel destroyed.",
+            "spoken": "Defeated Arab leaders answered with defiance. <short pause> Meeting in Sudan, eight Arab states passed the Khartoum Resolution declaring the famous Three Noes . Hardline refusal convinced Israelis that Arab leaders still wanted Israel destroyed.",
+            "paired_prose_hash": "c7e7ff468c",
+            "connective": "Defeated Arab leaders answered with defiance."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "UN Resolution 242: Land for Peace",
+            "date": "22 Nov 1967",
+            "img": "/images/un_resolution_242_document_1967.jpg",
+            "mode": "contain-light",
+            "stat": "Withdrawal From “Territories” vs “All Territories”",
+            "html": "<strong>UN Resolution 242</strong> proposed trading captured <strong>land for lasting peace</strong>. Yet vague wording said “territories” (not <em>all</em> territories) and called Palestinians a mere “refugee problem,” so the PLO rejected it.",
+            "spoken": "The United Nations proposed a diplomatic formula. <short pause> UN Resolution 242 proposed trading captured land for lasting peace . Yet vague wording said “territories” (not all territories) and called Palestinians a mere “refugee problem,” so the PLO rejected it.",
+            "paired_prose_hash": "b820428283",
+            "connective": "The United Nations proposed a diplomatic formula."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "The Bar-Lev Line on Suez",
+            "date": "1968–1970",
+            "img": "/units/cme_new/assets/cme_bar_lev_line_fortifications_1970.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "20-Metre Sand Wall Along the Blocked Suez Canal",
+            "html": "With the Suez Canal blocked by mines, Israel built the fortified <strong>Bar-Lev Line</strong> along the east bank. Concrete bunkers behind a <strong>20-metre sand wall</strong> gave Israel a false belief it could never be beaten.",
+            "spoken": "Along the Suez Canal, Israel dug in behind steel and sand. <short pause> With the Suez Canal blocked by mines, Israel built the fortified Bar-Lev Line along the east bank. Concrete bunkers behind a 20-metre sand wall gave Israel a false belief it could never be beaten.",
+            "paired_prose_hash": "d954add215",
+            "connective": "Along the Suez Canal, Israel dug in behind steel and sand."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Jewish Settlements Expand",
+            "date": "1967–1977",
+            "img": "/images/cme_plate_kfar_etzion_settlement_1967.jpg",
+            "mode": "contain",
+            "stat": "Allon Security Buffers + Religious West Bank Towns",
+            "html": "Starting with the security-focused <strong>Allon Plan</strong>, Israel built permanent <strong>Jewish settlements</strong> inside occupied lands. Religious settlers moved deep into the <strong>West Bank</strong>, making withdrawal harder every year.",
+            "spoken": "Meanwhile, permanent settlements took root. <short pause> Starting with the security-focused Allon Plan , Israel built permanent Jewish settlements inside occupied lands. Religious settlers moved deep into the West Bank , making withdrawal harder every year.",
+            "paired_prose_hash": "f080ca0669",
+            "connective": "Meanwhile, permanent settlements took root."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Frozen Diplomatic Stalemate",
+            "date": "By 1970s",
+            "img": "/images/cme_1967_occupied_territories_cia_map.png",
+            "mode": "contain-light",
+            "stat": "Neither Peace Talks Nor Withdrawal Possible",
+            "html": "Caught between Khartoum’s <strong>Three Noes</strong>, vague <strong>Resolution 242</strong>, and growing <strong>West Bank settlements</strong>, diplomacy froze—pushing Palestinians toward guerrilla action and Egypt toward a new war.",
+            "spoken": "Diplomacy was now locked in deadlock. <short pause> Caught between Khartoum’s Three Noes , vague Resolution 242 , and growing West Bank settlements , diplomacy froze, pushing Palestinians toward guerrilla action and Egypt toward a new war.",
+            "connective": "Diplomacy was now locked in deadlock."
+          }
+        ],
+        "takeaway": "After 1967, Khartoum’s “Three Noes”, vague wording in UN Resolution 242, and expanding Israeli settlements froze “Land for Peace” into bitter stalemate.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After 1967, Khartoum’s “Three Noes”, vague wording in UN Resolution 242, and expanding Israeli settlements froze “Land for Peace” into bitter stalemate.",
+        "vocab": [
+          [
+            "1. Three Noes (1967)",
+            "Khartoum Arab pledge: no peace, no recognition, and no talks with Israel."
+          ],
+          [
+            "2. UN Resolution 242",
+            "Nov 1967 UN formula trading Israeli withdrawal from occupied land for peace."
+          ],
+          [
+            "3. Settlements",
+            "Jewish communities built inside occupied lands, blocking easy land handbacks."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_7",
@@ -12743,7 +13547,119 @@
           "used_by_b": "Israeli and many Western governments' usage",
           "note": "Supporters saw the armed groups as fighters for national liberation, while Israel and many Western governments called them terrorists because of attacks on civilians such as Munich; historians often use neutral terms such as \"guerrillas\" or \"militants\"."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "07",
+        "slug": "cme_kt2_4_visual_story_sheet",
+        "ktBadge": "Key Topic 2.4 • Lesson 7",
+        "datesBadge": "1968 – 1973",
+        "topicLabel": "Key Topic 2.4: The PLO, Black September & Munich (1968–1973)",
+        "title": "Why Did Palestinian Groups Turn to Hijackings and Global Terrorism?",
+        "spokenTitle": "Why did Palestinian groups turn to hijackings and global terrorism?",
+        "thumbUrl": "/images/cme_dawsons_field_1970.jpg",
+        "provenanceNote": "GPO Israel, German Federal Archive & Wikimedia Commons (Zero AI Imagery)",
+        "bridges": [
+          "Hijack Stunt",
+          "Jordan Cracks Down",
+          "Revenge Group",
+          "Mossad Strikes",
+          "Double Impact"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Karameh Lifts Arafat & Fatah",
+            "date": "March 1968–69",
+            "img": "/images/cme_karameh_battle_1968.jpg",
+            "mode": "contain",
+            "stat": "Feb 1969: Yasser Arafat Elected Chairman of PLO",
+            "html": "After Arab armies failed in 1967, Fatah fighters stood and fought Israeli tanks at <strong>Karameh</strong> in Jordan. Hailed as heroes, <strong>Yasser Arafat</strong> took over leadership of the <strong>PLO</strong> in 1969.",
+            "spoken": "Why did Palestinian groups turn to hijackings and global terrorism? <short pause> After Arab armies failed in 1967, Fatah fighters stood and fought Israeli tanks at Karameh in Jordan. Hailed as heroes, Yasser Arafat took over leadership of the PLO in 1969.",
+            "paired_prose_hash": "9b59dacabb",
+            "connective": "Why did Palestinian groups turn to hijackings and global terrorism?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Dawson’s Field Plane Hijackings",
+            "date": "6 Sept 1970",
+            "img": "/images/cme_dawsons_field_1970.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "3 Empty Passenger Jets Blown Up Live on TV",
+            "html": "To force world attention onto Palestine, the radical <strong>PFLP</strong> hijacked four Western airliners, landing three at <strong>Dawson’s Field</strong> in Jordan. Militants freed hostages and blew up the planes on world TV.",
+            "spoken": "Radical factions turned to dramatic hijackings. <short pause> To force world attention onto Palestine, the radical PFLP hijacked four Western airliners, landing three at Dawson’s Field in Jordan. Militants freed hostages and blew up the planes on world TV.",
+            "paired_prose_hash": "b6e63243db",
+            "connective": "Radical factions turned to dramatic hijackings."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Black September War in Jordan",
+            "date": "Sept 1970–71",
+            "img": "/images/cme_king_hussein_black_september_1970.png",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Thousands Killed • PLO Driven Out to Lebanon",
+            "html": "Fearing the armed PLO “state-within-a-state” would topple his throne, Jordan’s <strong>King Hussein</strong> sent his army to crush the militias. In <strong>Black September</strong>, the PLO was expelled to <strong>Lebanon</strong>.",
+            "spoken": "Humiliated, King Hussein cracked down hard. <short pause> Fearing the armed PLO “state-within-a-state” would topple his throne, Jordan’s King Hussein sent his army to crush the militias. In Black September , the PLO was expelled to Lebanon .",
+            "paired_prose_hash": "e02c52c22c",
+            "connective": "Humiliated, King Hussein cracked down hard."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Munich Olympics Massacre",
+            "date": "5–6 Sept 1972",
+            "img": "/images/cme_munich_1972_balcony.jpg",
+            "mode": "contain",
+            "stat": "11 Israeli Olympic Athletes & Coaches Murdered",
+            "html": "Gunmen from <strong>Black September</strong> stormed the Olympic Village in <strong>Munich</strong>, taking Israeli athletes hostage. After a failed German rescue at the airport, <strong>all 11 Israelis died</strong> before global TV viewers.",
+            "spoken": "Expulsion spawned a ruthless revenge group. <short pause> Gunmen from Black September stormed the Olympic Village in Munich , taking Israeli athletes hostage. After a failed German rescue at the airport, all 11 Israelis died before global TV viewers.",
+            "paired_prose_hash": "94ff4dd515",
+            "connective": "Expulsion spawned a ruthless revenge group."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Israel’s Operation Wrath of God",
+            "date": "1972–1973",
+            "img": "/images/cme_plate_munich_memorial_service_1972.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Air Raids on Lebanon + Covert Mossad Hit Squads",
+            "html": "Prime Minister <strong>Golda Meir</strong> bombed PLO bases in Lebanon and sent <strong>Mossad</strong> squads across Europe to assassinate Munich planners—though killing an innocent waiter in Norway sparked anger.",
+            "spoken": "Israel answered with covert Mossad strikes. <short pause> Prime Minister Golda Meir bombed PLO bases in Lebanon and sent Mossad squads across Europe to assassinate Munich planners, though killing an innocent waiter in Norway sparked anger.",
+            "paired_prose_hash": "7535f23658",
+            "connective": "Israel answered with covert Mossad strikes."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Condemned Yet Impossible to Ignore",
+            "date": "By 1974",
+            "img": "/images/cme_golda_meir_knesset_oct_1972.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "West Shuns PLO, Yet Palestinian Cause Gains Spotlight",
+            "html": "Munich horrified Western nations and hardened Israeli refusal to talk to the PLO. Yet global headlines proved <strong>Palestinian statelessness</strong> could no longer be ignored.",
+            "spoken": "Global terrorism left a sharp double impact. <short pause> Munich horrified Western nations and hardened Israeli refusal to talk to the PLO. Yet global headlines proved Palestinian statelessness could no longer be ignored.",
+            "connective": "Global terrorism left a sharp double impact."
+          }
+        ],
+        "takeaway": "Shut out after 1967 and expelled from Jordan in Black September, Palestinian militants used hijackings and Munich to shock the world—bringing both outrage and global focus.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Shut out after 1967 and expelled from Jordan in Black September, Palestinian militants used hijackings and Munich to shock the world, bringing both outrage and global focus.",
+        "vocab": [
+          [
+            "1. PFLP",
+            "Radical Marxist Palestinian faction behind the 1970 Dawson’s Field hijackings."
+          ],
+          [
+            "2. Black September",
+            "Sept 1970 Jordanian war expelling the PLO—and the terror group named after it."
+          ],
+          [
+            "3. Wrath of God",
+            "Mossad’s secret assassination campaign hunting those behind the Munich massacre."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_8",
@@ -14253,7 +15169,119 @@
           "used_by_b": "Egyptian/Arab usage",
           "note": "Israelis name the war after the Jewish holy day on which it began, while Egyptians and Syrians name it after the month (October, or the Islamic month of Ramadan) and remember it as a war that restored Arab pride."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "08",
+        "slug": "cme_kt2_5_visual_story_sheet",
+        "ktBadge": "Key Topic 2.5 • Lesson 8",
+        "datesBadge": "1969 – 1974",
+        "topicLabel": "Key Topic 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+        "title": "How Did the 1973 Yom Kippur War Shatter the Middle East Freeze?",
+        "spokenTitle": "How did the 1973 Yom Kippur War shatter the Middle East freeze?",
+        "thumbUrl": "/images/cme_egyptians_crossing_suez_1973.jpg",
+        "provenanceNote": "Egyptian Military Archive, GPO Israel, US National Archives & Bespoke Tactical SVG (Zero AI Imagery)",
+        "bridges": [
+          "Peace Snubbed",
+          "6 Oct Surprise",
+          "Superpowers Rush",
+          "Oil Weapon",
+          "Freeze Broken"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "War of Attrition Along Suez",
+            "date": "1969–Aug 1970",
+            "img": "/images/cme_bar_lev_sam_cross_section.svg",
+            "mode": "contain-light",
+            "stat": "Soviet SAM Missile Shield Placed Along West Bank",
+            "html": "Nasser shelled Israel’s <strong>Bar-Lev Line</strong> for 17 months to wear Israel down. Before an August 1970 ceasefire, Egypt moved <strong>Soviet SAM anti-aircraft missiles</strong> right up to the Suez Canal.",
+            "spoken": "How did the 1973 Yom Kippur War shatter the Middle East freeze? <short pause> Nasser shelled Israel’s Bar-Lev Line for 17 months to wear Israel down. Before an August 1970 ceasefire, Egypt moved Soviet SAM anti-aircraft missiles right up to the Suez Canal.",
+            "paired_prose_hash": "c9457ddf8e",
+            "connective": "How did the 1973 Yom Kippur War shatter the Middle East freeze?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Sadat Expels Soviet Advisers",
+            "date": "1971–July 1972",
+            "img": "/images/cme_anwar_sadat_1971.jpg",
+            "mode": "contain",
+            "stat": "15,000 Soviet Advisers Sent Home • Secret War Plan",
+            "html": "After Nasser died, new President <strong>Anwar Sadat</strong> offered peace for Sinai, which Israel ignored. Sadat expelled <strong>15,000 Soviet advisers</strong> and secretly planned a limited war with Syria to force US talks.",
+            "spoken": "When his peace offer was snubbed, Sadat prepared to strike. <short pause> After Nasser died, new President Anwar Sadat offered peace for Sinai, which Israel ignored. Sadat expelled 15,000 Soviet advisers and secretly planned a limited war with Syria to force US talks.",
+            "paired_prose_hash": "8d526ec554",
+            "connective": "When his peace offer was snubbed, Sadat prepared to strike."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Surprise Attack on Yom Kippur",
+            "date": "6 Oct 1973",
+            "img": "/images/cme_egyptians_crossing_suez_1973.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Water Cannons Blast 81 Gaps Through Sand Wall",
+            "html": "On Judaism’s holiest fast day, <strong>Egypt and Syria attacked simultaneously</strong>. Under SAM missile cover, Egyptians used <strong>water cannons</strong> to wash through the Bar-Lev sand wall while Syria stormed the Golan.",
+            "spoken": "On the 6th of October came a stunning surprise attack. <short pause> On Judaism’s holiest fast day, Egypt and Syria attacked simultaneously . Under SAM missile cover, Egyptians used water cannons to wash through the Bar-Lev sand wall while Syria stormed the Golan.",
+            "paired_prose_hash": "631db427de",
+            "connective": "On the 6th of October came a stunning surprise attack."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "US Airlift & Canal Counter-Attack",
+            "date": "14–22 Oct 1973",
+            "img": "/units/cme_new/assets/israeli_deversoir_crossing_1973.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "22,000 Tons US Arms • US Brief Nuclear Alert",
+            "html": "After heavy early losses, Nixon’s <strong>Operation Nickel Grass</strong> airlifted tanks and shells to Israel. General <strong>Ariel Sharon</strong> crossed the canal to encircle Egypt’s Third Army, risking US-Soviet clash.",
+            "spoken": "Both superpowers rushed in weapons and brinkmanship. <short pause> After heavy early losses, Nixon’s Operation Nickel Grass airlifted tanks and shells to Israel. General Ariel Sharon crossed the canal to encircle Egypt’s Third Army, risking US-Soviet clash.",
+            "paired_prose_hash": "31784f6d65",
+            "connective": "Both superpowers rushed in weapons and brinkmanship."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "OPEC Oil Embargo & Ceasefire",
+            "date": "Oct 1973–1974",
+            "img": "/images/cme_plate_kilometre_101_talks_1973.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "World Oil Prices Quadruple (4x) • UN Resolution 338",
+            "html": "Arab oil states in <strong>OPEC</strong> cut oil sales to America, <strong>quadrupling global oil prices</strong> and shocking Western economies. Urgent US-Soviet pressure imposed a ceasefire under <strong>UN Resolution 338</strong>.",
+            "spoken": "Arab states then unleashed the oil weapon. <short pause> Arab oil states in OPEC cut oil sales to America, quadrupling global oil prices and shocking Western economies. Urgent US-Soviet pressure imposed a ceasefire under UN Resolution 338 .",
+            "paired_prose_hash": "7757972244",
+            "connective": "Arab states then unleashed the oil weapon."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Invincibility Myth Shattered",
+            "date": "1974",
+            "img": "/units/cme_new/assets/kissinger_golda_meir_1973.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "~2,600 Israelis Killed • Door Opened to Diplomacy",
+            "html": "Israel won militarily, but heavy losses <strong>shattered its myth of invincibility</strong> while restoring Egyptian pride. Washington now had to broker peace to protect Western oil.",
+            "spoken": "The post-1967 diplomatic freeze was broken forever. <short pause> Israel won militarily, but heavy losses shattered its myth of invincibility while restoring Egyptian pride. Washington now had to broker peace to protect Western oil.",
+            "connective": "The post-1967 diplomatic freeze was broken forever."
+          }
+        ],
+        "takeaway": "Sadat’s 1973 Yom Kippur surprise and OPEC’s oil shock shattered Israel’s belief that force alone brought security—pulling the USA directly into peace talks.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sadat’s 1973 Yom Kippur surprise and OPEC’s oil shock shattered Israel’s belief that force alone brought security, pulling the USA directly into peace talks.",
+        "vocab": [
+          [
+            "1. War of Attrition",
+            "1969–70 Suez artillery and air war before Yom Kippur."
+          ],
+          [
+            "2. Nickel Grass",
+            "Emergency Oct 1973 US airlift resupplying Israel with 22,000 tons of arms."
+          ],
+          [
+            "3. OPEC Oil Embargo",
+            "1973 Arab oil cut against the USA that quadrupled global fuel prices."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_9",
@@ -16011,7 +17039,119 @@
           "used_by_b": "Palestinian, Arab, UN and most international usage",
           "note": "Begin used the biblical names to express a historic Jewish claim to the land, while \"West Bank\" (of the River Jordan) is the geographical term used in the Camp David autonomy framework and by most governments."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "09",
+        "slug": "cme_kt3_1_visual_story_sheet",
+        "ktBadge": "Key Topic 3.1 • Lesson 9",
+        "datesBadge": "1974 – Oct 1981",
+        "topicLabel": "Key Topic 3.1: Shuttle Diplomacy, Camp David & Peace With Egypt",
+        "title": "How Did Egypt and Israel Sign Their Historic 1979 Peace Treaty?",
+        "spokenTitle": "How did Egypt and Israel sign their historic 1979 peace treaty?",
+        "thumbUrl": "/images/cme_camp_david_1978.jpg",
+        "provenanceNote": "White House Photographic Office, GPO Israel, US Library of Congress & CIA Archive (Zero AI Imagery)",
+        "bridges": [
+          "Bold Gamble",
+          "Carter Summit",
+          "Treaty Signed",
+          "Arab Fury",
+          "Half Peace"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Kissinger’s Shuttle Diplomacy",
+            "date": "1974–1975",
+            "img": "/images/cme_opec_oil_embargo_pump_1973.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Sinai I & II Pullbacks • Suez Canal Reopens (1975)",
+            "html": "To end the oil crisis and sideline Moscow, US Secretary of State <strong>Henry Kissinger</strong> flew back and forth between capitals. Step-by-step pullbacks (<strong>Sinai I &amp; II</strong>) let Egypt reopen the <strong>Suez Canal</strong>.",
+            "spoken": "How did Egypt and Israel sign their historic 1979 peace treaty? <short pause> To end the oil crisis and sideline Moscow, US Secretary of State Henry Kissinger flew back and forth between capitals. Step-by-step pullbacks ( Sinai I and II ) let Egypt reopen the Suez Canal .",
+            "paired_prose_hash": "9f33360b51",
+            "connective": "How did Egypt and Israel sign their historic 1979 peace treaty?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Sadat Flies to Jerusalem",
+            "date": "Nov–Dec 1977",
+            "img": "/images/cme_sadat_begin_king_david_1977.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "First Arab Leader to Address Israel’s Knesset",
+            "html": "Facing bread riots and debt at home, <strong>Anwar Sadat</strong> stunned the world by flying to <strong>Jerusalem</strong> to meet Likud PM <strong>Menachem Begin</strong>—offering full peace in return for occupied Arab land.",
+            "spoken": "In 1977, Sadat took an extraordinary gamble. <short pause> Facing bread riots and debt at home, Anwar Sadat stunned the world by flying to Jerusalem to meet Likud PM Menachem Begin, offering full peace in return for occupied Arab land.",
+            "paired_prose_hash": "cc31da74f1",
+            "connective": "In 1977, Sadat took an extraordinary gamble."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "13 Days at Camp David",
+            "date": "Sept 1978",
+            "img": "/images/cme_camp_david_1978.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Framework 1: Sinai Peace • Framework 2: Vague Autonomy",
+            "html": "When talks stalled, US President <strong>Jimmy Carter</strong> locked Sadat and Begin inside <strong>Camp David</strong> for 13 days. They agreed full peace for Sinai, but only vague “autonomy” talks for Palestinians.",
+            "spoken": "Deadlock led to Jimmy Carter’s summit. <short pause> When talks stalled, US President Jimmy Carter locked Sadat and Begin inside Camp David for 13 days. They agreed full peace for Sinai, but only vague “autonomy” talks for Palestinians.",
+            "paired_prose_hash": "23ad79d4dc",
+            "connective": "Deadlock led to Jimmy Carter’s summit."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "1979 Egypt-Israel Peace Treaty",
+            "date": "26 March 1979",
+            "img": "/images/cme_treaty_triple_handshake_1979.jpg",
+            "mode": "contain",
+            "stat": "All of Sinai Returned • Billions in Annual US Aid",
+            "html": "Signed in Washington, the treaty ended <strong>30 years of war</strong> between Egypt and Israel. Israel withdrew troops and settlers from <strong>Sinai</strong>, while Egypt recognised Israel and opened its waterways.",
+            "spoken": "Six months later, the formal treaty was signed. <short pause> Signed in Washington, the treaty ended 30 years of war between Egypt and Israel. Israel withdrew troops and settlers from Sinai , while Egypt recognised Israel and opened its waterways.",
+            "paired_prose_hash": "b0756fa89f",
+            "connective": "Six months later, the formal treaty was signed."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Boycott & Sadat Assassinated",
+            "date": "1979–Oct 1981",
+            "img": "/images/cme_sadat_memorial_1981.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Egypt Expelled From Arab League • Sadat Shot (1981)",
+            "html": "Furious that Sadat made a separate peace without a Palestinian state, the <strong>Arab League expelled Egypt</strong>. On <strong>6 October 1981</strong>, Islamist extremists assassinated Sadat at a Cairo parade.",
+            "spoken": "Separate peace sparked fierce Arab fury. <short pause> Furious that Sadat made a separate peace without a Palestinian state, the Arab League expelled Egypt . On the sixth of October 1981 , Islamist extremists assassinated Sadat at a Cairo parade.",
+            "paired_prose_hash": "eef357b9a3",
+            "connective": "Separate peace sparked fierce Arab fury."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Southern Peace, Palestinian Anger",
+            "date": "After 1981",
+            "img": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
+            "mode": "contain-light",
+            "stat": "Egypt Leaves War • Conflict Shifts to Lebanon & Gaza",
+            "html": "Removing Egypt—the strongest Arab army—ended major interstate tank wars against Israel. Yet leaving <strong>Palestinians stateless</strong> shifted the conflict north to Lebanon and inside the territories.",
+            "spoken": "The result was a lasting but incomplete peace. <short pause> Removing Egypt, the strongest Arab army, ended major interstate tank wars against Israel. Yet leaving Palestinians stateless shifted the conflict north to Lebanon and inside the territories.",
+            "connective": "The result was a lasting but incomplete peace."
+          }
+        ],
+        "takeaway": "Kissinger’s shuttle talks, Sadat’s 1977 Jerusalem visit, and Carter’s Camp David summit secured peace and Sinai’s return in 1979—but cost Sadat his life and left Palestine unsolved.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Kissinger’s shuttle talks, Sadat’s 1977 Jerusalem visit, and Carter’s Camp David summit secured peace and Sinai’s return in 1979, but cost Sadat his life and left Palestine unsolved.",
+        "vocab": [
+          [
+            "1. Shuttle Diplomacy",
+            "Kissinger’s 1974–75 step-by-step flights brokering Sinai and Golan pullbacks."
+          ],
+          [
+            "2. Camp David (1978)",
+            "13-day US summit where Carter, Sadat, and Begin agreed the peace framework."
+          ],
+          [
+            "3. Treaty of Washington",
+            "March 1979 treaty trading all of Sinai for full Egyptian recognition of Israel."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_10",
@@ -17824,7 +18964,119 @@
           "used_by_b": "Israeli government usage, and US usage for attacks on civilians",
           "note": "Palestinian groups presented armed struggle as national liberation, while Israel described attacks, especially on civilians, as terrorism; this dispute is why Arafat's December 1988 renunciation of terrorism mattered so much."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "10",
+        "slug": "cme_kt3_2_visual_story_sheet",
+        "ktBadge": "Key Topic 3.2 • Lesson 10",
+        "datesBadge": "1974 – Dec 1988",
+        "topicLabel": "Key Topic 3.2: Lebanon, Sabra & Shatila, and the First Intifada",
+        "title": "How Did Lebanon and the First Intifada Reshape the Conflict?",
+        "spokenTitle": "How did Lebanon and the First Intifada reshape the conflict?",
+        "thumbUrl": "/units/cme_new/assets/first_intifada.png",
+        "provenanceNote": "GPO Israel, Ronald Reagan Presidential Library & Wikimedia Archive (Zero AI Imagery)",
+        "bridges": [
+          "Camp Massacre",
+          "Gaza Uprising",
+          "Harsh Crackdown",
+          "PLO Pivot",
+          "US Dialogue"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "1982 Invasion of Lebanon",
+            "date": "1974–Aug 1982",
+            "img": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "14,000 PLO Fighters Evacuated From Beirut to Tunis",
+            "html": "To crush cross-border PLO attacks from southern Lebanon, Defence Minister <strong>Ariel Sharon</strong> launched <strong>Operation Peace for Galilee</strong> in June 1982, besieging Beirut until Arafat evacuated to <strong>Tunis</strong>.",
+            "spoken": "How did Lebanon and the First Intifada reshape the conflict? <short pause> To crush cross-border PLO attacks from southern Lebanon, Defence Minister Ariel Sharon launched Operation Peace for Galilee in June 1982, besieging Beirut until Arafat evacuated to Tunis .",
+            "paired_prose_hash": "dcb8155a62",
+            "connective": "How did Lebanon and the First Intifada reshape the conflict?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Sabra & Shatila Massacres",
+            "date": "Sept 1982–1985",
+            "img": "/units/cme_new/assets/cme_idf_coastal_advance_1982.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "800–2,000 Refugees Killed • 400,000 Israelis Protest",
+            "html": "Allied Lebanese Christian <strong>Phalangist militias</strong> entered the IDF-ringed <strong>Sabra and Shatila</strong> camps and slaughtered hundreds of Palestinian civilians. Outrage forced Sharon to resign and fuelled <strong>Hezbollah</strong>.",
+            "spoken": "Weeks later came a horrifying camp massacre. <short pause> Allied Lebanese Christian Phalangist militias entered the IDF-ringed Sabra and Shatila camps and slaughtered hundreds of Palestinian civilians. Outrage forced Sharon to resign and fuelled Hezbollah .",
+            "paired_prose_hash": "5798b59864",
+            "connective": "Weeks later came a horrifying camp massacre."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "First Intifada Breaks Out",
+            "date": "Dec 1987–1993",
+            "img": "/units/cme_new/assets/first_intifada.png",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Strikes, Boycotts & Youths With Stones vs Tanks",
+            "html": "Sparked by a deadly Gaza lorry crash in <strong>December 1987</strong>, ordinary Palestinians launched the <strong>First Intifada</strong> (“shaking off”)—using strikes, tax boycotts, and stone-throwing against 20 years of occupation.",
+            "spoken": "Inside the occupied territories, grassroots anger erupted. <short pause> Sparked by a deadly Gaza lorry crash in December 1987 , ordinary Palestinians launched the First Intifada (“shaking off”), using strikes, tax boycotts, and stone-throwing against 20 years of occupation.",
+            "paired_prose_hash": "6263a4a02a",
+            "connective": "Inside the occupied territories, grassroots anger erupted."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "“Iron Fist” & Rise of Hamas",
+            "date": "1987–1988",
+            "img": "/images/cme_plate_jabalia_intifada_roadblock_1988.jpg",
+            "mode": "contain",
+            "stat": "TV Hurt Israel’s Image • Dec 1987: Hamas Founded",
+            "html": "Defence Minister <strong>Yitzhak Rabin’s “Iron Fist”</strong> beatings and curfews drew fierce Western TV criticism. Meanwhile in Gaza, Sheikh Yassin founded <strong>Hamas</strong>, rejecting all peace with Israel.",
+            "spoken": "Harsh military force backfired on world television. <short pause> Defence Minister Yitzhak Rabin’s “Iron Fist” beatings and curfews drew fierce Western TV criticism. Meanwhile in Gaza, Sheikh Yassin founded Hamas , rejecting all peace with Israel.",
+            "paired_prose_hash": "982eda5cde",
+            "connective": "Harsh military force backfired on world television."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Arafat Renounces Terrorism",
+            "date": "Nov–Dec 1988",
+            "img": "/images/cme_arafat_strasbourg_1988.jpg",
+            "mode": "contain",
+            "stat": "PLO Accepts UN Resolution 242 & Two-State Solution",
+            "html": "After Jordan dropped its West Bank claim, <strong>Yasser Arafat</strong> seized the moment in <strong>late 1988</strong>—formally <strong>renouncing terrorism</strong> and accepting <strong>UN Resolution 242</strong> and Israel’s right to exist.",
+            "spoken": "Pressure from the Intifada pushed Arafat into a historic pivot. <short pause> After Jordan dropped its West Bank claim, Yasser Arafat seized the moment in late 1988, formally renouncing terrorism and accepting UN Resolution 242 and Israel’s right to exist.",
+            "paired_prose_hash": "90f62a4930",
+            "connective": "Pressure from the Intifada pushed Arafat into a historic pivot."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "USA Opens Talks With the PLO",
+            "date": "Dec 1988–1989",
+            "img": "/images/cme_plate_reagan_shultz_diplomacy_1988.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "13-Year US Ban Ended • Path Toward Peace Talks",
+            "html": "Arafat’s December 1988 Geneva pledge met strict US terms, prompting <strong>President Reagan’s team</strong> to open official talks with the PLO—proving military force alone could not end the occupation.",
+            "spoken": "That pledge unlocked direct American diplomacy. <short pause> Arafat’s December 1988 Geneva pledge met strict US terms, prompting President Reagan’s team to open official talks with the PLO, proving military force alone could not end the occupation.",
+            "connective": "That pledge unlocked direct American diplomacy."
+          }
+        ],
+        "takeaway": "After Lebanon failed to crush the Palestinian cause, the grassroots First Intifada and Arafat’s 1988 renunciation of terror opened US-PLO peace dialogue.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> After Lebanon failed to crush the Palestinian cause, the grassroots First Intifada and Arafat’s 1988 renunciation of terror opened US-PLO peace dialogue.",
+        "vocab": [
+          [
+            "1. Sabra & Shatila",
+            "Sept 1982 Beirut camp massacre by Phalangists under IDF perimeter control."
+          ],
+          [
+            "2. First Intifada",
+            "1987–93 grassroots Palestinian uprising of strikes, boycotts, and stones."
+          ],
+          [
+            "3. Hamas (1987)",
+            "Militant Islamist group founded in Gaza opposing Israel and secular PLO talks."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_11",
@@ -19646,7 +20898,131 @@
           "cover": "/units/cme_new/assets/wright_cover.png",
           "perspective_note": "Non-fiction: a day-by-day account of the 1978 Camp David summit, drawing on American, Egyptian and Israeli perspectives."
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "11",
+        "slug": "cme_kt3_3_visual_story_sheet",
+        "ktBadge": "Key Topic 3.3 • Lesson 11",
+        "datesBadge": "1991 – Nov 1995",
+        "topicLabel": "Key Topic 3.3: Madrid, The Oslo Accords & Rabin’s Murder (1991–1995)",
+        "title": "Why Did the Oslo Peace Breakthrough Collapse Into Violence by 1995?",
+        "spokenTitle": "Why did the Oslo peace breakthrough collapse into violence by 1995?",
+        "thumbUrl": "/images/cme_oslo_handshake_1993.jpg",
+        "provenanceNote": "White House Archive, GPO Israel, Norwegian Foreign Ministry & Official Oslo II Map (Zero AI Imagery)",
+        "bridges": [
+          "Secret Channel",
+          "1993 Handshake",
+          "West Bank Split",
+          "Extremist Fury",
+          "Peace Stalls"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Madrid Peace Conference",
+            "date": "Oct 1991",
+            "img": "/images/cme_madrid_conference_1991.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "USSR Collapses + Arafat Bankrupted Backing Iraq",
+            "html": "Soviet collapse and Arafat’s costly mistake backing <strong>Saddam Hussein</strong> in the 1991 Gulf War left the PLO broke. The USA brought Israel and Arab delegates face to face at <strong>Madrid</strong>.",
+            "spoken": "Why did the Oslo peace breakthrough collapse into violence by 1995? <short pause> Soviet collapse and Arafat’s costly mistake backing Saddam Hussein in the 1991 Gulf War left the PLO broke. The USA brought Israel and Arab delegates face to face at Madrid .",
+            "paired_prose_hash": "3cd464492f",
+            "connective": "Why did the Oslo peace breakthrough collapse into violence by 1995?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Secret Backchannel in Oslo",
+            "date": "1992–Aug 1993",
+            "img": "/units/cme_new/assets/cme_peres_signing_oslo_1993.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Labour PM Yitzhak Rabin Backs Land-for-Peace Talks",
+            "html": "Newly elected Labour PM <strong>Yitzhak Rabin</strong> and Shimon Peres approved secret talks with the PLO in <strong>Oslo, Norway</strong>. Away from cameras, negotiators drafted a five-year interim peace plan.",
+            "spoken": "Deadlocked public talks shifted to a secret channel. <short pause> Newly elected Labour PM Yitzhak Rabin and Shimon Peres approved secret talks with the PLO in Oslo, Norway . Away from cameras, negotiators drafted a five-year interim peace plan.",
+            "paired_prose_hash": "28c02ac9cc",
+            "connective": "Deadlocked public talks shifted to a secret channel."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Oslo I & White House Handshake",
+            "date": "13 Sept 1993",
+            "img": "/images/cme_oslo_handshake_1993.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Mutual Recognition + PNA Self-Rule in Gaza & Jericho",
+            "html": "Watched by <strong>Bill Clinton</strong>, Rabin and Arafat shook hands on the White House lawn. <strong>Oslo I</strong> created the <strong>Palestinian National Authority (PNA)</strong> in Gaza and Jericho, postponing hardest issues.",
+            "spoken": "In September 1993 came a historic handshake. <short pause> Watched by Bill Clinton , Rabin and Arafat shook hands on the White House lawn. Oslo I created the Palestinian National Authority (PNA) in Gaza and Jericho, postponing hardest issues.",
+            "paired_prose_hash": "3633a739be",
+            "connective": "In September 1993 came a historic handshake."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Jordan Treaty & Oslo II Zones",
+            "date": "1994–Sept 1995",
+            "img": "/images/cme_oslo_ii_official_map.jpg",
+            "mode": "split-bar",
+            "splitConfig": {
+              "barTitle": "Oslo II West Bank Zones",
+              "leftWidth": 38,
+              "leftLabel": "Areas A & B",
+              "rightWidth": 62,
+              "rightLabel": "Area C (60%+ IDF)",
+              "bullets": [
+                "<strong>Oct 1994:</strong> Israel-Jordan Peace Treaty",
+                "<strong>Areas A &amp; B:</strong> PNA civil rule towns",
+                "<strong>Area C:</strong> Full IDF &amp; settler control"
+              ]
+            },
+            "stat": "Jordan Signs Full Peace (1994) • West Bank Divided",
+            "html": "Jordan’s <strong>King Hussein</strong> signed a full peace treaty in <strong>1994</strong>. In September 1995, <strong>Oslo II</strong> split the West Bank into patchwork <strong>Areas A, B, and C</strong>, leaving Israel holding most land.",
+            "spoken": "Jordan made peace and Oslo Two divided the West Bank. <short pause> Jordan’s King Hussein signed a full peace treaty in 1994 . In September 1995, Oslo II split the West Bank into patchwork Areas A, B, and C , leaving Israel holding most land.",
+            "paired_prose_hash": "e34a26d469",
+            "connective": "Jordan made peace and Oslo Two divided the West Bank."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Bus Bombs & Rabin Assassinated",
+            "date": "1994–4 Nov 1995",
+            "img": "/units/cme_new/assets/rabin_peace_rally_1995.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Hebron Massacre, Hamas Bombs & Yigal Amir’s Shots",
+            "html": "Extremists on both sides attacked peace: a Jewish settler killed 29 in Hebron and <strong>Hamas</strong> bombed Israeli buses. On <strong>4 November 1995</strong>, Israeli extremist <strong>Yigal Amir</strong> shot Rabin dead.",
+            "spoken": "Violent spoilers immediately tried to derail the peace accords. <short pause> Extremists on both sides attacked peace: a Jewish settler killed 29 in Hebron and Hamas bombed Israeli buses. On the fourth of November 1995 , Israeli extremist Yigal Amir shot Rabin dead.",
+            "paired_prose_hash": "ce2a6fdd9d",
+            "connective": "Violent spoilers immediately tried to derail the peace accords."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Unresolved Final-Status Issues",
+            "date": "After Nov 1995",
+            "img": "/images/cme_plate_rabin_memorial_candles_1995.jpg",
+            "mode": "contain",
+            "stat": "Jerusalem, Refugees, Borders & Settlements Unsolved",
+            "html": "Rabin’s murder and suicide bombings shattered trust before talks even reached <strong>Jerusalem, refugees, settlements, or borders</strong>—leaving the peace process deeply wounded.",
+            "spoken": "Trust collapsed and the peace process stalled. <short pause> Rabin’s murder and suicide bombings shattered trust before talks even reached Jerusalem, refugees, settlements, or borders, leaving the peace process deeply wounded.",
+            "connective": "Trust collapsed and the peace process stalled."
+          }
+        ],
+        "takeaway": "Oslo achieved mutual PLO-Israeli recognition, Palestinian self-rule, and peace with Jordan—but postponing core issues let Hamas bombs and Rabin’s 1995 murder derail peace.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Oslo achieved mutual PLO-Israeli recognition, Palestinian self-rule, and peace with Jordan, but postponing core issues let Hamas bombs and Rabin’s 1995 murder derail peace.",
+        "vocab": [
+          [
+            "1. Oslo I (1993)",
+            "Historic White House accord creating interim Palestinian self-rule (PNA)."
+          ],
+          [
+            "2. Areas A, B & C",
+            "Oslo II (1995) division of the West Bank into Palestinian, joint, and Israeli zones."
+          ],
+          [
+            "3. Final-Status Issues",
+            "Postponed core disputes: Jerusalem, refugees, borders, and settlements."
+          ]
+        ]
+      }
     }
   ],
   "exam_blocks": [

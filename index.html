@@ -243,27 +243,29 @@
               <span>Year 9 AI Course</span>
             </div>
 
-            <!-- Staff Gateway (Discreet Single Entry) -->
-            <div style="margin-top: 14px; padding: 0 12px 2px 12px">
-              <span
-                style="
-                  font-size: 0.68rem;
-                  text-transform: uppercase;
-                  letter-spacing: 0.08em;
-                  color: rgba(255, 255, 255, 0.35);
-                  font-weight: 700;
-                "
-                >Faculty &amp; Staff</span
+            <!-- Staff Gateway (Locked behind Staff Mode — hidden in Pupil View) -->
+            <div id="sidebar-staff-section" style="display: none; flex-direction: column; gap: 2px">
+              <div style="margin-top: 14px; padding: 0 12px 2px 12px">
+                <span
+                  style="
+                    font-size: 0.68rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                    color: rgba(255, 255, 255, 0.35);
+                    font-weight: 700;
+                  "
+                  >Faculty &amp; Staff</span
+                >
+              </div>
+              <div
+                class="nav-item"
+                id="nav-department-portal"
+                onclick="window.switchView('department-portal')"
+                style="opacity: 0.9"
               >
-            </div>
-            <div
-              class="nav-item"
-              id="nav-department-portal"
-              onclick="window.switchView('department-portal')"
-              style="opacity: 0.85"
-            >
-              <i class="fa-solid fa-landmark" style="color: #60a5fa"></i>
-              <span>Department Portal</span>
+                <i class="fa-solid fa-landmark" style="color: #60a5fa"></i>
+                <span>Department Portal</span>
+              </div>
             </div>
           </div>
 
@@ -320,18 +322,26 @@
               ></i>
             </div>
             <div id="sidebar-lessons-tree" class="sidebar-lessons-tree" style="display: none"></div>
-            <div class="nav-item" id="nav-timeline" style="display: none">
-              <i class="fa-solid fa-clock-rotate-left" style="color: #10b981"></i>
-              <span>Living Chronology</span>
+            <div class="nav-item" id="nav-unit-booklet" style="display: none">
+              <i class="fa-solid fa-file-pdf" style="color: #f59e0b"></i>
+              <span>PDFs &amp; Booklets</span>
+            </div>
+            <div class="nav-item" id="nav-unit-infographics" style="display: none">
+              <i class="fa-solid fa-image" style="color: #34d399"></i>
+              <span>Infographics</span>
             </div>
             <div class="nav-item" id="nav-arcade" style="display: none">
               <i class="fa-solid fa-gamepad" style="color: #38bdf8"></i>
               <span>Revision Arcade</span>
             </div>
-            <!-- Decommissioned from sidebar in favour of Hero Curricular Launchpad & In-Lesson Consolidation Station -->
-            <div id="nav-interactive" style="display: none !important"></div>
-            <!-- Decommissioned in favour of Hero Curricular Launchpad -->
-            <div id="nav-unit-booklet" style="display: none !important"></div>
+            <div class="nav-item" id="nav-interactive" style="display: none">
+              <i class="fa-solid fa-bolt" style="color: #a78bfa"></i>
+              <span>Quizzing &amp; Flashcards</span>
+            </div>
+            <div class="nav-item" id="nav-timeline" style="display: none">
+              <i class="fa-solid fa-clock-rotate-left" style="color: #10b981"></i>
+              <span>Living Chronology</span>
+            </div>
             <div class="nav-item" id="nav-mock-exams" style="display: none">
               <i class="fa-solid fa-file-signature" style="color: #6366f1"></i>
               <span>GCSE Exam Practice</span>
@@ -368,26 +378,63 @@
           </div>
         </nav>
 
-        <!-- Bottom Tools Cluster: Student Profile & Chess Club -->
+        <!-- Bottom Tools Cluster: Student Profile & Discreet Staff Lock -->
         <div
           style="
             margin-top: auto;
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            padding: 12px 12px 16px;
+            gap: 5px;
+            padding: 10px 12px 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
           "
         >
-          <!-- My Profile Quick Link (Streamlined into bottom cluster) -->
+          <div
+            class="nav-item"
+            id="nav-staff-portal-shortcut"
+            onclick="window.switchView('department-portal')"
+            style="display: none; padding: 7px 12px; font-size: 0.78rem; border-radius: 8px; background: rgba(59, 130, 246, 0.12); border: 1px solid rgba(96, 165, 250, 0.25)"
+          >
+            <i class="fa-solid fa-landmark" style="font-size: 0.88rem; color: #60a5fa"></i>
+            <span>Department Portal</span>
+          </div>
+          <!-- My Profile Quick Link -->
           <div
             class="nav-item"
             id="nav-profile"
             onclick="window.switchView('profile')"
-            style="padding: 8px 12px; font-size: 0.8rem; border-radius: 8px"
+            style="padding: 7px 12px; font-size: 0.8rem; border-radius: 8px"
           >
-            <i class="fa-solid fa-user-shield" style="font-size: 0.95rem; opacity: 0.8"></i>
+            <i class="fa-solid fa-user-shield" style="font-size: 0.92rem; opacity: 0.8"></i>
             <span>My Profile</span>
           </div>
+          <!-- Discreet Staff Mode Lock / Pupil Preview Switch -->
+          <button
+            type="button"
+            id="btn-sidebar-staff-toggle"
+            onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()"
+            title="Staff Login / Toggle Pupil Preview"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 8px;
+              width: 100%;
+              padding: 6px 12px;
+              border-radius: 8px;
+              border: 1px solid rgba(255, 255, 255, 0.08);
+              background: rgba(255, 255, 255, 0.03);
+              color: rgba(255, 255, 255, 0.48);
+              font-size: 0.72rem;
+              font-weight: 600;
+              cursor: pointer;
+              text-align: left;
+              transition: all 0.15s ease;
+            "
+          >
+            <span id="sidebar-staff-toggle-label"><i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.7rem"></i>Staff</span>
+            <span id="sidebar-staff-toggle-sub" style="font-size: 0.65rem; opacity: 0.75"></span>
+          </button>
         </div>
 
         <!-- Theme Controls moved to header -->
@@ -420,7 +467,7 @@
             onclick="window.openKeywordSearch && window.openKeywordSearch()"
           >
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <span class="search-placeholder">Search keywords, lessons...</span>
+            <span class="search-placeholder">Search lessons, PDFs, keywords...</span>
             <kbd class="search-kbd-shortcut">Ctrl K</kbd>
           </div>
           <!-- Accessibility & Theme Controls Toolbar -->

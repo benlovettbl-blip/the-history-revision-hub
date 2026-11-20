@@ -1,0 +1,156 @@
+{
+  "unitId": "first_british_empire",
+  "voiceKey": "female_historian",
+  "blocks": {
+    "lesson_4_b1": {
+      "hash": "02a38d9edea7a7f7",
+      "bytes": 141644,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:19:52.558Z"
+    },
+    "lesson_4_b2": {
+      "hash": "5bb928c48f160935",
+      "bytes": 163436,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:19:52.914Z"
+    },
+    "lesson_4_b3": {
+      "hash": "292f58979b63994f",
+      "bytes": 170828,
+      "words": 77,
+      "updatedAt": "2026-11-19T23:53:13.317Z"
+    },
+    "lesson_4_b4": {
+      "hash": "ff554a779c20e083",
+      "bytes": 148556,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:19:53.556Z"
+    },
+    "lesson_4_b5": {
+      "hash": "68e5011b09bf7e6f",
+      "bytes": 188012,
+      "words": 77,
+      "updatedAt": "2026-11-19T23:53:14.000Z"
+    },
+    "lesson_5_b1": {
+      "hash": "0839d2bf1f94f395",
+      "bytes": 145292,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:19:54.209Z"
+    },
+    "lesson_5_b2": {
+      "hash": "2624619e9f208acf",
+      "bytes": 158732,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:19:54.535Z"
+    },
+    "lesson_5_b3": {
+      "hash": "60a10f5c01bc06d0",
+      "bytes": 137612,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:19:54.830Z"
+    },
+    "lesson_5_b4": {
+      "hash": "577f11ca3e1fb088",
+      "bytes": 177452,
+      "words": 80,
+      "updatedAt": "2026-11-19T23:53:14.532Z"
+    },
+    "lesson_5_b5": {
+      "hash": "853c2e93c261cf60",
+      "bytes": 140396,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:19:55.456Z"
+    },
+    "lesson_1_b1": {
+      "hash": "3191575627d90d8f",
+      "bytes": 161036,
+      "words": 82,
+      "updatedAt": "2026-11-19T18:20:00.265Z"
+    },
+    "lesson_1_b2": {
+      "hash": "c77a094e2e371672",
+      "bytes": 165836,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:20:00.583Z"
+    },
+    "lesson_1_b3": {
+      "hash": "3f8fa1c1550ad2f4",
+      "bytes": 155564,
+      "words": 78,
+      "updatedAt": "2026-11-19T18:20:00.893Z"
+    },
+    "lesson_1_b4": {
+      "hash": "b4a14336b3bccd2d",
+      "bytes": 171692,
+      "words": 76,
+      "updatedAt": "2026-11-19T23:53:12.805Z"
+    },
+    "lesson_1_b5": {
+      "hash": "cf13664363c9d60c",
+      "bytes": 154412,
+      "words": 77,
+      "updatedAt": "2026-11-19T18:20:01.515Z"
+    },
+    "lesson_2_b1": {
+      "hash": "394f9c110565181e",
+      "bytes": 149516,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:20:01.871Z"
+    },
+    "lesson_2_b2": {
+      "hash": "93667c58c906664d",
+      "bytes": 135116,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:20:02.149Z"
+    },
+    "lesson_2_b3": {
+      "hash": "3052e3656c7c42b9",
+      "bytes": 141356,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:20:02.467Z"
+    },
+    "lesson_2_b4": {
+      "hash": "7cd27b3b4e66ee2a",
+      "bytes": 149132,
+      "words": 75,
+      "updatedAt": "2026-11-19T18:20:02.812Z"
+    },
+    "lesson_2_b5": {
+      "hash": "7ba9b8e5e747937c",
+      "bytes": 160172,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:20:03.153Z"
+    },
+    "lesson_3_b1": {
+      "hash": "573330109806047b",
+      "bytes": 161804,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:20:03.514Z"
+    },
+    "lesson_3_b2": {
+      "hash": "573729195d328a4b",
+      "bytes": 158732,
+      "words": 79,
+      "updatedAt": "2026-11-19T18:20:03.831Z"
+    },
+    "lesson_3_b3": {
+      "hash": "9049b57f4e39eea2",
+      "bytes": 154316,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:20:04.178Z"
+    },
+    "lesson_3_b4": {
+      "hash": "bcfe698aabab3389",
+      "bytes": 144524,
+      "words": 74,
+      "updatedAt": "2026-11-19T18:20:04.486Z"
+    },
+    "lesson_3_b5": {
+      "hash": "1bae121d81077fd1",
+      "bytes": 161804,
+      "words": 76,
+      "updatedAt": "2026-11-19T18:20:04.844Z"
+    }
+  }
+}

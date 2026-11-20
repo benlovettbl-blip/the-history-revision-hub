@@ -24,6 +24,7 @@ import('./digital_textbook_reader.js');
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
 import './infographic_viewer.js';
 import './engine/ks2_guidance.js';
+import { isStaffModeActive } from './data/unit_resources_catalog.js';
 
 function purgeGDPRHistoricalCache() {
   try {
@@ -76,6 +77,144 @@ function purgeGDPRHistoricalCache() {
   }
 }
 
+export function syncStaffUiState() {
+  const active = isStaffModeActive();
+  const isPreviewPupil =
+    typeof sessionStorage !== 'undefined' &&
+    sessionStorage.getItem('hh_preview_as_pupil') === 'true';
+
+  const staffSection = document.getElementById('sidebar-staff-section');
+  if (staffSection) staffSection.style.display = active ? 'flex' : 'none';
+
+  const unitWorkspace = document.getElementById('sidebar-unit-workspace');
+  const unitShortcut = document.getElementById('nav-staff-portal-shortcut');
+  if (unitShortcut) {
+    const inUnit = unitWorkspace && unitWorkspace.style.display !== 'none';
+    unitShortcut.style.display = active && inUnit ? 'flex' : 'none';
+  }
+
+  const headerBtn = document.getElementById('btn-cover-modal');
+  if (headerBtn) headerBtn.style.display = active ? 'inline-flex' : 'none';
+  const sidebarBtn = document.getElementById('nav-cover-generator');
+  if (sidebarBtn) sidebarBtn.style.display = active ? 'flex' : 'none';
+
+  const toggleBtn = document.getElementById('btn-sidebar-staff-toggle');
+  const toggleLabel = document.getElementById('sidebar-staff-toggle-label');
+  const toggleSub = document.getElementById('sidebar-staff-toggle-sub');
+  const urlParams = new URLSearchParams(window.location.search || '');
+  const isSafeguardLocked =
+    urlParams.get('locked') === 'true' ||
+    urlParams.get('mode') === 'pupil' ||
+    urlParams.get('safeguard') === 'true';
+
+  if (toggleBtn && isSafeguardLocked) {
+    toggleBtn.style.display = 'none';
+  } else if (toggleBtn && toggleLabel) {
+    toggleBtn.style.display = 'flex';
+    const isLocalHost =
+      window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (active) {
+      toggleBtn.style.borderColor = 'rgba(52, 211, 153, 0.35)';
+      toggleBtn.style.background = 'rgba(16, 185, 129, 0.1)';
+      toggleBtn.style.color = '#d1fae5';
+      toggleBtn.title = isLocalHost
+        ? 'Staff Mode active — click to preview exact Pupil View'
+        : 'Staff Mode active — click to lock back to Pupil View';
+      toggleLabel.innerHTML =
+        '<i class="fa-solid fa-unlock-keyhole" style="margin-right: 6px; color: #34d399"></i>Staff Mode ON';
+      if (toggleSub) toggleSub.textContent = isLocalHost ? 'Pupil View' : 'Lock';
+    } else {
+      toggleBtn.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+      toggleBtn.style.background = 'rgba(255, 255, 255, 0.03)';
+      toggleBtn.style.color = 'rgba(255, 255, 255, 0.48)';
+      toggleBtn.title =
+        isPreviewPupil && isLocalHost
+          ? 'Currently previewing Pupil View — click to resume Staff Mode'
+          : 'Staff Login (Schemes of Work, Mark Schemes & Department Portal)';
+      toggleLabel.innerHTML =
+        '<i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.7rem"></i>Staff';
+      if (toggleSub) toggleSub.textContent = isPreviewPupil && isLocalHost ? 'Pupil Preview' : '';
+    }
+  }
+}
+
+export function promptStaffUnlock() {
+  const isLocal =
+    window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  if (
+    isLocal &&
+    typeof sessionStorage !== 'undefined' &&
+    sessionStorage.getItem('hh_preview_as_pupil') === 'true'
+  ) {
+    sessionStorage.removeItem('hh_preview_as_pupil');
+    window.isTeacherMode = true;
+    syncStaffUiState();
+    return true;
+  }
+
+  const code = prompt('History Department Staff Login — Enter Passkey:');
+  const { verifyStaffPasskeySync } = window.__staffAuthModule || {};
+  if (code && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(code)) {
+    localStorage.setItem('history_hub_teacher_mode', 'true');
+    if (typeof sessionStorage !== 'undefined') {
+      sessionStorage.removeItem('hh_preview_as_pupil');
+    }
+    window.isTeacherMode = true;
+    syncStaffUiState();
+    return true;
+  }
+  if (code !== null) {
+    alert('Staff passkey not recognised.');
+  }
+  return false;
+}
+
+export function toggleGlobalStaffMode() {
+  const refreshCurrent = () => {
+    const curView = (window.state && window.state.currentView) || 'dashboard';
+    const curUnit = (window.state && window.state.selectedUnitId) || window.currentUnitId;
+    if (!isStaffModeActive() && (curView === 'department-portal' || curView === 'curriculum')) {
+      switchView('dashboard');
+      return;
+    }
+    if (curView === 'lessons' && curUnit) {
+      if (typeof window.currentLessonIndex === 'number' && window.currentLessonIndex >= 0 && typeof window.viewLessonDetail === 'function') {
+        window.viewLessonDetail(window.currentLessonIndex);
+      } else {
+        switchView('lessons', curUnit);
+      }
+    } else if (curView === 'mock-exams' && curUnit) {
+      switchView('mock-exams', curUnit);
+    }
+  };
+
+  if (isStaffModeActive()) {
+    const isLocal =
+      window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocal) {
+      if (typeof sessionStorage !== 'undefined') {
+        sessionStorage.setItem('hh_preview_as_pupil', 'true');
+      }
+    } else {
+      try {
+        localStorage.removeItem('history_hub_teacher_mode');
+        localStorage.removeItem('history_chess_teacher_auth');
+      } catch (e) {}
+    }
+    window.isTeacherMode = false;
+    syncStaffUiState();
+    refreshCurrent();
+  } else if (promptStaffUnlock()) {
+    refreshCurrent();
+  }
+}
+
+if (typeof window !== 'undefined') {
+  window.syncStaffUiState = syncStaffUiState;
+  window.promptStaffUnlock = promptStaffUnlock;
+  window.toggleGlobalStaffMode = toggleGlobalStaffMode;
+}
+
 export function initTeacherMode() {
   try {
     const { verifyStaffPasskeySync } = window.__staffAuthModule || {};
@@ -94,29 +233,25 @@ export function initTeacherMode() {
       passkey === 'true' ||
       (passkey && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(passkey));
 
+    const isPreviewPupil =
+      typeof sessionStorage !== 'undefined' &&
+      sessionStorage.getItem('hh_preview_as_pupil') === 'true';
+
     const isAuthorized =
-      isLocal ||
-      hasStoredAuth ||
-      params.get('role') === 'teacher' ||
-      passkeyValid;
+      !isPreviewPupil &&
+      (isLocal || hasStoredAuth || params.get('role') === 'teacher' || passkeyValid);
 
     if (isAuthorized) {
       localStorage.setItem('history_hub_teacher_mode', 'true');
       window.isTeacherMode = true;
-
-      const showButtons = () => {
-        const headerBtn = document.getElementById('btn-cover-modal');
-        if (headerBtn) headerBtn.style.display = 'inline-flex';
-        const sidebarBtn = document.getElementById('nav-cover-generator');
-        if (sidebarBtn) sidebarBtn.style.display = 'flex';
-      };
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', showButtons);
-      } else {
-        showButtons();
-      }
     } else {
       window.isTeacherMode = false;
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', syncStaffUiState);
+    } else {
+      syncStaffUiState();
     }
 
     // Keyboard shortcut for staff: Ctrl + Shift + C or Ctrl + Shift + T
@@ -127,25 +262,13 @@ export function initTeacherMode() {
         (e.key === 'C' || e.key === 'c' || e.key === 'T' || e.key === 't')
       ) {
         e.preventDefault();
-        if (window.isTeacherMode) {
+        if (isStaffModeActive()) {
           if (typeof window.openEmergencyCoverModal === 'function') {
             window.openEmergencyCoverModal();
           }
-        } else {
-          const code = prompt('History Department Staff Verification: Enter Passkey:');
-          const { verifyStaffPasskeySync } = window.__staffAuthModule || {};
-          if (code && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(code)) {
-            localStorage.setItem('history_hub_teacher_mode', 'true');
-            window.isTeacherMode = true;
-            const headerBtn = document.getElementById('btn-cover-modal');
-            if (headerBtn) headerBtn.style.display = 'inline-flex';
-            const sidebarBtn = document.getElementById('nav-cover-generator');
-            if (sidebarBtn) sidebarBtn.style.display = 'flex';
-            if (typeof window.openEmergencyCoverModal === 'function') {
-              window.openEmergencyCoverModal();
-            }
-          } else if (code !== null) {
-            alert('Access denied.');
+        } else if (promptStaffUnlock()) {
+          if (typeof window.openEmergencyCoverModal === 'function') {
+            window.openEmergencyCoverModal();
           }
         }
       }

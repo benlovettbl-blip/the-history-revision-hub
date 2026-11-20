@@ -1806,7 +1806,115 @@ export default {
           "paraRef": "[1.5]",
           "prose_hash": "2cdfcb6b28"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "monarchy_l01_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 1",
+        "datesBadge": "1517 – 1547",
+        "topicLabel": "Enquiry 01: The Reformation & The Break with Rome (1517–1547)",
+        "title": "Why Did Henry VIII Break with Rome and Make Himself Supreme Head?",
+        "spokenTitle": "Why did Henry the Eighth break with Rome and make himself Supreme Head?",
+        "thumbUrl": "/images/family_of_henry_viii_c1545.jpg",
+        "provenanceNote": "Royal Collection Trust, National Portrait Gallery, Walker Art Gallery, Uffizi & British Library (Zero AI Imagery)",
+        "bridges": [
+          "Heir Crisis",
+          "Pope Refuses",
+          "Statute Siege",
+          "Supreme Head",
+          "Tudor State"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Luther Sparks the Reformation",
+            "date": "1517–1521",
+            "img": "/images/martin_luther_portrait.jpg",
+            "mode": "contain",
+            "stat": "1517: Luther’s 95 Arguments Attack Indulgences",
+            "html": "In 1517, German monk <strong>Martin Luther</strong> attacked paid Church <strong>indulgences</strong>, sparking the Reformation while young Henry VIII earned the Pope’s title <strong>Defender of the Faith</strong>.",
+            "spoken": "Why did Henry the Eighth break with Rome and make himself Supreme Head? <short pause> In 1517, German monk Martin Luther attacked paid Church indulgences , sparking the Reformation while young Henry VIII earned the Pope’s title Defender of the Faith .",
+            "paired_prose_hash": "d609f7eba1",
+            "connective": "Why did Henry the Eighth break with Rome and make himself Supreme Head?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Desperate for a Male Tudor Heir",
+            "date": "1525–1527",
+            "img": "/units/eee/assets/portraits/anne_boleyn.jpg",
+            "mode": "contain",
+            "stat": "Only One Daughter Mary; Henry Wants Anne Boleyn",
+            "html": "With <strong>Catherine of Aragon</strong> past forty and no surviving son, Henry feared civil war. Loving <strong>Anne Boleyn</strong>, he asked the Pope for a royal <strong>annulment</strong>.",
+            "spoken": "Ten years later, a family crisis changed Henry’s mind completely. <short pause> With Catherine of Aragon past forty and no surviving son, Henry feared civil war. Loving Anne Boleyn , he asked the Pope for a royal annulment .",
+            "paired_prose_hash": "ff01aaef2a",
+            "connective": "Ten years later, a family crisis changed Henry’s mind completely."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Prisoner Pope Blocks the Divorce",
+            "date": "1527–1529",
+            "img": "/images/cardinal_wolsey.jpg",
+            "mode": "contain",
+            "stat": "1527: Emperor Charles V Traps Pope Clement VII",
+            "html": "Captured in Rome by Catherine’s nephew <strong>Emperor Charles V</strong>, <strong>Pope Clement VII</strong> dared not end her marriage—cancelling London’s court and ruining <strong>Cardinal Wolsey</strong>.",
+            "spoken": "European power politics trapped the Pope in Rome. <short pause> Captured in Rome by Catherine’s nephew Emperor Charles V , Pope Clement VII dared not end her marriage, cancelling London’s court and ruining Cardinal Wolsey .",
+            "paired_prose_hash": "392bae3483",
+            "connective": "European power politics trapped the Pope in Rome."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Cromwell Cuts Rome’s Power",
+            "date": "1529–1533",
+            "img": "/images/great_bible_frontispiece.jpg",
+            "mode": "contain-light",
+            "stat": "1533 Act Bans Appeals to Rome; Anne Crowned",
+            "html": "Clever lawyer <strong>Thomas Cromwell</strong> used <strong>Parliamentary laws</strong> to stop taxes and legal appeals to Rome, letting Archbishop Cranmer crown <strong>Anne Boleyn</strong> in 1533.",
+            "spoken": "Royal lawyer Thomas Cromwell soon found a way through. <short pause> Clever lawyer Thomas Cromwell used Parliamentary laws to stop taxes and legal appeals to Rome, letting Archbishop Cranmer crown Anne Boleyn in 1533.",
+            "paired_prose_hash": "5bccfdfe69",
+            "connective": "Royal lawyer Thomas Cromwell soon found a way through."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Supreme Head & Ruined Abbeys",
+            "date": "1534–1540",
+            "img": "/images/henry_viii.jpg",
+            "mode": "contain",
+            "stat": "1534 Act of Supremacy; 800+ Monasteries Closed",
+            "html": "The 1534 <strong>Act of Supremacy</strong> named Henry <strong>Supreme Head</strong> of England’s Church. Henry executed rebels like Thomas More and closed over <strong>800 rich monasteries</strong>.",
+            "spoken": "In November 1534, Parliament completed England’s break with Rome. <short pause> The 1534 Act of Supremacy named Henry Supreme Head of England’s Church. Henry executed rebels like Thomas More and closed over 800 rich monasteries .",
+            "paired_prose_hash": "2cdfcb6b28",
+            "connective": "In November 1534, Parliament completed England’s break with Rome."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Richer Crown, Stronger MPs",
+            "date": "By 1547",
+            "img": "/images/family_of_henry_viii_c1545.jpg",
+            "mode": "landscape",
+            "stat": "Papal Rule Ended; Monastery Lands Sold to Gentry",
+            "html": "Henry’s <strong>Break with Rome</strong> ended papal control, filled royal chests with <strong>monastery wealth</strong>, and made <strong>Parliament’s statute laws</strong> central to ruling England.",
+            "spoken": "Henry’s quest for a son transformed church and state alike. <short pause> Henry’s Break with Rome ended papal control, filled royal chests with monastery wealth , and made Parliament’s statute laws central to ruling England.",
+            "connective": "Henry’s quest for a son transformed church and state alike."
+          }
+        ],
+        "takeaway": "Blocked from divorcing Catherine by a trapped Pope, Henry VIII used Cromwell’s Parliament to break with Rome, crown himself Supreme Head, and seize monastery wealth.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Blocked from divorcing Catherine by a trapped Pope, Henry VIII used Cromwell’s Parliament to break with Rome, crown himself Supreme Head, and seize monastery wealth.",
+        "vocab": [
+          [
+            "1. Indulgence",
+            "Certificate sold by Church officials promising less time in Purgatory."
+          ],
+          [
+            "2. Annulment",
+            "Official ruling that a marriage was never legally valid from the start."
+          ],
+          [
+            "3. Act of Supremacy",
+            "1534 law making Henry VIII Supreme Head of the Church of England."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_2",
@@ -3303,7 +3411,116 @@ export default {
           "paraRef": "[2.5]",
           "prose_hash": "7e7f736af0"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "monarchy_l02_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 2",
+        "datesBadge": "1558 – 1588",
+        "topicLabel": "Enquiry 02: Elizabeth I & The Middle Way (1558–1588)",
+        "title": "How Did Elizabeth I Steer England Through Religious Turmoil?",
+        "spokenTitle": "How did Elizabeth the First steer England through religious turmoil?",
+        "thumbUrl": "/images/elizabeth_procession_1601.jpg",
+        "provenanceNote": "National Portrait Gallery, British Library, Sherborne Castle & Vatican Archive (Zero AI Imagery)",
+        "bridges": [
+          "Clever Title",
+          "Shared Prayer",
+          "Papal Curse",
+          "Secret Ciphers",
+          "Lasting Peace"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "A Kingdom Torn by Religion",
+            "date": "1558–1559",
+            "img": "/images/monarchy_religion_power/latimer_ridley_oxford_1555.jpg",
+            "mode": "contain-light",
+            "stat": "Nearly 300 Protestants Burned Under Mary I",
+            "html": "Inheriting the throne in 1558 after Mary I burned nearly <strong>300 Protestant martyrs</strong>, young <strong>Elizabeth I</strong> faced bitter anger between <strong>Catholics and strict Puritans</strong>.",
+            "spoken": "How did Elizabeth the First steer England through religious turmoil? <short pause> Inheriting the throne in 1558 after Mary I burned nearly 300 Protestant martyrs , young Elizabeth I faced bitter anger between Catholics and strict Puritans .",
+            "paired_prose_hash": "1e000dbc3c",
+            "connective": "How did Elizabeth the First steer England through religious turmoil?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Supreme Governor Compromise",
+            "date": "Early 1559",
+            "img": "/images/elizabeth_coronation_portrait.jpg",
+            "mode": "contain",
+            "stat": "1559 Act of Supremacy Calms Moderate Subjects",
+            "html": "To avoid civil war, the 1559 <strong>Act of Supremacy</strong> named Elizabeth <strong>Supreme Governor</strong> instead of Head—calming moderates while replacing defiant <strong>Catholic bishops</strong>.",
+            "spoken": "Elizabeth chose careful compromise over religious civil war. <short pause> To avoid civil war, the 1559 Act of Supremacy named Elizabeth Supreme Governor instead of Head, calming moderates while replacing defiant Catholic bishops .",
+            "paired_prose_hash": "0126ec4374",
+            "connective": "Elizabeth chose careful compromise over religious civil war."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "One Prayer Book for Every Parish",
+            "date": "May 1559",
+            "img": "/images/book_of_common_prayer_1559_authentic.png",
+            "mode": "contain-light",
+            "stat": "12-Pence Sunday Fine for Catholic Recusants",
+            "html": "Her 1559 <strong>Act of Uniformity</strong> built a <strong>Middle Way</strong> around one shared <strong>English Prayer Book</strong>, fining Catholic recusants twelve pence if they skipped Sunday church.",
+            "spoken": "Alongside royal supremacy came a shared national service book. <short pause> Her 1559 Act of Uniformity built a Middle Way around one shared English Prayer Book , fining Catholic recusants twelve pence if they skipped Sunday church.",
+            "paired_prose_hash": "5b37bb19d6",
+            "connective": "Alongside royal supremacy came a shared national service book."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Northern Revolt and Papal Curse",
+            "date": "1569–1570",
+            "img": "/images/regnans_in_excelsis_1570.jpg",
+            "mode": "contain",
+            "stat": "1570: Pope Pius V Excommunicates Elizabeth I",
+            "html": "After Catholic <strong>Northern Earls</strong> rebelled in 1569, <strong>Pope Pius V</strong> excommunicated Elizabeth in 1570—telling loyal Catholics it was lawful to <strong>overthrow their queen</strong>.",
+            "spoken": "Calm shattered in 1569 when northern earls rebelled. <short pause> After Catholic Northern Earls rebelled in 1569, Pope Pius V excommunicated Elizabeth in 1570, telling loyal Catholics it was lawful to overthrow their queen .",
+            "paired_prose_hash": "63d8d29638",
+            "connective": "Calm shattered in 1569 when northern earls rebelled."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Beer-Barrel Codes & Scaffold",
+            "date": "1586–Feb 1587",
+            "img": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+            "mode": "contain-light",
+            "stat": "Feb 1587: Mary Stuart Executed After Cipher Trap",
+            "html": "Spymaster <strong>Francis Walsingham</strong> decoded secret <strong>Babington Plot</strong> letters smuggled in beer barrels, proving treason so <strong>Mary, Queen of Scots</strong> was beheaded in 1587.",
+            "spoken": "Deadly plots soon gathered around Elizabeth’s Catholic cousin Mary Stuart. <short pause> Spymaster Francis Walsingham decoded secret Babington Plot letters smuggled in beer barrels, proving treason so Mary, Queen of Scots was beheaded in 1587.",
+            "paired_prose_hash": "7e7f736af0",
+            "connective": "Deadly plots soon gathered around Elizabeth’s Catholic cousin Mary Stuart."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "The Middle Way Saves England",
+            "date": "By 1588",
+            "img": "/images/elizabeth_procession_1601.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "45-Year Reign Anchors Moderate Protestant Church",
+            "html": "Blending <strong>moderate Church laws</strong> with sharp <strong>intelligence spies</strong>, Elizabeth’s <strong>Via Media</strong> spared England religious war and rooted a lasting Protestant identity.",
+            "spoken": "While religious wars tore Europe apart, Elizabeth’s settlement held firm. <short pause> Blending moderate Church laws with sharp intelligence spies , Elizabeth’s Via Media spared England religious war and rooted a lasting Protestant identity.",
+            "connective": "While religious wars tore Europe apart, Elizabeth’s settlement held firm."
+          }
+        ],
+        "takeaway": "Elizabeth I calmed religious fury with her 1559 Middle Way settlement while using Walsingham’s spies to defeat Catholic plots and protect Protestant England.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Elizabeth I calmed religious fury with her 1559 Middle Way settlement while using Walsingham’s spies to defeat Catholic plots and protect Protestant England.",
+        "vocab": [
+          [
+            "1. Via Media",
+            "Latin for “Middle Way”—balancing Protestant beliefs with familiar ritual."
+          ],
+          [
+            "2. Recusant",
+            "Catholic who refused to attend compulsory Sunday Church of England worship."
+          ],
+          [
+            "3. Espionage",
+            "Using spies and codebreakers to uncover secret plots against the Crown."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_3",
@@ -4756,7 +4973,116 @@ export default {
           "paraRef": "[3.5]",
           "prose_hash": "ba618a8c2f"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "monarchy_l03_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 3",
+        "datesBadge": "1585 – 1588",
+        "topicLabel": "Enquiry 03: The Spanish Armada & Naval Warfare (1588)",
+        "title": "Why Was King Philip II’s Mighty Spanish Armada Defeated in 1588?",
+        "spokenTitle": "Why was King Philip the Second’s mighty Spanish Armada defeated in 1588?",
+        "thumbUrl": "/images/battle_of_gravelines_1588.jpg",
+        "provenanceNote": "Royal Museums Greenwich, Museo del Prado, British Museum & Woburn Abbey (Zero AI Imagery)",
+        "bridges": [
+          "Cadiz Raid",
+          "Long-Range Guns",
+          "Midnight Flames",
+          "Atlantic Gales",
+          "Naval Triumph"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Philip’s Holy Fleet Sets Sail",
+            "date": "1585–1587",
+            "img": "/images/philip_ii.jpg",
+            "mode": "contain",
+            "stat": "130 Ships Sent to Escort Parma’s Flanders Army",
+            "html": "Angered by <strong>Francis Drake’s</strong> treasure raids, English help for Dutch rebels, and Mary Stuart’s execution, <strong>Philip II</strong> launched a Catholic <strong>Armada</strong> to conquer England.",
+            "spoken": "Why was King Philip the Second’s mighty Spanish Armada defeated in 1588? <short pause> Angered by Francis Drake’s treasure raids, English help for Dutch rebels, and Mary Stuart’s execution, Philip II launched a Catholic Armada to conquer England.",
+            "paired_prose_hash": "955e962330",
+            "connective": "Why was King Philip the Second’s mighty Spanish Armada defeated in 1588?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Singeing the King’s Beard",
+            "date": "April 1587",
+            "img": "/images/drake_cadiz_1587.jpg",
+            "mode": "contain-light",
+            "stat": "30 Ships & Seasoned Food-Barrel Staves Burned",
+            "html": "Drake raided <strong>Cadiz harbour</strong> in 1587, burning thirty ships and barrel wood—delaying Spain a year so <strong>damp new casks</strong> rotted the Armada’s <strong>food and water</strong>.",
+            "spoken": "Before Spain sailed, Francis Drake struck Cadiz harbour. <short pause> Drake raided Cadiz harbour in 1587, burning thirty ships and barrel wood, delaying Spain a year so damp new casks rotted the Armada’s food and water .",
+            "paired_prose_hash": "7ce1314c3c",
+            "connective": "Before Spain sailed, Francis Drake struck Cadiz harbour."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Fast Galleons Fire from Afar",
+            "date": "July 1588",
+            "img": "/images/ark_royal.jpg",
+            "mode": "contain-light",
+            "stat": "Race-Built English Ships Outshoot Crescent Line",
+            "html": "As 130 Spanish ships sailed up the Channel in a tight <strong>crescent</strong>, nimble <strong>race-built English ships</strong> stayed clear of boarding hooks and fired long-range <strong>culverin broadsides</strong>.",
+            "spoken": "Two rival naval styles clashed in the Channel. <short pause> As 130 Spanish ships sailed up the Channel in a tight crescent , nimble race-built English ships stayed clear of boarding hooks and fired long-range culverin broadsides .",
+            "paired_prose_hash": "0503ecb20a",
+            "connective": "Two rival naval styles clashed in the Channel."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Midnight Fireships at Calais",
+            "date": "7–8 Aug 1588",
+            "img": "/images/battle_of_gravelines_1588.jpg",
+            "mode": "landscape",
+            "stat": "8 Blazing Ships Break Spain’s Defensive Crescent",
+            "html": "Anchored off <strong>Calais</strong> awaiting troops, Spanish crews panicked at midnight when England sent in <strong>eight blazing fireships</strong>—cutting anchors and breaking their <strong>crescent shape</strong>.",
+            "spoken": "Waiting in open water at Calais proved fatal. <short pause> Anchored off Calais awaiting troops, Spanish crews panicked at midnight when England sent in eight blazing fireships, cutting anchors and breaking their crescent shape .",
+            "paired_prose_hash": "bc80e5a439",
+            "connective": "Waiting in open water at Calais proved fatal."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Gravelines Guns & Stormy Rocks",
+            "date": "Aug–Sept 1588",
+            "img": "/images/spanish_armada.jpg",
+            "mode": "contain-light",
+            "stat": "Only 67 Battered Ships Limp Back to Spain",
+            "html": "Smashed close-up at <strong>Gravelines</strong>, the Armada fled north around <strong>Scotland and Ireland</strong>, where fierce <strong>Atlantic gales</strong> wrecked dozens of ships on jagged rocks.",
+            "spoken": "Scattered Spanish warships could no longer protect one another. <short pause> Smashed close-up at Gravelines , the Armada fled north around Scotland and Ireland , where fierce Atlantic gales wrecked dozens of ships on jagged rocks.",
+            "paired_prose_hash": "ba618a8c2f",
+            "connective": "Scattered Spanish warships could no longer protect one another."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Sea Power Protects England",
+            "date": "Late 1588",
+            "img": "/images/armada_portrait.jpg",
+            "mode": "landscape",
+            "pos": "center 20%",
+            "stat": "1588 Medal: “God Blew and They Were Scattered”",
+            "html": "Elizabeth struck medals praising the <strong>“Protestant Wind”</strong>: nimble <strong>broadside gunnery</strong> reshaped sea warfare and kept <strong>England independent</strong> from Catholic Spain.",
+            "spoken": "Half of Philip’s great fleet never saw Spain again. <short pause> Elizabeth struck medals praising the “Protestant Wind” : nimble broadside gunnery reshaped sea warfare and kept England independent from Catholic Spain.",
+            "connective": "Half of Philip’s great fleet never saw Spain again."
+          }
+        ],
+        "takeaway": "Drake’s Cadiz raid, faster long-range English warships, midnight fireships at Calais, and fierce Atlantic storms combined to wreck Spain’s 1588 Armada.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Drake’s Cadiz raid, faster long-range English warships, midnight fireships at Calais, and fierce Atlantic storms combined to wreck Spain’s 1588 Armada.",
+        "vocab": [
+          [
+            "1. Broadside",
+            "Firing all cannons mounted along one side of a warship together."
+          ],
+          [
+            "2. Culverin",
+            "Long-barrelled naval cannon built to fire heavy shot from far away."
+          ],
+          [
+            "3. Fireship",
+            "Old ship packed with tar and gunpowder, set alight to scatter foes."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_4",
@@ -6229,7 +6555,115 @@ export default {
           "paraRef": "[4.5]",
           "prose_hash": "9268d95a57"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "monarchy_l04_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 4",
+        "datesBadge": "1629 – 1689",
+        "topicLabel": "Enquiry 04: Civil War, Regicide & The Bill of Rights (1629–1689)",
+        "title": "Why Did Clash Over Divine Right Lead to Charles I’s Execution?",
+        "spokenTitle": "Why did clash over Divine Right lead to Charles the First’s execution?",
+        "thumbUrl": "/images/monarchy_religion_power/battle_of_naseby_1645.jpg",
+        "provenanceNote": "Royal Collection Trust, Fitzwilliam Museum, Yale Center for British Art & UK Parliamentary Archives (Zero AI Imagery)",
+        "bridges": [
+          "Commons Raid",
+          "New Model Army",
+          "King Executed",
+          "1688 Revolution",
+          "Crown Limited"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Eleven Years Without MPs",
+            "date": "1629–1640",
+            "img": "/images/charles_first.jpg",
+            "mode": "contain",
+            "stat": "1637: John Hampden Refuses Inland Ship Money Tax",
+            "html": "Claiming <strong>Divine Right</strong> from God, <strong>Charles I</strong> shut Parliament for eleven years and taxed inland counties with <strong>Ship Money</strong>, sparking angry protests.",
+            "spoken": "Why did clash over Divine Right lead to Charles the First’s execution? <short pause> Claiming Divine Right from God, Charles I shut Parliament for eleven years and taxed inland counties with Ship Money , sparking angry protests.",
+            "paired_prose_hash": "14a36b576a",
+            "connective": "Why did clash over Divine Right lead to Charles the First’s execution?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Failed Raid Starts Civil War",
+            "date": "1640–Aug 1642",
+            "img": "/images/archbishop_laud.jpg",
+            "mode": "contain",
+            "stat": "Jan 1642: Five MPs Escape Charles’s Armed Guards",
+            "html": "Forced by Scottish war to recall MPs, Charles marched guards into the Commons to <strong>arrest Five MPs</strong> in 1642—then raised his <strong>war flag</strong> at Nottingham.",
+            "spoken": "Scottish war forced a bankrupt king to recall MPs. <short pause> Forced by Scottish war to recall MPs, Charles marched guards into the Commons to arrest Five MPs in 1642, then raised his war flag at Nottingham.",
+            "paired_prose_hash": "c5230e450e",
+            "connective": "Scottish war forced a bankrupt king to recall MPs."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "New Model Army Wins Naseby",
+            "date": "June 1645",
+            "img": "/images/monarchy_religion_power/battle_of_naseby_1645.jpg",
+            "mode": "landscape",
+            "stat": "1645: Cromwell’s Cavalry Crush Royalist Forces",
+            "html": "Parliament created the full-time <strong>New Model Army</strong>, promoted on skill not noble birth. Under Fairfax and <strong>Oliver Cromwell</strong>, it crushed Charles at <strong>Naseby</strong>.",
+            "spoken": "To win the war, Parliament built a brand-new professional army. <short pause> Parliament created the full-time New Model Army , promoted on skill not noble birth. Under Fairfax and Oliver Cromwell , it crushed Charles at Naseby .",
+            "paired_prose_hash": "096a152790",
+            "connective": "To win the war, Parliament built a brand-new professional army."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "A King Tried and Beheaded",
+            "date": "30 Jan 1649",
+            "img": "/images/charles_i_execution.jpg",
+            "mode": "contain-light",
+            "stat": "Whitehall 1649: Charles I Executed for Treason",
+            "html": "After Charles plotted a second war, soldiers <strong>purged Parliament</strong>, put the King on trial for <strong>high treason</strong>, and <strong>beheaded Charles I</strong> outside Whitehall.",
+            "spoken": "Defeated Charles still plotted a second civil war. <short pause> After Charles plotted a second war, soldiers purged Parliament , put the King on trial for high treason , and beheaded Charles I outside Whitehall.",
+            "paired_prose_hash": "b6ccc5c890",
+            "connective": "Defeated Charles still plotted a second civil war."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "The Glorious Revolution",
+            "date": "1660–1688",
+            "img": "/images/william_landing_1688.jpg",
+            "mode": "landscape",
+            "stat": "Nov 1688: William of Orange Lands at Torbay",
+            "html": "Monarchy returned in 1660, but fears over Catholic <strong>James II</strong> led nobles to invite Dutch prince <strong>William of Orange</strong> over in the <strong>1688 Glorious Revolution</strong>.",
+            "spoken": "Even after the Crown was restored, religious suspicions soon reignited. <short pause> Monarchy returned in 1660, but fears over Catholic James II led nobles to invite Dutch prince William of Orange over in the 1688 Glorious Revolution .",
+            "paired_prose_hash": "9268d95a57",
+            "connective": "Even after the Crown was restored, religious suspicions soon reignited."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Bound by the Bill of Rights",
+            "date": "Dec 1689",
+            "img": "/images/bill_of_rights.jpg",
+            "mode": "contain-light",
+            "stat": "1689: No Royal Taxes or Vetoed Laws Without MPs",
+            "html": "William and Mary accepted the <strong>1689 Bill of Rights</strong>, ending absolute rule forever: monarchs could never <strong>tax or cancel laws</strong> without <strong>Parliament’s vote</strong>.",
+            "spoken": "A century of bloodshed ended with a clear written deal. <short pause> William and Mary accepted the 1689 Bill of Rights , ending absolute rule forever: monarchs could never tax or cancel laws without Parliament’s vote .",
+            "connective": "A century of bloodshed ended with a clear written deal."
+          }
+        ],
+        "takeaway": "Charles I’s belief in Divine Right sparked civil war and his 1649 execution, paving the way for the 1689 Bill of Rights to place Parliament above the Crown.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Charles I’s belief in Divine Right sparked civil war and his 1649 execution, paving the way for the 1689 Bill of Rights to place Parliament above the Crown.",
+        "vocab": [
+          [
+            "1. Divine Right",
+            "Belief that kings receive power from God and answer to no Parliament."
+          ],
+          [
+            "2. New Model Army",
+            "Parliament’s full-time army promoted on skill rather than noble birth."
+          ],
+          [
+            "3. Regicide",
+            "Putting a reigning king or queen on trial and executing them."
+          ]
+        ]
+      }
     },
     {
       "id": "lesson_5",
@@ -6882,7 +7316,7 @@ export default {
               "Conclusion: Reach a weighed comparative verdict: weigh whether physical overthrow and republican experiments represented a more profound transformation than permanent statutory compromise [5.1–5.5]."
             ],
             "sentence_starters": [
-              "To a large extent, it can be argued that...",
+              "Overall, the strongest judgement is that...",
               "On the one hand, a key factor was...",
               "Furthermore, this was significant because...",
               "On the other hand, an alternative perspective is that...",
@@ -7720,7 +8154,117 @@ export default {
           "paraRef": "[5.5]",
           "prose_hash": "f3528cc95d"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "monarchy_l05_visual_story_sheet",
+        "ktBadge": "Year 7 • Enquiry 5",
+        "datesBadge": "1517 – 1689",
+        "topicLabel": "Enquiry 05: Crown, Church, or Parliament? The Big Story (1517–1689)",
+        "title": "How Did Power Shift from Crown and Church to Parliament by 1689?",
+        "spokenTitle": "How did power shift from Crown and Church to Parliament by 1689?",
+        "thumbUrl": "/images/william_mary_declaration_of_rights_1689.jpg",
+        "provenanceNote": "UK Parliamentary Archives, Palace of Westminster Collection, Walker Art Gallery & NPG (Zero AI Imagery)",
+        "bridges": [
+          "Tudor Unity",
+          "Stuart Clash",
+          "Shock of 1649",
+          "1689 Contract",
+          "MPs Supreme"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Henry Uses MPs to Break Rome",
+            "date": "1517–1547",
+            "img": "/images/henry_viii.jpg",
+            "mode": "contain",
+            "stat": "1534: Statute Law Ends Papal Rule in England",
+            "html": "<strong>Henry VIII</strong> ended the Pope’s power in England, yet passing Reformation changes through <strong>Parliamentary statutes</strong> and selling monastery land strengthened <strong>MPs</strong>.",
+            "spoken": "How did power shift from Crown and Church to Parliament by 1689? <short pause> Henry VIII ended the Pope’s power in England, yet passing Reformation changes through Parliamentary statutes and selling monastery land strengthened MPs .",
+            "paired_prose_hash": "67954c94e9",
+            "connective": "How did power shift from Crown and Church to Parliament by 1689?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Elizabeth Unites a Nation",
+            "date": "1558–1603",
+            "img": "/images/armada_portrait.jpg",
+            "mode": "landscape",
+            "pos": "center 20%",
+            "stat": "1559 Settlement & Armada Forge National Pride",
+            "html": "<strong>Elizabeth I’s</strong> moderate 1559 <strong>Religious Settlement</strong> and the <strong>1588 Armada victory</strong> united Crown and Parliament behind a shared Protestant national identity.",
+            "spoken": "Under Queen Elizabeth, Crown and Parliament mostly pulled together. <short pause> Elizabeth I’s moderate 1559 Religious Settlement and the 1588 Armada victory united Crown and Parliament behind a shared Protestant national identity.",
+            "paired_prose_hash": "9dcd99b9ad",
+            "connective": "Under Queen Elizabeth, Crown and Parliament mostly pulled together."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Stuarts Claim Divine Right",
+            "date": "1603–1640",
+            "img": "/images/james_i.jpg",
+            "mode": "contain",
+            "stat": "James I & Charles I Clash With MPs Over Taxes",
+            "html": "Tudor teamwork broke when Stuart kings <strong>James I and Charles I</strong> preached <strong>Divine Right</strong>—collecting illegal <strong>Ship Money</strong> without MPs until Scots rebelled.",
+            "spoken": "Tudor teamwork shattered once Stuart kings took power. <short pause> Tudor teamwork broke when Stuart kings James I and Charles I preached Divine Right, collecting illegal Ship Money without MPs until Scots rebelled.",
+            "paired_prose_hash": "45d6a7511a",
+            "connective": "Tudor teamwork shattered once Stuart kings took power."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Regicide Shocks Every Crown",
+            "date": "1642–1649",
+            "img": "/images/monarchy_religion_power/death_warrant_charles_i_1649.jpg",
+            "mode": "contain-light",
+            "stat": "59 Seals Stamp Charles I’s 1649 Death Warrant",
+            "html": "Civil war victory at Naseby and <strong>executing Charles I</strong> in 1649 created a brief <strong>republican Commonwealth</strong>—proving even an anointed king answered to <strong>the law</strong>.",
+            "spoken": "Civil war turned a tax dispute into a political earthquake. <short pause> Civil war victory at Naseby and executing Charles I in 1649 created a brief republican Commonwealth, proving even an anointed king answered to the law .",
+            "paired_prose_hash": "1a31ba4300",
+            "connective": "Civil war turned a tax dispute into a political earthquake."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "A Crown Offered on Conditions",
+            "date": "1688–1689",
+            "img": "/images/william_mary_declaration_of_rights_1689.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "Feb 1689: William & Mary Accept Parliament’s Law",
+            "html": "In 1689, MPs handed the crown to <strong>William III and Mary II</strong> under the <strong>Bill of Rights</strong>—banning royal taxes or cancelled laws without <strong>Parliament’s vote</strong>.",
+            "spoken": "Forty years later, the Glorious Revolution settled the question permanently. <short pause> In 1689, MPs handed the crown to William III and Mary II under the Bill of Rights, banning royal taxes or cancelled laws without Parliament’s vote .",
+            "paired_prose_hash": "f3528cc95d",
+            "connective": "Forty years later, the Glorious Revolution settled the question permanently."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Parliamentary Supremacy Born",
+            "date": "1517–1689",
+            "img": "/images/bill_of_rights.jpg",
+            "mode": "contain-light",
+            "stat": "From Royal Absolutism to Constitutional Monarchy",
+            "html": "Between 1517 and 1689, supreme authority moved from <strong>Pope and absolute monarch</strong> to <strong>constitutional monarchy</strong>—where kings reign only through <strong>Parliament’s laws</strong>.",
+            "spoken": "Across nearly two centuries, English power was remade. <short pause> Between 1517 and 1689, supreme authority moved from Pope and absolute monarch to constitutional monarchy, where kings reign only through Parliament’s laws .",
+            "connective": "Across nearly two centuries, English power was remade."
+          }
+        ],
+        "takeaway": "Between 1517 and 1689, Reformation laws, civil war regicide, and the Bill of Rights shifted supreme power from Pope and absolute King to Parliament.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1517 and 1689, Reformation laws, civil war regicide, and the Bill of Rights shifted supreme power from Pope and absolute King to Parliament.",
+        "vocab": [
+          [
+            "1. Statute Law",
+            "Written law passed by MPs in Parliament rather than by royal wish."
+          ],
+          [
+            "2. Commonwealth",
+            "Republican government ruling Britain without a king from 1649 to 1660."
+          ],
+          [
+            "3. Constitutional Monarchy",
+            "System where a king or queen shares power under Parliament’s laws."
+          ]
+        ]
+      }
     }
   ],
   "homepage_background": "/images/family_of_henry_viii_c1545.jpg",

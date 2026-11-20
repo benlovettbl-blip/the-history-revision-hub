@@ -1120,7 +1120,9 @@ export default {
           "source_context": "Appointed Secretary of State for War on 5 August 1914, Kitchener broke with military convention by forecasting a war lasting at least three years, requiring an army of millions rather than Britain’s existing 120,000-strong expeditionary force. **Hinge Question:** Why did Kitchener believe Britain needed an unprecedented volunteer army of millions while most politicians predicted the conflict would be 'over by Christmas'?",
           "teacher_notes": {
             "source_context": "Appointed Secretary of State for War on 5 August 1914, Kitchener broke with military convention by forecasting a war lasting at least three years, requiring an army of millions rather than Britain’s existing 120,000-strong expeditionary force. **Hinge Question:** Why did Kitchener believe Britain needed an unprecedented volunteer army of millions while most politicians predicted the conflict would be 'over by Christmas'?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_1_enlistment_sB.mp3",
+          "studio_voice_label": "Lord Kitchener (Sept 1914)"
         },
         {
           "letter": "C",
@@ -1143,7 +1145,9 @@ export default {
           "source_context": "To tap into deep-rooted civic and occupational loyalties, the War Office allowed towns to form 'Pals Battalions', where friends, clerks, and factory hands could enlist side-by-side. **Hinge Question:** How did the 'Pals Battalions' policy transform military service into a test of collective civic honour, and what made this policy catastrophic when casualties occurred?",
           "teacher_notes": {
             "source_context": "To tap into deep-rooted civic and occupational loyalties, the War Office allowed towns to form 'Pals Battalions', where friends, clerks, and factory hands could enlist side-by-side. **Hinge Question:** How did the 'Pals Battalions' policy transform military service into a test of collective civic honour, and what made this policy catastrophic when casualties occurred?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_1_enlistment_sC.mp3",
+          "studio_voice_label": "War Office Pals Directive (1914)"
         },
         {
           "letter": "D",
@@ -1166,7 +1170,9 @@ export default {
           "source_context": "Jessie Pope was Britain's foremost civilian recruitment poet, producing jaunty verses that framed trench warfare as an exciting schoolboy rugby match and mocked men who hesitated as cowardly spectators. **Hinge Question:** Why did presenting modern mechanized warfare as a jovial sporting 'game' prove so persuasive to Edwardian boys raised on public school rugby and cricket?",
           "teacher_notes": {
             "source_context": "Jessie Pope was Britain's foremost civilian recruitment poet, producing jaunty verses that framed trench warfare as an exciting schoolboy rugby match and mocked men who hesitated as cowardly spectators. **Hinge Question:** Why did presenting modern mechanized warfare as a jovial sporting 'game' prove so persuasive to Edwardian boys raised on public school rugby and cricket?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_1_enlistment_sD.mp3",
+          "studio_voice_label": "Jessie Pope · Recruiting Verse (1915)"
         },
         {
           "letter": "E",
@@ -1189,9 +1195,122 @@ export default {
           "source_context": "Private Savage’s testimony reveals the complex intersection of economic poverty, teenage craving for adventure, and intense social intimidation that compelled hundreds of thousands of Edwardian working-class youths to volunteer. **Hinge Question:** Which factor was more influential in driving young working-class men to enlist: the positive attraction of steady food and adventure, or the negative fear of social humiliation?",
           "teacher_notes": {
             "source_context": "Private Savage’s testimony reveals the complex intersection of economic poverty, teenage craving for adventure, and intense social intimidation that compelled hundreds of thousands of Edwardian working-class youths to volunteer. **Hinge Question:** Which factor was more influential in driving young working-class men to enlist: the positive attraction of steady food and adventure, or the negative fear of social humiliation?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_1_enlistment_sE.mp3",
+          "studio_voice_label": "Pte. Arthur Savage · Eyewitness"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "great_war_p2_l01_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 1",
+        "datesBadge": "Aug – Dec 1914",
+        "topicLabel": "Enquiry 01: 1914 & The Rush to the Colours",
+        "title": "Why Were Young British Men So Eager to Volunteer in 1914?",
+        "spokenTitle": "Why were young British men so eager to volunteer in 1914?",
+        "thumbUrl": "/images/gw_recruitment_queue_1914.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), CWGC & Bundesarchiv (Zero AI Imagery)",
+        "bridges": [
+          "Moral Outrage",
+          "Local Comrades",
+          "Regular Wages",
+          "Public Shame",
+          "Mass Army"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Kitchener’s Urgent Call",
+            "date": "Aug 1914",
+            "img": "/images/gw_kitchener_poster.jpg",
+            "mode": "contain",
+            "stat": "Aug 1914: 120,000 Regulars Need 500,000 More",
+            "html": "Britain entered war with just <strong>120,000 regular soldiers</strong> and no conscription. War Secretary <strong>Lord Kitchener</strong> called for <strong>500,000 volunteers</strong> immediately.",
+            "spoken": "Why were young British men so eager to volunteer in 1914? <short pause> Britain entered war with just 120,000 regular soldiers and no conscription. War Secretary Lord Kitchener called for 500,000 volunteers immediately.",
+            "paired_prose_hash": "4e2b8a472c",
+            "connective": "Why were young British men so eager to volunteer in 1914?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Outrage Over Neutral Belgium",
+            "date": "Aug–Sept 1914",
+            "img": "/images/gw_scrap_of_paper.jpg",
+            "mode": "contain",
+            "stat": "4 Aug 1914: 1839 Treaty Dismissed as Paper",
+            "html": "Germany invaded <strong>neutral Belgium</strong> and called the <strong>1839 Treaty of London</strong> a 'scrap of paper'. Reports of <strong>civilian atrocities</strong> sparked moral outrage across Britain.",
+            "spoken": "German actions in Belgium quickly ignited moral anger across Britain. <short pause> Germany invaded neutral Belgium and called the 1839 Treaty of London a 'scrap of paper'. Reports of civilian atrocities sparked moral outrage across Britain.",
+            "paired_prose_hash": "c1e2bdea33",
+            "connective": "German actions in Belgium quickly ignited moral anger across Britain."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Joining With Mates in Pals",
+            "date": "Sept 1914",
+            "img": "/images/gw_recruitment_queue_1914.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Local Pals Battalions Train & Fight Together",
+            "html": "<strong>Pals Battalions</strong> let friends, neighbours, and workmates enlist and fight side by side. High morale came with terrible risk: one battle could devastate a <strong>whole town</strong>.",
+            "spoken": "To organise eager crowds, towns formed local units together. <short pause> Pals Battalions let friends, neighbours, and workmates enlist and fight side by side. High morale came with terrible risk: one battle could devastate a whole town .",
+            "paired_prose_hash": "b285b3d662",
+            "connective": "To organise eager crowds, towns formed local units together."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Pay, Boots & Quick Adventure",
+            "date": "Autumn 1914",
+            "img": "/images/gw_jessie_pope.jpg",
+            "mode": "contain",
+            "stat": "King’s Shilling Offers Regular Pay & Warm Kit",
+            "html": "Taking the <strong>King’s shilling</strong> gave poor workers regular pay, hot food, and <strong>sturdy boots</strong>. Poets like <strong>Jessie Pope</strong> made war sound like a quick adventure.",
+            "spoken": "Harsh poverty at home also pushed working men forward. <short pause> Taking the King’s shilling gave poor workers regular pay, hot food, and sturdy boots . Poets like Jessie Pope made war sound like a quick adventure.",
+            "paired_prose_hash": "b5025fe240",
+            "connective": "Harsh poverty at home also pushed working men forward."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Posters & White Feathers",
+            "date": "Late 1914",
+            "img": "/images/gw_women_say_go.jpg",
+            "mode": "contain",
+            "stat": "White Feathers Shame Men in Civilian Clothes",
+            "html": "Pointing posters demanded every man do his duty. Meanwhile, women in the <strong>White Feather Movement</strong> handed <strong>white feathers</strong> to civilians to shame them as <strong>cowards</strong>.",
+            "spoken": "Those who hesitated faced fierce social pressure in public. <short pause> Pointing posters demanded every man do his duty. Meanwhile, women in the White Feather Movement handed white feathers to civilians to shame them as cowards .",
+            "paired_prose_hash": "983d5f3344",
+            "connective": "Those who hesitated faced fierce social pressure in public."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Innocence Meets Machine Guns",
+            "date": "1914–1915",
+            "img": "/images/gw_wilfred_owen.jpg",
+            "mode": "contain",
+            "stat": "Over 2.4 Million Volunteer Before 1916",
+            "html": "Patriotism, <strong>Pals comradeship</strong>, poverty, and social shame drove over <strong>two million men</strong> to volunteer—marching straight into the industrial slaughter of <strong>trench warfare</strong>.",
+            "spoken": "Together, patriotism, poverty, and shame built a vast volunteer army. <short pause> Patriotism, Pals comradeship , poverty, and social shame drove over two million men to volunteer, marching straight into the industrial slaughter of trench warfare .",
+            "connective": "Together, patriotism, poverty, and shame built a vast volunteer army."
+          }
+        ],
+        "takeaway": "Patriotism over Belgium, Pals comradeship, guaranteed wages, and White Feather shaming drove over two million British men to volunteer for industrial war.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Patriotism over Belgium, Pals comradeship, guaranteed wages, and White Feather shaming drove over two million British men to volunteer for industrial war.",
+        "vocab": [
+          [
+            "1. Pals Battalions",
+            "Army units letting local friends, neighbours, and workmates enlist together."
+          ],
+          [
+            "2. White Feather",
+            "Symbol of cowardice handed to civilian men to shame them into enlisting."
+          ],
+          [
+            "3. Conscription",
+            "Law forcing citizens to join the armed forces, absent in Britain in 1914."
+          ]
+        ]
+      },
+      "prologue_audio": "/audio/lessons/great_war_part2/lesson_1_enlistment_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · British Historian"
     },
     {
       "id": "lesson_2_trenches_haig",
@@ -2350,7 +2469,9 @@ export default {
           "source_context": "Trench warfare created unprecedented physical and psychological casualties. Constant immersion in freezing water produced trench foot (often requiring amputation), while continuous artillery bombardment pulverized human nervous systems, creating the condition known as 'shell shock'. **Hinge Question:** Why were British military authorities initially reluctant to accept 'shell shock' as a genuine medical wound rather than cowardice or lack of moral fiber?",
           "teacher_notes": {
             "source_context": "Trench warfare created unprecedented physical and psychological casualties. Constant immersion in freezing water produced trench foot (often requiring amputation), while continuous artillery bombardment pulverized human nervous systems, creating the condition known as 'shell shock'. **Hinge Question:** Why were British military authorities initially reluctant to accept 'shell shock' as a genuine medical wound rather than cowardice or lack of moral fiber?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_2_trenches_haig_sB.mp3",
+          "studio_voice_label": "RAMC Medical Report (1916)"
         },
         {
           "letter": "C",
@@ -2373,7 +2494,9 @@ export default {
           "source_context": "Haig placed absolute faith in the power of a seven-day artillery bombardment of 1.5 million shells to destroy German defenses before his infantry moved forward on 1 July 1916. **Hinge Question:** Why did British high command assume artillery could destroy deep underground bunker systems, and what happened when this assumption proved fatally wrong?",
           "teacher_notes": {
             "source_context": "Haig placed absolute faith in the power of a seven-day artillery bombardment of 1.5 million shells to destroy German defenses before his infantry moved forward on 1 July 1916. **Hinge Question:** Why did British high command assume artillery could destroy deep underground bunker systems, and what happened when this assumption proved fatally wrong?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_2_trenches_haig_sC.mp3",
+          "studio_voice_label": "Fourth Army Somme Plan (June 1916)"
         },
         {
           "letter": "D",
@@ -2396,7 +2519,9 @@ export default {
           "source_context": "Private Coppard witnessed firsthand the catastrophic mismatch between GHQ’s optimistic plans and the lethal technological reality of German water-cooled Maxim machine guns firing 500 rounds per minute. **Hinge Question:** How did German defensive engineering (concrete dugouts thirty feet underground) neutralize Britain's seven-day artillery bombardment?",
           "teacher_notes": {
             "source_context": "Private Coppard witnessed firsthand the catastrophic mismatch between GHQ’s optimistic plans and the lethal technological reality of German water-cooled Maxim machine guns firing 500 rounds per minute. **Hinge Question:** How did German defensive engineering (concrete dugouts thirty feet underground) neutralize Britain's seven-day artillery bombardment?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_2_trenches_haig_sD.mp3",
+          "studio_voice_label": "Pte. George Coppard (1 July 1916)"
         },
         {
           "letter": "E",
@@ -2419,9 +2544,125 @@ export default {
           "source_context": "The historical evaluation of Haig and his generals has shifted dramatically over decades, from 1960s condemnation ('Lions Led by Donkeys') to modern revisionist analysis emphasizing technological constraints and the evolution of creeping barrages, tanks, and aircraft. **Hinge Question:** Is it fair for modern historians to judge Haig's decisions using hindsight, given the communication and technological limitations of 1916?",
           "teacher_notes": {
             "source_context": "The historical evaluation of Haig and his generals has shifted dramatically over decades, from 1960s condemnation ('Lions Led by Donkeys') to modern revisionist analysis emphasizing technological constraints and the evolution of creeping barrages, tanks, and aircraft. **Hinge Question:** Is it fair for modern historians to judge Haig's decisions using hindsight, given the communication and technological limitations of 1916?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_2_trenches_haig_sE.mp3",
+          "studio_voice_label": "2-Voice Debate · Taylor vs Keegan"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "great_war_p2_l02_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 2",
+        "datesBadge": "1914 – 1918",
+        "topicLabel": "Enquiry 02: Trench Warfare & The Haig Controversy (1915–1916)",
+        "title": "Did British Generals Make Trench Warfare Worse, or Learn How to Win Under Fire?",
+        "spokenTitle": "Did British generals make trench warfare worse, or learn how to win under fire?",
+        "thumbUrl": "/images/cheshire_regiment_trench.png",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), CWGC & Bundesarchiv (Zero AI Imagery)",
+        "bridges": [
+          "Three-Tier Lines",
+          "Mud & Trauma",
+          "Somme Slaughter",
+          "Bitter Debate",
+          "Hard Lessons"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "400 Miles of Dug-In Deadlock",
+            "date": "Autumn 1914",
+            "img": "/images/cheshire_regiment_trench.png",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "400-Mile Front: North Sea to Swiss Border",
+            "html": "Deadly <strong>machine guns</strong> and <strong>artillery shrapnel</strong> swept open fields after the Race to the Sea. Armies dug a <strong>400-mile trench line</strong> from Belgium to Switzerland.",
+            "spoken": "Did British generals make trench warfare worse, or learn how to win under fire? <short pause> Deadly machine guns and artillery shrapnel swept open fields after the Race to the Sea. Armies dug a 400-mile trench line from Belgium to Switzerland.",
+            "paired_prose_hash": "9a0cec6264",
+            "connective": "Did British generals make trench warfare worse, or learn how to win under fire?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Zig-Zags, Wire & Deep Dugouts",
+            "date": "1915",
+            "img": "/images/trench_construction_diagram_1914.png",
+            "mode": "contain-light",
+            "stat": "3-Tier Trenches & 30ft Concrete Dugouts",
+            "html": "Engineers built <strong>three-tier trenches</strong> in <strong>zig-zag lines</strong> to contain shell blasts. Thick <strong>barbed wire</strong> guarded the front while deep concrete dugouts sheltered defenders.",
+            "spoken": "Simple ditches soon grew into deep defensive fortresses. <short pause> Engineers built three-tier trenches in zig-zag lines to contain shell blasts. Thick barbed wire guarded the front while deep concrete dugouts sheltered defenders.",
+            "paired_prose_hash": "45946c263f",
+            "connective": "Simple ditches soon grew into deep defensive fortresses."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Trench Foot & Shell Shock",
+            "date": "1915–1916",
+            "img": "/images/gw_flooded_trench.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "Freezing Mud & Relentless Heavy Howitzers",
+            "html": "Standing in freezing mud caused painful <strong>trench foot</strong> and amputations. Meanwhile, non-stop <strong>heavy shelling</strong> shattered soldiers’ nerves, causing severe <strong>shell shock</strong>.",
+            "spoken": "Inside these flooded ditches, daily life battered body and mind. <short pause> Standing in freezing mud caused painful trench foot and amputations. Meanwhile, non-stop heavy shelling shattered soldiers’ nerves, causing severe shell shock .",
+            "paired_prose_hash": "4b0a538b6e",
+            "connective": "Inside these flooded ditches, daily life battered body and mind."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Catastrophe on the Somme",
+            "date": "1 July 1916",
+            "img": "/images/med_stage_somme_battle_1916.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "1 July 1916: 57,470 Casualties in One Day",
+            "html": "Haig’s week-long <strong>1.5-million-shell</strong> barrage failed to cut German wire or smash deep dugouts. On <strong>1 July 1916</strong>, machine guns caused <strong>57,470 British casualties</strong>.",
+            "spoken": "To break this deadlock, General Haig attacked on the Somme. <short pause> Haig’s week-long 1.5-million-shell barrage failed to cut German wire or smash deep dugouts. On the first of July 1916 , machine guns caused 57,470 British casualties .",
+            "paired_prose_hash": "a2dece1016",
+            "connective": "To break this deadlock, General Haig attacked on the Somme."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Butcher or Modernising Leader?",
+            "date": "1916–1918",
+            "img": "/images/gw_douglas_haig.jpg",
+            "mode": "contain",
+            "stat": "Debate: Callous Butcher vs Combined-Arms",
+            "html": "Critics branded <strong>General Haig</strong> a butcher wasting brave men in mud. Modern historians argue his army mastered <strong>tanks</strong>, aircraft, and <strong>creeping barrages</strong> by 1918.",
+            "spoken": "That terrible loss sparked a fierce debate over Haig’s leadership. <short pause> Critics branded General Haig a butcher wasting brave men in mud. Modern historians argue his army mastered tanks , aircraft, and creeping barrages by 1918.",
+            "paired_prose_hash": "16fba78f89",
+            "connective": "That terrible loss sparked a fierce debate over Haig’s leadership."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Victory Bought in Heavy Blood",
+            "date": "By Nov 1918",
+            "img": "/images/gw_thiepval.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "72,000 Missing Named at Thiepval Memorial",
+            "html": "New <strong>combined-arms tactics</strong> finally broke the Western Front in 1918, yet the <strong>Somme’s terrible cost</strong> scarred Britain and fuelled lasting anger over <strong>Haig’s command</strong>.",
+            "spoken": "Modern tactics broke the trenches, yet at terrible cost. <short pause> New combined-arms tactics finally broke the Western Front in 1918, yet the Somme’s terrible cost scarred Britain and fuelled lasting anger over Haig’s command .",
+            "connective": "Modern tactics broke the trenches, yet at terrible cost."
+          }
+        ],
+        "takeaway": "Machine guns and deep dugouts caused catastrophic Somme losses, dividing historians over whether Haig was a butcher or learned modern combined-arms tactics.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Machine guns and deep dugouts caused catastrophic Somme losses, dividing historians over whether Haig was a butcher or learned modern combined-arms tactics.",
+        "vocab": [
+          [
+            "1. Stalemate",
+            "Deadlock where neither army can advance or win a clear breakthrough."
+          ],
+          [
+            "2. Shell Shock",
+            "Severe mental trauma caused by constant heavy artillery bombardment."
+          ],
+          [
+            "3. Creeping Barrage",
+            "Moving curtain of artillery fire advancing just ahead of infantry."
+          ]
+        ]
+      },
+      "prologue_audio": "/audio/lessons/great_war_part2/lesson_2_trenches_haig_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · British Historian"
     },
     {
       "id": "lesson_3_empire_troops",
@@ -3642,9 +3883,124 @@ export default {
           "source_context": "Over 16,000 Caribbean men volunteered for the BWIR. Following the Armistice, while white troops were demobilized, BWIR soldiers were held in degrading conditions at Taranto, Italy, and forced to do heavy manual chores. The resulting strike led directly to the formation of the Caribbean League and early independence movements. **Hinge Question:** Why did the British military establishment treat volunteer soldiers from the Caribbean as manual labourers rather than combatants?",
           "teacher_notes": {
             "source_context": "Over 16,000 Caribbean men volunteered for the BWIR. Following the Armistice, while white troops were demobilized, BWIR soldiers were held in degrading conditions at Taranto, Italy, and forced to do heavy manual chores. The resulting strike led directly to the formation of the Caribbean League and early independence movements. **Hinge Question:** Why did the British military establishment treat volunteer soldiers from the Caribbean as manual labourers rather than combatants?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_3_empire_troops_sE.mp3",
+          "studio_voice_label": "Taranto Inquiry Report (Dec 1918)"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "great_war_p2_l03_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 3",
+        "datesBadge": "1914 – 1919",
+        "topicLabel": "Enquiry 03: Global Empire & The Forgotten Fronts (1914–1918)",
+        "title": "Why Were over Four Million Empire Troops Forgotten After 1918?",
+        "spokenTitle": "Why were over four million Empire troops forgotten after 1918?",
+        "thumbUrl": "/images/ludhiana_sikhs_marseille_1914.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), CWGC & Bundesarchiv (Zero AI Imagery)",
+        "bridges": [
+          "Flanders Rescued",
+          "Global Fronts",
+          "Hidden Labour",
+          "Erased Dead",
+          "Empire Questioned"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Britain’s Imperial Lifeline",
+            "date": "1914–1918",
+            "img": "/images/gw_empire_needs_men.jpg",
+            "mode": "contain",
+            "stat": "Over 4 Million Colonial & Dominion Troops",
+            "html": "Britain’s war effort relied on over <strong>four million</strong> colonial and dominion troops across five continents, backed by overseas ships carrying <strong>wheat, oil</strong>, and supplies.",
+            "spoken": "Why were over four million Empire troops forgotten after 1918? <short pause> Britain’s war effort relied on over four million colonial and dominion troops across five continents, backed by overseas ships carrying wheat, oil , and supplies.",
+            "paired_prose_hash": "e3f957ae3a",
+            "connective": "Why were over four million Empire troops forgotten after 1918?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Khudadad Khan & Flanders",
+            "date": "1914–1915",
+            "img": "/images/gw_khudadad_khan.jpg",
+            "mode": "contain",
+            "stat": "1.3m Indian Volunteers • First Asian VC",
+            "html": "At <strong>First Ypres</strong>, Indian soldiers held freezing trenches in thin cotton uniforms. Wounded <strong>Khudadad Khan</strong> won the first South Asian <strong>Victoria Cross</strong>.",
+            "spoken": "In autumn 1914, Indian soldiers rescued British lines in Flanders. <short pause> At First Ypres , Indian soldiers held freezing trenches in thin cotton uniforms. Wounded Khudadad Khan won the first South Asian Victoria Cross .",
+            "paired_prose_hash": "20cc3be567",
+            "connective": "In autumn 1914, Indian soldiers rescued British lines in Flanders."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Gallipoli, ANZACs & the BWIR",
+            "date": "1915",
+            "img": "/images/gw_bwir.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Apr 1915: 8-Month Stalemate at Anzac Cove",
+            "html": "Pinned below steep cliffs at <strong>Gallipoli</strong> in 1915, Australian and New Zealand soldiers forged the <strong>ANZAC legend</strong>, while <strong>Caribbean volunteers</strong> served in the BWIR.",
+            "spoken": "Empire troops also fought far beyond the Western Front. <short pause> Pinned below steep cliffs at Gallipoli in 1915, Australian and New Zealand soldiers forged the ANZAC legend , while Caribbean volunteers served in the BWIR.",
+            "paired_prose_hash": "c08e712cfc",
+            "connective": "Empire troops also fought far beyond the Western Front."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "140,000 Chinese Labourers",
+            "date": "1916–1918",
+            "img": "/images/gw_clc.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "140,000 CLC Workers Kept Behind Segregation",
+            "html": "Around <strong>140,000 workers</strong> in the <strong>Chinese Labour Corps</strong> dug trenches and unloaded shells under fire, yet British officers locked them inside <strong>segregated camps</strong>.",
+            "spoken": "Behind the front lines, global workers kept Allied armies supplied. <short pause> Around 140,000 workers in the Chinese Labour Corps dug trenches and unloaded shells under fire, yet British officers locked them inside segregated camps .",
+            "paired_prose_hash": "4d8b361c6b",
+            "connective": "Behind the front lines, global workers kept Allied armies supplied."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Unmarked Graves & Erasure",
+            "date": "Post-1918",
+            "img": "/images/gw_dead_mans_penny.jpg",
+            "mode": "contain",
+            "stat": "1919: Non-White Troops Cut From Victory March",
+            "html": "Over <strong>one million African carriers</strong> died without marked headstones, and non-white troops were barred from the <strong>1919 London Victory Parade</strong> and denied <strong>equal pensions</strong>.",
+            "spoken": "When peace arrived, imperial racism erased non-white sacrifice. <short pause> Over one million African carriers died without marked headstones, and non-white troops were barred from the 1919 London Victory Parade and denied equal pensions .",
+            "paired_prose_hash": "d36491b4d4",
+            "connective": "When peace arrived, imperial racism erased non-white sacrifice."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Broken Promises Spark Protest",
+            "date": "After 1919",
+            "img": "/images/ludhiana_sikhs_marseille_1914.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Wartime Sacrifice Fuels Anti-Colonial Pride",
+            "html": "Empire troops helped save Allied Europe, yet post-war <strong>racial injustice</strong> left them erased at home and fuelled powerful <strong>independence movements</strong> across <strong>Asia and Africa</strong>.",
+            "spoken": "Deliberate exclusion erased colonial troops from British memory for decades. <short pause> Empire troops helped save Allied Europe, yet post-war racial injustice left them erased at home and fuelled powerful independence movements across Asia and Africa .",
+            "connective": "Deliberate exclusion erased colonial troops from British memory for decades."
+          }
+        ],
+        "takeaway": "Over four million colonial and dominion troops sustained Allied victory, yet racial segregation, unmarked graves, and the 1919 parade erased their sacrifice.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Over four million colonial and dominion troops sustained Allied victory, yet racial segregation, unmarked graves, and the 1919 parade erased their sacrifice.",
+        "vocab": [
+          [
+            "1. Sepoy",
+            "An Indian infantry soldier serving inside the British Indian Army."
+          ],
+          [
+            "2. Chinese Labour Corps",
+            "Around 140,000 Chinese workers who dug trenches and moved supplies in France."
+          ],
+          [
+            "3. Self-Determination",
+            "Right of colonised peoples and nations to govern themselves freely."
+          ]
+        ]
+      },
+      "prologue_audio": "/audio/lessons/great_war_part2/lesson_3_empire_troops_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · British Historian"
     },
     {
       "id": "lesson_4_home_front_dora",
@@ -4752,7 +5108,9 @@ export default {
           "source_context": "Passed four days after declaring war without parliamentary debate, DORA gave the British government near-dictatorial powers over speech, industry, food, and movement, effectively suspending traditional civil liberties in the name of national survival. **Hinge Question:** Why was Parliament willing to pass such sweeping, authoritarian restrictions on ancient British civil liberties in a single afternoon without debate?",
           "teacher_notes": {
             "source_context": "Passed four days after declaring war without parliamentary debate, DORA gave the British government near-dictatorial powers over speech, industry, food, and movement, effectively suspending traditional civil liberties in the name of national survival. **Hinge Question:** Why was Parliament willing to pass such sweeping, authoritarian restrictions on ancient British civil liberties in a single afternoon without debate?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_4_home_front_dora_sA.mp3",
+          "studio_voice_label": "DORA Section 1 (Aug 1914)"
         },
         {
           "letter": "B",
@@ -4799,7 +5157,9 @@ export default {
           "source_context": "Over 700,000 women entered munitions factories to resolve the catastrophic 1915 Shell Crisis. Handling toxic chemical compounds caused toxic jaundice, destroyed bone marrow, and cost dozens of lives in accidental plant explosions (e.g. Silvertown 1917, Chilwell 1918). **Hinge Question:** Why were working-class women willing to endure lethal chemical poisoning and explosion risks in munitions factories for wages lower than their male counterparts?",
           "teacher_notes": {
             "source_context": "Over 700,000 women entered munitions factories to resolve the catastrophic 1915 Shell Crisis. Handling toxic chemical compounds caused toxic jaundice, destroyed bone marrow, and cost dozens of lives in accidental plant explosions (e.g. Silvertown 1917, Chilwell 1918). **Hinge Question:** Why were working-class women willing to endure lethal chemical poisoning and explosion risks in munitions factories for wages lower than their male counterparts?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_4_home_front_dora_sC.mp3",
+          "studio_voice_label": "Lilian Miles · Munitionette (1917)"
         },
         {
           "letter": "D",
@@ -4822,7 +5182,9 @@ export default {
           "source_context": "Following the 1916 Military Service Act introducing conscription, over 16,000 men applied for exemption as Conscientious Objectors. Local tribunals comprised of conservative civic elders were openly hostile, frequently badgering applicants with hypothetical scenarios about violence against female relatives. **Hinge Question:** Why did tribunal chairmen almost universally ask Conscientious Objectors what they would do if a German attacked their mother or sister?",
           "teacher_notes": {
             "source_context": "Following the 1916 Military Service Act introducing conscription, over 16,000 men applied for exemption as Conscientious Objectors. Local tribunals comprised of conservative civic elders were openly hostile, frequently badgering applicants with hypothetical scenarios about violence against female relatives. **Hinge Question:** Why did tribunal chairmen almost universally ask Conscientious Objectors what they would do if a German attacked their mother or sister?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_4_home_front_dora_sD.mp3",
+          "studio_voice_label": "2-Voice Tribunal Hearing (1916)"
         },
         {
           "letter": "E",
@@ -4847,9 +5209,123 @@ export default {
           "source_context": "The 'Richmond Sixteen' were absolutist Conscientious Objectors who refused to put on military uniform or follow military commands. Transported to Boulogne under military law, they were sentenced to death before public uproar forced the government to commute sentences to ten years' hard labor in civil prisons. **Hinge Question:** Why did the British military take Conscientious Objectors to the frontlines in France under threat of execution, rather than simply imprisoning them in Britain?",
           "teacher_notes": {
             "source_context": "The 'Richmond Sixteen' were absolutist Conscientious Objectors who refused to put on military uniform or follow military commands. Transported to Boulogne under military law, they were sentenced to death before public uproar forced the government to commute sentences to ten years' hard labor in civil prisons. **Hinge Question:** Why did the British military take Conscientious Objectors to the frontlines in France under threat of execution, rather than simply imprisoning them in Britain?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_4_home_front_dora_sE.mp3",
+          "studio_voice_label": "Norman Gaudie · Richmond Cell (1916)"
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "great_war_p2_l04_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 4",
+        "datesBadge": "1914 – 1918",
+        "topicLabel": "Enquiry 04: The Home Front & Women’s Total War (1914–1918)",
+        "title": "How Far Did Total War Transform Daily Life on the British Home Front?",
+        "spokenTitle": "How far did total war transform daily life on the British Home Front?",
+        "thumbUrl": "/images/gw_munitionettes.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), CWGC & Bundesarchiv (Zero AI Imagery)",
+        "bridges": [
+          "Shell Famine",
+          "Forced Service",
+          "Canary Girls",
+          "U-Boat Siege",
+          "State & Vote"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "DORA Controls Everyday Life",
+            "date": "Aug 1914",
+            "img": "/images/gw_dora_notice.jpg",
+            "mode": "contain-light",
+            "stat": "Aug 1914: Censorship, Factories & Pub Rules",
+            "html": "Passed in August 1914, <strong>DORA</strong> gave the state sweeping control—seizing factories, enforcing strict <strong>censorship</strong>, shutting pubs early, and <strong>watering down beer</strong>.",
+            "spoken": "How far did total war transform daily life on the British Home Front? <short pause> Passed in August 1914, DORA gave the state sweeping control, seizing factories, enforcing strict censorship , shutting pubs early, and watering down beer .",
+            "paired_prose_hash": "82a5b0daf9",
+            "connective": "How far did total war transform daily life on the British Home Front?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "1915 Shell Crisis & Factories",
+            "date": "May 1915",
+            "img": "/images/gw_lloyd_george.jpg",
+            "mode": "contain",
+            "stat": "1915: Lloyd George Leads Munitions Ministry",
+            "html": "After newspapers exposed the <strong>1915 shell famine</strong>, <strong>David Lloyd George</strong> took charge of the new <strong>Ministry of Munitions</strong> and placed weapons factories under state control.",
+            "spoken": "Frontline ammunition shortages soon forced even deeper state intervention. <short pause> After newspapers exposed the 1915 shell famine , David Lloyd George took charge of the new Ministry of Munitions and placed weapons factories under state control.",
+            "paired_prose_hash": "91e2de0473",
+            "connective": "Frontline ammunition shortages soon forced even deeper state intervention."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Conscription & Objectors",
+            "date": "Jan 1916",
+            "img": "/images/gw_richmond_castle.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Jan 1916: Conscription • 16,000 Objectors",
+            "html": "In January 1916, the <strong>Military Service Act</strong> forced men aged 18 to 41 into uniform. Around <strong>16,000 conscientious objectors</strong> refused to fight and faced <strong>harsh prison</strong>.",
+            "spoken": "Meanwhile, heavy trench casualties dried up Britain’s supply of volunteers. <short pause> In January 1916, the Military Service Act forced men aged 18 to 41 into uniform. Around 16,000 conscientious objectors refused to fight and faced harsh prison .",
+            "paired_prose_hash": "89a6ef37c1",
+            "connective": "Meanwhile, heavy trench casualties dried up Britain’s supply of volunteers."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Canary Girls Power the Guns",
+            "date": "1916–1918",
+            "img": "/images/gw_munitionettes.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Women Produce 80% of All British Shells",
+            "html": "Nearly one million female <strong>Canary Girls</strong> braved toxic <strong>TNT yellowing</strong> and deadly blasts like Silvertown to manufacture <strong>80% of Britain’s shells</strong>.",
+            "spoken": "With men fighting abroad, women entered heavy war factories. <short pause> Nearly one million female Canary Girls braved toxic TNT yellowing and deadly blasts like Silvertown to manufacture 80% of Britain’s shells .",
+            "paired_prose_hash": "6b5c270d35",
+            "connective": "With men fighting abroad, women entered heavy war factories."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "U-Boats & 1918 Ration Books",
+            "date": "1917–1918",
+            "img": "/images/gw_ration_book.jpg",
+            "mode": "contain",
+            "stat": "1917: Six Weeks’ Wheat Left • 1918 Rationing",
+            "html": "German <strong>U-boats</strong> sank food ships until Britain had six weeks of wheat left. In 1918, compulsory <strong>ration books</strong> and <strong>naval convoys</strong> beat starvation.",
+            "spoken": "At sea, German submarines nearly starved the British Home Front. <short pause> German U-boats sank food ships until Britain had six weeks of wheat left. In 1918, compulsory ration books and naval convoys beat starvation.",
+            "paired_prose_hash": "551f762102",
+            "connective": "At sea, German submarines nearly starved the British Home Front."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Stronger State & Women’s Vote",
+            "date": "Feb 1918",
+            "img": "/images/suffragettes_kenney_pankhurst.jpg",
+            "mode": "contain",
+            "stat": "1918 Act: 8.4m Women Over 30 Win the Vote",
+            "html": "Total war expanded <strong>state power</strong> over industry and food while women’s vital war work helped win the <strong>1918 vote</strong> for property-owning <strong>women over thirty</strong>.",
+            "spoken": "Four years of total war reshaped British government and citizenship. <short pause> Total war expanded state power over industry and food while women’s vital war work helped win the 1918 vote for property-owning women over thirty .",
+            "connective": "Four years of total war reshaped British government and citizenship."
+          }
+        ],
+        "takeaway": "Total war brought DORA censorship, state-run factories, conscription, and rationing, while Canary Girls produced 80% of shells and helped win the 1918 vote.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Total war brought DORA censorship, state-run factories, conscription, and rationing, while Canary Girls produced 80% of shells and helped win the 1918 vote.",
+        "vocab": [
+          [
+            "1. DORA",
+            "1914 emergency law giving government sweeping control over civilian life."
+          ],
+          [
+            "2. Conscientious Objector",
+            "Person refusing military service for moral, religious, or political beliefs."
+          ],
+          [
+            "3. Canary Girls",
+            "Women shell workers whose skin turned yellow from toxic TNT chemicals."
+          ]
+        ]
+      },
+      "prologue_audio": "/audio/lessons/great_war_part2/lesson_4_home_front_dora_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · British Historian"
     },
     {
       "id": "lesson_5_versailles",
@@ -5902,7 +6378,9 @@ export default {
           "source_context": "On 8 August 1918 at the Battle of Amiens, British, Canadian, and Australian forces launched a combined-arms offensive with 500 tanks, advancing eight miles in a single day. Ludendorff realized the German Army could no longer win and urged the Kaiser to seek peace. **Hinge Question:** Why did the sudden collapse of the German frontline on 8 August 1918 shatter the German High Command's belief that they could still negotiate from a position of strength?",
           "teacher_notes": {
             "source_context": "On 8 August 1918 at the Battle of Amiens, British, Canadian, and Australian forces launched a combined-arms offensive with 500 tanks, advancing eight miles in a single day. Ludendorff realized the German Army could no longer win and urged the Kaiser to seek peace. **Hinge Question:** Why did the sudden collapse of the German frontline on 8 August 1918 shatter the German High Command's belief that they could still negotiate from a position of strength?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_5_versailles_sA.mp3",
+          "studio_voice_label": "Gen. Erich Ludendorff (Aug 1918)"
         },
         {
           "letter": "B",
@@ -5925,7 +6403,9 @@ export default {
           "source_context": "Signed at 5:00 am on 11 November 1918 to take effect at the 11th hour of the 11th day, the Armistice stripped Germany of its heavy armaments and naval fleet, ensuring it could not resume the war while the peace treaty was drafted. **Hinge Question:** Why did Allied leaders insist that Germany surrender all heavy weapons and submarines in the Armistice before peace negotiations even began?",
           "teacher_notes": {
             "source_context": "Signed at 5:00 am on 11 November 1918 to take effect at the 11th hour of the 11th day, the Armistice stripped Germany of its heavy armaments and naval fleet, ensuring it could not resume the war while the peace treaty was drafted. **Hinge Question:** Why did Allied leaders insist that Germany surrender all heavy weapons and submarines in the Armistice before peace negotiations even began?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_5_versailles_sB.mp3",
+          "studio_voice_label": "Armistice Terms (11 Nov 1918)"
         },
         {
           "letter": "C",
@@ -5972,7 +6452,9 @@ export default {
           "source_context": "Under the treaty, Germany lost 13% of its European territory, all overseas colonies, its air force, and had its army capped at 100,000 men. Article 231 provided the legal foundation for reparations, later fixed at £6.6 billion. **Hinge Question:** Why did the combination of losing 13% of its land and signing the War Guilt Clause provoke greater outrage in Germany than any other aspect of the treaty?",
           "teacher_notes": {
             "source_context": "Under the treaty, Germany lost 13% of its European territory, all overseas colonies, its air force, and had its army capped at 100,000 men. Article 231 provided the legal foundation for reparations, later fixed at £6.6 billion. **Hinge Question:** Why did the combination of losing 13% of its land and signing the War Guilt Clause provoke greater outrage in Germany than any other aspect of the treaty?"
-          }
+          },
+          "studio_audio": "/audio/sources/great_war_part2/lesson_5_versailles_sD.mp3",
+          "studio_voice_label": "Treaty of Versailles (Art. 231–232)"
         },
         {
           "letter": "E",
@@ -5998,7 +6480,119 @@ export default {
             "source_context": "Will Dyson produced what is universally regarded as the most uncannily accurate political prophecy in modern history. He recognized that by crushing Germany without destroying its demographic power, the treaty ensured a second catastrophic war exactly twenty years later, when the babies of 1919 reached fighting age ('1940 Class'). **Hinge Question:** Why was a British socialist cartoonist able to predict World War II in May 1919 with such astonishing chronological precision ('1940 Class'), while the world’s most powerful statesmen were blind to it?"
           }
         }
-      ]
+      ],
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "great_war_p2_l05_visual_story_sheet",
+        "ktBadge": "Year 9 • Enquiry 5",
+        "datesBadge": "1918 – 1939",
+        "topicLabel": "Enquiry 05: The Treaty of Versailles & The Flawed Peace (1918–1919)",
+        "title": "Did the Treaty of Versailles Solve 1914, or Create the Nightmares of 1939?",
+        "spokenTitle": "Did the Treaty of Versailles solve 1914, or create the nightmares of 1939?",
+        "thumbUrl": "/images/gw_big_three_versailles.jpg",
+        "provenanceNote": "Imperial War Museums, The National Archives (Kew), CWGC & Bundesarchiv (Zero AI Imagery)",
+        "bridges": [
+          "Big Three Clash",
+          "Harsh Diktat",
+          "Dark Warnings",
+          "1930s Failure",
+          "Twenty-Year Truce"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Mutiny & Railway Armistice",
+            "date": "11 Nov 1918",
+            "img": "/images/gw_armistice_carriage.jpg",
+            "mode": "contain",
+            "stat": "11 Nov 1918: Armistice Signed at Compiègne",
+            "html": "Crushed by Allied advances and blockade, <strong>Kiel sailors mutinied</strong> and the Kaiser fled. On <strong>11 November 1918</strong>, Germany signed the <strong>Compiègne railway Armistice</strong>.",
+            "spoken": "Did the Treaty of Versailles solve 1914, or create the nightmares of 1939? <short pause> Crushed by Allied advances and blockade, Kiel sailors mutinied and the Kaiser fled. On the eleventh of November 1918 , Germany signed the Compiègne railway Armistice .",
+            "paired_prose_hash": "475b313b5a",
+            "connective": "Did the Treaty of Versailles solve 1914, or create the nightmares of 1939?"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "The Big Three Pull Apart",
+            "date": "Jan–June 1919",
+            "img": "/images/gw_big_three_versailles.jpg",
+            "mode": "landscape",
+            "pos": "center 20%",
+            "stat": "Wilson’s Peace vs Clemenceau’s Revenge",
+            "html": "In Paris, <strong>Wilson</strong> pushed his Fourteen Points and League, <strong>Clemenceau</strong> demanded harsh revenge to shield France, and <strong>Lloyd George</strong> sought middle-ground trade.",
+            "spoken": "Victory immediately exposed deep divisions among Allied leaders in Paris. <short pause> In Paris, Wilson pushed his Fourteen Points and League, Clemenceau demanded harsh revenge to shield France, and Lloyd George sought middle-ground trade.",
+            "paired_prose_hash": "25b5bf4f30",
+            "connective": "Victory immediately exposed deep divisions among Allied leaders in Paris."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "War Guilt & The Hated Diktat",
+            "date": "28 June 1919",
+            "img": "/images/weimar_versailles_losses_1919_map_auth.png",
+            "mode": "contain-light",
+            "stat": "Article 231 • £6.6bn Fine • 100,000 Army Cap",
+            "html": "<strong>Article 231</strong> blamed Germany, imposing <strong>£6.6 billion reparations</strong>, a 100,000-man army cap, and 13% land losses. Outraged Germans called this forced peace a <strong>Diktat</strong>.",
+            "spoken": "Their compromise treaty hit Germany’s new republic with harsh penalties. <short pause> Article 231 blamed Germany, imposing 6 pounds.6 billion reparations , a 100,000-man army cap, and 13% land losses. Outraged Germans called this forced peace a Diktat .",
+            "paired_prose_hash": "aa0af3d338",
+            "connective": "Their compromise treaty hit Germany’s new republic with harsh penalties."
+          },
+          {
+            "badge": "Stage 4",
+            "heading": "Keynes & The ‘1940 Class’",
+            "date": "May–Dec 1919",
+            "img": "/images/gw_weeping_child.jpg",
+            "mode": "contain-light",
+            "stat": "May 1919: Dyson Cartoon Predicts 1940 War",
+            "html": "Economist <strong>John Maynard Keynes</strong> warned the treaty would ruin Europe, while cartoonist <strong>Will Dyson</strong> drew a weeping <strong>'1940 Class' child</strong> predicting future war.",
+            "spoken": "Sharp observers warned at once that this settlement would fail. <short pause> Economist John Maynard Keynes warned the treaty would ruin Europe, while cartoonist Will Dyson drew a weeping '1940 Class' child predicting future war.",
+            "paired_prose_hash": "0692bd2c5e",
+            "connective": "Sharp observers warned at once that this settlement would fail."
+          },
+          {
+            "badge": "Stage 5",
+            "heading": "Too Harsh or Unenforced?",
+            "date": "1920s–1930s",
+            "img": "/images/gw_berlin_reichstag_protest_1919.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "Nazis Exploit Anger • Allies Fail to Enforce",
+            "html": "<strong>Hitler</strong> exploited anger over Versailles, yet modern historians argue war returned because Britain and France <strong>failed to enforce</strong> the treaty in the <strong>1930s</strong>.",
+            "spoken": "Historians still debate why that warning came true by 1939. <short pause> Hitler exploited anger over Versailles, yet modern historians argue war returned because Britain and France failed to enforce the treaty in the 1930s .",
+            "paired_prose_hash": "d0672a80d8",
+            "connective": "Historians still debate why that warning came true by 1939."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Only a Twenty-Year Truce",
+            "date": "1919–1939",
+            "img": "/images/versailles_signing_1919_orpen.jpg",
+            "mode": "contain",
+            "stat": "1919 Compromise Fails Within Twenty Years",
+            "html": "Too harsh to win <strong>German acceptance</strong> yet too weakly enforced to stop <strong>Nazi rearmament</strong>, Versailles delivered only a fragile <strong>twenty-year truce</strong> before 1939.",
+            "spoken": "In the end, Versailles fell painfully between two stools. <short pause> Too harsh to win German acceptance yet too weakly enforced to stop Nazi rearmament , Versailles delivered only a fragile twenty-year truce before 1939.",
+            "connective": "In the end, Versailles fell painfully between two stools."
+          }
+        ],
+        "takeaway": "Divided Allied aims produced a treaty bitter enough to fuel German resentment under Article 231, yet too weakly enforced in the 1930s to stop a second war.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Divided Allied aims produced a treaty bitter enough to fuel German resentment under Article 231, yet too weakly enforced in the 1930s to stop a second war.",
+        "vocab": [
+          [
+            "1. Article 231",
+            "War Guilt Clause forcing Germany to accept total blame for starting WWI."
+          ],
+          [
+            "2. Reparations",
+            "Compulsory £6.6 billion compensation bill imposed on defeated Germany."
+          ],
+          [
+            "3. Diktat",
+            "German term meaning a harsh dictated peace signed without negotiation."
+          ]
+        ]
+      },
+      "prologue_audio": "/audio/lessons/great_war_part2/lesson_5_versailles_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · British Historian"
     }
   ],
   "guided_reading": [
@@ -6012,7 +6606,7 @@ export default {
       "is_adapted": true,
       "extract": "\"I was sitting in the pavilion at the village cricket ground on an idyllic August afternoon when the extraordinary news arrived... To me, as an irresponsible young gentleman with nothing better to do than hunt foxes and score occasional runs, the sudden prospect of European war seemed like a grand adventure, a chivalric crusade that had arrived just in time to rescue our generation from the dull routine of modern peacetime.<br><br>Everyone around me was swept along by the same strange fever. In the market towns and city recruiting stations, young clerks, schoolboys, shop assistants, and farm labourers queued for hours in the stifling August heat. Brass bands marched through the high streets playing patriotic anthems, church bells rang, and proud mothers pinned ribbons to their sons' lapels. We were assured by politicians and newspapers that the conflict would be settled within six months, that the Kaiser would be humbled, and that we should all return home before Christmas crowned with laurels of victory.<br><br>...It was only later, when the transport trains rolled into midnight stations and the first battalion casualty lists appeared in the Times, that the terrible silence descended. The names of boys I had played cricket against at school and shared benches with at university were printed row upon row in tiny black letters, grouped under the brutal heading: \\'Killed in Action.\\' The heroic romance had vanished in an instant; the chivalric tournament was an illusion. We were not entering an adventure—we were being fed into an unrelenting industrial factory of death.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Chivalry:</strong> The medieval knightly code of honour, bravery, and self-sacrifice.</li><li><strong>Laurels:</strong> A traditional Roman symbol of military victory and triumphant return.</li><li><strong>Battalion:</strong> A military unit of roughly 1,000 soldiers.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What metaphor does Sassoon use at the end of the extract to describe what the war truly became?<br><br><strong>Pair:</strong> Contrast Sassoon\\'s initial feelings at the cricket ground in August 1914 with his reaction to the first casualty lists. Why did the British government find it so easy to recruit over a million volunteers before conscription was introduced?<br><br><strong>Share:</strong> If so many volunteers believed the war would be a \"grand adventure\" that would be \"home by Christmas\", who bore the moral responsibility for misleading an entire generation?",
-      "audio_file": "/assets/great_war_reading_gw2_l0.mp3",
+      "audio_file": "/audio/reading/great_war_part2/r0.mp3",
       "questions": [
         "What was the author doing when the news of war arrived in August 1914?",
         "What phrase does Sassoon use to describe the popular expectation of when the war would end?",
@@ -6020,7 +6614,9 @@ export default {
       ],
       "source_type": "primary_memoir",
       "source_type_label": "Eyewitness Frontline Memoir",
-      "is_primary": true
+      "is_primary": true,
+      "studio_audio": "/audio/reading/great_war_part2/r0.mp3",
+      "studio_voice_label": "Lt. Siegfried Sassoon · Infantry Officer"
     },
     {
       "lesson_index": 1,
@@ -6032,7 +6628,7 @@ export default {
       "is_adapted": true,
       "extract": "\"The earth shook, the sky was a raging cauldron of black smoke and blinding fire, and the deafening roar of the heavy artillery stunned our senses until conscious thought itself became impossible. We huddled packed together in deep subterranean dugouts carved thirty feet into the damp chalk, listening with racing hearts to the relentless pounding of the high-explosive shells detonating overhead. Every direct hit sent shockwaves rippling through the rock, extinguishing our candles and showering our steel helmets in suffocating chalk dust.<br><br>When the bombardment finally lifted, we scrambled up the shattered steps into the daylight. The trench was no longer a trench; it had been violently obliterated into a chaotic lunar wilderness of craters filled with foul stagnant water, tangled coils of severed barbed wire, and unburied corpses. Machine guns from the opposing ridges swept the ruined parapet with rapid metallic chatter, spraying deadly streams of lead that cut down any soldier who dared raise his head even an inch above the rim.<br><br>...In this monstrous landscape of pulverized chalk and iron, individual human courage counted for almost nothing against the mechanical supremacy of modern industrial war. The machine gunner did not need personal bravery or martial skill; he merely depressed the cold firing button to mow down an entire advancing company in minutes. It was no longer a contest of man against man, but the brutal annihilation of fragile human flesh by unfeeling machinery.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Traverse:</strong> A right-angled bend in a trench designed to stop shrapnel or bullets travelling along its full length.</li><li><strong>Parapet:</strong> The protective front wall of a trench, reinforced with sandbags.</li><li><strong>Industrial War:</strong> Warfare where victory is determined by mass-produced machinery, artillery, and chemical ammunition rather than individual hand-to-hand combat.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What does Jünger mean when he writes that the conflict was \"not man against man, but flesh against iron\"?<br><br><strong>Pair:</strong> Jünger was a German officer, yet his description of frontline trenches mirrors British soldiers\\' diaries almost word-for-word. Discuss with your partner: how did modern industrial weaponry erase national differences between soldiers enduring the trenches?<br><br><strong>Share:</strong> If modern military technology created a total defensive stalemate, was the slaughter of the Western Front the fault of general incompetence, or the inevitable result of machine-age weapons?",
-      "audio_file": "/assets/great_war_reading_gw2_l1.mp3",
+      "audio_file": "/audio/reading/great_war_part2/r1.mp3",
       "questions": [
         "Where did the soldiers shelter during the heavy artillery bombardment?",
         "Why does Jünger say that individual human courage counted for almost nothing on the Western Front?",
@@ -6040,7 +6636,9 @@ export default {
       ],
       "source_type": "primary_memoir",
       "source_type_label": "Eyewitness Combat Memoir",
-      "is_primary": true
+      "is_primary": true,
+      "studio_audio": "/audio/reading/great_war_part2/r1.mp3",
+      "studio_voice_label": "Lt. Ernst Jünger · German Frontline"
     },
     {
       "lesson_index": 2,
@@ -6052,7 +6650,7 @@ export default {
       "is_adapted": true,
       "extract": "\"<em>(Letter from a Garhwali Subadar, Kitchener Indian Hospital, Brighton, to his brother in India, 1915):</em><br>\\'Do not think that this is a war. It is not war; it is the destruction of the world. Just as a fire burns dry wood, so the cannon balls and bombs consume men. The bullets fly thicker than drops of rain in the monsoon. Those who survive can only do so by the mercy of God.<br><br>We arrived here in the cold mud when the British lines were on the verge of breaking. Our soldiers stood firm in the water up to their chests. Yet in this country, the care taken of the wounded in hospitals is beyond description. The King-Emperor himself visited our beds and spoke kindly to us.<br><br>...And yet, though we fight alongside the white soldiers, our officers are not permitted to command European troops, and we are guarded behind iron gates when we recover. We shed our blood on the same earth, but we return home to an India that is still not free.\\'\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Sepoy:</strong> An Indian infantry soldier serving in the British Indian Army.</li><li><strong>Subadar:</strong> A senior Indian non-commissioned officer ranking below British commissioned officers.</li><li><strong>King-Emperor:</strong> King George V, who held the dual titles of King of the United Kingdom and Emperor of India.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What metaphor does the Indian officer use to describe the intensity of the cannon fire and bullets?<br><br><strong>Pair:</strong> The writer notes both that the King-Emperor visited his hospital bed and that Indian soldiers were kept behind locked gates and barred from commanding European troops. Discuss the contradiction between imperial praise and imperial inequality.<br><br><strong>Share:</strong> 130,000 Indian troops served in Flanders, yet their contributions were largely omitted from British popular memory for nearly a century. Why do you think Empire contributions were marginalized after 1918?",
-      "audio_file": "/assets/great_war_reading_gw2_l2.mp3",
+      "audio_file": "/audio/reading/great_war_part2/r2.mp3",
       "questions": [
         "What monsoon metaphor does the soldier use to describe the bullet fire on the Western Front?",
         "According to the letter, what critical action did Indian troops perform upon arriving in France in 1914?",
@@ -6060,7 +6658,9 @@ export default {
       ],
       "source_type": "primary_correspondence",
       "source_type_label": "Eyewitness Wartime Correspondence",
-      "is_primary": true
+      "is_primary": true,
+      "studio_audio": "/audio/reading/great_war_part2/r2.mp3",
+      "studio_voice_label": "Garhwali Subadar · Indian Army Letters"
     },
     {
       "lesson_index": 3,
@@ -6072,7 +6672,7 @@ export default {
       "is_adapted": true,
       "extract": "\"The hospital wards in London and Etaples were an endless river of suffering. Day and night, ambulance convoys brought us young men with shattered limbs, gangrenous wounds, and eyes blinded by mustard gas. We were middle-class daughters who had never before seen a naked man or cleaned a wound, yet within weeks we were bandaging stumps and holding the hands of dying eighteen-year-olds.<br><br>Across Britain, women stepped into every sphere of life previously barred to them. In Portsmouth Dockyard and the armaments works at Priddy’s Hard, women filled high-explosive TNT shells until their skin turned bright canary yellow and their teeth rotted from toxic dust. They drove buses, operated railway signals, and harvested the grain to keep Britain from starving under the German U-boat blockade.<br><br>...We were told that our sacrifice had earned us our citizenship. Yet when the Armistice bells finally chimed in November 1918, the victory felt hollow. We were a generation of surplus women whose brothers, fiancés, and husbands lay buried beneath French mud. And within months, the men returning from France demanded their jobs back, and thousands of women were dismissed from the factories without a second thought.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>VAD (Voluntary Aid Detachment):</strong> A civilian volunteer nursing organization that provided medical support in military hospitals.</li><li><strong>Mustard Gas:</strong> A blister-agent chemical weapon that caused severe chemical burns to the skin, eyes, and lungs.</li><li><strong>Canary Girls:</strong> Female munitions factory workers whose skin turned yellow from handling toxic TNT explosive compounds.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> Why were British female munitions factory workers nicknamed \"Canary Girls\"?<br><br><strong>Pair:</strong> Vera Brittain describes both the immense expansion of women\\'s work during the war and the sudden dismissal of female workers in 1919. Discuss: did the First World War represent permanent liberation for women, or merely temporary emergency exploitation?<br><br><strong>Share:</strong> Look at the 1918 Representation of the People Act, which granted the vote only to women over 30 who owned property. Why did Parliament exclude the young working-class women under 30 who had risked their lives in the munitions factories?",
-      "audio_file": "/assets/great_war_reading_gw2_l3.mp3",
+      "audio_file": "/audio/reading/great_war_part2/r3.mp3",
       "questions": [
         "What types of chemical injuries did Vera Brittain treat in the military hospital wards?",
         "Why did women working in the munitions factories at Priddy’s Hard have skin that turned bright yellow?",
@@ -6080,7 +6680,9 @@ export default {
       ],
       "source_type": "primary_memoir",
       "source_type_label": "Eyewitness VAD Nursing Memoir",
-      "is_primary": true
+      "is_primary": true,
+      "studio_audio": "/audio/reading/great_war_part2/r3.mp3",
+      "studio_voice_label": "Vera Brittain · Wartime VAD Nurse"
     },
     {
       "lesson_index": 4,
@@ -6092,7 +6694,7 @@ export default {
       "is_adapted": true,
       "extract": "\"The Council of Four assembled in the glittering Hall of Mirrors at Versailles, surrounded by gold and glass, but they were blind to the economic realities of the desperate continent they presumed to govern. Georges Clemenceau sat with his gloved hands folded across his chest, burning with an unrelenting desire to crush Germany permanently so that France might never again be invaded. Lloyd George pursued the fleeting demands of British electoral politics, promising angry voters that he would \\'squeeze the German lemon until the pips squeak\\'. And President Woodrow Wilson, armed with noble principles of self-determination, proved tragically incapable of mastering the practical European negotiations.<br><br>Together, they drafted an ultimatum that treated Germany as a moral outlaw, compelling her delegates to sign Article 231—the War Guilt clause—under the imminent threat of renewed Allied invasion and starvation naval blockade. They demanded astronomical reparations running into billions of pounds, stripped the defeated nation of her merchant fleet, coalfields, and iron ore, yet demanded that she somehow generate vast surpluses of gold to pay her victors.<br><br>...I believe that the campaign for securing out of Germany the general costs of the war was one of the most serious acts of political unwisdom for which European statesmen have ever been responsible. If we aim deliberately at the impoverishment of Central Europe, vengeance, I dare predict, will not limp. By reducing seventy million people to perpetual poverty and humiliation, we are sowing dragon\\'s teeth across the soil of Europe. Nothing can then delay that final civil war between the despairing forces of Reaction and Revolution, before which the horrors of the late German war will pale into insignificance.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"color: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Council of Four:</strong> The leaders of Britain, France, the USA, and Italy who dictated the terms of the Treaty of Versailles.</li><li><strong>Article 231 (War Guilt Clause):</strong> The legal clause forcing Germany to accept sole responsibility for causing all Allied damage.</li><li><strong>Reparations:</strong> Massive financial compensation demanded from Germany to pay for Allied civilian war damages.</li></ul></div>",
       "hinge_question": "<strong>Think:</strong> What warning does Keynes issue in the final sentence about what will happen if Germany is deliberately impoverished?<br><br><strong>Pair:</strong> Contrast Clemenceau\\'s desire to permanently weaken Germany against Keynes\\'s warning that an economically ruined Germany would threaten the stability of all of Europe. Which leader had the more realistic long-term vision?<br><br><strong>Share:</strong> In light of the rise of fascism in the 1930s, was Keynes\\'s prophecy completely accurate, or did the Treaty of Versailles fail because Britain and France refused to enforce its terms when Hitler began rearming?",
-      "audio_file": "/assets/great_war_reading_gw2_l4.mp3",
+      "audio_file": "/audio/reading/great_war_part2/r4.mp3",
       "questions": [
         "Why did John Maynard Keynes resign from the British Treasury delegation at Versailles?",
         "According to Keynes, what contradiction existed between stripping Germany of coal and iron while demanding billions in reparations?",
@@ -6100,7 +6702,9 @@ export default {
       ],
       "source_type": "contemporary_treatise",
       "source_type_label": "Contemporary Diplomatic Critique (1919)",
-      "is_primary": true
+      "is_primary": true,
+      "studio_audio": "/audio/reading/great_war_part2/r4.mp3",
+      "studio_voice_label": "J. M. Keynes · Versailles Delegate"
     }
   ],
   "edition": "2026.1",

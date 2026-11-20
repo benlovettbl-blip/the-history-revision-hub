@@ -331,7 +331,7 @@ export function ensureCmeTheaterMapModalInDOM() {
   modal.id = 'cme-theater-map-modal';
   modal.className = 'cme-theater-map-modal';
   modal.style.cssText =
-    'display: none; position: fixed; inset: 0; z-index: 99999; background: rgba(7, 11, 20, 0.92); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 10px; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;';
+    'display: none; position: fixed; inset: 0; z-index: 100050; background: rgba(7, 11, 20, 0.92); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 10px; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;';
 
   modal.innerHTML = `
     <div class="cme-map-dialog" style="background: #0b1120; border: 1.5px solid #1e293b; border-radius: 12px; width: 98vw; max-width: 1560px; height: 95vh; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.85); color: #f8fafc;">
@@ -366,6 +366,10 @@ export function ensureCmeTheaterMapModalInDOM() {
               <button type="button" onclick="window.resetCmeMapZoom();" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 0 8px; height: 27px; border-radius: 4px; cursor: pointer; font-size: 0.71rem; font-weight: 700;" title="Reset View (0)"><span class="cme-reset-lbl">Reset </span>↺</button>
               <span id="cme-map-zoom-level" style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; min-width: 42px; text-align: center;">100%</span>
             </div>
+
+            <button type="button" id="cme-atlas-courtyard-btn" onclick="window.launchCmeCourtyardFromAtlas();" style="background: linear-gradient(135deg, #9a5b20 0%, #784212 100%); color: #fef3c7; border: 1px solid #f3c677; padding: 0 11px; height: 29px; border-radius: 6px; cursor: pointer; font-size: 0.73rem; font-weight: 800; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(217,160,91,0.28);" title="Step directly into this historical era inside Courtyard of Two Keys (Graphic Novel)">
+              <span>🗝️</span> <span>Step Into Era (Graphic Novel)</span>
+            </button>
 
             <div class="cme-shortcuts-hint-badge" style="display: flex; align-items: center; gap: 6px; background: #0f172a; padding: 4px 8px; border-radius: 6px; font-size: 0.7rem; color: #94a3b8; border: 1px solid #334155;">
               <span>Drag to pan &bull; Scroll to zoom</span>
@@ -771,6 +775,9 @@ export function initCmeMapHotkeys() {
         window.closeCmeTheaterMapModal();
         return;
       }
+      if (document.querySelector('.cme-ct-root')) {
+        return;
+      }
       if (window.currentUnitId === 'cme_new') {
         const hasLesson =
           typeof window.currentLessonIndex === 'number' &&
@@ -804,6 +811,32 @@ export function initCmeMapHotkeys() {
   });
 }
 
+export function launchCmeCourtyardFromAtlas() {
+  const eraToEp = {
+    '1922': 0,
+    '1947': 1,
+    '1949': 2,
+    '1956': 3,
+    '1967': 6,
+    '1973': 8,
+    '1982': 10,
+    '1995': 11,
+    live: 11,
+  };
+  const targetEp = eraToEp[currentMapKey] ?? 1;
+  closeCmeTheaterMapModal();
+
+  // If Courtyard of Two Keys is already mounted underneath the Atlas modal, switch chapter seamlessly
+  if (typeof window.jumpCmeCourtyardEpisode === 'function') {
+    window.jumpCmeCourtyardEpisode(targetEp, true);
+    return;
+  }
+
+  if (typeof window.launchUnitArcade === 'function') {
+    window.launchUnitArcade('cme_new', targetEp, 'cme_courtyard');
+  }
+}
+
 // Global window registrations
 window.openCmeTheaterMapModal = openCmeTheaterMapModal;
 window.closeCmeTheaterMapModal = closeCmeTheaterMapModal;
@@ -812,3 +845,4 @@ window.zoomCmeMap = zoomCmeMap;
 window.resetCmeMapZoom = resetCmeMapZoom;
 window.renderFloatingCmeMapButton = renderFloatingCmeMapButton;
 window.removeFloatingCmeMapButton = removeFloatingCmeMapButton;
+window.launchCmeCourtyardFromAtlas = launchCmeCourtyardFromAtlas;

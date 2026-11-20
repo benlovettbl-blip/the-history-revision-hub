@@ -1,0 +1,30 @@
+{
+  "unitId": "great_war_part2",
+  "clips": {
+    "lesson_1_enlistment_prologue": {
+      "hash": "21904f482b81c0af8456ec707be39fe4a80975e3811dbc9e9e11462ca3e9ffd9",
+      "bytes": 108332,
+      "updatedAt": "2026-11-19T22:41:13.256Z"
+    },
+    "lesson_2_trenches_haig_prologue": {
+      "hash": "00063aa25e33295edf4b180b29eca10dd6412993ff5c02e34801c0edaddaf9cd",
+      "bytes": 104492,
+      "updatedAt": "2026-11-19T23:19:51.115Z"
+    },
+    "lesson_3_empire_troops_prologue": {
+      "hash": "ce9f69f6d5252f5e35093972212cc9664ab81aaa976062fac6732d44aa293be2",
+      "bytes": 113612,
+      "updatedAt": "2026-11-19T22:41:13.976Z"
+    },
+    "lesson_4_home_front_dora_prologue": {
+      "hash": "96d61364caa654e877fde9c901fe663d6151861a97b0a1d18b3fcd48a6ee1040",
+      "bytes": 101228,
+      "updatedAt": "2026-11-19T22:41:14.416Z"
+    },
+    "lesson_5_versailles_prologue": {
+      "hash": "29d06e03a1c67ad748923dba8a1f233b2e56689235d428b671f0b064b7104867",
+      "bytes": 123980,
+      "updatedAt": "2026-11-19T22:41:14.815Z"
+    }
+  }
+}
