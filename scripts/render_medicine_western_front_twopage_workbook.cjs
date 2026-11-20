@@ -1350,8 +1350,8 @@ function renderWfBackCover(cfgList, quipText) {
         <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px;">
           ${cfgList
             .map((cfg, idx) => {
-              const lessonUrl = `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&view=lessons`;
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`;
+              const lessonUrl = `https://historyrevisionhub.co.uk/?unit=edexcel_medicine&lesson=${cfg.id}&view=lessons`;
+              const quizUrl = `https://historyrevisionhub.co.uk/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`;
               const lessonQrSvg = generateQrSvg(lessonUrl);
               const quizQrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
@@ -2111,7 +2111,7 @@ function buildWesternFrontTwoPageWorkbook(unitData, period) {
 
   const wfQrLessons = wfConfigs.map((cfg) => ({
     label: `KT 5.${cfg.lessonNum}`,
-    url: `https://the-history-revision-hub.netlify.app/?view=reading&unit=edexcel_medicine&lesson=5.${cfg.lessonNum}`,
+    url: `https://historyrevisionhub.co.uk/?view=reading&unit=edexcel_medicine&lesson=5.${cfg.lessonNum}`,
   }));
 
   html += renderStandardBackCover({

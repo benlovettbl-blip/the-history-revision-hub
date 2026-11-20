@@ -384,16 +384,16 @@ const LEDGER_ENTRIES = [
 
 function buildHtml() {
   const qrMed = generateQrSvg(
-    'https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine#lesson_1_1',
+    'https://historyrevisionhub.co.uk/?unit=edexcel_medicine#lesson_1_1',
   );
   const qrRen = generateQrSvg(
-    'https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine#lesson_2_1',
+    'https://historyrevisionhub.co.uk/?unit=edexcel_medicine#lesson_2_1',
   );
   const qrInd = generateQrSvg(
-    'https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine#lesson_3_1',
+    'https://historyrevisionhub.co.uk/?unit=edexcel_medicine#lesson_3_1',
   );
   const qrHub = generateQrSvg(
-    'https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine',
+    'https://historyrevisionhub.co.uk/?unit=edexcel_medicine',
   );
 
   let html = `<!DOCTYPE html>
@@ -2025,7 +2025,7 @@ function buildHtml() {
         <div class="back-hub-grid-wrap">
           <div class="back-hub-header-bar">
             <span class="back-hub-banner-title">DIGITAL REVISION HUB &bull; DIRECT ERA QR REVISION GATEWAYS</span>
-            <span class="back-hub-banner-sub">the-history-revision-hub.netlify.app/?unit=edexcel_medicine &bull; Scan with smartphone camera</span>
+            <span class="back-hub-banner-sub">historyrevisionhub.co.uk/?unit=edexcel_medicine &bull; Scan with smartphone camera</span>
           </div>
           <div class="back-hub-gateways-grid">
             <!-- Gateway 1: Medieval -->

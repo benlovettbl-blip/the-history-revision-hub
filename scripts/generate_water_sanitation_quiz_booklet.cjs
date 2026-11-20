@@ -999,7 +999,7 @@ async function buildWaterSanitationQuizBooklet() {
   // 1. Generate QR Code
   console.log('🛠️  Generating QR Code for interactive revision portal...');
   const appUrl =
-    'https://the-history-revision-hub.netlify.app/?unit=water_and_sanitation&view=lessons';
+    'https://historyrevisionhub.co.uk/?unit=water_and_sanitation&view=lessons';
   const qrDataUrl = await QRCode.toDataURL(appUrl, {
     margin: 1,
     width: 90,

@@ -2432,7 +2432,7 @@ function compileMonarchyWorkbook() {
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
           ${enquiryConfigs
             .map((cfg, idx) => {
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=monarchy_religion_power&lesson=${idx}&quiz=true`;
+              const quizUrl = `https://historyrevisionhub.co.uk/?unit=monarchy_religion_power&lesson=${idx}&quiz=true`;
               const qrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
                 'Reformation',

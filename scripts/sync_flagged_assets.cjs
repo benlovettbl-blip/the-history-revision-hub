@@ -113,7 +113,7 @@ upsertSource('cme_new', {
   accession_id: 'HRH-CME-SVG-05-B',
   rights_status: 'Proprietary Commercial Asset / All Rights Reserved (The History Revision Hub)',
   commercial_use_permitted: true,
-  source_url: 'https://the-history-revision-hub.netlify.app',
+  source_url: 'https://historyrevisionhub.co.uk',
   asset_path: '/units/cme_new/assets/syria_fatah.svg'
 });
 

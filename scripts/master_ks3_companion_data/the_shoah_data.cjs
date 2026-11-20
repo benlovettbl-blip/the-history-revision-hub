@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/shoah_cover.jpg',
   heroAlt: 'The Shoah: European Jewish Life and Nazi Persecution',
   heroCaption: 'The Shoah (1933–1945) • The state-sponsored, systematic persecution and murder of six million Jewish people by the Nazi regime and its collaborators across occupied Europe.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=the_shoah&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=the_shoah&view=quizzes',
   glossaryConcepts: [
     { term: 'The Shoah (Holocaust)', def: 'The systematic, state-sponsored genocide of six million Jewish people across Europe by the Nazi regime and collaborators.' },
     { term: 'Racial Antisemitism', def: 'Nazi pseudo-scientific ideology defining Jewish people not by religious belief, but as an unalterable biological racial threat.' },

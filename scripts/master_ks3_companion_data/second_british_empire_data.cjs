@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/imperial_federation_map.jpg',
   heroAlt: 'Imperial Federation Map of the World 1886',
   heroCaption: 'Walter Crane’s Imperial Federation Map (1886) • Showing the worldwide extent of the British Empire, colored in red, covering one quarter of the globe and 400 million people under Queen Victoria.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=second_british_empire&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=second_british_empire&view=quizzes',
   glossaryConcepts: [
     { term: 'Pax Britannica', def: 'The period of relative peace in Europe (1815–1914) enforced by unquestioned Royal Navy global command of the maritime trade routes.' },
     { term: 'The British Raj', def: 'The system of direct Crown colonial rule over the Indian subcontinent established by Parliament after abolishing the East India Company in 1858.' },

@@ -388,7 +388,7 @@ async function buildPublisherTextbookHtmlKT2() {
   const coverBase64 = getBase64Image('/units/cme_new/assets/kt2_cover.jpg');
 
   // Generate high-contrast QR Code for Key Topic 2 interactive quiz & flashcards
-  const quizUrl = 'https://the-history-revision-hub.netlify.app/?unit=cme_new&quiz=true&lesson=4';
+  const quizUrl = 'https://historyrevisionhub.co.uk/?unit=cme_new&quiz=true&lesson=4';
   const qrDataUrl = await QRCode.toDataURL(quizUrl, {
     width: 140,
     margin: 1,

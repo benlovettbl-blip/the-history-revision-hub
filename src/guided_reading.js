@@ -362,7 +362,7 @@ export async function openReadingShareModal(unitId, lessonIndex, bookTitle) {
           isLocalhost
             ? `
           <div style="font-size: 0.73rem; color: #0284c7; background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 6px; padding: 5px 10px; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 6px;">
-            <i class="fa-solid fa-cloud-arrow-up"></i> <span>Auto-targeted to live Netlify URL for instant mobile phone scanning</span>
+            <i class="fa-solid fa-cloud-arrow-up"></i> <span>Auto-targeted to live History Revision Hub URL for instant mobile phone scanning</span>
           </div>
         `
             : `

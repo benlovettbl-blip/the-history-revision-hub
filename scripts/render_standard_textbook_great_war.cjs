@@ -1160,32 +1160,32 @@ async function buildPublisherTextbookHtmlGreatWar() {
     {
       num: 'Lesson 1',
       title: 'Imperial Rivalry & Alsace',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=0',
+      url: 'https://historyrevisionhub.co.uk/?unit=great_war&lesson=0',
     },
     {
       num: 'Lesson 2',
       title: 'The Alliance System',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=1',
+      url: 'https://historyrevisionhub.co.uk/?unit=great_war&lesson=1',
     },
     {
       num: 'Lesson 3',
       title: 'Naval Race & Arms Race',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=2',
+      url: 'https://historyrevisionhub.co.uk/?unit=great_war&lesson=2',
     },
     {
       num: 'Lesson 4',
       title: 'The Moroccan Crises',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=3',
+      url: 'https://historyrevisionhub.co.uk/?unit=great_war&lesson=3',
     },
     {
       num: 'Lesson 5',
       title: 'Balkan Powder Keg',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=4',
+      url: 'https://historyrevisionhub.co.uk/?unit=great_war&lesson=4',
     },
     {
       num: 'Lesson 6',
       title: 'July Crisis & Assassination',
-      url: 'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=5',
+      url: 'https://historyrevisionhub.co.uk/?unit=great_war&lesson=5',
     },
   ];
 

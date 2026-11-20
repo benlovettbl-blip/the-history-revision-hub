@@ -1182,7 +1182,7 @@ ${part1TaskLines}
 
   const medievalQrLessons = medievalConfigs.map((cfg) => ({
     label: `KT 1.${cfg.lessonNum}`,
-    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+    url: `https://historyrevisionhub.co.uk/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
   }));
 
   html += renderStandardBackCover({

@@ -128,7 +128,7 @@ DEFAULT_SET_MAPPING = {
     }
 }
 
-HUB_BASE_URL = "https://the-history-revision-hub.netlify.app"
+HUB_BASE_URL = "https://historyrevisionhub.co.uk"
 
 def load_timetable():
     if not os.path.exists(TIMETABLE_FILE):

@@ -451,10 +451,10 @@ const VOCABULARY = [
 // HTML BUILDER: 24-PAGE A4 SADDLE-STITCH BOOKLET
 // --------------------------------------------------------------------------
 function buildHtml() {
-  const qrKt1 = generateQrSvg('https://the-history-revision-hub.netlify.app/?unit=usa#kt1');
-  const qrKt2 = generateQrSvg('https://the-history-revision-hub.netlify.app/?unit=usa#kt2');
-  const qrKt3 = generateQrSvg('https://the-history-revision-hub.netlify.app/?unit=usa#kt3');
-  const qrHub = generateQrSvg('https://the-history-revision-hub.netlify.app/?unit=usa');
+  const qrKt1 = generateQrSvg('https://historyrevisionhub.co.uk/?unit=usa#kt1');
+  const qrKt2 = generateQrSvg('https://historyrevisionhub.co.uk/?unit=usa#kt2');
+  const qrKt3 = generateQrSvg('https://historyrevisionhub.co.uk/?unit=usa#kt3');
+  const qrHub = generateQrSvg('https://historyrevisionhub.co.uk/?unit=usa');
 
   let html = `<!DOCTYPE html>
 <html lang="en">
@@ -1814,7 +1814,7 @@ function buildHtml() {
       <div class="back-hub-grid-wrap">
         <div class="back-hub-banner">
           <span class="back-hub-banner-title">DIGITAL REVISION HUB • DIRECT TOPIC QR REVISION GATEWAYS</span>
-          <span class="back-hub-banner-sub">the-history-revision-hub.netlify.app/?unit=usa • Scan with smartphone camera</span>
+          <span class="back-hub-banner-sub">historyrevisionhub.co.uk/?unit=usa • Scan with smartphone camera</span>
         </div>
         <div class="back-hub-gateways-grid">
           <div class="hub-gw-card">

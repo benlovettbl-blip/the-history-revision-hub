@@ -7,7 +7,7 @@
 ## 1. Strict School Anonymity & Commercial Neutrality Policy
 STRICT RULE: You are STRICTLY FORBIDDEN from using the name of the user's school ("Meoncross", "Meoncross School") in ANY user-facing text, page titles, document headers, footers, meta tags, printed booklets, worksheets, PDFs, PowerPoint presentations, mark schemes, teacher notes, audio scripts, or curriculum files (`data.js`, `index.html`, etc.).
 1. **Commercial Independence:** All software and curriculum publications are independent commercial products intended for multi-school adoption.
-2. **Approved Branding Terminology:** Always use **"The History Revision Hub"** (`the-history-revision-hub.netlify.app`) or generic designations (`"The History Department"`, `"The History Portal"`, `"Fieldwork Primary Record"`, `"Fieldwork Archive"`).
+2. **Approved Branding Terminology:** Always use **"The History Revision Hub"** (`historyrevisionhub.co.uk`) or generic designations (`"The History Department"`, `"The History Portal"`, `"Fieldwork Primary Record"`, `"Fieldwork Archive"`).
 3. **No Associated School Identifiers:** Never include school-specific email domains (`@meoncross.co.uk`), telephone numbers, school archive seals, teacher surname nameplates (render blank lines `<span class="line"></span>`), or student family links. Never reference the decommissioned legacy Netlify domain.
 4. **Commercial School Cover Customizer:** Enclose `<span class="school-brand-target">The History Department</span>` inside `data-department-name="The History Department"` on booklet covers (`?school=School+Name` / `SCHOOL_NAME`).
 5. **Mandatory Sanitization Gate:** Run `node scripts/verify_sanitization.cjs` before completing work or committing (enforced in `.husky/pre-commit` and `npm run test:qa`).

@@ -92,14 +92,14 @@ function renderStandardFrontCover({
     }
 
     const defaultHubUrl = isEee
-      ? `https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=${
+      ? `https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=${
           keyTopicNum === 2
             ? 'kt2.1-plots-and-revolts'
             : keyTopicNum === 3
               ? 'kt3.1-education-and-leisure'
               : 'kt1.1-accession-1558'
         }`
-      : `https://the-history-revision-hub.netlify.app/?view=lessons&unit=cme_new&lesson=${
+      : `https://historyrevisionhub.co.uk/?view=lessons&unit=cme_new&lesson=${
           keyTopicNum === 2
             ? 'kt2.1-water-wars'
             : keyTopicNum === 3
@@ -1833,7 +1833,7 @@ function renderKs3FrontCover({
   totalPageCount = 20,
   renderFooterStrip = null,
 }) {
-  const targetHubUrl = hubUrl || `https://the-history-revision-hub.netlify.app/?unit=${unitId}`;
+  const targetHubUrl = hubUrl || `https://historyrevisionhub.co.uk/?unit=${unitId}`;
   const qrSvg = microQrSvg || generateQrSvg(targetHubUrl);
   const cleanRange =
     dateRange ||

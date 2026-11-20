@@ -1831,7 +1831,7 @@ function compileGreatWarWorkbook() {
             .map((cfg, idx) => {
               const targetLesson = idx + 1;
               const quizUrl =
-                'https://the-history-revision-hub.netlify.app/?unit=great_war&lesson=' +
+                'https://historyrevisionhub.co.uk/?unit=great_war&lesson=' +
                 targetLesson +
                 '&quiz=true';
               const qrSvg = generateQrSvg(quizUrl);

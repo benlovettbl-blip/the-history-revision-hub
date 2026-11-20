@@ -1146,7 +1146,7 @@ async function buildEarlyModernQuizBooklet() {
   // 1. Generate QR Code
   console.log('🛠️  Generating QR Code for interactive revision portal...');
   const appUrl =
-    'https://the-history-revision-hub.netlify.app/?unit=early_modern_world&view=lessons';
+    'https://historyrevisionhub.co.uk/?unit=early_modern_world&view=lessons';
   const qrDataUrl = await QRCode.toDataURL(appUrl, {
     margin: 1,
     width: 90,

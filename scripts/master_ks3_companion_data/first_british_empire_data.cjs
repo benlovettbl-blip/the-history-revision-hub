@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/shah_alam_clive.jpg',
   heroAlt: 'Emperor Shah Alam II granting the Diwani to Lord Clive',
   heroCaption: 'Mughal Emperor Shah Alam II granting the Diwani (civil tax sovereignty) of Bengal to Robert Clive (1765) • Transforming a private London commercial firm into a sovereign territorial empire.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=first_british_empire&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=first_british_empire&view=quizzes',
   glossaryConcepts: [
     { term: 'Mercantilism', def: 'The economic system where European empires used colonies exclusively to enrich the mother country through monopolies and Navigation Acts.' },
     { term: 'Chattel Slavery', def: 'A legal system treating human beings as personal property with zero civil rights, inherited across generations by maternal descent.' },

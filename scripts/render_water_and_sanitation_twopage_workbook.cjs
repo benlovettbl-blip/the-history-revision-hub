@@ -955,7 +955,7 @@ function generateWorkbookHtml() {
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
           ${lessonConfigs
             .map((cfg, idx) => {
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=water_and_sanitation&quiz=lesson_${idx + 1}`;
+              const quizUrl = `https://historyrevisionhub.co.uk/?unit=water_and_sanitation&quiz=lesson_${idx + 1}`;
               const qrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
                 'Roman Britain',

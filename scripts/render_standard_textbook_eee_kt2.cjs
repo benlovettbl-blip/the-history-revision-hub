@@ -81,7 +81,7 @@ async function buildPublisherTextbookHtmlKT2() {
   const ktData = getKt2Data({ getBase64Image });
   const { coverConfig, componentBank, leftSources, leftVocab } = ktData;
 
-  const quizUrl = 'https://the-history-revision-hub.netlify.app/?unit=eee&quiz=true&lesson=2';
+  const quizUrl = 'https://historyrevisionhub.co.uk/?unit=eee&quiz=true&lesson=2';
   const qrDataUrl = await QRCode.toDataURL(quizUrl, {
     width: 140,
     margin: 1,

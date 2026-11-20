@@ -1868,7 +1868,7 @@ function compileGreatWarPart2Workbook() {
           ${enquiryConfigs
             .map((cfg, idx) => {
               const quizUrl =
-                'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&lesson=' +
+                'https://historyrevisionhub.co.uk/?unit=great_war_part2&lesson=' +
                 cfg.id +
                 '&quiz=true';
               const qrSvg = generateQrSvg(quizUrl);

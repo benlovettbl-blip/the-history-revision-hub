@@ -1791,7 +1791,7 @@ function compilePostWarBritainWorkbook() {
             .map((cfg, idx) => {
               const targetLesson = idx + 1;
               const quizUrl =
-                'https://the-history-revision-hub.netlify.app/?unit=post_war_britain&lesson=' +
+                'https://historyrevisionhub.co.uk/?unit=post_war_britain&lesson=' +
                 targetLesson +
                 '&quiz=true';
               const qrSvg = generateQrSvg(quizUrl);

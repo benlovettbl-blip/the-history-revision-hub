@@ -456,7 +456,7 @@ async function compileQuizBookletHtml() {
   // PAGE 1: FRONT COVER & TRACKING LEDGER
   // =========================================================================
   const portalUrl =
-    'https://the-history-revision-hub.netlify.app/?unit=industrialisation_and_empire';
+    'https://historyrevisionhub.co.uk/?unit=industrialisation_and_empire';
   const qrSvg = await QRCode.toString(portalUrl, { type: 'svg', margin: 1 });
 
   html += `

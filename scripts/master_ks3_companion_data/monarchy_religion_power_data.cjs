@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/armada_portrait.jpg',
   heroAlt: 'Armada Portrait of Elizabeth I',
   heroCaption: 'The Armada Portrait of Queen Elizabeth I (c. 1588) • Commemorating the defeat of the Spanish Armada; Elizabeth’s hand rests on the globe, symbolizing emergent Protestant naval dominance.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=monarchy_religion_power&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=monarchy_religion_power&view=quizzes',
   glossaryConcepts: [
     { term: 'Royal Supremacy', def: 'The constitutional doctrine established by the 1534 Act of Supremacy declaring the English monarch the supreme governor of the Church in place of the Pope.' },
     { term: 'Divine Right', def: 'The political belief held by Stuart kings that monarchs are appointed directly by God and cannot be held accountable by any earthly body, including Parliament.' },

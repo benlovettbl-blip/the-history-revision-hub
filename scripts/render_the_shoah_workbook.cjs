@@ -1738,7 +1738,7 @@ function renderCoverPage() {
 
 function renderBackCover() {
   const shoahTableRowsHtml = enquiryConfigs.map((enq) => {
-    const url = `https://the-history-revision-hub.netlify.app/?unit=the_shoah&lesson=${enq.lessonNum}&quiz=true`;
+    const url = `https://historyrevisionhub.co.uk/?unit=the_shoah&lesson=${enq.lessonNum}&quiz=true`;
     const qrSvg = generateQrSvg(url);
       return `
         <tr style="border-bottom: 1.5px solid #000000;">

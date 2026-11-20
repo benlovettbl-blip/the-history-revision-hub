@@ -1858,7 +1858,7 @@ function compileMedievalWorkbook() {
           ${enquiryConfigs
             .map((cfg, idx) => {
               const quizUrl =
-                'https://the-history-revision-hub.netlify.app/?unit=medieval_england&lesson=' +
+                'https://historyrevisionhub.co.uk/?unit=medieval_england&lesson=' +
                 idx +
                 '&quiz=true';
               const qrSvg = generateQrSvg(quizUrl);

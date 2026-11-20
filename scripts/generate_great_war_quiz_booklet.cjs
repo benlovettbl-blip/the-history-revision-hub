@@ -834,7 +834,7 @@ const A5_BOOKLET_CSS = `
 // MAIN COMPILATION SCRIPT
 // --------------------------------------------------------------------------
 async function compileQuizBookletHtml() {
-  const qrUrl = 'https://the-history-revision-hub.netlify.app/?unit=great_war&view=quizzes';
+  const qrUrl = 'https://historyrevisionhub.co.uk/?unit=great_war&view=quizzes';
   const qrDataUrl = await QRCode.toDataURL(qrUrl, {
     margin: 0,
     color: { dark: '#000000', light: '#ffffff' },
@@ -954,7 +954,7 @@ async function compileQuizBookletHtml() {
       <img src="${qrDataUrl}" alt="Digital Portal QR" class="qr-code-img">
       <div class="qr-caption-text">
         <strong>Scan for Interactive Digital Quizzes & Audio Lessons:</strong><br>
-        Access online self-marking retrieval flashcards, diagnostic feedback, and audio narration at <strong>the-history-revision-hub.netlify.app</strong>.
+        Access online self-marking retrieval flashcards, diagnostic feedback, and audio narration at <strong>historyrevisionhub.co.uk</strong>.
       </div>
     </div>
 

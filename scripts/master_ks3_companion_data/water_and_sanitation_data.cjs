@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/broad_street_pump_water_microscope_1854.jpg',
   heroAlt: 'Dr John Snow Microscopic Water Analysis (1854)',
   heroCaption: 'Microscopic examination of contaminated water from the Broad Street pump during the 1854 Soho cholera epidemic • Dr John Snow proved waterborne transmission, revolutionising epidemiology.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=water_and_sanitation&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=water_and_sanitation&view=quizzes',
   glossaryConcepts: [
     { term: 'Miasma Theory', def: 'The ancient belief that diseases like the plague and cholera were caused by inhaling foul-smelling air from rotting organic filth.' },
     { term: 'Laissez-Faire', def: 'The political philosophy that governments should not interfere in private enterprise or tax ratepayers for public health infrastructure.' },

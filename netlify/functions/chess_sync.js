@@ -37,15 +37,18 @@ function isAuthorizedHeader(rawHeader) {
 
 function resolveAllowedOrigin(originHeader) {
   const origin = String(originHeader || '').trim();
-  if (!origin) return 'https://the-history-revision-hub.netlify.app';
+  if (!origin) return 'https://historyrevisionhub.co.uk';
   if (
+    origin === 'https://historyrevisionhub.co.uk' ||
+    origin === 'https://www.historyrevisionhub.co.uk' ||
+    /^https:\/\/[a-z0-9.-]*the-history-revision-hub\.pages\.dev$/i.test(origin) ||
     origin === 'https://the-history-revision-hub.netlify.app' ||
     /^https:\/\/[a-z0-9-]+--the-history-revision-hub\.netlify\.app$/i.test(origin) ||
     /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(origin)
   ) {
     return origin;
   }
-  return 'https://the-history-revision-hub.netlify.app';
+  return 'https://historyrevisionhub.co.uk';
 }
 
 function buildSecurityHeaders(originHeader) {

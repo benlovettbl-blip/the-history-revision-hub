@@ -9383,12 +9383,12 @@ window.openSnapshotExportModal = function () {
           <div style="background: #fdf8f6; border: 1.5px solid #fdba74; border-radius: 8px; padding: 14px 16px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
               <div style="font-weight: 700; color: #9a3412; font-size: 0.95rem; font-family: 'Playfair Display', Georgia, serif;">
-                ⚡ Option B: Permanent Git &amp; Netlify Snapshot
+                ⚡ Option B: Permanent Git &amp; Live Hub Snapshot
               </div>
               <span style="font-size: 0.72rem; font-weight: 700; background: #ffedd5; color: #c2410c; padding: 2px 8px; border-radius: 4px;">Permanent Website Update</span>
             </div>
             <p style="margin: 0 0 10px 0; font-size: 0.8rem; color: #7c2d12; line-height: 1.45;">
-              Click "Copy Code" and ask your AI assistant to update <code>chess_data.js</code>. Once committed, the live Netlify site permanently displays these standings to every pupil worldwide without needing local storage!
+              Click "Copy Code" and ask your AI assistant to update <code>chess_data.js</code>. Once committed, the live site permanently displays these standings to every pupil worldwide without needing local storage!
             </p>
             ${
               isAirgapModeActive()
@@ -10470,7 +10470,7 @@ window.openAirgapInfoModal = function () {
               <p style="margin: 4px 0 0 0; font-size: 0.78rem; color: ${isActive ? '#15803d' : '#78350f'}; line-height: 1.45;">
                 ${
                   isActive
-                    ? 'All pupil records, first names, and house points are strictly locked to this school laptop. Zero bytes are transmitted to Netlify or the internet.'
+                    ? 'All pupil records, first names, and house points are strictly locked to this school laptop. Zero bytes are transmitted to the cloud or the internet.'
                     : 'Cloud broadcasting is active. Only use non-identifiable test handles in this mode.'
                 }
               </p>

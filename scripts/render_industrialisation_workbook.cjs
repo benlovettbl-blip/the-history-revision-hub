@@ -1807,7 +1807,7 @@ function compileIndustrialisationWorkbook() {
           ${enquiryConfigs
             .map((cfg, idx) => {
               const quizUrl =
-                'https://the-history-revision-hub.netlify.app/?unit=industrialisation_and_empire&lesson=' +
+                'https://historyrevisionhub.co.uk/?unit=industrialisation_and_empire&lesson=' +
                 (idx + 1) +
                 '&quiz=true&count=10';
               const qrSvg = generateQrSvg(quizUrl);

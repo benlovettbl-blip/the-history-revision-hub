@@ -171,7 +171,7 @@ function buildKs3WorkbookHtml(unitConfig) {
       : getThematicStrandsForUnit(unitId);
 
   const hubUrl =
-    unitConfig.hubUrl || `https://the-history-revision-hub.netlify.app/?unit=${unitId}`;
+    unitConfig.hubUrl || `https://historyrevisionhub.co.uk/?unit=${unitId}`;
   const microQrSvg = generateQrSvg(hubUrl);
 
   // ==========================================
@@ -900,7 +900,7 @@ function buildKs3WorkbookHtml(unitConfig) {
       subLabel: l.shortTitle || `Lesson ${i + 1}`,
       title: `Lesson ${i + 1}`,
       questionCount: l.questionCount || 20,
-      url: `https://the-history-revision-hub.netlify.app/?view=lessons&unit=${unitId}&lesson=${i + 1}`,
+      url: `https://historyrevisionhub.co.uk/?view=lessons&unit=${unitId}&lesson=${i + 1}`,
     })),
     footerQuip: quips[totalPages - 1] || 'Key Stage 3 Historical Studies • Pupil Assessment Record',
   });

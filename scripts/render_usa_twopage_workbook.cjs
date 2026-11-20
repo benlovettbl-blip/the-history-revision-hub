@@ -1368,7 +1368,7 @@ function buildUsaKeyTopicWorkbook(ktId) {
       label: `KT ${ktNum}.${l.lessonNum}`,
       subLabel: `Enquiry ${ktNum}.${l.lessonNum}`,
       title: l.enquiryQuestion,
-      url: `https://the-history-revision-hub.netlify.app/?unit=usa&lesson=${l.id}`,
+      url: `https://historyrevisionhub.co.uk/?unit=usa&lesson=${l.id}`,
     })),
     footerQuip: footers[19],
     totalPageCount: 20,

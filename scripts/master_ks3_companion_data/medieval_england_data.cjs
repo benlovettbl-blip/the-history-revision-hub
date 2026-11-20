@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/battle_of_hastings_bayeux.jpg',
   heroAlt: 'Bayeux Tapestry showing Battle of Hastings',
   heroCaption: 'The Bayeux Tapestry (c. 1070s) • Norman cavalry with stirrups and couched lances clash against the Anglo-Saxon shield wall at the Battle of Hastings (14 October 1066).',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=medieval_england&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=medieval_england&view=quizzes',
   glossaryConcepts: [
     { term: 'Feudalism', def: 'A rigid social hierarchy where the King owned all land, granting it to Norman tenants-in-chief in exchange for military service and oath-bound loyalty.' },
     { term: 'Chivalry', def: 'The medieval knightly religious, moral, and social code that governed aristocratic warfare, courage, piety, and honor on the battlefield.' },

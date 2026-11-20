@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/funtley_ironworks.jpg',
   heroAlt: 'Industrial ironworks and reverberatory puddling furnace',
   heroCaption: 'Henry Cort’s pioneering ironworks (c. 1780s) • The development of reverberatory puddling and grooved rollers transformed Britain into the industrial "Workshop of the World".',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=industrialisation_and_empire&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=industrialisation_and_empire&view=quizzes',
   glossaryConcepts: [
     { term: 'Urbanisation', def: 'The massive population shift from rural countryside villages to industrial towns and cities, driven by factory employment and enclosure.' },
     { term: 'Laissez-Faire', def: 'The economic doctrine that governments should not interfere in the free market, wages, or factory working hours, resisting early safety reforms.' },

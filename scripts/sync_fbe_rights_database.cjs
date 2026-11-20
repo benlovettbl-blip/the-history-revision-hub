@@ -131,7 +131,7 @@ const fbeSources = [
     accession_id: "HRH-MAP-TRITRADE-01",
     rights_status: "Open Educational Resource (Attribution 4.0 International)",
     commercial_use_permitted: true,
-    source_url: "https://the-history-revision-hub.netlify.app/images/triangular_trade.png",
+    source_url: "https://historyrevisionhub.co.uk/images/triangular_trade.png",
     asset_path: "/images/triangular_trade.png"
   },
   {

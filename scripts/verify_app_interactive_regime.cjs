@@ -544,7 +544,7 @@ async function runTestingRegime(targetUnitId = 'industrialisation_and_empire') {
 
       const workbookHtml = fs.readFileSync(workbookHtmlPath, 'utf8');
       const qrMatchRegex = new RegExp(
-        `https?:\\/\\/(?:the-)?history-revision-hub\\.netlify\\.app\\/(?:\\?unit=${targetUnitId}&(?:amp;)?lesson=(\\d+)|units\\/${targetUnitId}\\/lesson(\\d+))`,
+        `https?:\\/\\/(?:(?:www\\.)?historyrevisionhub\\.co\\.uk|(?:the-)?history-revision-hub\\.netlify\\.app)\\/(?:\\?unit=${targetUnitId}&(?:amp;)?lesson=(\\d+)|units\\/${targetUnitId}\\/lesson(\\d+))`,
         'gi',
       );
       const matches = [...workbookHtml.matchAll(qrMatchRegex)];

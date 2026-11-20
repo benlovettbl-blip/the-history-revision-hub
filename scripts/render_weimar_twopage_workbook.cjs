@@ -1818,7 +1818,7 @@ function buildWeimarKeyTopicWorkbook(ktId) {
       label: `KT ${ktNum}.${l.lessonNum}`,
       subLabel: `Enquiry ${ktNum}.${l.lessonNum}`,
       title: l.enquiryQuestion,
-      url: `https://the-history-revision-hub.netlify.app/?unit=weimar_nazi_germany&lesson=${l.id}`,
+      url: `https://historyrevisionhub.co.uk/?unit=weimar_nazi_germany&lesson=${l.id}`,
     })),
     footerQuip: footers[19],
     totalPageCount: 20,

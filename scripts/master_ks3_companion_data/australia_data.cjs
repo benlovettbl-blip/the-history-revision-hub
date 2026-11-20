@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/first_fleet_portsmouth_1787.jpg',
   heroAlt: 'Departure of the First Fleet from Portsmouth (1787)',
   heroCaption: 'The departure of the First Fleet from Portsmouth in May 1787 • Eleven vessels carrying over 1,400 convicts, marines, and civilian officials to establish the penal colony of New South Wales.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=australia&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=australia&view=quizzes',
   glossaryConcepts: [
     { term: 'Terra Nullius', def: '‘Nobody’s land’; the legal fiction used by the British Crown to claim Australia without treaties or recognising native ownership.' },
     { term: 'First Nations', def: 'Aboriginal and Torres Strait Islander peoples holding continuous sovereignty and sacred Songlines for over 65,000 years.' },

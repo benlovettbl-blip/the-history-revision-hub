@@ -3,7 +3,7 @@
  *
  * Micro-QR Component Engine for Workbook Verso Headers
  * Produces crisp, scannable 14mm vector SVG QR codes pointing directly to:
- * https://the-history-revision-hub.netlify.app/?unit=${unitId}&lesson=${lessonId}
+ * https://historyrevisionhub.co.uk/?unit=${unitId}&lesson=${lessonId}
  *
  * Page budget impact: 0 lines lost. Fits seamlessly inside the existing Verso header band.
  */
@@ -34,7 +34,7 @@ function renderVersoLessonQr({
 }) {
   const targetUrl =
     hubUrl ||
-    `https://the-history-revision-hub.netlify.app/?unit=${unitId}&lesson=${lessonId}`;
+    `https://historyrevisionhub.co.uk/?unit=${unitId}&lesson=${lessonId}`;
   const svg = generateQrSvg(targetUrl);
 
   return `

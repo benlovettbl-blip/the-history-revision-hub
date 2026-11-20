@@ -141,7 +141,7 @@ const pilotConfig = {
       trajectory: 'Triangular Trade → The Brookes → Maroons & Nanny (L7, L8)',
     },
   ],
-  hubUrl: 'https://the-history-revision-hub.netlify.app/?unit=early_modern_world',
+  hubUrl: 'https://historyrevisionhub.co.uk/?unit=early_modern_world',
   milestones: timelineMilestones,
   lessons: lessonConfigs.map((cfg, i) => {
     const subLabels = [

@@ -1177,7 +1177,7 @@ ${part1TaskLines}
 
   const eighteenthQrLessons = eighteenthNineteenthConfigs.map((cfg) => ({
     label: `KT 3.${cfg.lessonNum}`,
-    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+    url: `https://historyrevisionhub.co.uk/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
   }));
 
   html += renderStandardBackCover({

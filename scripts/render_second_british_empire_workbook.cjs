@@ -1734,7 +1734,7 @@ function compileEmpireWorkbook() {
           ${enquiryConfigs
             .map((cfg, idx) => {
               const lessonIndices = [0, 1, 1, 3, 4];
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=second_british_empire&lesson=${lessonIndices[idx]}&quiz=true`;
+              const quizUrl = `https://historyrevisionhub.co.uk/?unit=second_british_empire&lesson=${lessonIndices[idx]}&quiz=true`;
               const qrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
                 'Portsmouth & Navy',

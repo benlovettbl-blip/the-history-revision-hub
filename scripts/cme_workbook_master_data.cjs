@@ -20,7 +20,7 @@
  *  - 100% Pearson Edexcel 1HI0/P5 specification-legal stems; zero AI corporate jargon; 100% answerable from narrative prose.
  */
 
-const HUB_BASE = 'https://the-history-revision-hub.netlify.app';
+const HUB_BASE = 'https://historyrevisionhub.co.uk';
 
 const CME_BOOKLETS = {
   KT1: {

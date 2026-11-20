@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/post_war_britain_cover.jpg',
   heroAlt: 'Post-War British Reconstruction and Transformation',
   heroCaption: 'The foundation of the National Health Service in July 1948 and post-war reconstruction • Britain transformed its society through welfare reform, Commonwealth migration, and civil rights.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=post_war_britain&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=post_war_britain&view=quizzes',
   glossaryConcepts: [
     { term: 'Welfare State & NHS', def: 'Comprehensive state social security and free healthcare founded in 1948 by Attlee and Bevan, from "cradle to grave".' },
     { term: 'Windrush Generation', def: 'Post-1948 Commonwealth migrants arriving under the British Nationality Act to rebuild British transport, hospitals, and industry.' },

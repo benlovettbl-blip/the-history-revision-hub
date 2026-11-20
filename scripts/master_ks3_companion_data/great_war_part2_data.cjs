@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/menin_road_nash_opt.jpg',
   heroAlt: 'The Menin Road (1919) by Paul Nash',
   heroCaption: 'The Menin Road (1919) by Paul Nash • Imperial War Museums (ART 2242). Commissioned by the British War Memorials Committee, this iconic modernist masterpiece captures the apocalyptic devastation of the Ypres Salient, echoing the wartime memoirs of Siegfried Sassoon and Ernst Jünger.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?view=interactive&unit=great_war_part2',
+  qrUrl: 'https://historyrevisionhub.co.uk/?view=interactive&unit=great_war_part2',
   glossaryConcepts: [
     { term: 'Attrition', def: 'A military strategy of wearing down the enemy to the point of physical collapse through continuous losses of personnel and material (e.g. Verdun, The Somme).' },
     { term: 'Total War', def: 'A war that involves the complete mobilization of entire populations, industrial economies, and resources, erasing boundaries between soldiers and civilians.' },
@@ -50,7 +50,7 @@ Everyone around me was swept along by the same strange fever. In the market town
           { term: 'Battalion', def: 'A military unit of roughly 1,000 frontline soldiers.' }
         ],
         oralDiscussionPrompt: "Think: What metaphor does Sassoon use at the end to describe what the war truly became? Contrast Sassoon's initial excitement at the cricket ground with his horror upon reading the casualty lists.",
-        readingQrUrl: "https://the-history-revision-hub.netlify.app/?view=reading&unit=great_war_part2&lesson=1"
+        readingQrUrl: "https://historyrevisionhub.co.uk/?view=reading&unit=great_war_part2&lesson=1"
       },
       questions: [
         {
@@ -129,7 +129,7 @@ When the bombardment finally lifted, we scrambled up the shattered steps into th
           { term: 'Attrition', def: 'Wearing down enemy strength and manpower through continuous losses.' }
         ],
         oralDiscussionPrompt: "Think: Why does Jünger conclude that individual human courage counted for almost nothing in the trenches? Discuss whether British or German soldiers faced identical horrors in No Man's Land.",
-        readingQrUrl: "https://the-history-revision-hub.netlify.app/?view=reading&unit=great_war_part2&lesson=2"
+        readingQrUrl: "https://historyrevisionhub.co.uk/?view=reading&unit=great_war_part2&lesson=2"
       },
       questions: [
         {
@@ -208,7 +208,7 @@ We are stationed in frontline trenches where freezing mud reaches our waists, an
           { term: 'Frostbite', def: 'Tissue injury caused by extreme exposure to damp cold conditions.' }
         ],
         oralDiscussionPrompt: "Think: What does the Indian soldier mean when he calls the war 'a monster that eats men'? Discuss why colonial soldiers fought with such dedication thousands of miles from home.",
-        readingQrUrl: "https://the-history-revision-hub.netlify.app/?view=reading&unit=great_war_part2&lesson=3"
+        readingQrUrl: "https://historyrevisionhub.co.uk/?view=reading&unit=great_war_part2&lesson=3"
       },
       questions: [
         {
@@ -287,7 +287,7 @@ In the surgical wards, we dressed wounds that made the heart turn cold—gangren
           { term: 'Canary Girls', def: 'Female munitions workers whose skin was stained yellow by toxic TNT chemicals.' }
         ],
         oralDiscussionPrompt: "Think: How did women's wartime experiences challenge Victorian stereotypes about women being frail? Discuss whether the 1918 vote for women over 30 was a fair reward for women's wartime sacrifices.",
-        readingQrUrl: "https://the-history-revision-hub.netlify.app/?view=reading&unit=great_war_part2&lesson=4"
+        readingQrUrl: "https://historyrevisionhub.co.uk/?view=reading&unit=great_war_part2&lesson=4"
       },
       questions: [
         {
@@ -366,7 +366,7 @@ Together, they drafted an ultimatum that treated Germany as a moral outlaw, comp
           { term: 'Reparations', def: 'Compulsory financial payments demanded from Germany to cover Allied damages.' }
         ],
         oralDiscussionPrompt: "Think: What dark prophecy does Keynes make in his final sentence? Discuss whether the Treaty of Versailles was too harsh, or if the Allies failed because they refused to enforce it later.",
-        readingQrUrl: "https://the-history-revision-hub.netlify.app/?view=reading&unit=great_war_part2&lesson=5"
+        readingQrUrl: "https://historyrevisionhub.co.uk/?view=reading&unit=great_war_part2&lesson=5"
       },
       questions: [
         {

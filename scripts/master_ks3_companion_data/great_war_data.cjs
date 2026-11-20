@@ -16,7 +16,7 @@ module.exports = {
   heroImage: 'public/images/great_war_cover.jpg',
   heroAlt: 'HMS Dreadnought at sea',
   heroCaption: 'The Royal Navy battleship HMS Dreadnought (c. 1906–1907) • Revolutionary steam turbine propulsion and ten 12-inch guns triggered the Anglo-German naval arms race.',
-  qrUrl: 'https://the-history-revision-hub.netlify.app/?unit=great_war&view=quizzes',
+  qrUrl: 'https://historyrevisionhub.co.uk/?unit=great_war&view=quizzes',
   glossaryConcepts: [
     { term: 'Militarism', def: 'The rapid expansion of armed forces, naval building, and military dominance over government policy (e.g. Dreadnoughts, Schlieffen Plan).' },
     { term: 'Alliances', def: 'Formal diplomatic treaties committing powers to mutual military defence (Triple Alliance vs. Triple Entente), turning local crises continental.' },

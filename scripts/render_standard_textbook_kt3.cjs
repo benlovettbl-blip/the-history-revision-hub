@@ -159,7 +159,7 @@ async function buildPublisherTextbookHtmlKT3() {
   const coverBase64 = getBase64Image('images/oslo_handshake.jpg');
 
   // Generate high-contrast QR Code for Key Topic 3 interactive quiz & flashcards
-  const quizUrl = 'https://the-history-revision-hub.netlify.app/?unit=cme_new&quiz=true&lesson=10';
+  const quizUrl = 'https://historyrevisionhub.co.uk/?unit=cme_new&quiz=true&lesson=10';
   const qrDataUrl = await QRCode.toDataURL(quizUrl, {
     width: 140,
     margin: 1,

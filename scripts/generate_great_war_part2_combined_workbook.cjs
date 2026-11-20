@@ -948,18 +948,18 @@ async function compileCombinedWorkbook() {
 
   // Generate QR codes
   const coverQrDataUrl = await QRCode.toDataURL(
-    'https://the-history-revision-hub.netlify.app/?unit=great_war_part2&view=lessons',
+    'https://historyrevisionhub.co.uk/?unit=great_war_part2&view=lessons',
     { margin: 1, width: 256, color: { dark: '#000000', light: '#ffffff' } }
   );
 
   const markingQrDataUrl = await QRCode.toDataURL(
-    'https://the-history-revision-hub.netlify.app/?view=marking&unit=great_war_part2',
+    'https://historyrevisionhub.co.uk/?view=marking&unit=great_war_part2',
     { margin: 1, width: 256, color: { dark: '#000000', light: '#ffffff' } }
   );
 
   const readingQrDataUrls = [];
   for (let i = 1; i <= 5; i++) {
-    const url = `https://the-history-revision-hub.netlify.app/?view=reading&unit=great_war_part2&lesson=${i}`;
+    const url = `https://historyrevisionhub.co.uk/?view=reading&unit=great_war_part2&lesson=${i}`;
     const qr = await QRCode.toDataURL(url, {
       margin: 1,
       width: 256,

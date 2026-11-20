@@ -174,7 +174,7 @@ const { WESTERN_FRONT_QUIZ_BANK } = require('./western_front_pearson_quiz_bank.c
 
 function buildHtml() {
   const qrSvg = generateQrSvg(
-    'https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine',
+    'https://historyrevisionhub.co.uk/?unit=edexcel_medicine',
   );
 
   let html = `<!DOCTYPE html>

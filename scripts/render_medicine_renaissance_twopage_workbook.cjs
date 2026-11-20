@@ -1188,7 +1188,7 @@ ${part1TaskLines}
 
   const renaissanceQrLessons = renaissanceConfigs.map((cfg) => ({
     label: `KT 2.${cfg.lessonNum}`,
-    url: `https://the-history-revision-hub.netlify.app/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
+    url: `https://historyrevisionhub.co.uk/?unit=edexcel_medicine&lesson=${cfg.id}&quiz=true`,
   }));
 
   html += renderStandardBackCover({

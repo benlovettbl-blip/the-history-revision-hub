@@ -1802,7 +1802,7 @@ function compileAustraliaWorkbook() {
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
           ${enquiryConfigs
             .map((cfg, idx) => {
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=australia&lesson=${idx}&quiz=true`;
+              const quizUrl = `https://historyrevisionhub.co.uk/?unit=australia&lesson=${idx}&quiz=true`;
               const qrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
                 'Cook & Terra Nullius',

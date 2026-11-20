@@ -120,7 +120,7 @@ const repoLookup = {
     date: "2026",
     archive: "The History Revision Hub Archival Cartography Series",
     catalog_id: "ARC-MAP-1570",
-    catalog_url: "https://the-history-revision-hub.netlify.app",
+    catalog_url: "https://historyrevisionhub.co.uk",
     rights_tier: "Platform Exclusive Archival Asset"
   },
   "/units/eee/assets/portraits/campion.jpg": {
@@ -320,7 +320,7 @@ const repoLookup = {
     date: "2026",
     archive: "The History Revision Hub Archival Cartography Series",
     catalog_id: "ARC-MAP-1588",
-    catalog_url: "https://the-history-revision-hub.netlify.app",
+    catalog_url: "https://historyrevisionhub.co.uk",
     rights_tier: "Platform Exclusive Archival Asset"
   },
   "/images/the_duke_of_medina_sidonia.jpg": {

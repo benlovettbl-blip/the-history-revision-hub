@@ -35,7 +35,7 @@ const EEE_BOOKLETS = {
       caption:
         'Crowned at Westminster Abbey on 15 January 1559, twenty-five-year-old Elizabeth used rich royal symbolism to project divinely ordained authority over a bankrupt and religiously divided realm.',
       cmeHeroHeightMm: 64,
-      hubUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt1.1-accession-1558',
+      hubUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.1-accession-1558',
       clues: [
         'Cloth-of-gold mantle trimmed with white ermine fur, projecting divine-right majesty.',
         'Sceptre and sovereign orb held firmly to assert legitimate rule despite her gender.',
@@ -56,7 +56,7 @@ const EEE_BOOKLETS = {
         title: 'The Situation on Elizabeth’s Accession, 1558',
         enquiryQuestion:
           'How did an inexperienced queen secure an impoverished and divided England amidst acute foreign encirclement in 1558?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt1.1-accession-1558',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.1-accession-1558',
         vocabBank: [
           'Privy Council',
           'Calais',
@@ -120,7 +120,7 @@ const EEE_BOOKLETS = {
         title: 'The ‘Settlement’ of Religion, 1559',
         enquiryQuestion:
           'To what extent was the 1559 Religious Settlement an enduring theological compromise designed to prevent civil war?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt1.2-religious-settlement',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.2-religious-settlement',
         vocabBank: [
           'Supreme Governor',
           'recusants',
@@ -184,7 +184,7 @@ const EEE_BOOKLETS = {
         title: 'Challenge to the Religious Settlement, 1559–69',
         enquiryQuestion:
           'Why did opposition from Puritan zealots and Catholic traditionalists test Elizabeth’s middle way during the 1560s?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt1.3-puritan-catholic-challenges',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.3-puritan-catholic-challenges',
         vocabBank: [
           'Church Papists',
           'Book of Advertisements',
@@ -248,7 +248,7 @@ const EEE_BOOKLETS = {
         title: 'The Problem of Mary, Queen of Scots, 1568–69',
         enquiryQuestion:
           'How did the arrival of Mary, Queen of Scots in 1568 transform Elizabeth’s dynastic security into a permanent national crisis?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt1.4-mary-queen-of-scots',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.4-mary-queen-of-scots',
         vocabBank: [
           'Casket Letters',
           'Lord Darnley',
@@ -304,7 +304,7 @@ const EEE_BOOKLETS = {
     ],
     centrefold: {
       subtitle: '1558–1569: From Bankrupt Accession & Via Media Settlement to Captive Scottish Rival',
-      qrUrl: 'https://the-history-revision-hub.netlify.app/?view=timeline&unit=eee&kt=1',
+      qrUrl: 'https://historyrevisionhub.co.uk/?view=timeline&unit=eee&kt=1',
       nodes: [
         {
           num: 1,
@@ -510,7 +510,7 @@ const EEE_BOOKLETS = {
       caption:
         'Painted straight after the defeat of Philip II’s invasion fleet in August 1588, Gower’s portrait celebrates Protestant deliverance and England’s emerging Atlantic ambition.',
       cmeHeroHeightMm: 64,
-      hubUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt2.1-plots-and-revolts',
+      hubUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.1-plots-and-revolts',
       clues: [
         'Right hand resting over the Americas on the globe, signalling English imperial ambition.',
         'Left window depicting English fireships advancing across calm sunlit waters.',
@@ -531,7 +531,7 @@ const EEE_BOOKLETS = {
         title: 'Plots and Revolts at Home, 1569–87',
         enquiryQuestion:
           'Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt2.1-plots-and-revolts',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.1-plots-and-revolts',
         vocabBank: [
           'Babington Plot',
           'Regnans in Excelsis',
@@ -595,7 +595,7 @@ const EEE_BOOKLETS = {
         title: 'Relations with Spain, 1569–85',
         enquiryQuestion:
           'How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt2.2-relations-with-spain',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.2-relations-with-spain',
         vocabBank: [
           'Cacafuego',
           'Treaty of Nonsuch',
@@ -659,7 +659,7 @@ const EEE_BOOKLETS = {
         title: 'Outbreak of War with Spain, 1585–88',
         enquiryQuestion:
           'Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt2.3-outbreak-of-war',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.3-outbreak-of-war',
         vocabBank: [
           'Cadiz',
           'Governor-General',
@@ -723,7 +723,7 @@ const EEE_BOOKLETS = {
         title: 'The Armada, 1588',
         enquiryQuestion:
           'Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt2.4-spanish-armada',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.4-spanish-armada',
         vocabBank: [
           'Gravelines',
           'crescent formation',
@@ -779,7 +779,7 @@ const EEE_BOOKLETS = {
     ],
     centrefold: {
       subtitle: '1569–1588: From Northern Rebellion & Catholic Plots to the Defeat of the Spanish Armada',
-      qrUrl: 'https://the-history-revision-hub.netlify.app/?view=timeline&unit=eee&kt=2',
+      qrUrl: 'https://historyrevisionhub.co.uk/?view=timeline&unit=eee&kt=2',
       nodes: [
         {
           num: 1,
@@ -985,7 +985,7 @@ const EEE_BOOKLETS = {
       caption:
         'Painted from life on Roanoke Island during Raleigh’s 1585 Virginia expedition, John White’s watercolour records Secotan leadership before English food demands sparked fatal violence.',
       cmeHeroHeightMm: 65,
-      hubUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt3.1-education-and-leisure',
+      hubUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt3.1-education-and-leisure',
       clues: [
         'Square copper gorget on a neck cord — prized trade metal English settlers bartered for corn.',
         'Shaved roach hairstyle, upright feather, and body markings denoting elite Secotan rank.',
@@ -1006,7 +1006,7 @@ const EEE_BOOKLETS = {
         title: 'Education and Leisure, 1558–88',
         enquiryQuestion:
           'How did educational expansion and popular theatrical culture reflect both social change and strict Tudor hierarchy?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt3.1-education-and-leisure',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt3.1-education-and-leisure',
         vocabBank: [
           'groundlings',
           'grammar schools',
@@ -1070,7 +1070,7 @@ const EEE_BOOKLETS = {
         title: 'The ‘Problem’ of the Poor, 1558–88',
         enquiryQuestion:
           'Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt3.2-poverty-and-vagabondage',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt3.2-poverty-and-vagabondage',
         vocabBank: [
           'enclosure',
           'sturdy beggars',
@@ -1134,7 +1134,7 @@ const EEE_BOOKLETS = {
         title: 'Exploration and Voyages of Discovery, 1558–88',
         enquiryQuestion:
           'How did navigational science, galleon engineering, and Drake’s circumnavigation turn England into an oceanic sea power?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt3.3-exploration-and-drake',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt3.3-exploration-and-drake',
         vocabBank: [
           'Mercator',
           'culverins',
@@ -1198,7 +1198,7 @@ const EEE_BOOKLETS = {
         title: 'Attempted Colonisation of Virginia, 1584–90',
         enquiryQuestion:
           'Why did Sir Walter Raleigh promote Virginia, and why did both the 1585 and 1587 Roanoke settlements fail?',
-        qrUrl: 'https://the-history-revision-hub.netlify.app/?view=lessons&unit=eee&lesson=kt3.4-virginia-roanoke',
+        qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt3.4-virginia-roanoke',
         vocabBank: [
           'Tiger',
           'Walter Raleigh',
@@ -1254,7 +1254,7 @@ const EEE_BOOKLETS = {
     ],
     centrefold: {
       subtitle: '1558–1590: Education, Poor Relief Legislation, Global Navigation & the Roanoke Ventures',
-      qrUrl: 'https://the-history-revision-hub.netlify.app/?view=timeline&unit=eee&kt=3',
+      qrUrl: 'https://historyrevisionhub.co.uk/?view=timeline&unit=eee&kt=3',
       nodes: [
         {
           num: 1,

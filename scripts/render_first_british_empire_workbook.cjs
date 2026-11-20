@@ -1774,7 +1774,7 @@ function compileEmpireWorkbook() {
         <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
           ${enquiryConfigs
             .map((cfg, idx) => {
-              const quizUrl = `https://the-history-revision-hub.netlify.app/?unit=first_british_empire&lesson=${idx}&quiz=true`;
+              const quizUrl = `https://historyrevisionhub.co.uk/?unit=first_british_empire&lesson=${idx}&quiz=true`;
               const qrSvg = generateQrSvg(quizUrl);
               const shortLabels = [
                 'East India Co.',
