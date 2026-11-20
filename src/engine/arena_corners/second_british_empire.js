@@ -4,101 +4,101 @@
  */
 export const SECOND_BRITISH_EMPIRE_CORNERS = {
   lesson_1: {
-    enquiry: "What was the PRIMARY foundation that enabled the expansion of the Second British Empire?",
+    enquiry: "What was the PRIMARY foundation that enabled Britain's global naval and commercial dominance (1783–1889)?",
     corners: [
       {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
-        label: "ROYAL NAVY SUPREMACY",
-        title: "Global Coaling Stations & Ironclad Gunboats",
-        detail: "Supreme command of the oceans and strategic naval choke-points (Gibraltar, Malta, Aden, Singapore) allowed steam gunboats to bombard resistant ports worldwide.",
-        starter: "&ldquo;Our corner was decisive because total naval supremacy allowed Britain to enforce 'gunboat diplomacy' and protect merchant shipping anywhere on earth...&rdquo;"
+        label: "TRAFALGAR & SEA CONTROL",
+        title: "Nelson's 1805 Victory & Pax Britannica",
+        detail: "Crushing the combined French and Spanish fleets off Cape Trafalgar gave the Royal Navy unchallenged command of global shipping lanes for over a century.",
+        starter: "&ldquo;Our corner was decisive because Nelson's victory at Trafalgar eliminated Britain's main naval rivals and secured worldwide merchant shipping...&rdquo;"
       },
       {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
-        label: "INDUSTRIAL MONOPOLY",
-        title: "'Workshop of the World' & Mass Manufactured Goods",
-        detail: "British factories mass-produced cheap textiles, steam locomotives, and steel rails at prices that crushed local artisanal industries across Asia and Africa.",
-        starter: "&ldquo;Our corner was decisive because industrial manufacturing made Britain the workshop of the world, flooding foreign markets with cheap British goods...&rdquo;"
+        label: "PORTSMOUTH DOCKYARD",
+        title: "Brunel's Block Mills & Industrial Mass Production",
+        detail: "Portsmouth Royal Dockyard employed over 10,000 skilled workers and pioneered the world's first steam-powered assembly line to build and repair fleets at unmatched speed.",
+        starter: "&ldquo;Our corner was decisive because Portsmouth Royal Dockyard gave Britain the industrial manufacturing base needed to sustain a global navy...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
-        label: "FINANCIAL IMPERIALISM",
-        title: "The City of London, Sterling & Lloyd's Insurance",
-        detail: "London was the financial capital of the globe; British capital financed railways in Argentina, canals in Egypt, and mines in South Africa, creating debt dependency.",
-        starter: "&ldquo;Our corner was decisive because British banking capital and debt control enabled Britain to dominate foreign governments without full military invasion...&rdquo;"
+        label: "IRONCLAD TECHNOLOGY",
+        title: "HMS Warrior (1860) & The Two-Power Standard (1889)",
+        detail: "Four-inch wrought-iron armour, twin steam engines, and the £21.5m Naval Defence Act made wooden warships obsolete and outbuilt any two rival powers combined.",
+        starter: "&ldquo;Our corner was decisive because HMS Warrior and the Two-Power Standard kept Britain technologically ahead of France, Russia, and Germany...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
-        label: "DIVIDE AND RULE",
-        title: "Exploiting Ethnic, Religious & Caste Divisions",
-        detail: "Tiny numbers of British administrators ruled hundreds of millions by pitting rival princes, religious groups, and ethnic factions against one another.",
-        starter: "&ldquo;Our corner was decisive because clever 'divide and rule' diplomacy allowed a handful of British civil servants to control millions of colonial subjects...&rdquo;"
+        label: "MERCANTILIST TRADE",
+        title: "The Navigation Acts & Captive Colonial Trade",
+        detail: "Navigation Acts legally forced colonies to ship sugar, cotton, and raw materials exclusively to British ports aboard British-built ships, enriching home merchants.",
+        starter: "&ldquo;Our corner was decisive because mercantilist trade laws generated the customs wealth that paid for Britain's dockyards and battleships...&rdquo;"
       }
     ]
   },
   lesson_2: {
+    enquiry: "What was the DECISIVE cause of the de-industrialisation of India's textile industry (1700–1850)?",
+    corners: [
+      {
+        corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
+        label: "ONE-SIDED TARIFFS",
+        title: "The Calico Acts & 70% Import Duties",
+        detail: "Parliament banned printed Indian cottons under the Calico Acts and later slapped 70% border taxes on Indian cloth while forcing Indian ports to admit British cotton nearly tariff-free.",
+        starter: "&ldquo;Our corner was decisive because rigged colonial tariffs locked Indian weavers out of Britain while flooding Indian bazaars with untaxed imports...&rdquo;"
+      },
+      {
+        corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
+        label: "THE 1765 DIWANI",
+        title: "Corporate Tax Extraction Across Bengal",
+        detail: "After the Treaty of Allahabad, the East India Company stopped paying silver bullion for cloth and instead bought Indian goods using land taxes wrung from Bengali peasants.",
+        starter: "&ldquo;Our corner was decisive because seizing the Diwani inverted global trade, draining Bengal's own peasant taxes to enrich London shareholders...&rdquo;"
+      },
+      {
+        corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
+        label: "LANCASHIRE STEAM MILLS",
+        title: "Crompton's Spinning Mule & Factory Output",
+        detail: "Mechanised Lancashire cotton mills spun millions of yards of cheap yarn at high speed, relentlessly undercutting the price of hand-spun artisanal cloth.",
+        starter: "&ldquo;Our corner was decisive because steam-powered Lancashire factories produced cotton cloth at a scale and price no village handloom could match...&rdquo;"
+      },
+      {
+        corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
+        label: "COERCIVE MONOPOLY",
+        title: "Company Control Over Bengali Artisans",
+        detail: "East India Company agents forced Dhaka muslin and silk weavers into debt contracts at fixed low prices, destroying independent urban guilds before factory cloth even arrived.",
+        starter: "&ldquo;Our corner was decisive because armed Company monopoly stripped Indian weavers of fair market prices and bargaining power...&rdquo;"
+      }
+    ]
+  },
+  lesson_3: {
     enquiry: "What was the FUNDAMENTAL catalyst that sparked the 1857 Indian Rebellion?",
     corners: [
       {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "GREASED CARTRIDGES",
-        title: "Insulting Hindu & Muslim Religious Sanctity",
-        detail: "The new Enfield rifle required biting cartridges greased with cow and pig fat, directly violating Hindu and Muslim taboos and convincing sepoys of a plot to convert them.",
-        starter: "&ldquo;Our corner was decisive because the greased cartridges were the immediate spark that convinced Indian soldiers their sacred religious faith was under deliberate attack...&rdquo;"
+        title: "Enfield Rifles & Religious Alarm (1857)",
+        detail: "The Pattern 1853 Enfield rifle required biting cartridges rumoured to be greased with cow and pig fat, violating sacred Hindu and Muslim laws and sparking mutiny at Meerut.",
+        starter: "&ldquo;Our corner was decisive because the greased cartridges were the immediate spark that convinced sepoys their sacred faith was under deliberate attack...&rdquo;"
       },
       {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
         label: "DOCTRINE OF LAPSE",
-        title: "Lord Dalhousie's Aggressive Kingdom Annexations",
-        detail: "The Company annexed princely states (Jhansi, Oudh, Satara) whenever a ruler died without a direct biological son, dispossessing royal families and creating fierce aristocratic fury.",
-        starter: "&ldquo;Our corner was decisive because the arrogant annexation of sovereign Indian kingdoms drove respected rulers like the Rani of Jhansi into armed revolt...&rdquo;"
+        title: "Dalhousie's Annexation of Jhansi & Awadh",
+        detail: "The Company seized princely states like Satara, Nagpur, and Jhansi under the Doctrine of Lapse and annexed wealthy Awadh in 1856, driving rulers like Rani Lakshmibai to rebel.",
+        starter: "&ldquo;Our corner was decisive because annexing sovereign Indian kingdoms like Jhansi and Awadh united dispossessed rulers and royal sepoy regiments...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
-        label: "CHRISTIAN MISSIONARY THREAT",
-        title: "Aggressive Evangelism & Challenging Ancient Traditions",
-        detail: "Christian missionaries openly denounced Hindu and Islamic customs in bazaars, passing laws banning sati and allowing Christian converts to inherit property.",
-        starter: "&ldquo;Our corner was decisive because aggressive Christian preaching and laws interfering in social customs convinced Indians that their entire culture was being erased...&rdquo;"
+        label: "CULTURAL INTERFERENCE",
+        title: "Fear of Forced Conversion & Loss of Caste",
+        detail: "Missionary preaching, new overseas service rules, and Western legal changes convinced Hindu and Muslim soldiers alike that the British intended to erase their religious traditions.",
+        starter: "&ldquo;Our corner was decisive because widespread fear of forced conversion united Hindus and Muslims behind Emperor Bahadur Shah II...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
-        label: "ECONOMIC EXPLOITATION",
-        title: "Crushing Land Taxes & Destruction of Indian Weavers",
-        detail: "Exorbitant Company land taxes bankrupted millions of Indian peasants, while cheap Lancashire factory cloth wiped out India's world-famous textile weavers.",
-        starter: "&ldquo;Our corner was decisive because crushing land taxes and the destruction of the Indian weaving industry created immense rural poverty and resentment...&rdquo;"
-      }
-    ]
-  },
-  lesson_3: {
-    enquiry: "Which factor was the MOST DESTRUCTIVE to Indigenous Australian nations (1788–1854)?",
-    corners: [
-      {
-        corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
-        label: "DEADLY PATHOGENS",
-        title: "Introduced Smallpox, Influenza & Measles (1789)",
-        detail: "Lacking biological immunity, up to 70% of First Nations people around Sydney died within months of a mysterious 1789 smallpox epidemic, shattering communities and leadership.",
-        starter: "&ldquo;Our corner was decisive because foreign infectious diseases devastated up to 70% of the Indigenous population before settlers even began expanding inland...&rdquo;"
-      },
-      {
-        corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
-        label: "PASTORAL EXPROPRIATION",
-        title: "Millions of Sheep Destroying Yam Grounds & Waterholes",
-        detail: "Squatters moved inland with millions of sheep and cattle, cutting off Aboriginal access to sacred rivers and trampling native yam daisy fields that provided staple food.",
-        starter: "&ldquo;Our corner was decisive because pastoral squatters drove herds across native hunting grounds, destroying the food supply and starving Indigenous communities...&rdquo;"
-      },
-      {
-        corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
-        label: "FRONTIER MASSACRES",
-        title: "State-Sanctioned Violence & The Myall Creek Massacre (1838)",
-        detail: "Armed pastoralists and Mounted Police conducted punitive expeditions, poisoning waterholes and shooting unarmed clans in undeclared frontier guerrilla wars.",
-        starter: "&ldquo;Our corner was decisive because organized frontier massacres and native police terrorized Aboriginal nations and crushed physical resistance...&rdquo;"
-      },
-      {
-        corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
-        label: "TERRA NULLIUS FICTION",
-        title: "Denial of Human Rights, Sovereignty & Treaties",
-        detail: "Classifying the continent as 'empty land' meant Britain never signed treaties, bought land, or recognized Indigenous law, treating native resistance as criminal trespassing.",
-        starter: "&ldquo;Our corner was decisive because the legal lie of Terra Nullius stripped First Nations people of any legal property rights under British law...&rdquo;"
+        label: "ECONOMIC GRIEVANCE",
+        title: "Heavy Land Taxes & Ruined Artisans",
+        detail: "Harsh Company land-revenue demands in newly annexed provinces like Awadh impoverished peasant families—the very villages from which Bengal Army sepoys were recruited.",
+        starter: "&ldquo;Our corner was decisive because sepoys were 'peasants in uniform' whose families were being crushed by Company land taxes...&rdquo;"
       }
     ]
   },
@@ -109,29 +109,29 @@ export const SECOND_BRITISH_EMPIRE_CORNERS = {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "INDUSTRIAL RAW MATERIALS",
         title: "Rubber, Copper, Palm Oil & South African Gold",
-        detail: "European factories desperately required rubber for tires, copper for electrical cables, palm oil to lubricate machinery, and gold/diamonds to back national currencies.",
-        starter: "&ldquo;Our corner was decisive because European industries faced severe raw material shortages that could only be fed by plundering African natural resources...&rdquo;"
+        detail: "European factories required rubber for tyres, copper for electrical cables, palm oil to lubricate machinery, and gold and diamonds to expand imperial wealth.",
+        starter: "&ldquo;Our corner was decisive because European industries demanded vast African raw materials and mineral wealth...&rdquo;"
       },
       {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
-        label: "TECHNOLOGICAL SUPERIORITY",
+        label: "TECHNOLOGICAL ASYMMETRY",
         title: "The Maxim Gun, Steamships & Quinine Medicine",
-        detail: "Quinine protected Europeans from malaria, shallow-draft steamships opened African rivers, and the Maxim machine gun allowed small European forces to slaughter thousands.",
-        starter: "&ldquo;Our corner was decisive because quinine and the Maxim gun gave European invaders the medical and technological power to conquer the African interior...&rdquo;"
+        detail: "Quinine protected invading troops from malaria while the rapid-firing Maxim machine gun created lethal military asymmetry at battles such as Omdurman (1898).",
+        starter: "&ldquo;Our corner was decisive because quinine and the Maxim gun gave European armies the medical and military means to conquer the African interior...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
         label: "INTER-IMPERIAL RIVALRY",
-        title: "The Berlin Conference (1884–85) & National Prestige",
-        detail: "European powers partitioned the continent on maps in Berlin, seizing land not for immediate profit, but to block imperial rivals (Britain vs France in the Fashoda Incident).",
-        starter: "&ldquo;Our corner was decisive because competitive national prestige and the fear of losing ground to European rivals drove the rush to claim territory...&rdquo;"
+        title: "The Berlin Conference (1884–85) & Effective Occupation",
+        detail: "Fourteen Western powers met in Berlin without a single African leader, requiring 'Effective Occupation' on the ground and triggering a race to plant flags before rivals did.",
+        starter: "&ldquo;Our corner was decisive because the Berlin Conference's rule of Effective Occupation forced rival European powers into a race to seize territory...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
-        label: "THE 'CIVILISING MISSION'",
-        title: "Social Darwinism & The 'White Man's Burden'",
-        detail: "Racist pseudo-scientific theories convinced Europeans that they had a moral duty to bring Christianity, commerce, and Western civilisation to 'backward' populations.",
-        starter: "&ldquo;Our corner was decisive because the arrogant ideology of the 'civilising mission' gave European powers moral justification for conquest and brutality...&rdquo;"
+        label: "IMPERIAL IDEOLOGY",
+        title: "Paternalism & Kipling's 'White Man's Burden'",
+        detail: "Paternalist and Social Darwinist claims of a 'civilising mission' gave European governments and chartered companies a moral mask to justify armed conquest to voters.",
+        starter: "&ldquo;Our corner was decisive because paternalist ideology disguised violent resource plunder as a noble 'civilising mission'...&rdquo;"
       }
     ]
   },
@@ -141,32 +141,31 @@ export const SECOND_BRITISH_EMPIRE_CORNERS = {
       {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "BRITISH ELITES & INVESTORS",
-        title: "City Financiers, Mining Barons & Aristocrats",
-        detail: "The wealthy top 1% amassed astronomical fortunes from colonial rail stocks, rubber plantations, and Indian land revenues, building grand country estates across Britain.",
-        starter: "&ldquo;Our corner was decisive because the financial profits of empire flowed directly into the pockets of aristocratic investors and City of London banks...&rdquo;"
+        title: "City Financiers, Chartered Barons & Shareholders",
+        detail: "Wealthy investors in London amassed huge fortunes from colonial railway bonds, mining syndicates, and the fiscal 'Drain of Wealth' documented by Dadabhai Naoroji.",
+        starter: "&ldquo;Our corner was decisive because imperial tax revenues and mining dividends flowed directly into City of London banks and elite estates...&rdquo;"
       },
       {
         corner: "Corner 2", location: "Front Right", color: "#2563eb", bg: "#eff6ff", border: "#93c5fd", badgeBg: "#dbeafe",
-        label: "WHITE SETTLERS",
-        title: "Colonial Settlers in Canada, Australia & New Zealand",
-        detail: "Poor British emigrants acquired vast fertile farmlands dispossessed from indigenous peoples, enjoying high wages, democratic voting rights, and cheap land.",
-        starter: "&ldquo;Our corner was decisive because white working-class settlers obtained cheap stolen land and prosperity that was impossible in class-ridden Britain...&rdquo;"
+        label: "BRITISH INDUSTRIALISTS",
+        title: "'Workshop of the World' (1851 Great Exhibition)",
+        detail: "Factory owners in textiles, iron, and shipbuilding enjoyed captive colonial markets for finished exports and cheap raw materials imported from across the globe.",
+        starter: "&ldquo;Our corner was decisive because captive colonial markets made Victorian Britain the wealthy 'Workshop of the World' celebrated in 1851...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
-        label: "BRITISH WORKING CLASS",
-        title: "Cheap Consumer Commodities & Industrial Employment",
-        detail: "Ordinary British families enjoyed cheap tea, sugar, cocoa, and tobacco, while millions of workers found employment in shipyards, railways, and cotton export mills.",
-        starter: "&ldquo;Our corner was decisive because imperial trade gave ordinary British workers cheap consumer goods and millions of secure manufacturing jobs...&rdquo;"
+        label: "BRITISH CONSUMERS",
+        title: "Cheaper Tea, Sugar, Cotton & Shipyard Jobs",
+        detail: "By the late nineteenth century, rising real wages and imperial imports brought cheap tea, sugar, and dockyard/mill employment to millions of British workers, despite urban slums.",
+        starter: "&ldquo;Our corner was decisive because imperial trade lowered food prices and supported millions of industrial jobs across Britain...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
-        label: "COLONIAL ADMINISTRATIVE ELITES",
-        title: "Western-Educated Local Lawyers, Clerks & Civil Servants",
-        detail: "A small stratum of Indian and African elites gained Western university educations, prestigious administrative posts, and the legal tools to challenge colonial rule.",
-        starter: "&ldquo;Our corner was decisive because Western education equipped a new generation of colonial professionals with the tools to lead modern independent nations...&rdquo;"
+        label: "COLONIAL INFRASTRUCTURE",
+        title: "Railways, Canals & Western-Educated Critics",
+        detail: "Optimist historians point to 25,000 miles of Indian railways and legal institutions, though Pessimists note railways moved troops and grain exports even during the 1876–78 famine.",
+        starter: "&ldquo;Our corner argues that colonial infrastructure and education created modern transport networks—and equipped nationalists like Naoroji to challenge empire...&rdquo;"
       }
     ]
   }
 };
-

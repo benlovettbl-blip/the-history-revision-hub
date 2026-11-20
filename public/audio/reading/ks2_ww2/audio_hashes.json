@@ -1,0 +1,93 @@
+{
+  "unitId": "ks2_ww2",
+  "clips": {
+    "r0": {
+      "hash": "bd08e1df98f00ff797130933",
+      "bytes": 308972,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Read-Aloud",
+      "words": 193,
+      "updatedAt": "2026-11-20T16:28:42.202Z"
+    },
+    "r4": {
+      "hash": "02f87b6dcbd654b71d76f75f",
+      "bytes": 331820,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Read-Aloud",
+      "words": 192,
+      "updatedAt": "2026-11-20T16:28:42.947Z"
+    },
+    "r9": {
+      "hash": "beb78580799f27f7dc67335a",
+      "bytes": 310412,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Read-Aloud",
+      "words": 180,
+      "updatedAt": "2026-11-20T16:28:51.270Z"
+    },
+    "r5": {
+      "hash": "1a4ae07ec9226f85bc52ae21",
+      "bytes": 298988,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Read-Aloud",
+      "words": 177,
+      "updatedAt": "2026-11-20T16:28:54.586Z"
+    },
+    "r8": {
+      "hash": "b5ccdb04645aaf01c9e7b582",
+      "bytes": 354380,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Read-Aloud",
+      "words": 201,
+      "updatedAt": "2026-11-20T16:28:55.314Z"
+    },
+    "r1": {
+      "hash": "7f92ebf971073ca7c283a6fe",
+      "bytes": 322220,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Read-Aloud",
+      "words": 159,
+      "updatedAt": "2026-11-20T16:36:06.811Z"
+    },
+    "r2": {
+      "hash": "57e0bc08549c9f238839b064",
+      "bytes": 323468,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Read-Aloud",
+      "words": 169,
+      "updatedAt": "2026-11-20T16:36:07.592Z"
+    },
+    "r3": {
+      "hash": "4598a7dab33839bd43f03f21",
+      "bytes": 335756,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Read-Aloud",
+      "words": 189,
+      "updatedAt": "2026-11-20T16:36:09.334Z"
+    },
+    "r6": {
+      "hash": "e7419534dd4205b0ad7473f4",
+      "bytes": 329612,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Read-Aloud",
+      "words": 170,
+      "updatedAt": "2026-11-20T16:36:10.104Z"
+    },
+    "r7": {
+      "hash": "410e8cca56f265bdb0ccdd3f",
+      "bytes": 335660,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Read-Aloud",
+      "words": 165,
+      "updatedAt": "2026-11-20T16:38:22.198Z"
+    },
+    "r10": {
+      "hash": "374e0690b28d6622d2f42f79",
+      "bytes": 407468,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Read-Aloud",
+      "words": 203,
+      "updatedAt": "2026-11-20T16:38:23.085Z"
+    }
+  }
+}

@@ -6,7 +6,7 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp, recordQuestionResult } from '../../storage.js';
+import { recordQuestionResult } from '../../storage.js';
 
 const ZOOM_STEPS = [
   { scale: 3.8, pts: 200, label: '4× Micro-Detail (200 pts)' },
@@ -172,7 +172,6 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'detective', ctx.scope, score);
     pb = best;
     if (correctTotal > 0) {
-      addXp(correctTotal * 12, 'Archive Detective');
     }
 
     stageEl.innerHTML = `

@@ -6,7 +6,7 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp, recordQuestionResult } from '../../storage.js';
+import { recordQuestionResult } from '../../storage.js';
 
 export function mountTimelineBlitz(stageEl, pools, ctx) {
   const rawPool = pools.timelinePool || [];
@@ -308,7 +308,6 @@ export function mountTimelineBlitz(stageEl, pools, ctx) {
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'timeline', ctx.scope, score);
     pb = best;
     if (placedChain.length > 1) {
-      addXp(Math.min(120, (placedChain.length - 1) * 12), 'Timeline Blitz');
     }
 
     stageEl.innerHTML = `

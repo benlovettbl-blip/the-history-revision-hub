@@ -5809,7 +5809,8 @@ export default {
             "<p><span class=\"para-ref\">[2.2]</span> In their shops, diverse **herbal preparations were sold** alongside spices, preserved fruits, and scented candles. Although physicians viewed apothecaries with professional suspicion, accusing them of prescribing drugs without diagnostic training, apothecaries flourished by providing **cheaper urban access** to medicine. Ordinary townspeople frequently consulted apothecaries directly, purchasing inexpensive herbal purgatives, warming chest cordials, and teething balms without paying an expensive physician’s consultation fee.</p>"
           ],
           "theme_heading": "Guild Apothecaries and Spicers: Retail Medicine",
-          "image": "/images/med_stage_medieval_apothecary.jpg"
+          "image": "/images/med_stage_medieval_apothecary.jpg",
+          "caption": "Late-medieval guild miniature depicting an apothecary in a red cloak surrounded by a storage jar and mixing spatulas for compounding herbal and spice remedies."
         },
         {
           "act": 3,
@@ -5850,7 +5851,8 @@ export default {
             "<p><span class=\"para-ref\">[3.2]</span> Barber-surgeons also tackled dangerous emergency operations, including emergency **cauterisation and amputation** of crushed limbs and removing bladder stones using specialised iron scoops. Without anaesthetics or antiseptic knowledge, patients were held down by assistants while surgeons worked with raw speed. Wounds were sealed with boiling elderberry oil or red-hot irons, resulting in immense shock, agony, and high mortality rates from postoperative hospital gangrene.</p>"
           ],
           "theme_heading": "Barber-Surgeons and Practical Craft Medicine",
-          "image": "/images/medieval_bleeding_bowl.jpg"
+          "image": "/images/medieval_bleeding_bowl.jpg",
+          "caption": "Graduated pewter bloodletting bowl marked in fluid ounces (8 to 24 oz), used by barber-surgeons to catch and measure blood drained from an arm vein (Wellcome Collection)."
         },
         {
           "act": 4,
@@ -5931,7 +5933,8 @@ export default {
             "<p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>"
           ],
           "theme_heading": "Domestic Women Healers and Household Medicine",
-          "image": "/images/medieval_female_physician.jpg"
+          "image": "/images/medieval_female_physician.jpg",
+          "caption": "Fifteenth-century English medical manuscript drawing showing a female healer applying heated cupping glasses and leeches to a seated patient (Wellcome Collection)."
         }
       ],
       "sources": [
@@ -12396,7 +12399,8 @@ export default {
           "act": 4,
           "theme": "Academic Backlash and Resignation from Padua (1544)",
           "content": "<p><span class=\"para-ref\">[4.1]</span> Vesalius’s audacious corrections of ancient authority ignited a **vicious traditional backlash** from conservative university faculties across Europe. Traditional Galenists were outraged that a young Belgian professor dared challenge the revered master of classical medicine. In Paris, his former anatomy professor, Jacobus Sylvius, maintained fierce **loyalty to Galen**, dismissing Vesalius as an ungrateful madman and claiming that human anatomy had degenerated since Roman times rather than Galen being mistaken.</p><p><span class=\"para-ref\">[4.2]</span> Embittered by personal hostility, academic slander, and professional ostracism from conservative colleagues, Vesalius made a dramatic **resignation from Padua** in 1544. In a fit of fury, he burned many of his unpublished scientific research notes and abandoned academic dissection entirely, moving into imperial diplomatic service as royal court physician to Holy Roman Emperor Charles V, never publishing major anatomical works again.</p>",
-          "image": "/images/vesalius_skeleton_leaning.jpg"
+          "image": "/images/vesalius_skeleton_leaning.jpg",
+          "caption": "Anatomical woodcut from Andreas Vesalius’s De Humani Corporis Fabrica (1543, p. 164) showing a human skeleton contemplating a skull above the motto \"Vivitur ingenio\"."
         },
         {
           "id": "block_5",
@@ -12434,7 +12438,8 @@ export default {
           "act": 5,
           "theme": "English Dissemination: Thomas Geminus and Surgical Training",
           "content": "<p><span class=\"para-ref\">[5.1]</span> Despite fierce conservative hostility, Vesalius’s anatomical revolution spread rapidly across northern Europe, including Tudor England. In 1545, royal engraver **Thomas Geminus** used **engraved copperplates** to reproduce Vesalius’s illustrations in London inside *Compendiosa totius anatomie delineatio*, followed in 1553 by Nicholas Udall’s English translation so vernacular **English barber-surgeons** could study accurate human anatomy without reading university Latin.</p><p><span class=\"para-ref\">[5.2]</span> Supported by King Henry VIII and the newly united Company of Barber-Surgeons (1540), annual public dissections of executed felons trained London practitioners using Vesalian plates. Although correcting anatomy did not immediately cure infectious diseases, Vesalius established **empirical observation**—proving that direct human dissection, rather than blind obedience to ancient books, was the true foundation of medical science.</p>",
-          "image": "/images/holbein_barber_surgeons.jpg"
+          "image": "/images/holbein_barber_surgeons.jpg",
+          "caption": "Hans Holbein the Younger, Henry VIII and the Barber-Surgeons (c. 1541–43), commemorating the 1540 royal charter uniting London’s Barbers and Surgeons."
         }
       ],
       "vocab": [
@@ -15547,7 +15552,8 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> In the spring of 1665, catastrophic bubonic plague returned to England with terrifying ferocity during the **Great Plague of London**. Originating in the impoverished suburban parish of **St Giles parish outbreak** outside London walls, the epidemic spread rapidly through overcrowded timber slums where raw sewage and rubbish heaps fostered thousands of black rats carrying plague-infected fleas. Summer heat accelerated the bacterial infection into an uncontrollable urban wildfire.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> As weekly mortalities escalated, wealthy elites abandoned the capital. The **flight of King Charles II and his court** saw the royal family, parliament, wealthy merchants, and senior clergymen evacuate London for rural estates in Oxford and Salisbury. Over thirty qualified physicians and parish priests fled, abandoning over four hundred thousand poor Londoners to face the epidemic with minimal medical assistance or civic support.</p>"
           ],
-          "image": "/images/plague_in_london_1665_wellcome.jpg"
+          "image": "/images/plague_in_london_1665_wellcome.jpg",
+          "caption": "Engraving after George Cruikshank showing a 1665 London bellman and parish watchman outside a padlocked plague house marked with a cross and \"Lord Have Mercy\"."
         },
         {
           "theme": "Supernatural Fears and Humoral Continuity (1665)",
@@ -15661,7 +15667,8 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> Because authorities believed the epidemic was spread by atmospheric miasma and animal fur, they enacted well-intentioned but disastrous preventative policies. Convinced household pets carried infection, the Lord Mayor ordered the **mass culling of dogs and cats**, leading to the slaughter of an estimated two hundred thousand animals, which eliminated the natural predators of black rats and accelerated the flea population. This tragic mistake allowed plague-carrying rats to multiply unhindered across London.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> To combat corrupt miasma, town authorities maintained continuous **street barrel fires**, burning coal, pitch, and sulphur day and night at road intersections to purify the heavy summer atmosphere. Citizens also practised **tobacco smoke warding**, compelling children and adults to smoke clay pipes continuously in schools and streets, believing pungent tobacco fumes acted as a powerful protective disinfectant against airborne contagion.</p>"
           ],
-          "image": "/images/london_bill_of_mortality_1665.jpg"
+          "image": "/images/london_bill_of_mortality_1665.jpg",
+          "caption": "Title page of London’s Dreadful Visitation (1665), compiling the weekly parish Bills of Mortality recorded by the Company of Parish Clerks during the Great Plague."
         },
         {
           "theme": "The Dead Carts and the Great Demographic Toll (1665)",
@@ -15700,7 +15707,8 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> By September 1665, London was engulfed in apocalyptic horror as weekly deaths surpassed eight thousand. Traditional churchyard burials ceased completely, replaced by municipal **London dead carts** that traversed midnight streets accompanied by tolling handbells and the grim cries of drivers shouting: *Bring out your dead!* Unclaimed corpses were tipped into gigantic communal burial trenches at Holywell Mount and Aldgate.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> By winter 1665, the epidemic subsided as cold weather killed off fleas, leaving over **100,000 plague deaths** recorded across the capital—nearly a quarter of London’s total population. Weekly **Bills of Mortality records** documented the horrifying toll across each parish. The catastrophe demonstrated the complete failure of Renaissance medicine to conquer infectious disease, proving that theoretical anatomical progress had yet to transform bedside therapeutics.</p>"
           ],
-          "image": "/images/night_plague_burials_1665.jpg"
+          "image": "/images/night_plague_burials_1665.jpg",
+          "caption": "Coloured engraving (\"Plague in 1665\") showing dead-cart men smoking clay tobacco pipes to ward off miasma while loading plague victims onto a burial cart at night."
         }
       ],
       "vocab": [
@@ -17161,7 +17169,8 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> In the first half of the nineteenth century, British and European understanding of disease causation remained fundamentally flawed. The dominant scientific orthodoxy was the **spontaneous generation theory**, which taught that microscopic organisms and maggots were created spontaneously inside decaying organic matter, mistakenly viewing microbes as the harmless secondary consequence of rotting tissue rather than its active biological cause.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Alongside this, **foul miasma stenches** were blamed for devastating urban epidemics like cholera and typhus, as medical authorities insisted foul vapours rising from cesspools poisoned human blood. These **pre-bacteriology limits** prevented physicians from recognising human-to-human contagion, leaving doctors completely powerless to treat infections while municipal councils focused exclusively on removing atmospheric smells rather than targeting microscopic bacterial pathogens.</p>"
           ],
-          "image": "/images/cholera_miasma.jpg"
+          "image": "/images/cholera_miasma.jpg",
+          "caption": "Robert Seymour’s 1831 etching \"Cholera Trampling the Victors and the Vanquished\", portraying cholera as a giant shrouded spectre spreading deadly miasma clouds."
         },
         {
           "act": 2,
@@ -17331,7 +17340,8 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Armed with advanced staining and culture methods, Koch’s Berlin research team made historic pathological discoveries. In 1882, Koch isolated the deadly **tuberculosis bacillus** (*Mycobacterium tuberculosis*), proving that the widespread lung disease killing one in seven Europeans was an infectious bacterial illness rather than a hereditary weakness passed down through family bloodlines. This discovery shocked the European medical world.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> In 1883, travelling to Egypt and India, Koch isolated the comma-shaped **cholera bacillus** (*Vibrio cholerae*), confirming John Snow’s theory that contaminated drinking water transmitted the disease. Koch documented his findings using **high-resolution microphotography**, photographing microbes through microscope lenses to provide indisputable visual proof that destroyed miasma theory forever and established the modern bacterial basis of infectious disease.</p>"
           ],
-          "image": "/images/cholera_microscope_gummelt_1897.jpg"
+          "image": "/images/cholera_microscope_gummelt_1897.jpg",
+          "caption": "Chromolithograph by W. Gummelt (1897) showing cholera-damaged intestinal tissue above a stained microscopic view of Robert Koch’s comma-shaped cholera bacteria."
         }
       ],
       "vocab": [
@@ -18801,7 +18811,8 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> Throughout the eighteenth century, smallpox was the most terrifying epidemic killer in Britain, killing roughly forty thousand people annually and blinding or disfiguring hundreds of thousands of survivors. The only known preventative method was **smallpox variolation inoculation**, introduced to England from the Ottoman Empire in 1721 by aristocratic traveller Lady Mary Wortley Montagu. It involved transferring live smallpox matter into scratches on healthy patients.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> By the 1760s, commercial doctors popularised the lucrative Suttonian method, charging steep **Suttonian method fees** that only wealthy merchants and aristocrats could afford. However, the severe **risk of fatal infection** made inoculation dangerous: patients suffered full-blown smallpox, and inoculated individuals frequently triggered fresh epidemic outbreaks across unvaccinated communities, killing two to three percent of those treated.</p>"
           ],
-          "image": "/images/med_stage_montagu_variolation.jpg"
+          "image": "/images/med_stage_montagu_variolation.jpg",
+          "caption": "Engraved portrait of Lady Mary Wortley Montagu (after a 1710 miniature), who introduced smallpox inoculation to Britain in 1721 after witnessing it in Constantinople."
         },
         {
           "act": 2,
@@ -20532,7 +20543,8 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> In 1859, Nightingale published *Notes on Hospitals*, detailing revolutionary architectural standards that transformed hospital construction across the Victorian era. She insisted that hospitals abandon large, central buildings in favour of detached **separate pavilion wards**. Connected by covered walkways, these long, narrow, single-story wings isolated infectious patients from surgical wards, preventing airborne contagion from spreading throughout the institution. This layout minimised cross-infection between different medical departments.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Each ward featured **cross-ventilation high windows** placed opposite each other, allowing fresh air to circulate continually over beds and flush out noxious miasmas. Floors were constructed of polished hardwood and walls lined with **tiled washable surfaces** that could be easily scrubbed with carbolic disinfectant, creating bright, sanitary environments that became the global blueprint for modern hospital architecture.</p>"
           ],
-          "image": "/images/med_stage_st_thomas_pavilion.jpg"
+          "image": "/images/med_stage_st_thomas_pavilion.jpg",
+          "caption": "Archival photograph of the \"Florence Nightingale Ward\" at St Thomas’s Hospital, Westminster, showing spaced beds and tall opposing windows for cross-ventilation."
         },
         {
           "act": 5,
@@ -22017,7 +22029,8 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> Before the mid-nineteenth century, surgery was an ordeal of unimaginable human agony. Because patients were fully conscious, surgeons were judged almost entirely on **rapid surgical speed** to minimise agony, operating in mere seconds. Renowned surgeon Robert Liston could amputate a leg in under thirty seconds, working as burly male orderlies pinned screaming patients down to wooden operating tables. Surgical operations were limited to quick surface cuts and amputations.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> The overwhelming danger was acute **surgical shock mortality**, where immense pain caused blood pressure collapse and heart failure on the operating table. Early chemical experiments with **ether and nitrous oxide** (laughing gas) had severe limitations: nitrous oxide was too weak for deep incisions, while ether irritated patients’ lungs, caused violent vomiting, and was dangerously flammable near open gas lamps in operating rooms.</p>"
           ],
-          "image": "/images/med_stage_liston_ether_1846.jpg"
+          "image": "/images/med_stage_liston_ether_1846.jpg",
+          "caption": "Portrait of Scottish surgeon Robert Liston (1794–1847), famed for 30-second pre-anaesthetic amputations before performing Europe’s first ether operation in December 1846."
         },
         {
           "act": 2,
@@ -22115,7 +22128,8 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> Paradoxically, the conquest of pain did not immediately lower surgical mortality, leading directly to the disastrous **'Black Period' surgery** era (1846–1865). Because patients were unconscious and relaxed, surgeons carried out far **deeper invasive operations** inside the abdominal cavity, undertaking complex procedures that lasted hours rather than seconds, exposing open internal tissues to contaminated hospital environments. However, surgeons still operated without washing hands or sterilising instruments.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> Because medical science had not yet accepted Germ Theory, unsterilised surgical instruments, dirty bandages, and unwashed aprons transferred deadly bacteria directly into open wounds. This triggered a catastrophic **hospital gangrene surge**, alongside lethal outbreaks of pyaemia and sepsis that killed up to fifty percent of all surgical patients, making Victorian hospitals far more dangerous than battlefield dressing stations.</p>"
           ],
-          "image": "/images/med_stage_victorian_amputation_saw.jpg"
+          "image": "/images/med_stage_victorian_amputation_saw.jpg",
+          "caption": "Mid-nineteenth-century velvet-lined mahogany amputation case holding an unsterilised bone saw, surgical knives, and tourniquet—breeding fatal ward sepsis before 1865."
         },
         {
           "act": 4,
@@ -23840,7 +23854,8 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> To provide indisputable scientific proof of waterborne transmission, Snow conducted his famous \"Grand Experiment\" in south London, publishing a landmark **water company comparison**. Two rival commercial water suppliers supplied piped water to neighbouring households along identical streets, drawing their water supply directly from the tidal River Thames, providing the perfect conditions for an objective comparative epidemiological investigation.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> When comparing **Southwark vs Lambeth**, Snow proved that homes supplied by Southwark and Vauxhall (drawing sewage-polluted water from central London) suffered over eight times more cholera deaths than Lambeth customers (drawing clean water upstream from Thames Ditton). Through this rigorous statistical study **proved waterborne cholera transmission** conclusively, although conservative medical authorities clinging to miasma theory resisted his findings for another thirty years.</p>"
           ],
-          "image": "/images/snow_grand_experiment_table_1854.jpg"
+          "image": "/images/snow_grand_experiment_table_1854.jpg",
+          "caption": "Table IX from Dr John Snow’s On the Mode of Communication of Cholera (1855, p. 86), proving Southwark & Vauxhall homes suffered 315 deaths per 10,000 houses versus 37 for Lambeth."
         },
         {
           "act": 4,
@@ -23915,7 +23930,8 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> By the 1870s, two decisive developments dismantled *laissez-faire* government in Britain: the 1867 Reform Act enfranchised working-class male town laborers, forcing politicians to address sanitary reform, while Pasteur’s 1861 Germ Theory proved scientifically that dirty water and sewage fostered deadly bacteria that caused infectious epidemic disease. This political pressure forced Benjamin Disraeli’s Conservative government to take decisive national action.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> In 1875, Disraeli’s administration enacted the landmark **1875 Public Health Act**, which decisively ended government inaction by mandating **compulsory town sewers**, clean piped water, street lighting, and dedicated medical officers of health across every municipality. This statute represented the definitive **end of laissez-faire**, establishing the modern legal principle that national government held an absolute legal duty to safeguard public sanitary health.</p>"
           ],
-          "image": "/images/victorian_slum.jpg"
+          "image": "/images/victorian_slum.jpg",
+          "caption": "Gustave Doré’s 1872 wood engraving \"Over London — By Rail\", exposing the overcrowded Victorian terraced backyards and privies that drove the compulsory 1875 Public Health Act."
         }
       ],
       "vocab": [
@@ -26766,7 +26782,8 @@ export default {
             "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The introduction of routine **blood testing and ABO blood-group typing** enabled doctors to identify anaemia, monitor blood glucose levels in diabetics, and match compatible donors safely for blood transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect abnormal cellular changes and identify cancerous growths without major exploratory operations.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>"
           ],
-          "image": "/images/med_stage_modern_blood_endoscopy.jpg"
+          "image": "/images/med_stage_modern_blood_endoscopy.jpg",
+          "caption": "Hospital clinician guiding a flexible fibre-optic endoscope while inspecting live internal video imagery on a bedside monitor without open exploratory surgery."
         },
         {
           "act": 3,
@@ -26910,7 +26927,7 @@ export default {
           "example": "In the 20th century, Britain underwent an epidemiological transition toward heart disease and cancer."
         }
       ],
-      "vocab_cloze_text": "In the 20th century, Britain experienced an [Epidemiological Transition] as clean water and antibiotics conquered infectious plagues, replacing them with chronic lifestyle illnesses like heart disease and cancer. In 1895, Wilhelm Röntgen discovered [X-ray], enabling doctors to see fractures inside living limbs. In 1971, British engineer Godfrey Hounsfield invented the [CT Scanner (Computed Tomography)], using rotating radiation beams and computers to produce 3D cross-sectional slices of soft tissue. Later, [MRI (Magnetic Resonance Imaging)] used magnetic fields to scan organs safely without radiation, while flexible [Endoscope] allowed doctors to view internal organs directly.",
+      "vocab_cloze_text": "In the 20th century, Britain experienced a major [Epidemiological Transition] as clean water and antibiotics conquered infectious plagues, replacing them with chronic lifestyle illnesses like heart disease and cancer. In 1895, Wilhelm Röntgen discovered [X-ray], enabling doctors to see fractures inside living limbs. In 1971, British engineer Godfrey Hounsfield invented the [CT Scanner (Computed Tomography)], using rotating radiation beams and computers to produce 3D cross-sectional slices of soft tissue. Later, [MRI (Magnetic Resonance Imaging)] used magnetic fields to scan organs safely without radiation, while flexible [Endoscope] allowed doctors to view internal organs directly.",
       "learning_objectives": [
         "Explain how the epidemiological transition replaced infectious plagues with chronic lifestyle illnesses.",
         "Analyse the evolution of medical imaging from Röntgen’s X-rays to CT scanning and MRI.",
@@ -28408,7 +28425,8 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Following the creation of the NHS, British hospitals embraced high-tech surgery. In 1962, Sir John Charnley perfected low-friction **hip replacement surgery**, restoring mobility to hundreds of thousands of elderly patients. Simultaneously, mechanical **kidney dialysis units** cleansed toxic blood in patients suffering renal failure, while organ transplants and minimally invasive keyhole operations drastically accelerated patient recovery and reduced surgical trauma.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> However, clinical success created severe financial challenges. An aging population, public expectations of modern pharmaceuticals, and expensive diagnostic technologies generated **rising NHS cost pressures**. Managing escalating hospital budgets for cutting-edge treatments while maintaining Bevan’s founding principle of free universal access at the point of delivery remains the primary structural dilemma of contemporary British healthcare.</p>"
           ],
-          "image": "/images/robotic_surgery_da_vinci.jpg"
+          "image": "/images/robotic_surgery_da_vinci.jpg",
+          "caption": "Multi-arm Intuitive da Vinci robotic surgical system positioned over an operating table, enabling high-precision keyhole procedures inside modern hospitals."
         }
       ],
       "vocab": [
@@ -29989,15 +30007,14 @@ export default {
           "explanation": "Fleming was investigating golden colonies of Staphylococcus bacteria."
         },
         {
-          "question": "What was the scientific name of the mould that contaminated Fleming’s dish?",
+          "q": "Why could Alexander Fleming not turn penicillin into a medicine for human patients in 1929?",
           "options": [
-            "Bacillus anthracis",
-            "Escherichia coli",
-            "Penicillium notatum",
-            "Streptococcus pyogenes"
+            "He could not purify or stabilise penicillin in large enough amounts",
+            "The government banned experiments on bacteria",
+            "It only worked on viruses rather than bacteria",
+            "St Mary’s Hospital closed down his laboratory"
           ],
-          "answer": "Penicillium notatum",
-          "explanation": "The fungal strain was Penicillium notatum (later supplemented by Penicillium chrysogenum)."
+          "a": "He could not purify or stabilise penicillin in large enough amounts"
         },
         {
           "question": "Who led the Oxford University research team that purified penicillin starting in 1938?",
@@ -30691,273 +30708,273 @@ export default {
           ],
           "answer": "St Mary's Hospital, London, in September 1928",
           "a": "St Mary's Hospital, London, in September 1928",
-          "explanation": "Returning from holiday to St Mary's Hospital in September 1928, Fleming spotted mould dissolving bacteria."
+          "explanation": "Returning from holiday to St Mary's Hospital in September 1928, Fleming spotted mould dissolving bacteria on a petri dish."
         },
         {
           "stage": 1,
-          "question": "From his First World War experience, why did Fleming see that carbolic antiseptics failed in deep wounds?",
-          "q": "From his First World War experience, why did Fleming see that carbolic antiseptics failed in deep wounds?",
+          "question": "From his First World War experience, why did Fleming know chemical antiseptics failed in deep wounds?",
+          "q": "From his First World War experience, why did Fleming know chemical antiseptics failed in deep wounds?",
           "options": [
+            "They damaged white blood cells without reaching deep bacterial infections",
             "They caused blood to clot instantly inside glass flasks",
-            "They froze muscle tissue solid",
-            "They damaged white blood cells without reaching deep bacteria",
-            "They only killed harmless viruses"
+            "They froze muscle tissue solid on contact",
+            "They only worked against harmless viruses"
           ],
-          "answer": "They damaged white blood cells without reaching deep bacteria",
-          "a": "They damaged white blood cells without reaching deep bacteria",
-          "explanation": "Fleming saw harsh chemical antiseptics destroy white blood cells while failing to stop deep wound infections."
+          "answer": "They damaged white blood cells without reaching deep bacterial infections",
+          "a": "They damaged white blood cells without reaching deep bacterial infections",
+          "explanation": "Fleming saw in World War I that harsh chemical antiseptics destroyed white blood cells while failing to clear deep wound infections."
         },
         {
           "stage": 1,
-          "question": "What was the scientific name of the mould spore that drifted onto Fleming's discarded petri dish?",
-          "q": "What was the scientific name of the mould spore that drifted onto Fleming's discarded petri dish?",
+          "question": "Why did penicillin remain unused as a medicine for nearly ten years after Fleming published his paper in 1929?",
+          "q": "Why did penicillin remain unused as a medicine for nearly ten years after Fleming published his paper in 1929?",
           "options": [
-            "Mycobacterium tuberculosis",
-            "Penicillium notatum",
-            "Staphylococcus aureus",
-            "Vibrio cholerae"
+            "The British government banned mould research in hospitals",
+            "Penicillin killed healthy red blood cells on contact",
+            "Fleming refused to publish any record of his experiment",
+            "Fleming could not extract or stabilise pure penicillin"
           ],
-          "answer": "Penicillium notatum",
-          "a": "Penicillium notatum",
-          "explanation": "A drifting spore of Penicillium notatum contaminated Fleming's plate and produced bacterial-killing juice."
+          "answer": "Fleming could not extract or stabilise pure penicillin",
+          "a": "Fleming could not extract or stabilise pure penicillin",
+          "explanation": "Because Fleming could not extract or chemically stabilise pure penicillin in usable amounts, his discovery stayed a laboratory curiosity until 1938."
         },
         {
           "stage": 1,
-          "question": "Which pathogenic bacteria dissolved in a clear halo around Fleming's mould colony?",
-          "q": "Which pathogenic bacteria dissolved in a clear halo around Fleming's mould colony?",
+          "question": "What did Fleming see on his contaminated petri dish that proved the mould killed staphylococcus bacteria?",
+          "q": "What did Fleming see on his contaminated petri dish that proved the mould killed staphylococcus bacteria?",
           "options": [
-            "Staphylococcus",
-            "Anthrax",
-            "Cholera",
-            "Clostridium"
+            "A clear halo where bacteria had dissolved completely",
+            "Bright red dye staining the glass lid",
+            "Tiny ice crystals freezing the bacteria",
+            "Thick yellow pus covering the entire dish"
           ],
-          "answer": "Staphylococcus",
-          "a": "Staphylococcus",
-          "explanation": "Colonies of staphylococcus bacteria dissolved completely around the Penicillium notatum mould."
+          "answer": "A clear halo where bacteria had dissolved completely",
+          "a": "A clear halo where bacteria had dissolved completely",
+          "explanation": "Colonies of staphylococcus bacteria had dissolved completely in a clear ring around the mould spore."
         },
         {
           "stage": 2,
-          "question": "Which two scientists at Oxford University revived Fleming's penicillin paper in 1938?",
-          "q": "Which two scientists at Oxford University revived Fleming's penicillin paper in 1938?",
+          "question": "Which two scientists at Oxford University revived Fleming's penicillin research in 1938?",
+          "q": "Which two scientists at Oxford University revived Fleming's penicillin research in 1938?",
           "options": [
-            "James Watson and Francis Crick",
-            "Alexis Carrel and Henry Dakin",
             "Paul Ehrlich and Sahachiro Hata",
-            "Howard Florey and Ernst Chain"
+            "Louis Pasteur and Robert Koch",
+            "Howard Florey and Ernst Chain",
+            "James Watson and Francis Crick"
           ],
           "answer": "Howard Florey and Ernst Chain",
           "a": "Howard Florey and Ernst Chain",
-          "explanation": "Australian pathologist Howard Florey and biochemist Ernst Chain assembled an interdisciplinary Oxford team in 1938."
+          "explanation": "Pathologist Howard Florey and biochemist Ernst Chain assembled a research team at Oxford in 1938 to develop penicillin."
         },
         {
           "stage": 2,
-          "question": "Which two bodies provided vital early research grants for the Oxford penicillin team?",
-          "q": "Which two bodies provided vital early research grants for the Oxford penicillin team?",
+          "question": "What major practical problem did Florey and Chain have to overcome at Oxford to make penicillin usable?",
+          "q": "What major practical problem did Florey and Chain have to overcome at Oxford to make penicillin usable?",
           "options": [
-            "The Royal Society and the Bank of England",
-            "EMI and the British Medical Association",
-            "The British Medical Research Council and the Rockefeller Foundation",
-            "The Nightingale Fund and Parliament"
-          ],
-          "answer": "The British Medical Research Council and the Rockefeller Foundation",
-          "a": "The British Medical Research Council and the Rockefeller Foundation",
-          "explanation": "Grants from Britain's Medical Research Council and America's Rockefeller Foundation financed the Oxford trials."
-        },
-        {
-          "stage": 2,
-          "question": "What major technical obstacle had prevented Fleming from turning penicillin into a medicine?",
-          "q": "What major technical obstacle had prevented Fleming from turning penicillin into a medicine?",
-          "options": [
-            "Finding petri dishes made of glass",
-            "Purifying and stabilising active penicillin in usable quantities",
+            "Inventing the compound optical microscope",
+            "Persuading Alexander Fleming to name the mould",
             "Growing staphylococcus bacteria indoors",
-            "Obtaining permission from the BMA"
+            "Purifying active penicillin in usable therapeutic quantities"
           ],
-          "answer": "Purifying and stabilising active penicillin in usable quantities",
-          "a": "Purifying and stabilising active penicillin in usable quantities",
-          "explanation": "Extracting and chemically stabilising pure therapeutic penicillin proved extraordinarily difficult."
+          "answer": "Purifying active penicillin in usable therapeutic quantities",
+          "a": "Purifying active penicillin in usable therapeutic quantities",
+          "explanation": "Turning weak mould juice into pure, stable medicine in large enough quantities to treat human patients was extraordinarily difficult."
         },
         {
           "stage": 2,
-          "question": "Which Oxford technician built makeshift brewing apparatus from milk churns, bedpans, and flasks?",
-          "q": "Which Oxford technician built makeshift brewing apparatus from milk churns, bedpans, and flasks?",
+          "question": "What everyday containers did Oxford scientist Norman Heatley use to brew penicillin in university basements?",
+          "q": "What everyday containers did Oxford scientist Norman Heatley use to brew penicillin in university basements?",
           "options": [
-            "Norman Heatley",
-            "Godfrey Hounsfield",
-            "Raymond Gosling",
-            "Maurice Wilkins"
+            "Copper steam engines and iron boilers",
+            "Wooden wine barrels and clay jugs",
+            "Milk churns, hospital bedpans, and glass flasks",
+            "Giant steel factory fermentation vats"
           ],
-          "answer": "Norman Heatley",
-          "a": "Norman Heatley",
-          "explanation": "Norman Heatley engineered improvised extraction apparatus using hospital bedpans and milk churns to freeze-dry penicillin."
+          "answer": "Milk churns, hospital bedpans, and glass flasks",
+          "a": "Milk churns, hospital bedpans, and glass flasks",
+          "explanation": "Short of wartime factory equipment, Norman Heatley built makeshift brewing apparatus out of hospital bedpans, milk churns, and flasks."
+        },
+        {
+          "stage": 2,
+          "question": "Into what form did the Oxford team freeze-dry penicillin so it could be safely injected into patients?",
+          "q": "Into what form did the Oxford team freeze-dry penicillin so it could be safely injected into patients?",
+          "options": [
+            "A stable brown therapeutic powder",
+            "A thick carbolic ointment",
+            "A bright-red chemical dye tablet",
+            "An inhaled anaesthetic gas"
+          ],
+          "answer": "A stable brown therapeutic powder",
+          "a": "A stable brown therapeutic powder",
+          "explanation": "Freeze-drying the delicate liquid produced a stable brown powder that doctors could dissolve and inject safely."
         },
         {
           "stage": 3,
-          "question": "When did the Oxford team run their decisive eight-mouse protection trial, and against which bacteria?",
-          "q": "When did the Oxford team run their decisive eight-mouse protection trial, and against which bacteria?",
+          "question": "In May 1940, how did the Oxford team test whether purified penicillin worked in living animals?",
+          "q": "In May 1940, how did the Oxford team test whether purified penicillin worked in living animals?",
           "options": [
-            "September 1928 against anthrax spores",
-            "June 1944 against cholera bacilli",
-            "July 1948 against syphilis",
-            "May 1940 against fatal doses of streptococcus bacteria"
+            "Eight mice were injected with bacteria and four were treated with penicillin",
+            "A hundred cattle were vaccinated with weakened cowpox",
+            "Healthy rabbits were fed mouldy bread for six months",
+            "Chickens were kept in chilled cages to slow fever"
           ],
-          "answer": "May 1940 against fatal doses of streptococcus bacteria",
-          "a": "May 1940 against fatal doses of streptococcus bacteria",
-          "explanation": "In May 1940, eight mice were injected with lethal streptococcus to test purified penicillin in living animals."
+          "answer": "Eight mice were injected with bacteria and four were treated with penicillin",
+          "a": "Eight mice were injected with bacteria and four were treated with penicillin",
+          "explanation": "In their May 1940 mouse-protection trial, the Oxford team injected eight mice with lethal bacteria and gave penicillin to four of them."
         },
         {
           "stage": 3,
-          "question": "What was the outcome of the May 1940 Oxford mouse-protection experiment?",
-          "q": "What was the outcome of the May 1940 Oxford mouse-protection experiment?",
+          "question": "What happened in the May 1940 Oxford mouse trial within twenty-four hours?",
+          "q": "What happened in the May 1940 Oxford mouse trial within twenty-four hours?",
           "options": [
-            "All eight mice survived without side effects",
             "Only one treated mouse survived past midnight",
-            "Four penicillin-treated mice recovered while four untreated mice died",
-            "Penicillin cured only cowpox in the mice"
+            "The four penicillin-treated mice recovered while the four untreated mice died",
+            "All eight mice survived without needing further doses",
+            "All eight mice died from side effects of the injection"
           ],
-          "answer": "Four penicillin-treated mice recovered while four untreated mice died",
-          "a": "Four penicillin-treated mice recovered while four untreated mice died",
-          "explanation": "Within twenty-four hours, all four untreated mice died while all four penicillin-treated mice recovered completely."
+          "answer": "The four penicillin-treated mice recovered while the four untreated mice died",
+          "a": "The four penicillin-treated mice recovered while the four untreated mice died",
+          "explanation": "All four untreated mice died within a day, while all four mice given penicillin recovered completely."
         },
         {
           "stage": 3,
-          "question": "Who was the forty-three-year-old Oxford policeman treated with penicillin in February 1941?",
-          "q": "Who was the forty-three-year-old Oxford policeman treated with penicillin in February 1941?",
+          "question": "Who was the Oxford policeman who became the first human patient treated with penicillin in February 1941?",
+          "q": "Who was the Oxford policeman who became the first human patient treated with penicillin in February 1941?",
           "options": [
-            "James Phipps",
+            "Aneurin Bevan",
+            "William Beveridge",
             "Albert Alexander",
-            "Oswald Robertson",
-            "Harold Gillies"
+            "James Phipps"
           ],
           "answer": "Albert Alexander",
           "a": "Albert Alexander",
-          "explanation": "Suffering severe facial blood poisoning in February 1941, policeman Albert Alexander rallied dramatically on penicillin."
+          "explanation": "Policeman Albert Alexander was dying from severe facial blood poisoning when the Oxford team treated him in February 1941."
         },
         {
           "stage": 3,
-          "question": "Why did Albert Alexander tragically die despite initially recovering on penicillin?",
-          "q": "Why did Albert Alexander tragically die despite initially recovering on penicillin?",
+          "question": "Why did policeman Albert Alexander die in 1941 even though penicillin initially made him recover?",
+          "q": "Why did policeman Albert Alexander die in 1941 even though penicillin initially made him recover?",
           "options": [
-            "Scarce penicillin supplies ran out even after recycling it from his urine",
-            "He suffered an acute chloroform overdose",
-            "German bombers destroyed his hospital ward",
-            "His infection was viral rather than bacterial"
+            "German bombers hit his Oxford hospital ward",
+            "His illness was caused by a virus rather than bacteria",
+            "Scarce supplies of penicillin ran out before his infection cleared",
+            "He suffered an accidental chloroform overdose"
           ],
-          "answer": "Scarce penicillin supplies ran out even after recycling it from his urine",
-          "a": "Scarce penicillin supplies ran out even after recycling it from his urine",
-          "explanation": "Even after doctors extracted recycled penicillin from his urine, stocks ran out and his infection returned fatally."
+          "answer": "Scarce supplies of penicillin ran out before his infection cleared",
+          "a": "Scarce supplies of penicillin ran out before his infection cleared",
+          "explanation": "Even after doctors recycled penicillin from his urine, Oxford stocks ran out and his fatal infection returned."
         },
         {
           "stage": 4,
-          "question": "Why did Florey and Heatley travel to the United States in July 1941 to seek industrial production?",
-          "q": "Why did Florey and Heatley travel to the United States in July 1941 to seek industrial production?",
+          "question": "Why did Florey and Heatley travel to the United States in July 1941 to mass-produce penicillin?",
+          "q": "Why did Florey and Heatley travel to the United States in July 1941 to mass-produce penicillin?",
           "options": [
-            "The British government outlawed mould research",
-            "Penicillium mould refused to grow in British weather",
-            "The BMA blocked factory construction",
-            "British chemical factories were tied up making explosives and faced Luftwaffe bombing"
+            "Parliament refused to allow injections in military hospitals",
+            "British chemical plants were making explosives and faced Luftwaffe bombing",
+            "The British Medical Association banned antibiotic trials",
+            "Penicillin mould refused to grow in cold British weather"
           ],
-          "answer": "British chemical factories were tied up making explosives and faced Luftwaffe bombing",
-          "a": "British chemical factories were tied up making explosives and faced Luftwaffe bombing",
-          "explanation": "Wartime explosives production and German air raids prevented British chemical firms from scaling up penicillin."
+          "answer": "British chemical plants were making explosives and faced Luftwaffe bombing",
+          "a": "British chemical plants were making explosives and faced Luftwaffe bombing",
+          "explanation": "Wartime explosives production and German air raids meant British chemical factories could not scale up penicillin manufacture."
         },
         {
           "stage": 4,
-          "question": "At which US laboratory city did corn-steep liquor and a cantaloupe mould boost yields 200-fold?",
-          "q": "At which US laboratory city did corn-steep liquor and a cantaloupe mould boost yields 200-fold?",
+          "question": "What crucial backing in the United States enabled drug companies to mass-produce penicillin during World War II?",
+          "q": "What crucial backing in the United States enabled drug companies to mass-produce penicillin during World War II?",
           "options": [
-            "Frankfurt",
-            "Basel",
-            "Peoria, Illinois",
-            "Boston"
+            "Substantial US government funding",
+            "Donations from medieval monastic charities",
+            "Loans from the British Royal Society",
+            "Taxes raised by the 1875 Public Health Act"
           ],
-          "answer": "Peoria, Illinois",
-          "a": "Peoria, Illinois",
-          "explanation": "Researchers with the US Department of Agriculture in Peoria, Illinois multiplied penicillin yields two hundred times."
+          "answer": "Substantial US government funding",
+          "a": "Substantial US government funding",
+          "explanation": "Substantial US government funding paid major American pharmaceutical companies to build giant mass-production plants."
         },
         {
           "stage": 4,
-          "question": "What giant industrial vessels did US pharmaceutical firms build to mass-produce pure penicillin?",
-          "q": "What giant industrial vessels did US pharmaceutical firms build to mass-produce pure penicillin?",
+          "question": "What giant factory equipment did American drug companies build to mass-produce pure penicillin?",
+          "q": "What giant factory equipment did American drug companies build to mass-produce pure penicillin?",
           "options": [
-            "S-shaped glass swan-neck flasks",
+            "Hand-cranked carbolic acid sprays",
             "Deep fermentation tanks pumped with sterile air",
-            "Ceramic hospital bedpans",
-            "Pressurised steam autoclaves"
+            "Rows of ceramic hospital bedpans",
+            "S-shaped glass swan-neck flasks"
           ],
           "answer": "Deep fermentation tanks pumped with sterile air",
           "a": "Deep fermentation tanks pumped with sterile air",
-          "explanation": "Aerated deep fermentation tanks holding thousands of gallons transformed penicillin into a mass-produced drug."
+          "explanation": "Aerated deep fermentation tanks holding thousands of gallons of broth turned penicillin into a mass-produced medicine."
         },
         {
           "stage": 4,
           "question": "How many doses of penicillin did American factories supply for Allied forces by D-Day in June 1944?",
           "q": "How many doses of penicillin did American factories supply for Allied forces by D-Day in June 1944?",
           "options": [
+            "100 million doses",
             "2.3 million doses",
-            "44,000 doses",
-            "100,000 doses",
-            "3 billion doses"
+            "5,000 doses",
+            "50,000 doses"
           ],
           "answer": "2.3 million doses",
           "a": "2.3 million doses",
-          "explanation": "By June 1944, 2.3 million doses were ready for D-Day, preventing gangrene and saving thousands of wounded troops."
+          "explanation": "By June 1944, 2.3 million doses were ready for the D-Day landings, preventing gangrene and saving thousands of wounded troops."
         },
         {
           "stage": 5,
-          "question": "In what year were Fleming, Florey, and Chain jointly awarded the Nobel Prize?",
-          "q": "In what year were Fleming, Florey, and Chain jointly awarded the Nobel Prize?",
+          "question": "In what year were Fleming, Florey, and Chain jointly awarded the Nobel Prize for penicillin?",
+          "q": "In what year were Fleming, Florey, and Chain jointly awarded the Nobel Prize for penicillin?",
           "options": [
-            "1928",
-            "1941",
             "1948",
-            "1945"
+            "1945",
+            "1928",
+            "1938"
           ],
           "answer": "1945",
           "a": "1945",
-          "explanation": "Following Allied victory, Fleming, Florey, and Chain shared the 1945 Nobel Prize for penicillin."
+          "explanation": "At the end of the Second World War in 1945, Fleming, Florey, and Chain shared the Nobel Prize."
         },
         {
           "stage": 5,
-          "question": "Which deadly everyday infections were wiped out across post-war Britain as free NHS penicillin spread?",
-          "q": "Which deadly everyday infections were wiped out across post-war Britain as free NHS penicillin spread?",
+          "question": "Which deadly bacterial illnesses did free NHS penicillin help wipe out in post-war Britain?",
+          "q": "Which deadly bacterial illnesses did free NHS penicillin help wipe out in post-war Britain?",
           "options": [
-            "Haemophilia, cystic fibrosis, and sickle cell anaemia",
-            "Smallpox, measles, and influenza",
-            "Streptococcal throat infections, pneumonia, and syphilis",
-            "Stroke, lung cancer, and heart disease"
+            "Haemophilia and cystic fibrosis",
+            "Smallpox, influenza, and polio",
+            "Throat infections, pneumonia, and syphilis",
+            "Lung cancer, stroke, and heart disease"
           ],
-          "answer": "Streptococcal throat infections, pneumonia, and syphilis",
-          "a": "Streptococcal throat infections, pneumonia, and syphilis",
-          "explanation": "Distributed freely through the NHS, penicillin conquered bacterial throat infections, pneumonia, and syphilis."
+          "answer": "Throat infections, pneumonia, and syphilis",
+          "a": "Throat infections, pneumonia, and syphilis",
+          "explanation": "Available free on the NHS after 1948, penicillin cured bacterial throat infections, pneumonia, and syphilis."
         },
         {
           "stage": 5,
-          "question": "What human practices triggered the modern crisis of antimicrobial resistance?",
-          "q": "What human practices triggered the modern crisis of antimicrobial resistance?",
+          "question": "Why have some dangerous bacteria evolved resistance to antibiotics in modern healthcare?",
+          "q": "Why have some dangerous bacteria evolved resistance to antibiotics in modern healthcare?",
           "options": [
-            "Storing antibiotics inside refrigerated ice boxes",
+            "Using X-ray scanners in casualty wards",
             "Widespread clinical over-prescription and agricultural misuse",
-            "Administering childhood smallpox vaccines",
-            "Using keyhole VATS surgery"
+            "Keeping antibiotics inside cold hospital refrigerators",
+            "Giving childhood vaccinations against measles"
           ],
           "answer": "Widespread clinical over-prescription and agricultural misuse",
           "a": "Widespread clinical over-prescription and agricultural misuse",
-          "explanation": "Over-prescribing antibiotics in clinics and misusing them in agriculture drove bacteria to evolve genetic resistance."
+          "explanation": "Over-prescribing antibiotics in clinics and misusing them in farming allowed resistant bacteria to evolve and survive."
         },
         {
           "stage": 5,
-          "question": "Which antibiotic-resistant 'superbug' emerged as a major threat in modern hospital wards?",
-          "q": "Which antibiotic-resistant 'superbug' emerged as a major threat in modern hospital wards?",
+          "question": "Which antibiotic-resistant 'superbug' became a serious threat in modern hospital wards?",
+          "q": "Which antibiotic-resistant 'superbug' became a serious threat in modern hospital wards?",
           "options": [
+            "NHS",
+            "CT",
             "MRSA",
-            "PUO",
-            "EGFR",
-            "BRCA1"
+            "DNA"
           ],
           "answer": "MRSA",
           "a": "MRSA",
-          "explanation": "Resistant strains such as MRSA highlight the ongoing need for strict antibiotic stewardship and infection control."
+          "explanation": "Antibiotic-resistant superbugs such as MRSA cannot be killed by standard penicillin and require strict hospital infection control."
         }
       ],
       "inquiry_question": "How did an accidental laboratory mould transform into humanity’s first mass-produced antibiotic wonder drug?",
@@ -31387,7 +31404,8 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> In the twenty-first century, decoding the human genome transformed modern lung cancer treatment from blunt chemotherapy into precision genetic oncology. Pathologists perform routine **tumour DNA sequencing** on biopsy tissue to identify specific genetic mutations that stimulate tumour growth, such as EGFR mutations, allowing oncologists to personalise therapy to each individual patient's unique cellular profile and cancer characteristics.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Doctors prescribe advanced **targeted pharmacotherapy** drugs that block the specific molecular proteins feeding the tumour, halting cancer progression without destroying healthy blood cells. Alongside this, **targeted immunotherapy** medications unmask cancer cells, training the patient’s own immune system to identify and destroy malignant tumours, significantly extending life expectancy for patients with advanced lung cancer across NHS hospitals.</p>"
           ],
-          "image": "/images/med_stage_cancer_immunotherapy.jpg"
+          "image": "/images/med_stage_cancer_immunotherapy.jpg",
+          "caption": "Scientific illustration showing an immune T-cell (blue) releasing targeted cytotoxic granules (red) to destroy a cancerous tumour cell (green) during immunotherapy."
         },
         {
           "act": 5,
@@ -31500,15 +31518,14 @@ export default {
           "explanation": "Because lung tissue lacks pain nerves, early-stage tumours develop without visible symptoms."
         },
         {
-          "question": "What type of diagnostic scan uses low-dose radiation to detect small lung nodules before they metastasise?",
+          "q": "Which modern 3D scan spots tiny early lung tumours that flat 2D chest X-rays often missed?",
           "options": [
-            "Standard dental X-ray",
-            "Ultrasound scan",
-            "Thermometer",
-            "Low-dose helical CT scan"
+            "CT scan",
+            "Uroscopy flask",
+            "Stethoscope",
+            "Thermometer"
           ],
-          "answer": "Low-dose helical CT scan",
-          "explanation": "Low-dose helical CT scans identify small malignant nodules in early stages."
+          "a": "CT scan"
         },
         {
           "question": "Why is surgical removal of a lung tumour only effective if cancer is diagnosed early?",
@@ -31738,61 +31755,61 @@ export default {
             "stage": 1,
             "question": "Where and in what year did Alexander Fleming accidentally discover penicillin?",
             "answer": "St Mary's Hospital, London, in September 1928",
-            "explanation": "Returning from holiday to St Mary's Hospital in September 1928, Fleming spotted mould dissolving bacteria."
+            "explanation": "Returning from holiday to St Mary's Hospital in September 1928, Fleming spotted mould dissolving bacteria on a petri dish."
           },
           {
             "stage": 2,
-            "question": "Which two scientists at Oxford University revived Fleming's penicillin paper in 1938?",
+            "question": "Which two scientists at Oxford University revived Fleming's penicillin research in 1938?",
             "answer": "Howard Florey and Ernst Chain",
-            "explanation": "Australian pathologist Howard Florey and biochemist Ernst Chain assembled an interdisciplinary Oxford team in 1938."
+            "explanation": "Pathologist Howard Florey and biochemist Ernst Chain assembled a research team at Oxford in 1938 to develop penicillin."
           },
           {
             "stage": 3,
-            "question": "When did the Oxford team run their decisive eight-mouse protection trial, and against which bacteria?",
-            "answer": "May 1940 against fatal doses of streptococcus bacteria",
-            "explanation": "In May 1940, eight mice were injected with lethal streptococcus to test purified penicillin in living animals."
+            "question": "In May 1940, how did the Oxford team test whether purified penicillin worked in living animals?",
+            "answer": "Eight mice were injected with bacteria and four were treated with penicillin",
+            "explanation": "In their May 1940 mouse-protection trial, the Oxford team injected eight mice with lethal bacteria and gave penicillin to four of them."
           },
           {
             "stage": 4,
-            "question": "Why did Florey and Heatley travel to the United States in July 1941 to seek industrial production?",
-            "answer": "British chemical factories were tied up making explosives and faced Luftwaffe bombing",
-            "explanation": "Wartime explosives production and German air raids prevented British chemical firms from scaling up penicillin."
+            "question": "Why did Florey and Heatley travel to the United States in July 1941 to mass-produce penicillin?",
+            "answer": "British chemical plants were making explosives and faced Luftwaffe bombing",
+            "explanation": "Wartime explosives production and German air raids meant British chemical factories could not scale up penicillin manufacture."
           },
           {
             "stage": 5,
-            "question": "In what year were Fleming, Florey, and Chain jointly awarded the Nobel Prize?",
+            "question": "In what year were Fleming, Florey, and Chain jointly awarded the Nobel Prize for penicillin?",
             "answer": "1945",
-            "explanation": "Following Allied victory, Fleming, Florey, and Chain shared the 1945 Nobel Prize for penicillin."
+            "explanation": "At the end of the Second World War in 1945, Fleming, Florey, and Chain shared the Nobel Prize."
           },
           {
             "stage": 1,
-            "question": "From his First World War experience, why did Fleming see that carbolic antiseptics failed in deep wounds?",
-            "answer": "They damaged white blood cells without reaching deep bacteria",
-            "explanation": "Fleming saw harsh chemical antiseptics destroy white blood cells while failing to stop deep wound infections."
+            "question": "From his First World War experience, why did Fleming know chemical antiseptics failed in deep wounds?",
+            "answer": "They damaged white blood cells without reaching deep bacterial infections",
+            "explanation": "Fleming saw in World War I that harsh chemical antiseptics destroyed white blood cells while failing to clear deep wound infections."
           },
           {
             "stage": 2,
-            "question": "Which two bodies provided vital early research grants for the Oxford penicillin team?",
-            "answer": "The British Medical Research Council and the Rockefeller Foundation",
-            "explanation": "Grants from Britain's Medical Research Council and America's Rockefeller Foundation financed the Oxford trials."
+            "question": "What major practical problem did Florey and Chain have to overcome at Oxford to make penicillin usable?",
+            "answer": "Purifying active penicillin in usable therapeutic quantities",
+            "explanation": "Turning weak mould juice into pure, stable medicine in large enough quantities to treat human patients was extraordinarily difficult."
           },
           {
             "stage": 3,
-            "question": "What was the outcome of the May 1940 Oxford mouse-protection experiment?",
-            "answer": "Four penicillin-treated mice recovered while four untreated mice died",
-            "explanation": "Within twenty-four hours, all four untreated mice died while all four penicillin-treated mice recovered completely."
+            "question": "What happened in the May 1940 Oxford mouse trial within twenty-four hours?",
+            "answer": "The four penicillin-treated mice recovered while the four untreated mice died",
+            "explanation": "All four untreated mice died within a day, while all four mice given penicillin recovered completely."
           },
           {
             "stage": 4,
-            "question": "At which US laboratory city did corn-steep liquor and a cantaloupe mould boost yields 200-fold?",
-            "answer": "Peoria, Illinois",
-            "explanation": "Researchers with the US Department of Agriculture in Peoria, Illinois multiplied penicillin yields two hundred times."
+            "question": "What crucial backing in the United States enabled drug companies to mass-produce penicillin during World War II?",
+            "answer": "Substantial US government funding",
+            "explanation": "Substantial US government funding paid major American pharmaceutical companies to build giant mass-production plants."
           },
           {
             "stage": 5,
-            "question": "Which deadly everyday infections were wiped out across post-war Britain as free NHS penicillin spread?",
-            "answer": "Streptococcal throat infections, pneumonia, and syphilis",
-            "explanation": "Distributed freely through the NHS, penicillin conquered bacterial throat infections, pneumonia, and syphilis."
+            "question": "Which deadly bacterial illnesses did free NHS penicillin help wipe out in post-war Britain?",
+            "answer": "Throat infections, pneumonia, and syphilis",
+            "explanation": "Available free on the NHS after 1948, penicillin cured bacterial throat infections, pneumonia, and syphilis."
           }
         ]
       },
@@ -32180,283 +32197,283 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "What mass twentieth-century habit drove lung cancer to become Britain's deadliest malignant epidemic?",
-          "q": "What mass twentieth-century habit drove lung cancer to become Britain's deadliest malignant epidemic?",
+          "question": "What mass twentieth-century habit made lung cancer Britain's deadliest cancer epidemic?",
+          "q": "What mass twentieth-century habit made lung cancer Britain's deadliest cancer epidemic?",
           "options": [
-            "Burning coal tar barrels in streets",
-            "Inhaling carbolic acid in hospitals",
-            "The mass popularity of cigarette smoking",
-            "Working near underground chalk quarries"
+            "Carbolic acid sprays in operating theatres",
+            "Drinking unboiled river water",
+            "Cigarette smoking",
+            "Coal-fire smoke in rural cottages"
           ],
-          "answer": "The mass popularity of cigarette smoking",
-          "a": "The mass popularity of cigarette smoking",
-          "explanation": "Mass cigarette smoking made lung cancer the deadliest malignant cancer epidemic in twentieth-century Britain."
+          "answer": "Cigarette smoking",
+          "a": "Cigarette smoking",
+          "explanation": "The mass popularity of cigarette smoking drove a dramatic twentieth-century rise in fatal lung cancer across Britain."
         },
         {
           "stage": 1,
-          "question": "Why do patients rarely feel early lung cancer tumours expanding inside their chests?",
-          "q": "Why do patients rarely feel early lung cancer tumours expanding inside their chests?",
+          "question": "Why do patients rarely feel early lung cancer tumours growing inside their chests?",
+          "q": "Why do patients rarely feel early lung cancer tumours growing inside their chests?",
           "options": [
-            "Nicotine permanently numbs the spinal cord",
-            "Human lungs possess very few pain receptors inside alveolar tissues",
-            "Rib bones block nerve signals to the brain",
-            "Tumours shrink during the daytime"
+            "Cigarette smoke numbs the spine permanently",
+            "The ribcage blocks nerve signals to the brain",
+            "Early lung tumours only grow during sleep",
+            "Human lungs possess few pain receptors"
           ],
-          "answer": "Human lungs possess very few pain receptors inside alveolar tissues",
-          "a": "Human lungs possess very few pain receptors inside alveolar tissues",
-          "explanation": "Because internal alveolar lung tissue has few pain receptors, early tumours grow silently without pain."
+          "answer": "Human lungs possess few pain receptors",
+          "a": "Human lungs possess few pain receptors",
+          "explanation": "Because human lungs have very few pain receptors, early tumours expand silently for months without causing pain."
         },
         {
           "stage": 1,
-          "question": "What minor everyday complaints do patients often mistake early lung cancer symptoms for?",
-          "q": "What minor everyday complaints do patients often mistake early lung cancer symptoms for?",
+          "question": "What minor everyday symptoms do people often mistake early lung cancer for?",
+          "q": "What minor everyday symptoms do people often mistake early lung cancer for?",
           "options": [
+            "Swollen ankles or aching shins",
+            "Sudden high fever and skin rashes",
             "A harmless smoker's cough or mild breathlessness",
-            "Seasonal winter phlegm or gout",
-            "Mild indigestion or toothache",
-            "Trench fever shin pains"
+            "Toothache or mild indigestion"
           ],
           "answer": "A harmless smoker's cough or mild breathlessness",
           "a": "A harmless smoker's cough or mild breathlessness",
-          "explanation": "Silent asymptomatic growth leads sufferers to dismiss early signs as a routine smoker's cough."
+          "explanation": "Because early lung cancer causes little pain, sufferers often dismiss early signs as an ordinary smoker's cough or mild breathlessness."
         },
         {
           "stage": 1,
-          "question": "What advanced stage has lung cancer usually reached by the time patients cough blood or feel chest pain?",
-          "q": "What advanced stage has lung cancer usually reached by the time patients cough blood or feel chest pain?",
+          "question": "Why is curative surgery usually impossible when lung cancer is only spotted at late Stage 3 or 4?",
+          "q": "Why is curative surgery usually impossible when lung cancer is only spotted at late Stage 3 or 4?",
           "options": [
-            "Curable Stage 1 confined to one cell",
-            "Benign pre-cancerous inflammation",
-            "Reversible bronchial spasm",
-            "Late Stage 3/4 after metastasising to lymph nodes and organs"
+            "The cancer has reached the lymph nodes and other organs",
+            "Hospitals are not legally allowed to operate on smokers",
+            "Anaesthetics stop working in patients over sixty",
+            "CT scanners cannot photograph advanced tumours"
           ],
-          "answer": "Late Stage 3/4 after metastasising to lymph nodes and organs",
-          "a": "Late Stage 3/4 after metastasising to lymph nodes and organs",
-          "explanation": "Late Stage 3/4 detection means cancer has already spread to lymph nodes and distant organs, preventing surgical cure."
+          "answer": "The cancer has reached the lymph nodes and other organs",
+          "a": "The cancer has reached the lymph nodes and other organs",
+          "explanation": "By Stage 3 or 4, cancer cells have already spread to the lymph nodes and other organs, so removing one lung tumour cannot cure it."
         },
         {
           "stage": 2,
-          "question": "Why were conventional flat 2D chest X-rays inadequate for catching early lung cancer?",
-          "q": "Why were conventional flat 2D chest X-rays inadequate for catching early lung cancer?",
+          "question": "Why did standard flat 2D chest X-rays often miss early lung cancer?",
+          "q": "Why did standard flat 2D chest X-rays often miss early lung cancer?",
           "options": [
-            "X-ray beams could not pass through human skin",
+            "X-ray beams could not pass through skin",
             "Glass X-ray plates melted during chest scans",
-            "Small tumours stayed hidden behind heart and ribcage shadows",
-            "Tumours absorbed zero X-rays at any size"
+            "Lung tumours never showed up on any scan",
+            "Small tumours remained hidden behind the heart and ribcage shadows"
           ],
-          "answer": "Small tumours stayed hidden behind heart and ribcage shadows",
-          "a": "Small tumours stayed hidden behind heart and ribcage shadows",
-          "explanation": "Flat 2D chest X-rays missed small nodules concealed behind dense heart and rib shadows."
+          "answer": "Small tumours remained hidden behind the heart and ribcage shadows",
+          "a": "Small tumours remained hidden behind the heart and ribcage shadows",
+          "explanation": "On flat 2D chest X-rays, tiny early lung tumours were easily hidden behind dense shadows of the heart and ribs."
         },
         {
           "stage": 2,
-          "question": "How do high-resolution CT scans detect microscopic lung nodules long before symptoms appear?",
-          "q": "How do high-resolution CT scans detect microscopic lung nodules long before symptoms appear?",
+          "question": "How do modern CT scans spot tiny lung tumours much earlier than old chest X-rays?",
+          "q": "How do modern CT scans spot tiny lung tumours much earlier than old chest X-rays?",
           "options": [
-            "Using magnetic fields without any X-rays",
-            "Rotating around the thorax to assemble hundreds of digital cross-sections",
-            "Sliding a rigid metal tube down the throat",
-            "Testing drops of blood in a centrifuge"
+            "Using magnets without any X-ray beams",
+            "Assembling hundreds of digital cross-sections",
+            "Testing a single drop of blood on paper",
+            "Listening to the chest with a wooden stethoscope"
           ],
-          "answer": "Rotating around the thorax to assemble hundreds of digital cross-sections",
-          "a": "Rotating around the thorax to assemble hundreds of digital cross-sections",
-          "explanation": "Rotating CT scanners build detailed cross-sectional thorax slices that pinpoint tiny early nodules."
+          "answer": "Assembling hundreds of digital cross-sections",
+          "a": "Assembling hundreds of digital cross-sections",
+          "explanation": "CT scanners rotate around the chest to assemble hundreds of detailed 3D cross-section images that reveal tiny tumours early."
         },
         {
           "stage": 2,
-          "question": "What substance is injected during a PET-CT scan to light up fast-growing active cancer cells?",
-          "q": "What substance is injected during a PET-CT scan to light up fast-growing active cancer cells?",
+          "question": "What is injected into a patient before a PET-CT scan to make active cancer cells light up?",
+          "q": "What is injected into a patient before a PET-CT scan to make active cancer cells light up?",
           "options": [
-            "Radioactive glucose tracer",
-            "Methyl violet chemical dye",
-            "Sodium citrate solution",
-            "Barium meal chalk"
+            "Radioactive glucose",
+            "Red Prontosil dye",
+            "Liquid carbolic acid",
+            "Weakened cowpox pus"
           ],
-          "answer": "Radioactive glucose tracer",
-          "a": "Radioactive glucose tracer",
-          "explanation": "Fast-growing cancer cells absorb injected radioactive glucose rapidly, lighting up active tumours on PET-CT scans."
+          "answer": "Radioactive glucose",
+          "a": "Radioactive glucose",
+          "explanation": "Fast-growing cancer cells absorb injected radioactive glucose rapidly, lighting up on a PET-CT scan to show if cancer is spreading."
         },
         {
           "stage": 2,
-          "question": "How do specialists extract lung tumour cells to confirm the exact histological subtype of cancer?",
-          "q": "How do specialists extract lung tumour cells to confirm the exact histological subtype of cancer?",
+          "question": "How do specialists use a bronchoscopy to confirm a lung cancer diagnosis?",
+          "q": "How do specialists use a bronchoscopy to confirm a lung cancer diagnosis?",
           "options": [
-            "Opening the ribcage with steel spreaders",
-            "Testing sputum on solid agar jelly plates",
-            "Taking a 62-hour X-ray diffraction image",
-            "Performing a bronchoscopy and tissue biopsy with a thin flexible camera"
+            "Taking a 62-hour X-ray photograph",
+            "Sliding a thin flexible camera down the airways for a tissue biopsy",
+            "Cutting open the ribcage for exploratory surgery",
+            "Boiling phlegm in a glass swan-neck flask"
           ],
-          "answer": "Performing a bronchoscopy and tissue biopsy with a thin flexible camera",
-          "a": "Performing a bronchoscopy and tissue biopsy with a thin flexible camera",
-          "explanation": "Sliding a flexible bronchoscope down the airways allows specialists to biopsy tumour cells directly."
+          "answer": "Sliding a thin flexible camera down the airways for a tissue biopsy",
+          "a": "Sliding a thin flexible camera down the airways for a tissue biopsy",
+          "explanation": "A thin flexible camera (bronchoscope) is passed down the patient’s airways to collect a tiny sample of tumour cells for testing."
         },
         {
           "stage": 3,
-          "question": "What minimally invasive surgical technique removes a cancerous lung lobe through tiny incisions?",
-          "q": "What minimally invasive surgical technique removes a cancerous lung lobe through tiny incisions?",
+          "question": "What modern surgical method removes early lung tumours through tiny cuts using miniature cameras?",
+          "q": "What modern surgical method removes early lung tumours through tiny cuts using miniature cameras?",
           "options": [
-            "Open-chest rib-spreading thoracotomy",
-            "Tubed pedicle skin grafting",
-            "VATS keyhole lobectomy",
-            "Deep necrotic debridement"
+            "Skin-graft plastic surgery",
+            "Open-heart transplant surgery",
+            "Keyhole surgery",
+            "Bloodletting and purging"
           ],
-          "answer": "VATS keyhole lobectomy",
-          "a": "VATS keyhole lobectomy",
-          "explanation": "Video-assisted keyhole lobectomy removes cancerous lung tissue via tiny incisions with far faster recovery."
+          "answer": "Keyhole surgery",
+          "a": "Keyhole surgery",
+          "explanation": "Using miniature cameras and instruments through tiny incisions (keyhole surgery), surgeons remove lung tumours with far less trauma."
         },
         {
           "stage": 3,
-          "question": "What painful surgical trauma of traditional open thoracotomy does VATS keyhole surgery avoid?",
-          "q": "What painful surgical trauma of traditional open thoracotomy does VATS keyhole surgery avoid?",
+          "question": "Why do patients recover much faster after keyhole lung surgery than after traditional open-chest surgery?",
+          "q": "Why do patients recover much faster after keyhole lung surgery than after traditional open-chest surgery?",
           "options": [
-            "Shaving the patient's head for magnets",
-            "Cutting chest muscles and open-chest rib spreading",
-            "Applying traction with a steel leg frame",
-            "Flushing wounds with bleach tubes"
+            "Patients are treated at home by an apothecary",
+            "Penicillin dissolves the tumour without stitches",
+            "Open-chest rib spreading was avoided",
+            "No anaesthetic is needed during the operation"
           ],
-          "answer": "Cutting chest muscles and open-chest rib spreading",
-          "a": "Cutting chest muscles and open-chest rib spreading",
-          "explanation": "Avoiding open-chest rib spreading dramatically reduces post-operative pain and hospital recovery time."
+          "answer": "Open-chest rib spreading was avoided",
+          "a": "Open-chest rib spreading was avoided",
+          "explanation": "Avoiding cutting through major chest muscles and spreading the ribs open dramatically reduces pain and hospital recovery time."
         },
         {
           "stage": 3,
-          "question": "Which robotic radiotherapy machine treats frail or elderly lung cancer patients without surgery?",
-          "q": "Which robotic radiotherapy machine treats frail or elderly lung cancer patients without surgery?",
+          "question": "Which robotic radiotherapy system treats lung cancer patients who are elderly or too frail for surgery?",
+          "q": "Which robotic radiotherapy system treats lung cancer patients who are elderly or too frail for surgery?",
           "options": [
             "CyberKnife",
-            "The EMI scanner",
-            "The steam autoclave",
+            "The Iron Lung",
+            "The Thomas Splint",
             "The Small Box Respirator"
           ],
           "answer": "CyberKnife",
           "a": "CyberKnife",
-          "explanation": "Robotic CyberKnife radiotherapy delivers non-invasive high-dose treatment for patients unfit for surgery."
+          "explanation": "CyberKnife uses a robotic arm to deliver high-dose radiotherapy without cutting into patients who are too frail for surgery."
         },
         {
           "stage": 3,
-          "question": "How does CyberKnife destroy lung tumours while sparing healthy surrounding lung tissue?",
-          "q": "How does CyberKnife destroy lung tumours while sparing healthy surrounding lung tissue?",
+          "question": "How does CyberKnife radiotherapy destroy a lung tumour while sparing healthy lung tissue around it?",
+          "q": "How does CyberKnife radiotherapy destroy a lung tumour while sparing healthy lung tissue around it?",
           "options": [
-            "Flooding the entire chest cavity with uniform X-rays",
-            "Freezing the lungs with refrigerated glucose",
-            "Heating chest air to 140°C",
-            "Firing pinpoint radiation beams from hundreds of angles while tracking breathing"
+            "Firing targeted beams of high-dose radiation from hundreds of angles while tracking breathing",
+            "Flooding the whole chest equally with low-level X-rays",
+            "Chilling the lungs with ice packs during treatment",
+            "Flushing the lungs with antiseptic saline tubes"
           ],
-          "answer": "Firing pinpoint radiation beams from hundreds of angles while tracking breathing",
-          "a": "Firing pinpoint radiation beams from hundreds of angles while tracking breathing",
-          "explanation": "Tracking breathing in real time lets CyberKnife converge hundreds of pinpoint beams precisely onto the tumour."
+          "answer": "Firing targeted beams of high-dose radiation from hundreds of angles while tracking breathing",
+          "a": "Firing targeted beams of high-dose radiation from hundreds of angles while tracking breathing",
+          "explanation": "By tracking the patient’s breathing and aiming pinpoint beams from hundreds of angles, CyberKnife hits the tumour while sparing healthy tissue."
         },
         {
           "stage": 4,
-          "question": "What genetic test do pathologists run on lung biopsy tissue to personalise modern cancer treatment?",
-          "q": "What genetic test do pathologists run on lung biopsy tissue to personalise modern cancer treatment?",
+          "question": "What 21st-century scientific breakthrough allowed doctors to develop personalised genetic treatments for lung cancer?",
+          "q": "What 21st-century scientific breakthrough allowed doctors to develop personalised genetic treatments for lung cancer?",
           "options": [
-            "ABO blood-group cross-matching",
-            "Pea-plant Mendelian ratios",
-            "Tumour DNA sequencing",
-            "Crystallography diffraction"
+            "Publishing Germ Theory in 1861",
+            "Inventing the first X-ray tube in 1895",
+            "Discovering ABO blood groups in 1901",
+            "Decoding the human genome"
           ],
-          "answer": "Tumour DNA sequencing",
-          "a": "Tumour DNA sequencing",
-          "explanation": "Routine tumour DNA sequencing identifies the exact genetic mutations driving an individual patient's cancer."
+          "answer": "Decoding the human genome",
+          "a": "Decoding the human genome",
+          "explanation": "Decoding the human genome enabled doctors to move beyond one-size-fits-all chemotherapy toward personalised genetic cancer treatments."
         },
         {
           "stage": 4,
-          "question": "Which specific tumour-stimulating genetic mutation is identified through lung tumour DNA sequencing?",
-          "q": "Which specific tumour-stimulating genetic mutation is identified through lung tumour DNA sequencing?",
+          "question": "Why do doctors test the DNA of a patient’s lung tumour biopsy before choosing drug treatment?",
+          "q": "Why do doctors test the DNA of a patient’s lung tumour biopsy before choosing drug treatment?",
           "options": [
-            "BRCA1/2 mutations",
-            "EGFR mutations",
-            "Haemophilia clotting defects",
-            "MRSA resistance genes"
+            "To check which blood group the patient belongs to",
+            "To see if the patient was vaccinated against smallpox",
+            "To test whether penicillin can dissolve the tumour",
+            "To identify specific genetic mutations that stimulate tumour growth"
           ],
-          "answer": "EGFR mutations",
-          "a": "EGFR mutations",
-          "explanation": "Sequencing lung biopsies pinpoints specific mutations such as EGFR so oncologists can tailor drugs."
+          "answer": "To identify specific genetic mutations that stimulate tumour growth",
+          "a": "To identify specific genetic mutations that stimulate tumour growth",
+          "explanation": "Sequencing tumour DNA identifies the specific genetic mutations driving that patient’s cancer so doctors can match targeted drugs."
         },
         {
           "stage": 4,
-          "question": "How do targeted pharmacotherapy drugs halt lung cancer progression?",
-          "q": "How do targeted pharmacotherapy drugs halt lung cancer progression?",
+          "question": "Unlike standard chemotherapy, what is the big advantage of modern targeted cancer drugs?",
+          "q": "Unlike standard chemotherapy, what is the big advantage of modern targeted cancer drugs?",
           "options": [
-            "Blocking the specific molecular proteins feeding the tumour without destroying healthy blood cells",
-            "Killing every dividing cell across the body indiscriminately",
-            "Neutralising stomach acid with alkaline salts",
-            "Dissolving bacterial cell walls like penicillin"
+            "Halting cancer progression without destroying healthy blood cells",
+            "Killing every fast-growing cell across the body equally",
+            "Curing bacterial pneumonia at the same time",
+            "Replacing the need for any diagnostic scans"
           ],
-          "answer": "Blocking the specific molecular proteins feeding the tumour without destroying healthy blood cells",
-          "a": "Blocking the specific molecular proteins feeding the tumour without destroying healthy blood cells",
-          "explanation": "Targeted pharmacotherapy blocks the exact proteins feeding tumour growth while sparing healthy blood cells."
+          "answer": "Halting cancer progression without destroying healthy blood cells",
+          "a": "Halting cancer progression without destroying healthy blood cells",
+          "explanation": "Targeted drugs block the specific proteins feeding the tumour, stopping cancer growth without destroying healthy blood cells."
         },
         {
           "stage": 4,
-          "question": "How does modern targeted immunotherapy help advanced lung cancer patients survive longer?",
-          "q": "How does modern targeted immunotherapy help advanced lung cancer patients survive longer?",
+          "question": "How does modern immunotherapy help treat patients with advanced lung cancer?",
+          "q": "How does modern immunotherapy help treat patients with advanced lung cancer?",
           "options": [
-            "Replacing both lungs with mechanical dialysis pumps",
-            "Sterilising bronchial airways with sulphonamides",
-            "Vaccinating infants with cowpox pus",
-            "Unmasking cancer cells so the patient's own immune system destroys them"
+            "Training the patient's own immune system to identify and destroy malignant tumours",
+            "Replacing damaged lungs with mechanical dialysis machines",
+            "Using arsenic magic bullets to kill bacteria",
+            "Giving patients pure oxygen inside sealed tents"
           ],
-          "answer": "Unmasking cancer cells so the patient's own immune system destroys them",
-          "a": "Unmasking cancer cells so the patient's own immune system destroys them",
-          "explanation": "Immunotherapy unmasks hidden tumour cells, training the patient's immune system to attack malignant growths."
+          "answer": "Training the patient's own immune system to identify and destroy malignant tumours",
+          "a": "Training the patient's own immune system to identify and destroy malignant tumours",
+          "explanation": "Immunotherapy unmasks hidden cancer cells so the patient’s own immune system can recognise and attack the tumour."
         },
         {
           "stage": 5,
-          "question": "What did England's landmark 2007 smoking ban prohibit to prevent lung cancer?",
-          "q": "What did England's landmark 2007 smoking ban prohibit to prevent lung cancer?",
+          "question": "Why did the British government pass anti-smoking laws alongside funding high-tech hospital treatments?",
+          "q": "Why did the British government pass anti-smoking laws alongside funding high-tech hospital treatments?",
           "options": [
-            "Tobacco farming inside Gloucestershire",
-            "Selling matches in supermarkets",
-            "Smoking in all enclosed workplaces, restaurants, and public transport",
-            "Outdoor smoking on coastal beaches"
+            "NHS hospitals stopped offering radiotherapy after 2005",
+            "CT scanners were too large to fit inside city hospitals",
+            "Doctors believed lung cancer was caused by bad air",
+            "Prevention was vastly more effective than attempting to cure advanced disease"
+          ],
+          "answer": "Prevention was vastly more effective than attempting to cure advanced disease",
+          "a": "Prevention was vastly more effective than attempting to cure advanced disease",
+          "explanation": "Because advanced lung cancer remains very hard to cure, preventing people from smoking saves far more lives."
+        },
+        {
+          "stage": 5,
+          "question": "What did England's landmark 2007 smoking ban make illegal?",
+          "q": "What did England's landmark 2007 smoking ban make illegal?",
+          "options": [
+            "Growing tobacco plants anywhere in Britain",
+            "Smoking outdoors in parks and coastal streets",
+            "Selling cigarettes to adults under thirty",
+            "Smoking in all enclosed workplaces, restaurants, and public transport"
           ],
           "answer": "Smoking in all enclosed workplaces, restaurants, and public transport",
           "a": "Smoking in all enclosed workplaces, restaurants, and public transport",
-          "explanation": "The 2007 ban ended smoking in enclosed workplaces, restaurants, and public transport across England."
+          "explanation": "The 2007 law banned smoking in all enclosed workplaces, pubs, restaurants, and public transport, cutting secondhand smoke."
         },
         {
           "stage": 5,
-          "question": "What statutory tobacco measure did Parliament introduce in 2016 to deter new smokers?",
-          "q": "What statutory tobacco measure did Parliament introduce in 2016 to deter new smokers?",
+          "question": "What law did Parliament introduce in 2016 to make cigarette packets less attractive to new smokers?",
+          "q": "What law did Parliament introduce in 2016 to make cigarette packets less attractive to new smokers?",
           "options": [
-            "Rationing cigarettes to two per week",
-            "Standardised plain tobacco packaging in drab olive boxes with graphic warnings",
-            "Raising cigarette tax to £100 per pack",
-            "Banning matches and lighters"
+            "Banning cigarette sales in supermarkets",
+            "Printing doctor prescriptions on every packet",
+            "Standardised plain tobacco packaging covered in graphic health warnings",
+            "Rationing adults to one packet per month"
           ],
-          "answer": "Standardised plain tobacco packaging in drab olive boxes with graphic warnings",
-          "a": "Standardised plain tobacco packaging in drab olive boxes with graphic warnings",
-          "explanation": "Plain packaging laws in 2016 stripped away glamorous branding in favour of drab olive boxes and health warnings."
+          "answer": "Standardised plain tobacco packaging covered in graphic health warnings",
+          "a": "Standardised plain tobacco packaging covered in graphic health warnings",
+          "explanation": "Since 2016, cigarettes must be sold in drab olive plain packaging without brand logos and covered in graphic health warnings."
         },
         {
           "stage": 5,
-          "question": "What proposed statutory law aims to phase out legal tobacco sales to future cohorts altogether?",
-          "q": "What proposed statutory law aims to phase out legal tobacco sales to future cohorts altogether?",
+          "question": "How does the proposed smoke-free generation law aim to stop future generations starting to smoke?",
+          "q": "How does the proposed smoke-free generation law aim to stop future generations starting to smoke?",
           "options": [
-            "The proposed smoke-free generation law raising the legal smoking age annually",
-            "The Permissive Public Health Act",
-            "The Compulsory Lung Screening Act",
-            "The Soft Drinks Industry Levy"
+            "Raising the legal smoking age annually",
+            "Closing all tobacco factories within twelve months",
+            "Making annual CT chest scans compulsory at eighteen",
+            "Doubling National Insurance taxes for smokers"
           ],
-          "answer": "The proposed smoke-free generation law raising the legal smoking age annually",
-          "a": "The proposed smoke-free generation law raising the legal smoking age annually",
-          "explanation": "Raising the legal smoking age each year aims to create a smoke-free generation."
-        },
-        {
-          "stage": 5,
-          "question": "What overarching lesson did government tobacco legislation prove in the fight against lung cancer?",
-          "q": "What overarching lesson did government tobacco legislation prove in the fight against lung cancer?",
-          "options": [
-            "Laissez-faire inaction is the cheapest way to cut cancer",
-            "Keyhole surgery alone can eradicate lung cancer",
-            "Plain packaging cures Stage 4 tumours",
-            "Prevention through government legislation and public health education beat curing advanced disease"
-          ],
-          "answer": "Prevention through government legislation and public health education beat curing advanced disease",
-          "a": "Prevention through government legislation and public health education beat curing advanced disease",
-          "explanation": "Preventing smoking through law and education proved far more effective than treating late-stage lung cancer."
+          "answer": "Raising the legal smoking age annually",
+          "a": "Raising the legal smoking age annually",
+          "explanation": "Raising the legal age of sale by one year every year is designed to create a smoke-free generation."
         }
       ],
       "inquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?",
@@ -32696,63 +32713,63 @@ export default {
         "items": [
           {
             "stage": 1,
-            "question": "What mass twentieth-century habit drove lung cancer to become Britain's deadliest malignant epidemic?",
-            "answer": "The mass popularity of cigarette smoking",
-            "explanation": "Mass cigarette smoking made lung cancer the deadliest malignant cancer epidemic in twentieth-century Britain."
+            "question": "What mass twentieth-century habit made lung cancer Britain's deadliest cancer epidemic?",
+            "answer": "Cigarette smoking",
+            "explanation": "The mass popularity of cigarette smoking drove a dramatic twentieth-century rise in fatal lung cancer across Britain."
           },
           {
             "stage": 2,
-            "question": "Why were conventional flat 2D chest X-rays inadequate for catching early lung cancer?",
-            "answer": "Small tumours stayed hidden behind heart and ribcage shadows",
-            "explanation": "Flat 2D chest X-rays missed small nodules concealed behind dense heart and rib shadows."
+            "question": "Why did standard flat 2D chest X-rays often miss early lung cancer?",
+            "answer": "Small tumours remained hidden behind the heart and ribcage shadows",
+            "explanation": "On flat 2D chest X-rays, tiny early lung tumours were easily hidden behind dense shadows of the heart and ribs."
           },
           {
             "stage": 3,
-            "question": "What minimally invasive surgical technique removes a cancerous lung lobe through tiny incisions?",
-            "answer": "VATS keyhole lobectomy",
-            "explanation": "Video-assisted keyhole lobectomy removes cancerous lung tissue via tiny incisions with far faster recovery."
+            "question": "What modern surgical method removes early lung tumours through tiny cuts using miniature cameras?",
+            "answer": "Keyhole surgery",
+            "explanation": "Using miniature cameras and instruments through tiny incisions (keyhole surgery), surgeons remove lung tumours with far less trauma."
           },
           {
             "stage": 4,
-            "question": "What genetic test do pathologists run on lung biopsy tissue to personalise modern cancer treatment?",
-            "answer": "Tumour DNA sequencing",
-            "explanation": "Routine tumour DNA sequencing identifies the exact genetic mutations driving an individual patient's cancer."
+            "question": "What 21st-century scientific breakthrough allowed doctors to develop personalised genetic treatments for lung cancer?",
+            "answer": "Decoding the human genome",
+            "explanation": "Decoding the human genome enabled doctors to move beyond one-size-fits-all chemotherapy toward personalised genetic cancer treatments."
           },
           {
             "stage": 5,
-            "question": "What did England's landmark 2007 smoking ban prohibit to prevent lung cancer?",
-            "answer": "Smoking in all enclosed workplaces, restaurants, and public transport",
-            "explanation": "The 2007 ban ended smoking in enclosed workplaces, restaurants, and public transport across England."
+            "question": "Why did the British government pass anti-smoking laws alongside funding high-tech hospital treatments?",
+            "answer": "Prevention was vastly more effective than attempting to cure advanced disease",
+            "explanation": "Because advanced lung cancer remains very hard to cure, preventing people from smoking saves far more lives."
           },
           {
             "stage": 1,
-            "question": "Why do patients rarely feel early lung cancer tumours expanding inside their chests?",
-            "answer": "Human lungs possess very few pain receptors inside alveolar tissues",
-            "explanation": "Because internal alveolar lung tissue has few pain receptors, early tumours grow silently without pain."
+            "question": "Why do patients rarely feel early lung cancer tumours growing inside their chests?",
+            "answer": "Human lungs possess few pain receptors",
+            "explanation": "Because human lungs have very few pain receptors, early tumours expand silently for months without causing pain."
           },
           {
             "stage": 2,
-            "question": "How do high-resolution CT scans detect microscopic lung nodules long before symptoms appear?",
-            "answer": "Rotating around the thorax to assemble hundreds of digital cross-sections",
-            "explanation": "Rotating CT scanners build detailed cross-sectional thorax slices that pinpoint tiny early nodules."
+            "question": "How do modern CT scans spot tiny lung tumours much earlier than old chest X-rays?",
+            "answer": "Assembling hundreds of digital cross-sections",
+            "explanation": "CT scanners rotate around the chest to assemble hundreds of detailed 3D cross-section images that reveal tiny tumours early."
           },
           {
             "stage": 3,
-            "question": "What painful surgical trauma of traditional open thoracotomy does VATS keyhole surgery avoid?",
-            "answer": "Cutting chest muscles and open-chest rib spreading",
-            "explanation": "Avoiding open-chest rib spreading dramatically reduces post-operative pain and hospital recovery time."
+            "question": "Why do patients recover much faster after keyhole lung surgery than after traditional open-chest surgery?",
+            "answer": "Open-chest rib spreading was avoided",
+            "explanation": "Avoiding cutting through major chest muscles and spreading the ribs open dramatically reduces pain and hospital recovery time."
           },
           {
             "stage": 4,
-            "question": "Which specific tumour-stimulating genetic mutation is identified through lung tumour DNA sequencing?",
-            "answer": "EGFR mutations",
-            "explanation": "Sequencing lung biopsies pinpoints specific mutations such as EGFR so oncologists can tailor drugs."
+            "question": "Why do doctors test the DNA of a patient’s lung tumour biopsy before choosing drug treatment?",
+            "answer": "To identify specific genetic mutations that stimulate tumour growth",
+            "explanation": "Sequencing tumour DNA identifies the specific genetic mutations driving that patient’s cancer so doctors can match targeted drugs."
           },
           {
             "stage": 5,
-            "question": "What statutory tobacco measure did Parliament introduce in 2016 to deter new smokers?",
-            "answer": "Standardised plain tobacco packaging in drab olive boxes with graphic warnings",
-            "explanation": "Plain packaging laws in 2016 stripped away glamorous branding in favour of drab olive boxes and health warnings."
+            "question": "What did England's landmark 2007 smoking ban make illegal?",
+            "answer": "Smoking in all enclosed workplaces, restaurants, and public transport",
+            "explanation": "The 2007 law banned smoking in all enclosed workplaces, pubs, restaurants, and public transport, cutting secondhand smoke."
           }
         ]
       },
@@ -32976,7 +32993,8 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> In northern France, the ancient city of Arras sat above vast subterranean chalk quarries excavated during the Middle Ages. In late 1916, British and New Zealand tunnelling companies connected these chalk caverns, excavating over eight miles of **Arras underground chalk tunnels** to conceal twenty-five thousand assault troops directly beneath German frontline positions ahead of the planned 1917 offensive.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Within these bombproof chalk caverns, the RAMC constructed a **700-bed underground hospital in Thompson’s Cave**, a subterranean medical station located just eight hundred yards behind the frontline. Powered by generator-driven **electric lighting and piped running water**, the complex contained fully functioning surgical operating theatres, triage wards, and mortuaries, allowing military surgeons to operate safely under intense surface artillery bombardments without interruption.</p>"
           ],
-          "image": "/images/arras_underground_hospital_tonks_1918.jpg"
+          "image": "/images/arras_underground_hospital_tonks_1918.jpg",
+          "caption": "Henry Tonks, An Underground Casualty Clearing Station, Arras (1918, IWM), depicting RAMC surgeons operating inside bombproof chalk cellars beneath Arras."
         },
         {
           "act": 5,
@@ -35886,7 +35904,8 @@ export default {
             "<p><span class=\"para-ref\">[2.1]</span> Compounding battlefield trauma, the agricultural terrain of northern France and Flanders presented a deadly microbiological hazard. For centuries, intense crop farming had enriched the **manured Flanders farmland** with heavy animal fertiliser, saturating the damp clay soil with lethal anaerobic spore-forming bacteria, including Clostridium tetani and Clostridium perfringens, which thrived deep inside oxygen-deprived subterranean mud.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> When shrapnel tore through soldiers' uniforms, it injected manured soil carrying **tetanus and gas gangrene bacilli** deep into torn, blood-deprived muscle pockets. Deprived of oxygen, these microbes multiplied rapidly, producing toxins that caused **anaerobic tissue rotting** and bubbling subcutaneous gas. Gas gangrene destroyed healthy flesh in hours, forcing surgeons to perform radical emergency debridement to prevent fatal systemic blood poisoning.</p>"
           ],
-          "image": "/images/med_stage_gas_gangrene_bacilli.jpg"
+          "image": "/images/med_stage_gas_gangrene_bacilli.jpg",
+          "caption": "Gram-stained photomicrograph of rod-shaped Clostridium perfringens bacteria—the anaerobic microbe in manured Flanders soil that caused lethal gas gangrene."
         },
         {
           "act": 3,
@@ -35956,8 +35975,7 @@ export default {
           "paragraphs": [
             "<p><span class=\"para-ref\">[4.1]</span> In April 1915, during the Second Battle of Ypres, German forces unleashed industrial chemical warfare by releasing cylinders of chlorine gas. The green cloud inflicted **acute chlorine asphyxiation**, reacting with bodily water to form hydrochloric acid that stripped victims' bronchial linings, causing fluid to flood internal airways so soldiers slowly drowned in their own bodily fluids.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Having no protective equipment, Allied troops desperately improvised by pressing **urine-soaked cloth pads** against their faces, using ammonia in urine to neutralise the acidic chlorine vapour. In December 1915, Germany introduced **phosgene gas**, a colourless gas six times more lethal than chlorine that delayed symptoms for forty-eight hours, causing unsuspected lung collapse after casualties returned to frontline trenches.</p>"
-          ],
-          "image": "/images/sargent_gassed_1919.jpg"
+          ]
         },
         {
           "act": 5,
@@ -39071,7 +39089,8 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Despite their clinical brilliance, mobile radiographic units faced severe technical and operational challenges. Fragile equipment was difficult to operate in muddy field conditions, where **overheating glass X-ray tubes** forced operators to pause examinations after several scans to prevent tubes from cracking, severely restricting throughput during major industrial battle offensives with thousands of incoming wounded men arriving from trenches.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> Transporting **fragile radiographic equipment** over shell-pitted roads frequently shattered delicate glass photographic plates. Furthermore, long photographic exposure times created **screening delays under fire**, while X-rays could not depict non-metallic debris like soil, wood splinters, and muddy uniform cloth. Surgeons still had to rely on meticulous manual exploration during debridement to remove organic matter before infection took hold inside damaged muscle.</p>"
           ],
-          "image": "/images/mobile_xray_field_hospital_1917.jpg"
+          "image": "/images/mobile_xray_field_hospital_1917.jpg",
+          "caption": "Wartime radiological tent powered by a mobile X-ray lorry on the Western Front (c. 1915–17), positioning a wounded soldier over an X-ray tube to locate shrapnel."
         }
       ],
       "sources": [
@@ -42999,7 +43018,7 @@ export default {
       "cover_caption": "An Underground Casualty Clearing Station, Arras (1918) by Henry Tonks • Imperial War Museums (IWM ART 1653). Depicts British medical staff and stretcher-bearers treating casualties deep inside the ancient underground chalk quarries of Arras.",
       "author_context": "Sebastian Faulks CBE is a celebrated British novelist and journalist. In his international bestselling historical novel Birdsong (1993), he painstakingly reconstructed the lives of British tunnellers who fought an unseen subterranean war in the chalk sixty feet beneath the trenches of northern France.",
       "is_adapted": true,
-      "extract": "\"Jack Firebrace lay on his side in the damp chalk, sixty feet beneath the surface of northern France. His candle guttered in the heavy, oxygen-starved air. In the gallery, barely four feet high and three feet wide, the only sound was his own slow breathing and the faint, rhythmic scrape of his spade biting into the chalk. Above him, he knew, the Ypres Salient was a churned morass of liquid mud and whistling shrapnel; but down here, in the claustrophobic chill of the tunnels, death came without warning and without noise.<br><br>He reached for the geophone—the twin listening cups attached to wooden sticks pressed hard against the living rock. He closed his eyes and held his breath. For several agonising seconds, there was only the dull subterranean rumble of heavy guns miles away. Then he heard it: a faint, metallic tapping, regular and deliberate. <em>Tink. Tink. Tink.</em> The Germans were counter-mining, driving their own gallery toward them, perhaps less than ten yards through the solid chalk. If they broke through first, or detonated a camouflet mine, the shockwave would collapse the tunnel in an instant, burying them alive in suffocating chalk dust.<br><br>Yet it was this very same chalk that offered salvation. At Arras, miles of ancient underground quarries were being carved into an immense subterranean city—barracks, kitchens, electric lights, and a full seven-hundred-bed hospital, complete with operating theatres, sheltered safe from the deadliest high-explosive bombardments the surface could unleash.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"colour: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Geophone:</strong> An acoustic listening instrument used by military tunnelers to detect underground enemy digging through vibrations in the rock.</li><li><strong>Camouflet:</strong> A subterranean explosive charge designed to collapse an enemy tunnel without breaching the surface ground.</li><li><strong>Chalk Caverns:</strong> Soft, porous limestone layers beneath Arras that permitted extensive underground tunneling, housing a 700-bed hospital safe from artillery shells.</li></ul></div>",
+      "extract": "Jack Firebrace lay on his side in the damp chalk, sixty feet beneath the surface of northern France. His candle guttered in the heavy, oxygen-starved air. In the gallery, barely four feet high and three feet wide, the only sound was his own slow breathing and the faint, rhythmic scrape of his spade biting into the chalk. Above him, he knew, the Ypres Salient was a churned morass of liquid mud and whistling shrapnel; but down here, in the claustrophobic chill of the tunnels, death came without warning and without noise.<br><br>He reached for the geophone—the twin listening cups attached to wooden sticks pressed hard against the living rock. He closed his eyes and held his breath. For several agonising seconds, there was only the dull subterranean rumble of heavy guns miles away. Then he heard it: a faint, metallic tapping, regular and deliberate. <em>Tink. Tink. Tink.</em> The Germans were counter-mining, driving their own gallery toward them, perhaps less than ten yards through the solid chalk. If they broke through first, or detonated a camouflet mine, the shockwave would collapse the tunnel in an instant, burying them alive in suffocating chalk dust.<br><br>Yet it was this very same chalk that offered salvation. At Arras, miles of ancient underground quarries were being carved into an immense subterranean city—barracks, kitchens, electric lights, and a full seven-hundred-bed hospital, complete with operating theatres, sheltered safe from the deadliest high-explosive bombardments the surface could unleash.",
       "hinge_question": "<strong>Think:</strong> Why was the chalk geology of Arras so vital for protecting medical care from artillery bombardments?<br><br><strong>Pair:</strong> Compare the dangers of tunneling underground with fighting in the surface trenches. Which required greater physical and mental endurance?<br><br><strong>Share:</strong> How did subterranean engineering at Arras transform casualty survival during major offensives like April 1917?",
       "vocabVault": [
         {
@@ -43107,7 +43126,9 @@ export default {
       "source_type_label": "Curated Historical Literature",
       "is_primary": false,
       "id": "med_gr_5_1_arras",
-      "title": "KT5.1 Literary Companion: Birdsong (Underground Hospital at Arras)"
+      "title": "KT5.1 Literary Companion: Birdsong (Underground Hospital at Arras)",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Adapted literary companion introducing tunnel warfare beneath the Western Front, inspired by Sebastian Faulks’s Birdsong."
     },
     {
       "lesson_index": 21,
@@ -43120,7 +43141,7 @@ export default {
       "cover_caption": "Soldiers enduring flooded conditions in a frontline trench on the Western Front • Imperial War Museums (IWM Q 51551).",
       "author_context": "Erich Maria Remarque was a German veteran of the First World War who was wounded several times while fighting in the trenches of Flanders. His 1929 novel All Quiet on the Western Front (Im Westen nichts Neues) became the defining anti-war literary masterpiece of the twentieth century.",
       "is_adapted": true,
-      "extract": "\"Killing lice is quite an art when you have whole swarms of them. We sit around stripped to the waist in the warm dugout, with a tin lid from an ammunition box resting over a candle stump. We run the hot flame steadily along the seams of our trousers and tunics. The heat pops the eggs with a sharp little crack, like tiny firecrackers. It is a slow, monotonous business, but if you do not do it twice a day, the itching drives you half out of your mind.<br><br>The louse is the soldier’s constant, faithful companion. You can boil your shirt in a gasoline tin, you can dust yourself with insect powder, but within twelve hours they are back again, swarming in the lining of your waistband. When you scratch, you tear the skin with dirty fingernails, and before long you are running a temperature of a hundred and three, your shins throbbing with an ache so fierce it feels as though someone is splitting the bone with a wedge. That is the trench fever, and it sends more men hobbling down the communication line than the enemy’s snipers.<br><br>Then there is the mud. In Flanders it is not like ordinary earth; it is a living, sucking beast. It clings to your puttees in heavy grey clods until your boots weigh twenty pounds each. If you stand motionless on the fire-step for twelve hours in the freezing slime, your toes turn numb, then white, then purple. By the time the stretcher-bearers cut your wet boots off at the dressing station, the rot has taken hold, and the surgeon reaches for his bone saw.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"colour: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Trench Fever:</strong> A debilitating bacterial infection transmitted by body lice, causing sudden high fever, splitting headaches, and severe shin pain.</li><li><strong>Trench Foot:</strong> Tissue necrosis caused by prolonged immersion in cold water and mud without drying, leading to gangrene and amputation.</li><li><strong>Puttees:</strong> Long woollen strips of cloth wrapped spirally from ankle to knee to protect soldiers' legs from mud and damp.</li></ul></div>",
+      "extract": "Killing lice is quite an art when you have whole swarms of them. We sit around stripped to the waist in the warm dugout, with a tin lid from an ammunition box resting over a candle stump. We run the hot flame steadily along the seams of our trousers and tunics. The heat pops the eggs with a sharp little crack, like tiny firecrackers. It is a slow, monotonous business, but if you do not do it twice a day, the itching drives you half out of your mind.<br><br>The louse is the soldier’s constant, faithful companion. You can boil your shirt in a gasoline tin, you can dust yourself with insect powder, but within twelve hours they are back again, swarming in the lining of your waistband. When you scratch, you tear the skin with dirty fingernails, and before long you are running a temperature of a hundred and three, your shins throbbing with an ache so fierce it feels as though someone is splitting the bone with a wedge. That is the trench fever, and it sends more men hobbling down the communication line than the enemy’s snipers.<br><br>Then there is the mud. In Flanders it is not like ordinary earth; it is a living, sucking beast. It clings to your puttees in heavy grey clods until your boots weigh twenty pounds each. If you stand motionless on the fire-step for twelve hours in the freezing slime, your toes turn numb, then white, then purple. By the time the stretcher-bearers cut your wet boots off at the dressing station, the rot has taken hold, and the surgeon reaches for his bone saw.",
       "hinge_question": "<strong>Think:</strong> According to Remarque, why was the body louse such a dangerous adversary to frontline armies?<br><br><strong>Pair:</strong> Discuss why preventive medical routines (whale oil, buddy foot inspections, steam de-lousing vans) required strict military discipline.<br><br><strong>Share:</strong> How did non-combat environmental illnesses threaten the operational fighting strength of armies as much as enemy artillery?",
       "vocabVault": [
         {
@@ -43228,7 +43249,9 @@ export default {
       "source_type_label": "Classic Anti-War Literature (Adapted)",
       "is_primary": false,
       "id": "med_gr_5_2_trenches",
-      "title": "KT5.2 Literary Companion: All Quiet on the Western Front (Trench Vermin & Mud)"
+      "title": "KT5.2 Literary Companion: All Quiet on the Western Front (Trench Vermin & Mud)",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Adapted literary companion illustrating trench lice, hygiene, and dugout conditions on the Western Front."
     },
     {
       "lesson_index": 22,
@@ -43241,7 +43264,7 @@ export default {
       "cover_caption": "Gassed (1919) by John Singer Sargent • Imperial War Museums (IWM ART 1460).",
       "author_context": "Mary Borden was an American writer and philanthropist who financed, equipped, and directed a frontline French mobile field hospital (Hôpital d’Évacuation) directly behind the lines at the Somme and Ypres. Her 1929 autobiographical sketches provide an unsparing clinical account of surgical trauma and gas gangrene.",
       "is_adapted": true,
-      "extract": "\"The great guns had done their work. They had ripped open the quiet earth of Flanders, and with it, the fragile bodies of men. In the receiving tent, the stretchers lay in rows upon the damp gravel floor. The men did not groan; they were too exhausted, stunned into silence by the monstrous shock of high explosives. Over eighty percent of them had been torn not by clean machine-gun bullets, but by jagged, red-hot fragments of artillery steel that carried with them the soil itself.<br><br>And what soil it was! For centuries, these Flemish meadows had been enriched with heavy manure. The earth was alive with microscopic demons—anaerobic spores that slept in the dark until awakened inside a warm, mangled human limb. By the time a casualty reached our operating table, the wound was already weeping a foul, brownish serum. When the surgeon pressed his fingers gently against the swollen, purplish flesh around the laceration, you could hear it—a terrible, dry crackle, like parchment paper rubbing together under the skin. It was the gas gangrene. The bacteria were literally fermenting the boy’s living muscle into bubbles of poisonous hydrogen sulfide.<br><br>Carbolic acid could not save him. Lister’s nineteenth-century sprays were useless here, for the poison was buried deep in dead tissue where no blood could reach. There was only one hope: the surgeon took up his scalpel and cut without mercy, debriding every scrap of blackened, dying flesh until only bright red, spurting muscle remained. Only then did the Carrel-Dakin tubes begin their work, bathing the open cavity in continuous streams of antiseptic sodium hypochlorite.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"colour: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Gas Gangrene:</strong> A rapid, lethal anaerobic bacterial infection (Clostridium perfringens) that produces foul gas inside dying, oxygen-starved muscle tissue.</li><li><strong>Debridement:</strong> The aggressive surgical cutting away of all dead, contaminated, or infected tissue to prevent the spread of lethal toxins.</li><li><strong>Carrel-Dakin Method:</strong> A continuous wound irrigation system using rubber tubes to flush deep wounds with sterilised sodium hypochlorite solution.</li></ul></div>",
+      "extract": "The great guns had done their work. They had ripped open the quiet earth of Flanders, and with it, the fragile bodies of men. In the receiving tent, the stretchers lay in rows upon the damp gravel floor. The men did not groan; they were too exhausted, stunned into silence by the monstrous shock of high explosives. Over eighty percent of them had been torn not by clean machine-gun bullets, but by jagged, red-hot fragments of artillery steel that carried with them the soil itself.<br><br>And what soil it was! For centuries, these Flemish meadows had been enriched with heavy manure. The earth was alive with microscopic demons—anaerobic spores that slept in the dark until awakened inside a warm, mangled human limb. By the time a casualty reached our operating table, the wound was already weeping a foul, brownish serum. When the surgeon pressed his fingers gently against the swollen, purplish flesh around the laceration, you could hear it—a terrible, dry crackle, like parchment paper rubbing together under the skin. It was the gas gangrene. The bacteria were literally fermenting the boy’s living muscle into bubbles of poisonous hydrogen sulfide.<br><br>Carbolic acid could not save him. Lister’s nineteenth-century sprays were useless here, for the poison was buried deep in dead tissue where no blood could reach. There was only one hope: the surgeon took up his scalpel and cut without mercy, debriding every scrap of blackened, dying flesh until only bright red, spurting muscle remained. Only then did the Carrel-Dakin tubes begin their work, bathing the open cavity in continuous streams of antiseptic sodium hypochlorite.",
       "hinge_question": "<strong>Think:</strong> Why did the manured soil of Flanders make artillery shrapnel wounds significantly more lethal than wounds in previous wars?<br><br><strong>Pair:</strong> Discuss why traditional nineteenth-century antiseptics (carbolic acid) completely failed against anaerobic gas gangrene.<br><br><strong>Share:</strong> How did high-explosive artillery and chemical poison gas fundamentally transform the priorities of frontline trauma surgery?",
       "vocabVault": [
         {
@@ -43349,7 +43372,9 @@ export default {
       "source_type_label": "Eyewitness Frontline Nursing Memoir",
       "is_primary": true,
       "id": "med_gr_5_3_forbidden_zone",
-      "title": "KT5.3 Primary Memoir: The Forbidden Zone (Gas Gangrene & Shrapnel Trauma)"
+      "title": "KT5.3 Primary Memoir: The Forbidden Zone (Gas Gangrene & Shrapnel Trauma)",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Adapted companion grounded in casualty clearing station nursing accounts from Mary Borden’s 1929 memoir The Forbidden Zone."
     },
     {
       "lesson_index": 23,
@@ -43362,7 +43387,7 @@ export default {
       "cover_caption": "The Stretcher Bearer (1919) by Gilbert Rogers • Wellcome Collection.",
       "author_context": "Vera Brittain postponed her Oxford university studies to serve as a Voluntary Aid Detachment (VAD) nurse from 1915 to 1919, serving in London, Malta, and at Base Hospital No. 24 at Étaples during the German Spring Offensive of 1918. Her memoir Testament of Youth is a landmark work of twentieth-century literature.",
       "is_adapted": true,
-      "extract": "\"The ambulance trains came gliding in along the coastal sidings at two or three o’clock in the morning, their long white carriages painted with red crosses ghostly in the dim blue light. When the doors swung open, the smell hit you first—an unforgettable, sickening mixture of chloroform, damp wool, dried blood, and the unmistakable, sweet putrefaction of neglected wounds.<br><br>For days, these boys had travelled down the great human conveyor belt of the Western Front. First had come the stretcher-bearers, stumbling across the cratered wasteland of the Salient with shells bursting on either flank, carrying a dead weight of fourteen stone through mud that sucked at their knees until their shoulders were raw. Then the hurried tourniquet and iodine wash in the candlelit dugout of the Regimental Aid Post; the jolting Ford motor ambulance to the Advanced Dressing Station; and finally, the frantic, assembly-line triage at the Casualty Clearing Station.<br><br>At the CCS, the medical officers made the terrible calculations of war. Those whose wounds were superficial were dressed and marked for immediate return; those with shattered femurs or penetrating abdominal wounds were rushed straight to the operating tables, where surgeons worked in rubber aprons for thirty-six hours without sleep. The hopeless cases—those with half their brains shot away or lungs corroded by phosgene gas—were laid gently on stretchers in the moribund tent, given a dose of morphia, and left to die in peace. Only those stabilised could be loaded aboard our coastal hospital trains, journeying onward toward the Channel ports and the distant promise of home.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"colour: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Chain of Evacuation:</strong> The staged logistics network ferrying casualties from the frontline (RAP) through Dressing Stations and CCS hubs to coastal Base Hospitals.</li><li><strong>Casualty Clearing Station (CCS):</strong> Large surgical field hospitals situated near railway junctions that performed urgent triage and lifesaving operations.</li><li><strong>Triage:</strong> The clinical sorting of wounded men into three priority tiers: walking wounded, immediate surgical emergencies, and moribund (untreatable) cases.</li></ul></div>",
+      "extract": "The ambulance trains came gliding in along the coastal sidings at two or three o’clock in the morning, their long white carriages painted with red crosses ghostly in the dim blue light. When the doors swung open, the smell hit you first—an unforgettable, sickening mixture of chloroform, damp wool, dried blood, and the unmistakable, sweet putrefaction of neglected wounds.<br><br>For days, these boys had travelled down the great human conveyor belt of the Western Front. First had come the stretcher-bearers, stumbling across the cratered wasteland of the Salient with shells bursting on either flank, carrying a dead weight of fourteen stone through mud that sucked at their knees until their shoulders were raw. Then the hurried tourniquet and iodine wash in the candlelit dugout of the Regimental Aid Post; the jolting Ford motor ambulance to the Advanced Dressing Station; and finally, the frantic, assembly-line triage at the Casualty Clearing Station.<br><br>At the CCS, the medical officers made the terrible calculations of war. Those whose wounds were superficial were dressed and marked for immediate return; those with shattered femurs or penetrating abdominal wounds were rushed straight to the operating tables, where surgeons worked in rubber aprons for thirty-six hours without sleep. The hopeless cases—those with half their brains shot away or lungs corroded by phosgene gas—were laid gently on stretchers in the moribund tent, given a dose of morphia, and left to die in peace. Only those stabilised could be loaded aboard our coastal hospital trains, journeying onward toward the Channel ports and the distant promise of home.",
       "hinge_question": "<strong>Think:</strong> What does Vera Brittain mean when she describes the Chain of Evacuation as a \"great human conveyor belt\"?<br><br><strong>Pair:</strong> Discuss the ethical and clinical dilemma faced by RAMC doctors performing three-tier triage during a mass-casualty battle like the Somme.<br><br><strong>Share:</strong> Why was rapid evacuation to a Casualty Clearing Station the decisive factor in determining whether a soldier survived wound infection?",
       "vocabVault": [
         {
@@ -43470,7 +43495,9 @@ export default {
       "source_type_label": "Eyewitness VAD Nursing Memoir",
       "is_primary": true,
       "id": "med_gr_5_4_evacuation",
-      "title": "KT5.4 Primary Memoir: Testament of Youth (The Chain of Evacuation)"
+      "title": "KT5.4 Primary Memoir: Testament of Youth (The Chain of Evacuation)",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Adapted companion grounded in VAD nurse Vera Brittain’s accounts of ambulance trains and base hospitals on the French coast."
     },
     {
       "lesson_index": 24,
@@ -43483,7 +43510,7 @@ export default {
       "cover_caption": "A mobile radiographic car and field operating station on the Western Front, 1917 • Imperial War Museums.",
       "author_context": "Marie Curie, two-time Nobel laureate in Physics and Chemistry, dedicated the war years to equipping twenty mobile field X-ray vehicles ('Petites Curies') and training hundreds of women operators. Sir Robert Jones was the pioneering British orthopaedic surgeon who introduced the Thomas Splint to the Western Front.",
       "is_adapted": true,
-      "extract": "\"In the opening months of the war, a compound fracture of the thigh bone—the femur—was nearly equivalent to a sentence of death. When a high-explosive fragment shattered the massive bone, the powerful thigh muscles contracted in violent, uncontrollable spasms. The jagged bone ends overrode one another, slicing like knives through muscle and severing the femoral artery. During the jolting journey in horse-drawn ambulances over shell-pitted roads, soldiers bled to death internally or died of catastrophic shock. In 1914 and 1915, eighty out of every hundred men who suffered a broken femur never survived.<br><br>Sir Robert Jones recognised that the disaster was mechanical. He revived the forgotten invention of his eccentric Liverpool uncle, Hugh Owen Thomas: a padded oval metal ring fitted against the pelvic bone, welded to two parallel nickel-plated steel rods running down the leg, joined at the foot. By strapping the foot to the frame and pulling it with a simple windlass tourniquet, continuous mechanical traction was applied right in the frontline trench. The jagged bone ends were pulled apart and locked firmly in alignment. By 1916, when the Thomas Splint was made mandatory across the British sector, mortality plummeted from eighty percent to under twenty percent.<br><br>At the very same time, Madame Marie Curie was transforming the surgical tent. Driving her Renault touring car fitted with a dynamo and portable X-ray plates directly into the mud of the field stations, she illuminated what the surgeon’s fingers could not see. Radiographs revealed the exact depth of hidden shrapnel fragments and fragments of muddy cloth, sparing thousands of young soldiers from the surgeon’s blind probes and unnecessary amputations.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"colour: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Thomas Splint:</strong> A rigid metal frame providing continuous traction to align fractured femurs, preventing internal haemorrhaging during transit.</li><li><strong>Compound Fracture:</strong> A severe bone fracture where broken bone fragments pierce the skin, introducing lethal dirt and bacteria.</li><li><strong>Petites Curies:</strong> The fleet of mobile radiological vehicles designed by Marie Curie to transport X-ray equipment directly to frontline surgical units.</li></ul></div>",
+      "extract": "In the opening months of the war, a compound fracture of the thigh bone—the femur—was nearly equivalent to a sentence of death. When a high-explosive fragment shattered the massive bone, the powerful thigh muscles contracted in violent, uncontrollable spasms. The jagged bone ends overrode one another, slicing like knives through muscle and severing the femoral artery. During the jolting journey in horse-drawn ambulances over shell-pitted roads, soldiers bled to death internally or died of catastrophic shock. In 1914 and 1915, eighty out of every hundred men who suffered a broken femur never survived.<br><br>Sir Robert Jones recognised that the disaster was mechanical. He revived the forgotten invention of his eccentric Liverpool uncle, Hugh Owen Thomas: a padded oval metal ring fitted against the pelvic bone, welded to two parallel nickel-plated steel rods running down the leg, joined at the foot. By strapping the foot to the frame and pulling it with a simple windlass tourniquet, continuous mechanical traction was applied right in the frontline trench. The jagged bone ends were pulled apart and locked firmly in alignment. By 1916, when the Thomas Splint was made mandatory across the British sector, mortality plummeted from eighty percent to under twenty percent.<br><br>At the very same time, Madame Marie Curie was transforming the surgical tent. Driving her Renault touring car fitted with a dynamo and portable X-ray plates directly into the mud of the field stations, she illuminated what the surgeon’s fingers could not see. Radiographs revealed the exact depth of hidden shrapnel fragments and fragments of muddy cloth, sparing thousands of young soldiers from the surgeon’s blind probes and unnecessary amputations.",
       "hinge_question": "<strong>Think:</strong> How did a simple, inexpensive metal wire frame save more British soldiers’ lives in 1916 than complex pharmaceutical medicine?<br><br><strong>Pair:</strong> Discuss why locating shrapnel with an X-ray before surgery was so crucial to preventing fatal gas gangrene.<br><br><strong>Share:</strong> What role did civilian scientists and non-military inventors play in driving breakthrough transformations in military surgery?",
       "vocabVault": [
         {
@@ -43591,7 +43618,9 @@ export default {
       "source_type_label": "Pioneering Medical Treatise & Clinical Record",
       "is_primary": true,
       "id": "med_gr_5_5_radiology",
-      "title": "KT5.5 Clinical Treatise: La Radiologie et la Guerre (Mobile X-Rays & The Thomas Splint)"
+      "title": "KT5.5 Clinical Treatise: La Radiologie et la Guerre (Mobile X-Rays & The Thomas Splint)",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Classroom synthesis grounded in wartime surgical reports on the Thomas Splint and Marie Curie’s mobile X-ray units (\"Petites Curies\")."
     },
     {
       "lesson_index": 25,
@@ -43604,7 +43633,7 @@ export default {
       "cover_caption": "Pioneering facial reconstruction by Sir Harold Gillies at The Queen’s Hospital, Sidcup (1917): Petty Officer Walter Yeo before and after the successful transfer of a tubed pedicle flap to reconstruct his eyelids and midface following burns sustained at the Battle of Jutland.",
       "author_context": "Sir Harold Gillies CBE FRCS was a New Zealand-born otolaryngologist and surgeon who established Queen’s Hospital in Sidcup, Kent, in 1917. He is universally recognised as the father of modern plastic surgery. Medical historian Lindsey Fitzharris chronicled his groundbreaking work in The Facemaker (2022).",
       "is_adapted": true,
-      "extract": "\"They were known as 'the loneliest men in the world.' Machine-gun bullets, trench-mortar fragments, and flamethrowers had obliterated their faces—blowing away noses, lower jaws, and eyelids, leaving behind gaping craters of scar tissue and exposed teeth. In England, mirrors were strictly forbidden on hospital wards, and park benches in Sidcup were painted bright blue to warn local residents that a disfigured soldier might be sitting there, sparing both the public and the men the cruelty of terrified stares.<br><br>At Queen’s Hospital, Sidcup, Harold Gillies refused to accept that these men were lost to humanity. Traditional skin grafts almost always failed; when cut from one part of the body and stitched to another, they shrank, died, and rotted for lack of blood circulation. In 1917, while treating twenty-year-old sailor William Vicarage—whose face had been scorched away in the Battle of Jutland—Gillies had a stroke of mechanical genius. He designed the 'Tubed Pedicle.'<br><br>Gillies cut a flap of living skin from the patient’s chest, rolled it into a cylindrical tube with the raw surface inside to ward off infection, and stitched it into place. One end of the tube remained firmly rooted to the chest, ensuring blood continued to pump through its living vessels, while the free end was grafted onto the damaged face. Weeks later, once new capillaries had sprouted into the facial tissue, Gillies severed the chest connection and sculpted a new chin, nose, or lips. Across more than eleven thousand operations, Gillies and his team rebuilt the faces—and the souls—of shattered men, establishing the foundations of modern plastic reconstructive surgery.\"<br><br><div style=\"background: #f8fafc; padding: 15px; border-left: 4px solid #64748b; margin-top: 20px;\"><strong style=\"colour: #334155;\">Glossary</strong><ul style=\"margin-top: 10px; margin-bottom: 0;\"><li><strong>Tubed Pedicle:</strong> A rolled flap of living skin maintaining blood flow from a donor site to protect capillaries while reconstructing facial features.</li><li><strong>Queen's Hospital, Sidcup:</strong> The specialised British military hospital opened in 1917 dedicated exclusively to treating catastrophic facial trauma.</li><li><strong>Blood Depot / Bank:</strong> The refrigerated preservation of blood using sodium citrate and glucose, pioneered by Captain Oswald Robertson at Cambrai in 1917.</li></ul></div>",
+      "extract": "They were known as 'the loneliest men in the world.' Machine-gun bullets, trench-mortar fragments, and flamethrowers had obliterated their faces—blowing away noses, lower jaws, and eyelids, leaving behind gaping craters of scar tissue and exposed teeth. In England, mirrors were strictly forbidden on hospital wards, and park benches in Sidcup were painted bright blue to warn local residents that a disfigured soldier might be sitting there, sparing both the public and the men the cruelty of terrified stares.<br><br>At Queen’s Hospital, Sidcup, Harold Gillies refused to accept that these men were lost to humanity. Traditional skin grafts almost always failed; when cut from one part of the body and stitched to another, they shrank, died, and rotted for lack of blood circulation. In 1917, while treating twenty-year-old sailor William Vicarage—whose face had been scorched away in the Battle of Jutland—Gillies had a stroke of mechanical genius. He designed the 'Tubed Pedicle.'<br><br>Gillies cut a flap of living skin from the patient’s chest, rolled it into a cylindrical tube with the raw surface inside to ward off infection, and stitched it into place. One end of the tube remained firmly rooted to the chest, ensuring blood continued to pump through its living vessels, while the free end was grafted onto the damaged face. Weeks later, once new capillaries had sprouted into the facial tissue, Gillies severed the chest connection and sculpted a new chin, nose, or lips. Across more than eleven thousand operations, Gillies and his team rebuilt the faces—and the souls—of shattered men, establishing the foundations of modern plastic reconstructive surgery.",
       "hinge_question": "<strong>Think:</strong> Why did Harold Gillies need to keep the tubed pedicle connected to the chest while grafting skin to the face?<br><br><strong>Pair:</strong> Discuss the psychological and social stigma of severe facial disfigurement in 1914–1918 compared to the loss of a limb.<br><br><strong>Share:</strong> How did wartime emergency accelerate surgical innovations that would have taken decades to develop during peacetime?",
       "vocabVault": [
         {
@@ -43712,7 +43741,9 @@ export default {
       "source_type_label": "Archival Case Record & Historical Scholarship",
       "is_primary": false,
       "id": "med_gr_5_6_sidcup",
-      "title": "KT5.6 Clinical Scholarship: Plastic Surgery of the Face (Harold Gillies at Sidcup)"
+      "title": "KT5.6 Clinical Scholarship: Plastic Surgery of the Face (Harold Gillies at Sidcup)",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Classroom synthesis grounded in Sir Harold Gillies’s Queen’s Hospital Sidcup case records and modern medical historiography."
     }
   ],
   "timelineEvents": [

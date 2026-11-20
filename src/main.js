@@ -3,7 +3,6 @@
  * Coordinates Authentication, Storage, Layout Binding, and Navigation routing.
  */
 
-import { initAuth } from './auth.js';
 import { initData } from './storage.js';
 import { bindEvents } from './layout.js';
 import { switchView, initNavigationUI } from './navigation.js';
@@ -19,11 +18,11 @@ import {
   openKeywordSearch,
   highlightTargetKeywordInLesson,
 } from './keyword_search.js';
-import './langemarck_myth.js';
+import('./langemarck_myth.js');
 import('./digital_textbook_reader.js');
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
-import './infographic_viewer.js';
-import './engine/ks2_guidance.js';
+import('./infographic_viewer.js');
+import('./engine/ks2_guidance.js');
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
 
 function purgeGDPRHistoricalCache() {
@@ -294,7 +293,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   window.switchView = switchView;
   window.state = state;
 
-  initAuth();
   initData();
 
   try {
@@ -420,12 +418,6 @@ window.addEventListener('DOMContentLoaded', async () => {
       normView = 'masterpiece';
     } else if (normView === 'textbook-reader') {
       normView = 'reader';
-    } else if (
-      normView === 'ai-prompt-craft' ||
-      normView === 'prompt-craft' ||
-      normView === 'ai-lesson'
-    ) {
-      normView = 'ai-prompt-craft';
     } else if (!normView && normUnit) {
       normView = 'lessons';
     } else if (!normView) {

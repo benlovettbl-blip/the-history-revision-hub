@@ -5,7 +5,6 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp } from '../../storage.js';
 
 export function mountConnectionsWall(stageEl, pools, ctx) {
   const boards = pools.connectionsBoards || [];
@@ -89,7 +88,6 @@ export function mountConnectionsWall(stageEl, pools, ctx) {
         arcadeAudio.levelUp();
         const { best } = saveArcadePersonalBest(ctx.unitId, 'connections', ctx.scope, score);
         pb = best;
-        addXp(80, 'Connections Wall Cleared');
       }
       render();
       return;

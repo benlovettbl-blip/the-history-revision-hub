@@ -41,7 +41,9 @@ export default {
       "role": "Constitutional Suffragist",
       "image": "/images/post_war_britain/millicent_fawcett_portrait.jpg",
       "significance": "Leader of the peaceful Suffragist movement who built a democratic federation of over 50,000 members, arguing that moral persuasion, petitions, and constitutional patience would win female enfranchisement.",
-      "actions": "United regional suffrage groups into the NUWSS in 1897; lobbied Members of Parliament; mobilised peaceful mass demonstrations; lived to see full equal voting rights in 1928."
+      "actions": "United regional suffrage groups into the NUWSS in 1897; lobbied Members of Parliament; mobilised peaceful mass demonstrations; lived to see full equal voting rights in 1928.",
+      "lifespan": "1847 – 1929",
+      "entity_type": "person"
     },
     {
       "name": "Emmeline Pankhurst",
@@ -50,7 +52,9 @@ export default {
       "role": "Militant Suffragette Leader",
       "image": "/images/post_war_britain/pankhurst_arrest_1914.jpg",
       "significance": "Radical pioneer of militant direct action who coined the motto 'Deeds, not words', leading Suffragettes in civil disobedience, window-smashing, hunger strikes, and political disruption.",
-      "actions": "Founded the WSPU in Manchester in 1903; directed nationwide direct action campaigns; endured repeated imprisonments and hunger strikes under the Cat and Mouse Act."
+      "actions": "Founded the WSPU in Manchester in 1903; directed nationwide direct action campaigns; endured repeated imprisonments and hunger strikes under the Cat and Mouse Act.",
+      "lifespan": "1858 – 1928",
+      "entity_type": "person"
     },
     {
       "name": "Sir William Beveridge",
@@ -59,7 +63,9 @@ export default {
       "role": "Welfare State Architect",
       "image": "/images/post_war_britain/william_beveridge_portrait.jpg",
       "significance": "Authored the revolutionary 1942 Beveridge Report, which identified the 'Five Giants' and created the blueprint for Britain's comprehensive welfare state 'from the cradle to the grave'.",
-      "actions": "Chaired the Inter-Departmental Committee on Social Insurance (1941–1942); authored Command Paper 6404; proposed universal national insurance, child allowances, and a free national health service."
+      "actions": "Chaired the Inter-Departmental Committee on Social Insurance (1941–1942); authored Command Paper 6404; proposed universal national insurance, child allowances, and a free national health service.",
+      "lifespan": "1879 – 1963",
+      "entity_type": "person"
     },
     {
       "name": "Aneurin 'Nye' Bevan",
@@ -68,7 +74,9 @@ export default {
       "role": "Founder of the NHS",
       "image": "/images/bevan_first_day_nhs_1948.jpg",
       "significance": "Passionate Welsh socialist and orator who established the National Health Service in 1948, overcoming fierce medical opposition to make healthcare completely free at the point of delivery.",
-      "actions": "Drafted the National Health Service Act 1946; negotiated compromises with the British Medical Association; officially opened Park Hospital, Davyhulme on 5 July 1948."
+      "actions": "Drafted the National Health Service Act 1946; negotiated compromises with the British Medical Association; officially opened Park Hospital, Davyhulme on 5 July 1948.",
+      "lifespan": "1897 – 1960",
+      "entity_type": "person"
     },
     {
       "name": "Claudia Jones",
@@ -77,25 +85,31 @@ export default {
       "role": "Civil Rights & Cultural Leader",
       "image": "/images/post_war_britain/claudia_jones_portrait.jpg",
       "significance": "Trinidadian-born communist and anti-racism campaigner who founded Britain's first major Black newspaper, the West Indian Gazette, and pioneered the indoor Caribbean Carnival that grew into Notting Hill Carnival.",
-      "actions": "Exiled from the US to Britain in 1955; founded the West Indian Gazette in 1958; organised the historic St Pancras Town Hall Carnival in January 1959 to heal community divisions after the Notting Hill riots."
+      "actions": "Exiled from the US to Britain in 1955; founded the West Indian Gazette in 1958; organised the historic St Pancras Town Hall Carnival in January 1959 to heal community divisions after the Notting Hill riots.",
+      "lifespan": "1915 – 1964",
+      "entity_type": "person"
     },
     {
       "name": "Paul Stephenson OBE",
       "dates": "1937 – 2024",
       "title": "Civil Rights Pioneer & Community Leader",
       "role": "Bristol Bus Boycott Leader",
-      "image": "/images/post_war_britain/bristol_bus_boycott_plaque.jpg",
+      "image": "",
       "significance": "Youth worker who spearheaded the 1963 Bristol Bus Boycott using non-violent direct action inspired by Rosa Parks and Martin Luther King, forcing the defeat of the company's colour bar and inspiring the Race Relations Acts.",
-      "actions": "Co-founded the West Indian Development Council; organised the test case with Guy Bailey; led the 1963 Bristol bus boycott; staged the 1964 Bay Horse pub sit-in."
+      "actions": "Co-founded the West Indian Development Council; organised the test case with Guy Bailey; led the 1963 Bristol bus boycott; staged the 1964 Bay Horse pub sit-in.",
+      "lifespan": "1937 – 2024",
+      "entity_type": "person"
     },
     {
       "name": "Bertrand Russell",
       "dates": "1872 – 1970",
       "title": "Philosopher, Mathematician & Peace Campaigner",
       "role": "Anti-Nuclear Leader",
-      "image": "/images/post_war_britain/cnd_symbol_design.png",
+      "image": "/images/portraits/bertrand_russell_1936.jpg",
       "significance": "Renowned philosopher and Nobel laureate who served as the founding president of the Campaign for Nuclear Disarmament (CND) and Committee of 100, championing mass civil disobedience against nuclear war.",
-      "actions": "Co-authored the 1955 Russell-Einstein Manifesto; founded CND in February 1958; led sit-down protests in Trafalgar Square; imprisoned at age 89 for anti-nuclear agitation."
+      "actions": "Co-authored the 1955 Russell-Einstein Manifesto; founded CND in February 1958; led sit-down protests in Trafalgar Square; imprisoned at age 89 for anti-nuclear agitation.",
+      "lifespan": "1872 – 1970",
+      "entity_type": "person"
     }
   ],
   "terminology": [
@@ -540,7 +554,8 @@ export default {
           "id": "pwb_l1_src_a",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918."
         },
         {
           "letter": "B",
@@ -558,7 +573,8 @@ export default {
             "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
           },
           "id": "pwb_l1_src_b",
-          "type": "visual"
+          "type": "visual",
+          "context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914."
         },
         {
           "letter": "C",
@@ -576,7 +592,8 @@ export default {
             "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
           },
           "id": "pwb_l1_src_c",
-          "type": "visual"
+          "type": "visual",
+          "context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912."
         },
         {
           "letter": "D",
@@ -594,7 +611,8 @@ export default {
             "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
           },
           "id": "pwb_l1_src_d",
-          "type": "visual"
+          "type": "visual",
+          "context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest."
         },
         {
           "letter": "E",
@@ -658,7 +676,66 @@ export default {
             "question": "Could women have won the vote in 1918 without their wartime work in munitions factories?"
           }
         ],
-        "source_context": "Source A captures the dramatic physical arrest of Emmeline Pankhurst outside Buckingham Palace in May 1914. Source B presents the WSPU's iconic 'Cat and Mouse Act' poster depicting the Liberal government as a predatory cat. Source C provides physical material evidence of the silver Hunger Strike Medal awarded to Helen MacRae for enduring force-feeding. Source D shows Arthur Wallis Mills' 1910 Punch cartoon satirising suffragette jiu-jitsu self-defence training. Source E records Millicent Fawcett's triumphant reflections on the passage of the 1918 Act. **Hinge Question:** Which factor was more decisive in securing the 1918 Representation of the People Act: the militant headlines of the Suffragettes, the moral persistence of the Suffragists, or the undeniable contribution of female workers to the First World War?"
+        "source_context": {
+          "Source A": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+          "Source B": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+          "Source C": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+          "Source D": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+          "Source E": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving foundational prior knowledge (nineteenth-century parliamentary reform (1832–1884), Victorian separate-spheres gender expectations, and industrial campaigning—strictly zero self-testing of today's new content)."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Constitutional Campaign: Millicent Fawcett & The NUWSS\", \"'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action\", and \"Prison Brutality, Hunger Strikes & The Cat and Mouse Act\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Millicent Garrett Fawcett Reflects on Constitutional…) and Source B (The Arrest of Emmeline Pankhurst Outside Buckingham…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Constitutional Campaign: Millicent Fawcett & The NUWSS\" → \"Prison Brutality, Hunger Strikes & The Cat and Mouse Act\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Suffragette Bodyguard: Edith Garrud & The Jiu-Jitsu Defense\" and \"Total War Mobilisation, Munitions Work & The 1918 Victory\") to complete the Verso spine, then interrogate Source C (Silver WSPU Hunger Strike Medal Awarded to Helen…), Source D (Arthur Wallis Mills, \"The Suffragette That Knew…), Source E (The Representation of the People Act 1918 (7 & 8 Geo.…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Were the Suffragists or Suffragettes more effective in securing the vote?",
@@ -726,9 +803,9 @@ export default {
         {
           "id": "pwb_l1_explain_why_suffrage_1918",
           "type": "extended_writing",
-          "tariff": "Question 2: Explain Why [12 marks • 15 mins]",
-          "title": "Question 2: Explain Why [12 marks • 15 mins]",
-          "question": "Explain why British women over the age of thirty were granted the parliamentary vote in 1918. [12 marks]",
+          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "question": "Explain why British women over the age of thirty were granted the parliamentary vote in 1918.",
           "stimulus": [
             "The pre-war campaigning of the Suffragists (NUWSS) and Suffragettes (WSPU)",
             "Women’s industrial, agricultural, and munitions work during the First World War"
@@ -775,7 +852,7 @@ export default {
             ]
           },
           "model_answer": "A primary reason British women over thirty were granted the vote in 1918 was their indispensable contribution to the war effort during the First World War. Between 1914 and 1918, over one million women entered the workforce, taking on vital roles in munitions factories, public transport, agriculture (Women's Land Army), and frontline nursing. By keeping the wartime economy alive and manufacturing the artillery shells that sustained the Western Front, women definitively dismantled the anti-suffrage argument that they lacked the physical and civic capability for parliamentary responsibility.<br><br>Furthermore, the government feared a resurgence of pre-war Suffragette militancy if electoral reform excluded women. Before 1914, Emmeline Pankhurst’s WSPU had waged an escalating campaign of arson, window-smashing, and hunger strikes. When Parliament was forced to pass the 1918 Representation of the People Act to enfranchise working-class soldiers who had lost their voting qualifications through overseas military service, politicians recognized that failing to include women would provoke immediate, violent unrest.<br><br>Finally, decades of disciplined, constitutional lobbying by Millicent Fawcett’s NUWSS (Suffragists) had already established strong cross-party parliamentary alliances. The war allowed politicians who had previously opposed women's suffrage to reverse their stance without appearing to surrender to militant violence.",
-          "topic": "Question 2: Explain Why [12 marks • 15 mins]"
+          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)"
         }
       ],
       "quiz": [
@@ -1736,7 +1813,8 @@ export default {
             "1913 law releasing weak hunger strikers then re-arresting them later."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "To end centuries of female [Disenfranchisement] and win parliamentary [Suffrage], Millicent Fawcett’s NUWSS campaigned peacefully while Emmeline Pankhurst’s Suffragettes turned to [Civil Disobedience] and property-breaking [Militancy]. Hunger strikes and Emily Davison’s 1913 [Martyrdom] kept reform in the headlines, before women’s vital First World War munitions work helped secure the 1918 [Franchise] for women over thirty."
     },
     {
       "id": "lesson_2",
@@ -2135,7 +2213,8 @@ export default {
             "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
           },
           "id": "pwb_l2_src_b",
-          "type": "visual"
+          "type": "visual",
+          "context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller."
         },
         {
           "letter": "C",
@@ -2155,7 +2234,8 @@ export default {
           "teacher_notes": {
             "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
           },
-          "id": "pwb_l2_src_c"
+          "id": "pwb_l2_src_c",
+          "context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945."
         },
         {
           "letter": "D",
@@ -2173,7 +2253,8 @@ export default {
           "id": "pwb_l2_src_d",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946."
         },
         {
           "letter": "E",
@@ -2191,7 +2272,8 @@ export default {
             "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
           },
           "id": "pwb_l2_src_e",
-          "type": "visual"
+          "type": "visual",
+          "context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients."
         }
       ],
       "comprehension": [
@@ -2235,7 +2317,66 @@ export default {
             "question": "How did Bevan's pragmatic concessions preserve private practice while securing universal free healthcare?"
           }
         ],
-        "source_context": "Source A displays the official title page of the 1942 Beveridge Report (Cmd. 6404). Source B shows Prime Minister Clement Attlee outside 10 Downing Street after Labour's 1945 landslide victory. Source C provides material evidence through 1948 free NHS spectacles of the huge demand for healthcare. Source D records Aneurin Bevan's passionate House of Commons speech on healthcare as a fundamental human right. Source E presents the BMA's February 1948 resolution threatening a doctor boycott. **Hinge Question:** Why did the founding of the NHS in 1948 represent a revolutionary break from pre-war British social policy?"
+        "source_context": {
+          "Source A": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+          "Source B": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+          "Source C": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+          "Source D": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+          "Source E": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Votes for Women: Were the Suffragists or Suffragettes more effective in securing the vote?\": The Constitutional Campaign: Millicent Fawcett & The NUWSS, 'Deeds, Not Words': Emmeline Pankhurst & WSPU Direct Action, Prison Brutality, Hunger Strikes & The Cat and Mouse Act) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Total War, Evacuation & Shared Social Transformation\", \"Slaying the Five Giants: William Beveridge & The Blueprint for Welfare\", and \"The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem'\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Ministry of Health Circular on Operation Pied Piper &…) and Source B (Title Page of the Landmark Beveridge Report (November…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"How did the shared suffering of total war create the political consensus needed to build a universal welfare state?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Total War, Evacuation & Shared Social Transformation\" → \"The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem'\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Aneurin Bevan & The NHS Act: Healthcare as a Human Right\" and \"'The Appointed Day': Overcoming the BMA & The Reality of Free Care\") to complete the Verso spine, then interrogate Source C (Prime Minister Clement Attlee Following the 1945…), Source D (Aneurin Bevan on the Moral Foundation of the NHS (1946)), Source E (Free NHS Cellulose Acetate Spectacles (1948)) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Short Historical Focus • Two Key Features (2 Sentences • 5 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Why did the experience of total war lead directly to the creation of the Welfare State?",
@@ -2303,9 +2444,9 @@ export default {
         {
           "id": "pwb_l2_two_features_beveridge",
           "type": "two_features",
-          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "title": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "question": "Describe two features of the 1942 Beveridge Report on Social Insurance. [4 marks]",
+          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "question": "Describe two features of the 1942 Beveridge Report on Social Insurance.",
           "feature_1": {
             "prompt": "Feature 1: Identify the \"Five Giants\" or the principle of comprehensive universal protection.",
             "starter": "One key feature was... For instance, the report aimed to slay...",
@@ -2316,16 +2457,16 @@ export default {
             "starter": "A second key feature was... Specifically, all workers paid...",
             "model": "A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "topic": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
           "model_answer": "One key feature was the ambition to slay the \"Five Giants\" of Want, Disease, Ignorance, Squalor, and Idleness [2.2]. For instance, Sir William Beveridge proposed a comprehensive welfare safety net protecting all citizens \"from the cradle to the grave\". A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test.",
           "model": "One key feature was the ambition to slay the \"Five Giants\" of Want, Disease, Ignorance, Squalor, and Idleness [2.2]. For instance, Sir William Beveridge proposed a comprehensive welfare safety net protecting all citizens \"from the cradle to the grave\". A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test."
         },
         {
           "id": "pwb_l2_consequence_nhs_creation",
           "type": "extended_writing",
-          "tariff": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "title": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "question": "Explain one consequence of the creation of the National Health Service on 5 July 1948 for working-class health in Britain. [4 marks]",
+          "tariff": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "title": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "question": "Explain one consequence of the creation of the National Health Service on 5 July 1948 for working-class health in Britain.",
           "hints": [
             "Point: Explain how Minister of Health Aneurin Bevan established healthcare free at the point of delivery based on clinical need, not ability to pay [2.4, 2.5].",
             "Evidence: Cite the millions of free prescriptions, glasses, and dental treatments issued in the first year and the dramatic drop in infant mortality.",
@@ -2362,7 +2503,7 @@ export default {
             ]
           },
           "model_answer": "One consequence of the creation of the National Health Service on 5 July 1948 was the elimination of the financial barrier to medical care for working-class families, establishing universal healthcare free at the point of delivery based on clinical need rather than ability to pay. Specifically, millions of working-class citizens who had previously delayed seeing a doctor due to the terror of medical bills immediately accessed treatment, with over 187 million prescriptions dispensed and millions of pairs of free spectacles and dental dentures fitted in the first year alone. This transformed public health, dramatically reducing infant and maternal mortality and eliminating untreated chronic infections across industrial Britain.",
-          "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]"
+          "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)"
         }
       ],
       "quiz": [
@@ -3324,7 +3465,8 @@ export default {
             "Medical treatment provided free to everyone at the point of need."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "Amidst severe post-war [Austerity], William Beveridge’s bestselling 1942 [Beveridge Report] inspired Clement Attlee’s 1945 Labour government to build Britain’s cradle-to-grave [Welfare State]. Alongside coal and railway [Nationalisation] and expanded [Social Security] benefits, Health Minister Aneurin Bevan launched the National Health Service on 5 July 1948, guaranteeing tax-funded [Universal Healthcare] free at the point of need."
     },
     {
       "id": "lesson_3",
@@ -3697,7 +3839,8 @@ export default {
           "id": "pwb_l3_src_a",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "The statutory text of the British Nationality Act 1948 passed by Parliament."
         },
         {
           "letter": "B",
@@ -3715,7 +3858,8 @@ export default {
             "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
           },
           "id": "pwb_l3_src_b",
-          "type": "visual"
+          "type": "visual",
+          "context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237)."
         },
         {
           "letter": "C",
@@ -3733,7 +3877,8 @@ export default {
             "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
           },
           "id": "pwb_l3_src_c",
-          "type": "visual"
+          "type": "visual",
+          "context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948."
         },
         {
           "letter": "D",
@@ -3751,7 +3896,8 @@ export default {
           "id": "pwb_l3_src_d",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948."
         },
         {
           "letter": "E",
@@ -3769,7 +3915,8 @@ export default {
           "id": "pwb_l3_src_e",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959."
         }
       ],
       "comprehension": [
@@ -3813,7 +3960,66 @@ export default {
             "question": "Why did Claudia Jones view cultural celebration through Carnival as an effective weapon against racial violence?"
           }
         ],
-        "source_context": "Source A displays the official Board of Trade passenger manifest for the HMT Empire Windrush (BT 26/1237). Source B shows young calypsonian Lord Kitchener, author of 'London is the Place for Me'. Source C gives the statutory text of the British Nationality Act 1948. Source D provides oral history evidence from Alford Gardner of the rental colour bar. Source E contains Claudia Jones's inspiring editorial launching the 1959 Caribbean Carnival. **Hinge Question:** Why did the arrival of the Windrush Generation trigger an enduring struggle over what it meant to be 'British' in the post-war world?"
+        "source_context": {
+          "Source A": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+          "Source B": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+          "Source C": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+          "Source D": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+          "Source E": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"1945: How did the aftermath of total war build the Welfare State and the NHS?\": Total War, Evacuation & Shared Social Transformation, Slaying the Five Giants: William Beveridge & The Blueprint for Welfare, The 1945 Labour Landslide: Clement Attlee & 'The New Jerusalem') alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Post-War Reconstruction & Industrial Labour Shortages\", \"Imperial Citizens: The British Nationality Act 1948 & Statutory Rights\", and \"22 June 1948: HMT Empire Windrush Docks at Tilbury\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (The British Nationality Act 1948 (11 & 12 Geo. 6, c. 56)) and Source B (Passenger Manifest for HMT Empire Windrush (22 June…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Post-War Reconstruction & Industrial Labour Shortages\" → \"22 June 1948: HMT Empire Windrush Docks at Tilbury\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"'No Blacks, No Irish, No Dogs': The Informal Colour Bar & Exploitation\" and \"The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival\") to complete the Verso spine, then interrogate Source C (Calypsonian Lord Kitchener (Aldwyn Roberts) at…), Source D (Firsthand Account of the \"Colour Bar\" in 1950s…), Source E (Claudia Jones Launches the Caribbean Carnival in…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Was Britain welcoming to the Windrush Generation?",
@@ -3881,9 +4087,9 @@ export default {
         {
           "id": "pwb_l3_contrasting_interpretations",
           "type": "historical_interpretations",
-          "tariff": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
-          "title": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
-          "question": "Explain how Interpretations 1 and 2 differ on the reception faced by the Windrush Generation in post-war Britain and suggest why they reach contrasting conclusions. [8 marks]",
+          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
+          "title": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
+          "question": "Explain how Interpretations 1 and 2 differ on the reception faced by the Windrush Generation in post-war Britain and suggest why they reach contrasting conclusions.",
           "interpretation_1": {
             "author": "Official Government Narrative / Newsreel (1948)",
             "work": "Pathé News Report: \"Welcome to Britain\"",
@@ -3897,14 +4103,14 @@ export default {
             "text": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence."
           },
           "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]",
+            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations.",
             "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\"."
           },
           "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer. [4 marks]",
+            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer.",
             "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations."
           },
-          "topic": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
+          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
           "interp1": {
             "author": "Official Government Narrative / Newsreel (1948)",
             "work": "Pathé News Report: \"Welcome to Britain\"",
@@ -4910,7 +5116,8 @@ export default {
             "Community savings club where Caribbean families pooled cash for homes."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "Facing acute post-war labour shortages, Parliament passed the 1948 [British Nationality Act] confirming the right of citizens across the [Commonwealth] to live and work in Britain. Pioneers arriving aboard HMT Empire Windrush began post-war Caribbean [Migration], yet encountered a hostile [Colour Bar] in housing and jobs alongside racist calls for [Repatriation]—met with cultural pride rather than quiet [Assimilation]."
     },
     {
       "id": "lesson_4",
@@ -5287,7 +5494,8 @@ export default {
           "id": "pwb_l4_src_a",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963."
         },
         {
           "letter": "B",
@@ -5325,7 +5533,8 @@ export default {
             "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
           },
           "id": "pwb_l4_src_c",
-          "type": "visual"
+          "type": "visual",
+          "context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963."
         },
         {
           "letter": "D",
@@ -5343,7 +5552,8 @@ export default {
             "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
           },
           "id": "pwb_l4_src_d",
-          "type": "visual"
+          "type": "visual",
+          "context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned."
         },
         {
           "letter": "E",
@@ -5361,7 +5571,8 @@ export default {
           "id": "pwb_l4_src_e",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination."
         }
       ],
       "comprehension": [
@@ -5405,7 +5616,13 @@ export default {
             "question": "Why did the Bristol Bus Boycott convince Harold Wilson's government that legal legislation was essential to protect racial equality?"
           }
         ],
-        "source_context": "Source A captures University of Bristol students marching with 'Boycott the Buses' placards in May 1963. Source B depicts Bristol South East MP Tony Benn, who boycotted the company. Source C shows Prime Minister Harold Wilson, who enacted the Race Relations Acts. Source D records company manager Ian Patey defending the colour bar. Source E contains the statutory text of the 1965 Race Relations Act. **Hinge Question:** Why did the victory of the Bristol Bus Boycott prove that private commercial companies would not abandon racial prejudice without statutory legal compulsion?",
+        "source_context": {
+          "Source A": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+          "Source B": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+          "Source C": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+          "Source D": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+          "Source E": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
+        },
         "delivery_plan": {
           "format": "2-Lesson Enquiry Sequence (2x 50 mins) or 100-min Double Period",
           "lesson_1": {
@@ -5516,9 +5733,9 @@ export default {
         {
           "id": "pwb_l4_narrative_account_bus_boycott",
           "type": "narrative_account",
-          "tariff": "Question 1: Narrative Account [8 marks • 10 mins]",
-          "title": "Question 1: Narrative Account [8 marks • 10 mins]",
-          "question": "Write a narrative account analysing how the 1963 Bristol Bus Boycott led to the defeat of the company's colour bar. [8 marks]",
+          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "question": "Write a narrative account analysing how the 1963 Bristol Bus Boycott led to the defeat of the company's colour bar.",
           "hints": [
             "Beginning (April 1963): Bristol Omnibus Company enforcing an open colour bar refusing to employ Black and Asian bus drivers and conductors [4.1, 4.2].",
             "Middle (May–July 1963): Paul Stephenson, Roy Hackett, and the West Indian Development Council launching a 60-day boycott inspired by Rosa Parks [4.3].",
@@ -5557,7 +5774,7 @@ export default {
             ]
           },
           "model_answer": "Initially, in April 1963, 18-year-old student Guy Bailey was refused a job interview by the Bristol Omnibus Company because of their strict \"colour bar\" ban on employing Black and Asian crews. Outraged by this blatant racial discrimination, civil rights leaders Paul Stephenson, Roy Hackett, and the West Indian Development Council launched a total boycott of the city's bus network.<br><br>As a result, the boycott gained massive public momentum, attracting national media coverage and active solidarity from Bristol University students, local churches, and prominent politicians including Bristol South MP Tony Benn and Labour leader Harold Wilson. For four months, thousands of West Indian and white supporters refused to use municipal transport, causing significant revenue loss and severe moral embarrassment to the transport company.<br><br>Finally, on 28 August 1963—the same day Martin Luther King delivered his \"I Have a Dream\" speech in Washington—the Transport and General Workers' Union voted to abolish the colour bar, with the company hiring its first non-white conductor, Raghbir Singh, in September. This landmark victory demonstrated the power of peaceful direct action and directly pressured Harold Wilson's government into enacting Britain's first anti-discrimination law, the Race Relations Act of 1965.",
-          "topic": "Question 1: Narrative Account [8 marks • 10 mins]"
+          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)"
         }
       ],
       "quiz": [
@@ -6520,7 +6737,8 @@ export default {
             "1965 and 1968 laws banning racial discrimination in jobs and housing."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "In 1963, Bristol’s bus company operated open racial [Discrimination] and workplace [Segregation] by refusing to employ Black or Asian bus crews despite staff shortages. Led by Paul Stephenson, Roy Hackett, and Owen Henry, campaigners used non-violent [Direct Action] through a four-month citywide [Boycott], confronting local [Prejudice] and inspiring Parliament’s landmark 1965 [Race Relations Act]."
     },
     {
       "id": "lesson_5",
@@ -6917,7 +7135,8 @@ export default {
             "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
           },
           "id": "pwb_l5_src_b",
-          "type": "visual"
+          "type": "visual",
+          "context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March."
         },
         {
           "letter": "C",
@@ -6935,7 +7154,8 @@ export default {
             "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
           },
           "id": "pwb_l5_src_c",
-          "type": "visual"
+          "type": "visual",
+          "context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire."
         },
         {
           "letter": "D",
@@ -6953,7 +7173,8 @@ export default {
             "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
           },
           "id": "pwb_l5_src_d",
-          "type": "visual"
+          "type": "visual",
+          "context": "Official publication cover of the Home Office manual Protect and Survive."
         },
         {
           "letter": "E",
@@ -6971,7 +7192,8 @@ export default {
           "id": "pwb_l5_src_e",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet."
         }
       ],
       "comprehension": [
@@ -7015,7 +7237,66 @@ export default {
             "question": "Did the government's Protect and Survive guidance reflect genuine civil defence or cynical political reassurance?"
           }
         ],
-        "source_context": "Source A illustrates Gerald Holtom's original 1958 geometric semaphore sketch of the CND peace symbol. Source B displays the official cover of the 1980 Home Office booklet Protect and Survive. Source C shows the entrance to the York Cold War Bunker. Source D provides the Home Office's controversial instructions on building door shelters. Source E records E. P. Thompson's scathing critique in Protest and Survive. **Hinge Question:** How did the threat of nuclear catastrophe fundamentally alter British protest culture and the relationship between citizens and the state between 1950 and 1989?"
+        "source_context": {
+          "Source A": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+          "Source B": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+          "Source C": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+          "Source D": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+          "Source E": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"The 1963 Bristol Bus Boycott & the fight for British civil rights.\": The Bristol 'Colour Bar': The Omnibus Company & Trade Union Discrimination, The Rejection of Guy Bailey & The West Indian Development Council, Students, Churches & Community Solidarity: The Citywide Boycott) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Under the Mushroom Cloud: British Deterrence & The Hydrogen Bomb\", \"The Peace Movement: Gerald Holtom, CND & The Aldermaston Marches\", and \"Secret Bunkers & Subterranean Watch: The Royal Observer Corps at York\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Prime Minister Winston Churchill on the First British…) and Source B (Gerald Holtom’s Original CND Semaphore Symbol Design…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Under the Mushroom Cloud: British Deterrence & The Hydrogen Bomb\" → \"Secret Bunkers & Subterranean Watch: The Royal Observer Corps at York\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"'Protect and Survive': The Home Office Whitewash & The Inner Core Shelter\" and \"'Protest and Survive': E. P. Thompson, Nuclear Satire & Greenham Common\") to complete the Verso spine, then interrogate Source C (The Royal Observer Corps Semi-Subterranean Bunker at…), Source D (UK Home Office \"Protect and Survive\" Civil Defence…), Source E (E. P. Thompson, \"Protest and Survive\" (1980)) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "pair_share": {
         "prompt": "Discuss with your partner: How did nuclear paranoia shape British popular culture?",
@@ -7073,9 +7354,9 @@ export default {
         {
           "id": "pwb_l5_evaluative_essay_nuclear",
           "type": "extended_writing",
-          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
-          "title": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
-          "question": "‘Civil defence preparations in post-war Britain were designed to maintain public morale rather than survive a real nuclear war.’ How far do you agree? Explain your answer. [12 marks]",
+          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "question": "‘Civil defence preparations in post-war Britain were designed to maintain public morale rather than survive a real nuclear war.’ How far do you agree? Explain your answer.",
           "stimulus": [
             "The government booklet Protect and Survive, the Four-Minute Warning, and fallout shelters",
             "The Campaign for Nuclear Disarmament (CND), the Aldermaston Marches, and Greenham Common"
@@ -7123,7 +7404,7 @@ export default {
             ]
           },
           "model_answer": "On the one hand, public-facing civil defence preparations were largely cosmetic exercises in morale maintenance rather than genuine survival strategies against thermonuclear attack. Government advice pamphlets like \"Protect and Survive\" instructed families to build makeshift \"fallout rooms\" inside their homes using doors, mattresses, and whitewashed windows to deflect thermal radiation. In reality, given the catastrophic blast radius, firestorms, and radioactive fallout of modern Soviet multi-megaton hydrogen bombs, these flimsy domestic measures would have offered zero protection, serving primarily to project an illusion of control and suppress public hysteria and CND anti-nuclear protests.<br><br>On the other hand, genuine, heavily funded survival infrastructure was constructed to preserve military command and continuity of government. Massive hardened subterranean bunker complexes, such as the 35-acre Central Government War Headquarters (\"Burlington\") at Corsham, were engineered with self-contained air filtration, communication networks, and food stockpiles to keep political and military elites alive for months. Furthermore, the Royal Observer Corps operated a nationwide network of 1,500 monitoring posts to calculate nuclear blast vectors. Therefore, while civil defence for the ordinary population was an exercise in morale, the state invested immense resources into elite survival and military retaliation.",
-          "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
+          "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)"
         }
       ],
       "quiz": [
@@ -8086,7 +8367,8 @@ export default {
             "Government plans and booklets meant to protect civilians in war."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "After Britain tested atomic and hydrogen weapons in the 1950s, Cold War nuclear [Paranoia] and fear of KGB [Espionage] and [Subversion] led officials to build secret [Fallout Shelter] bunkers and publish the 1980 [Civil Defence] booklet Protect and Survive. In response, CND Aldermaston marchers and Greenham Common women campaigned tirelessly for nuclear [Disarmament]."
     }
   ],
   "edition": "2026.1",
@@ -8094,5 +8376,297 @@ export default {
   "yearGroup": "Year 9",
   "year_group": "Year 9",
   "category": "KS3",
-  "key_stage": "KS3"
+  "key_stage": "KS3",
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "book_title": "\"Freedom or Death\": Emmeline Pankhurst’s Speech at Hartford (13 November 1913)",
+      "author": "Emmeline Pankhurst (13 November 1913 • Verbatim Transcript, Hartford, Connecticut)",
+      "cover_image": "/images/post_war_britain/pankhurst_arrest_1914.jpg",
+      "cover_caption": "Press photograph dated 21 May 1914 showing Superintendent Rolfe arresting WSPU leader Emmeline Pankhurst outside the gates of Buckingham Palace.",
+      "author_context": "For nearly fifty years, Millicent Garrett Fawcett’s National Union of Women’s Suffrage Societies (NUWSS, the \"Suffragists\") campaigned peacefully through petitions and lobbying, only to watch MPs repeatedly \"talk out\" women’s suffrage bills. Founding the Women’s Social and Political Union (WSPU, the \"Suffragettes\") in Manchester in 1903 under the motto \"Deeds, Not Words,\" Emmeline Pankhurst delivered her electrifying \"Freedom or Death\" defence of militancy while on speaking release from prison under the 1913 \"Cat and Mouse\" Act.",
+      "source_type": "primary_speech",
+      "source_type_label": "WSPU Suffragette Oration (13 November 1913)",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "\"I do not come here as an advocate, because whatever position the suffrage movement may occupy in the United States of America, in England it has passed beyond the realm of advocacy and it has entered into the sphere of practical politics. It has become the subject of revolution and civil war, and so tonight I am not here to advocate woman suffrage; I am here as a soldier who has temporarily left the field of battle in order to explain—it seems strange it should have to be explained—what civil war is like when civil war is waged by women.\n\nSuppose the men of Hartford had a grievance, and they laid that grievance before their legislature, and the legislature obstinately refused to listen to them, or to remove their grievance, what would be the proper and the constitutional course for these men of Hartford to take? Well, it is perfectly obvious at the next general election the men of Hartford would turn out that legislature and elect a new one. But let the men of Hartford imagine that they were not in the position of being voters at all! What would the men do then? You chose between freedom or death in 1776.\n\nWe women, in trying to make our case clear, always have to make as part of our argument and urge upon men in our audience the fact—a very simple fact—that women are human beings. You have two babies very hungry and wanting to be fed. One baby is a patient baby, and waits indefinitely until its mother is ready to feed it. The other baby is an impatient baby and cries lustily, screams and kicks and makes everybody unpleasant until it is fed. Well, we know perfectly well which baby is attended to first. That is the whole history of politics.\"",
+      "vocabVault": [
+        {
+          "term": "Suffragists (NUWSS)",
+          "def": "Constitutional, peaceful campaigners led by Millicent Fawcett (over 500 branches by 1914) using petitions, marches, and parliamentary alliances."
+        },
+        {
+          "term": "Suffragettes (WSPU)",
+          "def": "Militant campaigners founded by Emmeline Pankhurst in 1903 (\"Deeds, Not Words\") using window-smashing, hunger strikes, and civil disobedience."
+        },
+        {
+          "term": "Cat and Mouse Act (1913)",
+          "def": "The Prisoners (Temporary Discharge for Ill-Health) Act releasing weakened hunger-striking Suffragettes until they recovered enough strength to be re-arrested."
+        },
+        {
+          "term": "Representation of the People Act (1918)",
+          "def": "The wartime reform enfranchising all men aged 21+ and 8.4 million women aged 30+ who met property qualifications (equalised at age 21 in 1928)."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "How does Emmeline Pankhurst use the clever metaphor of the \"two hungry babies\" to explain why the WSPU abandoned patient waiting in 1903?",
+          "answer": "Polite, patient petitions by Suffragists had been ignored by male MPs for forty years; Pankhurst argued politicians only act when loud disruption makes ignoring injustice impossible."
+        },
+        {
+          "question": "Why did WSPU militancy both help AND hurt the Votes for Women cause before August 1914?",
+          "answer": "It kept women’s votes on the front page of every newspaper, yet arson and window-smashing gave Prime Minister Asquith an excuse to claim giving in to lawbreakers would reward violence."
+        },
+        {
+          "question": "When war broke out in August 1914, how did BOTH Pankhurst’s WSPU and Fawcett’s NUWSS help unlock the 1918 Representation of the People Act?",
+          "answer": "Suspending militancy while 1.6 million women stepped into munitions factories (\"Canary Girls\"), farms, and transport allowed MPs to save face and reward women’s vital war work alongside decades of NUWSS groundwork."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why couldn’t British women simply \"vote out\" a government that ignored their petitions in 1913?<br><br><strong>Pair:</strong> Weigh Pankhurst’s \"impatient baby\" argument against Millicent Fawcett’s warning that arson alienated swing MPs—who had the stronger strategy?<br><br><strong>Share:</strong> Who still DID NOT get the vote in 1918 (until the Equal Franchise Act of 1928)?",
+      "questions": [
+        "How does Emmeline Pankhurst describe herself in the opening paragraph (\"not as an advocate, but...\")?",
+        "Why could men in Hartford or Britain overturn an unfair government peacefully at an election while women could not?",
+        "Explain Pankhurst’s \"two hungry babies\" analogy in your own words."
+      ],
+      "audio_file": "/audio/reading/post_war_britain/r0.mp3",
+      "studio_audio": "/audio/reading/post_war_britain/r0.mp3",
+      "studio_voice_label": "Studio Female Historian · Historic Speech",
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim transcript of suffragette leader Emmeline Pankhurst’s \"Freedom or Death\" speech delivered in Hartford on 13 November 1913."
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "book_title": "The Beveridge Report (Cmd. 6404): Slaying the \"Five Giant Evils\" (November 1942)",
+      "author": "Sir William Beveridge (Social Insurance and Allied Services, HMSO, Dec 1942)",
+      "cover_image": "/images/post_war_britain/william_beveridge_portrait.jpg",
+      "cover_caption": "Sir William Beveridge photographed beneath a framed David Low cartoon celebrating the 1942 Beveridge Plan that laid the blueprint for Britain’s post-war Welfare State.",
+      "author_context": "In the darkest middle years of the Second World War, economist Sir William Beveridge published what looked like a dry government report on social insurance (December 1942). To Whitehall’s astonishment, 635,000 copies sold out as soldiers in North Africa and bomb-weary families queued outside bookshops! Naming \"Five Giant Evils\" blocking human flourishing, Beveridge’s report powered Clement Attlee’s 1945 Labour landslide and Aneurin Bevan’s creation of the National Health Service on 5 July 1948.",
+      "source_type": "primary_decree",
+      "source_type_label": "Landmark Wartime Parliamentary Report (Cmd. 6404)",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "\"Three guiding principles may be laid down at the outset:\nFirst, any proposals for the future, while they should use to the full the experience gathered in the past, should not be restricted by consideration of sectional interests established in the obtaining of that experience. Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world’s history is a time for revolutions, not for patching.\n\nSecond, the organisation of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is one only of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor, and Idleness.\n\nThird, social security must be achieved by co-operation between the State and the individual. The State should offer security for service and contribution... Restoration of a sick person to health is a duty of the State and the sick person, prior to any other consideration, through a comprehensive National Health Service available to every citizen without a financial barrier at the hour of need.\"",
+      "vocabVault": [
+        {
+          "term": "Five Giant Evils",
+          "def": "Sir William Beveridge’s famous 1942 names for Britain’s five social crises: Want (poverty), Disease (illness), Ignorance (lack of education), Squalor (slum housing), and Idleness (mass unemployment)."
+        },
+        {
+          "term": "Welfare State",
+          "def": "The post-1945 \"cradle-to-grave\" system funded through National Insurance and taxation guaranteeing healthcare, pensions, family allowances, secondary schooling, and housing."
+        },
+        {
+          "term": "National Health Service (5 July 1948)",
+          "def": "Launched by Health Minister Aneurin Bevan at Park Hospital, Manchester, providing doctors, hospitals, glasses, and dental care free at the point of use."
+        },
+        {
+          "term": "Means Test",
+          "def": "The humiliating 1930s Great Depression inspection forcing unemployed families to sell furniture and heirlooms before receiving poor relief—swept away by universal National Insurance."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "What did Sir William Beveridge mean by his famous sentence: \"A revolutionary moment in the world’s history is a time for revolutions, not for patching\"?",
+          "answer": "Total war had already upended old class barriers through evacuation, rationing, and shared bombing; Britain should build a bold universal system rather than tinkering with hated 1930s poor laws."
+        },
+        {
+          "question": "Match each of Beveridge’s \"Five Giants\" (Want, Disease, Ignorance, Squalor, Idleness) to the actual reform Britain built between 1944 and 1948!",
+          "answer": "Want -> National Insurance & Family Allowances (1945–46); Disease -> NHS (1948); Ignorance -> Butler Education Act free secondary schooling (1944); Squalor -> over 1 million council homes & New Towns; Idleness -> full employment."
+        },
+        {
+          "question": "Why did war hero Winston Churchill lose the July 1945 General Election by a landslide to Clement Attlee’s Labour Party just two months after VE Day?",
+          "answer": "Voters admired Churchill as a wartime leader, yet remembered 1930s unemployment and trusted Attlee and Bevan far more to turn the Beveridge Report into reality."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> List all five of Beveridge’s \"Giant Evils\" from memory.<br><br><strong>Pair:</strong> Why had many doctors in the British Medical Association initially opposed Aneurin Bevan’s NHS before 5 July 1948—and why did millions rush for spectacles and dental care in its very first weeks?<br><br><strong>Share:</strong> How did Operation Pied Piper and the Blitz make wealthier Britons finally see urban poverty first-hand?",
+      "questions": [
+        "Quote Beveridge’s famous line explaining why 1942 was not a time for mere \"patching.\"",
+        "Name all five \"Giants on the road of reconstruction\" identified in the Beveridge Report.",
+        "What core principle did Beveridge set out for a future National Health Service regarding money \"at the hour of need\"?"
+      ],
+      "audio_file": "/audio/reading/post_war_britain/r1.mp3",
+      "studio_audio": "/audio/reading/post_war_britain/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Original wording from Sir William Beveridge’s December 1942 parliamentary report (Cmd. 6404) identifying the \"Five Giant Evils\"."
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "book_title": "Step Ashore at Tilbury: Sam King MBE’s Windrush Testimony & \"Black and British\"",
+      "author": "Sam King MBE (IWM Oral History 1998) & David Olusoga (\"Black and British\", 2016)",
+      "cover_image": "/images/empire_windrush_1948.jpg",
+      "cover_caption": "Archival photograph of the troopship HMT Empire Windrush, which docked at Tilbury, Essex, on 22 June 1948 carrying post-war Commonwealth citizens to rebuild Britain.",
+      "author_context": "Over 10,000 Caribbean men and women volunteered to serve Britain during the Second World War—among them Jamaican Royal Air Force engineer Sam King (1926–2016). Facing severe post-war labour shortages on British railways, buses, and in the brand-new NHS, and holding full citizenship of the \"United Kingdom and Colonies\" under the 1948 British Nationality Act, Sam King sailed back aboard HMT Empire Windrush in June 1948—later becoming the first Black Mayor of Southwark and co-founding the Windrush Foundation.",
+      "source_type": "primary_testimony",
+      "source_type_label": "RAF Veteran & Windrush Oral History + Scholarship",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "From the recorded oral history of Jamaican RAF veteran Sam King MBE on returning to Britain aboard HMT Empire Windrush (docked at Tilbury, 22 June 1948): \"During the war in 1944 I had answered the poster in Kingston saying 'The Mother Country Needs You' and served as an aircraft engineer in the Royal Air Force in Britain. When I went back to Jamaica after peace came, hurricanes had wrecked the crops and there were scarce jobs, whereas we knew bombed-out Britain needed hands to run the trains, rebuild houses, and staff the new hospitals.\n\nSo I paid my twenty-eight pounds ten shillings fare on the Empire Windrush. We were not foreigners arriving uninvited—our passports said 'British Subject: Citizen of the United Kingdom and Colonies,' and we had learned British history and sung the same hymns at school.\n\nYet the hardest shock after Tilbury was not the cold grey drizzle, but the handwritten signs hanging in front-room windows across London and Birmingham: 'Room to Let: No Irish, No Blacks, No Dogs.' Rejected by private landlords and barred from certain pubs despite having worn the King’s uniform, Caribbean families pooled their weekly wages in 'pardner' savings clubs to buy houses of their own, staffed the wards of Aneurin Bevan’s brand-new NHS, kept London Transport running, and built vibrant cultural institutions—from Sam King’s West Indian Gazette networks to Claudia Jones’s Caribbean Carnival after the 1958 Notting Hill attacks.\"",
+      "vocabVault": [
+        {
+          "term": "British Nationality Act (1948)",
+          "def": "The Act confirming that all 800 million people across Britain and the Empire/Commonwealth held equal legal status as \"Citizens of the United Kingdom and Colonies\" with the right to live and work in Britain."
+        },
+        {
+          "term": "Windrush Generation (1948–1971)",
+          "def": "Caribbean Commonwealth citizens who answered post-war Britain’s labour shortage to rebuild transport, industry, and the NHS—named after HMT Empire Windrush (June 1948)."
+        },
+        {
+          "term": "The \"Colour Bar\"",
+          "def": "Informal—yet completely legal before 1965/1968—racial discrimination barring Black and Asian Britons from private housing, pubs, jobs, and promotions."
+        },
+        {
+          "term": "Pardner Hand",
+          "def": "A traditional Caribbean cooperative community savings system allowing Windrush families refused bank mortgages to pool money in turn to buy homes."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why does Sam King emphasise that Windrush passengers in June 1948 were NOT \"foreigners\" or illegal migrants, and why had many already lived in Britain earlier in the 1940s?",
+          "answer": "Hundreds aboard Windrush (like Sam King himself) were returning WWII RAF/armed forces veterans, and under the 1948 British Nationality Act every passenger held full legal British citizenship."
+        },
+        {
+          "question": "Why was there NO law stopping a London landlord in 1948 or 1958 from hanging a sign reading \"No Irish, No Blacks, No Dogs\"?",
+          "answer": "Britain had zero anti-discrimination laws until the Race Relations Acts of 1965 and 1968, leaving housing and jobs exposed to an unregulated \"colour bar\"."
+        },
+        {
+          "question": "How did the Windrush Generation respond creatively and resiliently to both the housing colour bar and the 1958 Notting Hill racist riots?",
+          "answer": "Families formed cooperative \"pardner\" savings clubs to buy their own homes, while Trinidad-born journalist Claudia Jones founded The West Indian Gazette and launched the indoor 1959 St Pancras Caribbean Carnival (ancestor of Notting Hill Carnival) to celebrate Caribbean culture."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> How much did a ticket aboard HMT Empire Windrush cost in 1948, and which vital British services recruited Caribbean workers?<br><br><strong>Pair:</strong> Explain how Aneurin Bevan’s 1948 NHS and the 1948 Windrush Generation depended directly on one another.<br><br><strong>Share:</strong> Why did Claudia Jones choose music, dance, and journalism (\"a people’s art is the genesis of their freedom\") after the murder of Kelso Cochrane in 1959?",
+      "questions": [
+        "In which branch of the British armed forces had Sam King served during the Second World War?",
+        "What exact legal citizenship status was printed inside Windrush passengers’ passports in 1948?",
+        "How did \"pardner\" savings clubs help Caribbean families overcome discrimination by landlords and banks?"
+      ],
+      "audio_file": "/audio/reading/post_war_britain/r2.mp3",
+      "studio_audio": "/audio/reading/post_war_britain/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Combines recorded oral history of Jamaican RAF veteran Sam King MBE aboard HMT Empire Windrush (1948) with post-war historical context."
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "book_title": "Voices of the 1963 Bristol Bus Boycott: Roy Hackett, Guy Bailey & Paul Stephenson",
+      "author": "West Indian Development Council Oral Testimonies (April–August 1963 • Bristol Archives)",
+      "cover_image": "/images/bristol_bus_boycott_mural.jpg",
+      "cover_caption": "Public commemorative mural in Bristol honouring the 1963 Bristol Bus Boycott, featuring portraits and quotes of Paul Stephenson, Roy Hackett, Guy Bailey, Tony Benn, and Bristol’s first Sikh conductor Raghbir Singh.",
+      "author_context": "In 1963, over 3,000 Black residents lived in Bristol—a city whose eighteenth-century wealth had been built heavily on the transatlantic slave trade—yet the state-owned Bristol Omnibus Company enforced a rigid \"colour bar\" refusing to employ a single Black or Asian driver or conductor, despite severe staff shortages! Organised by Roy Hackett, Owen Henry, Audley Evans, Prince Brown, spokesperson Paul Stephenson, and young job applicant Guy Bailey, a sixty-day peaceful boycott transformed British civil rights law.",
+      "source_type": "primary_testimony",
+      "source_type_label": "Civil Rights Campaign Testimonies (April–August 1963)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "In April 1963, twenty-six-year-old Youth Officer Paul Stephenson tested the Bristol Omnibus Company’s secret hiring ban by telephoning to arrange a bus conductor interview for qualified eighteen-year-old Jamaican-born boys’ brigade warehouseman Guy Bailey—without mentioning Bailey’s race. Guy Bailey recalled walking into the company office: \"The receptionist looked up, saw my Black face, and called through to the manager: 'Your two o’clock appointment is here—and he’s coloured.' Within sixty seconds the manager told me there were no vacancies after all, even though their own adverts in the Bristol Evening Post begged for bus crews every night!\"\n\nInspired by Rosa Parks and the 1955–1956 Montgomery Bus Boycott in Alabama, Roy Hackett and the West Indian Development Council called a press conference on 29 April 1963 announcing that no Black Bristolian—and no fair-minded white supporter—would ride a Bristol bus until the colour bar ended. Bristol University students marched through the city centre, Labour MP Tony Benn declared he would walk or cycle rather than board a segregated company’s bus, and West Indian cricket legend Sir Learie Constantine publicly condemned the company.\n\nAfter sixty days of lost fares and national shame, General Manager Ian Patey capitulated on 28 August 1963—the exact same day Dr Martin Luther King Jr delivered his 'I Have a Dream' speech in Washington! Weeks later, Sikh graduate Raghbir Singh and Jamaican Norman Samuels boarded Bristol’s buses as the city’s first non-white conductors, paving the road directly to Harold Wilson’s Race Relations Acts of 1965 and 1968.",
+      "vocabVault": [
+        {
+          "term": "Bristol Bus Boycott (Apr–Aug 1963)",
+          "def": "The 60-day peaceful consumer boycott organised by the West Indian Development Council and Paul Stephenson forcing the Bristol Omnibus Company to scrap its racial hiring ban."
+        },
+        {
+          "term": "Direct Non-Violent Action",
+          "def": "Peaceful collective protest—such as boycotts, marches, and test-case applications—exposing injustice without violence."
+        },
+        {
+          "term": "Race Relations Act (1965)",
+          "def": "Britain’s first law banning racial discrimination in \"places of public resort\" (hotels, pubs, restaurants, transport) and outlawing incitement to racial hatred."
+        },
+        {
+          "term": "Race Relations Act (1968)",
+          "def": "The vital expansion outlawing racial discrimination in employment (hiring) and housing—closing the loophole exposed in Bristol."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "How did Paul Stephenson and eighteen-year-old Guy Bailey cleverly prove beyond a shadow of a doubt that the Bristol Omnibus Company was rejecting people solely because of skin colour?",
+          "answer": "Stephenson booked an interview by phone using Guy Bailey’s qualifications; the company eagerly offered the slot until Bailey arrived in person and saw the manager cancel it the instant he saw Bailey was Black."
+        },
+        {
+          "question": "What allies joined Bristol’s Caribbean community to turn a local dispute into front-page national news?",
+          "answer": "Bristol University students, Bristol MP Tony Benn (and Labour leader Harold Wilson), Trinidadian cricketer and High Commissioner Sir Learie Constantine, and church groups."
+        },
+        {
+          "question": "Notice the extraordinary coincidence of the date the Bristol Omnibus Company surrendered—28 August 1963—and trace what British laws followed in 1965 and 1968!",
+          "answer": "Victory came on the very day of Dr King’s March on Washington, directly inspiring Prime Minister Harold Wilson to pass Britain’s first Race Relations Acts in 1965 (public places) and 1968 (jobs and housing)."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why was the Bristol Omnibus Company’s excuse (\"there are no vacancies\") immediately exposed as false?<br><br><strong>Pair:</strong> Look at the Bristol mural on the cover: spot the name of Bristol’s first non-white bus conductor hired on 17 September 1963.<br><br><strong>Share:</strong> Why should British schoolchildren study Bristol 1963 alongside Montgomery 1955?",
+      "questions": [
+        "How did Paul Stephenson prove that the Bristol Omnibus Company operated a secret racial hiring ban?",
+        "Name three allies or groups who publicly backed the West Indian Development Council’s 60-day boycott.",
+        "On what historic date did the bus company end its colour bar, and which two UK laws followed in 1965 and 1968?"
+      ],
+      "audio_file": "/audio/reading/post_war_britain/r3.mp3",
+      "studio_audio": "/audio/reading/post_war_britain/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Grounded in 1963 oral testimonies of Guy Bailey, Roy Hackett, and Paul Stephenson from the Bristol Bus Boycott campaign."
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "book_title": "The Strath Report (1955), Bertrand Russell’s CND Launch (1958) & Greenham Common",
+      "author": "Cabinet Strath Report (CAB 134/940, 1955) & Bertrand Russell (Central Hall Westminster, 17 Feb 1958)",
+      "cover_image": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
+      "cover_caption": "Campaign for Nuclear Disarmament (CND) marchers carrying Torbay and Weston-super-Mare peace banners bearing Gerald Holtom’s iconic nuclear disarmament symbol.",
+      "author_context": "After Britain tested its first atomic bomb in 1952 and first hydrogen bomb in 1957, a top-secret Whitehall civil-defence committee chaired by William Strath calculated what just ten Soviet H-bombs would do to a densely populated island. While Whitehall kept the Strath Report secret and issued DIY \"Protect and Survive\" leaflets, philosopher Bertrand Russell, Canon John Collins, and designer Gerald Holtom launched the Campaign for Nuclear Disarmament (CND) in February 1958—inspiring the Easter Aldermaston marches and the 1981–2000 Greenham Common Women’s Peace Camp.",
+      "source_type": "primary_speech",
+      "source_type_label": "Declassified Cabinet Report (1955) & CND Founding Address (1958)",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "From the secret UK Cabinet Strath Committee Report on the Hydrogen Bomb (CAB 134/940, March 1955 — withheld from the British public for nearly fifty years): \"Ten hydrogen bombs delivered on the main urban centres of the United Kingdom would result in roughly twelve million dead and four million seriously injured... Radioactive fall-out carried across the countryside by prevailing winds would render vast tracts uninhabitable, contaminate food and water supplies, and collapse central administration, sanitation, and medical care beyond any previous experience of war.\"\n\nThree years later, on 17 February 1958, five thousand citizens packed Central Hall Westminster and overflow halls to hear eighty-five-year-old philosopher Bertrand Russell and Canon John Collins launch the Campaign for Nuclear Disarmament (CND): \"We are gathered tonight not for any party advantage, nor on behalf of Moscow or Washington, but on behalf of the continued existence of the human species. A single miscalculation on a radar screen, a single panic among statesmen armed with thermonuclear weapons, can extinguish in a single afternoon all the art, science, cities, and children that centuries of civilisation have built.\n\nIf Britain—the third thermonuclear power on earth—has the moral courage to renounce these weapons of mass extermination and lead the non-nuclear nations of the world, our voice will carry weight where mere imitation of the superpowers carries none.\"",
+      "vocabVault": [
+        {
+          "term": "Thermonuclear (Hydrogen) Bomb",
+          "def": "A fusion weapon up to a thousand times more destructive than the 1945 Hiroshima atomic bomb, spreading lethal radioactive fallout hundreds of miles."
+        },
+        {
+          "term": "CND (Campaign for Nuclear Disarmament)",
+          "def": "Founded in February 1958, organising the annual Aldermaston Easter marches and popularising Gerald Holtom’s global peace symbol (semaphore N + D)."
+        },
+        {
+          "term": "Protect and Survive (1980)",
+          "def": "The Home Office public leaflet advising families to whitewash windows and shelter under kitchen tables/doors during nuclear war—mocked in E. P. Thompson’s \"Protest and Survive\" and BBC drama Threads (1984)."
+        },
+        {
+          "term": "Greenham Common Women’s Peace Camp",
+          "def": "Established by Welsh marchers (\"Women for Life on Earth\") in September 1981 outside RAF Greenham Common in Berkshire to protest 96 US nuclear cruise missiles; 30,000 women linked hands around the 9-mile fence in December 1982."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did the British government keep the 1955 Strath Report top-secret until 2002 while publishing \"Protect and Survive\" instructions to hide under doors and tables?",
+          "answer": "The Strath Report privately admitted just ten H-bombs would kill 12 million Britons and collapse society, meaning there was no realistic civil defence—a truth officials feared would spark panic or boost unilateral disarmament."
+        },
+        {
+          "question": "How did artist Gerald Holtom design the world-famous peace symbol carried on the CND banners on the cover in Easter 1958?",
+          "answer": "He combined the naval flag-semaphore letters for \"N\" (two arms angled down) and \"D\" (one arm straight up and down) inside a circle representing the Earth: Nuclear Disarmament."
+        },
+        {
+          "question": "What were the two rival arguments that divided British voters and families throughout the Cold War?",
+          "answer": "Unilateralists (CND / Greenham women) argued nuclear weapons were immoral and made Britain a prime Soviet target; multilateralists/deterrence supporters argued NATO nuclear weapons prevented World War III through Mutually Assured Destruction (MAD)."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> What two semaphore letters are hidden inside the CND peace symbol?<br><br><strong>Pair:</strong> Compare the secret 1955 Strath Report with the public 1980 \"Protect and Survive\" booklet—why did historian E. P. Thompson call official civil defence an illusion?<br><br><strong>Share:</strong> Did nuclear deterrence keep peace in Europe, or did Britain survive the Cold War partly by luck?",
+      "questions": [
+        "According to the secret 1955 Strath Report, how many casualties would just ten hydrogen bombs inflict on Britain?",
+        "Where and when did Bertrand Russell and Canon John Collins launch the Campaign for Nuclear Disarmament?",
+        "What human error did Bertrand Russell warn could extinguish civilisation \"in a single afternoon\"?"
+      ],
+      "audio_file": "/audio/reading/post_war_britain/r4.mp3",
+      "studio_audio": "/audio/reading/post_war_britain/r4.mp3",
+      "studio_voice_label": "Studio Male Historian · Historic Speech",
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Pairs declassified wording from the secret 1955 Cabinet Strath Report on H-bombs with Bertrand Russell’s 1958 CND founding speech."
+    }
+  ]
 };

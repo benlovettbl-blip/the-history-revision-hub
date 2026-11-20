@@ -877,16 +877,38 @@ function run() {
     const oldQs = (les.exam_practice && les.exam_practice.questions) || [];
     const vocabBank = LESSON_VOCAB_BANKS[les.id] || [];
     const extNum = wb.extended.type === 'narrative_8' ? '2.' : '3.';
-    const updatedQs = [make4MarkQuestionObj('1(a).', wb.q1, oldQs[0])];
+    const normConseq = (s) =>
+      String(s || '')
+        .replace(/^\d+(\([a-z]\))?\.?\s*/i, '')
+        .replace(/\[\s*\d+[^\]]*\]|\(\s*\d+\s*marks?\s*\)/gi, '')
+        .replace(/[^a-z0-9]+/gi, ' ')
+        .trim()
+        .toLowerCase();
+    const q1Primary = make4MarkQuestionObj('1.', wb.q1, oldQs[0]);
+    q1Primary.inWorkbook = true;
+    const updatedQs = [q1Primary];
     if (oldQs[1] && oldQs[1].marks === 4) {
-      const q1b = JSON.parse(JSON.stringify(oldQs[1]));
-      delete q1b.stimulus;
-      delete q1b.bullet_points;
-      q1b.scaffolding = buildConsequenceScaffolding(q1b.question);
-      updatedQs.push(q1b);
+      const primaryNorm = normConseq(q1Primary.question);
+      const secondaryNorm = normConseq(oldQs[1].question);
+      const isDupStem =
+        primaryNorm === secondaryNorm ||
+        primaryNorm.includes(secondaryNorm) ||
+        secondaryNorm.includes(primaryNorm);
+      if (!isDupStem) {
+        const q1Extra = JSON.parse(JSON.stringify(oldQs[1]));
+        delete q1Extra.stimulus;
+        delete q1Extra.bullet_points;
+        q1Extra.question = q1Extra.question.replace(/^1\([ab]\)\.\s*/i, '1. ');
+        q1Extra.inWorkbook = false;
+        q1Extra.workbook_badge = 'Extra Exam Practice • Unexamined Spec Target';
+        q1Extra.scaffolding = buildConsequenceScaffolding(q1Extra.question);
+        updatedQs.push(q1Extra);
+      }
     }
     const oldExt = oldQs.find((q) => q.marks === 8) || null;
-    updatedQs.push(make8MarkQuestionObj(extNum, wb.extended, oldExt, vocabBank));
+    const qExt = make8MarkQuestionObj(extNum, wb.extended, oldExt, vocabBank);
+    qExt.inWorkbook = true;
+    updatedQs.push(qExt);
 
     les.exam_practice = les.exam_practice || {};
     les.exam_practice.type = 'consequence_and_extended';

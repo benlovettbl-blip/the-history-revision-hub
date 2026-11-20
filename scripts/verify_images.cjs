@@ -114,6 +114,78 @@ function verifyImages() {
       try {
         const unitData = JSON.parse(fs.readFileSync(path.join(dataDir, jf), 'utf8'));
         const lessons = unitData.lessons || [];
+        // 4a. Audit unit.key_individuals dossier images for missing/0-byte/HTML/AI files
+        (unitData.key_individuals || []).forEach((ki) => {
+          const kiImg = (ki.image || ki.image_url || '').trim();
+          if (!kiImg || kiImg === '/') return;
+          if (/^https?:\/\//i.test(kiImg)) return;
+          const baseName = path.basename(kiImg);
+          if (isAiGeneratedFilename(baseName)) {
+            console.error(`❌ CRITICAL ERROR (AI Dossier Image in ${jf}): "${ki.name}" -> ${kiImg}`);
+            errors++;
+          }
+          const resolvedKi = path.join(ROOT_DIR, 'public', kiImg.replace(/^\/+/, ''));
+          if (!fs.existsSync(resolvedKi) || !fs.statSync(resolvedKi).isFile()) {
+            console.error(`❌ CRITICAL ERROR (Missing Dossier Image in ${jf}): "${ki.name}" -> ${kiImg}`);
+            errors++;
+          } else {
+            const st = fs.statSync(resolvedKi);
+            if (st.size === 0) {
+              console.error(`❌ CRITICAL ERROR (0-Byte Dossier Image in ${jf}): "${ki.name}" -> ${kiImg}`);
+              errors++;
+            } else if (st.size < 3500 && !kiImg.toLowerCase().endsWith('.svg')) {
+              const headTxt = fs.readFileSync(resolvedKi, 'utf8');
+              if (
+                headTxt.includes('<!DOCTYPE html>') ||
+                headTxt.includes('<html') ||
+                headTxt.includes('Wikimedia Error') ||
+                headTxt.includes('robot policy')
+              ) {
+                console.error(`❌ CRITICAL ERROR (Broken HTML Dossier Image in ${jf}): "${ki.name}" -> ${kiImg}`);
+                errors++;
+              }
+            }
+          }
+        });
+
+        // 4b. Audit unit.guided_reading cover_image plates for missing/0-byte/HTML/AI files
+        (unitData.guided_reading || []).forEach((gr, grIdx) => {
+          const grImg = (gr.cover_image || '').trim();
+          if (!grImg) {
+            console.error(`❌ CRITICAL ERROR (Missing Guided Reading cover_image in ${jf} item ${grIdx}): "${gr.book_title}"`);
+            errors++;
+            return;
+          }
+          if (/^https?:\/\//i.test(grImg)) return;
+          const baseName = path.basename(grImg);
+          if (isAiGeneratedFilename(baseName) || grImg.includes('placeholder.jpg')) {
+            console.error(`❌ CRITICAL ERROR (Invalid/AI Guided Reading Image in ${jf}): "${gr.book_title}" -> ${grImg}`);
+            errors++;
+          }
+          const resolvedGr = path.join(ROOT_DIR, 'public', grImg.replace(/^\/+/, ''));
+          if (!fs.existsSync(resolvedGr) || !fs.statSync(resolvedGr).isFile()) {
+            console.error(`❌ CRITICAL ERROR (Missing Guided Reading Image File in ${jf}): "${gr.book_title}" -> ${grImg}`);
+            errors++;
+          } else {
+            const st = fs.statSync(resolvedGr);
+            if (st.size === 0) {
+              console.error(`❌ CRITICAL ERROR (0-Byte Guided Reading Image in ${jf}): "${gr.book_title}" -> ${grImg}`);
+              errors++;
+            } else if (st.size < 3500 && !grImg.toLowerCase().endsWith('.svg')) {
+              const headTxt = fs.readFileSync(resolvedGr, 'utf8');
+              if (
+                headTxt.includes('<!DOCTYPE html>') ||
+                headTxt.includes('<html') ||
+                headTxt.includes('Wikimedia Error') ||
+                headTxt.includes('robot policy')
+              ) {
+                console.error(`❌ CRITICAL ERROR (Broken HTML Guided Reading Image in ${jf}): "${gr.book_title}" -> ${grImg}`);
+                errors++;
+              }
+            }
+          }
+        });
+
         lessons.forEach(l => {
           const lessonImages = [];
           (l.narrative_blocks || []).forEach(b => {
@@ -136,16 +208,12 @@ function verifyImages() {
             }
           });
 
-          // Check intra-lesson duplicate images
+          // Check intra-lesson duplicate images (Strict Platform-Wide Zero-Duplicate Gate)
           const seen = new Map();
           lessonImages.forEach(img => {
             if (seen.has(img.path)) {
-              if (unitName === 'weimar_nazi_germany' || unitName === targetUnit) {
-                console.error(`❌ CRITICAL ERROR: Intra-lesson duplicate image detected in ${jf} Lesson ${l.id || l.title}: "${img.path}" used in both ${seen.get(img.path)} and ${img.type}.`);
-                errors++;
-              } else {
-                console.warn(`⚠️ LEGACY WARNING: Intra-lesson duplicate image in unmigrated unit ${jf} Lesson ${l.id || l.title}: "${img.path}" in ${seen.get(img.path)} and ${img.type}.`);
-              }
+              console.error(`❌ CRITICAL ERROR: Intra-lesson duplicate image detected in ${jf} Lesson ${l.id || l.title}: "${img.path}" used in both ${seen.get(img.path)} and ${img.type}.`);
+              errors++;
             } else {
               seen.set(img.path, img.type);
             }

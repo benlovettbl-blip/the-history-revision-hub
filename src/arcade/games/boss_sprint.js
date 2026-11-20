@@ -6,7 +6,7 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp, recordQuestionResult } from '../../storage.js';
+import { recordQuestionResult } from '../../storage.js';
 
 export function mountBossSprint(stageEl, pools, ctx) {
   const pool = pools.sprintPool || [];
@@ -184,7 +184,6 @@ export function mountBossSprint(stageEl, pools, ctx) {
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'sprint', ctx.scope, score);
     pb = best;
     if (correctCount > 0) {
-      addXp(Math.min(120, correctCount * 8), '60s Boss Sprint');
     }
     const acc = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
 

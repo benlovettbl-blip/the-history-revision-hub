@@ -526,8 +526,8 @@ export const UNIT_RESOURCES_CATALOG = {
   },
 
   cold_war: {
-    unitTitle: 'Superpower Relations & the Cold War (1941–1991)',
-    specSubtitle: 'Year 9 / GCSE Period Study',
+    unitTitle: 'The Cold War & Global Flashpoints (1945–1991)',
+    specSubtitle: 'Year 9 • Key Stage 3',
     stage: 'ks3',
     textbook: {
       title: 'Superpower Relations & Cold War Classroom Textbook',

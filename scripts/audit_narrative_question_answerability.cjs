@@ -60,11 +60,11 @@ const UNIT_COHORT_CONFIG = {
   great_war: { label: 'Year 9', maxWords: 15, maxHardCommonWords: 4, hasPrintedStageBanners: true },
   great_war_part2: { label: 'Year 9', maxWords: 15, maxHardCommonWords: 4, hasPrintedStageBanners: true },
   the_shoah: { label: 'Year 9', maxWords: 15, maxHardCommonWords: 4, hasPrintedStageBanners: true },
+  cold_war: { label: 'Year 9', maxWords: 15, maxHardCommonWords: 4, hasPrintedStageBanners: true },
   post_war_britain: { label: 'Year 9', maxWords: 15, maxHardCommonWords: 4, hasPrintedStageBanners: true },
   edexcel_medicine: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
   eee: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
   cme_new: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
-  cold_war: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
   weimar_nazi_germany: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
   usa: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
 };

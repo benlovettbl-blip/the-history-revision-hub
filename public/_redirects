@@ -1,41 +1,41 @@
-# Netlify Redirects for Legacy GCSE Sub-Apps
-/usa/*    /?view=lessons&unit=usa    302!
-/usa      /?view=lessons&unit=usa    302!
-/cme/*    /?view=lessons&unit=cme_new 302!
-/cme      /?view=lessons&unit=cme_new 302!
-/eee/*    /?view=lessons&unit=eee     302!
-/eee      /?view=lessons&unit=eee     302!
+# Dual-Compatible Redirects (Netlify & Cloudflare Pages)
+/usa/*    /?view=lessons&unit=usa    302
+/usa      /?view=lessons&unit=usa    302
+/cme/*    /?view=lessons&unit=cme_new 302
+/cme      /?view=lessons&unit=cme_new 302
+/eee/*    /?view=lessons&unit=eee     302
+/eee      /?view=lessons&unit=eee     302
 
 # Canonical PDF Redirects (Zero Broken QR Codes on Printed Booklets)
-/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/ks2_ww2_retrieval_companion.pdf 301!
-/pdfs/ks2_ww2/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf             /pdfs/ks2_ww2_retrieval_companion.pdf 301!
-/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf                                            /pdfs/ks2_ww2_pupil_workbook.pdf 301!
-/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf                                            /pdfs/ks2_ww2_scheme_of_work.pdf 301!
-/pdfs/ks2_ww2/ks2_ww2_textbook.pdf                                                  /pdfs/ks2_ww2_textbook.pdf 301!
-/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/medieval_england_retrieval_companion.pdf 301!
-/pdfs/Crown_Church_or_Parliament_Master_Knowledge_Retrieval_Companion.pdf           /pdfs/monarchy_religion_power_retrieval_companion.pdf 301!
-/pdfs/The_First_British_Empire_Master_Knowledge_Retrieval_Companion.pdf             /pdfs/first_british_empire_retrieval_companion.pdf 301!
-/pdfs/The_Second_British_Empire_Master_Knowledge_Retrieval_Companion.pdf            /pdfs/second_british_empire_retrieval_companion.pdf 301!
-/pdfs/Industrialisation_Power_and_Protest_Master_Knowledge_Retrieval_Companion.pdf  /pdfs/industrialisation_and_empire_retrieval_companion.pdf 301!
-/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf              /pdfs/great_war_retrieval_companion.pdf 301!
-/pdfs/The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf          /pdfs/great_war_part2_retrieval_companion.pdf 301!
-/pdfs/The_Course_of_the_Great_War_Master_Retrieval_and_Literary_Companion.pdf       /pdfs/great_war_part2_retrieval_companion.pdf 301!
-/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf              /pdfs/great_war_part2_combined_workbook.pdf 301!
-/pdfs/Water_and_Sanitation_Master_Knowledge_Retrieval_Companion.pdf                 /pdfs/water_and_sanitation_retrieval_companion.pdf 301!
-/pdfs/The_Shoah_Master_Knowledge_Retrieval_Companion.pdf                            /pdfs/the_shoah_retrieval_companion.pdf 301!
-/pdfs/Post_War_Britain_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/post_war_britain_retrieval_companion.pdf 301!
-/pdfs/History_of_Australia_Master_Knowledge_Retrieval_Companion.pdf                 /pdfs/australia_retrieval_companion.pdf 301!
-/pdfs/Superpower_Relations_and_Cold_War_Master_Knowledge_Retrieval_Companion.pdf    /pdfs/cold_war_retrieval_companion.pdf 301!
-/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf          /pdfs/cme_new_retrieval_companion.pdf 301!
-/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf                /pdfs/edexcel_medicine_retrieval_companion.pdf 301!
-/pdfs/Medicine_Thematic_Study_Master_Knowledge_Retrieval_Companion.pdf              /pdfs/edexcel_medicine_retrieval_companion.pdf 301!
-/pdfs/Western_Front_Master_Knowledge_Retrieval_Companion.pdf                        /pdfs/edexcel_medicine_western_front_retrieval_companion.pdf 301!
-/pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf                        /pdfs/usa_retrieval_companion.pdf 301!
-/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf            /units/eee/eee_master_retrieval_companion.html 302!
-/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf              /units/weimar_nazi_germany/weimar_master_retrieval_companion.html 302!
-/pdfs/cme_revision_guide.pdf                                                        /pdfs/cme_new_revision_guide.pdf 301!
-/pdfs/cme_mastery_pack_FULL.pdf                                                     /pdfs/cme_new_mastery_pack_FULL.pdf 301!
-/pdfs/med_mastery_pack_FULL.pdf                                                     /pdfs/edexcel_medicine_mastery_pack_FULL.pdf 301!
+/pdfs/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/ks2_ww2_retrieval_companion.pdf 301
+/pdfs/ks2_ww2/KS2_World_War_II_Master_Knowledge_Retrieval_Companion.pdf             /pdfs/ks2_ww2_retrieval_companion.pdf 301
+/pdfs/ks2_ww2/ks2_ww2_pupil_workbook.pdf                                            /pdfs/ks2_ww2_pupil_workbook.pdf 301
+/pdfs/ks2_ww2/ks2_ww2_scheme_of_work.pdf                                            /pdfs/ks2_ww2_scheme_of_work.pdf 301
+/pdfs/ks2_ww2/ks2_ww2_textbook.pdf                                                  /pdfs/ks2_ww2_textbook.pdf 301
+/pdfs/Medieval_England_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/medieval_england_retrieval_companion.pdf 301
+/pdfs/Crown_Church_or_Parliament_Master_Knowledge_Retrieval_Companion.pdf           /pdfs/monarchy_religion_power_retrieval_companion.pdf 301
+/pdfs/The_First_British_Empire_Master_Knowledge_Retrieval_Companion.pdf             /pdfs/first_british_empire_retrieval_companion.pdf 301
+/pdfs/The_Second_British_Empire_Master_Knowledge_Retrieval_Companion.pdf            /pdfs/second_british_empire_retrieval_companion.pdf 301
+/pdfs/Industrialisation_Power_and_Protest_Master_Knowledge_Retrieval_Companion.pdf  /pdfs/industrialisation_and_empire_retrieval_companion.pdf 301
+/pdfs/Causes_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf              /pdfs/great_war_retrieval_companion.pdf 301
+/pdfs/The_Course_of_the_Great_War_Master_Knowledge_Retrieval_Companion.pdf          /pdfs/great_war_part2_retrieval_companion.pdf 301
+/pdfs/The_Course_of_the_Great_War_Master_Retrieval_and_Literary_Companion.pdf       /pdfs/great_war_part2_retrieval_companion.pdf 301
+/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf              /pdfs/great_war_part2_combined_workbook.pdf 301
+/pdfs/Water_and_Sanitation_Master_Knowledge_Retrieval_Companion.pdf                 /pdfs/water_and_sanitation_retrieval_companion.pdf 301
+/pdfs/The_Shoah_Master_Knowledge_Retrieval_Companion.pdf                            /pdfs/the_shoah_retrieval_companion.pdf 301
+/pdfs/Post_War_Britain_Master_Knowledge_Retrieval_Companion.pdf                     /pdfs/post_war_britain_retrieval_companion.pdf 301
+/pdfs/History_of_Australia_Master_Knowledge_Retrieval_Companion.pdf                 /pdfs/australia_retrieval_companion.pdf 301
+/pdfs/Superpower_Relations_and_Cold_War_Master_Knowledge_Retrieval_Companion.pdf    /pdfs/cold_war_retrieval_companion.pdf 301
+/pdfs/Conflict_in_the_Middle_East_Master_Knowledge_Retrieval_Companion.pdf          /pdfs/cme_new_retrieval_companion.pdf 301
+/pdfs/Medicine_Through_Time_Master_Knowledge_Retrieval_Companion.pdf                /pdfs/edexcel_medicine_retrieval_companion.pdf 301
+/pdfs/Medicine_Thematic_Study_Master_Knowledge_Retrieval_Companion.pdf              /pdfs/edexcel_medicine_retrieval_companion.pdf 301
+/pdfs/Western_Front_Master_Knowledge_Retrieval_Companion.pdf                        /pdfs/edexcel_medicine_western_front_retrieval_companion.pdf 301
+/pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf                        /pdfs/usa_retrieval_companion.pdf 301
+/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf            /units/eee/eee_master_retrieval_companion.html 302
+/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf              /units/weimar_nazi_germany/weimar_master_retrieval_companion.html 302
+/pdfs/cme_revision_guide.pdf                                                        /pdfs/cme_new_revision_guide.pdf 301
+/pdfs/cme_mastery_pack_FULL.pdf                                                     /pdfs/cme_new_mastery_pack_FULL.pdf 301
+/pdfs/med_mastery_pack_FULL.pdf                                                     /pdfs/edexcel_medicine_mastery_pack_FULL.pdf 301
 
-# API routes to Netlify Functions
+# API route for optional Netlify Chess Sync function
 /api/chess_sync    /.netlify/functions/chess_sync    200

@@ -21,8 +21,11 @@ import { getAssetUrl } from './assets.js';
 import { isOrganisationEntity } from '../key_individuals.js';
 import { highlightGlossaryInProse } from './disciplinary_glossary.js';
 
-// Registry of active unit dossier entities keyed by composite key `${unitId}::${idx}`
-const DOSSIER_ENTITY_REGISTRY = new Map();
+// Singleton registry shared across Vite code-split chunks (main + lesson-engine)
+const DOSSIER_ENTITY_REGISTRY =
+  typeof globalThis !== 'undefined'
+    ? globalThis.__HH_DOSSIER_REGISTRY__ || (globalThis.__HH_DOSSIER_REGISTRY__ = new Map())
+    : new Map();
 
 // Surnames / single words that collide with common English words, verbs, adjectives, or places
 // Full names (e.g. "Menachem Begin", "Edward Said", "Ernst Chain", "John Snow") STILL match!
@@ -80,6 +83,22 @@ const AMBIGUOUS_SINGLE_SURNAMES = new Set([
   'robertson',
   'owens',
   'sharon',
+  'cook',
+  'ball',
+  'more',
+  'arthur',
+  'charles',
+  'henry',
+  'edward',
+  'richard',
+  'james',
+  'william',
+  'john',
+  'mary',
+  'martin',
+  'george',
+  'khan',
+  'blake',
 ]);
 
 // Non-agent book/statute/generic aliases in legacy unit JSONs that should NOT render as Person/Org pills
@@ -214,7 +233,7 @@ function fmtDossierRichText(val) {
 }
 
 const ROYAL_OR_PEER_PREFIX =
-  /^(?:King|Queen|Tsar|Kaiser|Prince|Princess|Pope|Lord|Lady|Earl|Duke|The\s+Duke|The\s+Earl|Chief|Rani)\b/i;
+  /^(?:King|Queen|Tsar|Kaiser|Prince|Princess|Pope|Lord|Lady|Earl|Duke|The\s+Duke|The\s+Earl|Chief|Rani|Archduke|Emperor|Empress|Sultan|Nawab|Cardinal|Archbishop|Bishop)\b/i;
 
 /**
  * Extracts clean, high-precision surface phrases for every Key Individual / Organisation in a unit.
@@ -253,6 +272,7 @@ function buildUnitDossierMatchers(unitData, unitId = 'unit') {
         rawEntity.active_dates ||
         '',
       isOrg,
+      unitId,
       registryKey,
       cardId: `card_${idx}`,
     };
@@ -276,7 +296,7 @@ function buildUnitDossierMatchers(unitData, unitId = 'unit') {
         // Strip territorial suffixes e.g. "King Hussein of Jordan" -> "King Hussein"
         if (!/^Mary,\s*Queen of Scots$/i.test(noHonours)) {
           const noTerritory = noHonours
-            .replace(/\s+of\s+(?:Jordan|Spain|Jhansi|Baden)$/i, '')
+            .replace(/\s+of\s+(?:Jordan|Spain|Jhansi|Baden|Norway|Normandy|Aragon|Orange|the\s+Maroons|the\s+Zulus)$/i, '')
             .trim();
           if (noTerritory !== noHonours && noTerritory.length >= 4) {
             phrases.add(noTerritory);
@@ -295,9 +315,9 @@ function buildUnitDossierMatchers(unitData, unitId = 'unit') {
           phrases.add(`${nickMatch[2]} ${nickMatch[3]}`);
         }
 
-        // Strip leading honorifics ("Sir Francis Drake" -> "Francis Drake", "Dr John Snow" -> "John Snow")
+        // Strip leading honorifics ("Sir Francis Drake" -> "Francis Drake", "Field Marshal Sir Douglas Haig" -> "Douglas Haig")
         const strippedHonorific = noHonours
-          .replace(/^(?:Sir|Dame|Dr\.?|General|Prof\.?)\s+/i, '')
+          .replace(/^(?:(?:Field\s+Marshal|Second\s+Lieutenant|Lieutenant-Colonel|Lieutenant|Prime\s+Minister|Chief\s+Justice|General|Admiral|Captain|Colonel|Governor|President|Chancellor|Professor|Prof\.?|Doctor|Dr\.?|Sepoy|Subadar|Sir|Dame)\s+)+/i, '')
           .trim();
         if (strippedHonorific !== noHonours && strippedHonorific.includes(' ')) {
           phrases.add(strippedHonorific);
@@ -786,8 +806,8 @@ export function initDossierPopover() {
     const badgeLabel = isOrg ? 'Key Organisation' : 'Key Individual';
     const badgeIcon = isOrg ? 'fa-landmark' : 'fa-user-tie';
 
-    const rawImg = entity.image_url || entity.image || '';
-    const imgUrl = rawImg
+    const rawImg = String(entity.image_url || entity.image || '').trim();
+    const imgUrl = rawImg && rawImg !== '/'
       ? entity.image_url
         ? entity.image_url
         : typeof getAssetUrl === 'function'
@@ -818,8 +838,12 @@ export function initDossierPopover() {
       bulletsHtml = `<div class="dossier-pop-actions-str">${fmtDossierRichText(rawActions)}</div>`;
     }
 
+    const isGcseDossierUnit = ['cme_new', 'eee', 'edexcel_medicine', 'usa', 'weimar_nazi_germany'].includes(
+      String(entity.unitId || '').toLowerCase(),
+    );
+    const distinctionLabel = isGcseDossierUnit ? 'Exam Distinction:' : 'Key Distinction:';
     const distinctionHtml = entity.key_distinction
-      ? `<div class="dossier-pop-distinction"><strong>Exam Distinction:</strong> ${fmtDossierRichText(entity.key_distinction)}</div>`
+      ? `<div class="dossier-pop-distinction"><strong>${distinctionLabel}</strong> ${fmtDossierRichText(entity.key_distinction)}</div>`
       : '';
 
     const safeJsJump = String(entity.jumpName || entity.displayName)

@@ -8392,48 +8392,48 @@
       "vocab": [
         {
           "term": "Privateer",
-          "definition": "An armed merchant vessel or sea captain licensed by a government with letters of marque to attack and seize enemy shipping.",
-          "syllables": "Pri-vateer",
-          "phonetic": "privateer",
-          "tier": "2"
-        },
-        {
-          "term": "Circumnavigation",
-          "definition": "Sailing completely around the world, first accomplished for England by Sir Francis Drake between 1577 and 1580.",
-          "syllables": "Ci-rcumna-viga-tion",
-          "phonetic": "circumnavigation",
-          "tier": "2"
-        },
-        {
-          "term": "New World",
-          "definition": "The Americas, which Spain claimed exclusively under papal decrees, barring English Protestant merchants from trading.",
-          "syllables": "New World",
-          "phonetic": "new world",
+          "definition": "An armed private ship captain licensed by the Crown to raid rival Spanish shipping and treasure fleets while allowing royal deniability.",
+          "syllables": "Pri-va-teer",
+          "phonetic": "pry-vuh-teer",
           "tier": "3"
         },
         {
           "term": "San Juan de Ulúa",
-          "definition": "The 1568 battle off Mexico where a Spanish fleet ambushed John Hawkins and Francis Drake, creating lifelong anti-Spanish enmity.",
-          "syllables": "San Juan de Ulúa",
-          "phonetic": "san juan de ulúa",
-          "tier": "3"
-        },
-        {
-          "term": "Drake's Raid on Cadiz",
-          "definition": "The audacious 1587 preemptive naval attack on the Spanish harbour of Cadiz that delayed the sailing of the Armada.",
-          "syllables": "Dra-ke's Raid on Ca-diz",
-          "phonetic": "drake's raid on cadiz",
+          "definition": "Mexican port where Spanish warships ambushed John Hawkins and Francis Drake in 1568, sparking decades of English retaliatory raids.",
+          "syllables": "San Juan de U-lú-a",
+          "phonetic": "san hwan day oo-loo-uh",
           "tier": "2"
         },
         {
-          "term": "Singeing the King of Spain's Beard",
-          "definition": "The popular contemporary phrase describing Drake's burning of over thirty Spanish ships and barrel staves in Cadiz harbor.",
-          "syllables": "Si-ngeing the King of Spain's Beard",
-          "phonetic": "singeing the king of spain's beard",
+          "term": "Spanish Fury",
+          "definition": "The brutal November 1576 mutiny in which unpaid Spanish soldiers sacked Antwerp, uniting all seventeen Dutch provinces under the Pacification of Ghent.",
+          "syllables": "Spa-nish Fu-ry",
+          "phonetic": "span-ish fyoor-ee",
+          "tier": "2"
+        },
+        {
+          "term": "Circumnavigation",
+          "definition": "Sir Francis Drake’s 1577–1580 global voyage aboard the Golden Hind, returning to Plymouth with £400,000 in plundered Spanish Pacific treasure.",
+          "syllables": "Cir-cum-nav-i-ga-tion",
+          "phonetic": "sur-kum-nav-ih-gay-shun",
+          "tier": "3"
+        },
+        {
+          "term": "Cacafuego",
+          "definition": "Spain’s richest Pacific treasure galleon captured by Francis Drake in March 1579, yielding over £140,000 in silver, gold, and jewels.",
+          "syllables": "Ca-ca-fue-go",
+          "phonetic": "kah-kuh-fway-goh",
+          "tier": "2"
+        },
+        {
+          "term": "Treaty of Joinville",
+          "definition": "The December 1584 Catholic alliance between Philip II of Spain and the French Catholic League, isolating Protestant England and pushing Elizabeth toward war.",
+          "syllables": "Trea-ty of Join-ville",
+          "phonetic": "tree-tee ov zhwan-veel",
           "tier": "3"
         }
       ],
-      "vocab_cloze_text": "Commercial rivalry between England and Spain flared after the Spanish ambush at [San Juan de Ulúa] in 1568. English sailors defied Spanish trade monopolies across the [New World], led by daring captains operating as a licensed [Privateer]. Francis Drake achieved fame and immense plunder during his 1577–80 [Circumnavigation] of the globe. As Philip II assembled an invasion armada in 1587, Drake struck the enemy coast in [Drake's Raid on Cadiz], an exploit popularly celebrated as [Singeing the King of Spain's Beard].",
+      "vocab_cloze_text": "Commercial hostility between England and Spain deepened after the Spanish ambush at [San Juan de Ulúa] in 1568, prompting Francis Drake to raid New World ports as a Crown-backed [Privateer]. In Europe, unpaid Habsburg troops sacked Antwerp during the 1576 [Spanish Fury], while Drake completed his 1577–80 [Circumnavigation] and captured the treasure galleon [Cacafuego]. After William of Orange was assassinated and Spain signed the 1584 [Treaty of Joinville] with the French Catholic League, Elizabeth abandoned indirect aid for open intervention.",
       "flashcards": [
         {
           "term": "Privateer",
@@ -9986,44 +9986,44 @@
       "vocab": [
         {
           "term": "Treaty of Nonsuch",
-          "definition": "The 1585 military alliance in which Elizabeth openly pledged 7,400 troops under Leicester to assist Dutch Protestant rebels.",
-          "syllables": "Trea-ty of No-nsuch",
-          "phonetic": "treaty of nonsuch",
+          "definition": "The August 1585 Anglo-Dutch alliance in which Elizabeth I openly committed 7,400 English troops and £126,000 a year to aid Protestant rebels against Spain.",
+          "syllables": "Trea-ty of Non-such",
+          "phonetic": "tree-tee ov nun-such",
           "tier": "3"
         },
         {
           "term": "Robert Dudley",
-          "definition": "The Earl of Leicester, a royal favourite who commanded the English military expeditionary force in the Netherlands.",
-          "syllables": "Ro-bert Du-dley",
-          "phonetic": "robert dudley",
+          "definition": "Earl of Leicester and royal favourite who commanded the English expedition to the Netherlands and infuriated Elizabeth by accepting the title Governor-General in 1586.",
+          "syllables": "Ro-bert Dud-ley",
+          "phonetic": "rob-urt dud-lee",
           "tier": "2"
         },
         {
-          "term": "Spanish Netherlands",
-          "definition": "The seventeen Dutch provinces ruled by Philip II, whose strategic ports posed a direct invasion threat to southern England.",
-          "syllables": "Spa-nish Ne-therlands",
-          "phonetic": "spanish netherlands",
+          "term": "Flushing",
+          "definition": "Strategic Dutch deep-water cautionary port garrisoned by English troops under the Treaty of Nonsuch as security for Elizabeth’s war loans.",
+          "syllables": "Flush-ing",
+          "phonetic": "flush-ing",
           "tier": "2"
         },
         {
-          "term": "Pacification of Ghent",
-          "definition": "The 1576 agreement uniting all seventeen Dutch provinces in demanding the expulsion of mutinous Spanish troops.",
-          "syllables": "Pa-cifi-cation of Ghent",
-          "phonetic": "pacification of ghent",
+          "term": "Duke of Parma",
+          "definition": "Alexander Farnese, Philip II’s brilliant military commander of the 27,000-strong Spanish Army of Flanders whom the Armada was ordered to escort across the Channel.",
+          "syllables": "Duke of Par-ma",
+          "phonetic": "dook ov par-muh",
           "tier": "2"
         },
         {
-          "term": "Protestant Rebels",
-          "definition": "The Dutch insurgents led by William of Orange who fought prolonged wars of independence against Spanish Habsburg rule.",
-          "syllables": "Pro-te-stant Re-bels",
-          "phonetic": "protestant rebels",
-          "tier": "3"
+          "term": "Cadiz",
+          "definition": "Major Spanish naval port raided by Sir Francis Drake in April 1587 (\"Singeing the King of Spain’s Beard\"), destroying 30 vessels and delaying the Armada by a year.",
+          "syllables": "Ca-diz",
+          "phonetic": "kuh-diz",
+          "tier": "2"
         },
         {
-          "term": "Crescent Formation",
-          "definition": "The tightly packed, formidable defensive naval sailing layout adopted by the Spanish Armada to prevent boarding actions.",
-          "syllables": "Cre-scent Fo-rma-tion",
-          "phonetic": "crescent formation",
+          "term": "Barrel staves",
+          "definition": "Seasoned oak planks burned by Drake along Cape St Vincent in 1587, forcing Spain to store Armada food and water in leaky green-pine casks that rotted at sea.",
+          "syllables": "Bar-rel staves",
+          "phonetic": "bar-ul stayvz",
           "tier": "3"
         }
       ],
@@ -10590,69 +10590,67 @@
         {
           "id": "eee_l7_source_b",
           "letter": "B",
-          "title": "Source B: Queen Elizabeth I Addressing the Troops at Tilbury (August 1588)",
-          "src": "/images/elizabeth_tilbury_speech.jpg",
-          "image": "/images/elizabeth_tilbury_speech.jpg",
-          "source": "/images/elizabeth_tilbury_speech.jpg",
           "type": "written",
-          "text": "My loving people, we have been persuaded by some that are careful of our safety to take heed how we commit ourselves to armed multitudes, for fear of treachery; but I assure you I do not desire to live to distrust my faithful and loving people... I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too, and think foul scorn that Parma or Spain, or any prince of Europe, should dare to invade the borders of my realm.",
-          "content": "My loving people, we have been persuaded by some that are careful of our safety to take heed how we commit ourselves to armed multitudes, for fear of treachery; but I assure you I do not desire to live to distrust my faithful and loving people... I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too, and think foul scorn that Parma or Spain, or any prince of Europe, should dare to invade the borders of my realm.",
-          "caption": "Queen Elizabeth I on horseback reviewing 17,000 militia troops assembled at West Tilbury in August 1588 to resist a Spanish landing.",
-          "desc": "Engraving of Queen Elizabeth I delivering her celebrated speech at Tilbury camp.",
-          "provenance": "British Museum, Department of Prints and Drawings (1848,0911.233), 1588.",
-          "citation": "British Museum, London.",
-          "hinge_question": "How did Elizabeth's Tilbury speech turn her gender from a perceived weakness into a rallying cry for national unity?",
-          "source_context": "On 9 August 1588, with Parma's army poised across the Channel, Elizabeth rode through the militia camp at Tilbury clad in a silver breastplate. She proclaimed: 'I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too.' **Hinge Question:** How did Elizabeth's Tilbury speech turn her gender from a perceived weakness into a rallying cry for national unity?",
-          "context": "On 9 August 1588, with Parma's army poised across the Channel, Elizabeth rode through the militia camp at Tilbury.",
-          "question_badge": "Author’s Purpose",
-          "question_type": "Author’s Purpose",
-          "enquiry_question": "What was Elizabeth's primary political motive in delivering her speech to the soldiers at Tilbury?",
-          "model_answer": "Elizabeth aimed to inspire fiercely loyal resistance and refute Catholic propaganda claiming a female sovereign could not defend her realm, forging a powerful emotional bond with her soldiers on the eve of battle.",
+          "title": "Source B: Terms of the Anglo-Dutch Treaty of Nonsuch (10 August 1585)",
+          "text": "Her Majesty shall furnish and maintain during the war in the Low Countries four thousand footmen and four hundred horsemen, increased to seven thousand four hundred soldiers under a nobleman of quality and rank; and for assurance of repayment of Her Majesty’s charges, the towns and garrisons of Flushing and the Brielle, with the castle of Rammekens, shall be delivered immediately into Her Majesty’s hands.",
+          "content": "Her Majesty shall furnish and maintain during the war in the Low Countries four thousand footmen and four hundred horsemen, increased to seven thousand four hundred soldiers under a nobleman of quality and rank; and for assurance of repayment of Her Majesty’s charges, the towns and garrisons of Flushing and the Brielle, with the castle of Rammekens, shall be delivered immediately into Her Majesty’s hands.",
+          "caption": "Key military clauses of the Treaty of Nonsuch signed at Nonsuch Palace in Surrey on 10 August 1585 between Elizabeth I and the Dutch Estates-General.",
+          "desc": "Official diplomatic text of the Anglo-Dutch Treaty of Nonsuch (10 August 1585).",
+          "provenance": "The National Archives, Kew, State Papers Foreign, Treaty Rolls (SP 103/35), 10 August 1585.",
+          "citation": "The National Archives, Kew (SP 103/35).",
+          "hinge_question": "Why did King Philip II treat the signing of the Treaty of Nonsuch as an open English declaration of war?",
+          "source_context": "Signed at Nonsuch Palace in August 1585 after the assassination of William of Orange and the fall of Antwerp, the Treaty of Nonsuch committed royal English troops directly against Spanish forces in the Netherlands while securing Flushing and Brielle as cautionary ports. **Hinge Question:** Why did King Philip II treat the signing of the Treaty of Nonsuch as an open English declaration of war?",
+          "context": "Signed at Nonsuch Palace in August 1585 after the assassination of William of Orange and the fall of Antwerp.",
+          "question_badge": "Source Inference",
+          "question_type": "Source Inference",
+          "enquiry_question": "What can you infer from Source B about Elizabeth I’s war aims in the Netherlands in August 1585?",
+          "model_answer": "Source B shows that Elizabeth sought to block total Spanish conquest of the Channel coast without annexing the Netherlands outright, insisting on holding deep-water cautionary ports like Flushing as strict financial collateral for her troops.",
           "teacher_notes": {
-            "source_context": "On 9 August 1588, with Parma's army poised across the Channel, Elizabeth rode through the militia camp at Tilbury clad in a silver breastplate. She proclaimed: 'I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king, and of a king of England too.' **Hinge Question:** How did Elizabeth's Tilbury speech turn her gender from a perceived weakness into a rallying cry for national unity?"
+            "source_context": "Signed at Nonsuch Palace in August 1585 after the assassination of William of Orange and the fall of Antwerp, the Treaty of Nonsuch committed royal English troops directly against Spanish forces in the Netherlands while securing Flushing and Brielle as cautionary ports. **Hinge Question:** Why did King Philip II treat the signing of the Treaty of Nonsuch as an open English declaration of war?"
           }
         },
         {
           "id": "eee_l7_source_c",
           "letter": "C",
-          "title": "Source C: Eyewitness Account of the English Fireships at Calais Roads (Midnight, 7 August 1588)",
-          "caption": "Contemporary eyewitness narrative recording the panic among Spanish crews when eight blazing English fireships drifted into the Calais roadstead at midnight on 7 August 1588.",
-          "desc": "Portrait of the 7th Duke of Medina Sidonia in Spanish court armor.",
-          "provenance": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
-          "citation": "The National Archives, Kew (State Papers Foreign, Spain / SP 94), August 1588.",
-          "hinge_question": "Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
-          "source_context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator, but he possessed no naval combat experience. When Philip appointed him, he pleaded to be excused, confessing that he was prone to seasickness and had no knowledge of sea warfare. **Hinge Question:** Why did Medina Sidonia write to King Philip II expressing severe doubts about his own ability to command the Grand Armada?",
-          "context": "Medina Sidonia was one of the wealthiest grandees in Spain and a competent administrator.",
-          "question_badge": "Source Inference",
-          "question_type": "Source Inference",
-          "enquiry_question": "What does Source C suggest was the decisive psychological impact of the English fireships on the Spanish Armada?",
-          "model_answer": "Source C reveals that the fireships induced absolute panic by triggering fears of exploding hellburners, causing Spanish captains to sever their anchors and irrevocably destroy their disciplined crescent formation.",
-          "teacher_notes": {
-            "source_context": "The fireships caused zero physical damage to Spanish hulls, but their psychological effect was catastrophic. By severing their anchors, the Spanish ships could not regroup in Calais roads and were swept northeast toward the dangerous shallows of Gravelines. **Hinge Question:** Why was the loss of their anchors at Calais far more fatal to the Spanish Armada than direct artillery hits from English culverins?"
-          },
           "type": "written",
-          "text": "At midnight two hours before day, the English loosed eight great ships filled with pitch, brimstone, and wild-fire, sailing directly upon our fleet before the wind. Seeing the blazing hulls drifting among us with their cannon discharging in the flames, our captains cried 'The hellburners of Antwerp!' In terrifying panic, every galleon cut her cables and severed their anchors, scattering in wild confusion across the stormy shoals."
+          "title": "Source C: Queen Elizabeth I’s Furious Letter to the Earl of Leicester (10 February 1586)",
+          "text": "How contemptuously we conceive ourselves to have been used by you, you shall by this bearer understand, whom we have expressly sent unto you to charge you withal! We could never have imagined, had we not seen it fall out in experience, that a man raised up by ourself, and extraordinarily favoured by us above any other subject of this land, would have in so contemptible a sort broken our commandment in a cause that so greatly toucheth us in honour.",
+          "content": "How contemptuously we conceive ourselves to have been used by you, you shall by this bearer understand, whom we have expressly sent unto you to charge you withal! We could never have imagined, had we not seen it fall out in experience, that a man raised up by ourself, and extraordinarily favoured by us above any other subject of this land, would have in so contemptible a sort broken our commandment in a cause that so greatly toucheth us in honour.",
+          "caption": "Queen Elizabeth’s stinging royal rebuke ordered to be read aloud before the Dutch Council of State after Robert Dudley accepted the title \"Governor-General\" without her consent.",
+          "desc": "Letter from Queen Elizabeth I to Robert Dudley, Earl of Leicester, 10 February 1586.",
+          "provenance": "British Library, Cotton MS Galba C IX, fol. 79 (Queen Elizabeth I to the Earl of Leicester, 10 February 1586).",
+          "citation": "British Library, London (Cotton MS Galba C IX).",
+          "hinge_question": "Why was Elizabeth so furious that Robert Dudley accepted supreme political authority as \"Governor-General\" of the United Provinces?",
+          "source_context": "In January 1586, Robert Dudley accepted the supreme title of Governor-General of the Netherlands without consulting Elizabeth. Outraged because she still hoped to negotiate a compromise keeping Philip II as nominal ruler while restoring Dutch autonomy, Elizabeth forced her envoy Sir Thomas Heneage to read this rebuke publicly before the Dutch Estates. **Hinge Question:** Why was Elizabeth so furious that Robert Dudley accepted supreme political authority as \"Governor-General\" of the United Provinces?",
+          "context": "In January 1586, Robert Dudley accepted the supreme title of Governor-General of the Netherlands without consulting Elizabeth.",
+          "question_badge": "Author’s Purpose",
+          "question_type": "Author’s Purpose",
+          "enquiry_question": "Why did Elizabeth insist that Source C be read aloud publicly in front of the Dutch Estates-General?",
+          "model_answer": "Elizabeth wanted to distance the English Crown publicly from deposing King Philip II outright, signalling to Madrid that England was defending Dutch liberties rather than claiming sovereignty—even though publicly humiliating Leicester undermined Dutch confidence in his command.",
+          "teacher_notes": {
+            "source_context": "In January 1586, Robert Dudley accepted the supreme title of Governor-General of the Netherlands without consulting Elizabeth. Outraged because she still hoped to negotiate a compromise keeping Philip II as nominal ruler while restoring Dutch autonomy, Elizabeth forced her envoy Sir Thomas Heneage to read this rebuke publicly before the Dutch Estates. **Hinge Question:** Why was Elizabeth so furious that Robert Dudley accepted supreme political authority as \"Governor-General\" of the United Provinces?"
+          }
         },
         {
           "id": "eee_l7_source_d",
           "letter": "D",
-          "title": "Source D: Contemporary Painting of the Battle of Gravelines (8 August 1588)",
-          "src": "/images/battle_of_gravelines_1588.jpg",
-          "image": "/images/battle_of_gravelines_1588.jpg",
-          "source": "/images/battle_of_gravelines_1588.jpg",
-          "caption": "The Battle of Gravelines (8 August 1588): English race-built galleons engaging the disarrayed Spanish fleet at point-blank range along the Flemish coast.",
-          "desc": "English race-built warships using superior speed and culverin broadsides against the Spanish Armada.",
-          "provenance": "National Maritime Museum, Greenwich (BHC0262), contemporary 16th-century marine artwork.",
-          "citation": "National Maritime Museum, Greenwich.",
-          "hinge_question": "What does Dudley's correspondence reveal about the logistical chaos and food shortages plaguing English defensive troops in Essex?",
-          "source_context": "Portrait of Leicester as commander-in-chief of English land forces in 1588. Despite the patriotic rhetoric, Dudley's urgent letters to the Privy Council complained of severe food shortages, untrained militia conscripts, and late pay, warning that the camp was vulnerable to disease and panic. **Hinge Question:** What does Dudley's correspondence reveal about the logistical chaos and food shortages plaguing English defensive troops in Essex?",
-          "context": "Portrait of Leicester as commander-in-chief of English land forces in 1588.",
+          "type": "written",
+          "title": "Source D: Sir Francis Drake’s Dispatch to Sir Francis Walsingham from HMS Elizabeth Bonaventure (27 April 1587)",
+          "text": "Right Honourable, on the nineteenth of this month we arrived within the road of Cadiz, where we found sundry great ships of tremendous burden laden with provisions, biscuits, wine, and great store of hoops and pipe-staves prepared for the King of Spain’s service against England. By God’s mercy we have sunk, burned, and carried away above thirty sail... Look well to the coast of England, for the Duke of Parma and the Spaniards prepare mighty forces, though we have singed the King of Spain’s beard for this summer.",
+          "content": "Right Honourable, on the nineteenth of this month we arrived within the road of Cadiz, where we found sundry great ships of tremendous burden laden with provisions, biscuits, wine, and great store of hoops and pipe-staves prepared for the King of Spain’s service against England. By God’s mercy we have sunk, burned, and carried away above thirty sail... Look well to the coast of England, for the Duke of Parma and the Spaniards prepare mighty forces, though we have singed the King of Spain’s beard for this summer.",
+          "caption": "Sir Francis Drake reporting directly to spymaster Sir Francis Walsingham immediately after destroying Spanish ships and seasoned barrel staves at Cadiz.",
+          "desc": "Naval dispatch from Sir Francis Drake to Sir Francis Walsingham aboard HMS Elizabeth Bonaventure, 27 April 1587.",
+          "provenance": "The National Archives, Kew, State Papers Domestic, Elizabeth I (SP 12/200, f. 114), 27 April 1587.",
+          "citation": "The National Archives, Kew (SP 12/200).",
+          "hinge_question": "Why did destroying seasoned wooden hoops and barrel staves hurt the 1588 Armada even more than sinking warships at Cadiz?",
+          "source_context": "Written aboard his flagship HMS Elizabeth Bonaventure eight days after storming Cadiz harbour, Drake’s report to Walsingham highlights both the destruction of over thirty Spanish vessels and the burning of seasoned oak pipe-staves—forcing Spain to use unseasoned pine barrels that rotted food and water in 1588. **Hinge Question:** Why did destroying seasoned wooden hoops and barrel staves hurt the 1588 Armada even more than sinking warships at Cadiz?",
+          "context": "Written aboard his flagship HMS Elizabeth Bonaventure eight days after storming Cadiz harbour in April 1587.",
           "question_badge": "Cross-Referencing",
           "question_type": "Cross-Referencing",
-          "enquiry_question": "How does Source D support the view that superior naval tactics and gunnery, rather than weather alone, defeated the Armada at Gravelines?",
-          "model_answer": "Source D shows English galleons exploiting superior manoeuvrability to fire repeated broadsides into Spanish warships at close range, riddling Spanish hulls while preventing the Spanish infantry from boarding.",
+          "enquiry_question": "How does Source D demonstrate both the immediate success and the limits of Drake’s 1587 raid on Cadiz?",
+          "model_answer": "Source D confirms that burning over thirty supply ships and vital wooden pipe-staves disrupted Spanish logistics for an entire sailing season, yet Drake explicitly warns Walsingham to guard England’s coast because Philip II and Parma were still assembling a massive invasion force.",
           "teacher_notes": {
-            "source_context": "At Gravelines, Lord Howard and Drake closed to within 100 yards of the disorganized Spanish fleet. English race-built ships could fire three broadsides to Spain's one, sinking three great galleons and forcing the battered Armada onto the North Sea. **Hinge Question:** How did English reload speed and long culverin guns neutralize Spain's overwhelming superiority in hand-to-hand soldiers?"
+            "source_context": "Written aboard his flagship HMS Elizabeth Bonaventure eight days after storming Cadiz harbour, Drake’s report to Walsingham highlights both the destruction of over thirty Spanish vessels and the burning of seasoned oak pipe-staves—forcing Spain to use unseasoned pine barrels that rotted food and water in 1588. **Hinge Question:** Why did destroying seasoned wooden hoops and barrel staves hurt the 1588 Armada even more than sinking warships at Cadiz?"
           }
         },
         {
@@ -10685,7 +10683,7 @@
         "pair": "Discuss your thoughts with your partner. Identify where your ideas agree and where they differ.",
         "share": "Share your pair's combined conclusion with the class."
       },
-      "vocab_cloze_text": "Open war between England and Spain became inevitable over conflict in the [Spanish Netherlands]. Elizabeth had initially supported the 1576 [Pacification of Ghent] to expel Spanish armies peacefully. However, after the assassination of William of Orange, she committed English soldiers to aid the [Protestant Rebels] under the historic [Treaty of Nonsuch]. Elizabeth dispatched her favourite noble [Robert Dudley] to assume military command. In response, King Philip II ordered the preparation of an invincible fleet sailing in an impenetrable [Crescent Formation].",
+      "vocab_cloze_text": "In August 1585 Elizabeth signed the [Treaty of Nonsuch], garrisoning the cautionary port of [Flushing] and sending 7,400 troops under [Robert Dudley] to slow the advance of Spain's [Duke of Parma] in the Netherlands. Learning that Philip II was assembling an invasion fleet, Francis Drake raided [Cadiz] harbour in April 1587, sinking thirty vessels and burning seasoned oak [Barrel staves] off Cape St Vincent—delaying the Armada's launch until July 1588.",
       "gcse_task": {
         "title": "Edexcel GCSE Paper 2 Section B Practice: Q1 & Q2",
         "tasks": [
@@ -17033,7 +17031,7 @@
         "pair": "Discuss your thoughts with your partner. Identify where your ideas agree and where they differ.",
         "share": "Share your pair's combined conclusion with the class."
       },
-      "vocab_cloze_text": "The Elizabethan era marked the dawn of English oceanic global expansion. Navigators benefited from advanced tools: using an [Astrolabe] or a [Quadrant] allowed sailors to determine latitude accurately, while a [Log and Line] measured sailing speed. Mapmakers adopted the new [Mercator Projection] to plot direct navigational courses across vast oceans. These scientific breakthroughs enabled Francis Drake to complete his celebrated [Circumnavigation] of the globe between 1577 and 1580 aboard the famed [Golden Hind].",
+      "vocab_cloze_text": "The Elizabethan era marked the dawn of English oceanic global expansion. Navigators benefited from advanced tools: using the [Astrolabe] or a [Quadrant] allowed sailors to determine latitude accurately, while a [Log and Line] measured sailing speed. Mapmakers adopted the new [Mercator Projection] to plot direct navigational courses across vast oceans. These scientific breakthroughs enabled Francis Drake to complete his celebrated [Circumnavigation] of the globe between 1577 and 1580 aboard the famed [Golden Hind].",
       "gcse_task": {
         "title": "Edexcel GCSE Paper 2 Section B Practice: Q1 & Q2",
         "tasks": [
@@ -19424,7 +19422,7 @@
       "name": "James Pilkington",
       "group": "🎓 Tier 4: Professionals & High-Ranking Clergy",
       "bio": "The Protestant Bishop of Durham appointed by Elizabeth.",
-      "image": "/"
+      "image": ""
     },
     {
       "name": "Thomas Harriot",
@@ -19436,13 +19434,13 @@
       "name": "Thomas Phelippes",
       "group": "🎓 Tier 4: Professionals & High-Ranking Clergy",
       "bio": "Walsingham’s chief cryptographer and codebreaker.",
-      "image": "/"
+      "image": ""
     },
     {
       "name": "Gilbert Gifford",
       "group": "🎓 Tier 4: Professionals & High-Ranking Clergy",
       "bio": "A Catholic priest who acted as Walsingham’s agent provocateur during the Babington Plot.",
-      "image": "/"
+      "image": ""
     },
     {
       "name": "Edmund Campion",
@@ -19454,7 +19452,7 @@
       "name": "Roberto Ridolfi",
       "group": "⚖️ Tier 5: The \"Middling Sort\" (Wealthy Merchants & Bankers)",
       "bio": "An Italian banker based in London who used his financial networks to organize the Ridolfi Plot in 1571.",
-      "image": "/"
+      "image": ""
     },
     {
       "name": "Chief Wingina",

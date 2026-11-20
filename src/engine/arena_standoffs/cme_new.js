@@ -1,240 +1,222 @@
 /**
  * ARENA STANDOFFS: Conflict in the Middle East 1945–1995 (cme_new)
+ * Complete 12-lesson Edexcel GCSE Paper 2 alignment (lesson_0 through lesson_11).
  */
 export const CME_NEW_STANDOFFS = {
-  lesson_1: {
-    title: "British Imperial Diplomacy vs. Arab National Sovereignty",
-    subtitle: "Imperial Pledges & Conflicting Borders (1915–1945)",
+  lesson_0: {
+    title: "British Mandate Officials vs. Arab & Zionist Nationalists",
+    subtitle: "Broken Promises & Imperial Borders: McMahon, Sykes–Picot, Balfour & Peel (1915–1939)",
     roleA: {
-      name: "Sir Henry McMahon & British Imperial Cabinet",
-      title: "Wartime Strategy & Imperial Commitments",
-      objective: "Defend British diplomatic promises (McMahon-Hussein & Balfour Declaration) as vital wartime diplomacy to defeat the Ottomans, protect the Suez Canal, and balance competing geopolitical interests.",
-      starter: "&ldquo;British imperial policy had to balance conflicting wartime commitments because...&rdquo;",
-      keyTerms: ["McMahon-Hussein Correspondence", "Balfour Declaration", "Sykes-Picot Agreement", "League of Nations Mandate"]
+      name: "British Imperial Cabinet & Mandate Officials",
+      title: "Balancing Wartime Commitments & Guarding the Suez Lifeline",
+      objective: "Defend British Mandate policy—including the 1937 Peel Commission partition proposal and 1939 White Paper—as pragmatic attempts to keep order and protect imperial oil and Suez routes.",
+      starter: "&ldquo;Britain faced two irreconcilable national movements in Palestine while fighting two world wars; the 1937 Peel Plan and 1939 White Paper sought stability because...&rdquo;",
+      keyTerms: ["Balfour Declaration (1917)", "Sykes–Picot Agreement (1916)", "Peel Commission (1937)", "1939 MacDonald White Paper"]
     },
     roleB: {
-      name: "Sharif Hussein of Mecca & Arab Nationalist Movement",
-      title: "Arab Independence & The Betrayal of Imperial Partition",
-      objective: "Argue that Britain deliberately misled the Arab Revolt by promising independent sovereignty while secretly dividing Arab lands into European colonial zones.",
-      starter: "&ldquo;Britain’s contradictory promises shattered our trust and created generational conflict because...&rdquo;",
-      keyTerms: ["Arab Revolt", "Self-Determination", "Secret Partition", "Imperial Betrayal"]
+      name: "Arab Nationalists & Zionist Leaders",
+      title: "Condemning Contradictory British Pledges",
+      objective: "Argue that Britain's double-dealing—promising Arab independence in the McMahon–Hussein letters, Zionism a national home in 1917, and then capping Jewish immigration in 1939—made violent conflict inevitable.",
+      starter: "&ldquo;Britain made contradictory promises to win World War One and then betrayed both Arabs during the 1936–39 Revolt and Jewish refugees under the 1939 White Paper because...&rdquo;",
+      keyTerms: ["McMahon–Hussein Letters", "1936–39 Arab Revolt", "Immigration Quotas", "Imperial Double-Dealing"]
     }
   },
-  lesson_2: {
-    title: "David Ben-Gurion (Jewish Agency) vs. Arab Higher Committee",
-    subtitle: "The End of the Mandate & The 1947 UN Partition Plan",
+  lesson_1: {
+    title: "David Ben-Gurion (Jewish Agency) vs. The Arab Higher Committee",
+    subtitle: "The End of the British Mandate & The 1947 UN Partition Plan (1945–1948)",
     roleA: {
-      name: "David Ben-Gurion & Jewish Agency",
-      title: "Existential Right to a Sovereign Jewish Homeland",
-      objective: "Argue that following the Holocaust, a sovereign Jewish state was an existential necessity, and defend acceptance of the 1947 UN Partition Plan (Resolution 181).",
-      starter: "&ldquo;After the catastrophic murder of six million European Jews, a sovereign homeland was our only safeguard because...&rdquo;",
-      keyTerms: ["UN Resolution 181", "Holocaust Survivors", "Jewish Statehood", "Exodus 1947"]
+      name: "David Ben-Gurion & The Jewish Agency",
+      title: "Accepting UN Resolution 181 After the Holocaust",
+      objective: "Argue that after the murder of six million Jews in the Holocaust and the turning away of ships like Exodus, accepting the 1947 UN Partition Plan was essential to secure a sovereign Jewish refuge.",
+      starter: "&ldquo;After the Holocaust left hundreds of thousands of survivors stateless and Britain barred the Exodus, accepting UN Resolution 181 was vital for survival because...&rdquo;",
+      keyTerms: ["UN Resolution 181 (Nov 1947)", "The Ship Exodus (1947)", "King David Hotel Bombing", "Sovereign Jewish State"]
     },
     roleB: {
       name: "The Arab Higher Committee & Arab League",
-      title: "Rejection of Partition & Defense of Palestinian Majority Rights",
-      objective: "Argue that the 1947 UN Partition Plan was inherently unjust, allocating over 55% of Palestine to a Jewish minority that owned under 7% of the land without consulting the indigenous population.",
-      starter: "&ldquo;The UN Partition Plan was illegitimate and completely unfair to the indigenous Arab majority because...&rdquo;",
-      keyTerms: ["Self-Determination", "Unfair Land Allocation", "Colonial Imposition", "Rejection of Partition"]
+      title: "Rejecting Partition of an Indigenous Arab Majority Land",
+      objective: "Argue that UN Resolution 181 unjustly awarded 56% of Palestine to a Jewish community representing one-third of the population and owning ~7% of the land, violating majority self-determination.",
+      starter: "&ldquo;Handing 56% of Palestine to one-third of the population without the consent of the indigenous Arab majority violated the UN's own principle of self-determination because...&rdquo;",
+      keyTerms: ["56% vs 43% Land Split", "Majority Self-Determination", "Arab Higher Committee", "Civil War (1947–1948)"]
+    }
+  },
+  lesson_2: {
+    title: "Palestinian Arab Refugees vs. The Israeli Provisional Government",
+    subtitle: "The 1948–49 Arab-Israeli War, The Rhodes Armistices & The Refugee Crisis",
+    roleA: {
+      name: "Palestinian Refugees & UNRWA Advocates",
+      title: "Al-Nakba & The Right of Return (UN Resolution 194)",
+      objective: "Argue that over 700,000 Palestinians fled or were expelled amid terror such as Deir Yassin, had their villages demolished, and possessed an international right to return home.",
+      starter: "&ldquo;Over 700,000 Palestinian civilians lost their homes and farms during the Nakba, and barring their return under the Absentees' Property Law entrenched injustice because...&rdquo;",
+      keyTerms: ["Al-Nakba (700,000+ Refugees)", "Deir Yassin (April 1948)", "UNRWA Camps", "UN Resolution 194"]
+    },
+    roleB: {
+      name: "David Ben-Gurion & IDF Command",
+      title: "Surviving Five Invading Armies & Absorbing Jewish Immigrants",
+      objective: "Argue that five Arab states invaded on 15 May 1948 to destroy the newborn state, that Israel absorbed hundreds of thousands of Holocaust survivors and Mizrahi Jews under the 1950 Law of Return, and could not admit a hostile population before peace.",
+      starter: "&ldquo;Five Arab armies invaded hours after independence to destroy Israel; securing 78% of the land under the 1949 Rhodes Armistices and passing the Law of Return ensured survival because...&rdquo;",
+      keyTerms: ["Five Arab Armies Invade", "1949 Rhodes Armistices (Green Line)", "1950 Law of Return", "Jordanian West Bank & Egyptian Gaza"]
     }
   },
   lesson_3: {
-    title: "Palestinian Arab Refugees vs. Israeli Provisional Government",
-    subtitle: "The 1948–49 War & The Palestinian Refugee Crisis (Nakba)",
+    title: "President Gamal Abdel Nasser vs. Prime Minister Anthony Eden & Ben-Gurion",
+    subtitle: "Pan-Arab Nationalism, The Czech Arms Deal & The 1956 Suez Crisis",
     roleA: {
-      name: "Palestinian Arab Refugees & Arab Delegations",
-      title: "The Right of Return & The Tragedy of the Nakba",
-      objective: "Argue that 700,000 Palestinians were forcibly expelled or fled in terror from their ancestral homes (under UN Resolution 194) and must be granted the right to return and compensation.",
-      starter: "&ldquo;Our people were driven from their ancestral villages by military force and terror, and international law demands our return because...&rdquo;",
-      keyTerms: ["The Nakba", "UN Resolution 194", "Right of Return", "Deir Yassin"]
+      name: "President Gamal Abdel Nasser (Egypt)",
+      title: "Nationalising the Suez Canal & Ending Colonial Domination",
+      objective: "Defend the 1955 Czech arms deal and July 1956 nationalisation of the Suez Canal to fund the Aswan High Dam after Britain and America withdrew loans, exposing the secret Sèvres plot.",
+      starter: "&ldquo;When Western powers cancelled Aswan High Dam loans, Egypt exercised its sovereign right to nationalise the Suez Canal on Egyptian soil—and exposed Anglo-French-Israeli collusion at Sèvres because...&rdquo;",
+      keyTerms: ["1955 Czech Arms Deal", "Aswan High Dam", "Suez Nationalisation (July 1956)", "Pan-Arab Hero"]
     },
     roleB: {
-      name: "The Israeli Government & IDF Command",
-      title: "National Survival & Security of the New State",
-      objective: "Argue that Arab leaders provoked the 1948 war by invading Israel, and that admitting hundreds of thousands of hostile refugees would destroy the newly born Jewish state from within.",
-      starter: "&ldquo;Israel fought a desperate war for survival provoked by five invading Arab armies, and we cannot absorb hostile populations because...&rdquo;",
-      keyTerms: ["Arab Invasion", "War for Survival", "Absorbing Jewish Refugees", "State Security"]
+      name: "Anthony Eden & David Ben-Gurion (Protocol of Sèvres)",
+      title: "Breaking the Tiran Blockade & Stopping Fedayeen Raids",
+      objective: "Argue that Nasser armed fedayeen raiders in Gaza, blockaded Israeli shipping in the Straits of Tiran, and threatened Europe's vital oil artery—justifying military intervention.",
+      starter: "&ldquo;Nasser's fedayeen raids from Gaza, blockade of the Straits of Tiran, and seizure of an international waterway threatened regional security and trade because...&rdquo;",
+      keyTerms: ["Protocol of Sèvres (Oct 1956)", "Fedayeen Raids", "Straits of Tiran Reopened", "UNEF Sinai Peacekeepers"]
     }
   },
   lesson_4: {
-    title: "President Gamal Abdel Nasser vs. Prime Minister Anthony Eden",
-    subtitle: "The 1956 Suez Crisis & Nationalisation of the Canal",
+    title: "Syria, Egypt & The Newly Founded PLO vs. Prime Minister Levi Eshkol (Israel)",
+    subtitle: "Water Disputes, Fatah Raids, Samu & Escalating Rhetoric (1964–Early 1967)",
     roleA: {
-      name: "President Gamal Abdel Nasser (Egypt)",
-      title: "Nationalisation of the Suez Canal & Anti-Imperialism",
-      objective: "Defend nationalising the Suez Canal as a sovereign Egyptian right to fund the Aswan High Dam and eliminate Western colonial domination.",
-      starter: "&ldquo;The Suez Canal runs through Egyptian soil, was dug by Egyptian labor, and our national sovereignty gave us the right to take it because...&rdquo;",
-      keyTerms: ["Nationalisation", "Aswan High Dam", "Anti-Imperialism", "Pan-Arab Leadership"]
+      name: "Arab League Summit Leaders & Fatah",
+      title: "Challenging Water Diversion & Launching Palestinian Resistance",
+      objective: "Defend founding the PLO at the 1964 Cairo Summit, challenging Israel's diversion of Jordan River water to the Negev, and condemning Israel's disproportionate tank raid on Samu in Jordan (November 1966).",
+      starter: "&ldquo;Israel's unilateral National Water Carrier and devastating tank raid against Jordanian villagers at Samu forced Arab states to coordinate defence because...&rdquo;",
+      keyTerms: ["1964 Cairo Summit & PLO", "Headwater Diversion Plan", "Fatah Founded", "Samu Raid (November 1966)"]
     },
     roleB: {
-      name: "Prime Minister Anthony Eden (Britain & France)",
-      title: "Defense of International Waterways & Protocol of Sèvres",
-      objective: "Argue that Nasser was an aggressive dictator threatening vital global trade routes and oil supplies to Europe, justifying Anglo-French military intervention.",
-      starter: "&ldquo;An unprovoked seizure of an international maritime artery by a hostile dictator could not be tolerated because...&rdquo;",
-      keyTerms: ["Freedom of Navigation", "Protocol of Sèvres", "Oil Lifeline", "Aggressive Dictatorship"]
+      name: "Prime Minister Levi Eshkol & Chief of Staff Yitzhak Rabin",
+      title: "Protecting Israel's Water Lifeline & Border Towns",
+      objective: "Argue that Syria's attempts to cut off Israel's water supply, shelling from the Golan Heights, and Fatah sabotage raids left Israel no option but robust military deterrence, culminating in the April 1967 air battle.",
+      starter: "&ldquo;Attempting to choke off our National Water Carrier while shelling farms from the Golan Heights and sponsoring Fatah raids threatened daily survival in Israel because...&rdquo;",
+      keyTerms: ["National Water Carrier (1964)", "Golan Shelling", "Cross-Border Sabotage", "April 1967 MiG Dogfight"]
     }
   },
   lesson_5: {
-    title: "President Nasser (Egypt & Arab League) vs. Prime Minister Levi Eshkol (State of Israel)",
-    subtitle: "The Battle for Water, Arab Mobilisation & The Straits of Tiran (1964–1967)",
+    title: "President Gamal Abdel Nasser vs. General Moshe Dayan (Six-Day War)",
+    subtitle: "May Crisis Brinkmanship & Operation Focus (May–June 1967)",
     roleA: {
-      name: "President Gamal Abdel Nasser (Egypt & Arab League)",
-      title: "Pan-Arab Sovereignty & River Jordan Water Diversion",
-      objective: "Defend Arab rights to divert the River Jordan headwaters, rally Arab solidarity around the newly founded PLO, and assert legitimate regional leadership against Israeli military expansion.",
-      starter: "&ldquo;Arab sovereignty and the security of our people demanded that we stop Israeli expansion because...&rdquo;",
-      keyTerms: ["1964 Cairo Conference", "PLO Founded", "River Jordan Diversion", "Pan-Arab Unity"]
+      name: "President Gamal Abdel Nasser (Egypt)",
+      title: "Deterrence in Sinai After Soviet Intelligence Warnings",
+      objective: "Argue that deploying troops into Sinai, asking UNEF to withdraw, and closing the Straits of Tiran were political brinkmanship triggered by Soviet warnings to deter an Israeli attack on Syria—not a plan to strike first.",
+      starter: "&ldquo;Acting on Soviet warnings that Israel was about to invade our ally Syria, Egypt moved troops into Sinai as defensive deterrence rather than launching an offensive war because...&rdquo;",
+      keyTerms: ["13 May Soviet Warning", "UNEF Withdrawal", "Straits of Tiran Closed (22 May)", "Egypt–Jordan Pact (30 May)"]
     },
     roleB: {
-      name: "Prime Minister Levi Eshkol & IDF Command (State of Israel)",
-      title: "The National Water Carrier & Freedom of Navigation",
-      objective: "Argue that cutting off Israel's National Water Carrier was an existential threat to national survival, and cross-border guerrilla raids justified decisive military defense.",
-      starter: "&ldquo;Your attempt to cut off our nation's water supply and sponsor terrorist raids was an intolerable provocation because...&rdquo;",
-      keyTerms: ["National Water Carrier", "Water Security", "Fatah Cross-Border Raids", "Casus Belli"]
+      name: "Defence Minister Moshe Dayan & IAF Command",
+      title: "Existential Encirclement & Operation Focus (5 June 1967)",
+      objective: "Argue that blockading Eilat, massing 100,000 Egyptian troops on Sinai's border, and uniting Egypt, Syria, and Jordan under joint command created a mortal threat that only Operation Focus could break.",
+      starter: "&ldquo;With the Straits of Tiran blockaded and three Arab armies encircling Israel's narrow waist, launching Operation Focus at dawn on 5 June was essential to prevent annihilation because...&rdquo;",
+      keyTerms: ["Casus Belli at Tiran", "Three-Front Encirclement", "Operation Focus (5 June)", "300+ Aircraft Destroyed"]
     }
   },
   lesson_6: {
-    title: "President Nasser (Egypt & Arab League) vs. Prime Minister Levi Eshkol (State of Israel)",
-    subtitle: "The Battle for Water, Arab Mobilisation & The Straits of Tiran (1964–1967)",
+    title: "The Khartoum Arab Summit ('Three Noes') vs. Abba Eban & Israeli Cabinet",
+    subtitle: "Conquered Territories, UN Resolution 242 & 'Land for Peace' After June 1967",
     roleA: {
-      name: "President Gamal Abdel Nasser (Egypt & Arab League)",
-      title: "Pan-Arab Sovereignty & River Jordan Water Diversion",
-      objective: "Defend Arab rights to divert the River Jordan headwaters, rally Arab solidarity around the newly founded PLO, and assert legitimate regional leadership against Israeli military expansion.",
-      starter: "&ldquo;Arab sovereignty and the security of our people demanded that we stop Israeli expansion because...&rdquo;",
-      keyTerms: ["1964 Cairo Conference", "PLO Founded", "River Jordan Diversion", "Pan-Arab Unity"]
+      name: "Arab League Leaders at Khartoum (September 1967)",
+      title: "Unconditional Withdrawal & Rejecting Occupation",
+      objective: "Argue that Israel must withdraw from all territories seized by force in June 1967 (Sinai, Golan, West Bank, Gaza, East Jerusalem) and end military rule over one million Palestinians.",
+      starter: "&ldquo;International law forbids acquiring territory by war; Israel cannot hold Sinai, Golan, and one million occupied Palestinians hostage to dictate terms because...&rdquo;",
+      keyTerms: ["Khartoum 'Three Noes'", "Occupied West Bank & Gaza", "300,000 New Refugees", "East Jerusalem Annexation"]
     },
     roleB: {
-      name: "Prime Minister Levi Eshkol & IDF Command (State of Israel)",
-      title: "The National Water Carrier & Freedom of Navigation",
-      objective: "Argue that cutting off Israel's National Water Carrier was an existential threat to national survival, and cross-border guerrilla raids justified decisive military defense.",
-      starter: "&ldquo;Your attempt to cut off our nation's water supply and sponsor terrorist raids was an intolerable provocation because...&rdquo;",
-      keyTerms: ["National Water Carrier", "Water Security", "Fatah Cross-Border Raids", "Casus Belli"]
+      name: "Foreign Minister Abba Eban & Israeli Government",
+      title: "UN Resolution 242: Land Only in Exchange for Secure Peace",
+      objective: "Argue under UN Resolution 242 that Israel will never return to vulnerable pre-1967 lines ('Auschwitz borders') without direct negotiations, Arab recognition, and secure, defensible boundaries.",
+      starter: "&ldquo;UN Resolution 242 deliberately calls for withdrawal 'from territories' alongside 'secure and recognised boundaries'—land can only be traded for genuine peace treaties because...&rdquo;",
+      keyTerms: ["UN Resolution 242 (Nov 1967)", "'Land for Peace' Formula", "Strategic Buffer Zones", "Secure & Recognised Borders"]
     }
   },
   lesson_7: {
-    title: "President Nasser (Egypt) vs. General Moshe Dayan (Israel)",
-    subtitle: "Countdown to War & Operation Focus (May–June 1967)",
+    title: "Yasser Arafat (PLO & Fatah) vs. King Hussein of Jordan & Western Governments",
+    subtitle: "Karameh, Black September & The Munich Olympics Crisis (1968–1972)",
     roleA: {
-      name: "President Gamal Abdel Nasser (Egypt)",
-      title: "Sinai Mobilisation & Blockade of the Straits of Tiran",
-      objective: "Defend expelling UNEF peacekeepers and closing the Straits of Tiran as legitimate responses to Soviet warnings and a necessary show of deterrence in solidarity with Syria.",
-      starter: "&ldquo;Egypt was bound by treaty and national honor to defend our Syrian allies against reported Israeli troop buildup because...&rdquo;",
-      keyTerms: ["UNEF Expulsion", "Straits of Tiran Closed", "Sinai Mobilisation", "Deterrence"]
+      name: "Yasser Arafat & PLO Leadership",
+      title: "Independent Palestinian Armed Struggle After 1967",
+      objective: "Argue that Arab state armies failed Palestinians in 1948 and 1967, and that Karameh (1968) and independent PLO leadership put Palestinian national self-determination squarely onto the world agenda.",
+      starter: "&ldquo;After twenty years in refugee camps and Arab defeat in 1967, the Battle of Karameh proved Palestinians had to lead their own struggle for statehood because...&rdquo;",
+      keyTerms: ["Battle of Karameh (1968)", "Arafat Elected PLO Chairman (1969)", "Fedayeen Guerrillas", "Palestinian National Identity"]
     },
     roleB: {
-      name: "General Moshe Dayan & Israeli Air Force Command",
-      title: "Operation Focus & The Pre-emptive Strike",
-      objective: "Argue that the maritime blockade of Eilat and 100,000 Egyptian troops on Israel's border was an open act of war (casus belli), making a pre-emptive strike vital to prevent national destruction.",
-      starter: "&ldquo;The naval blockade of Eilat and the massing of Egyptian armies on our border was an immediate casus belli because...&rdquo;",
-      keyTerms: ["Operation Focus", "Casus Belli", "Pre-emptive Strike", "Existential Threat"]
+      name: "King Hussein of Jordan & International Critics",
+      title: "Black September (1970) & Global Condemnation of Terrorism",
+      objective: "Argue that PFLP hijackings at Dawson's Field created an illegal 'state within a state' that forced Jordan to expel the PLO in Black September, while the 1972 Munich massacre alienated world opinion.",
+      starter: "&ldquo;Hijacking airliners to Dawson's Field undermined Jordanian sovereignty during Black September, and murdering eleven Olympic athletes at Munich horrified the world because...&rdquo;",
+      keyTerms: ["Dawson's Field Hijackings", "Black September (1970)", "Expulsion to Lebanon", "Munich Olympics Massacre (1972)"]
     }
   },
   lesson_8: {
-    title: "The Khartoum Summit (Arab League) vs. Abba Eban (Israeli Foreign Ministry)",
-    subtitle: "The Aftermath of 1967 & UN Resolution 242 (Land for Peace)",
+    title: "President Anwar Sadat (Egypt) vs. Prime Minister Golda Meir (Israel)",
+    subtitle: "The War of Attrition, Operation Badr & The 1973 Yom Kippur War",
     roleA: {
-      name: "Arab League States (Khartoum Conference 'Three No's')",
-      title: "Rejection of Annexation & Demanding Immediate Withdrawal",
-      objective: "Argue that Israel must unconditionally withdraw from all territories seized in the Six-Day War (Gaza, West Bank, East Jerusalem, Sinai, Golan Heights) before any diplomacy can occur.",
-      starter: "&ldquo;Military conquest cannot be rewarded with territorial theft, and we will not negotiate under military occupation because...&rdquo;",
-      keyTerms: ["Khartoum Resolution", "Three No's", "Occupied Territories", "Inadmissibility of Land Seizure"]
+      name: "President Anwar Sadat & OPEC Allies",
+      title: "Breaking the Stalemate via Canal Crossing & The Oil Weapon",
+      objective: "Argue that after Israel ignored Sadat's 1971 peace overtures, crossing the Suez Canal on 6 October 1973 and deploying OPEC's oil embargo shattered diplomatic paralysis and forced US mediation.",
+      starter: "&ldquo;Years of diplomatic deadlock left Egypt no choice but Operation Badr and the OPEC oil weapon to break the myth of invincibility and reopen negotiations because...&rdquo;",
+      keyTerms: ["War of Attrition (1969–70)", "Operation Badr (6 Oct 1973)", "SAM Missile Umbrella", "1973 OPEC Oil Embargo"]
     },
     roleB: {
-      name: "Abba Eban & Israeli Diplomatic Delegation",
-      title: "UN Resolution 242 & Secure Recognized Borders",
-      objective: "Argue that Israel can only return conquered territories in exchange for permanent Arab recognition, direct peace treaties, and guaranteed secure boundaries.",
-      starter: "&ldquo;We cannot return to the indefensible 1967 armistice lines without permanent Arab recognition of our right to exist because...&rdquo;",
-      keyTerms: ["UN Resolution 242", "Land for Peace", "Secure and Recognized Borders", "Direct Negotiations"]
+      name: "Prime Minister Golda Meir & IDF Counter-Offensive",
+      title: "Repelling a Two-Front Surprise Attack & Crossing Suez",
+      objective: "Argue that despite initial intelligence failure on Yom Kippur, the IDF aided by US Operation Nickel Grass halted Syria on the Golan, crossed the Suez Canal, and encircled Egypt's Third Army—proving Arab armies still could not defeat Israel.",
+      starter: "&ldquo;Despite a surprise two-front assault on Yom Kippur, the IDF turned the tide on the Golan and encircled Egypt's Third Army west of Suez—proving war could not destroy Israel because...&rdquo;",
+      keyTerms: ["Operation Nickel Grass", "Crossing to Suez West Bank", "Egyptian Third Army Encircled", "UN Resolution 338 & DEFCON 3"]
     }
   },
   lesson_9: {
-    title: "Yasser Arafat (PLO & Fatah) vs. King Hussein of Jordan",
-    subtitle: "Palestinian Guerrilla Resistance & Black September (1968–1972)",
+    title: "President Anwar Sadat & Jimmy Carter vs. Arab Rejectionist Front & PLO",
+    subtitle: "Shuttle Diplomacy, Sadat in Jerusalem & The Camp David Accords (1974–1979)",
     roleA: {
-      name: "Yasser Arafat & PLO Guerrilla Leadership (Fatah)",
-      title: "Armed Struggle & Independent Palestinian Liberation",
-      objective: "Argue that Arab state armies failed in 1948 and 1967, proving that only independent Palestinian armed struggle can liberate the homeland and put their cause on the global stage.",
-      starter: "&ldquo;Conventional Arab state armies failed our people, proving that armed resistance by Palestinians themselves is the only path because...&rdquo;",
-      keyTerms: ["Battle of Karameh", "Fatah Fedayeen", "Armed Struggle", "Palestinian Identity"]
+      name: "Anwar Sadat, Menachem Begin & Jimmy Carter",
+      title: "Historic Statesmanship: Full Sinai Return for Permanent Peace",
+      objective: "Defend Kissinger's Sinai I/II steps, Sadat's 1977 Knesset speech, and the 1978–79 Camp David treaty that recovered 100% of Sinai for Egypt, secured US economic aid, and ended war with Israel's largest neighbour.",
+      starter: "&ldquo;Sadat's courageous journey to Jerusalem and Carter's Camp David summit achieved the first Arab–Israeli peace treaty, recovering all of Sinai without another drop of blood because...&rdquo;",
+      keyTerms: ["Kissinger Shuttle Diplomacy", "Sadat's Knesset Speech (1977)", "Camp David Accords (1978)", "1979 Washington Peace Treaty"]
     },
     roleB: {
-      name: "King Hussein of Jordan (Black September 1970)",
-      title: "Sovereign Authority & Rejection of a 'State Within a State'",
-      objective: "Argue that armed PLO militias were undermining Jordanian law, attempting to assassinate the monarchy, and creating lawless chaos that threatened Jordan's national sovereignty.",
-      starter: "&ldquo;No sovereign nation can permit an armed militia to operate above the law and hijack international planes on its soil because...&rdquo;",
-      keyTerms: ["Black September", "State Within a State", "Dawson's Field Hijackings", "Jordanian Sovereignty"]
+      name: "Arab League Rejectionists & Yasser Arafat (PLO)",
+      title: "A Separate Peace That Abandoned the Palestinians",
+      objective: "Argue that by signing a bilateral deal removing Egypt's army from the Arab coalition, Sadat enabled Begin to expand West Bank settlements and invade Lebanon while leaving Palestinians with empty 'autonomy' promises.",
+      starter: "&ldquo;By signing a separate peace for Sinai and US dollars, Sadat broke Arab unity and left West Bank and Gaza Palestinians under deepening settlement occupation because...&rdquo;",
+      keyTerms: ["Separate Peace", "Egypt Expelled from Arab League", "Vague Palestinian 'Autonomy'", "Assassination of Sadat (1981)"]
     }
   },
   lesson_10: {
-    title: "President Anwar Sadat (Egypt) vs. Prime Minister Golda Meir (Israel)",
-    subtitle: "The 1973 Yom Kippur / Ramadan War & Operation Badr",
+    title: "First Intifada Grassroots Activists vs. Israeli Defence Establishment",
+    subtitle: "The 1982 Lebanon War, Sabra & Shatila, and The First Intifada (1974–1993)",
     roleA: {
-      name: "President Anwar Sadat & Arab Coalition Command",
-      title: "Operation Badr: Shattering the Diplomatic Stalemate",
-      objective: "Defend the surprise crossing of the Suez Canal as necessary to shatter the myth of Israeli invincibility, force diplomatic negotiations, and recover lost Arab territory.",
-      starter: "&ldquo;Six years of Israeli occupation and diplomatic arrogance left us with no alternative but military action to break the status quo because...&rdquo;",
-      keyTerms: ["Operation Badr", "Bar-Lev Line", "OPEC Oil Embargo", "Shattering the Stalemate"]
+      name: "Unified National Leadership of the First Intifada",
+      title: "Civil Disobedience, Boycotts & Challenging 20 Years of Occupation",
+      objective: "Argue that after Israel expelled the PLO from Beirut in 1982 (amid the Sabra and Shatila tragedy), ordinary Palestinians inside Gaza and the West Bank transformed world opinion through strikes, tax boycotts, and stone-throwing—paving the way for Arafat's 1988 peace pivot.",
+      starter: "&ldquo;Twenty years of checkpoints and land seizures sparked a mass civilian uprising in 1987 that transformed global media opinion and pushed Arafat's 1988 two-state declaration because...&rdquo;",
+      keyTerms: ["1982 Lebanon Invasion", "Sabra & Shatila Massacre", "First Intifada (1987–1993)", "1988 Geneva Renunciation of Terrorism"]
     },
     roleB: {
-      name: "Prime Minister Golda Meir & General Ariel Sharon",
-      title: "Counter-Offensive Defense & Encirclement of the Third Army",
-      objective: "Argue that the treacherous surprise attack on the holiest day of the Jewish year threatened national existence, justifying the massive counter-offensive and encirclement of Egypt's Third Army.",
-      starter: "&ldquo;Attacking our nation on Yom Kippur while our citizens were praying was a cynical act of aggression that forced us to mobilize because...&rdquo;",
-      keyTerms: ["Yom Kippur Surprise Attack", "Canal Crossing Counter-Attack", "Third Army Encircled", "US Airlift"]
+      name: "Defence Minister Yitzhak Rabin & Israeli Security Officials",
+      title: "Security Dilemma: From 'Iron Fist' to Recognising Political Limits",
+      objective: "Explain why Israel initially invaded Lebanon in 1982 to stop cross-border PLO attacks and used curfews and arrests ('Iron Fist') against Intifada riots and rising Hamas militants—before Rabin concluded only negotiations could end policing two million Palestinians.",
+      starter: "&ldquo;Facing northern border attacks in 1982, violent street riots, and the 1987 founding of Hamas, security forces sought order—yet the Intifada ultimately convinced Rabin to seek political compromise because...&rdquo;",
+      keyTerms: ["Operation Peace for Galilee (1982)", "Rabin's 'Iron Fist' Policy", "Founding of Hamas (1987)", "Limits of Military Occupation"]
     }
   },
   lesson_11: {
-    title: "President Anwar Sadat (Egypt) vs. Rejectionist Arab States & PLO",
-    subtitle: "From Shuttle Diplomacy to the 1978 Camp David Accords",
+    title: "Yitzhak Rabin & Yasser Arafat (Oslo Architects) vs. Israeli & Palestinian Rejectionists",
+    subtitle: "From Madrid to Oslo I (1993), Oslo II (1995) & The Assassination of Rabin",
     roleA: {
-      name: "President Anwar Sadat (Egypt - Camp David Signatory)",
-      title: "Courageous Statesmanship & Recovery of the Sinai",
-      objective: "Defend travelling to Jerusalem and signing the 1979 Egypt-Israel Peace Treaty as courageous statesmanship that regained every inch of the Sinai and brought peace to Egyptian families.",
-      starter: "&ldquo;Thirty years of war and bleeding brought our people only ruin; true courage was breaking the psychological barrier for peace because...&rdquo;",
-      keyTerms: ["Jerusalem Speech", "Camp David Accords", "Sinai Returned", "Nobel Peace Prize"]
+      name: "Yitzhak Rabin, Shimon Peres & Yasser Arafat",
+      title: "Mutual Recognition & Self-Rule via Oslo I and Oslo II",
+      objective: "Defend the 1993 White House Lawn handshake and 1995 Oslo II Accord establishing the Palestinian Authority and Areas A/B/C as a historic first step of mutual recognition after decades of bloodshed.",
+      starter: "&ldquo;Peace is made with enemies: Oslo achieved historic mutual recognition between Israel and the PLO and launched Palestinian self-governance in Gaza and West Bank cities because...&rdquo;",
+      keyTerms: ["1991 Madrid Conference", "Oslo I Declaration (1993)", "Palestinian Authority", "Oslo II Areas A, B & C (1995)"]
     },
     roleB: {
-      name: "Rejectionist Arab States & Yasser Arafat (PLO)",
-      title: "Condemnation of a Separate Peace & Betrayal of Palestinians",
-      objective: "Argue that Sadat betrayed the wider Arab cause and abandoned three million Palestinians to eternal Israeli military occupation in exchange for a selfish separate peace.",
-      starter: "&ldquo;Sadat broke Arab solidarity and abandoned three million occupied Palestinians just to get back his own desert territory because...&rdquo;",
-      keyTerms: ["Separate Peace", "Arab League Boycott", "Betrayal of Palestinians", "Occupation Entrenched"]
-    }
-  },
-  lesson_12: {
-    title: "Grassroots Palestinian Youth (First Intifada) vs. Defense Minister Yitzhak Rabin",
-    subtitle: "The Lebanon War (1982) & The First Intifada (1987–1993)",
-    roleA: {
-      name: "Grassroots Palestinian Youth (The Stone-Throwers)",
-      title: "Popular Civil Uprising Against Military Rule",
-      objective: "Argue that twenty years of military occupation, land confiscations, and Israeli settlements left unarmed civilians no choice but civil disobedience, commercial strikes, and stones.",
-      starter: "&ldquo;Generations of living under military checkpoints and settlement expansion forced ordinary teenagers to rise up with stones because...&rdquo;",
-      keyTerms: ["First Intifada", "Civil Disobedience", "Stone-Throwing", "Opposing Settlements"]
-    },
-    roleB: {
-      name: "Defense Minister Yitzhak Rabin & Israeli Security Forces",
-      title: "Restoring Public Order & Stopping Violent Insurrection",
-      objective: "Argue that Israel had a fundamental duty to restore public order, protect Israeli civilians from petrol bombs and riots, and prevent terrorist cells from seizing control of the streets.",
-      starter: "&ldquo;No democratic state can allow violent mobs to throw petrol bombs at soldiers and shut down commercial transport without enforcement because...&rdquo;",
-      keyTerms: ["Public Order", "Counter-Riot Measures", "Security Enforcement", "Preventing Chaos"]
-    }
-  },
-  lesson_13: {
-    title: "Prime Minister Yitzhak Rabin vs. Opponents of Oslo (Netanyahu & Hardliners)",
-    subtitle: "The Oslo Peace Process & The 1993–1995 Accords",
-    roleA: {
-      name: "Prime Minister Yitzhak Rabin & Shimon Peres (Peace Camp)",
-      title: "The Historic Compromise of the Oslo Accords",
-      objective: "Defend recognizing the PLO and trading land for peace as the only realistic path to end the cycle of bloodshed and preserve Israel as both Jewish and democratic.",
-      starter: "&ldquo;You do not make peace with your friends, you make it with enemies; continuing to rule over two million Palestinians would destroy our democracy because...&rdquo;",
-      keyTerms: ["Oslo Accords", "Handshake on White House Lawn", "Palestinian Authority", "Land for Peace"]
-    },
-    roleB: {
-      name: "Opponents of Oslo (Benjamin Netanyahu & Hardline Critics)",
-      title: "Security Risk & Failure to Stop Terrorist Violence",
-      objective: "Argue that the Oslo framework surrendered vital strategic land and gave authority to an armed PLO that could not or would not prevent horrific suicide bombings in Israeli cities.",
-      starter: "&ldquo;Giving territorial control to an organisation that fails to prevent suicide bombings endangers the lives of our citizens because...&rdquo;",
-      keyTerms: ["Security Compromise", "Suicide Bombings", "Strategic Vulnerability", "Rejection of Oslo"]
+      name: "Hardline Critics & Opponents of the Oslo Framework",
+      title: "Flawed Gradualism, Settlements & Extremist Violence",
+      objective: "Explain why Oslo faltered by 1995: Palestinians saw West Bank land fragmented into enclaves with settlements expanding and Jerusalem/refugees postponed, while Israelis suffered Hamas bus bombings—culminating in Jewish extremist Yigal Amir assassinating Rabin.",
+      starter: "&ldquo;Deferring Jerusalem and refugees while settlements grew and suicide bombings struck Israeli buses eroded public faith on both sides before Rabin's assassination in November 1995 because...&rdquo;",
+      keyTerms: ["Deferred Final-Status Issues", "1994 Hebron Massacre", "Hamas Suicide Bombings", "Assassination of Rabin (4 Nov 1995)"]
     }
   }
 };
-

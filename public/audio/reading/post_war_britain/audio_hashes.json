@@ -1,0 +1,45 @@
+{
+  "unitId": "post_war_britain",
+  "clips": {
+    "r3": {
+      "hash": "91e00c47e0a1901011aa6b40",
+      "bytes": 414092,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 257,
+      "updatedAt": "2026-11-20T16:36:13.469Z"
+    },
+    "r4": {
+      "hash": "7b1f52d9616871d031bb9026",
+      "bytes": 411500,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Historic Speech",
+      "words": 223,
+      "updatedAt": "2026-11-20T16:36:14.407Z"
+    },
+    "r1": {
+      "hash": "3846059bfcda1ab4cdc5ebd5",
+      "bytes": 340748,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 207,
+      "updatedAt": "2026-11-20T16:36:16.281Z"
+    },
+    "r2": {
+      "hash": "b38ecd4fdd77fde6dcb565c8",
+      "bytes": 386540,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 245,
+      "updatedAt": "2026-11-20T16:36:17.063Z"
+    },
+    "r0": {
+      "hash": "f27cdaf57cbbac33a1f97881",
+      "bytes": 456908,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Historic Speech",
+      "words": 308,
+      "updatedAt": "2026-11-20T16:38:30.468Z"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "unitId": "cold_war",
+  "clips": {
+    "r0": {
+      "hash": "36db8499fe45a5271adfed6f",
+      "bytes": 379820,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 233,
+      "updatedAt": "2026-11-20T16:34:16.279Z"
+    },
+    "r1": {
+      "hash": "41b47920c47dcb5618dbff19",
+      "bytes": 394508,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 234,
+      "updatedAt": "2026-11-20T16:34:17.496Z"
+    },
+    "r2": {
+      "hash": "bfc209b66ff5fe1dd0fcca4e",
+      "bytes": 403820,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Historic Speech",
+      "words": 227,
+      "updatedAt": "2026-11-20T16:34:18.490Z"
+    },
+    "r3": {
+      "hash": "52e715245382f88d70aa24e5",
+      "bytes": 543788,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 296,
+      "updatedAt": "2026-11-20T16:36:21.119Z"
+    },
+    "r4": {
+      "hash": "cf5bfd6c230b7c4ab2e170fb",
+      "bytes": 419372,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Historic Speech",
+      "words": 250,
+      "updatedAt": "2026-11-20T16:36:22.017Z"
+    },
+    "r5": {
+      "hash": "7e55eb832e8c958df292a8b8",
+      "bytes": 424652,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Historic Speech",
+      "words": 268,
+      "updatedAt": "2026-11-20T16:36:27.603Z"
+    },
+    "r6": {
+      "hash": "122cb58ea9800af8bf55d0af",
+      "bytes": 574220,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Scholarship",
+      "words": 291,
+      "updatedAt": "2026-11-20T16:36:28.646Z"
+    }
+  }
+}

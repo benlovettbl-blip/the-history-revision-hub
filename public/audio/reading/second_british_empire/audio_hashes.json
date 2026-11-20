@@ -1,0 +1,45 @@
+{
+  "unitId": "second_british_empire",
+  "clips": {
+    "r0": {
+      "hash": "3db00cf2ebb2bc11ffc04410",
+      "bytes": 352460,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 186,
+      "updatedAt": "2026-11-20T20:56:13.333Z"
+    },
+    "r1": {
+      "hash": "edea46de499bda9131f6867a",
+      "bytes": 262700,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 157,
+      "updatedAt": "2026-11-20T16:32:39.666Z"
+    },
+    "r4": {
+      "hash": "a5644253873aa45bbddcb70e",
+      "bytes": 270092,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Scholarship",
+      "words": 134,
+      "updatedAt": "2026-11-20T16:32:44.297Z"
+    },
+    "r2": {
+      "hash": "a747bc5ebe1840f2c7f98959",
+      "bytes": 295532,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 155,
+      "updatedAt": "2026-11-20T16:32:45.996Z"
+    },
+    "r3": {
+      "hash": "d00cc1e6ac23bd775cdf47ec",
+      "bytes": 309260,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 177,
+      "updatedAt": "2026-11-20T16:32:46.714Z"
+    }
+  }
+}

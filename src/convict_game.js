@@ -1,5 +1,3 @@
-import { addXp } from './storage.js';
-
 export async function initConvictGame(container) {
   container.innerHTML = `
     <div style="background: #1e293b; color: white; padding: 20px; border-radius: 8px; text-align: center; font-family: 'Playfair Display', serif; border: 4px solid #475569;">
@@ -84,9 +82,6 @@ export async function initConvictGame(container) {
 
     const renderReveal = () => {
       let isDeath = currentConvict.sentence.toLowerCase().includes('death');
-
-      // Award +20 XP for decision simulation completion
-      addXp(20, 'Court Verdict Decision Completed');
 
       container.innerHTML = `
         <div style="background: #f8fafc; color: #0f172a; padding: 0; border-radius: 8px; border: 4px solid #334155; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">

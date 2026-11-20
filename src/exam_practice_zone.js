@@ -319,6 +319,7 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
             return {
               ...q,
               stimulus: q.stimulus || l.exam_practice.stimulus, // inherit global stimulus if question doesn't have its own
+              interpretations: q.interpretations || l.exam_practice.interpretations,
             };
           });
         } else {
@@ -1085,7 +1086,37 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
     qMeta.innerHTML = `<i class="fa-solid fa-book-open"></i> ${currentQuestion.blockTitle} &bull; ${currentQuestion.type || marks + '-mark'} Question`;
     qText.textContent = displayQText;
 
-    if (currentQuestion.stimulus) {
+    const isInterpQuestion =
+      /interpretation/i.test(displayQText) ||
+      /3\s*\(\s*[bcd]\s*\)/i.test(`${currentQuestion.qCode || ''} ${currentQuestion.type || ''} ${displayQText}`);
+
+    if (isInterpQuestion && Array.isArray(currentQuestion.interpretations) && currentQuestion.interpretations.length > 0) {
+      qStimulus.innerHTML = `<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px;">${currentQuestion.interpretations
+        .slice(0, 2)
+        .map((it, idx) => {
+          const body = it.content || it.text || it.extract || '';
+          const prov = it.provenance || it.attribution || it.title || `Interpretation ${idx + 1}`;
+          const studioAttr = it.studio_audio
+            ? ` data-studio-source-audio="${String(it.studio_audio).replace(/"/g, '&quot;')}" data-studio-voice-label="${String(it.studio_voice_label || 'Studio Historian').replace(/"/g, '&quot;')}"`
+            : '';
+          const voicePill = it.studio_audio && it.studio_voice_label
+            ? `<span class="living-archive-voice-pill" style="font-size: 0.68rem; font-weight: 700; color: #0f766e; background: #f0fdfa; border: 1px solid #99f6e4; padding: 2px 7px; border-radius: 999px; white-space: nowrap;">${it.studio_voice_label}</span>`
+            : '';
+          return `<div class="archival-source-box"${studioAttr} style="background: #fffbeb; border: 1.5px solid #fcd34d; border-radius: 10px; padding: 12px 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #fde68a; padding-bottom: 6px; margin-bottom: 8px;">
+              <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                <span style="background: #d97706; color: #ffffff; font-size: 0.70rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; text-transform: uppercase;">INTERP ${idx + 1}</span>
+                ${voicePill}
+              </div>
+              <div class="source-audio-bar"><button type="button" class="btn-read-aloud" onclick="window.toggleReadAloud && window.toggleReadAloud(this)" style="background: #ffffff; border: 1px solid #f59e0b; color: #92400e; border-radius: 6px; padding: 3px 9px; font-size: 0.76rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-play"></i> Listen</button></div>
+            </div>
+            <div style="font-size: 0.82rem; font-style: italic; color: #78350f; margin-bottom: 6px; font-weight: 600;">${prov}</div>
+            <div class="archival-source-body" style="font-family: Georgia, serif; font-size: 0.94rem; line-height: 1.55; color: #1e293b;">${body}</div>
+          </div>`;
+        })
+        .join('')}</div>`;
+      qStimulus.style.display = 'block';
+    } else if (currentQuestion.stimulus) {
       if (Array.isArray(currentQuestion.stimulus)) {
         qStimulus.innerHTML = currentQuestion.stimulus
           .map((stim) => {

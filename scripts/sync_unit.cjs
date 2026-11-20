@@ -111,6 +111,20 @@ async function runSync() {
     return false;
   }
 
+  // Step 1c-vocab: Vocabulary & End-of-Lesson Summary Cloze Parity Gate
+  console.log(`\n[Step 1c-vocab/6] 🧩 Auditing vocabulary & Summary Cloze parity for ${unitId}...`);
+  try {
+    execSync(`node scripts/verify_vocab_parity.cjs ${unitId}`, {
+      stdio: 'inherit',
+      cwd: ROOT_DIR,
+    });
+  } catch (err) {
+    console.error(
+      `❌ Fatal: Vocabulary / Summary Cloze parity failed for ${unitId}. Update vocab_cloze_text to match lesson.vocab!`,
+    );
+    return false;
+  }
+
   // Step 1d: KS3 Workbook Stage Synchronization & Paragraph Anchor Guardrail
   const KS3_UNITS = [
     'great_war_part2',

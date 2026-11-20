@@ -6,7 +6,7 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp, recordQuestionResult } from '../../storage.js';
+import { recordQuestionResult } from '../../storage.js';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
 
@@ -70,7 +70,6 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
         arcadeAudio.correct();
         const { best } = saveArcadePersonalBest(ctx.unitId, 'redacted', ctx.scope, score);
         pb = best;
-        addXp(20, `Declassified: ${currentDossier.displayTerm}`);
         recordQuestionResult(
           currentDossier.id,
           true,

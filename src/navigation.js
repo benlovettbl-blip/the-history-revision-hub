@@ -11,7 +11,6 @@ import {
   renderIndividualsView,
   renderBookletView,
   renderMockExamsView,
-  renderProfileView,
   renderLessonsView,
   renderMasterpieceView,
   renderDigitalReaderView,
@@ -51,12 +50,10 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
   const activeView = viewName || appStore.state.currentView || state.currentView || urlParams.get('view') || 'dashboard';
   const isGlobalHubView =
     activeView === 'dashboard' ||
-    activeView === 'profile' ||
     activeView === 'curriculum' ||
     activeView === 'department-portal' ||
     activeView === 'competitions' ||
-    activeView === 'chess' ||
-    activeView === 'ai-prompt-craft';
+    activeView === 'chess';
 
   const unitParam = isGlobalHubView
     ? null
@@ -90,7 +87,7 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
   updateHeaderBackBtn(activeView);
 
   // Only hide Secondary/GCSE enrichment nav items when explicitly in locked KS2 pupil mode
-  ['nav-competitions', 'nav-chess', 'nav-ai-prompt-craft'].forEach((id) => {
+  ['nav-competitions', 'nav-chess'].forEach((id) => {
     const el = document.getElementById(id);
     if (el) el.style.display = isLockedKs2 ? 'none' : '';
   });
@@ -538,8 +535,6 @@ export function initNavigationUI() {
       activeMobId = 'mob-nav-units';
     } else if (viewName === 'interactive' || viewName === 'arcade') {
       activeMobId = 'mob-nav-quizzing';
-    } else if (viewName === 'profile') {
-      activeMobId = 'mob-nav-profile';
     }
 
     if (activeMobId) {
@@ -921,23 +916,6 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName = 'masterpiece';
   } else if (rawView === 'textbook-reader') {
     viewName = 'reader';
-  } else if (
-    rawView === 'ai-prompt-craft' ||
-    rawView === 'prompt-craft' ||
-    rawView === 'ai-lesson'
-  ) {
-    viewName = 'ai-prompt-craft';
-  }
-
-  if (
-    viewName !== 'ai-prompt-craft' &&
-    typeof document !== 'undefined' &&
-    document.body &&
-    (document.body.classList.contains('ai-prompt-craft-active') ||
-      document.body.classList.contains('ai-projector-clean'))
-  ) {
-    const { unmountAiPromptCraftConsole } = await import('./ai_prompt_craft.js');
-    unmountAiPromptCraftConsole();
   }
 
   if (
@@ -1132,11 +1110,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         (lObj && lObj.slug) ||
         (hasZero ? (options.lessonIndex === 0 ? '0' : options.lessonIndex) : options.lessonIndex + 1);
       url.searchParams.set('lesson', lVal);
-    } else if (
-      viewName !== 'reading' &&
-      viewName !== 'guided-reading' &&
-      viewName !== 'ai-prompt-craft'
-    ) {
+    } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
       url.searchParams.delete('lesson');
     }
     try {
@@ -1170,7 +1144,6 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'department-portal' ||
     viewName === 'competitions' ||
     viewName === 'chess' ||
-    viewName === 'ai-prompt-craft' ||
     viewName === 'masterpiece' ||
     viewName === 'gallery' ||
     viewName === 'gcse-tracker' ||
@@ -1225,10 +1198,8 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   }
 
   // Handle view rendering
-  if (viewName === 'dashboard') {
+  if (viewName === 'dashboard' || viewName === 'profile') {
     renderDashboard();
-  } else if (viewName === 'profile') {
-    renderProfileView();
   } else if (viewName === 'arcade') {
     const targetUnit =
       param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
@@ -1245,10 +1216,6 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     renderTimeline();
   } else if (viewName === 'individuals') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
-    if (targetUnit === 'ks2_ww2') {
-      await switchView('lessons', 'ks2_ww2');
-      return;
-    }
     await loadUnit(targetUnit);
     renderIndividualsView();
   } else if (viewName === 'booklet') {
@@ -1328,9 +1295,6 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
     await loadUnit(targetUnit);
     await renderMarkingView(options);
-  } else if (viewName === 'ai-prompt-craft') {
-    const { renderAiPromptCraftConsole } = await import('./ai_prompt_craft.js');
-    renderAiPromptCraftConsole();
   } else if (
     viewName === 'gcse-tracker' ||
     viewName === 'spec-tracker' ||
@@ -1572,7 +1536,6 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
   const sidebarUnitsContainer = document.getElementById('sidebar-unit-links');
   const sidebarUnitsHeader = document.getElementById('sidebar-units-header');
-  const navProfile = document.getElementById('nav-profile');
 
   if (isLocked) {
     if (unitBackBtn) unitBackBtn.style.display = 'none';
@@ -1581,7 +1544,6 @@ function updateSidebarForUnit(unitId, unitData = {}) {
       sidebarUnitsContainer.innerHTML = '';
     }
     if (sidebarUnitsHeader) sidebarUnitsHeader.style.display = 'none';
-    if (navProfile) navProfile.style.display = 'none';
 
     // Inject visible Safeguard Active indicator
     let badge = document.getElementById('sidebar-safeguard-badge');
@@ -1611,7 +1573,6 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     }
     if (sidebarUnitsContainer) sidebarUnitsContainer.style.display = 'flex';
     if (sidebarUnitsHeader) sidebarUnitsHeader.style.display = 'block';
-    if (navProfile) navProfile.style.display = 'flex';
   }
 
   const navDecisions = document.getElementById('nav-decisions');
@@ -1948,9 +1909,14 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     };
   }
 
+  const isGcseUnitNav = ['edexcel_medicine', 'eee', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(unitId);
+
   // GCSE Exam Practice (visible only on GCSE assessment units)
   const hasMockExams = Boolean(
-    unitData.mock_exams && Array.isArray(unitData.mock_exams) && unitData.mock_exams.length > 0,
+    isGcseUnitNav &&
+      unitData.mock_exams &&
+      Array.isArray(unitData.mock_exams) &&
+      unitData.mock_exams.length > 0,
   );
   if (navMockExams && hasMockExams) {
     navMockExams.style.display = 'flex';
@@ -1968,9 +1934,12 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navMockExams.style.display = 'none';
   }
 
-  // Literary Companion (Guided Reading Extracts & Audio Studio)
+  // Literary Companion (Guided Reading Extracts & Audio Studio — strictly KS2–KS3 only)
   const hasGuidedReading = Boolean(
-    unitData.guided_reading && Array.isArray(unitData.guided_reading) && unitData.guided_reading.length > 0,
+    !isGcseUnitNav &&
+      unitData.guided_reading &&
+      Array.isArray(unitData.guided_reading) &&
+      unitData.guided_reading.length > 0,
   );
   if (navReading && hasGuidedReading) {
     navReading.style.display = 'flex';
@@ -1988,9 +1957,9 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navReading.style.display = 'none';
   }
 
-  // Key Individuals & Organisations Dossier Gallery (shown when unit defines key_individuals and not KS2)
+  // Key Individuals & Organisations Dossier Gallery (shown across KS2, KS3 & GCSE whenever unit defines key_individuals)
   const unitAgents = Array.isArray(unitData.key_individuals) ? unitData.key_individuals : [];
-  const hasAgentsGallery = !isKs2UnitIdentifier(unitId, unitData) && unitAgents.length > 0;
+  const hasAgentsGallery = unitAgents.length > 0;
   if (navIndividuals && hasAgentsGallery) {
     const hasOrgDossiers = unitAgents.some((p) =>
       /^org/i.test(String(p?.entity_type || p?.entityType || p?.type || '').trim()),

@@ -524,7 +524,10 @@ export function renderSidebar() {
     navContainer.appendChild(worksheetLink);
   }
 
-  if (appStore.state.activeUnitData.guided_reading) {
+  const isGcseActiveUnit = ['edexcel_medicine', 'eee', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(
+    appStore.state.selectedUnitId || window.currentUnitId,
+  );
+  if (!isGcseActiveUnit && appStore.state.activeUnitData.guided_reading) {
     const grLink = document.createElement('a');
     grLink.className = 'lesson-link';
     grLink.innerHTML =

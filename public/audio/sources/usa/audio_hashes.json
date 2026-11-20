@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "clips": {
+    "usa_mock_8_i2": {
+      "hash": "46cb26d99ded6ef6",
+      "bytes": 98828,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:27:48.696Z"
+    },
+    "usa_mock_3_i1": {
+      "hash": "4c6d64a4c52b8da4",
+      "bytes": 104012,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:27:49.078Z"
+    },
+    "usa_mock_10_i2": {
+      "hash": "b6f6251755ae1e4e",
+      "bytes": 117068,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:27:56.231Z"
+    },
+    "usa_mock_2_i1": {
+      "hash": "4daa828cfdc9a169",
+      "bytes": 103820,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:27:56.578Z"
+    },
+    "usa_mock_6_i2": {
+      "hash": "75539e3638edd33d",
+      "bytes": 106700,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:27:56.970Z"
+    },
+    "usa_mock_4_i1": {
+      "hash": "6fa2204c1f97b922",
+      "bytes": 99788,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:27:57.323Z"
+    },
+    "usa_mock_13_i2": {
+      "hash": "6b15767b19c9ac0c",
+      "bytes": 122060,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:27:57.692Z"
+    },
+    "usa_mock_7_i1": {
+      "hash": "3db86600705180df",
+      "bytes": 108332,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:27:58.060Z"
+    },
+    "lesson_4_4_i2": {
+      "hash": "7b48fdec1c1aae41",
+      "bytes": 157868,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Domestic Collapse View",
+      "updatedAt": "2026-11-20T17:28:07.008Z"
+    },
+    "usa_mock_1_i1": {
+      "hash": "e3d9f4e43dedaf41",
+      "bytes": 111980,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:28:07.375Z"
+    },
+    "usa_mock_11_i2": {
+      "hash": "2ff0c62e3f955c10",
+      "bytes": 94700,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:28:07.705Z"
+    },
+    "usa_mock_12_i1": {
+      "hash": "e926518d91999501",
+      "bytes": 135308,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:28:08.107Z"
+    },
+    "usa_mock_5_i2": {
+      "hash": "79c8ff31511ca21b",
+      "bytes": 104108,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:28:08.455Z"
+    },
+    "usa_mock_9_i1": {
+      "hash": "8ee15a720d055b48",
+      "bytes": 119468,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:28:08.826Z"
+    },
+    "lesson_1_3_i2": {
+      "hash": "ba4c9a45541d1603",
+      "bytes": 202700,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · David L. Lewis",
+      "updatedAt": "2026-11-20T17:28:11.307Z"
+    },
+    "lesson_1_4_i1": {
+      "hash": "0511ea7f39562e79",
+      "bytes": 164108,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Racial Terror View",
+      "updatedAt": "2026-11-20T17:28:11.758Z"
+    },
+    "lesson_2_4_i1": {
+      "hash": "3d3600e51d0de47c",
+      "bytes": 210092,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Harvard Sitkoff",
+      "updatedAt": "2026-11-20T17:28:12.313Z"
+    },
+    "lesson_3_3_i1": {
+      "hash": "e92a1a1ba4991cdd",
+      "bytes": 177260,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Christian G. Appy",
+      "updatedAt": "2026-11-20T17:28:12.769Z"
+    },
+    "lesson_3_4_i2": {
+      "hash": "92e978791f9f312c",
+      "bytes": 145388,
+      "voiceKey": "male_historian",
+      "badge": "Historian 2 · Domestic Backlash View",
+      "updatedAt": "2026-11-20T17:28:13.279Z"
+    },
+    "lesson_4_1_i1": {
+      "hash": "b16a8f7fd94e5c0f",
+      "bytes": 182060,
+      "voiceKey": "male_historian",
+      "badge": "Historian 1 · Chester Pach",
+      "updatedAt": "2026-11-20T17:28:13.762Z"
+    },
+    "usa_mock_10_i1": {
+      "hash": "b9309891c90434be",
+      "bytes": 82892,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:29:19.272Z"
+    },
+    "usa_mock_2_i2": {
+      "hash": "1638e6a02cd30b10",
+      "bytes": 105068,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:29:19.638Z"
+    },
+    "usa_mock_6_i1": {
+      "hash": "1388f13336ae1c62",
+      "bytes": 111980,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:29:20.017Z"
+    },
+    "usa_mock_4_i2": {
+      "hash": "8b94420b3fabc855",
+      "bytes": 96140,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:29:20.380Z"
+    },
+    "usa_mock_13_i1": {
+      "hash": "074d9cdee4672c3b",
+      "bytes": 140780,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:29:20.862Z"
+    },
+    "usa_mock_7_i2": {
+      "hash": "2d2350fd9cfdf606",
+      "bytes": 97292,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:29:21.219Z"
+    },
+    "lesson_4_4_i1": {
+      "hash": "83495d12685e2e7d",
+      "bytes": 195692,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Guerrilla Endurance View",
+      "updatedAt": "2026-11-20T17:29:31.169Z"
+    },
+    "usa_mock_1_i2": {
+      "hash": "84cfb26b8b7adcb7",
+      "bytes": 106028,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:29:31.564Z"
+    },
+    "usa_mock_11_i1": {
+      "hash": "b849010384903f9c",
+      "bytes": 104012,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:29:31.949Z"
+    },
+    "usa_mock_12_i2": {
+      "hash": "dd9537ee4c7a883d",
+      "bytes": 115052,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:29:32.364Z"
+    },
+    "usa_mock_5_i1": {
+      "hash": "845a75798c44dce1",
+      "bytes": 105068,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:29:32.779Z"
+    },
+    "usa_mock_9_i2": {
+      "hash": "2c7a7bcc8d1238d5",
+      "bytes": 115532,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:29:33.218Z"
+    },
+    "usa_mock_8_i1": {
+      "hash": "582693dc158c6f03",
+      "bytes": 105068,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Academic View",
+      "updatedAt": "2026-11-20T17:30:02.362Z"
+    },
+    "usa_mock_3_i2": {
+      "hash": "6da13d361d6ec202",
+      "bytes": 106412,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Contrasting View",
+      "updatedAt": "2026-11-20T17:30:02.719Z"
+    },
+    "lesson_1_3_i1": {
+      "hash": "b40743dd9d38c25e",
+      "bytes": 176492,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · Danielle L. McGuire",
+      "updatedAt": "2026-11-20T17:30:10.542Z"
+    },
+    "lesson_1_4_i2": {
+      "hash": "7dfaa865a59b3c5b",
+      "bytes": 197132,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Massive Resistance View",
+      "updatedAt": "2026-11-20T17:30:11.095Z"
+    },
+    "lesson_2_4_i2": {
+      "hash": "bd3a6c6c63c7fd71",
+      "bytes": 207788,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Black Power View",
+      "updatedAt": "2026-11-20T17:30:11.589Z"
+    },
+    "lesson_3_3_i2": {
+      "hash": "c6af1868e32ad77f",
+      "bytes": 177068,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Guerrilla Strategy View",
+      "updatedAt": "2026-11-20T17:30:12.028Z"
+    },
+    "lesson_3_4_i1": {
+      "hash": "b4c79c58fa58362c",
+      "bytes": 153452,
+      "voiceKey": "female_historian",
+      "badge": "Historian 1 · ARVN Weakness View",
+      "updatedAt": "2026-11-20T17:30:12.455Z"
+    },
+    "lesson_4_1_i2": {
+      "hash": "837db9eb5cbf4bb3",
+      "bytes": 188972,
+      "voiceKey": "female_historian",
+      "badge": "Historian 2 · Conscription & Casualties View",
+      "updatedAt": "2026-11-20T17:30:12.931Z"
+    }
+  }
+}

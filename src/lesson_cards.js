@@ -287,7 +287,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           prefix: 'KT 1',
           gradient: 'linear-gradient(135deg, #1e3a8a, #3b82f6)',
           border: '#3b82f6',
-          image: '/images/cme_ben_gurion.jpg',
+          image: '/assets/cme_ben_gurion.jpg',
           bgPos: 'center 25%',
           enquiry: 'How and why was the state of Israel established, and why did conflict escalate by 1956?',
         },

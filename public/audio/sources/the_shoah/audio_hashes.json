@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_3_sD": {
+      "hash": "0e0d065c41bbd105",
+      "bytes": 188108,
+      "voiceKey": "female_historian",
+      "badge": "Warsaw Ghetto Eyewitness Record",
+      "updatedAt": "2026-11-20T17:02:07.570Z"
+    },
+    "lesson_4_sD": {
+      "hash": "d1eb6029d2f5f13a",
+      "bytes": 188588,
+      "voiceKey": "female_historian",
+      "badge": "Ponary Forest Witness Record",
+      "updatedAt": "2026-11-20T17:02:08.081Z"
+    },
+    "lesson_5_sE": {
+      "hash": "b2923d681ba38fb8",
+      "bytes": 217292,
+      "voiceKey": "female_historian",
+      "badge": "Survivor Testimony · Roza Robota",
+      "updatedAt": "2026-11-20T17:02:08.665Z"
+    },
+    "lesson_6_sC": {
+      "hash": "8cba5c1a1fe0ea48",
+      "bytes": 163340,
+      "voiceKey": "female_historian",
+      "badge": "White Rose Leaflet (Feb 1943)",
+      "updatedAt": "2026-11-20T17:02:09.196Z"
+    },
+    "lesson_6_sE": {
+      "hash": "4764b5655cafd1fc",
+      "bytes": 218732,
+      "voiceKey": "female_historian",
+      "badge": "Danish Bishops Protest (Oct 1943)",
+      "updatedAt": "2026-11-20T17:02:09.765Z"
+    },
+    "lesson_7_sD": {
+      "hash": "98c1ca64c66d89c8",
+      "bytes": 177548,
+      "voiceKey": "female_historian",
+      "badge": "Nuremberg Charter & Lemkin (1945)",
+      "updatedAt": "2026-11-20T17:02:10.299Z"
+    },
+    "lesson_7_sB": {
+      "hash": "800edc4d4fc60798",
+      "bytes": 209132,
+      "voiceKey": "male_historian",
+      "badge": "Richard Dimbleby · BBC (April 1945)",
+      "updatedAt": "2026-11-20T17:02:17.443Z"
+    },
+    "lesson_7_sC": {
+      "hash": "a5e1c3117351b92b",
+      "bytes": 181100,
+      "voiceKey": "male_historian",
+      "badge": "Harrison Report (Aug 1945)",
+      "updatedAt": "2026-11-20T17:02:17.972Z"
+    },
+    "lesson_7_sE": {
+      "hash": "f003a65f9aeab39c",
+      "bytes": 217292,
+      "voiceKey": "male_historian",
+      "badge": "Primo Levi · Survivor Testament",
+      "updatedAt": "2026-11-20T17:02:18.514Z"
+    },
+    "lesson_1_sB": {
+      "hash": "6501531821570044",
+      "bytes": 152012,
+      "voiceKey": "female_historian",
+      "badge": "Warsaw Cultural Record (1930s)",
+      "updatedAt": "2026-11-20T17:02:21.222Z"
+    },
+    "lesson_1_sD": {
+      "hash": "10db32604f481674",
+      "bytes": 175052,
+      "voiceKey": "female_historian",
+      "badge": "Salonica Heritage Record",
+      "updatedAt": "2026-11-20T17:02:21.734Z"
+    },
+    "lesson_1_sE": {
+      "hash": "4ab7b8e6f00116f8",
+      "bytes": 131468,
+      "voiceKey": "male_historian",
+      "badge": "Wilhelm Marr Pamphlet (1879)",
+      "updatedAt": "2026-11-20T17:02:28.622Z"
+    },
+    "lesson_2_sC": {
+      "hash": "5b3c5966e3b191fd",
+      "bytes": 162188,
+      "voiceKey": "male_historian",
+      "badge": "Prof. Victor Klemperer Diary",
+      "updatedAt": "2026-11-20T17:02:29.093Z"
+    },
+    "lesson_2_sE": {
+      "hash": "721ee62bf3e7c6b4",
+      "bytes": 111692,
+      "voiceKey": "male_historian",
+      "badge": "Évian Conference Record (1938)",
+      "updatedAt": "2026-11-20T17:02:29.501Z"
+    },
+    "lesson_3_sA": {
+      "hash": "036c1eb944078778",
+      "bytes": 191948,
+      "voiceKey": "male_historian",
+      "badge": "Heydrich Schnellbrief (Sept 1939)",
+      "updatedAt": "2026-11-20T17:02:30.290Z"
+    },
+    "lesson_3_sB": {
+      "hash": "96520c11d161a4a7",
+      "bytes": 127532,
+      "voiceKey": "male_historian",
+      "badge": "Occupation Decree (Nov 1939)",
+      "updatedAt": "2026-11-20T17:02:30.667Z"
+    },
+    "lesson_3_sE": {
+      "hash": "e1a079fdcebd3853",
+      "bytes": 209132,
+      "voiceKey": "male_historian",
+      "badge": "David Graber Testament (Aug 1942)",
+      "updatedAt": "2026-11-20T17:02:31.252Z"
+    },
+    "lesson_4_sA": {
+      "hash": "1d2ad3ec87ebfc19",
+      "bytes": 135980,
+      "voiceKey": "male_historian",
+      "badge": "OKW Commissar Order (June 1941)",
+      "updatedAt": "2026-11-20T17:02:31.682Z"
+    },
+    "lesson_4_sC": {
+      "hash": "d2e72474e9e0625e",
+      "bytes": 138188,
+      "voiceKey": "male_historian",
+      "badge": "Einsatzgruppe Operational Report",
+      "updatedAt": "2026-11-20T17:02:32.117Z"
+    },
+    "lesson_4_sE": {
+      "hash": "14c4288401d97748",
+      "bytes": 196940,
+      "voiceKey": "male_historian",
+      "badge": "Forensic Evidence · 1942 Memo",
+      "updatedAt": "2026-11-20T17:02:32.677Z"
+    },
+    "lesson_5_sA": {
+      "hash": "8301319f6947c8dc",
+      "bytes": 174092,
+      "voiceKey": "male_historian",
+      "badge": "Göring Directive (31 July 1941)",
+      "updatedAt": "2026-11-20T17:02:33.324Z"
+    },
+    "lesson_5_sB": {
+      "hash": "d9619715066e24d4",
+      "bytes": 188972,
+      "voiceKey": "male_historian",
+      "badge": "Höfle Telegram (Jan 1943)",
+      "updatedAt": "2026-11-20T17:02:33.814Z"
+    },
+    "lesson_6_sA": {
+      "hash": "51b523ec64fc3c24",
+      "bytes": 175820,
+      "voiceKey": "male_historian",
+      "badge": "Reichsbahn Order (April 1942)",
+      "updatedAt": "2026-11-20T17:02:34.371Z"
+    },
+    "lesson_6_sB": {
+      "hash": "4378360a4ca2c26a",
+      "bytes": 168812,
+      "voiceKey": "male_historian",
+      "badge": "Paris Police Record (July 1942)",
+      "updatedAt": "2026-11-20T17:02:34.873Z"
+    },
+    "lesson_6_sD": {
+      "hash": "537f5372d9fc5db1",
+      "bytes": 205772,
+      "voiceKey": "male_historian",
+      "badge": "Chiune Sugihara Memoir (1940)",
+      "updatedAt": "2026-11-20T17:02:35.431Z"
+    },
+    "lesson_7_sA": {
+      "hash": "039fb2be87406782",
+      "bytes": 202892,
+      "voiceKey": "male_historian",
+      "badge": "Elie Wiesel · Eyewitness Testimony",
+      "updatedAt": "2026-11-20T17:02:36.017Z"
+    }
+  }
+}

@@ -6,7 +6,7 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp, recordQuestionResult } from '../../storage.js';
+import { recordQuestionResult } from '../../storage.js';
 
 export function mountFactOrFallacy(stageEl, pools, ctx) {
   const pool = pools.mythPool || [];
@@ -156,7 +156,6 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'myth', ctx.scope, score);
     pb = best;
     if (bustedCount > 0) {
-      addXp(Math.min(110, bustedCount * 9), 'Fact or Fallacy Mythbuster');
     }
 
     stageEl.innerHTML = `

@@ -40,13 +40,55 @@ const BANNED_CORPORATE_JARGON = [
   'pedagogical ecosystem',
 ];
 
+// Official Pearson Edexcel GCSE (9–1) Issue 6 Specification Files per Unit
+const GCSE_SPEC_FILE_MAP = {
+  edexcel_medicine: 'paper1_11_medicine_britain.json',
+  eee: 'paper2_b4_early_elizabethan_england.json',
+  cme_new: 'paper2_p5_middle_east.json',
+  weimar_nazi_germany: 'paper3_31_weimar_nazi_germany.json',
+  usa: 'paper3_33_usa_conflict_home_abroad.json',
+};
+
+// Summary-Surface Non-Spec / Antiquarian / Out-of-Period Guardrail Rules
+// Prevents compression onto 1-page Visual Story Sheets or Vocab Banks from replacing
+// Pearson Edexcel mark-scheme terms with obscure antiquarian jargon or out-of-period events.
+const GCSE_SPEC_SUMMARY_GUARDRAILS = {
+  edexcel_medicine: [
+    { regex: /\bphlebotom/i, fix: 'Use Pearson Edexcel spec term "bloodletting" (cutting a vein, leeches, cupping).' },
+    { regex: /\bfleams?\b/i, fix: 'Use plain GCSE phrasing "cutting a vein" instead of antiquarian "fleam".' },
+    { regex: /\bclysters?\b/i, fix: 'Use Pearson Edexcel spec term "purging" (emetics, laxatives, enemas).' },
+    { regex: /\bblack hellebore\b/i, fix: 'Use plain GCSE "bitter herbal emetics" under purging.' },
+    { regex: /\bmateria medica\b|\bherbal simples\b|\bleechbooks?\b/i, fix: 'Use Pearson Edexcel spec term "herbal remedies".' },
+    { regex: /\bvariolation\b|\bsuttonian\b/i, fix: 'Use Pearson Edexcel spec term "inoculation" (contrasted with Jenner\'s 1796 vaccination).' },
+    { regex: /\buroscopy\b|\bmatula\b/i, fix: 'Use plain GCSE "urine charts / checking urine in a glass flask".' },
+    { regex: /\blazar houses?\b/i, fix: 'Use plain GCSE "isolated leper homes".' },
+    { regex: /\bmonastic scriptoria\b/i, fix: 'Use plain GCSE "Church monasteries" (contrasted with Gutenberg\'s printing press).' },
+    { regex: /\byersinia pestis\b/i, fix: 'On Medieval Black Death summaries, use GCSE terms "bubonic / pneumonic plague" rather than modern Latin bacteriology.' },
+    { regex: /\b[Cc]yber[Kk]nife\b|\bVATS\b|\b[Pp]harmacotherapy\b|\b[Aa]symptomatic\b/, fix: 'Use Pearson Edexcel Lung Cancer spec terms: CT/PET scans, bronchoscopy, keyhole surgery, radiotherapy, chemotherapy, genetic research, immunotherapy.' },
+  ],
+  weimar_nazi_germany: [
+    { regex: /\bsopade\b/i, fix: 'Use core Edexcel Option 31 opposition figures/groups (SPD underground, Pastor Niemöller, Edelweiss Pirates, Swing Youth).' },
+    { regex: /\bred orchestra\b|\brote kapelle\b|\bwhite rose\b|\bstauffenberg\b|\bjuly plot\b/i, fix: 'Out of period! Pearson Edexcel Option 31 strictly covers 1918–39 (pre-WWII).' },
+    { regex: /\bt4\b|\baktion t4\b|\bt4 gas\b|\bwannsee\b|\bfinal solution\b/i, fix: 'Out of period! Keep Option 31 persecution strictly within 1933–39 (boycotts, 1933 sterilisation law, 1935 Nuremberg Laws, concentration camps, 1938 Kristallnacht, Aryanisation).' },
+  ],
+  usa: [
+    { regex: /\bcointelpro\b/i, fix: 'Use plain GCSE phrasing "police raids and FBI surveillance".' },
+    { regex: /\boperation linebacker\b/i, fix: 'Use accessible GCSE term "1972 Christmas Bombings".' },
+    { regex: /\boperation frequent wind\b/i, fix: 'Use accessible GCSE term "Fall of Saigon helicopter evacuation".' },
+    { regex: /\bself-defense\b|\bblank check\b|\bamericanized\b|\bneutralized\b|\bpolarization\b/i, fix: 'Use British GCSE English spelling (self-defence, blank cheque, Americanised, neutralised, polarisation).' },
+  ],
+  eee: [
+    { regex: /\bessex rebellion\b|\btyrone['’]?s rebellion\b/i, fix: 'Out of period! Pearson Edexcel Option B4 strictly covers Early Elizabethan England, 1558–88.' },
+  ],
+  cme_new: [],
+};
+
 const TARGET_GCSE_UNITS = [
   'cme_new',
   'edexcel_medicine',
   'eee',
   'usa',
   'weimar_nazi_germany',
-  'cold_war',
 ];
 
 const TARGET_KS3_UNITS = [
@@ -58,6 +100,7 @@ const TARGET_KS3_UNITS = [
   'great_war',
   'great_war_part2',
   'the_shoah',
+  'cold_war',
   'water_and_sanitation',
   'post_war_britain',
   'australia',
@@ -91,6 +134,20 @@ function runAudit(targetUnit = null) {
     const isKs3 = TARGET_KS3_UNITS.includes(unitKey);
     const isGcse = TARGET_GCSE_UNITS.includes(unitKey);
 
+    // Verify official Pearson Edexcel Issue 6 specification file exists on disk for GCSE units
+    if (isGcse && GCSE_SPEC_FILE_MAP[unitKey]) {
+      const specPath = path.join(__dirname, '../public/data/specifications', GCSE_SPEC_FILE_MAP[unitKey]);
+      if (!fs.existsSync(specPath)) {
+        violations.push({
+          unit: unitKey,
+          lesson: 'UNIT_SPEC_FILE',
+          source: 'Specification Gate',
+          type: 'MISSING_SPEC_JSON',
+          detail: `Missing verbatim Pearson Edexcel specification JSON: public/data/specifications/${GCSE_SPEC_FILE_MAP[unitKey]}`,
+        });
+      }
+    }
+
     lessons.forEach((l, lIdx) => {
       totalLessons++;
       const lessonTitle = l.id || `Lesson ${lIdx + 1}`;
@@ -123,6 +180,46 @@ function runAudit(targetUnit = null) {
           });
         }
       });
+
+      // GCSE Specification Summary-Surface & Vocab-Bank Guardrail
+      if (isGcse && GCSE_SPEC_SUMMARY_GUARDRAILS[unitKey]) {
+        const sheet = l.visual_story_sheet;
+        const sheetSurface = sheet
+          ? [
+              sheet.title || '',
+              sheet.takeaway || '',
+              ...(sheet.bridges || []),
+              ...(sheet.vocab || []).map((v) => (Array.isArray(v) ? v.join(' ') : `${v.term || ''} ${v.def || ''}`)),
+              ...(sheet.cards || []).map((c) => `${c.heading || ''} ${c.stat || ''} ${(c.html || '').replace(/<[^>]+>/g, ' ')}`),
+            ].join(' ')
+          : '';
+        const vocabSurface = (l.vocab || [])
+          .map((v) => `${v.term || ''} ${v.def || v.definition || ''}`)
+          .join(' ');
+
+        for (const rule of GCSE_SPEC_SUMMARY_GUARDRAILS[unitKey]) {
+          const sheetMatch = sheetSurface.match(rule.regex);
+          if (sheetMatch) {
+            violations.push({
+              unit: unitKey,
+              lesson: lessonTitle,
+              source: 'Visual Story Sheet',
+              type: 'GCSE_NON_SPEC_TERM_OR_PERIOD',
+              detail: `Found "${sheetMatch[0]}" on Visual Story Sheet. ${rule.fix}`,
+            });
+          }
+          const vocabMatch = vocabSurface.match(rule.regex);
+          if (vocabMatch) {
+            violations.push({
+              unit: unitKey,
+              lesson: lessonTitle,
+              source: 'Lesson Vocab Bank',
+              type: 'GCSE_NON_SPEC_VOCAB',
+              detail: `Found "${vocabMatch[0]}" in lesson.vocab. ${rule.fix}`,
+            });
+          }
+        }
+      }
 
       // Audit primary sources
       (l.sources || []).forEach((s) => {

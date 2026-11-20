@@ -126,18 +126,67 @@ export default defineConfig({
             {
               name: 'vendor',
               test: /node_modules/,
+              priority: 100,
             },
             {
-              name: 'exam-bank',
-              test: /src[\\/]engine[\\/](mock_exam_bank_data|lesson_exam_practice_panel|gcse_donow_engine|ks2_guidance)\.js/,
+              name: 'shared-runtime',
+              test: /(?:src[\\/]data[\\/]unit_resources_catalog|src[\\/]engine[\\/](?:workbook_page_map|speech|video_utils|store|assets)|src[\\/]data_parser)\.js/,
+              priority: 95,
             },
             {
-              name: 'arena-curriculum',
-              test: /src[\\/]engine[\\/](arena_corners|arena_standoffs|workbook_timeline_data)/,
+              name: 'infographic-viewer',
+              test: /(?:src[\\/]infographic_viewer\.js|infographics_manifest\.json)/,
+              priority: 90,
             },
             {
-              name: 'lesson-engine',
-              test: /src[\\/](engine[\\/](lesson_renderer|lesson_consolidate_station|disciplinary_glossary)|infographic_viewer|key_individuals|guided_reading)\.js/,
+              name: 'exam-bank-p1p2',
+              test: /src[\\/]engine[\\/]mock_exam_bank_p1_p2\.js/,
+              priority: 85,
+            },
+            {
+              name: 'exam-bank-p3',
+              test: /src[\\/]engine[\\/](mock_exam_bank_p3|mock_exam_bank_data)\.js/,
+              priority: 80,
+            },
+            {
+              name: 'exam-scaffolding',
+              test: /src[\\/]engine[\\/](lesson_exam_practice_panel|gcse_donow_engine|ks2_guidance)\.js/,
+              priority: 75,
+            },
+            {
+              name: 'arena-corners',
+              test: /src[\\/]engine[\\/]arena_corners/,
+              priority: 70,
+            },
+            {
+              name: 'arena-standoffs',
+              test: /src[\\/]engine[\\/](arena_standoffs|workbook_timeline_data)/,
+              priority: 65,
+            },
+            {
+              name: 'cme-courtyard-data',
+              test: /src[\\/]arcade[\\/]games[\\/]cme_courtyard[\\/](episodes_kt|adventure_immersion_data|directors_cut_data|courtyard_gis_paths)/,
+              priority: 60,
+            },
+            {
+              name: 'cme-courtyard-engine',
+              test: /src[\\/]arcade[\\/]games[\\/]cme_courtyard/,
+              priority: 55,
+            },
+            {
+              name: 'lesson-helpers',
+              test: /src[\\/](engine[\\/](lesson_renderer_helpers|lesson_consolidate_station|disciplinary_glossary|narrative_annotator)|key_individuals)\.js/,
+              priority: 40,
+            },
+            {
+              name: 'lesson-core',
+              test: /src[\\/]engine[\\/]lesson_renderer\.js/,
+              priority: 30,
+            },
+            {
+              name: 'ui-modals-tools',
+              test: /src[\\/](engine[\\/]modals|keyword_search|diagnostic_benchmark|cme_theater_map)\.js/,
+              priority: 20,
             },
           ],
         },

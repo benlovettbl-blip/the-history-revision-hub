@@ -1,0 +1,45 @@
+{
+  "unitId": "industrialisation_and_empire",
+  "clips": {
+    "r1": {
+      "hash": "fa5df045b5775dc7b1b1d188",
+      "bytes": 255212,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 169,
+      "updatedAt": "2026-11-20T16:32:37.306Z"
+    },
+    "r2": {
+      "hash": "3a5206b7b990ec29e382d2c9",
+      "bytes": 268460,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 159,
+      "updatedAt": "2026-11-20T16:32:38.038Z"
+    },
+    "r0": {
+      "hash": "9fd5735aaa4742541800f1e4",
+      "bytes": 258572,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 154,
+      "updatedAt": "2026-11-20T16:32:43.513Z"
+    },
+    "r3": {
+      "hash": "d58fe3093ef74f0cdb1039a4",
+      "bytes": 315020,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 175,
+      "updatedAt": "2026-11-20T16:32:48.173Z"
+    },
+    "r4": {
+      "hash": "62f7e5c0ccd78b56f5f19d62",
+      "bytes": 306380,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 186,
+      "updatedAt": "2026-11-20T16:32:48.891Z"
+    }
+  }
+}

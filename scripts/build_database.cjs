@@ -101,7 +101,8 @@ async function buildDatabase() {
   }
 
   const rootDbPath = path.join(__dirname, '..', 'database.json');
-  fs.writeFileSync(publicDbPath, JSON.stringify(db, null, 2), 'utf8');
+  // Write compact JSON to public/database.json so dist/database.json stays well under Cloudflare Pages' 25 MiB per-file limit
+  fs.writeFileSync(publicDbPath, JSON.stringify(db), 'utf8');
   fs.writeFileSync(rootDbPath, JSON.stringify(db, null, 2), 'utf8');
   console.log(`🎉 Successfully built database.json with ${Object.keys(db).length} units.`);
 }

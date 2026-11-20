@@ -4,22 +4,16 @@
  */
 
 import { state } from './state.js';
-import { getProfile, setMockUser } from './auth.js';
 import {
   getMasteryStatus,
   updateLeitnerBox,
   toggleBookmark,
   saveProgress,
-  addXp,
-  showXpToast,
 } from './storage.js';
-export { addXp, showXpToast };
 import { renderCoverSourcesHTML } from './cover_sources.js';
 import { renderKeyTopicLessonsHTML } from './lesson_cards.js';
 import { renderUnitSynopsis } from './unit_synopses.js';
 import { renderLesson } from './engine/lesson_renderer.js'; // force-refresh
-import { initKeyIndividualsTask } from './key_individuals.js';
-import { initGuidedReadingTask } from './guided_reading.js';
 import { getAssetUrl } from './engine/assets.js';
 import {
   renderHeroCurricularLaunchpad,
@@ -70,11 +64,6 @@ export function renderDashboard() {
           <button type="button" class="course-filter-pill" data-filter="p2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 2</button>
           <button type="button" class="course-filter-pill" data-filter="p3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 3</button>
         </div>
-
-        <button type="button" onclick="window.switchView('ai-prompt-craft')" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 7px; padding: 5px 12px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-microchip" style="font-size: 0.72rem;"></i>
-          <span>Year 9 AI Course</span>
-        </button>
       </div>
   `;
 
@@ -391,28 +380,6 @@ export function renderDashboard() {
           </button>
         </div>
 
-        <!-- Year 9 AI Curriculum Spotlight -->
-        <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #bfdbfe; border-radius: 14px; padding: 18px 20px; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
-          <div style="display: flex; align-items: center; gap: 12px; min-width: 220px; flex: 1;">
-            <div style="width: 44px; height: 44px; border-radius: 10px; background: #1e3a8a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0; box-shadow: 0 4px 10px rgba(30, 58, 138, 0.25);">
-              <i class="fa-solid fa-microchip"></i>
-            </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 2px;">
-                <span style="font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; background: #1d4ed8; color: #ffffff; padding: 2px 7px; border-radius: 10px;">KS3 Year 9</span>
-                <span style="font-size: 0.72rem; font-weight: 700; color: #1e40af;">6-Lesson Enquiry Unit</span>
-              </div>
-              <div style="font-size: 0.92rem; font-weight: 700; color: #0f172a;">
-                Artificial Intelligence &amp; Prompt Craft
-              </div>
-            </div>
-          </div>
-          <button class="btn-pedagogy-primary" onclick="window.switchView('ai-prompt-craft')" style="background: #1e3a8a; border-color: #1e40af; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; border-radius: 6px; cursor: pointer; color: #ffffff; flex-shrink: 0;">
-            <span>Open Course</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-
       </div>
     </div>
   `;
@@ -523,11 +490,9 @@ function attachDashboardStageFilter(container) {
     [
       'nav-competitions',
       'nav-chess',
-      'nav-ai-prompt-craft',
       'app-global-footer',
       'sidebar-units-header',
       'sidebar-unit-links',
-      'nav-profile',
     ].forEach((id) => {
       const el = document.getElementById(id);
       if (el) el.style.display = 'none';
@@ -538,20 +503,14 @@ function attachDashboardStageFilter(container) {
     if (searchPlaceholder) {
       searchPlaceholder.textContent = 'Search WWII topics, evacuees, Blitz, Bletchley...';
     }
-    container.querySelectorAll('[onclick*="ai-prompt-craft"]').forEach((el) => {
-      const card = el.closest('div[style*="border"]') || el.parentElement;
-      if (card) card.style.display = 'none';
-    });
   } else {
     if (document.body) document.body.classList.remove('ks2-mode-active');
     [
       'nav-competitions',
       'nav-chess',
-      'nav-ai-prompt-craft',
       'app-global-footer',
       'sidebar-units-header',
       'sidebar-unit-links',
-      'nav-profile',
     ].forEach((id) => {
       const el = document.getElementById(id);
       if (el) el.style.display = '';
@@ -587,122 +546,6 @@ export async function renderMasterpieceView() {
   }
 }
 
-export function renderProfileView() {
-  const container = document.getElementById('main-content');
-  const profile = getProfile();
-
-  const totalQuestions = state.allQuestions ? state.allQuestions.length : 0;
-  const boxes = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
-
-  if (state.mastery) {
-    Object.values(state.mastery).forEach((entry) => {
-      const b = entry.leitnerBox || 1;
-      if (boxes[b] !== undefined) boxes[b]++;
-    });
-  }
-
-  container.innerHTML = `
-    <div class="card max-w-md mx-auto" style="margin-bottom: 2rem;">
-      <h3><i class="fa-solid fa-user-circle"></i> Microsoft SSO Student Profile</h3>
-      <p class="text-muted">Simulated tenant environment: <strong>history-app.local</strong></p>
-      
-      <div class="profile-details">
-        <div class="form-group">
-          <label>Microsoft Account Email</label>
-          <input type="text" class="form-control" value="${profile ? profile.username : ''}" disabled />
-        </div>
-        <div class="form-group">
-          <label>Display Name</label>
-          <input type="text" class="form-control" value="${profile ? profile.name : ''}" disabled />
-        </div>
-        <div class="form-group">
-          <label>Assigned Year Group unit authorization</label>
-          <select id="profile-year-group" class="form-control" onchange="window.updateProfileYearGroup(this.value)">
-            <option value="Year 7" ${profile && profile.yearGroup === 'Year 7' ? 'selected' : ''}>Year 7 (Norman Conquest)</option>
-            <option value="Year 8" ${profile && profile.yearGroup === 'Year 8' ? 'selected' : ''}>Year 8 (Changes 1450-1750)</option>
-            <option value="Year 9" ${profile && profile.yearGroup === 'Year 9' ? 'selected' : ''}>Year 9 (Great War)</option>
-            <option value="GCSE" ${profile && profile.yearGroup === 'GCSE' ? 'selected' : ''}>GCSE (USA 1954-1975)</option>
-            <option value="Admin" ${profile && profile.yearGroup === 'Admin' ? 'selected' : ''}>Admin (Unlock All Modules)</option>
-          </select>
-        </div>
-      </div>
-      
-      <div style="margin-top: 24px;">
-        <button class="btn btn-secondary w-full" data-action="switch-view" data-view="dashboard">Save and Return</button>
-      </div>
-    </div>
-
-    <!-- Study XP & Revision Progress Overview Card -->
-    <div class="card max-w-md mx-auto" style="margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.05) 100%);">
-      <h3 style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-        <span><i class="fa-solid fa-fire" style="color: #f59e0b;"></i> Revision Progress &amp; XP</span>
-        <span style="font-size: 0.82rem; font-weight: 800; color: #d97706; background: #fef3c7; border: 1px solid #fde68a; padding: 4px 10px; border-radius: 6px;"><i class="fa-solid fa-fire"></i> ${state.dailyXp || 0} XP</span>
-      </h3>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; text-align: center;">
-        <div style="background: var(--bg-app); border: 1px solid var(--border-glass); border-radius: 8px; padding: 12px 6px;">
-          <div style="font-size: 1.35rem; font-weight: 800; color: #16a34a;">${boxes[5]}</div>
-          <div style="font-size: 0.72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-top: 2px;">Mastered</div>
-        </div>
-        <div style="background: var(--bg-app); border: 1px solid var(--border-glass); border-radius: 8px; padding: 12px 6px;">
-          <div style="font-size: 1.35rem; font-weight: 800; color: #0284c7;">${boxes[3] + boxes[4]}</div>
-          <div style="font-size: 0.72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-top: 2px;">Secured</div>
-        </div>
-        <div style="background: var(--bg-app); border: 1px solid var(--border-glass); border-radius: 8px; padding: 12px 6px;">
-          <div style="font-size: 1.35rem; font-weight: 800; color: #d97706;">${boxes[1] + boxes[2]}</div>
-          <div style="font-size: 0.72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-top: 2px;">In Progress</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Leitner Box spaced repetition distribution -->
-    <div class="card leitner-card max-w-md mx-auto">
-      <h3><i class="fa-solid fa-brain"></i> Memory Spaced Repetition Distribution</h3>
-      <div class="leitner-distribution">
-        <div class="leitner-bar-wrapper">
-          <span class="bar-label">Box 1 (New)</span>
-          <div class="bar-container"><div class="bar-fill bg-danger" style="width: ${totalQuestions ? (boxes[1] / totalQuestions) * 100 : 0}%"></div></div>
-          <span class="bar-count">${boxes[1]}</span>
-        </div>
-        <div class="leitner-bar-wrapper">
-          <span class="bar-label">Box 2 (Learning)</span>
-          <div class="bar-container"><div class="bar-fill bg-warning" style="width: ${totalQuestions ? (boxes[2] / totalQuestions) * 100 : 0}%"></div></div>
-          <span class="bar-count">${boxes[2]}</span>
-        </div>
-        <div class="leitner-bar-wrapper">
-          <span class="bar-label">Box 3 (Securing)</span>
-          <div class="bar-container"><div class="bar-fill bg-info" style="width: ${totalQuestions ? (boxes[3] / totalQuestions) * 100 : 0}%"></div></div>
-          <span class="bar-count">${boxes[3]}</span>
-        </div>
-        <div class="leitner-bar-wrapper">
-          <span class="bar-label">Box 4 (Retained)</span>
-          <div class="bar-container"><div class="bar-fill bg-primary" style="width: ${totalQuestions ? (boxes[4] / totalQuestions) * 100 : 0}%"></div></div>
-          <span class="bar-count">${boxes[4]}</span>
-        </div>
-        <div class="leitner-bar-wrapper">
-          <span class="bar-label">Box 5 (Mastered)</span>
-          <div class="bar-container"><div class="bar-fill bg-success" style="width: ${totalQuestions ? (boxes[5] / totalQuestions) * 100 : 0}%"></div></div>
-          <span class="bar-count">${boxes[5]}</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Version & Cache Control Card -->
-    <div class="card max-w-md mx-auto" style="margin-top: 1.5rem;">
-      <h3><i class="fa-solid fa-arrows-rotate"></i> App Version &amp; Mobile Updates</h3>
-      <p class="text-muted" style="font-size: 0.86rem; line-height: 1.5; margin-bottom: 14px;">
-        If you are on a mobile phone, iPad, or tablet and want to ensure you are seeing the very latest curriculum features and quizzes:
-      </p>
-      <button class="btn btn-outline w-full" id="btn-force-update" onclick="window.forceAppUpdate(event)" style="display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700;">
-        <i class="fa-solid fa-cloud-arrow-down"></i>
-        <span>Check for Updates &amp; Refresh Cache</span>
-      </button>
-      <p style="font-size: 0.75rem; color: #94a3b8; text-align: center; margin-top: 10px; margin-bottom: 0;">
-        Clears local service worker cache and pulls fresh build from Netlify.
-      </p>
-    </div>
-  `;
-}
-
 // Global force update function for mobile devices
 window.forceAppUpdate = async function (e) {
   const btn = document.getElementById('btn-force-update');
@@ -727,12 +570,6 @@ window.forceAppUpdate = async function (e) {
   const url = new URL(window.location.href);
   url.searchParams.set('_v', Date.now());
   window.location.href = url.toString();
-};
-
-// Global update function bound to window
-window.updateProfileYearGroup = function (val) {
-  setMockUser(val);
-  renderDashboard();
 };
 
 window.launchSubApp = function (subAppName) {
@@ -1284,7 +1121,7 @@ export function renderInteractiveQuiz() {
           <p style="color: #64748b; font-size: 0.9rem; max-width: 540px; margin: 0 auto 22px auto; line-height: 1.5;">
             ${
               isKs2Quiz
-                ? '20 questions across all 11 Second World War enquiries checking dates, primary sources, and key vocabulary.'
+                ? `${initialDiagCount} questions across Second World War enquiries checking dates, primary sources, and key vocabulary.`
                 : 'Sampled questions testing factual recall and chronological accuracy under timed exam conditions.'
             }
           </p>
@@ -1346,11 +1183,6 @@ export function renderInteractiveQuiz() {
           </div>
         </div>
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          ${
-            unitId === 'usa'
-              ? `<a href="/units/usa/trading_cards.html" target="_blank" style="text-decoration: none; background: linear-gradient(135deg, #f97316, #ea580c); color: #fff; font-weight: 700; border-radius: 7px; padding: 7px 13px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px;"><i class="fa-solid fa-id-card"></i> Trading Cards</a>`
-              : ''
-          }
           <button type="button" onclick="if(window.launchUnitArcade){window.launchUnitArcade('${unitId}', 'all', 'lobby');}else if(window.switchView){window.switchView('arcade', '${unitId}');}" style="background: #2563eb; color: #ffffff; font-weight: 800; border-radius: 7px; padding: 8px 15px; font-size: 0.82rem; border: 1px solid #60a5fa; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
             <i class="fa-solid fa-gamepad"></i> Launch Revision Arcade
           </button>
@@ -1734,7 +1566,9 @@ export function renderIndividualsView() {
   `;
   container.appendChild(topBar);
 
-  initKeyIndividualsTask(container, agents);
+  import('./key_individuals.js').then(({ initKeyIndividualsTask }) => {
+    initKeyIndividualsTask(container, agents);
+  });
 }
 
 export async function renderLessonsView() {
@@ -2933,15 +2767,15 @@ export async function renderMockExamsView() {
       </div>
 
       <!-- Sub Navigation Tabs: High-Contrast Monochrome -->
-      <div style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid #000000; padding-bottom: 2px; overflow-x: auto;">
-        <button id="tab-btn-official-mocks" class="btn" style="background: #000000; color: #ffffff; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 800; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid #000000; padding-bottom: 2px;">
+        <button id="tab-btn-official-mocks" class="btn" style="background: #000000; color: #ffffff; border: 2px solid #000000; border-bottom: none; padding: 9px 14px; border-radius: 4px 4px 0 0; font-weight: 800; cursor: pointer; font-size: 0.84rem; display: flex; align-items: center; gap: 7px; white-space: nowrap;">
           <i class="fa-solid fa-graduation-cap"></i> Predicted Mock Exam Papers
         </button>
-        <button id="tab-btn-official-past-papers" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
-          <i class="fa-solid fa-box-archive"></i> Edexcel Past Papers Archive (2018–2026 Archive)
+        <button id="tab-btn-official-past-papers" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 9px 14px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.84rem; display: flex; align-items: center; gap: 7px; white-space: nowrap;">
+          <i class="fa-solid fa-box-archive"></i> Edexcel Past Papers (2018–2026)
         </button>
-        <button id="tab-btn-trend-radar" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 10px 18px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
-          <i class="fa-solid fa-chart-line"></i> 2018–2026 Past Paper Matrix &amp; Overdue Radar
+        <button id="tab-btn-trend-radar" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 9px 14px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.84rem; display: flex; align-items: center; gap: 7px; white-space: nowrap;">
+          <i class="fa-solid fa-chart-line"></i> Past Paper Matrix &amp; Overdue Radar
         </button>
       </div>
 
@@ -3274,38 +3108,17 @@ export async function renderReadingView(options = {}) {
   const unitId = state.selectedUnitId || window.currentUnitId || 'great_war_part2';
   const unitData = state.activeUnitData || {};
 
-  if (unitId === 'ks2_ww2' && container) {
-    container.innerHTML = `
-      <div style="max-width: 1180px; margin: 0 auto; padding: 20px 16px 40px 16px; font-family: 'Inter', sans-serif;">
-        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; padding: 22px 26px; border-radius: 12px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 14px rgba(15,23,42,0.18);">
-          <div>
-            <div style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #7dd3fc; margin-bottom: 4px;">
-              <i class="fa-solid fa-book-open"></i> Key Stage 2 Classroom Reading Anthology
-            </div>
-            <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; font-weight: 800; color: #fff;">
-              World War II &amp; The Home Front (1933–1945) — 16-Page Master Textbook
-            </h1>
-            <p style="margin: 6px 0 0 0; font-size: 0.9rem; color: #cbd5e1;">
-              Read all 11 chronological lessons in a high-legibility single-column layout, Chronological Spine, 55-question Partner Retrieval Quiz, and Essential Vocabulary Bank.
-            </p>
-          </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="/units/ks2_ww2/textbook.html" target="_blank" style="background: rgba(255,255,255,0.14); color: #fff; border: 1px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px;">
-              <i class="fa-solid fa-up-right-from-square"></i> Full-Screen Textbook
-            </a>
-            <a href="/pdfs/ks2_ww2_textbook.pdf" target="_blank" style="background: #059669; color: #fff; border: 1px solid #10b981; font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 7px;">
-              <i class="fa-solid fa-file-pdf"></i> Download 16-Page PDF
-            </a>
-            <button type="button" onclick="window.switchView && window.switchView('lessons', 'ks2_ww2')" style="background: #2563eb; color: #fff; border: 1px solid #3b82f6; font-weight: 700; font-size: 0.85rem; padding: 9px 14px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;">
-              <i class="fa-solid fa-chalkboard-user"></i> Back to KS2 Unit
-            </button>
-          </div>
+  if (['edexcel_medicine', 'eee', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(unitId)) {
+    if (container) {
+      container.innerHTML = `
+        <div style="max-width: 780px; margin: 40px auto; padding: 28px; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 12px; text-align: center; font-family: 'Inter', sans-serif; box-shadow: 0 4px 16px rgba(15,23,42,0.06);">
+          <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #0284c7; margin-bottom: 8px;">Key Stage 2 &amp; Key Stage 3 Feature</div>
+          <h2 style="margin: 0 0 10px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.45rem; color: #0f172a;">Guided Reading is Reserved for KS2 &amp; KS3 Units</h2>
+          <p style="margin: 0 0 18px 0; color: #475569; font-size: 0.94rem; line-height: 1.6;">GCSE courses already include full 28-page Master Classroom Textbooks, Visual Story Sheets, and Primary Source / Interpretation banks inside every lesson.</p>
+          <button type="button" onclick="window.switchView && window.switchView('lessons', '${unitId}')" style="background: #2563eb; color: #ffffff; border: none; font-weight: 700; font-size: 0.88rem; padding: 10px 18px; border-radius: 8px; cursor: pointer;">Back to GCSE Lessons</button>
         </div>
-        <div style="background: #fff; border: 1.5px solid #cbd5e1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(15,23,42,0.08);">
-          <iframe src="/units/ks2_ww2/textbook.html" title="KS2 WWII 16-Page Master Classroom Textbook" style="width: 100%; height: 78vh; min-height: 640px; border: none; display: block;"></iframe>
-        </div>
-      </div>
-    `;
+      `;
+    }
     return;
   }
 
@@ -3323,7 +3136,9 @@ export async function renderReadingView(options = {}) {
   }
   const currentLessonIndex = typeof lessonParam === 'number' ? lessonParam : 0;
 
-  initGuidedReadingTask(container, guidedReadingData, { currentLessonIndex, rawLesson, unitId, unitData });
+  import('./guided_reading.js').then(({ initGuidedReadingTask }) => {
+    initGuidedReadingTask(container, guidedReadingData, { currentLessonIndex, rawLesson, unitId, unitData });
+  });
 }
 
 export async function renderMarkingView(options = {}) {

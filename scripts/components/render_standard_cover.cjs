@@ -2188,11 +2188,11 @@ function renderKs3BackCover({
       <tbody>
         <tr style="background: #1e3a8a; color: #fff;">
           <td style="border: 1px solid #0f172a; padding: 2.5px 5px; font-weight: 800; width: 11%; text-transform: uppercase;">KS3 Pathway</td>
-          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #f8fafc; color: #0f172a;"><strong>Emerging (1–3):</strong> Isolated facts; basic descriptive recall.</td>
-          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #ffffff; color: #0f172a;"><strong>Emerging+ (3–4):</strong> Identifies causes &amp; features with simple explanation.</td>
-          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #f8fafc; color: #0f172a;"><strong>Expected (4–5):</strong> Structured PEEL arguments with precise facts.</td>
-          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #ffffff; color: #0f172a;"><strong>Expected+ (6–7):</strong> Evaluates competing causes; nuanced explanation.</td>
-          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #f8fafc; color: #0f172a;"><strong>Greater Depth (8–9):</strong> Sustained historical criteria &amp; historiographical verdicts.</td>
+          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #f8fafc; color: #0f172a;"><strong>Emerging (Em &bull; 35%):</strong> Isolated facts; basic descriptive recall.</td>
+          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #ffffff; color: #0f172a;"><strong>Emerging+ (Em+ &bull; 50%):</strong> Identifies causes &amp; features with simple explanation.</td>
+          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #f8fafc; color: #0f172a;"><strong>Expected (Ex &bull; 65%):</strong> Structured PEEL arguments with precise facts.</td>
+          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #ffffff; color: #0f172a;"><strong>Expected+ (Ex+ &bull; 80%):</strong> Evaluates competing causes; nuanced explanation.</td>
+          <td style="border: 1px solid #0f172a; padding: 2.5px 5px; width: 17.8%; background: #f8fafc; color: #0f172a;"><strong>Greater Depth (GD &bull; 90%):</strong> Sustained historical criteria &amp; historiographical verdicts.</td>
         </tr>
         <tr style="background: #0f172a; color: #fff;">
           <td style="border: 1px solid #0f172a; padding: 2.5px 5px; font-weight: 800; text-transform: uppercase;">Effort Rubric</td>

@@ -6,10 +6,17 @@ export function isOrganisationEntity(entity) {
   return raw === 'organisation' || raw === 'organization' || raw === 'org';
 }
 
+const INLINE_PORTRAIT_FALLBACK =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='276' viewBox='0 0 240 276'%3E%3Crect width='240' height='276' fill='%230f172a'/%3E%3Ccircle cx='120' cy='106' r='38' fill='%23334155'/%3E%3Cpath d='M56 236c8-38 34-58 64-58s56 20 64 58' fill='%23334155'/%3E%3C/svg%3E";
+
 function usesContainFit(entity, imgSrc = '') {
   if (!entity) return false;
-  if (entity.image_fit === 'contain') return true;
+  if (entity.image_fit === 'logo') return true;
   return /\.svg(?:$|\?)/i.test(String(imgSrc || ''));
+}
+
+function entityHasContainArtwork(entity) {
+  return Boolean(entity && entity.image_fit === 'contain');
 }
 
 function fmtInlineDossierText(val) {
@@ -50,7 +57,8 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
     : 'Historical Figure Dossier';
 
   let imgSrcHtml = '';
-  if (person.image || person.image_url) {
+  const embedRawImg = String(person.image_url || person.image || '').trim();
+  if (embedRawImg && embedRawImg !== '/') {
     const imgSrc = person.image_url
       ? person.image_url
       : typeof getAssetUrl === 'function'
@@ -93,7 +101,7 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   const distinctionHtml = person.key_distinction
     ? `
       <div style="margin-top: 8px; font-size: 0.87rem; color: #78350f; line-height: 1.48; background: #fffbeb; border-left: 3px solid #d97706; padding: 7px 12px; border-radius: 0 4px 4px 0;">
-        <strong style="color: #92400e;">Key Distinction (Exam Precision):</strong> ${fmtInlineDossierText(person.key_distinction)}
+        <strong style="color: #92400e;">Key Historical Distinction:</strong> ${fmtInlineDossierText(person.key_distinction)}
       </div>
     `
     : '';
@@ -229,6 +237,18 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   `;
 }
 
+function deriveMonogramInitials(name) {
+  const cleaned = String(name || '')
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/\b(King|Queen|Prince|Princess|Sir|Dame|Lord|Lady|Admiral|General|Field Marshal|Archbishop|Cardinal|Pope|Governor|President|Professor|Prof\.?|Dr\.?|OBE|MBE|VC|II|III|IV|VIII|XI)\b/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const parts = cleaned.split(/[\s&/,-]+/).filter((w) => /^[A-Za-zÀ-ÿ]/.test(w));
+  if (parts.length === 0) return 'H';
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
 export function generateKeyIndividualCardHTML(person) {
   const isOrg = isOrganisationEntity(person);
   const entityTypeAttr = isOrg ? 'organisation' : 'person';
@@ -240,7 +260,9 @@ export function generateKeyIndividualCardHTML(person) {
   const pillBorder = isOrg ? '#99f6e4' : '#bfdbfe';
 
   let frontImgHtml = '';
-  if (person.image || person.image_url) {
+  const rawImgVal = String(person.image_url || person.image || '').trim();
+  const hasValidImg = Boolean(rawImgVal && rawImgVal !== '/');
+  if (hasValidImg) {
     const imgSrc = person.image_url
       ? person.image_url
       : typeof getAssetUrl === 'function'
@@ -251,19 +273,30 @@ export function generateKeyIndividualCardHTML(person) {
     const objPos = (person.image_position || 'center 22%')
       .replace(/"/g, '')
       .replace(/\bcentre\b/gi, 'center');
+    const forceContainArtwork = entityHasContainArtwork(person);
     if (contain) {
       frontImgHtml = `<div style="width: 100%; height: 276px; background: #ffffff; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden; padding: 22px; box-sizing: border-box;">
-        <img src="${imgSrc}" alt="${safeAlt}" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" onerror="this.src='/images/placeholder_portrait.jpg'">
+        <img src="${imgSrc}" alt="${safeAlt}" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" onerror="this.onerror=null; this.src='${INLINE_PORTRAIT_FALLBACK}'">
       </div>`;
     } else {
-      frontImgHtml = `<div style="position: relative; width: 100%; height: 276px; background: #0f172a; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden;">
+      const onloadRule = forceContainArtwork
+        ? ''
+        : `onload="if(this.naturalWidth > this.naturalHeight * 1.12){ this.style.width='100%'; this.style.height='100%'; this.style.objectFit='cover'; this.style.objectPosition=this.dataset.objPos||'center 22%'; this.style.boxShadow='none'; if(this.previousElementSibling) this.previousElementSibling.style.display='none'; }"`;
+      frontImgHtml = `<div style="position: relative; width: 100%; height: 276px; background: #0f172a; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden; ${forceContainArtwork ? 'padding: 10px; box-sizing: border-box;' : ''}">
         <div class="agent-portrait-ambient" style="position: absolute; inset: -16px; background-image: url('${imgSrc}'); background-size: cover; background-position: center 25%; filter: blur(22px) brightness(0.54) saturate(0.88); transform: scale(1.12); pointer-events: none;"></div>
-        <img src="${imgSrc}" alt="${safeAlt}" data-obj-pos="${objPos}" onload="if(this.naturalWidth > this.naturalHeight * 1.12){ this.style.width='100%'; this.style.height='100%'; this.style.objectFit='cover'; this.style.objectPosition=this.dataset.objPos||'center 22%'; this.style.boxShadow='none'; if(this.previousElementSibling) this.previousElementSibling.style.display='none'; }" style="position: relative; z-index: 1; height: 100%; width: auto; max-width: 100%; object-fit: contain; box-shadow: 0 4px 20px rgba(0,0,0,0.42);" onerror="if(this.previousElementSibling)this.previousElementSibling.style.display='none'; this.src='/images/placeholder_portrait.jpg'">
+        <img src="${imgSrc}" alt="${safeAlt}" data-obj-pos="${objPos}" ${onloadRule} style="position: relative; z-index: 1; ${forceContainArtwork ? 'max-height: 100%; max-width: 100%; width: auto; height: auto; border-radius: 4px;' : 'height: 100%; width: auto; max-width: 100%;'} object-fit: contain; box-shadow: 0 4px 20px rgba(0,0,0,0.42);" onerror="this.onerror=null; if(this.previousElementSibling)this.previousElementSibling.style.display='none'; this.src='${INLINE_PORTRAIT_FALLBACK}'">
       </div>`;
     }
   } else {
-    frontImgHtml = `<div style="width: 100%; height: 260px; background: var(--bg-card); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass); overflow: hidden; flex-direction: column; color: var(--text-muted);">
-      <i class="fa-solid ${pillIcon}" style="font-size: 4rem; opacity: 0.2;"></i>
+    const initials = deriveMonogramInitials(person.name);
+    frontImgHtml = `<div class="kf-monogram" style="width: 100%; height: 276px; background: radial-gradient(circle at 50% 42%, #1e293b 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass, #e2e8f0); border-radius: 11px 11px 0 0; overflow: hidden; flex-direction: column; gap: 14px; padding: 20px; box-sizing: border-box;">
+      <div style="width: 108px; height: 108px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #991b1b 0%, #7f1d1d 65%, #450a0a 100%); border: 3px solid #d97706; box-shadow: 0 8px 24px rgba(0,0,0,0.45), inset 0 0 0 4px rgba(251, 191, 36, 0.28); display: flex; align-items: center; justify-content: center;">
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.15rem; font-weight: 800; color: #fef3c7; letter-spacing: 0.06em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">${initials}</span>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #fbbf24;">Archival Biographical Record</div>
+        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 3px;">Primary Biographical Dossier</div>
+      </div>
     </div>`;
   }
 
@@ -348,20 +381,24 @@ export function generateKeyIndividualCardHTML(person) {
     hasDetailedContent = true;
     backHtml += `
       <div style="background: rgba(16, 185, 129, 0.09); border-left: 3px solid #059669; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #047857; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">GCSE Historical Significance</strong>
+        <strong style="color: #047857; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Historical Significance</strong>
         <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.significance)}</span>
       </div>`;
   }
 
-  if (person.quotes) {
+  const rawQuotes = person.quotes || person.quote;
+  if (rawQuotes) {
     hasDetailedContent = true;
-    const quotesHtml = Array.isArray(person.quotes)
-      ? person.quotes.map((q) => `&ldquo;${q}&rdquo;`).join('<br><br>')
-      : `&ldquo;${person.quotes}&rdquo;`;
+    const quotesHtml = Array.isArray(rawQuotes)
+      ? rawQuotes.map((q) => `&ldquo;${fmtInlineDossierText(q)}&rdquo;`).join('<br><br>')
+      : `&ldquo;${fmtInlineDossierText(rawQuotes)}&rdquo;`;
+    const citationHtml = person.citation
+      ? `<span style="display: block; margin-top: 5px; font-style: normal; font-size: 0.78rem; color: #64748b; font-weight: 600;">&mdash; ${fmtInlineDossierText(person.citation)}</span>`
+      : '';
     backHtml += `
       <div style="background: rgba(168, 85, 247, 0.09); border-left: 3px solid #a855f7; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #7e22ce; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Key Quotes</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; font-style: italic; line-height: 1.48;">${quotesHtml}</span>
+        <strong style="color: #7e22ce; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Primary Testimony / Quote</strong>
+        <span style="font-size: 0.88rem; color: var(--text-main); display: block; font-style: italic; line-height: 1.48;">${quotesHtml}${citationHtml}</span>
       </div>`;
   }
 
@@ -376,10 +413,14 @@ export function generateKeyIndividualCardHTML(person) {
     : '';
 
   const aliasesStr = Array.isArray(person.aliases) ? person.aliases.join('|') : '';
-  const onclickAttr = `onclick="this.classList.toggle('flipped')"`;
+  const onclickAttr = hasDetailedContent ? `onclick="this.classList.toggle('flipped')"` : '';
+  const cursorStyle = hasDetailedContent ? 'cursor: pointer;' : 'cursor: default;';
+  const flipPromptHtml = hasDetailedContent
+    ? `<div style="text-align: center; margin-top: auto; padding-top: 14px; font-size: 0.83rem; color: ${pillColor}; font-weight: 700;"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i> Tap to Open Dossier</div>`
+    : '';
 
   return `
-    <div class="person-card" data-entity-type="${entityTypeAttr}" data-agent-name="${(person.name || '').replace(/"/g, '&quot;')}" data-agent-aliases="${aliasesStr.replace(/"/g, '&quot;')}" ${onclickAttr} style="height: 100%;">
+    <div class="person-card" data-has-back="${hasDetailedContent ? 'true' : 'false'}" data-entity-type="${entityTypeAttr}" data-agent-name="${(person.name || '').replace(/"/g, '&quot;')}" data-agent-aliases="${aliasesStr.replace(/"/g, '&quot;')}" ${onclickAttr} style="height: 100%; ${cursorStyle}">
       <div class="card-inner">
         <div class="card-front">
           ${frontImgHtml}
@@ -391,12 +432,12 @@ export function generateKeyIndividualCardHTML(person) {
             </div>
             <h3 style="margin: 0 0 4px 0; color: var(--primary); font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.28;">${person.name}</h3>
             ${lifespanHtml}
-            <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.35;">${person.role || ''}</p>
+            <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.35;">${person.role || person.group || ''}</p>
             ${basicBio}
-            <div style="text-align: center; margin-top: auto; padding-top: 14px; font-size: 0.83rem; color: ${pillColor}; font-weight: 700;"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i> Tap to Open Dossier</div>
+            ${flipPromptHtml}
           </div>
         </div>
-        <div class="card-back">${backHtml}</div>
+        ${hasDetailedContent ? `<div class="card-back">${backHtml}</div>` : ''}
       </div>
     </div>
   `;
@@ -820,7 +861,10 @@ export async function jumpToKeyIndividual(personName) {
 
     if (targetCard) {
       targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      targetCard.classList.add('flipped', 'agent-highlight-ring');
+      targetCard.classList.add('agent-highlight-ring');
+      if (targetCard.dataset.hasBack === 'true') {
+        targetCard.classList.add('flipped');
+      }
       setTimeout(() => {
         targetCard.classList.remove('agent-highlight-ring');
       }, 2800);

@@ -107,6 +107,11 @@ const GUIDED_READING_CAST = {
     style: 'quiet, haunted young German soldier reflecting with sorrow on lost youth in the trenches',
     badge: 'Paul Bäumer · Young German Soldier',
   },
+  'great_war:5': {
+    voiceKey: 'male_historian',
+    style: 'authoritative, balanced British documentary historian weighing Fritz Fischer against Christopher Clark on July 1914',
+    badge: 'Studio Historian · Fischer vs Clark Debate',
+  },
   'great_war_part2:0': {
     voiceKey: 'ww1_british_officer',
     style: 'weary, understated young British infantry officer contrasting peaceful England with the trenches',

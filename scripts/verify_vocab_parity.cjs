@@ -82,17 +82,20 @@ async function verifyVocabParity() {
         const vocabTerms = lesson.vocab.map((v) => (v.term || '').trim());
         const vocabSet = new Set(vocabTerms);
 
-        // 3. Cloze text parity check
-        if (lesson.vocab_cloze_text && typeof lesson.vocab_cloze_text === 'string') {
+        // 3. Cloze text parity check (100% uniform across all non-placeholder lessons)
+        if (!lesson.vocab_cloze_text || typeof lesson.vocab_cloze_text !== 'string' || !lesson.vocab_cloze_text.trim()) {
+          if (!isPlaceholder) {
+            errors.push(`Missing 'vocab_cloze_text' summary cloze (100% app uniformity required across all 18 units).`);
+          }
+        } else {
           const rawBlanks = lesson.vocab_cloze_text.match(/\[(.*?)\]/g) || [];
           const blanks = rawBlanks.map((b) => b.slice(1, -1).trim());
 
-          if (blanks.length === 0) {
-            warnings.push(`'vocab_cloze_text' contains no bracketed blanks.`);
+          if (blanks.length < 4 || blanks.length > 8) {
+            errors.push(`'vocab_cloze_text' must contain 4–8 bracketed blanks (found ${blanks.length}).`);
           } else {
             blanks.forEach((b) => {
               if (!vocabSet.has(b)) {
-                // Check if case insensitive match exists
                 const caseMatch = vocabTerms.find((t) => t.toLowerCase() === b.toLowerCase());
                 if (caseMatch) {
                   errors.push(`Cloze blank '[${b}]' case mismatch with vocab term '${caseMatch}'.`);
@@ -102,11 +105,9 @@ async function verifyVocabParity() {
               }
             });
 
-            vocabTerms.forEach((t) => {
-              if (!blanks.includes(t)) {
-                warnings.push(`Vocab term '${t}' is not tested in cloze text.`);
-              }
-            });
+            if (/\ban\s+\[/i.test(lesson.vocab_cloze_text)) {
+              errors.push(`'vocab_cloze_text' contains an 'an [' vowel grammar giveaway before a blank.`);
+            }
           }
         }
       }

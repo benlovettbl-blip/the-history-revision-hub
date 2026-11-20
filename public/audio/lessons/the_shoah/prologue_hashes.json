@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_prologue": {
+      "hash": "b8139f5ea0ee73fe",
+      "bytes": 146156,
+      "voiceKey": "female_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:19.029Z"
+    },
+    "lesson_3_prologue": {
+      "hash": "115c40f4953d34fa",
+      "bytes": 194732,
+      "voiceKey": "female_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:19.555Z"
+    },
+    "lesson_6_prologue": {
+      "hash": "c9ad59da6a9c9971",
+      "bytes": 198572,
+      "voiceKey": "female_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:20.103Z"
+    },
+    "lesson_7_prologue": {
+      "hash": "95629788eec16cb0",
+      "bytes": 199340,
+      "voiceKey": "female_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:20.648Z"
+    },
+    "lesson_2_prologue": {
+      "hash": "b175308e10e56879",
+      "bytes": 156428,
+      "voiceKey": "male_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:27.019Z"
+    },
+    "lesson_4_prologue": {
+      "hash": "d80f98d8ace41dcb",
+      "bytes": 213068,
+      "voiceKey": "male_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:27.623Z"
+    },
+    "lesson_5_prologue": {
+      "hash": "691e76f33b20afd3",
+      "bytes": 206828,
+      "voiceKey": "male_historian",
+      "badge": "Studio Cold-Open · Historian",
+      "updatedAt": "2026-11-20T17:02:28.181Z"
+    }
+  }
+}

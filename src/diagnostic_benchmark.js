@@ -8,7 +8,6 @@
  */
 
 import { state } from './state.js';
-import { addXp } from './storage.js';
 
 /**
  * Resolves the correct answer string from any question object format.
@@ -497,9 +496,6 @@ export function startDiagnosticBenchmark(unitId, topicFilter = null) {
 
   if (!questions || questions.length === 0) {
     console.warn('No multiple-choice questions found for selection:', unitId, topicFilter);
-    if (typeof window !== 'undefined' && typeof window.showXpToast === 'function') {
-      window.showXpToast('No quiz questions found for this topic selection.', 'warning');
-    }
     return;
   }
 
@@ -965,12 +961,6 @@ export function submitDiagnosticBenchmark(forceSubmit = false) {
       weakestEra = stat;
     }
   });
-
-  // Award +15 XP for completing a diagnostic quiz
-  addXp(15, 'Diagnostic Quiz Completed');
-  if (correctCount === activeSession.questions.length && activeSession.questions.length > 0) {
-    addXp(25, 'Perfect Score (100%) on Diagnostic!');
-  }
 
   renderDiagnosticResultsReport({
     unitId: activeSession.unitId,

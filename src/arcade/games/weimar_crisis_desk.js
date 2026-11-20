@@ -11,7 +11,7 @@
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
-import { addXp, generateQuestionId, recordQuestionResult } from '../../storage.js';
+import { generateQuestionId, recordQuestionResult } from '../../storage.js';
 
 const CRISIS_DOSSIERS = [
   {
@@ -393,7 +393,6 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
     arcadeAudio.levelUp();
     const { isNewBest, best } = saveArcadePersonalBest(unitId, 'weimar_desk', 'all', score);
     pb = best;
-    addXp(Math.min(130, correctCount * 22), 'Weimar Crisis Desk');
 
     stageEl.innerHTML = `
       <div class="arcade-result-panel" style="max-width:720px;margin:0 auto;">

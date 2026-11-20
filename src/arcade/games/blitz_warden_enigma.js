@@ -10,7 +10,7 @@
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
-import { addXp, generateQuestionId, recordQuestionResult } from '../../storage.js';
+import { generateQuestionId, recordQuestionResult } from '../../storage.js';
 
 const SHELTER_CASES = [
   {
@@ -502,7 +502,6 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
     arcadeAudio.levelUp();
     const { isNewBest, best } = saveArcadePersonalBest(unitId, 'blitz_warden', 'all', score);
     pb = best;
-    addXp(110, 'Blitz Warden & Enigma Cracker');
 
     stageEl.innerHTML = `
       <div class="arcade-result-panel" style="max-width:700px;margin:0 auto;">

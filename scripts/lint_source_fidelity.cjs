@@ -1,13 +1,29 @@
 const fs = require('fs');
 const path = require('path');
 
-const units = [
-  'usa',
-  'weimar_nazi_germany',
+const ALL_UNITS = [
+  'ks2_ww2',
+  'medieval_england',
+  'monarchy_religion_power',
+  'water_and_sanitation',
+  'first_british_empire',
+  'industrialisation_and_empire',
+  'second_british_empire',
+  'australia',
+  'great_war',
+  'great_war_part2',
+  'the_shoah',
+  'cold_war',
+  'post_war_britain',
   'edexcel_medicine',
+  'eee',
   'cme_new',
-  'eee'
+  'weimar_nazi_germany',
+  'usa',
 ];
+
+const targetUnitArg = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : null;
+const units = targetUnitArg ? [targetUnitArg] : ALL_UNITS;
 
 console.log('====================================================');
 console.log('🛡️  SOURCE FIDELITY & SEMANTIC CROSS-LINTER');
@@ -24,8 +40,25 @@ const STOPWORDS = new Set([
   'new', 'old', 'part', 'plate', 'source', 'img', 'image', 'photo', 'photograph',
   'picture', 'map', 'diagram', 'chart', 'poster', 'cartoon', 'figure', 'doc',
   'document', 'archive', 'archival', 'weimar', 'usa', 'edexcel', 'medicine', 'cme',
-  'eee', 'unit', 'lesson', 'assets', 'sources', 'images'
+  'eee', 'unit', 'lesson', 'assets', 'sources', 'images', 'med', 'stage', 'ks', 'ww',
+  'gw', 'shoah', 'mrp', 'ws', 'fbe', 'sbe', 'iae', 'pwb', 'clean', 'wide', 'banner'
 ]);
+
+// Eyes-First Visually Verified Filename Stems (read_file confirmed 20 Nov 2026)
+// Maps legacy/abbreviated filenames to verified literal visual terms so genuine matches do not false-positive.
+const VERIFIED_EYES_FIRST_STEMS = {
+  'keep_calm_poster_1939.jpg': ['ministry of information', 'morale poster', '1939'],
+  'evacuation_poster_inf3_87_1939.jpg': ['leave hitler to me', 'ministry of health'],
+  'evacuee_luggage_tag.jpg': ['schoolchildren', 'stepney', 'evacuation labels'],
+  'prewar_children_holiday.jpg': ['jewish youth football team', 'striped'],
+  'land_army_poster_1941.jpg': ['victory harvest', 'fields'],
+  'was_military_matrix.png': ['chain of friendship', 'alliance'],
+  'gw_clc.jpg': ['chinese labour corps', 'boulogne'],
+  'extermination_camps_poland_map.png': ['birkenau', 'rail logistics'],
+  'cme_six_day_war_airfield_1967.jpg': ['operation focus', 'destroyed egyptian combat jet'],
+  'bdm_domestic_skills.jpg': ['league of german girls', 'bund deutscher'],
+  'us-troops-bogged-down.jpg': ['wading', 'swamp'],
+};
 
 function extractKeywords(filename) {
   const base = path.basename(filename, path.extname(filename)).toLowerCase();
@@ -52,6 +85,7 @@ units.forEach(unit => {
     (lesson.narrative_blocks || []).forEach((block, bIdx) => {
       if (block.image) {
         visualItems.push({
+          isPlate: true,
           context: `Lesson ${lesson.id} (Act ${block.act || bIdx + 1})`,
           title: block.title || `Act ${block.act}`,
           caption: block.caption || '',
@@ -110,6 +144,15 @@ units.forEach(unit => {
         return;
       }
 
+      // Check 1b: Narrative plate must have an authentic historical caption
+      if (item.isPlate && (!item.caption || item.caption.trim().length < 10)) {
+        unitIssues.push({
+          type: 'MISSING_CAPTION',
+          message: `Missing historical caption on Layer 2 Narrative Plate in ${item.context}: ${item.image} ("${item.title}")`
+        });
+        totalWarnings++;
+      }
+
       // Check 2: Duplicate caption check
       if (item.caption && item.caption.trim().length > 25) {
         const trimmedCap = item.caption.trim();
@@ -129,10 +172,13 @@ units.forEach(unit => {
       }
 
       // Check 3: Filename vs Caption/Title semantic agreement
+      const baseFile = path.basename(item.image);
+      const verifiedHints = VERIFIED_EYES_FIRST_STEMS[baseFile] || [];
       const keywords = extractKeywords(item.image);
       if (keywords.length > 0) {
         const searchableText = `${item.title} ${item.caption} ${item.alt} ${item.textSnippet}`.toLowerCase();
-        
+        const hasVerifiedHint = verifiedHints.some((h) => searchableText.includes(h));
+
         // Count how many keywords match
         const matches = keywords.filter(kw => {
           // simple stemming check
@@ -144,7 +190,7 @@ units.forEach(unit => {
         });
 
         // If zero keywords match, flag for human verification
-        if (matches.length === 0) {
+        if (!hasVerifiedHint && matches.length === 0) {
           unitIssues.push({
             type: 'SEMANTIC_DISCREPANCY',
             message: `Potential image-to-text semantic mismatch in ${item.context}:\n    Image: ${item.image}\n    Keywords extracted: [${keywords.join(', ')}]\n    Title: "${item.title}"\n    Caption: "${item.caption ? item.caption.substring(0, 100) + '...' : 'NONE'}"`

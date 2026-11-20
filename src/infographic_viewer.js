@@ -1916,6 +1916,9 @@ function renderDrawerTools(modal, item) {
   }
 
   if (btnLaunchQuiz) {
+    const lessonQuizArr = lesson ? lesson.quiz || lesson.quick_quiz || lesson.quiz_questions || [] : [];
+    const resolvedQuizCount = lessonQuizArr.length || (item && String(item.unitId || '').startsWith('ks2') ? 15 : 20);
+    btnLaunchQuiz.innerHTML = `<i class="fa-solid fa-bolt"></i> ${resolvedQuizCount}-Q Quiz`;
     btnLaunchQuiz.onclick = () => {
       closeInfographicModal();
       const targetId = lesson?.id || item.lessonId;

@@ -1,0 +1,183 @@
+{
+  "title": "The History Revision Hub — Master Upgrade Roadmap (Historical Truth & KS2/KS3 Priority Edition)",
+  "subtitle": "Living Checklist • Auto-Updated & Struck Through After Every Completed Task • Zero Invented Quotes/Facts",
+  "lastUpdated": "20 Nov 2026",
+  "modelBudgetGuide": [
+    {
+      "model": "Gemini 4 Carbon (Medium) — DEFAULT",
+      "tier": "🟡 Primary Workhorse (~85% of tasks)",
+      "bestFor": "Historical truth/image-caption verification, KS3 Cold War cleanup, archival Dossiers, verified KS2/KS3 Guided Reading, Teacher Notes, KS3 Assessments, and Vite splitting. Reliable & far cheaper than Claude."
+    },
+    {
+      "model": "Gemini 3.8 Flash (High)",
+      "tier": "🟢 Pure Audio CLI Runner (~5% of tasks)",
+      "bestFor": "Pure terminal Batch-TTS synthesis runs once historical scripts are already verified."
+    },
+    {
+      "model": "Gemini 4 Carbon (High)",
+      "tier": "🟠 Future Backlog Only (~10% of tasks)",
+      "bestFor": "Parked at the bottom for optional future GCSE Cold War (1HI0/P4) course & bespoke GCSE simulations."
+    }
+  ],
+  "phases": [
+    {
+      "id": "phase_1",
+      "title": "Phase 1 — Historical Truth, Visual-Caption Fidelity & Pure KS3 Cold War",
+      "goal": "Fix live image/caption historical mismatches first, enforce Cite-or-Silence across all 18 units, make Guided Reading KS2–KS3 only, and make Year 9 Cold War 100% pure KS3.",
+      "tasks": [
+        {
+          "id": "1.1",
+          "done": true,
+          "completedAt": "20 Nov 2026",
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Wire Pearson Edexcel Specification & Period-Boundary Guardrails into audit_gcse_language.cjs",
+          "detail": "Connected public/data/specifications/*.json to block non-spec antiquarian nouns, enforce Weimar (1918–39) & Elizabeth (1558–88) period limits, and enforce UK GCSE spellings (0 errors across 148 lessons)."
+        },
+        {
+          "id": "1.2",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Urgent Historical Truth Fix",
+          "title": "Fix All Live Image-to-Caption Mismatches & Expand lint_source_fidelity.cjs to All 18 Units",
+          "detail": "Fix swapped photos/captions caught in usa (Emmett Till caption on Little Rock photo, Saigon evacuation on swamp patrol), weimar_nazi_germany (Bernhard Rust on Hitler Youth, boys marching on BDM girls, Streicher on Nuremberg chart), and edexcel_medicine (7 missing captions + 1918 mustard gas painting on 1915 chlorine); swap intra-lesson Layer 2/3 duplicates; and expand lint_source_fidelity.cjs to audit all 13 KS2/KS3 units via Eyes-First read_file.",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "1.3",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Pure KS3 Cold War, Disciplinary KS3 Task Headers (Zero GCSE Marks), KS2–KS3-Only Guided Reading & Remove Year 9 AI Course",
+          "detail": "Strip GCSE Paper 2 exam rubrics, 1HI0/P4 links, and GCSE Do Now cross-bleed out of Year 9 cold_war (plus write its 7/7 missing teacher_notes); replace '[4m]/[12m]' GCSE tariff headers across KS3 lessons with pure disciplinary + paragraph/time headers (keeping stems intact for desk booklets); hide Guided Reading on all GCSE units; and permanently remove the Year 9 AI Course from the app.",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "1.4",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Fix Legacy Vocab-to-Cloze Mismatches Across usa (L7–L16), cme_new (L3 & L5–L9), second_british_empire & monarchy_religion_power",
+          "detail": "Re-aligned shifted Civil Rights/Vietnam vocab banks across usa L7–L16 (in UK GCSE English & Edexcel Option 33 terms), repaired dropdown blanks in cme_new (L3 + L5–L9) and second_british_empire (L1, L2, L5), and removed duplicate orphaned vocabulary arrays in monarchy_religion_power (verify_vocab_parity.cjs: 159/159 lessons, 0 errors, 0 warnings).",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "1.5",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Unified End-of-Lesson Tap-Tile Summary Cloze Across All 159/159 Lessons + sync_unit Parity Gate",
+          "detail": "Move the Summary Cloze out of top Key Vocabulary into the bottom Consolidate bar using the CME Courtyard tap-tile mechanic (+2 dynamic adjacent-lesson decoys, locked green correct slots), author the 68 missing KS2/KS3 lesson summaries (159/159 uniform), and wire verify_vocab_parity.cjs directly into sync_unit.cjs.",
+          "completedAt": "20 Nov 2026"
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "title": "Phase 2 — Complete KS2 & KS3 Core Classroom Parity (Dossiers, Teacher Notes & Assessments)",
+      "goal": "Fill the real classroom blind spots across all 13 KS2 & KS3 units using 100% verified historical facts and archival records.",
+      "tasks": [
+        {
+          "id": "2.1",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Populate Verified Key Individual & Organisation Dossiers Across All Remaining KS2/KS3 Units",
+          "detail": "Author fact-checked, citation-grounded Dossiers (zero invented biography) for great_war & great_war_part2 (0 cards currently on Part 2), ks2_ww2, medieval_england, monarchy_religion_power, first_british_empire, and australia so inline [🪪 Person] Quick-Peek popovers work in every KS2/KS3 lesson.",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "2.2",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Complete KS2 & KS3 Teacher Notes, Source Contexts & Hinge Questions",
+          "detail": "Add missing teacher_notes.source_context + Hinge Questions to medieval_england, first_british_empire, australia, and second_british_empire (10 missing hinges), plus concise 2-Lesson Delivery Plans across KS3 Teacher Mode.",
+          "completedAt": "20 Nov 2026"
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "title": "Phase 3 — KS2 & KS3 Guided Reading Companions + Studio Audio (Strictly Authentic Texts)",
+      "goal": "Give every KS2 & KS3 unit authentic, historically grounded Guided Reading companions voiced by our Studio Historians.",
+      "tasks": [
+        {
+          "id": "3.1",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Author Verified Guided Reading Companions for the 8 Missing KS2 & KS3 Units",
+          "detail": "Strictly grounded in real primary documents (letters, speeches, chronicles, diaries with real archival citations) or named scholarly essays (zero AI-invented eyewitness fiction) across the_shoah, post_war_britain, ks2_ww2, medieval_england, monarchy_religion_power, water_and_sanitation, first_british_empire, and australia.",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "3.2",
+          "done": true,
+          "model": "Gemini 3.8 Flash (High) or Carbon (Medium)",
+          "costTier": "🟢 Batch-TTS Script Run",
+          "title": "Studio-Voice All KS2 & KS3 Guided Reading Companions via 50%-Off Batch TTS",
+          "detail": "Synthesize studio MP3s + sentence timings.json for industrialisation_and_empire, second_british_empire, KS3 cold_war, and the newly authored KS2/KS3 Guided Reading extracts so 13/13 KS2–KS3 units match Year 9 WWI.",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "3.3",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Authentic Eyewitness Primary Source Audio for Year 9 The Shoah & KS2 WWII",
+          "detail": "Add respectful, verbatim studio narration to verified archival testimonies, diaries, and letters in the_shoah and ks2_ww2.",
+          "completedAt": "20 Nov 2026"
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "title": "Phase 4 — Targeted GCSE High-ROI Polish & Chromebook Speed",
+      "goal": "Only high-value GCSE exam/speed upgrades — zero unnecessary GCSE reading bloat.",
+      "tasks": [
+        {
+          "id": "4.1",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "GCSE Paper 3 Two-Historian Interpretation Audio Clashes (weimar_nazi_germany & usa)",
+          "detail": "Voice contrasting verbatim historian Interpretation 1 vs Interpretation 2 extracts with two studio voices for the 4m + 4m + 16m Paper 3 tariff.",
+          "completedAt": "20 Nov 2026"
+        },
+        {
+          "id": "4.2",
+          "done": true,
+          "model": "Gemini 4 Carbon (Medium)",
+          "costTier": "🟡 Standard Workhorse",
+          "title": "Split >500 KB Vite Chunks (lesson-engine, exam-bank, arcade_zone) for Fast School Laptop Loads",
+          "detail": "Lazy-load heavy secondary modules in vite.config.js so initial classroom loads stay under 500 KB per chunk.",
+          "completedAt": "20 Nov 2026"
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "title": "Phase 5 — Parked Commercial Backlog (Do NOT Build Until Needed)",
+      "goal": "Optional future expansion parked safely out of the way of live KS2/KS3 teaching.",
+      "tasks": [
+        {
+          "id": "5.1",
+          "done": false,
+          "model": "Gemini 4 Carbon (High) + Carbon (Medium)",
+          "costTier": "🟠 Parked Until Taught/Sold",
+          "title": "[PARKED] Build Separate 12-Lesson Pearson Edexcel GCSE Cold War Unit (gcse_cold_war • 1HI0/P4)",
+          "detail": "Full 1941–91 Option P4 GCSE unit (Tehran–Hungary–Berlin Wall–Cuba–Prague–Détente–Afghanistan–Gorbachev) parked until needed for teaching or commercial sale."
+        },
+        {
+          "id": "5.2",
+          "done": false,
+          "model": "Gemini 4 Carbon (High)",
+          "costTier": "🟠 Parked Optional Polish",
+          "title": "[PARKED] Bespoke GCSE Simulations & Living Timelines (Elizabeth eee & USA usa)",
+          "detail": "Optional future flagship simulations (Walsingham Cipher Desk & USA Newsroom) once all KS2/KS3 units are 100% complete."
+        }
+      ]
+    }
+  ]
+}

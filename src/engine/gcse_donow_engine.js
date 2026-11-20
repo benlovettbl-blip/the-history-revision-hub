@@ -26,7 +26,6 @@ export const GCSE_RETRIEVAL_UNITS = [
   { id: 'weimar_nazi_germany', label: 'Weimar Germany', title: 'Weimar & Nazi Germany, 1918–1939', bg: '#fef2f2', border: '#fecaca', text: '#b91c1c' },
   { id: 'edexcel_medicine', label: 'Medicine', title: 'Medicine in Britain, c1250–present', bg: '#ecfdf5', border: '#a7f3d0', text: '#047857' },
   { id: 'eee', label: 'Elizabeth', title: 'Early Elizabethan England, 1558–1588', bg: '#fffbeb', border: '#fde68a', text: '#b45309' },
-  { id: 'cold_war', label: 'Cold War', title: 'Superpower Relations & The Cold War', bg: '#eff6ff', border: '#bfdbfe', text: '#1d4ed8' },
 ];
 
 export const KS3_RETRIEVAL_UNITS = [
@@ -36,6 +35,7 @@ export const KS3_RETRIEVAL_UNITS = [
   { id: 'great_war_part2', label: 'Great War Part 2', title: 'The Great War Part 2, 1916–1918', bg: '#fef2f2', border: '#fee2e2', text: '#991b1b' },
   { id: 'industrialisation_and_empire', label: 'Industrialisation', title: 'Industrialisation & Empire, 1745–1901', bg: '#f0fdf4', border: '#dcfce7', text: '#166534' },
   { id: 'the_shoah', label: 'The Holocaust', title: 'The Holocaust & Nazi Persecution', bg: '#f8fafc', border: '#e2e8f0', text: '#1e293b' },
+  { id: 'cold_war', label: 'The Cold War', title: 'The Cold War & Global Flashpoints, 1945–1991', bg: '#eff6ff', border: '#bfdbfe', text: '#1d4ed8' },
   { id: 'first_british_empire', label: '1st British Empire', title: 'The First British Empire', bg: '#eff6ff', border: '#dbeafe', text: '#1e40af' },
   { id: 'second_british_empire', label: '2nd British Empire', title: 'The Second British Empire', bg: '#f5f3ff', border: '#ede9fe', text: '#5b21b6' },
   { id: 'post_war_britain', label: 'Post-War Britain', title: 'Post-War Britain, 1945–1997', bg: '#fdf2f8', border: '#fce7f3', text: '#9d174d' },
@@ -72,7 +72,7 @@ export function isKs3Unit(unit, unitId = '') {
   if (isKs2Unit(unit, unitId)) return false;
   const uid = unitId || unit?.id || (typeof window !== 'undefined' ? window.currentUnitId : '');
   if (unit?.key_stage === 'KS3' || unit?.category === 'KS3') return true;
-  if (['cme_new', 'usa', 'weimar_nazi_germany', 'edexcel_medicine', 'eee', 'cold_war'].includes(uid)) return false;
+  if (['cme_new', 'usa', 'weimar_nazi_germany', 'edexcel_medicine', 'eee'].includes(uid)) return false;
   if (String(uid).startsWith('gcse_') || unit?.category === 'GCSE' || unit?.key_stage === 'KS4' || unit?.isGCSE) return false;
   return true;
 }
@@ -859,7 +859,12 @@ export function getUnitInterleavedQuestions(activeUnit, currentLesson, seed = nu
     pool.push(...sampled);
   });
 
-  const finalQuestions = (seed !== null ? shuffleArray(pool, seed) : pool).slice(0, count);
+  const finalQuestions =
+    seed !== null
+      ? shuffleArray(pool, seed).slice(0, count)
+      : pool.length > count
+        ? Array.from({ length: count }, (_, i) => pool[Math.floor((i * pool.length) / count)])
+        : pool.slice(0, count);
 
   return {
     mode: 'unit',

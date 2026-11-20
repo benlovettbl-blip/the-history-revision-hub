@@ -114,7 +114,7 @@ body {
     background-color 0.3s,
     color 0.3s;
   min-height: 100vh;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 .app-layout {
@@ -599,7 +599,7 @@ details.lesson-tasks-accordion[open] > summary .accordion-arrow {
   flex-direction: column;
   min-width: 0;
   max-width: 100%;
-  overflow-x: clip;
+  overflow-x: hidden;
   background: var(
     --bg-canvas-gradient,
     linear-gradient(-45deg, #dbe4ef, #edf3fa, #e2e8f0, #d9e3f0, #eef4f9)
@@ -2869,10 +2869,10 @@ img::after {
   top: 0;
   margin-top: -32px;
   /* negate content-area top padding */
-  margin-left: -32px;
-  /* negate content-area side padding */
-  margin-right: -32px;
-  padding: 0.45rem 32px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.45rem 16px;
+  border-radius: 0 0 10px 10px;
   /* compact vertical height for 1366x768 classroom displays */
   z-index: 90;
   display: flex;
@@ -2887,13 +2887,14 @@ img::after {
   box-sizing: border-box;
 }
 
-/* Lesson Hero Banner - Full bleed within content container */
+/* Lesson Hero Banner - Contained cleanly within content container (zero right-edge bleed) */
 .lesson-hero {
   position: relative;
-  width: calc(100% + 64px);
-  margin-left: -32px;
-  margin-right: -32px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 0;
+  border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -5213,6 +5214,29 @@ body.sen-mode .read-aloud-playback-bar .read-aloud-btn.reading-paused {
 .teacher-mode-active .teacher-note {
   display: block;
   animation: fadeIn 0.3s ease;
+}
+
+.teacher-only-guidance-drawer,
+.teacher-only-source-crib {
+  display: none;
+}
+
+body.teacher-mode-active .teacher-only-guidance-drawer,
+body.teacher-mode-active .teacher-only-source-crib {
+  display: block;
+  animation: fadeIn 0.25s ease;
+}
+
+.teacher-only-guidance-drawer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.teacher-only-guidance-drawer[open] .tgd-lbl-closed {
+  display: none;
+}
+
+.teacher-only-guidance-drawer:not([open]) .tgd-lbl-open {
+  display: none;
 }
 
 @keyframes fadeIn {
@@ -10132,11 +10156,33 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
   }
 }
 
-/* Mobile & Tablet Responsiveness for Header Search */
+/* Laptop, Tablet & Mobile Responsiveness for Header Search & Breadcrumbs */
+@media (max-width: 1440px) {
+  .header-search-bar {
+    max-width: 150px;
+    padding: 5px 10px;
+  }
+
+  .header-search-bar .search-kbd-shortcut {
+    display: none;
+  }
+
+  .header-accessibility-bar {
+    gap: 5px !important;
+    margin: 0 4px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .header-tool-btn {
+    padding: 5px 9px !important;
+    font-size: 0.78rem !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .header-search-bar {
-    max-width: 140px;
-    padding: 6px 10px;
+    max-width: 125px;
+    padding: 5px 9px;
   }
 
   .header-search-bar .search-kbd-shortcut {
@@ -11089,34 +11135,33 @@ body.search-modal-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  padding: 7px 12px;
+  gap: 6px;
+  padding: 7px 10px;
   background: #0f172a;
   border-bottom: 1px solid #1e293b;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scrollbar-width: thin;
+  flex-wrap: wrap;
 }
 
 .launchpad-tabs-group {
   display: flex;
   align-items: center;
-  gap: 6px;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .launchpad-tab-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 11px;
+  gap: 5px;
+  padding: 5px 9.5px;
   background: rgba(255, 255, 255, 0.08);
   color: #cbd5e1;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 6px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
@@ -13138,8 +13183,8 @@ details.source-enquiry-reveal .reveal-arrow {
     padding: 16px 14px !important;
   }
   .reading-hero-cover-col {
-    max-width: 200px !important;
-    margin: 0 auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
     width: 100% !important;
   }
   .reading-hero-meta-col {

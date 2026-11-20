@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sB": {
+      "hash": "c25561fab9e2a5b9",
+      "bytes": 120620,
+      "voiceKey": "male_historian",
+      "badge": "Home Office Leaflet (July 1939)",
+      "updatedAt": "2026-11-20T17:02:02.818Z"
+    },
+    "lesson_10_sC": {
+      "hash": "621859a271fee839",
+      "bytes": 111692,
+      "voiceKey": "male_historian",
+      "badge": "For the Fallen · Remembrance Ode",
+      "updatedAt": "2026-11-20T17:02:05.759Z"
+    },
+    "lesson_11_sA": {
+      "hash": "92ee9a28423d0c61",
+      "bytes": 179948,
+      "voiceKey": "male_historian",
+      "badge": "Sir Ben Helfgott MBE · Windermere",
+      "updatedAt": "2026-11-20T17:02:06.271Z"
+    },
+    "lesson_1_sC": {
+      "hash": "3c3e61f72394ebce",
+      "bytes": 125900,
+      "voiceKey": "ww1_british_officer",
+      "badge": "ARP Blackout Order (Sept 1939)",
+      "updatedAt": "2026-11-20T17:02:12.354Z"
+    },
+    "lesson_10_sD": {
+      "hash": "e0d7cf333800a3e3",
+      "bytes": 204140,
+      "voiceKey": "ww1_british_officer",
+      "badge": "PM Winston Churchill (8 May 1945)",
+      "updatedAt": "2026-11-20T17:02:12.894Z"
+    },
+    "lesson_2_sB": {
+      "hash": "f05ca6dae7c12dfd",
+      "bytes": 151052,
+      "voiceKey": "female_historian",
+      "badge": "LCC Evacuation Notice (Aug 1939)",
+      "updatedAt": "2026-11-20T17:02:23.978Z"
+    },
+    "lesson_3_sE": {
+      "hash": "fc01c494f77de6b0",
+      "bytes": 190028,
+      "voiceKey": "female_historian",
+      "badge": "Bertha Leverton MBE · Testimony",
+      "updatedAt": "2026-11-20T17:02:24.529Z"
+    },
+    "lesson_4_sB": {
+      "hash": "88ac25c43da7e2c8",
+      "bytes": 181100,
+      "voiceKey": "female_historian",
+      "badge": "Vera Schaufeld MBE · Testimony",
+      "updatedAt": "2026-11-20T17:02:25.064Z"
+    },
+    "lesson_7_sD": {
+      "hash": "e09af2d81f1d8004",
+      "bytes": 153068,
+      "voiceKey": "female_historian",
+      "badge": "Our Food To-day Leaflet (1941)",
+      "updatedAt": "2026-11-20T17:02:25.536Z"
+    },
+    "lesson_8_sC": {
+      "hash": "1fb264f91a171365",
+      "bytes": 152108,
+      "voiceKey": "female_historian",
+      "badge": "Lettice Curtis · ATA Pilot Memoir",
+      "updatedAt": "2026-11-20T17:02:25.980Z"
+    },
+    "lesson_11_sB": {
+      "hash": "74afe7fdb47a2fa6",
+      "bytes": 164780,
+      "voiceKey": "female_historian",
+      "badge": "Alice Goldberger · Calgarth (1945)",
+      "updatedAt": "2026-11-20T17:02:26.469Z"
+    },
+    "lesson_3_sD": {
+      "hash": "5e916e99a9a0e53f",
+      "bytes": 296300,
+      "voiceKey": "male_historian",
+      "badge": "Archival Legal Timeline (1933–38)",
+      "updatedAt": "2026-11-20T17:02:41.417Z"
+    },
+    "lesson_4_sC": {
+      "hash": "7c84ed398593b404",
+      "bytes": 166220,
+      "voiceKey": "male_historian",
+      "badge": "Passport No. 89605 (Klatovy, 1939)",
+      "updatedAt": "2026-11-20T17:02:41.912Z"
+    },
+    "lesson_5_sC": {
+      "hash": "6753189adfafa80d",
+      "bytes": 143372,
+      "voiceKey": "male_historian",
+      "badge": "Sir Nicholas Winton · Testimony",
+      "updatedAt": "2026-11-20T17:02:42.396Z"
+    },
+    "lesson_6_sB": {
+      "hash": "f872bf161188cd0e",
+      "bytes": 132908,
+      "voiceKey": "male_historian",
+      "badge": "Anderson Shelter Guide (1939)",
+      "updatedAt": "2026-11-20T17:02:42.923Z"
+    },
+    "lesson_7_sB": {
+      "hash": "9d63396580f05243",
+      "bytes": 125708,
+      "voiceKey": "male_historian",
+      "badge": "Child’s Ration Book Rules (1940)",
+      "updatedAt": "2026-11-20T17:02:43.328Z"
+    },
+    "lesson_9_sB": {
+      "hash": "b4c1f981f68bd32d",
+      "bytes": 123692,
+      "voiceKey": "male_historian",
+      "badge": "Turing to Churchill (21 Oct 1941)",
+      "updatedAt": "2026-11-20T17:02:43.761Z"
+    },
+    "lesson_2_sE": {
+      "hash": "88fbe3600ba5df28",
+      "bytes": 135500,
+      "voiceKey": "ww1_british_woman",
+      "badge": "Ministry of Health Appeal (1939)",
+      "updatedAt": "2026-11-20T17:04:50.247Z"
+    },
+    "lesson_5_sD": {
+      "hash": "e0fb62d3ba6453ac",
+      "bytes": 210188,
+      "voiceKey": "ww1_british_woman",
+      "badge": "1939 Newspaper Clipping · Scrapbook",
+      "updatedAt": "2026-11-20T17:04:50.764Z"
+    },
+    "lesson_6_sE": {
+      "hash": "b9560e886186bdbd",
+      "bytes": 115148,
+      "voiceKey": "ww1_british_woman",
+      "badge": "Lady Reading · WVS Message (1940)",
+      "updatedAt": "2026-11-20T17:04:51.151Z"
+    },
+    "lesson_8_sB": {
+      "hash": "9e8706badcee4982",
+      "bytes": 117068,
+      "voiceKey": "ww1_british_woman",
+      "badge": "Women’s Land Army Appeal (1942)",
+      "updatedAt": "2026-11-20T17:04:51.598Z"
+    },
+    "lesson_9_sD": {
+      "hash": "8955263028e722ae",
+      "bytes": 142028,
+      "voiceKey": "ww1_british_woman",
+      "badge": "Dorothy Du Boisson · WRNS (1944)",
+      "updatedAt": "2026-11-20T17:04:52.107Z"
+    }
+  }
+}

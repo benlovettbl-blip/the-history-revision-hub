@@ -53,12 +53,7 @@ export function bindEvents() {
     navDashboard.addEventListener('click', () => switchView('dashboard'));
   }
 
-  const navProfile = document.getElementById('nav-profile');
-  if (navProfile) {
-    navProfile.addEventListener('click', () => switchView('profile'));
-  }
-
-  // Bind Compact 4-Icon Mobile Bottom Navigation Bar (Home, Units, Quizzing, Profile)
+  // Bind Compact Mobile Bottom Navigation Bar (Home, Units, Quizzing)
   const mobNavHome = document.getElementById('mob-nav-home');
   if (mobNavHome) {
     mobNavHome.addEventListener('click', (e) => {
@@ -96,14 +91,6 @@ export function bindEvents() {
       e.preventDefault();
       const unitId = state.selectedUnitId || 'great_war';
       switchView('interactive', unitId);
-    });
-  }
-
-  const mobNavProfile = document.getElementById('mob-nav-profile');
-  if (mobNavProfile) {
-    mobNavProfile.addEventListener('click', (e) => {
-      e.preventDefault();
-      switchView('profile');
     });
   }
 
@@ -304,7 +291,7 @@ export function bindEvents() {
 
     // Auto-close on mobile when a navigation item or close button is clicked
     document
-      .querySelectorAll('.nav-item, #mob-nav-home, #mob-nav-quizzing, #mob-nav-profile')
+      .querySelectorAll('.nav-item, #mob-nav-home, #mob-nav-quizzing')
       .forEach((item) => {
         item.addEventListener('click', () => {
           if (window.innerWidth <= 768) {
@@ -338,7 +325,6 @@ export function bindEvents() {
     if (isLocked) {
       sidebarUnitsContainer.style.display = 'none';
       if (sidebarUnitsHeader) sidebarUnitsHeader.style.display = 'none';
-      if (navProfile) navProfile.style.display = 'none';
       return;
     }
 
@@ -346,7 +332,6 @@ export function bindEvents() {
       sidebarUnitsHeader.style.display = 'block';
     }
     sidebarUnitsContainer.style.display = 'flex';
-    if (navProfile) navProfile.style.display = 'flex';
 
     const units = getUnits();
     const getOrderedUnits = (orderArray) => {

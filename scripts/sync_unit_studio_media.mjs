@@ -34,6 +34,9 @@ import {
 } from './studio_voice_registry.mjs';
 import { buildUnitLessonTimingsJson } from './extract_audio_timings.mjs';
 import { WW1_LIVING_VOICE_UNITS, syncWw1UnitLivingVoices } from './sync_ww1_living_voices.mjs';
+import { SHOAH_KS2_LIVING_VOICE_UNITS, syncShoahKs2LivingVoices } from './sync_shoah_ks2_living_voices.mjs';
+import { PAPER3_INTERPRETATION_UNITS, syncPaper3InterpretationAudio } from './sync_paper3_interpretation_audio.mjs';
+import { KS2_KS3_GUIDED_READING_UNITS, syncGuidedReadingUnits } from './sync_guided_reading_studio_audio.mjs';
 import { expandBritishDatesForSpeech } from './spoken_date_normalizer.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -1374,6 +1377,16 @@ async function syncSingleUnit(unitId, { initAudio = false, forceAudio = false, s
     }
     if (WW1_LIVING_VOICE_UNITS.has(unitId)) {
       await syncWw1UnitLivingVoices(unitId, { forceAudio, skipTts });
+    } else {
+      if (SHOAH_KS2_LIVING_VOICE_UNITS.has(unitId)) {
+        await syncShoahKs2LivingVoices(unitId, { forceAudio, skipTts });
+      }
+      if (PAPER3_INTERPRETATION_UNITS.has(unitId)) {
+        await syncPaper3InterpretationAudio([unitId], { forceAudio, skipTts, skipDbBuild: true });
+      }
+      if (KS2_KS3_GUIDED_READING_UNITS.includes(unitId)) {
+        await syncGuidedReadingUnits([unitId], { forceAudio, skipTts, skipDbBuild: true });
+      }
     }
     console.log(`✅ [Studio Media Engine · ${unitId}] 100% up-to-date (0 stale audio hashes, $0.00 API cost).`);
     return;
@@ -1401,6 +1414,16 @@ async function syncSingleUnit(unitId, { initAudio = false, forceAudio = false, s
   }
   if (WW1_LIVING_VOICE_UNITS.has(unitId)) {
     await syncWw1UnitLivingVoices(unitId, { forceAudio, skipTts });
+  } else {
+    if (SHOAH_KS2_LIVING_VOICE_UNITS.has(unitId)) {
+      await syncShoahKs2LivingVoices(unitId, { forceAudio, skipTts });
+    }
+    if (PAPER3_INTERPRETATION_UNITS.has(unitId)) {
+      await syncPaper3InterpretationAudio([unitId], { forceAudio, skipTts, skipDbBuild: true });
+    }
+    if (KS2_KS3_GUIDED_READING_UNITS.includes(unitId)) {
+      await syncGuidedReadingUnits([unitId], { forceAudio, skipTts, skipDbBuild: true });
+    }
   }
   console.log(`🎉 [Studio Media Engine · ${unitId}] Synthesized ${ttsJobs.length} clip(s) & locked SHA-256 hashes!`);
 }

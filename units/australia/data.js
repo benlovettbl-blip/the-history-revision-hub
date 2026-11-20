@@ -645,7 +645,67 @@ export default {
             "primer": "Compare Cook’s instructions to seek native consent with his unilateral declaration on Possession Island, exploring how terra nullius erased First Nations rights.",
             "question": "Why did the British Crown choose to classify Australia as 'nobody's land' rather than negotiate treaties as they did in North America and New Zealand?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "The Admiralty issued secret sealed instructions to Cook directing him to search for the Terra Australis and explicitly ordering him to obtain the \"consent of the natives\" before claiming territory. **Hinge Question:** Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?",
+          "Source B": "Tupaia joined the Endeavour at Tahiti, using centuries-old Polynesian non-instrument navigation (star paths, ocean swells, and bird flight) to guide Cook through uncharted waters. **Hinge Question:** Why did European imperial histories celebrate Cook as a \"lone discoverer\" while erasing the indispensable guidance of Polynesian navigator Tupaia?",
+          "Source C": "Sydney Parkinson made the earliest known European drawings of Australian First Nations people during Cook's landing at Botany Bay, recording two Gweagal warriors with spears and shields. **Hinge Question:** How does Parkinson's visual evidence of canoes, homes, and defensive shields directly contradict the British legal claim that Australia was \"terra nullius\" (nobody's land)?",
+          "Source D": "At Possession Island in the Torres Strait, Cook hoisted the English flag and fired three volleys of musketry, declaring British sovereignty without consulting any First Nations people. **Hinge Question:** Why did Cook feel legally justified in claiming over 2,000 miles of inhabited coastline based solely on hoisting a flag on an offshore islet?",
+          "Source E": "Blackstone's Commentaries formed the cornerstone of English imperial law. Because Aboriginal Australians did not build European-style fences or cultivate European crops, British authorities classified Australia as \"desert and uncultivated\" (terra nullius). **Hinge Question:** Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving foundational prior knowledge (eighteenth-century European maritime navigation, loss of Britain’s Thirteen American Colonies, and First Nations custodianship—strictly zero self-testing of today's new content)."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Secret Admiralty Orders\", \"Tupaia and Polynesian Star Navigation\", and \"The Gweagal Encounter at Botany Bay\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Secret Instructions from the British Admiralty to…) and Source B (Tupaia's Chart of the Pacific Ocean (c. 1769)), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Secret Admiralty Orders\" → \"The Gweagal Encounter at Botany Bay\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Possession Island & The Royal Claim\" and \"The Legal Fiction of Terra Nullius\") to complete the Verso spine, then interrogate Source C (Sydney Parkinson, Eyewitness Sketches of Gweagal…), Source D (Manuscript Journal of Lieutenant James Cook Claiming…), Source E (Sir William Blackstone on the Legal Classification of…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "vocab": [
         {
@@ -1388,73 +1448,13 @@ export default {
           "enquiry_question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
         }
       ],
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: Claiming Australia & Terra Nullius",
-        "tariff": "12 marks (Explain Why Causal Analysis)",
-        "questions": [
-          {
-            "tariff": "12 marks",
-            "type": "explain_why_12m",
-            "question": "Explain why the British Empire claimed eastern Australia and declared it terra nullius between 1768 and 1788. [12 marks]",
-            "stimulus": [
-              "Secret Admiralty instructions to locate the Great Southern Land",
-              "Joseph Banks’s reports of Botany Bay and European property law"
-            ],
-            "prompt": "Explain three distinct causal reasons: geopolitical and naval rivalry in the Pacific following the Seven Years’ War, botanical and agricultural recommendations by Joseph Banks, and the legal fiction of \"terra nullius\" based on European concepts of cultivated land ownership.",
-            "model": "<span class=\"hl-bronze\">A primary reason Britain claimed eastern Australia in 1770 was strategic imperial rivalry with France.</span> <span class=\"hl-silver\">Following Captain Cook’s voyage, the British Admiralty sought naval bases in the Pacific to protect valuable Asian trade routes and supply vital timber and flax for naval masts and sails.</span><br><br><span class=\"hl-bronze\">Furthermore, the British declared Australia 'terra nullius' (nobody's land) because Indigenous Australians did not build European-style stone towns or cultivate fenced agricultural fields.</span> <span class=\"hl-gold\">By ignoring 65,000 years of Indigenous land management, British authorities justified seizing the continent without treaties, purchasing land, or recognizing Aboriginal ownership.</span>",
-            "scaffolding": {
-              "acronym": "3-Paragraph Causal Analysis (PEEL)",
-              "acronym_title": "12-Mark Explain Why Standard",
-              "steps": [
-                {
-                  "letter": "REASON 1",
-                  "name": "Pacific Rivalry & Secret Admiralty Orders",
-                  "prompt": "Explain the Seven Years’ War, Cook on HMS Endeavour, secret instructions, and claiming for King George III.",
-                  "starter": "One primary reason the British Empire claimed Australia was..."
-                },
-                {
-                  "letter": "REASON 2",
-                  "name": "Joseph Banks’s Botany Bay Reports",
-                  "prompt": "Explain Banks, Tupaia, fertile pastures, Norfolk Island pine for masts, and flax for sails.",
-                  "starter": "Furthermore, a second decisive factor was..."
-                },
-                {
-                  "letter": "REASON 3",
-                  "name": "The Legal Fiction of Terra Nullius",
-                  "prompt": "Explain John Locke, European property law, ignoring fire-stick farming, and seizing land without treaties.",
-                  "starter": "Finally, Britain declared Australia \"terra nullius\" because..."
-                }
-              ],
-              "sentence_starters": [
-                "One primary reason was that...",
-                "For example, secret instructions ordered...",
-                "This led directly to the claim because...",
-                "A second critical factor was...",
-                "Finally, the legal doctrine of terra nullius was applied because...",
-                "Ultimately, this resulted in..."
-              ],
-              "connectives_bank": [
-                "James Cook",
-                "Tupaia",
-                "terra nullius",
-                "Admiralty instructions",
-                "Joseph Banks",
-                "Botany Bay",
-                "Possession Island",
-                "HMS Endeavour",
-                "John Locke"
-              ]
-            }
-          }
-        ]
-      },
       "tasks": [
         {
           "id": "aus_l1_explain_why_terra_nullius",
           "type": "extended_writing",
-          "tariff": "Question 2: Explain Why [12 marks • 15 mins]",
-          "title": "Question 2: Explain Why [12 marks • 15 mins]",
-          "question": "Explain why the British Empire claimed eastern Australia and declared it terra nullius between 1768 and 1788. [12 marks]",
+          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "question": "Explain why the British Empire claimed eastern Australia and declared it terra nullius between 1768 and 1788.",
           "stimulus": [
             "Secret Admiralty instructions to locate the Great Southern Land",
             "Joseph Banks’s reports of Botany Bay and European property law"
@@ -1531,7 +1531,7 @@ export default {
             ]
           },
           "model_answer": "<span class=\"hl-bronze\">A primary reason Britain claimed eastern Australia in 1770 was strategic imperial rivalry with France.</span> <span class=\"hl-silver\">Following Captain Cook’s voyage, the British Admiralty sought naval bases in the Pacific to protect valuable Asian trade routes and supply vital timber and flax for naval masts and sails.</span><br><br><span class=\"hl-bronze\">Furthermore, the British declared Australia 'terra nullius' (nobody's land) because Indigenous Australians did not build European-style stone towns or cultivate fenced agricultural fields.</span> <span class=\"hl-gold\">By ignoring 65,000 years of Indigenous land management, British authorities justified seizing the continent without treaties, purchasing land, or recognizing Aboriginal ownership.</span>",
-          "topic": "Question 2: Explain Why [12 marks • 15 mins]"
+          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)"
         }
       ],
       "quiz": [
@@ -1923,7 +1923,8 @@ export default {
             "Supreme legal right and authority of a people to govern their own land."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "Sent into the Pacific by the British [Admiralty] in 1768, James Cook relied on Tahitian high priest and master navigator [Tupaia] to chart Polynesian islands before reaching eastern Australia in April 1770. Although Aboriginal nations had practised 65,000 years of [Sovereignty] and sacred [Custodianship] over Country, Britain used the false legal claim of [Terra Nullius] to justify colonial [Dispossession]."
     },
     {
       "id": "lesson_2",
@@ -2278,7 +2279,67 @@ export default {
             "primer": "Examine the dual nature of convict life: harsh flogging with the cat-o'-nine-tails alongside the legal path to freedom, land grants, and economic independence.",
             "question": "Was transportation primarily a system of savage physical terror or an effective mechanism for social rehabilitation and colony-building?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "Following the American Revolution (1775–1783), Britain lost its primary destination for transported convicts, forcing thousands into squalid, disease-ridden prison hulks along the Thames and southern ports. **Hinge Question:** Why did the British government choose an expensive 15,000-mile voyage to Australia rather than constructing permanent prisons in Britain?",
+          "Source B": "Bowes Smyth served as surgeon to over 100 female convicts aboard the Lady Penrhyn. **Hinge Question:** How does Bowes Smyth's meticulous medical record reflect Governor Phillip's emphasis on convict survival and health during the voyage?",
+          "Source C": "After finding Botany Bay exposed and waterless, Governor Phillip relocated to Sydney Cove on 26 January 1788. Fowkes, a convict tradesman, surveyed the layout. **Hinge Question:** Why did Governor Phillip prioritize clearing land for military barracks and storehouses rather than building convict shelters?",
+          "Source D": "Between 1788 and 1790, the colony faced catastrophic crop failures and isolation. When HMS Sirius was wrecked at Norfolk Island in March 1790, the settlers faced imminent starvation until the Second Fleet arrived. **Hinge Question:** Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?",
+          "Source E": "Early New South Wales operated under two contrasting penal mechanisms: savage corporal punishment to enforce obedience, and generous freehold land grants to emancipists who demonstrated agricultural self-sufficiency. **Hinge Question:** How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Claiming Australia: Captain Cook, Tupaia & The Myth of Terra Nullius (1768–1770)\": The Secret Admiralty Orders, Tupaia and Polynesian Star Navigation, The Gweagal Encounter at Botany Bay) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The American Crisis & The Thames Prison Hulks\", \"Outfitting the First Fleet\", and \"Founding Sydney Cove\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Louis Garneray, British Prison Hulks Moored in…) and Source B (Journal of Surgeon Arthur Bowes Smyth aboard the Lady…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did the British government choose an expensive 15,000-mile voyage to Australia rather than constructing permanent prisons in Britain?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The American Crisis & The Thames Prison Hulks\" → \"Founding Sydney Cove\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Starvation Years\" and \"Convict Labour, The Lash & Emancipists\") to complete the Verso spine, then interrogate Source C (Francis Fowkes, Convict Sketch and Plan of Sydney…), Source D (Captain Watkin Tench on the Desperation of the…), Source E (Colonial Bench of Magistrates Record on Convict…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Short Historical Focus • Two Key Features (2 Sentences • 5 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "vocab": [
         {
@@ -3013,123 +3074,13 @@ export default {
           "enquiry_question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?"
         }
       ],
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: The First Fleet & The Penal Colony",
-        "tariff": "12 marks (Feature Drill [4m] & Source Utility [8m])",
-        "questions": [
-          {
-            "tariff": "4 marks",
-            "type": "feature_drills_4m",
-            "question": "Describe two features of life on board the Thames prison hulks in the 1780s. [4 marks]",
-            "prompt": "Identify two distinct features of living conditions on the Thames prison hulks. For each feature, provide a clear identification followed by supporting factual knowledge.",
-            "model": "One feature of prison hulks was extreme overcrowding and disease, where convicts slept in foul-smelling, unventilated wooden decks plagued by typhus and cholera. Another feature was harsh penal discipline, where prisoners were forced into hard labour dredging the Thames while kept in heavy leg irons.",
-            "scaffolding": {
-              "acronym": "F1 + D1 • F2 + D2",
-              "acronym_title": "4-Mark Feature Drill Formula",
-              "steps": [
-                {
-                  "letter": "F1",
-                  "name": "Feature 1 (Confinement & Overcrowding)",
-                  "prompt": "Identify decommissioned warships, iron chains, and rat-infested lower decks.",
-                  "starter": "One key feature was that..."
-                },
-                {
-                  "letter": "D1",
-                  "name": "Detail 1",
-                  "prompt": "Add precise details (hundreds chained, bare floorboards, unventilated holds).",
-                  "starter": "Specifically, this involved..."
-                },
-                {
-                  "letter": "F2",
-                  "name": "Feature 2 (Lethal Disease & Forced Labour)",
-                  "prompt": "Identify jail fever, dysentery, and dredging the Thames riverbed.",
-                  "starter": "A second key feature was..."
-                },
-                {
-                  "letter": "D2",
-                  "name": "Detail 2",
-                  "prompt": "Add precise details (up to 30% mortality, typhus, contaminated bilge water).",
-                  "starter": "In particular, this meant that..."
-                }
-              ],
-              "sentence_starters": [
-                "One key feature was that...",
-                "Specifically, this involved...",
-                "A second key feature was...",
-                "In particular, this meant that..."
-              ],
-              "connectives_bank": [
-                "prison hulks",
-                "River Thames",
-                "overcrowding",
-                "jail fever / typhus",
-                "leg irons",
-                "forced dredging",
-                "First Fleet"
-              ]
-            }
-          },
-          {
-            "tariff": "8 marks",
-            "type": "source_utility_8m",
-            "question": "How useful are Sources A and B for an enquiry into the challenges faced by convicts and colonial authorities during the founding of Sydney Cove (1780–1792)? [8 marks]",
-            "stimulus": [
-              "Source A: Governor Arthur Phillip’s dispatch to Lord Sydney (1788) detailing unyielding eucalyptus wood that blunts axes, poor soil at Sydney Cove, and near-starvation.",
-              "Source B: Extract from the journal of convict marine Watkin Tench (1790) recording severe caloric reductions, the loss of the supply ship HMS Guardian, and rampant scurvy."
-            ],
-            "prompt": "Evaluate both sources for their historical utility. Analyse what their contents reveal about agricultural failure and supply shortages, corroborating with contextual knowledge and interrogating their official provenance and personal perspectives.",
-            "model": "Source A is useful for an enquiry into the founding of Sydney Cove because it reveals the severe food shortages and poor soil confronting the First Fleet. Governor Arthur Phillip records how convicts lacked farming tools and struggled to clear dense eucalyptus bush, showing how close the settlement came to starvation.<br><br>Source B is useful because it shows the strict military discipline enforced by colonial authorities to prevent mutiny. Together, both sources are highly valuable for understanding the harsh physical struggles of convicts and officers between 1788 and 1792.",
-            "scaffolding": {
-              "acronym": "Source A (Content + Provenance) • Source B (Content + Provenance) • Synthesis",
-              "acronym_title": "Edexcel Paper 3 Q3(a) Dual Source Utility Framework",
-              "steps": [
-                {
-                  "letter": "SOURCE A",
-                  "name": "Analyse Phillip’s Dispatch",
-                  "prompt": "Analyse eucalyptus wood blunting tools, sandy soil, urban convicts, and official report motive.",
-                  "starter": "Source A is exceptionally useful because its content reveals that..."
-                },
-                {
-                  "letter": "SOURCE B",
-                  "name": "Analyse Tench’s Journal",
-                  "prompt": "Analyse halved rations, loss of HMS Guardian, scurvy, and personal eyewitness accuracy.",
-                  "starter": "Source B is equally useful because it captures..."
-                },
-                {
-                  "letter": "SYNTHESIS",
-                  "name": "Weighed Value",
-                  "prompt": "Explain how both sources corroborate the extreme precarity of the Starvation Years.",
-                  "starter": "Combined, both sources provide high historical utility because..."
-                }
-              ],
-              "sentence_starters": [
-                "Source A is useful for an enquiry into challenges because it reveals...",
-                "In particular, this aligns with historical knowledge regarding...",
-                "Furthermore, the provenance makes it valuable because...",
-                "Similarly, Source B offers critical insight into...",
-                "Overall, both sources combined provide comprehensive utility because..."
-              ],
-              "connectives_bank": [
-                "Arthur Phillip",
-                "Watkin Tench",
-                "Sydney Cove",
-                "eucalyptus blunted axes",
-                "starvation rations",
-                "HMS Guardian wreck",
-                "Norfolk Island",
-                "scurvy"
-              ]
-            }
-          }
-        ]
-      },
       "tasks": [
         {
           "id": "aus_l2_two_features_prison_hulks",
           "type": "two_features",
-          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "title": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "question": "Describe two features of life on board the Thames prison hulks in the 1780s. [4 marks]",
+          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "question": "Describe two features of life on board the Thames prison hulks in the 1780s.",
           "feature_1": {
             "prompt": "Feature 1: Identify one physical condition or sanitation hazard on the prison hulks.",
             "starter": "One key feature was... For instance, prisoners endured...",
@@ -3140,16 +3091,16 @@ export default {
             "starter": "A second key feature was... Specifically, convicts were forced to...",
             "model": "A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash."
           },
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "topic": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
           "model_answer": "One key feature was severe overcrowding and squalid, disease-ridden conditions below deck [2.1]. For instance, decommissioned warship hulks on the Thames held hundreds of convicts packed together in darkness, where typhus (\"gaol fever\") and dysentery killed nearly 30% of inmates. A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash.",
           "model": "One key feature was severe overcrowding and squalid, disease-ridden conditions below deck [2.1]. For instance, decommissioned warship hulks on the Thames held hundreds of convicts packed together in darkness, where typhus (\"gaol fever\") and dysentery killed nearly 30% of inmates. A second key feature was grueling physical hard labour in leg irons [2.2]. Specifically, convicts were rowed ashore every day in heavy chains to dredge gravel from the Thames or construct military dockyards under threat of the cat-o'-nine-tails lash."
         },
         {
           "id": "aus_l2_source_utility_sydney_cove",
           "type": "extended_writing",
-          "tariff": "Question 2: Source Utility [8 marks • 10 mins]",
-          "title": "Question 2: Source Utility [8 marks • 10 mins]",
-          "question": "How useful are Sources A and B for an enquiry into the challenges faced by convicts and colonial authorities during the founding of Sydney Cove (1788–1792)? [8 marks]",
+          "tariff": "Primary Source Enquiry • Content & Provenance (2 Paragraphs • 10 mins)",
+          "title": "Primary Source Enquiry • Content & Provenance (2 Paragraphs • 10 mins)",
+          "question": "How useful are Sources A and B for an enquiry into the challenges faced by convicts and colonial authorities during the founding of Sydney Cove (1788–1792)?",
           "hints": [
             "Content: Evaluate what the sources reveal about starvation, poor soil, lack of farming tools, and conflict [2.3, 2.4].",
             "Provenance: Consider the perspective of Governor Arthur Phillip and convict journal writers like Watkin Tench.",
@@ -3211,7 +3162,7 @@ export default {
             ]
           },
           "model_answer": "Source A is useful for an enquiry into the founding of Sydney Cove because it reveals the severe food shortages and poor soil confronting the First Fleet. Governor Arthur Phillip records how convicts lacked farming tools and struggled to clear dense eucalyptus bush, showing how close the settlement came to starvation.<br><br>Source B is useful because it shows the strict military discipline enforced by colonial authorities to prevent mutiny. Together, both sources are highly valuable for understanding the harsh physical struggles of convicts and officers between 1788 and 1792.",
-          "topic": "Question 2: Source Utility [8 marks • 10 mins]"
+          "topic": "Primary Source Enquiry • Content & Provenance (2 Paragraphs • 10 mins)"
         }
       ],
       "quiz": [
@@ -3605,7 +3556,8 @@ export default {
             "A former convict who finished their sentence and regained legal freedom."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "Under Britain’s harsh [Bloody Code], losing the American colonies left thousands of prisoners crowded inside rotting Thames [Prison Hulk] vessels until Parliament ordered [Transportation] to New South Wales. Arriving at Sydney Cove in January 1788, Governor Phillip’s penal settlement endured near-famine on strict [Rations] and harsh [Cat-o'-Nine-Tails] floggings, though freed convicts could later farm land as a pardoned [Emancipist]."
     },
     {
       "id": "lesson_3",
@@ -3960,7 +3912,67 @@ export default {
             "primer": "Compare Bennelong’s attempts at negotiation and cultural bridge-building with Pemulwuy’s military campaign of burning farms and targeting supply lines.",
             "question": "Why were both Bennelong’s diplomacy and Pemulwuy’s guerrilla warfare rational responses to British imperial invasion?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "Tench was one of the few British officers who attempted to understand Indigenous society, noting that land and water were divided into familial estates. **Hinge Question:** How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?",
+          "Source B": "In April 1789, a catastrophic smallpox epidemic struck the Eora. The disease killed between 50% and 70% of the Indigenous population around Sydney within months, crippling clan leadership and armed resistance. **Hinge Question:** Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?",
+          "Source C": "Governor Phillip kidnapped Bennelong in 1789 to establish communication. Bennelong mastered English, negotiated between cultures, and visited London in 1792, but struggled upon returning to find acceptance in either society. **Hinge Question:** Did Bennelong's adoption of European clothing and diplomacy represent cultural collaboration or a strategic survival effort for his people?",
+          "Source D": "While Bennelong sought diplomatic mediation, Bidjigal warrior Pemulwuy led a ferocious 12-year guerrilla war against British settlement across the Hawkesbury and Parramatta basins from 1790 to 1802. **Hinge Question:** Why did Pemulwuy's followers believe he had supernatural spiritual immunity against British musket fire, and how did that belief sustain his guerrilla war?",
+          "Source E": "By 1801, Pemulwuy's coordinated attacks on crops, livestock, and settler outposts threatened the colony's food supply. Governor King formally legalized shooting him on sight. Pemulwuy was killed in June 1802, and his severed head was sent to Sir Joseph Banks in London. **Hinge Question:** Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"The First Fleet & The Convict Penal Colony (1783–1792)\": The American Crisis & The Thames Prison Hulks, Outfitting the First Fleet, Founding Sydney Cove) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"First Nations Custodianship\", \"The 1789 Smallpox Catastrophe\", and \"Bennelong: The Tragic Intermediary\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Watkin Tench on Eora Custodianship and Marine Ecology…) and Source B (Surgeon John White's Journal on the 1789 Smallpox…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"First Nations Custodianship\" → \"Bennelong: The Tragic Intermediary\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Pemulwuy: The Rainbow Warrior\" and \"The Hawkesbury River Frontier War\") to complete the Verso spine, then interrogate Source C (Portrait of Woollarawarre Bennelong in European Dress…), Source D (Contemporary Engraving of Bidjigal Warrior in Bark…), Source E (Governor Philip Gidley King's Government Proclamation…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "vocab": [
         {
@@ -4696,110 +4708,13 @@ export default {
           "enquiry_question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?"
         }
       ],
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: Frontier Warfare & Pemulwuy’s Resistance",
-        "tariff": "16 marks (Narrative Account [8m] & Explain Importance [8m])",
-        "questions": [
-          {
-            "tariff": "8 marks",
-            "type": "narrative_account_8m",
-            "question": "Write a narrative account analysing the key events of Indigenous resistance and frontier conflict in New South Wales between 1788 and 1802. [8 marks]",
-            "stimulus": [
-              "The 1789 smallpox epidemic (Galgany) and the kidnapping of Bennelong",
-              "Pemulwuy’s guerrilla campaign and the Battle of Parramatta (1797)"
-            ],
-            "prompt": "Write a chronological account examining the escalation: the initial 1789 smallpox catastrophe and diplomatic kidnappings, the emergence of Pemulwuy’s armed resistance in the Hawkesbury and Parramatta regions, and Governor King’s 1801 outlaw proclamation leading to Pemulwuy’s death in 1802.",
-            "model": "Initially, relations between the Eora people and British settlers deteriorated in 1788 as colonists cleared land, felled trees, and cut off Aboriginal hunting grounds and fishing coves around Sydney.<br><br>Following this, widespread frontier violence erupted as Indigenous clans fiercely defended their homelands. From 1790, Bidjigal warrior Pemulwuy led a brilliant 12-year guerrilla campaign, ambushing settlers, burning crops, and raiding colonial outposts along the Hawkesbury River.<br><br>Finally, British troops mounted punitive military expeditions, using muskets to overwhelm Indigenous spears. After Pemulwuy was killed in 1802, British expansion continued inland, displacing Aboriginal nations through violent frontier conflict.",
-            "scaffolding": {
-              "acronym": "3-Stage Chronological Narrative Framework",
-              "acronym_title": "Narrative Account Formula (Beginning • Escalation • Climax)",
-              "steps": [
-                {
-                  "letter": "STAGE 1",
-                  "name": "1789 Smallpox & Bennelong Kidnap",
-                  "prompt": "Explain 50% mortality from Galgany, Phillip kidnapping Bennelong, and land clearing.",
-                  "starter": "Initially, relations disintegrated following the April 1789..."
-                },
-                {
-                  "letter": "STAGE 2",
-                  "name": "1790–1797 Pemulwuy & Battle of Parramatta",
-                  "prompt": "Explain spearing McIntyre, burning crops, Parramatta raid, and surviving 7 bullet wounds.",
-                  "starter": "Following this, organized armed resistance coalesced under Pemulwuy when..."
-                },
-                {
-                  "letter": "STAGE 3",
-                  "name": "1801 Outlawing & 1802 Ambush",
-                  "prompt": "Explain Governor King’s proclamation, Pemulwuy’s death, and sending head to Joseph Banks.",
-                  "starter": "The tragic culmination of the frontier conflict occurred in 1801–1802 when..."
-                }
-              ],
-              "sentence_starters": [
-                "Initially, relations broke down when...",
-                "Following this, sustained armed resistance erupted in...",
-                "A major military escalation occurred in March 1797 when...",
-                "Consequently, this culminated in 1801–1802 when..."
-              ],
-              "connectives_bank": [
-                "smallpox / Galgany",
-                "Bennelong kidnap",
-                "Pemulwuy",
-                "Bidjigal clan",
-                "Hawkesbury raids",
-                "Battle of Parramatta (1797)",
-                "Governor King proclamation (1801)",
-                "Joseph Banks"
-              ]
-            }
-          },
-          {
-            "tariff": "8 marks",
-            "type": "explain_importance_8m",
-            "question": "Explain the importance of Pemulwuy’s guerrilla campaign (1790–1802) for Indigenous resistance against British colonisation. [8 marks]",
-            "prompt": "Explain two distinct reasons why Pemulwuy was historically important: first, how his multi-clan tactical alliances proved that Indigenous peoples fought back with sophisticated military strategy; second, how his enduring spiritual legacy inspired future frontier resistance across the Australian continent.",
-            "model": "Pemulwuy’s guerrilla campaign was of immense importance because it shattered the myth of peaceful British settlement and demonstrated fierce, organised Aboriginal resistance. For twelve years, Pemulwuy united different Indigenous language groups, using knowledge of the bush to wage devastating economic warfare against colonial farms, inspiring ongoing Aboriginal resistance against colonisation.",
-            "scaffolding": {
-              "acronym": "Importance Point 1 • Importance Point 2",
-              "acronym_title": "Edexcel Paper 2 Period Study 8-Mark Importance Standard",
-              "steps": [
-                {
-                  "letter": "IMPACT 1",
-                  "name": "Tactical Sophistication & Multi-Clan Unity",
-                  "prompt": "Explain exploiting musket reload times, rain raids, burning crops, and unifying clans.",
-                  "starter": "One reason Pemulwuy’s campaign was profoundly important was that..."
-                },
-                {
-                  "letter": "IMPACT 2",
-                  "name": "Enduring Spiritual & Frontier Legacy",
-                  "prompt": "Explain surviving bullet wounds, legend of invulnerability, and inspiring future frontier wars.",
-                  "starter": "Furthermore, the campaign was vital because it established..."
-                }
-              ],
-              "sentence_starters": [
-                "One reason why Pemulwuy’s campaign was important was...",
-                "In particular, he demonstrated military sophistication by...",
-                "Furthermore, the campaign was critical because...",
-                "Consequently, this transformed Indigenous resistance because..."
-              ],
-              "connectives_bank": [
-                "Pemulwuy",
-                "guerrilla tactics",
-                "rain raids",
-                "multi-clan alliance",
-                "Battle of Parramatta",
-                "spiritual invulnerability",
-                "Frontier Wars legacy"
-              ]
-            }
-          }
-        ]
-      },
       "tasks": [
         {
           "id": "aus_l3_narrative_account_resistance",
           "type": "narrative_account",
-          "tariff": "Question 2: Narrative Account [8 marks • 10 mins]",
-          "title": "Question 2: Narrative Account [8 marks • 10 mins]",
-          "question": "Write a narrative account analysing the key events of Indigenous resistance and frontier conflict in New South Wales between 1788 and 1802. [8 marks]",
+          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "question": "Write a narrative account analysing the key events of Indigenous resistance and frontier conflict in New South Wales between 1788 and 1802.",
           "hints": [
             "Beginning (1788–1790): Initial contact, the catastrophic smallpox epidemic wiping out over 50% of the coastal population, and Bennelong’s mediation [3.1, 3.2].",
             "Middle (1792–1797): Pemulwuy’s guerrilla resistance in the Hawkesbury and Parramatta basins, including burning settler crops and the Battle of Parramatta [3.3].",
@@ -4865,7 +4780,7 @@ export default {
             ]
           },
           "model_answer": "Initially, relations between the Eora people and British settlers deteriorated in 1788 as colonists cleared land, felled trees, and cut off Aboriginal hunting grounds and fishing coves around Sydney.<br><br>Following this, widespread frontier violence erupted as Indigenous clans fiercely defended their homelands. From 1790, Bidjigal warrior Pemulwuy led a brilliant 12-year guerrilla campaign, ambushing settlers, burning crops, and raiding colonial outposts along the Hawkesbury River.<br><br>Finally, British troops mounted punitive military expeditions, using muskets to overwhelm Indigenous spears. After Pemulwuy was killed in 1802, British expansion continued inland, displacing Aboriginal nations through violent frontier conflict.",
-          "topic": "Question 2: Narrative Account [8 marks • 10 mins]"
+          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)"
         }
       ],
       "quiz": [
@@ -5259,7 +5174,8 @@ export default {
             "Fast surprise raids and ambushes fought by small, mobile groups."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "For millennia, First Nations clans cared for Country along sacred [Songlines] of [Custodianship]. Just over a year after the First Fleet landed, a devastating 1789 smallpox [Epidemic] killed half of Sydney’s Eora population and accelerated colonial [Dispossession]. While Wangal man Bennelong served reluctantly as diplomatic [Intermediary], Bidjigal elder Pemulwuy waged twelve years of [Guerrilla Warfare] defending Bidjigal and Darug lands."
     },
     {
       "id": "lesson_4",
@@ -5614,7 +5530,67 @@ export default {
             "primer": "Contrast Henry Reynolds’s evidence of protracted armed warfare with Keith Windschuttle’s conservative denialism, interrogating primary records of massacres.",
             "question": "Why do debates over the scale of casualties in the Frontier Wars remain intensely controversial in modern Australian politics?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "The first major armed clash in Tasmania occurred at Risdon Cove in 1804 when British troops fired on a peaceful kangaroo hunting party, setting the precedent for violent conflict. **Hinge Question:** Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?",
+          "Source B": "Governor Arthur ordered painted boards nailed to trees during the Black War to show that white settlers and Indigenous people would be treated equally under British law. **Hinge Question:** Why did Governor Arthur depict \"equal justice\" on pictorial boards at the very moment he was declaring martial law and mobilizing 2,200 armed men in the Black Line to drive Indigenous Tasmanians from their lands?",
+          "Source C": "Robinson persuaded approximately 200 surviving Indigenous Tasmanians to leave the mainland for sanctuary at Wybalenna on Flinders Island. Within a decade, most died from respiratory diseases and heartbreak. **Hinge Question:** Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?",
+          "Source D": "The British Parliament investigated colonial frontier violence following reports from humanitarians and missionaries, producing a devastating condemnation of pastoral expansion. **Hinge Question:** Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?",
+          "Source E": "On 10 June 1838, a gang of 11 white stockmen bound and murdered 28 defenseless Wirrayaraay people. Hobbs bravely reported the crime, leading to an unprecedented trial where seven perpetrators were convicted and hanged. **Hinge Question:** Why was the conviction of the Myall Creek perpetrators a unique anomaly in 19th-century colonial Australian history?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Frontier Warfare: Smallpox, Bennelong & Pemulwuy’s Resistance (1788–1802)\": First Nations Custodianship, The 1789 Smallpox Catastrophe, Bennelong: The Tragic Intermediary) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Invasion of Van Diemen’s Land\", \"The Black War & Governor Arthur’s Martial Law\", and \"Truganini and the Exile to Wybalenna\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Deposition of Convict Edward White on the Risdon Cove…) and Source B (Governor George Arthur's Pictorial Proclamation Board…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Invasion of Van Diemen’s Land\" → \"Truganini and the Exile to Wybalenna\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Squatters and the Great Merino Land Grab\" and \"The Myall Creek Reckoning\") to complete the Verso spine, then interrogate Source C (George Augustus Robinson, Tasmanian Journals on the…), Source D (Report of the British Parliamentary Select Committee…), Source E (Deposition of William Hobbs on the Myall Creek…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "vocab": [
         {
@@ -6350,120 +6326,13 @@ export default {
           "enquiry_question": "Why was the conviction of the Myall Creek perpetrators a unique anomaly in 19th-century colonial Australian history?"
         }
       ],
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: The Frontier Wars & The Black War",
-        "tariff": "8 marks (Contrasting Historical Interpretations)",
-        "questions": [
-          {
-            "tariff": "4 marks",
-            "type": "interpretations_diff_4m",
-            "question": "Explain how Interpretations 1 and 2 differ on the nature and scale of frontier conflict in Australia. [4 marks]",
-            "stimulus": [
-              "Interpretation 1: Historian Henry Reynolds, The Other Side of the Frontier (1981) — argues European occupation was resisted from the start by Indigenous peoples using guerrilla tactics in a protracted, bloody war costing at least 20,000 Aboriginal lives.",
-              "Interpretation 2: Historian Keith Windschuttle, The Fabrication of Aboriginal History (2002) — argues there was no systematic warfare or frontier genocide, asserting conflicts were uncoordinated, small-scale criminal skirmishes over stolen goods with fabricated death tolls."
-            ],
-            "prompt": "Explain the fundamental difference between Henry Reynolds’s orthodox view of a protracted, bloody continental war of resistance and Keith Windschuttle’s revisionist view of minor, uncoordinated criminal skirmishes.",
-            "model": "Interpretation 1 views frontier conflict as small, sporadic clashes between isolated settlers and Indigenous groups. In contrast, Interpretation 2 argues that the Frontier Wars were sustained, large-scale military conflicts with thousands of casualties, amounting to a concerted war of conquest.",
-            "scaffolding": {
-              "acronym": "Point • Interp 1 • Interp 2 • Contrast",
-              "acronym_title": "Edexcel Paper 3 Q3(b) Interpretation Difference Formula",
-              "steps": [
-                {
-                  "letter": "POINT",
-                  "name": "State the Core Difference",
-                  "prompt": "State clearly that they disagree on whether the frontier was a war of defense or minor crime.",
-                  "starter": "Interpretations 1 and 2 differ fundamentally on..."
-                },
-                {
-                  "letter": "INTERP 1",
-                  "name": "Exemplify Reynolds (War & 20,000 Dead)",
-                  "prompt": "Quote or summarize Reynolds on guerrilla resistance, bloody war, and 20,000 casualties.",
-                  "starter": "Interpretation 1 argues that..."
-                },
-                {
-                  "letter": "INTERP 2",
-                  "name": "Exemplify Windschuttle (Minor Crime Skirmishes)",
-                  "prompt": "Quote or summarize Windschuttle on denying warfare, small-scale criminal disputes, and fabricated figures.",
-                  "starter": "In contrast, Interpretation 2 suggests that..."
-                },
-                {
-                  "letter": "CONTRAST",
-                  "name": "Explain the Divergence",
-                  "prompt": "Explicitly synthesize the difference between patriotic warfare and localized crime.",
-                  "starter": "This is a fundamental difference because..."
-                }
-              ],
-              "sentence_starters": [
-                "Interpretations 1 and 2 differ on...",
-                "Interpretation 1 argues that...",
-                "In contrast, Interpretation 2 suggests that...",
-                "This is a difference because..."
-              ],
-              "connectives_bank": [
-                "Henry Reynolds (1981)",
-                "Keith Windschuttle (2002)",
-                "Frontier Wars",
-                "guerrilla resistance",
-                "20,000 dead",
-                "History Wars",
-                "criminal skirmishes vs warfare"
-              ]
-            }
-          },
-          {
-            "tariff": "4 marks",
-            "type": "interpretations_reason_4m",
-            "question": "Suggest one reason why Interpretations 1 and 2 differ on the reality of the Frontier Wars. [4 marks]",
-            "prompt": "Explain why Reynolds and Windschuttle arrive at opposing conclusions. Consider their different methodologies, source selection, and political/philosophical motives.",
-            "model": "The interpretations differ because the historians prioritize different sources. Interpretation 1 relies on official colonial government dispatches that minimized frontier violence, whereas Interpretation 2 examines regional police archives, settler diaries, and Indigenous oral histories.",
-            "scaffolding": {
-              "acronym": "Methodology Contrast • Source Selection • Motive",
-              "acronym_title": "Edexcel Paper 3 Q3(c) Why Interpretations Differ Formula",
-              "steps": [
-                {
-                  "letter": "REASON",
-                  "name": "Methodology & Source Criteria",
-                  "prompt": "Identify that Reynolds uses settler letters and oral histories, while Windschuttle demands court records.",
-                  "starter": "One reason why Interpretations 1 and 2 differ is because they rely on..."
-                },
-                {
-                  "letter": "AUTHOR 1",
-                  "name": "Reynolds’s Methodology",
-                  "prompt": "Explain Reynolds acknowledges unrecorded massacres and Indigenous testimony.",
-                  "starter": "Specifically, Henry Reynolds evaluates settler letters, missionary records, and oral traditions..."
-                },
-                {
-                  "letter": "AUTHOR 2",
-                  "name": "Windschuttle’s Methodology",
-                  "prompt": "Explain Windschuttle demands strict court records, dismissing undocumented massacres.",
-                  "starter": "In contrast, Keith Windschuttle insists on strict documentary court evidence..."
-                }
-              ],
-              "sentence_starters": [
-                "One reason why Interpretations 1 and 2 differ is because they rely on different historical sources...",
-                "Specifically, Interpretation 1 uses settler diaries and oral testimony to...",
-                "In contrast, Interpretation 2 focuses strictly on official legal records to...",
-                "As a result, the authors reach different conclusions because..."
-              ],
-              "connectives_bank": [
-                "History Wars",
-                "settler diaries",
-                "oral traditions",
-                "narrow literalist methodology",
-                "Myall Creek trial",
-                "Black War martial law"
-              ]
-            }
-          }
-        ]
-      },
       "tasks": [
         {
           "id": "aus_l4_contrasting_interpretations",
           "type": "historical_interpretations",
-          "tariff": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
-          "title": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
-          "question": "Explain how Interpretations 1 and 2 differ on the nature of the Australian Frontier Wars and suggest why they reach contrasting conclusions. [8 marks]",
+          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
+          "title": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
+          "question": "Explain how Interpretations 1 and 2 differ on the nature of the Australian Frontier Wars and suggest why they reach contrasting conclusions.",
           "interpretation_1": {
             "author": "Keith Windschuttle (Revisionist Historian)",
             "work": "The Fabrication of Aboriginal History (2002)",
@@ -6477,14 +6346,14 @@ export default {
             "text": "A protracted, bloody war of conquest was fought across the entire continent. At least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance."
           },
           "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the nature of the Australian Frontier Wars. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]",
+            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the nature of the Australian Frontier Wars. What is the main difference between these views? Explain your answer, using details from both interpretations.",
             "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays frontier conflict as minimal and isolated criminal skirmishes where British authorities upheld the rule of law, whereas Interpretation 2 portrays it as a protracted, continent-wide war of military conquest and mass dispossession.<br><br>Interpretation 1 claims that frontier conflict \"consisted mostly of isolated criminal murders and livestock theft rather than warfare\" and emphasizes that \"British authorities consistently sought to uphold the rule of law and protect Indigenous people\".<br><br>In contrast, Interpretation 2 argues that \"a protracted, bloody war of conquest was fought across the entire continent\", stressing that \"at least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance\"."
           },
           "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the Australian Frontier Wars. You may use Sources B and C to help explain your answer. [4 marks]",
+            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the Australian Frontier Wars. You may use Sources B and C to help explain your answer.",
             "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which reflects colonial proclamations declaring that native inhabitants were \"under the sovereign protection of British law\" and that violence against them would be \"prosecuted with utmost rigor\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains firsthand squatter depositions and pastoral journals describing how armed horsemen \"pursued the tribe into the ranges at dawn\" and killed thirty Indigenous defenders to secure grazing land.<br><br>Because the two historians drew upon contrasting bodies of evidence—official legal proclamations versus private station records of vigilante violence—they formed opposing historical interpretations."
           },
-          "topic": "Question 3(b) & 3(c): Contrasting Interpretations [8 marks • 10 mins]",
+          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
           "interp1": {
             "author": "Keith Windschuttle (Revisionist Historian)",
             "work": "The Fabrication of Aboriginal History (2002)",
@@ -6920,7 +6789,8 @@ export default {
             "Forcing a community off their homeland to live in a distant camp."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "Across Tasmania and mainland pastures, booming sheep [Pastoralism] drove wealthy [Squatter] settlers onto Indigenous hunting grounds, sparking bitter [Frontier War] clashes. In Van Diemen’s Land, Governor Arthur declared [Martial Law] in 1828 before forcing surviving Palawa families into [Exile] on Flinders Island. On the mainland, rare colonial justice followed the 1838 Myall Creek [Massacre] when seven perpetrators were hanged."
     },
     {
       "id": "lesson_5",
@@ -7275,7 +7145,67 @@ export default {
             "primer": "Explore how goldfield racism led directly to the 1901 Immigration Restriction Act, contrasted with the 1938 Day of Mourning and the 1992 Mabo ruling overturning terra nullius.",
             "question": "Why did the birth of the Australian nation in 1901 expand democratic rights for white men while codifying the exclusion of First Nations and non-European peoples?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "Hargraves had returned from the California Gold Rush and recognized identical geological formations near Bathurst. His announcement triggered an unprecedented global migration that tripled Australia's population within a decade. **Hinge Question:** Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?",
+          "Source B": "Miners were compelled to pay exorbitant fees and carry this physical paper licence at all times, subject to twice-weekly armed police 'digger hunts'. This exact licence was issued to Italian-born digger leader Raffaello Carboni just weeks before the Eureka uprising. **Hinge Question:** Why was the requirement to produce a physical licence on demand so deeply resented by free miners?",
+          "Source C": "On 1 December 1854, over 500 miners knelt beneath the blue-and-white Southern Cross flag and swore: \"We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties.\" Two days later, British troops stormed the stockade, killing 22 diggers. **Hinge Question:** Why did the Eureka rebellion become the foundational myth of Australian democracy despite being a military defeat?",
+          "Source D": "The first major piece of legislation passed by the new Australian Federal Parliament in 1901 was the Immigration Restriction Act. Customs officers intentionally chose obscure European languages (like Gaelic or Lithuanian) to fail Chinese, Japanese, and Pacific Islander applicants. **Hinge Question:** Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?",
+          "Source E": "On Australia's 150th anniversary, while official reenactments celebrated Governor Phillip's landing, First Nations leaders Jack Patten and William Ferguson held a counter-conference declaring 26 January a national Day of Mourning. **Hinge Question:** Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"The Frontier Wars, Pastoral Expansion & The Black War (1803–1840)\": The Invasion of Van Diemen’s Land, The Black War & Governor Arthur’s Martial Law, Truganini and the Exile to Wybalenna) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Gold Fever: Ballarat & Bendigo\", \"The Gold Commission & Licence Hunts\", and \"The Eureka Stockade\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Edward Hargraves, Letter to the Colonial Secretary…) and Source B (Colony of Victoria Gold Mining Licence Issued to…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Gold Fever: Ballarat & Bendigo\" → \"The Eureka Stockade\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Chinese Miners & The White Australia Policy\" and \"First Nations Survival & The Mabo Legacy\") to complete the Verso spine, then interrogate Source C (Charles Doudiet, Swearing Allegiance to the Southern…), Source D (Commonwealth of Australia Immigration Restriction Act…), Source E (Aborigines Progressive Association, Day of Mourning &…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "vocab": [
         {
@@ -8008,78 +7938,13 @@ export default {
           "enquiry_question": "Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?"
         }
       ],
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: The Gold Rush, Eureka Stockade & Historical Legacy",
-        "tariff": "12 marks (Evaluative Statement Essay)",
-        "questions": [
-          {
-            "tariff": "12 marks",
-            "type": "evaluative_essay_12m",
-            "question": "‘The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.’ How far do you agree? Explain your answer. [12 marks]",
-            "stimulus": [
-              "The 1851 Gold Rush and the Eureka Stockade rebellion (1854)",
-              "Pastoral expansion, the wool boom, and the frontier wars (1820–1840)"
-            ],
-            "prompt": "Construct a balanced evaluative argument: on the one hand, evaluate how gold triggered massive demographic growth, ended convict transportation, and sparked the birth of Australian democracy at Eureka; on the other hand, evaluate how the earlier wool boom, pastoral squatting, and frontier wars permanently defined the continent’s land division and Indigenous dispossession. Reach a weighed conclusion.",
-            "model": "On the one hand, the 1854 Eureka Stockade was a major turning point in Australian democracy. Frustrated by corrupt gold commissioners and expensive mining licence fees, Ballarat gold miners rebelled under the Southern Cross flag. Although British soldiers crushed the stockade, public outrage led the colonial government to abolish the licence fee and grant the vote and parliamentary representation to miners.<br><br>On the other hand, the massive 1850s Gold Rush itself was a far more transformative economic turning point. Gold tripled Australia’s population, attracted international immigrants, and funded modern railways, transforming Australia from a remote penal colony into a wealthy, modern society.",
-            "scaffolding": {
-              "acronym": "PEEL Evaluative Essay Framework",
-              "acronym_title": "12-Mark Evaluative Statement Essay Standard",
-              "steps": [
-                {
-                  "letter": "THESIS",
-                  "name": "State Position",
-                  "prompt": "State clearly that gold transformed Australia from a penal colony into a wealthy, democratic nation.",
-                  "starter": "To a large extent, the discovery of gold and the Eureka Stockade were the decisive turning points because..."
-                },
-                {
-                  "letter": "THEME 1",
-                  "name": "Gold Rush & Eureka Democracy (1851–1856)",
-                  "prompt": "Explain population tripling to 1.1m, ending convict transport, Eureka rebellion, and secret ballot.",
-                  "starter": "On the one hand, the Gold Rush fundamentally transformed Australia by..."
-                },
-                {
-                  "letter": "THEME 2",
-                  "name": "Wool Boom & Frontier Dispossession (1820–1840)",
-                  "prompt": "Evaluate squattocracy, wool exports, and the pastoral dispossession of Indigenous lands.",
-                  "starter": "On the other hand, it can be argued that the pastoral wool boom was foundational because..."
-                },
-                {
-                  "letter": "JUDGMENT",
-                  "name": "Weighed Verdict",
-                  "prompt": "Synthesize why gold was the decisive catalyst creating modern democratic Australia.",
-                  "starter": "In conclusion, while the wool boom established the territory, the Gold Rush was decisive because..."
-                }
-              ],
-              "sentence_starters": [
-                "One decisive reason was that...",
-                "On the one hand, the discovery of gold transformed Australia because...",
-                "In particular, at the Eureka Stockade in 1854...",
-                "On the other hand, an alternative view emphasizes the earlier pastoral expansion, such as...",
-                "In conclusion, the most decisive turning point was... because..."
-              ],
-              "connectives_bank": [
-                "1851 Gold Rush",
-                "Edward Hargraves",
-                "Ballarat",
-                "Eureka Stockade (1854)",
-                "Southern Cross flag",
-                "universal male suffrage",
-                "Australian secret ballot",
-                "squattocracy",
-                "wool boom"
-              ]
-            }
-          }
-        ]
-      },
       "tasks": [
         {
           "id": "aus_l5_evaluative_essay_eureka",
           "type": "extended_writing",
-          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
-          "title": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
-          "question": "‘The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.’ How far do you agree? Explain your answer. [12 marks]",
+          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "question": "‘The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.’ How far do you agree? Explain your answer.",
           "stimulus": [
             "The Ballarat gold rush, democratic manhood suffrage, and the Southern Cross flag",
             "Pastoral wool expansion, the Frontier Wars, and First Nations dispossession"
@@ -8160,7 +8025,7 @@ export default {
             ]
           },
           "model_answer": "On the one hand, the 1854 Eureka Stockade was a major turning point in Australian democracy. Frustrated by corrupt gold commissioners and expensive mining licence fees, Ballarat gold miners rebelled under the Southern Cross flag. Although British soldiers crushed the stockade, public outrage led the colonial government to abolish the licence fee and grant the vote and parliamentary representation to miners.<br><br>On the other hand, the massive 1850s Gold Rush itself was a far more transformative economic turning point. Gold tripled Australia’s population, attracted international immigrants, and funded modern railways, transforming Australia from a remote penal colony into a wealthy, modern society.",
-          "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
+          "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)"
         }
       ],
       "quiz": [
@@ -8555,12 +8420,473 @@ export default {
             "Legal recognition in 1992 that First Nations hold enduring land rights."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "The 1851 Victorian [Gold Rush] trebled Australia’s population and sparked the 1854 [Eureka Stockade] rebellion at Ballarat, helping win male [Suffrage] in colonial parliaments. Yet anti-Chinese racism culminated at Federation in 1901 in the discriminatory [White Australia Policy], while Indigenous families suffered child removals creating the [Stolen Generations] until the 1992 Mabo ruling recognised [Native Title]."
     }
   ],
   "edition": "2026.1",
   "keyStage": "KS3",
   "key_stage": "KS3",
   "yearGroup": "Year 8",
-  "category": "KS3"
+  "category": "KS3",
+  "key_individuals": [
+    {
+      "entity_type": "person",
+      "name": "Captain James Cook",
+      "aliases": [
+        "Lieutenant James Cook",
+        "James Cook",
+        "Captain Cook"
+      ],
+      "lifespan": "1728 – 1779",
+      "role": "Royal Navy Commander of HMS Endeavour (1768–1771)",
+      "image": "/images/james_cook.jpg",
+      "image_position": "center 18%",
+      "origins": "Royal Navy officer dispatched in 1768 by the Royal Society and Admiralty—officially to observe the transit of Venus at Tahiti alongside Joseph Banks, while carrying secret orders to locate Terra Australis.",
+      "significance": "Landed under musket fire at Botany Bay in April 1770 and claimed eastern Australia (\"New South Wales\") for King George III at Possession Island in August 1770 without Indigenous consent, laying the foundation for terra nullius.",
+      "achievements": [
+        "Enlisted Tahitian Arioi master navigator Tupaia in 1769 to guide HMS Endeavour across uncharted Pacific waters and translate with Māori communities.",
+        "Anchored in Botany Bay (April 1770), firing muskets at two Gweagal warriors defending Dharawal country.",
+        "Claimed the eastern coastline for King George III at Possession Island (August 1770) despite Admiralty instructions requiring the consent of the native population."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Tupaia",
+      "lifespan": "c. 1725 – 1770",
+      "role": "Raʻiātean Arioi High Priest, Master Navigator & Pacific Cartographer",
+      "image": "",
+      "origins": "High-ranking Arioi priest and master non-instrument navigator from Raʻiātea who joined HMS Endeavour at Tahiti in 1769.",
+      "significance": "Guided the British expedition across thousands of miles of the Pacific by reading stars, ocean swells, and bird flight paths, drafted a landmark chart of over 130 Pacific islands, and acted as cultural mediator in Aotearoa (New Zealand).",
+      "achievements": [
+        "Used traditional Polynesian wayfinding to pilot HMS Endeavour safely across unfamiliar South Pacific waters.",
+        "Drew Tupaia’s Chart (c. 1769), recording Indigenous geographical knowledge of more than 130 Pacific islands.",
+        "Translated directly between Polynesian-speaking Māori elders and Cook’s crew before dying of shipboard illness at Batavia in late 1770."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Sir William Blackstone",
+      "aliases": [
+        "William Blackstone",
+        "Blackstone"
+      ],
+      "lifespan": "1723 – 1780",
+      "role": "English Jurist & Author of Commentaries on the Laws of England",
+      "image": "/images/sir_william_blackstone_1774.jpg",
+      "image_position": "center 18%",
+      "origins": "Leading eighteenth-century English judge and Oxford legal scholar whose writings codified English common-law rules of colonial acquisition.",
+      "significance": "His doctrine on \"desert and uncultivated\" lands—defining property ownership purely through European fences, iron ploughs, and stone towns—was used by British authorities to declare Australia terra nullius (\"land belonging to nobody\").",
+      "achievements": [
+        "Distinguished in English law between conquered/ceded colonies (requiring treaties) and allegedly \"uninhabited\" lands claimed by mere settlement.",
+        "Provided the legal fiction through which Britain ignored 65,000 years of First Nations fire-stick farming, Songlines, and customary law until the 1992 Mabo High Court ruling."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Governor Arthur Phillip",
+      "aliases": [
+        "Captain Arthur Phillip",
+        "Arthur Phillip"
+      ],
+      "lifespan": "1738 – 1814",
+      "role": "Commander of the First Fleet & First Governor of New South Wales (1788–1792)",
+      "image": "/images/arthur_phillip.jpg",
+      "image_position": "center 18%",
+      "origins": "Royal Navy captain appointed by William Pitt’s government after the 1783 loss of America left British jails and Thames prison hulks dangerously overcrowded under the Bloody Code.",
+      "significance": "Led the 11 ships of the First Fleet 15,000 miles from Portsmouth (May 1787) to Port Jackson (26 January 1788), steering the starving penal colony through famine while kidnapping Eora men such as Bennelong and enforcing Crown rule without treaties.",
+      "achievements": [
+        "Enforced strict shipboard hygiene, ventilation, and water rations so fewer than 50 of over 750 convicts and 250 marines died on the eight-month voyage.",
+        "Rejected exposed Botany Bay for deep-water Port Jackson (Sydney Cove), raising the British flag on 26 January 1788.",
+        "Rationed scarce stores after HMS Guardian struck an iceberg, awarded 30-acre emancipist land grants (including to James Ruse at Rose Hill), and survived being speared in the shoulder at Manly Cove (1790)."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Woollarawarre Bennelong",
+      "aliases": [
+        "Bennelong"
+      ],
+      "lifespan": "c. 1764 – 1813",
+      "role": "Senior Wangal Man of the Eora Nation & Cross-Cultural Intermediary",
+      "image": "/images/bennelong.jpg",
+      "image_position": "center center",
+      "origins": "Senior Wangal warrior and diplomat along the Parramatta River who survived the devastating April 1789 Sydney smallpox (gal-galla) epidemic that killed 50–70% of the Eora population.",
+      "significance": "Kidnapped on Governor Phillip’s orders in late 1789, he learned English, mediated between Eora clans and Government House, and sailed to London in 1792–1793, embodying both skilful Indigenous diplomacy and the tragedy of colonial displacement.",
+      "achievements": [
+        "Negotiated tense frontier meetings between Eora elders and Governor Phillip around Sydney Harbour after escaping Government House.",
+        "Travelled with Phillip to England (1792–1795) before returning to country increasingly alienated by rapid British expansion."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Pemulwuy",
+      "lifespan": "c. 1750 – 1802",
+      "role": "Bidjigal Elder, Cleverman & Leader of the Sydney Basin Frontier War",
+      "image": "/images/pemulwuy.jpg",
+      "origins": "Revered Bidjigal clan warrior and spiritual leader of the Eora nation whose ancestral country around Botany Bay and the Georges River was encroached upon by British farms after 1788 (no confirmed contemporary likeness survives).",
+      "significance": "United Bidjigal, Dharug, and neighbouring clans in a twelve-year guerrilla war (1790–1802) across Parramatta and the Hawkesbury River, proving that First Nations peoples mounted organised military resistance to British invasion.",
+      "achievements": [
+        "Directed coordinated guerrilla ambushes, crop burnings, and raids on settler livestock to defend Indigenous yam beds and hunting grounds.",
+        "Led a daylight assault on British redcoats at the Battle of Parramatta (1797), surviving gunshot wounds and escaping hospital in leg-irons.",
+        "Defied Governor Philip Gidley King’s shoot-on-sight outlawry proclamation until he was killed in an ambush in 1802."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Truganini",
+      "lifespan": "c. 1812 – 1876",
+      "role": "Nuenonne (Palawa) Envoy & Survivor of the Tasmanian Black War",
+      "image": "/images/truganini_portrait_1835.jpg",
+      "image_position": "center 22%",
+      "origins": "Nuenonne woman from Bruny Island in Van Diemen’s Land (Tasmania) whose mother and family members were murdered by European sailors and settlers during the Black War.",
+      "significance": "After Governor George Arthur imposed martial law (1828) and the 2,200-man Black Line (1830), Truganini joined George Augustus Robinson’s diplomatic missions hoping to save surviving Palawa clans—only to witness British betrayal and mass deaths in exile at Wybalenna.",
+      "achievements": [
+        "Guided diplomatic missions across Van Diemen’s Land (1830–1835) on promises that Palawa survivors would be protected and allowed to return to ancestral homelands.",
+        "Survived forced exile at Wybalenna on Flinders Island—where over 150 of 200 exiled Palawa died of disease and grief—standing as an enduring symbol of Palawa survival."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "John Macarthur",
+      "lifespan": "1767 – 1834",
+      "role": "New South Wales Officer, Merino Wool Pioneer & Pastoralist",
+      "image": "/images/john_macarthur.jpg",
+      "image_position": "center 18%",
+      "origins": "New South Wales Corps officer and wealthy landowner who bred fine-fleeced Spanish Merino sheep to supply booming Yorkshire textile mills during Britain’s Industrial Revolution.",
+      "significance": "Spearheaded the profitable Australian wool boom that drove wealthy colonial \"squatters\" across the Blue Mountains to fence creeks, trample Indigenous yam-daisy fields, and trigger violent frontier massacres such as Myall Creek (1838).",
+      "achievements": [
+        "Established commercial Merino wool exports from New South Wales to British industrial mills.",
+        "Catalysed the vast inland pastoral land grab across New South Wales and Victoria that dispossessed inland First Nations nations."
+      ]
+    },
+    {
+      "entity_type": "organisation",
+      "name": "Ballarat Reform League (Eureka Stockade)",
+      "aliases": [
+        "Reform League",
+        "Eureka Stockade"
+      ],
+      "lifespan": "November – December 1854",
+      "role": "Victorian Goldfields Democratic Protest Movement",
+      "image": "/images/doudiet_southern_cross_eureka_1854.jpg",
+      "image_fit": "contain",
+      "origins": "Formed at Bakery Hill in Ballarat during the 1851 Victorian Gold Rush by diggers outraged at paying a compulsory 30-shilling monthly mining licence enforced by armed police \"digger hunts\" while denied the vote.",
+      "significance": "Swore allegiance beneath the Southern Cross flag and defended the wooden Eureka Stockade on 3 December 1854; although crushed in 15 minutes with 22 diggers killed, public sympathy abolished the licence and won the secret ballot and manhood suffrage.",
+      "achievements": [
+        "Challenged colonial \"taxation without representation\" through mass rallies and the Eureka oath under the Southern Cross flag.",
+        "Forced Victorian authorities to replace hated gold licences with a Miner’s Right carrying voting rights, pioneering Australian parliamentary democracy (even as non-European Chinese diggers later faced the 1861 Lambing Flat riots and 1901 White Australia Policy)."
+      ]
+    },
+    {
+      "entity_type": "organisation",
+      "name": "Aborigines Progressive Association (1938 Day of Mourning)",
+      "aliases": [
+        "Day of Mourning",
+        "1938 Day of Mourning"
+      ],
+      "lifespan": "Founded 1937 · Sydney Congress 26 January 1938",
+      "role": "Pioneering First Nations Civil Rights & Citizenship Movement",
+      "image": "/images/aus_day_of_mourning.jpg",
+      "image_fit": "contain",
+      "origins": "Organised by First Nations leaders in New South Wales confronting constitutional exclusion after 1901 Federation and forced state child removals (the Stolen Generations).",
+      "significance": "Staged the historic Day of Mourning and Protest in Sydney on 26 January 1938—marking 150 years since the First Fleet—launching the modern national campaign for equal citizenship and land rights that culminated in the 1992 Mabo ruling overturning terra nullius.",
+      "achievements": [
+        "Convened the first national Aboriginal civil rights congress at Australian Hall, Sydney, on 26 January 1938.",
+        "Published a landmark resolution demanding full citizen status, equal education, and an end to discriminatory \"Protection\" boards."
+      ]
+    }
+  ],
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "book_title": "The Endeavour Journal of Sir Joseph Banks at Kamay / Botany Bay (April–August 1770)",
+      "author": "Joseph Banks (28–29 April 1770 • State Library of New South Wales Safe 1/12)",
+      "cover_image": "/images/james_cook.jpg",
+      "cover_caption": "Nathaniel Dance-Holland, Portrait of Captain James Cook RN (c. 1775–1776, National Maritime Museum, Greenwich), holding his Southern Ocean chart.",
+      "author_context": "Aboard HMS Endeavour alongside Lieutenant James Cook and Raiatean navigator-priest Tupaia sailed wealthy 27-year-old botanist Joseph Banks. When Endeavour anchored at Kamay (Botany Bay) on 29 April 1770, Banks recorded face-to-face resistance from two Gweagal men of the Dharawal nation—yet later advised London MPs that the continent was thinly peopled and ripe for British settlement, feeding the legal fiction of terra nullius.",
+      "source_type": "primary_diary",
+      "source_type_label": "Endeavour Expedition Journal (April 1770)",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "\"28–29 April 1770: Under the south head we saw four small canoes, in each of which was one man who held in his hand a long pole with which he struck fish... As our boats rowed in toward the shore where their huts stood, two men came down upon the rocks, each armed with a lance of about ten feet long and a short stick [woomera spear-thrower] which he seemed to handle as if it was a machine to throw the lance.\n\nThey called to us very loudly in a harsh sounding language, of which neither we nor Tupia [Tupaia] understood a word, shaking their lances and menacing; in all appearance resolved to dispute our landing to the utmost, though they were but two, and we thirty or forty at least. Finding that parley was to no purpose, a musket was fired between them; at the report one dropped a bundle of lances, but instantly snatched them up again and threw a stone at our boat, whereupon small shot was fired at his legs before they retired into the woods.\n\n[Later coastal summary, August 1770:] The country inland seemed clothed with open woods and grass lawns clear of underwood... From seeing so few along the beach, we conjectured that the interior of this immense tract must be almost totally uninhabited.\"",
+      "vocabVault": [
+        {
+          "term": "Terra Nullius",
+          "def": "Latin for \"nobody’s land\"—the false British legal claim (overturned only in the 1992 Mabo ruling) that Australia had no recognised land ownership because Aboriginal peoples did not fence farms in European style."
+        },
+        {
+          "term": "Kamay",
+          "def": "The Indigenous Dharawal name for Botany Bay, home to the Gweagal clan for tens of thousands of years before 1770."
+        },
+        {
+          "term": "Tupaia",
+          "def": "Master Polynesian navigator, cartographer, and high priest from Raiatea who guided HMS Endeavour across the Pacific and translated for Māori communities in Aotearoa / New Zealand."
+        },
+        {
+          "term": "Fire-Stick Farming",
+          "def": "Skilled Aboriginal land management using controlled seasonal burning to create the open, park-like grasslands Banks mistook for untouched nature."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "When HMS Endeavour’s boats rowed toward the beach at Kamay on 29 April 1770, how did the two Gweagal men react despite facing thirty armed Britons?",
+          "answer": "They stood bravely on the rocks shouting warnings and brandishing spears to defend their Country and families, refusing to retreat even after a warning musket shot."
+        },
+        {
+          "question": "Why couldn’t Tupaia—who had successfully spoken with Māori communities across New Zealand—understand the Gweagal men at Botany Bay?",
+          "answer": "Māori and Tahitian belong to the Polynesian language family, whereas Aboriginal Australians spoke over 250 distinct ancient languages developed across 65,000 years on the continent."
+        },
+        {
+          "question": "Spot the huge contradiction in Joseph Banks’s journal: how did Cook and Banks later treat Australia as \"uninhabited\" when their own boats had been opposed on day one?",
+          "answer": "Because Aboriginal peoples practised sustainable mobility and fire-stick land care rather than building European stone towns and hedges, British officials disregarded Cook’s Secret Instructions (\"with the Consent of the Natives\") and claimed the coast without a single treaty."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> What weapon-launching tool did the Gweagal men hold alongside their ten-foot spears?<br><br><strong>Pair:</strong> Notice Banks’s comment on \"open woods and grass lawns clear of underwood\"—who had actually shaped those park-like grasslands over thousands of years?<br><br><strong>Share:</strong> Why did Cook break the Admiralty’s instruction to obtain \"the Consent of the Natives\" on 22 August 1770?",
+      "questions": [
+        "How many Gweagal men stood on the rocks to oppose Cook’s landing party of thirty to forty men?",
+        "Why was Polynesian navigator Tupaia unable to translate at Kamay (Botany Bay)?",
+        "What mistaken \"conjecture\" did Joseph Banks make about the interior of Australia?"
+      ],
+      "audio_file": "/audio/reading/australia/r0.mp3",
+      "studio_audio": "/audio/reading/australia/r0.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Original April 1770 journal entries of botanist Joseph Banks aboard HMS Endeavour at Kamay (Botany Bay)."
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "book_title": "Governor Arthur Phillip’s First Despatch from Sydney Cove (15 May 1788)",
+      "author": "Governor Arthur Phillip to Lord Sydney (15 May 1788 • Historical Records of Australia I.1)",
+      "cover_image": "/images/arthur_phillip.jpg",
+      "cover_caption": "Francis Wheatley, Portrait of Captain Arthur Phillip RN (1786, National Portrait Gallery), commander of the First Fleet and first Governor of New South Wales.",
+      "author_context": "After American independence in 1783 ended convict transportation to Virginia and Maryland, rotting prison ships (\"hulks\") in Portsmouth Harbour and on the Thames overflowed with prisoners convicted under Britain’s harsh \"Bloody Code.\" On 13 May 1787, eleven ships of the First Fleet sailed from Portsmouth under Captain Arthur Phillip, arriving in January 1788 with over 730 male and female convicts to establish a penal colony on Gadigal land at Warrane (Sydney Cove).",
+      "source_type": "primary_decree",
+      "source_type_label": "Official Colonial Despatch (15 May 1788)",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "\"Sydney Cove, Port Jackson, May 15, 1788.\nMy Lord,—I had the honour of informing your Lordship that the fleet sailed from Portsmouth on the thirteenth of May 1787. Having examined Botany Bay and found its anchorage exposed and lacking sufficient fresh water, I proceeded northward into Port Jackson, where we had the satisfaction of finding the finest harbour in the world, in which a thousand sail of the line may ride in the most perfect security.\n\nThe different coves were examined with all possible expedition. I fixed on the one that had the best spring of water, which in honour of your Lordship I named Sydney Cove. Yet the clearing of the ground for the encampment and public storehouses has proved a labour of extreme difficulty: the red gum trees are of immense size, the timber splits and warps, and the axes and spades supplied by the contractors in England are of the worst quality, bending at the first blow against the sandstone rock.\n\nFew among the convicts know anything of husbandry or carpentry, and until our seed-corn yields a harvest upon soil far sandier than we had been led to expect, the survival of the settlement depends wholly upon guarding our salt provisions.\"",
+      "vocabVault": [
+        {
+          "term": "Bloody Code",
+          "def": "Britain’s harsh 18th-century criminal law with over 200 crimes punishable by death—often commuted by judges to 7 or 14 years’ transportation."
+        },
+        {
+          "term": "Prison Hulks",
+          "def": "Decommissioned wooden warships moored in Portsmouth Harbour and the Thames used as overcrowded floating prisons after 1776."
+        },
+        {
+          "term": "Penal Colony",
+          "def": "An overseas settlement built using the forced labour of transported convicts under military guard."
+        },
+        {
+          "term": "Warrane (Sydney Cove)",
+          "def": "The Gadigal clan’s ancestral harbour cove in Port Jackson where the First Fleet raised the British flag on 26 January 1788."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did the First Fleet sail specifically from Portsmouth in May 1787, and how did the American Revolution cause Australia’s colonisation?",
+          "answer": "Losing America in 1783 closed Britain’s old convict destination, filling Portsmouth and Thames prison hulks until the government chose New South Wales instead."
+        },
+        {
+          "question": "Why did Arthur Phillip reject Joseph Banks’s recommendation of Botany Bay as soon as he arrived in January 1788?",
+          "answer": "Botany Bay was shallow, windswept, and short of fresh water—whereas Port Jackson just to the north had deep sheltered water and a freshwater stream (\"Tank Stream\")."
+        },
+        {
+          "question": "What practical disasters nearly starved the new Sydney Cove penal settlement between 1788 and 1790?",
+          "answer": "Poor-quality tools broke against hard gum trees and sandstone, sandy soil ruined European wheat seeds, and few urban convicts had farming or building skills."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> How long had the eleven ships of the First Fleet been at sea between leaving Portsmouth (May 1787) and landing at Port Jackson (January 1788)?<br><br><strong>Pair:</strong> Compare Joseph Banks’s glowing 1770 description of lush soil with Arthur Phillip’s grim 1788 reality.<br><br><strong>Share:</strong> Why is 26 January (\"Australia Day\" vs \"Invasion / Survival Day\") still fiercely debated in modern Australia?",
+      "questions": [
+        "Why did Governor Arthur Phillip move the First Fleet out of Botany Bay into Port Jackson?",
+        "What went wrong with the axes, spades, and timber when convicts tried to clear Sydney Cove?",
+        "Why was the settlement completely dependent on salted rations brought on the ships?"
+      ],
+      "audio_file": "/audio/reading/australia/r1.mp3",
+      "studio_audio": "/audio/reading/australia/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Original official despatch sent by Governor Arthur Phillip from Sydney Cove on 15 May 1788 (Historical Records of Australia)."
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "book_title": "An Account of the English Colony in New South Wales: Bennelong & Pemulwuy (1798)",
+      "author": "Judge-Advocate David Collins (London, 1798 • National Library of Australia)",
+      "cover_image": "/images/bennelong.jpg",
+      "cover_caption": "Late-18th-century watercolour profile portrait of Wangal elder and intermediary Woollarawarre Bennelong wearing a European coat and cravat.",
+      "author_context": "David Collins (1756–1810) sailed on the First Fleet as Judge-Advocate (chief legal officer) of New South Wales. In his 1798 chronicle, Collins contrasts two extraordinary Eora responses to the British invasion and the catastrophic 1789 smallpox outbreak (*galgalla*): Wangal elder Woollarawarre Bennelong, who sought cross-cultural diplomacy and travelled to London (1792–1795), and Bidjigal resistance warrior Pemulwuy, who waged a twelve-year guerrilla war defending Eora hunting grounds.",
+      "source_type": "primary_chronicle",
+      "source_type_label": "First Fleet Official Chronicle (1798)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "\"In April 1789 an extraordinary calamity overtook the native inhabitants around Port Jackson: in the coves and rock-shelters of the harbour lay the bodies of men, women, and children carried off by a pustular distemper indistinguishable from the small-pox, against which they possessed no prior immunity, sweeping away perhaps half of the clans around Sydney.\n\nAmidst this devastation, Bennelong—who had at first been seized by Governor Phillip’s order to learn our tongue, escaped, and later reconciled with the Governor after the spearing at Manly Cove—dwelt frequently in a brick hut built for him on the eastern point of the harbour, dining at Government House and sailing with Phillip to England in 1792 in hope of securing respect between our peoples.\n\nFar different was the course chosen by Pemulwuy, a Bidjigal warrior of uncommon boldness near Botany Bay and Parramatta. Convinced that the spreading farms along the Hawkesbury and Georges Rivers would starve his people of kangaroos and yams, Pemulwuy rallied bands of spear-men to fire the settlers’ ripening cornfields and drive off livestock. Even after receiving seven buckshot pellets in the head and chest in 1797, he escaped from the hospital irons—convincing his countrymen that British muskets could never kill him.\"",
+      "vocabVault": [
+        {
+          "term": "Eora Nation",
+          "def": "The coastal Aboriginal clans—including the Gadigal, Wangal, Bidjigal, and Cammeraygal—whose Country encompasses the Sydney basin."
+        },
+        {
+          "term": "Virgin-Soil Epidemic",
+          "def": "A devastating outbreak (like the April 1789 Sydney smallpox epidemic) striking a population with zero previous exposure or biological immunity."
+        },
+        {
+          "term": "Intermediary",
+          "def": "A diplomat or go-between—like Woollarawarre Bennelong—who learns both languages and customs to negotiate between two cultures."
+        },
+        {
+          "term": "Economic Guerrilla Warfare",
+          "def": "Pemulwuy’s deliberate tactic of burning colonial maize/wheat crops and seizing sheep rather than fighting pitched battles against muskets."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "How did the devastating April 1789 smallpox epidemic weaken the Eora clans just fifteen months after the First Fleet arrived?",
+          "answer": "Having zero prior immunity to smallpox, roughly half the Indigenous population around Sydney Harbour died, shattering clan elders, families, and songlines."
+        },
+        {
+          "question": "Compare the two strategies chosen by Woollarawarre Bennelong and Pemulwuy: were they both trying to protect Eora survival in different ways?",
+          "answer": "Yes—Bennelong used diplomacy, language, and personal kinship ties with Governor Phillip, whereas Pemulwuy saw expanding farms destroying food sources and fought twelve years of guerrilla resistance (1790–1802)."
+        },
+        {
+          "question": "Why did Pemulwuy target colonial cornfields and livestock along the Parramatta and Hawkesbury rivers?",
+          "answer": "Settlers’ fences and sheep were destroying Aboriginal yam beds and kangaroo hunting grounds; burning crops struck directly at the colony’s ability to expand onto Bidjigal land."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Which famous harbour headland in Sydney (where the Sydney Opera House stands today!) takes its name from Bennelong’s brick hut?<br><br><strong>Pair:</strong> Why did Pemulwuy’s survival after being shot in 1797 make him a legend across the Sydney frontier?<br><br><strong>Share:</strong> What happened to Pemulwuy in 1802 under Governor King’s outlawry proclamation?",
+      "questions": [
+        "Roughly what proportion of the Eora clans around Sydney died in the April 1789 smallpox outbreak?",
+        "In what year did Woollarawarre Bennelong sail to England with Governor Arthur Phillip?",
+        "What specific targets did Bidjigal leader Pemulwuy attack around Parramatta and the rivers?"
+      ],
+      "audio_file": "/audio/reading/australia/r2.mp3",
+      "studio_audio": "/audio/reading/australia/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Abridged from First Fleet Judge-Advocate David Collins’s 1798 chronicle of Sydney Cove, smallpox, Bennelong, and Pemulwuy."
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "book_title": "The Other Side of the Frontier: Pastoral Invasion, the Black War & Myall Creek",
+      "author": "Henry Reynolds (\"The Other Side of the Frontier\", 1981 • Australian Historiography)",
+      "cover_image": "/images/truganini_portrait_1835.jpg",
+      "cover_caption": "Charles Woolley, Photographic portrait of Nuennonne woman Truganini (1866), survivor of Tasmania’s Black War and forced exile at Wybalenna; note the colonial album’s false \"Last of...\" label.",
+      "author_context": "For much of the twentieth century, older Australian schoolbooks barely mentioned frontier violence, calling settlement \"peaceful pioneering\" in what anthropologist W. E. H. Stanner termed the \"Great Australian Silence.\" In his landmark 1981 study The Other Side of the Frontier, historian Henry Reynolds combed colonial police archives, settlers’ diaries, and court records to prove that Aboriginal peoples fought determined, organised campaigns across Australia—most intensely during Tasmania’s Black War (1824–1831).",
+      "source_type": "historical_scholarship",
+      "source_type_label": "Landmark Frontier Historiography (1981)",
+      "is_primary": false,
+      "is_adapted": true,
+      "extract": "For generations, traditional imperial histories portrayed the spread of British sheep stations across New South Wales and Van Diemen’s Land (Tasmania) as an almost bloodless march into empty bush. Working systematically through nineteenth-century colonial archives in The Other Side of the Frontier (1981), historian Henry Reynolds overturned that myth, estimating that at least twenty thousand Aboriginal men, women, and children—alongside over two thousand colonists—died in frontier conflict.\n\nThe root engine of violence was Britain’s industrial hunger for fine Merino wool to feed Yorkshire textile mills. Across the 1820s and 1830s, wealthy \"squatters\" drove millions of sheep onto ancestral hunting grounds and fenced off scarce waterholes. In Van Diemen’s Land during the \"Black War\" (1824–1831), Palawa clans mounted such effective hit-and-run raids on isolated stock huts that Lieutenant-Governor George Arthur declared martial law in November 1828 and mobilised 2,200 soldiers, convicts, and settlers in the October 1830 \"Black Line\" human chain.\n\nAlthough the Black Line slipped through the bush capturing only two people, deception succeeded where soldiers failed: George Augustus Robinson persuaded the surviving Palawa—including Nuennonne diplomat Truganini—to relocate temporarily to Wybalenna on Flinders Island, where respiratory disease killed most exiles. On the mainland at Myall Creek in June 1838, stockmen murdered at least twenty-eight unarmed Wirrayaraay elders, women, and children—marking the rare colonial trial where seven white perpetrators were actually hanged.",
+      "vocabVault": [
+        {
+          "term": "Squatters",
+          "def": "Colonial pastoralists who occupied vast tracts of Aboriginal Country beyond official borders to graze huge flocks of Merino sheep."
+        },
+        {
+          "term": "Martial Law (1828)",
+          "def": "Governor George Arthur’s suspension of ordinary law in Tasmania, allowing soldiers to shoot Aboriginal people on sight inside settled districts."
+        },
+        {
+          "term": "The Black Line (1830)",
+          "def": "A 2,200-man armed human chain stretched across Van Diemen’s Land for seven weeks attempting to sweep Palawa people onto the Tasman Peninsula."
+        },
+        {
+          "term": "Wybalenna",
+          "def": "The windswept Flinders Island exile settlement where surviving Tasmanian Aboriginal families were confined under George Augustus Robinson."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "How did Britain’s Industrial Revolution thousands of miles away in Yorkshire directly fuel frontier violence in Australia during the 1820s and 1830s?",
+          "answer": "British woollen mills demanded huge quantities of fine Merino wool, encouraging colonial squatters to seize millions of acres of Aboriginal Country and waterholes for sheep."
+        },
+        {
+          "question": "Look closely at the handwritten white caption on the 1866 colonial album page around Truganini’s portrait (\"The Last of the Tasmanian Blacks\"): why do modern historians and Palawa communities reject that label?",
+          "answer": "Colonial officials falsely declared Tasmanian Aboriginal people \"extinct\" after Truganini died in 1876 to erase ongoing land rights, ignoring surviving Palawa families from Bass Strait who carry their culture forward today."
+        },
+        {
+          "question": "Why was the December 1838 Myall Creek trial unique in Australian colonial history?",
+          "answer": "Out of hundreds of frontier massacres, it was virtually the only occasion where British colonial courts convicted and hanged white settlers (seven stockmen) for murdering Aboriginal people."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why did the 2,200-man \"Black Line\" of October 1830 fail militarily?<br><br><strong>Pair:</strong> How did George Augustus Robinson succeed in removing Palawa survivors to Flinders Island when soldiers could not?<br><br><strong>Share:</strong> What did W. E. H. Stanner mean by the \"Great Australian Silence,\" and how did Henry Reynolds help break it?",
+      "questions": [
+        "Which raw material demanded by British factories drove squatters deep into Aboriginal Country?",
+        "How many armed men took part in Governor Arthur’s October 1830 \"Black Line\" across Tasmania?",
+        "What happened at Myall Creek in June 1838, and what made the court outcome afterward unusual?"
+      ],
+      "audio_file": "/audio/reading/australia/r3.mp3",
+      "studio_audio": "/audio/reading/australia/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · Scholarship",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Classroom summary of Australian historian Henry Reynolds’s landmark 1981 research on frontier resistance—written for KS3 pupils."
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "book_title": "The Eureka Stockade: The Bakery Hill Oath & Fight for Democracy (1854–1855)",
+      "author": "Raffaello Carboni (\"The Eureka Stockade\", Melbourne, 1855 • State Library Victoria)",
+      "cover_image": "/images/aus_gold_rush.jpg",
+      "cover_caption": "Edwin Stocqueler, Australian Gold Diggings (c. 1855), oil painting showing tents, cradling troughs, and prospectors panning along scarred Victorian creek beds.",
+      "author_context": "The 1851 discovery of gold in New South Wales and Victoria tripled Australia’s settler population within ten years, drawing prospectors from Britain, Ireland, Europe, America, and China. Resenting expensive monthly Gold Licences enforced by armed police \"licence hunts\" while miners had zero right to vote, Italian-born digger and translator Raffaello Carboni stood beside Irish engineer Peter Lalor beneath the Southern Cross flag at Ballarat in November–December 1854.",
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness Goldfields Memoir (1855)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "\"Regardless of whether a digger struck a rich pocket of gold in the wet clay or worked a barren hole for weeks without finding a speck, the Goldfields Commissioners sent mounted troopers with drawn swords twice a week crying 'Traps! Show your licences!' Any man caught without his thirty-shilling monthly paper was chained to a gum tree at the government camp—taxation enforced at the point of a bayonet upon men denied a single vote in the Colonial Legislature!\n\nOn Wednesday, the twenty-ninth of November 1854, twelve thousand diggers of twenty nations gathered on Bakery Hill as the blue-and-white flag of the Southern Cross unfurled above us, and we burned the hated licences in bonfires. The next afternoon, Peter Lalor knelt bareheaded beneath that flag, raised his right hand toward heaven, and led five hundred diggers inside the timber slab Eureka Stockade in this solemn oath:\n\n'We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties!'\n\nAt dawn on Sunday, the third of December, nearly three hundred British soldiers and police stormed our rough timber palisade, killing at least twenty-two diggers. Yet when thirteen of us were dragged to Melbourne on charges of High Treason, citizen juries cheered and acquitted every single prisoner—forcing Victoria to abolish the licence and grant white male suffrage and the secret ballot within eighteen months.\"",
+      "vocabVault": [
+        {
+          "term": "Gold Licence",
+          "def": "The hated monthly tax (30 shillings) every Victorian prospector had to pay whether they found gold or not."
+        },
+        {
+          "term": "Eureka Stockade (3 Dec 1854)",
+          "def": "The armed miners’ barricade at Ballarat, Victoria, whose dawn suppression sparked democratic voting reforms for male settlers."
+        },
+        {
+          "term": "Secret (\"Australian\") Ballot",
+          "def": "Pioneered in Victoria and South Australia in 1856, allowing voters to mark printed ballots in private—later adopted by Britain (1872) and the USA."
+        },
+        {
+          "term": "White Australia Policy (1901)",
+          "def": "The exclusionary Immigration Restriction Act passed at Federation in 1901 using a rigged European language \"Dictation Test\" to bar Chinese and non-European migrants while denying Aboriginal citizenship rights."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did Victorian gold miners echo the American Revolution’s cry of \"no taxation without representation\" in 1854?",
+          "answer": "Miners had to pay 30 shillings every month whether they found gold or not, faced armed police raids, and had zero right to vote for the colonial parliament taxing them."
+        },
+        {
+          "question": "Why do historians say the Eureka rebels \"lost the 20-minute battle at dawn, yet won the political war within a year\"?",
+          "answer": "Melbourne juries refused to convict Raffaello Carboni and the 12 other defendants, forcing the government to scrap the Gold Licence (replacing it with a £1 Miner’s Right that included the vote) and introduce the world-first printed Secret Ballot in 1856."
+        },
+        {
+          "question": "Who was shut OUT when the six colonies united as the Commonwealth of Australia in 1901?",
+          "answer": "Despite pioneering male and female settler votes, 1901 Federation imposed the \"White Australia\" Dictation Test against Chinese/Pacific people and excluded Aboriginal Australians from the national census and federal rights for decades."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Quote the one-sentence oath Peter Lalor led beneath the Southern Cross flag at Ballarat.<br><br><strong>Pair:</strong> Compare how white European miners won the vote after Eureka (1854–1856) with how Chinese miners and First Nations Australians were treated between 1855 and 1901.<br><br><strong>Share:</strong> Looking across Enquiries 1 to 5, how did Australia transform from an Indigenous continent into a federated settler nation—and at what human cost?",
+      "questions": [
+        "How much did a monthly Victorian Gold Licence cost, and did you still have to pay if you found no gold?",
+        "Quote the oath sworn beneath the Southern Cross flag on 30 November 1854.",
+        "What happened when Raffaello Carboni and twelve other Eureka prisoners were put on trial for High Treason in Melbourne?"
+      ],
+      "audio_file": "/audio/reading/australia/r4.mp3",
+      "studio_audio": "/audio/reading/australia/r4.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Abridged from Italian eye-witness Raffaello Carboni’s 1855 Melbourne memoir of the Eureka Stockade goldfields rebellion."
+    }
+  ]
 };

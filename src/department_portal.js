@@ -1590,20 +1590,31 @@ async function renderSowEnquiryGuidance(container, unitId, lessonIndex) {
     const dp = tn.delivery_plan;
     const renderPhases = (lObj, label) => {
       if (!lObj || !lObj.phases) return '';
+      const headingText = lObj.title || (lObj.focus ? `${label}: ${lObj.focus}` : label);
       return `
         <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; flex: 1; min-width: 260px;">
           <div style="font-weight: 800; color: #0284c7; font-size: 0.84rem; margin-bottom: 8px;">
-            <i class="fa-regular fa-clock"></i> ${lObj.title || label}
+            <i class="fa-regular fa-clock"></i> ${headingText}
           </div>
           ${(lObj.phases || [])
-            .map(
-              (p) => `
+            .map((p) => {
+              let timeBadge = p.time || '';
+              let phaseLabel = p.label || p.phase || '';
+              const phaseInstr = p.instruction || p.activity || '';
+              if (!timeBadge && phaseLabel) {
+                const tm = phaseLabel.match(/\(([^)]*(?:min|m)[^)]*)\)/i);
+                if (tm) {
+                  timeBadge = tm[1].replace(/\s*mins?\b/i, 'm');
+                  phaseLabel = phaseLabel.replace(/\s*\([^)]*\)\s*/, '').replace(/^Phase\s+\d+:\s*/i, '').trim();
+                }
+              }
+              return `
             <div style="display: flex; gap: 8px; font-size: 0.8rem; margin-bottom: 6px;">
-              <span style="background: #e0f2fe; color: #0369a1; font-weight: 700; padding: 1px 6px; border-radius: 3px; font-family: monospace; white-space: nowrap;">${p.time}</span>
-              <div><strong>${p.label}:</strong> <span style="color: #475569;">${p.instruction}</span></div>
+              ${timeBadge ? `<span style="background: #e0f2fe; color: #0369a1; font-weight: 700; padding: 1px 6px; border-radius: 3px; font-family: monospace; white-space: nowrap; height: fit-content;">${timeBadge}</span>` : ''}
+              <div>${phaseLabel ? `<strong>${phaseLabel}:</strong> ` : ''}<span style="color: #475569;">${phaseInstr}</span></div>
             </div>
-          `,
-            )
+          `;
+            })
             .join('')}
         </div>
       `;

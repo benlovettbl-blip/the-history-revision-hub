@@ -1,0 +1,45 @@
+{
+  "unitId": "first_british_empire",
+  "clips": {
+    "r2": {
+      "hash": "56bf857c3d85e3b6b6f0346f",
+      "bytes": 392780,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 230,
+      "updatedAt": "2026-11-20T16:30:50.372Z"
+    },
+    "r3": {
+      "hash": "ff93908755c10e804e8f3ef6",
+      "bytes": 355052,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 247,
+      "updatedAt": "2026-11-20T16:30:51.168Z"
+    },
+    "r0": {
+      "hash": "f9d5bf6769f480b1186afdd3",
+      "bytes": 343628,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 207,
+      "updatedAt": "2026-11-20T16:30:56.730Z"
+    },
+    "r1": {
+      "hash": "42c41d0831015d2c70cd8843",
+      "bytes": 368588,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 265,
+      "updatedAt": "2026-11-20T16:30:57.563Z"
+    },
+    "r4": {
+      "hash": "31cff5fc475811d01ff89f24",
+      "bytes": 334892,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 219,
+      "updatedAt": "2026-11-20T16:32:42.906Z"
+    }
+  }
+}

@@ -20,10 +20,23 @@ import { mountRedactedDossier } from './arcade/games/redacted_dossier.js';
 import { mountBossSprint } from './arcade/games/boss_sprint.js';
 import { mountArchiveDetective } from './arcade/games/archive_detective.js';
 import { mountFactOrFallacy } from './arcade/games/fact_or_fallacy.js';
-import { mountQuacksAndCures } from './arcade/games/quacks_and_cures.js';
-import { mountBlitzWardenEnigma } from './arcade/games/blitz_warden_enigma.js';
-import { mountWeimarCrisisDesk } from './arcade/games/weimar_crisis_desk.js';
-import { mountCmeCourtyard } from './arcade/games/cme_courtyard/index.js';
+function lazyShowcaseMount(loader) {
+  return (stageEl, pools, ctx) => {
+    let cancelled = false;
+    let innerCleanup = null;
+    if (stageEl) {
+      stageEl.innerHTML = `<div style="padding:36px;text-align:center;color:#94a3b8;font-weight:700;">Loading interactive adventure...</div>`;
+    }
+    loader().then((mountFn) => {
+      if (cancelled || !stageEl?.isConnected) return;
+      innerCleanup = mountFn(stageEl, pools, ctx);
+    });
+    return () => {
+      cancelled = true;
+      if (typeof innerCleanup === 'function') innerCleanup();
+    };
+  };
+}
 
 const VISUAL_SHOWCASES = [
   {
@@ -35,7 +48,9 @@ const VISUAL_SHOWCASES = [
     featuredUnits: ['cme_new'],
     badge: '12-CHAPTER VOICED POINT-AND-CLICK',
     desc: 'Travel across 22 hand-inked Palestinian & Israeli scenes spanning three generations (1914–1995): hover to uncover hidden room clues, combine Satchel items across both perspectives, tune live 3-capital wireless broadcasts, and hear full character voice-overs over Oud & Violin chamber music!',
-    mount: mountCmeCourtyard,
+    mount: lazyShowcaseMount(() =>
+      import('./arcade/games/cme_courtyard/index.js').then((m) => m.mountCmeCourtyard),
+    ),
   },
   {
     id: 'quacks',
@@ -46,7 +61,9 @@ const VISUAL_SHOWCASES = [
     featuredUnits: ['edexcel_medicine', 'water_and_sanitation', 'great_war_part2'],
     badge: 'ILLUSTRATED 5-ERA RPG',
     desc: 'Start in a 1348 apothecary (0/3 saved, 100% Guild Distinction!), survive 1665 plague & Victorian carbolic spray, route Tommies along the 1917 RAMC Chain of Evacuation, and battle MRSA in the NHS!',
-    mount: mountQuacksAndCures,
+    mount: lazyShowcaseMount(() =>
+      import('./arcade/games/quacks_and_cures.js').then((m) => m.mountQuacksAndCures),
+    ),
   },
   {
     id: 'blitz_warden',
@@ -57,7 +74,9 @@ const VISUAL_SHOWCASES = [
     featuredUnits: ['ks2_ww2', 'the_shoah', 'post_war_britain'],
     badge: 'ILLUSTRATED HOME FRONT & CODEBREAKER',
     desc: 'Click glowing windows before bombers spot the street, match families to Anderson & Morrison shelters or Kindertransport trains, and dial 3 brass Enigma rotors at Bletchley Park!',
-    mount: mountBlitzWardenEnigma,
+    mount: lazyShowcaseMount(() =>
+      import('./arcade/games/blitz_warden_enigma.js').then((m) => m.mountBlitzWardenEnigma),
+    ),
   },
   {
     id: 'weimar_desk',
@@ -68,7 +87,9 @@ const VISUAL_SHOWCASES = [
     featuredUnits: ['weimar_nazi_germany'],
     badge: 'ILLUSTRATED MINISTERIAL SIMULATION',
     desc: 'Watch a loaf of bread rocket to 200 billion Marks on your desk ticker, survive the Kapp & Munich Putsches, and resist spamming the red Article 48 stamp!',
-    mount: mountWeimarCrisisDesk,
+    mount: lazyShowcaseMount(() =>
+      import('./arcade/games/weimar_crisis_desk.js').then((m) => m.mountWeimarCrisisDesk),
+    ),
   },
 ];
 
@@ -404,20 +425,7 @@ export function renderArcadeView(options = {}) {
       `
         : '';
 
-    const usaCardsBanner =
-      unitId === 'usa'
-        ? `
-        <div style="margin-top: 18px; background: linear-gradient(135deg, rgba(250, 204, 21, 0.1), rgba(249, 115, 22, 0.1)); border: 1.5px solid rgba(250, 204, 21, 0.4); border-radius: 14px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-          <div>
-            <strong style="color: #fde047; font-size: 0.95rem;"><i class="fa-solid fa-id-card"></i> USA Bonus Collector Deck: Historical Hooligans</strong>
-            <div style="color: #cbd5e1; font-size: 0.82rem;">Explore the 16 3D collector cards &amp; stats deck for USA (1954–75) figures.</div>
-          </div>
-          <a href="/units/usa/trading_cards.html" target="_blank" class="arcade-btn-ghost" style="text-decoration:none; border-color:#facc15; color:#fde047;">
-            Open 3D Collector Cards <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-      `
-        : '';
+    const usaCardsBanner = '';
 
     viewport.innerHTML = `
       ${featuredHeroHtml}

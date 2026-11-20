@@ -1,237 +1,236 @@
 /**
  * ARENA STANDOFFS: Early Elizabethan England 1558–1588 (eee)
- * Edexcel GCSE Paper 2 specification alignment.
+ * Complete 12-lesson Edexcel GCSE Paper 2 specification alignment (KT 1.1–3.4).
  */
 export const EEE_STANDOFFS = {
-  lesson_1: {
-    title: "Queen Elizabeth I vs. Traditionalist Privy Council Sceptics",
+  lesson_1_1: {
+    title: "Queen Elizabeth I & Sir William Cecil vs. Traditionalist Privy Council Sceptics",
     subtitle: "The Crisis of Accession: Gender, Legitimacy & £300,000 Debt (1558)",
     roleA: {
       name: "Queen Elizabeth I & Sir William Cecil",
-      title: "Royal Prerogative & National Renewal",
-      objective: "Defend female rule and royal authority, arguing that with prudent financial discipline, religious caution, and ending the costly war with France, a young queen can restore England's sovereignty.",
-      starter: "&ldquo;Though I be a woman, I have the heart and stomach of a king; our realm will prosper through caution and financial discipline because...&rdquo;",
-      keyTerms: ["Royal Prerogative", "Crown Debt (£300,000)", "Legitimacy & Anne Boleyn", "Peace with France (Cateau-Cambrésis)"]
+      title: "Royal Prerogative, Financial Caution & Peace at Cateau-Cambrésis",
+      objective: "Defend Elizabeth's fitness to rule, arguing that ending the costly French war (Treaty of Cateau-Cambrésis, 1559), trimming Crown spending, and choosing a balanced Privy Council will restore stability.",
+      starter: "&ldquo;By ending the ruinous war with France and governing through a disciplined Privy Council, our Crown can pay down its £300,000 debt and secure the realm because...&rdquo;",
+      keyTerms: ["£300,000 Crown Debt", "Treaty of Cateau-Cambrésis (1559)", "Royal Prerogative", "Sir William Cecil"]
     },
     roleB: {
-      name: "Traditionalist Nobility & Marian Catholic Bishops",
-      title: "The Weakness of a 'Monstrous Regiment of Women'",
-      objective: "Argue that a female monarch is inherently weak, vulnerable to foreign invasion, illegitimate in Catholic eyes, and must immediately marry an eligible prince to secure the succession.",
-      starter: "&ldquo;A divided England surrounded by Catholic superpowers cannot survive under an unmarried, illegitimate queen because...&rdquo;",
-      keyTerms: ["Female Monarchy", "Papal Illegitimacy", "Marriage Succession", "Surrounded by Enemies"]
+      name: "Traditionalist Nobles & Marian Catholic Critics",
+      title: "Doubts Over Female Monarchy, Legitimacy & The Auld Alliance",
+      objective: "Argue that an unmarried female ruler considered illegitimate by Catholic Europe cannot defend England against France and Scotland unless she marries immediately.",
+      starter: "&ldquo;Surrounded by the French-Scottish Auld Alliance and questioned by Catholic Europe over Henry VIII's divorce, an unmarried queen leaves England dangerously exposed because...&rdquo;",
+      keyTerms: ["Legitimacy Crisis", "Female Monarchy", "Auld Alliance", "Mary, Queen of Scots' Claim"]
     }
   },
-  lesson_2: {
+  lesson_1_2: {
     title: "Elizabeth I & William Cecil vs. Marian Catholic Bishops",
     subtitle: "The 'Middle Way': The 1559 Religious Settlement",
     roleA: {
       name: "Queen Elizabeth I & Sir William Cecil",
-      title: "The Middle Way: Act of Supremacy & Uniformity",
-      objective: "Defend the 1559 Settlement as a moderate, pragmatic compromise that establishes a Protestant Church while avoiding windows into men's souls to prevent civil war.",
-      starter: "&ldquo;Our Middle Way preserves domestic peace and royal supremacy without tyrannical persecution of conscience because...&rdquo;",
-      keyTerms: ["Act of Supremacy (1559)", "Act of Uniformity", "Supreme Governor", "Book of Common Prayer"]
+      title: "The Middle Way: Acts of Supremacy & Uniformity (1559)",
+      objective: "Defend the 1559 Settlement as a moderate compromise establishing a Protestant Church under a 'Supreme Governor' while keeping traditional vestments and modest fines to avoid civil war.",
+      starter: "&ldquo;Our Middle Way secures royal authority and English prayer books while avoiding religious bloodshed through moderate enforcement because...&rdquo;",
+      keyTerms: ["Act of Supremacy (1559)", "Act of Uniformity (1559)", "Supreme Governor", "Royal Injunctions & Visitations"]
     },
     roleB: {
       name: "Marian Catholic Bishops & House of Lords Conservatives",
-      title: "Defense of the One True Catholic Faith & Papal Rome",
-      objective: "Argue that severing England from the Roman Catholic Church is a heretical betrayal of the universal Church and that Catholic bishops will never accept a laywoman as head of religion.",
-      starter: "&ldquo;No secular crown has the divine authority to overturn fifteen centuries of Catholic truth and papal leadership because...&rdquo;",
-      keyTerms: ["Papal Authority", "Heretical Settlement", "Catholic Bishops' Resistance", "Sacraments Defended"]
+      title: "Defending Papal Authority & Traditional Catholic Worship",
+      objective: "Argue in the House of Lords against severing England from Rome, refusing to take the Oath of Supremacy or abandon the Latin Mass and seven sacraments.",
+      starter: "&ldquo;No secular parliament can replace the Pope as shepherd of the Church or abolish the Latin Mass of our ancestors because...&rdquo;",
+      keyTerms: ["Papal Supremacy", "House of Lords Opposition", "Latin Mass & Transubstantiation", "Refusing the Oath"]
     }
   },
-  lesson_3: {
+  lesson_1_3: {
     title: "Archbishop Matthew Parker vs. Puritan Zealous Clergy",
-    subtitle: "The Vestments Controversy & Puritan Reform (1560s)",
+    subtitle: "Challenges to the Religious Settlement: Crucifixes, Vestments & Recusancy (1559–1568)",
     roleA: {
-      name: "Archbishop Matthew Parker & Royal Enforcers",
-      title: "The Book of Advertisements & Royal Uniformity",
-      objective: "Argue that national order, clerical decency, and loyalty to the Queen demand that all ministers wear the prescribed surplice and vestments.",
-      starter: "&ldquo;Uniformity and obedience in church ritual are essential to preserve civil peace and prevent sectarian chaos because...&rdquo;",
-      keyTerms: ["Book of Advertisements (1566)", "Surplice & Vestments", "Royal Authority", "Clerical Conformity"]
+      name: "Archbishop Matthew Parker & Crown Commissioners",
+      title: "The Book of Advertisements (1566) & Clerical Uniformity",
+      objective: "Insist that parish peace and obedience to the Supreme Governor require every minister to wear the white surplice and follow the Book of Common Prayer.",
+      starter: "&ldquo;Uniformity in worship and obedience to the 1566 Book of Advertisements are vital to prevent sectarian disorder across English parishes because...&rdquo;",
+      keyTerms: ["Book of Advertisements (1566)", "Vestments Controversy", "37 London Clergy Dismissed", "Outward Conformity"]
     },
     roleB: {
-      name: "Puritan Clergy & Thomas Cartwright",
-      title: "Purifying the Church of 'Popish Rags'",
-      objective: "Argue that clerical vestments and kneeling at communion are idolatrous 'popish rags' unsupported by Scripture that must be cleansed from the Protestant church.",
-      starter: "&ldquo;God's Holy Word alone must govern worship; forcing ministers to wear idolatrous popish garments is a betrayal of the Gospel because...&rdquo;",
-      keyTerms: ["Popish Rags", "Sola Scriptura", "Idolatrous Rituals", "Presbyterian Challenge"]
+      name: "Puritan Ministers & Returned Marian Exiles",
+      title: "Purifying the Church of 'Popish' Crucifixes & Vestments",
+      objective: "Argue that ornate priestly vestments, crucifixes, and kneeling at communion are unbiblical Catholic remnants that must be removed to create a pure Calvinist church.",
+      starter: "&ldquo;Scripture alone should govern Christian worship; forcing Protestant ministers to wear Catholic-style vestments betrays the Reformation because...&rdquo;",
+      keyTerms: ["Crucifix Controversy", "'Popish' Vestments", "Geneva Calvinism", "Plain Preaching"]
     }
   },
-  lesson_4: {
-    title: "Sir Francis Walsingham vs. English Catholic Recusants",
-    subtitle: "The Papal Bull (1570) & Treason Legislation",
-    roleA: {
-      name: "Sir Francis Walsingham & Crown Prosecutors",
-      title: "National Defense Against Papal Subversion",
-      objective: "Argue that after Pope Pius V's Bull excommunicating Elizabeth, every Catholic is a potential traitor and harbouring Jesuit priests is an act of high treason.",
-      starter: "&ldquo;The Papal Bull released subjects from obedience, meaning Roman Catholicism is no longer mere faith but an existential conspiracy of treason because...&rdquo;",
-      keyTerms: ["Regnans in Excelsis (1570)", "Recusancy Fines (£20/month)", "Jesuit Priests", "High Treason"]
-    },
-    roleB: {
-      name: "Catholic Recusants & Douai Missionary Priests",
-      title: "Loyalty to the Realm & Devotion to Catholic Conscience",
-      objective: "Argue that English Catholics are loyal subjects who seek only to practice their ancestral sacraments in peace, and that state persecutions are tyrannical religious oppression.",
-      starter: "&ldquo;We bear true allegiance to the Queen's secular crown, but our eternal souls belong to God; persecuting private Mass is tyranny because...&rdquo;",
-      keyTerms: ["Conscience & Sacraments", "Seminary Priests", "Martyrdom", "Recusant Loyalty"]
-    }
-  },
-  lesson_5: {
+  lesson_1_4: {
     title: "Sir William Cecil (Privy Council) vs. Mary, Queen of Scots",
-    subtitle: "The Arrival of Mary Stuart in England (1568)",
+    subtitle: "The Arrival of Mary Stuart in England & The Casket Letters Inquiry (1568–1569)",
     roleA: {
       name: "Sir William Cecil & Protestant Councillors",
-      title: "An Existential Threat: The Catholic Figurehead",
-      objective: "Argue that Mary Stuart is a deposed murderer of Lord Darnley, an anointed Catholic rival who claims the English throne, and must be held under armed guard indefinitely.",
-      starter: "&ldquo;Mary Stuart has the blood of Darnley on her hands and bears the royal arms of England; allowing her liberty invites our immediate overthrow because...&rdquo;",
-      keyTerms: ["Murder of Darnley", "Casket Letters", "Catholic Figurehead", "Dangerous Liberty"]
+      title: "Containing a Rival Catholic Claimant Under Guard",
+      objective: "Argue that Mary Stuart—implicated by the Casket Letters in Lord Darnley's murder and claiming the English crown—cannot be freed or restored without endangering Elizabeth.",
+      starter: "&ldquo;Restoring or releasing Mary Stuart while she claims the English throne and courts English nobles like Norfolk would invite Catholic rebellion because...&rdquo;",
+      keyTerms: ["Murder of Lord Darnley", "Casket Letters Inquiry (1568)", "Catholic Heir Claim", "Norfolk Marriage Scheme"]
     },
     roleB: {
-      name: "Mary, Queen of Scots & Scottish Allies",
-      title: "Anointed Queen Demanding Sanctuary & Justice",
-      objective: "Argue that as an anointed, sovereign queen fleeing rebellious Scottish subjects, she is entitled to royal hospitality and military aid from her cousin Elizabeth.",
-      starter: "&ldquo;I am an anointed queen of Scotland who came to England seeking sisterly protection; imprisoning an innocent monarch violates the law of nations because...&rdquo;",
-      keyTerms: ["Anointed Monarch", "Seeking Sisterly Sanctuary", "Claim to Succession", "Unjust Captivity"]
+      name: "Mary, Queen of Scots & Her Envoys",
+      title: "Anointed Sovereign Demanding Royal Aid or Freedom",
+      objective: "Reject the Casket Letters as Scottish Protestant forgeries and argue that Elizabeth has no legal right to imprison an anointed fellow monarch who sought sanctuary in England.",
+      starter: "&ldquo;As an anointed Queen of Scotland who crossed the Solway Firth seeking my cousin's promised aid, holding me prisoner without cause violates royal honour because...&rdquo;",
+      keyTerms: ["Anointed Monarch", "Forged Casket Letters", "Flight to England (May 1568)", "Unlawful Captivity"]
     }
   },
-  lesson_6: {
-    title: "The Earl of Sussex (Royal Army) vs. The Northern Earls",
-    subtitle: "The Revolt of the Northern Earls (1569)",
+  lesson_2_1: {
+    title: "Sir Francis Walsingham & Lord Burghley vs. Catholic Conspirators & Northern Rebels",
+    subtitle: "Plots and Revolts at Home: Northern Earls, Ridolfi, Throckmorton & Babington (1569–1587)",
     roleA: {
-      name: "The Earl of Sussex & Queen's Royal Troops",
-      title: "Crushing Feudal Treason & Defending the Crown",
-      objective: "Argue that the Earls of Northumberland and Westmorland staged a treasonous feudal rebellion, justifying the public execution of 450 rebel peasants as a severe lesson.",
-      starter: "&ldquo;Raising armed banners against the anointed Queen and celebrating illegal Catholic Mass in Durham Cathedral is high treason that must be crushed by...&rdquo;",
-      keyTerms: ["Durham Cathedral Mass", "450 Executed", "Crushing Feudal Treason", "Royal Supremacy"]
+      name: "Sir Francis Walsingham & The Privy Council",
+      title: "Spy Networks, Harsh Recusancy Laws & Executing Mary Stuart",
+      objective: "Argue that after the 1569 Northern Revolt, the 1570 Papal Bull, and deciphered regicide plots (Ridolfi, Throckmorton, Babington), £20 fines and executing Mary in 1587 were essential to save Elizabeth's life.",
+      starter: "&ldquo;Once the 1570 Papal Bull endorsed treason and Babington's deciphered letters proved Mary approved Elizabeth's murder, executing Mary at Fotheringhay was unavoidable because...&rdquo;",
+      keyTerms: ["Revolt of the Northern Earls (1569)", "1570 Papal Bull", "Ridolfi, Throckmorton & Babington Plots", "Walsingham's Spy Network"]
     },
     roleB: {
-      name: "The Earls of Northumberland & Westmorland",
-      title: "Restoration of the Ancient Catholic Faith & Northern Rights",
-      objective: "Argue that low-born upstarts like Cecil hijacked royal government, stripped northern nobles of their ancestral power, and suppressed the ancient Catholic religion.",
-      starter: "&ldquo;We took up arms to save the Queen from her corrupt upstart advisers and restore the true Catholic faith of our fathers because...&rdquo;",
-      keyTerms: ["Northern Independence", "Restoration of the Mass", "Anti-Cecil Grievance", "Ancestral Nobility"]
+      name: "English Catholic Recusants & Northern Nobles",
+      title: "Defending Ancestral Faith Against £20 Fines & Treason Acts",
+      objective: "Argue that harsh £20 monthly recusancy fines (1581), the 1585 Act against Priests, and Walsingham's entrapment turned devout English Catholics into hunted outlaws.",
+      starter: "&ldquo;Bankrupting gentry families with £20 recusancy fines and executing priests for saying Mass punished loyal subjects for their faith because...&rdquo;",
+      keyTerms: ["£20 Recusancy Fines (1581)", "1585 Act Against Jesuits", "Durham Cathedral Mass", "Mary's Execution (1587)"]
     }
   },
-  lesson_7: {
-    title: "Sir Francis Walsingham vs. The Conspirators (Ridolfi & Throckmorton)",
-    subtitle: "The Catholic Plots to Assassinate Elizabeth (1571–1583)",
+  lesson_2_2: {
+    title: "Sir Francis Drake & English Privateers vs. King Philip II & Spanish Envoys",
+    subtitle: "Relations with Spain: Commercial Rivalry, New World Plunder & The Netherlands (1569–1585)",
     roleA: {
-      name: "Sir Francis Walsingham & English Intelligence",
-      title: "Uncovering Foreign Invasions & Regicide",
-      objective: "Argue that foreign powers (Spain, the Papacy, Duke of Guise) orchestrated assassination plots to murder Elizabeth and put Mary on the throne with Spanish troops.",
-      starter: "&ldquo;The intercepted ciphers prove that foreign princes and Catholic traitors seek the assassination of our Queen and a Spanish invasion because...&rdquo;",
-      keyTerms: ["Ridolfi Plot (1571)", "Throckmorton Plot (1583)", "Duke of Guise Invasion", "Ciphers Intercepted"]
+      name: "Sir Francis Drake & English Merchant Adventurers",
+      title: "Challenging Spain's Monopoly & Defending Dutch Protestants",
+      objective: "Defend seizing the 1568 Genoese loan, raiding Spanish silver ships like the Cacafuego (£140,000), and backing the Pacification of Ghent to stop Spanish armies dominating Channel ports.",
+      starter: "&ldquo;Spain blocks peaceful English trade in the Americas and stations Alba's and Parma's armies opposite Kent; raiding Spanish silver weakens a dangerous rival because...&rdquo;",
+      keyTerms: ["Genoese Loan (1568)", "Capture of the Cacafuego (1579)", "Pacification of Ghent (1576)", "Knighting on the Golden Hind"]
     },
     roleB: {
-      name: "Roberto Ridolfi & Francis Throckmorton (Catholic Plotteurs)",
-      title: "Liberating England from a Heretic Usurper",
-      objective: "Argue that removing Elizabeth is an act of holy liberation authorized by the Pope to free Mary Stuart and rescue England from heretical Protestant tyranny.",
-      starter: "&ldquo;God and the Holy Father endorse the liberation of England and the crowning of its rightful Catholic heir because...&rdquo;",
-      keyTerms: ["Holy Crusade", "Liberating Mary Stuart", "Spanish Intervention", "Rightful Catholic Heir"]
+      name: "King Philip II of Spain & Ambassador Mendoza",
+      title: "Condemning State-Backed Piracy & Interference in the Netherlands",
+      objective: "Argue that Elizabeth secretly financed piracy against lawful Spanish treasure fleets in peacetime while funding Protestant rebels against Philip II's rightful rule in the Spanish Netherlands.",
+      starter: "&ldquo;Knighting Francis Drake after he looted £140,000 of Spanish royal silver and bankrolling rebels in our Dutch provinces constitute undeclared war because...&rdquo;",
+      keyTerms: ["Spanish Main Monopoly", "Spanish Fury (1576)", "Treaty of Joinville (1584)", "State-Sanctioned Privateering"]
     }
   },
-  lesson_8: {
-    title: "Sir William Cecil (Lord Burghley) vs. Queen Elizabeth I",
-    subtitle: "The Babington Plot & The Execution of Mary Stuart (1586–1587)",
+  lesson_2_3: {
+    title: "Robert Dudley & Sir Francis Drake vs. King Philip II & The Duke of Parma",
+    subtitle: "The Outbreak of War with Spain: Nonsuch, Flushing & The Raid on Cadiz (1585–1588)",
     roleA: {
-      name: "Sir William Cecil & The Bond of Association",
-      title: "The Inescapable Execution of a Conspiring Traitor",
-      objective: "Argue that the Babington letters personally signed by Mary agreeing to assassinate Elizabeth prove she is an incurable danger; Parliament insists she must die to save the realm.",
-      starter: "&ldquo;While Mary Stuart lives, our Queen's life is in hourly peril; her signed complicity in the Babington plot demands her execution because...&rdquo;",
-      keyTerms: ["Babington Plot (1586)", "Signed Ciphers", "Bond of Association", "Fotheringhay Execution"]
+      name: "Sir Francis Drake & English War Planners",
+      title: "Treaty of Nonsuch (1585) & Pre-emptive Strike at Cadiz (1587)",
+      objective: "Argue that holding Dutch cautionary ports like Flushing under the Treaty of Nonsuch and burning 30 ships plus seasoned barrel staves at Cadiz disrupted Parma and delayed the Armada by a crucial year.",
+      starter: "&ldquo;Holding deep-water Flushing denied Parma an embarkation port, while burning ships and oak barrel staves at Cadiz 'singed the King of Spain's beard' because...&rdquo;",
+      keyTerms: ["Treaty of Nonsuch (1585)", "Cautionary Port of Flushing", "Raid on Cadiz (April 1587)", "Burning Seasoned Barrel Staves"]
     },
     roleB: {
-      name: "Queen Elizabeth I (The Reluctant Monarch)",
-      title: "The Horrifying Precedent of Executing an Anointed Sovereign",
-      objective: "Argue that executing an anointed sister queen establishes a terrifying precedent that monarchs can be put on trial, outrages European princes, and invites immediate Spanish war.",
-      starter: "&ldquo;Spilling royal blood and executing an anointed monarch sets a monstrous precedent for kings everywhere and invites foreign vengeance because...&rdquo;",
-      keyTerms: ["Anointed Blood", "Dangerous Precedent", "Regicide Scruples", "Inviting Spanish Vengeance"]
+      name: "King Philip II & Alexander Farnese, Duke of Parma",
+      title: "The Enterprise of England: Uniting Fleet & Army of Flanders",
+      objective: "Argue that Leicester's underfunded Dutch campaign—crippled by defections at Deventer and Zutphen—failed to defeat Parma's 27,000 veterans, justifying the launch of the 130-ship Armada.",
+      starter: "&ldquo;Dudley's divided command and betrayals at Deventer proved England could not defeat our Army of Flanders on land, so launching the 130-ship Armada to escort Parma across the Channel...&rdquo;",
+      keyTerms: ["Earl of Leicester's Campaign", "Defections at Deventer & Zutphen", "27,000 Army of Flanders", "Duke of Medina Sidonia"]
     }
   },
-  lesson_9: {
-    title: "Sir Francis Drake vs. King Philip II of Spain",
-    subtitle: "Privateering, The Spanish Main & The Dutch Revolt (1570–1585)",
-    roleA: {
-      name: "Sir Francis Drake & English Sea Dogs",
-      title: "Disrupting the Spanish Empire & Circumnavigation",
-      objective: "Defend raiding Spanish treasure ships (Cacafuego) and aiding Dutch Protestant rebels as lawful resistance to Spanish tyranny and vital to English national wealth.",
-      starter: "&ldquo;The Spanish Crown claims a monopoly on the New World that God never gave them; our raids on the treasure fleet strike a blow for freedom because...&rdquo;",
-      keyTerms: ["Cacafuego (£140,000)", "Circumnavigation (1577–80)", "Singeing the King's Beard", "Sea Dogs"]
-    },
-    roleB: {
-      name: "King Philip II of Spain & His Catholic Majesty's Empire",
-      title: "State Piracy & Violation of International Peace",
-      objective: "Argue that Elizabeth secretly sponsors lawless English pirates who rob Spanish silver in peacetime, and that her military aid to Dutch heretic rebels is an open act of war.",
-      starter: "&ldquo;You knighted a common pirate who plundered our peaceful shipping and you funded heretic rebels in the Netherlands; this insolence demands war because...&rdquo;",
-      keyTerms: ["State Piracy", "Treaty of Nonsuch (1585)", "Dutch Heresy", "Outrage of the Spanish Crown"]
-    }
-  },
-  lesson_10: {
+  lesson_2_4: {
     title: "Lord Howard of Effingham & Sir Francis Drake vs. The Duke of Medina Sidonia",
-    subtitle: "The Spanish Armada & The Battle of Gravelines (1588)",
+    subtitle: "The Defeat of the Spanish Armada: Calais Fireships, Gravelines & Atlantic Gales (1588)",
     roleA: {
       name: "Lord Howard of Effingham & Sir Francis Drake",
-      title: "Fireships, Culvern Guns & Protestant Winds",
-      objective: "Argue that superior English naval design (fast race-built galleons), long-range culverin cannons, fireships at Calais, and God’s winds destroyed the Spanish invasion.",
-      starter: "&ldquo;Our fast galleons and long-range cannon outfought the lumbering Spanish fleet, and our fireships shattered their Crescent formation because...&rdquo;",
-      keyTerms: ["Fireships at Calais", "Battle of Gravelines", "Long-Range Culverins", "Protestant Wind"]
+      title: "Race-Built Galleons, Calais Fireships & Broadside Gunnery",
+      objective: "Argue that nimble race-built English galleons, midnight fireships at Calais breaking Spain's crescent formation, and rapid long-range culverin broadsides at Gravelines defeated the Armada before storms struck.",
+      starter: "&ldquo;Our midnight fireships at Calais shattered Spain's crescent formation, allowing our fast race-built galleons to pound their hulls at Gravelines because...&rdquo;",
+      keyTerms: ["Race-Built Galleons", "Calais Fireships (7 August)", "Battle of Gravelines (8 August)", "Long-Range Culverins"]
     },
     roleB: {
-      name: "The Duke of Medina Sidonia & Spanish Armada Command",
-      title: "The Enterprise of England: Catholic Holy Crusade",
-      objective: "Argue that the Armada was a holy enterprise to unite with the Duke of Parma's veteran army, depose the heretic queen, and restore Catholicism to England.",
-      starter: "&ldquo;We sailed under the banner of Christ and our Catholic faith; our defeat was not caused by English valor but by treacherous storms and Parma's delay because...&rdquo;",
-      keyTerms: ["Enterprise of England", "Duke of Parma Army", "Crescent Formation", "Treacherous Storms"]
+      name: "The Duke of Medina Sidonia & Spanish Naval Historians",
+      title: "Flawed Rendezvous Orders, Spoiled Stores & Atlantic Storms",
+      objective: "Argue that the Armada kept disciplined crescent order up the Channel, and was undone primarily by Philip II's impossible Dunkirk rendezvous plan (no deep-water port), Dutch flyboats, and ferocious Atlantic gales.",
+      starter: "&ldquo;English ships sank scarcely any galleons in the Channel; our campaign failed because Parma lacked a deep-water port and fierce gales drove our anchorless ships onto Irish rocks because...&rdquo;",
+      keyTerms: ["Crescent Formation", "No Deep-Water Flemish Port", "Dutch Flyboats", "The 'Protestant Wind'"]
     }
   },
-  lesson_11: {
-    title: "Elizabethan Playwrights (Shakespeare & Marlowe) vs. Puritan City Aldermen",
-    subtitle: "The Rise of Elizabethan Theatre & Commercial Culture",
+  lesson_3_1: {
+    title: "Humanist Educators & Elizabethan Playwrights vs. Puritan Moralists & Traditionalists",
+    subtitle: "Education and Leisure in Elizabethan England: Grammar Schools, Theatre & Social Rank (1558–1588)",
     roleA: {
-      name: "William Shakespeare, Richard Burbage & The Lord Chamberlain's Men",
-      title: "The Glorious Flourishing of Public Drama & Popular Delight",
-      objective: "Defend public playhouses (The Globe, The Rose) as vibrant artistic spaces that unite nobility and groundlings in magnificent celebration of English history and human nature.",
-      starter: "&ldquo;The theatre mirrors the majesty of human nature, brings joy to thousands of honest citizens, and honors our English history because...&rdquo;",
-      keyTerms: ["The Globe Playhouse", "Groundlings", "Royal Patronage", "Cultural Flourishing"]
+      name: "Grammar School Founders & Theatre Companies",
+      title: "Expanding Male Literacy & Shared Playhouse Culture",
+      objective: "Argue that founding 72 grammar schools raised male literacy to ~30%, while permanent playhouses like The Theatre and The Rose united nobles and penny groundlings in vibrant secular drama.",
+      starter: "&ldquo;Founding grammar schools and purpose-built London playhouses broadened male literacy and brought dramatic storytelling to nobles and penny groundlings alike because...&rdquo;",
+      keyTerms: ["72 Grammar Schools", "30% Male Literacy", "Penny Groundlings", "The Theatre & The Rose"]
     },
     roleB: {
-      name: "Puritan London Aldermen & Preachers",
-      title: "Dens of Sin, Sabbath Desecration & Spread of Plague",
-      objective: "Argue that public theatres attract pickpockets, promote sexual immorality, desecrate the Christian Sabbath, and spread the deadly bubonic plague through crowded filth.",
-      starter: "&ldquo;The playhouses are sinks of wickedness that lure servants from honest labor, breed sexual sin, and provoke God's wrath in sending the plague because...&rdquo;",
-      keyTerms: ["Dens of Iniquity", "Sabbath Desecration", "Spreading the Plague", "Puritan Moral Outrage"]
+      name: "Social Historians & Puritan London Aldermen",
+      title: "Rigid Class Barriers in Schooling & Moral Fears Over Playhouses",
+      objective: "Argue that schooling remained closed to poor labouring children and 90% of women, leisure stayed rigidly stratified by class, and London authorities feared theatres spread crime, idleness, and plague.",
+      starter: "&ldquo;Despite new grammar schools and theatres, 90% of women and most farm labourers remained illiterate while authorities condemned crowded playhouses for spreading plague and disorder because...&rdquo;",
+      keyTerms: ["10% Female Literacy", "Class-Divided Pastimes", "Plague & Pickpockets", "Puritan Opposition to Theatre"]
     }
   },
-  lesson_12: {
-    title: "Sir Walter Raleigh & English Colonists vs. Native Chief Wingina",
-    subtitle: "Raleigh's Roanoke Colony & The Myth of Virginia (1584–1590)",
+  lesson_3_2: {
+    title: "Compassionate Poor-Law Reformers vs. Harsh Anti-Vagrancy Magistrates",
+    subtitle: "The Problem of the Poor: Enclosure, Inflation & Elizabethan Poor Relief Acts (1558–1588)",
     roleA: {
-      name: "Sir Walter Raleigh & Governor Ralph Lane",
-      title: "Imperial Colonisation & The Protestant Empire in America",
-      objective: "Argue that establishing Virginia is essential to challenge the Spanish silver monopoly, expand English trade, and bring English civilization to the New World.",
-      starter: "&ldquo;Planting an English colony in Virginia creates a strategic base against the Spanish empire and brings trade wealth to our realm because...&rdquo;",
-      keyTerms: ["Roanoke Colony", "Virginia Named for Queen", "Challenging Spanish Monopoly", "New World Trade"]
+      name: "Progressive Town Councils (Norwich & York) & Parliament (1576 Act)",
+      title: "Supporting the 'Deserving' & Unemployed Poor Through Poor Rates",
+      objective: "Argue that population growth (to 4.1m), sheep enclosure, rack-renting, and cloth-trade slumps caused genuine unemployment—justifying the 1572 compulsory Poor Rate and 1576 Poor Relief Act providing raw wool for work.",
+      starter: "&ldquo;Thousands of families are destitute not through laziness, but because sheep enclosure, bad harvests, and the Antwerp embargo destroyed jobs—making the 1572 Poor Rate and 1576 work schemes essential because...&rdquo;",
+      keyTerms: ["Sheep Enclosure", "1572 Compulsory Poor Rate", "1576 Poor Relief Act", "Impotent / Deserving Poor"]
     },
     roleB: {
-      name: "Chief Wingina & Native Algonquian Nations",
-      title: "Defense of Ancestral Lands Against Exploitative Intruders",
-      objective: "Argue that English colonists were arrogant, dependent on stolen native corn, and brought deadly foreign sicknesses that decimated indigenous populations.",
-      starter: "&ldquo;You arrived on our shores helpless and unable to feed yourselves; you repaid our hospitality with guns, arrogance, and deadly sickness because...&rdquo;",
-      keyTerms: ["Chief Wingina", "Deadly Foreign Sickness", "Stolen Native Corn", "Colonial Arrogance"]
+      name: "Tudor JPs Enforcing Deterrence Against 'Idle Vagabonds'",
+      title: "Fearing Crime, Rebellion & Fraudulent Sturdy Beggars",
+      objective: "Argue that masterless wandering vagabonds ('Anglers', 'Counterfeit Cranks') threatened crime, plague, and rebellion—justifying whipping, ear-boring (1572 Vagabonds Act), and Houses of Correction.",
+      starter: "&ldquo;Masterless sturdy beggars roaming the highways spread plague, fraud, and sedition; strict deterrence under the 1572 Vagabonds Act and Houses of Correction is vital to preserve order because...&rdquo;",
+      keyTerms: ["Sturdy Beggars / Idle Poor", "1572 Vagabonds Act (Ear-Boring)", "Houses of Correction", "Fear of Rural Disorder"]
+    }
+  },
+  lesson_3_3: {
+    title: "Sir Francis Drake & English Navigators vs. Sceptical Investors & Spanish Monopoly Defenders",
+    subtitle: "Exploration and Voyages of Discovery: Astrolabes, Galleons & Circumnavigation (1558–1588)",
+    roleA: {
+      name: "Sir Francis Drake, John Hawkins & Richard Hakluyt",
+      title: "Oceanic Navigation, New Trading Companies & 4,700% Profits",
+      objective: "Argue that Mercator's 1569 map, astrolabes, sturdy galleons, and Drake's 1577–80 circumnavigation (£400,000+ treasure, claiming Nova Albion) opened global markets and broke Spain's Pacific monopoly.",
+      starter: "&ldquo;Armed with Mercator charts, quadrants, and ocean-going galleons, Drake's circumnavigation yielded 4,700% returns and opened the Pacific to English commerce because...&rdquo;",
+      keyTerms: ["Mercator Map (1569)", "Astrolabe & Quadrant", "Circumnavigation (1577–1580)", "Levant & Eastland Companies"]
+    },
+    roleB: {
+      name: "Cautious Merchants & Critics of High-Risk Voyages",
+      title: "Shipwreck, Scurvy, Frozen Passages & Provoking Spain",
+      objective: "Point out that four of Drake's five ships were lost or turned back, attempts to find a North-West Passage froze in Arctic ice, scurvy killed crews, and plundering Spanish silver risked catastrophic war.",
+      starter: "&ldquo;Only one of Drake's five ships survived the circumnavigation, icy North-West Passage voyages failed, and raiding Spanish silver risked total war with Europe's superpower because...&rdquo;",
+      keyTerms: ["Four of Five Ships Lost", "Failed North-West Passage", "Scurvy & Shipwreck", "Provoking Philip II"]
+    }
+  },
+  lesson_3_4: {
+    title: "Sir Walter Raleigh & Thomas Harriot vs. Chief Wingina & Roanoke Realities",
+    subtitle: "Raleigh and the Attempted Colonisation of Virginia at Roanoke (1584–1590)",
+    roleA: {
+      name: "Sir Walter Raleigh, Thomas Harriot & John White",
+      title: "Blueprint for an American Base Against Spain",
+      objective: "Defend the Roanoke expeditions, arguing Virginia offered a privateering base against Spanish treasure fleets, raw materials independent of Europe, and valuable scientific surveys by Harriot and White.",
+      starter: "&ldquo;Planting Virginia gave England a strategic Atlantic base against Spanish treasure fleets and produced Harriot and White's vital maps for future settlement because...&rdquo;",
+      keyTerms: ["Roanoke Island (1585 & 1587)", "Thomas Harriot & Manteo", "Base Against Spanish Shipping", "New World Raw Materials"]
+    },
+    roleB: {
+      name: "Chief Wingina (Pemisapan) & Critics of Roanoke's Planning",
+      title: "Wrecked Provisions, Unskilled Settlers & Broken Indigenous Trust",
+      objective: "Argue that Roanoke collapsed because the Tiger wreck ruined food stores, gentlemen settlers refused to farm, Ralph Lane's violence against Chief Wingina destroyed local aid, and the 1588 Armada stranded the second colony.",
+      starter: "&ldquo;Arriving too late to plant crops, wrecking the Tiger's food stores, and attacking Chief Wingina doomed a poorly planned colony of soldiers and gentlemen because...&rdquo;",
+      keyTerms: ["Grounding of the Tiger (1585)", "Lack of Skilled Farmers", "Killing of Chief Wingina", "1588 Armada Relief Delay"]
     }
   }
 };
 
-// Aliases for Key Topic lesson ID mapping
-EEE_STANDOFFS.lesson_1_1 = EEE_STANDOFFS.lesson_1;
-EEE_STANDOFFS.lesson_1_2 = EEE_STANDOFFS.lesson_2;
-EEE_STANDOFFS.lesson_1_3 = EEE_STANDOFFS.lesson_3;
-EEE_STANDOFFS.lesson_1_4 = EEE_STANDOFFS.lesson_4;
-EEE_STANDOFFS.lesson_2_1 = EEE_STANDOFFS.lesson_5;
-EEE_STANDOFFS.lesson_2_2 = EEE_STANDOFFS.lesson_6;
-EEE_STANDOFFS.lesson_2_3 = EEE_STANDOFFS.lesson_7;
-EEE_STANDOFFS.lesson_2_4 = EEE_STANDOFFS.lesson_8;
-EEE_STANDOFFS.lesson_3_1 = EEE_STANDOFFS.lesson_9;
-EEE_STANDOFFS.lesson_3_2 = EEE_STANDOFFS.lesson_10;
-EEE_STANDOFFS.lesson_3_3 = EEE_STANDOFFS.lesson_11;
-EEE_STANDOFFS.lesson_3_4 = EEE_STANDOFFS.lesson_12;
-
+// Synchronized numeric aliases in exact 1–12 canonical lesson order
+EEE_STANDOFFS.lesson_1 = EEE_STANDOFFS.lesson_1_1;
+EEE_STANDOFFS.lesson_2 = EEE_STANDOFFS.lesson_1_2;
+EEE_STANDOFFS.lesson_3 = EEE_STANDOFFS.lesson_1_3;
+EEE_STANDOFFS.lesson_4 = EEE_STANDOFFS.lesson_1_4;
+EEE_STANDOFFS.lesson_5 = EEE_STANDOFFS.lesson_2_1;
+EEE_STANDOFFS.lesson_6 = EEE_STANDOFFS.lesson_2_2;
+EEE_STANDOFFS.lesson_7 = EEE_STANDOFFS.lesson_2_3;
+EEE_STANDOFFS.lesson_8 = EEE_STANDOFFS.lesson_2_4;
+EEE_STANDOFFS.lesson_9 = EEE_STANDOFFS.lesson_3_1;
+EEE_STANDOFFS.lesson_10 = EEE_STANDOFFS.lesson_3_2;
+EEE_STANDOFFS.lesson_11 = EEE_STANDOFFS.lesson_3_3;
+EEE_STANDOFFS.lesson_12 = EEE_STANDOFFS.lesson_3_4;

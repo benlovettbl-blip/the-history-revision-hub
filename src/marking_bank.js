@@ -435,7 +435,7 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
             isKs2
               ? `
           <a href="/units/ks2_ww2/textbook.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
-            <i class="fa-solid fa-book-open" style="color: #38bdf8;"></i> <span>20-Page Textbook</span>
+            <i class="fa-solid fa-book-open" style="color: #38bdf8;"></i> <span>16-Page Textbook</span>
           </a>
           <a href="/units/ks2_ww2/quiz_pack.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
             <i class="fa-solid fa-list-check" style="color: #fbbf24;"></i> <span>4-Page Quiz Pack</span>

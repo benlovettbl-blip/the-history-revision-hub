@@ -194,7 +194,66 @@ export default {
             "question": "Why was maintaining friendship with Russia Bismarck’s supreme foreign policy rule after 1871?"
           }
         ],
-        "source_context": "Anton von Werner’s iconic oil painting depicts the proclamation of the German Empire on 18 January 1871 in the Hall of Mirrors at Versailles. Commissioned by the Prussian royal family for Bismarck’s 70th birthday, Werner places Bismarck in immaculate white at the visual centre of the composition, symbolizing that the Empire was forged not through democratic consensus, but through Prussian military dominance. **Hinge Question:** Why did Anton von Werner place Chancellor Otto von Bismarck in pure white at the visual centre of the painting, rather than Kaiser Wilhelm I on the raised dais?"
+        "source_context": {
+          "Source A": "The unification of Germany in 1871 shattered the traditional balance of power established at the Congress of Vienna in 1815. In place of a fragmented buffer zone of weak German principalities, a single industrial and military titan emerged at the heart of Europe. **Hinge Question:** Why did the sudden creation of a unified, industrialized Germany in Central Europe inherently threaten the strategic security of both France and Russia?",
+          "Source B": "Following the catastrophic French defeat at Sedan, Bismarck orchestrated the coronation of Kaiser Wilhelm I inside the Hall of Mirrors at Versailles—the historic palace of French royalty and power. This deliberate humiliation of France on its own soil ignited an enduring desire for national revenge (revanche). **Hinge Question:** How did staging the German coronation inside the French Palace of Versailles transform a military defeat into an irreconcilable national feud?",
+          "Source C": "Under the Treaty of Frankfurt, Germany annexed the mineral-rich provinces of Alsace and eastern Lorraine without a plebiscite and forced France to pay a staggering 5 billion gold franc indemnity. This treaty created a permanent grievance in French political life. **Hinge Question:** Why did the seizure of Alsace-Lorraine guarantee that Franco-German relations could never be genuinely normalized under Bismarck?",
+          "Source D": "Following 1871, the French Third Republic mobilized the state education system to keep the memory of the 'lost provinces' alive. Schoolboys were instructed in military drill, gymnastics, and patriotic history under the doctrine of revanche (revenge). **Hinge Question:** How did state-sponsored schoolroom indoctrination like that shown in Bettannier's painting ensure the hatred of Germany was passed down across generations?",
+          "Source E": "Bismarck recognized that if France ever allied with Tsarist Russia, Germany would face the existential nightmare of a two-front war. To prevent this, he negotiated the ultra-secret Reinsurance Treaty of 1887, guaranteeing Russian neutrality. When Kaiser Wilhelm II dismissed Bismarck in 1890, he disastrously refused to renew this treaty. **Hinge Question:** Why did Kaiser Wilhelm II's abandonment of the Reinsurance Treaty in 1890 create the exact strategic catastrophe that Bismarck had spent twenty years preventing?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving foundational prior knowledge (nineteenth-century European industrialisation, Napoleon’s defeat, and why fragmented German states lacked a single ruler before 1871—strictly zero self-testing of today's new content)."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Fragmented Chessboard, Zollverein & Prussian Power\", \"The Sedan Debacle & Proclamation at Versailles\", and \"The Treaty of Frankfurt & Annexation of Alsace-Lorraine\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (The German Empire in Central Europe (1871)) and Source B (Anton von Werner, The Proclamation of the German…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did the sudden creation of a unified, industrialized Germany in Central Europe inherently threaten the strategic security of both France and Russia?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Fragmented Chessboard, Zollverein & Prussian Power\" → \"The Treaty of Frankfurt & Annexation of Alsace-Lorraine\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"French Revanche & The Cult of the Lost Provinces\" and \"Bismarckian Isolation, The Reinsurance Treaty & Two-Front Dread\") to complete the Verso spine, then interrogate Source C (The Treaty of Frankfurt, Articles I & VII (10 May 1871)), Source D (Albert Bettannier, La Tache Noire (The Black Spot, 1887)), Source E (The Reinsurance Treaty Between Germany and Russia (18…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Explain why the creation of the German Empire in 1871 created long-term instability…)."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "do_now": {
         "type": "questions",
@@ -618,8 +677,8 @@ export default {
       "tasks": [
         {
           "type": "extended_writing",
-          "topic": "Question 2: Explain Why [12 marks • 15 mins]",
-          "question": "Explain why the creation of the German Empire in 1871 created long-term instability in Europe. [12 marks]",
+          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "question": "Explain why the creation of the German Empire in 1871 created long-term instability in Europe.",
           "stimulus": [
             "The annexation of Alsace-Lorraine",
             "Bismarck’s dread of a two-front war"
@@ -972,65 +1031,6 @@ export default {
         }
       ],
       "prologue": "In 1871, in the opulent Hall of Mirrors at Versailles, Prussian Chancellor Otto von Bismarck proclaimed a united German Empire, forged through three swift military victories. France lay humiliated, stripped of Alsace-Lorraine. To protect his new empire, Bismarck built a complex web of alliances. How did German unification upset Europe’s balance of power?",
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: German Unification & Bismarckian Diplomacy",
-        "tariff": "12 marks (Explain Why Causal Analysis)",
-        "questions": [
-          {
-            "tariff": "12 marks",
-            "type": "explain_why_12m",
-            "question": "Explain why the creation of the German Empire in 1871 created long-term instability in Europe. [12 marks]",
-            "stimulus": [
-              "The annexation of Alsace-Lorraine",
-              "Bismarck’s dread of a two-front war"
-            ],
-            "prompt": "Explain three distinct causal reasons: the permanent humiliation and revanchism caused by annexing Alsace-Lorraine from France, Bismarck’s complex web of secret alliances to prevent a two-front war, and the dramatic economic and industrial disruption to the European balance of power.",
-            "model": "A primary reason the creation of the German Empire in 1871 created long-term instability was that it radically altered the European balance of power. After defeating France, unified Germany became the dominant military and industrial superpower in central Europe. To prevent French revenge for the loss of Alsace-Lorraine, Chancellor Otto von Bismarck created complex alliances that divided Europe into competing camps.<br><br>Furthermore, Kaiser Wilhelm II’s aggressive foreign policy ('Weltpolitik') after 1890 increased friction. Demanding Germany's 'place in the sun', the Kaiser challenged British naval supremacy and meddled in colonial disputes, triggering a dangerous atmosphere of suspicion.",
-            "scaffolding": {
-              "acronym": "3-Paragraph Causal Analysis (PEEL)",
-              "acronym_title": "12-Mark Explain Why Standard",
-              "steps": [
-                {
-                  "letter": "REASON 1",
-                  "name": "Alsace-Lorraine & French Revanchism",
-                  "prompt": "Explain the Versailles proclamation, annexation of border provinces, and French vengeance.",
-                  "starter": "One primary reason the creation of the German Empire caused instability was..."
-                },
-                {
-                  "letter": "REASON 2",
-                  "name": "Bismarck’s Dread of Two-Front War & Franco-Russian Alliance",
-                  "prompt": "Explain Bismarck’s secret treaties, Wilhelm II dropping Russia, and 1894 Franco-Russian pact.",
-                  "starter": "Furthermore, a second decisive factor was..."
-                },
-                {
-                  "letter": "REASON 3",
-                  "name": "Industrial Supremacy & Balance of Power Shift",
-                  "prompt": "Explain steel production, demographic growth, and Weltpolitik challenging European equilibrium.",
-                  "starter": "Finally, the unprecedented industrial power of the unified Reich..."
-                }
-              ],
-              "sentence_starters": [
-                "One primary reason was that...",
-                "For example, the annexation of...",
-                "This led directly to instability because...",
-                "A second critical factor was...",
-                "Consequently, this meant that...",
-                "Ultimately, this resulted in..."
-              ],
-              "connectives_bank": [
-                "Alsace-Lorraine",
-                "revanchisme",
-                "Otto von Bismarck",
-                "two-front war",
-                "Reinsurance Treaty (1887)",
-                "Franco-Russian Alliance (1894)",
-                "balance of power",
-                "Weltpolitik"
-              ]
-            }
-          }
-        ]
-      },
       "sources": [
         {
           "letter": "A",
@@ -1424,7 +1424,8 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_1_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "vocab_cloze_text": "Guided by Prussian economic unity under the [Zollverein] and Otto von Bismarck’s shrewd [Realpolitik], Prussia defeated France in 1870–71 and proclaimed the German Empire at Versailles. Annexing iron-rich [Alsace-Lorraine] fuelled lasting French [Revanche], so Bismarck signed the secret 1887 [Reinsurance Treaty] with Russia to keep France diplomatically isolated and avoid a two-front war."
     },
     {
       "id": "lesson_2",
@@ -1581,7 +1582,66 @@ export default {
             "question": "Why did Germany’s aggressive \"gunboat diplomacy\" in Morocco achieve the exact opposite of what Berlin intended?"
           }
         ],
-        "source_context": "Primary photograph depicting the German imperial gunboat SMS Panther anchored off the Atlantic port of Agadir, Morocco, in July 1911. Dispatched by the German Foreign Office under the pretext of protecting German commercial interests during local unrest, the Panther was actually sent to bully France into ceding territory in the Congo. This reckless act of \"gunboat diplomacy\" provoked widespread British fury, prompting Chancellor David Lloyd George’s famous Mansion House speech and initiating joint Anglo-French military staff talks. **Hinge Question:** Why did the deployment of a single small gunboat to an Atlantic port bring Europe to the threshold of a general war?"
+        "source_context": {
+          "Source A": "At the 1884–1885 Berlin Conference, Chancellor Bismarck orchestrated the formal partition of Africa, acquiring Germany's first official protectorates in South-West Africa (Angra Pequena/Namibia), Togoland, Cameroon, and German New Guinea. British public opinion was startled by Germany's sudden entry into colonial expansion, portraying Bismarck as a greedy table-companion taking colonial territories Britain considered its natural sphere of influence. **Hinge Question:** How does Tenniel's depiction of Bismarck taking 'Angra Pequena' reveal Britain's resentment when other European powers claimed colonial territory?",
+          "Source B": "In 1897, the German government abandoned Bismarck's cautious continental diplomacy in favour of Weltpolitik (world policy), demanding global colonies and prestige equivalent to Britain's. **Hinge Question:** How did the rhetoric of demanding a 'place in the sun' convince other European powers that Germany was no longer a satisfied power, but an aggressive challenger?",
+          "Source C": "By the late 19th century, Great Britain governed an empire covering approximately a quarter of the globe and one-fifth of the world's population. When Kaiser Wilhelm II and Chancellor Bülow demanded Germany's 'place in the sun' in the late 1890s, they looked with intense envy at British global dominance illustrated in imperial maps like Crane's, feeling that Germany was confined to Central Europe while Britain monopolized global commerce and colonies. **Hinge Question:** Why did the overwhelming visual reality of the British Empire across the globe make German leaders believe that peaceful commercial expansion was impossible without challenging British hegemony?",
+          "Source D": "In 1905, Germany provoked the First Moroccan Crisis by landing Kaiser Wilhelm II at Tangier to champion Moroccan independence against French colonial claims. Germany hoped to expose the 1904 Entente Cordiale as weak; instead, the crisis backfired and drew Britain and France closer together. **Hinge Question:** Why did the Kaiser's dramatic intervention at Tangier ultimately strengthen Anglo-French military cooperation instead of fracturing it?",
+          "Source E": "During the Second Moroccan Crisis (1911), Chancellor David Lloyd George—previously regarded as a pacifist-leaning Radical—delivered a blistering public warning that Britain would fight rather than allow Germany to bully France or threaten maritime routes. **Hinge Question:** Why was Lloyd George's Mansion House speech a decisive psychological turning point in the road to the Great War?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"German Unification, Franco-Prussian War & Bismarck (1871–1890)\": The Fragmented Chessboard, Zollverein & Prussian Power, The Sedan Debacle & Proclamation at Versailles, The Treaty of Frankfurt & Annexation of Alsace-Lorraine) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Scramble for Africa & The Berlin Conference\", \"Kaiser Wilhelm II,\"Weltpolitik\" & \"A Place in the Sun\"\", and \"The First Moroccan Crisis & The Landing at Tangier\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (John Tenniel, \"The Greedy Boy\" (Punch, 10 January 1885)) and Source B (Bernhard von Bülow, Speech on Germany's \"Place in the…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"How does Tenniel's depiction of Bismarck taking 'Angra Pequena' reveal Britain's resentment when other European powers claimed colonial territory?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Scramble for Africa & The Berlin Conference\" → \"The First Moroccan Crisis & The Landing at Tangier\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Algeciras Conference & German Diplomatic Isolation\" and \"The Second Moroccan Crisis: The Panther at Agadir & Mansion House\") to complete the Verso spine, then interrogate Source C (Walter Crane, Imperial Federation Map of the World…), Source D (Kaiser Wilhelm II, Telegram from Tangier to…), Source E (David Lloyd George, The Mansion House Speech (21 July…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Describe two features of the 1911 Agadir Crisis (Second Moroccan Crisis).)."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "do_now": {
         "type": "questions",
@@ -2007,16 +2067,16 @@ export default {
       "tasks": [
         {
           "type": "short_answer",
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "topic": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
           "qNum": 1,
-          "question": "Describe two features of the 1911 Agadir Crisis (Second Moroccan Crisis). [4 marks]",
+          "question": "Describe two features of the 1911 Agadir Crisis (Second Moroccan Crisis).",
           "starter": "One feature of the 1911 Agadir Crisis was... A second feature was...",
           "model_answer": "One feature of the 1911 Agadir Crisis was the dispatch of the German gunboat SMS Panther to the Moroccan port of Agadir to challenge French influence. Another feature was British diplomatic intervention through Lloyd George’s Mansion House speech, warning Germany that Britain would fight alongside France."
         },
         {
           "type": "extended_writing",
-          "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "question": "Explain one consequence of the Moroccan Crises for relations between Great Britain and France. [4 marks]",
+          "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "question": "Explain one consequence of the Moroccan Crises for relations between Great Britain and France.",
           "stimulus": [
             "The 1906 Algeciras Conference",
             "The 1911 Mansion House Speech"
@@ -2363,109 +2423,6 @@ export default {
         }
       ],
       "prologue": "By the late nineteenth century, European empires raced to claim colonies across Africa and Asia. When Kaiser Wilhelm II demanded Germany’s 'place in the sun', colonial rivalries erupted into tense showdowns in Morocco. Was imperial greed in distant lands the spark that poisoned European relations before 1914?",
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: Imperial Rivalry & The Moroccan Crises",
-        "tariff": "8 marks (Feature Drill [4m] & Consequence Writing [4m])",
-        "questions": [
-          {
-            "tariff": "4 marks",
-            "type": "feature_drills_4m",
-            "question": "Describe two features of the 1911 Agadir Crisis (Second Moroccan Crisis). [4 marks]",
-            "prompt": "Identify two distinct features of the 1911 Agadir Crisis. For each feature, provide a clear identification followed by supporting factual knowledge.",
-            "model": "One feature of the 1911 Agadir Crisis was the dispatch of the German gunboat SMS Panther to the Moroccan port of Agadir to challenge French influence. Another feature was British diplomatic intervention through Lloyd George’s Mansion House speech, warning Germany that Britain would fight alongside France.",
-            "scaffolding": {
-              "acronym": "F1 + D1 • F2 + D2",
-              "acronym_title": "4-Mark Feature Drill Formula",
-              "steps": [
-                {
-                  "letter": "F1",
-                  "name": "Feature 1 (SMS Panther Gunboat)",
-                  "prompt": "Identify Germany sending SMS Panther to Agadir port.",
-                  "starter": "One key feature was that..."
-                },
-                {
-                  "letter": "D1",
-                  "name": "Detail 1",
-                  "prompt": "Add precise details (July 1911, Moroccan port, gunboat diplomacy, challenging France).",
-                  "starter": "Specifically, this involved..."
-                },
-                {
-                  "letter": "F2",
-                  "name": "Feature 2 (British Lloyd George Intervention)",
-                  "prompt": "Identify British backing for France in Mansion House speech.",
-                  "starter": "A second key feature was..."
-                },
-                {
-                  "letter": "D2",
-                  "name": "Detail 2",
-                  "prompt": "Add precise details (David Lloyd George, Mansion House speech, preparing Royal Navy, German retreat).",
-                  "starter": "In particular, this meant that..."
-                }
-              ],
-              "sentence_starters": [
-                "One key feature was that...",
-                "Specifically, this involved...",
-                "A second key feature was...",
-                "In particular, this meant that..."
-              ],
-              "connectives_bank": [
-                "Agadir Crisis (1911)",
-                "SMS Panther",
-                "gunboat diplomacy",
-                "David Lloyd George",
-                "Mansion House speech",
-                "Entente Cordiale",
-                "Anglo-French naval agreement"
-              ]
-            }
-          },
-          {
-            "tariff": "4 marks",
-            "type": "consequence_4m",
-            "question": "Explain one consequence of the Moroccan Crises for relations between Great Britain and France. [4 marks]",
-            "prompt": "Focus on how German aggression in Morocco solidified the Entente Cordiale into a de facto military and naval alliance with joint naval agreements in 1912.",
-            "model": "One consequence of the Moroccan Crises was the strengthening of the Anglo-French Entente Cordiale. Specifically, British and French leaders grew deeply suspicious of German aggression, leading to secret military naval talks where Britain agreed to guard the North Sea while the French navy protected the Mediterranean.",
-            "scaffolding": {
-              "acronym": "P-F-C (Point • Fact • Consequence)",
-              "acronym_title": "High-Yield Consequence Formula (1 Concise Paragraph)",
-              "steps": [
-                {
-                  "letter": "POINT",
-                  "name": "Identify Consequence",
-                  "prompt": "State the transformation of the Entente into a binding military/naval partnership.",
-                  "starter": "One significant consequence of the Moroccan Crises was..."
-                },
-                {
-                  "letter": "FACT",
-                  "name": "Historical Evidence",
-                  "prompt": "Cite the 1912 Anglo-French naval agreement (Channel defense and Mediterranean).",
-                  "starter": "In particular, following the Agadir crisis..."
-                },
-                {
-                  "letter": "CONSEQUENCE",
-                  "name": "Explain Result",
-                  "prompt": "Explain how this committed Britain morally and strategically to enter the war in 1914.",
-                  "starter": "Consequently, this directly resulted in..."
-                }
-              ],
-              "sentence_starters": [
-                "One significant consequence of the Moroccan Crises was that...",
-                "In particular, this led Britain and France to...",
-                "As a direct result...",
-                "Consequently, this solidified Anglo-French relations because..."
-              ],
-              "connectives_bank": [
-                "Entente Cordiale",
-                "Tangier (1905)",
-                "Agadir (1911)",
-                "1912 naval agreement",
-                "Channel defense",
-                "military commitment"
-              ]
-            }
-          }
-        ]
-      },
       "sources": [
         {
           "letter": "A",
@@ -2859,7 +2816,8 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_2_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "vocab_cloze_text": "After dismissing Bismarck in 1890, Kaiser Wilhelm II launched ambitious [Weltpolitik] to win overseas colonies, pushing Britain and France into the 1904 [Entente Cordiale]. When Wilhelm tested their partnership in Morocco, Germany was left isolated at the 1906 [Algeciras Conference]. Sending the warship Panther to Agadir in 1911 in reckless [Gunboat Diplomacy] provoked David Lloyd George’s stern [Mansion House Speech] warning."
     },
     {
       "id": "lesson_3",
@@ -3016,7 +2974,66 @@ export default {
             "question": "Did the launch of HMS Dreadnought protect British imperial security, or did it dangerously erase Britain’s numerical advantage?"
           }
         ],
-        "source_context": "Primary photograph depicting the Royal Navy battleship HMS Dreadnought at sea (c. 1906–1907). Designed under First Sea Lord Admiral Sir John Fisher and constructed in just twelve months at Portsmouth Dockyard, HMS Dreadnought featured ten 12-inch guns and revolutionary steam-turbine engines producing a top speed of 21 knots. By making every pre-existing battleship on earth obsolete overnight, Dreadnought created a global sensation but wiped out Britain’s massive pre-existing lead in pre-dreadnoughts, allowing Germany to compete on equal terms. **Hinge Question:** Did the launch of HMS Dreadnought protect British imperial security, or did it dangerously erase Britain’s established naval advantage?"
+        "source_context": {
+          "Source A": "Passed in 1889, the Naval Defence Act legally committed Great Britain to maintain a Royal Navy battle fleet equal to or greater than the combined naval strength of the next two largest navies in the world (France and Russia). **Hinge Question:** Why did Great Britain consider maintaining a battlefleet twice the size of rival nations to be an existential necessity rather than an act of aggression?",
+          "Source B": "Under Admiral Alfred von Tirpitz, Germany passed a series of Naval Laws aiming to build a battle fleet so powerful that Britain would not dare challenge it without risking its own naval supremacy. This 'Risk Theory' directly threatened Britain's national security. **Hinge Question:** Why did Germany's 'Risk Theory' backfire catastrophically by pushing Britain to abandon its policy of 'splendid isolation'?",
+          "Source C": "Upon becoming First Sea Lord in 1904, Admiral Fisher reorganized the entire Royal Navy, recalling battleships from across the empire to concentrate overwhelming force in home waters against the German High Seas Fleet. **Hinge Question:** How did Fisher's decision to build Dreadnought paradoxically erase Britain's massive numerical advantage in older battleships?",
+          "Source D": "By 1909, the dreadnought revolution had spread far beyond Britain and Germany into a global arms competition involving the United States and the Empire of Japan. American satirical illustrator L. M. Glackens depicted the Great Powers gathered around an uncapped poker table ('No Limit'), recklessly betting cruisers and dreadnoughts in a spiraling cycle of bluff and escalation where no player could afford to fold. **Hinge Question:** How does the poker metaphor in Glackens's cartoon explain why nations find it psychologically and strategically impossible to stop an arms race once it begins?",
+          "Source E": "Despite massive German financial sacrifices and Tirpitz's 'Risk Theory', Britain's overwhelming industrial shipbuilding capacity allowed the Royal Navy to win the naval race decisively, entering August 1914 with a crushing 29-to-17 dreadnought superiority in the North Sea. **Hinge Question:** If Britain won the naval arms race so decisively by 1914, why did the race nevertheless make a European war far more likely?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Imperial Rivalry, the Scramble for Africa & the Moroccan Crises (1884–1911)\": The Scramble for Africa & The Berlin Conference, Kaiser Wilhelm II,\"Weltpolitik\" & \"A Place in the Sun\", The First Moroccan Crisis & The Landing at Tangier) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Two-Power Standard & British Maritime Survival\", \"Admiral von Tirpitz, German Naval Laws & \"Risk Theory\"\", and \"The Dreadnought Revolution: All-Big-Gun Technology\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (The Naval Defence Act 1889 (The Two-Power Standard,…) and Source B (The Second German Naval Law (Flottengesetz), Preamble…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did Great Britain consider maintaining a battlefleet twice the size of rival nations to be an existential necessity rather than an act of aggression?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Two-Power Standard & British Maritime Survival\" → \"The Dreadnought Revolution: All-Big-Gun Technology\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The 1909 Naval Panic: \"We Want Eight and We Won't Wait!\"\" and \"The Haldane Mission Failure & Strategic Redeployment\") to complete the Verso spine, then interrogate Source C (Admiral Sir John Fisher, Memorandum to the Admiralty…), Source D (L. M. Glackens, \"No Limit: A 1909 Cartoon on the…), Source E (British vs German Dreadnought Capital Ship Deliveries…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Historiographical Analysis: The Impact of the Naval Arms Race)."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "do_now": {
         "type": "questions",
@@ -3434,10 +3451,10 @@ export default {
       "tasks": [
         {
           "type": "historical_interpretations",
-          "topic": "Question 3: Historiographical Analysis [8 marks • 10 mins]",
+          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
           "title": "Historiographical Analysis: The Impact of the Naval Arms Race",
-          "tariff": "Question 3: Historiographical Analysis [8 marks • 10 mins]",
-          "question": "Study Interpretations 1 and 2. How do they differ about the causes and impact of the Anglo-German naval arms race? [4 marks] Suggest one reason why they differ. [4 marks]",
+          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
+          "question": "Study Interpretations 1 and 2. How do they differ about the causes and impact of the Anglo-German naval arms race? Suggest one reason why they differ.",
           "interp1": {
             "title": "Interpretation 1: The Naval Race as Primary Catalyst",
             "badge": "Orthodox Historiography",
@@ -3520,12 +3537,12 @@ export default {
             "text": "The Army Expansion Bill must take absolute priority over all naval construction. The international crisis in the Balkans proves that the decisive battle for the Reich will be fought on land against France and Russia. Battleship building under Admiral Tirpitz must be curtailed to allocate all imperial revenues to modernising infantry artillery and field corps."
           },
           "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the causes and impact of the Anglo-German naval arms race. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]",
+            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the causes and impact of the Anglo-German naval arms race. What is the main difference between these views? Explain your answer, using details from both interpretations.",
             "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 views the naval arms race as the single most dangerous catalyst that made European war inevitable, whereas Interpretation 2 argues that the impact of the naval race has been exaggerated and that it was effectively over by 1912.<br><br>Interpretation 1 states that the naval race was \"the single most dangerous element in pre-1914 European diplomacy\" and that German battleships directly across the North Sea convinced Britain that Germany was an \"implacable foe seeking European hegemony\".<br><br>In contrast, Interpretation 2 contends that \"historians have greatly exaggerated the fatal impact of the naval race\", stating that \"by 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army\"."
           },
           "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 views the naval arms race as the single most dangerous catalyst that made European war inevitable, whereas Interpretation 2 argues that the impact of the naval race has been exaggerated and that it was effectively over by 1912.<br><br>Interpretation 1 states that the naval race was \"the single most dangerous element in pre-1914 European diplomacy\" and that German battleships directly across the North Sea convinced Britain that Germany was an \"implacable foe seeking European hegemony\".<br><br>In contrast, Interpretation 2 contends that \"historians have greatly exaggerated the fatal impact of the naval race\", stating that \"by 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army\".",
           "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the naval arms race. You may use Sources B and C to help explain your answer. [4 marks]",
+            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the naval arms race. You may use Sources B and C to help explain your answer.",
             "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on British strategic documents like Source B, which reflects Admiralty alarms warning that the German fleet was \"a menace of the gravest character\" and that naval defeat would mean \"the British Empire ceases to exist within twenty-four hours\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains German War Ministry records showing that by 1912 \"battleship building must be curtailed\" because \"the army expansion bill must take absolute priority\" for a land war in Europe.<br><br>Because the two historians gave weight to different sets of historical records—British naval panic in 1908 versus German budgetary reallocation to land armies in 1912—they reached contrasting conclusions."
           },
           "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on British strategic documents like Source B, which reflects Admiralty alarms warning that the German fleet was \"a menace of the gravest character\" and that naval defeat would mean \"the British Empire ceases to exist within twenty-four hours\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains German War Ministry records showing that by 1912 \"battleship building must be curtailed\" because \"the army expansion bill must take absolute priority\" for a land war in Europe.<br><br>Because the two historians gave weight to different sets of historical records—British naval panic in 1908 versus German budgetary reallocation to land armies in 1912—they reached contrasting conclusions.",
@@ -3815,112 +3832,6 @@ export default {
         }
       ],
       "prologue": "For centuries, Britain relied on the Royal Navy to rule the waves and safeguard its global empire. But in 1898, Admiral Tirpitz began building a massive German battle fleet. In 1906, Britain answered with HMS Dreadnought, making all previous warships obsolete. Did the naval arms race make European war inevitable?",
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: The Anglo-German Naval Arms Race & HMS Dreadnought",
-        "tariff": "8 marks (Contrasting Historical Interpretations)",
-        "questions": [
-          {
-            "tariff": "4 marks",
-            "type": "interpretations_diff_4m",
-            "question": "Study Interpretations 1 and 2. How do they differ about the causes of the Anglo-German naval arms race? [4 marks]",
-            "stimulus": [
-              "Interpretation 1: Professor Paul Kennedy, The Rise of Anglo-German Antagonism — argues that German naval expansion under Admiral von Tirpitz was a deliberate, provocative bid for world empire and naval challenge to British survival.",
-              "Interpretation 2: Professor Christopher Clark, The Sleepwalkers — argues that German naval expansion was defensive and reactive, reflecting legitimate commercial growth, while British panic and anti-German hysteria exaggerated the risk."
-            ],
-            "prompt": "Explain the difference between Kennedy’s view of aggressive German naval challenge and Clark’s view of defensive, legitimate commercial growth exaggerated by British alarm.",
-            "model": "Interpretation 1 suggests that the naval race was driven by Kaiser Wilhelm’s personal vanity and Germany's legitimate desire for a world navy. In contrast, Interpretation 2 argues that Germany's naval expansion was a deliberate, aggressive challenge designed to threaten Britain's island security and empire.",
-            "scaffolding": {
-              "acronym": "Point • Interp 1 • Interp 2 • Contrast",
-              "acronym_title": "Edexcel Paper 3 Q3(b) Interpretation Difference Formula",
-              "steps": [
-                {
-                  "letter": "POINT",
-                  "name": "State the Core Difference",
-                  "prompt": "State clearly that they differ on whether Germany was an aggressor or acting defensively.",
-                  "starter": "Interpretations 1 and 2 differ fundamentally on..."
-                },
-                {
-                  "letter": "INTERP 1",
-                  "name": "Exemplify Kennedy (Deliberate Challenge)",
-                  "prompt": "Quote or summarize Kennedy on Tirpitz, challenge to British survival, and bid for empire.",
-                  "starter": "Interpretation 1 argues that..."
-                },
-                {
-                  "letter": "INTERP 2",
-                  "name": "Exemplify Clark (Defensive & Exaggerated)",
-                  "prompt": "Quote or summarize Clark on legitimate trade, defensive intentions, and British panic.",
-                  "starter": "In contrast, Interpretation 2 suggests that..."
-                },
-                {
-                  "letter": "CONTRAST",
-                  "name": "Synthesize the Divergence",
-                  "prompt": "Explicitly synthesize the difference between intentional aggression and mutual misjudgment.",
-                  "starter": "This is a fundamental difference because..."
-                }
-              ],
-              "sentence_starters": [
-                "Interpretations 1 and 2 differ on...",
-                "Interpretation 1 argues that...",
-                "In contrast, Interpretation 2 suggests that...",
-                "This is a difference because..."
-              ],
-              "connectives_bank": [
-                "Paul Kennedy",
-                "Christopher Clark",
-                "Admiral von Tirpitz",
-                "Risk Theory",
-                "HMS Dreadnought",
-                "aggressive challenge vs defensive trade"
-              ]
-            }
-          },
-          {
-            "tariff": "4 marks",
-            "type": "interpretations_reason_4m",
-            "question": "Suggest one reason why Interpretations 1 and 2 differ about the causes of the naval arms race. [4 marks]",
-            "prompt": "Explain why Kennedy and Clark arrive at different conclusions. Consider their differing evidence bases, historiographical perspectives (intentionalist vs revisionist), and focus.",
-            "model": "The interpretations differ because the historians focus on different evidence. Interpretation 1 examines German domestic politics and the Kaiser's diaries, while Interpretation 2 evaluates British Admiralty strategic reports and warship building statistics.",
-            "scaffolding": {
-              "acronym": "Historiographical Framework • Evidence Focus • Synthesis",
-              "acronym_title": "Edexcel Paper 3 Q3(c) Why Interpretations Differ Formula",
-              "steps": [
-                {
-                  "letter": "REASON",
-                  "name": "Historiographical Focus",
-                  "prompt": "Identify that Kennedy uses German military planning, while Clark examines multi-polar psychology.",
-                  "starter": "One reason why Interpretations 1 and 2 differ is because they focus on..."
-                },
-                {
-                  "letter": "AUTHOR 1",
-                  "name": "Kennedy’s Intentionalist Focus",
-                  "prompt": "Explain Kennedy uses Tirpitz’s memos and Wilhelm II’s speeches to show deliberate planning.",
-                  "starter": "Specifically, Paul Kennedy focuses on German Admiralty archives and Tirpitz’s Risk Theory..."
-                },
-                {
-                  "letter": "AUTHOR 2",
-                  "name": "Clark’s Multi-Polar Focus",
-                  "prompt": "Explain Clark evaluates British domestic panic, cabinet rhetoric, and mutual sleepwalking.",
-                  "starter": "In contrast, Christopher Clark analyzes broader diplomatic psychology and British over-reaction..."
-                }
-              ],
-              "sentence_starters": [
-                "One reason why Interpretations 1 and 2 differ is because they rely on different evidence...",
-                "Specifically, Interpretation 1 focuses primarily on German Admiralty documents that show...",
-                "In contrast, Interpretation 2 evaluates multi-polar diplomatic fears and...",
-                "As a result, the authors reach different conclusions because..."
-              ],
-              "connectives_bank": [
-                "intentionalist historiography",
-                "revisionist history",
-                "Tirpitz memos",
-                "Risk Theory",
-                "British naval panic",
-                "multi-polar diplomacy"
-              ]
-            }
-          }
-        ]
-      },
       "sources": [
         {
           "letter": "A",
@@ -4314,7 +4225,8 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_3_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "vocab_cloze_text": "To protect Britain’s island trade under the 1889 [Two-Power Standard], London grew alarmed when Admiral von Tirpitz passed German [Naval Laws] based on [Risk Theory (Risikotheorie)]. Britain’s revolutionary 1906 turbine battleship [Dreadnought] made older fleets obsolete and triggered a fierce North Sea shipbuilding race that the failed 1912 [Haldane Mission] in Berlin could not halt."
     },
     {
       "id": "lesson_4",
@@ -4490,7 +4402,66 @@ export default {
             "question": "Why did Russia’s retreat in 1908 guarantee that the Tsar would mobilize his army in 1914?"
           }
         ],
-        "source_context": "Primary political cartoon titled \"The Boiling Point\" (Punch, October 1912) depicting the major European monarchs (Kaiser Wilhelm II, Emperor Franz Joseph, King George V, Tsar Nicholas II, and the Sultan of Turkey) desperately sitting on the bubbling lid of a pot labeled \"Balkan Troubles\". The cartoon illustrates the widespread contemporary awareness that regional ethnic violence and nationalism in south-eastern Europe was threatening to boil over and engulf the entire continent in an uncontrollable conflagration. **Hinge Question:** Why did contemporary cartoonists depict the Balkans as an uncontrollable pot about to explode?"
+        "source_context": {
+          "Source A": "The 1879 Dual Alliance bound Germany and Austria-Hungary in a mutual defence pact against Russia. While Bismarck intended the pact to restrain Austrian adventurism in the Balkans, by 1914 it functioned as a blank cheque that dragged Germany into Austria's local disputes. **Hinge Question:** Why did the Dual Alliance become dangerous to European peace once German chancellors stopped restraining Austrian foreign policy?",
+          "Source B": "After Kaiser Wilhelm II severed ties with Russia in 1890, democratic France and autocratic Tsarist Russia signed a mutual defense pact. Article 2 was particularly lethal: it specified that mere mobilization by the Triple Alliance would trigger immediate, automatic total mobilization by France and Russia without further discussion. **Hinge Question:** Why did Article 2's clause making mobilization automatic ensure that a diplomatic crisis could not be halted once troops began moving?",
+          "Source C": "In October 1908, Austria-Hungary unilaterally annexed Bosnia and Herzegovina, breaking the Treaty of Berlin and enraging Serbia and Russia. When Germany threatened war in support of Vienna, Russia was forced to back down in humiliation, vowing never to retreat again. **Hinge Question:** Why did the 1908 Bosnian Crisis make a future European war almost inevitable when another Balkan crisis arose in 1914?",
+          "Source D": "The First Balkan War (1912) broke out when the Balkan League attacked the decaying Ottoman Empire. The cartoon illustrates how the violent nationalist passions of the Balkans threatened to boil over and engulf the Great Powers, who desperately tried to contain the flames while pursuing conflicting regional ambitions. **Hinge Question:** Why was the metaphor of a 'boiling pot' an accurate description of how Balkan regional conflicts dragged the Great Powers into disaster?",
+          "Source E": "Terrified of fighting a simultaneous two-front war against France and Russia, the German General Staff formulated the Schlieffen Plan. It gambled that slow Russian mobilization would allow Germany 42 days to invade neutral Belgium, bypass French border forts, encircle Paris, and knock France out before turning east to face Russia. **Hinge Question:** Why did the Schlieffen Plan guarantee that any dispute with Russia in the Balkans would automatically result in a German invasion of France and Belgium?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"The Anglo-German Naval Arms Race & HMS Dreadnought (1898–1914)\": The Two-Power Standard & British Maritime Survival, Admiral von Tirpitz, German Naval Laws & \"Risk Theory\", The Dreadnought Revolution: All-Big-Gun Technology) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Central European Bloc: Dual Alliance & Triple Alliance\", \"The Counter-Alliance: Franco-Russian Alliance & Triple Entente\", and \"The \"Balkan Powder Keg\", Ottoman Decline & Pan-Slavism\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (The Dual Alliance Between Germany and Austria-Hungary…) and Source B (The Franco-Russian Military Convention (1892/1894)), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did the Dual Alliance become dangerous to European peace once German chancellors stopped restraining Austrian foreign policy?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Central European Bloc: Dual Alliance & Triple Alliance\" → \"The \"Balkan Powder Keg\", Ottoman Decline & Pan-Slavism\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The 1908 Bosnian Annexation Crisis & Russian Humiliation\" and \"The 1912–1913 Balkan Wars & The Pre-emptive War Urge\") to complete the Verso spine, then interrogate Source C (Emperor Franz Joseph, Proclamation on the Annexation…), Source D (\"The Boiling Point\" (Punch, October 1912)), Source E (The German Schlieffen Plan (1905–1914)) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Write a narrative account analysing how crises in the Balkans between 1908 and 1913…)."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "do_now": {
         "type": "questions",
@@ -4907,8 +4878,8 @@ export default {
       "tasks": [
         {
           "type": "extended_writing",
-          "topic": "Question 1: Narrative Account [8 marks • 10 mins]",
-          "question": "Write a narrative account analysing how crises in the Balkans between 1908 and 1913 increased European tension. [8 marks]",
+          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "question": "Write a narrative account analysing how crises in the Balkans between 1908 and 1913 increased European tension.",
           "stimulus": [
             "The Bosnian Annexation Crisis (1908)",
             "The Balkan Wars (1912–1913)"
@@ -4980,8 +4951,8 @@ export default {
         },
         {
           "type": "extended_writing",
-          "topic": "Question 2: Explain Importance of Alliance Systems [8 marks • 10 mins]",
-          "question": "Explain the importance of the alliance systems for relations between European great powers before 1914. [8 marks]",
+          "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
+          "question": "Explain the importance of the alliance systems for relations between European great powers before 1914.",
           "stimulus": [
             "The Triple Alliance (1882)",
             "The Triple Entente (1907)"
@@ -5329,103 +5300,6 @@ export default {
         }
       ],
       "prologue": "By 1914, Europe had divided into two heavily armed camps: the Triple Entente and the Triple Alliance. In the turbulent Balkans, crumbling Ottoman power and Slavic nationalism created a volatile 'powder keg' of regional tension. Why did interlocking alliance treaties turn a regional Balkan quarrel into a catastrophic continental war?",
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: The Alliance Systems & The Balkan Powder Keg",
-        "tariff": "16 marks (Narrative Account [8m] & Explain Importance [8m])",
-        "questions": [
-          {
-            "tariff": "8 marks",
-            "type": "narrative_account_8m",
-            "question": "Write a narrative account analysing how crises in the Balkans between 1908 and 1913 increased European tension. [8 marks]",
-            "stimulus": [
-              "The Austrian annexation of Bosnia (1908)",
-              "The Balkan Wars and the rise of a Greater Serbia (1912–1913)"
-            ],
-            "prompt": "Write a chronological account examining the escalation: the 1908 Bosnian Crisis and Russian humiliation, the Balkan Wars of 1912–1913, and how this created intense Austro-Serbian hostility that led directly to 1914.",
-            "model": "Initially, tension in the Balkans erupted in 1908 when Austria-Hungary annexed Bosnia, outraging Serbia and Russia. Germany forced Russia to back down by threatening military support for Austria.<br><br>Following this, the Balkan Wars of 1912–1913 expelled the Ottoman Empire and doubled the size of Serbia. Serbia emerged as an aggressive Slavic power determined to liberate Serbs living under Austro-Hungarian rule.<br><br>Finally, the crisis peaked on 28 June 1914 when Bosnian Serb nationalist Gavrilo Princip assassinated Archduke Franz Ferdinand in Sarajevo. Austria-Hungary issued an ultimatum to crush Serbia, triggering the alliance system and dragging all European great powers into war.",
-            "scaffolding": {
-              "acronym": "3-Stage Chronological Narrative Framework",
-              "acronym_title": "Narrative Account Formula (Beginning • Escalation • Climax)",
-              "steps": [
-                {
-                  "letter": "STAGE 1",
-                  "name": "1908 Bosnian Annexation & Russian Humiliation",
-                  "prompt": "Explain Austria seizing Bosnia, Serbian outrage, German ultimatum, and Russian humiliation.",
-                  "starter": "Initially, the Balkan crisis began in October 1908 when..."
-                },
-                {
-                  "letter": "STAGE 2",
-                  "name": "1912–1913 Balkan Wars & Greater Serbia",
-                  "prompt": "Explain Balkan League, Ottoman expulsion, Serbia doubling in size, and Black Hand agitation.",
-                  "starter": "Following this, tensions escalated sharply during the Balkan Wars of 1912–1913 when..."
-                },
-                {
-                  "letter": "STAGE 3",
-                  "name": "Austro-Serbian Hostility & Priming 1914",
-                  "prompt": "Explain Austrian preventive war mentality (Conrad von Hötzendorf) and Sarajevo setting.",
-                  "starter": "The outcome of these crises permanently destabilized Europe because..."
-                }
-              ],
-              "sentence_starters": [
-                "Initially, the crisis began when...",
-                "Following this, a major escalation occurred in 1912–1913 when...",
-                "A dangerous turning point was reached when...",
-                "Consequently, this culminated by 1914 in..."
-              ],
-              "connectives_bank": [
-                "Bosnian Crisis (1908)",
-                "Greater Serbia",
-                "Russian humiliation",
-                "Balkan League",
-                "Balkans Powder Keg",
-                "Black Hand",
-                "Conrad von Hötzendorf",
-                "preventive war"
-              ]
-            }
-          },
-          {
-            "tariff": "8 marks",
-            "type": "explain_importance_8m",
-            "question": "Explain the importance of the alliance systems for relations between European great powers before 1914. [8 marks]",
-            "prompt": "Explain two distinct reasons why the alliance systems were important: first, how they divided Europe into two armed, suspicious camps (Triple Alliance vs Triple Entente); second, how mutual defense obligations converted a localized Balkan dispute into a continent-wide total war in July 1914.",
-            "model": "The alliance systems were of crucial importance because they transformed a localized Balkan quarrel into a continent-wide conflict. By 1914, Europe was divided into two armed camps: the Triple Alliance (Germany, Austria-Hungary, Italy) and the Triple Entente (Britain, France, Russia). When Germany gave Austria a 'blank cheque' to attack Serbia, Russia mobilised to protect its Slavic ally, which automatically triggered the German Schlieffen Plan against France, drawing Britain into war to defend Belgian neutrality.",
-            "scaffolding": {
-              "acronym": "Importance Point 1 • Importance Point 2",
-              "acronym_title": "Edexcel Paper 2 Period Study 8-Mark Importance Standard",
-              "steps": [
-                {
-                  "letter": "IMPACT 1",
-                  "name": "Division into Armed Camps & Zero-Sum Paranoia",
-                  "prompt": "Explain Triple Alliance vs Triple Entente, fear of encirclement, and war plan coordination.",
-                  "starter": "One reason the alliance systems were profoundly important was that..."
-                },
-                {
-                  "letter": "IMPACT 2",
-                  "name": "The Fatal Transmission Belt in July 1914",
-                  "prompt": "Explain the blank cheque, Russian mobilization, Schlieffen Plan, Belgian neutrality, and world war.",
-                  "starter": "Furthermore, the alliances were critical because their mutual obligations operated as..."
-                }
-              ],
-              "sentence_starters": [
-                "One reason why the alliance systems were important was...",
-                "In particular, they divided Europe into...",
-                "Furthermore, the alliances were decisive because...",
-                "Consequently, this transformed a regional dispute because..."
-              ],
-              "connectives_bank": [
-                "Triple Alliance",
-                "Triple Entente",
-                "blank cheque (5 July 1914)",
-                "Russian mobilization",
-                "Schlieffen Plan",
-                "Treaty of London (1839)",
-                "fatal transmission belt"
-              ]
-            }
-          }
-        ]
-      },
       "sources": [
         {
           "letter": "A",
@@ -5813,7 +5687,8 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_4_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "vocab_cloze_text": "By 1907, Europe stood divided between the Central Powers’ [Triple Alliance] and the rival [Triple Entente] of Britain, France, and Russia. Meanwhile, Ottoman decline and rising Serbian [Pan-Slavism] turned south-eastern Europe into the volatile [Balkan Powder Keg]. Austria-Hungary’s 1908 [Annexation] of Bosnia and Serbia’s gains in the 1912–13 Balkan Wars brought Vienna and St Petersburg to the brink."
     },
     {
       "id": "lesson_5",
@@ -5977,7 +5852,66 @@ export default {
             "question": "Why did German generals insist that invading neutral Belgium was a military necessity, even though it guaranteed British entry into the war?"
           }
         ],
-        "source_context": "Primary forensic map and archival evidence depicting the assassination route of Archduke Franz Ferdinand along the Appel Quay in Sarajevo on 28 June 1914. Following an earlier failed bomb attack by Nedeljko Čabrinović, the Archduke’s motorcade attempted to alter its route to visit injured officers in hospital. However, the chauffeur Leopold Lojka was not informed and turned right into Franz Josef Street outside Schiller’s Delicatessen beside the Latin Bridge. Attempting to reverse, the engine stalled directly in front of nineteen-year-old assassin Gavrilo Princip, who drew his Browning pistol and fired two fatal shots at point-blank range. **Hinge Question:** Was the assassination of Archduke Franz Ferdinand the fundamental cause of the First World War, or merely the trigger that exposed existing systemic rivalries?"
+        "source_context": {
+          "Source A": "Following an earlier failed bomb attack by Nedeljko Čabrinović, Archduke Franz Ferdinand decided to alter his schedule to visit wounded officers in hospital. However, his chauffeurs were not informed; when lead driver Leopold Lojka turned into Franz Josef Street, Governor Potiorek ordered him to brake and reverse, stalling the car directly in front of Gavrilo Princip. **Hinge Question:** How did a series of administrative blunders and a wrong turn transform a bungled assassination plot into the catalyst for world war?",
+          "Source B": "On 5–6 July 1914, Kaiser Wilhelm II and Chancellor Bethmann-Hollweg issued the 'Blank Cheque', promising unconditional military support if Austria-Hungary took military action against Serbia. German leaders believed Russia was unprepared for war and would back down, localizing the conflict. **Hinge Question:** Why did Germany's unconditional promise of support empower Austro-Hungarian hardliners to issue an impossible ultimatum to Serbia?",
+          "Source C": "Austria-Hungary delayed three weeks after the assassination before delivering a deliberately unacceptable ten-point ultimatum to Serbia. Points 5 and 6 demanded that Austrian police and judges enter Serbia to direct investigations, which Serbia could not accept without surrendering its sovereign independence. **Hinge Question:** Why did the Austro-Hungarian leadership intentionally draft the ultimatum so that Serbia could not possibly accept all its terms?",
+          "Source D": "On 30 July 1914, following the Austrian bombardment of Belgrade, Tsar Nicholas II ordered full general mobilisation across the Russian Empire. Because Russian mobilisation threatened Germany’s eastern frontier, it triggered Berlin’s immediate decision to launch the Schlieffen Plan. **Hinge Question:** Why did Russia’s decision to mobilise its armies make a peaceful diplomatic solution impossible under the logic of European military plans?",
+          "Source E": "Too young under Austro-Hungarian law to receive the death penalty (which required a convict to be 20 years old at the time of the crime), Princip was sentenced to twenty years' hard labour in solitary confinement at the fortress of Theresienstadt. **Hinge Question:** Why did the physical youth and frail appearance of Gavrilo Princip contrast so sharply with the world-shattering geopolitical catastrophe his actions unleashed?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"The Alliance Systems & the Balkan Powder Keg (1879–1913)\": The Central European Bloc: Dual Alliance & Triple Alliance, The Counter-Alliance: Franco-Russian Alliance & Triple Entente, The \"Balkan Powder Keg\", Ottoman Decline & Pan-Slavism) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Assassination of Franz Ferdinand in Sarajevo\", \"The \"Blank Cheque\" & The Escalation of the Crisis\", and \"The Ten-Point Ultimatum & Declaration of War on Serbia\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Motorcade Route and Assassination Site at the Latin…) and Source B (The German \"Blank Cheque\" to Austria-Hungary (6 July…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"How did a series of administrative blunders and a wrong turn transform a bungled assassination plot into the catalyst for world war?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Assassination of Franz Ferdinand in Sarajevo\" → \"The Ten-Point Ultimatum & Declaration of War on Serbia\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Railway Mobilisation Schedules & The Domino Effect\" and \"The Schlieffen Plan, Belgian Neutrality & British Entry\") to complete the Verso spine, then interrogate Source C (The Austro-Hungarian Ultimatum to Serbia (23 July 1914)), Source D (Tsar Nicholas II, Imperial Ukase on Russian General…), Source E (Austro-Hungarian Police Mugshot of Gavrilo Princip…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (“The main cause of the First World War was alliance rivalries.” How far do you agre…)."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "do_now": {
         "type": "questions",
@@ -6389,8 +6323,8 @@ export default {
       "tasks": [
         {
           "type": "extended_writing",
-          "topic": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
-          "question": "“The main cause of the First World War was alliance rivalries.” How far do you agree? Explain your answer. [12 marks]",
+          "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "question": "“The main cause of the First World War was alliance rivalries.” How far do you agree? Explain your answer.",
           "stimulus": [
             "The Triple Alliance and Triple Entente rivalries",
             "The assassination of Archduke Franz Ferdinand"
@@ -6751,71 +6685,6 @@ export default {
         }
       ],
       "prologue": "On 28 June 1914, nineteen-year-old Gavrilo Princip fired two fatal pistol shots into the carriage of Archduke Franz Ferdinand in Sarajevo. Within thirty-seven days, ultimatums, imperial mobilisations, and German troops marching into neutral Belgium plunged Europe into total war. Could the catastrophic July Crisis have been avoided, or was war unstoppable?",
-      "exam_practice": {
-        "title": "Key Stage 3 Disciplinary Writing: The July Crisis & The Outbreak of War",
-        "tariff": "12 marks (Evaluative Statement Essay)",
-        "questions": [
-          {
-            "tariff": "12 marks",
-            "type": "evaluative_essay_12m",
-            "question": "“The main cause of the First World War was alliance rivalries.” How far do you agree? Explain your answer. [12 marks]",
-            "stimulus": [
-              "The Triple Alliance and Triple Entente rivalries",
-              "The assassination of Archduke Franz Ferdinand"
-            ],
-            "prompt": "Construct a balanced evaluative argument: on the one hand, evaluate how the rigid alliance commitments and mobilization timetables acted as the transmission belt that dragged all five great powers into war; on the other hand, evaluate alternative long-term causes—militarism (Schlieffen Plan), imperialism, and the immediate spark of the Sarajevo assassination. Reach a weighed conclusion.",
-            "model": "On the one hand, alliance rivalries were a vital cause of the war because they bound great powers together through mutual defense treaties. Germany’s unconditional 'blank cheque' encouraged Austria-Hungary to declare war on Serbia. Because Russia mobilised to defend Serbia, Germany invaded France via Belgium, forcing Britain into the conflict.<br><br>On the other hand, militarism and imperial rivalries were equally decisive in causing war. The Anglo-German naval arms race created intense paranoia, while rigid military timetables like Germany's Schlieffen Plan left no room for diplomatic compromise once mobilisation began. Therefore, while alliances created the chain reaction, aggressive militarism ensured that European leaders were willing to gamble on war in July 1914.",
-            "scaffolding": {
-              "acronym": "PEEL Evaluative Essay Framework",
-              "acronym_title": "12-Mark Evaluative Statement Essay Standard",
-              "steps": [
-                {
-                  "letter": "THESIS",
-                  "name": "State Position",
-                  "prompt": "State clearly that alliance commitments converted a local dispute into a world war.",
-                  "starter": "To a significant extent, it is accurate to argue that alliance rivalries were the primary cause because..."
-                },
-                {
-                  "letter": "THEME 1",
-                  "name": "Alliance Mechanics & Blank Cheque",
-                  "prompt": "Explain the 5 July blank cheque, Russian mobilization, and mutual obligations dragging in Britain and France.",
-                  "starter": "On the one hand, alliance rivalries were decisive because..."
-                },
-                {
-                  "letter": "THEME 2",
-                  "name": "Militarism, Timetables & Sarajevo Spark",
-                  "prompt": "Evaluate alternative factors: the Schlieffen Plan, war by timetable (A.J.P. Taylor), and the Black Hand assassination.",
-                  "starter": "On the other hand, it can be argued that rigid militarism and the Sarajevo spark were foundational because..."
-                },
-                {
-                  "letter": "JUDGMENT",
-                  "name": "Weighed Verdict",
-                  "prompt": "Synthesize why alliances were the structural architecture without which world war was impossible.",
-                  "starter": "In conclusion, while militarism determined the rapid execution of war, alliance rivalries were decisive because..."
-                }
-              ],
-              "sentence_starters": [
-                "To a significant extent, it is accurate to argue that...",
-                "On the one hand, alliance obligations were decisive because...",
-                "In particular, Germany’s blank cheque to Austria-Hungary...",
-                "On the other hand, an alternative argument highlights militarism and timetables, such as...",
-                "In conclusion, the most decisive factor was... because..."
-              ],
-              "connectives_bank": [
-                "Triple Alliance",
-                "Triple Entente",
-                "blank cheque (5 July 1914)",
-                "Sarajevo assassination",
-                "Gavrilo Princip",
-                "Black Hand",
-                "Schlieffen Plan",
-                "war by timetable",
-                "A. J. P. Taylor"
-              ]
-            }
-          }
-        ]
-      },
       "sources": [
         {
           "letter": "A",
@@ -7203,7 +7072,8 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_5_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "vocab_cloze_text": "On 28 June 1914, Gavrilo Princip—armed by the secret [Black Hand (Crna Ruka)]—assassinated Archduke Franz Ferdinand in Sarajevo. Emboldened by Germany’s unconditional [Blank Cheque (Blankovollmacht)] on 5 July, Vienna issued a harsh ten-point [Ultimatum] to Serbia. Once Russian [Mobilisation] began, Berlin triggered the [Schlieffen Plan] through neutral Belgium, bringing Great Britain into the war on 4 August 1914."
     },
     {
       "id": "lesson_6",
@@ -7346,7 +7216,66 @@ export default {
             "question": "How will you divide your 30 minutes across the three paragraphs?"
           }
         ],
-        "source_context": "Contemporary archival records of the 1871 German Empire proclamation, the gunboat SMS Panther at Agadir, HMS Dreadnought, and the July Crisis illustrate how imperial ambition, naval rivalry, and rigid treaties triggered global conflict in 1914. Hinge Question: Which of the four catalysts made peaceful compromise impossible once Franz Ferdinand was assassinated?"
+        "source_context": {
+          "Source A": "Discovered by historians in the 1960s, Admiral von Müller's diary showed that senior German military commanders openly advocated pre-emptive war as early as December 1912, arguing that Germany's chances of winning would decline as Russia modernized its railways. **Hinge Question:** How does Müller's diary support the argument that German military leaders welcomed the July 1914 crisis as the ideal opportunity for a pre-emptive strike?",
+          "Source B": "Professor Christopher Clark's work revolutionized modern understanding of 1914 by rejecting the traditional idea that Germany single-handedly planned the war. He argues that leaders across Britain, France, Russia, Germany, and Austria-Hungary made reckless calculations, sleepwalking together into catastrophe. **Hinge Question:** Why is Clark's metaphor of 'sleepwalkers' so powerful in explaining why none of Europe's leaders anticipated the catastrophic reality of trench warfare?",
+          "Source C": "In 1961, German historian Fritz Fischer caused an international sensation by publishing evidence from previously secret German archives showing that imperial Germany had planned aggressive territorial annexations (Septemberprogramm) and intentionally risked world war in July 1914. **Hinge Question:** Why did Fritz Fischer's research cause such an immense scandal in post-war West Germany?",
+          "Source D": "Until 2 August 1914, the British Cabinet was deeply divided over whether to enter the war. A large faction of Liberal ministers opposed fighting for France or Russia. The German invasion of Belgium fundamentally transformed British politics, providing a legal, moral, and strategic justification that united the government. **Hinge Question:** Why was the German invasion of Belgium the essential catalyst needed to unite a divided British government and public for war?",
+          "Source E": "Within thirty-seven days of the shots fired in Sarajevo, five of the world's greatest empires were at war. The July Crisis demonstrated how interlocking alliances, rigid military mobilization timetables, and diplomatic miscalculations triggered a rapid, unstoppable chain reaction. **Hinge Question:** At which point in the July Crisis did the outbreak of general European war become inevitable?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"The July Crisis: Sarajevo to the Outbreak of War (June–August 1914)\": The Assassination of Franz Ferdinand in Sarajevo, The \"Blank Cheque\" & The Escalation of the Crisis, The Ten-Point Ultimatum & Declaration of War on Serbia) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Deconstructing the Question: \"Why Did War Break Out in 1914?\"\", \"Reason 1: German Unification, Bismarck & French Revanche\", and \"Reason 2: Imperial Rivalry & The Scramble for Africa\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Admiral Georg Alexander von Müller, The Imperial War…) and Source B (Christopher Clark, The Sleepwalkers: How Europe Went…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"How does Müller's diary support the argument that German military leaders welcomed the July 1914 crisis as the ideal opportunity for a pre-emptive strike?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Deconstructing the Question: \"Why Did War Break Out in 1914?\"\" → \"Reason 2: Imperial Rivalry & The Scramble for Africa\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Reason 3: The Anglo-German Naval Arms Race & HMS Dreadnought\" and \"Reason 4: Rival Alliances & The Sarajevo Assassination\") to complete the Verso spine, then interrogate Source C (Fritz Fischer, Germany's Aims in the First World War…), Source D (Prime Minister H. H. Asquith, Letter to Venetia…), Source E (The Causal Chain of the July Crisis (28 June – 4…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended Enquiry Essay • Causal Explanation (3 Paragraphs • 30 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "do_now": {
         "type": "questions",
@@ -7803,8 +7732,8 @@ export default {
         {
           "id": "gw_l6_assessment_masterclass",
           "type": "extended_writing",
-          "topic": "Summative Assessment: Why Did War Break Out in 1914? [12 marks • 30 mins]",
-          "title": "Summative Assessment: Why Did War Break Out in 1914? [12 marks • 30 mins]",
+          "topic": "Extended Enquiry Essay • Causal Explanation (3 Paragraphs • 30 mins)",
+          "title": "Extended Enquiry Essay • Causal Explanation (3 Paragraphs • 30 mins)",
           "question": "Why did war break out in 1914? Explain three reasons using the PEEL technique. [12 marks • 30 mins]",
           "stimulus": [
             "1. German unification and Bismarck (1871)",
@@ -7980,25 +7909,6 @@ export default {
           "a": "Bullet points, mind maps, dates, and statistics only. Strictly NO pre-written essays, full sentences, or drafted paragraphs allowed."
         }
       ],
-      "exam_practice": {
-        "question": "Why did war break out in 1914? Explain three reasons using the PEEL technique. [12 marks • 30 mins]",
-        "type": "12-mark",
-        "marks": 12,
-        "stimulus": [
-          "1. German unification and Bismarck (1871)",
-          "2. Imperial rivalry and the Scramble for Africa (1884–1911)",
-          "3. Naval Arms race and HMS Dreadnought (1898–1914)",
-          "4. Alliances and the Sarajevo assassination (1879–1914)"
-        ],
-        "hints": [
-          "Choose 3 of the 4 factors. Write a developed PEEL paragraph for each (approx 9 mins per paragraph).",
-          "Point: State your factor clearly using the question stem.",
-          "Evidence: Include specific facts, dates, and names from your 1 sheet of A4 notes.",
-          "Explain: Explain the causal mechanism: WHY did this factor create suspicion, fear, or military escalation?",
-          "Link: Connect directly back to 1914.",
-          "NO CONCLUSION: Full marks are awarded for 3 developed paragraphs. Do not write a conclusion!"
-        ]
-      },
       "quiz": [
         {
           "stage": 1,
@@ -8732,7 +8642,8 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_6_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "vocab_cloze_text": "Explaining why war broke out in 1914 using the [PEEL Technique] links Europe’s long-term [M-A-I-N Causes] to the Sarajevo spark. Seizing [Alsace-Lorraine] in 1871 bred French hatred, while Kaiser Wilhelm II’s [Weltpolitik] and construction rivals to [HMS Dreadnought] drove Britain into the [Triple Entente], ensuring Germany’s July 1914 [Blank Cheque] dragged all Europe into total war."
     }
   ],
   "quizPack": [
@@ -9371,25 +9282,184 @@ export default {
   ],
   "key_individuals": [
     {
-      "id": "wilhelm",
+      "entity_type": "person",
+      "name": "Otto von Bismarck",
+      "aliases": [
+        "Chancellor Bismarck",
+        "Prince Otto von Bismarck",
+        "Bismarck"
+      ],
+      "lifespan": "1815 – 1898",
+      "role": "Minister-President of Prussia & First Chancellor of the German Empire (1871–1890)",
+      "image": "/images/otto_von_bismarck_portrait.jpg",
+      "image_position": "center 18%",
+      "origins": "Conservative Prussian statesman who argued in his 1862 \"Blood and Iron\" speech that military power, railways, and Krupp steel artillery—not parliamentary speeches—would unify Germany.",
+      "significance": "Engineered German unification in January 1871 after defeating France at Sedan, annexed Alsace-Lorraine under the Treaty of Frankfurt, and spent twenty years weaving alliances to keep vengeful France diplomatically isolated.",
+      "achievements": [
+        "Defeated France in the 1870–71 Franco-Prussian War, crowning Kaiser Wilhelm I in the Palace of Versailles and imposing a 5 billion gold franc indemnity plus the annexation of Alsace-Lorraine.",
+        "Convened the 1884–85 Berlin Conference establishing the \"Principle of Effective Occupation\" during the Scramble for Africa.",
+        "Protected Germany from a two-front war through the 1879 Dual Alliance, 1882 Triple Alliance, and secret 1887 Reinsurance Treaty with Russia until his dismissal in 1890."
+      ],
+      "key_distinction": "Bismarck sought cautious European balance-of-power diplomacy to keep France isolated; Kaiser Wilhelm II sacked him in 1890 to pursue aggressive global Weltpolitik."
+    },
+    {
+      "entity_type": "person",
       "name": "Kaiser Wilhelm II",
-      "role": "Emperor of Germany",
-      "image": "/units/great_war/assets/card_wilhelm.png",
-      "bio": "The impulsive and militaristic ruler of Germany whose aggressive 'Weltpolitik' foreign policy alienated Britain, France, and Russia, setting the stage for the Great War."
+      "aliases": [
+        "Kaiser Wilhelm"
+      ],
+      "lifespan": "1859 – 1941",
+      "role": "German Emperor & King of Prussia (1888–1918)",
+      "image": "/images/weimar_individuals/kaiser_wilhelm_ii.jpg",
+      "image_position": "center 18%",
+      "origins": "Ambitious twenty-nine-year-old monarch who dismissed Otto von Bismarck in 1890, let the Russian Reinsurance Treaty lapse, and demanded Germany’s overseas \"place in the sun\" through Weltpolitik.",
+      "significance": "Alienated Britain, France, and Russia simultaneously through High Seas Fleet expansion, colonial brinkmanship in Morocco (1905 & 1911), and issuing the unconditional \"Blank Cheque\" to Austria-Hungary on 5 July 1914.",
+      "achievements": [
+        "Backed Admiral Tirpitz’s 1898 Naval Laws and blocked a 1912 Anglo-German naval truce during Lord Haldane’s mission to Berlin.",
+        "Triggered the First (Tangier, 1905) and Second (Agadir SMS Panther, 1911) Moroccan Crises, inadvertently tightening the Anglo-French Entente rather than splitting it.",
+        "Promised Emperor Franz Joseph unconditional German military backing (\"Blank Cheque\") on 5 July 1914 following the Sarajevo assassination."
+      ]
     },
     {
-      "id": "princip",
+      "entity_type": "person",
+      "name": "Admiral Alfred von Tirpitz",
+      "aliases": [
+        "Admiral Tirpitz",
+        "Tirpitz"
+      ],
+      "lifespan": "1849 – 1930",
+      "role": "State Secretary of the German Imperial Naval Office (1897–1916)",
+      "image": "/images/portraits/alfred_von_tirpitz.jpg",
+      "origins": "Architect of the German High Seas Fleet who steered the 1898 and 1900 Naval Laws through the Reichstag to challenge Britain’s Royal Navy in the North Sea.",
+      "significance": "Formulated \"Risk Theory\"—calculating that a powerful German battlefleet would deter Britain from intervening in Europe—which instead alarmed London into joining the Entente and out-building Germany.",
+      "achievements": [
+        "Passed the 1898 Naval Laws expanding Germany’s North Sea battlefleet.",
+        "Accelerated German dreadnought construction after 1906, sparking the 1909 British \"We want eight and we won’t wait!\" naval panic.",
+        "Opposed Lord Haldane’s 1912 Berlin naval holiday proposal unless Britain promised unconditional continental neutrality."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Admiral Sir John \"Jackie\" Fisher",
+      "aliases": [
+        "Sir John Fisher",
+        "John Fisher",
+        "Jackie Fisher"
+      ],
+      "lifespan": "1841 – 1920",
+      "role": "First Sea Lord of the British Royal Navy (1904–1910, 1914–1915)",
+      "image": "/images/jackie_fisher_portrait.jpg",
+      "image_position": "center top",
+      "origins": "Radical modernising British First Sea Lord determined to defend Britain’s island food imports and uphold the 1889 Two-Power Standard against the growing German Navy.",
+      "significance": "Unveiled the turbine-powered, all-big-gun battleship HMS Dreadnought in 1906—making every older warship obsolete overnight, but inadvertently resetting the battleship race so Germany could compete almost from scratch.",
+      "achievements": [
+        "Launched HMS Dreadnought in 1906 armed with ten 12-inch guns and fast steam-turbine engines.",
+        "Reorganised Royal Navy battlefleets toward home waters in the North Sea to counter Tirpitz’s High Seas Fleet."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Count Alfred von Schlieffen",
+      "aliases": [
+        "Alfred von Schlieffen",
+        "Schlieffen"
+      ],
+      "lifespan": "1833 – 1913",
+      "role": "Chief of the Imperial German General Staff (1891–1906)",
+      "image": "/units/great_war/assets/alfred_von_schlieffen.jpg",
+      "image_position": "center 18%",
+      "origins": "Prussian military strategist tasked with solving Germany’s strategic nightmare after the 1894 Franco-Russian Alliance created the threat of a simultaneous war on two fronts.",
+      "significance": "Devised the 1905 Schlieffen Plan: a rapid sweeping invasion through neutral Belgium to defeat France within six weeks before slow Russian railway mobilisation could finish in the east.",
+      "achievements": [
+        "Designed the operational timetable requiring German armies to march through neutral Belgium to encircle Paris.",
+        "When executed on 4 August 1914—violating the 1839 Treaty of London (\"a scrap of paper\")—his plan directly triggered Great Britain’s declaration of war on Germany."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Archduke Franz Ferdinand",
+      "aliases": [
+        "Franz Ferdinand"
+      ],
+      "lifespan": "1863 – 1914",
+      "role": "Heir Presumptive to the Austro-Hungarian Throne",
+      "image": "/images/portraits/archduke_franz_ferdinand.jpg",
+      "image_fit": "contain",
+      "origins": "Nephew of Habsburg Emperor Franz Joseph and Inspector General of the Austro-Hungarian armed forces during heightened Balkan tensions after the 1908 Bosnian annexation and 1912–13 Balkan Wars.",
+      "significance": "His assassination alongside his wife Sophie during an official state visit to Sarajevo on 28 June 1914 provided Vienna hawks with the pretext to issue the 23 July ultimatum and attack Serbia.",
+      "achievements": [
+        "Inspected Austro-Hungarian military manoeuvres in Bosnia and toured Sarajevo in an open-top Gräf & Stift car on 28 June 1914.",
+        "Survived an initial morning bomb attack on the Appel Quay before a fatal wrong turn brought his motorcade directly in front of Gavrilo Princip."
+      ]
+    },
+    {
+      "entity_type": "person",
       "name": "Gavrilo Princip",
-      "role": "Serbian Nationalist",
-      "image": "/units/great_war/assets/card_princip.png",
-      "bio": "A member of the Black Hand secret society who assassinated Archduke Franz Ferdinand in Sarajevo, providing the spark that ignited the July Crisis and World War I."
+      "lifespan": "1894 – 1918",
+      "role": "Bosnian-Serb Nationalist Student & Young Bosnia / Black Hand Conspirator",
+      "image": "/images/gw_gavrilo_princip.jpg",
+      "image_position": "center 18%",
+      "origins": "Nineteen-year-old Bosnian-Serb student radicalised by Austria-Hungary’s 1908 annexation of Bosnia-Herzegovina and armed by the secret Serbian military society known as the Black Hand.",
+      "significance": "Fired two fatal pistol shots at point-blank range in Sarajevo on 28 June 1914, killing Archduke Franz Ferdinand and Duchess Sophie and igniting the five-week July Crisis.",
+      "achievements": [
+        "Assassinated Archduke Franz Ferdinand and Sophie near Sarajevo’s Latin Bridge on 28 June 1914 after their chauffeur took a wrong turn.",
+        "Triggered the chain of ultimata and railway mobilisations that dragged Europe’s rival alliances into world war by 4 August 1914."
+      ]
     },
     {
-      "id": "nicholas",
+      "entity_type": "person",
       "name": "Tsar Nicholas II",
-      "role": "Emperor of Russia",
-      "image": "/units/great_war/assets/card_nicholas.png",
-      "bio": "The autocratic ruler of Russia who mobilized his vast army to defend Serbia against Austria-Hungary, triggering Germany's mobilization and the activation of the Schlieffen Plan."
+      "aliases": [
+        "Tsar Nicholas"
+      ],
+      "lifespan": "1868 – 1918",
+      "role": "Emperor & Autocrat of All the Russias (1894–1917)",
+      "image": "/images/portraits/tsar_nicholas_ii.jpg",
+      "origins": "Last Romanov ruler of the Russian Empire, bound to France by the 1894 Franco-Russian Alliance and to Britain by the 1907 Triple Entente, and self-styled protector of Orthodox Slavic Serbia.",
+      "significance": "Determined never to repeat Russia’s humiliating 1908 Bosnian backdown, he ordered general Russian mobilisation in late July 1914 to defend Serbia—prompting Germany to activate the Schlieffen Plan.",
+      "achievements": [
+        "Forged the 1894 Franco-Russian Military Alliance using French loans to build strategic western railways, and completed the Triple Entente with Britain in 1907.",
+        "Backed down under German pressure during the 1908 Bosnian Crisis, resolving not to yield again when Austria-Hungary shelled Serbia in July 1914.",
+        "Ordered general mobilisation across the Russian Empire during the July Crisis, setting irreversible military railway timetables in motion."
+      ]
+    },
+    {
+      "entity_type": "organisation",
+      "name": "The Triple Alliance (Central Powers)",
+      "aliases": [
+        "Triple Alliance",
+        "Dual Alliance",
+        "Central Powers"
+      ],
+      "lifespan": "1879 (Dual) · 1882 (Triple) – 1915",
+      "role": "Central European Mutual Defence Coalition (Germany, Austria-Hungary & Italy)",
+      "image": "/images/portraits/europe_alliances_1914_map.png",
+      "image_fit": "contain",
+      "origins": "Created by Otto von Bismarck through the 1879 Austro-German Dual Alliance and expanded to include Italy in 1882 to guard Central Europe against Russia and France.",
+      "significance": "Divided continental Europe into armed blocs and bound Berlin to Vienna during the July 1914 crisis via Kaiser Wilhelm II’s \"Blank Cheque\" of 5 July 1914.",
+      "achievements": [
+        "Guaranteed mutual military support if Germany or Austria-Hungary were attacked by Russia.",
+        "Backed Austria-Hungary’s 1908 annexation of Bosnia-Herzegovina and July 1914 ten-point ultimatum to Serbia (though Italy stayed neutral in 1914)."
+      ]
+    },
+    {
+      "entity_type": "organisation",
+      "name": "The Triple Entente",
+      "aliases": [
+        "Triple Entente",
+        "Entente Cordiale",
+        "Franco-Russian Military Alliance"
+      ],
+      "lifespan": "1894 · 1904 · 1907 – 1917",
+      "role": "Allied Diplomatic & Strategic Alignment (France, Russia & Great Britain)",
+      "image": "/units/great_war/assets/alliance_system.svg",
+      "image_fit": "contain",
+      "origins": "Built step by step through the 1894 Franco-Russian Military Alliance, the 1904 Anglo-French Entente Cordiale, and the 1907 Anglo-Russian Convention.",
+      "significance": "Ended French isolation, encircled Germany on two land fronts plus the North Sea, and turned the July 1914 Balkan clash into a continental war once German troops invaded Belgium.",
+      "achievements": [
+        "Withstood German diplomatic intimidation at the 1906 Algeciras Conference and during the 1911 Agadir Crisis (David Lloyd George’s Mansion House warning).",
+        "Coordinated Anglo-French naval plans and Franco-Russian mobilisation schedules prior to August 1914."
+      ]
     }
   ],
   "guided_reading": [
@@ -9412,7 +9482,43 @@ export default {
       "source_type_label": "Modern Historical Scholarship",
       "is_primary": false,
       "studio_audio": "/audio/reading/great_war/r0.mp3",
-      "studio_voice_label": "Studio Historian · Christopher Clark"
+      "studio_voice_label": "Studio Historian · Christopher Clark",
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Opens with Christopher Clark’s famous \"sleepwalkers\" sentence, followed by a KS3 classroom summary of his 2012 book’s argument.",
+      "vocabVault": [
+        {
+          "term": "Sleepwalkers",
+          "def": "Historian Christopher Clark’s metaphor for European leaders in 1914 who walked step-by-step into catastrophe without foreseeing the total war ahead."
+        },
+        {
+          "term": "Triple Entente & Triple Alliance",
+          "def": "The two rival European alliance blocs before 1914 (Britain, France, and Russia versus Germany, Austria-Hungary, and Italy)."
+        },
+        {
+          "term": "Blank Cheque",
+          "def": "Germany’s unconditional promise on 5 July 1914 to back Austria-Hungary against Serbia, even if Russia intervened."
+        },
+        {
+          "term": "Mobilisation",
+          "def": "Calling up millions of reserve soldiers and seizing national railways according to strict military timetables—a step treated as an act of war."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why does historian Christopher Clark call Europe’s leaders in 1914 \"sleepwalkers\" rather than blaming just one villain?",
+          "answer": "He argues that leaders across several capitals were watchful yet blind to the disaster ahead—making risky bluffs and alliance decisions without realising they were triggering a world war."
+        },
+        {
+          "question": "How did defensive alliances and rigid railway plans like the Schlieffen Plan take control away from diplomats?",
+          "answer": "Instead of keeping the peace, alliances acted like tripwires: once Russia mobilised to back Serbia, Germany’s military timetable demanded an immediate strike through Belgium into France."
+        },
+        {
+          "question": "What spark in June 1914 set this chain reaction in motion, and why did it spread so fast?",
+          "answer": "The assassination of Archduke Franz Ferdinand in Sarajevo prompted Austria-Hungary—backed by Germany’s \"Blank Cheque\"—to try to crush Serbia, pulling in Russia, Germany, France, and Britain."
+        }
+      ]
     },
     {
       "lesson_index": 1,
@@ -9427,13 +9533,49 @@ export default {
         "How does the author describe the true motivations of the imperialists?",
         "Why do you think this text was considered highly controversial when it was published in 1899?"
       ],
-      "is_adapted": true,
+      "is_adapted": false,
       "hinge_question": "How does Conrad use the image of the French warship 'firing into a continent' to expose the absurdity and violence of the 'civilizing mission' in Africa?",
       "source_type": "classic_literature",
       "source_type_label": "Classic Imperial Literature",
       "is_primary": false,
       "studio_audio": "/audio/reading/great_war/r1.mp3",
-      "studio_voice_label": "Edwardian Narrator · Joseph Conrad"
+      "studio_voice_label": "Edwardian Narrator · Joseph Conrad",
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "provenance_tier": "verbatim_literature",
+      "provenance_note": "Original public-domain passage from Joseph Conrad’s 1899 novella Heart of Darkness critiquing European imperialism in Africa.",
+      "vocabVault": [
+        {
+          "term": "Imperialism",
+          "def": "When a powerful state conquers and rules overseas territories to seize land, raw materials, and prestige."
+        },
+        {
+          "term": "Man-of-War",
+          "def": "A heavily armed naval warship built to project imperial military power along foreign coastlines."
+        },
+        {
+          "term": "Enigma",
+          "def": "Something mysterious or difficult to understand."
+        },
+        {
+          "term": "Lugubrious",
+          "def": "Mournful, gloomy, and dismal—used by Conrad to mock the absurd cruelty of a European warship firing blindly into the African forest."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "In his opening lines, how does Joseph Conrad challenge the claim that European empires were noble \"civilising missions\"?",
+          "answer": "He bluntly describes conquest as taking land away from people with a different appearance, calling it \"not a pretty thing when you look into it too much.\""
+        },
+        {
+          "question": "What is the French warship (\"man-of-war\") doing off the African coast, and why does the narrator call it \"a touch of insanity\"?",
+          "answer": "It is anchored offshore firing six-inch shells blindly into empty jungle at unseen \"enemies\" while its own crew die of fever—accomplishing nothing except senseless destruction."
+        },
+        {
+          "question": "Why is a novel written in 1899 by a former Congo River steamboat captain useful evidence for studying pre-1914 European empires?",
+          "answer": "Conrad witnessed brutal European resource extraction in the Congo firsthand, revealing the violence and racial arrogance hidden behind imperial propaganda."
+        }
+      ]
     },
     {
       "lesson_index": 2,
@@ -9454,7 +9596,43 @@ export default {
       "source_type_label": "Edwardian Invasion Literature (1903)",
       "is_primary": false,
       "studio_audio": "/audio/reading/great_war/r2.mp3",
-      "studio_voice_label": "Edwardian Yachtsman · Erskine Childers"
+      "studio_voice_label": "Edwardian Yachtsman · Erskine Childers",
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Adapted KS3 narrative retelling of Erskine Childers’s 1903 invasion thriller The Riddle of the Sands, illustrating Anglo-German naval rivalry.",
+      "vocabVault": [
+        {
+          "term": "Flotilla",
+          "def": "A fleet of smaller naval vessels or troop-carrying barges operating together."
+        },
+        {
+          "term": "Lighters",
+          "def": "Large, flat-bottomed barges designed to carry soldiers and heavy equipment across shallow coastal waters."
+        },
+        {
+          "term": "Dreadnought",
+          "def": "A revolutionary, heavily armed British battleship class launched in 1906 that sparked an intense naval arms race with Germany."
+        },
+        {
+          "term": "Invasion Literature",
+          "def": "Popular Edwardian spy and war novels warning that rival powers—especially Imperial Germany—were secretly planning to invade Britain."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "What secret discovery do the two British yachtsmen make among the German sandbanks in this story?",
+          "answer": "They spot hidden, newly dredged channels packed with flat-bottomed troop barges (\"lighters\") assembled for a surprise sea invasion of eastern England."
+        },
+        {
+          "question": "Even though The Riddle of the Sands (1903) is a spy novel rather than a real battle report, what real historical fear does it reveal?",
+          "answer": "It captures intense British anxiety over Kaiser Wilhelm II’s expanding German Navy—a fear so strong that the Royal Navy actually built new North Sea bases soon after the book appeared."
+        },
+        {
+          "question": "How could popular invasion stories and newspaper scares make war between Britain and Germany more likely by 1914?",
+          "answer": "They fuelled public suspicion and pressure on politicians to build ever more warships, deepening mutual distrust between the two countries."
+        }
+      ]
     },
     {
       "lesson_index": 3,
@@ -9475,7 +9653,43 @@ export default {
       "source_type_label": "Classic Historical Scholarship",
       "is_primary": false,
       "studio_audio": "/audio/reading/great_war/r3.mp3",
-      "studio_voice_label": "Studio Historian · Barbara W. Tuchman"
+      "studio_voice_label": "Studio Historian · Barbara W. Tuchman",
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Classroom summary of historian Barbara W. Tuchman’s argument in The Guns of August (1962) on alliances and railway timetables.",
+      "vocabVault": [
+        {
+          "term": "Deterrence",
+          "def": "The theory that building strong alliances and armies will scare rivals away from attacking—though in 1914 it failed disastrously."
+        },
+        {
+          "term": "Ultimatum",
+          "def": "A final set of harsh demands backed by the threat of immediate war if not accepted."
+        },
+        {
+          "term": "Schlieffen Plan",
+          "def": "Germany’s pre-war military plan to avoid fighting on two fronts by knocking out France quickly through neutral Belgium before turning east against Russia."
+        },
+        {
+          "term": "Belgian Neutrality",
+          "def": "Belgium’s internationally guaranteed status as a non-fighting country (protected by an 1839 treaty), whose violation brought Britain into the war."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did alliances meant to act as \"safety nets\" behave more like \"tripwires\" in July 1914?",
+          "answer": "Because every great power was bound to support its allies, a local Balkan clash between Austria-Hungary and Serbia rapidly dragged Russia, Germany, France, and Britain into war."
+        },
+        {
+          "question": "Why did Russia’s huge geography force the Tsar to order mobilisation early, and how did Germany react?",
+          "answer": "Russia’s army took weeks to gather across vast distances, yet the moment Russia mobilised, Germany felt forced to launch the Schlieffen Plan before Russia grew ready."
+        },
+        {
+          "question": "Why did Germany’s march into Belgium prove to be the final trigger for Britain declaring war?",
+          "answer": "Belgium was a neutral country whose safety Britain had promised to uphold, so invading Belgium outraged British opinion and united Parliament for war."
+        }
+      ]
     },
     {
       "lesson_index": 4,
@@ -9496,7 +9710,101 @@ export default {
       "source_type_label": "Classic Anti-War Literature (Adapted)",
       "is_primary": false,
       "studio_audio": "/audio/reading/great_war/r4.mp3",
-      "studio_voice_label": "Paul Bäumer · Young German Soldier"
+      "studio_voice_label": "Paul Bäumer · Young German Soldier",
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Classroom literary companion introducing the themes of Erich Maria Remarque’s 1929 anti-war novel All Quiet on the Western Front.",
+      "vocabVault": [
+        {
+          "term": "Fatherland",
+          "def": "A patriotic term for one’s native country (used especially in Germany) invoked by politicians and teachers to urge young men to enlist."
+        },
+        {
+          "term": "Iron Youth",
+          "def": "Schoolmaster Kantorek’s proud patriotic nickname for his teenage pupils—which turned bitterly ironic amid industrial trench slaughter."
+        },
+        {
+          "term": "Bombardment",
+          "def": "A continuous, heavy attack using explosive artillery shells against enemy trenches."
+        },
+        {
+          "term": "Disillusionment",
+          "def": "The painful loss of early patriotic illusions once soldiers experienced the reality of mud, shells, and mass casualties."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "How did schoolmaster Kantorek persuade his eighteen-year-old pupils to volunteer for the army?",
+          "answer": "He lectured them passionately about honour, glory, and patriotic duty to the Fatherland until the entire class marched down together to enlist."
+        },
+        {
+          "question": "How did the teenagers’ expectations of war compare with what they actually met on the Western Front?",
+          "answer": "They pictured brief, heroic adventures and gleaming medals, only to face rat-infested mud, relentless shellfire, and industrial slaughter."
+        },
+        {
+          "question": "What does the closing line mean by saying this young generation was \"destroyed by the war\" even if they survived the shells?",
+          "answer": "Having gone straight from schoolrooms into trauma and losing trust in the elders who sent them, survivors carried deep emotional scars into civilian life."
+        }
+      ]
+    },
+    {
+      "lesson_index": 5,
+      "lesson_id": "lesson_6",
+      "lesson_label": "Enquiry 6",
+      "book_title": "Fischer’s \"Griff nach der Weltmacht\" (1961) vs Clark’s \"Sleepwalkers\" (2012)",
+      "author": "Fritz Fischer (1961) vs Christopher Clark (2012 • Great War Historiography)",
+      "cover_image": "/units/great_war/assets/archduke_sarajevo_car_1914.jpg",
+      "cover_caption": "Archduke Franz Ferdinand and Duchess Sophie departing Sarajevo Town Hall in their open-top motor car moments before Gavrilo Princip’s shots on 28 June 1914 (Imperial War Museum).",
+      "author_context": "For over a century since Article 231 of the 1919 Treaty of Versailles, historians have fiercely debated who bore primary responsibility for the outbreak of war in August 1914. Comparing German historian Fritz Fischer’s explosive archival thesis (1961) with Sir Christopher Clark’s modern multi-polar view (2012) equips Year 9 historians to construct a Greater Depth historiographical verdict.",
+      "source_type": "historiographical_debate",
+      "source_type_label": "Competing Historical Interpretations",
+      "is_primary": false,
+      "is_adapted": true,
+      "extract": "The Deliberate Aggression View (Fritz Fischer, Germany’s Aims in the First World War, 1961): Working inside imperial German cabinet and military archives, Hamburg historian Fritz Fischer shocked post-war Germany by arguing that Berlin did not stumble accidentally into war in July 1914—it actively willed a continental war to achieve European hegemony (Weltpolitik). By issuing the unconditional 'Blank Cheque' to Austria-Hungary on 5 July, pressing Vienna to crush Serbia quickly before peace talks could convene, and drafting Chancellor Bethmann Hollweg’s 'September Programme' of sweeping annexations before the Battle of the Marne had even ended, Kaiser Wilhelm II’s generals—terrified that Russia’s vast railway modernisation would make Russia unbeatable by 1917—deliberately seized the Sarajevo crisis as their last favourable window to strike.\n\nThe Shared Systemic Tragedy View (Christopher Clark, The Sleepwalkers, 2012): Focusing blame on Berlin alone, counters historian Christopher Clark, turns a complex six-power crisis into a courtroom morality play. Serbian military intelligence chief 'Apis' armed the Sarajevo assassins; Vienna recklessly sought to destroy Serbia; St Petersburg ordered general Russian mobilisation on 30 July knowing it would trigger German war plans; Paris encouraged Russian firmness to recover Alsace-Lorraine; and London left its intentions dangerously ambiguous until Belgium was invaded. Every European capital pursued narrow national prestige inside a rigid web of alliances and mobilisation timetables—sleepwalking collectively into catastrophe.",
+      "vocabVault": [
+        {
+          "term": "Fischer Thesis (1961)",
+          "def": "German historian Fritz Fischer’s argument that Imperial Germany deliberately provoked continental war in July 1914 to break encirclement and dominate Europe."
+        },
+        {
+          "term": "Blank Cheque (5 July 1914)",
+          "def": "Kaiser Wilhelm II and Bethmann Hollweg’s unconditional pledge backing Austria-Hungary even if attacking Serbia dragged Russia into war."
+        },
+        {
+          "term": "July Crisis (28 June – 4 Aug 1914)",
+          "def": "The 37-day diplomatic chain reaction from Franz Ferdinand’s assassination in Sarajevo to Britain’s declaration of war following Germany’s invasion of neutral Belgium."
+        },
+        {
+          "term": "Multi-Causal Verdict",
+          "def": "Weighing long-term structural causes (Militarism, Alliances, Imperialism, Nationalism) alongside short-term July 1914 agency and miscalculation."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "What crucial archival evidence did German historian Fritz Fischer uncover in 1961 to argue that Germany’s generals wanted war in 1914 rather than fearing it?",
+          "answer": "German generals feared Russia’s military/railway expansion would make Russia too strong by 1917, so they gave Vienna the \"Blank Cheque\" on 5 July to force a showdown while Germany still held the edge."
+        },
+        {
+          "question": "How does Christopher Clark challenge Fischer by pointing to decisions made in Belgrade, Vienna, St Petersburg, and Paris during July 1914?",
+          "answer": "Clark shows every Great Power took aggressive gambles—Serbian intelligence armed Princip, Austria issued a crushing ultimatum, and Russia mobilised first on 30 July knowing mobilisation meant war."
+        },
+        {
+          "question": "Which interpretation do you find more persuasive for your Enquiry 6 assessment essay—or how can you combine them into a nuanced verdict?",
+          "answer": "A top-level verdict argues that while alliances, naval rivalry, and Balkan nationalism stacked the gunpowder across all capitals (Clark), Berlin’s Blank Cheque and rigid Schlieffen Plan turned a Balkan crisis into a Western European war (Fischer)."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why did German generals fear waiting until 1917 to confront Russia?<br><br><strong>Pair:</strong> Put Fritz Fischer and Christopher Clark in debate: which single decision in July 1914 was the true point of no return?<br><br><strong>Share:</strong> How can you use both \"The Traditional Blame View (Fischer)\" and \"The Modern Shared-Failure View (Clark)\" in your final assessment conclusion?",
+      "questions": [
+        "Why did German military leaders believe 1914 was their last favourable window to fight Russia, according to Fritz Fischer?",
+        "Name three non-German capitals whose risky decisions in July 1914 Christopher Clark highlights.",
+        "Which German war plan turned an Eastern European dispute over Serbia into an invasion of Belgium and France?"
+      ],
+      "audio_file": "/audio/reading/great_war/r5.mp3",
+      "studio_audio": "/audio/reading/great_war/r5.mp3",
+      "studio_voice_label": "Studio Historian · Fischer vs Clark Debate",
+      "provenance_tier": "scholarly_summary",
+      "provenance_note": "Classroom synthesis contrasting German historian Fritz Fischer (1961) with Christopher Clark (2012) on the outbreak of war in 1914."
     }
   ],
   "assessments": [

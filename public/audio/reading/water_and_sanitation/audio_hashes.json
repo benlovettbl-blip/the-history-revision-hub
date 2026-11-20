@@ -1,0 +1,53 @@
+{
+  "unitId": "water_and_sanitation",
+  "clips": {
+    "r2": {
+      "hash": "ba6d9022505d99faf27d997a",
+      "bytes": 322412,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 216,
+      "updatedAt": "2026-11-20T16:30:39.255Z"
+    },
+    "r3": {
+      "hash": "a3d2e597d1c5718de4438061",
+      "bytes": 326348,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 226,
+      "updatedAt": "2026-11-20T16:30:39.987Z"
+    },
+    "r0": {
+      "hash": "6b2b2ada2304be3ee860c8b5",
+      "bytes": 273356,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 157,
+      "updatedAt": "2026-11-20T16:30:58.855Z"
+    },
+    "r1": {
+      "hash": "585e1a4e1ec686d082174448",
+      "bytes": 242348,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 151,
+      "updatedAt": "2026-11-20T16:30:59.580Z"
+    },
+    "r4": {
+      "hash": "2f41313b000b6568a37c064d",
+      "bytes": 341612,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 244,
+      "updatedAt": "2026-11-20T16:31:06.072Z"
+    },
+    "r5": {
+      "hash": "73c32a49bd7a4fa906f141ad",
+      "bytes": 417260,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Scholarship",
+      "words": 222,
+      "updatedAt": "2026-11-20T16:31:06.932Z"
+    }
+  }
+}

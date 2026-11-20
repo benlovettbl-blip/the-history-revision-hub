@@ -35,6 +35,13 @@
       "voiceKey": "ww1_german_voice",
       "badge": "Paul Bäumer · Young German Soldier",
       "updatedAt": "2026-11-19T22:37:24.013Z"
+    },
+    "r5": {
+      "hash": "d4e98e063e6a3ca4873ff112f100077ec7918826a923fb1ae50e59e829813895",
+      "bytes": 434060,
+      "voiceKey": "male_historian",
+      "badge": "Studio Historian · Fischer vs Clark Debate",
+      "updatedAt": "2026-11-20T16:25:19.772Z"
     }
   }
 }

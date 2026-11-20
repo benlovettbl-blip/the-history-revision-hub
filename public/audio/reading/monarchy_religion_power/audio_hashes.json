@@ -1,0 +1,45 @@
+{
+  "unitId": "monarchy_religion_power",
+  "clips": {
+    "r0": {
+      "hash": "ac0e92634e1154950d414d68",
+      "bytes": 311372,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 183,
+      "updatedAt": "2026-11-20T16:28:33.848Z"
+    },
+    "r1": {
+      "hash": "6e2973d10c1a9cd5ea6bdbf3",
+      "bytes": 293228,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 169,
+      "updatedAt": "2026-11-20T16:28:34.472Z"
+    },
+    "r3": {
+      "hash": "29c2ed4936bf99d0369976c5",
+      "bytes": 381740,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Historic Speech",
+      "words": 237,
+      "updatedAt": "2026-11-20T16:30:41.080Z"
+    },
+    "r4": {
+      "hash": "d2ed25f7c8ca19352b6d04d5",
+      "bytes": 348140,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 200,
+      "updatedAt": "2026-11-20T16:30:41.821Z"
+    },
+    "r2": {
+      "hash": "be060970f9854a8b8398e255",
+      "bytes": 335372,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Historic Speech",
+      "words": 221,
+      "updatedAt": "2026-11-20T16:38:31.401Z"
+    }
+  }
+}

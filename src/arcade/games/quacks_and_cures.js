@@ -12,7 +12,7 @@
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
-import { addXp, generateQuestionId, recordQuestionResult } from '../../storage.js';
+import { generateQuestionId, recordQuestionResult } from '../../storage.js';
 
 const SHIFTS = [
   {
@@ -854,7 +854,6 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
     const { isNewBest, best } = saveArcadePersonalBest(unitId, 'quacks', 'all', score);
     pb = best;
     const totalSaved = savedByShift.reduce((a, b) => a + b, 0);
-    addXp(Math.min(150, orthodoxyHits * 10), 'Quacks & Cures 800-Year Career');
 
     const rank =
       orthodoxyHits >= 13

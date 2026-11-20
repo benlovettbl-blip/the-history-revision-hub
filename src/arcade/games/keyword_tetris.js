@@ -6,7 +6,7 @@
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
-import { addXp, recordQuestionResult } from '../../storage.js';
+import { recordQuestionResult } from '../../storage.js';
 
 export function mountKeywordTetris(stageEl, pools, ctx) {
   const pool = pools.tetrisPool || [];
@@ -358,7 +358,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     updateHud();
 
     if (linesCleared > 0) {
-      addXp(Math.min(120, linesCleared * 10), 'Keyword Stack Arcade');
     }
 
     if (mistakes.length > 0) {

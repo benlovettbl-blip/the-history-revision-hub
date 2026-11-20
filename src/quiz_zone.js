@@ -5,7 +5,6 @@ import {
   getWeakSpots,
   clearWeakSpots,
   generateQuestionId,
-  addXp,
 } from './storage.js';
 import { state } from './state.js';
 
@@ -213,7 +212,7 @@ export function renderQuizZone(container, unitData) {
                             <span id="weak-spots-count-badge" style="display: ${initialWeakCount > 0 ? 'inline-block' : 'none'}; position: absolute; top: -6px; right: -18px; background: #dc2626; color: white; border-radius: 999px; padding: 2px 8px; font-size: 0.78rem; font-weight: 800; border: 2px solid #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${initialWeakCount}</span>
                         </div>
                         <h3 style="margin:0 0 10px 0; color: #991b1b; font-size: 1.5rem;">Targeted Weakness</h3>
-                        <p id="weak-spots-card-desc" style="color: #64748b; margin:0;">${initialWeakCount === 0 ? '🎉 0 weak spots! You are 100% on target across this unit.' : `10-question rapid recall test drill focusing ONLY on your missed questions (${initialRedCount} Red, ${initialAmberCount} Amber).`}</p>
+                        <p id="weak-spots-card-desc" style="color: #64748b; margin:0;">${initialWeakCount === 0 ? '🎉 0 weak spots! You are 100% on target across this unit.' : `${Math.min(10, initialWeakCount)}-question rapid recall drill focusing ONLY on your missed questions (${initialRedCount} Red, ${initialAmberCount} Amber).`}</p>
                     </div>
 
                     <div style="border: 2px solid #e2e8f0; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s;" onmouseover="this.style.borderColor='#1e3a8a'; this.style.background='#f8fafc';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.background='white';" id="btn-mode-levels">
@@ -256,10 +255,10 @@ export function renderQuizZone(container, unitData) {
                     ${
                       window.currentUnitId === 'usa'
                         ? `
-                    <div style="border: 2px solid #facc15; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s; background: rgba(250, 204, 21, 0.05);" onmouseover="this.style.borderColor='#eab308'; this.style.background='rgba(250, 204, 21, 0.1)';" onmouseout="this.style.borderColor='#facc15'; this.style.background='rgba(250, 204, 21, 0.05)';" id="btn-mode-trading-cards">
-                        <i class="fa-solid fa-layer-group" style="font-size: 3rem; color: #facc15; margin-bottom: 15px;"></i>
-                        <h3 style="margin:0 0 10px 0; color: #ca8a04; font-size: 1.5rem;">Historical Hooligans</h3>
-                        <p style="color: #64748b; margin:0;">16 3D satirical collector cards &amp; Top Trumps stats for USA figures.</p>
+                    <div style="border: 2px solid #0d9488; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s; background: rgba(13, 148, 136, 0.05);" onmouseover="this.style.borderColor='#0f766e'; this.style.background='rgba(13, 148, 136, 0.1)';" onmouseout="this.style.borderColor='#0d9488'; this.style.background='rgba(13, 148, 136, 0.05)';" id="btn-mode-trading-cards">
+                        <i class="fa-solid fa-users-rectangle" style="font-size: 3rem; color: #0d9488; margin-bottom: 15px;"></i>
+                        <h3 style="margin:0 0 10px 0; color: #0f766e; font-size: 1.5rem;">People &amp; Organisations</h3>
+                        <p style="color: #64748b; margin:0;">Specification-anchored archival dossiers for Civil Rights &amp; Vietnam War figures.</p>
                     </div>
                     `
                         : ''
@@ -299,7 +298,7 @@ export function renderQuizZone(container, unitData) {
       if (count === 0) {
         desc.innerHTML = '🎉 0 weak spots! You are 100% on target across this unit.';
       } else {
-        desc.innerHTML = `10-question rapid recall test drill focusing ONLY on your missed questions (${redCount} Red, ${amberCount} Amber).`;
+        desc.innerHTML = `${Math.min(10, count)}-question rapid recall drill focusing ONLY on your missed questions (${redCount} Red, ${amberCount} Amber).`;
       }
     }
 
@@ -448,7 +447,9 @@ export function renderQuizZone(container, unitData) {
     const btnTrading = container.querySelector('#btn-mode-trading-cards');
     if (btnTrading) {
       btnTrading.addEventListener('click', () => {
-        window.open('/units/usa/trading_cards.html', '_blank');
+        if (typeof window.switchView === 'function') {
+          window.switchView('individuals', 'usa');
+        }
       });
     }
   }
@@ -768,13 +769,6 @@ export function renderQuizZone(container, unitData) {
     let message = '';
     let color = '';
     let icon = '';
-
-    // Award expanded XP rewards for quiz performance
-    if (percentage === 100) {
-      addXp(25, 'Perfect Quiz Score (100%)!');
-    } else if (percentage >= 50) {
-      addXp(10, 'Quiz Passed');
-    }
 
     if (percentage >= 80) {
       message = 'Excellent work! You have a great historical memory.';

@@ -1,6 +1,6 @@
 /**
  * Master Workbook Timeline Registry
- * 
+ *
  * 100% synchronized canonical workbook timeline missions and centrefold milestone data.
  * Extracted directly from official pupil workbook renderers and component specifications.
  * Covers all units with pupil workbooks and physical centrefolds.
@@ -325,7 +325,7 @@ export const WORKBOOK_TIMELINE_DATA = {
   "great_war_part2": [
     {
       "lessonIndex": 0,
-      "lessonId": "lesson_1",
+      "lessonId": "lesson_1_enlistment",
       "milestoneBadge": "Milestone 1 (August 1914)",
       "date": "August 1914",
       "title": "Kitchener’s Call & Pals Battalions",
@@ -356,7 +356,7 @@ export const WORKBOOK_TIMELINE_DATA = {
     },
     {
       "lessonIndex": 1,
-      "lessonId": "lesson_2",
+      "lessonId": "lesson_2_trenches_haig",
       "milestoneBadge": "Milestones 3 & 4 (1916)",
       "date": "1916",
       "title": "The Somme Offensive & The First Tanks",
@@ -387,7 +387,7 @@ export const WORKBOOK_TIMELINE_DATA = {
     },
     {
       "lessonIndex": 2,
-      "lessonId": "lesson_3",
+      "lessonId": "lesson_3_empire_troops",
       "milestoneBadge": "Milestones 2 & 6 (1915 & 1917–18)",
       "date": "1915 & 1917–18",
       "title": "Empire Soldiers on the Western Front & Gallipoli",
@@ -419,7 +419,7 @@ export const WORKBOOK_TIMELINE_DATA = {
     },
     {
       "lessonIndex": 3,
-      "lessonId": "lesson_4",
+      "lessonId": "lesson_4_home_front_dora",
       "milestoneBadge": "Milestone 5 (1916–1917)",
       "date": "1916–1917",
       "title": "The Home Front: Munitionettes & Conscription",
@@ -450,7 +450,7 @@ export const WORKBOOK_TIMELINE_DATA = {
     },
     {
       "lessonIndex": 4,
-      "lessonId": "lesson_5",
+      "lessonId": "lesson_5_versailles",
       "milestoneBadge": "Milestones 7 & 8 (1918 & 1919)",
       "date": "1918 & 1919",
       "title": "The Hundred Days, Armistice & Versailles",
@@ -485,26 +485,26 @@ export const WORKBOOK_TIMELINE_DATA = {
     {
       "lessonIndex": 0,
       "lessonId": "lesson_1",
-      "milestoneBadge": "Milestones 1 & 2 (1770–1788)",
-      "date": "1770–1788",
-      "title": "First Nations Sovereignty & The First Fleet",
+      "milestoneBadge": "Milestone 1 (1768–1770)",
+      "date": "1768–1770",
+      "title": "Captain Cook, Tupaia & The Myth of Terra Nullius",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Captain James Cook claims the eastern coast under the legal fiction of terra nullius; in 1788, Governor Arthur Phillip lands the First Fleet at Sydney Cove, dispossessing the Eora people and establishing a penal colony.",
+      "desc": "Guided across the Pacific by Ra’iatean master navigator Tupaia, Captain James Cook lands at Kamay (Botany Bay) in 1770 and claims Australia’s eastern coast under the legal fiction of terra nullius despite 65,000 years of First Nations custodianship.",
       "sketchPrompt": "draw ship anchor crossed with Aboriginal hardwood shield / Union Jack beside convict leg-shackles;",
       "sketchIdeas": [],
-      "conceptTitle": "Imperial Invasion",
+      "conceptTitle": "Claiming Australia (1770)",
       "branches": [
         {
           "label": "",
-          "value": "Cook/Tupaia 1770"
+          "value": "65,000 years First Nations custodianship"
         },
         {
           "label": "",
-          "value": "First Fleet 1788"
+          "value": "Tupaia’s Pacific navigation & Kamay landing"
         },
         {
           "label": "",
-          "value": "terra nullius legal fiction"
+          "value": "1770 Possession Island & terra nullius myth"
         }
       ],
       "fullMissionText": "Milestones 1 & 2 (1770–1788): Choose (A) Creative Sketch: draw ship anchor crossed with Aboriginal hardwood shield / Union Jack beside convict leg-shackles; • OR • (B) Mind Map: \"Imperial Invasion\" (Cook/Tupaia 1770, First Fleet 1788, terra nullius legal fiction)."
@@ -512,26 +512,26 @@ export const WORKBOOK_TIMELINE_DATA = {
     {
       "lessonIndex": 1,
       "lessonId": "lesson_2",
-      "milestoneBadge": "Milestone 3 (1789)",
-      "date": "1789",
-      "title": "The 1789 Smallpox Catastrophe",
+      "milestoneBadge": "Milestone 2 (1787–1792)",
+      "date": "1787–1792",
+      "title": "The First Fleet & The Convict Penal Colony",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "In 1789, a catastrophic outbreak of smallpox (gal-galla) decimates the Eora population around Sydney, killing 50–70% of Indigenous people and shattering traditional leadership, spiritual lore, and clan structures.",
-      "sketchPrompt": "draw an empty bark canoe drifting on water beneath a weeping eucalyptus branch;",
+      "desc": "After losing the American colonies in 1783, Britain dispatches eleven ships under Governor Arthur Phillip in May 1787, landing 750+ convicts at Warrane (Sydney Cove) in January 1788 to build an isolated penal settlement.",
+      "sketchPrompt": "draw First Fleet ship anchor beside convict leg-irons and ration scales at Sydney Cove;",
       "sketchIdeas": [],
-      "conceptTitle": "Biological Catastrophe",
+      "conceptTitle": "First Fleet Penal Colony",
       "branches": [
         {
           "label": "",
-          "value": "gal-galla smallpox epidemic"
+          "value": "1787–88 eleven ships & 750+ convicts"
         },
         {
           "label": "",
-          "value": "50–70% Eora mortality"
+          "value": "Governor Arthur Phillip at Warrane (Sydney Cove)"
         },
         {
           "label": "",
-          "value": "loss of law-keepers/elders"
+          "value": "starvation years, convict labour & emancipists"
         }
       ],
       "fullMissionText": "Milestone 3 (1789): Choose (A) Creative Sketch: draw an empty bark canoe drifting on water beneath a weeping eucalyptus branch; • OR • (B) Mind Map: \"Biological Catastrophe\" (gal-galla smallpox epidemic, 50–70% Eora mortality, loss of law-keepers/elders)."
@@ -539,26 +539,26 @@ export const WORKBOOK_TIMELINE_DATA = {
     {
       "lessonIndex": 2,
       "lessonId": "lesson_3",
-      "milestoneBadge": "Milestone 4 (1797)",
-      "date": "1797",
-      "title": "Pemulwuy’s Bidjigal Frontier Resistance",
+      "milestoneBadge": "Milestones 3 & 4 (1789–1802)",
+      "date": "1789–1802",
+      "title": "Smallpox (1789), Bennelong & Pemulwuy’s Resistance",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Bidjigal warrior Pemulwuy leads a twelve-year guerrilla resistance campaign against British colonial expansion across the Hawkesbury and Parramatta, burning colonial crops and defying musket fire until his betrayal in 1802.",
+      "desc": "The devastating 1789 gal-galla (smallpox) epidemic kills over half the Eora Nation around Sydney; while Wangal elder Bennelong navigates diplomacy, Bidjigal warrior Pemulwuy wages a twelve-year guerrilla war until 1802.",
       "sketchPrompt": "draw a barbed hunting spear crossed with a burning colonial wheat sheaf and shield;",
       "sketchIdeas": [],
       "conceptTitle": "Pemulwuy's Resistance",
       "branches": [
         {
           "label": "",
-          "value": "Bidjigal guerrilla war"
+          "value": "1789 gal-galla smallpox catastrophe"
         },
         {
           "label": "",
-          "value": "burning crops/flocks"
+          "value": "Bennelong’s capture & cultural diplomacy"
         },
         {
           "label": "",
-          "value": "1797 Battle of Parramatta"
+          "value": "Pemulwuy’s 12-year Bidjigal guerrilla war"
         }
       ],
       "fullMissionText": "Milestone 4 (1797): Choose (A) Creative Sketch: draw a barbed hunting spear crossed with a burning colonial wheat sheaf and shield; • OR • (B) Mind Map: \"Pemulwuy's Resistance\" (Bidjigal guerrilla war, burning crops/flocks, 1797 Battle of Parramatta)."
@@ -1606,6 +1606,37 @@ export const WORKBOOK_TIMELINE_DATA = {
         }
       ],
       "fullMissionText": "Turn to Centrefold (Pages 8–9). Complete Milestone 8 (28 June 1914 Sarajevo Assassination) using dual-coding symbols, motorcar, and Latin Bridge."
+    },
+    {
+      "lessonIndex": 5,
+      "lessonId": "lesson_6",
+      "milestoneBadge": "Synoptic Masterclass (1871–1914)",
+      "date": "1871–1914",
+      "title": "Summative Assessment Masterclass: Why Did War Break Out in 1914?",
+      "pageRef": "Workbook Centrefold • pp. 8–9",
+      "desc": "Synthesising long-term structural pressures (Militarism, Alliances, Imperialism, Nationalism) with short-term July 1914 diplomatic triggers from Sarajevo and the Blank Cheque to the Schlieffen Plan.",
+      "sketchPrompt": "Draw the four MAIN powder barrels connected to the Sarajevo spark fuse",
+      "sketchIdeas": [
+        "🛢️ Four MAIN powder barrels",
+        "🔥 Sarajevo spark (28 June 1914)",
+        "📜 Blank Cheque & mobilisation timetables"
+      ],
+      "conceptTitle": "Why War Broke Out in 1914",
+      "branches": [
+        {
+          "label": "Alliances & Arms",
+          "value": "Triple Alliance vs Triple Entente & Dreadnought race"
+        },
+        {
+          "label": "Balkan Nationalism",
+          "value": "1908 Bosnian Crisis & Black Hand assassination"
+        },
+        {
+          "label": "July Crisis",
+          "value": "German Blank Cheque & rigid mobilisation plans"
+        }
+      ],
+      "fullMissionText": "Turn to Centrefold (Pages 8–9). Review all eight milestones (1871–1914) to weigh long-term MAIN causes against the July 1914 trigger."
     }
   ],
   "water_and_sanitation": [
@@ -1705,11 +1736,42 @@ export const WORKBOOK_TIMELINE_DATA = {
     {
       "lessonIndex": 3,
       "lessonId": "lesson_4",
-      "milestoneBadge": "Milestone 4 (1842 & 1854)",
-      "date": "1842 & 1854",
-      "title": "Chadwick’s Sanitary Report & Snow’s Broad Street Pump",
+      "milestoneBadge": "Milestone 4 (1842 & 1858–1865)",
+      "date": "1842 & 1858–1865",
+      "title": "Industrial Squalor, The Great Stink & Bazalgette’s Sewers",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Edwin Chadwick proves filth causes disease; in 1854, Dr John Snow maps cholera deaths around Soho, removing the Broad Street pump handle and disproving the miasma theory.",
+      "desc": "Rapid industrial urbanisation and Chadwick’s 1842 Sanitary Report expose deadly urban filth; when the 1858 Great Stink overwhelms Parliament, Joseph Bazalgette constructs 82 miles of brick intercepting sewers across London.",
+      "sketchPrompt": "Draw subterranean egg-shaped brick sewers beneath the Thames embankment",
+      "sketchIdeas": [
+        "🧱 Egg-shaped brick intercepting sewer",
+        "👃 The 1858 Great Stink chloride curtains",
+        "🌊 Thames Embankment engineering"
+      ],
+      "conceptTitle": "Victorian Sanitary Engineering",
+      "branches": [
+        {
+          "label": "The Great Stink",
+          "value": "Heatwave forces Parliament to soak curtains in chloride of lime"
+        },
+        {
+          "label": "Bazalgette Masterpiece",
+          "value": "82 miles of subterranean brick sewers redirect 420m gallons"
+        },
+        {
+          "label": "Public Health Acts",
+          "value": "1875 Act mandates clean water supply and sewer connections"
+        }
+      ],
+      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 5). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw subterranean egg-shaped brick sewers beneath the Thames embankment."
+    },
+    {
+      "lessonIndex": 4,
+      "lessonId": "lesson_5",
+      "milestoneBadge": "Milestone 5 (1854–1875)",
+      "date": "1854–1875",
+      "title": "Dr John Snow, Germ Theory & The 1875 Public Health Act",
+      "pageRef": "Workbook Centrefold • pp. 8–9",
+      "desc": "Dr John Snow’s 1854 Soho cholera spot-map and Pasteur’s 1861 Germ Theory overthrow miasma, compelling Parliament to pass the compulsory 1875 Public Health Act mandating clean water and sewers nationwide.",
       "sketchPrompt": "Draw the Broad Street water pump handle removed beside a death map",
       "sketchIdeas": [
         "🚰 Broad Street pump with removed handle",
@@ -1734,45 +1796,46 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 4). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw the Broad Street water pump handle removed beside a death map."
     },
     {
-      "lessonIndex": 4,
-      "lessonId": "lesson_5",
-      "milestoneBadge": "Milestone 5 (1858–1875)",
-      "date": "1858–1875",
-      "title": "The Great Stink & Bazalgette’s Sewer Network",
+      "lessonIndex": 5,
+      "lessonId": "lesson_6",
+      "milestoneBadge": "Synoptic Synthesis (1800–1900)",
+      "date": "1800–1900",
+      "title": "Summative Masterclass: Rapid Progress in Public Health",
       "pageRef": "Workbook Centrefold • pp. 8–9",
-      "desc": "Following the 1858 Great Stink that closed Parliament, Joseph Bazalgette constructs 82 miles of brick intercepting sewers, driving typhus and cholera out of London.",
-      "sketchPrompt": "Draw subterranean egg-shaped brick sewers beneath the Thames embankment",
+      "desc": "Weighing how scientific epidemiology (Snow & Pasteur), civil engineering (Bazalgette), and compulsory parliamentary reform (1867 franchise & 1875 Public Health Act) combined to defeat water-borne disease.",
+      "sketchPrompt": "Connect Snow’s pump, Pasteur’s microscope, Bazalgette’s sewer arch, and the 1875 Act in a causal web",
       "sketchIdeas": [
-        "🧱 Egg-shaped brick intercepting sewer",
-        "👃 The 1858 Great Stink chloride curtains",
-        "🌊 Thames Embankment engineering"
+        "🚰 Snow’s Soho pump",
+        "🔬 Pasteur’s Germ Theory",
+        "🧱 Bazalgette’s sewers",
+        "📜 1875 Public Health Act"
       ],
-      "conceptTitle": "Victorian Sanitary Engineering",
+      "conceptTitle": "Conquering Water-Borne Disease",
       "branches": [
         {
-          "label": "The Great Stink",
-          "value": "Heatwave forces Parliament to soak curtains in chloride of lime"
+          "label": "Science",
+          "value": "Snow (1854) & Pasteur (1861) prove waterborne germs"
         },
         {
-          "label": "Bazalgette Masterpiece",
-          "value": "82 miles of subterranean brick sewers redirect 420m gallons"
+          "label": "Engineering",
+          "value": "Bazalgette’s 82-mile London intercepting sewer network"
         },
         {
-          "label": "Public Health Acts",
-          "value": "1875 Act mandates clean water supply and sewer connections"
+          "label": "Government",
+          "value": "Compulsory 1875 Public Health Act ends laissez-faire"
         }
       ],
-      "fullMissionText": "Turn to Centrefold • Pages 8–9 (Milestone 5). Complete the dual-coding sketch challenge in the timeline sketchpad: Draw subterranean egg-shaped brick sewers beneath the Thames embankment."
+      "fullMissionText": "Turn to Centrefold • Pages 8–9. Complete the synoptic causal synthesis linking Science, Engineering, and Government Reform across 1800–1900."
     }
   ],
   "cme_new": [
     {
       "lessonIndex": 0,
-      "lessonId": "lesson_1",
+      "lessonId": "lesson_0",
       "milestoneBadge": "Milestone 1 (1915–1917)",
       "date": "1915–1917",
       "title": "The Contradictory British Pledges",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 1.1",
+      "pageRef": "Workbook • KT 1.0",
       "desc": "Britain issues contradictory wartime pledges: the McMahon-Hussein Correspondence promises Arab independence, the Sykes-Picot Agreement secretly partitions the Ottoman Empire with France, and the Balfour Declaration promises a Jewish national home.",
       "sketchPrompt": "Sketch the three contradictory pledges and imperial partition border",
       "sketchIdeas": [
@@ -1799,12 +1862,12 @@ export const WORKBOOK_TIMELINE_DATA = {
     },
     {
       "lessonIndex": 1,
-      "lessonId": "lesson_2",
-      "milestoneBadge": "Milestone 2 (1946)",
-      "date": "July 1946",
-      "title": "The King David Hotel Bombing",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 1.2",
-      "desc": "The Irgun bombs the British military and administrative headquarters in the King David Hotel, killing 91 people and breaking Britain’s political will to maintain the Palestine Mandate.",
+      "lessonId": "lesson_1",
+      "milestoneBadge": "Milestones 2 & 3 (1945–1948)",
+      "date": "1945–1948",
+      "title": "End of the British Mandate & UN Partition Plan",
+      "pageRef": "Workbook • KT 1.1",
+      "desc": "Irgun bombings at the King David Hotel (1946), the Exodus refugee ship crisis, and post-war exhaustion force Britain to hand Palestine to the UN, which votes for Partition under Resolution 181 (November 1947).",
       "sketchPrompt": "Sketch the shattered wing of King David Hotel and barbed wire security zones",
       "sketchIdeas": [
         "💥 Shattered south-west hotel wing",
@@ -1830,43 +1893,12 @@ export const WORKBOOK_TIMELINE_DATA = {
     },
     {
       "lessonIndex": 2,
-      "lessonId": "lesson_3",
-      "milestoneBadge": "Milestones 3 & 4 (1947–1948)",
-      "date": "1947–1948",
-      "title": "UN Partition Plan & 1948 War of Independence",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 1.3",
-      "desc": "UN Resolution 181 partitions Palestine into Arab and Jewish states; David Ben-Gurion proclaims Israel’s independence on 14 May 1948, triggering an immediate five-nation Arab invasion.",
-      "sketchPrompt": "Sketch UN partition map divisions and five Arab invasion routes",
-      "sketchIdeas": [
-        "🗺️ UN Resolution 181 partition map",
-        "📜 Ben-Gurion declaration of independence",
-        "⚔️ Five Arab army invasion arrows"
-      ],
-      "conceptTitle": "Partition & Independence War",
-      "branches": [
-        {
-          "label": "UN Partition",
-          "value": "Nov 1947 Resolution 181 awards 56% land to Jewish state"
-        },
-        {
-          "label": "Statehood Proclaimed",
-          "value": "14 May 1948 Ben-Gurion declares State of Israel"
-        },
-        {
-          "label": "Arab-Israeli War",
-          "value": "Five Arab armies invade; Israel captures 78% by 1949"
-        }
-      ],
-      "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.3). In Milestones 3 & 4, sketch the UN Partition map divisions and the five Arab invasion routes crossing Israel’s borders."
-    },
-    {
-      "lessonIndex": 3,
-      "lessonId": "lesson_4",
-      "milestoneBadge": "Milestone 5 (1948–1950)",
+      "lessonId": "lesson_2",
+      "milestoneBadge": "Milestones 4 & 5 (1948–1950)",
       "date": "1948–1950",
-      "title": "The Palestinian Catastrophe (Nakba) & Law of Return",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 1.4",
-      "desc": "Over 700,000 Palestinian Arabs flee or are expelled from their homes during the 1948 war, becoming permanent refugees; meanwhile, Israel passes the 1950 Law of Return, welcoming 687,000 Jewish immigrants.",
+      "title": "The 1948–49 War, Palestinian Nakba & Law of Return",
+      "pageRef": "Workbook • KT 1.2",
+      "desc": "Israel declares independence on 14 May 1948 and defeats five invading Arab armies to hold 78% of former Mandate land; over 700,000 Palestinians become stateless refugees (Al-Nakba) while Israel passes the 1950 Law of Return.",
       "sketchPrompt": "Sketch UNRWA refugee tents alongside cargo ships bringing immigrants to Haifa",
       "sketchIdeas": [
         "⛺ UNRWA refugee camp tent",
@@ -1891,12 +1923,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.4). In Milestone 5, sketch the overcrowded UNRWA refugee tents alongside the cargo ships arriving in Haifa with Jewish immigrants."
     },
     {
-      "lessonIndex": 4,
-      "lessonId": "lesson_5",
+      "lessonIndex": 3,
+      "lessonId": "lesson_3",
       "milestoneBadge": "Milestone 6 (1956)",
       "date": "1956",
       "title": "Nasser & The Suez Crisis",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 1.5",
+      "pageRef": "Workbook • KT 1.3",
       "desc": "President Gamal Abdel Nasser nationalises the Suez Canal; Britain, France, and Israel hatch the secret Sèvres Protocol to invade Egypt, but US financial pressure forces a humiliating Anglo-French retreat.",
       "sketchPrompt": "Sketch nationalised Suez Canal waterway and British paratroopers at Port Said",
       "sketchIdeas": [
@@ -1923,12 +1955,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 1.5). In Milestone 6, sketch the nationalised Suez Canal waterway and the British paratroopers landing at Port Said under US diplomatic pressure."
     },
     {
-      "lessonIndex": 5,
-      "lessonId": "lesson_6",
+      "lessonIndex": 4,
+      "lessonId": "lesson_4",
       "milestoneBadge": "Milestones 1 & 2 (Jan–May 1967)",
-      "date": "Jan–May 1967",
-      "title": "The Road to War: Arab Summits & Tiran Blockade",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 2.1",
+      "date": "1964–May 1967",
+      "title": "Water Disputes, Fatah Raids & Road to War",
+      "pageRef": "Workbook • KT 2.1",
       "desc": "Nasser convenes Arab summits, demands the withdrawal of UNEF peacekeepers from Sinai, and closes the Straits of Tiran to Israeli shipping at Sharm el-Sheikh, providing Israel with a clear casus belli.",
       "sketchPrompt": "Sketch Cairo Arab Summit emblem and naval blockade of Straits of Tiran",
       "sketchIdeas": [
@@ -1954,12 +1986,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.1). In Milestones 1 and 2, sketch the Cairo Arab Summit symbol and annotate the blockade of the Straits of Tiran at Sharm el-Sheikh."
     },
     {
-      "lessonIndex": 6,
-      "lessonId": "lesson_7",
+      "lessonIndex": 5,
+      "lessonId": "lesson_5",
       "milestoneBadge": "Milestone 3 (5–10 June 1967)",
       "date": "5–10 June 1967",
       "title": "Operation Focus & The Six-Day War Blitzkrieg",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 2.2",
+      "pageRef": "Workbook • KT 2.2",
       "desc": "Israel launches preemptive air strikes in Operation Focus, obliterating the Egyptian air force on the runways within three hours; IDF armour seizes the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights.",
       "sketchPrompt": "Sketch Israeli Centurion tanks advancing through Sinai and label conquered zones",
       "sketchIdeas": [
@@ -1985,12 +2017,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.2). In Milestone 3, sketch Israeli Centurion tanks advancing through the desert and label the Golan Heights, West Bank, and Sinai."
     },
     {
-      "lessonIndex": 7,
-      "lessonId": "lesson_8",
+      "lessonIndex": 6,
+      "lessonId": "lesson_6",
       "milestoneBadge": "Milestone 4 (Nov 1967)",
       "date": "Nov 1967",
       "title": "Resolution 242 & The Khartoum Three Noes",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 2.3",
+      "pageRef": "Workbook • KT 2.3",
       "desc": "Arab leaders at the Khartoum Summit declare \"No peace, no recognition, no negotiations\" with Israel; the UN Security Council passes Resolution 242, establishing the ambiguous \"land for peace\" formula.",
       "sketchPrompt": "Sketch UN Resolution 242 emblem and Khartoum Three Noes banners",
       "sketchIdeas": [
@@ -2016,12 +2048,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.3). In Milestone 4, sketch the UN Security Council emblem and write out the three banners of the Khartoum \"Three Noes\"."
     },
     {
-      "lessonIndex": 8,
-      "lessonId": "lesson_9",
+      "lessonIndex": 7,
+      "lessonId": "lesson_7",
       "milestoneBadge": "Milestone 5 (1970)",
-      "date": "Sept 1970",
-      "title": "Black September & The Dawson’s Field Hijackings",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 2.4",
+      "date": "1968–1972",
+      "title": "Karameh, Black September & The Munich Crisis",
+      "pageRef": "Workbook • KT 2.4",
       "desc": "The PFLP hijacks four Western airliners to Dawson’s Field in Jordan and blows them up; King Hussein’s army expels PLO guerrilla commandos in bloody urban combat during Black September, forcing Arafat into Lebanon.",
       "sketchPrompt": "Sketch Dawson’s Field aircraft explosion and PLO exile route to Lebanon",
       "sketchIdeas": [
@@ -2047,12 +2079,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.4). In Milestone 5, sketch the Dawson’s Field aircraft explosion and trace the PLO exile route from Jordan to southern Lebanon."
     },
     {
-      "lessonIndex": 9,
-      "lessonId": "lesson_10",
+      "lessonIndex": 8,
+      "lessonId": "lesson_8",
       "milestoneBadge": "Milestone 6 (Oct 1973)",
       "date": "6 Oct 1973",
       "title": "Operation Badr & The Yom Kippur War",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 2.5",
+      "pageRef": "Workbook • KT 2.5",
       "desc": "Egypt and Syria launch a devastating surprise attack on Yom Kippur, breaching the Bar-Lev Line with high-pressure water cannons; Arab OPEC states deploy the oil embargo weapon, quadrupling crude prices worldwide.",
       "sketchPrompt": "Sketch water-monitor breach of Bar-Lev Line and OPEC oil pipeline embargo valve",
       "sketchIdeas": [
@@ -2078,44 +2110,13 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 2.5). In Milestone 6, sketch the water-monitor breach of the Bar-Lev Line and the OPEC oil pipeline embargo valve."
     },
     {
-      "lessonIndex": 10,
-      "lessonId": "lesson_11",
-      "milestoneBadge": "Milestone 1 (Nov 1977)",
-      "date": "Nov 1977",
-      "title": "Sadat’s Historic Address to the Knesset",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 3.1",
-      "desc": "President Anwar Sadat stuns the world by flying to Jerusalem and addressing the Israeli Knesset in person, proclaiming \"No more war, no more bloodshed!\" and breaking three decades of Arab psychological taboo.",
-      "sketchPrompt": "Sketch Sadat addressing the Knesset chamber with olive branch",
-      "sketchIdeas": [
-        "🎙️ Anwar Sadat at Knesset podium",
-        "🕊️ Olive branch of peace",
-        "🇮🇱 Israeli Knesset chamber emblem"
-      ],
-      "conceptTitle": "Sadat’s Jerusalem Peace Leap",
-      "branches": [
-        {
-          "label": "Historic Flight",
-          "value": "19 Nov 1977 Sadat lands at Ben Gurion airport in Tel Aviv"
-        },
-        {
-          "label": "Knesset Speech",
-          "value": "Direct appeal to Israeli people: \"No more war, no more bloodshed\""
-        },
-        {
-          "label": "Arab Backlash",
-          "value": "Arab states sever diplomatic ties and expel Egypt from Arab League"
-        }
-      ],
-      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.1). In Milestone 1, sketch Sadat addressing the Knesset chamber and annotate his historic declaration: \"No more war, no more bloodshed!\""
-    },
-    {
-      "lessonIndex": 11,
-      "lessonId": "lesson_12",
-      "milestoneBadge": "Milestones 2 & 3 (1978–1979)",
-      "date": "1978–1979",
-      "title": "The Camp David Accords & Washington Peace Treaty",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 3.2",
-      "desc": "Jimmy Carter brokers thirteen days of intense negotiations at Camp David between Sadat and Menachem Begin; on 26 March 1979, Egypt and Israel sign a formal peace treaty, returning the Sinai Peninsula to Egyptian sovereignty.",
+      "lessonIndex": 9,
+      "lessonId": "lesson_9",
+      "milestoneBadge": "Milestones 1–3 (1974–1979)",
+      "date": "1974–1979",
+      "title": "Shuttle Diplomacy, Sadat in Jerusalem & Camp David",
+      "pageRef": "Workbook • KT 3.1",
+      "desc": "Following Kissinger’s Sinai I/II disengagement deals and Sadat’s historic 1977 Knesset address in Jerusalem, Jimmy Carter brokers the 1978 Camp David Accords and 1979 Peace Treaty returning Sinai to Egypt.",
       "sketchPrompt": "Sketch three-way handshake on White House lawn and return of Sinai Peninsula",
       "sketchIdeas": [
         "🤝 Carter-Sadat-Begin White House lawn handshake",
@@ -2140,44 +2141,13 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.2). In Milestones 2 and 3, sketch the three-way handshake on the White House lawn and annotate the return of the Sinai Peninsula to Egypt."
     },
     {
-      "lessonIndex": 12,
-      "lessonId": "lesson_13",
-      "milestoneBadge": "Milestone 4 (1982)",
-      "date": "June–Sept 1982",
-      "title": "Operation Peace for Galilee & The Invasion of Lebanon",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 3.3",
-      "desc": "Defense Minister Ariel Sharon orders Operation Peace for Galilee, advancing 40km into Lebanon all the way to Beirut; Christian Phalangist militiamen butcher hundreds of Palestinians in Sabra and Shatila refugee camps.",
-      "sketchPrompt": "Sketch IDF tank columns advancing toward Beirut and Kahan Commission ledger",
-      "sketchIdeas": [
-        "🛡️ Israeli Merkava tank column in Beirut",
-        "⛺ Sabra and Shatila camp silhouette",
-        "⚖️ Kahan Commission judicial report"
-      ],
-      "conceptTitle": "Lebanon Invasion & Aftermath",
-      "branches": [
-        {
-          "label": "Operation Peace for Galilee",
-          "value": "Sharon invades Lebanon to expel PLO and install friendly government"
-        },
-        {
-          "label": "Sabra & Shatila",
-          "value": "Phalangist massacres spark 400,000-strong protest in Tel Aviv"
-        },
-        {
-          "label": "Kahan Commission",
-          "value": "Judicial inquiry finds Sharon personally responsible; forces resignation"
-        }
-      ],
-      "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.3). In Milestone 4, sketch the IDF tank columns entering Beirut and annotate the Kahan Commission finding of \"personal responsibility\" against Sharon."
-    },
-    {
-      "lessonIndex": 13,
-      "lessonId": "lesson_14",
-      "milestoneBadge": "Milestone 5 (1987–1988)",
-      "date": "1987–1988",
-      "title": "The First Intifada & The 1988 Geneva Renunciation",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 3.4",
-      "desc": "A traffic collision in Jabalia sparks the First Intifada across Gaza and the West Bank; youth armed with stones confront armed IDF patrols; in December 1988 in Geneva, Yasser Arafat formally recognises Israel and renounces terrorism.",
+      "lessonIndex": 10,
+      "lessonId": "lesson_10",
+      "milestoneBadge": "Milestones 4 & 5 (1982–1993)",
+      "date": "1982–1993",
+      "title": "1982 Lebanon War, Sabra & Shatila & The First Intifada",
+      "pageRef": "Workbook • KT 3.2",
+      "desc": "Israel’s 1982 invasion of Lebanon expels the PLO to Tunis amid the Sabra and Shatila massacre; in December 1987 the grassroots First Intifada erupts, leading to Arafat’s 1988 Geneva renunciation of terrorism.",
       "sketchPrompt": "Sketch Palestinian youth facing an Israeli tank and Arafat Geneva speech",
       "sketchIdeas": [
         "🪨 Palestinian stone-thrower facing armored vehicle",
@@ -2202,12 +2172,12 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Pages 2–3 (Key Topic 3.4). In Milestone 5, sketch the stone-throwing youth facing an Israeli tank and annotate Arafat’s 1988 Geneva renunciation of terrorism."
     },
     {
-      "lessonIndex": 14,
-      "lessonId": "lesson_15",
+      "lessonIndex": 11,
+      "lessonId": "lesson_11",
       "milestoneBadge": "Milestone 6 (1993–1995)",
       "date": "1993–1995",
       "title": "The Oslo Accords & The Assassination of Rabin",
-      "pageRef": "Workbook Pages 2–3 • Key Topic 3.5",
+      "pageRef": "Workbook • KT 3.3",
       "desc": "Secret Norwegian negotiations produce the 1993 Oslo Accords and the historic Rabin-Arafat White House handshake; on 4 November 1995, Prime Minister Yitzhak Rabin is assassinated at a peace rally in Tel Aviv by a right-wing Israeli extremist.",
       "sketchPrompt": "Sketch Oslo partition map of Areas A, B, and C and Rabin memorial flame",
       "sketchIdeas": [

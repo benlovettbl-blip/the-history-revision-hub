@@ -234,196 +234,413 @@ export default {
   ],
   "key_individuals": [
     {
-      "name": "Thurgood",
-      "title": "The Segregation Smasher",
-      "image": "/units/usa/assets/card_marshall.png",
-      "description": "Thurgood Marshall was the legendary NAACP chief counsel who led the legal fight against segregation, famously winning the Brown v. Board of Education case.",
-      "stats": {
-        "audacity": 85,
-        "diplomaticSneakiness": 95,
-        "rhetoricalPower": 90,
-        "legacyScore": 98
-      }
+      "entity_type": "person",
+      "name": "Thurgood Marshall",
+      "lifespan": "1908 – 1993",
+      "role": "Chief Legal Counsel of the NAACP & US Supreme Court Justice",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
+      "image_position": "center 18%",
+      "origins": "Head of the NAACP Legal Defense Fund who systematically challenged the 1896 Plessy v. Ferguson \"separate but equal\" doctrine through federal constitutional lawsuits under the 14th Amendment.",
+      "significance": "Won landmark Supreme Court desegregation victories in Brown v. Board of Education (1954), Browder v. Gayle (1956, ending Montgomery bus segregation), and Cooper v. Aaron (1958), before Lyndon B. Johnson appointed him the first Black Supreme Court Justice in 1967.",
+      "achievements": [
+        "Presented Kenneth and Mamie Clark’s psychological doll tests before the Supreme Court in Brown v. Board of Education (May 1954), proving segregated schooling harmed Black children.",
+        "Represented Montgomery women in Browder v. Gayle (November 1956), legally striking down municipal bus segregation.",
+        "Defeated Governor Faubus’s school-closure evasions in Cooper v. Aaron (1958)."
+      ],
+      "key_distinction": "Marshall exemplified courtroom litigation via the 14th Amendment—establishing legal rights on paper that still required grassroots direct action and federal enforcement to overcome Southern Massive Resistance."
     },
     {
-      "name": "Eckford",
-      "title": "The Brave Pioneer",
-      "image": "/units/usa/assets/card_eckford.png",
-      "description": "Elizabeth Eckford was one of the Little Rock Nine, exhibiting immense courage when she faced down a violent segregationist mob to attend a white high school in 1957.",
-      "stats": {
-        "audacity": 98,
-        "diplomaticSneakiness": 10,
-        "rhetoricalPower": 50,
-        "legacyScore": 95
-      }
+      "entity_type": "person",
+      "name": "Chief Justice Earl Warren",
+      "aliases": [
+        "Earl Warren"
+      ],
+      "lifespan": "1891 – 1974",
+      "role": "Chief Justice of the United States Supreme Court (1953–1969)",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/earl_warren.jpg",
+      "image_position": "center 18%",
+      "origins": "Former Republican Governor of California appointed Chief Justice by President Eisenhower in 1953, who worked tirelessly behind the scenes to persuade hesitant justices to speak with a single unanimous voice on school segregation.",
+      "significance": "Delivered the unanimous 9–0 verdict in Brown v. Board of Education on 17 May 1954 declaring \"separate educational facilities are inherently unequal\"—though the Court’s vague 1955 Brown II phrase \"with all deliberate speed\" enabled years of Southern delay.",
+      "achievements": [
+        "Authored the unanimous 9–0 Brown v. Board of Education decision (17 May 1954), overturning Plessy v. Ferguson in public education.",
+        "Issued Brown II (1955) without a fixed deadline (\"all deliberate speed\"), exploited by White Citizens’ Councils and the 1956 Southern Manifesto.",
+        "Reaffirmed federal constitutional supremacy over state governors in Cooper v. Aaron (1958)."
+      ]
     },
     {
-      "name": "Parked Rosa",
-      "title": "The Seat Keeper",
-      "image": "/units/usa/assets/card_rosa.png",
-      "description": "Rosa Parks' quiet refusal to give up her bus seat to a white passenger sparked the 381-day Montgomery Bus Boycott.",
-      "stats": {
-        "audacity": 95,
-        "diplomaticSneakiness": 40,
-        "rhetoricalPower": 80,
-        "legacyScore": 97
-      }
+      "entity_type": "person",
+      "name": "President Dwight D. Eisenhower",
+      "aliases": [
+        "Dwight D. Eisenhower",
+        "President Eisenhower",
+        "Eisenhower"
+      ],
+      "lifespan": "1890 – 1969",
+      "role": "34th President of the United States (1953–1961)",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/eisenhower.jpg",
+      "image_position": "center 18%",
+      "origins": "Cautious Republican President and WWII Allied Supreme Commander who privately doubted laws could change racial attitudes, yet insisted federal court authority and Cold War international prestige must be upheld.",
+      "significance": "Signed Executive Order 10730 in September 1957—federalising the Arkansas National Guard and sending 1,000 paratroopers of the 101st Airborne Division to escort the Little Rock Nine—and backed Ngo Dinh Diem in South Vietnam under the Domino Theory.",
+      "achievements": [
+        "Deployed 1,000 troops of the 101st Airborne Division to Little Rock Central High School (24 September 1957) to enforce federal court integration orders against Governor Orval Faubus.",
+        "Signed the Civil Rights Act of 1957 (weakened by Senator Strom Thurmond’s 24-hour filibuster).",
+        "Provided financial aid and military advisers to Ngo Dinh Diem’s anti-communist government in South Vietnam after the 1954 Geneva Accords."
+      ]
     },
     {
-      "name": "Orval",
-      "title": "The Door Blocker",
-      "image": "/units/usa/assets/card_faubus.png",
-      "description": "Governor Orval Faubus infamously deployed the Arkansas National Guard to physically block Black students from integrating Little Rock Central High.",
-      "stats": {
-        "audacity": 80,
-        "diplomaticSneakiness": 70,
-        "rhetoricalPower": 65,
-        "legacyScore": 20
-      }
+      "entity_type": "person",
+      "name": "Governor Orval Faubus",
+      "aliases": [
+        "Orval Faubus",
+        "Faubus"
+      ],
+      "lifespan": "1910 – 1994",
+      "role": "Segregationist Governor of Arkansas (1955–1967)",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
+      "image_position": "center 18%",
+      "origins": "Southern Democratic governor who exploited white segregationist anger (\"Massive Resistance\") ahead of a tough Arkansas re-election campaign.",
+      "significance": "Defied federal court orders in September 1957 by deploying the Arkansas National Guard to block the Little Rock Nine from Central High School, and shut all Little Rock public high schools in 1958–59 (\"The Lost Year\").",
+      "achievements": [
+        "Ordered armed Arkansas National Guardsmen on 4 September 1957 to bar nine Black pupils—including 15-year-old Elizabeth Eckford—from Central High School, triggering Eisenhower’s federal intervention.",
+        "Closed all four Little Rock public high schools for the 1958–59 academic year (\"The Lost Year\") until federal courts forced integrated reopening."
+      ]
     },
     {
+      "entity_type": "person",
+      "name": "Elizabeth Eckford & The Little Rock Nine",
+      "aliases": [
+        "Elizabeth Eckford",
+        "Little Rock Nine"
+      ],
+      "lifespan": "September 1957 – May 1958 (Central High Integration)",
+      "role": "Nine Black Teenagers Who Integrated Little Rock Central High School",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/images/portraits/elizabeth_eckford_1957.jpg",
+      "origins": "Nine high-achieving Black pupils recruited by Arkansas NAACP president Daisy Bates to test compliance with Brown v. Board at all-white Little Rock Central High School in September 1957.",
+      "significance": "Televised images of 15-year-old Elizabeth Eckford walking calmly alone past a screaming segregationist mob and National Guard bayonets shamed America globally during the Cold War and compelled President Eisenhower to send federal paratroopers.",
+      "achievements": [
+        "Endured screaming mobs on 4 September 1957 before entering Central High under 101st Airborne escort on 25 September 1957.",
+        "Persevered through daily hallway assaults and harassment so Ernest Green became Central High’s first Black graduate in May 1958."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Rosa Parks & Jo Ann Robinson",
+      "aliases": [
+        "Rosa Parks",
+        "Jo Ann Robinson"
+      ],
+      "lifespan": "Parks: 1913–2005 · Robinson: 1912–1992",
+      "role": "Montgomery NAACP Secretary & Women’s Political Council Organiser",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/rosa_parks.jpg",
+      "image_position": "center 18%",
+      "origins": "Seasoned Montgomery NAACP secretary Rosa Parks refused driver James F. Blake’s order to give up her bus seat on 1 December 1955; that night, Professor Jo Ann Robinson and the Women’s Political Council (WPC) mimeographed 35,000 boycott leaflets.",
+      "significance": "Ignited and organised the 381-day Montgomery Bus Boycott (1955–56), proving that grassroots Black women’s organisation, economic attrition, and NAACP federal litigation (Browder v. Gayle) could defeat Jim Crow segregation.",
+      "achievements": [
+        "Rosa Parks’s calm arrest on 1 December 1955 provided an unimpeachable test case rallying Montgomery’s 40,000 Black residents.",
+        "Jo Ann Robinson’s WPC distributed 35,000 leaflets overnight launching the 5 December boycott, slashing bus company revenues by ~65% until integrated buses rolled on 21 December 1956."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Emmett Till",
+      "lifespan": "1941 – 1955",
+      "role": "14-Year-Old Chicago Teenager Murdered in Money, Mississippi",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/emmett_till.jpg",
+      "image_position": "center 18%",
+      "origins": "Fourteen-year-old African American boy from Chicago visiting his great-uncle Moses Wright in Money, Mississippi, in August 1955.",
+      "significance": "His brutal lynching by Roy Bryant and J. W. Milam, his mother Mamie Till-Mobley’s courageous decision to hold an open-casket funeral in Chicago seen in Jet magazine, and the killers’ rapid acquittal by an all-white jury galvanised an entire generation of young civil rights activists.",
+      "achievements": [
+        "Mamie Till-Mobley insisted on an open casket (\"Let the people see what I have seen\"), viewed by over 50,000 mourners and millions via Jet magazine.",
+        "Moses Wright risked his life testifying in a segregated Mississippi courtroom, exposing Jim Crow judicial impunity when the all-white jury acquitted both killers—who later confessed for $4,000 in Look magazine (1956)."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Dr Martin Luther King Jr.",
+      "aliases": [
+        "Martin Luther King Jr.",
+        "Martin Luther King",
+        "Dr King",
+        "Dr. King"
+      ],
+      "lifespan": "1929 – 1968",
+      "role": "Baptist Minister, President of the MIA & Co-Founder of the SCLC",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/mlk.jpg",
+      "image_position": "center 18%",
+      "origins": "Twenty-six-year-old Baptist minister elected president of the Montgomery Improvement Association (MIA) in December 1955, who co-founded the Southern Christian Leadership Conference (SCLC) in January 1957.",
+      "significance": "Combined Christian moral appeal, disciplined non-violent direct action, and national television publicity in Birmingham (1963), the March on Washington (1963), and Selma (1965) to compel passage of the 1964 Civil Rights Act and 1965 Voting Rights Act—before shifting north to tackle urban housing and poverty prior to his assassination in April 1968.",
+      "achievements": [
+        "Led the 1955–56 Montgomery Bus Boycott and launched Project C in Birmingham (May 1963), where Bull Connor’s police dogs and fire hoses forced JFK to propose sweeping civil rights legislation.",
+        "Delivered the \"I Have a Dream\" speech to 250,000 marchers at the August 1963 March on Washington, and led the 1965 Selma voter-registration campaign culminating in the Voting Rights Act.",
+        "Led the 1966 Chicago Freedom Movement against northern de facto housing segregation, opposed the Vietnam War, and planned the Poor People’s Campaign before his assassination in Memphis on 4 April 1968 (followed by the 1968 Fair Housing Act)."
+      ],
+      "key_distinction": "King championed interracial integration and non-violent civil disobedience; Malcolm X and Black Power leaders argued non-violence left Black communities defenceless and failed to solve northern de facto poverty and police brutality."
+    },
+    {
+      "entity_type": "person",
+      "name": "Eugene \"Bull\" Connor",
+      "aliases": [
+        "Bull Connor"
+      ],
+      "lifespan": "1897 – 1973",
+      "role": "Commissioner of Public Safety in Birmingham, Alabama",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/bull_connor.jpg",
+      "image_position": "center 18%",
+      "origins": "Hardline segregationist police and fire commissioner in Birmingham (\"Bombingham\"), Alabama, deliberately targeted by SCLC’s 1963 Project C because of his volatile temper.",
+      "significance": "Allowed Klan mobs fifteen minutes to beat Freedom Riders in May 1961 and ordered attack dogs and high-pressure fire hoses against peaceful schoolchildren during the May 1963 Children’s Crusade—producing shocking television footage that forced President Kennedy to act.",
+      "achievements": [
+        "Failed to protect CORE Freedom Riders at the Birmingham bus terminal on Mother’s Day 1961.",
+        "Unleashed police K-9 dogs, mass arrests, and high-pressure water hoses on peaceful Black teenagers in May 1963, backfiring catastrophically on Southern segregationists."
+      ]
+    },
+    {
+      "entity_type": "person",
       "name": "James Meredith",
-      "title": "The Ole Miss Pioneer",
-      "image": "/units/usa/assets/card_meredith.png",
-      "description": "James Meredith became the first African American student admitted to the segregated University of Mississippi, sparking a deadly riot.",
-      "stats": {
-        "audacity": 96,
-        "diplomaticSneakiness": 20,
-        "rhetoricalPower": 60,
-        "legacyScore": 88
-      }
+      "lifespan": "b. 1933",
+      "role": "US Air Force Veteran & Civil Rights Pioneer (Ole Miss & March Against Fear)",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/james_meredith.jpg",
+      "image_fit": "contain",
+      "origins": "Black Air Force veteran backed by the NAACP who won a Supreme Court order to enrol as the first African American student at the segregated University of Mississippi (\"Ole Miss\") in autumn 1962.",
+      "significance": "Required 500 federal marshals and thousands of federal troops ordered by JFK to overcome deadly white rioting at Ole Miss (October 1962); when Meredith was shot on his solo June 1966 \"March Against Fear\", SNCC’s Stokely Carmichael popularised the \"Black Power\" slogan along the route.",
+      "achievements": [
+        "Integrated the University of Mississippi on 1 October 1962 under federal escort after overnight riots left two dead and hundreds injured, graduating in 1963.",
+        "Initiated the June 1966 March Against Fear from Memphis to Jackson to encourage Black voter registration after the 1965 Voting Rights Act."
+      ]
     },
     {
-      "name": "Martin Startin'",
-      "title": "The Dream Deliverer",
-      "image": "/units/usa/assets/card_mlk.png",
-      "description": "Martin Luther King Jr. was the moral compass of the movement, utilizing non-violent protest to dismantle segregation.",
-      "stats": {
-        "audacity": 90,
-        "diplomaticSneakiness": 60,
-        "rhetoricalPower": 100,
-        "legacyScore": 99
-      }
+      "entity_type": "person",
+      "name": "Malcolm X",
+      "lifespan": "1925 – 1965",
+      "role": "Nation of Islam National Spokesperson & Black Nationalist Leader",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
+      "image_position": "center center",
+      "origins": "Born Malcolm Little—whose Garveyite father was killed and family shattered by racism—he converted in prison to Elijah Muhammad’s Nation of Islam (NOI), replacing his \"slave surname\" with \"X\".",
+      "significance": "Gave fierce, articulate voice to Black Americans trapped in northern urban ghettos facing de facto poverty, slum housing, and police brutality—rejecting submissive integration in favour of Black pride, community self-reliance, and armed self-defence (\"by any means necessary\").",
+      "achievements": [
+        "Expanded Nation of Islam membership across northern cities while critiquing King’s 1963 March on Washington as the diluted \"Farce on Washington\".",
+        "Broke with the NOI in 1964, completed the Hajj pilgrimage to Mecca (embracing orthodox Islam and wider human rights solidarity), founded the OAAU, and inspired SNCC and the Black Panthers before his assassination in February 1965."
+      ]
     },
     {
-      "name": "Malcolm Hex",
-      "title": "The Radical Defender",
-      "image": "/units/usa/assets/card_malcolmx.png",
-      "description": "Malcolm X was a fierce advocate for Black empowerment and self-defense who fundamentally challenged the mainstream civil rights approach.",
-      "stats": {
-        "audacity": 98,
-        "diplomaticSneakiness": 50,
-        "rhetoricalPower": 96,
-        "legacyScore": 92
-      }
+      "entity_type": "person",
+      "name": "Stokely Carmichael",
+      "aliases": [
+        "Carmichael"
+      ],
+      "lifespan": "1941 – 1998",
+      "role": "Chairman of SNCC (1966–67) & Leader of the Black Power Movement",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/stokely_carmichael.jpg",
+      "image_position": "38% 18%",
+      "origins": "Veteran Freedom Rider and Mississippi Freedom Summer organiser elected Chairman of the Student Nonviolent Coordinating Committee (SNCC) in May 1966 after years of white violence and federal inaction disillusioned young activists.",
+      "significance": "Electrified crowds in Greenwood, Mississippi, on the June 1966 March Against Fear with the chant \"We want Black Power!\"—marking SNCC and CORE’s decisive shift from interracial non-violence to Black political and economic self-determination.",
+      "achievements": [
+        "Organised Lowndes County, Alabama, Black voters under the symbol of a leaping black panther (1965–66).",
+        "Popularised \"Black Power\" in June 1966, inspiring cultural pride (such as Tommie Smith and John Carlos’s gloved salute at the 1968 Mexico City Olympics)."
+      ]
     },
     {
-      "name": "Stokely Pokey",
-      "title": "The Power Pumper",
-      "image": "/units/usa/assets/card_carmichael.png",
-      "description": "Stokely Carmichael revolutionized the SNCC and brought the phrase 'Black Power' to the national stage, shifting the movement's tone.",
-      "stats": {
-        "audacity": 94,
-        "diplomaticSneakiness": 30,
-        "rhetoricalPower": 92,
-        "legacyScore": 85
-      }
+      "entity_type": "organisation",
+      "name": "Black Panther Party (Huey P. Newton & Bobby Seale)",
+      "aliases": [
+        "Black Panther Party",
+        "Black Panthers",
+        "Huey P. Newton",
+        "Bobby Seale"
+      ],
+      "lifespan": "Founded October 1966 (Oakland, California) – 1982",
+      "role": "Revolutionary Black Nationalist & Community Self-Defence Organisation",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/huey_newton.jpg",
+      "image_fit": "contain",
+      "origins": "Founded in Oakland, California, in October 1966 by college students Huey P. Newton and Bobby Seale in response to inner-city police brutality and urban deprivation highlighted by the 1965 Watts riot.",
+      "significance": "Combined legally armed citizen patrols monitoring police arrests (\"policing the police\") and a Ten-Point Program with practical \"Survival Programs\" such as Free Breakfast for Children and free health clinics—before aggressive police raids and FBI surveillance fractured the party.",
+      "achievements": [
+        "Published the 1966 Ten-Point Program demanding decent housing, full employment, fair Black juries, and an end to police brutality.",
+        "Fed tens of thousands of inner-city schoolchildren daily through the Free Breakfast for Children Program across dozens of US cities.",
+        "Targeted heavily by police raids and FBI surveillance during the late 1960s."
+      ]
     },
     {
-      "name": "Ken",
-      "title": "The Cold War Cruiser",
-      "image": "/units/usa/assets/card_jfk.png",
-      "description": "President John F. Kennedy increased US 'military advisers' in Vietnam to 16,000 and supported the Strategic Hamlet program.",
-      "stats": {
-        "audacity": 85,
-        "diplomaticSneakiness": 90,
-        "rhetoricalPower": 98,
-        "legacyScore": 95
-      }
+      "entity_type": "organisation",
+      "name": "SNCC & CORE (Student Sit-Ins & Freedom Rides)",
+      "aliases": [
+        "SNCC",
+        "CORE",
+        "Greensboro Four",
+        "Ella Baker"
+      ],
+      "lifespan": "CORE: 1942 · SNCC: April 1960",
+      "role": "Grassroots Youth & Interracial Direct-Action Civil Rights Organisations",
+      "group": "Key Topic 1–2: Civil Rights Movement (1954–1975)",
+      "image": "/units/usa/assets/sources/greensboro_four_1960.jpg",
+      "image_fit": "contain",
+      "origins": "CORE (led by James Farmer) pioneered non-violent sit-ins and Rides; SNCC was founded in April 1960 with guidance from Ella Baker after the Greensboro Four launched the 1 February 1960 Woolworth’s lunch-counter sit-in.",
+      "significance": "Transformed civil rights into a mass youth movement—desegregating lunch counters across 100+ southern towns and staging the May 1961 Freedom Rides that forced Attorney General Robert F. Kennedy and the Interstate Commerce Commission (ICC) to enforce interstate bus desegregation.",
+      "achievements": [
+        "After the Greensboro Four’s February 1960 Woolworth sit-in, over 70,000 students joined sit-ins, wade-ins, and kneel-ins across the South.",
+        "CORE and SNCC’s 1961 Freedom Riders endured firebombing at Anniston and mob beatings in Birmingham and Montgomery, compelling the ICC to enforce Boynton v. Virginia from November 1961.",
+        "Led dangerous voter-registration drives across Mississippi during Freedom Summer (1964) and Selma (1965)."
+      ]
     },
     {
-      "name": "Lyndon the Bindin'",
-      "title": "The Aggressive Escalator",
-      "image": "/units/usa/assets/card_lbj.png",
-      "description": "Lyndon B. Johnson rapidly escalated the Vietnam War via the Gulf of Tonkin Resolution, deploying hundreds of thousands of combat troops.",
-      "stats": {
-        "audacity": 95,
-        "diplomaticSneakiness": 99,
-        "rhetoricalPower": 75,
-        "legacyScore": 88
-      }
+      "entity_type": "person",
+      "name": "President John F. Kennedy",
+      "aliases": [
+        "John F. Kennedy",
+        "President Kennedy",
+        "JFK"
+      ],
+      "lifespan": "1917 – 1963",
+      "role": "35th President of the United States (1961–1963)",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/images/cold_war/jfk_cuba_address_oval_office_1962.jpg",
+      "image_position": "center 18%",
+      "origins": "Democratic President constrained domestically by powerful Southern Democrats in Congress while committed overseas to preventing South Vietnam falling to communism under the Domino Theory.",
+      "significance": "Expanded US military advisers in South Vietnam from ~900 to over 16,000, funded the counter-productive Strategic Hamlet Program (1962), and tacitly backed the November 1963 ARVN coup against Ngo Dinh Diem; at home, proposed the sweeping Civil Rights Bill in June 1963 after Birmingham before his assassination in November 1963.",
+      "achievements": [
+        "Enforced interstate transit desegregation (1961) and Ole Miss integration (1962), and proposed comprehensive civil rights legislation on 11 June 1963.",
+        "Sent 16,000+ US military advisers, helicopters, and Strategic Hamlet funding to South Vietnam before losing faith in Diem during the 1963 Buddhist Crisis."
+      ]
     },
     {
-      "name": "Westy",
-      "title": "The Jungle Tallyman",
-      "image": "/units/usa/assets/card_westmoreland.png",
-      "description": "General William Westmoreland commanded US forces in Vietnam, heavily relying on controversial 'Search and Destroy' missions.",
-      "stats": {
-        "audacity": 85,
-        "diplomaticSneakiness": 40,
-        "rhetoricalPower": 70,
-        "legacyScore": 60
-      }
+      "entity_type": "person",
+      "name": "President Lyndon B. Johnson",
+      "aliases": [
+        "Lyndon B. Johnson",
+        "Lyndon Johnson",
+        "President Johnson",
+        "LBJ"
+      ],
+      "lifespan": "1908 – 1973",
+      "role": "36th President of the United States (1963–1969)",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/johnson.jpg",
+      "image_position": "center 18%",
+      "origins": "Master Texan Senate legislator who assumed the presidency after JFK’s assassination in November 1963, determined both to pass landmark civil rights laws (\"Great Society\") and avoid being the first US president to lose a war to communism.",
+      "significance": "Signed the historic Civil Rights Act (1964), Voting Rights Act (1965), and Fair Housing Act (1968), yet escalated US involvement in Vietnam via the August 1964 Gulf of Tonkin Resolution, Operation Rolling Thunder, and over 500,000 combat troops—destroying his presidency after the January 1968 Tet Offensive.",
+      "achievements": [
+        "Steered the Civil Rights Act of 1964 (outlawing public segregation and creating the EEOC) and Voting Rights Act of 1965 (abolishing literacy tests and sending federal registrars) through Congress.",
+        "Secured the near-unanimous August 1964 Gulf of Tonkin Resolution (\"blank cheque\") and sent 3,500 Marines ashore at Da Nang in March 1965, escalating US forces above 536,000 by 1968.",
+        "Withdrew from the 1968 presidential race on 31 March 1968 after the Tet Offensive and Walter Cronkite’s broadcast shattered public trust (\"Credibility Gap\")."
+      ]
     },
     {
-      "name": "Tricky Dicky",
-      "title": "The Secret Bomber",
-      "image": "/units/usa/assets/card_nixon.png",
-      "description": "Richard Nixon promised 'Peace with Honor', instituting Vietnamization while secretly expanding the bombing campaigns into Cambodia.",
-      "stats": {
-        "audacity": 92,
-        "diplomaticSneakiness": 100,
-        "rhetoricalPower": 70,
-        "legacyScore": 65
-      }
+      "entity_type": "person",
+      "name": "Ngo Dinh Diem",
+      "aliases": [
+        "President Diem",
+        "Diem"
+      ],
+      "lifespan": "1901 – 1963",
+      "role": "US-Backed President of South Vietnam (1955–1963)",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/diem.jpg",
+      "image_position": "center 18%",
+      "origins": "Fiercely anti-communist Catholic politician backed by Washington south of the 17th Parallel after the 1954 Geneva Accords, who refused the promised 1956 nationwide reunification elections.",
+      "significance": "His nepotism, reversal of Viet Minh peasant land reforms, Strategic Hamlet forced relocations, and persecution of South Vietnam’s Buddhist majority drove rural support into the National Liberation Front (Vietcong, founded 1960) and culminated in his overthrow and assassination in November 1963.",
+      "achievements": [
+        "Cancelled the 1956 Geneva reunification elections (fearing Ho Chi Minh would win ~80% of the vote) after staging a rigged October 1955 Saigon referendum.",
+        "Enforced the unpopular Strategic Hamlet Program (1962), herding peasants off ancestral lands behind barbed wire.",
+        "Triggered the 1963 Buddhist Crisis—highlighted globally by monk Thich Quang Duc’s self-immolation in June 1963—leading ARVN generals (with US knowledge) to overthrow and kill Diem on 2 November 1963."
+      ]
     },
     {
-      "name": "Giap",
-      "title": "The Tet Tactician",
-      "image": "/units/usa/assets/card_giap.png",
-      "description": "General Vo Nguyen Giap was the military mastermind behind the devastating Tet Offensive and the defeat of the French at Dien Bien Phu.",
-      "stats": {
-        "audacity": 90,
-        "diplomaticSneakiness": 95,
-        "rhetoricalPower": 75,
-        "legacyScore": 95
-      }
+      "entity_type": "person",
+      "name": "Ho Chi Minh & General Vo Nguyen Giap",
+      "aliases": [
+        "Ho Chi Minh",
+        "General Vo Nguyen Giap",
+        "Vo Nguyen Giap",
+        "General Giap",
+        "Giap"
+      ],
+      "lifespan": "Ho: 1890–1969 · Giap: 1911–2013",
+      "role": "President of North Vietnam & Commander-in-Chief of the PAVN",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/general_giap.jpg",
+      "image_position": "center 18%",
+      "origins": "Revolutionary nationalist-communist leaders who defeated French colonial forces at Dien Bien Phu in May 1954 and directed North Vietnam’s war for national reunification.",
+      "significance": "Neutralised overwhelming US airpower and artillery through General Giap’s patient guerrilla strategy (\"hanging onto American belt buckles\"), 250km Cu Chi tunnel networks, the Ho Chi Minh Trail through Laos and Cambodia, and the politically decisive January 1968 Tet Offensive.",
+      "achievements": [
+        "Supplied southern Vietcong fighters via bicycles and trucks down the jungle-canopied Ho Chi Minh Trail despite relentless US bombing.",
+        "Instructed Vietcong cells to win peasant \"hearts and minds\", use punji traps and tunnels, and fight at close quarters so US jets could not strike.",
+        "Launched the January 1968 Tet Offensive across 100+ South Vietnamese cities (including the US Embassy courtyard in Saigon)—suffering heavy military losses yet breaking American political will to continue escalating."
+      ]
     },
     {
-      "name": "Hard Hat Pat",
-      "title": "The Flag-Waving Fighter",
-      "image": "/units/usa/assets/card_hardhat.png",
-      "description": "The 'Hard Hat' workers fiercely supported Nixon's war efforts, culminating in the 1970 Hard Hat Riot where they clashed with anti-war protesters.",
-      "stats": {
-        "audacity": 85,
-        "diplomaticSneakiness": 20,
-        "rhetoricalPower": 60,
-        "legacyScore": 70
-      }
+      "entity_type": "person",
+      "name": "General William Westmoreland",
+      "aliases": [
+        "William Westmoreland",
+        "General Westmoreland",
+        "Westmoreland"
+      ],
+      "lifespan": "1914 – 2005",
+      "role": "Commander of US Military Assistance Command, Vietnam (MACV, 1964–1968)",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/westmoreland.jpg",
+      "image_position": "center top",
+      "origins": "Conventional US Army general commanding American forces in South Vietnam from 1964 to 1968, convinced superior firepower and attrition (\"body counts\") would break communist morale.",
+      "significance": "Directed \"Search and Destroy\" helicopter raids, Operation Ranch Hand chemical defoliation (Agent Orange and napalm), and heavy bombing—tactics that alienated South Vietnamese villagers (\"Zippo raids\"), lowered US conscript morale, and failed to prevent the 1968 Tet Offensive.",
+      "achievements": [
+        "Implemented conventional attrition warfare measured by enemy \"body counts\" rather than territory or peasant loyalty.",
+        "Deployed Huey helicopter \"Search and Destroy\" sweeps alongside Agent Orange defoliants and napalm, driving rural civilians toward the Vietcong.",
+        "Claimed in late 1967 that the \"end begins to come into view\" just weeks before the January 1968 Tet Offensive exposed the \"Credibility Gap\"."
+      ]
     },
     {
-      "name": "Kissinger",
-      "title": "The Secret Negotiator",
-      "image": "/units/usa/assets/sources/portraits/kissinger.jpg",
-      "description": "Henry Kissinger, National Security Advisor, conducted the secret back-channel negotiations that ultimately led to the Paris Peace Accords.",
-      "stats": {
-        "audacity": 80,
-        "diplomaticSneakiness": 100,
-        "rhetoricalPower": 85,
-        "legacyScore": 80
-      }
+      "entity_type": "person",
+      "name": "Lieutenant William Calley",
+      "aliases": [
+        "William Calley",
+        "Calley"
+      ],
+      "lifespan": "1943 – 2024",
+      "role": "Charlie Company Platoon Leader at the My Lai Massacre (16 March 1968)",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/william_calley.jpg",
+      "image_position": "center top",
+      "origins": "Junior officer in Charlie Company, 23rd Infantry Division, sent on a \"Search and Destroy\" sweep into Son My (My Lai) village on 16 March 1968.",
+      "significance": "Ordered the murder of between 347 and 504 unarmed Vietnamese villagers—mostly women, children, and elderly men—which army helicopter pilot Hugh Thompson Jr. intervened to halt; when journalist Seymour Hersh exposed the 20-month cover-up in November 1969, public moral revulsion against the war surged across America.",
+      "achievements": [
+        "Directed the My Lai massacre (16 March 1968), covered up by military authorities until Ronald Ridenhour’s letters and Seymour Hersh’s November 1969 press disclosures.",
+        "Only soldier convicted at court-martial (March 1971, serving three and a half years under house arrest), polarising both anti-war protesters and pro-war conservatives."
+      ]
     },
     {
-      "name": "Ho Chi Win",
-      "title": "The Unyielding Spirit",
-      "image": "/units/usa/assets/card_ho_chi_minh.png",
-      "description": "Ho Chi Minh was the revolutionary founder of the Viet Minh. His unyielding determination inspired the North Vietnamese to outlast the USA.",
-      "stats": {
-        "audacity": 100,
-        "diplomaticSneakiness": 100,
-        "rhetoricalPower": 100,
-        "legacyScore": 100
-      }
+      "entity_type": "person",
+      "name": "President Richard Nixon & Henry Kissinger",
+      "aliases": [
+        "President Richard Nixon",
+        "Richard Nixon",
+        "Nixon",
+        "Henry Kissinger",
+        "Kissinger"
+      ],
+      "lifespan": "Nixon: 1913–1994 · Kissinger: 1923–2023",
+      "role": "37th US President (1969–74) & National Security Advisor / Secretary of State",
+      "group": "Key Topic 3–4: US Involvement in the Vietnam War (1954–1975)",
+      "image": "/units/usa/assets/sources/portraits/nixon.jpg",
+      "image_position": "center 18%",
+      "origins": "Elected in 1968 promising \"peace with honour\" and appealing to America’s conservative \"Silent Majority\" (November 1969), Nixon worked with National Security Advisor Henry Kissinger to withdraw US troops without admitting defeat.",
+      "significance": "Implemented \"Vietnamization\" (handing combat to the ARVN while cutting US troop numbers), secretly bombed Cambodia (sparking the May 1970 Kent State shootings), launched the December 1972 Christmas Bombings, and signed the January 1973 Paris Peace Accords with Le Duc Tho—followed by Congress passing the War Powers Act (1973) and Saigon falling on 30 April 1975.",
+      "achievements": [
+        "Introduced Vietnamization (1969) to phase out US ground conscripts while expanding bombing into Cambodia (1969–70, triggering campus protests and 4 student deaths at Kent State on 4 May 1970, alongside pro-war Wall Street Hard Hat counter-rallies).",
+        "Kissinger conducted secret Paris negotiations with North Vietnam’s Le Duc Tho from 1969, culminating—after the December 1972 Christmas Bombings—in the 27 January 1973 Paris Peace Accords (US withdrawal and POW release under Operation Homecoming).",
+        "Constrained by the Pentagon Papers leak (1971), Watergate, and the November 1973 War Powers Act, the US did not re-intervene when General Van Tien Dung’s 1975 Spring Offensive captured Saigon on 30 April 1975."
+      ]
     }
   ],
   "mock_exams": [
@@ -3165,8 +3382,6 @@ export default {
           "type": "judicial_ruling",
           "title": "Source A: From the Unanimous Supreme Court Opinion Delivered by Chief Justice Earl Warren in Brown v. Board of Education (17 May 1954)",
           "date": "17 May 1954",
-          "image": "/units/usa/assets/sources/warren-court-1954.jpg",
-          "image_url": "/units/usa/assets/sources/warren-court-1954.jpg",
           "attribution": "United States Supreme Court, Brown v. Board of Education of Topeka, 347 U.S. 483 (1954)",
           "question_badge": "Cross-Referencing",
           "question": "How does Chief Justice Warren's reasoning in Source A directly reject the constitutional doctrine established in Plessy v. Ferguson (1896)?",
@@ -3182,7 +3397,6 @@ export default {
           },
           "hinge_question": "Why was achieving a unanimous 9–0 decision considered essential by Chief Justice Earl Warren?",
           "source_context": "United States Supreme Court Reports, 347 U.S. 483. Chief Justice Earl Warren, speaking on behalf of a unanimous nine-member court for The American judicial system, state governments, and the American citizenry with the objective: To issue an unequivocal, unanimous legal mandate dismantling the constitutional foundation of racial apartheid in American education.. **Hinge Question:** Why was achieving a unanimous 9–0 decision considered essential by Chief Justice Earl Warren?",
-          "src": "/units/usa/assets/sources/warren-court-1954.jpg",
           "source": "/units/usa/assets/sources/portraits/earl_warren.jpg",
           "caption": "The nine justices of the Warren Court in judicial robes (May 1954). Chief Justice Earl Warren (seated center) forged a unanimous 9–0 decision outlawing racial segregation in public schools.",
           "text": "Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educational opportunities? We believe that it does... To separate them from others of similar age and qualifications solely because of their race generates a feeling of inferiority as to their status in the community that may affect their hearts and minds in a way unlikely ever to be undone... We conclude that in the field of public education the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal."
@@ -3848,9 +4062,9 @@ export default {
             }
           ],
           "isReversed": false,
-          "image": "/units/usa/assets/sources/rosa-parks-fingerprint.jpg",
-          "image_alt": "Rosa Parks being fingerprinted following her arrest in Montgomery, Alabama (1955)",
-          "caption": "Rosa Parks being fingerprinted by Montgomery police officer D.H. Lackey following her arrest on 1 December 1955 for refusing to yield her seat.",
+          "image": "/units/usa/assets/sources/mlk_boycott_mass_meeting_1956.jpg",
+          "image_alt": "Dr Martin Luther King Jr. speaking from a church pulpit to a packed Montgomery boycott congregation",
+          "caption": "Dr Martin Luther King Jr. addressing a packed church mass meeting in Montgomery during the 381-day bus boycott (1956).",
           "theme": "The Arrest of Rosa Parks",
           "content": "<span class=\"para-ref\">[1.1]</span> On 1 December 1955 in Montgomery, Alabama, seasoned activist **Rosa Parks** boarded a city bus and sat in the 'colored' section. When the white rows filled, driver **James F. Blake** ordered Parks and three Black passengers to stand so a white man could sit. When Parks calmly refused to vacate her seat, Blake summoned police, who arrested and booked her.\n\n<span class=\"para-ref\">[1.2]</span> As secretary of the local NAACP, Parks possessed impeccable integrity that made her an ideal test plaintiff. Learning of her arrest, Jo Ann Robinson and the **Women's Political Council (WPC)** worked through the night, duplicating 35,000 leaflets calling on Montgomery's Black community to stage a one-day bus boycott on 5 December, the morning of Parks's trial."
         },
@@ -4608,7 +4822,9 @@ export default {
                 "provenance": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "attribution": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "content": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
-                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees."
+                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Danielle L. McGuire"
               },
               {
                 "interpNum": "2",
@@ -4618,7 +4834,9 @@ export default {
                 "provenance": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "attribution": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "content": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
-                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling."
+                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · David L. Lewis"
               }
             ]
           },
@@ -4680,7 +4898,9 @@ export default {
                 "provenance": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "attribution": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "content": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
-                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees."
+                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Danielle L. McGuire"
               },
               {
                 "interpNum": "2",
@@ -4690,7 +4910,9 @@ export default {
                 "provenance": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "attribution": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "content": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
-                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling."
+                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · David L. Lewis"
               }
             ],
             "sources": [
@@ -4807,7 +5029,9 @@ export default {
                 "provenance": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "attribution": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "content": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
-                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees."
+                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Danielle L. McGuire"
               },
               {
                 "interpNum": "2",
@@ -4817,7 +5041,9 @@ export default {
                 "provenance": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "attribution": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "content": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
-                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling."
+                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · David L. Lewis"
               }
             ],
             "sources": [
@@ -4971,7 +5197,9 @@ export default {
                 "provenance": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "attribution": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
                 "content": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
-                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees."
+                "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Danielle L. McGuire"
               },
               {
                 "interpNum": "2",
@@ -4981,7 +5209,9 @@ export default {
                 "provenance": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "attribution": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
                 "content": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
-                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling."
+                "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · David L. Lewis"
               }
             ],
             "sources": [
@@ -5088,7 +5318,9 @@ export default {
             "provenance": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
             "attribution": "Historian Danielle L. McGuire, 'At the Dark End of the Street: Black Women, Rape, and Resistance' (2010)",
             "content": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
-            "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees."
+            "text": "The Montgomery Bus Boycott was fundamentally the achievement of organized Black working-class women. Long before national male leaders arrived, Jo Ann Robinson and the Women’s Political Council had methodically planned a bus strike. Within hours of Rosa Parks’ arrest, Robinson spent the night mimeographing 35,000 leaflets. Over the next 381 days, thousands of domestic maids and cooks walked up to twelve miles a day in freezing winter and blistering summer, while local drivers ran an intricate 300-car dispatch network. It was this daily grassroots courage and economic sacrifice—depriving the bus company of over 70% of its passengers—that brought Montgomery to its knees.",
+            "studio_audio": "/audio/sources/usa/lesson_1_3_i1.mp3",
+            "studio_voice_label": "Historian 1 · Danielle L. McGuire"
           },
           {
             "interpNum": "2",
@@ -5098,7 +5330,9 @@ export default {
             "provenance": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
             "attribution": "Historian David L. Lewis, 'King: A Critical Biography' (1970)",
             "content": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
-            "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling."
+            "text": "While grassroots logistics sustained the boycott, the movement achieved national momentum and ultimate victory because of the charismatic moral leadership of Dr Martin Luther King Jr. King provided the strategic vision and rhetorical genius that unified disparate local factions and prevented violent retaliation despite firebombings and arrests. He framed the local dispute as a national crusade for Christian justice, attracting essential northern financial support and national media coverage. Crucially, local economic pressure alone could not change municipal segregation laws; success ultimately depended on the legal strategy that secured the Supreme Court’s Browder v. Gayle ruling.",
+            "studio_audio": "/audio/sources/usa/lesson_1_3_i2.mp3",
+            "studio_voice_label": "Historian 2 · David L. Lewis"
           }
         ]
       },
@@ -5349,8 +5583,6 @@ export default {
           "type": "judicial_ruling",
           "title": "Source E: From the Federal District Court Ruling in Browder v. Gayle Outlawing Bus Segregation (5 June 1956)",
           "date": "5 June 1956",
-          "image": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
-          "image_url": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
           "attribution": "United States District Court for the Middle District of Alabama, Browder v. Gayle, 142 F. Supp. 707 (1956)",
           "question_badge": "Historical Context",
           "question": "Explain the significance of the federal judicial decision in Source E in bringing about the final victory of the boycott.",
@@ -5366,7 +5598,6 @@ export default {
           },
           "hinge_question": "Could the Montgomery Bus Boycott have succeeded through economic pressure alone without the federal court victory in Browder v. Gayle?",
           "source_context": "United States District Court for the Middle District of Alabama, 142 F. Supp. 707. Federal Judges Richard Rives and Frank Johnson Jr. for The City of Montgomery, the State of Alabama, and the federal judiciary with the objective: To apply the constitutional precedent of Brown v. Board to municipal public transportation systems.. **Hinge Question:** Could the Montgomery Bus Boycott have succeeded through economic pressure alone without the federal court victory in Browder v. Gayle?",
-          "src": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
           "source": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
           "caption": "Rosa Parks seated near the front of a Montgomery city bus on 21 December 1956, the morning the Supreme Court mandate in Browder v. Gayle took effect, ending 381 days of boycott.",
           "text": "We hold that the statutes and ordinances requiring segregation of the white and colored races on the motor buses of a common carrier of passengers in the City of Montgomery and the State of Alabama violate the due process and equal protection clauses of the Fourteenth Amendment to the Constitution of the United States. In the light of Brown v. Board of Education, the separate but equal doctrine can no longer be safely followed as a correct statement of the law. There is no rational basis for the segregation of races in public transportation."
@@ -5920,9 +6151,9 @@ export default {
               "source": "/units/usa/assets/sources/little-rock-protest-1957.jpg"
             }
           ],
-          "image": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg",
-          "image_alt": "White segregationists waving Confederate battle flags and carrying protest placards",
-          "caption": "Segregationist demonstrators holding American flags and placards declaring 'Race Mixing is Communism' and 'Stop the Race Mixing March of the Antichrist' on the steps of the Arkansas State Capitol in Little Rock (1959).",
+          "image": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
+          "image_alt": "Portrait of Senator Strom Thurmond of South Carolina",
+          "caption": "Senator Strom Thurmond of South Carolina, a principal author of the 1956 Southern Manifesto who staged a 24-hour Senate filibuster against the 1957 Civil Rights Act.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[1.1]</span> In the wake of the 1954 *Brown* decision, white southerners organized aggressive resistance networks across the region. In July 1954, plantation manager **Robert B. Patterson** founded the first chapter of the **White Citizens' Councils** in Indianola, Mississippi. Unlike the hooded night-riders of the Ku Klux Klan, council members were respectable civic elites, including wealthy bankers, plantation owners, judges, newspaper editors, and state politicians seeking to defend white supremacy.\n\n<span class=\"para-ref\">[1.2]</span> Operating as an 'uptown Klan', the Councils specialized in calculated **economic intimidation** rather than overt vigilantism. Black sharecroppers, teachers, and business owners who signed integration petitions or attempted to register to vote were promptly fired from their jobs, evicted from tenant farms, and denied bank credit. By 1956, council membership surpassed sixty thousand across Mississippi, successfully purging hundreds of Black voters from county registration rolls."
         },
@@ -6004,9 +6235,9 @@ export default {
               "text": "Question by Special Prosecutor: 'Mr. Wright, do you see the man in this courtroom who came to your house that night and took your grandnephew, Emmett Till?'\nMose Wright stood up in the witness box, extended his trembling arm, pointed his finger straight at J.W. Milam, and answered clearly: 'Thar he.' In Mississippi in 1955, for a Black man to point his finger at a white man and accuse him of kidnapping and murder was almost certain death."
             }
           ],
-          "image": "/units/usa/assets/sources/little-rock-nine-1957.jpg",
-          "image_alt": "Portrait of fourteen-year-old Emmett Till before his murder in Mississippi",
-          "caption": "Plate 1.8: Fourteen-year-old Emmett Till, whose brutal murder in August 1955 and the subsequent acquittal of his killers shocked the nation.",
+          "image": "/units/usa/assets/sources/portraits/emmett_till.jpg",
+          "image_alt": "Family portrait of fourteen-year-old Emmett Till wearing a hat and tie",
+          "caption": "Fourteen-year-old Emmett Till of Chicago in a family portrait; his August 1955 murder in Mississippi and the 67-minute acquittal of his killers shocked America.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[3.1]</span> In September 1955, Roy Bryant and J.W. Milam stood trial for kidnapping and murder in Sumner, Mississippi. In an extraordinary act of southern courtroom courage, Emmett's sixty-four-year-old great-uncle, **Moses Wright courtroom testimony**, bravely rose on the witness stand, pointed his finger directly at the defendants, and publicly identified them as the armed men who abducted Emmett.\n\n<span class=\"para-ref\">[3.2]</span> Despite compelling eyewitness testimony and medical evidence, the segregated panel delivered an **all-white jury acquittal** after just sixty-seven minutes. Four months later, protected from further prosecution by double jeopardy, Bryant and Milam sold their story to *Look* magazine for $4,000. Their brazen **Look magazine confession** bragging about the killing sparked intense moral outrage across northern states, exposing the utter corruption of Jim Crow justice."
         },
@@ -6696,7 +6927,9 @@ export default {
                 "provenance": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "attribution": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "content": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
-                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected."
+                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Racial Terror View"
               },
               {
                 "interpNum": "2",
@@ -6706,7 +6939,9 @@ export default {
                 "provenance": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "attribution": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "content": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
-                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless."
+                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Massive Resistance View"
               }
             ]
           },
@@ -6768,7 +7003,9 @@ export default {
                 "provenance": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "attribution": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "content": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
-                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected."
+                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Racial Terror View"
               },
               {
                 "interpNum": "2",
@@ -6778,7 +7015,9 @@ export default {
                 "provenance": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "attribution": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "content": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
-                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless."
+                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Massive Resistance View"
               }
             ],
             "sources": [
@@ -6907,7 +7146,9 @@ export default {
                 "provenance": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "attribution": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "content": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
-                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected."
+                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Racial Terror View"
               },
               {
                 "interpNum": "2",
@@ -6917,7 +7158,9 @@ export default {
                 "provenance": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "attribution": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "content": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
-                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless."
+                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Massive Resistance View"
               }
             ],
             "sources": [
@@ -7083,7 +7326,9 @@ export default {
                 "provenance": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "attribution": "From a history of racial violence in the American South in the 1950s, published in 2017",
                 "content": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
-                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected."
+                "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Racial Terror View"
               },
               {
                 "interpNum": "2",
@@ -7093,7 +7338,9 @@ export default {
                 "provenance": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "attribution": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
                 "content": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
-                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless."
+                "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Massive Resistance View"
               }
             ],
             "sources": [
@@ -7218,7 +7465,9 @@ export default {
             "provenance": "From a history of racial violence in the American South in the 1950s, published in 2017",
             "attribution": "From a history of racial violence in the American South in the 1950s, published in 2017",
             "content": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
-            "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected."
+            "text": "Civil rights progress across the Deep South between 1954 and 1959 was stalled above all by raw physical terror and the certainty that white killers would never be punished. Resurgent Ku Klux Klan chapters bombed Black homes and churches, while the brutal 1955 lynching of fourteen-year-old Emmett Till in Mississippi demonstrated the lethal price of defying Jim Crow etiquette. Because Black citizens were barred from voting rolls, all-white juries routinely acquitted white murderers within minutes, leaving Southern African Americans intimidated and physically unprotected.",
+            "studio_audio": "/audio/sources/usa/lesson_1_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Racial Terror View"
           },
           {
             "interpNum": "2",
@@ -7228,7 +7477,9 @@ export default {
             "provenance": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
             "attribution": "From a political history of Southern 'Massive Resistance' and federal civil rights policy, published in 2014",
             "content": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
-            "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless."
+            "text": "The decisive barrier slowing civil rights progress in the years 1954–59 was organized institutional obstruction by respectable white elites combined with timid federal legislation. Across the South, 250,000 middle-class members of the White Citizens’ Councils evicted Black sharecroppers and sacked NAACP petitioners, while 101 congressmen signed the 1956 Southern Manifesto to legitimise legal defiance. In Washington, powerful Southern senators diluted the Civil Rights Act of 1957—stripping out federal school-integration powers and guaranteeing local all-white jury trials—so federal laws remained largely toothless.",
+            "studio_audio": "/audio/sources/usa/lesson_1_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Massive Resistance View"
           }
         ]
       },
@@ -7405,8 +7656,6 @@ export default {
           "type": "press_report",
           "title": "Source B: Front-Page Report from the Chicago Defender on the Lynching of Emmett Till (10 September 1955)",
           "date": "10 September 1955",
-          "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
-          "image_url": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
           "attribution": "The Chicago Defender, Front-Page Report (10 September 1955)",
           "question_badge": "Source Inference",
           "question": "What can you infer from Source B regarding the impact of Mamie Till-Mobley’s decision to hold an open-casket funeral?",
@@ -7422,9 +7671,8 @@ export default {
           },
           "hinge_question": "Why did the lynching of Emmett Till catalyze the civil rights movement in a way that hundreds of previous unpunished lynchings had not?",
           "source_context": "Chicago Defender National Edition, Historic Black Press Archive. Chicago Defender editorial staff and investigative journalists for African American communities across the North and national civil rights organizations with the objective: To expose the barbaric violence of Mississippi white supremacy and generate nationwide outrage demanding federal intervention.. **Hinge Question:** Why did the lynching of Emmett Till catalyze the civil rights movement in a way that hundreds of previous unpunished lynchings had not?",
-          "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
           "source": "/units/usa/assets/sources/portraits/emmett_till.jpg",
-          "caption": "Segregationist demonstrators holding American flags and placards declaring 'Race Mixing is Communism' and 'Stop the Race Mixing March of the Antichrist' on the steps of the Arkansas State Capitol in Little Rock (1959).",
+          "caption": "Front-page press report published in the Chicago Defender (10 September 1955) documenting national outrage over the lynching of Emmett Till in Mississippi.",
           "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism."
         },
         {
@@ -10434,8 +10682,6 @@ export default {
           "type": "open_letter",
           "title": "Source A: From Dr Martin Luther King Jr.'s 'Letter from Birmingham Jail' Written to Moderate White Clergymen (16 April 1963)",
           "date": "16 April 1963",
-          "image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
-          "image_url": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
           "attribution": "Dr Martin Luther King Jr., Letter from Birmingham Jail (16 April 1963)",
           "question_badge": "Reliability & Provenance",
           "question": "How does the specific audience of moderate clergymen shape King's arguments regarding direct action in Source A?",
@@ -10451,7 +10697,6 @@ export default {
           },
           "hinge_question": "Why did King consider the 'white moderate' who prioritized order over justice to be a greater stumbling block than the Ku Klux Klan?",
           "source_context": "The King Center Archives, Atlanta, Georgia. Dr Martin Luther King Jr., incarcerated in the Birmingham city jail for Eight prominent moderate white Christian and Jewish clergymen in Alabama with the objective: To dismantle the moral argument for patience and defend the urgency of direct-action civil disobedience.. **Hinge Question:** Why did King consider the 'white moderate' who prioritized order over justice to be a greater stumbling block than the Ku Klux Klan?",
-          "src": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
           "source": "/units/usa/assets/sources/portraits/mlk.jpg",
           "caption": "Police attack dogs deployed by Public Safety Commissioner Eugene 'Bull' Connor against civil rights demonstrators in Birmingham, Alabama, May 1963.",
           "text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word 'Wait!' It rings in the ear of every Negro with piercing familiarity. This 'Wait' has almost always meant 'Never.' We must come to see, with one of our distinguished jurists, that 'justice too long delayed is justice denied.'"
@@ -11054,29 +11299,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Freedom Summer",
-          "def": "The 1964 campaign that mobilized over 1,000 student volunteers to register Black voters and open Freedom Schools in Mississippi.",
-          "definition": "The 1964 campaign that mobilized over 1,000 student volunteers to register Black voters and open Freedom Schools in Mississippi."
+          "term": "Malcolm X",
+          "def": "Prominent spokesperson for the Nation of Islam until 1964 who rejected integration in favour of Black pride, separate Black institutions, and armed self-defence against racist violence."
         },
         {
-          "term": "Mississippi Burning Case",
-          "def": "The June 1964 murder of civil rights workers James Chaney, Andrew Goodman, and Michael Schwerner by the KKK and deputy sheriffs.",
-          "definition": "The June 1964 murder of civil rights workers James Chaney, Andrew Goodman, and Michael Schwerner by the KKK and deputy sheriffs."
+          "term": "The Ballot or the Bullet",
+          "def": "Malcolm X's famous April 1964 speech warning American politicians that Black citizens would demand full voting rights or be forced to defend their communities."
         },
         {
-          "term": "Fannie Lou Hamer",
-          "def": "MFDP leader whose impassioned televised testimony at the 1964 Democratic National Convention exposed the violent terror used to disenfranchise Black Mississippians.",
-          "definition": "MFDP leader whose impassioned televised testimony at the 1964 Democratic National Convention exposed the violent terror used to disenfranchise Black Mississippians."
+          "term": "Stokely Carmichael",
+          "def": "Chairman of SNCC from 1966 who popularised the slogan 'Black Power' during the March Against Fear in Mississippi after growing frustrated with slow non-violent progress."
         },
         {
-          "term": "Edmund Pettus Bridge",
-          "def": "The bridge in Selma, Alabama where state troopers brutally attacked 600 voting rights marchers with clubs and tear gas on 'Bloody Sunday'.",
-          "definition": "The bridge in Selma, Alabama where state troopers brutally attacked 600 voting rights marchers with clubs and tear gas on 'Bloody Sunday'."
+          "term": "Black Power",
+          "def": "Movement emerging in the mid-1960s demanding Black political self-determination, cultural pride, economic control of Black neighbourhoods, and protection against police brutality."
         },
         {
-          "term": "Voting Rights Act of 1965",
-          "def": "Landmark federal legislation that suspended literacy tests and authorized federal examiners to register Southern voters directly.",
-          "definition": "Landmark federal legislation that suspended literacy tests and authorized federal examiners to register Southern voters directly."
+          "term": "Black Panther Party",
+          "def": "Militant organisation founded by Huey Newton and Bobby Seale in Oakland, California in October 1966 that combined armed police-watch patrols with community survival programmes such as free breakfasts for children."
+        },
+        {
+          "term": "1968 Mexico Olympics",
+          "def": "International sporting stage where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the 200m medal podium to protest racial injustice and poverty in America."
         }
       ],
       "narrative_blocks": [
@@ -11896,7 +12140,7 @@ export default {
           "a": "To protest racial injustice and poverty in America on an international stage, wearing black socks to represent Black poverty."
         }
       ],
-      "vocab_cloze_text": "During the mid-1960s, a fiery alternative to the Southern non-violent movement emerged in northern and western urban centers, personified by [Malcolm X]. Rejecting Martin Luther King Jr.'s call for integration, Malcolm warned white politicians in his iconic 1964 address that Black Americans would embrace [The Ballot or the Bullet] if denied their constitutional rights. Following Malcolm's assassination, SNCC Chairman [Stokely Carmichael] electrified the 1966 March Against Fear by raising the militant cry of [Black Power], breaking decisively from non-violent direct action. In Oakland, California, Huey Newton and Bobby Seale established the [Black Panther Party], carrying loaded firearms on street patrols to protect Black citizens against police brutality while distributing thousands of free breakfasts to children. The global impact of this militant awakening culminated at the [1968 Mexico Olympics], when track stars Tommie Smith and John Carlos raised black-gloved fists on the medal podium to protest American racial oppression.",
+      "vocab_cloze_text": "During the mid-1960s, a fiery alternative to the Southern non-violent movement emerged in northern and western urban centres, personified by [Malcolm X]. Rejecting Martin Luther King Jr.'s call for integration, Malcolm warned white politicians in his iconic 1964 address that Black Americans would embrace [The Ballot or the Bullet] if denied their constitutional rights. Following Malcolm's assassination, SNCC Chairman [Stokely Carmichael] electrified the 1966 March Against Fear by raising the militant cry of [Black Power], breaking decisively from non-violent direct action. In Oakland, California, Huey Newton and Bobby Seale established the [Black Panther Party], carrying loaded firearms on street patrols to monitor police brutality while distributing thousands of free breakfasts to children. The global impact of this militant awakening culminated at the [1968 Mexico Olympics], when track stars Tommie Smith and John Carlos raised black-gloved fists on the medal podium to protest American racial oppression.",
       "causal_domino_spine": {
         "title": "The Black Power Movement & Black Panthers: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -12008,8 +12252,6 @@ export default {
           "type": "speech_transcript",
           "title": "Source B: From Malcolm X's Landmark Address 'The Ballot or the Bullet' Delivered in Cleveland, Ohio (3 April 1964)",
           "date": "3 April 1964",
-          "image": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
-          "image_url": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
           "attribution": "Malcolm X, The Ballot or the Bullet, Cory Methodist Church, Cleveland, Ohio (3 April 1964)",
           "question_badge": "Historical Context",
           "question": "Explain the political context that led Malcolm X to deliver his 'Ballot or the Bullet' address in Source B.",
@@ -12025,7 +12267,6 @@ export default {
           },
           "hinge_question": "How did Malcolm X's critique of the Democratic Party reflect growing Black disillusionment with liberal politicians in 1964?",
           "source_context": "Malcolm X Memorial Foundation / Library of Congress Sound Recording Collection. Malcolm X (el-Hajj Malik el-Shabazz) for 3,000 community members at Cory Methodist Church and national broadcast audiences with the objective: To warn the federal government that African Americans would no longer tolerate non-violent passivity if their political rights were obstructed.. **Hinge Question:** How did Malcolm X's critique of the Democratic Party reflect growing Black disillusionment with liberal politicians in 1964?",
-          "src": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
           "source": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
           "caption": "Malcolm X speaking at a press conference in 1964, articulating the philosophy of Black nationalism, self-defense, and political accountability.",
           "text": "It's got to be the ballot or the bullet. The ballot or the bullet. If you're afraid to use an expression like that, you should get on out of the country, you should get back in the cotton patch... In 1964, it's the ballot or the bullet. Don't be throwing out any ballots. A ballot is like a bullet. You don't throw your ballots until you see a target, and if that target is not within your reach, keep your ballot in your pocket... It's time for us to see that every time we look at our community, we see our people suffering from exploitation, poverty, and brutality. If the government is unwilling or unable to defend the lives and properties of Negroes, it's time for Negroes to defend themselves."
@@ -12064,8 +12305,6 @@ export default {
           "type": "manifesto",
           "title": "Source D: Excerpt from the Black Panther Party for Self-Defense Ten-Point Platform and Program (15 October 1966)",
           "date": "15 October 1966",
-          "image": "/units/usa/assets/sources/black-panthers-marching.jpg",
-          "image_url": "/units/usa/assets/sources/black-panthers-marching.jpg",
           "attribution": "Huey P. Newton and Bobby Seale, Black Panther Party Platform and Program, Oakland, California (October 1966)",
           "question_badge": "Cross-Referencing",
           "question": "How do the socioeconomic demands in Source D contrast with the legislative focus of the mainstream civil rights movement in Source 2.2C?",
@@ -12081,7 +12320,6 @@ export default {
           },
           "hinge_question": "Why did J. Edgar Hoover and the FBI designate the Black Panther Party as 'the greatest threat to the internal security of the country'?",
           "source_context": "BPP National Headquarters, Oakland, California / Stanford University Special Collections. Huey P. Newton and Bobby Seale, co-founders of the Black Panther Party for Urban Black youth, working-class communities, and radical activist groups with the objective: To set forth the core ideological objectives and practical socialist demands of the revolutionary Black Panther Party.. **Hinge Question:** Why did J. Edgar Hoover and the FBI designate the Black Panther Party as 'the greatest threat to the internal security of the country'?",
-          "src": "/units/usa/assets/sources/black-panthers-marching.jpg",
           "source": "/units/usa/assets/sources/portraits/huey_newton.jpg",
           "caption": "Black Panther Party members drilling and standing in uniform with black leather jackets and berets in Oakland, California.",
           "text": "1. We want freedom. We want power to determine the destiny of our Black Community.<br>2. We want full employment for our people.<br>3. We want an end to the robbery by the white man of our Black Community.<br>4. We want decent housing, fit for the shelter of human beings.<br>7. We want an immediate end to POLICE BRUTALITY and MURDER of Black people.<br>8. We want freedom for all Black men held in federal, state, county and city prisons and jails.<br>10. We want land, bread, housing, education, clothing, justice and peace."
@@ -12597,29 +12835,24 @@ export default {
       },
       "vocab": [
         {
-          "term": "Civil Rights Act of 1964",
-          "def": "Sweeping federal legislation signed by LBJ prohibiting discrimination in public facilities, housing federal integration enforcement, and establishing the EEOC.",
-          "definition": "Sweeping federal legislation signed by LBJ prohibiting discrimination in public facilities, housing federal integration enforcement, and establishing the EEOC."
+          "term": "Watts Riots",
+          "def": "Six-day uprising in the Watts district of Los Angeles in August 1965—sparked by a white highway patrol arrest—leaving 34 people dead, over 1,000 injured, and $40 million in damage."
         },
         {
-          "term": "EEOC",
-          "def": "The Equal Employment Opportunity Commission, created under Title VII to investigate and eliminate racial and sex discrimination in employment.",
-          "definition": "The Equal Employment Opportunity Commission, created under Title VII to investigate and eliminate racial and sex discrimination in employment."
+          "term": "Long, Hot Summers",
+          "def": "Wave of over 150 urban riots across northern and western US cities between 1965 and 1967—most severely in Newark and Detroit in 1967—driven by poverty, slum housing, and police brutality."
         },
         {
-          "term": "24th Amendment",
-          "def": "Constitutional amendment ratified in January 1964 outlawing the use of poll taxes in federal elections.",
-          "definition": "Constitutional amendment ratified in January 1964 outlawing the use of poll taxes in federal elections."
+          "term": "Kerner Commission",
+          "def": "Presidential inquiry appointed by Lyndon Johnson whose March 1968 report blamed urban riots on white racism and warned America was moving toward 'two societies, one black, one white—separate and unequal'."
         },
         {
-          "term": "The Great Society",
-          "def": "President Lyndon B. Johnson's comprehensive domestic reform agenda aimed at eradicating poverty, extending healthcare, and expanding racial equality.",
-          "definition": "President Lyndon B. Johnson's comprehensive domestic reform agenda aimed at eradicating poverty, extending healthcare, and expanding racial equality."
+          "term": "De Facto Segregation",
+          "def": "Racial separation in northern and western cities caused in practice by discriminatory housing ('redlining'), unequal inner-city schools, and job discrimination rather than formal Jim Crow laws."
         },
         {
-          "term": "Fair Housing Act",
-          "def": "The Civil Rights Act of 1968 passed days after MLK's assassination, prohibiting racial and religious discrimination in the sale or rental of housing.",
-          "definition": "The Civil Rights Act of 1968 passed days after MLK's assassination, prohibiting racial and religious discrimination in the sale or rental of housing."
+          "term": "White Backlash",
+          "def": "Growing resentment among many white voters toward urban riots, Black Power, and open-housing campaigns, helping elect Richard Nixon on a 'law and order' platform in 1968."
         }
       ],
       "narrative_blocks": [
@@ -13435,7 +13668,9 @@ export default {
                 "provenance": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "attribution": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "content": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
-                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched."
+                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Harvard Sitkoff"
               },
               {
                 "interpNum": "2",
@@ -13445,7 +13680,9 @@ export default {
                 "provenance": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "attribution": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "content": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
-                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority."
+                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Black Power View"
               }
             ]
           },
@@ -13507,7 +13744,9 @@ export default {
                 "provenance": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "attribution": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "content": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
-                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched."
+                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Harvard Sitkoff"
               },
               {
                 "interpNum": "2",
@@ -13517,7 +13756,9 @@ export default {
                 "provenance": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "attribution": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "content": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
-                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority."
+                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Black Power View"
               }
             ],
             "sources": [
@@ -13634,7 +13875,9 @@ export default {
                 "provenance": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "attribution": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "content": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
-                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched."
+                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Harvard Sitkoff"
               },
               {
                 "interpNum": "2",
@@ -13644,7 +13887,9 @@ export default {
                 "provenance": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "attribution": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "content": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
-                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority."
+                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Black Power View"
               }
             ],
             "sources": [
@@ -13798,7 +14043,9 @@ export default {
                 "provenance": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "attribution": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
                 "content": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
-                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched."
+                "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Harvard Sitkoff"
               },
               {
                 "interpNum": "2",
@@ -13808,7 +14055,9 @@ export default {
                 "provenance": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "attribution": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
                 "content": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
-                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority."
+                "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Black Power View"
               }
             ],
             "sources": [
@@ -13915,7 +14164,9 @@ export default {
             "provenance": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
             "attribution": "Historian Harvard Sitkoff, 'The Struggle for Black Equality, 1954–1980' (1981)",
             "content": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
-            "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched."
+            "text": "The explosion of urban rebellions in Watts, Chicago, Newark, and Detroit was the direct consequence of intolerable economic despair and de facto segregation in northern ghettos. While the civil rights movement had won voting rights in the South, it had done almost nothing to alleviate poverty, dilapidated tenement housing, and 30% youth unemployment in northern cities. Confined by bank redlining and landlord discrimination into overcrowded slums, and subjected to routine brutality by almost entirely white police forces, young Black urbanites felt completely excluded from American prosperity. The riots were spontaneous eruptions of economic rage against living conditions that legislative civil rights acts had left untouched.",
+            "studio_audio": "/audio/sources/usa/lesson_2_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Harvard Sitkoff"
           },
           {
             "interpNum": "2",
@@ -13925,7 +14176,9 @@ export default {
             "provenance": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
             "attribution": "Historian Clayborne Carson, 'In Struggle: SNCC and the Black Awakening of the 1960s' (1981)",
             "content": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
-            "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority."
+            "text": "The wave of urban violence from 1965 onwards was driven primarily by a profound ideological transformation: the rise of Black Power and militant Black nationalism. Inspired by the uncompromising rhetoric of Malcolm X and popularized by Stokely Carmichael, younger activists completely rejected Martin Luther King’s philosophy of non-violence and interracial integration. Black Power taught urban youth that non-violence was humiliating and ineffective, encouraging them instead to confront white institutional power directly. The fiery speeches of SNCC and Black Panther leaders gave voice and political legitimacy to rebellion, transforming street unrest into conscious acts of defiance against white authority.",
+            "studio_audio": "/audio/sources/usa/lesson_2_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Black Power View"
           }
         ]
       },
@@ -13990,7 +14243,7 @@ export default {
           "a": "With a conservative backlash demanding strict 'law and order', turning against civil rights funding and electing Richard Nixon."
         }
       ],
-      "vocab_cloze_text": "Just five days after President Johnson signed the Voting Rights Act, the streets of Los Angeles exploded in the catastrophic [Watts Riots] of August 1965, requiring 14,000 National Guardsmen to suppress six days of arson, looting, and gunfire that left 34 dead. This erupted into the [Long, Hot Summers] of 1966 and 1967, as more than 150 northern industrial metropolises—most catastrophically Detroit, where 43 people perished—rebelled against miserable ghetto housing, corrupt slumlords, and aggressive white police forces. Investigating the unprecedented urban turmoil, the presidentially appointed [Kerner Commission] issued a scathing report in 1968, warning that the nation was rapidly 'moving toward two societies, one black, one white—separate and unequal'. The commission made clear that northern cities suffered not from southern Jim Crow laws, but from entrenched [De Facto Segregation] enforced by predatory bank redlining and job discrimination. Instead of funding the commission's sweeping recommendations for billions in federal housing and school investment, white suburban voters experienced a furious [White Backlash], embracing Richard Nixon's conservative 'law and order' campaign in the 1968 presidential election.",
+      "vocab_cloze_text": "Just five days after President Johnson signed the Voting Rights Act, the streets of Los Angeles exploded in the devastating [Watts Riots] of August 1965, requiring 14,000 National Guardsmen to halt six days of arson, looting, and gunfire that left 34 dead. This escalated into the [Long, Hot Summers] of 1966 and 1967, as more than 150 northern industrial cities—most severely Detroit, where 43 people died—rebelled against overcrowded ghetto housing, exploitative landlords, and aggressive white police forces. Investigating the urban unrest, the presidentially appointed [Kerner Commission] issued a landmark report in March 1968 warning that America was 'moving toward two societies, one black, one white—separate and unequal'. The inquiry showed that northern cities suffered not from southern Jim Crow statutes, but from entrenched [De Facto Segregation] enforced by bank redlining and job discrimination. Rather than backing billions in federal urban investment, many white suburban voters turned toward a conservative [White Backlash], supporting Richard Nixon's 'law and order' campaign in 1968.",
       "causal_domino_spine": {
         "title": "Urban Rebellions, The Kerner Report & King's Legacy: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -14718,29 +14971,32 @@ export default {
       },
       "vocab": [
         {
-          "term": "Malcolm X",
-          "def": "Charismatic Black nationalist leader who rejected non-violence and racial integration, advocating Black pride and armed self-defense.",
-          "definition": "Charismatic Black nationalist leader who rejected non-violence and racial integration, advocating Black pride and armed self-defense."
+          "term": "Geneva Accords",
+          "def": "July 1954 international peace agreement ending French colonial rule in Indochina and temporarily dividing Vietnam along the 17th Parallel ahead of planned 1956 elections."
         },
         {
-          "term": "Nation of Islam",
-          "def": "A Black nationalist religious organization led by Elijah Muhammad advocating racial separatism and self-sufficiency.",
-          "definition": "A Black nationalist religious organization led by Elijah Muhammad advocating racial separatism and self-sufficiency."
+          "term": "17th Parallel",
+          "def": "Temporary border set in 1954 separating Ho Chi Minh’s communist North Vietnam (Hanoi) from US-backed anti-communist South Vietnam (Saigon)."
         },
         {
-          "term": "Black Nationalism",
-          "def": "The political and cultural ideology asserting that African Americans must establish their own economic, political, and cultural institutions independent of white society.",
-          "definition": "The political and cultural ideology asserting that African Americans must establish their own economic, political, and cultural institutions independent of white society."
+          "term": "Domino Theory",
+          "def": "Cold War belief promoted by President Eisenhower that if South Vietnam fell to communism, neighbouring Southeast Asian nations such as Laos, Cambodia, and Thailand would fall one after another."
         },
         {
-          "term": "By Any Means Necessary",
-          "def": "Malcolm X's famous doctrine asserting that African Americans have the moral right to defend themselves against racist violence using whatever methods are required.",
-          "definition": "Malcolm X's famous doctrine asserting that African Americans have the moral right to defend themselves against racist violence using whatever methods are required."
+          "term": "Ngo Dinh Diem",
+          "def": "Strongly anti-communist Roman Catholic President of South Vietnam (1955–63) backed with billions in US aid and military advisers despite corruption, nepotism, and persecuting Buddhists."
         },
         {
-          "term": "Hajj to Mecca",
-          "def": "Malcolm X's transformative April 1964 pilgrimage where seeing Muslims of all races worshipping together led him to reject racial separatism.",
-          "definition": "Malcolm X's transformative April 1964 pilgrimage where seeing Muslims of all races worshipping together led him to reject racial separatism."
+          "term": "Strategic Hamlets",
+          "def": "Fortified villages surrounded by ditches and barbed wire introduced in 1962 to isolate rural peasants from the Vietcong, which angered villagers forced off ancestral land."
+        },
+        {
+          "term": "Buddhist Crisis",
+          "def": "Mass protests in South Vietnam in 1963 against Diem’s persecution of the Buddhist majority, brought to global attention when monk Thich Quang Duc burned himself to death in Saigon."
+        },
+        {
+          "term": "Diem Coup",
+          "def": "Overthrow and assassination of Ngo Dinh Diem by South Vietnamese army generals in November 1963 after Washington signalled it would not block a change of leadership."
         }
       ],
       "narrative_blocks": [
@@ -15558,7 +15814,7 @@ export default {
           "a": "He was overthrown and murdered in a military coup tacitly authorized by the Kennedy administration via State Department Cable 243."
         }
       ],
-      "vocab_cloze_text": "Following the humiliating defeat of French colonial forces at Dien Bien Phu in 1954, the international [Geneva Accords] temporarily partitioned the nation along the [17th Parallel]. Fearing that a communist takeover would trigger the [Domino Theory] across Southeast Asia, the United States installed and financed the authoritarian, anti-communist regime of [Ngo Dinh Diem] in Saigon. Diem refused to hold the promised 1956 reunification elections, rigged his own presidency, and alienated the rural peasantry by forcing them into fortified [Strategic Hamlets] surrounded by barbed wire. Diem's overt favoritism toward his Roman Catholic minority triggered the nationwide [Buddhist Crisis] of 1963, broadcast to a horrified world when monk Thich Quang Duc performed public self-immolation on a Saigon street corner. Realizing Diem's regime had lost all legitimacy, the Kennedy administration sent secret State Department Cable 243 approving the [Diem Coup] of November 1963, resulting in Diem's execution and leaving South Vietnam in severe political instability.",
+      "vocab_cloze_text": "Following the defeat of French colonial forces at Dien Bien Phu in 1954, the international [Geneva Accords] temporarily divided Vietnam along the [17th Parallel]. Fearing that a communist victory would trigger the [Domino Theory] across Southeast Asia, the United States financed the authoritarian, anti-communist government of [Ngo Dinh Diem] in Saigon. Diem refused to hold the promised 1956 reunification elections, rigged his own referendum, and alienated rural peasants by moving them into fortified [Strategic Hamlets] ringed with barbed wire. Diem's open favouritism toward his Roman Catholic minority sparked the [Buddhist Crisis] of 1963, broadcast around the world when monk Thich Quang Duc burned himself to death on a Saigon street. Realising Diem's rule had collapsed, the Kennedy administration did not block the [Diem Coup] of November 1963, which ended in Diem's murder and deepened instability in South Vietnam.",
       "causal_domino_spine": {
         "title": "Geneva Partition, Ngo Dinh Diem & The Vietcong: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -16254,29 +16510,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Black Power",
-          "def": "A militant slogan and movement coined by Stokely Carmichael in 1966 demanding Black political independence, cultural pride, and community control.",
-          "definition": "A militant slogan and movement coined by Stokely Carmichael in 1966 demanding Black political independence, cultural pride, and community control."
+          "term": "Gulf of Tonkin Incident",
+          "def": "August 1964 naval confrontation in which North Vietnamese torpedo boats attacked the USS Maddox—followed by a disputed second radar report two days later—triggering US escalation."
         },
         {
-          "term": "Stokely Carmichael",
-          "def": "Elected chairman of SNCC in 1966 who popularized the 'Black Power' cry and expelled white members to foster Black leadership.",
-          "definition": "Elected chairman of SNCC in 1966 who popularized the 'Black Power' cry and expelled white members to foster Black leadership."
+          "term": "Gulf of Tonkin Resolution",
+          "def": "Resolution passed by the US Congress on 7 August 1964 giving President Johnson sweeping authority to take 'all necessary measures' in Vietnam without declaring war."
         },
         {
-          "term": "Black Panther Party",
-          "def": "A revolutionary socialist organization founded in Oakland in 1966 by Huey Newton and Bobby Seale to fight police brutality and operate community programs.",
-          "definition": "A revolutionary socialist organization founded in Oakland in 1966 by Huey Newton and Bobby Seale to fight police brutality and operate community programs."
+          "term": "Pleiku",
+          "def": "Vietcong mortar attack on the US military base at Pleiku in February 1965 that killed eight American servicemen and prompted Johnson to order sustained bombing of North Vietnam."
         },
         {
-          "term": "Ten-Point Program",
-          "def": "The founding manifesto of the Black Panthers demanding employment, decent housing, education, and an end to police brutality.",
-          "definition": "The founding manifesto of the Black Panthers demanding employment, decent housing, education, and an end to police brutality."
+          "term": "Operation Rolling Thunder",
+          "def": "Sustained US bombing campaign against North Vietnam from March 1965 to November 1968 aimed at cutting supply routes and forcing Hanoi to abandon the Vietcong."
         },
         {
-          "term": "1968 Olympic Salute",
-          "def": "The silent protest at the Mexico City Olympics where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the medal podium.",
-          "definition": "The silent protest at the Mexico City Olympics where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the medal podium."
+          "term": "Da Nang Landing",
+          "def": "Arrival of 3,500 US Marines at Da Nang on 8 March 1965—the first American ground combat troops sent to Vietnam—shifting America from military advisers to direct combat."
+        },
+        {
+          "term": "General William Westmoreland",
+          "def": "Commander of US forces in Vietnam (1964–68) who pursued an aggressive war of attrition aimed at killing more enemy fighters ('body count') than Hanoi could replace."
         }
       ],
       "narrative_blocks": [
@@ -16452,9 +16707,9 @@ export default {
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/marines-landing-danang.jpg",
-          "image_alt": "US Marines coming ashore on the beaches of Da Nang, South Vietnam (March 1965)",
-          "caption": "Marines of the 9th Marine Expeditionary Brigade coming ashore at Da Nang on 8 March 1965, the first official US ground combat troops deployed in Vietnam.",
+          "image": "/units/usa/assets/sources/marines_landing_beach_danang_1965.jpg",
+          "image_alt": "US Marines marching across the sand at Da Nang beach on 8 March 1965",
+          "caption": "Armed United States Marines marching inland across Red Beach at Da Nang on 8 March 1965 to guard American airbases in South Vietnam.",
           "content": "<span class=\"para-ref\">[4.1]</span> In February 1965, the military situation reached a critical flashpoint when communist guerrillas launched a daring **Vietcong raid on Pleiku**, targeting an American military helicopter base. The brazen mortar assault left **eight US soldiers killed** and over one hundred wounded, providing the Johnson administration with the immediate pretext to shift from advisory support to massive aerial offensive operations.\n\n<span class=\"para-ref\">[4.2]</span> On 2 March 1965, Johnson ordered **Operation Rolling Thunder launched**, a continuous aerial bombardment campaign against North Vietnam that lasted three years. Designed to shatter Hanoi's industrial economy, destroy supply depots, and interdict weapons flowing south along the Ho Chi Minh Trail, the campaign dropped over 864,000 tons of bombs but utterly failed to break Vietnamese communist resistance."
         },
         {
@@ -17097,7 +17352,7 @@ export default {
           "a": "It transformed the American role from military advisory support to full-scale offensive ground combat warfare in Asia."
         }
       ],
-      "vocab_cloze_text": "In August 1964, following skirmishes involving the USS Maddox off North Vietnam, President Lyndon B. Johnson seized upon the contested [Gulf of Tonkin Incident] to seek sweeping executive wartime powers. Congress responded by overwhelmingly passing the [Gulf of Tonkin Resolution], handing Johnson a virtual blank check to wage undeclared warfare. Following a deadly Vietcong mortar strike on the American air base at [Pleiku] in February 1965, LBJ unleashed [Operation Rolling Thunder], raining more explosive tonnage on North Vietnam than on all of Europe during World War II. To defend American airfields from communist sabotage, 3,500 United States Marines conducted the historic [Da Nang Landing] on 8 March 1965. Under the command of [General William Westmoreland], American forces transitioned rapidly from static perimeter defense to aggressive 'Search and Destroy' attrition warfare, escalating US troop commitments from 23,000 advisors to over 536,000 combat soldiers by 1968.",
+      "vocab_cloze_text": "In August 1964, North Vietnamese patrol boats clashed with the destroyer USS Maddox in the [Gulf of Tonkin Incident], followed two days later by disputed reports of a second attack. Seizing the moment, President Lyndon Johnson persuaded Congress to pass the [Gulf of Tonkin Resolution], granting him broad authority to wage undeclared war in Southeast Asia. After Vietcong guerrillas raided the US airbase at [Pleiku] in February 1965, Johnson authorised [Operation Rolling Thunder], a three-year bombing campaign against North Vietnam. Because airfields needed ground protection, 3,500 US Marines came ashore in the [Da Nang Landing] on 8 March 1965, beginning America's ground war. Under [General William Westmoreland], US troop numbers surged past 500,000 by 1968 in a gruelling war of attrition.",
       "causal_domino_spine": {
         "title": "Gulf of Tonkin, Escalation & Ground Troops: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -17831,29 +18086,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Watts Riots",
-          "def": "The six days of violent urban rebellion in Los Angeles in August 1965 sparked by police mistreatment, killing 34 and causing $40 million in destruction.",
-          "definition": "The six days of violent urban rebellion in Los Angeles in August 1965 sparked by police mistreatment, killing 34 and causing $40 million in destruction."
+          "term": "Guerrilla Warfare",
+          "def": "Vietcong strategy of avoiding open pitched battles against superior US firepower by using ambushes, booby traps ('punji stakes'), hit-and-run raids, and blending into peasant villages."
         },
         {
-          "term": "Long, Hot Summers",
-          "def": "The wave of over 150 race riots that swept northern and western industrial cities between 1965 and 1967, including Newark and Detroit.",
-          "definition": "The wave of over 150 race riots that swept northern and western industrial cities between 1965 and 1967, including Newark and Detroit."
+          "term": "Cu Chi Tunnels",
+          "def": "Vast underground network of Vietcong tunnels, hospitals, weapon stores, and sleeping quarters dug near Saigon to survive US bombing and ambush patrols."
         },
         {
-          "term": "Kerner Commission",
-          "def": "The presidential commission appointed by LBJ that concluded white racism and ghetto neglect were the root causes of the 1960s urban riots.",
-          "definition": "The presidential commission appointed by LBJ that concluded white racism and ghetto neglect were the root causes of the 1960s urban riots."
+          "term": "Ho Chi Minh Trail",
+          "def": "Jungle network of tracks and roads running from North Vietnam through Laos and Cambodia to supply the Vietcong with weapons, food, and fighters despite heavy US bombing."
         },
         {
-          "term": "De Facto Segregation",
-          "def": "Racial segregation maintained by custom, economic inequality, residential redlining, and private discrimination rather than statutory law.",
-          "definition": "Racial segregation maintained by custom, economic inequality, residential redlining, and private discrimination rather than statutory law."
+          "term": "Search and Destroy",
+          "def": "US tactic flying troops by helicopter into villages to hunt and kill Vietcong fighters, which often burned peasant homes ('Zippo raids') and turned civilians against the USA."
         },
         {
-          "term": "White Backlash",
-          "def": "The conservative political reaction among white voters against urban riots and civil rights protests, leading to 'law and order' victories in 1968.",
-          "definition": "The conservative political reaction among white voters against urban riots and civil rights protests, leading to 'law and order' victories in 1968."
+          "term": "Agent Orange",
+          "def": "Toxic chemical weedkiller sprayed in millions of gallons by US aircraft to strip jungle cover and crops, causing severe cancers and birth defects."
+        },
+        {
+          "term": "Napalm",
+          "def": "Jellied petrol firebomb dropped by US aircraft that burned at extreme heat to clear jungle bunkers, inflicting horrific civilian burns that damaged America’s image."
         }
       ],
       "narrative_blocks": [
@@ -17897,9 +18151,9 @@ export default {
             }
           ],
           "isReversed": false,
-          "image": "/units/usa/assets/sources/cu-chi-tunnel-rats-1967.jpg",
-          "image_alt": "American soldier preparing to enter a Vietcong tunnel near Cu Chi (1967)",
-          "caption": "An American 'tunnel rat' armed with a flashlight and .45 pistol prepares to navigate the multi-tiered subterranean Vietcong network at Cu Chi.",
+          "image": "/units/usa/assets/sources/b52_rolling_thunder_vietnam.jpg",
+          "image_alt": "USAF B-52 Stratofortress dropping bombs in flight",
+          "caption": "A USAF B-52 Stratofortress releasing high-explosive bombs over Vietnam, illustrating the massive conventional airpower that Vietcong ambush and tunnel tactics neutralised.",
           "content": "<span class=\"para-ref\">[1.1]</span> Confronting the overwhelming technological and firepower superiority of the United States military, North Vietnamese commander **General Vo Nguyen Giap strategy** relied on patient asymmetric guerrilla warfare. Giap avoided large-scale pitched battles where American artillery and air power were decisive, instructing communist insurgents to fight exclusively on terrain and terms that favored concealed, hit-and-run ambushes against vulnerable enemy patrols.\n\n<span class=\"para-ref\">[1.2]</span> Insurgents neutralized American tactical advantages by **'hanging on US belt buckles'**, engaging American troops at ultra-close quarters where artillery barrages and napalm strikes would endanger US soldiers. After striking suddenly, guerrillas broke contact swiftly, expertly **vanishing into peasant villages** or dense jungle foliage, leaving frustrated American patrols searching fruitlessly for an invisible enemy across hostile territory."
         },
         {
@@ -17980,9 +18234,9 @@ export default {
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
-          "image_alt": "Bell UH-1 Huey helicopters landing US infantry in a jungle clearing (1966)",
-          "caption": "Bell UH-1 Iroquois 'Huey' helicopters deploying infantry during air cavalry search-and-destroy sweeps in the central highlands (1966).",
+          "image": "/units/usa/assets/sources/agent-orange-spraying-c123.jpg",
+          "image_alt": "USAF UC-123 aircraft spraying defoliant across jungle canopy",
+          "caption": "USAF UC-123 Provider aircraft spraying chemical Agent Orange defoliant across dense Vietnamese jungle canopy during Operation Ranch Hand.",
           "theme": "The Ho Chi Minh Trail Supply Lifeline",
           "content": "<span class=\"para-ref\">[3.1]</span> The vital logistical lifeline sustaining the southern insurgency was the intricate **Ho Chi Minh Trail network**. Stretching for hundreds of miles, this concealed labyrinth of jungle paths, dirt roads, bridges, and mountain passes originated in North Vietnam and traversed sovereign **Laos and Cambodia border routes** before entering South Vietnam, shielding the supply line from conventional American ground assault.\n\n<span class=\"para-ref\">[3.2]</span> Despite relentless American bombing that dropped millions of tons of high explosives, over thirty thousand youth volunteers and engineers kept the trail operational, repairing cratered roads within hours. The route served as an essential **Soviet and Chinese arms pipeline**, transporting hundreds of tons of sophisticated weaponry, heavy ammunition, and North Vietnamese regular soldiers south every month."
         },
@@ -18661,7 +18915,9 @@ export default {
                 "provenance": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "attribution": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "content": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
-                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front."
+                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Christian G. Appy"
               },
               {
                 "interpNum": "2",
@@ -18671,7 +18927,9 @@ export default {
                 "provenance": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "attribution": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "content": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
-                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat."
+                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Guerrilla Strategy View"
               }
             ]
           },
@@ -18733,7 +18991,9 @@ export default {
                 "provenance": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "attribution": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "content": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
-                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front."
+                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Christian G. Appy"
               },
               {
                 "interpNum": "2",
@@ -18743,7 +19003,9 @@ export default {
                 "provenance": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "attribution": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "content": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
-                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat."
+                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Guerrilla Strategy View"
               }
             ],
             "sources": [
@@ -18860,7 +19122,9 @@ export default {
                 "provenance": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "attribution": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "content": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
-                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front."
+                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Christian G. Appy"
               },
               {
                 "interpNum": "2",
@@ -18870,7 +19134,9 @@ export default {
                 "provenance": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "attribution": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "content": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
-                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat."
+                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Guerrilla Strategy View"
               }
             ],
             "sources": [
@@ -19024,7 +19290,9 @@ export default {
                 "provenance": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "attribution": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
                 "content": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
-                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front."
+                "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Christian G. Appy"
               },
               {
                 "interpNum": "2",
@@ -19034,7 +19302,9 @@ export default {
                 "provenance": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "attribution": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
                 "content": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
-                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat."
+                "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Guerrilla Strategy View"
               }
             ],
             "sources": [
@@ -19141,7 +19411,9 @@ export default {
             "provenance": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
             "attribution": "Historian Christian G. Appy, 'Working-Class War: American Combat Soldiers and Vietnam' (1993)",
             "content": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
-            "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front."
+            "text": "American military tactics were fundamentally mismatched with the political realities of guerrilla warfare in Vietnam. General Westmoreland’s strategy of ‘search and destroy’ relied on attrition—measuring progress through enemy ‘body counts’ rather than securing territory. Because US troops were dropped into hostile territory by helicopter and evacuated immediately after contact, they never established permanent security for South Vietnamese villagers. Furthermore, the massive reliance on indiscriminate firepower—napalm, defoliants (Agent Orange), and artillery—inflicted horrific civilian casualties, alienating the rural population and pushing thousands of previously neutral peasants into active support for the National Liberation Front.",
+            "studio_audio": "/audio/sources/usa/lesson_3_3_i1.mp3",
+            "studio_voice_label": "Historian 1 · Christian G. Appy"
           },
           {
             "interpNum": "2",
@@ -19151,7 +19423,9 @@ export default {
             "provenance": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
             "attribution": "Historian Guenter Lewy, 'America in Vietnam' (1978)",
             "content": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
-            "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat."
+            "text": "The failure of the American military effort was not primarily due to flawed US tactics, but to the extraordinary effectiveness, discipline, and strategic design of the communist insurgency. The Vietcong and North Vietnamese Army operated an exceptionally sophisticated underground logistics infrastructure. Their vast network of subterranean tunnels in Cu Chi and the Iron Triangle neutralized American air superiority. Moreover, the Vietcong enforced strict discipline, utilized terror ruthlessly to eliminate uncooperative village leaders, and benefited from an inexhaustible flow of Soviet and Chinese weapons down the Ho Chi Minh Trail. The tenacity and survival techniques of the communist cadres made them impervious to military defeat.",
+            "studio_audio": "/audio/sources/usa/lesson_3_3_i2.mp3",
+            "studio_voice_label": "Historian 2 · Guerrilla Strategy View"
           }
         ]
       },
@@ -19216,7 +19490,7 @@ export default {
           "a": "Photographs of civilian children severely burned by incendiary napalm destroyed the moral credibility of the American intervention."
         }
       ],
-      "vocab_cloze_text": "In the dense tropical jungles of Vietnam, US troops struggled against an elusive enemy utilizing [Asymmetric Guerrilla Tactics]. Rather than engaging superior American firepower in pitched battle, the Vietcong practiced 'hanging onto the belts' of US patrols to prevent air strikes, and vanished into complex subterranean fortresses like the [Cu Chi Tunnels]. Reinforcements and heavy Soviet weaponry poured continuously into the South along the rugged [Ho Chi Minh Trail], a 16,000-kilometer logistical lifeline traversing Laos and Cambodia that American B-52 bombing could never sever. To locate the hidden guerrillas, General Westmoreland deployed helicopter platoons on aggressive [Search and Destroy] sweeps, nicknamed 'Zippo raids' because soldiers torched thatched peasant dwellings, driving enraged villagers into the insurgency. To strip the dense forest canopy concealing enemy positions, the US military sprayed over 19 million gallons of the carcinogenic defoliant [Agent Orange] and dropped devastating firebombs of incendiary [Napalm], inflicting horrific civilian casualties and generating worldwide outrage.",
+      "vocab_cloze_text": "In the dense jungles of South Vietnam, US soldiers struggled against an elusive enemy skilled in [Guerrilla Warfare]. Rather than fighting pitched battles against American artillery, the Vietcong stayed close to US patrols to prevent air strikes and vanished into underground bases such as the [Cu Chi Tunnels]. Reinforcements and Soviet weapons flowed south along the [Ho Chi Minh Trail], a jungle supply network through Laos and Cambodia that US bombers could never permanently close. To find hidden fighters, General Westmoreland sent helicopter units on [Search and Destroy] raids, often burning thatched peasant homes and driving angry villagers toward the Vietcong. To strip away jungle cover, US aircraft sprayed millions of gallons of the toxic defoliant [Agent Orange] and dropped firebombs of [Napalm], causing severe civilian casualties and international outrage.",
       "causal_domino_spine": {
         "title": "Asymmetric Warfare & The Failure of US Tactics: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -19942,29 +20216,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Tet Offensive (1968)",
-          "def": "A coordinated nationwide surprise attack launched by 84,000 Vietcong and North Vietnamese troops across South Vietnam on 30 January 1968.",
-          "definition": "A coordinated nationwide surprise attack launched by 84,000 Vietcong and North Vietnamese troops across South Vietnam on 30 January 1968."
+          "term": "Tet Offensive",
+          "def": "Surprise communist offensive launched on 30–31 January 1968 across over 100 South Vietnamese towns and cities—including the US Embassy compound in Saigon—that shocked the American public."
         },
         {
           "term": "Credibility Gap",
-          "def": "The growing chasm between optimistic official US government claims of imminent victory and the grim reality of the battlefield exposed on television.",
-          "definition": "The growing chasm between optimistic official US government claims of imminent victory and the grim reality of the battlefield exposed on television."
+          "def": "Growing public distrust between the US government’s optimistic claims that the war was nearly won and the grim reality shown nightly on television."
         },
         {
-          "term": "Vietnamisation",
-          "def": "President Nixon's strategy to withdraw American ground troops in phased increments while training and equipping the South Vietnamese army (ARVN) to take over combat.",
-          "definition": "President Nixon's strategy to withdraw American ground troops in phased increments while training and equipping the South Vietnamese army (ARVN) to take over combat."
+          "term": "Walter Cronkite",
+          "def": "Trusted CBS television news anchor who visited Vietnam after Tet in February 1968 and declared on air that the war was 'mired in stalemate', shaking President Johnson's support."
         },
         {
           "term": "Nixon Doctrine",
-          "def": "Nixon's 1969 foreign policy declaration that the United States would honor treaty commitments and provide aid, but expect Asian allies to furnish their own ground troops.",
-          "definition": "Nixon's 1969 foreign policy declaration that the United States would honor treaty commitments and provide aid, but expect Asian allies to furnish their own ground troops."
+          "def": "1969 policy announced by President Nixon stating that Asian allies would have to take primary responsibility for their own ground defence while the USA supplied money, training, and air power."
         },
         {
-          "term": "Operation Menu",
-          "def": "The secret, unauthorized 14-month B-52 carpet-bombing of neutral Cambodia ordered by President Nixon in 1969 to destroy communist sanctuaries along the Ho Chi Minh Trail.",
-          "definition": "The secret, unauthorized 14-month B-52 carpet-bombing of neutral Cambodia ordered by President Nixon in 1969 to destroy communist sanctuaries along the Ho Chi Minh Trail."
+          "term": "Vietnamisation",
+          "def": "Nixon’s strategy from 1969 of gradually withdrawing US ground combat troops while expanding, training, and equipping the South Vietnamese army (ARVN) to fight in their place."
+        },
+        {
+          "term": "Cambodian Incursion",
+          "def": "April 1970 invasion of neutral Cambodia by US and ARVN troops ordered by Nixon to destroy North Vietnamese bases, which sparked furious anti-war protests across American universities."
         }
       ],
       "narrative_blocks": [
@@ -20787,7 +21060,9 @@ export default {
                 "provenance": "From a military history of the final years of the Vietnam War, published in 2015",
                 "attribution": "From a military history of the final years of the Vietnam War, published in 2015",
                 "content": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
-                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew."
+                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · ARVN Weakness View"
               },
               {
                 "interpNum": "2",
@@ -20797,7 +21072,9 @@ export default {
                 "provenance": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "attribution": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "content": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
-                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers."
+                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Backlash View"
               }
             ]
           },
@@ -20859,7 +21136,9 @@ export default {
                 "provenance": "From a military history of the final years of the Vietnam War, published in 2015",
                 "attribution": "From a military history of the final years of the Vietnam War, published in 2015",
                 "content": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
-                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew."
+                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · ARVN Weakness View"
               },
               {
                 "interpNum": "2",
@@ -20869,7 +21148,9 @@ export default {
                 "provenance": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "attribution": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "content": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
-                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers."
+                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Backlash View"
               }
             ],
             "sources": [
@@ -20998,7 +21279,9 @@ export default {
                 "provenance": "From a military history of the final years of the Vietnam War, published in 2015",
                 "attribution": "From a military history of the final years of the Vietnam War, published in 2015",
                 "content": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
-                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew."
+                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · ARVN Weakness View"
               },
               {
                 "interpNum": "2",
@@ -21008,7 +21291,9 @@ export default {
                 "provenance": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "attribution": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "content": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
-                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers."
+                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Backlash View"
               }
             ],
             "sources": [
@@ -21174,7 +21459,9 @@ export default {
                 "provenance": "From a military history of the final years of the Vietnam War, published in 2015",
                 "attribution": "From a military history of the final years of the Vietnam War, published in 2015",
                 "content": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
-                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew."
+                "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · ARVN Weakness View"
               },
               {
                 "interpNum": "2",
@@ -21184,7 +21471,9 @@ export default {
                 "provenance": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "attribution": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
                 "content": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
-                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers."
+                "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Backlash View"
               }
             ],
             "sources": [
@@ -21309,7 +21598,9 @@ export default {
             "provenance": "From a military history of the final years of the Vietnam War, published in 2015",
             "attribution": "From a military history of the final years of the Vietnam War, published in 2015",
             "content": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
-            "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew."
+            "text": "Nixon’s policy of ‘Vietnamization’ failed to achieve ‘peace with honour’ primarily because the South Vietnamese army (ARVN) could never fight effectively without massive American military backing. Plagued by corrupt political promotions, ‘ghost soldiers’, and mass desertion, ARVN units remained fatally dependent on US helicopters and B-52 air strikes—a weakness exposed during the disastrous 1971 retreat from Laos in Operation Lam Son 719. Even Nixon and Kissinger privately recognised that Saigon lacked the military strength to survive alone once US combat forces withdrew.",
+            "studio_audio": "/audio/sources/usa/lesson_3_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · ARVN Weakness View"
           },
           {
             "interpNum": "2",
@@ -21319,7 +21610,9 @@ export default {
             "provenance": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
             "attribution": "From a political study of the Nixon presidency and the anti-war movement, published in 2012",
             "content": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
-            "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers."
+            "text": "Vietnamization failed to secure ‘peace with honour’ because Nixon fatally undermined his own withdrawal strategy by secretly bombing and invading neutral neighbours. By ordering Operation Menu and sending US combat troops into Cambodia in April 1970, Nixon reignited a furious domestic anti-war explosion across hundreds of college campuses, culminating in the Kent State killings. Rather than intimidating Hanoi into concessions, widening the war shattered political support in Washington, prompting Congress to repeal the Gulf of Tonkin Resolution and restrict presidential war powers.",
+            "studio_audio": "/audio/sources/usa/lesson_3_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Domestic Backlash View"
           }
         ]
       },
@@ -21384,7 +21677,7 @@ export default {
           "a": "It appeared to drastically expand the war into a neutral country despite Nixon's campaign promises to wind down US involvement."
         }
       ],
-      "vocab_cloze_text": "On 30 January 1968, communist forces detonated the decisive turning point of the conflict by launching the massive [Tet Offensive], assaulting over 100 South Vietnamese cities and breaching the US Embassy compound in Saigon. Although US and ARVN forces recaptured every objective and inflicted catastrophic military losses on the Vietcong, the graphic television footage created an unbridgeable [Credibility Gap] at home. Respected CBS anchor [Walter Cronkite] traveled to the smoldering ruins of Hue, concluding on national television that the war was hopelessly 'mired in stalemate'. Shattered by plunging public approval, President Johnson made the historic [Resignation Announcement] on 31 March 1968, halting bombing and abandoning his re-election campaign. Taking office in 1969 on a pledge of 'Peace with Honor', President Richard Nixon introduced the policy of [Vietnamization], transferring combat responsibilities to the ARVN while withdrawing US soldiers. However, Nixon's secret decision to expand the war through the [Cambodian Incursion] in April 1970 ignited unprecedented domestic student strikes and protests across American universities.",
+      "vocab_cloze_text": "On 30–31 January 1968, communist forces launched the surprise [Tet Offensive], attacking over 100 South Vietnamese cities and briefly entering the US Embassy courtyard in Saigon. Although US and ARVN troops retook every town and inflicted heavy losses on the Vietcong, dramatic television footage widened the [Credibility Gap] at home. Respected CBS news anchor [Walter Cronkite] travelled to the smouldering ruins of Hue and concluded on national television that the war was 'mired in stalemate', prompting President Johnson not to seek re-election. Taking office in 1969, President Richard Nixon set out the [Nixon Doctrine] and introduced [Vietnamisation], handing combat duties over to the ARVN while bringing US soldiers home. However, Nixon's decision to widen the war through the [Cambodian Incursion] in April 1970 ignited fierce protests across American campuses.",
       "causal_domino_spine": {
         "title": "Tet Offensive, Cronkite Verdict & Vietnamization: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -22080,29 +22373,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Domino Theory",
-          "def": "President Eisenhower's foreign policy doctrine postulating that if South Vietnam fell to communism, neighboring Southeast Asian nations would topple like dominoes.",
-          "definition": "President Eisenhower's foreign policy doctrine postulating that if South Vietnam fell to communism, neighboring Southeast Asian nations would topple like dominoes."
+          "term": "Living Room War",
+          "def": "Name given to Vietnam as the first conflict broadcast uncensored on nightly colour television news, bringing graphic images of wounded soldiers and burning villages into American homes."
         },
         {
-          "term": "Geneva Accords",
-          "def": "The 1954 treaty that temporarily partitioned Vietnam at the 17th Parallel and scheduled nationwide reunification elections for 1956.",
-          "definition": "The 1954 treaty that temporarily partitioned Vietnam at the 17th Parallel and scheduled nationwide reunification elections for 1956."
+          "term": "Military Draft",
+          "def": "Compulsory conscription system for young American men aged 18–25, widely condemned because college deferments spared wealthier white students while working-class and Black men bore heavy casualties."
         },
         {
-          "term": "Ngo Dinh Diem",
-          "def": "The autocratic Catholic, anti-communist leader of South Vietnam backed by the US who refused to hold reunification elections in 1956.",
-          "definition": "The autocratic Catholic, anti-communist leader of South Vietnam backed by the US who refused to hold reunification elections in 1956."
+          "term": "My Lai Massacre",
+          "def": "Killing of between 347 and 504 unarmed South Vietnamese civilians—mostly women, children, and old men—by US Charlie Company troops in March 1968, exposed to horrified public outcry in November 1969."
         },
         {
-          "term": "Vietcong (NLF)",
-          "def": "The communist guerrilla movement formed in 1960 in South Vietnam to overthrow Diem and unify the nation under Ho Chi Minh.",
-          "definition": "The communist guerrilla movement formed in 1960 in South Vietnam to overthrow Diem and unify the nation under Ho Chi Minh."
+          "term": "Kent State University",
+          "def": "Ohio university where National Guardsmen fired live rounds into an unarmed student protest against the Cambodian invasion on 4 May 1970, killing four students and sparking nationwide campus strikes."
         },
         {
-          "term": "Strategic Hamlet Program",
-          "def": "The joint US-South Vietnamese initiative that forcibly relocated rural peasants into barbed-wire stockade villages, alienating the countryside.",
-          "definition": "The joint US-South Vietnamese initiative that forcibly relocated rural peasants into barbed-wire stockade villages, alienating the countryside."
+          "term": "Pentagon Papers",
+          "def": "Secret Defense Department study leaked by Daniel Ellsberg in June 1971 proving that four successive US presidents had misled Congress and the American public over Vietnam."
+        },
+        {
+          "term": "Vietnam Veterans Against the War",
+          "def": "Organisation of returning US servicemen who campaigned against the conflict, testified about wartime abuses, and threw their combat medals onto the steps of the US Capitol in April 1971."
         }
       ],
       "narrative_blocks": [
@@ -22234,9 +22526,9 @@ export default {
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/vietnam-draft-lottery.jpg",
-          "image_alt": "Selective Service officials drawing birthdate capsules from a glass urn during the draft lottery (December 1969)",
-          "caption": "Selective Service officials drawing birthdate capsules on 1 December 1969 to determine conscription order, the first US draft lottery held since 1942.",
+          "image": "/units/usa/assets/sources/vvaw-veterans-protest.jpg",
+          "image_alt": "Vietnam veteran throwing combat medals at the US Capitol protest in 1971",
+          "caption": "A member of Vietnam Veterans Against the War (VVAW) hurling his combat decorations over the fence at the US Capitol during anti-war protests in April 1971.",
           "theme": "Exposure of the My Lai Massacre",
           "content": "<span class=\"para-ref\">[3.1]</span> On 16 March 1968, American troops of Charlie Company entered the hamlet of Son My on a search-and-destroy mission. Led by platoon commander **Lieutenant William Calley**, soldiers rounded up unarmed villagers and systematically murdered over five hundred women, children, and elderly men in the horrific **My Lai massacre (Son My)**, raping victims and setting huts ablaze despite encountering zero enemy fire.\n\n<span class=\"para-ref\">[3.2]</span> The military covered up the atrocity for twenty months until veteran Ron Ridenhour alerted Congress, prompting brilliant **Seymour Hersh investigative reporting** in November 1969. Shocking color photographs of ditches filled with slaughtered babies shattered the moral justification of the American mission, horrifying middle America and proving that brutal counter-insurgency warfare was debasing the moral integrity of American forces."
         },
@@ -22913,7 +23205,9 @@ export default {
                 "provenance": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "attribution": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "content": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
-                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer."
+                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i1.mp3",
+                "studio_voice_label": "Historian 1 · Chester Pach"
               },
               {
                 "interpNum": "2",
@@ -22923,7 +23217,9 @@ export default {
                 "provenance": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "attribution": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "content": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
-                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable."
+                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i2.mp3",
+                "studio_voice_label": "Historian 2 · Conscription & Casualties View"
               }
             ]
           },
@@ -22985,7 +23281,9 @@ export default {
                 "provenance": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "attribution": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "content": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
-                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer."
+                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i1.mp3",
+                "studio_voice_label": "Historian 1 · Chester Pach"
               },
               {
                 "interpNum": "2",
@@ -22995,7 +23293,9 @@ export default {
                 "provenance": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "attribution": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "content": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
-                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable."
+                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i2.mp3",
+                "studio_voice_label": "Historian 2 · Conscription & Casualties View"
               }
             ],
             "sources": [
@@ -23112,7 +23412,9 @@ export default {
                 "provenance": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "attribution": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "content": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
-                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer."
+                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i1.mp3",
+                "studio_voice_label": "Historian 1 · Chester Pach"
               },
               {
                 "interpNum": "2",
@@ -23122,7 +23424,9 @@ export default {
                 "provenance": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "attribution": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "content": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
-                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable."
+                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i2.mp3",
+                "studio_voice_label": "Historian 2 · Conscription & Casualties View"
               }
             ],
             "sources": [
@@ -23276,7 +23580,9 @@ export default {
                 "provenance": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "attribution": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
                 "content": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
-                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer."
+                "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i1.mp3",
+                "studio_voice_label": "Historian 1 · Chester Pach"
               },
               {
                 "interpNum": "2",
@@ -23286,7 +23592,9 @@ export default {
                 "provenance": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "attribution": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
                 "content": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
-                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable."
+                "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_i2.mp3",
+                "studio_voice_label": "Historian 2 · Conscription & Casualties View"
               }
             ],
             "sources": [
@@ -23393,7 +23701,9 @@ export default {
             "provenance": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
             "attribution": "Historian Chester Pach, 'The Real Media War on Vietnam' (1996)",
             "content": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
-            "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer."
+            "text": "The fundamental engine driving mass opposition to the war was television journalism and the uncensored visual exposure of combat horrors. Vietnam was America’s first ‘living-room war’. Night after night, millions of ordinary Americans watched unedited color footage of wounded soldiers, burning huts, civilian body counts, and napalmed children alongside their evening dinners. When trusted national figures like Walter Cronkite declared the war unwinnable after the Tet Offensive, it shattered the government’s credibility. The media’s subsequent exposure of atrocities like the My Lai massacre in 1969 made it impossible for the moral conscience of middle America to support the war any longer.",
+            "studio_audio": "/audio/sources/usa/lesson_4_1_i1.mp3",
+            "studio_voice_label": "Historian 1 · Chester Pach"
           },
           {
             "interpNum": "2",
@@ -23403,7 +23713,9 @@ export default {
             "provenance": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
             "attribution": "Historian Melvin Small, 'Antiwarriors: The Vietnam War and the Battle for America’s Hearts and Minds' (2002)",
             "content": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
-            "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable."
+            "text": "While television coverage was vivid, the primary catalyst for mass domestic opposition was the personal, immediate threat posed by the military draft system combined with skyrocketing American casualties. Young men faced the terrifying prospect of conscription into an ambiguous conflict, producing a massive student rebellion across college campuses. Student organizations like SDS, energized by civil rights techniques, transformed anti-war sentiment into sustained street mobilization, draft-card burnings, and nationwide moratoriums involving millions of demonstrators. It was the visceral fear of the draft, coupled with the rising toll of over 50,000 American deaths, that galvanized grassroots resistance and made the war politically unsustainable.",
+            "studio_audio": "/audio/sources/usa/lesson_4_1_i2.mp3",
+            "studio_voice_label": "Historian 2 · Conscription & Casualties View"
           }
         ]
       },
@@ -23468,7 +23780,7 @@ export default {
           "a": "Because decorated combat heroes publicly rejected the war as a moral disaster, giving enormous credibility to the anti-war movement."
         }
       ],
-      "vocab_cloze_text": "Public disillusionment with the conflict deepened profoundly because Vietnam was America's first [Living Room War], with uncensored television footage of wounded soldiers and napalmed children broadcast nightly into family dining rooms. Campus unrest exploded across the nation as young men faced the dreaded [Military Draft], which disproportionately conscripted working-class and Black youths while the wealthy secured university deferments. The moral justification for the American war effort collapsed entirely in late 1969 with the exposure of the [My Lai Massacre], in which Lieutenant William Calley's platoon slaughtered over 500 unarmed women, infants, and elderly peasants. When President Nixon ordered troops into Cambodia in May 1970, students at [Kent State University] organized mass rallies, culminating in tragedy when Ohio National Guardsmen opened fire, killing four unarmed students and triggering a nationwide strike of four million students. The crisis of trust reached its climax in June 1971 when whistleblower Daniel Ellsberg leaked the [Pentagon Papers], proving that the US government had systematically deceived the public, while thousands of decorated soldiers in [Vietnam Veterans Against the War] hurled their combat medals over the Capitol fence.",
+      "vocab_cloze_text": "Public anger over the conflict grew rapidly because Vietnam became America's first [Living Room War], with uncensored television reports of casualties and burning villages broadcast nightly into family homes. Campus protests spread nationwide as young men faced the [Military Draft], which disproportionately called up working-class and Black youths while wealthier students gained college deferments. Moral support for the war was badly damaged in November 1969 by revelations of the [My Lai Massacre], in which Lieutenant William Calley's platoon murdered hundreds of unarmed villagers. When Nixon sent troops into Cambodia in May 1970, protests at [Kent State University] ended in tragedy when Ohio National Guardsmen shot dead four unarmed students, triggering strikes across hundreds of campuses. Distrust deepened further in June 1971 when Daniel Ellsberg leaked the [Pentagon Papers], while former soldiers in [Vietnam Veterans Against the War] threw their combat medals onto the Capitol steps.",
       "causal_domino_spine": {
         "title": "The Anti-War Movement, Draft Resistance & Kent State: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -24163,29 +24475,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Gulf of Tonkin Resolution",
-          "def": "The August 1964 congressional act authorising President Johnson to 'take all necessary measures' in Vietnam, effectively a blank check for war.",
-          "definition": "The August 1964 congressional act authorising President Johnson to 'take all necessary measures' in Vietnam, effectively a blank check for war."
+          "term": "Cold War Patriotism",
+          "def": "Widespread belief among millions of Americans that fighting communism in Vietnam was a patriotic duty vital to defending democracy and supporting American troops."
         },
         {
-          "term": "Operation Rolling Thunder",
-          "def": "The sustained, three-year US aerial bombardment campaign against North Vietnam from 1965 to 1968.",
-          "definition": "The sustained, three-year US aerial bombardment campaign against North Vietnam from 1965 to 1968."
+          "term": "Silent Majority",
+          "def": "Phrase used by President Nixon in his televised speech of 3 November 1969 to rally law-abiding middle- and working-class voters who backed his gradual withdrawal plan and disliked noisy protests."
         },
         {
-          "term": "Da Nang Landing",
-          "def": "The arrival of 3,500 US Marines at Da Nang on 8 March 1965, marking the introduction of US direct ground combat troops.",
-          "definition": "The arrival of 3,500 US Marines at Da Nang on 8 March 1965, marking the introduction of US direct ground combat troops."
+          "term": "Hard Hat Riots",
+          "def": "Violent clash in New York City on 8 May 1970 when around 200 pro-war construction workers marched on Wall Street and attacked student anti-war demonstrators."
         },
         {
-          "term": "General William Westmoreland",
-          "def": "The supreme commander of US forces in Vietnam who implemented a strategy of attrition based on superior firepower and enemy body counts.",
-          "definition": "The supreme commander of US forces in Vietnam who implemented a strategy of attrition based on superior firepower and enemy body counts."
+          "term": "Congressional Hawks",
+          "def": "Politicians and commentators who favoured stronger military action and heavy bombing to defeat communism, in contrast to anti-war 'Doves' who wanted rapid withdrawal."
         },
         {
-          "term": "The Military Draft",
-          "def": "The conscription system that drafted hundreds of thousands of young American men (average age 19) into combat, sparking anti-war resistance.",
-          "definition": "The conscription system that drafted hundreds of thousands of young American men (average age 19) into combat, sparking anti-war resistance."
+          "term": "Honour and National Credibility",
+          "def": "Argument made by Nixon and Kissinger that an immediate retreat from Vietnam would humiliate the USA and convince allies worldwide that Washington could not be trusted."
+        },
+        {
+          "term": "1972 Presidential Landslide",
+          "def": "November 1972 election in which Richard Nixon defeated anti-war Democrat George McGovern in 49 out of 50 states, showing strong voter support for Nixon’s handling of the war."
         }
       ],
       "narrative_blocks": [
@@ -24229,9 +24540,9 @@ export default {
               "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that."
             }
           ],
-          "image": "/units/usa/assets/sources/nixon-television-address.jpg",
-          "image_alt": "Pro-war counter-demonstrators with American flags on Fifth Avenue",
-          "caption": "Plate 4.3: Thousands of patriotic counter-demonstrators marching down Fifth Avenue in New York City carrying American flags in support of US troops (May 1970).",
+          "image": "/units/usa/assets/sources/nixon_telegrams_silent_majority_1969.jpg",
+          "image_alt": "President Nixon behind stacks of Silent Majority telegrams in the Oval Office",
+          "caption": "President Richard Nixon seated in the Oval Office behind stacks of supportive letters and telegrams sent by 'Silent Majority' citizens after his 3 November 1969 Vietnam address.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[1.1]</span> Despite the visibility of university anti-war demonstrations, millions of Americans remained firmly committed to the **Cold War anti-communist consensus**. Steeped in the legacy of the Second World War and the Korean conflict, many older citizens believed stopping global communist expansion was an existential moral necessity to protect Western democratic freedom and maintain American international credibility.\n\n<span class=\"para-ref\">[1.2]</span> This traditional world view formed the bedrock of **'Middle America' patriotism**, where working-class families viewed military service as a sacred civic obligation. Supported by powerful **veterans' organizations** like the American Legion and Veterans of Foreign Wars, these patriotic citizens felt deeply insulted by student demonstrators who desecrated the national flag, condemned American soldiers as war criminals, and openly praised Ho Chi Minh."
         },
@@ -24317,9 +24628,9 @@ export default {
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/hard-hat-riot-1970.jpg",
-          "image_alt": "Pro-war construction workers clashing with student demonstrators during the Hard Hat Riot in New York City (May 1970)",
-          "caption": "Construction workers wearing safety helmets confronting anti-war students on Wall Street during the May 1970 'Hard Hat Riot' in support of the administration.",
+          "image": "/units/usa/assets/sources/nixon-television-address.jpg",
+          "image_alt": "President Nixon inspecting stacks of Western Union telegrams with staff",
+          "caption": "President Richard Nixon reviewing bundles of supportive Western Union telegrams with White House aides in the Oval Office following his Silent Majority broadcast (November 1969).",
           "content": "<span class=\"para-ref\">[3.1]</span> On 8 May 1970, class and generational tensions erupted into open physical street warfare in lower Manhattan during the **Hard Hat Riots (Wall Street)**. Roughly one thousand anti-war university students gathered near Federal Hall to protest the recent Kent State shootings and Cambodian invasion, chanting slogans against the Nixon administration's military policies.\n\n<span class=\"para-ref\">[3.2]</span> Suddenly, hundreds of **pro-war construction workers** building the World Trade Center marched into the financial district waving American flags and chanting patriotic slogans. Armed with iron pipes, crowbars, and heavy helmets, they violently assaulted the **anti-war student demonstrators**, chasing them through streets while sympathetic police officers largely stood aside, reflecting the profound cultural chasm dividing blue-collar workers from affluent student activists."
         },
         {
@@ -25004,7 +25315,7 @@ export default {
           "a": "It demonstrated that the conservative Silent Majority overwhelmingly rejected the radical anti-war movement and supported Nixon's measured exit strategy."
         }
       ],
-      "vocab_cloze_text": "Despite the high-profile visibility of campus protests, millions of ordinary citizens viewed the conflict through the prism of traditional [Cold War Patriotism], convinced that halting communist aggression was essential for the survival of the free world. On 3 November 1969, President Nixon rallied this constituency in a landmark televised address, appealing directly to the great [Silent Majority] of law-abiding citizens who rejected flag burnings and supported American troops. Tensions between the working class and college students erupted into violence during the [Hard Hat Riots] of May 1970, when hundreds of construction workers attacked anti-war demonstrators near Wall Street while chanting 'USA, All the Way!'. In Washington, political debate divided bitterly between pro-military [Congressional Hawks] who demanded increased air power and anti-war 'Doves'. President Nixon repeatedly emphasized that America could not abandon South Vietnam without irreparably destroying American [Honor and National Credibility]. The enduring strength of conservative public sentiment was proven conclusively in the [1972 Presidential Landslide], when Nixon defeated anti-war Democrat George McGovern in 49 of 50 states.",
+      "vocab_cloze_text": "Despite dramatic campus demonstrations, millions of Americans viewed the conflict through traditional [Cold War Patriotism], believing that stopping communist expansion was vital for defending the free world. On 3 November 1969, President Nixon appealed directly on television to the great [Silent Majority] of citizens who disliked flag burning and wanted an orderly peace. Class tensions between blue-collar workers and college protesters boiled over in the [Hard Hat Riots] of May 1970, when New York construction workers broke up an anti-war rally near Wall Street. In Washington, debate split sharply between pro-war [Congressional Hawks] who demanded stronger air power and anti-war 'Doves'. Nixon repeatedly emphasised that abandoning South Vietnam overnight would destroy American [Honour and National Credibility]. The strength of conservative voter backing was shown clearly in the [1972 Presidential Landslide], when Nixon won 49 of the 50 states.",
       "causal_domino_spine": {
         "title": "The Silent Majority, Cold War Patriotism & Hard Hat Riots: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -25089,8 +25400,6 @@ export default {
           "type": "speech_transcript",
           "title": "Source A: President Richard Nixon's Televised 'Silent Majority' Address to the Nation (3 November 1969)",
           "date": "3 November 1969",
-          "image": "/units/usa/assets/sources/nixon-television-address.jpg",
-          "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
           "attribution": "President Richard Nixon, Address to the Nation on the War in Vietnam (3 November 1969)",
           "question_badge": "Source Inference",
           "question": "What does President Nixon's appeal in Source A reveal about his political strategy to divide American public opinion over the war?",
@@ -25106,7 +25415,6 @@ export default {
           },
           "hinge_question": "Why did Nixon's 'Silent Majority' speech result in an immediate 77% surge in public approval ratings despite ongoing war casualties?",
           "source_context": "Public Papers of the Presidents: Richard Nixon, 1969. President Richard Nixon for The American television audience, estimated at over 70 million citizens with the objective: To buy political time for his Vietnamization strategy and neutralize the massive anti-war Moratorium demonstrations.. **Hinge Question:** Why did Nixon's 'Silent Majority' speech result in an immediate 77% surge in public approval ratings despite ongoing war casualties?",
-          "src": "/units/usa/assets/sources/nixon-television-address.jpg",
           "source": "/units/usa/assets/sources/portraits/nixon.jpg",
           "caption": "President Richard Nixon in the Oval Office surrounded by thousands of letters and telegrams sent by citizens supporting his 3 November 1969 'Silent Majority' address.",
           "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that."
@@ -25171,8 +25479,6 @@ export default {
           "type": "public_poll",
           "title": "Source D: Gallup Opinion Poll Findings on Public Attitudes Toward the Anti-War Movement and the Nixon Administration (May 1970)",
           "date": "May 1970",
-          "image": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
-          "image_url": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
           "attribution": "Gallup Opinion Index, Report No. 60 (June 1970)",
           "question_badge": "Reliability & Provenance",
           "question": "How do the polling statistics in Source D challenge the modern assumption that the American public was overwhelmingly anti-war by 1970?",
@@ -25188,9 +25494,8 @@ export default {
           },
           "hinge_question": "Why did a majority of Americans who opposed the war simultaneously detest the anti-war protesters?",
           "source_context": "The Gallup Poll: Public Opinion 1935–1971, Volume 3, Random House. George Gallup and the American Institute of Public Opinion for Newspaper subscribers, political strategists, and academic researchers with the objective: To measure scientifically validated cross-sections of American public sentiment during national crises.. **Hinge Question:** Why did a majority of Americans who opposed the war simultaneously detest the anti-war protesters?",
-          "src": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
           "source": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
-          "caption": "Thousands of construction workers, longshoremen, and blue-collar citizens rallying in lower Manhattan waving American flags in support of President Nixon and American troops (May 1970).",
+          "caption": "National Gallup Poll survey findings (May 1970) measuring American public attitudes toward anti-war campus demonstrators and the Nixon administration.",
           "text": "Gallup Special Survey on Campus Protests and the Cambodian Incursion (May 1970):<br>• 58% of respondents held student anti-war demonstrators primarily responsible for the fatal shootings at Kent State University, compared to only 11% who blamed the Ohio National Guard.<br>• 50% approved of President Nixon's decision to order US ground troops into Cambodia to attack communist sanctuaries, with 39% disapproving.<br>• 65% expressed favorable views of the 'Silent Majority' and believed anti-war protesters were hurting the country's international standing."
         },
         {
@@ -25699,29 +26004,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Agent Orange",
-          "def": "A toxic chemical defoliant containing dioxin sprayed over millions of acres of jungle to strip forest canopy and destroy food crops.",
-          "definition": "A toxic chemical defoliant containing dioxin sprayed over millions of acres of jungle to strip forest canopy and destroy food crops."
+          "term": "Henry Kissinger",
+          "def": "President Nixon's National Security Adviser and Secretary of State who conducted secret peace talks in Paris with North Vietnamese negotiator Le Duc Tho."
         },
         {
-          "term": "Ho Chi Minh Trail",
-          "def": "The 16,000-kilometer logistical supply network through Laos and Cambodia funnelling weapons, munitions, and troops from North to South Vietnam.",
-          "definition": "The 16,000-kilometer logistical supply network through Laos and Cambodia funnelling weapons, munitions, and troops from North to South Vietnam."
+          "term": "1972 Christmas Bombings",
+          "def": "Intense eleven-day US B-52 bombing campaign against Hanoi and Haiphong in December 1972 ordered by Nixon to force North Vietnam back to peace talks and reassure South Vietnam."
         },
         {
-          "term": "Napalm",
-          "def": "A highly flammable jellied petroleum bomb that clung to human skin and surfaces, creating catastrophic, incinerating fires.",
-          "definition": "A highly flammable jellied petroleum bomb that clung to human skin and surfaces, creating catastrophic, incinerating fires."
+          "term": "Paris Peace Accords",
+          "def": "Ceasefire signed on 27 January 1973 ending direct US combat involvement and freeing American prisoners of war, while allowing over 150,000 North Vietnamese soldiers to stay in South Vietnam."
         },
         {
-          "term": "Search and Destroy",
-          "def": "US combat doctrine where helicopter-borne platoons raided villages to locate Vietcong, burn settlements, and count enemy dead.",
-          "definition": "US combat doctrine where helicopter-borne platoons raided villages to locate Vietcong, burn settlements, and count enemy dead."
+          "term": "Case-Church Amendment",
+          "def": "Law passed by the US Congress in June 1973 cutting off funding for any renewed American bombing or combat operations in Vietnam, Laos, or Cambodia."
         },
         {
-          "term": "Cu Chi Tunnels",
-          "def": "An extensive 250-kilometer multi-level underground tunnel complex that sheltered Vietcong fighters from US air strikes and artillery.",
-          "definition": "An extensive 250-kilometer multi-level underground tunnel complex that sheltered Vietcong fighters from US air strikes and artillery."
+          "term": "Ho Chi Minh Campaign",
+          "def": "Major North Vietnamese military offensive launched in spring 1975 that rapidly overwhelmed the demoralised and under-supplied South Vietnamese army (ARVN)."
+        },
+        {
+          "term": "Fall of Saigon",
+          "def": "Capture of South Vietnam’s capital by North Vietnamese tanks on 30 April 1975 as US helicopters evacuated the last Americans and South Vietnamese allies from rooftops, ending the war."
         }
       ],
       "narrative_blocks": [
@@ -25848,9 +26152,9 @@ export default {
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/operation-homecoming-pows-1973.jpg",
-          "image_alt": "Released American prisoners of war celebrating aboard a C-141 transport aircraft leaving Hanoi (February 1973)",
-          "caption": "Repatriated American prisoners of war cheering aboard a USAF medical evacuation aircraft departing Hanoi following the signing of the Paris Peace Accords in 1973.",
+          "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+          "image_alt": "President Nixon and Henry Kissinger conferring in the Oval Office",
+          "caption": "President Richard Nixon and National Security Advisor Henry Kissinger conferring in the Oval Office during the final stages of the Paris peace negotiations (1972).",
           "content": "<span class=\"para-ref\">[3.1]</span> On 27 January 1973, foreign ministers of the United States, North Vietnam, South Vietnam, and the Vietcong gathered at the Majestic Hotel to sign the historic **Paris Peace Accords (Jan 1973)**. The treaty provided for an immediate nationwide ceasefire in place, ending direct American military involvement in Indochina and bringing an exhausted United States out of its longest foreign war.\n\n<span class=\"para-ref\">[3.2]</span> The accords mandated a **complete US military withdrawal** of all remaining American combat troops and military advisers within sixty days. In exchange, Hanoi agreed to a comprehensive **POW release agreement**, returning 591 American prisoners of war, including naval aviator John McCain. However, the accords left communist forces embedded across South Vietnam, guaranteeing future military conflict."
         },
         {
@@ -26536,7 +26840,7 @@ export default {
           "a": "Communist tanks crashed through the gates of the Presidential Palace, Saigon surrendered unconditionally, and Vietnam was reunited under communist rule."
         }
       ],
-      "vocab_cloze_text": "Seeking an exit that preserved American credibility, National Security Advisor [Henry Kissinger] engaged in secret talks in Paris with North Vietnamese diplomat Le Duc Tho. When negotiations stalled in late 1972, Nixon unleashed [Operation Linebacker II], an unprecedented eleven-day B-52 bombing blitz on Hanoi to force concessions. On 27 January 1973, all parties formally signed the [Paris Peace Accords], requiring the total withdrawal of all American combat forces within 60 days, while fatally permitting over 150,000 North Vietnamese troops to remain in the South. In early 1973, the emotional release of nearly 600 American prisoners of war took place under [Operation Homecoming]. Deprived of American air support and crippled by corruption, the South Vietnamese military collapsed catastrophically in spring 1975 under the communist [Ho Chi Minh Campaign]. In late April 1975, the United States conducted [Operation Frequent Wind], evacuating thousands by helicopter from rooftops as North Vietnamese tanks crashed through the gates of the Independence Palace, concluding 30 years of war.",
+      "vocab_cloze_text": "Seeking a negotiated exit from Vietnam, National Security Adviser [Henry Kissinger] held secret talks in Paris with North Vietnamese diplomat Le Duc Tho. When talks stalled in December 1972, Nixon ordered the [1972 Christmas Bombings], an eleven-day B-52 blitz on Hanoi and Haiphong to push both sides into signing a deal. On 27 January 1973, the [Paris Peace Accords] were signed, withdrawing all remaining US combat troops within 60 days while leaving North Vietnamese forces inside the South. Soon afterwards, Congress passed the [Case-Church Amendment], blocking any return of US bombers as Nixon became engulfed by the Watergate scandal. Deprived of US air support and weakened by corruption, the South Vietnamese army collapsed in spring 1975 during the North's [Ho Chi Minh Campaign], culminating on 30 April 1975 in the [Fall of Saigon] and communist reunification.",
       "causal_domino_spine": {
         "title": "Paris Peace Accords, Christmas Bombings & Exit: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -26698,8 +27002,6 @@ export default {
           "type": "military_dispatch",
           "title": "Source D: From General Van Tien Dung's Official Account of the Final Communist 'Ho Chi Minh Campaign' on Saigon (April 1975)",
           "date": "April 1975",
-          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-          "image_url": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
           "attribution": "General Van Tien Dung, Our Great Spring Victory (Hanoi, 1976; translated 1977)",
           "question_badge": "Reliability & Provenance",
           "question": "How does General Dung's perspective as commander of the North Vietnamese offensive affect the historical value of Source D?",
@@ -26715,7 +27017,6 @@ export default {
           },
           "hinge_question": "Why did South Vietnamese military resistance collapse in only 55 days in 1975 when military analysts predicted it would last at least two years?",
           "source_context": "General Van Tien Dung, 'Our Great Spring Victory', Foreign Languages Publishing House, Hanoi (1977). General Van Tien Dung, Chief of the General Staff of the Vietnam People's Army for Military historians and the reunited population of Vietnam with the objective: To record the military planning and execution of the final 55-day offensive that captured Saigon.. **Hinge Question:** Why did South Vietnamese military resistance collapse in only 55 days in 1975 when military analysts predicted it would last at least two years?",
-          "src": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
           "source": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
           "caption": "Civilians scramble up a rooftop ladder to board an Air America helicopter in Saigon on 29 April 1975 as communist forces led by General Van Tien Dung surround the capital.",
           "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory."
@@ -26726,8 +27027,6 @@ export default {
           "type": "speech_transcript",
           "title": "Source E: President Gerald R. Ford's Address at Tulane University Declaring the Vietnam War 'Finished' (23 April 1975)",
           "date": "23 April 1975",
-          "image": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
-          "image_url": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
           "attribution": "President Gerald R. Ford, Address at a Tulane University Convocation, New Orleans (23 April 1975)",
           "question_badge": "Cross-Referencing",
           "question": "How does President Ford's address in Source E confirm the total abandonment of the South Vietnamese government by Washington?",
@@ -26743,7 +27042,6 @@ export default {
           },
           "hinge_question": "How did the War Powers Act of 1973 and the Watergate scandal prevent President Ford from using air power to save South Vietnam in 1975?",
           "source_context": "Gerald R. Ford Presidential Library and Museum, Ann Arbor, Michigan. President Gerald R. Ford for Faculty and students at Tulane University and the national broadcast audience with the objective: To prepare the American public psychologically for the imminent fall of Saigon and signal a turn toward the future.. **Hinge Question:** How did the War Powers Act of 1973 and the Watergate scandal prevent President Ford from using air power to save South Vietnam in 1975?",
-          "src": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
           "source": "/units/usa/assets/sources/portraits/ford.jpg",
           "caption": "A US Marine guards the perimeter at Tan Son Nhut Air Base during Operation Frequent Wind, the final evacuation of Saigon in late April 1975.",
           "text": "Today, America can again feel the pride that existed in New Orleans that day 160 years ago. But it is not a pride that will be achieved by fighting again a war that is finished as far as America is concerned. I believe it is time for us to look forward to the future, to direct our energies and our resources towards the great goals of which we are capable, and to restore the confidence of the American people in their own destiny."
@@ -27229,29 +27527,28 @@ export default {
       },
       "vocab": [
         {
-          "term": "Tet Offensive",
-          "def": "The massive January 1968 surprise assault by 84,000 communist troops striking over 100 South Vietnamese towns, cities, and the US Embassy.",
-          "definition": "The massive January 1968 surprise assault by 84,000 communist troops striking over 100 South Vietnamese towns, cities, and the US Embassy."
+          "term": "Guerrilla Tactics",
+          "def": "Vietcong ambushes, booby traps, and underground tunnels that neutralised America’s huge advantage in conventional weapons and prevented decisive battlefield victories."
         },
         {
-          "term": "Credibility Gap",
-          "def": "The chasm between optimistic official government claims of imminent victory and the bleak reality of brutal stalemate seen on television.",
-          "definition": "The chasm between optimistic official government claims of imminent victory and the bleak reality of brutal stalemate seen on television."
+          "term": "Hearts and Minds",
+          "def": "Failed US campaign to win the loyalty of South Vietnamese peasants, fatally undermined by Strategic Hamlets, Search-and-Destroy raids, Napalm, and Agent Orange."
         },
         {
-          "term": "My Lai Massacre",
-          "def": "The March 1968 war crime where Charlie Company soldiers under Lieutenant William Calley slaughtered over 500 unarmed Vietnamese civilians.",
-          "definition": "The March 1968 war crime where Charlie Company soldiers under Lieutenant William Calley slaughtered over 500 unarmed Vietnamese civilians."
+          "term": "Saigon Regime Corruption",
+          "def": "Deep unpopularity, rigging, and corruption inside South Vietnam’s governments from Diem to Thieu, which left the ARVN with low morale and high desertion rates."
         },
         {
-          "term": "Vietnamization",
-          "def": "President Richard Nixon's policy announced in 1969 to withdraw US combat ground forces and train South Vietnamese (ARVN) troops to fight alone.",
-          "definition": "President Richard Nixon's policy announced in 1969 to withdraw US combat ground forces and train South Vietnamese (ARVN) troops to fight alone."
+          "term": "Domestic Anti-War Opposition",
+          "def": "Mounting opposition inside the USA—fuelled by casualties, television coverage, the draft, Tet, and My Lai—that eroded political will and led Congress to cut war funding."
         },
         {
-          "term": "Fall of Saigon",
-          "def": "The capture of the South Vietnamese capital by North Vietnamese tanks on 30 April 1975, ending the war and unifying Vietnam under communism.",
-          "definition": "The capture of the South Vietnamese capital by North Vietnamese tanks on 30 April 1975, ending the war and unifying Vietnam under communism."
+          "term": "Soviet and Chinese Aid",
+          "def": "Billions of dollars in rifles, artillery, fuel, trucks, and anti-aircraft missiles supplied by the USSR and China that kept North Vietnam and the Vietcong fighting."
+        },
+        {
+          "term": "War Powers Act of 1973",
+          "def": "Law passed by Congress in November 1973 over Nixon's veto requiring presidents to notify Congress within 48 hours of sending US troops abroad and limiting deployments without congressional consent."
         }
       ],
       "narrative_blocks": [
@@ -27295,8 +27592,8 @@ export default {
             }
           ],
           "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-          "image_alt": "Exhausted US infantry soldiers wading through deep muddy waters during monsoon",
-          "caption": "Plate 4.7: Soldiers of the 9th Infantry Division wading through deep canal water and mud during a swamp patrol in the Mekong Delta (c. 1968).",
+          "image_alt": "Evacuees climbing a rooftop ladder to a Huey helicopter during the Fall of Saigon",
+          "caption": "Evacuees climb a rooftop ladder to board an Air America Huey helicopter in Saigon on 29 April 1975 as North Vietnamese forces close in on the capital.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[1.1]</span> By late 1974, South Vietnam was suffering severe economic and military collapse. Crippled by worldwide oil shocks, skyrocketing inflation, and the complete cutoff of American military subsidies by an anti-war Congress, ARVN forces lacked ammunition, spare parts, and fuel. Seeing Saigon defenseless, North Vietnamese commanders launched the devastating **1975 Spring Offensive** in January to reunify the country.\n\n<span class=\"para-ref\">[1.2]</span> Led by legendary general **General Van Tien Dung**, communist divisions captured the central highland city of Ban Me Thuot in March. When President Thieu ordered a panicky retreat from the northern provinces, the withdrawal disintegrated into a chaotic rout known as the **'Convoy of Tears'**, where over one hundred thousand soldiers and fleeing civilians were slaughtered along Highway 7 by pursuing communist artillery."
         },
@@ -27383,8 +27680,8 @@ export default {
             }
           ],
           "image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
-          "image_alt": "A weary young American combat soldier resting with his rifle during an operation",
-          "caption": "Plate 4.8: An exhausted American conscript resting against a tree line during a protracted search-and-destroy mission in hostile territory (1968).",
+          "image_alt": "Combat painting of US soldiers wading through swamp water in Vietnam",
+          "caption": "US Army Combat Art painting showing American infantrymen wading shoulder-deep through dense swamp water under jungle canopy during a Vietnam patrol.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[3.1]</span> The foremost reason for American defeat was the extraordinary resilience and asymmetric will of **Vietnamese revolutionary nationalism**. Communist insurgents and North Vietnamese regular soldiers viewed the war as an existential sacred struggle for national independence against foreign imperialist aggression, willingly accepting colossal human casualties—exceeding one million fighters killed—rather than surrender their homeland to foreign military occupation.\n\n<span class=\"para-ref\">[3.2]</span> In stark contrast to America's conscript army serving twelve-month tours, communist fighters were sustained by **Ho Chi Minh anti-colonial vision**, fighting continuously on their native soil. This unwavering ideological commitment exposed America's fundamental **technological military inadequacy**, proving that overwhelming industrial firepower, advanced electronics, and chemical warfare could never overcome a mobilized peasant population determined to achieve national self-determination."
         },
@@ -28072,7 +28369,9 @@ export default {
                 "provenance": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "attribution": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "content": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
-                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing."
+                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Guerrilla Endurance View"
               },
               {
                 "interpNum": "2",
@@ -28082,7 +28381,9 @@ export default {
                 "provenance": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "attribution": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "content": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
-                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive."
+                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Collapse View"
               }
             ]
           },
@@ -28144,7 +28445,9 @@ export default {
                 "provenance": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "attribution": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "content": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
-                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing."
+                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Guerrilla Endurance View"
               },
               {
                 "interpNum": "2",
@@ -28154,7 +28457,9 @@ export default {
                 "provenance": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "attribution": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "content": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
-                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive."
+                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Collapse View"
               }
             ],
             "sources": [
@@ -28279,7 +28584,9 @@ export default {
                 "provenance": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "attribution": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "content": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
-                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing."
+                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Guerrilla Endurance View"
               },
               {
                 "interpNum": "2",
@@ -28289,7 +28596,9 @@ export default {
                 "provenance": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "attribution": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "content": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
-                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive."
+                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Collapse View"
               }
             ],
             "sources": [
@@ -28451,7 +28760,9 @@ export default {
                 "provenance": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "attribution": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
                 "content": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
-                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing."
+                "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Guerrilla Endurance View"
               },
               {
                 "interpNum": "2",
@@ -28461,7 +28772,9 @@ export default {
                 "provenance": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "attribution": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
                 "content": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
-                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive."
+                "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Domestic Collapse View"
               }
             ],
             "sources": [
@@ -28580,7 +28893,9 @@ export default {
             "provenance": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
             "attribution": "From an academic history of the Vietnamese revolutionary war effort, published in 2013",
             "content": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
-            "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing."
+            "text": "The United States failed to win the war in Vietnam primarily because conventional industrial firepower could not break the nationalist determination and guerrilla strategy of the communist forces. Motivated by a decades-long struggle for national independence, Vietcong insurgents used jungle ambushes and underground tunnel complexes to neutralise American technology, while US ‘search and destroy’ raids alienated South Vietnamese peasants. Above all, relentless low-tech transport along the Ho Chi Minh Trail kept communist armies supplied with Soviet and Chinese weaponry despite millions of tons of US bombing.",
+            "studio_audio": "/audio/sources/usa/lesson_4_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Guerrilla Endurance View"
           },
           {
             "interpNum": "2",
@@ -28590,7 +28905,9 @@ export default {
             "provenance": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
             "attribution": "From a political study of American democracy and the end of the Vietnam War, published in 2016",
             "content": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
-            "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive."
+            "text": "The decisive cause of American failure in Vietnam lay not in the jungles of Southeast Asia, but in the collapse of domestic political will and congressional backing in Washington. A $168 billion war bill, 58,220 American deaths, uncensored television coverage of Tet and My Lai, and mass anti-draft protests shattered the Cold War consensus at home. Once an exhausted Congress enacted the 1973 War Powers Resolution and slashed military funding, the corrupt and unpopular Saigon regime collapsed rapidly during the 1975 Spring Offensive.",
+            "studio_audio": "/audio/sources/usa/lesson_4_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Domestic Collapse View"
           }
         ]
       },
@@ -28655,7 +28972,7 @@ export default {
           "a": "It revoked the imperial presidency and prevented future presidents from waging undeclared wars without explicit congressional approval."
         }
       ],
-      "vocab_cloze_text": "The ultimate defeat of the United States in Vietnam resulted from interconnected military, political, and cultural factors. Militarily, the Pentagon's conventional doctrine failed against the enemy's masterclass in [Asymmetric Warfare], where hidden tunnel networks and camouflage neutralized multi-billion-dollar technology. Politically, the US completely failed in its mission to [Win Hearts and Minds], as chemical defoliation and search-and-destroy missions alienated the very peasantry the US sought to defend. Furthermore, the South Vietnamese regime suffered from chronic [Saigon Regime Corruption], with generals pocketing American aid while conscripts deserted in massive numbers. On the domestic home front, an unbridgeable [Domestic Political Collapse] erupted as television broadcasts and scandals destroyed public trust, leading Congress to slash funding. Meanwhile, North Vietnam was bolstered by billions in advanced [Soviet and Chinese Aid], equipping their army with sophisticated anti-aircraft missiles. Determined to prevent future imperial presidencies, Congress enacted the historic [War Powers Act of 1973], permanently curtailing executive authority to wage undeclared foreign wars.",
+      "vocab_cloze_text": "America's failure in Vietnam stemmed from linked military, political, and domestic causes. On the battlefield, conventional US firepower failed to overcome Vietcong [Guerrilla Tactics], as hidden tunnels and jungle ambushes wore down American morale. Politically, US forces failed to win peasant [Hearts and Minds], because chemical spraying and Search-and-Destroy raids destroyed rural villages and drove civilians toward the Vietcong. At the same time, chronic [Saigon Regime Corruption] weakened the South Vietnamese state and left ARVN conscripts unwilling to fight once US air power ended. At home, growing [Domestic Anti-War Opposition] after Tet, My Lai, and Kent State made an open-ended conflict politically impossible. Meanwhile, North Vietnam sustained heavy losses thanks to continuous [Soviet and Chinese Aid] flowing down the Ho Chi Minh Trail. Determined to curb presidential war-making, Congress passed the [War Powers Act of 1973].",
       "causal_domino_spine": {
         "title": "The Fall of Saigon & Four Reasons for Defeat: 5-Stage Causal Domino Chain",
         "subtitle": "Edexcel Paper 3 Analytical Strategy for Causation & Historical Significance",
@@ -28738,9 +29055,9 @@ export default {
           "id": "usa_lesson_4_4_a",
           "letter": "A",
           "type": "photograph",
-          "title": "Source A: Exhausted and Mud-Covered US Conscript Resting in a Canal After a Firefight in the Mekong Delta (1968)",
+          "title": "Source A: US Infantryman Carrying an M60 Machine Gun While Wading Through a Mekong Delta Canal (c. 1968)",
           "date": "1968",
-          "caption": "A young, exhausted US conscript resting in a muddy drainage canal following an intense firefight with Vietcong insurgents in the Mekong Delta (1968).",
+          "caption": "Archival photograph of an American soldier carrying an M60 machine gun and ammunition belt while wading along a flooded canal in the Mekong Delta (c. 1968).",
           "image": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
           "image_url": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
           "attribution": "National Archives Still Pictures, Record Group 111, Washington D.C.",
@@ -28851,8 +29168,6 @@ export default {
           "type": "historian_analysis",
           "title": "Source E: From an Analysis by Military Historian George C. Herring in 'America's Longest War' (1979)",
           "date": "1979",
-          "image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
-          "image_url": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
           "attribution": "George C. Herring, America's Longest War: The United States and Vietnam, 1950–1975 (1979)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Professor Herring’s academic evaluation in Source E synthesize the military and political causes of American defeat?",
@@ -28868,7 +29183,6 @@ export default {
           },
           "hinge_question": "Was American defeat primarily caused by military failures in Vietnam or political collapse at home?",
           "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention.. **Hinge Question:** Was American defeat primarily caused by military failures in Vietnam or political collapse at home?",
-          "src": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
           "source": "/units/usa/assets/sources/portraits/westmoreland.jpg",
           "caption": "US soldiers wading through swamp under thick canopy in the Mekong Delta (US Army Combat Art Program).",
           "text": "The United States intervened in Vietnam to contain communist expansion, but it fundamentally misperceived the nature of the conflict. Washington viewed the struggle through the rigid ideological lens of the global Cold War, failing to recognize that Vietnamese communism was deeply rooted in a century-long, ferocious struggle for national independence against foreign colonial domination. By intervening to prop up an artificial, corrupt, and illegitimate client regime in Saigon, the United States embarked upon an unwinnable war in which no amount of modern industrial technology or high-explosive firepower could compensate for the lack of political legitimacy."

@@ -220,7 +220,7 @@ export default {
           "tier": "3"
         }
       ],
-      "vocab_cloze_text": "Following the sudden signing of the [Armistice] in 1918, furious right-wing nationalists spread the [Dolchstoßlegende] (stab-in-the-back myth), branding the democratic politicians who surrendered as treasonous [November Criminals]. The new Weimar [Constitution] created a highly democratic system where the lower house, the [Reichstag], passed laws while the upper house, the [Reichsrat], could delay them. However, the voting system of [Proportional Representation (PR)] meant no single party could win a majority, leading to weak, constantly shifting [Coalition Government] alliances. This instability forced the President to frequently rely on the emergency powers granted by [Article 48] to rule by decree.",
+      "vocab_cloze_text": "Following the sudden signing of the [Armistice] in 1918, furious right-wing nationalists spread the [Dolchstoßlegende] (stab-in-the-back myth), branding the democratic politicians who surrendered as treasonous [November Criminals]. The new Weimar Constitution created a highly democratic system where the lower house, the [Reichstag], passed laws while the upper house, the Reichsrat, could delay them. However, the voting system of [Proportional Representation (PR)] meant no single party could win a majority, leading to weak, shifting coalition governments. This instability forced the President to frequently rely on the emergency powers granted by [Article 48] to rule by decree.",
       "flashcards": [
         {
           "term": "Reichstag",
@@ -2690,14 +2690,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Political Violence and Military Disloyalty",
                 "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-                "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse."
+                "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i1.mp3",
+                "studio_voice_label": "Historian 1 · Richard J. Evans"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Economic Catastrophe and Hyperinflation",
                 "provenance": "From A History of Germany 1918–2014 by Mary Fulbrook, published in 2014.",
-                "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic."
+                "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i2.mp3",
+                "studio_voice_label": "Historian 2 · Mary Fulbrook"
               }
             ],
             "examiner_tip": "Contrast the core threat identified by each historian: Evans (Interpretation 1) argues armed political violence and army disloyalty were the gravest danger, whereas Fulbrook (Interpretation 2) argues economic collapse and hyperinflation damaged the republic far more deeply.",
@@ -2761,14 +2765,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Political Violence and Military Disloyalty",
                 "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-                "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse."
+                "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i1.mp3",
+                "studio_voice_label": "Historian 1 · Richard J. Evans"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Economic Catastrophe and Hyperinflation",
                 "provenance": "From A History of Germany 1918–2014 by Mary Fulbrook, published in 2014.",
-                "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic."
+                "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i2.mp3",
+                "studio_voice_label": "Historian 2 · Mary Fulbrook"
               }
             ],
             "sources": [
@@ -2872,14 +2880,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Political Violence and Military Disloyalty",
                 "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-                "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse."
+                "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i1.mp3",
+                "studio_voice_label": "Historian 1 · Richard J. Evans"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Economic Catastrophe and Hyperinflation",
                 "provenance": "From A History of Germany 1918–2014 by Mary Fulbrook, published in 2014.",
-                "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic."
+                "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i2.mp3",
+                "studio_voice_label": "Historian 2 · Mary Fulbrook"
               }
             ],
             "sources": [
@@ -3002,14 +3014,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Political Violence and Military Disloyalty",
             "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-            "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse."
+            "content": "The gravest challenges confronting the early Weimar Republic were political violence, extremist insurrections, and the open disloyalty of the army. From the outset, the republic was assaulted by armed uprisings from both the extreme left and the extreme right. The Kapp Putsch of March 1920 demonstrated that the regular military could not be relied upon to defend the constitution, while nationalist assassination squads murdered over three hundred political figures, including Foreign Minister Walther Rathenau. It was this violent lawlessness that brought the republic to the verge of collapse.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i1.mp3",
+            "studio_voice_label": "Historian 1 · Richard J. Evans"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Economic Catastrophe and Hyperinflation",
             "provenance": "From A History of Germany 1918–2014 by Mary Fulbrook, published in 2014.",
-            "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic."
+            "content": "The Weimar Republic was shaken far more profoundly by economic catastrophe than by right-wing putsches. The crippling burden of reparations, exacerbated by the French occupation of the Ruhr in January 1923, triggered hyperinflation that completely destroyed the German currency. The economic collapse wiped out the life savings, pensions, and financial security of the respectable middle class. This alienated millions of ordinary citizens from the democratic system, leaving a permanent legacy of bitterness and cynicism towards the republic.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_2_i2.mp3",
+            "studio_voice_label": "Historian 2 · Mary Fulbrook"
           }
         ],
         "supporting_sources": [
@@ -6171,14 +6187,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Social and Political Liberation of Weimar Women",
                 "provenance": "From Weimar Germany: Promise and Tragedy by Eric D. Weitz, published in 2007.",
-                "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles."
+                "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Eric D. Weitz"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Low-Paid Reality and Traditionalist Backlash",
                 "provenance": "From Women and the Weimar Republic by Helen Boak, published in 2013.",
-                "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic."
+                "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Helen Boak"
               }
             ],
             "examiner_tip": "Contrast genuine emancipation (Interpretation 1) with continuity and backlash (Interpretation 2), backing each side with a short verbatim phrase from the text.",
@@ -6241,14 +6261,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Social and Political Liberation of Weimar Women",
                 "provenance": "From Weimar Germany: Promise and Tragedy by Eric D. Weitz, published in 2007.",
-                "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles."
+                "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Eric D. Weitz"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Low-Paid Reality and Traditionalist Backlash",
                 "provenance": "From Women and the Weimar Republic by Helen Boak, published in 2013.",
-                "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic."
+                "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Helen Boak"
               }
             ],
             "sources": [
@@ -6339,14 +6363,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Social and Political Liberation of Weimar Women",
                 "provenance": "From Weimar Germany: Promise and Tragedy by Eric D. Weitz, published in 2007.",
-                "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles."
+                "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Eric D. Weitz"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Low-Paid Reality and Traditionalist Backlash",
                 "provenance": "From Women and the Weimar Republic by Helen Boak, published in 2013.",
-                "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic."
+                "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Helen Boak"
               }
             ],
             "sources": [
@@ -6457,14 +6485,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Social and Political Liberation of Weimar Women",
             "provenance": "From Weimar Germany: Promise and Tragedy by Eric D. Weitz, published in 2007.",
-            "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles."
+            "content": "The Weimar era brought a profound, lasting social and political liberation for German women. The introduction of female suffrage in 1918 resulted in high female representation in the Reichstag, while economic recovery opened up millions of new white-collar job opportunities. This allowed a new generation of independent, financially self-sufficient women to confidently challenge traditional gender roles.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Eric D. Weitz"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Low-Paid Reality and Traditionalist Backlash",
             "provenance": "From Women and the Weimar Republic by Helen Boak, published in 2013.",
-            "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic."
+            "content": "The concept of the liberated 'New Woman' was an urban myth that did not reflect the reality for the vast majority of German women. Most women remained trapped in low-paid, unskilled agricultural and domestic work, and the constitution's promises of equality were rarely enforced in the workplace. The visible changes in Berlin cabaret culture actually provoked a massive, hostile traditionalist backlash that weakened the Republic.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_1_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Helen Boak"
           }
         ],
         "supporting_sources": [
@@ -11568,14 +11600,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Economic Despair and the Great Depression",
                 "provenance": "From A History of Germany 1815–1990 by William Carr, published in 1991.",
-                "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler."
+                "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Economic Despair View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Nazi Propaganda, Hitler’s Appeal, and the SA",
                 "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-                "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters."
+                "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Richard J. Evans"
               }
             ],
             "examiner_tip": "Contrast \"push\" factors vs \"pull\" factors: Carr (Interpretation 1) argues socio-economic despair from the Depression drove voters away from Weimar, whereas Evans (Interpretation 2) argues active Nazi electioneering, Hitler's charisma, and SA discipline pulled voters to the NSDAP.",
@@ -11639,14 +11675,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Economic Despair and the Great Depression",
                 "provenance": "From A History of Germany 1815–1990 by William Carr, published in 1991.",
-                "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler."
+                "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Economic Despair View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Nazi Propaganda, Hitler’s Appeal, and the SA",
                 "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-                "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters."
+                "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Richard J. Evans"
               }
             ],
             "sources": [
@@ -11744,14 +11784,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Economic Despair and the Great Depression",
                 "provenance": "From A History of Germany 1815–1990 by William Carr, published in 1991.",
-                "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler."
+                "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Economic Despair View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Nazi Propaganda, Hitler’s Appeal, and the SA",
                 "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-                "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters."
+                "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Richard J. Evans"
               }
             ],
             "sources": [
@@ -11868,14 +11912,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Economic Despair and the Great Depression",
             "provenance": "From A History of Germany 1815–1990 by William Carr, published in 1991.",
-            "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler."
+            "content": "The Nazi Party grew into a mass movement primarily because the Great Depression shattered the economic and social foundations of the Weimar Republic. With six million Germans unemployed by 1932, millions of desperate middle-class voters, shopkeepers, and farmers turned to the NSDAP as the only radical alternative to Communism. In a democracy that had collapsed into economic paralysis, it was the despair produced by mass unemployment and Brüning’s wage-cutting policies that drove voters in their millions to support Hitler.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i1.mp3",
+            "studio_voice_label": "Historian 1 · Economic Despair View"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Nazi Propaganda, Hitler’s Appeal, and the SA",
             "provenance": "From The Coming of the Third Reich by Richard J. Evans, published in 2003.",
-            "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters."
+            "content": "The rapid growth of Nazi support between 1929 and 1932 cannot be explained solely by economic distress. Other nations suffered mass unemployment without turning to fascism. What set the Nazis apart was their brilliant modern electioneering and Hitler’s magnetic personal appeal. Goebbels orchestrated dynamic campaigns using aeroplanes, radio, and mass rallies, while the uniformed SA stormtroopers provided an intoxicating image of discipline and order on the streets. It was Nazi propaganda and paramilitary energy that captivated voters.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_3_i2.mp3",
+            "studio_voice_label": "Historian 2 · Richard J. Evans"
           }
         ],
         "supporting_sources": [
@@ -13730,14 +13778,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Democratic Collapse and Parliamentary Paralysis",
                 "provenance": "From Weimar: Why Did German Democracy Fail? by Ian Kershaw (ed.), published in 1990.",
-                "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament."
+                "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Ian Kershaw"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Backstairs Intrigue and Elite Miscalculation",
                 "provenance": "From Hitler’s Thirty Days to Power by Henry Ashby Turner, published in 1996.",
-                "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals."
+                "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Backstairs Intrigue View"
               }
             ],
             "examiner_tip": "Contrast inevitability and structural collapse (Interpretation 1) against contingency and elite conspiracy (Interpretation 2), quoting directly from both extracts.",
@@ -13800,14 +13852,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Democratic Collapse and Parliamentary Paralysis",
                 "provenance": "From Weimar: Why Did German Democracy Fail? by Ian Kershaw (ed.), published in 1990.",
-                "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament."
+                "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Ian Kershaw"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Backstairs Intrigue and Elite Miscalculation",
                 "provenance": "From Hitler’s Thirty Days to Power by Henry Ashby Turner, published in 1996.",
-                "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals."
+                "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Backstairs Intrigue View"
               }
             ],
             "sources": [
@@ -13898,14 +13954,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Democratic Collapse and Parliamentary Paralysis",
                 "provenance": "From Weimar: Why Did German Democracy Fail? by Ian Kershaw (ed.), published in 1990.",
-                "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament."
+                "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Ian Kershaw"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Backstairs Intrigue and Elite Miscalculation",
                 "provenance": "From Hitler’s Thirty Days to Power by Henry Ashby Turner, published in 1996.",
-                "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals."
+                "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Backstairs Intrigue View"
               }
             ],
             "sources": [
@@ -14016,14 +14076,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Democratic Collapse and Parliamentary Paralysis",
             "provenance": "From Weimar: Why Did German Democracy Fail? by Ian Kershaw (ed.), published in 1990.",
-            "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament."
+            "content": "Hitler’s rise to power was the inevitable result of the collapse of the Weimar democratic system. The Great Depression permanently paralyzed the Reichstag, forcing a reliance on Article 48 presidential emergency decrees that destroyed democratic legitimacy. By 1932, democracy was already dead, and the conservative elites had to hand power to Hitler because his party was the largest in the parliament.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Ian Kershaw"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Backstairs Intrigue and Elite Miscalculation",
             "provenance": "From Hitler’s Thirty Days to Power by Henry Ashby Turner, published in 1996.",
-            "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals."
+            "content": "Hitler’s appointment as Chancellor was not inevitable, but was the direct result of secret political scheming and backstairs intrigue. The Nazi vote was actually declining by late 1932, and the party was running out of money. Hitler was only rescued because Franz von Papen, President Hindenburg, and conservative landowners made the fatal, cynical miscalculation that they could use his mass popularity to serve their own authoritarian goals.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_2_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Backstairs Intrigue View"
           }
         ],
         "supporting_sources": [
@@ -19005,14 +19069,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Persuasive Propaganda and Popular Enthusiasm",
                 "provenance": "From The Third Reich: Politics and Propaganda by David Welch, published in 2002.",
-                "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion."
+                "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Consent & Propaganda View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Coercive Surveillance and Gestapo Terror",
                 "provenance": "From The Third Reich in Power by Richard J. Evans, published in 2005.",
-                "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin."
+                "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Richard J. Evans"
               }
             ],
             "examiner_tip": "Contrast voluntary consent via propaganda (Welch, Interpretation 1) against coerced outward conformity via police terror (Evans, Interpretation 2), quoting directly from both extracts.",
@@ -19076,14 +19144,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Persuasive Propaganda and Popular Enthusiasm",
                 "provenance": "From The Third Reich: Politics and Propaganda by David Welch, published in 2002.",
-                "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion."
+                "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Consent & Propaganda View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Coercive Surveillance and Gestapo Terror",
                 "provenance": "From The Third Reich in Power by Richard J. Evans, published in 2005.",
-                "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin."
+                "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Richard J. Evans"
               }
             ],
             "sources": [
@@ -19181,14 +19253,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Persuasive Propaganda and Popular Enthusiasm",
                 "provenance": "From The Third Reich: Politics and Propaganda by David Welch, published in 2002.",
-                "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion."
+                "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · Consent & Propaganda View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Coercive Surveillance and Gestapo Terror",
                 "provenance": "From The Third Reich in Power by Richard J. Evans, published in 2005.",
-                "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin."
+                "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Richard J. Evans"
               }
             ],
             "sources": [
@@ -19305,14 +19381,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Persuasive Propaganda and Popular Enthusiasm",
             "provenance": "From The Third Reich: Politics and Propaganda by David Welch, published in 2002.",
-            "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion."
+            "content": "Nazi propaganda was remarkably successful in winning over the hearts and minds of the German people. Joseph Goebbels understood that propaganda could not rely solely on crude slogans; it had to appeal to existing national traditions and pride. Through the distribution of cheap ‘People’s Radios’, the cinematic spectacles of Leni Riefenstahl, and the euphoric pageantry of the Nuremberg rallies, the regime created a genuine sense of national community (Volksgemeinschaft). For the majority of Germans between 1933 and 1939, conformity was based on genuine enthusiasm and admiration for Hitler rather than state coercion.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i1.mp3",
+            "studio_voice_label": "Historian 1 · Consent & Propaganda View"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Coercive Surveillance and Gestapo Terror",
             "provenance": "From The Third Reich in Power by Richard J. Evans, published in 2005.",
-            "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin."
+            "content": "The apparent unity of the German people was fundamentally an illusion created by the omnipresence of the terror state. While Goebbels’ propaganda was loud and relentless, ordinary Germans were far more cynical and detached than official rallies suggested. What truly controlled attitudes was the constant threat of denunciation to the Gestapo, the pervasive network of SS surveillance, and the dread of protective custody in concentration camps like Dachau. Germans did not conform because they believed every word broadcast on the radio; they conformed because speaking out meant arrest, torture, and ruin.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_3_i2.mp3",
+            "studio_voice_label": "Historian 2 · Richard J. Evans"
           }
         ],
         "supporting_sources": [
@@ -20949,14 +21029,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Brave Theological Resistance of the Churches",
                 "provenance": "From The German Churches under Hitler by Ernst Christian Helmreich, a historical study.",
-                "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control."
+                "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Ernst Helmreich"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Institutional Conformity and Silence over Persecution",
                 "provenance": "From Betrayal: German Churches and the Holocaust by Robert P. Ericksen and Susannah Heschel, published in 1999.",
-                "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy."
+                "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Heschel & Ericksen"
               }
             ],
             "examiner_tip": "Contrast effective defence of religious independence (Interpretation 1) against narrow institutional conformity and silence over regime atrocities (Interpretation 2), quoting verbatim from both extracts.",
@@ -21019,14 +21103,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Brave Theological Resistance of the Churches",
                 "provenance": "From The German Churches under Hitler by Ernst Christian Helmreich, a historical study.",
-                "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control."
+                "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Ernst Helmreich"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Institutional Conformity and Silence over Persecution",
                 "provenance": "From Betrayal: German Churches and the Holocaust by Robert P. Ericksen and Susannah Heschel, published in 1999.",
-                "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy."
+                "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Heschel & Ericksen"
               }
             ],
             "sources": [
@@ -21123,14 +21211,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Brave Theological Resistance of the Churches",
                 "provenance": "From The German Churches under Hitler by Ernst Christian Helmreich, a historical study.",
-                "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control."
+                "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Ernst Helmreich"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Institutional Conformity and Silence over Persecution",
                 "provenance": "From Betrayal: German Churches and the Holocaust by Robert P. Ericksen and Susannah Heschel, published in 1999.",
-                "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy."
+                "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Heschel & Ericksen"
               }
             ],
             "sources": [
@@ -21247,14 +21339,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Brave Theological Resistance of the Churches",
             "provenance": "From The German Churches under Hitler by Ernst Christian Helmreich, a historical study.",
-            "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control."
+            "content": "The Christian Churches in Germany were largely successful in resisting the Nazi regime's attempts to achieve total control over religious life. Despite intense pressure, both the Catholic and Protestant Churches prevented the total Nazification of their institutions. The creation of the Confessing Church by thousands of brave pastors successfully defended theological independence, proving that religious faith remained a powerful barrier to totalitarian control.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Ernst Helmreich"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Institutional Conformity and Silence over Persecution",
             "provenance": "From Betrayal: German Churches and the Holocaust by Robert P. Ericksen and Susannah Heschel, published in 1999.",
-            "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy."
+            "content": "Christian opposition to the Nazi regime was extremely limited, narrow, and ultimately failed to challenge the wider atrocities of the state. The vast majority of church leaders conformed because they shared Hitler’s hatred of communism and feared the destruction of their institutions. When pastors spoke out, their protests were strictly limited to defending church administration; they remained entirely silent during the persecution of minorities and the destruction of democracy.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_3_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Heschel & Ericksen"
           }
         ],
         "supporting_sources": [
@@ -23667,9 +23763,9 @@ export default {
           "decimal": "[4.2.1]",
           "title": "The Hitler Youth (Hitlerjugend): Military Drill and Battlefield Preparation (1933–1939)",
           "text": "<span class=\"para-ref\">[1.1]</span> Under Reich Youth Leader **Baldur von Schirach**, life for boys aged 14–18 centred on the *Hitlerjugend*. Governed by **the Law for the Hitler Youth**, it toughened boys into fearless soldiers through obstacle courses, boxing, and rifle shooting rather than classroom study.\n\n<span class=\"para-ref\">[1.2]</span> Enrolling over **8 million** young Germans overall by 1939, weekend camps drilled boys in route marches with heavy packs, trench map reading, and signalling. After passing fitness tests, boys received engraved Hitler Youth daggers stamped *Blood and Honour*, cementing personal loyalty to Hitler.",
-          "image": "/images/weimar_individuals/bernhard_rust.jpg",
-          "image_alt": "Hitler Youth Military Drill",
-          "caption": "Hitler Youth boys on a field exercise undergoing military map-reading and endurance drills.",
+          "image": "/images/hitler_youth_march_1930s.jpg",
+          "image_alt": "Uniformed Hitler Youth teenagers on an outdoor training exercise",
+          "caption": "Uniformed Hitler Youth (Hitlerjugend) members wearing black neckerchiefs and shoulder straps during an outdoor field exercise in the 1930s.",
           "theme_heading": "Military Indoctrination",
           "sources": [
             {
@@ -23708,9 +23804,9 @@ export default {
           "decimal": "[4.2.2]",
           "title": "The League of German Girls: Bund Deutscher Mädel and Motherhood Training (1933–1939)",
           "text": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the Bund Deutscher Mädel (BDM or League of German Girls)**. Wearing dark blue skirts and white blouses, girls practised gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> BDM meetings focused on domestic training — cooking, meal planning, needlework, and infant care — alongside **racial science (Rassenkunde)** instruction. Girls studied family charts to pick Aryan husbands, shun racial intermarriage, and sing folk songs celebrating the *Volksgemeinschaft*.",
-          "image": "/images/hitler_youth_march_1930s.jpg",
-          "image_alt": "BDM Calisthenics Exercise",
-          "caption": "Members of the League of German Girls performing synchronised physical exercises outdoors.",
+          "image": "/images/bdm_domestic_skills.jpg",
+          "image_alt": "League of German Girls members carrying hay forks on a farm",
+          "caption": "Members of the League of German Girls (Bund Deutscher Mädel) carrying wooden hay forks during compulsory agricultural Land Service on a German farm.",
           "theme_heading": "Racial Motherhood & Duty",
           "sources": [
             {
@@ -25977,14 +26073,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Full Employment and Strength Through Joy Benefits",
                 "provenance": "From A Social History of the Third Reich by Richard Grunberger, published in 1971.",
-                "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions."
+                "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · KdF & Employment View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Destroyed Rights, Compulsory Deductions, and Longer Hours",
                 "provenance": "From Social Policy in the Third Reich by Tim Mason, published in 1993.",
-                "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards."
+                "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Tim Mason"
               }
             ],
             "examiner_tip": "Contrast tangible improvement via full employment and KdF/SdA perks (Grunberger, Interpretation 1) against declining living standards via lost rights, deductions, and longer hours (Mason, Interpretation 2), quoting both directly.",
@@ -26048,14 +26148,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Full Employment and Strength Through Joy Benefits",
                 "provenance": "From A Social History of the Third Reich by Richard Grunberger, published in 1971.",
-                "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions."
+                "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · KdF & Employment View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Destroyed Rights, Compulsory Deductions, and Longer Hours",
                 "provenance": "From Social Policy in the Third Reich by Tim Mason, published in 1993.",
-                "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards."
+                "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Tim Mason"
               }
             ],
             "sources": [
@@ -26153,14 +26257,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Full Employment and Strength Through Joy Benefits",
                 "provenance": "From A Social History of the Third Reich by Richard Grunberger, published in 1971.",
-                "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions."
+                "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i1.mp3",
+                "studio_voice_label": "Historian 1 · KdF & Employment View"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Destroyed Rights, Compulsory Deductions, and Longer Hours",
                 "provenance": "From Social Policy in the Third Reich by Tim Mason, published in 1993.",
-                "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards."
+                "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i2.mp3",
+                "studio_voice_label": "Historian 2 · Tim Mason"
               }
             ],
             "sources": [
@@ -26277,14 +26385,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Full Employment and Strength Through Joy Benefits",
             "provenance": "From A Social History of the Third Reich by Richard Grunberger, published in 1971.",
-            "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions."
+            "content": "For the vast majority of German industrial workers, the Nazi era brought tangible improvements in everyday life. Unemployment was eliminated within four years, replacing the terror of the Great Depression with guaranteed employment and steady earnings. Through the ‘Strength Through Joy’ (KdF) organization, millions of ordinary workers enjoyed subsidised theatre tickets, sports facilities, and cruise holidays to Norway and Italy that had previously been the exclusive preserve of the rich. The ‘Beauty of Labour’ campaign renovated factory canteens, washrooms, and ventilation, creating genuinely improved working conditions.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i1.mp3",
+            "studio_voice_label": "Historian 1 · KdF & Employment View"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Destroyed Rights, Compulsory Deductions, and Longer Hours",
             "provenance": "From Social Policy in the Third Reich by Tim Mason, published in 1993.",
-            "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards."
+            "content": "The claim that German workers experienced a higher standard of living under National Socialism is thoroughly misleading. In return for full employment, workers surrendered all basic rights and freedoms. Real wages remained below 1928 levels while compulsory deductions for the Labour Front, winter relief, and state insurance consumed up to thirty percent of pay packets. Furthermore, the average working week rose from forty-three hours in 1933 to forty-seven hours in 1939. Stripped of the right to strike and tied to their jobs by the Labour Book, workers suffered declining living standards.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_3_i2.mp3",
+            "studio_voice_label": "Historian 2 · Tim Mason"
           }
         ],
         "supporting_sources": [
@@ -27169,9 +27281,9 @@ export default {
           "decimal": "[4.4.2]",
           "title": "The Nuremberg Laws: Reich Citizenship and the Protection of German Blood (Sep 1935)",
           "text": "<span class=\"para-ref\">[2.1]</span> At the September **1935** Nuremberg rally, Hitler codified racial persecution into law through two Nuremberg Laws. First, the Reich Citizenship Law **stripped Jewish people of their German citizenship and the right to vote** or hold office. Overnight, German Jews became stateless subjects in their own homeland.\n\n<span class=\"para-ref\">[2.2]</span> Second, the Law for the Protection of German Blood outlawed **marriage and sexual relations between Jews and Aryans** as criminal \"racial defilement\". Crucially, Jewish identity was defined by ancestry rather than faith: anyone with three or four Jewish grandparents counted legally as Jewish.",
-          "image": "/images/weimar_individuals/julius_streicher.jpg",
-          "image_alt": "Nuremberg Laws Racial Classification Chart",
-          "caption": "Official diagram illustrating legal categories of citizenship based on the number of Jewish grandparents.",
+          "image": "/images/nuremberg_laws_chart_1935.jpg",
+          "image_alt": "Official 1935 Nuremberg Laws racial classification chart",
+          "caption": "Official 1935 Nuremberg Laws chart (\"Die Nürnberger Gesetze\") classifying citizens by the racial status of their four grandparents.",
           "theme_heading": "Legalised Biological Segregation",
           "sources": [
             {
@@ -27835,14 +27947,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Coordinated State Pogrom from Above",
                 "provenance": "From Nazi Germany and the Jews: The Years of Persecution, 1933–1939 by Saul Friedländer, published in 1997.",
-                "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration."
+                "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Saul Friedländer"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Public Shock Silenced by Gestapo Terror",
                 "provenance": "From Popular Opinion and Political Dissent in the Third Reich by Ian Kershaw, published in 1983.",
-                "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest."
+                "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Public Reaction View"
               }
             ],
             "examiner_tip": "Identify the contrasting analytical focus: Friedländer (Interpretation 1) focuses on top-down state planning and execution by Goebbels, the SA, and the Gestapo, whereas Kershaw (Interpretation 2) focuses on ordinary Germans' private disapproval and terror-induced silence.",
@@ -27905,14 +28021,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Coordinated State Pogrom from Above",
                 "provenance": "From Nazi Germany and the Jews: The Years of Persecution, 1933–1939 by Saul Friedländer, published in 1997.",
-                "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration."
+                "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Saul Friedländer"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Public Shock Silenced by Gestapo Terror",
                 "provenance": "From Popular Opinion and Political Dissent in the Third Reich by Ian Kershaw, published in 1983.",
-                "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest."
+                "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Public Reaction View"
               }
             ],
             "sources": [
@@ -28003,14 +28123,18 @@ export default {
                 "isInterp": true,
                 "title": "Interpretation 1: Coordinated State Pogrom from Above",
                 "provenance": "From Nazi Germany and the Jews: The Years of Persecution, 1933–1939 by Saul Friedländer, published in 1997.",
-                "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration."
+                "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i1.mp3",
+                "studio_voice_label": "Historian 1 · Saul Friedländer"
               },
               {
                 "interpNum": "2",
                 "isInterp": true,
                 "title": "Interpretation 2: Public Shock Silenced by Gestapo Terror",
                 "provenance": "From Popular Opinion and Political Dissent in the Third Reich by Ian Kershaw, published in 1983.",
-                "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest."
+                "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest.",
+                "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i2.mp3",
+                "studio_voice_label": "Historian 2 · Public Reaction View"
               }
             ],
             "sources": [
@@ -28121,14 +28245,18 @@ export default {
             "isInterp": true,
             "title": "Interpretation 1: Coordinated State Pogrom from Above",
             "provenance": "From Nazi Germany and the Jews: The Years of Persecution, 1933–1939 by Saul Friedländer, published in 1997.",
-            "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration."
+            "content": "The anti-Semitic violence of Kristallnacht was a highly coordinated, systematic operation planned and executed entirely from above by Joseph Goebbels and the paramilitary SA, aiming to force Jewish families into absolute economic and physical isolation. Far from being an unplanned riot, state police and fire brigades acted under strict central directives to allow synagogues to burn while protecting neighbouring non-Jewish property, followed immediately by mass Gestapo arrests to compel Jewish emigration.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i1.mp3",
+            "studio_voice_label": "Historian 1 · Saul Friedländer"
           },
           {
             "interpNum": "2",
             "isInterp": true,
             "title": "Interpretation 2: Public Shock Silenced by Gestapo Terror",
             "provenance": "From Popular Opinion and Political Dissent in the Third Reich by Ian Kershaw, published in 1983.",
-            "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest."
+            "content": "While the state-controlled press portrayed the violence of Kristallnacht as a spontaneous outburst of public anger, many ordinary Germans watched the destruction with deep alarm, concern, and disapproval. However, they remained completely silent and conformed to the regime's actions solely out of terror of the Gestapo and fear of immediate arrest.",
+            "studio_audio": "/audio/sources/weimar_nazi_germany/lesson_4_4_i2.mp3",
+            "studio_voice_label": "Historian 2 · Public Reaction View"
           }
         ],
         "supporting_sources": [
@@ -29061,8 +29189,8 @@ export default {
     {
       "group": "Key Topic 4",
       "name": "Anna Lehnkering",
-      "bio": "A disabled teenager who struggled in school and was sent to an institution. She was forcibly sterilized by the Nazis at age 19 under the Sterilisation Law and later murdered under the T4 Euthanasia Programme, representing the thousands of victims of Nazi eugenics.",
-      "image": "/"
+      "bio": "A young German woman sent to an institution after struggling at school who was forcibly sterilised at age 19 in 1935 under the 1933 Law for the Prevention of Hereditarily Diseased Offspring, representing the roughly 400,000 victims of pre-war Nazi racial hygiene courts.",
+      "image": ""
     },
     {
       "group": "Key Topic 4",
@@ -29084,7 +29212,7 @@ export default {
       "role": "State Commissioner of Bavaria",
       "bio": "A right-wing politician who effectively ruled Bavaria in 1923. He was part of the \"Triumvirate\" that Hitler attempted to force into supporting the Munich Putsch.",
       "significance": "His betrayal of Hitler during the Munich Putsch caused the uprising to fail, leading to Hitler’s arrest, but also forcing Hitler to change his strategy to winning power legally.",
-      "image": "/images/placeholder.jpg"
+      "image": "/images/weimar_individuals/gustav_von_kahr.jpg"
     },
     {
       "name": "Otto von Lossow",
@@ -29100,7 +29228,7 @@ export default {
       "role": "Head of the Bavarian State Police",
       "bio": "The commander of the Bavarian police force in 1923. He completed the \"Triumvirate\" of right-wing leaders in Bavaria who resisted the Weimar government but ultimately crushed Hitler’s Putsch.",
       "significance": "By mobilising the state police against the SA, he ensured that the Nazis were met with armed resistance during their march on Munich.",
-      "image": "/images/placeholder.jpg"
+      "image": "/images/weimar_individuals/hans_von_seisser.jpg"
     },
     {
       "name": "Benito Mussolini",
@@ -29108,7 +29236,7 @@ export default {
       "role": "Fascist Dictator of Italy",
       "bio": "The founder of Italian Fascism who seized power in 1922 following his famous \"March on Rome\".",
       "significance": "His successful, violent seizure of power heavily inspired Hitler’s own attempt to launch the Munich Putsch in 1923.",
-      "image": "/images/placeholder.jpg"
+      "image": "/images/weimar_individuals/benito_mussolini.jpg"
     },
     {
       "name": "Prof. Ian Kershaw",

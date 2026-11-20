@@ -2,7 +2,7 @@
  * Lesson Finish & Arcade Launchbar + Teacher Plenary Projector
  *
  * Streamlined replacement for the legacy 6-tab Check & Consolidate Hub:
- * 1. ⚡ Quick 5 Check — Fast 5-question sampled retrieval wired directly to Spaced Repetition Weak Spots & XP.
+ * 1. ⚡ Quick 5 Check — Fast 5-question sampled retrieval wired directly to Spaced Repetition Weak Spots.
  * 2. 🕹️ Lesson Arcade Launchers — 1-click jump into Keyword Stack (Tetris), Redacted!, or all 7 Arcade games for this lesson.
  * 3. 🔥 Teacher Plenary Projector — Full-screen smartboard theatre mode (Hot Seat Taboo, 60s Standoff, Four Corners) surfaced cleanly in Teacher Mode.
  */
@@ -10,7 +10,7 @@
 import { appStore } from './store.js';
 import { getArenaStandoffPair } from './arena_standoff_registry.js';
 import { getArenaCornersData } from './arena_corners_registry.js';
-import { addXp, generateQuestionId, recordQuestionResult } from '../storage.js';
+import { generateQuestionId, recordQuestionResult } from '../storage.js';
 
 window.consolidateStations = window.consolidateStations || {};
 
@@ -253,6 +253,16 @@ export function renderConsolidateStationHTML(lesson) {
     }
   } catch (e) {}
 
+  const hasCloze = Boolean(
+    lesson.vocab_cloze_text &&
+      typeof lesson.vocab_cloze_text === 'string' &&
+      lesson.vocab_cloze_text.includes('['),
+  );
+  let clozeDone = false;
+  try {
+    clozeDone = localStorage.getItem('history_cloze_' + lesson.id) === '1';
+  } catch (e) {}
+
   return `
     <div class="phase-card no-print consolidate-station" id="consolidate-station-${lesson.id}" style="margin: 22px 0 26px 0; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 14px; box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06); overflow: hidden;">
       <!-- High-Conversion Lesson Finish & Arcade Launchbar -->
@@ -264,12 +274,12 @@ export function renderConsolidateStationHTML(lesson) {
           <div>
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               <h3 style="margin: 0; color: #ffffff; font-size: 1.08rem; font-family: 'Outfit', 'Playfair Display', sans-serif; font-weight: 800;">
-                Quick Check &amp; Lesson Arcade
+                Consolidate &amp; Lesson Arcade
               </h3>
               ${savedScoreBadge}
             </div>
             <p style="margin: 2px 0 0 0; color: #94a3b8; font-size: 0.78rem;">
-              Lock in this enquiry with a 60-second Quick ${quickCount} check or jump straight into the Revision Arcade.
+              Lock in this enquiry with a Quick ${quickCount} check, the Tap-Tile Summary Cloze, or the Revision Arcade.
             </p>
           </div>
         </div>
@@ -280,6 +290,16 @@ export function renderConsolidateStationHTML(lesson) {
               ? `
             <button type="button" id="tab-btn-quiz-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'quiz', event)" style="padding: 7px 13px; border-radius: 8px; border: 1.5px solid #60a5fa; background: #2563eb; color: #ffffff; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(37,99,235,0.35);">
               <i class="fa-solid fa-bolt" style="color:#fde047;"></i> <span id="quick5-btn-lbl-${lesson.id}">Quick ${quickCount} Check</span>
+            </button>
+          `
+              : ''
+          }
+
+          ${
+            hasCloze
+              ? `
+            <button type="button" id="tab-btn-cloze-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'cloze', event)" style="padding: 7px 13px; border-radius: 8px; border: 1.5px solid #38bdf8; background: rgba(14, 165, 233, 0.22); color: #e0f2fe; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-puzzle-piece" style="color:#7dd3fc;"></i> <span id="cloze-btn-lbl-${lesson.id}">Summary Cloze${clozeDone ? ' ✓' : ''}</span>
             </button>
           `
               : ''
@@ -319,6 +339,85 @@ export function renderConsolidateStationHTML(lesson) {
   `;
 }
 
+function escapeClozeHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function buildLessonClozeState(lesson, currentIdx, lessonsList) {
+  const raw = String(lesson?.vocab_cloze_text || '').trim();
+  if (!raw || !raw.includes('[')) return null;
+
+  const segments = [];
+  const answers = [];
+  let lastIdx = 0;
+  let slotCounter = 0;
+  const regex = /\[([^\]]+)\]/g;
+  let m;
+  while ((m = regex.exec(raw)) !== null) {
+    if (m.index > lastIdx) {
+      segments.push({ type: 'text', value: raw.slice(lastIdx, m.index) });
+    }
+    const term = m[1].trim();
+    segments.push({ type: 'slot', index: slotCounter, answer: term });
+    answers.push(term);
+    slotCounter++;
+    lastIdx = m.index + m[0].length;
+  }
+  if (lastIdx < raw.length) {
+    segments.push({ type: 'text', value: raw.slice(lastIdx) });
+  }
+  if (answers.length === 0) return null;
+
+  // Dynamic +2 decoy tiles pulled at runtime from adjacent lesson(s) so editing vocab updates decoys automatically
+  const excludedLower = new Set([
+    ...answers.map((a) => a.toLowerCase()),
+    ...(lesson?.vocab || []).map((v) => String(v?.term || v || '').trim().toLowerCase()),
+  ]);
+  const donorPool = [];
+  const candidateLessonIndices =
+    currentIdx > 0 ? [currentIdx - 1, currentIdx + 1, 0] : [currentIdx + 1, currentIdx + 2];
+  candidateLessonIndices.forEach((idx) => {
+    const donor = lessonsList?.[idx];
+    if (donor && donor !== lesson && Array.isArray(donor.vocab)) {
+      donor.vocab.forEach((v) => {
+        const term = String(v?.term || v || '').trim();
+        if (term && !excludedLower.has(term.toLowerCase())) {
+          excludedLower.add(term.toLowerCase());
+          donorPool.push(term);
+        }
+      });
+    }
+  });
+  const decoys = donorPool.sort(() => Math.random() - 0.5).slice(0, 2);
+  const chips = [...answers, ...decoys]
+    .map((word, idx) => ({ id: idx, word, isDecoy: idx >= answers.length }))
+    .sort(() => Math.random() - 0.5);
+
+  let previouslyMastered = false;
+  try {
+    previouslyMastered = localStorage.getItem('history_cloze_' + lesson.id) === '1';
+  } catch (e) {}
+
+  return {
+    segments,
+    answers,
+    decoysCount: decoys.length,
+    chips,
+    slots: new Array(answers.length).fill(null), // stores chip index in `chips`
+    locked: new Array(answers.length).fill(false),
+    activeSlot: 0,
+    completed: false,
+    previouslyMastered,
+    feedbackMsg: '',
+    feedbackTone: '',
+  };
+}
+
 export function initConsolidateStation(lesson) {
   if (!lesson) return;
   const rawQuiz = lesson.quiz || lesson.quick_quiz || lesson.quiz_questions || [];
@@ -352,6 +451,7 @@ export function initConsolidateStation(lesson) {
     score: 0,
     answered: false,
     selectedOption: null,
+    cloze: buildLessonClozeState(lesson, currentIdx, lessonsList),
     arena: {
       gameMode: 'taboo', // 'taboo' | 'standoff' | 'corners'
       isProjectorOpen: false,
@@ -381,19 +481,151 @@ export function initConsolidateStation(lesson) {
   };
 }
 
+function renderStationClozeDrawer(state, bodyEl) {
+  const c = state.cloze;
+  if (!c) {
+    bodyEl.innerHTML = '';
+    return;
+  }
+  const isTeacherOn =
+    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
+  const total = c.answers.length;
+  const filledCount = c.slots.filter((s) => s !== null).length;
+  const allFilled = filledCount === total;
+  const usedChipIndices = new Set(c.slots.filter((s) => s !== null));
+
+  const paragraphHtml = c.segments
+    .map((seg) => {
+      if (seg.type === 'text') {
+        return escapeClozeHtml(seg.value);
+      }
+      const idx = seg.index;
+      const chipIdx = c.slots[idx];
+      const word = chipIdx !== null && c.chips[chipIdx] ? c.chips[chipIdx].word : '';
+      const isLocked = c.locked[idx];
+      const isActive = !c.completed && !isLocked && c.activeSlot === idx;
+
+      if (isLocked) {
+        return `<span class="station-cloze-slot is-locked" style="display:inline-flex;align-items:center;gap:5px;padding:2px 11px;margin:2px 3px;border-radius:7px;border:1.5px solid #10b981;background:#ecfdf5;color:#065f46;font-weight:800;font-size:0.93rem;vertical-align:baseline;"><i class="fa-solid fa-check" style="font-size:0.75rem;color:#059669;"></i> ${escapeClozeHtml(word)}</span>`;
+      }
+      if (word) {
+        return `<button type="button" onclick="window.selectStationClozeSlot('${state.lessonId}', ${idx})" title="Tap to remove '${escapeClozeHtml(word)}' and swap" style="display:inline-flex;align-items:center;gap:6px;padding:2px 11px;margin:2px 3px;border-radius:7px;border:1.5px solid #4f46e5;background:#eef2ff;color:#312e81;font-weight:800;font-size:0.93rem;cursor:pointer;vertical-align:baseline;font-family:inherit;">${escapeClozeHtml(word)} <span style="font-size:0.78rem;opacity:0.65;">&times;</span></button>`;
+      }
+      return `<button type="button" onclick="window.selectStationClozeSlot('${state.lessonId}', ${idx})" title="Slot ${idx + 1}: Tap a word tile below" style="display:inline-flex;align-items:center;justify-content:center;min-width:68px;padding:2px 12px;margin:2px 3px;border-radius:7px;border:${isActive ? '2px dashed #0284c7' : '1.5px dashed #94a3b8'};background:${isActive ? '#e0f2fe' : '#ffffff'};color:${isActive ? '#0369a1' : '#64748b'};font-weight:800;font-size:0.84rem;cursor:pointer;vertical-align:baseline;font-family:inherit;box-shadow:${isActive ? '0 0 0 3px rgba(2,132,199,0.14)' : 'none'};">[ ${idx + 1}${isActive ? ' ▾' : ''} ]</button>`;
+    })
+    .join('');
+
+  const chipsHtml = c.chips
+    .map((chip, chipIdx) => {
+      const used = usedChipIndices.has(chipIdx);
+      return `<button type="button" onclick="window.placeStationClozeChip('${state.lessonId}', ${chipIdx})" ${used || c.completed ? 'disabled' : ''} style="padding:7px 14px;border-radius:999px;border:1.5px solid ${used ? '#cbd5e1' : '#93c5fd'};background:${used ? '#f1f5f9' : '#eff6ff'};color:${used ? '#94a3b8' : '#1e3a8a'};font-weight:700;font-size:0.88rem;cursor:${used || c.completed ? 'default' : 'pointer'};text-decoration:${used ? 'line-through' : 'none'};opacity:${used ? '0.48' : '1'};transition:all 0.14s ease;font-family:inherit;">${escapeClozeHtml(chip.word)}</button>`;
+    })
+    .join('');
+
+  bodyEl.innerHTML = `
+    <div style="max-width: 880px; margin: 0 auto;">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+          <span style="font-size:0.8rem;font-weight:800;color:#0369a1;text-transform:uppercase;letter-spacing:0.04em;">
+            <i class="fa-solid fa-puzzle-piece"></i> Enquiry Summary Cloze
+          </span>
+          <span style="font-size:0.76rem;font-weight:700;padding:2px 9px;border-radius:999px;background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;">
+            ${c.completed ? `✓ ${total}/${total} Mastered` : `Slots Filled: ${filledCount} / ${total}`}
+          </span>
+          ${
+            c.decoysCount > 0 && !c.completed
+              ? `<span style="font-size:0.74rem;font-weight:700;padding:2px 8px;border-radius:999px;background:#fffbeb;color:#b45309;border:1px solid #fde68a;">Includes ${c.decoysCount} Decoy Tile${c.decoysCount > 1 ? 's' : ''}</span>`
+              : ''
+          }
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          ${
+            isTeacherOn && !c.completed
+              ? `<button type="button" onclick="window.revealStationCloze('${state.lessonId}')" style="padding:4px 10px;border-radius:6px;border:1px solid #fed7aa;background:#fff7ed;color:#c2410c;font-size:0.78rem;font-weight:700;cursor:pointer;"><i class="fa-solid fa-eye"></i> Reveal Key</button>`
+              : ''
+          }
+          <button type="button" onclick="window.resetStationCloze('${state.lessonId}')" style="padding:4px 10px;border-radius:6px;border:1px solid #cbd5e1;background:#ffffff;color:#475569;font-size:0.78rem;font-weight:700;cursor:pointer;">
+            <i class="fa-solid fa-rotate-right"></i> Reset
+          </button>
+        </div>
+      </div>
+
+      <p style="margin:0 0 10px 0;font-size:0.86rem;color:#475569;">
+        ${
+          c.completed
+            ? 'Every historical key term is locked accurately in context.'
+            : 'Tap a word tile below to snap it into the highlighted slot (or tap any slot to jump/swap).'
+        }
+      </p>
+
+      <div style="background:#f8fafc;border:1.5px solid ${c.completed ? '#86efac' : '#cbd5e1'};border-radius:10px;padding:15px 18px;font-size:0.98rem;line-height:2.05;color:#0f172a;margin-bottom:12px;">
+        ${paragraphHtml}
+      </div>
+
+      ${
+        c.feedbackMsg
+          ? `<div style="margin-bottom:12px;padding:10px 14px;border-radius:8px;font-size:0.88rem;font-weight:700;border:1.5px solid ${
+              c.feedbackTone === 'success' ? '#86efac' : '#fcd34d'
+            };background:${c.feedbackTone === 'success' ? '#ecfdf5' : '#fffbeb'};color:${
+              c.feedbackTone === 'success' ? '#065f46' : '#92400e'
+            };">${c.feedbackMsg}</div>`
+          : ''
+      }
+
+      ${
+        !c.completed
+          ? `
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 14px;background:#ffffff;border:1.5px solid #e2e8f0;border-radius:10px;margin-bottom:12px;">
+          ${chipsHtml}
+        </div>
+        <div style="display:flex;justify-content:flex-end;align-items:center;gap:10px;">
+          <button type="button" onclick="window.checkStationCloze('${state.lessonId}')" ${!allFilled ? 'disabled' : ''} style="padding:9px 20px;border-radius:8px;border:none;background:${allFilled ? '#059669' : '#cbd5e1'};color:${allFilled ? '#ffffff' : '#64748b'};font-size:0.9rem;font-weight:800;cursor:${allFilled ? 'pointer' : 'not-allowed'};display:inline-flex;align-items:center;gap:7px;">
+            <i class="fa-solid fa-circle-check"></i> ${allFilled ? 'Check Summary' : `Fill ${total - filledCount} More Slot${total - filledCount === 1 ? '' : 's'} to Check`}
+          </button>
+        </div>
+      `
+          : `
+        <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding-top:4px;">
+          ${
+            state.questions.length > 0
+              ? `<button type="button" onclick="window.switchConsolidateTab('${state.lessonId}', 'quiz', event)" style="background:#2563eb;color:#ffffff;border:none;padding:9px 18px;border-radius:8px;font-weight:800;font-size:0.86rem;cursor:pointer;"><i class="fa-solid fa-bolt" style="color:#fde047;"></i> Try Quick ${state.questions.length} Check</button>`
+              : ''
+          }
+          <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${state.unitId}', ${state.lessonIndex}, 'tetris')" style="background:#0f172a;color:#6ee7b7;border:1.5px solid #10b981;padding:9px 18px;border-radius:8px;font-weight:800;font-size:0.86rem;cursor:pointer;">
+            🧱 Play Keyword Stack
+          </button>
+        </div>
+      `
+      }
+    </div>
+  `;
+}
+
 function renderQuickQuizDrawer(lessonId) {
   const state = window.consolidateStations[lessonId];
   const bodyEl = document.getElementById(`station-body-${lessonId}`);
   const lblEl = document.getElementById(`quick5-btn-lbl-${lessonId}`);
+  const clozeLblEl = document.getElementById(`cloze-btn-lbl-${lessonId}`);
   if (!state || !bodyEl) return;
 
+  const quizOpen = state.isOpen && state.mode === 'quiz';
+  const clozeOpen = state.isOpen && state.mode === 'cloze';
   bodyEl.style.display = state.isOpen ? 'block' : 'none';
   if (lblEl) {
-    lblEl.textContent = state.isOpen
+    lblEl.textContent = quizOpen
       ? 'Close Quick Check'
       : `Quick ${state.questions.length} Check`;
   }
+  if (clozeLblEl) {
+    const doneMark = state.cloze && (state.cloze.completed || state.cloze.previouslyMastered) ? ' ✓' : '';
+    clozeLblEl.textContent = clozeOpen ? 'Close Summary Cloze' : `Summary Cloze${doneMark}`;
+  }
   if (!state.isOpen) return;
+
+  if (state.mode === 'cloze') {
+    renderStationClozeDrawer(state, bodyEl);
+    return;
+  }
 
   if (state.currentIndex >= state.questions.length) {
     const total = state.questions.length;
@@ -681,7 +913,7 @@ function renderProjectorCorners(state, arenaData) {
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%, 440px),1fr));gap:16px;">
       ${corners
         .map((c, idx) => {
           const sel = a.cornersSelectedCorner === idx;
@@ -717,7 +949,129 @@ window.switchConsolidateTab = function (lessonId, newMode, evt) {
     window.openTeacherPlenaryProjector(lessonId);
     return;
   }
-  state.isOpen = !state.isOpen;
+  const targetMode = newMode === 'cloze' ? 'cloze' : 'quiz';
+  if (state.isOpen && state.mode === targetMode) {
+    state.isOpen = false;
+  } else {
+    state.mode = targetMode;
+    state.isOpen = true;
+  }
+  renderQuickQuizDrawer(lessonId);
+};
+
+window.selectStationClozeSlot = function (lessonId, slotIdx) {
+  const state = window.consolidateStations?.[lessonId];
+  const c = state?.cloze;
+  if (!c || c.completed || c.locked[slotIdx]) return;
+  if (c.slots[slotIdx] !== null) {
+    c.slots[slotIdx] = null;
+    c.feedbackMsg = '';
+  }
+  c.activeSlot = slotIdx;
+  renderQuickQuizDrawer(lessonId);
+};
+
+window.placeStationClozeChip = function (lessonId, chipIdx) {
+  const state = window.consolidateStations?.[lessonId];
+  const c = state?.cloze;
+  if (!c || c.completed || !c.chips[chipIdx]) return;
+  if (c.slots.includes(chipIdx)) return;
+
+  let target = c.activeSlot;
+  if (target === null || target === undefined || c.locked[target] || c.slots[target] !== null) {
+    target = c.slots.findIndex((s, i) => s === null && !c.locked[i]);
+  }
+  if (target === -1) return;
+
+  c.slots[target] = chipIdx;
+  c.feedbackMsg = '';
+  if (state.arena?.soundEnabled) playArenaSound('tick');
+
+  // Advance activeSlot to next empty unlocked slot
+  let nextSlot = -1;
+  for (let offset = 1; offset <= c.slots.length; offset++) {
+    const cand = (target + offset) % c.slots.length;
+    if (c.slots[cand] === null && !c.locked[cand]) {
+      nextSlot = cand;
+      break;
+    }
+  }
+  c.activeSlot = nextSlot >= 0 ? nextSlot : target;
+  renderQuickQuizDrawer(lessonId);
+};
+
+window.checkStationCloze = function (lessonId) {
+  const state = window.consolidateStations?.[lessonId];
+  const c = state?.cloze;
+  if (!c || c.completed) return;
+  if (c.slots.some((s) => s === null)) return;
+
+  let correctCount = 0;
+  c.answers.forEach((expected, idx) => {
+    const chipIdx = c.slots[idx];
+    const placedWord = chipIdx !== null && c.chips[chipIdx] ? c.chips[chipIdx].word : '';
+    if (placedWord.toLowerCase() === expected.toLowerCase()) {
+      c.locked[idx] = true;
+      correctCount++;
+    } else {
+      c.locked[idx] = false;
+      c.slots[idx] = null;
+    }
+  });
+
+  if (correctCount === c.answers.length) {
+    c.completed = true;
+    c.previouslyMastered = true;
+    c.feedbackTone = 'success';
+    c.feedbackMsg = `🏆 Summary Cloze Mastered! All ${c.answers.length} historical terms locked accurately in context.`;
+    if (state.arena?.soundEnabled) playArenaSound('ding');
+    try {
+      localStorage.setItem('history_cloze_' + lessonId, '1');
+    } catch (e) {}
+  } else {
+    const remaining = c.answers.length - correctCount;
+    c.activeSlot = c.slots.findIndex((s, i) => s === null && !c.locked[i]);
+    c.feedbackTone = 'retry';
+    c.feedbackMsg =
+      correctCount > 0
+        ? `✓ ${correctCount} of ${c.answers.length} correct and locked in green! Tap the right tiles below to fill the remaining ${remaining} slot${remaining === 1 ? '' : 's'}.`
+        : `Not quite yet—read the sentence clues carefully and tap tiles into the ${remaining} slots.`;
+    if (state.arena?.soundEnabled) playArenaSound('pass');
+  }
+  renderQuickQuizDrawer(lessonId);
+};
+
+window.resetStationCloze = function (lessonId) {
+  const state = window.consolidateStations?.[lessonId];
+  const c = state?.cloze;
+  if (!c) return;
+  c.slots = new Array(c.answers.length).fill(null);
+  c.locked = new Array(c.answers.length).fill(false);
+  c.activeSlot = 0;
+  c.completed = false;
+  c.feedbackMsg = '';
+  c.chips = [...c.chips].sort(() => Math.random() - 0.5);
+  renderQuickQuizDrawer(lessonId);
+};
+
+window.revealStationCloze = function (lessonId) {
+  const state = window.consolidateStations?.[lessonId];
+  const c = state?.cloze;
+  if (!c) return;
+  const usedIds = new Set();
+  c.answers.forEach((ans, idx) => {
+    const matchIdx = c.chips.findIndex(
+      (ch, cIdx) => !usedIds.has(cIdx) && ch.word.toLowerCase() === ans.toLowerCase(),
+    );
+    if (matchIdx >= 0) {
+      usedIds.add(matchIdx);
+      c.slots[idx] = matchIdx;
+      c.locked[idx] = true;
+    }
+  });
+  c.completed = true;
+  c.feedbackTone = 'success';
+  c.feedbackMsg = '👁️ Teacher Key Revealed: All historical terms placed in sequence.';
   renderQuickQuizDrawer(lessonId);
 };
 
@@ -730,7 +1084,6 @@ window.answerStationQuestion = function (lessonId, optionIdx) {
   const isCorrect = optionIdx === q.answer;
   if (isCorrect) {
     state.score++;
-    addXp(5, 'Quick Check Recall');
   }
   recordQuestionResult(q.id, isCorrect, q, state.unitId);
   renderQuickQuizDrawer(lessonId);

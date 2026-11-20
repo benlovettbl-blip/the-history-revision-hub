@@ -837,10 +837,10 @@ export default {
       "tasks": [
         {
           "id": "me_l1_q2_explain_why",
-          "type": "causation_12m",
-          "topic": "Question 2: Explain Why [12 marks • 15 mins]",
-          "title": "Question 2: Explain Why [12 marks • 15 mins]",
-          "question": "Explain why William of Normandy achieved victory at the Battle of Hastings in 1066. [12 marks]",
+          "type": "extended_writing",
+          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "question": "Explain why William of Normandy achieved victory at the Battle of Hastings in 1066.",
           "stimulus": [
             "Norman military tactics, heavy cavalry, and the feigned retreat",
             "Anglo-Saxon exhaustion and loss of shield-wall discipline"
@@ -874,7 +874,67 @@ export default {
             "primer": "Contrast Harold’s static shield wall against William’s combined-arms tactics and feigned retreat in paragraphs [1.4] and [1.5].",
             "question": "Hinge Question: Why did the feigned retreat succeed against the Anglo-Saxon fyrd when frontal cavalry charges had failed all morning?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "In 1064, Harold Godwinson traveled to Normandy, where Norman accounts allege he swore an oath supporting William's claim to the English crown upon Edward the Confessor's death. **Hinge Question:** Why did Norman chroniclers place so much emphasis on Harold's oath rather than William's military strength?",
+          "Source B": "Upon Edward the Confessor's death in January 1066, the Witan unanimously elected Harold Godwinson. Royal moneyers immediately struck coins asserting his legitimate kingship. **Hinge Question:** How did coinage serve as the most powerful mass communication technology in eleventh-century England?",
+          "Source C": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge. Although a stunning Saxon victory, Harold lost many of his finest troops and faced immediate invasion from the south. **Hinge Question:** Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?",
+          "Source D": "During the afternoon attack on Senlac Hill, Breton cavalry broke and fled. William's quick thinking in showing his face restored morale and led to the encirclement of the pursuing Saxons. **Hinge Question:** How critical was the physical visibility of a commander on a chaotic medieval battlefield?",
+          "Source E": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance, handing William total tactical victory. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving foundational prior knowledge (Roman and Anglo-Saxon Britain before January 1066, Christian monarchy, and the Witan council—strictly zero self-testing of today's new content)."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Succession Void\", \"The Three Claimants\", and \"The Forced March & Stamford Bridge\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Harold Swearing the Sacred Oath to William (Bayeux…) and Source B (Silver Penny of Harold II Godwinson Minted at London…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did Norman chroniclers place so much emphasis on Harold's oath rather than William's military strength?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Succession Void\" → \"The Forced March & Stamford Bridge\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Shield Wall at Senlac Hill\" and \"The Feigned Retreat & Anglo-Saxon Defeat\") to complete the Verso spine, then interrogate Source C (The Anglo-Saxon Chronicle (Manuscript D) on the…), Source D (Duke William Unmasking His Helmet to Rally His Army…), Source E (The Death of King Harold at Hastings (Bayeux Tapestry…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "quick_quiz": [
         {
@@ -1228,7 +1288,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did Norman chroniclers place so much emphasis on Harold's oath rather than William's military strength?",
             "source_context": "In 1064, Harold Godwinson traveled to Normandy, where Norman accounts allege he swore an oath supporting William's claim to the English crown. **Hinge Question:** Why did Norman chroniclers place so much emphasis on Harold's oath rather than William's military strength?"
-          }
+          },
+          "source_context": "In 1064, Harold Godwinson traveled to Normandy, where Norman accounts allege he swore an oath supporting William's claim to the English crown upon Edward the Confessor's death. **Hinge Question:** Why did Norman chroniclers place so much emphasis on Harold's oath rather than William's military strength?"
         },
         {
           "id": "medieval_england_l1_src_b",
@@ -1248,7 +1309,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "How did coinage serve as the most powerful mass communication technology in eleventh-century England?",
             "source_context": "Upon Edward the Confessor's death, royal moneyers immediately struck coins asserting Harold's legitimate kingship. **Hinge Question:** How did coinage serve as the most powerful mass communication technology in eleventh-century England?"
-          }
+          },
+          "source_context": "Upon Edward the Confessor's death in January 1066, the Witan unanimously elected Harold Godwinson. Royal moneyers immediately struck coins asserting his legitimate kingship. **Hinge Question:** How did coinage serve as the most powerful mass communication technology in eleventh-century England?"
         },
         {
           "id": "medieval_england_l1_src_c",
@@ -1269,7 +1331,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?",
             "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge, winning a total victory but exhausting his elite troops. **Hinge Question:** Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?"
-          }
+          },
+          "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge. Although a stunning Saxon victory, Harold lost many of his finest troops and faced immediate invasion from the south. **Hinge Question:** Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?"
         },
         {
           "id": "medieval_england_l1_src_d",
@@ -1289,7 +1352,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "How critical was the physical visibility of a commander on a chaotic medieval battlefield?",
             "source_context": "During the afternoon attack, rumors of William's death caused panic. William lifted his helmet to rally his men. **Hinge Question:** How critical was the physical visibility of a commander on a chaotic medieval battlefield?"
-          }
+          },
+          "source_context": "During the afternoon attack on Senlac Hill, Breton cavalry broke and fled. William's quick thinking in showing his face restored morale and led to the encirclement of the pursuing Saxons. **Hinge Question:** How critical was the physical visibility of a commander on a chaotic medieval battlefield?"
         },
         {
           "id": "medieval_england_l1_src_e",
@@ -1309,7 +1373,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?",
             "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
-          }
+          },
+          "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance, handing William total tactical victory. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
         }
       ],
       "quiz": [
@@ -1888,7 +1953,8 @@ export default {
             "Battlefield trick where horsemen fake flight to lure foes out of line."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "When Edward the Confessor died childless in January 1066, a fierce [Succession] crisis erupted despite the [Witan] electing Harold Godwinson as king. After marching north to defeat Harald Hardrada, Harold’s exhausted peasant [Fyrd] and axe-wielding [Housecarl] bodyguards formed a tight shield wall at Hastings on 14 October. Duke William finally broke their line using the clever [Feigned Retreat] trick."
     },
     {
       "id": "lesson_2",
@@ -2270,10 +2336,10 @@ export default {
         {
           "id": "me_l2_q1_features",
           "type": "two_features",
-          "tariff": "4 marks",
-          "topic": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "title": "Question 1: Describe Two Features [4 marks • 5 mins]",
-          "question": "Describe two features of Norman motte-and-bailey castles. [4 marks]",
+          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "topic": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "question": "Describe two features of Norman motte-and-bailey castles.",
           "hints": [
             "Feature 1: Identify the raised earth mound (motte) topped by a wooden keep tower for observation and last defence [2.1].",
             "Detail 1: Support with specific facts: over 500 castles built rapidly using local forced Saxon labour and timber palisades [2.1].",
@@ -2293,11 +2359,11 @@ export default {
         },
         {
           "id": "me_l2_q2_consequence",
-          "type": "consequence_4m",
-          "tariff": "4 marks",
-          "topic": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "title": "Question 2: Explain One Consequence [4 marks • 5 mins]",
-          "question": "Explain one consequence of the motte-and-bailey blitz for Anglo-Saxon resistance against Norman rule. [4 marks]",
+          "type": "extended_writing",
+          "tariff": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "title": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "question": "Explain one consequence of the motte-and-bailey blitz for Anglo-Saxon resistance against Norman rule.",
           "hints": [
             "Consequence: State how the network of 500+ castles crippled Anglo-Saxon ability to launch organized rebellions [2.1, 2.2].",
             "Evidence & Impact: Explain how cavalry garrisons could ride out within hours to suppress uprisings, turning military conquest into permanent feudal occupation [2.1–2.5]."
@@ -2324,7 +2390,67 @@ export default {
             "primer": "Guide pupils through paragraph [2.4] and the Portchester/Fareham Domesday extract in Act 2.5.",
             "question": "Hinge Question: Why was a parchment book recording pigs, mills, and hides more dangerous to Anglo-Saxon independence than an army of Norman knights?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "Following his coronation on Christmas Day 1066, William faced the problem of ruling an empire spanning the English Channel with only ~10,000 Norman knights. **Hinge Question:** Why was projecting legitimate legal authority just as vital as castles for sustaining the Norman conquest?",
+          "Source B": "Within two decades of Hastings, the Normans constructed over 500 motte-and-bailey timber castles across England, placing one every 20 miles to crush Saxon resistance. **Hinge Question:** Why were earth-and-timber motte-and-bailey castles superior to stone fortresses for rapid invasion?",
+          "Source C": "In the winter of 1069–1070, following northern English revolts allied with the Danes, William marched north, systematically depopulating the countryside between the Humber and the Tees. **Hinge Question:** Did William view the Harrying of the North as military necessity or personal vengeance?",
+          "Source D": "At Christmas 1085, William commissioned a complete survey of his kingdom. By August 1086, royal clerks compiled data from every shire, producing an unparalleled administrative record. **Hinge Question:** Why did Anglo-Saxon chroniclers describe the survey with dread as the 'Day of Judgement'?",
+          "Source E": "Portchester Castle commands Portsmouth Harbour. Norman kings adapted the existing 3rd-century Roman walls, creating a fortified transit hub linking England to the Duchy of Normandy. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"1066 & The Battle of Hastings: Why did William win?\": The Succession Void, The Three Claimants, The Forced March & Stamford Bridge) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"The Motte & Bailey Blitz\", \"The Scorched-Earth Harrying of the North\", and \"Stone Keeps & Portchester Castle\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (The Great Seal of William the Conqueror: Dual…) and Source B (Motte-and-Bailey Earthwork Plan: Berkhamsted Castle…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why was projecting legitimate legal authority just as vital as castles for sustaining the Norman conquest?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"The Motte & Bailey Blitz\" → \"Stone Keeps & Portchester Castle\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Great Domesday Book Audit\" and \"Feudal Hierarchy & Land Dispossession\") to complete the Verso spine, then interrogate Source C (The Peterborough Chronicle on the Harrying of the…), Source D (Great Domesday Book Folio: Survey of the King's…), Source E (St Mary's Norman Church & Roman Outer Bailey:…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Short Historical Focus • Two Key Features (2 Sentences • 5 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "quick_quiz": [
         {
@@ -2678,7 +2804,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why was projecting legitimate legal authority just as vital as castles for sustaining the Norman conquest?",
             "source_context": "Following his coronation, William used his Great Seal to project legal and military authority. **Hinge Question:** Why was projecting legitimate legal authority just as vital as castles for sustaining the Norman conquest?"
-          }
+          },
+          "source_context": "Following his coronation on Christmas Day 1066, William faced the problem of ruling an empire spanning the English Channel with only ~10,000 Norman knights. **Hinge Question:** Why was projecting legitimate legal authority just as vital as castles for sustaining the Norman conquest?"
         },
         {
           "id": "medieval_england_l2_src_b",
@@ -2698,7 +2825,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why were earth-and-timber motte-and-bailey castles superior to rapid conquest?",
             "source_context": "Normans built over 500 motte-and-bailey castles to dominate Saxon England. **Hinge Question:** Why were earth-and-timber motte-and-bailey castles superior to stone fortresses for rapid invasion?"
-          }
+          },
+          "source_context": "Within two decades of Hastings, the Normans constructed over 500 motte-and-bailey timber castles across England, placing one every 20 miles to crush Saxon resistance. **Hinge Question:** Why were earth-and-timber motte-and-bailey castles superior to stone fortresses for rapid invasion?"
         },
         {
           "id": "medieval_england_l2_src_c",
@@ -2720,7 +2848,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Did William view the Harrying of the North as military necessity or personal vengeance?",
             "source_context": "In the winter of 1069–1070, William ravaged Yorkshire, causing over 100,000 starvation deaths. **Hinge Question:** Did William view the Harrying of the North as military necessity or personal vengeance?"
-          }
+          },
+          "source_context": "In the winter of 1069–1070, following northern English revolts allied with the Danes, William marched north, systematically depopulating the countryside between the Humber and the Tees. **Hinge Question:** Did William view the Harrying of the North as military necessity or personal vengeance?"
         },
         {
           "id": "medieval_england_l2_src_d",
@@ -2740,7 +2869,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did Anglo-Saxon chroniclers describe the survey with dread as the 'Day of Judgement'?",
             "source_context": "Compiled in 1086, Domesday gave William complete administrative control over English wealth. **Hinge Question:** Why did Anglo-Saxon chroniclers describe the survey with dread as the 'Day of Judgement'?"
-          }
+          },
+          "source_context": "At Christmas 1085, William commissioned a complete survey of his kingdom. By August 1086, royal clerks compiled data from every shire, producing an unparalleled administrative record. **Hinge Question:** Why did Anglo-Saxon chroniclers describe the survey with dread as the 'Day of Judgement'?"
         },
         {
           "id": "medieval_england_l2_src_e",
@@ -2760,7 +2890,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?",
             "source_context": "Normans repurposed Portchester's Roman fort with a royal keep and monastic church. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?"
-          }
+          },
+          "source_context": "Portchester Castle commands Portsmouth Harbour. Norman kings adapted the existing 3rd-century Roman walls, creating a fortified transit hub linking England to the Duchy of Normandy. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?"
         }
       ],
       "quiz": [
@@ -3339,7 +3470,8 @@ export default {
             "William I’s 1086 survey of all English land and wealth to raise taxes."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "After Hastings, William enforced Norman [Subjugation] across England by building hundreds of timber [Motte-and-Bailey] forts, each guarded by a loyal Norman [Castellan]. When northern rebels rose up in 1069, William ordered the ruthless [Harrying] of the North, burning crops and villages across Yorkshire. Finally, in 1086, royal commissioners compiled the [Domesday Book] to tax the realm and record Norman landownership."
     },
     {
       "id": "lesson_3",
@@ -3720,11 +3852,11 @@ export default {
       "tasks": [
         {
           "id": "me_l3_q2_explain_why",
-          "type": "causation_12m",
-          "tariff": "12 marks",
-          "topic": "Question 2: Explain Why [12 marks • 15 mins]",
-          "title": "Question 2: Explain Why [12 marks • 15 mins]",
-          "question": "Explain why King Henry II clashed with Archbishop Thomas Becket between 1162 and 1170. [12 marks]",
+          "type": "extended_writing",
+          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "question": "Explain why King Henry II clashed with Archbishop Thomas Becket between 1162 and 1170.",
           "stimulus": [
             "The Constitutions of Clarendon and criminous clerks (1164)",
             "Becket’s personal transformation and allegiance to the Pope"
@@ -3758,7 +3890,67 @@ export default {
             "primer": "Examine paragraphs [3.4]–[3.5]. Highlight how Becket’s death ironically won total victory for Church courts.",
             "question": "Hinge Question: Why did the murder of Thomas Becket make it politically impossible for Henry II to implement the Constitutions of Clarendon?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "After Becket fled into French exile in 1164, an enraged Henry II enacted revenge by expelling all of Becket's kin and supporters from England. **Hinge Question:** Why did a dispute over legal courts escalate into personal vendetta and family exile?",
+          "Source B": "In 1162, Henry forced Becket's election as Archbishop of Canterbury. Immediately upon consecration, Becket resigned the chancellorship and embraced monastic austerity. **Hinge Question:** Was Becket's transformation genuine religious conviction or calculated institutional defiance?",
+          "Source C": "In January 1164, Henry II convened nobles and bishops at Clarendon to codify royal customs and strip clergy of exemption from secular criminal law. **Hinge Question:** Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?",
+          "Source D": "While exiled at Pontigny Abbey in France, Becket repeatedly excommunicated Henry's closest advisers, including the bishops who crowned the young King Henry. **Hinge Question:** Why was excommunication such a terrifying weapon for medieval kings and nobility?",
+          "Source E": "On 29 December 1170, knights Reginald FitzUrse, Hugh de Moreville, William de Tracy, and Richard le Breton murdered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Castles, Terror & Domesday: How did the Normans subjugate England?\": The Motte & Bailey Blitz, The Scorched-Earth Harrying of the North, Stone Keeps & Portchester Castle) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Worldly Chancellor to Archbishop\", \"Becket’s Metamorphosis & Spiritual Allegiance\", and \"The Constitutions of Clarendon & ‘Criminous Clerks’\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (The Becket Leaves: Henry II Expelling Becket's Kin…) and Source B (Edward Grim, Life of St Thomas Becket on his Dramatic…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did a dispute over legal courts escalate into personal vendetta and family exile?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Worldly Chancellor to Archbishop\" → \"The Constitutions of Clarendon & ‘Criminous Clerks’\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"Murder in Canterbury Cathedral\" and \"Barefoot Royal Penance & Papal Compromise\") to complete the Verso spine, then interrogate Source C (The Constitutions of Clarendon (1164): Clause 3 on…), Source D (The Becket Leaves: Becket Excommunicating Royal…), Source E (The Murder of Thomas Becket in Canterbury Cathedral…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "quick_quiz": [
         {
@@ -4112,7 +4304,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did a dispute over legal courts escalate into personal vendetta and family exile?",
             "source_context": "Henry II expelled Becket's family into exile following the 1164 rupture. **Hinge Question:** Why did a dispute over legal courts escalate into personal vendetta and family exile?"
-          }
+          },
+          "source_context": "After Becket fled into French exile in 1164, an enraged Henry II enacted revenge by expelling all of Becket's kin and supporters from England. **Hinge Question:** Why did a dispute over legal courts escalate into personal vendetta and family exile?"
         },
         {
           "id": "medieval_england_l3_src_b",
@@ -4133,7 +4326,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Was Becket's transformation genuine religious conviction or calculated institutional defiance?",
             "source_context": "In 1162, Becket embraced austerity and severed ties with royal governance. **Hinge Question:** Was Becket's transformation genuine religious conviction or calculated institutional defiance?"
-          }
+          },
+          "source_context": "In 1162, Henry forced Becket's election as Archbishop of Canterbury. Immediately upon consecration, Becket resigned the chancellorship and embraced monastic austerity. **Hinge Question:** Was Becket's transformation genuine religious conviction or calculated institutional defiance?"
         },
         {
           "id": "medieval_england_l3_src_c",
@@ -4154,7 +4348,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?",
             "source_context": "Clause 3 demanded that criminal clergy face royal punishment rather than church penance. **Hinge Question:** Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?"
-          }
+          },
+          "source_context": "In January 1164, Henry II convened nobles and bishops at Clarendon to codify royal customs and strip clergy of exemption from secular criminal law. **Hinge Question:** Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?"
         },
         {
           "id": "medieval_england_l3_src_d",
@@ -4174,7 +4369,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why was excommunication such a terrifying weapon for medieval kings and nobility?",
             "source_context": "In exile, Becket used excommunication against Henry's bishops and ministers. **Hinge Question:** Why was excommunication such a terrifying weapon for medieval kings and nobility?"
-          }
+          },
+          "source_context": "While exiled at Pontigny Abbey in France, Becket repeatedly excommunicated Henry's closest advisers, including the bishops who crowned the young King Henry. **Hinge Question:** Why was excommunication such a terrifying weapon for medieval kings and nobility?"
         },
         {
           "id": "medieval_england_l3_src_e",
@@ -4194,7 +4390,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?",
             "source_context": "On 29 December 1170, four royal knights butchered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?"
-          }
+          },
+          "source_context": "On 29 December 1170, knights Reginald FitzUrse, Hugh de Moreville, William de Tracy, and Richard le Breton murdered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?"
         }
       ],
       "quiz": [
@@ -4773,7 +4970,8 @@ export default {
             "Person killed for refusing to give up their religious faith or principles."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "King Henry II appointed his friend Thomas Becket as Archbishop expecting help in curbing separate [Canon Law] courts. Instead, Becket defended [Benefit of Clergy], which allowed any [Criminous Clerk] accused of serious crime to escape royal hanging. Their bitter clash over the 1164 [Constitutions of Clarendon] ended in December 1170 with Becket’s [Martyrdom] inside Canterbury Cathedral, forcing Henry into barefoot penance."
     },
     {
       "id": "lesson_4",
@@ -5238,11 +5436,11 @@ export default {
       "tasks": [
         {
           "id": "me_l4_q2_narrative_account",
-          "type": "narrative_account_8m",
-          "tariff": "8 marks",
-          "topic": "Question 2: Narrative Account [8 marks • 10 mins]",
-          "title": "Question 2: Narrative Account [8 marks • 10 mins]",
-          "question": "Write a narrative account analysing the key events leading from the loss of Normandy (1204) to the sealing of Magna Carta at Runnymede (1215). [8 marks]",
+          "type": "narrative_account",
+          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
+          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
+          "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
+          "question": "Write a narrative account analysing the key events leading from the loss of Normandy (1204) to the sealing of Magna Carta at Runnymede (1215).",
           "stimulus": [
             "The loss of Normandy (1204) and heavy scutage taxation",
             "The defeat at the Battle of Bouvines (1214)"
@@ -5275,7 +5473,67 @@ export default {
             "primer": "Examine Clause 39 in Act 4.4 and contrast medieval \"free men\" against the bonded serfs.",
             "question": "Hinge Question: Can a document written by selfish barons to protect their tax exemptions still be considered the birth of modern human rights?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "King John lost Normandy and Anjou to Philip Augustus of France by 1204, earning the mocking nickname 'Softsword' and triggering unprecedented tax extraction. **Hinge Question:** Why did John's loss of Normandy in 1204 make domestic tyranny and heavy taxation in England inevitable?",
+          "Source B": "When John refused Innocent's appointee Stephen Langton as Archbishop of Canterbury, Innocent subjected England to a devastating papal interdict. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?",
+          "Source C": "In May 1215, rebel barons captured London, forcing King John to negotiate on the watermeadows of Runnymede and affix his seal to their charter of liberties. **Hinge Question:** Can an agreement signed under military coercion ever be considered legally binding?",
+          "Source D": "Issued at Runnymede on 15 June 1215, Magna Carta contained 63 clauses restricting royal feudal extortion and establishing trial by jury of peers. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?",
+          "Source E": "In autumn 1215, rebel barons occupied Rochester Castle. John besieged it for seven weeks, mining beneath the south-east tower and starving the garrison into surrender. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Crown vs Church: Why did Henry II clash with Thomas Becket?\": Worldly Chancellor to Archbishop, Becket’s Metamorphosis & Spiritual Allegiance, The Constitutions of Clarendon & ‘Criminous Clerks’) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"‘Softsword’ & The Loss of Normandy\", \"The Papal Interdict & Extortion\", and \"The Baronial Rebellion\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Marble Tomb Effigy of King John: Worcester Cathedral…) and Source B (Contemporary Fresco Portrait of Pope Innocent III…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did John's loss of Normandy in 1204 make domestic tyranny and heavy taxation in England inevitable?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"‘Softsword’ & The Loss of Normandy\" → \"The Baronial Rebellion\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Clauses of Runnymede\" and \"Civil War & The Myth of Liberty\") to complete the Verso spine, then interrogate Source C (The Great Seal of King John Appended to the Articles…), Source D (Magna Carta Parchment Exemplar: Clauses 39 and 40 (15…), Source E (Ruined Great Keep of Rochester Castle Undermined by…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "quick_quiz": [
         {
@@ -5629,7 +5887,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did John's loss of Normandy in 1204 make domestic tyranny and heavy taxation in England inevitable?",
             "source_context": "John lost Normandy in 1204, forcing him to extort unprecedented taxes from English barons. **Hinge Question:** Why did John's loss of Normandy in 1204 make domestic tyranny and heavy taxation in England inevitable?"
-          }
+          },
+          "source_context": "King John lost Normandy and Anjou to Philip Augustus of France by 1204, earning the mocking nickname 'Softsword' and triggering unprecedented tax extraction. **Hinge Question:** Why did John's loss of Normandy in 1204 make domestic tyranny and heavy taxation in England inevitable?"
         },
         {
           "id": "medieval_england_l4_src_b",
@@ -5649,7 +5908,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?",
             "source_context": "Pope Innocent III placed England under interdict, forcing John to surrender his crown as a papal fief. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?"
-          }
+          },
+          "source_context": "When John refused Innocent's appointee Stephen Langton as Archbishop of Canterbury, Innocent subjected England to a devastating papal interdict. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?"
         },
         {
           "id": "medieval_england_l4_src_c",
@@ -5669,7 +5929,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Can an agreement signed under military coercion ever be considered legally binding?",
             "source_context": "John affixed his Great Seal to the Articles of the Barons at Runnymede under military duress. **Hinge Question:** Can an agreement signed under military coercion ever be considered legally binding?"
-          }
+          },
+          "source_context": "In May 1215, rebel barons captured London, forcing King John to negotiate on the watermeadows of Runnymede and affix his seal to their charter of liberties. **Hinge Question:** Can an agreement signed under military coercion ever be considered legally binding?"
         },
         {
           "id": "medieval_england_l4_src_d",
@@ -5689,7 +5950,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?",
             "source_context": "Clauses 39 and 40 established that the King is bound by the law and due process. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?"
-          }
+          },
+          "source_context": "Issued at Runnymede on 15 June 1215, Magna Carta contained 63 clauses restricting royal feudal extortion and establishing trial by jury of peers. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?"
         },
         {
           "id": "medieval_england_l4_src_e",
@@ -5709,7 +5971,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did Magna Carta immediately plunge England into civil war rather than establishing peace?",
             "source_context": "Within months of Runnymede, John mined Rochester Castle, triggering the First Barons' War. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
-          }
+          },
+          "source_context": "In autumn 1215, rebel barons occupied Rochester Castle. John besieged it for seven weeks, mining beneath the south-east tower and starving the garrison into surrender. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
         }
       ],
       "quiz": [
@@ -6288,7 +6551,8 @@ export default {
             "The 1215 Great Charter placing the English king under the rule of law."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "After losing Normandy in 1204, King John angered English barons by demanding heavy [Scutage] taxes, while his quarrel with the Pope placed England under a six-year [Interdict]. Defeat at Bouvines in 1214 forced John to Runnymede in June 1215 to seal [Magna Carta]. Clause 39 laid early foundations for [Habeas Corpus] and established the [Rule of Law] over the monarch himself."
     },
     {
       "id": "lesson_5",
@@ -6606,8 +6870,8 @@ export default {
           "title": "The Regressive Poll Taxes & Brentwood Spark (1377–1381)",
           "text": "<span class=\"para-ref\">[5.4]</span> Simmering tensions erupted when the royal government faced bankruptcy from the costly Hundred Years’ War, passing a crippling <strong>French War Debt Bill</strong>. Unlike property taxes, the third Poll Tax of 1381 demanded a flat <strong>Twelve Pence from Every Head</strong> aged over fifteen—equivalent to two weeks' hard wages for a labourer. Mass tax evasion followed, and when royal commissioner John Bampton arrived on 30 May 1381, he was a <strong>Tax Collector Chased with Pitchforks</strong> by furious Essex villagers at Brentwood, igniting armed rebellion.",
           "image": "/images/medieval_england/plate_5_2_wat_tyler_john_ball.jpg",
-          "image_alt": "The Spark at Brentwood 1381",
-          "caption": "Villagers in Essex driving out royal tax commissioners, sparking the Peasants’ Revolt of 1381.",
+          "image_alt": "Medieval Froissart miniature of priest John Ball preaching from horseback in 1381",
+          "caption": "Illuminated miniature from Jean Froissart’s Chronicles (c. 1470) showing radical priest John Ball ('Jehan Balle') preaching equality from horseback during the 1381 Peasants’ Revolt.",
           "theme_heading": "Fiscal Oppression & Revolt",
           "sources": [
             {
@@ -6670,11 +6934,11 @@ export default {
       "tasks": [
         {
           "id": "me_l5_q5_evaluative_essay",
-          "type": "evaluative_essay_12m",
-          "tariff": "12 marks",
-          "topic": "Question 5: Evaluative Essay [12 marks • 15 mins]",
-          "title": "Question 5: Evaluative Essay [12 marks • 15 mins]",
-          "question": "‘The Black Death of 1348 was the main cause of the breakdown of the feudal system in medieval England.’ How far do you agree? [12 marks]",
+          "type": "extended_writing",
+          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "question": "‘The Black Death of 1348 was the main cause of the breakdown of the feudal system in medieval England.’ How far do you agree?",
           "stimulus": [
             "The demographic collapse and labour shortage caused by the Black Death (1348–1350)",
             "The 1351 Statute of Labourers and the Peasants’ Revolt of 1381"
@@ -6708,7 +6972,67 @@ export default {
             "primer": "Contrast Tyler’s execution in paragraph [5.5] with the permanent death of poll taxes and serfdom.",
             "question": "Hinge Question: If Richard II broke all his promises, why did serfdom still disappear from England within a century of the revolt?"
           }
-        ]
+        ],
+        "source_context": {
+          "Source A": "In 1348–1350, the Black Death swept across England, killing an estimated 30–50% of the population and triggering a massive structural labour shortage. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?",
+          "Source B": "Following the Black Death, Edward III passed the Ordinance of Labourers (1349) and Parliament enacted the Statute of Labourers (1351) to prevent market wages from rising. **Hinge Question:** Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?",
+          "Source C": "In June 1381, radical priest John Ball addressed over 30,000 peasant rebels at Blackheath outside London, urging them to cast off serfdom and demand total equality before the King. **Hinge Question:** Why was religious scripture the most effective tool for justifying political revolution in the medieval world?",
+          "Source D": "On 14 June 1381, King Richard II rode out to Mile End to meet Wat Tyler, granting charter charters abolishing serfdom across England, which he later violently revoked. **Hinge Question:** Was fourteen-year-old King Richard II showing remarkable courage or cynical deception at Mile End?",
+          "Source E": "On 15 June 1381, negotiations at Smithfield turned violent. Lord Mayor Walworth slashed Tyler, mortally wounding him and breaking the momentum of the revolt. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Context, Shared Reading & Early Evidence (Stages 1–3 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Magna Carta (1215) & Medieval Kingship: Liberty or Barons’ Power Grab?\": ‘Softsword’ & The Loss of Normandy, The Papal Interdict & Extortion, The Baronial Rebellion) alongside earlier unit recall."
+              },
+              {
+                "time": "08–28m",
+                "label": "Modelled Shared Reading & Verso Spine (Stages 1–3)",
+                "instruction": "Read Stages 1–3 (\"Arrival of the Plague at Melcombe Regis\", \"Labour Shortage & The Economic Revolution\", and \"The Statute of Labourers & Sumptuary Resistance\") aloud or with 1.0x studio audio, guiding pupils to summarise each stage on their Verso Pupil Workbook spine."
+              },
+              {
+                "time": "28–44m",
+                "label": "Primary Source Investigation (Sources A–B)",
+                "instruction": "Unpack Source A (Chronicle of Henry Knighton on Plague Mortality and…) and Source B (The Statute of Labourers (25 Edw. III, 1351):…), cross-referencing contemporary details and provenance against Stages 1–3."
+              },
+              {
+                "time": "44–50m",
+                "label": "Formative Hinge Plenary",
+                "instruction": "Check whole-class understanding before Lesson 2 using the Hinge Question: \"Why did a biological disaster like the plague create economic empowerment for ordinary peasants?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Turning Points, Disciplinary Sources & Extended Writing (Stages 4–5 • 50 mins)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Part 1 Retrieval & Vocabulary Anchor",
+                "instruction": "Rapid recall of Lesson 1 Stages 1–3 (\"Arrival of the Plague at Melcombe Regis\" → \"The Statute of Labourers & Sumptuary Resistance\") and core lesson vocabulary before completing the enquiry."
+              },
+              {
+                "time": "08–24m",
+                "label": "Stages 4–5 & Sources C–E Cross-Referencing",
+                "instruction": "Read Stages 4–5 (\"The Regressive Poll Taxes & Brentwood Spark\" and \"Showdown at Smithfield & The End of Serfdom\") to complete the Verso spine, then interrogate Source C (John Ball Preaching to Peasant Rebels at Blackheath…), Source D (King Richard II Meeting the Armed Peasant Crowds at…), Source E (The Murder of Wat Tyler at Smithfield (Froissart’s…) to weigh competing perspectives."
+              },
+              {
+                "time": "24–44m",
+                "label": "Recto Workbook Extended Writing",
+                "instruction": "Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins))."
+              },
+              {
+                "time": "44–50m",
+                "label": "Tap-Tile Consolidation & Live Critique",
+                "instruction": "Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary Cloze."
+              }
+            ]
+          }
+        }
       },
       "quick_quiz": [
         {
@@ -7064,7 +7388,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did a biological disaster like the plague create economic empowerment for ordinary peasants?",
             "source_context": "In 1348–1350, the Black Death destroyed half the population, enabling surviving labourers to demand higher wages. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
-          }
+          },
+          "source_context": "In 1348–1350, the Black Death swept across England, killing an estimated 30–50% of the population and triggering a massive structural labour shortage. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
         },
         {
           "id": "medieval_england_l5_src_b",
@@ -7085,7 +7410,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?",
             "source_context": "In 1351, Parliament tried to freeze wages at pre-plague levels, angering peasants for 30 years. **Hinge Question:** Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?"
-          }
+          },
+          "source_context": "Following the Black Death, Edward III passed the Ordinance of Labourers (1349) and Parliament enacted the Statute of Labourers (1351) to prevent market wages from rising. **Hinge Question:** Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?"
         },
         {
           "id": "medieval_england_l5_src_c",
@@ -7105,7 +7431,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why was religious scripture the most effective tool for justifying political revolution in the medieval world?",
             "source_context": "John Ball preached that all people were created equal before God, urging the destruction of serfdom. **Hinge Question:** Why was religious scripture the most effective tool for justifying political revolution in the medieval world?"
-          }
+          },
+          "source_context": "In June 1381, radical priest John Ball addressed over 30,000 peasant rebels at Blackheath outside London, urging them to cast off serfdom and demand total equality before the King. **Hinge Question:** Why was religious scripture the most effective tool for justifying political revolution in the medieval world?"
         },
         {
           "id": "medieval_england_l5_src_d",
@@ -7125,7 +7452,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Was fourteen-year-old King Richard II showing remarkable courage or cynical deception at Mile End?",
             "source_context": "At Mile End, young King Richard II conceded all peasant demands to buy time. **Hinge Question:** Was fourteen-year-old King Richard II showing remarkable courage or cynical deception at Mile End?"
-          }
+          },
+          "source_context": "On 14 June 1381, King Richard II rode out to Mile End to meet Wat Tyler, granting charter charters abolishing serfdom across England, which he later violently revoked. **Hinge Question:** Was fourteen-year-old King Richard II showing remarkable courage or cynical deception at Mile End?"
         },
         {
           "id": "medieval_england_l5_src_e",
@@ -7145,7 +7473,8 @@ export default {
           "teacher_notes": {
             "hinge_question": "Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?",
             "source_context": "On 15 June 1381, Wat Tyler was killed at Smithfield, shattering the rebellion. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?"
-          }
+          },
+          "source_context": "On 15 June 1381, negotiations at Smithfield turned violent. Lord Mayor Walworth slashed Tyler, mortally wounding him and breaking the momentum of the revolt. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?"
         }
       ],
       "quiz": [
@@ -7724,7 +8053,8 @@ export default {
             "Flat tax charging every adult the exact same sum, rich or poor."
           ]
         ]
-      }
+      },
+      "vocab_cloze_text": "England’s [Demography] changed dramatically after the Black Death of 1348–49 killed over a third of the population and created acute labour shortages. Angry lords passed the 1351 [Statute of Labourers] to freeze wages and preserve [Serfdom]. When King Richard II’s government collected three unfair [Poll Tax] levies by 1381, Wat Tyler and John Ball led a dramatic peasant [Insurrection] into London."
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",
@@ -7732,5 +8062,477 @@ export default {
   "keyStage": "KS3",
   "key_stage": "KS3",
   "yearGroup": "Year 7",
-  "category": "KS3"
+  "category": "KS3",
+  "key_individuals": [
+    {
+      "entity_type": "person",
+      "name": "King Edward the Confessor",
+      "aliases": [
+        "Edward the Confessor"
+      ],
+      "lifespan": "c. 1003 – 5 January 1066",
+      "role": "Last King of the House of Wessex (1042–1066)",
+      "image": "/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg",
+      "image_position": "center 22%",
+      "origins": "Pious Anglo-Saxon monarch who reigned for twenty-four years and rebuilt Westminster Abbey, yet died childless on 5 January 1066 with no direct blood heir.",
+      "significance": "His childless death plunged Northwestern Europe into the 1066 succession crisis, leaving the Anglo-Saxon Witan to elect Harold Godwinson while Duke William of Normandy and King Harald Hardrada of Norway prepared rival invasions.",
+      "achievements": [
+        "Allegedly promised the English crown to his cousin Duke William of Normandy in 1051 before naming Earl Harold Godwinson protector of the realm on his deathbed.",
+        "Buried in Westminster Abbey in January 1066, within twenty-four hours of which the Witan crowned Harold II."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "King Harold II (Harold Godwinson)",
+      "aliases": [
+        "Harold Godwinson",
+        "King Harold II",
+        "King Harold"
+      ],
+      "lifespan": "c. 1022 – 14 October 1066",
+      "role": "Earl of Wessex & Last Crowned Anglo-Saxon King of England (1066)",
+      "image": "/images/harold_godwinson.jpg",
+      "image_position": "center 20%",
+      "origins": "England’s wealthiest nobleman and Earl of Wessex, elected king by the Witan in January 1066 despite Norman claims that he had sworn a sacred 1064 oath on holy relics supporting Duke William.",
+      "significance": "Marched 190 miles north in four days to annihilate Harald Hardrada’s Vikings at Stamford Bridge (25 September 1066), before force-marching 250 miles south to die defending Senlac Hill at Hastings on 14 October 1066.",
+      "achievements": [
+        "Crushed Harald Hardrada’s 300-longship Viking invasion at Stamford Bridge on 25 September 1066, leaving only 24 ships needed for the survivors.",
+        "Held Senlac Hill near Hastings for five hours behind an interlocking shield wall of elite housecarls and fyrd militia until Norman feigned retreats broke the line and Harold was killed."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "King Harald Hardrada",
+      "aliases": [
+        "Harald Hardrada",
+        "Hardrada"
+      ],
+      "lifespan": "c. 1015 – 25 September 1066",
+      "role": "King of Norway & Viking Claimant to the English Throne (1046–1066)",
+      "image": "/images/harald_hardrada.png",
+      "image_fit": "contain",
+      "origins": "Fearsome Norwegian warrior-king (\"Hard-Ruler\") who claimed the English crown through an earlier pact between Scandinavian rulers and sailed 300 Viking longships to Yorkshire in September 1066.",
+      "significance": "Forced King Harold II to march his elite housecarls 190 miles north just days before Duke William landed at Pevensey—fatally exhausting England’s army even though Hardrada himself was killed at Stamford Bridge.",
+      "achievements": [
+        "Landed 300 Viking longships on the Yorkshire coast in September 1066.",
+        "Killed by an arrow to the throat during King Harold’s surprise assault at the Battle of Stamford Bridge (25 September 1066), ending the Viking Age in England."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "William the Conqueror (Duke William of Normandy)",
+      "aliases": [
+        "William the Conqueror",
+        "Duke William",
+        "King William I"
+      ],
+      "lifespan": "c. 1028 – 1087",
+      "role": "Duke of Normandy & First Norman King of England (1066–1087)",
+      "image": "/images/william_the_conqueror.jpg",
+      "image_position": "center 12%",
+      "origins": "Formidable Duke of Normandy who secured the papal banner of Pope Alexander II, landed unopposed at Pevensey Bay in late September 1066, and defeated Harold II at Hastings using disciplined cavalry feigned retreats.",
+      "significance": "Subjugated two million Anglo-Saxons with an elite of ten thousand Normans through 500 rapid motte-and-bailey castles, the merciless 1069–70 Harrying of the North, total feudal land redistribution, and the 1086 Domesday Book.",
+      "achievements": [
+        "Won the Battle of Hastings (14 October 1066) by tipping back his helmet to rally panicking troops and ordering feigned cavalry retreats to shatter the Saxon shield wall.",
+        "Built over 500 timber motte-and-bailey castles (later stone keeps such as Portchester) and unleashed the Harrying of the North (1069–70), recorded by Orderic Vitalis as starving over 100,000 people.",
+        "Commissioned the 1086 Domesday Book survey across every English shire, replacing Anglo-Saxon thegns with ~200 Norman barons bound by feudal knight service."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "King Henry II",
+      "aliases": [
+        "Henry II"
+      ],
+      "lifespan": "1133 – 1189",
+      "role": "First Plantagenet King of England & Ruler of the Angevin Empire (1154–1189)",
+      "image": "/images/portraits/king_henry_ii_manuscript.jpg",
+      "image_position": "center 60%",
+      "origins": "Energetic Angevin ruler determined to restore royal law and order across England—including ending the scandal of \"criminous clerks\" escaping royal gallows in lenient Church courts by reading a Latin verse (\"benefit of clergy\").",
+      "significance": "Appointed his close friend and Chancellor Thomas Becket as Archbishop of Canterbury in 1162 expecting a loyal ally, issued the 1164 Constitutions of Clarendon, and suffered European outrage and barefoot public penance (1174) after his furious outburst prompted four knights to murder Becket.",
+      "achievements": [
+        "Issued the Constitutions of Clarendon (January 1164) demanding that defrocked criminal clerics face punishment in royal courts.",
+        "His angry Christmas 1170 outburst spurred four royal knights to murder Archbishop Becket in Canterbury Cathedral on 29 December 1170.",
+        "Walked barefoot through Canterbury in July 1174 to be whipped with birch rods by eighty monks at Becket’s shrine, conceding clerical court immunity."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Archbishop Thomas Becket",
+      "aliases": [
+        "Thomas Becket",
+        "Becket"
+      ],
+      "lifespan": "c. 1119 – 29 December 1170",
+      "role": "Royal Chancellor (1155–62), Archbishop of Canterbury & Canonised Martyr",
+      "image": "/images/portraits/thomas_becket_manuscript.jpg",
+      "image_position": "center 18%",
+      "origins": "Once Henry II’s wealthy hunting companion in silk robes, Becket shocked the court upon becoming Archbishop of Canterbury in June 1162 by resigning the Chancellorship, wearing a lice-infested goat hairshirt, and declaring loyalty solely to the Pope.",
+      "significance": "Refused to seal the 1164 Constitutions of Clarendon, spent six years in French exile, and was hacked down at the altar of Canterbury Cathedral on 29 December 1170—becoming medieval England’s greatest martyr-saint and forcing Henry II to back down over Church courts.",
+      "achievements": [
+        "Defended independent Church courts (\"benefit of clergy\") against royal jurisdiction at Clarendon (1164) and excommunicated bishops who backed the King in December 1170.",
+        "Martyred in Canterbury Cathedral on 29 December 1170 and canonised by Pope Alexander III within three years, turning Canterbury into a major European pilgrimage shrine."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "King John",
+      "lifespan": "1166 – 1216",
+      "role": "Plantagenet King of England Sealed at Runnymede (1199–1216)",
+      "image": "/images/medieval_england/plate_4_1_king_john_matthew_paris.jpg",
+      "image_position": "center 15%",
+      "origins": "Younger brother of Richard the Lionheart who lost ancestral Normandy to King Philip II of France in 1204 (earning the nickname \"John Softsword\") and spent a decade squeezing heavy feudal taxes and scutage from English barons.",
+      "significance": "Provoked a five-year Papal Interdict (1208–13), saw his continental coalition crushed at Bouvines (1214), and—cornered after rebel barons led by Robert Fitzwalter seized London—affixed the Great Seal to Magna Carta at Runnymede on 15 June 1215.",
+      "achievements": [
+        "Clashed with Pope Innocent III over Archbishop Stephen Langton, enduring the 1208 Interdict and 1209 excommunication before surrendering England as a papal fief in 1213.",
+        "Sealed the 63 clauses of Magna Carta at Runnymede on 15 June 1215—including Clause 39 guaranteeing free men lawful judgement by equals and the law of the land.",
+        "Persuaded the Pope to annul Magna Carta within months, sparking the First Barons’ War (and losing crown baggage in the Wash) before dying in October 1216, when William Marshal reissued the Charter for nine-year-old Henry III."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "Pope Innocent III",
+      "aliases": [
+        "Innocent III"
+      ],
+      "lifespan": "1160 – 1216",
+      "role": "Head of the Medieval Catholic Church (1198–1216)",
+      "image": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+      "image_position": "center 28%",
+      "origins": "Most powerful medieval Pope, who asserted supreme spiritual authority over European monarchs from Rome.",
+      "significance": "Demonstrated the immense religious power of the medieval papacy by placing all England under a five-year Interdict (1208) and excommunicating King John (1209) until John knelt as a papal vassal—after which Innocent annulled Magna Carta in 1215.",
+      "achievements": [
+        "Locked English church doors for five years under the 1208 Interdict when King John rejected Stephen Langton as Archbishop of Canterbury.",
+        "Accepted England as a tribute-paying papal fiefdom in 1213, then declared Magna Carta shameful, illegal, and void at John’s request in August 1215."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "John Ball & Wat Tyler",
+      "aliases": [
+        "John Ball",
+        "Wat Tyler",
+        "Tyler"
+      ],
+      "lifespan": "Ball: c. 1338 – July 1381 · Tyler: d. 15 June 1381",
+      "role": "Radical Preacher & Military Leader of the 1381 Peasants’ Revolt",
+      "image": "/images/medieval_england/plate_5_2_wat_tyler_john_ball.jpg",
+      "image_position": "center 18%",
+      "origins": "Following the 1348–50 Black Death, the wage-freezing 1351 Statute of Labourers, and the flat 12-pence third Poll Tax of May 1381 (sparked when Essex villagers chased tax commissioner John Bampton from Brentwood), Kentish rebel Wat Tyler freed radical priest John Ball.",
+      "significance": "Led over 30,000 Essex and Kent rebels into London in June 1381—burning tax rolls, storming the Tower of London, and preaching human equality (\"When Adam delved and Eve span, who was then the gentleman?\")—accelerating the long-term collapse of English serfdom.",
+      "achievements": [
+        "John Ball preached radical Christian equality to massed rebels at Blackheath outside London.",
+        "Wat Tyler presented demands to abolish serfdom and cap land rents to King Richard II before being stabbed by London’s Mayor at Smithfield on 15 June 1381."
+      ]
+    },
+    {
+      "entity_type": "person",
+      "name": "King Richard II",
+      "aliases": [
+        "Richard II"
+      ],
+      "lifespan": "1367 – 1400",
+      "role": "Fourteen-Year-Old Boy King During the 1381 Peasants’ Revolt (1377–1399)",
+      "image": "/images/portraits/king_richard_ii_westminster.jpg",
+      "image_position": "23% 70%",
+      "origins": "Fourteen-year-old grandson of Edward III whose royal ministers imposed three regressive Poll Taxes (culminating in 12d per adult in 1381) to pay French war debts from the Hundred Years’ War.",
+      "significance": "Displayed cool nerve at Mile End and Smithfield on 14–15 June 1381—riding forward when Wat Tyler was killed (\"I shall be your captain!\") to disperse the rebel army with promises of freedom, before revoking every charter and executing rebel leaders.",
+      "achievements": [
+        "Promised charters abolishing serfdom to disperse armed rebels at Mile End and Smithfield (June 1381).",
+        "Revoked his freedom charters once royal forces regrouped (\"Villeins ye are, and villeins ye shall remain\"), though labour shortages after the Black Death meant feudal bondage steadily withered away anyway."
+      ]
+    }
+  ],
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "book_title": "Gesta Guillelmi (The Deeds of William): Senlac Hill & the Feigned Retreat",
+      "author": "William of Poitiers (c. 1071 • Norman Court Chronicle)",
+      "cover_image": "/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg",
+      "cover_caption": "Scene from the Bayeux Tapestry (c. 1070s) showing mounted Norman knights charging the locked kite-shields and battleaxes of King Harold’s English huscarls.",
+      "author_context": "William of Poitiers (c. 1020–1090) was a Norman chaplain who had trained as a knight before entering the Church and serving Duke William of Normandy. Writing around five years after 1066, his Latin chronicle Gesta Guillelmi flatters his Norman patron, yet provides our most detailed military account of how Norman cavalry broke the English shield-wall on 14 October 1066.",
+      "source_type": "primary_chronicle",
+      "source_type_label": "Contemporary Norman Chronicle (c. 1071)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "\"The English stood massed tightly upon the crest of the hill, holding the high ground in so dense a wedge that the dead could scarcely fall where they stood. Hurling javelins and wielding terrible two-handed battleaxes that clove through shields and coats of mail alike, King Harold’s warriors drove back our foot-soldiers and Bretons upon the left wing.\n\nWhen false cries arose among the ranks that Duke William himself had fallen, flight began to spread across the valley. Seeing the peril, the Duke spurred his charger across the path of the retreating knights, pushed back his iron helmet so that every man might behold his bare face, and cried aloud: 'Look at me well! I live, and by God’s grace I shall conquer! What madness drives you to flee when victory lies before you?'\n\nPerceiving thereafter that the tightly locked English shield-wall could not be shattered by headlong assault uphill, the Normans twice turned their horses in deliberate, feigned flight. Drawn down from their ridge in eager pursuit of what seemed a beaten enemy, thousands of the English broke formation on the lower slope—whereupon our horsemen wheeled swiftly round, surrounded the scattered pursuers, and cut them down.\"",
+      "vocabVault": [
+        {
+          "term": "Shield-Wall",
+          "def": "A tightly locked defensive formation in which Anglo-Saxon huscarls and fyrdmen overlapped shields on high ground."
+        },
+        {
+          "term": "Huscarls",
+          "def": "Elite, salaried professional bodyguards of the Anglo-Saxon king who fought with heavy mail and two-handed Danish axes."
+        },
+        {
+          "term": "Feigned Retreat",
+          "def": "A disciplined cavalry tactic of pretending to flee in panic in order to lure defenders out of a strong defensive position."
+        },
+        {
+          "term": "Patronage",
+          "def": "Support and reward given by a powerful ruler to a writer or churchman, often shaping how chronicles praise that ruler."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why was it almost impossible for Duke William’s soldiers to break the English army during the morning of 14 October 1066?",
+          "answer": "Harold’s army held the steep top of Senlac Hill in a tightly locked shield-wall, where Norman horses struggled uphill against two-handed battleaxes."
+        },
+        {
+          "question": "How did Duke William stop his army panicking when a rumour spread that he had been killed, and how did the feigned retreat work?",
+          "answer": "He lifted his helmet to show his face alive, then used pretended retreats to trick English fighters into chasing downhill and breaking their shield-wall."
+        },
+        {
+          "question": "Knowing that William of Poitiers was Duke William’s own chaplain, why should historians read his praise of Norman cleverness carefully?",
+          "answer": "As a Norman court chronicler writing for the Conqueror, he exaggerates William’s genius while downplaying how exhausted Harold’s troops already were after marching south from Stamford Bridge."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> What weapon did the English huscarls use that terrified William’s knights?<br><br><strong>Pair:</strong> Compare this chronicle with Scene 55 of the Bayeux Tapestry—how do both sources corroborate William lifting his helmet?<br><br><strong>Share:</strong> Was Hastings won more by Norman tactics or English exhaustion after Stamford Bridge?",
+      "questions": [
+        "Why could the English soldiers on the hilltop \"scarcely fall where they stood\"?",
+        "What did Duke William do with his helmet to prove to his retreating troops that he was still alive?",
+        "How did the Norman \"feigned flight\" trick the English defenders into losing their advantage?"
+      ],
+      "audio_file": "/audio/reading/medieval_england/r0.mp3",
+      "studio_audio": "/audio/reading/medieval_england/r0.mp3",
+      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Translated from Latin and condensed for KS3 reading aloud from William of Poitiers’s c. 1071 Norman chronicle."
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "book_title": "Historia Ecclesiastica: Orderic Vitalis on Castles & the Harrying of the North",
+      "author": "Orderic Vitalis (Book IV, c. 1125 • Monastery of Saint-Évroul)",
+      "cover_image": "/images/medieval_england/plate_2_1_bayeux_castle_building.jpg",
+      "cover_caption": "Bayeux Tapestry scene inscribed \"ISTE IVSSIT VT FODERETVR CASTELLVM AT HESTENGACEASTRA\", showing forced English labourers digging the motte-and-bailey castle at Hastings.",
+      "author_context": "Orderic Vitalis (1075–c. 1142) was born in Shropshire to a Norman father and an English mother before becoming a Benedictine monk in Normandy. Because of his mixed Anglo-Norman heritage, Orderic wrote with rare moral honesty—praising King William’s strength while fiercely condemning the merciless starvation inflicted on Yorkshire during the Harrying of the North (1069–1070).",
+      "source_type": "primary_chronicle",
+      "source_type_label": "Anglo-Norman Monastic Chronicle (c. 1125)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "\"Throughout the conquered shires the King planted royal castles—earthworks crowned with timber palisades that the English had scarcely known before, which prevented the people of the land from rising cleanly against his garrisons. Yet when the men of Northumbria joined Danish raiders at York in 1069, King William’s wrath knew no restraint.\n\nNowhere else had William shown such cruelty. Yielding to his anger, he spared neither the weak nor the innocent, commanding that all crops, herds of cattle, ploughs, and stores of grain between York and Durham be burned to ashes so that rebels might find no winter sustenance.\n\nFrom that deliberate ruin so dreadful a famine swept across northern England that defenceless men, women, and children perished of hunger upon the frozen roads—more than one hundred thousand Christian souls, as men reckoned. Though I have often praised King William’s vigour and order, I dare not excuse so brutal a slaughter; for surely Almighty God, the righteous Judge, will weigh the cries of the starving alongside the deeds of princes.\"",
+      "vocabVault": [
+        {
+          "term": "Motte-and-Bailey",
+          "def": "A Norman fortress combining a raised earthen mound (motte) topped by a wooden keep with a fenced courtyard (bailey) below."
+        },
+        {
+          "term": "Harrying",
+          "def": "Systematic scorched-earth devastation—burning crops, livestock, and villages to starve a region into submission."
+        },
+        {
+          "term": "Garrison",
+          "def": "A body of armed knights and soldiers stationed inside a castle to control the surrounding countryside."
+        },
+        {
+          "term": "Subjugation",
+          "def": "Bringing a conquered population completely under royal obedience through force, law, and taxation."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why were Norman motte-and-bailey castles such a shock and threat to Anglo-Saxon communities?",
+          "answer": "England had very few private castles before 1066; towering earthen mottes and mounted garrisons allowed small numbers of Normans to dominate whole shires."
+        },
+        {
+          "question": "Why did King William burn ploughs, barns, and cattle across Yorkshire in the winter of 1069–1070 rather than simply fighting rebel soldiers?",
+          "answer": "By destroying food supplies and tools (\"scorched earth\"), he ensured no northern rebellion or Danish army could feed itself—causing catastrophic famine for civilians."
+        },
+        {
+          "question": "Why does Orderic Vitalis’s mixed English and Norman background make his verdict on William so valuable to historians?",
+          "answer": "Even though he lived in a Norman monastery and admired William’s order, his English roots made him refuse to whitewash the starvation of innocent northern families."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> What triggered William’s fury in northern England in 1069?<br><br><strong>Pair:</strong> Note Orderic’s figure of \"100,000\" dead—why did medieval chroniclers use huge round numbers, and how does the 1086 Domesday Book (\"wasteland\" / vasta) prove the devastation really happened?<br><br><strong>Share:</strong> Which did more to secure Norman control permanently: castles, terror, or Domesday taxation?",
+      "questions": [
+        "What new type of fortification did King William build across the English shires?",
+        "What items did William order his troops to burn between York and Durham in 1069–1070?",
+        "Why does Orderic Vitalis say he \"dare not excuse\" William’s actions in the North?"
+      ],
+      "audio_file": "/audio/reading/medieval_england/r1.mp3",
+      "studio_audio": "/audio/reading/medieval_england/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Translated from Latin and condensed for KS3 pupils from Orderic Vitalis’s c. 1125 monastic chronicle."
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "book_title": "Vita Sancti Thomae: Eyewitness Account of the Murder in the Cathedral",
+      "author": "Edward Grim (c. 1172 • British Library Cotton MS Claudius B II)",
+      "cover_image": "/images/medieval_england/plate_3_2_henry_ii_penance_becket.jpg",
+      "cover_caption": "Historical engraving of King Henry II kneeling barefoot in penance before the tomb of St Thomas Becket at Canterbury Cathedral in July 1174.",
+      "author_context": "Edward Grim was a clerk from Cambridge visiting Archbishop Thomas Becket at Canterbury on the evening of 29 December 1170. When four household knights of King Henry II—Reginald FitzUrse, Hugh de Morville, William de Tracy, and Richard le Breton—stormed into the cathedral, Grim stood beside Becket and had his own arm nearly severed by the first sword blow before writing this famous eyewitness biography.",
+      "source_type": "primary_chronicle",
+      "source_type_label": "Eyewitness Cathedral Testimony (c. 1172)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "\"As twilight fell on the twenty-ninth of December, the monks hurried Archbishop Thomas toward the cathedral vespers, begging him to bolt the heavy oak doors behind them. Turning calmly upon the steps, Thomas forbade them: 'It is not right to turn the fortress of prayer, the Church of Christ, into a military camp. Even if it stands unlocked, it is able to shield its own; we shall triumph over our foes by suffering rather than by fighting.'\n\nMoments later the four mailed knights burst in with drawn swords and axes, shouting aloud: 'Where is Thomas Becket, traitor to the King and the realm?' Receiving no answer, they cried again, 'Where is the Archbishop?' At once Thomas stepped down from the pillar into plain view and answered clearly: 'Here I am—no traitor to the King, but a priest of God. What do you seek?'\n\nWhen they demanded that he lift the excommunication placed upon the King’s bishops, Thomas refused unless they submitted to the authority of the Church. Though I threw my own arm forward to turn aside the first descending blade—whereby my arm was grievously cut—the Archbishop bowed his head in prayer, commending his cause to God and St Denis, and fell beneath their swords upon the stone pavement.\"",
+      "vocabVault": [
+        {
+          "term": "Archbishop of Canterbury",
+          "def": "The most senior churchman in England, responsible for leading the English Church under the Pope in Rome."
+        },
+        {
+          "term": "Excommunication",
+          "def": "Officially expelling a person from the Catholic Church and its sacraments—a terrifying spiritual punishment in medieval Europe."
+        },
+        {
+          "term": "Martyr",
+          "def": "A person killed because they refuse to surrender their religious faith or principles."
+        },
+        {
+          "term": "Penance",
+          "def": "A public act of sorrow and punishment carried out to seek God’s forgiveness for a grave sin."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did Archbishop Thomas Becket refuse to let the terrified monks lock the doors of Canterbury Cathedral?",
+          "answer": "He insisted a church is a house of prayer, not a castle, believing sacred sanctuary should never be barred to anyone."
+        },
+        {
+          "question": "What was the core argument between King Henry II and Becket that led the four knights to confront him?",
+          "answer": "Who held supreme authority over Church courts and bishops in England—the Crown (Constitutions of Clarendon) or the Church and Pope."
+        },
+        {
+          "question": "How did murdering Becket inside Canterbury Cathedral completely backfire on King Henry II?",
+          "answer": "Christendom was horrified; Becket was swiftly declared a saint and martyr, forcing Henry II to walk barefoot through Canterbury to be whipped in penance in 1174 and compromise on Church courts."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why is Edward Grim such an extraordinary eyewitness source for 29 December 1170?<br><br><strong>Pair:</strong> At the same time, Grim wrote to celebrate Becket as a saint—which details in his account emphasize Becket’s saintly bravery?<br><br><strong>Share:</strong> Who won the struggle between Crown and Church after 1170: Henry II or Becket?",
+      "questions": [
+        "Why did Thomas Becket order the monks not to bolt the cathedral doors?",
+        "What accusation did the four knights shout when they entered Canterbury Cathedral?",
+        "How was eyewitness author Edward Grim injured during the attack?"
+      ],
+      "audio_file": "/audio/reading/medieval_england/r2.mp3",
+      "studio_audio": "/audio/reading/medieval_england/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Translated from Latin and abridged for KS3 reading aloud from eyewitness Edward Grim’s c. 1172 account at Canterbury."
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "book_title": "Flores Historiarum & Magna Carta: Confrontation at Runnymede (June 1215)",
+      "author": "Roger of Wendover (St Albans Chronicle, c. 1235) & Magna Carta Clauses 12, 39 & 61",
+      "cover_image": "/images/medieval_england/plate_4_2_king_john_runnymede.jpg",
+      "cover_caption": "Historical engraving depicting King John seated in his pavilion at Runnymede beside the River Thames surrounded by mailed rebel barons and bishops in June 1215.",
+      "author_context": "Roger of Wendover (died 1236) was the chronicler of St Albans Abbey, a great monastery just north of London through which royal officials and rebel barons constantly passed. Paired here with the translated Latin text of the Great Charter sealed at Runnymede on 15 June 1215, his account captures how military defeat in France and crushing scutage taxes forced King John to accept the rule of law.",
+      "source_type": "primary_decree",
+      "source_type_label": "Royal Charter & St Albans Chronicle (1215)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "Roger of Wendover records how England’s barons renounced their fealty in the spring of 1215 after years of arbitrary fines, lost wars in Normandy, and heavy scutage taxes: \"Gathering an army styling itself the Army of God and Holy Church, the barons marched upon London, whose citizens opened the city gates to them. Seeing himself deserted by almost all his knights save a handful of foreign mercenaries, King John met the barons in the water-meadow called Runnymede, between Windsor and Staines, on the fifteenth day of June.\"\n\nThere the King’s Great Seal was pressed into wax beneath the clauses of Magna Carta:\n\"Clause 12: No scutage or aid shall be imposed in our kingdom unless by the common counsel of our kingdom...\"\n\"Clause 39: No free man shall be seized or imprisoned, or stripped of his rights or possessions, or outlawed or exiled, nor will we proceed with force against him, except by the lawful judgment of his equals or by the law of the land.\"\n\"Clause 40: To no one will we sell, to no one deny or delay right or justice.\"\n\"Clause 61: The barons shall choose any twenty-five barons of the kingdom to observe, hold, and cause to be observed the peace and liberties which we have granted.\"",
+      "vocabVault": [
+        {
+          "term": "Scutage",
+          "def": "\"Shield money\"—a feudal tax demanded by King John instead of military service, which he levied eleven times to fund failed wars."
+        },
+        {
+          "term": "Free Man",
+          "def": "In 1215, landowners, knights, barons, and townsmen who were not unfree peasant villeins tied to a lord’s manor."
+        },
+        {
+          "term": "Rule of Law",
+          "def": "The constitutional principle that even the monarch must obey the law rather than ruling by personal whim."
+        },
+        {
+          "term": "Runnymede",
+          "def": "The water-meadow beside the River Thames near Windsor where King John agreed to Magna Carta on 15 June 1215."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why had England’s barons grown furious enough with King John to capture London in 1215?",
+          "answer": "John had lost Normandy to France, demanded repeated scutage taxes, seized barons’ castles and hostages without trial, and quarrelled with the Pope."
+        },
+        {
+          "question": "Why did Clauses 39 and 40 not immediately give rights to everyone living in England in 1215?",
+          "answer": "Clause 39 applied only to \"free men\" (barons, knights, and freemen), leaving out the majority of English peasants who were unfree villeins."
+        },
+        {
+          "question": "Even if the barons in 1215 mainly wanted to protect their own wealth (plus Clause 61’s committee of 25 barons), why did Magna Carta become world-famous?",
+          "answer": "It established in writing that the king is beneath the law, cannot imprison people without fair trial, and cannot tax the realm without common consent."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Which event forced King John to negotiate at Runnymede in June 1215?<br><br><strong>Pair:</strong> Look closely at Clause 39 and Clause 61: which clause lasted for 800 years, and which clause caused civil war within months?<br><br><strong>Share:</strong> Was Magna Carta a timeless charter of human liberty or a feudal barons’ power grab?",
+      "questions": [
+        "Which city opened its gates to the rebel barons, leaving King John isolated in 1215?",
+        "According to Clause 39, who was protected against imprisonment without lawful judgment?",
+        "How many barons did Clause 61 appoint to watch over King John and enforce the charter?"
+      ],
+      "audio_file": "/audio/reading/medieval_england/r3.mp3",
+      "studio_audio": "/audio/reading/medieval_england/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Combines translated clauses of Magna Carta (1215) with Roger of Wendover’s St Albans chronicle account."
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "book_title": "Historia Anglicana: John Ball’s Blackheath Sermon & the 1381 Rising",
+      "author": "Thomas Walsingham (St Albans Abbey Chronicle, c. 1381–1394)",
+      "cover_image": "/images/medieval_england/plate_5_2_wat_tyler_john_ball.jpg",
+      "cover_caption": "Illuminated detail from Jean Froissart’s Chronicles inscribed \"Iehā Balle\", depicting radical priest John Ball preaching from horseback during the Peasants’ Revolt of 1381.",
+      "author_context": "After the Black Death (1348–1349) killed between a third and half of England’s population, surviving peasants realised their labour was scarce—yet lords enforced the 1351 Statute of Labourers to freeze wages and imposed three flat-rate Poll Taxes between 1377 and 1381. Monastic chronicler Thomas Walsingham of St Albans disliked the rebels intensely, yet preserved the revolutionary words preached by radical priest John Ball at Blackheath on 12 June 1381.",
+      "source_type": "primary_chronicle",
+      "source_type_label": "Contemporary Monastic Chronicle (c. 1381–1394)",
+      "is_primary": true,
+      "is_adapted": true,
+      "extract": "\"After the Commons of Kent and Essex had broken open Maidstone gaol and freed the priest John Ball, a vast multitude of country folk gathered upon Blackheath overlooking London. Taking for his text the rhyme that had passed secretly from village to village, John Ball preached thus to the throng:\n\n'When Adam delved [dug] and Eve span [spun wool], who was then the gentleman? From the beginning all human beings were created equal by nature; bondage and serfdom were brought in not by God’s will, but by the unjust oppression of wicked men! Now is the hour given to you by God, if you have the courage, to cast off the heavy yoke of villeinage that you have borne so long, and win the liberty you have always desired.'\n\nStirred by his words and enraged by the collectors of the third Poll Tax, the rebels marched under Wat Tyler across London Bridge, burned the legal manor rolls that recorded their unfree birth, and demanded of fourteen-year-old King Richard II at Mile End that no man in England should henceforth be a serf.\"",
+      "vocabVault": [
+        {
+          "term": "Villeinage (Serfdom)",
+          "def": "Unfree feudal status tying peasants to their lord’s manor, requiring unpaid week-work and fines for permission to marry or move."
+        },
+        {
+          "term": "Poll Tax",
+          "def": "The hated flat-rate \"head tax\" of 1381 in which a poor farm labourer had to pay the exact same twelve pence (three groats) as a wealthy lord."
+        },
+        {
+          "term": "Manor Rolls",
+          "def": "Written parchment court records held by lords that proved which families owed unfree feudal labour."
+        },
+        {
+          "term": "Feudalism",
+          "def": "The medieval hierarchy exchanging land for loyalty, knight-service, and peasant labour."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "What did John Ball mean by his famous question, \"When Adam delved and Eve span, who was then the gentleman?\"",
+          "answer": "In the biblical Garden of Eden there were no lords or serfs—so class inequality and serfdom were invented by human greed, not ordained by God."
+        },
+        {
+          "question": "How were the Black Death of 1348 and the Peasants’ Revolt of 1381 directly connected?",
+          "answer": "The plague created a severe shortage of workers; when Parliament blocked rising wages (1351 Statute of Labourers) and added unfair Poll Taxes, emboldened peasants rebelled."
+        },
+        {
+          "question": "Why did the rebels in 1381 deliberately target and burn parchment manor rolls rather than looting randomly?",
+          "answer": "Burning the written legal records of villeinage showed they had clear political goals: erasing proof of unfree serfdom so they could rent land freely for cash wages."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why was the 1381 Poll Tax considered far more unfair than normal taxes?<br><br><strong>Pair:</strong> Thomas Walsingham was a wealthy abbey chronicler whose own monastery owned serfs—how might that bias his attitude toward Wat Tyler and John Ball?<br><br><strong>Share:</strong> Even though Wat Tyler and John Ball were killed in 1381, why had serfdom largely disappeared across England within seventy years?",
+      "questions": [
+        "Which prison did the Kent rebels break open to free the priest John Ball?",
+        "Quote the famous opening rhyme of John Ball’s sermon at Blackheath.",
+        "Which specific documents did the rebels burn to destroy proof of their unfree status?"
+      ],
+      "audio_file": "/audio/reading/medieval_england/r4.mp3",
+      "studio_audio": "/audio/reading/medieval_england/r4.mp3",
+      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
+      "provenance_tier": "adapted_primary",
+      "provenance_note": "Translated and condensed for KS3 reading aloud from Thomas Walsingham’s chronicle of the 1381 Peasants’ Revolt."
+    }
+  ]
 };

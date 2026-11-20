@@ -522,13 +522,13 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
             }
 
             ${
-              individualsCount > 0 && !isKs2
+              individualsCount > 0
                 ? `
               <button type="button" onclick="window.switchView && window.switchView('individuals', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
                 <div style="width: 38px; height: 38px; border-radius: 8px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-users-rectangle"></i></div>
                 <div>
-                  <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Key Individuals (${individualsCount})</div>
-                  <div style="font-size: 0.73rem; color: #64748b;">Biographical &amp; organisation cards</div>
+                  <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">People &amp; Organisations (${individualsCount})</div>
+                  <div style="font-size: 0.73rem; color: #64748b;">Biographical &amp; organisation dossiers</div>
                 </div>
               </button>`
                 : ''

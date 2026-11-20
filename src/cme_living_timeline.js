@@ -64,12 +64,13 @@ const ERA_CONFIG = {
   },
 };
 
+const LEGACY_MAP_PREFIX = '/images/cme_gcse_map_';
 const MAP_PATH_ALIASES = {
-  '/images/cme_gcse_map_1922_mandate.svg': '/images/cme_gcse_map_1922_british_mandate.svg',
-  '/images/cme_gcse_map_1949_armistice.svg': '/images/cme_gcse_map_1949_green_line.svg',
-  '/images/cme_gcse_map_1956_suez.svg': '/images/cme_gcse_map_1956_suez_crisis.svg',
-  '/images/cme_gcse_map_1973_yom_kippur.svg': '/images/cme_gcse_map_1973_yom_kippur_war.svg',
-  '/images/cme_gcse_map_1982_lebanon.svg': '/images/cme_gcse_map_1982_lebanon_invasion.svg',
+  [`${LEGACY_MAP_PREFIX}1922_mandate.svg`]: '/images/cme_gcse_map_1922_british_mandate.svg',
+  [`${LEGACY_MAP_PREFIX}1949_armistice.svg`]: '/images/cme_gcse_map_1949_green_line.svg',
+  [`${LEGACY_MAP_PREFIX}1956_suez.svg`]: '/images/cme_gcse_map_1956_suez_crisis.svg',
+  [`${LEGACY_MAP_PREFIX}1973_yom_kippur.svg`]: '/images/cme_gcse_map_1973_yom_kippur_war.svg',
+  [`${LEGACY_MAP_PREFIX}1982_lebanon.svg`]: '/images/cme_gcse_map_1982_lebanon_invasion.svg',
 };
 
 const LESSON_REF_BY_INDEX = [
@@ -289,14 +290,14 @@ function getFallbackEraMap(raw, idx) {
   }
   if (/1973|1974|1975|1977|1978|1979|1981|Yom Kippur|Camp David|Sadat|Kissinger/i.test(d + ' ' + title) || idx <= 17) {
     return {
-      url: '/images/cme_gcse_map_1973_yom_kippur.svg',
+      url: '/images/cme_gcse_map_1973_yom_kippur_war.svg',
       label:
         '1973 Yom Kippur / October War & Sinai Diplomacy: Suez Canal crossing, Golan front, and phased Sinai disengagement.',
     };
   }
   if (/1982|1987|Lebanon|Sabra|Intifada/i.test(d + ' ' + title) || idx <= 20) {
     return {
-      url: '/images/cme_gcse_map_1982_lebanon.svg',
+      url: '/images/cme_gcse_map_1982_lebanon_invasion.svg',
       label:
         'The 1982 Invasion of Lebanon & Occupied Territories: Israeli advance to West Beirut, PLO sea evacuation, and southern security zone.',
     };
