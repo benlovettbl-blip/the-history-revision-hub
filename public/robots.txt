@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /.netlify/
 
-Sitemap: https://YOUR-NEW-DOMAIN.co.uk/sitemap.xml
+Sitemap: https://historyrevisionhub.co.uk/sitemap.xml
