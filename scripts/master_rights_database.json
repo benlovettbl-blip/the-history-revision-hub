@@ -17787,15 +17787,15 @@
           "lesson_num": 5,
           "lesson_title": "Crown, Church, or Parliament? (1517–1689)",
           "source_id": "Plate 5.1",
-          "artifact_title": "Great Seal of the Commonwealth of England (1651)",
-          "date": "1651",
-          "creator": "Thomas Simon (Chief Engraver to the Royal Mint)",
-          "repository": "British Museum, Department of Coins and Medals",
-          "accession_id": "BM 1881,0404.1",
-          "rights_status": "Public Domain (Created 1651 / Term Expired — CDPA 1988)",
+          "artifact_title": "King Henry VIII Presiding Over the State Opening of Parliament (Wriothesley Garter Book)",
+          "date": "1523",
+          "creator": "Sir Thomas Wriothesley (Garter King of Arms)",
+          "repository": "Royal Collection Trust / British Library",
+          "accession_id": "RCIN 1005085 / Additional MS 34809",
+          "rights_status": "Public Domain (Created 1523 / Term Expired — CDPA 1988)",
           "commercial_use_permitted": true,
-          "source_url": "https://www.britishmuseum.org/collection/object/C_1881-0404-1",
-          "asset_path": "/images/great_seal_1651.png"
+          "source_url": "https://commons.wikimedia.org/wiki/File:Parliament_of_Henry_VIII_1523.jpg",
+          "asset_path": "/images/parliament_of_henry_viii_1523.jpg"
         },
         {
           "lesson_num": 5,

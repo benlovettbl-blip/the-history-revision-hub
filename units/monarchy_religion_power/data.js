@@ -6804,9 +6804,9 @@ export default {
           "act": 1,
           "title": "Henry VIII & Sovereign Statehood (1517–1547)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> The Break with Rome transformed national authority. Under Henry VIII, the Pope lost all English power as the Crown established sovereign national independence. Crucially, Henry achieved this not by royal decree, but through <strong>statute law</strong> passed by the Reformation Parliament.</p><p class=\"prose-p\">New laws made with MPs forged an unprecedented partnership between King and Parliament. Furthermore, vast monastery lands given away or sold to local gentry bound England’s landowning classes to royal supremacy, laying the foundations of modern English parliamentary <strong>sovereignty</strong>.</p>",
-          "image": "/images/great_seal_1651.png",
-          "image_alt": "The Great Seal of England showing the Commons in session and the sovereign state authority",
-          "caption": "The Great Seal of England, representing sovereign constitutional authority and the transition from royal prerogative to parliamentary statute (The National Archives, PRO 30/26/1).",
+          "image": "/images/parliament_of_henry_viii_1523.jpg",
+          "image_alt": "Contemporary illumination of King Henry VIII enthroned in Parliament from the Wriothesley Garter Book (1523)",
+          "caption": "King Henry VIII enthroned during the State Opening of Parliament, flanked by Cardinal Wolsey, bishops, and peers, with the Speaker and Commons assembled at the bar (Sir Thomas Wriothesley, Garter Book, 1523, Royal Collection Trust / British Library).",
           "source": {
             "id": "monarchy_religion_power_l5_src_a",
             "letter": "A",
