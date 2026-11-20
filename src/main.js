@@ -24,6 +24,7 @@ import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map
 import('./infographic_viewer.js');
 import('./engine/ks2_guidance.js');
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
+import { resolveUnitIdFromPathname } from './data/seo_routes.js';
 
 function purgeGDPRHistoricalCache() {
   try {
@@ -342,8 +343,9 @@ window.addEventListener('DOMContentLoaded', async () => {
       window.history.replaceState(window.history.state || {}, '', cleanedBootUrl);
     } catch (e) {}
   }
+  const pathUnit = resolveUnitIdFromPathname(window.location.pathname);
   let view = urlParams.get('view');
-  let unit = urlParams.get('unit');
+  let unit = urlParams.get('unit') || pathUnit;
   const initialLesson = urlParams.get('lesson');
 
   // Comprehensive view alias normalization for QR codes, links, and direct URLs
@@ -694,8 +696,9 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 
     const currentUrlParams = new URLSearchParams(window.location.search);
+    const pathUnit = resolveUnitIdFromPathname(window.location.pathname);
     const urlView = currentUrlParams.get('view');
-    const urlUnit = currentUrlParams.get('unit');
+    const urlUnit = currentUrlParams.get('unit') || pathUnit;
     const urlLesson = currentUrlParams.get('lesson');
     const targetScrollY = e.state && typeof e.state.scrollY === 'number' ? e.state.scrollY : 0;
 

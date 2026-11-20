@@ -9,6 +9,60 @@
 /sw.js
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
+/edexcel-medicine
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/early-elizabethan-england
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/conflict-in-the-middle-east
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/weimar-nazi-germany
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/usa-1954-1975
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/medieval-england
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/tudors-stuarts-parliament
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/water-and-sanitation
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/first-british-empire
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/industrial-revolution
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/second-british-empire
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/history-of-australia
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/causes-of-world-war-1
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/first-world-war-1914-1919
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/the-holocaust-shoah
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/cold-war-1945-1991
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/post-war-britain
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-world-war-2
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
 /database.json
   Cache-Control: public, max-age=0, must-revalidate
 

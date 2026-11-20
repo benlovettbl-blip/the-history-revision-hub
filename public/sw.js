@@ -96,8 +96,10 @@ self.addEventListener('fetch', (event) => {
             const responseToCache = networkResponse.clone();
             caches.open(DYNAMIC_CACHE).then((cache) => {
               cache.put(event.request, responseToCache.clone());
-              cache.put('/index.html', responseToCache.clone());
-              cache.put('/', responseToCache);
+              if (url.pathname === '/' || url.pathname === '/index.html') {
+                cache.put('/index.html', responseToCache.clone());
+                cache.put('/', responseToCache);
+              }
             });
           }
           return networkResponse;

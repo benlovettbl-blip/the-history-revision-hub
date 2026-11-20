@@ -1616,6 +1616,7 @@ export async function renderLessonsView() {
         );
         window._lastLessonsOverviewPushTs = 0;
 
+        url.pathname = '/';
         url.searchParams.set('view', 'lessons');
         url.searchParams.set('unit', unitId);
         url.searchParams.delete('stage');

@@ -300,9 +300,9 @@ export async function openReadingShareModal(unitId, lessonIndex, bookTitle) {
 
   const productionOrigin =
     (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_PUBLIC_SITE_URL) ||
-    'https://the-history-revision-hub.netlify.app';
+    'https://historyrevisionhub.co.uk';
   const origin = isLocalhost ? productionOrigin : window.location.origin;
-  const path = isLocalhost ? '/' : window.location.pathname;
+  const path = '/';
   const homeworkUrl = `${origin}${path}?view=reading&unit=${unitId}&lesson=${lessonIndex + 1}`;
 
   let qrDataUrl = '';

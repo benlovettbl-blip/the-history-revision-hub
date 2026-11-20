@@ -2848,7 +2848,7 @@ window.openParentBriefingModal = function () {
         <!-- Footer Bar -->
         <div style="background: #0f172a; color: #ffffff; padding: 12px 24px; border-radius: 0 0 11px 11px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.82rem;">
           <div>
-            <span style="color: #38bdf8; font-weight: 700;">🌐 Web App:</span> ${typeof window !== 'undefined' && window.location && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' ? window.location.host : 'the-history-revision-hub.netlify.app'} &nbsp;|&nbsp;
+            <span style="color: #38bdf8; font-weight: 700;">🌐 Web App:</span> ${typeof window !== 'undefined' && window.location && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' ? window.location.host : 'historyrevisionhub.co.uk'} &nbsp;|&nbsp;
             <span style="color: #fbbf24; font-weight: 700;">24/7 Trip Contact:</span> Provided on Parent Emergency Card
           </div>
           <div style="color: #94a3b8; font-size: 0.78rem;">
@@ -3572,7 +3572,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     window.location.hostname !== '127.0.0.1'
       ? window.location.origin
       : (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_PUBLIC_SITE_URL) ||
-        'https://the-history-revision-hub.netlify.app';
+        'https://historyrevisionhub.co.uk';
 
   // 1. Dynamic UK Academic Calendar Week Calculation
   // Academic Reference: Monday 7 September 2026 is Week A (Term start)

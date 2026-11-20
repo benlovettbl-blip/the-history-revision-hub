@@ -19,8 +19,28 @@ import {
 } from './views.js'; // Trigger HMR
 import { jumpToKeyIndividual } from './key_individuals.js';
 import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_catalog.js';
+import { getCleanPathForUnit, getSeoRouteForUnit, SITE_ORIGIN } from './data/seo_routes.js';
 
 export { jumpToKeyIndividual };
+
+const DEFAULT_DOCUMENT_TITLE =
+  'The History Revision Hub | UK KS2, KS3 & Edexcel GCSE History Revision';
+const DEFAULT_META_DESCRIPTION =
+  'Interactive UK History learning and revision platform for Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE (9–1) History—featuring primary sources, studio audio read-alouds, retrieval quizzes, and revision games.';
+
+function syncDynamicSeoMetadata(viewName, unitId) {
+  if (typeof document === 'undefined') return;
+  const route = viewName !== 'dashboard' && unitId ? getSeoRouteForUnit(unitId) : null;
+  const nextTitle = route ? route.seoTitle : DEFAULT_DOCUMENT_TITLE;
+  const nextDesc = route ? route.metaDescription : DEFAULT_META_DESCRIPTION;
+  const nextCanonical = route ? `${SITE_ORIGIN}/${route.slug}` : `${SITE_ORIGIN}/`;
+
+  document.title = nextTitle;
+  const descEl = document.querySelector('meta[name="description"]');
+  if (descEl) descEl.setAttribute('content', nextDesc);
+  const canonicalEl = document.querySelector('link[rel="canonical"]');
+  if (canonicalEl) canonicalEl.setAttribute('href', nextCanonical);
+}
 
 function isKs2UnitIdentifier(unitId, unitData = {}) {
   return Boolean(
@@ -1066,52 +1086,72 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     window.currentView = viewName;
   }
   syncKs2PortalState(param || state.selectedUnitId, state.activeUnitData, viewName);
+  syncDynamicSeoMetadata(viewName, param || state.selectedUnitId);
   appStore.state.currentView = viewName;
 
   if (!skipHistory) {
     const url = new URL(window.location);
-    url.searchParams.set('view', viewName);
-    url.searchParams.delete('stage');
-    if (param) url.searchParams.set('unit', param);
-    else url.searchParams.delete('unit');
     const isLockedSession =
-      url.searchParams.get('locked') === 'true' || url.searchParams.get('mode') === 'pupil';
-    if (!isLockedSession) {
-      url.searchParams.delete('portal');
-    }
-    if (viewName === 'arcade') {
-      if (options?.game && options.game !== 'lobby') {
-        url.searchParams.set('game', options.game);
-      }
-      if (options?.lessonScope !== undefined && String(options.lessonScope) !== 'all') {
-        url.searchParams.set('arcadeLesson', String(options.lessonScope));
-      }
-    } else {
-      url.searchParams.delete('game');
-      url.searchParams.delete('arcadeLesson');
-    }
+      url.searchParams.get('locked') === 'true' ||
+      url.searchParams.get('mode') === 'pupil' ||
+      url.searchParams.get('safeguard') === 'true';
+    const cleanUnitPath = getCleanPathForUnit(param);
+    const isPureDashboard = viewName === 'dashboard' && !param && !isLockedSession;
+    const isPureUnitOverview =
+      viewName === 'lessons' &&
+      Boolean(cleanUnitPath) &&
+      (!options || typeof options.lessonIndex !== 'number') &&
+      !isLockedSession;
 
-    if (viewName === 'reading' || viewName === 'guided-reading') {
-      if (options && options.rawLesson !== undefined) {
-        url.searchParams.set('lesson', options.rawLesson);
-      } else if (options && options.lessonIndex !== undefined) {
-        url.searchParams.set('lesson', options.lessonIndex + 1);
+    if (isPureDashboard) {
+      url.pathname = '/';
+      url.search = '';
+    } else if (isPureUnitOverview) {
+      url.pathname = cleanUnitPath;
+      url.search = '';
+    } else {
+      url.pathname = '/';
+      url.searchParams.set('view', viewName);
+      url.searchParams.delete('stage');
+      if (param) url.searchParams.set('unit', param);
+      else url.searchParams.delete('unit');
+      if (!isLockedSession) {
+        url.searchParams.delete('portal');
       }
-    } else if (viewName === 'lessons' && options && typeof options.lessonIndex === 'number') {
-      const uData = getUnitData(param || previousUnit);
-      const lList = (uData && (uData.lessons || uData.subtopics)) || [];
-      const lObj = lList[options.lessonIndex];
-      const hasZero = Boolean(
-        lList[0] &&
-          (lList[0].id === 'lesson_0' ||
-            (lList[0].title && lList[0].title.includes('KT 1.0'))),
-      );
-      const lVal =
-        (lObj && lObj.slug) ||
-        (hasZero ? (options.lessonIndex === 0 ? '0' : options.lessonIndex) : options.lessonIndex + 1);
-      url.searchParams.set('lesson', lVal);
-    } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
-      url.searchParams.delete('lesson');
+      if (viewName === 'arcade') {
+        if (options?.game && options.game !== 'lobby') {
+          url.searchParams.set('game', options.game);
+        }
+        if (options?.lessonScope !== undefined && String(options.lessonScope) !== 'all') {
+          url.searchParams.set('arcadeLesson', String(options.lessonScope));
+        }
+      } else {
+        url.searchParams.delete('game');
+        url.searchParams.delete('arcadeLesson');
+      }
+
+      if (viewName === 'reading' || viewName === 'guided-reading') {
+        if (options && options.rawLesson !== undefined) {
+          url.searchParams.set('lesson', options.rawLesson);
+        } else if (options && options.lessonIndex !== undefined) {
+          url.searchParams.set('lesson', options.lessonIndex + 1);
+        }
+      } else if (viewName === 'lessons' && options && typeof options.lessonIndex === 'number') {
+        const uData = getUnitData(param || previousUnit);
+        const lList = (uData && (uData.lessons || uData.subtopics)) || [];
+        const lObj = lList[options.lessonIndex];
+        const hasZero = Boolean(
+          lList[0] &&
+            (lList[0].id === 'lesson_0' ||
+              (lList[0].title && lList[0].title.includes('KT 1.0'))),
+        );
+        const lVal =
+          (lObj && lObj.slug) ||
+          (hasZero ? (options.lessonIndex === 0 ? '0' : options.lessonIndex) : options.lessonIndex + 1);
+        url.searchParams.set('lesson', lVal);
+      } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
+        url.searchParams.delete('lesson');
+      }
     }
     try {
       window.history.pushState(

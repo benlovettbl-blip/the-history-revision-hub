@@ -168,6 +168,7 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
         }
 
         const url = new URL(window.location);
+        url.pathname = '/';
         url.searchParams.set('view', 'lessons');
         const hasLessonZero =
           unitDataObj.lessons[0] &&
