@@ -5,6 +5,19 @@
 [functions]
   directory = "netlify/functions"
 
+# 301 Wildcard Redirect from legacy Netlify domain to official custom domain
+[[redirects]]
+  from = "https://the-history-revision-hub.netlify.app/*"
+  to = "https://historyrevisionhub.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://the-history-revision-hub.netlify.app"
+  to = "https://historyrevisionhub.co.uk/"
+  status = 301
+  force = true
+
 [[headers]]
   # Global baseline fallback for HTML/app routes: strict no-cache, anti-indexing
   for = "/*"
