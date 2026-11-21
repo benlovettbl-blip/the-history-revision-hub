@@ -846,9 +846,15 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       <button type="button" id="btn-masthead-qr-share" class="btn hide-on-mobile-qr" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.82rem; padding: 7px 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;">
         <i class="fa-solid fa-qrcode" style="color: #38bdf8;"></i> <span>Mobile QR & Link</span>
       </button>
-      <a href="${bookletUrl}" target="_blank" rel="noopener noreferrer" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.82rem; padding: 7px 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; white-space: nowrap;">
-        <i class="fa-solid ${isBookletPdf ? 'fa-file-pdf' : 'fa-book-open'}" style="color: ${isBookletPdf ? '#f87171' : '#38bdf8'};"></i> <span>${bookletLabel}</span>
-      </a>
+      ${
+        window.isTeacherMode
+          ? `<a href="${bookletUrl}" target="_blank" rel="noopener noreferrer" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.82rem; padding: 7px 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; white-space: nowrap;">
+              <i class="fa-solid ${isBookletPdf ? 'fa-file-pdf' : 'fa-book-open'}" style="color: ${isBookletPdf ? '#f87171' : '#38bdf8'};"></i> <span>${bookletLabel}</span>
+            </a>`
+          : `<button type="button" onclick="window.openUnitPrintPackModal && window.openUnitPrintPackModal('${unitId}', '${bookletLabel}')" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.82rem; padding: 7px 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;">
+              <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Print Pack</span>
+            </button>`
+      }
       <button type="button" id="btn-masthead-marking-answers" class="btn" style="background: #2563eb; color: #ffffff; border: 1px solid #3b82f6; font-weight: 700; font-size: 0.82rem; padding: 7px 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;">
         <i class="fa-solid fa-clipboard-check"></i> <span>Self-Check Answers</span>
       </button>

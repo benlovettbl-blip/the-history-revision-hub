@@ -13,7 +13,7 @@ export const SCHOOLS_SEO_PAGE = {
   seoTitle:
     'For Schools & History Departments | KS2, KS3 & Edexcel GCSE Curriculum Packs | The History Revision Hub',
   metaDescription:
-    'Zero-login UK History curriculum and printable classroom booklets for Schools and History Departments across KS2, KS3, and Pearson Edexcel GCSE (9–1): Master Textbooks, Pupil Workbooks, Retrieval Companions, and Studio Audio.',
+    'Free zero-login pupil History Hub plus per-unit printable Classroom Textbooks, Pupil Workbooks, Grade 8/9 WAGOLL Mark Schemes, and Retrieval Companions (£29 KS2/KS3 • £49 Edexcel GCSE) for UK Schools and History Departments.',
   priority: '0.9',
 };
 

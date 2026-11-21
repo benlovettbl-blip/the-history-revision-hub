@@ -20,6 +20,7 @@ import {
 } from './views.js'; // Trigger HMR
 import { jumpToKeyIndividual } from './key_individuals.js';
 import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_catalog.js';
+import { openUnitPrintPackModal } from './data/print_pack_store.js';
 import {
   getCleanPathForUnit,
   getSeoRouteForUnit,
@@ -1361,6 +1362,11 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       state.selectedUnitId ||
       window.currentUnitId ||
       'cme_new';
+    if (!isStaffModeActive()) {
+      await switchView('lessons', unitTarget);
+      openUnitPrintPackModal(unitTarget, 'Classroom Textbook');
+      return;
+    }
     if (unitTarget === 'ks2_ww2') {
       await loadUnit('ks2_ww2');
       await renderReadingView(options);

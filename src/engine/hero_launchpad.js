@@ -5,21 +5,20 @@ import {
   isStaffModeActive,
   resolveCanonicalPdfUrl,
 } from '../data/unit_resources_catalog.js';
-
-/**
- * Unit Sticky Classroom Bar & On-Demand Resource Drawers
- *
- * Replaces the legacy 8-pill Hero Launchpad, duplicate "Visual Knowledge Architecture" strip,
- * giant Revision Guide promo banner, and orphan bottom Quizzing banner with ONE slim sticky bar:
- *   Left:  [ ▶ Resume Lesson ] + [ KT1 · KT2 · KT3 ] instant jump pills
- *   Right: [ 📄 PDFs & Booklets ▾ ] [ 🖼️ Infographics ▾ ] [ 🎮 Games, Quiz & Timeline ▾ ] [ 📝 Exam Practice ]
- */
+import {
+  guardPrintableAccess,
+  getUnitPackDetails,
+  openUnitPrintPackModal,
+} from '../data/print_pack_store.js';
 
 export const CURRICULAR_PILLARS_CATALOG = UNIT_RESOURCES_CATALOG;
 
 if (typeof window !== 'undefined') {
   window.openCurricularPillar = function (htmlUrl, title, pdfUrl, badge) {
     const resolvedPdf = resolveCanonicalPdfUrl(htmlUrl, pdfUrl);
+    if (!guardPrintableAccess(resolvedPdf || htmlUrl, title)) {
+      return;
+    }
     if (typeof window.openTeacherPrintPreview === 'function') {
       window.openTeacherPrintPreview(htmlUrl, title, resolvedPdf);
       return;
@@ -105,6 +104,14 @@ if (typeof window !== 'undefined') {
 
     if (pagesEl && ed.pages) pagesEl.textContent = ed.pages;
     const safeTitle = String(ed.label || bucket.title || '').replace(/'/g, "\\'");
+
+    if (!isStaffModeActive()) {
+      const packBtn = card.querySelector('.urb-btn-pack-lock');
+      if (packBtn) {
+        packBtn.onclick = () => openUnitPrintPackModal(unitId, ed.label || bucket.label);
+      }
+      return;
+    }
 
     if (readBtn) {
       readBtn.onclick = () => {
@@ -225,6 +232,17 @@ function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, s
       ? `<div style="margin-top: 7px; font-size: 0.68rem; color: #64748b; background: #f8fafc; padding: 4px 7px; border-radius: 4px; border: 1px dashed #cbd5e1;"><i class="fa-solid fa-print" style="margin-right: 4px; color: #475569;"></i>${bucket.printSpec}</div>`
       : '';
 
+  const packInfo = getUnitPackDetails(unitId);
+  const actionsRowHtml = staffActive
+    ? `<button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${htmlUrl}', '${safeTitle}', '${pdfUrl || ''}', '${bucket.label.toUpperCase()}')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+          <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
+        </button>
+        ${pdfActionHtml}
+        ${msActionHtml}`
+    : `<button type="button" class="urb-btn-pack-lock" onclick="window.openUnitPrintPackModal('${unitId}', '${safeTitle}')" style="flex: 1; padding: 8px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+          <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Included in ${packInfo.priceLabel} Unit Pack</span>
+        </button>`;
+
   return `
     <div class="urb-booklet-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 3.5px solid ${accentColor}; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; box-shadow: 0 2px 6px rgba(15,23,42,0.03);">
       <div>
@@ -240,26 +258,23 @@ function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, s
         ${staffPrintNote}
       </div>
       <div style="display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9;">
-        <button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${htmlUrl}', '${safeTitle}', '${pdfUrl || ''}', '${bucket.label.toUpperCase()}')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
-          <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
-        </button>
-        ${pdfActionHtml}
-        ${msActionHtml}
+        ${actionsRowHtml}
       </div>
     </div>
   `;
 }
 
-function renderWorksheetsCard(unitId, worksheets) {
+function renderWorksheetsCard(unitId, worksheets, staffActive = false) {
   if (!Array.isArray(worksheets) || worksheets.length === 0) return '';
   const first = worksheets[0];
   const safeTitle = String(first.label).replace(/'/g, "\\'");
+  const packInfo = getUnitPackDetails(unitId);
   return `
     <div class="urb-booklet-card" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-top: 3.5px solid #0284c7; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px;">
       <div>
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 7px;">
           <span style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 7px; border-radius: 4px; background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd;">A4 WORKSHEETS</span>
-          <span style="font-size: 0.69rem; font-weight: 700; color: #475569; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px 7px; border-radius: 4px;">11 Lessons</span>
+          <span style="font-size: 0.69rem; font-weight: 700; color: #475569; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px 7px; border-radius: 4px;">${worksheets.length} Lessons</span>
         </div>
         <h4 style="margin: 0 0 4px 0; font-size: 0.92rem; font-weight: 800; color: #0f172a;">Single-Lesson Worksheets</h4>
         <p style="margin: 0; font-size: 0.76rem; line-height: 1.42; color: #475569;">Individual 2–3 page A4 companion worksheets with optional craft sheets.</p>
@@ -268,12 +283,18 @@ function renderWorksheetsCard(unitId, worksheets) {
         </select>
       </div>
       <div style="display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9;">
-        <button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${first.htmlUrl}', '${safeTitle}', '${first.pdfUrl}', 'WORKSHEET')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
-          <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
-        </button>
-        <a href="${first.pdfUrl}" download="${first.pdfUrl.split('/').pop()}" target="_blank" class="urb-btn-pdf" style="flex: 1; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
-          <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> <span>PDF ↓</span>
-        </a>
+        ${
+          staffActive
+            ? `<button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${first.htmlUrl}', '${safeTitle}', '${first.pdfUrl}', 'WORKSHEET')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+                <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
+              </button>
+              <a href="${first.pdfUrl}" download="${first.pdfUrl.split('/').pop()}" target="_blank" class="urb-btn-pdf" style="flex: 1; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+                <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> <span>PDF ↓</span>
+              </a>`
+            : `<button type="button" class="urb-btn-pack-lock" onclick="window.openUnitPrintPackModal('${unitId}', '${safeTitle}')" style="flex: 1; padding: 8px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+                <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Included in ${packInfo.priceLabel} Unit Pack</span>
+              </button>`
+        }
       </div>
     </div>
   `;
@@ -321,12 +342,13 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
     : '';
 
   // 3. Build Printable Booklets Panel
+  const unitPack = getUnitPackDetails(unitId);
   const bookletCards = [
     renderBookletCard(unitId, 'textbook', cfg.textbook, '#2563eb', 'background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;', staffActive),
     renderBookletCard(unitId, 'workbook', cfg.workbook, '#d97706', 'background:#fffbeb;color:#b45309;border:1px solid #fde68a;', staffActive),
     renderBookletCard(unitId, 'retrieval', cfg.retrieval, '#7c3aed', 'background:#f5f3ff;color:#6d28d9;border:1px solid #ddd6fe;', staffActive),
     renderBookletCard(unitId, 'revisionGuide', cfg.revisionGuide, '#0d9488', 'background:#f0fdfa;color:#0f766e;border:1px solid #99f6e4;', staffActive),
-    renderWorksheetsCard(unitId, cfg.worksheets),
+    renderWorksheetsCard(unitId, cfg.worksheets, staffActive),
     renderBookletCard(unitId, 'schemeOfWork', cfg.schemeOfWork, '#be185d', 'background:#fdf2f8;color:#9d174d;border:1px solid #fbcfe8;', staffActive),
   ].filter(Boolean);
 
@@ -443,11 +465,19 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
       <div style="max-width: 1160px; margin: 0 auto;">
         <!-- Panel 1: PDFs & Booklets -->
         <div id="unit-drawer-panel-booklets" style="display: none;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
             <span style="font-size: 0.78rem; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;">
-              <i class="fa-solid fa-file-pdf" style="color: #dc2626; margin-right: 6px;"></i>Printable Course Booklets${staffActive ? ' <span style="color:#059669;margin-left:6px;">(Staff Mode: Mark Schemes &amp; Print Notes Visible)</span>' : ''}
+              <i class="fa-solid fa-file-pdf" style="color: #dc2626; margin-right: 6px;"></i>Printable Course Booklets${staffActive ? ' <span style="color:#059669;margin-left:6px;">(Staff Mode: Unlocked &bull; Mark Schemes Visible)</span>' : ` <span style="color:#0284c7;margin-left:6px;">(School Print &amp; Teacher Pack: ${unitPack.priceLabel} one-off)</span>`}
             </span>
-            <button type="button" onclick="window.toggleUnitResourceDrawer('')" style="background: transparent; border: none; color: #64748b; font-size: 0.78rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-xmark"></i> Close</button>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              ${
+                !staffActive
+                  ? `<button type="button" onclick="window.openUnitPrintPackModal('${unitId}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer;"><i class="fa-solid fa-box-archive" style="margin-right: 4px;"></i>Get Complete Unit Pack (${unitPack.priceLabel})</button>
+                     <button type="button" onclick="window.openUnitPrintPackModal('${unitId}')" style="background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; border-radius: 6px; padding: 5px 10px; font-size: 0.74rem; font-weight: 800; cursor: pointer;"><i class="fa-solid fa-key" style="margin-right: 4px;"></i>Staff Unlock</button>`
+                  : ''
+              }
+              <button type="button" onclick="window.toggleUnitResourceDrawer('')" style="background: transparent; border: none; color: #64748b; font-size: 0.78rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 14px;">
             ${bookletCards.join('')}

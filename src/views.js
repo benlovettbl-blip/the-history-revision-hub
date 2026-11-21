@@ -2757,8 +2757,9 @@ export async function renderMockExamsView() {
           const exInfo = catEntry.examInfographic;
           if (!mp && !exInfo) return '';
           const mpPdf = mp && mp.pdfUrl && isVerifiedPdf(mp.pdfUrl) ? mp.pdfUrl : '';
+          const staffActiveForMocks = isStaffModeActive();
           const editionsPills =
-            mp && Array.isArray(mp.editions) && mp.editions.length > 1
+            staffActiveForMocks && mp && Array.isArray(mp.editions) && mp.editions.length > 1
               ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;">` +
                 mp.editions
                   .map((ed) => {
@@ -2788,11 +2789,14 @@ export async function renderMockExamsView() {
               <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                 ${
                   mp
-                    ? `<button type="button" onclick="if(window.openCurricularPillar){window.openCurricularPillar('${mp.htmlUrl}', '${mp.title.replace(/'/g, "\\'")}', '${mpPdf}', 'MASTERY_PACK');}else{window.open('${mp.htmlUrl}','_blank');}" style="background:#000000;color:#ffffff;border:2px solid #000000;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-book-open-reader"></i> Read Mastery Pack</button>`
+                    ? staffActiveForMocks
+                      ? `<button type="button" onclick="if(window.openCurricularPillar){window.openCurricularPillar('${mp.htmlUrl}', '${mp.title.replace(/'/g, "\\'")}', '${mpPdf}', 'MASTERY_PACK');}else{window.open('${mp.htmlUrl}','_blank');}" style="background:#000000;color:#ffffff;border:2px solid #000000;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-book-open-reader"></i> Read Mastery Pack</button>`
+                      : `<button type="button" onclick="window.openUnitPrintPackModal && window.openUnitPrintPackModal('${unitId}', '${mp.title.replace(/'/g, "\\'")}')" style="background:#0284c7;color:#ffffff;border:2px solid #0284c7;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-lock"></i> Get £49 Course Print Pack</button>
+                         <button type="button" onclick="window.openUnitPrintPackModal && window.openUnitPrintPackModal('${unitId}', 'Staff Unlock')" style="background:#ecfdf5;color:#065f46;border:2px solid #059669;padding:9px 12px;border-radius:4px;font-size:0.78rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:5px;"><i class="fa-solid fa-key"></i> Staff Unlock</button>`
                     : ''
                 }
                 ${
-                  mpPdf
+                  staffActiveForMocks && mpPdf
                     ? `<a href="${mpPdf}" target="_blank" download="${mp.downloadName || ''}" style="background:#ffffff;color:#000000;border:2px solid #000000;padding:9px 14px;border-radius:4px;font-size:0.8rem;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-file-pdf" style="color:#dc2626;"></i> PDF (${mp.pages || 'A4'})</a>`
                     : ''
                 }
@@ -2897,8 +2901,12 @@ export async function renderMockExamsView() {
 
         <div style="display: flex; flex-direction: column; gap: 8px;">
           ${
-            hasSeparateBooklets
-              ? `
+            !isStaffModeActive()
+              ? `<button type="button" onclick="window.openUnitPrintPackModal && window.openUnitPrintPackModal('${unitId}', '${String(mock.title || 'Mock Paper').replace(/'/g, "\\'")}')" style="width: 100%; background: #0f172a; color: #ffffff; border: 2px solid #0f172a; padding: 9px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                  <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> Included in £49 Course Print Pack
+                </button>`
+              : hasSeparateBooklets
+                ? `
             <!-- Saddle-Stitch Architecture (Pearson Reprographics) -->
             <div style="font-size: 0.68rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: -2px;">
               Exam Hall Saddle-Stitch Booklets:
@@ -2920,7 +2928,7 @@ export async function renderMockExamsView() {
               </a>
             </div>
           `
-              : `
+                : `
             <!-- Question Paper Actions: Interactive Simulator & Authentic A4 Paper -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
               <a href="${fullPaperUrl}" target="_blank" style="text-align: center; text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Open interactive exam simulator with timer">

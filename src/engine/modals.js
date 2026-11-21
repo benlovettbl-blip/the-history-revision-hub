@@ -9,6 +9,7 @@ import { getAssetUrl } from './assets.js';
 import { WORKBOOK_PAGE_MAP, getWorkbookPageAnchor } from './workbook_page_map.js';
 import { verifyStaffPasskeySync } from './staff_auth.js';
 import { resolveCanonicalPdfUrl, isStaffModeActive } from '../data/unit_resources_catalog.js';
+import { guardPrintableAccess } from '../data/print_pack_store.js';
 
 window.WORKBOOK_PAGE_MAP = WORKBOOK_PAGE_MAP;
 window.getWorkbookPageAnchor = getWorkbookPageAnchor;
@@ -2898,6 +2899,10 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
 
   // Canonical PDF resolution via Single Source of Truth catalog
   pdfUrl = resolveCanonicalPdfUrl(htmlUrl || fileBaseName || '', pdfUrl);
+
+  if (!guardPrintableAccess(pdfUrl || htmlUrl || fileBaseName, title || 'Printable Booklet')) {
+    return;
+  }
 
   // Remove existing modal if any
   const existing = document.getElementById('teacherPrintPreviewModal');

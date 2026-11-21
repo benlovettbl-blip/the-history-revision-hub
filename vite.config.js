@@ -245,13 +245,13 @@ function seoCoursePagesPlugin() {
           <article class="seo-schools-prerender" style="max-width: 960px; margin: 24px auto; padding: 20px;">
             <h1 style="font-size: 1.8rem; margin-bottom: 12px;">${escapeHtml(SCHOOLS_SEO_PAGE.heading)}</h1>
             <p style="line-height: 1.65; margin-bottom: 16px;">${escapeHtml(SCHOOLS_SEO_PAGE.metaDescription)}</p>
-            <h2 style="font-size: 1.2rem; margin-bottom: 8px;">Zero Student Logins &bull; Print-Room Saddle-Stitch Booklets &bull; Studio Audio</h2>
+            <h2 style="font-size: 1.2rem; margin-bottom: 8px;">Free Pupil Online Hub &bull; Per-Unit Printable Packs (£29 KS2/KS3 &bull; £49 GCSE)</h2>
             <ul style="line-height: 1.75; padding-left: 22px; margin-bottom: 20px;">
-              <li><strong>Zero Student Accounts or Personal Data:</strong> Share lesson, audio, and quiz links directly into Google Classroom or Microsoft Teams with zero GDPR Data Processing Agreement delays.</li>
-              <li><strong>Four Classroom Publications Per Course:</strong> Master Classroom Textbooks, Double-Page Pupil Workbooks (with Teacher Mark Schemes &amp; WAGOLLs), Knowledge Retrieval Companions, and Mastery Exam Packs—available with custom school cover branding.</li>
+              <li><strong>Zero Student Accounts or Personal Data:</strong> Share free lesson, audio, and quiz links directly into Google Classroom or Microsoft Teams with zero GDPR Data Processing Agreement delays.</li>
+              <li><strong>One-Off Per-Unit Printable Packs (Zero Subscriptions):</strong> Buy only the courses you teach—Master Classroom Textbooks, Double-Page Pupil Workbooks, Teacher Mark Schemes &amp; Grade 8/9 WAGOLLs, and Knowledge Retrieval Companions.</li>
               <li><strong>19 Complete Courses:</strong> Pearson Edexcel GCSE (Medicine, Early Elizabethan England, Superpower Cold War 1941–91, Conflict in the Middle East, Weimar &amp; Nazi Germany, USA 1954–75), 12 Key Stage 3 National Curriculum units, and KS2 World War II.</li>
             </ul>
-            <p style="margin-bottom: 20px;">Department enquiries &amp; custom cover packs: <a href="mailto:contact@historyrevisionhub.co.uk"><strong>contact@historyrevisionhub.co.uk</strong></a></p>
+            <p style="margin-bottom: 20px;">Unit pack orders &amp; department enquiries: <a href="mailto:contact@historyrevisionhub.co.uk"><strong>contact@historyrevisionhub.co.uk</strong></a></p>
             <nav aria-label="All History Courses" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
               <a href="/" style="font-weight: 700; margin-right: 14px;">&larr; All Courses Home</a>
               ${SEO_UNIT_ROUTES.map((r) => `<a href="/${escapeHtml(r.slug)}/" style="margin-right: 12px;">${escapeHtml(r.heading)}</a>`).join('\n              ')}
@@ -444,7 +444,7 @@ export default defineConfig({
             },
             {
               name: 'shared-runtime',
-              test: /(?:src[\\/]data[\\/]unit_resources_catalog|src[\\/]engine[\\/](?:workbook_page_map|speech|video_utils|store|assets)|src[\\/]data_parser)\.js/,
+              test: /(?:src[\\/]data[\\/](?:unit_resources_catalog|print_pack_store)|src[\\/]engine[\\/](?:workbook_page_map|speech|video_utils|store|assets)|src[\\/]data_parser)\.js/,
               priority: 95,
             },
             {

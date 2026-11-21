@@ -998,6 +998,10 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
   }
 
   const currentSheet = KS2_WORKSHEETS_MAP[targetId] || KS2_WORKSHEETS_MAP.lesson_1;
+  if (typeof window !== 'undefined' && !window.isTeacherMode && typeof window.openUnitPrintPackModal === 'function') {
+    window.openUnitPrintPackModal('ks2_ww2', currentSheet.title || 'KS2 Enquiry Worksheet');
+    return;
+  }
   const fullWorkbookUrl = '/units/ks2_ww2/pupil_workbook.html';
   const fullWorkbookPdf = '/pdfs/ks2_ww2_pupil_workbook.pdf';
 

@@ -186,6 +186,8 @@ export function toggleGlobalStaffMode() {
       }
     } else if (curView === 'mock-exams' && curUnit) {
       switchView('mock-exams', curUnit);
+    } else if (curView === 'schools') {
+      switchView('schools');
     }
   };
 
@@ -230,17 +232,21 @@ export function initTeacherMode() {
       localStorage.getItem('history_hub_teacher_mode') === 'true' ||
       localStorage.getItem('history_chess_teacher_auth') === 'true';
 
-    const passkeyValid =
-      passkey === 'true' ||
-      (passkey && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(passkey));
+    const passkeyValid = Boolean(
+      passkey && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(passkey),
+    );
+
+    if (params.get('preview') === 'public' || params.get('preview') === 'pupil') {
+      sessionStorage.setItem('hh_preview_as_pupil', 'true');
+    } else if (params.get('preview') === 'staff' && isLocal) {
+      sessionStorage.removeItem('hh_preview_as_pupil');
+    }
 
     const isPreviewPupil =
       typeof sessionStorage !== 'undefined' &&
       sessionStorage.getItem('hh_preview_as_pupil') === 'true';
 
-    const isAuthorized =
-      !isPreviewPupil &&
-      (isLocal || hasStoredAuth || params.get('role') === 'teacher' || passkeyValid);
+    const isAuthorized = !isPreviewPupil && (isLocal || hasStoredAuth || passkeyValid);
 
     if (isAuthorized) {
       localStorage.setItem('history_hub_teacher_mode', 'true');

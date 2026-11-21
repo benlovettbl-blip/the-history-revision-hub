@@ -14,6 +14,7 @@ import {
   elizabethGuide,
 } from '../exam_guide_content.js';
 import { renderHeroCurricularLaunchpad } from './hero_launchpad.js';
+import { isStaffModeActive } from '../data/unit_resources_catalog.js';
 
 export function renderHomepage() {
   const unitData = appStore.state.activeUnitData;
@@ -201,7 +202,7 @@ export function renderHomepage() {
         </div>
         <div style="flex: 1; min-width: 290px; position: relative; z-index: 1;">
           <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(13, 148, 136, 0.25); border: 1px solid rgba(45, 212, 191, 0.5); padding: 3px 10px; border-radius: 20px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; color: #2dd4bf;">
-            <i class="fa-solid fa-star"></i> Sole Official GCSE Revision Guide &bull; 14 Pages A4
+            <i class="fa-solid fa-star"></i> Condensed GCSE Revision Guide &bull; 14 Pages A4
           </div>
           <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
             Conflict in the Middle East (1945–1995): Ultra-Condensed Revision Guide
@@ -218,12 +219,18 @@ export function renderHomepage() {
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; position: relative; z-index: 1;">
-          <button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East Condensed Revision Guide', '/pdfs/cme_new_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid #2dd4bf; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
-            <i class="fa-solid fa-book-open-reader"></i> Read Online
-          </button>
-          <a href="/pdfs/cme_new_revision_guide.pdf" target="_blank" download="Conflict_Middle_East_Condensed_Revision_Guide.pdf" style="background: rgba(255,255,255,0.1); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.18)';" onmouseout="this.style.background='rgba(255,255,255,0.1)';">
-            <i class="fa-solid fa-file-pdf" style="color: #f87171;"></i> Download PDF (A4)
-          </a>
+          ${
+            isStaffModeActive()
+              ? `<button type="button" class="btn" onclick="if(window.openCurricularPillar){window.openCurricularPillar('/units/cme_new/revision_guide.html', 'Conflict in the Middle East Condensed Revision Guide', '/pdfs/cme_new_revision_guide.pdf', 'REVISION_GUIDE');}else{window.open('/units/cme_new/revision_guide.html','_blank');}" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid #2dd4bf; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35); transition: all 0.2s;">
+                  <i class="fa-solid fa-book-open-reader"></i> Read Online
+                </button>
+                <a href="/pdfs/cme_new_revision_guide.pdf" target="_blank" download="Conflict_Middle_East_Condensed_Revision_Guide.pdf" style="background: rgba(255,255,255,0.1); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                  <i class="fa-solid fa-file-pdf" style="color: #f87171;"></i> Download PDF (A4)
+                </a>`
+              : `<button type="button" class="btn" onclick="window.openUnitPrintPackModal && window.openUnitPrintPackModal('cme_new', '14-Page Condensed GCSE Revision Guide')" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; padding: 11px 18px; border-radius: 8px; font-weight: 800; font-size: 0.88rem; border: 1px solid #38bdf8; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                  <i class="fa-solid fa-lock"></i> Included in £49 Course Print Pack
+                </button>`
+          }
         </div>
       </div>
     `;

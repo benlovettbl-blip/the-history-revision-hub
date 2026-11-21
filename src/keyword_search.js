@@ -1524,6 +1524,10 @@ export function selectResult(item) {
       window.openInfographicModal(item.infographicId);
       return;
     }
+    if (!isStaffModeActive() && typeof window.openUnitPrintPackModal === 'function') {
+      window.openUnitPrintPackModal(item.unitId, item.term);
+      return;
+    }
     if (item.htmlUrl && typeof window.openCurricularPillar === 'function') {
       window.openCurricularPillar(item.htmlUrl, item.term, item.pdfUrl || '', item.pillarType || 'WORKBOOK');
       return;
