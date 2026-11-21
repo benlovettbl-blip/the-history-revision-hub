@@ -68,7 +68,7 @@ export function renderDashboard() {
   `;
 
   // Key Stage 2 Grouping
-  const ks2Order = ['ks2_romans', 'ks2_ww2'];
+  const ks2Order = ['ks2_romans', 'ks2_anglo_saxons_vikings', 'ks2_ww2'];
   const ks2Units = units
     .filter((u) => ks2Order.includes(u.id) || String(u.id || '').startsWith('ks2_'))
     .sort((a, b) => {
@@ -113,6 +113,7 @@ export function renderDashboard() {
 
   const unitCanonicalTitles = {
     ks2_romans: 'The Romans in Britain (55 BC–AD 410)',
+    ks2_anglo_saxons_vikings: 'Anglo-Saxons & Vikings (AD 410–1066)',
     ks2_ww2: 'World War II & The Home Front (1933–1945)',
     water_and_sanitation: 'Water & Sanitation (1250–Present)',
     medieval_england: 'Medieval England (1066–1485)',
@@ -214,13 +215,22 @@ export function renderDashboard() {
   if (ks2Units.length > 0) {
     const ks2CardMeta = {
       ks2_romans: {
-        phaseBadge: 'Bridge KS2 • Years 3–4 (Dual-Scaffolded Y3–5)',
+        phaseBadge: 'Bridge KS2 • Years 3–4 (Scaffolded Y3–5)',
         badgeBg: '#b45309',
         gradient: 'linear-gradient(135deg, #451a03 0%, #7c2d12 52%, #9a3412 100%)',
         borderCol: 'rgba(253, 230, 138, 0.38)',
         btnBg: 'linear-gradient(135deg, #d97706 0%, #b45309 100%)',
         summary:
           'Explore Iron Age Celtic roundhouses & hillforts, Emperor Claudius\'s AD 43 invasion, Queen Boudicca\'s rebellion, Hadrian\'s Wall & Vindolanda wooden letters, Aquae Sulis baths, and Rome\'s lasting legacy.',
+      },
+      ks2_anglo_saxons_vikings: {
+        phaseBadge: 'Years 4–5 (Dual-Scaffolded Y3–6)',
+        badgeBg: '#065f46',
+        gradient: 'linear-gradient(135deg, #022c22 0%, #064e3b 52%, #0f766e 100%)',
+        borderCol: 'rgba(167, 243, 208, 0.38)',
+        btnBg: 'linear-gradient(135deg, #059669 0%, #047857 100%)',
+        summary:
+          'Explore Angles, Saxons & Jutes at West Stow, the Sutton Hoo ghost ship & helmet, Lindisfarne AD 793 & clinker longships, Alfred the Great & the Danelaw, Jorvik traders, Athelstan, Cnut, and 1066.',
       },
       ks2_ww2: {
         phaseBadge: 'Upper KS2 • Years 5–6',
@@ -246,7 +256,7 @@ export function renderDashboard() {
           <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">${ks2Units.length} Curriculum ${ks2Units.length === 1 ? 'Unit' : 'Units'} &bull; LKS2 &amp; UKS2</span>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 16px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
           ${ks2Units
             .map((ks2Unit) => {
               const cfg = ks2CardMeta[ks2Unit.id] || ks2CardMeta.ks2_ww2;
@@ -1542,6 +1552,12 @@ export async function renderTimeline() {
     return;
   }
 
+  if (unitId === 'ks2_anglo_saxons_vikings') {
+    const { renderKs2SaxonsTimelineSlider } = await import('./ks2_saxons_chronology_slider.js');
+    renderKs2SaxonsTimelineSlider(container);
+    return;
+  }
+
   const events = state.activeUnitData ? state.activeUnitData.timelineEvents : null;
 
   if (!events || events.length === 0) {
@@ -1749,9 +1765,14 @@ export async function renderLessonsView() {
       } else if (rawTitle.length > 25) {
         shortLabel = hasLessonZero && index === 0 ? 'Intro Lesson' : `Lesson ${hasLessonZero ? index : index + 1}`;
       }
-      let unitTitle = data.title
-        ? data.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
-        : 'Unit';
+      let unitTitle =
+        data.shortTitle ||
+        (data.title
+          ? data.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
+          : 'Unit');
+      if (unitId === 'ks2_romans') unitTitle = 'The Romans in Britain';
+      if (unitId === 'ks2_anglo_saxons_vikings') unitTitle = 'Anglo-Saxons & Vikings';
+      if (unitId === 'ks2_ww2') unitTitle = 'Britain at War (WWII)';
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
         {

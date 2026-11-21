@@ -1530,5 +1530,78 @@ export const SCHEMES_OF_WORK_DATA = {
         "vocabulary": ["Hoard", "Legacy", "Castra", "Latin", "Roman Numerals", "Calendar"]
       }
     ]
+  },
+  "ks2_anglo_saxons_vikings": {
+    "unitId": "ks2_anglo_saxons_vikings",
+    "yearGroup": "Key Stage 2",
+    "keyStage": "KS2",
+    "title": "Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)",
+    "subtitle": "North Sea Settlement, Sutton Hoo & Monasteries, Lindisfarne AD 793 & Longships, Alfred the Great & The Danelaw, Viking Jorvik, and Athelstan, Cnut & 1066",
+    "overarchingEnquiry": "How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?",
+    "textbookPdf": "/pdfs/ks2_anglo_saxons_vikings_textbook.pdf",
+    "sowPdf": "/pdfs/ks2_anglo_saxons_vikings_scheme_of_work.pdf",
+    "workbookPdf": "/pdfs/ks2_anglo_saxons_vikings_pupil_workbook.pdf",
+    "enquiries": [
+      {
+        "num": 1,
+        "title": "After the Romans Left — Angles, Saxons & Jutes (c. AD 410–600)",
+        "enquiryQuestion": "Who were the Angles, Saxons, and Jutes, and why did they cross the North Sea to settle in Britain after AD 410?",
+        "disciplinaryFocus": "Cause & Consequence / Push & Pull Migration",
+        "sources": "Nydam Oak Boat; West Stow Timber Hall & Weaving House; Bede Book I.15; Saucer Brooch & Urn",
+        "keyFigure": "Anglo-Saxon Settlers & Cyning Rulers",
+        "figureRole": "Builders of the Seven Kingdoms (Heptarchy)",
+        "vocabulary": ["Angles, Saxons & Jutes", "Push & Pull", "Timber Hall", "Heptarchy", "Ceorl", "Pagan"]
+      },
+      {
+        "num": 2,
+        "title": "Ship Burials & Monasteries — Sutton Hoo & Christian Monks (c. AD 597–750)",
+        "enquiryQuestion": "What does the Sutton Hoo ship burial reveal about Anglo-Saxon kings, and how did Christianity change Britain?",
+        "disciplinaryFocus": "Evidential Understanding & Archaeological Inference",
+        "sources": "Sutton Hoo Mound 1, Helmet & Garnet Clasps; St Martin's Canterbury; Lindisfarne Gospels; Jarrow",
+        "keyFigure": "King Raedwald, Edith Pretty, Basil Brown & Venerable Bede",
+        "figureRole": "East Anglian Ruler, 1939 Excavators & Northumbrian Historian",
+        "vocabulary": ["Ship Burial", "Garnet", "Missionary", "Monastery", "Vellum", "Illuminated"]
+      },
+      {
+        "num": 3,
+        "title": "Fury of the Northmen — Lindisfarne & The Great Heathen Army (AD 793–878)",
+        "enquiryQuestion": "Why did Viking raiders cross the sea from Scandinavia in AD 793, and how did the Great Heathen Army nearly conquer all England?",
+        "disciplinaryFocus": "Cause, Consequence & Maritime Technology",
+        "sources": "Anglo-Saxon Chronicle AD 793; Gokstad Longship; Lindisfarne Raider Stone; Cuerdale Silver Hoard",
+        "keyFigure": "Monks of Lindisfarne, Ivar the Boneless & Halfdan",
+        "figureRole": "Scholars of Holy Island & Commanders of the AD 865 Great Heathen Army",
+        "vocabulary": ["Viking", "Clinker-Built", "Draught", "Monastery", "Great Heathen Army", "Hoard"]
+      },
+      {
+        "num": 4,
+        "title": "Alfred the Great, Burhs & the Danelaw — Saving Wessex (AD 871–899)",
+        "enquiryQuestion": "How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?",
+        "disciplinaryFocus": "Historical Significance & Leadership",
+        "sources": "Athelney Marshes; Wareham Burh Ramparts; The Alfred Jewel; Anglo-Saxon Chronicle Manuscript",
+        "keyFigure": "King Alfred the Great & King Guthrum",
+        "figureRole": "King of Wessex (AD 871–899) & Baptised Ruler of the Danelaw",
+        "vocabulary": ["Fyrd", "Burh", "Treaty", "Danelaw", "Chronicle", "Aestel"]
+      },
+      {
+        "num": 5,
+        "title": "Life in Jorvik & the Danelaw — Were the Vikings Only Fierce Raiders? (c. AD 876–1000)",
+        "enquiryQuestion": "What does archaeology from Jorvik (York) reveal about everyday Viking settlers, traders, and craftworkers?",
+        "disciplinaryFocus": "Source Provenance & Challenging Stereotypes",
+        "sources": "Coppergate Street & Helmet; Carved Antler Comb; Islamic Silver Dirhams; Tynwald / Gosforth Cross",
+        "keyFigure": "Craftworkers, Merchants & Law-Speakers of Jorvik",
+        "figureRole": "Anglo-Scandinavian Families of the Danelaw",
+        "vocabulary": ["Jorvik", "Coppergate", "Dirham", "Thing", "Karl & Thrall", "Old Norse"]
+      },
+      {
+        "num": 6,
+        "title": "Aethelflaed, Athelstan, Cnut & 1066 — Struggle for England (AD 900–1066)",
+        "enquiryQuestion": "How did Anglo-Saxon and Viking rulers forge one united Kingdom of England — and why did it all change in 1066?",
+        "disciplinaryFocus": "Unification, Change & Turning Points",
+        "sources": "Aethelflaed Statue; Portrait of King Athelstan (c. AD 934); Cnut Liber Vitae; Bayeux Tapestry & Hastings",
+        "keyFigure": "Aethelflaed, King Athelstan, King Cnut & Harold Godwinson",
+        "figureRole": "Makers of United England & Defenders of 1066",
+        "vocabulary": ["Unification", "Danegeld", "North Sea Empire", "Witan", "Housecarl", "Shield Wall"]
+      }
+    ]
   }
 };

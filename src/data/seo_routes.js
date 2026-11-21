@@ -279,6 +279,19 @@ export const SEO_UNIT_ROUTES = [
     priority: '0.85',
   },
   {
+    unitId: 'ks2_anglo_saxons_vikings',
+    slug: 'ks2-anglo-saxons-and-vikings',
+    aliases: ['anglo-saxons-vikings-ks2', 'primary-anglo-saxons-and-vikings'],
+    keyStage: 'Key Stage 2 (Years 4–5 / Dual-Scaffolded Y3–6)',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)',
+    seoTitle:
+      'KS2 Anglo-Saxons & Vikings (AD 410–1066) | Sutton Hoo, Lindisfarne, Alfred the Great & 1066 | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Anglo-Saxons and Vikings (AD 410–1066): West Stow, Sutton Hoo, Lindisfarne AD 793, Alfred the Great, Jorvik, Athelstan, Cnut, and 1066.',
+    priority: '0.85',
+  },
+  {
     unitId: 'ks2_ww2',
     slug: 'ks2-world-war-2',
     aliases: ['primary-ww2-home-front'],

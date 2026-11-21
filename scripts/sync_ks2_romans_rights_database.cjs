@@ -22,6 +22,15 @@ const unitData = JSON.parse(fs.readFileSync(unitPath, 'utf8'));
 
 const VERIFIED_COMMERCIAL_ASSETS = {
   'banner_unit_hero.jpg': {
+    date: '2008-06-07 (Re-enactment of 1st-Century Roman Legionaries)',
+    creator: 'MatthiasKabel (cropped by Beyond My Ken)',
+    repository: 'Wikimedia Commons',
+    accession_id: 'Commons: Pilensalve_crop.jpg',
+    rights_status: 'CC BY-SA 3.0 (Commercial Use Permitted with Attribution)',
+    commercial_use_permitted: true,
+    source_url: 'https://commons.wikimedia.org/wiki/File:Pilensalve_crop.jpg',
+  },
+  'milecastle_39_hadrians_wall.jpg': {
     date: 'Begun AD 122 (Photograph 2006)',
     creator: 'Adam Cuerden',
     repository: 'Wikimedia Commons',

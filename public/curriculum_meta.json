@@ -16,6 +16,17 @@
           "careers": "Field Archaeologist, Museum Curator, Classical Historian, Heritage Conservator, Cartographer"
         },
         {
+          "uid": "ks2_anglo_saxons_vikings",
+          "terms": ["Autumn 2", "Spring 2"],
+          "shortTitle": "Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)",
+          "summary": "A 6-enquiry primary unit (Years 4–5 Dual-Scaffolded Y3–6) picking up directly after AD 410: Angles, Saxons, and Jutes settling in timber villages like West Stow, the Sutton Hoo ghost ship burial and Christian conversion via Canterbury and Lindisfarne, Viking longships striking Lindisfarne in AD 793 and the Great Heathen Army of AD 865, King Alfred the Great's 33 walled burhs and the Danelaw, everyday craftworkers and Baghdad silver traders in Viking Jorvik, and Aethelflaed, King Athelstan, King Cnut, and the twin 1066 battles of Stamford Bridge and Hastings.",
+          "vocab": "Angles, Saxons & Jutes, Heptarchy, Ship Burial, Vellum, Monastery, Clinker-Built, Draught, Great Heathen Army, Fyrd, Burh, Danelaw, Jorvik, Thing, Danegeld, Witan, Housecarl",
+          "skills": ["Chronological Understanding (AD 410–1066)", "Archaeological Inference (Sutton Hoo & Jorvik)", "Source Provenance & Bias", "Cause, Consequence & Unification"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation & Scholar), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?'",
+          "smsc": "<strong>Spiritual:</strong> Exploring pagan ship burials alongside Christian conversion at Canterbury, Iona, and Lindisfarne. <strong>Moral:</strong> Evaluating warfare, treaty-keeping, Danegeld, and leadership under Alfred, Aethelflaed, and Cnut. <strong>Social:</strong> Investigating outdoor Thing law-assemblies, fortified burhs, and women's legal rights in Saxon and Viking society. <strong>Cultural:</strong> Uncovering Old English and Old Norse words, weekday names, and global trade from Jorvik to Baghdad.",
+          "careers": "Archaeologist, Manuscript Conservator, Museum Curator, Medieval Historian, Linguist"
+        },
+        {
           "uid": "ks2_ww2",
           "terms": ["Autumn 1", "Autumn 2"],
           "shortTitle": "World War II & The Home Front (1933–1945)",

@@ -116,7 +116,7 @@ export const KS2_ROMANS_MILESTONES = [
     title: "Hadrian's Wall: 73 Miles of Stone & Troops From Three Continents",
     category: 'frontier',
     categoryLabel: 'Resistance & Frontier',
-    image: '/units/ks2_romans/assets/banner_unit_hero.jpg',
+    image: '/units/ks2_romans/assets/milecastle_39_hadrians_wall.jpg',
     imageCaption: "Milecastle 39 ('Castle Nick') and Hadrian's Wall climbing the steep crags near Steel Rigg in Northumberland.",
     provenance: 'Adam Cuerden / Wikimedia Commons (Public Domain)',
     refTextbook: 'p. 7 • Enquiry 4',

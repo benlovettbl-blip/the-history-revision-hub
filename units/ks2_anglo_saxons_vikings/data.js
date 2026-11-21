@@ -1,0 +1,5543 @@
+window.UNIT_DATA = {
+  "id": "ks2_anglo_saxons_vikings",
+  "title": "KS2: Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)",
+  "shortTitle": "Anglo-Saxons & Vikings",
+  "yearGroup": "Key Stage 2 (Years 4–5 / Dual-Scaffolded Y3–6)",
+  "year_group": "Key Stage 2",
+  "phase": "Bridge / Upper KS2 (Years 4–5, Dual-Scaffolded Y3–6)",
+  "keyStage": "KS2",
+  "key_stage": "KS2",
+  "category": "Key Stage 2 Primary History",
+  "edition": "2026 Commercial-Cleared Primary Edition",
+  "is_ks2": true,
+  "is_ks3": false,
+  "isGCSE": false,
+  "period": "AD 410 – 1066",
+  "homepage_background": "/units/ks2_anglo_saxons_vikings/assets/banner_unit_hero.jpg",
+  "cover_image": "/units/ks2_anglo_saxons_vikings/assets/banner_unit_hero.jpg",
+  "cover_image_position": "center 42%",
+  "cover_caption": "Full-scale clinker-built Viking longship Draken Harald Hårfagre sailing under a blazing crimson woollen square sail with carved dragon prow (CC BY-SA 4.0, Odd Roar Aalborg).",
+  "enquiry": "How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?",
+  "enquiry_question": "How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?",
+  "workbooks": [
+    {
+      "title": "12-Page Classroom Textbook",
+      "url": "/units/ks2_anglo_saxons_vikings/textbook.html",
+      "pdf": "/pdfs/ks2_anglo_saxons_vikings_textbook.pdf",
+      "type": "textbook"
+    },
+    {
+      "title": "16-Page Master Pupil Workbook",
+      "url": "/units/ks2_anglo_saxons_vikings/pupil_workbook.html",
+      "pdf": "/pdfs/ks2_anglo_saxons_vikings_pupil_workbook.pdf",
+      "type": "workbook"
+    },
+    {
+      "title": "4-Page Retrieval Companion (24 Questions)",
+      "url": "/units/ks2_anglo_saxons_vikings/quiz_pack.html",
+      "pdf": "/pdfs/ks2_anglo_saxons_vikings_retrieval_companion.pdf",
+      "type": "retrieval"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "skill": "Cause & Consequence / Migration & Settlement",
+      "title": "Enquiry 1: After the Romans Left — Why Did Angles, Saxons & Jutes Settle in Britain? (c. AD 410–600)",
+      "subtitle": "North Sea Boats, Timber Mead Halls, Seven Kingdoms & Everyday Old English Clues",
+      "enquiryQuestion": "Who were the Angles, Saxons, and Jutes, and why did they cross the North Sea to settle in Britain after AD 410?",
+      "enquiry_question": "Who were the Angles, Saxons, and Jutes, and why did they cross the North Sea to settle in Britain after AD 410?",
+      "prologue": "After the last Roman legions marched away in AD 410, long wooden rowing boats sliced through the grey North Sea mist carrying families, seeds, and iron tools. Discover why the Angles, Saxons, and Jutes crossed the sea — and how their timber villages gave England its name and our days of the week!",
+      "blurb": "After the last Roman legions marched away in AD 410, long wooden rowing boats sliced through the grey North Sea mist carrying families, seeds, and iron tools. Discover why the Angles, Saxons, and Jutes crossed the sea — and how their timber villages gave England its name and our days of the week!",
+      "hero_image": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+      "card_image": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+      "banner_position": "center 58%",
+      "card_position": "center 58%",
+      "teacher_notes": {
+        "primer": "This opening enquiry bridges directly from AD 410 in KS2 Romans to the post-Roman migration of Angles, Saxons, and Jutes across the North Sea (c. AD 410–600). Pupils distinguish push reasons (flooding coastal marshes in Jutland, Angeln, and Saxony) from pull reasons (fertile British farmland after Roman legions withdrew), step inside reconstructed timber halls and wattle-and-daub weaving workshops at West Stow, and trace the rise of the Heptarchy alongside surviving Old English place-names (-ham, -ton, -ford) and pagan weekday names (Tiw, Woden, Thunor, Frige).",
+        "objectives": [
+          {
+            "objective": "Explain the push and pull reasons why Angles, Saxons, and Jutes crossed the North Sea after AD 410.",
+            "primer": "Contrast flooded coastal marshes in Jutland, Angeln, and Saxony with fertile farmland in post-Roman Britain.",
+            "question": "Were Anglo-Saxon families pushed out of flooded homelands, or pulled by Britain’s rich farmland?"
+          },
+          {
+            "objective": "Describe village craftwork, social roles (cyning and ceorls), and feasting inside a timber mead hall.",
+            "primer": "Explore reconstructed West Stow weaving houses, iron smithing, saucer brooches, and glass claw beakers.",
+            "question": "Why did Anglo-Saxon settlers build rectangular timber halls near streams rather than living in ruined stone bathhouses?"
+          },
+          {
+            "objective": "Identify the seven kingdoms of the Heptarchy and spot Old English place-names and weekday gods today.",
+            "primer": "Map Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex alongside -ham/-ton/-ford and Tiw–Frige.",
+            "question": "How do modern British town names and four days of our week prove the lasting impact of Anglo-Saxon settlers?"
+          }
+        ],
+        "source_context": {
+          "Source A": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+          "Source B": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+          "Source C": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+          "Source D": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?"
+        },
+        "delivery_plan": {
+          "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
+          "lesson_1": {
+            "title": "Session 1: Crossing the North Sea & Stepping Inside West Stow Village",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced-Retrieval Bridge Starter",
+                "instruction": "Complete the 5-question Do Now bridging from KS2 Romans (AD 410, Emperor Honorius, -chester towns, BC/AD chronology, and buried hoards)."
+              },
+              {
+                "time": "08–25m",
+                "label": "Shared Storytelling (Acts 1 & 2)",
+                "instruction": "Read Act 1 (push and pull migration across the North Sea) and Act 2 (ceorls, wattle-and-daub workshops at West Stow, and the cyning’s timber mead hall)."
+              },
+              {
+                "time": "25–42m",
+                "label": "Archaeological Detective Work (Sources A & B)",
+                "instruction": "Compare Source A (West Stow weaving house & Bede’s AD 731 account) with Source B (gilt-bronze saucer brooch) in pairs."
+              },
+              {
+                "time": "42–50m",
+                "label": "Class Hinge Check",
+                "instruction": "Discuss the Hinge Question: \"Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Session 2: Seven Kingdoms, Place-Name Clues & Historian Writing",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Session 1 Recall Warm-Up",
+                "instruction": "Quick whiteboard check on push vs pull reasons, Nydam rowing boats, ceorls, and the cyning’s mead hall."
+              },
+              {
+                "time": "08–22m",
+                "label": "Act 3 Reading & Sources C–D",
+                "instruction": "Read Act 3 (the Heptarchy, Old English -ham/-ton/-ford place-names, and pagan weekday gods) and inspect Source C (stamped urn) and Source D (glass claw beaker)."
+              },
+              {
+                "time": "22–42m",
+                "label": "Dual-Scaffolded Historian Tasks",
+                "instruction": "Complete Tasks 1–4 using Foundation sentence starters and word banks, stretching Year 5+ pupils with Scholar Challenge prompts."
+              },
+              {
+                "time": "42–50m",
+                "label": "Tap-Tile Summary & Plenary Quiz",
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz together on the board."
+              }
+            ]
+          }
+        }
+      },
+      "do_now": {
+        "type": "questions",
+        "is_baseline": true,
+        "items": [
+          {
+            "question": "In what pivotal year did Emperor Honorius write warning British cities that they must defend themselves?",
+            "answer": "AD 410",
+            "explanation": "In AD 410, Visigoth armies threatened Italy itself, so Honorius could send no more legions to guard Britain."
+          },
+          {
+            "question": "Which Western Emperor sent that famous AD 410 message telling British towns to look to their own safety?",
+            "answer": "Emperor Honorius",
+            "explanation": "Emperor Honorius recalled frontier troops to protect Italy, ending nearly four centuries of imperial military rule."
+          },
+          {
+            "question": "What does a modern British city name ending in \"-chester\" or \"-caster\" (such as Manchester or Lancaster) reveal?",
+            "answer": "It grew on the site of an ancient army fort (Latin: castra)",
+            "explanation": "The Latin word castra meant a walled military camp or fort, preserved inside \"-chester\" and \"-caster\" town names."
+          },
+          {
+            "question": "On a history timeline, which date happened earlier: 55 BC or AD 410?",
+            "answer": "55 BC",
+            "explanation": "All BC (\"Before Christ\") years happened before AD (\"Anno Domini\") years began, so 55 BC came over four centuries earlier."
+          },
+          {
+            "question": "Why did wealthy villa families in Suffolk bury chests of silver like the Hoxne Hoard underground around AD 407–410?",
+            "answer": "To hide their silver coins and tableware safely from coastal raiders once army protection ended",
+            "explanation": "Because the owners never returned to dig up the Hoxne Hoard, archaeologists know how uncertain the early 400s became."
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "term": "Migration",
+          "definition": "Moving across land or sea from one country to make a permanent new home in another place.",
+          "syllables": "Mi-gra-tion",
+          "phonetic": "my-GRAY-shun",
+          "tier": "2"
+        },
+        {
+          "term": "Cyning",
+          "definition": "The Old English word for a warrior king who protected his people and rewarded loyal fighters in his mead hall.",
+          "syllables": "Cy-ning",
+          "phonetic": "KOO-ning",
+          "tier": "3"
+        },
+        {
+          "term": "Ceorl",
+          "definition": "An ordinary free Anglo-Saxon farmer who ploughed fields, tended livestock, and owed service to his lord.",
+          "syllables": "Ceorl",
+          "phonetic": "CHURL",
+          "tier": "3"
+        },
+        {
+          "term": "Mead Hall",
+          "definition": "A grand rectangular timber building with a central hearth fire where an Anglo-Saxon ruler feasted and held council.",
+          "syllables": "Mead Hall",
+          "phonetic": "MEED hawl",
+          "tier": "3"
+        },
+        {
+          "term": "Heptarchy",
+          "definition": "Historians’ name for the seven main Anglo-Saxon kingdoms: Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex.",
+          "syllables": "Hep-tar-chy",
+          "phonetic": "HEP-tar-kee",
+          "tier": "3"
+        }
+      ],
+      "vocab_cloze_text": "After AD 410, flooded North Sea coasts and fertile British fields sparked a cross-sea [Migration] of Angles, Saxons, and Jutes. Each hardworking free farmer, or [Ceorl], grew crops near streams while a warrior [Cyning] shared honey drink and gold rings inside a smoky timber [Mead Hall]. Over time, small tribes merged into seven rival kingdoms called the [Heptarchy].",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "title": "c. AD 410–500: Crossing the North Sea — Push & Pull Reasons",
+          "text": "<span class=\"para-ref\">[1.1]</span> After **Emperor Honorius** warned British towns in **AD 410** to guard themselves, the last Roman legions marched away forever. Across the stormy **North Sea**, seafaring **Angles**, **Saxons**, and **Jutes** lived along low-lying coasts in **Jutland**, **Angeln**, and **Saxony** (modern Denmark and northern Germany). Rising sea tides flooded their soggy coastal marshes, ruining vital grain harvests (**push reasons**).<br><br><span class=\"para-ref\">[1.2]</span> Meanwhile, island Britain offered mild weather, rich **fertile farmland**, and unguarded green river valleys (**pull reasons**). Whole families packed iron tools, seeds, and livestock into clinker-built **wooden rowing boats** like the **Nydam oak ship**, steering across the waves and up eastern rivers to clear productive new farms.",
+          "content": "<span class=\"para-ref\">[1.1]</span> After **Emperor Honorius** warned British towns in **AD 410** to guard themselves, the last Roman legions marched away forever. Across the stormy **North Sea**, seafaring **Angles**, **Saxons**, and **Jutes** lived along low-lying coasts in **Jutland**, **Angeln**, and **Saxony** (modern Denmark and northern Germany). Rising sea tides flooded their soggy coastal marshes, ruining vital grain harvests (**push reasons**).<br><br><span class=\"para-ref\">[1.2]</span> Meanwhile, island Britain offered mild weather, rich **fertile farmland**, and unguarded green river valleys (**pull reasons**). Whole families packed iron tools, seeds, and livestock into clinker-built **wooden rowing boats** like the **Nydam oak ship**, steering across the waves and up eastern rivers to clear productive new farms.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/nydam_oak_boat_migration.jpg",
+          "image_alt": "Preserved 4th-century clinker-built Nydam oak rowing boat used along the North Sea coastlands",
+          "caption": "The 23-metre clinker-built Nydam oak boat preserved in a Jutland bog — the exact style of long open rowing vessel used by early North Sea migrants.",
+          "image_caption": "The 23-metre clinker-built Nydam oak boat preserved in a Jutland bog — the exact style of long open rowing vessel used by early North Sea migrants.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l1_src_a",
+              "letter": "A",
+              "source_letter": "A",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/west_stow_weaving_house.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/west_stow_weaving_house.jpg",
+              "title": "Source A: Reconstructed Anglo-Saxon Village House at West Stow & Bede's Account of the Settlers (AD 731)",
+              "caption": "Reconstructed 5th–6th century Anglo-Saxon timber weaving house with a steep thatched roof at West Stow in Suffolk, paired with Venerable Bede's account of the three settling peoples.",
+              "author": "West Stow Experimental Archaeologists & Venerable Bede (tr. J. A. Giles, 1847)",
+              "date": "c. AD 450–600 site / AD 731 text",
+              "context": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+              "source_context": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+              "hinge_question": "Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+              "question_badge": "WEST STOW & BEDE (AD 731)",
+              "question": "Compare the reconstructed house at West Stow with Bede's words in Source A. Which three peoples crossed the sea, and how did they build their new village homes?",
+              "model_answer": "Bede records that the Angles, Saxons, and Jutes crossed from northern Germany and Jutland to settle Kent, Wessex, Mercia, East Anglia, and Northumbria. Source A's West Stow house shows they built practical rectangular timber and wattle-and-daub workshops with steep thatched roofs near rivers and farmland.",
+              "provenance_clues": {
+                "author": "Experimental archaeologists reconstructing 5th-century post-holes at West Stow, paired with Northumbrian monk Bede writing in AD 731.",
+                "audience": "Originally monastic readers learning English church history; today, historians and pupils investigating early Anglo-Saxon settlement.",
+                "motive": "Bede sought to explain the origins of the English kingdoms, while West Stow tests how timber and thatch workshops functioned in all weathers.",
+                "hinge_question": "Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+                "source_context": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+                "provenance_breakdown": {
+                  "author": "Experimental archaeologists reconstructing 5th-century post-holes at West Stow, paired with Northumbrian monk Bede writing in AD 731.",
+                  "audience": "Originally monastic readers learning English church history; today, historians and pupils investigating early Anglo-Saxon settlement.",
+                  "motive": "Bede sought to explain the origins of the English kingdoms, while West Stow tests how timber and thatch workshops functioned in all weathers."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "WEST STOW & BEDE (AD 731)",
+                "model_answer": "Bede records that the Angles, Saxons, and Jutes crossed from northern Germany and Jutland to settle Kent, Wessex, Mercia, East Anglia, and Northumbria. Source A's West Stow house shows they built practical rectangular timber and wattle-and-daub workshops with steep thatched roofs near rivers and farmland.",
+                "provenance_clues": {
+                  "author": "Experimental archaeologists reconstructing 5th-century post-holes at West Stow, paired with Northumbrian monk Bede writing in AD 731.",
+                  "audience": "Originally monastic readers learning English church history; today, historians and pupils investigating early Anglo-Saxon settlement.",
+                  "motive": "Bede sought to explain the origins of the English kingdoms, while West Stow tests how timber and thatch workshops functioned in all weathers."
+                }
+              },
+              "text": "Venerable Bede, Ecclesiastical History of the English Nation, Book I, Chapter 15 (AD 731): \"Those who came over were of the three most powerful nations of Germany — Saxons, Angles, and Jutes. From the Jutes are descended the people of Kent, and of the Isle of Wight [...] From the Saxons, that is, the country which is now called Old Saxony, came the East Saxons, the South Saxons, and the West Saxons. From the Angles, that is, the country which is called Anglia [...] are descended the East Angles, the Midland Angles, Mercians, all the race of the Northumbrians [...] and the other nations of the English.\"",
+              "provenance": "Reconstructed Anglo-Saxon sunken-featured weaving house at West Stow, Suffolk, paired with Venerable Bede, Ecclesiastical History of the English Nation, Book I, Chapter 15 (AD 731), translated by J. A. Giles (London: Henry G. Bohn, 1847 — Public Domain)."
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "5th–6th Century AD: Timber Halls, Craftwork & Village Life",
+          "text": "<span class=\"para-ref\">[1.3]</span> Early **Anglo-Saxon settlers** rarely moved into crumbling Roman stone towns, calling those roofless walls the mysterious *\"work of giants\"*. Instead, free peasant farmers called **ceorls** built cosy **villages** beside clear streams, like **West Stow** in Suffolk. Craftspeople dug sunken-floored **wattle-and-daub workshops** topped with steep **thatched roofs**, weaving warm woollen cloaks on upright **looms** and forging sharp **iron tools**.<br><br><span class=\"para-ref\">[1.4]</span> At the heart of each settlement stood a grand rectangular **timber mead hall**. Around a roaring central hearth fire, a warrior ruler or **cyning** (*king*) shared roasted meat, sweet honey **mead**, and gleaming **gold rings** with loyal fighters while poets sang heroic tales.",
+          "content": "<span class=\"para-ref\">[1.3]</span> Early **Anglo-Saxon settlers** rarely moved into crumbling Roman stone towns, calling those roofless walls the mysterious *\"work of giants\"*. Instead, free peasant farmers called **ceorls** built cosy **villages** beside clear streams, like **West Stow** in Suffolk. Craftspeople dug sunken-floored **wattle-and-daub workshops** topped with steep **thatched roofs**, weaving warm woollen cloaks on upright **looms** and forging sharp **iron tools**.<br><br><span class=\"para-ref\">[1.4]</span> At the heart of each settlement stood a grand rectangular **timber mead hall**. Around a roaring central hearth fire, a warrior ruler or **cyning** (*king*) shared roasted meat, sweet honey **mead**, and gleaming **gold rings** with loyal fighters while poets sang heroic tales.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+          "image_alt": "Reconstructed rectangular Anglo-Saxon timber hall with steep thatched roof at West Stow in Suffolk",
+          "caption": "Reconstructed early Anglo-Saxon timber hall at West Stow in Suffolk, built directly over 5th-century post-hole footprints.",
+          "image_caption": "Reconstructed early Anglo-Saxon timber hall at West Stow in Suffolk, built directly over 5th-century post-hole footprints.",
+          "isReversed": true,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l1_src_b",
+              "letter": "B",
+              "source_letter": "B",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_saucer_brooch.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_saucer_brooch.jpg",
+              "title": "Source B: Gilt-Bronze Anglo-Saxon Saucer Brooch (6th Century AD)",
+              "caption": "Circular gilt-bronze Anglo-Saxon saucer brooch cast with intricate geometric spiral patterns, worn in pairs at the shoulders to fasten a woollen dress.",
+              "author": "Early Anglo-Saxon Master Metalworker",
+              "date": "6th Century AD",
+              "context": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+              "source_context": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+              "hinge_question": "How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+              "question_badge": "GILT-BRONZE DRESS BROOCH",
+              "question": "Look closely at the patterns and shiny gold coating on Source B. What two jobs did this brooch do for an Anglo-Saxon woman?",
+              "model_answer": "Source B had a practical job fastening heavy woven woollen garments neatly at the shoulder without buttons, and a status job catching the firelight with intricate cast spirals and gilded bronze to show her family’s skill and wealth.",
+              "provenance_clues": {
+                "author": "Crafted by a skilled 6th-century Anglo-Saxon bronze-caster and gilder.",
+                "audience": "Neighbours, kin, and guests gathering inside a village or timber mead hall.",
+                "motive": "To fasten warm woollen clothing securely while displaying regional identity and family status.",
+                "hinge_question": "How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?"
+              },
+              "teacher_notes": {
+                "hinge_question": "How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+                "source_context": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+                "provenance_breakdown": {
+                  "author": "Crafted by a skilled 6th-century Anglo-Saxon bronze-caster and gilder.",
+                  "audience": "Neighbours, kin, and guests gathering inside a village or timber mead hall.",
+                  "motive": "To fasten warm woollen clothing securely while displaying regional identity and family status."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "GILT-BRONZE DRESS BROOCH",
+                "model_answer": "Source B had a practical job fastening heavy woven woollen garments neatly at the shoulder without buttons, and a status job catching the firelight with intricate cast spirals and gilded bronze to show her family’s skill and wealth.",
+                "provenance_clues": {
+                  "author": "Crafted by a skilled 6th-century Anglo-Saxon bronze-caster and gilder.",
+                  "audience": "Neighbours, kin, and guests gathering inside a village or timber mead hall.",
+                  "motive": "To fasten warm woollen clothing securely while displaying regional identity and family status."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "title": "c. AD 550–650: Seven Kingdoms & Anglo-Saxon Words Today",
+          "text": "<span class=\"para-ref\">[1.5]</span> Gradually, rival warbands joined together into **seven major kingdoms** known as the **Heptarchy**: **Northumbria**, **Mercia**, **East Anglia**, **Essex**, **Kent**, **Sussex**, and **Wessex**. From the **Angles** came a lasting new name for this southern land — *Englaland*, meaning **\"land of the Angles\"** (*England*), where villagers spoke **Old English**.<br><br><span class=\"para-ref\">[1.6]</span> Look closely at any British map today and Anglo-Saxon clues leap right out! Place-name endings like **-ham** (*Birmingham*, village), **-ton** (*Brighton*, fenced farm), and **-ford** (*Oxford*, river crossing) come straight from Old English. Before becoming Christians, settlers even named four weekdays after pagan gods: **Tiw** (*Tuesday*), **Woden** (*Wednesday*), **Thunor** (*Thursday*), and **Frige** (*Friday*).",
+          "content": "<span class=\"para-ref\">[1.5]</span> Gradually, rival warbands joined together into **seven major kingdoms** known as the **Heptarchy**: **Northumbria**, **Mercia**, **East Anglia**, **Essex**, **Kent**, **Sussex**, and **Wessex**. From the **Angles** came a lasting new name for this southern land — *Englaland*, meaning **\"land of the Angles\"** (*England*), where villagers spoke **Old English**.<br><br><span class=\"para-ref\">[1.6]</span> Look closely at any British map today and Anglo-Saxon clues leap right out! Place-name endings like **-ham** (*Birmingham*, village), **-ton** (*Brighton*, fenced farm), and **-ford** (*Oxford*, river crossing) come straight from Old English. Before becoming Christians, settlers even named four weekdays after pagan gods: **Tiw** (*Tuesday*), **Woden** (*Wednesday*), **Thunor** (*Thursday*), and **Frige** (*Friday*).",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_viking_britain_map_ks2.png",
+          "image_alt": "Illustrated KS2 map showing North Sea homelands of Angles, Saxons, and Jutes and the seven Anglo-Saxon kingdoms",
+          "caption": "Map of early medieval Britain showing the North Sea crossing routes of the Angles, Saxons, and Jutes and the emerging Anglo-Saxon kingdoms.",
+          "image_caption": "Map of early medieval Britain showing the North Sea crossing routes of the Angles, Saxons, and Jutes and the emerging Anglo-Saxon kingdoms.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l1_src_c",
+              "letter": "C",
+              "source_letter": "C",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_stamped_urn.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_stamped_urn.jpg",
+              "title": "Source C: Hand-Stamped Early Anglo-Saxon Pottery Urn (5th–6th Century AD)",
+              "caption": "Coil-built early Anglo-Saxon clay urn decorated around the neck and shoulder with neat rows of stamped rosettes, grooves, and raised bosses.",
+              "author": "Early Anglo-Saxon Village Potter",
+              "date": "c. AD 450–550",
+              "context": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+              "source_context": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+              "hinge_question": "Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+              "question_badge": "STAMPED PAGAN CLAY URN",
+              "question": "What clues does this hand-stamped clay urn in Source C give archaeologists about Anglo-Saxon beliefs and where settlers travelled from?",
+              "model_answer": "Source C shows that early pagan Anglo-Saxons cared deeply about funeral rituals, carefully stamping geometric designs into clay urns for loved ones. Because identical pot shapes and stamps appear along the North Sea coasts of Germany and Jutland, it gives physical proof of cross-sea migration.",
+              "provenance_clues": {
+                "author": "Shaped by hand without a fast Roman potter’s wheel by an early Anglo-Saxon potter.",
+                "audience": "Mourners attending a pagan burial ceremony and ancestral spirits.",
+                "motive": "To honour a family member in burial while continuing familiar ancestral craft traditions across the sea.",
+                "hinge_question": "Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+                "source_context": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+                "provenance_breakdown": {
+                  "author": "Shaped by hand without a fast Roman potter’s wheel by an early Anglo-Saxon potter.",
+                  "audience": "Mourners attending a pagan burial ceremony and ancestral spirits.",
+                  "motive": "To honour a family member in burial while continuing familiar ancestral craft traditions across the sea."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "STAMPED PAGAN CLAY URN",
+                "model_answer": "Source C shows that early pagan Anglo-Saxons cared deeply about funeral rituals, carefully stamping geometric designs into clay urns for loved ones. Because identical pot shapes and stamps appear along the North Sea coasts of Germany and Jutland, it gives physical proof of cross-sea migration.",
+                "provenance_clues": {
+                  "author": "Shaped by hand without a fast Roman potter’s wheel by an early Anglo-Saxon potter.",
+                  "audience": "Mourners attending a pagan burial ceremony and ancestral spirits.",
+                  "motive": "To honour a family member in burial while continuing familiar ancestral craft traditions across the sea."
+                }
+              }
+            },
+            {
+              "id": "ks2_anglo_saxons_vikings_l1_src_d",
+              "letter": "D",
+              "source_letter": "D",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_claw_beaker.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_claw_beaker.jpg",
+              "title": "Source D: Anglo-Saxon Glass Claw Beaker for Mead-Hall Feasts (6th Century AD)",
+              "caption": "Delicate blown-glass Anglo-Saxon claw beaker decorated with hollow hooked glass trails (\"claws\") and fine spiral threads, having a rounded base so drinkers could not set it down full.",
+              "author": "Master Anglo-Saxon or Rhineland Glassblower",
+              "date": "6th Century AD",
+              "context": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+              "source_context": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+              "hinge_question": "Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+              "question_badge": "GLASS MEAD-HALL TREASURE",
+              "question": "Inspect the delicate glass claws and tiny base on Source D. Who used a cup like this, and what does it reveal about feasts inside a timber hall?",
+              "model_answer": "Only a wealthy cyning (king) or noble warrior could afford fragile blown glass like Source D. Passing it around a warm timber mead hall during feasts showed generosity, luxury trade links across the sea, and strong loyalty binding warriors to their lord.",
+              "provenance_clues": {
+                "author": "Blown by an elite glassmaker working in Kent or trading across the North Sea from the Rhineland.",
+                "audience": "A cyning and honoured warriors feasting by firelight inside a timber mead hall.",
+                "motive": "To dazzle feast guests with rare luxury glasswork and strengthen bonds of loyalty over shared mead.",
+                "hinge_question": "Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+                "source_context": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+                "provenance_breakdown": {
+                  "author": "Blown by an elite glassmaker working in Kent or trading across the North Sea from the Rhineland.",
+                  "audience": "A cyning and honoured warriors feasting by firelight inside a timber mead hall.",
+                  "motive": "To dazzle feast guests with rare luxury glasswork and strengthen bonds of loyalty over shared mead."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "GLASS MEAD-HALL TREASURE",
+                "model_answer": "Only a wealthy cyning (king) or noble warrior could afford fragile blown glass like Source D. Passing it around a warm timber mead hall during feasts showed generosity, luxury trade links across the sea, and strong loyalty binding warriors to their lord.",
+                "provenance_clues": {
+                  "author": "Blown by an elite glassmaker working in Kent or trading across the North Sea from the Rhineland.",
+                  "audience": "A cyning and honoured warriors feasting by firelight inside a timber mead hall.",
+                  "motive": "To dazzle feast guests with rare luxury glasswork and strengthen bonds of loyalty over shared mead."
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l1_src_a",
+          "letter": "A",
+          "source_letter": "A",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/west_stow_weaving_house.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/west_stow_weaving_house.jpg",
+          "title": "Source A: Reconstructed Anglo-Saxon Village House at West Stow & Bede's Account of the Settlers (AD 731)",
+          "caption": "Reconstructed 5th–6th century Anglo-Saxon timber weaving house with a steep thatched roof at West Stow in Suffolk, paired with Venerable Bede's account of the three settling peoples.",
+          "author": "West Stow Experimental Archaeologists & Venerable Bede (tr. J. A. Giles, 1847)",
+          "date": "c. AD 450–600 site / AD 731 text",
+          "context": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+          "source_context": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+          "hinge_question": "Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+          "question_badge": "WEST STOW & BEDE (AD 731)",
+          "question": "Compare the reconstructed house at West Stow with Bede's words in Source A. Which three peoples crossed the sea, and how did they build their new village homes?",
+          "model_answer": "Bede records that the Angles, Saxons, and Jutes crossed from northern Germany and Jutland to settle Kent, Wessex, Mercia, East Anglia, and Northumbria. Source A's West Stow house shows they built practical rectangular timber and wattle-and-daub workshops with steep thatched roofs near rivers and farmland.",
+          "provenance_clues": {
+            "author": "Experimental archaeologists reconstructing 5th-century post-holes at West Stow, paired with Northumbrian monk Bede writing in AD 731.",
+            "audience": "Originally monastic readers learning English church history; today, historians and pupils investigating early Anglo-Saxon settlement.",
+            "motive": "Bede sought to explain the origins of the English kingdoms, while West Stow tests how timber and thatch workshops functioned in all weathers.",
+            "hinge_question": "Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+            "source_context": "Archaeologists at West Stow in Suffolk excavated dark post-holes and sunken workshop pits containing loom weights and animal bones, while the monk Bede recorded in AD 731 where the Angles, Saxons, and Jutes came from. **Hinge Question:** Why did early Anglo-Saxon families prefer building timber and thatch villages beside rivers instead of living inside crumbling Roman stone towns?",
+            "provenance_breakdown": {
+              "author": "Experimental archaeologists reconstructing 5th-century post-holes at West Stow, paired with Northumbrian monk Bede writing in AD 731.",
+              "audience": "Originally monastic readers learning English church history; today, historians and pupils investigating early Anglo-Saxon settlement.",
+              "motive": "Bede sought to explain the origins of the English kingdoms, while West Stow tests how timber and thatch workshops functioned in all weathers."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "WEST STOW & BEDE (AD 731)",
+            "model_answer": "Bede records that the Angles, Saxons, and Jutes crossed from northern Germany and Jutland to settle Kent, Wessex, Mercia, East Anglia, and Northumbria. Source A's West Stow house shows they built practical rectangular timber and wattle-and-daub workshops with steep thatched roofs near rivers and farmland.",
+            "provenance_clues": {
+              "author": "Experimental archaeologists reconstructing 5th-century post-holes at West Stow, paired with Northumbrian monk Bede writing in AD 731.",
+              "audience": "Originally monastic readers learning English church history; today, historians and pupils investigating early Anglo-Saxon settlement.",
+              "motive": "Bede sought to explain the origins of the English kingdoms, while West Stow tests how timber and thatch workshops functioned in all weathers."
+            }
+          },
+          "text": "Venerable Bede, Ecclesiastical History of the English Nation, Book I, Chapter 15 (AD 731): \"Those who came over were of the three most powerful nations of Germany — Saxons, Angles, and Jutes. From the Jutes are descended the people of Kent, and of the Isle of Wight [...] From the Saxons, that is, the country which is now called Old Saxony, came the East Saxons, the South Saxons, and the West Saxons. From the Angles, that is, the country which is called Anglia [...] are descended the East Angles, the Midland Angles, Mercians, all the race of the Northumbrians [...] and the other nations of the English.\"",
+          "provenance": "Reconstructed Anglo-Saxon sunken-featured weaving house at West Stow, Suffolk, paired with Venerable Bede, Ecclesiastical History of the English Nation, Book I, Chapter 15 (AD 731), translated by J. A. Giles (London: Henry G. Bohn, 1847 — Public Domain)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l1_src_b",
+          "letter": "B",
+          "source_letter": "B",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_saucer_brooch.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_saucer_brooch.jpg",
+          "title": "Source B: Gilt-Bronze Anglo-Saxon Saucer Brooch (6th Century AD)",
+          "caption": "Circular gilt-bronze Anglo-Saxon saucer brooch cast with intricate geometric spiral patterns, worn in pairs at the shoulders to fasten a woollen dress.",
+          "author": "Early Anglo-Saxon Master Metalworker",
+          "date": "6th Century AD",
+          "context": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+          "source_context": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+          "hinge_question": "How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+          "question_badge": "GILT-BRONZE DRESS BROOCH",
+          "question": "Look closely at the patterns and shiny gold coating on Source B. What two jobs did this brooch do for an Anglo-Saxon woman?",
+          "model_answer": "Source B had a practical job fastening heavy woven woollen garments neatly at the shoulder without buttons, and a status job catching the firelight with intricate cast spirals and gilded bronze to show her family’s skill and wealth.",
+          "provenance_clues": {
+            "author": "Crafted by a skilled 6th-century Anglo-Saxon bronze-caster and gilder.",
+            "audience": "Neighbours, kin, and guests gathering inside a village or timber mead hall.",
+            "motive": "To fasten warm woollen clothing securely while displaying regional identity and family status.",
+            "hinge_question": "How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?"
+          },
+          "teacher_notes": {
+            "hinge_question": "How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+            "source_context": "Anglo-Saxon clothes had no zips or plastic buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of gleaming bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
+            "provenance_breakdown": {
+              "author": "Crafted by a skilled 6th-century Anglo-Saxon bronze-caster and gilder.",
+              "audience": "Neighbours, kin, and guests gathering inside a village or timber mead hall.",
+              "motive": "To fasten warm woollen clothing securely while displaying regional identity and family status."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "GILT-BRONZE DRESS BROOCH",
+            "model_answer": "Source B had a practical job fastening heavy woven woollen garments neatly at the shoulder without buttons, and a status job catching the firelight with intricate cast spirals and gilded bronze to show her family’s skill and wealth.",
+            "provenance_clues": {
+              "author": "Crafted by a skilled 6th-century Anglo-Saxon bronze-caster and gilder.",
+              "audience": "Neighbours, kin, and guests gathering inside a village or timber mead hall.",
+              "motive": "To fasten warm woollen clothing securely while displaying regional identity and family status."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l1_src_c",
+          "letter": "C",
+          "source_letter": "C",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_stamped_urn.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_stamped_urn.jpg",
+          "title": "Source C: Hand-Stamped Early Anglo-Saxon Pottery Urn (5th–6th Century AD)",
+          "caption": "Coil-built early Anglo-Saxon clay urn decorated around the neck and shoulder with neat rows of stamped rosettes, grooves, and raised bosses.",
+          "author": "Early Anglo-Saxon Village Potter",
+          "date": "c. AD 450–550",
+          "context": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+          "source_context": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+          "hinge_question": "Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+          "question_badge": "STAMPED PAGAN CLAY URN",
+          "question": "What clues does this hand-stamped clay urn in Source C give archaeologists about Anglo-Saxon beliefs and where settlers travelled from?",
+          "model_answer": "Source C shows that early pagan Anglo-Saxons cared deeply about funeral rituals, carefully stamping geometric designs into clay urns for loved ones. Because identical pot shapes and stamps appear along the North Sea coasts of Germany and Jutland, it gives physical proof of cross-sea migration.",
+          "provenance_clues": {
+            "author": "Shaped by hand without a fast Roman potter’s wheel by an early Anglo-Saxon potter.",
+            "audience": "Mourners attending a pagan burial ceremony and ancestral spirits.",
+            "motive": "To honour a family member in burial while continuing familiar ancestral craft traditions across the sea.",
+            "hinge_question": "Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+            "source_context": "Before converting to Christianity, pagan Anglo-Saxons often cremated the dead on funeral pyres and buried their ashes inside hand-shaped clay urns stamped with antler-tip patterns identical to pots found in northern Germany and Jutland. **Hinge Question:** Why do matching clay pot stamps in Suffolk and northern Germany excite archaeologists studying migration?",
+            "provenance_breakdown": {
+              "author": "Shaped by hand without a fast Roman potter’s wheel by an early Anglo-Saxon potter.",
+              "audience": "Mourners attending a pagan burial ceremony and ancestral spirits.",
+              "motive": "To honour a family member in burial while continuing familiar ancestral craft traditions across the sea."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "STAMPED PAGAN CLAY URN",
+            "model_answer": "Source C shows that early pagan Anglo-Saxons cared deeply about funeral rituals, carefully stamping geometric designs into clay urns for loved ones. Because identical pot shapes and stamps appear along the North Sea coasts of Germany and Jutland, it gives physical proof of cross-sea migration.",
+            "provenance_clues": {
+              "author": "Shaped by hand without a fast Roman potter’s wheel by an early Anglo-Saxon potter.",
+              "audience": "Mourners attending a pagan burial ceremony and ancestral spirits.",
+              "motive": "To honour a family member in burial while continuing familiar ancestral craft traditions across the sea."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l1_src_d",
+          "letter": "D",
+          "source_letter": "D",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_claw_beaker.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_claw_beaker.jpg",
+          "title": "Source D: Anglo-Saxon Glass Claw Beaker for Mead-Hall Feasts (6th Century AD)",
+          "caption": "Delicate blown-glass Anglo-Saxon claw beaker decorated with hollow hooked glass trails (\"claws\") and fine spiral threads, having a rounded base so drinkers could not set it down full.",
+          "author": "Master Anglo-Saxon or Rhineland Glassblower",
+          "date": "6th Century AD",
+          "context": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+          "source_context": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+          "hinge_question": "Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+          "question_badge": "GLASS MEAD-HALL TREASURE",
+          "question": "Inspect the delicate glass claws and tiny base on Source D. Who used a cup like this, and what does it reveal about feasts inside a timber hall?",
+          "model_answer": "Only a wealthy cyning (king) or noble warrior could afford fragile blown glass like Source D. Passing it around a warm timber mead hall during feasts showed generosity, luxury trade links across the sea, and strong loyalty binding warriors to their lord.",
+          "provenance_clues": {
+            "author": "Blown by an elite glassmaker working in Kent or trading across the North Sea from the Rhineland.",
+            "audience": "A cyning and honoured warriors feasting by firelight inside a timber mead hall.",
+            "motive": "To dazzle feast guests with rare luxury glasswork and strengthen bonds of loyalty over shared mead.",
+            "hinge_question": "Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+            "source_context": "Shaped from molten glass with hollow \"claws\" pulled outward using iron pincers, claw beakers had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one celebratory toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
+            "provenance_breakdown": {
+              "author": "Blown by an elite glassmaker working in Kent or trading across the North Sea from the Rhineland.",
+              "audience": "A cyning and honoured warriors feasting by firelight inside a timber mead hall.",
+              "motive": "To dazzle feast guests with rare luxury glasswork and strengthen bonds of loyalty over shared mead."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "GLASS MEAD-HALL TREASURE",
+            "model_answer": "Only a wealthy cyning (king) or noble warrior could afford fragile blown glass like Source D. Passing it around a warm timber mead hall during feasts showed generosity, luxury trade links across the sea, and strong loyalty binding warriors to their lord.",
+            "provenance_clues": {
+              "author": "Blown by an elite glassmaker working in Kent or trading across the North Sea from the Rhineland.",
+              "audience": "A cyning and honoured warriors feasting by firelight inside a timber mead hall.",
+              "motive": "To dazzle feast guests with rare luxury glasswork and strengthen bonds of loyalty over shared mead."
+            }
+          }
+        }
+      ],
+      "causal_domino_spine": {
+        "title": "Anglo-Saxon Settlement Discovery Spine",
+        "subtitle": "From Flooded North Sea Coasts to Timber Mead Halls and the Seven Kingdoms",
+        "stages": [
+          {
+            "step": 1,
+            "para_ref": "[1.1]",
+            "date": "c. AD 410–500",
+            "title": "North Sea Push & Pull Migration",
+            "actor": "Angles, Saxons & Jutes",
+            "tag": "🚣 MIGRATION",
+            "trigger": "Flooded coastal marshes in Jutland, Angeln, and Saxony pushed families out, while fertile British farmland after AD 410 pulled them across the North Sea in oak rowing boats.",
+            "connective": "Brought farming families up eastern rivers to build timber settlements.",
+            "question": "Why did Angles, Saxons, and Jutes cross the North Sea after AD 410?",
+            "prose_hash": "e83fb715ec"
+          },
+          {
+            "step": 2,
+            "para_ref": "[1.3]",
+            "date": "5th–6th Century AD",
+            "title": "West Stow Villages & Timber Mead Halls",
+            "actor": "Cyning, Ceorls & Craftspeople",
+            "tag": "🏡 MEAD HALLS",
+            "trigger": "Free farmers (ceorls) built thatched wattle-and-daub workshops like West Stow for weaving and iron smithing around a cyning’s grand timber mead hall.",
+            "connective": "United growing farming communities under powerful regional warrior kings.",
+            "question": "How did everyday life and craftwork run inside an Anglo-Saxon village?",
+            "prose_hash": "6119ffdf5e"
+          },
+          {
+            "step": 3,
+            "para_ref": "[1.5]",
+            "date": "c. AD 550–650",
+            "title": "The Heptarchy, Place-Names & Weekday Gods",
+            "actor": "Seven Anglo-Saxon Kingdoms",
+            "tag": "👑 HEPTARCHY",
+            "trigger": "Rival kingdoms formed the Heptarchy, giving England its name, Old English -ham/-ton/-ford place-names, and weekday names from Tiw, Woden, Thunor, and Frige.",
+            "connective": "Planted spoken words and town names across England that we still use daily.",
+            "question": "How did the seven kingdoms and Old English shape Britain’s map and language?",
+            "prose_hash": "1877024c7e"
+          }
+        ]
+      },
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "Why did Angles, Saxons, and Jutes cross the North Sea after AD 410?",
+          "focus_clue": "Why did Angles, Saxons, and Jutes cross the North Sea after AD 410?",
+          "words": [
+            {
+              "term": "Angles, Saxons, and Jutes",
+              "clue": "Three seafaring peoples from Jutland, Angeln, and Saxony (modern Denmark and northern Germany)."
+            },
+            {
+              "term": "push reasons",
+              "clue": "Rising North Sea tides flooded low coastal marshes at home, ruining farmland and harvests."
+            },
+            {
+              "term": "pull reasons",
+              "clue": "Post-Roman Britain offered mild weather, unguarded rivers, and rich fertile farmland."
+            }
+          ],
+          "model_sentence": "After AD 410, the <strong>Angles, Saxons, and Jutes</strong> rowed across the North Sea because flooded marshes created <strong>push reasons</strong> while fertile British fields offered <strong>pull reasons</strong>.",
+          "title": "c. AD 410–500: Crossing the North Sea — Push & Pull Reasons",
+          "question": "Why did Angles, Saxons, and Jutes cross the North Sea after AD 410?",
+          "questionHeading": "Why did Angles, Saxons, and Jutes cross the North Sea after AD 410?",
+          "focusClue": "Why did Angles, Saxons, and Jutes cross the North Sea after AD 410?",
+          "date": "c. AD 410–500",
+          "dates": "c. AD 410–500",
+          "para_ref": "[1.1]",
+          "paraRef": "[1.1]",
+          "prose_hash": "e83fb715ec"
+        },
+        {
+          "step": 2,
+          "heading": "How did everyday life and craftwork run inside an Anglo-Saxon village?",
+          "focus_clue": "How did everyday life and craftwork run inside an Anglo-Saxon village?",
+          "words": [
+            {
+              "term": "ceorls",
+              "clue": "Free Anglo-Saxon peasant farmers who built timber homes near streams like West Stow in Suffolk."
+            },
+            {
+              "term": "wattle-and-daub workshops",
+              "clue": "Sunken-floored thatched huts where villagers wove wool on looms and forged sharp iron tools."
+            },
+            {
+              "term": "cyning",
+              "clue": "Old English warrior king who shared honey mead and gold rings with loyal fighters in his timber mead hall."
+            }
+          ],
+          "model_sentence": "Hardworking <strong>ceorls</strong> wove cloth and forged iron inside <strong>wattle-and-daub workshops</strong> while their <strong>cyning</strong> feasted warriors in the timber mead hall.",
+          "title": "5th–6th Century AD: Timber Halls, Craftwork & Village Life",
+          "question": "How did everyday life and craftwork run inside an Anglo-Saxon village?",
+          "questionHeading": "How did everyday life and craftwork run inside an Anglo-Saxon village?",
+          "focusClue": "How did everyday life and craftwork run inside an Anglo-Saxon village?",
+          "date": "5th–6th Century AD",
+          "dates": "5th–6th Century AD",
+          "para_ref": "[1.3]",
+          "paraRef": "[1.3]",
+          "prose_hash": "6119ffdf5e"
+        },
+        {
+          "step": 3,
+          "heading": "How did the seven kingdoms and Old English shape Britain’s map and language?",
+          "focus_clue": "How did the seven kingdoms and Old English shape Britain’s map and language?",
+          "words": [
+            {
+              "term": "Heptarchy",
+              "clue": "The seven major Anglo-Saxon kingdoms: Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex."
+            },
+            {
+              "term": "-ham, -ton, and -ford",
+              "clue": "Everyday Old English place-name endings meaning village, fenced farmstead, and shallow river crossing."
+            },
+            {
+              "term": "Woden and Thunor",
+              "clue": "Pagan Anglo-Saxon gods honoured in our modern weekday names Wednesday and Thursday."
+            }
+          ],
+          "model_sentence": "Across the seven kingdoms of the <strong>Heptarchy</strong>, Old English gave us <strong>-ham, -ton, and -ford</strong> town names plus weekdays named after gods like <strong>Woden and Thunor</strong>.",
+          "title": "c. AD 550–650: Seven Kingdoms & Anglo-Saxon Words Today",
+          "question": "How did the seven kingdoms and Old English shape Britain’s map and language?",
+          "questionHeading": "How did the seven kingdoms and Old English shape Britain’s map and language?",
+          "focusClue": "How did the seven kingdoms and Old English shape Britain’s map and language?",
+          "date": "c. AD 550–650",
+          "dates": "c. AD 550–650",
+          "para_ref": "[1.5]",
+          "paraRef": "[1.5]",
+          "prose_hash": "1877024c7e"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source B (the gilt-bronze saucer brooch), Source C (the stamped urn), and Source D (the glass claw beaker). What clues prove that early Anglo-Saxon settlers were skilled craftworkers and traders?",
+          "starter": "Examining Sources B, C, and D carefully, archaeologists can prove that early Anglo-Saxon settlers were skilled craftworkers because...",
+          "word_bank": [
+            "saucer brooch",
+            "gilt-bronze",
+            "stamped urn",
+            "claw beaker"
+          ],
+          "hints": [
+            "Describe the cast spiral patterns and shiny gold coating on the saucer brooch in Source B.",
+            "Explain what the hand-stamped clay urn (Source C) and delicate blown-glass claw beaker (Source D) reveal about funerals and mead-hall feasts.",
+            "Scholar Challenge (Year 5+): Explain how matching pot stamps in Suffolk and northern Germany give physical proof of Bede’s written migration story in Source A."
+          ],
+          "model_answer": "Examining Sources B, C, and D carefully, archaeologists can prove that early Anglo-Saxon settlers were skilled craftworkers because metalworkers cast intricate spiral saucer brooches coated in gleaming gold to pin woollen dresses, while potters hand-stamped neat geometric designs onto funeral urns. Source D’s fragile blown-glass claw beaker also proves that wealthy cyning halls enjoyed luxury glasswork and mead feasts. Even better, finding identical pot stamps in Suffolk and northern Germany physically backs up Bede’s written account of North Sea migration!",
+          "key_terms": [
+            "saucer brooch",
+            "stamped urn",
+            "claw beaker",
+            "Bede"
+          ]
+        },
+        {
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Explain BOTH the \"push reasons\" and \"pull reasons\" that persuaded Angles, Saxons, and Jutes to cross the North Sea after AD 410.",
+          "starter": "After the Roman legions left in AD 410, Angles, Saxons, and Jutes crossed the North Sea for both push and pull reasons...",
+          "word_bank": [
+            "North Sea",
+            "Jutland",
+            "push reasons",
+            "fertile farmland"
+          ],
+          "hints": [
+            "Describe the push reasons back in Jutland, Angeln, and Saxony (rising sea tides flooding low-lying coastal marshes).",
+            "Describe the pull reasons in island Britain after Emperor Honorius’s AD 410 warning (unguarded river valleys and rich farmland).",
+            "Scholar Challenge (Year 5+): Explain how clinker-built oak rowing vessels like the Nydam ship helped whole farming families travel both across open sea and up shallow eastern rivers."
+          ],
+          "model_answer": "After the Roman legions left in AD 410, Angles, Saxons, and Jutes crossed the North Sea for both push and pull reasons. Back home in low-lying Jutland, Angeln, and Saxony, rising tides flooded soggy coastal marshes and ruined crops, pushing families to seek drier land. At the same time, Britain pulled settlers across the waves with mild weather, rich fertile farmland, and unguarded river valleys once Emperor Honorius recalled Roman troops. Using sturdy clinker-built oak rowing boats like the Nydam ship, families steered straight up eastern rivers to clear productive new farms.",
+          "key_terms": [
+            "push reasons",
+            "pull reasons",
+            "Jutland",
+            "fertile farmland"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine you are a ten-year-old child of a free farmer (ceorl) living in West Stow village in Suffolk. Describe your busy day working in the workshops before visiting the cyning’s timber mead hall!",
+          "starter": "Stepping outside into our riverside village at West Stow at sunrise, I can hear and smell...",
+          "word_bank": [
+            "ceorl",
+            "wattle-and-daub",
+            "looms",
+            "timber mead hall"
+          ],
+          "hints": [
+            "Describe the sunken wattle-and-daub workshops with thatched roofs, upright wooden looms, and ringing iron smithies.",
+            "Step inside the cyning’s smoky timber mead hall at dusk: roaring firelight, roasted meat, honey mead in claw beakers, and gleaming gold rings.",
+            "Scholar Challenge (Year 5+): Mention seeing crumbling Roman stone ruins nearby and explain why your family calls them \"work of giants\" yet prefers dry timber buildings."
+          ],
+          "model_answer": "Stepping outside into our riverside village at West Stow at sunrise, I can hear the clang of the blacksmith’s hammer forging iron ploughshares and smell sweet woodsmoke drifting through steep thatched roofs. As the child of a free ceorl, I help click clay weights on the upright loom inside our sunken wattle-and-daub workshop, far from the cold crumbling Roman stone ruins we call the \"work of giants\". At dusk, torches glow inside our cyning’s grand timber mead hall, where poets chant heroic tales while loyal warriors toast with honey mead from glass claw beakers!",
+          "key_terms": [
+            "ceorl",
+            "West Stow",
+            "wattle-and-daub",
+            "timber mead hall"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Who were the Angles, Saxons, and Jutes, and what clues on our modern map and calendar prove they changed Britain forever?",
+          "starter": "The Angles, Saxons, and Jutes were North Sea farming peoples who transformed post-Roman Britain by creating...",
+          "word_bank": [
+            "Heptarchy",
+            "Old English",
+            "-ham and -ton",
+            "Woden and Thunor"
+          ],
+          "hints": [
+            "Name the three settling peoples and at least four of the seven kingdoms of the Heptarchy (such as Northumbria, Mercia, East Anglia, Kent, and Wessex).",
+            "Give real examples of Old English place-name endings (-ham, -ton, -ford) and pagan gods hidden in our weekdays (Tiw, Woden, Thunor, Frige).",
+            "Scholar Challenge (Year 5+): Explain how the Angles even gave England (\"land of the Angles\") and the English language their names!"
+          ],
+          "model_answer": "The Angles, Saxons, and Jutes were North Sea farming peoples from modern Denmark and northern Germany who transformed post-Roman Britain by creating villages, kingdoms, and the roots of our spoken language. Over time their settlements grew into the seven kingdoms of the Heptarchy — Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex — while \"Englaland\" (\"land of the Angles\") became England itself. Today, their Old English speech still echoes across our map in \"-ham\" (Birmingham), \"-ton\" (Brighton), and \"-ford\" (Oxford) towns, and in four weekdays named after Tiw, Woden, Thunor, and Frige!",
+          "key_terms": [
+            "Angles, Saxons, and Jutes",
+            "Heptarchy",
+            "Old English",
+            "Woden"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "stage": 1,
+          "question": "Which three seafaring peoples crossed the North Sea from Jutland, Angeln, and Saxony to settle in Britain after AD 410?",
+          "q": "Which three seafaring peoples crossed the North Sea from Jutland, Angeln, and Saxony to settle in Britain after AD 410?",
+          "options": [
+            "Romans, Greeks, and Egyptians",
+            "Angles, Saxons, and Jutes",
+            "Normans, Franks, and Spartans",
+            "Iceni, Brigantes, and Druids"
+          ],
+          "correct": 1,
+          "answer": "Angles, Saxons, and Jutes",
+          "a": "Angles, Saxons, and Jutes",
+          "explanation": "Bede recorded that the Angles, Saxons, and Jutes sailed across the North Sea from modern Denmark and northern Germany."
+        },
+        {
+          "stage": 1,
+          "question": "What was a key \"push reason\" driving families to leave their North Sea coastal homelands in the 5th century?",
+          "q": "What was a key \"push reason\" driving families to leave their North Sea coastal homelands in the 5th century?",
+          "options": [
+            "Erupting volcanoes covered Jutland in lava",
+            "Rising sea tides flooded low-lying coastal marshes and ruined harvests",
+            "Emperor Claudius ordered them out with war elephants",
+            "All rivers in Germany froze solid all summer"
+          ],
+          "correct": 1,
+          "answer": "Rising sea tides flooded low-lying coastal marshes and ruined harvests",
+          "a": "Rising sea tides flooded low-lying coastal marshes and ruined harvests",
+          "explanation": "Flooding coastal marshes pushed families away, while Britain’s mild climate and fertile farmland pulled them across the sea."
+        },
+        {
+          "stage": 2,
+          "question": "In an early Anglo-Saxon settlement like West Stow, who was the \"cyning\" and who were the \"ceorls\"?",
+          "q": "In an early Anglo-Saxon settlement like West Stow, who was the \"cyning\" and who were the \"ceorls\"?",
+          "options": [
+            "The cyning was a Roman tax collector and ceorls were gladiators",
+            "The cyning was the warrior king in the timber mead hall and ceorls were free farmers",
+            "The cyning was a stone mason and ceorls were ships’ oars",
+            "The cyning was a Christian bishop and ceorls were Latin books"
+          ],
+          "correct": 1,
+          "answer": "The cyning was the warrior king in the timber mead hall and ceorls were free farmers",
+          "a": "The cyning was the warrior king in the timber mead hall and ceorls were free farmers",
+          "explanation": "Free farmers (ceorls) worked fields and wattle-and-daub workshops, while a warrior ruler (cyning) feasted loyal fighters in the mead hall."
+        },
+        {
+          "stage": 3,
+          "question": "What name do historians give to the seven main Anglo-Saxon kingdoms (Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex)?",
+          "q": "What name do historians give to the seven main Anglo-Saxon kingdoms (Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex)?",
+          "options": [
+            "The Testudo",
+            "The Heptarchy",
+            "The Danelaw",
+            "The Senate"
+          ],
+          "correct": 1,
+          "answer": "The Heptarchy",
+          "a": "The Heptarchy",
+          "explanation": "The word Heptarchy means \"rule of seven\", describing the seven major Anglo-Saxon kingdoms that emerged by c. AD 600."
+        },
+        {
+          "stage": 3,
+          "question": "Which four modern days of the week are named after the pagan Anglo-Saxon gods Tiw, Woden, Thunor, and Frige?",
+          "q": "Which four modern days of the week are named after the pagan Anglo-Saxon gods Tiw, Woden, Thunor, and Frige?",
+          "options": [
+            "Monday, Tuesday, Saturday, and Sunday",
+            "Tuesday, Wednesday, Thursday, and Friday",
+            "Wednesday, Friday, Saturday, and Sunday",
+            "Monday, Wednesday, Thursday, and Saturday"
+          ],
+          "correct": 1,
+          "answer": "Tuesday, Wednesday, Thursday, and Friday",
+          "a": "Tuesday, Wednesday, Thursday, and Friday",
+          "explanation": "Tiw’s day became Tuesday, Woden’s day Wednesday, Thunor’s day Thursday, and Frige’s day Friday!"
+        }
+      ],
+      "video": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l1_vid_1",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=-cKGz-st75w",
+          "title": "Life in Anglo-Saxon Britain | The Story of Britain | BBC Teach",
+          "duration": "4 mins 32 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Act 2–3 Living History Hook | Follow an Anglo-Saxon family inside their timber village to spot farming jobs, remedies, mead-hall storytelling, and pagan beliefs.",
+          "viewing_task": "[00:55] Quick Check: What materials are Anglo-Saxon village homes built from, and what jobs do families do?\n[03:10] Hinge Question: Why was storytelling inside the smoky timber hall so important in Anglo-Saxon communities?",
+          "model_answer": "Quick Check: Rectangular timber posts, woven wattle-and-daub walls, and steep straw thatch, where families farm crops, tend livestock, weave wool, and forge iron.\nHinge Question: Gathering around the mead-hall hearth bound families and warriors to their lord while passing down heroic poems like Beowulf, laws, and shared memories."
+        }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "skill": "Evidential Understanding / Archaeological Inference",
+      "title": "Enquiry 2: Ship Burials & Monasteries — What Do Sutton Hoo & Christian Monks Reveal? (c. AD 597–750)",
+      "subtitle": "The Ghost Ship in Mound 1, Missionaries at Canterbury & Lindisfarne, and Illuminated Vellum Books",
+      "enquiryQuestion": "What does the Sutton Hoo ship burial reveal about Anglo-Saxon kings, and how did Christianity change Britain?",
+      "enquiry_question": "What does the Sutton Hoo ship burial reveal about Anglo-Saxon kings, and how did Christianity change Britain?",
+      "prologue": "In 1939, spades scraping sandy Suffolk soil uncovered rows of iron rivets tracing a 27-metre Anglo-Saxon ship packed with gold, Sri Lankan garnets, and a dragon-browed war helmet! Step from Sutton Hoo’s royal burial mound into candlelit monasteries to see how archaeology and Christian monks transformed Britain.",
+      "blurb": "In 1939, spades scraping sandy Suffolk soil uncovered rows of iron rivets tracing a 27-metre Anglo-Saxon ship packed with gold, Sri Lankan garnets, and a dragon-browed war helmet! Step from Sutton Hoo’s royal burial mound into candlelit monasteries to see how archaeology and Christian monks transformed Britain.",
+      "hero_image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_gold_buckle.jpg",
+      "card_image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_purse_lid.jpg",
+      "banner_position": "center 50%",
+      "card_position": "center 50%",
+      "teacher_notes": {
+        "primer": "This enquiry develops archaeological inference and evidential thinking across c. AD 597–750. Pupils investigate Edith Pretty and Basil Brown’s 1939 excavation of Mound 1 at Sutton Hoo (likely King Raedwald of East Anglia, c. AD 625), inferring royal power, international trade (Sri Lankan garnets, Byzantine silver, Frankish coins), and religious transition from pagan grave goods alongside Christian spoons. They then trace the two missionary routes — Augustine from Rome to Canterbury (AD 597) and Aidan from Iona to Lindisfarne (AD 635) — culminating in Abbess Hilda at Whitby, illuminated vellum manuscripts, and Venerable Bede at Jarrow (AD 731).",
+        "objectives": [
+          {
+            "objective": "Infer what the Mound 1 ship burial at Sutton Hoo reveals about Anglo-Saxon kingship, craft skill, and global trade.",
+            "primer": "Examine Basil Brown’s 27m iron-rivet ship imprint, the helmet, Sri Lankan garnets, Byzantine spoons, and Frankish coins.",
+            "question": "How could archaeologists prove a king was buried in a 27-metre ship when every plank of wood and bone had rotted away?"
+          },
+          {
+            "objective": "Compare the two missionary paths that spread Christianity across Anglo-Saxon kingdoms from AD 597 to AD 635.",
+            "primer": "Trace Augustine’s Roman mission to King Ethelbert and Queen Bertha in Kent alongside Aidan’s Celtic mission from Iona to Lindisfarne.",
+            "question": "Why did King Raedwald’s burial contain BOTH a pagan war-ship and Christian silver spoons?"
+          },
+          {
+            "objective": "Explain how monasteries led by figures like Abbess Hilda and Venerable Bede transformed literacy, art, and history-writing.",
+            "primer": "Explore Whitby, calfskin vellum, feather quills, the Lindisfarne Gospels, and Bede’s AD 731 Ecclesiastical History at Jarrow.",
+            "question": "Why is Venerable Bede remembered as the \"Father of English History\"?"
+          }
+        ],
+        "source_context": {
+          "Source A": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+          "Source B": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+          "Source C": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+          "Source D": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?"
+        },
+        "delivery_plan": {
+          "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
+          "lesson_1": {
+            "title": "Session 1: Excavating the Ghost Ship at Sutton Hoo (c. AD 625 & 1939)",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced-Retrieval Do Now (Lesson 1 Review)",
+                "instruction": "Complete the 5-question Do Now reviewing Angles, Saxons, and Jutes, push/pull reasons, West Stow halls, the Heptarchy, and Old English clues."
+              },
+              {
+                "time": "08–25m",
+                "label": "Shared Storytelling (Acts 1 & 2)",
+                "instruction": "Read Act 1 (Edith Pretty, Basil Brown, and King Raedwald’s ship burial) and Act 2 (Augustine at Canterbury in AD 597 and Aidan at Lindisfarne in AD 635)."
+              },
+              {
+                "time": "25–42m",
+                "label": "Grave-Goods Detective Work (Sources A & B)",
+                "instruction": "Inspect Source A (Sutton Hoo helmet) and Source B (gold-and-garnet shoulder clasps) to map how far East Anglia’s trade links reached."
+              },
+              {
+                "time": "42–50m",
+                "label": "Class Hinge Check",
+                "instruction": "Oral Hinge Check: \"How does the Sutton Hoo helmet overturn the old myth that post-Roman Britain was a clumsy Dark Age?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Session 2: Monasteries, Illuminated Gospels & Venerable Bede",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Session 1 Recall Warm-Up",
+                "instruction": "Quick recall of Basil Brown, iron ship rivets, Sri Lankan garnets, Augustine at Canterbury, and Aidan at Lindisfarne."
+              },
+              {
+                "time": "08–22m",
+                "label": "Act 3 Reading & Sources C–D",
+                "instruction": "Read Act 3 (Abbess Hilda, vellum manuscripts, Lindisfarne Gospels, and Bede at Jarrow) and examine Source C (Lindisfarne carpet page) and Source D (Bewcastle Cross)."
+              },
+              {
+                "time": "22–42m",
+                "label": "Dual-Scaffolded Historian Tasks",
+                "instruction": "Complete Tasks 1–4 using Foundation sentence starters and word banks, with Year 5+ Scholar Challenge stretch questions."
+              },
+              {
+                "time": "42–50m",
+                "label": "Tap-Tile Summary & Plenary Quiz",
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz."
+              }
+            ]
+          }
+        }
+      },
+      "do_now": {
+        "type": "questions",
+        "derived_from_prev": true,
+        "items": [
+          {
+            "stage": 1,
+            "question": "Which three peoples crossed the North Sea from Jutland, Angeln, and Saxony to farm in post-Roman Britain?",
+            "answer": "The Angles, Saxons, and Jutes",
+            "explanation": "Flooded North Sea coastal marshes pushed them out, while fertile British farmland pulled them across after AD 410."
+          },
+          {
+            "stage": 2,
+            "question": "In an early Anglo-Saxon village like West Stow, what Old English words described a warrior ruler and a free farmer?",
+            "answer": "A cyning (warrior ruler) and a ceorl (free farmer)",
+            "explanation": "Ceorls worked fields and wattle-and-daub workshops, while the cyning hosted loyal fighters in his rectangular timber mead hall."
+          },
+          {
+            "stage": 3,
+            "question": "What collective name do historians give to the seven main territories (Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex)?",
+            "answer": "The Heptarchy",
+            "explanation": "By c. AD 600, small tribal warbands had merged into the seven major territories of the Heptarchy."
+          },
+          {
+            "stage": 3,
+            "question": "What do the Old English place-name endings \"-ham\", \"-ton\", and \"-ford\" mean on a modern British map?",
+            "answer": "\"-ham\" means village/homestead, \"-ton\" means fenced farmstead, and \"-ford\" means shallow river crossing",
+            "explanation": "Names like Birmingham, Brighton, and Oxford preserve everyday Old English spoken by early settlers."
+          },
+          {
+            "stage": 3,
+            "question": "Which pagan gods gave their names to Wednesday and Thursday before Britons converted?",
+            "answer": "Woden (Wednesday) and Thunor (Thursday)",
+            "explanation": "Along with Tiw (Tuesday) and Frige (Friday), four modern English weekdays still honour pre-Christian gods."
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "term": "Excavation",
+          "definition": "Carefully digging and recording soil layers and buried artefacts to uncover clues about the past.",
+          "syllables": "Ex-ca-va-tion",
+          "phonetic": "eks-kuh-VAY-shun",
+          "tier": "2"
+        },
+        {
+          "term": "Grave Goods",
+          "definition": "Precious weapons, jewellery, coins, or vessels buried alongside a dead person for status or the afterlife.",
+          "syllables": "Grave Goods",
+          "phonetic": "GRAYV goodz",
+          "tier": "3"
+        },
+        {
+          "term": "Missionary",
+          "definition": "A religious messenger sent to a new land to preach, teach, and persuade people to adopt a faith.",
+          "syllables": "Mis-sion-a-ry",
+          "phonetic": "MISH-un-uh-ree",
+          "tier": "2"
+        },
+        {
+          "term": "Monastery",
+          "definition": "A community of Christian monks or nuns dedicated to daily prayer, study, farming, and copying sacred books.",
+          "syllables": "Mon-as-ter-y",
+          "phonetic": "MON-uh-stree",
+          "tier": "3"
+        },
+        {
+          "term": "Vellum",
+          "definition": "Smooth, durable writing sheets scraped and stretched from calfskin for precious hand-painted manuscripts.",
+          "syllables": "Vel-lum",
+          "phonetic": "VEL-um",
+          "tier": "3"
+        }
+      ],
+      "vocab_cloze_text": "In 1939, Basil Brown’s careful [Excavation] of Mound 1 at Sutton Hoo revealed a 27-metre ship packed with royal [Grave Goods] including a helmet and Sri Lankan garnets. Meanwhile, each Christian [Missionary] — like Augustine in Kent and Aidan in Northumbria — founded a stone [Monastery] where scribes painted Gospel pages on smooth calfskin [Vellum].",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "title": "c. AD 625 & 1939: The Ghost Ship in Mound 1 at Sutton Hoo",
+          "text": "<span class=\"para-ref\">[2.1]</span> On the eve of war in **1939**, Suffolk landowner **Edith Pretty** asked keen local archaeologist **Basil Brown** to excavate grassy **Mound 1** at **Sutton Hoo**. Acidic sandy soil had completely rotted the oak timbers and human bones, yet neat rows of rusted **iron rivets** still traced a ghostly **27-metre ship** dragged uphill from the River Deben around **AD 625**.<br><br><span class=\"para-ref\">[2.2]</span> Inside its collapsed wooden burial chamber lay dazzling royal grave goods, probably honouring **King Raedwald of East Anglia**: an iconic **iron-and-bronze helmet**, heavy gold belt buckles, glowing **garnet sword fittings** traded from distant **India and Sri Lanka**, **Byzantine silver spoons**, and **Frankish gold coins**.",
+          "content": "<span class=\"para-ref\">[2.1]</span> On the eve of war in **1939**, Suffolk landowner **Edith Pretty** asked keen local archaeologist **Basil Brown** to excavate grassy **Mound 1** at **Sutton Hoo**. Acidic sandy soil had completely rotted the oak timbers and human bones, yet neat rows of rusted **iron rivets** still traced a ghostly **27-metre ship** dragged uphill from the River Deben around **AD 625**.<br><br><span class=\"para-ref\">[2.2]</span> Inside its collapsed wooden burial chamber lay dazzling royal grave goods, probably honouring **King Raedwald of East Anglia**: an iconic **iron-and-bronze helmet**, heavy gold belt buckles, glowing **garnet sword fittings** traded from distant **India and Sri Lanka**, **Byzantine silver spoons**, and **Frankish gold coins**.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_burial_mounds.jpg",
+          "image_alt": "Grassy Anglo-Saxon royal burial mounds overlooking the River Deben valley at Sutton Hoo in Suffolk",
+          "caption": "The grassy royal burial mounds at Sutton Hoo in Suffolk, where Edith Pretty and Basil Brown uncovered the ghostly 27-metre ship imprint in Mound 1 in 1939.",
+          "image_caption": "The grassy royal burial mounds at Sutton Hoo in Suffolk, where Edith Pretty and Basil Brown uncovered the ghostly 27-metre ship imprint in Mound 1 in 1939.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l2_src_a",
+              "letter": "A",
+              "source_letter": "A",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+              "title": "Source A: The Iconic Iron-and-Bronze Sutton Hoo Helmet (Buried c. AD 625)",
+              "caption": "Ceremonial iron Anglo-Saxon war helmet from Mound 1 at Sutton Hoo, decorated with tinned-bronze panels of dancing warriors, silver-wire eyebrows tipped with gilded boars, and a flying dragon nose-bridge (British Museum).",
+              "author": "Master Royal East Anglian Armourer",
+              "date": "c. AD 625 (Excavated 1939)",
+              "context": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+              "source_context": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+              "hinge_question": "How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+              "question_badge": "SUTTON HOO ROYAL HELMET",
+              "question": "Look closely at the eyebrows, nose-guard, and bronze panels on Source A. What hidden animals can you spot, and what did this helmet say about the ruler who wore it?",
+              "model_answer": "Source A hides a gilded flying dragon stretching across the nose, moustache, and silver-inlaid eyebrows, which end in tiny boar heads above stamped battle scenes. Wearing such dazzling iron, bronze, silver, and garnet armour proclaimed that this ruler — likely King Raedwald — was a mighty, wealthy warlord.",
+              "provenance_clues": {
+                "author": "Forged and inlaid by a master royal metalsmith in early 7th-century East Anglia.",
+                "audience": "Rival kings, loyal hall warriors, and mourners gathered around the Mound 1 ship burial.",
+                "motive": "To project awe-inspiring royal authority in life and equip a great king magnificently in death.",
+                "hinge_question": "How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?"
+              },
+              "teacher_notes": {
+                "hinge_question": "How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+                "source_context": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+                "provenance_breakdown": {
+                  "author": "Forged and inlaid by a master royal metalsmith in early 7th-century East Anglia.",
+                  "audience": "Rival kings, loyal hall warriors, and mourners gathered around the Mound 1 ship burial.",
+                  "motive": "To project awe-inspiring royal authority in life and equip a great king magnificently in death."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "SUTTON HOO ROYAL HELMET",
+                "model_answer": "Source A hides a gilded flying dragon stretching across the nose, moustache, and silver-inlaid eyebrows, which end in tiny boar heads above stamped battle scenes. Wearing such dazzling iron, bronze, silver, and garnet armour proclaimed that this ruler — likely King Raedwald — was a mighty, wealthy warlord.",
+                "provenance_clues": {
+                  "author": "Forged and inlaid by a master royal metalsmith in early 7th-century East Anglia.",
+                  "audience": "Rival kings, loyal hall warriors, and mourners gathered around the Mound 1 ship burial.",
+                  "motive": "To project awe-inspiring royal authority in life and equip a great king magnificently in death."
+                }
+              }
+            },
+            {
+              "id": "ks2_anglo_saxons_vikings_l2_src_b",
+              "letter": "B",
+              "source_letter": "B",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_shoulder_clasps.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_shoulder_clasps.jpg",
+              "title": "Source B: Gold-and-Garnet Cloisonné Shoulder Clasps from Sutton Hoo Mound 1 (c. AD 625)",
+              "caption": "Curved hinged gold shoulder clasps inlaid with hundreds of hand-cut red garnets and chequered blue millefiori glass over patterned gold foil, bordered by interlaced boars (British Museum).",
+              "author": "Master Anglo-Saxon Goldsmith",
+              "date": "c. AD 625",
+              "context": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+              "source_context": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+              "hinge_question": "What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+              "question_badge": "GOLD & SRI LANKAN GARNETS",
+              "question": "Inspect the tiny red stones and blue glass chequers in Source B. Where did those red garnets come from, and what does that prove about Anglo-Saxon Britain’s place in the wider world?",
+              "model_answer": "The blood-red garnets in Source B travelled thousands of miles from India and Sri Lanka, set beside Mediterranean millefiori glass by an East Anglian goldsmith. Alongside Frankish gold coins and Byzantine silver spoons, this proves Anglo-Saxon kingdoms were connected to vast international trade networks.",
+              "provenance_clues": {
+                "author": "Crafted by a master Anglo-Saxon goldsmith setting imported Asian garnets into tiny gold cells.",
+                "audience": "Royal court guests and fellow rulers across Britain and Frankish Europe.",
+                "motive": "To fasten royal body-armour in dazzling style while displaying long-distance wealth and status.",
+                "hinge_question": "What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?"
+              },
+              "teacher_notes": {
+                "hinge_question": "What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+                "source_context": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+                "provenance_breakdown": {
+                  "author": "Crafted by a master Anglo-Saxon goldsmith setting imported Asian garnets into tiny gold cells.",
+                  "audience": "Royal court guests and fellow rulers across Britain and Frankish Europe.",
+                  "motive": "To fasten royal body-armour in dazzling style while displaying long-distance wealth and status."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "GOLD & SRI LANKAN GARNETS",
+                "model_answer": "The blood-red garnets in Source B travelled thousands of miles from India and Sri Lanka, set beside Mediterranean millefiori glass by an East Anglian goldsmith. Alongside Frankish gold coins and Byzantine silver spoons, this proves Anglo-Saxon kingdoms were connected to vast international trade networks.",
+                "provenance_clues": {
+                  "author": "Crafted by a master Anglo-Saxon goldsmith setting imported Asian garnets into tiny gold cells.",
+                  "audience": "Royal court guests and fellow rulers across Britain and Frankish Europe.",
+                  "motive": "To fasten royal body-armour in dazzling style while displaying long-distance wealth and status."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "AD 597–635: Two Paths to Christianity — Canterbury & Lindisfarne",
+          "text": "<span class=\"para-ref\">[2.3]</span> Sutton Hoo blended a pagan ship burial with Christian silver spoons because Britain's religious beliefs were changing fast. In **AD 597**, **Pope Gregory** in Rome sent the missionary monk **Augustine** to **Canterbury** in Kent. Pagan **King Ethelbert** — already married to Christian Frankish **Queen Bertha**, who prayed faithfully at ancient **St Martin's Church** — welcomed Augustine warmly and allowed Britain's first **Anglo-Saxon cathedral**.<br><br><span class=\"para-ref\">[2.4]</span> Meanwhile, a second Christian path arrived from the misty north-west. In **AD 635**, the gentle Irish-Scottish monk **Aidan** sailed from the island monastery of **Iona** to **Northumbria**, founding a coastal priory on **Lindisfarne** (*Holy Island*) beside Christian **King Oswald**.",
+          "content": "<span class=\"para-ref\">[2.3]</span> Sutton Hoo blended a pagan ship burial with Christian silver spoons because Britain's religious beliefs were changing fast. In **AD 597**, **Pope Gregory** in Rome sent the missionary monk **Augustine** to **Canterbury** in Kent. Pagan **King Ethelbert** — already married to Christian Frankish **Queen Bertha**, who prayed faithfully at ancient **St Martin's Church** — welcomed Augustine warmly and allowed Britain's first **Anglo-Saxon cathedral**.<br><br><span class=\"para-ref\">[2.4]</span> Meanwhile, a second Christian path arrived from the misty north-west. In **AD 635**, the gentle Irish-Scottish monk **Aidan** sailed from the island monastery of **Iona** to **Northumbria**, founding a coastal priory on **Lindisfarne** (*Holy Island*) beside Christian **King Oswald**.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/st_martins_church_canterbury.jpg",
+          "image_alt": "St Martin’s Church in Canterbury showing reused red Roman bricks in its ancient Anglo-Saxon walls",
+          "caption": "St Martin’s Church in Canterbury — England’s oldest church still in continuous use, where Christian Queen Bertha prayed before Augustine arrived from Rome in AD 597.",
+          "image_caption": "St Martin’s Church in Canterbury — England’s oldest church still in continuous use, where Christian Queen Bertha prayed before Augustine arrived from Rome in AD 597.",
+          "isReversed": true,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l2_src_c",
+              "letter": "C",
+              "source_letter": "C",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_gospels_illuminated_page.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_gospels_illuminated_page.jpg",
+              "title": "Source C: Illuminated Carpet Page from the Lindisfarne Gospels (c. AD 715) & Bede on Monastic Learning (AD 731)",
+              "caption": "Intricately painted cross-carpet page from the Lindisfarne Gospels, created on Holy Island by Bishop Eadfrith using calfskin vellum and ground mineral pigments, paired with Venerable Bede’s description of monastic scholarship.",
+              "author": "Bishop Eadfrith of Lindisfarne & Venerable Bede (tr. J. A. Giles, 1847)",
+              "date": "c. AD 715–731",
+              "context": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+              "source_context": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+              "hinge_question": "How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+              "question_badge": "LINDISFARNE GOSPELS & BEDE",
+              "question": "Look at the intricate patterns in Source C and read Bede’s words. How did Christian monks and nuns transform reading, art, and history-writing in Britain?",
+              "model_answer": "Early pagan Anglo-Saxons rarely wrote books, whereas Christian monasteries trained monks and nuns in Latin reading, teaching, and writing on calfskin vellum. Source C shows monks fused dazzling Anglo-Saxon animal knotwork with Christian crosses, while scholars like Bede wrote Britain’s earliest history books.",
+              "provenance_clues": {
+                "author": "Painted by Bishop Eadfrith at Lindisfarne Priory (c. AD 715), paired with Venerable Bede writing at Jarrow Monastery (AD 731).",
+                "audience": "Fellow monks, Christian worshippers viewing the altar Gospel book, and future generations of readers.",
+                "motive": "To glorify God through breathtaking sacred art and preserve historical and religious knowledge in writing.",
+                "hinge_question": "How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?"
+              },
+              "teacher_notes": {
+                "hinge_question": "How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+                "source_context": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+                "provenance_breakdown": {
+                  "author": "Painted by Bishop Eadfrith at Lindisfarne Priory (c. AD 715), paired with Venerable Bede writing at Jarrow Monastery (AD 731).",
+                  "audience": "Fellow monks, Christian worshippers viewing the altar Gospel book, and future generations of readers.",
+                  "motive": "To glorify God through breathtaking sacred art and preserve historical and religious knowledge in writing."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "LINDISFARNE GOSPELS & BEDE",
+                "model_answer": "Early pagan Anglo-Saxons rarely wrote books, whereas Christian monasteries trained monks and nuns in Latin reading, teaching, and writing on calfskin vellum. Source C shows monks fused dazzling Anglo-Saxon animal knotwork with Christian crosses, while scholars like Bede wrote Britain’s earliest history books.",
+                "provenance_clues": {
+                  "author": "Painted by Bishop Eadfrith at Lindisfarne Priory (c. AD 715), paired with Venerable Bede writing at Jarrow Monastery (AD 731).",
+                  "audience": "Fellow monks, Christian worshippers viewing the altar Gospel book, and future generations of readers.",
+                  "motive": "To glorify God through breathtaking sacred art and preserve historical and religious knowledge in writing."
+                }
+              },
+              "text": "Venerable Bede, Ecclesiastical History of the English Nation, Book V, Chapter 24 (AD 731): \"I have spent all the remainder of my life in this monastery, and wholly applied myself to the study of Scripture; and amidst the observance of regular discipline, and the daily care of singing in the church, I always took delight in learning, teaching, and writing.\"",
+              "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, Ecclesiastical History of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain)."
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "title": "c. AD 664–731: Monasteries, Illuminated Gospels & Venerable Bede",
+          "text": "<span class=\"para-ref\">[2.5]</span> Soon stone **monasteries** blossomed across Britain as centres of daily prayer, schooling, and art. High on the cliffs at **Whitby**, wise **Abbess Hilda** led a double monastery of **monks and nuns** and hosted the **AD 664 Synod of Whitby** uniting church customs. Inside quiet **scriptoriums**, scribes cut **feather quills** and ground jewel pigments onto smooth **calfskin vellum**.<br><br><span class=\"para-ref\">[2.6]</span> Around **AD 715**, Lindisfarne monks painted the breathtaking **Lindisfarne Gospels**, twisting Anglo-Saxon animal interlace around Latin scripture. Further south at **Jarrow**, the scholar-monk **Venerable Bede** completed his *Ecclesiastical History* in **AD 731** — earning his title **\"Father of English History\"** and popularising **AD dates**!",
+          "content": "<span class=\"para-ref\">[2.5]</span> Soon stone **monasteries** blossomed across Britain as centres of daily prayer, schooling, and art. High on the cliffs at **Whitby**, wise **Abbess Hilda** led a double monastery of **monks and nuns** and hosted the **AD 664 Synod of Whitby** uniting church customs. Inside quiet **scriptoriums**, scribes cut **feather quills** and ground jewel pigments onto smooth **calfskin vellum**.<br><br><span class=\"para-ref\">[2.6]</span> Around **AD 715**, Lindisfarne monks painted the breathtaking **Lindisfarne Gospels**, twisting Anglo-Saxon animal interlace around Latin scripture. Further south at **Jarrow**, the scholar-monk **Venerable Bede** completed his *Ecclesiastical History* in **AD 731** — earning his title **\"Father of English History\"** and popularising **AD dates**!",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/st_pauls_church_jarrow_bede.jpg",
+          "image_alt": "Anglo-Saxon stone chancel of St Paul’s Church at Jarrow Monastery where Venerable Bede lived and wrote",
+          "caption": "Surviving 7th-century Anglo-Saxon stonework of St Paul’s Church at Jarrow in Northumbria, home of the scholar-monk Venerable Bede.",
+          "image_caption": "Surviving 7th-century Anglo-Saxon stonework of St Paul’s Church at Jarrow in Northumbria, home of the scholar-monk Venerable Bede.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l2_src_d",
+              "letter": "D",
+              "source_letter": "D",
+              "type": "visual",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/bewcastle_anglo_saxon_cross.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/bewcastle_anglo_saxon_cross.jpg",
+              "title": "Source D: Carved Anglo-Saxon Stone High Cross at Bewcastle, Cumbria (Late 7th–Early 8th Century AD)",
+              "caption": "Standing over four metres tall in a rural churchyard near Hadrian’s Wall, the sandstone Bewcastle Cross combines Christian figures of Christ, twining vine scrolls, a sundial, and carved Anglo-Saxon runic inscriptions.",
+              "author": "Northumbrian Master Stone-Sculptors",
+              "date": "c. AD 680–720",
+              "context": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+              "source_context": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+              "hinge_question": "Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+              "question_badge": "RUNES & CHRISTIAN CROSS",
+              "question": "Examine the tall carved stone shaft in Source D. Why was putting both Christian carvings and Old English runes on outdoor crosses such a clever way to share new beliefs?",
+              "model_answer": "Most country villagers could not read Latin manuscripts locked inside monasteries, so a towering carved cross acted as a visual storybook outdoors. Blending familiar Old English runes and interlacing patterns with Christian images helped pagan communities understand and welcome the new faith.",
+              "provenance_clues": {
+                "author": "Carved by Northumbrian monastic stone-masons recycling nearby Roman sandstone blocks.",
+                "audience": "Local Northumbrian farmers, travellers, and noble patrons gathering for outdoor worship.",
+                "motive": "To mark sacred Christian ground, commemorate local leaders in runes, and teach Bible stories visually.",
+                "hinge_question": "Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+                "source_context": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+                "provenance_breakdown": {
+                  "author": "Carved by Northumbrian monastic stone-masons recycling nearby Roman sandstone blocks.",
+                  "audience": "Local Northumbrian farmers, travellers, and noble patrons gathering for outdoor worship.",
+                  "motive": "To mark sacred Christian ground, commemorate local leaders in runes, and teach Bible stories visually."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "RUNES & CHRISTIAN CROSS",
+                "model_answer": "Most country villagers could not read Latin manuscripts locked inside monasteries, so a towering carved cross acted as a visual storybook outdoors. Blending familiar Old English runes and interlacing patterns with Christian images helped pagan communities understand and welcome the new faith.",
+                "provenance_clues": {
+                  "author": "Carved by Northumbrian monastic stone-masons recycling nearby Roman sandstone blocks.",
+                  "audience": "Local Northumbrian farmers, travellers, and noble patrons gathering for outdoor worship.",
+                  "motive": "To mark sacred Christian ground, commemorate local leaders in runes, and teach Bible stories visually."
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l2_src_a",
+          "letter": "A",
+          "source_letter": "A",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+          "title": "Source A: The Iconic Iron-and-Bronze Sutton Hoo Helmet (Buried c. AD 625)",
+          "caption": "Ceremonial iron Anglo-Saxon war helmet from Mound 1 at Sutton Hoo, decorated with tinned-bronze panels of dancing warriors, silver-wire eyebrows tipped with gilded boars, and a flying dragon nose-bridge (British Museum).",
+          "author": "Master Royal East Anglian Armourer",
+          "date": "c. AD 625 (Excavated 1939)",
+          "context": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+          "source_context": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+          "hinge_question": "How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+          "question_badge": "SUTTON HOO ROYAL HELMET",
+          "question": "Look closely at the eyebrows, nose-guard, and bronze panels on Source A. What hidden animals can you spot, and what did this helmet say about the ruler who wore it?",
+          "model_answer": "Source A hides a gilded flying dragon stretching across the nose, moustache, and silver-inlaid eyebrows, which end in tiny boar heads above stamped battle scenes. Wearing such dazzling iron, bronze, silver, and garnet armour proclaimed that this ruler — likely King Raedwald — was a mighty, wealthy warlord.",
+          "provenance_clues": {
+            "author": "Forged and inlaid by a master royal metalsmith in early 7th-century East Anglia.",
+            "audience": "Rival kings, loyal hall warriors, and mourners gathered around the Mound 1 ship burial.",
+            "motive": "To project awe-inspiring royal authority in life and equip a great king magnificently in death.",
+            "hinge_question": "How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?"
+          },
+          "teacher_notes": {
+            "hinge_question": "How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+            "source_context": "Shattered into more than 500 corroded fragments when the wooden burial chamber roof collapsed, the Sutton Hoo helmet was painstakingly pieced back together like a 3D jigsaw at the British Museum, revealing a gleaming dragon whose wings form the eyebrows and tail forms the moustache! **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
+            "provenance_breakdown": {
+              "author": "Forged and inlaid by a master royal metalsmith in early 7th-century East Anglia.",
+              "audience": "Rival kings, loyal hall warriors, and mourners gathered around the Mound 1 ship burial.",
+              "motive": "To project awe-inspiring royal authority in life and equip a great king magnificently in death."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "SUTTON HOO ROYAL HELMET",
+            "model_answer": "Source A hides a gilded flying dragon stretching across the nose, moustache, and silver-inlaid eyebrows, which end in tiny boar heads above stamped battle scenes. Wearing such dazzling iron, bronze, silver, and garnet armour proclaimed that this ruler — likely King Raedwald — was a mighty, wealthy warlord.",
+            "provenance_clues": {
+              "author": "Forged and inlaid by a master royal metalsmith in early 7th-century East Anglia.",
+              "audience": "Rival kings, loyal hall warriors, and mourners gathered around the Mound 1 ship burial.",
+              "motive": "To project awe-inspiring royal authority in life and equip a great king magnificently in death."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l2_src_b",
+          "letter": "B",
+          "source_letter": "B",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_shoulder_clasps.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_shoulder_clasps.jpg",
+          "title": "Source B: Gold-and-Garnet Cloisonné Shoulder Clasps from Sutton Hoo Mound 1 (c. AD 625)",
+          "caption": "Curved hinged gold shoulder clasps inlaid with hundreds of hand-cut red garnets and chequered blue millefiori glass over patterned gold foil, bordered by interlaced boars (British Museum).",
+          "author": "Master Anglo-Saxon Goldsmith",
+          "date": "c. AD 625",
+          "context": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+          "source_context": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+          "hinge_question": "What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+          "question_badge": "GOLD & SRI LANKAN GARNETS",
+          "question": "Inspect the tiny red stones and blue glass chequers in Source B. Where did those red garnets come from, and what does that prove about Anglo-Saxon Britain’s place in the wider world?",
+          "model_answer": "The blood-red garnets in Source B travelled thousands of miles from India and Sri Lanka, set beside Mediterranean millefiori glass by an East Anglian goldsmith. Alongside Frankish gold coins and Byzantine silver spoons, this proves Anglo-Saxon kingdoms were connected to vast international trade networks.",
+          "provenance_clues": {
+            "author": "Crafted by a master Anglo-Saxon goldsmith setting imported Asian garnets into tiny gold cells.",
+            "audience": "Royal court guests and fellow rulers across Britain and Frankish Europe.",
+            "motive": "To fasten royal body-armour in dazzling style while displaying long-distance wealth and status.",
+            "hinge_question": "What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?"
+          },
+          "teacher_notes": {
+            "hinge_question": "What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+            "source_context": "Scientific testing proved that the glowing red garnets set into tiny gold cells (cloisonné) on Sutton Hoo’s shoulder clasps and sword fittings travelled over 4,000 miles along ancient trade routes from India and Sri Lanka! **Hinge Question:** What do red garnets from Sri Lanka and Byzantine silver spoons inside a Suffolk burial mound prove about Anglo-Saxon trade links?",
+            "provenance_breakdown": {
+              "author": "Crafted by a master Anglo-Saxon goldsmith setting imported Asian garnets into tiny gold cells.",
+              "audience": "Royal court guests and fellow rulers across Britain and Frankish Europe.",
+              "motive": "To fasten royal body-armour in dazzling style while displaying long-distance wealth and status."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "GOLD & SRI LANKAN GARNETS",
+            "model_answer": "The blood-red garnets in Source B travelled thousands of miles from India and Sri Lanka, set beside Mediterranean millefiori glass by an East Anglian goldsmith. Alongside Frankish gold coins and Byzantine silver spoons, this proves Anglo-Saxon kingdoms were connected to vast international trade networks.",
+            "provenance_clues": {
+              "author": "Crafted by a master Anglo-Saxon goldsmith setting imported Asian garnets into tiny gold cells.",
+              "audience": "Royal court guests and fellow rulers across Britain and Frankish Europe.",
+              "motive": "To fasten royal body-armour in dazzling style while displaying long-distance wealth and status."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l2_src_c",
+          "letter": "C",
+          "source_letter": "C",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_gospels_illuminated_page.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_gospels_illuminated_page.jpg",
+          "title": "Source C: Illuminated Carpet Page from the Lindisfarne Gospels (c. AD 715) & Bede on Monastic Learning (AD 731)",
+          "caption": "Intricately painted cross-carpet page from the Lindisfarne Gospels, created on Holy Island by Bishop Eadfrith using calfskin vellum and ground mineral pigments, paired with Venerable Bede’s description of monastic scholarship.",
+          "author": "Bishop Eadfrith of Lindisfarne & Venerable Bede (tr. J. A. Giles, 1847)",
+          "date": "c. AD 715–731",
+          "context": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+          "source_context": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+          "hinge_question": "How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+          "question_badge": "LINDISFARNE GOSPELS & BEDE",
+          "question": "Look at the intricate patterns in Source C and read Bede’s words. How did Christian monks and nuns transform reading, art, and history-writing in Britain?",
+          "model_answer": "Early pagan Anglo-Saxons rarely wrote books, whereas Christian monasteries trained monks and nuns in Latin reading, teaching, and writing on calfskin vellum. Source C shows monks fused dazzling Anglo-Saxon animal knotwork with Christian crosses, while scholars like Bede wrote Britain’s earliest history books.",
+          "provenance_clues": {
+            "author": "Painted by Bishop Eadfrith at Lindisfarne Priory (c. AD 715), paired with Venerable Bede writing at Jarrow Monastery (AD 731).",
+            "audience": "Fellow monks, Christian worshippers viewing the altar Gospel book, and future generations of readers.",
+            "motive": "To glorify God through breathtaking sacred art and preserve historical and religious knowledge in writing.",
+            "hinge_question": "How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?"
+          },
+          "teacher_notes": {
+            "hinge_question": "How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+            "source_context": "Working by daylight inside Lindisfarne’s windswept island scriptorium, one master artist-monk (Bishop Eadfrith) prepared over 250 calfskins and painted microscopic interlacing birds and hounds without a single visible mistake to honour God and St Cuthbert. **Hinge Question:** How did Christian monasteries change who could read, write, and record history in Anglo-Saxon Britain?",
+            "provenance_breakdown": {
+              "author": "Painted by Bishop Eadfrith at Lindisfarne Priory (c. AD 715), paired with Venerable Bede writing at Jarrow Monastery (AD 731).",
+              "audience": "Fellow monks, Christian worshippers viewing the altar Gospel book, and future generations of readers.",
+              "motive": "To glorify God through breathtaking sacred art and preserve historical and religious knowledge in writing."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "LINDISFARNE GOSPELS & BEDE",
+            "model_answer": "Early pagan Anglo-Saxons rarely wrote books, whereas Christian monasteries trained monks and nuns in Latin reading, teaching, and writing on calfskin vellum. Source C shows monks fused dazzling Anglo-Saxon animal knotwork with Christian crosses, while scholars like Bede wrote Britain’s earliest history books.",
+            "provenance_clues": {
+              "author": "Painted by Bishop Eadfrith at Lindisfarne Priory (c. AD 715), paired with Venerable Bede writing at Jarrow Monastery (AD 731).",
+              "audience": "Fellow monks, Christian worshippers viewing the altar Gospel book, and future generations of readers.",
+              "motive": "To glorify God through breathtaking sacred art and preserve historical and religious knowledge in writing."
+            }
+          },
+          "text": "Venerable Bede, Ecclesiastical History of the English Nation, Book V, Chapter 24 (AD 731): \"I have spent all the remainder of my life in this monastery, and wholly applied myself to the study of Scripture; and amidst the observance of regular discipline, and the daily care of singing in the church, I always took delight in learning, teaching, and writing.\"",
+          "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, Ecclesiastical History of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l2_src_d",
+          "letter": "D",
+          "source_letter": "D",
+          "type": "visual",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/bewcastle_anglo_saxon_cross.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/bewcastle_anglo_saxon_cross.jpg",
+          "title": "Source D: Carved Anglo-Saxon Stone High Cross at Bewcastle, Cumbria (Late 7th–Early 8th Century AD)",
+          "caption": "Standing over four metres tall in a rural churchyard near Hadrian’s Wall, the sandstone Bewcastle Cross combines Christian figures of Christ, twining vine scrolls, a sundial, and carved Anglo-Saxon runic inscriptions.",
+          "author": "Northumbrian Master Stone-Sculptors",
+          "date": "c. AD 680–720",
+          "context": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+          "source_context": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+          "hinge_question": "Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+          "question_badge": "RUNES & CHRISTIAN CROSS",
+          "question": "Examine the tall carved stone shaft in Source D. Why was putting both Christian carvings and Old English runes on outdoor crosses such a clever way to share new beliefs?",
+          "model_answer": "Most country villagers could not read Latin manuscripts locked inside monasteries, so a towering carved cross acted as a visual storybook outdoors. Blending familiar Old English runes and interlacing patterns with Christian images helped pagan communities understand and welcome the new faith.",
+          "provenance_clues": {
+            "author": "Carved by Northumbrian monastic stone-masons recycling nearby Roman sandstone blocks.",
+            "audience": "Local Northumbrian farmers, travellers, and noble patrons gathering for outdoor worship.",
+            "motive": "To mark sacred Christian ground, commemorate local leaders in runes, and teach Bible stories visually.",
+            "hinge_question": "Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+            "source_context": "Before every village had a stone church, Northumbrian sculptors raised towering sandstone crosses outdoors as open-air preaching landmarks — carving Christian scenes right alongside traditional Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
+            "provenance_breakdown": {
+              "author": "Carved by Northumbrian monastic stone-masons recycling nearby Roman sandstone blocks.",
+              "audience": "Local Northumbrian farmers, travellers, and noble patrons gathering for outdoor worship.",
+              "motive": "To mark sacred Christian ground, commemorate local leaders in runes, and teach Bible stories visually."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "RUNES & CHRISTIAN CROSS",
+            "model_answer": "Most country villagers could not read Latin manuscripts locked inside monasteries, so a towering carved cross acted as a visual storybook outdoors. Blending familiar Old English runes and interlacing patterns with Christian images helped pagan communities understand and welcome the new faith.",
+            "provenance_clues": {
+              "author": "Carved by Northumbrian monastic stone-masons recycling nearby Roman sandstone blocks.",
+              "audience": "Local Northumbrian farmers, travellers, and noble patrons gathering for outdoor worship.",
+              "motive": "To mark sacred Christian ground, commemorate local leaders in runes, and teach Bible stories visually."
+            }
+          }
+        }
+      ],
+      "causal_domino_spine": {
+        "title": "Sutton Hoo & Christian Conversion Spine",
+        "subtitle": "From Royal Pagan Ship Burials to Canterbury, Lindisfarne, and Illuminated Vellum Books",
+        "stages": [
+          {
+            "step": 1,
+            "para_ref": "[2.1]",
+            "date": "c. AD 625 & 1939",
+            "title": "Sutton Hoo’s Ghost Ship & Global Treasures",
+            "actor": "King Raedwald, Edith Pretty & Basil Brown",
+            "tag": "🪖 SUTTON HOO",
+            "trigger": "Basil Brown’s 1939 dig at Edith Pretty’s Mound 1 uncovered iron rivets of a 27m ship holding a war helmet, Sri Lankan garnets, Byzantine spoons, and Frankish coins.",
+            "connective": "Captured the exact crossroads between pagan warrior kingship and arriving Christianity.",
+            "question": "What did Basil Brown’s 1939 dig at Sutton Hoo prove about Anglo-Saxon kings?",
+            "prose_hash": "35439fc32b"
+          },
+          {
+            "step": 2,
+            "para_ref": "[2.3]",
+            "date": "AD 597–635",
+            "title": "Missionaries at Canterbury & Lindisfarne",
+            "actor": "Augustine, Queen Bertha & Aidan",
+            "tag": "✝️ CONVERSION",
+            "trigger": "Pope Gregory sent Augustine to King Ethelbert and Queen Bertha at Canterbury (AD 597), while Aidan sailed from Iona to found Lindisfarne in Northumbria (AD 635).",
+            "connective": "Spread Christian churches and royal baptisms from both south-east and north-west.",
+            "question": "How did missionaries bring Christianity from both Rome and Iona?",
+            "prose_hash": "7a2dab1d0e"
+          },
+          {
+            "step": 3,
+            "para_ref": "[2.5]",
+            "date": "c. AD 664–731",
+            "title": "Whitby, Illuminated Gospels & Venerable Bede",
+            "actor": "Abbess Hilda & Venerable Bede",
+            "tag": "📖 MONASTERIES",
+            "trigger": "Abbess Hilda led Whitby, monks painted the Lindisfarne Gospels on calfskin vellum with feather quills, and Bede finished his Ecclesiastical History at Jarrow in AD 731.",
+            "connective": "Turned Anglo-Saxon monasteries into rich treasuries of books, silver, and learning.",
+            "question": "How did monasteries transform books, artwork, and history-writing?",
+            "prose_hash": "954831d11f"
+          }
+        ]
+      },
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "What did Basil Brown’s 1939 dig at Sutton Hoo prove about Anglo-Saxon kings?",
+          "focus_clue": "What did Basil Brown’s 1939 dig at Sutton Hoo prove about Anglo-Saxon kings?",
+          "words": [
+            {
+              "term": "Basil Brown",
+              "clue": "Self-taught Suffolk archaeologist asked by landowner Edith Pretty in 1939 to excavate Mound 1."
+            },
+            {
+              "term": "27-metre ship",
+              "clue": "Acidic sand rotted the oak planks, leaving rows of iron rivets tracing a huge royal burial vessel."
+            },
+            {
+              "term": "King Raedwald",
+              "clue": "Powerful East Anglian ruler likely honoured with the helmet, Sri Lankan garnets, and Byzantine spoons."
+            }
+          ],
+          "model_sentence": "In 1939, <strong>Basil Brown</strong> uncovered iron rivets of a <strong>27-metre ship</strong> packed with global treasures likely buried for <strong>King Raedwald</strong>.",
+          "title": "c. AD 625 & 1939: The Ghost Ship in Mound 1 at Sutton Hoo",
+          "question": "What did Basil Brown’s 1939 dig at Sutton Hoo prove about Anglo-Saxon kings?",
+          "questionHeading": "What did Basil Brown’s 1939 dig at Sutton Hoo prove about Anglo-Saxon kings?",
+          "focusClue": "What did Basil Brown’s 1939 dig at Sutton Hoo prove about Anglo-Saxon kings?",
+          "date": "c. AD 625 & 1939",
+          "dates": "c. AD 625 & 1939",
+          "para_ref": "[2.1]",
+          "paraRef": "[2.1]",
+          "prose_hash": "35439fc32b"
+        },
+        {
+          "step": 2,
+          "heading": "How did missionaries bring Christianity from both Rome and Iona?",
+          "focus_clue": "How did missionaries bring Christianity from both Rome and Iona?",
+          "words": [
+            {
+              "term": "Augustine",
+              "clue": "Monk sent from Rome by Pope Gregory in AD 597 to preach in Canterbury, Kent."
+            },
+            {
+              "term": "Queen Bertha",
+              "clue": "Christian Frankish queen married to King Ethelbert of Kent who already worshipped at St Martin’s Church."
+            },
+            {
+              "term": "Aidan at Lindisfarne",
+              "clue": "Irish-Scottish monk from Iona who founded Holy Island priory in Northumbria in AD 635."
+            }
+          ],
+          "model_sentence": "Christianity arrived from two directions: <strong>Augustine</strong> met King Ethelbert and <strong>Queen Bertha</strong> in Kent in AD 597, followed by <strong>Aidan at Lindisfarne</strong> in AD 635.",
+          "title": "AD 597–635: Two Paths to Christianity — Canterbury & Lindisfarne",
+          "question": "How did missionaries bring Christianity from both Rome and Iona?",
+          "questionHeading": "How did missionaries bring Christianity from both Rome and Iona?",
+          "focusClue": "How did missionaries bring Christianity from both Rome and Iona?",
+          "date": "AD 597–635",
+          "dates": "AD 597–635",
+          "para_ref": "[2.3]",
+          "paraRef": "[2.3]",
+          "prose_hash": "7a2dab1d0e"
+        },
+        {
+          "step": 3,
+          "heading": "How did monasteries transform books, artwork, and history-writing?",
+          "focus_clue": "How did monasteries transform books, artwork, and history-writing?",
+          "words": [
+            {
+              "term": "Abbess Hilda",
+              "clue": "Wise royal leader of Whitby’s double monastery of monks and nuns who hosted the AD 664 Synod."
+            },
+            {
+              "term": "Lindisfarne Gospels",
+              "clue": "Dazzling Latin Gospel manuscript painted around AD 715 on calfskin vellum using feather quills."
+            },
+            {
+              "term": "Venerable Bede",
+              "clue": "Scholar-monk at Jarrow who finished his Ecclesiastical History of the English People in AD 731."
+            }
+          ],
+          "model_sentence": "Led by pioneers like <strong>Abbess Hilda</strong>, monasteries produced masterpieces like the <strong>Lindisfarne Gospels</strong> and historical books by <strong>Venerable Bede</strong>.",
+          "title": "c. AD 664–731: Monasteries, Illuminated Gospels & Venerable Bede",
+          "question": "How did monasteries transform books, artwork, and history-writing?",
+          "questionHeading": "How did monasteries transform books, artwork, and history-writing?",
+          "focusClue": "How did monasteries transform books, artwork, and history-writing?",
+          "date": "c. AD 664–731",
+          "dates": "c. AD 664–731",
+          "para_ref": "[2.5]",
+          "paraRef": "[2.5]",
+          "prose_hash": "954831d11f"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source A (the Sutton Hoo helmet) and Source B (the gold-and-garnet shoulder clasps). What clues prove that the person buried in Mound 1 was a rich, internationally connected king?",
+          "starter": "Examining the dazzling grave goods in Sources A and B, archaeologists can infer that Mound 1 belonged to a powerful king because...",
+          "word_bank": [
+            "helmet",
+            "flying dragon",
+            "red garnets",
+            "Sri Lanka"
+          ],
+          "hints": [
+            "Describe the silver-inlaid eyebrows, boar heads, and flying dragon face-mask on the helmet in Source A.",
+            "Explain how far the red garnets (from India and Sri Lanka), Byzantine silver spoons, and Frankish coins had travelled.",
+            "Scholar Challenge (Year 5+): Explain why finding BOTH a pagan ship burial and Christian silver spoons points specifically to King Raedwald of East Anglia around AD 625!"
+          ],
+          "model_answer": "Examining the dazzling grave goods in Sources A and B, archaeologists can infer that Mound 1 belonged to a powerful king because ordinary farmers could never afford an iron-and-bronze helmet inlaid with silver eyebrows, gilded boars, and a flying dragon. Source B’s hinged gold shoulder clasps are packed with hundreds of hand-cut red garnets traded over 4,000 miles from India and Sri Lanka, buried beside Byzantine silver spoons and Frankish gold coins. Because the grave mixes pagan ship customs with Christian silver spoons, historians link it to King Raedwald of East Anglia around AD 625!",
+          "key_terms": [
+            "Sutton Hoo helmet",
+            "shoulder clasps",
+            "Sri Lanka",
+            "King Raedwald"
+          ]
+        },
+        {
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "How did Christianity spread across Anglo-Saxon Britain from TWO different directions between AD 597 and AD 635?",
+          "starter": "Between AD 597 and AD 635, Christian missionaries reached Anglo-Saxon kingdoms along two different routes...",
+          "word_bank": [
+            "Augustine",
+            "Canterbury",
+            "Queen Bertha",
+            "Lindisfarne"
+          ],
+          "hints": [
+            "Explain the southern route in AD 597: Pope Gregory sending Augustine from Rome to King Ethelbert and Christian Queen Bertha at Canterbury in Kent.",
+            "Explain the northern route in AD 635: the Irish-Scottish monk Aidan sailing from Iona to found Lindisfarne in King Oswald’s Northumbria.",
+            "Scholar Challenge (Year 5+): Explain how Abbess Hilda’s AD 664 Synod of Whitby brought these Roman and Celtic church traditions together."
+          ],
+          "model_answer": "Between AD 597 and AD 635, Christian missionaries reached Anglo-Saxon kingdoms along two different routes. From the south-east in AD 597, Pope Gregory in Rome sent the monk Augustine to Kent, where King Ethelbert — encouraged by his Christian Frankish wife Queen Bertha at St Martin’s Church — allowed Britain’s first Anglo-Saxon cathedral at Canterbury. From the north-west in AD 635, the Irish-Scottish monk Aidan travelled from Iona to King Oswald’s Northumbria, founding a coastal priory on Lindisfarne (Holy Island). Later, Abbess Hilda hosted the AD 664 Synod of Whitby to unite both church traditions.",
+          "key_terms": [
+            "Augustine",
+            "Canterbury",
+            "Aidan",
+            "Lindisfarne"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine you are a young novice scribe working inside a chilly Northumbrian monastery scriptorium like Lindisfarne or Jarrow around AD 715. Describe creating an illuminated Gospel page!",
+          "starter": "Dipping my sharpened goose-feather quill carefully into bright mineral paint inside our stone scriptorium, I...",
+          "word_bank": [
+            "scriptorium",
+            "calfskin vellum",
+            "feather quills",
+            "Lindisfarne Gospels"
+          ],
+          "hints": [
+            "Describe preparing smooth calfskin vellum, sharpening feather quills, and grinding colorful minerals by daylight.",
+            "Describe painting microscopic Anglo-Saxon interlacing birds and crosses like Source C while hearing church psalms.",
+            "Scholar Challenge (Year 5+): Mention a message arriving from Brother Bede down the coast at Jarrow asking about old royal dates for his new history book!"
+          ],
+          "model_answer": "Dipping my sharpened goose-feather quill carefully into bright mineral paint inside our stone scriptorium, I hold my breath so my hand does not wobble across the smooth calfskin vellum! Waves crash against Holy Island outside while my fellow monks chant psalms in church. All week we scraped dozens of calfskins and ground glowing red, yellow, and blue pigments to weave tiny Anglo-Saxon birds and hounds around a giant Christian cross for our Lindisfarne Gospels — just as word arrives from Brother Bede at Jarrow checking dates for his great English history!",
+          "key_terms": [
+            "scriptorium",
+            "calfskin vellum",
+            "feather quills",
+            "Venerable Bede"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why do historians need BOTH archaeology (like Sutton Hoo) AND written books (like Venerable Bede’s history) to understand Anglo-Saxon Britain?",
+          "starter": "Historians need both buried archaeological treasures like Sutton Hoo and monastic books like Bede’s history because...",
+          "word_bank": [
+            "Basil Brown",
+            "iron rivets",
+            "Venerable Bede",
+            "AD 731"
+          ],
+          "hints": [
+            "Explain what Bede’s AD 731 written history tells us (names of kings, dates, Augustine, Aidan, and Abbess Hilda).",
+            "Explain what archaeology at Sutton Hoo proves that books never described (the 27m ship rivets, dragon helmet, and Sri Lankan garnets).",
+            "Scholar Challenge (Year 5+): Point out that monks mostly wrote about kings and churches — so archaeology is also vital for uncovering everyday craftspeople and pagan burials!"
+          ],
+          "model_answer": "Historians need both buried archaeological treasures like Sutton Hoo and monastic books like Bede’s history because each source fills in the other’s blind spots! Written manuscripts like Venerable Bede’s AD 731 Ecclesiastical History give us exact names, AD dates, and stories of missionaries like Augustine, Aidan, and Abbess Hilda. Yet Bede never mentioned the Mound 1 ship burial! Only Basil Brown’s careful 1939 excavation of iron rivets, the dragon-browed helmet, and Sri Lankan garnets proved just how dazzling pagan royal craftsmanship and 4,000-mile trade networks really were.",
+          "key_terms": [
+            "Sutton Hoo",
+            "Basil Brown",
+            "Venerable Bede",
+            "archaeology"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "stage": 1,
+          "question": "Even though acidic Suffolk sand rotted the oak wood and bones in Mound 1 at Sutton Hoo, how did Basil Brown prove a 27-metre ship was buried there in 1939?",
+          "q": "Even though acidic Suffolk sand rotted the oak wood and bones in Mound 1 at Sutton Hoo, how did Basil Brown prove a 27-metre ship was buried there in 1939?",
+          "options": [
+            "Rows of rusted iron rivets and dark stained sand still preserved the exact shape of the hull",
+            "A Roman photograph was buried inside a glass jar",
+            "The wooden sails were still flying above the grass mound",
+            "Julius Caesar wrote a diary inside the cabin"
+          ],
+          "correct": 0,
+          "answer": "Rows of rusted iron rivets and dark stained sand still preserved the exact shape of the hull",
+          "a": "Rows of rusted iron rivets and dark stained sand still preserved the exact shape of the hull",
+          "explanation": "Carefully brushing away sand on Edith Pretty’s estate, Basil Brown left hundreds of iron ship rivets in place, revealing a ghostly 27-metre ship."
+        },
+        {
+          "stage": 1,
+          "question": "Where had the glowing red garnets set into Sutton Hoo’s gold shoulder clasps and sword fittings travelled from?",
+          "q": "Where had the glowing red garnets set into Sutton Hoo’s gold shoulder clasps and sword fittings travelled from?",
+          "options": [
+            "North America and Brazil",
+            "India and Sri Lanka",
+            "Iceland and Greenland",
+            "Australia and New Zealand"
+          ],
+          "correct": 1,
+          "answer": "India and Sri Lanka",
+          "a": "India and Sri Lanka",
+          "explanation": "Scientific tests showed the red garnets came over 4,000 miles from India and Sri Lanka, alongside Byzantine silver spoons and Frankish gold coins."
+        },
+        {
+          "stage": 2,
+          "question": "Who arrived at Canterbury in AD 597 from Rome, and who founded Lindisfarne Priory in Northumbria in AD 635?",
+          "q": "Who arrived at Canterbury in AD 597 from Rome, and who founded Lindisfarne Priory in Northumbria in AD 635?",
+          "options": [
+            "Augustine at Canterbury (AD 597) and Aidan at Lindisfarne (AD 635)",
+            "Claudius at Canterbury and Boudicca at Lindisfarne",
+            "Guthrum at Canterbury and Ivar at Lindisfarne",
+            "Honorius at Canterbury and Caesar at Lindisfarne"
+          ],
+          "correct": 0,
+          "answer": "Augustine at Canterbury (AD 597) and Aidan at Lindisfarne (AD 635)",
+          "a": "Augustine at Canterbury (AD 597) and Aidan at Lindisfarne (AD 635)",
+          "explanation": "Pope Gregory sent Augustine to King Ethelbert and Queen Bertha in Kent (AD 597), while Aidan travelled from Iona to found Lindisfarne (AD 635)."
+        },
+        {
+          "stage": 3,
+          "question": "What smooth material were precious illuminated manuscripts like the Lindisfarne Gospels painted onto using feather quills?",
+          "q": "What smooth material were precious illuminated manuscripts like the Lindisfarne Gospels painted onto using feather quills?",
+          "options": [
+            "Wood-pulp newspaper sheets",
+            "Calfskin vellum",
+            "Baked clay roof tiles",
+            "Pressed cotton canvas"
+          ],
+          "correct": 1,
+          "answer": "Calfskin vellum",
+          "a": "Calfskin vellum",
+          "explanation": "Monks prepared hundreds of smooth calfskins (vellum) and painted intricate interlacing patterns with feather quills and ground mineral pigments."
+        },
+        {
+          "stage": 3,
+          "question": "Which scholar-monk at Jarrow completed his famous Ecclesiastical History of the English People in AD 731, popularising AD dates?",
+          "q": "Which scholar-monk at Jarrow completed his famous Ecclesiastical History of the English People in AD 731, popularising AD dates?",
+          "options": [
+            "Basil Brown",
+            "King Raedwald",
+            "Venerable Bede",
+            "King Ethelbert"
+          ],
+          "correct": 2,
+          "answer": "Venerable Bede",
+          "a": "Venerable Bede",
+          "explanation": "Writing at St Paul’s Monastery in Jarrow in AD 731, Venerable Bede earned the title \"Father of English History\"."
+        }
+      ],
+      "video": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l2_vid_1",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=65d27rWlU1k",
+          "title": "Sutton Hoo Treasures Reveal Ancient Global Connections | Curator’s Corner | The British Museum",
+          "duration": "5 mins 48 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:45 | Lesson Phase: Act 1 Archaeological Hook | Watch British Museum curator Dr Sue Brunning examine real Sutton Hoo treasures up close to trace 4,000-mile links to Sri Lanka, Byzantium, and Francia.",
+          "viewing_task": "[01:15] Quick Check: Which distant lands supplied the red garnets, silver dishes, and gold coins buried in Mound 1?\n[03:30] Hinge Question: How do these treasures change our view of Britain around AD 625?",
+          "model_answer": "Quick Check: Red garnets came from India and Sri Lanka, silver vessels from the eastern Mediterranean Byzantine Empire, and gold coins from Frankish Europe.\nHinge Question: Far from being isolated or backward after Rome left, 7th-century Anglo-Saxon kingdoms were wealthy, artistic, and plugged into long-distance trade networks."
+        }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "skill": "Cause & Consequence / Technological Advantage",
+      "title": "Enquiry 3: Fury of the Northmen — Why Did Vikings Raid Lindisfarne & Conquer Kingdoms? (AD 793–878)",
+      "subtitle": "Shock on Holy Island, Shallow-Draught Oak Longships & the Great Heathen Army at Jorvik",
+      "enquiryQuestion": "Why did Viking raiders cross the sea from Scandinavia in AD 793, and how did the Great Heathen Army nearly conquer all England?",
+      "enquiry_question": "Why did Viking raiders cross the sea from Scandinavia in AD 793, and how did the Great Heathen Army nearly conquer all England?",
+      "prologue": "On 8 June AD 793, dragon-prowed warships beached silently on Holy Island at Lindisfarne, shocking every kingdom in Europe! Uncover the clever ocean-and-river engineering behind the Viking longship — and trace how summer raiders returned in AD 865 as a Great Heathen Army determined to conquer all England.",
+      "blurb": "On 8 June AD 793, dragon-prowed warships beached silently on Holy Island at Lindisfarne, shocking every kingdom in Europe! Uncover the clever ocean-and-river engineering behind the Viking longship — and trace how summer raiders returned in AD 865 as a Great Heathen Army determined to conquer all England.",
+      "hero_image": "/units/ks2_anglo_saxons_vikings/assets/viking_coastal_shield_wall.jpg",
+      "card_image": "/units/ks2_anglo_saxons_vikings/assets/viking_coastal_shield_wall.jpg",
+      "banner_position": "center 38%",
+      "card_position": "center 38%",
+      "teacher_notes": {
+        "primer": "This enquiry examines the start of the Viking Age in Britain from the shocking 8 June AD 793 attack on Lindisfarne to the Great Heathen Army’s near-total conquest of the Anglo-Saxon Heptarchy by AD 877. Pupils analyse why wealthy coastal monasteries were soft targets, evaluate monastic bias in the Anglo-Saxon Chronicle and Alcuin’s letters, dissect clinker-built longship engineering (overlapping oak strakes, tarred wool, square sail + oars, 1-metre shallow draught), and trace why Scandinavian land hunger and political ambition turned hit-and-run summer raids into permanent conquest at Repton and Jorvik (York).",
+        "objectives": [
+          {
+            "objective": "Explain why coastal monasteries like Holy Island (AD 793) were prime targets and why Christian writers reacted with horror.",
+            "primer": "Unpack silver chalices, gold reliquaries, unarmed monks, and the AD 793 Anglo-Saxon Chronicle & Alcuin reactions.",
+            "question": "Why did early Norse seafarers target isolated coastal monasteries rather than walled royal fortresses?"
+          },
+          {
+            "objective": "Analyse how clinker-built longship technology enabled both open-ocean crossings and inland river strikes.",
+            "primer": "Inspect overlapping oak strakes, iron rivets, tarred wool waterproofing, woollen sail, oars, and 1-metre shallow draught.",
+            "question": "How could the very same wooden ship cross the stormy North Sea AND row straight up shallow English rivers?"
+          },
+          {
+            "objective": "Explain why summer raiding changed in AD 865 into the Great Heathen Army’s conquest of Northumbria, East Anglia, and Mercia.",
+            "primer": "Follow Scandinavian farmland shortages, Ivar the Boneless, Halfdan, and Guthrum wintering at Repton and capturing Jorvik.",
+            "question": "What changed in AD 865 that put the survival of every Anglo-Saxon kingdom in danger?"
+          }
+        ],
+        "source_context": {
+          "Source A": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+          "Source B": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+          "Source C": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+          "Source D": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?"
+        },
+        "delivery_plan": {
+          "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
+          "lesson_1": {
+            "title": "Session 1: 8 June AD 793 & Secrets of the Clinker-Built Longship",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced-Retrieval Do Now (Lessons 1 & 2 Mix)",
+                "instruction": "Complete the 5-question Do Now mixing Lesson 1 settlement/place-names and Lesson 2 Sutton Hoo/monastic learning."
+              },
+              {
+                "time": "08–25m",
+                "label": "Shared Storytelling (Acts 1 & 2)",
+                "instruction": "Read Act 1 (8 June AD 793 shock on Holy Island) and Act 2 (clinker-built oak strakes, tarred wool, woollen sail + oars, and 1-metre shallow draught)."
+              },
+              {
+                "time": "25–42m",
+                "label": "Ship & Stone Detective Work (Sources A & B)",
+                "instruction": "Compare Source A (Gokstad ship & AD 793 Chronicle entry) with Source B (9th-century carved Raider Stone — spotting the missing horned helmets!)."
+              },
+              {
+                "time": "42–50m",
+                "label": "Class Hinge Check",
+                "instruction": "Oral Hinge Check: \"How did a 1-metre shallow draught give longship crews a huge technological advantage?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Session 2: Silver Hoards, the Great Heathen Army & Historian Writing",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Session 1 Recall Warm-Up",
+                "instruction": "Quick whiteboard recall of 8 June AD 793, soft-target monasteries, clinker strakes, tarred wool, and shallow river draught."
+              },
+              {
+                "time": "08–22m",
+                "label": "Act 3 Reading & Sources C–D",
+                "instruction": "Read Act 3 (Scandinavian push/pull causes and the AD 865 Great Heathen Army at Repton and Jorvik) and inspect Source C (sword & axe) and Source D (Cuerdale silver hoard)."
+              },
+              {
+                "time": "22–42m",
+                "label": "Dual-Scaffolded Historian Tasks",
+                "instruction": "Complete Tasks 1–4 using Foundation sentence starters and word banks, stretching Year 5+ pupils with Scholar Challenge prompts."
+              },
+              {
+                "time": "42–50m",
+                "label": "Tap-Tile Summary & Plenary Quiz",
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz."
+              }
+            ]
+          }
+        }
+      },
+      "do_now": {
+        "type": "questions",
+        "derived_from_prev": true,
+        "items": [
+          {
+            "stage": 1,
+            "question": "In Enquiry 1, what pushed Angles, Saxons, and Jutes out of Jutland and Saxony, and what pulled them to Britain?",
+            "answer": "Flooded coastal marshes pushed them out; Britain’s mild weather and fertile farmland pulled them in",
+            "explanation": "Push reasons drive people away from home, while pull reasons attract families to settle somewhere new."
+          },
+          {
+            "stage": 1,
+            "question": "In Enquiry 1, what do the Old English place-name endings \"-ham\", \"-ton\", and \"-ford\" tell us on a map today?",
+            "answer": "Village/homestead (-ham), fenced farmstead (-ton), and shallow river crossing (-ford)",
+            "explanation": "Thousands of English towns still carry the everyday Old English words of early settlers."
+          },
+          {
+            "stage": 2,
+            "question": "In Enquiry 2, who asked archaeologist Basil Brown to dig Mound 1 at Sutton Hoo in 1939, and which East Anglian ruler was likely honoured there?",
+            "answer": "Landowner Edith Pretty asked Basil Brown; the 27-metre ship burial likely honoured King Raedwald",
+            "explanation": "Rows of iron rivets, the war helmet, Sri Lankan garnets, and Byzantine spoons pointed to King Raedwald around AD 625."
+          },
+          {
+            "stage": 2,
+            "question": "In Enquiry 2, which missionary arrived at Canterbury from Rome in AD 597 to preach to King Ethelbert and Queen Bertha?",
+            "answer": "Augustine",
+            "explanation": "Pope Gregory sent Augustine to Kent in AD 597, founding England’s oldest cathedral seat at Canterbury."
+          },
+          {
+            "stage": 3,
+            "question": "In Enquiry 2, which scholar-monk at Jarrow completed his famous History of the English People on calfskin vellum in AD 731?",
+            "answer": "Venerable Bede",
+            "explanation": "Writing with feather quills at Jarrow Monastery, Bede earned the title \"Father of English History\"."
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "term": "Scandinavia",
+          "definition": "The northern European homelands of the Vikings — modern Norway, Denmark, and Sweden.",
+          "syllables": "Scan-di-na-vi-a",
+          "phonetic": "skan-dih-NAY-vee-uh",
+          "tier": "2"
+        },
+        {
+          "term": "Clinker-Built",
+          "definition": "Shipbuilding method overlapping flexible split oak planks (strakes) fastened with iron rivets and waterproofed with tarred wool.",
+          "syllables": "Clink-er-Built",
+          "phonetic": "KLINK-er-bilt",
+          "tier": "3"
+        },
+        {
+          "term": "Shallow Draught",
+          "definition": "Needing very little depth of water (barely 1 metre) to float, letting longships beach on sand or row far up inland rivers.",
+          "syllables": "Shal-low Draught",
+          "phonetic": "SHAL-oh draft",
+          "tier": "3"
+        },
+        {
+          "term": "Monastery Reliquary",
+          "definition": "A gold, silver, or jewelled casket kept inside a church to hold sacred saintly relics.",
+          "syllables": "Mon-as-ter-y Rel-i-qua-ry",
+          "phonetic": "MON-uh-stree REL-ih-kwuh-ree",
+          "tier": "3"
+        },
+        {
+          "term": "Great Heathen Army",
+          "definition": "The huge Viking invasion force that landed in AD 865 under Ivar the Boneless, Halfdan, and Guthrum to conquer land permanently.",
+          "syllables": "Great Hea-then Ar-my",
+          "phonetic": "GRAYT HEE-then AR-mee",
+          "tier": "3"
+        }
+      ],
+      "vocab_cloze_text": "In AD 793, Norse seafarers sailed from [Scandinavia] to seize silver chalices and each golden [Monastery Reliquary] on Holy Island. Their flexible [Clinker-Built] oak longships had a 1-metre [Shallow Draught], letting crews sail open seas and row straight up rivers. In AD 865, the [Great Heathen Army] arrived to winter at Repton and conquer kingdoms.",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "title": "8 June AD 793: Dragon Prows Strike Holy Island, Lindisfarne",
+          "text": "<span class=\"para-ref\">[3.1]</span> On **8 June AD 793**, sleek wooden warships with carved **dragon prows** sliced silently onto the sandy beach of **Holy Island** at **Lindisfarne**. Fierce **Viking** raiders from **Scandinavia** (Norway, Denmark, and Sweden) burst into the famous island priory. Isolated coastal monasteries were wealthy **soft targets** — packed with gleaming **silver chalices**, **gold reliquaries**, jewel-bound Gospels, and **unarmed monks** with no soldiers nearby.<br><br><span class=\"para-ref\">[3.2]</span> Shockwaves rippled across Christian Europe. The *Anglo-Saxon Chronicle* recorded *\"fiery dragons\"* in the sky before *\"heathen men miserably destroyed God's church at Lindisfarne\"*, while the York scholar **Alcuin** wept that such terror had never before appeared from the sea.",
+          "content": "<span class=\"para-ref\">[3.1]</span> On **8 June AD 793**, sleek wooden warships with carved **dragon prows** sliced silently onto the sandy beach of **Holy Island** at **Lindisfarne**. Fierce **Viking** raiders from **Scandinavia** (Norway, Denmark, and Sweden) burst into the famous island priory. Isolated coastal monasteries were wealthy **soft targets** — packed with gleaming **silver chalices**, **gold reliquaries**, jewel-bound Gospels, and **unarmed monks** with no soldiers nearby.<br><br><span class=\"para-ref\">[3.2]</span> Shockwaves rippled across Christian Europe. The *Anglo-Saxon Chronicle* recorded *\"fiery dragons\"* in the sky before *\"heathen men miserably destroyed God's church at Lindisfarne\"*, while the York scholar **Alcuin** wept that such terror had never before appeared from the sea.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_priory_holy_island.jpg",
+          "image_alt": "Coastal ruins of Lindisfarne Priory overlooking the North Sea on Holy Island in Northumberland",
+          "caption": "Holy Island at Lindisfarne on the exposed Northumberland coast, where Norse raiders struck St Cuthbert’s famous island monastery on 8 June AD 793.",
+          "image_caption": "Holy Island at Lindisfarne on the exposed Northumberland coast, where Norse raiders struck St Cuthbert’s famous island monastery on 8 June AD 793.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l3_src_a",
+              "letter": "A",
+              "source_letter": "A",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+              "title": "Source A: 9th-Century Gokstad Oak Longship & Anglo-Saxon Chronicle Entry for AD 793",
+              "caption": "The 24-metre clinker-built Gokstad Viking oak longship excavated in Norway (built c. AD 890, carrying 32 oarsmen), paired with the Anglo-Saxon Chronicle’s shocked record of the AD 793 Lindisfarne raid.",
+              "author": "Norse Master Shipwrights & Anglo-Saxon Chronicle (Ingram 1823 / Giles 1847 PD)",
+              "date": "AD 793 text / c. AD 890 ship",
+              "context": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+              "source_context": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+              "hinge_question": "Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+              "question_badge": "GOKSTAD SHIP & AD 793 CHRONICLE",
+              "question": "Compare the sleek oak longship in Source A with the monk’s words from AD 793. How did this ship design make coastal raids terrifying, and why did the chronicler call the raiders \"heathen men\"?",
+              "model_answer": "Source A’s long, low, clinker-built oak hull could cross open seas fast under sail and beach directly onto Holy Island’s sands without a harbour. Because Christian monks were the victims writing the Chronicle, they naturally called pagan Norse warriors terrifying \"heathen men\" destroying God’s church.",
+              "provenance_clues": {
+                "author": "Built by 9th-century Norwegian shipwrights; written entry compiled by Anglo-Saxon Christian monastic chroniclers.",
+                "audience": "English kings, churchmen, and readers preserving kingdom annals.",
+                "motive": "Shipwrights built for ocean speed and river stealth, while monks recorded the shocking sacrilege against St Cuthbert’s holy shrine.",
+                "hinge_question": "Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+                "source_context": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+                "provenance_breakdown": {
+                  "author": "Built by 9th-century Norwegian shipwrights; written entry compiled by Anglo-Saxon Christian monastic chroniclers.",
+                  "audience": "English kings, churchmen, and readers preserving kingdom annals.",
+                  "motive": "Shipwrights built for ocean speed and river stealth, while monks recorded the shocking sacrilege against St Cuthbert’s holy shrine."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "GOKSTAD SHIP & AD 793 CHRONICLE",
+                "model_answer": "Source A’s long, low, clinker-built oak hull could cross open seas fast under sail and beach directly onto Holy Island’s sands without a harbour. Because Christian monks were the victims writing the Chronicle, they naturally called pagan Norse warriors terrifying \"heathen men\" destroying God’s church.",
+                "provenance_clues": {
+                  "author": "Built by 9th-century Norwegian shipwrights; written entry compiled by Anglo-Saxon Christian monastic chroniclers.",
+                  "audience": "English kings, churchmen, and readers preserving kingdom annals.",
+                  "motive": "Shipwrights built for ocean speed and river stealth, while monks recorded the shocking sacrilege against St Cuthbert’s holy shrine."
+                }
+              },
+              "text": "The Anglo-Saxon Chronicle, Entry for AD 793 (Public Domain translation after Ingram 1823 / Giles 1847): \"A.D. 793. Here terrible portents came over the land of Northumbria, and miserably frightened the people: these were immense flashes of lightning, and fiery dragons were seen flying in the air. A great famine soon followed these signs; and a little after that in the same year [...] the ravaging of heathen men miserably destroyed God's church at Lindisfarne, through rapine and slaughter.\"",
+              "provenance": "The 9th-century Gokstad oak longship (Oslo, Norway), paired with The Anglo-Saxon Chronicle entry for AD 793 (Public Domain translation after Rev. James Ingram, 1823, and J. A. Giles, 1847)."
+            },
+            {
+              "id": "ks2_anglo_saxons_vikings_l3_src_b",
+              "letter": "B",
+              "source_letter": "B",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_viking_raider_stone.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_viking_raider_stone.jpg",
+              "title": "Source B: Carved 9th-Century Lindisfarne \"Viking Raider\" Grave Marker Stone",
+              "caption": "Sandstone grave marker carved on Holy Island in the 9th century showing seven marching warriors in tunics waving heavy battle-axes and broadswords overhead (Lindisfarne Priory).",
+              "author": "Northumbrian Monastic Stone-Carver on Lindisfarne",
+              "date": "9th Century AD",
+              "context": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+              "source_context": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+              "hinge_question": "Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+              "question_badge": "9TH-CENTURY RAIDER CARVING",
+              "question": "Look carefully at the seven marching warriors carved on Source B. What weapons are they raising, and what popular modern myth about Viking helmets is missing?",
+              "model_answer": "Source B shows warriors marching in single file raising broad iron swords and heavy battle-axes overhead, capturing the frightening memory of raids on Holy Island. Notice too that NOT ONE warrior wears a horned helmet — horned Viking helmets were invented by 19th-century opera costume designers!",
+              "provenance_clues": {
+                "author": "Carved by a 9th-century Northumbrian stone-sculptor working at Lindisfarne Priory.",
+                "audience": "Surviving monks, pilgrims, and islanders remembering the threat of armed attack and Judgement Day.",
+                "motive": "To mark a Christian grave while vividly depicting the armed violence facing coastal Northumbria.",
+                "hinge_question": "Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+                "source_context": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+                "provenance_breakdown": {
+                  "author": "Carved by a 9th-century Northumbrian stone-sculptor working at Lindisfarne Priory.",
+                  "audience": "Surviving monks, pilgrims, and islanders remembering the threat of armed attack and Judgement Day.",
+                  "motive": "To mark a Christian grave while vividly depicting the armed violence facing coastal Northumbria."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "9TH-CENTURY RAIDER CARVING",
+                "model_answer": "Source B shows warriors marching in single file raising broad iron swords and heavy battle-axes overhead, capturing the frightening memory of raids on Holy Island. Notice too that NOT ONE warrior wears a horned helmet — horned Viking helmets were invented by 19th-century opera costume designers!",
+                "provenance_clues": {
+                  "author": "Carved by a 9th-century Northumbrian stone-sculptor working at Lindisfarne Priory.",
+                  "audience": "Surviving monks, pilgrims, and islanders remembering the threat of armed attack and Judgement Day.",
+                  "motive": "To mark a Christian grave while vividly depicting the armed violence facing coastal Northumbria."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "8th–9th Century AD: Clinker-Built Longships — Engineering Marvels",
+          "text": "<span class=\"para-ref\">[3.3]</span> What gave Viking seafarers such astonishing speed and sudden surprise? Their secret weapon was the **clinker-built longship**. Master shipwrights overlapped flexible split **oak strakes** (*planks*), fastening them tightly with **iron rivets** and sealing every seam with waterproof **tarred wool**. Twin **steering oars** and symmetrical double-pointed ends let crews reverse quickly off narrow beaches.<br><br><span class=\"para-ref\">[3.4]</span> Powered by a wide square **woollen sail** across stormy open oceans, warriors could lower the mast and pull **wooden oars** whenever winds dropped. Crucially, a longship's flat hull needed barely a **1-metre shallow draught** of water — gliding straight up shallow **English rivers** to strike inland towns without warning!",
+          "content": "<span class=\"para-ref\">[3.3]</span> What gave Viking seafarers such astonishing speed and sudden surprise? Their secret weapon was the **clinker-built longship**. Master shipwrights overlapped flexible split **oak strakes** (*planks*), fastening them tightly with **iron rivets** and sealing every seam with waterproof **tarred wool**. Twin **steering oars** and symmetrical double-pointed ends let crews reverse quickly off narrow beaches.<br><br><span class=\"para-ref\">[3.4]</span> Powered by a wide square **woollen sail** across stormy open oceans, warriors could lower the mast and pull **wooden oars** whenever winds dropped. Crucially, a longship's flat hull needed barely a **1-metre shallow draught** of water — gliding straight up shallow **English rivers** to strike inland towns without warning!",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/viking_longship_anatomy_ks2.png",
+          "image_alt": "Labelled KS2 diagram of a clinker-built Viking longship showing overlapping oak strakes, square wool sail, oars, dragon prow, and 1-metre shallow draught",
+          "caption": "Anatomy of a clinker-built Viking oak longship — combining an ocean-going square woollen sail with oars and a 1-metre shallow river draught.",
+          "image_caption": "Anatomy of a clinker-built Viking oak longship — combining an ocean-going square woollen sail with oars and a 1-metre shallow river draught.",
+          "isReversed": true,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l3_src_c",
+              "letter": "C",
+              "source_letter": "C",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/viking_sword_and_axe.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/viking_sword_and_axe.jpg",
+              "title": "Source C: Forged Viking Iron Broadsword & Bearded Battle-Axe (9th–10th Century AD)",
+              "caption": "Double-edged pattern-welded Viking iron sword beside a broad-bladed iron battle-axe — weapons prized by Norse warriors from coastal raids to the Great Heathen Army.",
+              "author": "Scandinavian Master Weaponsmiths",
+              "date": "9th–10th Century AD",
+              "context": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+              "source_context": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+              "hinge_question": "Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+              "question_badge": "FORGED SWORD & BATTLE-AXE",
+              "question": "Examine the iron sword and axe in Source C. Why were weapons like these both deadly in battle and prized family treasures among Viking warriors?",
+              "model_answer": "Source C shows a balanced double-edged iron broadsword and a hooked battle-axe capable of splitting wooden shields. Because pattern-welding iron and steel required huge skill and cost, fine swords were given heroic nicknames and passed down from parent to child, while axes equipped fast-moving raiders.",
+              "provenance_clues": {
+                "author": "Hammered and pattern-welded by skilled Norse blacksmiths.",
+                "audience": "Viking ship crews, rival warlords, and Anglo-Saxon shield-walls.",
+                "motive": "To win close-combat battles swiftly and display a warrior’s wealth and rank.",
+                "hinge_question": "Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+                "source_context": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+                "provenance_breakdown": {
+                  "author": "Hammered and pattern-welded by skilled Norse blacksmiths.",
+                  "audience": "Viking ship crews, rival warlords, and Anglo-Saxon shield-walls.",
+                  "motive": "To win close-combat battles swiftly and display a warrior’s wealth and rank."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "FORGED SWORD & BATTLE-AXE",
+                "model_answer": "Source C shows a balanced double-edged iron broadsword and a hooked battle-axe capable of splitting wooden shields. Because pattern-welding iron and steel required huge skill and cost, fine swords were given heroic nicknames and passed down from parent to child, while axes equipped fast-moving raiders.",
+                "provenance_clues": {
+                  "author": "Hammered and pattern-welded by skilled Norse blacksmiths.",
+                  "audience": "Viking ship crews, rival warlords, and Anglo-Saxon shield-walls.",
+                  "motive": "To win close-combat battles swiftly and display a warrior’s wealth and rank."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "title": "AD 865–877: From Summer Raiders to the Great Heathen Army",
+          "text": "<span class=\"para-ref\">[3.5]</span> Back home in mountainous **Norway** and sandy **Denmark**, growing populations faced a sharp **shortage of fertile farmland**, while ambitious chieftains craved silver hoards, **trade wealth**, and rich kingdoms of their own. For seventy years, Viking fleets struck in summer and sailed home before winter.<br><br><span class=\"para-ref\">[3.6]</span> Everything changed in **AD 865**, when a huge **Great Heathen Army** led by brothers **Ivar the Boneless** and **Halfdan**, alongside warlord **Guthrum**, landed to conquer and stay permanently! Building fortified **winter camps** like **Repton** in Derbyshire, the Vikings seized **York** (renaming it **Jorvik** in **AD 866**), crushed **East Anglia** and **Mercia**, until by **AD 877** only **Wessex** stood unconquered!",
+          "content": "<span class=\"para-ref\">[3.5]</span> Back home in mountainous **Norway** and sandy **Denmark**, growing populations faced a sharp **shortage of fertile farmland**, while ambitious chieftains craved silver hoards, **trade wealth**, and rich kingdoms of their own. For seventy years, Viking fleets struck in summer and sailed home before winter.<br><br><span class=\"para-ref\">[3.6]</span> Everything changed in **AD 865**, when a huge **Great Heathen Army** led by brothers **Ivar the Boneless** and **Halfdan**, alongside warlord **Guthrum**, landed to conquer and stay permanently! Building fortified **winter camps** like **Repton** in Derbyshire, the Vikings seized **York** (renaming it **Jorvik** in **AD 866**), crushed **East Anglia** and **Mercia**, until by **AD 877** only **Wessex** stood unconquered!",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/repton_anglo_saxon_crypt.jpg",
+          "image_alt": "Spiral stone columns of the 8th-century Anglo-Saxon royal crypt at Repton in Derbyshire where the Great Heathen Army wintered in AD 873–874",
+          "caption": "The surviving Mercian royal stone crypt at Repton in Derbyshire, beside the River Trent where the Great Heathen Army built its fortified winter camp in AD 873–874.",
+          "image_caption": "The surviving Mercian royal stone crypt at Repton in Derbyshire, beside the River Trent where the Great Heathen Army built its fortified winter camp in AD 873–874.",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l3_src_d",
+              "letter": "D",
+              "source_letter": "D",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/cuerdale_viking_silver_hoard.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/cuerdale_viking_silver_hoard.jpg",
+              "title": "Source D: Silver Ingots, Arm-Rings & Coins from the Viking Cuerdale Hoard, Lancashire (Buried c. AD 905)",
+              "caption": "Selection of cast silver ingots, stamped silver arm-rings, chopped \"hack-silver\", and coins from the 40-kilogram Cuerdale Hoard unearthed beside the River Ribble in Lancashire (British Museum).",
+              "author": "Viking Bullion Traders & Silversmiths (Buried near Preston, Lancashire)",
+              "date": "c. AD 905 (over 8,600 items)",
+              "context": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+              "source_context": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+              "hinge_question": "What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+              "question_badge": "40KG VIKING SILVER HOARD",
+              "question": "Inspect the silver bars, arm-rings, and coins in Source D. What does the Cuerdale Hoard prove about Viking motives, wealth, and long-distance trade?",
+              "model_answer": "Source D proves Vikings valued silver by weight — melting raided and traded treasure into portable ingots and arm-rings or chopping it into hack-silver to pay warriors. Finding coins from York, Europe, and distant Islamic markets also proves Vikings were wide-ranging international merchants, not only raiders!",
+              "provenance_clues": {
+                "author": "Assembled by a wealthy Viking army chest or merchant group travelling between York (Jorvik) and the Irish Sea.",
+                "audience": "Warriors receiving silver arm-ring rewards and traders weighing silver bullion on balance scales.",
+                "motive": "To store portable army pay and trade wealth safely beside a key river crossing.",
+                "hinge_question": "What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?"
+              },
+              "teacher_notes": {
+                "hinge_question": "What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+                "source_context": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+                "provenance_breakdown": {
+                  "author": "Assembled by a wealthy Viking army chest or merchant group travelling between York (Jorvik) and the Irish Sea.",
+                  "audience": "Warriors receiving silver arm-ring rewards and traders weighing silver bullion on balance scales.",
+                  "motive": "To store portable army pay and trade wealth safely beside a key river crossing."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "40KG VIKING SILVER HOARD",
+                "model_answer": "Source D proves Vikings valued silver by weight — melting raided and traded treasure into portable ingots and arm-rings or chopping it into hack-silver to pay warriors. Finding coins from York, Europe, and distant Islamic markets also proves Vikings were wide-ranging international merchants, not only raiders!",
+                "provenance_clues": {
+                  "author": "Assembled by a wealthy Viking army chest or merchant group travelling between York (Jorvik) and the Irish Sea.",
+                  "audience": "Warriors receiving silver arm-ring rewards and traders weighing silver bullion on balance scales.",
+                  "motive": "To store portable army pay and trade wealth safely beside a key river crossing."
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l3_src_a",
+          "letter": "A",
+          "source_letter": "A",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+          "title": "Source A: 9th-Century Gokstad Oak Longship & Anglo-Saxon Chronicle Entry for AD 793",
+          "caption": "The 24-metre clinker-built Gokstad Viking oak longship excavated in Norway (built c. AD 890, carrying 32 oarsmen), paired with the Anglo-Saxon Chronicle’s shocked record of the AD 793 Lindisfarne raid.",
+          "author": "Norse Master Shipwrights & Anglo-Saxon Chronicle (Ingram 1823 / Giles 1847 PD)",
+          "date": "AD 793 text / c. AD 890 ship",
+          "context": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+          "source_context": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+          "hinge_question": "Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+          "question_badge": "GOKSTAD SHIP & AD 793 CHRONICLE",
+          "question": "Compare the sleek oak longship in Source A with the monk’s words from AD 793. How did this ship design make coastal raids terrifying, and why did the chronicler call the raiders \"heathen men\"?",
+          "model_answer": "Source A’s long, low, clinker-built oak hull could cross open seas fast under sail and beach directly onto Holy Island’s sands without a harbour. Because Christian monks were the victims writing the Chronicle, they naturally called pagan Norse warriors terrifying \"heathen men\" destroying God’s church.",
+          "provenance_clues": {
+            "author": "Built by 9th-century Norwegian shipwrights; written entry compiled by Anglo-Saxon Christian monastic chroniclers.",
+            "audience": "English kings, churchmen, and readers preserving kingdom annals.",
+            "motive": "Shipwrights built for ocean speed and river stealth, while monks recorded the shocking sacrilege against St Cuthbert’s holy shrine.",
+            "hinge_question": "Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+            "source_context": "Capable of carrying over thirty warriors under sail or oar in less than a metre of water, longships like the Gokstad vessel allowed Norse raiders to appear out of the North Sea mist and strike Lindisfarne before any royal army could march to help. **Hinge Question:** Why must historians remember WHO wrote the Anglo-Saxon Chronicle when judging what the Vikings were really like?",
+            "provenance_breakdown": {
+              "author": "Built by 9th-century Norwegian shipwrights; written entry compiled by Anglo-Saxon Christian monastic chroniclers.",
+              "audience": "English kings, churchmen, and readers preserving kingdom annals.",
+              "motive": "Shipwrights built for ocean speed and river stealth, while monks recorded the shocking sacrilege against St Cuthbert’s holy shrine."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "GOKSTAD SHIP & AD 793 CHRONICLE",
+            "model_answer": "Source A’s long, low, clinker-built oak hull could cross open seas fast under sail and beach directly onto Holy Island’s sands without a harbour. Because Christian monks were the victims writing the Chronicle, they naturally called pagan Norse warriors terrifying \"heathen men\" destroying God’s church.",
+            "provenance_clues": {
+              "author": "Built by 9th-century Norwegian shipwrights; written entry compiled by Anglo-Saxon Christian monastic chroniclers.",
+              "audience": "English kings, churchmen, and readers preserving kingdom annals.",
+              "motive": "Shipwrights built for ocean speed and river stealth, while monks recorded the shocking sacrilege against St Cuthbert’s holy shrine."
+            }
+          },
+          "text": "The Anglo-Saxon Chronicle, Entry for AD 793 (Public Domain translation after Ingram 1823 / Giles 1847): \"A.D. 793. Here terrible portents came over the land of Northumbria, and miserably frightened the people: these were immense flashes of lightning, and fiery dragons were seen flying in the air. A great famine soon followed these signs; and a little after that in the same year [...] the ravaging of heathen men miserably destroyed God's church at Lindisfarne, through rapine and slaughter.\"",
+          "provenance": "The 9th-century Gokstad oak longship (Oslo, Norway), paired with The Anglo-Saxon Chronicle entry for AD 793 (Public Domain translation after Rev. James Ingram, 1823, and J. A. Giles, 1847)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l3_src_b",
+          "letter": "B",
+          "source_letter": "B",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_viking_raider_stone.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/lindisfarne_viking_raider_stone.jpg",
+          "title": "Source B: Carved 9th-Century Lindisfarne \"Viking Raider\" Grave Marker Stone",
+          "caption": "Sandstone grave marker carved on Holy Island in the 9th century showing seven marching warriors in tunics waving heavy battle-axes and broadswords overhead (Lindisfarne Priory).",
+          "author": "Northumbrian Monastic Stone-Carver on Lindisfarne",
+          "date": "9th Century AD",
+          "context": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+          "source_context": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+          "hinge_question": "Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+          "question_badge": "9TH-CENTURY RAIDER CARVING",
+          "question": "Look carefully at the seven marching warriors carved on Source B. What weapons are they raising, and what popular modern myth about Viking helmets is missing?",
+          "model_answer": "Source B shows warriors marching in single file raising broad iron swords and heavy battle-axes overhead, capturing the frightening memory of raids on Holy Island. Notice too that NOT ONE warrior wears a horned helmet — horned Viking helmets were invented by 19th-century opera costume designers!",
+          "provenance_clues": {
+            "author": "Carved by a 9th-century Northumbrian stone-sculptor working at Lindisfarne Priory.",
+            "audience": "Surviving monks, pilgrims, and islanders remembering the threat of armed attack and Judgement Day.",
+            "motive": "To mark a Christian grave while vividly depicting the armed violence facing coastal Northumbria.",
+            "hinge_question": "Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+            "source_context": "Carved on Lindisfarne itself within decades of the first attacks, one side of this curved gravestone shows Christian prayers before the Cross while this side freezes a line of armed warriors marching forward with raised battle-axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
+            "provenance_breakdown": {
+              "author": "Carved by a 9th-century Northumbrian stone-sculptor working at Lindisfarne Priory.",
+              "audience": "Surviving monks, pilgrims, and islanders remembering the threat of armed attack and Judgement Day.",
+              "motive": "To mark a Christian grave while vividly depicting the armed violence facing coastal Northumbria."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "9TH-CENTURY RAIDER CARVING",
+            "model_answer": "Source B shows warriors marching in single file raising broad iron swords and heavy battle-axes overhead, capturing the frightening memory of raids on Holy Island. Notice too that NOT ONE warrior wears a horned helmet — horned Viking helmets were invented by 19th-century opera costume designers!",
+            "provenance_clues": {
+              "author": "Carved by a 9th-century Northumbrian stone-sculptor working at Lindisfarne Priory.",
+              "audience": "Surviving monks, pilgrims, and islanders remembering the threat of armed attack and Judgement Day.",
+              "motive": "To mark a Christian grave while vividly depicting the armed violence facing coastal Northumbria."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l3_src_c",
+          "letter": "C",
+          "source_letter": "C",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/viking_sword_and_axe.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/viking_sword_and_axe.jpg",
+          "title": "Source C: Forged Viking Iron Broadsword & Bearded Battle-Axe (9th–10th Century AD)",
+          "caption": "Double-edged pattern-welded Viking iron sword beside a broad-bladed iron battle-axe — weapons prized by Norse warriors from coastal raids to the Great Heathen Army.",
+          "author": "Scandinavian Master Weaponsmiths",
+          "date": "9th–10th Century AD",
+          "context": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+          "source_context": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+          "hinge_question": "Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+          "question_badge": "FORGED SWORD & BATTLE-AXE",
+          "question": "Examine the iron sword and axe in Source C. Why were weapons like these both deadly in battle and prized family treasures among Viking warriors?",
+          "model_answer": "Source C shows a balanced double-edged iron broadsword and a hooked battle-axe capable of splitting wooden shields. Because pattern-welding iron and steel required huge skill and cost, fine swords were given heroic nicknames and passed down from parent to child, while axes equipped fast-moving raiders.",
+          "provenance_clues": {
+            "author": "Hammered and pattern-welded by skilled Norse blacksmiths.",
+            "audience": "Viking ship crews, rival warlords, and Anglo-Saxon shield-walls.",
+            "motive": "To win close-combat battles swiftly and display a warrior’s wealth and rank.",
+            "hinge_question": "Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+            "source_context": "Forging a flexible, razor-sharp double-edged sword took weeks of twisting iron and steel rods together, making swords expensive status symbols for jarls and elite fighters, whereas sturdy iron axes and spears armed every Viking crewman. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
+            "provenance_breakdown": {
+              "author": "Hammered and pattern-welded by skilled Norse blacksmiths.",
+              "audience": "Viking ship crews, rival warlords, and Anglo-Saxon shield-walls.",
+              "motive": "To win close-combat battles swiftly and display a warrior’s wealth and rank."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "FORGED SWORD & BATTLE-AXE",
+            "model_answer": "Source C shows a balanced double-edged iron broadsword and a hooked battle-axe capable of splitting wooden shields. Because pattern-welding iron and steel required huge skill and cost, fine swords were given heroic nicknames and passed down from parent to child, while axes equipped fast-moving raiders.",
+            "provenance_clues": {
+              "author": "Hammered and pattern-welded by skilled Norse blacksmiths.",
+              "audience": "Viking ship crews, rival warlords, and Anglo-Saxon shield-walls.",
+              "motive": "To win close-combat battles swiftly and display a warrior’s wealth and rank."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l3_src_d",
+          "letter": "D",
+          "source_letter": "D",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/cuerdale_viking_silver_hoard.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/cuerdale_viking_silver_hoard.jpg",
+          "title": "Source D: Silver Ingots, Arm-Rings & Coins from the Viking Cuerdale Hoard, Lancashire (Buried c. AD 905)",
+          "caption": "Selection of cast silver ingots, stamped silver arm-rings, chopped \"hack-silver\", and coins from the 40-kilogram Cuerdale Hoard unearthed beside the River Ribble in Lancashire (British Museum).",
+          "author": "Viking Bullion Traders & Silversmiths (Buried near Preston, Lancashire)",
+          "date": "c. AD 905 (over 8,600 items)",
+          "context": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+          "source_context": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+          "hinge_question": "What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+          "question_badge": "40KG VIKING SILVER HOARD",
+          "question": "Inspect the silver bars, arm-rings, and coins in Source D. What does the Cuerdale Hoard prove about Viking motives, wealth, and long-distance trade?",
+          "model_answer": "Source D proves Vikings valued silver by weight — melting raided and traded treasure into portable ingots and arm-rings or chopping it into hack-silver to pay warriors. Finding coins from York, Europe, and distant Islamic markets also proves Vikings were wide-ranging international merchants, not only raiders!",
+          "provenance_clues": {
+            "author": "Assembled by a wealthy Viking army chest or merchant group travelling between York (Jorvik) and the Irish Sea.",
+            "audience": "Warriors receiving silver arm-ring rewards and traders weighing silver bullion on balance scales.",
+            "motive": "To store portable army pay and trade wealth safely beside a key river crossing.",
+            "hinge_question": "What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?"
+          },
+          "teacher_notes": {
+            "hinge_question": "What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+            "source_context": "Weighing an astonishing 40 kilograms — over 8,600 pieces! — the Cuerdale Hoard mixed silver coins from Anglo-Saxon kingdoms, Viking York (Jorvik), Frankish Europe, Byzantium, and even Islamic Baghdad, weighed on folding scales as \"hack-silver\". **Hinge Question:** What do Islamic coins from Baghdad inside a Lancashire Viking hoard prove about the Vikings besides raiding?",
+            "provenance_breakdown": {
+              "author": "Assembled by a wealthy Viking army chest or merchant group travelling between York (Jorvik) and the Irish Sea.",
+              "audience": "Warriors receiving silver arm-ring rewards and traders weighing silver bullion on balance scales.",
+              "motive": "To store portable army pay and trade wealth safely beside a key river crossing."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "40KG VIKING SILVER HOARD",
+            "model_answer": "Source D proves Vikings valued silver by weight — melting raided and traded treasure into portable ingots and arm-rings or chopping it into hack-silver to pay warriors. Finding coins from York, Europe, and distant Islamic markets also proves Vikings were wide-ranging international merchants, not only raiders!",
+            "provenance_clues": {
+              "author": "Assembled by a wealthy Viking army chest or merchant group travelling between York (Jorvik) and the Irish Sea.",
+              "audience": "Warriors receiving silver arm-ring rewards and traders weighing silver bullion on balance scales.",
+              "motive": "To store portable army pay and trade wealth safely beside a key river crossing."
+            }
+          }
+        }
+      ],
+      "causal_domino_spine": {
+        "title": "Viking Raids & Great Heathen Army Spine",
+        "subtitle": "From 8 June AD 793 on Holy Island to Shallow-Draught Longships and Jorvik",
+        "stages": [
+          {
+            "step": 1,
+            "para_ref": "[3.1]",
+            "date": "8 June AD 793",
+            "title": "Dragon Prows Strike Lindisfarne",
+            "actor": "Scandinavian Raiders & Monks",
+            "tag": "⚡ AD 793 SHOCK",
+            "trigger": "Viking ships from Scandinavia struck Lindisfarne Priory — an unguarded coastal soft target rich in silver chalices and gold reliquaries — shocking chroniclers and scholar Alcuin.",
+            "connective": "Revealed how exposed Britain’s coastlines were to fast sea-borne warriors.",
+            "question": "Why was Lindisfarne Priory such a tempting target on 8 June AD 793?",
+            "prose_hash": "d0bfa67572"
+          },
+          {
+            "step": 2,
+            "para_ref": "[3.3]",
+            "date": "8th–9th Century AD",
+            "title": "Clinker-Built Longship Engineering",
+            "actor": "Norse Master Shipwrights",
+            "tag": "⛵ LONGSHIPS",
+            "trigger": "Overlapping oak strakes riveted with iron and tarred wool, paired with a wool sail, oars, and a 1-metre shallow draught, let crews cross oceans AND row straight up shallow rivers.",
+            "connective": "Enabled huge Viking fleets to penetrate deep inland along English rivers.",
+            "question": "How did clinker-built longship design give Vikings a huge advantage?",
+            "prose_hash": "8e123d704c"
+          },
+          {
+            "step": 3,
+            "para_ref": "[3.5]",
+            "date": "AD 865–877",
+            "title": "The Great Heathen Army & Jorvik",
+            "actor": "Ivar the Boneless, Halfdan & Guthrum",
+            "tag": "🛡️ INVASION",
+            "trigger": "Driven by Scandinavian farmland shortages and ambition, the AD 865 Great Heathen Army wintered at Repton and conquered York (Jorvik), East Anglia, and Mercia until only Wessex remained.",
+            "connective": "Brought Anglo-Saxon independence to the brink of total defeat by AD 878!",
+            "question": "How did Viking aims change in AD 865 with the Great Heathen Army?",
+            "prose_hash": "7c6319423e"
+          }
+        ]
+      },
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "Why was Lindisfarne Priory such a tempting target on 8 June AD 793?",
+          "focus_clue": "Why was Lindisfarne Priory such a tempting target on 8 June AD 793?",
+          "words": [
+            {
+              "term": "8 June AD 793",
+              "clue": "Famous date when Scandinavian dragon-prowed warships raided Holy Island off Northumberland."
+            },
+            {
+              "term": "soft targets",
+              "clue": "Isolated coastal monasteries packed with silver chalices and gold reliquaries but guarded by unarmed monks."
+            },
+            {
+              "term": "Alcuin",
+              "clue": "Famous scholar from York who wrote in horror across Europe after hearing news of Lindisfarne’s sack."
+            }
+          ],
+          "model_sentence": "On <strong>8 June AD 793</strong>, Viking raiders struck Lindisfarne because wealthy coastal monasteries were <strong>soft targets</strong>, horrifying Christian writers like <strong>Alcuin</strong>.",
+          "title": "8 June AD 793: Dragon Prows Strike Holy Island, Lindisfarne",
+          "question": "Why was Lindisfarne Priory such a tempting target on 8 June AD 793?",
+          "questionHeading": "Why was Lindisfarne Priory such a tempting target on 8 June AD 793?",
+          "focusClue": "Why was Lindisfarne Priory such a tempting target on 8 June AD 793?",
+          "date": "8 June AD 793",
+          "dates": "8 June AD 793",
+          "para_ref": "[3.1]",
+          "paraRef": "[3.1]",
+          "prose_hash": "d0bfa67572"
+        },
+        {
+          "step": 2,
+          "heading": "How did clinker-built longship design give Vikings a huge advantage?",
+          "focus_clue": "How did clinker-built longship design give Vikings a huge advantage?",
+          "words": [
+            {
+              "term": "oak strakes",
+              "clue": "Overlapping split oak planks riveted with iron and sealed watertight with tarred wool."
+            },
+            {
+              "term": "woollen sail and oars",
+              "clue": "Dual power allowing crews to speed across windy oceans or row swiftly when winds dropped."
+            },
+            {
+              "term": "1-metre shallow draught",
+              "clue": "Flat hull design needing barely a metre of water to beach on sand or row far up English rivers."
+            }
+          ],
+          "model_sentence": "Flexible clinker-built <strong>oak strakes</strong>, a square <strong>woollen sail and oars</strong>, and a <strong>1-metre shallow draught</strong> let longships cross stormy seas and row straight up rivers.",
+          "title": "8th–9th Century AD: Clinker-Built Longships — Engineering Marvels",
+          "question": "How did clinker-built longship design give Vikings a huge advantage?",
+          "questionHeading": "How did clinker-built longship design give Vikings a huge advantage?",
+          "focusClue": "How did clinker-built longship design give Vikings a huge advantage?",
+          "date": "8th–9th Century AD",
+          "dates": "8th–9th Century AD",
+          "para_ref": "[3.3]",
+          "paraRef": "[3.3]",
+          "prose_hash": "8e123d704c"
+        },
+        {
+          "step": 3,
+          "heading": "How did Viking aims change in AD 865 with the Great Heathen Army?",
+          "focus_clue": "How did Viking aims change in AD 865 with the Great Heathen Army?",
+          "words": [
+            {
+              "term": "Great Heathen Army",
+              "clue": "Massive Viking invasion fleet landing in AD 865 under Ivar the Boneless, Halfdan, and Guthrum."
+            },
+            {
+              "term": "Jorvik",
+              "clue": "Viking name for York after Norse warriors captured Northumbria’s capital in AD 866."
+            },
+            {
+              "term": "Wessex",
+              "clue": "The sole surviving Anglo-Saxon kingdom still unconquered by AD 877 after East Anglia and Mercia fell."
+            }
+          ],
+          "model_sentence": "In AD 865, the <strong>Great Heathen Army</strong> stayed through winter to seize <strong>Jorvik</strong>, East Anglia, and Mercia until only <strong>Wessex</strong> remained.",
+          "title": "AD 865–877: From Summer Raiders to the Great Heathen Army",
+          "question": "How did Viking aims change in AD 865 with the Great Heathen Army?",
+          "questionHeading": "How did Viking aims change in AD 865 with the Great Heathen Army?",
+          "focusClue": "How did Viking aims change in AD 865 with the Great Heathen Army?",
+          "date": "AD 865–877",
+          "dates": "AD 865–877",
+          "para_ref": "[3.5]",
+          "paraRef": "[3.5]",
+          "prose_hash": "7c6319423e"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Compare Source A (the Gokstad longship & AD 793 Chronicle), Source B (the Lindisfarne Raider Stone), and Source D (the Cuerdale Silver Hoard). What do they prove about Viking warfare AND Viking trade?",
+          "starter": "Comparing Sources A, B, and D together shows that the Vikings were both fierce sea raiders and wide-ranging traders because...",
+          "word_bank": [
+            "Anglo-Saxon Chronicle",
+            "battle-axes",
+            "Cuerdale Hoard",
+            "hack-silver"
+          ],
+          "hints": [
+            "Use Sources A and B to describe the shock of AD 793 and armed warriors raising axes and swords (with NO horned helmets!).",
+            "Use Source D (the 40kg Cuerdale Hoard) to show how Vikings weighed silver ingots, arm-rings, and foreign coins from Europe and Baghdad.",
+            "Scholar Challenge (Year 5+): Explain why monastic chroniclers in Source A only wrote about Viking violence (\"heathen men\") and left out peaceful Viking merchants!"
+          ],
+          "model_answer": "Comparing Sources A, B, and D together shows that the Vikings were both fierce sea raiders and wide-ranging traders because Sources A and B capture fast oak longships and hornless warriors waving battle-axes and swords during devastating monastery attacks like AD 793. Yet Source D’s 40-kilogram Cuerdale Hoard — packed with silver ingots, arm-rings, hack-silver, and coins from Europe and Islamic Baghdad — proves Norse seafarers also traded across continents! Monks writing the Anglo-Saxon Chronicle naturally focused on \"heathen\" violence because their own churches were the targets.",
+          "key_terms": [
+            "Anglo-Saxon Chronicle",
+            "Lindisfarne",
+            "Cuerdale Hoard",
+            "hack-silver"
+          ]
+        },
+        {
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Why was the clinker-built Viking longship such a brilliant piece of engineering for raiding and invading Britain?",
+          "starter": "The clinker-built Viking longship gave Norse warriors a huge technological advantage because...",
+          "word_bank": [
+            "oak strakes",
+            "tarred wool",
+            "woollen sail",
+            "1-metre shallow draught"
+          ],
+          "hints": [
+            "Explain how overlapping split oak strakes riveted with iron and sealed with tarred wool flexed safely over giant ocean waves.",
+            "Explain how combining a square woollen sail, wooden oars, and a 1-metre shallow draught let crews travel from open sea straight up English rivers.",
+            "Scholar Challenge (Year 5+): Explain how symmetrical double-ended hulls helped raiders beach on Holy Island’s sands and escape before local armies arrived."
+          ],
+          "model_answer": "The clinker-built Viking longship gave Norse warriors a huge technological advantage because overlapping split oak strakes fastened with iron rivets and sealed with tarred wool made the hull strong yet flexible in stormy North Sea waves. Crews hoisted a wide square woollen sail for ocean speed, then lowered the mast and pulled oars when winds dropped. Best of all, its 1-metre shallow draught and symmetrical ends let warriors glide straight up shallow inland rivers like the Trent or beach directly on sandy shores and reverse out before defenders could gather!",
+          "key_terms": [
+            "clinker-built",
+            "oak strakes",
+            "tarred wool",
+            "shallow draught"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine you are a young monk on Holy Island at Lindisfarne on the morning of 8 June AD 793 when strange dragon-prowed sails appear through the sea mist. Describe what happens and why your monastery has no soldiers!",
+          "starter": "Carrying calfskin books across the windy courtyard of Lindisfarne Priory on 8 June AD 793, I freeze as...",
+          "word_bank": [
+            "dragon prows",
+            "Holy Island",
+            "silver chalices",
+            "reliquaries"
+          ],
+          "hints": [
+            "Describe spotting low clinker-built ships with carved dragon prows beaching right onto Holy Island’s sand.",
+            "Explain why your island priory is a soft target: full of silver chalices, gold reliquaries, and illuminated Gospels, guarded only by unarmed monks.",
+            "Scholar Challenge (Year 5+): Mention rushing to hide precious vellum manuscripts and sending urgent word south to scholar Alcuin!"
+          ],
+          "model_answer": "Carrying calfskin books across the windy courtyard of Lindisfarne Priory on 8 June AD 793, I freeze as sleek wooden ships with carved dragon prows slice silently through the sea mist and grind straight onto our sandy beach! Nobody ever imagined raiders attacking St Cuthbert’s sacred Holy Island, so our priory has no walls or soldiers — only unarmed monks guarding gleaming silver chalices and golden reliquaries. As shouting Norsemen leap ashore brandishing iron axes, my brothers and I clutch our illuminated Gospel books and flee across the tidal causeway to warn Northumbria and Master Alcuin!",
+          "key_terms": [
+            "8 June AD 793",
+            "Lindisfarne",
+            "dragon prows",
+            "silver chalices"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Why did Vikings leave Scandinavia in the first place, and how did their attacks change between AD 793 and AD 877?",
+          "starter": "Vikings sailed west from Scandinavia for wealth and farmland, and between AD 793 and AD 877 their attacks transformed from...",
+          "word_bank": [
+            "Scandinavia",
+            "shortage of farmland",
+            "Great Heathen Army",
+            "Jorvik"
+          ],
+          "hints": [
+            "Explain Scandinavian motives: mountainous Norway and sandy Denmark had a shortage of fertile farmland alongside chieftains seeking silver and trade wealth.",
+            "Contrast early summer hit-and-run coastal raids (like Lindisfarne in AD 793) with the AD 865 Great Heathen Army staying over winter.",
+            "Scholar Challenge (Year 5+): Name leaders (Ivar the Boneless, Halfdan, and Guthrum), winter camps like Repton, and trace the fall of Jorvik (York), East Anglia, and Mercia until only Wessex survived!"
+          ],
+          "model_answer": "Vikings sailed west from Scandinavia for wealth and farmland, and between AD 793 and AD 877 their attacks transformed from quick summer raids into permanent conquest. Steep mountains in Norway and sandy soils in Denmark created a shortage of fertile farmland, while ambitious warlords craved silver treasure and trade routes. At first, in AD 793, small crews raided soft coastal monasteries like Lindisfarne in summer and sailed home. In AD 865, however, the massive Great Heathen Army under Ivar the Boneless, Halfdan, and Guthrum built winter camps like Repton, captured York as Jorvik, and conquered East Anglia and Mercia until only Wessex stood!",
+          "key_terms": [
+            "Scandinavia",
+            "Lindisfarne",
+            "Great Heathen Army",
+            "Jorvik"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "stage": 1,
+          "question": "Why were coastal monasteries like Lindisfarne (raided on 8 June AD 793) considered tempting \"soft targets\" by early Viking crews?",
+          "q": "Why were coastal monasteries like Lindisfarne (raided on 8 June AD 793) considered tempting \"soft targets\" by early Viking crews?",
+          "options": [
+            "They had giant Roman catapults on the roof",
+            "They stood isolated by the sea packed with silver chalices and gold reliquaries, guarded only by unarmed monks",
+            "They were completely empty stone ruins",
+            "They had bridges connecting directly to Norway"
+          ],
+          "correct": 1,
+          "answer": "They stood isolated by the sea packed with silver chalices and gold reliquaries, guarded only by unarmed monks",
+          "a": "They stood isolated by the sea packed with silver chalices and gold reliquaries, guarded only by unarmed monks",
+          "explanation": "Monasteries held rich church silver and gold reliquaries right on the coast without soldiers or fortress walls."
+        },
+        {
+          "stage": 2,
+          "question": "How did a clinker-built Viking longship’s \"1-metre shallow draught\" help warriors attack inland towns?",
+          "q": "How did a clinker-built Viking longship’s \"1-metre shallow draught\" help warriors attack inland towns?",
+          "options": [
+            "It allowed the ship to dive underwater like a submarine",
+            "Needing barely 1 metre of water let crews beach on sand and row far up shallow English rivers",
+            "It made the wooden hull weigh fifty tonnes",
+            "It stopped crews from ever using oars"
+          ],
+          "correct": 1,
+          "answer": "Needing barely 1 metre of water let crews beach on sand and row far up shallow English rivers",
+          "a": "Needing barely 1 metre of water let crews beach on sand and row far up shallow English rivers",
+          "explanation": "A flat, lightweight clinker-built oak hull floated in barely 1 metre of water, gliding up rivers like the Trent and Ouse."
+        },
+        {
+          "stage": 2,
+          "question": "What natural material soaked in pine tar did Norse shipwrights press between overlapping oak strakes to make longships watertight?",
+          "q": "What natural material soaked in pine tar did Norse shipwrights press between overlapping oak strakes to make longships watertight?",
+          "options": [
+            "Tarred wool",
+            "Plastic tape",
+            "Roman concrete",
+            "Dry straw thatch"
+          ],
+          "correct": 0,
+          "answer": "Tarred wool",
+          "a": "Tarred wool",
+          "explanation": "Overlapping oak strakes were fastened with iron rivets and caulked watertight with tarred animal wool."
+        },
+        {
+          "stage": 3,
+          "question": "How did Viking attacks change dramatically in AD 865 when the Great Heathen Army landed under Ivar the Boneless, Halfdan, and Guthrum?",
+          "q": "How did Viking attacks change dramatically in AD 865 when the Great Heathen Army landed under Ivar the Boneless, Halfdan, and Guthrum?",
+          "options": [
+            "They gave back all silver and sailed home forever",
+            "Instead of quick summer raids, a huge army stayed through winter at camps like Repton to conquer kingdoms and settle",
+            "They rode African war elephants into Canterbury",
+            "They only traded woollen socks in London"
+          ],
+          "correct": 1,
+          "answer": "Instead of quick summer raids, a huge army stayed through winter at camps like Repton to conquer kingdoms and settle",
+          "a": "Instead of quick summer raids, a huge army stayed through winter at camps like Repton to conquer kingdoms and settle",
+          "explanation": "From AD 865, the Great Heathen Army wintered in England to conquer land permanently rather than sailing home before autumn storms."
+        },
+        {
+          "stage": 3,
+          "question": "After the Great Heathen Army captured York (renaming it Jorvik), East Anglia, and Mercia, which single Anglo-Saxon kingdom remained unconquered by AD 877?",
+          "q": "After the Great Heathen Army captured York (renaming it Jorvik), East Anglia, and Mercia, which single Anglo-Saxon kingdom remained unconquered by AD 877?",
+          "options": [
+            "Northumbria",
+            "Mercia",
+            "Wessex",
+            "Kent"
+          ],
+          "correct": 2,
+          "answer": "Wessex",
+          "a": "Wessex",
+          "explanation": "By AD 877, Northumbria, East Anglia, and Mercia had fallen — leaving southern Wessex as the last independent Anglo-Saxon kingdom."
+        }
+      ],
+      "video": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l3_vid_1",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=X0QnGvl3rJo",
+          "title": "Life in the Time of the Vikings | The Story of Britain | BBC Teach",
+          "duration": "4 mins 38 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:15 | Lesson Phase: Act 1–3 Narrative Reinforcement | Watch how Scandinavian raiders crossed the North Sea in shallow-draught longships, raided monasteries, and stayed to conquer York (Jorvik).",
+          "viewing_task": "[00:45] Quick Check: Why did Viking families and warriors decide to sail across the sea from Scandinavia?\n[02:05] Hinge Question: How did Viking aims shift from coastal raiding to settling and ruling parts of Britain?",
+          "model_answer": "Quick Check: Much of Scandinavia was mountainous, icy, or sandy with limited farmland, so crews sailed fast oak longships seeking silver treasure, trade, and fertile land.\nHinge Question: Starting with surprise monastery raids in AD 793, larger Viking armies returned from AD 865 to stay over winter, capture York (Jorvik), and farm permanently."
+        }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "skill": "Historical Significance & Leadership",
+      "title": "Enquiry 4: Alfred the Great, Burhs & the Danelaw — How Did Wessex Survive? (AD 871–899)",
+      "subtitle": "Athelney Marshes, Victory at Edington, 33 Fortified Burhs & Schools of Learning",
+      "enquiryQuestion": "How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?",
+      "enquiry_question": "How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?",
+      "prologue": "In January AD 878, a surprise midwinter Viking attack forced King Alfred of Wessex to flee into the misty Somerset marshes at Athelney with only a tiny band of followers! How did Alfred turn near-defeat into triumph at Edington, agree the Danelaw border, ring Wessex with 33 walled burhs, and become the ONLY monarch in British history called \"the Great\"?",
+      "blurb": "In January AD 878, a surprise midwinter Viking attack forced King Alfred of Wessex to flee into the misty Somerset marshes at Athelney with only a tiny band of followers! How did Alfred turn near-defeat into triumph at Edington, agree the Danelaw border, ring Wessex with 33 walled burhs, and become the ONLY monarch in British history called \"the Great\"?",
+      "hero_image": "/units/ks2_anglo_saxons_vikings/assets/viking_palisade_shield_wall.jpg",
+      "card_image": "/units/ks2_anglo_saxons_vikings/assets/viking_palisade_shield_wall.jpg",
+      "banner_position": "center 42%",
+      "card_position": "center 42%",
+      "teacher_notes": {
+        "primer": "This enquiry examines why King Alfred of Wessex (reigned AD 871–899) is the sole monarch in British history accorded the epithet \"the Great.\" Pupils trace the dramatic crisis of AD 878 — from Guthrum's surprise Twelfth Night seizure of Chippenham and Alfred's guerrilla refuge in the Somerset Levels at Athelney, to the rallying of the West Saxon fyrd at Egbert's Stone and decisive shield-wall victory at Edington. Crucially, pupils evaluate historical significance beyond the battlefield: Alfred's pragmatic peacemaking (Guthrum's Christian baptism and the Watling Street treaty establishing the Danelaw), his systematic civil-defence engineering (33 fortified burhs placed within 20 miles of every farm, backed by 60-oar warships), and his cultural renaissance (Old English translations, the Alfred Jewel aestel, and the Anglo-Saxon Chronicle).",
+        "objectives": [
+          {
+            "objective": "Explain how King Alfred survived the midwinter crisis of AD 878 at Athelney and defeated Guthrum at the Battle of Edington.",
+            "primer": "Follow the sequence from Chippenham (January AD 878) and the Somerset marshes at Athelney to Egbert's Stone and the shield wall at Edington (May AD 878).",
+            "question": "How did the Somerset marshes around Athelney help Alfred survive until the Wessex fyrd could regroup?"
+          },
+          {
+            "objective": "Describe how the Treaty of Alfred and Guthrum divided England along Watling Street between Anglo-Saxon territory and the Danelaw.",
+            "primer": "Unpack Guthrum's baptism as Christian king Aethelstan, the recapture of London (AD 886), and Viking settlement across northern and eastern England (-by and -thorpe place-names).",
+            "question": "Why was making a Christian peace treaty with Guthrum wiser than fighting an endless war across all Britain?"
+          },
+          {
+            "objective": "Evaluate why historians call Alfred \"the Great\" by weighing his 33 fortified burhs, warships, Old English translations, and the Anglo-Saxon Chronicle.",
+            "primer": "Connect physical defences like Wareham's burh ramparts with cultural achievements like the Alfred Jewel and the Anglo-Saxon Chronicle.",
+            "question": "Did Alfred earn the title \"the Great\" mainly as a warrior, a fort-builder, or a scholar-king?"
+          }
+        ],
+        "source_context": {
+          "Source A": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+          "Source B": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+          "Source C": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+          "Source D": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?"
+        },
+        "delivery_plan": {
+          "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
+          "lesson_1": {
+            "title": "Session 1: Crisis in the Marshes, Victory at Edington & Dividing the Danelaw",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now retrieval check mixing Enquiries 1–3 (Angles/Saxons/Jutes, Sutton Hoo, Venerable Bede, Lindisfarne AD 793, and the Great Heathen Army)."
+              },
+              {
+                "time": "08–25m",
+                "label": "Shared Storytelling (Acts 1 & 2)",
+                "instruction": "Read Act 1 (\"From Athelney Marshes to Victory at Edington\") and Act 2 (\"Peace with Guthrum & Creating the Danelaw\"), tracing Chippenham, Athelney, Edington, and Watling Street."
+              },
+              {
+                "time": "25–42m",
+                "label": "Primary Artefact & Chronicle Detective Work",
+                "instruction": "Inspect Source A (Alfred Jewel), Source B (REX ANGLORUM silver penny), and Source D (Bratton Camp & Asser's shield-wall account)."
+              },
+              {
+                "time": "42–50m",
+                "label": "Class Hinge Check",
+                "instruction": "Oral check: \"Why did King Alfred choose to baptise Guthrum and agree the Danelaw border along Watling Street instead of executing him?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Session 2: 33 Walled Burhs, Schools of Learning & \"Alfred the Great\" Judgement",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Session 1 Recall Warm-Up",
+                "instruction": "Quick whiteboard recall of Athelney, Egbert's Stone, Edington (AD 878), Guthrum's baptismal name (Aethelstan), and Watling Street."
+              },
+              {
+                "time": "08–22m",
+                "label": "Act 3 Reading & Source C",
+                "instruction": "Read Act 3 (\"Fortified Burhs, Warships & Schools of Learning\") and analyse James Ingram's translation of the AD 878 Anglo-Saxon Chronicle in Source C."
+              },
+              {
+                "time": "22–42m",
+                "label": "Dual-Scaffolded Historian Tasks",
+                "instruction": "Complete Tasks 1–4 using sentence starters, word banks, and the Year 5+ Scholar Challenges."
+              },
+              {
+                "time": "42–50m",
+                "label": "Tap-Tile Summary & Plenary Quiz",
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz to consolidate mastery."
+              }
+            ]
+          }
+        }
+      },
+      "do_now": {
+        "type": "questions",
+        "derived_from_prev": true,
+        "items": [
+          {
+            "stage": 1,
+            "question": "After Roman legions left Britain around AD 410, which three seafaring groups crossed the North Sea from northern Germany and Denmark to settle here?",
+            "answer": "The Angles, Saxons, and Jutes",
+            "explanation": "Across the 5th and 6th centuries, Angles, Saxons, and Jutes sailed across the North Sea to farm and establish early Anglo-Saxon kingdoms."
+          },
+          {
+            "stage": 1,
+            "question": "What rectangular timber-and-thatch buildings stood at the heart of reconstructed Anglo-Saxon villages like West Stow in Suffolk?",
+            "answer": "Wooden halls and sunken-featured weaving houses (grubenhäuser)",
+            "explanation": "Anglo-Saxon families lived and feasted in rectangular timber halls surrounded by smaller sunken-floored craft huts."
+          },
+          {
+            "stage": 2,
+            "question": "What astonishing 7th-century royal burial was excavated on Edith Pretty's Suffolk estate at Sutton Hoo in 1939 — likely honouring King Raedwald?",
+            "answer": "A 27-metre Anglo-Saxon wooden ship burial filled with gold-and-garnet treasures and an iron face-mask helmet",
+            "explanation": "Although acidic sandy soil rotted the ship's planks to dark stains, its iron rivets, warrior helmet, gold belt buckle, and shoulder clasps survived."
+          },
+          {
+            "stage": 2,
+            "question": "Which Northumbrian monk at Jarrow Monastery completed The Ecclesiastical History of the English People in AD 731?",
+            "answer": "The Venerable Bede",
+            "explanation": "Writing in Latin at St Paul's Monastery in Jarrow, Bede popularized Anno Domini (AD) dating and earned the title \"Father of English History.\""
+          },
+          {
+            "stage": 3,
+            "question": "Where did Viking raiders strike in AD 793, and how did the \"Great Heathen Army\" of AD 865 behave differently from earlier summer raiders?",
+            "answer": "Lindisfarne Priory (Holy Island) in AD 793; the AD 865 Great Heathen Army stayed over winter to conquer whole kingdoms!",
+            "explanation": "Early raids hit coastal monasteries for silver and captives, whereas the AD 865 army overwintered at camps like Repton and toppled Northumbria, East Anglia, and Mercia."
+          }
+        ],
+        "current_items": [
+          {
+            "stage": 1,
+            "question": "Into which misty Somerset marshland island did King Alfred retreat after Guthrum's surprise Twelfth Night attack in January AD 878?",
+            "answer": "Athelney (in the Somerset Levels marshes)",
+            "explanation": "Surrounded by reed beds and flooded waterways, Athelney gave Alfred a safe hideout to plan Wessex's spring counter-attack."
+          },
+          {
+            "stage": 1,
+            "question": "At which May AD 878 battle did King Alfred's shield wall decisively defeat Guthrum's Viking army?",
+            "answer": "The Battle of Edington (Ethandun) in Wiltshire",
+            "explanation": "Rallying the Wessex fyrd at Egbert's Stone, Alfred broke Guthrum's shield wall below Bratton Camp at Edington."
+          },
+          {
+            "stage": 2,
+            "question": "Along which ancient Roman road did Alfred and Guthrum draw the border separating Anglo-Saxon England from the Viking Danelaw?",
+            "answer": "Watling Street",
+            "explanation": "North and east of Watling Street became the Danelaw under Viking law, while Alfred ruled Wessex, London, and western Mercia."
+          },
+          {
+            "stage": 3,
+            "question": "What was the Old English name for the 33 fortified walled towns King Alfred built so no Wessex family lived over 20 miles from safety?",
+            "answer": "Burhs (which gave us the modern word \"borough\")",
+            "explanation": "Walled burhs like Wareham and Wallingford protected townsfolk, markets, and royal mints against sudden Viking raids."
+          },
+          {
+            "stage": 3,
+            "question": "What Old English words are inscribed around the gold frame of the Alfred Jewel?",
+            "answer": "\"+ AELFRED MEC HEHT GEWYRCAN\" (\"Alfred ordered me to be made\")",
+            "explanation": "The Alfred Jewel served as the handle of a crystal reading pointer sent with Old English translations to Alfred's bishops."
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "term": "Fyrd",
+          "definition": "An Anglo-Saxon part-time army of free local farmers and warriors summoned by their king whenever enemy invaders struck.",
+          "syllables": "Fyrd",
+          "phonetic": "FEERD",
+          "tier": "3"
+        },
+        {
+          "term": "Shield wall",
+          "definition": "A tight battlefield line where warriors stood shoulder-to-shoulder locking round wooden shields together like an unbroken fence.",
+          "syllables": "Shield wall",
+          "phonetic": "SHEELD wawl",
+          "tier": "3"
+        },
+        {
+          "term": "Treaty",
+          "definition": "A formal written peace agreement sworn between rival rulers to end fighting and fix clear borders.",
+          "syllables": "Trea-ty",
+          "phonetic": "TREE-tee",
+          "tier": "2"
+        },
+        {
+          "term": "Danelaw",
+          "definition": "The large area of northern and eastern England where Viking settlers lived and ruled under Danish laws after AD 878.",
+          "syllables": "Dane-law",
+          "phonetic": "DAYN-law",
+          "tier": "3"
+        },
+        {
+          "term": "Burh",
+          "definition": "A fortified Anglo-Saxon town ringed with high earth ramparts, ditches, and timber gates — origin of our word \"borough.\"",
+          "syllables": "Burh",
+          "phonetic": "BUR-uh",
+          "tier": "3"
+        }
+      ],
+      "vocab_cloze_text": "In spring AD 878, King Alfred rallied his loyal Wessex [Fyrd] warriors and locked round shields into a tough [Shield wall] to defeat Guthrum at Edington. Rather than fighting forever, Alfred signed a peaceful [Treaty] dividing England along Watling Street so Vikings ruled the northern [Danelaw]. To protect southern families within 20 miles of safety, Alfred built 33 walled towns, each known as a [Burh].",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "title": "From Athelney Marshes to Victory at Edington (AD 878)",
+          "text": "<span class=\"para-ref\">[4.1]</span> In January **AD 878**, just after **Twelfth Night**, Viking leader **Guthrum** launched a surprise midwinter attack on **Chippenham** in **Wessex**, the last unconquered Anglo-Saxon kingdom! Forced to flee, **King Alfred** hid with a tiny band on the misty island of **Athelney** deep inside the **Somerset marshes**, patiently planning his bold spring fightback.<br><br><span class=\"para-ref\">[4.2]</span> That spring, Alfred rode out to **Egbert's Stone**, where thousands of loyal Wessex **fyrd** farmer-warriors cheered their king's return. In May **AD 878**, Alfred's tightly locked **shield wall** smashed Guthrum's army below the chalk hills at the **Battle of Edington**, chasing the defeated Vikings back to their fortified camp and saving Wessex.",
+          "content": "<span class=\"para-ref\">[4.1]</span> In January **AD 878**, just after **Twelfth Night**, Viking leader **Guthrum** launched a surprise midwinter attack on **Chippenham** in **Wessex**, the last unconquered Anglo-Saxon kingdom! Forced to flee, **King Alfred** hid with a tiny band on the misty island of **Athelney** deep inside the **Somerset marshes**, patiently planning his bold spring fightback.<br><br><span class=\"para-ref\">[4.2]</span> That spring, Alfred rode out to **Egbert's Stone**, where thousands of loyal Wessex **fyrd** farmer-warriors cheered their king's return. In May **AD 878**, Alfred's tightly locked **shield wall** smashed Guthrum's army below the chalk hills at the **Battle of Edington**, chasing the defeated Vikings back to their fortified camp and saving Wessex.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/athelney_somerset_marshes.jpg",
+          "image_alt": "King Alfred's stone monument rising above the low-lying fields and marshes of the Isle of Athelney in Somerset",
+          "caption": "King Alfred's Monument on the Isle of Athelney in the Somerset Levels, where marshes sheltered Alfred's small band in early AD 878 (CC BY-SA 2.0, Ken Grainger).",
+          "image_caption": "King Alfred's Monument on the Isle of Athelney in the Somerset Levels, where marshes sheltered Alfred's small band in early AD 878 (CC BY-SA 2.0, Ken Grainger).",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l4_src_a",
+              "letter": "A",
+              "source_letter": "A",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/alfred_jewel_ashmolean.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/alfred_jewel_ashmolean.jpg",
+              "title": "Source A: The Gold, Enamel & Rock-Crystal Alfred Jewel (c. AD 880s, Ashmolean Museum)",
+              "caption": "The teardrop-shaped gold, cloisonné enamel, and rock-crystal Alfred Jewel discovered in 1693 near Athelney in Somerset, inscribed \"+ AELFRED MEC HEHT GEWYRCAN\" (Public Domain, Emily Hickey).",
+              "author": "Royal West Saxon Goldsmith Commissioned by King Alfred",
+              "date": "c. AD 880s–890s",
+              "context": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+              "source_context": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+              "hinge_question": "Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+              "question_badge": "ALFRED ORDERED ME TO BE MADE",
+              "question": "Look closely at Source A and its Old English inscription. What does the Alfred Jewel prove about what mattered to King Alfred besides winning battles?",
+              "model_answer": "Source A is crafted from gleaming gold, colourful enamel, and polished rock crystal with the Old English words \"Alfred ordered me to be made.\" Because its socket held a wooden pointer for following lines in translated manuscripts, it proves Alfred cared deeply about literacy, Christian learning, and rebuilding education across Wessex.",
+              "provenance_clues": {
+                "author": "Master West Saxon court goldsmith working directly on King Alfred's orders.",
+                "audience": "Anglo-Saxon bishops and scholars receiving Alfred's newly translated Old English books.",
+                "motive": "To honour Christian wisdom and help readers follow lines of sacred text without smudging precious vellum pages.",
+                "hinge_question": "Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+                "source_context": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+                "provenance_breakdown": {
+                  "author": "Master West Saxon court goldsmith working directly on King Alfred's orders.",
+                  "audience": "Anglo-Saxon bishops and scholars receiving Alfred's newly translated Old English books.",
+                  "motive": "To honour Christian wisdom and help readers follow lines of sacred text without smudging precious vellum pages."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "ALFRED ORDERED ME TO BE MADE",
+                "model_answer": "Source A is crafted from gleaming gold, colourful enamel, and polished rock crystal with the Old English words \"Alfred ordered me to be made.\" Because its socket held a wooden pointer for following lines in translated manuscripts, it proves Alfred cared deeply about literacy, Christian learning, and rebuilding education across Wessex.",
+                "provenance_clues": {
+                  "author": "Master West Saxon court goldsmith working directly on King Alfred's orders.",
+                  "audience": "Anglo-Saxon bishops and scholars receiving Alfred's newly translated Old English books.",
+                  "motive": "To honour Christian wisdom and help readers follow lines of sacred text without smudging precious vellum pages."
+                }
+              },
+              "text": "Direct translation from the Old English gold frame inscription: \"+ AELFRED MEC HEHT GEWYRCAN\" — \"Alfred ordered me to be made.\" | Paired with King Alfred's Preface to Pastoral Care (c. AD 890, fresh direct translation from Old English): \"Therefore it seems better to me [...] that we should turn certain books which are most needful for all men to know into the language that we can all understand [...] and to every bishopric in my kingdom I send a copy, and on each there is an aestel [reading pointer] worth fifty mancuses.\"",
+              "provenance": "The Alfred Jewel (Ashmolean Museum, Oxford, AN1836 p.135.371; Public Domain illustration, fresh direct translation from the original Old English inscription and Preface)."
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "Peace with Guthrum & Creating the Danelaw (AD 878–886)",
+          "text": "<span class=\"para-ref\">[4.3]</span> Surrounded and starving inside his camp after Edington, **Guthrum** finally surrendered. Instead of executing his rival, wise **King Alfred** stood as godfather when Guthrum was baptised as a **Christian** ruler under the Saxon name **Aethelstan**. By **AD 886**, Alfred also recaptured and rebuilt walled **London**, styling himself **King of the English** on silver pennies.<br><br><span class=\"para-ref\">[4.4]</span> Their famous **Treaty of Alfred and Guthrum** divided England along the old Roman road called **Watling Street**. Alfred ruled Anglo-Saxon **Wessex** and western **Mercia** in the south and west, while Vikings governed northern and eastern England under Danish law in the **Danelaw**, where **-by** and **-thorpe** villages flourished.",
+          "content": "<span class=\"para-ref\">[4.3]</span> Surrounded and starving inside his camp after Edington, **Guthrum** finally surrendered. Instead of executing his rival, wise **King Alfred** stood as godfather when Guthrum was baptised as a **Christian** ruler under the Saxon name **Aethelstan**. By **AD 886**, Alfred also recaptured and rebuilt walled **London**, styling himself **King of the English** on silver pennies.<br><br><span class=\"para-ref\">[4.4]</span> Their famous **Treaty of Alfred and Guthrum** divided England along the old Roman road called **Watling Street**. Alfred ruled Anglo-Saxon **Wessex** and western **Mercia** in the south and west, while Vikings governed northern and eastern England under Danish law in the **Danelaw**, where **-by** and **-thorpe** villages flourished.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/alfred_the_great_statue_winchester.jpg",
+          "image_alt": "Bronze statue of King Alfred the Great holding his sword aloft in Winchester, ancient capital of Wessex",
+          "caption": "Hamo Thornycroft's bronze statue of King Alfred the Great in Winchester, the royal capital of Anglo-Saxon Wessex (CC BY-SA 2.0, Colin Smith).",
+          "image_caption": "Hamo Thornycroft's bronze statue of King Alfred the Great in Winchester, the royal capital of Anglo-Saxon Wessex (CC BY-SA 2.0, Colin Smith).",
+          "isReversed": true,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l4_src_b",
+              "letter": "B",
+              "source_letter": "B",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/alfred_the_great_silver_penny.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/alfred_the_great_silver_penny.jpg",
+              "title": "Source B: Silver Penny Coin of King Alfred the Great, Styled REX ANGLO[RUM] (c. AD 886–899)",
+              "caption": "High-purity silver coin of King Alfred the Great bearing his royal title \"AELFRED REX ANGLO[RUM]\" (\"Alfred, King of the English\") (Public Domain, PHGCOM).",
+              "author": "Royal Anglo-Saxon Moneyers under King Alfred",
+              "date": "c. AD 886–899",
+              "context": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+              "source_context": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+              "hinge_question": "Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+              "question_badge": "KING OF THE ENGLISH",
+              "question": "Inspect Source B. Why did King Alfred change his royal title on silver pennies from \"King of the West Saxons\" to \"King of the English\" after AD 886?",
+              "model_answer": "Source B shows that every merchant and farmer handling Alfred's silver pennies read the bold message \"AELFRED REX ANGLO[RUM]\" (\"Alfred, King of the English\"). After saving Wessex and restoring London in AD 886, Alfred wanted West Saxons and Mercians to unite together as one English people.",
+              "provenance_clues": {
+                "author": "Official royal mint moneyers working under strict weight and silver controls set by King Alfred.",
+                "audience": "Traders, town-dwellers, and taxpayers across Wessex, western Mercia, London, and the Danelaw border.",
+                "motive": "To promote trustworthy trade inside Alfred's burhs and broadcast his authority as leader of all free English people.",
+                "hinge_question": "Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+                "source_context": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+                "provenance_breakdown": {
+                  "author": "Official royal mint moneyers working under strict weight and silver controls set by King Alfred.",
+                  "audience": "Traders, town-dwellers, and taxpayers across Wessex, western Mercia, London, and the Danelaw border.",
+                  "motive": "To promote trustworthy trade inside Alfred's burhs and broadcast his authority as leader of all free English people."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "KING OF THE ENGLISH",
+                "model_answer": "Source B shows that every merchant and farmer handling Alfred's silver pennies read the bold message \"AELFRED REX ANGLO[RUM]\" (\"Alfred, King of the English\"). After saving Wessex and restoring London in AD 886, Alfred wanted West Saxons and Mercians to unite together as one English people.",
+                "provenance_clues": {
+                  "author": "Official royal mint moneyers working under strict weight and silver controls set by King Alfred.",
+                  "audience": "Traders, town-dwellers, and taxpayers across Wessex, western Mercia, London, and the Danelaw border.",
+                  "motive": "To promote trustworthy trade inside Alfred's burhs and broadcast his authority as leader of all free English people."
+                }
+              },
+              "text": "Direct translation from the Latin coin inscription: \"AELFRED REX ANGLO[RUM]\" — \"Alfred, King of the English.\"",
+              "provenance": "Silver coin of King Alfred the Great, reigned AD 871–899 (Public Domain photograph by PHGCOM; fresh direct translation from the Latin legend)."
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "title": "Fortified Burhs, Warships & Schools of Learning (AD 880–899)",
+          "text": "<span class=\"para-ref\">[4.5]</span> After winning peace, King Alfred refused to be caught off guard ever again. Across Wessex, he built a network of **33 fortified towns** called **burhs**, such as **Wareham** and **Wallingford**, ringed with giant earth walls so no family lived over **20 miles** from safety. He also designed taller **60-oar warships** to patrol England's coasts.<br><br><span class=\"para-ref\">[4.6]</span> Believing wisdom mattered as much as swords, Alfred founded **court schools** and translated **Latin** books into **Old English** so young nobles could read. He sent crystal **reading pointers** like the **Alfred Jewel** to bishops and launched the **Anglo-Saxon Chronicle**, earning his unique title in British history: **Alfred the Great**.",
+          "content": "<span class=\"para-ref\">[4.5]</span> After winning peace, King Alfred refused to be caught off guard ever again. Across Wessex, he built a network of **33 fortified towns** called **burhs**, such as **Wareham** and **Wallingford**, ringed with giant earth walls so no family lived over **20 miles** from safety. He also designed taller **60-oar warships** to patrol England's coasts.<br><br><span class=\"para-ref\">[4.6]</span> Believing wisdom mattered as much as swords, Alfred founded **court schools** and translated **Latin** books into **Old English** so young nobles could read. He sent crystal **reading pointers** like the **Alfred Jewel** to bishops and launched the **Anglo-Saxon Chronicle**, earning his unique title in British history: **Alfred the Great**.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/wareham_saxon_burh_walls.jpg",
+          "image_alt": "Massive grass-covered Anglo-Saxon earthen rampart walls still ringing the fortified burh town of Wareham in Dorset",
+          "caption": "Surviving Anglo-Saxon earthen ramparts of the fortified burh at Wareham in Dorset — one of 33 walled strongholds protecting Wessex (Public Domain, Charlesdrakew).",
+          "image_caption": "Surviving Anglo-Saxon earthen ramparts of the fortified burh at Wareham in Dorset — one of 33 walled strongholds protecting Wessex (Public Domain, Charlesdrakew).",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l4_src_c",
+              "letter": "C",
+              "source_letter": "C",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_chronicle_page.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_chronicle_page.jpg",
+              "title": "Source C: Old English Manuscript Page of the Anglo-Saxon Chronicle (AD 878 Entry)",
+              "caption": "Handwritten Old English vellum page from the Anglo-Saxon Chronicle, first compiled during King Alfred's reign in the AD 890s and copied for monasteries across England (Public Domain).",
+              "author": "West Saxon Monastic Scribes in King Alfred's Reign (tr. Rev. James Ingram, 1823)",
+              "date": "Compiled c. AD 892 (Recording Events of AD 878)",
+              "context": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+              "source_context": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+              "hinge_question": "Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+              "question_badge": "ALL SAVE ALFRED THE KING",
+              "question": "Read the AD 878 entry from the Anglo-Saxon Chronicle in Source C. How does the writer make King Alfred sound heroic during Wessex's darkest winter?",
+              "model_answer": "Source C stresses that when Guthrum's surprise Twelfth Night attack subdued most of Wessex, everybody yielded \"all save Alfred the King.\" Even with only \"a little band\" hiding in the woods and marshes around Athelney, Alfred refused to give up, rallied his warriors at Egbert's Stone, won at Edington, and became godfather at Guthrum's baptism.",
+              "provenance_clues": {
+                "author": "West Saxon monastic chroniclers writing during King Alfred's reign in the AD 890s.",
+                "audience": "Monks, bishops, and noblemen across Anglo-Saxon England reading Old English.",
+                "motive": "To preserve a shared national record of English history and celebrate how Wessex survived the Viking invasions under Alfred.",
+                "hinge_question": "Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+                "source_context": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+                "provenance_breakdown": {
+                  "author": "West Saxon monastic chroniclers writing during King Alfred's reign in the AD 890s.",
+                  "audience": "Monks, bishops, and noblemen across Anglo-Saxon England reading Old English.",
+                  "motive": "To preserve a shared national record of English history and celebrate how Wessex survived the Viking invasions under Alfred."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "ALL SAVE ALFRED THE KING",
+                "model_answer": "Source C stresses that when Guthrum's surprise Twelfth Night attack subdued most of Wessex, everybody yielded \"all save Alfred the King.\" Even with only \"a little band\" hiding in the woods and marshes around Athelney, Alfred refused to give up, rallied his warriors at Egbert's Stone, won at Edington, and became godfather at Guthrum's baptism.",
+                "provenance_clues": {
+                  "author": "West Saxon monastic chroniclers writing during King Alfred's reign in the AD 890s.",
+                  "audience": "Monks, bishops, and noblemen across Anglo-Saxon England reading Old English.",
+                  "motive": "To preserve a shared national record of English history and celebrate how Wessex survived the Viking invasions under Alfred."
+                }
+              },
+              "text": "Anglo-Saxon Chronicle, Entry for AD 878 (tr. Rev. James Ingram, 1823): \"This year about mid-winter, after twelfth-night, the Danish army stole out to Chippenham, and rode over the land of the West-Saxons; where they settled, and drove many of the people over sea; and of the rest the greatest part they rode down, and subdued to their will; — ALL SAVE ALFRED THE KING. He, with a little band, uneasily sought the woods and fastnesses of the moors. [...] Afterwards, at Easter, King Alfred with his little force raised a work at Athelney [...] Then rode he to Egbert's-stone [...] and there they fought at Ethandun [Edington] against all the army, and put them to flight; and three weeks after came King Guthrum [...] and the king was his godfather at baptism.\"",
+              "provenance": "The Anglo-Saxon Chronicle, Entry for AD 878, translated from Old English by Rev. James Ingram (London, 1823 — Public Domain), paired with Peterborough Chronicle fol. 1r (Bodleian MS Laud Misc. 636 — Public Domain)."
+            },
+            {
+              "id": "ks2_anglo_saxons_vikings_l4_src_d",
+              "letter": "D",
+              "source_letter": "D",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/bratton_camp_edington_wiltshire.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/bratton_camp_edington_wiltshire.jpg",
+              "title": "Source D: Bratton Camp Chalk Escarpment near Edington (Wiltshire) & Bishop Asser's Account",
+              "caption": "Steep chalk escarpment and ramparts at Bratton Camp overlooking Edington in Wiltshire — beside the AD 878 battlefield — paired with Welsh monk Bishop Asser's biography (CC BY-SA 2.0, Phil Williams).",
+              "author": "Bishop Asser of St Davids & Sherborne (tr. Albert S. Cook, 1906)",
+              "date": "Battle fought May AD 878 (Biography written AD 893)",
+              "context": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+              "source_context": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+              "hinge_question": "According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+              "question_badge": "THE SHIELD WALL AT EDINGTON",
+              "question": "Combine the landscape photo and Bishop Asser's words in Source D. How did teamwork and terrain shape the Battle of Edington in May AD 878?",
+              "model_answer": "Source D shows the steep chalk hills above Edington where both armies clashed, while Bishop Asser explains that Alfred's men fought with a \"serried shield-wall\" — locking round wooden shields tightly shoulder-to-shoulder — and struggled bravely until Guthrum's Viking line broke and fled.",
+              "provenance_clues": {
+                "author": "Welsh monk and scholar Bishop Asser, invited from Wales to teach and advise King Alfred in Wessex.",
+                "audience": "Christian readers in Wales and Wessex learning about King Alfred's leadership.",
+                "motive": "To praise his friend and royal patron King Alfred as a courageous Christian warrior and scholar-king.",
+                "hinge_question": "According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?"
+              },
+              "teacher_notes": {
+                "hinge_question": "According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+                "source_context": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+                "provenance_breakdown": {
+                  "author": "Welsh monk and scholar Bishop Asser, invited from Wales to teach and advise King Alfred in Wessex.",
+                  "audience": "Christian readers in Wales and Wessex learning about King Alfred's leadership.",
+                  "motive": "To praise his friend and royal patron King Alfred as a courageous Christian warrior and scholar-king."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "THE SHIELD WALL AT EDINGTON",
+                "model_answer": "Source D shows the steep chalk hills above Edington where both armies clashed, while Bishop Asser explains that Alfred's men fought with a \"serried shield-wall\" — locking round wooden shields tightly shoulder-to-shoulder — and struggled bravely until Guthrum's Viking line broke and fled.",
+                "provenance_clues": {
+                  "author": "Welsh monk and scholar Bishop Asser, invited from Wales to teach and advise King Alfred in Wessex.",
+                  "audience": "Christian readers in Wales and Wessex learning about King Alfred's leadership.",
+                  "motive": "To praise his friend and royal patron King Alfred as a courageous Christian warrior and scholar-king."
+                }
+              },
+              "text": "Bishop Asser, Life of King Alfred, Chapter 56 (AD 893, tr. Albert S. Cook, 1906): \"Moving his standards thence next morning, he came to a place which is called Ethandun [Edington], and fiercely warring against the whole army of the pagans with serried [tightly locked] shield-wall, and struggling long and bravely, at length by the divine aid he gained a victory, overthrew the pagans with very great slaughter, and smiting the fugitives, pursued them as far as the fortress.\"",
+              "provenance": "Asser's Life of King Alfred (written AD 893), Chapter 56, translated from Latin by Albert S. Cook (Ginn & Company, 1906 — Public Domain), paired with Bratton Camp earthworks above Edington, Wiltshire (CC BY-SA 2.0, Phil Williams)."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l4_src_a",
+          "letter": "A",
+          "source_letter": "A",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/alfred_jewel_ashmolean.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/alfred_jewel_ashmolean.jpg",
+          "title": "Source A: The Gold, Enamel & Rock-Crystal Alfred Jewel (c. AD 880s, Ashmolean Museum)",
+          "caption": "The teardrop-shaped gold, cloisonné enamel, and rock-crystal Alfred Jewel discovered in 1693 near Athelney in Somerset, inscribed \"+ AELFRED MEC HEHT GEWYRCAN\" (Public Domain, Emily Hickey).",
+          "author": "Royal West Saxon Goldsmith Commissioned by King Alfred",
+          "date": "c. AD 880s–890s",
+          "context": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+          "source_context": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+          "hinge_question": "Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+          "question_badge": "ALFRED ORDERED ME TO BE MADE",
+          "question": "Look closely at Source A and its Old English inscription. What does the Alfred Jewel prove about what mattered to King Alfred besides winning battles?",
+          "model_answer": "Source A is crafted from gleaming gold, colourful enamel, and polished rock crystal with the Old English words \"Alfred ordered me to be made.\" Because its socket held a wooden pointer for following lines in translated manuscripts, it proves Alfred cared deeply about literacy, Christian learning, and rebuilding education across Wessex.",
+          "provenance_clues": {
+            "author": "Master West Saxon court goldsmith working directly on King Alfred's orders.",
+            "audience": "Anglo-Saxon bishops and scholars receiving Alfred's newly translated Old English books.",
+            "motive": "To honour Christian wisdom and help readers follow lines of sacred text without smudging precious vellum pages.",
+            "hinge_question": "Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+            "source_context": "Found in Somerset just four miles from Alfred's marshland refuge at Athelney, this gold and rock-crystal masterpiece formed the handle of an aestel (a precious reading pointer) sent with Old English books to Alfred's bishops. **Hinge Question:** Why would a warrior king fighting off Viking invasions spend gold making reading pointers and translating books into Old English?",
+            "provenance_breakdown": {
+              "author": "Master West Saxon court goldsmith working directly on King Alfred's orders.",
+              "audience": "Anglo-Saxon bishops and scholars receiving Alfred's newly translated Old English books.",
+              "motive": "To honour Christian wisdom and help readers follow lines of sacred text without smudging precious vellum pages."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "ALFRED ORDERED ME TO BE MADE",
+            "model_answer": "Source A is crafted from gleaming gold, colourful enamel, and polished rock crystal with the Old English words \"Alfred ordered me to be made.\" Because its socket held a wooden pointer for following lines in translated manuscripts, it proves Alfred cared deeply about literacy, Christian learning, and rebuilding education across Wessex.",
+            "provenance_clues": {
+              "author": "Master West Saxon court goldsmith working directly on King Alfred's orders.",
+              "audience": "Anglo-Saxon bishops and scholars receiving Alfred's newly translated Old English books.",
+              "motive": "To honour Christian wisdom and help readers follow lines of sacred text without smudging precious vellum pages."
+            }
+          },
+          "text": "Direct translation from the Old English gold frame inscription: \"+ AELFRED MEC HEHT GEWYRCAN\" — \"Alfred ordered me to be made.\" | Paired with King Alfred's Preface to Pastoral Care (c. AD 890, fresh direct translation from Old English): \"Therefore it seems better to me [...] that we should turn certain books which are most needful for all men to know into the language that we can all understand [...] and to every bishopric in my kingdom I send a copy, and on each there is an aestel [reading pointer] worth fifty mancuses.\"",
+          "provenance": "The Alfred Jewel (Ashmolean Museum, Oxford, AN1836 p.135.371; Public Domain illustration, fresh direct translation from the original Old English inscription and Preface)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l4_src_b",
+          "letter": "B",
+          "source_letter": "B",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/alfred_the_great_silver_penny.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/alfred_the_great_silver_penny.jpg",
+          "title": "Source B: Silver Penny Coin of King Alfred the Great, Styled REX ANGLO[RUM] (c. AD 886–899)",
+          "caption": "High-purity silver coin of King Alfred the Great bearing his royal title \"AELFRED REX ANGLO[RUM]\" (\"Alfred, King of the English\") (Public Domain, PHGCOM).",
+          "author": "Royal Anglo-Saxon Moneyers under King Alfred",
+          "date": "c. AD 886–899",
+          "context": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+          "source_context": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+          "hinge_question": "Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+          "question_badge": "KING OF THE ENGLISH",
+          "question": "Inspect Source B. Why did King Alfred change his royal title on silver pennies from \"King of the West Saxons\" to \"King of the English\" after AD 886?",
+          "model_answer": "Source B shows that every merchant and farmer handling Alfred's silver pennies read the bold message \"AELFRED REX ANGLO[RUM]\" (\"Alfred, King of the English\"). After saving Wessex and restoring London in AD 886, Alfred wanted West Saxons and Mercians to unite together as one English people.",
+          "provenance_clues": {
+            "author": "Official royal mint moneyers working under strict weight and silver controls set by King Alfred.",
+            "audience": "Traders, town-dwellers, and taxpayers across Wessex, western Mercia, London, and the Danelaw border.",
+            "motive": "To promote trustworthy trade inside Alfred's burhs and broadcast his authority as leader of all free English people.",
+            "hinge_question": "Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+            "source_context": "Earlier rulers of Wessex called themselves only \"King of the West Saxons.\" After recapturing and rebuilding Roman-walled London in AD 886, Alfred minted silver pennies calling himself \"REX ANGLO[RUM]\" — King of all English people outside Viking rule. **Hinge Question:** Why was stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto everyday silver pennies such a clever way for Alfred to unite Anglo-Saxons?",
+            "provenance_breakdown": {
+              "author": "Official royal mint moneyers working under strict weight and silver controls set by King Alfred.",
+              "audience": "Traders, town-dwellers, and taxpayers across Wessex, western Mercia, London, and the Danelaw border.",
+              "motive": "To promote trustworthy trade inside Alfred's burhs and broadcast his authority as leader of all free English people."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "KING OF THE ENGLISH",
+            "model_answer": "Source B shows that every merchant and farmer handling Alfred's silver pennies read the bold message \"AELFRED REX ANGLO[RUM]\" (\"Alfred, King of the English\"). After saving Wessex and restoring London in AD 886, Alfred wanted West Saxons and Mercians to unite together as one English people.",
+            "provenance_clues": {
+              "author": "Official royal mint moneyers working under strict weight and silver controls set by King Alfred.",
+              "audience": "Traders, town-dwellers, and taxpayers across Wessex, western Mercia, London, and the Danelaw border.",
+              "motive": "To promote trustworthy trade inside Alfred's burhs and broadcast his authority as leader of all free English people."
+            }
+          },
+          "text": "Direct translation from the Latin coin inscription: \"AELFRED REX ANGLO[RUM]\" — \"Alfred, King of the English.\"",
+          "provenance": "Silver coin of King Alfred the Great, reigned AD 871–899 (Public Domain photograph by PHGCOM; fresh direct translation from the Latin legend)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l4_src_c",
+          "letter": "C",
+          "source_letter": "C",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_chronicle_page.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_chronicle_page.jpg",
+          "title": "Source C: Old English Manuscript Page of the Anglo-Saxon Chronicle (AD 878 Entry)",
+          "caption": "Handwritten Old English vellum page from the Anglo-Saxon Chronicle, first compiled during King Alfred's reign in the AD 890s and copied for monasteries across England (Public Domain).",
+          "author": "West Saxon Monastic Scribes in King Alfred's Reign (tr. Rev. James Ingram, 1823)",
+          "date": "Compiled c. AD 892 (Recording Events of AD 878)",
+          "context": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+          "source_context": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+          "hinge_question": "Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+          "question_badge": "ALL SAVE ALFRED THE KING",
+          "question": "Read the AD 878 entry from the Anglo-Saxon Chronicle in Source C. How does the writer make King Alfred sound heroic during Wessex's darkest winter?",
+          "model_answer": "Source C stresses that when Guthrum's surprise Twelfth Night attack subdued most of Wessex, everybody yielded \"all save Alfred the King.\" Even with only \"a little band\" hiding in the woods and marshes around Athelney, Alfred refused to give up, rallied his warriors at Egbert's Stone, won at Edington, and became godfather at Guthrum's baptism.",
+          "provenance_clues": {
+            "author": "West Saxon monastic chroniclers writing during King Alfred's reign in the AD 890s.",
+            "audience": "Monks, bishops, and noblemen across Anglo-Saxon England reading Old English.",
+            "motive": "To preserve a shared national record of English history and celebrate how Wessex survived the Viking invasions under Alfred.",
+            "hinge_question": "Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+            "source_context": "In the AD 890s, scribes in Wessex compiled a year-by-year history in Old English rather than Latin — the Anglo-Saxon Chronicle — and sent copies to monasteries across the realm so Alfred's survival at Athelney and victory at Edington would never be forgotten. **Hinge Question:** Why do historians value the Anglo-Saxon Chronicle so highly, while still remembering that it was written inside King Alfred's own kingdom of Wessex?",
+            "provenance_breakdown": {
+              "author": "West Saxon monastic chroniclers writing during King Alfred's reign in the AD 890s.",
+              "audience": "Monks, bishops, and noblemen across Anglo-Saxon England reading Old English.",
+              "motive": "To preserve a shared national record of English history and celebrate how Wessex survived the Viking invasions under Alfred."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "ALL SAVE ALFRED THE KING",
+            "model_answer": "Source C stresses that when Guthrum's surprise Twelfth Night attack subdued most of Wessex, everybody yielded \"all save Alfred the King.\" Even with only \"a little band\" hiding in the woods and marshes around Athelney, Alfred refused to give up, rallied his warriors at Egbert's Stone, won at Edington, and became godfather at Guthrum's baptism.",
+            "provenance_clues": {
+              "author": "West Saxon monastic chroniclers writing during King Alfred's reign in the AD 890s.",
+              "audience": "Monks, bishops, and noblemen across Anglo-Saxon England reading Old English.",
+              "motive": "To preserve a shared national record of English history and celebrate how Wessex survived the Viking invasions under Alfred."
+            }
+          },
+          "text": "Anglo-Saxon Chronicle, Entry for AD 878 (tr. Rev. James Ingram, 1823): \"This year about mid-winter, after twelfth-night, the Danish army stole out to Chippenham, and rode over the land of the West-Saxons; where they settled, and drove many of the people over sea; and of the rest the greatest part they rode down, and subdued to their will; — ALL SAVE ALFRED THE KING. He, with a little band, uneasily sought the woods and fastnesses of the moors. [...] Afterwards, at Easter, King Alfred with his little force raised a work at Athelney [...] Then rode he to Egbert's-stone [...] and there they fought at Ethandun [Edington] against all the army, and put them to flight; and three weeks after came King Guthrum [...] and the king was his godfather at baptism.\"",
+          "provenance": "The Anglo-Saxon Chronicle, Entry for AD 878, translated from Old English by Rev. James Ingram (London, 1823 — Public Domain), paired with Peterborough Chronicle fol. 1r (Bodleian MS Laud Misc. 636 — Public Domain)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l4_src_d",
+          "letter": "D",
+          "source_letter": "D",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/bratton_camp_edington_wiltshire.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/bratton_camp_edington_wiltshire.jpg",
+          "title": "Source D: Bratton Camp Chalk Escarpment near Edington (Wiltshire) & Bishop Asser's Account",
+          "caption": "Steep chalk escarpment and ramparts at Bratton Camp overlooking Edington in Wiltshire — beside the AD 878 battlefield — paired with Welsh monk Bishop Asser's biography (CC BY-SA 2.0, Phil Williams).",
+          "author": "Bishop Asser of St Davids & Sherborne (tr. Albert S. Cook, 1906)",
+          "date": "Battle fought May AD 878 (Biography written AD 893)",
+          "context": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+          "source_context": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+          "hinge_question": "According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+          "question_badge": "THE SHIELD WALL AT EDINGTON",
+          "question": "Combine the landscape photo and Bishop Asser's words in Source D. How did teamwork and terrain shape the Battle of Edington in May AD 878?",
+          "model_answer": "Source D shows the steep chalk hills above Edington where both armies clashed, while Bishop Asser explains that Alfred's men fought with a \"serried shield-wall\" — locking round wooden shields tightly shoulder-to-shoulder — and struggled bravely until Guthrum's Viking line broke and fled.",
+          "provenance_clues": {
+            "author": "Welsh monk and scholar Bishop Asser, invited from Wales to teach and advise King Alfred in Wessex.",
+            "audience": "Christian readers in Wales and Wessex learning about King Alfred's leadership.",
+            "motive": "To praise his friend and royal patron King Alfred as a courageous Christian warrior and scholar-king.",
+            "hinge_question": "According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?"
+          },
+          "teacher_notes": {
+            "hinge_question": "According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+            "source_context": "Welsh scholar Asser lived and worked alongside King Alfred at his royal court and wrote Alfred's biography in AD 893 while eyewitnesses to the Battle of Edington below Bratton Camp's steep chalk slopes were still alive. **Hinge Question:** According to Bishop Asser in Source D, what battlefield formation helped Alfred's Wessex warriors defeat Guthrum's Viking army at Edington?",
+            "provenance_breakdown": {
+              "author": "Welsh monk and scholar Bishop Asser, invited from Wales to teach and advise King Alfred in Wessex.",
+              "audience": "Christian readers in Wales and Wessex learning about King Alfred's leadership.",
+              "motive": "To praise his friend and royal patron King Alfred as a courageous Christian warrior and scholar-king."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "THE SHIELD WALL AT EDINGTON",
+            "model_answer": "Source D shows the steep chalk hills above Edington where both armies clashed, while Bishop Asser explains that Alfred's men fought with a \"serried shield-wall\" — locking round wooden shields tightly shoulder-to-shoulder — and struggled bravely until Guthrum's Viking line broke and fled.",
+            "provenance_clues": {
+              "author": "Welsh monk and scholar Bishop Asser, invited from Wales to teach and advise King Alfred in Wessex.",
+              "audience": "Christian readers in Wales and Wessex learning about King Alfred's leadership.",
+              "motive": "To praise his friend and royal patron King Alfred as a courageous Christian warrior and scholar-king."
+            }
+          },
+          "text": "Bishop Asser, Life of King Alfred, Chapter 56 (AD 893, tr. Albert S. Cook, 1906): \"Moving his standards thence next morning, he came to a place which is called Ethandun [Edington], and fiercely warring against the whole army of the pagans with serried [tightly locked] shield-wall, and struggling long and bravely, at length by the divine aid he gained a victory, overthrew the pagans with very great slaughter, and smiting the fugitives, pursued them as far as the fortress.\"",
+          "provenance": "Asser's Life of King Alfred (written AD 893), Chapter 56, translated from Latin by Albert S. Cook (Ginn & Company, 1906 — Public Domain), paired with Bratton Camp earthworks above Edington, Wiltshire (CC BY-SA 2.0, Phil Williams)."
+        }
+      ],
+      "causal_domino_spine": {
+        "title": "How King Alfred Saved & Transformed Wessex",
+        "subtitle": "From Marshland Survival at Athelney to the Danelaw Treaty and 33 Walled Burhs",
+        "stages": [
+          {
+            "step": 1,
+            "para_ref": "[4.1]",
+            "date": "Jan–May AD 878",
+            "title": "Athelney Marshes to Victory at Edington",
+            "actor": "King Alfred, Wessex Fyrd & Guthrum",
+            "tag": "🛡️ EDINGTON",
+            "trigger": "After Guthrum's Twelfth Night attack at Chippenham, Alfred hid at Athelney, rallied the fyrd at Egbert's Stone, and crushed Guthrum's shield wall at Edington.",
+            "connective": "Forced Guthrum's defeated Viking army to sue for peace.",
+            "question": "How did King Alfred turn near-defeat into victory in AD 878?",
+            "prose_hash": "d83eca7c22"
+          },
+          {
+            "step": 2,
+            "para_ref": "[4.3]",
+            "date": "AD 878–886",
+            "title": "Baptism, London & the Danelaw Border",
+            "actor": "King Alfred & Baptised King Guthrum",
+            "tag": "📜 DANELAW",
+            "trigger": "Guthrum was baptised as Christian king Aethelstan, Alfred rebuilt London (AD 886), and their treaty split England along Roman Watling Street.",
+            "connective": "Gave Wessex breathing space to construct permanent kingdom-wide defences.",
+            "question": "How did the peace treaty with Guthrum divide England?",
+            "prose_hash": "d72e47c48e"
+          },
+          {
+            "step": 3,
+            "para_ref": "[4.5]",
+            "date": "AD 880–899",
+            "title": "33 Burhs, 60-Oar Ships & Old English Books",
+            "actor": "Alfred the Great, Builders & Scholars",
+            "tag": "🏰 BURHS & BOOKS",
+            "trigger": "Alfred built 33 walled burhs within 20 miles of every home, launched 60-oar warships, translated Latin books into Old English, and started the Anglo-Saxon Chronicle.",
+            "connective": "Earned Alfred the unique title \"the Great\" and laid foundations for one united England.",
+            "question": "Why did Alfred's burhs, ships, and schools earn him the title \"the Great\"?",
+            "prose_hash": "8239fc8609"
+          }
+        ]
+      },
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "How did King Alfred turn near-defeat into victory in AD 878?",
+          "focus_clue": "How did King Alfred turn near-defeat into victory in AD 878?",
+          "words": [
+            {
+              "term": "Athelney",
+              "clue": "A marshy island refuge in the Somerset Levels where King Alfred hid after Guthrum's Twelfth Night attack on Chippenham."
+            },
+            {
+              "term": "fyrd",
+              "clue": "Loyal West Saxon farmer-warriors who rallied to Alfred at Egbert's Stone in spring AD 878."
+            },
+            {
+              "term": "Battle of Edington",
+              "clue": "The decisive May AD 878 battle in Wiltshire where Alfred's locked shield wall defeated Guthrum's Viking army."
+            }
+          ],
+          "model_sentence": "After regrouping in the Somerset marshes at <strong>Athelney</strong>, King Alfred rallied his Wessex <strong>fyrd</strong> warriors and won a decisive victory at the <strong>Battle of Edington</strong>.",
+          "title": "From Athelney Marshes to Victory at Edington",
+          "question": "How did King Alfred turn near-defeat into victory in AD 878?",
+          "questionHeading": "How did King Alfred turn near-defeat into victory in AD 878?",
+          "focusClue": "How did King Alfred turn near-defeat into victory in AD 878?",
+          "date": "AD 878",
+          "dates": "AD 878",
+          "para_ref": "[4.1]",
+          "paraRef": "[4.1]",
+          "prose_hash": "d83eca7c22"
+        },
+        {
+          "step": 2,
+          "heading": "How did the peace treaty with Guthrum divide England?",
+          "focus_clue": "How did the peace treaty with Guthrum divide England?",
+          "words": [
+            {
+              "term": "Christian",
+              "clue": "Guthrum accepted baptism as a Christian king named Aethelstan with King Alfred standing as his godfather."
+            },
+            {
+              "term": "Watling Street",
+              "clue": "The ancient Roman road running north-west from London used as a key boundary line in Alfred and Guthrum's treaty."
+            },
+            {
+              "term": "Danelaw",
+              "clue": "Northern and eastern England where Viking settlers farmed -by and -thorpe villages and lived under Danish laws."
+            }
+          ],
+          "model_sentence": "Once Guthrum became a baptised <strong>Christian</strong> ruler, a peace treaty along <strong>Watling Street</strong> separated Anglo-Saxon Wessex from the northern Viking <strong>Danelaw</strong>.",
+          "title": "Peace with Guthrum & Creating the Danelaw",
+          "question": "How did the peace treaty with Guthrum divide England?",
+          "questionHeading": "How did the peace treaty with Guthrum divide England?",
+          "focusClue": "How did the peace treaty with Guthrum divide England?",
+          "date": "AD 878–886",
+          "dates": "AD 878–886",
+          "para_ref": "[4.3]",
+          "paraRef": "[4.3]",
+          "prose_hash": "d72e47c48e"
+        },
+        {
+          "step": 3,
+          "heading": "Why did Alfred's burhs, ships, and schools earn him the title \"the Great\"?",
+          "focus_clue": "Why did Alfred's burhs, ships, and schools earn him the title \"the Great\"?",
+          "words": [
+            {
+              "term": "burhs",
+              "clue": "A defensive network of 33 earth-walled towns like Wareham and Wallingford built within 20 miles of every Wessex farm."
+            },
+            {
+              "term": "Old English",
+              "clue": "The everyday language of the Anglo-Saxons into which Alfred translated Latin books so young nobles could learn to read."
+            },
+            {
+              "term": "Anglo-Saxon Chronicle",
+              "clue": "The famous year-by-year national history book launched in Alfred's reign and copied across English monasteries."
+            }
+          ],
+          "model_sentence": "King Alfred protected Wessex with 33 walled <strong>burhs</strong>, translated Latin wisdom into <strong>Old English</strong>, and launched the <strong>Anglo-Saxon Chronicle</strong>.",
+          "title": "Fortified Burhs, Warships & Schools of Learning",
+          "question": "Why did Alfred's burhs, ships, and schools earn him the title \"the Great\"?",
+          "questionHeading": "Why did Alfred's burhs, ships, and schools earn him the title \"the Great\"?",
+          "focusClue": "Why did Alfred's burhs, ships, and schools earn him the title \"the Great\"?",
+          "date": "AD 880–899",
+          "dates": "AD 880–899",
+          "para_ref": "[4.5]",
+          "paraRef": "[4.5]",
+          "prose_hash": "8239fc8609"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source A (the Alfred Jewel) and Source B (Alfred's silver penny). What clues prove that King Alfred wanted to be remembered as more than just a fierce battlefield fighter?",
+          "starter": "Looking closely at Source A and Source B, we can tell King Alfred was more than just a fighter because...",
+          "word_bank": [
+            "Alfred Jewel",
+            "reading pointer",
+            "Old English",
+            "REX ANGLO[RUM]"
+          ],
+          "hints": [
+            "Describe Source A: what materials is the Alfred Jewel made from, what does its Old English inscription say, and how was it used with books?",
+            "Explain Source B: what special Latin title (\"REX ANGLO[RUM]\") did Alfred stamp onto his silver pennies after restoring London in AD 886?",
+            "Scholar Challenge (Year 5+): Compare Source C (the Anglo-Saxon Chronicle) — why was writing history and books in Old English instead of only Latin so important for uniting people?"
+          ],
+          "model_answer": "Looking closely at Source A and Source B, we can tell King Alfred was more than just a fighter because he cared deeply about education, law, and uniting English people. Source A, the gold and rock-crystal Alfred Jewel inscribed \"Alfred ordered me to be made,\" held a wooden reading pointer sent with translated Old English books to bishops across his realm. Meanwhile, Source B shows Alfred stamping \"REX ANGLO[RUM]\" (\"King of the English\") onto trustworthy silver pennies after rebuilding London in AD 886, uniting West Saxons and Mercians behind shared learning and fair trade.",
+          "key_terms": [
+            "Alfred Jewel",
+            "reading pointer",
+            "Old English",
+            "King of the English"
+          ]
+        },
+        {
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "How did King Alfred's clever network of 33 fortified burhs and taller warships stop future Viking raids from overwhelming Wessex?",
+          "starter": "After AD 878, King Alfred made sure Wessex could never be caught off guard again by building...",
+          "word_bank": [
+            "burhs",
+            "20 miles",
+            "Wareham",
+            "60-oar warships"
+          ],
+          "hints": [
+            "Explain how the 33 walled burhs (like Wareham and Wallingford) were spaced so no Wessex family lived over 20 miles from safety.",
+            "Describe what happened to families, cattle, and Viking raiders when warning beacons lit up and taller 60-oar warships patrolled the coast.",
+            "Scholar Challenge (Year 5+): Explain how burhs also helped Wessex grow richer in peacetime through safe markets and royal coin mints!"
+          ],
+          "model_answer": "After AD 878, King Alfred made sure Wessex could never be caught off guard again by building a planned network of 33 fortified towns called burhs, such as Wareham and Wallingford. Surrounded by steep earth ramparts, ditches, and timber gates, every burh stood within 20 miles — one day's walk — of every village, so families and livestock could shelter inside before Viking raiders arrived. At sea, taller 60-oar warships intercepted enemy longships, while in peacetime the guarded burhs grew into thriving market boroughs with royal silver mints.",
+          "key_terms": [
+            "burhs",
+            "20 miles",
+            "Wareham",
+            "60-oar warships"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine you are a loyal Wessex fyrd farmer-warrior in spring AD 878 riding to Egbert's Stone and locking shields beside King Alfred at the Battle of Edington! What do you remember from winter, and what do you see and hear in battle?",
+          "starter": "All winter after Twelfth Night we feared Wessex was lost, until riders whispered that King Alfred had emerged from...",
+          "word_bank": [
+            "Athelney",
+            "Egbert's Stone",
+            "shield wall",
+            "Edington"
+          ],
+          "hints": [
+            "Recall the dark winter after Guthrum seized Chippenham, while Alfred hid in the misty Somerset marshes at Athelney.",
+            "Use vivid senses as thousands cheer at Egbert's Stone and lock round wooden shields shoulder-to-shoulder below the chalk hills at Edington.",
+            "Scholar Challenge (Year 5+): Describe your amazement three weeks later watching your former enemy Guthrum emerge from baptism as Christian king Aethelstan!"
+          ],
+          "model_answer": "All winter after Twelfth Night we feared Wessex was lost when Guthrum seized Chippenham, until riders whispered that King Alfred had emerged safe from the misty reed marshes of Athelney! Cheering wildly at Egbert's Stone, thousands of us fyrd farmers gripped our ash spears and marched to the steep chalk slopes above Edington. Shoulder-to-shoulder in a tight shield wall, iron axes crashed against our painted limewood shields until Guthrum's line cracked and fled! Three weeks later, I watched in wonder as Alfred stood as godfather while Guthrum was baptised in white robes as Christian king Aethelstan.",
+          "key_terms": [
+            "Athelney",
+            "fyrd",
+            "shield wall",
+            "Edington"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Out of dozens of kings and queens in British history, why is Alfred of Wessex the ONLY ruler historians call 'the Great'?",
+          "starter": "Historians call King Alfred of Wessex 'Alfred the Great' because he combined...",
+          "word_bank": [
+            "Edington",
+            "Danelaw",
+            "33 burhs",
+            "Anglo-Saxon Chronicle"
+          ],
+          "hints": [
+            "Point 1 (Brave Leader & Peacemaker): Explain how he saved Wessex at Edington in AD 878 AND wisely made peace with Guthrum along Watling Street.",
+            "Point 2 (Builder & Scholar): Show how he protected families with 33 burhs and warships while translating Latin books into Old English and starting the Anglo-Saxon Chronicle.",
+            "Scholar Challenge (Year 5+): Weigh up whether Alfred's pen and burh-building mattered even more in the long run than his sword — and mention carefully that Wessex scribes wrote Source C!"
+          ],
+          "model_answer": "Historians call King Alfred of Wessex 'Alfred the Great' because he combined courageous leadership in crisis, wise peacemaking, clever town-planning, and a passion for education. In AD 878, when Northumbria, East Anglia, and Mercia had all fallen, Alfred refused to surrender at Athelney and defeated Guthrum at Edington. Rather than fighting endlessly, he baptised Guthrum and agreed the Danelaw border along Watling Street. Even more remarkably, he protected every family within 20 miles of 33 walled burhs, built taller warships, translated Latin books into Old English with pointers like the Alfred Jewel, and launched the Anglo-Saxon Chronicle — though historians remember Wessex scribes proudly praised their own king!",
+          "key_terms": [
+            "Battle of Edington",
+            "Danelaw",
+            "burhs",
+            "Anglo-Saxon Chronicle"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "stage": 1,
+          "question": "Where did King Alfred hide with a small band of followers after Guthrum's surprise Twelfth Night attack on Chippenham in January AD 878?",
+          "q": "Where did King Alfred hide with a small band of followers after Guthrum's surprise Twelfth Night attack on Chippenham in January AD 878?",
+          "options": [
+            "Inside the misty Somerset marshes on the Isle of Athelney",
+            "Aboard a ship sailing to Rome",
+            "Behind Hadrian's Wall in Northumberland",
+            "Inside Westminster Abbey in London"
+          ],
+          "correct": 0,
+          "answer": "Inside the misty Somerset marshes on the Isle of Athelney",
+          "a": "Inside the misty Somerset marshes on the Isle of Athelney",
+          "explanation": "Surrounded by flooded waterways and reed beds in the Somerset Levels, the Isle of Athelney sheltered Alfred while he planned his spring counter-attack."
+        },
+        {
+          "stage": 1,
+          "question": "At which May AD 878 battle in Wiltshire did King Alfred's locked shield wall decisively defeat Viking leader Guthrum?",
+          "q": "At which May AD 878 battle in Wiltshire did King Alfred's locked shield wall decisively defeat Viking leader Guthrum?",
+          "options": [
+            "The Battle of Hastings",
+            "The Battle of Edington",
+            "The Battle of Stamford Bridge",
+            "The Battle of Lindisfarne"
+          ],
+          "correct": 1,
+          "answer": "The Battle of Edington",
+          "a": "The Battle of Edington",
+          "explanation": "After rallying the Wessex fyrd at Egbert's Stone, Alfred defeated Guthrum's Viking army at the Battle of Edington below Bratton Camp."
+        },
+        {
+          "stage": 2,
+          "question": "What happened under the peace treaty signed after Edington between King Alfred and Guthrum?",
+          "q": "What happened under the peace treaty signed after Edington between King Alfred and Guthrum?",
+          "options": [
+            "Every Viking immediately sailed back to Norway forever",
+            "Guthrum was baptised as Christian king Aethelstan and England was divided along Watling Street into Saxon lands and the Danelaw",
+            "Alfred handed all of Wessex over to Danish rule",
+            "Speaking Old English was banned across southern Britain"
+          ],
+          "correct": 1,
+          "answer": "Guthrum was baptised as Christian king Aethelstan and England was divided along Watling Street into Saxon lands and the Danelaw",
+          "a": "Guthrum was baptised as Christian king Aethelstan and England was divided along Watling Street into Saxon lands and the Danelaw",
+          "explanation": "Alfred stood as godfather at Guthrum's Christian baptism, and their treaty divided England along Roman Watling Street between Anglo-Saxon territory and the northern/eastern Danelaw."
+        },
+        {
+          "stage": 2,
+          "question": "How did King Alfred's network of 33 fortified \"burhs\" (such as Wareham and Wallingford) protect families across Wessex?",
+          "q": "How did King Alfred's network of 33 fortified \"burhs\" (such as Wareham and Wallingford) protect families across Wessex?",
+          "options": [
+            "Every burh was spaced so no Wessex village lay more than 20 miles (one day's walk) from earth ramparts and safety",
+            "They were secret underground caves hidden beneath rivers",
+            "Only royal horses were allowed inside the gates",
+            "They were built exclusively along the coast of Scotland"
+          ],
+          "correct": 0,
+          "answer": "Every burh was spaced so no Wessex village lay more than 20 miles (one day's walk) from earth ramparts and safety",
+          "a": "Every burh was spaced so no Wessex village lay more than 20 miles (one day's walk) from earth ramparts and safety",
+          "explanation": "Alfred planned 33 earth-walled burhs across Wessex so every farming family lived within 20 miles of a guarded stronghold."
+        },
+        {
+          "stage": 3,
+          "question": "What was the Alfred Jewel (inscribed \"Alfred ordered me to be made\"), and why did Alfred commission it?",
+          "q": "What was the Alfred Jewel (inscribed \"Alfred ordered me to be made\"), and why did Alfred commission it?",
+          "options": [
+            "A Viking battle-axe pommel captured from Guthrum",
+            "The gold and rock-crystal handle of a reading pointer (aestel) sent with Old English books to bishops",
+            "A crown worn by Roman Emperors in Colchester",
+            "A silver weight used to measure Danegeld tribute"
+          ],
+          "correct": 1,
+          "answer": "The gold and rock-crystal handle of a reading pointer (aestel) sent with Old English books to bishops",
+          "a": "The gold and rock-crystal handle of a reading pointer (aestel) sent with Old English books to bishops",
+          "explanation": "The gold, enamel, and rock-crystal Alfred Jewel held a wooden reading pointer sent alongside Alfred's Old English translations to help rebuild literacy and learning."
+        }
+      ],
+      "video": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l4_vid_1",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=X0QnGvl3rJo",
+          "title": "King Alfred, the Vikings & the Danelaw | The Story of Britain (BBC Teach)",
+          "duration": "4 mins 32 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:30 | Lesson Phase: Act 1–2 Narrative Hook | Watch how Viking armies conquered northern kingdoms before King Alfred rallied Wessex, agreed the Danelaw peace border, and built fortified burhs.",
+          "viewing_task": "[01:25] Quick Check: Why was Wessex in such grave danger in early AD 878?\n[03:10] Hinge Question: How did King Alfred use BOTH strong defences (burhs) and peacemaking to protect Wessex?",
+          "model_answer": "Quick Check: Viking armies had already toppled Northumbria, East Anglia, and Mercia, and Guthrum's surprise winter attack forced Alfred into the Somerset marshes.\nHinge Question: After winning at Edington, Alfred made a Christian peace treaty creating the Danelaw border while building walled burhs and warships so Wessex remained ready."
+        }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "skill": "Similarity, Difference & Challenging Stereotypes",
+      "title": "Enquiry 5: Life in Jorvik & the Danelaw — Were the Vikings Only Fierce Raiders? (c. AD 876–1000)",
+      "subtitle": "40,000 Finds Under Coppergate, Baghdad Silver Dirhams, Viking Women & Old Norse Words",
+      "enquiryQuestion": "What does archaeology from Jorvik (York) reveal about everyday Viking settlers, traders, and craftworkers?",
+      "enquiry_question": "What does archaeology from Jorvik (York) reveal about everyday Viking settlers, traders, and craftworkers?",
+      "prologue": "If we only read chronicles written by terrified monks at monasteries like Lindisfarne, we might think every Viking spent all day swinging a battle-axe! Yet when archaeologists dug into spongy, wet mud beneath Coppergate street in York — Viking Jorvik — they uncovered 40,000 everyday clues from combs and board games to silk from Byzantium and silver coins from Baghdad!",
+      "blurb": "If we only read chronicles written by terrified monks at monasteries like Lindisfarne, we might think every Viking spent all day swinging a battle-axe! Yet when archaeologists dug into spongy, wet mud beneath Coppergate street in York — Viking Jorvik — they uncovered 40,000 everyday clues from combs and board games to silk from Byzantium and silver coins from Baghdad!",
+      "hero_image": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
+      "card_image": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
+      "banner_position": "center 52%",
+      "card_position": "center 52%",
+      "teacher_notes": {
+        "primer": "This enquiry teaches pupils how archaeological evidence challenges one-sided written stereotypes. Because early Viking raiders were non-literate pagans attacking literate Christian monasteries, surviving Latin and Old English chronicles naturally portrayed Norse arrivals solely as violent destroyers. Excavations by York Archaeological Trust at 16–22 Coppergate (1976–1981) transformed historical understanding: anaerobic waterlogged peat preserved timber workshops and 40,000 organic finds from Jorvik. Pupils investigate specialist craft production, long-distance trade networks stretching from Red Sea cowrie shells and Abbasid/Samanid dirhams (Baghdad and Samarkand) to North Atlantic knarr voyages (Iceland, Greenland, Vinland), Danelaw social structure (karls, thralls, and the legal rights of key-bearing Viking women), outdoor Thing law-assemblies, and Old Norse linguistic survival.",
+        "objectives": [
+          {
+            "objective": "Explain how waterlogged archaeology at Coppergate in Jorvik (York) challenges the stereotype that Vikings were only violent raiders.",
+            "primer": "Unpack why monastic chronicles gave a one-sided view and what 40,000 preserved Coppergate artefacts (leather shoes, antler combs, ice-skates, hnefatafl) reveal.",
+            "question": "Why did monastic chronicles tell only half the truth about the Vikings compared with Jorvik's underground mud?"
+          },
+          {
+            "objective": "Trace the global reach of Viking merchants and explorers from Baghdad and Byzantium to Vinland in North America.",
+            "primer": "Connect Coppergate's Byzantine silk, Baltic amber, Red Sea cowrie shell, and Islamic silver dirhams with knarr voyages across the North Atlantic.",
+            "question": "How did silver coins minted in Baghdad and a Red Sea shell end up buried beneath a street in Yorkshire?"
+          },
+          {
+            "objective": "Describe everyday family life, women's legal rights, outdoor Thing assemblies, and Old Norse words in modern English.",
+            "primer": "Contrast free karls and enslaved thralls, examine why married Viking women wore iron keys, visit Tynwald Hill's Thing, and spot Old Norse words.",
+            "question": "What rights did Viking women hold, and how do Old Norse words still shape every conversation we have today?"
+          }
+        ],
+        "source_context": {
+          "Source A": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+          "Source B": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+          "Source C": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+          "Source D": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?"
+        },
+        "delivery_plan": {
+          "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
+          "lesson_1": {
+            "title": "Session 1: 40,000 Clues Under Coppergate & Global Merchants to Baghdad",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Spaced Retrieval Starter",
+                "instruction": "Complete the 5-question Do Now retrieval check mixing Enquiries 2–4 (Sutton Hoo, Lindisfarne AD 793, Gokstad longships, Alfred at Edington, and the Danelaw)."
+              },
+              {
+                "time": "08–25m",
+                "label": "Shared Storytelling (Acts 1 & 2)",
+                "instruction": "Read Act 1 (\"Digging Beneath Coppergate in Jorvik\") and Act 2 (\"Global Merchants From Baghdad to the North Atlantic\"), mapping Jorvik's trade routes east and west."
+              },
+              {
+                "time": "25–42m",
+                "label": "Jorvik Artefact Detective Work",
+                "instruction": "Inspect Source A (Coppergate Helmet — zero horns!), Source B (deer-antler comb), and Source C (hnefatafl strategy pieces)."
+              },
+              {
+                "time": "42–50m",
+                "label": "Class Hinge Check",
+                "instruction": "Oral check: \"Why did monks write only about fierce Viking raiders while Coppergate's mud shows comb-makers, shoe-stitchers, and silk traders?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Session 2: Viking Women, Thing Assemblies, Gosforth Cross & Historian Writing",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Session 1 Recall Warm-Up",
+                "instruction": "Quick whiteboard recall of Jorvik, Coppergate (\"street of the cup-makers\"), dirham coins, knarr cargo ships, and hnefatafl."
+              },
+              {
+                "time": "08–22m",
+                "label": "Act 3 Reading & Source D",
+                "instruction": "Read Act 3 (\"Families, Thing Law-Assemblies & Old Norse Legacy\") and examine the 10th-century Gosforth Cross in Source D."
+              },
+              {
+                "time": "22–42m",
+                "label": "Dual-Scaffolded Historian Tasks",
+                "instruction": "Complete Tasks 1–4 using sentence starters, word banks, and the Year 5+ Scholar Challenges."
+              },
+              {
+                "time": "42–50m",
+                "label": "Tap-Tile Summary & Plenary Quiz",
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz."
+              }
+            ]
+          }
+        }
+      },
+      "do_now": {
+        "type": "questions",
+        "derived_from_prev": true,
+        "items": [
+          {
+            "stage": 1,
+            "question": "Why do historians think King Raedwald of East Anglia was honoured in the famous AD 625 ship burial at Sutton Hoo?",
+            "answer": "He was a mighty East Anglian overlord whose burial combined pagan ship treasures with Christian silver spoons",
+            "explanation": "Bede recorded that Raedwald kept both a Christian altar and a pagan altar, matching the mixed treasures inside Mound 1."
+          },
+          {
+            "stage": 1,
+            "question": "In AD 597, which Christian missionary sent by Pope Gregory arrived in Kent, where St Martin's Church stood at Canterbury?",
+            "answer": "Augustine (St Augustine of Canterbury)",
+            "explanation": "Welcomed by King Aethelberht and Christian Queen Bertha, Augustine founded Canterbury's Christian mission in AD 597."
+          },
+          {
+            "stage": 2,
+            "question": "What clever hull design allowed clinker-built Viking longships (like the Gokstad ship) to cross stormy seas AND beach straight onto shallow sand or row up rivers?",
+            "answer": "Overlapping oak planks with a wide, shallow-draught hull",
+            "explanation": "Because a longship sat shallowly in the water, raiders needed no deep harbour and could row far inland up English rivers."
+          },
+          {
+            "stage": 2,
+            "question": "Where did King Alfred rally his Wessex fyrd farmer-warriors in spring AD 878 before defeating Guthrum at Edington?",
+            "answer": "Egbert's Stone (after hiding in the Somerset marshes at Athelney)",
+            "explanation": "From Athelney marshes, Alfred summoned men of Somerset, Wiltshire, and Hampshire to Egbert's Stone and won at Edington."
+          },
+          {
+            "stage": 3,
+            "question": "How did the Treaty of Alfred and Guthrum divide England, and what were Alfred's 33 walled towns called?",
+            "answer": "Along Roman Watling Street into Saxon lands and the Viking Danelaw; Alfred's 33 walled towns were called burhs",
+            "explanation": "Every Wessex farm lay within 20 miles of a fortified burh while Viking settlers farmed northern and eastern England."
+          }
+        ],
+        "current_items": [
+          {
+            "stage": 1,
+            "question": "What was the Viking name for York, and what does the street name \"Coppergate\" mean in Old Norse?",
+            "answer": "Jorvik — and Coppergate means \"street of the cup-makers\"",
+            "explanation": "In Old Norse, koppari meant cup-turner/woodworker and gata meant street!"
+          },
+          {
+            "stage": 1,
+            "question": "Roughly how many everyday objects were dug up from wet, oxygen-free peat beneath Coppergate between 1976 and 1981?",
+            "answer": "Around 40,000 everyday objects",
+            "explanation": "Anaerobic peaty soil preserved timber workshops, leather shoes, bone skates, combs, silk, and coins."
+          },
+          {
+            "stage": 2,
+            "question": "What silver coins from Baghdad and Samarkand prove that Viking merchants traded far beyond Europe?",
+            "answer": "Islamic Arabic silver dirham coins",
+            "explanation": "Vikings traded northern furs, amber, and walrus ivory along Russian rivers for thousands of silver dirhams."
+          },
+          {
+            "stage": 3,
+            "question": "What outdoor Viking assembly met at places like Tynwald Hill to pass laws and settle arguments peacefully?",
+            "answer": "A Thing (law-assembly)",
+            "explanation": "Free men and community members gathered outdoors at the Thing to vote on laws and resolve disputes."
+          },
+          {
+            "stage": 3,
+            "question": "Name four everyday modern English words borrowed directly from the Vikings' Old Norse language.",
+            "answer": "Sky, window, egg, knife, husband, and Thursday (\"Thor's day\")",
+            "explanation": "Everyday farming and family contact in the Danelaw wove hundreds of Old Norse words into English."
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "term": "Jorvik",
+          "definition": "The bustling Viking capital, workshop centre, and river trading port captured in AD 866 — modern-day York.",
+          "syllables": "Jor-vik",
+          "phonetic": "YOR-vik",
+          "tier": "3"
+        },
+        {
+          "term": "Dirham",
+          "definition": "A pure silver coin minted in Islamic cities like Baghdad and Samarkand, traded along rivers by Viking merchants.",
+          "syllables": "Dir-ham",
+          "phonetic": "DEER-ham",
+          "tier": "3"
+        },
+        {
+          "term": "Knarr",
+          "definition": "A deep, wide-bellied Viking wooden cargo ship built to carry families, livestock, timber, and trade goods across oceans.",
+          "syllables": "Knarr",
+          "phonetic": "kuh-NAR",
+          "tier": "3"
+        },
+        {
+          "term": "Thrall",
+          "definition": "An enslaved worker at the bottom of Viking society who had no freedom and carried out heavy farm or household labour.",
+          "syllables": "Thrall",
+          "phonetic": "THRAWL",
+          "tier": "3"
+        },
+        {
+          "term": "Thing",
+          "definition": "An outdoor Viking community law-assembly where free settlers gathered to make laws, hear trials, and settle disputes.",
+          "syllables": "Thing",
+          "phonetic": "THING",
+          "tier": "3"
+        }
+      ],
+      "vocab_cloze_text": "Archaeologists digging under Coppergate in [Jorvik] found 40,000 clues to everyday Viking life. Far-travelling merchants brought back Arabic silver [Dirham] coins from Baghdad and steered sturdy [Knarr] cargo ships to Iceland and Greenland. On Danelaw farms, free karls worked above enslaved [Thrall] labourers, while communities settled arguments fairly outdoors at a [Thing].",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "title": "Digging Beneath Coppergate in Jorvik (c. AD 876–950)",
+          "text": "<span class=\"para-ref\">[5.1]</span> Monks who suffered raids described Vikings only as fierce warriors, yet archaeology tells a richer story! Between **1976 and 1981**, archaeologists digging beneath **Coppergate** (\"street of the cup-makers\") in **York** uncovered the Viking city of **Jorvik**. Deep, wet, **oxygen-free peat** miraculously preserved over **40,000 everyday objects** made of wood, cloth, leather, and bone.<br><br><span class=\"para-ref\">[5.2]</span> Crowded **timber workshops** lined Jorvik's bustling streets, where skilled **craftworkers** stitched leather shoes, turned wooden bowls, carved **bone ice-skates**, and made counters for the strategy board game **hnefatafl**. Finely carved **deer-antler combs**, tweezers, and ear-spoons prove that Viking settlers cared deeply about neat hair, clean clothes, and daily **hygiene**!",
+          "content": "<span class=\"para-ref\">[5.1]</span> Monks who suffered raids described Vikings only as fierce warriors, yet archaeology tells a richer story! Between **1976 and 1981**, archaeologists digging beneath **Coppergate** (\"street of the cup-makers\") in **York** uncovered the Viking city of **Jorvik**. Deep, wet, **oxygen-free peat** miraculously preserved over **40,000 everyday objects** made of wood, cloth, leather, and bone.<br><br><span class=\"para-ref\">[5.2]</span> Crowded **timber workshops** lined Jorvik's bustling streets, where skilled **craftworkers** stitched leather shoes, turned wooden bowls, carved **bone ice-skates**, and made counters for the strategy board game **hnefatafl**. Finely carved **deer-antler combs**, tweezers, and ear-spoons prove that Viking settlers cared deeply about neat hair, clean clothes, and daily **hygiene**!",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_woodshop.jpg",
+          "image_alt": "Busy street scene along Coppergate in central York, site of the famous 1976–1981 Viking Jorvik archaeological excavation",
+          "caption": "Reconstructed Viking-Age timber woodworker’s workshop and plank boardwalk street at Ribe — showing how craftworkers and traders lived along Jorvik’s bustling Coppergate (CC BY-SA 4.0, Hjart).",
+          "image_caption": "Coppergate (\"street of the cup-makers\") in York, beneath which archaeologists excavated preserved 10th-century timber workshops of Viking Jorvik (CC BY-SA 2.0, Stanley Howe).",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l5_src_a",
+              "letter": "A",
+              "source_letter": "A",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/coppergate_helmet_york.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/coppergate_helmet_york.jpg",
+              "title": "Source A: 8th-Century Coppergate Helmet Discovered in Waterlogged Soil at York (Yorkshire Museum)",
+              "caption": "The remarkably preserved late 8th-century iron-and-brass Coppergate Helmet with hinged cheek-pieces and animal interlace on the nose-guard, unearthed in a waterlogged pit in York in 1982 (CC BY-SA 3.0, Jonathan Cardy).",
+              "author": "Master Northumbrian Blacksmith & Brass-Worker (Excavated at Coppergate, York)",
+              "date": "Late 8th Century AD (Unearthed 1982)",
+              "context": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+              "source_context": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+              "hinge_question": "Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+              "question_badge": "PRESERVED BENEATH COPPERGATE",
+              "question": "Inspect Source A. Notice firstly that it has NO horns, and secondly how well the metal survived! What two important lessons does the Coppergate Helmet teach archaeological detectives?",
+              "model_answer": "First, Source A proves real early medieval warriors in Britain wore practical iron helmets with nose-guards and cheek-pieces — NEVER clumsy Viking horns, which were invented for 19th-century operas! Second, its survival in a wet pit beside Coppergate shows how York's oxygen-free soil acted like an underground time capsule preserving Anglo-Saxon and Viking history.",
+              "provenance_clues": {
+                "author": "Master Northumbrian armourer crafting a prestige helmet for a nobleman named Oshere.",
+                "audience": "Warriors and nobles in York (Anglo-Saxon Eoforwic, soon to become Viking Jorvik).",
+                "motive": "To protect its wearer's head and face in battle while displaying Christian faith and high status in gleaming brass.",
+                "hinge_question": "Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+                "source_context": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+                "provenance_breakdown": {
+                  "author": "Master Northumbrian armourer crafting a prestige helmet for a nobleman named Oshere.",
+                  "audience": "Warriors and nobles in York (Anglo-Saxon Eoforwic, soon to become Viking Jorvik).",
+                  "motive": "To protect its wearer's head and face in battle while displaying Christian faith and high status in gleaming brass."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "PRESERVED BENEATH COPPERGATE",
+                "model_answer": "First, Source A proves real early medieval warriors in Britain wore practical iron helmets with nose-guards and cheek-pieces — NEVER clumsy Viking horns, which were invented for 19th-century operas! Second, its survival in a wet pit beside Coppergate shows how York's oxygen-free soil acted like an underground time capsule preserving Anglo-Saxon and Viking history.",
+                "provenance_clues": {
+                  "author": "Master Northumbrian armourer crafting a prestige helmet for a nobleman named Oshere.",
+                  "audience": "Warriors and nobles in York (Anglo-Saxon Eoforwic, soon to become Viking Jorvik).",
+                  "motive": "To protect its wearer's head and face in battle while displaying Christian faith and high status in gleaming brass."
+                }
+              },
+              "text": "Direct translation from the Latin brass crest inscription on the Coppergate Helmet: \"In the name of our Lord Jesus Christ, the Holy Spirit, and God; to all we say Amen. Oshere.\"",
+              "provenance": "The Coppergate (York) Helmet, Yorkshire Museum (YORYM : 1992.8; CC BY-SA 3.0, Jonathan Cardy; fresh direct translation from the original Latin brass inscription)."
+            },
+            {
+              "id": "ks2_anglo_saxons_vikings_l5_src_b",
+              "letter": "B",
+              "source_letter": "B",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/viking_antler_comb.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/viking_antler_comb.jpg",
+              "title": "Source B: Carved Deer-Antler Comb & Protective Case from Viking-Age Craft Workshops",
+              "caption": "Finely toothed Viking-Age hair comb carved from red-deer antler and fastened with iron rivets inside a decorated bone case (CC BY-SA 3.0, Notafly, Down County Museum).",
+              "author": "Viking Antler-Carver & Comb-Maker",
+              "date": "9th–10th Century AD",
+              "context": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+              "source_context": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+              "hinge_question": "How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+              "question_badge": "NEAT HAIR & DAILY HYGIENE",
+              "question": "Look closely at the fine teeth and carved patterns on Source B. How does this everyday object challenge the old stereotype that Vikings were dirty savages?",
+              "model_answer": "Source B has dozens of carefully sawn teeth riveted onto a decorated antler spine with a matching case so the teeth would not snap in a belt pouch. Finding hundreds of combs like this in Jorvik — alongside tweezers and Saturday bathing (\"laugardagr,\" washing-day) — proves Vikings took real pride in clean, tidy grooming.",
+              "provenance_clues": {
+                "author": "Specialist Viking-Age craftworker sawing and riveting shed deer antler in a town workshop.",
+                "audience": "Everyday Viking men, women, and children who carried a personal comb in a belt pouch.",
+                "motive": "To keep hair neat, untangled, and free of lice while showing off attractive ring-and-dot patterns.",
+                "hinge_question": "How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?"
+              },
+              "teacher_notes": {
+                "hinge_question": "How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+                "source_context": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+                "provenance_breakdown": {
+                  "author": "Specialist Viking-Age craftworker sawing and riveting shed deer antler in a town workshop.",
+                  "audience": "Everyday Viking men, women, and children who carried a personal comb in a belt pouch.",
+                  "motive": "To keep hair neat, untangled, and free of lice while showing off attractive ring-and-dot patterns."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "NEAT HAIR & DAILY HYGIENE",
+                "model_answer": "Source B has dozens of carefully sawn teeth riveted onto a decorated antler spine with a matching case so the teeth would not snap in a belt pouch. Finding hundreds of combs like this in Jorvik — alongside tweezers and Saturday bathing (\"laugardagr,\" washing-day) — proves Vikings took real pride in clean, tidy grooming.",
+                "provenance_clues": {
+                  "author": "Specialist Viking-Age craftworker sawing and riveting shed deer antler in a town workshop.",
+                  "audience": "Everyday Viking men, women, and children who carried a personal comb in a belt pouch.",
+                  "motive": "To keep hair neat, untangled, and free of lice while showing off attractive ring-and-dot patterns."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "Global Merchants From Baghdad to the North Atlantic (9th–10th Century AD)",
+          "text": "<span class=\"para-ref\">[5.3]</span> Busy Jorvik soon grew into a wealthy international trading port linking northern Britain to the wider world. Inside Coppergate's dark mud, archaeologists found shimmering **silk** from **Byzantium** (Constantinople), golden **amber** from the Baltic Sea, wine jars from Germany, and a tropical **cowrie shell** carried all the way from the **Red Sea**.<br><br><span class=\"para-ref\">[5.4]</span> Even more remarkably, Viking merchants sailed down Russian rivers to trade furs and walrus ivory for thousands of Arabic **silver dirham coins** minted in **Baghdad** and **Samarkand**. Meanwhile, daring Norse **navigators** steered broad cargo ships called **knarrs** westwards across the icy **North Atlantic** to settle **Iceland**, **Greenland**, and **Vinland** in North America!",
+          "content": "<span class=\"para-ref\">[5.3]</span> Busy Jorvik soon grew into a wealthy international trading port linking northern Britain to the wider world. Inside Coppergate's dark mud, archaeologists found shimmering **silk** from **Byzantium** (Constantinople), golden **amber** from the Baltic Sea, wine jars from Germany, and a tropical **cowrie shell** carried all the way from the **Red Sea**.<br><br><span class=\"para-ref\">[5.4]</span> Even more remarkably, Viking merchants sailed down Russian rivers to trade furs and walrus ivory for thousands of Arabic **silver dirham coins** minted in **Baghdad** and **Samarkand**. Meanwhile, daring Norse **navigators** steered broad cargo ships called **knarrs** westwards across the icy **North Atlantic** to settle **Iceland**, **Greenland**, and **Vinland** in North America!",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/viking_islamic_dirham_coins.jpg",
+          "image_alt": "10th-century Islamic silver dirham coin inscribed with crisp Arabic calligraphy traded into the Viking world",
+          "caption": "10th-century Islamic silver dirham coin inscribed in Arabic script — thousands reached Viking traders in exchange for northern furs, amber, and walrus ivory (Public Domain, LACMA).",
+          "image_caption": "10th-century Islamic silver dirham coin inscribed in Arabic script — thousands reached Viking traders in exchange for northern furs, amber, and walrus ivory (Public Domain, LACMA).",
+          "isReversed": true,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l5_src_c",
+              "letter": "C",
+              "source_letter": "C",
+              "type": "artefact",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/viking_gaming_pieces_bone.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/viking_gaming_pieces_bone.jpg",
+              "title": "Source C: Viking-Age Strategy Gaming Pieces for Hnefatafl (\"The King's Table\")",
+              "caption": "Early medieval Viking-Age gaming pieces discovered in England and recorded by the Portable Antiquities Scheme — used on wooden boards for the tactical game hnefatafl (CC BY-SA 4.0, Stuart Noon / PAS).",
+              "author": "Viking Craftworkers & Traders in the Danelaw",
+              "date": "c. AD 850–1050",
+              "context": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+              "source_context": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+              "hinge_question": "What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+              "question_badge": "STRATEGY BY THE HEARTH FIRE",
+              "question": "Inspect Source C. What does playing tactical board games like hnefatafl tell us about what Vikings valued in daily life?",
+              "model_answer": "Source C shows shaped gaming counters used for hnefatafl, a clever game of surrounding and ambush played beside the fire on dark winter evenings. It proves Vikings were not fighting non-stop; families enjoyed games, riddles, storytelling sagas, and skating on frozen rivers, while teaching children smart tactical thinking.",
+              "provenance_clues": {
+                "author": "Viking-Age craftworkers casting and carving portable gaming pieces for home and shipboard play.",
+                "audience": "Viking families in Jorvik farmhouses and sailors passing quiet evenings on merchant voyages.",
+                "motive": "To enjoy sociable indoor entertainment and sharpen strategic thinking skills.",
+                "hinge_question": "What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?"
+              },
+              "teacher_notes": {
+                "hinge_question": "What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+                "source_context": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+                "provenance_breakdown": {
+                  "author": "Viking-Age craftworkers casting and carving portable gaming pieces for home and shipboard play.",
+                  "audience": "Viking families in Jorvik farmhouses and sailors passing quiet evenings on merchant voyages.",
+                  "motive": "To enjoy sociable indoor entertainment and sharpen strategic thinking skills."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "STRATEGY BY THE HEARTH FIRE",
+                "model_answer": "Source C shows shaped gaming counters used for hnefatafl, a clever game of surrounding and ambush played beside the fire on dark winter evenings. It proves Vikings were not fighting non-stop; families enjoyed games, riddles, storytelling sagas, and skating on frozen rivers, while teaching children smart tactical thinking.",
+                "provenance_clues": {
+                  "author": "Viking-Age craftworkers casting and carving portable gaming pieces for home and shipboard play.",
+                  "audience": "Viking families in Jorvik farmhouses and sailors passing quiet evenings on merchant voyages.",
+                  "motive": "To enjoy sociable indoor entertainment and sharpen strategic thinking skills."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "title": "Families, Thing Law-Assemblies & Old Norse Legacy (9th–11th Century AD)",
+          "text": "<span class=\"para-ref\">[5.5]</span> Across the countryside, most settler families in the **Danelaw** lived on peaceful farms. Free farmers called **karls** ploughed barley and raised sheep, while enslaved workers called **thralls** did the hardest labour. Viking **women** held strong rights: wives wore iron **household keys**, ran farms while husbands sailed, owned land, and could demand a divorce.<br><br><span class=\"para-ref\">[5.6]</span> Communities met outdoors at a law-assembly called a **Thing**, such as **Tynwald Hill**, to vote on laws and settle disputes fairly. As Norse settlers married Anglo-Saxon neighbours and adopted Christianity, **Old Norse** gave modern English everyday words that we still speak today, including **sky**, **window**, **egg**, **knife**, **husband**, and **Thursday**!",
+          "content": "<span class=\"para-ref\">[5.5]</span> Across the countryside, most settler families in the **Danelaw** lived on peaceful farms. Free farmers called **karls** ploughed barley and raised sheep, while enslaved workers called **thralls** did the hardest labour. Viking **women** held strong rights: wives wore iron **household keys**, ran farms while husbands sailed, owned land, and could demand a divorce.<br><br><span class=\"para-ref\">[5.6]</span> Communities met outdoors at a law-assembly called a **Thing**, such as **Tynwald Hill**, to vote on laws and settle disputes fairly. As Norse settlers married Anglo-Saxon neighbours and adopted Christianity, **Old Norse** gave modern English everyday words that we still speak today, including **sky**, **window**, **egg**, **knife**, **husband**, and **Thursday**!",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/tynwald_hill_viking_thing.jpg",
+          "image_alt": "Four-tiered grass mound of Tynwald Hill on the Isle of Man, an ancient outdoor Norse Thing law-assembly site",
+          "caption": "Tiered grass mound of Tynwald Hill on the Isle of Man — an outdoor Viking Thing assembly founded over a thousand years ago to proclaim laws (CC BY-SA 2.0, Jon Wornham).",
+          "image_caption": "Tiered grass mound of Tynwald Hill on the Isle of Man — an outdoor Viking Thing assembly founded over a thousand years ago to proclaim laws (CC BY-SA 2.0, Jon Wornham).",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l5_src_d",
+              "letter": "D",
+              "source_letter": "D",
+              "type": "visual",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/gosforth_viking_cross_cumbria.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/gosforth_viking_cross_cumbria.jpg",
+              "title": "Source D: 10th-Century Gosforth Stone Cross in Cumbria Blending Norse Myth & Christian Art",
+              "caption": "Standing 4.4 metres tall in St Mary's churchyard at Gosforth, Cumbria, this carved 10th-century sandstone cross weaves Norse Ragnarök myths together with the Christian Crucifixion (Public Domain, English Lakes).",
+              "author": "Anglo-Scandinavian Stone Sculptor in Cumbria",
+              "date": "First Half of the 10th Century AD (c. AD 920–950)",
+              "context": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+              "source_context": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+              "hinge_question": "Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+              "question_badge": "TWO CULTURES BLENDING TOGETHER",
+              "question": "Look at the tall carved cross in Source D. What does mixing Norse myth stories and Christian symbols on one monument prove about how Vikings and Anglo-Saxons lived together over time?",
+              "model_answer": "Source D proves that Viking settlers did not stay separate enemies forever. As Norse families farmed side-by-side with Christian Anglo-Saxons and intermarried, sculptors used familiar Norse stories of brave gods fighting monsters at Ragnarök to explain new Christian teachings about good triumphing over evil.",
+              "provenance_clues": {
+                "author": "Skilled Anglo-Scandinavian stone carver working for a mixed Norse and English Christian community in Cumbria.",
+                "audience": "Local Viking-descended families and Anglo-Saxon worshippers gathering at Gosforth churchyard.",
+                "motive": "To honour the Christian faith while connecting with settlers raised on traditional Old Norse stories.",
+                "hinge_question": "Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+                "source_context": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+                "provenance_breakdown": {
+                  "author": "Skilled Anglo-Scandinavian stone carver working for a mixed Norse and English Christian community in Cumbria.",
+                  "audience": "Local Viking-descended families and Anglo-Saxon worshippers gathering at Gosforth churchyard.",
+                  "motive": "To honour the Christian faith while connecting with settlers raised on traditional Old Norse stories."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "TWO CULTURES BLENDING TOGETHER",
+                "model_answer": "Source D proves that Viking settlers did not stay separate enemies forever. As Norse families farmed side-by-side with Christian Anglo-Saxons and intermarried, sculptors used familiar Norse stories of brave gods fighting monsters at Ragnarök to explain new Christian teachings about good triumphing over evil.",
+                "provenance_clues": {
+                  "author": "Skilled Anglo-Scandinavian stone carver working for a mixed Norse and English Christian community in Cumbria.",
+                  "audience": "Local Viking-descended families and Anglo-Saxon worshippers gathering at Gosforth churchyard.",
+                  "motive": "To honour the Christian faith while connecting with settlers raised on traditional Old Norse stories."
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l5_src_a",
+          "letter": "A",
+          "source_letter": "A",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/coppergate_helmet_york.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/coppergate_helmet_york.jpg",
+          "title": "Source A: 8th-Century Coppergate Helmet Discovered in Waterlogged Soil at York (Yorkshire Museum)",
+          "caption": "The remarkably preserved late 8th-century iron-and-brass Coppergate Helmet with hinged cheek-pieces and animal interlace on the nose-guard, unearthed in a waterlogged pit in York in 1982 (CC BY-SA 3.0, Jonathan Cardy).",
+          "author": "Master Northumbrian Blacksmith & Brass-Worker (Excavated at Coppergate, York)",
+          "date": "Late 8th Century AD (Unearthed 1982)",
+          "context": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+          "source_context": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+          "hinge_question": "Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+          "question_badge": "PRESERVED BENEATH COPPERGATE",
+          "question": "Inspect Source A. Notice firstly that it has NO horns, and secondly how well the metal survived! What two important lessons does the Coppergate Helmet teach archaeological detectives?",
+          "model_answer": "First, Source A proves real early medieval warriors in Britain wore practical iron helmets with nose-guards and cheek-pieces — NEVER clumsy Viking horns, which were invented for 19th-century operas! Second, its survival in a wet pit beside Coppergate shows how York's oxygen-free soil acted like an underground time capsule preserving Anglo-Saxon and Viking history.",
+          "provenance_clues": {
+            "author": "Master Northumbrian armourer crafting a prestige helmet for a nobleman named Oshere.",
+            "audience": "Warriors and nobles in York (Anglo-Saxon Eoforwic, soon to become Viking Jorvik).",
+            "motive": "To protect its wearer's head and face in battle while displaying Christian faith and high status in gleaming brass.",
+            "hinge_question": "Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+            "source_context": "Discovered by construction diggers and archaeologists beside Coppergate in York inside a damp, oxygen-free wood-lined pit, this iron-and-brass helmet belonged to a Northumbrian nobleman named Oshere shortly before Vikings captured York and renamed it Jorvik. **Hinge Question:** Why did wet, spongy, oxygen-free soil beneath Coppergate in York preserve metal, wood, and leather objects that rotted away in dry ground elsewhere?",
+            "provenance_breakdown": {
+              "author": "Master Northumbrian armourer crafting a prestige helmet for a nobleman named Oshere.",
+              "audience": "Warriors and nobles in York (Anglo-Saxon Eoforwic, soon to become Viking Jorvik).",
+              "motive": "To protect its wearer's head and face in battle while displaying Christian faith and high status in gleaming brass."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "PRESERVED BENEATH COPPERGATE",
+            "model_answer": "First, Source A proves real early medieval warriors in Britain wore practical iron helmets with nose-guards and cheek-pieces — NEVER clumsy Viking horns, which were invented for 19th-century operas! Second, its survival in a wet pit beside Coppergate shows how York's oxygen-free soil acted like an underground time capsule preserving Anglo-Saxon and Viking history.",
+            "provenance_clues": {
+              "author": "Master Northumbrian armourer crafting a prestige helmet for a nobleman named Oshere.",
+              "audience": "Warriors and nobles in York (Anglo-Saxon Eoforwic, soon to become Viking Jorvik).",
+              "motive": "To protect its wearer's head and face in battle while displaying Christian faith and high status in gleaming brass."
+            }
+          },
+          "text": "Direct translation from the Latin brass crest inscription on the Coppergate Helmet: \"In the name of our Lord Jesus Christ, the Holy Spirit, and God; to all we say Amen. Oshere.\"",
+          "provenance": "The Coppergate (York) Helmet, Yorkshire Museum (YORYM : 1992.8; CC BY-SA 3.0, Jonathan Cardy; fresh direct translation from the original Latin brass inscription)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l5_src_b",
+          "letter": "B",
+          "source_letter": "B",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/viking_antler_comb.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/viking_antler_comb.jpg",
+          "title": "Source B: Carved Deer-Antler Comb & Protective Case from Viking-Age Craft Workshops",
+          "caption": "Finely toothed Viking-Age hair comb carved from red-deer antler and fastened with iron rivets inside a decorated bone case (CC BY-SA 3.0, Notafly, Down County Museum).",
+          "author": "Viking Antler-Carver & Comb-Maker",
+          "date": "9th–10th Century AD",
+          "context": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+          "source_context": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+          "hinge_question": "How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+          "question_badge": "NEAT HAIR & DAILY HYGIENE",
+          "question": "Look closely at the fine teeth and carved patterns on Source B. How does this everyday object challenge the old stereotype that Vikings were dirty savages?",
+          "model_answer": "Source B has dozens of carefully sawn teeth riveted onto a decorated antler spine with a matching case so the teeth would not snap in a belt pouch. Finding hundreds of combs like this in Jorvik — alongside tweezers and Saturday bathing (\"laugardagr,\" washing-day) — proves Vikings took real pride in clean, tidy grooming.",
+          "provenance_clues": {
+            "author": "Specialist Viking-Age craftworker sawing and riveting shed deer antler in a town workshop.",
+            "audience": "Everyday Viking men, women, and children who carried a personal comb in a belt pouch.",
+            "motive": "To keep hair neat, untangled, and free of lice while showing off attractive ring-and-dot patterns.",
+            "hinge_question": "How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?"
+          },
+          "teacher_notes": {
+            "hinge_question": "How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+            "source_context": "Combs carved from shed red-deer antler are among the most common personal belongings dug up across Jorvik and Viking Britain! Families used fine-toothed combs every morning to keep hair neat and remove head lice, alongside bronze tweezers and ear-spoons. **Hinge Question:** How does finding hundreds of carved deer-antler combs, tweezers, and Saturday washing bowls challenge the stereotype of \"dirty, wild Vikings\"?",
+            "provenance_breakdown": {
+              "author": "Specialist Viking-Age craftworker sawing and riveting shed deer antler in a town workshop.",
+              "audience": "Everyday Viking men, women, and children who carried a personal comb in a belt pouch.",
+              "motive": "To keep hair neat, untangled, and free of lice while showing off attractive ring-and-dot patterns."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "NEAT HAIR & DAILY HYGIENE",
+            "model_answer": "Source B has dozens of carefully sawn teeth riveted onto a decorated antler spine with a matching case so the teeth would not snap in a belt pouch. Finding hundreds of combs like this in Jorvik — alongside tweezers and Saturday bathing (\"laugardagr,\" washing-day) — proves Vikings took real pride in clean, tidy grooming.",
+            "provenance_clues": {
+              "author": "Specialist Viking-Age craftworker sawing and riveting shed deer antler in a town workshop.",
+              "audience": "Everyday Viking men, women, and children who carried a personal comb in a belt pouch.",
+              "motive": "To keep hair neat, untangled, and free of lice while showing off attractive ring-and-dot patterns."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l5_src_c",
+          "letter": "C",
+          "source_letter": "C",
+          "type": "artefact",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/viking_gaming_pieces_bone.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/viking_gaming_pieces_bone.jpg",
+          "title": "Source C: Viking-Age Strategy Gaming Pieces for Hnefatafl (\"The King's Table\")",
+          "caption": "Early medieval Viking-Age gaming pieces discovered in England and recorded by the Portable Antiquities Scheme — used on wooden boards for the tactical game hnefatafl (CC BY-SA 4.0, Stuart Noon / PAS).",
+          "author": "Viking Craftworkers & Traders in the Danelaw",
+          "date": "c. AD 850–1050",
+          "context": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+          "source_context": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+          "hinge_question": "What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+          "question_badge": "STRATEGY BY THE HEARTH FIRE",
+          "question": "Inspect Source C. What does playing tactical board games like hnefatafl tell us about what Vikings valued in daily life?",
+          "model_answer": "Source C shows shaped gaming counters used for hnefatafl, a clever game of surrounding and ambush played beside the fire on dark winter evenings. It proves Vikings were not fighting non-stop; families enjoyed games, riddles, storytelling sagas, and skating on frozen rivers, while teaching children smart tactical thinking.",
+          "provenance_clues": {
+            "author": "Viking-Age craftworkers casting and carving portable gaming pieces for home and shipboard play.",
+            "audience": "Viking families in Jorvik farmhouses and sailors passing quiet evenings on merchant voyages.",
+            "motive": "To enjoy sociable indoor entertainment and sharpen strategic thinking skills.",
+            "hinge_question": "What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?"
+          },
+          "teacher_notes": {
+            "hinge_question": "What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+            "source_context": "Long before chess arrived in northern Europe, Viking families and merchants loved playing hnefatafl (\"King's Table\") beside the evening hearth fire. One player defended a central King piece trying to escape to the corners while the rival player's attackers tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
+            "provenance_breakdown": {
+              "author": "Viking-Age craftworkers casting and carving portable gaming pieces for home and shipboard play.",
+              "audience": "Viking families in Jorvik farmhouses and sailors passing quiet evenings on merchant voyages.",
+              "motive": "To enjoy sociable indoor entertainment and sharpen strategic thinking skills."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "STRATEGY BY THE HEARTH FIRE",
+            "model_answer": "Source C shows shaped gaming counters used for hnefatafl, a clever game of surrounding and ambush played beside the fire on dark winter evenings. It proves Vikings were not fighting non-stop; families enjoyed games, riddles, storytelling sagas, and skating on frozen rivers, while teaching children smart tactical thinking.",
+            "provenance_clues": {
+              "author": "Viking-Age craftworkers casting and carving portable gaming pieces for home and shipboard play.",
+              "audience": "Viking families in Jorvik farmhouses and sailors passing quiet evenings on merchant voyages.",
+              "motive": "To enjoy sociable indoor entertainment and sharpen strategic thinking skills."
+            }
+          }
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l5_src_d",
+          "letter": "D",
+          "source_letter": "D",
+          "type": "visual",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/gosforth_viking_cross_cumbria.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/gosforth_viking_cross_cumbria.jpg",
+          "title": "Source D: 10th-Century Gosforth Stone Cross in Cumbria Blending Norse Myth & Christian Art",
+          "caption": "Standing 4.4 metres tall in St Mary's churchyard at Gosforth, Cumbria, this carved 10th-century sandstone cross weaves Norse Ragnarök myths together with the Christian Crucifixion (Public Domain, English Lakes).",
+          "author": "Anglo-Scandinavian Stone Sculptor in Cumbria",
+          "date": "First Half of the 10th Century AD (c. AD 920–950)",
+          "context": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+          "source_context": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+          "hinge_question": "Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+          "question_badge": "TWO CULTURES BLENDING TOGETHER",
+          "question": "Look at the tall carved cross in Source D. What does mixing Norse myth stories and Christian symbols on one monument prove about how Vikings and Anglo-Saxons lived together over time?",
+          "model_answer": "Source D proves that Viking settlers did not stay separate enemies forever. As Norse families farmed side-by-side with Christian Anglo-Saxons and intermarried, sculptors used familiar Norse stories of brave gods fighting monsters at Ragnarök to explain new Christian teachings about good triumphing over evil.",
+          "provenance_clues": {
+            "author": "Skilled Anglo-Scandinavian stone carver working for a mixed Norse and English Christian community in Cumbria.",
+            "audience": "Local Viking-descended families and Anglo-Saxon worshippers gathering at Gosforth churchyard.",
+            "motive": "To honour the Christian faith while connecting with settlers raised on traditional Old Norse stories.",
+            "hinge_question": "Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+            "source_context": "Carved in red sandstone where Norse settlers farmed alongside Anglo-Saxons in north-west England, the tall Gosforth Cross is shaped as a Christian cross showing Jesus, yet its panels also carve Norse gods like Thor, Vidar battling the wolf Fenrir, and bound Loki! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
+            "provenance_breakdown": {
+              "author": "Skilled Anglo-Scandinavian stone carver working for a mixed Norse and English Christian community in Cumbria.",
+              "audience": "Local Viking-descended families and Anglo-Saxon worshippers gathering at Gosforth churchyard.",
+              "motive": "To honour the Christian faith while connecting with settlers raised on traditional Old Norse stories."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "TWO CULTURES BLENDING TOGETHER",
+            "model_answer": "Source D proves that Viking settlers did not stay separate enemies forever. As Norse families farmed side-by-side with Christian Anglo-Saxons and intermarried, sculptors used familiar Norse stories of brave gods fighting monsters at Ragnarök to explain new Christian teachings about good triumphing over evil.",
+            "provenance_clues": {
+              "author": "Skilled Anglo-Scandinavian stone carver working for a mixed Norse and English Christian community in Cumbria.",
+              "audience": "Local Viking-descended families and Anglo-Saxon worshippers gathering at Gosforth churchyard.",
+              "motive": "To honour the Christian faith while connecting with settlers raised on traditional Old Norse stories."
+            }
+          }
+        }
+      ],
+      "causal_domino_spine": {
+        "title": "Beyond the Raider Stereotype: Inside Viking Jorvik",
+        "subtitle": "From Coppergate's 40,000 Artefacts to Baghdad Silver, Thing Courts, and Old Norse Today",
+        "stages": [
+          {
+            "step": 1,
+            "para_ref": "[5.1]",
+            "date": "c. AD 876–950",
+            "title": "40,000 Clues Under Wet Coppergate",
+            "actor": "Jorvik Craftworkers & Archaeologists",
+            "tag": "🪮 COPPERGATE",
+            "trigger": "Wet oxygen-free peat beneath Coppergate in York preserved timber workshops and 40,000 finds: leather shoes, bone skates, hnefatafl counters, and antler combs.",
+            "connective": "Proved Viking townspeople were skilled makers who cared about grooming and leisure.",
+            "question": "What did archaeologists discover beneath Coppergate in York?",
+            "prose_hash": "e9289a0121"
+          },
+          {
+            "step": 2,
+            "para_ref": "[5.3]",
+            "date": "9th–10th Century AD",
+            "title": "Silk, Baghdad Dirhams & Atlantic Knarrs",
+            "actor": "Viking River Merchants & Ocean Navigators",
+            "tag": "🪙 GLOBAL TRADE",
+            "trigger": "Jorvik imported Byzantine silk, Baltic amber, a Red Sea cowrie shell, and Baghdad silver dirhams, while knarr ships sailed west to Iceland, Greenland, and Vinland.",
+            "connective": "Connected Danelaw Britain to trade networks spanning three continents.",
+            "question": "How far east and west did Viking traders and explorers travel?",
+            "prose_hash": "28ae6b7e2d"
+          },
+          {
+            "step": 3,
+            "para_ref": "[5.5]",
+            "date": "9th–11th Century AD",
+            "title": "Farms, Women's Keys, Things & Old Norse",
+            "actor": "Karls, Key-Bearing Wives & Law-Speakers",
+            "tag": "⚖️ THING & WORDS",
+            "trigger": "Free karls farmed, wives carried household keys and owned land, outdoor Things settled disputes, and Old Norse gave us sky, window, egg, knife, husband, and Thursday.",
+            "connective": "Wove Viking laws, families, and language permanently into English life.",
+            "question": "How was Danelaw society organised, and what words did Old Norse leave us?",
+            "prose_hash": "7e99085e18"
+          }
+        ]
+      },
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "What did archaeologists discover beneath Coppergate in York?",
+          "focus_clue": "What did archaeologists discover beneath Coppergate in York?",
+          "words": [
+            {
+              "term": "Jorvik",
+              "clue": "The bustling Viking capital city and river port in northern England that we now call York."
+            },
+            {
+              "term": "oxygen-free peat",
+              "clue": "Wet, spongy underground mud beneath Coppergate that preserved 40,000 wood, bone, and leather objects from rotting."
+            },
+            {
+              "term": "deer-antler combs",
+              "clue": "Finely carved hair combs proving that Viking men and women cared deeply about neat hair and daily hygiene."
+            }
+          ],
+          "model_sentence": "Beneath Coppergate in Viking <strong>Jorvik</strong>, wet <strong>oxygen-free peat</strong> preserved 40,000 finds including shoes, board games, and carved <strong>deer-antler combs</strong>.",
+          "title": "Digging Beneath Coppergate in Jorvik",
+          "question": "What did archaeologists discover beneath Coppergate in York?",
+          "questionHeading": "What did archaeologists discover beneath Coppergate in York?",
+          "focusClue": "What did archaeologists discover beneath Coppergate in York?",
+          "date": "c. AD 876–950",
+          "dates": "c. AD 876–950",
+          "para_ref": "[5.1]",
+          "paraRef": "[5.1]",
+          "prose_hash": "e9289a0121"
+        },
+        {
+          "step": 2,
+          "heading": "How far east and west did Viking traders and explorers travel?",
+          "focus_clue": "How far east and west did Viking traders and explorers travel?",
+          "words": [
+            {
+              "term": "Byzantium",
+              "clue": "Eastern empire (around Constantinople) whose shimmering silk cloth was dug up inside Jorvik's workshops."
+            },
+            {
+              "term": "silver dirham coins",
+              "clue": "Arabic silver coins minted in Baghdad and Samarkand that Vikings earned by trading northern furs and walrus ivory."
+            },
+            {
+              "term": "knarrs",
+              "clue": "Sturdy, wide-bellied Norse wooden cargo ships steered west across the Atlantic to Iceland, Greenland, and Vinland."
+            }
+          ],
+          "model_sentence": "Jorvik merchants imported silk from <strong>Byzantium</strong> and Arabic <strong>silver dirham coins</strong> from Baghdad, while ocean <strong>knarrs</strong> sailed west to Greenland and Vinland.",
+          "title": "Global Merchants From Baghdad to the North Atlantic",
+          "question": "How far east and west did Viking traders and explorers travel?",
+          "questionHeading": "How far east and west did Viking traders and explorers travel?",
+          "focusClue": "How far east and west did Viking traders and explorers travel?",
+          "date": "9th–10th Century AD",
+          "dates": "9th–10th Century AD",
+          "para_ref": "[5.3]",
+          "paraRef": "[5.3]",
+          "prose_hash": "28ae6b7e2d"
+        },
+        {
+          "step": 3,
+          "heading": "How was Danelaw society organised, and what words did Old Norse leave us?",
+          "focus_clue": "How was Danelaw society organised, and what words did Old Norse leave us?",
+          "words": [
+            {
+              "term": "household keys",
+              "clue": "Heavy iron keys worn on a married Viking woman's belt showing her authority over farm stores, land, and family wealth."
+            },
+            {
+              "term": "Thing",
+              "clue": "An outdoor Viking community law-assembly, like Tynwald Hill, where free settlers voted on laws and settled arguments."
+            },
+            {
+              "term": "Old Norse",
+              "clue": "The Viking language that gave modern English everyday words such as sky, window, egg, knife, husband, and Thursday."
+            }
+          ],
+          "model_sentence": "In the Danelaw, wives proudly wore <strong>household keys</strong>, neighbours settled disputes outdoors at a <strong>Thing</strong>, and <strong>Old Norse</strong> gave us words like sky and egg.",
+          "title": "Families, Thing Law-Assemblies & Old Norse Legacy",
+          "question": "How was Danelaw society organised, and what words did Old Norse leave us?",
+          "questionHeading": "How was Danelaw society organised, and what words did Old Norse leave us?",
+          "focusClue": "How was Danelaw society organised, and what words did Old Norse leave us?",
+          "date": "9th–11th Century AD",
+          "dates": "9th–11th Century AD",
+          "para_ref": "[5.5]",
+          "paraRef": "[5.5]",
+          "prose_hash": "7e99085e18"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source B (the carved deer-antler comb) and Source C (hnefatafl gaming pieces). How do these Coppergate clues prove that Vikings were NOT only bloodthirsty raiders?",
+          "starter": "Looking closely at Source B and Source C, archaeology from Jorvik challenges the old Viking stereotype because...",
+          "word_bank": [
+            "deer-antler comb",
+            "hygiene",
+            "hnefatafl",
+            "Coppergate"
+          ],
+          "hints": [
+            "Describe Source B: why did Viking craftworkers saw neat teeth into antler combs and why did families carry tweezers and ear-spoons?",
+            "Describe Source C: what does playing tactical hnefatafl board games (alongside carving shoes and wooden cups on Coppergate) show about daily life?",
+            "Scholar Challenge (Year 5+): Explain WHY Anglo-Saxon monks left a one-sided written picture of Vikings, and why Coppergate's wet mud gives historians a fairer balance!"
+          ],
+          "model_answer": "Looking closely at Source B and Source C, archaeology from Jorvik challenges the old Viking stereotype because everyday settlers cared about neat grooming, skilled craftwork, and family games. Source B shows a finely sawn deer-antler comb in a protective case used daily to keep hair tidy and clean, alongside tweezers and Saturday bathing. Source C shows counters for the clever strategy board game hnefatafl played around the hearth fire. Monks wrote mainly about terrifying monastery raids because they were the victims, whereas wet oxygen-free peat under Coppergate preserved 40,000 objects from ordinary cup-makers, cobblers, and families!",
+          "key_terms": [
+            "deer-antler comb",
+            "hygiene",
+            "hnefatafl",
+            "Coppergate"
+          ]
+        },
+        {
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Similarity & Global Links",
+          "question": "How did goods from Byzantium, the Red Sea, and Baghdad end up inside muddy workshops in Jorvik — and how far west did Viking ships also sail?",
+          "starter": "Archaeology proves that Viking merchants and navigators connected Britain to three continents because...",
+          "word_bank": [
+            "silk",
+            "cowrie shell",
+            "silver dirham",
+            "Vinland"
+          ],
+          "hints": [
+            "List three exotic eastern treasures dug up in Jorvik or Viking hoards (Byzantine silk, a Red Sea cowrie shell, Baltic amber, and Baghdad silver dirhams).",
+            "Explain how Vikings traded northern furs and walrus ivory down Russian rivers in the east AND steered sturdy knarr cargo ships west across the Atlantic.",
+            "Scholar Challenge (Year 5+): Contrast the design and job of a wide-bellied merchant knarr with a sleek warship longship!"
+          ],
+          "model_answer": "Archaeology proves that Viking merchants and navigators connected Britain to three continents because Jorvik stood at the crossroads of vast river and ocean trade routes. Travelling east down Russian rivers, traders swapped northern furs, amber, and walrus ivory for Byzantine silk, Red Sea cowrie shells, and thousands of Arabic silver dirham coins minted in Baghdad and Samarkand. Meanwhile, sailing west across the freezing North Atlantic in deep, wide-bellied wooden cargo ships called knarrs — built to carry families, cattle, and timber rather than troops — Norse explorers settled Iceland and Greenland and even reached Vinland in North America!",
+          "key_terms": [
+            "Byzantium",
+            "cowrie shell",
+            "silver dirham coins",
+            "knarrs"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine you are a ten-year-old child helping your mother — who wears iron household keys on her belt — walk along busy Coppergate market in Viking Jorvik! What sights, sounds, smells, and people do you pass?",
+          "starter": "Holding a basket beside Mum as her iron household keys jingle at her waist, we step onto noisy Coppergate where...",
+          "word_bank": [
+            "timber workshops",
+            "cup-makers",
+            "silk",
+            "Old Norse"
+          ],
+          "hints": [
+            "Use your senses along Coppergate: wood-shavings flying from cup-makers' lathes, leather shoes being stitched, and smoky cooking fires.",
+            "Mention your mother's strong rights as a Viking woman (carrying keys, running the farm while Dad sails) or traders showing off amber and silver dirhams.",
+            "Scholar Challenge (Year 5+): Mention your family walking to an outdoor Thing assembly to hear laws spoken, or chatting using Old Norse words like sky, egg, and knife!"
+          ],
+          "model_answer": "Holding a basket of eggs beside Mum as her heavy iron household keys jingle proudly at her waist, we step onto noisy Coppergate in Jorvik! Sweet cedar wood-shavings fly out of smoky timber workshops where cup-makers spin bowls and antler-carvers rivet neat hair combs. While Dad is away sailing a merchant knarr, Mum manages all our farm land and silver! Down by the riverside stalls, bearded traders weigh shiny Arabic silver dirham coins from Baghdad beside shimmering purple silk and golden Baltic amber, calling out in Old Norse before neighbours gather at the outdoor Thing to settle a boundary dispute.",
+          "key_terms": [
+            "Coppergate",
+            "household keys",
+            "silver dirham",
+            "Thing"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: \"The Vikings were nothing more than violent raiders who left nothing positive behind in Britain.\" How far do you agree with this statement?",
+          "starter": "I strongly disagree that the Vikings were ONLY violent raiders, even though...",
+          "word_bank": [
+            "Lindisfarne",
+            "Jorvik",
+            "Thing",
+            "Old Norse"
+          ],
+          "hints": [
+            "Be a balanced historian first: admit that early Viking raids (like Lindisfarne in AD 793) and keeping enslaved thralls WERE violent and harsh.",
+            "Then prove the statement wrong using Jorvik's 40,000 craft/trade finds, women's rights, outdoor Thing law-assemblies, and Gosforth Cross (Source D).",
+            "Scholar Challenge (Year 5+): Finish with linguistic proof — every time we say sky, window, egg, knife, husband, Thursday, or visit a -by town like Whitby or Grimsby, we hear Viking Britain!"
+          ],
+          "model_answer": "I strongly disagree that the Vikings were ONLY violent raiders, even though early attacks on monasteries like Lindisfarne in AD 793 were terrifying and keeping enslaved thralls on farms was cruel. Once families settled across the Danelaw, excavations beneath Coppergate in Jorvik revealed 40,000 clues from skilled wood-turners, comb-makers, and international merchants trading from Baghdad to Vinland. Viking women owned land and carried household keys, outdoor Thing assemblies settled laws fairly, and monuments like the Gosforth Cross blended Norse and Christian art. Even today, Danelaw towns ending in -by and everyday Old Norse words like sky, window, egg, knife, husband, and Thursday prove their lasting contribution!",
+          "key_terms": [
+            "Jorvik",
+            "Coppergate",
+            "Thing",
+            "Old Norse"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "stage": 1,
+          "question": "Why did 40,000 wooden, leather, bone, and fabric objects survive underground beneath Coppergate in York (Viking Jorvik)?",
+          "q": "Why did 40,000 wooden, leather, bone, and fabric objects survive underground beneath Coppergate in York (Viking Jorvik)?",
+          "options": [
+            "They were sealed inside solid glass museum cases by King Guthrum",
+            "Deep, wet, oxygen-free peaty soil stopped bacteria from rotting organic materials away",
+            "York never had any rainfall during the Middle Ages",
+            "Volcanic lava froze the street like Pompeii"
+          ],
+          "correct": 1,
+          "answer": "Deep, wet, oxygen-free peaty soil stopped bacteria from rotting organic materials away",
+          "a": "Deep, wet, oxygen-free peaty soil stopped bacteria from rotting organic materials away",
+          "explanation": "Waterlogged, oxygen-free peat beneath Coppergate prevented decay, preserving timber workshops, leather shoes, combs, and silk."
+        },
+        {
+          "stage": 1,
+          "question": "What does the York street name \"Coppergate\" actually mean in Old Norse — and what did archaeologists find on Source A (the Coppergate Helmet)?",
+          "q": "What does the York street name \"Coppergate\" actually mean in Old Norse — and what did archaeologists find on Source A (the Coppergate Helmet)?",
+          "options": [
+            "\"Street of the copper mines\" — and giant bull horns on the helmet",
+            "\"Street of the cup-makers\" — and a practical iron-and-brass helmet with NO horns!",
+            "\"Gate of the Roman elephants\" — and solid gold wings",
+            "\"Road to London\" — and a plastic visor"
+          ],
+          "correct": 1,
+          "answer": "\"Street of the cup-makers\" — and a practical iron-and-brass helmet with NO horns!",
+          "a": "\"Street of the cup-makers\" — and a practical iron-and-brass helmet with NO horns!",
+          "explanation": "In Old Norse, koppari-gata meant \"street of the cup-makers,\" and real helmets like the Coppergate Helmet never had horns!"
+        },
+        {
+          "stage": 2,
+          "question": "Which finds from Jorvik and Viking hoards prove that Viking trade networks reached the Middle East and the Red Sea?",
+          "q": "Which finds from Jorvik and Viking hoards prove that Viking trade networks reached the Middle East and the Red Sea?",
+          "options": [
+            "Potatoes from Peru and kangaroos from Australia",
+            "Islamic silver dirham coins from Baghdad/Samarkand, Byzantine silk, and a Red Sea cowrie shell",
+            "Printed dollar banknotes and rubber tyres",
+            "Coal dug up in Manchester"
+          ],
+          "correct": 1,
+          "answer": "Islamic silver dirham coins from Baghdad/Samarkand, Byzantine silk, and a Red Sea cowrie shell",
+          "a": "Islamic silver dirham coins from Baghdad/Samarkand, Byzantine silk, and a Red Sea cowrie shell",
+          "explanation": "Viking river merchants traded northern furs, amber, and walrus ivory for Arabic silver dirhams, Byzantine silk, and Red Sea shells."
+        },
+        {
+          "stage": 2,
+          "question": "In Danelaw Viking society, who wore heavy iron household keys on their belts, could own land, and ran farms while husbands sailed?",
+          "q": "In Danelaw Viking society, who wore heavy iron household keys on their belts, could own land, and ran farms while husbands sailed?",
+          "options": [
+            "Enslaved workers called thralls",
+            "Married Viking women",
+            "Visiting Roman senators",
+            "Eight-year-old apprentices only"
+          ],
+          "correct": 1,
+          "answer": "Married Viking women",
+          "a": "Married Viking women",
+          "explanation": "Married Viking women held strong legal rights compared with much of medieval Europe: wearing household keys, owning property, and able to divorce."
+        },
+        {
+          "stage": 3,
+          "question": "What was a Viking \"Thing\" (such as Tynwald Hill), and which modern English words come from Old Norse?",
+          "q": "What was a Viking \"Thing\" (such as Tynwald Hill), and which modern English words come from Old Norse?",
+          "options": [
+            "An outdoor law-assembly for voting on laws and settling disputes; words include sky, window, egg, knife, husband, and Thursday",
+            "A type of Viking battle-axe; words include aqueduct, villa, and gladiator",
+            "A stone Roman bathhouse; words include castle, beef, and parliament",
+            "A monastery library; words include telephone and computer"
+          ],
+          "correct": 0,
+          "answer": "An outdoor law-assembly for voting on laws and settling disputes; words include sky, window, egg, knife, husband, and Thursday",
+          "a": "An outdoor law-assembly for voting on laws and settling disputes; words include sky, window, egg, knife, husband, and Thursday",
+          "explanation": "Communities gathered outdoors at a Thing to make laws and settle disputes, while Old Norse gave English everyday words like sky, window, egg, knife, husband, and Thursday."
+        }
+      ],
+      "video": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l5_vid_1",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=i1P4Y016qOw",
+          "title": "Viking Home Life, Craftwork & Jorvik (York) | History — The Vikings (BBC Teach)",
+          "duration": "4 mins 08 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:05 | Lesson Phase: Stereotype-Busting Investigation | Explore York (Jorvik) with archaeologist Neil Oliver to see how Viking families farmed, crafted combs and tools, and lived peacefully.",
+          "viewing_task": "[01:05] Quick Check: Why do written chronicles from monasteries give an incomplete picture of the Vikings?\n[02:45] Explain: Name three everyday jobs or home activities that archaeological finds from York reveal.",
+          "model_answer": "Quick Check: Monks wrote mainly when their monasteries were raided, leaving out peaceful Viking townspeople and farmers.\nExplain: Wood-turning cups and bowls, carving bone and antler combs, weaving warm woollen clothes, stitching leather shoes, and trading goods along rivers!"
+        }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "skill": "Change, Continuity & Turning Points",
+      "title": "Enquiry 6: Aethelflaed, Athelstan, Cnut & 1066 — Who Won the Struggle for England? (AD 900–1066)",
+      "subtitle": "Lady of the Mercians, First King of All England, Danegeld, Stamford Bridge & Hastings",
+      "enquiryQuestion": "How did Anglo-Saxon and Viking rulers forge one united Kingdom of England — and why did it all change in 1066?",
+      "enquiry_question": "How did Anglo-Saxon and Viking rulers forge one united Kingdom of England — and why did it all change in 1066?",
+      "prologue": "When Roman legions left in AD 410, Britain split into rival kingdoms. Five hundred years later, Alfred's bold daughter Aethelflaed and grandson Athelstan united one Kingdom of England, Danish King Cnut ruled a peaceful North Sea Empire, and then in 1066 three rival warriors fought two epic battles in nineteen days from Stamford Bridge to Hastings!",
+      "blurb": "When Roman legions left in AD 410, Britain split into rival kingdoms. Five hundred years later, Alfred's bold daughter Aethelflaed and grandson Athelstan united one Kingdom of England, Danish King Cnut ruled a peaceful North Sea Empire, and then in 1066 three rival warriors fought two epic battles in nineteen days from Stamford Bridge to Hastings!",
+      "hero_image": "/units/ks2_anglo_saxons_vikings/assets/hastings_1066_shield_wall.jpg",
+      "card_image": "/units/ks2_anglo_saxons_vikings/assets/hastings_1066_shield_wall.jpg",
+      "banner_position": "center 35%",
+      "card_position": "center 35%",
+      "teacher_notes": {
+        "primer": "This synoptic concluding enquiry resolves the overarching statutory KS2 theme: \"the Viking and Anglo-Saxon struggle for the Kingdom of England to the time of Edward the Confessor\" (extending cleanly through the twin autumn battles of 1066). Pupils trace three major turning points: (1) how Alfred's daughter Aethelflaed (\"Lady of the Mercians\") and nephew King Athelstan (York AD 927; Brunanburh AD 937) forged the first united Kingdom of England; (2) how renewed Danish raids, Aethelred's failed Danegeld payments, King Cnut's peaceful North Sea Empire (AD 1016–1035), and Edward the Confessor's reign blended Anglo-Saxon and Danish rule; and (3) how Edward's childless death in January 1066 sparked a three-way succession crisis between Harold Godwinson, Harald Hardrada (defeated at Stamford Bridge on 25 September, ending the Viking Age), and Duke William of Normandy (victorious at Hastings on 14 October 1066).",
+        "objectives": [
+          {
+            "objective": "Explain how Aethelflaed (\"Lady of the Mercians\") and King Athelstan united Anglo-Saxon and Viking lands into one Kingdom of England by AD 927–937.",
+            "primer": "Follow Aethelflaed's Mercian burhs and capture of Derby and Leicester (AD 917–918) to Athelstan's capture of York (AD 927) and victory at Brunanburh (AD 937).",
+            "question": "Why do historians call Athelstan the first true \"King of All England,\" and how did his aunt Aethelflaed make it possible?"
+          },
+          {
+            "objective": "Contrast King Aethelred's failed Danegeld silver payments with King Cnut's peaceful North Sea Empire and Edward the Confessor's reign.",
+            "primer": "Examine why paying silver Danegeld encouraged repeat raids, how Danish King Cnut governed fairly alongside Queen Emma (AD 1016–1035), and why Edward built Westminster Abbey.",
+            "question": "Why did paying Danegeld silver backfire under King Aethelred, while Danish King Cnut brought nineteen years of peace?"
+          },
+          {
+            "objective": "Analyse why 1066 was a double turning point at Stamford Bridge (25 September) and Hastings (14 October).",
+            "primer": "Trace the Witan's choice of Harold Godwinson, his 185-mile march north to defeat Harald Hardrada at Stamford Bridge, and his 250-mile march south to face William at Hastings.",
+            "question": "How did winning against the Vikings at Stamford Bridge help cause King Harold's defeat by the Normans nineteen days later at Hastings?"
+          }
+        ],
+        "source_context": {
+          "Source A": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+          "Source B": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+          "Source C": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+          "Source D": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?"
+        },
+        "delivery_plan": {
+          "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
+          "lesson_1": {
+            "title": "Session 1: Forging One England — Aethelflaed, Athelstan, Danegeld & King Cnut",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Synoptic Retrieval Starter",
+                "instruction": "Complete the 5-question synoptic Do Now spanning Enquiries 1–5 (AD 410 migration, Sutton Hoo & Bede, Lindisfarne AD 793, Alfred at Edington, and Coppergate in Jorvik)."
+              },
+              {
+                "time": "08–25m",
+                "label": "Shared Storytelling (Acts 1 & 2)",
+                "instruction": "Read Act 1 (\"Aethelflaed & King Athelstan\") and Act 2 (\"Danegeld, King Cnut's North Sea Empire & Edward the Confessor\")."
+              },
+              {
+                "time": "25–42m",
+                "label": "Royal Portraits, Coins & Letters",
+                "instruction": "Inspect Source A (Athelstan's AD 934 portrait + Brunanburh poem) and Source B (Cnut's silver penny + AD 1027 letter to the English)."
+              },
+              {
+                "time": "42–50m",
+                "label": "Class Hinge Check",
+                "instruction": "Oral check: \"Why did paying Danegeld silver make Viking raids worse instead of better?\""
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Session 2: Three Rivals in 1066 — Stamford Bridge, Hastings & Synoptic Judgement",
+            "phases": [
+              {
+                "time": "00–08m",
+                "label": "Session 1 Recall Warm-Up",
+                "instruction": "Quick whiteboard recall of Aethelflaed, Athelstan (AD 927/937), Danegeld, King Cnut's three kingdoms, and Edward the Confessor."
+              },
+              {
+                "time": "08–22m",
+                "label": "Act 3 Reading & Sources C–D",
+                "instruction": "Read Act 3 (\"One Crown, Three Rivals: Stamford Bridge to Hastings\") and decode the Bayeux Tapestry (Source C) and 1066 Chronicle (Source D)."
+              },
+              {
+                "time": "22–42m",
+                "label": "Dual-Scaffolded Historian Tasks",
+                "instruction": "Complete Tasks 1–4 using sentence starters, word banks, and the Year 5+ Scholar Challenges."
+              },
+              {
+                "time": "42–50m",
+                "label": "Unit Finale Quiz & Cloze",
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz celebrating AD 410–1066 mastery!"
+              }
+            ]
+          }
+        }
+      },
+      "do_now": {
+        "type": "questions",
+        "derived_from_prev": true,
+        "items": [
+          {
+            "stage": 1,
+            "question": "[Enquiry 1] Around what year did Roman rule end in Britain, and which three North Sea peoples migrated here to form early kingdoms like Kent, Mercia, Northumbria, and Wessex?",
+            "answer": "Around AD 410; the Angles, Saxons, and Jutes",
+            "explanation": "After Emperor Honorius's AD 410 reply, Angles, Saxons, and Jutes settled across lowland Britain and gave \"Angle-land\" (England) its name."
+          },
+          {
+            "stage": 1,
+            "question": "[Enquiry 2] How did the AD 625 Sutton Hoo ship burial and the monk Bede at Jarrow (AD 731) show Anglo-Saxon kingdoms changing from paganism to Christianity?",
+            "answer": "Sutton Hoo mixed pagan ship treasures with Christian spoons, while Christian monasteries like Jarrow became centres of Latin books and history",
+            "explanation": "Missionaries from Rome (Augustine in Kent) and Iona (Aidan at Lindisfarne) converted royal courts and founded great monasteries."
+          },
+          {
+            "stage": 2,
+            "question": "[Enquiry 3] What shock event began the Viking Age in Britain in AD 793, and what changed in AD 865?",
+            "answer": "Vikings raided Lindisfarne Priory in AD 793; in AD 865 the Great Heathen Army arrived to stay over winter and conquer kingdoms",
+            "explanation": "Shallow-draught clinker longships carried raiders first for monastery treasure and later as conquering armies."
+          },
+          {
+            "stage": 2,
+            "question": "[Enquiry 4] How did King Alfred the Great save Wessex in AD 878 and protect it afterwards?",
+            "answer": "He regrouped at Athelney, beat Guthrum at Edington, agreed the Danelaw peace border, and built 33 walled burhs plus schools",
+            "explanation": "Alfred combined military survival with Christian peacemaking, 33 fortified burhs, 60-oar warships, and Old English books."
+          },
+          {
+            "stage": 3,
+            "question": "[Enquiry 5] What did 40,000 finds from wet mud under Coppergate in Jorvik (York) prove about everyday Vikings?",
+            "answer": "They were skilled craftworkers, clean comb-users, fair Thing law-makers, and global merchants trading as far as Baghdad and Vinland",
+            "explanation": "Coppergate overturned one-sided stereotypes and showed how Old Norse words like sky, window, and egg entered English."
+          }
+        ],
+        "current_items": [
+          {
+            "stage": 1,
+            "question": "Who was the \"Lady of the Mercians\" (AD 911–918), and which nephew of hers became the first true King of All England?",
+            "answer": "Aethelflaed (King Alfred's daughter) and her nephew King Athelstan",
+            "explanation": "Aethelflaed captured Derby and Leicester before Athelstan took York (AD 927) and won at Brunanburh (AD 937)."
+          },
+          {
+            "stage": 2,
+            "question": "What was \"Danegeld,\" and why did paying it fail to protect King Aethelred's kingdom?",
+            "answer": "Huge payments of silver pennies given to Viking fleets — which only tempted raiders to return demanding even more silver!",
+            "explanation": "Instead of stopping attacks permanently, Danegeld proved England was wealthy enough to keep blackmailing."
+          },
+          {
+            "stage": 2,
+            "question": "Which three countries did Danish King Cnut rule peacefully in his \"North Sea Empire\" (AD 1016–1035)?",
+            "answer": "England, Denmark, and Norway (plus part of Sweden)",
+            "explanation": "Married to Queen Emma, Cnut protected English churches and laws across nineteen peaceful years."
+          },
+          {
+            "stage": 3,
+            "question": "Why was there a three-way struggle for the English crown in January 1066?",
+            "answer": "King Edward the Confessor died childless, and the Witan crowned Harold Godwinson while Harald Hardrada and Duke William also claimed the throne",
+            "explanation": "Without a son, Edward's death triggered twin invasions from Norway in the north and Normandy in the south."
+          },
+          {
+            "stage": 3,
+            "question": "Name the TWO famous battles King Harold Godwinson fought nineteen days apart in autumn 1066 — winning the first and losing the second!",
+            "answer": "Stamford Bridge (25 September 1066 — won against Hardrada) and Hastings (14 October 1066 — lost against Duke William)",
+            "explanation": "Stamford Bridge ended the Viking Age in England, while Hastings ended Anglo-Saxon rule and began the Norman era."
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "term": "Danegeld",
+          "definition": "Meaning \"Dane-gold\" — huge sums of silver pennies taxed from English families to pay Viking raiders to sail away.",
+          "syllables": "Dane-geld",
+          "phonetic": "DAYN-geld",
+          "tier": "3"
+        },
+        {
+          "term": "Empire",
+          "definition": "A group of several different countries or kingdoms ruled together under one powerful monarch, such as King Cnut's North Sea lands.",
+          "syllables": "Em-pire",
+          "phonetic": "EM-pyr",
+          "tier": "2"
+        },
+        {
+          "term": "Witan",
+          "definition": "The Anglo-Saxon royal council of wise bishops and powerful earls who advised the king and chose the next monarch.",
+          "syllables": "Wi-tan",
+          "phonetic": "WIT-an",
+          "tier": "3"
+        },
+        {
+          "term": "Heir",
+          "definition": "The person — usually an eldest son, daughter, or close relative — who has the legal right to inherit the crown next.",
+          "syllables": "Heir",
+          "phonetic": "AIR",
+          "tier": "2"
+        },
+        {
+          "term": "Conquest",
+          "definition": "Taking control of a country and its government by military force, such as Duke William's Norman victory in 1066.",
+          "syllables": "Con-quest",
+          "phonetic": "KON-kwest",
+          "tier": "2"
+        }
+      ],
+      "vocab_cloze_text": "When fresh Viking fleets attacked after AD 991, King Aethelred paid millions of silver coins in [Danegeld], before Danish King Cnut united England, Denmark, and Norway in a peaceful North Sea [Empire]. In January 1066, Edward the Confessor died without a child as his [Heir], so the English council called the [Witan] crowned Harold Godwinson — sparking Stamford Bridge, Hastings, and the Norman [Conquest].",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "title": "Aethelflaed \"Lady of the Mercians\" & King Athelstan (AD 911–939)",
+          "text": "<span class=\"para-ref\">[6.1]</span> After wise King Alfred died in **AD 899**, his determined children pushed steadily northwards into the **Danelaw**. Alfred's bold daughter **Aethelflaed**, known as the **Lady of the Mercians**, ruled Mercia from **AD 911 to 918**, building fortified **burhs** at **Tamworth** and **Warwick** and personally leading Mercian armies to recapture Viking **Derby** and **Leicester**.<br><br><span class=\"para-ref\">[6.2]</span> Aethelflaed helped raise her brilliant nephew **Athelstan**, who marched north to capture Viking **York** in **AD 927**. When northern rulers united against him in **AD 937**, Athelstan crushed a giant Viking, Scottish, and Strathclyde alliance at the **Battle of Brunanburh**, proudly becoming the first true **King of All England**.",
+          "content": "<span class=\"para-ref\">[6.1]</span> After wise King Alfred died in **AD 899**, his determined children pushed steadily northwards into the **Danelaw**. Alfred's bold daughter **Aethelflaed**, known as the **Lady of the Mercians**, ruled Mercia from **AD 911 to 918**, building fortified **burhs** at **Tamworth** and **Warwick** and personally leading Mercian armies to recapture Viking **Derby** and **Leicester**.<br><br><span class=\"para-ref\">[6.2]</span> Aethelflaed helped raise her brilliant nephew **Athelstan**, who marched north to capture Viking **York** in **AD 927**. When northern rulers united against him in **AD 937**, Athelstan crushed a giant Viking, Scottish, and Strathclyde alliance at the **Battle of Brunanburh**, proudly becoming the first true **King of All England**.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/aethelflaed_statue_tamworth.jpg",
+          "image_alt": "Bronze statue outside Tamworth Castle showing Aethelflaed, Lady of the Mercians, shielding her young nephew Athelstan",
+          "caption": "1913 statue at Tamworth Castle honouring warrior ruler Aethelflaed (\"Lady of the Mercians\") alongside her young nephew Athelstan (CC BY-SA 4.0, Annatoone).",
+          "image_caption": "1913 statue at Tamworth Castle honouring warrior ruler Aethelflaed (\"Lady of the Mercians\") alongside her young nephew Athelstan (CC BY-SA 4.0, Annatoone).",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l6_src_a",
+              "letter": "A",
+              "source_letter": "A",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/king_athelstan_portrait_934.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/king_athelstan_portrait_934.jpg",
+              "title": "Source A: Illuminated Portrait of King Athelstan Presenting a Book to St Cuthbert (c. AD 934) — Earliest Portrait of an English King",
+              "caption": "Manuscript painting made around AD 934 (Corpus Christi College, Cambridge MS 183) showing crowned King Athelstan bowing to present a Gospel book to Northumbrian saint Cuthbert (Public Domain).",
+              "author": "West Saxon Royal Manuscript Illuminator & Anglo-Saxon Chronicle Poet (tr. Rev. James Ingram, 1823)",
+              "date": "c. AD 934 Portrait & AD 937 Battle Poem",
+              "context": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+              "source_context": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+              "hinge_question": "Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+              "question_badge": "FIRST KING OF ALL ENGLAND",
+              "question": "Look at King Athelstan's portrait and the AD 937 Battle of Brunanburh poem in Source A. How did Athelstan use BOTH Christian generosity and battlefield strength to unite England?",
+              "model_answer": "In the AD 934 painting in Source A, crowned King Athelstan humbly presents a holy book to northern England's beloved saint Cuthbert to win the loyalty of Northumbrian Christians. Then, when northern enemies invaded in AD 937, the Chronicle poem celebrates how Athelstan's army \"clove the board-wall\" at Brunanburh, defending one united Kingdom of England.",
+              "provenance_clues": {
+                "author": "Royal West Saxon artist painting for St Cuthbert's community at Chester-le-Street, paired with the AD 937 Chronicle poet.",
+                "audience": "Northern clergy, nobles, and English readers across Athelstan's newly united kingdom.",
+                "motive": "To show King Athelstan as a pious Christian unifier of north and south and a victorious defender of all England.",
+                "hinge_question": "Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+                "source_context": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+                "provenance_breakdown": {
+                  "author": "Royal West Saxon artist painting for St Cuthbert's community at Chester-le-Street, paired with the AD 937 Chronicle poet.",
+                  "audience": "Northern clergy, nobles, and English readers across Athelstan's newly united kingdom.",
+                  "motive": "To show King Athelstan as a pious Christian unifier of north and south and a victorious defender of all England."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "FIRST KING OF ALL ENGLAND",
+                "model_answer": "In the AD 934 painting in Source A, crowned King Athelstan humbly presents a holy book to northern England's beloved saint Cuthbert to win the loyalty of Northumbrian Christians. Then, when northern enemies invaded in AD 937, the Chronicle poem celebrates how Athelstan's army \"clove the board-wall\" at Brunanburh, defending one united Kingdom of England.",
+                "provenance_clues": {
+                  "author": "Royal West Saxon artist painting for St Cuthbert's community at Chester-le-Street, paired with the AD 937 Chronicle poet.",
+                  "audience": "Northern clergy, nobles, and English readers across Athelstan's newly united kingdom.",
+                  "motive": "To show King Athelstan as a pious Christian unifier of north and south and a victorious defender of all England."
+                }
+              },
+              "text": "Anglo-Saxon Chronicle, Poem on the Battle of Brunanburh, AD 937 (tr. Rev. James Ingram, 1823): \"Here Athelstan King, of earls the lord, bracelet-giver of heroes, and his brother eke [also], Edmund aetheling, elder a lasting glory won by slaughter in battle, with the edges of swords, at Brunanburh! They clove the board-wall [shield-wall], and hewed the war-lindens [...] Never yet in this island before this, by what books tell us, was a greater slaughter of a host made by the edge of the sword, since from the east hither Angles and Saxons came up over the broad seas.\"",
+              "provenance": "Corpus Christi College, Cambridge MS 183, fol. 1v (c. AD 934 — Public Domain), paired with The Anglo-Saxon Chronicle, Entry for AD 937, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "Danegeld, King Cnut's North Sea Empire & Edward the Confessor (AD 991–1065)",
+          "text": "<span class=\"para-ref\">[6.3]</span> Yet peaceful rule across England did not last forever. From **AD 991**, fresh Danish fleets raided England, and anxious **King Aethelred** paid vast tributes of silver pennies called **Danegeld** (\"Dane-gold\") to make them sail away. Yet the Vikings kept returning for heavier payments until Danish prince **Cnut** won the English crown in **AD 1016**.<br><br><span class=\"para-ref\">[6.4]</span> **King Cnut** married **Queen Emma**, protected English churches and laws, and ruled England peacefully alongside **Denmark** and **Norway** in a mighty **North Sea Empire** until **AD 1035**. Later, gentle Anglo-Saxon **King Edward the Confessor** regained the throne and built magnificent **Westminster Abbey**, consecrated near the Thames in December **1065**.",
+          "content": "<span class=\"para-ref\">[6.3]</span> Yet peaceful rule across England did not last forever. From **AD 991**, fresh Danish fleets raided England, and anxious **King Aethelred** paid vast tributes of silver pennies called **Danegeld** (\"Dane-gold\") to make them sail away. Yet the Vikings kept returning for heavier payments until Danish prince **Cnut** won the English crown in **AD 1016**.<br><br><span class=\"para-ref\">[6.4]</span> **King Cnut** married **Queen Emma**, protected English churches and laws, and ruled England peacefully alongside **Denmark** and **Norway** in a mighty **North Sea Empire** until **AD 1035**. Later, gentle Anglo-Saxon **King Edward the Confessor** regained the throne and built magnificent **Westminster Abbey**, consecrated near the Thames in December **1065**.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_queen_emma_manuscript.jpg",
+          "image_alt": "11th-century manuscript drawing showing King Cnut and Queen Emma placing a large gold cross on the altar at Winchester",
+          "caption": "New Minster Liber Vitae manuscript (c. AD 1031) showing Danish King Cnut and Queen Emma gifting a gold cross to Winchester Minster as angels crown Cnut (Public Domain).",
+          "image_caption": "New Minster Liber Vitae manuscript (c. AD 1031) showing Danish King Cnut and Queen Emma gifting a gold cross to Winchester Minster as angels crown Cnut (Public Domain).",
+          "isReversed": true,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l6_src_b",
+              "letter": "B",
+              "source_letter": "B",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_silver_penny.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_silver_penny.jpg",
+              "title": "Source B: Silver Penny Coin & King Cnut's Letter to the People of England (AD 1027)",
+              "caption": "High-quality silver penny from the era of Viking silver tributes and King Cnut's reign (York Museums Trust — CC BY-SA 4.0), paired with Cnut's open letter of AD 1027.",
+              "author": "English Royal Mint & King Cnut (tr. Thomas Forester, 1854)",
+              "date": "Reign of King Cnut, AD 1016–1035",
+              "context": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+              "source_context": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+              "hinge_question": "Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+              "question_badge": "DANEGELD TO NORTH SEA EMPIRE",
+              "question": "Inspect the silver penny and read King Cnut's AD 1027 letter in Source B. How did Cnut reassure nervous Anglo-Saxon families after winning the English throne?",
+              "model_answer": "Source B reveals that England's rich silver penny system once tempted Viking fleets to demand more and more Danegeld! Once Cnut became \"king of all England, and of Denmark, Norway, and part of Sweden,\" his AD 1027 letter vowed before God to \"rule justly and piously\" and give fair judgement to both English and Danish subjects, bringing nineteen years of peace.",
+              "provenance_clues": {
+                "author": "King Cnut writing to England's archbishops, bishops, nobles, and commons during his pilgrimage to Rome in AD 1027.",
+                "audience": "Read aloud in churches and shire courts to all English and Anglo-Danish subjects across England.",
+                "motive": "To prove that although he had conquered England as a Dane, he governed as a wise, fair Christian protector of the realm.",
+                "hinge_question": "Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+                "source_context": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+                "provenance_breakdown": {
+                  "author": "King Cnut writing to England's archbishops, bishops, nobles, and commons during his pilgrimage to Rome in AD 1027.",
+                  "audience": "Read aloud in churches and shire courts to all English and Anglo-Danish subjects across England.",
+                  "motive": "To prove that although he had conquered England as a Dane, he governed as a wise, fair Christian protector of the realm."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "DANEGELD TO NORTH SEA EMPIRE",
+                "model_answer": "Source B reveals that England's rich silver penny system once tempted Viking fleets to demand more and more Danegeld! Once Cnut became \"king of all England, and of Denmark, Norway, and part of Sweden,\" his AD 1027 letter vowed before God to \"rule justly and piously\" and give fair judgement to both English and Danish subjects, bringing nineteen years of peace.",
+                "provenance_clues": {
+                  "author": "King Cnut writing to England's archbishops, bishops, nobles, and commons during his pilgrimage to Rome in AD 1027.",
+                  "audience": "Read aloud in churches and shire courts to all English and Anglo-Danish subjects across England.",
+                  "motive": "To prove that although he had conquered England as a Dane, he governed as a wise, fair Christian protector of the realm."
+                }
+              },
+              "text": "King Cnut's Letter to the People of England, AD 1027 (tr. Thomas Forester, 1854): \"Cnut, king of all England, and of Denmark, Norway, and part of Sweden, to Ethelnoth the metropolitan [Archbishop], and Alfric, archbishop of York, and to all bishops and nobles, and to the whole nation of the English, both nobles and commons, greeting. [...] I have vowed to God to lead a right life in all things, to rule justly and piously my realms and subjects, and to administer just judgment to all.\"",
+              "provenance": "Silver penny of Cnut (York Museums Trust, YORYM 2000.594 — CC BY-SA 4.0), paired with The Chronicle of Florence of Worcester, Entry for AD 1027, translated by Thomas Forester (Henry G. Bohn, 1854 — Public Domain)."
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "title": "One Crown, Three Rivals: Stamford Bridge to Hastings (January–October 1066)",
+          "text": "<span class=\"para-ref\">[6.5]</span> When **Edward the Confessor** died childless in **January 1066**, England's royal council, the **Witan**, crowned powerful Saxon earl **Harold Godwinson**. Immediately, two fierce rivals claimed the throne: Norwegian Viking **King Harald Hardrada** and **Duke William of Normandy**. Harold marched **185 miles** north in four days, crushing Hardrada at **Stamford Bridge** on **25 September 1066** and ending the Viking Age.<br><br><span class=\"para-ref\">[6.6]</span> Just three days later, Duke William's invasion fleet landed on the south coast in Sussex. Exhausted after marching **250 miles** south, Harold's **shield wall** fought bravely all day on **14 October 1066** at the **Battle of Hastings**, until brave Harold fell and **Norman** rule began.",
+          "content": "<span class=\"para-ref\">[6.5]</span> When **Edward the Confessor** died childless in **January 1066**, England's royal council, the **Witan**, crowned powerful Saxon earl **Harold Godwinson**. Immediately, two fierce rivals claimed the throne: Norwegian Viking **King Harald Hardrada** and **Duke William of Normandy**. Harold marched **185 miles** north in four days, crushing Hardrada at **Stamford Bridge** on **25 September 1066** and ending the Viking Age.<br><br><span class=\"para-ref\">[6.6]</span> Just three days later, Duke William's invasion fleet landed on the south coast in Sussex. Exhausted after marching **250 miles** south, Harold's **shield wall** fought bravely all day on **14 October 1066** at the **Battle of Hastings**, until brave Harold fell and **Norman** rule began.",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/stamford_bridge_river_derwent.jpg",
+          "image_alt": "Stone bridge crossing the tree-lined River Derwent at Stamford Bridge in East Yorkshire, site of the 25 September 1066 battle",
+          "caption": "River Derwent crossing at Stamford Bridge near York, where King Harold Godwinson defeated Norwegian Viking King Harald Hardrada on 25 September 1066 (CC BY-SA 2.0, Andy Beecroft).",
+          "image_caption": "River Derwent crossing at Stamford Bridge near York, where King Harold Godwinson defeated Norwegian Viking King Harald Hardrada on 25 September 1066 (CC BY-SA 2.0, Andy Beecroft).",
+          "isReversed": false,
+          "sources": [
+            {
+              "id": "ks2_anglo_saxons_vikings_l6_src_c",
+              "letter": "C",
+              "source_letter": "C",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+              "title": "Source C: 11th-Century Bayeux Tapestry — King Harold Godwinson Crowned & Halley's Comet (1066)",
+              "caption": "Embroidered wool-on-linen scene from the 70-metre Bayeux Tapestry (c. AD 1070s) showing newly crowned King Harold Godwinson enthroned while crowds point anxiously at Halley's Comet in the sky (Public Domain, Myrabella).",
+              "author": "Anglo-Saxon Embroiderers Working Under Norman Patronage (Bishop Odo of Bayeux)",
+              "date": "Embroidered c. AD 1070s (Depicting January–April 1066)",
+              "context": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+              "source_context": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+              "hinge_question": "Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+              "question_badge": "CROWNED UNDER A BLAZING COMET",
+              "question": "Look closely at the two halves of Source C. How do the Bayeux Tapestry designers suggest that King Harold's coronation in January 1066 would soon bring disaster?",
+              "model_answer": "On the left of Source C, Harold sits crowned with orb and sceptre labeled \"Here sits Harold, King of the English.\" Yet on the right, people point in dread at fiery Halley's Comet (\"These people marvel at the star\") while ghostly ships appear underneath — a Norman hint that God was warning Harold for taking the crown William claimed!",
+              "provenance_clues": {
+                "author": "Skilled Anglo-Saxon needleworkers in Kent commissioned by William's half-brother, Bishop Odo of Bayeux.",
+                "audience": "Viewers in Normandy and England — many of whom could read picture stories better than Latin books.",
+                "motive": "To celebrate Duke William's conquest of England and persuade viewers that Harold broke a sacred oath when he took the crown.",
+                "hinge_question": "Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?"
+              },
+              "teacher_notes": {
+                "hinge_question": "Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+                "source_context": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+                "provenance_breakdown": {
+                  "author": "Skilled Anglo-Saxon needleworkers in Kent commissioned by William's half-brother, Bishop Odo of Bayeux.",
+                  "audience": "Viewers in Normandy and England — many of whom could read picture stories better than Latin books.",
+                  "motive": "To celebrate Duke William's conquest of England and persuade viewers that Harold broke a sacred oath when he took the crown."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "CROWNED UNDER A BLAZING COMET",
+                "model_answer": "On the left of Source C, Harold sits crowned with orb and sceptre labeled \"Here sits Harold, King of the English.\" Yet on the right, people point in dread at fiery Halley's Comet (\"These people marvel at the star\") while ghostly ships appear underneath — a Norman hint that God was warning Harold for taking the crown William claimed!",
+                "provenance_clues": {
+                  "author": "Skilled Anglo-Saxon needleworkers in Kent commissioned by William's half-brother, Bishop Odo of Bayeux.",
+                  "audience": "Viewers in Normandy and England — many of whom could read picture stories better than Latin books.",
+                  "motive": "To celebrate Duke William's conquest of England and persuade viewers that Harold broke a sacred oath when he took the crown."
+                }
+              },
+              "text": "Direct translation from the embroidered Latin captions on Scenes 30–32 of the Bayeux Tapestry: \"HIC RESIDET HAROLD REX ANGLORUM\" — \"Here sits Harold, King of the English.\" | \"ISTI MIRANT STELLA\" — \"These people marvel at the star [Halley's Comet, April 1066].\"",
+              "provenance": "Bayeux Tapestry, Scenes 29–32, Musée de la Tapisserie de Bayeux (c. AD 1070s — Public Domain, photo by Myrabella; fresh direct translation from the embroidered Latin)."
+            },
+            {
+              "id": "ks2_anglo_saxons_vikings_l6_src_d",
+              "letter": "D",
+              "source_letter": "D",
+              "type": "hybrid",
+              "src": "/units/ks2_anglo_saxons_vikings/assets/battle_abbey_hastings_field.jpg",
+              "image": "/units/ks2_anglo_saxons_vikings/assets/battle_abbey_hastings_field.jpg",
+              "title": "Source D: Battle Abbey on Senlac Hill (Hastings Battlefield) & The 1066 Chronicle Account",
+              "caption": "Stone gatehouse of Battle Abbey in East Sussex — built on the ridge of Senlac Hill where King Harold's shield wall stood on 14 October 1066 — paired with the Anglo-Saxon Chronicle (CC BY-SA 4.0, JamCor).",
+              "author": "Anglo-Saxon Chronicle Scribe (tr. Rev. James Ingram, 1823) & Battle Abbey Builders",
+              "date": "25 September & 14 October 1066",
+              "context": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+              "source_context": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+              "hinge_question": "How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+              "question_badge": "TWO BATTLES IN NINETEEN DAYS",
+              "question": "Read the AD 1066 Anglo-Saxon Chronicle in Source D. Why was autumn 1066 a double turning point that ended BOTH the Viking Age and Anglo-Saxon rule in England?",
+              "model_answer": "Source D shows that on 25 September 1066 Harold caught the Norwegians unawares at Stamford Bridge beyond York and slew Viking King Harald Hardrada — ending nearly three centuries of Viking invasions! Yet marching 250 miles straight back south left Harold's troops exhausted and incomplete when William attacked on Senlac Hill on 14 October, where Harold fell fighting boldly and Norman rule began.",
+              "provenance_clues": {
+                "author": "English monastic chronicler recording the dramatic events of 1066 in Old English.",
+                "audience": "Monks and future generations mourning the fall of Anglo-Saxon King Harold.",
+                "motive": "To record truthfully how Harold won a great victory at Stamford Bridge before falling bravely before his full army could assemble at Hastings.",
+                "hinge_question": "How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?"
+              },
+              "teacher_notes": {
+                "hinge_question": "How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+                "source_context": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+                "provenance_breakdown": {
+                  "author": "English monastic chronicler recording the dramatic events of 1066 in Old English.",
+                  "audience": "Monks and future generations mourning the fall of Anglo-Saxon King Harold.",
+                  "motive": "To record truthfully how Harold won a great victory at Stamford Bridge before falling bravely before his full army could assemble at Hastings."
+                }
+              },
+              "utility_enquiry": {
+                "question_badge": "TWO BATTLES IN NINETEEN DAYS",
+                "model_answer": "Source D shows that on 25 September 1066 Harold caught the Norwegians unawares at Stamford Bridge beyond York and slew Viking King Harald Hardrada — ending nearly three centuries of Viking invasions! Yet marching 250 miles straight back south left Harold's troops exhausted and incomplete when William attacked on Senlac Hill on 14 October, where Harold fell fighting boldly and Norman rule began.",
+                "provenance_clues": {
+                  "author": "English monastic chronicler recording the dramatic events of 1066 in Old English.",
+                  "audience": "Monks and future generations mourning the fall of Anglo-Saxon King Harold.",
+                  "motive": "To record truthfully how Harold won a great victory at Stamford Bridge before falling bravely before his full army could assemble at Hastings."
+                }
+              },
+              "text": "Anglo-Saxon Chronicle, Entry for AD 1066 (tr. Rev. James Ingram, 1823): \"Then came Harold our king unawares upon the Norwegians, and met with them beyond York at Stamford-bridge, with a large force of English people; and there during the day was a very severe fight on both sides. There was slain Harald Fairhair [Hardrada], and Earl Tostig [...] Meanwhile Earl William came up from Normandy into Pevensey [...] King Harold came against him at the hoar apple-tree; and William came upon him unawares, before his people were set in order. Nevertheless the king fought boldly against him [...] and there was King Harold slain.\"",
+              "provenance": "Battle Abbey Gatehouse on Senlac Hill, Battle, East Sussex (CC BY-SA 4.0, JamCor), paired with The Anglo-Saxon Chronicle, Entry for AD 1066, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l6_src_a",
+          "letter": "A",
+          "source_letter": "A",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/king_athelstan_portrait_934.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/king_athelstan_portrait_934.jpg",
+          "title": "Source A: Illuminated Portrait of King Athelstan Presenting a Book to St Cuthbert (c. AD 934) — Earliest Portrait of an English King",
+          "caption": "Manuscript painting made around AD 934 (Corpus Christi College, Cambridge MS 183) showing crowned King Athelstan bowing to present a Gospel book to Northumbrian saint Cuthbert (Public Domain).",
+          "author": "West Saxon Royal Manuscript Illuminator & Anglo-Saxon Chronicle Poet (tr. Rev. James Ingram, 1823)",
+          "date": "c. AD 934 Portrait & AD 937 Battle Poem",
+          "context": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+          "source_context": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+          "hinge_question": "Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+          "question_badge": "FIRST KING OF ALL ENGLAND",
+          "question": "Look at King Athelstan's portrait and the AD 937 Battle of Brunanburh poem in Source A. How did Athelstan use BOTH Christian generosity and battlefield strength to unite England?",
+          "model_answer": "In the AD 934 painting in Source A, crowned King Athelstan humbly presents a holy book to northern England's beloved saint Cuthbert to win the loyalty of Northumbrian Christians. Then, when northern enemies invaded in AD 937, the Chronicle poem celebrates how Athelstan's army \"clove the board-wall\" at Brunanburh, defending one united Kingdom of England.",
+          "provenance_clues": {
+            "author": "Royal West Saxon artist painting for St Cuthbert's community at Chester-le-Street, paired with the AD 937 Chronicle poet.",
+            "audience": "Northern clergy, nobles, and English readers across Athelstan's newly united kingdom.",
+            "motive": "To show King Athelstan as a pious Christian unifier of north and south and a victorious defender of all England.",
+            "hinge_question": "Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+            "source_context": "Painted during Athelstan's own lifetime around AD 934, this golden crown portrait is the earliest surviving picture of an English monarch! By gifting a precious book to northern St Cuthbert's shrine and winning the Battle of Brunanburh in AD 937, Athelstan united Wessex, Mercia, and Northumbria into one Kingdom of England. **Hinge Question:** Why did southern King Athelstan personally travel north to give rich gifts to St Cuthbert's shrine after capturing Viking York in AD 927?",
+            "provenance_breakdown": {
+              "author": "Royal West Saxon artist painting for St Cuthbert's community at Chester-le-Street, paired with the AD 937 Chronicle poet.",
+              "audience": "Northern clergy, nobles, and English readers across Athelstan's newly united kingdom.",
+              "motive": "To show King Athelstan as a pious Christian unifier of north and south and a victorious defender of all England."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "FIRST KING OF ALL ENGLAND",
+            "model_answer": "In the AD 934 painting in Source A, crowned King Athelstan humbly presents a holy book to northern England's beloved saint Cuthbert to win the loyalty of Northumbrian Christians. Then, when northern enemies invaded in AD 937, the Chronicle poem celebrates how Athelstan's army \"clove the board-wall\" at Brunanburh, defending one united Kingdom of England.",
+            "provenance_clues": {
+              "author": "Royal West Saxon artist painting for St Cuthbert's community at Chester-le-Street, paired with the AD 937 Chronicle poet.",
+              "audience": "Northern clergy, nobles, and English readers across Athelstan's newly united kingdom.",
+              "motive": "To show King Athelstan as a pious Christian unifier of north and south and a victorious defender of all England."
+            }
+          },
+          "text": "Anglo-Saxon Chronicle, Poem on the Battle of Brunanburh, AD 937 (tr. Rev. James Ingram, 1823): \"Here Athelstan King, of earls the lord, bracelet-giver of heroes, and his brother eke [also], Edmund aetheling, elder a lasting glory won by slaughter in battle, with the edges of swords, at Brunanburh! They clove the board-wall [shield-wall], and hewed the war-lindens [...] Never yet in this island before this, by what books tell us, was a greater slaughter of a host made by the edge of the sword, since from the east hither Angles and Saxons came up over the broad seas.\"",
+          "provenance": "Corpus Christi College, Cambridge MS 183, fol. 1v (c. AD 934 — Public Domain), paired with The Anglo-Saxon Chronicle, Entry for AD 937, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l6_src_b",
+          "letter": "B",
+          "source_letter": "B",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_silver_penny.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_silver_penny.jpg",
+          "title": "Source B: Silver Penny Coin & King Cnut's Letter to the People of England (AD 1027)",
+          "caption": "High-quality silver penny from the era of Viking silver tributes and King Cnut's reign (York Museums Trust — CC BY-SA 4.0), paired with Cnut's open letter of AD 1027.",
+          "author": "English Royal Mint & King Cnut (tr. Thomas Forester, 1854)",
+          "date": "Reign of King Cnut, AD 1016–1035",
+          "context": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+          "source_context": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+          "hinge_question": "Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+          "question_badge": "DANEGELD TO NORTH SEA EMPIRE",
+          "question": "Inspect the silver penny and read King Cnut's AD 1027 letter in Source B. How did Cnut reassure nervous Anglo-Saxon families after winning the English throne?",
+          "model_answer": "Source B reveals that England's rich silver penny system once tempted Viking fleets to demand more and more Danegeld! Once Cnut became \"king of all England, and of Denmark, Norway, and part of Sweden,\" his AD 1027 letter vowed before God to \"rule justly and piously\" and give fair judgement to both English and Danish subjects, bringing nineteen years of peace.",
+          "provenance_clues": {
+            "author": "King Cnut writing to England's archbishops, bishops, nobles, and commons during his pilgrimage to Rome in AD 1027.",
+            "audience": "Read aloud in churches and shire courts to all English and Anglo-Danish subjects across England.",
+            "motive": "To prove that although he had conquered England as a Dane, he governed as a wise, fair Christian protector of the realm.",
+            "hinge_question": "Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+            "source_context": "Under King Aethelred, England paid tens of thousands of pounds of silver pennies in Danegeld bribes that failed to stop Danish attacks. Yet once Danish conqueror Cnut became King of England in AD 1016, he kept England's efficient silver coinage, married Queen Emma, and promised fair laws for Danes and English alike! **Hinge Question:** Why did paying Danegeld silver fail to save King Aethelred, whereas Danish conqueror Cnut succeeded in ruling England peacefully for nineteen years?",
+            "provenance_breakdown": {
+              "author": "King Cnut writing to England's archbishops, bishops, nobles, and commons during his pilgrimage to Rome in AD 1027.",
+              "audience": "Read aloud in churches and shire courts to all English and Anglo-Danish subjects across England.",
+              "motive": "To prove that although he had conquered England as a Dane, he governed as a wise, fair Christian protector of the realm."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "DANEGELD TO NORTH SEA EMPIRE",
+            "model_answer": "Source B reveals that England's rich silver penny system once tempted Viking fleets to demand more and more Danegeld! Once Cnut became \"king of all England, and of Denmark, Norway, and part of Sweden,\" his AD 1027 letter vowed before God to \"rule justly and piously\" and give fair judgement to both English and Danish subjects, bringing nineteen years of peace.",
+            "provenance_clues": {
+              "author": "King Cnut writing to England's archbishops, bishops, nobles, and commons during his pilgrimage to Rome in AD 1027.",
+              "audience": "Read aloud in churches and shire courts to all English and Anglo-Danish subjects across England.",
+              "motive": "To prove that although he had conquered England as a Dane, he governed as a wise, fair Christian protector of the realm."
+            }
+          },
+          "text": "King Cnut's Letter to the People of England, AD 1027 (tr. Thomas Forester, 1854): \"Cnut, king of all England, and of Denmark, Norway, and part of Sweden, to Ethelnoth the metropolitan [Archbishop], and Alfric, archbishop of York, and to all bishops and nobles, and to the whole nation of the English, both nobles and commons, greeting. [...] I have vowed to God to lead a right life in all things, to rule justly and piously my realms and subjects, and to administer just judgment to all.\"",
+          "provenance": "Silver penny of Cnut (York Museums Trust, YORYM 2000.594 — CC BY-SA 4.0), paired with The Chronicle of Florence of Worcester, Entry for AD 1027, translated by Thomas Forester (Henry G. Bohn, 1854 — Public Domain)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l6_src_c",
+          "letter": "C",
+          "source_letter": "C",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+          "title": "Source C: 11th-Century Bayeux Tapestry — King Harold Godwinson Crowned & Halley's Comet (1066)",
+          "caption": "Embroidered wool-on-linen scene from the 70-metre Bayeux Tapestry (c. AD 1070s) showing newly crowned King Harold Godwinson enthroned while crowds point anxiously at Halley's Comet in the sky (Public Domain, Myrabella).",
+          "author": "Anglo-Saxon Embroiderers Working Under Norman Patronage (Bishop Odo of Bayeux)",
+          "date": "Embroidered c. AD 1070s (Depicting January–April 1066)",
+          "context": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+          "source_context": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+          "hinge_question": "Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+          "question_badge": "CROWNED UNDER A BLAZING COMET",
+          "question": "Look closely at the two halves of Source C. How do the Bayeux Tapestry designers suggest that King Harold's coronation in January 1066 would soon bring disaster?",
+          "model_answer": "On the left of Source C, Harold sits crowned with orb and sceptre labeled \"Here sits Harold, King of the English.\" Yet on the right, people point in dread at fiery Halley's Comet (\"These people marvel at the star\") while ghostly ships appear underneath — a Norman hint that God was warning Harold for taking the crown William claimed!",
+          "provenance_clues": {
+            "author": "Skilled Anglo-Saxon needleworkers in Kent commissioned by William's half-brother, Bishop Odo of Bayeux.",
+            "audience": "Viewers in Normandy and England — many of whom could read picture stories better than Latin books.",
+            "motive": "To celebrate Duke William's conquest of England and persuade viewers that Harold broke a sacred oath when he took the crown.",
+            "hinge_question": "Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?"
+          },
+          "teacher_notes": {
+            "hinge_question": "Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+            "source_context": "Stitched in coloured wool on 70 metres of linen shortly after 1066, the Bayeux Tapestry tells the dramatic story of the Norman Conquest. In this scene, England's Witan council has just crowned Harold Godwinson in January 1066 — while outside, terrified onlookers point up at blazing Halley's Comet as a warning of trouble ahead! **Hinge Question:** Since Duke William's half-brother Bishop Odo paid for the Bayeux Tapestry after 1066, why did the designers include Halley's Comet flaming above King Harold's throne?",
+            "provenance_breakdown": {
+              "author": "Skilled Anglo-Saxon needleworkers in Kent commissioned by William's half-brother, Bishop Odo of Bayeux.",
+              "audience": "Viewers in Normandy and England — many of whom could read picture stories better than Latin books.",
+              "motive": "To celebrate Duke William's conquest of England and persuade viewers that Harold broke a sacred oath when he took the crown."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "CROWNED UNDER A BLAZING COMET",
+            "model_answer": "On the left of Source C, Harold sits crowned with orb and sceptre labeled \"Here sits Harold, King of the English.\" Yet on the right, people point in dread at fiery Halley's Comet (\"These people marvel at the star\") while ghostly ships appear underneath — a Norman hint that God was warning Harold for taking the crown William claimed!",
+            "provenance_clues": {
+              "author": "Skilled Anglo-Saxon needleworkers in Kent commissioned by William's half-brother, Bishop Odo of Bayeux.",
+              "audience": "Viewers in Normandy and England — many of whom could read picture stories better than Latin books.",
+              "motive": "To celebrate Duke William's conquest of England and persuade viewers that Harold broke a sacred oath when he took the crown."
+            }
+          },
+          "text": "Direct translation from the embroidered Latin captions on Scenes 30–32 of the Bayeux Tapestry: \"HIC RESIDET HAROLD REX ANGLORUM\" — \"Here sits Harold, King of the English.\" | \"ISTI MIRANT STELLA\" — \"These people marvel at the star [Halley's Comet, April 1066].\"",
+          "provenance": "Bayeux Tapestry, Scenes 29–32, Musée de la Tapisserie de Bayeux (c. AD 1070s — Public Domain, photo by Myrabella; fresh direct translation from the embroidered Latin)."
+        },
+        {
+          "id": "ks2_anglo_saxons_vikings_l6_src_d",
+          "letter": "D",
+          "source_letter": "D",
+          "type": "hybrid",
+          "src": "/units/ks2_anglo_saxons_vikings/assets/battle_abbey_hastings_field.jpg",
+          "image": "/units/ks2_anglo_saxons_vikings/assets/battle_abbey_hastings_field.jpg",
+          "title": "Source D: Battle Abbey on Senlac Hill (Hastings Battlefield) & The 1066 Chronicle Account",
+          "caption": "Stone gatehouse of Battle Abbey in East Sussex — built on the ridge of Senlac Hill where King Harold's shield wall stood on 14 October 1066 — paired with the Anglo-Saxon Chronicle (CC BY-SA 4.0, JamCor).",
+          "author": "Anglo-Saxon Chronicle Scribe (tr. Rev. James Ingram, 1823) & Battle Abbey Builders",
+          "date": "25 September & 14 October 1066",
+          "context": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+          "source_context": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+          "hinge_question": "How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+          "question_badge": "TWO BATTLES IN NINETEEN DAYS",
+          "question": "Read the AD 1066 Anglo-Saxon Chronicle in Source D. Why was autumn 1066 a double turning point that ended BOTH the Viking Age and Anglo-Saxon rule in England?",
+          "model_answer": "Source D shows that on 25 September 1066 Harold caught the Norwegians unawares at Stamford Bridge beyond York and slew Viking King Harald Hardrada — ending nearly three centuries of Viking invasions! Yet marching 250 miles straight back south left Harold's troops exhausted and incomplete when William attacked on Senlac Hill on 14 October, where Harold fell fighting boldly and Norman rule began.",
+          "provenance_clues": {
+            "author": "English monastic chronicler recording the dramatic events of 1066 in Old English.",
+            "audience": "Monks and future generations mourning the fall of Anglo-Saxon King Harold.",
+            "motive": "To record truthfully how Harold won a great victory at Stamford Bridge before falling bravely before his full army could assemble at Hastings.",
+            "hinge_question": "How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?"
+          },
+          "teacher_notes": {
+            "hinge_question": "How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+            "source_context": "No other English army ever marched like Harold's in autumn 1066: 185 miles north to smash Harald Hardrada's Vikings at Stamford Bridge on 25 September, then 250 miles south to face Duke William's Norman knights and archers on Senlac Hill at Hastings on 14 October — where William later founded Battle Abbey on the exact spot Harold fell. **Hinge Question:** How did fighting Norwegian Vikings at Stamford Bridge in Yorkshire just nineteen days earlier weaken King Harold's chances against Duke William at Hastings?",
+            "provenance_breakdown": {
+              "author": "English monastic chronicler recording the dramatic events of 1066 in Old English.",
+              "audience": "Monks and future generations mourning the fall of Anglo-Saxon King Harold.",
+              "motive": "To record truthfully how Harold won a great victory at Stamford Bridge before falling bravely before his full army could assemble at Hastings."
+            }
+          },
+          "utility_enquiry": {
+            "question_badge": "TWO BATTLES IN NINETEEN DAYS",
+            "model_answer": "Source D shows that on 25 September 1066 Harold caught the Norwegians unawares at Stamford Bridge beyond York and slew Viking King Harald Hardrada — ending nearly three centuries of Viking invasions! Yet marching 250 miles straight back south left Harold's troops exhausted and incomplete when William attacked on Senlac Hill on 14 October, where Harold fell fighting boldly and Norman rule began.",
+            "provenance_clues": {
+              "author": "English monastic chronicler recording the dramatic events of 1066 in Old English.",
+              "audience": "Monks and future generations mourning the fall of Anglo-Saxon King Harold.",
+              "motive": "To record truthfully how Harold won a great victory at Stamford Bridge before falling bravely before his full army could assemble at Hastings."
+            }
+          },
+          "text": "Anglo-Saxon Chronicle, Entry for AD 1066 (tr. Rev. James Ingram, 1823): \"Then came Harold our king unawares upon the Norwegians, and met with them beyond York at Stamford-bridge, with a large force of English people; and there during the day was a very severe fight on both sides. There was slain Harald Fairhair [Hardrada], and Earl Tostig [...] Meanwhile Earl William came up from Normandy into Pevensey [...] King Harold came against him at the hoar apple-tree; and William came upon him unawares, before his people were set in order. Nevertheless the king fought boldly against him [...] and there was King Harold slain.\"",
+          "provenance": "Battle Abbey Gatehouse on Senlac Hill, Battle, East Sussex (CC BY-SA 4.0, JamCor), paired with The Anglo-Saxon Chronicle, Entry for AD 1066, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+        }
+      ],
+      "causal_domino_spine": {
+        "title": "Forging One England & The 1066 Turning Point",
+        "subtitle": "From Aethelflaed and Athelstan to Cnut's Empire, Stamford Bridge, and Hastings",
+        "stages": [
+          {
+            "step": 1,
+            "para_ref": "[6.1]",
+            "date": "AD 911–939",
+            "title": "Aethelflaed & Athelstan Unite England",
+            "actor": "Aethelflaed & King Athelstan",
+            "tag": "👑 ONE ENGLAND",
+            "trigger": "Aethelflaed built Mercian burhs and took Derby and Leicester; her nephew Athelstan captured York (AD 927) and won at Brunanburh (AD 937).",
+            "connective": "Created one united Kingdom of England combining Anglo-Saxon and Danelaw lands.",
+            "question": "How did Aethelflaed and Athelstan forge one Kingdom of England?",
+            "prose_hash": "77b77fdc0f"
+          },
+          {
+            "step": 2,
+            "para_ref": "[6.3]",
+            "date": "AD 991–1065",
+            "title": "Danegeld, Cnut's Empire & Edward",
+            "actor": "Aethelred, King Cnut & Edward the Confessor",
+            "tag": "🪙 NORTH SEA EMPIRE",
+            "trigger": "Aethelred's silver Danegeld failed to stop Danish fleets, Cnut ruled England, Denmark, and Norway peacefully (AD 1016–1035), and Edward built Westminster Abbey.",
+            "connective": "Left a wealthy united kingdom — until Edward died childless in January 1066.",
+            "question": "How did England pass from Danegeld raids to Cnut and Edward the Confessor?",
+            "prose_hash": "e2cba3c1da"
+          },
+          {
+            "step": 3,
+            "para_ref": "[6.5]",
+            "date": "Jan–Oct 1066",
+            "title": "Stamford Bridge & Hastings Change Everything",
+            "actor": "Harold Godwinson, Hardrada & William",
+            "tag": "⚔️ 1066",
+            "trigger": "Crowned by the Witan, Harold marched 185 miles north to beat Hardrada at Stamford Bridge (25 Sept), then 250 miles south to fall against William at Hastings (14 Oct).",
+            "connective": "Ended BOTH the Viking Age and Anglo-Saxon rule as Norman England began.",
+            "question": "Why did autumn 1066 end both Viking invasions and Anglo-Saxon rule?",
+            "prose_hash": "0d0bad9862"
+          }
+        ]
+      },
+      "workbook_stages": [
+        {
+          "step": 1,
+          "heading": "How did Aethelflaed and Athelstan forge one Kingdom of England?",
+          "focus_clue": "How did Aethelflaed and Athelstan forge one Kingdom of England?",
+          "words": [
+            {
+              "term": "Aethelflaed",
+              "clue": "King Alfred's bold daughter, the \"Lady of the Mercians,\" who built burhs at Tamworth and Warwick and captured Derby and Leicester."
+            },
+            {
+              "term": "Athelstan",
+              "clue": "Aethelflaed's nephew and Alfred's grandson who captured Viking York in AD 927 to unite north and south."
+            },
+            {
+              "term": "Battle of Brunanburh",
+              "clue": "The huge AD 937 victory that confirmed Athelstan as the first true King of All England."
+            }
+          ],
+          "model_sentence": "After <strong>Aethelflaed</strong> recaptured Derby and Leicester, her nephew <strong>Athelstan</strong> took York and won the <strong>Battle of Brunanburh</strong> as first King of All England.",
+          "title": "Aethelflaed \"Lady of the Mercians\" & King Athelstan",
+          "question": "How did Aethelflaed and Athelstan forge one Kingdom of England?",
+          "questionHeading": "How did Aethelflaed and Athelstan forge one Kingdom of England?",
+          "focusClue": "How did Aethelflaed and Athelstan forge one Kingdom of England?",
+          "date": "AD 911–939",
+          "dates": "AD 911–939",
+          "para_ref": "[6.1]",
+          "paraRef": "[6.1]",
+          "prose_hash": "77b77fdc0f"
+        },
+        {
+          "step": 2,
+          "heading": "How did England pass from Danegeld raids to Cnut and Edward the Confessor?",
+          "focus_clue": "How did England pass from Danegeld raids to Cnut and Edward the Confessor?",
+          "words": [
+            {
+              "term": "Danegeld",
+              "clue": "Vast tributes of silver pennies paid by King Aethelred to Danish fleets, which only tempted raiders to return for more."
+            },
+            {
+              "term": "North Sea Empire",
+              "clue": "The peaceful realm of England, Denmark, and Norway ruled together by King Cnut alongside Queen Emma (AD 1016–1035)."
+            },
+            {
+              "term": "Westminster Abbey",
+              "clue": "The grand stone royal abbey in London built by pious Anglo-Saxon King Edward the Confessor shortly before his death."
+            }
+          ],
+          "model_sentence": "When silver <strong>Danegeld</strong> failed to stop raids, King Cnut ruled a peaceful <strong>North Sea Empire</strong> before Edward the Confessor built <strong>Westminster Abbey</strong>.",
+          "title": "Danegeld, King Cnut's North Sea Empire & Edward the Confessor",
+          "question": "How did England pass from Danegeld raids to Cnut and Edward the Confessor?",
+          "questionHeading": "How did England pass from Danegeld raids to Cnut and Edward the Confessor?",
+          "focusClue": "How did England pass from Danegeld raids to Cnut and Edward the Confessor?",
+          "date": "AD 991–1065",
+          "dates": "AD 991–1065",
+          "para_ref": "[6.3]",
+          "paraRef": "[6.3]",
+          "prose_hash": "e2cba3c1da"
+        },
+        {
+          "step": 3,
+          "heading": "Why did autumn 1066 end both Viking invasions and Anglo-Saxon rule?",
+          "focus_clue": "Why did autumn 1066 end both Viking invasions and Anglo-Saxon rule?",
+          "words": [
+            {
+              "term": "Witan",
+              "clue": "England's royal council of bishops and earls who crowned Harold Godwinson after Edward died childless in January 1066."
+            },
+            {
+              "term": "Stamford Bridge",
+              "clue": "The Yorkshire river crossing where Harold marched 185 miles in four days to defeat Viking King Harald Hardrada on 25 September 1066."
+            },
+            {
+              "term": "Battle of Hastings",
+              "clue": "The all-day battle on 14 October 1066 where Harold's exhausted shield wall fell against Duke William of Normandy."
+            }
+          ],
+          "model_sentence": "Crowned by the <strong>Witan</strong>, Harold smashed Hardrada's Vikings at <strong>Stamford Bridge</strong> before falling nineteen days later at the <strong>Battle of Hastings</strong>.",
+          "title": "One Crown, Three Rivals: Stamford Bridge to Hastings",
+          "question": "Why did autumn 1066 end both Viking invasions and Anglo-Saxon rule?",
+          "questionHeading": "Why did autumn 1066 end both Viking invasions and Anglo-Saxon rule?",
+          "focusClue": "Why did autumn 1066 end both Viking invasions and Anglo-Saxon rule?",
+          "date": "January–October 1066",
+          "dates": "January–October 1066",
+          "para_ref": "[6.5]",
+          "paraRef": "[6.5]",
+          "prose_hash": "0d0bad9862"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "task_num": 1,
+          "type": "source_clues",
+          "topic": "1. Primary Evidence Detective",
+          "tag": "Source Clues",
+          "question": "Look closely at Source A (King Athelstan's AD 934 portrait) and Source C (Harold's 1066 coronation on the Bayeux Tapestry). How did medieval artists use pictures to send political messages about kings?",
+          "starter": "Looking closely at Source A and Source C, medieval artists used royal pictures to send clear messages because...",
+          "word_bank": [
+            "Athelstan",
+            "St Cuthbert",
+            "Bayeux Tapestry",
+            "Halley's Comet"
+          ],
+          "hints": [
+            "Describe Source A: why is crowned King Athelstan shown bowing kindly to present a Gospel book to northern St Cuthbert?",
+            "Describe Source C: why did the Bayeux Tapestry show terrified crowds pointing at fiery Halley's Comet right beside King Harold's throne?",
+            "Scholar Challenge (Year 5+): Compare WHO paid for each source — Athelstan himself in AD 934 versus Duke William's half-brother Bishop Odo after 1066!"
+          ],
+          "model_answer": "Looking closely at Source A and Source C, medieval artists used royal pictures to send clear messages because most people saw images even if they could not read Latin. In Source A, commissioned by Athelstan himself around AD 934, the crowned southern king bows respectfully to gift a holy book to northern St Cuthbert, persuading Northumbrians that he ruled all England fairly under God. By contrast, Source C on the Bayeux Tapestry was commissioned after 1066 by Duke William's half-brother Bishop Odo, so it placed fiery Halley's Comet and ghostly invasion ships beside Harold's throne as a warning that Harold should never have taken William's crown!",
+          "key_terms": [
+            "King Athelstan",
+            "St Cuthbert",
+            "Bayeux Tapestry",
+            "Halley's Comet"
+          ]
+        },
+        {
+          "id": "task_2",
+          "task_num": 2,
+          "type": "historical_explanation",
+          "topic": "2. Historical Explanation",
+          "tag": "Cause & Effect",
+          "question": "Why are Aethelflaed (\"Lady of the Mercians\") and her nephew King Athelstan so important in the story of how \"England\" was born?",
+          "starter": "Aethelflaed and her nephew King Athelstan played a vital role in creating one Kingdom of England because...",
+          "word_bank": [
+            "Lady of the Mercians",
+            "Derby and Leicester",
+            "York",
+            "Brunanburh"
+          ],
+          "hints": [
+            "Explain how Alfred's daughter Aethelflaed ruled Mercia (AD 911–918), built burhs at Tamworth and Warwick, and recaptured Derby and Leicester.",
+            "Show how Athelstan built on his aunt's work by capturing Viking York in AD 927 and winning the giant Battle of Brunanburh in AD 937.",
+            "Scholar Challenge (Year 5+): Explain why earlier rulers like Offa or Alfred were kings of Mercia or Wessex, whereas Athelstan became the first ruler of ALL England from sea to sea!"
+          ],
+          "model_answer": "Aethelflaed and her nephew King Athelstan played a vital role in creating one Kingdom of England because before them Britain had been split between southern Saxon lands and the northern Viking Danelaw. Ruling bravely as \"Lady of the Mercians\" from AD 911 to 918, Aethelflaed fortified Tamworth and Warwick and led armies to recapture Viking Derby and Leicester while helping raise young Athelstan. Athelstan then marched north to capture Jorvik (York) in AD 927 and defeated a huge Viking and Scottish alliance at the Battle of Brunanburh in AD 937 — uniting Wessex, Mercia, and Northumbria under one crown for the very first time!",
+          "key_terms": [
+            "Aethelflaed",
+            "Athelstan",
+            "York",
+            "Battle of Brunanburh"
+          ]
+        },
+        {
+          "id": "task_3",
+          "task_num": 3,
+          "type": "living_history",
+          "topic": "3. Living History: Step Into Their Shoes",
+          "tag": "Personal Experiences",
+          "question": "Imagine you are a footsore Anglo-Saxon housecarl marching with King Harold Godwinson in autumn 1066 — celebrating victory at Stamford Bridge near York, only to hear that Duke William has landed 250 miles south! What do you feel and experience?",
+          "starter": "My boots are still muddy from the River Derwent at Stamford Bridge, where just days ago we...",
+          "word_bank": [
+            "185 miles",
+            "Harald Hardrada",
+            "250 miles",
+            "Senlac Hill"
+          ],
+          "hints": [
+            "Describe the astonishing 185-mile four-day march north and catching Viking King Harald Hardrada unawares at Stamford Bridge on 25 September.",
+            "Capture your shock when a breathless rider brings news from Sussex, forcing an exhausting 250-mile march south to Senlac Hill at Hastings.",
+            "Scholar Challenge (Year 5+): Mention locking your round shield on Senlac Hill on 14 October against Norman cavalry horses and arrows while missing northern comrades still on the road!"
+          ],
+          "model_answer": "My boots are still muddy from the River Derwent at Stamford Bridge, where just days ago we marched 185 miles north in four days to catch gigantic Viking King Harald Hardrada completely unawares without his mail-coats! Just as we cheered the end of the Viking threat, a breathless rider galloped in shouting that Duke William's Norman fleet had landed down in Sussex! With aching legs and blistered feet, we marched 250 miles straight back south before half our shire levies could catch up. Now on 14 October, standing shoulder-to-shoulder on Senlac Hill as Norman cavalry and arrows thunder uphill, we fight with our last strength for King Harold!",
+          "key_terms": [
+            "Stamford Bridge",
+            "Harald Hardrada",
+            "Battle of Hastings",
+            "shield wall"
+          ]
+        },
+        {
+          "id": "task_4",
+          "task_num": 4,
+          "type": "big_question",
+          "topic": "4. Mission Challenge • The Big Question",
+          "tag": "Historian Challenge",
+          "question": "Big Question: Looking back from AD 410 to 1066, who REALLY won the 650-year struggle for England — the Anglo-Saxons, the Vikings, or the Normans?",
+          "starter": "Looking across the whole story from AD 410 to 1066, no single side wiped the others out because...",
+          "word_bank": [
+            "Athelstan",
+            "King Cnut",
+            "Stamford Bridge",
+            "Hastings"
+          ],
+          "hints": [
+            "Weigh the Normans in 1066: Duke William won the crown and castles at Hastings after Harold beat Hardrada's Vikings at Stamford Bridge.",
+            "Weigh the Anglo-Saxons & Vikings: Athelstan united \"England,\" Cnut ruled fairly, and Anglo-Saxon shires, burh towns, and Old English blended with Viking -by villages and Old Norse words!",
+            "Scholar Challenge (Year 5+): Give a synoptic historian's verdict — why did William conquer a rich, united Kingdom of England ONLY because Anglo-Saxons and Vikings had built it together first?"
+          ],
+          "model_answer": "Looking across the whole story from AD 410 to 1066, Duke William's Normans won the military battle for the crown on 14 October 1066 at Hastings — helped enormously because King Harold had marched north nineteen days earlier to defeat Harald Hardrada at Stamford Bridge! Yet in everyday life, BOTH Anglo-Saxons and Vikings shaped the country William inherited. Anglo-Saxons gave \"Angle-land\" its name, Christian monasteries, Alfred's burh boroughs, Athelstan's united kingdom, and Westminster Abbey, while Viking settlers and King Cnut wove Danelaw farms, -by towns, and Old Norse words into English forever. The Normans won the throne in 1066, but Anglo-Saxons and Vikings built England itself!",
+          "key_terms": [
+            "King Athelstan",
+            "King Cnut",
+            "Stamford Bridge",
+            "Battle of Hastings"
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "stage": 1,
+          "question": "Which bold daughter of King Alfred ruled as \"Lady of the Mercians\" (AD 911–918), building burhs at Tamworth and Warwick and capturing Viking Derby and Leicester?",
+          "q": "Which bold daughter of King Alfred ruled as \"Lady of the Mercians\" (AD 911–918), building burhs at Tamworth and Warwick and capturing Viking Derby and Leicester?",
+          "options": [
+            "Queen Boudicca",
+            "Aethelflaed",
+            "Queen Emma",
+            "Edith Pretty"
+          ],
+          "correct": 1,
+          "answer": "Aethelflaed",
+          "a": "Aethelflaed",
+          "explanation": "Aethelflaed, Lady of the Mercians, led Mercian armies and built fortified burhs, paving the way for her nephew Athelstan."
+        },
+        {
+          "stage": 1,
+          "question": "Why do historians recognise King Athelstan (reigned AD 924–939) as the first true \"King of All England\"?",
+          "q": "Why do historians recognise King Athelstan (reigned AD 924–939) as the first true \"King of All England\"?",
+          "options": [
+            "He captured Viking York in AD 927 and defeated a northern alliance at the Battle of Brunanburh in AD 937, uniting north and south",
+            "He brought Roman war elephants to Colchester in AD 43",
+            "He paid the first Danegeld silver tribute in AD 991",
+            "He sailed across the Atlantic to Vinland"
+          ],
+          "correct": 0,
+          "answer": "He captured Viking York in AD 927 and defeated a northern alliance at the Battle of Brunanburh in AD 937, uniting north and south",
+          "a": "He captured Viking York in AD 927 and defeated a northern alliance at the Battle of Brunanburh in AD 937, uniting north and south",
+          "explanation": "By uniting Wessex, Mercia, and Northumbria and defending his realm at Brunanburh (AD 937), Athelstan forged one Kingdom of England."
+        },
+        {
+          "stage": 2,
+          "question": "What was \"Danegeld,\" and how was Danish King Cnut's rule (AD 1016–1035) different from earlier raids?",
+          "q": "What was \"Danegeld,\" and how was Danish King Cnut's rule (AD 1016–1035) different from earlier raids?",
+          "options": [
+            "Danegeld was silver paid to make raiders leave; Cnut instead ruled England, Denmark, and Norway peacefully while protecting English laws and churches",
+            "Danegeld was a Viking board game; Cnut burned down Westminster Abbey",
+            "Danegeld was a type of longship; Cnut banned silver pennies",
+            "Danegeld was a stone wall; Cnut lived in Rome all his life"
+          ],
+          "correct": 0,
+          "answer": "Danegeld was silver paid to make raiders leave; Cnut instead ruled England, Denmark, and Norway peacefully while protecting English laws and churches",
+          "a": "Danegeld was silver paid to make raiders leave; Cnut instead ruled England, Denmark, and Norway peacefully while protecting English laws and churches",
+          "explanation": "Aethelred's Danegeld payments only encouraged repeat attacks, whereas King Cnut and Queen Emma governed a peaceful North Sea Empire for nineteen years."
+        },
+        {
+          "stage": 3,
+          "question": "Why did a three-way crisis erupt over the English throne in January 1066?",
+          "q": "Why did a three-way crisis erupt over the English throne in January 1066?",
+          "options": [
+            "King Edward the Confessor died childless, and after the Witan crowned Harold Godwinson, both Harald Hardrada of Norway and Duke William of Normandy invaded",
+            "Three brothers agreed to split England along Watling Street",
+            "The Roman Emperor demanded Britain back",
+            "King Alfred forgot to name a successor in Wessex"
+          ],
+          "correct": 0,
+          "answer": "King Edward the Confessor died childless, and after the Witan crowned Harold Godwinson, both Harald Hardrada of Norway and Duke William of Normandy invaded",
+          "a": "King Edward the Confessor died childless, and after the Witan crowned Harold Godwinson, both Harald Hardrada of Norway and Duke William of Normandy invaded",
+          "explanation": "With no child heir when Edward the Confessor died, Harold Godwinson faced rival invasions from Norway in Yorkshire and Normandy in Sussex."
+        },
+        {
+          "stage": 3,
+          "question": "What happened at King Harold's TWO famous battles fought nineteen days apart in autumn 1066?",
+          "q": "What happened at King Harold's TWO famous battles fought nineteen days apart in autumn 1066?",
+          "options": [
+            "Harold lost at Stamford Bridge in September and won at Hastings in October",
+            "Harold crushed Viking King Harald Hardrada at Stamford Bridge (25 Sept), then marched 250 miles south and fell against Duke William at Hastings (14 Oct)",
+            "Both battles were fought at sea in the English Channel",
+            "King Cnut won both battles using war elephants"
+          ],
+          "correct": 1,
+          "answer": "Harold crushed Viking King Harald Hardrada at Stamford Bridge (25 Sept), then marched 250 miles south and fell against Duke William at Hastings (14 Oct)",
+          "a": "Harold crushed Viking King Harald Hardrada at Stamford Bridge (25 Sept), then marched 250 miles south and fell against Duke William at Hastings (14 Oct)",
+          "explanation": "Harold's victory at Stamford Bridge on 25 September ended the Viking Age, but his exhausted army fell to Duke William at Hastings on 14 October 1066."
+        }
+      ],
+      "video": [
+        {
+          "id": "ks2_anglo_saxons_vikings_l6_vid_1",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=zigjVCFzZ38",
+          "title": "1066: From Stamford Bridge to the Battle of Hastings | BBC Teach (History)",
+          "duration": "4 mins 18 secs",
+          "pathway": "Enquiry Evidence",
+          "teacher_guidance": "Recommended Watch Window: 00:00–04:15 | Lesson Phase: Synoptic Finale | Trace how King Harold's lightning march to Stamford Bridge left his shield wall exhausted when facing Duke William's Norman knights and archers on Senlac Hill.",
+          "viewing_task": "[01:00] Quick Check: Why were King Harold's soldiers already exhausted before the Battle of Hastings even began?\n[02:55] Hinge Question: How did Duke William finally break the tough Anglo-Saxon shield wall on Senlac Hill?",
+          "model_answer": "Quick Check: Harold's army had marched 185 miles north to defeat Harald Hardrada at Stamford Bridge on 25 September, then marched 250 miles straight back south!\nHinge Question: Norman warriors used feigned retreats (pretending to flee downhill) to tempt Saxon defenders out of their tight hilltop shield wall before surrounding them with cavalry and archers."
+        }
+      ]
+    }
+  ],
+  "key_individuals": [
+    {
+      "entity_type": "person",
+      "name": "King Raedwald of East Anglia & Edith Pretty",
+      "lifespan": "c. AD 625 / 1939 Sutton Hoo",
+      "role": "7th-Century Anglo-Saxon Overlord & The Landowner Who Uncovered His Ship Burial",
+      "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+      "image_position": "center 38%",
+      "origins": "Raedwald ruled the Kingdom of East Anglia in the early AD 600s as Bretwalda (\"overlord\"); over 1,300 years later, Suffolk landowner Edith Pretty asked self-taught archaeologist Basil Brown to excavate the mysterious grassy mounds on her Sutton Hoo estate.",
+      "significance": "Together across thirteen centuries, Raedwald's royal funeral and Edith Pretty's 1939 excavation revealed the dazzling 27-metre Sutton Hoo ship burial — proving forever that the early Anglo-Saxon era was a \"Golden Age\" of artistry and trade rather than a backward \"Dark Age.\"",
+      "achievements": [
+        "Buried around AD 625 inside Mound 1 with an iconic iron-and-bronze face-mask helmet, gold-and-garnet shoulder clasps, Sri Lankan garnets, Byzantine silver, and Frankish gold coins.",
+        "Included both pagan warrior treasures and two Christian silver baptismal spoons (\"Saulos\" and \"Paulos\"), matching Bede's account that Raedwald kept both pagan and Christian altars.",
+        "Generously donated in full to the public by Edith Pretty in 1939 — the greatest single gift of British archaeological treasure ever made by a living donor."
+      ],
+      "key_distinction": "Acidic Suffolk sand rotted every oak plank and bone to dark stains, yet Basil Brown's careful trowel-work uncovered the iron ship rivets and intact royal burial chamber just weeks before World War II began."
+    },
+    {
+      "entity_type": "person",
+      "name": "The Venerable Bede",
+      "lifespan": "c. AD 673 – AD 735",
+      "role": "Northumbrian Monk, Scientist & \"Father of English History\" at Jarrow Monastery",
+      "image": "/units/ks2_anglo_saxons_vikings/assets/st_pauls_church_jarrow_bede.jpg",
+      "image_position": "center 42%",
+      "origins": "Entered the twin Northumbrian monastery of Wearmouth-Jarrow at age seven and spent his whole life praying, teaching, studying astronomy and tides, and writing inside one of Europe's finest libraries.",
+      "significance": "Completed The Ecclesiastical History of the English People in AD 731 — our richest written primary source for Anglo-Saxon migration, kingdoms, and Christian conversion — and popularised counting historical years using Anno Domini (\"AD\").",
+      "achievements": [
+        "Authored over forty Latin books on history, scripture, poetry, calendar science, and how the Moon pulls ocean tides.",
+        "Carefully named his eyewitness informants and copied papal letters rather than inventing legends, earning respect across medieval Europe.",
+        "Popularised the BC / AD dating system across western Christendom that historians still use on timelines today."
+      ],
+      "key_distinction": "Although Bede rarely travelled beyond Tyne and Wear in northern England, correspondents from Canterbury to Rome sent documents to Jarrow so he could write the history of the whole island."
+    },
+    {
+      "entity_type": "person",
+      "name": "King Alfred the Great",
+      "lifespan": "AD 849 – AD 899",
+      "role": "King of Wessex (AD 871–899) Who Saved Anglo-Saxon England, Built 33 Burhs & Championed Learning",
+      "image": "/units/ks2_anglo_saxons_vikings/assets/alfred_the_great_statue_winchester.jpg",
+      "image_position": "center 25%",
+      "origins": "Youngest of five sons of King Aethelwulf of Wessex; visited Rome as a boy and inherited the West Saxon throne in AD 871 at the height of the Great Heathen Army's invasions.",
+      "significance": "Regrouped in the Somerset marshes at Athelney after Guthrum's Twelfth Night attack in AD 878, triumphed at the Battle of Edington, negotiated the Danelaw peace treaty, fortified Wessex with 33 walled burhs, and revived English literacy.",
+      "achievements": [
+        "Defeated Guthrum's shield wall at Edington (May AD 878), stood as godfather at Guthrum's Christian baptism, and recaptured London in AD 886.",
+        "Engineered 33 fortified burhs (such as Wareham and Wallingford) so no Wessex family lived over 20 miles from safety, supported by taller 60-oar warships.",
+        "Translated vital Latin books into Old English, commissioned crystal reading pointers like the Alfred Jewel, and launched the Anglo-Saxon Chronicle."
+      ],
+      "key_distinction": "Out of dozens of monarchs across more than a thousand years, Alfred of Wessex is the ONLY ruler in British history given the title \"the Great.\""
+    },
+    {
+      "entity_type": "person",
+      "name": "Aethelflaed, Lady of the Mercians",
+      "lifespan": "c. AD 870 – AD 918",
+      "role": "Warrior Ruler of Mercia, Fort-Builder & Architect of the Danelaw Reconquest",
+      "image": "/units/ks2_anglo_saxons_vikings/assets/aethelflaed_statue_tamworth.jpg",
+      "image_position": "center 26%",
+      "origins": "Eldest daughter of King Alfred the Great, educated at Wessex's royal court and married to Lord Aethelred of Mercia to seal the alliance between Wessex and western Mercia.",
+      "significance": "After her husband fell ill and died in AD 911, Mercian nobles chose Aethelflaed to govern in her own right as \"Lady of the Mercians\" — planning campaigns with her brother King Edward the Elder and raising her nephew Athelstan.",
+      "achievements": [
+        "Constructed ten strategic Mercian burhs, including Tamworth, Stafford, Bridgnorth, Chester, and Warwick, to guard river crossings and borders.",
+        "Stormed Viking-held Derby in AD 917 and won the peaceful surrender of Viking Leicester in AD 918 without losing a single soldier.",
+        "Received promises of allegiance from the leaders of Viking York shortly before her death at Tamworth in June AD 918."
+      ],
+      "key_distinction": "One of the most successful military and political female rulers anywhere in early medieval Europe, directly paving the way for a united England."
+    },
+    {
+      "entity_type": "person",
+      "name": "King Athelstan",
+      "lifespan": "c. AD 894 – AD 939",
+      "role": "Grandson of Alfred & First True \"King of All England\" (Reigned AD 924–939)",
+      "image": "/units/ks2_anglo_saxons_vikings/assets/king_athelstan_portrait_934.jpg",
+      "image_position": "center 25%",
+      "origins": "Grandson of King Alfred the Great, raised in the household of his aunt Aethelflaed in Mercia, which made him trusted by both West Saxons in the south and Mercians in the Midlands.",
+      "significance": "Captured the Viking kingdom of York in AD 927 and crushed a combined Viking, Scottish, and Strathclyde invasion at the Battle of Brunanburh in AD 937 — uniting Wessex, Mercia, and Northumbria into one Kingdom of England.",
+      "achievements": [
+        "Accepted the submission of northern rulers at Eamont Bridge in AD 927 and styled himself \"Rex totius Britanniae\" (\"King of all Britain\") on charters and coins.",
+        "Issued detailed royal law codes protecting trade, standardising silver coinage across burhs, and aiding the poor.",
+        "Pictured around AD 934 presenting a book to St Cuthbert (Corpus Christi MS 183) — the earliest surviving lifetime portrait of an English monarch."
+      ],
+      "key_distinction": "While Alfred the Great saved southern Wessex, his grandson Athelstan was the first ruler in history to govern one united Kingdom of England from the Channel to Northumbria."
+    },
+    {
+      "entity_type": "person",
+      "name": "King Cnut & Queen Emma",
+      "lifespan": "Reigned Together AD 1017 – 1035",
+      "role": "Rulers of England, Denmark & Norway's Peaceful 11th-Century North Sea Empire",
+      "image": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_queen_emma_manuscript.jpg",
+      "image_position": "center 28%",
+      "origins": "Cnut was a young Danish Viking prince who won the English throne in AD 1016; Emma of Normandy was a skilled diplomat who had previously been queen to Anglo-Saxon King Aethelred and married Cnut in AD 1017.",
+      "significance": "Ended decades of devastating Viking raids and Danegeld silver demands, uniting England, Denmark, and Norway into a prosperous North Sea Empire while respecting Anglo-Saxon laws and Christian monasteries.",
+      "achievements": [
+        "Divided England into four great earldoms (Wessex, Mercia, East Anglia, and Northumbria) and issued Cnut's Winchester law code treating Danes and English equally.",
+        "Generously patronised English churches and shrines, famously pictured together gifting a golden cross to Winchester's New Minster around AD 1031.",
+        "Sent Cnut's famous AD 1027 open letter from Rome vowing before God to rule all his realms justly and protect English pilgrims and merchants."
+      ],
+      "key_distinction": "Famous legend remembers Cnut sitting by the incoming tide — not because he foolishly thought he could stop the waves, but to teach flattering courtiers that even a mighty king obeys God's power!"
+    }
+  ]
+};
