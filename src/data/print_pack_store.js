@@ -18,9 +18,15 @@
 
 import { UNIT_RESOURCES_CATALOG, isStaffModeActive } from './unit_resources_catalog.js';
 import { SEO_UNIT_ROUTES } from './seo_routes.js';
+import { sha256HexSync } from '../engine/staff_auth.js';
 
 export const PUPIL_LICENCE_STORAGE_KEY = 'hh_school_pupil_licence_v1';
 export const PREVIEW_ROLE_SESSION_KEY = 'hh_commercial_preview_role';
+const PUPIL_PASS_SALT = 'hrh_pupil_pass_v1:';
+const ALLOWED_SILENT_PASS_DIGESTS = new Set([
+  '758389736dfb9975c2b44d6065ceb6a5b8b7424ce6215a6b403ce25be0c4477a',
+  '704e0f0a489214d1c02423d8557f3a8fbe977fea0c617e02d76d48dfb6edf80b',
+]);
 
 export const GCSE_UNIT_IDS = new Set([
   'edexcel_medicine',
@@ -112,6 +118,19 @@ export function isPublicSampleAsset(url = '') {
 export function verifyAndSavePupilClassCode(rawCode, { persist = true } = {}) {
   const cleaned = String(rawCode || '').trim().toUpperCase();
   if (!cleaned) return null;
+  const digest = sha256HexSync(PUPIL_PASS_SALT + cleaned.toLowerCase());
+  if (ALLOWED_SILENT_PASS_DIGESTS.has(digest)) {
+    if (persist && typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(
+          PUPIL_LICENCE_STORAGE_KEY,
+          JSON.stringify({ digest, scope: 'all', ts: Date.now() }),
+        );
+        sessionStorage.removeItem(PREVIEW_ROLE_SESSION_KEY);
+      } catch (e) {}
+    }
+    return { code: 'VERIFIED', scope: 'all', label: 'School Class Pass' };
+  }
   const entry = PUPIL_CLASS_CODE_SCOPES[cleaned];
   if (!entry) return null;
   if (persist && typeof window !== 'undefined') {
@@ -132,11 +151,14 @@ export function getActivePupilLicence() {
     const previewRole = sessionStorage.getItem(PREVIEW_ROLE_SESSION_KEY);
     if (previewRole === 'public') return null;
     if (previewRole === 'pupil') {
-      return { code: 'HUB26', scope: 'all', label: 'Preview: Subscribed Pupil (HUB26)' };
+      return { code: 'HUB26', scope: 'all', label: 'Preview: Subscribed Pupil' };
     }
     const raw = localStorage.getItem(PUPIL_LICENCE_STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw);
+    if (parsed && parsed.digest && ALLOWED_SILENT_PASS_DIGESTS.has(parsed.digest)) {
+      return { code: 'VERIFIED', scope: 'all', label: 'School Class Pass' };
+    }
     if (parsed && parsed.code && PUPIL_CLASS_CODE_SCOPES[parsed.code]) {
       return { code: parsed.code, ...PUPIL_CLASS_CODE_SCOPES[parsed.code] };
     }
@@ -187,11 +209,12 @@ export function initCommercialAccessFromUrl() {
   if (typeof window === 'undefined') return;
   try {
     const params = new URLSearchParams(window.location.search);
-    const urlAccessCode = params.get('access') || params.get('classcode');
+    const urlAccessCode = params.get('s') || params.get('access') || params.get('classcode');
     if (urlAccessCode) {
       const matched = verifyAndSavePupilClassCode(urlAccessCode, { persist: true });
       if (matched && window.history && window.history.replaceState) {
         const cleanUrl = new URL(window.location.href);
+        cleanUrl.searchParams.delete('s');
         cleanUrl.searchParams.delete('access');
         cleanUrl.searchParams.delete('classcode');
         window.history.replaceState(window.history.state || {}, '', cleanUrl);
@@ -417,108 +440,49 @@ export function openUnitPrintPackModal(unitId = null, requestedResourceTitle = '
     'position:fixed;inset:0;background:rgba(15,23,42,0.84);backdrop-filter:blur(6px);z-index:100000;display:flex;align-items:center;justify-content:center;padding:16px;';
 
   overlay.innerHTML = `
-    <div role="dialog" aria-modal="true" aria-labelledby="hh-pack-modal-title" style="background:#ffffff;color:#0f172a;border-radius:16px;max-width:680px;width:100%;max-height:92vh;overflow-y:auto;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);border:1px solid #cbd5e1;font-family:'Outfit',sans-serif;">
-      <!-- Top Header -->
-      <div style="background:linear-gradient(135deg,#0c2340,#1e293b);color:#ffffff;padding:20px 24px;border-bottom:1px solid #334155;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;">
+    <div role="dialog" aria-modal="true" aria-labelledby="hh-pack-modal-title" style="background:#ffffff;color:#0f172a;border-radius:16px;max-width:500px;width:100%;max-height:92vh;overflow-y:auto;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);border:1px solid #cbd5e1;font-family:'Outfit',sans-serif;">
+      <!-- Discreet Pupil-Safe Header (Zero £ Signs) -->
+      <div style="background:linear-gradient(135deg,#0c2340,#1e293b);color:#ffffff;padding:18px 22px;border-bottom:1px solid #334155;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;">
         <div>
-          <div style="display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#7dd3fc;background:rgba(56,189,248,0.14);border:1px solid rgba(56,189,248,0.35);padding:3px 10px;border-radius:999px;margin-bottom:8px;">
-            <i class="fa-solid fa-school"></i> Annual School Subscription &bull; First Enquiry Free
+          <div style="display:inline-flex;align-items:center;gap:6px;font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#7dd3fc;margin-bottom:4px;">
+            <i class="fa-solid fa-lock"></i> ${pupilAlreadyUnlocked ? 'Staff Print &amp; Answer Key' : 'Class Access Required'}
           </div>
-          <h2 id="hh-pack-modal-title" style="margin:0 0 4px;font-size:1.3rem;font-weight:800;line-height:1.25;color:#ffffff;">
-            ${escapeHtml(pack.unitTitle)}
+          <h2 id="hh-pack-modal-title" style="margin:0;font-size:1.2rem;font-weight:800;line-height:1.25;color:#ffffff;">
+            ${escapeHtml(requestedResourceTitle || pack.unitTitle)}
           </h2>
-          <div style="font-size:0.84rem;color:#cbd5e1;">
-            ${escapeHtml(pack.subtitle)}
-          </div>
         </div>
-        <button type="button" id="hh-pack-modal-close" aria-label="Close" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#f8fafc;width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:1rem;flex-shrink:0;">
+        <button type="button" id="hh-pack-modal-close" aria-label="Close" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#f8fafc;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:0.95rem;flex-shrink:0;">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
 
-      <div style="padding:20px 24px;display:flex;flex-direction:column;gap:16px;">
-        ${
-          requestedResourceTitle
-            ? `<div style="background:#f0f9ff;border:1px solid #bae6fd;color:#0c4a6e;padding:10px 14px;border-radius:10px;font-size:0.85rem;line-height:1.5;">
-                <i class="fa-solid fa-lock" style="color:#0284c7;margin-right:6px;"></i>
-                ${
-                  pupilAlreadyUnlocked
-                    ? `<strong>${escapeHtml(requestedResourceTitle)}</strong> is a <strong>Teacher-Only Printable / Mark Scheme</strong> resource. Enter your <strong>Teacher Staff Key</strong> below to unlock printables and answers.`
-                    : `<strong>${escapeHtml(requestedResourceTitle)}</strong> requires an <strong>Annual School Subscription</strong>. Enquiry 1 of every course is free to explore—enter your school's <strong>Pupil Class Code</strong> or <strong>Teacher Key</strong> below, or subscribe for your department.`
-                }
-              </div>`
-            : ''
-        }
+      <div style="padding:20px 22px;display:flex;flex-direction:column;gap:16px;">
+        <p style="margin:0;font-size:0.9rem;line-height:1.55;color:#334155;">
+          ${
+            pupilAlreadyUnlocked
+              ? 'Printable master booklets and mark schemes are reserved for teaching staff. Enter your History Department Staff Key below:'
+              : 'Enter your History class code to open this resource on this device (your browser will remember it automatically):'
+          }
+        </p>
 
-        <!-- Dual Code Unlock Box (Pupils & Teachers) -->
-        <div style="background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:12px;padding:14px 16px;">
-          <div style="font-size:0.8rem;font-weight:800;color:#0f172a;margin-bottom:8px;">
-            <i class="fa-solid fa-key" style="color:#7c3aed;margin-right:6px;"></i>
-            Already at a Subscribing School? Enter Your Class Code or Teacher Key:
-          </div>
-          <form id="hh-unified-code-form" style="display:flex;gap:8px;flex-wrap:wrap;">
-            <input
-              type="text"
-              id="hh-unified-code-input"
-              placeholder="${pupilAlreadyUnlocked ? 'Enter Teacher Staff Key...' : 'e.g. Class Code HUB26 or Teacher Staff Key...'}"
-              autocomplete="off"
-              style="flex:1;min-width:200px;padding:9px 12px;border-radius:8px;border:1px solid #94a3b8;font-size:0.88rem;font-weight:600;color:#0f172a;background:#ffffff;"
-            />
-            <button type="submit" style="padding:9px 16px;border-radius:8px;background:#7c3aed;color:#ffffff;border:none;font-weight:800;font-size:0.86rem;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
-              <i class="fa-solid fa-unlock-keyhole"></i> Unlock Now
-            </button>
-          </form>
-          <div style="font-size:0.74rem;color:#64748b;margin-top:6px;">
-            Zero student accounts or personal data—your device remembers your school code automatically for the school year.
-          </div>
-          <div id="hh-unified-code-msg" style="font-size:0.8rem;font-weight:700;margin-top:6px;display:none;"></div>
-        </div>
+        <form id="hh-unified-code-form" style="display:flex;gap:8px;flex-wrap:wrap;">
+          <input
+            type="text"
+            id="hh-unified-code-input"
+            placeholder="${pupilAlreadyUnlocked ? 'Enter Staff Key...' : 'Enter Class Code...'}"
+            autocomplete="off"
+            style="flex:1;min-width:180px;padding:10px 12px;border-radius:8px;border:1.5px solid #94a3b8;font-size:0.92rem;font-weight:600;color:#0f172a;background:#ffffff;"
+          />
+          <button type="submit" style="padding:10px 18px;border-radius:8px;background:#0284c7;color:#ffffff;border:none;font-weight:800;font-size:0.88rem;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
+            <i class="fa-solid fa-arrow-right"></i> Continue
+          </button>
+        </form>
+        <div id="hh-unified-code-msg" style="font-size:0.8rem;font-weight:700;display:none;"></div>
 
-        <!-- 3 Compact Subscription Tier Pills -->
-        <div>
-          <div style="font-size:0.76rem;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;color:#475569;margin-bottom:8px;">
-            Annual School Subscription Options (Digital Lessons + Audio + All Printable PDFs):
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:10px;">
-            <div style="padding:12px;border-radius:10px;border:1.5px solid #e2e8f0;background:#ffffff;">
-              <div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;color:#059669;">Single Course</div>
-              <div style="font-size:1.3rem;font-weight:800;color:#0f172a;margin:2px 0;">${escapeHtml(pack.priceLabel)}</div>
-              <div style="font-size:0.76rem;color:#475569;line-height:1.35;">Full digital + print access for this course</div>
-            </div>
-            <div style="padding:12px;border-radius:10px;border:2px solid #7c3aed;background:#faf5ff;">
-              <div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;color:#7c3aed;">Key Stage (Popular)</div>
-              <div style="font-size:1.3rem;font-weight:800;color:#0f172a;margin:2px 0;">£149 / yr</div>
-              <div style="font-size:0.76rem;color:#475569;line-height:1.35;">All 12 KS3 <em>or</em> All 6 Edexcel GCSE courses</div>
-            </div>
-            <div style="padding:12px;border-radius:10px;border:1.5px solid #fde68a;background:#fffbeb;">
-              <div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;color:#b45309;">All 19 Courses</div>
-              <div style="font-size:1.3rem;font-weight:800;color:#0f172a;margin:2px 0;">£229 / yr</div>
-              <div style="font-size:0.76rem;color:#475569;line-height:1.35;">Whole-Department KS2 + KS3 + GCSE Vault</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Included Highlights -->
-        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;">
-          ${pack.items
-            .slice(0, 4)
-            .map(
-              (it) => `
-            <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.83rem;line-height:1.4;color:#334155;">
-              <i class="fa-solid fa-circle-check" style="color:#059669;margin-top:2px;flex-shrink:0;"></i>
-              <span>${escapeHtml(it)}</span>
-            </li>`,
-            )
-            .join('')}
-        </ul>
-
-        <!-- CTA Row -->
-        <div style="display:flex;flex-wrap:wrap;gap:10px;padding-top:4px;">
-          <a href="${mailtoHref}" style="flex:1.3;min-width:220px;padding:11px 18px;border-radius:10px;background:#0284c7;color:#ffffff;font-weight:800;font-size:0.9rem;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;">
-            <i class="fa-solid fa-envelope"></i> Subscribe Your School (Card or PO Invoice)
-          </a>
-          <button type="button" id="hh-pack-modal-bundles" style="padding:11px 16px;border-radius:10px;background:#f1f5f9;border:1px solid #cbd5e1;color:#0f172a;font-weight:700;font-size:0.85rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;">
-            Compare All Tiers on /schools/ &rarr;
+        <div style="border-top:1px solid #e2e8f0;padding-top:12px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:0.78rem;color:#64748b;">
+          <span>History teacher at another school?</span>
+          <button type="button" id="hh-pack-modal-bundles" style="background:none;border:none;padding:0;color:#0284c7;font-weight:700;font-size:0.78rem;cursor:pointer;text-decoration:underline;">
+            School access &amp; department enquiries &rarr;
           </button>
         </div>
       </div>
