@@ -645,6 +645,19 @@
               <span class="btn-text" id="voice-toggle-label">Voice: UK ♀</span>
             </button>
 
+            <!-- Staff-Only 1-Click Class Link Copier (auto-attaches silent pupil pass) -->
+            <button
+              type="button"
+              id="btn-copy-class-link"
+              class="header-tool-btn"
+              onclick="window.copyStaffClassLink && window.copyStaffClassLink(this)"
+              title="Staff Only: Copy pupil homework/Classroom link for this exact page (auto-includes silent pupil pass)"
+              style="display: none; border-color: rgba(16, 185, 129, 0.45); color: #059669;"
+            >
+              <i class="fa-solid fa-link"></i>
+              <span class="btn-text" id="copy-class-link-label">Class Link</span>
+            </button>
+
             <!-- Persistent Theme Toggle (always visible in header) -->
             <div id="header-theme-toggle" style="position: relative">
               <button

@@ -303,7 +303,13 @@ export async function openReadingShareModal(unitId, lessonIndex, bookTitle) {
     'https://historyrevisionhub.co.uk';
   const origin = isLocalhost ? productionOrigin : window.location.origin;
   const path = '/';
-  const homeworkUrl = `${origin}${path}?view=reading&unit=${unitId}&lesson=${lessonIndex + 1}`;
+  const staffSeedSuffix =
+    typeof window !== 'undefined' &&
+    window.isTeacherMode &&
+    typeof window.getStaffPupilSeedToken === 'function'
+      ? `&s=${encodeURIComponent(window.getStaffPupilSeedToken())}`
+      : '';
+  const homeworkUrl = `${origin}${path}?view=reading&unit=${unitId}&lesson=${lessonIndex + 1}${staffSeedSuffix}`;
 
   let qrDataUrl = '';
   try {

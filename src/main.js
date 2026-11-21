@@ -96,6 +96,8 @@ export function syncStaffUiState() {
 
   const headerBtn = document.getElementById('btn-cover-modal');
   if (headerBtn) headerBtn.style.display = active ? 'inline-flex' : 'none';
+  const copyClassBtn = document.getElementById('btn-copy-class-link');
+  if (copyClassBtn) copyClassBtn.style.display = active ? 'inline-flex' : 'none';
   const sidebarBtn = document.getElementById('nav-cover-generator');
   if (sidebarBtn) sidebarBtn.style.display = active ? 'flex' : 'none';
 
@@ -137,6 +139,7 @@ export function syncStaffUiState() {
       if (toggleSub) toggleSub.textContent = isPreviewPupil && isLocalHost ? 'Pupil Preview' : '';
     }
   }
+  if (typeof syncStaffAddressBarSeed === 'function') syncStaffAddressBarSeed();
 }
 
 export function promptStaffUnlock() {
@@ -221,24 +224,109 @@ const SILENT_PUPIL_PASS_DIGESTS = new Set([
   '704e0f0a489214d1c02423d8557f3a8fbe977fea0c617e02d76d48dfb6edf80b',
 ]);
 
+function getStaffPupilSeedToken() {
+  return String.fromCharCode(55, 52, 57, 50);
+}
+
+function syncStaffAddressBarSeed() {
+  if (typeof window === 'undefined' || !window.history || !window.history.replaceState) return;
+  const host = window.location.hostname;
+  const isProdDomain = host === 'historyrevisionhub.co.uk' || host === 'www.historyrevisionhub.co.uk';
+  if (!isProdDomain || !isStaffModeActive()) return;
+  try {
+    const u = new URL(window.location.href);
+    const seed = getStaffPupilSeedToken();
+    if (u.searchParams.get('s') !== seed) {
+      u.searchParams.set('s', seed);
+      window.__bypassStaffHistoryHook = true;
+      window.history.replaceState(window.history.state || {}, '', u);
+      window.__bypassStaffHistoryHook = false;
+    }
+  } catch (e) {
+    window.__bypassStaffHistoryHook = false;
+  }
+}
+
+function installStaffHistoryUrlAutoSeeder() {
+  if (typeof window === 'undefined' || !window.history || window.__staffHistoryHookInstalled) return;
+  window.__staffHistoryHookInstalled = true;
+
+  const wrap = (origFn) =>
+    function (stateObj, unused, urlArg) {
+      let nextUrl = urlArg;
+      const host = window.location.hostname;
+      const isProdDomain =
+        host === 'historyrevisionhub.co.uk' || host === 'www.historyrevisionhub.co.uk';
+      if (!window.__bypassStaffHistoryHook && isProdDomain && isStaffModeActive() && urlArg) {
+        try {
+          const parsed = new URL(String(urlArg), window.location.origin);
+          if (parsed.origin === window.location.origin) {
+            parsed.searchParams.set('s', getStaffPupilSeedToken());
+            nextUrl = parsed.pathname + parsed.search + parsed.hash;
+          }
+        } catch (e) {}
+      }
+      return origFn.call(this, stateObj, unused, nextUrl);
+    };
+
+  window.history.pushState = wrap(window.history.pushState);
+  window.history.replaceState = wrap(window.history.replaceState);
+}
+
+if (typeof window !== 'undefined') {
+  window.getStaffPupilSeedToken = getStaffPupilSeedToken;
+  window.copyStaffClassLink = function (btnEl) {
+    try {
+      const u = new URL(window.location.href);
+      const isLocal = u.hostname === 'localhost' || u.hostname === '127.0.0.1';
+      const baseOrigin = isLocal ? 'https://historyrevisionhub.co.uk' : u.origin;
+      const shareUrl = new URL(u.pathname + u.search + u.hash, baseOrigin);
+      shareUrl.searchParams.delete('preview');
+      shareUrl.searchParams.delete('staff');
+      shareUrl.searchParams.delete('passkey');
+      shareUrl.searchParams.set('s', getStaffPupilSeedToken());
+      const finalLink = shareUrl.toString();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(finalLink).then(() => {
+          const lbl = (btnEl && btnEl.querySelector('#copy-class-link-label')) || document.getElementById('copy-class-link-label');
+          if (lbl) {
+            const prev = lbl.textContent;
+            lbl.textContent = 'Copied!';
+            setTimeout(() => {
+              lbl.textContent = prev;
+            }, 1800);
+          }
+        });
+      }
+      return finalLink;
+    } catch (e) {
+      return '';
+    }
+  };
+}
+
 function initSilentPupilPassPreseed() {
   try {
+    installStaffHistoryUrlAutoSeeder();
     const params = new URLSearchParams(window.location.search);
     const raw = (params.get('s') || params.get('access') || '').trim().toLowerCase();
-    if (!raw || typeof staffAuthModule.sha256HexSync !== 'function') return;
-    const digest = staffAuthModule.sha256HexSync('hrh_pupil_pass_v1:' + raw);
-    if (SILENT_PUPIL_PASS_DIGESTS.has(digest)) {
-      localStorage.setItem(
-        'hh_school_pupil_licence_v1',
-        JSON.stringify({ digest, scope: 'all', ts: Date.now() }),
-      );
-      if (window.history && window.history.replaceState) {
-        const cleanUrl = new URL(window.location.href);
-        cleanUrl.searchParams.delete('s');
-        cleanUrl.searchParams.delete('access');
-        window.history.replaceState(window.history.state || {}, '', cleanUrl);
+    if (raw && typeof staffAuthModule.sha256HexSync === 'function') {
+      const digest = staffAuthModule.sha256HexSync('hrh_pupil_pass_v1:' + raw);
+      if (SILENT_PUPIL_PASS_DIGESTS.has(digest)) {
+        localStorage.setItem(
+          'hh_school_pupil_licence_v1',
+          JSON.stringify({ digest, scope: 'all', ts: Date.now() }),
+        );
+        // Strip ?s= from pupil/public address bar; keep it in Staff Mode on live domain for effortless Ctrl+C
+        if (!isStaffModeActive() && window.history && window.history.replaceState) {
+          const cleanUrl = new URL(window.location.href);
+          cleanUrl.searchParams.delete('s');
+          cleanUrl.searchParams.delete('access');
+          window.history.replaceState(window.history.state || {}, '', cleanUrl);
+        }
       }
     }
+    syncStaffAddressBarSeed();
   } catch (e) {}
 }
 
@@ -306,7 +394,6 @@ export function initTeacherMode() {
 window.addEventListener('DOMContentLoaded', async () => {
   // Execute GDPR cache, storage, and service worker scrub
   purgeGDPRHistoricalCache();
-  initSilentPupilPassPreseed();
 
   // Initialize UI subscribers
   initNavigationUI();
@@ -315,6 +402,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initGlossaryPopover();
   initDossierPopover();
   initTeacherMode();
+  initSilentPupilPassPreseed();
 
   // Bind global helper routing
   window.switchView = switchView;
