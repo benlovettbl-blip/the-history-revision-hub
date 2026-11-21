@@ -430,7 +430,7 @@ export function bindEvents() {
       'weimar_nazi_germany',
       'usa',
     ]);
-    const ks2Units = getOrderedUnits(['ks2_ww2']);
+    const ks2Units = getOrderedUnits(['ks2_romans', 'ks2_ww2']);
 
     renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
     renderAccordionGroup('GCSE (9–1)', gcseUnits, false);

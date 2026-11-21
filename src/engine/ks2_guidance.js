@@ -10,6 +10,66 @@
  * Strict School Anonymity & Institutional Neutrality under 'The History Revision Hub'.
  */
 
+import {
+  KS2_ROMANS_WORKSHEETS_MAP,
+  KS2_ROMANS_TEACHER_GUIDANCE,
+} from './ks2_romans_guidance.js';
+
+// Backwards-compatible alias normalization for KS2 Romans guidance
+Object.values(KS2_ROMANS_TEACHER_GUIDANCE).forEach((g) => {
+  if (g && g.answers) {
+    g.answers.block1 = g.answers.task1;
+    g.answers.block2 = g.answers.task2;
+    g.answers.block3 = g.answers.task3;
+    g.answers.block4 = g.answers.task4;
+    g.answers.block5_wagoll = g.answers.task5_wagoll;
+  }
+});
+
+function detectActiveKs2UnitId() {
+  if (typeof window === 'undefined') return 'ks2_ww2';
+  const cand =
+    window.currentUnitId ||
+    window.appStore?.state?.currentUnitId ||
+    window.appStore?.state?.activeUnitData?.id ||
+    window.currentUnitData?.id ||
+    '';
+  if (cand === 'ks2_romans') return 'ks2_romans';
+  return 'ks2_ww2';
+}
+
+function getActiveKs2UnitConfig(explicitUnitId) {
+  const unitId = explicitUnitId || detectActiveKs2UnitId();
+  if (unitId === 'ks2_romans') {
+    return {
+      unitId: 'ks2_romans',
+      worksheetsMap: KS2_ROMANS_WORKSHEETS_MAP,
+      guidanceMap: KS2_ROMANS_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_romans/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_romans_pupil_workbook.pdf',
+      sowUrl: '/units/ks2_romans/ks2_romans_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Year 3/4/5 Dual-Scaffolded Model Answer',
+      skillsPeriod: '55 BC–AD 410',
+    };
+  }
+  return {
+    unitId: 'ks2_ww2',
+    worksheetsMap: KS2_WORKSHEETS_MAP,
+    guidanceMap: KS2_TEACHER_GUIDANCE_DATA,
+    totalLessons: 11,
+    workbookPagesLabel: '28-Page',
+    fullWorkbookUrl: '/units/ks2_ww2/pupil_workbook.html',
+    fullWorkbookPdf: '/pdfs/ks2_ww2_pupil_workbook.pdf',
+    sowUrl: '/units/ks2_ww2/ks2_ww2_scheme_of_work.html',
+    sowLabel: '11-Lesson Scheme of Work',
+    wagollAgeLabel: 'Year 5/6 Model Answer',
+    skillsPeriod: '1933–1945',
+  };
+}
+
 export const KS2_WORKSHEETS_MAP = {
   lesson_1: {
     num: 1,
@@ -707,17 +767,25 @@ Object.values(KS2_TEACHER_GUIDANCE_DATA).forEach((g) => {
 /**
  * Resolves the live KS2 lesson JSON object for a given worksheet entry (lesson_1..lesson_11).
  */
-function resolveLiveKs2Lesson(sheet) {
+function resolveLiveKs2Lesson(sheet, explicitUnitId) {
+  const targetUnitId = explicitUnitId || detectActiveKs2UnitId();
+  const cacheMap = window.__ks2GuidanceUnitCaches || {};
   const lessonsPool =
-    (window.__ks2GuidanceUnitCache && window.__ks2GuidanceUnitCache.lessons) ||
+    (cacheMap[targetUnitId] && cacheMap[targetUnitId].lessons) ||
+    (targetUnitId === 'ks2_ww2' &&
+      window.__ks2GuidanceUnitCache &&
+      window.__ks2GuidanceUnitCache.lessons) ||
     (window.currentUnitData &&
-      window.currentUnitData.id === 'ks2_ww2' &&
+      window.currentUnitData.id === targetUnitId &&
       window.currentUnitData.lessons) ||
-    (window.db && window.db.ks2_ww2 && window.db.ks2_ww2.data && window.db.ks2_ww2.data.lessons) ||
+    (window.db &&
+      window.db[targetUnitId] &&
+      window.db[targetUnitId].data &&
+      window.db[targetUnitId].data.lessons) ||
     (window.appStore &&
       window.appStore.state &&
       window.appStore.state.activeUnitData &&
-      window.appStore.state.activeUnitData.id === 'ks2_ww2' &&
+      window.appStore.state.activeUnitData.id === targetUnitId &&
       window.appStore.state.activeUnitData.lessons) ||
     [];
   if (!Array.isArray(lessonsPool) || lessonsPool.length === 0) return null;
@@ -891,7 +959,8 @@ function printKs2TeacherGuide(sheet, guide, liveLesson) {
     return;
   }
 
-  const resolvedLesson = liveLesson || resolveLiveKs2Lesson(sheet);
+  const cfg = getActiveKs2UnitConfig();
+  const resolvedLesson = liveLesson || resolveLiveKs2Lesson(sheet, cfg.unitId);
 
   const safeguardingPrintHtml = guide.safeguardingNote
     ? `<div class="box" style="background:#fffbeb; border-left:4px solid #d97706; border-color:#fcd34d;">${guide.safeguardingNote}</div>`
@@ -946,7 +1015,7 @@ function printKs2TeacherGuide(sheet, guide, liveLesson) {
 </head>
 <body>
   <div class="hdr">
-    <div class="hdr-kicker">Key Stage 2 History • Walk-In Primary Teacher Guide • Lesson ${sheet.num} of 11</div>
+    <div class="hdr-kicker">Key Stage 2 History • Walk-In Primary Teacher Guide • Lesson ${sheet.num} of ${cfg.totalLessons}</div>
     <h1>${sheet.title}</h1>
     <div class="hdr-eq">Key Enquiry: ${sheet.enquiryQuestion}</div>
   </div>
@@ -988,18 +1057,20 @@ function printKs2TeacherGuide(sheet, guide, liveLesson) {
  * Displays current lesson worksheet with quick 1-click toggle to Full 28-Page Pupil Workbook
  */
 export function openKs2WorksheetModal(lessonId, lessonIndex) {
+  const cfg = getActiveKs2UnitConfig();
+  const activeWsMap = cfg.worksheetsMap;
   let targetId = lessonId;
-  if (!targetId || !KS2_WORKSHEETS_MAP[targetId]) {
-    if (typeof lessonIndex === 'number' && lessonIndex >= 0 && lessonIndex < 11) {
+  if (!targetId || !activeWsMap[targetId]) {
+    if (typeof lessonIndex === 'number' && lessonIndex >= 0 && lessonIndex < cfg.totalLessons) {
       targetId = `lesson_${lessonIndex + 1}`;
     } else {
       targetId = 'lesson_1';
     }
   }
 
-  const currentSheet = KS2_WORKSHEETS_MAP[targetId] || KS2_WORKSHEETS_MAP.lesson_1;
-  const fullWorkbookUrl = '/units/ks2_ww2/pupil_workbook.html';
-  const fullWorkbookPdf = '/pdfs/ks2_ww2_pupil_workbook.pdf';
+  const currentSheet = activeWsMap[targetId] || activeWsMap.lesson_1;
+  const fullWorkbookUrl = cfg.fullWorkbookUrl;
+  const fullWorkbookPdf = cfg.fullWorkbookPdf;
 
   // Close teacher guidance modal if open to prevent stacked modal overlays
   const existingGuidance = document.getElementById('ks2TeacherGuidanceModalOverlay');
@@ -1029,13 +1100,13 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(59, 130, 246, 0.2); color: #93c5fd; padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(59, 130, 246, 0.3);">KS2 Print Materials</span>
-              <span id="activeDocModeLabel" style="font-size: 0.72rem; font-weight: 600; color: #94a3b8;">Lesson ${currentSheet.num} of ${Object.keys(KS2_WORKSHEETS_MAP).length}</span>
+              <span id="activeDocModeLabel" style="font-size: 0.72rem; font-weight: 600; color: #94a3b8;">Lesson ${currentSheet.num} of ${Object.keys(activeWsMap).length}</span>
             </div>
             <h2 id="activeDocTitle" style="margin: 3px 0 0 0; font-size: 1.15rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em;">${currentSheet.title}</h2>
           </div>
         </div>
 
-        <!-- Center: Quick View Toggle (This Lesson vs Full 28-Page Workbook) -->
+        <!-- Center: Quick View Toggle (This Lesson vs Full Master Workbook) -->
         <div style="background: #0f172a; padding: 3px; border-radius: 8px; border: 1px solid #334155; display: flex; gap: 2px;">
           <button id="toggleSingleWorksheet" class="active-doc-toggle" style="background: #2563eb; color: #ffffff; border: none; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
             <i class="fa-solid fa-file-lines"></i>
@@ -1043,7 +1114,7 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
           </button>
           <button id="toggleMasterWorkbook" class="inactive-doc-toggle" style="background: transparent; color: #94a3b8; border: none; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
             <i class="fa-solid fa-book-bookmark" style="color: #f59e0b;"></i>
-            <span>Full 28-Page Pupil Workbook</span>
+            <span>Full ${cfg.workbookPagesLabel} Pupil Workbook</span>
           </button>
         </div>
 
@@ -1051,7 +1122,7 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
         <div style="display: flex; align-items: center; gap: 8px;">
           <!-- Lesson Jump Selector -->
           <select id="worksheetLessonSelect" style="background: #0f172a; color: #f1f5f9; border: 1px solid #475569; padding: 6px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; outline: none;">
-            ${Object.values(KS2_WORKSHEETS_MAP)
+            ${Object.values(activeWsMap)
       .map(
         (w) => `
               <option value="${w.id}" ${w.id === currentSheet.id ? 'selected' : ''}>Lesson ${w.num}:${w.title.split(':')[1] || ' ' + w.title}</option>
@@ -1118,10 +1189,10 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
 
   const setSingleView = (wId) => {
     isViewingMaster = false;
-    const s = KS2_WORKSHEETS_MAP[wId] || currentSheet;
+    const s = activeWsMap[wId] || currentSheet;
     iframe.src = s.html;
     titleEl.textContent = s.title;
-    modeLabel.textContent = `Lesson ${s.num} of ${Object.keys(KS2_WORKSHEETS_MAP).length}`;
+    modeLabel.textContent = `Lesson ${s.num} of ${Object.keys(activeWsMap).length}`;
     downloadLink.href = s.pdf;
     lessonSelect.value = s.id;
     lessonSelect.style.display = 'inline-block';
@@ -1135,8 +1206,8 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
   const setMasterView = () => {
     isViewingMaster = true;
     iframe.src = fullWorkbookUrl;
-    titleEl.textContent = '28-Page Master Pupil Workbook';
-    modeLabel.textContent = 'Complete 11-Enquiry Course Companion';
+    titleEl.textContent = `${cfg.workbookPagesLabel} Master Pupil Workbook`;
+    modeLabel.textContent = `Complete ${cfg.totalLessons}-Enquiry Course Companion`;
     downloadLink.href = fullWorkbookPdf;
     lessonSelect.style.display = 'none';
 
@@ -1195,18 +1266,21 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
  * Non-specialist primary planning guide with subject knowledge, misconceptions, hinge questions, and 5-task worksheet answer keys.
  */
 export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
+  const cfg = getActiveKs2UnitConfig();
+  const activeWsMap = cfg.worksheetsMap;
+  const activeGuideMap = cfg.guidanceMap;
   let targetId = lessonId;
-  if (!targetId || !KS2_TEACHER_GUIDANCE_DATA[targetId]) {
-    if (typeof lessonIndex === 'number' && lessonIndex >= 0 && lessonIndex < 11) {
+  if (!targetId || !activeGuideMap[targetId]) {
+    if (typeof lessonIndex === 'number' && lessonIndex >= 0 && lessonIndex < cfg.totalLessons) {
       targetId = `lesson_${lessonIndex + 1}`;
     } else {
       targetId = 'lesson_1';
     }
   }
 
-  const sheet = KS2_WORKSHEETS_MAP[targetId] || KS2_WORKSHEETS_MAP.lesson_1;
-  const guide = KS2_TEACHER_GUIDANCE_DATA[targetId] || KS2_TEACHER_GUIDANCE_DATA.lesson_1;
-  let liveLesson = resolveLiveKs2Lesson(sheet);
+  const sheet = activeWsMap[targetId] || activeWsMap.lesson_1;
+  const guide = activeGuideMap[targetId] || activeGuideMap.lesson_1;
+  let liveLesson = resolveLiveKs2Lesson(sheet, cfg.unitId);
 
   const safeguardingBannerHtml = guide.safeguardingNote
     ? `
@@ -1245,7 +1319,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(255, 255, 255, 0.2); color: #ffffff; padding: 2px 8px; border-radius: 4px;">Primary Teacher Companion</span>
-              <span style="font-size: 0.72rem; font-weight: 600; color: #cbd5e1;">Key Stage 2 History • Lesson ${sheet.num} of 11</span>
+              <span style="font-size: 0.72rem; font-weight: 600; color: #cbd5e1;">Key Stage 2 History • Lesson ${sheet.num} of ${cfg.totalLessons}</span>
             </div>
             <h2 style="margin: 3px 0 0 0; font-size: 1.25rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em;">${sheet.title}</h2>
           </div>
@@ -1253,7 +1327,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
 
         <div style="display: flex; align-items: center; gap: 10px;">
           <select id="guidanceLessonSelect" style="background: #0f172a; color: #f1f5f9; border: 1px solid #475569; padding: 7px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; cursor: pointer; outline: none;">
-            ${Object.values(KS2_WORKSHEETS_MAP)
+            ${Object.values(activeWsMap)
       .map(
         (w) => `
               <option value="${w.id}" ${w.id === sheet.id ? 'selected' : ''}>Lesson ${w.num}:${w.title.split(':')[1] || ' ' + w.title}</option>
@@ -1322,7 +1396,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
                 <i class="fa-solid fa-graduation-cap" style="color: #16a34a;"></i> Key Historical Skills
               </h4>
               <p style="margin: 0; font-size: 0.85rem; color: #475569; line-height: 1.55;">
-                Historical Enquiry (primary photographs, documents &amp; maps), Chronological Understanding (1933–1945), and Cause &amp; Consequence.
+                Historical Enquiry (primary artefacts, documents &amp; maps), Chronological Understanding (${cfg.skillsPeriod}), and Cause &amp; Consequence.
               </p>
             </div>
           </div>
@@ -1354,11 +1428,11 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
               <button id="openWorksheetFromGuidanceBtn" style="background: #2563eb; color: #ffffff; border: none; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-file-pdf"></i> Open Lesson Worksheet
               </button>
-              <a href="/pdfs/ks2_ww2_pupil_workbook.pdf" target="_blank" style="background: #ffffff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <i class="fa-solid fa-book-bookmark"></i> 28-Page Pupil Workbook (PDF)
+              <a href="${cfg.fullWorkbookPdf}" target="_blank" style="background: #ffffff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-solid fa-book-bookmark"></i> ${cfg.workbookPagesLabel} Pupil Workbook (PDF)
               </a>
-              <a href="/units/ks2_ww2/ks2_ww2_scheme_of_work.html" target="_blank" style="background: #ffffff; color: #0f766e; border: 1.5px solid #99f6e4; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <i class="fa-solid fa-table-list"></i> 11-Lesson Scheme of Work
+              <a href="${cfg.sowUrl}" target="_blank" style="background: #ffffff; color: #0f766e; border: 1.5px solid #99f6e4; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-solid fa-table-list"></i> ${cfg.sowLabel}
               </a>
             </div>
           </div>
@@ -1427,7 +1501,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
           
           <div style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 6px; padding: 14px 18px; margin-bottom: 20px;">
             <strong style="color: #166534; font-size: 0.88rem;">Worksheet &amp; Pupil Workbook Marking Guide:</strong>
-            <span style="color: #15803d; font-size: 0.84rem; margin-left: 6px;">Marks both the standalone 2-page A4 Lesson ${sheet.num} Worksheet AND Mission ${String(sheet.num).padStart(2, '0')} in the 28-page Master Pupil Workbook (Tasks 1–5).</span>
+            <span style="color: #15803d; font-size: 0.84rem; margin-left: 6px;">Marks both the standalone 2-page A4 Lesson ${sheet.num} Worksheet AND Mission ${String(sheet.num).padStart(2, '0')} in the ${cfg.workbookPagesLabel} Master Pupil Workbook (Tasks 1–5).</span>
           </div>
 
           <!-- Task 1: Source Detective -->
@@ -1479,7 +1553,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
               <h4 style="margin: 0; font-size: 0.90rem; font-weight: 800; color: #312e81; display: flex; align-items: center; gap: 6px;">
                 <i class="fa-solid fa-star" style="color: #eab308;"></i>
-                <span>Task 5 WAGOLL: What A Good One Looks Like (Year 5/6 Model Answer)</span>
+                <span>Task 5 WAGOLL: What A Good One Looks Like (${cfg.wagollAgeLabel})</span>
               </h4>
               <span style="font-size: 0.72rem; font-weight: 700; background: #e0e7ff; color: #3730a3; padding: 2px 8px; border-radius: 4px;">KS2 Expected Standard</span>
             </div>
@@ -1540,12 +1614,14 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
   };
 
   if (!liveLesson) {
-    fetch('/data/ks2_ww2.json')
+    fetch(`/data/${cfg.unitId}.json`)
       .then((res) => (res.ok ? res.json() : null))
       .then((unitJson) => {
         if (!unitJson || !Array.isArray(unitJson.lessons)) return;
-        window.__ks2GuidanceUnitCache = unitJson;
-        liveLesson = resolveLiveKs2Lesson(sheet);
+        window.__ks2GuidanceUnitCaches = window.__ks2GuidanceUnitCaches || {};
+        window.__ks2GuidanceUnitCaches[cfg.unitId] = unitJson;
+        if (cfg.unitId === 'ks2_ww2') window.__ks2GuidanceUnitCache = unitJson;
+        liveLesson = resolveLiveKs2Lesson(sheet, cfg.unitId);
         const iwbContainer = overlay.querySelector('#tg-iwb-answers');
         if (iwbContainer && liveLesson) {
           iwbContainer.innerHTML = renderIwbLessonAnswersHTML(liveLesson, sheet);

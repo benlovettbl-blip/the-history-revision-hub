@@ -2,8 +2,19 @@
   "yearGroups": [
     {
       "year": "Key Stage 2",
-      "ks": "Key Stage 2 Primary (Years 5–6)",
+      "ks": "Key Stage 2 Primary (Years 3–6)",
       "units": [
+        {
+          "uid": "ks2_romans",
+          "terms": ["Autumn 1", "Spring 1"],
+          "shortTitle": "The Romans in Britain — Invasion, Resistance & Legacy (55 BC–AD 410)",
+          "summary": "A 6-enquiry primary unit (Years 3–5 Dual-Scaffolded) investigating Iron Age Celtic tribes and Maiden Castle hillfort, Emperor Claudius's AD 43 invasion and Roman army tactics, Queen Boudicca's AD 60–61 Iceni rebellion and the burning of Londinium, Hadrian's 73-mile frontier wall and diverse Vindolanda soldiers from Europe, Syria, and North Africa, everyday life in Roman towns, Aquae Sulis baths, and countryside roundhouses, and Rome's AD 410 departure and lasting legacy across Britain today.",
+          "vocab": "Tribe, Hillfort, Roundhouse, Torc, Druids, Emperor, Legionary, Testudo, Province, Rebellion, Iceni, Frontier, Milecastle, Auxiliary, Forum, Hypocaust, Aqueduct, Mosaic, Hoard, Castra, Legacy",
+          "skills": ["Chronological Understanding (55 BC–AD 410)", "Archaeological & Primary Source Investigation", "Cause & Consequence", "Change, Continuity & Legacy"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Years 3–4 & Scholar Year 5+), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did the Roman Empire conquer Britain and change life on our island forever?'",
+          "smsc": "<strong>Spiritual:</strong> Exploring Celtic Druid beliefs, Sulis Minerva at Bath, and early Christianity in Roman Britain. <strong>Moral:</strong> Examining broken treaties, taxation, and Boudicca's resistance against imperial injustice. <strong>Social:</strong> Discovering diverse frontier communities along Hadrian's Wall (Vindolanda letters, Regina & Barates, Aurelian Moors). <strong>Cultural:</strong> Tracing how Roman towns, roads, Latin words, and our 12-month calendar still shape Britain today.",
+          "careers": "Field Archaeologist, Museum Curator, Classical Historian, Heritage Conservator, Cartographer"
+        },
         {
           "uid": "ks2_ww2",
           "terms": ["Autumn 1", "Autumn 2"],

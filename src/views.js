@@ -68,10 +68,14 @@ export function renderDashboard() {
   `;
 
   // Key Stage 2 Grouping
-  const ks2Order = ['ks2_ww2'];
+  const ks2Order = ['ks2_romans', 'ks2_ww2'];
   const ks2Units = units
-    .filter((u) => ks2Order.includes(u.id))
-    .sort((a, b) => ks2Order.indexOf(a.id) - ks2Order.indexOf(b.id));
+    .filter((u) => ks2Order.includes(u.id) || String(u.id || '').startsWith('ks2_'))
+    .sort((a, b) => {
+      const ia = ks2Order.indexOf(a.id);
+      const ib = ks2Order.indexOf(b.id);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
 
   // KS3 Grouping (All 12 Units: Year 7, Year 8, Year 9)
   const ks3Meta = {
@@ -108,6 +112,7 @@ export function renderDashboard() {
     .sort((a, b) => gcseOrder.indexOf(a.id) - gcseOrder.indexOf(b.id));
 
   const unitCanonicalTitles = {
+    ks2_romans: 'The Romans in Britain (55 BC–AD 410)',
     ks2_ww2: 'World War II & The Home Front (1933–1945)',
     water_and_sanitation: 'Water & Sanitation (1250–Present)',
     medieval_england: 'Medieval England (1066–1485)',
@@ -205,13 +210,29 @@ export function renderDashboard() {
     `;
   };
 
-  // Key Stage 2 Section (Horizontal Primary Transition Showcase Feature Banner)
+  // Key Stage 2 Section (Two-Tier Primary History Showcase: Lower/Bridge KS2 & Upper KS2)
   if (ks2Units.length > 0) {
-    const ks2Unit = ks2Units[0];
-    const ks2Cover =
-      ks2Unit.homepage_background ||
-      ks2Unit.cover_image ||
-      '/units/ks2_ww2/assets/kindertransport_prague_flight_1939_pd.jpg';
+    const ks2CardMeta = {
+      ks2_romans: {
+        phaseBadge: 'Bridge KS2 • Years 3–4 (Dual-Scaffolded Y3–5)',
+        badgeBg: '#b45309',
+        gradient: 'linear-gradient(135deg, #451a03 0%, #7c2d12 52%, #9a3412 100%)',
+        borderCol: 'rgba(253, 230, 138, 0.38)',
+        btnBg: 'linear-gradient(135deg, #d97706 0%, #b45309 100%)',
+        summary:
+          'Explore Iron Age Celtic roundhouses & hillforts, Emperor Claudius\'s AD 43 invasion, Queen Boudicca\'s rebellion, Hadrian\'s Wall & Vindolanda wooden letters, Aquae Sulis baths, and Rome\'s lasting legacy.',
+      },
+      ks2_ww2: {
+        phaseBadge: 'Upper KS2 • Years 5–6',
+        badgeBg: '#4f46e5',
+        gradient: 'linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #312e81 100%)',
+        borderCol: 'rgba(199, 210, 254, 0.35)',
+        btnBg: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)',
+        summary:
+          'Explore outbreak & gas masks, Operation Pied Piper evacuation, pre-war Jewish life, the Kindertransport & rescuers, the Blitz, rationing, women at war, Bletchley Park, VE Day, and the Windermere Children.',
+      },
+    };
+
     html += `
       <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2" style="margin-bottom: 24px;">
         <div id="ks2-section" style="position: relative; top: -14px;"></div>
@@ -219,45 +240,63 @@ export function renderDashboard() {
           <div style="display: flex; align-items: center; gap: 10px;">
             <span style="background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Key Stage 2</span>
             <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
-              World War II &amp; The Home Front (1933–1945)
+              Primary History Enquiries (Years 3–6)
             </h3>
           </div>
-          <span style="font-size: 0.78rem; font-weight: 600; color: #64748b;">Key Stage 2 History</span>
+          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">${ks2Units.length} Curriculum ${ks2Units.length === 1 ? 'Unit' : 'Units'} &bull; LKS2 &amp; UKS2</span>
         </div>
 
-        <div class="ks2-feature-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #312e81 100%); border-radius: 12px; border: 1.5px solid rgba(199, 210, 254, 0.35); box-shadow: 0 8px 24px -4px rgba(49, 46, 129, 0.2); display: flex; align-items: stretch; overflow: hidden; position: relative;">
-          <!-- Left Hero Image Column -->
-          <div class="ks2-hero-img-col" style="flex: 0 0 320px; min-height: 195px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 22%; position: relative;">
-            <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30, 27, 75, 0.0) 60%, rgba(30, 27, 75, 0.72) 100%);"></div>
-          </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 16px;">
+          ${ks2Units
+            .map((ks2Unit) => {
+              const cfg = ks2CardMeta[ks2Unit.id] || ks2CardMeta.ks2_ww2;
+              const ks2Cover =
+                ks2Unit.homepage_background ||
+                ks2Unit.cover_image ||
+                '/units/ks2_ww2/assets/banner_unit_hero.jpg';
+              const displayTitle =
+                unitCanonicalTitles[ks2Unit.id] ||
+                (ks2Unit.title || ks2Unit.id).replace(/^KS2:\s*/i, '');
+              const lessonCount = Array.isArray(ks2Unit.lessons) ? ks2Unit.lessons.length : 6;
+              const eqText =
+                ks2Unit.enquiry_question ||
+                ks2Unit.enquiry ||
+                'Key Stage 2 Primary Historical Enquiry';
+              return `
+          <div class="ks2-feature-banner" data-stage="ks2" data-unit="${ks2Unit.id}" style="background: ${cfg.gradient}; border-radius: 12px; border: 1.5px solid ${cfg.borderCol}; box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.22); display: flex; flex-direction: column; overflow: hidden; position: relative;">
+            <div style="height: 155px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 32%; position: relative;">
+              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.18) 0%, rgba(15, 23, 42, 0.76) 100%);"></div>
+              <span style="position: absolute; top: 10px; left: 12px; background: ${cfg.badgeBg}; color: #ffffff; padding: 3px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
+                ${cfg.phaseBadge}
+              </span>
+              <span style="position: absolute; bottom: 8px; left: 12px; color: #f8fafc; font-size: 0.74rem; font-weight: 700;">
+                <i class="fa-solid fa-layer-group" style="margin-right: 4px; color: #fcd34d;"></i>${lessonCount} Enquiry Lessons &bull; Textbook, Workbook &amp; Worksheets
+              </span>
+            </div>
 
-          <!-- Right Content Column -->
-          <div class="ks2-hero-content-col" style="flex: 1; padding: 18px 24px; display: flex; flex-direction: column; justify-content: space-between; z-index: 1;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
-                <span style="background: #4f46e5; color: #ffffff; padding: 2px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
-                  Key Stage 2 Primary (Years 5–6)
-                </span>
-                <span style="color: #cbd5e1; font-size: 0.76rem; font-weight: 600;">&bull; 11 Enquiry Lessons &bull; Classroom Textbook, Workbook &amp; Worksheets</span>
+            <div style="flex: 1; padding: 16px 20px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 style="margin: 0 0 5px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.24rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
+                  ${displayTitle}
+                </h3>
+                <p style="margin: 0 0 8px 0; color: #fef3c7; font-size: 0.82rem; font-style: italic; line-height: 1.38;">
+                  "${eqText}"
+                </p>
+                <p style="margin: 0 0 12px 0; color: #e2e8f0; font-size: 0.8rem; line-height: 1.45;">
+                  ${cfg.summary}
+                </p>
               </div>
-              <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
-                World War II &amp; The Home Front (1933–1945)
-              </h3>
-              <p style="margin: 0 0 8px 0; color: #e0e7ff; font-size: 0.84rem; font-style: italic; line-height: 1.4;">
-                "How did World War II transform children's lives in Britain and Europe?"
-              </p>
-              <p style="margin: 0 0 12px 0; color: #cbd5e1; font-size: 0.82rem; line-height: 1.45; max-width: 760px;">
-                A ready-to-teach Key Stage 2 history unit exploring outbreak &amp; gas masks, evacuation, pre-war Jewish life, the Kindertransport &amp; rescuers, the Blitz, rationing, women at war, Bletchley Park, VE Day, and the Windermere Children.
-              </p>
-            </div>
 
-            <div style="display: flex; align-items: center; justify-content: flex-end; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
-              <button type="button" class="btn" onclick="window.launchSubApp('ks2_ww2')" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); color: #ffffff; border: none; padding: 8px 18px; border-radius: 6px; font-weight: 700; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4); transition: transform 0.15s ease;" onmouseover="this.style.transform='translateY(-1px)';" onmouseout="this.style.transform='none';">
-                <span>Explore KS2 Unit</span>
-                <i class="fa-solid fa-arrow-right" style="font-size: 0.74rem;"></i>
-              </button>
+              <div style="display: flex; align-items: center; justify-content: flex-end; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.16);">
+                <button type="button" class="btn" onclick="window.launchSubApp('${ks2Unit.id}')" style="background: ${cfg.btnBg}; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);">
+                  <span>Explore KS2 Unit</span>
+                  <i class="fa-solid fa-arrow-right" style="font-size: 0.74rem;"></i>
+                </button>
+              </div>
             </div>
-          </div>
+          </div>`;
+            })
+            .join('')}
         </div>
       </div>
     `;
@@ -504,7 +543,10 @@ function attachDashboardStageFilter(container) {
     if (navDashboardLabel) navDashboardLabel.textContent = 'KS2 Junior Hub';
     const searchPlaceholder = document.querySelector('#header-search-bar .search-placeholder');
     if (searchPlaceholder) {
-      searchPlaceholder.textContent = 'Search WWII topics, evacuees, Blitz, Bletchley...';
+      searchPlaceholder.textContent =
+        window.currentUnitId === 'ks2_romans'
+          ? 'Search Romans, Celts, Boudicca...'
+          : 'Search KS2 topics, lessons...';
     }
   } else {
     if (document.body) document.body.classList.remove('ks2-mode-active');
@@ -1491,6 +1533,12 @@ export async function renderTimeline() {
   if (unitId === 'ks2_ww2') {
     const { renderKs2TimelineSlider } = await import('./ks2_chronology_slider.js');
     renderKs2TimelineSlider(container);
+    return;
+  }
+
+  if (unitId === 'ks2_romans') {
+    const { renderKs2RomansTimelineSlider } = await import('./ks2_romans_chronology_slider.js');
+    renderKs2RomansTimelineSlider(container);
     return;
   }
 

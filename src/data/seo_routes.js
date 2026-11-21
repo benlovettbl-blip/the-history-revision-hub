@@ -264,7 +264,20 @@ export const SEO_UNIT_ROUTES = [
     priority: '0.85',
   },
 
-  // Key Stage 2: Years 5–6 Primary History
+  // Key Stage 2: Primary History
+  {
+    unitId: 'ks2_romans',
+    slug: 'ks2-romans-in-britain',
+    aliases: ['primary-romans-in-britain', 'romans-ks2'],
+    keyStage: 'Key Stage 2 (Years 3–4 Bridge)',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'The Romans in Britain: Invasion, Resistance & Legacy (55 BC–AD 410)',
+    seoTitle:
+      'KS2 Romans in Britain | Primary History Lessons, Artefacts & Quizzes | The History Revision Hub',
+    metaDescription:
+      'Age-calibrated UK Key Stage 2 Primary History lessons, commercial-safe museum artefacts, dual-scaffolded worksheets, and retrieval quizzes for Roman Britain: Iron Age Celts, Claudius AD 43, Boudicca, Hadrian\'s Wall, Vindolanda, Roman Baths, and Roman Legacy.',
+    priority: '0.85',
+  },
   {
     unitId: 'ks2_ww2',
     slug: 'ks2-world-war-2',

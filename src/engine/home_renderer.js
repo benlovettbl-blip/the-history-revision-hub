@@ -104,6 +104,7 @@ export function renderHomepage() {
 
     if (heroImageUrl) {
       const positionFallbacks = {
+        ks2_romans: 'center 38%',
         ks2_ww2: 'center center',
         monarchy_religion_power: 'center 12%',
         first_british_empire: 'center 35%',
@@ -121,8 +122,8 @@ export function renderHomepage() {
         positionFallbacks[appStore.state.activeUnitData.id] ||
         'center';
       const isKs2Hero =
-        appStore.state.currentUnitId === 'ks2_ww2' ||
-        appStore.state.activeUnitData.id === 'ks2_ww2' ||
+        String(appStore.state.currentUnitId || '').startsWith('ks2_') ||
+        String(appStore.state.activeUnitData.id || '').startsWith('ks2_') ||
         appStore.state.activeUnitData.is_ks2;
       const heroOverlay = isKs2Hero
         ? 'linear-gradient(to bottom, rgba(15,23,42,0.46) 0%, rgba(15,23,42,0.58) 60%, rgba(15,23,42,0.82) 100%)'
@@ -235,7 +236,7 @@ export function renderHomepage() {
         ${renderUnitSynopsis(appStore.state.activeUnitData, activeUnitId)}
         ${cmeRevisionGuideBannerHTML}
         ${medicineVisualGuideBannerHTML}
-        ${isTripUnit ? '' : `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">${activeUnitId === 'ks2_ww2' || appStore.state.activeUnitData?.is_ks2 ? 'Enquiry Lessons (1–11)' : 'Key Topic Lessons'}</h2>`}
+        ${isTripUnit ? '' : `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">${String(activeUnitId || '').startsWith('ks2_') || appStore.state.activeUnitData?.is_ks2 ? `Enquiry Lessons (1–${(appStore.state.activeUnitData?.lessons || []).length || 6})` : 'Key Topic Lessons'}</h2>`}
         ${lessonsHTML}
       </div>
     `;

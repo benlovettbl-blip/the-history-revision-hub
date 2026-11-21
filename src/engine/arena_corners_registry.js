@@ -32,6 +32,7 @@ import { POST_WAR_BRITAIN_CORNERS } from './arena_corners/post_war_britain.js';
 import { WATER_AND_SANITATION_CORNERS } from './arena_corners/water_and_sanitation.js';
 import { AUSTRALIA_CORNERS } from './arena_corners/australia.js';
 import { KS2_WW2_CORNERS } from './arena_corners/ks2_ww2.js';
+import { KS2_ROMANS_CORNERS } from './arena_corners/ks2_romans.js';
 
 export const ARENA_CORNERS_REGISTRY = {
   cme_new: CME_NEW_CORNERS,
@@ -53,6 +54,7 @@ export const ARENA_CORNERS_REGISTRY = {
   water_and_sanitation: WATER_AND_SANITATION_CORNERS,
   australia: AUSTRALIA_CORNERS,
   ks2_ww2: KS2_WW2_CORNERS,
+  ks2_romans: KS2_ROMANS_CORNERS,
 };
 
 /**

@@ -33,6 +33,7 @@ import { POST_WAR_BRITAIN_STANDOFFS } from './arena_standoffs/post_war_britain.j
 import { WATER_AND_SANITATION_STANDOFFS } from './arena_standoffs/water_and_sanitation.js';
 import { AUSTRALIA_STANDOFFS } from './arena_standoffs/australia.js';
 import { KS2_WW2_STANDOFFS } from './arena_standoffs/ks2_ww2.js';
+import { KS2_ROMANS_STANDOFFS } from './arena_standoffs/ks2_romans.js';
 
 export const ARENA_STANDOFF_REGISTRY = {
   cme_new: CME_NEW_STANDOFFS,
@@ -54,6 +55,7 @@ export const ARENA_STANDOFF_REGISTRY = {
   water_and_sanitation: WATER_AND_SANITATION_STANDOFFS,
   australia: AUSTRALIA_STANDOFFS,
   ks2_ww2: KS2_WW2_STANDOFFS,
+  ks2_romans: KS2_ROMANS_STANDOFFS,
 };
 
 /**

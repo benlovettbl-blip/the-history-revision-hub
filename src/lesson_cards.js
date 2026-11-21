@@ -544,7 +544,10 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             }
             cardPos = String(cardPos || 'center').replace(/\bcentre\b/gi, 'center');
 
-            const useCoverFit = Boolean(lesson.card_image) || unitData?.id === 'ks2_ww2' || currentUnitId === 'ks2_ww2';
+            const useCoverFit =
+            Boolean(lesson.card_image) ||
+            Boolean(unitData?.is_ks2) ||
+            String(unitData?.id || currentUnitId || '').startsWith('ks2_');
             topMediaHTML = `
               <div style="position: relative; width: 100%; height: 112px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
                 ${useCoverFit ? '' : `<div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(12px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
@@ -655,12 +658,13 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
 
           if (!cardPos) cardPos = 'center center';
           cardPos = String(cardPos).replace(/\bcentre\b/gi, 'center');
+          const hasExplicitCardPos = Boolean(lesson.card_position || lesson.card_image_position);
           const useCoverFit = Boolean(lesson.card_image) || isKs2UnitCards;
 
           topMediaHTML = `
             <div style="position: relative; width: 100%; height: 112px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
               ${useCoverFit ? '' : `<div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(12px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
-              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 3px 10px rgba(0,0,0,0.45));'}" />
+              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}${hasExplicitCardPos ? ' !important' : ''}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 3px 10px rgba(0,0,0,0.45));'}" />
               <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
                 ${overlayBadge}
               </span>
@@ -715,7 +719,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                 ${
                   displayEnquiry
                     ? `
-                  <p class="lesson-enquiry-clamp" style="margin: 0; color: #475569; font-weight: 400; font-size: 0.79rem; line-height: 1.38; font-style: italic;">
+                  <p class="${isKs2UnitCards ? '' : 'lesson-enquiry-clamp'}" style="margin: 0; color: #475569; font-weight: 400; font-size: 0.79rem; line-height: 1.38; font-style: italic;">
                     ${displayEnquiry}
                   </p>
                 `

@@ -219,6 +219,11 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       let unitTitle = unitDataObj.title
         ? unitDataObj.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
         : 'Unit';
+      if (unitId === 'ks2_romans') {
+        unitTitle = 'The Romans in Britain';
+      } else if (unitId === 'ks2_ww2') {
+        unitTitle = 'Britain at War (WWII)';
+      }
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
         { label: unitTitle, view: 'lessons', unit: unitId },
@@ -779,7 +784,7 @@ export function renderLesson(lesson) {
                     `
                         : ''
                     }
-                    <a href="/pdfs/ks2_ww2_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete 28-page Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
+                    <a href="/pdfs/${unitId || 'ks2_ww2'}_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
                     <button type="button" class="btn btn-ks2-quiz-jump" onclick="if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && !window.consolidateStations['${lesson.id}'].isOpen){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } else if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && window.consolidateStations['${lesson.id}'].mode !== 'quiz'){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } const qb = document.getElementById('tab-btn-quiz-${lesson.id}'); if(qb) qb.scrollIntoView({ behavior: 'smooth', block: 'start' });" style="padding: 6px 12px; font-size: 0.88rem; background: #fffbeb; color: #92400e; border: 1.5px solid #fde68a; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(146, 64, 14, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump straight to the 5-Question Lesson Quiz"><i class="fa-solid fa-circle-question" style="color: #d97706;"></i> <span>Lesson Quiz</span></button>
                   `
         : ''
@@ -7508,6 +7513,7 @@ export function renderLesson(lesson) {
           'second_british_empire',
           'water_and_sanitation',
           'australia',
+          'ks2_romans',
           'ks2_ww2',
         ];
 
