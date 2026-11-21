@@ -1457,5 +1457,78 @@ export const SCHEMES_OF_WORK_DATA = {
         ]
       }
     ]
+  },
+  "ks2_romans": {
+    "unitId": "ks2_romans",
+    "yearGroup": "Key Stage 2",
+    "keyStage": "KS2",
+    "title": "The Romans in Britain — Invasion, Resistance & Legacy (55 BC–AD 410)",
+    "subtitle": "Iron Age Hillforts & Roundhouses, Emperor Claudius's AD 43 Invasion, Queen Boudicca's Iceni Rebellion, Hadrian's Wall & Diverse Soldiers, Roman Towns & Baths, and Rome's Lasting Legacy",
+    "overarchingEnquiry": "How did the Roman Empire conquer Britain and change life on our island forever?",
+    "textbookPdf": "/pdfs/ks2_romans_textbook.pdf",
+    "sowPdf": "/pdfs/ks2_romans_scheme_of_work.pdf",
+    "workbookPdf": "/pdfs/ks2_romans_pupil_workbook.pdf",
+    "enquiries": [
+      {
+        "num": 1,
+        "title": "Celtic Britain Before the Romans (c. 500 BC – AD 43)",
+        "enquiryQuestion": "Who were the Iron Age Celts, and how did they live before the Roman legions arrived?",
+        "disciplinaryFocus": "Evidential Understanding & Challenging Stereotypes",
+        "sources": "Maiden Castle Ramparts (Dorset); Butser Roundhouse; Snettisham Great Torc; Battersea Shield",
+        "keyFigure": "Iron Age Celtic Craftworkers & Druids",
+        "figureRole": "Tribal Communities of Pre-Roman Britain (Iceni, Catuvellauni, Brigantes)",
+        "vocabulary": ["Tribe", "Hillfort", "Roundhouse", "Wattle and Daub", "Torc", "Druids"]
+      },
+      {
+        "num": 2,
+        "title": "Why Did Emperor Claudius Invade Britain in AD 43?",
+        "enquiryQuestion": "Why did Emperor Claudius send 40,000 Roman soldiers and war elephants across the sea in AD 43?",
+        "disciplinaryFocus": "Causation & Military Motivation",
+        "sources": "Berlin Marble Bust of Claudius; Richborough Fort; Testudo Formation; Cassius Dio Book 60",
+        "keyFigure": "Emperor Claudius & Caratacus",
+        "figureRole": "Roman Emperor (AD 41–54) & Catuvellauni Resistance Leader",
+        "vocabulary": ["Emperor", "Legionary", "Auxiliary", "Testudo", "Scutum", "Province"]
+      },
+      {
+        "num": 3,
+        "title": "Boudicca's Rebellion — Why Did the Iceni Rise Up? (AD 60–61)",
+        "enquiryQuestion": "Why did Queen Boudicca lead a huge rebellion against Rome in AD 60, and why did it fail?",
+        "disciplinaryFocus": "Cause, Consequence & Source Provenance",
+        "sources": "Tacitus Annals 14.31; Colchester Roman Wall; Red Burnt Destruction Layer; London Wall",
+        "keyFigure": "Queen Boudicca of the Iceni",
+        "figureRole": "Leader of the AD 60–61 British Uprising Against Rome",
+        "vocabulary": ["Rebellion", "Ally", "Iceni", "Governor", "Destruction Layer", "Bias"]
+      },
+      {
+        "num": 4,
+        "title": "Hadrian's Wall & Diverse Soldiers on the Frontier (AD 122–400)",
+        "enquiryQuestion": "Why did Emperor Hadrian build a 73-mile stone wall across northern Britain, and who guarded it?",
+        "disciplinaryFocus": "Similarity, Difference & Diverse Frontier Voices",
+        "sources": "Milecastle 39 & Housesteads Fort; Claudia Severa Vindolanda Tablet 291; Tombstone of Regina (Arbeia)",
+        "keyFigure": "Emperor Hadrian, Claudia Severa, Regina & Barates",
+        "figureRole": "Frontier Builders, Officer's Wife at Vindolanda & Multicultural Couple at South Shields",
+        "vocabulary": ["Frontier", "Milecastle", "Garrison", "Vindolanda Tablets", "Moorish", "Aramaic"]
+      },
+      {
+        "num": 5,
+        "title": "Life in Roman Towns — Roads, Baths & Villas",
+        "enquiryQuestion": "How did Roman roads, bathhouses, and stone towns transform everyday life in Britain?",
+        "disciplinaryFocus": "Change & Continuity (Town vs. Countryside)",
+        "sources": "Blackstone Edge Roman Road; Great Bath & Lead Curse Tablet (Aquae Sulis); Fishbourne & Chedworth Hypocaust",
+        "keyFigure": "Romano-British Citizens & Rural Farmers",
+        "figureRole": "Townspeople of Aquae Sulis & Countryside Roundhouse Communities",
+        "vocabulary": ["Camber", "Forum", "Basilica", "Aqueduct", "Hypocaust", "Mosaic"]
+      },
+      {
+        "num": 6,
+        "title": "Farewell to the Legions — What Was Rome's Lasting Legacy? (AD 410 & Beyond)",
+        "enquiryQuestion": "Why did the Roman army leave Britain around AD 410, and what did the Romans leave behind for us today?",
+        "disciplinaryFocus": "Historical Significance & Long-Term Legacy",
+        "sources": "Gold Solidus of Honorius & Zosimus 6.10 (AD 410); Hoxne & Mildenhall Hoards; York Multangular Tower",
+        "keyFigure": "Emperor Honorius",
+        "figureRole": "Western Roman Emperor Who Told British Towns to Defend Themselves (AD 410)",
+        "vocabulary": ["Hoard", "Legacy", "Castra", "Latin", "Roman Numerals", "Calendar"]
+      }
+    ]
   }
 };

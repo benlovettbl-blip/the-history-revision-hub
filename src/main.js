@@ -418,7 +418,9 @@ window.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([
     loadDatabaseIndex(),
     bootTargetUnit ? ensureUnitLoaded(bootTargetUnit) : Promise.resolve(),
-    bootTargetUnit === 'ks2_ww2' ? import('./engine/ks2_guidance.js') : Promise.resolve(),
+    String(bootTargetUnit || '').startsWith('ks2_')
+      ? import('./engine/ks2_guidance.js')
+      : Promise.resolve(),
   ]);
 
   // Register Ctrl+K / '/' search shortcut immediately; full curriculum index builds in idle time

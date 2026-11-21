@@ -2966,8 +2966,8 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
         <div style="display: flex; align-items: center; gap: 8px;">
           <i class="fa-solid fa-lightbulb" style="color: #facc15;"></i>
           <span><strong>${isStaffModeActive() ? 'Teacher Tip:' : 'Print Tip:'}</strong> ${
-            String(htmlUrl || '').includes('ks2_ww2') ||
-            window.currentUnitId === 'ks2_ww2' ||
+            String(htmlUrl || '').includes('ks2_') ||
+            String(window.currentUnitId || '').startsWith('ks2_') ||
             document.body.classList.contains('ks2-mode-active')
               ? 'All KS2 enquiry worksheets, pupil workbooks, textbooks, and schemes of work are formatted for A4 Portrait printing. Ensure <em>"Background graphics"</em> is checked in your browser\'s print dialog.'
               : 'The print stylesheet automatically handles page sizing (A3 Landscape for Placemats, A4 Portrait for Workouts, A4 Landscape for Trifolds). Ensure <em>"Background graphics"</em> is checked in your browser\'s print dialog.'
@@ -3413,6 +3413,11 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       group: 'Key Stage 3',
     },
     // Key Stage 2
+    {
+      id: 'ks2_romans',
+      title: 'KS2: The Romans in Britain (55 BC–AD 410)',
+      group: 'Key Stage 2',
+    },
     {
       id: 'ks2_ww2',
       title: 'KS2: World War II & The Home Front (1933–1945)',

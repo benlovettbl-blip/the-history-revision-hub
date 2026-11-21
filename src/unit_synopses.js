@@ -230,6 +230,19 @@ export const unitSynopses = {
   },
 
   // === KEY STAGE 2 CURRICULUM UNITS ===
+  ks2_romans: {
+    period: '55 BC – AD 410',
+    synopsis:
+      "How did the mighty Roman Empire conquer Britain and transform life on our island forever? Step inside smoky thatched Iron Age roundhouses and giant earth hillforts before marching ashore in AD 43 alongside 40,000 Roman legionaries and Emperor Claudius's war elephants. Witness Queen Boudicca's fiery rebellion that burned Londinium into red clay, read real 2,000-year-old wooden ink letters from Vindolanda beside Hadrian's 73-mile stone wall, explore Aquae Sulis steam baths and hypocaust floors, and uncover the Roman roads, cities, calendar, and Latin words still shaping Britain today.",
+    tags: [
+      'Iron Age Celts & Hillforts',
+      'Claudius & AD 43 Invasion',
+      "Boudicca's Rebellion (AD 60–61)",
+      "Hadrian's Wall & Vindolanda",
+      'Roman Roads, Baths & Villas',
+      'AD 410 & Roman Legacy Today',
+    ],
+  },
   ks2_ww2: {
     period: '1933 – 1945',
     synopsis:

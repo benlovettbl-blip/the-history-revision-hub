@@ -16,6 +16,7 @@ try {
 }
 
 const units = [
+  'ks2_romans',
   'ks2_ww2',
   'medieval_england',
   'monarchy_religion_power',

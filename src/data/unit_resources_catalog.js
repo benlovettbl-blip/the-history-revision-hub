@@ -33,6 +33,63 @@ export const UNIT_RESOURCES_CATALOG = {
   // ============================================================================
   // KEY STAGE 2
   // ============================================================================
+  ks2_romans: {
+    unitTitle: 'The Romans in Britain: Invasion, Resistance & Legacy (55 BC–AD 410)',
+    specSubtitle: 'Key Stage 2 History • Bridge Years 3–4 (Dual-Scaffolded Y3–5) • 6 Enquiries',
+    stage: 'ks2',
+    textbook: {
+      title: 'The Romans in Britain Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '12 Pages',
+      desc: 'Wide-margin primary reading anthology across all 6 enquiries, Chronological Spine, and Phonetic Vocabulary Bank.',
+      htmlUrl: '/units/ks2_romans/textbook.html',
+      pdfUrl: '/pdfs/ks2_romans_textbook.pdf',
+      downloadName: 'KS2_Romans_in_Britain_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'The Romans in Britain Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Dual-scaffolded pupil workbook across Enquiries 1–6 (Foundation Word Banks + Scholar Challenges) and Historian Certificate.',
+      htmlUrl: '/units/ks2_romans/pupil_workbook.html',
+      pdfUrl: '/pdfs/ks2_romans_pupil_workbook.pdf',
+      downloadName: 'KS2_Romans_in_Britain_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Romans in Britain Retrieval Companion (24 Questions)',
+      label: 'Retrieval Companion',
+      pages: '4 Pages',
+      questionsCount: 24,
+      desc: '4 core recall questions per enquiry across all 6 lessons (pp. 2–3) plus Master Marking Bank & Vocabulary Vault (p. 4).',
+      htmlUrl: '/units/ks2_romans/quiz_pack.html',
+      pdfUrl: '/pdfs/ks2_romans_retrieval_companion.pdf',
+      downloadName: 'KS2_Romans_in_Britain_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Primary Teacher Guide & 6-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 6-lesson primary scheme of work, LKS2/UKS2 differentiation guide, misconceptions, and answer keys.',
+      htmlUrl: '/units/ks2_romans/ks2_romans_scheme_of_work.html',
+      pdfUrl: '/pdfs/ks2_romans_scheme_of_work.pdf',
+      downloadName: 'KS2_Romans_in_Britain_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
+    timelineUrl: '/units/ks2_romans/timeline_slider.html',
+    worksheets: [
+      { id: 'L01', label: 'Lesson 1: Celtic Britain Before the Romans', htmlUrl: '/units/ks2_romans/worksheets/lesson_01_celtic_britain_worksheet.html', pdfUrl: '/pdfs/ks2_romans/lesson_01_celtic_britain_worksheet.pdf' },
+      { id: 'L02', label: 'Lesson 2: Claudius & The AD 43 Invasion', htmlUrl: '/units/ks2_romans/worksheets/lesson_02_claudius_invasion_worksheet.html', pdfUrl: '/pdfs/ks2_romans/lesson_02_claudius_invasion_worksheet.pdf' },
+      { id: 'L03', label: "Lesson 3: Boudicca's Rebellion (AD 60–61)", htmlUrl: '/units/ks2_romans/worksheets/lesson_03_boudicca_rebellion_worksheet.html', pdfUrl: '/pdfs/ks2_romans/lesson_03_boudicca_rebellion_worksheet.pdf' },
+      { id: 'L04', label: "Lesson 4: Hadrian's Wall & Frontier Soldiers", htmlUrl: '/units/ks2_romans/worksheets/lesson_04_hadrians_wall_worksheet.html', pdfUrl: '/pdfs/ks2_romans/lesson_04_hadrians_wall_worksheet.pdf' },
+      { id: 'L05', label: 'Lesson 5: Roman Towns, Roads, Baths & Villas', htmlUrl: '/units/ks2_romans/worksheets/lesson_05_roman_towns_baths_worksheet.html', pdfUrl: '/pdfs/ks2_romans/lesson_05_roman_towns_baths_worksheet.pdf' },
+      { id: 'L06', label: "Lesson 6: AD 410 & Rome's Lasting Legacy", htmlUrl: '/units/ks2_romans/worksheets/lesson_06_roman_legacy_worksheet.html', pdfUrl: '/pdfs/ks2_romans/lesson_06_roman_legacy_worksheet.pdf' },
+    ],
+  },
+
   ks2_ww2: {
     unitTitle: 'World War II & The Home Front (1933–1945)',
     specSubtitle: 'Key Stage 2 History • Years 5 & 6 • 11 Chronological Enquiries',

@@ -264,6 +264,84 @@ const KS3_MARKING_DATA = {
       },
     ],
   },
+  ks2_romans: {
+    unitTitle: 'The Romans in Britain — Invasion, Resistance & Legacy (55 BC–AD 410)',
+    subtitle: '24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)',
+    enquiries: [
+      {
+        number: 1,
+        title: 'Enquiry 01: Celtic Britain Before the Romans (c. 500 BC – AD 43)',
+        shortTitle: 'Celtic Britain',
+        enquiryFocus: 'Who were the Iron Age Celts, and how did they live before the Roman legions arrived?',
+        questions: [
+          { num: 1, tier: 'Recall', q: 'What mixture of woven sticks, clay, mud, and straw sealed Iron Age roundhouse walls?', a: 'Wattle and daub.', exp: 'Woven hazel branches (wattle) plastered with clay, straw, and animal dung (daub) kept roundhouses warm and windproof.' },
+          { num: 2, tier: 'Explain', q: 'Why did Iron Age builders give thatched roundhouse roofs no chimney hole at the top?', a: 'A chimney hole would pull air upwards like a wind tunnel and set the dry straw roof on fire.', exp: 'Experimental archaeology at Butser Ancient Farm proved smoke filtered safely out through the thatch while preserving smoked meat.' },
+          { num: 3, tier: 'Recall', q: 'What was a Celtic "torc", and what did wearing one show?', a: 'A heavy twisted neck ring of gold, silver, or bronze worn by rulers and warriors to show status and wealth.', exp: 'The Snettisham Great Torc in Norfolk was twisted from eight ropes of 64 gold and silver threads weighing over a kilogram.' },
+          { num: 4, tier: 'Recall', q: 'In which two years did Julius Caesar sail across the Channel to Britain before returning to Gaul?', a: '55 BC and 54 BC.', exp: 'Caesar landed in Kent twice and fought British chariots, but storms and rebellions in Gaul meant Rome waited 97 years to conquer Britain.' },
+        ],
+      },
+      {
+        number: 2,
+        title: 'Enquiry 02: Why Did Emperor Claudius Invade Britain in AD 43?',
+        shortTitle: 'Claudius AD 43',
+        enquiryFocus: 'Why did Emperor Claudius send 40,000 Roman soldiers and war elephants across the sea in AD 43?',
+        questions: [
+          { num: 5, tier: 'Explain', q: 'Give two reasons why Emperor Claudius launched a full invasion of Britain in AD 43.', a: 'Claudius needed a famous military triumph to win respect in Rome, and Rome wanted Britain’s tin, silver, lead, iron, and grain.', exp: 'Powerful Roman senators doubted Claudius because he had never led an army, while British metals and taxes promised rich rewards.' },
+          { num: 6, tier: 'Recall', q: 'Where in Kent did General Aulus Plautius land 40,000 Roman soldiers in spring AD 43?', a: 'Richborough in Kent (followed by victory at the two-day Battle of the River Medway).', exp: 'Four Roman legions and 20,000 auxiliary troops built defensive ditches at Richborough before crossing the Medway and Thames.' },
+          { num: 7, tier: 'Detail', q: 'What was the Roman "testudo" (tortoise) formation, and how did it protect legionaries?', a: 'Soldiers locked rectangular shields (scuta) in front and overhead like a tortoise shell to block spears, stones, and arrows.', exp: 'Full-time Roman legionaries practised shield-wall drills daily and wore flexibleoverlapping iron strip armour (lorica segmentata).' },
+          { num: 8, tier: 'Recall', q: 'What astonishing animals did Claudius bring when marching into Camulodunum (Colchester)?', a: 'War elephants.', exp: 'Eleven British kings surrendered at Camulodunum, Britain became the Roman province of Britannia, and Caratacus fled west to Wales.' },
+        ],
+      },
+      {
+        number: 3,
+        title: "Enquiry 03: Boudicca's Rebellion — Why Did the Iceni Rise Up? (AD 60–61)",
+        shortTitle: "Boudicca's Revolt",
+        enquiryFocus: 'Why did Queen Boudicca lead a huge rebellion against Rome in AD 60, and why did it fail?',
+        questions: [
+          { num: 9, tier: 'Explain', q: 'How did Roman officials break their promise to the Iceni after King Prasutagus died in AD 60?', a: 'Officials seized Iceni lands, demanded loans back, flogged Queen Boudicca, and attacked her two daughters.', exp: 'Prasutagus had left half his kingdom to Emperor Nero trusting Rome to protect his family, sparking fury among the Iceni and Trinovantes.' },
+          { num: 10, tier: 'Recall', q: 'Which three Roman towns did Boudicca’s rebel army burn down, leaving a red burnt clay layer underground?', a: 'Camulodunum (Colchester), Londinium (London), and Verulamium (St Albans).', exp: 'Archaeologists digging beneath all three modern cities still uncover the 40cm "Boudiccan Destruction Horizon" of red ash and melted coins.' },
+          { num: 11, tier: 'Explain', q: 'How did Governor Suetonius Paulinus defeat Boudicca’s much larger army at the Battle of Watling Street?', a: 'He chose a narrow valley between thick woods so rebels could not surround his 10,000 legionaries, threw javelins, and advanced in wedges.', exp: 'Tight Roman discipline turned the rebels’ huge numbers against them when retreating warriors were trapped against their own family wagons.' },
+          { num: 12, tier: 'Detail', q: 'Why do historians read Roman writer Tacitus carefully when studying Queen Boudicca?', a: 'Because Iceni Britons left no written books, and Tacitus was the son-in-law of Roman general Agricola.', exp: 'Even though Tacitus wrote from a Roman viewpoint, he still admitted Roman greed and cruelty caused the rebellion.' },
+        ],
+      },
+      {
+        number: 4,
+        title: "Enquiry 04: Hadrian's Wall & Diverse Soldiers on the Frontier (AD 122–400)",
+        shortTitle: "Hadrian's Wall",
+        enquiryFocus: 'Why did Emperor Hadrian build a 73-mile stone wall across northern Britain, and who guarded it?',
+        questions: [
+          { num: 13, tier: 'Recall', q: 'In what year did Emperor Hadrian order his 73-mile frontier wall built across northern Britain?', a: 'AD 122 (stretching 80 Roman miles from Wallsend on the River Tyne to Bowness-on-Solway).', exp: 'Guarded gatehouses called Milecastles stood every Roman mile alongside 16 large forts like Housesteads to control raids and trade taxes.' },
+          { num: 14, tier: 'Detail', q: 'What everyday items were written on the 2,000-year-old wooden ink letters found at Vindolanda Fort?', a: 'Parcels of woollen socks, sandals, and underpants, duty rosters, and Claudia Severa’s birthday party invitation.', exp: 'Claudia Severa’s wooden tablet to her sister-friend Sulpicia Lepidina contains the earliest surviving Latin handwriting by a woman!' },
+          { num: 15, tier: 'Detail', q: 'Name two distant regions outside Britain from which auxiliary soldiers came to guard Hadrian’s Wall.', a: 'Any two from: North Africa (Aurelian Moors at Burgh-by-Sands), Syria (Hamian archers / Barates of Palmyra), Batavia, Gaul, Spain, or Dacia.', exp: 'Roman Britain’s northern frontier brought together soldiers, merchants, and families from three continents.' },
+          { num: 16, tier: 'Recall', q: 'Who were Regina and Barates on the carved Roman tombstone found at Arbeia Fort (South Shields)?', a: 'Regina was a freed Catuvellauni British woman and Barates was her husband from Palmyra in Syria.', exp: 'Barates carved her tombstone in both Latin and Aramaic script, showing multicultural family life in Roman Britain.' },
+        ],
+      },
+      {
+        number: 5,
+        title: 'Enquiry 05: Life in Roman Towns — Roads, Baths & Villas',
+        shortTitle: 'Towns & Baths',
+        enquiryFocus: 'How did Roman roads, bathhouses, and stone towns transform everyday life in Britain?',
+        questions: [
+          { num: 17, tier: 'Explain', q: 'Why did Roman engineers curve (camber) stone roads and dig ditches along both sides?', a: 'So rainwater drained straight off the road into the side ditches instead of turning the highway into deep mud.', exp: 'Surveyors used a wooden groma to lay 10,000 miles of straight highways linking bustling market forums and basilicas.' },
+          { num: 18, tier: 'Recall', q: 'What was the Roman name for Bath, and what were the thin lead sheets thrown into its hot spring?', a: 'Aquae Sulis; lead curse tablets asking goddess Sulis Minerva to punish thieves who stole cloaks or coins.', exp: 'Bathers exercised, visited warm and hot steam rooms (tepidarium and caldarium), and scraped oil off with a curved bronze strigil.' },
+          { num: 19, tier: 'Recall', q: 'How did a Roman "hypocaust" system heat wealthy stone villas from underneath?', a: 'A furnace pushed hot air between stacks of clay tiles beneath raised mosaic floors and up hollow wall flues.', exp: 'Palaces like Fishbourne in Sussex featured hypocaust underfloor heating and floors made from thousands of tiny stone tesserae.' },
+          { num: 20, tier: 'Explain', q: 'Did everyone in Roman Britain live in a stone villa with mosaic floors?', a: 'No — nearly 9 out of 10 Britons still lived and farmed in countryside roundhouses, though they paid Roman taxes and bought Roman pottery.', exp: 'Historians spot both dramatic change in wealthy towns and strong continuity across rural villages.' },
+        ],
+      },
+      {
+        number: 6,
+        title: "Enquiry 06: Farewell to the Legions — What Was Rome's Lasting Legacy? (AD 410 & Beyond)",
+        shortTitle: 'Legacy AD 410',
+        enquiryFocus: 'Why did the Roman army leave Britain around AD 410, and what did the Romans leave behind for us today?',
+        questions: [
+          { num: 21, tier: 'Explain', q: 'Why were Roman legions called away from Britain around AD 407–410, and what did Emperor Honorius tell British towns?', a: 'Picts, Scotti, and Saxons raided Britain while enemy armies attacked Italy; in AD 410 Honorius told British towns to defend themselves.', exp: 'Rome needed every soldier to defend the heart of the Western Empire, ending nearly 370 years of Roman military rule in Britain.' },
+          { num: 22, tier: 'Recall', q: 'Why did families bury treasures like the Hoxne Hoard (15,000 coins and silver pepper pots) around AD 407–410?', a: 'To hide their family savings safely underground during raids, intending to dig them back up when peace returned.', exp: 'Because the owners never returned, archaeologists recovered gold bracelets, silver spoons, and coins of Emperor Honorius in Suffolk in 1992.' },
+          { num: 23, tier: 'Detail', q: 'What does a modern British town name ending in "-chester", "-caster", or "-cester" tell us?', a: 'It grew out of a Roman fort or walled camp (from the Latin word "castra").', exp: 'Manchester, Lancaster, Chester, Cirencester, Gloucester, and Winchester all stand on Roman fortresses or walled towns!' },
+          { num: 24, tier: 'Recall', q: 'Name three everyday things in modern Britain that are part of Rome’s lasting legacy.', a: 'Any three from: London and straight A-roads (Watling Street/Fosse Way), Latin ABC alphabet and words, Roman numerals, 12-month calendar (July/August), Christianity, or foods like apples, pears, onions, cabbages, and rabbits.', exp: 'Even after stone bathhouses crumbled, Roman ideas, routes, language, and cities shaped Britain permanently.' },
+        ],
+      },
+    ],
+  },
   ks2_ww2: {
     unitTitle: 'World War II & The Home Front (1933–1945)',
     subtitle: '44-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–11)',
@@ -427,17 +505,17 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
             ${data.unitTitle}
           </h1>
           <p style="margin: 6px 0 0 0; font-size: 0.92rem; color: #94a3b8; max-width: 650px;">
-            ${isKs2 ? 'Check all 44 retrieval questions across Enquiries 01–11 (4-Page Quiz Pack & Pupil Workbook pp. 25–26) with verified answers and clear explanations.' : 'Self-check your printed booklet homework questions with verified model answers and causal explanations.'}
+            ${isKs2 ? `Check all ${totalQuestions || 24} retrieval questions across Enquiries 01–${String(data.enquiries.length || 6).padStart(2, '0')} with verified answers and clear explanations.` : 'Self-check your printed booklet homework questions with verified model answers and causal explanations.'}
           </p>
         </div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
           ${
             isKs2
               ? `
-          <a href="/units/ks2_ww2/textbook.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
-            <i class="fa-solid fa-book-open" style="color: #38bdf8;"></i> <span>16-Page Textbook</span>
+          <a href="/units/${unitId}/textbook.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+            <i class="fa-solid fa-book-open" style="color: #38bdf8;"></i> <span>${unitId === 'ks2_romans' ? '12-Page Textbook' : '16-Page Textbook'}</span>
           </a>
-          <a href="/units/ks2_ww2/quiz_pack.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+          <a href="${unitId === 'ks2_romans' ? '/units/ks2_romans/retrieval_companion.html' : '/units/ks2_ww2/quiz_pack.html'}" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
             <i class="fa-solid fa-list-check" style="color: #fbbf24;"></i> <span>4-Page Quiz Pack</span>
           </a>
           `
