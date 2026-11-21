@@ -812,4 +812,48 @@ export const PEDAGOGY_RESEARCH_BANK = [
       },
     ],
   },
+  {
+    id: 'dual_coding_interactive_concept_widgets_send',
+    author: 'Richard E. Mayer, Allan Paivio & Oliver Caviglioli',
+    affiliation: 'UC Santa Barbara / Western University / WalkThrus',
+    category: 'Dual Coding & SEND Scaffolding',
+    categoryBadge: 'badge-sky',
+    title:
+      '5/5 Stage Visual Anchors: The "3 + 2" Hybrid of Archival Plates & Interactive Concept SVGs',
+    subtitle:
+      'Eliminating Bare Text Walls, Portrait Fatigue, and Abstract Jargon Barriers for Lower-Attaining & SEND Learners',
+    overview:
+      'When lower-attaining or SEND pupils encounter abstract constitutional or theological concepts—such as Elizabeth I’s 1559 "Via Media", Tudor dynastic succession, or parliamentary sovereignty—unillustrated prose forces working memory to construct mental models solely from dense verbal tokens. Grounded in Allan Paivio’s Dual Coding Theory, Richard Mayer’s Spatial Contiguity and Coherence Principles, and Oliver Caviglioli’s graphic-organiser design, The History Revision Hub equips all 5 narrative stages per lesson using a "3 + 2" hybrid: 3 commercial-cleared Public Domain archival plates paired with 1–2 interactive SVG Concept Widgets and Before/After Curtain Sliders.',
+    analysisHeading: 'The Classroom Dilemma: Bare Prose Walls vs. Static "Portrait Fatigue"',
+    analysisText:
+      'Secondary history resources frequently fall into one of two traps: either leaving middle narrative blocks unillustrated as intimidating walls of text, or filling every paragraph with repetitive oil portraits that offer zero conceptual explanation ("portrait fatigue") while creating copyright liabilities under commercial licensing. Lower-attaining readers do not fail to understand the Reformation because they lack another portrait of a bishop; they struggle because they cannot picture concrete differences between a gilded Latin Catholic sanctuary, Elizabeth’s compromise English Prayer Book church, and a whitewashed Puritan preaching hall.',
+    evidenceHeading: 'What Cognitive & Multimedia Research Proves',
+    evidenceText:
+      'Paivio (1986) demonstrates that verbal and visual channels process information independently and additively when concrete visual schemas accompany text. Mayer and Moreno (2003) prove through the Spatial Contiguity and Segmenting Principles that placing interactive, user-paced conceptual graphics directly alongside short 100-word text segments significantly boosts transfer and comprehension—especially for low-prior-knowledge learners—whereas decorative, non-explanatory images add extraneous load. Caviglioli (2019) further shows that structured continuums (spectrum sliders), comparison matrices (profile decks), and proportional bars translate invisible abstractions into spatial relationships.',
+    applicationHeading: 'Revision Hub Architecture: Commercial-Cleared Plates & Reusable SVG Widgets',
+    implementation: [
+      '5/5 Narrative Stage Coverage ("3 + 2" Hybrid): Pairs 3–4 authentic Public Domain / CC-BY / CC-BY-SA archival plates with 1–2 interactive Concept Widgets (spectrum_slider, profile_deck, power_seesaw) or authentic Slide-Compare curtain sliders so zero stages remain bare text walls.',
+      'Concrete Iconographic Spectrum Sliders: Translates abstract spectrums (e.g., Strict Catholic <-> Elizabeth’s Middle Way <-> Strict Puritan) into 4 concrete visual cards (Leader, Language, Church Interior, Vestments) that flip dynamically as teachers or pupils click or slide.',
+      'Authentic Before/After Curtain Sliders: Allows pupils to drag a live curtain across dimension-matched photographs (e.g., ornate Counter-Reformation Catholic sanctuary vs. whitewashed Protestant Reformation pulpit nave).',
+      '100% Commercial Copyright Integrity: Enforces commercial_use_permitted: true across all Layer 2 archival assets in master_rights_database.json while authoring interactive Concept SVGs as 100% original Hub IP.',
+    ],
+    protocolHeading: 'Practical Classroom Protocol for History Teachers',
+    teacherProtocols: [
+      '1. Enlarge on the Whiteboard Before Reading: Click "Enlarge" on the Concept Widget or Slide-Compare curtain before reading an abstract stage aloud so lower-attaining pupils hold a concrete visual anchor in working memory.',
+      '2. Cold-Call Across the Spectrum: Drag the spectrum slider between extremes (e.g., Catholic vs. Puritan) and ask pupils to spot which two concrete features Elizabeth kept or rejected in her Middle Way.',
+      '3. Connect Visual Traits to Stage Writing: Direct pupils from the widget’s causal takeaway strip straight into their full-sentence Verso Stage Question response.',
+    ],
+    citations: [
+      'Caviglioli, O. (2019). Dual Coding With Teachers. John Catt Educational.',
+      'Mayer, R. E., & Moreno, R. (2003). Nine ways to reduce cognitive load in multimedia learning. Educational Psychologist, 38(1), pp. 43–52.',
+      'Paivio, A. (1986). Mental Representations: A Dual Coding Approach. Oxford University Press.',
+    ],
+    links: [
+      {
+        title: 'EEF: Special Educational Needs in Mainstream Schools Guidance Report',
+        url: 'https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send',
+        displayText: 'educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send',
+      },
+    ],
+  },
 ];

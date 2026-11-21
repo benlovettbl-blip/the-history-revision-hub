@@ -64,7 +64,7 @@ Before executing any specialized publishing or generation workflow, read the mat
    - Do Now starters MUST NEVER test new content from the current lesson. Retrieve strictly from: (a) Immediate Previous Lesson, (b) Earlier in Current Unit, and (c) Synoptic Prior Topics.
 2. **3-Layer Digital Lesson Architecture:**
    - **Layer 1:** 5 structured narrative blocks with paragraph indexing (`[Act.Para]`—index paragraphs only, never individual sentences) and audio read-aloud support.
-   - **Layer 2:** 2–3 authentic visual support plates flanking narrative prose (`.narrative-visual-row`, alternating left/right, caption + alt text only, zero `image_context` clutter).
+   - **Layer 2 (5/5 Dual-Coding Coverage — "3 + 2" Hybrid):** Every narrative block (`5/5`) should provide a side visual anchor (`.narrative-visual-row`, `slide_compare`, or `concept_widget`, alternating left/right, zero `image_context` clutter)—typically pairing 3–4 commercial-cleared archival plates with 1–2 interactive `concept_widget` / `slide_compare` diagrams on abstract conceptual stages to scaffold SEND and lower-attaining readers without portrait fatigue.
    - **Layer 3:** 5 rotated primary archival sources (`Source A`–`Source E`, sequential single letters, zero `A1`/`A2` sub-indices; maps labeled `Reference Map:` / `Map A:`) in collapsible drawers across varied media, rotating disciplinary badges, natural 1–2 sentence model answers, and targeted **Hinge Questions**. Zero formulaic 3-part provenance boxes (exception: Medicine Paper 1 `"How useful"` questions include `provenance_clue` scaffolding).
    - **Layer 4 (Zero Intra-Lesson Duplication):** Never reuse a Layer 2 image inside Layer 3 within the same lesson.
 3. **Teacher Notes, 2-Lesson Delivery Plan & Pedagogy Bank:**
@@ -79,7 +79,7 @@ Before executing any specialized publishing or generation workflow, read the mat
 ## 6. Visual Provenance, Archival Styling & Reprographic Quality Gates
 1. **Eyes-First Visual Pre-Flight & Master Rights Register:**
    - Always run `read_file` on EVERY visual asset before captioning or authoring questions to verify literal depicted figures, printed mastheads/dates, and medium.
-   - **Zero AI Images:** Strictly forbidden from generating AI historical imagery. Use authentic archival photographs/artworks (download Wikimedia 500px thumbnails locally to `public/images/` if hotlink-protected; verify via `node scripts/verify_images.cjs`; fetch exact runtimes on ERA/YouTube video links).
+   - **Zero AI Images & 100% Commercial Copyright Clearance:** Strictly forbidden from generating AI historical imagery. Every Layer 2 narrative plate, `slide_compare` image, cover artwork, and individual portrait MUST be 100% cleared for commercial multi-school sale (`commercial_use_permitted: true`: Public Domain, Crown Copyright expired pre-1976, CC0, CC BY 4.0, CC BY-SA 3.0/4.0, or OGL v3.0—zero non-commercial CDPA s.32 exceptions; custom `concept_widget` SVGs are 100% original Hub IP). Download Wikimedia thumbnails locally to `public/images/` and verify via `node scripts/verify_images.cjs` + `npm run audit:provenance`.
    - Immediately register/update every visual asset in `scripts/master_rights_database.json` and run `node scripts/generate_rights_register_pdf.cjs`.
 2. **Museum-Grade Archival Presentation:**
    - Restrict FontAwesome icons to high-level UI controls—never inside historical source excerpts. Zero fake/mock accession shelfmarks in student-facing source boxes.

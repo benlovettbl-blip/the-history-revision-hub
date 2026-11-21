@@ -285,11 +285,15 @@ export async function ensureUnitLoaded(unitId) {
     try {
       const bootMap = typeof window !== 'undefined' ? window.__initialUnitBootMap : null;
       const preflight = bootMap && bootMap[unitId] ? await bootMap[unitId] : null;
+      const isLocalDev =
+        typeof window !== 'undefined' &&
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
       const raw =
-        preflight ||
-        (await fetch(`/data/${encodeURIComponent(unitId)}.json`).then((r) =>
-          r.ok ? r.json() : null,
-        ));
+        (!isLocalDev && preflight) ||
+        (await fetch(
+          `/data/${encodeURIComponent(unitId)}.json`,
+          isLocalDev ? { cache: 'no-store' } : undefined,
+        ).then((r) => (r.ok ? r.json() : null)));
 
       if (raw && typeof raw === 'object') {
         const unitData = raw.data || raw;

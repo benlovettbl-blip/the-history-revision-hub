@@ -2416,6 +2416,8 @@ export function renderLesson(lesson) {
       const rangeInput = rootEl.querySelector('.slide-compare-range');
       const enlargeBtn = rootEl.querySelector('.slide-compare-enlarge-btn');
       const presetBtns = rootEl.querySelectorAll('[data-sc-preset]');
+      const leftPill = rootEl.querySelector('.sc-stage-pill.is-left');
+      const rightPill = rootEl.querySelector('.sc-stage-pill.is-right');
       if (!stage || !beforeImg || !divider) return;
 
       let currentSplit = 50;
@@ -2428,6 +2430,12 @@ export function renderLesson(lesson) {
         divider.style.left = `${clamped}%`;
         stage.setAttribute('aria-valuenow', String(Math.round(clamped)));
         if (rangeInput) rangeInput.value = String(Math.round(clamped));
+        if (leftPill) leftPill.style.opacity = clamped < 22 ? '0' : '1';
+        if (rightPill) rightPill.style.opacity = clamped > 78 ? '0' : '1';
+        presetBtns.forEach((btn) => {
+          const pVal = Number(btn.dataset.scPreset);
+          btn.classList.toggle('is-active', Math.abs(clamped - pVal) <= 4);
+        });
       };
 
       const updateFromClientX = (clientX) => {
@@ -2539,23 +2547,27 @@ export function renderLesson(lesson) {
       const prevOverflow = document.body.style.overflow || '';
       document.body.style.overflow = 'hidden';
 
+      const shortSideName = (lbl) => String(lbl || '').replace(/\s*\([^)]*\)\s*/g, '').trim();
+      const beforeShort = shortSideName(scMeta.beforeLabel || 'Before');
+      const afterShort = shortSideName(scMeta.afterLabel || 'After');
+
       const modal = document.createElement('div');
       modal.id = 'slide-compare-lightbox';
       modal.className = 'slide-compare-lightbox no-print';
       modal.setAttribute('role', 'dialog');
       modal.setAttribute('aria-modal', 'true');
-      modal.setAttribute('aria-label', scMeta.title || 'Slide-Across Map Comparison');
+      modal.setAttribute('aria-label', scMeta.title || 'Slide-Across Comparison');
       modal.innerHTML = `
         <div class="sc-lightbox-header">
           <div class="sc-lightbox-title-wrap">
-            <span class="sc-lightbox-badge"><i class="fa-solid fa-arrows-left-right"></i> Slide-Across Map Comparison</span>
+            <span class="sc-lightbox-badge"><i class="fa-solid fa-arrows-left-right"></i> ${escHtmlSafe(scMeta.eyebrow || 'Slide-Across Comparison')}</span>
             <h2 class="sc-lightbox-title">${escHtmlSafe(scMeta.title || '')}</h2>
           </div>
           <div class="sc-lightbox-actions">
             <div class="sc-preset-group" role="group" aria-label="Comparison Presets">
-              <button type="button" class="sc-preset-btn" data-sc-preset="100">${escHtmlSafe(scMeta.beforeLabel || 'Before')}</button>
-              <button type="button" class="sc-preset-btn" data-sc-preset="50">50 / 50</button>
-              <button type="button" class="sc-preset-btn" data-sc-preset="0">${escHtmlSafe(scMeta.afterLabel || 'After')}</button>
+              <button type="button" class="sc-preset-btn" data-sc-preset="100">Full ${escHtmlSafe(beforeShort)}</button>
+              <button type="button" class="sc-preset-btn is-active" data-sc-preset="50">50 / 50 Split</button>
+              <button type="button" class="sc-preset-btn" data-sc-preset="0">Full ${escHtmlSafe(afterShort)}</button>
             </div>
             <button type="button" class="sc-lightbox-close-btn" title="Close (Esc)">
               <span>Esc</span> <span style="font-size: 1.15rem; line-height: 1;">&times;</span>
@@ -2564,20 +2576,22 @@ export function renderLesson(lesson) {
         </div>
         <div class="sc-lightbox-body">
           <div class="slide-compare-viewport is-lightbox">
-            <div class="slide-compare-stage" tabindex="0" role="slider" aria-label="${escAttrSafe(scMeta.title || 'Map comparison')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <div class="slide-compare-stage" tabindex="0" role="slider" aria-label="${escAttrSafe(scMeta.title || 'Visual comparison')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
               <img src="${scMeta.afterUrl}" alt="${escAttrSafe(scMeta.afterLabel || 'After')}" class="archival-image slide-compare-img slide-compare-after-img" draggable="false" />
               <img src="${scMeta.beforeUrl}" alt="${escAttrSafe(scMeta.beforeLabel || 'Before')}" class="archival-image slide-compare-img slide-compare-before-img" draggable="false" style="clip-path: inset(0 50% 0 0); -webkit-clip-path: inset(0 50% 0 0);" />
+              <span class="sc-stage-pill is-left no-print">LEFT: ${escHtmlSafe(beforeShort)}</span>
+              <span class="sc-stage-pill is-right no-print">RIGHT: ${escHtmlSafe(afterShort)}</span>
               <div class="slide-compare-divider" style="left: 50%;">
-                <div class="slide-compare-handle" title="Drag left/right or use ArrowLeft / ArrowRight keys">
+                <div class="slide-compare-handle" title="Drag curtain left/right or use ArrowLeft / ArrowRight keys">
                   <i class="fa-solid fa-arrows-left-right"></i>
                 </div>
               </div>
             </div>
           </div>
           <div class="slide-compare-controls-bar is-lightbox">
-            <span class="slide-compare-side-label is-before"><i class="fa-solid fa-arrow-left"></i> ${escHtmlSafe(scMeta.beforeLabel || 'Before')}</span>
-            <input type="range" min="0" max="100" value="50" step="1" class="slide-compare-range" aria-label="Slide curtain between ${escAttrSafe(scMeta.beforeLabel || 'Before')} and ${escAttrSafe(scMeta.afterLabel || 'After')}" />
-            <span class="slide-compare-side-label is-after">${escHtmlSafe(scMeta.afterLabel || 'After')} <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="slide-compare-side-label is-before"><i class="fa-solid fa-arrow-left"></i> Slide left for ${escHtmlSafe(afterShort)}</span>
+            <input type="range" min="0" max="100" value="50" step="1" class="slide-compare-range" aria-label="Drag curtain between ${escAttrSafe(scMeta.beforeLabel || 'Before')} and ${escAttrSafe(scMeta.afterLabel || 'After')}" />
+            <span class="slide-compare-side-label is-after">Slide right for ${escHtmlSafe(beforeShort)} <i class="fa-solid fa-arrow-right"></i></span>
           </div>
           ${scMeta.caption ? `<p class="slide-compare-caption is-lightbox">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(scMeta.caption)) : escHtmlSafe(scMeta.caption)}</p>` : ''}
         </div>
@@ -2624,8 +2638,11 @@ export function renderLesson(lesson) {
       const afterUrl = getAssetUrl(rawAfter);
       const beforeLabel = beforeObj.label || scBlock.before_label || 'Before';
       const afterLabel = afterObj.label || scBlock.after_label || 'After';
+      const beforeShort = String(beforeLabel).replace(/\s*\([^)]*\)\s*/g, '').trim();
+      const afterShort = String(afterLabel).replace(/\s*\([^)]*\)\s*/g, '').trim();
       const scTitle = scBlock.title || `${beforeLabel} \u2194 ${afterLabel}`;
       const scCaption = scBlock.caption || '';
+      const scEyebrow = scBlock.eyebrow || 'Slide-Across Map Comparison';
       const scId = `slide-compare-${String((lesson && lesson.id) || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-')}-${sIndex}`;
 
       window.postRenderHooks.push(() => {
@@ -2633,6 +2650,7 @@ export function renderLesson(lesson) {
         if (el) {
           bindSlideCompareInstance(el, {
             title: scTitle,
+            eyebrow: scEyebrow,
             beforeUrl,
             afterUrl,
             beforeLabel,
@@ -2648,7 +2666,7 @@ export function renderLesson(lesson) {
           <div class="slide-compare-header">
             <div class="slide-compare-title-group">
               <span class="slide-compare-eyebrow">
-                <i class="fa-solid fa-arrows-left-right"></i> Slide-Across Map Comparison
+                <i class="fa-solid fa-arrows-left-right"></i> ${escHtmlSafe(scEyebrow)}
               </span>
               <h3 class="slide-compare-title">${escHtmlSafe(scTitle)}</h3>
             </div>
@@ -2657,10 +2675,17 @@ export function renderLesson(lesson) {
               <span>Enlarge</span>
             </button>
           </div>
+          <div class="sc-inline-presets no-print" role="group" aria-label="Quick view buttons">
+            <button type="button" class="sc-preset-btn" data-sc-preset="100">Full ${escHtmlSafe(beforeShort)}</button>
+            <button type="button" class="sc-preset-btn is-active" data-sc-preset="50">50 / 50 Split</button>
+            <button type="button" class="sc-preset-btn" data-sc-preset="0">Full ${escHtmlSafe(afterShort)}</button>
+          </div>
           <div class="slide-compare-viewport">
-            <div class="slide-compare-stage" tabindex="0" role="slider" aria-label="${escAttrSafe(scTitle)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" title="Drag handle left/right or press ArrowLeft / ArrowRight">
+            <div class="slide-compare-stage" tabindex="0" role="slider" aria-label="${escAttrSafe(scTitle)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" title="Drag curtain left/right or press ArrowLeft / ArrowRight">
               <img src="${afterUrl}" alt="${escAttrSafe(afterLabel)}" class="archival-image slide-compare-img slide-compare-after-img" draggable="false" />
               <img src="${beforeUrl}" alt="${escAttrSafe(beforeLabel)}" class="archival-image slide-compare-img slide-compare-before-img" draggable="false" style="clip-path: inset(0 50% 0 0); -webkit-clip-path: inset(0 50% 0 0);" />
+              <span class="sc-stage-pill is-left no-print">LEFT: ${escHtmlSafe(beforeShort)}</span>
+              <span class="sc-stage-pill is-right no-print">RIGHT: ${escHtmlSafe(afterShort)}</span>
               <div class="slide-compare-divider no-print" style="left: 50%;">
                 <div class="slide-compare-handle">
                   <i class="fa-solid fa-arrows-left-right"></i>
@@ -2669,11 +2694,339 @@ export function renderLesson(lesson) {
             </div>
           </div>
           <div class="slide-compare-controls-bar">
-            <span class="slide-compare-side-label is-before"><i class="fa-solid fa-arrow-left"></i> ${escHtmlSafe(beforeLabel)}</span>
+            <span class="slide-compare-side-label is-before"><i class="fa-solid fa-arrow-left"></i> Slide left: ${escHtmlSafe(afterShort)}</span>
             <input type="range" min="0" max="100" value="50" step="1" class="slide-compare-range no-print" aria-label="Slide curtain between ${escAttrSafe(beforeLabel)} and ${escAttrSafe(afterLabel)}" />
-            <span class="slide-compare-side-label is-after">${escHtmlSafe(afterLabel)} <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="slide-compare-side-label is-after">Slide right: ${escHtmlSafe(beforeShort)} <i class="fa-solid fa-arrow-right"></i></span>
           </div>
           ${scCaption ? `<p class="slide-compare-caption">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(scCaption)) : escHtmlSafe(scCaption)}</p>` : ''}
+        </div>
+      `;
+    };
+
+    const getConceptWidgetSignpostGlyph = (glyphKey) => {
+      const map = {
+        leader: 'fa-solid fa-crown',
+        language: 'fa-solid fa-book-open',
+        church: 'fa-solid fa-place-of-worship',
+        clothes: 'fa-solid fa-shirt',
+        law: 'fa-solid fa-scale-balanced',
+        people: 'fa-solid fa-users',
+      };
+      return map[glyphKey] || 'fa-solid fa-circle-dot';
+    };
+
+    const bindConceptWidgetInstance = (rootEl, cwBlock, allowEnlarge = true) => {
+      if (!rootEl || !cwBlock) return;
+      const wType = cwBlock.type || 'spectrum_slider';
+
+      if (wType === 'spectrum_slider') {
+        const stops = Array.isArray(cwBlock.stops) ? cwBlock.stops : [];
+        if (!stops.length) return;
+        const btns = rootEl.querySelectorAll('[data-cw-stop]');
+        const rangeEl = rootEl.querySelector('.cw-spectrum-range');
+        const summaryEl = rootEl.querySelector('.cw-active-summary');
+        const gridEl = rootEl.querySelector('.cw-trait-grid');
+
+        const setStop = (idx) => {
+          const safeIdx = Math.max(0, Math.min(stops.length - 1, Number(idx) || 0));
+          const stop = stops[safeIdx];
+          const accent = stop.color || '#38bdf8';
+          const accentBg = stop.bg_color || 'rgba(56, 189, 248, 0.18)';
+          rootEl.style.setProperty('--cw-accent', accent);
+          rootEl.style.setProperty('--cw-accent-bg', accentBg);
+
+          btns.forEach((b, bi) => {
+            const active = bi === safeIdx;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          if (rangeEl) rangeEl.value = String(safeIdx);
+          if (summaryEl) {
+            summaryEl.innerHTML = `<strong>${escHtmlSafe(stop.label)}:</strong> ${escHtmlSafe(stop.summary || '')}`;
+          }
+          if (gridEl && Array.isArray(stop.traits)) {
+            gridEl.innerHTML = stop.traits
+              .map(
+                (tr) => `
+              <div class="cw-trait-card">
+                <div class="cw-trait-icon" aria-hidden="true"><i class="${escAttrSafe(getConceptWidgetSignpostGlyph(tr.glyph || tr.icon))}"></i></div>
+                <div class="cw-trait-meta">
+                  <div class="cw-trait-cat">${escHtmlSafe(tr.category || '')}</div>
+                  <div class="cw-trait-val">${escHtmlSafe(tr.value || '')}</div>
+                </div>
+              </div>
+            `,
+              )
+              .join('');
+          }
+        };
+
+        btns.forEach((b) => {
+          b.addEventListener('click', () => setStop(Number(b.getAttribute('data-cw-stop'))));
+        });
+        if (rangeEl) {
+          rangeEl.addEventListener('input', () => setStop(Number(rangeEl.value)));
+        }
+        const defaultIdx =
+          typeof cwBlock.default_index === 'number'
+            ? cwBlock.default_index
+            : Math.floor(stops.length / 2);
+        setStop(defaultIdx);
+      } else if (wType === 'profile_deck') {
+        const items = Array.isArray(cwBlock.items) ? cwBlock.items : [];
+        if (!items.length) return;
+        const tabs = rootEl.querySelectorAll('[data-cw-tab]');
+        const stageEl = rootEl.querySelector('.cw-deck-stage');
+
+        const setItem = (idx) => {
+          const safeIdx = Math.max(0, Math.min(items.length - 1, Number(idx) || 0));
+          const it = items[safeIdx];
+          const accent = it.color || '#f59e0b';
+          const accentBg = it.bg_color || 'rgba(245, 158, 11, 0.2)';
+          rootEl.style.setProperty('--cw-accent', accent);
+          rootEl.style.setProperty('--cw-accent-bg', accentBg);
+
+          tabs.forEach((t, ti) => {
+            const active = ti === safeIdx;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          if (stageEl) {
+            const metricsHtml = (it.metrics || [])
+              .map(
+                (m) => `
+              <div class="cw-deck-metric">
+                <div class="cw-deck-metric-lbl">${escHtmlSafe(m.label || '')}</div>
+                <div class="cw-deck-metric-val">${escHtmlSafe(m.value || '')}</div>
+              </div>
+            `,
+              )
+              .join('');
+            const portraitHtml = it.portrait
+              ? `<div class="cw-deck-portrait"><img src="${getAssetUrl(it.portrait)}" alt="${escAttrSafe(it.title || '')}" /></div>`
+              : `<div class="cw-deck-num-badge">${safeIdx + 1}</div>`;
+            stageEl.innerHTML = `
+              <div class="cw-deck-top">
+                ${portraitHtml}
+                <div class="cw-deck-heading-wrap">
+                  <div class="cw-deck-title-row">
+                    <h4 class="cw-deck-name">${escHtmlSafe(it.title || '')}</h4>
+                    ${it.badge ? `<span class="cw-deck-fate-pill">${escHtmlSafe(it.badge)}</span>` : ''}
+                  </div>
+                  ${it.dates ? `<div class="cw-deck-dates">${escHtmlSafe(it.dates)}</div>` : ''}
+                </div>
+              </div>
+              <div class="cw-deck-metrics">${metricsHtml}</div>
+              <div class="cw-deck-takeaway">${escHtmlSafe(it.takeaway || '')}</div>
+            `;
+          }
+        };
+
+        tabs.forEach((t) => {
+          t.addEventListener('click', () => setItem(Number(t.getAttribute('data-cw-tab'))));
+        });
+        setItem(cwBlock.default_index || 0);
+      } else if (wType === 'power_seesaw') {
+        const eras = Array.isArray(cwBlock.eras) ? cwBlock.eras : [];
+        if (!eras.length) return;
+        const tabs = rootEl.querySelectorAll('[data-cw-era]');
+        const barsEl = rootEl.querySelector('.cw-power-bars');
+        const summaryEl = rootEl.querySelector('.cw-active-summary');
+
+        const setEra = (idx) => {
+          const safeIdx = Math.max(0, Math.min(eras.length - 1, Number(idx) || 0));
+          const era = eras[safeIdx];
+          const accent = era.color || '#38bdf8';
+          rootEl.style.setProperty('--cw-accent', accent);
+
+          tabs.forEach((t, ti) => {
+            const active = ti === safeIdx;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          if (barsEl && Array.isArray(era.pillars)) {
+            barsEl.innerHTML = era.pillars
+              .map(
+                (p) => `
+              <div class="cw-power-row">
+                <div class="cw-power-row-top">
+                  <span>${escHtmlSafe(p.actor)}</span>
+                  <span>${Number(p.share) || 0}% — ${escHtmlSafe(p.status || '')}</span>
+                </div>
+                <div class="cw-power-track">
+                  <div class="cw-power-fill" style="width: ${Math.max(2, Number(p.share) || 0)}%; background: ${escAttrSafe(p.color || '#38bdf8')};"></div>
+                </div>
+              </div>
+            `,
+              )
+              .join('');
+          }
+          if (summaryEl) {
+            summaryEl.innerHTML = `<strong>${escHtmlSafe(era.year)} (${escHtmlSafe(era.headline || '')}):</strong> ${escHtmlSafe(era.summary || '')}`;
+          }
+        };
+
+        tabs.forEach((t) => {
+          t.addEventListener('click', () => setEra(Number(t.getAttribute('data-cw-era'))));
+        });
+        setEra(typeof cwBlock.default_index === 'number' ? cwBlock.default_index : eras.length - 1);
+      }
+
+      const enlargeBtn = rootEl.querySelector('.cw-enlarge-btn');
+      if (allowEnlarge && enlargeBtn) {
+        enlargeBtn.addEventListener('click', () => {
+          const existing = document.getElementById('concept-widget-lightbox');
+          if (existing) existing.remove();
+          const prevOverflow = document.body.style.overflow || '';
+          document.body.style.overflow = 'hidden';
+          const modal = document.createElement('div');
+          modal.id = 'concept-widget-lightbox';
+          modal.className = 'slide-compare-lightbox concept-widget-lightbox no-print';
+          modal.setAttribute('role', 'dialog');
+          modal.setAttribute('aria-modal', 'true');
+          modal.innerHTML = `
+            <div class="sc-lightbox-header">
+              <div class="sc-lightbox-title-wrap">
+                <span class="sc-lightbox-badge"><i class="fa-solid fa-sliders"></i> ${escHtmlSafe(cwBlock.eyebrow || 'Interactive Concept Explorer')}</span>
+                <h2 class="sc-lightbox-title">${escHtmlSafe(cwBlock.title || '')}</h2>
+              </div>
+              <div class="sc-lightbox-actions">
+                <button type="button" class="sc-lightbox-close-btn" data-cw-close="1" title="Close (Esc)">
+                  <span>Esc</span> <span style="font-size: 1.15rem; line-height: 1;">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="sc-lightbox-body">
+              <div id="cw-lightbox-mount" class="concept-widget-card cw-is-enlarged"></div>
+            </div>
+          `;
+          document.body.appendChild(modal);
+          const mount = modal.querySelector('#cw-lightbox-mount');
+          if (mount) {
+            mount.innerHTML = buildConceptWidgetBodyHTML(cwBlock);
+            bindConceptWidgetInstance(mount, cwBlock, false);
+          }
+          const closeModal = () => {
+            document.removeEventListener('keydown', onEsc);
+            document.body.style.overflow = prevOverflow;
+            modal.remove();
+          };
+          const onEsc = (ev) => {
+            if (ev.key === 'Escape') {
+              ev.preventDefault();
+              closeModal();
+            }
+          };
+          document.addEventListener('keydown', onEsc);
+          modal.querySelectorAll('[data-cw-close]').forEach((c) =>
+            c.addEventListener('click', closeModal),
+          );
+          modal.addEventListener('click', (ev) => {
+            if (ev.target === modal) closeModal();
+          });
+        });
+      }
+    };
+
+    const buildConceptWidgetBodyHTML = (cwBlock) => {
+      const wType = cwBlock.type || 'spectrum_slider';
+      if (wType === 'spectrum_slider') {
+        const stops = Array.isArray(cwBlock.stops) ? cwBlock.stops : [];
+        return `
+          <div class="concept-widget-body">
+            <div class="cw-spectrum-stops" role="group" aria-label="${escAttrSafe(cwBlock.title || 'Spectrum stops')}">
+              ${stops
+                .map(
+                  (st, si) => `
+                <button type="button" class="cw-stop-btn" data-cw-stop="${si}" aria-pressed="false">
+                  ${escHtmlSafe(st.short_label || st.label)}
+                </button>
+              `,
+                )
+                .join('')}
+            </div>
+            <div class="cw-spectrum-range-row no-print">
+              <span style="font-size:0.68rem;font-weight:800;color:#94a3b8;">◀</span>
+              <input type="range" class="cw-spectrum-range" min="0" max="${Math.max(0, stops.length - 1)}" step="1" value="1" aria-label="Slide across ${escAttrSafe(cwBlock.title || 'spectrum')}" />
+              <span style="font-size:0.68rem;font-weight:800;color:#94a3b8;">▶</span>
+            </div>
+            <div class="cw-active-summary"></div>
+            <div class="cw-trait-grid"></div>
+          </div>
+          ${cwBlock.caption ? `<p class="concept-widget-caption">${escHtmlSafe(cwBlock.caption)}</p>` : ''}
+        `;
+      }
+      if (wType === 'profile_deck') {
+        const items = Array.isArray(cwBlock.items) ? cwBlock.items : [];
+        return `
+          <div class="concept-widget-body">
+            <div class="cw-deck-tabs" role="tablist" aria-label="${escAttrSafe(cwBlock.title || 'Comparison tabs')}">
+              ${items
+                .map(
+                  (it, ii) => `
+                <button type="button" role="tab" class="cw-deck-tab" data-cw-tab="${ii}" aria-selected="false">
+                  ${escHtmlSafe(it.tab_label || it.title)}
+                </button>
+              `,
+                )
+                .join('')}
+            </div>
+            <div class="cw-deck-stage" role="tabpanel"></div>
+          </div>
+          ${cwBlock.caption ? `<p class="concept-widget-caption">${escHtmlSafe(cwBlock.caption)}</p>` : ''}
+        `;
+      }
+      if (wType === 'power_seesaw') {
+        const eras = Array.isArray(cwBlock.eras) ? cwBlock.eras : [];
+        return `
+          <div class="concept-widget-body">
+            <div class="cw-deck-tabs" role="group" aria-label="${escAttrSafe(cwBlock.title || 'Chronological milestones')}">
+              ${eras
+                .map(
+                  (er, ei) => `
+                <button type="button" class="cw-deck-tab" data-cw-era="${ei}" aria-pressed="false">
+                  ${escHtmlSafe(er.year)}
+                </button>
+              `,
+                )
+                .join('')}
+            </div>
+            <div class="cw-power-bars"></div>
+            <div class="cw-active-summary" style="margin-bottom:0;"></div>
+          </div>
+          ${cwBlock.caption ? `<p class="concept-widget-caption">${escHtmlSafe(cwBlock.caption)}</p>` : ''}
+        `;
+      }
+      return '';
+    };
+
+    const renderConceptWidgetHTML = (cwBlock, sIndex) => {
+      if (!cwBlock || typeof cwBlock !== 'object') return '';
+      const cwId = `concept-widget-${String((lesson && lesson.id) || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-')}-${sIndex}`;
+      const eyebrow = cwBlock.eyebrow || 'Interactive Concept Diagram';
+
+      window.postRenderHooks.push(() => {
+        const el = document.getElementById(cwId);
+        if (el) {
+          bindConceptWidgetInstance(el, cwBlock, true);
+        }
+      });
+
+      return `
+        <div class="concept-widget-card" id="${cwId}">
+          <div class="concept-widget-header">
+            <div class="slide-compare-title-group">
+              <span class="concept-widget-eyebrow">
+                <i class="fa-solid fa-sliders"></i> ${escHtmlSafe(eyebrow)}
+              </span>
+              <h3 class="concept-widget-title">${escHtmlSafe(cwBlock.title || '')}</h3>
+            </div>
+            <button type="button" class="hotspot-whiteboard-btn cw-enlarge-btn no-print" title="Enlarge Interactive Concept Diagram for Whiteboard">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              <span>Enlarge</span>
+            </button>
+          </div>
+          ${buildConceptWidgetBodyHTML(cwBlock)}
         </div>
       `;
     };
@@ -4519,11 +4872,18 @@ export function renderLesson(lesson) {
             (block.slide_compare.after.image || block.slide_compare.after.src)) ||
             block.slide_compare.after_image),
       );
-      const hasPureVisual = Boolean(
-        !hasStageHookMap && !hasSlideCompare && effectiveImage && (!block.image_context || isCme),
+      const hasConceptWidget = Boolean(
+        block.concept_widget && typeof block.concept_widget === 'object' && block.concept_widget.type,
       );
-      const hasSideMedia = hasPureVisual || hasStageHookMap || hasSlideCompare;
-      const isReversed = hasPureVisual ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
+      const hasPureVisual = Boolean(
+        !hasStageHookMap &&
+          !hasSlideCompare &&
+          !hasConceptWidget &&
+          effectiveImage &&
+          (!block.image_context || isCme),
+      );
+      const hasSideMedia = hasPureVisual || hasStageHookMap || hasSlideCompare || hasConceptWidget;
+      const isReversed = hasSideMedia ? visualPlateCounter++ % 2 === 1 : index % 2 === 1;
 
       let stageQ = stageObj ? (stageObj.question || '') : '';
       if (!stageQ && matchedWbStage) {
@@ -4598,7 +4958,7 @@ export function renderLesson(lesson) {
           ? `<div class="narrative-stage-eyebrow"${headingAnchorId ? ` id="${headingAnchorId}"` : ''}>${cleanHeadingTitle}</div>`
           : '';
 
-      const hasHookOrSlideCol = hasStageHookMap || hasSlideCompare;
+      const hasHookOrSlideCol = hasStageHookMap || hasSlideCompare || hasConceptWidget;
       const narrativeChunkHtml = `
               <div id="para-${index + 1}" class="narrative-chunk ${hasSideMedia ? '' : 'standalone-narrative-chunk'}${hasHookOrSlideCol ? ' stage-hook-narrative-chunk' : ''}" style="display: flex; flex-direction: column; margin-bottom: ${hasSideMedia ? '0' : '6px'}; padding: 14px 18px; background: ${bg}; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 4px solid #3b82f6; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.04); flex: ${hasHookOrSlideCol ? '1 1 46%' : '1 1 58%'}; min-width: 0;">
                 ${isHeaderUnified ? stageEyebrowHtml : headerBlockHtml}
@@ -4687,10 +5047,21 @@ export function renderLesson(lesson) {
         const slideCompareHtml = renderSlideCompareHTML(block.slide_compare, index);
         topNarrativeHtml = `
           ${isHeaderUnified ? headerBlockHtml : ''}
-          <div class="stage-hook-map-row slide-compare-only-row">
+          <div class="stage-hook-map-row slide-compare-only-row" style="${isReversed ? 'flex-direction: row-reverse;' : ''}">
             ${narrativeChunkHtml}
             <div class="stage-hook-map-col slide-compare-col">
               ${slideCompareHtml}
+            </div>
+          </div>
+        `;
+      } else if (hasConceptWidget) {
+        const conceptWidgetHtml = renderConceptWidgetHTML(block.concept_widget, index);
+        topNarrativeHtml = `
+          ${isHeaderUnified ? headerBlockHtml : ''}
+          <div class="stage-hook-map-row concept-widget-only-row" style="${isReversed ? 'flex-direction: row-reverse;' : ''}">
+            ${narrativeChunkHtml}
+            <div class="stage-hook-map-col concept-widget-col">
+              ${conceptWidgetHtml}
             </div>
           </div>
         `;

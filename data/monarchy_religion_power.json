@@ -506,7 +506,20 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In October 1517, German monk Martin Luther nailed 95 fiery arguments to the <strong>Wittenberg church door</strong>. Luther attacked corrupt friars selling an <strong>indulgence</strong>—a certificate promising that paying for forgiveness would free dead relatives from the agonies of <strong>Purgatory</strong>.</p><p class=\"prose-p\">Printed copies spread across Europe, triggering the Protestant <strong>Reformation</strong>. When young King Henry VIII wrote a book defending Catholic sacraments against Luther, Pope Leo X rewarded him with the proud <strong>Defender of the Faith title</strong>.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In October 1517, German monk Martin Luther nailed 95 fiery arguments to the <strong>Wittenberg church door</strong>. Luther attacked corrupt friars selling an <strong>indulgence</strong>—a certificate promising that paying for forgiveness would free dead relatives from the agonies of <strong>Purgatory</strong>.</p><p class=\"prose-p\">Printed copies spread across Europe, triggering the Protestant <strong>Reformation</strong>. When young King Henry VIII wrote a book defending Catholic sacraments against Luther, Pope Leo X rewarded him with the proud <strong>Defender of the Faith title</strong>.</p>",
+          "slide_compare": {
+            "eyebrow": "Slide-Across Church Comparison",
+            "title": "Catholic Sanctuary vs. Protestant Reformation Church",
+            "before": {
+              "image": "/images/monarchy_religion_power/catholic_sanctuary_gesu_rome.jpg",
+              "label": "Catholic Sanctuary (Gilded Altar & Latin Mass)"
+            },
+            "after": {
+              "image": "/images/monarchy_religion_power/protestant_reformed_oude_kerk.jpg",
+              "label": "Protestant Church (Whitewashed & Preaching Pulpit)"
+            },
+            "caption": "**Drag the curtain** to compare an ornate Counter-Reformation Catholic sanctuary (*Church of the Gesù, Rome*, CC BY-SA 4.0, Fczarnowski) with a stripped, whitewashed Protestant Reformation interior centred on a wooden preaching pulpit (*Oude Kerk, Amsterdam*, CC BY-SA 4.0, Zairon)."
+          }
         },
         {
           "act": 2,
@@ -554,7 +567,160 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> By 1527, Henry faced an agonizing <strong>dynastic</strong> crisis. Catherine of Aragon was past forty and had borne only one living daughter, Princess Mary. Driven by a desperate need for a son to protect royal <strong>succession</strong>, Henry feared civil war if the Tudor dynasty collapsed without a male heir.</p><p class=\"prose-p\">Having fallen deeply in love for Anne Boleyn, Henry cited a strict Bible warning on marriage from Leviticus, claiming his marriage to Catherine was cursed. He demanded an official papal <strong>annulment</strong> to marry again.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> By 1527, Henry faced an agonizing <strong>dynastic</strong> crisis. Catherine of Aragon was past forty and had borne only one living daughter, Princess Mary. Driven by a desperate need for a son to protect royal <strong>succession</strong>, Henry feared civil war if the Tudor dynasty collapsed without a male heir.</p><p class=\"prose-p\">Having fallen deeply in love for Anne Boleyn, Henry cited a strict Bible warning on marriage from Leviticus, claiming his marriage to Catherine was cursed. He demanded an official papal <strong>annulment</strong> to marry again.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Dynastic Explorer",
+            "title": "Henry VIII’s Six Wives & The Quest for a Son",
+            "default_index": 0,
+            "caption": "Click each queen to see her religion, surviving child, fate, and why she mattered to the Break with Rome.",
+            "items": [
+              {
+                "tab_label": "1. Aragon",
+                "title": "Catherine of Aragon",
+                "dates": "Married 1509–1533",
+                "badge": "Divorced",
+                "portrait": "/images/monarchy_religion_power/wives/catherine_of_aragon.jpg",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Religion",
+                    "value": "Catholic"
+                  },
+                  {
+                    "label": "Child",
+                    "value": "Girl: Mary"
+                  },
+                  {
+                    "label": "Problem",
+                    "value": "No living son"
+                  }
+                ],
+                "takeaway": "When the Pope refused to end this marriage, Henry broke away from Rome to marry again."
+              },
+              {
+                "tab_label": "2. Boleyn",
+                "title": "Anne Boleyn",
+                "dates": "Married 1533–1536",
+                "badge": "Beheaded",
+                "portrait": "/images/monarchy_religion_power/wives/anne_boleyn.jpg",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Religion",
+                    "value": "Protestant"
+                  },
+                  {
+                    "label": "Child",
+                    "value": "Girl: Elizabeth"
+                  },
+                  {
+                    "label": "Problem",
+                    "value": "No living son"
+                  }
+                ],
+                "takeaway": "Backed English Bibles and the Break with Rome, but was executed on treason charges after failing to bear a son."
+              },
+              {
+                "tab_label": "3. Seymour",
+                "title": "Jane Seymour",
+                "dates": "Married 1536–1537",
+                "badge": "Died",
+                "portrait": "/images/monarchy_religion_power/wives/jane_seymour.jpg",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Religion",
+                    "value": "Traditional"
+                  },
+                  {
+                    "label": "Child",
+                    "value": "Boy: Edward!"
+                  },
+                  {
+                    "label": "Result",
+                    "value": "Male heir born"
+                  }
+                ],
+                "takeaway": "Gave Henry his longed-for male heir, future King Edward VI, before dying twelve days after childbirth."
+              },
+              {
+                "tab_label": "4. Cleves",
+                "title": "Anne of Cleves",
+                "dates": "Jan–July 1540",
+                "badge": "Divorced",
+                "portrait": "/images/monarchy_religion_power/wives/anne_of_cleves.jpg",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Religion",
+                    "value": "Protestant"
+                  },
+                  {
+                    "label": "Child",
+                    "value": "None"
+                  },
+                  {
+                    "label": "Fallout",
+                    "value": "Cromwell executed"
+                  }
+                ],
+                "takeaway": "Arranged by Thomas Cromwell as a German alliance; Henry ended the marriage quickly and executed Cromwell."
+              },
+              {
+                "tab_label": "5. Howard",
+                "title": "Catherine Howard",
+                "dates": "Married 1540–1542",
+                "badge": "Beheaded",
+                "portrait": "/images/monarchy_religion_power/wives/catherine_howard.jpg",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Religion",
+                    "value": "Catholic family"
+                  },
+                  {
+                    "label": "Child",
+                    "value": "None"
+                  },
+                  {
+                    "label": "Fallout",
+                    "value": "Executed at Tower"
+                  }
+                ],
+                "takeaway": "Teenage cousin of Anne Boleyn backed by Catholic nobles; executed for treasonous adultery in 1542."
+              },
+              {
+                "tab_label": "6. Parr",
+                "title": "Catherine Parr",
+                "dates": "Married 1543–1547",
+                "badge": "Survived",
+                "portrait": "/images/monarchy_religion_power/wives/catherine_parr.jpg",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Religion",
+                    "value": "Protestant"
+                  },
+                  {
+                    "label": "Role",
+                    "value": "United 3 heirs"
+                  },
+                  {
+                    "label": "Legacy",
+                    "value": "Outlived Henry"
+                  }
+                ],
+                "takeaway": "Reunited Henry with daughters Mary and Elizabeth and raised young Prince Edward as a Protestant."
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -730,7 +896,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> In November 1534, Parliament passed the historic <strong>Act of Supremacy</strong>, formally breaking ties with Rome. The statute declared Henry the supreme head of the Church of England, holding absolute spiritual authority over English subjects.</p><p class=\"prose-p\">Henry enforced loyalty through forced treason oaths; those refusing, including Sir Thomas More, were executed for <strong>treason</strong>. Cromwell then surveyed church wealth, dissolving over 800 Catholic monasteries between 1536 and 1540, selling monastic lands to gentry allies and permanently enriching the Crown.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> In November 1534, Parliament passed the historic <strong>Act of Supremacy</strong>, formally breaking ties with Rome. The statute declared Henry the supreme head of the Church of England, holding absolute spiritual authority over English subjects.</p><p class=\"prose-p\">Henry enforced loyalty through forced treason oaths; those refusing, including Sir Thomas More, were executed for <strong>treason</strong>. Cromwell then surveyed church wealth, dissolving over 800 Catholic monasteries between 1536 and 1540, selling monastic lands to gentry allies and permanently enriching the Crown.</p>",
+          "image": "/images/monarchy_religion_power/sir_thomas_more_holbein_1527.jpg",
+          "image_alt": "Portrait of Sir Thomas More by Hans Holbein the Younger (1527)",
+          "caption": "Sir Thomas More (Hans Holbein the Younger, 1527, Frick Collection, New York). Henry VIII’s devout Catholic former Lord Chancellor, beheaded in July 1535 for refusing the Oath of Supremacy."
         }
       ],
       "sources": [
@@ -2164,7 +2333,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Elizabeth needed an enduring political <strong>compromise</strong> to avoid civil war. In early 1559, Parliament passed the Act of Supremacy. To soothe Catholics who believed only Christ or the Pope could lead the Church, Elizabeth adopted the clever title of <strong>Supreme Governor</strong> rather than Supreme Head.</p><p class=\"prose-p\">The Act required strict loyalty oaths for priests and public officials. When all but one Marian Catholic bishop refused to take the oath, Elizabeth showed steel by sacking Catholic bishops and appointing moderate Protestants in their place.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Elizabeth needed an enduring political <strong>compromise</strong> to avoid civil war. In early 1559, Parliament passed the Act of Supremacy. To soothe Catholics who believed only Christ or the Pope could lead the Church, Elizabeth adopted the clever title of <strong>Supreme Governor</strong> rather than Supreme Head.</p><p class=\"prose-p\">The Act required strict loyalty oaths for priests and public officials. When all but one Marian Catholic bishop refused to take the oath, Elizabeth showed steel by sacking Catholic bishops and appointing moderate Protestants in their place.</p>",
+          "image": "/images/elizabeth_i_in_parliament_1559.jpg",
+          "image_alt": "Contemporary engraving of Queen Elizabeth I enthroned in Parliament",
+          "caption": "Queen Elizabeth I enthroned in the House of Lords surrounded by peers, bishops, and Commons MPs (engraving from Robert Glover & Thomas Milles, Nobilitas Politica vel Civilis, 1608), illustrating royal supremacy through statute law."
         },
         {
           "act": 3,
@@ -2214,7 +2386,103 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Alongside supremacy, the 1559 Act of <strong>Uniformity</strong> established Elizabeth's famed <strong>Via Media</strong> (Middle Way). It introduced one shared prayer book for every parish, written in English. The communion service featured clever compromise wording that satisfied both Protestants and Catholics.</p><p class=\"prose-p\">Attendance was strictly compulsory. Any Catholic <strong>recusant</strong> who refused to attend Sunday church services was punished with Sunday church fines (12d)—roughly a day’s wages for a labourer. Elizabeth avoided probing private conscience, famously declaring she had no desire to make windows into men's souls.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Alongside supremacy, the 1559 Act of <strong>Uniformity</strong> established Elizabeth's famed <strong>Via Media</strong> (Middle Way). It introduced one shared prayer book for every parish, written in English. The communion service featured clever compromise wording that satisfied both Protestants and Catholics.</p><p class=\"prose-p\">Attendance was strictly compulsory. Any Catholic <strong>recusant</strong> who refused to attend Sunday church services was punished with Sunday church fines (12d)—roughly a day’s wages for a labourer. Elizabeth avoided probing private conscience, famously declaring she had no desire to make windows into men's souls.</p>",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Religious Scale",
+            "title": "Elizabeth’s 1559 Middle Way: Catholic ↔ Compromise ↔ Puritan",
+            "default_index": 1,
+            "caption": "Slide or click across the scale to compare what each group wanted inside English parish churches.",
+            "stops": [
+              {
+                "short_label": "1. Strict Catholic",
+                "label": "Strict Catholic",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Obeyed the Pope in Rome and wanted ornate churches with Latin Mass.",
+                "traits": [
+                  {
+                    "category": "Leader",
+                    "glyph": "leader",
+                    "value": "The Pope in Rome"
+                  },
+                  {
+                    "category": "Language",
+                    "glyph": "language",
+                    "value": "Latin Bible & Mass"
+                  },
+                  {
+                    "category": "Inside Church",
+                    "glyph": "church",
+                    "value": "Gold Altar & Statues"
+                  },
+                  {
+                    "category": "Priest’s Clothes",
+                    "glyph": "clothes",
+                    "value": "Rich Gold Robes"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Elizabeth’s Middle Way",
+                "label": "Elizabeth’s Middle Way (1559)",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "summary": "Protestant English prayers, but kept bishops and traditional robes for peace.",
+                "traits": [
+                  {
+                    "category": "Leader",
+                    "glyph": "leader",
+                    "value": "Queen (Governor)"
+                  },
+                  {
+                    "category": "Language",
+                    "glyph": "language",
+                    "value": "English Prayer Book"
+                  },
+                  {
+                    "category": "Inside Church",
+                    "glyph": "church",
+                    "value": "Plain Table & Royal Arms"
+                  },
+                  {
+                    "category": "Priest’s Clothes",
+                    "glyph": "clothes",
+                    "value": "White Linen Surplice"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Strict Puritan",
+                "label": "Strict Puritan",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.2)",
+                "summary": "Wanted a plain church stripped of bishops, crosses, and fancy robes.",
+                "traits": [
+                  {
+                    "category": "Leader",
+                    "glyph": "people",
+                    "value": "No Bishops (Elders)"
+                  },
+                  {
+                    "category": "Language",
+                    "glyph": "language",
+                    "value": "Long English Sermons"
+                  },
+                  {
+                    "category": "Inside Church",
+                    "glyph": "church",
+                    "value": "Bare White Walls"
+                  },
+                  {
+                    "category": "Priest’s Clothes",
+                    "glyph": "clothes",
+                    "value": "Plain Black Gown"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 4,
@@ -2315,7 +2583,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Mary Queen of Scots' arrival in England sparked deadly Catholic assassination plots. Elizabeth's spymaster Sir Francis Walsingham ran a sophisticated network of <strong>espionage</strong> to trap conspirators. In 1586, Anthony Babington plotted Elizabeth’s murder, smuggling letters hidden in barrels of beer to Mary.</p><p class=\"prose-p\">Walsingham intercepted the letters and had Mary's secret code broken by expert cryptographers. Confronted with Mary’s treason, Parliament demanded blood. With deep reluctance, Elizabeth finally saw Mary's death warrant signed, and Mary Stuart was beheaded at Fotheringhay Castle in February 1587.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Mary Queen of Scots' arrival in England sparked deadly Catholic assassination plots. Elizabeth's spymaster Sir Francis Walsingham ran a sophisticated network of <strong>espionage</strong> to trap conspirators. In 1586, Anthony Babington plotted Elizabeth’s murder, smuggling letters hidden in barrels of beer to Mary.</p><p class=\"prose-p\">Walsingham intercepted the letters and had Mary's secret code broken by expert cryptographers. Confronted with Mary’s treason, Parliament demanded blood. With deep reluctance, Elizabeth finally saw Mary's death warrant signed, and Mary Stuart was beheaded at Fotheringhay Castle in February 1587.</p>",
+          "image": "/images/sir_francis_walsingham.jpg",
+          "image_alt": "Portrait of Sir Francis Walsingham by John de Critz the Elder (c. 1585)",
+          "caption": "Sir Francis Walsingham (c. 1532–1590), Queen Elizabeth I’s ruthless Principal Secretary and Protestant spymaster whose codebreaker Thomas Phelippes cracked the Babington Cipher (John de Critz the Elder, c. 1585, National Portrait Gallery)."
         }
       ],
       "sources": [
@@ -3756,7 +4027,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In April 1587, Francis Drake struck a daring pre-emptive blow, sailing directly into Cadiz harbour. In this raid, known as 'singeing the King of Spain’s beard', Drake destroyed thirty Spanish warships and burned vast warehouses of seasoned barrel staves, devastating Spanish naval <strong>logistics</strong>.</p><p class=\"prose-p\">Burning food barrels forced the Spanish to construct fresh casks from unseasoned green wood. Consequently, rotten water and bread contaminated supplies before the fleet even sailed. Drake's audacious raid caused the invasion fleet held back for a year, buying precious time for English coastal defenses.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In April 1587, Francis Drake struck a daring pre-emptive blow, sailing directly into Cadiz harbour. In this raid, known as 'singeing the King of Spain’s beard', Drake destroyed thirty Spanish warships and burned vast warehouses of seasoned barrel staves, devastating Spanish naval <strong>logistics</strong>.</p><p class=\"prose-p\">Burning food barrels forced the Spanish to construct fresh casks from unseasoned green wood. Consequently, rotten water and bread contaminated supplies before the fleet even sailed. Drake's audacious raid caused the invasion fleet held back for a year, buying precious time for English coastal defenses.</p>",
+          "image": "/images/francis_drake.jpg",
+          "image_alt": "Portrait of Sir Francis Drake with terrestrial globe by Marcus Gheeraerts the Younger (1591)",
+          "caption": "Vice-Admiral Sir Francis Drake standing beside a terrestrial globe wearing the Armada Jewel (Marcus Gheeraerts the Younger, 1591, Buckland Abbey / National Maritime Museum)."
         },
         {
           "act": 3,
@@ -3855,7 +4129,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> On 7 August, the Armada anchored at Calais, waiting for Parma’s delayed troops. Trapped in a vulnerable open <strong>anchorage</strong>, the Spanish were terrorized at midnight when English captains launched eight burning ghost ships coated in pitch and gunpowder directly toward their fleet.</p><p class=\"prose-p\">Panicked Spanish captains shouted orders for cutting anchor ropes in panic to escape the blazing <strong>fireship</strong> threat. Scattering in the dark into the open North Sea, the Armada lost its defensive crescent formation forever, leaving individual vessels helpless against English gunfire.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> On 7 August, the Armada anchored at Calais, waiting for Parma’s delayed troops. Trapped in a vulnerable open <strong>anchorage</strong>, the Spanish were terrorized at midnight when English captains launched eight burning ghost ships coated in pitch and gunpowder directly toward their fleet.</p><p class=\"prose-p\">Panicked Spanish captains shouted orders for cutting anchor ropes in panic to escape the blazing <strong>fireship</strong> threat. Scattering in the dark into the open North Sea, the Armada lost its defensive crescent formation forever, leaving individual vessels helpless against English gunfire.</p>",
+          "image": "/images/spanish_armada_1588_ryther_maritime_museum_auth.jpg",
+          "image_alt": "1590 hand-coloured chart of the Spanish Armada’s route through the Channel and around Britain by Robert Adams and Augustine Ryther",
+          "caption": "Hand-coloured Elizabethan naval chart by Robert Adams and Augustine Ryther (1590, National Maritime Museum, Greenwich), tracing the Armada’s scatter from Calais northward around Scotland and Ireland."
         },
         {
           "act": 5,
@@ -3903,7 +4180,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> At the Battle of Gravelines, English warships closed in, blasting wooden hulls of each Spanish <strong>galleon</strong> at point-blank range. Blown northward into fierce North Sea gales, Medina Sidonia had no choice but to steer his battered fleet around Scotland and Ireland.</p><p class=\"prose-p\">Furious Atlantic storms drove dozens of ships onto jagged Irish rocks, causing devastating shipwrecks. Only sixty-seven damaged vessels limped back to Spain. Elizabeth celebrated divine <strong>providence</strong>, striking a famous medal declaring: 'God blew and they were scattered', cementing England’s naval and Protestant identity.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> At the Battle of Gravelines, English warships closed in, blasting wooden hulls of each Spanish <strong>galleon</strong> at point-blank range. Blown northward into fierce North Sea gales, Medina Sidonia had no choice but to steer his battered fleet around Scotland and Ireland.</p><p class=\"prose-p\">Furious Atlantic storms drove dozens of ships onto jagged Irish rocks, causing devastating shipwrecks. Only sixty-seven damaged vessels limped back to Spain. Elizabeth celebrated divine <strong>providence</strong>, striking a famous medal declaring: 'God blew and they were scattered', cementing England’s naval and Protestant identity.</p>",
+          "image": "/images/the_duke_of_medina_sidonia.jpg",
+          "image_alt": "Contemporary Spanish portrait of Alonso Pérez de Guzmán, 7th Duke of Medina Sidonia",
+          "caption": "Alonso Pérez de Guzmán, 7th Duke of Medina Sidonia (1550–1615), reluctant aristocratic commander of the Spanish Armada forced to navigate his storm-battered fleet northward around Scotland and Ireland."
         }
       ],
       "sources": [
@@ -5265,7 +5545,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Believing in the absolute <strong>Divine Right</strong> of Kings, Charles I insisted monarchs answered only to God. When MPs challenged his religious policy and taxation in 1629, Charles dismissed Parliament and ruled for eleven years with no MPs, a period opponents branded the 'Eleven Years' Tyranny' or <strong>Personal Rule</strong>.</p><p class=\"prose-p\">To raise funds without Parliament, Charles levied <strong>Ship Money</strong> on inland towns, an ancient naval tax traditionally charged only to coastal counties. In 1637, wealthy landowner John Hampden refuses to pay, sparking widespread tax boycotts across England.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Believing in the absolute <strong>Divine Right</strong> of Kings, Charles I insisted monarchs answered only to God. When MPs challenged his religious policy and taxation in 1629, Charles dismissed Parliament and ruled for eleven years with no MPs, a period opponents branded the 'Eleven Years' Tyranny' or <strong>Personal Rule</strong>.</p><p class=\"prose-p\">To raise funds without Parliament, Charles levied <strong>Ship Money</strong> on inland towns, an ancient naval tax traditionally charged only to coastal counties. In 1637, wealthy landowner John Hampden refuses to pay, sparking widespread tax boycotts across England.</p>",
+          "image": "/images/monarchy_religion_power/john_hampden_portrait.jpg",
+          "image_alt": "17th-century portrait engraving of Parliamentary MP John Hampden in armour",
+          "caption": "John Hampden (c. 1595–1643), Buckinghamshire landowner and MP whose 1637 legal challenge against King Charles I’s inland Ship Money tax galvanized national resistance to the Eleven Years’ Personal Rule."
         },
         {
           "act": 2,
@@ -5366,7 +5649,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Early royalist victories exposed Parliament's weak regional militias. In 1645, Parliament created the revolutionary <strong>New Model Army</strong>: Britain’s first professional national force of full-time paid redcoats, promoted purely on merit rather than noble birth, commanded by Sir Thomas Fairfax and Oliver Cromwell.</p><p class=\"prose-p\">At the decisive Battle of Naseby in June 1645, Cromwell’s cavalry charges smashed the King’s flanks. Royalists routed and captured surrendered their artillery and private royal correspondence, completely destroying Charles’s military hopes and sealing Parliamentary victory.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Early royalist victories exposed Parliament's weak regional militias. In 1645, Parliament created the revolutionary <strong>New Model Army</strong>: Britain’s first professional national force of full-time paid redcoats, promoted purely on merit rather than noble birth, commanded by Sir Thomas Fairfax and Oliver Cromwell.</p><p class=\"prose-p\">At the decisive Battle of Naseby in June 1645, Cromwell’s cavalry charges smashed the King’s flanks. Royalists routed and captured surrendered their artillery and private royal correspondence, completely destroying Charles’s military hopes and sealing Parliamentary victory.</p>",
+          "image": "/images/monarchy_religion_power/sir_thomas_fairfax.jpg",
+          "image_alt": "Portrait engraving of General Sir Thomas Fairfax, Commander-in-Chief of the New Model Army",
+          "caption": "General Sir Thomas Fairfax (1612–1671), appointed Commander-in-Chief of Parliament’s professional New Model Army in 1645 alongside Oliver Cromwell, victor at the decisive Battle of Naseby."
         },
         {
           "act": 4,
@@ -5414,7 +5700,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Charles refused to accept defeat, sparking a second civil war by plotting with Scottish allies. Determined to punish the 'man of blood', Colonel Pride used troops to purge Parliament; the Army kicks out moderate MPs, leaving a radical 'Rump'.</p><p class=\"prose-p\">In January 1649, Charles was a king put on trial for treason before a High Court of Justice. Found guilty of <strong>high treason</strong> against his people, Charles was beheaded outside Whitehall on 30 January 1649, abolishing monarchy and establishing a revolutionary republic.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Charles refused to accept defeat, sparking a second civil war by plotting with Scottish allies. Determined to punish the 'man of blood', Colonel Pride used troops to purge Parliament; the Army kicks out moderate MPs, leaving a radical 'Rump'.</p><p class=\"prose-p\">In January 1649, Charles was a king put on trial for treason before a High Court of Justice. Found guilty of <strong>high treason</strong> against his people, Charles was beheaded outside Whitehall on 30 January 1649, abolishing monarchy and establishing a revolutionary republic.</p>",
+          "image": "/images/monarchy_religion_power/trial_charles_i_westminster_1649.jpg",
+          "image_alt": "Historical engraving of the Trial of King Charles I in Westminster Hall, January 1649",
+          "caption": "The Trial of King Charles I in Westminster Hall, January 1649 (Library of Congress, LCCN 2003677954). Charles stands wearing his hat in defiance of Lord President John Bradshaw and the High Court of Justice."
         },
         {
           "act": 5,
@@ -6899,7 +7188,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Elizabeth I anchored national unity through pragmatic statecraft. Her 1559 Elizabethan Religious Settlement provided a compromise for both sides, creating a Protestant national church with moderate ceremonies that allowed broad outward <strong>conformity</strong> without religious inquisitions.</p><p class=\"prose-p\">She enforced order through modest fines for missing church on Sundays to penalize recusants. When Spain invaded in 1588, England was united by Armada victory, forging a lasting patriotic myth that God favoured Protestant England and strengthening parliamentary support for the Crown.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Elizabeth I anchored national unity through pragmatic statecraft. Her 1559 Elizabethan Religious Settlement provided a compromise for both sides, creating a Protestant national church with moderate ceremonies that allowed broad outward <strong>conformity</strong> without religious inquisitions.</p><p class=\"prose-p\">She enforced order through modest fines for missing church on Sundays to penalize recusants. When Spain invaded in 1588, England was united by Armada victory, forging a lasting patriotic myth that God favoured Protestant England and strengthening parliamentary support for the Crown.</p>",
+          "image": "/images/elizabeth_coronation_portrait.jpg",
+          "image_alt": "Coronation Portrait of Queen Elizabeth I holding the orb and sceptre (c. 1600, National Portrait Gallery)",
+          "caption": "Queen Elizabeth I in her cloth-of-gold coronation robes clasping the royal orb and sceptre (c. 1600 after 1559 original, National Portrait Gallery, NPG 5175), embodying England’s confident Protestant national monarchy."
         },
         {
           "act": 3,
@@ -7000,7 +7292,10 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> The Civil War transformed English constitutional history. Parliament's citizen army beat the King at Naseby, ending royal hopes of military victory. Following Charles’s repeated intrigues, Pride's Purge cleared dissenters from Parliament, abolishing the House of Lords and monarchy to establish a republican <strong>Commonwealth</strong>.</p><p class=\"prose-p\">Beheading Charles I in 1649 set a revolutionary <strong>precedent</strong>: an anointed monarch was held to the law. A ruler who broke his constitutional trust with the people could be tried and executed for treason.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> The Civil War transformed English constitutional history. Parliament's citizen army beat the King at Naseby, ending royal hopes of military victory. Following Charles’s repeated intrigues, Pride's Purge cleared dissenters from Parliament, abolishing the House of Lords and monarchy to establish a republican <strong>Commonwealth</strong>.</p><p class=\"prose-p\">Beheading Charles I in 1649 set a revolutionary <strong>precedent</strong>: an anointed monarch was held to the law. A ruler who broke his constitutional trust with the people could be tried and executed for treason.</p>",
+          "image": "/images/charles_i_execution.jpg",
+          "image_alt": "Contemporary 1649 German engraving of the public execution of King Charles I outside Banqueting House, Whitehall",
+          "caption": "Contemporary 1649 European engraving depicting the public beheading of King Charles I on the scaffold outside the Banqueting House, Whitehall (30 January 1649), shattering the untouchability of anointed monarchs."
         },
         {
           "act": 5,
@@ -7048,7 +7343,146 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> The 1688 Glorious Revolution and 1689 Bill of Rights established permanent <strong>constitutional monarchy</strong> across the realm. Parliament drafted a binding statutory contract with new rulers William III and Mary II, legally ending centuries of royal claims to absolute divine power.</p><p class=\"prose-p\">The statute confirmed that the King cannot cancel laws without Parliament, prohibited royal taxes without MP votes, and removed the Crown's royal <strong>veto</strong> over parliamentary statutes. Sovereignty had shifted decisively from the personal will of the monarch to the supreme authority of the King-in-Parliament.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> The 1688 Glorious Revolution and 1689 Bill of Rights established permanent <strong>constitutional monarchy</strong> across the realm. Parliament drafted a binding statutory contract with new rulers William III and Mary II, legally ending centuries of royal claims to absolute divine power.</p><p class=\"prose-p\">The statute confirmed that the King cannot cancel laws without Parliament, prohibited royal taxes without MP votes, and removed the Crown's royal <strong>veto</strong> over parliamentary statutes. Sovereignty had shifted decisively from the personal will of the monarch to the supreme authority of the King-in-Parliament.</p>",
+          "concept_widget": {
+            "type": "power_seesaw",
+            "eyebrow": "Interactive Constitutional Meter",
+            "title": "Who Ruled Britain? Shifting Power (1517–1689)",
+            "default_index": 4,
+            "caption": "Click each constitutional turning point from 1517 to 1689 to watch legal sovereignty shift across the Pope, the Crown, and Parliament.",
+            "eras": [
+              {
+                "year": "1517",
+                "headline": "Pre-Reformation Christendom",
+                "color": "#ef4444",
+                "summary": "Henry VIII ruled government and war, while the Pope in Rome controlled church courts, Latin doctrine, and royal marriages.",
+                "pillars": [
+                  {
+                    "actor": "Pope in Rome (Church)",
+                    "share": 40,
+                    "status": "Spiritual & Marriage Courts",
+                    "color": "#ef4444"
+                  },
+                  {
+                    "actor": "English Monarch (Crown)",
+                    "share": 48,
+                    "status": "Dominant Feudal Ruler",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "Parliament (Lords & MPs)",
+                    "share": 12,
+                    "status": "Called Only for War Taxes",
+                    "color": "#38bdf8"
+                  }
+                ]
+              },
+              {
+                "year": "1534",
+                "headline": "Henry VIII’s Break with Rome",
+                "color": "#f59e0b",
+                "summary": "Act of Supremacy abolished papal authority in England, making the King Supreme Head—passed via statute law in partnership with Parliament.",
+                "pillars": [
+                  {
+                    "actor": "Pope in Rome (Church)",
+                    "share": 0,
+                    "status": "Abolished in England",
+                    "color": "#64748b"
+                  },
+                  {
+                    "actor": "English Monarch (Crown)",
+                    "share": 72,
+                    "status": "Supreme Head of Church & State",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "Parliament (Lords & MPs)",
+                    "share": 28,
+                    "status": "Statute Law Partner",
+                    "color": "#38bdf8"
+                  }
+                ]
+              },
+              {
+                "year": "1559",
+                "headline": "Elizabeth’s Settlement",
+                "color": "#f59e0b",
+                "summary": "Elizabeth ruled as Supreme Governor through Parliamentary Acts of Supremacy and Uniformity while managing MPs firmly.",
+                "pillars": [
+                  {
+                    "actor": "Pope in Rome (Church)",
+                    "share": 0,
+                    "status": "Excommunicated Queen (1570)",
+                    "color": "#64748b"
+                  },
+                  {
+                    "actor": "English Monarch (Crown)",
+                    "share": 68,
+                    "status": "Supreme Governor",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "Parliament (Lords & MPs)",
+                    "share": 32,
+                    "status": "Taxation & Religious Statutes",
+                    "color": "#38bdf8"
+                  }
+                ]
+              },
+              {
+                "year": "1649",
+                "headline": "Regicide & Commonwealth",
+                "color": "#10b981",
+                "summary": "Charles I executed for treason; monarchy and House of Lords abolished as Rump MPs and the New Model Army ruled a Republic.",
+                "pillars": [
+                  {
+                    "actor": "Pope in Rome (Church)",
+                    "share": 0,
+                    "status": "No Jurisdiction",
+                    "color": "#64748b"
+                  },
+                  {
+                    "actor": "English Monarch (Crown)",
+                    "share": 0,
+                    "status": "Monarchy Abolished (1649–1660)",
+                    "color": "#64748b"
+                  },
+                  {
+                    "actor": "Parliament & Army",
+                    "share": 100,
+                    "status": "Republican Commonwealth",
+                    "color": "#10b981"
+                  }
+                ]
+              },
+              {
+                "year": "1689",
+                "headline": "Bill of Rights (Constitutional Monarchy)",
+                "color": "#38bdf8",
+                "summary": "William III and Mary II accepted Parliament’s statutory contract: monarchs cannot cancel laws, levy taxes, or keep an army without MPs.",
+                "pillars": [
+                  {
+                    "actor": "Pope in Rome (Church)",
+                    "share": 0,
+                    "status": "Excluded by Law",
+                    "color": "#64748b"
+                  },
+                  {
+                    "actor": "English Monarch (Crown)",
+                    "share": 25,
+                    "status": "Bound by Statute Law",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "Parliament (Lords & MPs)",
+                    "share": 75,
+                    "status": "Supreme Law & Tax Authority",
+                    "color": "#38bdf8"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "sources": [

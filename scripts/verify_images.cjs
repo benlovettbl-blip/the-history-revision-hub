@@ -196,6 +196,18 @@ function verifyImages() {
                 errors++;
               }
             }
+            if (b.slide_compare && typeof b.slide_compare === 'object') {
+              const scBefore = (b.slide_compare.before && (b.slide_compare.before.image || b.slide_compare.before.src)) || b.slide_compare.before_image;
+              const scAfter = (b.slide_compare.after && (b.slide_compare.after.image || b.slide_compare.after.src)) || b.slide_compare.after_image;
+              [scBefore, scAfter].filter(Boolean).forEach((scImg, scIdx) => {
+                lessonImages.push({ type: `Slide-Compare ${scIdx === 0 ? 'Before' : 'After'}`, path: scImg });
+                const resolvedSc = path.join(ROOT_DIR, 'public', scImg.replace(/^\/+/, ''));
+                if (!fs.existsSync(resolvedSc) || !fs.statSync(resolvedSc).isFile()) {
+                  console.error(`❌ CRITICAL ERROR (Missing Slide-Compare Image in ${jf}): ${scImg}`);
+                  errors++;
+                }
+              });
+            }
           });
           (l.sources || []).forEach(s => {
             const srcImg = s.image || s.src;

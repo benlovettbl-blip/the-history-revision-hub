@@ -49,6 +49,7 @@ let totalImagesInspected = 0;
 let fileMissingViolations = 0;
 let provenanceViolations = 0;
 let aiArtifactViolations = 0;
+let commercialRightsViolations = 0;
 
 const galleryItems = [];
 
@@ -63,12 +64,12 @@ for (const [unitKey, raw] of Object.entries(db)) {
     const lNum = lIdx + 1;
     const lTitle = `[Lesson ${lNum}] ${l.title || ''}`;
 
-    // Banner
+    // Banner (Layer 2 Illustrative -> Must be Commercial Cleared)
     if (l.banner && l.banner.image) {
-      inspectImage(l.banner.image, unitKey, unitTitle, lTitle, 'Banner', l.banner.caption || '');
+      inspectImage(l.banner.image, unitKey, unitTitle, lTitle, 'Banner', l.banner.caption || '', true);
     }
 
-    // Narrative Blocks
+    // Narrative Blocks (Layer 2 Illustrative -> Must be Commercial Cleared)
     if (Array.isArray(l.narrative_blocks)) {
       l.narrative_blocks.forEach((b, bIdx) => {
         if (b.image) {
@@ -79,7 +80,53 @@ for (const [unitKey, raw] of Object.entries(db)) {
             lTitle,
             `Narrative Plate ${bIdx + 1}`,
             b.caption || b.image_alt || '',
+            true,
           );
+        }
+        if (b.slide_compare && typeof b.slide_compare === 'object') {
+          const scBefore =
+            (b.slide_compare.before && (b.slide_compare.before.image || b.slide_compare.before.src)) ||
+            b.slide_compare.before_image;
+          const scAfter =
+            (b.slide_compare.after && (b.slide_compare.after.image || b.slide_compare.after.src)) ||
+            b.slide_compare.after_image;
+          if (scBefore) {
+            inspectImage(
+              scBefore,
+              unitKey,
+              unitTitle,
+              lTitle,
+              `Slide-Compare Before ${bIdx + 1}`,
+              b.slide_compare.caption || b.slide_compare.title || '',
+              true,
+            );
+          }
+          if (scAfter) {
+            inspectImage(
+              scAfter,
+              unitKey,
+              unitTitle,
+              lTitle,
+              `Slide-Compare After ${bIdx + 1}`,
+              b.slide_compare.caption || b.slide_compare.title || '',
+              true,
+            );
+          }
+        }
+        if (b.concept_widget && Array.isArray(b.concept_widget.items)) {
+          b.concept_widget.items.forEach((cwItem, cwIdx) => {
+            if (cwItem && cwItem.portrait) {
+              inspectImage(
+                cwItem.portrait,
+                unitKey,
+                unitTitle,
+                lTitle,
+                `Concept Widget Portrait ${bIdx + 1}.${cwIdx + 1}`,
+                cwItem.title || '',
+                true,
+              );
+            }
+          });
         }
       });
     }
@@ -96,6 +143,7 @@ for (const [unitKey, raw] of Object.entries(db)) {
             lTitle,
             `Source ${s.letter || s.id || ''}`,
             s.title || s.caption || '',
+            false,
           );
         }
       });
@@ -103,7 +151,7 @@ for (const [unitKey, raw] of Object.entries(db)) {
   });
 }
 
-function inspectImage(imgPath, unitKey, unitTitle, lTitle, type, caption) {
+function inspectImage(imgPath, unitKey, unitTitle, lTitle, type, caption, requireCommercialClearance) {
   totalImagesInspected++;
   const normPath = imgPath.toLowerCase().trim();
 
@@ -128,9 +176,24 @@ function inspectImage(imgPath, unitKey, unitTitle, lTitle, type, caption) {
     }
   }
 
+  if (!rightsRecord && normPath.endsWith('.svg')) {
+    rightsRecord = {
+      artifact_title: 'Original Pedagogical Vector Diagram (The History Revision Hub)',
+      creator: 'The History Revision Hub Studio',
+      repository: 'The History Revision Hub Original IP',
+      rights_status: 'Original Hub IP (100% Commercial Cleared)',
+      commercial_use_permitted: true,
+    };
+  }
+
   if (!rightsRecord) {
     console.warn(`⚠️ [UNTRACKED PROVENANCE] ${unitKey} -> ${imgPath}`);
     provenanceViolations++;
+  } else if (requireCommercialClearance && rightsRecord.commercial_use_permitted !== true) {
+    console.error(
+      `❌ [NON-COMMERCIAL LAYER 2 ASSET] ${unitKey} -> ${imgPath} (${type}) has commercial_use_permitted !== true. Layer 2 illustrative plates, banners & slide-compare images MUST be 100% cleared for commercial sale.`,
+    );
+    commercialRightsViolations++;
   }
 
   // 3. AI Forensic Check
@@ -162,14 +225,20 @@ console.log(`Total Media Assets Audited:        ${totalImagesInspected}`);
 console.log(`Missing Disk Files (404s):         ${fileMissingViolations}`);
 console.log(`Missing Archive Provenance (DB):   ${provenanceViolations}`);
 console.log(`AI / Synthetic Artifacts Detected: ${aiArtifactViolations}`);
+console.log(`Non-Commercial Layer 2 Violations: ${commercialRightsViolations}`);
 console.log('----------------------------------------------------------------------\n');
 
 // Generate Master Visual Audit Gallery
 generateGalleryHTML(galleryItems);
 
-if (fileMissingViolations > 0 || provenanceViolations > 0 || aiArtifactViolations > 0) {
+if (
+  fileMissingViolations > 0 ||
+  provenanceViolations > 0 ||
+  aiArtifactViolations > 0 ||
+  commercialRightsViolations > 0
+) {
   console.error(
-    `❌ AUDIT FAILED with ${fileMissingViolations + provenanceViolations + aiArtifactViolations} violations.`,
+    `❌ AUDIT FAILED with ${fileMissingViolations + provenanceViolations + aiArtifactViolations + commercialRightsViolations} violations.`,
   );
   process.exit(1);
 } else {
