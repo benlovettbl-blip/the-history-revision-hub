@@ -112,6 +112,7 @@ export const UNIT_VOICE_ASSIGNMENTS = {
   weimar_nazi_germany: 'male_historian',
   edexcel_medicine: 'female_historian',
   cold_war: 'male_historian',
+  gcse_cold_war: 'male_historian',
   usa: 'female_historian',
 
   // KS3 & KS2 Units

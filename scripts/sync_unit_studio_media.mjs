@@ -140,7 +140,7 @@ function renderCardVisual(card) {
 }
 
 function renderCard(card, idx, colorClass) {
-  const badgeCls = card.isOutcome ? 'step-badge outcome-badge' : 'step-badge';
+  const badgeCls = card.isOutcome || colorClass === 'card-outcome' ? 'step-badge outcome-badge' : 'step-badge';
   return `
         <article class="story-card ${colorClass}" id="card-${idx}" onclick="jumpToStage(${idx})">
           <div class="card-top">
@@ -748,6 +748,14 @@ export function normalizeCardHtmlForSpeech(rawHtml) {
 }
 
 export function deriveVerbatimCardSpoken(sheet, card, idx) {
+  if (!card.connective && card.spoken && !/<short pause>/i.test(card.spoken)) {
+    let spoken = String(card.spoken).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const spTitle = String(sheet.spokenTitle || sheet.title || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    if (idx === 0 && spTitle && !spoken.toLowerCase().startsWith(spTitle.slice(0, 12).toLowerCase())) {
+      spoken = `${spTitle} <short pause> ${spoken}`;
+    }
+    return expandBritishDatesForSpeech(spoken);
+  }
   const rawLead =
     card.connective ||
     (idx === 0
@@ -1246,8 +1254,8 @@ async function syncSingleUnit(unitId, { initAudio = false, forceAudio = false, s
         const prevEntry = sheetHashes.clips[clip.id];
         const mp3Exists = fs.existsSync(outMp3Path) && fs.statSync(outMp3Path).size > 1500;
 
-        // Preserve unchanged pre-existing takeaway MP3s on initial manifest bootstrap
-        if (isFirstSheetHashInit && !forceAudio && mp3Exists && clip.id.endsWith('_takeaway')) {
+        // Preserve unchanged pre-existing Visual Story Sheet MP3s on initial manifest bootstrap
+        if (isFirstSheetHashInit && !forceAudio && mp3Exists) {
           sheetHashes.clips[clip.id] = {
             hash: contentHash,
             bytes: fs.statSync(outMp3Path).size,
