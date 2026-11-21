@@ -39,32 +39,7 @@ jobs:
           node scripts/audit_donow_grounding.cjs
           node scripts/audit_all_retrieval_companions.cjs
 
-      - name: Production Vite Build & Cloudflare Edge Size Gate
+      - name: Production Vite Build, Cloudflare Edge Limits & SEO Parity Gate
         run: |
           npm run build
-          node -e '
-            const fs = require("fs");
-            const path = require("path");
-            const MAX_ASSET = 25 * 1024 * 1024;
-            const MAX_JS = 500 * 1024;
-            const overAsset = [], overJs = [];
-            function walk(d) {
-              for (const e of fs.readdirSync(d, { withFileTypes: true })) {
-                const f = path.join(d, e.name);
-                if (e.isDirectory()) walk(f);
-                else {
-                  const sz = fs.statSync(f).size;
-                  if (sz > MAX_ASSET) overAsset.push(`${f} (${(sz/1048576).toFixed(2)} MiB)`);
-                  if (f.includes(path.join("dist", "assets")) && f.endsWith(".js") && sz > MAX_JS) {
-                    overJs.push(`${e.name} (${(sz/1024).toFixed(1)} KiB)`);
-                  }
-                }
-              }
-            }
-            walk("dist");
-            if (overAsset.length || overJs.length) {
-              console.error("Oversized Cloudflare assets:", overAsset, "Oversized JS chunks:", overJs);
-              process.exit(1);
-            }
-            console.log("✅ Cloudflare 25 MiB asset limit and <500 kB JS chunk budget verified!");
-          '
+          node scripts/verify_cloudflare_and_seo.mjs

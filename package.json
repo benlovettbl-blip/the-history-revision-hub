@@ -90,6 +90,7 @@
     "clean:temp": "node scripts/clean_cache.cjs",
     "clean:schedule": "powershell -ExecutionPolicy Bypass -File scripts/register_scheduled_cleanup.ps1",
     "audit:links": "node scripts/audit_app_links.cjs",
+    "audit:seo": "node scripts/verify_cloudflare_and_seo.mjs",
     "generate:boosters": "node scripts/generate_overdue_revision_sheets.cjs",
     "prepare": "husky",
     "audit:language": "node scripts/audit_gcse_language.cjs",

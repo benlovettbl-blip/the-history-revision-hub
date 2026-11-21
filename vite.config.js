@@ -63,7 +63,7 @@ function seoCoursePagesPlugin() {
       const homeDirectoryHtml = `
           <section class="seo-prerender-directory" style="max-width: 920px; margin: 24px auto; padding: 20px;">
             <h1 style="font-size: 1.6rem; margin-bottom: 8px;">The History Revision Hub — UK KS2, KS3 &amp; Edexcel GCSE (9–1) History</h1>
-            <p style="margin-bottom: 18px; line-height: 1.6;">Interactive History lessons, archival primary sources, studio audio read-alouds, and retrieval practice across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE History.</p>
+            <p style="margin-bottom: 18px; line-height: 1.6;">Interactive History lessons, archival primary sources, studio audio read-alouds, retrieval quizzes, and printable classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE History.</p>
             <nav aria-label="History Courses Directory">
               <ul style="line-height: 1.8; padding-left: 20px;">
                 ${SEO_UNIT_ROUTES.map(
@@ -86,7 +86,7 @@ function seoCoursePagesPlugin() {
 
       fs.writeFileSync(baseIndexPath, enrichedHomeHtml, 'utf8');
 
-      // 2. Generate dedicated static HTML route for each of the 18 courses
+      // 2. Generate dedicated static HTML route for each course in SEO_UNIT_ROUTES
       let generatedCount = 0;
       for (const route of SEO_UNIT_ROUTES) {
         const unitRecord = db[route.unitId];
@@ -149,14 +149,15 @@ function seoCoursePagesPlugin() {
           .join('\n              ');
 
         const otherLinksHtml = SEO_UNIT_ROUTES.filter((r) => r.unitId !== route.unitId)
-          .map((r) => `<a href="/${escapeHtml(r.slug)}" style="margin-right: 12px;">${escapeHtml(r.heading)}</a>`)
+          .map((r) => `<a href="/${escapeHtml(r.slug)}/" style="margin-right: 12px;">${escapeHtml(r.heading)}</a>`)
           .join('\n              ');
 
         const courseBodyHtml = `
           <article class="seo-course-prerender" style="max-width: 920px; margin: 24px auto; padding: 20px;">
             <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; margin-bottom: 6px;">${escapeHtml(route.examBoard)} &bull; ${escapeHtml(route.keyStage)}</p>
             <h1 style="font-size: 1.75rem; margin-bottom: 12px;">${escapeHtml(route.heading)}</h1>
-            <p style="line-height: 1.65; margin-bottom: 20px;">${escapeHtml(overviewProse)}</p>
+            <p style="line-height: 1.65; margin-bottom: 14px;">${escapeHtml(overviewProse)}</p>
+            <p style="line-height: 1.6; margin-bottom: 20px; font-size: 0.94rem; opacity: 0.92;">Includes studio-voiced narrative lessons, rotated archival primary sources, interactive retrieval quizzes, and printable classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions.</p>
             ${
               lessonItemsHtml
                 ? `<h2 style="font-size: 1.2rem; margin-bottom: 10px;">Course Enquiries &amp; Revision Topics (${lessons.length} Lessons)</h2>
@@ -213,8 +214,20 @@ function seoCoursePagesPlugin() {
         generatedCount++;
       }
 
+      // 3. Auto-generate dist/sitemap.xml directly from SEO_UNIT_ROUTES (Zero Drift)
+      const buildDateIso = new Date().toISOString().slice(0, 10);
+      const sitemapEntries = [
+        `  <url>\n    <loc>${SITE_ORIGIN}/</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+        ...SEO_UNIT_ROUTES.map(
+          (r) =>
+            `  <url>\n    <loc>${SITE_ORIGIN}/${escapeHtml(r.slug)}/</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${escapeHtml(r.priority || '0.85')}</priority>\n  </url>`,
+        ),
+      ].join('\n');
+      const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
+      fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf8');
+
       console.log(
-        `[seo-course-pages-generator] Generated ${generatedCount} static SEO course pages in dist/.`,
+        `[seo-course-pages-generator] Generated ${generatedCount} static SEO course pages + sitemap.xml (${SEO_UNIT_ROUTES.length + 1} URLs) in dist/.`,
       );
     },
   };

@@ -221,14 +221,14 @@ export const SEO_UNIT_ROUTES = [
   {
     unitId: 'cold_war',
     slug: 'cold-war-1945-1991',
-    aliases: ['superpower-relations-cold-war'],
-    keyStage: 'Key Stage 3 & GCSE',
-    examBoard: 'UK Key Stage 3 & GCSE Modern World History',
-    heading: 'Superpower Relations & The Cold War (1945–1991)',
+    aliases: ['ks3-cold-war', 'superpower-relations-cold-war'],
+    keyStage: 'Key Stage 3 (Year 9)',
+    examBoard: 'UK National Curriculum Key Stage 3 History',
+    heading: 'The Cold War: Ideologies, Flashpoints & Collapse (1945–1991)',
     seoTitle:
-      'The Cold War & Superpower Flashpoints (1945–1991) | KS3 & GCSE History Revision | The History Revision Hub',
+      'The Cold War (1945–1991) | KS3 Year 9 History Lessons, Sources & Revision | The History Revision Hub',
     metaDescription:
-      'Interactive History lessons, archival primary sources, studio audio read-alouds, and retrieval quizzes on the Cold War (1945–1991): Iron Curtain, Berlin Blockade and Wall, Cuban Missile Crisis, Détente, and the collapse of the USSR.',
+      'Interactive UK Key Stage 3 (Year 9) History lessons, archival primary sources, studio audio read-alouds, and retrieval quizzes on the Cold War (1945–1991): Iron Curtain, Berlin Blockade and Wall, Cuban Missile Crisis, Vietnam, Détente, and the collapse of the USSR.',
     priority: '0.85',
   },
   {
