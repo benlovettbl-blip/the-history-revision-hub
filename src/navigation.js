@@ -20,7 +20,12 @@ import {
 } from './views.js'; // Trigger HMR
 import { jumpToKeyIndividual } from './key_individuals.js';
 import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_catalog.js';
-import { getCleanPathForUnit, getSeoRouteForUnit, SITE_ORIGIN } from './data/seo_routes.js';
+import {
+  getCleanPathForUnit,
+  getSeoRouteForUnit,
+  SCHOOLS_SEO_PAGE,
+  SITE_ORIGIN,
+} from './data/seo_routes.js';
 
 export { jumpToKeyIndividual };
 
@@ -31,10 +36,24 @@ const DEFAULT_META_DESCRIPTION =
 
 function syncDynamicSeoMetadata(viewName, unitId) {
   if (typeof document === 'undefined') return;
-  const route = viewName !== 'dashboard' && unitId ? getSeoRouteForUnit(unitId) : null;
-  const nextTitle = route ? route.seoTitle : DEFAULT_DOCUMENT_TITLE;
-  const nextDesc = route ? route.metaDescription : DEFAULT_META_DESCRIPTION;
-  const nextCanonical = route ? `${SITE_ORIGIN}/${route.slug}/` : `${SITE_ORIGIN}/`;
+  const isSchools = viewName === 'schools';
+  const route =
+    !isSchools && viewName !== 'dashboard' && unitId ? getSeoRouteForUnit(unitId) : null;
+  const nextTitle = isSchools
+    ? SCHOOLS_SEO_PAGE.seoTitle
+    : route
+      ? route.seoTitle
+      : DEFAULT_DOCUMENT_TITLE;
+  const nextDesc = isSchools
+    ? SCHOOLS_SEO_PAGE.metaDescription
+    : route
+      ? route.metaDescription
+      : DEFAULT_META_DESCRIPTION;
+  const nextCanonical = isSchools
+    ? `${SITE_ORIGIN}/schools/`
+    : route
+      ? `${SITE_ORIGIN}/${route.slug}/`
+      : `${SITE_ORIGIN}/`;
 
   document.title = nextTitle;
   const descEl = document.querySelector('meta[name="description"]');
@@ -71,6 +90,7 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
   const activeView = viewName || appStore.state.currentView || state.currentView || urlParams.get('view') || 'dashboard';
   const isGlobalHubView =
     activeView === 'dashboard' ||
+    activeView === 'schools' ||
     activeView === 'curriculum' ||
     activeView === 'department-portal' ||
     activeView === 'competitions' ||
@@ -697,6 +717,7 @@ export function updateBreadcrumbs(customTrail = null) {
     else if (viewName === 'mock-exams') currentSectionLabel = 'GCSE Mock Exams';
     else if (viewName === 'profile') currentSectionLabel = 'Student Profile';
     else if (viewName === 'curriculum') currentSectionLabel = 'Curriculum Map';
+    else if (viewName === 'schools') currentSectionLabel = 'For Schools & Departments';
     else if (viewName === 'department-portal') currentSectionLabel = 'Department Portal';
     else if (viewName === 'competitions') currentSectionLabel = 'Competitions & Awards';
     else if (viewName === 'chess') currentSectionLabel = 'Chess Club';
@@ -871,7 +892,16 @@ export async function switchView(viewName, param = null, skipHistory = false, op
 
   // Comprehensive view alias normalization for QR codes, links, and direct URLs
   let rawView = (viewName || '').toLowerCase().trim();
-  if (rawView === 'usa' || rawView === 'gcse_usa' || rawView === 'gcse_usa_1954_1975') {
+  if (
+    rawView === 'schools' ||
+    rawView === 'for-schools' ||
+    rawView === 'for_schools' ||
+    rawView === 'departments' ||
+    rawView === 'for-departments'
+  ) {
+    viewName = 'schools';
+    param = null;
+  } else if (rawView === 'usa' || rawView === 'gcse_usa' || rawView === 'gcse_usa_1954_1975') {
     viewName = 'lessons';
     param = 'usa';
   } else if (
@@ -963,9 +993,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   const lockedUnit =
     (urlParams && urlParams.get('unit')) || state.selectedUnitId || window.currentUnitId;
 
-  if (isLocked && lockedUnit) {
+    if (isLocked && lockedUnit) {
     const restrictedViews = [
       'dashboard',
+      'schools',
       'profile',
       'curriculum',
       'department-portal',
@@ -1099,6 +1130,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       url.searchParams.get('safeguard') === 'true';
     const cleanUnitPath = getCleanPathForUnit(param);
     const isPureDashboard = viewName === 'dashboard' && !param && !isLockedSession;
+    const isPureSchools = viewName === 'schools' && !isLockedSession;
     const isPureUnitOverview =
       viewName === 'lessons' &&
       Boolean(cleanUnitPath) &&
@@ -1107,6 +1139,9 @@ export async function switchView(viewName, param = null, skipHistory = false, op
 
     if (isPureDashboard) {
       url.pathname = '/';
+      url.search = '';
+    } else if (isPureSchools) {
+      url.pathname = '/schools/';
       url.search = '';
     } else if (isPureUnitOverview) {
       url.pathname = cleanUnitPath;
@@ -1181,6 +1216,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   // Clean up unit-specific sidebar navigation on global views
   const isGlobalView =
     viewName === 'dashboard' ||
+    viewName === 'schools' ||
     viewName === 'profile' ||
     viewName === 'curriculum' ||
     viewName === 'department-portal' ||
@@ -1242,6 +1278,9 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   // Handle view rendering
   if (viewName === 'dashboard' || viewName === 'profile') {
     renderDashboard();
+  } else if (viewName === 'schools') {
+    const { renderSchoolsShowcase } = await import('./schools_showcase.js');
+    renderSchoolsShowcase();
   } else if (viewName === 'arcade') {
     const targetUnit =
       param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
@@ -1383,6 +1422,8 @@ export async function switchView(viewName, param = null, skipHistory = false, op
           : '';
       if (viewName === 'dashboard') {
         document.title = 'The History Revision Hub';
+      } else if (viewName === 'schools') {
+        document.title = SCHOOLS_SEO_PAGE.seoTitle;
       } else if (viewName === 'mock-exams' || viewName === 'exam-practice') {
         document.title = unitTitleClean
           ? `Mock Exams & Mark Schemes — ${unitTitleClean}`

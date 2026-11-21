@@ -1,4 +1,7 @@
 # Dual-Compatible Clean Course Redirects (Cloudflare Pages & Netlify)
+/for-schools                    /schools/                      301
+/departments                    /schools/                      301
+/for-departments                /schools/                      301
 /usa/*                          /usa-1954-1975/                301
 /usa                            /usa-1954-1975/                301
 /usa-conflict-home-and-abroad   /usa-1954-1975/                301

@@ -25,7 +25,7 @@ import {
 } from './keyword_search.js';
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
-import { resolveUnitIdFromPathname } from './data/seo_routes.js';
+import { resolveUnitIdFromPathname, isSchoolsPathname } from './data/seo_routes.js';
 
 function purgeGDPRHistoricalCache() {
   try {
@@ -345,7 +345,8 @@ window.addEventListener('DOMContentLoaded', async () => {
     } catch (e) {}
   }
   const pathUnit = resolveUnitIdFromPathname(window.location.pathname);
-  let view = urlParams.get('view');
+  const pathIsSchools = isSchoolsPathname(window.location.pathname);
+  let view = urlParams.get('view') || (pathIsSchools ? 'schools' : null);
   let unit = urlParams.get('unit') || pathUnit;
   const initialLesson = urlParams.get('lesson');
 
@@ -354,7 +355,16 @@ window.addEventListener('DOMContentLoaded', async () => {
     let normView = (v || '').toLowerCase().trim();
     let normUnit = u;
 
-    if (normView === 'usa' || normView === 'gcse_usa' || normView === 'gcse_usa_1954_1975') {
+    if (
+      normView === 'schools' ||
+      normView === 'for-schools' ||
+      normView === 'for_schools' ||
+      normView === 'departments' ||
+      normView === 'for-departments'
+    ) {
+      normView = 'schools';
+      normUnit = null;
+    } else if (normView === 'usa' || normView === 'gcse_usa' || normView === 'gcse_usa_1954_1975') {
       normView = 'lessons';
       normUnit = 'usa';
     } else if (
@@ -700,7 +710,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     const currentUrlParams = new URLSearchParams(window.location.search);
     const pathUnit = resolveUnitIdFromPathname(window.location.pathname);
-    const urlView = currentUrlParams.get('view');
+    const pathIsSchools = isSchoolsPathname(window.location.pathname);
+    const urlView = currentUrlParams.get('view') || (pathIsSchools ? 'schools' : null);
     const urlUnit = currentUrlParams.get('unit') || pathUnit;
     const urlLesson = currentUrlParams.get('lesson');
     const targetScrollY = e.state && typeof e.state.scrollY === 'number' ? e.state.scrollY : 0;

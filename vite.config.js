@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SEO_UNIT_ROUTES, SITE_ORIGIN } from './src/data/seo_routes.js';
+import { SEO_UNIT_ROUTES, SCHOOLS_SEO_PAGE, SITE_ORIGIN } from './src/data/seo_routes.js';
 
 function escapeHtml(str = '') {
   return String(str)
@@ -63,7 +63,7 @@ function seoCoursePagesPlugin() {
       const homeDirectoryHtml = `
           <section class="seo-prerender-directory" style="max-width: 920px; margin: 24px auto; padding: 20px;">
             <h1 style="font-size: 1.6rem; margin-bottom: 8px;">The History Revision Hub — UK KS2, KS3 &amp; Edexcel GCSE (9–1) History</h1>
-            <p style="margin-bottom: 18px; line-height: 1.6;">Interactive History lessons, archival primary sources, studio audio read-alouds, retrieval quizzes, and printable classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE History.</p>
+            <p style="margin-bottom: 18px; line-height: 1.6;">Interactive History lessons, archival primary sources, studio audio read-alouds, retrieval quizzes, and printable classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE History. <a href="/schools/"><strong>For UK Schools &amp; History Departments &rarr;</strong></a></p>
             <nav aria-label="History Courses Directory">
               <ul style="line-height: 1.8; padding-left: 20px;">
                 ${SEO_UNIT_ROUTES.map(
@@ -214,10 +214,88 @@ function seoCoursePagesPlugin() {
         generatedCount++;
       }
 
-      // 3. Auto-generate dist/sitemap.xml directly from SEO_UNIT_ROUTES (Zero Drift)
+      // 3. Generate dedicated static SEO page for /schools/ (For Schools & History Departments)
+      const schoolsCanonical = `${SITE_ORIGIN}/${SCHOOLS_SEO_PAGE.slug}/`;
+      const schoolsSchema = {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'The History Revision Hub', item: `${SITE_ORIGIN}/` },
+              { '@type': 'ListItem', position: 2, name: SCHOOLS_SEO_PAGE.heading, item: schoolsCanonical },
+            ],
+          },
+          {
+            '@type': 'WebPage',
+            name: SCHOOLS_SEO_PAGE.seoTitle,
+            description: SCHOOLS_SEO_PAGE.metaDescription,
+            url: schoolsCanonical,
+            inLanguage: 'en-GB',
+            about: {
+              '@type': 'EducationalOrganization',
+              name: 'The History Revision Hub',
+              url: `${SITE_ORIGIN}/`,
+              email: 'contact@historyrevisionhub.co.uk',
+            },
+          },
+        ],
+      };
+      const schoolsBodyHtml = `
+          <article class="seo-schools-prerender" style="max-width: 960px; margin: 24px auto; padding: 20px;">
+            <h1 style="font-size: 1.8rem; margin-bottom: 12px;">${escapeHtml(SCHOOLS_SEO_PAGE.heading)}</h1>
+            <p style="line-height: 1.65; margin-bottom: 16px;">${escapeHtml(SCHOOLS_SEO_PAGE.metaDescription)}</p>
+            <h2 style="font-size: 1.2rem; margin-bottom: 8px;">Zero Student Logins &bull; Print-Room Saddle-Stitch Booklets &bull; Studio Audio</h2>
+            <ul style="line-height: 1.75; padding-left: 22px; margin-bottom: 20px;">
+              <li><strong>Zero Student Accounts or Personal Data:</strong> Share lesson, audio, and quiz links directly into Google Classroom or Microsoft Teams with zero GDPR Data Processing Agreement delays.</li>
+              <li><strong>Four Classroom Publications Per Course:</strong> Master Classroom Textbooks, Double-Page Pupil Workbooks (with Teacher Mark Schemes &amp; WAGOLLs), Knowledge Retrieval Companions, and Mastery Exam Packs—available with custom school cover branding.</li>
+              <li><strong>19 Complete Courses:</strong> Pearson Edexcel GCSE (Medicine, Early Elizabethan England, Superpower Cold War 1941–91, Conflict in the Middle East, Weimar &amp; Nazi Germany, USA 1954–75), 12 Key Stage 3 National Curriculum units, and KS2 World War II.</li>
+            </ul>
+            <p style="margin-bottom: 20px;">Department enquiries &amp; custom cover packs: <a href="mailto:contact@historyrevisionhub.co.uk"><strong>contact@historyrevisionhub.co.uk</strong></a></p>
+            <nav aria-label="All History Courses" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
+              <a href="/" style="font-weight: 700; margin-right: 14px;">&larr; All Courses Home</a>
+              ${SEO_UNIT_ROUTES.map((r) => `<a href="/${escapeHtml(r.slug)}/" style="margin-right: 12px;">${escapeHtml(r.heading)}</a>`).join('\n              ')}
+            </nav>
+          </article>`;
+      const schoolsHtml = baseHtml
+        .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(SCHOOLS_SEO_PAGE.seoTitle)}</title>`)
+        .replace(
+          /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/,
+          `<meta name="description" content="${escapeHtml(SCHOOLS_SEO_PAGE.metaDescription)}" />`,
+        )
+        .replace(
+          /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
+          `<link rel="canonical" href="${escapeHtml(schoolsCanonical)}" />`,
+        )
+        .replace(
+          /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/,
+          `<meta property="og:title" content="${escapeHtml(SCHOOLS_SEO_PAGE.seoTitle)}" />`,
+        )
+        .replace(
+          /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/,
+          `<meta property="og:description" content="${escapeHtml(SCHOOLS_SEO_PAGE.metaDescription)}" />`,
+        )
+        .replace(
+          /<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/,
+          `<meta property="og:url" content="${escapeHtml(schoolsCanonical)}" />`,
+        )
+        .replace(
+          '</head>',
+          `    <script type="application/ld+json">${JSON.stringify(schoolsSchema)}</script>\n  </head>`,
+        )
+        .replace(
+          /<div class="content-container" id="main-content">[\s\S]*?<\/div>/,
+          `<div class="content-container" id="main-content">${schoolsBodyHtml}\n        </div>`,
+        );
+      const schoolsOutDir = path.join(distDir, SCHOOLS_SEO_PAGE.slug);
+      fs.mkdirSync(schoolsOutDir, { recursive: true });
+      fs.writeFileSync(path.join(schoolsOutDir, 'index.html'), schoolsHtml, 'utf8');
+
+      // 4. Auto-generate dist/sitemap.xml directly from SEO_UNIT_ROUTES + /schools/ (Zero Drift)
       const buildDateIso = new Date().toISOString().slice(0, 10);
       const sitemapEntries = [
         `  <url>\n    <loc>${SITE_ORIGIN}/</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+        `  <url>\n    <loc>${schoolsCanonical}</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${SCHOOLS_SEO_PAGE.priority}</priority>\n  </url>`,
         ...SEO_UNIT_ROUTES.map(
           (r) =>
             `  <url>\n    <loc>${SITE_ORIGIN}/${escapeHtml(r.slug)}/</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${escapeHtml(r.priority || '0.85')}</priority>\n  </url>`,
@@ -227,7 +305,7 @@ function seoCoursePagesPlugin() {
       fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf8');
 
       console.log(
-        `[seo-course-pages-generator] Generated ${generatedCount} static SEO course pages + sitemap.xml (${SEO_UNIT_ROUTES.length + 1} URLs) in dist/.`,
+        `[seo-course-pages-generator] Generated ${generatedCount} static SEO course pages + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + 2} URLs) in dist/.`,
       );
     },
   };

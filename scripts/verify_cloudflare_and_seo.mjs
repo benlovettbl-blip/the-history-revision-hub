@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { SEO_UNIT_ROUTES, SITE_ORIGIN } from '../src/data/seo_routes.js';
+import { SEO_UNIT_ROUTES, SCHOOLS_SEO_PAGE, SITE_ORIGIN } from '../src/data/seo_routes.js';
 
 const MAX_ASSET = 25 * 1024 * 1024; // Cloudflare Pages 25 MiB per-file limit
 const MAX_JS = 500 * 1024; // 500 kB Vite JS chunk budget
@@ -47,13 +47,13 @@ const sitemapPath = path.join(distDir, 'sitemap.xml');
 const headersPath = path.join(distDir, '_headers');
 const sitemap = fs.existsSync(sitemapPath) ? fs.readFileSync(sitemapPath, 'utf8') : '';
 const headersTxt = fs.existsSync(headersPath) ? fs.readFileSync(headersPath, 'utf8') : '';
-const slugSet = new Set(SEO_UNIT_ROUTES.map((r) => r.slug));
+const slugSet = new Set([SCHOOLS_SEO_PAGE.slug, ...SEO_UNIT_ROUTES.map((r) => r.slug)]);
 
 if (!sitemap.includes(`<loc>${SITE_ORIGIN}/</loc>`)) {
   seoErrors.push(`Homepage missing from dist/sitemap.xml (${SITE_ORIGIN}/)`);
 }
 
-for (const route of SEO_UNIT_ROUTES) {
+for (const route of [SCHOOLS_SEO_PAGE, ...SEO_UNIT_ROUTES]) {
   const routeHtmlPath = path.join(distDir, route.slug, 'index.html');
   if (!fs.existsSync(routeHtmlPath)) {
     seoErrors.push(`Missing static SEO page: dist/${route.slug}/index.html`);
@@ -90,5 +90,5 @@ if (overAsset.length || overJs.length || seoErrors.length) {
 }
 
 console.log(
-  `✅ Cloudflare Edge (${totalFiles.toLocaleString()} / 20,000 files, <25 MiB assets, <500 kB JS) & ${SEO_UNIT_ROUTES.length}/${SEO_UNIT_ROUTES.length} static SEO routes + sitemap.xml verified!`,
+  `✅ Cloudflare Edge (${totalFiles.toLocaleString()} / 20,000 files, <25 MiB assets, <500 kB JS) & ${SEO_UNIT_ROUTES.length}/${SEO_UNIT_ROUTES.length} static SEO routes + /schools/ + sitemap.xml verified!`,
 );

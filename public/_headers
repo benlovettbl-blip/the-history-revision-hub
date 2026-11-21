@@ -9,6 +9,9 @@
 /sw.js
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
+/schools*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
 /edexcel-medicine*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 

@@ -6,6 +6,25 @@
 
 export const SITE_ORIGIN = 'https://historyrevisionhub.co.uk';
 
+export const SCHOOLS_SEO_PAGE = {
+  slug: 'schools',
+  aliases: ['for-schools', 'departments', 'for-departments'],
+  heading: 'For UK Schools & History Departments',
+  seoTitle:
+    'For Schools & History Departments | KS2, KS3 & Edexcel GCSE Curriculum Packs | The History Revision Hub',
+  metaDescription:
+    'Zero-login UK History curriculum and printable classroom booklets for Schools and History Departments across KS2, KS3, and Pearson Edexcel GCSE (9–1): Master Textbooks, Pupil Workbooks, Retrieval Companions, and Studio Audio.',
+  priority: '0.9',
+};
+
+const SCHOOLS_SLUGS = new Set([SCHOOLS_SEO_PAGE.slug, ...SCHOOLS_SEO_PAGE.aliases]);
+
+export function isSchoolsPathname(pathname) {
+  if (!pathname || typeof pathname !== 'string') return false;
+  const cleaned = pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+  return SCHOOLS_SLUGS.has(cleaned);
+}
+
 export const SEO_UNIT_ROUTES = [
   // Key Stage 4: Pearson Edexcel GCSE (9–1) History
   {
