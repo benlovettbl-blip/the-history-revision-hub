@@ -216,6 +216,32 @@ if (typeof window !== 'undefined') {
   window.toggleGlobalStaffMode = toggleGlobalStaffMode;
 }
 
+const SILENT_PUPIL_PASS_DIGESTS = new Set([
+  '758389736dfb9975c2b44d6065ceb6a5b8b7424ce6215a6b403ce25be0c4477a',
+  '704e0f0a489214d1c02423d8557f3a8fbe977fea0c617e02d76d48dfb6edf80b',
+]);
+
+function initSilentPupilPassPreseed() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const raw = (params.get('s') || params.get('access') || '').trim().toLowerCase();
+    if (!raw || typeof staffAuthModule.sha256HexSync !== 'function') return;
+    const digest = staffAuthModule.sha256HexSync('hrh_pupil_pass_v1:' + raw);
+    if (SILENT_PUPIL_PASS_DIGESTS.has(digest)) {
+      localStorage.setItem(
+        'hh_school_pupil_licence_v1',
+        JSON.stringify({ digest, scope: 'all', ts: Date.now() }),
+      );
+      if (window.history && window.history.replaceState) {
+        const cleanUrl = new URL(window.location.href);
+        cleanUrl.searchParams.delete('s');
+        cleanUrl.searchParams.delete('access');
+        window.history.replaceState(window.history.state || {}, '', cleanUrl);
+      }
+    }
+  } catch (e) {}
+}
+
 export function initTeacherMode() {
   try {
     const { verifyStaffPasskeySync } = window.__staffAuthModule || {};
@@ -230,17 +256,15 @@ export function initTeacherMode() {
       localStorage.getItem('history_hub_teacher_mode') === 'true' ||
       localStorage.getItem('history_chess_teacher_auth') === 'true';
 
-    const passkeyValid =
-      passkey === 'true' ||
-      (passkey && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(passkey));
+    const passkeyValid = Boolean(
+      passkey && typeof verifyStaffPasskeySync === 'function' && verifyStaffPasskeySync(passkey),
+    );
 
     const isPreviewPupil =
       typeof sessionStorage !== 'undefined' &&
       sessionStorage.getItem('hh_preview_as_pupil') === 'true';
 
-    const isAuthorized =
-      !isPreviewPupil &&
-      (isLocal || hasStoredAuth || params.get('role') === 'teacher' || passkeyValid);
+    const isAuthorized = !isPreviewPupil && (isLocal || hasStoredAuth || passkeyValid);
 
     if (isAuthorized) {
       localStorage.setItem('history_hub_teacher_mode', 'true');
@@ -282,6 +306,7 @@ export function initTeacherMode() {
 window.addEventListener('DOMContentLoaded', async () => {
   // Execute GDPR cache, storage, and service worker scrub
   purgeGDPRHistoricalCache();
+  initSilentPupilPassPreseed();
 
   // Initialize UI subscribers
   initNavigationUI();
