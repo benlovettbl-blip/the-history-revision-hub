@@ -63,7 +63,7 @@ function seoCoursePagesPlugin() {
       const homeDirectoryHtml = `
           <section class="seo-prerender-directory" style="max-width: 920px; margin: 24px auto; padding: 20px;">
             <h1 style="font-size: 1.6rem; margin-bottom: 8px;">The History Revision Hub — UK KS2, KS3 &amp; Edexcel GCSE (9–1) History</h1>
-            <p style="margin-bottom: 18px; line-height: 1.6;">Interactive History lessons, archival primary sources, studio audio read-alouds, retrieval quizzes, and printable classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE History. <a href="/schools/"><strong>For UK Schools &amp; History Departments &rarr;</strong></a></p>
+            <p style="margin-bottom: 18px; line-height: 1.6;">Interactive History lessons, archival primary sources, studio audio read-alouds, retrieval quizzes, and printable classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE History.</p>
             <nav aria-label="History Courses Directory">
               <ul style="line-height: 1.8; padding-left: 20px;">
                 ${SEO_UNIT_ROUTES.map(
@@ -248,10 +248,10 @@ function seoCoursePagesPlugin() {
             <h2 style="font-size: 1.2rem; margin-bottom: 8px;">Zero Student Logins &bull; Print-Room Saddle-Stitch Booklets &bull; Studio Audio</h2>
             <ul style="line-height: 1.75; padding-left: 22px; margin-bottom: 20px;">
               <li><strong>Zero Student Accounts or Personal Data:</strong> Share lesson, audio, and quiz links directly into Google Classroom or Microsoft Teams with zero GDPR Data Processing Agreement delays.</li>
-              <li><strong>Four Classroom Publications Per Course:</strong> Master Classroom Textbooks, Double-Page Pupil Workbooks (with Teacher Mark Schemes &amp; WAGOLLs), Knowledge Retrieval Companions, and Mastery Exam Packs—available with custom school cover branding.</li>
+              <li><strong>Four Classroom Publications Per Course:</strong> Master Classroom Textbooks, Double-Page Pupil Workbooks (with Teacher Mark Schemes &amp; WAGOLLs), Knowledge Retrieval Companions, and Mastery Exam Packs.</li>
               <li><strong>19 Complete Courses:</strong> Pearson Edexcel GCSE (Medicine, Early Elizabethan England, Superpower Cold War 1941–91, Conflict in the Middle East, Weimar &amp; Nazi Germany, USA 1954–75), 12 Key Stage 3 National Curriculum units, and KS2 World War II.</li>
             </ul>
-            <p style="margin-bottom: 20px;">Department enquiries &amp; custom cover packs: <a href="mailto:contact@historyrevisionhub.co.uk"><strong>contact@historyrevisionhub.co.uk</strong></a></p>
+            <p style="margin-bottom: 20px;">Department enquiries: <a href="mailto:contact@historyrevisionhub.co.uk"><strong>contact@historyrevisionhub.co.uk</strong></a></p>
             <nav aria-label="All History Courses" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
               <a href="/" style="font-weight: 700; margin-right: 14px;">&larr; All Courses Home</a>
               ${SEO_UNIT_ROUTES.map((r) => `<a href="/${escapeHtml(r.slug)}/" style="margin-right: 12px;">${escapeHtml(r.heading)}</a>`).join('\n              ')}

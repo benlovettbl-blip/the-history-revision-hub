@@ -128,11 +128,11 @@ export function renderSchoolsShowcase() {
 
         <div style="padding: 22px; border-radius: 14px; background: var(--bg-card, #ffffff); border: 1px solid var(--border-glass, rgba(12, 35, 64, 0.1)); box-shadow: var(--shadow-sm, 0 4px 6px -1px rgba(0, 0, 0, 0.05));">
           <div style="font-size: 0.78rem; font-weight: 800; color: #d97706; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">
-            <i class="fa-solid fa-print"></i> Custom School Cover Branding
+            <i class="fa-solid fa-print"></i> Reprographic Saddle-Stitch Design
           </div>
           <h2 style="font-size: 1.1rem; font-weight: 800; margin: 0 0 8px; color: var(--text-main, #0c2340);">Print-Room Ready A3 &amp; A4 Booklets</h2>
           <p style="font-size: 0.9rem; line-height: 1.6; margin: 0; color: var(--text-muted, #475569);">
-            Every unit includes page-calibrated saddle-stitch booklets engineered for school photocopiers, available custom-stamped with your school or History Department masthead on the front cover.
+            Every unit includes page-calibrated saddle-stitch booklets engineered for school photocopiers with clean <em>Name / Class / Teacher</em> lines and zero layout overflow.
           </p>
         </div>
 
@@ -264,10 +264,10 @@ export function renderSchoolsShowcase() {
       ">
         <div style="max-width: 680px;">
           <h2 style="font-size: 1.15rem; font-weight: 800; margin: 0 0 6px; color: var(--text-main, #0c2340);">
-            Custom School Cover Packs &amp; Department Enquiries
+            History Department Enquiries
           </h2>
           <p style="font-size: 0.9rem; line-height: 1.6; margin: 0; color: var(--text-muted, #475569);">
-            For custom school-branded PDF booklet bundles, whole-department staff passkeys (Schemes of Work, Workbook Mark Schemes &amp; Cover Generator), or curriculum questions, email <a href="mailto:contact@historyrevisionhub.co.uk" style="color: #0284c7; font-weight: 700; text-decoration: underline;">contact@historyrevisionhub.co.uk</a>. All 1,532 archival images and primary extracts are documented in our <a href="/master_rights_register.html" target="_blank" rel="noopener" style="color: #0284c7; font-weight: 700; text-decoration: underline;">Master Provenance &amp; Copyright Register</a>.
+            For department enquiries or curriculum questions, email <a href="mailto:contact@historyrevisionhub.co.uk" style="color: #0284c7; font-weight: 700; text-decoration: underline;">contact@historyrevisionhub.co.uk</a>. All 1,532 archival images and primary extracts are documented in our <a href="/master_rights_register.html" target="_blank" rel="noopener" style="color: #0284c7; font-weight: 700; text-decoration: underline;">Master Provenance &amp; Copyright Register</a>.
           </p>
         </div>
         <a
