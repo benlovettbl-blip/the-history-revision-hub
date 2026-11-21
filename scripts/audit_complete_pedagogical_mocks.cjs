@@ -19,7 +19,7 @@ async function auditAllMocks() {
       unit: 'Weimar & Nazi Germany (Paper 3, Option 31)',
       dir: 'public/pdfs/mocks/weimar_nazi_germany',
       type: 'paper3',
-      mockIds: ['mock_adapted_2026', 'mock_notebook_1', 'mock_notebook_2', 'mock_notebook_3']
+      mockIds: ['mock_notebook_1', 'mock_notebook_2', 'mock_notebook_3']
     },
     {
       unit: 'Medicine in Britain (Paper 1, Option 11)',
@@ -37,7 +37,7 @@ async function auditAllMocks() {
       unit: 'Early Elizabethan England (Paper 2, Option B4)',
       dir: 'public/pdfs/mocks/eee',
       type: 'paper2',
-      mockIds: ['eee_mock_2026', 'eee_mock_b', 'eee_mock_c', 'eee_mock_d', 'eee_notebook_1', 'eee_notebook_2', 'eee_notebook_3']
+      mockIds: ['eee_mock_b', 'eee_mock_c', 'eee_mock_d', 'eee_notebook_1', 'eee_notebook_2', 'eee_notebook_3']
     }
   ];
 

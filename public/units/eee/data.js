@@ -55,12 +55,6 @@ export default {
   "key_topics": [],
   "mock_exams": [
     {
-      "id": "eee_mock_2026",
-      "title": "Mock Paper A (2026 exam edited)",
-      "url": "eee_mock_2026.html",
-      "has_mark_scheme": true
-    },
-    {
       "id": "eee_mock_b",
       "title": "Mock Paper B",
       "url": "eee_mock_b.html",
@@ -80,19 +74,19 @@ export default {
     },
     {
       "id": "eee_notebook_1",
-      "title": "NotebookLM Best Guess Paper 1",
+      "title": "Hub Predicted Mock Paper 1",
       "url": "eee_notebook_1.html",
       "has_mark_scheme": true
     },
     {
       "id": "eee_notebook_2",
-      "title": "NotebookLM Best Guess Paper 2",
+      "title": "Hub Predicted Mock Paper 2",
       "url": "eee_notebook_2.html",
       "has_mark_scheme": true
     },
     {
       "id": "eee_notebook_3",
-      "title": "NotebookLM Best Guess Paper 3",
+      "title": "Hub Predicted Mock Paper 3",
       "url": "eee_notebook_3.html",
       "has_mark_scheme": true
     },

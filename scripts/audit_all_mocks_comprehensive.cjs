@@ -42,7 +42,7 @@ const UNITS = [
     pdfDir: path.join(BASE_DIR, 'public', 'pdfs', 'mocks', 'weimar_nazi_germany'),
     htmlDir: path.join(BASE_DIR, 'public', 'units', 'weimar_nazi_germany'),
     rawDir: path.join(BASE_DIR, 'data', 'raw_mocks', 'weimar_nazi_germany'),
-    mocks: ['mock_notebook_1', 'mock_notebook_2', 'mock_notebook_3', 'mock_adapted_2026'],
+    mocks: ['mock_notebook_1', 'mock_notebook_2', 'mock_notebook_3'],
     types: ['question_booklet', 'sources_booklet', 'complete_pack']
   },
   {
@@ -79,7 +79,7 @@ const UNITS = [
     htmlDir: path.join(BASE_DIR, 'public', 'units', 'eee'),
     rawDir: path.join(BASE_DIR, 'data', 'raw_mocks', 'eee'),
     mocks: [
-      'eee_mock_2026', 'eee_mock_b', 'eee_mock_c', 'eee_mock_d',
+      'eee_mock_b', 'eee_mock_c', 'eee_mock_d',
       'eee_notebook_1', 'eee_notebook_2', 'eee_notebook_3'
     ],
     types: ['paper2_qp']

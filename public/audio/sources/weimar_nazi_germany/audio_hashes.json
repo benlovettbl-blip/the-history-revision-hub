@@ -57,13 +57,6 @@
       "badge": "Historian 1 · Saul Friedländer",
       "updatedAt": "2026-11-20T17:28:04.130Z"
     },
-    "mock_adapted_2026_i1": {
-      "hash": "8ded791256da3dd7",
-      "bytes": 70700,
-      "voiceKey": "male_historian",
-      "badge": "Historian 1 · Academic View",
-      "updatedAt": "2026-11-20T17:28:04.438Z"
-    },
     "mock_notebook_2_i2": {
       "hash": "7c72d894b6641346",
       "bytes": 151340,
@@ -140,13 +133,6 @@
       "voiceKey": "female_historian",
       "badge": "Historian 2 · Public Reaction View",
       "updatedAt": "2026-11-20T17:29:27.236Z"
-    },
-    "mock_adapted_2026_i2": {
-      "hash": "162212aebb15f040",
-      "bytes": 71660,
-      "voiceKey": "female_historian",
-      "badge": "Historian 2 · Contrasting View",
-      "updatedAt": "2026-11-20T17:29:27.587Z"
     },
     "mock_notebook_2_i1": {
       "hash": "b4ebfe18f6fb4f3d",

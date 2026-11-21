@@ -17,7 +17,7 @@ async function auditCovers() {
       expectedMarks: '56'
     })),
     // Weimar
-    ...['mock_adapted_2026', 'mock_notebook_1', 'mock_notebook_2', 'mock_notebook_3'].map(id => ({
+    ...['mock_notebook_1', 'mock_notebook_2', 'mock_notebook_3'].map(id => ({
       path: `public/pdfs/mocks/weimar_nazi_germany/${id}_question_booklet.pdf`,
       id,
       expectedCode: '1HI0/31',
@@ -41,7 +41,7 @@ async function auditCovers() {
       expectedMarks: '32'
     })),
     // EEE
-    ...['eee_mock_2026', 'eee_mock_b', 'eee_mock_c', 'eee_mock_d', 'eee_notebook_1', 'eee_notebook_2', 'eee_notebook_3'].map(id => ({
+    ...['eee_mock_b', 'eee_mock_c', 'eee_mock_d', 'eee_notebook_1', 'eee_notebook_2', 'eee_notebook_3'].map(id => ({
       path: `public/pdfs/mocks/eee/${id}.pdf`,
       id,
       expectedCode: '1HI0/B4',

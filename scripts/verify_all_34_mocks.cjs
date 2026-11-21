@@ -126,7 +126,7 @@ medFiles.forEach(f => {
 // -----------------------------------------------------------------------------
 console.log('\n📌 [4/5] Auditing Paper 3: Weimar and Nazi Germany (4 Mocks)...');
 const WEIMAR_RAW_DIR = path.join(__dirname, '../data/raw_mocks/weimar_nazi_germany');
-const weimarFiles = ['mock_notebook_1.html', 'mock_notebook_2.html', 'mock_notebook_3.html', 'mock_adapted_2026.html'];
+const weimarFiles = ['mock_notebook_1.html', 'mock_notebook_2.html', 'mock_notebook_3.html'];
 
 weimarFiles.forEach(f => {
   const rawHtml = fs.readFileSync(path.join(WEIMAR_RAW_DIR, f), 'utf8');

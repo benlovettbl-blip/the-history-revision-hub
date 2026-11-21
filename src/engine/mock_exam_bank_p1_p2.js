@@ -458,7 +458,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_1_1": [
       {
         "id": "lesson_1_1_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -473,7 +473,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all manuscripts, allowing the Church to censor texts that contradicted scripture. Furthermore, universities were run by clergy, teaching medical students to memorise ancient authorities rather than conduct practical examinations. Therefore, this led to Church dominance over medical ideas because physicians were trained only in Church-approved doctrines and never investigated physical causes independently.<br><br>Furthermore, the Church promoted <strong>Galen's anatomical theories within a Christian worldview</strong>. Although Galen was pagan, his belief that the human body was designed by a single Creator aligned with Catholic theology. The Church declared Galen infallible, teaching that dissections served only to demonstrate his perfection. Therefore, this caused Galen's medical ideas to be accepted as unquestionable doctrine because challenging his anatomy was treated as challenging God's divine creation.<br><br>In addition, the Church dominated ideas because society believed <strong>disease was divine punishment for sin</strong>. Priests taught that epidemics like the 1348 Black Death were sent by God, making repentance the only cure. Questioning supernatural causes was punished as heresy; in 1277, Roger Bacon was imprisoned for advocating scientific observation. Therefore, this reinforced the Church's total influence over ideas about disease because ordinary people and physicians believed seeking physical cures was futile without seeking divine forgiveness.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -503,7 +503,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_1_2": [
       {
         "id": "lesson_1_2_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -515,11 +515,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way diagnosis of disease was similar was the continuing reliance on <strong>checking urine and the Four Humours</strong>. In the Medieval period, doctors examined a patient's urine against a colour chart to identify which humour was unbalanced, alongside checking astrology charts. Similarly, during the Renaissance, most ordinary doctors continued to examine urine samples and check humoural balance at the bedside to diagnose illness. Therefore, both periods relied on Galen's ancient humoural ideas to diagnose patients rather than scientific tests.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_1_2_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -534,7 +534,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major reason Galen's ideas endured was the <strong>Catholic Church's active endorsement of his monotheism</strong>. Galen argued that every organ was designed for a purpose by a divine Creator, aligning with Christian theology. Because the Church controlled university curricula and book copying, it declared Galen infallible and outlawed criticism of his texts. Therefore, this led to Galen's ideas being preserved for centuries because the Church made his medical teachings the mandatory foundation of all licensed medical education.<br><br>Furthermore, Galen's ideas persisted due to the <strong>severe lack of practical human dissection</strong>. Catholic authorities restricted human dissection, forcing scholars to rely on ancient books. When annual dissections occurred, barber-surgeons cut while professors read Galen aloud; any anatomical mismatch was blamed on a deformed corpse. Therefore, this caused Galen's anatomical mistakes to remain unchallenged because physicians never had the practical opportunity to examine and map internal human anatomy for themselves.<br><br>In addition, Galen was believed because his <strong>Theory of Opposites provided a logical, practical clinical system</strong>. Expanding Hippocrates' Four Humours, Galen taught that illness stemmed from humoural imbalances treatable by opposites, such as hot pepper for cold phlegm. This gave doctors a systematic method to explain symptoms and prescribe clear treatments. Therefore, this ensured Galen's ideas continued to be believed because his humoural system offered an accessible, common-sense explanation for illness that seemed to explain every symptom.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -564,7 +564,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_1_3": [
       {
         "id": "lesson_1_3_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -576,11 +576,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way treatments were different was that medieval treatments focused on <strong>balancing humours</strong>, whereas modern medicine uses <strong>specific drugs to destroy germs</strong>. In the Medieval period, doctors used bloodletting with leeches and purging with laxatives to remove excess humours from the body. In contrast, modern doctors prescribe targeted treatments like antibiotics (such as penicillin) to destroy bacteria without harming the body. Therefore, medieval treatments tried to balance the body's humours, while modern treatments scientifically attack the actual cause of the disease.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_1_3_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -595,7 +595,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One primary reason treatments focused on humoural balance was the <strong>practical application of Galen's Theory of Opposites</strong>. Physicians believed the body was governed by blood, phlegm, black bile, and yellow bile, carrying opposing qualities of heat, cold, wetness, and dryness. Under Galen's rules, a patient suffering from a cold, wet fever was prescribed hot, dry remedies like pepper or radish to counteract the humoural excess. Therefore, this caused treatments to focus on humoural balance because physicians believed opposing qualities could directly neutralise excess bodily fluids.<br><br>Furthermore, humoural balancing was reinforced through <strong>invasive physical procedures like bloodletting and purging</strong>. Barber-surgeons used vein-man phlebotomy charts to bleed patients via incisions, cupping, or leeches to remove excess blood, the most dangerous humour. Similarly, physicians prescribed violent emetics and laxatives to expel corrupt yellow and black bile. Therefore, this forced medieval healers to concentrate on humoural balance because removing excess blood or bile was seen as the only practical way to extract corrupt humours.<br><br>In addition, humoural treatments dominated because <strong>university-trained physicians relied entirely on diagnostic charts and astrology</strong>. Doctors inspected urine against colour charts and consulted zodiac horoscopes to calculate planetary humoural influences. Because classical Hippocratic-Galenic doctrine was taught as infallible in universities, alternative physical treatments were never developed. Therefore, this led to total reliance on humoural balancing treatments because licensed medieval physicians were legally and academically bound to follow classical humoural dogma.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -625,7 +625,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_1_4": [
       {
         "id": "lesson_1_4_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -637,13 +637,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way in which medical care providers were similar was that <strong>the majority of ordinary sick people were treated at home by women and wise-women</strong>, rather than university-educated physicians. In both the Medieval period and the Renaissance, licensed physicians were extremely expensive and catered almost exclusively to the wealthy elite. Consequently, ordinary peasants and townspeople relied on female relatives, apothecaries, and local herbalists who prepared home remedies from traditional recipe books passed down through generations. Therefore, both periods were similar because ordinary people could not afford trained doctors and relied entirely on home remedies and women healers.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_1_5": [
       {
         "id": "lesson_1_5_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "5",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -658,7 +658,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "On the one hand, there is evidence to agree that the failure of public health measures contributed to the high death toll. In 1348, medieval towns had no proper sewage systems, clean running water, or street cleaners. Filth, rotting meat offal, and human waste piled up in narrow unpaved streets, creating ideal breeding grounds for rats and fleas. Although some towns tried to protect themselves—for example, Gloucester attempted to quarantine itself by shutting its town gates to people from infected Bristol—the regulations were poorly enforced, and rural traders easily bypassed the gates. In London, authorities were completely overwhelmed and only organised emergency burial trenches after thousands were already dead. Therefore, public health measures failed to prevent mass deaths because town councils lacked the power, money, and organisation to enforce effective quarantine or clean the streets.<br><br>On the other hand, the primary reason so many people died was that nobody understood the biological cause of the plague. In 1348, people had no knowledge of bacteria (Yersinia pestis) or flea bites from black rats. Instead, they believed the Black Death was caused by God’s wrath punishing human sins, or by miasma (poisonous air). Because of these false beliefs, civic and religious responses actually worsened the epidemic. For example, church authorities organised mass religious processions and prayer gatherings in crowded streets, which drastically accelerated the person-to-person spread of pneumonic plague. Similarly, carrying sweet-smelling posies and burning tar in the streets did nothing to stop fleas from biting people. Therefore, the overwhelming death toll was primarily caused by a total lack of medical understanding rather than public health failures, as authorities could never stop a disease they did not understand.<br><br>Furthermore, medieval medical treatments were completely ineffective and often hastened patients' deaths. Physicians followed Galen's Four Humours, using bloodletting with leeches and violent purging, which severely weakened patients' immune systems right when their bodies needed strength to fight the infection. Apothecaries prescribed costly herbal remedies that had no effect on bacteria, while barbers lanced swollen buboes with dirty knives, exposing victims to fatal blood poisoning. Because doctors did not possess modern antibiotics like streptomycin, anyone who caught pneumonic plague faced a 100% death rate. Therefore, high mortality was caused by the total failure of medical cures, as doctors were completely powerless against the plague bacteria.<br><br>In conclusion, I agree only to a limited extent that people died because of failed public health measures. While medieval town councils were disorganized and failed to enforce effective quarantine, even the cleanest medieval town would still have been devastated by the plague. The primary reason for the catastrophic mortality (which killed around a third of England's population) was the complete absence of scientific knowledge regarding germs and rat fleas. Therefore, while public health measures were weak, it was the fundamental lack of medical understanding that made mass death completely unavoidable.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "spagMarks": 4
       }
     ],
@@ -681,7 +681,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_2_2": [
       {
         "id": "lesson_2_2_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -693,13 +693,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way Sydenham’s approach to diagnosis was different was that he focused on <strong>carefully observing the patient's symptoms at their bedside</strong>, rather than relying on ancient books or urine charts. In the Medieval period, doctors rarely examined patients closely, instead checking urine flasks and astrology charts to diagnose a humoural imbalance. In contrast, Thomas Sydenham sat by the patient’s bed, recorded their symptoms over time, and showed that different diseases had specific symptom patterns (such as recognising scarlet fever was different from measles). Therefore, Sydenham diagnosed diseases through direct bedside observation rather than ancient medical theories.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_2_3": [
       {
         "id": "lesson_2_3_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -711,11 +711,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way methods of investigating the human body were different was that Renaissance anatomists <strong>carried out dissections themselves</strong> rather than just reading from old books. In the Medieval period, university professors sat on a raised chair reading aloud from Galen, while an assistant or barber-surgeon cut open the body without questioning Galen's errors. In contrast, during the Renaissance, Andreas Vesalius did the dissections with his own hands, inspecting human bones and organs directly to see how the body really worked. Therefore, Renaissance doctors learned anatomy through direct personal dissection rather than uncritically accepting ancient texts.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_2_3_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "5",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -730,14 +730,14 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "On the one hand, Vesalius’s work on anatomy can be seen as the most significant breakthrough because he corrected over 300 errors made by Galen and proved that ancient texts were fallible. In his landmark book De Humani Corporis Fabrica (1543), Vesalius climbed down from the professor's raised chair and dissected human corpses with his own hands. He proved that Galen had only dissected animals like pigs and apes, demonstrating that the human lower jaw was one bone not two, the breastbone had three parts not seven, and the heart's septum had no invisible pores. Furthermore, by publishing detailed, accurate anatomical drawings using the newly invented printing press, Vesalius distributed identical reference books to medical schools across Europe, teaching students to observe the human body directly. Therefore, Vesalius's work was a massive breakthrough because it proved Galen was wrong and established direct human dissection as the foundation of modern medical science.<br><br>However, a major limitation of Vesalius’s work was that knowing correct anatomy did not save a single patient's life or lead to new medical treatments during his lifetime. Understanding the exact position of bones and muscles did nothing to explain what caused diseases, as microscopic bacteria and viruses were still unknown. Consequently, ordinary people and physicians continued to rely on ancient beliefs in miasma and the Four Humours. Furthermore, major surgery remained life-threatening and agonising because effective anaesthetics and antiseptics did not exist, preventing surgeons from performing internal operations based on Vesalius’s diagrams. Everyday treatments—such as bloodletting, purging, and herbal potions—remained completely unchanged from the Middle Ages. Therefore, Vesalius was only a partial breakthrough because his discoveries were purely anatomical and had zero practical effect on curing sick patients in the 16th century.<br><br>Furthermore, other medical developments in the period c1500–c1700 were equally or more significant. In 1628, William Harvey published De Motu Cordis, using mathematical calculations and experiments to prove that the heart acts as a muscular pump circulating the same blood continuously around the body, completely disproving Galen's theory of blood consumption. In addition, Thomas Sydenham's Observationes Medicae (1676) revolutionised clinical diagnosis by encouraging doctors to sit at the patient's bedside and classify diseases into distinct categories, such as separating scarlet fever from measles. Moreover, the founding of the Royal Society in 1660 provided the scientific network and journals needed to share and debate these discoveries. Therefore, Vesalius was not the only significant breakthrough, as Harvey and Sydenham made equally crucial discoveries in physiology and clinical diagnosis.<br><br>In conclusion, I agree that Vesalius was the most significant foundational breakthrough, but only in terms of scientific method rather than practical medicine. By proving that Galen made hundreds of mistakes, Vesalius broke the ancient tradition of unquestioning belief and gave later pioneers like Harvey the intellectual permission to challenge classical ideas. However, because his anatomical maps could not cure illnesses or stop epidemics, his immediate clinical benefit was almost non-existent. Therefore, Vesalius was the most significant breakthrough for starting the scientific revolution in anatomy, but was not the most significant for improving patient care.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "spagMarks": 4
       }
     ],
     "lesson_2_4": [
       {
         "id": "lesson_2_4_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -749,7 +749,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way Harvey’s understanding was different was that he proved <strong>blood circulates in a continuous one-way loop around the body</strong>, rather than being burned up as fuel. Galen had taught that the liver constantly made new blood from food, which the body then absorbed and burned like wood in a fire. In contrast, William Harvey proved that the heart acts like a pump, circulating the same blood continuously around the body through arteries and back through veins. Therefore, Harvey proved blood flows in a repeated cycle, disproving Galen’s idea that blood was constantly used up.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_2_5": [
@@ -784,7 +784,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_3_2": [
       {
         "id": "lesson_3_2_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -799,7 +799,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major reason for opposition was <strong>fierce financial resistance from commercial inoculators</strong>. In the eighteenth century, smallpox variolation (inoculating patients with live smallpox scabs) was a highly profitable commercial enterprise dominated by medical dynasties like the Sutton family. Because Jenner offered cowpox vaccination as a safer and much cheaper alternative, commercial inoculators waged aggressive public campaigns questioning Jenner's competence to protect their lucrative medical practices. Therefore, this caused fierce opposition because established medical practitioners actively campaigned against vaccination to protect their lucrative inoculation businesses.<br><br>Furthermore, opposition intensified through the <strong>founding of the Anti-Vaccination League against compulsory legislation</strong>. When Parliament passed Compulsory Vaccination Acts in 1853 and 1867 enforcing fines and prison sentences for non-compliant parents, massive public resistance erupted. Leagues formed across Britain, arguing that state-mandated injections violated individual civil liberties and bodily autonomy. Therefore, this led to widespread opposition because working-class citizens and libertarian leagues viewed compulsory state-enforced injections as tyranny over their personal bodies.<br><br>In addition, opposition was fuelled by <strong>deep religious objections and Jenner's inability to explain the biological mechanism</strong>. Church ministers preached that infecting humans with animal disease from cows was immoral, while James Gillray's satirical cartoons depicted vaccinated patients sprouting cow horns. Because Jenner could not scientifically explain why cowpox conferred immunity before Germ Theory, many physicians remained sceptical. Therefore, this generated sustained public hostility because superstitious fears and moral outrage convinced many that injecting animal matter defied divine law.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -829,7 +829,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_3_3": [
       {
         "id": "lesson_3_3_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -841,13 +841,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way in which hospital care was similar was the persistent problem of high mortality caused by unhygienic conditions and <strong>'hospitalism'</strong>. In the eighteenth century, voluntary hospitals like Guy's and St Thomas' lacked ventilation, patients shared beds, and dirty straw bedding was rarely changed, causing rampant spreading of infections like typhus and gangrene. Similarly, in early nineteenth-century hospitals before 1850, wards remained dark, cramped, and poorly ventilated, nurses were viewed as untrained and drunken, and surgeons operated in unwashed frock coats, resulting in death rates often exceeding 40%. Therefore, in both periods, hospitals functioned as dangerous places where patients frequently died from secondary infections caught inside the hospital rather than healing safely in clean environments.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_3_4": [
       {
         "id": "lesson_3_4_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -859,11 +859,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way in which surgery was different was the introduction of effective <strong>anaesthetics</strong> and <strong>antiseptic methods</strong> to eliminate pain and infection. In the early nineteenth century, surgery was performed without anaesthetics on fully conscious, agonising patients held down by strong assistants, forcing surgeons like Robert Liston to amputate limbs in under thirty seconds to prevent fatal shock, with over 45% dying of gangrene. In contrast, by the late nineteenth century, surgeons used chloroform to render patients completely unconscious and applied Joseph Lister's carbolic acid and aseptic autoclaves to sterilise operating theatres, allowing complex internal procedures lasting hours to take place safely. Therefore, while early nineteenth-century surgery was rushed, agonising, and deadly from shock and sepsis, late nineteenth-century surgery was pain-free, meticulous, and performed in sterile environments with high survival rates.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_3_4_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "5",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -878,14 +878,14 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "It is widely argued that the development of anaesthetics was the most important surgical breakthrough of the nineteenth century, as conquering excruciating physical pain transformed surgical practice from a terrifying ordeal into a viable medical specialty. However, while anaesthetics solved the immediate crisis of pain and fatal shock, they initially increased patient mortality during the 'Black Period' of surgery. Therefore, I disagree that anaesthetics were the single most important breakthrough, because without Joseph Lister's discovery of antiseptics and the subsequent transition to aseptic surgery, anaesthetics alone resulted in more infections and deaths rather than saving lives.<br><br>On the one hand, there is strong evidence that anaesthetics represented a monumental breakthrough. Before the 1840s, surgical operations were severely constrained by agony; patients had to be forcibly strapped to tables while surgeons performed rapid amputations in seconds to prevent the patient dying of cardiac shock or blood loss. In 1847, Edinburgh obstetrician <strong>James Simpson</strong> discovered the anaesthetic properties of <strong>chloroform</strong>, which rendered patients completely unconscious, relaxed muscle tissue, and permitted surgeons to operate with far greater care and precision. The breakthrough gained national and royal legitimacy in 1853 when Queen Victoria publicly praised chloroform during the birth of Prince Leopold. By eliminating agony, anaesthetics made patients willing to undergo life-saving operations that they previously would have refused, creating the foundation for all modern surgical intervention.<br><br>On the other hand, the development of anaesthetics alone had unintended, catastrophic consequences known as the <strong>'Black Period' of surgery (1846–1865)</strong>. Because patients were unconscious and felt no pain, ambitious surgeons attempted longer, deeper, and far more invasive abdominal and internal procedures. However, because surgeons had no understanding of germs or sterile technique, they continued operating in blood-stained frock coats using dirty, unwashed hands and infected sponges. Consequently, rates of hospital gangrene, sepsis, and pyaemia soared, and overall surgical mortality actually increased in the two decades following the introduction of anaesthetics. This proves that anaesthetics alone were insufficient and dangerously incomplete without a solution to infection.<br><br>Therefore, the discovery of <strong>antiseptics by Joseph Lister</strong> and the transition to <strong>aseptic surgery</strong> was fundamentally more important. Inspired by Louis Pasteur's 1861 Germ Theory, Lister realised in 1865 that surgical sepsis was caused by living airborne microbes entering open wounds. By soaking wound dressings in carbolic acid, spraying carbolic mist in operating theatres, and sterilising catgut ligatures, Lister reduced surgical mortality at Glasgow Royal Infirmary from 45.7% to 15.0%. By the 1880s and 1890s, surgeons perfected Lister's breakthrough into complete asepsis: using Charles Chamberland's steam autoclaves to sterilise instruments at high heat, scrubbing hands, and wearing sterile rubber gloves and gowns. This completely eliminated microscopic pathogens from the operating theatre, making deep abdominal, chest, and brain surgery genuinely safe for the first time in history.<br><br>In conclusion, although the development of anaesthetics was indispensable in conquering pain and psychological trauma, it cannot be considered the most important breakthrough. Pain relief without infection control merely led to longer operations and higher mortality during the Black Period. The decisive turning point that allowed surgery to become truly lifesaving was Lister's antiseptic technique and aseptic operating theatres, because controlling bacterial infection was the factor that directly determined whether a patient lived or died.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "spagMarks": 4
       }
     ],
     "lesson_3_5": [
       {
         "id": "lesson_3_5_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -924,13 +924,13 @@ export const MOCK_BANK_P1_P2 = {
           }
         },
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_4_1": [
       {
         "id": "lesson_4_1_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -942,11 +942,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way understanding of the causes of disease was similar was the reliance on <strong>microscopic, scientific laboratory investigation</strong> to identify specific causes of specific illnesses. In the late nineteenth century, scientists like Robert Koch and Louis Pasteur used microscopes, agar culture plates, and chemical dyes to isolate the specific individual bacteria responsible for diseases like tuberculosis and cholera. Similarly, in the modern period from 1953 onwards, geneticists used X-ray crystallography, electron microscopes, and computer gene sequencing to identify the specific double-helix DNA structure and genetic mutations responsible for hereditary conditions like cystic fibrosis. Therefore, both periods based their understanding on rigorous empirical laboratory observation to locate the precise, microscopic root cause of disease rather than relying on superstition or external balance.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_4_1_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -961,7 +961,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major factor driving rapid progress was <strong>Rosalind Franklin's capture of Photograph 51 in 1952</strong>. Working at King's College London, Franklin used X-ray crystallography to produce Photograph 51, providing the critical physical evidence revealing DNA's helical geometry. This enabled James Watson and Francis Crick in 1953 to construct the double-helix DNA model, demonstrating how chemical base pairs replicate genetic instructions. Therefore, this caused rapid genetic progress because identifying the double-helix structure revealed the exact physical mechanism by which genetic information is stored and replicated.<br><br>Furthermore, understanding accelerated through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Co-ordinated by scientists across Britain, the USA, and globally, this public project successfully mapped all three billion chemical base pairs in human DNA. Mapping the complete genetic blueprint allowed medical researchers to identify the specific genetic mutations responsible for conditions like Down's syndrome and Huntington's disease. Therefore, this led to massive medical breakthroughs because mapping the entire human genetic sequence allowed scientists to identify the specific faulty genes responsible for hereditary diseases.<br><br>In addition, progress was made possible by <strong>post-war advances in computing power and automated DNA sequencers</strong>. In the late twentieth century, automated sequencing machines and digital supercomputers replaced manual gene counting, allowing laboratories to analyse millions of base pairs in hours rather than decades. Therefore, this accelerated genetic understanding because computerized data-processing enabled researchers to rapidly detect genetic mutations and develop targeted gene therapies.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -991,7 +991,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_4_2": [
       {
         "id": "lesson_4_2_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1006,7 +1006,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major technological development was the <strong>discovery and medical application of X-rays</strong>. Discovered by Wilhelm Röntgen in 1895, X-rays passed through soft tissue to cast shadows of dense bone on photographic plates. By 1914, Marie Curie's mobile radiology units enabled battlefield surgeons to locate bullets and shrapnel immediately, eliminating dangerous exploratory operations. Therefore, this led to major diagnostic improvements because doctors could locate internal fractures, tumours, and foreign objects without having to perform dangerous exploratory surgery.<br><br>Furthermore, diagnosis was transformed by the <strong>invention of advanced CT and MRI scanners in the 1970s</strong>. In 1972, British engineer Godfrey Hounsfield invented the CT scanner, using computers to combine multiple X-ray cross-sections into 3D images. Soon after, Magnetic Resonance Imaging (MRI) used magnetic fields and radio waves to image soft tissues like the brain and spinal cord without radiation. Therefore, this caused diagnostic accuracy to increase dramatically because physicians could detect early-stage brain tumours, internal bleeding, and organ damage with unprecedented precision.<br><br>In addition, diagnosis was improved by <strong>scientific blood analysis, chemical pathology, and flexible endoscopes</strong>. Twentieth-century automated blood testing allowed clinicians to measure white blood cell counts, identify blood groups, and detect chemical markers for diabetes and kidney failure. Simultaneously, fibre-optic endoscopes allowed internal organs to be directly viewed. Therefore, this transformed medical diagnosis because clinicians could identify diseases biochemically and visually at an early, treatable stage rather than relying on external physical symptoms.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -1036,7 +1036,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_4_3": [
       {
         "id": "lesson_4_3_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1048,11 +1048,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way in which treatments were similar was the reliance on <strong>laboratory-engineered chemical compounds designed to target specific bacteria without harming patient cells ('magic bullets')</strong>. In the early twentieth century, Paul Ehrlich and Sahachiro Hata developed Salvarsan 606 (1909), a targeted arsenic compound that selectively attacked the Treponema pallidum bacterium causing syphilis. Similarly, in the 1930s, Gerhard Domagk discovered Prontosil (1932), a red synthetic chemical sulfonamide that destroyed deadly streptococcal bacteria in blood poisoning and puerperal fever. Therefore, both periods marked a revolutionary transition where medical treatments were no longer herbal folk mixtures or palliative care, but scientifically designed pharmaceutical chemicals manufactured to hunt down and kill specific microscopic pathogens inside the human bloodstream.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_4_3_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1067,7 +1067,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major factor behind the NHS was the <strong>impact of the Beveridge Report in 1942</strong>. Sir William Beveridge identified 'Disease' as one of the Five Giants blighting society, proposing a comprehensive welfare state providing healthcare 'from the cradle to the grave'. Selling over 600,000 copies, the report created immense public demand that compelled post-war politicians to act. Therefore, this led to the creation of the NHS because Beveridge created irresistible democratic momentum that forced the post-war Labour government to promise a universal healthcare system.<br><br>Furthermore, the NHS was achieved through the <strong>political tenacity and pragmatism of Health Minister Aneurin Bevan</strong>. Bevan faced intense resistance from the British Medical Association (BMA), who feared doctors would become underpaid state servants. Bevan overcame this by allowing hospital consultants to retain private patients in NHS hospitals, famously remarking he 'stuffed their mouths with gold'. Therefore, this caused the successful launch of the NHS because Bevan's political compromises defeated medical opposition and made healthcare free at the point of delivery.<br><br>In addition, the reform was driven by the <strong>wartime Emergency Medical Service (EMS) and pre-war healthcare inequality</strong>. Prior to 1948, working-class wives and children were excluded from national insurance. During the Blitz, the government EMS treated air-raid casualties, proving centralised medical coordination was remarkably effective. Therefore, this forced the establishment of the NHS because wartime state coordination proved a national health system was viable and destroyed public tolerance for unequal pre-war healthcare.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -1097,7 +1097,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_4_4": [
       {
         "id": "lesson_4_4_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1109,11 +1109,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way in which the discovery of penicillin was different from its later development was that the discovery in 1928 was a <strong>solitary, accidental laboratory observation</strong>, whereas its development in the 1940s was a <strong>massive, publicly funded collaborative industrial effort</strong>. In 1928, Alexander Fleming working alone at St Mary's Hospital London accidentally noticed that a floating mold spore of <em>Penicillium notatum</em> had contaminated an open petri dish and dissolved staphylococci bacteria, but he was unable to chemically isolate or purify the substance. In contrast, during the Second World War (1938–1944), an Oxford team led by Howard Florey and Ernst Chain used freeze-drying to purify penicillin, and collaborated with US government agencies and commercial chemical corporations to build giant 10,000-gallon deep-tank fermentation factories. Therefore, while Fleming's 1928 discovery was an isolated, unpurified observation that remained unused, the 1940s development was a concerted international industrial triumph that produced 2.3 million doses for D-Day.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_4_4_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "5",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1128,14 +1128,14 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "It is widely argued that government funding during the Second World War was the main reason for the development of penicillin, as the massive financial and logistical mobilisation by the British and United States governments turned an unpurified laboratory mold into an industrial wonder drug. While wartime state funding was the decisive catalyst that made mass production possible, I argue that it was only one vital link in a chain of factors: without Alexander Fleming's initial accidental discovery and Howard Florey and Ernst Chain's painstaking laboratory purification at Oxford, there would have been no medical antibiotic for governments to fund.<br><br>On the one hand, <strong>government funding and wartime urgency</strong> were undeniably central to penicillin's development. In the early years of the war, British chemical factories were fully committed to producing explosives and aircraft fuel, and British companies lacked the capital to invest in untried biological manufacturing. When Howard Florey traveled to the United States in July 1941, the US government's War Production Board recognised that penicillin could prevent thousands of Allied soldiers from dying of gangrenous battlefield wounds. The US government designated penicillin manufacturing the second highest national military priority after the Manhattan Project, offering lucrative tax incentives and funding to pharmaceutical giants like Pfizer, Merck, and Squibb. This direct government intervention funded the construction of giant 10,000-gallon deep-tank fermentation facilities, producing 2.3 million doses in time for the Normandy D-Day landings in June 1944. Without government millions and wartime logistics, penicillin could never have been produced on this global scale.<br><br>On the other hand, the crucial scientific breakthrough was achieved by <strong>Howard Florey, Ernst Chain, and their Oxford research team (1938–1940)</strong>. Fleming had abandoned his research in 1929 because he was a bacteriologist, not a biochemist, and could not purify the unstable substance. At Oxford, Ernst Chain read Fleming's forgotten paper and teamed up with Florey and biochemist Norman Heatley. Working with primitive equipment like bedpans and milk churns, the Oxford team developed freeze-drying techniques to stabilize the active antibiotic molecule. In 1940, they conducted their famous animal trial, proving that penicillin cured eight mice injected with lethal streptococci, and in 1941 successfully treated policeman Albert Alexander. It was Florey and Chain's brilliant scientific research that transformed a curious mold into a proven clinical cure before government funding was even sought.<br><br>Furthermore, <strong>Alexander Fleming's original 1928 discovery</strong> provided the indispensable foundation. In September 1928, Fleming returned to his disorderly laboratory at St Mary's Hospital London to find that a stray spore of <em>Penicillium notatum</em> had drifted through an open window onto a staphylococcus agar plate, creating a clear ring where bacteria had been destroyed. Fleming had the scientific insight to recognise the importance of the phenomenon, naming the substance 'penicillin' and publishing his findings in 1929. In addition, crucial agricultural discoveries played a major role: researchers at the US Department of Agriculture laboratory in Peoria, Illinois discovered that corn steep liquor accelerated mold growth by 500 times, and isolated a hyper-potent strain of mold on a rotting supermarket cantaloupe.<br><br>In conclusion, although Fleming's initial discovery and Florey and Chain's Oxford purification were essential scientific preconditions, government wartime funding was the main reason for penicillin's development into a practical reality. Thousands of laboratory discoveries languish unused due to lack of capital; it was the existential crisis of the Second World War and millions of dollars in state investment that overcame technological hurdles, built deep-tank fermentation plants, and made penicillin universally accessible to humanity.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "spagMarks": 4
       }
     ],
     "lesson_4_5": [
       {
         "id": "lesson_4_5_q1",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "3",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1147,11 +1147,11 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One way in which government action was similar was the use of <strong>compulsory statutory legislation to regulate public environments and curb lethal health hazards</strong>. In the nineteenth century, following proof that filthy water spread cholera, the government passed the compulsory 1875 Public Health Act, forcing local councils to provide clean water, build covered sewers, and inspect contaminated housing. Similarly, in the twenty-first century, following conclusive epidemiological proof linking secondhand smoke to lung carcinoma, the British government passed the 2007 Health Act banning smoking in all enclosed public work and leisure spaces, followed by compulsory plain cigarette packaging in 2016. Therefore, both periods demonstrated the state exercising legislative authority to restrict private liberties and commercial freedoms in order to protect public health.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       },
       {
         "id": "lesson_4_5_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "4",
         "mockTitle": "Edexcel-Style Specification Practice Station (Thematic Study)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1166,7 +1166,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "",
         "modelAnswer": "One major factor transforming prevention was <strong>conclusive epidemiological evidence provided by Richard Doll and Austin Bradford Hill</strong>. In 1950, Doll and Hill surveyed 709 patients, establishing a definitive statistical link between tobacco smoke and lung cancer, followed by their 1954 study showing heavy smokers were twenty times more likely to die from the disease. Therefore, this caused government prevention to change because conclusive statistical proof destroyed tobacco company denial and forced ministers to treat smoking as a lethal public health crisis.<br><br>Furthermore, prevention methods changed through <strong>compulsory statutory bans, culminating in the 2007 Health Act</strong>. Abandoning voluntary agreements that failed to curb consumption, Parliament banned television cigarette adverts in 1965 and sports sponsorship in 2002. In 2007, legislation made smoking in all enclosed workplaces and restaurants a criminal offence to eliminate second-hand smoke. Therefore, this led to a radical transformation in prevention because the state used statutory legislation to protect non-smokers and de-normalise smoking in British public life.<br><br>In addition, the government shifted towards <strong>punitive fiscal taxation, mass education, and standardised plain packaging</strong>. Successive chancellors raised tobacco excise duties until taxes exceeded 80% of retail packet costs, pricing young people out of smoking. In 2016, legislation mandated olive-green plain packaging displaying graphic photographic warnings of diseased lungs. Therefore, this forced smoking rates to fall sharply because aggressive fiscal disincentives and the removal of glamorous branding made cigarettes unaffordable and unappealing to young people.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html",
+        "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -1196,7 +1196,7 @@ export const MOCK_BANK_P1_P2 = {
     "lesson_5_1": [
       {
         "id": "lesson_5_1_q3",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "2(b)",
         "mockTitle": "Edexcel-Style Specification Practice Station (Western Front)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1208,13 +1208,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From the Official War Diary of an RAMC Field Ambulance Officer, Ypres Salient (October 1917)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The state of the ground defies description. The communication trenches have ceased to exist, having been obliterated by continuous heavy shelling and turned into channels of liquid clay three to four feet deep. Relieving stretcher squads took six hours to convey a single severely wounded casualty over a distance of barely two miles from the frontline aid post to the dressing station. Four bearers carried the stretcher while two accompanied them with poles to haul the bearers out when they sank to their waists. Several walking wounded fell into water-filled shell craters in the dark and were drowned before assistance could reach them.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew.</div>\n            </div>\n          ",
         "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> \"Relieving stretcher squads took six hours to convey a single severely wounded casualty over a distance of barely two miles from the frontline aid post to the dressing station.\"<br><br><strong>Question I would ask:</strong> How did prolonged six-hour stretcher evacuations through flooded Ypres mud affect wound shock and mortality rates at Advanced Dressing Stations in autumn 1917?<br><br><strong>Type of source I would look for:</strong> Official admission registers and clinical war diaries of RAMC Field Ambulances operating in the Ypres Salient during October–November 1917.<br><br><strong>How this might help answer my question:</strong> Admission logs record the time elapsed between wounding and arrival alongside patient condition, showing how delayed evacuation through liquid clay increased fatalities from blood loss and exposure.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_5_2": [
       {
         "id": "lesson_5_2_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "2(a)",
         "mockTitle": "Edexcel-Style Specification Practice Station (Western Front)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1226,13 +1226,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A (Clinical Photograph): Bilateral Trench Foot in a British Soldier (c.1915)</div>\n              <img src=\"/images/trench_foot_clinical.jpg\" alt=\"Source A (Clinical Photograph): Bilateral Trench Foot in a British Soldier (c.1915)\" style=\"max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;\"><div style=\"font-size: 0.85rem; color: #475569; font-style: italic;\">RAMC clinical photograph documenting severe bilateral trench foot in a British infantryman (c.1915). Prolonged immersion in freezing, waterlogged mud constricted blood vessels, resulting in tissue death, blistering, and wet gangrene.</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The Wellcome Collection, London (Wellcome Images / Public Domain).</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From 2nd Battalion Routine Standing Orders on the Prevention of Trench Foot (December 1915)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"1. Every man before entering the frontline trenches must grease his feet thoroughly with whale oil provided at company stores.\n2. Company commanders will ensure that every soldier carries two pairs of dry socks in his haversack. A dry pair must be put on every twelve hours, and the wet pair dried around the neck inside the tunic.\n3. Platoon officers will hold a daily foot inspection in the firebays. Every soldier will remove his boots and puttees in the presence of an officer or NCO, rub his feet with oil, and rub his comrade's feet. Any officer whose platoon reports preventable cases of trench foot will be required to explain why disciplinary standing orders were neglected.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 95/Infantry Battalion Standing Orders / Crown Copyright).</div>\n            </div>\n          ",
         "modelAnswer": "<strong>Source A</strong> is highly useful for showing the devastating clinical effects of prolonged exposure to freezing, waterlogged trenches. The RAMC clinical photograph documents severe bilateral tissue necrosis, swelling, and wet gangrene across both feet. Historically, during the first winter of 1914–15, flooded Flanders trenches with poor drainage caused over 20,000 British casualties from trench foot, frequently requiring toe or foot amputations to prevent fatal systemic infection. As an unvarnished RAMC clinical record from c.1915, its medical purpose makes it reliable visual evidence of the pathology, though on its own it cannot show the preventive routines introduced to stop it.<br><br><strong>Source B</strong> is equally useful for revealing the strict disciplinary measures the British Army enforced to prevent the condition by late 1915. The battalion standing orders instruct every soldier to \"grease his feet thoroughly with whale oil\", carry \"two pairs of dry socks\", and undergo a \"daily foot inspection in the firebays\" where comrades rubbed each other's feet under an officer's supervision. In context, alongside mechanical trench pumps and raised wooden duckboards, holding platoon officers personally accountable cut trench foot incidence dramatically after 1915. However, as prescriptive battalion standing orders, Source B reflects official rules rather than whether frontline units under heavy shelling always had dry ground or sufficient whale oil to obey them.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_5_3": [
       {
         "id": "lesson_5_3_q3",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "2(b)",
         "mockTitle": "Edexcel-Style Specification Practice Station (Western Front)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1244,13 +1244,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From an RAMC Surgical Report on Wound Infections in Flanders (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"Flanders farmland is saturated with animal manure through centuries of intensive cultivation, containing dense spores of tetanus and anaerobic gas gangrene bacilli (Clostridium perfringens). When a shell splinter tears into a thigh or buttock, it drives fragments of mud-caked serge uniform deep into the lacerated muscle.\nIn the deep, oxygen-deprived wound track, the anaerobic bacteria proliferate with terrifying speed, fermenting muscle tissue and producing foul gas bubbles beneath the skin within twelve hours. The limb turns purple, cold, and crackles like dry parchment under the surgeon's touch (crepitation). Antiseptics poured onto the surface are completely useless; unless the entire wound track is widely excised (debridement) or the limb amputated immediately, the soldier dies of systemic toxaemia.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The National Archives, Kew (WO 222/RAMC Medical History Series / Crown Copyright).</div>\n            </div>\n          ",
         "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> \"Antiseptics poured onto the surface are completely useless; unless the entire wound track is widely excised (debridement) or the limb amputated immediately, the soldier dies of systemic toxaemia.\"<br><br><strong>Question I would ask:</strong> How effective was surgical wound debridement combined with Carrel-Dakin irrigation at reducing limb amputations and deaths from gas gangrene by 1917?<br><br><strong>Type of source I would look for:</strong> Clinical operating registers and statistical case summaries from a British Casualty Clearing Station in Flanders between 1916 and 1918.<br><br><strong>How this might help answer my question:</strong> CCS surgical registers record the exact procedure performed on gas gangrene wounds (debridement, Carrel-Dakin tubes, or amputation) and whether the patient survived evacuation to a Base Hospital.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_5_4": [
       {
         "id": "lesson_5_4_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "2(a)",
         "mockTitle": "Edexcel-Style Specification Practice Station (Western Front)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1262,13 +1262,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A (Photograph): Stretcher Bearers Carrying a Wounded Soldier through Mud at the Battle of Passchendaele (1917)</div>\n              <img src=\"/images/stretcher_bearers_passchendaele_1917.jpg\" alt=\"Source A (Photograph): Stretcher Bearers Carrying a Wounded Soldier through Mud at the Battle of Passchendaele (1917)\" style=\"max-height: 220px; border-radius: 6px; border: 1px solid #cbd5e1; margin-bottom: 6px; display: block;\"><div style=\"font-size: 0.85rem; color: #475569; font-style: italic;\">Six British stretcher bearers struggling shoulder-high to carry a severely wounded casualty across waist-deep, liquid mud and shattered tree stumps near Boesinghe during the Third Battle of Ypres (Passchendaele, 1917).</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Imperial War Museum, London (IWM Q 5935 / Public Domain).</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From the Diary of Captain J. C. Dunn, Medical Officer to the 2nd Battalion, Royal Welch Fusiliers (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The Regimental Aid Post was set up in a collapsed German dugout 200 yards behind the frontline trench. Throughout the bombardment, casualties poured in in an unending stream. My duty as Battalion Medical Officer is not to perform operations, but to execute rapid triage: stop severe arterial haemorrhage with tourniquets, dress wounds with sterile gauze, inject antitetanic serum, administer morphine to ease agony, and label each man with a colored tag.\nThe slightly wounded are bandaged and sent back to the firing line; men with severe shrapnel lacerations or fractured limbs are tagged for immediate stretcher transport to the Advanced Dressing Station; for the hopeless, dying cases with massive brain trauma, we can only provide morphine and a quiet corner to die.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The War the Infantry Knew 1914–1919 (Jane's Publishing / Public Domain).</div>\n            </div>\n          ",
         "modelAnswer": "<strong>Source A</strong> is highly useful for illustrating the gruelling physical obstacles faced during the very first stage of evacuation from the battlefield. The 1917 Passchendaele photograph shows six stretcher bearers struggling knee-deep through liquid mud and waterlogged shell craters to carry a single casualty. Historically, artillery destroyed Flanders drainage ditches during the Third Battle of Ypres, forcing teams of six or even eight RAMC bearers—rather than the standard two or four—to spend hours hauling wounded men to safety, dangerously delaying treatment for shock and haemorrhage. As an official IWM battlefield photograph, it captures the terrain vividly, though photographers rarely worked during the heaviest night barrages.<br><br><strong>Source B</strong> complements Source A by revealing how Regimental Medical Officers managed mass casualties once bearers reached the Regimental Aid Post (RAP). Captain J. C. Dunn records operating \"200 yards behind the frontline trench\" to execute \"rapid triage: stop severe arterial haemorrhage with tourniquets, dress wounds with sterile gauze, inject antitetanic serum, administer morphine... and label each man with a colored tag.\" Historically, RAPs had no surgical facilities and relied on fast sorting to move operable cases back to Advanced Dressing Stations and Casualty Clearing Stations. Written as a candid personal diary by an experienced battalion MO in 1916, Source B offers trustworthy firsthand insight into frontline triage under bombardment.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_5_5": [
       {
         "id": "lesson_5_5_q3",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "2(b)",
         "mockTitle": "Edexcel-Style Specification Practice Station (Western Front)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1280,13 +1280,13 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "\n            <div>\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: From a Paper by Dr Alexis Carrel and Dr Henry Dakin on Wound Treatment (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"Traditional antiseptic treatment failed completely in war wounds because chemical agents like carbolic acid killed healthy white blood cells and coagulated proteins without reaching bacteria sheltered in deep muscle crevices.\nOur method involves two vital steps: first, the complete surgical debridement of all devitalised tissue, dead muscle, and accessible foreign matter; second, the continuous or intermittent instillation of a non-irritating antiseptic solution (buffered sodium hypochlorite, 0.5%) through a network of perforated rubber tubes embedded directly into the recesses of the wound.\nThe solution dissolves dead tissue without injuring healthy granulation cells and rapidly sterilises the wound. Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">The Lancet / British Medical Journal (Public Domain).</div>\n            </div>\n          ",
         "modelAnswer": "<strong>Detail in Source B that I would follow up:</strong> \"Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.\"<br><br><strong>Question I would ask:</strong> How widely was the Carrel-Dakin tube irrigation method adopted across British Casualty Clearing Stations during major 1917 offensives, and how much did it reduce post-operative gangrene mortality?<br><br><strong>Type of source I would look for:</strong> Pathological laboratory logs and surgical ward records from RAMC Casualty Clearing Stations on the Western Front in 1917.<br><br><strong>How this might help answer my question:</strong> Mobile bacteriological laboratory logs tracked daily wound bacterial counts alongside patient recovery outcomes, verifying whether Carrel and Dakin's clinical success was replicated under heavy battle pressure.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ],
     "lesson_5_6": [
       {
         "id": "lesson_5_6_q2",
-        "mockId": "med_official_practice",
+        "mockId": "med_hub_practice",
         "qCode": "2(a)",
         "mockTitle": "Edexcel-Style Specification Practice Station (Western Front)",
         "paperCode": "Option 11 (1HI0/11)",
@@ -1298,7 +1298,7 @@ export const MOCK_BANK_P1_P2 = {
         "sourceExtract": "\n            <div style=\"margin-bottom: 12px;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source A: Dr. Richard Lewisohn, Clinical Report on the Use of Sodium Citrate in Blood Transfusion (1915)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Annals of Surgery, Vol. 62, New York, July 1915.</div>\n            </div>\n          \n            <div style=\"margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1;\">\n              <div style=\"font-weight: 700; color: #b45309; margin-bottom: 4px;\">Source B: Dr. Francis Peyton Rous and Dr. Joseph Turner, Research on Preserving Human Blood Cells (1916)</div>\n              <div style=\"font-style: italic; color: #1e293b; margin-bottom: 4px;\">\"While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.\"</div>\n              <div style=\"font-size: 0.8rem; color: #64748b; margin-top: 4px;\">Journal of Experimental Medicine, Vol. 23, Rockefeller Institute, New York, 1916.</div>\n            </div>\n          ",
         "modelAnswer": "<strong>Source A</strong> is highly useful for explaining the breakthrough that ended the need for risky vein-to-vein donor transfusions. Dr Richard Lewisohn's 1915 report demonstrates that adding a tiny \"0.2%\" dose of sodium citrate prevented blood from clotting outside the body, allowing blood to be collected in a glass vessel and infused without the donor standing beside the operating table. Historically, wounded soldiers on the Western Front frequently died of haemorrhagic shock before surgery, and syringe-cannula donor transfusions were impractical inside crowded frontline units. Published in the <em>Annals of Surgery</em> to share clinical protocols with fellow doctors, Source A reliably documents how anti-coagulation solved clotting, though citrated blood alone still spoiled within days.<br><br><strong>Source B</strong> is equally useful because it reveals the second chemical advance that made frontline blood banks possible. Rous and Turner's 1916 research proves that \"combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers\" preserved red blood cells \"for upwards of four weeks\" with full oxygen-carrying capacity. Historically, US Army doctor Captain Oswald Robertson applied both discoveries in November 1917 at the Battle of Cambrai, storing Type O universal-donor blood in ice-packed ammunition boxes to create the world's first blood depot. As a peer-reviewed Rockefeller Institute laboratory report, Source B provides authoritative scientific evidence of how refrigerated blood storage was achieved.",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/mock_june_2026_live.html"
+        "mockUrl": "/units/edexcel_medicine/"
       }
     ]
   }

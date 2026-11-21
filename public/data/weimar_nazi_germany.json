@@ -29269,26 +29269,20 @@
   "mock_exams": [
     {
       "id": "mock_notebook_1",
-      "title": "Mock Paper 1 (NotebookLM Prediction)",
+      "title": "Mock Paper 1 (Hub Summative Mock)",
       "url": "mock_notebook_1.html",
       "has_mark_scheme": true
     },
     {
       "id": "mock_notebook_2",
-      "title": "Mock Paper 2 (NotebookLM Prediction)",
+      "title": "Mock Paper 2 (Hub Summative Mock)",
       "url": "mock_notebook_2.html",
       "has_mark_scheme": true
     },
     {
       "id": "mock_notebook_3",
-      "title": "Mock Paper 3 (NotebookLM Prediction)",
+      "title": "Mock Paper 3 (Hub Summative Mock)",
       "url": "mock_notebook_3.html",
-      "has_mark_scheme": true
-    },
-    {
-      "id": "mock_adapted_2026",
-      "title": "Mock Paper 4 (Adapted 2026)",
-      "url": "mock_adapted_2026.html",
       "has_mark_scheme": true
     }
   ],

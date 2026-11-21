@@ -28,7 +28,7 @@ const TARGETS = {
     type: 'Paper 2 Period Study (12p Booklet)'
   },
   eee: {
-    mocks: ['eee_mock_2026.pdf', 'eee_mock_b.pdf', 'eee_mock_c.pdf', 'eee_mock_d.pdf', 'eee_notebook_1.pdf', 'eee_notebook_2.pdf', 'eee_notebook_3.pdf'],
+    mocks: ['eee_mock_b.pdf', 'eee_mock_c.pdf', 'eee_mock_d.pdf', 'eee_notebook_1.pdf', 'eee_notebook_2.pdf', 'eee_notebook_3.pdf'],
     expected: 12,
     type: 'Paper 2 British Depth Study (12p Booklet)'
   },
@@ -39,9 +39,9 @@ const TARGETS = {
     type: 'Paper 1 (16p QP + 4p SB = 20p Pack)'
   },
   weimar_nazi_germany: {
-    qp: ['mock_notebook_1_question_booklet.pdf', 'mock_notebook_2_question_booklet.pdf', 'mock_notebook_3_question_booklet.pdf', 'mock_adapted_2026_question_booklet.pdf'],
-    sb: ['mock_notebook_1_sources_booklet.pdf', 'mock_notebook_2_sources_booklet.pdf', 'mock_notebook_3_sources_booklet.pdf', 'mock_adapted_2026_sources_booklet.pdf'],
-    pack: ['mock_notebook_1.pdf', 'mock_notebook_2.pdf', 'mock_notebook_3.pdf', 'mock_adapted_2026.pdf'],
+    qp: ['mock_notebook_1_question_booklet.pdf', 'mock_notebook_2_question_booklet.pdf', 'mock_notebook_3_question_booklet.pdf'],
+    sb: ['mock_notebook_1_sources_booklet.pdf', 'mock_notebook_2_sources_booklet.pdf', 'mock_notebook_3_sources_booklet.pdf'],
+    pack: ['mock_notebook_1.pdf', 'mock_notebook_2.pdf', 'mock_notebook_3.pdf'],
     type: 'Paper 3 Modern Depth Study (16p QP + 4p SB = 20p Pack)'
   },
   usa: {
