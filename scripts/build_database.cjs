@@ -101,10 +101,56 @@ async function buildDatabase() {
   }
 
   const rootDbPath = path.join(__dirname, '..', 'database.json');
+  const publicDataDir = path.join(__dirname, '..', 'public', 'data');
+  fs.mkdirSync(publicDataDir, { recursive: true });
+
+  // Build lightweight ~20 KB course index for instant <300ms initial browser boot
+  // and keep per-unit public/data/<unitId>.json 100% synchronized for on-demand hydration
+  const dbIndex = {};
+  for (const [unitId, wrapper] of Object.entries(db)) {
+    const unitData = wrapper && wrapper.data;
+    if (!unitData || !Array.isArray(unitData.lessons || unitData.subtopics)) continue;
+    fs.writeFileSync(path.join(publicDataDir, `${unitId}.json`), JSON.stringify(unitData), 'utf8');
+    const rawLessons = unitData.lessons || unitData.subtopics || [];
+    dbIndex[unitId] = {
+      _isIndexStub: true,
+      data: {
+        id: unitId,
+        title: unitData.title,
+        subtitle: unitData.subtitle,
+        desc: unitData.desc,
+        description: unitData.description,
+        synopsis: unitData.synopsis,
+        category: unitData.category,
+        keyStage: unitData.keyStage,
+        key_stage: unitData.key_stage,
+        yearGroup: unitData.yearGroup,
+        year_group: unitData.year_group,
+        edition: unitData.edition,
+        enquiry: unitData.enquiry,
+        enquiry_question: unitData.enquiry_question,
+        cover_image: unitData.cover_image,
+        cover_image_position: unitData.cover_image_position,
+        homepage_background: unitData.homepage_background,
+        lessons: rawLessons.map((l) => ({
+          id: l.id,
+          slug: l.slug,
+          alias_ids: l.alias_ids,
+          title: l.title,
+          enquiry: l.enquiry,
+          enquiry_question: l.enquiry_question,
+        })),
+      },
+    };
+  }
+  fs.writeFileSync(path.join(publicDataDir, 'database_index.json'), JSON.stringify(dbIndex), 'utf8');
+
   // Write compact JSON to public/database.json so dist/database.json stays well under Cloudflare Pages' 25 MiB per-file limit
   fs.writeFileSync(publicDbPath, JSON.stringify(db), 'utf8');
   fs.writeFileSync(rootDbPath, JSON.stringify(db, null, 2), 'utf8');
-  console.log(`🎉 Successfully built database.json with ${Object.keys(db).length} units.`);
+  console.log(
+    `🎉 Successfully built database.json (${Object.keys(db).length} keys) + database_index.json (${Object.keys(dbIndex).length} units).`,
+  );
 }
 
 function auditEntityIntegrity(unitId, unitData) {

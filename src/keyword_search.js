@@ -1680,6 +1680,20 @@ export function openKeywordSearch(initialQuery = '') {
   }
   renderSearchResults(input.value);
 
+  // If opened before idle background hydration finished, hydrate full DB immediately & re-render
+  if (
+    typeof window !== 'undefined' &&
+    !window.__isFullDbHydrated &&
+    typeof window.ensureFullDatabaseLoaded === 'function'
+  ) {
+    window.ensureFullDatabaseLoaded().then((fullDb) => {
+      searchIndex = buildKeywordSearchIndex(fullDb);
+      if (modal.style.display === 'flex') {
+        renderSearchResults(input.value);
+      }
+    });
+  }
+
   setTimeout(() => {
     input.focus();
     if (input.value) {
@@ -1702,10 +1716,16 @@ export function closeKeywordSearch() {
 /**
  * Initializes the keyword search system, builds index, and binds global shortcuts.
  */
-export function initKeywordSearch(db = null) {
+export function initKeywordSearch(db = null, { deferIndex = false } = {}) {
   const targetDb = db || window.db || (window.state && window.state.db);
-  if (targetDb) {
+  if (targetDb && !deferIndex) {
     searchIndex = buildKeywordSearchIndex(targetDb);
+  }
+  if (typeof window !== 'undefined') {
+    window.__refreshKeywordSearchIndex = (hydratedDb) => {
+      const nextDb = hydratedDb || window.db || (window.state && window.state.db);
+      if (nextDb) searchIndex = buildKeywordSearchIndex(nextDb);
+    };
   }
 
   ensureModalDOM();

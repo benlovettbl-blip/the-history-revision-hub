@@ -8,6 +8,7 @@ const CORE_ASSETS = [
   '/icon-192.svg',
   '/icon-512.svg',
   '/style.css',
+  '/data/database_index.json',
 ];
 
 // Install Event: Precache core assets with resilient per-item handling

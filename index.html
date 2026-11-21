@@ -110,6 +110,34 @@
     <!-- Google Fonts & FontAwesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <script>
+      // Early non-blocking Course Index & direct-URL Unit JSON prefetch (eliminates 20.7 MB cold boot stall)
+      (function () {
+        try {
+          window.__dbIndexBootPromise = fetch('/data/database_index.json')
+            .then(function (r) {
+              return r.ok ? r.json() : null;
+            })
+            .catch(function () {
+              return null;
+            });
+          var qUnit = new URLSearchParams(window.location.search || '').get('unit');
+          if (qUnit && /^[a-z0-9_]+$/i.test(qUnit)) {
+            window.__initialUnitBootMap = window.__initialUnitBootMap || {};
+            if (!window.__initialUnitBootMap[qUnit]) {
+              window.__initialUnitBootMap[qUnit] = fetch('/data/' + encodeURIComponent(qUnit) + '.json')
+                .then(function (r) {
+                  return r.ok ? r.json() : null;
+                })
+                .catch(function () {
+                  return null;
+                });
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap"
       rel="stylesheet"
@@ -141,14 +169,17 @@
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="/src/gcse_spec_tracker.css" /> (Paused) -->
 
-    <!-- Leaflet CSS & JS for Interactive Maps -->
+    <!-- Leaflet CSS & JS for Interactive Maps (non-render-blocking) -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
+      media="print"
+      onload="this.media='all'"
     />
     <script
+      defer
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""

@@ -3,7 +3,12 @@
  * Coordinates Authentication, Storage, Layout Binding, and Navigation routing.
  */
 
-import { initData } from './storage.js';
+import {
+  initData,
+  loadDatabaseIndex,
+  ensureUnitLoaded,
+  ensureFullDatabaseLoaded,
+} from './storage.js';
 import { bindEvents } from './layout.js';
 import { switchView, initNavigationUI } from './navigation.js';
 import { state } from './state.js';
@@ -18,11 +23,7 @@ import {
   openKeywordSearch,
   highlightTargetKeywordInLesson,
 } from './keyword_search.js';
-import('./langemarck_myth.js');
-import('./digital_textbook_reader.js');
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
-import('./infographic_viewer.js');
-import('./engine/ks2_guidance.js');
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
 import { resolveUnitIdFromPathname } from './data/seo_routes.js';
 
@@ -296,19 +297,19 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   initData();
 
-  try {
-    const res = await fetch('/database.json');
-    state.db = await res.json();
-    // Keep window.db temporarily for files not yet refactored
-    window.db = state.db;
-  } catch (err) {
-    console.error('Failed to load database.json:', err);
-    state.db = {};
-    window.db = {};
-  }
+  // Load ~5 KB course index immediately (plus target unit JSON in parallel on direct unit URLs)
+  const bootUrlParams = new URLSearchParams(window.location.search);
+  const bootTargetUnit =
+    bootUrlParams.get('unit') || resolveUnitIdFromPathname(window.location.pathname);
 
-  // Initialize in-memory keyword & curriculum search
-  initKeywordSearch(state.db);
+  await Promise.all([
+    loadDatabaseIndex(),
+    bootTargetUnit ? ensureUnitLoaded(bootTargetUnit) : Promise.resolve(),
+    bootTargetUnit === 'ks2_ww2' ? import('./engine/ks2_guidance.js') : Promise.resolve(),
+  ]);
+
+  // Register Ctrl+K / '/' search shortcut immediately; full curriculum index builds in idle time
+  initKeywordSearch(state.db, { deferIndex: true });
   window.openKeywordSearch = openKeywordSearch;
   window.highlightTargetKeywordInLesson = highlightTargetKeywordInLesson;
 
@@ -562,125 +563,127 @@ window.addEventListener('DOMContentLoaded', async () => {
     return { index: -1, lesson: null, id: null };
   };
 
-  switchView(view, unit, true).then(() => {
-    if (view === 'lessons' && initialLesson !== null) {
-      const unitDataObj =
-        window.currentUnitData ||
-        (window.appStore && window.appStore.state && window.appStore.state.activeUnitData) ||
-        (typeof window.getUnitData === 'function' ? window.getUnitData(unit) : null);
-      const resolved = resolveLessonTarget(initialLesson, unitDataObj);
-      if (resolved.index !== -1) {
-        if (window.currentLessonIndex !== resolved.index) {
-          if (typeof window.viewLessonDetail === 'function') {
-            window.viewLessonDetail(resolved.index, null, true);
-          } else if (typeof window.renderLessonByIndex === 'function') {
-            window.renderLessonByIndex(resolved.index, true);
-          }
+  await switchView(view, unit, true);
+
+  if (view === 'lessons' && initialLesson !== null) {
+    const unitDataObj =
+      window.currentUnitData ||
+      (window.appStore && window.appStore.state && window.appStore.state.activeUnitData) ||
+      (typeof window.getUnitData === 'function' ? window.getUnitData(unit) : null);
+    const resolved = resolveLessonTarget(initialLesson, unitDataObj);
+    if (resolved.index !== -1) {
+      if (window.currentLessonIndex !== resolved.index) {
+        if (typeof window.viewLessonDetail === 'function') {
+          window.viewLessonDetail(resolved.index, null, true);
+        } else if (typeof window.renderLessonByIndex === 'function') {
+          window.renderLessonByIndex(resolved.index, true);
         }
+      }
+      try {
+        window.history.replaceState(
+          {
+            ...(window.history.state || {}),
+            view: 'lessons',
+            unit: unit,
+            lessonIndex: resolved.index,
+          },
+          '',
+          window.location.href,
+        );
+      } catch (err) {}
+      if (typeof window.updateHeaderBackBtn === 'function') {
+        window.updateHeaderBackBtn('lessons');
+      }
+      const stageParam = urlParams.get('stage');
+      if (stageParam && typeof window.jumpToNarrativeBlock === 'function') {
         try {
-          window.history.replaceState(
-            {
-              ...(window.history.state || {}),
-              view: 'lessons',
-              unit: unit,
-              lessonIndex: resolved.index,
-            },
-            '',
-            window.location.href,
-          );
-        } catch (err) {}
-        if (typeof window.updateHeaderBackBtn === 'function') {
-          window.updateHeaderBackBtn('lessons');
-        }
-        const stageParam = urlParams.get('stage');
-        if (stageParam && typeof window.jumpToNarrativeBlock === 'function') {
-          try {
-            const cleanStageUrl = new URL(window.location.href);
-            cleanStageUrl.searchParams.delete('stage');
-            window.history.replaceState(window.history.state || {}, '', cleanStageUrl);
-          } catch (e) {}
-          setTimeout(() => {
-            window.jumpToNarrativeBlock(stageParam);
-          }, 220);
-        }
-      }
-    }
-
-    // Direct Fullscreen Mobile QR Quiz Experience
-    const quizParam = (urlParams.get('quiz') || '').toLowerCase();
-    const isQuizRequested =
-      quizParam === 'true' ||
-      quizParam === '1' ||
-      quizParam === 'kt1' ||
-      quizParam === 'kt2' ||
-      quizParam === 'kt3' ||
-      quizParam.startsWith('lesson');
-
-    if (isQuizRequested && typeof window.startQuiz === 'function') {
-      const unitData =
-        window.currentUnitData ||
-        (window.appStore && window.appStore.state && window.appStore.state.activeUnitData);
-      const resolved = resolveLessonTarget(initialLesson, unitData);
-      let targetLesson = resolved.lesson;
-      let lessonId = resolved.id;
-
-      if (
-        !targetLesson &&
-        unitData &&
-        Array.isArray(unitData.lessons) &&
-        unitData.lessons.length > 0
-      ) {
-        const fallbackIdx = quizParam === 'kt2' ? 4 : quizParam === 'kt3' ? 9 : 0;
-        targetLesson = unitData.lessons[fallbackIdx] || unitData.lessons[0];
-        lessonId = targetLesson ? targetLesson.id : `lesson_${fallbackIdx + 1}`;
-      }
-
-      if (lessonId) {
+          const cleanStageUrl = new URL(window.location.href);
+          cleanStageUrl.searchParams.delete('stage');
+          window.history.replaceState(window.history.state || {}, '', cleanStageUrl);
+        } catch (e) {}
         setTimeout(() => {
-          window.startQuiz(lessonId, true);
-        }, 120);
+          window.jumpToNarrativeBlock(stageParam);
+        }, 220);
       }
     }
+  }
 
-    // Direct Emergency Cover Generator Modal Experience
-    const isCoverRequested =
-      urlParams.get('cover') === 'true' ||
-      urlParams.get('cover') === '1' ||
-      urlParams.get('view') === 'cover';
+  // Direct Fullscreen Mobile QR Quiz Experience
+  const quizParam = (urlParams.get('quiz') || '').toLowerCase();
+  const isQuizRequested =
+    quizParam === 'true' ||
+    quizParam === '1' ||
+    quizParam === 'kt1' ||
+    quizParam === 'kt2' ||
+    quizParam === 'kt3' ||
+    quizParam.startsWith('lesson');
 
-    if (isCoverRequested && typeof window.openEmergencyCoverModal === 'function') {
-      const uId = unit || 'cme_new';
-      setTimeout(() => {
-        window.openEmergencyCoverModal(uId);
-      }, 150);
+  if (isQuizRequested && typeof window.startQuiz === 'function') {
+    const unitData =
+      window.currentUnitData ||
+      (window.appStore && window.appStore.state && window.appStore.state.activeUnitData);
+    const resolved = resolveLessonTarget(initialLesson, unitData);
+    let targetLesson = resolved.lesson;
+    let lessonId = resolved.id;
+
+    if (
+      !targetLesson &&
+      unitData &&
+      Array.isArray(unitData.lessons) &&
+      unitData.lessons.length > 0
+    ) {
+      const fallbackIdx = quizParam === 'kt2' ? 4 : quizParam === 'kt3' ? 9 : 0;
+      targetLesson = unitData.lessons[fallbackIdx] || unitData.lessons[0];
+      lessonId = targetLesson ? targetLesson.id : `lesson_${fallbackIdx + 1}`;
     }
 
-    // Direct Infographic / Revision Mat Modal Experience
-    const matParam = urlParams.get('mat') || urlParams.get('infographic');
-    if (matParam) {
-      const uId = unit || 'edexcel_medicine';
-      const targetMat =
-        matParam === 'true' || matParam === '1'
-          ? initialLesson || 'lesson_3_5'
-          : matParam;
+    if (lessonId) {
+      setTimeout(() => {
+        window.startQuiz(lessonId, true);
+      }, 120);
+    }
+  }
+
+  // Direct Emergency Cover Generator Modal Experience
+  const isCoverRequested =
+    urlParams.get('cover') === 'true' ||
+    urlParams.get('cover') === '1' ||
+    urlParams.get('view') === 'cover';
+
+  if (isCoverRequested && typeof window.openEmergencyCoverModal === 'function') {
+    const uId = unit || 'cme_new';
+    setTimeout(() => {
+      window.openEmergencyCoverModal(uId);
+    }, 150);
+  }
+
+  // Direct Infographic / Revision Mat Modal Experience
+  const matParam = urlParams.get('mat') || urlParams.get('infographic');
+  if (matParam) {
+    const uId = unit || 'edexcel_medicine';
+    const targetMat =
+      matParam === 'true' || matParam === '1'
+        ? initialLesson || 'lesson_3_5'
+        : matParam;
+    import('./infographic_viewer.js').then(() => {
       setTimeout(() => {
         if (typeof window.openLessonInfographicModal === 'function') {
           window.openLessonInfographicModal(targetMat, uId);
         } else if (typeof window.openInfographicModal === 'function') {
           window.openInfographicModal({ slug: targetMat, unitId: uId });
         }
-      }, 250);
-    }
+      }, 120);
+    });
+  }
 
-    if (window.location.hash && window.location.hash.includes('-section')) {
-      setTimeout(() => {
-        const target = document.querySelector(window.location.hash);
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 300);
-    }
-  });
+  if (window.location.hash && window.location.hash.includes('-section')) {
+    setTimeout(() => {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 300);
+  }
 
   // Intelligent Popstate Handler: URL-Aware & Scroll-Restoring
   window.addEventListener('popstate', (e) => {
@@ -836,11 +839,38 @@ window.addEventListener('DOMContentLoaded', async () => {
   window.addEventListener('offline', updateNetworkStatus);
   if (!navigator.onLine) updateNetworkStatus();
 
-  // Hide the loading curtain smoothly
-  setTimeout(() => {
+  // Lift the loading curtain on the very next paint frame once initial view is rendered
+  requestAnimationFrame(() => {
     const curtain = document.getElementById('page-curtain');
     if (curtain) {
       curtain.classList.add('hidden');
     }
-  }, 100);
+
+    // Pre-warm full search corpus only if the user hovers/focuses the header search bar
+    const headerSearchEl = document.getElementById('header-search-bar');
+    if (headerSearchEl) {
+      const warmSearchOnce = () => {
+        ensureFullDatabaseLoaded();
+        headerSearchEl.removeEventListener('mouseenter', warmSearchOnce);
+        headerSearchEl.removeEventListener('focus', warmSearchOnce);
+      };
+      headerSearchEl.addEventListener('mouseenter', warmSearchOnce, { passive: true });
+      headerSearchEl.addEventListener('focus', warmSearchOnce, { passive: true });
+    }
+
+    // Schedule lightweight UI tool chunks after page settles (never auto-downloads 20.7 MB database.json)
+    const runIdleWarmup = () => {
+      import('./infographic_viewer.js');
+      import('./digital_textbook_reader.js');
+      import('./engine/ks2_guidance.js');
+      import('./langemarck_myth.js');
+    };
+    setTimeout(() => {
+      if (typeof window.requestIdleCallback === 'function') {
+        window.requestIdleCallback(runIdleWarmup, { timeout: 3000 });
+      } else {
+        runIdleWarmup();
+      }
+    }, 1800);
+  });
 });

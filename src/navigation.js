@@ -4,6 +4,7 @@
 
 import { appStore } from './engine/store.js';
 import { state } from './state.js';
+import { ensureUnitLoaded, ensureFullDatabaseLoaded } from './storage.js';
 import {
   renderDashboard,
   renderInteractiveQuiz,
@@ -1277,7 +1278,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       await switchView('lessons', 'ks2_ww2');
       return;
     }
-    if (param) await loadUnit(param);
+    if (targetUnit) await loadUnit(targetUnit);
     renderMockExamsView();
   } else if (viewName === 'lessons') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
@@ -1299,6 +1300,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         return;
       }
     }
+    await ensureFullDatabaseLoaded();
     const { renderDepartmentPortal } = await import('./department_portal.js');
     const portalTab = viewName === 'curriculum' ? 'curriculum' : param;
     await renderDepartmentPortal();
@@ -1312,6 +1314,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const { renderChessHubView } = await import('./chess_zone.js');
     renderChessHubView();
   } else if (viewName === 'masterpiece' || viewName === 'gallery') {
+    await ensureFullDatabaseLoaded();
     await renderMasterpieceView();
   } else if (viewName === 'reader' || viewName === 'textbook-reader') {
     const unitTarget =
@@ -1411,11 +1414,16 @@ async function loadUnit(unitId) {
   const currentLessons = state.activeUnitData
     ? state.activeUnitData.lessons || state.activeUnitData.subtopics
     : null;
+  const isStub = Boolean(state.db && state.db[unitId] && state.db[unitId]._isIndexStub);
   const isAlreadyLoaded =
-    state.selectedUnitId === unitId && currentLessons && currentLessons.length > 0;
+    !isStub && state.selectedUnitId === unitId && currentLessons && currentLessons.length > 0;
 
   if (!isAlreadyLoaded) {
     state.selectedUnitId = unitId;
+
+    if (!state.db || !state.db[unitId] || state.db[unitId]._isIndexStub) {
+      await ensureUnitLoaded(unitId);
+    }
 
     if (state.db && state.db[unitId]) {
       const unitPayload = state.db[unitId];

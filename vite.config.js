@@ -176,6 +176,7 @@ function seoCoursePagesPlugin() {
     <meta name="twitter:title" content="${escapeHtml(route.seoTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(route.metaDescription)}" />
     <meta name="twitter:image" content="${escapeHtml(ogImageUrl)}" />
+    <script>window.__initialUnitBootMap=window.__initialUnitBootMap||{};window.__initialUnitBootMap["${escapeHtml(route.unitId)}"]=fetch("/data/${escapeHtml(route.unitId)}.json").then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});</script>
     <script type="application/ld+json">${JSON.stringify(courseSchema)}</script>`;
 
         const unitHtml = baseHtml

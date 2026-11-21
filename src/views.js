@@ -169,11 +169,12 @@ export function renderDashboard() {
       ? (meta.paperBadge || 'Edexcel Paper')
       : `Year ${meta.year}`;
 
+    const imgLoadingAttr = meta.stage === 'gcse' || index >= 6 ? ' loading="lazy" decoding="async"' : ' decoding="async"';
     const cardImgHtml = imageUrl
       ? `
         <div class="module-card-img" style="position: relative; height: 130px; overflow: hidden; background: #0a101f; margin: -12px -12px 10px -12px; border-bottom: 1px solid var(--border-glass, #e2e8f0); flex-shrink: 0;">
           <div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imageUrl}'); background-size: cover; background-position: ${bgPos}; filter: blur(12px) brightness(0.35); opacity: 0.7; transform: scale(1.1);"></div>
-          <img src="${imageUrl}" alt="${displayTitle}" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.5)); transition: transform 0.3s ease;" />
+          <img src="${imageUrl}" alt="${displayTitle}"${imgLoadingAttr} style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.5)); transition: transform 0.3s ease;" />
         </div>
       `
       : `<div class="module-card-img" style="height: 130px; background: var(--primary); margin: -12px -12px 10px -12px;"></div>`;

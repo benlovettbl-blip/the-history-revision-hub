@@ -231,3 +231,131 @@ export function clearWeakSpots(unitId = null) {
   saveProgress();
 }
 
+// ============================================================================
+// Progressive Curriculum Loader (~5 KB Instant Index + On-Demand Unit JSON)
+// ============================================================================
+const unitLoadPromises = new Map();
+let fullDbPromise = null;
+let isFullDbHydrated = false;
+
+export function isFullDatabaseHydrated() {
+  return isFullDbHydrated;
+}
+
+export async function loadDatabaseIndex() {
+  try {
+    const preflight =
+      typeof window !== 'undefined' && window.__dbIndexBootPromise
+        ? await window.__dbIndexBootPromise
+        : null;
+    const indexJson =
+      preflight ||
+      (await fetch('/data/database_index.json').then((r) => (r.ok ? r.json() : null)));
+
+    if (indexJson && typeof indexJson === 'object' && Object.keys(indexJson).length > 0) {
+      if (!state.db || Object.keys(state.db).length === 0) {
+        state.db = indexJson;
+      } else {
+        for (const [k, val] of Object.entries(indexJson)) {
+          if (!state.db[k]) state.db[k] = val;
+        }
+      }
+      if (typeof window !== 'undefined') window.db = state.db;
+      return state.db;
+    }
+  } catch (err) {
+    console.warn('[FastBoot] Course index fetch fell back to full database.json:', err);
+  }
+  return ensureFullDatabaseLoaded();
+}
+
+export async function ensureUnitLoaded(unitId) {
+  if (!unitId || unitId === 'all') return null;
+
+  const existing = state.db && state.db[unitId];
+  if (existing && !existing._isIndexStub) {
+    return existing.data || (existing.lessons ? existing : null);
+  }
+
+  if (unitLoadPromises.has(unitId)) {
+    return unitLoadPromises.get(unitId);
+  }
+
+  const p = (async () => {
+    try {
+      const bootMap = typeof window !== 'undefined' ? window.__initialUnitBootMap : null;
+      const preflight = bootMap && bootMap[unitId] ? await bootMap[unitId] : null;
+      const raw =
+        preflight ||
+        (await fetch(`/data/${encodeURIComponent(unitId)}.json`).then((r) =>
+          r.ok ? r.json() : null,
+        ));
+
+      if (raw && typeof raw === 'object') {
+        const unitData = raw.data || raw;
+        if (!state.db) state.db = {};
+        state.db[unitId] = { data: unitData };
+        if (typeof window !== 'undefined') window.db = state.db;
+        return unitData;
+      }
+    } catch (err) {
+      console.warn(`[FastBoot] Per-unit load for ${unitId} fell back to full DB:`, err);
+    }
+
+    await ensureFullDatabaseLoaded();
+    const afterFull = state.db && state.db[unitId];
+    return afterFull ? afterFull.data || afterFull : null;
+  })().finally(() => {
+    unitLoadPromises.delete(unitId);
+  });
+
+  unitLoadPromises.set(unitId, p);
+  return p;
+}
+
+export async function ensureFullDatabaseLoaded() {
+  if (isFullDbHydrated && state.db && Object.keys(state.db).length > 0) {
+    return state.db;
+  }
+  if (fullDbPromise) return fullDbPromise;
+
+  fullDbPromise = (async () => {
+    try {
+      const res = await fetch('/database.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const fullDb = await res.json();
+      if (!state.db) state.db = {};
+      for (const [k, val] of Object.entries(fullDb)) {
+        // Preserve already-hydrated live unit objects so activeUnitData references never orphan
+        if (!state.db[k] || state.db[k]._isIndexStub) {
+          state.db[k] = val;
+        }
+      }
+      isFullDbHydrated = true;
+      if (typeof window !== 'undefined') {
+        window.db = state.db;
+        window.__isFullDbHydrated = true;
+        if (typeof window.__refreshKeywordSearchIndex === 'function') {
+          window.__refreshKeywordSearchIndex(state.db);
+        }
+      }
+      return state.db;
+    } catch (err) {
+      console.error('Failed to hydrate full database.json:', err);
+      if (!state.db) state.db = {};
+      if (typeof window !== 'undefined') window.db = state.db;
+      return state.db;
+    } finally {
+      fullDbPromise = null;
+    }
+  })();
+
+  return fullDbPromise;
+}
+
+if (typeof window !== 'undefined') {
+  window.ensureUnitLoaded = ensureUnitLoaded;
+  window.ensureFullDatabaseLoaded = ensureFullDatabaseLoaded;
+}
+
+

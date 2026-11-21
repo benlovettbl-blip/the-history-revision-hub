@@ -3063,15 +3063,17 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
   const existing = document.getElementById('emergencyCoverModal');
   if (existing) existing.remove();
 
-  // Load database for lesson titles and units
-  let db = window.cachedDatabase;
+  // Load lightweight course index (or existing window.db) for lesson titles and units
+  let db =
+    window.cachedDatabase ||
+    (window.db && Object.keys(window.db).length > 0 ? window.db : null);
   if (!db) {
     try {
-      const res = await fetch('/database.json');
+      const res = await fetch('/data/database_index.json');
       db = await res.json();
       window.cachedDatabase = db;
     } catch (e) {
-      console.warn('Could not fetch database.json, using fallback data:', e);
+      console.warn('Could not fetch database_index.json, using fallback data:', e);
       db = {};
     }
   }
