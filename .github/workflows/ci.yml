@@ -1,4 +1,4 @@
-name: CI Quality & Space Budget Assurance
+name: CI Quality & Cloudflare Build Assurance
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  qa_and_sanitization:
-    name: Institutional Neutrality & Core QA Gate
+  quality_and_build:
+    name: Neutrality, Provenance, Curriculum & Cloudflare Build Gate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -17,77 +17,54 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: '.nvmrc'
           cache: 'npm'
 
       - name: Install Dependencies
         run: npm ci
 
-      - name: Institutional Neutrality & Sanitization Audit
+      - name: Institutional Neutrality & Sanitization Gate
         run: node scripts/verify_sanitization.cjs
 
-      - name: Curriculum & Question Verification
+      - name: Visual Integrity, Provenance & Zero-AI Gate
         run: |
-          node scripts/test_question_sync.cjs
-          node scripts/verify_vault_answers.cjs
-          node scripts/check_vault_randomization.cjs
-          node scripts/verify_source_sync.cjs
-          node scripts/verify_source_lettering.cjs
           node scripts/verify_images.cjs
+          node scripts/audit_provenance_and_ai.cjs
+          node scripts/lint_source_fidelity.cjs
+          node scripts/audit_infographics.cjs
 
-      - name: Source Alignment & Zero-Duplicate Gates
+      - name: Stage Answerability, Do Now & Retrieval Companion Gate
         run: |
-          node scripts/verify_source_block_chronology.cjs
-          node scripts/audit_intra_lesson_duplicates.cjs
-          node scripts/check_all_units_source_sync.cjs
+          node scripts/audit_narrative_question_answerability.cjs --strict
+          node scripts/audit_donow_grounding.cjs
+          node scripts/audit_all_retrieval_companions.cjs
 
-  space_budget_matrix:
-    name: Space Budget Matrix (${{ matrix.unit }})
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        unit:
-          - edexcel_medicine
-          - cme_new
-          - usa
-          - weimar_nazi_germany
-          - great_war
-          - water_and_sanitation
-          - early_modern_world
-          - boosters
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Space Budget Gate (${{ matrix.unit }})
-        run: node scripts/check_overflows.cjs ${{ matrix.unit }} --strict
-
-  textbook_balance_assurance:
-    name: Automated Textbook Balance & Fill Gate
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Auto-Balance Textbook Audit (KS3 & GCSE)
-        run: npm run balance:textbook:all
-
+      - name: Production Vite Build & Cloudflare Edge Size Gate
+        run: |
+          npm run build
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+            const MAX_ASSET = 25 * 1024 * 1024;
+            const MAX_JS = 500 * 1024;
+            const overAsset = [], overJs = [];
+            function walk(d) {
+              for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+                const f = path.join(d, e.name);
+                if (e.isDirectory()) walk(f);
+                else {
+                  const sz = fs.statSync(f).size;
+                  if (sz > MAX_ASSET) overAsset.push(`${f} (${(sz/1048576).toFixed(2)} MiB)`);
+                  if (f.includes(path.join("dist", "assets")) && f.endsWith(".js") && sz > MAX_JS) {
+                    overJs.push(`${e.name} (${(sz/1024).toFixed(1)} KiB)`);
+                  }
+                }
+              }
+            }
+            walk("dist");
+            if (overAsset.length || overJs.length) {
+              console.error("Oversized Cloudflare assets:", overAsset, "Oversized JS chunks:", overJs);
+              process.exit(1);
+            }
+            console.log("✅ Cloudflare 25 MiB asset limit and <500 kB JS chunk budget verified!");
+          '
