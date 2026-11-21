@@ -16,7 +16,7 @@
   "cover_image": "/images/first_british_empire/battle_of_plassey_1757.jpg",
   "cover_image_position": "center 35%",
   "is_ks3": true,
-  "year_group": "Year 8",
+  "year_group": "Key Stage 3",
   "timeline": [
     {
       "year": "1600",
@@ -296,12 +296,12 @@
       "enquiry": "How did a private chartered trading company seize sovereign military control of Bengal?",
       "subtitle": "From Spice Merchants to Sovereign Conquerors",
       "skill": "Causation & Motive",
-      "card_image": "/images/robert_clive.jpg",
+      "card_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
       "card_position": "center 15%",
       "banner": {
-        "image": "/images/shah_alam_clive.jpg",
-        "position": "center 35%",
-        "caption": "Shah Alam II Conveying the Grant of the Diwani to Lord Clive (August 1765) by Benjamin West: A private corporation assumes sovereign tax-raising powers over 20 million people."
+        "image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
+        "caption": "Fort William in the Kingdom of Bengal, Belonging to the East India Company of England",
+        "position": "center 35%"
       },
       "margin_spine": [
         {
@@ -747,8 +747,9 @@
           "heading": "Coastal Fortresses & Mughal Factories (1615–1700)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> In 1615, King James I dispatched diplomat Sir Thomas Roe to negotiate with Mughal Emperor Jahangir at his royal court. Roe secured an imperial royal decree permitting English merchants to construct permanent fortified warehouses known as factories at the port of Surat.</p><p class=\"prose-p\">Over the seventeenth century, the Company established vital commercial coastal enclaves across Surat, Madras, Calcutta, and Bombay. These bustling depots were defended by armed sepoy garrisons of recruited Indian infantry, transforming merchant warehouses into formidable corporate fortresses.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> In 1615, King James I dispatched diplomat Sir Thomas Roe to negotiate with Mughal Emperor Jahangir at his royal court. Roe secured an imperial royal decree permitting English merchants to construct permanent fortified warehouses known as factories at the port of Surat.</p><p class=\"prose-p\">Over the seventeenth century, the Company established vital commercial coastal enclaves across Surat, Madras, Calcutta, and Bombay. These bustling depots were defended by armed sepoy garrisons of recruited Indian infantry, transforming merchant warehouses into formidable corporate fortresses.</p>",
-          "image": "/images/sir_thomas_roe.jpg",
-          "caption": "Sir Thomas Roe, English ambassador dispatched by King James I to the Mughal court of Emperor Jahangir (1615–1619) to secure trading rights for Company factories."
+          "image": "/images/upgraded/ks3-early/fbe_l1_b1_sir_thomas_roe_mierevelt.jpg",
+          "caption": "Sir Thomas Roe (c. 1581–1644), English ambassador dispatched by King James I to the Mughal court of Emperor Jahangir (1615–1619) to secure imperial trading rights for East India Company factories (after Michiel Jansz. van Mierevelt, National Portrait Gallery, NPG 1354).",
+          "image_alt": "17th-century oil portrait of English diplomat Sir Thomas Roe by Michiel Jansz. van Mierevelt (NPG 1354)"
         },
         {
           "act": 3,
@@ -2349,7 +2350,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Granted a royal [Charter] by Elizabeth I in 1600, the East India Company held a lucrative [Monopoly] over Asian trade and built armed coastal [Factory] posts across India. After clashing with the [Nawab] of Bengal, Robert Clive used bribery and trained [Sepoy] regiments to win the Battle of Plassey in 1757. By 1765, securing the [Diwani] gave the Company direct control over Bengal’s vast land taxes."
+      "vocab_cloze_text": "Granted a royal [Charter] by Elizabeth I in 1600, the East India Company held a lucrative [Monopoly] over Asian trade and built armed coastal [Factory] posts across India. After clashing with the [Nawab] of Bengal, Robert Clive used bribery and trained [Sepoy] regiments to win the Battle of Plassey in 1757. By 1765, securing the [Diwani] gave the Company direct control over Bengal’s vast land taxes.",
+      "banner_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
+      "hero_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg"
     },
     {
       "id": "lesson_2",
@@ -2357,12 +2360,12 @@
       "enquiry": "What were the economic mechanics and human horrors of the Triangular Trade?",
       "subtitle": "The Mechanics and Human Reality of the Triangular Trade",
       "skill": "Source Utility & Forensic Evidence",
-      "card_image": "/images/olaudah_equiano.jpg",
+      "card_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
       "card_position": "center 15%",
       "banner": {
-        "image": "/images/brookes_slave_ship.jpg",
-        "position": "center 40%",
-        "caption": "The Stowage of the British Slave Ship Brookes (1788): The forensic abolitionist broadside that exposed how 454 captive human beings were systematically crammed into darkness below deck."
+        "image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
+        "caption": "The Slave Trade (Slaves on the West Coast of Africa)",
+        "position": "center 40%"
       },
       "margin_spine": [
         {
@@ -4428,7 +4431,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Driven by plantation profits, Britain dominated [Transatlantic Trade] after securing the Spanish [Asiento] contract in 1713. Captive Africans were locked inside coastal [Barracoon] pens before enduring disease, chains, and overcrowding on the [Middle Passage] into lifelong [Chattel Slavery]. Outrage over the 1781 Zong killings and Olaudah Equiano’s testimony strengthened the [Abolitionist] campaign until Parliament banned the British slave trade in 1807."
+      "vocab_cloze_text": "Driven by plantation profits, Britain dominated [Transatlantic Trade] after securing the Spanish [Asiento] contract in 1713. Captive Africans were locked inside coastal [Barracoon] pens before enduring disease, chains, and overcrowding on the [Middle Passage] into lifelong [Chattel Slavery]. Outrage over the 1781 Zong killings and Olaudah Equiano’s testimony strengthened the [Abolitionist] campaign until Parliament banned the British slave trade in 1807.",
+      "banner_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
+      "hero_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg"
     },
     {
       "id": "lesson_3",
@@ -4436,12 +4441,12 @@
       "enquiry": "How did enslaved Africans actively resist colonial bondage in the Caribbean?",
       "subtitle": "Sugar Barons, Mountain Guerrillas, and Freedom Treaties",
       "skill": "Historical Interpretations & Significance",
-      "card_image": "/images/queen_nanny.jpg",
+      "card_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
       "card_position": "center 15%",
       "banner": {
-        "image": "/images/sugar_cane_plantation.jpg",
-        "position": "center 35%",
-        "caption": "Slaves Cutting the Sugar Cane in Antigua (1823) by William Clark: Enslaved field gangs working under armed overseers in the Caribbean sugar industrial complex."
+        "image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
+        "caption": "A View in the Island of Jamaica, of the Spring-Head of Roaring River on the Estate of William Beckford",
+        "position": "center 35%"
       },
       "margin_spine": [
         {
@@ -5362,10 +5367,10 @@
           "id": "fbe_l3_src_d",
           "letter": "D",
           "type": "visual",
-          "src": "/images/queen_nanny.jpg",
-          "image": "/images/queen_nanny.jpg",
+          "src": "/images/upgraded/ks3-early/fbe_l3_s3_queen_nanny_monument.jpg",
+          "image": "/images/upgraded/ks3-early/fbe_l3_s3_queen_nanny_monument.jpg",
           "title": "Source D (Guerrilla Leadership): Memorial Monument Bust of National Hero Queen Nanny of the Maroons",
-          "caption": "Monument bust commemorating Grandy Nanny, spiritual and military leader of the Windward Maroons who led decades of successful guerrilla resistance against British regular armies in Jamaica's Blue Mountains.",
+          "caption": "Commemorative bronze monument bust and plaque honoring National Hero Queen Nanny of the Maroons (c. 1686–c. 1750) at National Heroes Park, Kingston, Jamaica.",
           "citation": "National Heroes Park, Kingston, Jamaica. Commemorative Bronze Monument.",
           "provenance": "Sculpted in Jamaica to honor the only female National Hero of Jamaica and champion of anti-colonial resistance.",
           "context": "Queen Nanny was an Asante military and spiritual leader who established Nanny Town in the precipitous Blue Mountains. Between 1720 and 1739, her warriors repeatedly defeated British regiments by using camouflaged ambush tactics. **Hinge Question:** How did African military traditions and spiritual leadership enable Maroons to withstand the full might of the British military?",
@@ -6516,7 +6521,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "On Jamaican sugar estates, enslaved Africans were driven from dawn to dusk on each [Plantation] under the harsh [Gang System] and armed overseers. Many fought back through tool [Sabotage] or escaped into the Blue Mountains to join free [Maroon] communities. Led by Queen Nanny, fighters used the cow-horn [Abeng] and [Guerrilla Warfare] ambushes to force Britain to recognise Maroon freedom in 1739."
+      "vocab_cloze_text": "On Jamaican sugar estates, enslaved Africans were driven from dawn to dusk on each [Plantation] under the harsh [Gang System] and armed overseers. Many fought back through tool [Sabotage] or escaped into the Blue Mountains to join free [Maroon] communities. Led by Queen Nanny, fighters used the cow-horn [Abeng] and [Guerrilla Warfare] ambushes to force Britain to recognise Maroon freedom in 1739.",
+      "banner_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
+      "hero_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg"
     },
     {
       "id": "lesson_4",
@@ -6524,12 +6531,12 @@
       "enquiry": "Why did imperial taxation drive American colonists from loyal British subjects to open rebellion?",
       "subtitle": "From Loyal Subjects to Revolutionary Rebellion",
       "skill": "Causal Sequencing & Narrative Account",
-      "card_image": "/images/boston_tea_party.jpg",
+      "card_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/boston_massacre.jpg",
-        "position": "center 45%",
-        "caption": "The Bloody Massacre in King-Street (March 1770) by Paul Revere: The incendiary Boston propaganda engraving that united the American colonies against British military occupation."
+        "image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
+        "caption": "A View of Part of the Town of Boston in New-England and Brittish Ships of War Landing Their Troops! 1768",
+        "position": "center 45%"
       },
       "margin_spine": [
         {
@@ -8567,7 +8574,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Deep in debt after 1763, Parliament angered American colonists by enforcing import [Tariff] taxes and the 1765 Stamp Act. Organised by the [Sons of Liberty], merchants launched a coordinated [Boycott] of British goods and condemned troops stationed under [Quartering] rules. After Samuel Adams’s protesters dumped 342 East India Company tea chests into Boston Harbour in December 1773, George III answered with the punitive [Coercive Acts]."
+      "vocab_cloze_text": "Deep in debt after 1763, Parliament angered American colonists by enforcing import [Tariff] taxes and the 1765 Stamp Act. Organised by the [Sons of Liberty], merchants launched a coordinated [Boycott] of British goods and condemned troops stationed under [Quartering] rules. After Samuel Adams’s protesters dumped 342 East India Company tea chests into Boston Harbour in December 1773, George III answered with the punitive [Coercive Acts].",
+      "banner_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
+      "hero_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg"
     },
     {
       "id": "lesson_5",
@@ -8575,12 +8584,12 @@
       "enquiry": "How did the ideals of the 1776 Revolution contrast with the reality of slavery and imperial defeat?",
       "subtitle": "Liberty, Hypocrisy, and the Fracture of the First Empire",
       "skill": "Evaluative Synthesis & Historical Verdict",
-      "card_image": "/images/declaration_of_independence.jpg",
+      "card_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
       "card_position": "center 35%",
       "banner": {
-        "image": "/images/declaration_of_independence.jpg",
-        "position": "center 40%",
-        "caption": "Declaration of Independence (1819) by John Trumbull: The drafting committee presents Thomas Jefferson’s declaration of unalienable rights to the Continental Congress in Philadelphia."
+        "image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
+        "caption": "Washington Crossing the Delaware",
+        "position": "center 40%"
       },
       "margin_spine": [
         {
@@ -10626,14 +10635,16 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Colonial [Militia] clashed with British regulars at Lexington in 1775 before Thomas Jefferson’s July 1776 [Declaration] proclaimed [Unalienable Rights]—exposing painful [Hypocrisy] alongside ongoing slavery. Meanwhile, thousands of escaped [Black Loyalist] soldiers fought for British promises of freedom. Following crucial [Allied Intervention] by France and Cornwallis’s surrender at Yorktown, Britain recognised US independence in the 1783 [Treaty of Paris]."
+      "vocab_cloze_text": "Colonial [Militia] clashed with British regulars at Lexington in 1775 before Thomas Jefferson’s July 1776 [Declaration] proclaimed [Unalienable Rights]—exposing painful [Hypocrisy] alongside ongoing slavery. Meanwhile, thousands of escaped [Black Loyalist] soldiers fought for British promises of freedom. Following crucial [Allied Intervention] by France and Cornwallis’s surrender at Yorktown, Britain recognised US independence in the 1783 [Treaty of Paris].",
+      "banner_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
+      "hero_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg"
     }
   ],
   "homepage_background": "/images/first_british_empire/battle_of_plassey_1757.jpg",
   "edition": "2026.1",
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 8",
+  "yearGroup": "Key Stage 3",
   "category": "KS3",
   "key_individuals": [
     {

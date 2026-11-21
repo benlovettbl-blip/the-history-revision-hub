@@ -18,7 +18,7 @@
   "homepage_background": "/images/john_snow_cholera_map.jpg",
   "color": "#0288d1",
   "is_ks3": true,
-  "year_group": "Year 7",
+  "year_group": "Key Stage 3",
   "debatePrompts": [
     {
       "title": "Roman Public Health",
@@ -232,9 +232,13 @@
       "enquiry": "Was Roman water engineering built to protect ordinary people, or to show off imperial power and luxury?",
       "subtitle": "From Celtic streams to monumental aqueducts, thermae, and public latrines",
       "skill": "Disciplinary Skill: Change & Continuity / Causation",
-      "card_image": "/images/roman_aqueduct.jpg",
+      "card_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
       "card_position": "center 25%",
-      "banner": "/images/roman_bathhouse_cutaway.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
+        "caption": "The Great Roman Bath and Colonnade at Aquae Sulis (Bath, Somerset)",
+        "position": "center 30%"
+      },
       "cover_image": "/images/roman_aqueduct.jpg",
       "prologue": "In AD 43, Roman legions landed on the shores of Britain, bringing not merely swords and armor, but an engineering revolution. In place of dispersed Celtic roundhouses drawing water from local streams, the conquerors erected stone-walled cities requiring vast volumes of freshwater. Through towering aqueducts, pressurized lead conduits, luxurious public thermae, and flushing latrines, Rome transformed the landscape. But did these monumental hydraulic feats stem from genuine medical understanding, or were they imperial displays of power and prestige?",
       "margin_spine": [
@@ -1929,7 +1933,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "After conquering Britain in AD 43, Roman engineers promoted urban [Romanitas] by building gravity-fed [Aqueduct] channels to carry clean spring water into towns. Citizens exercised and bathed inside public [Thermae] heated from beneath the floor by a [Hypocaust] furnace, alongside stone [Latrine] blocks flushed by running drains. Yet shared bathwater, communal sponges, and toxic [Plumbism] from lead pipes still spread illness before Roman rule collapsed in AD 410."
+      "vocab_cloze_text": "After conquering Britain in AD 43, Roman engineers promoted urban [Romanitas] by building gravity-fed [Aqueduct] channels to carry clean spring water into towns. Citizens exercised and bathed inside public [Thermae] heated from beneath the floor by a [Hypocaust] furnace, alongside stone [Latrine] blocks flushed by running drains. Yet shared bathwater, communal sponges, and toxic [Plumbism] from lead pipes still spread illness before Roman rule collapsed in AD 410.",
+      "banner_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
+      "hero_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg"
     },
     {
       "id": "lesson_2",
@@ -1937,9 +1943,13 @@
       "enquiry": "Was medieval public health squalor caused by a lack of money, or by mistaken medical beliefs like miasma?",
       "subtitle": "From urban filth and gong farmers to monastic hydraulics and the Black Death",
       "skill": "Disciplinary Skill: Comparison & Living Conditions / Causation",
-      "card_image": "/images/black_death.jpg",
+      "card_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
       "card_position": "center 30%",
-      "banner": "/images/black_death.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
+        "caption": "Bernardo Tolomei Visiting Victims of the 1348 Black Death Plague",
+        "position": "center 30%"
+      },
       "cover_image": "/images/black_death.jpg",
       "prologue": "When the Roman legions withdrew in AD 410, their monumental aqueducts and hypocausts fell into ruin. Across medieval Britain, newly expanding boroughs grew rapidly with narrow unpaved alleys, timber-framed houses, and overflowing cesspits. Yet the popular myth of the \"filthy dark ages\" overlooks the remarkable engineering of medieval monasteries like Canterbury and Titchfield, as well as municipal ordinances fining polluters. When the Black Death struck in 1348, wiping out nearly half the population, it exposed the tragic divide between medieval hygiene efforts and the limits of medical understanding. Did medieval public health collapse because town councils lacked the resources to act, or because mistaken medical beliefs like miasma blinded them to the real causes of disease?",
       "margin_spine": [
@@ -3634,7 +3644,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "As each medieval [Borough] expanded after 1100, households dumped waste into streets and overflowing [Cesspit] shafts dug dangerously close to wells, hiring a night-time [Gong Farmer] to clear the filth. By contrast, wealthy monasteries piped clean water through a stone [Lavatorium] for washing. When the [Black Death] struck in 1348, townsfolk blamed foul-smelling [Miasma], prompting Parliament to pass the 1388 [Statute of Cambridge] against river pollution."
+      "vocab_cloze_text": "As each medieval [Borough] expanded after 1100, households dumped waste into streets and overflowing [Cesspit] shafts dug dangerously close to wells, hiring a night-time [Gong Farmer] to clear the filth. By contrast, wealthy monasteries piped clean water through a stone [Lavatorium] for washing. When the [Black Death] struck in 1348, townsfolk blamed foul-smelling [Miasma], prompting Parliament to pass the 1388 [Statute of Cambridge] against river pollution.",
+      "banner_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
+      "hero_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg"
     },
     {
       "id": "lesson_3",
@@ -3642,9 +3654,13 @@
       "enquiry": "Was early modern filth caused by population explosion, or the lack of running water to make inventions work?",
       "subtitle": "From Sir John Harington’s flush toilet to Samuel Pepys’ cellar and the Great Plague of 1665",
       "skill": "Disciplinary Skill: Extent of Change / Source Utility",
-      "card_image": "/images/harington_toilet.jpg",
+      "card_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
       "card_position": "center 20%",
-      "banner": "/images/plague_in_london_1665_wellcome.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
+        "caption": "Long View of Early Modern London from Bankside Showing Congested Riverside Tenements",
+        "position": "center 30%"
+      },
       "cover_image": "/images/harington_toilet.jpg",
       "prologue": "Between 1500 and 1700, England underwent a staggering demographic surge. London exploded from 60,000 residents into a bustling metropolis of over half a million souls, packing families into cantilevered wooden tenements. In 1596, Sir John Harington invented the world's first flush toilet for Queen Elizabeth I—yet without running water networks, it remained an isolated palace curiosity. When Samuel Pepys stepped into his basement in 1660 only to find his neighbour's overflowing cesspit seeping through the wall, he documented the daily reality of early modern hygiene. When the Great Plague of 1665 struck, Londoners still turned to smoking tobacco and painting red crosses on doors, trapped between Renaissance innovation and medieval squalor. Why did rapid urban population growth make Early Modern towns filthier, and why did brilliant inventions like the flushing toilet fail to improve public health?",
       "margin_spine": [
@@ -5192,10 +5208,10 @@
           "id": "water_l3_src_e",
           "letter": "E",
           "type": "written",
-          "src": "/images/night_plague_burials_1665.jpg",
-          "image": "/images/night_plague_burials_1665.jpg",
+          "src": "/images/upgraded/ks3-early/was_l3_s4_bill_of_mortality_sept_1665_r.jpg",
+          "image": "/images/upgraded/ks3-early/was_l3_s4_bill_of_mortality_sept_1665_r.jpg",
           "title": "Source E: London Bill of Mortality for the Week Ending 19 September 1665",
-          "caption": "Official broadsheet published by the Company of Parish Clerks recording London's highest weekly plague mortality toll during the epidemic of 1665 (London Metropolitan Archives / Wellcome Collection).",
+          "caption": "Official London Bill of Mortality ('The Diseases and Casualties this Week', London No. 39, 12–19 September 1665, Wellcome Collection L0030701), recording London's catastrophic weekly peak of 8,297 burials—including 7,165 from plague—against just 176 christenings.",
           "author": "Worshipful Company of Parish Clerks, London",
           "date": "19 September 1665",
           "content": "Buried within the 97 Parishes within the Walls: 1,189 (whereof of the Plague: 927). In the 16 Out-Parishes: 4,929 (whereof of the Plague: 4,526). Total buried this week: 8,297 (whereof of the Plague: 7,165). Christened this week: 176.",
@@ -5331,7 +5347,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Rapid Tudor and Stuart growth turned London into a crowded [Metropolis] where overflowing privies leaked into cellars, as [Samuel Pepys] famously recorded in 1660. Although [Sir John Harington] designed a flushing [Water Closet] in 1596 and the 1613 [New River] canal piped fresh water from Hertfordshire, poor districts remained filthy. During the 1665 Great Plague, parish clerks tracked soaring deaths through weekly [Bills of Mortality]."
+      "vocab_cloze_text": "Rapid Tudor and Stuart growth turned London into a crowded [Metropolis] where overflowing privies leaked into cellars, as [Samuel Pepys] famously recorded in 1660. Although [Sir John Harington] designed a flushing [Water Closet] in 1596 and the 1613 [New River] canal piped fresh water from Hertfordshire, poor districts remained filthy. During the 1665 Great Plague, parish clerks tracked soaring deaths through weekly [Bills of Mortality].",
+      "banner_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
+      "hero_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg"
     },
     {
       "id": "lesson_4",
@@ -5341,9 +5359,13 @@
       "enquiry": "Was Victorian cholera conquered by civil engineering and fear of the Great Stink, or did politicians act out of genuine care for the poor?",
       "subtitle": "Enquiry 04: Boomtown Squalor, Asiatic Cholera & Joseph Bazalgette’s Underground Revolution (1750–1858)",
       "skill": "Causation & Significance",
-      "card_image": "/images/court_for_king_cholera.png",
+      "card_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
       "card_position": "center",
-      "banner": "/images/father_thames_punch_1858.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
+        "caption": "Section of the Thames Embankment Showing Joseph Bazalgette’s Low-Level Intercepting Sewer",
+        "position": "center 30%"
+      },
       "cover_image": "/images/father_thames_punch_1858.jpg",
       "prologue": "Between 1780 and 1858, the Industrial Revolution catapulted Britain into the modern era, but at a horrifying human cost. Millions of rural labourers flooded into factory boomtowns like Manchester, Leeds, and London, crammed into unventilated back-to-back slums where cesspools overflowed into drinking wells. When Asiatic cholera struck in 1831, the medical establishment was helpless, trapped by ancient miasma beliefs. Even when Edwin Chadwick proved in 1842 that filth caused disease and poverty, Victorian politicians clung to laissez-faire inaction. It took the terrifying heatwave of June 1858—the Great Stink—when the raw sewage of three million Londoners fermenting in the Thames threatened Parliament itself, to finally force the government to act and commission Sir Joseph Bazalgette’s brick revolution. Did the British government commission Sir Joseph Bazalgette’s sewer network out of compassion for the working class, or out of terror when the Great Stink reached the Palace of Westminster?",
       "did_you_know": "During the Great Stink of June 1858, Members of Parliament soaked their window curtains in chloride of lime to neutralize the river stench, but MPs still fled the committee rooms clutching handkerchiefs over their noses!",
@@ -6614,7 +6636,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Rapid [Industrialisation] packed working families into damp back-to-back slums sharing a filthy outdoor [Privy] and leaking [Cesspool]. Because MPs favoured [Laissez-faire] non-interference and doctors blamed foul [Miasma], deadly waterborne [Cholera] swept British cities from 1831 onwards. Only when the 1858 Great Stink overwhelmed Parliament did MPs fund Joseph Bazalgette’s [Intercepting Sewer] network across London."
+      "vocab_cloze_text": "Rapid [Industrialisation] packed working families into damp back-to-back slums sharing a filthy outdoor [Privy] and leaking [Cesspool]. Because MPs favoured [Laissez-faire] non-interference and doctors blamed foul [Miasma], deadly waterborne [Cholera] swept British cities from 1831 onwards. Only when the 1858 Great Stink overwhelmed Parliament did MPs fund Joseph Bazalgette’s [Intercepting Sewer] network across London.",
+      "banner_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
+      "hero_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg"
     },
     {
       "id": "lesson_5",
@@ -6624,9 +6648,13 @@
       "enquiry": "Was cholera defeated by scientific observation, laboratory discovery of bacteria, or the introduction of compulsory government legislation?",
       "subtitle": "Enquiry 05: The Broad Street Pump, Louis Pasteur’s Swan-Neck Flasks & The 1875 Sanitary Revolution (1854–1900)",
       "skill": "Significance & Evidence",
-      "card_image": "/images/john_snow_cholera_map.jpg",
+      "card_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
       "card_position": "center",
-      "banner": "/images/john_snow_cholera_map.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
+        "caption": "Monster Soup Commonly Called Thames Water (Microscopic Satire on Polluted London Water)",
+        "position": "center 30%"
+      },
       "cover_image": "/images/john_snow.jpg",
       "prologue": "Between 1854 and 1884, a scientific revolution shattered centuries of medical ignorance. In September 1854, when Asiatic cholera struck Soho, Dr John Snow mapped every death around the Broad Street pump, deducing that cholera was waterborne long before bacteria could be seen. Though the medical establishment stubbornly defended miasma dogma, French chemist Louis Pasteur proved in 1861 that microscopic germs caused fermentation and disease. German microbiologist Robert Koch isolated Vibrio cholerae in 1884, providing undeniable laboratory proof. Armed with scientific certainty and galvanized by expanding working-class voting power, Disraeli’s government passed the landmark Public Health Act of 1875—compelling local councils to provide clean water, covered drainage, and sanitary inspections, permanently defeating epidemic cholera in Britain. Was epidemic cholera finally defeated by Dr John Snow’s epidemiological detective work, Pasteur’s Germ Theory, or the compulsory powers of the 1875 Public Health Act?",
       "did_you_know": "When Dr John Snow presented his Soho spot map to the St James Parish Guardians on 7 September 1854, they reluctantly agreed to remove the pump handle the next day. The outbreak plummeted almost immediately!",
@@ -7886,7 +7914,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "When cholera killed over 500 Soho residents in 1854, Dr John Snow pioneered [Epidemiology] by plotting every death on a street [Spot Map] tracing the outbreak to the Broad Street pump. In 1861, Louis Pasteur’s [Germ Theory] disproved [Spontaneous Generation], and Robert Koch later identified the cholera [Bacterium]. Finally, the 1875 Public Health Act made clean water and appointing a [Medical Officer of Health] [Compulsory] for every council."
+      "vocab_cloze_text": "When cholera killed over 500 Soho residents in 1854, Dr John Snow pioneered [Epidemiology] by plotting every death on a street [Spot Map] tracing the outbreak to the Broad Street pump. In 1861, Louis Pasteur’s [Germ Theory] disproved [Spontaneous Generation], and Robert Koch later identified the cholera [Bacterium]. Finally, the 1875 Public Health Act made clean water and appointing a [Medical Officer of Health] [Compulsory] for every council.",
+      "banner_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
+      "hero_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg"
     },
     {
       "id": "lesson_6",
@@ -7899,9 +7929,13 @@
       "enquiry": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
       "subtitle": "Step-by-step PEEL Planning & Revision Workshop: John Snow, Joseph Bazalgette, Louis Pasteur, and the 1875 Public Health Act",
       "skill": "Historical Explanation & Evaluation",
-      "card_image": "/images/water_local_eastney_opt.jpg",
+      "card_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
       "card_position": "center",
-      "banner": "/images/water_local_eastney_opt.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
+        "caption": "Opening of the Southern Embankment of the Thames at Lambeth",
+        "position": "center 30%"
+      },
       "cover_image": "/images/water_local_eastney_opt.jpg",
       "prologue": "Welcome to your Summative Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: \"Explain why there was rapid progress in Public Health 1800–1900?\". You will write three developed PEEL paragraphs explaining how scientific investigation (Dr John Snow), civil engineering (Sir Joseph Bazalgette), laboratory microbiology (Louis Pasteur), and compulsory government legislation (the 1875 Public Health Act) transformed British public health from deadly squalor into modern sanitary safety. Over half term, you are permitted to prepare ONE single sheet of A4 lined paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room! How will you combine evidence of scientific investigation, civil engineering, and government legislation to construct a compelling historical explanation?",
       "did_you_know": "The 1875 Public Health Act was 150 pages long and contained 343 individual sections, establishing the framework for modern environmental health that still protects Britain today!",
@@ -9168,12 +9202,14 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Between 1800 and 1900, British public health advanced from [Laissez-Faire] neglect to a modern [Compulsory State]. First, Dr John Snow used [Epidemiology] in Soho in 1854 to prove cholera spread through dirty water rather than [Miasma Theory]. Next, Joseph Bazalgette transformed London’s [Sanitation] with brick sewers, while Louis Pasteur’s 1861 [Germ Theory] gave Parliament scientific proof to pass the 1875 Public Health Act."
+      "vocab_cloze_text": "Between 1800 and 1900, British public health advanced from [Laissez-Faire] neglect to a modern [Compulsory State]. First, Dr John Snow used [Epidemiology] in Soho in 1854 to prove cholera spread through dirty water rather than [Miasma Theory]. Next, Joseph Bazalgette transformed London’s [Sanitation] with brick sewers, while Louis Pasteur’s 1861 [Germ Theory] gave Parliament scientific proof to pass the 1875 Public Health Act.",
+      "banner_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
+      "hero_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg"
     }
   ],
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 7",
+  "yearGroup": "Key Stage 3",
   "category": "KS3",
   "guided_reading": [
     {

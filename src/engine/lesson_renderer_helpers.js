@@ -892,7 +892,7 @@ export function checkIsKs3(unitId, unitObj) {
   if (rawId && KS3_CANONICAL_UNITS.includes(rawId)) return true;
   if (
     unitObj &&
-    (unitObj.is_ks3 || (unitObj.year_group && /Year\s*[789]/i.test(unitObj.year_group)))
+    (unitObj.is_ks3 || (unitObj.year_group && /KS3|Key Stage 3|Year\s*[789]/i.test(unitObj.year_group)))
   )
     return true;
   if (rawId && GCSE_CANONICAL_UNITS.includes(rawId)) return false;
@@ -908,7 +908,7 @@ export function checkIsGCSE(unitId, unitObj) {
     unitObj &&
     (unitObj.isGCSE ||
       unitObj.is_gcse ||
-      (unitObj.year_group && /Year\s*1[01]/i.test(unitObj.year_group)))
+      (unitObj.year_group && /GCSE|Year\s*1[01]/i.test(unitObj.year_group)))
   )
     return true;
   return true;

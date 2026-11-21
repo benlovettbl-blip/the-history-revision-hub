@@ -72,7 +72,7 @@ export function renderSchoolsShowcase() {
           Complete Digital &amp; Reprographic History Curriculum — Ready to Teach Tomorrow
         </h1>
         <p style="font-size: 1.02rem; line-height: 1.65; color: #cbd5e1; max-width: 820px; margin: 0 0 22px;">
-          19 full courses across <strong>Key Stage 2</strong>, <strong>Key Stage 3 (Years 7–9)</strong>, and <strong>Pearson Edexcel GCSE (9–1)</strong>—combining studio-voiced interactive lessons and primary source enquiries with saddle-stitch Classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions.
+          19 full courses across <strong>Key Stage 2</strong>, <strong>Key Stage 3</strong>, and <strong>Pearson Edexcel GCSE (9–1)</strong>—combining studio-voiced interactive lessons and primary source enquiries with saddle-stitch Classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
           <a
@@ -232,7 +232,7 @@ export function renderSchoolsShowcase() {
 
         <div>
           <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; margin: 0 0 10px; color: var(--text-main, #0c2340);">
-            Key Stage 3: Years 7–9 UK National Curriculum (${ks3Routes.length} Courses)
+            Key Stage 3: UK National Curriculum (${ks3Routes.length} Courses)
           </h2>
           <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px;">
             ${renderCoursePills(ks3Routes)}
@@ -241,7 +241,7 @@ export function renderSchoolsShowcase() {
 
         <div>
           <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; margin: 0 0 10px; color: var(--text-main, #0c2340);">
-            Key Stage 2: Years 5–6 Primary History (${ks2Routes.length} Course)
+            Key Stage 2: Primary History (${ks2Routes.length} ${ks2Routes.length === 1 ? 'Course' : 'Courses'})
           </h2>
           <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px;">
             ${renderCoursePills(ks2Routes)}

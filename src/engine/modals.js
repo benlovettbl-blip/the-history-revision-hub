@@ -3085,32 +3085,32 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
         {
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 7XHi\nHistory\n(18)',
+          raw: 'KS3 Group A\nHistory\n(18)',
         },
         {
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 9yHi\nHistory\n(20)',
+          raw: 'KS3 Group F\nHistory\n(20)',
         },
         { period: 'Period 4', time: '12:15 - 13:10', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 5',
           time: '14:00 - 14:55',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
         {
           period: 'Period 6',
           time: '14:55 - 15:50',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
       ],
       Tuesday: [
@@ -3118,20 +3118,20 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
         { period: 'Period 2', time: '10:25 - 11:20', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 4',
           time: '12:15 - 13:10',
           type: 'lesson',
-          raw: 'Set 8yHi\nHistory\n(11)',
+          raw: 'KS3 Group D\nHistory\n(11)',
         },
         {
           period: 'Period 5',
           time: '14:00 - 14:55',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
       ],
       Wednesday: [
@@ -3139,26 +3139,26 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
         {
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
         {
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
         { period: 'Period 4', time: '12:15 - 13:10', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 5',
           time: '14:00 - 14:55',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
       ],
       Thursday: [
@@ -3166,26 +3166,26 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 8xHi\nHistory\n(11)',
+          raw: 'KS3 Group C\nHistory\n(11)',
         },
         {
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
         {
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 9xHi\nHistory\n(19)',
+          raw: 'KS3 Group E\nHistory\n(19)',
         },
         { period: 'Period 4', time: '12:15 - 13:10', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 5',
           time: '14:00 - 14:55',
           type: 'lesson',
-          raw: 'Set 7YHi\nHistory\n(17)',
+          raw: 'KS3 Group B\nHistory\n(17)',
         },
         { period: 'Period 6', time: '14:55 - 15:50', type: 'club', raw: 'Chess Club' },
       ],
@@ -3194,32 +3194,32 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
         {
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
         {
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 9yHi\nHistory\n(20)',
+          raw: 'KS3 Group F\nHistory\n(20)',
         },
         {
           period: 'Period 4',
           time: '12:15 - 13:10',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
         { period: 'Period 5', time: '14:00 - 14:55', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 6',
           time: '14:55 - 15:50',
           type: 'lesson',
-          raw: 'Set 8yHi\nHistory\n(11)',
+          raw: 'KS3 Group D\nHistory\n(11)',
         },
       ],
     },
@@ -3230,25 +3230,25 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 9yHi\nHistory\n(20)',
+          raw: 'KS3 Group F\nHistory\n(20)',
         },
         {
           period: 'Period 4',
           time: '12:15 - 13:10',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
         {
           period: 'Period 5',
           time: '14:00 - 14:55',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
         {
           period: 'Period 6',
           time: '14:55 - 15:50',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
       ],
       Tuesday: [
@@ -3256,20 +3256,20 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 7XHi\nHistory\n(18)',
+          raw: 'KS3 Group A\nHistory\n(18)',
         },
         { period: 'Period 3', time: '11:20 - 12:15', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 4',
           time: '12:15 - 13:10',
           type: 'lesson',
-          raw: 'Set 7YHi\nHistory\n(17)',
+          raw: 'KS3 Group B\nHistory\n(17)',
         },
         {
           period: 'Period 6',
           time: '14:55 - 15:50',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
       ],
       Wednesday: [
@@ -3277,25 +3277,25 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 10aHiB\nHistory\n(7)',
+          raw: 'GCSE Paper 2 Group\nHistory\n(7)',
         },
         {
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 11aHiD\nHistory\n(7)',
+          raw: 'GCSE Paper 3 Group\nHistory\n(7)',
         },
         {
           period: 'Period 4',
           time: '12:15 - 13:10',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
         {
           period: 'Period 6',
           time: '14:55 - 15:50',
           type: 'lesson',
-          raw: 'Set 8yHi\nHistory\n(11)',
+          raw: 'KS3 Group D\nHistory\n(11)',
         },
       ],
       Thursday: [
@@ -3303,20 +3303,20 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 9xHi\nHistory\n(19)',
+          raw: 'KS3 Group E\nHistory\n(19)',
         },
         {
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 8xHi\nHistory\n(11)',
+          raw: 'KS3 Group C\nHistory\n(11)',
         },
         { period: 'Period 3', time: '11:20 - 12:15', type: 'hub', raw: 'Hub Supervision' },
         {
           period: 'Period 5',
           time: '14:00 - 14:55',
           type: 'lesson',
-          raw: 'Set 11aHiC\nHistory\n(5)',
+          raw: 'GCSE Paper 1 Group\nHistory\n(5)',
         },
         { period: 'Period 6', time: '14:55 - 15:50', type: 'club', raw: 'Chess Club' },
       ],
@@ -3325,25 +3325,25 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
           period: 'Period 1',
           time: '09:10 - 10:05',
           type: 'lesson',
-          raw: 'Set 8xHi\nHistory\n(11)',
+          raw: 'KS3 Group C\nHistory\n(11)',
         },
         {
           period: 'Period 2',
           time: '10:25 - 11:20',
           type: 'lesson',
-          raw: 'Set 9xHi\nHistory\n(19)',
+          raw: 'KS3 Group E\nHistory\n(19)',
         },
         {
           period: 'Period 3',
           time: '11:20 - 12:15',
           type: 'lesson',
-          raw: 'Set 7YHi\nHistory\n(17)',
+          raw: 'KS3 Group B\nHistory\n(17)',
         },
         {
           period: 'Period 4',
           time: '12:15 - 13:10',
           type: 'lesson',
-          raw: 'Set 7XHi\nHistory\n(18)',
+          raw: 'KS3 Group A\nHistory\n(18)',
         },
         { period: 'Period 5', time: '14:00 - 14:55', type: 'hub', raw: 'Hub Supervision' },
       ],
@@ -3426,8 +3426,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
   ];
 
   const DEFAULT_SET_MAPPING = {
-    'Set 7XHi': {
-      year: 'Year 7',
+    'KS3 Group A': {
+      year: 'Key Stage 3',
       unit: 'water_and_sanitation',
       unit_name: 'KS3: Water & Sanitation Through Time',
       default_lesson: 1,
@@ -3436,8 +3436,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'collect',
     },
-    'Set 7YHi': {
-      year: 'Year 7',
+    'KS3 Group B': {
+      year: 'Key Stage 3',
       unit: 'water_and_sanitation',
       unit_name: 'KS3: Water & Sanitation Through Time',
       default_lesson: 1,
@@ -3446,8 +3446,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'collect',
     },
-    'Set 8xHi': {
-      year: 'Year 8',
+    'KS3 Group C': {
+      year: 'Key Stage 3',
       unit: 'industrialisation_and_empire',
       unit_name: 'KS3: Industrialisation, Empire & Power (1750–1900)',
       default_lesson: 0,
@@ -3456,8 +3456,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'collect',
     },
-    'Set 8yHi': {
-      year: 'Year 8',
+    'KS3 Group D': {
+      year: 'Key Stage 3',
       unit: 'industrialisation_and_empire',
       unit_name: 'KS3: Industrialisation, Empire & Power (1750–1900)',
       default_lesson: 0,
@@ -3466,8 +3466,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'collect',
     },
-    'Set 9xHi': {
-      year: 'Year 9',
+    'KS3 Group E': {
+      year: 'Key Stage 3',
       unit: 'great_war',
       unit_name: 'KS3: Causes of the Great War',
       default_lesson: 2,
@@ -3476,8 +3476,8 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'collect',
     },
-    'Set 9yHi': {
-      year: 'Year 9',
+    'KS3 Group F': {
+      year: 'Key Stage 3',
       unit: 'great_war',
       unit_name: 'KS3: Causes of the Great War',
       default_lesson: 2,
@@ -3486,7 +3486,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'collect',
     },
-    'Set 10aHiB': {
+    'GCSE Paper 2 Group': {
       year: 'Year 10',
       unit: 'cme_new',
       unit_name: 'Paper 2: Conflict in the Middle East (1945–1995)',
@@ -3496,7 +3496,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: false,
       default_collection: 'folders',
     },
-    'Set 11aHiC': {
+    'GCSE Paper 1 Group': {
       year: 'Year 11',
       unit: 'edexcel_medicine',
       unit_name: 'Paper 1: Medicine Through Time (1250–present)',
@@ -3507,7 +3507,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       default_shelf: true,
       default_collection: 'folders',
     },
-    'Set 11aHiD': {
+    'GCSE Paper 3 Group': {
       year: 'Year 11',
       unit: 'edexcel_medicine',
       unit_name: 'Paper 1: Medicine Through Time (1250–present)',
@@ -3521,55 +3521,55 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
   };
 
   const DEFAULT_PREVIOUS_COVERS = {
-    'Set 7XHi': {
+    'KS3 Group A': {
       unitId: 'water_and_sanitation',
       lessonIdx: 0,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 7YHi': {
+    'KS3 Group B': {
       unitId: 'water_and_sanitation',
       lessonIdx: 0,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 8xHi': {
+    'KS3 Group C': {
       unitId: 'industrialisation_and_empire',
       lessonIdx: 0,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 8yHi': {
+    'KS3 Group D': {
       unitId: 'industrialisation_and_empire',
       lessonIdx: 0,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 9xHi': {
+    'KS3 Group E': {
       unitId: 'great_war',
       lessonIdx: 1,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 9yHi': {
+    'KS3 Group F': {
       unitId: 'great_war',
       lessonIdx: 1,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 10aHiB': {
+    'GCSE Paper 2 Group': {
       unitId: 'cme_new',
       lessonIdx: 1,
       dateStr: '17 Sep',
       fullDateStr: 'Thursday, 17 September 2026',
     },
-    'Set 11aHiC': {
+    'GCSE Paper 1 Group': {
       unitId: 'edexcel_medicine',
       lessonIdx: 4,
       dateStr: '18 Sep',
       fullDateStr: 'Friday, 18 September 2026',
     },
-    'Set 11aHiD': {
+    'GCSE Paper 3 Group': {
       unitId: 'edexcel_medicine',
       lessonIdx: 4,
       dateStr: '18 Sep',
@@ -3679,7 +3679,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     const year = def.year || '';
     if (year.includes('8') || (setName && setName.includes('8'))) {
       return {
-        label: 'Year 8',
+        label: 'Key Stage 3',
         bg: 'rgba(245, 158, 11, 0.16)',
         border: 'rgba(245, 158, 11, 0.4)',
         color: '#fbbf24',
@@ -3687,7 +3687,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     }
     if (year.includes('9') || (setName && setName.includes('9'))) {
       return {
-        label: 'Year 9',
+        label: 'Key Stage 3',
         bg: 'rgba(59, 130, 246, 0.16)',
         border: 'rgba(59, 130, 246, 0.4)',
         color: '#60a5fa',

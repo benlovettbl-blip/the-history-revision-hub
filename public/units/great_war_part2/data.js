@@ -725,8 +725,9 @@ export default {
           "heading": "Poverty, Adventure & The Lure of the King’s Shilling",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay & food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay & food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
-          "image": "/images/gw_jessie_pope.jpg",
-          "caption": "Popular patriotic poet Jessie Pope, whose pro-war newspaper verses portrayed soldiering as an exciting sporting adventure, encouraging young men to take the 'King's Shilling'."
+          "image": "/images/upgraded/ks3-empire-gw/gw2_l1_blk3_uniform_boots_fitting_q30069.jpg",
+          "caption": "British recruits being fitted with warm woollen tunics, greatcoats, and regulation nailed leather ankle boots (Imperial War Museums, Q 30069): Taking the \"King’s Shilling\" guaranteed working-class volunteers regular pay, hot meals, and sturdy clothing that many impoverished Edwardian families struggled to afford.",
+          "image_alt": "British Army recruits having new woollen service tunics, greatcoats, and regulation leather ankle boots fitted in an army quartermaster store (IWM Q 30069)."
         },
         {
           "ref": "1.5",
@@ -1032,9 +1033,9 @@ export default {
       "enquiry": "Why were young British men so desperate to volunteer for the slaughter of 1914?",
       "enquiry_question": "Why were young British men so desperate to volunteer for the slaughter of 1914?",
       "banner": {
-        "image": "/images/gw_women_say_go.jpg",
-        "position": "center 20%",
-        "caption": "E. J. Kealey, Parliamentary Recruiting Committee Poster No. 75, \"Women of Britain Say—GO!\" (May 1915), leveraging domestic emotional coercion to drive voluntary civilian enlistment."
+        "image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
+        "caption": "New Recruits to the Lincolnshire Regiment Parading on Lincoln Racecourse (September 1914)",
+        "position": "center 20%"
       },
       "maps": [
         {
@@ -1308,7 +1309,9 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war_part2/lesson_1_enlistment_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg"
     },
     {
       "id": "lesson_2_trenches_haig",
@@ -2333,9 +2336,9 @@ export default {
       "enquiry": "Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?",
       "enquiry_question": "Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?",
       "banner": {
-        "image": "/images/gw_flooded_trench.jpg",
-        "position": "center 35%",
-        "caption": "Australian 4th Division soldiers walking duckboards through Chateau Wood mud swamp, Third Battle of Ypres (Passchendaele), October 1917 (photograph by Frank Hurley, AWM E01220 / IWM)."
+        "image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
+        "caption": "British Supporting Troops Advancing Under Shellfire at the Battle of Ginchy, Somme (9 September 1916)",
+        "position": "center 35%"
       },
       "maps": [
         {
@@ -2612,7 +2615,9 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war_part2/lesson_2_trenches_haig_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg"
     },
     {
       "id": "lesson_3_empire_troops",
@@ -3521,10 +3526,9 @@ export default {
       "enquiry": "Why were over four million colonial and dominion troops erased from popular memory?",
       "enquiry_question": "Why were over four million colonial and dominion troops erased from popular memory?",
       "banner": {
-        "image": "/images/ludhiana_sikhs_marseille_1914.jpg",
-        "position": "center 25%",
-        "caption": "Troops of the 15th Ludhiana Sikhs marching through Marseille in autumn 1914 to reinforce the British Expeditionary Force on the Western Front.",
-        "alt": "Soldiers of the 15th Ludhiana Sikhs marching through the streets of Marseille upon arriving in France in autumn 1914."
+        "image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
+        "caption": "The Landing of Australian Troops at ANZAC Cove, Gallipoli (25 April 1915)",
+        "position": "center 25%"
       },
       "maps": [
         {
@@ -3711,8 +3715,8 @@ export default {
           "letter": "C",
           "type": "visual",
           "title": "Source C (Archival Portrait): Second Lieutenant Walter Tull, Middlesex Regiment (c. 1917)",
-          "image": "/images/gw_walter_tull.jpg",
-          "src": "/images/gw_walter_tull.jpg",
+          "image": "/images/upgraded/ks3-empire-gw/gw2_l3_srcc_walter_tull_1917.jpg",
+          "src": "/images/upgraded/ks3-empire-gw/gw2_l3_srcc_walter_tull_1917.jpg",
           "caption": "Photographic portrait of Second Lieutenant Walter Tull (1888–1918), former professional footballer for Tottenham Hotspur and Northampton Town, commissioned as one of the first Black infantry officers in the British Army.",
           "citation": "National Portrait Gallery, London / Imperial War Museum.",
           "context": "The 1914 Manual of Military Law strictly barred any person not of 'pure European descent' from holding an officer's commission. Walter Tull’s exceptional courage and leadership led his commanding officers to break the law and commission him. He was killed in action leading his men at the Second Battle of the Somme in March 1918. **Hinge Question:** How did Walter Tull's promotion to officer rank challenge the British Army’s explicit racial rules, and why did the War Office refuse to officially award him the Military Cross recommended by his superiors?",
@@ -3893,7 +3897,9 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war_part2/lesson_3_empire_troops_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg"
     },
     {
       "id": "lesson_4_home_front_dora",
@@ -4804,10 +4810,9 @@ export default {
       "enquiry": "How far did the First World War transform the British state and daily life on the Home Front?",
       "enquiry_question": "How far did the First World War transform the British state and daily life on the Home Front?",
       "banner": {
-        "image": "/images/gw_dead_mans_penny.jpg",
-        "position": "center 30%",
-        "caption": "The British Memorial Plaque ('Dead Man's Penny') issued to next of kin of fallen service personnel, inscribed 'He died for freedom and honour'.",
-        "alt": "The British Next of Kin Memorial Plaque (the 'Dead Man's Penny') issued to the family of Robert Blakeley, showing Britannia and the British lion."
+        "image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
+        "caption": "Female Munition Workers in the Shell Warehouse at National Shell Filling Factory No. 6, Chilwell (July 1917)",
+        "position": "center 30%"
       },
       "maps": [
         {
@@ -5174,7 +5179,9 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war_part2/lesson_4_home_front_dora_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg"
     },
     {
       "id": "lesson_5_versailles",
@@ -6096,9 +6103,9 @@ export default {
       "enquiry": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?",
       "enquiry_question": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?",
       "banner": {
-        "image": "/images/versailles_signing_1919_orpen.jpg",
-        "position": "center 35%",
-        "caption": "Sir William Orpen RA, \"The Signing of Peace in the Hall of Mirrors, Versailles, 28th June 1919\" (IWM ART 2856), depicting German delegates Johannes Bell and Hermann Müller signing the treaty beneath the chandeliers of Louis XIV’s palace."
+        "image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
+        "caption": "Delegations Signing the Treaty of Versailles in the Hall of Mirrors (28 June 1919)",
+        "position": "center 35%"
       },
       "maps": [
         {
@@ -6431,7 +6438,9 @@ export default {
         ]
       },
       "prologue_audio": "/audio/lessons/great_war_part2/lesson_5_versailles_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · British Historian"
+      "prologue_voice_label": "Studio Cold-Open · British Historian",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg"
     }
   ],
   "guided_reading": [
@@ -6728,8 +6737,8 @@ export default {
   ],
   "edition": "2026.1",
   "keyStage": "KS3",
-  "yearGroup": "Year 9",
-  "year_group": "Year 9",
+  "yearGroup": "Key Stage 3",
+  "year_group": "Key Stage 3",
   "category": "KS3",
   "key_stage": "KS3",
   "key_individuals": [
@@ -6934,5 +6943,6 @@ export default {
         "Endured toxic yellow skin discolouration and explosive hazards (73 killed in the 1917 Silvertown blast) to keep Western Front artillery supplied."
       ]
     }
-  ]
+  ],
+  "is_ks3": true
 };

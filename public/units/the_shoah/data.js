@@ -206,7 +206,7 @@ export default {
       "subtitle": "Enquiry 1: Pre-War Diversity & Antisemitism",
       "enquiryQuestion": "Who were the Jews of Europe before the Second World War?",
       "skill": "Historical Significance: Humanisation & Cultural Context",
-      "card_image": "/images/shoah_cover.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l1_banner_warsaw_jewish_quarter_1934.jpg",
       "card_position": "center 20%",
       "prologue": "Before the outbreak of the Second World War, approximately 9.5 million Jewish people lived across Europe. They did not form a single, uniform community; rather, European Jewry was an extraordinarily rich and diverse tapestry of languages, traditions, occupations, and beliefs. Why is it impossible to grasp what was destroyed during the Holocaust without first discovering how European Jews lived, worked, and thrived before Nazi tyranny began?",
       "causal_domino_spine": {
@@ -578,9 +578,9 @@ export default {
             "studio_audio": "/audio/sources/the_shoah/lesson_1_sB.mp3",
             "studio_voice_label": "Warsaw Cultural Record (1930s)"
           },
-          "image": "/images/yiddishland_lodz_students_prewar.jpg",
-          "image_alt": "Jewish schoolboys studying in Łódź, Poland, before the Second World War",
-          "caption": "Young Jewish students studying in Łódź, Poland, before the Second World War, exemplifying the rich educational and communal traditions of Eastern European Yiddishland.",
+          "image": "/images/upgraded/ks3-modern/shoah_l1_block1_tarbut_school_poland_1933.jpg",
+          "image_alt": "Pre-war group photograph of Jewish pupils and teachers of the second graduating class of the Tarbut Hebrew-Jewish school in Kostopol, interwar Poland, 1933",
+          "caption": "Jewish pupils and teachers of the 'Tarbut' school in Kostopol, Poland (1933), exemplifying the vibrant educational, literary, and communal traditions of interwar Eastern European Jewry.",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Across the countryside of Eastern Europe lay a distinct cultural world known as Yiddishland. Millions of Jews lived in rural shtetls (small market towns) and expanding cities like Warsaw and Kraków, creating a flourishing Yiddish culture with its own literature, theatre, and newspapers.</p><p class=\"prose-p\">In cities like Vilna, celebrated as the \"Jerusalem of the North\", Jewish community life hummed with energy. World-renowned talmudic academies existed alongside modern socialist political parties, Zionist youth organisations, and avant-garde art collectives, creating a deeply rooted, vibrant civilization.</p>"
         },
         {
@@ -912,7 +912,7 @@ export default {
           "type": "visual",
           "title": "Source E (Historical Ideological Plate): Cover of Wilhelm Marr’s 'Der Sieg des Judenthums über das Germanenthum' (1879)",
           "text": "We are faced with a social and biological question, not a religious one. Baptism cannot change the blood. A Jew who converts to Christianity remains a Jew in his physical nature, his instincts, and his racial constitution. It is a biological struggle between two distinct races: the Semitic race and the Germanic race. In this struggle for existence, there can be no compromise, only the triumph of one race over the other.",
-          "caption": "Title page of Wilhelm Marr's 1879 pamphlet which coined and popularized the pseudo-scientific racial term 'Antisemitismus'.",
+          "caption": "Title page of Wilhelm Marr's 1879 pamphlet 'Der Sieg des Judenthums über das Germanenthum' (Bern: Rudolph Costenoble, 1879), which popularised pseudo-scientific racial antisemitism.",
           "citation": "Deutsches Historisches Museum (DHM), Berlin / Library of Congress Rare Books Division.",
           "context": "In 1879, German journalist Wilhelm Marr coined the term *Antisemitismus* to replace traditional Christian religious prejudice with modern pseudo-scientific racial theory. Under medieval anti-Judaism, baptism offered an escape; under racial antisemitism, identity was locked irreversibly in biological blood. **Hinge Question:** Why did defining Jewish identity as an unchangeable biological condition make modern antisemitism far more lethal than medieval religious anti-Judaism?",
           "hinge_question": "Why did defining Jewish identity as an unchangeable biological condition make modern antisemitism far more lethal than medieval religious anti-Judaism?",
@@ -935,8 +935,8 @@ export default {
             "Audience: German nationalist voters and political supporters in Berlin.",
             "Motive: To argue that Jews posed an unchangeable biological threat to Germany that politics could not fix."
           ],
-          "image": "/images/wilhelm_marr_antisemitismus_1880.jpg",
-          "src": "/images/wilhelm_marr_antisemitismus_1880.jpg",
+          "image": "/images/upgraded/ks3-modern/shoah_l1_src_e_wilhelm_marr_1879.jpg",
+          "src": "/images/upgraded/ks3-modern/shoah_l1_src_e_wilhelm_marr_1879.jpg",
           "source_context": "In 1879, German journalist Wilhelm Marr coined the term *Antisemitismus* to replace traditional Christian religious prejudice with modern pseudo-scientific racial theory. Under medieval anti-Judaism, baptism offered an escape; under racial antisemitism, identity was locked irreversibly in biological blood. **Hinge Question:** Why did defining Jewish identity as an unchangeable biological condition make modern antisemitism far more lethal than medieval religious anti-Judaism?",
           "teacher_notes": {
             "source_context": "In 1879, German journalist Wilhelm Marr coined the term *Antisemitismus* to replace traditional Christian religious prejudice with modern pseudo-scientific racial theory. Under medieval anti-Judaism, baptism offered an escape; under racial antisemitism, identity was locked irreversibly in biological blood. **Hinge Question:** Why did defining Jewish identity as an unchangeable biological condition make modern antisemitism far more lethal than medieval religious anti-Judaism?"
@@ -1744,7 +1744,14 @@ export default {
       },
       "vocab_cloze_text": "Before 1933, over nine million Jewish people enriched European life, from [Yiddish]-speaking communities and small Eastern European [Shtetl] towns to integrated citizens experiencing [Assimilation] in Germany and [Sephardic Jews] in bustling ports like Salonika. Unlike older religious prejudice, modern [Racial Antisemitism] falsely claimed Jewish identity was fixed in blood, laying ideological foundations for Nazi persecution.",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_1_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l1_banner_warsaw_jewish_quarter_1934.jpg",
+        "caption": "Pre-War Street Scene on Nalewki Street in Warsaw's Jewish Quarter",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l1_banner_warsaw_jewish_quarter_1934.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l1_banner_warsaw_jewish_quarter_1934.jpg"
     },
     {
       "id": "lesson_2",
@@ -1752,7 +1759,7 @@ export default {
       "subtitle": "Enquiry 2: Stripping Rights & Kristallnacht (1933–1939)",
       "enquiryQuestion": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
       "skill": "Causation & Consequence: Escalation of State Persecution",
-      "card_image": "/images/kristallnacht_berlin_aftermath_1938.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l2_banner_aachen_synagogue_kristallnacht_1938.jpg",
       "card_position": "center 35%",
       "prologue": "When Adolf Hitler was appointed Chancellor in January 1933, roughly 500,000 Jews lived in Germany. Over the next six years, the Nazi regime did not immediately begin mass murder; instead, it orchestrated a systematic, legal, and economic campaign to isolate, impoverish, and humiliate German Jews. How did gradual bureaucratic decrees, the Nuremberg Laws, and the violent terror of the November Pogrom transform proud German citizens into stateless refugees?",
       "causal_domino_spine": {
@@ -3279,7 +3286,14 @@ export default {
       },
       "vocab_cloze_text": "Between 1933 and 1938, hundreds of decrees imposed [Social Death] on German Jews, culminating in the September 1935 [Nuremberg Laws] stripping them of Reich citizenship. Terror escalated openly during [Kristallnacht (November Pogrom)] in November 1938 as synagogues burned and 30,000 Jewish men were sent to camps. Although 32 nations failed refugees at the 1938 [Evian Conference], Britain admitted nearly 10,000 children via the [Kindertransport].",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_2_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l2_banner_aachen_synagogue_kristallnacht_1938.jpg",
+        "caption": "Fire-Gutted Interior of the Old Synagogue in Aachen Following Kristallnacht",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l2_banner_aachen_synagogue_kristallnacht_1938.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l2_banner_aachen_synagogue_kristallnacht_1938.jpg"
     },
     {
       "id": "lesson_3",
@@ -3287,7 +3301,7 @@ export default {
       "subtitle": "Enquiry 3: WWII Outbreak & Ghettoisation (1939–1941)",
       "enquiryQuestion": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
       "skill": "Source Utility & Historical Empathy: Ghetto Life & The Ringelblum Archive",
-      "card_image": "/images/warsaw_ghetto_wall_1941.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l3_banner_warsaw_ghetto_footbridge_1942.jpg",
       "card_position": "center 45%",
       "prologue": "On 1 September 1939, Nazi Germany invaded Poland, unleashing the Second World War. Overnight, over two million Polish Jews fell under brutal Nazi military control. The regime rapidly abandoned plans for voluntary emigration and embarked on violent segregation. Confining families behind towering brick walls in overcrowded ghettos like Warsaw and Łódź, the Nazis attempted to break the human spirit through starvation, typhus, and forced labour. How did imprisoned Jewish communities fight to preserve their humanity, culture, and truth?",
       "causal_domino_spine": {
@@ -4814,7 +4828,14 @@ export default {
       },
       "vocab_cloze_text": "Following the 1939 invasion of Poland and Reinhard Heydrich’s secret [Schnellbrief], German occupiers sealed millions of Jews inside overcrowded urban [Ghetto] districts run day-to-day through a coerced [Judenrat]. Amid deliberate starvation and typhus, families practised [Spiritual Resistance] through secret schools, prayer, and Emanuel Ringelblum’s buried [Oneg Shabbat] archive beneath Warsaw.",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_3_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l3_banner_warsaw_ghetto_footbridge_1942.jpg",
+        "caption": "Wooden Footbridge Over Chłodna Street Viewed from Żelazna Street, Warsaw Ghetto",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l3_banner_warsaw_ghetto_footbridge_1942.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l3_banner_warsaw_ghetto_footbridge_1942.jpg"
     },
     {
       "id": "lesson_4",
@@ -4822,7 +4843,7 @@ export default {
       "subtitle": "Enquiry 4: Barbarossa & The Holocaust by Bullets (1941–1942)",
       "enquiryQuestion": "How and why did persecution turn into systematic mass murder (1941–1942)?",
       "skill": "Causation & Turning Points: The \"Holocaust by Bullets\"",
-      "card_image": "/images/shoah_cover.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l4_banner_barbarossa_eastern_front_1941.jpg",
       "card_position": "center 30%",
       "prologue": "On 22 June 1941, Nazi Germany launched Operation Barbarossa, invading the Soviet Union with over three million troops. This was not a conventional war; Hitler explicitly ordered an ideological war of total extermination against \"Judeo-Bolshevism\". Marching directly behind the Wehrmacht combat units were four paramilitary death squads known as the Einsatzgruppen, supported by Order Police battalions and local collaborators. In open ravines, forests, and pits across Ukraine, Belarus, and the Baltic States, over 1.5 million Jewish people were murdered by mass shooting. Why was this \"Holocaust by Bullets\" the decisive turning point into total genocide?",
       "causal_domino_spine": {
@@ -6366,7 +6387,14 @@ export default {
       },
       "vocab_cloze_text": "When Hitler launched [Operation Barbarossa] against the Soviet Union in June 1941, four mobile SS [Einsatzgruppen] squads followed the army east to carry out the [Holocaust by Bullets]. At the [Babi Yar] ravine outside Kyiv in September 1941, over 33,771 Jews were shot in two days, while ordinary German conscripts in units like [Reserve Police Battalion 101] also took part in mass shootings.",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_4_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l4_banner_barbarossa_eastern_front_1941.jpg",
+        "caption": "German Wehrmacht Soldiers Beside a Disabled Soviet KV-2 Tank During Operation Barbarossa",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l4_banner_barbarossa_eastern_front_1941.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l4_banner_barbarossa_eastern_front_1941.jpg"
     },
     {
       "id": "lesson_5",
@@ -6374,7 +6402,7 @@ export default {
       "subtitle": "Enquiry 5: The \"Final Solution\" & Armed Resistance (1942–1944)",
       "enquiryQuestion": "How did the \"Final Solution\" operate, and how did Jews resist?",
       "skill": "Historical Evidence & Agency: Industrialised Murder vs Armed Resistance",
-      "card_image": "/images/warsaw_ghetto_uprising_1943.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l5_banner_birkenau_gatehouse_tracks.jpg",
       "card_position": "center 25%",
       "prologue": "By early 1942, Nazi policy shifted from mass shootings in open pits to the full-scale industrial extermination of every Jewish person within German reach. At a lakeside villa in Wannsee, senior civil servants coordinated the logistics of state-sponsored murder. Dedicated death camps like Treblinka and the vast complex of Auschwitz-Birkenau transformed modern technology, railways, and chemical pesticides into an assembly line of death. Yet even in the face of this overwhelming machinery, Jewish victims fought back with extraordinary heroism. How did industrial murder operate, and how did armed resistance shatter the myth of passive victimhood?",
       "causal_domino_spine": {
@@ -7118,7 +7146,7 @@ export default {
           "type": "visual",
           "title": "Source E (Primary Archival Portrait & Testimony): Roza Robota and the Sonderkommando Revolt at Crematorium IV (Auschwitz-Birkenau, October 1944)",
           "text": "Survivor Noah Zabludowicz: \"Four young Jewish women working in the Weichsel-Union munitions factory—Roza Robota, Ala Gertner, Ester Wajcblum, and Regina Safirsztajn—smuggled tiny parcels of gunpowder inside their clothes to the Sonderkommando in Birkenau. On 7 October 1944, the Sonderkommando attacked the SS guards with axes and crowbars, set fire to Crematorium IV, and blew the building apart. The four young women were betrayed, tortured by the Gestapo for weeks, and hanged before the assembled camp. Just before the trapdoor fell, Roza shouted: 'Hazak V'ematz!' (Be strong and courageous!)\"",
-          "caption": "Roza Robota (1921–1945), one of the four heroic young Jewish women in the Auschwitz underground resistance who smuggled gunpowder out of the Weichsel-Union munitions factory to arm the Sonderkommando revolt that destroyed Crematorium IV.",
+          "caption": "Ruins of Crematorium IV and memorial plaque at Auschwitz-Birkenau, blown apart during the 7 October 1944 Sonderkommando revolt using gunpowder smuggled out of the Weichsel-Union munitions factory by Roza Robota and three fellow young Jewish women.",
           "citation": "Yad Vashem Survivor Testimony Collection (M.11) / Ghetto Fighters' House Archives.",
           "context": "Armed uprisings occurred not only in ghettos but also inside the death camps of Treblinka (August 1943), Sobibór (October 1943), and Auschwitz-Birkenau (October 1944), alongside tens of thousands of Jewish partisans fighting in the forests of Poland and Belarus. **Hinge Question:** How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
           "hinge_question": "How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
@@ -7141,8 +7169,8 @@ export default {
             "Audience: Fellow resistance members and future post-war investigators.",
             "Motive: To remember the courage of the women and men who destroyed a gas chamber building."
           ],
-          "image": "/images/auschwitz_crematorium_iv_ruins_1944.jpg",
-          "src": "/images/auschwitz_crematorium_iv_ruins_1944.jpg",
+          "image": "/images/upgraded/ks3-modern/shoah_l5_src_e_crematorium_iv_ruins.jpg",
+          "src": "/images/upgraded/ks3-modern/shoah_l5_src_e_crematorium_iv_ruins.jpg",
           "source_context": "Armed uprisings occurred not only in ghettos but also inside the death camps of Treblinka (August 1943), Sobibór (October 1943), and Auschwitz-Birkenau (October 1944), alongside tens of thousands of Jewish partisans fighting in the forests of Poland and Belarus. **Hinge Question:** How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?",
           "teacher_notes": {
             "source_context": "Armed uprisings occurred not only in ghettos but also inside the death camps of Treblinka (August 1943), Sobibór (October 1943), and Auschwitz-Birkenau (October 1944), alongside tens of thousands of Jewish partisans fighting in the forests of Poland and Belarus. **Hinge Question:** How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?"
@@ -7950,7 +7978,14 @@ export default {
       },
       "vocab_cloze_text": "In January 1942, senior officials at the [Wannsee Conference] coordinated continental deportations as [Operation Reinhard] built Bełżec, Sobibór, and Treblinka—each a pure [Extermination Camp] alongside Auschwitz-Birkenau. Defying impossible odds, Mordechai Anielewicz’s [ŻOB (Jewish Combat Organization)] fought German troops for four weeks in the 1943 Warsaw Ghetto Uprising, while [Sonderkommando] prisoners revolted at Treblinka, Sobibór, and Birkenau.",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_5_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l5_banner_birkenau_gatehouse_tracks.jpg",
+        "caption": "Main Gatehouse and Deportation Railway Spurs at Auschwitz II-Birkenau",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l5_banner_birkenau_gatehouse_tracks.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l5_banner_birkenau_gatehouse_tracks.jpg"
     },
     {
       "id": "lesson_6",
@@ -7958,7 +7993,7 @@ export default {
       "subtitle": "Enquiry 6: Responsibility, Complicity & Rescue across Europe",
       "enquiryQuestion": "Who was responsible, who collaborated, and who tried to save?",
       "skill": "Historical Interpretation: Complicity, Collaboration & The Righteous",
-      "card_image": "/images/sophie_scholl_gestapo.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l6_banner_righteous_among_nations_yad_vashem.jpg",
       "card_position": "center 20%",
       "prologue": "The destruction of six million European Jews could never have been accomplished by Adolf Hitler or the SS alone. It required the active collaboration, administrative diligence, or passive silence of hundreds of thousands of people across the European continent—from German railway clerks scheduling deportation trains to foreign puppet governments rounding up their own citizens. Yet amidst widespread complicity and moral collapse, a courageous minority risked their lives to rescue their Jewish neighbours. Who bore responsibility for the genocide, and what drove the few who chose to act?",
       "causal_domino_spine": {
@@ -9492,7 +9527,14 @@ export default {
       },
       "vocab_cloze_text": "Across occupied Europe, genocide relied on bureaucratic [Complicity] and active [Collaboration], exemplified when French police arrested 13,000 Jews during Paris’s July 1942 [Vel’ d’Hiv Roundup]. Yet courageous rescuers honoured as [Righteous Among the Nations]—including Danish citizens and villagers at Le Chambon—saved thousands, even as Polish courier [Jan Karski] risked his life to warn Allied leaders in 1942.",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_6_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l6_banner_righteous_among_nations_yad_vashem.jpg",
+        "caption": "Garden and Avenue of the Righteous Among the Nations at Yad Vashem, Jerusalem",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l6_banner_righteous_among_nations_yad_vashem.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l6_banner_righteous_among_nations_yad_vashem.jpg"
     },
     {
       "id": "lesson_7",
@@ -9500,7 +9542,7 @@ export default {
       "subtitle": "Enquiry 7: Liberation, Aftermath & Legacy of Memory (1944–1948)",
       "enquiryQuestion": "What was lost, and what does survivor testimony teach us?",
       "skill": "Historical Significance & Legacy: Bearing Witness & Genocide Law",
-      "card_image": "/images/buchenwald_liberation_1945.jpg",
+      "card_image": "/images/upgraded/ks3-modern/shoah_l7_banner_nuremberg_courtroom_600.jpg",
       "card_position": "center 30%",
       "prologue": "In the final months of the Second World War, as Allied forces closed in on Germany, the Nazi regime forced hundreds of thousands of starving camp inmates onto brutal \"death marches\". When Allied soldiers liberated camps like Majdanek, Auschwitz, and Bergen-Belsen in 1944 and 1945, they encountered an unimaginable scene of horror. For surviving victims, liberation was not an instant return to normal life; it was the beginning of an agonizing realization that entire families, communities, and centuries of European Jewish culture had been wiped from the face of the earth. What was lost in the Shoah, and what does survivor testimony demand of future generations?",
       "causal_domino_spine": {
@@ -11038,12 +11080,19 @@ export default {
       },
       "vocab_cloze_text": "As Allied armies closed in during 1944–45, SS guards forced starving prisoners onto brutal winter [Death Marches] before liberation exposed Nazi crimes. Survivors rebuilt shattered lives inside [Displaced Persons (DP) Camps] or in Britain among the 300 [Windermere Children]. Between 1945 and 1948, Allied judges held the [Nuremberg Trials] and international law adopted Raphael Lemkin’s legal concept of [Genocide].",
       "prologue_audio": "/audio/lessons/the_shoah/lesson_7_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/shoah_l7_banner_nuremberg_courtroom_600.jpg",
+        "caption": "Courtroom 600 (Saal 600) at the Nuremberg Palace of Justice — Site of the International Military Tribunal",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/shoah_l7_banner_nuremberg_courtroom_600.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/shoah_l7_banner_nuremberg_courtroom_600.jpg"
     }
   ],
   "keyStage": "KS3",
-  "yearGroup": "Year 9",
-  "year_group": "Year 9",
+  "yearGroup": "Key Stage 3",
+  "year_group": "Key Stage 3",
   "category": "KS3",
   "key_stage": "KS3",
   "micro_histories": [
@@ -11680,5 +11729,6 @@ export default {
       "provenance_tier": "verbatim_primary",
       "provenance_note": "Pairs Richard Dimbleby’s verbatim April 1945 BBC broadcast from Bergen-Belsen with survivor Primo Levi’s reflection on memory."
     }
-  ]
+  ],
+  "is_ks3": true
 };

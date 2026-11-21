@@ -8,7 +8,7 @@
   "icon": "fa-flag-usa",
   "color": "#2563eb",
   "bg": "rgba(37, 99, 235, 0.1)",
-  "yearGroup": "Years 10–11",
+  "yearGroup": "GCSE (9–1)",
   "edition": "2026.1",
   "period": "1954 – 1975",
   "synopsis": "Torn apart by two simultaneous existential struggles, the United States fought a ferocious battle for its own soul at home and abroad. On the domestic front, Black Americans risked their lives against Jim Crow terror, police dogs, and disenfranchisement—advancing from the legal triumph of Brown v. Topeka and MLK's non-violent marches to the fiery radicalism of Malcolm X and Black Power. Simultaneously, deep in the Southeast Asian jungle, over 500,000 conscripted GIs waged a brutal counter-insurgency against resilient Vietcong guerrillas. As napalm, the 1968 Tet Offensive, and the My Lai massacre were beamed into American living rooms, anti-war protests, student strikes, and the Kent State shootings fractured the nation, culminating in painful withdrawal and the fall of Saigon in 1975.",
@@ -2018,9 +2018,13 @@
           "model_answer": "Recall: Wright stood up, pointed his finger directly at the white defendants, and said: 'There he is', risking his life by accusing white men in open court.\nExplain: White Southern newspapers claimed Northern civil rights groups were exaggerating the crime to attack Southern states' rights, raising defense funds for the killers.\nChallenge: Till was the same age as thousands of future activists (like John Lewis and Muhammad Ali); his murder proved that accommodation was fatal and that direct, non-violent mass resistance was essential."
         }
       ],
-      "banner": "/units/usa/assets/sources/colored-waiting-room-sign.jpg",
-      "card_image": "/units/usa/assets/sources/colored-waiting-room-sign.jpg",
-      "hero_image": "/units/usa/assets/sources/colored-waiting-room-sign.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg",
+        "caption": "An African American man ascending the segregated exterior staircase marked \"COLORED ADM. 10¢\" at the Crescent Theatre in Belzoni, Mississippi (October 1939).",
+        "position": "center 25%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg",
       "banner_position": "center 25%",
       "card_position": "center 25%",
       "workbook_stages": [
@@ -2351,7 +2355,8 @@
             "Civil rights group founded in 1909 to fight segregation in federal courts."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg"
     },
     {
       "id": "lesson_1_2",
@@ -4147,9 +4152,9 @@
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
-          "image_alt": "Rosa Parks sitting at the front of a Montgomery bus after desegregation (December 1956)",
-          "caption": "Rosa Parks riding at the front of an integrated Montgomery bus on 21 December 1956, the day the Supreme Court Browder v. Gayle ruling took effect.",
+          "image": "/images/upgraded/gcse-p3/usa_l03_b2_montgomery_bus_2857_exterior.jpg",
+          "image_alt": "Restored 1948 yellow-and-olive General Motors Montgomery City Lines Bus No. 2857 displaying the Cleveland Ave route sign",
+          "caption": "Montgomery City Lines Bus No. 2857 (Cleveland Avenue route), preserved at The Henry Ford Museum: during the 381-day boycott, the MIA’s 300-car volunteer carpool and mass pedestrian solidarity left municipal buses running empty, costing the transit company 65 percent of its passenger revenue.",
           "content": "<span class=\"para-ref\">[3.1]</span> To sustain the boycott over months, the Montgomery Improvement Association established a highly sophisticated **300-car pool network**, operating forty-eight dispatch stations across the city. Black cab companies offered discounted fares matching bus tickets, while hundreds of volunteer drivers ferried workers and domestic servants to their jobs daily. Thousands of working-class men and women walked miles in all weather conditions, turning pedestrian travel into a badge of civic pride.\n\n<span class=\"para-ref\">[3.2]</span> The financial backbone of this logistical operation was the southern **Black church network**, which raised weekly relief funds and supplied venues for strategy meetings. The boycott exerted severe **economic attrition** on Montgomery's private transit company, which lost approximately sixty-five percent of its passenger revenue. White downtown merchants suffered devastating financial losses as Black shoppers boycotted segregated commercial districts, fracturing white business support for municipal segregation."
         },
         {
@@ -5509,8 +5514,8 @@
           "type": "protest_flyer",
           "title": "Source B: Mimeographed Boycott Leaflet Authored by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
           "date": "2 December 1955",
-          "image": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
-          "image_url": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
+          "image": "/images/upgraded/gcse-p3/usa_l03_s1_mia_boycott_flyer_1956.jpg",
+          "image_url": "/images/upgraded/gcse-p3/usa_l03_s1_mia_boycott_flyer_1956.jpg",
           "attribution": "Women's Political Council (WPC) Mimeographed Flyer, Montgomery, Alabama (2 December 1955)",
           "question_badge": "Reliability & Provenance",
           "question": "How does Source B demonstrate the grassroots organizational planning that preceded Martin Luther King’s leadership in Montgomery?",
@@ -5526,9 +5531,9 @@
           },
           "hinge_question": "To what extent has popular historical memory overemphasized King while obscuring the foundational role of the Women's Political Council?",
           "source_context": "Women's Political Council Papers, Alabama State University Special Collections. Jo Ann Robinson, English professor and president of the Women's Political Council for The 45,000 Black citizens and transit riders of Montgomery with the objective: To call for an immediate, total one-day economic boycott of city buses on the Monday of Rosa Parks's trial.. **Hinge Question:** To what extent has popular historical memory overemphasized King while obscuring the foundational role of the Women's Political Council?",
-          "src": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
+          "src": "/images/upgraded/gcse-p3/usa_l03_s1_mia_boycott_flyer_1956.jpg",
           "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
-          "caption": "Police arrest booking photograph of Jo Ann Robinson (1912–1992), President of the Women's Political Council (WPC), following the mass boycott indictments in Montgomery, Alabama (February 1956). Robinson spent the night of 1 December 1955 mimeographing 35,000 boycott leaflets following Rosa Parks' arrest.",
+          "caption": "Original printed leaflet distributed in Montgomery, Alabama by the Montgomery Improvement Association (1956, Schomburg Center / NYPL), exemplifying the grassroots duplicating and church distribution networks initiated on the night of 1–2 December 1955 by Jo Ann Robinson and the Women’s Political Council.",
           "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person to sit down. It is the second time since the Claudette Colvin case that a Negro woman has been arrested for the same thing. This has to be stopped. Negroes have rights too, for if Negroes did not ride the buses, they could not operate. Three-fourths of the riders are Negroes, yet we are arrested, or have to stand over empty seats. If we do not do something to stop these arrests, they will continue. The next time it may be you, or your daughter, or mother. We are, therefore, asking every Negro to stay off the buses Monday in protest of the arrest and trial. Don't ride the buses to work, to town, to school, or anywhere on Monday."
         },
         {
@@ -5649,9 +5654,13 @@
           "model_answer": "Recall: A 15-year-old student who refused to surrender her seat nine months before Parks; leaders feared an unmarried pregnant teenager would be smeared by Southern white press.\nExplain: Robinson and two students worked secretly through the night in Alabama State College's mimeograph room, organizing school teachers and church groups to distribute leaflets across Black neighborhoods.\nChallenge: The court struck down municipal bus segregation as a violation of the 14th Amendment's Equal Protection Clause, proving that non-violent collective protest combined with federal litigation could dismantle statutory segregation."
         }
       ],
-      "banner": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
-      "card_image": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
-      "hero_image": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg",
+        "caption": "Sanctuary and pulpit of the historic Dexter Avenue King Memorial Baptist Church in Montgomery, Alabama, where Dr Martin Luther King Jr. served as pastor and helped lead the 1955–1956 Montgomery Bus Boycott.",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -5983,7 +5992,8 @@
             "Church-based civil rights alliance founded by Dr King in January 1957."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg"
     },
     {
       "id": "lesson_1_4",
@@ -6235,9 +6245,9 @@
               "text": "Question by Special Prosecutor: 'Mr. Wright, do you see the man in this courtroom who came to your house that night and took your grandnephew, Emmett Till?'\nMose Wright stood up in the witness box, extended his trembling arm, pointed his finger straight at J.W. Milam, and answered clearly: 'Thar he.' In Mississippi in 1955, for a Black man to point his finger at a white man and accuse him of kidnapping and murder was almost certain death."
             }
           ],
-          "image": "/units/usa/assets/sources/portraits/emmett_till.jpg",
-          "image_alt": "Family portrait of fourteen-year-old Emmett Till wearing a hat and tie",
-          "caption": "Fourteen-year-old Emmett Till of Chicago in a family portrait; his August 1955 murder in Mississippi and the 67-minute acquittal of his killers shocked America.",
+          "image": "/images/upgraded/gcse-p3/usa_l04_b2_bryant_milam_sumner_trial_1955.jpg",
+          "image_alt": "Defendants Roy Bryant and J.W. Milam conferring with their defense counsel inside the Tallahatchie County courtroom in Sumner, Mississippi in September 1955",
+          "caption": "Defendants Roy Bryant (left) and J.W. Milam (centre) conferring with defense counsel during the Emmett Till murder trial in Sumner, Mississippi (September 1955), where an all-white male jury acquitted both men after just 67 minutes of deliberation despite Moses Wright’s courageous eyewitness identification.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[3.1]</span> In September 1955, Roy Bryant and J.W. Milam stood trial for kidnapping and murder in Sumner, Mississippi. In an extraordinary act of southern courtroom courage, Emmett's sixty-four-year-old great-uncle, **Moses Wright courtroom testimony**, bravely rose on the witness stand, pointed his finger directly at the defendants, and publicly identified them as the armed men who abducted Emmett.\n\n<span class=\"para-ref\">[3.2]</span> Despite compelling eyewitness testimony and medical evidence, the segregated panel delivered an **all-white jury acquittal** after just sixty-seven minutes. Four months later, protected from further prosecution by double jeopardy, Bryant and Milam sold their story to *Look* magazine for $4,000. Their brazen **Look magazine confession** bragging about the killing sparked intense moral outrage across northern states, exposing the utter corruption of Jim Crow justice."
         },
@@ -7800,9 +7810,13 @@
           "model_answer": "Recall: A declaration condemning Brown v. Board as a 'clear abuse of judicial power' and pledging to use all lawful means to resist integration.\nExplain: Unlike the violent midnight Klan, Councils were composed of respectable bankers, doctors, and merchants who used financial power to ruin Black activists without wearing robes.\nChallenge: Strom Thurmond filibustered the bill for 24 hours, and compromise amendments gutted enforcement provisions, resulting in fewer than 3% more Black voters being registered across the Deep South by 1960."
         }
       ],
-      "banner": "/units/usa/assets/sources/little-rock-protest-1957.jpg",
-      "card_image": "/units/usa/assets/sources/little-rock-protest-1957.jpg",
-      "hero_image": "/units/usa/assets/sources/little-rock-protest-1957.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg",
+        "caption": "Brick ruins of Bryant’s Grocery and Meat Market in Money, Leflore County, Mississippi, the crossroads store visited by fourteen-year-old Emmett Till in August 1955.",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -8134,7 +8148,8 @@
             "First federal rights law since 1875, weakened by white-jury trial loopholes."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg"
     },
     {
       "id": "lesson_2_1",
@@ -12398,9 +12413,13 @@
           "model_answer": "Recall: 'We want Black Power!'\nExplain: Beyond leather jackets and berets, the Panthers served breakfast to tens of thousands of impoverished children daily and ran free community medical clinics, filling gaps left by state neglect.\nChallenge: Hoover declared the Free Breakfast Program the greatest internal threat to national security; COINTELPRO forged factional letters, planted informants, and orchestrated the December 1969 police assassination of Chicago Panther leader Fred Hampton."
         }
       ],
-      "banner": "/units/usa/assets/sources/olympics-black-power-1968.jpg",
-      "card_image": "/units/usa/assets/sources/olympics-black-power-1968.jpg",
-      "hero_image": "/units/usa/assets/sources/olympics-black-power-1968.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg",
+        "caption": "Dr Martin Luther King Jr. and Malcolm X meeting briefly in a corridor of the United States Capitol during the Senate debate on the Civil Rights Act (26 March 1964).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -12732,7 +12751,8 @@
             "Militant group founded in Oakland in 1966 running armed patrols and free meals."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg"
     },
     {
       "id": "lesson_2_4",
@@ -14508,9 +14528,13 @@
           "model_answer": "Recall: '...one black, one white—separate and unequal.'\nExplain: The report concluded that white institutions created the ghetto, white institutions maintained it, and white society condoned it; riots were protests against systematic economic exclusion.\nChallenge: The escalating cost of the Vietnam War ($30 billion annually) was draining the federal budget, while white suburban voters reacted with a conservative 'law and order' backlash against urban violence."
         }
       ],
-      "banner": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
-      "card_image": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
-      "hero_image": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg",
+        "caption": "Armed U.S. federal soldiers standing guard at 7th and N Streets NW beside smouldering ruins in Washington, D.C. during the urban uprising following the assassination of Dr Martin Luther King Jr. (8 April 1968).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -14868,7 +14892,8 @@
             "Law passed after Dr King's murder banning racial bias in renting or buying homes."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg"
     },
     {
       "id": "lesson_3_1",
@@ -16067,9 +16092,13 @@
           "model_answer": "Cinematic Discussion Focus: The trailer shows CIA operative Pyle genuinely believing he can save Vietnam with Western democracy, yet blind to the fact that his covert bombs are slaughtering ordinary civilians in Saigon squares."
         }
       ],
-      "banner": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
-      "card_image": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
-      "hero_image": "/units/usa/assets/sources/ngo-dinh-diem-parade.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg",
+        "caption": "South Vietnamese President Ngo Dinh Diem addressing a joint session of the United States Congress in Washington, D.C. during his official state visit (9 May 1957).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -16407,7 +16436,8 @@
             "Fortified barbed-wire villages where peasants were forcibly relocated in 1962."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg"
     },
     {
       "id": "lesson_3_2",
@@ -17616,9 +17646,13 @@
           "model_answer": "Recall: Authority to use all necessary military force to repel armed attacks against US forces without a formal declaration of war. How did the Gulf of Tonkin incident enable President Johnson to commit US ground combat troops to the war in Vietnam?\nExplain: Destroyer captains cabled Washington that high seas and bad weather caused freak sonar returns, but LBJ went on television anyway to announce retaliatory air strikes.\nChallenge: It effectively transferred the exclusive congressional power to declare war directly into the hands of the executive branch, enabling an 8-year war that cost 58,000 American lives."
         }
       ],
-      "banner": "/units/usa/assets/sources/uss-maddox.jpg",
-      "card_image": "/units/usa/assets/sources/uss-maddox.jpg",
-      "hero_image": "/units/usa/assets/sources/uss-maddox.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg",
+        "caption": "Captain John J. Herrick (Commander Destroyer Division 192, left) and Commander Herbert L. Ogier (Commanding Officer, right) in battle helmets aboard the destroyer USS Maddox (DD-731) following the Gulf of Tonkin Incident (13 August 1964).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -17983,7 +18017,8 @@
             "Landing of 3,500 US Marines at Da Nang in March 1965, starting ground combat."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg"
     },
     {
       "id": "lesson_3_3",
@@ -19747,9 +19782,13 @@
           "model_answer": "Tens of thousands of North Vietnamese and Vietcong porters repaired jungle trails overnight, hid munitions in vast tunnel networks, and blended into rural villages where US bombing alienated peasants (\"hearts and minds\"). Both interacted: Vietcong resilience (especially the 1968 Tet Offensive) made rapid military victory impossible, destroying public trust in Washington and forcing political withdrawal."
         }
       ],
-      "banner": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
-      "card_image": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
-      "hero_image": "/units/usa/assets/sources/huey_combat_landing_vietnam.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg",
+        "caption": "U.S. Army Bell UH-1D \"Huey\" helicopters airlifting infantrymen of the 25th Infantry Division during Operation Wahiawa, a search-and-destroy mission northeast of Cu Chi, South Vietnam (16 May 1966).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -20113,7 +20152,8 @@
             "US helicopter raids hunting guerrillas and measuring victory by enemy body counts."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg"
     },
     {
       "id": "lesson_3_4",
@@ -21930,9 +21970,13 @@
           "model_answer": "Cinematic Discussion Focus: The trailer shows the Washington Post risking criminal prosecution to publish the secret history of Vietnam, revealing that four successive administrations lied about war progress while privately knowing the war was unwinnable."
         }
       ],
-      "banner": "/units/usa/assets/sources/nixon-visiting-troops.jpg",
-      "card_image": "/units/usa/assets/sources/nixon-visiting-troops.jpg",
-      "hero_image": "/units/usa/assets/sources/nixon-visiting-troops.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg",
+        "caption": "President Richard Nixon pointing to North Vietnamese sanctuary zones along the Cambodian–South Vietnamese border during his televised address announcing the Cambodian Incursion (30 April 1970).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -22270,7 +22314,8 @@
             "1969–70 US bombing and ground raids on Vietcong supply bases in Cambodia."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg"
     },
     {
       "id": "lesson_4_1",
@@ -22526,9 +22571,9 @@
             }
           ],
           "isReversed": true,
-          "image": "/units/usa/assets/sources/vvaw-veterans-protest.jpg",
-          "image_alt": "Vietnam veteran throwing combat medals at the US Capitol protest in 1971",
-          "caption": "A member of Vietnam Veterans Against the War (VVAW) hurling his combat decorations over the fence at the US Capitol during anti-war protests in April 1971.",
+          "image": "/images/upgraded/gcse-p3/usa_l13_b2_veterans_for_peace_march_nara.jpg",
+          "image_alt": "American military veterans carrying the US flag and a large banner reading Bring Our GIs Home Now - Veterans for Peace during anti-Vietnam War demonstrations in Washington, D.C.",
+          "caption": "Uniformed American military veterans marching with the Stars and Stripes and a \"Veterans for Peace — Bring Our GIs Home Now!\" banner during Washington anti-war demonstrations: revelations of atrocities such as the My Lai Massacre prompted thousands of disillusioned combat veterans to turn publicly against the war.",
           "theme": "Exposure of the My Lai Massacre",
           "content": "<span class=\"para-ref\">[3.1]</span> On 16 March 1968, American troops of Charlie Company entered the hamlet of Son My on a search-and-destroy mission. Led by platoon commander **Lieutenant William Calley**, soldiers rounded up unarmed villagers and systematically murdered over five hundred women, children, and elderly men in the horrific **My Lai massacre (Son My)**, raping victims and setting huts ablaze despite encountering zero enemy fire.\n\n<span class=\"para-ref\">[3.2]</span> The military covered up the atrocity for twenty months until veteran Ron Ridenhour alerted Congress, prompting brilliant **Seymour Hersh investigative reporting** in November 1969. Shocking color photographs of ditches filled with slaughtered babies shattered the moral justification of the American mission, horrifying middle America and proving that brutal counter-insurgency warfare was debasing the moral integrity of American forces."
         },
@@ -24030,9 +24075,13 @@
           "model_answer": "Cinematic Discussion Focus: The trailer dramatises how federal prosecutors charged protest leaders under anti-riot conspiracy laws, framing democratic protest as treason while police violently clubbed demonstrators in front of television cameras."
         }
       ],
-      "banner": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
-      "card_image": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
-      "hero_image": "/units/usa/assets/sources/antiwar-pentagon-protest-1967.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg",
+        "caption": "Anti-Vietnam War demonstrators picketing outside the White House in Washington, D.C. carrying placards reading \"NO MORE... Stop the War!\" and \"END the DRAFT!\" (19 January 1968).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -24372,7 +24421,8 @@
             "7,000-page secret DoD history leaked by Daniel Ellsberg exposing war lies."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg"
     },
     {
       "id": "lesson_4_2",
@@ -25504,9 +25554,9 @@
           "type": "photograph",
           "title": "Source E: Members of Vietnam Veterans Against the War (VVAW) Throwing Combat Medals and Purple Hearts Over the US Capitol Fence (23 April 1971)",
           "date": "23 April 1971",
-          "caption": "Vietnam Veterans Against the War (VVAW) casting their combat decorations, Purple Hearts, and Silver Stars over the security barricades at the US Capitol in protest against the war (23 April 1971).",
-          "image": "/units/usa/assets/sources/vvaw-veterans-protest.jpg",
-          "image_url": "/units/usa/assets/sources/vvaw-veterans-protest.jpg",
+          "caption": "A member of Vietnam Veterans Against the War (VVAW) hurling his combat decorations and medals over the security barricades on the steps of the US Capitol during Operation Dewey Canyon III (23 April 1971).",
+          "image": "/images/upgraded/gcse-p3/usa_l14_s4_vvaw_throwing_medal_capitol_1971.jpg",
+          "image_url": "/images/upgraded/gcse-p3/usa_l14_s4_vvaw_throwing_medal_capitol_1971.jpg",
           "attribution": "Owen Franken photograph / Corbis / National Archives Still Pictures",
           "question_badge": "Author's Purpose",
           "question": "What was the purpose of decorated combat veterans in discarding their military medals on the steps of Congress in Source E?",
@@ -25522,7 +25572,7 @@
           },
           "hinge_question": "Why was the testimony of Vietnam Veterans Against the War far more politically damaging to the Nixon Administration than student protests?",
           "source_context": "Owen Franken photograph / Corbis / National Archives Still Pictures. Owen Franken, photojournalist covering the Washington anti-war encampment for Members of Congress, the national news media, and the American public with the objective: To visually repudiate the military honors bestowed upon them for fighting in what they denounced as an unjust, criminal war.. **Hinge Question:** Why was the testimony of Vietnam Veterans Against the War far more politically damaging to the Nixon Administration than student protests?",
-          "src": "/units/usa/assets/sources/vvaw-veterans-protest.jpg",
+          "src": "/images/upgraded/gcse-p3/usa_l14_s4_vvaw_throwing_medal_capitol_1971.jpg",
           "source": "/units/usa/assets/sources/vvaw-veterans-protest.jpg"
         }
       ],
@@ -25561,9 +25611,13 @@
           "model_answer": "Cinematic Discussion Focus: Working-class families could not afford college draft deferments; their sons were dying in Vietnam while affluent university students burned American flags and called soldiers baby-killers, provoking fierce patriotic counter-reactions."
         }
       ],
-      "banner": "/units/usa/assets/sources/hard-hat-riot-1970.jpg",
-      "card_image": "/units/usa/assets/sources/hard-hat-riot-1970.jpg",
-      "hero_image": "/units/usa/assets/sources/hard-hat-riot-1970.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg",
+        "caption": "President Richard Nixon greeting thousands of flag-waving \"Silent Majority\" supporters during a campaign rally in Ontario, California on the eve of his 49-state landslide re-election (4 November 1972).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -25901,7 +25955,8 @@
             "Divide between 'Hawks' backing military force and 'Doves' urging peace talks."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg"
     },
     {
       "id": "lesson_4_3",
@@ -27082,9 +27137,13 @@
           "model_answer": "Cinematic Discussion Focus: The trailer shows helicopters pushed off aircraft carrier decks into the South China Sea to make room for more fleeing refugees, capturing the desperate panic and heartbreak as an allied nation was abandoned to its fate."
         }
       ],
-      "banner": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
-      "card_image": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
-      "hero_image": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg",
+        "caption": "U.S. Navy flight-deck crewmen pushing an evacuated South Vietnamese Air Force UH-1 Huey helicopter overboard from the amphibious command ship USS Blue Ridge to make room for incoming refugee flights during Operation Frequent Wind (29 April 1975).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -27424,7 +27483,8 @@
             "Law passed over Nixon's veto curbing a president's power to wage undeclared war."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg"
     },
     {
       "id": "lesson_4_4",
@@ -29223,9 +29283,13 @@
           "model_answer": "Recall: Inappropriate military doctrine, domestic anti-war protests, an illegitimate and corrupt South Vietnamese regime, and the unyielding nationalistic commitment of the North.\nExplain: B-52 carpet bombing and search-and-destroy patrols could clear jungle but could not secure territory; the Vietcong melted into the peasant population and rebuilt tunnels.\nChallenge: While the US never lost a major tactical battle, war is ultimately political: once the American public and Congress lost faith in the war's moral justification and refused further funding, military continuation became impossible."
         }
       ],
-      "banner": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
-      "card_image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
-      "hero_image": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg",
+        "caption": "U.S. 1st Cavalry Division (Airmobile) infantrymen searching a thatched rural dwelling watched by an elderly Vietnamese villager and child during Operation Irving north of Qui Nhon (6 October 1966).",
+        "position": "center 20%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -29565,10 +29629,11 @@
             "Lasting US reluctance to commit ground troops to long foreign wars after 1975."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg"
     }
   ],
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "year_group": "Years 10–11"
+  "year_group": "GCSE (9–1)"
 }

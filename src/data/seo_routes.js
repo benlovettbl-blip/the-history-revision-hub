@@ -106,12 +106,12 @@ export const SEO_UNIT_ROUTES = [
     priority: '0.9',
   },
 
-  // Key Stage 3: Years 7–9 UK National Curriculum History
+  // Key Stage 3: UK National Curriculum History
   {
     unitId: 'medieval_england',
     slug: 'medieval-england',
     aliases: ['medieval-england-1066-1485'],
-    keyStage: 'Key Stage 3 (Year 7)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'Medieval England: Power, Plague & Rebellion (1066–1485)',
     seoTitle:
@@ -124,7 +124,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'monarchy_religion_power',
     slug: 'tudors-stuarts-parliament',
     aliases: ['monarchy-religion-power', 'crown-church-parliament'],
-    keyStage: 'Key Stage 3 (Year 8)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'Crown, Church, or Parliament? Tudors & Stuarts (1517–1689)',
     seoTitle:
@@ -137,7 +137,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'water_and_sanitation',
     slug: 'water-and-sanitation',
     aliases: ['public-health-through-time'],
-    keyStage: 'Key Stage 3 (Year 7)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 Thematic Study',
     heading: 'Water, Public Health & Sanitation Through Time',
     seoTitle:
@@ -150,7 +150,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'first_british_empire',
     slug: 'first-british-empire',
     aliases: ['british-empire-1600-1783'],
-    keyStage: 'Key Stage 3 (Year 8)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'The First British Empire: Trade, Colonisation & Revolution (1600–1783)',
     seoTitle:
@@ -163,7 +163,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'industrialisation_and_empire',
     slug: 'industrial-revolution',
     aliases: ['industrialisation-and-empire'],
-    keyStage: 'Key Stage 3 (Year 8)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'The Industrial Revolution: Steam, Labour & Protest (1750–1900)',
     seoTitle:
@@ -176,7 +176,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'second_british_empire',
     slug: 'second-british-empire',
     aliases: ['british-empire-1783-1914'],
-    keyStage: 'Key Stage 3 (Year 8)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'The Second British Empire: Expansion, Resistance & Abolition (1783–1914)',
     seoTitle:
@@ -189,7 +189,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'australia',
     slug: 'history-of-australia',
     aliases: ['australia-1770-1901'],
-    keyStage: 'Key Stage 3 (Year 8)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 World History',
     heading: 'The History of Australia: First Nations, Colonisation & Resistance (1770–1901)',
     seoTitle:
@@ -202,7 +202,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'great_war',
     slug: 'causes-of-world-war-1',
     aliases: ['causes-of-the-great-war'],
-    keyStage: 'Key Stage 3 (Year 9)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'Causes of the First World War (1871–1914)',
     seoTitle:
@@ -215,7 +215,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'great_war_part2',
     slug: 'first-world-war-1914-1919',
     aliases: ['course-of-the-great-war'],
-    keyStage: 'Key Stage 3 (Year 9)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'The First World War: Trenches, Empire & Aftermath (1914–1919)',
     seoTitle:
@@ -228,7 +228,7 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'the_shoah',
     slug: 'the-holocaust-shoah',
     aliases: ['the-shoah'],
-    keyStage: 'Key Stage 3 (Year 9)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 Mandatory Study',
     heading: 'The Shoah (The Holocaust, 1933–1945)',
     seoTitle:
@@ -241,20 +241,20 @@ export const SEO_UNIT_ROUTES = [
     unitId: 'cold_war',
     slug: 'cold-war-1945-1991',
     aliases: ['ks3-cold-war', 'superpower-relations-cold-war'],
-    keyStage: 'Key Stage 3 (Year 9)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'The Cold War: Ideologies, Flashpoints & Collapse (1945–1991)',
     seoTitle:
-      'The Cold War (1945–1991) | KS3 Year 9 History Lessons, Sources & Revision | The History Revision Hub',
+      'The Cold War (1945–1991) | KS3 History Lessons, Sources & Revision | The History Revision Hub',
     metaDescription:
-      'Interactive UK Key Stage 3 (Year 9) History lessons, archival primary sources, studio audio read-alouds, and retrieval quizzes on the Cold War (1945–1991): Iron Curtain, Berlin Blockade and Wall, Cuban Missile Crisis, Vietnam, Détente, and the collapse of the USSR.',
+      'Interactive UK Key Stage 3 History lessons, archival primary sources, studio audio read-alouds, and retrieval quizzes on the Cold War (1945–1991): Iron Curtain, Berlin Blockade and Wall, Cuban Missile Crisis, Vietnam, Détente, and the collapse of the USSR.',
     priority: '0.85',
   },
   {
     unitId: 'post_war_britain',
     slug: 'post-war-britain',
     aliases: ['modern-britain-1900-present'],
-    keyStage: 'Key Stage 3 (Year 9)',
+    keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
     heading: 'Rights, Protest & Post-War Britain (1900–Present)',
     seoTitle:

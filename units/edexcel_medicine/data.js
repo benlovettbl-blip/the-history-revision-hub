@@ -4157,9 +4157,9 @@ export default {
           "title": "Herbal Remedies, Simples and the Great Theriac",
           "content": "<p><span class=\"para-ref\">[4.1]</span> When treating non-fatal everyday illnesses, medieval patients turned to herbal pharmacopeia drawn from classical manuscripts like Dioscorides' **Herbal Materia Medica**. Healers gathered local medicinal plants, preparing herbal teas, soothing honey syrups, and warm poultices from mint, chamomile, sage, and plantain. For ordinary peasant households, these traditional botanical remedies provided affordable, comforting relief for coughs, cuts, joint aches, and digestive discomfort.</p><p><span class=\"para-ref\">[4.2]</span> For wealthy elites, apothecaries compounded the legendary universal antidote **theriac (70 ingredients)**, which blended crushed snake flesh, opium, exotic Arabian spices, and wine. Sold as expensive **remedies by local apothecaries**, theriac was believed to neutralise internal poisons and ward off pestilence. While herbs like willow bark offered mild anti-inflammatory relief, most complex medieval compounds possessed zero clinical power against virulent bacterial infections.</p>",
           "text": "<p><span class=\"para-ref\">[4.1]</span> When treating non-fatal everyday illnesses, medieval patients turned to herbal pharmacopeia drawn from classical manuscripts like Dioscorides' **Herbal Materia Medica**. Healers gathered local medicinal plants, preparing herbal teas, soothing honey syrups, and warm poultices from mint, chamomile, sage, and plantain. For ordinary peasant households, these traditional botanical remedies provided affordable, comforting relief for coughs, cuts, joint aches, and digestive discomfort.</p><p><span class=\"para-ref\">[4.2]</span> For wealthy elites, apothecaries compounded the legendary universal antidote **theriac (70 ingredients)**, which blended crushed snake flesh, opium, exotic Arabian spices, and wine. Sold as expensive **remedies by local apothecaries**, theriac was believed to neutralise internal poisons and ward off pestilence. While herbs like willow bark offered mild anti-inflammatory relief, most complex medieval compounds possessed zero clinical power against virulent bacterial infections.</p>",
-          "image": "/images/theriac_compounding_apothecary.jpg",
-          "caption": "Dispensing Theriac (\"Triacha\") in a Medieval Apothecary Shop (Tacuinum Sanitatis, late 14th century, Österreichische Nationalbibliothek): Seated behind a counter beneath shelves of majolica pharmacy jars, a master apothecary measures out compounded theriac—a prestigious multi-ingredient antidote praised by Galen to counteract internal poisons and pestilence.",
-          "image_alt": "Fifteenth-century Tacuinum Sanitatis illumination of an apothecary shop showing a master consulting a herbal book beside ceramic drug jars while an assistant stirs a compound over a brazier",
+          "image": "/images/upgraded/gcse-med-eee/med_l1_3_preparation_of_theriac_wellcome.jpg",
+          "caption": "Compounding Theriac (\"Tyriack Galieni\", from Hieronymus Brunschwig, Wellcome Collection L0000751): A master apothecary stirs a complex multi-ingredient antidote over a counter of pharmacy vessels while consulting a physician—illustrating the prestigious Galenic theriac compounds sold to wealthy patients.",
+          "image_alt": "Sixteenth-century medical woodcut by Hieronymus Brunschwig showing a master apothecary and physician compounding theriac beside pharmacy jars and blackletter commentary on Galenic theriac",
           "isReversed": false,
           "sources": [
             {
@@ -5757,9 +5757,9 @@ export default {
           "title": "Monastic Hospitals: The Philosophy of 'Care Not Cure'",
           "content": "<p><span class=\"para-ref\">[4.1]</span> By 1500, England possessed over 1,100 hospitals, virtually all founded, funded, and operated by Christian religious orders as **monastic charity hospitals**. Institutions such as St Bartholomew's and St Thomas' in London were run by Catholic monks and nuns. Rather than treating contagious diseases, hospitals provided refuge for travellers, elderly pilgrims, the blind, and the dying, offering food and shelter.</p><p><span class=\"para-ref\">[4.2]</span> Medieval hospitals operated strictly under a **care not cure philosophy**, viewing spiritual salvation as far more important than physical bodily healing. Patients were kept warm, given clean linen, fed wholesome soups, and supported by quiet **bed rest, cleanliness, and prayer**. Chapels were positioned so bedridden inmates could observe the elevation of the Host, preparing their souls for heaven rather than undergoing medical surgery.</p>",
           "text": "<p><span class=\"para-ref\">[4.1]</span> By 1500, England possessed over 1,100 hospitals, virtually all founded, funded, and operated by Christian religious orders as **monastic charity hospitals**. Institutions such as St Bartholomew's and St Thomas' in London were run by Catholic monks and nuns. Rather than treating contagious diseases, hospitals provided refuge for travellers, elderly pilgrims, the blind, and the dying, offering food and shelter.</p><p><span class=\"para-ref\">[4.2]</span> Medieval hospitals operated strictly under a **care not cure philosophy**, viewing spiritual salvation as far more important than physical bodily healing. Patients were kept warm, given clean linen, fed wholesome soups, and supported by quiet **bed rest, cleanliness, and prayer**. Chapels were positioned so bedridden inmates could observe the elevation of the Host, preparing their souls for heaven rather than undergoing medical surgery.</p>",
-          "image": "/images/hotel_dieu_hospital.jpg",
-          "caption": "Medieval hospital ward where religious sisters provided nursing care and hospitality for the sick and destitute.",
-          "image_alt": "Late fifteenth-century French woodcut interior of the Hôtel-Dieu hospital in Paris showing nuns tending patients two to a bed while sisters sew burial shrouds in the foreground",
+          "image": "/images/upgraded/gcse-med-eee/med_l1_4_hotel_dieu_paris_nuns.jpg",
+          "caption": "A Ward of the Hôtel-Dieu, Paris (16th-century woodcut, Wellcome Collection V0014307): Religious sisters nurse patients lying two to a bed beneath an altar crucifix while nuns sew burial shrouds in the foreground—embodying the medieval monastic ethos of spiritual care rather than surgical cure.",
+          "image_alt": "Early sixteenth-century woodcut interior of a ward at the Hôtel-Dieu hospital in Paris showing religious sisters tending patients two to a bed beneath a chapel crucifix while nuns sew burial shrouds in the foreground",
           "isReversed": true,
           "sources": [
             {
@@ -5829,8 +5829,9 @@ export default {
             "<p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>"
           ],
           "theme_heading": "Domestic Women Healers and Household Medicine",
-          "image": "/images/medieval_female_physician.jpg",
-          "caption": "Fifteenth-century English medical manuscript drawing showing a female healer applying heated cupping glasses and leeches to a seated patient (Wellcome Collection)."
+          "image": "/images/upgraded/gcse-med-eee/med_l1_4_medieval_midwife_nursing.jpg",
+          "caption": "Medieval Midwifery and Domestic Nursing (after a 1433 English manuscript illumination, Wellcome Collection V0014976): A midwife swaddles and nurses a newborn infant beside the hearth while women attendants care for the mother in bed—reflecting how household women delivered everyday rural healthcare.",
+          "image_alt": "Fifteenth-century English manuscript scene (1433) showing a midwife nursing a newborn infant beside a blazing hearth while domestic women attendants bring warm broth and vessels to the mother resting in bed"
         }
       ],
       "sources": [
@@ -6986,7 +6987,11 @@ export default {
     },
     {
       "id": "lesson_1_5",
-      "banner": "/images/plague_toggenburg_wide.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
+        "caption": "The Plague of Florence in 1348, as Described in Boccaccio's Decameron",
+        "position": "center 45%"
+      },
       "banner_position": "center 45%",
       "title": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
       "specification_anchor": "Case study: dealing with the Black Death, 1348–49; approaches to treatment and attempts to prevent its spread.",
@@ -8494,8 +8499,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/plague_toggenburg_wide.jpg",
-      "card_image": "/images/plague_toggenburg_wide.jpg",
+      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
       "card_position": "center 45%",
       "key_topic": "KT1: c1250–c1500: Medicine in Medieval England",
       "visual_story_sheet": {
@@ -8605,7 +8610,8 @@ export default {
             "Town orders locking infected households indoors to stop plague spreading."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg"
     },
     {
       "id": "lesson_2_1",
@@ -11831,7 +11837,11 @@ export default {
     },
     {
       "id": "lesson_2_3",
-      "banner": "/images/vesalius_dissection_hero.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
+        "caption": "Andreas Vesalius Dissecting a Human Body beside an Open Anatomical Volume",
+        "position": "center 52%"
+      },
       "banner_position": "center 52%",
       "title": "KT2.3: Andreas Vesalius & The Anatomical Revolution (1543)",
       "specification_anchor": "Andreas Vesalius and his work on anatomy; the impact of De Humani Corporis Fabrica (1543).",
@@ -13367,8 +13377,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/vesalius_dissection_hero.jpg",
-      "card_image": "/images/vesalius_dissection_hero.jpg",
+      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
       "card_position": "center 52%",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
       "visual_story_sheet": {
@@ -13479,7 +13489,8 @@ export default {
             "Vesalius’s proof that the heart wall had no invisible pores, refuting Galen."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg"
     },
     {
       "id": "lesson_2_4",
@@ -14955,7 +14966,7 @@ export default {
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Physiology & Circulation of the Blood",
       "inquiry_question": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?",
-      "card_image": "/images/med_banner_kt2_4_harvey_circulation.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
       "card_position": "center 26%",
       "key_individual": {
         "id": "harvey",
@@ -15018,8 +15029,12 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt2_4_harvey_circulation.jpg",
-      "hero_image": "/images/med_banner_kt2_4_harvey_circulation.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
+        "caption": "The Entrance of the Royall Colledge of Phisitians, Warwick Lane, London",
+        "position": "center 26%"
+      },
+      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
       "visual_story_sheet": {
         "num": "09",
@@ -15128,7 +15143,8 @@ export default {
             "Microscopic vessels linking arteries to veins, seen by Marcello Malpighi in 1661."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg"
     },
     {
       "id": "lesson_2_5",
@@ -15603,8 +15619,9 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> By September 1665, London was engulfed in apocalyptic horror as weekly deaths surpassed eight thousand. Traditional churchyard burials ceased completely, replaced by municipal **London dead carts** that traversed midnight streets accompanied by tolling handbells and the grim cries of drivers shouting: *Bring out your dead!* Unclaimed corpses were tipped into gigantic communal burial trenches at Holywell Mount and Aldgate.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> By winter 1665, the epidemic subsided as cold weather killed off fleas, leaving over **100,000 plague deaths** recorded across the capital—nearly a quarter of London’s total population. Weekly **Bills of Mortality records** documented the horrifying toll across each parish. The catastrophe demonstrated the complete failure of Renaissance medicine to conquer infectious disease, proving that theoretical anatomical progress had yet to transform bedside therapeutics.</p>"
           ],
-          "image": "/images/night_plague_burials_1665.jpg",
-          "caption": "Coloured engraving (\"Plague in 1665\") showing dead-cart men smoking clay tobacco pipes to ward off miasma while loading plague victims onto a burial cart at night."
+          "image": "/images/upgraded/gcse-med-eee/med_l2_5_plague_1665_dead_cart_hires.jpg",
+          "caption": "\"Plague in 1665\" (engraving by Nathaniel Parr after Samuel Wale, 1747, Wellcome Collection V0010611): London dead-cart drivers smoke clay tobacco pipes against miasma while loading unclaimed plague corpses onto a night burial cart.",
+          "image_alt": "Eighteenth-century copperplate engraving titled Plague in 1665 by Nathaniel Parr after Samuel Wale showing dead-cart men smoking clay tobacco pipes to ward off miasma while lifting plague victims onto a burial cart"
         }
       ],
       "vocab": [
@@ -17155,8 +17172,9 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> Despite its revolutionary brilliance, Pasteur’s Germ Theory encountered fierce **British medical scepticism** for over a decade. Prominent London physicians, led by Dr Charlton Bastian, argued that Pasteur was merely a laboratory chemist whose work on wine fermentation held no relevance for human pathology, insisting that human internal diseases arose spontaneously from chemical imbalances. The influential medical establishment remained wedded to traditional miasma theories.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> The tide began turning in the 1870s when physicist **John Tyndall’s experiments** demonstrated that disease was carried by microscopic airborne particles, overcoming **Dr Charlton Bastian’s opposition** during impassioned Royal Society debates. When Scottish surgeon Joseph Lister applied Pasteur's principles to antiseptic surgery, practical clinical results gradually convinced younger British doctors that living microbes were the primary agents of surgical infection.</p>"
           ],
-          "image": "/images/med_stage_john_tyndall.jpg",
-          "caption": "Professor John Tyndall FRS (1820–1893, Royal Institution, London): Using an illuminated dust-free optical chamber in the 1870s, physicist John Tyndall demonstrated airborne heat-resistant bacterial spores and lectured tirelessly to win sceptical British doctors over to Pasteur’s Germ Theory."
+          "image": "/images/upgraded/gcse-med-eee/med_l3_1_john_tyndall_portrait.jpg",
+          "caption": "Professor John Tyndall FRS (1820–1893, Royal Institution, London): Using an illuminated dust-free optical chamber in the 1870s, physicist John Tyndall demonstrated airborne heat-resistant bacterial spores and lectured tirelessly to win sceptical British doctors over to Pasteur’s Germ Theory.",
+          "image_alt": "Nineteenth-century studio portrait photograph of physicist Professor John Tyndall FRS, defender of Louis Pasteur's Germ Theory in Britain"
         },
         {
           "act": 4,
@@ -20743,8 +20761,8 @@ export default {
           "text": "I applied to the War Office and to the Nightingale Fund to be sent out as a nurse to the Crimea, but was repeatedly rebuffed... Did these ladies shrink from accepting my aid because by blood and complexion I was of a darker caste? I resolved that if the authorities would not send me, I would go at my own expense. At Spring Hill, two miles from Sevastopol, I built the British Hotel. I had medicines and bandages continually ready. Many a time I attended poor fellows right upon the battlefield under fire, bandaging crushed limbs, staunching bleeding wounds, and administering warm broths and my own herbal cordials to soldiers dying of dysentery and cholera.",
           "enquiry_question": "How did Mary Seacole’s self-funded Crimean work (Source E) differ from Florence Nightingale’s, and why did Nightingale have the bigger long-term institutional impact in Britain?",
           "source_context": "Seacole possessed extensive experience treating cholera outbreaks in Panama and yellow fever in Jamaica before travelling to London. Her practical herbal medicines often proved more effective than the bleeding and calomel administered by army surgeons.",
-          "image": "/images/mary_seacole.jpg",
-          "src": "/images/mary_seacole.jpg",
+          "image": "/images/upgraded/gcse-med-eee/med_l3_3_mary_seacole_challen_1869.jpg",
+          "src": "/images/upgraded/gcse-med-eee/med_l3_3_mary_seacole_challen_1869.jpg",
           "source": "/images/mary_seacole.jpg",
           "question_type": "Change & Continuity"
         }
@@ -28020,7 +28038,11 @@ export default {
     },
     {
       "id": "lesson_4_3",
-      "banner": "/images/med_banner_kt4_3_nhs_1948_ward.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
+        "caption": "Uniformed Nurses in a Hospital Ward at St Bartholomew's Hospital, London",
+        "position": "center 28%"
+      },
       "banner_position": "center 28%",
       "title": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
       "specification_anchor": "Advances in medicines: magic bullets (Salvarsan 606, Prontosil); high-tech medical and surgical treatments; public health: the National Health Service (1948).",
@@ -29437,8 +29459,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/med_banner_kt4_3_nhs_1948_ward.jpg",
-      "card_image": "/images/med_banner_kt4_3_nhs_1948_ward.jpg",
+      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
       "card_position": "center 28%",
       "topic": "The National Health Service & Modern Surgery",
       "key_topic": "KT4: c1900–present: Medicine in Modern Britain",
@@ -29552,7 +29574,8 @@ export default {
             "Tax-funded British health service providing care free at the point of delivery."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg"
     },
     {
       "id": "lesson_4_4",
@@ -37139,7 +37162,11 @@ export default {
       "enquiry_question": "How did the Chain of Evacuation function as a race against time to save wounded soldiers from the battlefield to base hospital?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
-      "banner": "/images/stretcher_bearers_passchendaele.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg",
+        "caption": "Wounded Soldiers Arriving Along Duckboards at a Western Front Casualty Clearing Station",
+        "position": "center 35%"
+      },
       "banner_position": "center 35%",
       "hook_text": "When a soldier was struck down in the mud of No Man’s Land, his survival depended on a vast, integrated medical machine: the Chain of Evacuation. Operated by the Royal Army Medical Corps (RAMC) and heroic volunteers of the First Aid Nursing Yeomanry (FANY), this multi-stage system ferried casualties from the frontline firing line through Regimental Aid Posts, Advanced Dressing Stations, and Casualty Clearing Stations, back to coastal Base Hospitals. In a war where untreated wounds quickly succumbed to fatal gas gangrene, every hour saved in transit was the difference between life and death. How did the Chain of Evacuation function under intense shellfire to treat and transport wounded soldiers?",
       "teacher_notes": {
@@ -38567,8 +38594,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/stretcher_bearers_passchendaele.jpg",
-      "card_image": "/images/stretcher_bearers_passchendaele.jpg",
+      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg",
       "card_position": "center 35%",
       "topic": "The Chain of Evacuation: Bearers, RAP, ADS, CCS & Base Hospitals",
       "visual_story_sheet": {
@@ -38683,7 +38710,8 @@ export default {
             "Women’s corps who drove motor ambulances, ran mobile baths, and aided convoys."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg"
     },
     {
       "id": "lesson_5_5",
@@ -38985,8 +39013,9 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Despite their clinical brilliance, mobile radiographic units faced severe technical and operational challenges. Fragile equipment was difficult to operate in muddy field conditions, where **overheating glass X-ray tubes** forced operators to pause examinations after several scans to prevent tubes from cracking, severely restricting throughput during major industrial battle offensives with thousands of incoming wounded men arriving from trenches.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> Transporting **fragile radiographic equipment** over shell-pitted roads frequently shattered delicate glass photographic plates. Furthermore, long photographic exposure times created **screening delays under fire**, while X-rays could not depict non-metallic debris like soil, wood splinters, and muddy uniform cloth. Surgeons still had to rely on meticulous manual exploration during debridement to remove organic matter before infection took hold inside damaged muscle.</p>"
           ],
-          "image": "/images/mobile_xray_field_hospital_1917.jpg",
-          "caption": "Wartime radiological tent powered by a mobile X-ray lorry on the Western Front (c. 1915–17), positioning a wounded soldier over an X-ray tube to locate shrapnel."
+          "image": "/images/upgraded/gcse-med-eee/med_l5_5_mobile_xray_tent_hires.jpg",
+          "caption": "Wartime Radiological Tent on the Western Front (Service de Santé, 10e Armée, c. 1915–17, Missouri History Museum): Medical officers position a wounded soldier beneath an X-ray screen inside a field tent powered by the mobile radiological lorry parked alongside.",
+          "image_alt": "First World War archival photograph showing French 10th Army medical officers operating a mobile X-ray machine inside a dark canvas tent parked beside a Service de Santé radiological lorry"
         }
       ],
       "sources": [
@@ -40089,9 +40118,13 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt5_5_dressing_station.jpg",
-      "hero_image": "/images/med_banner_kt5_5_dressing_station.jpg",
-      "card_image": "/images/med_banner_kt5_5_dressing_station.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg",
+        "caption": "\"In the Operating Theatre\": 34th (1/1 West Lancashire) Casualty Clearing Hospital, Western Front",
+        "position": "center 65%"
+      },
+      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg",
       "card_position": "center 65%",
       "topic": "Surgical Breakthroughs: Debridement, Carrel-Dakin, Thomas Splint & X-Rays",
       "visual_story_sheet": {
@@ -40203,7 +40236,8 @@ export default {
             "Rigid iron leg frame applying steady traction so broken thigh bones stayed still."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg"
     },
     {
       "id": "lesson_5_6",
@@ -42900,8 +42934,8 @@ export default {
   "edition": "2026.1",
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "yearGroup": "Years 10–11",
-  "year_group": "Years 10–11",
+  "yearGroup": "GCSE (9–1)",
+  "year_group": "GCSE (9–1)",
   "guided_reading": [
     {
       "lesson_index": 20,

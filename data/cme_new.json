@@ -14,7 +14,7 @@
   "homepage_background": "/images/cme_cover.jpg",
   "enquiry": "Why has peace proved so elusive in the Middle East?",
   "category": "GCSE",
-  "yearGroup": "Years 10–11",
+  "yearGroup": "GCSE (9–1)",
   "desc": "Paper 2",
   "icon": "fa-dove",
   "color": "#0ea5e9",
@@ -1341,7 +1341,7 @@
           "desc": "Palestinian Arabs launch a general strike and nationwide rebellion. Britain crushes the revolt and subsequently issues the 1939 White Paper capping Jewish immigration to 75,000."
         }
       ],
-      "card_image": "/images/cme_allenby_jerusalem_1917.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
       "card_position": "center 20%",
       "workbook_stages": [
         {
@@ -1601,7 +1601,14 @@
             "British policy capping Jewish entry at 75,000 over 5 years to protect Arab oil ties."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
+        "caption": "Winston Churchill, Gertrude Bell, T. E. Lawrence, and British Mandate Officials at the 1921 Cairo Conference",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg"
     },
     {
       "id": "lesson_1",
@@ -3287,7 +3294,7 @@
           ]
         }
       },
-      "card_image": "/units/cme_new/assets/cme_david_ben_gurion__d597_087_.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg",
       "card_position": "center 20%",
       "workbook_stages": [
         {
@@ -3560,7 +3567,14 @@
             "Nov 1947 UN vote splitting Palestine into Jewish (55%) and Arab (45%) states."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg",
+        "caption": "British Mandate Soldiers Searching a Jewish Passenger Bus on the Road to Jerusalem",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg"
     },
     {
       "id": "lesson_2",
@@ -5154,7 +5168,7 @@
           "model_answer": "<ol><li><strong>Recall:</strong> Jerusalem, in 1935; his family left at the end of 1947 as fighting spread, and settled in Cairo.</li><li><strong>Explain:</strong> He links his family's lost home to the experience of the 700,000+ Palestinians who became refugees, so 1948 stands for the loss of home and homeland — the Nakba.</li><li><strong>Challenge:</strong> An Israeli refugee might describe 1948 as finally reaching safety and independence after the Holocaust — the War of Independence — showing how the same events created two opposite memories.</li></ol>"
         }
       ],
-      "card_image": "/images/cme_palestinian_refugees_1948.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg",
       "card_position": "center 25%",
       "workbook_stages": [
         {
@@ -5450,7 +5464,14 @@
             "Israeli law granting every Jewish person worldwide automatic right to citizenship."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg",
+        "caption": "Israeli Tracked Tractor Towing an Armoured Supply Truck Along the Emergency Burma Road to Besieged Jerusalem",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg"
     },
     {
       "id": "lesson_3",
@@ -6347,11 +6368,11 @@
           "id": "cme_l4_source_b",
           "letter": "B",
           "title": "Source B: Nasser with Nehru at Bandung (April 1955) and the Czech Arms Announcement (27 September 1955)",
-          "src": "/images/cme_nasser_nehru_bandung_1955.jpg",
-          "image": "/images/cme_nasser_nehru_bandung_1955.jpg",
+          "src": "/images/upgraded/gcse-cw-cme/cme_l3_srcb_bandung_conference_1955.jpg",
+          "image": "/images/upgraded/gcse-cw-cme/cme_l3_srcb_bandung_conference_1955.jpg",
           "source": "/images/cme_nasser_nehru_bandung_1955.jpg",
           "image_alt": "Gamal Abdel Nasser in a light suit talking with India's Prime Minister Jawaharlal Nehru at the Bandung Conference, April 1955",
-          "caption": "Nasser with India's Prime Minister Jawaharlal Nehru at the Asian–African Conference in Bandung, Indonesia, April 1955, where leaders of newly independent states promised to stay out of the Cold War blocs.",
+          "caption": "Nasser (left) alongside India's Prime Minister Jawaharlal Nehru (right, in white cap) at the Asian–African Conference in Bandung, Indonesia, April 1955, where leaders of newly independent states promised to stay out of the Cold War blocs.",
           "desc": "Photograph of Nasser and Nehru at Bandung, with a summary of Nasser's Czech arms announcement of September 1955.",
           "provenance": "Photograph, Bandung Conference, 17 April 1955 (public domain; via Wikimedia Commons). Extract: summary of Nasser's announcement of 27 September 1955.",
           "citation": "Public domain photograph, 1955.",
@@ -7051,7 +7072,7 @@
           "model_answer": "After the USA and Britain withdrew funding for the Aswan High Dam following Nasser’s Czech arms deal, Nasser nationalised the canal so shipping tolls would fund Egyptian modernisation. When US financial pressure and Soviet threats forced Britain, France, and Israel to withdraw, Nasser emerged politically triumphant—retaining the canal and ending British imperial dominance in the region."
         }
       ],
-      "card_image": "/images/cme_nasser_1956.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg",
       "card_position": "center 20%",
       "workbook_stages": [
         {
@@ -7351,7 +7372,14 @@
             "UN peacekeeping force placed in Sinai (1957–67) while reopening Tiran to Israel."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg",
+        "caption": "Israeli Infantry Digging Defensive Foxholes and Cleaning Rifles in the Sinai Desert During the Suez-Sinai War",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg"
     },
     {
       "id": "lesson_4",
@@ -7621,9 +7649,9 @@
               }
             }
           ],
-          "image": "/images/israel_national_water_carrier_1964_map.png",
-          "image_alt": "Map of Israel's National Water Carrier running from the Sea of Galilee south to the Negev Desert",
-          "caption": "Israel's National Water Carrier (1964): Engineering pipeline pumping fresh water from the Sea of Galilee (Lake Kinneret) to irrigate the southern Negev desert, triggering Arab attempts to divert the Jordan headwaters.",
+          "image": "/images/upgraded/gcse-cw-cme/cme_l4_national_water_carrier_pipeline_1964.jpg",
+          "image_alt": "Heavy earth-moving tractor and giant 108-inch concrete pipeline sections being laid for Israel's Jordan-Negev National Water Carrier, watched by local Arab villagers",
+          "caption": "Israel's National Water Carrier (completed 1964): Giant 108-inch pre-stressed concrete pipeline sections laid to pump fresh water from the Sea of Galilee (Lake Kinneret) south to irrigate the Negev desert, triggering Arab League attempts to divert the Jordan headwaters.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[2.1]</span> Fresh water was a critical strategic asset in the arid Middle East. In 1964, Israel completed its **National Water Carrier**, a major system of pipelines, canals, and pumping stations designed to pump fresh water from the **Sea of Galilee** to irrigate agricultural settlements and populate the southern Negev desert, dramatically strengthening the country’s agricultural output and economic security.\n\n<span class=\"para-ref\">[2.2]</span> Arab states condemned the project as an illegal diversion of shared international waters. In response, Syria and Jordan launched the **Headwater Diversion Plan** to redirect the River Jordan's northern tributaries away from Israeli territory. Between 1965 and 1966, Israeli tank artillery and air strikes bombed Syrian earth-moving construction equipment, destroying the diversion channels and making armed border skirmishes a routine occurrence."
         },
@@ -7795,11 +7823,11 @@
           "id": "cme_l5_source_a",
           "letter": "A",
           "title": "Source A: The PLO Charter and Prime Minister Eshkol on the Threats of 1964",
-          "src": "/images/cme_ahmad_shukeiri_1965.jpg",
-          "image": "/images/cme_ahmad_shukeiri_1965.jpg",
+          "src": "/images/upgraded/gcse-cw-cme/cme_l4_srca_ahmad_shukeiri_1965.jpg",
+          "image": "/images/upgraded/gcse-cw-cme/cme_l4_srca_ahmad_shukeiri_1965.jpg",
           "source": "/images/cme_ahmad_shukeiri_1965.jpg",
           "image_alt": "Black-and-white portrait of Ahmad Shukeiri, first chairman of the PLO, in a suit and tie, c. 1965.",
-          "caption": "Ahmad Shukeiri, the lawyer and diplomat who led the founding congress of the PLO in East Jerusalem in May 1964, photographed c. 1965.",
+          "caption": "Side A: Palestinian National Charter, adopted by the first Palestine National Council, East Jerusalem, 28 May 1964 (English translation). Side B: summary of Israeli government statements, 1964. Photo: PLO founding chairman Ahmad Shukeiri addressing a rally, 1965 (Wikimedia Commons, Public Domain).",
           "desc": "Paired written extracts: the 1964 Palestinian National Charter and a summary of Israeli Prime Minister Levi Eshkol's position on the Jordan waters.",
           "provenance": "Side A: Palestinian National Charter, adopted by the first Palestine National Council, East Jerusalem, 28 May 1964 (English translation). Side B: summary of Israeli government statements, 1964. Photo: Ahmad Shukeiri, c. 1965 (Wikimedia Commons, public domain).",
           "citation": "Palestinian National Charter (1964), Articles 1 and 17; Israeli government statements on the Jordan waters (1964).",
@@ -7828,7 +7856,7 @@
               "text": "Article 1: \"Palestine is an Arab homeland bound by strong Arab national ties to the rest of the Arab countries and which together form the great Arab homeland.\" Article 17: \"The partitioning of Palestine, which took place in 1947, and the establishment of Israel are illegal and null and void, regardless of the loss of time, because they were contrary to the will of the Palestinian people and its natural right to its homeland …\"",
               "text_type": "verbatim",
               "provenance": "Palestinian National Charter (1964), English translation; adopted by the first Palestine National Council, East Jerusalem.",
-              "image": "/images/cme_ahmad_shukeiri_1965.jpg"
+              "image": "/images/upgraded/gcse-cw-cme/cme_l4_srca_ahmad_shukeiri_1965.jpg"
             },
             "side_b": {
               "actor_badge": "Government of Israel",
@@ -8555,7 +8583,7 @@
         }
       ],
       "extra_videos": [],
-      "card_image": "/images/cme_cairo_summit_1964.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg",
       "card_position": "center 25%",
       "workbook_stages": [
         {
@@ -8876,7 +8904,14 @@
             "Huge IDF raid into the West Bank that pushed Jordan’s King Hussein toward war."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg",
+        "caption": "Tri-Border Strategic Panorama Looking North Across the Yarmouk Valley Toward the Sea of Galilee and the Golan Heights",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg"
     },
     {
       "id": "lesson_5",
@@ -10178,7 +10213,7 @@
         }
       ],
       "extra_videos": [],
-      "card_image": "/images/cme_six_day_war_airfield_1967.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg",
       "card_position": "center 30%",
       "workbook_stages": [
         {
@@ -10536,7 +10571,14 @@
             "Sinai, Gaza, West Bank, East Jerusalem, and Golan Heights seized in June 1967."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg",
+        "caption": "Israeli Armour of General Israel Tal’s Division Advancing Across Sinai Sand Dunes Near Rafah in the Six-Day War",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg"
     },
     {
       "id": "lesson_6",
@@ -11735,7 +11777,7 @@
         }
       ],
       "extra_videos": [],
-      "card_image": "/units/cme_new/assets/conquered_territories_1967.png",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg",
       "card_position": "center 30%",
       "workbook_stages": [
         {
@@ -12044,7 +12086,14 @@
             "Jewish communities built inside occupied lands, blocking easy land handbacks."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg",
+        "caption": "IDF Chief of Staff Yitzhak Rabin Delivering His Post-War Address at Mount Scopus Amphitheatre, East Jerusalem",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg"
     },
     {
       "id": "lesson_7",
@@ -13218,7 +13267,7 @@
         }
       ],
       "extra_videos": [],
-      "card_image": "/images/cme_munich_1972_balcony.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg",
       "card_position": "center 25%",
       "workbook_stages": [
         {
@@ -13544,7 +13593,14 @@
             "Mossad’s secret assassination campaign hunting those behind the Munich massacre."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg",
+        "caption": "Athletes and Concrete Residential Terraces Inside the Munich Olympic Village During the 1972 Summer Games",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg"
     },
     {
       "id": "lesson_8",
@@ -14801,7 +14857,7 @@
         }
       ],
       "extra_videos": [],
-      "card_image": "/units/cme_new/assets/yom_kippur_crossing.png",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
       "card_position": "center 30%",
       "workbook_stages": [
         {
@@ -15120,7 +15176,14 @@
             "1973 Arab oil cut against the USA that quadrupled global fuel prices."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
+        "caption": "IDF Tanks Crossing a Mobile Roller Pontoon Bridge Across the Suez Canal During the Yom Kippur War",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg"
     },
     {
       "id": "lesson_9",
@@ -16664,7 +16727,7 @@
           "model_answer": "<ol><li><strong>Recall:</strong> Exhausted by decades of war and economic crisis, Sadat wanted to recover the entire Sinai Peninsula, pivot Egypt toward American economic aid, and break the psychological barrier blocking direct talks.</li><li><strong>Explain:</strong> Begin agreed to withdraw Israeli troops, airbases, and civilian settlers (including Yamit) from 100% of the Sinai Peninsula; Sadat granted full diplomatic recognition to Israel, breaking unified Arab rejectionism.</li><li><strong>Challenge:</strong> Although Egypt and Israel never fought another war and neutralised Israel's largest Arab military rival, vague Camp David clauses on 'Palestinian autonomy' stalled immediately, Egypt was expelled from the Arab League, and Sadat was assassinated in 1981.</li></ol>"
         }
       ],
-      "card_image": "/images/cme_camp_david_1978.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg",
       "card_position": "center 20%",
       "workbook_stages": [
         {
@@ -16940,7 +17003,14 @@
             "March 1979 treaty trading all of Sinai for full Egyptian recognition of Israel."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg",
+        "caption": "Anwar Sadat, Jimmy Carter, Menachem Begin, and Moshe Dayan Visiting Gettysburg Battlefield During the Camp David Summit",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg"
     },
     {
       "id": "lesson_10",
@@ -18480,7 +18550,7 @@
           "model_answer": "<ol><li><strong>Recall:</strong> Hamas (the Islamic Resistance Movement).</li><li><strong>Explain:</strong> The Intifada proved that military occupation was eroding Israel's economy, straining the IDF, and alienating American public support. For Washington, the instability threatened regional Gulf alliances, forcing President George H.W. Bush and James Baker to convene the 1991 Madrid Peace Conference and pressure Israel into direct talks.</li><li><strong>Challenge:</strong> The Intifada forced Israel to recognize the PLO and sign the Oslo Accords, achieving the return of Arafat and the establishment of the Palestinian Authority. However, the rise of Hamas introduced a radical Islamist rejectionist faction that rejected any compromise with Israel, permanently splitting the Palestinian national movement between secular negotiators and armed Islamists.</li></ol>"
         }
       ],
-      "card_image": "/units/cme_new/assets/sharon_beirut_1982.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg",
       "card_position": "center 25%",
       "workbook_stages": [
         {
@@ -18812,7 +18882,14 @@
             "Militant Islamist group founded in Gaza opposing Israel and secular PLO talks."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg",
+        "caption": "US Marines Manning a Barbed-Wire Perimeter Post Overlooking Helicopters at Beirut International Airport, Lebanon",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg"
     },
     {
       "id": "lesson_11",
@@ -20462,7 +20539,7 @@
           "model_answer": "<ol><li><strong>Recall:</strong> Answers will depend on the extract chosen; in his writing of the period Said argued that Oslo left Israel in control of land, settlements, roads and water, and postponed the refugees and Jerusalem.</li><li><strong>Explain:</strong> Said's concern about Palestinian areas being cut off from each other matches the scattered Areas A and B surrounded by Israeli-controlled Area C.</li><li><strong>Challenge:</strong> Supporters argued that Oslo was an interim, step-by-step process: Palestinians gained self-rule and recognition at once, and harder issues could be settled once trust had been built.</li></ol>"
         }
       ],
-      "card_image": "/images/cme_oslo_handshake_1993.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg",
       "card_position": "center 20%",
       "workbook_stages": [
         {
@@ -20758,7 +20835,14 @@
             "Postponed core disputes: Jerusalem, refugees, borders, and settlements."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg",
+        "caption": "President Bill Clinton Addressing the South Lawn Ceremony with Yitzhak Rabin, Shimon Peres, and Yasser Arafat at the Oslo Accords Signing",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg"
     }
   ],
   "exam_blocks": [
@@ -23279,5 +23363,5 @@
   "edition": "2026.1",
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "year_group": "Years 10–11"
+  "year_group": "GCSE (9–1)"
 }

@@ -57,9 +57,10 @@ export function renderDashboard() {
         <div class="unified-course-filter-group" style="display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap;">
           <button type="button" class="course-filter-pill active" data-filter="all" style="background: #0f172a; color: #ffffff; border: 1px solid #0f172a; border-radius: 7px; padding: 5px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">All Courses</button>
           <button type="button" class="course-filter-pill" data-filter="ks2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">KS2</button>
-          <button type="button" class="course-filter-pill" data-filter="y7" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Year 7</button>
-          <button type="button" class="course-filter-pill" data-filter="y8" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Year 8</button>
-          <button type="button" class="course-filter-pill" data-filter="y9" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">Year 9</button>
+          <button type="button" class="course-filter-pill" data-filter="ks3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">KS3 All</button>
+          <button type="button" class="course-filter-pill" data-filter="ks3-early" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">KS3: Medieval &amp; Tudors</button>
+          <button type="button" class="course-filter-pill" data-filter="ks3-empire" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">KS3: Empire &amp; Industry</button>
+          <button type="button" class="course-filter-pill" data-filter="ks3-modern" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">KS3: Modern World</button>
           <button type="button" class="course-filter-pill" data-filter="p1" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 1</button>
           <button type="button" class="course-filter-pill" data-filter="p2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 2</button>
           <button type="button" class="course-filter-pill" data-filter="p3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 3</button>
@@ -77,20 +78,20 @@ export function renderDashboard() {
       return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
     });
 
-  // KS3 Grouping (All 12 Units: Year 7, Year 8, Year 9)
+  // KS3 Grouping (All 12 Units — Period-Band Agnostic for Flexible 2-Year or 3-Year School Adoption)
   const ks3Meta = {
-    water_and_sanitation: { year: 7, stage: 'ks3', stageLabel: 'Year 7 • KS3' },
-    medieval_england: { year: 7, stage: 'ks3', stageLabel: 'Year 7 • KS3' },
-    monarchy_religion_power: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
-    first_british_empire: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
-    industrialisation_and_empire: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
-    second_british_empire: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
-    australia: { year: 8, stage: 'ks3', stageLabel: 'Year 8 • KS3' },
-    great_war: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
-    great_war_part2: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
-    the_shoah: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
-    cold_war: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
-    post_war_britain: { year: 9, stage: 'ks3', stageLabel: 'Year 9 • KS3' },
+    water_and_sanitation: { year: 7, eraGroup: 'ks3-early', stage: 'ks3', eraBadge: 'KS3 • Thematic', stageLabel: 'KS3 • Thematic Study' },
+    medieval_england: { year: 7, eraGroup: 'ks3-early', stage: 'ks3', eraBadge: 'KS3 • Medieval', stageLabel: 'KS3 • Medieval' },
+    monarchy_religion_power: { year: 8, eraGroup: 'ks3-early', stage: 'ks3', eraBadge: 'KS3 • Early Modern', stageLabel: 'KS3 • Early Modern' },
+    first_british_empire: { year: 8, eraGroup: 'ks3-empire', stage: 'ks3', eraBadge: 'KS3 • Global & Empire', stageLabel: 'KS3 • Global & Empire' },
+    industrialisation_and_empire: { year: 8, eraGroup: 'ks3-empire', stage: 'ks3', eraBadge: 'KS3 • Industry & Reform', stageLabel: 'KS3 • Industry & Reform' },
+    second_british_empire: { year: 8, eraGroup: 'ks3-empire', stage: 'ks3', eraBadge: 'KS3 • Global & Empire', stageLabel: 'KS3 • Global & Empire' },
+    australia: { year: 8, eraGroup: 'ks3-empire', stage: 'ks3', eraBadge: 'KS3 • World Study', stageLabel: 'KS3 • World Study' },
+    great_war: { year: 9, eraGroup: 'ks3-modern', stage: 'ks3', eraBadge: 'KS3 • Modern World', stageLabel: 'KS3 • Modern World' },
+    great_war_part2: { year: 9, eraGroup: 'ks3-modern', stage: 'ks3', eraBadge: 'KS3 • Modern World', stageLabel: 'KS3 • Modern World' },
+    the_shoah: { year: 9, eraGroup: 'ks3-modern', stage: 'ks3', eraBadge: 'KS3 • Holocaust Study', stageLabel: 'KS3 • Holocaust Study' },
+    cold_war: { year: 9, eraGroup: 'ks3-modern', stage: 'ks3', eraBadge: 'KS3 • Modern World', stageLabel: 'KS3 • Modern World' },
+    post_war_britain: { year: 9, eraGroup: 'ks3-modern', stage: 'ks3', eraBadge: 'KS3 • Modern Britain', stageLabel: 'KS3 • Modern Britain' },
   };
   const ks3Order = Object.keys(ks3Meta);
   const ks3Units = units
@@ -172,7 +173,7 @@ export function renderDashboard() {
     const isGcse = meta.stage === 'gcse';
     const badgeText = isGcse
       ? (meta.paperBadge || 'Edexcel Paper')
-      : `Year ${meta.year}`;
+      : (meta.eraBadge || meta.stageLabel || 'Key Stage 3');
 
     const imgLoadingAttr = meta.stage === 'gcse' || index >= 6 ? ' loading="lazy" decoding="async"' : ' decoding="async"';
     const cardImgHtml = imageUrl
@@ -185,7 +186,7 @@ export function renderDashboard() {
       : `<div class="module-card-img" style="height: 130px; background: var(--primary); margin: -12px -12px 10px -12px;"></div>`;
 
     return `
-      <div class="module-card ${isUnlocked ? '' : 'locked'}" data-year="${meta.year || ''}" data-paper="${meta.paper || ''}" data-stage="${meta.stage}" style="animation-delay: ${index * 0.04}s; cursor: pointer; position: relative; ${isGcse ? 'border-top: 3.5px solid #f59e0b;' : 'border-top: 3.5px solid #2563eb;'}" data-action="launch-subapp" data-unit="${unit.id}">
+      <div class="module-card ${isUnlocked ? '' : 'locked'}" data-year="${meta.year || ''}" data-era="${meta.eraGroup || ''}" data-paper="${meta.paper || ''}" data-stage="${meta.stage}" style="animation-delay: ${index * 0.04}s; cursor: pointer; position: relative; ${isGcse ? 'border-top: 3.5px solid #f59e0b;' : 'border-top: 3.5px solid #2563eb;'}" data-action="launch-subapp" data-unit="${unit.id}">
         <span style="position: absolute; top: 7px; left: 7px; z-index: 10; background: ${isGcse ? 'rgba(180, 83, 9, 0.92)' : 'rgba(30, 58, 138, 0.92)'}; color: #ffffff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.25); backdrop-filter: blur(4px);">
           ${badgeText}
         </span>
@@ -315,7 +316,7 @@ export function renderDashboard() {
           <div style="display: flex; align-items: center; gap: 10px;">
             <span style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Key Stage 3</span>
             <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
-              Medieval to Modern World (Years 7–9)
+              Medieval, Early Modern &amp; Modern World
             </h3>
           </div>
           <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">12 Curriculum Units</span>
@@ -492,12 +493,27 @@ function attachDashboardStageFilter(container) {
       ks2Blocks.forEach((el) => (el.style.display = ''));
       ks3Blocks.forEach((el) => (el.style.display = 'none'));
       gcseBlocks.forEach((el) => (el.style.display = 'none'));
-    } else if (mode === 'y7' || mode === 'y8' || mode === 'y9' || mode === 'ks3') {
-      const yr = mode === 'ks3' ? 'all' : mode.slice(1);
+    } else if (
+      mode === 'ks3' ||
+      mode === 'ks3-early' ||
+      mode === 'ks3-empire' ||
+      mode === 'ks3-modern' ||
+      mode === 'y7' ||
+      mode === 'y8' ||
+      mode === 'y9'
+    ) {
+      const legacyMap = { y7: 'ks3-early', y8: 'ks3-empire', y9: 'ks3-modern' };
+      const normalizedMode = legacyMap[mode] || mode;
       ks2Blocks.forEach((el) => (el.style.display = 'none'));
       ks3Blocks.forEach((el) => (el.style.display = ''));
       gcseBlocks.forEach((el) => (el.style.display = 'none'));
-      ks3Cards.forEach((c) => (c.style.display = yr === 'all' || c.dataset.year === yr ? '' : 'none'));
+      ks3Cards.forEach((c) => {
+        const show =
+          normalizedMode === 'ks3' ||
+          c.dataset.era === normalizedMode ||
+          (mode.startsWith('y') && c.dataset.year === mode.slice(1));
+        c.style.display = show ? '' : 'none';
+      });
     } else if (mode === 'p1' || mode === 'p2' || mode === 'p3' || mode === 'gcse') {
       const pNum = mode === 'gcse' ? 'all' : mode.slice(1);
       ks2Blocks.forEach((el) => (el.style.display = 'none'));

@@ -17,7 +17,7 @@
   "description": "From 65,000 years of continuous First Nations custodianship and Captain Cook’s voyage to the First Fleet, frontier wars, convict labour, the Gold Rush, and Aboriginal resistance, investigate how colonisation built modern Australia through dispossession and struggle.",
   "cover_image_position": "center 30%",
   "is_ks3": true,
-  "year_group": "Year 8",
+  "year_group": "Key Stage 3",
   "timeline": [
     {
       "year": "1770",
@@ -303,12 +303,12 @@
       "enquiry": "Why did the British Empire claim eastern Australia and declare it terra nullius between 1768 and 1788?",
       "subtitle": "From Polynesian Star Navigation to the Imperial Fiction of ‘Nobody’s Land’",
       "skill": "Causation & Motive",
-      "card_image": "/images/james_cook.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/aus_l1_banner_cook_landing_botany_bay_1770.jpg",
       "card_position": "center 15%",
       "banner": {
-        "image": "/images/botany_bay_map.jpg",
-        "alt": "Engraved nautical chart of Botany Bay in New South Wales surveyed by Captain James Cook and Joseph Banks in 1770.",
-        "caption": "J. Gibson & T. Bowen, \"Botany Bay in New South Wales\" (1770): The official hydrographic chart produced from Captain James Cook's survey aboard HMS Endeavour, showing soundings and coastal anchorages."
+        "image": "/images/upgraded/ks3-empire-gw/aus_l1_banner_cook_landing_botany_bay_1770.jpg",
+        "caption": "Landing of Lieutenant James Cook at Botany Bay, 29 April 1770",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -906,9 +906,9 @@
           "act": 4,
           "title": "Possession Island & The Royal Claim (August 1770)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Cook surveyed the eastern coastline for four months, navigating dangerous coral reefs along the Queensland coast. In August 1770, Cook landed on a rocky Torres Strait island off Cape York that he named Possession Island.</p><p class=\"prose-p\">In full naval uniform, Cook hoisted the Union Jack flag and fired three volleys of musketry to formalise his New South Wales claim for King George III. In doing so, Cook violated his explicit Admiralty instructions, which strictly ordered him to take possession of new territories only with the consent of the native population.</p>",
-          "image": "/images/botany_parkinson.jpg",
-          "image_alt": "Botanical illustration of Acacia Cunninghamii collected by Joseph Banks and Daniel Solander at Botany Bay in April 1770.",
-          "caption": "Botanical engraving of Acacia Cunninghamii: Over 30,000 plant specimens were gathered at Botany Bay by naturalists Joseph Banks and Daniel Solander aboard HMS Endeavour, prompting Cook to name the bay Botany Bay.",
+          "image": "/images/upgraded/ks3-empire-gw/aus_l1_blk3_banksia_serrata_parkinson_1773.jpg",
+          "image_alt": "Watercolour botanical plate of Banksia serrata from Banks' Florilegium (1773), based on Sydney Parkinson's sketch gathered at Botany Bay aboard HMS Endeavour in April 1770.",
+          "caption": "Watercolour of Banksia serrata from Banks’ Florilegium (1773, after Sydney Parkinson): Over 30,000 plant specimens were gathered at Botany Bay by naturalists Joseph Banks and Daniel Solander aboard HMS Endeavour before Cook sailed north to claim eastern Australia at Possession Island.",
           "source": {
             "letter": "D",
             "title": "Source D (Visual Record): Manuscript Journal of Lieutenant James Cook Claiming New South Wales (22 August 1770)",
@@ -1924,7 +1924,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Sent into the Pacific by the British [Admiralty] in 1768, James Cook relied on Tahitian high priest and master navigator [Tupaia] to chart Polynesian islands before reaching eastern Australia in April 1770. Although Aboriginal nations had practised 65,000 years of [Sovereignty] and sacred [Custodianship] over Country, Britain used the false legal claim of [Terra Nullius] to justify colonial [Dispossession]."
+      "vocab_cloze_text": "Sent into the Pacific by the British [Admiralty] in 1768, James Cook relied on Tahitian high priest and master navigator [Tupaia] to chart Polynesian islands before reaching eastern Australia in April 1770. Although Aboriginal nations had practised 65,000 years of [Sovereignty] and sacred [Custodianship] over Country, Britain used the false legal claim of [Terra Nullius] to justify colonial [Dispossession].",
+      "banner_image": "/images/upgraded/ks3-empire-gw/aus_l1_banner_cook_landing_botany_bay_1770.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/aus_l1_banner_cook_landing_botany_bay_1770.jpg"
     },
     {
       "id": "lesson_2",
@@ -1932,12 +1934,12 @@
       "enquiry": "Whose story do we tell about the founding of the first British penal colony in Australia?",
       "subtitle": "From Thames Prison Hulks to the Struggle for Survival at Sydney Cove",
       "skill": "Source Utility & Perspective",
-      "card_image": "/images/prison_hulks.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/aus_l2_banner_first_fleet_port_jackson_1788.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/first_fleet_botany_bay_1788.jpg",
-        "alt": "William Bradley watercolor of HMS Sirius and First Fleet transports entering Botany Bay on 21 January 1788.",
-        "caption": "William Bradley, \"Botany Bay: Sirius and Convoy going in\" (21 January 1788): The arrival of the 11 vessels of the First Fleet carrying over 1,400 people to establish Britain's first Australian penal settlement (State Library of NSW)."
+        "image": "/images/upgraded/ks3-empire-gw/aus_l2_banner_first_fleet_port_jackson_1788.jpg",
+        "caption": "Entrance of Port Jackson (First Fleet Entering Sydney Heads, 26 January 1788)",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -3557,7 +3559,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Under Britain’s harsh [Bloody Code], losing the American colonies left thousands of prisoners crowded inside rotting Thames [Prison Hulk] vessels until Parliament ordered [Transportation] to New South Wales. Arriving at Sydney Cove in January 1788, Governor Phillip’s penal settlement endured near-famine on strict [Rations] and harsh [Cat-o'-Nine-Tails] floggings, though freed convicts could later farm land as a pardoned [Emancipist]."
+      "vocab_cloze_text": "Under Britain’s harsh [Bloody Code], losing the American colonies left thousands of prisoners crowded inside rotting Thames [Prison Hulk] vessels until Parliament ordered [Transportation] to New South Wales. Arriving at Sydney Cove in January 1788, Governor Phillip’s penal settlement endured near-famine on strict [Rations] and harsh [Cat-o'-Nine-Tails] floggings, though freed convicts could later farm land as a pardoned [Emancipist].",
+      "banner_image": "/images/upgraded/ks3-empire-gw/aus_l2_banner_first_fleet_port_jackson_1788.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/aus_l2_banner_first_fleet_port_jackson_1788.jpg"
     },
     {
       "id": "lesson_3",
@@ -3565,12 +3569,12 @@
       "enquiry": "Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?",
       "subtitle": "The Collapse of ‘Amity’ into Demographic Catastrophe and Armed Guerrilla Warfare",
       "skill": "Causation & Turning Points",
-      "card_image": "/images/pemulwuy.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/aus_l3_banner_nepean_river_lycett_1825.jpg",
       "card_position": "center 15%",
       "banner": {
-        "image": "/images/sydney_cove_1792.jpg",
-        "alt": "Port Jackson Painter watercolor of Sydney Cove in 1792 showing the cleared settlement and an Aboriginal canoe in the foreground.",
-        "caption": "Attributed to the Port Jackson Painter, \"View of Sydney Cove\" (1792): The rapid expansion of colonial huts and brickfields along the harbour, with Eora people fishing in a bark canoe in the foreground (Natural History Museum, London)."
+        "image": "/images/upgraded/ks3-empire-gw/aus_l3_banner_nepean_river_lycett_1825.jpg",
+        "caption": "View upon the Nepean, New South Wales",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -5175,7 +5179,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "For millennia, First Nations clans cared for Country along sacred [Songlines] of [Custodianship]. Just over a year after the First Fleet landed, a devastating 1789 smallpox [Epidemic] killed half of Sydney’s Eora population and accelerated colonial [Dispossession]. While Wangal man Bennelong served reluctantly as diplomatic [Intermediary], Bidjigal elder Pemulwuy waged twelve years of [Guerrilla Warfare] defending Bidjigal and Darug lands."
+      "vocab_cloze_text": "For millennia, First Nations clans cared for Country along sacred [Songlines] of [Custodianship]. Just over a year after the First Fleet landed, a devastating 1789 smallpox [Epidemic] killed half of Sydney’s Eora population and accelerated colonial [Dispossession]. While Wangal man Bennelong served reluctantly as diplomatic [Intermediary], Bidjigal elder Pemulwuy waged twelve years of [Guerrilla Warfare] defending Bidjigal and Darug lands.",
+      "banner_image": "/images/upgraded/ks3-empire-gw/aus_l3_banner_nepean_river_lycett_1825.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/aus_l3_banner_nepean_river_lycett_1825.jpg"
     },
     {
       "id": "lesson_4",
@@ -5183,12 +5189,12 @@
       "enquiry": "How did pastoral expansion and frontier conflict transform colonial Australia?",
       "subtitle": "Van Diemen’s Land, The Merino Wool Boom & The Myall Creek Reckoning",
       "skill": "Historical Interpretations",
-      "card_image": "/images/ballarat_gold.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/aus_l4_banner_glover_river_nile_1837.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/tasmania_black_war_frontier_1830.jpg",
-        "alt": "John Glover's 1837 oil painting showing Tasmanian Aboriginal people on the banks of the River Nile in Van Diemen's Land.",
-        "caption": "John Glover, \"The River Nile, Van Diemen's Land, from Mr Glover's Farm\" (1837): Depicts Tasmanian Aboriginal people on country along the riverbank as British pastoral sheep runs rapidly enclosed and dispossessed the island (National Gallery of Victoria)."
+        "image": "/images/upgraded/ks3-empire-gw/aus_l4_banner_glover_river_nile_1837.jpg",
+        "caption": "The River Nile, Van Diemen's Land, from Mr Glover's Farm",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -5806,9 +5812,9 @@
             "src": "",
             "image": ""
           },
-          "image": "/images/john_macarthur.jpg",
-          "image_alt": "Portrait of John Macarthur in a black coat and yellow waistcoat, colonial merino wool pioneer.",
-          "caption": "Portrait of John Macarthur: Pastoral squatters seized tens of millions of acres of fertile grasslands across New South Wales and Victoria for merino sheep grazing, violently displacing First Nations clans from ancestral hunting grounds.",
+          "image": "/images/upgraded/ks3-empire-gw/aus_l4_blk3_macarthur_estate_parramatta_lycett.jpg",
+          "image_alt": "Joseph Lycett hand-coloured aquatint showing wool pioneer John Macarthur's pastoral estate and cleared grazing hills near Parramatta, New South Wales (c. 1824).",
+          "caption": "Joseph Lycett, \"Residence of John Macarthur Esq. near Parramatta, N.S.W.\" (c. 1824): Wealthy colonial pastoralists pushed vast Merino sheep flocks across millions of acres of fertile grasslands in New South Wales and Victoria, fencing waterholes and dispossessing First Nations clans.",
           "sources": [
             {
               "letter": "D",
@@ -6790,7 +6796,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Across Tasmania and mainland pastures, booming sheep [Pastoralism] drove wealthy [Squatter] settlers onto Indigenous hunting grounds, sparking bitter [Frontier War] clashes. In Van Diemen’s Land, Governor Arthur declared [Martial Law] in 1828 before forcing surviving Palawa families into [Exile] on Flinders Island. On the mainland, rare colonial justice followed the 1838 Myall Creek [Massacre] when seven perpetrators were hanged."
+      "vocab_cloze_text": "Across Tasmania and mainland pastures, booming sheep [Pastoralism] drove wealthy [Squatter] settlers onto Indigenous hunting grounds, sparking bitter [Frontier War] clashes. In Van Diemen’s Land, Governor Arthur declared [Martial Law] in 1828 before forcing surviving Palawa families into [Exile] on Flinders Island. On the mainland, rare colonial justice followed the 1838 Myall Creek [Massacre] when seven perpetrators were hanged.",
+      "banner_image": "/images/upgraded/ks3-empire-gw/aus_l4_banner_glover_river_nile_1837.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/aus_l4_banner_glover_river_nile_1837.jpg"
     },
     {
       "id": "lesson_5",
@@ -6798,12 +6806,12 @@
       "enquiry": "How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?",
       "subtitle": "Ballarat Diggers, The Southern Cross & The Enduring Struggle for First Nations Rights",
       "skill": "Historical Significance",
-      "card_image": "/images/aus_gold_rush.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/aus_l5_banner_eureka_stockade_1854_henderson.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/ballarat_gold.jpg",
-        "alt": "Eugene von Guerard landscape painting of Ballarat tent city during the 1853-1854 Victorian gold rush.",
-        "caption": "Eugene von Guérard, \"Ballarat in the Summer of 1853–54\": The canvas tent city of gold diggers spreading across the hills with Mount Buninyong in the distance (National Gallery of Victoria)."
+        "image": "/images/upgraded/ks3-empire-gw/aus_l5_banner_eureka_stockade_1854_henderson.jpg",
+        "caption": "Eureka Stockade Riot, Ballarat, 3 December 1854",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -7919,14 +7927,14 @@
         },
         {
           "letter": "E",
-          "title": "Source E (Visual Record): Aborigines Progressive Association, Day of Mourning & Protest Manifesto (26 January 1938)",
+          "title": "Source E (Visual Record): Aborigines Progressive Association, Day of Mourning & Protest at the Australian Hall (26 January 1938)",
           "type": "visual",
-          "src": "/images/aus_day_of_mourning.jpg",
-          "image": "/images/aus_day_of_mourning.jpg",
+          "src": "/images/upgraded/ks3-empire-gw/aus_l5_srce_day_of_mourning_hall_1938.jpg",
+          "image": "/images/upgraded/ks3-empire-gw/aus_l5_srce_day_of_mourning_hall_1938.jpg",
           "author": "Jack Patten (President) and William Ferguson (Organising Secretary)",
           "date": "26 January 1938",
           "format": "visual",
-          "caption": "Official printed resolution flyer for the 150th Anniversary Day of Mourning & Protest, held at the Australian Hall in Sydney on 26 January 1938 by the Aborigines Progressive Association (Mitchell Library, State Library of NSW).",
+          "caption": "Aborigines Progressive Association leaders Jack Patten and William Ferguson with delegates and children outside the Australian Hall in Sydney on 26 January 1938, wearing \"Aborigines Claim Citizen Rights!\" placards beside the Day of Mourning conference noticeboard (Mitchell Library, State Library of NSW, Q 059/9).",
           "context": "On Australia's 150th anniversary, while official reenactments celebrated Governor Phillip's landing, First Nations leaders Jack Patten and William Ferguson held a counter-conference declaring 26 January a national Day of Mourning. **Hinge Question:** Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?",
           "hinge_question": "Why did Indigenous leaders choose the 150th anniversary of the First Fleet to launch their political campaign for constitutional equality?",
           "model_answer": "The 1938 Day of Mourning resolution marked a turning point in First Nations political resistance, confronting the celebratory myth of British settlement with the reality of 150 years of dispossession and demanding equal human rights.",
@@ -8421,13 +8429,15 @@
           ]
         ]
       },
-      "vocab_cloze_text": "The 1851 Victorian [Gold Rush] trebled Australia’s population and sparked the 1854 [Eureka Stockade] rebellion at Ballarat, helping win male [Suffrage] in colonial parliaments. Yet anti-Chinese racism culminated at Federation in 1901 in the discriminatory [White Australia Policy], while Indigenous families suffered child removals creating the [Stolen Generations] until the 1992 Mabo ruling recognised [Native Title]."
+      "vocab_cloze_text": "The 1851 Victorian [Gold Rush] trebled Australia’s population and sparked the 1854 [Eureka Stockade] rebellion at Ballarat, helping win male [Suffrage] in colonial parliaments. Yet anti-Chinese racism culminated at Federation in 1901 in the discriminatory [White Australia Policy], while Indigenous families suffered child removals creating the [Stolen Generations] until the 1992 Mabo ruling recognised [Native Title].",
+      "banner_image": "/images/upgraded/ks3-empire-gw/aus_l5_banner_eureka_stockade_1854_henderson.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/aus_l5_banner_eureka_stockade_1854_henderson.jpg"
     }
   ],
   "edition": "2026.1",
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 8",
+  "yearGroup": "Key Stage 3",
   "category": "KS3",
   "key_individuals": [
     {

@@ -15,7 +15,7 @@
 export const SCHEMES_OF_WORK_DATA = {
   "medieval_england": {
     "unitId": "medieval_england",
-    "yearGroup": "Year 7",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "Medieval England & The Struggle for Power (1066–1381)",
     "subtitle": "Conquest, Feudal Control, Crown vs Church, Demography & Popular Revolt",
@@ -112,7 +112,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "water_and_sanitation": {
     "unitId": "water_and_sanitation",
-    "yearGroup": "Year 7",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "Water & Sanitation Through Time (c. 43–Present)",
     "subtitle": "Public Health, Civil Infrastructure, Urban Growth & Scientific Epidemiology",
@@ -226,7 +226,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "monarchy_religion_power": {
     "unitId": "monarchy_religion_power",
-    "yearGroup": "Year 8",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "Crown, Church & Parliament (1517–1689)",
     "subtitle": "Reformation, Via Media, Spanish Armada, Civil War, Regicide & Constitutional Monarchy",
@@ -323,7 +323,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "first_british_empire": {
     "unitId": "first_british_empire",
-    "yearGroup": "Year 8",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "The First British Empire (1600–1783)",
     "subtitle": "Chartered Monopolies, Mughal Bengal, The Transatlantic Slave Trade, Maroon Resistance & The American Revolution",
@@ -420,7 +420,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "industrialisation_and_empire": {
     "unitId": "industrialisation_and_empire",
-    "yearGroup": "Year 8",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "The Industrial Revolution (1750–1900)",
     "subtitle": "Steam Power, Funtley Ironworks, The Factory System, Urban Sanitation, Chartism & The Expansion of Democracy",
@@ -517,7 +517,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "second_british_empire": {
     "unitId": "second_british_empire",
-    "yearGroup": "Year 8",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "The Second British Empire (1783–1914)",
     "subtitle": "Naval Supremacy, Portsmouth Royal Dockyard, De-industrialisation of India, The 1857 Rebellion, The Scramble for Africa & The Drain of Wealth",
@@ -614,7 +614,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "australia": {
     "unitId": "australia",
-    "yearGroup": "Year 8",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "Invasion & Survival in Australia (1770–1901)",
     "subtitle": "65,000 Years of Custodianship, Captain Cook, The First Fleet, Frontier Wars, Convict Transportation, Eureka Stockade & Federation",
@@ -711,7 +711,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "great_war": {
     "unitId": "great_war",
-    "yearGroup": "Year 9",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "Causes of the Great War (1871–1914)",
     "subtitle": "German Unification, Imperial Rivalry, Naval Arms Race, Alliance Systems & The July Crisis",
@@ -825,7 +825,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "great_war_part2": {
     "unitId": "great_war_part2",
-    "yearGroup": "Year 9",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "The Great War (1914–1919)",
     "subtitle": "Industrialized Slaughter, Trench Warfare, The Global Front, Home Front Mobilization & The Versailles Settlement",
@@ -923,7 +923,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "the_shoah": {
     "unitId": "the_shoah",
-    "yearGroup": "Year 9",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "The Shoah: Systematic Persecution & The Holocaust (1933–1945)",
     "subtitle": "Pre-War Life, Racial Antisemitism, Ghettos, Einsatzgruppen, Extermination Camps & Resistance",
@@ -1054,7 +1054,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "cold_war": {
     "unitId": "cold_war",
-    "yearGroup": "Year 9",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "The Cold War & Global Flashpoints (1945–1991)",
     "subtitle": "Superpower Rivalry, Nuclear Brinkmanship, Proxy Wars, Ideological Conflict & The Collapse of the Soviet Union",
@@ -1185,7 +1185,7 @@ export const SCHEMES_OF_WORK_DATA = {
   },
   "post_war_britain": {
     "unitId": "post_war_britain",
-    "yearGroup": "Year 9",
+    "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
     "title": "Rights, Protest & Modern Britain (1900–1991)",
     "subtitle": "Women’s Suffrage, The Welfare State & NHS, The Windrush Generation, The 1963 Bristol Bus Boycott & Cold War Culture",

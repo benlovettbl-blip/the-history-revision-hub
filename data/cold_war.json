@@ -312,7 +312,7 @@
       "id": "lesson_1",
       "title": "Ideological Clash: Why could Capitalism and Communism never peacefully coexist?",
       "enquiryQuestion": "Why did irreconcilable economic and political philosophies make conflict between the USA and USSR inevitable after 1945?",
-      "card_image": "/images/cold_war_jfk_khrushchev_1961.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg",
       "card_position": "center 25%",
       "prologue": "In 1945, the defeat of Nazi Germany left two superpowers dominating the globe: capitalist America and communist Russia. Washington championed democracy, free markets, and individual liberty; Moscow demanded classless socialism and state control. Why was genuine, lasting peace between these two irreconcilable political ideologies impossible from the very beginning?",
       "do_now": {
@@ -2092,13 +2092,20 @@
           }
         }
       },
-      "vocab_cloze_text": "Once Nazi Germany surrendered in 1945, conflicting systems of [Ideology] shattered wartime unity. American free-market [Capitalism] and multi-party elections clashed directly with Soviet [Communism], which claimed to rule in the name of the industrial [Proletariat]. Convinced peaceful [Coexistence] with Stalin was impossible after 1946, Washington adopted George Kennan’s strategy of [Containment]."
+      "vocab_cloze_text": "Once Nazi Germany surrendered in 1945, conflicting systems of [Ideology] shattered wartime unity. American free-market [Capitalism] and multi-party elections clashed directly with Soviet [Communism], which claimed to rule in the name of the industrial [Proletariat]. Convinced peaceful [Coexistence] with Stalin was impossible after 1946, Washington adopted George Kennan’s strategy of [Containment].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg",
+        "caption": "American and Soviet Officers Embracing at Torgau on Elbe Day ('East Meets West')",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg"
     },
     {
       "id": "lesson_2",
       "title": "Yalta to Potsdam (1945): How did wartime allies become bitter rivals?",
       "enquiryQuestion": "Why did the collaborative diplomacy of Yalta collapse into open suspicion and division at Potsdam within five months?",
-      "card_image": "/images/yalta_conference_1945.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg",
       "card_position": "center 30%",
       "prologue": "In early 1945, Churchill, Roosevelt, and Stalin met at Yalta, smiling for cameras as they carved up postwar Europe. But by the Potsdam conference in July, mistrust was toxic. With the American atomic bomb revealed and Soviet armies occupying Poland, the Grand Alliance fractured. How did wartime allies become bitter rivals?",
       "do_now": {
@@ -3875,13 +3882,20 @@
           }
         }
       },
-      "vocab_cloze_text": "In February 1945, the wartime [Grand Alliance] met at Yalta and promised liberated Europeans democratic [Self-Determination], though Stalin demanded a friendly Eastern European [Buffer Zone] blocking future invasions. By the July 1945 Potsdam summit, bitter clashes over German [Reparations], rival [Spheres of Influence], and America’s brief [Atomic Monopoly] turned former allies into open rivals."
+      "vocab_cloze_text": "In February 1945, the wartime [Grand Alliance] met at Yalta and promised liberated Europeans democratic [Self-Determination], though Stalin demanded a friendly Eastern European [Buffer Zone] blocking future invasions. By the July 1945 Potsdam summit, bitter clashes over German [Reparations], rival [Spheres of Influence], and America’s brief [Atomic Monopoly] turned former allies into open rivals.",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg",
+        "caption": "Allied Delegations Seated Around the Conference Table at Cecilienhof Palace, Potsdam",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg"
     },
     {
       "id": "lesson_3",
       "title": "The Iron Curtain & The Berlin Blockade (1948–1949): The first flashpoint.",
       "enquiryQuestion": "How did Western containment and Stalin's land blockade of Berlin in 1948 cement the permanent division of Europe into armed blocs?",
-      "card_image": "/images/berlin_airlift_c54_tempelhof.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg",
       "card_position": "center center",
       "prologue": "In 1946, Churchill warned that an 'Iron Curtain' had descended across Europe. In 1948, Stalin severed all road and rail access to West Berlin, attempting to starve the Allied enclave into submission. Western pilots responded with the heroic Berlin Airlift. How did divided Berlin become the Cold War’s dangerous frontline?",
       "do_now": {
@@ -5686,13 +5700,20 @@
           }
         }
       },
-      "vocab_cloze_text": "After Winston Churchill warned in 1946 that the [Iron Curtain] had divided Europe, Washington announced the 1947 [Truman Doctrine] and $13 billion [Marshall Plan] to stop communism spreading west. When Stalin imposed the 1948–49 Berlin [Blockade], Western planes saved two million West Berliners via the eleven-month [Berlin Airlift], leading directly to the founding of [NATO] in April 1949."
+      "vocab_cloze_text": "After Winston Churchill warned in 1946 that the [Iron Curtain] had divided Europe, Washington announced the 1947 [Truman Doctrine] and $13 billion [Marshall Plan] to stop communism spreading west. When Stalin imposed the 1948–49 Berlin [Blockade], Western planes saved two million West Berliners via the eleven-month [Berlin Airlift], leading directly to the founding of [NATO] in April 1949.",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg",
+        "caption": "USAF C-54 Skymaster Landing at Tempelhof Airport During Berlin Airlift Runway Expansion",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg"
     },
     {
       "id": "lesson_4",
       "title": "Nuclear Brinkmanship: The Cuban Missile Crisis (1962).",
       "enquiryQuestion": "How close did the world come to nuclear armageddon during the thirteen days of October 1962, and why did the crisis compel de-escalation?",
-      "card_image": "/images/cuban_missile_crisis_u2_1962.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg",
       "card_position": "center center",
       "prologue": "In October 1962, American spy planes photographed Soviet nuclear missile sites under construction in Cuba, just ninety miles from Florida. For thirteen terrifying days, President Kennedy and Premier Khrushchev stood on the brink of global nuclear war. How close did humanity come to thermonuclear destruction during the Cuban Missile Crisis?",
       "do_now": {
@@ -7503,13 +7524,20 @@
           }
         }
       },
-      "vocab_cloze_text": "In October 1962, Soviet nuclear [ICBM] sites discovered in Cuba pushed superpower [Brinkmanship] to its closest point to World War Three, raising US military readiness to [DEFCON] 2. Knowing war meant [Mutually Assured Destruction] under nuclear [Deterrence], President Kennedy ordered a careful [Naval Quarantine] and secret talks removing US missiles from Turkey to end the crisis peacefully."
+      "vocab_cloze_text": "In October 1962, Soviet nuclear [ICBM] sites discovered in Cuba pushed superpower [Brinkmanship] to its closest point to World War Three, raising US military readiness to [DEFCON] 2. Knowing war meant [Mutually Assured Destruction] under nuclear [Deterrence], President Kennedy ordered a careful [Naval Quarantine] and secret talks removing US missiles from Turkey to end the crisis peacefully.",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg",
+        "caption": "President John F. Kennedy Chairing an EXCOMM Meeting in the White House Cabinet Room",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg"
     },
     {
       "id": "lesson_5",
       "title": "Proxy Wars: Why did the superpowers fight in Asia (Korea & Vietnam)?",
       "enquiryQuestion": "Why did superpower nuclear stalemate in Europe displace catastrophic ideological warfare into Asia, and why did conventional military might fail?",
-      "card_image": "/images/huey_combat_landing_vietnam.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg",
       "card_position": "center center",
       "prologue": "Because direct war between nuclear-armed superpowers meant mutually assured destruction, the Cold War was fought through bloody proxy wars in Asia. From the frozen trenches of Korea to the dense jungles of Vietnam, millions of soldiers and civilians died in ideological conflicts. Why did the superpowers fight through Asian battlegrounds?",
       "do_now": {
@@ -8047,7 +8075,7 @@
           "type": "visual",
           "title": "Source C (Battlefield Medicine & Diary Plate): Frontline Medical Evacuation and Battlefield Trauma in Vietnam (1966)",
           "text": "15 April 1968: The B-52 bombers came again at dawn. The earth trembled like an earthquake. The operating bunker filled with dust and smoke, choking us as we amputated the crushed leg of a sixteen-year-old guerrilla fighter. There was no morphine left. He gripped my hand with all his strength and did not cry out. How much blood must this small country shed for independence? Why do the Americans come here from ten thousand miles away to destroy our villages with fire? Sometimes I feel my heart will burst with grief for our youth. But we will endure. Even if the forest is burned to ashes, our people will rebuild our fatherland.",
-          "caption": "Combat medical corpsmen treat severe battlefield blast wounds under fire in South Vietnam, mirroring the tragic frontline diary accounts kept by wartime medics like Dr. Đặng Thùy Trâm.",
+          "caption": "Frontline combat medic SP4 Lee C. Pugh (101st Airborne Division) treats a battlefield leg wound in South Vietnam (September 1967, NARA), illustrating the acute medical trauma documented across wartime Vietnam diaries.",
           "citation": "Đặng Thùy Trâm, Last Night I Dreamed of Peace (Random House / Vietnam Center and Sam Johnson Archive, Texas Tech University).",
           "provenance": "Written in a pocket notebook in an underground bunker hospital in Quảng Ngãi Province, 1968; captured by US soldiers in 1970 and preserved by military intelligence.",
           "context": "Dr. Trâm’s diary was saved from burning by an American intelligence officer who was told by his translator: 'Do not burn this, it already has fire in it.' It gives an extraordinary, deeply human voice to the Vietnamese fighters who endured relentless American bombing. **Hinge Question:** How does reading a young Vietnamese doctor’s private diary challenge the one-sided view of the Vietnam War often shown in Western movies?",
@@ -8074,8 +8102,8 @@
               }
             ]
           },
-          "image": "/images/cold_war/vietnam_field_medic_1966.jpg",
-          "src": "/images/cold_war/vietnam_field_medic_1966.jpg",
+          "image": "/images/upgraded/ks3-modern/cw_l5_src_c_vietnam_combat_medic_1967.jpg",
+          "src": "/images/upgraded/ks3-modern/cw_l5_src_c_vietnam_combat_medic_1967.jpg",
           "question_badge": "VIETNAMESE PERSPECTIVE",
           "enquiry_question": "How do wartime medical diaries and photographs capture the devastating human cost of high-intensity aerial bombing and artillery?",
           "model_answer": "They document horrific civilian and soldier casualties, severe shrapnel wounds, and the deep sorrow of watching teenage fighters die in makeshift jungle aid stations.",
@@ -9309,13 +9337,20 @@
           }
         }
       },
-      "vocab_cloze_text": "Driven by the [Domino Theory] in Asia, Cold War rivalry erupted into bloody [Proxy War] conflicts across Korea and Vietnam. After fighting between 1950 and 1953 ended along Korea’s fortified [Demilitarized Zone], America sent over 500,000 troops to South Vietnam, where [Vietcong] fighters used jungle tunnels and [Guerrilla Warfare] to defeat a costly US [War of Attrition]."
+      "vocab_cloze_text": "Driven by the [Domino Theory] in Asia, Cold War rivalry erupted into bloody [Proxy War] conflicts across Korea and Vietnam. After fighting between 1950 and 1953 ended along Korea’s fortified [Demilitarized Zone], America sent over 500,000 troops to South Vietnam, where [Vietcong] fighters used jungle tunnels and [Guerrilla Warfare] to defeat a costly US [War of Attrition].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg",
+        "caption": "US Army UH-1C Huey Helicopter Gunships Banking Over Lai Khe Base, South Vietnam",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg"
     },
     {
       "id": "lesson_6",
       "title": "Fall of the Berlin Wall (1989) and the collapse of the Soviet Union (1991).",
       "enquiryQuestion": "Why did the internal economic decay of the Soviet bloc and Gorbachev’s radical reforms culminate in the sudden collapse of European communism?",
-      "card_image": "/images/berlin_wall_fall_1989.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg",
       "card_position": "center 25%",
       "prologue": "By the 1980s, Soviet economic stagnation and citizen unrest undermined the Eastern Bloc. Soviet leader Mikhail Gorbachev introduced reforms of openness and restructuring, but in November 1989, ecstatic crowds dismantled the Berlin Wall. Within two years, the Soviet Union collapsed. Why did the mighty Soviet empire fall so rapidly?",
       "do_now": {
@@ -11125,13 +11160,20 @@
           }
         }
       },
-      "vocab_cloze_text": "Built in 1961 to stop East Germans fleeing Soviet [Satellite State] rule, the Berlin Wall stood until Mikhail Gorbachev introduced [Glasnost] openness, [Perestroika] economic reforms, and ended military intervention abroad. Inspired by Poland’s [Solidarity] union, peaceful crowds opened the Berlin Wall in November 1989, bringing German [Reunification] in 1990 and Soviet collapse after a failed 1991 [Coup D’état]."
+      "vocab_cloze_text": "Built in 1961 to stop East Germans fleeing Soviet [Satellite State] rule, the Berlin Wall stood until Mikhail Gorbachev introduced [Glasnost] openness, [Perestroika] economic reforms, and ended military intervention abroad. Inspired by Poland’s [Solidarity] union, peaceful crowds opened the Berlin Wall in November 1989, bringing German [Reunification] in 1990 and Soviet collapse after a failed 1991 [Coup D’état].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg",
+        "caption": "Citizens Gathered at the Newly Breached Opening in the Berlin Wall at Potsdamer Platz",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg"
     },
     {
       "id": "lesson_7",
       "title": "Assessment: Was the Cold War ever truly 'cold'?",
       "enquiryQuestion": "To what extent is the label 'Cold War' an inaccurate Eurocentric concept that obscures the devastating human toll of global proxy conflict?",
-      "card_image": "/images/checkpoint_charlie_tanks_1961.jpg",
+      "card_image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg",
       "card_position": "center 40%",
       "prologue": "Between 1945 and 1991, the Cold War shaped global politics, espionage, nuclear weapons, and space exploration. While the superpowers never launched atomic missiles directly at each other, millions died in proxy conflicts and lived under authoritarian terror. Was the Cold War ever truly 'cold', or a global conflict in disguise?",
       "do_now": {
@@ -11629,10 +11671,10 @@
           "id": "cw_l7_src_b",
           "letter": "B",
           "type": "visual",
-          "src": "/images/cold_war/protect_and_survive_1980.jpg",
-          "image": "/images/cold_war/protect_and_survive_1980.jpg",
+          "src": "/images/upgraded/ks3-modern/cw_l7_src_b_protect_and_survive_inner_refuge_1980.jpg",
+          "image": "/images/upgraded/ks3-modern/cw_l7_src_b_protect_and_survive_inner_refuge_1980.jpg",
           "title": "Source B (Civil Defence Archival Plate): British Government \"Protect and Survive\" Nuclear Guide (1980)",
-          "caption": "Official cover and instructional plate from the British Home Office public information booklet \"Protect and Survive\" (May 1980), advising families how to build improvised fallout rooms inside their homes.",
+          "caption": "Instructional spread ('Now the Inner Refuge', pp. 10–11) from the British Home Office booklet 'Protect and Survive' (HMSO, May 1980), advising families how to build improvised indoor fallout shelters out of sloping interior doors, tables, and sandbags.",
           "citation": "UK Home Office / Central Office of Information (HMSO, 1980, Crown Copyright).",
           "provenance": "Published by Her Majesty's Stationery Office (HMSO) on behalf of the British Home Office in May 1980; prepared for mass distribution to every British household.",
           "context": "The booklet instructed ordinary British families to construct an 'inner core refuge' inside their homes by removing interior doors, leaning them against a wall at an angle, and piling heavy luggage and bags of earth on top. It sparked fierce public ridicule from peace campaigners (like CND and E.P. Thompson's *Protest and Survive*), who pointed out that domestic doors provided zero protection against a thermonuclear blast. **Hinge Question:** Did booklets like Protect and Survive give people genuine hope of surviving a nuclear war, or was it government propaganda to stop the public from panicking?",
@@ -12927,15 +12969,22 @@
           }
         }
       },
-      "vocab_cloze_text": "Across a divided [Bipolar World], each rival [Superpower] competed for global influence without fighting face-to-face in Europe. Beneath brief 1970s [Détente] treaties, both sides poured trillions into the nuclear and space [Arms Race], waged secret KGB and CIA [Espionage], and backed devastating Third World wars as Washington and Moscow struggled for regional [Hegemony]."
+      "vocab_cloze_text": "Across a divided [Bipolar World], each rival [Superpower] competed for global influence without fighting face-to-face in Europe. Beneath brief 1970s [Détente] treaties, both sides poured trillions into the nuclear and space [Arms Race], waged secret KGB and CIA [Espionage], and backed devastating Third World wars as Washington and Moscow struggled for regional [Hegemony].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg",
+        "caption": "Operation Crossroads 'Baker' Underwater Atomic Detonation at Bikini Atoll",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg"
     }
   ],
   "homepage_background": "/images/cold_war_cover.jpg",
   "cover_image": "/images/cold_war_cover.jpg",
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 9",
-  "year_group": "Year 9",
+  "yearGroup": "Key Stage 3",
+  "year_group": "Key Stage 3",
   "category": "KS3",
   "guided_reading": [
     {
@@ -13344,5 +13393,6 @@
       "provenance_tier": "scholarly_summary",
       "provenance_note": "Classroom synthesis contrasting historians John Lewis Gaddis (\"The Long Peace\") and Odd Arne Westad (\"The Global Cold War\")."
     }
-  ]
+  ],
+  "is_ks3": true
 }

@@ -169,13 +169,13 @@ export function renderHomepage() {
         </div>
         <div style="flex: 1; min-width: 290px; position: relative; z-index: 1;">
           <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(59, 130, 246, 0.25); border: 1px solid rgba(147, 197, 253, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; color: #93c5fd;">
-            <i class="fa-solid fa-star"></i> Year 9 November Assessment &bull; 30 Mins &bull; 12 Marks
+            <i class="fa-solid fa-star"></i> Key Stage 3 Formal Assessment &bull; 30 Mins &bull; 12 Marks
           </div>
           <h3 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
             "Why Did War Break Out in 1914?" Masterclass &amp; Scaffolding Hub
           </h3>
           <p style="margin: 0 0 12px 0; color: #cbd5e1; font-size: 0.94rem; line-height: 1.45; max-width: 680px;">
-            Targeted PEEL scaffolding for your formal written assessment: 1-page A4 revision notes templates, differentiated sentence frames, model answers, revision gateways to Lessons 1–5, and printed quiz booklet shortcuts. <strong>Timetable: 9Y (Monday 9th Nov) &bull; 9X (Thursday 12th Nov)</strong>.
+            Targeted PEEL scaffolding for your formal written assessment: 1-page A4 revision notes templates, differentiated sentence frames, model answers, revision gateways to Lessons 1–5, and printed quiz booklet shortcuts.
           </p>
           <div style="display: flex; gap: 8px; flex-wrap: wrap; font-size: 0.76rem;">
             <span style="background: rgba(255,255,255,0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.18);"><i class="fa-regular fa-clock" style="color: #38bdf8;"></i> 30m Assessment</span>

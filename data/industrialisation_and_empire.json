@@ -1494,7 +1494,14 @@
           ]
         ]
       },
-      "vocab_cloze_text": "During the [Industrial Revolution], steam power transformed cottage craftwork, yet Britain still relied on imported iron because furnace [Pig Iron] was too brittle. At Funtley near Fareham in 1783–84, [Henry Cort] invented the coal-fired [Puddling Process] and [Grooved Rolling Mill] to mass-produce strong [Wrought Iron], proven in 1787 naval trials at Portsmouth Dockyard."
+      "vocab_cloze_text": "During the [Industrial Revolution], steam power transformed cottage craftwork, yet Britain still relied on imported iron because furnace [Pig Iron] was too brittle. At Funtley near Fareham in 1783–84, [Henry Cort] invented the coal-fired [Puddling Process] and [Grooved Rolling Mill] to mass-produce strong [Wrought Iron], proven in 1787 naval trials at Portsmouth Dockyard.",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg",
+        "caption": "The Iron Bridge, Coalbrookdale",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg"
     },
     {
       "id": "lesson_2",
@@ -2833,7 +2840,14 @@
           ]
         ]
       },
-      "vocab_cloze_text": "As steam-powered [Textile Mill] factories and clay [Pug Mill] brickworks baking [Fareham Reds] expanded, employers relied heavily on cheap [Child Labour] working fourteen-hour shifts amid unguarded machinery. Destitute families dreaded the parish [Workhouse], leaving orphan apprentices trapped under strict factory clocks. Shocking 1832 evidence finally persuaded Parliament to pass the 1833 [Factory Acts] limiting child hours and appointing inspectors."
+      "vocab_cloze_text": "As steam-powered [Textile Mill] factories and clay [Pug Mill] brickworks baking [Fareham Reds] expanded, employers relied heavily on cheap [Child Labour] working fourteen-hour shifts amid unguarded machinery. Destitute families dreaded the parish [Workhouse], leaving orphan apprentices trapped under strict factory clocks. Shocking 1832 evidence finally persuaded Parliament to pass the 1833 [Factory Acts] limiting child hours and appointing inspectors.",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg",
+        "caption": "Quarry Bank Cotton Mill, Styal, Cheshire (founded 1784)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg"
     },
     {
       "id": "lesson_3",
@@ -4166,7 +4180,14 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Rapid [Urbanisation] crammed factory workers into damp back-to-back courts while councils clung to [Laissez-faire] neglect. Overflowing sewage from each shared [Cesspool] seeped into drinking pumps, triggering deadly [Cholera] outbreaks from 1831 even as doctors blamed foul [Miasma Theory]. Edwin Chadwick’s 1842 report and the 1858 Great Stink finally forced MPs to invest in modern sewers and [Public Health]."
+      "vocab_cloze_text": "Rapid [Urbanisation] crammed factory workers into damp back-to-back courts while councils clung to [Laissez-faire] neglect. Overflowing sewage from each shared [Cesspool] seeped into drinking pumps, triggering deadly [Cholera] outbreaks from 1831 even as doctors blamed foul [Miasma Theory]. Edwin Chadwick’s 1842 report and the 1858 Great Stink finally forced MPs to invest in modern sewers and [Public Health].",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg",
+        "caption": "Manchester from Kersal Moor",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg"
     },
     {
       "id": "lesson_4",
@@ -5569,7 +5590,14 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Shut out of the parliamentary [Franchise], working people protested against low pay and high food prices. In August 1819, cavalry sabred peaceful reformers at the [Peterloo Massacre], while southern farmworkers smashed threshing machines during the 1830 [Swing Riots] and rallied behind the transported [Tolpuddle Martyrs] in 1834. Between 1838 and 1848, millions signed petitions for [Chartism], debating [Moral vs Physical Force]."
+      "vocab_cloze_text": "Shut out of the parliamentary [Franchise], working people protested against low pay and high food prices. In August 1819, cavalry sabred peaceful reformers at the [Peterloo Massacre], while southern farmworkers smashed threshing machines during the 1830 [Swing Riots] and rallied behind the transported [Tolpuddle Martyrs] in 1834. Between 1838 and 1848, millions signed petitions for [Chartism], debating [Moral vs Physical Force].",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg",
+        "caption": "Peterloo Massacre: To Henry Hunt, Esq., as Chairman of the Meeting Assembled in St. Peter's Field, Manchester, 16th August 1819",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg"
     },
     {
       "id": "lesson_5",
@@ -6880,7 +6908,14 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Before 1832, tiny villages like Old Sarum elected MPs as a [Rotten Borough] or landlord-owned [Pocket Borough], while growing factory cities had none. Public pressure forced through the [1832 Great Reform Act], beginning gradual [Franchise Expansion] for middle-class men, though open voting at noisy [Hustings] still allowed bribery until the [Secret Ballot Act 1872] protected voters in private booths."
+      "vocab_cloze_text": "Before 1832, tiny villages like Old Sarum elected MPs as a [Rotten Borough] or landlord-owned [Pocket Borough], while growing factory cities had none. Public pressure forced through the [1832 Great Reform Act], beginning gradual [Franchise Expansion] for middle-class men, though open voting at noisy [Hustings] still allowed bribery until the [Secret Ballot Act 1872] protected voters in private booths.",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg",
+        "caption": "The House of Commons, 1833 (The Meeting of the First Reformed Parliament)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg"
     }
   ],
   "glossary": [
@@ -7339,8 +7374,9 @@
   ],
   "edition": "2026.1",
   "keyStage": "KS3",
-  "yearGroup": "Year 8",
-  "year_group": "Year 8",
+  "yearGroup": "Key Stage 3",
+  "year_group": "Key Stage 3",
   "category": "KS3",
-  "key_stage": "KS3"
+  "key_stage": "KS3",
+  "is_ks3": true
 }

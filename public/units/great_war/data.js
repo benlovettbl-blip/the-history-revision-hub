@@ -1425,7 +1425,14 @@ export default {
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_1_prologue.mp3",
       "prologue_voice_label": "Studio Cold-Open · British Historian",
-      "vocab_cloze_text": "Guided by Prussian economic unity under the [Zollverein] and Otto von Bismarck’s shrewd [Realpolitik], Prussia defeated France in 1870–71 and proclaimed the German Empire at Versailles. Annexing iron-rich [Alsace-Lorraine] fuelled lasting French [Revanche], so Bismarck signed the secret 1887 [Reinsurance Treaty] with Russia to keep France diplomatically isolated and avoid a two-front war."
+      "vocab_cloze_text": "Guided by Prussian economic unity under the [Zollverein] and Otto von Bismarck’s shrewd [Realpolitik], Prussia defeated France in 1870–71 and proclaimed the German Empire at Versailles. Annexing iron-rich [Alsace-Lorraine] fuelled lasting French [Revanche], so Bismarck signed the secret 1887 [Reinsurance Treaty] with Russia to keep France diplomatically isolated and avoid a two-front war.",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/gw1_l1_banner_champigny_1870_detaille.jpg",
+        "caption": "The Defense of Champigny, December 1870 (Franco-Prussian War)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l1_banner_champigny_1870_detaille.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l1_banner_champigny_1870_detaille.jpg"
     },
     {
       "id": "lesson_2",
@@ -2817,7 +2824,14 @@ export default {
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_2_prologue.mp3",
       "prologue_voice_label": "Studio Cold-Open · British Historian",
-      "vocab_cloze_text": "After dismissing Bismarck in 1890, Kaiser Wilhelm II launched ambitious [Weltpolitik] to win overseas colonies, pushing Britain and France into the 1904 [Entente Cordiale]. When Wilhelm tested their partnership in Morocco, Germany was left isolated at the 1906 [Algeciras Conference]. Sending the warship Panther to Agadir in 1911 in reckless [Gunboat Diplomacy] provoked David Lloyd George’s stern [Mansion House Speech] warning."
+      "vocab_cloze_text": "After dismissing Bismarck in 1890, Kaiser Wilhelm II launched ambitious [Weltpolitik] to win overseas colonies, pushing Britain and France into the 1904 [Entente Cordiale]. When Wilhelm tested their partnership in Morocco, Germany was left isolated at the 1906 [Algeciras Conference]. Sending the warship Panther to Agadir in 1911 in reckless [Gunboat Diplomacy] provoked David Lloyd George’s stern [Mansion House Speech] warning.",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/gw1_l2_banner_algeciras_conference_1906.jpg",
+        "caption": "Diplomatic Session of the Algeciras Conference on the First Moroccan Crisis",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l2_banner_algeciras_conference_1906.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l2_banner_algeciras_conference_1906.jpg"
     },
     {
       "id": "lesson_3",
@@ -4226,7 +4240,14 @@ export default {
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_3_prologue.mp3",
       "prologue_voice_label": "Studio Cold-Open · British Historian",
-      "vocab_cloze_text": "To protect Britain’s island trade under the 1889 [Two-Power Standard], London grew alarmed when Admiral von Tirpitz passed German [Naval Laws] based on [Risk Theory (Risikotheorie)]. Britain’s revolutionary 1906 turbine battleship [Dreadnought] made older fleets obsolete and triggered a fierce North Sea shipbuilding race that the failed 1912 [Haldane Mission] in Berlin could not halt."
+      "vocab_cloze_text": "To protect Britain’s island trade under the 1889 [Two-Power Standard], London grew alarmed when Admiral von Tirpitz passed German [Naval Laws] based on [Risk Theory (Risikotheorie)]. Britain’s revolutionary 1906 turbine battleship [Dreadnought] made older fleets obsolete and triggered a fierce North Sea shipbuilding race that the failed 1912 [Haldane Mission] in Berlin could not halt.",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/gw1_l3_banner_first_battle_squadron_dreadnoughts.jpg",
+        "caption": "The First Battle Squadron of Dreadnoughts, 1910",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l3_banner_first_battle_squadron_dreadnoughts.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l3_banner_first_battle_squadron_dreadnoughts.jpg"
     },
     {
       "id": "lesson_4",
@@ -4357,9 +4378,9 @@ export default {
         "/units/great_war/assets/balkans_1914_simple_map.png"
       ],
       "banner": {
-        "image": "/units/great_war/assets/map_lesson4.png",
-        "position": "center 30%",
-        "caption": "Geopolitical cartography of Europe in 1914 illustrating the division into the Triple Entente and Triple Alliance."
+        "image": "/images/upgraded/ks3-empire-gw/gw1_l4_banner_congress_of_berlin_1878_werner.jpg",
+        "caption": "The Congress of Berlin, 13 July 1878",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -5688,16 +5709,18 @@ export default {
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_4_prologue.mp3",
       "prologue_voice_label": "Studio Cold-Open · British Historian",
-      "vocab_cloze_text": "By 1907, Europe stood divided between the Central Powers’ [Triple Alliance] and the rival [Triple Entente] of Britain, France, and Russia. Meanwhile, Ottoman decline and rising Serbian [Pan-Slavism] turned south-eastern Europe into the volatile [Balkan Powder Keg]. Austria-Hungary’s 1908 [Annexation] of Bosnia and Serbia’s gains in the 1912–13 Balkan Wars brought Vienna and St Petersburg to the brink."
+      "vocab_cloze_text": "By 1907, Europe stood divided between the Central Powers’ [Triple Alliance] and the rival [Triple Entente] of Britain, France, and Russia. Meanwhile, Ottoman decline and rising Serbian [Pan-Slavism] turned south-eastern Europe into the volatile [Balkan Powder Keg]. Austria-Hungary’s 1908 [Annexation] of Bosnia and Serbia’s gains in the 1912–13 Balkan Wars brought Vienna and St Petersburg to the brink.",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l4_banner_congress_of_berlin_1878_werner.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l4_banner_congress_of_berlin_1878_werner.jpg"
     },
     {
       "id": "lesson_5",
-      "card_image": "/units/great_war/assets/archduke_sarajevo_car_1914.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/gw1_l5_banner_sarajevo_arrest_28_june_1914.jpg",
       "card_position": "center 22%",
       "banner": {
-        "image": "/units/great_war/assets/archduke_sarajevo_car_1914.jpg",
-        "position": "center 22%",
-        "caption": "Archduke Franz Ferdinand and Sophie Duchess of Hohenberg in their open-top motor car in Sarajevo on 28 June 1914, shortly before the fatal shots at the Latin Bridge."
+        "image": "/images/upgraded/ks3-empire-gw/gw1_l5_banner_sarajevo_arrest_28_june_1914.jpg",
+        "caption": "Arrest of a Suspect by Austro-Hungarian Gendarmes in Sarajevo, 28 June 1914",
+        "position": "center 22%"
       },
       "causal_domino_spine": {
         "title": "The July Crisis & Countdown to War: Chronology Spine",
@@ -7073,7 +7096,9 @@ export default {
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_5_prologue.mp3",
       "prologue_voice_label": "Studio Cold-Open · British Historian",
-      "vocab_cloze_text": "On 28 June 1914, Gavrilo Princip—armed by the secret [Black Hand (Crna Ruka)]—assassinated Archduke Franz Ferdinand in Sarajevo. Emboldened by Germany’s unconditional [Blank Cheque (Blankovollmacht)] on 5 July, Vienna issued a harsh ten-point [Ultimatum] to Serbia. Once Russian [Mobilisation] began, Berlin triggered the [Schlieffen Plan] through neutral Belgium, bringing Great Britain into the war on 4 August 1914."
+      "vocab_cloze_text": "On 28 June 1914, Gavrilo Princip—armed by the secret [Black Hand (Crna Ruka)]—assassinated Archduke Franz Ferdinand in Sarajevo. Emboldened by Germany’s unconditional [Blank Cheque (Blankovollmacht)] on 5 July, Vienna issued a harsh ten-point [Ultimatum] to Serbia. Once Russian [Mobilisation] began, Berlin triggered the [Schlieffen Plan] through neutral Belgium, bringing Great Britain into the war on 4 August 1914.",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l5_banner_sarajevo_arrest_28_june_1914.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l5_banner_sarajevo_arrest_28_june_1914.jpg"
     },
     {
       "id": "lesson_6",
@@ -7082,9 +7107,13 @@ export default {
       "enquiryQuestion": "Why did war break out in 1914?",
       "subtitle": "Step-by-step PEEL Planning & Scaffolding Workshop: German Unification, Imperial Rivalry, Naval Arms Race, Alliances & Assassination",
       "skill": "Disciplinary Skill: Causal Explanation & Structured PEEL Synthesis",
-      "card_image": "/images/great_war_cover.jpg",
+      "card_image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg",
       "card_position": "center 45%",
-      "banner": "/images/great_war_cover.jpg",
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg",
+        "caption": "Crowds Cheering Outside Buckingham Palace on the Outbreak of the First World War (August 1914)",
+        "position": "center 30%"
+      },
       "cover_image": "/images/great_war_cover.jpg",
       "prologue": "Welcome to your Year 9 Summative Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: \"Why did war break out in 1914?\". You will write three developed PEEL paragraphs choosing from four key historical catalysts: German unification, Imperial rivalry, the Naval arms race, or Alliances and the Sarajevo assassination. Remember: NO conclusion is needed for this question! Over your revision period, you are permitted to prepare ONE single sheet of A4 paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room. Which causal factor will you argue was the most decisive in triggering continental war in August 1914?",
       "assessment_notice": {
@@ -8643,7 +8672,9 @@ export default {
       },
       "prologue_audio": "/audio/lessons/great_war/lesson_6_prologue.mp3",
       "prologue_voice_label": "Studio Cold-Open · British Historian",
-      "vocab_cloze_text": "Explaining why war broke out in 1914 using the [PEEL Technique] links Europe’s long-term [M-A-I-N Causes] to the Sarajevo spark. Seizing [Alsace-Lorraine] in 1871 bred French hatred, while Kaiser Wilhelm II’s [Weltpolitik] and construction rivals to [HMS Dreadnought] drove Britain into the [Triple Entente], ensuring Germany’s July 1914 [Blank Cheque] dragged all Europe into total war."
+      "vocab_cloze_text": "Explaining why war broke out in 1914 using the [PEEL Technique] links Europe’s long-term [M-A-I-N Causes] to the Sarajevo spark. Seizing [Alsace-Lorraine] in 1871 bred French hatred, while Kaiser Wilhelm II’s [Weltpolitik] and construction rivals to [HMS Dreadnought] drove Britain into the [Triple Entente], ensuring Germany’s July 1914 [Blank Cheque] dragged all Europe into total war.",
+      "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg"
     }
   ],
   "quizPack": [
@@ -9902,8 +9933,9 @@ export default {
   ],
   "edition": "2026.1",
   "keyStage": "KS3",
-  "yearGroup": "Year 9",
-  "year_group": "Year 9",
+  "yearGroup": "Key Stage 3",
+  "year_group": "Key Stage 3",
   "category": "KS3",
-  "key_stage": "KS3"
+  "key_stage": "KS3",
+  "is_ks3": true
 };

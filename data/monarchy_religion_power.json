@@ -16,7 +16,7 @@
   "cover_image": "/images/family_of_henry_viii_c1545.jpg",
   "cover_image_position": "center 12%",
   "is_ks3": true,
-  "year_group": "Year 7",
+  "year_group": "Key Stage 3",
   "timeline": [
     {
       "year": "1517",
@@ -296,12 +296,12 @@
       "enquiry": "Why did Henry VIII break with Rome, and how was Royal Supremacy established?",
       "subtitle": "From Martin Luther’s Hammer to Henry VIII’s Crowned Supremacy",
       "skill": "Causation & Motivation",
-      "card_image": "/images/henry_viii.jpg",
+      "card_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
       "card_position": "center 2%",
       "banner": {
-        "image": "/images/family_of_henry_viii_c1545.jpg",
-        "position": "center 46%",
-        "caption": "The Family of Henry VIII (c. 1545): King Henry VIII enthroned under the royal canopy with his heirs, establishing royal supremacy."
+        "image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
+        "caption": "The Embarkation of Henry VIII at Dover",
+        "position": "center 46%"
       },
       "margin_spine": [
         {
@@ -2062,7 +2062,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Sparked across Europe by Martin Luther’s attack on papal abuses in 1517, the [Reformation] collided with Henry VIII’s [Dynastic] need for a male heir. When the [Papacy] refused to grant a royal [Annulment] of Henry’s marriage to Catherine of Aragon, Thomas Cromwell steered laws through Parliament ending Rome’s rule. The 1534 Act of [Supremacy] and the [Dissolution] of the monasteries transferred vast church wealth to the Crown."
+      "vocab_cloze_text": "Sparked across Europe by Martin Luther’s attack on papal abuses in 1517, the [Reformation] collided with Henry VIII’s [Dynastic] need for a male heir. When the [Papacy] refused to grant a royal [Annulment] of Henry’s marriage to Catherine of Aragon, Thomas Cromwell steered laws through Parliament ending Rome’s rule. The 1534 Act of [Supremacy] and the [Dissolution] of the monasteries transferred vast church wealth to the Crown.",
+      "banner_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
+      "hero_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg"
     },
     {
       "id": "lesson_2",
@@ -2070,12 +2072,12 @@
       "enquiry": "How did Elizabeth I navigate religious divisions through the 1559 Via Media?",
       "subtitle": "From the Fires of Smithfield to the Golden Age Settlement",
       "skill": "Historical Significance & Compromise",
-      "card_image": "/images/elizabeth_coronation_portrait.jpg",
+      "card_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
       "card_position": "center 12%",
       "banner": {
-        "image": "/images/elizabeth_procession_1601.jpg",
-        "position": "center 28%",
-        "caption": "The Procession Portrait of Queen Elizabeth I (c. 1601): carried in triumph through London surrounded by her Elizabethan courtiers."
+        "image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
+        "caption": "The Coronation Procession of Queen Elizabeth I through London on 14 January 1559",
+        "position": "center 28%"
       },
       "margin_spine": [
         {
@@ -2584,9 +2586,9 @@
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Mary Queen of Scots' arrival in England sparked deadly Catholic assassination plots. Elizabeth's spymaster Sir Francis Walsingham ran a sophisticated network of <strong>espionage</strong> to trap conspirators. In 1586, Anthony Babington plotted Elizabeth’s murder, smuggling letters hidden in barrels of beer to Mary.</p><p class=\"prose-p\">Walsingham intercepted the letters and had Mary's secret code broken by expert cryptographers. Confronted with Mary’s treason, Parliament demanded blood. With deep reluctance, Elizabeth finally saw Mary's death warrant signed, and Mary Stuart was beheaded at Fotheringhay Castle in February 1587.</p>",
-          "image": "/images/sir_francis_walsingham.jpg",
-          "image_alt": "Portrait of Sir Francis Walsingham by John de Critz the Elder (c. 1585)",
-          "caption": "Sir Francis Walsingham (c. 1532–1590), Queen Elizabeth I’s ruthless Principal Secretary and Protestant spymaster whose codebreaker Thomas Phelippes cracked the Babington Cipher (John de Critz the Elder, c. 1585, National Portrait Gallery)."
+          "image": "/images/eee/kt2/sir_francis_walsingham_npg.jpg",
+          "image_alt": "Oil portrait of Sir Francis Walsingham in black doublet and white ruff by John de Critz the Elder (c. 1585, NPG 1807)",
+          "caption": "Sir Francis Walsingham (c. 1532–1590), Queen Elizabeth I’s Principal Secretary and Protestant spymaster whose cryptographer Thomas Phelippes deciphered the Babington Plot (John de Critz the Elder, c. 1585, National Portrait Gallery, NPG 1807)."
         }
       ],
       "sources": [
@@ -3756,7 +3758,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Inheriting a divided kingdom in 1558, Elizabeth I sought religious stability through her [Via Media] settlement. Taking the careful title of [Supreme Governor], she enforced common prayer-book worship through the 1559 Act of [Uniformity] while fining any Catholic [Recusant] who stayed away. After the Pope’s 1570 decree of [Excommunication] encouraged Catholic plots, Sir Francis Walsingham used [Espionage] and codebreaking to protect the Queen."
+      "vocab_cloze_text": "Inheriting a divided kingdom in 1558, Elizabeth I sought religious stability through her [Via Media] settlement. Taking the careful title of [Supreme Governor], she enforced common prayer-book worship through the 1559 Act of [Uniformity] while fining any Catholic [Recusant] who stayed away. After the Pope’s 1570 decree of [Excommunication] encouraged Catholic plots, Sir Francis Walsingham used [Espionage] and codebreaking to protect the Queen.",
+      "banner_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
+      "hero_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg"
     },
     {
       "id": "lesson_3",
@@ -3764,12 +3768,12 @@
       "enquiry": "Why was Philip II’s Armada defeated, and how did naval strategy transform warfare?",
       "subtitle": "From Drake’s Fireships to the Protestant Wind",
       "skill": "Causation & Strategic Evaluation",
-      "card_image": "/images/battle_of_gravelines_1588.jpg",
+      "card_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
       "card_position": "center 40%",
       "banner": {
-        "image": "/images/battle_of_gravelines_1588.jpg",
-        "position": "center 35%",
-        "caption": "The Battle of Gravelines (8 August 1588) by Philip James de Loutherbourg: English fireships and warships scattering Philip II’s Armada."
+        "image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
+        "caption": "De Spaanse Armada voor de Engelse Kust (The Spanish Armada off the English Coast in 1588)",
+        "position": "center 35%"
       },
       "margin_spine": [
         {
@@ -4181,9 +4185,9 @@
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> At the Battle of Gravelines, English warships closed in, blasting wooden hulls of each Spanish <strong>galleon</strong> at point-blank range. Blown northward into fierce North Sea gales, Medina Sidonia had no choice but to steer his battered fleet around Scotland and Ireland.</p><p class=\"prose-p\">Furious Atlantic storms drove dozens of ships onto jagged Irish rocks, causing devastating shipwrecks. Only sixty-seven damaged vessels limped back to Spain. Elizabeth celebrated divine <strong>providence</strong>, striking a famous medal declaring: 'God blew and they were scattered', cementing England’s naval and Protestant identity.</p>",
-          "image": "/images/the_duke_of_medina_sidonia.jpg",
-          "image_alt": "Contemporary Spanish portrait of Alonso Pérez de Guzmán, 7th Duke of Medina Sidonia",
-          "caption": "Alonso Pérez de Guzmán, 7th Duke of Medina Sidonia (1550–1615), reluctant aristocratic commander of the Spanish Armada forced to navigate his storm-battered fleet northward around Scotland and Ireland."
+          "image": "/images/upgraded/ks3-early/mrp_l3_b4_armada_shipwreck_ireland_1588.jpg",
+          "image_alt": "19th-century engraving of a storm-battered Spanish Armada warship smashing onto jagged Irish cliffs at Port-na-Spaniagh in 1588",
+          "caption": "Wreck of a Spanish Armada warship on the jagged basalt cliffs of Port-na-Spaniagh, County Antrim (October 1588), after North Sea gales forced the Duke of Medina Sidonia’s battered fleet northward around Scotland and Ireland."
         }
       ],
       "sources": [
@@ -5327,7 +5331,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "In 1588, Philip II of Spain launched a Catholic [Crusade] to overthrow Elizabeth I, despite English [Privateer] Francis Drake raiding Spanish supplies at Cadiz in 1587. In the English Channel, nimble race-built warships outmanoeuvred each towering Spanish [Galleon], firing long-range [Broadside] volleys. On the night of 7–8 August, eight blazing [Fireship] vessels scattered Spain’s fleet at Calais before Atlantic storms completed what Protestants hailed as divine [Providence]."
+      "vocab_cloze_text": "In 1588, Philip II of Spain launched a Catholic [Crusade] to overthrow Elizabeth I, despite English [Privateer] Francis Drake raiding Spanish supplies at Cadiz in 1587. In the English Channel, nimble race-built warships outmanoeuvred each towering Spanish [Galleon], firing long-range [Broadside] volleys. On the night of 7–8 August, eight blazing [Fireship] vessels scattered Spain’s fleet at Calais before Atlantic storms completed what Protestants hailed as divine [Providence].",
+      "banner_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
+      "hero_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg"
     },
     {
       "id": "lesson_4",
@@ -5335,12 +5341,12 @@
       "enquiry": "Why did the collision over Divine Right lead to the trial and execution of Charles I?",
       "subtitle": "From the Battle of Naseby to Parliamentary Sovereignty",
       "skill": "Causation & Constitutional Change",
-      "card_image": "/images/charles_i_execution.jpg",
+      "card_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
       "card_position": "center 65%",
       "banner": {
-        "image": "/images/covers/unit_crown_parliament_revolution.jpg",
-        "position": "center 25%",
-        "caption": "The Battle of Naseby (1645): Oliver Cromwell’s New Model Army breaks the Royalists, leading to the trial and execution of Charles I."
+        "image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
+        "caption": "The Prince of Orange Landing at Torbay, 5 November 1688",
+        "position": "center 25%"
       },
       "margin_spine": [
         {
@@ -5847,10 +5853,10 @@
           "id": "monarchy_religion_power_l4_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/bill_of_rights.jpg",
-          "image": "/images/bill_of_rights.jpg",
+          "src": "/images/upgraded/ks3-early/mrp_l4_s4_bill_of_rights_1689_text.jpg",
+          "image": "/images/upgraded/ks3-early/mrp_l4_s4_bill_of_rights_1689_text.jpg",
           "title": "Source E (Constitutional Monarchy): The Bill of Rights Parchment Roll (16 December 1689)",
-          "caption": "The landmark statute (Parliamentary Archives HL/PO/PU/1/1689/1W&M2s2n1) establishing that monarchs cannot suspend laws, levy taxes, or raise armies without parliamentary consent.",
+          "caption": "Printed statute text of the 1689 Bill of Rights ('An Act declaring the Rights and Liberties of the Subject, and settling the Succession of the Crown', 1 William & Mary Sess. 2 c. 2), establishing that monarchs cannot suspend laws, levy taxes, or raise standing armies without parliamentary consent.",
           "author": "Convention Parliament of England under William and Mary",
           "date": "16 December 1689",
           "question_badge": "PARLIAMENTARY SUPREMACY & RULE OF LAW",
@@ -6917,7 +6923,9 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Believing firmly in the [Divine Right] of kings, Charles I governed without Parliament during eleven years of [Personal Rule] and collected unpopular [Ship Money] taxes inland. Civil war broke out in 1642, and Oliver Cromwell’s disciplined [New Model Army] crushed royalist forces at Naseby. Charles’s trial and [Regicide] in January 1649 shocked Europe, paving the way by 1689 for William and Mary to accept Parliament’s [Bill of Rights]."
+      "vocab_cloze_text": "Believing firmly in the [Divine Right] of kings, Charles I governed without Parliament during eleven years of [Personal Rule] and collected unpopular [Ship Money] taxes inland. Civil war broke out in 1642, and Oliver Cromwell’s disciplined [New Model Army] crushed royalist forces at Naseby. Charles’s trial and [Regicide] in January 1649 shocked Europe, paving the way by 1689 for William and Mary to accept Parliament’s [Bill of Rights].",
+      "banner_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
+      "hero_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg"
     },
     {
       "id": "lesson_5",
@@ -6925,12 +6933,12 @@
       "enquiry": "Which turning point decisively transformed the English state between 1517 and 1689?",
       "subtitle": "The 170-Year Struggle for Sovereign Power in Britain",
       "skill": "Synoptic Evaluation & Extent of Change",
-      "card_image": "/images/william_mary_declaration_of_rights_1689.jpg",
+      "card_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/william_mary_declaration_of_rights_1689.jpg",
-        "position": "center 24%",
-        "caption": "The Presentation of the Crown and Declaration of Rights (1689) by Edward Matthew Ward: Parliament offering the Crown to William and Mary under constitutional terms."
+        "image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
+        "caption": "Sala Regalis cum Curia West-monasterij, vulgo Westminster Haall (New Palace Yard and Westminster Hall)",
+        "position": "center 24%"
       },
       "margin_spine": [
         {
@@ -8670,14 +8678,16 @@
           ]
         ]
       },
-      "vocab_cloze_text": "Between 1517 and 1689, supreme [Sovereignty] in England shifted decisively away from royal [Absolutism]. Henry VIII relied on written [Statute Law] in Parliament to break with Rome, creating a lasting [Precedent] that major religious and tax changes needed MPs’ consent. After Stuart civil war and the republican [Commonwealth], the Glorious Revolution of 1688–89 established a permanent [Constitutional Monarchy] under parliamentary supremacy."
+      "vocab_cloze_text": "Between 1517 and 1689, supreme [Sovereignty] in England shifted decisively away from royal [Absolutism]. Henry VIII relied on written [Statute Law] in Parliament to break with Rome, creating a lasting [Precedent] that major religious and tax changes needed MPs’ consent. After Stuart civil war and the republican [Commonwealth], the Glorious Revolution of 1688–89 established a permanent [Constitutional Monarchy] under parliamentary supremacy.",
+      "banner_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
+      "hero_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg"
     }
   ],
   "homepage_background": "/images/family_of_henry_viii_c1545.jpg",
   "edition": "2026.1",
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 7",
+  "yearGroup": "Key Stage 3",
   "category": "KS3",
   "key_individuals": [
     {

@@ -153,11 +153,11 @@ export const UNIT_RESOURCES_CATALOG = {
   },
 
   // ============================================================================
-  // KEY STAGE 3 (YEARS 7–9)
+  // KEY STAGE 3 CURRICULUM
   // ============================================================================
   water_and_sanitation: {
     unitTitle: 'Water & Sanitation Through Time (1250–Present)',
-    specSubtitle: 'Key Stage 3 • Year 7 Thematic Depth Study',
+    specSubtitle: 'Key Stage 3 • Thematic Depth Study',
     stage: 'ks3',
     textbook: {
       title: 'Water & Sanitation Classroom Textbook',
@@ -166,7 +166,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering medieval conduits, King Cholera, John Snow, and Bazalgette.',
       htmlUrl: '/units/water_and_sanitation/textbook.html',
       pdfUrl: '/pdfs/water_and_sanitation_textbook.pdf',
-      downloadName: 'Y7_Water_and_Sanitation_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Water_and_Sanitation_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -176,7 +176,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and extended writing scaffolds.',
       htmlUrl: '/units/water_and_sanitation/pupil_workbook.html',
       pdfUrl: '/pdfs/water_and_sanitation_pupil_workbook.pdf',
-      downloadName: 'Y7_Water_and_Sanitation_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Water_and_Sanitation_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -187,14 +187,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/water_and_sanitation/water_and_sanitation_retrieval_companion.html',
       pdfUrl: '/pdfs/water_and_sanitation_retrieval_companion.pdf',
-      downloadName: 'Y7_Water_and_Sanitation_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Water_and_Sanitation_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   medieval_england: {
     unitTitle: 'Medieval England (1066–1485)',
-    specSubtitle: 'Key Stage 3 • Year 7 Period Study',
+    specSubtitle: 'Key Stage 3 • Medieval Period Study',
     stage: 'ks3',
     textbook: {
       title: 'Medieval England Classroom Textbook',
@@ -203,7 +203,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering 1066, Norman control, Becket, Magna Carta, Black Death & 1381.',
       htmlUrl: '/units/medieval_england/textbook.html',
       pdfUrl: '/pdfs/medieval_england_textbook.pdf',
-      downloadName: 'Y7_Medieval_England_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Medieval_England_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -213,7 +213,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured writing tasks.',
       htmlUrl: '/units/medieval_england/pupil_workbook.html',
       pdfUrl: '/pdfs/medieval_england_pupil_workbook.pdf',
-      downloadName: 'Y7_Medieval_England_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Medieval_England_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -224,14 +224,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with pupil score tracker and rear Marking Bank.',
       htmlUrl: '/units/medieval_england/medieval_england_retrieval_companion.html',
       pdfUrl: '/pdfs/medieval_england_retrieval_companion.pdf',
-      downloadName: 'Y7_Medieval_England_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Medieval_England_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   monarchy_religion_power: {
     unitTitle: 'Crown, Church & Parliament (1517–1689)',
-    specSubtitle: 'Key Stage 3 • Year 8 Early Modern Britain',
+    specSubtitle: 'Key Stage 3 • Early Modern Britain',
     stage: 'ks3',
     textbook: {
       title: 'Crown, Church & Parliament Classroom Textbook',
@@ -240,7 +240,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook from the Reformation and Civil War to the 1689 Bill of Rights.',
       htmlUrl: '/units/monarchy_religion_power/textbook.html',
       pdfUrl: '/pdfs/monarchy_religion_power_textbook.pdf',
-      downloadName: 'Y8_Crown_Church_Parliament_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Crown_Church_Parliament_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -250,7 +250,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and causation writing tasks.',
       htmlUrl: '/units/monarchy_religion_power/pupil_workbook.html',
       pdfUrl: '/pdfs/monarchy_religion_power_pupil_workbook.pdf',
-      downloadName: 'Y8_Crown_Church_Parliament_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Crown_Church_Parliament_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -261,14 +261,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/monarchy_religion_power/monarchy_religion_power_retrieval_companion.html',
       pdfUrl: '/pdfs/monarchy_religion_power_retrieval_companion.pdf',
-      downloadName: 'Y8_Crown_Church_Parliament_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Crown_Church_Parliament_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   first_british_empire: {
     unitTitle: 'The First British Empire (1600–1783)',
-    specSubtitle: 'Key Stage 3 • Year 8 Global & Imperial Study',
+    specSubtitle: 'Key Stage 3 • Global & Imperial Study',
     stage: 'ks3',
     textbook: {
       title: 'The First British Empire Classroom Textbook',
@@ -277,7 +277,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering Jamestown, East India Company, Atlantic slavery, and 1776.',
       htmlUrl: '/units/first_british_empire/textbook.html',
       pdfUrl: '/pdfs/first_british_empire_textbook.pdf',
-      downloadName: 'Y8_First_British_Empire_Classroom_Textbook.pdf',
+      downloadName: 'KS3_First_British_Empire_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -287,7 +287,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured source writing.',
       htmlUrl: '/units/first_british_empire/pupil_workbook.html',
       pdfUrl: '/pdfs/first_british_empire_pupil_workbook.pdf',
-      downloadName: 'Y8_First_British_Empire_Pupil_Workbook.pdf',
+      downloadName: 'KS3_First_British_Empire_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -298,14 +298,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/first_british_empire/first_british_empire_retrieval_companion.html',
       pdfUrl: '/pdfs/first_british_empire_retrieval_companion.pdf',
-      downloadName: 'Y8_First_British_Empire_Retrieval_Companion.pdf',
+      downloadName: 'KS3_First_British_Empire_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   industrialisation_and_empire: {
     unitTitle: 'Industrialisation, Power & Protest (1750–1900)',
-    specSubtitle: 'Key Stage 3 • Year 8 Social & Economic Transformation',
+    specSubtitle: 'Key Stage 3 • Social & Economic Transformation',
     stage: 'ks3',
     textbook: {
       title: 'Industrialisation, Power & Protest Classroom Textbook',
@@ -314,7 +314,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering steam power, factory reform, Peterloo, Chartism, and suffrage.',
       htmlUrl: '/units/industrialisation_and_empire/textbook.html',
       pdfUrl: '/pdfs/industrialisation_and_empire_textbook.pdf',
-      downloadName: 'Y8_Industrialisation_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Industrialisation_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -324,7 +324,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured writing scaffolds.',
       htmlUrl: '/units/industrialisation_and_empire/pupil_workbook.html',
       pdfUrl: '/pdfs/industrialisation_and_empire_pupil_workbook.pdf',
-      downloadName: 'Y8_Industrialisation_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Industrialisation_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -335,14 +335,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/industrialisation_and_empire/industrialisation_and_empire_retrieval_companion.html',
       pdfUrl: '/pdfs/industrialisation_and_empire_retrieval_companion.pdf',
-      downloadName: 'Y8_Industrialisation_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Industrialisation_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   second_british_empire: {
     unitTitle: 'The Second British Empire (1783–1914)',
-    specSubtitle: 'Key Stage 3 • Year 8 Imperial & Global History',
+    specSubtitle: 'Key Stage 3 • Imperial & Global History',
     stage: 'ks3',
     textbook: {
       title: 'The Second British Empire Classroom Textbook',
@@ -351,7 +351,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering abolition, India 1857, Scramble for Africa, and contested legacies.',
       htmlUrl: '/units/second_british_empire/textbook.html',
       pdfUrl: '/pdfs/second_british_empire_textbook.pdf',
-      downloadName: 'Y8_Second_British_Empire_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Second_British_Empire_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -361,7 +361,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and interpretation tasks.',
       htmlUrl: '/units/second_british_empire/pupil_workbook.html',
       pdfUrl: '/pdfs/second_british_empire_pupil_workbook.pdf',
-      downloadName: 'Y8_Second_British_Empire_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Second_British_Empire_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -372,14 +372,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/second_british_empire/second_british_empire_retrieval_companion.html',
       pdfUrl: '/pdfs/second_british_empire_retrieval_companion.pdf',
-      downloadName: 'Y8_Second_British_Empire_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Second_British_Empire_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   australia: {
     unitTitle: 'Invasion & Survival in Australia (1768–1901)',
-    specSubtitle: 'Key Stage 3 • Year 8 Colonial & Indigenous Study',
+    specSubtitle: 'Key Stage 3 • Colonial & Indigenous Study',
     stage: 'ks3',
     textbook: {
       title: 'Invasion & Survival in Australia Classroom Textbook',
@@ -388,7 +388,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering First Nations culture, Cook, the First Fleet, and frontier resistance.',
       htmlUrl: '/units/australia/textbook.html',
       pdfUrl: '/pdfs/australia_textbook.pdf',
-      downloadName: 'Y8_Australia_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Australia_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -398,7 +398,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and source evaluation tasks.',
       htmlUrl: '/units/australia/pupil_workbook.html',
       pdfUrl: '/pdfs/australia_pupil_workbook.pdf',
-      downloadName: 'Y8_Australia_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Australia_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -409,14 +409,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/australia/australia_retrieval_companion.html',
       pdfUrl: '/pdfs/australia_retrieval_companion.pdf',
-      downloadName: 'Y8_Australia_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Australia_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   great_war: {
     unitTitle: 'Causes of the Great War (1871–1914)',
-    specSubtitle: 'Key Stage 3 • Year 9 Modern World Study',
+    specSubtitle: 'Key Stage 3 • Modern World Study',
     stage: 'ks3',
     textbook: {
       title: 'Causes of the Great War Classroom Textbook',
@@ -425,7 +425,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering Bismarckian alliances, Weltpolitik, naval race, and July 1914.',
       htmlUrl: '/units/great_war/textbook.html',
       pdfUrl: '/pdfs/great_war_textbook.pdf',
-      downloadName: 'Y9_Causes_of_Great_War_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Causes_of_Great_War_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -435,7 +435,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and causation essay scaffolds.',
       htmlUrl: '/units/great_war/pupil_workbook.html',
       pdfUrl: '/pdfs/great_war_pupil_workbook.pdf',
-      downloadName: 'Y9_Causes_of_Great_War_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Causes_of_Great_War_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -446,14 +446,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/great_war/great_war_retrieval_companion.html',
       pdfUrl: '/pdfs/great_war_retrieval_companion.pdf',
-      downloadName: 'Y9_Causes_of_Great_War_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Causes_of_Great_War_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   great_war_part2: {
     unitTitle: 'The Course of the Great War (1914–1919)',
-    specSubtitle: 'Key Stage 3 • Year 9 Modern World Study',
+    specSubtitle: 'Key Stage 3 • Modern World Study',
     stage: 'ks3',
     textbook: {
       title: 'The Course of the Great War Classroom Textbook',
@@ -462,7 +462,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering recruitment, trench warfare, global fronts, Home Front & Versailles.',
       htmlUrl: '/units/great_war_part2/textbook.html',
       pdfUrl: '/pdfs/great_war_part2_textbook.pdf',
-      downloadName: 'Y9_Course_of_Great_War_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Course_of_Great_War_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -472,7 +472,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and structured writing scaffolds.',
       htmlUrl: '/units/great_war_part2/pupil_workbook.html',
       pdfUrl: '/pdfs/great_war_part2_pupil_workbook.pdf',
-      downloadName: 'Y9_Course_of_Great_War_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Course_of_Great_War_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
       editions: [
         {
@@ -482,7 +482,7 @@ export const UNIT_RESOURCES_CATALOG = {
           desc: 'Double-page enquiry spreads covering trench warfare, Empire troops, Home Front, and 1918–19.',
           htmlUrl: '/units/great_war_part2/pupil_workbook.html',
           pdfUrl: '/pdfs/great_war_part2_pupil_workbook.pdf',
-          downloadName: 'Y9_Course_of_Great_War_Pupil_Workbook.pdf',
+          downloadName: 'KS3_Course_of_Great_War_Pupil_Workbook.pdf',
         },
         {
           id: 'combined',
@@ -491,7 +491,7 @@ export const UNIT_RESOURCES_CATALOG = {
           desc: 'Extended edition combining the 16-page inquiry workbook with wartime literary extracts and timeline.',
           htmlUrl: '/units/great_war_part2/great_war_part2_combined_workbook.html',
           pdfUrl: '/pdfs/great_war_part2_combined_workbook.pdf',
-          downloadName: 'Y9_Course_of_Great_War_Extended_Workbook.pdf',
+          downloadName: 'KS3_Course_of_Great_War_Extended_Workbook.pdf',
         },
       ],
     },
@@ -503,14 +503,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Recall questions and wartime literary extracts with pupil tracking ledger and rear Marking Bank.',
       htmlUrl: '/units/great_war_part2/great_war_part2_retrieval_companion.html',
       pdfUrl: '/pdfs/great_war_part2_retrieval_companion.pdf',
-      downloadName: 'Y9_Course_of_Great_War_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Course_of_Great_War_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   the_shoah: {
     unitTitle: 'The Shoah (1933–1945)',
-    specSubtitle: 'Key Stage 3 • Year 9 Holocaust Depth Study',
+    specSubtitle: 'Key Stage 3 • Holocaust Depth Study',
     stage: 'ks3',
     textbook: {
       title: 'The Shoah Classroom Textbook',
@@ -519,7 +519,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering pre-war Jewish life, persecution, ghettoisation, resistance & liberation.',
       htmlUrl: '/units/the_shoah/textbook.html',
       pdfUrl: '/pdfs/the_shoah_textbook.pdf',
-      downloadName: 'Y9_The_Shoah_Classroom_Textbook.pdf',
+      downloadName: 'KS3_The_Shoah_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -529,7 +529,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads grounded in authentic archival testimonies and primary records.',
       htmlUrl: '/units/the_shoah/pupil_workbook.html',
       pdfUrl: '/pdfs/the_shoah_pupil_workbook.pdf',
-      downloadName: 'Y9_The_Shoah_Pupil_Workbook.pdf',
+      downloadName: 'KS3_The_Shoah_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -540,14 +540,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 carefully calibrated factual retrieval questions with rear Marking Bank.',
       htmlUrl: '/units/the_shoah/the_shoah_retrieval_companion.html',
       pdfUrl: '/pdfs/the_shoah_retrieval_companion.pdf',
-      downloadName: 'Y9_The_Shoah_Retrieval_Companion.pdf',
+      downloadName: 'KS3_The_Shoah_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   post_war_britain: {
     unitTitle: 'Rights, Protest & Post-War Britain (1945–1990)',
-    specSubtitle: 'Key Stage 3 • Year 9 Contemporary Britain',
+    specSubtitle: 'Key Stage 3 • Contemporary Britain',
     stage: 'ks3',
     textbook: {
       title: 'Post-War Britain Classroom Textbook',
@@ -556,7 +556,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Pure narrative classroom textbook covering the Welfare State, Windrush, Bristol Bus Boycott & social change.',
       htmlUrl: '/units/post_war_britain/textbook.html',
       pdfUrl: '/pdfs/post_war_britain_textbook.pdf',
-      downloadName: 'Y9_Post_War_Britain_Classroom_Textbook.pdf',
+      downloadName: 'KS3_Post_War_Britain_Classroom_Textbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     workbook: {
@@ -566,7 +566,7 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: 'Double-page enquiry spreads with 5-stage chronological spines and extended writing scaffolds.',
       htmlUrl: '/units/post_war_britain/pupil_workbook.html',
       pdfUrl: '/pdfs/post_war_britain_pupil_workbook.pdf',
-      downloadName: 'Y9_Post_War_Britain_Pupil_Workbook.pdf',
+      downloadName: 'KS3_Post_War_Britain_Pupil_Workbook.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     retrieval: {
@@ -577,14 +577,14 @@ export const UNIT_RESOURCES_CATALOG = {
       desc: '30 tiered recall questions across all enquiries with handwriting lines and rear Marking Bank.',
       htmlUrl: '/units/post_war_britain/post_war_britain_retrieval_companion.html',
       pdfUrl: '/pdfs/post_war_britain_retrieval_companion.pdf',
-      downloadName: 'Y9_Post_War_Britain_Retrieval_Companion.pdf',
+      downloadName: 'KS3_Post_War_Britain_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
 
   cold_war: {
     unitTitle: 'The Cold War & Global Flashpoints (1945–1991)',
-    specSubtitle: 'Year 9 • Key Stage 3',
+    specSubtitle: 'Key Stage 3 • Modern World Study',
     stage: 'ks3',
     textbook: {
       title: 'Superpower Relations & Cold War Classroom Textbook',

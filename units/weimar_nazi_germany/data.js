@@ -1471,10 +1471,10 @@ export default {
           "id": "weimar_l1_source_c",
           "letter": "E",
           "title": "Source E: Frontispiece of the Official Weimar Constitution (Die Verfassung des Deutschen Reichs, 11 August 1919)",
-          "src": "/images/weimar_constitution_1919_document.jpg",
-          "image": "/images/weimar_constitution_1919_document.jpg",
+          "src": "/images/upgraded/gcse-p3/weimar_l01_s4_weimar_constitution_1919.jpg",
+          "image": "/images/upgraded/gcse-p3/weimar_l01_s4_weimar_constitution_1919.jpg",
           "source": "/images/weimar_constitution_1919_document.jpg",
-          "caption": "Official title page of the Weimar Constitution (Reichsgesetzblatt 1919), establishing a democratic republic with universal suffrage and emergency presidential decrees under Article 48.",
+          "caption": "First and final pages of the Weimar Constitution (Die Verfassung des Deutschen Reichs, 11 August 1919), bearing the signatures of Reich President Friedrich Ebert and the Reich Cabinet at Schwarzburg.",
           "desc": "Official printed state legislative document promulgating the Weimar Constitution, published in Berlin on 11 August 1919.",
           "provenance": "Reichsgesetzblatt 1919, No. 152, pp. 1383–1418. Bundesarchiv R 43-I/1384.",
           "citation": "Reichsgesetzblatt, Berlin / German Federal Archives.",
@@ -1622,7 +1622,14 @@ export default {
             "Constitutional rule letting the President pass emergency laws without parliament."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l01_banner_berlin_revolution_1918.jpg",
+        "caption": "Crowds along Unter den Linden in Berlin during an Ebert–Scheidemann Republican demonstration (\"Für die Regierung Ebert-Scheidemann, gegen den Terror!\"), winter 1918–1919.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l01_banner_berlin_revolution_1918.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l01_banner_berlin_revolution_1918.jpg"
     },
     {
       "id": "lesson_1_2",
@@ -2157,9 +2164,9 @@ export default {
             },
             "type": "visual"
           },
-          "image": "/images/weimar_hyperinflation_children_cash_1923.jpg",
-          "image_alt": "German children stacking bundles of worthless paper banknotes like toy building blocks during the 1923 hyperinflation",
-          "caption": "The Hyperinflation Catastrophe (1923): Money lost its value so rapidly that millions of marks were bundled into bricks for children's games, permanently wiping out middle-class life savings.",
+          "image": "/images/upgraded/gcse-p3/weimar_l02_b4_hyperinflation_berlin_bread_1923.jpg",
+          "image_alt": "Crowds of Berliners holding bundles of paper Reichsmarks besieging a bread delivery wagon during the peak of the October 1923 hyperinflation crisis",
+          "caption": "The Hyperinflation Catastrophe (October 1923): Berlin shoppers thrusting fistfuls of rapidly depreciating million-mark banknotes toward a baker’s wagon to secure loaves of bread before prices doubled again, while middle-class life savings were wiped out.",
           "isReversed": true,
           "act_title": "Stage 5: How did passive resistance in the Ruhr trigger runaway hyperinflation?",
           "paragraphs": [
@@ -3587,7 +3594,14 @@ export default {
             "Runaway price rises in 1923 that made the paper mark completely worthless."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l02_banner_ruhr_occupation_dortmund_1923.jpg",
+        "caption": "French troops and armoured car patrolling a street in Dortmund during the Franco-Belgian occupation of the Ruhr (1923).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l02_banner_ruhr_occupation_dortmund_1923.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l02_banner_ruhr_occupation_dortmund_1923.jpg"
     },
     {
       "id": "lesson_1_3",
@@ -5136,7 +5150,14 @@ export default {
             "Treaty where Germany freely accepted its western borders with France."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l03_banner_locarno_treaties_1925.jpg",
+        "caption": "European statesmen including German Chancellor Hans Luther and Foreign Minister Gustav Stresemann gathered at the Locarno Pact negotiations in October 1925.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l03_banner_locarno_treaties_1925.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l03_banner_locarno_treaties_1925.jpg"
     },
     {
       "id": "lesson_1_4",
@@ -6901,10 +6922,10 @@ export default {
           "id": "weimar_l4_source_e",
           "letter": "E",
           "title": "Source E: German National People's Party (DNVP) Campaign Insignia and Anti-Weimar Symbol (1928)",
-          "src": "/images/weimar_dnvp_poster_1928.jpg",
-          "image": "/images/weimar_dnvp_poster_1928.jpg",
+          "src": "/images/upgraded/gcse-p3/weimar_l04_s4_dnvp_election_poster_1928.jpg",
+          "image": "/images/upgraded/gcse-p3/weimar_l04_s4_dnvp_election_poster_1928.jpg",
           "source": "/images/weimar_dnvp_poster_1928.jpg",
-          "caption": "German National People's Party (DNVP) campaign insignia from the 1928 Reichstag election, rallying conservative Christians and nationalists against \"Cultural Bolshevism\", modern art, and American jazz.",
+          "caption": "German National People’s Party (DNVP) election campaign float in Berlin flying Imperial black-white-red banners alongside Alfred Hugenberg’s nationalist slogan (\"Vorwärts mit Hugenberg — Deutschnational Liste 2\"), rallying traditionalists against Weimar democracy and cultural modernism (Bundesarchiv Bild 183-2006-0329-504).",
           "desc": "Official political election insignia and campaign banner of the German National People's Party (DNVP), Berlin, 1928.",
           "provenance": "Deutschnationale Volkspartei (DNVP) Archive / Deutsches Historisches Museum (DHM), Berlin, 1928.",
           "citation": "German Historical Museum (Deutsches Historisches Museum), Berlin.",
@@ -7051,7 +7072,14 @@ export default {
             "Art movement led by Dix and Grosz painting harsh wartime and social reality."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l04_banner_kurfuerstendamm_cafe_wien_1920s.jpg",
+        "caption": "Interior of the fashionable Café Wien on the Kurfürstendamm in Berlin during the Golden Twenties.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l04_banner_kurfuerstendamm_cafe_wien_1920s.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l04_banner_kurfuerstendamm_cafe_wien_1920s.jpg"
     },
     {
       "id": "lesson_2_1",
@@ -8644,7 +8672,14 @@ export default {
             "Violent Nazi paramilitary wing formed in 1921 and led by Ernst Röhm."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l05_banner_munich_1919_uprising.jpg",
+        "caption": "Armed government and Freikorps troops escorting captured Red Guards across Max-Joseph-Platz in Munich during the suppression of the Bavarian Soviet Republic (May 1919).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l05_banner_munich_1919_uprising.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l05_banner_munich_1919_uprising.jpg"
     },
     {
       "id": "lesson_2_2",
@@ -10435,7 +10470,14 @@ export default {
             "Regional Nazi leader appointed directly by Hitler to run one of 35 districts."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l06_banner_munich_nsdap_march_nov1923.jpg",
+        "caption": "Uniformed Nazi Party (NSDAP) stormtroopers marching with swastika banner and brass band in Munich on 4 November 1923, four days before the Beer Hall Putsch.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l06_banner_munich_nsdap_march_nov1923.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l06_banner_munich_nsdap_march_nov1923.jpg"
     },
     {
       "id": "lesson_2_3",
@@ -12617,7 +12659,14 @@ export default {
             "Far-left party whose surge terrified middle-class voters into backing Hitler."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l07_banner_potsdam_hitler_rally_1932.jpg",
+        "caption": "Adolf Hitler and NSDAP officials walking past massed ranks of supporters during the October 1932 Potsdam rally.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l07_banner_potsdam_hitler_rally_1932.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l07_banner_potsdam_hitler_rally_1932.jpg"
     },
     {
       "id": "lesson_2_4",
@@ -13258,9 +13307,9 @@ export default {
           "act": 1,
           "text": "<span class=\"para-ref\">[1.1]</span> Parliamentary rule unravelled when President Hindenburg sacked **Brüning** in May 1932 after endless Article 48 decrees failed to end the slump. Power shifted away from elected MPs to Hindenburg and his conservative palace circle. Although the Nazis won **230 seats** in July, fresh elections in November 1932 dealt Hitler a sharp setback.\n\n<span class=\"para-ref\">[1.2]</span> In November 1932, the Nazi Party **lost two million votes and thirty-four seats** as voters tired of street violence. Drained of campaign cash, the party faced internal crisis in **December 1932** when Gregor Strasser urged joining a coalition before Nazi support faded altogether.",
           "content": "<span class=\"para-ref\">[1.1]</span> Parliamentary rule unravelled when President Hindenburg sacked **Brüning** in May 1932 after endless Article 48 decrees failed to end the slump. Power shifted away from elected MPs to Hindenburg and his conservative palace circle. Although the Nazis won **230 seats** in July, fresh elections in November 1932 dealt Hitler a sharp setback.\n\n<span class=\"para-ref\">[1.2]</span> In November 1932, the Nazi Party **lost two million votes and thirty-four seats** as voters tired of street violence. Drained of campaign cash, the party faced internal crisis in **December 1932** when Gregor Strasser urged joining a coalition before Nazi support faded altogether.",
-          "image": "/images/weimar_individuals/gregor_strasser.jpg",
-          "image_alt": "Gregor Strasser, head of the NSDAP political organisation who resigned in December 1932",
-          "caption": "Gregor Strasser (1892–1934): Head of the Nazi Party's Reich political organisation whose attempted coalition negotiations with Chancellor Schleicher in December 1932 precipitated a bitter party split and near financial ruin before Hitler reasserted total dominance.",
+          "image": "/images/upgraded/gcse-p3/weimar_l08_b0_gregor_strasser_1932.jpg",
+          "image_alt": "Studio press portrait of Gregor Strasser, head of the Nazi Party political organisation, December 1932",
+          "caption": "Gregor Strasser (1892–1934): Head of the Nazi Party’s Reich political organisation whose attempted coalition negotiations with Chancellor Kurt von Schleicher in December 1932 precipitated a bitter party split and near financial ruin before Hitler reasserted total dominance.",
           "isReversed": false,
           "sources": [
             {
@@ -14484,10 +14533,10 @@ export default {
           "id": "weimar_l8_source_d",
           "letter": "B",
           "title": "Source B: General Kurt von Schleicher, Chancellor of Germany (December 1932–January 1933)",
-          "src": "/images/weimar_kurt_von_schleicher.jpg",
-          "image": "/images/weimar_kurt_von_schleicher.jpg",
+          "src": "/images/upgraded/gcse-p3/weimar_l08_s1_kurt_von_schleicher_1932.jpg",
+          "image": "/images/upgraded/gcse-p3/weimar_l08_s1_kurt_von_schleicher_1932.jpg",
           "source": "/images/weimar_kurt_von_schleicher.jpg",
-          "caption": "Official portrait photograph of General Kurt von Schleicher, the master political schemer of the German Army whose brief chancellorship collapsed in January 1933.",
+          "caption": "Official press portrait of General Kurt von Schleicher (late 1932), the Reichswehr political strategist whose 57-day chancellorship collapsed in January 1933 after failing to split the Nazi Party.",
           "desc": "Official portrait photograph of Reich Chancellor General Kurt von Schleicher, Berlin, December 1932.",
           "provenance": "Bundesarchiv Bild 183-B0527-0001-020, Berlin, December 1932.",
           "citation": "German Federal Archives (Bundesarchiv), Koblenz.",
@@ -14613,9 +14662,13 @@ export default {
           "a": "The Nazis lost 34 seats and funds ran low, convincing Papen and the elites that Hitler had peaked and was desperate enough to be controlled."
         }
       ],
-      "banner": "/images/hitler_hindenburg_1933.jpg",
-      "card_image": "/images/hitler_hindenburg_1933.jpg",
-      "hero_image": "/images/hitler_hindenburg_1933.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l08_banner_papen_schleicher_cabinet_1932.jpg",
+        "caption": "Chancellor Franz von Papen’s conservative \"Cabinet of Barons\" including General Kurt von Schleicher (standing left) and Foreign Minister Konstantin von Neurath in Berlin (November 1932).",
+        "position": "center 15%"
+      },
+      "card_image": "/images/upgraded/gcse-p3/weimar_l08_banner_papen_schleicher_cabinet_1932.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l08_banner_papen_schleicher_cabinet_1932.jpg",
       "banner_position": "center 15%",
       "card_position": "center 15%",
       "guided_reading": [
@@ -14746,7 +14799,8 @@ export default {
             "Elderly Weimar President who legally appointed Hitler Chancellor in Jan 1933."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l08_banner_papen_schleicher_cabinet_1932.jpg"
     },
     {
       "id": "lesson_3_1",
@@ -16503,7 +16557,14 @@ export default {
             "Supreme Leader title taken by Hitler in August 1934 after Hindenburg died."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l09_banner_reichstag_fire_chamber_1933.jpg",
+        "caption": "Police officers inspecting the gutted, waterlogged plenary chamber of the Reichstag in Berlin on the morning after the Reichstag Fire (28 February 1933).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l09_banner_reichstag_fire_chamber_1933.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l09_banner_reichstag_fire_chamber_1933.jpg"
     },
     {
       "id": "lesson_3_2",
@@ -18093,7 +18154,14 @@ export default {
             "Breakaway Protestant church led by Niemöller opposing Nazi church control."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l10_banner_reichskonkordat_rome_1933.jpg",
+        "caption": "Cardinal Secretary of State Eugenio Pacelli (centre) and German Vice-Chancellor Franz von Papen (second from left) at the signing of the Reichskonkordat in the Vatican (20 July 1933).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l10_banner_reichskonkordat_rome_1933.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l10_banner_reichskonkordat_rome_1933.jpg"
     },
     {
       "id": "lesson_3_3",
@@ -20046,7 +20114,14 @@ export default {
             "Nazi label banning modern, abstract, and Weimar expressionist art as un-German."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l11_banner_nuremberg_rally_1933.jpg",
+        "caption": "Massed ranks and swastika standards filling the Nuremberg stadium during the September 1933 Nazi Party Rally (\"Rally of Victory\").",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l11_banner_nuremberg_rally_1933.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l11_banner_nuremberg_rally_1933.jpg"
     },
     {
       "id": "lesson_3_4",
@@ -22014,7 +22089,14 @@ export default {
             "Middle-class teens defying Nazi culture via American jazz and British fashion."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l12_banner_august_landmesser_1936.jpg",
+        "caption": "Shipyard workers at the Blohm+Voss dockyard in Hamburg giving the Nazi salute during the launch of the training vessel Horst Wessel (13 June 1936), while a lone worker (widely identified as August Landmesser or Gustav Wegert) stands with arms folded in quiet defiance.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l12_banner_august_landmesser_1936.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l12_banner_august_landmesser_1936.jpg"
     },
     {
       "id": "lesson_4_1",
@@ -22399,9 +22481,9 @@ export default {
           "act": 4,
           "text": "<span class=\"para-ref\">[4.1]</span> Alongside gold medals requiring Hitler Youth boys to **salute her** and later Duty Year rules (**a policy forcing young women to work on farms or in factories**), eugenics barred \"unfit\" births. Under the July 1933 Hereditary Health Act, Genetic Health Courts ordered **compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities**.\n\n<span class=\"para-ref\">[4.2]</span> Under this harsh law, **over 400,000** German **citizens** — mostly working-class people — were sterilised against their will. Courts targeted hereditary blindness, deafness, epilepsy, schizophrenia, and severe alcoholism, while the 1935 Marital Health Law required genetic fitness certificates before marriage.",
           "content": "<span class=\"para-ref\">[4.1]</span> Alongside gold medals requiring Hitler Youth boys to **salute her** and later Duty Year rules (**a policy forcing young women to work on farms or in factories**), eugenics barred \"unfit\" births. Under the July 1933 Hereditary Health Act, Genetic Health Courts ordered **compulsory sterilisation of individuals diagnosed with hereditary illnesses or disabilities**.\n\n<span class=\"para-ref\">[4.2]</span> Under this harsh law, **over 400,000** German **citizens** — mostly working-class people — were sterilised against their will. Courts targeted hereditary blindness, deafness, epilepsy, schizophrenia, and severe alcoholism, while the 1935 Marital Health Law required genetic fitness certificates before marriage.",
-          "image": "/images/mothers_cross_award.jpg",
-          "image_alt": "The Cross of Honour of the German Mother medal in blue and white enamel with ribbon",
-          "caption": "The Cross of Honour of the German Mother (Ehrenkreuz der Deutschen Mutter): Instituted in December 1938, this state medal militarized motherhood into a civic duty. Awarded on Hitler’s mother’s birthday (12 August), mothers received Bronze for 4–5 children, Silver for 6–7, and Gold for 8 or more racially pure Aryan children.",
+          "image": "/images/upgraded/gcse-p3/weimar_l13_b3_mothers_cross_award.jpg",
+          "image_alt": "First-Class Gold Cross of Honour of the German Mother (Ehrenkreuz der Deutschen Mutter) in blue and white enamel with neck ribbon, miniature pin bar, and presentation case",
+          "caption": "The Cross of Honour of the German Mother (Ehrenkreuz der Deutschen Mutter): Instituted in December 1938, this state medal militarised motherhood into a racial duty—awarding Bronze for 4–5 children, Silver for 6–7, and Gold (shown with its presentation case) for 8 or more \"hereditarily healthy\" Aryan children, in stark contrast to the forced sterilisation of citizens deemed \"unfit\".",
           "isReversed": true,
           "act_title": "Stage 4: Forced Sterilisation & Eugenic Control",
           "sources": [
@@ -23588,7 +23670,14 @@ export default {
             "SS maternity scheme started in 1935 to breed “racially pure” Aryan children."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l13_banner_ns_frauenschaft_assembly.jpg",
+        "caption": "Mass assembly of the National Socialist Women’s League (NS-Frauenschaft) giving the Hitler salute inside the swastika-draped Sigmaringen municipal hall (mid-1930s).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l13_banner_ns_frauenschaft_assembly.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l13_banner_ns_frauenschaft_assembly.jpg"
     },
     {
       "id": "lesson_4_2",
@@ -25085,7 +25174,14 @@ export default {
             "Compulsory pseudo-science teaching racial hierarchy and selective breeding."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l14_banner_hitler_youth_nuremberg_1935.jpg",
+        "caption": "Adolf Hitler, Rudolf Hess, and Reich Youth Leader Baldur von Schirach inspecting uniformed Hitlerjugend formations at the Nuremberg Rally (September 1935).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l14_banner_hitler_youth_nuremberg_1935.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l14_banner_hitler_youth_nuremberg_1935.jpg"
     },
     {
       "id": "lesson_4_3",
@@ -27057,7 +27153,14 @@ export default {
             "Four-Year Plan drive for economic self-sufficiency to survive wartime blockades."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l15_banner_kdf_ship_passengers_1934.jpg",
+        "caption": "German holidaymakers listening to a shipboard brass band on the deck of a Kraft durch Freude (\"Strength Through Joy\", KdF) cruise vessel (c. 1934–1935).",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l15_banner_kdf_ship_passengers_1934.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l15_banner_kdf_ship_passengers_1934.jpg"
     },
     {
       "id": "lesson_4_4",
@@ -28923,7 +29026,14 @@ export default {
             "Forced seizure and rock-bottom transfer of Jewish businesses to non-Jews."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/weimar_l16_banner_aachen_synagogue_kristallnacht_1938.jpg",
+        "caption": "Charred interior ruins of the Old Synagogue in Aachen on 10 November 1938 following its destruction during the Kristallnacht pogrom.",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-p3/weimar_l16_banner_aachen_synagogue_kristallnacht_1938.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/weimar_l16_banner_aachen_synagogue_kristallnacht_1938.jpg"
     }
   ],
   "key_individuals": [
@@ -29769,6 +29879,6 @@ export default {
   "edition": "2026.1",
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "yearGroup": "Years 10–11",
-  "year_group": "Years 10–11"
+  "yearGroup": "GCSE (9–1)",
+  "year_group": "GCSE (9–1)"
 };

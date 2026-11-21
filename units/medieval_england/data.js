@@ -16,7 +16,7 @@ export default {
   "cover_image": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
   "cover_image_position": "center 30%",
   "is_ks3": true,
-  "year_group": "Year 7",
+  "year_group": "Key Stage 3",
   "timeline": [
     {
       "year": "1066",
@@ -378,12 +378,12 @@ export default {
       "enquiry": "Why did William of Normandy win the Battle of Hastings in 1066?",
       "subtitle": "From the Succession Crisis of Edward the Confessor to the Shield Wall at Senlac Hill",
       "skill": "Causation & Battlefield Tactics",
-      "card_image": "/images/william_the_conqueror.jpg",
+      "card_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/bayeux_norman_cavalry.jpg",
-        "position": "center 35%",
-        "caption": "Norman heavy cavalry crashing against the Anglo-Saxon shield wall at the Battle of Hastings (14 October 1066), as depicted in the Bayeux Tapestry."
+        "image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
+        "caption": "Bayeux Tapestry Scene 50: Messenger Reporting Duke William’s Army to King Harold before Hastings",
+        "position": "center 35%"
       },
       "margin_spine": [
         {
@@ -1954,7 +1954,9 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "When Edward the Confessor died childless in January 1066, a fierce [Succession] crisis erupted despite the [Witan] electing Harold Godwinson as king. After marching north to defeat Harald Hardrada, Harold’s exhausted peasant [Fyrd] and axe-wielding [Housecarl] bodyguards formed a tight shield wall at Hastings on 14 October. Duke William finally broke their line using the clever [Feigned Retreat] trick."
+      "vocab_cloze_text": "When Edward the Confessor died childless in January 1066, a fierce [Succession] crisis erupted despite the [Witan] electing Harold Godwinson as king. After marching north to defeat Harald Hardrada, Harold’s exhausted peasant [Fyrd] and axe-wielding [Housecarl] bodyguards formed a tight shield wall at Hastings on 14 October. Duke William finally broke their line using the clever [Feigned Retreat] trick.",
+      "banner_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
+      "hero_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg"
     },
     {
       "id": "lesson_2",
@@ -1962,12 +1964,12 @@ export default {
       "enquiry": "How did a minority Norman elite of fewer than 10,000 soldiers control two million hostile Anglo-Saxons?",
       "subtitle": "Earthworks, Extermination, and Fiscal Surveillance",
       "skill": "Historical Analysis: Control & Subjugation",
-      "card_image": "/images/portchester_keep.jpg",
+      "card_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
       "card_position": "center 25%",
       "banner": {
-        "image": "/images/portchester_seawards.jpg",
-        "position": "center 35%",
-        "caption": "Portchester Castle, Hampshire: William the Conqueror planted a 4-storey Norman stone keep inside the massive Roman Saxon Shore fort walls to police the Solent and Portsmouth Harbour."
+        "image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
+        "caption": "The White Tower and Tower of London Viewed Across the River Thames",
+        "position": "center 35%"
       },
       "margin_spine": [
         {
@@ -2239,9 +2241,9 @@ export default {
           "decimal": "[2.3]",
           "title": "Stone Keeps & Portchester Castle (1070–1100)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> As Norman rule stabilized, temporary timber watchtowers were replaced with massive stone keeps to project permanent imperial dominance. Along the south coast, the Normans commandeered massive 3rd-century ancient Roman walls, constructing a formidable four-storey thick limestone keep inside the Roman fort enclosure.</p><p class=\"prose-p\">The fortress guarded a deep warship harbour in Portsmouth Harbour, securing William’s cross-Channel supply lines to Normandy and deterring French invasion fleets. The towering stone walls projected terrifying royal authority over defeated Anglo-Saxons across southern England.</p>",
-          "image": "/images/medieval_england/plate_2_2_portchester_castle_keep.jpg",
-          "image_alt": "Portchester Castle Norman Keep",
-          "caption": "Portchester Castle: The 12th-century limestone keep standing inside the surviving 3rd-century Roman walls.",
+          "image": "/images/upgraded/ks3-early/med_l2_b2_portchester_keep.jpg",
+          "image_alt": "12th-century limestone Norman keep of Portchester Castle rising inside 3rd-century Roman flint walls",
+          "caption": "Portchester Castle, Hampshire: The towering 12th-century Norman limestone keep built inside the surviving 3rd-century Roman Saxon Shore fort walls to command Portsmouth Harbour.",
           "theme_heading": "Imperial Stone Fortifications",
           "sources": [
             {
@@ -3471,7 +3473,9 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "After Hastings, William enforced Norman [Subjugation] across England by building hundreds of timber [Motte-and-Bailey] forts, each guarded by a loyal Norman [Castellan]. When northern rebels rose up in 1069, William ordered the ruthless [Harrying] of the North, burning crops and villages across Yorkshire. Finally, in 1086, royal commissioners compiled the [Domesday Book] to tax the realm and record Norman landownership."
+      "vocab_cloze_text": "After Hastings, William enforced Norman [Subjugation] across England by building hundreds of timber [Motte-and-Bailey] forts, each guarded by a loyal Norman [Castellan]. When northern rebels rose up in 1069, William ordered the ruthless [Harrying] of the North, burning crops and villages across Yorkshire. Finally, in 1086, royal commissioners compiled the [Domesday Book] to tax the realm and record Norman landownership.",
+      "banner_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
+      "hero_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg"
     },
     {
       "id": "lesson_3",
@@ -3479,12 +3483,12 @@ export default {
       "enquiry": "Why did the conflict between King Henry II and Archbishop Thomas Becket erupt into murder in Canterbury Cathedral?",
       "subtitle": "Criminous Clerks, Royal Sovereignty, and the Martyrdom of 1170",
       "skill": "Historical Significance & Church-State Conflict",
-      "card_image": "/images/becket_murder.jpg",
+      "card_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/henry_becket_dispute.jpg",
-        "position": "center 30%",
-        "caption": "King Henry II and Archbishop Thomas Becket disputing royal versus ecclesiastical sovereignty, depicted in a 14th-century English manuscript illumination."
+        "image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
+        "caption": "The Great Cloister of Canterbury Cathedral Leading to the Martyrdom Transept",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -3721,9 +3725,9 @@ export default {
           "decimal": "[3.2]",
           "title": "Becket’s Metamorphosis & Spiritual Allegiance (1162)",
           "text": "<span class=\"para-ref\">[3.2]</span> The moment Becket was consecrated Archbishop in June 1162, he underwent an astonishing personal and spiritual transformation. Becket immediately resigned the Chancellorship, <strong>Throws Off Silk Robes</strong> of worldly power, and adopted a life of severe monastic asceticism, wearing a <strong>Scratchy Goat Hairshirt</strong> infested with lice beneath his vestments and washing the feet of thirteen paupers daily. Becket declared himself <strong>Loyal Only to the Pope</strong> and the universal Catholic Church, setting up an unavoidable collision course with the Crown.",
-          "image": "/images/medieval_england/plate_3_1_henry_becket_dispute.jpg",
-          "image_alt": "Thomas Becket Monastic Metamorphosis",
-          "caption": "Thomas Becket adopting ascetic robes and dedicating himself entirely to the sovereignty of the Church.",
+          "image": "/images/upgraded/ks3-early/med_l3_b1_becket_leaves_pope.jpg",
+          "image_alt": "13th-century Becket Leaves manuscript illumination showing Archbishop Thomas Becket embracing Pope Alexander III",
+          "caption": "Archbishop Thomas Becket ('S. Th.') pledging spiritual allegiance to Pope Alexander III ('Alexand papa'), attended by his cross-bearer (The Becket Leaves, c. 1220–1240, British Library Loan MS 88, fol. 1v).",
           "theme_heading": "Spiritual Metamorphosis",
           "sources": [
             {
@@ -4971,7 +4975,9 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "King Henry II appointed his friend Thomas Becket as Archbishop expecting help in curbing separate [Canon Law] courts. Instead, Becket defended [Benefit of Clergy], which allowed any [Criminous Clerk] accused of serious crime to escape royal hanging. Their bitter clash over the 1164 [Constitutions of Clarendon] ended in December 1170 with Becket’s [Martyrdom] inside Canterbury Cathedral, forcing Henry into barefoot penance."
+      "vocab_cloze_text": "King Henry II appointed his friend Thomas Becket as Archbishop expecting help in curbing separate [Canon Law] courts. Instead, Becket defended [Benefit of Clergy], which allowed any [Criminous Clerk] accused of serious crime to escape royal hanging. Their bitter clash over the 1164 [Constitutions of Clarendon] ended in December 1170 with Becket’s [Martyrdom] inside Canterbury Cathedral, forcing Henry into barefoot penance.",
+      "banner_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
+      "hero_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg"
     },
     {
       "id": "lesson_4",
@@ -4979,12 +4985,12 @@ export default {
       "enquiry": "Was Magna Carta a revolutionary victory for human freedom or a selfish act of baronial extortion?",
       "subtitle": "Scutage, Royal Autocracy, and the Meadow of Runnymede",
       "skill": "Historical Interpretation: Liberty vs Self-Interest",
-      "card_image": "/images/magna_carta_1215.jpg",
+      "card_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/king_john_matthew_paris.jpg",
-        "position": "center 25%",
-        "caption": "King John depicted in Matthew Paris’s 13th-century chronicle Historia Anglorum: a monarch whose financial extortion and military failures brought civil war."
+        "image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
+        "caption": "Magna Charta Island on the River Thames at Runnymede",
+        "position": "center 25%"
       },
       "margin_spine": [
         {
@@ -5188,9 +5194,9 @@ export default {
           "act": 1,
           "title": "‘Softsword’ & The Loss of Normandy (1199–1204)",
           "text": "<span class=\"para-ref\">[4.1]</span> When King John inherited the Angevin Empire in 1199, he succeeded his heroic elder brother, Richard the Lionheart. But while Richard had spent England’s wealth on crusades, John was an administrative micromanager who lacked military genius. In 1204, King Philip II of France outmanoeuvred John and captured Normandy—the ancestral homeland of the English aristocracy. Mocked by his barons as \"John Softsword,\" John spent the next decade obsessively raising astronomical sums of money to finance an army to win Normandy back, pushing royal feudal taxation to breaking point.",
-          "image": "/images/medieval_england/plate_4_1_king_john_matthew_paris.jpg",
-          "image_alt": "Chronicle portrait of King John holding a miniature church by Matthew Paris",
-          "caption": "King John depicted in Matthew Paris's Historia Anglorum (c. 1250–1259, British Library Royal MS 14 C. VII). Paris portrayed John as an erratic, extortionate monarch whose catastrophic loss of Normandy in 1204 forced relentless financial demands upon the English baronage.",
+          "image": "/images/upgraded/ks3-early/med_l4_b0_king_john_matthew_paris_f9.jpg",
+          "image_alt": "Illuminated royal portraits by Matthew Paris showing Richard the Lionheart above and King John below in British Library Royal MS 14 C. VII",
+          "caption": "Royal portraits in Matthew Paris’s Historia Anglorum (c. 1250–1259, British Library Royal MS 14 C. VII, fol. 9r), contrasting warrior-crusader Richard I (top right) with King John (bottom left), whose 1204 loss of Normandy triggered relentless fiscal extortion.",
           "isReversed": false,
           "sources": [
             {
@@ -6552,7 +6558,9 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "After losing Normandy in 1204, King John angered English barons by demanding heavy [Scutage] taxes, while his quarrel with the Pope placed England under a six-year [Interdict]. Defeat at Bouvines in 1214 forced John to Runnymede in June 1215 to seal [Magna Carta]. Clause 39 laid early foundations for [Habeas Corpus] and established the [Rule of Law] over the monarch himself."
+      "vocab_cloze_text": "After losing Normandy in 1204, King John angered English barons by demanding heavy [Scutage] taxes, while his quarrel with the Pope placed England under a six-year [Interdict]. Defeat at Bouvines in 1214 forced John to Runnymede in June 1215 to seal [Magna Carta]. Clause 39 laid early foundations for [Habeas Corpus] and established the [Rule of Law] over the monarch himself.",
+      "banner_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
+      "hero_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg"
     },
     {
       "id": "lesson_5",
@@ -6560,12 +6568,12 @@ export default {
       "enquiry": "How did the demographic shock of the Black Death lead to the peasant uprising of 1381?",
       "subtitle": "Yersinia Pestis, The Statute of Labourers, and the Storming of London",
       "skill": "Causal Links & Socio-Economic Change",
-      "card_image": "/images/black_death.jpg",
+      "card_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
       "card_position": "center 20%",
       "banner": {
-        "image": "/images/plague_burial.jpg",
-        "position": "center 30%",
-        "caption": "Citizens of Tournai burying plague victims in communal coffins during the Black Death of 1348–1349, depicted in the contemporary chronicle of Gilles li Muisis."
+        "image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
+        "caption": "Danse Macabre (Dance of Death) Medieval Fresco Frieze",
+        "position": "center 30%"
       },
       "margin_spine": [
         {
@@ -6869,9 +6877,9 @@ export default {
           "decimal": "[5.4]",
           "title": "The Regressive Poll Taxes & Brentwood Spark (1377–1381)",
           "text": "<span class=\"para-ref\">[5.4]</span> Simmering tensions erupted when the royal government faced bankruptcy from the costly Hundred Years’ War, passing a crippling <strong>French War Debt Bill</strong>. Unlike property taxes, the third Poll Tax of 1381 demanded a flat <strong>Twelve Pence from Every Head</strong> aged over fifteen—equivalent to two weeks' hard wages for a labourer. Mass tax evasion followed, and when royal commissioner John Bampton arrived on 30 May 1381, he was a <strong>Tax Collector Chased with Pitchforks</strong> by furious Essex villagers at Brentwood, igniting armed rebellion.",
-          "image": "/images/medieval_england/plate_5_2_wat_tyler_john_ball.jpg",
-          "image_alt": "Medieval Froissart miniature of priest John Ball preaching from horseback in 1381",
-          "caption": "Illuminated miniature from Jean Froissart’s Chronicles (c. 1470) showing radical priest John Ball ('Jehan Balle') preaching equality from horseback during the 1381 Peasants’ Revolt.",
+          "image": "/images/upgraded/ks3-early/med_l5_b3_froissart_peasants_revolt_f172.jpg",
+          "image_alt": "15th-century Froissart manuscript miniature showing 1381 Peasants' Revolt rebels seizing Chancellor Simon Sudbury and Treasurer Robert Hales",
+          "caption": "Illuminated miniature from Jean Froissart’s Chronicles (c. 1460–1480, British Library Royal MS 18 E. I, fol. 172r) depicting 1381 rebels seizing Chancellor Simon Sudbury and Treasurer Robert Hales—architects of the hated Poll Tax.",
           "theme_heading": "Fiscal Oppression & Revolt",
           "sources": [
             {
@@ -7372,10 +7380,10 @@ export default {
           "id": "medieval_england_l5_src_a",
           "letter": "A",
           "type": "written",
-          "src": "/images/medieval_england/source_a_henry_knighton_chronicle.jpg",
-          "image": "/images/medieval_england/source_a_henry_knighton_chronicle.jpg",
+          "src": "/images/upgraded/ks3-early/med_l5_s0_omne_bonum_plague_folio.jpg",
+          "image": "/images/upgraded/ks3-early/med_l5_s0_omne_bonum_plague_folio.jpg",
           "title": "Source A: Chronicle of Henry Knighton on Plague Mortality and Labour Shortages (c. 1395)",
-          "caption": "Extract from Henry Knighton’s Chronicle (British Library Cotton MS Tiberius C. VII), recording catastrophic mortality, unharvested crops, and soaring wage demands following the 1348 plague.",
+          "caption": "14th-century English manuscript illumination of plague-stricken sufferers covered in buboes (Omne Bonum, British Library Royal MS 6 E. VI, fol. 301r, c. 1360–1375), accompanying Henry Knighton’s chronicle account of 1348 plague mortality and labour shortages.",
           "author": "Henry Knighton, Augustinian Canon of St Mary de Pratis, Leicester",
           "date": "c. 1395",
           "citation": "Henry Knighton, Chronicon Henrici Knighton (Leicester Abbey, c. 1395), British Library Cotton MS Tiberius C. VII.",
@@ -8054,14 +8062,16 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "England’s [Demography] changed dramatically after the Black Death of 1348–49 killed over a third of the population and created acute labour shortages. Angry lords passed the 1351 [Statute of Labourers] to freeze wages and preserve [Serfdom]. When King Richard II’s government collected three unfair [Poll Tax] levies by 1381, Wat Tyler and John Ball led a dramatic peasant [Insurrection] into London."
+      "vocab_cloze_text": "England’s [Demography] changed dramatically after the Black Death of 1348–49 killed over a third of the population and created acute labour shortages. Angry lords passed the 1351 [Statute of Labourers] to freeze wages and preserve [Serfdom]. When King Richard II’s government collected three unfair [Poll Tax] levies by 1381, Wat Tyler and John Ball led a dramatic peasant [Insurrection] into London.",
+      "banner_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
+      "hero_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg"
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",
   "homepage_background": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 7",
+  "yearGroup": "Key Stage 3",
   "category": "KS3",
   "key_individuals": [
     {

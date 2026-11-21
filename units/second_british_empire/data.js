@@ -17,7 +17,7 @@ export default {
   "cover_caption": "The Imperial Federation Map of the World (1886), illustrating the worldwide territories of the British Empire at its Victorian peak.",
   "period": "1783–1914",
   "is_ks3": true,
-  "year_group": "Year 8",
+  "year_group": "Key Stage 3",
   "workbooks": [
     {
       "id": "full",
@@ -1344,7 +1344,14 @@ export default {
             "1889 rule keeping Britain’s navy as strong as the next two fleets combined."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/sbe_l1_banner_british_fleet_portsmouth.jpg",
+        "caption": "A View of Part of the British Fleet at Portsmouth",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l1_banner_british_fleet_portsmouth.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l1_banner_british_fleet_portsmouth.jpg"
     },
     {
       "id": "lesson_2",
@@ -2445,7 +2452,14 @@ export default {
             "Collapse of India’s handloom cloth trade under cheap British factory imports."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/sbe_l2_banner_calcutta_garden_reach_daniell.jpg",
+        "caption": "View of Calcutta from the Garden Reach",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l2_banner_calcutta_garden_reach_daniell.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l2_banner_calcutta_garden_reach_daniell.jpg"
     },
     {
       "id": "lesson_3",
@@ -3148,7 +3162,7 @@ export default {
           "author": "Indian Court Artist (c. 1857)",
           "date": "c. 1857",
           "type": "painting",
-          "image": "/images/rani_of_jhansi.jpg",
+          "image": "/images/upgraded/ks3-empire-gw/sbe_l3_srcb_rani_lakshmibai_sword_shield.jpg",
           "caption": "Nineteenth-century Indian portrait of Rani Lakshmibai of Jhansi armed with an upright talwar sword and four-bossed dhal shield; British commander Sir Hugh Rose called her 'the bravest and best military leader of the rebels'.",
           "text": "This nineteenth-century Indian portrait shows Rani Lakshmibai of Jhansi in royal attire, holding a raised curved talwar sword in her right hand and a round four-bossed shield (dhal) in her left as a symbol of sovereign defiance after the East India Company annexed Jhansi under the Doctrine of Lapse.",
           "provenance": "Preserved in the Central Museum, Gwalior; contemporary portrait celebrating the legendary leader of the Central Indian rebellion.",
@@ -3547,7 +3561,14 @@ export default {
             "Direct British Crown rule over India under a Viceroy from 1858 until 1947."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/sbe_l3_banner_relief_of_lucknow_1857.jpg",
+        "caption": "The Relief of Lucknow, 1857",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l3_banner_relief_of_lucknow_1857.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l3_banner_relief_of_lucknow_1857.jpg"
     },
     {
       "id": "lesson_4",
@@ -4677,7 +4698,14 @@ export default {
         "think": "Spend 1 minute reviewing paragraphs [4.3] and [4.4], contrasting the Maxim gun at Omdurman with Kipling's poem 'The White Man's Burden'.",
         "pair": "Compare your ideas with your partner. Identify how paternalist language masked rubber, gold, and diamond plunder.",
         "share": "Share your pair's conclusion with the class, citing E. D. Morel or King Lobengula's 1888 protest to Queen Victoria."
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/sbe_l4_banner_rorkes_drift_1879.jpg",
+        "caption": "The Defence of Rorke's Drift, 1879",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l4_banner_rorkes_drift_1879.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l4_banner_rorkes_drift_1879.jpg"
     },
     {
       "id": "lesson_5",
@@ -5821,7 +5849,14 @@ export default {
             "How different historians interpret and debate the past using rival evidence."
           ]
         ]
-      }
+      },
+      "banner": {
+        "image": "/images/upgraded/ks3-empire-gw/sbe_l5_banner_suez_canal_opening_1869.jpg",
+        "caption": "Inauguration of the Suez Canal at Port Said, 17 November 1869",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l5_banner_suez_canal_opening_1869.jpg",
+      "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l5_banner_suez_canal_opening_1869.jpg"
     }
   ],
   "glossary": [
@@ -6281,6 +6316,6 @@ export default {
   "edition": "2026.1",
   "keyStage": "KS3",
   "key_stage": "KS3",
-  "yearGroup": "Year 8",
+  "yearGroup": "Key Stage 3",
   "category": "KS3"
 };

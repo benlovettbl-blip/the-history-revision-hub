@@ -10,7 +10,7 @@ import { isVerifiedPdf } from './verified_pdf_manifest.js';
 let searchIndex = [];
 let isInitialized = false;
 let activeFilter = 'all'; // 'all' | 'resource' | 'figure' | 'vocab' | 'source' | 'lesson' | 'timeline'
-let activeStageFilter = 'all'; // 'all' | 'this_unit' | 'Year 7' | 'Year 8' | 'Year 9' | 'GCSE'
+let activeStageFilter = 'all'; // 'all' | 'this_unit' | 'Key Stage 2' | 'Key Stage 3' | 'GCSE'
 let currentResults = [];
 let selectedResultIndex = -1;
 
@@ -153,21 +153,23 @@ function getCleanUnitTitle(unitId, unitData) {
  */
 function getYearStageBadge(unitId) {
   if (unitId === 'ks2_ww2' || String(unitId || '').startsWith('ks2')) return 'Key Stage 2';
-  if (['water_and_sanitation', 'medieval_england'].includes(unitId)) return 'Year 7';
   if (
     [
+      'water_and_sanitation',
+      'medieval_england',
       'monarchy_religion_power',
       'first_british_empire',
       'industrialisation_and_empire',
       'second_british_empire',
       'australia',
+      'great_war',
+      'great_war_part2',
+      'the_shoah',
+      'cold_war',
+      'post_war_britain',
     ].includes(unitId)
   )
-    return 'Year 8';
-  if (
-    ['great_war', 'great_war_part2', 'the_shoah', 'cold_war', 'post_war_britain'].includes(unitId)
-  )
-    return 'Year 9';
+    return 'Key Stage 3';
   if (['edexcel_medicine', 'eee', 'gcse_cold_war', 'weimar_nazi_germany', 'cme_new', 'usa'].includes(unitId))
     return 'GCSE';
   return 'Curriculum';
@@ -928,9 +930,7 @@ function ensureModalDOM() {
           <button type="button" class="search-stage-chip active" data-stage="all">All</button>
           <button type="button" class="search-stage-chip" data-stage="this_unit"><i class="fa-solid fa-location-dot"></i> This Unit</button>
           <button type="button" class="search-stage-chip" data-stage="Key Stage 2">KS2</button>
-          <button type="button" class="search-stage-chip" data-stage="Year 7">Year 7</button>
-          <button type="button" class="search-stage-chip" data-stage="Year 8">Year 8</button>
-          <button type="button" class="search-stage-chip" data-stage="Year 9">Year 9</button>
+          <button type="button" class="search-stage-chip" data-stage="Key Stage 3">KS3</button>
           <button type="button" class="search-stage-chip" data-stage="GCSE">GCSE</button>
         </div>
 
@@ -1434,18 +1434,18 @@ function getDiscoverySuggestionsHTML() {
   const recentSearches = getRecentSearches();
 
   const popularTerms = [
-    { term: 'John Snow', stage: 'Year 7 / GCSE' },
-    { term: 'Broad Street Pump', stage: 'Year 7 Sanitation' },
-    { term: 'Great Stink', stage: 'Year 7 / 8' },
-    { term: 'Miasma Theory', stage: 'Year 7 / 8' },
+    { term: 'John Snow', stage: 'KS3 / GCSE' },
+    { term: 'Broad Street Pump', stage: 'KS3 Sanitation' },
+    { term: 'Great Stink', stage: 'KS3 Sanitation' },
+    { term: 'Miasma Theory', stage: 'KS3 / GCSE' },
     { term: 'Andreas Vesalius', stage: 'GCSE Medicine' },
-    { term: 'Germ Theory', stage: 'Year 7 / GCSE' },
-    { term: 'Martin Luther', stage: 'Year 8 Reformation' },
-    { term: 'Reparations', stage: 'Year 9 / GCSE' },
-    { term: 'Treaty of Versailles', stage: 'Year 9 Great War' },
+    { term: 'Germ Theory', stage: 'KS3 / GCSE' },
+    { term: 'Martin Luther', stage: 'KS3 Reformation' },
+    { term: 'Reparations', stage: 'KS3 / GCSE' },
+    { term: 'Treaty of Versailles', stage: 'KS3 Great War' },
     { term: 'Rosa Parks', stage: 'GCSE USA' },
     { term: 'Alexander Fleming', stage: 'GCSE Medicine' },
-    { term: 'Oliver Cromwell', stage: 'Year 8 Crown & Church' },
+    { term: 'Oliver Cromwell', stage: 'KS3 Crown & Church' },
   ];
 
   let recentHtml = '';

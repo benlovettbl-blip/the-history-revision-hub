@@ -182,7 +182,7 @@ export default {
     {
       "id": "lesson_1",
       "title": "Votes for Women: Were the Suffragists or Suffragettes more effective in securing the vote?",
-      "card_image": "/images/suffragettes_kenney_pankhurst.jpg",
+      "card_image": "/images/upgraded/ks3-modern/pwb_l1_banner_suffragette_procession_1911.jpg",
       "card_position": "center 20%",
       "prologue": "In early twentieth-century Britain, women were denied the parliamentary vote. While Millicent Fawcett’s peaceful Suffragists used patient lobbying and petitions, Emmeline Pankhurst’s militant Suffragettes turned to direct action, smashing windows, hunger strikes, and civil disobedience. Were peaceful arguments or militant headlines more effective in securing female emancipation?",
       "do_now": {
@@ -1814,12 +1814,19 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "To end centuries of female [Disenfranchisement] and win parliamentary [Suffrage], Millicent Fawcett’s NUWSS campaigned peacefully while Emmeline Pankhurst’s Suffragettes turned to [Civil Disobedience] and property-breaking [Militancy]. Hunger strikes and Emily Davison’s 1913 [Martyrdom] kept reform in the headlines, before women’s vital First World War munitions work helped secure the 1918 [Franchise] for women over thirty."
+      "vocab_cloze_text": "To end centuries of female [Disenfranchisement] and win parliamentary [Suffrage], Millicent Fawcett’s NUWSS campaigned peacefully while Emmeline Pankhurst’s Suffragettes turned to [Civil Disobedience] and property-breaking [Militancy]. Hunger strikes and Emily Davison’s 1913 [Martyrdom] kept reform in the headlines, before women’s vital First World War munitions work helped secure the 1918 [Franchise] for women over thirty.",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/pwb_l1_banner_suffragette_procession_1911.jpg",
+        "caption": "Women's Coronation Suffrage Procession Marching Through London ('690 Imprisonments to Win Freedom for Women')",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/pwb_l1_banner_suffragette_procession_1911.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/pwb_l1_banner_suffragette_procession_1911.jpg"
     },
     {
       "id": "lesson_2",
       "title": "1945: How did the aftermath of total war build the Welfare State and the NHS?",
-      "card_image": "/images/bevan_first_day_nhs_1948.jpg",
+      "card_image": "/images/upgraded/ks3-modern/pwb_l2_banner_ve_day_whitehall_1945.jpg",
       "card_position": "center 30%",
       "prologue": "In July 1945, having survived the Blitz and total war, British voters stunned the world by voting out Winston Churchill and electing Clement Attlee’s Labour government. Based on William Beveridge's report, Labour launched the National Health Service and the Welfare State. How did wartime suffering inspire a postwar social revolution?",
       "do_now": {
@@ -2219,12 +2226,12 @@ export default {
         {
           "letter": "C",
           "title": "Source C (Press Photograph): Prime Minister Clement Attlee Following the 1945 Landslide",
-          "src": "/images/post_war_britain/clement_attlee_1945.jpg",
-          "image": "/images/post_war_britain/clement_attlee_1945.jpg",
+          "src": "/images/upgraded/ks3-modern/pwb_l2_src_c_clement_attlee_portrait.jpg",
+          "image": "/images/upgraded/ks3-modern/pwb_l2_src_c_clement_attlee_portrait.jpg",
           "type": "visual",
           "text": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
           "content": "Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world's history is a time for revolutions, not for patching. Social insurance should aim at guaranteeing the minimum necessary for subsistence... Organization of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is only one of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness.",
-          "caption": "Prime Minister Clement Attlee outside 10 Downing Street in July 1945 after Labour won a landslide 146-seat majority on a manifesto promising to build the Welfare State.",
+          "caption": "Prime Minister Clement Attlee, whose July 1945 Labour landslide of 146 seats delivered a historic mandate to implement the Beveridge Report and establish the Welfare State and NHS.",
           "citation": "Central Office of Information / National Portrait Gallery, London.",
           "question_badge": "Source Inference",
           "enquiry_question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
@@ -3466,12 +3473,19 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "Amidst severe post-war [Austerity], William Beveridge’s bestselling 1942 [Beveridge Report] inspired Clement Attlee’s 1945 Labour government to build Britain’s cradle-to-grave [Welfare State]. Alongside coal and railway [Nationalisation] and expanded [Social Security] benefits, Health Minister Aneurin Bevan launched the National Health Service on 5 July 1948, guaranteeing tax-funded [Universal Healthcare] free at the point of need."
+      "vocab_cloze_text": "Amidst severe post-war [Austerity], William Beveridge’s bestselling 1942 [Beveridge Report] inspired Clement Attlee’s 1945 Labour government to build Britain’s cradle-to-grave [Welfare State]. Alongside coal and railway [Nationalisation] and expanded [Social Security] benefits, Health Minister Aneurin Bevan launched the National Health Service on 5 July 1948, guaranteeing tax-funded [Universal Healthcare] free at the point of need.",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/pwb_l2_banner_ve_day_whitehall_1945.jpg",
+        "caption": "VE Day Crowds Gathered in Whitehall, London to Celebrate Victory in Europe",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/pwb_l2_banner_ve_day_whitehall_1945.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/pwb_l2_banner_ve_day_whitehall_1945.jpg"
     },
     {
       "id": "lesson_3",
       "title": "The Windrush Generation: Why did Britain invite Commonwealth citizens, and what did they face?",
-      "card_image": "/images/empire_windrush_1948.jpg",
+      "card_image": "/images/upgraded/ks3-modern/pwb_l3_banner_windrush_square_brixton.jpg",
       "card_position": "center 40%",
       "prologue": "In June 1948, the Empire Windrush docked at Tilbury, carrying hundreds of Caribbean passengers invited to help rebuild war-torn Britain. Arriving as proud British subjects, Caribbean nurses, bus drivers, and railway workers faced cold weather, poor housing, and colour bars. What challenges and prejudice did the Windrush generation overcome?",
       "do_now": {
@@ -3777,9 +3791,9 @@ export default {
           "title": "The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival (1958–1959)",
           "theme_heading": "The 1958 Notting Hill Riots, Claudia Jones & The Caribbean Carnival (1958–1959)",
           "text": "<span class=\"para-ref\">[5.1]</span> Tensions exploded in late August 1958 during the Notting Hill race riots, when violent white 'Teddy Boy' attacks targeted Black residents with iron bars, petrol bombs, and knives. Police offered little protection, leading to deep community trauma.<br><br><span class=\"para-ref\">[5.2]</span> In the aftermath, Trinidadian activist and journalist **Claudia Jones** took decisive cultural action: founding West Indian Gazette in Brixton to give the community a political voice, and organizing the 1959 first Caribbean Carnival in St Pancras Town Hall, a vibrant celebration of Caribbean music, steel bands, and dance that grew into the world-famous Notting Hill Carnival.",
-          "image": "/images/post_war_britain/claudia_jones_portrait.jpg",
-          "image_alt": "Claudia Jones portrait",
-          "caption": "Claudia Jones (1915–1964): Political activist and editor of the West Indian Gazette, who organized the 1959 Caribbean Carnival in response to the Notting Hill race riots.",
+          "image": "/images/upgraded/ks3-modern/pwb_l3_block4_claudia_jones_1948.jpg",
+          "image_alt": "High-resolution 1948 archival portrait of Trinidadian-born journalist, civil rights activist, and West Indian Gazette founder Claudia Jones",
+          "caption": "Claudia Jones (1915–1964): Political activist and founder-editor of the West Indian Gazette, who organised the January 1959 Caribbean Carnival in response to the Notting Hill race riots.",
           "isReversed": false,
           "sources": [
             {
@@ -5117,12 +5131,19 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "Facing acute post-war labour shortages, Parliament passed the 1948 [British Nationality Act] confirming the right of citizens across the [Commonwealth] to live and work in Britain. Pioneers arriving aboard HMT Empire Windrush began post-war Caribbean [Migration], yet encountered a hostile [Colour Bar] in housing and jobs alongside racist calls for [Repatriation]—met with cultural pride rather than quiet [Assimilation]."
+      "vocab_cloze_text": "Facing acute post-war labour shortages, Parliament passed the 1948 [British Nationality Act] confirming the right of citizens across the [Commonwealth] to live and work in Britain. Pioneers arriving aboard HMT Empire Windrush began post-war Caribbean [Migration], yet encountered a hostile [Colour Bar] in housing and jobs alongside racist calls for [Repatriation]—met with cultural pride rather than quiet [Assimilation].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/pwb_l3_banner_windrush_square_brixton.jpg",
+        "caption": "Tate Brixton Library and Civic Plaza at Windrush Square, Brixton, London",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/pwb_l3_banner_windrush_square_brixton.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/pwb_l3_banner_windrush_square_brixton.jpg"
     },
     {
       "id": "lesson_4",
       "title": "The 1963 Bristol Bus Boycott & the fight for British civil rights.",
-      "card_image": "/images/bristol_bus_boycott_mural.jpg",
+      "card_image": "/images/upgraded/ks3-modern/pwb_l4_banner_bristol_omnibus_1960s.jpg",
       "card_position": "center 30%",
       "prologue": "In 1963, the Bristol Omnibus Company refused to employ Black or Asian bus conductors, enforcing an open 'colour bar'. Inspired by Martin Luther King and Rosa Parks, local youth activists Paul Stephenson and Roy Hackett organised a citywide passenger boycott. How did community direct action force Britain’s first Race Relations Act?",
       "do_now": {
@@ -6738,12 +6759,19 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "In 1963, Bristol’s bus company operated open racial [Discrimination] and workplace [Segregation] by refusing to employ Black or Asian bus crews despite staff shortages. Led by Paul Stephenson, Roy Hackett, and Owen Henry, campaigners used non-violent [Direct Action] through a four-month citywide [Boycott], confronting local [Prejudice] and inspiring Parliament’s landmark 1965 [Race Relations Act]."
+      "vocab_cloze_text": "In 1963, Bristol’s bus company operated open racial [Discrimination] and workplace [Segregation] by refusing to employ Black or Asian bus crews despite staff shortages. Led by Paul Stephenson, Roy Hackett, and Owen Henry, campaigners used non-violent [Direct Action] through a four-month citywide [Boycott], confronting local [Prejudice] and inspiring Parliament’s landmark 1965 [Race Relations Act].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/pwb_l4_banner_bristol_omnibus_1960s.jpg",
+        "caption": "1960s Green-and-Cream Bristol Omnibus Company Bus 2934 ('City Centre Circular — Temple Meads')",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/pwb_l4_banner_bristol_omnibus_1960s.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/pwb_l4_banner_bristol_omnibus_1960s.jpg"
     },
     {
       "id": "lesson_5",
       "title": "The Cold War on the Home Front: How did nuclear paranoia shape British popular culture?",
-      "card_image": "/images/york_cold_war_bunker.jpg",
+      "card_image": "/images/upgraded/ks3-modern/pwb_l5_banner_raf_vulcan_nuclear_bomber.jpg",
       "card_position": "center center",
       "prologue": "During the Cold War, nuclear anxiety penetrated everyday British life. Schoolchildren learned to 'Duck and Cover', television broadcast chilling government survival films, and underground bunkers were dug for politicians in the Chilterns. How did the ever-present shadow of the atomic bomb transform British popular culture, protest, and domestic life?",
       "do_now": {
@@ -7160,9 +7188,9 @@ export default {
         {
           "letter": "D",
           "title": "Source D (Official Pamphlet Cover): UK Home Office \"Protect and Survive\" Civil Defence Booklet (1980)",
-          "src": "/images/post_war_britain/protect_and_survive_cover.jpg",
-          "image": "/images/post_war_britain/protect_and_survive_cover.jpg",
-          "caption": "The cover of the controversial British government civil defence booklet 'Protect and Survive', published by HMSO for the Home Office in May 1980.",
+          "src": "/images/upgraded/ks3-modern/pwb_l5_src_d_protect_and_survive_cover_1980.jpg",
+          "image": "/images/upgraded/ks3-modern/pwb_l5_src_d_protect_and_survive_cover_1980.jpg",
+          "caption": "Front cover of the British government civil defence booklet 'Protect and Survive', published by HMSO for the Home Office in May 1980.",
           "citation": "Home Office & Central Office of Information, HMSO, London, May 1980.",
           "question_badge": "Author's Purpose",
           "enquiry_question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?",
@@ -8368,13 +8396,20 @@ export default {
           ]
         ]
       },
-      "vocab_cloze_text": "After Britain tested atomic and hydrogen weapons in the 1950s, Cold War nuclear [Paranoia] and fear of KGB [Espionage] and [Subversion] led officials to build secret [Fallout Shelter] bunkers and publish the 1980 [Civil Defence] booklet Protect and Survive. In response, CND Aldermaston marchers and Greenham Common women campaigned tirelessly for nuclear [Disarmament]."
+      "vocab_cloze_text": "After Britain tested atomic and hydrogen weapons in the 1950s, Cold War nuclear [Paranoia] and fear of KGB [Espionage] and [Subversion] led officials to build secret [Fallout Shelter] bunkers and publish the 1980 [Civil Defence] booklet Protect and Survive. In response, CND Aldermaston marchers and Greenham Common women campaigned tirelessly for nuclear [Disarmament].",
+      "banner": {
+        "image": "/images/upgraded/ks3-modern/pwb_l5_banner_raf_vulcan_nuclear_bomber.jpg",
+        "caption": "Royal Air Force Avro Vulcan B.2 Strategic Nuclear Delta-Wing Bomber",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks3-modern/pwb_l5_banner_raf_vulcan_nuclear_bomber.jpg",
+      "hero_image": "/images/upgraded/ks3-modern/pwb_l5_banner_raf_vulcan_nuclear_bomber.jpg"
     }
   ],
   "edition": "2026.1",
   "keyStage": "KS3",
-  "yearGroup": "Year 9",
-  "year_group": "Year 9",
+  "yearGroup": "Key Stage 3",
+  "year_group": "Key Stage 3",
   "category": "KS3",
   "key_stage": "KS3",
   "guided_reading": [
@@ -8668,5 +8703,6 @@ export default {
       "provenance_tier": "verbatim_primary",
       "provenance_note": "Pairs declassified wording from the secret 1955 Cabinet Strath Report on H-bombs with Bertrand Russell’s 1958 CND founding speech."
     }
-  ]
+  ],
+  "is_ks3": true
 };

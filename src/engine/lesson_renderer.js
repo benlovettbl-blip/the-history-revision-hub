@@ -588,6 +588,12 @@ export function renderLesson(lesson) {
       heroImage = lesson.banner.image || lesson.banner.url || lesson.banner.src || '';
     }
   }
+  if (!heroImage && lesson.banner_image) {
+    heroImage =
+      typeof lesson.banner_image === 'string'
+        ? lesson.banner_image
+        : lesson.banner_image.image || lesson.banner_image.url || '';
+  }
   if (!heroImage && lesson.hero_image) {
     heroImage =
       typeof lesson.hero_image === 'string'
@@ -848,8 +854,8 @@ export function renderLesson(lesson) {
     }
   }
 
-  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 134px for Secondary/GCSE)
-  const heroBannerHeight = isKs2 ? '210px' : '134px';
+  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 164px for Secondary/GCSE panoramic banners)
+  const heroBannerHeight = isKs2 ? '210px' : '164px';
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();

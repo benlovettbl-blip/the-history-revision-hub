@@ -9,8 +9,8 @@
   "category": "GCSE",
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "yearGroup": "Years 10–11",
-  "year_group": "Years 10–11",
+  "yearGroup": "GCSE (9–1)",
+  "year_group": "GCSE (9–1)",
   "exam_board": "Pearson Edexcel GCSE History (Paper 2 • Option P4)",
   "specification_file": "/data/specifications/paper2_p4_superpower_cold_war.json",
   "desc": "Paper 2 (Option P4)",
@@ -406,7 +406,7 @@
       "enquiry": "Why did the wartime Grand Alliance unravel between Tehran (1943) and Potsdam (1945)?",
       "enquiryQuestion": "Why did the wartime Grand Alliance unravel between Tehran (1943) and Potsdam (1945)?",
       "specification_anchor": "Key topic 1.1: The Grand Alliance; ideological differences between capitalism and communism; outcomes of the Tehran, Yalta and Potsdam conferences; attitudes of Stalin, Truman and Churchill; impact of the atomic bomb.",
-      "card_image": "/images/gcse_cold_war/tehran_conference_1943.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l1_elbe_day_torgau_1945.jpg",
       "card_position": "center center",
       "learning_objective": "Explain how ideological clashes, leadership changes, and the atomic bomb fractured the Grand Alliance between 1941 and August 1945.",
       "learning_objectives": [
@@ -1574,7 +1574,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l1_elbe_day_torgau_1945.jpg",
+        "caption": "US 2nd Lt. William Robertson and Soviet Red Army Lt. Alexander Silvashko Meeting at Torgau (Elbe Day)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l1_elbe_day_torgau_1945.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l1_elbe_day_torgau_1945.jpg"
     },
     {
       "id": "lesson_2",
@@ -1590,7 +1597,7 @@
       "enquiry": "How did mutual suspicion in 1946 harden into rival American and Soviet economic blocs by 1948?",
       "enquiryQuestion": "How did mutual suspicion in 1946 harden into rival American and Soviet economic blocs by 1948?",
       "specification_anchor": "Key topic 1.1 & 1.2: The Long and Novikov telegrams; creation of Soviet satellite states in Eastern Europe; Truman Doctrine and Marshall Plan (1947); significance of Cominform (1947) and Comecon (1949).",
-      "card_image": "/images/cold_war/marshall_plan_aid_germany_1948.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l2_marshall_plan_europe_map.jpg",
       "card_position": "center center",
       "learning_objective": "Explain how the 1946 telegrams, Soviet satellite states, the Truman Doctrine, and the Marshall Plan split Europe into two ideological and economic camps.",
       "learning_objectives": [
@@ -2759,7 +2766,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l2_marshall_plan_europe_map.jpg",
+        "caption": "Western Europe’s Recovery: Economic Cooperation Administration Marshall Plan Map (1948–1952)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l2_marshall_plan_europe_map.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l2_marshall_plan_europe_map.jpg"
     },
     {
       "id": "lesson_3",
@@ -2775,7 +2789,7 @@
       "enquiry": "How did the 1948–49 Berlin Crisis transform political rivalry into permanent German division and rival military alliances?",
       "enquiryQuestion": "How did the 1948–49 Berlin Crisis transform political rivalry into permanent German division and rival military alliances?",
       "specification_anchor": "Key topic 1.2 & 1.3: Berlin division into zones; the Berlin Crisis (blockade and airlift) of 1948–49 and its impact; formation of FRG and GDR; formation of NATO (1949), the arms race, and the Warsaw Pact (1955).",
-      "card_image": "/images/cold_war/berlin_airlift_c54_tempelhof.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l3_berlin_airlift_tempelhof_runway_1948.jpg",
       "card_position": "center center",
       "learning_objective": "Explain the causes, events, and consequences of the 1948–49 Berlin Crisis, including the creation of West and East Germany, NATO, the H-bomb arms race, and the Warsaw Pact.",
       "learning_objectives": [
@@ -3940,7 +3954,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l3_berlin_airlift_tempelhof_runway_1948.jpg",
+        "caption": "Douglas C-54 Skymaster Landing at Tempelhof Airport During Berlin Airlift Runway Construction",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l3_berlin_airlift_tempelhof_runway_1948.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l3_berlin_airlift_tempelhof_runway_1948.jpg"
     },
     {
       "id": "lesson_4",
@@ -3956,7 +3977,7 @@
       "enquiry": "Why did Khrushchev crush the 1956 Hungarian Uprising with tanks — and why did the West not intervene militarily?",
       "enquiryQuestion": "Why did Khrushchev crush the 1956 Hungarian Uprising with tanks — and why did the West not intervene militarily?",
       "specification_anchor": "Key topic 1.3: Events in 1956 leading to the Hungarian Uprising, and Khrushchev’s response; the international reaction to the Soviet invasion of Hungary.",
-      "card_image": "/images/gcse_cold_war/soviet_tank_budapest_1956.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l4_budapest_kossuth_square_1956.jpg",
       "card_position": "center center",
       "learning_objective": "Explain the causes of the October 1956 Hungarian Uprising, why Imre Nagy’s reforms triggered Khrushchev’s invasion, and why Western powers took no military action.",
       "learning_objectives": [
@@ -5118,7 +5139,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l4_budapest_kossuth_square_1956.jpg",
+        "caption": "Hungarian Uprising Demonstrators Holding National Flags in Kossuth Lajos Square, Budapest",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l4_budapest_kossuth_square_1956.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l4_budapest_kossuth_square_1956.jpg"
     },
     {
       "id": "lesson_5",
@@ -5133,7 +5161,7 @@
       "enquiry": "Why did Khrushchev replace his 1958 Berlin Ultimatum with a concrete wall in August 1961 — and how did it reshape superpower relations?",
       "enquiryQuestion": "Why did Khrushchev replace his 1958 Berlin Ultimatum with a concrete wall in August 1961 — and how did it reshape superpower relations?",
       "specification_anchor": "Key topic 2.1: The refugee problem in Berlin, Khrushchev’s Berlin Ultimatum (1958), and the summit meetings of 1959–61; the construction of the Berlin Wall (1961); impact of the construction of the Berlin Wall on US–Soviet relations; Kennedy’s visit to West Berlin in 1963.",
-      "card_image": "/images/cold_war/berlin_wall_barbed_wire_1961.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg",
       "card_position": "center center",
       "learning_objective": "Explain why the East German refugee crisis triggered Khrushchev’s 1958 Berlin Ultimatum, why summit diplomacy failed between 1959 and 1961, and how the Berlin Wall transformed US–Soviet relations.",
       "learning_objectives": [
@@ -6346,7 +6374,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg",
+        "caption": "US President John F. Kennedy and Soviet Premier Nikita Khrushchev at the Vienna Summit",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg"
     },
     {
       "id": "lesson_6",
@@ -6361,7 +6396,7 @@
       "enquiry": "How did Cuba bring the USA and USSR to the brink of nuclear war in October 1962 — and why did the crisis usher in superpower arms control?",
       "enquiryQuestion": "How did Cuba bring the USA and USSR to the brink of nuclear war in October 1962 — and why did the crisis usher in superpower arms control?",
       "specification_anchor": "Key topic 2.2: Soviet relations with Cuba, the Cuban Revolution and refusal of Fidel Castro to conform to US influence; the significance of the Bay of Pigs incident; the events of the Cuban Missile Crisis; the consequences of the Cuban Missile Crisis, including the \"hotline\", Limited Test Ban Treaty (1963), Outer Space Treaty (1967), and Nuclear Non-Proliferation Treaty (1968).",
-      "card_image": "/images/cold_war/us_navy_p2_neptune_cuban_missile_1962.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg",
       "card_position": "center center",
       "learning_objective": "Explain how Castro’s 1959 revolution and the 1961 Bay of Pigs fiasco led to Soviet missiles on Cuba, how Kennedy and Khrushchev resolved the Thirteen Days, and how the crisis produced major nuclear treaties by 1968.",
       "learning_objectives": [
@@ -7575,7 +7610,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg",
+        "caption": "President John F. Kennedy Meeting with EXCOMM in the White House Cabinet Room During the Cuban Missile Crisis",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg"
     },
     {
       "id": "lesson_7",
@@ -7590,7 +7632,7 @@
       "enquiry": "Why did Alexander Dubček’s \"Socialism with a human face\" alarm Leonid Brezhnev and Warsaw Pact hardliners in 1968?",
       "enquiryQuestion": "Why did Alexander Dubček’s \"Socialism with a human face\" alarm Leonid Brezhnev and Warsaw Pact hardliners in 1968?",
       "specification_anchor": "Key topic 2.3: Opposition in Czechoslovakia to Soviet control; Antonín Novotný’s unpopularity and economic decline; Alexander Dubček and the Prague Spring reforms (\"Socialism with a human face\", April 1968); Warsaw Pact loyalty vs Soviet fears.",
-      "card_image": "/images/gcse_cold_war/alexander_dubcek_portrait.png",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l7_prague_spring_rip_assembly_1968.jpg",
       "card_position": "center top",
       "learning_objective": "Explain why long-term opposition under Antonín Novotný produced Dubček’s 1968 Prague Spring reforms and why those reforms alarmed Moscow despite Czechoslovak loyalty to the Warsaw Pact.",
       "learning_objectives": [
@@ -8816,7 +8858,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l7_prague_spring_rip_assembly_1968.jpg",
+        "caption": "Prague Spring Civic Assembly with Alexander Dubček at Mount Říp, Czechoslovakia",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l7_prague_spring_rip_assembly_1968.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l7_prague_spring_rip_assembly_1968.jpg"
     },
     {
       "id": "lesson_8",
@@ -8831,7 +8880,7 @@
       "enquiry": "Why did the August 1968 invasion of Czechoslovakia tighten Moscow’s grip on Eastern Europe yet fracture the wider Communist world without triggering US military action?",
       "enquiryQuestion": "Why did the August 1968 invasion of Czechoslovakia tighten Moscow’s grip on Eastern Europe yet fracture the wider Communist world without triggering US military action?",
       "specification_anchor": "Key topic 2.4: The Soviet invasion of Czechoslovakia (August 1968) and passive resistance; Gustáv Husák and \"normalisation\"; the Brezhnev Doctrine; impact on US–Soviet relations and the international Communist movement (Yugoslavia, Romania, China, Eurocommunism).",
-      "card_image": "/images/gcse_cold_war/prague_invasion_cia_photo_1968.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg",
       "card_position": "center center",
       "learning_objective": "Explain how Warsaw Pact forces crushed the Prague Spring in August 1968, how the Brezhnev Doctrine enforced one-party rule, and why the invasion split world communism while eliciting only verbal US protest.",
       "learning_objectives": [
@@ -10048,7 +10097,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg",
+        "caption": "Soviet Soldier Manning Machine Gun on BRDM-1 Scout Car in Prague During the Warsaw Pact Invasion",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg"
     },
     {
       "id": "lesson_9",
@@ -10063,7 +10119,7 @@
       "enquiry": "How genuinely did Détente ease superpower rivalry between 1970 and 1979?",
       "enquiryQuestion": "How genuinely did Détente ease superpower rivalry between 1970 and 1979?",
       "specification_anchor": "Key topic 3.1: Attempts to reduce tension between East and West — SALT 1 (1972), the Apollo–Soyuz mission and the Helsinki Accords (1975), and SALT 2 (1979).",
-      "card_image": "/images/gcse_cold_war/nixon_brezhnev_salt1_1972.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l9_helsinki_csce_finlandia_hall_1975.jpg",
       "card_position": "center center",
       "learning_objective": "Explain why both superpowers pursued Détente in the 1970s and evaluate the achievements and limits of SALT 1, the Helsinki Accords, and SALT 2.",
       "learning_objectives": [
@@ -11282,7 +11338,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l9_helsinki_csce_finlandia_hall_1975.jpg",
+        "caption": "Plenary Session Delegates Seated in Finlandia Hall at the Helsinki Conference on Security and Cooperation in Europe (CSCE)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l9_helsinki_csce_finlandia_hall_1975.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l9_helsinki_csce_finlandia_hall_1975.jpg"
     },
     {
       "id": "lesson_10",
@@ -11297,7 +11360,7 @@
       "enquiry": "Why did superpower relations plunge from Détente into a dangerous ‘Second Cold War’ between 1979 and 1985?",
       "enquiryQuestion": "Why did superpower relations plunge from Détente into a dangerous ‘Second Cold War’ between 1979 and 1985?",
       "specification_anchor": "Key topic 3.2: Flashpoints — the significance of the Soviet invasion of Afghanistan (1979), the Carter Doctrine and the Olympic boycotts (1980 and 1984); Ronald Reagan and the ‘Second Cold War’, including the Strategic Defence Initiative (SDI).",
-      "card_image": "/images/gcse_cold_war/soviet_troops_helicopter_afghanistan.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l10_reagan_afghan_delegation_1983.jpg",
       "card_position": "center center",
       "learning_objective": "Explain why the USSR invaded Afghanistan in December 1979 and analyse how the Carter Doctrine, Olympic boycotts, and Ronald Reagan’s ‘Second Cold War’ escalated tension to 1985.",
       "learning_objectives": [
@@ -11668,11 +11731,11 @@
           "id": "gcse_cw_l10_source_e",
           "letter": "E",
           "title": "Source E: President Ronald Reagan’s Televised Oval Office Address Announcing SDI (23 March 1983)",
-          "image": "/images/gcse_cold_war/reagan_sdi_speech_1983.jpg",
-          "src": "/images/gcse_cold_war/reagan_sdi_speech_1983.jpg",
+          "image": "/images/upgraded/gcse-cw-cme/cw_l10_reagan_sdi_oval_office_1983.jpg",
+          "src": "/images/upgraded/gcse-cw-cme/cw_l10_reagan_sdi_oval_office_1983.jpg",
           "source": "/images/gcse_cold_war/reagan_sdi_speech_1983.jpg",
           "image_alt": "Television broadcast frame of US President Ronald Reagan seated in the Oval Office in a dark suit and red patterned tie delivering his 23 March 1983 address announcing the Strategic Defence Initiative",
-          "caption": "President Ronald Reagan speaking from the Oval Office on 23 March 1983 to announce the Strategic Defence Initiative (SDI / \"Star Wars\")—an orbital laser shield to intercept Soviet ballistic missiles.",
+          "caption": "President Ronald Reagan speaking from the Oval Office on 23 March 1983 to announce the Strategic Defence Initiative (SDI / \"Star Wars\")—an orbital defence shield to intercept Soviet ballistic missiles.",
           "provenance": "White House televised address on Peace and National Security, Oval Office, 23 March 1983 (Ronald Reagan Presidential Library / Public Domain).",
           "citation": "Ronald Reagan Presidential Library, Audiovisual Collection (NARA).",
           "question_badge": "Technological Leverage",
@@ -12516,7 +12579,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l10_reagan_afghan_delegation_1983.jpg",
+        "caption": "President Ronald Reagan Meeting with Afghan Resistance Representatives in the Oval Office",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l10_reagan_afghan_delegation_1983.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l10_reagan_afghan_delegation_1983.jpg"
     },
     {
       "id": "lesson_11",
@@ -12532,7 +12602,7 @@
       "enquiry": "How did Mikhail Gorbachev’s ‘New Thinking’ and superpower summit diplomacy transform US–Soviet relations between 1985 and 1989?",
       "enquiryQuestion": "How did Mikhail Gorbachev’s ‘New Thinking’ and superpower summit diplomacy transform US–Soviet relations between 1985 and 1989?",
       "specification_anchor": "Key topic 3.2: Mikhail Gorbachev’s ‘New Thinking’ (Perestroika, Glasnost, dropping the Brezhnev Doctrine, withdrawal from Afghanistan) and the impact of the Geneva (1985), Reykjavik (1986), Washington/INF Treaty (1987), Moscow (1988), and Malta (1989) summits.",
-      "card_image": "/images/cold_war/reagan_gorbachev_geneva_summit_1985.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l11_reagan_gorbachev_reykjavik_1986.jpg",
       "card_position": "center center",
       "learning_objective": "Explain why domestic crisis inside the USSR drove Gorbachev’s ‘New Thinking’ and how summit diplomacy with Reagan and Bush ended superpower confrontation by 1989.",
       "learning_objectives": [
@@ -13755,7 +13825,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l11_reagan_gorbachev_reykjavik_1986.jpg",
+        "caption": "Soviet General Secretary Mikhail Gorbachev and President Ronald Reagan at Höfði House During the Reykjavik Summit",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l11_reagan_gorbachev_reykjavik_1986.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l11_reagan_gorbachev_reykjavik_1986.jpg"
     },
     {
       "id": "lesson_12",
@@ -13771,7 +13848,7 @@
       "enquiry": "Why did abandoning the Brezhnev Doctrine topple the Berlin Wall in 1989 and bring about the collapse of the Soviet Union itself by December 1991?",
       "enquiryQuestion": "Why did abandoning the Brezhnev Doctrine topple the Berlin Wall in 1989 and bring about the collapse of the Soviet Union itself by December 1991?",
       "specification_anchor": "Key topic 3.3: The impact of Gorbachev’s ‘New Thinking’ on Eastern Europe; the loosening of the Soviet grip; the significance of the fall of the Berlin Wall (November 1989); the collapse of the Soviet Union (1990–91) and the end of the Warsaw Pact (1991).",
-      "card_image": "/images/cold_war/berlin_wall_fall_1989.jpg",
+      "card_image": "/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg",
       "card_position": "center center",
       "learning_objective": "Explain how Gorbachev’s abandonment of the Brezhnev Doctrine triggered the 1989 revolutions and fall of the Berlin Wall, dissolved the Warsaw Pact, and led to the collapse of the USSR in December 1991.",
       "learning_objectives": [
@@ -14991,7 +15068,14 @@
           }
         ]
       },
-      "unitId": "gcse_cold_war"
+      "unitId": "gcse_cold_war",
+      "banner": {
+        "image": "/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg",
+        "caption": "Citizens Climbing Atop the Graffiti-Covered Berlin Wall Following the Opening of the East German Border",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg",
+      "hero_image": "/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg"
     }
   ]
 }
