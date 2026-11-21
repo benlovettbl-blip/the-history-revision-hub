@@ -1,5 +1,20 @@
 import { getAssetUrl } from './engine/assets.js'; // refreshed
 import { renderSidebarVideoBadgeHTML } from './engine/video_utils.js';
+import {
+  canAccessUnitLesson,
+  isFreeSampleLesson,
+  isUnitUnlockedForPupil,
+  openUnitPrintPackModal,
+} from './data/print_pack_store.js';
+
+function renderLessonAccessPillHTML(unitId, index) {
+  if (!unitId || unitId === 'trip_ypres') return '';
+  if (isUnitUnlockedForPupil(unitId)) return '';
+  if (isFreeSampleLesson(unitId, index)) {
+    return `<span style="position: absolute; top: 8px; right: 8px; z-index: 3; background: #059669; color: #ffffff; font-size: 0.61rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 2px 6px rgba(0,0,0,0.25);">✓ FREE SAMPLE</span>`;
+  }
+  return `<span style="position: absolute; top: 8px; right: 8px; z-index: 3; background: rgba(15, 23, 42, 0.88); color: #cbd5e1; font-size: 0.61rem; font-weight: 800; letter-spacing: 0.04em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(148,163,184,0.35); backdrop-filter: blur(4px);"><i class="fa-solid fa-lock" style="color: #38bdf8; margin-right: 3px;"></i>SCHOOL LICENCE</span>`;
+}
 
 export function getLessonEnquiryQuestion(lesson) {
   if (!lesson) return '';
@@ -552,6 +567,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                 <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
                   ${overlayBadge}
                 </span>
+                ${renderLessonAccessPillHTML(currentUnitId, index)}
               </div>
             `;
           } else {
@@ -578,6 +594,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                     ${(() => {
                       const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(currentUnitId, lesson.id || index) : 0;
                       if (!cnt || cnt === 0) return '';
+                      if (!canAccessUnitLesson(currentUnitId, index)) {
+                        return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); window.openUnitPrintPackModal && window.openUnitPrintPackModal('${currentUnitId}', 'Visual Story Sheet (${displayTitle.replace(/'/g, "\\'")})', { mode: 'lesson', lessonIndex: ${index} });" title="Unlock Story Sheet with School Subscription" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-lock" style="font-size: 0.6rem; color: #0284c7;"></i> <span>Story Sheet</span></button>`;
+                      }
                       const items = typeof window !== 'undefined' && window.getLessonInfographicsSync ? window.getLessonInfographicsSync(currentUnitId, lesson.id || index) : [];
                       const posterItems = Array.isArray(items) ? items.filter(it => it && it.image && it.image.trim().length > 0) : [];
                       if (posterItems.length > 0) {
@@ -664,6 +683,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
               <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
                 ${overlayBadge}
               </span>
+              ${renderLessonAccessPillHTML(currentUnitId, index)}
             </div>
           `;
         } else {
@@ -693,6 +713,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                   ${(() => {
                     const cnt = typeof window !== 'undefined' && window.getLessonInfographicCount ? window.getLessonInfographicCount(currentUnitId, lesson.id || index) : 0;
                     if (!cnt || cnt === 0) return '';
+                    if (!canAccessUnitLesson(currentUnitId, index)) {
+                      return `<button type="button" class="btn-card-infographic-pill" onclick="event.stopPropagation(); window.openUnitPrintPackModal && window.openUnitPrintPackModal('${currentUnitId}', 'Visual Story Sheet (${displayTitle.replace(/'/g, "\\'")})', { mode: 'lesson', lessonIndex: ${index} });" title="Unlock Story Sheet with School Subscription" style="padding: 2px 6px; font-size: 0.66rem; font-weight: 700; background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 4px; display: inline-flex; align-items: center; gap: 3px; cursor: pointer;"><i class="fa-solid fa-lock" style="font-size: 0.6rem; color: #0284c7;"></i> <span>Story Sheet</span></button>`;
+                    }
                     const items = typeof window !== 'undefined' && window.getLessonInfographicsSync ? window.getLessonInfographicsSync(currentUnitId, lesson.id || index) : [];
                     const posterItems = Array.isArray(items) ? items.filter(it => it && it.image && it.image.trim().length > 0) : [];
                     if (posterItems.length > 0) {

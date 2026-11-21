@@ -240,7 +240,7 @@ function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, s
         ${pdfActionHtml}
         ${msActionHtml}`
     : `<button type="button" class="urb-btn-pack-lock" onclick="window.openUnitPrintPackModal('${unitId}', '${safeTitle}')" style="flex: 1; padding: 8px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
-          <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Included in ${packInfo.priceLabel} Unit Pack</span>
+          <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Teacher Key &bull; ${packInfo.priceLabel}</span>
         </button>`;
 
   return `
@@ -292,7 +292,7 @@ function renderWorksheetsCard(unitId, worksheets, staffActive = false) {
                 <i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i> <span>PDF ↓</span>
               </a>`
             : `<button type="button" class="urb-btn-pack-lock" onclick="window.openUnitPrintPackModal('${unitId}', '${safeTitle}')" style="flex: 1; padding: 8px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
-                <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Included in ${packInfo.priceLabel} Unit Pack</span>
+                <i class="fa-solid fa-lock" style="color: #38bdf8;"></i> <span>Teacher Key &bull; ${packInfo.priceLabel}</span>
               </button>`
         }
       </div>
@@ -467,13 +467,13 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
         <div id="unit-drawer-panel-booklets" style="display: none;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
             <span style="font-size: 0.78rem; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;">
-              <i class="fa-solid fa-file-pdf" style="color: #dc2626; margin-right: 6px;"></i>Printable Course Booklets${staffActive ? ' <span style="color:#059669;margin-left:6px;">(Staff Mode: Unlocked &bull; Mark Schemes Visible)</span>' : ` <span style="color:#0284c7;margin-left:6px;">(School Print &amp; Teacher Pack: ${unitPack.priceLabel} one-off)</span>`}
+              <i class="fa-solid fa-file-pdf" style="color: #dc2626; margin-right: 6px;"></i>Printable Course Booklets${staffActive ? ' <span style="color:#059669;margin-left:6px;">(Staff Mode: Unlocked &bull; Mark Schemes Visible)</span>' : ` <span style="color:#0284c7;margin-left:6px;">(Teacher Key Required &bull; From ${unitPack.priceLabel})</span>`}
             </span>
             <div style="display: flex; align-items: center; gap: 8px;">
               ${
                 !staffActive
-                  ? `<button type="button" onclick="window.openUnitPrintPackModal('${unitId}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer;"><i class="fa-solid fa-box-archive" style="margin-right: 4px;"></i>Get Complete Unit Pack (${unitPack.priceLabel})</button>
-                     <button type="button" onclick="window.openUnitPrintPackModal('${unitId}')" style="background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; border-radius: 6px; padding: 5px 10px; font-size: 0.74rem; font-weight: 800; cursor: pointer;"><i class="fa-solid fa-key" style="margin-right: 4px;"></i>Staff Unlock</button>`
+                  ? `<button type="button" onclick="window.openUnitPrintPackModal('${unitId}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer;"><i class="fa-solid fa-school" style="margin-right: 4px;"></i>School Subscription</button>
+                     <button type="button" onclick="window.openUnitPrintPackModal('${unitId}')" style="background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; border-radius: 6px; padding: 5px 10px; font-size: 0.74rem; font-weight: 800; cursor: pointer;"><i class="fa-solid fa-key" style="margin-right: 4px;"></i>Teacher Key</button>`
                   : ''
               }
               <button type="button" onclick="window.toggleUnitResourceDrawer('')" style="background: transparent; border: none; color: #64748b; font-size: 0.78rem; font-weight: 700; cursor: pointer;"><i class="fa-solid fa-xmark"></i> Close</button>

@@ -1598,6 +1598,17 @@ export async function renderLessonsView() {
     const sub = lessonsList[index];
     if (!sub) return;
 
+    if (
+      typeof window.canAccessUnitLesson === 'function' &&
+      !window.canAccessUnitLesson(unitId, index)
+    ) {
+      window.openUnitPrintPackModal(unitId, sub.title || `Lesson ${index + 1}`, {
+        mode: 'lesson',
+        lessonIndex: index,
+      });
+      return;
+    }
+
     window.currentLessonIndex = index;
     window.currentView = 'lessons';
     if (state) state.activeLessonIndex = index;
@@ -3113,7 +3124,20 @@ export async function renderReadingView(options = {}) {
       lessonParam = parsed > 0 ? parsed - 1 : 0;
     }
   }
-  const currentLessonIndex = typeof lessonParam === 'number' ? lessonParam : 0;
+  let currentLessonIndex = typeof lessonParam === 'number' ? lessonParam : 0;
+  if (
+    typeof window !== 'undefined' &&
+    typeof window.canAccessUnitLesson === 'function' &&
+    !window.canAccessUnitLesson(unitId, currentLessonIndex)
+  ) {
+    setTimeout(() => {
+      window.openUnitPrintPackModal(unitId, `Guided Reading Enquiry ${currentLessonIndex + 1}`, {
+        mode: 'lesson',
+        lessonIndex: currentLessonIndex,
+      });
+    }, 80);
+    currentLessonIndex = 0;
+  }
 
   import('./guided_reading.js').then(({ initGuidedReadingTask }) => {
     initGuidedReadingTask(container, guidedReadingData, { currentLessonIndex, rawLesson, unitId, unitData });

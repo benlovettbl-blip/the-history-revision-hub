@@ -26,6 +26,10 @@ import {
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
 import { resolveUnitIdFromPathname, isSchoolsPathname } from './data/seo_routes.js';
+import {
+  initCommercialAccessFromUrl,
+  renderLocalhostPreviewBanner,
+} from './data/print_pack_store.js';
 
 function purgeGDPRHistoricalCache() {
   try {
@@ -296,6 +300,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   initGlossaryPopover();
   initDossierPopover();
   initTeacherMode();
+  initCommercialAccessFromUrl();
+  renderLocalhostPreviewBanner();
 
   // Bind global helper routing
   window.switchView = switchView;

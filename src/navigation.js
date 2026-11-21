@@ -20,7 +20,11 @@ import {
 } from './views.js'; // Trigger HMR
 import { jumpToKeyIndividual } from './key_individuals.js';
 import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_catalog.js';
-import { openUnitPrintPackModal } from './data/print_pack_store.js';
+import {
+  openUnitPrintPackModal,
+  canAccessUnitLesson,
+  isUnitUnlockedForPupil,
+} from './data/print_pack_store.js';
 import {
   getCleanPathForUnit,
   getSeoRouteForUnit,
@@ -1285,15 +1289,34 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   } else if (viewName === 'arcade') {
     const targetUnit =
       param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
+    const isLesson1Arcade =
+      options &&
+      (options.lessonScope === 0 || options.lessonScope === '0') &&
+      canAccessUnitLesson(targetUnit, 0);
+    if (!isLesson1Arcade && !isUnitUnlockedForPupil(targetUnit)) {
+      await switchView('lessons', targetUnit);
+      openUnitPrintPackModal(targetUnit, 'Full-Course Revision Arcade');
+      return;
+    }
     await loadUnit(targetUnit);
     const { renderArcadeView } = await import('./arcade_zone.js');
     renderArcadeView({ ...(options || {}), unitId: targetUnit });
   } else if (viewName === 'interactive' || viewName === 'quiz') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+    if (!isUnitUnlockedForPupil(targetUnit)) {
+      await switchView('lessons', targetUnit);
+      openUnitPrintPackModal(targetUnit, 'Full-Course Quiz & Flashcard Vault');
+      return;
+    }
     await loadUnit(targetUnit);
     renderInteractiveQuiz();
   } else if (viewName === 'timeline') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+    if (!isUnitUnlockedForPupil(targetUnit)) {
+      await switchView('lessons', targetUnit);
+      openUnitPrintPackModal(targetUnit, 'Interactive Living Chronology');
+      return;
+    }
     await loadUnit(targetUnit);
     renderTimeline();
   } else if (viewName === 'individuals') {
@@ -1813,12 +1836,18 @@ function updateSidebarForUnit(unitId, unitData = {}) {
         const rawTitle = sub.title || (hasLessonZero && idx === 0 ? 'Intro Lesson' : `Lesson ${hasLessonZero ? idx : idx + 1}`);
         const cleanTitle = rawTitle.replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '').trim();
         const badgeText = hasLessonZero ? (idx === 0 ? '0' : idx) : (idx + 1);
+        const lessonLocked = !canAccessUnitLesson(unitId, idx);
         item.innerHTML = `
           <span class="sidebar-lesson-badge">${badgeText}</span>
           <span class="sidebar-lesson-title-text" title="${cleanTitle.replace(/"/g, '&quot;')}">${cleanTitle}</span>
+          ${lessonLocked ? '<i class="fa-solid fa-lock" style="font-size: 0.65rem; color: #64748b; margin-left: auto; flex-shrink: 0;" title="Requires School Subscription"></i>' : ''}
         `;
         item.addEventListener('click', (e) => {
           e.stopPropagation();
+          if (!canAccessUnitLesson(unitId, idx)) {
+            openUnitPrintPackModal(unitId, rawTitle, { mode: 'lesson', lessonIndex: idx });
+            return;
+          }
           window._unitReturnOrigin = null;
           const currentActiveView = appStore.state.currentView || state.currentView;
           if (currentActiveView === 'lessons' && typeof window.viewLessonDetail === 'function') {

@@ -117,6 +117,17 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       (typeof window !== 'undefined' && window.currentUnitId) ||
       unitDataObj.id;
     const lesson = unitDataObj.lessons[index];
+    if (
+      typeof window !== 'undefined' &&
+      typeof window.canAccessUnitLesson === 'function' &&
+      !window.canAccessUnitLesson(unitId, index)
+    ) {
+      window.openUnitPrintPackModal(unitId, lesson.title || `Lesson ${index + 1}`, {
+        mode: 'lesson',
+        lessonIndex: index,
+      });
+      return;
+    }
 
     if (typeof window !== 'undefined') {
       window.currentLessonIndex = index;

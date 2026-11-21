@@ -940,6 +940,21 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   function switchActiveReading(newIndex) {
     const data = guidedReadingData[newIndex];
     if (!data) return;
+    if (
+      typeof window !== 'undefined' &&
+      typeof window.canAccessUnitLesson === 'function' &&
+      !window.canAccessUnitLesson(unitId, newIndex)
+    ) {
+      if (mobileSelect.value !== String(activeIndex)) {
+        mobileSelect.value = String(activeIndex);
+      }
+      window.openUnitPrintPackModal(
+        unitId,
+        `Guided Reading: ${data.book_title || `Enquiry ${newIndex + 1}`}`,
+        { mode: 'lesson', lessonIndex: newIndex },
+      );
+      return;
+    }
     cancelReadingSpeech();
     activeIndex = newIndex;
     activeReading = data;

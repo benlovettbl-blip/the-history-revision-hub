@@ -267,6 +267,17 @@ export function renderHomepage() {
     card.addEventListener('click', () => {
       if (!card.hasAttribute('data-index')) return;
       const idx = parseInt(card.dataset.index);
+      if (
+        typeof window.canAccessUnitLesson === 'function' &&
+        !window.canAccessUnitLesson(activeUnitId, idx)
+      ) {
+        const lObj = appStore.state.activeUnitData.lessons[idx];
+        window.openUnitPrintPackModal(activeUnitId, lObj?.title || `Lesson ${idx + 1}`, {
+          mode: 'lesson',
+          lessonIndex: idx,
+        });
+        return;
+      }
       document.querySelectorAll('.lesson-link').forEach((l) => l.classList.remove('active'));
       renderLesson(appStore.state.activeUnitData.lessons[idx]);
       (document.getElementById('content-area') || window).scrollTo({ top: 0, behavior: 'smooth' });
