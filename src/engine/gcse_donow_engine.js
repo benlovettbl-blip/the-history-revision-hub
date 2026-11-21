@@ -22,6 +22,7 @@
 
 export const GCSE_RETRIEVAL_UNITS = [
   { id: 'cme_new', label: 'Middle East', title: 'Conflict in the Middle East, 1945–1995', bg: '#f0f9ff', border: '#bae6fd', text: '#0369a1' },
+  { id: 'gcse_cold_war', label: 'Cold War P4', title: 'Superpower Relations & the Cold War, 1941–1991', bg: '#eff6ff', border: '#bfdbfe', text: '#1d4ed8' },
   { id: 'usa', label: 'USA 1954–75', title: 'The USA, 1954–1975', bg: '#f5f3ff', border: '#ddd6fe', text: '#6d28d9' },
   { id: 'weimar_nazi_germany', label: 'Weimar Germany', title: 'Weimar & Nazi Germany, 1918–1939', bg: '#fef2f2', border: '#fecaca', text: '#b91c1c' },
   { id: 'edexcel_medicine', label: 'Medicine', title: 'Medicine in Britain, c1250–present', bg: '#ecfdf5', border: '#a7f3d0', text: '#047857' },

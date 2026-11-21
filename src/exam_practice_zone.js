@@ -100,7 +100,7 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
   if (
     qType.includes('consequence') ||
     /explain (?:one|two) consequence/i.test(qText) ||
-    ((qNum.includes('1(A)') || qNum.includes('1(B)')) && (unitId === 'cme_new' || unitId === 'cold_war'))
+    ((qNum.includes('1(A)') || qNum.includes('1(B)')) && (unitId === 'cme_new' || unitId === 'gcse_cold_war' || unitId === 'cold_war'))
   ) {
     return `<strong>4-Mark Consequence PEE Structure Strip:</strong>
 <div style="font-size: 0.9rem; margin-top: 4px; color: #475569; font-style: italic;">Edexcel Paper 2 specification format: Single direct consequence with detailed historical causation.</div>
@@ -128,7 +128,7 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
   if (
     qType.includes('narrative') ||
     /narrative account/i.test(qText) ||
-    (qNum === 'Q2' && (unitId === 'cme_new' || unitId === 'cold_war'))
+    (qNum === 'Q2' && (unitId === 'cme_new' || unitId === 'gcse_cold_war' || unitId === 'cold_war'))
   ) {
     return `<strong>8-Mark Narrative Account Structure Strip (Chronological &amp; Causal Flow):</strong>
 <div style="font-size: 0.9rem; margin-top: 4px; color: #475569; font-style: italic;">Edexcel Paper 2 Period Study question format.</div>
@@ -144,7 +144,7 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
   if (
     qType.includes('importance') ||
     /importance of/i.test(qText) ||
-    ((qNum.includes('3(A)') || qNum.includes('3(B)') || qNum === 'Q3') && (unitId === 'cme_new' || unitId === 'cold_war'))
+    ((qNum.includes('3(A)') || qNum.includes('3(B)') || qNum === 'Q3') && (unitId === 'cme_new' || unitId === 'gcse_cold_war' || unitId === 'cold_war'))
   ) {
     return `<strong>8-Mark Importance Question Structure Strip:</strong>
 <div style="font-size: 0.9rem; margin-top: 4px; color: #475569; font-style: italic;">Edexcel Paper 2 Period Study question format.</div>
@@ -758,7 +758,7 @@ export function renderExamPracticeZone(container, unitData, initialQuestion = nu
     qFollowUpStems.innerHTML = `
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0;">
         <span style="font-size: 0.85rem; font-weight: 800; color: #0f766e; text-transform: uppercase; letter-spacing: 0.05em;">
-          <i class="fa-solid fa-pen-to-square"></i> Official Pearson Edexcel Paper 1 Q2(b) Answer Stems
+          <i class="fa-solid fa-pen-to-square"></i> Paper 1 Q2(b) Follow-Up Answer Stems
         </span>
         <span style="font-size: 0.78rem; font-weight: 700; color: #0f766e; background: #ccfbf1; border: 1px solid #99f6e4; padding: 2px 10px; border-radius: 999px;">
           Complete all 4 stems before revealing Model Answer &bull; 1 mark each

@@ -13,7 +13,7 @@ import { WESTERN_FRONT_FEATURES_DATABASE } from './western_front_features_data.j
 import { BLURT_TOPICS_DATABASE } from './blurt_topics_curriculum.js';
 import { BLURT_PAST_QUESTIONS_DATABASE } from './blurt_past_papers_curriculum.js';
 
-// Unified Bank: Official Past Exam Questions (2018-2026) + Core Specification Enquiries
+// Unified Bank: Hub Exam-Style Practice Questions (2018-2025 Topic Trends) + Core Specification Enquiries
 const ALL_BLURT_TOPICS_COMBINED = [...BLURT_PAST_QUESTIONS_DATABASE, ...BLURT_TOPICS_DATABASE];
 
 // --- Default Configuration (2026 Verified Cohort Baseline) ---
@@ -58,7 +58,7 @@ const OPTION_UNIT_MAP = {
   paper2_p5_middle_east: 'cme_new',
   paper3_33_usa_conflict_home_abroad: 'usa',
   paper3_31_weimar_nazi_germany: 'weimar_nazi_germany',
-  paper2_p4_superpower_cold_war: 'cold_war',
+  paper2_p4_superpower_cold_war: 'gcse_cold_war',
 };
 
 // High-Yield Chronological Anchors & Tier-3 Vocabulary per Option
@@ -246,24 +246,41 @@ const OPTION_REVISION_METADATA = {
   },
   paper2_p4_superpower_cold_war: {
     dates:
-      '1945 (Yalta & Potsdam, Hiroshima), 1947 (Truman Doctrine & Marshall Plan), 1948–49 (Berlin Blockade & Airlift), 1949 (NATO & Soviet A-bomb), 1955 (Warsaw Pact), 1956 (Hungarian Uprising), 1961 (Berlin Wall), 1962 (Cuban Missile Crisis), 1968 (Prague Spring & Brezhnev Doctrine), 1975 (Helsinki Accords), 1979 (Soviet invasion of Afghanistan), 1985 (Gorbachev: Glasnost & Perestroika), 1989 (Fall of Berlin Wall), 1991 (Soviet collapse).',
+      '1943 (Tehran), 1945 (Yalta, Potsdam & Hiroshima), 1946 (Long & Novikov Telegrams), 1947 (Truman Doctrine, Marshall Plan & Cominform), 1948–49 (Berlin Blockade & Airlift), 1949 (Comecon & NATO), 1955 (Warsaw Pact), 1956 (Hungarian Uprising), 1958–61 (Berlin Ultimatum & Berlin Wall), 1961–62 (Bay of Pigs & Cuban Missile Crisis), 1968 (Prague Spring & Brezhnev Doctrine), 1972 (SALT 1), 1975 (Helsinki Accords), 1979 (SALT 2 & Soviet Invasion of Afghanistan), 1980/84 (Olympic Boycotts), 1983 (SDI), 1985–87 (Gorbachev’s New Thinking & INF Treaty), 1989 (Fall of Berlin Wall), 1991 (Dissolution of Warsaw Pact & USSR).',
     vocab:
-      'Containment, Iron Curtain, Satellite states, Cominform, Comecon, Brinkmanship, MAD, Checkpoint Charlie, Quarantine blockade, Detente, Strategic Arms Limitation, SDI (Star Wars), Perestroika, Glasnost.',
-    questions12m: [
+      'Grand Alliance, Containment, Iron Curtain, Satellite states, Cominform, Comecon, NATO, Warsaw Pact, De-Stalinisation, Berlin Ultimatum, Quarantine blockade, Hotline, Limited Test Ban Treaty, Socialism with a human face, Brezhnev Doctrine, Détente, SALT 1, Helsinki Accords, Carter Doctrine, Strategic Defence Initiative (SDI), Perestroika, Glasnost, INF Treaty.',
+    questions8m: [
       {
-        stem: 'Explain why tension increased between the USA and the Soviet Union in the years 1945–1947.',
-        stimulus: ['disagreements at the Potsdam Conference (1945)', 'the Truman Doctrine (1947)'],
+        type: 'analytical_narrative',
+        tariff: '8 MARKS',
+        stem: 'Write a narrative account analysing the key events of the Berlin Crisis in the years 1948–49.',
+        stimulus: ['the division of Berlin into zones', 'the Berlin airlift (1948–49)'],
         ownFactor:
-          'the creation of Soviet satellite states in Eastern Europe and the atomic bomb monopoly',
+          'Western currency reform (the Deutschmark), Stalin’s June 1948 blockade, lifting of the blockade in May 1949, and the formation of the FRG, GDR, and NATO',
       },
       {
-        stem: 'Explain why the Cuban Missile Crisis was resolved peacefully in October 1962.',
-        stimulus: [
-          'the US naval blockade (quarantine)',
-          'the secret agreement regarding US missiles in Turkey',
-        ],
+        type: 'consequence',
+        tariff: '8 MARKS',
+        stem: 'Explain two consequences of the Cuban Missile Crisis (1962).',
+        stimulus: ['the Moscow–Washington direct "hotline" (June 1963)', 'the Limited Test Ban Treaty (August 1963)'],
         ownFactor:
-          'fear of Mutually Assured Destruction (MAD) and Khrushchev’s realization of US conventional naval superiority',
+          'the Outer Space Treaty (1967), Nuclear Non-Proliferation Treaty (1968), and Khrushchev’s removal from power in 1964',
+      },
+      {
+        type: 'analytical_narrative',
+        tariff: '8 MARKS',
+        stem: 'Write a narrative account analysing the key events in Czechoslovakia in 1968.',
+        stimulus: ['the Prague Spring (1968)', 'the Brezhnev Doctrine (1968)'],
+        ownFactor:
+          'Novotný’s unpopularity, Dubček’s April 1968 Action Programme, the August 1968 Warsaw Pact invasion, and Gustáv Husák’s normalisation',
+      },
+      {
+        type: 'consequence',
+        tariff: '8 MARKS',
+        stem: 'Explain two consequences of the Soviet invasion of Afghanistan (December 1979).',
+        stimulus: ['the Carter Doctrine (January 1980) and withdrawal of SALT 2', 'the 1980 Moscow and 1984 Los Angeles Olympic boycotts'],
+        ownFactor:
+          'the collapse of Détente, CIA arming of the Mujahideen, and Reagan’s "Second Cold War" military build-up',
       },
     ],
   },
@@ -873,7 +890,7 @@ function renderPrintableTabHtml() {
             Option ${spec.code}: ${spec.shortTitle || spec.title}
           </h3>
           <p style="margin:2px 0 0;font-size:0.8rem;color:#475569;">
-            ${spec.paper} &bull; Issue 6 Verified &bull; ${spec.stats ? spec.stats.pointsCount + ' Specification Targets' : ''}
+            ${spec.paper} &bull; Hub Topic Checklist &bull; ${spec.stats ? spec.stats.pointsCount + ' Topic Targets' : ''}
           </p>
         </div>
 
@@ -1537,7 +1554,7 @@ function renderBlurtSetupHtml(availableTopics, topic, spec) {
               Active Recall Memory Engine
             </h2>
             <p style="margin:0;font-size:0.9rem;color:#64748b;max-width:760px;line-height:1.5;">
-              Overcome blank page paralysis with structured free recall. Retrieve key chronological turning points, Tier-3 technical terminology, and decisive causal explanations from memory at your own pace—then verify your recall against verbatim Pearson Edexcel benchmarks.
+              Overcome blank page paralysis with structured free recall. Retrieve key chronological turning points, Tier-3 technical terminology, and decisive causal explanations from memory at your own pace—then verify your recall against Hub topic checklists and marking benchmarks.
             </p>
           </div>
 
@@ -1555,7 +1572,7 @@ function renderBlurtSetupHtml(availableTopics, topic, spec) {
               1. Select Examination Paper:
             </span>
             <span style="font-size:0.78rem;color:#2563eb;font-weight:700;">
-              <strong>${pastForPaper.length}</strong> Official Exam Questions &bull; <strong>${curatedForPaper.length}</strong> Core Enquiries
+              <strong>${pastForPaper.length}</strong> Hub Exam-Style Questions &bull; <strong>${curatedForPaper.length}</strong> Core Enquiries
             </span>
           </div>
 
@@ -1601,13 +1618,13 @@ function renderBlurtSetupHtml(availableTopics, topic, spec) {
           <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
             <div style="flex:1;min-width:280px;">
               <label for="select-blurt-topic" style="display:block;font-size:0.75rem;font-weight:800;text-transform:uppercase;color:#475569;margin-bottom:4px;letter-spacing:0.04em;">
-                2. Select Real Exam Question or Core Enquiry:
+                2. Select Hub Exam-Style Question or Core Enquiry:
               </label>
               <select id="select-blurt-topic" style="width:100%;padding:10px 12px;border-radius:8px;border:1.5px solid #cbd5e1;font-size:0.92rem;font-weight:600;background:#ffffff;color:#0f172a;">
                 ${
                   filteredPast.length > 0 && blurtState.selectedTariffFilter !== 'curated'
                     ? `
-                  <optgroup label="📝 Edexcel Past Exam Questions (2018–2025) — ${filteredPast.length} Questions">
+                  <optgroup label="📝 Hub Exam-Style Practice (2018–2025 Topic Trends) — ${filteredPast.length} Questions">
                     ${filteredPast
                       .map(
                         (q) => `
@@ -1657,10 +1674,10 @@ function renderBlurtSetupHtml(availableTopics, topic, spec) {
         <div style="background:linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);border-radius:10px;padding:16px 20px;margin-bottom:16px;color:#ffffff;box-shadow:0 4px 14px rgba(15,23,42,0.12);">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;gap:8px;">
             <span style="font-size:0.75rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:#93c5fd;display:inline-flex;align-items:center;gap:6px;">
-              <i class="fa-solid fa-bullseye"></i> ${topic.isPastPaperQuestion ? `Official Past Exam Question (${topic.series} ${topic.qNumber} • ${topic.tariff} Marks)` : 'Target Exam Question for this Recall Session'}:
+              <i class="fa-solid fa-bullseye"></i> ${topic.isPastPaperQuestion ? `Hub Exam-Style Practice (${topic.series} Topic Trend • ${topic.qNumber} • ${topic.tariff} Marks)` : 'Target Exam Question for this Recall Session'}:
             </span>
             <span style="font-size:0.72rem;font-weight:700;color:#cbd5e1;background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:10px;">
-              ${topic.isPastPaperQuestion ? `Pearson Edexcel Past Paper (${topic.tariff}m)` : 'Pearson Edexcel Specification Target'}
+              ${topic.isPastPaperQuestion ? `Hub Exam-Style Practice (${topic.tariff}m)` : 'GCSE Topic Target'}
             </span>
           </div>
           <h3 style="margin:2px 0 6px 0;font-family:'Lora',serif;font-size:1.22rem;font-weight:700;color:#ffffff;line-height:1.4;">
@@ -1671,9 +1688,9 @@ function renderBlurtSetupHtml(availableTopics, topic, spec) {
               ? `
             <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);border-radius:6px;padding:8px 12px;margin:8px 0;font-size:0.84rem;color:#e2e8f0;">
               <strong style="display:block;margin-bottom:3px;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em;color:#93c5fd;">
-                <i class="fa-solid fa-lightbulb"></i> Official Exam Stimulus Points Provided:
+                <i class="fa-solid fa-lightbulb"></i> Hub Practice Stimulus Cues:
               </strong>
-              <div style="white-space:pre-line;line-height:1.45;">${escapeHtml(topic.stimulus)}</div>
+              <div style="white-space:pre-line;line-height:1.45;">${escapeHtml(Array.isArray(topic.stimulus) ? topic.stimulus.map((s) => '• ' + s).join('\n') : topic.stimulus)}</div>
             </div>
           `
               : ''
@@ -2358,7 +2375,7 @@ function renderBlurtFinishedHtml(topic, spec) {
               ? `
             <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px;margin-bottom:12px;">
               <div style="font-weight:800;font-size:0.82rem;color:#92400e;display:flex;align-items:center;gap:6px;margin-bottom:4px;">
-                <i class="fa-solid fa-graduation-cap"></i> Official Examiner Guidance &amp; Tips
+                <i class="fa-solid fa-graduation-cap"></i> Exam Technique Guidance &amp; Tips
               </div>
               <p style="margin:0;font-size:0.82rem;color:#78350f;line-height:1.45;">
                 ${escapeHtml(topic.examinerTips)}

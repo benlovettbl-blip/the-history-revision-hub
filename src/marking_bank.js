@@ -306,7 +306,7 @@ const KS3_MARKING_DATA = {
       },
       {
         number: 4,
-        title: "Enquiry 04: Vera's Journey & The Kindertransport (1938–1939)",
+        title: "Enquiry 04: One Small Suitcase — The Kindertransport (1938–1939)",
         shortTitle: 'Kindertransport',
         enquiryFocus: 'Why did parents send 10,000 children alone to Britain on the Kindertransport?',
         questions: [

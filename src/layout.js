@@ -425,8 +425,9 @@ export function bindEvents() {
     const gcseUnits = getOrderedUnits([
       'edexcel_medicine',
       'eee',
-      'weimar_nazi_germany',
+      'gcse_cold_war',
       'cme_new',
+      'weimar_nazi_germany',
       'usa',
     ]);
     const ks2Units = getOrderedUnits(['ks2_ww2']);

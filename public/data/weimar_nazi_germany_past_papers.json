@@ -2,8 +2,8 @@
   "unit_id": "weimar_nazi_germany",
   "paper_code": "1HI0/31",
   "paper_name": "Paper 3: Weimar and Nazi Germany, 1918–1939",
-  "total_papers_analyzed": 9,
-  "year_range": "2018–2026",
+  "total_papers_analyzed": 8,
+  "year_range": "2018–2025",
   "papers": [
     {
       "year": 2018,
@@ -18,7 +18,7 @@
           "type": "inference",
           "topic": "Berlin Olympic Games (1936)",
           "spec_topic": "KT3.3: Controlling and influencing attitudes: propaganda, culture and the arts",
-          "question_text": "Give two things you can infer from Source A about the success of the Berlin Olympic Games in 1936.",
+          "question_text": "State two valid historical inferences from Source A regarding how the Nazi regime used the 1936 Berlin Olympics.",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: The Nazis had successfully created a positive international impression of their regime. Supporting detail: Source A notes \"The Nazis have succeeded with their propaganda\".",
@@ -34,8 +34,8 @@
           "type": "causation",
           "topic": "Reduction of Unemployment (1933–39)",
           "spec_topic": "KT4.3: Employment and living standards",
-          "question_text": "Explain why the Nazis were able to reduce unemployment in Germany in the years 1933–1939.",
-          "stimulus": "• rearmament\n• autobahns\n• You must also use information of your own.",
+          "question_text": "Analyse the methods through which the Nazi government cut registered unemployment in Germany between 1933 and 1939.",
+          "stimulus": "• Optional focus: conscription and military rearmament\n• Optional focus: RAD public-works schemes such as Autobahn construction\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Rearmament: From 1935, conscription into the Wehrmacht (armed forces) removed hundreds of thousands of young men aged 18-25 from unemployment registers. Arms manufacturing, aircraft production, and munitions factories created massive industrial demand.",
             "Public Works: The Reich Labour Service (RAD) made 6 months of manual labour compulsory for young men; massive public infrastructure projects such as 7,000 km of autobahns employed over 80,000 men directly and stimulated construction.",
@@ -50,8 +50,8 @@
           "type": "how-useful",
           "topic": "Challenges Facing the Weimar Republic (1919–23)",
           "spec_topic": "KT1.2: The early challenges to the Weimar Republic, 1919–23",
-          "question_text": "How useful are Sources B and C for an enquiry into the challenges facing the Weimar Republic in the years 1919–1923?",
-          "stimulus": "Source B: Photograph of armed Freikorps soldiers occupying government buildings during the Kapp Putsch in Berlin (1920). Source C: Account by a German factory worker describing the daily misery and loss of savings during hyperinflation (1923).",
+          "question_text": "Assess the value of Sources B and C for an investigation into the political and economic crises confronting the Weimar Republic (1919–23).",
+          "stimulus": "Source B: 1920 photograph of armed Freikorps troops in Berlin during the Kapp Putsch. Source C: 1923 testimony of a German worker recounting wiped-out savings during hyperinflation.",
           "indicative_content": [
             "Source B Utility: Shows the armed military threat from right-wing Freikorps who easily took control of Berlin, illustrating the extreme political vulnerability and military impotence of Ebert’s government.",
             "Source B Provenance: A contemporary newspaper photograph documenting the seizure of power, but posed soldiers may exaggerate their calm control.",
@@ -67,7 +67,7 @@
           "type": "interpretation-difference",
           "topic": "Challenges Facing the Weimar Republic (1919–23)",
           "spec_topic": "KT1.2: The early challenges to the Weimar Republic, 1919–23",
-          "question_text": "Study Interpretations 1 and 2. They give different views about the challenges facing the Weimar Republic in the years 1919–1923. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on the crises facing the Weimar Republic (1919–23). Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 argues that the primary threat to the Republic came from armed political extremism on the Left and Right (Spartacists and Freikorps) seeking to destroy it from the outset.",
@@ -82,7 +82,7 @@
           "type": "interpretation-why",
           "topic": "Challenges Facing the Weimar Republic (1919–23)",
           "spec_topic": "KT1.2: The early challenges to the Weimar Republic, 1919–23",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about the challenges facing the Weimar Republic in the years 1919–1923. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about the Weimar Republic’s 1919–23 crises. You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Different Source Material: The historians gave weight to different types of historical evidence. The author of Interpretation 1 focused on political violence and military insurrections (supported by Source B on the Kapp Putsch), whereas Interpretation 2 drew upon social and economic records of currency collapse (supported by Source C on hyperinflation).",
@@ -97,7 +97,7 @@
           "type": "interpretation-evaluation",
           "topic": "Challenges Facing the Weimar Republic: Hyperinflation vs Political Extremism",
           "spec_topic": "KT1.2: The early challenges to the Weimar Republic, 1919–23",
-          "question_text": "How far do you agree with Interpretation 2 about the challenges facing the Weimar Republic in the years 1919–1923? Explain your answer, using both interpretations, and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s view of the threats facing the Weimar Republic between 1919 and 1923, weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Arguments agreeing with Interpretation 2 (Hyperinflation): The 1923 crisis destroyed the life savings of the middle classes, alienated civil servants, made barter widespread, and permanently eroded trust in democratic governance; it was sparked by the French invasion of the Ruhr and government printing of banknotes.",
@@ -121,7 +121,7 @@
           "type": "inference",
           "topic": "Early Development of the Nazi Party (1919–20)",
           "spec_topic": "KT2.1: Early development of the Nazi Party, 1920–22",
-          "question_text": "Give two things you can infer from Source A about the early development of the Nazi Party.",
+          "question_text": "State two valid historical inferences from Source A regarding how the DAP/NSDAP grew during its formative years (1919–20).",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: The party was originally a very small, obscure organisation with negligible funding. Supporting detail: Source A notes meetings held in beer cellars with only a handful of attendees.",
@@ -136,8 +136,8 @@
           "type": "causation",
           "topic": "Creation of a Police State (1933–39)",
           "spec_topic": "KT3.2: The police state",
-          "question_text": "Explain why the Nazis were able to create a police state in the years 1933–1939.",
-          "stimulus": "• concentration camps\n• law courts\n• You must also use information of your own.",
+          "question_text": "Analyse how Hitler and the Nazi leadership established a totalitarian police state across Germany between 1933 and 1939.",
+          "stimulus": "• Optional focus: SS-run concentration camps from Dachau onwards\n• Optional focus: Nazi control of judges and the People’s Court\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Concentration Camps: From March 1933 (Dachau), camps run by the SS Totenkopfverbände (Death’s Head units) held political dissidents, communists, trade unionists, and social outcasts without trial, creating pervasive terror.",
             "Control of Law Courts: Judges were required to join the National Socialist League for the Maintenance of the Law; the People’s Court (Volksgerichtshof) set up in 1934 tried treason cases without juries, ensuring 100% Nazi compliance.",
@@ -152,8 +152,8 @@
           "type": "how-useful",
           "topic": "Nazi Policies Towards Women (1933–39)",
           "spec_topic": "KT4.1: Nazi policies towards women",
-          "question_text": "How useful are Sources B and C for an enquiry into Nazi policies towards women in the years 1933–1939?",
-          "stimulus": "Source B: Nazi propaganda poster celebrating the German mother with multiple children under the slogan \"Mother and Child\". Source C: Secret report by SOPADE (Social Democratic Party in exile) documenting women’s frustration with marriage loans, workplace dismissals, and compulsory motherhood.",
+          "question_text": "Assess the value of Sources B and C for an investigation into Nazi policies towards German women and family life (1933–39).",
+          "stimulus": "Source B: Nazi “Mother and Child” propaganda poster idealising large Aryan families. Source C: Underground SOPADE report recording female resentment over dismissals and marriage loans.",
           "indicative_content": [
             "Source B Utility: Highlights official Nazi ideology emphasizing the \"Three Ks\" (Kinder, Küche, Kirche), the Law for the Encouragement of Marriage (1933), and the Honour Cross of the German Mother.",
             "Source B Provenance: Official propaganda produced by Goebbels’ Ministry of Public Enlightenment; idealised, showing what the regime wanted people to believe rather than reality.",
@@ -169,7 +169,7 @@
           "type": "interpretation-difference",
           "topic": "Nazi Policies Towards Women (1933–39)",
           "spec_topic": "KT4.1: Nazi policies towards women",
-          "question_text": "Study Interpretations 1 and 2. They give different views about Nazi policies towards women. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on Nazi policies towards women (1933–39). Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 suggests Nazi policies successfully achieved their goals, increasing marriage rates, childbearing, and returning women to domestic roles.",
@@ -184,7 +184,7 @@
           "type": "interpretation-why",
           "topic": "Nazi Policies Towards Women (1933–39)",
           "spec_topic": "KT4.1: Nazi policies towards women",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about Nazi policies towards women. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about Nazi policies towards women. You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Different Focus / Evidence: Interpretation 1 focuses on early legislative incentives (1933–36 marriage loans and birth-rate statistics, reflected in Source B), whereas Interpretation 2 focuses on the late 1930s Four-Year Plan economic reality and private dissent (reflected in Source C).",
@@ -199,7 +199,7 @@
           "type": "interpretation-evaluation",
           "topic": "Success vs Failure of Nazi Policies Towards Women",
           "spec_topic": "KT4.1: Nazi policies towards women",
-          "question_text": "How far do you agree with Interpretation 2 about Nazi policies towards women in the years 1933–1939? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s assessment of Nazi policies towards women (1933–39), weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Supporting Interpretation 2 (Contradiction and Failure): By 1937, Goering’s Four-Year Plan caused acute labour shortages; the regime abolished the marriage loan requirement that wives not work, introducing a compulsory \"Duty Year\" (Pflichtjahr) for women; female employment actually rose from 11.6 million in 1933 to 14.6 million in 1939.",
@@ -223,7 +223,7 @@
           "type": "inference",
           "topic": "Persecution of Jews during Kristallnacht (1938)",
           "spec_topic": "KT4.4: The persecution of minorities",
-          "question_text": "Give two things you can infer from Source A about the treatment of the Jews during Kristallnacht.",
+          "question_text": "State two valid historical inferences from Source A regarding the persecution of German Jews during Kristallnacht (November 1938).",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: The violence against Jewish property and businesses was widespread, destructive, and state-sanctioned. Supporting detail: Source A recounts systematic smashing of Jewish storefronts and torching of synagogues while police stood by.",
@@ -238,8 +238,8 @@
           "type": "causation",
           "topic": "Economic Recovery in the Weimar Republic (1924–29)",
           "spec_topic": "KT1.3: The \"Golden Years\": recovery of the Republic, 1924–29",
-          "question_text": "Explain why the German economy recovered in the years 1924–1929.",
-          "stimulus": "• Gustav Stresemann\n• Dawes Plan\n• You must also use information of your own.",
+          "question_text": "Analyse the factors that stabilized and revived the Weimar economy between 1924 and 1929.",
+          "stimulus": "• Optional focus: Gustav Stresemann’s currency reform (Rentenmark/Reichsmark)\n• Optional focus: US loans and rescheduled reparations under the 1924 Dawes Plan\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Gustav Stresemann & Currency Reform: As Chancellor in late 1923, Stresemann ended passive resistance in the Ruhr and introduced the Rentenmark (backed by industrial and agricultural land), bringing hyperinflation to an immediate halt and restoring currency confidence.",
             "Dawes Plan (1924): Reorganised reparations to start at 1 billion marks annually, rising to 2.5 billion, and secured an initial 800 million gold mark loan from US banks; followed by the Young Plan (1929) cutting reparations to £2 billion.",
@@ -254,8 +254,8 @@
           "type": "how-useful",
           "topic": "Support for the Nazi Regime (1933–39)",
           "spec_topic": "KT3.4: Opposition, resistance and conformity",
-          "question_text": "How useful are Sources B and C for an enquiry into the extent of support for the Nazi regime in the years 1933–1939?",
-          "stimulus": "Source B: Report by an American journalist describing genuine public adulation for Hitler at public rallies and mass enthusiasm for economic recovery. Source C: Secret Gestapo surveillance report recording widespread grumbling and cynical jokes about food shortages and corruption among Nazi party bosses.",
+          "question_text": "Assess the value of Sources B and C for an investigation into how widely ordinary Germans supported the Nazi dictatorship (1933–39).",
+          "stimulus": "Source B: American correspondent’s dispatch noting enthusiasm for Hitler at rallies and full employment. Source C: Confidential Gestapo mood report logging complaints over food shortages and party corruption.",
           "indicative_content": [
             "Source B Utility: Documents the very real popularity of Hitler’s foreign policy successes, restoration of law and order, and pride restored to ordinary citizens.",
             "Source B Provenance: Foreign observer with freedom to report, but public spectacles and choreographed Nuremberg rallies tended to mask private dissent.",
@@ -271,7 +271,7 @@
           "type": "interpretation-difference",
           "topic": "Support for the Nazi Regime (1933–39)",
           "spec_topic": "KT3.4: Opposition, resistance and conformity",
-          "question_text": "Study Interpretations 1 and 2. They give different views about the extent of support for the Nazi regime in the years 1933–1939. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on popular backing for the Nazi regime (1933–39). Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 argues that the vast majority of Germans genuinely supported Hitler, grateful for economic stability, employment, and national restoration.",
@@ -286,7 +286,7 @@
           "type": "interpretation-why",
           "topic": "Support for the Nazi Regime (1933–39)",
           "spec_topic": "KT3.4: Opposition, resistance and conformity",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about the extent of support for the Nazi regime in the years 1933–1939. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about popular backing for the Nazi regime (1933–39). You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Differing Sources: Interpretation 1 drew upon public sources, plebiscite results, and eyewitness accounts of mass rallies (similar to Source B), whereas Interpretation 2 utilized secret police records and underground opposition reports (similar to Source C) showing private grumbling.",
@@ -301,7 +301,7 @@
           "type": "interpretation-evaluation",
           "topic": "Popular Support vs Fear and Coercion in Nazi Germany",
           "spec_topic": "KT3.4: Opposition, resistance and conformity",
-          "question_text": "How far do you agree with Interpretation 2 about the extent of support for the Nazi regime in the years 1933–1939? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s view on how far ordinary Germans genuinely supported the Nazi regime (1933–39), weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Arguments agreeing with Interpretation 2 (Coercion and Passive Conformity): The terror apparatus (SS, Gestapo, block wardens, Dachau) made active opposition suicidal; the abolition of trade unions (May 1933) and rival political parties (July 1933) eliminated organized resistance; many Germans retreated into \"internal exile\" or grumbled in private.",
@@ -325,7 +325,7 @@
           "type": "inference",
           "topic": "Nazi Reaction to the Reichstag Fire (1933)",
           "spec_topic": "KT3.1: Creating a dictatorship, 1933–34",
-          "question_text": "Give two things you can infer from Source A about how the Nazis reacted to the Reichstag Fire.",
+          "question_text": "State two valid historical inferences from Source A regarding how the Nazis exploited the February 1933 Reichstag Fire.",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: The Nazis immediately used the fire as a pretext to launch a ruthless crackdown against the Communist Party (KPD). Supporting detail: Source A describes police raiding communist headquarters and arresting thousands of party officials.",
@@ -340,8 +340,8 @@
           "type": "causation",
           "topic": "Early Unpopularity of the Weimar Republic (1919–23)",
           "spec_topic": "KT1.2: The early challenges to the Weimar Republic, 1919–23",
-          "question_text": "Explain why the Weimar Republic was unpopular in the years 1919–1923.",
-          "stimulus": "• reparations\n• the new Constitution\n• You must also use information of your own.",
+          "question_text": "Analyse the reasons why the fledgling Weimar Republic faced widespread resentment in Germany between 1919 and 1923.",
+          "stimulus": "• Optional focus: £6.6 billion reparations and Treaty of Versailles terms\n• Optional focus: Proportional Representation and Article 48 in the Weimar Constitution\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Reparations: The crushing £6.6 billion sum fixed in 1921 drained the economy, stoked inflation, and led directly to the 1923 default and French occupation of the Ruhr.",
             "The Weimar Constitution: Proportional representation led to unstable coalition governments and frequent cabinet collapses; Article 48 gave emergency dictatorial powers to the President; traditional elites resented democratic egalitarianism.",
@@ -356,8 +356,8 @@
           "type": "how-useful",
           "topic": "Support for the Nazi Party in the \"Lean Years\" (1924–28)",
           "spec_topic": "KT2.2: The Munich Putsch and the Nazi Party, 1923–28",
-          "question_text": "How useful are Sources B and C for an enquiry into support for the Nazi Party in the years 1924–1928?",
-          "stimulus": "Source B: Report on Nazi election campaigning in rural Protestant areas showing growing attraction among farmers facing agricultural depression. Source C: National election statistics and press commentary from 1928 showing the Nazis won only 2.6% of the national vote (12 Reichstag seats).",
+          "question_text": "Assess the value of Sources B and C for an investigation into Nazi Party fortunes during the ‘Lean Years’ (1924–28).",
+          "stimulus": "Source B: Party campaign report highlighting growing rural Protestant support amid farm debt. Source C: May 1928 Reichstag election data showing the NSDAP polling just 2.6% (12 seats).",
           "indicative_content": [
             "Source B Utility: Highlights the targeted strategy of winning over rural, small-town voters and farmers who did not share in the Weimar urban boom.",
             "Source B Provenance: Regional contemporary report detailing grass-roots party work, giving granular local insight.",
@@ -373,7 +373,7 @@
           "type": "interpretation-difference",
           "topic": "Support for the Nazi Party (1924–28)",
           "spec_topic": "KT2.2: The Munich Putsch and the Nazi Party, 1923–28",
-          "question_text": "Study Interpretations 1 and 2. They give different views about support for the Nazi Party in the years 1924–1928. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on Nazi Party progress between 1924 and 1928. Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 emphasizes that the Nazi Party was an insignificant fringe group completely rejected by the German electorate during the prosperous Stresemann years.",
@@ -388,7 +388,7 @@
           "type": "interpretation-why",
           "topic": "Support for the Nazi Party (1924–28)",
           "spec_topic": "KT2.2: The Munich Putsch and the Nazi Party, 1923–28",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about support for the Nazi Party in the years 1924–1928. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about Nazi Party fortunes in 1924–28. You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Different Focus: Interpretation 1 focuses on parliamentary election tallies (Source C showing 12 seats), whereas Interpretation 2 focuses on party membership figures, local propaganda networks, and rural outreach (Source B).",
@@ -403,7 +403,7 @@
           "type": "interpretation-evaluation",
           "topic": "Significance of the Nazi \"Lean Years\": Marginal Fringe or Crucial Foundation?",
           "spec_topic": "KT2.2: The Munich Putsch and the Nazi Party, 1923–28",
-          "question_text": "How far do you agree with Interpretation 2 about support for the Nazi Party in the years 1924–1928? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s view of Nazi Party support and reorganisation during 1924–28, weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Supporting Interpretation 2 (Vital Organisational Foundation): Following release from Landsberg prison, Hitler re-founded the NSDAP in 1925; at the 1926 Bamberg Conference he established the Führerprinzip and defeated the northern socialist wing; party membership rose from 27,000 in 1925 to over 100,000 by 1928; established the SS and Hitler Youth.",
@@ -427,7 +427,7 @@
           "type": "inference",
           "topic": "The Hitler Youth (Hitlerjugend)",
           "spec_topic": "KT4.2: Nazi policies towards the young",
-          "question_text": "Give two things you can infer from Source A about the Hitler Youth.",
+          "question_text": "State two valid historical inferences from Source A regarding activities and aims inside the Hitler Youth (Hitlerjugend).",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: The Hitler Youth focused heavily on physical conditioning and military drill rather than academic learning. Supporting detail: Source A highlights rifle practice, obstacle courses, and marching in uniforms.",
@@ -442,8 +442,8 @@
           "type": "causation",
           "topic": "Nazi Propaganda and Mind Control (1933–39)",
           "spec_topic": "KT3.3: Controlling and influencing attitudes: propaganda, culture and the arts",
-          "question_text": "Explain why the use of propaganda helped the Nazis to control the attitudes of the German people in the years 1933–1939.",
-          "stimulus": "• newspapers\n• Nazi rallies\n• You must also use information of your own.",
+          "question_text": "Analyse how Goebbels’ propaganda and censorship apparatus shaped public attitudes in Nazi Germany between 1933 and 1939.",
+          "stimulus": "• Optional focus: editorial control of newspapers and cheap Volksempfänger radios\n• Optional focus: Nuremberg spectacle rallies and cultural censorship\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Newspapers: Goebbels brought all press under Nazi control through the Reich Press Law (1933); the DNB news agency dictated daily editorial lines; anti-Nazi newspapers were closed and editors were vetted.",
             "Nazi Rallies: Annual Nuremberg Rallies staged vast theatrical spectacles with searchlight \"cathedrals of light\", military parades, and mass choral salutes, instilling awe, unity, and submission to the Führer.",
@@ -458,8 +458,8 @@
           "type": "how-useful",
           "topic": "Why Hitler Became Chancellor in January 1933",
           "spec_topic": "KT2.4: How Hitler became Chancellor, 1932–33",
-          "question_text": "How useful are Sources B and C for an enquiry into the reasons why Hitler became Chancellor in 1933?",
-          "stimulus": "Source B: Diary entry by Franz von Papen explaining his political deal to convince Hindenburg to appoint Hitler with Papen as Vice-Chancellor to \"box him in\". Source C: Eyewitness account of mass Nazi political rallies and SA marching through Berlin after the July 1932 election.",
+          "question_text": "Assess the value of Sources B and C for an investigation into why President Hindenburg appointed Hitler Chancellor in January 1933.",
+          "stimulus": "Source B: Franz von Papen’s account of his backstairs deal with Hindenburg to ‘tame’ Hitler in a conservative cabinet. Source C: Eyewitness description of NSDAP electoral momentum and SA marches in 1932.",
           "indicative_content": [
             "Source B Utility: Exposes the backdoor political intrigues, rivalries between Schleicher and Papen, and Hindenburg’s elite cabal who mistakenly thought they could control Hitler.",
             "Source B Provenance: First-hand insider account from Papen himself, highly revealing of his hubris and miscalculation, though written to defend his own role.",
@@ -475,7 +475,7 @@
           "type": "interpretation-difference",
           "topic": "Why Hitler Became Chancellor in 1933",
           "spec_topic": "KT2.4: How Hitler became Chancellor, 1932–33",
-          "question_text": "Study Interpretations 1 and 2. They give different views about the reasons why Hitler became Chancellor in 1933. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on why Hitler became Chancellor in January 1933. Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 argues Hitler was appointed primarily due to the political backstairs intrigue, selfish calculations, and fatal misjudgements of Papen and Hindenburg.",
@@ -490,7 +490,7 @@
           "type": "interpretation-why",
           "topic": "Why Hitler Became Chancellor in 1933",
           "spec_topic": "KT2.4: How Hitler became Chancellor, 1932–33",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about the reasons why Hitler became Chancellor in 1933. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about Hitler’s appointment as Chancellor in 1933. You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Different Evidence Focus: Interpretation 1 drew upon cabinet papers, private diaries, and negotiations between Papen, Schleicher, and Oskar von Hindenburg (Source B). Interpretation 2 drew upon election statistics, unemployment data, and rally reports showing popular mass mobilisation (Source C).",
@@ -505,7 +505,7 @@
           "type": "interpretation-evaluation",
           "topic": "Hitler’s Appointment: Elite Backstairs Intrigue vs Mass Electoral Mandate",
           "spec_topic": "KT2.4: How Hitler became Chancellor, 1932–33",
-          "question_text": "How far do you agree with Interpretation 2 about the reasons why Hitler became Chancellor in 1933? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s explanation of why Hitler became Chancellor in January 1933, weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Supporting Interpretation 2 (Mass Electoral and Economic Pressure): 6 million unemployed after Wall Street Crash drove voters to extremes; Nazis won 230 seats (37.3%) in July 1932; Hitler’s charismatic speeches promised \"Work and Bread\" to all classes; the SA (400,000 men) intimidated opponents and projected strength.",
@@ -529,7 +529,7 @@
           "type": "inference",
           "topic": "Education in Nazi Germany",
           "spec_topic": "KT4.2: Nazi policies towards the young",
-          "question_text": "Give two things you can infer from Source A about education in Nazi Germany.",
+          "question_text": "State two valid historical inferences from Source A regarding classroom indoctrination and schooling in Nazi Germany.",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: School curricula were heavily rewritten to promote racial ideology and anti-Semitism. Supporting detail: Source A references biology lessons centered on eugenics and racial purity.",
@@ -544,8 +544,8 @@
           "type": "causation",
           "topic": "Reorganisation of the Nazi Party (1924–28)",
           "spec_topic": "KT2.2: The Munich Putsch and the Nazi Party, 1923–28",
-          "question_text": "Explain why the Nazi Party was reorganised in the years 1924–1928.",
-          "stimulus": "• elections\n• the Bamberg Conference (1926)\n• You must also use information of your own.",
+          "question_text": "Analyse why Hitler restructured the NSDAP’s strategy and organisation between 1924 and 1928.",
+          "stimulus": "• Optional focus: abandoning putschism to contest Reichstag elections legally\n• Optional focus: asserting the Führerprinzip at the 1926 Bamberg Conference\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Legal Path to Power after Munich Putsch (Elections): The failure of the 1923 Putsch convinced Hitler that armed revolution was impossible; the party had to win power legally through Reichstag elections, requiring a structured electoral machine.",
             "The Bamberg Conference (1926): Hitler re-established his supreme authority (Führerprinzip), sidelined Gregor Strasser’s socialist wing, and unified party ideology behind anti-Semitism and anti-communism.",
@@ -560,8 +560,8 @@
           "type": "how-useful",
           "topic": "Cultural Changes in the Weimar Republic (1924–29)",
           "spec_topic": "KT1.4: Changes in society, 1924–29: Cultural changes",
-          "question_text": "How useful are Sources B and C for an enquiry into cultural changes in the Weimar Republic in the years 1924–1929?",
-          "stimulus": "Source B: Photograph of a Bauhaus architectural design exhibition in Dessau celebrating modernist minimalism and functional technology. Source C: Right-wing nationalist article condemning Berlin cabaret culture, American jazz music, and \"degenerate\" avant-garde art.",
+          "question_text": "Assess the value of Sources B and C for an investigation into cultural experimentation and reaction in Weimar Germany (1924–29).",
+          "stimulus": "Source B: Photograph from a Dessau Bauhaus exhibition showcasing modernist design. Source C: Conservative nationalist press piece attacking Berlin cabaret, jazz, and avant-garde art.",
           "indicative_content": [
             "Source B Utility: Shows the pioneering artistic innovations of the Bauhaus movement under Walter Gropius, reflecting Weimar’s spirit of experimentation and modernism.",
             "Source B Provenance: An architectural promotional photograph highlighting modernist achievements; limited to urban avant-garde designers.",
@@ -577,7 +577,7 @@
           "type": "interpretation-difference",
           "topic": "Cultural Changes in the Weimar Republic (1924–29)",
           "spec_topic": "KT1.4: Changes in society, 1924–29: Cultural changes",
-          "question_text": "Study Interpretations 1 and 2. They give different views about cultural changes in the Weimar Republic in the years 1924–1929. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on Weimar cultural developments (1924–29). Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 portrays the 1920s as a vibrant \"Golden Age\" of artistic freedom, creativity, and world-leading culture.",
@@ -592,7 +592,7 @@
           "type": "interpretation-why",
           "topic": "Cultural Changes in the Weimar Republic (1924–29)",
           "spec_topic": "KT1.4: Changes in society, 1924–29: Cultural changes",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about cultural changes in the Weimar Republic in the years 1924–1929. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about Weimar culture in 1924–29. You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Different Focus / Geography: Interpretation 1 focused on Berlin’s avant-garde art, cinema (Fritz Lang’s Metropolis), and Bauhaus architecture (Source B). Interpretation 2 drew upon conservative, rural publications and church complaints (Source C) protesting moral decline.",
@@ -607,7 +607,7 @@
           "type": "interpretation-evaluation",
           "topic": "Weimar Culture: Golden Age of Innovation or Source of Political Polarization?",
           "spec_topic": "KT1.4: Changes in society, 1924–29: Cultural changes",
-          "question_text": "How far do you agree with Interpretation 2 about cultural changes in the Weimar Republic in the years 1924–1929? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s assessment of cultural changes in Weimar Germany (1924–29), weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Supporting Interpretation 2 (Alienation and Conservative Backlash): The new culture was largely restricted to metropolitan centers like Berlin; traditional middle classes and rural Catholics were horrified by nudism, cabaret decadence, and American jazz; nationalists branded it \"cultural Bolshevism\" and used it as powerful propaganda against democracy.",
@@ -631,7 +631,7 @@
           "type": "inference",
           "topic": "Hitler Increasing Nazi Support (Early 1920s)",
           "spec_topic": "KT2.1: Early development of the Nazi Party, 1920–22",
-          "question_text": "Give two things you can infer from Source A about how Hitler increased support for the Nazi Party in the early 1920s.",
+          "question_text": "State two valid historical inferences from Source A regarding how Hitler built up NSDAP membership in Munich during the early 1920s.",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: Hitler used powerful emotional oratory and targeted grievances to captivate beer hall audiences. Supporting detail: Source A recounts how his passionate delivery resonated with angry war veterans.",
@@ -646,8 +646,8 @@
           "type": "causation",
           "topic": "Instability in Germany (1918–23)",
           "spec_topic": "KT1.2: The early challenges to the Weimar Republic, 1919–23",
-          "question_text": "Explain why the situation in Germany was unstable in the years 1918–1923.",
-          "stimulus": "• the Spartacist revolt\n• hyperinflation\n• You must also use information of your own.",
+          "question_text": "Analyse why Germany experienced acute political violence and economic turmoil between 1918 and 1923.",
+          "stimulus": "• Optional focus: left- and right-wing uprisings such as the 1919 Spartacist Revolt\n• Optional focus: the 1923 Ruhr occupation and hyperinflation crisis\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "The Spartacist Revolt (Left-Wing Threat): In January 1919, Rosa Luxemburg and Karl Liebknecht led a communist uprising in Berlin; the government relied on right-wing Freikorps to brutally crush it, setting a precedent of political bloodshed.",
             "Hyperinflation (1923): Triggered by the French occupation of the Ruhr and government passive resistance/money printing, the mark became worthless, destroying middle-class savings and creating economic panic.",
@@ -662,8 +662,8 @@
           "type": "how-useful",
           "topic": "Nazi Methods of Controlling the German People (1933–39)",
           "spec_topic": "KT3.2: The police state / KT3.3: Controlling attitudes",
-          "question_text": "How useful are Sources B and C for an enquiry into Nazi methods of controlling the German people in the years 1933–1939?",
-          "stimulus": "Source B: Extract from a speech by Joseph Goebbels explaining that the goal of propaganda is to unite the whole nation behind the Führer through total media control. Source C: Secret police report detailing citizen denunciations and Gestapo arrests of individuals listening to foreign radio broadcasts.",
+          "question_text": "Assess the value of Sources B and C for an investigation into how the Nazi regime maintained control over German society (1933–39).",
+          "stimulus": "Source B: Speech by Joseph Goebbels outlining how total media coordination unites citizens behind the Führer. Source C: Gestapo case record of neighbour denunciations and arrests for tuning into foreign broadcasts.",
           "indicative_content": [
             "Source B Utility: Shows the ideological rationale and systematic scope of Nazi propaganda to achieve \"Gleichschaltung\" (coordination) across radio, press, and arts.",
             "Source B Provenance: Speech by the Minister of Propaganda himself; authoritative statement of regime intention, though claiming greater popular unity than existed in reality.",
@@ -679,7 +679,7 @@
           "type": "interpretation-difference",
           "topic": "Nazi Methods of Control: Propaganda vs Terror",
           "spec_topic": "KT3.2: The police state / KT3.3: Controlling attitudes",
-          "question_text": "Study Interpretations 1 and 2. They give different views about Nazi methods of controlling the German people in the years 1933–1939. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on how the Nazis controlled the German population (1933–39). Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 argues that propaganda, censorship, and popular consensus were the primary methods of control, successfully winning over the hearts and minds of the German people.",
@@ -694,7 +694,7 @@
           "type": "interpretation-why",
           "topic": "Nazi Methods of Control: Propaganda vs Terror",
           "spec_topic": "KT3.2: The police state / KT3.3: Controlling attitudes",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about Nazi methods of controlling the German people in the years 1933–1939. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about Nazi control in 1933–39. You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Differing Types of Evidence: The author of Interpretation 1 gave weight to official speeches, public media, and mass organisations (Source B), whereas Interpretation 2 prioritized police court records, Gestapo case files, and penal statistics (Source C).",
@@ -709,7 +709,7 @@
           "type": "interpretation-evaluation",
           "topic": "Nazi Control: Terror and Intimidation vs Popular Propaganda and Consent",
           "spec_topic": "KT3.2: The police state / KT3.3: Controlling attitudes",
-          "question_text": "How far do you agree with Interpretation 2 about Nazi methods of controlling the German people in the years 1933–1939? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s view on whether terror or propaganda mattered more in controlling Nazi Germany (1933–39), weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Supporting Interpretation 2 (Terror and the Police State): SS under Himmler and Gestapo under Heydrich operated outside the law; concentration camps (Dachau, Sachsenhausen); People’s Court; Blockleiter network created fear that any critical word would lead to arrest; trade unions abolished.",
@@ -733,7 +733,7 @@
           "type": "inference",
           "topic": "Impact of Hyperinflation in 1923",
           "spec_topic": "KT1.2: The challenges of 1923: hyperinflation",
-          "question_text": "Give two things you can infer from Source A about the impact of hyperinflation in Germany in 1923.",
+          "question_text": "State two valid historical inferences from Source A regarding how the 1923 hyperinflation crisis affected German citizens.",
           "stimulus": null,
           "indicative_content": [
             "Inference 1: Money lost its value so rapidly that everyday commerce broke down completely. Supporting detail: Source A recounts prices doubling within hours and people carrying wheelbarrows of cash.",
@@ -748,8 +748,8 @@
           "type": "causation",
           "topic": "Growth in Support for the Nazis (1929–32)",
           "spec_topic": "KT2.3: The growth in support for the Nazis, 1929–32",
-          "question_text": "Explain why support for the Nazi party grew in the years 1929–1932.",
-          "stimulus": "• the Wall Street Crash (1929) and the Great Depression\n• Hitler’s speeches\n• You must also use information of your own.",
+          "question_text": "Analyse the reasons behind the dramatic surge in Nazi electoral support between 1929 and 1932.",
+          "stimulus": "• Optional focus: mass unemployment after the 1929 Wall Street Crash\n• Optional focus: Hitler’s charismatic speaking tours and targeted Goebbels propaganda\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "The Wall Street Crash & Great Depression: US recalled Dawes Plan loans; German industrial output collapsed, banks failed, and unemployment rocketed to 6 million by 1932; Weimar coalitions failed to agree on welfare cuts, creating voter desperation.",
             "Hitler’s Oratorical Appeal and Campaigning: Flown across Germany on the \"Hitler over Germany\" aeroplane campaign; delivered dynamic speeches offering simple solutions, scapegoating Jews and Weimar politicians, and promising \"Work and Bread\".",
@@ -764,8 +764,8 @@
           "type": "causation",
           "topic": "Youth Opposition towards the Nazis (1933–39)",
           "spec_topic": "KT3.4: Opposition, resistance and conformity: youth opposition",
-          "question_text": "Explain why there was opposition from some young people towards the Nazis in the years 1933–1939.",
-          "stimulus": "• the Edelweiss Pirates\n• the Swing Youth\n• You must also use information of your own.",
+          "question_text": "Analyse why dissident youth subcultures resisted Nazi conformity in Germany between 1933 and 1939.",
+          "stimulus": "• Optional focus: working-class Edelweiss Pirates defying Hitler Youth patrols\n• Optional focus: middle-class Swing Youth embracing banned Anglo-American jazz\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "The Edelweiss Pirates: Working-class youths who rebelled against rigid military regimentation of the Hitler Youth; wore check shirts, went on unchaperoned camping hikes, sang anti-Nazi songs, and attacked Hitler Youth patrols.",
             "The Swing Youth: Middle-class youths who rejected Nazi racial and cultural puritanism; embraced banned American jazz/swing music, danced in clubs, grew their hair long, and flaunted British clothing fashions.",
@@ -780,8 +780,8 @@
           "type": "how-useful",
           "topic": "Living Standards in Nazi Germany (1933–39)",
           "spec_topic": "KT4.3: Employment and living standards",
-          "question_text": "How useful are Sources B and C for an enquiry into people’s living standards in Nazi Germany in the years 1933–1939?",
-          "stimulus": "Source B: Promotional brochure for the Strength through Joy (KdF) cruise liner Wilhelm Gustloff advertising affordable holiday cruises for factory workers. Source C: Secret report by German social investigators noting rising food prices, longer working hours (up to 49 hours/week), and rationing of dairy products.",
+          "question_text": "Assess the value of Sources B and C for an investigation into workers’ living standards in Nazi Germany (1933–39).",
+          "stimulus": "Source B: Strength Through Joy (KdF) brochure promoting subsidised worker cruises aboard the Wilhelm Gustloff. Source C: Confidential labour report noting 49-hour weeks, higher food prices, and fat rationing.",
           "indicative_content": [
             "Source B Utility: Provides evidence of state-subsidised leisure benefits, showing how the regime rewarded compliant workers with cruises, theatre tickets, and sports facilities.",
             "Source B Provenance: Official propaganda produced by Robert Ley’s German Labour Front (DAF); glamorises luxury perks that only a minority of workers actually experienced.",
@@ -797,7 +797,7 @@
           "type": "interpretation-difference",
           "topic": "Living Standards in Nazi Germany (1933–39)",
           "spec_topic": "KT4.3: Employment and living standards",
-          "question_text": "Study Interpretations 1 and 2. They give different views about people’s living standards in Nazi Germany in the years 1933–1939. What is the main difference between these views? Explain your answer, using details from both interpretations.",
+          "question_text": "Compare Interpretations 1 and 2 on German living standards under Nazi rule (1933–39). Identify and support the core difference between the two historians’ arguments.",
           "stimulus": null,
           "indicative_content": [
             "Main difference: Interpretation 1 suggests that living standards genuinely improved under the Nazis through full employment, KdF leisure rewards, and the Volkswagen scheme.",
@@ -812,7 +812,7 @@
           "type": "interpretation-why",
           "topic": "Living Standards in Nazi Germany (1933–39)",
           "spec_topic": "KT4.3: Employment and living standards",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about people’s living standards in Nazi Germany in the years 1933–1939. You may use Sources B and C to help explain your answer.",
+          "question_text": "Explain one plausible reason why Historians 1 and 2 reach contrasting conclusions about living standards in Nazi Germany (1933–39). You may reference Sources B and C.",
           "stimulus": null,
           "indicative_content": [
             "Different Focus / Criteria: Interpretation 1 looked at employment totals and official DAF leisure records (Source B), whereas Interpretation 2 examined real wages, working hours, and food price inflation (Source C).",
@@ -827,7 +827,7 @@
           "type": "interpretation-evaluation",
           "topic": "Living Standards: Genuine Improvement or Exploitation of the Working Class?",
           "spec_topic": "KT4.3: Employment and living standards",
-          "question_text": "How far do you agree with Interpretation 2 about people’s living standards in Nazi Germany in the years 1933–1939? Explain your answer, using both interpretations and your knowledge of the historical context.",
+          "question_text": "Evaluate Interpretation 2’s judgement on ordinary Germans’ living standards between 1933 and 1939, weighing both interpretations against your own contextual knowledge.",
           "stimulus": null,
           "indicative_content": [
             "Supporting Interpretation 2 (Exploitation and Lower Standards): Trade unions abolished (May 1933); strikes banned; Labour Front (DAF) controlled workers; average working hours rose from 43 hours/week (1933) to 47+ hours (1939); real wages only matched 1928 levels by 1938; Volkswagen (Kdf-Wagen) savings stamps produced zero cars for workers as production switched to military vehicles.",
@@ -835,124 +835,6 @@
             "Conclusion / Synthesis: Workers traded their political and economic freedom for guaranteed employment. While living standards improved relative to the depths of the 1932 Great Depression, they did not surpass the late Weimar Golden Years, and gains were subordinated to rearmament."
           ],
           "examiner_tips": "Structure a thorough comparison using exact data (working hours, wage levels, KdF statistics). Reach a clear, reasoned judgement."
-        }
-      ]
-    },
-    {
-      "year": 2026,
-      "season": "June",
-      "series": "Summer 2026 (Specimen)",
-      "paper_code": "1HI0/31",
-      "questions": [
-        {
-          "q_id": "germany_2026_q1",
-          "q_number": "Q1",
-          "tariff": 4,
-          "type": "inference",
-          "topic": "How Nazis Dealt with Opposition (1933–39)",
-          "spec_topic": "KT3.4: Opposition, resistance and conformity",
-          "question_text": "Give two things you can infer from Source A about how the Nazi Party dealt with opposition in the years 1933–1939.",
-          "stimulus": "Source A: From a speech made by Pastor Niemöller in 1946 (\"First they came for the communists... then the trade unionists... then the Jews... then they came for me\").",
-          "indicative_content": [
-            "Inference 1: The Nazis systematically eliminated opposition groups one by one to prevent united collective resistance. Supporting detail: Source A lists targeting communists, then trade unionists, then Jews, then church leaders sequentially.",
-            "Inference 2: The regime’s terror was so effective that ordinary Germans were intimidated into silence until no defenders remained. Supporting detail: text emphasizes \"I did not speak out... and there was no one left to speak for me\"."
-          ],
-          "examiner_tips": "State two inferences regarding sequential targeting and the atmosphere of fear that silenced bystanders, quoting Niemöller’s speech."
-        },
-        {
-          "q_id": "germany_2026_q2a",
-          "q_number": "Q2(a)",
-          "tariff": 12,
-          "type": "causation",
-          "topic": "Changes in the Position of Women (1924–39)",
-          "spec_topic": "KT1.4: Changes in the position of women / KT4.1: Nazi policies towards women",
-          "question_text": "Explain why there were changes in the position of women in society in the years 1924–1939.",
-          "stimulus": "• jobs for women in Weimar Germany\n• Nazi policies on family\n• You must also use information of your own.",
-          "indicative_content": [
-            "Weimar \"New Woman\" (1924–29): The Weimar Constitution gave women the vote (Article 109) and equal civil rights; female employment expanded in white-collar sectors (teaching, secretarial, medicine); women enjoyed greater social freedom in fashion, cosmetics, and unchaperoned leisure.",
-            "Nazi Family Policies (1933–37): The regime sought to reverse Weimar progress, promoting \"Children, Kitchen, Church\"; introduced marriage loans (up to 1,000 marks), the Mother’s Cross, and anti-abortion laws; barred women from civil service and judiciary.",
-            "Rearmament Reversal (Own Knowledge, 1937–39): As the Four-Year Plan caused acute factory labour shortages, the regime was forced to reverse its stay-at-home policy; introduced compulsory Duty Year (Pflichtjahr) for unmarried women, leading to 14.6 million women working by 1939."
-          ],
-          "examiner_tips": "Demonstrate change over time: liberal emancipation under Weimar, conservative restriction under early Nazi rule, and pragmatic economic reversal by 1939."
-        },
-        {
-          "q_id": "germany_2026_q2b",
-          "q_number": "Q2(b)",
-          "tariff": 12,
-          "type": "causation",
-          "topic": "Why Hitler Became Chancellor in 1933",
-          "spec_topic": "KT2.4: How Hitler became Chancellor, 1932–33",
-          "question_text": "Explain why Hitler became Chancellor in 1933.",
-          "stimulus": "• President Hindenburg\n• elections in 1932\n• You must also use information of your own.",
-          "indicative_content": [
-            "President Hindenburg and Elite Conspiracy: Hindenburg initially despised Hitler as a \"Bohemian corporal\", but Franz von Papen persuaded him that appointing Hitler with Papen as Vice-Chancellor would tame the Nazis while providing a parliamentary majority.",
-            "Elections in 1932 (Electoral Mandate): In July 1932, the Nazis won 230 seats (37.3%), making them the largest party in the Reichstag; democratic government collapsed into rule by presidential decree under Article 48.",
-            "Fear of Communism and SA Presence (Own Knowledge): The Wall Street Crash created 6 million unemployed; industrialists and middle classes backed Hitler out of fear of a communist revolution; the 400,000-strong SA projected strength and order."
-          ],
-          "examiner_tips": "Integrate the role of Hindenburg/Papen’s backstairs intrigue with the 1932 electoral breakthrough and elite fear of communist uprising."
-        },
-        {
-          "q_id": "germany_2026_q3a",
-          "q_number": "Q3(a)",
-          "tariff": 8,
-          "type": "how-useful",
-          "topic": "Problems Faced by the Weimar Republic in 1923",
-          "spec_topic": "KT1.2: The challenges of 1923",
-          "question_text": "How useful are Sources B and C for an enquiry into the problems faced by the Weimar Republic in 1923?",
-          "stimulus": "Source B: Photograph of French soldiers guarding a Ruhr coal mine and confronting striking German miners (1923). Source C: Contemporary diary entry describing soaring prices, carrying bundles of million-mark notes, and fear of starvation in Berlin.",
-          "indicative_content": [
-            "Source B Utility: Documents the foreign military crisis triggered by the French and Belgian occupation of the Ruhr, showing passive resistance and the loss of Germany’s industrial heartland.",
-            "Source B Provenance: Contemporary photographic evidence of foreign troops on German soil; useful for demonstrating the national humiliation and industrial disruption.",
-            "Source C Utility: Provides direct personal evidence of the hyperinflation crisis, showing how the currency collapse disrupted daily survival and destroyed middle-class savings.",
-            "Source C Provenance: Private diary from 1923; highly credible for emotional and domestic reality, free from state censorship."
-          ],
-          "examiner_tips": "Assess foreign occupation/loss of production (Source B) alongside domestic monetary collapse/starvation (Source C). Evaluate content and provenance."
-        },
-        {
-          "q_id": "germany_2026_q3b",
-          "q_number": "Q3(b)",
-          "tariff": 4,
-          "type": "interpretation-difference",
-          "topic": "Problems Faced by the Weimar Republic in 1923",
-          "spec_topic": "KT1.2: The challenges of 1923",
-          "question_text": "Study Interpretations 1 and 2. They give different views about the problems faced by the Weimar Republic in 1923. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-          "stimulus": null,
-          "indicative_content": [
-            "Main difference: Interpretation 1 suggests that the primary danger facing the Weimar Republic in 1923 was economic collapse caused by hyperinflation and passive resistance.",
-            "Interpretation 2 suggests that the greatest threat was political and military extremism, as right-wing and left-wing radicals (such as Hitler in the Munich Putsch) attempted armed rebellion to overthrow the state."
-          ],
-          "examiner_tips": "State the difference clearly: economic catastrophe (Interpretation 1) vs political insurrection/putschism (Interpretation 2)."
-        },
-        {
-          "q_id": "germany_2026_q3c",
-          "q_number": "Q3(c)",
-          "tariff": 4,
-          "type": "interpretation-why",
-          "topic": "Problems Faced by the Weimar Republic in 1923",
-          "spec_topic": "KT1.2: The challenges of 1923",
-          "question_text": "Suggest one reason why Interpretations 1 and 2 give different views about the problems faced by the Weimar Republic in 1923. You may use Sources B and C to help explain your answer.",
-          "stimulus": null,
-          "indicative_content": [
-            "Different Source Material: Interpretation 1 drew upon economic records and accounts of daily starvation during hyperinflation (Source C), whereas Interpretation 2 drew upon police and court records of armed putsches (Ruhr confrontations in Source B and the Munich Putsch).",
-            "Different historical emphasis: One author evaluates socio-economic stability; the other evaluates constitutional survival and armed insurrection."
-          ],
-          "examiner_tips": "Explain that the historians emphasized different dimensions of the 1923 crisis: financial breakdown vs paramilitary rebellion."
-        },
-        {
-          "q_id": "germany_2026_q3d",
-          "q_number": "Q3(d)",
-          "tariff": 16,
-          "type": "interpretation-evaluation",
-          "topic": "The 1923 Crisis: Economic Ruin vs Political Overthrow",
-          "spec_topic": "KT1.2: The challenges of 1923",
-          "question_text": "How far do you agree with Interpretation 2 about the problems faced by the Weimar Republic in 1923? Explain your answer, using both interpretations and your knowledge of the historical context.",
-          "stimulus": null,
-          "indicative_content": [
-            "Supporting Interpretation 2 (Political and Military Threat): Armed rebellion threatened the state: the Bavarian government under Kahr defied Berlin; Hitler launched the Munich Beer Hall Putsch (Nov 1923); left-wing uprisings occurred in Saxony and Thuringia; General von Seeckt declared \"the army stands behind me\".",
-            "Supporting Interpretation 1 (Economic Ruin): Hyperinflation wiped out middle-class savings, bonds, and pensions; printing presses ran 24/7; barter replaced currency; food riots broke out; workers demanded wages paid daily; international credit was ruined.",
-            "Conclusion / Synthesis: The economic catastrophe of hyperinflation was the root cause that triggered the political rebellions; Stresemann’s appointment and decisive currency reform (Rentenmark) defused both threats, proving the republic was resilient enough to survive."
-          ],
-          "examiner_tips": "Provide a sustained evaluation linking the French occupation and hyperinflation directly to the outbreak of political insurrections. Award up to 4 marks for SPaG."
         }
       ]
     }

@@ -42,6 +42,7 @@ console.log('============================================================\n');
 
 const units = [
   'cme_new',
+  'gcse_cold_war',
   'cold_war',
   'eee',
   'edexcel_medicine',

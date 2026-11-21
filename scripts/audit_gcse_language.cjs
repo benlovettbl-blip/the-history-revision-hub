@@ -44,6 +44,7 @@ const BANNED_CORPORATE_JARGON = [
 const GCSE_SPEC_FILE_MAP = {
   edexcel_medicine: 'paper1_11_medicine_britain.json',
   eee: 'paper2_b4_early_elizabethan_england.json',
+  gcse_cold_war: 'paper2_p4_superpower_cold_war.json',
   cme_new: 'paper2_p5_middle_east.json',
   weimar_nazi_germany: 'paper3_31_weimar_nazi_germany.json',
   usa: 'paper3_33_usa_conflict_home_abroad.json',

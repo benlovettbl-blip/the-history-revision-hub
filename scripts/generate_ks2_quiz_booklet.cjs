@@ -138,7 +138,7 @@ const QUIZ_DATA = [
   },
   {
     enquiry: 3,
-    title: "3. Vera's Journey & The Kindertransport",
+    title: "3. One Small Suitcase — The Kindertransport",
     shortTitle: 'The Kindertransport Rescue',
     narrative: 'Kristallnacht (1938) • 10,000 Refugee Children • One Small Suitcase',
     pageRef: 'p. 2 • Q9–12',

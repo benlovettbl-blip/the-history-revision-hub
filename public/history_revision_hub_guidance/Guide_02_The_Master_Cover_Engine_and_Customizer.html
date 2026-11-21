@@ -32,6 +32,12 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 2mm 4mm;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .page-container:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
     }
     .header-bar {
       border-bottom: 2.5px solid #0f172a;
@@ -72,14 +78,14 @@
     }
     h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 17pt;
+      font-size: 16.5pt;
       font-weight: 800;
       margin: 0 0 2px 0;
       color: #0f172a;
       line-height: 1.15;
     }
     .subtitle {
-      font-size: 8.5pt;
+      font-size: 8.3pt;
       color: #475569;
       font-style: italic;
       margin-bottom: 6px;
@@ -88,24 +94,24 @@
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       border-left: 4px solid #1e3a8a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      margin-bottom: 10px;
-      font-size: 8.2pt;
-      line-height: 1.4;
+      margin-bottom: 9px;
+      font-size: 8.1pt;
+      line-height: 1.38;
       color: #1e293b;
     }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 9px;
+      margin-bottom: 9px;
     }
     .grid-3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
     .card {
       border: 1px solid #cbd5e1;
@@ -118,9 +124,9 @@
     .card-header {
       padding: 5px 8px;
       font-weight: 800;
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       color: #ffffff;
     }
     .card-header.blue { background: #1e3a8a; }
@@ -128,9 +134,9 @@
     .card-header.emerald { background: #065f46; }
     .card-header.purple { background: #581c87; }
     .card-body {
-      padding: 8px;
-      font-size: 7.6pt;
-      line-height: 1.35;
+      padding: 7px 8px;
+      font-size: 7.5pt;
+      line-height: 1.33;
       color: #334155;
       flex: 1;
     }
@@ -139,13 +145,13 @@
       padding-left: 14px;
     }
     .card-body li {
-      margin-bottom: 3px;
+      margin-bottom: 2.5px;
     }
     .citation {
-      margin-top: 6px;
-      padding-top: 5px;
+      margin-top: 5px;
+      padding-top: 4px;
       border-top: 1px dashed #cbd5e1;
-      font-size: 7pt;
+      font-size: 6.9pt;
       color: #64748b;
     }
     .citation a {
@@ -153,25 +159,25 @@
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
-      margin-top: 2px;
+      margin-top: 1px;
     }
     .section-title {
       font-weight: 800;
-      font-size: 8.8pt;
+      font-size: 8.6pt;
       color: #0f172a;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       border-bottom: 1.5px solid #0f172a;
       padding-bottom: 2px;
-      margin: 8px 0 6px 0;
+      margin: 7px 0 5px 0;
     }
     .highlight-rule {
       background: #f0fdf4;
       border: 1px solid #86efac;
       border-left: 4px solid #16a34a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      font-size: 8pt;
+      font-size: 7.8pt;
       color: #166534;
       line-height: 1.35;
     }
@@ -181,17 +187,17 @@
       padding: 8px 12px;
       border-radius: 4px;
       font-family: monospace;
-      font-size: 7.8pt;
-      line-height: 1.5;
+      font-size: 7.6pt;
+      line-height: 1.48;
     }
     .imposition-diagram {
       background: #f8fafc;
       border: 1.5px solid #0284c7;
       padding: 8px 12px;
       border-radius: 4px;
-      font-size: 7.8pt;
+      font-size: 7.7pt;
       color: #0369a1;
-      line-height: 1.6;
+      line-height: 1.55;
     }
     .footer-bar {
       border-top: 1.5px solid #0f172a;
@@ -218,12 +224,12 @@
             </div>
             <div class="cat-badge">DESIGN SYSTEM & INSTITUTIONAL NEUTRALITY</div>
             <h1>Guide 02: The Master Cover Engine & Commercial Customizer</h1>
-            <div class="subtitle">Standardized Cover Architecture, Specification Grid & Multi-School Branding</div>
+            <div class="subtitle">Standardized Cover Architecture, Provenance Metadata & Multi-School Branding</div>
           </div>
 
           
       <div class="intro-box">
-        <strong>Executive Summary:</strong> All printed pupil workbooks and revision guides enforce the <strong>Master Cover Engine</strong> (<code>scripts/components/render_standard_cover.cjs</code>). This ensures a dignified, museum-grade aesthetic that complies with the Pearson Edexcel specification while maintaining 100% commercial neutrality for purchasing schools.
+        <strong>Executive Summary:</strong> All printed pupil workbooks enforce the <strong>Master Cover Engine</strong> (<code>scripts/components/render_standard_cover.cjs</code>). This guarantees uncropped archival artwork presentation, curriculum alignment, and 100% institutional neutrality so any adopting school can stamp its own department name cleanly.
       </div>
 
       <div class="grid-2">
@@ -231,35 +237,35 @@
           <div class="card-header blue">🏛️ Front Cover Architecture (Page 1)</div>
           <div class="card-body">
             <ul>
-              <li><strong>Top Departmental Header:</strong> Features <code>data-department-name="The History Department"</code>, enabling any school to brand the cover.</li>
-              <li><strong>Chronological Banner:</strong> Displays Key Topic number, dates, and official Pearson qualification code (e.g. <code>SPECIFICATION 1HI0/2B</code>).</li>
-              <li><strong>Archival Hero Plaque:</strong> 120mm landscape historical photograph with accession shelfmark, date, photographer/artist, and institutional repository.</li>
-              <li><strong>Pupil Identification Block:</strong> Crisp Name, Class, and Teacher fields with classical hairline borders.</li>
-              <li><strong>3-Column Specification Breakdown:</strong> Direct Pearson specification syllabus points filling the bottom page budget with 0 dead white void.</li>
+              <li><strong>Commercial Customizer Hook:</strong> Encloses <code>&lt;span class="school-brand-target"&gt;The History Department&lt;/span&gt;</code> inside <code>data-department-name</code> for multi-school branding.</li>
+              <li><strong>Responsive Uncropped Artwork Gate:</strong> Automatically selects landscape showcase or split-portrait framing with <code>object-fit: contain</code> and verified museum accession metadata.</li>
+              <li><strong>Pedagogical Anchor Deck:</strong> Displays 4 Core Features, 3-Pillar Visual Matrix, Disciplinary Significance statement, and a Targeted Hinge Question.</li>
+              <li><strong>Pupil Identification Block:</strong> Clean Name, Class, and blank Teacher fields (zero school identifiers; zero GCSE target-grade clutter on KS3 covers).</li>
+              <li><strong>Course Specification Directory:</strong> Maps unit enquiries directly to National Curriculum or Pearson Edexcel specification points at <code>0px</code> overflow.</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header purple">📊 Back Cover Architecture (Page 16)</div>
+          <div class="card-header purple">📊 Back Cover Architecture (Final Page)</div>
           <div class="card-body">
             <ul>
-              <li><strong>Assessment Progress Ledger:</strong> Formative breakdown of enquiry marks (/26 per topic, /130 total) with benchmark conversion.</li>
-              <li><strong>WWW / EBI Feedback Section:</strong> 4-line 7.2mm handwriting lines for teacher formative feedback, SEND adaptations, and pupil response.</li>
-              <li><strong>Teacher Sign-off:</strong> Dedicated signature and date approval lines.</li>
-              <li><strong>5-Code Vector QR Hub:</strong> Vector SVGs linking pupils directly to online flashcards, digital quizzes, model answers, and audio narratives.</li>
-              <li><strong>Bottom Folio:</strong> Departmental imprint and pagination marker.</li>
+              <li><strong>Assessment Pathway Benchmarks:</strong> Displays transparent KS3 percentage bands (<code>Em 35%</code>, <code>Em+ 50%</code>, <code>Ex 65%</code>, <code>Ex+ 80%</code>, <code>GD 90%</code>) or GCSE Edexcel grade descriptors.</li>
+              <li><strong>6-Row Marking &amp; Progress Grid:</strong> Tracks core unit enquiries plus one designated teacher assessment task cleanly on one scannable ledger.</li>
+              <li><strong>Teacher Sign-Off &amp; Verification:</strong> Dedicated signature/date spaces supporting low-workload classroom perimeter checks.</li>
+              <li><strong>Permanent Vector QR Hub:</strong> Crisp vector SVG QR codes linking directly to <code>historyrevisionhub.co.uk</code> interactive lessons, audio read-alouds, and self-marking quizzes.</li>
+              <li><strong>Automated Page-Budget Gate:</strong> Audited in headless Chromium to guarantee <code>&ge; 95%</code> space utilization and zero trailing spillover pages.</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="section-title">Commercial Multi-School Customizer Pattern</div>
-      <p>To maintain commercial neutrality, the repository strictly forbids hardcoded school names. Purchasing schools can instantly brand their printed packs via three seamless mechanisms:</p>
+      <p>To uphold strict commercial independence, hardcoded school names are prohibited across the codebase. Adopting schools can customize booklet covers via three supported hooks:</p>
       <div class="code-box">
-        1. <strong>Browser Query Param:</strong> Add <code>?school=St+Peters+Collegiate</code> to the URL.<br>
-        2. <strong>CLI Build Flag:</strong> <code>SCHOOL_NAME="St Jude's Academy" node scripts/export_pdfs.cjs cme_new</code><br>
-        3. <strong>Pure CSS Override:</strong> <code>[data-department-name]::after { content: "Your School Name"; }</code>
+        1. <strong>Browser Query Param:</strong> Append <code>?school=St+Peters+Collegiate</code> when opening any HTML booklet.<br>
+        2. <strong>CLI Build Environment Variable:</strong> <code>SCHOOL_NAME="St Jude's Academy" node scripts/render_&lt;unit&gt;_workbook.cjs</code><br>
+        3. <strong>Stylesheet Override:</strong> Target <code>.school-brand-target</code> or <code>[data-department-name]</code> prior to print export.
       </div>
     
         </div>

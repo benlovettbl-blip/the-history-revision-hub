@@ -1379,7 +1379,7 @@ function buildHtml() {
       }
     </div>
     <div class="cover-hero-caption">
-      Pre-War Jewish Life in Europe: The Pitel family gathered in Parczew, Poland (1938) &bull; Archival Repository: Yad Vashem Photo Archive / UCL Centre for Holocaust Education &bull; 26 members across 4 generations; 25 murdered at Treblinka (1943) &bull; Educational Fair Dealing CDPA 1988
+      Pre-War Jewish Life in Europe: Three generations of Dr Samuel and Esther Kracowski’s family in Białystok, Poland (September 1935) &bull; Wikimedia Commons (CC0 1.0 Public Domain Dedication)
     </div>
 
     <div class="cover-overview-box">

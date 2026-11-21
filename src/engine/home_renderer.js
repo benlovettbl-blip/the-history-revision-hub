@@ -524,7 +524,7 @@ export function renderSidebar() {
     navContainer.appendChild(worksheetLink);
   }
 
-  const isGcseActiveUnit = ['edexcel_medicine', 'eee', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(
+  const isGcseActiveUnit = ['edexcel_medicine', 'eee', 'gcse_cold_war', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(
     appStore.state.selectedUnitId || window.currentUnitId,
   );
   if (!isGcseActiveUnit && appStore.state.activeUnitData.guided_reading) {

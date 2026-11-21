@@ -3,7 +3,7 @@
   "code": "11",
   "paper": "Paper 1",
   "paperType": "Thematic Study & Historic Environment",
-  "title": "Pearson Edexcel GCSE (9–1) History Specification",
+  "title": "Hub GCSE History Topic Checklist (Aligned to Edexcel 1HI0)",
   "subtitle": "Option 11: Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18: injuries, treatment and the trenches",
   "shortTitle": "Medicine in Britain",
   "exam_structure": {
@@ -43,23 +43,23 @@
           "number": 1,
           "title": "1. Ideas about the cause of disease and illness",
           "points": [
-            "Supernatural and religious explanations of the cause of disease.",
-            "Rational explanations: the Theory of the Four Humours and the miasma theory; the continuing influence in England of Galen."
+            "Supernatural & religious explanations of the cause of disease",
+            "Rational explanations: the Theory of the Four Humours & the miasma theory; enduring influence in England of Galen"
           ]
         },
         {
           "number": 2,
           "title": "2. Approaches to prevention and treatment",
           "points": [
-            "Approaches to prevention and treatment, and their connection with ideas about disease and illness: religious actions, bloodletting and purging, purifying the air.",
-            "Medical training and traditional approaches to treatment and care for the sick: the role of the physician, apothecary and barber surgeon; the role of hospitals, care within the community and at home, including the use of herbal remedies."
+            "Prevention & treatment linked to disease & illness beliefs: religious actions, bloodletting & purging, purifying the air",
+            "Medical training, treatment & care: physician, apothecary & barber surgeon; hospitals, care within the community & at home (incl. herbal remedies)"
           ]
         },
         {
           "number": 3,
           "title": "3. Case study",
           "points": [
-            "Dealing with the Black Death, 1348–49; approaches to treatment and attempts to prevent its spread."
+            "Responses to Black Death, 1348–49; approaches to treatment & attempts to prevent its spread"
           ]
         }
       ]
@@ -73,23 +73,23 @@
           "number": 1,
           "title": "1. Ideas about the cause of disease and illness",
           "points": [
-            "Continuity and change in explanations of the cause of disease and illness. A scientific approach, including the work of Thomas Sydenham in improving diagnosis. The influence of the printing press and the work of the Royal Society on the transmission of ideas."
+            "Continuity & change in explaining disease & illness; A scientific approach (incl. Thomas Sydenham in improving diagnosis); influence of the printing press & the work of the Royal Society on the transmission of ideas"
           ]
         },
         {
           "number": 2,
           "title": "2. Approaches to prevention and treatment",
           "points": [
-            "Continuity and change in approaches to prevention, treatment and care in the community and in hospitals.",
-            "Improvements in medical training and the influence in England of the work of Vesalius."
+            "Continuity & change in prevention, treatment & care in the community & in hospitals",
+            "Improvements in medical training & impact in England of Vesalius"
           ]
         },
         {
           "number": 3,
           "title": "3. Case studies",
           "points": [
-            "Key individual: William Harvey and the discovery of the circulation of the blood.",
-            "Dealing with the Great Plague in London (1665): approaches to treatment and attempts to prevent its spread."
+            "Case study — William Harvey & the discovery of the circulation of the blood",
+            "Responses to Great Plague in London (1665): approaches to treatment & attempts to prevent its spread"
           ]
         }
       ]
@@ -103,23 +103,23 @@
           "number": 1,
           "title": "1. Ideas about the cause of disease and illness",
           "points": [
-            "Continuity and change in explanations of the cause of disease and illness. The influence in Britain of Pasteur’s Germ Theory and Koch’s work on microbes."
+            "Continuity & change in explaining disease & illness; impact in Britain of Pasteur’s Germ Theory & Koch’s work on microbes"
           ]
         },
         {
           "number": 2,
           "title": "2. Approaches to prevention and treatment",
           "points": [
-            "The extent of change in care and treatment: improvements in hospital care and the influence of Nightingale on nursing and hospitals in Britain. The impact of anaesthetics and antiseptics on surgery.",
-            "New approaches to prevention: the development and use of vaccinations and the Public Health Act (1875)."
+            "Degree of change in care & treatment: improvements in hospital care & the influence of Nightingale on nursing & hospitals in Britain; impact of anaesthetics & antiseptics on surgery",
+            "New approaches to prevention: the development & use of vaccinations & the Public Health Act (1875)"
           ]
         },
         {
           "number": 3,
           "title": "3. Case studies",
           "points": [
-            "Key individual: Jenner and the development of vaccination.",
-            "Fighting Cholera in London (1854); attempts to prevent its spread; the significance of Snow and the Broad Street pump."
+            "Case study — Jenner & the development of vaccination",
+            "Combating Cholera in London (1854); attempts to prevent its spread; Snow & the Broad Street pump"
           ]
         }
       ]
@@ -133,24 +133,24 @@
           "number": 1,
           "title": "1. Ideas about the cause of disease and illness",
           "points": [
-            "Advances in understanding the causes of illness and disease: the influence of genetic and lifestyle factors on health.",
-            "Improvements in diagnosis: the impact of the availability of blood tests, scans and monitors."
+            "Advances in understanding the causes of illness & disease: the influence of genetic & lifestyle factors on health",
+            "Improvements in diagnosis: the impact of the availability of blood tests, scans & monitors"
           ]
         },
         {
           "number": 2,
           "title": "2. Approaches to prevention and treatment",
           "points": [
-            "The extent of change in care and treatment. The impact of the NHS and science and technology: improved access to care; advances in medicines, including magic bullets and antibiotics; high-tech medical and surgical treatment in hospitals.",
-            "New approaches to prevention: mass vaccinations and government lifestyle campaigns."
+            "Degree of change in care & treatment; impact of the NHS & science & technology: improved access to care; advances in medicines (incl. magic bullets & antibiotics); high-tech medical & surgical treatment in hospitals",
+            "New approaches to prevention: mass vaccinations & government lifestyle campaigns"
           ]
         },
         {
           "number": 3,
           "title": "3. Case studies",
           "points": [
-            "Key individuals: Fleming, Florey and Chain’s development of penicillin.",
-            "The fight against lung cancer in the twenty-first century: the use of science and technology in diagnosis and treatment; government action."
+            "Case study — Fleming, Florey & Chain’s development of penicillin",
+            "Fight against lung cancer in the twenty-first century: the use of science & technology in diagnosis & treatment; government action"
           ]
         }
       ]
@@ -163,22 +163,22 @@
           "number": 1,
           "title": "1. The British sector of the Western Front, 1914–18: injuries, treatment and the trenches",
           "points": [
-            "The context of the British sector of Western Front and the theatre of war in Flanders and northern France: the Ypres salient, the Somme, Arras and Cambrai. The trench system -  its organisation, including frontline and support trenches. Significance for medical treatment of the nature of the terrain and problems of the transport and communications infrastructure.",
-            "Conditions requiring medical treatment on the Western Front, including the problems of ill health arising from the trench environment. The nature of wounds from rifles and explosives. The problem of shrapnel, wound infection and increased numbers of head injuries. The effects of gas attacks.",
-            "Medical treatment on the Western Front. The work of the RAMC and nurses. Transport in the chain of evacuation: stretcher bearers, horse and motor ambulances. Stages of treatment in the chain of evacuation: aid post and field ambulance, dressing station, casualty clearing station, base hospital. The underground hospital at Arras.",
-            "The significance of the Western Front for experiments in surgery and medicine: new techniques in the treatment of wounds and infection, the Thomas splint, the use of mobile x-ray units, the creation of a blood bank for the Battle of Cambrai.",
-            "The historical context of medicine in the early twentieth century: the understanding of infection and moves towards aseptic surgery; the development of x-rays; blood transfusions and developments in the storage of blood."
+            "Context of the British sector of Western Front & the theatre of war in Flanders & northern France: the Ypres salient, the Somme, Arras & Cambrai; trench system - its organisation (incl. frontline & support trenches); Significance for medical treatment of the nature of the terrain & problems of the transport & communications infrastructure",
+            "Conditions requiring medical treatment on the Western Front (incl. the problems of ill health arising from the trench environment); nature of wounds from rifles & explosives; problem of shrapnel, wound infection & increased numbers of head injuries; effects of gas attacks",
+            "Medical treatment on the Western Front; work of the RAMC & nurses; Transport in the chain of evacuation: stretcher bearers, horse & motor ambulances; Stages of treatment in the chain of evacuation: aid post & field ambulance, dressing station, casualty clearing station, base hospital; underground hospital at Arras",
+            "Significance: Western Front for experiments in surgery & medicine: new techniques in the treatment of wounds & infection, the Thomas splint, the use of mobile x-ray units, the creation of a blood bank for the Battle of Cambrai",
+            "Historical context of medicine in the early twentieth century: the understanding of infection & moves towards aseptic surgery; the development of x-rays; blood transfusions & developments in the storage of blood"
           ]
         },
         {
           "number": 2,
           "title": "2. Knowledge, selection and use of sources for historical enquiries",
           "points": [
-            "Knowledge of national sources relevant to the period and issue, e.g. army records, national newspapers, government reports, medical articles.",
-            "Knowledge of local sources relevant to the period and issue, e.g. personal accounts, photographs, hospital records, army statistics.",
-            "Recognition of the strengths and weaknesses of different types of source for specific enquiries.",
-            "Framing of questions relevant to the pursuit of a specific enquiry.",
-            "Selection of appropriate sources for specific investigations."
+            "National source types: army records, national newspapers, government reports, medical articles",
+            "Local source types: personal accounts, photographs, hospital records, army statistics",
+            "Evaluating source strengths & limitations for historical enquiries",
+            "Formulating targeted follow-up questions for historical enquiries",
+            "Selecting relevant archival sources for follow-up investigations"
           ]
         }
       ]

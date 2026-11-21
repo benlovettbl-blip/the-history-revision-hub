@@ -17,49 +17,55 @@ const UNIT_SPEC_MAP = {
   cme_new: {
     file: 'paper2_p5_middle_east.json',
     code: '1HI0/P5',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option P5',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option P5',
     defaultCols: 3,
   },
   middle_east: {
     file: 'paper2_p5_middle_east.json',
     code: '1HI0/P5',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option P5',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option P5',
     defaultCols: 3,
   },
   weimar_nazi_germany: {
     file: 'paper3_31_weimar_nazi_germany.json',
     code: '1HI0/31',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option 31',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option 31',
     defaultCols: 4,
   },
   eee: {
     file: 'paper2_b4_early_elizabethan_england.json',
     code: '1HI0/B4',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option B4',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option B4',
     defaultCols: 4,
   },
   early_elizabethan_england: {
     file: 'paper2_b4_early_elizabethan_england.json',
     code: '1HI0/B4',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option B4',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option B4',
     defaultCols: 4,
   },
   usa: {
     file: 'paper3_33_usa_conflict_home_abroad.json',
     code: '1HI0/33',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option 33',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option 33',
     defaultCols: 4,
   },
   usa_1954_1975: {
     file: 'paper3_33_usa_conflict_home_abroad.json',
     code: '1HI0/33',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option 33',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option 33',
     defaultCols: 4,
   },
   edexcel_medicine: {
     file: 'paper1_11_medicine_britain.json',
     code: '1HI0/11',
-    titlePrefix: 'Pearson Edexcel GCSE (9–1) History Specification • Option 11',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option 11',
+    defaultCols: 3,
+  },
+  gcse_cold_war: {
+    file: 'paper2_p4_superpower_cold_war.json',
+    code: '1HI0/P4',
+    titlePrefix: 'Hub GCSE Topic Checklist • Aligned to Edexcel Option P4',
     defaultCols: 3,
   },
 };
@@ -124,7 +130,23 @@ const KEY_TERMS_TO_BOLD = [
   'RAMC', 'chain of evacuation', 'stretcher bearers', 'field ambulance',
   'dressing station', 'casualty clearing station', 'base hospital', 'underground hospital at Arras',
   'Thomas splint', 'mobile x-ray units', 'blood bank for the Battle of Cambrai',
-  'blood transfusions', 'aseptic surgery'
+  'blood transfusions', 'aseptic surgery',
+  // Superpower Relations & Cold War (Option P4)
+  'Grand Alliance', 'Tehran, Yalta and Potsdam conferences', 'Stalin, Truman and Churchill',
+  'atomic bomb', 'Long and Novikov telegrams', 'satellite states',
+  'Truman Doctrine', 'Marshall Plan, 1947', 'Cominform (1947)', 'Comecon (1949)', 'NATO (1949)',
+  'Berlin Crisis (blockade and airlift) of 1948-49', 'Federal Republic of Germany', 'German Democratic Republic',
+  'arms race', 'Warsaw Pact', 'Hungarian Uprising', 'Khrushchev’s response',
+  'Khrushchev’s Berlin ultimatum (1958)', 'summit meetings of 1959–61',
+  'Cuban Revolution', 'Bay of Pigs incident', 'Prague Spring',
+  'construction of the Berlin Wall, 1961', 'Cuban Missile Crisis', 'Brezhnev Doctrine',
+  'Kennedy’s visit to West Berlin in 1963', '‘hotline’', 'Limited Test Ban Treaty (1963)',
+  'Outer Space Treaty (1967)', 'Nuclear Non-Proliferation Treaty (1968)',
+  'Détente', 'SALT 1', 'Helsinki Accords', 'SALT 2',
+  'Soviet invasion of Afghanistan', 'Carter Doctrine', 'Olympic boycotts',
+  '‘Second Cold War’', 'Strategic Defence Initiative (SDI)', 'Reagan and Gorbachev',
+  'Gorbachev’s ‘new thinking’', 'fall of the Berlin Wall', 'collapse of the Soviet Union',
+  'end of the Warsaw Pact'
 ];
 
 function highlightKeyTerms(text) {

@@ -1,6 +1,6 @@
 # The History Revision Hub — Master Upgrade Roadmap (Historical Truth & KS2/KS3 Priority Edition)
 > **Living Checklist • Auto-Updated & Struck Through After Every Completed Task • Zero Invented Quotes/Facts**  
-> **Progress:** `12 / 14` Tasks Completed • **Last Updated:** 20 Nov 2026
+> **Progress:** `13 / 14` Tasks Completed • **Last Updated:** 21 Nov 2026
 
 ## Cost-Smart AI Model Allocation Guide (Protecting Claude Credits)
 | AI Model | Cost Tier | When to Select It |
@@ -59,11 +59,11 @@
 - [x] ~~**[4.2] Split >500 KB Vite Chunks (lesson-engine, exam-bank, arcade_zone) for Fast School Laptop Loads**~~ ✅ *(Completed 20 Nov 2026 • Model: Gemini 4 Carbon (Medium))*  
   ~~Lazy-load heavy secondary modules in vite.config.js so initial classroom loads stay under 500 KB per chunk.~~
 
-## Phase 5 — Parked Commercial Backlog (Do NOT Build Until Needed) (`0/2`)
+## Phase 5 — Parked Commercial Backlog (Do NOT Build Until Needed) (`1/2`)
 *Goal: Optional future expansion parked safely out of the way of live KS2/KS3 teaching.*
 
-- [ ] **[5.1] [PARKED] Build Separate 12-Lesson Pearson Edexcel GCSE Cold War Unit (gcse_cold_war • 1HI0/P4)** — **Use AI: `Gemini 4 Carbon (High) + Carbon (Medium)`** (🟠 Parked Until Taught/Sold)  
-  Full 1941–91 Option P4 GCSE unit (Tehran–Hungary–Berlin Wall–Cuba–Prague–Détente–Afghanistan–Gorbachev) parked until needed for teaching or commercial sale.
+- [x] ~~**[5.1] [PARKED] Build Separate 12-Lesson Pearson Edexcel GCSE Cold War Unit (gcse_cold_war • 1HI0/P4)**~~ ✅ *(Completed 21 Nov 2026 • Model: Gemini 4 Carbon (High) + Carbon (Medium))*  
+  ~~Full 1941–91 Option P4 GCSE unit (Tehran–Hungary–Berlin Wall–Cuba–Prague–Détente–Afghanistan–Gorbachev) parked until needed for teaching or commercial sale.~~
 
 - [ ] **[5.2] [PARKED] Bespoke GCSE Simulations & Living Timelines (Elizabeth eee & USA usa)** — **Use AI: `Gemini 4 Carbon (High)`** (🟠 Parked Optional Polish)  
   Optional future flagship simulations (Walsingham Cipher Desk & USA Newsroom) once all KS2/KS3 units are 100% complete.

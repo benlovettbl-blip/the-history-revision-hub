@@ -26174,8 +26174,8 @@ export default {
               "type": "military_dispatch",
               "title": "Source D: From General Van Tien Dung's Official Account of the Final Communist 'Ho Chi Minh Campaign' on Saigon (April 1975)",
               "date": "April 1975",
-              "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-              "image_url": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+              "image": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
+              "image_url": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
               "attribution": "General Van Tien Dung, Our Great Spring Victory (Hanoi, 1976; translated 1977)",
               "question_badge": "Reliability & Provenance",
               "question": "How does General Dung's perspective as commander of the North Vietnamese offensive affect the historical value of Source D?",
@@ -26191,9 +26191,9 @@ export default {
               },
               "hinge_question": "Why did South Vietnamese military resistance collapse in only 55 days in 1975 when military analysts predicted it would last at least two years?",
               "source_context": "General Van Tien Dung, 'Our Great Spring Victory', Foreign Languages Publishing House, Hanoi (1977). General Van Tien Dung, Chief of the General Staff of the Vietnam People's Army for Military historians and the reunited population of Vietnam with the objective: To record the military planning and execution of the final 55-day offensive that captured Saigon.. **Hinge Question:** Why did South Vietnamese military resistance collapse in only 55 days in 1975 when military analysts predicted it would last at least two years?",
-              "src": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+              "src": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
               "source": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
-              "caption": "Civilians scramble up a rooftop ladder to board an Air America helicopter in Saigon on 29 April 1975 as communist forces led by General Van Tien Dung surround the capital.",
+              "caption": "South Vietnamese evacuees disembark from a helicopter onto USS Midway during Operation Frequent Wind (29–30 April 1975) as North Vietnamese forces capture Saigon.",
               "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory."
             }
           ],
@@ -27082,9 +27082,9 @@ export default {
           "model_answer": "Cinematic Discussion Focus: The trailer shows helicopters pushed off aircraft carrier decks into the South China Sea to make room for more fleeing refugees, capturing the desperate panic and heartbreak as an allied nation was abandoned to its fate."
         }
       ],
-      "banner": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-      "card_image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-      "hero_image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+      "banner": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
+      "card_image": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
+      "hero_image": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -27591,9 +27591,9 @@ export default {
               "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg"
             }
           ],
-          "image": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
-          "image_alt": "Evacuees climbing a rooftop ladder to a Huey helicopter during the Fall of Saigon",
-          "caption": "Evacuees climb a rooftop ladder to board an Air America Huey helicopter in Saigon on 29 April 1975 as North Vietnamese forces close in on the capital.",
+          "image": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
+          "image_alt": "A US Navy crewman holds an evacuated baby as a South Vietnamese father carrying his toddler steps from a helicopter onto USS Midway during Operation Frequent Wind in April 1975",
+          "caption": "A US Navy flight-deck crewman cradles an evacuated South Vietnamese infant while a father carrying his young son disembarks from a helicopter aboard USS Midway during Operation Frequent Wind (29–30 April 1975). (US Navy / National Archives, Public Domain)",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[1.1]</span> By late 1974, South Vietnam was suffering severe economic and military collapse. Crippled by worldwide oil shocks, skyrocketing inflation, and the complete cutoff of American military subsidies by an anti-war Congress, ARVN forces lacked ammunition, spare parts, and fuel. Seeing Saigon defenseless, North Vietnamese commanders launched the devastating **1975 Spring Offensive** in January to reunify the country.\n\n<span class=\"para-ref\">[1.2]</span> Led by legendary general **General Van Tien Dung**, communist divisions captured the central highland city of Ban Me Thuot in March. When President Thieu ordered a panicky retreat from the northern provinces, the withdrawal disintegrated into a chaotic rout known as the **'Convoy of Tears'**, where over one hundred thousand soldiers and fleeing civilians were slaughtered along Highway 7 by pursuing communist artillery."
         },
@@ -29485,7 +29485,7 @@ export default {
             "paired_prose_hash": "f06a232f04",
             "heading": "The Fall of Saigon",
             "date": "29–30 April 1975",
-            "img": "/units/usa/assets/sources/saigon-embassy-evacuation.jpg",
+            "img": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
             "alt": "Evacuees climbing a rooftop ladder to board a helicopter during the Fall of Saigon, 29 April 1975",
             "mode": "landscape",
             "pos": "center 28%",

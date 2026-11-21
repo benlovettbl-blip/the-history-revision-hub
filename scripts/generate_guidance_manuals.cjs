@@ -2,12 +2,14 @@
  * History Revision Hub — Guidance Manuals Generator
  *
  * Compiles professional, laminated-style A4 PDF standard operating procedures
- * into public/history_revision_hub_guidance/
+ * into public/history_revision_hub_guidance/ with automated DOM overflow and
+ * pdf-parse physical page-count verification.
  */
 
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');
+const pdfParse = require('pdf-parse');
 
 const outputDir = path.join(__dirname, '..', 'public', 'history_revision_hub_guidance');
 if (!fs.existsSync(outputDir)) {
@@ -18,79 +20,79 @@ const guides = [
   {
     id: 'guide_01',
     filename: 'Guide_01_The_Tripartite_Curriculum_Model.pdf',
-    title: 'Guide 01: The Tripartite Curriculum Model',
-    subtitle: 'Architecture & Separation of Concerns: Textbooks, Workbooks & The Digital App',
+    expectedPages: 1,
+    title: 'Guide 01: The Curricular Separation-of-Concerns Model',
+    subtitle: 'Architecture & 1-to-1 Alignment Across Textbooks, Pupil Workbooks, Retrieval Companions & The Web App',
     category: 'CURRICULUM ARCHITECTURE & SYSTEM DESIGN',
     content: `
       <div class="intro-box">
-        <strong>Executive Summary:</strong> The History Revision Hub operates on a strict <strong>Tripartite Model</strong> designed to eliminate cognitive friction, prevent question numbering desynchronization, and drastically reduce school reprographics costs. By separating reading material from pupil writing and interactive quizzing, each document fulfills a singular disciplinary purpose.
+        <strong>Executive Summary:</strong> The History Revision Hub separates reading, writing, spaced retrieval, and multimedia enquiry into distinct, synchronized resources. Each lesson shares an identical <strong>5-Stage Chronological Spine (<code>Stage 1</code>–<code>Stage 5</code>)</strong> across screen and print—eliminating split-attention, preventing numbering drift, and cutting reprographics waste.
       </div>
 
       <div class="grid-3">
         <div class="card">
-          <div class="card-header blue">📖 The Textbook (Classroom Set)</div>
+          <div class="card-header blue">📖 Classroom Textbook (Reusable)</div>
           <div class="card-body">
-            <strong>Role:</strong> The permanent, timeless reading anthology.<br><br>
+            <strong>Role:</strong> Durable classroom reading anthology.<br><br>
             <strong>Key Features:</strong>
             <ul>
-              <li>Authoritative 4-act Christine Counsell disciplinary narrative.</li>
-              <li>Two-column layout (50–65 char measure) to prevent eye-sweep fatigue.</li>
-              <li>Left-margin line numbering (every 5 lines) for precise teacher signposting.</li>
-              <li>Archival source plaques with museum shelfmarks and provenance.</li>
-              <li><strong>ZERO task lines, ZERO Do-Now blanks.</strong></li>
-              <li>Reused year after year; never scribbled in or discarded.</li>
+              <li>100% pure disciplinary narrative prose read verbatim from live unit JSON data.</li>
+              <li>Balanced 2-column <code>Lora</code> serif measure at KS3/GCSE (single wide-margin column at KS2).</li>
+              <li>Clean <code>[1.1]</code>–<code>[1.5]</code> block headers with <strong>zero</strong> in-prose bracket pills.</li>
+              <li><strong>Zero</strong> source boxes, <strong>zero</strong> margin glossary strips, and <strong>zero</strong> task lines.</li>
+              <li>Outside back-cover oral/notebook Knowledge Retrieval Quiz (zero answers printed).</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header amber">📝 The Pupil Workbook (Consumable)</div>
+          <div class="card-header amber">📝 Pupil Workbook (Consumable)</div>
           <div class="card-body">
-            <strong>Role:</strong> The 16-page consumable termly writing pack.<br><br>
+            <strong>Role:</strong> Termly saddle-stitched A4 writing pack.<br><br>
             <strong>Key Features:</strong>
             <ul>
-              <li>The <em>only</em> document where pupils write answers.</li>
-              <li>Pre-numbered tasks (Q1, Q2, Q3...) strictly aligned to digital app.</li>
-              <li>Do-Now prior-learning recall grids and vocabulary challenges.</li>
-              <li>Scaffolded exam writing with criteria stems and model answers.</li>
-              <li>Audited to 99% page utilization with 0px overflow.</li>
-              <li>Printed per student each term as a saddle-stitched booklet.</li>
+              <li>Pure <code>#000000</code> monochrome interior for crisp, zero-dither school photocopying.</li>
+              <li><strong>Verso (Left):</strong> 5 full-width stacked Stage Question boxes (<code>&le; 82 chars</code>, 5 ruled lines each).</li>
+              <li><strong>Recto (Right):</strong> Genre-calibrated extended/exam writing (~8mm pitch) with content-free <code>Analytical Connectives:</code> and unassigned <code>Key Terms:</code>.</li>
+              <li><strong>Zero</strong> in-workbook Do Nows and <strong>zero</strong> factual giveaways in stems.</li>
+              <li>Center-Spine Specification Mind-Map Canvas + British Exercise Notes pages.</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header emerald">💻 The Digital App (Interactive Hub)</div>
+          <div class="card-header emerald">💻 Interactive Web App (Digital Hub)</div>
           <div class="card-body">
-            <strong>Role:</strong> The interactive revision and multimedia engine.<br><br>
+            <strong>Role:</strong> Multimedia classroom &amp; home revision engine.<br><br>
             <strong>Key Features:</strong>
             <ul>
-              <li>Self-marking recall quizzes with instant formative feedback.</li>
-              <li>Flashcard decks with morphological etymology.</li>
-              <li>Interactive chronologies, map sliders, and satellite views.</li>
-              <li>Masterpiece Studio: 2.5x Loupe inspection and detective riddles.</li>
-              <li>Audio read-aloud synthesizers for accessible whole-class reading.</li>
+              <li>3-Mode Spaced-Retrieval <strong>Do Now</strong> engine (strictly prior lessons/units).</li>
+              <li>Studio Historian UK audio (<code>0.85x / 1.0x / 1.15x</code>) with sentence/word karaoke tracking &amp; visual-stress overlays.</li>
+              <li>Alternating visual plates + 5 rotated primary sources (<code>A–E</code>) with Hinge Questions.</li>
+              <li>In-place Vocabulary &amp; Key Individual Dossier popovers + 1-Page Visual Story Sheets.</li>
+              <li>Tap-Tile Summary Clozes, Self-Marking Quizzes, Universal Arcade &amp; Exam Practice Zone.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="section-title">Why This Solved the "September Numbering Desynchronization" Crisis</div>
-      <p>In legacy setups, questions were printed in both the textbook and the workbook. Any editorial change shifted question numbering (e.g. Question 3 becoming Question 4), breaking synchronization with printed student packs. Under the Tripartite Model:</p>
+      <div class="section-title">Why Separation of Concerns Prevents Curriculum Drift</div>
+      <p>Alongside companion <strong>Master Knowledge Retrieval Companions ("Quiz Packs")</strong> and <strong>Mastery Exam Packs</strong>, keeping pure reading in the reusable Textbook while housing active writing in the Workbook and interactive scaffolding in the Web App solves two chronic departmental problems:</p>
       <div class="highlight-rule">
-        <strong>The Golden Rule of Indexing:</strong> The Textbook NEVER contains question numbers. Question numbering lives <em>canonically and exclusively</em> within the Pupil Workbook and Digital App. Because the textbook is purely indexed by paragraph references (e.g. <code>[1.1]</code>, <code>[2.2]</code>) and source letters (<code>Source A</code>, <code>Source B</code>), it can never drift out of numerical alignment.
+        <strong>1-to-1 Stage Synchronization Invariant:</strong> Every lesson's 5 narrative blocks, 5 Web App Chronology Spine cards, and 5 Printed Workbook Verso boxes are locked together by automated SHA-1 prose-hash verification (<code>npm run audit:stages</code>). Editing any narrative paragraph automatically flags its paired Stage Question for verification before PDF compilation.
       </div>
     `,
   },
   {
     id: 'guide_02',
     filename: 'Guide_02_The_Master_Cover_Engine_and_Customizer.pdf',
+    expectedPages: 1,
     title: 'Guide 02: The Master Cover Engine & Commercial Customizer',
-    subtitle: 'Standardized Cover Architecture, Specification Grid & Multi-School Branding',
+    subtitle: 'Standardized Cover Architecture, Provenance Metadata & Multi-School Branding',
     category: 'DESIGN SYSTEM & INSTITUTIONAL NEUTRALITY',
     content: `
       <div class="intro-box">
-        <strong>Executive Summary:</strong> All printed pupil workbooks and revision guides enforce the <strong>Master Cover Engine</strong> (<code>scripts/components/render_standard_cover.cjs</code>). This ensures a dignified, museum-grade aesthetic that complies with the Pearson Edexcel specification while maintaining 100% commercial neutrality for purchasing schools.
+        <strong>Executive Summary:</strong> All printed pupil workbooks enforce the <strong>Master Cover Engine</strong> (<code>scripts/components/render_standard_cover.cjs</code>). This guarantees uncropped archival artwork presentation, curriculum alignment, and 100% institutional neutrality so any adopting school can stamp its own department name cleanly.
       </div>
 
       <div class="grid-2">
@@ -98,47 +100,48 @@ const guides = [
           <div class="card-header blue">🏛️ Front Cover Architecture (Page 1)</div>
           <div class="card-body">
             <ul>
-              <li><strong>Top Departmental Header:</strong> Features <code>data-department-name="The History Department"</code>, enabling any school to brand the cover.</li>
-              <li><strong>Chronological Banner:</strong> Displays Key Topic number, dates, and official Pearson qualification code (e.g. <code>SPECIFICATION 1HI0/2B</code>).</li>
-              <li><strong>Archival Hero Plaque:</strong> 120mm landscape historical photograph with accession shelfmark, date, photographer/artist, and institutional repository.</li>
-              <li><strong>Pupil Identification Block:</strong> Crisp Name, Class, and Teacher fields with classical hairline borders.</li>
-              <li><strong>3-Column Specification Breakdown:</strong> Direct Pearson specification syllabus points filling the bottom page budget with 0 dead white void.</li>
+              <li><strong>Commercial Customizer Hook:</strong> Encloses <code>&lt;span class="school-brand-target"&gt;The History Department&lt;/span&gt;</code> inside <code>data-department-name</code> for multi-school branding.</li>
+              <li><strong>Responsive Uncropped Artwork Gate:</strong> Automatically selects landscape showcase or split-portrait framing with <code>object-fit: contain</code> and verified museum accession metadata.</li>
+              <li><strong>Pedagogical Anchor Deck:</strong> Displays 4 Core Features, 3-Pillar Visual Matrix, Disciplinary Significance statement, and a Targeted Hinge Question.</li>
+              <li><strong>Pupil Identification Block:</strong> Clean Name, Class, and blank Teacher fields (zero school identifiers; zero GCSE target-grade clutter on KS3 covers).</li>
+              <li><strong>Course Specification Directory:</strong> Maps unit enquiries directly to National Curriculum or Pearson Edexcel specification points at <code>0px</code> overflow.</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header purple">📊 Back Cover Architecture (Page 16)</div>
+          <div class="card-header purple">📊 Back Cover Architecture (Final Page)</div>
           <div class="card-body">
             <ul>
-              <li><strong>Assessment Progress Ledger:</strong> Formative breakdown of enquiry marks (/26 per topic, /130 total) with benchmark conversion.</li>
-              <li><strong>WWW / EBI Feedback Section:</strong> 4-line 7.2mm handwriting lines for teacher formative feedback, SEND adaptations, and pupil response.</li>
-              <li><strong>Teacher Sign-off:</strong> Dedicated signature and date approval lines.</li>
-              <li><strong>5-Code Vector QR Hub:</strong> Vector SVGs linking pupils directly to online flashcards, digital quizzes, model answers, and audio narratives.</li>
-              <li><strong>Bottom Folio:</strong> Departmental imprint and pagination marker.</li>
+              <li><strong>Assessment Pathway Benchmarks:</strong> Displays transparent KS3 percentage bands (<code>Em 35%</code>, <code>Em+ 50%</code>, <code>Ex 65%</code>, <code>Ex+ 80%</code>, <code>GD 90%</code>) or GCSE Edexcel grade descriptors.</li>
+              <li><strong>6-Row Marking &amp; Progress Grid:</strong> Tracks core unit enquiries plus one designated teacher assessment task cleanly on one scannable ledger.</li>
+              <li><strong>Teacher Sign-Off &amp; Verification:</strong> Dedicated signature/date spaces supporting low-workload classroom perimeter checks.</li>
+              <li><strong>Permanent Vector QR Hub:</strong> Crisp vector SVG QR codes linking directly to <code>historyrevisionhub.co.uk</code> interactive lessons, audio read-alouds, and self-marking quizzes.</li>
+              <li><strong>Automated Page-Budget Gate:</strong> Audited in headless Chromium to guarantee <code>&ge; 95%</code> space utilization and zero trailing spillover pages.</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="section-title">Commercial Multi-School Customizer Pattern</div>
-      <p>To maintain commercial neutrality, the repository strictly forbids hardcoded school names. Purchasing schools can instantly brand their printed packs via three seamless mechanisms:</p>
+      <p>To uphold strict commercial independence, hardcoded school names are prohibited across the codebase. Adopting schools can customize booklet covers via three supported hooks:</p>
       <div class="code-box">
-        1. <strong>Browser Query Param:</strong> Add <code>?school=St+Peters+Collegiate</code> to the URL.<br>
-        2. <strong>CLI Build Flag:</strong> <code>SCHOOL_NAME="St Jude's Academy" node scripts/export_pdfs.cjs cme_new</code><br>
-        3. <strong>Pure CSS Override:</strong> <code>[data-department-name]::after { content: "Your School Name"; }</code>
+        1. <strong>Browser Query Param:</strong> Append <code>?school=St+Peters+Collegiate</code> when opening any HTML booklet.<br>
+        2. <strong>CLI Build Environment Variable:</strong> <code>SCHOOL_NAME="St Jude's Academy" node scripts/render_&lt;unit&gt;_workbook.cjs</code><br>
+        3. <strong>Stylesheet Override:</strong> Target <code>.school-brand-target</code> or <code>[data-department-name]</code> prior to print export.
       </div>
     `,
   },
   {
     id: 'guide_03',
     filename: 'Guide_03_Reprographics_and_Print_Handbook.pdf',
+    expectedPages: 1,
     title: 'Guide 03: Reprographics & Print Handbook',
     subtitle: 'Saddle-Stitch Imposition, Gutter Margins & Duplex Booklet Production',
     category: 'PRINT PRODUCTION & REPROGRAPHICS MANUAL',
     content: `
       <div class="intro-box">
-        <strong>Instructions for Reprographics & Print Room Staff:</strong> All pupil workbooks are engineered for <strong>A4 Portrait Saddle-Stitched Booklets</strong> (printed two-up on A3 paper, folded and stapled on the spine). Follow these exact machine settings to guarantee flawless page alignment.
+        <strong>Instructions for Reprographics &amp; Print Room Staff:</strong> All textbooks and pupil workbooks are engineered as <strong>A4 Portrait Saddle-Stitched Booklets</strong> in exact multiples of 4 pages (<code>8</code>, <code>12</code>, <code>16</code>, <code>20</code>, <code>24</code>, or <code>28</code> pages — printed two-up on A3 sheets, folded and stapled on the spine).
       </div>
 
       <div class="grid-2">
@@ -151,22 +154,21 @@ const guides = [
               <li><strong>Layout Mode:</strong> Booklet / 2-Up Saddle-Stitch (Left Binding).</li>
               <li><strong>Duplexing:</strong> 2-Sided &rarr; 2-Sided (Flip on Short Edge).</li>
               <li><strong>Finishing / Stapling:</strong> Center Saddle-Stitch (Dual Spine Staples).</li>
-              <li><strong>Scaling:</strong> 100% (Do NOT choose "Fit to Printable Area" as margins are already calibrated).</li>
+              <li><strong>Scaling:</strong> 100% Actual Size (do NOT select "Fit to Printable Area" as margins are pre-calibrated).</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header blue">📐 Gutter Margins & Creep Allowance</div>
+          <div class="card-header blue">📐 Gutter Margins, Monochrome Interiors &amp; Stock</div>
           <div class="card-body">
             <ul>
-              <li><strong>Internal Gutter:</strong> 10mm inner margin on all pages ensures text is never swallowed by the spine fold.</li>
-              <li><strong>Outer Margin:</strong> 10mm outer margin protects content from edge trimmer clipping.</li>
-              <li><strong>Page Budget:</strong> 16-page count ensures 4 physical A3 folded sheets with zero blank waste pages.</li>
+              <li><strong>Internal Gutter &amp; Trim Safety:</strong> Calibrated inner/outer margins ensure text and ruled lines are never swallowed by the spine fold or guillotine trim.</li>
+              <li><strong>Zero-Dither Monochrome Interiors:</strong> Pupil Workbook interior pages use pure <code>#000000</code> ink on white paper so black-and-white photocopiers never muddy grey/navy fills.</li>
               <li><strong>Recommended Paper Stock:</strong>
                 <ul>
-                  <li><strong>Cover Sheet (Pages 1 &amp; 16):</strong> 120gsm or 160gsm Silk/Matt Cardstock.</li>
-                  <li><strong>Inner Pages (Pages 2–15):</strong> 80gsm or 90gsm Uncoated (prevents ink show-through from highlighters).</li>
+                  <li><strong>Outer Cover Sheet:</strong> 120gsm–160gsm Silk/Matt Card (Colour).</li>
+                  <li><strong>Interior Sheets:</strong> 80gsm–90gsm Uncoated White (prevents pen bleed-through).</li>
                 </ul>
               </li>
             </ul>
@@ -174,96 +176,96 @@ const guides = [
         </div>
       </div>
 
-      <div class="section-title">16-Page Booklet Imposition Diagram</div>
-      <p>When printed as a saddle-stitched booklet, pages pair automatically on A3 sheets:</p>
+      <div class="section-title">Sample 16-Page Booklet Imposition (4 Folded A3 Sheets)</div>
+      <p>Because every booklet is compiled to an exact multiple of 4 pages, every lesson opens flat as a facing <strong>Verso (Left) + Recto (Right)</strong> spread:</p>
       <div class="imposition-diagram">
-        <strong>Sheet 1 (Outer):</strong> Page 16 (Back Cover) &bull; Page 1 (Front Cover) &nbsp;|&nbsp; <em>Reverse:</em> Page 2 &bull; Page 15<br>
-        <strong>Sheet 2:</strong> Page 14 (Map Atlas) &bull; Page 3 (Enquiry 1) &nbsp;|&nbsp; <em>Reverse:</em> Page 4 &bull; Page 13<br>
-        <strong>Sheet 3:</strong> Page 12 (Exam Practice) &bull; Page 5 (Enquiry 2) &nbsp;|&nbsp; <em>Reverse:</em> Page 6 &bull; Page 11<br>
-        <strong>Sheet 4 (Center):</strong> Page 10 (Exam Practice) &bull; Page 7 (Enquiry 3) &nbsp;|&nbsp; <em>Reverse:</em> Page 8 &bull; Page 9
+        <strong>Sheet 1 (Outer):</strong> Page 16 (Back Cover) &bull; Page 1 (Front Cover) &nbsp;|&nbsp; <em>Reverse:</em> Page 2 &bull; Page 15 (Exercise Notes)<br>
+        <strong>Sheet 2:</strong> Page 14 (Exercise Notes) &bull; Page 3 (Enquiry Spread) &nbsp;|&nbsp; <em>Reverse:</em> Page 4 &bull; Page 13<br>
+        <strong>Sheet 3:</strong> Page 12 (Enquiry Spread) &bull; Page 5 (Enquiry Spread) &nbsp;|&nbsp; <em>Reverse:</em> Page 6 &bull; Page 11<br>
+        <strong>Sheet 4 (Centrefold):</strong> Page 10 &bull; Page 7 &nbsp;|&nbsp; <em>Reverse (Dead Centre):</em> Page 8 &bull; Page 9 (Centrefold Mind-Map / Timeline)
       </div>
     `,
   },
   {
     id: 'guide_04',
     filename: 'Guide_04_Disciplinary_Pedagogy_and_Research_Evidence.pdf',
+    expectedPages: 4,
     title: 'Guide 04: Disciplinary Pedagogy & Research Evidence',
     category: 'EVIDENCE-INFORMED PEDAGOGICAL BLUEPRINT',
     pages: [
       {
         subtitle:
-          'Part I: Foundational Pillars — Counsell, Quigley, The Writing Revolution & Cognitive Load',
+          'Part I: Foundational Pillars — Counsell, Quigley, Hochman & Wexler, Coe & Cognitive Load',
         content: `
           <div class="intro-box">
-            <strong>Academic Rationale:</strong> Every element of The History Revision Hub is grounded in contemporary educational research. We combine <strong>disciplinary historical rigor</strong> with <strong>cognitive science</strong> to support all learners from low-attaining SEND pupils to high-tariff GCSE candidates.
+            <strong>Academic Rationale:</strong> Every live feature in The History Revision Hub is grounded in peer-reviewed cognitive science and history education scholarship—combining <strong>authentic disciplinary enquiry</strong> with <strong>low-extraneous-load scaffolding</strong> across Key Stage 2, Key Stage 3, and Pearson Edexcel GCSE.
           </div>
 
           <div class="grid-2">
             <div class="card">
-              <div class="card-header blue">🏛️ 1. Christine Counsell: Disciplinary Narrative & Enquiry</div>
+              <div class="card-header blue">🏛️ 1. Christine Counsell: 3-Layer Enquiry &amp; 5-Stage Narrative</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> History is not a list of isolated facts; it is an enquiry-driven discipline where substantive narrative carries disciplinary meaning.<br><br>
-                <strong>Application in Our System:</strong>
+                <strong>Core Concept:</strong> Substantive historical facts only endure as residual schema when carried inside a coherent causal narrative answering a genuine enquiry question.<br><br>
+                <strong>Live Platform Implementation:</strong>
                 <ul>
-                  <li><strong>4-Act Dramatic Structure:</strong> Context &rarr; Conflict &rarr; Archival Evidence &rarr; Historical Verdict.</li>
-                  <li><strong>Death of the Comprehension Treadmill:</strong> Eliminates fragmented mid-text recall trivia; channels cognitive energy into a single high-yield Act 4 extended writing enquiry with PEEL scaffolds.</li>
-                  <li><strong>Pure [Act.Paragraph] Notation:</strong> Eliminates sentence clutter, indexing text as <code>[1.1]</code>, <code>[2.1]</code> to train pupils to cite narrative blocks.</li>
-                  <li><strong>Fingertip vs. Residual Knowledge:</strong> Starter retrieval primes prior schema; front-loaded vocab fuels today's debate.</li>
+                  <li><strong>5-Stage Narrative Spine (<code>[X.1]</code>–<code>[X.5]</code>):</strong> Each lesson unfolds across 5 structured two-paragraph narrative blocks—eliminating disjointed worksheet trivia.</li>
+                  <li><strong>Alternating Archival Visual Plates:</strong> 2–3 authentic visual plates flank the narrative prose with academic captions and zero clutter.</li>
+                  <li><strong>5 Rotated Primary Sources (<code>Sources A–E</code>):</strong> Collapsible drawers rotate decrees, maps, photographs, diaries, and artefacts with natural 1–2 sentence model answers and Hinge Questions (zero formulaic NOP boxes).</li>
                 </ul>
                 <div class="citation">
-                  <strong>Key Reference:</strong> Counsell, C. (2000). <em>"Historical knowledge and the curriculum"</em>, Teaching History, 100 &bull; Dawson, I. (2004). <em>"Creating a sense of enquiry"</em>, TH 117.<br>
-                  <strong>Research Link:</strong> <a href="https://www.history.org.uk/secondary/categories/436/module/8702/teaching-history" target="_blank">www.history.org.uk (Historical Association)</a>
+                  <strong>References:</strong> Counsell, C. (2000). <em>Teaching History</em>, 100 &bull; Dawson, I. (2004). <em>Teaching History</em>, 117.<br>
+                  <a href="https://www.history.org.uk/secondary/categories/436/module/8702/teaching-history" target="_blank">www.history.org.uk (Historical Association)</a>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header amber">📚 2. Alex Quigley: Closing the Vocabulary Gap</div>
+              <div class="card-header amber">📚 2. Alex Quigley: Closing the Vocabulary Gap Without Clutter</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Academic language is the primary gatekeeper of student success. Explicit Tier-2/3 vocabulary instruction closes attainment disparities.<br><br>
-                <strong>Application in Our System:</strong>
+                <strong>Core Concept:</strong> Explicit Tier-2/3 vocabulary support unlocks comprehension, provided definitions do not crowd printed reading margins.<br><br>
+                <strong>Live Platform Implementation:</strong>
                 <ul>
-                  <li><strong>The Golden Sentence:</strong> Pupils connect Tier-3 terms using subordinating conjunctions (<em>although, because, consequently</em>).</li>
-                  <li><strong>Odd-One-Out Trios:</strong> Develops conceptual clustering and historiographical reasoning.</li>
-                  <li><strong>Immediate Margin Glossaries:</strong> Prevents cognitive disruption by defining words right beside the text.</li>
+                  <li><strong>Ambient In-Text Vocabulary Popovers:</strong> Dotted underlines (once per root term per lesson) open age-calibrated definitions and spoken audio in place on hover/tap.</li>
+                  <li><strong>Inline Dossier Quick-Peek Pills:</strong> First mentions of historical actors open contextual <code>[🪪 Person]</code> and <code>[🏛️ Organisation]</code> biographical popovers.</li>
+                  <li><strong>Tap-Tile Summary Cloze &amp; Lexical Banks:</strong> Every lesson ends with an interactive Consolidate summary cloze (<code>+2</code> adjacent-lesson decoys) plus Flashcard decks.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Key Reference:</strong> Quigley, A. (2018). <em>Closing the Vocabulary Gap</em>, Routledge.<br>
-                  <strong>Research Link:</strong> <a href="https://www.theconfidentteacher.co.uk/" target="_blank">www.theconfidentteacher.co.uk (Research Blog)</a>
+                  <strong>References:</strong> Quigley, A. (2018). <em>Closing the Vocabulary Gap</em>, Routledge &bull; EEF Secondary Literacy.<br>
+                  <a href="https://www.theconfidentteacher.co.uk/" target="_blank">www.theconfidentteacher.co.uk</a>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header emerald">✍️ 3. The Writing Revolution (Hochman & Wexler)</div>
+              <div class="card-header emerald">✍️ 3. Hochman, Wexler &amp; Coe: Zero-Giveaway Writing Scaffolds</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Students cannot write rigorous multi-page essays until they master sentence-level syntax and causal relationships.<br><br>
-                <strong>Application in Our System:</strong>
+                <strong>Core Concept:</strong> Writing scaffolds must support sentence structure and genre mechanics without leaking factual answers ("memory is the residue of thought").<br><br>
+                <strong>Live Platform Implementation:</strong>
                 <ul>
-                  <li><strong>Because / But / So Scaffolding:</strong> Structured analytical expansions before extended writing.</li>
-                  <li><strong>Evidence Stems & Counter-Stems:</strong> Pre-crafted sentence openers that lower working memory barriers for SEND pupils.</li>
-                  <li><strong>Strict Model Answers:</strong> Every task includes a historically accurate, high-tariff model answer.</li>
+                  <li><strong>Split <code>[Word Bank ▾]</code> + <code>[Sentence Starters ▾]</code> Toolbar:</strong> Digital writing panels separate unassigned Tier-3 terms from structural sentence openers.</li>
+                  <li><strong>Content-Free Workbook Connectives:</strong> Printed Recto pages provide structural transitions (<em>"One key consequence was that..."</em>) with zero factual giveaways.</li>
+                  <li><strong>Post-Writing Exemplar Reveal:</strong> Complete high-tariff Model Answers and Mark Schemes stay hidden in digital drawers until after independent writing.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Key Reference:</strong> Hochman, J. &amp; Wexler, N. (2017). <em>The Writing Revolution</em>, Jossey-Bass.<br>
-                  <strong>Research Link:</strong> <a href="https://www.thewritingrevolution.org/" target="_blank">www.thewritingrevolution.org (TWR Institute)</a>
+                  <strong>References:</strong> Hochman &amp; Wexler (2017). <em>The Writing Revolution</em> &bull; Coe et al. (2014). <em>What Makes Great Teaching?</em><br>
+                  <a href="https://www.thewritingrevolution.org/" target="_blank">www.thewritingrevolution.org</a>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header purple">🧠 4. Sweller: Cognitive Load Theory & SEND Measure</div>
+              <div class="card-header purple">🧠 4. John Sweller: Cognitive Load &amp; Typographic Ergonomics</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Working memory is severely limited. Extraneous cognitive load must be minimized to allow germane schema construction.<br><br>
-                <strong>Application in Our System:</strong>
+                <strong>Core Concept:</strong> Working memory is strictly limited; eliminating visual clutter and spatial split-attention preserves bandwidth for causal reasoning.<br><br>
+                <strong>Live Platform Implementation:</strong>
                 <ul>
-                  <li><strong>2-Column Reading Measure:</strong> Constrains line length to 50–65 characters, eliminating "eye-sweep tracking fatigue" for dyslexic readers.</li>
-                  <li><strong>Margin Line Numbering:</strong> "Line 14, Johnny" rule allows instant teacher signposting without confusion.</li>
-                  <li><strong>Prior-Recall Isolation:</strong> Do-Now retrieval strictly tests prior lessons, never current unfamiliar material.</li>
+                  <li><strong>Pure 2-Column Textbooks (<code>Lora</code> Serif):</strong> Constrains line length to 50–65 characters with zero sidebars, zero vocab ribbons, and zero in-prose bracket pills.</li>
+                  <li><strong>Flat Facing Double-Page Workbooks:</strong> Every lesson sits on a single open Verso + Recto spread—never forcing page-flipping to answer questions.</li>
+                  <li><strong>Automated Page-Budget Gate:</strong> Headless Chromium and <code>pdf-parse</code> audits enforce <code>0px</code> overflow across all saddle-stitched booklets.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Key Reference:</strong> Sweller, J. (1988). <em>Cognitive Load During Problem Solving</em>, Cognitive Science.<br>
-                  <strong>Research Link:</strong> <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/cognitive-science-approaches-in-the-classroom" target="_blank">educationendowmentfoundation.org.uk (EEF Review)</a>
+                  <strong>Reference:</strong> Sweller, J. (1988; 2019). <em>Cognitive Load Theory</em> &bull; EEF Cognitive Science Review.<br>
+                  <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/cognitive-science-approaches-in-the-classroom" target="_blank">educationendowmentfoundation.org.uk</a>
                 </div>
               </div>
             </div>
@@ -272,63 +274,57 @@ const guides = [
       },
       {
         subtitle:
-          'Part II: Classroom Execution — SEND Inclusive Strategies, Rosenshine & Formative Ledgers',
+          'Part II: SEND Accessibility by Design, Spaced Retrieval Isolation & Low-Workload Formative Feedback',
         content: `
           <div class="grid-2">
             <div class="card">
-              <div class="card-header" style="background: #e11d48;">♿ 5. SEND & Inclusive Accessibility in History</div>
+              <div class="card-header" style="background: #e11d48;">♿ 5. SEND &amp; Inclusive Accessibility by Design</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> High structure, not diluted content, creates accessibility for neurodiverse learners.<br><br>
-                <strong>What Fails (Strictly Prohibited):</strong>
+                <strong>Core Concept:</strong> High visual predictability and multimodal scaffolding—never dumbed-down content—make rigorous history accessible to neurodiverse learners.<br><br>
+                <strong>Enforced Across Platform &amp; Print:</strong>
                 <ul>
-                  <li>❌ Unchunked dense walls of text (causes tracking breakdown).</li>
-                  <li>❌ Sentence-by-sentence indices <code>[1.1], [1.2]</code> (visual noise).</li>
-                  <li>❌ Answering questions on page 9 while text is on page 2.</li>
-                </ul>
-                <strong>What Works (Enforced Across Revision Hub):</strong>
-                <ul>
-                  <li>✅ 50–65 char measure + margin line numbers every 5 lines.</li>
-                  <li>✅ 7.2mm pre-printed handwriting lines for motor control.</li>
-                  <li>✅ Pre-crafted sentence openers and structure strips.</li>
-                  <li>✅ Synchronized audio read-aloud for dual sensory input.</li>
+                  <li>✅ <strong>Age-Calibrated 2-Paragraph Blocks:</strong> Budgeted strictly by cohort (<code>50–80w</code> KS2, <code>80–110w</code> KS3, <code>110–140w</code> GCSE) to prevent wall-of-text tracking fatigue.</li>
+                  <li>✅ <strong>Persistent Visual-Stress Overlays:</strong> Tinted screen overlays restore instantly on load with zero white flash for Irlen/visual-stress readers.</li>
+                  <li>✅ <strong>1-Page Visual Story Sheets:</strong> Studio-voiced 6-card (4-card KS2) archival storyboards accompany every single lesson across all units.</li>
+                  <li>✅ <strong>~7.8mm–8.2mm Monochrome Ruled Lines:</strong> Generous full-width handwriting pitch supports dysgraphic and fine-motor needs.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Reference:</strong> EEF (2020). <em>Special Educational Needs in Mainstream Schools</em>.<br>
-                  <strong>Research Link:</strong> <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send" target="_blank">educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send</a>
+                  <strong>References:</strong> EEF (2020). <em>SEN in Mainstream Schools</em> &bull; British Dyslexia Association Style Guide.<br>
+                  <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send" target="_blank">educationendowmentfoundation.org.uk/.../send</a>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header" style="background: #0d9488;">🔄 6. Rosenshine: Prior-Recall & Hinge Questions</div>
+              <div class="card-header" style="background: #0d9488;">🔄 6. Barak Rosenshine: Spaced Recall Isolation &amp; Hinges</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Daily retrieval practice automates recall and frees working memory for high-level enquiry.<br><br>
-                <strong>Application in Our System:</strong>
+                <strong>Core Concept:</strong> Daily retrieval strengthens long-term schema only when starters test previously taught material rather than forcing guesses on untaught topics.<br><br>
+                <strong>Live Platform Implementation:</strong>
                 <ul>
-                  <li><strong>Recall Isolation:</strong> "Do Now" questions test prior units ONLY. Guessing unfamiliar content is banned.</li>
-                  <li><strong>Targeted Hinge Questions:</strong> Embedded in teacher notes to verify conceptual mastery before transitions.</li>
-                  <li><strong>Small-Step Guided Practice:</strong> Direct instruction chunked into manageable cognitive steps.</li>
+                  <li><strong>Zero Self-Testing Rule:</strong> Digital Do Now starters are strictly forbidden from testing today's new lesson content.</li>
+                  <li><strong>3-Mode Spaced Retrieval Deck:</strong> Toggles cleanly between <em>Last Lesson</em>, <em>Earlier in Unit</em> interleaving, and <em>Synoptic Prior Units</em> with a single-row timer.</li>
+                  <li><strong>Targeted Hinge Questions:</strong> Embedded at the end of every primary source context and Teacher Note objective to check understanding mid-lesson.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Reference:</strong> Rosenshine, B. (2012). <em>"Principles of instruction"</em>, American Educator.<br>
-                  <strong>Research Link:</strong> <a href="https://www.aft.org/ae/spring2012/rosenshine" target="_blank">www.aft.org/ae/spring2012/rosenshine (Full Paper)</a>
+                  <strong>References:</strong> Rosenshine, B. (2012). <em>Principles of Instruction</em> &bull; Roediger &amp; Karpicke (2006).<br>
+                  <a href="https://www.aft.org/ae/spring2012/rosenshine" target="_blank">www.aft.org/ae/spring2012/rosenshine</a>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header" style="background: #4338ca;">📊 7. Dylan Wiliam: Formative Assessment & DIRT</div>
+              <div class="card-header" style="background: #4338ca;">📊 7. Dylan Wiliam: Low-Workload Formative Feedback</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Feedback must cause more work for the pupil than for the teacher.<br><br>
-                <strong>Application in Our System:</strong>
+                <strong>Core Concept:</strong> Feedback must generate more thinking for the pupil than marking hours for the teacher.<br><br>
+                <strong>Live Platform Implementation:</strong>
                 <ul>
-                  <li><strong>Back-Cover Progress Ledger:</strong> Formative breakdown of enquiry marks (/26) with benchmark conversion.</li>
-                  <li><strong>WWW / EBI Handwriting Lines:</strong> Targeted feedback boxes with dedicated pupil DIRT response time.</li>
-                  <li><strong>Live Highlighting:</strong> In-class yellow highlighter targeting academic vocabulary over red margin ink.</li>
+                  <li><strong>Self-Marking Lesson Quizzes &amp; Weak Spots:</strong> 15–20 traceable MCQs per lesson give immediate feedback and silently log missed items for review.</li>
+                  <li><strong>3-Tier Retrieval Companion Pips (<code>▸</code> / <code>▸▸</code> / <code>▸▸▸</code>):</strong> Printed Quiz Packs ramp from substantive recall to causal explanation and synoptic significance, paired with rear <code>[✓][✗]</code> DIRT Marking Banks.</li>
+                  <li><strong>6-Row Back-Cover Assessment Grid:</strong> Tracks core unit enquiries and designated assessments on one scannable back cover.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Reference:</strong> Wiliam, D. (2011). <em>Embedded Formative Assessment</em>.<br>
-                  <strong>Research Link:</strong> <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/feedback" target="_blank">educationendowmentfoundation.org.uk (EEF Feedback Report)</a>
+                  <strong>References:</strong> Wiliam, D. (2011). <em>Embedded Formative Assessment</em> &bull; EEF Feedback Guidance.<br>
+                  <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/feedback" target="_blank">educationendowmentfoundation.org.uk/.../feedback</a>
                 </div>
               </div>
             </div>
@@ -336,17 +332,17 @@ const guides = [
             <div class="card">
               <div class="card-header" style="background: #0f172a;">🌐 8. Master Educational Research Directory</div>
               <div class="card-body">
-                <strong>Direct Research Web Hubs for Department Leaders:</strong>
+                <strong>Primary Evidence &amp; Curriculum Scholarship Hubs:</strong>
                 <ul>
-                  <li><strong>Historical Association:</strong> <a href="https://www.history.org.uk" target="_blank">www.history.org.uk</a></li>
-                  <li><strong>The Confident Teacher:</strong> <a href="https://www.theconfidentteacher.co.uk" target="_blank">www.theconfidentteacher.co.uk</a></li>
+                  <li><strong>Historical Association (Teaching History):</strong> <a href="https://www.history.org.uk" target="_blank">www.history.org.uk</a></li>
+                  <li><strong>Education Endowment Foundation (EEF):</strong> <a href="https://educationendowmentfoundation.org.uk" target="_blank">educationendowmentfoundation.org.uk</a></li>
+                  <li><strong>Alex Quigley (The Confident Teacher):</strong> <a href="https://www.theconfidentteacher.co.uk" target="_blank">www.theconfidentteacher.co.uk</a></li>
                   <li><strong>The Writing Revolution:</strong> <a href="https://www.thewritingrevolution.org" target="_blank">www.thewritingrevolution.org</a></li>
-                  <li><strong>EEF Guidance Reports:</strong> <a href="https://educationendowmentfoundation.org.uk" target="_blank">educationendowmentfoundation.org.uk</a></li>
                   <li><strong>British Dyslexia Association:</strong> <a href="https://www.bdadyslexia.org.uk" target="_blank">www.bdadyslexia.org.uk</a></li>
-                  <li><strong>Dylan Wiliam Assessment:</strong> <a href="https://www.dylanwiliam.org" target="_blank">www.dylanwiliam.org</a></li>
+                  <li><strong>Dylan Wiliam Assessment Archive:</strong> <a href="https://www.dylanwiliam.org" target="_blank">www.dylanwiliam.org</a></li>
                 </ul>
                 <div class="citation" style="margin-top: 8px;">
-                  All platform documents are 100% compliant with UK national curriculum specifications and peer-reviewed educational research.
+                  Full research syntheses and classroom protocols are accessible in the Department Portal (<code>src/pedagogy_data.js</code>).
                 </div>
               </div>
             </div>
@@ -355,71 +351,70 @@ const guides = [
       },
       {
         subtitle:
-          'Part III: Oral Fluency, Reading Aloud & The Anti-Simplification Standard (Lemov, Shanahan & Quigley)',
+          'Part III: Studio Prosody, Anti-Simplification, Guided Reading & Dual-Coding Consolidation',
         content: `
           <div class="grid-2">
             <div class="card">
               <div class="card-header" style="background: #b45309;">📖 9. Shanahan &amp; Lemov: The Anti-Simplification Standard</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Dumbing down historical texts widens the reading gap (The Matthew Effect). Scaffolding, not simplification, builds disciplinary literacy.<br><br>
-                <strong>What Fails (The "Simplify Button" Trap):</strong>
+                <strong>Core Concept:</strong> Stripping academic vocabulary out of historical texts widens the literacy gap (the Matthew Effect). Pupils progress faster when complex prose is scaffolded rather than simplified.<br><br>
+                <strong>Why We Reject "Simplify Text" Toggles:</strong>
                 <ul>
-                  <li>❌ Text Simplification: Strips out Tier-2 connectives (<em>consequently, despite</em>) and Tier-3 concepts, destroying historical causal logic.</li>
-                  <li>❌ Cold Round-Robin / Popcorn Reading: Induces acute anxiety and disjointed decoding that destroys class-wide comprehension.</li>
-                  <li>❌ Deficit Stigmatization: Publicly brands weak readers in front of peers.</li>
+                  <li>❌ Deleting Tier-2 connectives (<em>consequently, despite, whereas</em>) destroys historical cause-and-effect logic.</li>
+                  <li>❌ Replacing specification nouns with vague everyday synonyms leaves pupils unable to access exam questions or primary sources.</li>
+                  <li>✅ Instead, we calibrate sentence length cleanly while keeping rich vocabulary supported by audio prosody and hover popovers.</li>
                 </ul>
                 <div class="citation">
                   <strong>References:</strong> Shanahan, T. (2025). <em>Leveled Reading, Leveled Lives</em> &bull; Lemov, D. (2016). <em>Reading Reconsidered</em>.<br>
-                  <strong>Research Link:</strong> <a href="https://www.shanahanonliteracy.com/" target="_blank">www.shanahanonliteracy.com (Shanahan on Literacy)</a>
+                  <a href="https://www.shanahanonliteracy.com/" target="_blank">www.shanahanonliteracy.com</a>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header" style="background: #0369a1;">🎙️ 10. Alex Quigley &amp; EEF: The Prosody Bridge</div>
+              <div class="card-header" style="background: #0369a1;">🎙️ 10. Built-In Platform Feature: Studio Voices &amp; Guided Reading</div>
               <div class="card-body">
-                <strong>Core Concept:</strong> Reading comprehension is anchored in <em>prosody</em> (expressive phrasing, cadence, and syntactical emphasis) modelled by an expert adult reader.<br><br>
-                <strong>Classroom Mechanics:</strong>
+                <strong>Core Concept:</strong> Hearing fluent adult prosody while tracking printed text frees working memory from decoding strain.<br><br>
+                <strong>Built Directly Into the Web App:</strong>
                 <ul>
-                  <li><strong>Teacher-Modelled Reading as Default:</strong> The teacher's expressive reading frees 90% of pupil working memory for evidential analysis.</li>
-                  <li><strong>Echo &amp; Choral Reading:</strong> Pupils repeat challenging clauses immediately after the teacher, embedding pronunciation without spotlight anxiety.</li>
-                  <li><strong>45-Second Paired Whisper Rehearsal:</strong> Every developing reader speaks the text aloud safely before any whole-class sharing.</li>
+                  <li><strong>Multi-Speed Studio Historian Audio (<code>0.85x / 1.0x / 1.15x</code>):</strong> Pitch-preserved British documentary narration across every lesson block and Visual Story Sheet with zero-reflow sentence highlighting and click-any-sentence seeking.</li>
+                  <li><strong>KS2 &amp; KS3 Guided Reading Companions:</strong> Provenance-labelled primary &amp; literary extracts structured as <em>Step 1 (2&times;2 Key Words) &rarr; Step 2 (Studio Read-Aloud) &rarr; Step 3 (3-Min Discussion + Answer Guides)</em>.</li>
+                  <li><strong>GCSE Paper 3 Two-Historian Audio Clashes:</strong> Contrasting male/female studio voices bring <em>Interpretation 1 vs 2</em> debates alive.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Reference:</strong> Quigley, A. (2020). <em>Closing the Reading Gap</em> &bull; EEF Secondary Literacy.<br>
-                  <strong>Research Link:</strong> <a href="https://www.theconfidentteacher.co.uk/" target="_blank">www.theconfidentteacher.co.uk (Research Blog)</a>
+                  <strong>References:</strong> Quigley, A. (2020). <em>Closing the Reading Gap</em> &bull; Such, C. (2021).
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header" style="background: #15803d;">🎯 11. The 4-Step "Control the Conversation" Routine</div>
+              <div class="card-header" style="background: #15803d;">🎯 11. Recommended Teacher Routine: Shared Reading Delivery</div>
               <div class="card-body">
-                <strong>The Daily Choreography for Mixed-Ability History Classes:</strong>
+                <strong>Optional Classroom Protocol Alongside Textbook / App:</strong><br>
+                <em>(Suggested in our 2-Lesson Delivery Plans — teacher-led, not automated):</em>
                 <ol style="padding-left: 16px; margin: 4px 0;">
-                  <li><strong>Pre-Teach Barrier Words (2 mins):</strong> Write 2 polysyllabic terms (e.g. <em>gong-fer-mer, fil-tra-tion</em>) on the board with phonetic stress.</li>
-                  <li><strong>Teacher Models Exposition:</strong> Teacher reads sentences 1–2 with dramatic inflection, unpacking complex clauses.</li>
-                  <li><strong>Whisper Rehearsal (45s):</strong> Pairs whisper-read sentences 2–3 to embed fluency.</li>
-                  <li><strong>The Spotlight Micro-Turn:</strong> Teacher passes the baton to a developing reader for the punchy 1–2 sentence conclusion. 100% success!</li>
+                  <li><strong>Pre-Teach 2 Barrier Terms (90s):</strong> Preview two Tier-3 words from the lesson Vocabulary Bank before reading begins.</li>
+                  <li><strong>80/20 Expert Prosody:</strong> Teacher (or the 1.0x Studio Player) models 80% of the passage so causal pacing stays brisk.</li>
+                  <li><strong>Spotlight Micro-Turns:</strong> Invite developing readers to read a punchy 1–2 sentence conclusion rather than cold round-robin paragraphs.</li>
+                  <li><strong>Pause &amp; Synthesise:</strong> Pause at each Stage Question banner for 60–90s of full-sentence Verso note-making.</li>
                 </ol>
                 <div class="citation">
-                  <strong>Reference:</strong> Lemov, D. (2021). <em>Teach Like a Champion 3.0</em> (Technique 24: Control the Conversation).<br>
-                  <strong>Research Link:</strong> <a href="https://teachlikeachampion.org/" target="_blank">teachlikeachampion.org (TLAC Foundation)</a>
+                  <strong>Reference:</strong> Lemov, D. (2021). <em>Teach Like a Champion 3.0</em> (<a href="https://teachlikeachampion.org/" target="_blank">teachlikeachampion.org</a>).
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="card-header" style="background: #6d28d9;">⚡ 12. Revision Hub Digital Scaffolding Engine</div>
+              <div class="card-header" style="background: #6d28d9;">🗺️ 12. Caviglioli &amp; Novak: Center-Spine Mind-Map Canvas</div>
               <div class="card-body">
-                <strong>Integrated Accessibility Features Built for Curricular Dignity:</strong>
+                <strong>Core Concept:</strong> Combining visual dual-coding with structured causal concept mapping consolidates whole-unit schema without penalizing fine-motor skills.<br><br>
+                <strong>Live Workbook &amp; App Synergy:</strong>
                 <ul>
-                  <li><strong>Multi-Speed UK Neural Audio (0.85x / 1.0x / 1.15x):</strong> Pupils pre-audition complex passages with headphones and synchronized karaoke tracking.</li>
-                  <li><strong>Co-Located Decoded Vocabulary Glosses:</strong> Key terms defined adjacent to text with phonetic breakdowns, eliminating split-attention tracking fatigue.</li>
-                  <li><strong>50–65 Character Measure &amp; Margin Line Numbers:</strong> Prevents eye-sweep fatigue, enabling instantaneous teacher navigation ("Line 14, Johnny").</li>
+                  <li><strong>Pure <code>#000000</code> Center-Spine Canvas:</strong> Pages 2–3 (or KS3 centrefolds) feature a central chronological spine with specification milestone pills and open white branching space—zero pre-printed summary giveaways.</li>
+                  <li><strong>Dual Representation Pathways:</strong> KS3 Dual-Pathway timelines let pupils choose between symbolic dual-code icons (Pathway A) or 3-branch causal webs (Pathway B), fuelled by the app's Consolidate Station.</li>
                 </ul>
                 <div class="citation">
-                  <strong>Compliance:</strong> Fully compliant with UK SEND Code of Practice, EEF Literacy Guidance, and Christine Counsell 4-Act Disciplinary Standards.
+                  <strong>References:</strong> Caviglioli, O. (2019). <em>Dual Coding with Teachers</em> &bull; Novak &amp; Gowin (1984).
                 </div>
               </div>
             </div>
@@ -428,16 +423,16 @@ const guides = [
       },
       {
         subtitle:
-          'Part IV: 5-Tier Stage Question Progression & Zero Split-Attention Verso Workbooks (Counsell, Sweller & Beck)',
+          'Part IV: 5-Tier Stage Question Progression, Full-Width Verso Workbooks & Platform Truth Matrix',
         content: `
           <div class="grid-2">
             <div class="card">
               <div class="card-header" style="background: #0f766e;">🪜 13. The 5-Tier Cognitive Question Ladder (KS2 &rarr; GCSE)</div>
               <div class="card-body">
-                <strong>Core Principle:</strong> Every narrative block question (&le; 82 chars single-line fit) scales progressively across age cohorts while remaining 100% answerable from its paired prose block:<br><br>
+                <strong>Core Principle:</strong> Every narrative block question (<code>&le; 82 chars</code> single-line fit) scales progressively across age cohorts while remaining 100% answerable from its paired prose block:<br><br>
                 <ul>
                   <li><strong>KS2 (Y5–6) &amp; Year 7:</strong> &le; 13 words, &le; 2 complex common words — concrete actors, actions, and immediate reactions.</li>
-                  <li><strong>Year 8:</strong> &le; 14 words, &le; 3 complex common words — multi-step chains and contrasting perspectives.</li>
+                  <li><strong>Year 8:</strong> &le; 14 words, &le; 3 complex common words — multi-step causal chains and contrasting perspectives.</li>
                   <li><strong>Year 9:</strong> &le; 15 words, &le; 4 complex common words — systemic shifts, turning points, and ideology.</li>
                   <li><strong>GCSE (Y10–11):</strong> &le; 15 words, &le; 5 complex common words — specification-precise mechanisms (open <em>"To what extent..."</em> essays reserved for Recto tasks).</li>
                 </ul>
@@ -450,17 +445,25 @@ const guides = [
             <div class="card">
               <div class="card-header" style="background: #1e3a8a;">📝 14. Full-Width Verso Boxes &amp; Prose-Hash Sustainability</div>
               <div class="card-body">
-                <strong>Eliminating Split-Attention &amp; Curriculum Drift Across 773 Stages:</strong>
+                <strong>Eliminating Split-Attention &amp; Curriculum Drift Across All Units:</strong>
                 <ul>
-                  <li><strong>Retired 3-Trigger Margin Columns:</strong> Removing narrow 26mm left trigger sidebars eliminates spatial split-attention and prevents copying isolated 2-word fragments, giving pupils 5 full-width ruled lines to compose complete causal sentences.</li>
-                  <li><strong>1-to-1 App &harr; Print Parity:</strong> Identical canonical Stage Questions appear across Web App banners, Chronology Spine cards, and Printed Pupil Workbooks while preserving noun-phrase milestone titles for Arcade timelines.</li>
-                  <li><strong>Automated SHA-1 Prose-Hash Gate:</strong> Editing any narrative block automatically flags stage-question verification during <code>sync:unit</code> and <code>test:qa</code>.</li>
+                  <li><strong>Retired Narrow Trigger Sidebars:</strong> Removing cramped 26mm left trigger columns eliminates spatial split-attention and stops pupils copying 2-word fragments, giving 5 full-width ruled lines for complete causal sentences.</li>
+                  <li><strong>1-to-1 App &harr; Print Parity:</strong> Identical canonical Stage Questions appear across Web App slim stage banners, Chronology Spine cards, and Printed Pupil Workbooks while preserving noun-phrase milestone titles for Arcade timelines.</li>
+                  <li><strong>Automated SHA-1 Prose-Hash Gate:</strong> Editing any narrative block automatically enforces stage-question answerability checks during <code>sync:unit</code> and <code>audit:stages</code>.</li>
                 </ul>
                 <div class="citation">
                   <strong>Reference:</strong> Chandler, P. &amp; Sweller, J. (1991). <em>Cognitive Load Theory and the Format of Instruction</em>.
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="section-title">At-a-Glance Verification Matrix: Where Every Pedagogical Element Lives</div>
+          <div class="highlight-rule" style="background: #f8fafc; border-color: #cbd5e1; border-left: 4px solid #0f172a; color: #1e293b;">
+            <strong>1. Classroom Textbook:</strong> Pure 2-column <code>Lora</code> narrative (<code>Stage 1–5</code> headers) + Chronological Spine + Back-Cover Oral Recall Quiz (zero clutter).<br>
+            <strong>2. Pupil Workbook:</strong> Center-Spine Mind-Map Canvas + Facing Verso (5 full-width Stage Boxes) &amp; Recto (zero-giveaway writing) + Exercise Notes + 6-Row Back Ledger.<br>
+            <strong>3. Retrieval Companion:</strong> 3-Tier Difficulty Pips (<code>▸</code> / <code>▸▸</code> / <code>▸▸▸</code>) + Dual-Line Recall Prompts + Synchronized Rear <code>[✓][✗]</code> DIRT Marking Bank.<br>
+            <strong>4. Web Application:</strong> Spaced Do Now + Studio Audio &amp; Visual-Stress Overlays + 5 Primary Sources (<code>A–E</code>) with Hinge Questions + Dossier/Vocab Popovers + Visual Story Sheets + Consolidate Cloze, Quizzes, Arcade &amp; Exam Practice Zone.
           </div>
         `,
       },
@@ -503,6 +506,12 @@ function generateGuideHtml(guide) {
       flex-direction: column;
       justify-content: space-between;
       padding: 2mm 4mm;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .page-container:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
     }
     .header-bar {
       border-bottom: 2.5px solid #0f172a;
@@ -543,14 +552,14 @@ function generateGuideHtml(guide) {
     }
     h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 17pt;
+      font-size: 16.5pt;
       font-weight: 800;
       margin: 0 0 2px 0;
       color: #0f172a;
       line-height: 1.15;
     }
     .subtitle {
-      font-size: 8.5pt;
+      font-size: 8.3pt;
       color: #475569;
       font-style: italic;
       margin-bottom: 6px;
@@ -559,24 +568,24 @@ function generateGuideHtml(guide) {
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       border-left: 4px solid #1e3a8a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      margin-bottom: 10px;
-      font-size: 8.2pt;
-      line-height: 1.4;
+      margin-bottom: 9px;
+      font-size: 8.1pt;
+      line-height: 1.38;
       color: #1e293b;
     }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 9px;
+      margin-bottom: 9px;
     }
     .grid-3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
     .card {
       border: 1px solid #cbd5e1;
@@ -589,9 +598,9 @@ function generateGuideHtml(guide) {
     .card-header {
       padding: 5px 8px;
       font-weight: 800;
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       color: #ffffff;
     }
     .card-header.blue { background: #1e3a8a; }
@@ -599,9 +608,9 @@ function generateGuideHtml(guide) {
     .card-header.emerald { background: #065f46; }
     .card-header.purple { background: #581c87; }
     .card-body {
-      padding: 8px;
-      font-size: 7.6pt;
-      line-height: 1.35;
+      padding: 7px 8px;
+      font-size: 7.5pt;
+      line-height: 1.33;
       color: #334155;
       flex: 1;
     }
@@ -610,13 +619,13 @@ function generateGuideHtml(guide) {
       padding-left: 14px;
     }
     .card-body li {
-      margin-bottom: 3px;
+      margin-bottom: 2.5px;
     }
     .citation {
-      margin-top: 6px;
-      padding-top: 5px;
+      margin-top: 5px;
+      padding-top: 4px;
       border-top: 1px dashed #cbd5e1;
-      font-size: 7pt;
+      font-size: 6.9pt;
       color: #64748b;
     }
     .citation a {
@@ -624,25 +633,25 @@ function generateGuideHtml(guide) {
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
-      margin-top: 2px;
+      margin-top: 1px;
     }
     .section-title {
       font-weight: 800;
-      font-size: 8.8pt;
+      font-size: 8.6pt;
       color: #0f172a;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       border-bottom: 1.5px solid #0f172a;
       padding-bottom: 2px;
-      margin: 8px 0 6px 0;
+      margin: 7px 0 5px 0;
     }
     .highlight-rule {
       background: #f0fdf4;
       border: 1px solid #86efac;
       border-left: 4px solid #16a34a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      font-size: 8pt;
+      font-size: 7.8pt;
       color: #166534;
       line-height: 1.35;
     }
@@ -652,17 +661,17 @@ function generateGuideHtml(guide) {
       padding: 8px 12px;
       border-radius: 4px;
       font-family: monospace;
-      font-size: 7.8pt;
-      line-height: 1.5;
+      font-size: 7.6pt;
+      line-height: 1.48;
     }
     .imposition-diagram {
       background: #f8fafc;
       border: 1.5px solid #0284c7;
       padding: 8px 12px;
       border-radius: 4px;
-      font-size: 7.8pt;
+      font-size: 7.7pt;
       color: #0369a1;
-      line-height: 1.6;
+      line-height: 1.55;
     }
     .footer-bar {
       border-top: 1.5px solid #0f172a;
@@ -729,8 +738,26 @@ function generateGuideHtml(guide) {
   for (const guide of guides) {
     console.log(`Rendering ${guide.filename}...`);
     const page = await browser.newPage();
+    await page.setViewport({ width: 794, height: 1123 });
     const html = generateGuideHtml(guide);
     await page.setContent(html, { waitUntil: 'networkidle0' });
+
+    // Audit DOM overflow on every .page-container
+    const domAudit = await page.evaluate(() => {
+      return Array.from(document.querySelectorAll('.page-container')).map((el, i) => ({
+        page: i + 1,
+        scrollHeight: el.scrollHeight,
+        clientHeight: el.clientHeight,
+        overflowPx: Math.max(0, el.scrollHeight - el.clientHeight),
+      }));
+    });
+    for (const pAudit of domAudit) {
+      if (pAudit.overflowPx > 1) {
+        throw new Error(
+          `DOM overflow on ${guide.filename} Page ${pAudit.page}: +${pAudit.overflowPx}px (${pAudit.scrollHeight} > ${pAudit.clientHeight})`,
+        );
+      }
+    }
 
     // Save HTML version
     const htmlPath = path.join(outputDir, guide.filename.replace('.pdf', '.html'));
@@ -744,10 +771,22 @@ function generateGuideHtml(guide) {
       printBackground: true,
       margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
     });
-    console.log(`✅ Exported: ${guide.filename}`);
+
+    // Mandatory pdf-parse physical page count gate
+    const pdfBuf = fs.readFileSync(pdfPath);
+    const parsed = await pdfParse(pdfBuf);
+    if (parsed.numpages !== guide.expectedPages) {
+      throw new Error(
+        `Skia PDF page-count mismatch on ${guide.filename}: expected ${guide.expectedPages}, got ${parsed.numpages}`,
+      );
+    }
+
+    console.log(
+      `✅ Exported & Verified: ${guide.filename} (${parsed.numpages}/${guide.expectedPages} pages, 0px overflow)`,
+    );
     await page.close();
   }
 
   await browser.close();
-  console.log('🎉 All 4 Guidance Manuals compiled successfully!');
+  console.log('🎉 All 4 Guidance Manuals compiled and verified with 0px overflow!');
 })();

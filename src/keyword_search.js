@@ -140,6 +140,7 @@ function getCleanUnitTitle(unitId, unitData) {
     post_war_britain: 'Post-War Britain (1945–Present)',
     edexcel_medicine: 'Medicine Through Time (c.1250–present)',
     eee: 'Early Elizabethan England (1558–1588)',
+    gcse_cold_war: 'Superpower Relations & the Cold War (1941–1991)',
     weimar_nazi_germany: 'Weimar & Nazi Germany (1918–1939)',
     cme_new: 'Conflict in the Middle East (1945–1995)',
     usa: 'Conflict at Home & Abroad: USA (1954–1975)',
@@ -167,7 +168,7 @@ function getYearStageBadge(unitId) {
     ['great_war', 'great_war_part2', 'the_shoah', 'cold_war', 'post_war_britain'].includes(unitId)
   )
     return 'Year 9';
-  if (['edexcel_medicine', 'eee', 'weimar_nazi_germany', 'cme_new', 'usa'].includes(unitId))
+  if (['edexcel_medicine', 'eee', 'gcse_cold_war', 'weimar_nazi_germany', 'cme_new', 'usa'].includes(unitId))
     return 'GCSE';
   return 'Curriculum';
 }

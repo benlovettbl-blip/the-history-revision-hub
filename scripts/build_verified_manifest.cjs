@@ -4,6 +4,7 @@ const path = require('path');
 function getPdfs(dir) {
   let res = [];
   fs.readdirSync(dir).forEach(f => {
+    if (f === 'past_papers' || f === 'cme_workbooks') return;
     const full = path.join(dir, f);
     if (fs.statSync(full).isDirectory()) {
       res = res.concat(getPdfs(full));

@@ -1,10 +1,10 @@
 {
   "unit_id": "cme_new",
-  "title": "Pearson Edexcel GCSE (9–1) History",
+  "title": "Hub GCSE History Topic Checklist (Aligned to Edexcel 1HI0)",
   "subtitle": "Option P5: Conflict in the Middle East, 1945–95",
   "generated_at": "2026-09-09T23:04:55.321Z",
-  "total_past_questions": 42,
-  "total_series_analyzed": 8,
+  "total_past_questions": 36,
+  "total_series_analyzed": 7,
   "sections": [
     {
       "id": "key-topic-1",
@@ -15,7 +15,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "**Conflicting interests and demands** of Jews and Arabs within the British Mandate.",
+              "point_text": "**Conflicting interests & demands** of Jews & Arabs within the British Mandate",
               "exam_count": 1,
               "years_appeared": [
                 2023
@@ -42,14 +42,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of conflicting interests of Jews and Arabs for the end of the British Mandate."
+                  "question_text": "Analyse the significance of irreconcilable Jewish and Arab aims in forcing Britain to surrender the Palestine Mandate."
                 }
               ],
-              "teacher_note": "⚖️ BALANCED ROTATION: Examined in 2023. Keep in regular retrieval rotation."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2023. Keep in regular retrieval rotation."
             },
             {
               "point_index": 2,
-              "point_text": "**Key events leading to the end of the British Mandate**, partition and the creation of Israel, including the **significance of the bombing of the King David Hotel** and **UN Resolution 181**.",
+              "point_text": "**Key events leading to the end of the British Mandate**, partition & the creation of Israel (incl. the **significance of the bombing of the King David Hotel** & **UN Resolution 181**)",
               "exam_count": 4,
               "years_appeared": [
                 2020,
@@ -80,7 +80,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of UN Resolution 181 for the creation of Israel."
+                  "question_text": "Analyse the significance of the November 1947 UN Partition Plan (Resolution 181) in bringing about the State of Israel."
                 },
                 {
                   "q_id": "cme_2023_q3a",
@@ -91,7 +91,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of conflicting interests of Jews and Arabs for the end of the British Mandate."
+                  "question_text": "Analyse the significance of irreconcilable Jewish and Arab aims in forcing Britain to surrender the Palestine Mandate."
                 },
                 {
                   "q_id": "cme_2024_q3a",
@@ -102,7 +102,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the end of the British Mandate (1948) for the creation of Israel."
+                  "question_text": "Analyse the significance of Britain’s withdrawal from Mandatory Palestine in May 1948 for the establishment of Israel."
                 },
                 {
                   "q_id": "cme_2025_q1a",
@@ -113,44 +113,28 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain one consequence of the bombing of the King David Hotel (1946)."
+                  "question_text": "Explain one distinct consequence of the July 1946 Irgun bombing of British headquarters at the King David Hotel."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 3,
-              "point_text": "**Key events of the Arab-Israeli war (1948–49)**.",
-              "exam_count": 1,
-              "years_appeared": [
-                2026
-              ],
-              "last_examined": 2026,
-              "last_examined_series": "Specimen Paper",
-              "is_last_specimen": true,
-              "tariffs_examined": [
-                8
-              ],
-              "has_8m": true,
+              "point_text": "**Key events of the Arab-Israeli war (1948–49)**",
+              "exam_count": 0,
+              "years_appeared": [],
+              "last_examined": "Never",
+              "last_examined_series": "Never",
+              "is_last_specimen": false,
+              "tariffs_examined": [],
+              "has_8m": false,
               "has_12m": false,
               "has_16m": false,
-              "high_tariff_gap": false,
-              "overdue_status": "recent",
-              "overdue_score": 15,
-              "matched_questions": [
-                {
-                  "q_id": "cme_2026_q3a",
-                  "q_number": "Q3(a)",
-                  "year": 2026,
-                  "season": "Specimen",
-                  "series": "Specimen Paper",
-                  "is_specimen": true,
-                  "tariff": 8,
-                  "type": "importance",
-                  "question_text": "Explain the importance of the Arab-Israeli war (1948-49) for the state of Israel."
-                }
-              ],
-              "teacher_note": "📋 SPECIMEN PAPER: Featured in the official 2026 Specimen Paper (Q3(a), 8m). Excellent model for how this topic will be assessed in the current specification."
+              "high_tariff_gap": true,
+              "overdue_status": "high",
+              "overdue_score": 100,
+              "matched_questions": [],
+              "teacher_note": "⚠️ UNEXAMINED TOPIC: Not assessed in the 2018–2025 public exam series. Prime territory for upcoming classroom mocks and revision."
             }
           ]
         },
@@ -159,7 +143,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "**Territorial changes** and their impact.",
+              "point_text": "**Territorial changes** & their impact",
               "exam_count": 3,
               "years_appeared": [
                 2018,
@@ -189,7 +173,7 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain two consequences of the territorial changes following the 1948-49 Arab- Israeli war."
+                  "question_text": "Explain two distinct consequences of the border and territorial shifts produced by the 1948–49 Arab-Israeli War."
                 },
                 {
                   "q_id": "cme_2022_q3a",
@@ -200,7 +184,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of territorial changes in the aftermath of the 1948-49 war for Palestinians."
+                  "question_text": "Analyse the significance of the 1948–49 territorial partition and armistice lines for Palestinian Arab society and refugees."
                 },
                 {
                   "q_id": "cme_2025_q1b",
@@ -211,14 +195,14 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain one consequence of the territorial changes following the 1948-49 Arab-Israeli war."
+                  "question_text": "Explain one distinct consequence of the 1949 armistice border changes after the First Arab-Israeli War."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 2,
-              "point_text": "The **refugee status of Palestinian Arabs**.",
+              "point_text": "**Refugee status of Palestinian Arabs**",
               "exam_count": 1,
               "years_appeared": [
                 2022
@@ -245,34 +229,32 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of territorial changes in the aftermath of the 1948-49 war for Palestinians."
+                  "question_text": "Analyse the significance of the 1948–49 territorial partition and armistice lines for Palestinian Arab society and refugees."
                 }
               ],
-              "teacher_note": "⚖️ BALANCED ROTATION: Examined in 2022. Keep in regular retrieval rotation."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2022. Keep in regular retrieval rotation."
             },
             {
               "point_index": 3,
-              "point_text": "The creation of the **Israeli Defence Forces (IDF)** and the **Law of Return (1950)**.",
-              "exam_count": 4,
+              "point_text": "Creation of the **Israeli Defence Forces (IDF)** & the **Law of Return (1950)**",
+              "exam_count": 3,
               "years_appeared": [
                 2019,
                 2020,
-                2023,
-                2026
+                2023
               ],
-              "last_examined": 2026,
-              "last_examined_series": "Specimen Paper",
-              "is_last_specimen": true,
+              "last_examined": 2023,
+              "last_examined_series": "Summer 2023",
+              "is_last_specimen": false,
               "tariffs_examined": [
-                4,
                 8
               ],
               "has_8m": true,
               "has_12m": false,
               "has_16m": false,
               "high_tariff_gap": false,
-              "overdue_status": "recent",
-              "overdue_score": 15,
+              "overdue_status": "medium",
+              "overdue_score": 50,
               "matched_questions": [
                 {
                   "q_id": "cme_2019_q3a",
@@ -283,7 +265,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the establishment of the Israeli Defence Forces for the protection of the new state of Israel."
+                  "question_text": "Analyse the significance of forming the unified Israel Defense Forces (IDF) in 1948 for securing the newborn Israeli state."
                 },
                 {
                   "q_id": "cme_2020_q3b",
@@ -294,7 +276,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the Law of Return for the development of the state of Israel."
+                  "question_text": "Analyse the significance of the 1950 Law of Return for Israel’s demographic, economic, and military growth."
                 },
                 {
                   "q_id": "cme_2023_q2",
@@ -305,25 +287,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the developments in Israel in the years 1949-54."
-                },
-                {
-                  "q_id": "cme_2026_q1a",
-                  "q_number": "Q1(a)",
-                  "year": 2026,
-                  "season": "Specimen",
-                  "series": "Specimen Paper",
-                  "is_specimen": true,
-                  "tariff": 4,
-                  "type": "consequence",
-                  "question_text": "Explain one consequence of Israel passing the Law of Return (1950)."
+                  "question_text": "Construct an analytical narrative tracing how the new State of Israel consolidated itself between 1949 and 1954."
                 }
               ],
-              "teacher_note": "📋 SPECIMEN PAPER: Featured in the official 2026 Specimen Paper (Q1(a), 4m). Excellent model for how this topic will be assessed in the current specification."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2023. Keep in regular retrieval rotation."
             },
             {
               "point_index": 4,
-              "point_text": "**US aid** to Israel.",
+              "point_text": "**US aid** to Israel",
               "exam_count": 1,
               "years_appeared": [
                 2023
@@ -350,14 +321,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the developments in Israel in the years 1949-54."
+                  "question_text": "Construct an analytical narrative tracing how the new State of Israel consolidated itself between 1949 and 1954."
                 }
               ],
-              "teacher_note": "⚖️ BALANCED ROTATION: Examined in 2023. Keep in regular retrieval rotation."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2023. Keep in regular retrieval rotation."
             },
             {
               "point_index": 5,
-              "point_text": "Israel’s **relations with Egypt**.",
+              "point_text": "Israel’s **relations with Egypt**",
               "exam_count": 1,
               "years_appeared": [
                 2024
@@ -384,10 +355,10 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing relations between Israel and Egypt in the years 1949-56."
+                  "question_text": "Construct an analytical narrative tracing the worsening confrontation between Israel and Egypt from 1949 to 1956."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2024. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2024. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             }
           ]
         },
@@ -396,7 +367,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "**Nasser** and Egypt’s **leadership of the Arab world**.",
+              "point_text": "**Nasser** & Egypt’s **leadership of the Arab world**",
               "exam_count": 1,
               "years_appeared": [
                 2018
@@ -412,7 +383,7 @@
               "has_16m": false,
               "high_tariff_gap": false,
               "overdue_status": "high",
-              "overdue_score": 90,
+              "overdue_score": 80,
               "matched_questions": [
                 {
                   "q_id": "cme_2018_q3a",
@@ -423,14 +394,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of Nasser for leadership of the Arab world."
+                  "question_text": "Analyse the significance of Gamal Abdel Nasser in shaping leadership and pan-Arab nationalism across the Arab world."
                 }
               ],
-              "teacher_note": "🔥 HIGHLY OVERDUE: Last set in 2018. It has been 8 years since students were tested on this topic. Ideal candidate for mocks."
+              "teacher_note": "🔥 HIGHLY OVERDUE: Last assessed in 2018. Strong candidate for classroom mock practice."
             },
             {
               "point_index": 2,
-              "point_text": "The events and significance of **Israeli attacks on Gaza in 1955** and **Sinai in 1956**.",
+              "point_text": "Events & significance of **Israeli attacks on Gaza in 1955** & **Sinai in 1956**",
               "exam_count": 1,
               "years_appeared": [
                 2024
@@ -457,25 +428,23 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing relations between Israel and Egypt in the years 1949-56."
+                  "question_text": "Construct an analytical narrative tracing the worsening confrontation between Israel and Egypt from 1949 to 1956."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2024. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2024. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 3,
-              "point_text": "The events and significance of the **Suez Crisis (1956)**, including the **formation of the United Arab Republic (UAR) in 1958**.",
-              "exam_count": 3,
+              "point_text": "Events & significance of the **Suez Crisis (1956)** (incl. the **formation of the United Arab Republic (UAR) in 1958**)",
+              "exam_count": 2,
               "years_appeared": [
                 2019,
-                2025,
-                2026
+                2025
               ],
-              "last_examined": 2026,
-              "last_examined_series": "Specimen Paper",
-              "is_last_specimen": true,
+              "last_examined": 2025,
+              "last_examined_series": "Summer 2025",
+              "is_last_specimen": false,
               "tariffs_examined": [
-                4,
                 8
               ],
               "has_8m": true,
@@ -494,7 +463,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key events of the Suez crisis in 1956."
+                  "question_text": "Construct an analytical narrative tracing the causes, course, and outcome of the 1956 Suez Crisis."
                 },
                 {
                   "q_id": "cme_2025_q3a",
@@ -505,21 +474,10 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of Nasser for tension in the Middle East in the years 1955-63."
-                },
-                {
-                  "q_id": "cme_2026_q1b",
-                  "q_number": "Q1(b)",
-                  "year": 2026,
-                  "season": "Specimen",
-                  "series": "Specimen Paper",
-                  "is_specimen": true,
-                  "tariff": 4,
-                  "type": "consequence",
-                  "question_text": "Explain one consequence of the Suez Crisis (1956)."
+                  "question_text": "Analyse the significance of President Nasser’s policies in heightening regional Middle East tensions between 1955 and 1963."
                 }
               ],
-              "teacher_note": "📋 SPECIMEN PAPER: Featured in the official 2026 Specimen Paper (Q1(b), 4m). Excellent model for how this topic will be assessed in the current specification."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             }
           ]
         }
@@ -534,11 +492,11 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "The significance of the **Cairo Conference (1964)** and the **growth of Fatah and the PLO**.",
+              "point_text": "Significance: **Cairo Conference (1964)** & the **growth of Fatah & the PLO**",
               "exam_count": 0,
               "years_appeared": [],
               "last_examined": "Never",
-              "last_examined_series": null,
+              "last_examined_series": "Never",
               "is_last_specimen": false,
               "tariffs_examined": [],
               "has_8m": false,
@@ -548,11 +506,11 @@
               "overdue_status": "high",
               "overdue_score": 100,
               "matched_questions": [],
-              "teacher_note": "⚠️ UNEXAMINED TOPIC: This specification point has never appeared on an official Edexcel paper since 2018. It is prime territory for an upcoming series."
+              "teacher_note": "⚠️ UNEXAMINED TOPIC: Not assessed in the 2018–2025 public exam series. Prime territory for upcoming classroom mocks and revision."
             },
             {
               "point_index": 2,
-              "point_text": "**Escalating tension** between Israel, Syria and Jordan: **Syria’s support for Fatah**, **Israel’s raid on Samu** and the **events of 7 April 1967**.",
+              "point_text": "**Escalating tension** between Israel, Syria & Jordan: **Syria’s support for Fatah**, **Israel’s raid on Samu** & the **events of 7 April 1967**",
               "exam_count": 1,
               "years_appeared": [
                 2022
@@ -579,14 +537,14 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain two consequences of Syria’s support for Fatah in the years 1964-67."
+                  "question_text": "Explain two distinct consequences of Syrian backing for Fatah guerrilla raids between 1964 and 1967."
                 }
               ],
-              "teacher_note": "🎯 8M HIGH-TARIFF GAP: Examined previously as a 4m consequence question, but NEVER set as an 8m narrative account or importance question. Watch out for an 8-mark question on this topic."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2022. Keep in regular retrieval rotation."
             },
             {
               "point_index": 3,
-              "point_text": "The **actions of the USSR, Nasser and the USA** in the period leading to war.",
+              "point_text": "**Actions of the USSR, Nasser & the USA** in the period leading to war",
               "exam_count": 1,
               "years_appeared": [
                 2019
@@ -602,7 +560,7 @@
               "has_16m": false,
               "high_tariff_gap": false,
               "overdue_status": "high",
-              "overdue_score": 85,
+              "overdue_score": 80,
               "matched_questions": [
                 {
                   "q_id": "cme_2019_q3b",
@@ -613,22 +571,21 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the actions of the USSR and the USA for the outbreak of the Six Day War (1967)."
+                  "question_text": "Analyse the significance of Soviet and American policies in escalating the crisis that triggered the June 1967 Six-Day War."
                 }
               ],
-              "teacher_note": "🔥 HIGHLY OVERDUE: Last set in 2019. It has been 7 years since students were tested on this topic. Ideal candidate for mocks."
+              "teacher_note": "🔥 HIGHLY OVERDUE: Last assessed in 2019. Strong candidate for classroom mock practice."
             },
             {
               "point_index": 4,
-              "point_text": "**Key events of the war**.",
-              "exam_count": 2,
+              "point_text": "**Key events of the war**",
+              "exam_count": 1,
               "years_appeared": [
-                2025,
-                2026
+                2025
               ],
-              "last_examined": 2026,
-              "last_examined_series": "Specimen Paper",
-              "is_last_specimen": true,
+              "last_examined": 2025,
+              "last_examined_series": "Summer 2025",
+              "is_last_specimen": false,
               "tariffs_examined": [
                 8
               ],
@@ -648,21 +605,10 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the Six Day War (1967) for Israel’s security."
-                },
-                {
-                  "q_id": "cme_2026_q2",
-                  "q_number": "Q2",
-                  "year": 2026,
-                  "season": "Specimen",
-                  "series": "Specimen Paper",
-                  "is_specimen": true,
-                  "tariff": 8,
-                  "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key events of the Six Day War (1967)."
+                  "question_text": "Analyse the significance of Israel’s victory in the June 1967 Six-Day War for its strategic border security."
                 }
               ],
-              "teacher_note": "📋 SPECIMEN PAPER: Featured in the official 2026 Specimen Paper (Q2, 8m). Excellent model for how this topic will be assessed in the current specification."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             }
           ]
         },
@@ -671,7 +617,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "**UN Resolution 242** and the **continued dispute over the Suez Canal**.",
+              "point_text": "**UN Resolution 242** & the **continued dispute over the Suez Canal**",
               "exam_count": 1,
               "years_appeared": [
                 2024
@@ -698,14 +644,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of UN Resolution 242 (1967) for relations between Israel and the Arab states."
+                  "question_text": "Analyse the significance of UN Security Council Resolution 242 (November 1967) for diplomacy between Israel and neighbouring Arab states."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2024. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2024. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 2,
-              "point_text": "**Palestinian refugees** and the significance of the **occupied territories**: **Golan Heights, Gaza Strip, West Bank, Sinai and East Jerusalem**.",
+              "point_text": "**Palestinian refugees** & **occupied territories**: **Golan Heights, Gaza Strip, West Bank, Sinai & East Jerusalem**",
               "exam_count": 2,
               "years_appeared": [
                 2018,
@@ -733,7 +679,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the occupied territories following the Six Day War (1967) for Arab-Israeli relations."
+                  "question_text": "Analyse the significance of Israel’s capture of the Occupied Territories in June 1967 for subsequent Arab-Israeli relations."
                 },
                 {
                   "q_id": "cme_2025_q3b",
@@ -744,14 +690,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the Six Day War (1967) for Israel’s security."
+                  "question_text": "Analyse the significance of Israel’s victory in the June 1967 Six-Day War for its strategic border security."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 3,
-              "point_text": "The **use of terrorism, Israel’s response and international attitudes** towards the Palestine issue: the **PFLP airplane hijacks of 1970**; **Black September** and the **Munich Olympics**.",
+              "point_text": "**Use of terrorism, Israel’s response & international attitudes** towards the Palestine issue: the **PFLP airplane hijacks of 1970**; **Black September** & the **Munich Olympics**",
               "exam_count": 3,
               "years_appeared": [
                 2020,
@@ -781,7 +727,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key developments in the Palestinian issue in the years 1970-72."
+                  "question_text": "Construct an analytical narrative tracing key events in the Palestinian armed struggle between 1970 and 1972."
                 },
                 {
                   "q_id": "cme_2022_q3b",
@@ -792,7 +738,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the PFLP airplane hijacks (1970) for international attitudes towards the Palestine issue."
+                  "question_text": "Analyse the significance of the September 1970 PFLP airliner hijackings in shaping global perceptions of the Palestinian cause."
                 },
                 {
                   "q_id": "cme_2023_q1",
@@ -803,14 +749,14 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain two consequences of the terrorist attack at the Munich Olympics."
+                  "question_text": "Explain two distinct consequences of Black September’s attack at the 1972 Munich Olympic Games."
                 }
               ],
-              "teacher_note": "⚖️ BALANCED ROTATION: Examined in 2023. Keep in regular retrieval rotation."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2023. Keep in regular retrieval rotation."
             },
             {
               "point_index": 4,
-              "point_text": "The **expulsion of the PLO from Jordan (1970)**.",
+              "point_text": "**Expulsion of the PLO from Jordan (1970)**",
               "exam_count": 2,
               "years_appeared": [
                 2019,
@@ -838,7 +784,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of PLO activities in Lebanon (1970-82) for Israeli security."
+                  "question_text": "Analyse the significance of PLO cross-border operations from southern Lebanon (1970–82) for Israel’s security policy."
                 },
                 {
                   "q_id": "cme_2025_q2",
@@ -849,10 +795,10 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key developments of the PLO in Lebanon in the years 1970-82."
+                  "question_text": "Construct an analytical narrative tracing the PLO’s presence in Lebanon and escalating conflict with Israel between 1970 and 1982."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             }
           ]
         },
@@ -861,7 +807,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "**Egyptian relations** with Israel, the USA, the USSR and other Arab states.",
+              "point_text": "**Egyptian relations** with Israel, the USA, the USSR & other Arab states",
               "exam_count": 1,
               "years_appeared": [
                 2018
@@ -877,7 +823,7 @@
               "has_16m": false,
               "high_tariff_gap": false,
               "overdue_status": "high",
-              "overdue_score": 90,
+              "overdue_score": 80,
               "matched_questions": [
                 {
                   "q_id": "cme_2018_q2",
@@ -888,18 +834,18 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing Egypt’s relations with Israel in the years 1973-77."
+                  "question_text": "Construct an analytical narrative tracing how relations between Egypt and Israel evolved from 1973 to 1977."
                 }
               ],
-              "teacher_note": "🔥 HIGHLY OVERDUE: Last set in 2018. It has been 8 years since students were tested on this topic. Ideal candidate for mocks."
+              "teacher_note": "🔥 HIGHLY OVERDUE: Last assessed in 2018. Strong candidate for classroom mock practice."
             },
             {
               "point_index": 2,
-              "point_text": "Israel’s **consolidation of control of the occupied territories**.",
+              "point_text": "Israel’s **consolidation of control of the occupied territories**",
               "exam_count": 0,
               "years_appeared": [],
               "last_examined": "Never",
-              "last_examined_series": null,
+              "last_examined_series": "Never",
               "is_last_specimen": false,
               "tariffs_examined": [],
               "has_8m": false,
@@ -909,11 +855,11 @@
               "overdue_status": "high",
               "overdue_score": 100,
               "matched_questions": [],
-              "teacher_note": "⚠️ UNEXAMINED TOPIC: This specification point has never appeared on an official Edexcel paper since 2018. It is prime territory for an upcoming series."
+              "teacher_note": "⚠️ UNEXAMINED TOPIC: Not assessed in the 2018–2025 public exam series. Prime territory for upcoming classroom mocks and revision."
             },
             {
               "point_index": 3,
-              "point_text": "Key events of the **Yom Kippur War (1973)** and its aftermath.",
+              "point_text": "Key events of the **Yom Kippur War (1973)** & its aftermath",
               "exam_count": 2,
               "years_appeared": [
                 2018,
@@ -941,7 +887,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing Egypt’s relations with Israel in the years 1973-77."
+                  "question_text": "Construct an analytical narrative tracing how relations between Egypt and Israel evolved from 1973 to 1977."
                 },
                 {
                   "q_id": "cme_2022_q3c",
@@ -952,10 +898,10 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the Yom Kippur War (1973) for Israel’s relations with Egypt."
+                  "question_text": "Analyse the significance of the October 1973 Yom Kippur War in transforming diplomatic relations between Israel and Egypt."
                 }
               ],
-              "teacher_note": "⚖️ BALANCED ROTATION: Examined in 2022. Keep in regular retrieval rotation."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2022. Keep in regular retrieval rotation."
             }
           ]
         }
@@ -970,7 +916,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "The significance of the **oil crisis** and the **involvement of the USA and the USSR**.",
+              "point_text": "Significance: **oil crisis** & the **involvement of the USA & the USSR**",
               "exam_count": 1,
               "years_appeared": [
                 2023
@@ -997,22 +943,21 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the oil crisis (1973-74) for diplomatic negotiations in the Middle East."
+                  "question_text": "Analyse the significance of the 1973–74 OAPEC oil embargo in accelerating US-led Middle East diplomacy."
                 }
               ],
-              "teacher_note": "⚖️ BALANCED ROTATION: Examined in 2023. Keep in regular retrieval rotation."
+              "teacher_note": "⚖️ BALANCED ROTATION: Last assessed in 2023. Keep in regular retrieval rotation."
             },
             {
               "point_index": 2,
-              "point_text": "**Kissinger, ‘shuttle diplomacy’** and the **reopening of the Suez Canal**.",
-              "exam_count": 2,
+              "point_text": "**Kissinger, ‘shuttle diplomacy’** & the **reopening of the Suez Canal**",
+              "exam_count": 1,
               "years_appeared": [
-                2020,
-                2026
+                2020
               ],
-              "last_examined": 2026,
-              "last_examined_series": "Specimen Paper",
-              "is_last_specimen": true,
+              "last_examined": 2020,
+              "last_examined_series": "Autumn 2020",
+              "is_last_specimen": false,
               "tariffs_examined": [
                 8
               ],
@@ -1020,8 +965,8 @@
               "has_12m": false,
               "has_16m": false,
               "high_tariff_gap": false,
-              "overdue_status": "recent",
-              "overdue_score": 15,
+              "overdue_status": "high",
+              "overdue_score": 80,
               "matched_questions": [
                 {
                   "q_id": "cme_2020_q3c",
@@ -1032,34 +977,22 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of Kissinger’s ‘shuttle diplomacy’ for diplomatic negotiations in the Middle East."
-                },
-                {
-                  "q_id": "cme_2026_q3b",
-                  "q_number": "Q3(b)",
-                  "year": 2026,
-                  "season": "Specimen",
-                  "series": "Specimen Paper",
-                  "is_specimen": true,
-                  "tariff": 8,
-                  "type": "importance",
-                  "question_text": "Explain the importance of Henry Kissinger for diplomatic negotiations in the Middle East."
+                  "question_text": "Analyse the significance of Henry Kissinger’s 1973–75 shuttle diplomacy in advancing Arab-Israeli disengagement talks."
                 }
               ],
-              "teacher_note": "📋 SPECIMEN PAPER: Featured in the official 2026 Specimen Paper (Q3(b), 8m). Excellent model for how this topic will be assessed in the current specification."
+              "teacher_note": "🔥 HIGHLY OVERDUE: Last assessed in 2020. Strong candidate for classroom mock practice."
             },
             {
               "point_index": 3,
-              "point_text": "**Sadat’s visit to Israel (1977)**, **Begin’s visit to Egypt (1977)**, **US President Carter and Camp David (1978)** and the **Treaty of Washington (1979)**.",
-              "exam_count": 3,
+              "point_text": "**Sadat’s visit to Israel (1977)**, **Begin’s visit to Egypt (1977)**, **US President Carter & Camp David (1978)** & the **Treaty of Washington (1979)**",
+              "exam_count": 2,
               "years_appeared": [
                 2018,
-                2024,
-                2026
+                2024
               ],
-              "last_examined": 2026,
-              "last_examined_series": "Specimen Paper",
-              "is_last_specimen": true,
+              "last_examined": 2024,
+              "last_examined_series": "Summer 2024",
+              "is_last_specimen": false,
               "tariffs_examined": [
                 4,
                 8
@@ -1080,7 +1013,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing Egypt’s relations with Israel in the years 1973-77."
+                  "question_text": "Construct an analytical narrative tracing how relations between Egypt and Israel evolved from 1973 to 1977."
                 },
                 {
                   "q_id": "cme_2024_q1",
@@ -1091,21 +1024,10 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain two consequences of President Sadat of Egypt’s visit to Israel (1977)."
-                },
-                {
-                  "q_id": "cme_2026_q3c",
-                  "q_number": "Q3(c)",
-                  "year": 2026,
-                  "season": "Specimen",
-                  "series": "Specimen Paper",
-                  "is_specimen": true,
-                  "tariff": 8,
-                  "type": "importance",
-                  "question_text": "Explain the importance of the Camp David Accords (1978) for Arab-Israeli relations."
+                  "question_text": "Explain two distinct consequences of Egyptian President Anwar Sadat’s November 1977 mission to Jerusalem."
                 }
               ],
-              "teacher_note": "📋 SPECIMEN PAPER: Featured in the official 2026 Specimen Paper (Q3(c), 8m). Excellent model for how this topic will be assessed in the current specification."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2024. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             }
           ]
         },
@@ -1114,11 +1036,11 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "**Arafat’s speech to the UN (1974)**.",
+              "point_text": "**Arafat’s speech to the UN (1974)**",
               "exam_count": 0,
               "years_appeared": [],
               "last_examined": "Never",
-              "last_examined_series": null,
+              "last_examined_series": "Never",
               "is_last_specimen": false,
               "tariffs_examined": [],
               "has_8m": false,
@@ -1128,11 +1050,11 @@
               "overdue_status": "high",
               "overdue_score": 100,
               "matched_questions": [],
-              "teacher_note": "⚠️ UNEXAMINED TOPIC: This specification point has never appeared on an official Edexcel paper since 2018. It is prime territory for an upcoming series."
+              "teacher_note": "⚠️ UNEXAMINED TOPIC: Not assessed in the 2018–2025 public exam series. Prime territory for upcoming classroom mocks and revision."
             },
             {
               "point_index": 2,
-              "point_text": "The significance of **PLO activities in Lebanon**.",
+              "point_text": "Significance: **PLO activities in Lebanon**",
               "exam_count": 2,
               "years_appeared": [
                 2019,
@@ -1160,7 +1082,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of PLO activities in Lebanon (1970-82) for Israeli security."
+                  "question_text": "Analyse the significance of PLO cross-border operations from southern Lebanon (1970–82) for Israel’s security policy."
                 },
                 {
                   "q_id": "cme_2025_q2",
@@ -1171,14 +1093,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key developments of the PLO in Lebanon in the years 1970-82."
+                  "question_text": "Construct an analytical narrative tracing the PLO’s presence in Lebanon and escalating conflict with Israel between 1970 and 1982."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 3,
-              "point_text": "**Israeli reprisals, the invasion of Lebanon (1982)** and the results.",
+              "point_text": "**Israeli reprisals, the invasion of Lebanon (1982)** & the results",
               "exam_count": 2,
               "years_appeared": [
                 2023,
@@ -1206,7 +1128,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the Israeli invasion of Lebanon (1982) for the Palestinian issue."
+                  "question_text": "Analyse the significance of Israel’s June 1982 invasion of Lebanon (Operation Peace for Galilee) for the PLO and Palestinians."
                 },
                 {
                   "q_id": "cme_2025_q2",
@@ -1217,14 +1139,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key developments of the PLO in Lebanon in the years 1970-82."
+                  "question_text": "Construct an analytical narrative tracing the PLO’s presence in Lebanon and escalating conflict with Israel between 1970 and 1982."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 4,
-              "point_text": "The **Israeli occupied territories** and the **First Palestinian Intifada (1987–93)**.",
+              "point_text": "**Israeli occupied territories** & the **First Palestinian Intifada (1987–93)**",
               "exam_count": 1,
               "years_appeared": [
                 2020
@@ -1251,10 +1173,10 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain two consequences of the Palestinian Intifada (1987–93)."
+                  "question_text": "Explain two distinct consequences of the First Palestinian Intifada (1987–93)."
                 }
               ],
-              "teacher_note": "🔥 HIGHLY OVERDUE: Last set in 2020. It has been 6 years since students were tested on this topic. Ideal candidate for mocks."
+              "teacher_note": "🔥 HIGHLY OVERDUE: Last assessed in 2020. Strong candidate for classroom mock practice."
             }
           ]
         },
@@ -1263,7 +1185,7 @@
           "points": [
             {
               "point_index": 1,
-              "point_text": "The significance of **Arafat’s renunciation of terrorism** in a speech at the UN (1988).",
+              "point_text": "Significance: **Arafat’s renunciation of terrorism** in a speech at the UN (1988)",
               "exam_count": 1,
               "years_appeared": [
                 2024
@@ -1290,14 +1212,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of Arafat renouncing terrorism (1988) for attempts to find a solution in the Middle East."
+                  "question_text": "Analyse the significance of Yasser Arafat’s December 1988 renunciation of terrorism and acceptance of two states for peace talks."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2024. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2024. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             },
             {
               "point_index": 2,
-              "point_text": "**Changing superpower policies** in the Middle East: **US involvement in the Gulf War (1991)**, and the **end of the Cold War**.",
+              "point_text": "**Changing superpower policies** in the Middle East: **US involvement in the Gulf War (1991)** & the **end of the Cold War**",
               "exam_count": 1,
               "years_appeared": [
                 2018
@@ -1313,7 +1235,7 @@
               "has_16m": false,
               "high_tariff_gap": false,
               "overdue_status": "high",
-              "overdue_score": 90,
+              "overdue_score": 80,
               "matched_questions": [
                 {
                   "q_id": "cme_2018_q3c",
@@ -1324,14 +1246,14 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the end of the Cold War for attempts to find a solution in the Middle East."
+                  "question_text": "Analyse the significance of the collapse of Soviet power and the end of the Cold War for Middle East peace diplomacy."
                 }
               ],
-              "teacher_note": "🔥 HIGHLY OVERDUE: Last set in 2018. It has been 8 years since students were tested on this topic. Ideal candidate for mocks."
+              "teacher_note": "🔥 HIGHLY OVERDUE: Last assessed in 2018. Strong candidate for classroom mock practice."
             },
             {
               "point_index": 3,
-              "point_text": "**Arafat, Rabin and the Oslo Accords (1993)**; the **setting up of the Palestinian National Authority**; the **Israel-Jordan peace treaty (1994)**; **Oslo II (1995)**.",
+              "point_text": "**Arafat, Rabin & the Oslo Accords (1993)**; the **setting up of the Palestinian National Authority**; the **Israel-Jordan peace treaty (1994)**; **Oslo II (1995)**",
               "exam_count": 3,
               "years_appeared": [
                 2019,
@@ -1361,7 +1283,7 @@
                   "is_specimen": false,
                   "tariff": 4,
                   "type": "consequence",
-                  "question_text": "Explain two consequences of the Oslo Accords (1993)."
+                  "question_text": "Explain two distinct consequences of signing the 1993 Oslo I Accord (Declaration of Principles)."
                 },
                 {
                   "q_id": "cme_2022_q2",
@@ -1372,7 +1294,7 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "narrative",
-                  "question_text": "Write a narrative account analysing the key developments in the negotiations between Israel and the Palestinians in the years 1993-95."
+                  "question_text": "Construct an analytical narrative tracing Israeli-Palestinian peace negotiations from the 1993 Oslo talks to Oslo II in 1995."
                 },
                 {
                   "q_id": "cme_2025_q3c",
@@ -1383,10 +1305,10 @@
                   "is_specimen": false,
                   "tariff": 8,
                   "type": "importance",
-                  "question_text": "Explain the importance of the Israel-Jordan peace treaty (1994) for peace in the Middle East."
+                  "question_text": "Analyse the significance of the October 1994 Israel-Jordan Peace Treaty in advancing regional Middle East peace."
                 }
               ],
-              "teacher_note": "✅ RECENTLY TESTED: Examined in 2025. Less likely to appear as an 8-mark question in the immediate next series, but still vulnerable to short 4-mark consequence questions."
+              "teacher_note": "✅ RECENTLY ASSESSED: Topic appeared in 2025. Less likely as an 8-mark focus immediately, though still relevant for 4-mark consequence retrieval."
             }
           ]
         }
@@ -1395,8 +1317,8 @@
   ],
   "summary_stats": {
     "total_specification_points": 32,
-    "overdue_topics_count": 8,
-    "high_tariff_gaps_count": 5,
-    "overdue_percentage": 25
+    "overdue_topics_count": 10,
+    "high_tariff_gaps_count": 6,
+    "overdue_percentage": 31
   }
 }

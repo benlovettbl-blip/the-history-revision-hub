@@ -192,7 +192,7 @@ async function buildPublisherTextbookHtmlKT3() {
     getBase64Image('images/cme_unifil_lebanon_map.jpg');
   const cardSharon = getBase64Image('units/cme_new/assets/card_sharon.png');
 
-  const intifadaPhoto = getBase64Image('units/cme_new/assets/first_intifada.png');
+  const intifadaPhoto = getBase64Image('images/cme_plate_jabalia_intifada_roadblock_1988.jpg');
   const intifadaEscalation = getBase64Image('units/cme_new/assets/intifada_escalation.svg');
   const madridPhoto = getBase64Image('images/cme_madrid_conference_1991.jpg');
   const cardArafat = getBase64Image('units/cme_new/assets/card_arafat.png');

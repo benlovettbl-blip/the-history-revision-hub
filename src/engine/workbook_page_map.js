@@ -132,6 +132,20 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 11
     }
   },
+  "gcse_cold_war": {
+    "lesson_1": { "page": 2, "endPage": 3, "spread": "Pages 2–3", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 0 },
+    "lesson_2": { "page": 4, "endPage": 5, "spread": "Pages 4–5", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 1 },
+    "lesson_3": { "page": 6, "endPage": 7, "spread": "Pages 6–7", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 2 },
+    "lesson_4": { "page": 10, "endPage": 11, "spread": "Pages 10–11", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 3 },
+    "lesson_5": { "page": 2, "endPage": 3, "spread": "Pages 2–3", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 4 },
+    "lesson_6": { "page": 4, "endPage": 5, "spread": "Pages 4–5", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 5 },
+    "lesson_7": { "page": 6, "endPage": 7, "spread": "Pages 6–7", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 6 },
+    "lesson_8": { "page": 10, "endPage": 11, "spread": "Pages 10–11", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 7 },
+    "lesson_9": { "page": 2, "endPage": 3, "spread": "Pages 2–3", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 8 },
+    "lesson_10": { "page": 4, "endPage": 5, "spread": "Pages 4–5", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 9 },
+    "lesson_11": { "page": 6, "endPage": 7, "spread": "Pages 6–7", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 10 },
+    "lesson_12": { "page": 10, "endPage": 11, "spread": "Pages 10–11", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 11 }
+  },
   "cold_war": {
     "lesson_1": {
       "page": 2,

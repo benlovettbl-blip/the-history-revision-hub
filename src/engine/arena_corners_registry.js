@@ -14,6 +14,7 @@
  */
 
 import { CME_NEW_CORNERS } from './arena_corners/cme_new.js';
+import { GCSE_COLD_WAR_CORNERS } from './arena_corners/gcse_cold_war.js';
 import { THE_SHOAH_CORNERS } from './arena_corners/the_shoah.js';
 import { COLD_WAR_CORNERS } from './arena_corners/cold_war.js';
 import { WEIMAR_NAZI_GERMANY_CORNERS } from './arena_corners/weimar_nazi_germany.js';
@@ -34,6 +35,7 @@ import { KS2_WW2_CORNERS } from './arena_corners/ks2_ww2.js';
 
 export const ARENA_CORNERS_REGISTRY = {
   cme_new: CME_NEW_CORNERS,
+  gcse_cold_war: GCSE_COLD_WAR_CORNERS,
   the_shoah: THE_SHOAH_CORNERS,
   cold_war: COLD_WAR_CORNERS,
   weimar_nazi_germany: WEIMAR_NAZI_GERMANY_CORNERS,

@@ -936,7 +936,7 @@ export const SCHEMES_OF_WORK_DATA = {
         "title": "Pre-War Diversity & Antisemitism",
         "enquiryQuestion": "Who were the Jews of Europe before the rise of Nazism, and what vibrant cultural diversity was destroyed?",
         "disciplinaryFocus": "Humanising the Past & Challenging Monolithic Stereotypes",
-        "sources": "Pre-1933 family portraits from Berlin, Warsaw, and Salonika; Roman Vishniac photographs of Eastern European shtetls",
+        "sources": "Pre-1939 family and community photographs from Białystok, E. Gitlin's Nalewki Street bookstore in Warsaw, Łódź, Berlin, and Salonika",
         "keyFigure": "Emanuel Ringelblum",
         "figureRole": "Historian & Chronicler of the Warsaw Ghetto Oyneg Shabes Archive",
         "vocabulary": [
@@ -1338,7 +1338,7 @@ export const SCHEMES_OF_WORK_DATA = {
       },
       {
         "num": 4,
-        "title": "Vera's Journey & The Kindertransport (1938–1939)",
+        "title": "One Small Suitcase — The Kindertransport (1938–1939)",
         "enquiryQuestion": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?",
         "disciplinaryFocus": "Historical Significance & Primary Testimony",
         "sources": "Harwich Arrival Photo (Dec 1938); Vera Löwyová's (Vera Schaufeld) Doll, Diary & Route Map",

@@ -50,6 +50,7 @@ export const KS3_CANONICAL_UNITS = [
 ];
 export const GCSE_CANONICAL_UNITS = [
   'cme_new',
+  'gcse_cold_war',
   'edexcel_medicine',
   'eee',
   'weimar_nazi_germany',
@@ -5426,7 +5427,7 @@ export function assignQuestionNumbers(lesson, targetUnitId) {
       : null);
 
   let globalQNum = 1;
-  const isGCSE = ['cme_new', 'edexcel_medicine', 'eee', 'weimar_nazi_germany', 'usa'].includes(
+  const isGCSE = ['cme_new', 'gcse_cold_war', 'edexcel_medicine', 'eee', 'weimar_nazi_germany', 'usa'].includes(
     unit,
   );
   const isGreatWar = unit === 'great_war' || unit === 'great_war_part2';
@@ -5844,7 +5845,7 @@ if (typeof window !== 'undefined') {
         <div style="background: #0f172a; color: #ffffff; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #3b82f6;">
           <div style="display: flex; align-items: center; gap: 8px;">
             <i class="fa-solid fa-bookmark" style="color: #60a5fa;"></i>
-            <span style="font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">${badge || 'Official Specification Anchor'}</span>
+            <span style="font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">${badge || 'Specification Topic Anchor'}</span>
           </div>
           <button type="button" onclick="window.closeLessonSpecModal()" style="background: none; border: none; color: #94a3b8; font-size: 1.25rem; cursor: pointer; padding: 0 4px; line-height: 1; transition: color 0.15s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'" title="Close (Esc)">
             <i class="fa-solid fa-xmark"></i>
@@ -5856,7 +5857,7 @@ if (typeof window !== 'undefined') {
           ${lessonTitle ? `<div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.18rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 10px; line-height: 1.35;">${lessonTitle}</div>` : ''}
           <div style="background: #f8fafc; border-left: 4px solid #2563eb; border-radius: 6px; padding: 16px 20px; margin-bottom: 22px; font-size: 1rem; color: #1e293b; line-height: 1.6; box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);">
             <div style="font-size: 0.75rem; font-weight: 800; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Official Syllabus Focus
+              <i class="fa-solid fa-scroll" style="color: #3b82f6;"></i> Specification Topic Focus
             </div>
             &ldquo;${specText}&rdquo;
           </div>

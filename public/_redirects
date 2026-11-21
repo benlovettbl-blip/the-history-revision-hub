@@ -8,6 +8,8 @@
 /eee/*                          /early-elizabethan-england/    301
 /eee                            /early-elizabethan-england/    301
 /elizabethan-england            /early-elizabethan-england/    301
+/edexcel-cold-war               /gcse-cold-war-1941-1991/      301
+/superpower-relations-1941-1991 /gcse-cold-war-1941-1991/      301
 /medicine-through-time          /edexcel-medicine/             301
 /gcse-medicine                  /edexcel-medicine/             301
 /weimar-and-nazi-germany        /weimar-nazi-germany/          301
@@ -45,8 +47,8 @@
 /pdfs/Medicine_Thematic_Study_Master_Knowledge_Retrieval_Companion.pdf              /pdfs/edexcel_medicine_retrieval_companion.pdf 301
 /pdfs/Western_Front_Master_Knowledge_Retrieval_Companion.pdf                        /pdfs/edexcel_medicine_western_front_retrieval_companion.pdf 301
 /pdfs/USA_1954_1975_Master_Knowledge_Retrieval_Companion.pdf                        /pdfs/usa_retrieval_companion.pdf 301
-/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf            /units/eee/eee_master_retrieval_companion.html 302
-/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf              /units/weimar_nazi_germany/weimar_master_retrieval_companion.html 302
+/pdfs/Early_Elizabethan_England_Master_Knowledge_Retrieval_Companion.pdf            /pdfs/eee_retrieval_companion.pdf 301
+/pdfs/Weimar_and_Nazi_Germany_Master_Knowledge_Retrieval_Companion.pdf              /pdfs/weimar_nazi_germany_retrieval_companion.pdf 301
 /pdfs/cme_revision_guide.pdf                                                        /pdfs/cme_new_revision_guide.pdf 301
 /pdfs/cme_mastery_pack_FULL.pdf                                                     /pdfs/cme_new_mastery_pack_FULL.pdf 301
 /pdfs/med_mastery_pack_FULL.pdf                                                     /pdfs/edexcel_medicine_mastery_pack_FULL.pdf 301

@@ -15,6 +15,7 @@
  */
 
 import { CME_NEW_STANDOFFS } from './arena_standoffs/cme_new.js';
+import { GCSE_COLD_WAR_STANDOFFS } from './arena_standoffs/gcse_cold_war.js';
 import { THE_SHOAH_STANDOFFS } from './arena_standoffs/the_shoah.js';
 import { COLD_WAR_STANDOFFS } from './arena_standoffs/cold_war.js';
 import { WEIMAR_NAZI_GERMANY_STANDOFFS } from './arena_standoffs/weimar_nazi_germany.js';
@@ -35,6 +36,7 @@ import { KS2_WW2_STANDOFFS } from './arena_standoffs/ks2_ww2.js';
 
 export const ARENA_STANDOFF_REGISTRY = {
   cme_new: CME_NEW_STANDOFFS,
+  gcse_cold_war: GCSE_COLD_WAR_STANDOFFS,
   the_shoah: THE_SHOAH_STANDOFFS,
   cold_war: COLD_WAR_STANDOFFS,
   weimar_nazi_germany: WEIMAR_NAZI_GERMANY_STANDOFFS,

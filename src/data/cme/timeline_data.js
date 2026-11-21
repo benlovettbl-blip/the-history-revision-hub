@@ -1135,8 +1135,8 @@ export const CME_ERAS = [
           'UNLU Strikes & Boycotts',
           'Rise of Hamas',
         ],
-        image: '/units/cme_new/assets/first_intifada.png',
-        imageUrl: '/units/cme_new/assets/first_intifada.png',
+        image: '/images/cme_plate_jabalia_intifada_roadblock_1988.jpg',
+        imageUrl: '/images/cme_plate_jabalia_intifada_roadblock_1988.jpg',
         caption:
           'Palestinian youths confronting Israeli troops in Gaza after the First Intifada erupted in December 1987.',
         imageCaption:

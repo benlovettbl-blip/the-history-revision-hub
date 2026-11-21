@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Guide 01: The Tripartite Curriculum Model</title>
+  <title>Guide 01: The Curricular Separation-of-Concerns Model</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
@@ -32,6 +32,12 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 2mm 4mm;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .page-container:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
     }
     .header-bar {
       border-bottom: 2.5px solid #0f172a;
@@ -72,14 +78,14 @@
     }
     h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 17pt;
+      font-size: 16.5pt;
       font-weight: 800;
       margin: 0 0 2px 0;
       color: #0f172a;
       line-height: 1.15;
     }
     .subtitle {
-      font-size: 8.5pt;
+      font-size: 8.3pt;
       color: #475569;
       font-style: italic;
       margin-bottom: 6px;
@@ -88,24 +94,24 @@
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       border-left: 4px solid #1e3a8a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      margin-bottom: 10px;
-      font-size: 8.2pt;
-      line-height: 1.4;
+      margin-bottom: 9px;
+      font-size: 8.1pt;
+      line-height: 1.38;
       color: #1e293b;
     }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 9px;
+      margin-bottom: 9px;
     }
     .grid-3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
     .card {
       border: 1px solid #cbd5e1;
@@ -118,9 +124,9 @@
     .card-header {
       padding: 5px 8px;
       font-weight: 800;
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       color: #ffffff;
     }
     .card-header.blue { background: #1e3a8a; }
@@ -128,9 +134,9 @@
     .card-header.emerald { background: #065f46; }
     .card-header.purple { background: #581c87; }
     .card-body {
-      padding: 8px;
-      font-size: 7.6pt;
-      line-height: 1.35;
+      padding: 7px 8px;
+      font-size: 7.5pt;
+      line-height: 1.33;
       color: #334155;
       flex: 1;
     }
@@ -139,13 +145,13 @@
       padding-left: 14px;
     }
     .card-body li {
-      margin-bottom: 3px;
+      margin-bottom: 2.5px;
     }
     .citation {
-      margin-top: 6px;
-      padding-top: 5px;
+      margin-top: 5px;
+      padding-top: 4px;
       border-top: 1px dashed #cbd5e1;
-      font-size: 7pt;
+      font-size: 6.9pt;
       color: #64748b;
     }
     .citation a {
@@ -153,25 +159,25 @@
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
-      margin-top: 2px;
+      margin-top: 1px;
     }
     .section-title {
       font-weight: 800;
-      font-size: 8.8pt;
+      font-size: 8.6pt;
       color: #0f172a;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       border-bottom: 1.5px solid #0f172a;
       padding-bottom: 2px;
-      margin: 8px 0 6px 0;
+      margin: 7px 0 5px 0;
     }
     .highlight-rule {
       background: #f0fdf4;
       border: 1px solid #86efac;
       border-left: 4px solid #16a34a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      font-size: 8pt;
+      font-size: 7.8pt;
       color: #166534;
       line-height: 1.35;
     }
@@ -181,17 +187,17 @@
       padding: 8px 12px;
       border-radius: 4px;
       font-family: monospace;
-      font-size: 7.8pt;
-      line-height: 1.5;
+      font-size: 7.6pt;
+      line-height: 1.48;
     }
     .imposition-diagram {
       background: #f8fafc;
       border: 1.5px solid #0284c7;
       padding: 8px 12px;
       border-radius: 4px;
-      font-size: 7.8pt;
+      font-size: 7.7pt;
       color: #0369a1;
-      line-height: 1.6;
+      line-height: 1.55;
     }
     .footer-bar {
       border-top: 1.5px solid #0f172a;
@@ -217,68 +223,66 @@
               <div class="brand-subtitle">DEPARTMENT PORTAL &bull; STANDARD OPERATING PROCEDURE</div>
             </div>
             <div class="cat-badge">CURRICULUM ARCHITECTURE & SYSTEM DESIGN</div>
-            <h1>Guide 01: The Tripartite Curriculum Model</h1>
-            <div class="subtitle">Architecture & Separation of Concerns: Textbooks, Workbooks & The Digital App</div>
+            <h1>Guide 01: The Curricular Separation-of-Concerns Model</h1>
+            <div class="subtitle">Architecture & 1-to-1 Alignment Across Textbooks, Pupil Workbooks, Retrieval Companions & The Web App</div>
           </div>
 
           
       <div class="intro-box">
-        <strong>Executive Summary:</strong> The History Revision Hub operates on a strict <strong>Tripartite Model</strong> designed to eliminate cognitive friction, prevent question numbering desynchronization, and drastically reduce school reprographics costs. By separating reading material from pupil writing and interactive quizzing, each document fulfills a singular disciplinary purpose.
+        <strong>Executive Summary:</strong> The History Revision Hub separates reading, writing, spaced retrieval, and multimedia enquiry into distinct, synchronized resources. Each lesson shares an identical <strong>5-Stage Chronological Spine (<code>Stage 1</code>–<code>Stage 5</code>)</strong> across screen and print—eliminating split-attention, preventing numbering drift, and cutting reprographics waste.
       </div>
 
       <div class="grid-3">
         <div class="card">
-          <div class="card-header blue">📖 The Textbook (Classroom Set)</div>
+          <div class="card-header blue">📖 Classroom Textbook (Reusable)</div>
           <div class="card-body">
-            <strong>Role:</strong> The permanent, timeless reading anthology.<br><br>
+            <strong>Role:</strong> Durable classroom reading anthology.<br><br>
             <strong>Key Features:</strong>
             <ul>
-              <li>Authoritative 4-act Christine Counsell disciplinary narrative.</li>
-              <li>Two-column layout (50–65 char measure) to prevent eye-sweep fatigue.</li>
-              <li>Left-margin line numbering (every 5 lines) for precise teacher signposting.</li>
-              <li>Archival source plaques with museum shelfmarks and provenance.</li>
-              <li><strong>ZERO task lines, ZERO Do-Now blanks.</strong></li>
-              <li>Reused year after year; never scribbled in or discarded.</li>
+              <li>100% pure disciplinary narrative prose read verbatim from live unit JSON data.</li>
+              <li>Balanced 2-column <code>Lora</code> serif measure at KS3/GCSE (single wide-margin column at KS2).</li>
+              <li>Clean <code>[1.1]</code>–<code>[1.5]</code> block headers with <strong>zero</strong> in-prose bracket pills.</li>
+              <li><strong>Zero</strong> source boxes, <strong>zero</strong> margin glossary strips, and <strong>zero</strong> task lines.</li>
+              <li>Outside back-cover oral/notebook Knowledge Retrieval Quiz (zero answers printed).</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header amber">📝 The Pupil Workbook (Consumable)</div>
+          <div class="card-header amber">📝 Pupil Workbook (Consumable)</div>
           <div class="card-body">
-            <strong>Role:</strong> The 16-page consumable termly writing pack.<br><br>
+            <strong>Role:</strong> Termly saddle-stitched A4 writing pack.<br><br>
             <strong>Key Features:</strong>
             <ul>
-              <li>The <em>only</em> document where pupils write answers.</li>
-              <li>Pre-numbered tasks (Q1, Q2, Q3...) strictly aligned to digital app.</li>
-              <li>Do-Now prior-learning recall grids and vocabulary challenges.</li>
-              <li>Scaffolded exam writing with criteria stems and model answers.</li>
-              <li>Audited to 99% page utilization with 0px overflow.</li>
-              <li>Printed per student each term as a saddle-stitched booklet.</li>
+              <li>Pure <code>#000000</code> monochrome interior for crisp, zero-dither school photocopying.</li>
+              <li><strong>Verso (Left):</strong> 5 full-width stacked Stage Question boxes (<code>&le; 82 chars</code>, 5 ruled lines each).</li>
+              <li><strong>Recto (Right):</strong> Genre-calibrated extended/exam writing (~8mm pitch) with content-free <code>Analytical Connectives:</code> and unassigned <code>Key Terms:</code>.</li>
+              <li><strong>Zero</strong> in-workbook Do Nows and <strong>zero</strong> factual giveaways in stems.</li>
+              <li>Center-Spine Specification Mind-Map Canvas + British Exercise Notes pages.</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header emerald">💻 The Digital App (Interactive Hub)</div>
+          <div class="card-header emerald">💻 Interactive Web App (Digital Hub)</div>
           <div class="card-body">
-            <strong>Role:</strong> The interactive revision and multimedia engine.<br><br>
+            <strong>Role:</strong> Multimedia classroom &amp; home revision engine.<br><br>
             <strong>Key Features:</strong>
             <ul>
-              <li>Self-marking recall quizzes with instant formative feedback.</li>
-              <li>Flashcard decks with morphological etymology.</li>
-              <li>Interactive chronologies, map sliders, and satellite views.</li>
-              <li>Masterpiece Studio: 2.5x Loupe inspection and detective riddles.</li>
-              <li>Audio read-aloud synthesizers for accessible whole-class reading.</li>
+              <li>3-Mode Spaced-Retrieval <strong>Do Now</strong> engine (strictly prior lessons/units).</li>
+              <li>Studio Historian UK audio (<code>0.85x / 1.0x / 1.15x</code>) with sentence/word karaoke tracking &amp; visual-stress overlays.</li>
+              <li>Alternating visual plates + 5 rotated primary sources (<code>A–E</code>) with Hinge Questions.</li>
+              <li>In-place Vocabulary &amp; Key Individual Dossier popovers + 1-Page Visual Story Sheets.</li>
+              <li>Tap-Tile Summary Clozes, Self-Marking Quizzes, Universal Arcade &amp; Exam Practice Zone.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="section-title">Why This Solved the "September Numbering Desynchronization" Crisis</div>
-      <p>In legacy setups, questions were printed in both the textbook and the workbook. Any editorial change shifted question numbering (e.g. Question 3 becoming Question 4), breaking synchronization with printed student packs. Under the Tripartite Model:</p>
+      <div class="section-title">Why Separation of Concerns Prevents Curriculum Drift</div>
+      <p>Alongside companion <strong>Master Knowledge Retrieval Companions ("Quiz Packs")</strong> and <strong>Mastery Exam Packs</strong>, keeping pure reading in the reusable Textbook while housing active writing in the Workbook and interactive scaffolding in the Web App solves two chronic departmental problems:</p>
       <div class="highlight-rule">
-        <strong>The Golden Rule of Indexing:</strong> The Textbook NEVER contains question numbers. Question numbering lives <em>canonically and exclusively</em> within the Pupil Workbook and Digital App. Because the textbook is purely indexed by paragraph references (e.g. <code>[1.1]</code>, <code>[2.2]</code>) and source letters (<code>Source A</code>, <code>Source B</code>), it can never drift out of numerical alignment.
+        <strong>1-to-1 Stage Synchronization Invariant:</strong> Every lesson's 5 narrative blocks, 5 Web App Chronology Spine cards, and 5 Printed Workbook Verso boxes are locked together by automated SHA-1 prose-hash verification (<code>npm run audit:stages</code>). Editing any narrative paragraph automatically flags its paired Stage Question for verification before PDF compilation.
       </div>
     
         </div>

@@ -1,7 +1,7 @@
 {
   "title": "The History Revision Hub — Master Upgrade Roadmap (Historical Truth & KS2/KS3 Priority Edition)",
   "subtitle": "Living Checklist • Auto-Updated & Struck Through After Every Completed Task • Zero Invented Quotes/Facts",
-  "lastUpdated": "20 Nov 2026",
+  "lastUpdated": "21 Nov 2026",
   "modelBudgetGuide": [
     {
       "model": "Gemini 4 Carbon (Medium) — DEFAULT",
@@ -163,11 +163,12 @@
       "tasks": [
         {
           "id": "5.1",
-          "done": false,
+          "done": true,
           "model": "Gemini 4 Carbon (High) + Carbon (Medium)",
           "costTier": "🟠 Parked Until Taught/Sold",
           "title": "[PARKED] Build Separate 12-Lesson Pearson Edexcel GCSE Cold War Unit (gcse_cold_war • 1HI0/P4)",
-          "detail": "Full 1941–91 Option P4 GCSE unit (Tehran–Hungary–Berlin Wall–Cuba–Prague–Détente–Afghanistan–Gorbachev) parked until needed for teaching or commercial sale."
+          "detail": "Full 1941–91 Option P4 GCSE unit (Tehran–Hungary–Berlin Wall–Cuba–Prague–Détente–Afghanistan–Gorbachev) parked until needed for teaching or commercial sale.",
+          "completedAt": "21 Nov 2026"
         },
         {
           "id": "5.2",

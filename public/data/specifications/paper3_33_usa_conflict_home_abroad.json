@@ -3,7 +3,7 @@
   "code": "33",
   "paper": "Paper 3",
   "paperType": "Modern Depth Study",
-  "title": "Pearson Edexcel GCSE (9–1) History Specification",
+  "title": "Hub GCSE History Topic Checklist (Aligned to Edexcel 1HI0)",
   "subtitle": "Option 33: The USA, 1954–75: conflict at home and abroad",
   "shortTitle": "USA: Conflict at Home & Abroad",
   "exam_structure": {
@@ -29,33 +29,33 @@
           "number": 1,
           "title": "1. The position of Black Americans in the early 1950s",
           "points": [
-            "Segregation, discrimination and voting rights in the Southern states.",
-            "The work of civil rights organisations, including the NAACP and CORE."
+            "Segregation, discrimination & voting rights in the Southern states",
+            "Work of civil rights organisations (incl. the NAACP & CORE)"
           ]
         },
         {
           "number": 2,
           "title": "2. Developments in education",
           "points": [
-            "Reasons for, key features and significance of the Brown v. Topeka case (1954).",
-            "Reasons for, key features and significance of the events at Little Rock High School (1957)."
+            "Causes, features & impact: Brown v. Topeka case (1954)",
+            "Causes, features & impact: events at Little Rock High School (1957)"
           ]
         },
         {
           "number": 3,
           "title": "3. The Montgomery Bus Boycott and its impact, 1955–60",
           "points": [
-            "Causes and events of the Montgomery Bus Boycott. The significance of Rosa Parks.",
-            "Reasons for the success and importance of the boycott. The Supreme Court ruling. The Civil Rights Act (1957).",
-            "The significance of the leadership of Martin Luther King. The setting up of the SCLC."
+            "Causes & events of the Montgomery Bus Boycott; Rosa Parks",
+            "Success & impact of boycott; The Supreme Court ruling; The Civil Rights Act (1957)",
+            "Leadership & impact of Martin Luther King; founding the SCLC"
           ]
         },
         {
           "number": 4,
           "title": "4. Opposition to the civil rights movement",
           "points": [
-            "The Ku Klux Klan and violence, including the murder of Emmet Till in 1955.",
-            "Opposition to desegregation in the South, including the ‘Dixiecrats’ and the setting up of White Citizens’ Councils."
+            "The Ku Klux Klan & violence (incl. the murder of Emmet Till in 1955)",
+            "Opposition to desegregation in the South (incl. the ‘Dixiecrats’ & founding White Citizens’ Councils)"
           ]
         }
       ]
@@ -69,36 +69,36 @@
           "number": 1,
           "title": "1. Developments, 1960–62",
           "points": [
-            "The significance of Greensboro and the sit-in movement.",
-            "Reasons for, key features and significance of the Freedom Riders, including Ku Klux Klan violence and the Anniston bomb (1961).",
-            "The James Meredith case (1962)."
+            "Significance: Greensboro & the sit-in movement",
+            "Causes, features & impact: Freedom Riders (incl. Ku Klux Klan violence & the Anniston bomb (1961)",
+            "The James Meredith case (1962)"
           ]
         },
         {
           "number": 2,
           "title": "2. Peaceful protests and their impact, 1963–65",
           "points": [
-            "King and the peace marches of 1963 in Birmingham and Washington.",
-            "Freedom Summer and the Mississippi murders.",
-            "The impact of peaceful protest and the roles of Presidents Kennedy and Johnson in the passage of the Civil Rights Act (1964).   Selma and the Voting Rights Act (1965)."
+            "King & the peace marches of 1963 in Birmingham & Washington",
+            "Freedom Summer & the Mississippi murders",
+            "Impact of peaceful protest & the roles of Presidents Kennedy & Johnson passing the Civil Rights Act (1964); Selma & the Voting Rights Act (1965)"
           ]
         },
         {
           "number": 3,
           "title": "3. Malcolm X and Black Power, 1963–70",
           "points": [
-            "Malcolm X, his beliefs, methods and involvement with the Black Muslims. His later change of attitude and assassination.",
-            "Reasons for the emergence of Black Power. The significance of Stokely Carmichael and the 1968 Mexico Olympics.",
-            "The methods and achievements of the Black Panther movement."
+            "Malcolm X, his beliefs, methods & involvement with the Black Muslims; His later change of attitude & assassination",
+            "Emergence of Black Power; Stokely Carmichael & the 1968 Mexico Olympics",
+            "Methods & achievements of the Black Panther movement"
           ]
         },
         {
           "number": 4,
           "title": "4. The civil rights movement, 1965–75",
           "points": [
-            "The riots of 1965–67 and the Kerner Report (1968).",
-            "King’s campaign in the North. The assassination of Martin Luther King and its impact.",
-            "The extent of progress in civil rights by 1975."
+            "Riots of 1965–67 & the Kerner Report (1968)",
+            "King’s campaign in the North; assassination of Martin Luther King & its impact",
+            "Scale of progress in civil rights by 1975"
           ]
         }
       ]
@@ -112,33 +112,33 @@
           "number": 1,
           "title": "1. Reasons for US involvement in the conflict in Vietnam, 1954–63",
           "points": [
-            "Reasons for greater US involvement under Eisenhower, including the domino theory and weaknesses of the Diem government.",
-            "Greater involvement under Kennedy, including the overthrow of Diem and the Strategic Hamlet Program."
+            "Expanded US involvement under Eisenhower (incl. the domino theory & weaknesses of the Diem government)",
+            "Greater involvement under Kennedy (incl. the overthrow of Diem & the Strategic Hamlet Program)"
           ]
         },
         {
           "number": 2,
           "title": "2. Escalation of the conflict under Johnson",
           "points": [
-            "Reasons for the escalation of the conflict and increased US involvement in Vietnam, including the increasing threat of the Vietcong and the Gulf of Tonkin incident (1964)."
+            "Escalation of conflict & increased US involvement in Vietnam (incl. the increasing threat of the Vietcong & the Gulf of Tonkin incident (1964)"
           ]
         },
         {
           "number": 3,
           "title": "3. The nature of the conflict in Vietnam, 1964–68",
           "points": [
-            "The guerrilla tactics used by the Vietcong.",
-            "The methods used by the USA, including Search and Destroy, Operation Rolling Thunder and chemical weapons.",
-            "The key features and significance of the Tet Offensive, 1968."
+            "Guerrilla tactics used by the Vietcong",
+            "Methods used by the USA (incl. Search & Destroy, Operation Rolling Thunder & chemical weapons)",
+            "Features & impact: Tet Offensive, 1968"
           ]
         },
         {
           "number": 4,
           "title": "4. Changes under Nixon, 1969–73",
           "points": [
-            "The key features of Vietnamisation. Reasons for its failure.",
-            "The Nixon Doctrine and the withdrawal of US troops.",
-            "Attacks on Cambodia (1970)  and Laos (1971), and the bombing of North Vietnam (1972)."
+            "Key features: Vietnamisation; Causes of its failure",
+            "The Nixon Doctrine & the withdrawal of US troops",
+            "Attacks on Cambodia (1970) & Laos (1971) & the bombing of North Vietnam (1972)"
           ]
         }
       ]
@@ -152,35 +152,35 @@
           "number": 1,
           "title": "1. Opposition to the war",
           "points": [
-            "Reasons for the growth of opposition, including the student movement, TV and media coverage of the war and the draft system.",
-            "Public reaction to the My Lai Massacre (1968). The trial of Lt. Calley.",
-            "The Kent State University shootings (1970)."
+            "Growth of opposition (incl. the student movement, TV & media coverage of the war & the draft system)",
+            "Public reaction to the My Lai Massacre (1968); trial of Lt. Calley",
+            "The Kent State University shootings (1970)"
           ]
         },
         {
           "number": 2,
           "title": "2. Support for the war",
           "points": [
-            "Reasons for support for the war, including the fear of communism.",
-            "The ‘hard hats’ and the ‘silent majority’."
+            "Causes of support for the war (incl. the fear of communism)",
+            "The ‘hard hats’ & the ‘silent majority’"
           ]
         },
         {
           "number": 3,
           "title": "3. The peace process and end of the war",
           "points": [
-            "Reasons for, and key features of, the peace negotiations (1972–73).",
-            "The significance of the Paris Peace Agreement (1973).",
-            "The economic and human costs of the war for the USA."
+            "Causes & key features: peace negotiations (1972–73)",
+            "Significance: Paris Peace Agreement (1973)",
+            "Economic & human costs of the war for the USA"
           ]
         },
         {
           "number": 4,
           "title": "4. Reasons for the failure of the USA in Vietnam",
           "points": [
-            "The strengths of North Vietnam, including the significance of Russian and Chinese support, Vietcong tactics and the Ho Chi Minh Trail.",
-            "The weaknesses of the US armed forces. The failure of US tactics.",
-            "The impact of opposition to the war in the USA."
+            "Strengths of North Vietnam (incl. Russian & Chinese support, Vietcong tactics & the Ho Chi Minh Trail)",
+            "Weaknesses of the US armed forces; failure of US tactics",
+            "Impact of opposition to the war in the USA"
           ]
         }
       ]

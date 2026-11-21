@@ -47,7 +47,7 @@ export const KS2_WORKSHEETS_MAP = {
   lesson_4: {
     num: 4,
     id: 'lesson_4',
-    title: "Enquiry 4: Vera's Journey & The Kindertransport (1938–1939)",
+    title: "Enquiry 4: One Small Suitcase — The Kindertransport (1938–1939)",
     subtitle: '10,000 Unaccompanied Refugee Children Rescued Across Europe to Britain',
     enquiryQuestion:
       'How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?',
@@ -236,7 +236,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
   },
 
   lesson_3: {
-    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Pre-War Jewish Life & Step-by-Step Loss of Rights, 1933–1938). Aligned with Holocaust Educational Trust primary guidance (het.org.uk).`,
+    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Pre-War Jewish Life & Step-by-Step Loss of Rights, 1933–1938). Grounded in trauma-informed primary history safeguarding principles.`,
     safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 3):</strong> Always begin with rich pre-war Jewish family life, hobbies, and individuality before introducing Nazi persecution. <strong>Never</strong> use classroom roleplay, simulations, or "imagine you are banned" segregation games, and <strong>never</strong> display graphic atrocity imagery to KS2 pupils. Check pastorally in advance for pupils with refugee backgrounds or family experiences of discrimination.`,
     timeline: [
       {
@@ -264,7 +264,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
           'Pupils write their Task 5 Mission Challenge paragraph on why learning about pre-war family life matters and complete the 5-question quiz.',
       },
     ],
-    subjectPrimer: `Before Adolf Hitler and the Nazi Party took power in Germany in January 1933, Jewish families across Germany, Austria, and Czechoslovakia lived ordinary, settled lives as neighbours, doctors, shopkeepers, musicians, teachers, and schoolchildren. Children played in local football teams, swam at public lidos, rode bicycles, and studied alongside non-Jewish friends. Between 1933 and 1938, the Nazi government passed hundreds of unfair anti-Jewish laws step by step: putting up street and shop exclusion signs (such as <em>"Juden werden hier nicht bedient"</em> — "Jews are not served here"), excluding Jewish people from sports clubs and public parks, stripping away German citizenship under the 1935 Nuremberg Laws, attacking synagogues and Jewish shops on 9–10 November 1938 (Kristallnacht), and banning Jewish children from state schools days later.<br><br><strong>Teacher CPD &amp; Primary Guidance:</strong> For specialist primary guidance on teaching pre-war Jewish life safely and accurately, visit the Holocaust Educational Trust at <a href="https://www.het.org.uk" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 700; text-decoration: underline;">het.org.uk</a>.`,
+    subjectPrimer: `Before Adolf Hitler and the Nazi Party took power in Germany in January 1933, Jewish families across Germany, Austria, and Czechoslovakia lived ordinary, settled lives as neighbours, doctors, shopkeepers, musicians, teachers, and schoolchildren. Children played in local football teams, swam at public lidos, rode bicycles, and studied alongside non-Jewish friends. Between 1933 and 1938, the Nazi government passed hundreds of unfair anti-Jewish laws step by step: putting up street and shop exclusion signs (such as <em>"Juden werden hier nicht bedient"</em> — "Jews are not served here"), excluding Jewish people from sports clubs and public parks, stripping away German citizenship under the 1935 Nuremberg Laws, attacking synagogues and Jewish shops on 9–10 November 1938 (Kristallnacht), and banning Jewish children from state schools days later.`,
     misconceptions: [
       {
         misconception: `Pupils sometimes imagine Jewish families lived completely separately from everyone else before 1933.`,
@@ -287,7 +287,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
   },
 
   lesson_4: {
-    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Vera's Journey & The Kindertransport, 1938–1939). Aligned with Holocaust Educational Trust primary guidance (het.org.uk).`,
+    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: One Small Suitcase — The Kindertransport, 1938–1939). Grounded in trauma-informed primary history safeguarding principles.`,
     safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 4):</strong> Frame the Kindertransport honestly—celebrating rescue while acknowledging painful family separation without graphic detail. Avoid asking pupils "What would you pack if you never saw your parents again?"; instead ask historically grounded questions ("What did nine-year-old Vera pack in her suitcase and why?"). Be especially mindful of looked-after, adopted, refugee, or bereaved pupils.`,
     timeline: [
       {
@@ -306,7 +306,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
         time: '25–50 mins',
         phase: 'Worksheet Application',
         activity:
-          "Pupils complete Task 1 (Identity Tag Detective), Task 2 (Vera's Journey Timeline), Task 3 (One Small Suitcase Packing Choice), and Task 4 (Thinking Heads).",
+          "Pupils complete Task 1 (Identity Tag Detective), Task 2 (Kindertransport Rescue Timeline), Task 3 (One Small Suitcase Packing Choice), and Task 4 (Thinking Heads).",
       },
       {
         time: '50–60 mins',
@@ -315,7 +315,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
           'Pupils write their Task 5 Mission Challenge paragraph explaining why the Kindertransport brought both safety and heartbreak, then complete the 5-question quiz.',
       },
     ],
-    subjectPrimer: `Just days after Kristallnacht in November 1938, refugee charities appealed to Prime Minister Neville Chamberlain and the British Parliament. Britain agreed to waive normal visa delays for unaccompanied refugee children aged under seventeen, provided private sponsors guaranteed £50 per child (worth over £3,000 today). Parents were not allowed to travel with them. Between December 1938 and the outbreak of war in September 1939, nearly 10,000 mostly Jewish children travelled from Germany, Austria, Czechoslovakia, and Poland by train across the Dutch border at Bentheim, took the ferry from Hook of Holland to Harwich in Essex, and rode steam trains into London Liverpool Street Station. Nine-year-old Vera Löwyová (later Vera Schaufeld) left Prague in May 1939 carrying one small suitcase, an English porcelain doll, and a little autograph diary signed by her parents.<br><br><strong>Teacher CPD &amp; Primary Guidance:</strong> Visit <a href="https://www.het.org.uk" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 700; text-decoration: underline;">het.org.uk</a> for Vera Schaufeld's primary classroom testimony resources.`,
+    subjectPrimer: `Just days after Kristallnacht in November 1938, refugee charities appealed to Prime Minister Neville Chamberlain and the British Parliament. Britain agreed to waive normal visa delays for unaccompanied refugee children aged under seventeen, provided private sponsors guaranteed £50 per child (worth over £3,000 today). Parents were not allowed to travel with them. Between December 1938 and the outbreak of war in September 1939, nearly 10,000 mostly Jewish children travelled from Germany, Austria, Czechoslovakia, and Poland by train across the Dutch border at Bentheim, took the ferry from Hook of Holland to Harwich in Essex, and rode steam trains into London Liverpool Street Station. Nine-year-old Vera Löwyová (later Vera Schaufeld) left Prague in May 1939 carrying one small suitcase, an English porcelain doll, and a little autograph diary signed by her parents.`,
     misconceptions: [
       {
         misconception: `Pupils confuse British evacuation (Operation Pied Piper) with the Kindertransport.`,
@@ -338,7 +338,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
   },
 
   lesson_5: {
-    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Rescuers & Upstanders, 1938–1939). Aligned with Holocaust Educational Trust primary guidance (het.org.uk).`,
+    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Rescuers & Upstanders, 1938–1939). Grounded in trauma-informed primary history safeguarding principles.`,
     safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 5):</strong> Highlight practical moral courage and teamwork (Nicholas Winton, Babette Winton, Doreen Warriner, Trevor Chadwick, and Jewish parents) without turning history into a simplistic fairy tale—handle the cancelled 1 September 1939 train gently and factually without graphic speculation.`,
     timeline: [
       {
@@ -684,7 +684,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
     hingeQuestion: `Why did caring staff at Calgarth Estate let the children keep bread under their pillows instead of telling them off?`,
     hingeGuidance: `Look for empathetic understanding: staff recognised that hiding bread came from years of starvation and fear, so showing patience and plenty of food each morning helped the children trust adults and feel safe again.`,
     answers: {
-      task1: `1) Evidence Behind Tom Palmer's Novel: Tom Palmer researched real archive records at the Lake District Holocaust Project and listened to real survivors like Arek Hersh and Ben Helfgott so his story reflects real experiences accurately. 2) Hiding Bread Under Pillows: Years of starvation left children afraid food might disappear overnight; gentle staff reassured them they would never go hungry again.`,
+      task1: `1) Clues in Source B (IWM CH 15903 Arrival Photograph): Older boys smile down from the doorway of the converted RAF Short Stirling holding their small suitcase while a gentle British helper lifts the youngest child safely down the ladder onto British soil, showing relief, protection, and a fresh start (later shared with schools and authors by The '45 Aid Society). 2) Bread Under Pillows: Years of starvation in Nazi camps made children fear food would vanish overnight; gentle Calgarth staff never scolded them so they could rebuild trust at their own pace.`,
       task2: `Step 1: Camps are liberated in 1945 and Leonard Montefiore's charity arranges homes in Britain for child survivors. Step 2: August 1945 — 10 RAF Short Stirling bombers fly 300 children from Prague to Carlisle. Step 3: Children stay at the Calgarth Estate by Lake Windermere with clean beds, English classes, art, swimming, and bicycles. Step 4: Survivors stay lifelong friends and form the '45 Aid Society.`,
       task3: `1) Healing at Calgarth Estate: Peaceful mountains and lake water, three hot meals a day, football matches, painting with Marie Paneth, and freedom on bicycles. 2) Giving Back: Many survivors built remarkable lives in Britain—for example, Ben Helfgott captained Britain's Olympic weightlifting team and survivors visited schools for decades to teach kindness and tolerance.`,
       task4: `Perspective 1 (Young Survivor Arriving at Windermere): Amazed to sleep in white sheets with no guards outside, quietly tucking bread under the pillow at first before feeling free riding a bicycle beside the lake. Perspective 2 (Calgarth Care Worker / Marie Paneth): Listening patiently without rushing the children, using art, sport, and kindness to help them smile and trust again.`,

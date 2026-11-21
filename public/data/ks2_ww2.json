@@ -2294,7 +2294,7 @@
       "subtitle": "Ordinary Childhoods Across Europe and How Unfair Laws Took Rights Away Step by Step",
       "enquiryQuestion": "What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?",
       "teacher_notes": {
-        "primer": "Anchored directly in the Holocaust Educational Trust (HET) Primary Guidelines. Pupils discover that Jewish families lived rich, varied, and integrated lives across Europe for centuries—as doctors, teachers, athletes, and neighbours. The lesson then traces how anti-Jewish laws between 1933 and 1939 systematically stripped away rights step-by-step: banning sports, pets, radios, public parks, and finally barring children from going to school. In strict accordance with HET pedagogy, there is zero atrocity imagery, focusing instead on human dignity and civil rights.",
+        "primer": "Grounded in age-appropriate primary history safeguarding principles. Pupils discover that Jewish families lived rich, varied, and integrated lives across Europe for centuries—as doctors, teachers, athletes, and neighbours. The lesson then traces how anti-Jewish laws between 1933 and 1939 systematically stripped away rights step-by-step: banning sports, pets, radios, public parks, and finally barring children from going to school. In strict accordance with trauma-informed primary safeguarding practice, there is zero atrocity imagery, focusing instead on human dignity and civil rights.",
         "objectives": [
           {
             "objective": "Discover the richness and diversity of European Jewish family life, hobbies, and sports before 1939.",
@@ -2313,7 +2313,7 @@
           }
         ],
         "source_context": {
-          "Source A": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
+          "Source A": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
           "Source B": "In German tradition, children starting primary school are given a 'Schultüte' (a giant colourful cone filled with sweets and pencils) by their parents to celebrate their first day. These Jewish children shared the exact same cultural customs, language, and school pride as their non-Jewish neighbours. **Hinge Question:** How does this photograph show that Jewish children were completely part of German cultural tradition before Nazi laws segregated them?",
           "Source C": "Between 1933 and 1938, anti-Jewish exclusion signs like this one (\"Juden werden hier nicht bedient\" — \"Jews are not served here\") spread across bakeries, cafés, shops, public parks, and swimming pools in Nazi Germany. Ordinary Jewish families and children were publicly turned away in the neighbourhoods where they had lived happily for generations. **Hinge Question:** How did everyday exclusion signs in local shops and parks make Jewish children feel isolated in their own hometowns?",
           "Source D": "Persecution did not happen overnight; it was introduced gradually through hundreds of specific laws: first limiting Jewish pupil numbers to 1.5% in 1933, then banning them from school swimming pools and playgrounds, before the total expulsion in 1938. **Hinge Question:** Why did the Nazi regime strip away rights gradually in small steps rather than all at once in 1933?",
@@ -2474,9 +2474,9 @@
           "act": 1,
           "title": "Ordinary Childhoods Across Europe Before 1933",
           "text": "<span class=\"para-ref\">[3.1]</span> Before the Second World War, over **9 million** Jewish people lived across Europe. In Germany, Jewish families made up less than one percent of the population. Many had lived there as proud citizens for centuries. They worked as shopkeepers, doctors, teachers, musicians, and factory workers.<br><br><span class=\"para-ref\">[3.2]</span> Jewish children enjoyed the same everyday childhoods as their classmates. They played in local **football teams**, rode bicycles, joined scout groups, and went on family holidays. On their first day of school, six-year-olds proudly carried a **Schultüte**. This tall, brightly decorated cardboard cone was filled with sweets, fruit, and new pencils.",
-          "image": "/units/ks2_ww2/assets/prewar_jewish_family_portrait_1938.jpg",
-          "image_alt": "German Jewish primary schoolgirls holding decorated Schultüte cones on their first day of school in Berlin in the 1930s",
-          "caption": "A pre-war Jewish extended family studio portrait with parents, grandparents, and cousins, showing warm everyday family life before Nazi persecution.",
+          "image": "/units/ks2_ww2/assets/kracowski_family_bialystok_1935.jpg",
+          "image_alt": "Three generations of the Jewish Kracowski family gathered outdoors in Białystok, Poland, September 1935",
+          "caption": "Three generations of Dr Samuel and Esther Kracowski’s Jewish family gathered outdoors in Białystok, Poland (September 1935, Wikimedia Commons CC0 Public Domain), showing warm everyday family life before the war.",
           "isReversed": false,
           "sources": [
             {
@@ -2484,26 +2484,20 @@
               "letter": "A",
               "source_letter": "A",
               "type": "visual",
-              "src": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
-              "image": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
-              "title": "Source A: Jewish Youth Football Team in Pre-War Germany (c. 1935)",
-              "caption": "Eleven boys from a Jewish youth football team in Germany posing proudly in matching striped team shirts and shorts in the mid-1930s.",
-              "author": "Family Photographic Archive",
-              "date": "1930s",
-              "context": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
-              "hinge_question": "Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
-              "question_badge": "ORDINARY CHILDHOOD BEFORE WAR",
-              "question": "What does Source A show about the everyday hobbies and childhood of Jewish boys before the war?",
-              "model_answer": "Source A shows smiling boys wearing striped football kits just like any school team today, proving they enjoyed ordinary friendships and sport before unfair laws excluded them.",
-              "provenance_clues": {
-                "author": "Family member taking holiday snaps.",
-                "audience": "Private family photo album.",
-                "motive": "To remember the happy family childhoods that children enjoyed before the war began.",
-                "hinge_question": "Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?"
-              },
+              "src": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
+              "image": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
+              "title": "Source A: Players of Jewish Sports Club SC Hakoah Vienna (1925)",
+              "caption": "Footballers and coaches of SC Hakoah Vienna—one of Europe’s most famous pre-war Jewish sports clubs—posing proudly before a packed stadium with their Star of David club flag (1925, Public Domain).",
+              "author": "Austrian Sports Press Photographer (Wikimedia Commons, Public Domain)",
+              "date": "1925",
+              "context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
+              "hinge_question": "Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
+              "question_badge": "PRE-WAR JEWISH COMMUNITY LIFE",
+              "question": "What does Source A show about Jewish sporting pride, teamwork, and everyday community life in Europe before 1933?",
+              "model_answer": "Source A shows Jewish athletes competing proudly before packed stadium crowds, proving that Jewish communities enjoyed active, confident, and ordinary sporting and social lives across Europe before Nazi persecution began.",
               "teacher_notes": {
-                "hinge_question": "Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
-                "source_context": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
+                "hinge_question": "Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
+                "source_context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
                 "provenance_breakdown": {
                   "author": "Family member taking holiday snaps.",
                   "audience": "Private family photo album.",
@@ -2511,15 +2505,15 @@
                 }
               },
               "utility_enquiry": {
-                "question_badge": "ORDINARY CHILDHOOD BEFORE WAR",
-                "model_answer": "Source A shows smiling boys wearing striped football kits just like any school team today, proving they enjoyed ordinary friendships and sport before unfair laws excluded them.",
+                "question_badge": "PRE-WAR JEWISH COMMUNITY LIFE",
+                "model_answer": "Source A shows Jewish athletes competing proudly before packed stadium crowds, proving that Jewish communities enjoyed active, confident, and ordinary sporting and social lives across Europe before Nazi persecution began.",
                 "provenance_clues": {
                   "author": "Family member taking holiday snaps.",
                   "audience": "Private family photo album.",
                   "motive": "To remember the happy family childhoods that children enjoyed before the war began."
                 }
               },
-              "source_context": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?"
+              "source_context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?"
             }
           ],
           "content": "<span class=\"para-ref\">[3.1]</span> Before the Second World War, over **9 million** Jewish people lived across Europe. In Germany, Jewish families made up less than one percent of the population. Many had lived there as proud citizens for centuries. They worked as shopkeepers, doctors, teachers, musicians, and factory workers.<br><br><span class=\"para-ref\">[3.2]</span> Jewish children enjoyed the same everyday childhoods as their classmates. They played in local **football teams**, rode bicycles, joined scout groups, and went on family holidays. On their first day of school, six-year-olds proudly carried a **Schultüte**. This tall, brightly decorated cardboard cone was filled with sweets, fruit, and new pencils."
@@ -3023,26 +3017,20 @@
           "letter": "A",
           "source_letter": "A",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
-          "image": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
-          "title": "Source A: Jewish Youth Football Team in Pre-War Germany (c. 1935)",
-          "caption": "Eleven boys from a Jewish youth football team in Germany posing proudly in matching striped team shirts and shorts in the mid-1930s.",
-          "author": "Family Photographic Archive",
-          "date": "1930s",
-          "context": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
-          "hinge_question": "Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
-          "question_badge": "ORDINARY CHILDHOOD BEFORE WAR",
-          "question": "What does Source A show about the everyday hobbies and childhood of Jewish boys before the war?",
-          "model_answer": "Source A shows smiling boys wearing striped football kits just like any school team today, proving they enjoyed ordinary friendships and sport before unfair laws excluded them.",
-          "provenance_clues": {
-            "author": "Family member taking holiday snaps.",
-            "audience": "Private family photo album.",
-            "motive": "To remember the happy family childhoods that children enjoyed before the war began.",
-            "hinge_question": "Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?"
-          },
+          "src": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
+          "image": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
+          "title": "Source A: Players of Jewish Sports Club SC Hakoah Vienna (1925)",
+          "caption": "Footballers and coaches of SC Hakoah Vienna—one of Europe’s most famous pre-war Jewish sports clubs—posing proudly before a packed stadium with their Star of David club flag (1925, Public Domain).",
+          "author": "Austrian Sports Press Photographer (Wikimedia Commons, Public Domain)",
+          "date": "1925",
+          "context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
+          "hinge_question": "Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
+          "question_badge": "PRE-WAR JEWISH COMMUNITY LIFE",
+          "question": "What does Source A show about Jewish sporting pride, teamwork, and everyday community life in Europe before 1933?",
+          "model_answer": "Source A shows Jewish athletes competing proudly before packed stadium crowds, proving that Jewish communities enjoyed active, confident, and ordinary sporting and social lives across Europe before Nazi persecution began.",
           "teacher_notes": {
-            "hinge_question": "Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
-            "source_context": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?",
+            "hinge_question": "Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
+            "source_context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
             "provenance_breakdown": {
               "author": "Family member taking holiday snaps.",
               "audience": "Private family photo album.",
@@ -3050,15 +3038,15 @@
             }
           },
           "utility_enquiry": {
-            "question_badge": "ORDINARY CHILDHOOD BEFORE WAR",
-            "model_answer": "Source A shows smiling boys wearing striped football kits just like any school team today, proving they enjoyed ordinary friendships and sport before unfair laws excluded them.",
+            "question_badge": "PRE-WAR JEWISH COMMUNITY LIFE",
+            "model_answer": "Source A shows Jewish athletes competing proudly before packed stadium crowds, proving that Jewish communities enjoyed active, confident, and ordinary sporting and social lives across Europe before Nazi persecution began.",
             "provenance_clues": {
               "author": "Family member taking holiday snaps.",
               "audience": "Private family photo album.",
               "motive": "To remember the happy family childhoods that children enjoyed before the war began."
             }
           },
-          "source_context": "Before the 1930s, Jewish families lived fully integrated lives across Germany and Austria as proud citizens, doctors, teachers, shopkeepers, and soldiers who had fought for Germany in the First World War. Children attended regular schools and enjoyed sports, music, and family holidays. **Hinge Question:** Why is it vital to learn about the joyful, normal lives of Jewish families before the war rather than seeing them only as victims of the Holocaust?"
+          "source_context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?"
         },
         {
           "id": "ks2_ww2_l3_src_b",
@@ -3151,7 +3139,7 @@
           "type": "written",
           "title": "Source D: Timeline of Anti-Jewish Laws & Restrictions in Nazi Germany (1933–1938)",
           "caption": "Historical archive timeline charting how over 400 Nazi decrees stripped Jewish families and children of their rights step by step, ending with the November 1938 ban from state schools.",
-          "author": "Holocaust Educational Trust Archive",
+          "author": "Historical Legal Chronology (1933–1938)",
           "date": "Historical Archive Record",
           "context": "Persecution did not happen overnight; it was introduced gradually through hundreds of specific laws: first limiting Jewish pupil numbers to 1.5% in 1933, then banning them from school swimming pools and playgrounds, before the total expulsion in 1938. **Hinge Question:** Why did the Nazi regime strip away rights gradually in small steps rather than all at once in 1933?",
           "hinge_question": "Why did the Nazi regime strip away rights gradually in small steps rather than all at once in 1933?",
@@ -3312,7 +3300,7 @@
         "topicLabel": "Enquiry 03: Pre-War Life & Rights Lost (1933–1938)",
         "title": "How Were Everyday Rights Taken Away from Jewish Children After 1933?",
         "spokenTitle": "How were everyday rights taken away from Jewish children after 1933?",
-        "thumbUrl": "/units/ks2_ww2/assets/prewar_jewish_family_portrait_1938.jpg",
+        "thumbUrl": "/units/ks2_ww2/assets/kracowski_family_bialystok_1935.jpg",
         "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
         "bridges": [
           "1933 Nazi Laws",
@@ -3324,7 +3312,7 @@
             "badge": "Stage 1",
             "heading": "Happy Childhoods Before 1933",
             "date": "Before 1933",
-            "img": "/units/ks2_ww2/assets/prewar_jewish_family_portrait_1938.jpg",
+            "img": "/units/ks2_ww2/assets/kracowski_family_bialystok_1935.jpg",
             "mode": "landscape",
             "pos": "center 30%",
             "stat": "Over 9 Million Jewish Citizens Across Europe",
@@ -3364,7 +3352,7 @@
             "isOutcome": true,
             "heading": "Parents Search for Safe Refuge",
             "date": "Late 1938",
-            "img": "/units/ks2_ww2/assets/prewar_children_holiday.jpg",
+            "img": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "Loving Families Seek Foreign Rescue Visas",
@@ -3397,11 +3385,11 @@
     {
       "id": "lesson_4",
       "skill": "Historical Empathy, Evidence & Human Dignity",
-      "title": "Enquiry 4: Vera's Journey & The Kindertransport (1938–1939)",
+      "title": "Enquiry 4: One Small Suitcase — The Kindertransport (1938–1939)",
       "subtitle": "One Small Suitcase, A Porcelain Doll, and 10,000 Refugee Children Welcomed to Britain",
       "enquiryQuestion": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?",
       "teacher_notes": {
-        "primer": "Directly grounded in the Holocaust Educational Trust (HET) Primary Guidelines. Focuses on the Kindertransport rescue mission (1938–1939) that brought nearly 10,000 Jewish and refugee children from Nazi Germany, Austria, and Czechoslovakia to Britain. Pupils follow the personal journey of 9-year-old Vera Schaufeld leaving Prague, examining parental love, the sacrifice of sending children away alone, and arrival at Liverpool Street Station with numbered neck tags.",
+        "primer": "Grounded in age-appropriate primary history safeguarding principles. Focuses on the Kindertransport rescue mission (1938–1939) that brought nearly 10,000 Jewish and refugee children from Nazi Germany, Austria, and Czechoslovakia to Britain. Pupils follow the personal journey of 9-year-old Vera Schaufeld leaving Prague, examining parental love, the sacrifice of sending children away alone, and arrival at Liverpool Street Station with numbered neck tags.",
         "objectives": [
           {
             "objective": "Understand what the Kindertransport was and why parents were forced to make the agonizing decision to send their children alone.",
@@ -3421,10 +3409,10 @@
         ],
         "source_context": {
           "Source A": "Following the violent Kristallnacht pogroms in Nazi Germany in November 1938, the British Parliament agreed to allow 10,000 unaccompanied refugee children under seventeen to enter Britain, provided private charities guaranteed £50 per child. **Hinge Question:** Why did the British government agree to accept refugee children on the Kindertransport, but refuse to admit their adult parents?",
-          "Source B": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-          "Source C": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
+          "Source B": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+          "Source C": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
           "Source D": "While most Kindertransport journeys took place on trains and ferries, Nicholas Winton and Barbican Mission volunteers chartered several transport planes from Prague Airport to fly vulnerable children directly to Croydon Airport in London before trains became too dangerous. **Hinge Question:** Why was air evacuation rarely used compared to train transport during the Kindertransport?",
-          "Source E": "Because Kindertransport children were allowed only one small suitcase and no valuables, tiny personal keepsakes became priceless. Before nine-year-old Vera Löwyová left her hometown of Klatovy near Prague in May 1939, a kind Christian family friend gave her this miniature silver-covered prayer book and red rosary as a token of love and protection, alongside a hand-painted Czech wooden heart marked 'z Klatov' ('from Klatovy'). Vera treasured both items throughout her adult life in England. **Hinge Question:** Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?"
+          "Source E": "Sculptor Frank Meisler escaped Danzig on a Kindertransport train to Liverpool Street in August 1939 at age fourteen and never saw his parents again. In his bronze memorials in Berlin, Prague, and London, he sculpted the exact details Kindertransport survivors remembered best: one small suitcase, a numbered card on string, and a cherished doll or keepsake from home. **Hinge Question:** Why did Kindertransport survivor Frank Meisler choose to sculpt a child’s doll, a numbered neck tag, and a single suitcase to tell this story to future generations?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -3444,7 +3432,7 @@
               {
                 "time": "25–42m",
                 "label": "Archival Detective Work",
-                "instruction": "Inspect Source A (Kindertransport Refugees Arriving at Harwich Port (1938)) and Source B (Vera Löwyová Holding Her Porcelain Doll at the Dutch…) in pairs, identifying concrete visual details and discussing what life felt like for children and families at the time."
+                "instruction": "Inspect Source A (Kindertransport Refugees Arriving at Harwich Port (1938)) and Source B (Young Kindertransport Refugees Resting Beside Their Suitcase) in pairs, identifying concrete visual details and discussing what life felt like for children and families at the time."
               },
               {
                 "time": "42–50m",
@@ -3464,7 +3452,7 @@
               {
                 "time": "08–22m",
                 "label": "Stage 3 Reading & Remaining Sources",
-                "instruction": "Read Stage 3 (\"Across the Sea to Liverpool Street Station\") and explore Source C (Vera Löwyová's Czechoslovak Republic Passport with…), Source D (Refugee Children Boarding a Chartered Kindertransport…), Source E (Vera's Childhood Keepsakes: Miniature Prayer Book,…) to complete the historical picture."
+                "instruction": "Read Stage 3 (\"Across the Sea to Liverpool Street Station\") and explore Source C (Vera Löwyová's Czechoslovak Republic Passport with…), Source D (Refugee Children Boarding a Chartered Kindertransport…), Source E (Bronze Kindertransport Memorial \"Trains to Life\") to complete the historical picture."
               },
               {
                 "time": "22–42m",
@@ -3635,36 +3623,30 @@
           "act": 2,
           "title": "Nine-Year-Old Vera's One Small Suitcase",
           "text": "<span class=\"para-ref\">[4.3]</span> One of those children was **nine-year-old Vera Löwyová** (later **Vera Schaufeld**) from Czechoslovakia. In March 1939, Nazi soldiers marched into **Prague**. Vera's loving parents made the painful choice to put her name on a rescue train to England.<br><br><span class=\"para-ref\">[4.4]</span> Each child could take only **one small suitcase** and ten Reichsmarks, with no jewellery or valuables. Vera packed warm clothes, her **autograph diary** signed by her parents, and her **English porcelain doll**. In **May 1939**, she wore a numbered identity card around her neck at Prague's Wilson Station. Waving through the carriage window, Vera bravely promised her parents not to cry.",
-          "image": "/units/ks2_ww2/assets/vera_portrait.jpg",
-          "image_alt": "Childhood portrait photograph of Vera Löwyová in Czechoslovakia before the war",
-          "caption": "Young Vera Löwyová in Czechoslovakia before leaving Prague alone at age nine on a Kindertransport train to England in May 1939.",
+          "image": "/units/ks2_ww2/assets/kindertransport_harwich_dec1938.jpg",
+          "image_alt": "Three young Jewish refugee girls wearing numbered Kindertransport tags around their necks carry rolled blankets past a British police constable at Harwich in December 1938",
+          "caption": "Three young Jewish refugee girls wearing numbered Kindertransport identity tags around their necks carry rolled blankets past a British police constable on the quayside at Harwich on 2 December 1938. (Library of Congress, Public Domain)",
           "isReversed": true,
           "sources": [
             {
               "id": "ks2_ww2_l4_src_b",
               "letter": "B",
               "source_letter": "B",
-              "type": "artefact",
-              "src": "/units/ks2_ww2/assets/vera_holland_doll.jpg",
-              "image": "/units/ks2_ww2/assets/vera_holland_doll.jpg",
-              "title": "Source B: Vera Löwyová Holding Her Porcelain Doll at the Dutch Border (1939)",
-              "caption": "Nine-year-old Vera Löwyová at the Dutch railway terminal clutching the porcelain doll her grandmother had given her before departure (Holocaust Educational Trust Archive).",
-              "author": "Family / Refugee Escort Photographer",
-              "date": "May 1939",
-              "context": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-              "hinge_question": "Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-              "question_badge": "VERA AND HER PORCELAIN DOLL",
-              "question": "Why was clutching her doll so important to nine-year-old Vera when leaving her family?",
-              "model_answer": "Vera's doll was a familiar comfort from home when she was sent away on a train by herself. It reminds us how young and vulnerable the children were as they said goodbye to their parents, not knowing if they would ever see them again.",
-              "provenance_clues": {
-                "author": "Refugee escort or Dutch railway worker.",
-                "audience": "Preserved in family archives and later donated to Holocaust educational exhibits.",
-                "motive": "To show the deep personal emotions and bravery of a young child refugee fleeing Nazi danger.",
-                "hinge_question": "Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?"
-              },
+              "type": "visual",
+              "src": "/units/ks2_ww2/assets/kindertransport_england_arrival_1938.jpg",
+              "image": "/units/ks2_ww2/assets/kindertransport_england_arrival_1938.jpg",
+              "title": "Source B: Young Kindertransport Refugees Resting Beside Their Suitcase on Arrival in England (December 1938)",
+              "caption": "Exhausted young Jewish refugee girls resting on a wooden bench beside their single small leather suitcase shortly after arriving in England in December 1938 (Bundesarchiv Bild 183-1987-0928-501, CC BY-SA 3.0 de).",
+              "author": "Press Photographer (German Federal Archives / Bundesarchiv Bild 183-1987-0928-501)",
+              "date": "December 1938 / May 1939 Testimony",
+              "context": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+              "hinge_question": "What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+              "question_badge": "ONE SMALL SUITCASE & EYEWITNESS MEMORY",
+              "question": "Using the photograph and Vera Schaufeld’s testimony in Source B, why did small comforts from home—and kindness at the Dutch border—matter so deeply to children travelling alone?",
+              "model_answer": "Exhausted children had just said a painful goodbye to their parents with only one small suitcase, so holding a familiar doll or diary—and being welcomed with hot chocolate by kind Dutch volunteers—gave them comfort and their first feeling of safety.",
               "teacher_notes": {
-                "hinge_question": "Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-                "source_context": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
+                "hinge_question": "What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+                "source_context": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
                 "provenance_breakdown": {
                   "author": "Refugee escort or Dutch railway worker.",
                   "audience": "Preserved in family archives and later donated to Holocaust educational exhibits.",
@@ -3672,17 +3654,17 @@
                 }
               },
               "utility_enquiry": {
-                "question_badge": "VERA AND HER PORCELAIN DOLL",
-                "model_answer": "Vera's doll was a familiar comfort from home when she was sent away on a train by herself. It reminds us how young and vulnerable the children were as they said goodbye to their parents, not knowing if they would ever see them again.",
+                "question_badge": "ONE SMALL SUITCASE & EYEWITNESS MEMORY",
+                "model_answer": "Exhausted children had just said a painful goodbye to their parents with only one small suitcase, so holding a familiar doll or diary—and being welcomed with hot chocolate by kind Dutch volunteers—gave them comfort and their first feeling of safety.",
                 "provenance_clues": {
                   "author": "Refugee escort or Dutch railway worker.",
                   "audience": "Preserved in family archives and later donated to Holocaust educational exhibits.",
                   "motive": "To show the deep personal emotions and bravery of a young child refugee fleeing Nazi danger."
                 }
               },
-              "source_context": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
+              "source_context": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
               "text": "Vera Schaufeld MBE (née Věra Löwyová, recalling leaving Prague aged nine in May 1939): \"At Wilson Railway Station in Prague, all the parents were standing on the platform crying and waving. My mother and father told me to be brave and promised that they would come to England very soon. I held tightly onto my doll and my little diary. When our train finally crossed the border into Holland, kind Dutch ladies came onto the platform with trays of hot chocolate, white rolls, and oranges—it was the first moment we felt safe.\"",
-              "provenance": "Oral history testimony of Vera Schaufeld MBE (née Věra-Helga Löwyová, 1930–2025), Imperial War Museum Sound Archive (Cat. No. 19660) / Holocaust Educational Trust.",
+              "provenance": "Photograph: Bundesarchiv Bild 183-1987-0928-501 (CC BY-SA 3.0 de). Oral history extract: Vera Schaufeld MBE (née Věra-Helga Löwyová, 1930–2025), Imperial War Museum Sound Archive (Cat. No. 19660).",
               "studio_audio": "/audio/sources/ks2_ww2/lesson_4_sB.mp3",
               "studio_voice_label": "Vera Schaufeld MBE · Testimony"
             }
@@ -3703,26 +3685,20 @@
               "letter": "C",
               "source_letter": "C",
               "type": "manuscript",
-              "src": "/units/ks2_ww2/assets/vera_passport_1939.jpg",
-              "image": "/units/ks2_ww2/assets/vera_passport_1939.jpg",
-              "title": "Source C: Věra Löwyová's Czechoslovak Republic Passport Issued in Klatovy (1939)",
-              "caption": "Pages 2–3 of nine-year-old Věra-Helga Löwyová's official Czechoslovak passport (No. 89605), showing her photograph, handwritten personal details in Czech and French ('studující / étudiante'), purple Klatovy District Office stamps, and her own neat cursive signature.",
-              "author": "Czechoslovak Republic & German Protectorate Border Control",
-              "date": "May 1939",
-              "context": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-              "hinge_question": "Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-              "question_badge": "VERA'S TRAVEL PASSPORT",
-              "question": "What does Věra's official passport in Source C show about how carefully every child refugee had to be documented before leaving?",
-              "model_answer": "The passport shows Věra's photograph, official purple district magistrate stamps from Klatovy, and nine-year-old Věra's own handwritten signature, proving that escaping required strict identity paperwork and official travel permission before borders closed.",
-              "provenance_clues": {
-                "author": "Prague passport authorities and German security police.",
-                "audience": "Border guards at railway crossings in Germany and the Netherlands.",
-                "motive": "To provide official legal proof of identity and permission for a refugee child to travel to Britain.",
-                "hinge_question": "Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?"
-              },
+              "src": "/units/ks2_ww2/assets/reisepass_leo_ermann_j_stamp_1938.jpg",
+              "image": "/units/ks2_ww2/assets/reisepass_leo_ermann_j_stamp_1938.jpg",
+              "title": "Source C: German Passport Stamped with a Red \"J\" and Compulsory Name \"Israel\" (1938–1939)",
+              "caption": "Official German passport (Reisepass Nr. 3870) issued to Jewish citizen Leo Ermann, stamped in November 1939 with a large red letter \"J\" (Jude) and altered with the compulsory middle name \"Israel\" (Wikimedia Commons, CC BY 3.0 de).",
+              "author": "German Reich Interior Ministry Passport Office",
+              "date": "1938–1939",
+              "context": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+              "hinge_question": "Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+              "question_badge": "IDENTITY STAMPS & BORDER PERMITS",
+              "question": "Look closely at the red stamp and handwritten name on Passport Nr. 3870 in Source C. How did Nazi passport laws single out Jewish citizens at border crossings?",
+              "model_answer": "Nazi officials stamped a large red letter \"J\" onto the passport page and forced Jewish men to add the name \"Israel\" (and women \"Sara\"), making every Jewish traveller immediately identifiable to border guards and police.",
               "teacher_notes": {
-                "hinge_question": "Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-                "source_context": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
+                "hinge_question": "Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+                "source_context": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
                 "provenance_breakdown": {
                   "author": "Prague passport authorities and German security police.",
                   "audience": "Border guards at railway crossings in Germany and the Netherlands.",
@@ -3730,19 +3706,19 @@
                 }
               },
               "utility_enquiry": {
-                "question_badge": "VERA'S TRAVEL PASSPORT",
-                "model_answer": "The passport shows official Nazi stamps and red ink that were needed before a child could leave. It shows that escaping was a race against time, requiring strict paperwork and permission before the borders closed.",
+                "question_badge": "IDENTITY STAMPS & BORDER PERMITS",
+                "model_answer": "Nazi officials stamped a large red letter \"J\" onto the passport page and forced Jewish men to add the name \"Israel\" (and women \"Sara\"), making every Jewish traveller immediately identifiable to border guards and police.",
                 "provenance_clues": {
                   "author": "Prague passport authorities and German security police.",
                   "audience": "Border guards at railway crossings in Germany and the Netherlands.",
                   "motive": "To provide official legal proof of identity and permission for a refugee child to travel to Britain."
                 }
               },
-              "source_context": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-              "text": "Official Entries on Passport No. 89605 (Czechoslovak Republic, District of Klatovy, 1939): \"Personal Description — Occupation: Schoolgirl (studující / étudiante). Place and Date of Birth: Prague, 29 January 1930. Residence: Klatovy. Face: Oval. Colour of Eyes: Grey. Colour of Hair: Brown. Signature of Holder: Věra-Helga Löwyová. Stamped and authorised for exit travel by the District Magistrate of Klatovy.\"",
-              "provenance": "Czechoslovak Republic Passport No. 89605 issued to Věra-Helga Löwyová by Okresní úřad v Klatovech (District Office of Klatovy), 1939 (Vera Schaufeld Personal Archive / Holocaust Memorial Day Trust).",
+              "source_context": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+              "text": "Official Entries on German Reich Passport (Reisepass Nr. 3870, stamped 29 November 1939): \"DEUTSCHES REICH — REISEPASS Nr. 3870. [Stamped in red ink at top left: J — 29.11.39]. Name of Passport Holder (Name des Paßinhabers): Israel Leo Ermann. Accompanied by his wife: — and by: — children. Nationality (Staatsangehörigkeit): Deutsches Reich.\"",
+              "provenance": "German Reich Passport (Reisepass Nr. 3870) of Leo Ermann with compulsory red \"J\" stamp (5 October 1938 Reich Passport Decree), Wikimedia Commons (CC BY 3.0 de).",
               "studio_audio": "/audio/sources/ks2_ww2/lesson_4_sC.mp3",
-              "studio_voice_label": "Passport No. 89605 (Klatovy, 1939)"
+              "studio_voice_label": "Reisepass Nr. 3870 (\"J\" Stamp, 1939)"
             }
           ],
           "content": "<span class=\"para-ref\">[4.5]</span> For two days, Vera's train rolled across Germany. At last it crossed the border into the **Netherlands**. Kind Dutch women met the children with trays of **hot chocolate, white bread, and smiles**. For the first time, the children felt safe from Nazi guards. From the **Hook of Holland**, they sailed overnight by ferry to **Harwich** in Essex.<br><br><span class=\"para-ref\">[4.6]</span> Steam trains carried Kindertransport children into London's **Liverpool Street Station**, where kind British foster families waited to welcome them. Britain gave them safety, schooling, and care, until war slammed borders shut in September 1939. Sadly, like many Kindertransport refugees, Vera never saw her parents again."
@@ -4179,27 +4155,21 @@
           "id": "ks2_ww2_l4_src_b",
           "letter": "B",
           "source_letter": "B",
-          "type": "artefact",
-          "src": "/units/ks2_ww2/assets/vera_holland_doll.jpg",
-          "image": "/units/ks2_ww2/assets/vera_holland_doll.jpg",
-          "title": "Source B: Vera Löwyová Holding Her Porcelain Doll at the Dutch Border (1939)",
-          "caption": "Nine-year-old Vera Löwyová at the Dutch railway terminal clutching the porcelain doll her grandmother had given her before departure (Holocaust Educational Trust Archive).",
-          "author": "Family / Refugee Escort Photographer",
-          "date": "May 1939",
-          "context": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-          "hinge_question": "Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-          "question_badge": "VERA AND HER PORCELAIN DOLL",
-          "question": "Why was clutching her doll so important to nine-year-old Vera when leaving her family?",
-          "model_answer": "Vera's doll was a familiar comfort from home when she was sent away on a train by herself. It reminds us how young and vulnerable the children were as they said goodbye to their parents, not knowing if they would ever see them again.",
-          "provenance_clues": {
-            "author": "Refugee escort or Dutch railway worker.",
-            "audience": "Preserved in family archives and later donated to Holocaust educational exhibits.",
-            "motive": "To show the deep personal emotions and bravery of a young child refugee fleeing Nazi danger.",
-            "hinge_question": "Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?"
-          },
+          "type": "visual",
+          "src": "/units/ks2_ww2/assets/kindertransport_england_arrival_1938.jpg",
+          "image": "/units/ks2_ww2/assets/kindertransport_england_arrival_1938.jpg",
+          "title": "Source B: Young Kindertransport Refugees Resting Beside Their Suitcase on Arrival in England (December 1938)",
+          "caption": "Exhausted young Jewish refugee girls resting on a wooden bench beside their single small leather suitcase shortly after arriving in England in December 1938 (Bundesarchiv Bild 183-1987-0928-501, CC BY-SA 3.0 de).",
+          "author": "Press Photographer (German Federal Archives / Bundesarchiv Bild 183-1987-0928-501)",
+          "date": "December 1938 / May 1939 Testimony",
+          "context": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+          "hinge_question": "What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+          "question_badge": "ONE SMALL SUITCASE & EYEWITNESS MEMORY",
+          "question": "Using the photograph and Vera Schaufeld’s testimony in Source B, why did small comforts from home—and kindness at the Dutch border—matter so deeply to children travelling alone?",
+          "model_answer": "Exhausted children had just said a painful goodbye to their parents with only one small suitcase, so holding a familiar doll or diary—and being welcomed with hot chocolate by kind Dutch volunteers—gave them comfort and their first feeling of safety.",
           "teacher_notes": {
-            "hinge_question": "Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
-            "source_context": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
+            "hinge_question": "What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
+            "source_context": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
             "provenance_breakdown": {
               "author": "Refugee escort or Dutch railway worker.",
               "audience": "Preserved in family archives and later donated to Holocaust educational exhibits.",
@@ -4207,17 +4177,17 @@
             }
           },
           "utility_enquiry": {
-            "question_badge": "VERA AND HER PORCELAIN DOLL",
-            "model_answer": "Vera's doll was a familiar comfort from home when she was sent away on a train by herself. It reminds us how young and vulnerable the children were as they said goodbye to their parents, not knowing if they would ever see them again.",
+            "question_badge": "ONE SMALL SUITCASE & EYEWITNESS MEMORY",
+            "model_answer": "Exhausted children had just said a painful goodbye to their parents with only one small suitcase, so holding a familiar doll or diary—and being welcomed with hot chocolate by kind Dutch volunteers—gave them comfort and their first feeling of safety.",
             "provenance_clues": {
               "author": "Refugee escort or Dutch railway worker.",
               "audience": "Preserved in family archives and later donated to Holocaust educational exhibits.",
               "motive": "To show the deep personal emotions and bravery of a young child refugee fleeing Nazi danger."
             }
           },
-          "source_context": "Refugee children on the Kindertransport were allowed only one small suitcase and no money. Vera's grandmother gave her a porcelain doll to comfort her on the journey. Vera kept the doll for the rest of her life as one of her only surviving links to her family. **Hinge Question:** Why do personal childhood keepsakes like Vera's doll carry such powerful historical meaning for understanding the Holocaust?",
+          "source_context": "Refugee children on the Kindertransport were permitted only one small suitcase and ten Reichsmarks, travelling completely without their parents. In her Imperial War Museum oral history recording, survivor Vera Schaufeld MBE recalled clutching her doll and diary as her train left Prague and crossed safely into the Netherlands. **Hinge Question:** What do both the photograph and Vera Schaufeld’s memories reveal about the emotional courage required of young Kindertransport refugees?",
           "text": "Vera Schaufeld MBE (née Věra Löwyová, recalling leaving Prague aged nine in May 1939): \"At Wilson Railway Station in Prague, all the parents were standing on the platform crying and waving. My mother and father told me to be brave and promised that they would come to England very soon. I held tightly onto my doll and my little diary. When our train finally crossed the border into Holland, kind Dutch ladies came onto the platform with trays of hot chocolate, white rolls, and oranges—it was the first moment we felt safe.\"",
-          "provenance": "Oral history testimony of Vera Schaufeld MBE (née Věra-Helga Löwyová, 1930–2025), Imperial War Museum Sound Archive (Cat. No. 19660) / Holocaust Educational Trust.",
+          "provenance": "Photograph: Bundesarchiv Bild 183-1987-0928-501 (CC BY-SA 3.0 de). Oral history extract: Vera Schaufeld MBE (née Věra-Helga Löwyová, 1930–2025), Imperial War Museum Sound Archive (Cat. No. 19660).",
           "studio_audio": "/audio/sources/ks2_ww2/lesson_4_sB.mp3",
           "studio_voice_label": "Vera Schaufeld MBE · Testimony"
         },
@@ -4226,26 +4196,20 @@
           "letter": "C",
           "source_letter": "C",
           "type": "manuscript",
-          "src": "/units/ks2_ww2/assets/vera_passport_1939.jpg",
-          "image": "/units/ks2_ww2/assets/vera_passport_1939.jpg",
-          "title": "Source C: Věra Löwyová's Czechoslovak Republic Passport Issued in Klatovy (1939)",
-          "caption": "Pages 2–3 of nine-year-old Věra-Helga Löwyová's official Czechoslovak passport (No. 89605), showing her photograph, handwritten personal details in Czech and French ('studující / étudiante'), purple Klatovy District Office stamps, and her own neat cursive signature.",
-          "author": "Czechoslovak Republic & German Protectorate Border Control",
-          "date": "May 1939",
-          "context": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-          "hinge_question": "Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-          "question_badge": "VERA'S TRAVEL PASSPORT",
-          "question": "What does Věra's official passport in Source C show about how carefully every child refugee had to be documented before leaving?",
-          "model_answer": "The passport shows Věra's photograph, official purple district magistrate stamps from Klatovy, and nine-year-old Věra's own handwritten signature, proving that escaping required strict identity paperwork and official travel permission before borders closed.",
-          "provenance_clues": {
-            "author": "Prague passport authorities and German security police.",
-            "audience": "Border guards at railway crossings in Germany and the Netherlands.",
-            "motive": "To provide official legal proof of identity and permission for a refugee child to travel to Britain.",
-            "hinge_question": "Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?"
-          },
+          "src": "/units/ks2_ww2/assets/reisepass_leo_ermann_j_stamp_1938.jpg",
+          "image": "/units/ks2_ww2/assets/reisepass_leo_ermann_j_stamp_1938.jpg",
+          "title": "Source C: German Passport Stamped with a Red \"J\" and Compulsory Name \"Israel\" (1938–1939)",
+          "caption": "Official German passport (Reisepass Nr. 3870) issued to Jewish citizen Leo Ermann, stamped in November 1939 with a large red letter \"J\" (Jude) and altered with the compulsory middle name \"Israel\" (Wikimedia Commons, CC BY 3.0 de).",
+          "author": "German Reich Interior Ministry Passport Office",
+          "date": "1938–1939",
+          "context": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+          "hinge_question": "Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+          "question_badge": "IDENTITY STAMPS & BORDER PERMITS",
+          "question": "Look closely at the red stamp and handwritten name on Passport Nr. 3870 in Source C. How did Nazi passport laws single out Jewish citizens at border crossings?",
+          "model_answer": "Nazi officials stamped a large red letter \"J\" onto the passport page and forced Jewish men to add the name \"Israel\" (and women \"Sara\"), making every Jewish traveller immediately identifiable to border guards and police.",
           "teacher_notes": {
-            "hinge_question": "Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-            "source_context": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
+            "hinge_question": "Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+            "source_context": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
             "provenance_breakdown": {
               "author": "Prague passport authorities and German security police.",
               "audience": "Border guards at railway crossings in Germany and the Netherlands.",
@@ -4253,42 +4217,36 @@
             }
           },
           "utility_enquiry": {
-            "question_badge": "VERA'S TRAVEL PASSPORT",
-            "model_answer": "The passport shows official Nazi stamps and red ink that were needed before a child could leave. It shows that escaping was a race against time, requiring strict paperwork and permission before the borders closed.",
+            "question_badge": "IDENTITY STAMPS & BORDER PERMITS",
+            "model_answer": "Nazi officials stamped a large red letter \"J\" onto the passport page and forced Jewish men to add the name \"Israel\" (and women \"Sara\"), making every Jewish traveller immediately identifiable to border guards and police.",
             "provenance_clues": {
               "author": "Prague passport authorities and German security police.",
               "audience": "Border guards at railway crossings in Germany and the Netherlands.",
               "motive": "To provide official legal proof of identity and permission for a refugee child to travel to Britain."
             }
           },
-          "source_context": "After Nazi Germany occupied Prague in March 1939, Jewish children needed both British entry permits and Nazi exit visas to leave. Nicholas Winton and Trevor Chadwick worked desperately to secure travel documents before German authorities shut the borders. **Hinge Question:** Why did Nazi authorities permit Jewish children to leave Prague on the Kindertransport in early 1939, but stop all departures once war began?",
-          "text": "Official Entries on Passport No. 89605 (Czechoslovak Republic, District of Klatovy, 1939): \"Personal Description — Occupation: Schoolgirl (studující / étudiante). Place and Date of Birth: Prague, 29 January 1930. Residence: Klatovy. Face: Oval. Colour of Eyes: Grey. Colour of Hair: Brown. Signature of Holder: Věra-Helga Löwyová. Stamped and authorised for exit travel by the District Magistrate of Klatovy.\"",
-          "provenance": "Czechoslovak Republic Passport No. 89605 issued to Věra-Helga Löwyová by Okresní úřad v Klatovech (District Office of Klatovy), 1939 (Vera Schaufeld Personal Archive / Holocaust Memorial Day Trust).",
+          "source_context": "From October 1938, Nazi decrees forced Jewish citizens to have their passports stamped with a three-centimetre red letter \"J\" and added the compulsory middle names \"Israel\" or \"Sara\" so border police could single them out immediately. Securing exit stamps and British entry permits before war closed the borders was a desperate race against time. **Hinge Question:** Why did Nazi officials stamp Jewish passports with a giant red \"J\" while still requiring strict exit paperwork before families or children could leave?",
+          "text": "Official Entries on German Reich Passport (Reisepass Nr. 3870, stamped 29 November 1939): \"DEUTSCHES REICH — REISEPASS Nr. 3870. [Stamped in red ink at top left: J — 29.11.39]. Name of Passport Holder (Name des Paßinhabers): Israel Leo Ermann. Accompanied by his wife: — and by: — children. Nationality (Staatsangehörigkeit): Deutsches Reich.\"",
+          "provenance": "German Reich Passport (Reisepass Nr. 3870) of Leo Ermann with compulsory red \"J\" stamp (5 October 1938 Reich Passport Decree), Wikimedia Commons (CC BY 3.0 de).",
           "studio_audio": "/audio/sources/ks2_ww2/lesson_4_sC.mp3",
-          "studio_voice_label": "Passport No. 89605 (Klatovy, 1939)"
+          "studio_voice_label": "Reisepass Nr. 3870 (\"J\" Stamp, 1939)"
         },
         {
           "id": "ks2_ww2_l4_src_d",
           "letter": "D",
           "source_letter": "D",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/kindertransport_prague_airport_1939.jpg",
-          "image": "/units/ks2_ww2/assets/kindertransport_prague_airport_1939.jpg",
-          "title": "Source D: Refugee Children Boarding a Chartered Kindertransport Flight in Prague (1939)",
-          "caption": "Jewish refugee children waving goodbye from the steps of a chartered KLM airliner at Prague Ruzyně Airport in spring 1939 (Holocaust Educational Trust Archive).",
-          "author": "Refugee Committee Photographer in Prague",
-          "date": "Spring 1939",
+          "src": "/units/ks2_ww2/assets/kindertransport_prague_flight_1939_pd.jpg",
+          "image": "/units/ks2_ww2/assets/kindertransport_prague_flight_1939_pd.jpg",
+          "title": "Source D: Czech Refugee Children Waving Goodbye Before Boarding a Kindertransport Flight in Prague (1939)",
+          "caption": "Young Czech Jewish refugee children in winter coats carrying small suitcases and waving goodbye on the tarmac at Prague Ruzyně Airport before boarding an evacuation flight to Britain in 1939 (Archival Newsreel Still, Wikimedia Commons, Public Domain).",
+          "author": "Contemporary Newsreel Cameraman at Prague Ruzyně Airport (Public Domain)",
+          "date": "1939",
           "context": "While most Kindertransport journeys took place on trains and ferries, Nicholas Winton and Barbican Mission volunteers chartered several transport planes from Prague Airport to fly vulnerable children directly to Croydon Airport in London before trains became too dangerous. **Hinge Question:** Why was air evacuation rarely used compared to train transport during the Kindertransport?",
           "hinge_question": "Why was air evacuation rarely used compared to train transport during the Kindertransport?",
           "question_badge": "LEAVING PRAGUE BY PLANE",
           "question": "Why did rescuers use aeroplanes as well as trains to bring children out of Prague?",
           "model_answer": "The photograph shows children climbing aboard a passenger plane to fly over borders. Rescuers used planes because time was running out before the war started, and flying was the fastest way to get children to safety in Britain.",
-          "provenance_clues": {
-            "author": "Rescue volunteer photographer at Prague Airport.",
-            "audience": "British charitable committees in London.",
-            "motive": "To document the emergency air rescue of refugee children organised by British volunteers.",
-            "hinge_question": "Why was air evacuation rarely used compared to train transport during the Kindertransport?"
-          },
           "teacher_notes": {
             "hinge_question": "Why was air evacuation rarely used compared to train transport during the Kindertransport?",
             "source_context": "While most Kindertransport journeys took place on trains and ferries, Nicholas Winton and Barbican Mission volunteers chartered several transport planes from Prague Airport to fly vulnerable children directly to Croydon Airport in London before trains became too dangerous. **Hinge Question:** Why was air evacuation rarely used compared to train transport during the Kindertransport?",
@@ -4314,26 +4272,20 @@
           "letter": "E",
           "source_letter": "E",
           "type": "artefact",
-          "src": "/units/ks2_ww2/assets/vera_keepsakes.jpg",
-          "image": "/units/ks2_ww2/assets/vera_keepsakes.jpg",
-          "title": "Source E: Vera's Childhood Keepsakes: Miniature Prayer Book, Rosary & Wooden Heart from Klatovy (1939)",
-          "caption": "Two tiny keepsakes nine-year-old Vera Löwyová (later Vera Schaufeld) brought in her small suitcase from Czechoslovakia in May 1939: a miniature silver-embossed prayer book and red rosary given to her by a caring family friend, and a painted wooden folk-art heart inscribed 'z Klatov' ('from Klatovy', her hometown).",
-          "author": "Vera Schaufeld (née Löwyová) Personal Collection / HET",
-          "date": "May 1939",
-          "context": "Because Kindertransport children were allowed only one small suitcase and no valuables, tiny personal keepsakes became priceless. Before nine-year-old Vera Löwyová left her hometown of Klatovy near Prague in May 1939, a kind Christian family friend gave her this miniature silver-covered prayer book and red rosary as a token of love and protection, alongside a hand-painted Czech wooden heart marked 'z Klatov' ('from Klatovy'). Vera treasured both items throughout her adult life in England. **Hinge Question:** Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?",
-          "hinge_question": "Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?",
-          "question_badge": "KEEPSAKES FROM KLATOVY",
-          "question": "Look closely at Source E. Why did nine-year-old Vera treasure the tiny gift from a family friend and the painted wooden heart marked 'z Klatov' ('from Klatovy') for the rest of her life?",
-          "model_answer": "Because Vera could pack only one small suitcase and never saw her parents or hometown again during the war, the tiny silver prayer book and rosary from a kind family friend and the wooden heart painted 'z Klatov' were precious physical links to the love, friendships, and Czech childhood she had left behind.",
-          "provenance_clues": {
-            "author": "Gifted to nine-year-old Vera Löwyová in Klatovy and preserved all her life in England.",
-            "audience": "Personal childhood keepsakes carried in Vera's Kindertransport suitcase.",
-            "motive": "To give a nine-year-old girl comfort, love, and a reminder of her hometown as she travelled alone to England.",
-            "hinge_question": "Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?"
-          },
+          "src": "/units/ks2_ww2/assets/kindertransport_trains_to_life_memorial.jpg",
+          "image": "/units/ks2_ww2/assets/kindertransport_trains_to_life_memorial.jpg",
+          "title": "Source E: Bronze Kindertransport Memorial \"Trains to Life\" Showing Suitcase, Neck Tag & Childhood Doll (Frank Meisler, 2008)",
+          "caption": "Sculptor Frank Meisler’s bronze Kindertransport memorial outside Berlin Friedrichstraße Station—himself a Kindertransport survivor—depicting a young girl clutching her rag doll and a boy wearing a numbered neck tag carrying one small suitcase (Wikimedia Commons, CC BY-SA 4.0).",
+          "author": "Frank Meisler (Kindertransport Survivor & Sculptor, 1925–2018) / Photograph: Concord (CC BY-SA 4.0)",
+          "date": "2008 (Commemorating 1938–1939)",
+          "context": "Sculptor Frank Meisler escaped Danzig on a Kindertransport train to Liverpool Street in August 1939 at age fourteen and never saw his parents again. In his bronze memorials in Berlin, Prague, and London, he sculpted the exact details Kindertransport survivors remembered best: one small suitcase, a numbered card on string, and a cherished doll or keepsake from home. **Hinge Question:** Why did Kindertransport survivor Frank Meisler choose to sculpt a child’s doll, a numbered neck tag, and a single suitcase to tell this story to future generations?",
+          "hinge_question": "Why did Kindertransport survivor Frank Meisler choose to sculpt a child’s doll, a numbered neck tag, and a single suitcase to tell this story to future generations?",
+          "question_badge": "MEMORIALISING KEEPSAKES & GOODBYES",
+          "question": "Look closely at the bronze children in Source E. Why did survivor and sculptor Frank Meisler include a clutched doll, a neck tag, and one small suitcase in this memorial?",
+          "model_answer": "Because children were allowed only one small suitcase and no valuables when leaving their parents behind, tiny keepsakes like a doll or diary became priceless reminders of their family’s love as they travelled alone wearing numbered tags.",
           "teacher_notes": {
-            "hinge_question": "Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?",
-            "source_context": "Because Kindertransport children were allowed only one small suitcase and no valuables, tiny personal keepsakes became priceless. Before nine-year-old Vera Löwyová left her hometown of Klatovy near Prague in May 1939, a kind Christian family friend gave her this miniature silver-covered prayer book and red rosary as a token of love and protection, alongside a hand-painted Czech wooden heart marked 'z Klatov' ('from Klatovy'). Vera treasured both items throughout her adult life in England. **Hinge Question:** Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?",
+            "hinge_question": "Why did Kindertransport survivor Frank Meisler choose to sculpt a child’s doll, a numbered neck tag, and a single suitcase to tell this story to future generations?",
+            "source_context": "Sculptor Frank Meisler escaped Danzig on a Kindertransport train to Liverpool Street in August 1939 at age fourteen and never saw his parents again. In his bronze memorials in Berlin, Prague, and London, he sculpted the exact details Kindertransport survivors remembered best: one small suitcase, a numbered card on string, and a cherished doll or keepsake from home. **Hinge Question:** Why did Kindertransport survivor Frank Meisler choose to sculpt a child’s doll, a numbered neck tag, and a single suitcase to tell this story to future generations?",
             "provenance_breakdown": {
               "author": "Gifted to nine-year-old Vera Löwyová in Klatovy and preserved all her life in England.",
               "audience": "Personal childhood keepsakes carried in Vera's Kindertransport suitcase.",
@@ -4341,15 +4293,15 @@
             }
           },
           "utility_enquiry": {
-            "question_badge": "KEEPSAKES FROM KLATOVY",
-            "model_answer": "Because Vera could pack only one small suitcase and never saw her parents or hometown again during the war, the tiny silver prayer book and rosary from a kind family friend and the wooden heart painted 'z Klatov' were precious physical links to the love, friendships, and Czech childhood she had left behind.",
+            "question_badge": "MEMORIALISING KEEPSAKES & GOODBYES",
+            "model_answer": "Because children were allowed only one small suitcase and no valuables when leaving their parents behind, tiny keepsakes like a doll or diary became priceless reminders of their family’s love as they travelled alone wearing numbered tags.",
             "provenance_clues": {
               "author": "Gifted to nine-year-old Vera Löwyová in Klatovy and preserved all her life in England.",
               "audience": "Personal childhood keepsakes carried in Vera's Kindertransport suitcase.",
               "motive": "To give a nine-year-old girl comfort, love, and a reminder of her hometown as she travelled alone to England."
             }
           },
-          "source_context": "Because Kindertransport children were allowed only one small suitcase and no valuables, tiny personal keepsakes became priceless. Before nine-year-old Vera Löwyová left her hometown of Klatovy near Prague in May 1939, a kind Christian family friend gave her this miniature silver-covered prayer book and red rosary as a token of love and protection, alongside a hand-painted Czech wooden heart marked 'z Klatov' ('from Klatovy'). Vera treasured both items throughout her adult life in England. **Hinge Question:** Why did tiny handmade and gifted keepsakes mean so much to refugee children growing up in a new country without their parents?"
+          "source_context": "Sculptor Frank Meisler escaped Danzig on a Kindertransport train to Liverpool Street in August 1939 at age fourteen and never saw his parents again. In his bronze memorials in Berlin, Prague, and London, he sculpted the exact details Kindertransport survivors remembered best: one small suitcase, a numbered card on string, and a cherished doll or keepsake from home. **Hinge Question:** Why did Kindertransport survivor Frank Meisler choose to sculpt a child’s doll, a numbered neck tag, and a single suitcase to tell this story to future generations?"
         }
       ],
       "workbook_stages": [
@@ -4450,7 +4402,7 @@
         "slug": "ks2_ww2_l04_visual_story_sheet",
         "ktBadge": "KS2 • Enquiry 4",
         "datesBadge": "1938 – 1939",
-        "topicLabel": "Enquiry 04: Vera's Journey & The Kindertransport (1938–1939)",
+        "topicLabel": "Enquiry 04: One Small Suitcase — The Kindertransport (1938–1939)",
         "title": "How Did 10,000 Kindertransport Children Travel Alone to Safety in Britain?",
         "spokenTitle": "How did ten thousand Kindertransport children travel alone to safety in Britain?",
         "thumbUrl": "/units/ks2_ww2/assets/kindertransport_arrival.jpg",
@@ -4477,7 +4429,7 @@
             "badge": "Stage 2",
             "heading": "Vera’s One Small Suitcase",
             "date": "May 1939",
-            "img": "/units/ks2_ww2/assets/vera_portrait.jpg",
+            "img": "/units/ks2_ww2/assets/kindertransport_harwich_dec1938.jpg",
             "mode": "contain",
             "stat": "Prague Station: 1 Suitcase, Diary & Doll",
             "connective": "In Prague, nine-year-old Vera packed for a brave solo journey.",
@@ -4573,7 +4525,7 @@
               {
                 "time": "00–08m",
                 "label": "Spaced Retrieval Starter",
-                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"Vera's Journey & The Kindertransport (1938–1939)\": Britain Agrees to a Rescue, Nine-Year-Old Vera's One Small Suitcase, Across the Sea to Liverpool Street Station) alongside earlier unit recall."
+                "instruction": "Complete the 5-question Do Now starter retrieving last lesson (\"One Small Suitcase — The Kindertransport (1938–1939)\": Britain Agrees to a Rescue, Nine-Year-Old Vera's One Small Suitcase, Across the Sea to Liverpool Street Station) alongside earlier unit recall."
               },
               {
                 "time": "08–25m",
@@ -4729,27 +4681,21 @@
               "id": "ks2_ww2_l5_src_a",
               "letter": "A",
               "source_letter": "A",
-              "type": "visual",
-              "src": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
-              "image": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
-              "title": "Source A: Nicholas Winton Holding a Young Refugee Child in Prague (1939)",
-              "caption": "Nicholas Winton cradling a young Czech refugee child in Prague before organising their departure to safety in England (Winton Family Archive).",
-              "author": "British Committee for Refugees from Czechoslovakia Photographer",
-              "date": "Early 1939",
-              "context": "In December 1938, Nicholas Winton visited refugee camps in the Sudetenland where families lived in freezing conditions after fleeing the Nazis. Realising children were in mortal danger, Winton set up a desk in a Prague hotel dining room, taking down names of children whose parents were begging him to save them. **Hinge Question:** What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
-              "hinge_question": "What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
-              "question_badge": "STEPPING FORWARD TO HELP",
-              "question": "What does Source A show about Nicholas Winton's kindness and determination to help children?",
-              "model_answer": "Source A shows a young Nicholas Winton gently holding a rescued refugee child in Prague. It shows that he was a caring volunteer who gave up his holiday to travel into danger and save vulnerable children.",
-              "provenance_clues": {
-                "author": "Colleague working with Winton in Prague.",
-                "audience": "Family and fellow rescue volunteers.",
-                "motive": "To record Nicholas Winton caring for refugee children on the rescue mission in Prague.",
-                "hinge_question": "What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?"
-              },
+              "type": "artefact",
+              "src": "/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg",
+              "image": "/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg",
+              "title": "Source A: \"Für Das Kind · Pro Dítě\" Kindertransport Memorial Unveiled by Sir Nicholas Winton at Liverpool Street Station",
+              "caption": "Flor Kent’s bronze Kindertransport sculpture and bilingual inscription (\"Für Das Kind\" in German, \"Pro Dítě\" in Czech — \"For the Child\") inside London’s Liverpool Street Station, unveiled by 94-year-old rescuer Sir Nicholas Winton in 2003 (Wikimedia Commons, CC BY-SA 2.0).",
+              "author": "Flor Kent (Sculptor) / Photograph: Loco Steve (Wikimedia Commons, CC BY-SA 2.0)",
+              "date": "2003 (Commemorating 1938–1939)",
+              "context": "Unveiled by Sir Nicholas Winton himself at Liverpool Street Station—where his eight Prague trains arrived in 1939—the plinth carries words in both German (\"Für Das Kind\") and Czech (\"Pro Dítě\") alongside an original suitcase cast in bronze. **Hinge Question:** Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
+              "hinge_question": "Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
+              "question_badge": "HONOURING RESCUERS & REFUGEES",
+              "question": "Why was London’s Liverpool Street Station chosen for this memorial unveiled by Sir Nicholas Winton, and why are the words \"For the Child\" carved in both German and Czech?",
+              "model_answer": "Liverpool Street was the exact London station where Kindertransport trains arrived to meet British foster families, and the German and Czech inscriptions honour the homelands and parents who sacrificed everything \"for the child.\"",
               "teacher_notes": {
-                "hinge_question": "What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
-                "source_context": "In December 1938, Nicholas Winton visited refugee camps in the Sudetenland where families lived in freezing conditions after fleeing the Nazis. Realising children were in mortal danger, Winton set up a desk in a Prague hotel dining room, taking down names of children whose parents were begging him to save them. **Hinge Question:** What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
+                "hinge_question": "Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
+                "source_context": "Unveiled by Sir Nicholas Winton himself at Liverpool Street Station—where his eight Prague trains arrived in 1939—the plinth carries words in both German (\"Für Das Kind\") and Czech (\"Pro Dítě\") alongside an original suitcase cast in bronze. **Hinge Question:** Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
                 "provenance_breakdown": {
                   "author": "Colleague working with Winton in Prague.",
                   "audience": "Family and fellow rescue volunteers.",
@@ -4757,15 +4703,15 @@
                 }
               },
               "utility_enquiry": {
-                "question_badge": "STEPPING FORWARD TO HELP",
-                "model_answer": "Source A shows a young Nicholas Winton gently holding a rescued refugee child in Prague. It shows that he was a caring volunteer who gave up his holiday to travel into danger and save vulnerable children.",
+                "question_badge": "HONOURING RESCUERS & REFUGEES",
+                "model_answer": "Liverpool Street was the exact London station where Kindertransport trains arrived to meet British foster families, and the German and Czech inscriptions honour the homelands and parents who sacrificed everything \"for the child.\"",
                 "provenance_clues": {
                   "author": "Colleague working with Winton in Prague.",
                   "audience": "Family and fellow rescue volunteers.",
                   "motive": "To record Nicholas Winton caring for refugee children on the rescue mission in Prague."
                 }
               },
-              "source_context": "In December 1938, Nicholas Winton visited refugee camps in the Sudetenland where families lived in freezing conditions after fleeing the Nazis. Realising children were in mortal danger, Winton set up a desk in a Prague hotel dining room, taking down names of children whose parents were begging him to save them. **Hinge Question:** What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?"
+              "source_context": "Unveiled by Sir Nicholas Winton himself at Liverpool Street Station—where his eight Prague trains arrived in 1939—the plinth carries words in both German (\"Für Das Kind\") and Czech (\"Pro Dítě\") alongside an original suitcase cast in bronze. **Hinge Question:** Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?"
             }
           ],
           "content": "<span class=\"para-ref\">[5.1]</span> In December 1938, 29-year-old London stockbroker **Nicholas Winton** packed for a **skiing holiday in Switzerland**. Just before leaving, his friend **Martin Blake** phoned urgently from **Prague, Czechoslovakia**. Blake asked Winton to cancel his holiday and come to see a growing refugee crisis instead.<br><br><span class=\"para-ref\">[5.2]</span> Tens of thousands of Jewish and anti-Nazi families had fled into Prague after Germany seized the borderlands. Many were trapped in freezing camps as winter set in. Refusing to be a **bystander**, Winton chose to become an **upstander**. At his dining table in a Prague hotel, he listed the names and photos of children needing rescue."
@@ -4774,9 +4720,9 @@
           "act": 2,
           "title": "The Rescue Chain in Prague & London",
           "text": "<span class=\"para-ref\">[5.3]</span> Saving hundreds of children took a brave team from the **British Committee for Refugees from Czechoslovakia**. British economist **Doreen Warriner** organised dangerous relief work across Prague. Meanwhile, Dorset Latin schoolteacher **Trevor Chadwick** stayed on after Nazi troops occupied the city. He calmly led frightened children past armed guards onto the trains.<br><br><span class=\"para-ref\">[5.4]</span> Back in London, Winton worked at the Stock Exchange by day. Every evening, he ran the rescue campaign with his determined mother **Babi**. Together they pressed the Home Office for **visas** and printed children's photos in newspapers. Soon they found hundreds of kind foster families and **£50 sponsors**.",
-          "image": "/units/ks2_ww2/assets/kindertransport_numbered_tag_1939.jpg",
-          "image_alt": "Dorset teacher Trevor Chadwick holding a baby refugee in Prague in 1939",
-          "caption": "An original numbered Kindertransport necklace tag (Nr. 8434, 20 July 1939), worn on string so volunteer helpers at stations, borders, and ferries could guide every child safely to their foster sponsor.",
+          "image": "/units/ks2_ww2/assets/kindertransport_hilfsverein_tag_pd.jpg",
+          "image_alt": "Original printed Kindertransport cardboard identity tag issued by the Hilfsverein der Juden in Deutschland in Berlin",
+          "caption": "An original printed Kindertransport identity necklace card issued in Berlin (Hilfsverein der Juden in Deutschland, Public Domain), worn on string so volunteer helpers at stations, borders, and ferries could guide every child safely to their foster sponsor.",
           "isReversed": true,
           "sources": [
             {
@@ -4784,23 +4730,17 @@
               "letter": "B",
               "source_letter": "B",
               "type": "visual",
-              "src": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
-              "image": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
-              "title": "Source B: Volunteer Rescuer Trevor Chadwick Holding an Infant Refugee in Prague (1939)",
-              "caption": "Dorset schoolteacher Trevor Chadwick photographed outdoors in Prague in 1939 holding a baby refugee in his arms while working with Doreen Warriner and Nicholas Winton to arrange safe departures (Chadwick Family Archive).",
-              "author": "Volunteer Rescue Worker in Prague",
-              "date": "1939",
+              "src": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
+              "image": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
+              "title": "Source B: Archival Portrait of British Volunteer Rescuer Trevor Chadwick (c. 1935)",
+              "caption": "Pre-war portrait of Dorset schoolteacher Trevor Chadwick (1907–1979), who left his teaching post in Swanage in early 1939 to run the Prague Kindertransport children’s office on the ground alongside Doreen Warriner (Wikimedia Commons, Public Domain).",
+              "author": "Anonymous Pre-War Photographer (Wikimedia Commons, Public Domain)",
+              "date": "c. 1935 (Prague Rescue 1939)",
               "context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
               "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
               "question_badge": "RESCUE TEAM IN PRAGUE",
               "question": "What does Source B remind us about how old even the youngest Kindertransport refugees were, and why volunteers like Trevor Chadwick were vital?",
               "model_answer": "Source B shows Dorset teacher Trevor Chadwick gently holding a tiny baby outdoors in Prague. Even infants and toddlers had to travel without their parents, so brave volunteers in Prague were vital to care for them and guide them safely onto the trains.",
-              "provenance_clues": {
-                "author": "Prague rescue volunteer.",
-                "audience": "Preserved in family papers.",
-                "motive": "To celebrate Trevor Chadwick's courage in rescuing children from occupied Czechoslovakia.",
-                "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?"
-              },
               "teacher_notes": {
                 "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
                 "source_context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
@@ -4837,24 +4777,18 @@
               "id": "ks2_ww2_l5_src_c",
               "letter": "C",
               "source_letter": "C",
-              "type": "manuscript",
-              "src": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
-              "image": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
-              "title": "Source C: Nicholas Winton's Scrapbook of Children's Photographs (1939)",
-              "caption": "A page from Nicholas Winton's leather-bound scrapbook containing passport photos of Czech refugee children waiting for British foster homes (Winton Archive).",
-              "author": "Sir Nicholas Winton",
-              "date": "1939",
+              "type": "artefact",
+              "src": "/units/ks2_ww2/assets/doreen_warriner_prague_plaque.jpg",
+              "image": "/units/ks2_ww2/assets/doreen_warriner_prague_plaque.jpg",
+              "title": "Source C: Prague Hotel Alcron Memorial Plaque to Doreen Warriner & Sir Nicholas Winton’s Rescue Testimony",
+              "caption": "Public memorial plaque on the exterior wall of the former Hotel Alcron on Štěpánská Street in Prague honouring British humanitarian Doreen Warriner OBE (1904–1972), who invited Nicholas Winton to Prague in December 1938 and co-led the refugee rescue office (Wikimedia Commons, CC BY-SA 4.0).",
+              "author": "Prague Municipal Memorial / Photograph: Mojmir Churavy (CC BY-SA 4.0)",
+              "date": "1938–1939 (Testimony & Prague Memorial)",
               "context": "To find foster families in Britain, Winton kept large scrapbooks filled with photographs and details of the children. He showed these books to churches, synagogues, and families who agreed to take children into their homes. For fifty years, Winton never told anyone about the books until his wife found them in the attic in 1988. **Hinge Question:** Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
               "hinge_question": "Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
               "question_badge": "NICHOLAS WINTON'S SCRAPBOOK",
               "question": "How does Winton's scrapbook show that saving lives took careful organisation as well as courage?",
               "model_answer": "The scrapbook shows neat rows of children's photographs and details. Winton used this book to find British foster families and raise £50 for each child, proving that careful organisation was needed to get rescue visas.",
-              "provenance_clues": {
-                "author": "Nicholas Winton compiling sponsorship files.",
-                "audience": "Potential British foster parents.",
-                "motive": "To keep an exact record of every child so foster homes and visas could be arranged.",
-                "hinge_question": "Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?"
-              },
               "teacher_notes": {
                 "hinge_question": "Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
                 "source_context": "To find foster families in Britain, Winton kept large scrapbooks filled with photographs and details of the children. He showed these books to churches, synagogues, and families who agreed to take children into their homes. For fifty years, Winton never told anyone about the books until his wife found them in the attic in 1988. **Hinge Question:** Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
@@ -4875,7 +4809,7 @@
               },
               "source_context": "To find foster families in Britain, Winton kept large scrapbooks filled with photographs and details of the children. He showed these books to churches, synagogues, and families who agreed to take children into their homes. For fifty years, Winton never told anyone about the books until his wife found them in the attic in 1988. **Hinge Question:** Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
               "text": "Sir Nicholas Winton (recalling the Prague Kindertransport rescue of 1939): \"There was nobody in Prague dealing with the unaccompanied children at all, and parents were desperate to get their sons and daughters out to safety even if they could not escape themselves. The British Home Office agreed to issue an entry permit for every child under seventeen on two strict conditions: we had to find a British foster family willing to care for the child, and deposit a fifty-pound guarantee for their eventual return home.\"",
-              "provenance": "Sir Nicholas Winton MBE (1909–2015), Prague Rescue Papers (1939) & Imperial War Museum / Holocaust Educational Trust recorded interview.",
+              "provenance": "Sir Nicholas Winton MBE (1909–2015), Prague Rescue Oral History Recording (Imperial War Museum Sound Archive) & Hotel Alcron Memorial Plaque, Prague (CC BY-SA 4.0).",
               "studio_audio": "/audio/sources/ks2_ww2/lesson_5_sC.mp3",
               "studio_voice_label": "Sir Nicholas Winton · Testimony"
             }
@@ -5261,27 +5195,21 @@
           "id": "ks2_ww2_l5_src_a",
           "letter": "A",
           "source_letter": "A",
-          "type": "visual",
-          "src": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
-          "image": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
-          "title": "Source A: Nicholas Winton Holding a Young Refugee Child in Prague (1939)",
-          "caption": "Nicholas Winton cradling a young Czech refugee child in Prague before organising their departure to safety in England (Winton Family Archive).",
-          "author": "British Committee for Refugees from Czechoslovakia Photographer",
-          "date": "Early 1939",
-          "context": "In December 1938, Nicholas Winton visited refugee camps in the Sudetenland where families lived in freezing conditions after fleeing the Nazis. Realising children were in mortal danger, Winton set up a desk in a Prague hotel dining room, taking down names of children whose parents were begging him to save them. **Hinge Question:** What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
-          "hinge_question": "What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
-          "question_badge": "STEPPING FORWARD TO HELP",
-          "question": "What does Source A show about Nicholas Winton's kindness and determination to help children?",
-          "model_answer": "Source A shows a young Nicholas Winton gently holding a rescued refugee child in Prague. It shows that he was a caring volunteer who gave up his holiday to travel into danger and save vulnerable children.",
-          "provenance_clues": {
-            "author": "Colleague working with Winton in Prague.",
-            "audience": "Family and fellow rescue volunteers.",
-            "motive": "To record Nicholas Winton caring for refugee children on the rescue mission in Prague.",
-            "hinge_question": "What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?"
-          },
+          "type": "artefact",
+          "src": "/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg",
+          "image": "/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg",
+          "title": "Source A: \"Für Das Kind · Pro Dítě\" Kindertransport Memorial Unveiled by Sir Nicholas Winton at Liverpool Street Station",
+          "caption": "Flor Kent’s bronze Kindertransport sculpture and bilingual inscription (\"Für Das Kind\" in German, \"Pro Dítě\" in Czech — \"For the Child\") inside London’s Liverpool Street Station, unveiled by 94-year-old rescuer Sir Nicholas Winton in 2003 (Wikimedia Commons, CC BY-SA 2.0).",
+          "author": "Flor Kent (Sculptor) / Photograph: Loco Steve (Wikimedia Commons, CC BY-SA 2.0)",
+          "date": "2003 (Commemorating 1938–1939)",
+          "context": "Unveiled by Sir Nicholas Winton himself at Liverpool Street Station—where his eight Prague trains arrived in 1939—the plinth carries words in both German (\"Für Das Kind\") and Czech (\"Pro Dítě\") alongside an original suitcase cast in bronze. **Hinge Question:** Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
+          "hinge_question": "Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
+          "question_badge": "HONOURING RESCUERS & REFUGEES",
+          "question": "Why was London’s Liverpool Street Station chosen for this memorial unveiled by Sir Nicholas Winton, and why are the words \"For the Child\" carved in both German and Czech?",
+          "model_answer": "Liverpool Street was the exact London station where Kindertransport trains arrived to meet British foster families, and the German and Czech inscriptions honour the homelands and parents who sacrificed everything \"for the child.\"",
           "teacher_notes": {
-            "hinge_question": "What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
-            "source_context": "In December 1938, Nicholas Winton visited refugee camps in the Sudetenland where families lived in freezing conditions after fleeing the Nazis. Realising children were in mortal danger, Winton set up a desk in a Prague hotel dining room, taking down names of children whose parents were begging him to save them. **Hinge Question:** What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?",
+            "hinge_question": "Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
+            "source_context": "Unveiled by Sir Nicholas Winton himself at Liverpool Street Station—where his eight Prague trains arrived in 1939—the plinth carries words in both German (\"Für Das Kind\") and Czech (\"Pro Dítě\") alongside an original suitcase cast in bronze. **Hinge Question:** Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?",
             "provenance_breakdown": {
               "author": "Colleague working with Winton in Prague.",
               "audience": "Family and fellow rescue volunteers.",
@@ -5289,38 +5217,32 @@
             }
           },
           "utility_enquiry": {
-            "question_badge": "STEPPING FORWARD TO HELP",
-            "model_answer": "Source A shows a young Nicholas Winton gently holding a rescued refugee child in Prague. It shows that he was a caring volunteer who gave up his holiday to travel into danger and save vulnerable children.",
+            "question_badge": "HONOURING RESCUERS & REFUGEES",
+            "model_answer": "Liverpool Street was the exact London station where Kindertransport trains arrived to meet British foster families, and the German and Czech inscriptions honour the homelands and parents who sacrificed everything \"for the child.\"",
             "provenance_clues": {
               "author": "Colleague working with Winton in Prague.",
               "audience": "Family and fellow rescue volunteers.",
               "motive": "To record Nicholas Winton caring for refugee children on the rescue mission in Prague."
             }
           },
-          "source_context": "In December 1938, Nicholas Winton visited refugee camps in the Sudetenland where families lived in freezing conditions after fleeing the Nazis. Realising children were in mortal danger, Winton set up a desk in a Prague hotel dining room, taking down names of children whose parents were begging him to save them. **Hinge Question:** What motivated a young 29-year-old stockbroker to risk his job and reputation to save children he had never met?"
+          "source_context": "Unveiled by Sir Nicholas Winton himself at Liverpool Street Station—where his eight Prague trains arrived in 1939—the plinth carries words in both German (\"Für Das Kind\") and Czech (\"Pro Dítě\") alongside an original suitcase cast in bronze. **Hinge Question:** Why is the Liverpool Street memorial inscribed in both German and Czech (\"For the Child\") right beside the railway platforms?"
         },
         {
           "id": "ks2_ww2_l5_src_b",
           "letter": "B",
           "source_letter": "B",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
-          "image": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
-          "title": "Source B: Volunteer Rescuer Trevor Chadwick Holding an Infant Refugee in Prague (1939)",
-          "caption": "Dorset schoolteacher Trevor Chadwick photographed outdoors in Prague in 1939 holding a baby refugee in his arms while working with Doreen Warriner and Nicholas Winton to arrange safe departures (Chadwick Family Archive).",
-          "author": "Volunteer Rescue Worker in Prague",
-          "date": "1939",
+          "src": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
+          "image": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
+          "title": "Source B: Archival Portrait of British Volunteer Rescuer Trevor Chadwick (c. 1935)",
+          "caption": "Pre-war portrait of Dorset schoolteacher Trevor Chadwick (1907–1979), who left his teaching post in Swanage in early 1939 to run the Prague Kindertransport children’s office on the ground alongside Doreen Warriner (Wikimedia Commons, Public Domain).",
+          "author": "Anonymous Pre-War Photographer (Wikimedia Commons, Public Domain)",
+          "date": "c. 1935 (Prague Rescue 1939)",
           "context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
           "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
           "question_badge": "RESCUE TEAM IN PRAGUE",
           "question": "What does Source B remind us about how old even the youngest Kindertransport refugees were, and why volunteers like Trevor Chadwick were vital?",
           "model_answer": "Source B shows Dorset teacher Trevor Chadwick gently holding a tiny baby outdoors in Prague. Even infants and toddlers had to travel without their parents, so brave volunteers in Prague were vital to care for them and guide them safely onto the trains.",
-          "provenance_clues": {
-            "author": "Prague rescue volunteer.",
-            "audience": "Preserved in family papers.",
-            "motive": "To celebrate Trevor Chadwick's courage in rescuing children from occupied Czechoslovakia.",
-            "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?"
-          },
           "teacher_notes": {
             "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
             "source_context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
@@ -5345,24 +5267,18 @@
           "id": "ks2_ww2_l5_src_c",
           "letter": "C",
           "source_letter": "C",
-          "type": "manuscript",
-          "src": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
-          "image": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
-          "title": "Source C: Nicholas Winton's Scrapbook of Children's Photographs (1939)",
-          "caption": "A page from Nicholas Winton's leather-bound scrapbook containing passport photos of Czech refugee children waiting for British foster homes (Winton Archive).",
-          "author": "Sir Nicholas Winton",
-          "date": "1939",
+          "type": "artefact",
+          "src": "/units/ks2_ww2/assets/doreen_warriner_prague_plaque.jpg",
+          "image": "/units/ks2_ww2/assets/doreen_warriner_prague_plaque.jpg",
+          "title": "Source C: Prague Hotel Alcron Memorial Plaque to Doreen Warriner & Sir Nicholas Winton’s Rescue Testimony",
+          "caption": "Public memorial plaque on the exterior wall of the former Hotel Alcron on Štěpánská Street in Prague honouring British humanitarian Doreen Warriner OBE (1904–1972), who invited Nicholas Winton to Prague in December 1938 and co-led the refugee rescue office (Wikimedia Commons, CC BY-SA 4.0).",
+          "author": "Prague Municipal Memorial / Photograph: Mojmir Churavy (CC BY-SA 4.0)",
+          "date": "1938–1939 (Testimony & Prague Memorial)",
           "context": "To find foster families in Britain, Winton kept large scrapbooks filled with photographs and details of the children. He showed these books to churches, synagogues, and families who agreed to take children into their homes. For fifty years, Winton never told anyone about the books until his wife found them in the attic in 1988. **Hinge Question:** Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
           "hinge_question": "Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
           "question_badge": "NICHOLAS WINTON'S SCRAPBOOK",
           "question": "How does Winton's scrapbook show that saving lives took careful organisation as well as courage?",
           "model_answer": "The scrapbook shows neat rows of children's photographs and details. Winton used this book to find British foster families and raise £50 for each child, proving that careful organisation was needed to get rescue visas.",
-          "provenance_clues": {
-            "author": "Nicholas Winton compiling sponsorship files.",
-            "audience": "Potential British foster parents.",
-            "motive": "To keep an exact record of every child so foster homes and visas could be arranged.",
-            "hinge_question": "Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?"
-          },
           "teacher_notes": {
             "hinge_question": "Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
             "source_context": "To find foster families in Britain, Winton kept large scrapbooks filled with photographs and details of the children. He showed these books to churches, synagogues, and families who agreed to take children into their homes. For fifty years, Winton never told anyone about the books until his wife found them in the attic in 1988. **Hinge Question:** Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
@@ -5383,7 +5299,7 @@
           },
           "source_context": "To find foster families in Britain, Winton kept large scrapbooks filled with photographs and details of the children. He showed these books to churches, synagogues, and families who agreed to take children into their homes. For fifty years, Winton never told anyone about the books until his wife found them in the attic in 1988. **Hinge Question:** Why did Nicholas Winton never brag about saving 669 children, keeping his scrapbooks locked in an attic for fifty years?",
           "text": "Sir Nicholas Winton (recalling the Prague Kindertransport rescue of 1939): \"There was nobody in Prague dealing with the unaccompanied children at all, and parents were desperate to get their sons and daughters out to safety even if they could not escape themselves. The British Home Office agreed to issue an entry permit for every child under seventeen on two strict conditions: we had to find a British foster family willing to care for the child, and deposit a fifty-pound guarantee for their eventual return home.\"",
-          "provenance": "Sir Nicholas Winton MBE (1909–2015), Prague Rescue Papers (1939) & Imperial War Museum / Holocaust Educational Trust recorded interview.",
+          "provenance": "Sir Nicholas Winton MBE (1909–2015), Prague Rescue Oral History Recording (Imperial War Museum Sound Archive) & Hotel Alcron Memorial Plaque, Prague (CC BY-SA 4.0).",
           "studio_audio": "/audio/sources/ks2_ww2/lesson_5_sC.mp3",
           "studio_voice_label": "Sir Nicholas Winton · Testimony"
         },
@@ -5577,7 +5493,7 @@
         "topicLabel": "Enquiry 05: Who Were the Rescuers? (1938–1939)",
         "title": "How Did Volunteers Like Nicholas Winton Rescue 669 Children from Prague?",
         "spokenTitle": "How did volunteers like Nicholas Winton rescue 669 children from Prague?",
-        "thumbUrl": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
+        "thumbUrl": "/units/ks2_ww2/assets/nicholas_winton_memorial_prague_station.jpg",
         "provenanceNote": "Imperial War Museums, The National Archives (Kew), Wiener Holocaust Library, Bundesarchiv & Yad Vashem (Zero AI Imagery)",
         "bridges": [
           "Prague Hotel List",
@@ -5589,7 +5505,7 @@
             "badge": "Stage 1",
             "heading": "A Cancelled Skiing Holiday",
             "date": "Dec 1938",
-            "img": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
+            "img": "/units/ks2_ww2/assets/nicholas_winton_memorial_prague_station.jpg",
             "mode": "contain",
             "stat": "Prague Hotel Dining Table Becomes Rescue Desk",
             "connective": "How did volunteers like Nicholas Winton rescue 669 children from Prague?",
@@ -5601,7 +5517,7 @@
             "badge": "Stage 2",
             "heading": "Teamwork Across Two Cities",
             "date": "Spring 1939",
-            "img": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
+            "img": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
             "mode": "contain",
             "stat": "Warriner, Chadwick & Babi Winton Unite",
             "connective": "Saving hundreds of children took a brave team across two countries.",
@@ -5613,7 +5529,7 @@
             "badge": "Stage 3",
             "heading": "669 Saved & Secret Scrapbook",
             "date": "1939 & 1988",
-            "img": "/units/ks2_ww2/assets/winton_scrapbook_children_photos.jpg",
+            "img": "/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg",
             "mode": "contain",
             "stat": "8 Trains Save 669 Children Before War Begins",
             "connective": "Eight rescue trains reached London before war slammed the borders shut.",
@@ -11356,7 +11272,7 @@
         "source_context": {
           "Source A": "In summer 1945, the Central British Fund for Jewish Relief persuaded the British Home Office to welcome orphaned child Holocaust survivors to Britain. On 14 August 1945, ten converted RAF Short Stirling bombers flew the first 300 children from Prague to Crosby-on-Eden RAF airfield near Carlisle in Cumbria, where welcoming officials checked their chalk-marked bags before coaches carried them to Lake Windermere. **Hinge Question:** Why was it so important to bring deeply traumatised child survivors to a quiet lakeside sanctuary in Cumbria rather than a noisy city hospital?",
           "Source B": "At Calgarth, child psychologists, doctors, and volunteer teachers provided care, fresh food, and English lessons. The children had spent years in camps where education was forbidden; learning English helped them rebuild their confidence and prepare for new lives in Britain. **Hinge Question:** How did friendship and solidarity among the 'Windermere Children' help them heal from unimaginable trauma?",
-          "Source C": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
+          "Source C": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
           "Source D": "Having known only barbed wire and crowded bunks for years, the children were amazed to have their own clean beds, sheets, running water, and freedom to walk in the hills. The boys and girls formed a tight-knit family who supported each other for the rest of their lives. **Hinge Question:** Why did the surviving children describe arriving at Lake Windermere as 'paradise on earth'?",
           "Source E": "Ten converted RAF Short Stirling bombers made round-trip flights from Prague to Cumberland in August 1945. Many children had never seen an airplane before; RAF aircrews gave them chocolate and oranges during the flight, marking their very first taste of kindness from soldiers. **Hinge Question:** How did the compassionate actions of the RAF crew members begin the children's healing process before they even landed on British soil?"
         },
@@ -11402,7 +11318,7 @@
               {
                 "time": "08–22m",
                 "label": "Stage 3 Reading & Remaining Sources",
-                "instruction": "Read Stage 3 (\"The '45 Aid Society & Keeping Real Voices Alive\") and explore Source C (Cover Artwork: 'After the War: From Auschwitz to…), Source D (Ambleside & Waterhead on Lake Windermere — The…), Source E (RAF Transport Command Short Stirling Aircraft…) to complete the historical picture."
+                "instruction": "Read Stage 3 (\"The '45 Aid Society & Keeping Real Voices Alive\") and explore Source C (Child Survivors Smiling from the Doorway of an RAF Short Stirling), Source D (Ambleside & Waterhead on Lake Windermere — The…), Source E (RAF Transport Command Short Stirling Aircraft…) to complete the historical picture."
               },
               {
                 "time": "22–42m",
@@ -11645,26 +11561,20 @@
               "letter": "C",
               "source_letter": "C",
               "type": "visual",
-              "src": "/units/ks2_ww2/assets/tom_palmer_after_the_war.jpg",
-              "image": "/units/ks2_ww2/assets/tom_palmer_after_the_war.jpg",
-              "title": "Source C: Cover Artwork: 'After the War: From Auschwitz to Ambleside' by Tom Palmer",
-              "caption": "Front cover of Tom Palmer's historical novel 'After the War', based on the true testimonies of child survivors who found sanctuary in the Lake District (Barrington Stoke, 2020).",
-              "author": "Tom Palmer / Barrington Stoke",
-              "date": "2020",
-              "context": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
-              "hinge_question": "Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
-              "question_badge": "STORIES OF REAL SURVIVORS",
-              "question": "Why is Tom Palmer's book an engaging way for children today to learn about the Windermere Children?",
-              "model_answer": "The book cover tells the true story through the eyes of child survivors who became close friends. It helps young readers understand how friendship, outdoor activities, and kindness helped the children heal after surviving the war.",
-              "provenance_clues": {
-                "author": "Award-winning children's historical author Tom Palmer.",
-                "audience": "Key Stage 2 and Key Stage 3 readers.",
-                "motive": "To share the inspiring true story of the Windermere Children with modern young readers.",
-                "hinge_question": "Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?"
-              },
+              "src": "/units/ks2_ww2/assets/windermere_raf_orphans_arrival_ch15903.jpg",
+              "image": "/units/ks2_ww2/assets/windermere_raf_orphans_arrival_ch15903.jpg",
+              "title": "Source C: Child Survivors Smiling from the Doorway of an RAF Short Stirling on Arrival in Britain (August 1945)",
+              "caption": "Official Royal Air Force photograph showing smiling orphaned child survivors peering from the fuselage doorway of a converted RAF Short Stirling heavy bomber with their small suitcase as a British helper lifts the youngest child down the ladder onto British soil (Imperial War Museum CH 15903, Public Domain).",
+              "author": "Flight Lieutenant Miller, Royal Air Force Official Photographer (Imperial War Museum CH 15903)",
+              "date": "August 1945",
+              "context": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
+              "hinge_question": "What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
+              "question_badge": "STEPPING ONTO SAFE BRITISH SOIL",
+              "question": "Look closely at the children in the aircraft doorway and the adult helper at the foot of the ladder in Source C. What clues show relief, kindness, and a fresh start?",
+              "model_answer": "The older boys smile down from the bomber doorway holding their small suitcase while a gentle British helper lifts the youngest child safely down the ladder, showing immediate warmth, protection, and relief upon reaching peace in Britain.",
               "teacher_notes": {
-                "hinge_question": "Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
-                "source_context": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
+                "hinge_question": "What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
+                "source_context": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
                 "provenance_breakdown": {
                   "author": "Award-winning children's historical author Tom Palmer.",
                   "audience": "Key Stage 2 and Key Stage 3 readers.",
@@ -11672,15 +11582,15 @@
                 }
               },
               "utility_enquiry": {
-                "question_badge": "STORIES OF REAL SURVIVORS",
-                "model_answer": "The book cover tells the true story through the eyes of child survivors who became close friends. It helps young readers understand how friendship, outdoor activities, and kindness helped the children heal after surviving the war.",
+                "question_badge": "STEPPING ONTO SAFE BRITISH SOIL",
+                "model_answer": "The older boys smile down from the bomber doorway holding their small suitcase while a gentle British helper lifts the youngest child safely down the ladder, showing immediate warmth, protection, and relief upon reaching peace in Britain.",
                 "provenance_clues": {
                   "author": "Award-winning children's historical author Tom Palmer.",
                   "audience": "Key Stage 2 and Key Stage 3 readers.",
                   "motive": "To share the inspiring true story of the Windermere Children with modern young readers."
                 }
               },
-              "source_context": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?"
+              "source_context": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?"
             }
           ],
           "content": "<span class=\"para-ref\">[11.5]</span> Calling themselves **\"The Boys\"** (a nickname shared by both boys and girls), the **Windermere Children** stayed lifelong friends like one big family. Though they arrived with nothing and spoke little English, they rebuilt proud lives. They became doctors, teachers, engineers, parents, and even British Olympic weightlifter **Sir Ben Helfgott**.<br><br><span class=\"para-ref\">[11.6]</span> In **1963**, they started **The '45 Aid Society** to raise money for charities and thank Britain. Later, survivors such as **Arek Hersh MBE** and **Sam Laskier** shared **oral history** memories in schools. They also helped author **Tom Palmer** write <em>After the War: From Auschwitz to Ambleside</em>, keeping their real voices alive."
@@ -12168,26 +12078,20 @@
           "letter": "C",
           "source_letter": "C",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/tom_palmer_after_the_war.jpg",
-          "image": "/units/ks2_ww2/assets/tom_palmer_after_the_war.jpg",
-          "title": "Source C: Cover Artwork: 'After the War: From Auschwitz to Ambleside' by Tom Palmer",
-          "caption": "Front cover of Tom Palmer's historical novel 'After the War', based on the true testimonies of child survivors who found sanctuary in the Lake District (Barrington Stoke, 2020).",
-          "author": "Tom Palmer / Barrington Stoke",
-          "date": "2020",
-          "context": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
-          "hinge_question": "Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
-          "question_badge": "STORIES OF REAL SURVIVORS",
-          "question": "Why is Tom Palmer's book an engaging way for children today to learn about the Windermere Children?",
-          "model_answer": "The book cover tells the true story through the eyes of child survivors who became close friends. It helps young readers understand how friendship, outdoor activities, and kindness helped the children heal after surviving the war.",
-          "provenance_clues": {
-            "author": "Award-winning children's historical author Tom Palmer.",
-            "audience": "Key Stage 2 and Key Stage 3 readers.",
-            "motive": "To share the inspiring true story of the Windermere Children with modern young readers.",
-            "hinge_question": "Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?"
-          },
+          "src": "/units/ks2_ww2/assets/windermere_raf_orphans_arrival_ch15903.jpg",
+          "image": "/units/ks2_ww2/assets/windermere_raf_orphans_arrival_ch15903.jpg",
+          "title": "Source C: Child Survivors Smiling from the Doorway of an RAF Short Stirling on Arrival in Britain (August 1945)",
+          "caption": "Official Royal Air Force photograph showing smiling orphaned child survivors peering from the fuselage doorway of a converted RAF Short Stirling heavy bomber with their small suitcase as a British helper lifts the youngest child down the ladder onto British soil (Imperial War Museum CH 15903, Public Domain).",
+          "author": "Flight Lieutenant Miller, Royal Air Force Official Photographer (Imperial War Museum CH 15903)",
+          "date": "August 1945",
+          "context": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
+          "hinge_question": "What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
+          "question_badge": "STEPPING ONTO SAFE BRITISH SOIL",
+          "question": "Look closely at the children in the aircraft doorway and the adult helper at the foot of the ladder in Source C. What clues show relief, kindness, and a fresh start?",
+          "model_answer": "The older boys smile down from the bomber doorway holding their small suitcase while a gentle British helper lifts the youngest child safely down the ladder, showing immediate warmth, protection, and relief upon reaching peace in Britain.",
           "teacher_notes": {
-            "hinge_question": "Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
-            "source_context": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?",
+            "hinge_question": "What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
+            "source_context": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?",
             "provenance_breakdown": {
               "author": "Award-winning children's historical author Tom Palmer.",
               "audience": "Key Stage 2 and Key Stage 3 readers.",
@@ -12195,15 +12099,15 @@
             }
           },
           "utility_enquiry": {
-            "question_badge": "STORIES OF REAL SURVIVORS",
-            "model_answer": "The book cover tells the true story through the eyes of child survivors who became close friends. It helps young readers understand how friendship, outdoor activities, and kindness helped the children heal after surviving the war.",
+            "question_badge": "STEPPING ONTO SAFE BRITISH SOIL",
+            "model_answer": "The older boys smile down from the bomber doorway holding their small suitcase while a gentle British helper lifts the youngest child safely down the ladder, showing immediate warmth, protection, and relief upon reaching peace in Britain.",
             "provenance_clues": {
               "author": "Award-winning children's historical author Tom Palmer.",
               "audience": "Key Stage 2 and Key Stage 3 readers.",
               "motive": "To share the inspiring true story of the Windermere Children with modern young readers."
             }
           },
-          "source_context": "Author Tom Palmer conducted in-depth research with surviving members of the '45 Aid Society—including Arek Hersh and Sir Ben Helfgott—to write his award-winning novel, introducing young readers to how children who had lost everything learned to laugh and live again by Lake Windermere. **Hinge Question:** Why is historical fiction based on real survivor testimonies a powerful way for young people today to connect with Holocaust history?"
+          "source_context": "Photographed by Royal Air Force official photographer Flight Lieutenant Miller in August 1945 (IWM CH 15903), this famous image captures the exact moment orphaned child camp survivors stepped out of converted RAF bombers into safety in Britain—beginning the lifelong friendship later celebrated by The ’45 Aid Society and shared with schools and authors such as Tom Palmer. **Hinge Question:** What details in the children’s faces and the helper’s arms in Source C capture the transition from wartime terror to peacetime care?"
         },
         {
           "id": "ks2_ww2_l11_src_d",
@@ -12414,8 +12318,8 @@
             "badge": "Stage 2",
             "heading": "Bread Under Pillows & Bikes",
             "date": "Autumn 1945",
-            "img": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
-            "mode": "landscape",
+            "img": "/units/ks2_ww2/assets/windermere_raf_orphans_arrival_ch15903.jpg",
+            "mode": "contain",
             "pos": "center 35%",
             "stat": "Calgarth Estate: Art, English & Red Bicycles",
             "connective": "At first, hungry children hid slices of bread beneath their pillows.",
@@ -12530,7 +12434,7 @@
       ],
       "lifespan": "1930 – 2020",
       "role": "Czech Kindertransport Child Refugee & Holocaust Educator",
-      "image": "/units/ks2_ww2/assets/vera_portrait.jpg",
+      "image": null,
       "image_position": "center 18%",
       "origins": "Born Vera Löwyová in Czechoslovakia; after German soldiers marched into Prague in March 1939, her loving parents put nine-year-old Vera on one of Nicholas Winton’s rescue trains.",
       "significance": "One of nearly 10,000 unaccompanied refugee children brought to safety in Britain on the Kindertransport with just one small suitcase, an autograph diary, and her porcelain doll.",
@@ -12567,7 +12471,7 @@
       ],
       "lifespan": "Chadwick: 1907–1979 · Warriner: 1904–1972",
       "role": "British Committee for Refugees Rescuers on the Ground in Prague",
-      "image": "/units/ks2_ww2/assets/trevor_chadwick_prague.jpg",
+      "image": null,
       "image_position": "center 45%",
       "origins": "British economist Doreen Warriner led the British Committee for Refugees from Czechoslovakia in Prague, joined by Dorset Latin schoolteacher Trevor Chadwick.",
       "significance": "Proved that the Prague Kindertransport was a courageous team effort: while Winton secured visas and foster homes in London, Warriner and Chadwick risked arrest inside Nazi-occupied Prague.",
@@ -12634,7 +12538,7 @@
       ],
       "lifespan": "Helfgott: 1929–2023 · Hersh: b. 1928",
       "role": "Child Holocaust Survivors Among the 300 \"Windermere Children\"",
-      "image": "/units/ks2_ww2/assets/windermere_children_english_lesson_1945.jpg",
+      "image": null,
       "image_position": "center center",
       "origins": "Polish-Jewish teenagers orphaned in the Holocaust who were flown from Prague to RAF Crosby-on-Eden on 14 August 1945 aboard converted RAF Short Stirling bombers funded by the Central British Fund.",
       "significance": "Recovered together on the Calgarth Estate beside Lake Windermere with gentle care from Dr Oscar Friedman and Marie Paneth, rebuilding proud lives in Britain and founding The '45 Aid Society in 1963.",
@@ -12810,7 +12714,7 @@
       "lesson_label": "Enquiry 3",
       "book_title": "Marta Appel’s Eyewitness Memoir of Jewish Family Life in Germany (1933–1937)",
       "author": "Marta Appel (1940 Harvard / Leo Baeck Institute Memoir Collection)",
-      "cover_image": "/units/ks2_ww2/assets/prewar_jewish_family_portrait_1938.jpg",
+      "cover_image": "/units/ks2_ww2/assets/kracowski_family_bialystok_1935.jpg",
       "cover_caption": "A pre-war European Jewish extended family studio portrait showing grandparents, parents, and children before wartime persecution tore communities apart.",
       "author_context": "Marta Appel was the wife of a respected rabbi in the German city of Dortmund. After escaping to safety before the outbreak of war, she wrote down her true memories in 1940 for a historical competition run by Harvard University so the world would understand how Nazi laws step by step excluded ordinary German Jewish families and schoolchildren from everyday life.",
       "source_type": "primary_memoir",
@@ -12868,7 +12772,7 @@
       "lesson_label": "Enquiry 4",
       "book_title": "Parliamentary Debate on Child Refugees (1938) & Vera Löwyová’s Journey from Prague",
       "author": "Home Secretary Sir Samuel Hoare (Hansard, 21 Nov 1938) & IWM Kindertransport Archive",
-      "cover_image": "/units/ks2_ww2/assets/vera_portrait.jpg",
+      "cover_image": "/units/ks2_ww2/assets/kindertransport_harwich_dec1938.jpg",
       "cover_caption": "Young Vera Löwyová photographed in Czechoslovakia before boarding a Kindertransport train from Prague to Britain in 1939.",
       "author_context": "Eleven days after Kristallnacht in November 1938, the British House of Commons debated an urgent appeal from Jewish, Quaker, and Christian relief committees to rescue unaccompanied children under seventeen. That decision created the Kindertransport, saving nearly 10,000 children—including ten-year-old Vera Löwyová (later Vera Gissing) and her sister Eva from Czechoslovakia.",
       "source_type": "primary_speech",
@@ -12926,8 +12830,8 @@
       "lesson_label": "Enquiry 5",
       "book_title": "Nicholas Winton’s Appeals from Prague & Rescue Scrapbook Letters (1939)",
       "author": "Nicholas Winton & British Committee for Refugees from Czechoslovakia (1939)",
-      "cover_image": "/units/ks2_ww2/assets/winton_prague_child_1939.jpg",
-      "cover_caption": "Young London stockbroker Nicholas Winton holding a refugee toddler in Prague during the 1939 rescue operation that saved 669 children.",
+      "cover_image": "/units/ks2_ww2/assets/nicholas_winton_memorial_prague_station.jpg",
+      "cover_caption": "Flor Kent’s bronze memorial statue on Platform 1 of Prague Main Station honouring Sir Nicholas Winton and the 669 children rescued in 1939.",
       "author_context": "In December 1938, 29-year-old London stockbroker Nicholas Winton cancelled a skiing holiday in Switzerland after his friend Martin Blake asked him to visit refugee camps in Czechoslovakia. Working from a hotel dining-room table in Prague alongside volunteers Doreen Warriner and Trevor Chadwick, Winton compiled lists of endangered children and organised eight rescue trains to London before war closed the borders.",
       "source_type": "primary_testimony",
       "source_type_label": "Archival Rescue Letters & Scrapbook Record (1939)",

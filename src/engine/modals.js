@@ -3374,6 +3374,11 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     },
     { id: 'eee', title: 'Paper 2: Early Elizabethan England (1558–1588)', group: 'GCSE History' },
     {
+      id: 'gcse_cold_war',
+      title: 'Paper 2: Superpower Relations & the Cold War (1941–1991)',
+      group: 'GCSE History',
+    },
+    {
       id: 'weimar_nazi_germany',
       title: 'Paper 3: Weimar & Nazi Germany (1918–1939)',
       group: 'GCSE History',

@@ -2,8 +2,8 @@
   "unit_id": "edexcel_medicine",
   "paper_code": "1HI0/11",
   "paper_name": "Paper 1: Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18",
-  "total_papers_analyzed": 8,
-  "year_range": "2018–2026",
+  "total_papers_analyzed": 7,
+  "year_range": "2018–2025",
   "papers": [
     {
       "year": 2018,
@@ -19,7 +19,7 @@
           "type": "feature",
           "topic": "Western Front: Blood Transfusions",
           "spec_topic": "Context: Blood transfusions and developments in storage",
-          "question_text": "Describe two features of blood transfusions on the Western Front during the First World War.",
+          "question_text": "Outline two key characteristics of how blood transfusions were carried out on the Western Front (1914–18).",
           "stimulus": null,
           "indicative_content": [
             "Blood was transferred directly from donor to patient using a syringe and tube (syringe-cannula technique) before storage methods were developed.",
@@ -36,8 +36,8 @@
           "type": "how-useful",
           "topic": "Western Front: Treatment of Battle Injuries",
           "spec_topic": "The work of RAMC and FANY; medical care along chain of evacuation",
-          "question_text": "How useful are Sources A and B for an enquiry into the treatment of battle injuries by medical staff on the Western Front?",
-          "stimulus": "Source A: Account by nurse Shirley Millard at a Field Hospital near the front line (1918). Source B: Photograph of an operating theatre in a Casualty Clearing Station (1917).",
+          "question_text": "Assess the value of Sources A and B for an investigation into how frontline medical personnel treated combat wounds on the Western Front.",
+          "stimulus": "Source A: Testimony of volunteer nurse Shirley Millard working at a frontline Field Hospital (1918). Source B: Archival photograph showing a Casualty Clearing Station operating theatre (1917).",
           "indicative_content": [
             "Source A gives useful evidence of rapid emergency surgery under extreme pressure and the emotional/physical toll on nurses.",
             "Source B provides visual evidence of clean operating facilities, aseptic precautions (gowns, sterilised equipment), and artificial lighting in a CCS.",
@@ -53,7 +53,7 @@
           "type": "follow-up",
           "topic": "Western Front: Treatment of Battle Injuries",
           "spec_topic": "The work of RAMC and FANY; medical care along chain of evacuation",
-          "question_text": "How could you follow up Source A to find out more about the treatment of battle injuries by medical staff on the Western Front?",
+          "question_text": "Design a historical follow-up enquiry using Source A to investigate further how Western Front medical staff treated combat wounds.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source A: Quote a specific detail about treatment, e.g. \"We operated constantly without rest\" or specific injury descriptions.",
@@ -71,7 +71,7 @@
           "type": "similarity-difference",
           "topic": "Medieval vs Industrial Hospital Care",
           "spec_topic": "Approaches to prevention and treatment: hospitals across time",
-          "question_text": "Explain one way in which care in hospitals in the years c1250-c1500 was different from care in hospitals in the years c1700-c1900.",
+          "question_text": "Identify and explain one key difference between hospital care in medieval England (c1250–c1500) and hospital care in the industrial era (c1700–c1900).",
           "stimulus": null,
           "indicative_content": [
             "Medieval hospitals were run by religious orders (monks and nuns) focusing on spiritual care, hospitality, rest, and prayer rather than medical treatment.",
@@ -87,8 +87,8 @@
           "type": "causation",
           "topic": "Prevention of Illness c1700-present",
           "spec_topic": "Approaches to prevention: smallpox vaccination, public health acts, modern government campaigns",
-          "question_text": "Explain why there was progress in the prevention of illness in the years c1700–present.",
-          "stimulus": "• Edward Jenner (1796 smallpox vaccine)\n• the Public Health Act 1875\n• You must also use information of your own.",
+          "question_text": "Analyse the reasons why methods of preventing disease advanced between c1700 and the present day.",
+          "stimulus": "• Optional focus: Jenner’s 1796 smallpox vaccination\n• Optional focus: compulsory measures in the 1875 Public Health Act\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Jenner’s cowpox vaccine proved immunity could be generated artificially, leading to government-mandated vaccination in 1853 and eradication of smallpox.",
             "The 1875 Public Health Act marked the end of laissez-faire government attitude, compelling local councils to provide clean water, sewers, and refuse collection.",
@@ -104,8 +104,8 @@
           "type": "judgement-essay",
           "topic": "Understanding Cause of Disease c1250-c1700",
           "spec_topic": "Ideas about the causes of disease and illness: Medieval to Renaissance",
-          "question_text": "‘There was little progress in understanding the cause of disease in the years c1250-c1700.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the Theory of the Four Humours\n• the Royal Society\n• You must also use information of your own.",
+          "question_text": "‘Understanding of what caused disease scarcely changed between c1250 and c1700.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: persistence of Humoral theory\n• Optional focus: scientific inquiry at the Royal Society\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing: The Four Humours and miasma remained the dominant explanations during both the Black Death (1348) and the Great Plague (1665); supernatural and astrological beliefs persisted strongly.",
             "Arguments disagreeing: The Renaissance brought humanism and empirical observation; the Royal Society (1660) promoted scientific testing; Thomas Sydenham classified diseases by symptoms; Leeuwenhoek observed animalcules (microbes) under early microscopes.",
@@ -121,8 +121,8 @@
           "type": "judgement-essay",
           "topic": "Advances in Surgery: 18th/19th Century vs 20th Century",
           "spec_topic": "Advances in surgery: anaesthetics, antiseptics, high-tech surgery",
-          "question_text": "‘The advances in surgery made in the years c1700-c1900 were more significant than advances in surgery made in the period c1900-present.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Joseph Lister (carbolic acid 1865)\n• blood transfusions\n• You must also use information of your own.",
+          "question_text": "‘Surgical breakthroughs achieved between c1700 and c1900 mattered more than surgical developments since c1900.’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: Lister’s antiseptic carbolic spray (1865)\n• Optional focus: twentieth-century blood storage and transfusions\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Significance of c1700-c1900: Overcame pain (Simpson and chloroform 1847) and infection (Lister and carbolic acid 1865, leading to aseptic surgery), transforming surgery from a deadly last resort into a safe medical specialty.",
             "Significance of c1900-present: Solved blood loss (Landsteiner blood groups 1901, sodium citrate storage 1914); enabled organ transplants (Barnard 1967); modern high-tech surgery (keyhole, microsurgery, robotic and laser surgery).",
@@ -146,7 +146,7 @@
           "type": "feature",
           "topic": "Western Front: Trench Ill Health",
           "spec_topic": "Ill health arising from the trench environment: trench foot, trench fever, shell shock",
-          "question_text": "Describe two features of ill health among soldiers that arose from the trench environment.",
+          "question_text": "Outline two key characteristics of soldier illnesses caused directly by trench conditions on the Western Front.",
           "stimulus": null,
           "indicative_content": [
             "Trench foot was caused by standing in cold water and mud for long periods, causing numbness, swelling, and potentially gangrene requiring amputation.",
@@ -163,8 +163,8 @@
           "type": "how-useful",
           "topic": "Western Front: Stretcher Bearers",
           "spec_topic": "Transport and communications: stretcher bearers and evacuation chain",
-          "question_text": "How useful are Sources A and B for an enquiry into the work of the stretcher bearers on the Western Front?",
-          "stimulus": "Source A: Diary entry by Private T. R. Green, a stretcher bearer in the 8th Battalion King’s Own Yorkshire Light Infantry (1916). Source B: Photograph of stretcher bearers carrying a wounded soldier through deep mud near Boesinghe during Third Ypres (1917).",
+          "question_text": "Assess the value of Sources A and B for an investigation into the duties and challenges of RAMC stretcher bearers on the Western Front.",
+          "stimulus": "Source A: 1916 diary entry by stretcher bearer Private T. R. Green (8th Battalion KOYLI). Source B: 1917 photograph of bearers carrying a casualty through Third Ypres mud near Boesinghe.",
           "indicative_content": [
             "Source A illustrates the physical exhaustion, constant danger from shelling, and psychological pressure experienced by stretcher-bearers during the Somme.",
             "Source B shows the horrific terrain conditions of Third Ypres (Passchendaele), where four to six men were needed per stretcher due to knee-deep mud.",
@@ -180,7 +180,7 @@
           "type": "follow-up",
           "topic": "Western Front: Stretcher Bearers",
           "spec_topic": "Transport and communications: stretcher bearers and evacuation chain",
-          "question_text": "How could you follow up Source A to find out more about the work of the stretcher bearers on the Western Front?",
+          "question_text": "Design a historical follow-up enquiry using Source A to investigate further the duties and challenges of Western Front stretcher bearers.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source A: Quote a specific detail regarding casualty evacuation numbers or time taken.",
@@ -198,7 +198,7 @@
           "type": "similarity-difference",
           "topic": "Ideas About Causes of Illness: 18th/19th Century vs Modern",
           "spec_topic": "Ideas about the cause of disease: Miasma/Spontaneous Generation vs Genetics/Lifestyle",
-          "question_text": "Explain one way in which ideas about the cause of illness in the years c1700-c1850 were different from ideas about the cause of illness in the years c1900-present.",
+          "question_text": "Identify and explain one key difference between beliefs about the causes of illness in c1700–c1850 and scientific explanations since c1900.",
           "stimulus": null,
           "indicative_content": [
             "In c1700-c1850, people believed illness was caused by miasma (bad air from decaying matter) or spontaneous generation of microbes from rotting material.",
@@ -214,8 +214,8 @@
           "type": "causation",
           "topic": "Renaissance Medical Knowledge c1500-c1700",
           "spec_topic": "The Renaissance: Sydenham, Vesalius, Harvey, the printing press, Royal Society",
-          "question_text": "Explain why there were improvements in medical knowledge in the years c1500-c1700.",
-          "stimulus": "• Thomas Sydenham\n• the printing press\n• You must also use information of your own.",
+          "question_text": "Analyse why medical knowledge and anatomical understanding advanced during the Medical Renaissance (c1500–c1700).",
+          "stimulus": "• Optional focus: clinical observation by Thomas Sydenham\n• Optional focus: wider circulation of texts via movable-type printing\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Thomas Sydenham advocated empirical bedside observation and classified diseases into species based on symptoms rather than individual humour balances.",
             "The printing press (Gutenberg) allowed ideas and detailed anatomical diagrams (like Vesalius’s Fabrica) to be reproduced rapidly and cheaply without monk copy errors.",
@@ -231,8 +231,8 @@
           "type": "judgement-essay",
           "topic": "Galen & Medieval Medical Care c1250-c1500",
           "spec_topic": "Medieval medicine: Galen, Four Humours, Church control, treatments",
-          "question_text": "‘The main reason why medical care and treatment was ineffective during the medieval period was because medical knowledge was based on Galen’s ideas’. How far do you agree? Explain your answer.",
-          "stimulus": "• Theory of Opposites\n• hospitals\n• You must also use information of your own.",
+          "question_text": "‘Medieval medical treatments failed primarily because practitioners relied uncritically on Galen’s writings.’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: balancing humours via the Theory of Opposites\n• Optional focus: Church-run medieval hospitals\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing: Galen’s incorrect theories (e.g. blood generated in the liver and consumed, Four Humours and Theory of Opposites) led to useless or harmful treatments like bleeding, purging, and dietary balancing.",
             "Arguments disagreeing: Role of the Catholic Church in stifling enquiry (banning dissection, promoting Galen as dogma); lack of scientific technology (no microscopes); supernatural beliefs (astrology, sin, flagellation during the Black Death 1348).",
@@ -249,8 +249,8 @@
           "type": "judgement-essay",
           "topic": "Role of Government in Medicine c1800-present",
           "spec_topic": "Role of government: Public Health Acts, liberal welfare reforms, NHS 1948",
-          "question_text": "‘Providing access to care and treatment has been the most important development in the role of government in medicine in the years c1800-present.’ How far do you agree? Explain your answer.",
-          "stimulus": "• National Health Service (NHS), 1948\n• Public Health Act, 1875\n• You must also use information of your own.",
+          "question_text": "‘Expanding public access to healthcare has been the single greatest change in state medical intervention since c1800.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: launching the National Health Service in 1948\n• Optional focus: sanitary reform under the 1875 Public Health Act\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Significance of access to care/treatment: The NHS (1948, Aneurin Bevan) made healthcare free at the point of delivery for the first time, establishing universal access to doctors, hospitals, dentists, and ambulances.",
             "Counter-arguments (Role in prevention/public health): The 1875 Public Health Act forced local authorities to provide clean water, sewers, and building regulations, defeating cholera and typhoid; clean air acts; compulsory vaccination acts (1853).",
@@ -275,7 +275,7 @@
           "type": "feature",
           "topic": "Western Front: Thomas Splint",
           "spec_topic": "Techniques for treatment: the Thomas splint",
-          "question_text": "Describe two features of the use of the Thomas splint.",
+          "question_text": "Outline two key characteristics of how the Thomas splint was used to treat femur fractures on the Western Front.",
           "stimulus": null,
           "indicative_content": [
             "The Thomas splint pulled the broken leg straight and held the bone rigid in traction, preventing the broken ends from grinding together and tearing femoral arteries.",
@@ -291,8 +291,8 @@
           "type": "how-useful",
           "topic": "Western Front: Gas Attacks",
           "spec_topic": "The nature of wounds and injuries: gas attacks (chlorine, phosgene, mustard)",
-          "question_text": "How useful are Sources A and B for an enquiry into the effects of a gas attack?",
-          "stimulus": "Source A: Account by Captain J. C. Dunn, medical officer 2nd Battalion Royal Welsh Fusiliers (1915). Source B: Painting \"Gassed\" by John Singer Sargent (1919).",
+          "question_text": "Assess the value of Sources A and B for an investigation into the medical impact of poison gas attacks on the Western Front.",
+          "stimulus": "Source A: 1915 medical account by Captain J. C. Dunn (2nd Battalion Royal Welsh Fusiliers). Source B: John Singer Sargent’s 1919 war painting “Gassed”.",
           "indicative_content": [
             "Source A provides immediate medical detail of physical symptoms: choking, coughing up green froth, lung damage, and blindness.",
             "Source B depicts the scale of casualties, lines of blinded soldiers led to dressing stations, and the overwhelming demand on medical staff.",
@@ -308,7 +308,7 @@
           "type": "follow-up",
           "topic": "Western Front: Gas Attacks",
           "spec_topic": "The nature of wounds and injuries: gas attacks",
-          "question_text": "How could you follow up Source A to find out more about the effects of a gas attack?",
+          "question_text": "Design a historical follow-up enquiry using Source A to investigate further the medical impact of poison gas attacks.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source A: Quote a symptom, e.g. \"men choking and coughing up green fluid\".",
@@ -326,7 +326,7 @@
           "type": "similarity-difference",
           "topic": "Medieval Physician vs NHS Doctor",
           "spec_topic": "Medical professionals across time: physicians, surgeons, apothecaries, GPs",
-          "question_text": "Explain one way in which the role of the physician in the medieval period was similar to the role of the doctor in the NHS in the modern period.",
+          "question_text": "Identify and explain one key similarity between the work of a medieval university-trained physician and that of a modern NHS doctor.",
           "stimulus": null,
           "indicative_content": [
             "In both periods, the primary role of the physician/doctor was to diagnose illness by examining the patient and identifying symptoms (e.g. medieval physicians examining urine color/pulse; modern doctors examining vital signs and prescribing treatments).",
@@ -342,8 +342,8 @@
           "type": "causation",
           "topic": "Science & Technology in Modern Medicine c1900-present",
           "spec_topic": "Developments in science and technology: DNA, magic bullets, high-tech diagnosis",
-          "question_text": "Explain why developments in science and technology led to rapid progress in medicine in the years c1900–present.",
-          "stimulus": "• chemotherapy\n• the discovery of the structure of DNA\n• You must also use information of your own.",
+          "question_text": "Analyse why breakthroughs in science and medical technology accelerated medical progress from c1900 to the present.",
+          "stimulus": "• Optional focus: chemical magic bullets and chemotherapy\n• Optional focus: Watson, Crick, Franklin, and Wilkins on DNA structure (1953)\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Chemical advances produced magic bullets (Ehrlich’s Salvarsan 606, Domagk’s Prontosil) and chemotherapy treating cancer by targeting specific cells without destroying the host body.",
             "Watson, Crick, and Franklin’s discovery of the double helix structure of DNA (1953) and the Human Genome Project (completed 2003) enabled gene therapy and targeted treatments.",
@@ -359,8 +359,8 @@
           "type": "judgement-essay",
           "topic": "Florence Nightingale & Hospital Care c1700-c1900",
           "spec_topic": "Hospitals: changes in care and treatment, Nightingale, antiseptics",
-          "question_text": "‘The work of Florence Nightingale was the most important development in the care and treatment provided in hospitals in the years c1700–c1900.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Florence Nightingale’s Notes on Nursing (1859)\n• anaesthetics\n• You must also use information of your own.",
+          "question_text": "‘Florence Nightingale’s reforms contributed more than any other factor to improving hospital care between c1700 and c1900.’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: Nightingale’s Notes on Nursing (1859) and ward sanitation\n• Optional focus: nineteenth-century anaesthetics in operating theatres\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Role of Nightingale: Reformed sanitation, ventilation, and cleanliness (reducing Scutari death rate from 42% to 2%); established professional nurse training (Nightingale School at St Thomas’ Hospital); published Notes on Nursing.",
             "Other major hospital developments: Anaesthetics (ether, Simpson’s chloroform 1847) allowing complex internal surgery; Lister’s carbolic acid (1865) and antiseptic/aseptic hospital operating theatres; pavilion style hospital architecture; growth of specialist voluntary hospitals.",
@@ -376,8 +376,8 @@
           "type": "judgement-essay",
           "topic": "Infectious Diseases c1500-c1900",
           "spec_topic": "Approaches to prevention and treatment: Great Plague, cholera, Jenner, Snow, Pasteur",
-          "question_text": "‘There was little improvement in dealing with infectious diseases in the years c1500–c1900.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the Great Plague, 1665\n• the Broad Street Pump\n• You must also use information of your own.",
+          "question_text": "‘Efforts to combat epidemic infectious diseases made minimal headway between c1500 and c1900.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: civic orders during the 1665 Great Plague\n• Optional focus: John Snow’s 1854 Broad Street pump investigation\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing (continuity): During the Great Plague (1665), treatments (smoking tobacco, strapping chickens, bloodletting) were as ineffective as during the Black Death (1348); quarantine and isolation had limited impact; miasma still dominated until late 19th century.",
             "Arguments disagreeing (major progress): Jenner’s smallpox vaccine (1796); John Snow’s Broad Street pump investigation (1854) proving cholera was waterborne; Pasteur’s Germ Theory (1861) and Koch’s bacteriology identifying specific pathogens; 1875 Public Health Act clean water infrastructure.",
@@ -401,7 +401,7 @@
           "type": "feature",
           "topic": "Western Front: Underground Hospital at Arras",
           "spec_topic": "The context of the British sector: Arras, chalk tunnels, hospital system",
-          "question_text": "Describe two features of the underground hospital at Arras.",
+          "question_text": "Outline two key characteristics of the Thompson Cave underground hospital at Arras (1917).",
           "stimulus": null,
           "indicative_content": [
             "The hospital (Thompson’s Cave) was built inside vast underground chalk quarries and tunnels, making it completely protected from German artillery bombardment.",
@@ -417,8 +417,8 @@
           "type": "how-useful",
           "topic": "Western Front: Trench Foot",
           "spec_topic": "The nature of wounds and ill health: trench foot",
-          "question_text": "How useful are Sources A and B for an enquiry into the problem of trench foot?",
-          "stimulus": "Source A: Routine Orders issued to British troops by the General Headquarters (1915). Source B: Personal account by Private A. West in the London Regiment (1916).",
+          "question_text": "Assess the value of Sources A and B for an investigation into how trench foot affected soldiers and how the British Army responded.",
+          "stimulus": "Source A: British GHQ Routine Orders on foot care issued in 1915. Source B: First-hand recollection by Private A. West of the London Regiment (1916).",
           "indicative_content": [
             "Source A reveals army preventive regulations: daily whale oil rubs, dry socks, buddy-system inspections, and officer discipline.",
             "Source B shows the harsh frontline reality where soldiers neglected whale oil because boots were difficult to take off in freezing mud.",
@@ -434,7 +434,7 @@
           "type": "follow-up",
           "topic": "Western Front: Trench Foot",
           "spec_topic": "The nature of wounds and ill health: trench foot",
-          "question_text": "How could you follow up Source A to find out more about the problem of trench foot?",
+          "question_text": "Design a historical follow-up enquiry using Source A to investigate further the problem and prevention of trench foot.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source A: Quote regulation regarding whale oil rubbing or sock changing.",
@@ -452,7 +452,7 @@
           "type": "similarity-difference",
           "topic": "Preventing Infectious Diseases: Renaissance vs Industrial",
           "spec_topic": "Approaches to prevention: Renaissance quarantine vs 18th/19th century inoculation/vaccination",
-          "question_text": "Explain one way in which attempts to prevent the spread of infectious diseases in the period c1500-c1700 were similar to attempts to prevent the spread of infectious diseases in the period c1700―c1900.",
+          "question_text": "Identify and explain one key similarity between measures used to curb infectious epidemics in c1500–c1700 and those used in c1700–c1900.",
           "stimulus": null,
           "indicative_content": [
             "In both periods, local and national authorities used quarantine and isolation to stop diseases spreading (e.g. boarding up plague houses in 1665 with red crosses; isolating smallpox and cholera victims in isolation pest houses and fever hospitals in the 19th century).",
@@ -468,8 +468,8 @@
           "type": "causation",
           "topic": "Attitudes Towards Surgery c1800-present",
           "spec_topic": "Advances in surgery: anaesthetics, antiseptics, modern technology",
-          "question_text": "Explain why attitudes towards surgery changed in the period c1800-present.",
-          "stimulus": "• anaesthetics\n• high-tech surgery\n• You must also use information of your own.",
+          "question_text": "Analyse why public and professional attitudes towards surgical operations shifted between c1800 and the present day.",
+          "stimulus": "• Optional focus: pain relief via ether and chloroform anaesthetics\n• Optional focus: modern keyhole, robotic, and microsurgical techniques\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Anaesthetics (Simpson’s chloroform 1847) transformed patient attitudes from sheer terror into confidence that surgery could be painless.",
             "Antiseptics and aseptic surgery (Lister’s carbolic acid 1865, autoclaves, rubber gloves) reduced post-operative infection and gangrene, cutting mortality from 46% to under 15%.",
@@ -485,8 +485,8 @@
           "type": "judgement-essay",
           "topic": "Medieval Care & Treatment: Role of Physician c1250-c1500",
           "spec_topic": "Medieval healers: physicians, barber surgeons, apothecaries, women in the home",
-          "question_text": "‘In the years c1250-c1500, the physician was the most important person providing care and treatment.’ How far do you agree? Explain your answer.",
-          "stimulus": "• medical training\n• herbal remedies\n• You must also use information of your own.",
+          "question_text": "‘University-educated physicians played the central role in treating the sick in medieval England (c1250–c1500).’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: scholastic university training based on ancient texts\n• Optional focus: domestic and apothecary herbal remedies\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Role of physicians: Underwent 7-10 years of university training studying Hippocrates and Galen; possessed highest social status; diagnosed illness using urine charts, astrological calendars (zodiac man), and pulse.",
             "Importance of other healers: Physicians were too expensive for ordinary people; barber-surgeons performed bloodletting and minor operations; apothecaries prepared herbal remedies; wise women and mothers in the home provided the vast majority of day-to-day healthcare.",
@@ -502,8 +502,8 @@
           "type": "judgement-essay",
           "topic": "Pasteur & Causes of Illness c1800-present",
           "spec_topic": "Ideas about causes of disease: Germ Theory, Koch, genetics, DNA",
-          "question_text": "‘In the years c1800-present, the work of Pasteur was the most significant development in understanding the causes of illness.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Germ Theory\n• DNA\n• You must also use information of your own.",
+          "question_text": "‘Louis Pasteur’s discoveries were the decisive turning point in explaining what causes illness from c1800 to the present.’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: Pasteur’s 1861 Germ Theory\n• Optional focus: twentieth-century genetics and DNA research\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Pasteur’s Germ Theory (1861): Destroyed spontaneous generation; proved microscopic organisms caused decay and disease, providing the foundation for modern medicine.",
             "Koch’s contribution: Isolated specific disease-causing microbes (anthrax, TB 1882, cholera 1883) using agar jelly and chemical dyes.",
@@ -529,7 +529,7 @@
           "type": "feature",
           "topic": "Western Front: Transporting Wounded Soldiers",
           "spec_topic": "Transport and communications: problems of terrain, stretcher bearers, horse vs motor ambulances",
-          "question_text": "Describe two features of the problems involved in transporting wounded soldiers away from the battleground.",
+          "question_text": "Outline two key obstacles faced when evacuating wounded troops from Western Front battlefields.",
           "stimulus": null,
           "indicative_content": [
             "The shell-cratered terrain, destroyed drainage, and deep mud (especially at Passchendaele) made it impossible for motor ambulances to reach the front, forcing reliance on stretcher-bearers.",
@@ -545,8 +545,8 @@
           "type": "how-useful",
           "topic": "Western Front: New Techniques to Deal with Injuries",
           "spec_topic": "Techniques for treatment: wound excision/debridement, Carrel-Dakin method, Thomas splint",
-          "question_text": "How useful are Sources A and B for an enquiry into new techniques being used on the Western Front to deal with injuries?",
-          "stimulus": "Source A: Report by Dr Alexis Carrel in an American medical journal (1916). Source B: Official British photograph of a wounded soldier treated with a Thomas splint (1917).",
+          "question_text": "Assess the value of Sources A and B for an investigation into innovative wound-treatment methods introduced on the Western Front.",
+          "stimulus": "Source A: 1916 medical journal report by surgeon Dr Alexis Carrel on antiseptic irrigation. Source B: 1917 official British photograph showing a Thomas splint applied to a casualty.",
           "indicative_content": [
             "Source A explains the Carrel-Dakin antiseptic irrigation method for deep contaminated shrapnel wounds.",
             "Source B provides clear visual proof of the Thomas splint keeping leg fractures aligned and immobilised.",
@@ -562,7 +562,7 @@
           "type": "follow-up",
           "topic": "Western Front: New Techniques to Deal with Injuries",
           "spec_topic": "Techniques for treatment: Carrel-Dakin method, Thomas splint",
-          "question_text": "How could you follow up Source A to find out more about new techniques being used on the Western Front to deal with injuries?",
+          "question_text": "Design a historical follow-up enquiry using Source A to investigate further innovative wound-treatment methods on the Western Front.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source A: Quote Carrel’s method of flushing wound cavities with sodium hypochlorite solution.",
@@ -580,7 +580,7 @@
           "type": "similarity-difference",
           "topic": "Prevention of Illness: Medieval vs Modern",
           "spec_topic": "Approaches to prevention: Medieval religious/miasma vs Modern vaccination/lifestyle",
-          "question_text": "Explain one way in which ideas about prevention of illness in the medieval period were similar to ideas about the prevention of illness in the modern period.",
+          "question_text": "Identify and explain one key similarity between medieval approaches to preventing illness (c1250–c1500) and modern preventative health since c1900.",
           "stimulus": null,
           "indicative_content": [
             "In both periods, people believed that personal lifestyle choices and regime (regimen sanitatis in medieval times: moderate eating, exercise, bathing; modern healthy eating, exercise, avoiding smoking) prevented disease.",
@@ -596,8 +596,8 @@
           "type": "causation",
           "topic": "Access to Medical Care & Treatment in Modern Period",
           "spec_topic": "Role of government: Welfare reforms, creation of the NHS, development of GP practices",
-          "question_text": "Explain why access to medical care and treatment improved in the modern period.",
-          "stimulus": "• hospitals\n• General Practitioners (GPs)\n• You must also use information of your own.",
+          "question_text": "Analyse why ordinary people gained far wider access to medical care and treatment in Britain from c1900 onwards.",
+          "stimulus": "• Optional focus: specialist NHS hospitals after 1948\n• Optional focus: free family doctor (GP) consultations and Liberal reforms\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "The establishment of the NHS in 1948 made visits to hospitals and GPs free at the point of delivery, removing wealth as a barrier to healthcare.",
             "GP practices were reorganised into local community health centres offering comprehensive primary care and preventive screenings.",
@@ -613,8 +613,8 @@
           "type": "judgement-essay",
           "topic": "Thomas Sydenham as Key Turning Point c1500-c1700",
           "spec_topic": "The Renaissance: Thomas Sydenham, Vesalius, Harvey, Royal Society",
-          "question_text": "‘The work of Thomas Sydenham was the key turning point in medicine in the years c1500-c1700.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Sydenham’s Observationes Medicae (1676)\n• Four Humours\n• You must also use information of your own.",
+          "question_text": "‘Thomas Sydenham’s clinical methods marked the most important medical turning point of c1500–c1700.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: bedside observation in Observationes Medicae (1676)\n• Optional focus: continued reliance on the Four Humours\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing: Known as the \"English Hippocrates\", Sydenham insisted on clinical bedside observation; classified diseases into distinct species; challenged the idea that each patient had a unique humour balance.",
             "Counter-arguments (other turning points): Andreas Vesalius proved Galen made hundreds of anatomical errors by dissecting human bodies; William Harvey discovered blood circulation (1628), proving blood flows in a one-way system pumped by the heart; the Royal Society (1660) institutionalised experimental proof.",
@@ -630,8 +630,8 @@
           "type": "judgement-essay",
           "topic": "Attitudes Towards Medicine c1700-c1900",
           "spec_topic": "Industrial medicine: Jenner, Pasteur, Koch, Nightingale, Public Health",
-          "question_text": "‘People’s attitudes about medicine, in the years c1700-c1900, became increasingly positive.’ How far do you agree? Explain your answer.",
-          "stimulus": "• vaccination\n• infectious diseases\n• You must also use information of your own.",
+          "question_text": "‘Public confidence in medical science grew steadily throughout the period c1700–c1900.’ To what extent do you agree with this statement?",
+          "stimulus": "• Optional focus: opposition and support surrounding smallpox vaccination\n• Optional focus: breakthroughs against nineteenth-century infectious diseases\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing: Jenner’s smallpox vaccination proved diseases could be conquered; Pasteur’s Germ Theory and Koch’s bacteriology gave rational scientific explanations; anaesthetics (chloroform) removed the horror of surgery; Florence Nightingale transformed hospitals into clean healing institutions.",
             "Counter-arguments (resistance and scepticism): Anti-Vaccination League opposed compulsory vaccination in the 1850s; early anaesthetics caused deaths (\"Black Period of Surgery\"); doctors resisted carbolic acid and handwashing initially (Semmelweis was ridiculed).",
@@ -655,7 +655,7 @@
           "type": "feature",
           "topic": "Western Front: New Wound Treatment Techniques",
           "spec_topic": "Techniques for treatment: wound excision/debridement, Carrel-Dakin method, Thomas splint",
-          "question_text": "Describe two features of the new techniques used in the treatment of wounds on the Western Front.",
+          "question_text": "Outline two key characteristics of new surgical or chemical techniques used to treat infected wounds on the Western Front.",
           "stimulus": null,
           "indicative_content": [
             "Wound excision (debridement) involved cutting away all dead and infected tissue around a shrapnel wound to prevent gas gangrene before stitching.",
@@ -671,8 +671,8 @@
           "type": "how-useful",
           "topic": "Western Front: Medical Staff in Casualty Clearing Stations",
           "spec_topic": "The chain of evacuation: Casualty Clearing Stations (CCS)",
-          "question_text": "How useful are Sources A and B for an enquiry into the work of medical staff in the Casualty Clearing Stations (CCS) on the Western Front?",
-          "stimulus": "Source A: Diary extract from Sister Edith Appleton, a military nurse stationed at a CCS (1916). Source B: Official sketch of surgeons operating in a CCS during the Battle of Passchendaele (1917).",
+          "question_text": "Assess the value of Sources A and B for an investigation into surgical and nursing care inside Western Front Casualty Clearing Stations (CCS).",
+          "stimulus": "Source A: 1916 wartime diary of military nurse Sister Edith Appleton at a CCS. Source B: 1917 official war sketch of surgeons operating inside a CCS during Passchendaele.",
           "indicative_content": [
             "Source A illustrates the triage system, operating non-stop for 48 hours during offensives, and the physical/emotional resilience of nurses.",
             "Source B depicts surgical conditions: multiple operating tables in large marquees, aseptic gowns, and artificial lighting under canvas.",
@@ -688,7 +688,7 @@
           "type": "follow-up",
           "topic": "Western Front: Medical Staff in Casualty Clearing Stations",
           "spec_topic": "The chain of evacuation: Casualty Clearing Stations (CCS)",
-          "question_text": "How could you follow up Source A to find out more about the work of medical staff in the Casualty Clearing Stations (CCS) on the Western Front?",
+          "question_text": "Design a historical follow-up enquiry using Source A to investigate further the work of medical teams inside Casualty Clearing Stations.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source A: Quote Appleton’s description of the triage categories (walking wounded, urgent surgery, moribund).",
@@ -706,7 +706,7 @@
           "type": "similarity-difference",
           "topic": "Treatment of Infectious Diseases: Medieval vs Modern",
           "spec_topic": "Approaches to treatment: Medieval herbal/bloodletting vs Modern antibiotics/antivirals",
-          "question_text": "Explain one way in which the treatment of infectious diseases in the medieval period (c1250-c1500) was different from the treatment of infectious diseases in the modern period (c1900-present).",
+          "question_text": "Identify and explain one key difference between treating infectious diseases in medieval England (c1250–c1500) and treating them in modern Britain (c1900–present).",
           "stimulus": null,
           "indicative_content": [
             "Medieval treatments aimed to rebalance humours or appease God using ineffective methods like bloodletting, purging, herbal infusions, and prayer.",
@@ -722,8 +722,8 @@
           "type": "causation",
           "topic": "Why Little Change in Medieval Medicine c1250-c1500",
           "spec_topic": "Medieval medicine: Church control, Galen, medical training, respect for tradition",
-          "question_text": "Explain why there was little change in medicine in England during the medieval period (c1250–c1500).",
-          "stimulus": "• Galen\n• monastery hospitals\n• You must also use information of your own.",
+          "question_text": "Analyse the factors that held back medical change in England throughout the Middle Ages (c1250–c1500).",
+          "stimulus": "• Optional focus: Church endorsement of Galen’s authority\n• Optional focus: hospitality rather than cure in monastic infirmaries\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Galen’s theories (Four Humours, body designed by God) were adopted as dogma by the Catholic Church; questioning Galen was treated as heresy.",
             "Monastery hospitals prioritised spiritual salvation, rest, and prayer rather than medical experimentation or curing physical illness.",
@@ -739,8 +739,8 @@
           "type": "judgement-essay",
           "topic": "Progress in Medical Knowledge in Renaissance c1500-c1700",
           "spec_topic": "The Renaissance: Vesalius, Harvey, Sydenham, Great Plague",
-          "question_text": "‘There was significant progress in medical knowledge in England during the Renaissance period (c1500-c1700).’ How far do you agree? Explain your answer.",
-          "stimulus": "• William Harvey\n• the Great Plague (1665)\n• You must also use information of your own.",
+          "question_text": "‘Medical knowledge in England advanced substantially during the Renaissance era (c1500–c1700).’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: William Harvey’s 1628 proof of blood circulation\n• Optional focus: traditional responses to the 1665 Great Plague\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing (progress): William Harvey discovered circulation of blood (1628); Andreas Vesalius mapped human anatomy accurately; Thomas Sydenham classified diseases; the Royal Society (1660) championed empirical science.",
             "Arguments disagreeing (continuity): Despite anatomical breakthroughs, understanding of disease causation remained unchanged (Four Humours and miasma still dominated); treatments during the Great Plague of 1665 were virtually identical to the Black Death of 1348; Harvey’s discovery had zero practical impact on medical treatments at the time.",
@@ -756,8 +756,8 @@
           "type": "judgement-essay",
           "topic": "Role of Individuals in Prevention c1700-present",
           "spec_topic": "Approaches to prevention: Jenner, Snow, government public health acts, lifestyle campaigns",
-          "question_text": "‘The role of individuals was the most important factor in the prevention of illness in the years c1700-present.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Edward Jenner\n• anti-smoking campaigns\n• You must also use information of your own.",
+          "question_text": "‘Pioneering individuals mattered more than government action in preventing disease from c1700 to the present.’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: Edward Jenner’s smallpox vaccine\n• Optional focus: modern state public-health and anti-smoking campaigns\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Role of individuals: Edward Jenner developed the first vaccine (smallpox 1796); John Snow discovered cholera was waterborne (1854); Louis Pasteur discovered Germ Theory (1861).",
             "Role of government: Passed compulsory vaccination laws (1853); Public Health Acts (1848, 1875) funding sewers and clean water; public health education and anti-smoking legislation (banning tobacco advertising, smoking in public places 2007).",
@@ -782,7 +782,7 @@
           "type": "feature",
           "topic": "Western Front: Nature of Fighting & Injuries",
           "spec_topic": "The nature of the British sector: artillery, machine guns, shrapnel injuries",
-          "question_text": "Describe one feature of the fighting on the Western Front that led to a high number of injuries.",
+          "question_text": "Outline one key feature of Western Front weaponry or combat tactics that caused heavy casualty rates.",
           "stimulus": null,
           "indicative_content": [
             "Artillery barrages: Explosive shells threw thousands of pieces of jagged hot shrapnel and dirt into the air, causing 58% of all battlefield wounds and catastrophic blast trauma."
@@ -797,7 +797,7 @@
           "type": "feature",
           "topic": "Western Front: Blood Transfusions",
           "spec_topic": "Context: Blood transfusions and storage (Rous & Turner, Robertson)",
-          "question_text": "Describe one feature of the use of blood transfusions on the Western Front.",
+          "question_text": "Outline one key feature of how blood transfusions were administered near the front line during the First World War.",
           "stimulus": null,
           "indicative_content": [
             "In 1917, Oswald Robertson established the first blood depot at the Battle of Cambrai using sodium citrate and glucose to store blood in ice-cooled containers for up to 28 days before transfusion."
@@ -812,8 +812,8 @@
           "type": "how-useful",
           "topic": "Western Front: Difficulties in Caring for the Wounded",
           "spec_topic": "Evacuation chain: terrain, stretcher transport, overwhelmed dressing stations",
-          "question_text": "How useful are Sources A and B for an enquiry into the difficulties in caring for the wounded on the Western Front?",
-          "stimulus": "Source A: Medical diary of an RAMC medical officer describing flooded trenches and mud during the Third Battle of Ypres (1917). Source B: Official photograph of an overcrowded Advanced Dressing Station near the Somme (1916).",
+          "question_text": "Assess the value of Sources A and B for an investigation into the practical difficulties of treating casualties on the Western Front.",
+          "stimulus": "Source A: 1917 RAMC medical officer diary describing waterlogged Third Ypres trenches. Source B: 1916 official photograph showing congestion outside a Somme Advanced Dressing Station.",
           "indicative_content": [
             "Source A illustrates terrain difficulties: liquid mud, impassable shell holes, stretcher bearers taking 6-8 hours to carry one patient.",
             "Source B depicts logistical congestion: dozens of stretcher cases lying in the open outside a dressing station waiting for transport.",
@@ -829,7 +829,7 @@
           "type": "follow-up",
           "topic": "Western Front: Difficulties in Caring for the Wounded",
           "spec_topic": "Evacuation chain: stretcher transport, hospital capacity",
-          "question_text": "How could you follow up Source B to find out more about the difficulties in caring for the wounded on the Western Front?",
+          "question_text": "Design a historical follow-up enquiry using Source B to investigate further the practical difficulties of treating casualties on the Western Front.",
           "stimulus": null,
           "indicative_content": [
             "Detail in Source B: Quote or describe the severe overcrowding of wounded soldiers waiting for treatment.",
@@ -847,7 +847,7 @@
           "type": "similarity-difference",
           "topic": "Epidemics: Great Plague (1665) vs Cholera (1854)",
           "spec_topic": "Approaches to prevention and treatment: Great Plague vs Cholera in London",
-          "question_text": "Explain one way in which the Great Plague in London (1665) was similar to the cholera epidemic in London (1854).",
+          "question_text": "Identify and explain one key similarity between responses to London’s 1665 Great Plague and responses to London’s 1854 cholera outbreak.",
           "stimulus": null,
           "indicative_content": [
             "In both epidemics, people believed the disease was spread by miasma (poisonous bad air) and attempted to purify the air by burning barrels of tar or carrying pomanders.",
@@ -863,8 +863,8 @@
           "type": "causation",
           "topic": "Impact of Pasteur’s Germ Theory c1861-present",
           "spec_topic": "Germ Theory: Pasteur, Koch, antiseptic surgery, vaccinations",
-          "question_text": "Explain why Pasteur’s Germ Theory (1861) led to changes in medicine in the years c1861-present.",
-          "stimulus": "• Koch’s work identifying microbes\n• antiseptic surgery\n• You must also use information of your own.",
+          "question_text": "Analyse why Louis Pasteur’s 1861 Germ Theory transformed medical practice from c1861 to the present day.",
+          "stimulus": "• Optional focus: Robert Koch isolating specific disease bacteria\n• Optional focus: antiseptic and aseptic operating methods\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Koch applied Germ Theory to identify specific bacterial pathogens (anthrax 1876, TB 1882, cholera 1883), allowing medical science to target specific diseases.",
             "Joseph Lister applied Germ Theory to surgery, using carbolic acid to kill bacteria on instruments, wounds, and hands, reducing surgical infection rates dramatically.",
@@ -880,8 +880,8 @@
           "type": "judgement-essay",
           "topic": "Four Humours & Medicine c1250-c1700",
           "spec_topic": "Ideas about cause and treatment: Four Humours across Medieval and Renaissance",
-          "question_text": "‘In the years c1250-c1700, medicine was mainly based on the Theory of the Four Humours.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Galen\n• herbs and spices\n• You must also use information of your own.",
+          "question_text": "‘Between c1250 and c1700, diagnosis and treatment remained overwhelmingly dominated by the Theory of the Four Humours.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: Galenic humoral balance\n• Optional focus: herbal remedies, spices, and new New World ingredients\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing: The Four Humours remained the core medical model taught in universities for over 400 years; bloodletting, purging, and herbal diets were prescribed throughout both the Black Death (1348) and Great Plague (1665).",
             "Arguments disagreeing: Religious explanations (punishment from God, sin) and astrology were equally dominant in the medieval period; in the Renaissance, Paracelsus introduced chemical remedies, Vesalius proved Galen’s anatomy wrong, and Sydenham insisted on classifying diseases by symptoms rather than humours.",
@@ -897,8 +897,8 @@
           "type": "judgement-essay",
           "topic": "Role of Government in Hospital Care c1800-present",
           "spec_topic": "Hospitals and government: Nightingale, voluntary hospitals, NHS 1948",
-          "question_text": "‘In the years c1800-present, the role of the government was the most important factor in improving care and treatment in hospitals.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the creation of the NHS (1948)\n• Nightingale’s Notes on Nursing (1859)\n• You must also use information of your own.",
+          "question_text": "‘State intervention was the primary driver behind improved hospital care and treatment from c1800 to the present.’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: founding the NHS in 1948\n• Optional focus: nursing and ward hygiene after Nightingale (1859)\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Role of government: Nationalised hospitals under the NHS in 1948; invested in modern regional hospital architecture, specialist trauma units, and equipment; set national hygiene and clinical standards.",
             "Role of individuals: Florence Nightingale transformed sanitation, ward design, and professional nursing standards without initial government direction; Joseph Lister invented antiseptic surgery; James Simpson introduced chloroform anaesthesia.",
@@ -906,147 +906,6 @@
             "Judgement: Individual innovators and scientific breakthroughs created modern hospital treatment, but government funding and organisation via the NHS was essential to make that treatment universally accessible."
           ],
           "examiner_tips": "Compare government intervention against individual reformers (Nightingale, Lister) and scientific technology."
-        }
-      ]
-    },
-    {
-      "year": 2026,
-      "season": "Specimen",
-      "series": "Specimen Paper",
-      "paper_code": "1HI0/11",
-      "questions": [
-        {
-          "q_id": "med_2026_q1a",
-          "q_number": "Q1(a)",
-          "section": "Section A: Western Front",
-          "tariff": 2,
-          "type": "feature",
-          "topic": "Western Front: Casualty Clearing Station (CCS)",
-          "spec_topic": "Chain of evacuation: CCS facilities and triage",
-          "question_text": "Describe one feature of a Casualty Clearing Station (CCS).",
-          "stimulus": null,
-          "indicative_content": [
-            "Casualty Clearing Stations were located several miles behind the frontline near railway lines or canals to perform life-saving surgery and evacuate stable casualties."
-          ],
-          "examiner_tips": "Award 1 mark for identifying the feature (location near transport/life-saving surgery) and 1 mark for supporting historical context."
-        },
-        {
-          "q_id": "med_2026_q1b",
-          "q_number": "Q1(b)",
-          "section": "Section A: Western Front",
-          "tariff": 2,
-          "type": "feature",
-          "topic": "Western Front: Blood Storage Developments",
-          "spec_topic": "Context: Blood transfusions and storage (Rous & Turner, Robertson, Cambrai)",
-          "question_text": "Describe one feature of developments in the storage of blood on the Western Front.",
-          "stimulus": null,
-          "indicative_content": [
-            "In 1916, Francis Rous and Joseph Turner discovered adding citrate-glucose solution allowed blood to be stored refrigerated for up to 4 weeks without clotting."
-          ],
-          "examiner_tips": "Name citrate-glucose solution or Oswald Robertson’s blood depot at Cambrai."
-        },
-        {
-          "q_id": "med_2026_q2a",
-          "q_number": "Q2(a)",
-          "section": "Section A: Western Front",
-          "tariff": 8,
-          "type": "how-useful",
-          "topic": "Western Front: Transporting Wounded Along Evacuation Chain",
-          "spec_topic": "Transport and communications: RAP, dressing stations, motor/horse ambulances, hospital trains",
-          "question_text": "How useful are Sources A and B for an enquiry into the problems of transporting the wounded along the chain of evacuation on the Western Front?",
-          "stimulus": "Source A: Account by an ambulance driver of the Friends’ Ambulance Unit (1915). Source B: Official photograph of an ambulance barge on a canal in France (1916).",
-          "indicative_content": [
-            "Source A describes the agonizing jolting of horse-drawn and primitive motor ambulances along shell-pitted roads.",
-            "Source B demonstrates the use of canal barges as a smooth, comfortable alternative to road transport for severe abdominal cases.",
-            "Provenance: Source A provides direct driver insight into mechanical and road failures; Source B is official visual documentation of medical transport."
-          ],
-          "examiner_tips": "Evaluate how different modes of transport (road vs canal vs rail) solved or worsened patient trauma."
-        },
-        {
-          "q_id": "med_2026_q2b",
-          "q_number": "Q2(b)",
-          "section": "Section A: Western Front",
-          "tariff": 4,
-          "type": "follow-up",
-          "topic": "Western Front: Transporting Wounded Along Evacuation Chain",
-          "spec_topic": "Transport and communications: evacuation chain",
-          "question_text": "How could you follow up Source A to find out more about the problems of transporting the wounded along the chain of evacuation on the Western Front?",
-          "stimulus": null,
-          "indicative_content": [
-            "Detail in Source A: Quote the mechanical breakdown of motor ambulances or poor road conditions.",
-            "Question: \"How many motor ambulances were out of action due to mud and shell craters during the Somme campaign?\"",
-            "Type of source: British Red Cross or RAMC Motor Ambulance Convoy maintenance and transit records.",
-            "How it helps: Provides factual evidence of vehicle reliability and transport delays."
-          ],
-          "examiner_tips": "Ensure follow-up relates directly to transport bottlenecks and relies on official motor transport records."
-        },
-        {
-          "q_id": "med_2026_q3",
-          "q_number": "Q3",
-          "section": "Section B: Thematic Study",
-          "tariff": 4,
-          "type": "similarity-difference",
-          "topic": "Preventing Infectious Diseases: Renaissance vs Modern",
-          "spec_topic": "Approaches to prevention: Renaissance quarantine vs Modern mass vaccination and legislation",
-          "question_text": "Explain one way in which the prevention of infectious diseases in the Renaissance period (c1500-c1700) was different from the prevention of infectious diseases in the modern period (c1900-present).",
-          "stimulus": null,
-          "indicative_content": [
-            "In the Renaissance, prevention relied on crude isolation of infected houses, carrying herbs, and prayer without understanding the true cause of disease.",
-            "In the modern period, prevention is based on scientific immunisation programmes (vaccines) providing biological immunity, and government health campaigns targeting lifestyle factors."
-          ],
-          "examiner_tips": "Contrast unscientific isolation/miasma practices with modern scientifically engineered vaccines."
-        },
-        {
-          "q_id": "med_2026_q4",
-          "q_number": "Q4",
-          "section": "Section B: Thematic Study",
-          "tariff": 12,
-          "type": "causation",
-          "topic": "Hospital Care & Treatment Improvements c1700-c1900",
-          "spec_topic": "Hospitals: Florence Nightingale, antiseptic surgery, voluntary hospitals",
-          "question_text": "Explain why hospital care and treatment improved in the period c1700-c1900.",
-          "stimulus": "• the Nightingale School for Nurses\n• antiseptics\n• You must also use information of your own.",
-          "indicative_content": [
-            "The Nightingale School for Nurses (1860) created professional, highly trained nursing staff, transforming ward hygiene and patient care.",
-            "Joseph Lister’s antiseptic carbolic spray (1865) and subsequent aseptic techniques eliminated hospital gangrene and sepsis in operating theatres.",
-            "Own knowledge factor: Anaesthetics (Simpson’s chloroform 1847) allowed surgeons to take time on complex internal operations; founding of specialist voluntary hospitals funded by charities."
-          ],
-          "examiner_tips": "Cover both \"care\" (nursing, sanitation, ward design) and \"treatment\" (surgery, anaesthetics, antiseptics)."
-        },
-        {
-          "q_id": "med_2026_q5",
-          "q_number": "Q5",
-          "section": "Section B: Thematic Study",
-          "tariff": 16,
-          "type": "judgement-essay",
-          "topic": "Medieval Ideas on Cause of Illness: Religion vs Nature c1250-c1500",
-          "spec_topic": "Medieval ideas about causes: God and sin, Galen and Four Humours, miasma, astrology",
-          "question_text": "‘In the medieval period (c1250-c1500), ideas about the cause of illness were mainly based on religion.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the Catholic Church\n• the Four Humours\n• You must also use information of your own.",
-          "indicative_content": [
-            "Arguments agreeing: The Church taught disease was sent as punishment for sin or a test of faith; miraculous healing and saints were invoked; Flagellants whipped themselves during the Black Death; the Church controlled university curricula.",
-            "Arguments disagreeing: Rational Greek theories dominated medical diagnosis: Galen and Hippocrates’ Theory of the Four Humours; widespread belief in miasma (bad air); alignment of planets and astrology (Zodiac man).",
-            "Judgement: Religion and natural causes coexisted; the Church actually adopted and enforced Galen’s natural theories, meaning natural and religious beliefs were mutually reinforcing."
-          ],
-          "examiner_tips": "Demonstrate sophisticated understanding that medieval people did not see religion and the Four Humours as opposites, but as interconnected."
-        },
-        {
-          "q_id": "med_2026_q6",
-          "q_number": "Q6",
-          "section": "Section B: Thematic Study",
-          "tariff": 16,
-          "type": "judgement-essay",
-          "topic": "Science & Technology as Main Reason for Modern Progress c1900-present",
-          "spec_topic": "Developments in modern medicine: science and technology, role of government, war",
-          "question_text": "‘Improvements in science and technology is the main reason why there has been progress in medicine in the modern period (c1900-present).’ How far do you agree? Explain your answer.",
-          "stimulus": "• penicillin\n• the National Health Service (NHS)\n• You must also use information of your own.",
-          "indicative_content": [
-            "Role of science & technology: Discovery of penicillin (Fleming 1928, mass produced with deep tank fermentation by Florey and Chain); discovery of DNA structure (1953); MRI/CT diagnostic scanners; robotic surgery and genetic therapy.",
-            "Role of government: Creation of the NHS (1948) ensuring universal access to healthcare; mass vaccination campaigns; clean air and anti-tobacco legislation.",
-            "Role of war: WW1 and WW2 forced rapid innovations in blood storage, reconstructive plastic surgery (Gillies, McIndoe), and penicillin mass production.",
-            "Judgement: Science and technology provided the medical tools, but government organisation and funding were vital to deliver those treatments to the entire population."
-          ],
-          "examiner_tips": "Compare science and technology against the role of government (NHS) and the stimulus of wartime necessity."
         }
       ]
     }

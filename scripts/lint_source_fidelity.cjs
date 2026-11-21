@@ -17,6 +17,7 @@ const ALL_UNITS = [
   'post_war_britain',
   'edexcel_medicine',
   'eee',
+  'gcse_cold_war',
   'cme_new',
   'weimar_nazi_germany',
   'usa',

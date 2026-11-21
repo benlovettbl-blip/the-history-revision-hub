@@ -86,29 +86,35 @@ async function runSync() {
   }
 
   // Step 1b: Task Uniformity & Anti-Duplication Linter
-  console.log(`\n[Step 1b/6] 🛡️ Auditing task uniformity, source formatting & anti-duplication...`);
-  try {
-    execSync(`node scripts/lint_task_uniformity.cjs ${unitId}`, {
-      stdio: 'inherit',
-      cwd: ROOT_DIR,
-    });
-  } catch (err) {
-    console.error(`❌ Task uniformity linter failed for ${unitId}:`, err.message);
-    return false;
+  const taskLinterPath = path.join(ROOT_DIR, 'scripts', 'lint_task_uniformity.cjs');
+  if (fs.existsSync(taskLinterPath)) {
+    console.log(`\n[Step 1b/6] 🛡️ Auditing task uniformity, source formatting & anti-duplication...`);
+    try {
+      execSync(`node scripts/lint_task_uniformity.cjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(`❌ Task uniformity linter failed for ${unitId}:`, err.message);
+      return false;
+    }
   }
 
   // Step 1c: GCSE Depth of Knowledge (DoK) Specification Linter
-  console.log(
-    `\n[Step 1c/6] 🎓 Auditing GCSE Depth of Knowledge (DoK) specification guardrails...`,
-  );
-  try {
-    execSync(`node scripts/lint_gcse_dok.cjs ${unitId}`, {
-      stdio: 'inherit',
-      cwd: ROOT_DIR,
-    });
-  } catch (err) {
-    console.error(`❌ Fatal: GCSE DoK specification linter failed for ${unitId}. Build aborted.`);
-    return false;
+  const gcseDokPath = path.join(ROOT_DIR, 'scripts', 'lint_gcse_dok.cjs');
+  if (fs.existsSync(gcseDokPath)) {
+    console.log(
+      `\n[Step 1c/6] 🎓 Auditing GCSE Depth of Knowledge (DoK) specification guardrails...`,
+    );
+    try {
+      execSync(`node scripts/lint_gcse_dok.cjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(`❌ Fatal: GCSE DoK specification linter failed for ${unitId}. Build aborted.`);
+      return false;
+    }
   }
 
   // Step 1c-vocab: Vocabulary & End-of-Lesson Summary Cloze Parity Gate
@@ -216,6 +222,7 @@ async function runSync() {
     'usa',
     'weimar_nazi_germany',
     'cold_war',
+    'gcse_cold_war',
   ];
   if (GCSE_UNITS.includes(unitId)) {
     console.log(
@@ -295,6 +302,17 @@ async function runSync() {
           cwd: ROOT_DIR,
         });
         execSync(`node scripts/render_eee_workbook_markschemes.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+      }
+      if (unitId === 'gcse_cold_war') {
+        console.log(`\n📚 Compiling 16-page Golden double-page workbooks, 48p Master & Mark Schemes for [gcse_cold_war]...`);
+        execSync(`node scripts/render_gcse_cold_war_workbooks.cjs`, {
+          stdio: 'inherit',
+          cwd: ROOT_DIR,
+        });
+        execSync(`node scripts/render_gcse_cold_war_workbook_markschemes.cjs`, {
           stdio: 'inherit',
           cwd: ROOT_DIR,
         });

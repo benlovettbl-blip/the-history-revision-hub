@@ -493,8 +493,8 @@ export function renderLocatorMapModalHTML(ep, epIdx, activeLens) {
             </h3>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;">
-            <button type="button" class="cme-ct-tool-btn" id="ct-locator-full-svg-btn" title="Open Official Edexcel GCSE Historical Atlas">
-              🗺️ Official ${escapeHtml(ep.atlasEra)} Map
+            <button type="button" class="cme-ct-tool-btn" id="ct-locator-full-svg-btn" title="Open GCSE Middle East Historical Atlas">
+              🗺️ ${escapeHtml(ep.atlasEra)} Reference Map
             </button>
             <button type="button" class="cme-ct-tool-btn" id="ct-locator-live-sat-btn" title="Open Live Interactive Satellite &amp; Street Map">
               🛰️ Satellite / Street

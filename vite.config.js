@@ -367,7 +367,7 @@ export default defineConfig({
             },
             {
               name: 'exam-bank-p3',
-              test: /src[\\/]engine[\\/](mock_exam_bank_p3|mock_exam_bank_data)\.js/,
+              test: /src[\\/]engine[\\/](mock_exam_bank_p3|mock_exam_bank_cold_war|mock_exam_bank_data)\.js/,
               priority: 80,
             },
             {

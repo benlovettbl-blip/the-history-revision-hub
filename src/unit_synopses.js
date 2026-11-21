@@ -192,6 +192,18 @@ export const unitSynopses = {
       'The Spanish Armada (1588)',
     ],
   },
+  gcse_cold_war: {
+    period: '1941 – 1991',
+    synopsis:
+      'Forged solely to defeat Nazi Germany, the wartime Grand Alliance rapidly fractured across an Iron Curtain of rival ideologies, atomic intimidation, and competing spheres of influence. Follow the unfolding superpower confrontation across three decisive Key Topics—from the Berlin Blockade, NATO, and the 1956 Hungarian Uprising through the Berlin Wall, the Thirteen Days over Cuba, and the 1968 Prague Spring, to 1970s Détente, the Soviet war in Afghanistan, Reagan’s Strategic Defence Initiative, Gorbachev’s "New Thinking", and the fall of the Berlin Wall and collapse of the USSR.',
+    tags: [
+      'Grand Alliance & Wartime Conferences',
+      'Berlin Blockade, NATO & Hungary (1956)',
+      'Berlin Wall & Cuban Missile Crisis',
+      'Prague Spring & Brezhnev Doctrine (1968)',
+      'Détente, Afghanistan & Collapse of USSR',
+    ],
+  },
   cme_new: {
     period: '1945 – 1995',
     synopsis:

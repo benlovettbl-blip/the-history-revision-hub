@@ -866,7 +866,7 @@ async function buildUnitHtml(cfg) {
     </div>
 
     <footer class="ftr">
-      <span>The History Revision Hub · ${esc(cfg.coverTitle)} (${esc(cfg.period)}) · Classroom Textbook</span>
+      <span>${/edexcel|gcse/i.test(cfg.seriesKicker || '') ? `The History Revision Hub · Independent Publication for Pearson Edexcel GCSE (Not Endorsed by Pearson)` : `The History Revision Hub · ${esc(cfg.coverTitle)} (${esc(cfg.period)}) · Classroom Textbook`}</span>
       <span class="pg">Page 1 / ${totalPages}</span>
     </footer>
   </section>`;

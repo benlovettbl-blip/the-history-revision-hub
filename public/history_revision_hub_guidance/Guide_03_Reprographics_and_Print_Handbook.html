@@ -32,6 +32,12 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 2mm 4mm;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .page-container:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
     }
     .header-bar {
       border-bottom: 2.5px solid #0f172a;
@@ -72,14 +78,14 @@
     }
     h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 17pt;
+      font-size: 16.5pt;
       font-weight: 800;
       margin: 0 0 2px 0;
       color: #0f172a;
       line-height: 1.15;
     }
     .subtitle {
-      font-size: 8.5pt;
+      font-size: 8.3pt;
       color: #475569;
       font-style: italic;
       margin-bottom: 6px;
@@ -88,24 +94,24 @@
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       border-left: 4px solid #1e3a8a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      margin-bottom: 10px;
-      font-size: 8.2pt;
-      line-height: 1.4;
+      margin-bottom: 9px;
+      font-size: 8.1pt;
+      line-height: 1.38;
       color: #1e293b;
     }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 9px;
+      margin-bottom: 9px;
     }
     .grid-3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
     .card {
       border: 1px solid #cbd5e1;
@@ -118,9 +124,9 @@
     .card-header {
       padding: 5px 8px;
       font-weight: 800;
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       color: #ffffff;
     }
     .card-header.blue { background: #1e3a8a; }
@@ -128,9 +134,9 @@
     .card-header.emerald { background: #065f46; }
     .card-header.purple { background: #581c87; }
     .card-body {
-      padding: 8px;
-      font-size: 7.6pt;
-      line-height: 1.35;
+      padding: 7px 8px;
+      font-size: 7.5pt;
+      line-height: 1.33;
       color: #334155;
       flex: 1;
     }
@@ -139,13 +145,13 @@
       padding-left: 14px;
     }
     .card-body li {
-      margin-bottom: 3px;
+      margin-bottom: 2.5px;
     }
     .citation {
-      margin-top: 6px;
-      padding-top: 5px;
+      margin-top: 5px;
+      padding-top: 4px;
       border-top: 1px dashed #cbd5e1;
-      font-size: 7pt;
+      font-size: 6.9pt;
       color: #64748b;
     }
     .citation a {
@@ -153,25 +159,25 @@
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
-      margin-top: 2px;
+      margin-top: 1px;
     }
     .section-title {
       font-weight: 800;
-      font-size: 8.8pt;
+      font-size: 8.6pt;
       color: #0f172a;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       border-bottom: 1.5px solid #0f172a;
       padding-bottom: 2px;
-      margin: 8px 0 6px 0;
+      margin: 7px 0 5px 0;
     }
     .highlight-rule {
       background: #f0fdf4;
       border: 1px solid #86efac;
       border-left: 4px solid #16a34a;
-      padding: 8px 12px;
+      padding: 7px 11px;
       border-radius: 4px;
-      font-size: 8pt;
+      font-size: 7.8pt;
       color: #166534;
       line-height: 1.35;
     }
@@ -181,17 +187,17 @@
       padding: 8px 12px;
       border-radius: 4px;
       font-family: monospace;
-      font-size: 7.8pt;
-      line-height: 1.5;
+      font-size: 7.6pt;
+      line-height: 1.48;
     }
     .imposition-diagram {
       background: #f8fafc;
       border: 1.5px solid #0284c7;
       padding: 8px 12px;
       border-radius: 4px;
-      font-size: 7.8pt;
+      font-size: 7.7pt;
       color: #0369a1;
-      line-height: 1.6;
+      line-height: 1.55;
     }
     .footer-bar {
       border-top: 1.5px solid #0f172a;
@@ -223,7 +229,7 @@
 
           
       <div class="intro-box">
-        <strong>Instructions for Reprographics & Print Room Staff:</strong> All pupil workbooks are engineered for <strong>A4 Portrait Saddle-Stitched Booklets</strong> (printed two-up on A3 paper, folded and stapled on the spine). Follow these exact machine settings to guarantee flawless page alignment.
+        <strong>Instructions for Reprographics &amp; Print Room Staff:</strong> All textbooks and pupil workbooks are engineered as <strong>A4 Portrait Saddle-Stitched Booklets</strong> in exact multiples of 4 pages (<code>8</code>, <code>12</code>, <code>16</code>, <code>20</code>, <code>24</code>, or <code>28</code> pages — printed two-up on A3 sheets, folded and stapled on the spine).
       </div>
 
       <div class="grid-2">
@@ -236,22 +242,21 @@
               <li><strong>Layout Mode:</strong> Booklet / 2-Up Saddle-Stitch (Left Binding).</li>
               <li><strong>Duplexing:</strong> 2-Sided &rarr; 2-Sided (Flip on Short Edge).</li>
               <li><strong>Finishing / Stapling:</strong> Center Saddle-Stitch (Dual Spine Staples).</li>
-              <li><strong>Scaling:</strong> 100% (Do NOT choose "Fit to Printable Area" as margins are already calibrated).</li>
+              <li><strong>Scaling:</strong> 100% Actual Size (do NOT select "Fit to Printable Area" as margins are pre-calibrated).</li>
             </ul>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header blue">📐 Gutter Margins & Creep Allowance</div>
+          <div class="card-header blue">📐 Gutter Margins, Monochrome Interiors &amp; Stock</div>
           <div class="card-body">
             <ul>
-              <li><strong>Internal Gutter:</strong> 10mm inner margin on all pages ensures text is never swallowed by the spine fold.</li>
-              <li><strong>Outer Margin:</strong> 10mm outer margin protects content from edge trimmer clipping.</li>
-              <li><strong>Page Budget:</strong> 16-page count ensures 4 physical A3 folded sheets with zero blank waste pages.</li>
+              <li><strong>Internal Gutter &amp; Trim Safety:</strong> Calibrated inner/outer margins ensure text and ruled lines are never swallowed by the spine fold or guillotine trim.</li>
+              <li><strong>Zero-Dither Monochrome Interiors:</strong> Pupil Workbook interior pages use pure <code>#000000</code> ink on white paper so black-and-white photocopiers never muddy grey/navy fills.</li>
               <li><strong>Recommended Paper Stock:</strong>
                 <ul>
-                  <li><strong>Cover Sheet (Pages 1 &amp; 16):</strong> 120gsm or 160gsm Silk/Matt Cardstock.</li>
-                  <li><strong>Inner Pages (Pages 2–15):</strong> 80gsm or 90gsm Uncoated (prevents ink show-through from highlighters).</li>
+                  <li><strong>Outer Cover Sheet:</strong> 120gsm–160gsm Silk/Matt Card (Colour).</li>
+                  <li><strong>Interior Sheets:</strong> 80gsm–90gsm Uncoated White (prevents pen bleed-through).</li>
                 </ul>
               </li>
             </ul>
@@ -259,13 +264,13 @@
         </div>
       </div>
 
-      <div class="section-title">16-Page Booklet Imposition Diagram</div>
-      <p>When printed as a saddle-stitched booklet, pages pair automatically on A3 sheets:</p>
+      <div class="section-title">Sample 16-Page Booklet Imposition (4 Folded A3 Sheets)</div>
+      <p>Because every booklet is compiled to an exact multiple of 4 pages, every lesson opens flat as a facing <strong>Verso (Left) + Recto (Right)</strong> spread:</p>
       <div class="imposition-diagram">
-        <strong>Sheet 1 (Outer):</strong> Page 16 (Back Cover) &bull; Page 1 (Front Cover) &nbsp;|&nbsp; <em>Reverse:</em> Page 2 &bull; Page 15<br>
-        <strong>Sheet 2:</strong> Page 14 (Map Atlas) &bull; Page 3 (Enquiry 1) &nbsp;|&nbsp; <em>Reverse:</em> Page 4 &bull; Page 13<br>
-        <strong>Sheet 3:</strong> Page 12 (Exam Practice) &bull; Page 5 (Enquiry 2) &nbsp;|&nbsp; <em>Reverse:</em> Page 6 &bull; Page 11<br>
-        <strong>Sheet 4 (Center):</strong> Page 10 (Exam Practice) &bull; Page 7 (Enquiry 3) &nbsp;|&nbsp; <em>Reverse:</em> Page 8 &bull; Page 9
+        <strong>Sheet 1 (Outer):</strong> Page 16 (Back Cover) &bull; Page 1 (Front Cover) &nbsp;|&nbsp; <em>Reverse:</em> Page 2 &bull; Page 15 (Exercise Notes)<br>
+        <strong>Sheet 2:</strong> Page 14 (Exercise Notes) &bull; Page 3 (Enquiry Spread) &nbsp;|&nbsp; <em>Reverse:</em> Page 4 &bull; Page 13<br>
+        <strong>Sheet 3:</strong> Page 12 (Enquiry Spread) &bull; Page 5 (Enquiry Spread) &nbsp;|&nbsp; <em>Reverse:</em> Page 6 &bull; Page 11<br>
+        <strong>Sheet 4 (Centrefold):</strong> Page 10 &bull; Page 7 &nbsp;|&nbsp; <em>Reverse (Dead Centre):</em> Page 8 &bull; Page 9 (Centrefold Mind-Map / Timeline)
       </div>
     
         </div>

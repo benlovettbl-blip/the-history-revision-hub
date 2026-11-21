@@ -1,8 +1,8 @@
 /**
  * exam_trend_matrix.js
  *
- * Interactive Pearson Edexcel GCSE Past Paper Matrix (2018–2026) &
- * Specification Gap Analysis / Overdue Topic Predictor for History Hub.
+ * Interactive GCSE Topic Trend Matrix (2018–2025) &
+ * Specification Gap Analysis / Overdue Topic Predictor for The History Revision Hub.
  */
 
 const UNIT_CONFIGS = {
@@ -362,8 +362,8 @@ function openSectionBMockPrintWindow(yearPaper, secB, cfg) {
   <div class="exam-page">
     <div class="exam-header">
       <div>
-        <div class="exam-logo">Pearson Edexcel GCSE (9–1)</div>
-        <div style="font-size: 10pt; color: #475569;">History Paper 3: Modern Depth Study</div>
+        <div class="exam-logo">The History Revision Hub &bull; GCSE Practice</div>
+        <div style="font-size: 10pt; color: #475569;">Aligned to Edexcel GCSE (9–1) History &bull; Paper 3 Modern Depth Study</div>
       </div>
       <div style="text-align: right; font-weight: bold; font-size: 12pt;">
         ${cfg.code || cfg.paperCode || 'Paper 3'}
@@ -691,7 +691,7 @@ function constructRadarPracticeQuestion(params = {}) {
     type: type,
     question_text: questionStem,
     stimulus: `🎯 Specification Target: ${cleanPoint}\n📚 Syllabus Topic: ${cleanTopic} (${secTitle})`,
-    pitfall_warning: `⚠️ RADAR TARGET ALERT: This syllabus specification point is classified as ${lastExamined === 'Never' ? 'NEVER EXAMINED (2018–2026)' : 'OVERDUE (Last sat: ' + lastExamined + ')'}. High probability for upcoming exam series.\nTeacher Note: ${teacherNote}`,
+    pitfall_warning: `⚠️ RADAR TARGET ALERT: This syllabus specification point is classified as ${lastExamined === 'Never' ? 'NEVER EXAMINED (2018–2025)' : 'OVERDUE (Last sat: ' + lastExamined + ')'}. High probability for upcoming exam series.\nTeacher Note: ${teacherNote}`,
     indicative_content: [
       `Directly address the focus: ${cleanPoint}`,
       `Support with at least two precise, verified historical facts (exact dates, named individuals, key legislation/treaties, statistics).`,
@@ -1166,13 +1166,13 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px;">
           <div>
             <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #475569; margin-bottom: 4px;">
-              Pearson Edexcel GCSE (9–1) History Archive
+              The History Revision Hub &bull; 2018–2025 Topic Frequency Radar
             </div>
             <h1 style="margin: 0; font-size: 1.65rem; font-weight: 800; line-height: 1.25; color: #0f172a; font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
-              Past Exam Question Matrix & Specification Gap Radar
+              Hub Exam-Style Practice Matrix &amp; Specification Gap Radar
             </h1>
             <p style="margin: 4px 0 0 0; font-size: 0.88rem; color: #475569; max-width: 820px;">
-              ${pastData.paper_name} (${pastData.paper_code}) • 2018–2026 series mapping, indicative mark schemes, and syllabus gap predictions.
+              ${pastData.paper_name} (${pastData.paper_code}) • 2018–2025 topic/tariff frequency trends paired with original Hub Exam-Style Practice Questions and marking guidance.
             </p>
           </div>
           
@@ -1195,7 +1195,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
         </div>
 
         <div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 12px; padding-top: 10px; border-top: 1px solid #e2e8f0; font-size: 0.8rem; color: #475569;">
-          <span><strong style="color: #0f172a; font-weight: 800;">${totalQuestions}</strong> Questions (${papers.length} Series: 2018–2026)</span>
+          <span><strong style="color: #0f172a; font-weight: 800;">${totalQuestions}</strong> Hub Practice Prompts (${papers.length} Series: 2018–2025)</span>
           <span style="color: #cbd5e1;">|</span>
           <span><strong style="color: #0f172a; font-weight: 800;">${overdueCount}</strong> Overdue Topics</span>
           <span style="color: #cbd5e1;">|</span>
@@ -1208,13 +1208,13 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
       <!-- TABS BAR -->
       <div class="etm-tabs-bar">
         <button class="etm-tab-btn active" data-tab="matrix">
-          <i class="fa-solid fa-table-cells"></i> Year × Question Matrix (2018–2026)
+          <i class="fa-solid fa-table-cells"></i> Year × Topic Matrix (2018–2025)
         </button>
         <button class="etm-tab-btn" data-tab="radar">
           <i class="fa-solid fa-radar"></i> Syllabus Overdue Radar & Gap Heatmap
         </button>
         <button class="etm-tab-btn" data-tab="vault">
-          <i class="fa-solid fa-vault"></i> Official PDF Materials Vault
+          <i class="fa-solid fa-book-bookmark"></i> Specification Series Overview
         </button>
       </div>
 
@@ -1261,7 +1261,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
             <thead>
               <tr>
                 <th style="width: 135px; min-width: 135px; border-right: 2px solid #0f172a;">Question Focus</th>
-                ${years.map((y) => `<th style="text-align: center; width: calc((100% - 135px) / ${years.length});">${y === 2026 ? '2026<span style="display:block; font-size: 0.62rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Specimen</span>' : y}</th>`).join('')}
+                ${years.map((y) => `<th style="text-align: center; width: calc((100% - 135px) / ${years.length});">${y}</th>`).join('')}
               </tr>
             </thead>
             <tbody>
@@ -1411,15 +1411,12 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
                               ${top.points
                                 .map((pt) => {
                                   let badgeClass = 'etm-badge-overdue-recent';
-                                  let badgeLabel = `Examined in ${pt.last_examined}`;
-                                  if (pt.is_last_specimen || pt.last_examined === 2026) {
-                                    badgeClass = 'etm-badge-overdue-recent';
-                                    badgeLabel = 'In 2026 Specimen Paper';
-                                  } else if (pt.overdue_status === 'high') {
+                                  let badgeLabel = `Assessed in ${pt.last_examined}`;
+                                  if (pt.overdue_status === 'high') {
                                     badgeClass = 'etm-badge-overdue-high';
                                     badgeLabel =
                                       pt.last_examined === 'Never'
-                                        ? 'Never Examined (2018–2026)'
+                                        ? 'Never Examined (2018–2025)'
                                         : `Overdue: Last set in ${pt.last_examined}`;
                                   } else if (pt.overdue_status === 'medium') {
                                     badgeClass = 'etm-badge-overdue-med';
@@ -1465,16 +1462,9 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
                                             <span style="font-size: 0.75rem; color: #64748b; font-weight: 600;">Tested in:</span>
                                             ${pt.matched_questions
                                               .map((mq) => {
-                                                const isSpec =
-                                                  mq.is_specimen ||
-                                                  mq.year === 2026 ||
-                                                  (mq.series &&
-                                                    mq.series.toLowerCase().includes('specimen'));
-                                                const qChipText = isSpec
-                                                  ? `2026 Specimen ${mq.q_number} (${mq.tariff}m)`
-                                                  : `${mq.year} ${mq.q_number} (${mq.tariff}m)`;
+                                                const qChipText = `${mq.year} ${mq.q_number} (${mq.tariff}m)`;
                                                 return `
-                                                    <span class="etm-q-card-mini" data-qid="${mq.q_id}" style="cursor: pointer; background: white; border: 1px solid #cbd5e1; border-radius: 6px; padding: 2px 8px; font-size: 0.75rem; font-weight: 700; color: #1e293b;" title="Click to view question">
+                                                    <span class="etm-q-card-mini" data-qid="${mq.q_id}" style="cursor: pointer; background: white; border: 1px solid #cbd5e1; border-radius: 6px; padding: 2px 8px; font-size: 0.75rem; font-weight: 700; color: #1e293b;" title="Click to view Hub practice question">
                                                       ${qChipText}
                                                     </span>
                                                   `;
@@ -1501,12 +1491,12 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
         </div>
       </div>
 
-      <!-- TAB 3: OFFICIAL PDF VAULT -->
+      <!-- TAB 3: SERIES OVERVIEW -->
       <div id="etm-view-vault" class="etm-tab-content" style="display: none;">
         <div style="background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; margin-bottom: 25px;">
-          <h2 style="margin: 0 0 10px 0; color: #0f172a;"><i class="fa-solid fa-book-bookmark" style="color: ${cfg.primary};"></i> Official Edexcel Exam Archive</h2>
+          <h2 style="margin: 0 0 10px 0; color: #0f172a;"><i class="fa-solid fa-book-bookmark" style="color: ${cfg.primary};"></i> Specification Series Overview</h2>
           <p style="color: #64748b; font-size: 1rem; margin-bottom: 25px;">
-            The History Hub is synchronised directly with your local Google Drive exam repository. Below are all verified official Question Papers, Mark Schemes, and Examiner Reports.
+            Review specification topic coverage, question tariffs, and revision guidance across historical examination series.
           </p>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
@@ -1687,7 +1677,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
         q.stimulus
           ? `
           <div style="background: #f8fafc; border-left: 4px solid #cbd5e1; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 0.95rem; color: #475569; margin-bottom: 20px; font-style: italic; white-space: pre-wrap;">
-            <strong>Stimulus provided in exam:</strong><br>${q.stimulus}
+            <strong>Hub Practice Stimulus Cues:</strong><br>${q.stimulus}
           </div>
         `
           : ''
@@ -1699,7 +1689,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
           ? `
           <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px; padding: 16px; margin-bottom: 20px;">
             <div style="color: #b45309; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-triangle-exclamation"></i> Chief Examiner Pitfall Warning
+              <i class="fa-solid fa-triangle-exclamation"></i> Common Exam Pitfall
             </div>
             <div style="color: #92400e; font-size: 0.95rem; line-height: 1.5;">
               ${q.examiner_tips}
@@ -1922,7 +1912,7 @@ function buildTrendMatrixUI(container, pastData, trendData, unitId, cfg) {
     secbSubBtns.forEach((btn) => {
       btn.addEventListener('click', async () => {
         const qid = btn.dataset.qid;
-        const targetQ = secB.questions.find((q) => q.q_id === qid);
+        const targetQ = secB.find((q) => q.q_id === qid);
         if (!targetQ) return;
         modal.classList.remove('open');
         const contentArea =

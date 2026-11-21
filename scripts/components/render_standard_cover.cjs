@@ -74,8 +74,9 @@ function renderStandardFrontCover({
   const isWesternFront = isMedicine && keyTopicNum === 5;
   const isMedicineThematic = isMedicine && !isWesternFront;
   const isCME = unitId === 'cme_new';
+  const isGcseColdWar = unitId === 'gcse_cold_war';
 
-  if (isCME || isEee) {
+  if (isCME || isEee || isGcseColdWar) {
     let canonicalSpec = specBox;
     if (UNIT_SPEC_MAP[unitId]) {
       try {
@@ -99,13 +100,21 @@ function renderStandardFrontCover({
               ? 'kt3.1-education-and-leisure'
               : 'kt1.1-accession-1558'
         }`
-      : `https://historyrevisionhub.co.uk/?view=lessons&unit=cme_new&lesson=${
-          keyTopicNum === 2
-            ? 'kt2.1-water-wars'
-            : keyTopicNum === 3
-              ? 'kt3.1-shuttle-diplomacy'
-              : 'kt1.1-end-of-mandate'
-        }`;
+      : isGcseColdWar
+        ? `https://historyrevisionhub.co.uk/?view=lessons&unit=gcse_cold_war&lesson=${
+            keyTopicNum === 2
+              ? 'kt2.1-berlin-ultimatum-wall'
+              : keyTopicNum === 3
+                ? 'kt3.1-detente-salt-helsinki'
+                : 'kt1.1-grand-alliance-conferences'
+          }`
+        : `https://historyrevisionhub.co.uk/?view=lessons&unit=cme_new&lesson=${
+            keyTopicNum === 2
+              ? 'kt2.1-water-wars'
+              : keyTopicNum === 3
+                ? 'kt3.1-shuttle-diplomacy'
+                : 'kt1.1-end-of-mandate'
+          }`;
     const hubUrl = heroImage.hubUrl || defaultHubUrl;
     const hubQrSvg = generateQrSvg(hubUrl);
 
@@ -120,17 +129,24 @@ function renderStandardFrontCover({
       heroImage.hingeQuestion ||
       (isEee
         ? 'What does this contemporary source reveal about power, crisis, and ambition in Early Elizabethan England?'
-        : 'Why did this moment become a defining turning point in the Middle East conflict?');
+        : isGcseColdWar
+          ? 'Why did this moment mark a decisive turning point in US–Soviet superpower relations?'
+          : 'Why did this moment become a defining turning point in the Middle East conflict?');
 
     // Flatten official Pearson Edexcel subtopics + points into a crisp Personal Learning Checklist
     const allSubtopics = canonicalSpec.subtopics || [];
     const totalSpecRows = allSubtopics.reduce((acc, s) => acc + (s.items ? s.items.length : 0), 0);
+    const totalSpecChars = allSubtopics.reduce(
+      (acc, s) => acc + (s.items || []).reduce((sum, it) => sum + String(it).replace(/<[^>]+>/g, '').length, 0),
+      0,
+    );
     const totalTableRows = allSubtopics.length + totalSpecRows;
+    const isVeryDensePlc = isGcseColdWar && totalSpecChars >= 850;
     const isDensePlc = totalSpecRows >= 10 || totalTableRows >= 12;
-    const plcRowPad = isDensePlc ? '1.8px 6px' : '2.8px 7px';
-    const plcFont = isDensePlc ? '6.75pt' : '7.1pt';
-    const plcLh = isDensePlc ? '1.14' : '1.20';
-    const heroHeightMm = heroImage.cmeHeroHeightMm || (isDensePlc ? 64 : 70);
+    const plcRowPad = isVeryDensePlc ? '1.5px 6px' : isDensePlc ? '1.8px 6px' : '2.8px 7px';
+    const plcFont = isVeryDensePlc ? '6.55pt' : isDensePlc ? '6.75pt' : '7.1pt';
+    const plcLh = isVeryDensePlc ? '1.12' : isDensePlc ? '1.14' : '1.20';
+    const heroHeightMm = heroImage.cmeHeroHeightMm || (isVeryDensePlc ? 60 : isDensePlc ? 64 : 70);
 
     const plcRowsHtml = allSubtopics
       .map((sub, sIdx) => {
@@ -163,8 +179,14 @@ function renderStandardFrontCover({
 
     const paperHeaderLeft = isEee
       ? 'Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Early Elizabethan England, 1558–88'
-      : 'Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Conflict in the Middle East, 1945–95';
-    const paperHeaderRight = isEee ? 'Option B4 (1HI0/B4)' : 'Option P5 (1HI0/P5)';
+      : isGcseColdWar
+        ? 'Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Superpower Relations and the Cold War, 1941–91'
+        : 'Pearson Edexcel GCSE (9–1) History &bull; Paper 2: Conflict in the Middle East, 1945–95';
+    const paperHeaderRight = isEee
+      ? 'Option B4 (1HI0/B4)'
+      : isGcseColdWar
+        ? 'Option P4 (1HI0/P4)'
+        : 'Option P5 (1HI0/P5)';
     const detailsHeading = isEee
       ? '3 Details to Spot in This Source:'
       : '3 Details to Spot in This Photograph:';
@@ -364,7 +386,7 @@ function renderStandardFrontCover({
           <thead>
             <tr style="background: #0f172a; color: #ffffff; border-bottom: 1.5px solid #0f172a;">
               <th style="padding: 3px 7px; text-align: left; font-family: 'Inter', sans-serif; font-size: 7.1pt; font-weight: 900; text-transform: uppercase; letter-spacing: 0.4px; border-right: 1px solid #334155;">
-                Official Pearson Edexcel Specification Checklist &bull; Key Topic ${keyTopicNum}
+                Pearson Edexcel (1HI0) Topic Checklist &bull; Key Topic ${keyTopicNum}
               </th>
               <th style="width: 14mm; padding: 3px 2px; text-align: center; font-family: 'Inter', sans-serif; font-size: 6.1pt; font-weight: 900; text-transform: uppercase; border-right: 1px solid #334155;">
                 Taught
@@ -1113,7 +1135,7 @@ function renderStandardFrontCover({
             <span style="background: #0284c7; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; font-size: 6.8pt; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase;">Pearson Edexcel</span>
             <span style="font-size: 7.4pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase; color: #f8fafc;">${(specBox.title || '').replace(/^Pearson Edexcel GCSE \(9–1\) History Specification • /i, '')}</span>
           </div>
-          <span style="background: rgba(2, 132, 199, 0.25); border: 1px solid #38bdf8; color: #e0f2fe; padding: 1.5px 7px; border-radius: 3px; font-size: 6.6pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase;">Official Specification Directory</span>
+          <span style="background: rgba(2, 132, 199, 0.25); border: 1px solid #38bdf8; color: #e0f2fe; padding: 1.5px 7px; border-radius: 3px; font-size: 6.6pt; font-weight: 800; letter-spacing: 0.6px; text-transform: uppercase;">Course Topic Checklist</span>
         </div>
 
         <div style="padding: 5px 6px; display: grid; grid-template-columns: repeat(${specBox.subtopics.length || 3}, 1fr); gap: 6px; font-family: 'Inter', sans-serif; flex: 1; overflow: hidden;">
@@ -1165,9 +1187,10 @@ function renderStandardBackCover({
   const isMedicineThematic = isMedicine && !isWesternFront;
   const isCME = unitId === 'cme_new';
   const isEEE = unitId === 'eee';
+  const isGcseColdWar = unitId === 'gcse_cold_war';
   const isColdWar = unitId === 'cold_war';
 
-  if (isCME || isEEE) {
+  if (isCME || isEEE || isGcseColdWar) {
     const commentLineHeightMm = enquiries.length <= 3 ? '7.4' : '6.3';
     const q1ColHeader = isEEE
       ? `Q1<span style="font-size: 5.7pt; color: #cbd5e1;">(/2)</span>`
@@ -1305,12 +1328,14 @@ function renderStandardBackCover({
       })
       .join('\n');
 
+    const nonEndorsementColophon =
+      'Edexcel &amp; Pearson Edexcel are registered trademarks of Pearson Education Ltd. Independent publication; not endorsed by Pearson.';
     const cmeFooterHtml = renderFooterStrip
-      ? renderFooterStrip(totalPageCount, footerQuip, totalPageCount)
+      ? renderFooterStrip(totalPageCount, nonEndorsementColophon, totalPageCount)
       : `
         <div class="page-footer-strip">
           <span class="footer-page-num" style="margin-right: 8px;">Page ${totalPageCount} of ${totalPageCount}</span>
-          <span class="footer-quip" style="text-align: right; flex: 1;">${footerQuip}</span>
+          <span class="footer-quip" style="text-align: right; flex: 1;">${nonEndorsementColophon}</span>
         </div>`;
 
     return `

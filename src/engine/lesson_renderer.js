@@ -8773,7 +8773,7 @@ export function renderLesson(lesson) {
                     ? `
                   <div style="background: ${verdictBg}; border-left: 3.5px solid ${verdictBorder}; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 0.86rem; line-height: 1.5; color: ${verdictColor};">
                     <strong style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.4px;">
-                      <i class="fa-solid fa-clipboard-check"></i> Official Examiner Assessment Verdict:
+                      <i class="fa-solid fa-clipboard-check"></i> Examiner-Style Assessment Verdict:
                     </strong>
                     <div>${typeof formatBold !== 'undefined' ? formatBold(t.verdict) : t.verdict}</div>
                   </div>
@@ -8789,7 +8789,7 @@ export function renderLesson(lesson) {
             <div id="ep-model-${qUid}" class="scaffold-box model-box model-tier-container" style="display:none; margin-top: 15px; background: #ffffff; border: 1.5px solid #10b981; border-radius: 10px; padding: 16px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
               <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
                 <span style="font-weight: 800; font-size: 0.82rem; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
-                  <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> Pearson Edexcel ${tierKeys.length}-Tier Mark Scheme Ladder
+                  <i class="fa-solid fa-scale-balanced" style="color: #10b981;"></i> ${tierKeys.length}-Tier Exam-Style Mark Scheme Ladder
                 </span>
                 <span style="font-size: 0.74rem; font-weight: 600; color: #64748b;">
                   Toggle rungs to analyze mark boundaries

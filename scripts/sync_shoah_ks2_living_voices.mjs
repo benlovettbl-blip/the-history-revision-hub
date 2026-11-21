@@ -298,8 +298,8 @@ const SOURCE_CAST = {
   },
   'ks2_ww2:lesson_4:C': {
     voiceKey: 'male_historian',
-    style: 'clear, precise archival reading of nine-year-old Věra Löwyová’s 1939 Klatovy passport entries',
-    badge: 'Passport No. 89605 (Klatovy, 1939)',
+    style: 'clear, measured archival reading of Leo Ermann’s 1939 German passport stamped with the compulsory red J mark',
+    badge: 'Reisepass Nr. 3870 ("J" Stamp, 1939)',
   },
   'ks2_ww2:lesson_5:C': {
     voiceKey: 'male_historian',

@@ -22,7 +22,7 @@ export const KS2_WW2_MILESTONES = [
     title: 'Pre-War Jewish Life & Rights Taken Away Step by Step',
     category: 'children',
     categoryLabel: 'Evacuation & Children',
-    image: '/units/ks2_ww2/assets/prewar_children_holiday.jpg',
+    image: '/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg',
     imageCaption:
       'Eleven boys from a Jewish youth football team posing proudly in striped team shirts before Nazi laws banned them from public sports pitches (c. 1935).',
     provenance: 'United States Holocaust Memorial Museum / Pre-War Family Archive',
@@ -47,7 +47,7 @@ export const KS2_WW2_MILESTONES = [
     id: 'm2',
     year: '1938–1939',
     month: 'December 1938 – August 1939',
-    title: "Vera's Journey & The Kindertransport Rescue",
+    title: "One Small Suitcase: The Kindertransport Rescue",
     category: 'children',
     categoryLabel: 'Evacuation & Children',
     image: '/units/ks2_ww2/assets/kindertransport_arrival.jpg',
@@ -78,7 +78,7 @@ export const KS2_WW2_MILESTONES = [
     title: 'Nicholas Winton, Trevor Chadwick & The 669 Children from Prague',
     category: 'children',
     categoryLabel: 'Evacuation & Children',
-    image: '/units/ks2_ww2/assets/winton_prague_child_1939.jpg',
+    image: '/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg',
     imageCaption:
       'Volunteer rescuer Nicholas Winton holding a young refugee child in Prague while organising safe train transports to Britain (1939).',
     provenance: 'Nicholas Winton Family Archive',

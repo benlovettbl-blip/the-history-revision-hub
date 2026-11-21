@@ -97,6 +97,7 @@ export function renderDashboard() {
   const gcseMeta = {
     edexcel_medicine: { paper: '1', paperNumber: 1, stage: 'gcse', paperBadge: 'Paper 1', stageLabel: 'Edexcel Paper 1' },
     eee: { paper: '2', paperNumber: 2, stage: 'gcse', paperBadge: 'Paper 2', stageLabel: 'Edexcel Paper 2' },
+    gcse_cold_war: { paper: '2', paperNumber: 2, stage: 'gcse', paperBadge: 'Paper 2', stageLabel: 'Edexcel Paper 2' },
     cme_new: { paper: '2', paperNumber: 2, stage: 'gcse', paperBadge: 'Paper 2', stageLabel: 'Edexcel Paper 2' },
     weimar_nazi_germany: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
     usa: { paper: '3', paperNumber: 3, stage: 'gcse', paperBadge: 'Paper 3', stageLabel: 'Edexcel Paper 3' },
@@ -119,6 +120,7 @@ export function renderDashboard() {
     great_war_part2: 'The Great War (1914–1919)',
     the_shoah: 'The Shoah (1933–1948)',
     cold_war: 'The Cold War (1945–1991)',
+    gcse_cold_war: 'Superpower Relations & the Cold War (1941–1991)',
     second_world_war: 'The Second World War',
     post_war_britain: 'Rights, Protest & Post-War Britain',
     cme_new: 'Conflict in the Middle East (1945–1995)',
@@ -208,7 +210,7 @@ export function renderDashboard() {
     const ks2Cover =
       ks2Unit.homepage_background ||
       ks2Unit.cover_image ||
-      '/units/ks2_ww2/assets/kindertransport_prague_airport_1939.jpg';
+      '/units/ks2_ww2/assets/kindertransport_prague_flight_1939_pd.jpg';
     html += `
       <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2" style="margin-bottom: 24px;">
         <div id="ks2-section" style="position: relative; top: -14px;"></div>
@@ -2192,7 +2194,7 @@ window.setHubExamClockMinutes = function (mins, label) {
 
 function getHubTimingStrategyRows(unitId) {
   let rows = [];
-  if (unitId === 'cme_new' || unitId === 'cold_war') {
+  if (unitId === 'cme_new' || unitId === 'gcse_cold_war' || unitId === 'cold_war') {
     rows = [
       {
         tariff: '4 Marks (×2)',
@@ -2416,147 +2418,113 @@ function getHubTimingStrategyRows(unitId) {
     .join('\n');
 }
 
-let cachedOfficialPapersManifest = null;
+const PEARSON_PORTAL_UNITS = {
+  edexcel_medicine: {
+    paperCode: '1HI0/11',
+    paperName: 'Paper 1: Medicine in Britain, c1250–present & Western Front, 1914–18',
+    searchHint: 'Select Paper 1 Option 11 (1HI0/11) for Question Papers, Mark Schemes, and Examiner Reports.',
+  },
+  eee: {
+    paperCode: '1HI0/B4',
+    paperName: 'Paper 2 (Booklet B): Early Elizabethan England, 1558–88',
+    searchHint: 'Select Paper 2 Booklet B4 (1HI0/B4) for Question Papers, Mark Schemes, and Examiner Reports.',
+  },
+  cme_new: {
+    paperCode: '1HI0/P5',
+    paperName: 'Paper 2 (Booklet P): Conflict in the Middle East, 1945–95',
+    searchHint: 'Select Paper 2 Booklet P5 (1HI0/P5) for Question Papers, Mark Schemes, and Examiner Reports.',
+  },
+  gcse_cold_war: {
+    paperCode: '1HI0/P4',
+    paperName: 'Paper 2 (Booklet P): Superpower Relations and the Cold War, 1941–91',
+    searchHint: 'Select Paper 2 Booklet P4 (1HI0/P4) for Question Papers, Mark Schemes, and Examiner Reports.',
+  },
+  weimar_nazi_germany: {
+    paperCode: '1HI0/31',
+    paperName: 'Paper 3: Weimar and Nazi Germany, 1918–39',
+    searchHint: 'Select Paper 3 Option 31 (1HI0/31) for Question Papers, Sources Booklets, Mark Schemes, and Examiner Reports.',
+  },
+  usa: {
+    paperCode: '1HI0/33',
+    paperName: 'Paper 3: The USA, 1954–75: Conflict at Home and Abroad',
+    searchHint: 'Select Paper 3 Option 33 (1HI0/33) for Question Papers, Sources Booklets, Mark Schemes, and Examiner Reports.',
+  },
+};
 
-async function renderOfficialPastPapers(container, unitId) {
+function renderOfficialPastPapers(container, unitId) {
+  const portalMeta = PEARSON_PORTAL_UNITS[unitId];
+  const pastPapersPortalUrl =
+    'https://qualifications.pearson.com/en/support/support-topics/exams/past-papers.html';
+  const historyMaterialsUrl =
+    'https://qualifications.pearson.com/en/qualifications/edexcel-gcses/history-2016.coursematerials.html';
+
+  if (!portalMeta) {
+    container.innerHTML = `
+      <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 40px 30px; text-align: center; margin: 20px 0;">
+        <div style="font-size: 2.2rem; margin-bottom: 10px;">📦</div>
+        <h3 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">External Past Papers Portal</h3>
+        <p style="color: #4b5563; font-size: 0.92rem; max-width: 650px; margin: 0 auto 18px auto; line-height: 1.5;">
+          GCSE past examination series are published externally on Pearson Qualifications for Key Stage 4 units. For KS3 units, use The History Revision Hub's Pupil Workbooks, Master Textbooks, and Retrieval Companions.
+        </p>
+        <a href="${pastPapersPortalUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 10px 18px; border-radius: 4px; font-size: 0.85rem; font-weight: 800; display: inline-flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Pearson Past Papers Portal
+        </a>
+      </div>
+    `;
+    return;
+  }
+
   container.innerHTML = `
-    <div style="padding: 40px; text-align: center; color: #6b7280;">
-      <i class="fa-solid fa-spinner fa-spin" style="font-size: 1.8rem; margin-bottom: 12px; color: #000000;"></i>
-      <div style="font-size: 0.95rem; font-weight: 700; color: #111827;">Loading Pearson Past Examination Archive...</div>
-    </div>
-  `;
-
-  try {
-    if (!cachedOfficialPapersManifest) {
-      const res = await fetch('/data/official_past_papers_manifest.json');
-      if (!res.ok) throw new Error('Could not load official papers manifest');
-      cachedOfficialPapersManifest = await res.json();
-    }
-    const unitManifest = cachedOfficialPapersManifest[unitId];
-
-    if (!unitManifest || !unitManifest.papers || unitManifest.papers.length === 0) {
-      container.innerHTML = `
-        <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 40px 30px; text-align: center; margin: 20px 0;">
-          <div style="font-size: 2.2rem; margin-bottom: 10px;">📦</div>
-          <h3 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">Edexcel Exam Paper Archive</h3>
-          <p style="color: #4b5563; font-size: 0.92rem; max-width: 650px; margin: 0 auto; line-height: 1.5;">
-            Edexcel GCSE Examination Series past papers are curated for Key Stage 4 (GCSE) syllabus units. For KS3 units, use the full Pupil Workbooks, Master Textbooks, and Mastery Quizzes.
+    <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 26px 28px; margin-bottom: 24px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px; border-bottom: 2px solid #000000; padding-bottom: 16px; margin-bottom: 18px;">
+        <div>
+          <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #000000;">
+            External Awarding-Body Portal &bull; ${portalMeta.paperCode}
+          </div>
+          <h2 style="margin: 4px 0 6px 0; font-size: 1.45rem; font-weight: 900; font-family: 'Outfit', sans-serif; color: #000000;">
+            Pearson Qualifications Public Past Papers Portal
+          </h2>
+          <p style="margin: 0; font-size: 0.9rem; color: #374151; max-width: 820px; line-height: 1.5;">
+            In compliance with copyright law and JCQ secure-series regulations, Pearson Edexcel question papers, mark schemes, and examiner reports are hosted directly by Pearson Qualifications rather than redistributed on third-party websites.
           </p>
         </div>
-      `;
-      return;
-    }
-
-    // Group papers by Year
-    const yearMap = {};
-    unitManifest.papers.forEach((p) => {
-      if (!yearMap[p.year]) {
-        yearMap[p.year] = {
-          year: p.year,
-          season: p.season,
-          seriesLabel: p.seriesLabel,
-          qp: [],
-          ms: [],
-          pef: [],
-        };
-      }
-      if (p.typeKey === 'question_paper') yearMap[p.year].qp.push(p);
-      else if (p.typeKey === 'mark_scheme') yearMap[p.year].ms.push(p);
-      else if (p.typeKey === 'examiner_report') yearMap[p.year].pef.push(p);
-    });
-
-    const sortedYears = Object.keys(yearMap).sort((a, b) => b - a);
-
-    let archiveHtml = `
-      <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 22px 26px; margin-bottom: 24px;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
-          <div>
-            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #000000;">
-              Edexcel Exam Paper Archive &bull; ${unitManifest.paperCode}
-            </div>
-            <h2 style="margin: 4px 0 6px 0; font-size: 1.45rem; font-weight: 900; font-family: 'Outfit', sans-serif; color: #000000;">
-              Official Past Examination Papers &amp; Mark Schemes (2018–2026)
-            </h2>
-            <p style="margin: 0; font-size: 0.88rem; color: #374151; max-width: 820px; line-height: 1.45;">
-              Authentic Pearson Edexcel exam hall papers, formal mark schemes with official indicative content, and Principal Examiner Reports detailing nationwide grade boundaries and candidate responses.
-            </p>
-          </div>
-          <div style="text-align: right;">
-            <span style="display: inline-block; background: #000000; color: #ffffff; padding: 6px 14px; border-radius: 3px; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.5px;">
-              ${unitManifest.papers.length} OFFICIAL DOCUMENTS
-            </span>
-          </div>
+        <div>
+          <span style="display: inline-block; background: #000000; color: #ffffff; padding: 6px 14px; border-radius: 3px; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.5px;">
+            CODE: ${portalMeta.paperCode}
+          </span>
         </div>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 16px;">
-    `;
-
-    sortedYears.forEach((year) => {
-      const entry = yearMap[year];
-      archiveHtml += `
-        <div style="background: #ffffff; border: 2px solid #000000; border-radius: 4px; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-          <div>
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
-              <span style="font-size: 0.72rem; font-weight: 800; background: #000000; color: #ffffff; padding: 3px 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px;">
-                ${year} EXAM SERIES
-              </span>
-              <span style="font-size: 0.82rem; font-weight: 800; color: #000000;">
-                ${unitManifest.paperCode}
-              </span>
-            </div>
-            <div style="font-size: 1.08rem; font-weight: 800; color: #000000; font-family: 'Outfit', sans-serif;">
-              Pearson Edexcel GCSE (9–1) History &bull; ${unitManifest.paperName}
-            </div>
-            <div style="font-size: 0.78rem; color: #4b5563; margin-top: 3px;">
-              Series: ${entry.seriesLabel} &bull; ${entry.qp.length} Question Paper(s), ${entry.ms.length} Mark Scheme(s)${entry.pef.length ? `, ${entry.pef.length} Examiner Report(s)` : ''}
-            </div>
+      <div style="background: #f8fafc; border: 1.5px solid #000000; border-radius: 4px; padding: 18px 20px; margin-bottom: 20px;">
+        <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #0f172a; margin-bottom: 8px;">
+          Quick Filter Steps on qualifications.pearson.com:
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; font-size: 0.85rem; color: #1f2937;">
+          <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 10px 12px;">
+            <strong>1. Qualification:</strong> GCSE (9–1) History (2016)
           </div>
-
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            ${entry.qp
-              .map(
-                (qp) => `
-              <a href="${qp.url}" target="_blank" download="${qp.filename}" style="text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 9px 14px; border-radius: 4px; font-size: 0.82rem; font-weight: 800; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';" title="Download Question Paper (${qp.filename})">
-                <i class="fa-solid fa-file-lines"></i> Question Paper (${qp.sizeFormatted})
-              </a>
-            `,
-              )
-              .join('')}
-
-            ${entry.ms
-              .map(
-                (ms) => `
-              <a href="${ms.url}" target="_blank" download="${ms.filename}" style="text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 9px 14px; border-radius: 4px; font-size: 0.82rem; font-weight: 800; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';" title="Download Mark Scheme (${ms.filename})">
-                <i class="fa-solid fa-clipboard-check"></i> Mark Scheme (${ms.sizeFormatted})
-              </a>
-            `,
-              )
-              .join('')}
-
-            ${entry.pef
-              .map(
-                (pef) => `
-              <a href="${pef.url}" target="_blank" download="${pef.filename}" style="text-decoration: none; background: #f3f4f6; color: #1f2937; border: 1.5px solid #9ca3af; padding: 9px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" onmouseover="this.style.background='#e5e7eb';" onmouseout="this.style.background='#f3f4f6';" title="Download Examiner Report (${pef.filename})">
-                <i class="fa-solid fa-chart-column"></i> Examiner Report (${pef.sizeFormatted})
-              </a>
-            `,
-              )
-              .join('')}
+          <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 10px 12px;">
+            <strong>2. Paper Code:</strong> <code style="font-weight: 800;">${portalMeta.paperCode}</code>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 4px; padding: 10px 12px;">
+            <strong>3. Unit:</strong> ${portalMeta.paperName}
           </div>
         </div>
-      `;
-    });
-
-    archiveHtml += `</div>`;
-    container.innerHTML = archiveHtml;
-  } catch (err) {
-    container.innerHTML = `
-      <div style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 4px; padding: 20px; color: #991b1b;">
-        <strong>Error loading past papers:</strong> ${err.message}
+        <div style="font-size: 0.82rem; color: #475569; margin-top: 10px;">
+          <i class="fa-solid fa-circle-info"></i> ${portalMeta.searchHint} Recent secure series remain Edexcel Online (EOL) padlocked for registered examination centres in accordance with JCQ rules.
+        </div>
       </div>
-    `;
-  }
+
+      <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+        <a href="${pastPapersPortalUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #000000; color: #ffffff; border: 2px solid #000000; padding: 11px 18px; border-radius: 4px; font-size: 0.86rem; font-weight: 800; display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.background='#27272a';" onmouseout="this.style.background='#000000';">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Pearson Past Papers Finder
+        </a>
+        <a href="${historyMaterialsUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; background: #ffffff; color: #000000; border: 2px solid #000000; padding: 11px 18px; border-radius: 4px; font-size: 0.86rem; font-weight: 800; display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.background='#f4f4f5';" onmouseout="this.style.background='#ffffff';">
+          <i class="fa-solid fa-book-bookmark"></i> GCSE History (1HI0) Course Materials
+        </a>
+      </div>
+    </div>
+  `;
 }
 
 export async function renderMockExamsView() {
@@ -2594,7 +2562,7 @@ export async function renderMockExamsView() {
     defaultMarks = '32 Marks';
     pacingSummary =
       'Single Booklet Duration: 55 mins &bull; Q1(a)/(b) Consequence (12m total) &bull; Q2 Narrative (15m) &bull; Q3 Importance (28m)';
-  } else if (unitId === 'cold_war') {
+  } else if (unitId === 'gcse_cold_war' || unitId === 'cold_war') {
     specTitle = 'Paper 2: Superpower Relations and the Cold War, 1941–91';
     specPaperRef = '1HI0/P4';
     defaultTime = '55 Minutes';
@@ -2739,15 +2707,15 @@ export async function renderMockExamsView() {
           <span>${mockReturnLabel}</span>
         </button>
       </div>
-      <!-- Pearson Examination Official Masthead -->
+      <!-- Hub Examination Masthead -->
       <div style="background: #ffffff; color: #000000; border: 2px solid #000000; border-radius: 4px; padding: 26px 30px; margin-bottom: 24px;">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000000; padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
           <div>
             <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #000000;">
-              PEARSON EDEXCEL GCSE (9–1) HISTORY
+              THE HISTORY REVISION HUB &bull; ALIGNED TO EDEXCEL GCSE (9–1)
             </div>
             <h1 style="margin: 4px 0 0 0; font-size: 1.9rem; font-weight: 900; line-height: 1.2; font-family: 'Outfit', sans-serif; color: #000000;">
-              Official Mock Examination Papers
+              Mastery &amp; Mock Examination Papers
             </h1>
           </div>
           <div style="text-align: right;">
@@ -2763,20 +2731,20 @@ export async function renderMockExamsView() {
           ${specTitle}
         </div>
         <p style="margin: 0; font-size: 0.92rem; color: #111827; max-width: 900px; line-height: 1.5;">
-          Authentic past-paper format replicas featuring full source booklets, question papers, and comprehensive teacher mark schemes. Calibrated for timed exam hall conditions or commercial A4 printing.
+          Original Hub exam-style practice papers featuring full source booklets, question papers, and comprehensive teacher mark schemes. Calibrated for timed classroom mock conditions and A4 printing.
         </p>
       </div>
 
       <!-- Sub Navigation Tabs: High-Contrast Monochrome -->
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid #000000; padding-bottom: 2px;">
         <button id="tab-btn-official-mocks" class="btn" style="background: #000000; color: #ffffff; border: 2px solid #000000; border-bottom: none; padding: 9px 14px; border-radius: 4px 4px 0 0; font-weight: 800; cursor: pointer; font-size: 0.84rem; display: flex; align-items: center; gap: 7px; white-space: nowrap;">
-          <i class="fa-solid fa-graduation-cap"></i> Predicted Mock Exam Papers
+          <i class="fa-solid fa-graduation-cap"></i> Mastery &amp; Mock Papers
         </button>
         <button id="tab-btn-official-past-papers" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 9px 14px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.84rem; display: flex; align-items: center; gap: 7px; white-space: nowrap;">
-          <i class="fa-solid fa-box-archive"></i> Edexcel Past Papers (2018–2026)
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Pearson Past Papers Portal
         </button>
         <button id="tab-btn-trend-radar" class="btn" style="background: #ffffff; color: #000000; border: 2px solid #000000; border-bottom: none; padding: 9px 14px; border-radius: 4px 4px 0 0; font-weight: 700; cursor: pointer; font-size: 0.84rem; display: flex; align-items: center; gap: 7px; white-space: nowrap;">
-          <i class="fa-solid fa-chart-line"></i> Past Paper Matrix &amp; Overdue Radar
+          <i class="fa-solid fa-chart-line"></i> Topic Trend Matrix &amp; Overdue Radar (2018–2025)
         </button>
       </div>
 
@@ -2870,6 +2838,7 @@ export async function renderMockExamsView() {
       unitId === 'weimar_nazi_germany' ||
       unitId === 'eee' ||
       unitId === 'usa' ||
+      unitId === 'gcse_cold_war' ||
       unitId === 'cold_war' ||
       (unitId === 'edexcel_medicine' && mock.id !== 'mock_2025_clone'),
     );
@@ -2913,7 +2882,7 @@ export async function renderMockExamsView() {
             isRadarMock
               ? `
             <div style="font-size: 0.78rem; color: #000000; background: #f9fafb; border: 1.5px solid #000000; border-radius: 3px; padding: 8px 10px; margin-bottom: 12px; line-height: 1.45; font-style: italic;">
-              <strong>Topic Forecast:</strong> Target questions calibrated against 100% unexamined syllabus criteria across 2018–2026.
+              <strong>Topic Forecast:</strong> Target questions calibrated against unexamined syllabus criteria across 2018–2025.
             </div>
           `
               : ''
@@ -3109,7 +3078,7 @@ export async function renderReadingView(options = {}) {
   const unitId = state.selectedUnitId || window.currentUnitId || 'great_war_part2';
   const unitData = state.activeUnitData || {};
 
-  if (['edexcel_medicine', 'eee', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(unitId)) {
+  if (['edexcel_medicine', 'eee', 'gcse_cold_war', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(unitId)) {
     if (container) {
       container.innerHTML = `
         <div style="max-width: 780px; margin: 40px auto; padding: 28px; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 12px; text-align: center; font-family: 'Inter', sans-serif; box-shadow: 0 4px 16px rgba(15,23,42,0.06);">

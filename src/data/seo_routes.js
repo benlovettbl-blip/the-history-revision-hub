@@ -35,6 +35,19 @@ export const SEO_UNIT_ROUTES = [
     priority: '0.9',
   },
   {
+    unitId: 'gcse_cold_war',
+    slug: 'gcse-cold-war-1941-1991',
+    aliases: ['edexcel-cold-war', 'superpower-relations-1941-1991'],
+    keyStage: 'GCSE (9–1)',
+    examBoard: 'Pearson Edexcel GCSE History (Paper 2 • Option P4)',
+    heading: 'Superpower Relations and the Cold War, 1941–91',
+    seoTitle:
+      'Superpower Relations & the Cold War (1941–91) | Edexcel GCSE History Paper 2 | The History Revision Hub',
+    metaDescription:
+      'Complete Pearson Edexcel GCSE (9–1) History Paper 2 Option P4 revision and classroom lessons for Superpower Relations and the Cold War, 1941–91: Grand Alliance, Berlin Crisis, Cuban Missile Crisis, Prague Spring, Détente, Afghanistan, Gorbachev, and the collapse of the Soviet Union.',
+    priority: '0.9',
+  },
+  {
     unitId: 'cme_new',
     slug: 'conflict-in-the-middle-east',
     aliases: ['middle-east-1945-1995'],

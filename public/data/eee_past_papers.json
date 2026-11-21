@@ -2,8 +2,8 @@
   "unit_id": "eee",
   "paper_code": "1HI0/B4",
   "paper_name": "Paper 2: Early Elizabethan England, 1558–1588",
-  "total_papers_analyzed": 8,
-  "year_range": "2018–2026",
+  "total_papers_analyzed": 7,
+  "year_range": "2018–2025",
   "papers": [
     {
       "year": 2018,
@@ -18,7 +18,7 @@
           "type": "feature",
           "topic": "Elizabeth’s Religious Settlement (1559)",
           "spec_topic": "KT1.2: Elizabeth’s religious settlement (1559)",
-          "question_text": "Describe two features of Elizabeth’s religious settlement (1559).",
+          "question_text": "Outline two key features of Elizabeth I’s 1559 Religious Settlement.",
           "stimulus": null,
           "indicative_content": [
             "The Act of Supremacy made Elizabeth \"Supreme Governor\" of the Church of England, requiring all clergy and royal officials to swear an oath of allegiance to her.",
@@ -33,8 +33,8 @@
           "type": "causation",
           "topic": "Increase in English Exploration 1558-88",
           "spec_topic": "KT3.3: Exploration and voyages of discovery",
-          "question_text": "Explain why there was an increase in exploration in the years 1558-88.",
-          "stimulus": "• navigational aids\n• luxury goods\n• You must also use information of your own.",
+          "question_text": "Analyse the reasons why English overseas voyages and exploration expanded between 1558 and 1588.",
+          "stimulus": "• Optional focus: astrolabes, quadrants, and improved navigation\n• Optional focus: commercial demand for spices and New World wealth\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Navigational aids: Astrolabes, magnetic compasses, and Mercator projection maps made ocean navigation much safer and more accurate.",
             "Luxury goods: The collapse of the traditional Antwerp cloth market forced English merchants to seek new markets and luxury commodities (spices, silk, tobacco, sugar).",
@@ -49,8 +49,8 @@
           "type": "judgement-essay",
           "topic": "Victory Over the Spanish Armada: Naval Tactics vs Weather",
           "spec_topic": "KT2.3: The Spanish Armada: reasons for defeat",
-          "question_text": "‘The effective use of naval tactics was the main reason for the English victory over the Spanish Armada.’ How far do you agree? Explain your answer.",
-          "stimulus": "• fireships\n• Spanish galleons\n• You must also use information of your own.",
+          "question_text": "‘Superior English naval tactics were the decisive reason why the Spanish Armada failed in 1588.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: English fireships off Calais\n• Optional focus: design and gunnery of Spanish vs race-built galleons\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Naval tactics: Use of 8 fireships at Gravelines broke the Spanish crescent formation; smaller, more manoeuvrable English ships armed with long-range culverin cannons that could reload quickly battered the Spanish.",
             "Spanish weaknesses: Medina Sidonia had no naval experience; supplies rotted in unseasoned wood barrels; Duke of Parma’s army was blockaded in Dutch ports and could not embark.",
@@ -66,8 +66,8 @@
           "type": "judgement-essay",
           "topic": "Attitudes Towards the Poor 1558-88",
           "spec_topic": "KT3.2: Poverty and Elizabethan poor relief",
-          "question_text": "‘There was little change in attitudes towards the poor in the years 1558-88.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Houses of Correction\n• the Vagabonds Act (1572)\n• You must also use information of your own.",
+          "question_text": "‘Tudor attitudes towards poverty and vagrancy remained largely unchanged between 1558 and 1588.’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: Houses of Correction (1576 Poor Relief Act)\n• Optional focus: harsh punishments mixed with poor rates in the 1572 Vagabonds Act\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing (continuity): Persistent fear of vagabonds and sturdy beggars; harsh physical punishments continued (whipping, boring holes through ears, execution for repeat vagrants under 1572 Act).",
             "Arguments disagreeing (progressive change): Growing recognition of the \"deserving poor\" (impotent poor: elderly, sick, orphans); 1576 Act to Set the Poor on Work introduced raw materials for work; creation of Houses of Correction (Bridewells) aiming at reform.",
@@ -90,7 +90,7 @@
           "type": "feature",
           "topic": "The Theatre in Early Elizabethan England",
           "spec_topic": "KT3.1: Education and leisure: the theatre",
-          "question_text": "Describe two features of the theatre in early Elizabethan England.",
+          "question_text": "Outline two key features of public theatregoing in Elizabethan England (1558–88).",
           "stimulus": null,
           "indicative_content": [
             "Purpose-built open-air playhouses were constructed outside the City of London walls (such as The Theatre in 1576 and The Curtain) to avoid City authority bans and Puritan opposition.",
@@ -105,8 +105,8 @@
           "type": "causation",
           "topic": "Failure of Raleigh’s First Colony in Virginia",
           "spec_topic": "KT3.3: Attempted colonisation of Virginia: Roanoke",
-          "question_text": "Explain why Raleigh’s first colony in Virginia failed.",
-          "stimulus": "• the native Algonquians\n• damage to the ship, The Tiger\n• You must also use information of your own.",
+          "question_text": "Analyse why the 1585–86 Roanoke expedition to establish a Virginia colony collapsed.",
+          "stimulus": "• Optional focus: deteriorating relations with Wingina and the Secotan Algonquians\n• Optional focus: seawater spoiling supplies aboard the flagship Tiger\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Damage to The Tiger: The flagship hit a sandbank on arrival, ruining food supplies and seeds, leaving colonists dependent on Native Americans.",
             "Conflict with Algonquians: Sir Richard Grenville burned an entire village over a stolen silver cup, alienating Chief Wingina and sparking armed attacks.",
@@ -121,8 +121,8 @@
           "type": "judgement-essay",
           "topic": "Catholic Opposition to Elizabeth: Papacy vs Other Factors",
           "spec_topic": "KT1.3 & KT2.1: The Catholic challenge: Papacy, Mary Queen of Scots, plots",
-          "question_text": "‘The attitude of the Papacy was the main reason why Catholic opposition to Elizabeth increased in the years 1559-88.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Papal Bull of Excommunication (1570)\n• Mary, Queen of Scots\n• You must also use information of your own.",
+          "question_text": "‘Papal hostility was the primary catalyst behind growing Catholic opposition to Elizabeth I between 1559 and 1588.’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: Pope Pius V’s 1570 Bull Regnans in Excelsis\n• Optional focus: Mary, Queen of Scots’ arrival in England (1568)\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Role of Papacy: Pope Pius V issued the Papal Bull Regnans in Excelsis (1570), excommunicating Elizabeth and ordering English Catholics to depose her, making loyalty to queen and faith incompatible; missionary priests (Jesuits like Campion) sent to convert.",
             "Role of Mary, Queen of Scots: Mary was a living Catholic figurehead with a legitimate royal claim, inspiring the Northern Earls (1569), Ridolfi (1571), Throckmorton (1583), and Babington (1586) plots.",
@@ -138,8 +138,8 @@
           "type": "judgement-essay",
           "topic": "Sir Francis Drake’s Greatest Achievements",
           "spec_topic": "KT2.2 & KT3.3: Drake, privateering, circumnavigation, raid on Cadiz",
-          "question_text": "‘Drake’s most significant achievement, in the years 1558-88, was the raid on Cadiz.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the \"singeing of the King of Spain’s beard\" (1587)\n• Drake’s circumnavigation (1577-80)\n• You must also use information of your own.",
+          "question_text": "‘Sir Francis Drake’s 1587 attack on Cadiz was his greatest contribution to Elizabethan England (1558–88).’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: delaying Armada preparations at Cadiz (1587)\n• Optional focus: circumnavigating the globe aboard the Golden Hind (1577–80)\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Raid on Cadiz (1587): Destroyed 30+ Spanish ships and huge stores of seasoned barrel staves, delaying the Armada by over a year and giving England vital time to prepare.",
             "Circumnavigation (1577-80): First Englishman to sail around the globe; claimed New Albion in California; returned with £400,000 of Spanish treasure on the Golden Hind, paying off England’s national debt.",
@@ -163,7 +163,7 @@
           "type": "feature",
           "topic": "Role of Church of England in Society",
           "spec_topic": "KT1.2: The Church of England: its role in society",
-          "question_text": "Describe two features of the role of the Church of England in Early Elizabethan society.",
+          "question_text": "Outline two key features of how the parish Church of England shaped daily community life after 1559.",
           "stimulus": null,
           "indicative_content": [
             "The Church acted as a primary source of news and government propaganda, reading royal proclamations and Elizabeth’s approved sermons to parishioners every Sunday.",
@@ -178,8 +178,8 @@
           "type": "causation",
           "topic": "Puritan Challenge to Religious Settlement",
           "spec_topic": "KT1.3: The nature and extent of the Puritan challenge",
-          "question_text": "Explain why the Puritans challenged Elizabeth’s religious settlement.",
-          "stimulus": "• vestments\n• the Act of Uniformity\n• You must also use information of your own.",
+          "question_text": "Analyse why Puritan clergy and MPs mounted challenges against the 1559 Religious Settlement.",
+          "stimulus": "• Optional focus: controversy over clerical vestments (surplices)\n• Optional focus: ornaments and prayer-book rules under the Act of Uniformity\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Vestments controversy: Puritans believed clergy wearing ornate robes (surplices) was unscriptural and too close to Catholic \"popish\" superstition; Thomas Sampson refused to wear them.",
             "Act of Uniformity: Puritans objected to kneeling for communion, organs, crucifixes, and retaining Catholic saint days.",
@@ -194,8 +194,8 @@
           "type": "judgement-essay",
           "topic": "Tension Between Elizabeth & Mary Queen of Scots",
           "spec_topic": "KT1.4 & KT2.1: Mary Queen of Scots claim to throne and plots",
-          "question_text": "‘The main cause of tension between Elizabeth and Mary, Queen of Scots, was Mary’s claim to the English throne.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Elizabeth’s legitimacy\n• Catholic plots\n• You must also use information of your own.",
+          "question_text": "‘Rivalry between Elizabeth I and Mary, Queen of Scots stemmed mainly from Mary’s dynastic claim to the English crown.’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: Catholic doubts over Elizabeth’s legitimacy\n• Optional focus: Ridolfi, Throckmorton, and Babington conspiracies\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Mary’s claim: As Henry VII’s great-granddaughter, Catholic Europe viewed Mary as the rightful queen because they regarded Henry VIII’s marriage to Anne Boleyn as invalid and Elizabeth as illegitimate.",
             "Catholic plots: Mary’s presence in England from 1568 provided a focal point for treasonous rebellions (Ridolfi 1571, Throckmorton 1583, Babington 1586).",
@@ -211,8 +211,8 @@
           "type": "judgement-essay",
           "topic": "Education in Early Elizabethan England",
           "spec_topic": "KT3.1: Education and leisure: grammar schools, universities, literacy",
-          "question_text": "‘There was little change in education in Early Elizabethan England.’ How far do you agree? Explain your answer.",
-          "stimulus": "• education for girls\n• grammar schools\n• You must also use information of your own.",
+          "question_text": "‘Educational opportunities in England changed very little during the first thirty years of Elizabeth’s reign (1558–88).’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: schooling and domestic training for girls\n• Optional focus: expansion of humanist grammar schools for boys\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing (continuity): Girls remained largely excluded from formal education, taught domestic needlework and household management at home; university was restricted to wealthy males; school fees meant lower classes stayed illiterate.",
             "Arguments disagreeing (expansion): Growth of grammar schools teaching Latin, Greek, and debate; petty and dame schools teaching basic literacy; Humanist ideals promoting education to improve society; literacy among wealthy merchants rose significantly.",
@@ -235,7 +235,7 @@
           "type": "feature",
           "topic": "English Involvement in the Netherlands 1585-88",
           "spec_topic": "KT2.2: English involvement in the Netherlands (Treaty of Nonsuch)",
-          "question_text": "Describe two features of English involvement in the Netherlands, 1585-88.",
+          "question_text": "Outline two key features of English military intervention in the Dutch Revolt between 1585 and 1588.",
           "stimulus": null,
           "indicative_content": [
             "Under the Treaty of Nonsuch (1585), Elizabeth agreed to send 7,400 English soldiers led by Robert Dudley, Earl of Leicester, to assist the Dutch Protestant rebels.",
@@ -250,8 +250,8 @@
           "type": "causation",
           "topic": "Why Treatment of the Poor Changed 1558-88",
           "spec_topic": "KT3.2: Poverty: changing attitudes, 1572 and 1576 Poor Laws",
-          "question_text": "Explain why treatment of the poor changed in the period 1558-88.",
-          "stimulus": "• government action\n• poor relief\n• You must also use information of your own.",
+          "question_text": "Analyse why Elizabethan authorities altered how they dealt with poverty and vagabondage between 1558 and 1588.",
+          "stimulus": "• Optional focus: parliamentary statutes of 1563, 1572, and 1576\n• Optional focus: distinguishing the ‘impotent’ poor from ‘able-bodied’ vagabonds\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Fear of social disorder: Rapid population growth and bad harvests created huge numbers of roaming vagabonds, threatening public order.",
             "Distinction between deserving and undeserving poor: The 1572 Vagabonds Act introduced a local poor rate, while the 1576 Act provided wool and raw materials to put the able-bodied to work.",
@@ -266,8 +266,8 @@
           "type": "judgement-essay",
           "topic": "Elizabeth’s Problems on Accession (1558)",
           "spec_topic": "KT1.1: Situation on Elizabeth’s accession: legitimacy, gender, finances, religion",
-          "question_text": "‘The problem of Elizabeth’s legitimacy was the main problem she faced when she became queen in 1558.’ How far do you agree? Explain your answer.",
-          "stimulus": "• gender\n• crown debt\n• You must also use information of your own.",
+          "question_text": "‘Doubts surrounding Elizabeth’s legitimacy posed the gravest threat to her throne upon her accession in 1558.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: contemporary prejudice against a female monarch\n• Optional focus: £300,000 Marian Crown debt and war with France\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Legitimacy: Henry VIII had declared Anne Boleyn’s marriage invalid, making Elizabeth illegitimate in the eyes of Catholics who favored Mary Queen of Scots.",
             "Gender: 16th-century prejudice viewed women as weak and unfit to govern or lead armies; pressure to marry risked surrendering England to a foreign prince.",
@@ -284,8 +284,8 @@
           "type": "judgement-essay",
           "topic": "Revolt of the Northern Earls (1569)",
           "spec_topic": "KT2.1: The Revolt of the Northern Earls, 1569-70",
-          "question_text": "‘The Revolt of the Northern Earls was the most significant challenge to Elizabeth’s rule in the years 1569-1586.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the Duke of Norfolk\n• the Ridolfi Plot\n• You must also use information of your own.",
+          "question_text": "‘No domestic threat between 1569 and 1586 endangered Elizabeth I more seriously than the 1569 Revolt of the Northern Earls.’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: Westmorland, Northumberland, and the Duke of Norfolk marriage plan\n• Optional focus: foreign backing in the Ridolfi, Throckmorton, and Babington plots\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Significance of Northern Earls (1569): Earls of Northumberland and Westmorland mobilized 5,000 armed men, took Durham Cathedral, and aimed to marry Mary to Norfolk and restore Catholicism.",
             "Other plots: Ridolfi Plot (1571) involved the Pope, Philip II, and a planned invasion by the Duke of Alba; Throckmorton Plot (1583) planned French Catholic invasion funded by Spain; Babington Plot (1586) led directly to Mary’s execution.",
@@ -308,7 +308,7 @@
           "type": "feature",
           "topic": "Government in Early Elizabethan England",
           "spec_topic": "KT1.1: Society and government in Elizabethan England",
-          "question_text": "Describe two features of government in Early Elizabethan England.",
+          "question_text": "Outline two key features of how central and local government operated under Elizabeth I.",
           "stimulus": null,
           "indicative_content": [
             "The Privy Council, led by William Cecil, met almost daily to advise the Queen on domestic policy, foreign affairs, and national security.",
@@ -323,8 +323,8 @@
           "type": "causation",
           "topic": "Execution of Mary, Queen of Scots (1587)",
           "spec_topic": "KT2.1: Execution of Mary, Queen of Scots (1587)",
-          "question_text": "Explain why Mary, Queen of Scots, was executed in 1587.",
-          "stimulus": "• the Privy Council\n• Mary’s claim to the English throne\n• You must also use information of your own.",
+          "question_text": "Analyse the reasons why Elizabeth I finally authorised the execution of Mary, Queen of Scots in February 1587.",
+          "stimulus": "• Optional focus: pressure from Walsingham, Burghley, and the Privy Council\n• Optional focus: Mary’s dynastic claim and cipher letters in the Babington Plot\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Privy Council pressure: Walsingham and Cecil were determined to eliminate Mary as a permanent Catholic security threat, passing the Bond of Association.",
             "Babington Plot (1586): Walsingham intercepted Mary’s coded letters explicitly approving the assassination of Elizabeth.",
@@ -339,8 +339,8 @@
           "type": "judgement-essay",
           "topic": "English Involvement in the Netherlands 1585-88",
           "spec_topic": "KT2.2: English involvement in the Netherlands: political, religious, economic rivalry",
-          "question_text": "‘Political rivalry with Spain was the main reason for direct English involvement in the Netherlands in the years 1585-88.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the Treaty of Nonsuch (1585)\n• William of Orange\n• You must also use information of your own.",
+          "question_text": "‘Strategic rivalry with Philip II’s Spain was the main motive for England’s direct intervention in the Netherlands (1585–88).’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: signing the Treaty of Nonsuch (August 1585)\n• Optional focus: assassination of William of Orange and Antwerp’s cloth trade\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Political rivalry: Spain’s army in the Netherlands (Duke of Parma) was positioned directly across the English Channel, posing a constant invasion threat to England.",
             "Religious solidarity: The assassination of Protestant leader William of Orange (1584) left Dutch Protestants facing annihilation, forcing Elizabeth to intervene under Treaty of Nonsuch.",
@@ -356,8 +356,8 @@
           "type": "judgement-essay",
           "topic": "English Exploration 1558-88: Technology vs Trade",
           "spec_topic": "KT3.3: Exploration: technology, trade, rivalry with Spain",
-          "question_text": "‘New technology was the main reason why exploration by the English increased in the years 1558-88.’ How far do you agree? Explain your answer.",
-          "stimulus": "• ship design\n• the search for new trade routes\n• You must also use information of your own.",
+          "question_text": "‘Advances in shipbuilding and navigation were the primary driver of Elizabethan overseas exploration (1558–88).’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: faster, more manoeuvrable galleon hulls and triangular lateen sails\n• Optional focus: seeking alternative trade markets after Antwerp’s disruption\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Technology: Galleons with lateen sails, astrolabes, cross-staffs, and accurate magnetic compasses allowed sailors to navigate deep oceans.",
             "Economic necessity: Search for new trade routes to Asia (North-West Passage) and bypassing the Spanish monopoly.",
@@ -381,7 +381,7 @@
           "type": "feature",
           "topic": "Education in Early Elizabethan England",
           "spec_topic": "KT3.1: Education: grammar schools and universities",
-          "question_text": "Describe two features of education in early Elizabethan England.",
+          "question_text": "Outline two key features of schooling and university education in Elizabethan England (1558–88).",
           "stimulus": null,
           "indicative_content": [
             "Grammar schools expanded rapidly to educate middle-class and gentry boys, focusing intensely on Latin, Greek, history, and classical literature.",
@@ -396,8 +396,8 @@
           "type": "causation",
           "topic": "Defeat of the Spanish Armada (1588)",
           "spec_topic": "KT2.3: Spanish Armada: reasons for defeat",
-          "question_text": "Explain why the Spanish Armada was defeated.",
-          "stimulus": "• Sir Francis Drake\n• the use of fire ships\n• You must also use information of your own.",
+          "question_text": "Analyse the factors that led to the defeat of Philip II’s Spanish Armada in 1588.",
+          "stimulus": "• Optional focus: English naval commanders including Howard, Hawkins, and Drake\n• Optional focus: breaking Medina Sidonia’s crescent formation with fireships at Calais\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Fireships at Gravelines: English launched 8 blazing fireships into Calais harbor, causing panic and breaking the Spanish crescent formation.",
             "Superior English naval tactics: Smaller, faster galleons with quick-reloading culverin guns outfought the lumbering Spanish ships.",
@@ -412,8 +412,8 @@
           "type": "judgement-essay",
           "topic": "Challenge to Religious Settlement: Catholics vs Puritans",
           "spec_topic": "KT1.3: Challenge to religious settlement: Puritans and Catholics",
-          "question_text": "‘The most significant challenge to Elizabeth I’s religious settlement, in the years 1558–68, came from English Catholics.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the Act of Uniformity (1559)\n• recusants\n• You must also use information of your own.",
+          "question_text": "‘English Catholics posed a far greater challenge than Puritans to Elizabeth’s Religious Settlement during its first decade (1558–68).’ To what extent do you agree with this view?",
+          "stimulus": "• Optional focus: enforcement of the 1559 Act of Uniformity\n• Optional focus: northern Catholic nobility and recusancy\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Catholic challenge: Recusants refused to attend Protestant church services; Catholic nobility in the North secretly protected priests; danger of foreign intervention from Spain or France.",
             "Puritan challenge: Vestments controversy (1566) where 37 London clergy were suspended; crucifix controversy where Puritan bishops threatened to resign.",
@@ -428,8 +428,8 @@
           "type": "judgement-essay",
           "topic": "Failure of the First Colony in Virginia: Planning vs Misfortune",
           "spec_topic": "KT3.3: Attempted colonisation of Virginia: Roanoke",
-          "question_text": "‘Poor planning was the main reason why the first colony in Virginia failed.’ How far do you agree? Explain your answer.",
-          "stimulus": "• food supplies\n• Sir Richard Grenville\n• You must also use information of your own.",
+          "question_text": "‘Flawed preparation in England was the primary reason why the first Virginia settlement at Roanoke failed.’ To what extent do you agree with this judgement?",
+          "stimulus": "• Optional focus: late departure and inadequate agricultural food stores\n• Optional focus: leadership tensions between Ralph Lane and Sir Richard Grenville\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Poor planning: Wrong mix of settlers (too many soldiers and gentlemen, too few farmers/artisans); leaving too late in the year to plant crops; reliance on fragile supply ships.",
             "External misfortune: Damage to The Tiger running aground and destroying seeds; severe drought in Virginia.",
@@ -453,7 +453,7 @@
           "type": "feature",
           "topic": "Early Elizabethan Society Hierarchy",
           "spec_topic": "KT1.1: Elizabethan society: the Great Chain of Being",
-          "question_text": "Describe one feature of early Elizabethan society.",
+          "question_text": "Outline one key feature of the social hierarchy in Elizabethan towns or countryside.",
           "stimulus": null,
           "indicative_content": [
             "Society was organized in a strict hierarchy known as the Great Chain of Being, where everyone had a fixed social rank from the monarch and nobility at the top down to tenant farmers and the landless poor."
@@ -467,7 +467,7 @@
           "type": "feature",
           "topic": "Exploration in 1558-88",
           "spec_topic": "KT3.3: Exploration and voyages of discovery",
-          "question_text": "Describe one feature of exploration in the years 1558-88.",
+          "question_text": "Outline one key feature of English overseas voyages of discovery between 1558 and 1588.",
           "stimulus": null,
           "indicative_content": [
             "English exploration was heavily motivated by privateering, where sailors like Drake were licensed by royal letters of marque to raid Spanish bullion fleets in the New World."
@@ -481,8 +481,8 @@
           "type": "causation",
           "topic": "Why Relations with Spain Deteriorated 1569-88",
           "spec_topic": "KT2.2: Political, religious, and commercial rivalry with Spain",
-          "question_text": "Explain why relations between England and Spain became worse in the years 1569-88.",
-          "stimulus": "• Catholic rebels in England\n• English trade\n• You must also use information of your own.",
+          "question_text": "Analyse why Anglo-Spanish relations deteriorated into open conflict between 1569 and 1588.",
+          "stimulus": "• Optional focus: Spanish encouragement of English Catholic plots\n• Optional focus: English privateering and rivalry over New World trade\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Catholic plots: Philip II funded plots to depose Elizabeth (Ridolfi 1571, Throckmorton 1583) and welcomed Elizabeth’s excommunication.",
             "Commercial trade and privateering: Drake’s raids on Spanish colonies in the Caribbean and circumnavigation plundered millions in silver.",
@@ -497,83 +497,14 @@
           "type": "judgement-essay",
           "topic": "Success of Elizabeth’s Religious Settlement",
           "spec_topic": "KT1.2 & KT1.3: Impact and challenges to religious settlement",
-          "question_text": "‘Elizabeth’s religious settlement was successful.’ How far do you agree? Explain your answer.",
-          "stimulus": "• Elizabeth’s ‘middle way’\n• Catholic plots\n• You must also use information of your own.",
+          "question_text": "‘Elizabeth I’s 1559 Religious Settlement largely achieved stability across England by 1588.’ To what extent do you agree with this assessment?",
+          "stimulus": "• Optional focus: broad acceptance of the Protestant ‘middle way’\n• Optional focus: seminary priests, Jesuits, and Catholic assassination plots\n• Incorporate additional historical knowledge of your own.",
           "indicative_content": [
             "Arguments agreeing (success): Avoided full-scale religious civil war (unlike France); majority of clergy (9,000+ out of 9,400) swore the oath; created an enduring Church of England that lasted.",
             "Arguments disagreeing (failure): Polarized extremists: Puritans constantly agitated in parliament and through prophecyings; Catholics became treasonous conspirators following the 1570 excommunication; required harsh penal laws and executions of priests.",
             "Judgement: Successful in stabilizing the kingdom and establishing Protestantism, but failed to achieve true national unity."
           ],
           "examiner_tips": "Define criteria for \"successful\": avoidance of civil war versus failure to satisfy religious radicals."
-        }
-      ]
-    },
-    {
-      "year": 2026,
-      "season": "Specimen",
-      "series": "Specimen Paper",
-      "paper_code": "1HI0/B4",
-      "questions": [
-        {
-          "q_id": "eliz_2026_q1a",
-          "q_number": "Q1(a)",
-          "tariff": 2,
-          "type": "feature",
-          "topic": "Poverty in Early Elizabethan England",
-          "spec_topic": "KT3.2: Poverty and vagrancy",
-          "question_text": "Describe one feature of poverty in early Elizabethan England.",
-          "stimulus": null,
-          "indicative_content": [
-            "Poverty was made worse by enclosure of common land, where landlords evicted tenant farmers to rear sheep for wool, causing mass rural unemployment."
-          ],
-          "examiner_tips": "Award 1 mark for the feature (e.g. enclosure or rising vagrancy) and 1 mark for supporting historical context."
-        },
-        {
-          "q_id": "eliz_2026_q1b",
-          "q_number": "Q1(b)",
-          "tariff": 2,
-          "type": "feature",
-          "topic": "Attempted Colonisation of Virginia",
-          "spec_topic": "KT3.3: Roanoke colony",
-          "question_text": "Describe one feature of the attempted colonisation of Virginia.",
-          "stimulus": null,
-          "indicative_content": [
-            "Sir Walter Raleigh organized the expedition to Roanoke in 1585, naming the land Virginia in honor of Elizabeth, the Virgin Queen."
-          ],
-          "examiner_tips": "Mention Raleigh organizing the expedition or the Roanoke settlement."
-        },
-        {
-          "q_id": "eliz_2026_q2",
-          "q_number": "Q2",
-          "tariff": 12,
-          "type": "causation",
-          "topic": "Why Revolt of Northern Earls was a Threat",
-          "spec_topic": "KT2.1: Revolt of Northern Earls, 1569-70",
-          "question_text": "Explain why the Revolt of the Northern Earls (1569-70) was a threat to Elizabeth I.",
-          "stimulus": "• Mary, Queen of Scots\n• relations between religious groups\n• You must also use information of your own.",
-          "indicative_content": [
-            "Catholic alternative: The rebels planned to liberate Mary Queen of Scots and marry her to the Duke of Norfolk, providing a direct Catholic claimant to the throne.",
-            "Religious civil war: Led by powerful northern Catholic peers (Northumberland and Westmorland) who mobilized thousands of armed retainers and re-established Catholic mass in Durham.",
-            "Own knowledge: Potential for Spanish invasion troops from the Netherlands to support the rebellion."
-          ],
-          "examiner_tips": "Analyse the dynastic, religious, and foreign threats posed by the revolt."
-        },
-        {
-          "q_id": "eliz_2026_q3",
-          "q_number": "Q3",
-          "tariff": 16,
-          "type": "judgement-essay",
-          "topic": "Elizabeth’s Main Problem on Accession: Financial vs Others",
-          "spec_topic": "KT1.1: Situation on accession: crown debt, religion, French threat",
-          "question_text": "‘Financial weakness was Elizabeth’s main problem when she became queen in 1558.’ How far do you agree? Explain your answer.",
-          "stimulus": "• the crown debts\n• Mary, Queen of Scots\n• You must also use information of your own.",
-          "indicative_content": [
-            "Crown debt: Crown was £300,000 in debt with annual royal income only £286,000; had to pay 14% interest on loans to Antwerp merchants.",
-            "Mary Queen of Scots and foreign threat: France was at war with England; Mary was married to the French Dauphin and declared herself rightful Queen of England.",
-            "Religious instability: Danger of Catholic rebellion or Puritan rebellion.",
-            "Judgement: Debt severely limited Elizabeth’s ability to defend the realm, but the immediate threat of French military invasion was more dangerous."
-          ],
-          "examiner_tips": "Compare financial bankruptcy against religious instability and foreign military threats."
         }
       ]
     }

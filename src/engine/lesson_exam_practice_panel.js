@@ -23,6 +23,7 @@ export function getCanonicalGcsePaperCode(unitId) {
   switch (unitId) {
     case 'cme_new':
       return 'Option P5 (1HI0/P5)';
+    case 'gcse_cold_war':
     case 'cold_war':
       return 'Option P4 (1HI0/P4)';
     case 'eee':
@@ -551,7 +552,7 @@ export function initLessonExamPractice(unitId, lesson) {
       ? `
         <div style="margin-top: 12px; background: #f8fafc; border: 2px solid #94a3b8; border-left: 5px solid #0d9488; border-radius: 10px; padding: 12px 18px;">
           <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #0f766e; margin-bottom: 8px;">
-            Official Pearson Edexcel Q2(b) Answer Stems (Write All 4 in Exercise Book &bull; 1 Mark Each)
+            Paper 1 Q2(b) Follow-Up Answer Stems (Write All 4 in Exercise Book &bull; 1 Mark Each)
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 8px 18px; font-size: 1rem; font-weight: 700; color: #0f172a; line-height: 1.4;">
             <div><span style="color: #0d9488;">1.</span> Detail in ${projSrcLabel} that I would follow up:</div>

@@ -61,7 +61,7 @@ export const KS2_WW2_STANDOFFS = {
   },
   lesson_4: {
     title: "Refugee Aid Volunteer vs. Home Office Permit Official",
-    subtitle: "Vera's Journey & The Kindertransport Rescue (1938–1939)",
+    subtitle: "One Small Suitcase: The Kindertransport Rescue (1938–1939)",
     roleA: {
       name: "Refugee Children's Movement Volunteer",
       title: "Rushing Rescue Trains Before Borders Close",
@@ -202,7 +202,7 @@ export const KS2_WW2_STANDOFFS = {
       title: "Perspective 2: Becoming a New Family for Life",
       objective: "Explain that while Windermere gave peace, bicycles, and health, most of the 300 children discovered their families were gone—so supporting each other as lifelong brothers and sisters mattered most.",
       starter: "&ldquo;Swimming in Lake Windermere and riding bicycles made us feel free again, and forming the '45 Aid Society gave us a lifelong family who understood our past because...&rdquo;",
-      keyTerms: ["Lake Windermere & Bicycles", "Learning English", "The '45 Aid Society", "Tom Palmer's After the War"]
+      keyTerms: ["Lake Windermere & Bicycles", "Learning English", "The '45 Aid Society", "Sharing Survivor Oral Histories"]
     }
   }
 };

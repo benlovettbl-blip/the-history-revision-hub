@@ -1100,7 +1100,7 @@ function extractTopicExamQuestions(lesson, unitId, item) {
   const rawQuestions = ep && Array.isArray(ep.questions) ? ep.questions : [];
   const results = [];
 
-  if (unitId === 'cme_new') {
+  if (unitId === 'cme_new' || unitId === 'gcse_cold_war') {
     // 1. Q1 Consequence [4m]
     const q1 = rawQuestions.find(
       (q) => q.type === '4-mark' || (q.tariff && q.tariff.toLowerCase().includes('4 mark'))
@@ -1126,7 +1126,10 @@ function extractTopicExamQuestions(lesson, unitId, item) {
 
     // 2. Q2 Narrative Account [8m]
     const q2 = rawQuestions.find(
-      (q) => q.type === 'narrative_8' || (q.tariff && q.tariff.toLowerCase().includes('narrative'))
+      (q) =>
+        q.type === 'narrative_8' ||
+        q.type === '8-mark-narrative' ||
+        (q.tariff && q.tariff.toLowerCase().includes('narrative'))
     );
     if (q2) {
       results.push({
@@ -1151,6 +1154,7 @@ function extractTopicExamQuestions(lesson, unitId, item) {
     const q3 = rawQuestions.find(
       (q) =>
         q.type === 'importance_8' ||
+        q.type === '8-mark-importance' ||
         (q.tariff && (q.tariff.toLowerCase().includes('importance') || q.tariff.includes('16')))
     );
     if (q3) {

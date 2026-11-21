@@ -652,6 +652,7 @@ export function updateBreadcrumbs(customTrail = null) {
       if (clean) return clean;
     }
     if (id === 'cme_new') return 'Conflict in the Middle East (1945–1995)';
+    if (id === 'gcse_cold_war') return 'Superpower Relations & the Cold War (1941–1991)';
     if (id === 'edexcel_medicine') return 'Medicine Through Time';
     if (id === 'eee') return 'Early Elizabethan England (1558–1588)';
     if (id === 'weimar_nazi_germany') return 'Weimar and Nazi Germany (1918–1939)';
@@ -1949,7 +1950,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     };
   }
 
-  const isGcseUnitNav = ['edexcel_medicine', 'eee', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(unitId);
+  const isGcseUnitNav = ['edexcel_medicine', 'eee', 'gcse_cold_war', 'cme_new', 'weimar_nazi_germany', 'usa'].includes(unitId);
 
   // GCSE Exam Practice (visible only on GCSE assessment units)
   const hasMockExams = Boolean(

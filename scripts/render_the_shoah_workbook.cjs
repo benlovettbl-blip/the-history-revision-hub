@@ -1657,13 +1657,13 @@ function renderCoverPage() {
         <div style="height: 70mm; width: 100%; overflow: hidden; background: #0f172a; display: flex; align-items: center; justify-content: center;">
           ${
             heroImageBase64
-              ? `<img src="${heroImageBase64}" style="height: 100%; width: auto; max-width: 100%; object-fit: contain; display: block; box-shadow: 0 2px 10px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.12);" alt="The Pitel Family in Parczew, Poland (1938)" />`
-              : `<div style="font-family: 'Inter', sans-serif; font-size: 11pt; color: #94a3b8; font-weight: bold;">[Primary Archival Plate: The Pitel Family, Poland 1938]</div>`
+              ? `<img src="${heroImageBase64}" style="height: 100%; width: auto; max-width: 100%; object-fit: contain; display: block; box-shadow: 0 2px 10px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.12);" alt="The Extended Kracowski Family in Białystok, Poland (September 1935)" />`
+              : `<div style="font-family: 'Inter', sans-serif; font-size: 11pt; color: #94a3b8; font-weight: bold;">[Primary Archival Plate: The Kracowski Family, Białystok, Poland 1935]</div>`
           }
         </div>
         <div style="padding: 3.5px 8px; background: #0f172a; color: #ffffff; display: flex; justify-content: space-between; align-items: center; font-size: 7.0pt; font-family: 'Inter', sans-serif;">
-          <span><strong style="color: #fde047;">Archival Plate:</strong> The Pitel Family of Parczew, Poland (1938) &bull; 26 members across 4 generations; 25 murdered at Treblinka (1943)</span>
-          <span style="color: #93c5fd; font-weight: 700; white-space: nowrap;">YAD VASHEM PHOTO ARCHIVE &bull; UCL CENTRE FOR HOLOCAUST EDUCATION</span>
+          <span><strong style="color: #fde047;">Archival Plate:</strong> Three Generations of the Kracowski Family in Białystok, Poland (September 1935)</span>
+          <span style="color: #93c5fd; font-weight: 700; white-space: nowrap;">WIKIMEDIA COMMONS ARCHIVE &bull; CC0 PUBLIC DOMAIN</span>
         </div>
       </div>
 

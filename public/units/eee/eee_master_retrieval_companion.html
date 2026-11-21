@@ -564,6 +564,37 @@
       line-height: 1.22;
       padding-left: 1px;
     }
+  
+    /* ZERO-SPILLOVER SKIA PRINT GUARD */
+    .page-container:last-of-type {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    .question-row, .ans-card, .mb-card, .q-item {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    @media print {
+      html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+      }
+      .page-container {
+        margin: 0 !important;
+        box-shadow: none !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        overflow: hidden !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .page-container:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+    }
   </style>
 </head>
 <body>

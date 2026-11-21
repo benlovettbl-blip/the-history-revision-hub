@@ -1828,6 +1828,380 @@ export const WORKBOOK_TIMELINE_DATA = {
       "fullMissionText": "Turn to Centrefold • Pages 8–9. Complete the synoptic causal synthesis linking Science, Engineering, and Government Reform across 1800–1900."
     }
   ],
+  "gcse_cold_war": [
+      {
+          "lessonIndex": 0,
+          "lessonId": "lesson_1",
+          "milestoneBadge": "KT 1.1 (1941–1943–Aug 1945)",
+          "date": "1941–1943 – Aug 1945",
+          "title": "The Grand Alliance & Wartime Conferences, 1941–45",
+          "pageRef": "KT1 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain how ideological clashes, leadership changes, and the atomic bomb fractured the Grand Alliance between 1941 and August 1945.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Grand Alliance & Wartime Conferences, 1941–45 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Ideological Rivals in a Marriage of Convenience",
+              "📌 The Tehran Conference & Early Compromises",
+              "📌 The Yalta Conference at the Peak of Unity"
+          ],
+          "conceptTitle": "The Grand Alliance & Wartime Con",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Ideological Rivals in a Marriage of Convenience"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "The Yalta Conference at the Peak of Unity"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Atomic Diplomacy & The End of Trust"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 1 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Grand Alliance & Wartime Conferences, 1941–45."
+      },
+      {
+          "lessonIndex": 1,
+          "lessonId": "lesson_2",
+          "milestoneBadge": "KT 1.2 (Feb–Sept 1946–1947–Jan 1949)",
+          "date": "Feb–Sept 1946 – 1947–Jan 1949",
+          "title": "Telegrams, Satellite States, Truman Doctrine & Marshall Plan, 1946–48",
+          "pageRef": "KT1 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain how the 1946 telegrams, Soviet satellite states, the Truman Doctrine, and the Marshall Plan split Europe into two ideological and economic camps.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for Telegrams, Satellite States, Truman Doctrine & Marshall Plan, 1946–48 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 The War of Words: Kennan & Novikov Telegrams",
+              "📌 Churchill’s Iron Curtain & Soviet Satellite States",
+              "📌 The Truman Doctrine & Containment (March 1947)"
+          ],
+          "conceptTitle": "Telegrams, Satellite States, Tru",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "The War of Words: Kennan & Novikov Telegrams"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "The Truman Doctrine & Containment (March 1947)"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Stalin’s Counter-Bloc: Cominform & Comecon"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 1 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for Telegrams, Satellite States, Truman Doctrine & Marshall Plan, 1946–48."
+      },
+      {
+          "lessonIndex": 2,
+          "lessonId": "lesson_3",
+          "milestoneBadge": "KT 1.3 (June 1948–1949–May 1955)",
+          "date": "June 1948 – 1949–May 1955",
+          "title": "The Berlin Crisis (1948–49), NATO, Arms Race & Warsaw Pact",
+          "pageRef": "KT1 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain the causes, events, and consequences of the 1948–49 Berlin Crisis, including the creation of West and East Germany, NATO, the H-bomb arms race, and the Warsaw Pact.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Berlin Crisis (1948–49), NATO, Arms Race & Warsaw Pact on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Bizonia, Trizonia & The Deutschmark Trigger",
+              "📌 Operation Vittles & The Berlin Airlift",
+              "📌 Two German States: FRG & GDR (1949)"
+          ],
+          "conceptTitle": "The Berlin Crisis (1948–49), NAT",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Bizonia, Trizonia & The Deutschmark Trigger"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Two German States: FRG & GDR (1949)"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "The Nuclear Arms Race & The Warsaw Pact (1949–55)"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 1 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Berlin Crisis (1948–49), NATO, Arms Race & Warsaw Pact."
+      },
+      {
+          "lessonIndex": 3,
+          "lessonId": "lesson_4",
+          "milestoneBadge": "KT 1.4 (1949–Oct 1956–Nov 1956–1958)",
+          "date": "1949–Oct 1956 – Nov 1956–1958",
+          "title": "The Hungarian Uprising & International Reaction, 1956",
+          "pageRef": "KT1 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain the causes of the October 1956 Hungarian Uprising, why Imre Nagy’s reforms triggered Khrushchev’s invasion, and why Western powers took no military action.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Hungarian Uprising & International Reaction, 1956 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Rákosi’s Terror & Khrushchev’s \"Secret Speech\"",
+              "📌 Imre Nagy’s Reforms & Leaving the Warsaw Pact",
+              "📌 Operation Whirlwind: Khrushchev’s Tank Invasion"
+          ],
+          "conceptTitle": "The Hungarian Uprising & Interna",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Rákosi’s Terror & Khrushchev’s \"Secret Speech\""
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Operation Whirlwind: Khrushchev’s Tank Invasion"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Western Inaction, Suez & Cold War Consequences"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 1 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Hungarian Uprising & International Reaction, 1956."
+      },
+      {
+          "lessonIndex": 4,
+          "lessonId": "lesson_5",
+          "milestoneBadge": "KT 2.1 (Nov 1958–1961–June 1963)",
+          "date": "Nov 1958 – 1961–June 1963",
+          "title": "The Berlin Crisis, Summit Meetings & Construction of the Berlin Wall, 1958–63",
+          "pageRef": "KT2 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain why the East German refugee crisis triggered Khrushchev’s 1958 Berlin Ultimatum, why summit diplomacy failed between 1959 and 1961, and how the Berlin Wall transformed US–Soviet relations.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Berlin Crisis, Summit Meetings & Construction of the Berlin Wall, 1958–63 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 The East German Refugee Crisis & Brain Drain",
+              "📌 Geneva, Camp David & The U-2 Crisis",
+              "📌 Kennedy & Khrushchev at the Vienna Summit"
+          ],
+          "conceptTitle": "The Berlin Crisis, Summit Meetin",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "The East German Refugee Crisis & Brain Drain"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Kennedy & Khrushchev at the Vienna Summit"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Impact on Superpower Relations & Kennedy in Berlin"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 2 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Berlin Crisis, Summit Meetings & Construction of the Berlin Wall, 1958–63."
+      },
+      {
+          "lessonIndex": 5,
+          "lessonId": "lesson_6",
+          "milestoneBadge": "KT 2.2 (Jan 1959–1960–1963–1968)",
+          "date": "Jan 1959–1960 – 1963–1968",
+          "title": "The Cuban Revolution, Bay of Pigs & The Thirteen Days, 1959–62",
+          "pageRef": "KT2 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain how Castro’s 1959 revolution and the 1961 Bay of Pigs fiasco led to Soviet missiles on Cuba, how Kennedy and Khrushchev resolved the Thirteen Days, and how the crisis produced major nuclear treaties by 1968.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Cuban Revolution, Bay of Pigs & The Thirteen Days, 1959–62 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 The Cuban Revolution & Castro’s Shift Toward Moscow",
+              "📌 The Bay of Pigs Invasion & Soviet Missiles",
+              "📌 U-2 Discovery & Kennedy’s Naval Quarantine"
+          ],
+          "conceptTitle": "The Cuban Revolution, Bay of Pig",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "The Cuban Revolution & Castro’s Shift Toward Moscow"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "U-2 Discovery & Kennedy’s Naval Quarantine"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "The Hotline, Nuclear Treaties & Long-Term Consequences"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 2 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Cuban Revolution, Bay of Pigs & The Thirteen Days, 1959–62."
+      },
+      {
+          "lessonIndex": 6,
+          "lessonId": "lesson_7",
+          "milestoneBadge": "KT 2.3 (1957–Oct 1967–July–13 Aug 1968)",
+          "date": "1957–Oct 1967 – July–13 Aug 1968",
+          "title": "Opposition in Czechoslovakia & Dubček’s Prague Spring, 1968",
+          "pageRef": "KT2 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain why long-term opposition under Antonín Novotný produced Dubček’s 1968 Prague Spring reforms and why those reforms alarmed Moscow despite Czechoslovak loyalty to the Warsaw Pact.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for Opposition in Czechoslovakia & Dubček’s Prague Spring, 1968 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Stalinist Stagnation Under Antonín Novotný",
+              "📌 Alexander Dubček & the Action Programme",
+              "📌 Warsaw Pact Loyalty & Radical Calls for Pluralism"
+          ],
+          "conceptTitle": "Opposition in Czechoslovakia & D",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Stalinist Stagnation Under Antonín Novotný"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Warsaw Pact Loyalty & Radical Calls for Pluralism"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "The Warsaw Letter & Summer Diplomatic Pressure"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 2 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for Opposition in Czechoslovakia & Dubček’s Prague Spring, 1968."
+      },
+      {
+          "lessonIndex": 7,
+          "lessonId": "lesson_8",
+          "milestoneBadge": "KT 2.4 (20–21 Aug 1968–1968–1970)",
+          "date": "20–21 Aug 1968 – 1968–1970",
+          "title": "The Soviet Invasion of Czechoslovakia, Brezhnev Doctrine & International Reaction, 1968–70",
+          "pageRef": "KT2 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain how Warsaw Pact forces crushed the Prague Spring in August 1968, how the Brezhnev Doctrine enforced one-party rule, and why the invasion split world communism while eliciting only verbal US protest.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Soviet Invasion of Czechoslovakia, Brezhnev Doctrine & International Reaction, 1968–70 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 The Warsaw Pact Invasion of August 1968",
+              "📌 Passive Resistance on the Streets of Prague",
+              "📌 The Moscow Protocol & Gustáv Husák’s Normalisation"
+          ],
+          "conceptTitle": "The Soviet Invasion of Czechoslo",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "The Warsaw Pact Invasion of August 1968"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "The Moscow Protocol & Gustáv Husák’s Normalisation"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Western Restraint & Splits in World Communism"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 2 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Soviet Invasion of Czechoslovakia, Brezhnev Doctrine & International Reaction, 1968–70."
+      },
+      {
+          "lessonIndex": 8,
+          "lessonId": "lesson_9",
+          "milestoneBadge": "KT 3.1 (1970–1972–1977–1979)",
+          "date": "1970–1972 – 1977–1979",
+          "title": "Détente in the 1970s — SALT 1, the Helsinki Accords & SALT 2, 1970–79",
+          "pageRef": "KT3 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain why both superpowers pursued Détente in the 1970s and evaluate the achievements and limits of SALT 1, the Helsinki Accords, and SALT 2.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for Détente in the 1970s — SALT 1, the Helsinki Accords & SALT 2, 1970–79 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Superpower Pressures Behind Détente",
+              "📌 The Moscow Summit & SALT 1 Agreements",
+              "📌 Symbolic Thaw & Space Cooperation"
+          ],
+          "conceptTitle": "Détente in the 1970s — SALT 1, t",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Superpower Pressures Behind Détente"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Symbolic Thaw & Space Cooperation"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Carter, SALT 2 & Strained Détente"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 3 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for Détente in the 1970s — SALT 1, the Helsinki Accords & SALT 2, 1970–79."
+      },
+      {
+          "lessonIndex": 9,
+          "lessonId": "lesson_10",
+          "milestoneBadge": "KT 3.2 (1978–Dec 1979–23 Mar 1983–1985)",
+          "date": "1978–Dec 1979 – 23 Mar 1983–1985",
+          "title": "Soviet Invasion of Afghanistan, Olympic Boycotts & Reagan’s ‘Second Cold War’, 1979–85",
+          "pageRef": "KT3 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain why the USSR invaded Afghanistan in December 1979 and analyse how the Carter Doctrine, Olympic boycotts, and Ronald Reagan’s ‘Second Cold War’ escalated tension to 1985.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for Soviet Invasion of Afghanistan, Olympic Boycotts & Reagan’s ‘Second Cold War’, 1979–85 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Crisis in Kabul & The Soviet Invasion",
+              "📌 The Carter Doctrine & Death of Détente",
+              "📌 Tit-for-Tat Olympic Boycotts"
+          ],
+          "conceptTitle": "Soviet Invasion of Afghanistan, ",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Crisis in Kabul & The Soviet Invasion"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Tit-for-Tat Olympic Boycotts"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Star Wars (SDI) & Soviet Economic Strain"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 3 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for Soviet Invasion of Afghanistan, Olympic Boycotts & Reagan’s ‘Second Cold War’, 1979–85."
+      },
+      {
+          "lessonIndex": 10,
+          "lessonId": "lesson_11",
+          "milestoneBadge": "KT 3.3 (1985–April 1986–1988–Dec 1989)",
+          "date": "1985–April 1986 – 1988–Dec 1989",
+          "title": "Gorbachev’s ‘New Thinking’ & The Superpower Summits, 1985–89",
+          "pageRef": "KT3 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain why domestic crisis inside the USSR drove Gorbachev’s ‘New Thinking’ and how summit diplomacy with Reagan and Bush ended superpower confrontation by 1989.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for Gorbachev’s ‘New Thinking’ & The Superpower Summits, 1985–89 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 Soviet Crisis & Exhaustion by 1985",
+              "📌 Gorbachev’s Perestroika, Glasnost & Reform",
+              "📌 Geneva, Reykjavik & Early Summit Diplomacy"
+          ],
+          "conceptTitle": "Gorbachev’s ‘New Thinking’ & The",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "Soviet Crisis & Exhaustion by 1985"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Geneva, Reykjavik & Early Summit Diplomacy"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "Leaving Afghanistan, UN Cuts & The Malta Summit"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 3 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for Gorbachev’s ‘New Thinking’ & The Superpower Summits, 1985–89."
+      },
+      {
+          "lessonIndex": 11,
+          "lessonId": "lesson_12",
+          "milestoneBadge": "KT 3.4 (May–Oct 1989–Dec 1991)",
+          "date": "May–Oct 1989 – Dec 1991",
+          "title": "The Collapse of Eastern Europe, Fall of the Berlin Wall & End of the USSR, 1989–91",
+          "pageRef": "KT3 Workbook Centrefold • pp. 8–9",
+          "desc": "Explain how Gorbachev’s abandonment of the Brezhnev Doctrine triggered the 1989 revolutions and fall of the Berlin Wall, dissolved the Warsaw Pact, and led to the collapse of the USSR in December 1991.",
+          "sketchPrompt": "Branch out Causes, Leaders & Consequences for The Collapse of Eastern Europe, Fall of the Berlin Wall & End of the USSR, 1989–91 on your Centrefold Mind-Map Canvas",
+          "sketchIdeas": [
+              "📌 The Sinatra Doctrine & Upheaval in Poland and Hungary",
+              "📌 East German Protests & Fall of the Berlin Wall",
+              "📌 Eastern European Revolutions, Reunification & The Warsaw Pact"
+          ],
+          "conceptTitle": "The Collapse of Eastern Europe, ",
+          "branches": [
+              {
+                  "label": "Catalyst",
+                  "value": "The Sinatra Doctrine & Upheaval in Poland and Hungary"
+              },
+              {
+                  "label": "Turning Point",
+                  "value": "Eastern European Revolutions, Reunification & The Warsaw Pact"
+              },
+              {
+                  "label": "Consequence",
+                  "value": "The CIS, Gorbachev’s Resignation & End of the USSR"
+              }
+          ],
+          "fullMissionText": "Turn to Pages 8–9 of your Key Topic 3 Pupil Workbook. Branch out Causes & Leaders on the left and Direct Consequences on the right for The Collapse of Eastern Europe, Fall of the Berlin Wall & End of the USSR, 1989–91."
+      }
+  ],
   "cme_new": [
     {
       "lessonIndex": 0,

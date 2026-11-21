@@ -838,7 +838,7 @@ export function initDossierPopover() {
       bulletsHtml = `<div class="dossier-pop-actions-str">${fmtDossierRichText(rawActions)}</div>`;
     }
 
-    const isGcseDossierUnit = ['cme_new', 'eee', 'edexcel_medicine', 'usa', 'weimar_nazi_germany'].includes(
+    const isGcseDossierUnit = ['cme_new', 'gcse_cold_war', 'eee', 'edexcel_medicine', 'usa', 'weimar_nazi_germany'].includes(
       String(entity.unitId || '').toLowerCase(),
     );
     const distinctionLabel = isGcseDossierUnit ? 'Exam Distinction:' : 'Key Distinction:';

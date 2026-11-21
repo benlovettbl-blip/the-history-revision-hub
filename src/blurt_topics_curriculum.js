@@ -3287,4 +3287,295 @@ export const BLURT_TOPICS_DATABASE = [
         'Weimar Analysis: Distinguish between the long-term structural weakness of Weimar (Article 48, proportional representation), the trigger of the 1929 Depression, and the decisive catalyst of backstairs intrigue in January 1933.',
     },
   },
+  // ==========================================================================
+  // PAPER 2 OPTION P4: SUPERPOWER RELATIONS & THE COLD WAR (1941–91)
+  // ==========================================================================
+  {
+    topicId: 'cw_grand_alliance_conferences_1941_45',
+    paperId: 'paper2_p4_superpower_cold_war',
+    paperType: 'paper2_period',
+    specCode: 'Option P4 • Key Topic 1.1',
+    title: 'The Grand Alliance & Wartime Conferences (1941–45)',
+    subtitle: 'Tehran, Yalta, Potsdam, leadership changes, and the US atomic bomb',
+    examMission:
+      'Construct a 3-Stage Analytical Narrative Chain: Wartime unity at Tehran & Yalta ➔ Leadership changes & Polish clashes at Potsdam ➔ Atomic diplomacy (Hiroshima/Nagasaki) & breakdown of trust.',
+    drivingQuestion:
+      'Write a narrative account analysing the key events of the wartime conferences in the years 1943–45. [8 Marks]',
+    pupilPromptCue:
+      'Sequence 3 linked phases: (1) Tehran (Nov 1943) & Yalta (Feb 1945) agreements on Second Front, four German zones, and UN, (2) Roosevelt’s death -> anti-communist Truman clashing with Stalin over Poland & reparations at Potsdam (July 1945), and (3) US atomic test & Hiroshima/Nagasaki hardening Soviet buffer-zone determination.',
+    prompt:
+      'Free recall practice: Retrieve the agreements and tensions across Tehran (1943), Yalta (Feb 1945), and Potsdam (July 1945), plus the impact of Truman and the atomic bomb.',
+    specItemSyncPrefix: 'spec-paper2_p4_superpower_cold_war-kt1_1',
+    relatedLesson: { unit: 'gcse_cold_war', index: 0 },
+    scaffoldLadder: {
+      step1_questions: [
+        'Link 1: What did Roosevelt, Churchill, and Stalin agree at Tehran (1943) and Yalta (Feb 1945)?',
+        'Link 2: Why did relations deteriorate sharply by the Potsdam Conference (July 1945)?',
+        'Link 3: How did the US atomic bomb test and Hiroshima/Nagasaki transform Stalin’s policy in Eastern Europe?',
+      ],
+      step2_wordbank: [
+        'Tehran (Nov 1943)',
+        'Second Front (May 1944)',
+        'Yalta (Feb 1945)',
+        'Four Occupation Zones',
+        'Lublin vs London Poles',
+        'Harry S. Truman',
+        'Potsdam (July 1945)',
+        'Atomic Bomb (July–Aug 1945)',
+      ],
+      step3_starters: [
+        'At Tehran (1943) and Yalta (February 1945), the Big Three cooperated to defeat Germany by agreeing...',
+        'However, by Potsdam in July 1945, Nazi defeat and President Truman’s arrival caused bitter clashes over...',
+        'Consequently, when the USA tested and dropped the atomic bomb in August 1945, Stalin responded by...',
+      ],
+    },
+    thematicClusters: [
+      {
+        name: 'Tehran & Yalta Agreements',
+        description: 'Second Front in France, four occupation zones in Germany/Berlin, UN, and free elections pledge.',
+        keywords: ['tehran', 'yalta', 'second front', 'four zones', 'united nations', 'reparations', 'roosevelt'],
+      },
+      {
+        name: 'Potsdam Rift & Poland',
+        description: 'Truman and Attlee replaced FDR and Churchill; clashed with Stalin over Lublin Poles and reparations.',
+        keywords: ['potsdam', 'truman', 'attlee', 'poland', 'lublin', 'london poles', 'reparations'],
+      },
+      {
+        name: 'Atomic Bomb & Arms Race',
+        description: 'Trinity test (16 July 1945), Hiroshima and Nagasaki drove Stalin to tighten Eastern Europe and build the 1949 Soviet bomb.',
+        keywords: ['atomic', 'hiroshima', 'nagasaki', 'manhattan', 'buffer', '1949'],
+      },
+    ],
+  },
+  {
+    topicId: 'cw_truman_marshall_berlin_1947_49',
+    paperId: 'paper2_p4_superpower_cold_war',
+    paperType: 'paper2_period',
+    specCode: 'Option P4 • Key Topic 1.2',
+    title: 'Containment, Marshall Plan & The Berlin Crisis (1947–49)',
+    subtitle: 'Truman Doctrine, Cominform/Comecon, Berlin Blockade & Airlift, and NATO',
+    examMission:
+      'Explain how ideological containment (1947) escalated into physical confrontation over Berlin (1948–49) and permanent military alliances (NATO).',
+    drivingQuestion:
+      'Explain the importance of the Berlin Crisis (1948–49) for the development of the Cold War. [8 Marks]',
+    pupilPromptCue:
+      'Retrieve: Truman Doctrine ($400m Greece/Turkey) & Marshall Plan ($13bn+) vs Cominform (1947) & Comecon (1949); Bizonia/Trizonia & Deutschmark -> Stalin’s Blockade -> 11-month Allied Airlift -> FRG, GDR, and NATO (April 1949).',
+    prompt:
+      'Free recall practice: Retrieve the Truman Doctrine, Marshall Plan, Cominform, Comecon, the 1948–49 Berlin Blockade & Airlift, and the formation of FRG, GDR, and NATO.',
+    specItemSyncPrefix: 'spec-paper2_p4_superpower_cold_war-kt1_2',
+    relatedLesson: { unit: 'gcse_cold_war', index: 2 },
+    scaffoldLadder: {
+      step1_questions: [
+        'How did the 1947 Truman Doctrine and Marshall Plan divide Europe against Cominform and Comecon?',
+        'Why did Stalin blockade West Berlin in June 1948, and how did Operation Vittles defeat him?',
+        'What permanent territorial and military divisions resulted in 1949?',
+      ],
+      step2_wordbank: [
+        'Truman Doctrine (March 1947)',
+        'Marshall Plan ($13bn+)',
+        'Cominform (1947) & Comecon (1949)',
+        'Trizonia & Deutschmark',
+        'Berlin Blockade (June 1948)',
+        'Operation Vittles (Airlift)',
+        'NATO (April 1949)',
+        'FRG & GDR (1949)',
+      ],
+      step3_starters: [
+        'In 1947, President Truman abandoned isolationism through the Truman Doctrine and Marshall Plan, prompting Stalin to...',
+        'When the Western Allies introduced the Deutschmark in Trizonia in June 1948, Stalin blockaded West Berlin, leading to...',
+        'As a direct result of the crisis in 1949, Germany and Europe were permanently divided through...',
+      ],
+    },
+    thematicClusters: [
+      {
+        name: 'Containment vs Soviet Bloc Organisations',
+        description: 'Truman Doctrine ($400m), Marshall Aid, Dollar Imperialism, Cominform (1947), and Comecon (1949).',
+        keywords: ['truman doctrine', 'containment', 'marshall', 'cominform', 'comecon', 'dollar imperialism'],
+      },
+      {
+        name: 'Berlin Blockade & Allied Airlift',
+        description: 'Trizonia and Deutschmark sparked June 1948 blockade; 275,000+ flights supplied West Berlin until May 1949.',
+        keywords: ['trizonia', 'deutschmark', 'blockade', 'airlift', 'vittles', 'coal', 'may 1949'],
+      },
+      {
+        name: 'NATO & Two German States',
+        description: 'Formation of NATO (April 1949), Federal Republic of Germany (FRG), and German Democratic Republic (GDR).',
+        keywords: ['nato', 'collective security', 'frg', 'gdr', 'west germany', 'east germany'],
+      },
+    ],
+  },
+  {
+    topicId: 'cw_berlin_wall_cuba_1958_62',
+    paperId: 'paper2_p4_superpower_cold_war',
+    paperType: 'paper2_period',
+    specCode: 'Option P4 • Key Topic 2.1–2.2',
+    title: 'The Berlin Wall (1961) & Cuban Missile Crisis (1962)',
+    subtitle: 'Refugee brain drain, summits, Bay of Pigs, Thirteen Days, and post-1962 treaties',
+    examMission:
+      'Trace how superpower brinkmanship in Berlin (1958–61) and Cuba (1961–62) pushed the world to the edge of nuclear war before forcing arms-control safeguards.',
+    drivingQuestion:
+      'Write a narrative account analysing the key events of the Cuban Missile Crisis in October 1962. [8 Marks]',
+    pupilPromptCue:
+      'Retrieve: East German brain drain -> 1958 Ultimatum -> U-2/Vienna summits -> 13 Aug 1961 Berlin Wall; Bay of Pigs (April 1961) -> 14 Oct 1962 U-2 missile photos -> JFK naval quarantine -> secret Turkey/Jupiter deal -> Hotline (1963), Limited Test Ban (1963), Outer Space (1967), and NPT (1968).',
+    prompt:
+      'Free recall practice: Retrieve the causes and impact of the 1961 Berlin Wall and the October 1962 Cuban Missile Crisis, including the 1963–68 treaties.',
+    specItemSyncPrefix: 'spec-paper2_p4_superpower_cold_war-kt2_2',
+    relatedLesson: { unit: 'gcse_cold_war', index: 5 },
+    scaffoldLadder: {
+      step1_questions: [
+        'Why did Khrushchev build the Berlin Wall on 13 August 1961, and why did he place nuclear missiles in Cuba in 1962?',
+        'How did Kennedy’s naval quarantine and secret diplomacy resolve the Thirteen Days in October 1962?',
+        'Which four communication and arms-control agreements followed between 1963 and 1968?',
+      ],
+      step2_wordbank: [
+        '13 Aug 1961 (Berlin Wall)',
+        'Checkpoint Charlie',
+        'Bay of Pigs (April 1961)',
+        '14 Oct 1962 (U-2 Photos)',
+        'Naval Quarantine',
+        'Turkish Jupiter Missiles',
+        'Hotline (June 1963)',
+        'Limited Test Ban Treaty (1963)',
+        'Outer Space Treaty (1967) & NPT (1968)',
+      ],
+      step3_starters: [
+        'Following the failed CIA Bay of Pigs invasion in April 1961, Khrushchev placed medium-range missiles in Cuba because...',
+        'During the Thirteen Days of October 1962, President Kennedy avoided an immediate air strike by imposing...',
+        'Shaken by how close the superpowers came to nuclear war, Washington and Moscow established...',
+      ],
+    },
+    thematicClusters: [
+      {
+        name: 'Berlin Ultimatum, Summits & Wall (1958–63)',
+        description: 'East German refugee brain drain, U-2 incident, Vienna Summit, 13 Aug 1961 Wall, and JFK’s 1963 speech.',
+        keywords: ['refugee', 'brain drain', 'ultimatum', 'u-2', 'vienna', 'berlin wall', '1961', 'berliner'],
+      },
+      {
+        name: 'Bay of Pigs & Thirteen Days (1961–62)',
+        description: 'Brigade 2506 defeat, U-2 photos of Cuban missile sites, JFK naval quarantine, and secret Turkey Jupiter deal.',
+        keywords: ['castro', 'bay of pigs', 'october 1962', 'quarantine', 'blockade', 'khrushchev', 'jupiter', 'turkey'],
+      },
+      {
+        name: 'Post-Crisis Safeguards (1963–68)',
+        description: 'Direct Hotline, Limited Test Ban Treaty (1963), Outer Space Treaty (1967), and Nuclear Non-Proliferation Treaty (1968).',
+        keywords: ['hotline', 'test ban', '1963', 'outer space', '1967', 'non-proliferation', '1968'],
+      },
+    ],
+  },
+  {
+    topicId: 'cw_prague_spring_1968',
+    paperId: 'paper2_p4_superpower_cold_war',
+    paperType: 'paper2_period',
+    specCode: 'Option P4 • Key Topic 2.3',
+    title: 'The Prague Spring, Warsaw Pact Invasion & Brezhnev Doctrine (1968)',
+    subtitle: 'Dubček’s "Socialism with a human face", August 1968 invasion, and Eurocommunism',
+    examMission:
+      'Analyse why Dubček’s reforms alarmed Brezhnev despite staying in the Warsaw Pact, and how the invasion split world communism without triggering US military action.',
+    drivingQuestion:
+      'Explain the importance of the Soviet invasion of Czechoslovakia (1968) for international relations. [8 Marks]',
+    pupilPromptCue:
+      'Retrieve: Novotný’s economic decline & censorship -> Dubček’s April 1968 Prague Spring ("Socialism with a human face") -> 20–21 Aug 1968 invasion by 500,000 Warsaw Pact troops -> passive resistance & Husák’s normalisation -> Brezhnev Doctrine -> muted US reaction (Vietnam) & Eurocommunist split.',
+    prompt:
+      'Free recall practice: Retrieve the causes of the 1968 Prague Spring, the August 1968 Warsaw Pact invasion, the Brezhnev Doctrine, and Western/Communist reactions.',
+    specItemSyncPrefix: 'spec-paper2_p4_superpower_cold_war-kt2_3',
+    relatedLesson: { unit: 'gcse_cold_war', index: 7 },
+    scaffoldLadder: {
+      step1_questions: [
+        'What reforms did Alexander Dubček introduce in April 1968, and how did he try to reassure Moscow?',
+        'How did Brezhnev crush the Prague Spring in August 1968 and justify it through the Brezhnev Doctrine?',
+        'Why did the USA take only verbal action, while Romania, Yugoslavia, and Western European Communists split from Moscow?',
+      ],
+      step2_wordbank: [
+        'Antonín Novotný',
+        'Alexander Dubček',
+        'Socialism with a human face',
+        '20–21 Aug 1968 Invasion',
+        '500,000 Warsaw Pact troops',
+        'Brezhnev Doctrine',
+        'Gustáv Husák',
+        'Vietnam War distraction',
+        'Eurocommunism',
+      ],
+      step3_starters: [
+        'In April 1968, Alexander Dubček launched the Prague Spring to reform Czechoslovak communism by...',
+        'Fearing uncensored reforms would spread across the Eastern Bloc, Brezhnev invaded in August 1968 and proclaimed...',
+        'Internationally, the invasion revealed unspoken superpower spheres of influence while fracturing world communism as...',
+      ],
+    },
+    thematicClusters: [
+      {
+        name: 'Dubček & Socialism with a Human Face',
+        description: 'Ending censorship, travel freedom, and market elements while pledging loyalty to the Warsaw Pact.',
+        keywords: ['novotny', 'dubcek', 'prague spring', 'human face', 'censorship', 'action programme'],
+      },
+      {
+        name: 'Warsaw Pact Invasion & Brezhnev Doctrine',
+        description: '500,000 troops invaded in August 1968; passive resistance; Husák installed; Brezhnev Doctrine declared.',
+        keywords: ['august 1968', 'tanks', 'passive', 'husak', 'brezhnev doctrine', 'one-party'],
+      },
+      {
+        name: 'Muted US Response & Eurocommunist Split',
+        description: 'Johnson distracted by Vietnam; Romania, Yugoslavia, and French/Italian Eurocommunists condemned Moscow.',
+        keywords: ['johnson', 'vietnam', 'romania', 'yugoslavia', 'eurocommunism', 'split'],
+      },
+    ],
+  },
+  {
+    topicId: 'cw_detente_afghanistan_collapse_1972_91',
+    paperId: 'paper2_p4_superpower_cold_war',
+    paperType: 'paper2_period',
+    specCode: 'Option P4 • Key Topic 3.1–3.3',
+    title: 'Détente, Afghanistan, Reagan & The Collapse of the USSR (1970–91)',
+    subtitle: 'SALT 1, Helsinki, Kabul 1979, SDI, Gorbachev’s New Thinking, Berlin Wall & 1991',
+    examMission:
+      'Connect the rise and fall of 1970s Détente to Reagan’s Second Cold War, Gorbachev’s internal Soviet crisis, the 1989 fall of the Berlin Wall, and the 1991 dissolution of the USSR.',
+    drivingQuestion:
+      'Write a narrative account analysing the key events in the Soviet Union and Eastern Europe in the years 1989–91. [8 Marks]',
+    pupilPromptCue:
+      'Retrieve: SALT 1 (1972) & Helsinki (1975) -> Dec 1979 Afghanistan, Carter Doctrine & Olympic boycotts -> Reagan’s Evil Empire & SDI (1983) -> Gorbachev’s Perestroika, Glasnost & INF Treaty (1987) -> ending Brezhnev Doctrine -> 9 Nov 1989 fall of Berlin Wall -> Aug 1991 coup, Yeltsin & Dec 1991 end of USSR.',
+    prompt:
+      'Free recall practice: Retrieve key turning points from SALT 1 (1972) and Afghanistan (1979) to Reagan’s SDI (1983), Gorbachev’s New Thinking (1985–88), the fall of the Berlin Wall (1989), and Soviet collapse (1991).',
+    specItemSyncPrefix: 'spec-paper2_p4_superpower_cold_war-kt3_3',
+    relatedLesson: { unit: 'gcse_cold_war', index: 11 },
+    scaffoldLadder: {
+      step1_questions: [
+        'Why did 1970s Détente (SALT 1 & Helsinki) collapse into the Second Cold War after December 1979?',
+        'How did Reagan’s SDI pressure and Gorbachev’s "New Thinking" (Perestroika, Glasnost, INF Treaty) end the arms race?',
+        'How did abandoning the Brezhnev Doctrine lead to the fall of the Berlin Wall (1989), the Warsaw Pact’s end, and the USSR’s collapse (1991)?',
+      ],
+      step2_wordbank: [
+        'SALT 1 (1972) & Helsinki (1975)',
+        'Afghanistan (Dec 1979) & Carter Doctrine',
+        '1980 & 1984 Olympic Boycotts',
+        'Reagan & SDI ("Star Wars", 1983)',
+        'Gorbachev: Perestroika & Glasnost',
+        'INF Treaty (Dec 1987)',
+        '9 Nov 1989 (Fall of Berlin Wall)',
+        'Aug 1991 Coup & Boris Yeltsin',
+        '25 Dec 1991 (End of USSR)',
+      ],
+      step3_starters: [
+        'After the December 1979 Soviet invasion of Afghanistan shattered Détente, President Reagan intensified pressure through...',
+        'Facing economic stagnation and technological lag, Mikhail Gorbachev introduced Perestroika, Glasnost, and abandoned...',
+        'Consequently, between 1989 and December 1991, Eastern European regimes toppled—culminating in the fall of the Berlin Wall and...',
+      ],
+    },
+    thematicClusters: [
+      {
+        name: 'Détente to Second Cold War (1972–84)',
+        description: 'SALT 1, Helsinki Three Baskets, Dec 1979 Afghanistan invasion, Carter Doctrine, Olympic boycotts, and Reagan’s SDI.',
+        keywords: ['salt 1', 'helsinki', 'afghanistan', 'carter doctrine', 'olympic', 'reagan', 'sdi', 'star wars'],
+      },
+      {
+        name: 'Gorbachev’s New Thinking & Summits (1985–89)',
+        description: 'Perestroika, Glasnost, Geneva, Reykjavik, 1987 INF Treaty, and repudiation of the Brezhnev Doctrine.',
+        keywords: ['gorbachev', 'perestroika', 'glasnost', 'geneva', 'reykjavik', 'inf treaty', 'sinatra'],
+      },
+      {
+        name: 'Fall of Berlin Wall & Soviet Collapse (1989–91)',
+        description: 'Solidarity, 9 Nov 1989 Berlin Wall fall, Warsaw Pact dissolved, Aug 1991 coup, Yeltsin, and Dec 1991 resignation.',
+        keywords: ['solidarity', 'berlin wall', 'schabowski', '1989', 'warsaw pact', 'coup', 'yeltsin', '1991'],
+      },
+    ],
+  },
 ];

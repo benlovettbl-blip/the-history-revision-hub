@@ -1020,8 +1020,8 @@ function buildHtml(targetUnitId = null) {
             Museum artifact photography and catalogued digital holdings are verified under Open Government Licence (OGL v3.0), Creative Commons Attribution (CC BY 4.0), or institutional public domain dedication deeds (CC0) with explicit accession shelfmark citations.
           </div>
           <div class="framework-card">
-            <strong>4. Double-Redundant Web Verification Architecture</strong><br>
-            Each record provides double redundancy: (a) direct clickable hyperlink to the repository's official main homepage, and (b) direct permalink to the catalogued artifact holding within the permanent digital collection.
+            <strong>4. Layer 3 Criticism, Review &amp; Quotation (CDPA 1988 s.30(1) &amp; s.30(1ZA))</strong><br>
+            In-copyright primary historical sources in Layer 3 enquiries are reproduced strictly for genuine source criticism, provenance review, and quotation under CDPA s.30(1)/(1ZA) with full attribution, while 100% of Layer 2 decorative plates use Public Domain, OGL, or CC works.
           </div>
         </div>
 
@@ -1754,6 +1754,25 @@ async function renderRegister() {
   });
   console.log(`🎉 Successfully rendered Rights, Protest, and Post-War Britain Unit PDF: ${pwbPdfPath}`);
   await pwbPage.close();
+
+  // Render standalone GCSE Cold War (Option P4) Unit Source Bibliography
+  console.log('🖨️ Rendering Standalone GCSE Cold War (Option P4) Unit Source Bibliography...');
+  const gcwPdfDir = path.join(outPdfDir, 'gcse_cold_war');
+  if (!fs.existsSync(gcwPdfDir)) fs.mkdirSync(gcwPdfDir, { recursive: true });
+  const gcwPdfPath = path.join(gcwPdfDir, 'gcse_cold_war_source_bibliography.pdf');
+  const gcwHtml = buildHtml('gcse_cold_war');
+  const gcwPage = await browser.newPage();
+  await gcwPage.setContent(gcwHtml, { waitUntil: 'domcontentloaded' });
+  await gcwPage.evaluateHandle('document.fonts.ready');
+  await new Promise((r) => setTimeout(r, 800));
+  await gcwPage.pdf({
+    path: gcwPdfPath,
+    format: 'A4',
+    printBackground: true,
+    margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
+  });
+  console.log(`🎉 Successfully rendered GCSE Cold War Unit PDF: ${gcwPdfPath}`);
+  await gcwPage.close();
 
   await browser.close();
   console.log('🏁 All PDF rendering tasks completed successfully!');

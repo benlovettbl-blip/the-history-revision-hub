@@ -135,11 +135,39 @@ const COMPANIONS_CATALOG = [
     sheets: 2,
   },
   {
-    tier: 'GCSE',
-    name: 'Superpower Relations & Cold War',
+    tier: 'KS3',
+    name: 'Superpower Relations & Cold War (KS3)',
     file: 'cold_war_retrieval_companion.pdf',
     expectedPages: 16,
     sheets: 4,
+  },
+  {
+    tier: 'GCSE',
+    name: 'Early Elizabethan England',
+    file: 'eee_retrieval_companion.pdf',
+    expectedPages: 16,
+    sheets: 4,
+  },
+  {
+    tier: 'GCSE',
+    name: 'Superpower Relations & Cold War (Option P4)',
+    file: 'gcse_cold_war_retrieval_companion.pdf',
+    expectedPages: 16,
+    sheets: 4,
+  },
+  {
+    tier: 'GCSE',
+    name: 'Weimar & Nazi Germany',
+    file: 'weimar_nazi_germany_retrieval_companion.pdf',
+    expectedPages: 16,
+    sheets: 4,
+  },
+  {
+    tier: 'GCSE',
+    name: 'The USA, 1954–75',
+    file: 'usa_retrieval_companion.pdf',
+    expectedPages: 24,
+    sheets: 6,
   },
 ];
 

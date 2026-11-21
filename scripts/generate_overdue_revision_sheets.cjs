@@ -417,7 +417,7 @@ function generateBoosterHtml(cfg, topTopics) {
       <div>
         <div class="cohort-badge">${cfg.cohort} GCSE HISTORY EXAM BOOSTER</div>
         <h1 class="main-title">Specification Overdue Radar & High-Probability Topic Booster</h1>
-        <div class="sub-title">${cfg.title} (${cfg.paperCode}) • Edexcel GCSE (9–1) Examination Series 2018–2026</div>
+        <div class="sub-title">${cfg.title} (${cfg.paperCode}) • Topic Frequency Radar 2018–2025</div>
       </div>
       <div style="text-align: right;">
         <div style="font-size: 18pt; font-weight: 900;">2-PAGE</div>
@@ -431,7 +431,7 @@ function generateBoosterHtml(cfg, topTopics) {
         Pearson Edexcel rotates high-tariff topics. The 5 topics below have been either <em>completely unexamined</em> or <em>absent for 4+ exam series</em>.
       </div>
       <div style="font-weight: 800; color: #0f172a; flex-shrink: 0; margin-left: 15px;">
-        TARGET: SUMMER 2026 / MOCK EXAMS
+        TARGET: UPCOMING MOCK &amp; GCSE EXAMS
       </div>
     </div>
 
@@ -587,8 +587,10 @@ async function run() {
     unitsToProcess.push('weimar_nazi_germany', 'usa');
   }
 
+  const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
   const browser = await puppeteer.launch({
     headless: 'new',
+    ...(fs.existsSync(chromePath) ? { executablePath: chromePath } : {}),
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--allow-file-access-from-files'],
   });
 
@@ -613,7 +615,7 @@ async function run() {
     // Render PDF via Puppeteer
     const pdfPath = path.join(PDFS_DIR, cfg.pdfFileName);
     const page = await browser.newPage();
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+    await page.setContent(htmlContent, { waitUntil: 'domcontentloaded' });
     await page.pdf({
       path: pdfPath,
       format: 'A4',

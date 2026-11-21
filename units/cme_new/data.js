@@ -1,4 +1,4 @@
-export default {
+const cme_new = {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -6191,9 +6191,9 @@ export default {
               }
             }
           ],
-          "image": "/images/cme_nasser_suez_cartoon_1956.jpg",
-          "image_alt": "Cartoon of Nasser lounging in an armchair beside a huge oil drum, controlling a tap labelled 'Suez' while Uncle Sam, a Briton and other Europeans queue with empty cans",
-          "caption": "'Der Mann am Hahnen' ('The Man at the Tap'), cartoon by Fritz Behrendt, August 1956: Nasser controls the 'Suez' tap on Europe's oil supply while a Western queue waits with empty cans.",
+          "image": "/images/cme_suez_1956_campaign_map.jpg",
+          "image_alt": "US Military Academy West Point campaign map of the October–November 1956 Sinai invasion and Anglo-French landings at Port Said along the Suez Canal",
+          "caption": "Operational map of the October–November 1956 Sinai Campaign and Anglo-French landings at Port Said along the Suez Canal. (Department of History, US Military Academy West Point, Public Domain)",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> Nasser's central economic ambition was building the **Aswan High Dam**, a massive hydroelectric project designed to control Nile flooding and industrialize Egypt. However, when Nasser officially recognized Communist China in May 1956, US Secretary of State **John Foster Dulles** angrily cancelled a promised $56 million World Bank loan package to fund the dam, aiming to punish Nasser’s neutralist foreign policy.\n\n<span class=\"para-ref\">[3.2]</span> On **26 July 1956**, Nasser responded with a stunning public act of anti-colonial defiance: addressing a massive crowd in Alexandria, he nationalised the British- and French-owned Universal Suez Canal Company. Nasser announced canal transit tolls would fund the dam himself. The nationalisation ignited fury in London and Paris, where leaders viewed Nasser as a dangerous dictator who had seized their strategic oil waterway."
         },
@@ -17660,9 +17660,6 @@ export default {
               "image_alt": "Photocopied Arabic typed leaflet headed \"Call ... Call\" calling for a general strike, signed The Palestinian National Forces"
             }
           ],
-          "image": "/units/cme_new/assets/first_intifada.png",
-          "image_alt": "Colour photograph of masked young Palestinians in a street strewn with stones beside a burning barricade",
-          "caption": "Young Palestinians in a street strewn with stones beside a burning barricade during the First Intifada, late 1980s.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> In **December 1987**, an Israeli military transport collided with Palestinian civilian cars in Gaza, killing four workers. The funeral sparked spontaneous demonstrations that rapidly spread across the occupied territories, igniting the **First Intifada** (\"shaking off\"). Frustrated by twenty years of military occupation, economic stagnation, and lack of civil rights, local Palestinians launched a massive grassroots rebellion against Israeli rule.\n\n<span class=\"para-ref\">[3.2]</span> Directed by the underground **UNLU** (Unified National Leadership of the Uprising), the rebellion relied on civil disobedience, general strikes, tax boycotts, and commercial shutdowns. Palestinian youths armed with stones and petrol bombs confronting heavily armed Israeli soldiers became the defining global symbol of grassroots resistance against military rule, transforming the international perception of the conflict and discrediting the status quo."
         },
@@ -18712,7 +18709,7 @@ export default {
         "topicLabel": "Key Topic 3.2: Lebanon, Sabra & Shatila, and the First Intifada",
         "title": "How Did Lebanon and the First Intifada Reshape the Conflict?",
         "spokenTitle": "How did Lebanon and the First Intifada reshape the conflict?",
-        "thumbUrl": "/units/cme_new/assets/first_intifada.png",
+        "thumbUrl": "/images/cme_plate_jabalia_intifada_roadblock_1988.jpg",
         "provenanceNote": "GPO Israel, Ronald Reagan Presidential Library & Wikimedia Archive (Zero AI Imagery)",
         "bridges": [
           "Camp Massacre",
@@ -18752,7 +18749,7 @@ export default {
             "badge": "Stage 3",
             "heading": "First Intifada Breaks Out",
             "date": "Dec 1987–1993",
-            "img": "/units/cme_new/assets/first_intifada.png",
+            "img": "/images/cme_plate_jabalia_intifada_roadblock_1988.jpg",
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "Strikes, Boycotts & Youths With Stones vs Tanks",
@@ -20620,25 +20617,21 @@ export default {
         {
           "title": "The Lemon Tree: An Arab, a Jew, and the Heart of the Middle East",
           "author": "Sandy Tolan",
-          "cover": "/units/cme_new/assets/lemon_tree_cover.png",
           "perspective_note": "Non-fiction: the story of one house in Ramla, told through the Palestinian family who left it in 1948 and the Jewish immigrant family who moved in."
         },
         {
           "title": "A Tale of Love and Darkness",
           "author": "Amos Oz",
-          "cover": "/units/cme_new/assets/oz_cover.png",
           "perspective_note": "Memoir: an Israeli novelist's childhood in Jerusalem during the last years of the British Mandate and 1948 (mature themes; teacher preview advised)."
         },
         {
           "title": "Mornings in Jenin",
           "author": "Susan Abulhawa",
-          "cover": "/units/cme_new/assets/abulhawa_cover.png",
           "perspective_note": "Novel: four generations of a Palestinian refugee family from 1948 onwards (contains scenes of war violence; teacher preview advised)."
         },
         {
           "title": "Thirteen Days in September",
           "author": "Lawrence Wright",
-          "cover": "/units/cme_new/assets/wright_cover.png",
           "perspective_note": "Non-fiction: a day-by-day account of the 1978 Camp David summit, drawing on American, Egyptian and Israeli perspectives."
         }
       ],
@@ -22099,7 +22092,7 @@ export default {
           "id": 6,
           "text": "Over 700,000 Palestinian Arabs flee or are expelled from their homes in the Nakba.",
           "date": "1948",
-          "image": "/units/cme_new/assets/cme_palestinian_refugees_leaving_gaza_gettyimages_1354487454.webp",
+          "image": "/images/cme_palestinian_refugees_1948.jpg",
           "image_caption": "Historical Source",
           "key_topic": "KT1: Conflict to 1949"
         },
@@ -22174,7 +22167,7 @@ export default {
           "id": 7,
           "text": "The Palestinian Nakba occurs, with over 700,000 refugees fleeing to neighboring Arab states.",
           "date": "1948",
-          "image": "/units/cme_new/assets/cme_palestinian_refugees_leaving_gaza_gettyimages_1354487454.webp",
+          "image": "/images/cme_palestinian_refugees_1948.jpg",
           "image_caption": "Historical Source",
           "key_topic": "KT1: Conflict to 1949"
         }
@@ -22578,7 +22571,7 @@ export default {
           "id": 5,
           "text": "A spontaneous grassroots uprising known as the First Intifada erupts in Gaza and the West Bank.",
           "date": "1987",
-          "image": "/units/cme_new/assets/first_intifada.png",
+          "image": "/images/cme_plate_jabalia_intifada_roadblock_1988.jpg",
           "image_caption": "Historical Source",
           "key_topic": "KT3: The Palestinian Issue (1974–1995)"
         },
@@ -23288,3 +23281,4 @@ export default {
   "key_stage": "GCSE",
   "year_group": "Years 10–11"
 };
+export default cme_new;
