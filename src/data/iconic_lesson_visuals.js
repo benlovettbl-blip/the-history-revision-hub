@@ -509,23 +509,65 @@ export const ICONIC_LESSON_VISUALS = {
   },
 
   cme_new: {
+    lesson_0: {
+      cardImage: "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
+      heroCameo: "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
+      cameoAlt: "Winston Churchill, Gertrude Bell, and T. E. Lawrence mounted on camels before the Great Sphinx during the March 1921 Cairo Conference",
+    },
+    lesson_1: {
+      cardImage: "/images/cme_new/kt1/cme_l1_iconic_ernest_bevin.jpg",
+      heroCameo: "/images/cme_new/kt1/cme_l1_iconic_ernest_bevin.jpg",
+      cameoAlt: "British Foreign Secretary Ernest Bevin (1945–51), who enforced Mandate refugee quotas before handing the Palestine question to the United Nations",
+    },
     lesson_2: {
-      cardImage: '/images/cme_bengurion_declaration_1948.jpg',
+      cardImage: "/images/cme_bengurion_declaration_1948.jpg",
+      heroCameo: "/images/cme_new/kt1/cme_l2_cameo_chaim_weizmann_1949.jpg",
+      cameoAlt: "Dr Chaim Weizmann, veteran Zionist statesman and first President of the State of Israel (1949)",
+    },
+    lesson_3: {
+      cardImage: "/images/cme_new/kt1/cme_l3_iconic_nasser_cairo_1956.jpg",
+      heroCameo: "/images/cme_new/kt1/cme_l3_iconic_nasser_cairo_1956.jpg",
+      cameoAlt: "Egyptian President Gamal Abdel Nasser cheered by vast crowds in Cairo after nationalising the Suez Canal Company (1 August 1956)",
+    },
+    lesson_4: {
+      cardImage: "/images/cme_new/kt2/cme_l4_cameo_eshkol_rabin_1964_67.jpg",
+      heroCameo: "/images/cme_new/kt2/cme_l4_cameo_eshkol_rabin_1964_67.jpg",
+      cameoAlt: "Israeli Prime Minister and Defence Minister Levi Eshkol conferring with IDF Chief of Staff Yitzhak Rabin (October 1966)",
     },
     lesson_5: {
-      cardImage: '/units/cme_new/assets/nasser_1958.jpg',
+      cardImage: "/units/cme_new/assets/nasser_1958.jpg",
+      heroCameo: "/images/cme_new/kt2/cme_l5_cameo_moshe_dayan_june_1967.jpg",
+      cameoAlt: "Israeli Defence Minister Moshe Dayan buckling his combat helmet beside Central Command chief Major General Uzi Narkis during the Six-Day War (8 June 1967)",
     },
     lesson_6: {
-      cardImage: '/images/cme_paratroopers_western_wall_1967.jpg',
+      cardImage: "/images/cme_paratroopers_western_wall_1967.jpg",
+      heroCameo: "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg",
+      cameoAlt: "IDF Chief of Staff Yitzhak Rabin delivering his landmark address at the Hebrew University amphitheatre on Mount Scopus, Jerusalem (June 1967)",
     },
     lesson_7: {
-      cardImage: '/images/cme_munich_1972_balcony.jpg',
+      cardImage: "/images/cme_munich_1972_balcony.jpg",
+      heroCameo: "/images/cme_new/kt2/cme_l7_cameo_king_hussein_amman.jpg",
+      cameoAlt: "King Hussein bin Talal of Jordan in military uniform addressing international journalists at a palace press conference in Amman",
+    },
+    lesson_8: {
+      cardImage: "/images/cme_new/kt2/cme_l8_cameo_anwar_sadat_october_1973.jpg",
+      heroCameo: "/images/cme_new/kt2/cme_l8_cameo_anwar_sadat_october_1973.jpg",
+      cameoAlt: "Egyptian President Anwar Sadat in field uniform holding his marshal’s baton during the October 1973 Yom Kippur War",
     },
     lesson_9: {
-      cardImage: '/units/cme_new/assets/camp_david_accords.png',
+      cardImage: "/units/cme_new/assets/camp_david_accords.png",
+      heroCameo: "/images/cme_new/kt3/cme_l9_cameo_carter_sadat_begin_camp_david_1978.jpg",
+      cameoAlt: "Israeli Prime Minister Menachem Begin, US President Jimmy Carter, and Egyptian President Anwar Sadat standing together outside Aspen Lodge at Camp David (7 September 1978)",
+    },
+    lesson_10: {
+      cardImage: "/images/cme_new/kt3/cme_l10_iconic_lebanon_sea_evacuation_1982.jpg",
+      heroCameo: "/images/cme_new/kt3/cme_l10_iconic_lebanon_sea_evacuation_1982.jpg",
+      cameoAlt: "US Navy utility landing craft evacuating civilians and foreign personnel across a Lebanese harbour against the backdrop of Mount Lebanon during the June 1982 invasion of Lebanon",
     },
     lesson_11: {
-      cardImage: '/images/cme_oslo_handshake_1993.jpg',
+      cardImage: "/images/cme_oslo_handshake_1993.jpg",
+      heroCameo: "/images/cme_new/kt3/cme_l11_cameo_oslo_ii_leaders_white_house_1995.jpg",
+      cameoAlt: "Prime Minister Yitzhak Rabin, President Hosni Mubarak, King Hussein of Jordan, President Bill Clinton, and PLO Chairman Yasser Arafat inside the White House ahead of signing the Oslo II Interim Agreement (28 September 1995)",
     },
   },
 

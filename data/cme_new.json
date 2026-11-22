@@ -809,7 +809,7 @@
           ],
           "image": "/images/cme_arab_revolt_fighters_hejaz_1916.jpg",
           "image_alt": "Arab Revolt camel-mounted flag-bearer carrying the Sharifian banner alongside armed Arab fighters in the Hejaz desert, July 1917",
-          "caption": "An Arab Revolt camel-mounted standard-bearer carries the Sharifian banner across the desert as armed Arab fighters advance toward Aqaba against Ottoman forces, July 1917 (photographed by T. E. Lawrence, Imperial War Museum).",
+          "caption": "An Arab Revolt camel-mounted standard-bearer carries the Sharifian banner across the Hejaz desert as armed Arab fighters advance toward Aqaba against Ottoman forces, photographed by T. E. Lawrence in July 1917.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[1.1]</span> For over four centuries, the Middle East was ruled by the Turkish **Ottoman Empire**. When the Ottomans allied with Imperial Germany in 1914, British strategists faced an acute crisis: Turkish forces threatened the **Suez Canal**, Britain’s vital maritime route to India. Desperate to protect this waterway and tie down Turkish troops, Sir **Henry McMahon**, British High Commissioner in Cairo, opened secret correspondence with Sharif Hussein of Mecca.\n\n<span class=\"para-ref\">[1.2]</span> McMahon promised British support for an independent Arab state across the region in return for an armed rebellion against Turkish rule. Believing Palestine was included in this promised territory, Arab forces launched the Arab Revolt in 1916. However, McMahon inserted vague geographic exemptions to protect British interests, creating a bitter dispute over whether Britain had pledged Palestine to the Arabs."
         },
@@ -905,7 +905,7 @@
           ],
           "image": "/images/cme_plate_weizmann_faisal_1918.jpg",
           "image_alt": "Zionist leader Chaim Weizmann and Arab leader Emir Faisal meeting near Aqaba in June 1918",
-          "caption": "Zionist leader Chaim Weizmann (left) wearing an Arab headcloth alongside Emir Faisal (son of Sharif Hussein) near Aqaba in June 1918—illustrating Britain’s attempt to reconcile competing wartime Zionist and Arab national promises after the 1917 Balfour Declaration. (Library of Congress Matson Collection, Public Domain)",
+          "caption": "Zionist leader Chaim Weizmann (left) wearing an Arab headcloth alongside Emir Faisal (son of Sharif Hussein) near Aqaba in June 1918, illustrating Britain’s attempt to reconcile competing wartime Zionist and Arab national promises after the 1917 Balfour Declaration.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> By late 1917, Britain faced severe military strain on the Western Front and sought international Jewish support in the United States and Russia. Prime Minister **David Lloyd George** and Foreign Secretary **Arthur Balfour** courted the Zionist movement, which campaigned for a Jewish homeland in Palestine. On **2 November 1917**, Balfour issued an official public statement to Lord Rothschild pledging British government backing.\n\n<span class=\"para-ref\">[3.2]</span> The Balfour Declaration announced British support for \"the establishment in Palestine of a national home for the Jewish people.\" To reassure allies, it added that non-Jewish civil and religious rights must not be harmed. However, Arab Muslims and Christians made up over 90% of Palestine’s population. By promising a Jewish homeland in an Arab-majority land, Britain made conflicting commitments that entrenched decades of communal conflict."
         },
@@ -952,7 +952,7 @@
           ],
           "image": "/images/cme_gcse_map_1922_british_mandate.svg",
           "image_alt": "Map of Mandatory Palestine 1922–47 showing the British Mandate border, the Transjordan boundary, major Arab and Jewish towns and population change",
-          "caption": "Mandatory Palestine, 1922–47: the League of Nations gave Britain control of Palestine in 1922. The Jewish share of the population grew from about 11% in 1922 to about a third by 1947.",
+          "caption": "Reference Map: Mandatory Palestine, 1922–47: the League of Nations gave Britain control of Palestine in 1922. The Jewish share of the population grew from about 11% in 1922 to about a third by 1947.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[4.1]</span> In December 1917, British General **Edmund Allenby's** army captured Jerusalem from the retreating Ottomans. In 1922, the newly created **League of Nations** formally granted Britain administrative control over **Mandatory Palestine**. Britain was tasked with preparing the country for self-government while incorporating the Balfour Declaration’s pledge to facilitate Jewish immigration and land purchase through the Jewish Agency.\n\n<span class=\"para-ref\">[4.2]</span> Palestinian Arabs viewed expanding Jewish immigration as a direct threat to their national survival. As Zionist organizations purchased agricultural land, Arab tenant farmers were evicted from ancestral holdings. Tensions erupted into deadly communal riots in Jaffa and Jerusalem. During the 1930s, Jewish refugees fled rising Nazi persecution in Europe, swelling Palestine’s Jewish population to nearly 30% by 1936."
         },
@@ -1019,8 +1019,8 @@
             }
           ],
           "image": "/images/cme_plate_arab_revolt_rebels_1938.jpg",
-          "image_alt": "Armed Palestinian Arab rebels mounted on horseback during the 1936–1939 Great Arab Revolt",
-          "caption": "Armed Palestinian Arab fighters mounted on horseback beneath their national banner in 1938 during the Great Arab Revolt (1936–1939) against British rule and rising Jewish immigration, which pushed London toward the restrictive 1939 White Paper. (Wikimedia Commons Archive, Public Domain)",
+          "image_alt": "Armed Palestinian Arab rebels mounted on horseback beneath their national banner during the 1936–1939 Great Arab Revolt",
+          "caption": "Armed Palestinian Arab fighters mounted on horseback beneath their national banner in 1938 during the Great Arab Revolt (1936–1939) against British rule and rising Jewish immigration, which pushed London toward the restrictive May 1939 White Paper.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> In 1936, rising anger erupted into the **Great Arab Revolt**, a widespread rebellion against British rule and Jewish immigration. Directed by the Arab Higher Committee under the Grand Mufti of Jerusalem, **Haj Amin al-Husseini**, Arabs held general strikes, attacked British military patrols, and repeatedly sabotaged the strategic **IPC oil pipeline** running to Haifa port. Britain responded with martial law, deploying 20,000 soldiers and executing rebel leaders.\n\n<span class=\"para-ref\">[5.2]</span> Facing imminent war against Nazi Germany, Britain needed to secure Arab oil and maintain peace across the Middle East. In May 1939, the British government published the 1939 White Paper, which strictly limited Jewish immigration to 75,000 over five years and promised independent statehood within ten years. Zionists were deeply angered, viewing the restrictions as a fatal betrayal of European Jews facing Nazi persecution."
         }
@@ -1603,12 +1603,12 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
-        "caption": "Winston Churchill, Gertrude Bell, T. E. Lawrence, and British Mandate Officials at the 1921 Cairo Conference",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt1/cme_l0_banner_damascus_gate_jerusalem.jpg",
+        "caption": "Damascus Gate and the Crenellated Old City Walls of Jerusalem in Mandatory Palestine",
+        "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l0_cairo_conference_1921.jpg"
+      "banner_image": "/images/cme_new/kt1/cme_l0_banner_damascus_gate_jerusalem.jpg",
+      "hero_image": "/images/cme_new/kt1/cme_l0_banner_damascus_gate_jerusalem.jpg"
     },
     {
       "id": "lesson_1",
@@ -2345,7 +2345,7 @@
           "isReversed": false,
           "image": "/images/cme_plate_jerusalem_bevingrad_1948.jpg",
           "image_alt": "Barbed-wire fortified British security zone known as Bevingrad on Princess Mary Avenue in central Jerusalem",
-          "caption": "Coils of barbed wire sealing off Princess Mary Avenue inside \"Bevingrad\"—the heavily fortified British security zone in central Jerusalem—as 100,000 British troops struggled to contain the post-1945 Zionist paramilitary insurgency. (Wikimedia Commons Archive, Public Domain)",
+          "caption": "Coils of barbed wire sealing off Princess Mary Avenue inside \"Bevingrad\"—the heavily fortified British security zone in central Jerusalem named after Foreign Secretary Ernest Bevin—as 100,000 British troops struggled to contain the post-1945 Zionist paramilitary insurgency.",
           "content": "<span class=\"para-ref\">[2.1]</span> Frustrated by British immigration restrictions, Jewish underground militias united in October 1945 to form the **United Resistance Movement** (known in Hebrew as **Tenuat HaMeri**). This coalition brought together the mainstream socialist **Haganah** with two radical armed factions: Menachem Begin’s [Key Organisation: Irgun] and the militant Lehi (Stern Gang). Their goal was to make Palestine ungovernable for British forces through systematic sabotage.\n\n<span class=\"para-ref\">[2.2]</span> The insurgency launched coordinated armed assaults against British infrastructure, blowing up coastal radar stations, bridges, and railway lines used to intercept migrant vessels. Britain retaliated by deploying 100,000 soldiers, imposing strict curfews, and arresting thousands of Zionist leaders in Operation Agatha. Rather than ending resistance, British military repression alienated the Jewish population and convinced Zionist leaders that armed defiance was necessary."
         },
         {
@@ -2391,7 +2391,7 @@
           ],
           "image": "/images/cme_plate_king_david_etzel_1946.jpg",
           "image_alt": "British rescue soldiers searching through the collapsed masonry of the King David Hotel in Jerusalem on 22 July 1946",
-          "caption": "British military rescue teams digging through the collapsed stone masonry at the base of the King David Hotel’s south wing following the 22 July 1946 Irgun bombing, which killed 91 British, Arab, and Jewish personnel. (Israel Government Press Office / Wikimedia Commons, CC BY-SA 3.0)",
+          "caption": "British military rescue teams digging through the collapsed stone masonry at the base of the King David Hotel’s south wing in Jerusalem following the 22 July 1946 Irgun bombing, which killed 91 British, Arab, and Jewish personnel.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun executed a devastating bomb attack on the south wing of the **King David Hotel** in Jerusalem. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.\n\n<span class=\"para-ref\">[3.2]</span> The massive explosion demolished all six floors of the headquarters, killing **91 people**, including British officers, Arab civil servants, and Jewish administrative staff. The attack shocked the British public and drew fierce international condemnation. Shocked by the civilian death toll, David Ben-Gurion’s Haganah dissolved the United Resistance coalition, though the Irgun and Lehi continued aggressive guerrilla attacks."
         },
@@ -2438,8 +2438,8 @@
           ],
           "isReversed": true,
           "image": "/images/cme_plate_irgun_lehi_wanted_poster_1947.jpg",
-          "image_alt": "Palestine Police Force Wanted poster showing fugitive Irgun and Lehi commanders including Menachem Begin",
-          "caption": "Official British Palestine Police Force \"Wanted\" poster displaying mugshots and rewards for fugitive Irgun and Lehi commanders (including Menachem Begin and Yitzhak Shamir) amid the 1947 spiral of executions, hostage-taking, and reprisals. (Palestine Police Archive, Public Domain)",
+          "image_alt": "Official trilingual Palestine Police Force Wanted poster issued in July 1947 displaying photographs of fugitive Irgun and Lehi fighters after the Acre Prison break",
+          "caption": "Official trilingual Palestine Police Force \"Wanted\" poster issued in July 1947 offering rewards for fugitive Irgun and Lehi fighters following the 4 May 1947 Acre Prison break, amid the escalating spiral of executions, hostage-taking, and reprisals.",
           "content": "<span class=\"para-ref\">[4.1]</span> In July 1947, the British executed three captured Irgun militants for armed attacks. In retaliation, the Irgun abducted two British intelligence sergeants, **Clifford Martin** and **Mervyn Paice**, holding them hostage in an underground bunker in Netanya. When British authorities proceeded with the executions of the Irgun fighters, Begin ordered both captured British soldiers to be hanged and their bodies booby-trapped in an eucalyptus grove.\n\n<span class=\"para-ref\">[4.2]</span> The **Sergeants Affair** provoked profound outrage across Britain, sparking anti-Jewish riots in London, Liverpool, and Manchester. British newspapers and parliamentarians openly demanded an immediate military withdrawal, arguing British soldiers should not die policing an intractable foreign conflict. Financially exhausted after World War Two, the British government concluded that maintaining the Mandate was militarily and politically unsustainable."
         },
         {
@@ -2502,9 +2502,9 @@
               }
             }
           ],
-          "image": "/units/cme_new/assets/cme_un_palestine_partition_versions_1947.jpg",
-          "image_alt": "Official 1947 United Nations Ad Hoc Committee partition map of Mandatory Palestine",
-          "caption": "The 1947 United Nations partition map dividing Mandatory Palestine into proposed Arab and Jewish states with an internationalised Jerusalem (corpus separatum), adopted by the UN General Assembly as Resolution 181 on 29 November 1947 after exhausted Britain handed the mandate to the UN. (United Nations Cartographic Section, Public Domain)",
+          "image": "/images/cme_new/kt1/cme_l1_b4_unscop_jerusalem_1947.jpg",
+          "image_alt": "The eleven international delegates of the United Nations Special Committee on Palestine (UNSCOP) seated behind country placards during formal hearings at the Jerusalem YMCA, 8 July 1947",
+          "caption": "The eleven international delegates of the United Nations Special Committee on Palestine (UNSCOP)—representing states including Sweden, Canada, India, Guatemala, Czechoslovakia, Yugoslavia, Uruguay, and Iran—in session at the Jerusalem YMCA on 8 July 1947 before recommending the partition plan adopted as UN Resolution 181.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> In July 1947, Royal Navy destroyers intercepted the **SS Exodus 1947**, a clandestine **Aliyah Bet** steamship carrying 4,500 Holocaust survivors attempting to reach Palestine without visas. Determined to deter illegal migration, Foreign Secretary **Ernest Bevin** ordered the passengers forcibly returned to camps in British-occupied **Germany**, causing a global public relations disaster that destroyed British moral authority.\n\n<span class=\"para-ref\">[5.2]</span> Financially exhausted and unable to reconcile Jewish and Arab demands, Britain handed the Palestine problem to the [Key Organisation: United Nations] in February 1947, where **UNSCOP** investigated and recommended partition. On 29 November 1947, the General Assembly passed **UN Resolution 181**, voting to partition Palestine into separate Jewish and Arab states with international Jerusalem; the Jewish Agency accepted, while Arab leaders rejected it, sparking immediate civil war."
         }
@@ -3569,12 +3569,12 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg",
-        "caption": "British Mandate Soldiers Searching a Jewish Passenger Bus on the Road to Jerusalem",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt1/cme_l1_banner_jerusalem_king_david_ymca.jpg",
+        "caption": "Aerial Panorama of the King David Hotel and Jerusalem YMCA Tower Against the Judean Hills",
+        "position": "center 50%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg"
+      "banner_image": "/images/cme_new/kt1/cme_l1_banner_jerusalem_king_david_ymca.jpg",
+      "hero_image": "/images/cme_new/kt1/cme_l1_banner_jerusalem_king_david_ymca.jpg"
     },
     {
       "id": "lesson_2",
@@ -3929,8 +3929,8 @@
             }
           ],
           "image": "/images/cme_plate_bernadotte_jerusalem_1948.jpg",
-          "image_alt": "United Nations Mediator Count Folke Bernadotte walking with officers in Jerusalem during the 1948 UN truce",
-          "caption": "UN Mediator Count Folke Bernadotte (centre, in white cap) in Jerusalem during the June 1948 First UN Truce—the critical four-week pause during which Israel reorganised the IDF and imported decisive Czechoslovak arms shipments. (Dan Hadani Archive, National Library of Israel / CC BY 4.0)",
+          "image_alt": "United Nations Mediator Count Folke Bernadotte walking with truce officers in Jerusalem during the June 1948 UN truce",
+          "caption": "United Nations Mediator Count Folke Bernadotte (centre, in white peaked cap) walking with truce officers in Jerusalem during the June 1948 First UN Truce—the critical four-week pause during which Israel reorganised the IDF and imported decisive Czechoslovak arms shipments.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[2.1]</span> Hard-pressed Israeli forces suffered severe ammunition shortages during the opening month of combat. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire negotiated by UN mediator Count **Folke Bernadotte** to halt fighting. Both sides agreed to pause hostilities, but Israel utilized the four-week interlude far more effectively than the fractured Arab coalition to reorganize and rearm.\n\n<span class=\"para-ref\">[2.2]</span> During the truce, Israel broke the international arms embargo by securing a massive clandestine **Czech arms deal** with Soviet approval, airlifting thousands of rifles, machine guns, and Avia S-199 fighter aircraft. Prime Minister Ben-Gurion simultaneously consolidated disparate militias into the unified **IDF** (Israel Defense Forces). When combat resumed in July, heavily reinforced Israeli divisions broke Egyptian lines and seized the military initiative across all operational fronts."
         },
@@ -4096,7 +4096,7 @@
           ],
           "image": "/images/cme_plate_beit_lid_maabara_1950.jpg",
           "image_alt": "Rows of canvas tents at the Beit Lid maabara immigrant transit camp in Israel in 1950",
-          "caption": "Canvas tents stretching across the Beit Lid ma’abara (immigrant transit camp) in 1950, where tens of thousands of Holocaust survivors and Mizrahi Jewish refugees lived under strict austerity as the 1950 Law of Return doubled Israel’s Jewish population. (PikiWiki Israel / Public Domain)",
+          "caption": "Canvas tents stretching across the Beit Lid ma’abara (immigrant transit camp) in 1950, where tens of thousands of Holocaust survivors and Mizrahi Jewish refugees lived under strict austerity as the July 1950 Law of Return doubled Israel’s Jewish population.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> On 5 July 1950, the Israeli Knesset passed the landmark **Law of Return**, declaring that every Jewish person worldwide held the legal right to settle in Israel and receive immediate citizenship. Prime Minister **David Ben-Gurion** paired mass immigration with compulsory IDF national service and trained reserve duty so the young state could populate vulnerable frontier borders and mobilise rapidly.\n\n<span class=\"para-ref\">[5.2]</span> State-run airlifts including **Operation Magic Carpet** from Yemen and Iraq helped double Israel’s Jewish population from 650,000 to over **1.4 million** citizens by 1952, forcing strict food rationing and crowded canvas transit camps (ma’abarot). Crucial American financial backing—including a **$100 million** US Export-Import Bank loan and private US Jewish fundraising—funded housing and kept Israel’s economy solvent."
         }
@@ -5466,12 +5466,12 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg",
-        "caption": "Israeli Tracked Tractor Towing an Armoured Supply Truck Along the Emergency Burma Road to Besieged Jerusalem",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt1/cme_l2_banner_jerusalem_judean_hills.jpg",
+        "caption": "Panoramic View Across the Mount of Olives and the Judean Hills Framing Contested Jerusalem",
+        "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l2_jerusalem_burma_road_convoy_1948.jpg"
+      "banner_image": "/images/cme_new/kt1/cme_l2_banner_jerusalem_judean_hills.jpg",
+      "hero_image": "/images/cme_new/kt1/cme_l2_banner_jerusalem_judean_hills.jpg"
     },
     {
       "id": "lesson_3",
@@ -6167,8 +6167,8 @@
           ],
           "isReversed": false,
           "image": "/images/cme_plate_egyptian_mig15_fighter.jpg",
-          "image_alt": "Soviet-built Egyptian Air Force MiG-15 jet fighter on an airfield flight line",
-          "caption": "An Egyptian Air Force Soviet-built MiG-15 swept-wing jet fighter—the signature weapon of Nasser’s September 1955 Czech Arms Deal, which shattered Western arms rationing in the Middle East and alarmed Israeli military planners. (US Department of Defense Archive, Public Domain)",
+          "image_alt": "Soviet-built Egyptian Air Force MiG-15UTI swept-wing jet aircraft on an airfield apron",
+          "caption": "An Egyptian Air Force Soviet-built MiG-15UTI swept-wing jet aircraft—symbolising Nasser’s September 1955 Czech Arms Deal, which shattered Western arms rationing in the Middle East and alarmed Israeli military planners.",
           "content": "<span class=\"para-ref\">[2.1]</span> Desperate to rearm after the Gaza raid, Nasser sought weapons from Washington and London, but Western governments tied arms sales to joining anti-Soviet **Cold War** pacts. Determined to safeguard national independence, Nasser championed the **Non-Aligned Movement** at Bandung while tightening Egypt’s naval blockade of the **Straits of Tiran** against Israeli shipping bound for Eilat.\n\n<span class=\"para-ref\">[2.2]</span> In **September 1955**, Nasser stunned Western capitals by announcing the **Czech arms deal**, trading Egyptian cotton for advanced Soviet weaponry supplied via Czechoslovakia, including **200 MiG-15 jet fighters** and 300 modern tanks. Breaking the Western arms monopoly gave the Soviet Union decisive influence in Cairo and alarmed Israeli commanders over Egypt’s growing offensive strength."
         },
         {
@@ -6213,8 +6213,8 @@
             }
           ],
           "image": "/images/cme_suez_1956_campaign_map.jpg",
-          "image_alt": "US Military Academy West Point campaign map of the October–November 1956 Sinai invasion and Anglo-French landings at Port Said along the Suez Canal",
-          "caption": "Operational map of the October–November 1956 Sinai Campaign and Anglo-French landings at Port Said along the Suez Canal. (Department of History, US Military Academy West Point, Public Domain)",
+          "image_alt": "Operational campaign map of the October–November 1956 Sinai invasion and Anglo-French landings at Port Said along the Suez Canal",
+          "caption": "Reference Map: Operational map of the October–November 1956 Sinai Campaign and the Anglo-French airborne and amphibious landings at Port Said along the Suez Canal.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> Nasser's central economic ambition was building the **Aswan High Dam**, a massive hydroelectric project designed to control Nile flooding and industrialize Egypt. However, when Nasser officially recognized Communist China in May 1956, US Secretary of State **John Foster Dulles** angrily cancelled a promised $56 million World Bank loan package to fund the dam, aiming to punish Nasser’s neutralist foreign policy.\n\n<span class=\"para-ref\">[3.2]</span> On **26 July 1956**, Nasser responded with a stunning public act of anti-colonial defiance: addressing a massive crowd in Alexandria, he nationalised the British- and French-owned Universal Suez Canal Company. Nasser announced canal transit tolls would fund the dam himself. The nationalisation ignited fury in London and Paris, where leaders viewed Nasser as a dangerous dictator who had seized their strategic oil waterway."
         },
@@ -6260,8 +6260,8 @@
             }
           ],
           "image": "/images/cme_port_said_british_troops_1956.jpg",
-          "image_alt": "British troops patrolling the streets of Port Said in November 1956",
-          "caption": "Anglo-French invasion at Port Said (November 1956): British troops in the streets of Port Said after the landings of 5–6 November.",
+          "image_alt": "Royal Navy Tank Landing Ship HMS Striker (L4099) beached at the Port Said jetty as dense black smoke rises from burning oil tanks during Operation Musketeer, 6 November 1956",
+          "caption": "Royal Navy Tank Landing Ship HMS Striker (L4099) disembarking troops and vehicles at Port Said as black smoke billows from burning oil storage tanks during the Anglo-French landings of 5–6 November 1956.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[4.1]</span> British Prime Minister Sir **Anthony Eden** and French leaders secretly colluded with Israeli Prime Minister David Ben-Gurion outside Paris. In late October 1956, they signed the covert **Sèvres Agreement**, engineering a pretext for military intervention: Israel would invade Egypt across Sinai, allowing Britain and France to issue an ultimatum to \"separate the combatants\" and reoccupy the Suez Canal.\n\n<span class=\"para-ref\">[4.2]</span> On **29 October 1956**, Israeli paratroopers dropped near the Mitla Pass, sweeping rapidly across the Sinai Peninsula toward the canal. As secretly planned, Britain and France issued their joint ultimatum demanding both armies withdraw from canal banks. When Nasser predictably refused, Anglo-French forces bombed Egyptian airfields on 31 October and landed elite paratroopers at Port Said, seizing the northern canal zone."
         },
@@ -6307,8 +6307,8 @@
             }
           ],
           "image": "/images/cme_plate_unef_peacekeepers_sinai_1957.jpg",
-          "image_alt": "United Nations Emergency Force Yugoslav soldiers patrolling the Sinai desert in January 1957",
-          "caption": "Soldiers of the newly created United Nations Emergency Force (UNEF) patrolling the Sinai Peninsula on 15 January 1957—deployed to police the Egyptian–Israeli frontier and reopen the Straits of Tiran after US financial pressure forced Anglo-French and Israeli withdrawal. (UN / Yugoslav Archive, Public Domain)",
+          "image_alt": "Yugoslav and Swedish soldiers of the United Nations Emergency Force (UNEF) patrolling the Sinai desert on 15 January 1957",
+          "caption": "Yugoslav and Swedish peacekeepers of the newly created United Nations Emergency Force (UNEF) patrolling the Sinai Peninsula on 15 January 1957, deployed to police the Egyptian–Israeli frontier and reopen the Straits of Tiran after US financial pressure forced Anglo-French and Israeli withdrawal.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> The Anglo-French invasion provoked global outrage and swift superpower condemnation. US President **Dwight D. Eisenhower**, furious that his allies had acted behind Washington’s back during the Soviet invasion of Hungary, threatened to block vital IMF loans and collapse the British pound while Moscow issued stern warnings, forcing a humiliating ceasefire on **6 November 1956** that shattered British imperial prestige.\n\n<span class=\"para-ref\">[5.2]</span> Under sustained American pressure, Israel withdrew from Sinai in early 1957 as the **United Nations Emergency Force (UNEF)** deployed along the border and reopened the **Straits of Tiran** to Israeli ships. Keeping the canal made Nasser the undisputed hero of Pan-Arabism, enabling him to unite Egypt and Syria into the **United Arab Republic** (UAR) in February 1958."
         }
@@ -6458,9 +6458,9 @@
           "letter": "E",
           "title": "Source E: British Troops and Armour in Port Said (November 1956)",
           "src": "/images/cme_british_tanks_port_said_1956.jpg",
-          "image": "/images/cme_british_tanks_port_said_1956.jpg",
+          "image": "/images/cme_new/kt1/cme_l3_s4_port_said_armour_iwm_1956.jpg",
           "source": "/images/cme_british_tanks_port_said_1956.jpg",
-          "image_alt": "British soldiers standing in a war-damaged street in Port Said beside tanks and an armoured vehicle, November 1956",
+          "image_alt": "Officers of the British 3rd Battalion, Parachute Regiment linking up with Royal Marine Commandos beside a captured Egyptian SU-100 self-propelled gun and an amphibious LVT Buffalo in a damaged Port Said street, November 1956",
           "caption": "British troops and armoured vehicles in a damaged street in Port Said, November 1956. Although they controlled the northern canal zone, Britain agreed to a ceasefire on 6 November under heavy US pressure and withdrew by December.",
           "desc": "Photograph of British troops and armour in Port Said at the end of the Suez invasion, November 1956.",
           "provenance": "British official photograph, Port Said, November 1956 (Imperial War Museums; Crown copyright expired).",
@@ -7374,12 +7374,12 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg",
-        "caption": "Israeli Infantry Digging Defensive Foxholes and Cleaning Rifles in the Sinai Desert During the Suez-Sinai War",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt1/cme_l3_banner_suez_canal_transit.jpg",
+        "caption": "Merchant Cargo Vessel and Pilot Launch Transiting the Strategic Suez Canal Waterway",
+        "position": "center 46%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg"
+      "banner_image": "/images/cme_new/kt1/cme_l3_banner_suez_canal_transit.jpg",
+      "hero_image": "/images/cme_new/kt1/cme_l3_banner_suez_canal_transit.jpg"
     },
     {
       "id": "lesson_4",
@@ -7602,9 +7602,9 @@
               }
             }
           ],
-          "image": "/images/cme_cairo_summit_1964.jpg",
-          "image_alt": "President Gamal Abdel Nasser and Arab heads of state seated at the conference table during the First Arab League Summit in Cairo, January 1964",
-          "caption": "Arab heads of state convened by President Gamal Abdel Nasser at the First Arab League Summit in Cairo, January 1964, to oppose Israel’s National Water Carrier and establish the Palestine Liberation Organisation (PLO).",
+          "image": "/images/cme_new/kt2/cme_l4_b0_nasser_hafiz_cairo_1964.jpg",
+          "image_alt": "Egyptian President Gamal Abdel Nasser shaking hands with Syrian President Amin al-Hafiz at Cairo Airport ahead of the First Arab League Summit in January 1964",
+          "caption": "Egyptian President Gamal Abdel Nasser (right) greets Syrian President Amin al-Hafiz (left) in Cairo ahead of the January 1964 First Arab League Summit—convened to coordinate Jordan headwater diversion plans against Israel’s National Water Carrier and authorise the founding of the PLO.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the first **Arab League Summit** in Cairo, bringing Arab monarchs and military heads together to counter Israeli regional initiatives. Arab leaders were deeply alarmed by Israeli engineering works extracting fresh water from the River Jordan. Nasser urged collective diplomatic opposition while frankly cautioning that Arab conventional armed forces remained unready for immediate open warfare against Israel.\n\n<span class=\"para-ref\">[1.2]</span> To direct Palestinian resistance under Arab supervision, the summit backed the creation of a Palestinian organisation. In **May 1964**, a Palestinian congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the [Key Organisation: PLO] (Palestine Liberation Organisation). It adopted the Palestinian National Charter, which declared the partition of Palestine and the establishment of Israel \"null and void\" and called for the liberation of Palestine. The founding of the PLO created a distinct national political voice for hundreds of thousands of displaced refugees living across the region."
         },
@@ -7696,9 +7696,9 @@
               }
             }
           ],
-          "image": "/images/cme_plate_tel_katzir_golan_border.jpg",
-          "image_alt": "Israeli farmer ploughing fields at Kibbutz Tel Katzir directly beneath the towering Syrian Golan Heights escarpment",
-          "caption": "Ploughing contested frontier farmland at Kibbutz Tel Katzir in the Jordan Valley directly beneath the towering Syrian Golan Heights—illustrating why Syrian artillery positions on the high plateau posed a constant threat to northern Israeli settlements before 1967. (PikiWiki Israel, Public Domain)",
+          "image": "/images/cme_new/kt2/cme_map_l4_water_raids_samu_1964_67.svg",
+          "image_alt": "Edexcel GCSE geopolitical map of the 1964–67 escalation to war showing Israel’s 1964 National Water Carrier from the Sea of Galilee to the Negev, Arab League headwater diversion works at Banias, Dan, and Hasbani, Syrian Golan shelling and Fatah border raids, Israel’s 13 November 1966 reprisal raid on As-Samu in the Jordanian West Bank, and the 7 April 1967 air battle in which six Syrian MiG-21s were shot down near Damascus",
+          "caption": "Reference Map: Escalation to War (1964–April 1967) — tracing Israel’s National Water Carrier, Arab headwater diversion works (Banias, Dan, Hasbani), Syrian-backed Fatah raids, the 13 November 1966 Samu reprisal in the Jordanian West Bank, and the 7 April 1967 air clash over Damascus.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> Frustrated by conservative Arab diplomacy, younger Palestinian militants led by **Yasser Arafat** formed **Fatah** in Kuwait to wage independent revolutionary warfare. Fatah rejected reliance on Arab governments, arguing that direct guerrilla attacks inside Israel would ignite a wider Arab-Israeli conflict. In January 1965, Fatah carried out its first sabotage raid, attempting to dynamite an Israeli water canal pumping facility.\n\n<span class=\"para-ref\">[3.2]</span> In 1966, a radical military regime seized power in Damascus, offering Fatah advanced weapons, training facilities, and operational sanctuary. From heavily fortified artillery bunkers atop the **Golan Heights**, Syrian gunners routinely shelled Israeli tractors and farming kibbutzim in the Hula Valley below, prompting Israeli military leaders to warn that Syria faced devastating military retaliation if guerrilla attacks continued."
         },
@@ -7747,7 +7747,7 @@
           ],
           "image": "/images/cme_plate_levi_eshkol_pm.jpg",
           "image_alt": "Israeli Prime Minister Levi Eshkol seated with IDF senior commanders",
-          "caption": "Israeli Prime Minister and Defence Minister Levi Eshkol (front row, centre) seated with senior IDF commanders—whose November 1966 authorisation of the massive daylight reprisal at Samu in the Jordanian West Bank destabilised King Hussein and drew sharp US censure. (Dan Hadani Archive, National Library of Israel / CC BY 4.0)",
+          "caption": "Israeli Prime Minister and Defence Minister Levi Eshkol (front row, centre) seated with senior IDF commanders—whose November 1966 authorisation of the massive daylight reprisal at Samu in the Jordanian West Bank destabilised King Hussein and drew sharp US censure.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[4.1]</span> In November 1966, an underground Fatah landmine killed three Israeli paratroopers patrolling near the southern border. On **13 November 1966**, Israeli commanders launched a massive daylight reprisal strike against the village of As-**Samu** in the Jordanian-administered **West Bank**, deploying 4,000 soldiers supported by armored tanks and combat aircraft to punish the local population.\n\n<span class=\"para-ref\">[4.2]</span> The assault escalated into intense fighting with the Jordanian army, killing 15 Jordanian soldiers and flattening over 100 village houses. The raid deeply humiliated Jordan’s pro-Western monarch, **King Hussein**, who had secretly maintained backchannel dialogue with Israel. Widespread riots erupted across West Bank towns against the Hashemite monarchy, severely destabilizing the regime and forcing Hussein to harden his public rhetoric against Israel to survive politically."
         },
@@ -7813,7 +7813,7 @@
           ],
           "image": "/images/cme_plate_ein_gev_sea_of_galilee.jpg",
           "image_alt": "Kibbutz Ein Gev harbour on the eastern shore of the Sea of Galilee directly beneath the Golan Heights",
-          "caption": "The harbour of Kibbutz Ein Gev on the eastern shore of the Sea of Galilee, overshadowed by the Syrian Golan escarpment where the 7 April 1967 demilitarised-zone ploughing clash escalated into an aerial battle that downed six Syrian MiG-21s. (Israel Public Works Archive, Public Domain)",
+          "caption": "The harbour of Kibbutz Ein Gev on the eastern shore of the Sea of Galilee, overshadowed by the Syrian Golan escarpment where the 7 April 1967 demilitarised-zone ploughing clash escalated into an aerial battle that downed six Syrian MiG-21s.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> On **7 April 1967**, long-simmering border tensions reached a dangerous crisis when an Israeli armored tractor ploughed disputed agricultural fields in the demilitarized zone near the Syrian border. Syrian artillery atop the Golan Heights opened fire on Israeli farmers, prompting the Israeli Air Force to dispatch French-built **Mirage jets** to silence Syrian gun positions.\n\n<span class=\"para-ref\">[5.2]</span> Syrian Soviet-built **MiG-21** fighters scrambled to intercept the Israeli aircraft, resulting in a dramatic aerial dogfight over the Sea of Galilee. Highly trained Israeli pilots shot down six Syrian MiGs without suffering a single loss, chasing retreating Syrian planes over Damascus. This public humiliation pushed Syrian leaders to demand that Egypt honor their mutual defence pact, accelerating the slide toward war."
         }
@@ -8906,12 +8906,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg",
-        "caption": "Tri-Border Strategic Panorama Looking North Across the Yarmouk Valley Toward the Sea of Galilee and the Golan Heights",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg",
+        "alt": "Wide panoramic view from the Golan Heights escarpment at Gamla looking west across rugged basalt ridges toward the Sea of Galilee (Lake Kinneret)",
+        "caption": "Looking West from the Golan Heights Escarpment Across the Sea of Galilee (Lake Kinneret), Contested Flashpoint of the 1964–67 Water Dispute and Border Clashes (CC BY-SA 4.0, Davidbena)",
+        "position": "center 64%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l4_sea_of_galilee_golan_panorama.jpg"
+      "banner_image": "/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg",
+      "hero_image": "/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg"
     },
     {
       "id": "lesson_5",
@@ -9253,7 +9254,7 @@
           "isReversed": false,
           "image": "/units/cme_new/assets/nasser_1958.jpg",
           "image_alt": "Egyptian President Gamal Abdel Nasser addressing Egyptian air force personnel in Sinai in May 1967",
-          "caption": "President Gamal Abdel Nasser addressing mobilised Egyptian aircrews and soldiers at Bir Gifgafa Air Base in the Sinai Peninsula on 22 May 1967—days before King Hussein flew to Cairo to place Jordan’s armed forces under joint Egyptian command. (Egyptian Official Press Archive / Wikimedia Commons, Public Domain)",
+          "caption": "President Gamal Abdel Nasser addressing mobilised Egyptian aircrews and soldiers at Bir Gifgafa Air Base in the Sinai Peninsula on 22 May 1967—days before King Hussein flew to Cairo to place Jordan’s armed forces under joint Egyptian command.",
           "content": "<span class=\"para-ref\">[2.1]</span> On **30 May 1967**, Jordan’s **King Hussein** flew to Cairo and signed a mutual **Joint Defence Pact** with his former rival Nasser, placing Jordan’s armed forces under Egyptian command as Iraqi troops entered Jordan. Meanwhile, US President **Lyndon B. Johnson** warned Israel not to fire first, yet failed to assemble an international naval convoy to reopen the Straits of Tiran.\n\n<span class=\"para-ref\">[2.2]</span> Encircled by hostile armies on three fronts and convinced American diplomacy could not lift the naval blockade, Israeli civilians dug trenches in public city parks amid deep fear of destruction. On 1 June, Prime Minister Levi Eshkol formed a national unity cabinet, appointing war hero **Moshe Dayan** Minister of Defence alongside Chief of Staff Yitzhak Rabin to prepare a pre-emptive strike."
         },
         {
@@ -9393,7 +9394,7 @@
           ],
           "image": "/images/cme_plate_syrian_bunkers_golan_1967.jpg",
           "image_alt": "Captured Syrian reinforced concrete bunker and anti-tank obstacles atop the Golan Heights after the June 1967 Six-Day War",
-          "caption": "Captured Syrian steel anti-tank obstacles and reinforced concrete fortifications atop the Golan Heights, stormed by Israeli forces on 9–10 June 1967 on the final front of the Six-Day War. (Wikimedia Commons, CC BY-SA 3.0)",
+          "caption": "Captured Syrian steel anti-tank obstacles and reinforced concrete fortifications atop the Golan Heights, stormed by Israeli forces on 9–10 June 1967 on the final front of the Six-Day War.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> With Egypt and Jordan defeated, Defence Minister Moshe Dayan ordered a final northern offensive on **9 June 1967** against the fortified Syrian **Golan Heights**, from which Syrian artillery had shelled northern Israeli villages for years. Backed by relentless air strikes, Israeli infantry and armoured bulldozers fought uphill through concrete bunkers to capture Quneitra before a UN ceasefire took effect on **10 June 1967**.\n\n<span class=\"para-ref\">[5.2]</span> In just six days, Israel shattered three Arab armies and tripled the territory under its control—occupying the Sinai Peninsula, Gaza Strip, West Bank, East Jerusalem, and Golan Heights. While giving Israel deep strategic buffers, victory placed over one million Palestinians under military occupation and humiliated Arab regimes, transforming the Middle East conflict."
         }
@@ -10573,12 +10574,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg",
-        "caption": "Israeli Armour of General Israel Tal’s Division Advancing Across Sinai Sand Dunes Near Rafah in the Six-Day War",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt2/cme_l5_banner_sinai_mountains_aqaba.jpg",
+        "alt": "Wide desert mountain canyon in the southern Sinai Peninsula opening onto the blue waters of the Gulf of Aqaba and distant Arabian coastline",
+        "caption": "Rugged Desert Mountain Pass in the Southern Sinai Peninsula Overlooking the Strategic Waters of the Gulf of Aqaba (CC BY 4.0, Vyacheslav Argenberg)",
+        "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg"
+      "banner_image": "/images/cme_new/kt2/cme_l5_banner_sinai_mountains_aqaba.jpg",
+      "hero_image": "/images/cme_new/kt2/cme_l5_banner_sinai_mountains_aqaba.jpg"
     },
     {
       "id": "lesson_6",
@@ -10845,11 +10847,174 @@
               }
             }
           ],
-          "image": "/images/cme_khartoum_summit_1967.jpg",
-          "image_alt": "President Nasser, King Faisal of Saudi Arabia and other Arab leaders seated together at the Khartoum summit.",
-          "caption": "Egyptian President Gamal Abdel Nasser (second from left) with King Faisal of Saudi Arabia (left) and other Arab leaders at the Khartoum Summit (29 August–1 September 1967), which issued the \"Three Noes\": no peace, no recognition and no negotiations with Israel.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[2.1]</span> Stunned by their catastrophic territorial losses, eight Arab heads of state gathered in Sudan for the **Khartoum** Arab League Summit in August 1967. While moderates like Jordan's King Hussein sought diplomatic avenues to recover lost territory, hardline regimes in Syria and Algeria insisted on total military defiance and an economic oil embargo against Israel’s Western allies.\n\n<span class=\"para-ref\">[2.2]</span> On **1 September 1967**, the summit issued the famous **Khartoum Resolution**, adopting the uncompromising **Three Noes**: \"No peace with Israel, no recognition of Israel, no negotiations with Israel.\" This unyielding stance hardened Israeli public opinion, convincing political leaders that Arab states remained committed to Israel’s destruction and ending immediate hopes of trading captured land for permanent peace."
+          "content": "<span class=\"para-ref\">[2.1]</span> Stunned by their catastrophic territorial losses, eight Arab heads of state gathered in Sudan for the **Khartoum** Arab League Summit in August 1967. While moderates like Jordan's King Hussein sought diplomatic avenues to recover lost territory, hardline regimes in Syria and Algeria insisted on total military defiance and an economic oil embargo against Israel’s Western allies.\n\n<span class=\"para-ref\">[2.2]</span> On **1 September 1967**, the summit issued the famous **Khartoum Resolution**, adopting the uncompromising **Three Noes**: \"No peace with Israel, no recognition of Israel, no negotiations with Israel.\" This unyielding stance hardened Israeli public opinion, convincing political leaders that Arab states remained committed to Israel’s destruction and ending immediate hopes of trading captured land for permanent peace.",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "INTERACTIVE DIPLOMATIC STALEMATE",
+            "category": "INTERACTIVE DIPLOMATIC STALEMATE",
+            "title": "Aftermath of June 1967: Why Did 'Land for Peace' Stall?",
+            "default_index": 1,
+            "caption": "Slide or click across the three positions to compare the August 1967 Khartoum Summit, the deliberate ambiguity of UN Resolution 242, and Israel’s strategic buffers and early settlements between 1967 and 1970.",
+            "stops": [
+              {
+                "short_label": "1. Khartoum 'Three Noes'",
+                "label": "1. Khartoum 'Three Noes' (Aug 1967)",
+                "badge": "Arab League Hard Line",
+                "color": "#dc2626",
+                "bg_color": "rgba(220,38,38,0.2)",
+                "summary": "Meeting in Khartoum (29 Aug–1 Sept 1967), defeated Egypt and Jordan accepted Saudi, Kuwaiti, and Libyan oil subsidies to rebuild while binding the Arab League to Paragraph 3: \"no peace with Israel, no recognition of Israel, no negotiations with it.\"",
+                "traits": [
+                  {
+                    "category": "Core Formula",
+                    "glyph": "leader",
+                    "value": "No Peace, Recognition or Talks"
+                  },
+                  {
+                    "category": "Territorial Demand",
+                    "glyph": "law",
+                    "value": "Unconditional 1967 Withdrawal"
+                  },
+                  {
+                    "category": "Economic Lever",
+                    "glyph": "people",
+                    "value": "Gulf Oil Aid to Cairo & Amman"
+                  },
+                  {
+                    "category": "Impact on Trust",
+                    "glyph": "language",
+                    "value": "Hardened Israeli Annexationists"
+                  }
+                ],
+                "metrics": [
+                  {
+                    "icon": "leader",
+                    "label": "Core Formula",
+                    "value": "No Peace, Recognition or Talks"
+                  },
+                  {
+                    "icon": "law",
+                    "label": "Territorial Demand",
+                    "value": "Unconditional 1967 Withdrawal"
+                  },
+                  {
+                    "icon": "people",
+                    "label": "Economic Lever",
+                    "value": "Gulf Oil Aid to Cairo & Amman"
+                  },
+                  {
+                    "icon": "language",
+                    "label": "Impact on Trust",
+                    "value": "Hardened Israeli Annexationists"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. UN Res. 242 Ambiguity",
+                "label": "2. UN Resolution 242 Ambiguity (Nov 1967)",
+                "badge": "Constructive Ambiguity",
+                "color": "#0284c7",
+                "bg_color": "rgba(2,132,199,0.22)",
+                "summary": "Adopted unanimously on 22 November 1967, British-drafted Resolution 242 traded Israeli withdrawal \"from territories occupied\" (omitting \"the\" in English) for Arab recognition of \"secure and recognized boundaries\", while calling Palestinians only \"refugees\".",
+                "traits": [
+                  {
+                    "category": "Core Formula",
+                    "glyph": "law",
+                    "value": "\"Land for Peace\" Exchange"
+                  },
+                  {
+                    "category": "Territorial Demand",
+                    "glyph": "language",
+                    "value": "\"From Territories\" vs \"All Lands\""
+                  },
+                  {
+                    "category": "Palestinian Status",
+                    "glyph": "people",
+                    "value": "\"Refugee Problem\" (Rejected by PLO)"
+                  },
+                  {
+                    "category": "Impact on Trust",
+                    "glyph": "leader",
+                    "value": "Rival Readings Froze Jarring Talks"
+                  }
+                ],
+                "metrics": [
+                  {
+                    "icon": "law",
+                    "label": "Core Formula",
+                    "value": "\"Land for Peace\" Exchange"
+                  },
+                  {
+                    "icon": "language",
+                    "label": "Territorial Demand",
+                    "value": "\"From Territories\" vs \"All Lands\""
+                  },
+                  {
+                    "icon": "people",
+                    "label": "Palestinian Status",
+                    "value": "\"Refugee Problem\" (Rejected by PLO)"
+                  },
+                  {
+                    "icon": "leader",
+                    "label": "Impact on Trust",
+                    "value": "Rival Readings Froze Jarring Talks"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Buffers & Settlements",
+                "label": "3. Israeli Buffers & Settlements (1967–70)",
+                "badge": "Facts on the Ground",
+                "color": "#d97706",
+                "bg_color": "rgba(217,119,6,0.2)",
+                "summary": "Tripling the area under its control, Israel unified East Jerusalem (June 1967), fortified the Suez Bar-Lev Line, kept Jordan Valley security zones under the Allon Plan, and approved early West Bank and Golan settlements starting at Kfar Etzion (Sept 1967).",
+                "traits": [
+                  {
+                    "category": "Core Formula",
+                    "glyph": "leader",
+                    "value": "Strategic Depth & Direct Talks"
+                  },
+                  {
+                    "category": "Territorial Demand",
+                    "glyph": "law",
+                    "value": "Unified Jerusalem & Allon Buffers"
+                  },
+                  {
+                    "category": "Military Shield",
+                    "glyph": "church",
+                    "value": "Suez Bar-Lev Line & Golan Ridge"
+                  },
+                  {
+                    "category": "Impact on Trust",
+                    "glyph": "people",
+                    "value": "1m+ Palestinians Under Occupation"
+                  }
+                ],
+                "metrics": [
+                  {
+                    "icon": "leader",
+                    "label": "Core Formula",
+                    "value": "Strategic Depth & Direct Talks"
+                  },
+                  {
+                    "icon": "law",
+                    "label": "Territorial Demand",
+                    "value": "Unified Jerusalem & Allon Buffers"
+                  },
+                  {
+                    "icon": "church",
+                    "label": "Military Shield",
+                    "value": "Suez Bar-Lev Line & Golan Ridge"
+                  },
+                  {
+                    "icon": "people",
+                    "label": "Impact on Trust",
+                    "value": "1m+ Palestinians Under Occupation"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "UN Resolution 242: \"Land for Peace\"",
@@ -10915,7 +11080,7 @@
           ],
           "image": "/images/cme_plate_abba_eban_diplomacy_1967.jpg",
           "image_alt": "Israeli Foreign Minister Abba Eban seated behind the Israel nameplate at the United Nations Security Council in 1967",
-          "caption": "Israeli Foreign Minister Abba Eban seated behind the \"ISRAEL\" delegation placard at the United Nations Security Council in 1967 during the intense diplomatic debates that produced UN Resolution 242 and its contested \"withdrawal from territories occupied\" wording. (Nationaal Archief Netherlands, CC0 Public Domain)",
+          "caption": "Israeli Foreign Minister Abba Eban seated behind the \"ISRAEL\" delegation placard at the United Nations Security Council in 1967 during the intense diplomatic debates that produced UN Resolution 242 and its contested \"withdrawal from territories occupied\" wording.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> On **22 November 1967**, the United Nations Security Council unanimously adopted **Resolution 242**, drafted by British Ambassador Lord Caradon. The resolution established the cornerstone principle of modern Middle Eastern diplomacy: \"**Land for Peace**.\" It linked Israeli military withdrawal from captured lands to the right of every regional state to live in peace within secure and recognized boundaries.\n\n<span class=\"para-ref\">[3.2]</span> However, the resolution contained deliberate wording ambiguities: the English text called for withdrawal from \"territories occupied\" rather than all territories, allowing Israel to argue for defensible border adjustments. Furthermore, the resolution referred to Palestinian Arabs merely as a \"refugee problem,\" ignoring their national rights to self-determination and prompting the PLO to reject the diplomatic framework completely."
         },
@@ -11009,7 +11174,7 @@
           ],
           "image": "/images/cme_plate_kfar_etzion_settlement_1967.jpg",
           "image_alt": "Hebrew entrance sign at Kfar Etzion in the occupied West Bank, re-established in September 1967",
-          "caption": "The entrance gate to Kfar Etzion between Bethlehem and Hebron—re-established in September 1967 as the very first post-Six-Day War Israeli settlement in the occupied West Bank, foreshadowing wider religious-nationalist settlement expansion beyond the Allon Plan. (Dan Hadani Archive, National Library of Israel / CC BY 4.0)",
+          "caption": "The entrance gate to Kfar Etzion between Bethlehem and Hebron—re-established in September 1967 as the very first post-Six-Day War Israeli settlement in the occupied West Bank, foreshadowing wider religious-nationalist settlement expansion beyond the Allon Plan.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, Deputy Prime Minister **Yigal Allon** formulated the **Allon Plan**, proposing agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian administrative control. The ruling Labour Party initially authorized settlements strictly on perimeter security grounds to protect the narrow coastal heartland against external ground invasion.\n\n<span class=\"para-ref\">[5.2]</span> However, religious-nationalist movements like Gush Emunim soon began establishing ideological **Israeli settlements** deep in the biblical heartland of the **West Bank** (Judea and Samaria). When Menachem Begin's Likud party took power in 1977, state subsidies expanded settlements dramatically, embedding hundreds of thousands of Jewish residents into occupied territories and creating severe physical obstacles to any viable two-state solution."
         }
@@ -12088,12 +12253,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg",
-        "caption": "IDF Chief of Staff Yitzhak Rabin Delivering His Post-War Address at Mount Scopus Amphitheatre, East Jerusalem",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg",
+        "alt": "Golden morning panorama across East Jerusalem showing the crenellated Old City walls, the Temple Mount (Haram al-Sharif), the Dome of the Rock, and the Judean Hills",
+        "caption": "Panoramic View of East Jerusalem’s Old City Walls, the Temple Mount (Haram al-Sharif), and the Dome of the Rock from the Mount of Olives (CC BY-SA 4.0, Godot13)",
+        "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l6_rabin_mount_scopus_june_1967.jpg"
+      "banner_image": "/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg",
+      "hero_image": "/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg"
     },
     {
       "id": "lesson_7",
@@ -12337,9 +12503,9 @@
             }
           ],
           "isReversed": false,
-          "image": "/images/cme_plate_amman_camp_black_september_1970.jpg",
-          "image_alt": "A Palestinian girl carrying a toddler through the rubble of Amman New refugee camp after the Black September fighting of September 1970",
-          "caption": "A young Palestinian girl carrying a toddler picks her way through the shattered ruins of Amman New refugee camp in autumn 1970, after the PFLP’s Dawson’s Field hijackings triggered King Hussein’s full-scale \"Black September\" military offensive against fedayeen bases in Jordan. (UNRWA Photo Archive / Wikimedia Commons, CC BY-SA 3.0 IGO)",
+          "image": "/images/cme_new/kt2/cme_map_l7_karameh_black_september_1968_72.svg",
+          "image_alt": "Edexcel GCSE geopolitical map of the Palestinian armed struggle (1968–72) plotting the Battle of Karameh in the Jordan Valley (21 March 1968), the PFLP triple airliner hijacking at Dawson's Field near Zarqa (6–12 September 1970), Black September fighting in Amman, Jordanian forces repelling Syrian tanks near Irbid and Ramtha, and the PLO’s expulsion to Beirut and Southern Lebanon ('Fatahland') in 1970–71",
+          "caption": "Reference Map: Palestinian Armed Struggle & Jordanian Civil War (1968–72) — tracing the Battle of Karameh (March 1968), the PFLP’s Dawson’s Field hijackings, Black September in Amman, the repelled Syrian tank incursion at Irbid/Ramtha, and PLO relocation to Southern Lebanon (\"Fatahland\").",
           "content": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international aircraft hijackings to publicize the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, PFLP operatives coordinated the simultaneous hijacking of four Western passenger airliners, forcing three aircraft to land at **Dawson’s Field**, a remote desert landing strip in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and demonstrating that armed Palestinian groups operated entirely beyond Jordanian government control."
         },
         {
@@ -12384,8 +12550,8 @@
             }
           ],
           "image": "/images/cme_king_hussein_black_september_1970.png",
-          "image_alt": "King Hussein of Jordan in military uniform conferring with senior army officers in September 1970.",
-          "caption": "King Hussein Meets Military Commanders During Black September (17 September 1970): King Hussein of Jordan conferring with senior army officers as Jordanian armoured divisions entered Amman to reassert royal authority against armed PLO fedayeen.",
+          "image_alt": "Field Marshal Habis al-Majali (left, wearing beret), King Hussein of Jordan (centre, in military uniform), and senior Jordanian statesman Wasfi al-Tal (right) conferring on 17 September 1970 during Black September",
+          "caption": "King Hussein Meets Key Advisers on the Outbreak of Black September (17 September 1970): Field Marshal Habis al-Majali (left, Commander-in-Chief and newly appointed Military Governor of Jordan), King Hussein (centre), and veteran royal statesman Wasfi al-Tal (right—soon reappointed Prime Minister and assassinated by Black September in Cairo in November 1971) conferring as Jordanian armoured units moved into Amman.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> By mid-1970, armed Palestinian militias operated as an autonomous **state-within-a-state** across Jordan, establishing armed checkpoints, collecting illegal taxes, and openly challenging royal authority in the capital of Amman. Outraged by the Dawson's Field spectacle and fearing for his throne, Jordan's **King Hussein** ordered his loyal Bedouin army to crush and disarm the Palestinian guerrilla organizations on **16 September 1970**.\n\n<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armored intervention was decisively repulsed, and the **PLO** was completely driven out of Jordan by mid-1971, relocating its armed command structure, political leadership, and thousands of fighters to southern Lebanon and Beirut."
         },
@@ -12499,7 +12665,7 @@
           ],
           "image": "/images/cme_plate_munich_memorial_service_1972.jpg",
           "image_alt": "Mourners and Israeli officials gathered at the state memorial service for the eleven Israeli athletes killed at the 1972 Munich Olympics",
-          "caption": "Grieving mourners and officials at the September 1972 memorial service for the eleven Israeli Olympic team members murdered by Black September in Munich—public shock that led Prime Minister Golda Meir to authorise air strikes in Lebanon and Mossad’s covert Operation Wrath of God. (Israel Government Press Office / Wikimedia Commons, CC BY-SA 3.0)",
+          "caption": "Grieving mourners and officials at the September 1972 memorial service for the eleven Israeli Olympic team members murdered by Black September in Munich—public shock that led Prime Minister Golda Meir to authorise air strikes in Lebanon and Mossad’s covert Operation Wrath of God.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> Outraged by the Munich massacre, Israeli Prime Minister **Golda Meir** ordered air strikes against PLO camps in Lebanon and Syria and authorised Mossad’s covert **Operation Wrath of God** (**Mivtza Za'am Ha'El**). Israeli assassination squads tracked and killed Black September planners across Europe and Beirut, though shooting an innocent waiter in Lillehammer, Norway in 1973 drew international criticism.\n\n<span class=\"para-ref\">[5.2]</span> Globally, Munich and international terrorism had a sharp dual effect on attitudes toward the Palestine issue. Western governments and public opinion fiercely condemned the killings and refused diplomatic contact with the PLO, yet worldwide television coverage forced world leaders to recognise that Palestinian statelessness could no longer be ignored as merely a refugee problem."
         }
@@ -13595,12 +13761,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg",
-        "caption": "Athletes and Concrete Residential Terraces Inside the Munich Olympic Village During the 1972 Summer Games",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt2/cme_l7_banner_munich_olympiapark_canopy.jpg",
+        "alt": "Wide architectural panorama of the sweeping translucent tensile roof canopy of the 1972 Munich Olympiastadion and Olympiapark with the Olympic Village high-rises on the horizon",
+        "caption": "Sweeping Tensile Roof Canopy of the 1972 Munich Olympiastadion and Olympiapark, Venue of the XX Summer Olympic Games (CC BY-SA 3.0, Lukáš Hron)",
+        "position": "center 28%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg"
+      "banner_image": "/images/cme_new/kt2/cme_l7_banner_munich_olympiapark_canopy.jpg",
+      "hero_image": "/images/cme_new/kt2/cme_l7_banner_munich_olympiapark_canopy.jpg"
     },
     {
       "id": "lesson_8",
@@ -13983,7 +14150,7 @@
           ],
           "image": "/units/cme_new/assets/sadat_operations_center_1973.jpg",
           "image_alt": "President Anwar Sadat and War Minister Ahmad Ismail Ali standing over tactical maps in the Egyptian Center 10 Operations Room on 6 October 1973",
-          "caption": "Egyptian President Anwar Sadat (centre-left) alongside War Minister General Ahmad Ismail Ali and Chief of Staff Saad el-Shazly inside the underground \"Center 10\" Operations Room on 6 October 1973 as Egyptian forces launched the surprise crossing of the Suez Canal on Yom Kippur. (Egyptian Armed Forces Official Archive / Wikimedia Commons, Public Domain)",
+          "caption": "Egyptian President Anwar Sadat (centre-left) alongside War Minister General Ahmad Ismail Ali and Chief of Staff Saad el-Shazly inside the underground \"Center 10\" Operations Room on 6 October 1973 as Egyptian forces launched the surprise crossing of the Suez Canal on Yom Kippur.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> At 14:00 on **6 October 1973**, Egypt and Syria launched a massive coordinated surprise offensive against Israeli positions. The attack fell on **Yom Kippur**, the holiest solemn fast in Judaism, and during the Muslim sacred month of Ramadan. With Israel largely demobilized for the religious holiday, Israeli military intelligence misread large-scale Arab troop buildups as routine annual training exercises.\n\n<span class=\"para-ref\">[3.2]</span> In a dramatic surprise assault, Egyptian troops crossed the **Suez Canal** under an intense 2,000-gun artillery barrage. Combat engineers used high-pressure water monitors to wash away the sand ramparts of the Bar-Lev Line within hours. Simultaneously, hundreds of Syrian tanks broke through Israeli defences on the Golan Heights, creating an immediate existential crisis and threatening the Israeli heartland."
         },
@@ -14028,9 +14195,9 @@
               }
             }
           ],
-          "image": "/images/golda_meir.jpg",
-          "image_alt": "Israeli Prime Minister Golda Meir addressing the nation during the Yom Kippur War in October 1973",
-          "caption": "Prime Minister Golda Meir During the Wartime Crisis (October 1973): Under intense pressure following the two-front surprise attack, Meir coordinated emergency US military resupply with President Nixon before resigning following the Agranat Commission.",
+          "image": "/images/cme_new/kt2/cme_l8_b3_usaf_mac_c5a_galaxy.jpg",
+          "image_alt": "United States Air Force Military Airlift Command Lockheed C-5A Galaxy heavy strategic transport aircraft in flight",
+          "caption": "A US Air Force Military Airlift Command Lockheed C-5A Galaxy strategic transport—the heavy airlifter type deployed during President Nixon’s Operation Nickel Grass in October 1973 to rush tanks, artillery, and ammunition to Israel.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[4.1]</span> In the opening days of fighting, Israel suffered heavy losses of tanks and aircraft to Soviet-supplied anti-tank and anti-aircraft missiles. Facing acute ammunition shortages, US President Richard Nixon ordered **Operation Nickel Grass** on **14 October**, an emergency military airlift flying 22,000 tons of American tanks, shells, and equipment into Israel to counter Soviet supply flights to Egypt and Syria.\n\n<span class=\"para-ref\">[4.2]</span> On **15–16 October**, General **Ariel Sharon** led an audacious counter-attack across to the west bank of the Suez Canal, encircling Egypt’s **Third Army** and advancing toward Cairo. When Soviet leaders threatened direct military intervention and Washington briefly raised a global nuclear alert, alarmed superpowers worked urgently together to impose an immediate ceasefire."
         },
@@ -14077,7 +14244,7 @@
           ],
           "image": "/images/cme_plate_kilometre_101_talks_1973.jpg",
           "image_alt": "Egyptian and Israeli military delegations negotiating inside a UN tent at Kilometre 101 on the Cairo–Suez road in November 1973",
-          "caption": "Egyptian Major General Mohamed Abdel Ghani el-Gamasy and Israeli Major General Aharon Yariv negotiating face-to-face inside a UN peacekeeping tent at Kilometre 101 on the Cairo–Suez highway following the UN Resolution 338 ceasefire. (US Central Intelligence Agency / Public Domain)",
+          "caption": "Egyptian Major General Mohamed Abdel Ghani el-Gamasy and Israeli Major General Aharon Yariv negotiating face-to-face inside a UN peacekeeping tent at Kilometre 101 on the Cairo–Suez highway following the UN Resolution 338 ceasefire.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> On **17 October 1973**, Arab oil ministers belonging to **OPEC** unleashed the powerful \"oil weapon,\" cutting crude oil production and placing a total export embargo on the United States and Western countries supporting Israel. Global oil prices quadrupled within months, causing severe fuel shortages, economic recession, and double-digit inflation across Western economies, reshaping global energy geopolitics permanently.\n\n<span class=\"para-ref\">[5.2]</span> On 22 October 1973, the UN Security Council passed **UN Resolution 338**, demanding an immediate ceasefire and the start of direct negotiations based on Resolution 242. Although Israel ultimately secured a military victory on the battlefield, the heavy casualties destroyed the myth of Israeli invulnerability and restored Arab self-respect, creating the indispensable psychological climate for future diplomatic peace talks."
         }
@@ -15179,8 +15346,9 @@
       },
       "banner": {
         "image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
-        "caption": "IDF Tanks Crossing a Mobile Roller Pontoon Bridge Across the Suez Canal During the Yom Kippur War",
-        "position": "center 30%"
+        "alt": "Israeli armoured recovery tank crossing a mobile roller pontoon bridge laid across the Suez Canal during the October 1973 Yom Kippur War counter-crossing",
+        "caption": "Armoured Vehicle Crossing a Mobile Roller Pontoon Bridge Spanning the Suez Canal During the October 1973 Yom Kippur War Counter-Offensive (IDF Spokesperson / CC BY-SA 3.0)",
+        "position": "center 54%"
       },
       "banner_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
       "hero_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg"
@@ -15824,7 +15992,7 @@
           ],
           "image": "/images/cme_begin_sadat_ismailia_1977.jpg",
           "image_alt": "Colour photograph of Menachem Begin, Moshe Dayan, Anwar Sadat and Hosni Mubarak seated at a press-conference table with microphones in front of an Israeli flag in Ismailia",
-          "caption": "Begin's return visit: Menachem Begin, Moshe Dayan, Anwar Sadat and Hosni Mubarak at a joint press conference in Ismailia, Egypt, December 1977 (Dan Hadani Collection, National Library of Israel, CC BY 4.0).",
+          "caption": "Begin's return visit: Menachem Begin, Moshe Dayan, Anwar Sadat and Hosni Mubarak at a joint press conference in Ismailia, Egypt, December 1977.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[2.1]</span> In **May 1977**, Israel’s right-wing **Likud party** won a historic election victory under former Irgun commander **Menachem Begin**. Facing severe economic hardship and January 1977 bread riots in Egypt—while fearing US-Soviet Geneva talks would stall—President **Anwar Sadat** took a bold gamble by announcing to Egypt’s parliament that he was ready to travel to Jerusalem himself.\n\n<span class=\"para-ref\">[2.2]</span> In **November 1977**, Sadat became the first Arab leader to visit Israel officially, addressing the Knesset to offer full peace and recognition in return for occupied Arab land. Begin reciprocated in December 1977 by flying to meet Sadat at **Ismailia** in Egypt, shattering thirty years of taboo even though direct talks soon deadlocked over Sinai settlements and Palestinian self-rule."
         },
@@ -15918,7 +16086,7 @@
           ],
           "image": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
           "image_alt": "CIA map of the Sinai Peninsula titled International Boundary and the Lines of the Zones, showing Zones A, B, C and D and areas for UN forces",
-          "caption": "US Central Intelligence Agency map (March 1979) of the zones created by the Egypt–Israel Peace Treaty: Israel withdrew from Sinai in phases by 1982, Egyptian forces were limited zone by zone, and international forces were stationed in the east.",
+          "caption": "Reference Map: US Central Intelligence Agency map (March 1979) of the zones created by the Egypt–Israel Peace Treaty: Israel withdrew from Sinai in phases by 1982, Egyptian forces were limited zone by zone, and international forces were stationed in the east.",
           "isReversed": true,
           "content": "<span class=\"para-ref\">[4.1]</span> On **26 March 1979**, Sadat and Begin signed the formal **Egypt-Israel Peace Treaty**—officially known as the **Treaty of Washington**—on the White House lawn (**Egypt and Israel**, hosted by the **USA**), witnessed by President Carter. Ending thirty years of war, the treaty established full diplomatic relations, embassies, and bilateral trade while removing Egypt from any future Arab military coalition against Israel.\n\n<span class=\"para-ref\">[4.2]</span> Under the treaty’s terms, Israel completed a phased withdrawal from the entire **Sinai Peninsula**, dismantling Jewish settlements including Yamit and returning Sinai oil fields to Egypt. In return, Egypt demilitarised Sinai and guaranteed free Israeli shipping through the Suez Canal and Straits of Tiran, underwritten by billions of dollars in annual US economic and military aid."
         },
@@ -15932,9 +16100,9 @@
           "act_title": "Stage 5: Arab Boycott & The Assassination of Sadat — How did Arab states boycott Egypt, and why was Sadat assassinated in 1981?",
           "theme_heading": "Arab Boycott & The Assassination of Sadat",
           "text": "<span class=\"para-ref\">[5.1]</span> The separate peace treaty triggered furious condemnation across the Arab world, which accused Sadat of betraying Palestinian national rights simply to recover Egyptian territory. The **Arab League** suspended Egypt's membership, severed formal diplomatic relations, moved its headquarters from Cairo to Tunis, and organized sweeping economic boycotts against Egyptian businesses to isolate the Cairo government completely from the Arab community.\n\n<span class=\"para-ref\">[5.2]</span> At home, domestic Islamist fundamentalists condemned Sadat as a traitor to the Islamic cause. On **6 October 1981**, while reviewing a military parade in Cairo celebrating the 1973 canal crossing, Sadat was assassinated by Egyptian Islamic Jihad soldiers. His successor took power, upholding the formal treaty with Israel while gradually repairing Egypt's severed diplomatic relations with Arab neighbors over the following decade.",
-          "image": "/images/cme_sadat_memorial_1981.jpg",
-          "image_alt": "The Unknown Soldier Memorial in Nasr City, Cairo, where Anwar Sadat was assassinated during the annual military victory parade on 6 October 1981",
-          "caption": "Assassination of Anwar Sadat (6 October 1981): Islamic Jihad militants murdered Sadat during a military parade, viewing the separate peace with Israel as treason.",
+          "image": "/images/cme_new/kt3/cme_map_l9_peace_treaty_arab_boycott_1978_82.svg",
+          "image_alt": "Edexcel GCSE geopolitical map of the 1979 Egypt–Israel Peace Treaty showing the phased return of Sinai by April 1982, annual ~$2bn US aid to Cairo, the 1978–79 Baghdad Summits suspending Egypt from the Arab League, relocation of Arab League HQ from Cairo to Tunis, boycotts by 17+ Arab states, and the 6 October 1981 assassination of Anwar Sadat in Cairo",
+          "caption": "Reference Map: The 26 March 1979 Egypt–Israel Peace Treaty returned the Sinai Peninsula to Egypt by April 1982 backed by ~$2bn/yr in US aid, while triggering Arab League suspension (relocating HQ from Cairo to Tunis), boycotts by 17+ Arab states, and Sadat’s assassination on 6 October 1981.",
           "isReversed": false,
           "sources": [
             {
@@ -17005,12 +17173,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg",
-        "caption": "Anwar Sadat, Jimmy Carter, Menachem Begin, and Moshe Dayan Visiting Gettysburg Battlefield During the Camp David Summit",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt3/cme_l9_banner_white_house_south_lawn.jpg",
+        "alt": "Wide panoramic view of the White House South Portico, fountain, and manicured South Lawn in Washington, D.C.",
+        "caption": "Panoramic View of the White House South Portico and South Lawn in Washington, D.C., Venue of the 26 March 1979 Egypt–Israel Peace Treaty Signing (CC BY-SA 3.0, Daniel Schwen)",
+        "position": "center 56%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l9_camp_david_gettysburg_1978.jpg"
+      "banner_image": "/images/cme_new/kt3/cme_l9_banner_white_house_south_lawn.jpg",
+      "hero_image": "/images/cme_new/kt3/cme_l9_banner_white_house_south_lawn.jpg"
     },
     {
       "id": "lesson_10",
@@ -17731,7 +17900,173 @@
             }
           ],
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[3.1]</span> In **December 1987**, an Israeli military transport collided with Palestinian civilian cars in Gaza, killing four workers. The funeral sparked spontaneous demonstrations that rapidly spread across the occupied territories, igniting the **First Intifada** (\"shaking off\"). Frustrated by twenty years of military occupation, economic stagnation, and lack of civil rights, local Palestinians launched a massive grassroots rebellion against Israeli rule.\n\n<span class=\"para-ref\">[3.2]</span> Directed by the underground **UNLU** (Unified National Leadership of the Uprising), the rebellion relied on civil disobedience, general strikes, tax boycotts, and commercial shutdowns. Palestinian youths armed with stones and petrol bombs confronting heavily armed Israeli soldiers became the defining global symbol of grassroots resistance against military rule, transforming the international perception of the conflict and discrediting the status quo."
+          "content": "<span class=\"para-ref\">[3.1]</span> In **December 1987**, an Israeli military transport collided with Palestinian civilian cars in Gaza, killing four workers. The funeral sparked spontaneous demonstrations that rapidly spread across the occupied territories, igniting the **First Intifada** (\"shaking off\"). Frustrated by twenty years of military occupation, economic stagnation, and lack of civil rights, local Palestinians launched a massive grassroots rebellion against Israeli rule.\n\n<span class=\"para-ref\">[3.2]</span> Directed by the underground **UNLU** (Unified National Leadership of the Uprising), the rebellion relied on civil disobedience, general strikes, tax boycotts, and commercial shutdowns. Palestinian youths armed with stones and petrol bombs confronting heavily armed Israeli soldiers became the defining global symbol of grassroots resistance against military rule, transforming the international perception of the conflict and discrediting the status quo.",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "INTERACTIVE PALESTINIAN STRATEGY SHIFT",
+            "category": "INTERACTIVE PALESTINIAN STRATEGY SHIFT",
+            "title": "The First Intifada (1987–93): Grassroots Uprising, Hamas & The 1988 Diplomatic Pivot",
+            "default_index": 0,
+            "caption": "Slide or click across the three stages to trace how the December 1987 grassroots Gaza uprising and the rise of Hamas pushed Yasser Arafat into his historic November–December 1988 diplomatic pivot.",
+            "stops": [
+              {
+                "short_label": "1. UNLU Uprising (Dec 1987)",
+                "label": "1. UNLU Grassroots Civil Uprising (Dec 1987)",
+                "badge": "Grassroots Civil Revolt",
+                "color": "#0284c7",
+                "bg_color": "rgba(2,132,199,0.2)",
+                "summary": "Sparked by a December 1987 military truck collision in Jabalia (Gaza), local Palestinians coordinated by the underground UNLU mounted mass strikes, tax and Israeli-goods boycotts, and stone-throwing protests that exposed IDF \"Iron Fist\" force on world television.",
+                "traits": [
+                  {
+                    "category": "Leadership & Base",
+                    "glyph": "people",
+                    "value": "Local UNLU Grassroots Committees"
+                  },
+                  {
+                    "category": "Core Tactics",
+                    "glyph": "law",
+                    "value": "Strikes, Tax Boycotts & Stones"
+                  },
+                  {
+                    "category": "Political Goal",
+                    "glyph": "leader",
+                    "value": "End West Bank & Gaza Occupation"
+                  },
+                  {
+                    "category": "Global Impact",
+                    "glyph": "language",
+                    "value": "TV Exposed IDF \"Iron Fist\" Force"
+                  }
+                ],
+                "metrics": [
+                  {
+                    "icon": "people",
+                    "label": "Leadership & Base",
+                    "value": "Local UNLU Grassroots Committees"
+                  },
+                  {
+                    "icon": "law",
+                    "label": "Core Tactics",
+                    "value": "Strikes, Tax Boycotts & Stones"
+                  },
+                  {
+                    "icon": "leader",
+                    "label": "Political Goal",
+                    "value": "End West Bank & Gaza Occupation"
+                  },
+                  {
+                    "icon": "language",
+                    "label": "Global Impact",
+                    "value": "TV Exposed IDF \"Iron Fist\" Force"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Rise of Hamas (1987–88)",
+                "label": "2. Rise of Hamas Islamist Rival (1987–88)",
+                "badge": "Islamist Rejectionism",
+                "color": "#dc2626",
+                "bg_color": "rgba(220,38,38,0.2)",
+                "summary": "Founded in Gaza in December 1987 by Sheikh Ahmed Yassin, Hamas issued its August 1988 Charter declaring all historic Palestine an Islamic trust, rejecting two-state diplomacy, and challenging secular PLO leadership.",
+                "traits": [
+                  {
+                    "category": "Leadership & Base",
+                    "glyph": "leader",
+                    "value": "Sheikh Ahmed Yassin (Gaza)"
+                  },
+                  {
+                    "category": "Core Tactics",
+                    "glyph": "law",
+                    "value": "Armed Jihad & Mosque Network"
+                  },
+                  {
+                    "category": "Political Goal",
+                    "glyph": "church",
+                    "value": "1988 Charter Rejects Israel"
+                  },
+                  {
+                    "category": "Global Impact",
+                    "glyph": "people",
+                    "value": "Challenged Secular PLO Authority"
+                  }
+                ],
+                "metrics": [
+                  {
+                    "icon": "leader",
+                    "label": "Leadership & Base",
+                    "value": "Sheikh Ahmed Yassin (Gaza)"
+                  },
+                  {
+                    "icon": "law",
+                    "label": "Core Tactics",
+                    "value": "Armed Jihad & Mosque Network"
+                  },
+                  {
+                    "icon": "church",
+                    "label": "Political Goal",
+                    "value": "1988 Charter Rejects Israel"
+                  },
+                  {
+                    "icon": "people",
+                    "label": "Global Impact",
+                    "value": "Challenged Secular PLO Authority"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Arafat's Geneva Pivot (1988)",
+                "label": "3. Arafat's Geneva Pivot (Nov–Dec 1988)",
+                "badge": "Two-State Diplomacy",
+                "color": "#10b981",
+                "bg_color": "rgba(16,185,129,0.22)",
+                "summary": "After Jordan dropped its West Bank claim (July 1988) and local Intifada leaders and Hamas pressured Tunis, Arafat proclaimed two-state Palestinian independence in Algiers (Nov 1988) and renounced terrorism while accepting UN Resolution 242 at Geneva (13 Dec 1988)—ending the 13-year US boycott of the PLO.",
+                "traits": [
+                  {
+                    "category": "Leadership & Base",
+                    "glyph": "leader",
+                    "value": "Yasser Arafat & PNC (Algiers)"
+                  },
+                  {
+                    "category": "Core Tactics",
+                    "glyph": "law",
+                    "value": "Renounced Terrorism (13 Dec 1988)"
+                  },
+                  {
+                    "category": "Political Goal",
+                    "glyph": "people",
+                    "value": "Accepted UN Res. 242 Two-State"
+                  },
+                  {
+                    "category": "Global Impact",
+                    "glyph": "language",
+                    "value": "USA Ended 13-Year PLO Boycott"
+                  }
+                ],
+                "metrics": [
+                  {
+                    "icon": "leader",
+                    "label": "Leadership & Base",
+                    "value": "Yasser Arafat & PNC (Algiers)"
+                  },
+                  {
+                    "icon": "law",
+                    "label": "Core Tactics",
+                    "value": "Renounced Terrorism (13 Dec 1988)"
+                  },
+                  {
+                    "icon": "people",
+                    "label": "Political Goal",
+                    "value": "Accepted UN Res. 242 Two-State"
+                  },
+                  {
+                    "icon": "language",
+                    "label": "Global Impact",
+                    "value": "USA Ended 13-Year PLO Boycott"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "The Israeli Response & The Rise of Hamas",
@@ -17775,9 +18110,9 @@
             }
           ],
           "isReversed": true,
-          "image": "/images/cme_plate_jabalia_intifada_roadblock_1988.jpg",
-          "image_alt": "Makeshift roadblock and checkpoint in Jabalia refugee camp in the Gaza Strip during the First Intifada in 1988",
-          "caption": "A roadblock outside Jabalia refugee camp in the northern Gaza Strip in 1988—the flashpoint where the First Intifada erupted in December 1987 and where Sheikh Ahmed Yassin’s newly founded Hamas movement began challenging the secular PLO. (Wikimedia Commons, CC BY-SA 3.0)",
+          "image": "/images/cme_new/kt3/cme_l10_b3_gaza_first_intifada_dec_1987.jpg",
+          "image_alt": "Helmeted Israeli soldiers armed with wooden batons and rifles standing behind coiled barbed wire facing a crowd of Palestinian youths waving a Palestinian flag amid smoke in the Gaza Strip on 21 December 1987",
+          "caption": "Helmeted IDF troops armed with wooden batons and rifles confront Palestinian demonstrators waving a Palestinian flag in the Gaza Strip on 21 December 1987 during the opening weeks of the First Intifada—the uprising met by Defence Minister Yitzhak Rabin’s \"Iron Fist\" policy as Sheikh Ahmed Yassin founded Hamas in Gaza. (Efi Sharir / Dan Hadani Archive, National Library of Israel, CC BY 4.0).",
           "content": "<span class=\"para-ref\">[4.1]</span> Israeli Defence Minister **Yitzhak Rabin** implemented a harsh \"Iron Fist\" policy, deploying thousands of soldiers authorized to use live ammunition, tear gas, collective curfews, mass detentions, and home demolitions. Worldwide television footage showing Israeli soldiers beating unarmed teenage protesters caused intense moral soul-searching inside Israel and severely damaged the country’s international diplomatic standing across Western capitals.\n\n<span class=\"para-ref\">[4.2]</span> The uprising also spurred radical Islamist militancy across the territories. In December 1987, **Sheikh Ahmed Yassin** founded [Key Organisation: Hamas] (the Islamic Resistance Movement) in Gaza as a militant rival to the secular PLO. Rejecting all diplomatic compromise, Hamas published an uncompromising charter declaring all of historic Palestine a sacred Islamic trust, pledging to eliminate the State of Israel through armed jihad."
         },
         {
@@ -17844,7 +18179,7 @@
           ],
           "image": "/images/cme_plate_reagan_shultz_diplomacy_1988.jpg",
           "image_alt": "US President Ronald Reagan conferring with Secretary of State George Shultz in 1988",
-          "caption": "US Secretary of State George Shultz (left) conferring with President Ronald Reagan in 1988; hours after Arafat explicitly renounced terrorism and accepted UN Resolution 242 in December 1988, Shultz announced the end of Washington’s 13-year diplomatic boycott of the PLO. (Ronald Reagan Presidential Library / NARA, Public Domain)",
+          "caption": "US Secretary of State George Shultz (left) conferring with President Ronald Reagan in 1988; hours after Arafat explicitly renounced terrorism and accepted UN Resolution 242 in December 1988, Shultz announced the end of Washington’s 13-year diplomatic boycott of the PLO.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> After Jordan’s King Hussein dropped his territorial claim to the West Bank in July 1988 and grassroots Intifada leaders and Hamas challenged PLO authority, Yasser Arafat seized the diplomatic initiative. Meeting in Algiers in **November 1988**, the Palestinian National Council proclaimed the **Declaration of Independence of the State of Palestine**, implicitly recognising Israel within a two-state framework.\n\n<span class=\"para-ref\">[5.2]</span> Addressing a special UN General Assembly session in Geneva on **13 December 1988** (**December 1988**), Arafat explicitly renounced terrorism in all forms and accepted **UN Resolution 242** and Resolution 338, confirming Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO."
         }
@@ -18884,12 +19219,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg",
-        "caption": "US Marines Manning a Barbed-Wire Perimeter Post Overlooking Helicopters at Beirut International Airport, Lebanon",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt3/cme_l10_banner_beirut_raouche_coast.jpg",
+        "alt": "Wide Mediterranean coastal panorama of the limestone cliffs at Raouche on the shoreline of West Beirut, Lebanon",
+        "caption": "Mediterranean Limestone Cliffs and Headland at Raouche Along the Coastline of West Beirut, Lebanon (CC BY-SA 4.0, Oussama Tahmaz)",
+        "position": "center 55%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l10_us_marines_beirut_1983.jpg"
+      "banner_image": "/images/cme_new/kt3/cme_l10_banner_beirut_raouche_coast.jpg",
+      "hero_image": "/images/cme_new/kt3/cme_l10_banner_beirut_raouche_coast.jpg"
     },
     {
       "id": "lesson_11",
@@ -19334,7 +19670,7 @@
           ],
           "image": "/images/cme_plate_oslo_south_lawn_ceremony_1993.jpg",
           "image_alt": "Mahmoud Abbas signing the Oslo I Declaration of Principles at the White House desk as Rabin, Clinton, and Arafat applaud on 13 September 1993",
-          "caption": "PLO negotiator Mahmoud Abbas signs the Oslo I Declaration of Principles on the White House South Lawn on 13 September 1993 as Yitzhak Rabin, US Secretary of State Warren Christopher, President Bill Clinton, and Yasser Arafat look on—establishing the interim framework for the Palestinian National Authority. (White House Photographic Office / NARA, Public Domain)",
+          "caption": "PLO negotiator Mahmoud Abbas signs the Oslo I Declaration of Principles on the White House South Lawn on 13 September 1993 as Yitzhak Rabin, US Secretary of State Warren Christopher, President Bill Clinton, and Yasser Arafat look on—establishing the interim framework for the Palestinian National Authority.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[3.1]</span> On **13 September 1993**, 3,000 guests gathered on the White House lawn to witness the signing of the **Oslo I Accord**, officially titled the **Declaration of Principles on Interim Self-Government Arrangements**. US President **Bill Clinton** nudged Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat into a historic handshake days after Israel and the PLO exchanged formal letters of mutual recognition.\n\n<span class=\"para-ref\">[3.2]</span> Under Oslo’s phased five-year interim framework, Israeli troops withdrew from Gaza and Jericho in May 1994, where the newly established **Palestinian National Authority** (PNA) assumed civil administration, taxation, and internal policing as Arafat returned triumphantly from exile. However, Oslo I deliberately postponed the hardest final-status issues—Jerusalem, Palestinian refugees, Israeli settlements, security, and permanent borders—for five years."
         },
@@ -19403,7 +19739,7 @@
           "isReversed": true,
           "image": "/images/cme_plate_israel_jordan_treaty_1994.jpg",
           "image_alt": "King Hussein of Jordan, US President Bill Clinton, and Israeli Prime Minister Yitzhak Rabin at the signing of the Israel–Jordan Peace Treaty in October 1994",
-          "caption": "Jordan’s King Hussein (left), US President Bill Clinton, and Israeli Prime Minister Yitzhak Rabin wave at the Arava border crossing on 26 October 1994 after signing the formal Israel–Jordan Peace Treaty—making Jordan the second Arab state after Egypt to normalise relations with Israel. (Sa’ar Ya’acov / Dan Hadani Archive, CC BY 4.0)",
+          "caption": "Jordan’s King Hussein (left), US President Bill Clinton, and Israeli Prime Minister Yitzhak Rabin wave at the Arava border crossing on 26 October 1994 after signing the formal Israel–Jordan Peace Treaty—making Jordan the second Arab state after Egypt to normalise relations with Israel.",
           "content": "<span class=\"para-ref\">[4.1]</span> The diplomatic momentum generated by Oslo paved the way for Jordan's **King Hussein** and Prime Minister Rabin to sign the formal Israel-Jordan Peace Treaty in **October 1994** in the Arava desert. The historic pact resolved longstanding territorial and River Jordan water disputes, establishing open borders and making Jordan only the second Arab nation to sign a peace treaty with Israel.\n\n<span class=\"para-ref\">[4.2]</span> In September 1995, Rabin and Arafat signed the comprehensive **Oslo II** interim agreement, dividing the occupied West Bank into three distinct administrative zones: Area A (full Palestinian civil and security control), Area B (Palestinian civil and joint Israeli security control), and Area C (full Israeli military and civil control, comprising 60% of the territory including settlements and strategic roads)."
         },
         {
@@ -19449,7 +19785,7 @@
           ],
           "image": "/images/cme_plate_rabin_memorial_candles_1995.jpg",
           "image_alt": "Israeli teenagers lighting memorial candles in Tel Aviv after the assassination of Prime Minister Yitzhak Rabin in November 1995",
-          "caption": "Shocked Israeli teenagers gather around hundreds of memorial candles at Kings of Israel Square (now Rabin Square) in Tel Aviv after right-wing extremist Yigal Amir assassinated Prime Minister Yitzhak Rabin on 4 November 1995, dealing a devastating blow to the Oslo peace process. (Israel Government Press Office / Wikimedia Commons, CC BY-SA 3.0)",
+          "caption": "Shocked Israeli teenagers gather around hundreds of memorial candles at Kings of Israel Square (now Rabin Square) in Tel Aviv after right-wing extremist Yigal Amir assassinated Prime Minister Yitzhak Rabin on 4 November 1995, dealing a devastating blow to the Oslo peace process.",
           "isReversed": false,
           "content": "<span class=\"para-ref\">[5.1]</span> The advancing peace process triggered fierce, deadly resistance from religious and political extremists on both sides. In February 1994, radical Jewish settler Baruch Goldstein slaughtered 29 Palestinian worshippers in Hebron. Militant factions including Hamas and Islamic Jihad retaliated by unleashing devastating suicide bus bombings in Tel Aviv and Jerusalem, shattering the Israeli public's sense of personal security and eroding support for the accords.\n\n<span class=\"para-ref\">[5.2]</span> Right-wing Israeli hardliners fiercely denounced Rabin as a traitor for ceding biblical land. On **4 November 1995**, after addressing a massive peace rally in Tel Aviv, Rabin was assassinated by **Yigal Amir**, an orthodox Jewish law student opposed to the peace process. Rabin’s murder dealt a catastrophic psychological blow to the peace process, slowing implementation and permanently deepening political divisions inside Israeli society."
         }
@@ -20441,19 +20777,20 @@
       ],
       "secondary_map": {
         "title": "Map Task: The Oslo II West Bank Administrative Matrix (1995)",
-        "instructions": "Study the fragmented territorial matrix created by the September 1995 Oslo II (Taba) Agreement. Identify the three administrative zones (Areas A, B, and C) and analyse why this archipelago of isolated Palestinian enclaves fuelled deep frustration and undermined the peace process.",
+        "instructions": "Study the fragmented territorial matrix created under the September 1995 Oslo II (Taba) Interim Agreement. Match the literal colours on the map (Green, Dark Coral/Red, Light Pink, and Blue) — noting how Oslo II began in September 1995 at ~3% Area A / ~24% Area B / ~73% Area C before late-1990s redeployments expanded Palestinian zones to 18% / 22% / 60% — and analyse why this archipelago of enclaves strained the peace process.",
         "source_a": "/images/cme_oslo_areas_map.png",
         "max_height": "470px",
         "checklist": {
           "oslo_zones": [
-            "Area A (Brown / 18%): Full Palestinian civil and internal security control (8 major cities: Ramallah, Nablus, Jenin, Bethlehem, Tulkarm, Qalqilya, Jericho, Hebron)",
-            "Area B (Striped / 22%): Palestinian civil administration with joint Israeli overriding military security control (450+ Arab rural towns and villages)",
-            "Area C (Yellow / 60%): Full Israeli civil administration and military security control (Jewish settlements, military bases, bypass roads, and Jordan Valley)"
+            "Area A (Green — ~3% in Sept 1995, expanding to 18% via late-1990s redeployments): Full Palestinian civil administration and internal police security across major Palestinian cities (Jenin, Tubas, Tulkarm, Qalqilya, Nablus, Salfit, Ramallah, Jericho, Bethlehem, and most of Hebron)",
+            "Area B (Dark Coral / Red — ~24% in Sept 1995, adjusting to 22% after redeployments): Palestinian civil administration with overriding Israeli/joint military security control across 450+ rural Palestinian towns and villages surrounding Area A",
+            "Area C (Light Pink — ~73% in Sept 1995, 60% after late-1990s redeployments): Full Israeli civil and military security control covering all Israeli settlements, military zones, bypass-road corridors, and the strategic Jordan Valley",
+            "Jerusalem (Blue): Municipal East Jerusalem zone excluded from interim Palestinian National Authority jurisdiction and deferred to permanent Final Status talks"
           ],
           "fragmentation_impact": [
-            "Trace the Israeli military bypass roads connecting Jewish settlements directly to Israel proper",
-            "Identify the fragmentation of the West Bank into over 165 separate, disconnected Palestinian cantons",
-            "Note the encirclement of East Jerusalem, cutting it off from the West Bank hinterland"
+            "Observe how continuous Light Pink Area C surrounds and separates the Green (Area A) and Dark Coral/Red (Area B) Palestinian zones across the West Bank",
+            "Identify the fragmentation of Palestinian Areas A and B into over 165 disconnected cantons (\"islands\") separated by Israeli-controlled Area C corridors and checkpoints",
+            "Note the Blue Jerusalem zone extending between Ramallah in the north and Bethlehem in the south, cutting East Jerusalem off from the West Bank hinterland"
           ]
         }
       },
@@ -20837,12 +21174,13 @@
         ]
       },
       "banner": {
-        "image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg",
-        "caption": "President Bill Clinton Addressing the South Lawn Ceremony with Yitzhak Rabin, Shimon Peres, and Yasser Arafat at the Oslo Accords Signing",
-        "position": "center 30%"
+        "image": "/images/cme_new/kt3/cme_l11_banner_oslo_city_hall.jpg",
+        "alt": "Wide architectural view of the twin red-brick towers and waterfront plaza of Oslo City Hall (Oslo Rådhus) in Oslo, Norway",
+        "caption": "Twin Towers and Waterfront Plaza of Oslo City Hall (Oslo Rådhus) in Norway, Host Capital of the Secret 1993 Oslo Channel and Venue of the 1994 Nobel Peace Prize Ceremony (CC BY-SA 4.0, Ryan Hodnett)",
+        "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l11_clinton_rabin_arafat_white_house_1993.jpg"
+      "banner_image": "/images/cme_new/kt3/cme_l11_banner_oslo_city_hall.jpg",
+      "hero_image": "/images/cme_new/kt3/cme_l11_banner_oslo_city_hall.jpg"
     }
   ],
   "exam_blocks": [
@@ -23363,5 +23701,170 @@
   "edition": "2026.1",
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "year_group": "GCSE (9–1)"
+  "year_group": "GCSE (9–1)",
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_0",
+      "lesson_label": "KT 1.0: Broken Promises (1915–39)",
+      "short_tab_title": "McMahon & Balfour",
+      "book_title": "Two Contradictory Wartime Pledges: The McMahon Letter (24 October 1915) & The Balfour Declaration (2 November 1917)",
+      "author": "Sir Henry McMahon (Cairo • 24 October 1915) & Arthur James Balfour (Foreign Office • 2 November 1917)",
+      "cover_image": "/images/cme_balfour_declaration_1917.jpg",
+      "cover_caption": "Foreign Secretary Arthur James Balfour’s signed typescript letter to Lord Walter Rothschild (2 November 1917), preserved at the British Library, London.",
+      "author_context": "Fighting the Ottoman Empire during the First World War, Britain desperately needed both an Arab military revolt to protect the Suez Canal and international Jewish support in Russia and the United States. Within twenty-five months, British officials sent two historic letters—first from High Commissioner Sir Henry McMahon in Cairo to Sharif Hussein of Mecca (October 1915), and second from Foreign Secretary Arthur Balfour to Zionist leader Lord Rothschild (November 1917)—while secretly signing the 1916 Sykes-Picot partition with France.",
+      "source_type": "primary_correspondence",
+      "source_type_label": "Official Diplomatic Letters (1915 & 1917)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim primary texts from Sir Henry McMahon’s Second Note to Sharif Hussein of Mecca (24 October 1915, UK Parliamentary Command Paper Cmd. 5957) and Foreign Secretary Arthur James Balfour’s letter to Lord Rothschild (2 November 1917, British Library Add MS 41178).",
+      "extract": "<strong>Document I — Sir Henry McMahon, British High Commissioner in Cairo, to Sharif Hussein of Mecca (24 October 1915):</strong>\n\n\"I have realized, however, from your last letter that you regard this question as one of vital and urgent importance. I have, therefore, lost no time in informing the Government of Great Britain of the contents of your letter, and it is with great pleasure that I communicate to you on their behalf the following statement, which I am confident you will receive with satisfaction.\n\nThe districts of Mersina and Alexandretta and portions of Syria lying to the West of the districts of Damascus, Hama, Homs and Aleppo cannot be said to be purely Arab, and should be excluded from the proposed limits and boundaries.\n\nWith the above modification, and without prejudice to our existing treaties with Arab chiefs, we accept those limits and boundaries; and, in regard to those portions of the territories therein in which Great Britain is free to act without detriment to the interests of her Ally, France, I am empowered in the name of the Government of Great Britain to give the following assurances and make the following reply to your letter:—\n\nSubject to the above modifications, Great Britain is prepared to recognize and support the independence of the Arabs in all the regions within the limits demanded by the Sherif of Mecca.\"\n\n<strong>Document II — Foreign Secretary Arthur James Balfour to Lord Walter Rothschild (Foreign Office, London, 2 November 1917):</strong>\n\n\"Dear Lord Rothschild,\n\nI have much pleasure in conveying to you, on behalf of His Majesty’s Government, the following declaration of sympathy with Jewish Zionist aspirations which has been submitted to, and approved by, the Cabinet:—\n\n‘His Majesty’s Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.’\n\nI should be grateful if you would bring this declaration to the knowledge of the Zionist Federation.\n\nYours sincerely, Arthur James Balfour.\"",
+      "vocabVault": [
+        {
+          "term": "Sharif of Mecca",
+          "def": "Sharif Hussein ibn Ali, Hashemite guardian of Islam’s holy cities of Mecca and Medina, whom Britain courted in 1915 to lead the Arab Revolt against Ottoman Turkish rule."
+        },
+        {
+          "term": "Zionist Federation",
+          "def": "The representative organisation of the Zionist movement in Britain campaigning for international recognition of a Jewish homeland in ancestral Palestine."
+        },
+        {
+          "term": "National Home",
+          "def": "Balfour’s deliberately ambiguous diplomatic phrase promising British support for a Jewish homeland in Palestine without stating outright whether it would become a sovereign Jewish state."
+        },
+        {
+          "term": "Existing Non-Jewish Communities",
+          "def": "Balfour’s phrase referring to Palestine’s indigenous Arab Muslim and Christian population—who constituted more than 90% of Palestine’s inhabitants in November 1917."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did McMahon’s phrase excluding land \"to the West of the districts of Damascus, Hama, Homs and Aleppo\" cause such a bitter row over Palestine?",
+          "answer": "McMahon never named Palestine directly. Geographically, Palestine lies south-west of Damascus rather than due west, so Sharif Hussein and Palestinian Arabs believed Palestine was promised Arab independence—whereas Britain later claimed it had been excluded."
+        },
+        {
+          "question": "Notice how the 67-word Balfour Declaration refers to Palestine’s 90%+ Arab majority (\"existing non-Jewish communities\")—what crucial right did it leave out?",
+          "answer": "It promised not to harm their \"civil and religious rights,\" yet completely omitted their political and national rights to self-determination and majority rule."
+        },
+        {
+          "question": "Why did Britain make two contradictory promises—plus the secret 1916 Sykes-Picot deal with France—between 1915 and 1917?",
+          "answer": "Locked in a desperate world war, Britain prioritised short-term wartime survival: winning an Arab revolt to shield the Suez Canal, keeping ally France satisfied, and courting Jewish opinion in Russia and the USA."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Does McMahon’s October 1915 letter ever mention the word \"Palestine\" explicitly?<br><br><strong>Pair:</strong> Compare McMahon’s pledge to \"recognize and support the independence of the Arabs\" with Balfour’s pledge to facilitate \"a national home for the Jewish people\"—why did both Arabs and Zionists later accuse Britain of betrayal?<br><br><strong>Share:</strong> How did writing the Balfour Declaration directly into the 1922 League of Nations Mandate make conflict in Mandatory Palestine almost impossible for Britain to resolve?",
+      "questions": [
+        "Which regions did Sir Henry McMahon exclude from Britain’s October 1915 pledge of Arab independence?",
+        "What did Arthur Balfour declare His Majesty’s Government viewed \"with favour\" on 2 November 1917?",
+        "Which rights did the Balfour Declaration promise to safeguard for \"existing non-Jewish communities in Palestine\"—and which rights did it omit?"
+      ]
+    },
+    {
+      "lesson_index": 6,
+      "lesson_id": "lesson_6",
+      "lesson_label": "KT 2.3: Conquered Territories & UN Res 242 (1967)",
+      "short_tab_title": "Khartoum & UN Res 242",
+      "book_title": "The Diplomatic Stalemate of 1967: The Khartoum Summit Resolution (1 September 1967) & UN Security Council Resolution 242 (22 November 1967)",
+      "author": "Arab League Heads of State (Khartoum • 1 Sept 1967) & UN Security Council / Lord Caradon (New York • 22 Nov 1967)",
+      "cover_image": "/images/cme_plate_abba_eban_diplomacy_1967.jpg",
+      "cover_caption": "Israeli Foreign Minister Abba Eban seated at the United Nations Security Council during the 1967 diplomatic debates that produced Resolution 242.",
+      "author_context": "Israel’s six-day victory in June 1967 left Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights under Israeli control. Meeting in Khartoum, Sudan, on 1 September 1967, eight Arab heads of state paired oil-funded reconstruction and international diplomacy with three famous red lines ('the Three Noes'). Eleven weeks later, on 22 November 1967, British Ambassador Lord Caradon secured unanimous superpower and regional passage for UN Security Council Resolution 242—only by crafting deliberate verbal ambiguity that each side interpreted differently.",
+      "source_type": "primary_treaty",
+      "source_type_label": "Summit Declaration & UN Security Council Resolution (1967)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim primary texts of Paragraph 3 of the Arab League Summit Resolution adopted at Khartoum (1 September 1967) and United Nations Security Council Resolution 242 (S/RES/242, adopted unanimously at the 1382nd meeting on 22 November 1967).",
+      "extract": "<strong>Document I — Khartoum Arab League Summit Resolution, Paragraph 3 (1 September 1967):</strong>\n\n\"3. The Arab Heads of State have agreed to unite their political efforts at the international and diplomatic level to eliminate the effects of the aggression and to ensure the withdrawal of the aggressive Israeli forces from the Arab lands which have been occupied since the aggression of June 5. This will be done within the framework of the main principles by which the Arab States abide, namely, no peace with Israel, no recognition of Israel, no negotiations with it, and insistence on the rights of the Palestinian people in their own country.\"\n\n<strong>Document II — United Nations Security Council Resolution 242 (22 November 1967):</strong>\n\n\"The Security Council,\nExpressing its continuing concern with the grave situation in the Middle East,\nEmphasizing the inadmissibility of the acquisition of territory by war and the need to work for a just and lasting peace in which every State in the area can live in security, ...\n\n1. Affirms that the fulfilment of Charter principles requires the establishment of a just and lasting peace in the Middle East which should include the application of both the following principles:\n(i) Withdrawal of Israeli armed forces from territories occupied in the recent conflict;\n(ii) Termination of all claims or states of belligerency and respect for and acknowledgement of the sovereignty, territorial integrity and political independence of every State in the area and their right to live in peace within secure and recognized boundaries free from threats or acts of force;\n\n2. Affirms further the necessity\n(a) For guaranteeing freedom of navigation through international waterways in the area;\n(b) For achieving a just settlement of the refugee problem;\n(c) For guaranteeing the territorial inviolability and political independence of every State in the area, through measures including the establishment of demilitarized zones;\"",
+      "vocabVault": [
+        {
+          "term": "The \"Three Noes\" (Khartoum, 1967)",
+          "def": "The Arab League pledge at Khartoum (1 September 1967) permitting international diplomatic action to recover lands lost in June 1967, but forbidding direct peace treaties, recognition, or negotiations with Israel."
+        },
+        {
+          "term": "Inadmissibility of Acquisition by War",
+          "def": "The foundational UN Charter principle in the preamble of Resolution 242 stating that states may not permanently annex foreign territory conquered by military force."
+        },
+        {
+          "term": "Constructive Ambiguity (\"From Territories\")",
+          "def": "Lord Caradon’s deliberate omission of the word \"the\" before \"territories occupied\" in the English text of Clause 1(i), allowing Israel to argue for partial withdrawal to defensible borders while Arab states cited the French text (\"des territoires\") to demand 100% withdrawal."
+        },
+        {
+          "term": "State of Belligerency",
+          "def": "An active legal condition of war, blockade, or hostility; Clause 1(ii) required Arab states to end belligerency and recognise Israel’s sovereignty within \"secure and recognized boundaries\"."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Look closely at the first sentence of the Khartoum Resolution alongside the famous \"Three Noes\": how was Nasser trying to balance Arab moderates and hardliners in September 1967?",
+          "answer": "The opening sentence endorsed \"political efforts at the international and diplomatic level\" (backed by Gulf oil monarchies rather than immediate renewed war), while the \"Three Noes\" satisfied Arab public anger by ruling out direct talks or recognition of Israel."
+        },
+        {
+          "question": "How did missing out the single word \"the\" in Clause 1(i) of UN Resolution 242 get everybody in the Security Council to vote Yes—yet paralyse peace talks afterward?",
+          "answer": "Saying \"withdrawal ... from territories occupied\" rather than \"from all the territories occupied\" let Israel argue it could keep strategic buffers toward \"secure boundaries\", while Egypt, Jordan, and the USSR insisted the preamble required total withdrawal from every territory seized in June 1967."
+        },
+        {
+          "question": "Why did Yasser Arafat and the PLO angrily reject UN Resolution 242 in 1967 even after Egypt and Jordan accepted it?",
+          "answer": "Clause 2(b) referred only to \"achieving a just settlement of the refugee problem\" and never mentioned Palestinians by name or recognised any right to an independent Palestinian state."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Compare Khartoum’s insistence on \"the rights of the Palestinian people in their own country\" with Clause 2(b) of UN Resolution 242 (\"a just settlement of the refugee problem\")—whose national voice disappeared at the UN?<br><br><strong>Pair:</strong> Did omitting the word \"the\" in Clause 1(i) save diplomacy in November 1967 or guarantee another war by 1973?<br><br><strong>Share:</strong> Which did more to freeze \"Land for Peace\" after 1967: Khartoum’s \"Three Noes\", Resolution 242’s ambiguity, or Israeli settlements and fortifications in the occupied territories?",
+      "questions": [
+        "What two methods did the Arab Heads of State endorse in the opening sentence of Paragraph 3 at Khartoum—and what three actions toward Israel did they explicitly forbid?",
+        "Which two reciprocal principles did Clause 1(i) and Clause 1(ii) of UN Resolution 242 link together to create the \"Land for Peace\" formula?",
+        "Why did the English wording of Clause 1(i) (\"from territories occupied\") and Clause 2(b) (\"the refugee problem\") provoke rival interpretations among Israel, Arab states, and the PLO?"
+      ]
+    },
+    {
+      "lesson_index": 11,
+      "lesson_id": "lesson_11",
+      "lesson_label": "KT 3.3: The Oslo Accords & Rabin's Assassination (1993–95)",
+      "book_title": "The Rabin–Arafat Mutual Recognition Letters (9 Sept 1993) & Rabin’s White House Address (13 Sept 1993)",
+      "author": "PLO Chairman Yasser Arafat & Israeli Prime Minister Yitzhak Rabin (9 & 13 September 1993)",
+      "cover_image": "/images/cme_oslo_handshake_1993.jpg",
+      "cover_caption": "Israeli Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat shake hands before US President Bill Clinton on the White House South Lawn, 13 September 1993.",
+      "author_context": "Following secret Norwegian-mediated talks near Oslo in early 1993, PLO Chairman Yasser Arafat and Israeli Prime Minister Yitzhak Rabin—the former IDF Chief of Staff in the 1967 Six-Day War—exchanged formal letters of mutual recognition on 9 September 1993. Four days later, on 13 September 1993, Rabin addressed 3,000 guests on the White House South Lawn at the signing of the Oslo I Declaration of Principles.",
+      "source_type": "primary_speech",
+      "source_type_label": "Mutual Recognition Letters & White House Address (Sept 1993)",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "I. Chairman Yasser Arafat to Prime Minister Yitzhak Rabin (9 September 1993):\n\"Mr. Prime Minister, The signing of the Declaration of Principles marks a new era in the history of the Middle East. In firm conviction thereof, I would like to confirm the following PLO commitments: The PLO recognizes the right of the State of Israel to exist in peace and security. The PLO accepts United Nations Security Council Resolutions 242 and 338. ... Accordingly, the PLO renounces the use of terrorism and other acts of violence and will assume responsibility over all PLO elements and personnel in order to assure their compliance, prevent violations and discipline violators.\"\n\nII. Prime Minister Yitzhak Rabin to Chairman Yasser Arafat (9 September 1993):\n\"Mr. Chairman, In response to your letter of September 9, 1993, I wish to confirm to you that, in light of the PLO commitments included in your letter, the Government of Israel has decided to recognize the PLO as the representative of the Palestinian people and commence negotiations with the PLO within the Middle East peace process.\"\n\nIII. Prime Minister Yitzhak Rabin, White House South Lawn Address (13 September 1993):\n\"We, the soldiers who have returned from battle stained with blood, we who have seen our relatives and friends killed before our eyes, we who have attended their funerals and cannot look into the eyes of their parents, we who have come from a land where parents bury their children, we who have fought against you, the Palestinians—we say to you today in a loud and a clear voice: Enough of blood and tears. Enough!\"",
+      "vocabVault": [
+        {
+          "term": "Mutual Recognition (9 September 1993)",
+          "def": "The historic pre-Oslo exchange of official letters in which the PLO recognised Israel’s right to exist in peace and security and renounced terrorism, while Israel recognised the PLO as the representative of the Palestinian people."
+        },
+        {
+          "term": "Declaration of Principles (Oslo I, 13 September 1993)",
+          "def": "The five-year interim framework establishing the Palestinian National Authority (PNA) starting in Gaza and Jericho while deferring Jerusalem, refugees, settlements, and permanent borders to Final Status talks."
+        },
+        {
+          "term": "UN Resolutions 242 & 338",
+          "def": "The 1967 and 1973 UN Security Council \"Land for Peace\" resolutions accepted by Arafat as the legal basis for peaceful two-state negotiations with Israel."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "What concrete commitments did Yasser Arafat make in his 9 September 1993 letter before Israel agreed to recognise the PLO?",
+          "answer": "Arafat formally recognised Israel’s right to exist in peace and security, accepted UN Security Council Resolutions 242 and 338, renounced terrorism and violence, and declared PLO Covenant clauses denying Israel’s existence inoperative."
+        },
+        {
+          "question": "Why did Yitzhak Rabin’s identity as a veteran Israeli soldier and 1967 IDF Chief of Staff make his \"Enough of blood and tears\" speech so persuasive to many Israelis?",
+          "answer": "Because Rabin had led Israel’s armed forces in 1967 and enforced tough security measures in the First Intifada, moderates trusted that his turn toward territorial compromise came from hard-headed military realism rather than weakness."
+        },
+        {
+          "question": "What crucial Final Status issues were left out of these September 1993 texts—and how did extremists on both sides react between 1994 and November 1995?",
+          "answer": "Oslo postponed East Jerusalem, Palestinian refugees, Israeli settlements, and final borders for five years; meanwhile, Baruch Goldstein’s 1994 Hebron massacre, Hamas suicide bus bombings, and Yigal Amir’s assassination of Rabin on 4 November 1995 derailed trust."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Compare the length and wording of Arafat’s 9 September 1993 letter with Rabin’s two-sentence reply—what did Israel recognise, and what word (\"statehood\") did Rabin avoid?<br><br><strong>Pair:</strong> Why did Rabin invoke \"soldiers who have returned from battle stained with blood\" on the White House lawn?<br><br><strong>Share:</strong> Was Oslo I a genuine historic breakthrough toward peace, or was postponing settlements, refugees, and Jerusalem for five years a fatal flaw?",
+      "questions": [
+        "Which three specific diplomatic and security pledges did Arafat confirm in his 9 September 1993 letter to Rabin?",
+        "In Rabin’s 9 September 1993 reply, what exact status did the Government of Israel grant the PLO—and did Israel recognise an independent Palestinian state?",
+        "How did Rabin use the shared grief of bereaved Israeli and Palestinian families on 13 September 1993 to justify making peace with a lifelong enemy?"
+      ],
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim official English texts of the Israel–PLO Letters of Mutual Recognition (9 September 1993, Israel Ministry of Foreign Affairs / UN Peacemaker) and Prime Minister Yitzhak Rabin’s address at the Oslo I signing ceremony on the White House South Lawn (13 September 1993)."
+    }
+  ]
 }

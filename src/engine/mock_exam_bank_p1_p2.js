@@ -300,7 +300,9 @@ export const MOCK_BANK_P1_P2 = {
         "modelAnswer": "One reason the Camp David Accords were of profound importance for Arab-Israeli relations was that they achieved the first formal peace treaty between Israel and a frontline Arab state, breaking thirty years of continuous warfare. Under the bilateral framework brokered by US President Jimmy Carter, Israel agreed to withdraw completely from the Sinai Peninsula and dismantle its settlements, while Egypt granted full diplomatic recognition and opened the Suez Canal and Straits of Tiran to Israeli shipping. This established the vital precedent of 'land for peace' and neutralised the Arab world’s largest military power, ensuring Israel no longer faced a credible two-front existential threat.<br><br>Furthermore, the Accords were decisive because they deeply fractured the Arab world and isolated Egypt from its traditional allies. Because the framework for Palestinian self-government in the West Bank and Gaza lacked binding timetables and was rejected by Israeli Prime Minister Menachem Begin as statehood, other Arab states viewed Anwar Sadat as a traitor to the Palestinian cause. At the November 1978 Baghdad Summit, Arab League members voted to expel Egypt and sever diplomatic relations, deepening regional instability and directly fuelling the Islamist opposition that led to Sadat's assassination in October 1981.",
         "pdfUrl": "",
         "mockUrl": "/units/cme_new/"
-      },
+      }
+    ],
+    "lesson_10": [
       {
         "id": "cme_mock_radar_q3b",
         "mockId": "cme_mock_radar",
@@ -316,9 +318,7 @@ export const MOCK_BANK_P1_P2 = {
         "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Yasser Arafat’s address to the United Nations General Assembly on 13 November 1974 was of paramount importance because it fundamentally shifted international perception of the Palestinian conflict from a humanitarian refugee dilemma into a legitimate national self-determination struggle.<br><br>\n        Firstly, the speech provided the PLO with unprecedented global diplomatic legitimacy. Arafat became the first representative of a non-state entity to address the General Assembly, invited following the Arab League’s Rabat Summit declaration that the PLO was the 'sole legitimate representative of the Palestinian people'. Wearing a holster and carrying an olive branch, Arafat famously concluded: <em>'I have come bearing an olive branch and a freedom fighter’s gun. Do not let the olive branch fall from my hand.'</em> This iconic imagery resonated powerfully across the Non-Aligned Movement and the Communist bloc.<br><br>\n        Secondly, the immediate consequence was <strong>UN Resolution 3236 and 3237</strong>, which reaffirmed the inalienable rights of the Palestinian people to self-determination, national independence, and sovereignty in Palestine, while granting the PLO official Permanent Observer status at the UN. This diplomatic breakthrough marginalized extreme rejectionist groups by showing that political diplomacy could achieve global standing, establishing a foundation that later allowed the PLO to negotiate bilaterally with the United States and Israel during the 1993 Oslo Peace Process.",
         "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
         "mockUrl": "/units/cme_new/cme_mock_radar.html"
-      }
-    ],
-    "lesson_10": [
+      },
       {
         "id": "lesson_12_can_q1",
         "mockId": "cme_canonical_practice",

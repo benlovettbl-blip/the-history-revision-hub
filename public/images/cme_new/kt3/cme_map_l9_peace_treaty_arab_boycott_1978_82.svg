@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" role="img" aria-labelledby="cmeL9Title cmeL9Desc">
+  <title id="cmeL9Title">The 1979 Egypt–Israel Treaty, Sinai Return and Arab League Boycott (1978–1982)</title>
+  <desc id="cmeL9Desc">Pearson Edexcel GCSE History Option P5 geopolitical map showing the 26 March 1979 Egypt–Israel Peace Treaty, phased Israeli return of the Sinai Peninsula by April 1982, annual US aid to Egypt, the November 1978 and March 1979 Baghdad Summits suspending Egypt from the Arab League, relocation of Arab League headquarters from Cairo to Tunis, diplomatic and economic boycotts by 17+ Arab states, and the 6 October 1981 assassination of Anwar Sadat in Cairo.</desc>
+
+  <style>
+    svg, svg g { opacity: 1 !important; }
+    .sans { font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif; }
+    .serif { font-family: 'Georgia', 'Times New Roman', serif; }
+    .halo { paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.4px; stroke-linejoin: round; stroke-linecap: round; }
+    .halo-water { paint-order: stroke fill; stroke: #dbeafe; stroke-width: 3.4px; stroke-linejoin: round; stroke-linecap: round; }
+    .halo-gold { paint-order: stroke fill; stroke: #fef3c7; stroke-width: 3.4px; stroke-linejoin: round; stroke-linecap: round; }
+  </style>
+
+  <defs>
+    <pattern id="sinaiReturnHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#bbf7d0"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#059669" stroke-width="1.8" stroke-opacity="0.45"/>
+    </pattern>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect x="0" y="0" width="880" height="640" fill="#f1f5f9"/>
+
+  <!-- =================================================================
+       TOP HEADER BAR (#0f172a)
+       ================================================================= -->
+  <g id="header-bar">
+    <rect x="0" y="0" width="880" height="62" fill="#0f172a"/>
+    <rect x="0" y="60" width="880" height="2.5" fill="#f59e0b"/>
+    <text x="18" y="21" class="sans" font-size="9.6" font-weight="800" letter-spacing="1.2" fill="#fbbf24">EDEXCEL GCSE HISTORY • OPTION P5: SEPARATE PEACE &amp; REGIONAL BACKLASH (1978–82)</text>
+    <text x="18" y="46" class="serif" font-size="18.8" font-weight="700" fill="#f8fafc">The 1979 Egypt–Israel Treaty, Sinai Return &amp; Arab League Boycott</text>
+    <rect x="742" y="16" width="122" height="28" rx="5" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="803" y="34" text-anchor="middle" class="sans" font-size="10.5" font-weight="800" letter-spacing="0.8" fill="#e0f2fe">1978 – 1982</text>
+  </g>
+
+  <!-- =================================================================
+       LEFT PANEL: REGIONAL GEOPOLITICAL MAP (x=16..584, y=72..552)
+       ================================================================= -->
+  <g id="regional-map-panel">
+    <rect x="18" y="74" width="568" height="480" rx="7" fill="#0f172a" fill-opacity="0.08"/>
+    <rect x="16" y="72" width="568" height="480" rx="7" fill="#ffffff" stroke="#0f172a" stroke-width="1.6"/>
+    <path d="M16,79 Q16,72 23,72 L577,72 Q584,72 584,79 L584,96 L16,96 Z" fill="#0f172a"/>
+    <text x="300" y="88" text-anchor="middle" class="sans" font-size="9.5" font-weight="800" letter-spacing="0.7" fill="#fbbf24">GEOPOLITICAL ISOLATION OF EGYPT ACROSS THE ARAB WORLD (1978–1982)</text>
+
+    <!-- Map Viewport Clip -->
+    <clipPath id="mapClip">
+      <rect x="24" y="102" width="552" height="442" rx="5"/>
+    </clipPath>
+
+    <g clip-path="url(#mapClip)">
+      <!-- Water Base (Mediterranean, Red Sea, Persian Gulf) -->
+      <rect x="24" y="102" width="552" height="442" fill="#dbeafe"/>
+
+      <!-- Neutral Northern Rim (Southern Europe & Turkey) -->
+      <path d="M24,102 L195,102 L182,126 L142,138 L108,128 L66,134 L24,124 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+      <path d="M358,102 L576,102 L576,154 L490,158 L412,160 L372,148 L358,124 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.1"/>
+      <text x="458" y="134" text-anchor="middle" class="sans" font-size="9.2" font-weight="700" letter-spacing="2" fill="#64748b">TURKEY</text>
+
+      <!-- Cyprus -->
+      <path d="M358,176 L378,172 L384,179 L364,184 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.9"/>
+
+      <!-- Neutral / Non-Arab East (Iran) -->
+      <path d="M518,156 L576,154 L576,326 L552,318 L536,282 L518,236 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.1"/>
+      <text x="553" y="192" text-anchor="middle" class="sans" font-size="8.8" font-weight="700" letter-spacing="1.4" fill="#64748b">IRAN</text>
+
+      <!-- Southern Neutral Rim (Sudan — retained diplomatic ties) -->
+      <path d="M226,438 L376,438 L398,488 L412,544 L226,544 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.1"/>
+      <text x="304" y="528" text-anchor="middle" class="sans" font-size="9.2" font-weight="700" letter-spacing="2" fill="#64748b">SUDAN</text>
+
+      <!-- ALGERIA (Boycott State) -->
+      <path d="M24,186 L66,182 L74,256 L98,312 L98,438 L24,438 Z" fill="#fecaca" stroke="#dc2626" stroke-width="1.2"/>
+      <text x="56" y="318" text-anchor="middle" class="sans halo" font-size="9.0" font-weight="800" letter-spacing="1.2" fill="#991b1b">ALGERIA</text>
+
+      <!-- TUNISIA (New Arab League HQ) -->
+      <path d="M66,182 L98,174 L106,204 L96,238 L104,264 L74,256 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.8"/>
+
+      <!-- LIBYA (Hardline Boycott / Steadfastness Front) -->
+      <path d="M104,238 L152,248 L178,232 L226,244 L226,438 L98,438 L98,312 L74,256 Z" fill="#fecaca" stroke="#dc2626" stroke-width="1.4"/>
+      <text x="164" y="344" text-anchor="middle" class="sans halo" font-size="10.2" font-weight="800" letter-spacing="2" fill="#991b1b">LIBYA</text>
+      <circle cx="118" cy="244" r="3" fill="#991b1b"/>
+      <text x="126" y="258" class="sans halo" font-size="8.4" font-weight="700" fill="#7f1d1d">Tripoli</text>
+
+      <!-- EGYPT (Treaty Signatory — Isolated from Arab World) -->
+      <path d="M226,244 L276,248 L302,238 L334,248 L340,292 L364,364 L376,438 L226,438 Z" fill="#fef3c7" stroke="#d97706" stroke-width="2.2"/>
+
+      <!-- Nile River & Delta -->
+      <path d="M306,438 Q312,382 302,340 Q296,310 304,278" fill="none" stroke="#38bdf8" stroke-width="2.4"/>
+      <path d="M304,278 L290,244 M304,278 L318,243" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+      <text x="304" y="362" text-anchor="middle" class="sans halo-gold" font-size="11.2" font-weight="800" letter-spacing="2.0" fill="#92400e">EGYPT</text>
+      <text x="304" y="376" text-anchor="middle" class="sans halo-gold" font-size="8.1" font-weight="700" fill="#b45309">(Suspended 1979–89)</text>
+
+      <!-- SINAI PENINSULA (Returned to Egypt in Phases 1979–April 1982) -->
+      <path d="M336,248 L374,252 L378,292 L362,338 L340,292 Z" fill="url(#sinaiReturnHatch)" stroke="#059669" stroke-width="2.0"/>
+      <!-- Suez Canal Line -->
+      <line x1="335" y1="248" x2="340" y2="292" stroke="#0284c7" stroke-width="2.8"/>
+
+      <!-- ISRAEL (Treaty Partner) -->
+      <path d="M374,252 L385,204 L396,204 L394,254 L382,292 L378,292 Z" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.8"/>
+
+      <!-- LEBANON (Boycott / PLO Bases) -->
+      <path d="M385,204 L391,182 L401,184 L396,204 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.3"/>
+
+      <!-- SYRIA (Steadfastness Front) -->
+      <path d="M391,182 L402,160 L466,158 L458,208 L412,222 L396,204 L401,184 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.6"/>
+      <text x="434" y="183" text-anchor="middle" class="sans halo" font-size="9.5" font-weight="800" letter-spacing="1.4" fill="#991b1b">SYRIA</text>
+      <circle cx="408" cy="204" r="3" fill="#991b1b"/>
+      <text x="415" y="207" class="sans halo" font-size="8.2" font-weight="700" fill="#7f1d1d">Damascus</text>
+
+      <!-- JORDAN (Boycott State) -->
+      <path d="M394,220 L412,222 L446,214 L448,252 L416,266 L392,292 L382,292 L394,254 Z" fill="#fecaca" stroke="#dc2626" stroke-width="1.4"/>
+      <text x="421" y="255" text-anchor="middle" class="sans halo" font-size="8.5" font-weight="800" letter-spacing="0.7" fill="#991b1b">JORDAN</text>
+
+      <!-- IRAQ (Host of 1978 & 1979 Baghdad Boycott Summits) -->
+      <path d="M466,158 L518,156 L536,256 L518,274 L478,258 L448,252 L446,214 L458,208 Z" fill="#fca5a5" stroke="#991b1b" stroke-width="1.9"/>
+      <text x="492" y="192" text-anchor="middle" class="sans halo" font-size="9.8" font-weight="800" letter-spacing="1.6" fill="#7f1d1d">IRAQ</text>
+
+      <!-- SAUDI ARABIA & GULF BOYCOTT BLOC -->
+      <path d="M392,292 L416,266 L448,252 L478,258 L518,274 L538,318 L576,348 L576,506 L446,518 L392,366 Z" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+      <text x="488" y="394" text-anchor="middle" class="sans halo" font-size="10.4" font-weight="800" letter-spacing="1.8" fill="#991b1b">SAUDI ARABIA</text>
+      <text x="488" y="409" text-anchor="middle" class="sans halo" font-size="8.4" font-weight="700" fill="#991b1b">&amp; GULF BOYCOTT STATES</text>
+      <circle cx="486" cy="354" r="3.2" fill="#991b1b"/>
+      <text x="486" y="369" text-anchor="middle" class="sans halo" font-size="8.2" font-weight="700" fill="#7f1d1d">Riyadh (Ended Aid)</text>
+
+      <!-- Sea Labels -->
+      <text x="156" y="226" text-anchor="middle" class="serif halo-water" font-size="11.0" font-style="italic" font-weight="700" fill="#0369a1">Mediterranean Sea</text>
+      <text x="394" y="424" text-anchor="middle" class="serif halo-water" font-size="10.2" font-style="italic" font-weight="700" fill="#0369a1" transform="rotate(64 394 424)">Red Sea</text>
+
+      <!-- =============================================================
+           DIPLOMATIC & BOYCOTT ARCS + CALLOUT ANNOTATIONS ON MAP
+           ============================================================= -->
+
+      <!-- 1. Arab League HQ Moved: Cairo -> Tunis (March 1979) -->
+      <path d="M297,274 Q196,176 99,182" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 3" marker-end="url(#arrowRed)"/>
+      <text x="192" y="177" text-anchor="middle" class="sans halo-water" font-size="8.4" font-weight="800" fill="#b91c1c">Arab League HQ Moved: Cairo → Tunis (1979)</text>
+
+      <!-- Tunis Pin & Callout -->
+      <circle cx="91" cy="182" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+      <rect x="30" y="108" width="168" height="44" rx="5" fill="#ffffff" stroke="#dc2626" stroke-width="1.4"/>
+      <line x1="91" y1="152" x2="91" y2="177" stroke="#dc2626" stroke-width="1.3"/>
+      <text x="38" y="123" class="sans" font-size="8.6" font-weight="800" fill="#991b1b">TUNIS · NEW ARAB LEAGUE HQ</text>
+      <text x="38" y="136" class="sans" font-size="8.1" font-weight="600" fill="#334155">Headquarters relocated from Cairo</text>
+      <text x="38" y="147" class="sans" font-size="8.1" font-weight="600" fill="#334155">after Egypt's suspension (1979–89).</text>
+
+      <!-- 2. US Annual Aid Lifeline -> Cairo ($2bn+/yr) -->
+      <path d="M284,144 Q298,205 304,268" fill="none" stroke="#2563eb" stroke-width="2.3" stroke-dasharray="4 2.5" marker-end="url(#arrowBlue)"/>
+      <rect x="208" y="108" width="144" height="36" rx="5" fill="#eff6ff" stroke="#2563eb" stroke-width="1.3"/>
+      <text x="280" y="122" text-anchor="middle" class="sans" font-size="8.5" font-weight="800" fill="#1e40af">USA AID LIFELINE TO EGYPT</text>
+      <text x="280" y="135" text-anchor="middle" class="sans" font-size="8.1" font-weight="600" fill="#1e3a8a">~$2bn/yr military &amp; economic aid</text>
+
+      <!-- 3. Bilateral Peace Arc: Cairo <-> Jerusalem -->
+      <path d="M312,273 Q344,218 383,234" fill="none" stroke="#059669" stroke-width="2.6" marker-start="url(#arrowGreen)" marker-end="url(#arrowGreen)"/>
+      <text x="342" y="218" text-anchor="middle" class="sans halo-water" font-size="8.3" font-weight="800" fill="#065f46">1979 Peace Treaty</text>
+
+      <!-- Israel & Jerusalem Pin & Label -->
+      <circle cx="389" cy="236" r="4.2" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.4"/>
+      <text x="379" y="199" text-anchor="end" class="sans halo-water" font-size="8.6" font-weight="800" fill="#1e3a8a">ISRAEL</text>
+      <text x="383" y="246" text-anchor="end" class="sans halo" font-size="8.0" font-weight="700" fill="#1d4ed8">Jerusalem</text>
+
+      <!-- 4. Baghdad Boycott Summits Pin & Callout -->
+      <circle cx="496" cy="222" r="4.6" fill="#991b1b" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="489" y="218" text-anchor="end" class="sans halo" font-size="8.5" font-weight="800" fill="#7f1d1d">Baghdad</text>
+      <line x1="496" y1="227" x2="496" y2="278" stroke="#991b1b" stroke-width="1.4"/>
+      <rect x="404" y="278" width="166" height="54" rx="5" fill="#fff1f2" stroke="#be123c" stroke-width="1.4"/>
+      <text x="412" y="292" class="sans" font-size="8.5" font-weight="800" fill="#9f1239">BAGHDAD SUMMITS (1978–79)</text>
+      <text x="412" y="305" class="sans" font-size="8.1" font-weight="600" fill="#334155">17+ Arab states severed ties with</text>
+      <text x="412" y="316" class="sans" font-size="8.1" font-weight="600" fill="#334155">Cairo &amp; imposed sweeping trade</text>
+      <text x="412" y="327" class="sans" font-size="8.1" font-weight="600" fill="#334155">and economic boycotts.</text>
+
+      <!-- 5. Sinai Return & Straits of Tiran Callout -->
+      <circle cx="362" cy="338" r="3.4" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+      <line x1="360" y1="304" x2="404" y2="452" stroke="#059669" stroke-width="1.4"/>
+      <rect x="384" y="452" width="184" height="54" rx="5" fill="#ecfdf5" stroke="#059669" stroke-width="1.4"/>
+      <text x="392" y="466" class="sans" font-size="8.5" font-weight="800" fill="#065f46">SINAI RETURNED (BY APR 1982)</text>
+      <text x="392" y="479" class="sans" font-size="8.1" font-weight="600" fill="#334155">Phased IDF withdrawal; Yamit evacuated;</text>
+      <text x="392" y="490" class="sans" font-size="8.1" font-weight="600" fill="#334155">MFO peacekeepers + free Israeli shipping</text>
+      <text x="392" y="501" class="sans" font-size="8.1" font-weight="600" fill="#334155">in Suez Canal &amp; Straits of Tiran.</text>
+
+      <!-- 6. Cairo & Sadat Assassination (6 Oct 1981) Callout -->
+      <circle cx="304" cy="278" r="5.0" fill="#b45309" stroke="#ffffff" stroke-width="1.6"/>
+      <text x="295" y="274" text-anchor="end" class="sans halo-gold" font-size="9.2" font-weight="800" fill="#78350f">Cairo</text>
+      <line x1="299" y1="282" x2="212" y2="452" stroke="#b45309" stroke-width="1.5"/>
+      <rect x="32" y="452" width="246" height="56" rx="5" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+      <text x="40" y="467" class="sans" font-size="8.6" font-weight="800" fill="#92400e">CAIRO · SADAT ASSASSINATED (6 OCT 1981)</text>
+      <text x="40" y="480" class="sans" font-size="8.1" font-weight="600" fill="#334155">Killed at annual 1973 victory parade by</text>
+      <text x="40" y="491" class="sans" font-size="8.1" font-weight="600" fill="#334155">Egyptian Islamic Jihad militants outraged</text>
+      <text x="40" y="502" class="sans" font-size="8.1" font-weight="600" fill="#334155">by Egypt's separate peace with Israel.</text>
+    </g>
+  </g>
+
+  <!-- =================================================================
+       RIGHT PANEL: 3 CAUSAL & CONSEQUENCE CARDS (x=598..864, y=72..552)
+       ================================================================= -->
+
+  <!-- CARD 1: TREATY OF WASHINGTON -->
+  <g id="card-treaty">
+    <rect x="600" y="74" width="266" height="150" rx="7" fill="#0f172a" fill-opacity="0.08"/>
+    <rect x="598" y="72" width="266" height="150" rx="7" fill="#ffffff" stroke="#059669" stroke-width="1.6"/>
+    <path d="M598,79 Q598,72 605,72 L857,72 Q864,72 864,79 L864,96 L598,96 Z" fill="#059669"/>
+    <text x="609" y="88" class="sans" font-size="9.2" font-weight="800" letter-spacing="0.5" fill="#ffffff">1. TREATY OF WASHINGTON (MAR 1979)</text>
+
+    <text x="608" y="113" class="sans" font-size="8.9" font-weight="800" fill="#065f46">• First Arab–Israeli Peace Treaty</text>
+    <text x="615" y="126" class="sans" font-size="8.5" font-weight="500" fill="#334155">Signed by Sadat &amp; Begin (witnessed by Carter);</text>
+    <text x="615" y="138" class="sans" font-size="8.5" font-weight="500" fill="#334155">established embassies, open borders &amp; trade.</text>
+
+    <text x="608" y="156" class="sans" font-size="8.9" font-weight="800" fill="#065f46">• Sinai Handback &amp; Demilitarisation</text>
+    <text x="615" y="169" class="sans" font-size="8.5" font-weight="500" fill="#334155">Israel returned all Sinai &amp; oil fields by Apr 1982</text>
+    <text x="615" y="181" class="sans" font-size="8.5" font-weight="500" fill="#334155">and dismantled settlements including Yamit.</text>
+
+    <text x="608" y="199" class="sans" font-size="8.9" font-weight="800" fill="#1e40af">• US Financial Guarantee (~$2bn/yr)</text>
+    <text x="615" y="212" class="sans" font-size="8.5" font-weight="500" fill="#334155">Annual US economic &amp; military aid to Egypt.</text>
+  </g>
+
+  <!-- CARD 2: ARAB LEAGUE BOYCOTT -->
+  <g id="card-boycott">
+    <rect x="600" y="234" width="266" height="154" rx="7" fill="#0f172a" fill-opacity="0.08"/>
+    <rect x="598" y="232" width="266" height="154" rx="7" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+    <path d="M598,239 Q598,232 605,232 L857,232 Q864,232 864,239 L864,256 L598,256 Z" fill="#b91c1c"/>
+    <text x="609" y="248" class="sans" font-size="9.2" font-weight="800" letter-spacing="0.5" fill="#ffffff">2. ARAB LEAGUE BOYCOTT (1978–89)</text>
+
+    <text x="608" y="273" class="sans" font-size="8.9" font-weight="800" fill="#991b1b">• Condemned as "Separate Peace"</text>
+    <text x="615" y="286" class="sans" font-size="8.5" font-weight="500" fill="#334155">PLO &amp; Arab states accused Sadat of trading</text>
+    <text x="615" y="298" class="sans" font-size="8.5" font-weight="500" fill="#334155">Palestinian statehood simply to regain Sinai.</text>
+
+    <text x="608" y="316" class="sans" font-size="8.9" font-weight="800" fill="#991b1b">• Suspension &amp; HQ Moved to Tunis</text>
+    <text x="615" y="329" class="sans" font-size="8.5" font-weight="500" fill="#334155">Arab League suspended Egypt (Mar 1979) and</text>
+    <text x="615" y="341" class="sans" font-size="8.5" font-weight="500" fill="#334155">relocated its headquarters Cairo → Tunis.</text>
+
+    <text x="608" y="359" class="sans" font-size="8.9" font-weight="800" fill="#991b1b">• 17+ Arab States Severed Ties</text>
+    <text x="615" y="372" class="sans" font-size="8.5" font-weight="500" fill="#334155">Cut embassies, Gulf subsidies &amp; Arab trade.</text>
+  </g>
+
+  <!-- CARD 3: SADAT'S ASSASSINATION & AFTERMATH -->
+  <g id="card-assassination">
+    <rect x="600" y="398" width="266" height="156" rx="7" fill="#0f172a" fill-opacity="0.08"/>
+    <rect x="598" y="396" width="266" height="156" rx="7" fill="#ffffff" stroke="#d97706" stroke-width="1.6"/>
+    <path d="M598,403 Q598,396 605,396 L857,396 Q864,396 864,403 L864,420 L598,420 Z" fill="#b45309"/>
+    <text x="609" y="412" class="sans" font-size="9.2" font-weight="800" letter-spacing="0.5" fill="#ffffff">3. ASSASSINATION OF SADAT (OCT 1981)</text>
+
+    <text x="608" y="437" class="sans" font-size="8.9" font-weight="800" fill="#92400e">• Domestic Islamist Fury</text>
+    <text x="615" y="450" class="sans" font-size="8.5" font-weight="500" fill="#334155">Radical Islamists denounced peace with Israel</text>
+    <text x="615" y="462" class="sans" font-size="8.5" font-weight="500" fill="#334155">and mass arrests of critics as betrayal of Islam.</text>
+
+    <text x="608" y="480" class="sans" font-size="8.9" font-weight="800" fill="#92400e">• 6 October 1981 Cairo Parade Attack</text>
+    <text x="615" y="493" class="sans" font-size="8.5" font-weight="500" fill="#334155">Egyptian Islamic Jihad soldiers shot Sadat</text>
+    <text x="615" y="505" class="sans" font-size="8.5" font-weight="500" fill="#334155">dead while reviewing the 1973 victory parade.</text>
+
+    <text x="608" y="523" class="sans" font-size="8.9" font-weight="800" fill="#334155">• Cold Peace Preserved</text>
+    <text x="615" y="536" class="sans" font-size="8.5" font-weight="500" fill="#334155">Successor Hosni Mubarak kept the treaty intact</text>
+    <text x="615" y="547" class="sans" font-size="8.5" font-weight="500" fill="#334155">and rejoined the Arab League in 1989.</text>
+  </g>
+
+  <!-- =================================================================
+       BOTTOM ROW: LEGEND + EDEXCEL KEY TAKEAWAY (y=564..626)
+       ================================================================= -->
+  <g id="legend-box">
+    <rect x="16" y="564" width="316" height="62" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.3"/>
+    <text x="26" y="579" class="sans" font-size="8.7" font-weight="800" letter-spacing="0.7" fill="#0f172a">KEY · REGIONAL ALIGNMENT (1979–82)</text>
+
+    <rect x="26" y="587" width="14" height="10" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+    <text x="45" y="596" class="sans" font-size="8.4" font-weight="600" fill="#334155">Egypt (Isolated Signatory)</text>
+
+    <rect x="176" y="587" width="14" height="10" rx="2" fill="url(#sinaiReturnHatch)" stroke="#059669" stroke-width="1.2"/>
+    <text x="195" y="596" class="sans" font-size="8.4" font-weight="600" fill="#334155">Sinai Returned (Apr 1982)</text>
+
+    <rect x="26" y="605" width="14" height="10" rx="2" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.2"/>
+    <text x="45" y="614" class="sans" font-size="8.4" font-weight="600" fill="#334155">Israel (Treaty Partner)</text>
+
+    <rect x="176" y="605" width="14" height="10" rx="2" fill="#fecaca" stroke="#dc2626" stroke-width="1.2"/>
+    <text x="195" y="614" class="sans" font-size="8.4" font-weight="600" fill="#334155">Arab Boycott States (17+)</text>
+  </g>
+
+  <g id="edexcel-takeaway">
+    <rect x="344" y="564" width="520" height="62" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4"/>
+    <rect x="344" y="564" width="5" height="62" rx="2" fill="#fbbf24"/>
+    <text x="358" y="580" class="sans" font-size="8.9" font-weight="800" letter-spacing="0.7" fill="#fbbf24">EDEXCEL EXAM TAKEAWAY · WHY 1979 RESHAPED MIDDLE EAST CONFLICT</text>
+    <text x="358" y="596" class="sans" font-size="8.7" font-weight="500" fill="#f8fafc">Removing Egypt—the strongest Arab military power—ended multi-front interstate wars against</text>
+    <text x="358" y="610" class="sans" font-size="8.7" font-weight="500" fill="#cbd5e1">Israel, yet isolated Cairo for a decade and shifted the conflict onto Lebanon and Palestinian rule.</text>
+  </g>
+
+  <rect x="0.75" y="0.75" width="878.5" height="638.5" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+</svg>
