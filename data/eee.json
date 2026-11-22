@@ -775,9 +775,74 @@
             "<span class=\"para-ref\">[5.2]</span> Danger was compounded to the north through France’s traditional **Auld Alliance** with Scotland, where veteran French garrison troops bolstered Regent Mary of Guise along the vulnerable English border. Her daughter, Catholic claimant **Mary, Queen of Scots**, was married to the French Dauphin Francis and quartered the English royal arms with her own, openly asserting her dynastic claim to Elizabeth’s throne."
           ],
           "act_title": "Stage 5: Foreign Threats: France & Scotland — Why did losing Calais and the Auld Alliance create encirclement?",
-          "image": "/images/eee/kt1/siege_of_calais_1558_picot.jpg",
-          "image_alt": "Historical oil painting by François-Édouard Picot depicting François, Duke of Guise on horseback leading French troops capturing the fortified walls of Calais in January 1558",
-          "caption": "The Siege of Calais, January 1558 (François-Édouard Picot, 1838, Château de Versailles): French forces under François, Duke of Guise—uncle to Mary, Queen of Scots—capturing England’s last continental stronghold months before Elizabeth’s accession."
+          "stage_hook_map": {
+            "id": "eee-l1-foreign-threats-1558-map",
+            "title": "Foreign Threats: France, Scotland & Catholic Europe (1558–60)",
+            "subtitle": "Calais, The Auld Alliance & Antwerp Lifeline · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/eee/kt1/eee_map_l1_england_foreign_threats_1558.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 55,
+                "y": 43.2,
+                "color": "#be123c",
+                "label": "Loss of Calais & 1559 Peace",
+                "badge": "Jan 1558 & Apr 1559",
+                "date": "Jan 1558 – Apr 1559",
+                "title": "Loss of Calais (Jan 1558) & Treaty of Cateau-Cambrésis (April 1559)",
+                "details": "During Mary I’s unpopular war alongside Spain, French forces under François, Duke of Guise captured Calais in January 1558—stripping England of its last continental foothold. Bankrupt and lacking a standing army, Elizabeth signed the Treaty of Cateau-Cambrésis (April 1559), leaving Calais in French hands for eight years while France and Spain made peace with each other.",
+                "hinge": "Why did peace between Catholic France and Catholic Spain at Cateau-Cambrésis in April 1559 heighten rather than ease Elizabeth’s fears of foreign invasion?"
+              },
+              {
+                "id": "spot-2",
+                "x": 46.4,
+                "y": 22.5,
+                "color": "#b45309",
+                "label": "Edinburgh & Leith Garrison",
+                "badge": "Auld Alliance North",
+                "date": "1558 – July 1560",
+                "title": "French Garrison at Leith & The Treaty of Edinburgh (July 1560)",
+                "details": "Under France’s ancient Auld Alliance with Scotland, French Regent Mary of Guise stationed battle-hardened French troops at Leith outside Edinburgh. Persuaded by William Cecil to aid Scottish Protestant Lords of the Congregation with money and warships, Elizabeth secured the July 1560 Treaty of Edinburgh—forcing French troops out of Scotland and ending northern encirclement.",
+                "hinge": "Why was expelling the French garrison from Leith under the 1560 Treaty of Edinburgh a decisive early triumph for William Cecil and Elizabeth?"
+              },
+              {
+                "id": "spot-3",
+                "x": 47.7,
+                "y": 25.4,
+                "color": "#991b1b",
+                "label": "Anglo-Scottish Border",
+                "badge": "Two-Front Pincer",
+                "date": "1558–1560",
+                "title": "The Anglo-Scottish Land Frontier: Vulnerable Northern Gateway",
+                "details": "Unlike England’s sea-defended southern coast, the remote upland Anglo-Scottish border stretched from the Solway Firth to Berwick-upon-Tweed across terrain dominated by semi-autonomous northern earls. With £300,000 of Crown debt, Elizabeth could not afford a costly two-front war against French armies attacking across both the Border and the Channel.",
+                "hinge": "Why did England’s £300,000 inherited debt make defending both the Anglo-Scottish border and the English Channel simultaneously impossible in 1558?"
+              },
+              {
+                "id": "spot-4",
+                "x": 56.2,
+                "y": 51.8,
+                "color": "#9f1239",
+                "label": "Paris & Mary Stuart Claim",
+                "badge": "Dynastic Threat",
+                "date": "1558–Dec 1560",
+                "title": "The French Court: Mary, Queen of Scots & Francis II Quarter English Arms",
+                "details": "Elizabeth’s Catholic cousin Mary, Queen of Scots—great-granddaughter of Henry VII—was married to the French heir Francis (King Francis II from July 1559) and backed by her powerful uncles, the Catholic Dukes of Guise. Rejecting Anne Boleyn’s marriage, they openly quartered the royal arms of England alongside Scotland and France to proclaim Mary rightful Queen of England.",
+                "hinge": "How did Mary Stuart’s marriage to Francis of France link Elizabeth’s domestic legitimacy problem directly to foreign military danger?"
+              },
+              {
+                "id": "spot-5",
+                "x": 59.5,
+                "y": 41.7,
+                "color": "#c2410c",
+                "label": "Antwerp & Philip II",
+                "badge": "Cloth Trade & 14% Debt",
+                "date": "1558–1560",
+                "title": "Antwerp & The Spanish Netherlands: Commercial Lifeline Under Philip II",
+                "details": "Devoutly Catholic King Philip II of Spain ruled the wealthiest empire in Europe, including the Spanish Netherlands right across the Narrow Sea. Because Antwerp handled the vast majority of English woollen cloth exports and supplied Elizabeth’s high-interest (14%) Crown loans, both London and Madrid cautiously avoided open conflict in 1558 lest France dominate Europe.",
+                "hinge": "Why did Catholic King Philip II initially prefer Protestant Elizabeth on the English throne in 1558 rather than seeing Mary, Queen of Scots unite England, Scotland, and France?"
+              }
+            ]
+          }
         }
       ],
       "quiz": [
@@ -1067,10 +1132,10 @@
           "id": "eee_l1_source_a",
           "letter": "A",
           "title": "Source A: Queen Elizabeth I Coronation Portrait (1559)",
-          "src": "/images/elizabeth_coronation_portrait.jpg",
-          "image": "/images/elizabeth_coronation_portrait.jpg",
-          "source": "/images/elizabeth_coronation_portrait.jpg",
-          "caption": "Queen Elizabeth I in her magnificent gold coronation robes, holding the orb and sceptre as symbols of monarchical authority and divine right, painted c. 1559.",
+          "src": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
+          "image": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
+          "source": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
+          "caption": "Queen Elizabeth I in her cloth-of-gold coronation robes holding the orb and sceptre as symbols of divinely ordained monarchical authority (c. 1559, National Portrait Gallery, London).",
           "desc": "Coronation portrait of Queen Elizabeth I in imperial robes.",
           "provenance": "National Portrait Gallery, London (NPG 5175), c. 1559.",
           "citation": "National Portrait Gallery, London, 1559.",
@@ -1083,7 +1148,8 @@
           "model_answer": "Source A is highly useful because it demonstrates how Elizabeth countered contemporary patriarchal prejudices against female rule by clothing herself in imperial cloth-of-gold and holding the orb and sceptre, visually asserting that her power derived directly from God rather than mortal gender.",
           "teacher_notes": {
             "source_context": "Official oil portrait of Elizabeth I commissioned following her January 1559 coronation at Westminster Abbey. In 16th-century patriarchal England, female rule was widely considered weak and unnatural. **Hinge Question:** How did Elizabeth use royal portraits like the Coronation Portrait to project divine authority and overcome early doubts about female rule?"
-          }
+          },
+          "image_alt": "High-resolution oil portrait of Queen Elizabeth I crowned and clad in cloth-of-gold coronation robes lined with ermine, holding the sovereign’s orb and sceptre (c. 1559, National Portrait Gallery, NPG 5175)"
         },
         {
           "id": "eee_l1_source_b",
@@ -1091,8 +1157,8 @@
           "title": "Source B: Sir William Cecil, Lord Burghley, Elizabeth’s Chief Minister",
           "src": "/images/upgraded/gcse-med-eee/eee_william_cecil_burghley_npg362.jpg",
           "image": "/images/upgraded/gcse-med-eee/eee_william_cecil_burghley_npg362.jpg",
-          "source": "/images/sir_william_cecil_lord_burghley.jpg",
-          "caption": "Sir William Cecil (1520–1598), created Lord Burghley in 1571, Elizabeth's Secretary of State and closest political confidant for four decades.",
+          "source": "/images/upgraded/gcse-med-eee/eee_william_cecil_burghley_npg362.jpg",
+          "caption": "Sir William Cecil (1520–1598), created Lord Burghley in 1571, Elizabeth’s Principal Secretary and closest political adviser for four decades.",
           "desc": "Portrait of Sir William Cecil holding the white staff of the Lord High Treasurer.",
           "provenance": "National Portrait Gallery, London (NPG 362), c. 1585.",
           "citation": "National Portrait Gallery, London.",
@@ -1105,7 +1171,8 @@
           "model_answer": "Source B suggests that Elizabeth prized cautious administrative competence and unshakeable loyalty above factional pedigree, relying on experienced statesmen like Cecil to manage royal finances and navigate dangerous diplomatic waters.",
           "teacher_notes": {
             "source_context": "Portrait of Sir William Cecil, appointed Principal Secretary in November 1558 at Hatfield. Elizabeth famously declared to him: 'This judgment I have of you, that you will not be corrupted by any manner of gift.' **Hinge Question:** What does William Cecil's lifelong appointment as Secretary of State suggest about Elizabeth's reliance on loyal administrative advisors?"
-          }
+          },
+          "image_alt": "Tudor oil portrait of Sir William Cecil, 1st Baron Burghley, holding his white staff of office and wearing the collar of the Order of the Garter (National Portrait Gallery, NPG 362)"
         },
         {
           "id": "eee_l1_source_c",
@@ -1604,10 +1671,10 @@
       "hook_text": "In the bitter freeze of November 1558, a twenty-five-year-old woman sat beneath an ancient oak tree at Hatfield, having survived five terrifying years under armed guard in the shadow of the executioner's block. Riding to London to claim the crown, Elizabeth Tudor inherited an exhausted realm of three million people, crippled by £300,000 of foreign debt and encircled by predatory Catholic superpowers. Could an illegitimate, unmarried young queen survive a kingdom on the brink of collapse?",
       "extra_videos": [],
       "banner": {
-        "image": "/images/eee/kt1/banner_l1_whitehall_palace_hollar.jpg",
-        "alt": "Panoramic riverfront etching by Wenceslaus Hollar showing the Royal Palace of Whitehall, Banqueting House, and royal barges on the River Thames in London",
-        "position": "center 58%",
-        "caption": "Wenceslaus Hollar, \"Palatium Regis prope Londinum, vulgo White-hall\" (c. 1647, Metropolitan Museum of Art, CC0): Panoramic Thames riverfront view of the Royal Palace of Whitehall, seat of Elizabeth I’s Court and Privy Council."
+        "image": "/images/eee/kt1/banner_l1_hampton_court_west_front.jpg",
+        "alt": "Wide sunlit panorama of the red-brick Tudor West Front, crenellated Great Gatehouse, and twisted brick chimneys of Hampton Court Palace",
+        "position": "center 45%",
+        "caption": "Tudor West Front and Great Gatehouse of Hampton Court Palace: Royal Thames-side palace of the Tudor dynasty where Queen Elizabeth I presided over her Royal Court and Privy Council."
       },
       "card_image": "/images/eee/kt1/banner_l1_whitehall_palace_hollar.jpg",
       "hero_image": "/images/eee/kt1/banner_l1_whitehall_palace_hollar.jpg",
@@ -2114,9 +2181,9 @@
           "theme_heading": "A Fractured Realm: Marian Burnings, Geneva Exiles and the Search for Peace (1558–1559)",
           "text": "<span class=\"para-ref\">[1.1]</span> Upon her accession in 1558, Elizabeth inherited a deeply divided nation scarred by decades of Tudor religious upheaval. Conservative **northern gentry** and earls in the north and west remained devoted to traditional Roman Catholic Mass, images, and papal authority. By contrast, London, East Anglia, and south-eastern ports strongly favoured Protestant reform through continental trade links.\n\n<span class=\"para-ref\">[1.2]</span> After Mary I burned nearly three hundred Protestants, zealous **Marian exiles** returned from Calvinist Geneva and Zurich demanding a scripture-only church purged of Catholic ritual. Conversely, twenty-six conservative **Marian bishops** sat in the House of Lords opposing Protestant laws. Elizabeth therefore had to craft a cautious religious compromise to avert civil war.",
           "level_4": "England was deeply divided in 1558 between a Catholic north and a Protestant southeast. After Mary I's burnings of nearly 300 Protestants, Elizabeth aimed for a moderate religious compromise to avoid civil conflict.",
-          "image": "/images/great_bible_frontispiece.jpg",
-          "image_alt": "Frontispiece of the Great Bible in English displaying the monarch distributing the Word of God",
-          "caption": "The English Vernacular Bible: Central to the Elizabethan religious compromise, requiring every parish church to possess an accessible English Bible.",
+          "image": "/images/eee/kt1/b0_l2_bishops_bible_elizabeth_frontispiece.jpg",
+          "image_alt": "Hand-coloured Tudor woodcut frontispiece of the Elizabethan Bishops’ Bible (1569 folio edition, British Library) depicting Queen Elizabeth I enthroned with orb and sceptre between Justice and Mercy above a Protestant minister preaching to a congregation",
+          "caption": "Hand-coloured frontispiece of the Elizabethan Bishops’ Bible (1569 folio edition, British Library): Depicting Queen Elizabeth I enthroned between Justice and Mercy above an English parish minister preaching the vernacular Scripture.",
           "isReversed": false,
           "sources": [
             {
@@ -2229,7 +2296,7 @@
               "image": "/images/monarchy_religion_power/protestant_reformed_oude_kerk.jpg",
               "label": "Protestant Church (Whitewashed & Preaching Pulpit)"
             },
-            "caption": "**Drag the curtain** to compare an ornate Counter-Reformation Catholic sanctuary (*Church of the Gesù, Rome*, CC BY-SA 4.0, Fczarnowski) with a stripped, whitewashed Protestant Reformation interior centred on a wooden preaching pulpit (*Oude Kerk, Amsterdam*, CC BY-SA 4.0, Zairon)."
+            "caption": "Drag the curtain to compare an ornate Counter-Reformation Catholic sanctuary (Church of the Gesù, Rome) with a stripped, whitewashed Protestant Reformation interior centred on a wooden preaching pulpit (Oude Kerk, Amsterdam)."
           }
         },
         {
@@ -2400,9 +2467,9 @@
               "Ceremonial Continuity and Social Stability: By retaining traditional clerical vestments, kneeling for communion, and familiar church furnishings from the 1549 Edwardian prayer book via the Ornaments Rubric, the settlement preserved familiar sensory continuity for the conservative rural majority, prioritizing outward civic obedience and regular church attendance over rigid internal doctrinal orthodoxy."
             ]
           },
-          "image": "/images/elizabeth_ermine_portrait.jpg",
-          "image_alt": "The Ermine Portrait of Queen Elizabeth I featuring the ermine collar symbolizing purity and sovereign majesty",
-          "caption": "The Ermine Portrait (1585): Symbolising purity, chastity, and monarchical supremacy, painted by Nicholas Hilliard.",
+          "image": "/images/eee/kt1/b3_l2_elizabeth_ermine_portrait_1585.jpg",
+          "image_alt": "The Ermine Portrait of Queen Elizabeth I (1585, Hatfield House), showing the Queen in a jewel-studded black gown holding an olive branch of peace with a crowned white ermine resting on her sleeve beside the sword of state",
+          "caption": "The Ermine Portrait of Queen Elizabeth I (1585, attributed to William Segar, Hatfield House): Depicting Elizabeth holding an olive branch of peace beside the sword of state and a crowned white ermine symbolising spotless royal purity.",
           "isReversed": true,
           "sources": [
             {
@@ -2776,10 +2843,10 @@
           "id": "eee_l2_source_a",
           "letter": "A",
           "title": "Source A: The 1559 Act of Supremacy (Parliamentary Roll)",
-          "src": "/images/act_of_supremacy.jpg",
-          "image": "/images/act_of_supremacy.jpg",
-          "source": "/images/act_of_supremacy.jpg",
-          "caption": "The official parchment statute of the 1559 Act of Supremacy passed by Parliament, declaring Elizabeth 'Supreme Governor' of the Church of England.",
+          "src": "/images/eee/kt1/src_a_l2_elizabeth_great_seal_parchment.jpg",
+          "image": "/images/eee/kt1/src_a_l2_elizabeth_great_seal_parchment.jpg",
+          "source": "/images/eee/kt1/src_a_l2_elizabeth_great_seal_parchment.jpg",
+          "caption": "Elizabethan vellum royal instrument bearing the Great Seal of Queen Elizabeth I (inscribed \"Elizabetha Dei Gracia Anglie Francie et Hibernie Regina Fidei Defensor\"), symbolising the royal ecclesiastical and legal supremacy enacted in 1559.",
           "desc": "Parchment roll of the Elizabethan Act of Supremacy 1559.",
           "provenance": "Parliamentary Archives, London (HL/PO/PU/1/1558/1Eliz1n1), 1559.",
           "citation": "Parliamentary Archives, London.",
@@ -2792,7 +2859,8 @@
           "model_answer": "Elizabeth adopted the title 'Supreme Governor' as a deliberate linguistic compromise, assuaging Catholics who regarded the Pope as sole head of the Church and reassuring Calvinists who objected on biblical grounds to a woman holding supreme spiritual headship.",
           "teacher_notes": {
             "source_context": "The 1559 Act of Supremacy severed England's ecclesiastical ties with Rome once again. Elizabeth deliberately chose the compromise title 'Supreme Governor' to placate Catholics who believed only the Pope or Christ could head the Church, and Protestants who doubted a woman could be 'Head'. **Hinge Question:** Why did Elizabeth adopt the title 'Supreme Governor' rather than 'Supreme Head' of the Church of England in the 1559 Act of Supremacy?"
-          }
+          },
+          "image_alt": "Original Elizabethan vellum royal instrument written in Tudor secretary hand bearing the attached brown wax Great Seal of Queen Elizabeth I designed by Nicholas Hilliard"
         },
         {
           "id": "eee_l2_source_b",
@@ -3446,10 +3514,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
-        "alt": "Contemporary Tudor pen-and-wash drawing of Queen Elizabeth I carried in a horse-drawn canopy litter led by Lord Robert Dudley during her Coronation Procession on 14 January 1559",
-        "position": "center 68%",
-        "caption": "The Coronation Procession of Elizabeth I through London, 14 January 1559 (British Library, Egerton MS 3320): Contemporary Tudor drawing depicting the newly crowned Queen carried beneath a cloth-of-gold canopy ahead of her first Parliament."
+        "image": "/images/eee/kt1/banner_l2_kings_college_chapel_tudor.jpg",
+        "alt": "Symmetrical interior architectural panorama of King’s College Chapel, Cambridge showing Tudor stone fan vaulting, sixteenth-century stained-glass windows, and Henry VIII’s carved oak rood screen",
+        "position": "center 48%",
+        "caption": "Tudor Interior of King’s College Chapel, Cambridge: Completed under the Tudors with soaring stone fan vaulting, stained glass, and carved oak rood screen, illustrating the sacred architectural heritage contested during Elizabeth I’s 1559 Religious Settlement."
       },
       "banner_position": "center 68%",
       "banner_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg"
@@ -3887,9 +3955,9 @@
               "Transformation of Faith into High Treason: Prior to 1570, the Elizabethan regime had largely tolerated quiet Catholic recusancy through manageable 12-penny church absence fines; 'Regnans in Excelsis' forced Catholics into an impossible dilemma where practicing their traditional faith was now legally and politically equated with plotting the armed overthrow of the Crown, sparking severe treason legislation and intense state surveillance."
             ]
           },
-          "image": "/images/papal_bull.jpg",
-          "image_alt": "The lead seal (bulla) and document of a 16th-century Papal Bull",
-          "caption": "Papal Decrees & Authority: Rome's formal instruments of ecclesiastical command used to declare English monarchs heretical and depose them.",
+          "image": "/images/eee/kt1/b1_l3_foxe_latimer_preaching_woodcut.jpg",
+          "image_alt": "Sixteenth-century Tudor woodcut from John Foxe’s Actes and Monuments (1563) depicting Protestant reformer Hugh Latimer preaching in a plain clerical gown and cap from an outdoor wooden pulpit before King Edward VI while a woman reads an English Bible below",
+          "caption": "Reformation Preaching in Plain Clerical Dress (woodcut from John Foxe’s Actes and Monuments, 1563): Depicting Hugh Latimer preaching in a plain gown without crucifixes or ornate vestments—the scriptural simplicity demanded by Puritans during the 1566 Vestments Controversy.",
           "isReversed": false,
           "sources": [
             {
@@ -5047,7 +5115,7 @@
       "banner": {
         "image": "/images/eee/kt1/banner_l3_hogenberg_reformation_1566.jpg",
         "alt": "Hand-coloured contemporary 1566 engraving by Frans Hogenberg depicting Protestant iconoclasts pulling down statues and altars in Antwerp during the Reformation crisis in the Low Countries",
-        "position": "center 48%",
+        "position": "center 52%",
         "caption": "Frans Hogenberg, \"The Iconoclastic Fury (Beeldenstorm) in Antwerp, 20 August 1566\" (contemporary engraving): Escalating Calvinist agitation in the Low Countries that provoked Philip II to dispatch the Duke of Alba’s Spanish army across the Channel."
       },
       "banner_position": "center 48%",
@@ -5575,9 +5643,86 @@
             "<span class=\"para-ref\">[3.2]</span> Mary’s arrival trapped Elizabeth in an acute diplomatic dilemma. Sending English troops to restore a deposed Catholic monarch would alienate friendly Protestant Scotland; handing Mary back risked executing an anointed sovereign; allowing her abroad risked French military intervention; keeping her under **house arrest** inside England invited endless domestic Catholic plots."
           ],
           "act_title": "Stage 3: Abdication, Lochleven & Escape — Why did Mary’s escape from Lochleven into England trap Elizabeth?",
-          "image": "/images/eee/kt1/mary_escaping_lochleven_shirreff.jpg",
-          "image_alt": "Oil painting by William Craig Shirreff showing Mary, Queen of Scots stepping onto a wooden boat plank at night while escaping Lochleven Castle",
-          "caption": "Mary, Queen of Scots Escaping from Lochleven Castle (William Craig Shirreff, c. 1805, National Galleries of Scotland): Depicting Mary’s dramatic May 1568 escape across Loch Leven shortly before defeat at Langside drove her into England."
+          "stage_hook_map": {
+            "id": "eee-l4-mary-stuart-flight-map",
+            "title": "Mary, Queen of Scots: Abdication, Escape & Flight into England (1567–69)",
+            "subtitle": "Kirk o’ Field to Lochleven, Langside, York & Tutbury · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/eee/kt1/eee_map_l4_mary_stuart_scotland_flight_1567_69.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 49,
+                "y": 33.3,
+                "color": "#be123c",
+                "label": "1. Kirk o’ Field (Feb 1567)",
+                "badge": "Murder & Scandal",
+                "date": "10 Feb – May 1567",
+                "title": "Edinburgh (Kirk o’ Field): Murder of Lord Darnley & Marriage to Bothwell",
+                "details": "On 10 February 1567, a gunpowder explosion destroyed Kirk o’ Field in Edinburgh while Mary’s estranged second husband Henry Stuart, Lord Darnley, was found strangled outside in the orchard. When Mary wed chief murder suspect the Earl of Bothwell just three months later, outraged Protestant Scottish lords rose in armed rebellion and seized her at Carberry Hill.",
+                "hinge": "Why did Mary’s rapid marriage to the Earl of Bothwell in May 1567 destroy her moral authority across both Protestant Scotland and Catholic Europe?"
+              },
+              {
+                "id": "spot-2",
+                "x": 48,
+                "y": 29.7,
+                "color": "#b45309",
+                "label": "2. Lochleven Castle",
+                "badge": "Abdication & Escape",
+                "date": "Jul 1567 – 2 May 1568",
+                "title": "Lochleven Castle: Forced Abdication (July 1567) & Boat Escape (May 1568)",
+                "details": "Imprisoned on Castle Island in Loch Leven on 24 July 1567, Mary was forced under duress to abdicate the Scottish crown in favour of her one-year-old son James VI, governed by her Protestant half-brother the Earl of Moray. On 2 May 1568, aided by young page Willy Douglas, Mary escaped by boat across the loch and rallied 6,000 Catholic and loyalist troops.",
+                "hinge": "Why did Elizabeth I secretly disapprove of Scottish rebel lords forcing an anointed sovereign to abdicate at Lochleven even though Scotland remained Protestant?"
+              },
+              {
+                "id": "spot-3",
+                "x": 43.2,
+                "y": 34.9,
+                "color": "#991b1b",
+                "label": "3. Battle of Langside",
+                "badge": "Final Defeat in Scotland",
+                "date": "13 May 1568",
+                "title": "Battle of Langside (13 May 1568): Defeated by Regent Moray",
+                "details": "Marching west toward Dumbarton Castle, Mary’s 6,000 troops were intercepted south of Glasgow at Langside on 13 May 1568 by Regent Moray’s disciplined 4,000-strong force. Defeated within forty-five minutes, Mary rode over ninety miles south-west through Galloway rather than surrender again to the rebel Scottish lords.",
+                "hinge": "Why did Mary choose to flee south into Protestant England after Langside rather than sailing directly to Catholic France?"
+              },
+              {
+                "id": "spot-4",
+                "x": 50.3,
+                "y": 47.9,
+                "color": "#be123c",
+                "label": "4. Solway & Carlisle Castle",
+                "badge": "Arrival in England",
+                "date": "16 May 1568",
+                "title": "Across the Solway Firth to Workington & Carlisle Castle (16 May 1568)",
+                "details": "Crossing the Solway Firth in a fishing boat to Workington in Cumberland on 16 May 1568, Mary was escorted overland to Carlisle Castle expecting Elizabeth to supply an English army to restore her. Instead, Mary’s arrival trapped Elizabeth: restoring a Catholic queen would wreck friendly Protestant Scotland, yet freeing her risked a French-backed Catholic crusade.",
+                "hinge": "Explain Elizabeth’s four-way diplomatic dilemma in May 1568: why was every option—restoring Mary, handing her back, sending her abroad, or keeping her in England—dangerous?"
+              },
+              {
+                "id": "spot-5",
+                "x": 55.8,
+                "y": 55.8,
+                "color": "#6b21a8",
+                "label": "5. Bolton & York Inquiry",
+                "badge": "Casket Letters",
+                "date": "Oct 1568 – Jan 1569",
+                "title": "Bolton Castle & The York–Westminster Inquiry: The Casket Letters",
+                "details": "Moving Mary to Bolton Castle away from the Scottish border, Elizabeth convened an Inquiry at York (October 1568, later Westminster) where Regent Moray produced eight French Casket Letters allegedly proving Mary plotted Darnley’s murder. Refusing to set a precedent of convicting an anointed queen, Cecil delivered a shrewd \"not proven\" verdict in January 1569.",
+                "hinge": "How did the January 1569 \"not proven\" verdict over the Casket Letters allow Elizabeth both to keep Regent Moray in power and to detain Mary indefinitely?"
+              },
+              {
+                "id": "spot-6",
+                "x": 57.5,
+                "y": 76.1,
+                "color": "#6b21a8",
+                "label": "6. Tutbury Castle (Feb 1569)",
+                "badge": "Captivity & Norfolk Plot",
+                "date": "Feb – Sept 1569",
+                "title": "Tutbury Castle: Shrewsbury’s Custody & The Norfolk Marriage Plot",
+                "details": "In February 1569, Elizabeth transferred Mary south into the Midlands at Tutbury Castle under George Talbot, Earl of Shrewsbury. Even behind castle walls, Mary immediately became the magnet for aristocratic intrigue—inspiring courtiers to plot marrying her to England’s premier peer, the Duke of Norfolk, and sparking the 1569 Revolt of the Northern Earls.",
+                "hinge": "Why did moving Mary south to Tutbury Castle fail to prevent her from becoming the focal point of court conspiracy and Catholic rebellion in 1569?"
+              }
+            ]
+          }
         },
         {
           "stage": 4,
@@ -5993,8 +6138,8 @@
           "title": "Source B: Sir Francis Walsingham's Intelligence Dossier on Mary Stuart",
           "src": "/images/eee/kt2/sir_francis_walsingham_npg.jpg",
           "image": "/images/eee/kt2/sir_francis_walsingham_npg.jpg",
-          "source": "/images/sir_francis_walsingham.jpg",
-          "caption": "Sir Francis Walsingham, who argued consistently that as long as Mary Stuart lived, Elizabeth's life and the English Protestant church would never be safe.",
+          "source": "/images/eee/kt2/sir_francis_walsingham_npg.jpg",
+          "caption": "Sir Francis Walsingham, Principal Secretary and spymaster, who argued consistently that as long as Mary Stuart lived, Elizabeth’s life and the Protestant settlement would never be secure.",
           "desc": "Portrait of Sir Francis Walsingham in black velvet.",
           "provenance": "The National Archives, Kew (SP 53/12), c. 1580.",
           "citation": "The National Archives, Kew.",
@@ -6007,7 +6152,8 @@
           "model_answer": "Walsingham compiled surveillance dossiers to gather irrefutable legal proof that Mary was actively collaborating with foreign Catholic plotters, hoping to convince a reluctant Elizabeth to authorize Mary's trial and execution.",
           "teacher_notes": {
             "source_context": "Portrait of Walsingham. Following the York and Westminster inquiries into the Casket Letters in 1568–69, Elizabeth chose neither to execute nor restore Mary, but to keep her under house arrest in remote castles like Tutbury and Sheffield under the custody of the Earl of Shrewsbury. **Hinge Question:** Why did Protestant hardliners like Walsingham regard Mary's mere physical presence in England as an existential threat to Elizabeth's survival?"
-          }
+          },
+          "image_alt": "Oil portrait of Sir Francis Walsingham attributed to John De Critz the Elder, wearing sombre black Tudor court dress and white ruff (National Portrait Gallery, NPG 1807)"
         },
         {
           "id": "eee_l4_source_c",
@@ -6508,7 +6654,7 @@
         "image": "/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg",
         "alt": "Wide panoramic view of Lochleven Castle’s stone tower house standing on wooded Castle Island surrounded by the waters of Loch Leven and the Scottish hills",
         "position": "center 45%",
-        "caption": "Lochleven Castle on Castle Island, Kinross-shire (CC BY-SA 4.0, Gunther Tschuch): The isolated island fortress where Scottish Protestant lords imprisoned Mary, Queen of Scots and forced her abdication in July 1567."
+        "caption": "Lochleven Castle on Castle Island, Kinross-shire: The isolated island fortress where Scottish Protestant lords imprisoned Mary, Queen of Scots and forced her abdication in July 1567."
       },
       "card_image": "/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg",
       "hero_image": "/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg",
@@ -7036,9 +7182,74 @@
             "<span class=\"para-ref\">[1.2]</span> However, promised Spanish troops from Alba never landed at Hartlepool, most loyal northern gentry stood by the Queen, and Elizabeth moved Mary south to Coventry before dispatching a large royal army under the Earl of Sussex. As the earls fled into Scotland, Elizabeth ordered **450 rebels executed** under martial law across northern villages and confiscated rebel estates under the reconstituted Council of the North."
           ],
           "act_title": "Stage 1: The Revolt of the Northern Earls — Why did the Revolt of the Northern Earls fail to depose Elizabeth?",
-          "image": "/images/eee/kt2/durham_cathedral_1896_engraving.jpg",
-          "image_alt": "Historic 1896 architectural engraving of the choir, sanctuary, high altar, and Nine Altars rose window inside Durham Cathedral",
-          "caption": "The Sanctuary of Durham Cathedral: Inside this Norman choir in November 1569, the Earls of Northumberland and Westmorland tore up Elizabeth’s English Bible and Prayer Book and restored the Latin Mass."
+          "stage_hook_map": {
+            "id": "eee-l5-northern-earls-revolt-map",
+            "title": "The Revolt of the Northern Earls (November–December 1569)",
+            "subtitle": "Durham Cathedral, Hartlepool, Coventry & Royal Retribution · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/eee/kt2/eee_map_l5_northern_earls_revolt_1569.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 52.9,
+                "y": 36.1,
+                "color": "#be123c",
+                "label": "Durham Cathedral (14 Nov)",
+                "badge": "Religious Defiance",
+                "date": "14 November 1569",
+                "title": "Brancepeth & Durham Cathedral: Tearing Up the English Bible & Restoring Latin Mass",
+                "details": "After assembling armed retainers at Brancepeth Castle, Thomas Percy, Earl of Northumberland, and Charles Neville, Earl of Westmorland, marched 4,600 rebels into Durham Cathedral on 14 November 1569. They tore up Elizabeth’s English Bible and Prayer Book, overturned the communion table, and celebrated a defiant traditional Latin Mass.",
+                "hinge": "Why did the Northern Earls stage a public Latin Mass inside Durham Cathedral at the very start of their uprising?"
+              },
+              {
+                "id": "spot-2",
+                "x": 55.9,
+                "y": 37.6,
+                "color": "#d97706",
+                "label": "Hartlepool (No Spanish Aid)",
+                "badge": "Foreign Backing Fails",
+                "date": "Late Nov–Dec 1569",
+                "title": "Hartlepool Seized: Waiting in Vain for the Duke of Alba’s Spanish Troops",
+                "details": "The Northern Earls seized the North Sea port of Hartlepool expecting Catholic reinforcements from the Duke of Alba’s Spanish army across the sea in the Netherlands. However, Philip II distrusted pro-French Mary Stuart and refused to risk war with England, so not a single Spanish soldier or ship arrived.",
+                "hinge": "Why did Philip II and the Duke of Alba refuse to send Spanish troops to Hartlepool to aid fellow Catholics in 1569?"
+              },
+              {
+                "id": "spot-3",
+                "x": 52.6,
+                "y": 47.6,
+                "color": "#e11d48",
+                "label": "Bramham Moor & Barnard Castle",
+                "badge": "Advance Stalls",
+                "date": "24 Nov–Dec 1569",
+                "title": "Bramham Moor & Barnard Castle: Indecisive Leadership and Lost Momentum",
+                "details": "Rebels marched south across Yorkshire as far as Bramham Moor near Tadcaster (24 November), hoping Catholic gentry across Lancashire and the Midlands would rise. Instead, most English Catholics stayed loyal to Elizabeth, and the rebels wasted eleven crucial days besieging royalist Sir George Bowes at Barnard Castle.",
+                "hinge": "Why did the vast majority of English Catholic gentry in Lancashire and the Midlands refuse to join the Northern Earls?"
+              },
+              {
+                "id": "spot-4",
+                "x": 52.8,
+                "y": 77.8,
+                "color": "#6b21a8",
+                "label": "Tutbury → Coventry (Mary Moved)",
+                "badge": "Rescue Foiled",
+                "date": "25 November 1569",
+                "title": "Tutbury Castle to Coventry: Elizabeth Moves Mary Stuart Out of Reach",
+                "details": "The rebels’ central dynastic goal was to march on Tutbury Castle in Staffordshire, free Catholic claimant Mary, Queen of Scots, marry her to the Duke of Norfolk, and depose Elizabeth. Acting swiftly on Privy Council orders, Mary’s keepers hurried her south to fortified, Protestant Coventry beyond rebel reach.",
+                "hinge": "How did moving Mary Stuart south from Tutbury to Coventry immediately cripple the Northern Earls’ political strategy?"
+              },
+              {
+                "id": "spot-5",
+                "x": 56.8,
+                "y": 51.9,
+                "color": "#1d4ed8",
+                "label": "York & Border Retribution",
+                "badge": "~450 Rebels Executed",
+                "date": "Dec 1569–Jan 1570",
+                "title": "Sussex’s Royal Army at York, Flight into Scotland & 450 Executions",
+                "details": "Reinforced at York by over 12,000 southern troops under the Earl of Warwick and Lord Clinton, the Earl of Sussex marched north in December 1569. Northumberland and Westmorland fled across the Scottish border (Northumberland was handed back and beheaded at York in 1572), while Elizabeth ordered roughly 450 rebels executed under martial law and placed Puritan Earl of Huntingdon over the Council of the North.",
+                "hinge": "Why did Elizabeth order around 450 ordinary rebels executed across northern villages and reorganise the Council of the North under Huntingdon?"
+              }
+            ]
+          }
         },
         {
           "stage": 2,
@@ -7704,14 +7915,14 @@
         {
           "id": "eee_l5_source_c",
           "letter": "C",
-          "title": "Source C: Francis Throckmorton and the 1583 Catholic Conspiracy",
+          "title": "Source C: Interrogation of Francis Throckmorton in the Tower of London (1583)",
           "src": "/images/upgraded/gcse-med-eee/eee_tower_of_london_1597_haiward.jpg",
           "image": "/images/upgraded/gcse-med-eee/eee_tower_of_london_1597_haiward.jpg",
-          "source": "/images/francis_throckmorton.jpg",
-          "caption": "Francis Throckmorton, who acted as the key courier between Mary Queen of Scots, the Spanish ambassador Mendoza, and French Catholic invasion planners before his arrest in 1583.",
-          "desc": "Engraved portrait of Francis Throckmorton.",
-          "provenance": "The National Archives, Kew (SP 12/163), 1583.",
-          "citation": "The National Archives, Kew.",
+          "source": "/images/upgraded/gcse-med-eee/eee_tower_of_london_1597_haiward.jpg",
+          "caption": "The Tower of London (from the 1597 Elizabethan survey by William Haiward and J. Gascoyne): Royal fortress where Catholic courier Francis Throckmorton was imprisoned and racked in November 1583, confessing Franco-Spanish invasion plans.",
+          "desc": "Elizabethan architectural survey of the Tower of London (1597, by W. Haiward and J. Gascoyne), site of Francis Throckmorton’s interrogation.",
+          "provenance": "Survey of the Tower of London by William Haiward and J. Gascoyne (1597) / The National Archives, Kew (SP 12/163, Throckmorton examination, November 1583).",
+          "citation": "Haiward & Gascoyne Survey (1597) / The National Archives, Kew.",
           "hinge_question": "What did Throckmorton's confessions under torture reveal regarding Spanish and French financial backing for an English Catholic insurrection?",
           "source_context": "Walsingham's agents placed Throckmorton's London home under surveillance for six months in 1583. Raiding the house, they discovered a list of Catholic nobles ready to join an invasion, harbour charts, and cipher keys. Put on the rack in the Tower, Throckmorton confessed to the entire plot. **Hinge Question:** What did Throckmorton's confessions under torture reveal regarding Spanish and French financial backing for an English Catholic insurrection?",
           "context": "Walsingham's agents placed Throckmorton's London home under surveillance for six months in 1583.",
@@ -7721,7 +7932,8 @@
           "model_answer": "Source C reveals that foreign Catholic powers were actively organizing armed landings on the south coast with domestic aristocratic co-operation, prompting Parliament to draft the Bond of Association in 1584 to protect Elizabeth's life.",
           "teacher_notes": {
             "source_context": "Walsingham's agents placed Throckmorton's London home under surveillance for six months in 1583. Raiding the house, they discovered a list of Catholic nobles ready to join an invasion, harbour charts, and cipher keys. Put on the rack in the Tower, Throckmorton confessed to the entire plot. **Hinge Question:** What did Throckmorton's confessions under torture reveal regarding Spanish and French financial backing for an English Catholic insurrection?"
-          }
+          },
+          "image_alt": "Elizabethan bird’s-eye architectural survey of the Tower of London and River Thames wharf drawn in 1597 by William Haiward and J. Gascoyne"
         },
         {
           "id": "eee_l5_source_d",
@@ -8371,8 +8583,9 @@
       },
       "banner": {
         "image": "/images/eee/kt2/durham_cathedral_exterior_banner.jpg",
-        "position": "center 35%",
-        "caption": "Durham Cathedral: Stronghold of the Prince-Bishops where 4,600 northern rebels tore up the English Bible and celebrated a defiant Latin Mass in November 1569 (Photograph by Benjamin Smith, CC BY-SA 4.0)."
+        "position": "center 46%",
+        "caption": "Durham Cathedral: Stronghold of the Prince-Bishops where 4,600 northern rebels tore up the English Bible and celebrated a defiant Latin Mass in November 1569.",
+        "alt": "Three Norman sandstone towers of Durham Cathedral rising above wooded riverbanks"
       },
       "banner_position": "center 35%",
       "banner_image": "/images/eee/kt2/durham_cathedral_exterior_banner.jpg"
@@ -8764,9 +8977,9 @@
               "Reluctance to Support Rebels Against Anointed Sovereigns: Elizabeth held a conservative belief in royal legitimacy and abhorred the idea of aiding Dutch Protestant subjects in an armed rebellion against their lawful feudal ruler, fearing it would legitimize Catholic rebellions against her own rule in England or Ireland."
             ]
           },
-          "image": "/images/king_philip_ii_of_spain.jpg",
-          "image_alt": "Official portrait of King Philip II of Spain wearing the collar of the Golden Fleece",
-          "caption": "King Philip II of Spain: Sovereign of the global Spanish Empire, defender of the Catholic Counter-Reformation, and Elizabeth's greatest adversary.",
+          "image": "/images/eee/kt2/king_philip_ii_spain_prado.jpg",
+          "image_alt": "Sixteenth-century court portrait by Sofonisba Anguissola (Museo del Prado) of King Philip II of Spain in black court dress, high cap, and white lace ruff, wearing the Order of the Golden Fleece and holding a rosary",
+          "caption": "King Philip II of Spain (by Sofonisba Anguissola, c. 1565–1573, Museo del Prado P001036): Sovereign of the global Spanish Empire, defender of the Catholic Counter-Reformation, and Elizabeth I’s greatest adversary.",
           "isReversed": false,
           "sources": [
             {
@@ -9969,9 +10182,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt2/boazio_drake_west_indies_raid.jpg",
-        "position": "center 52%",
-        "caption": "Challenging Spain’s New World Monopoly: Baptista Boazio’s contemporary hand-coloured panoramic map-view showing Sir Francis Drake’s English fleet assaulting Spanish Santo Domingo in the Caribbean (Library of Congress, G4934.S2S5 1589 .B6)."
+        "image": "/images/eee/kt2/el_escorial_monastery_spain_banner.jpg",
+        "position": "center 50%",
+        "caption": "San Lorenzo de El Escorial, Spain: Vast granite palace-monastery outside Madrid from which King Philip II directed the Catholic Counter-Reformation and governed Spain’s global empire.",
+        "alt": "Wide aerial panorama of the vast granite Royal Monastery and Palace of San Lorenzo de El Escorial surrounded by the wooded slopes of the Sierra de Guadarrama outside Madrid"
       },
       "banner_position": "center 52%",
       "banner_image": "/images/eee/kt2/boazio_drake_west_indies_raid.jpg"
@@ -10869,13 +11083,13 @@
           "id": "eee_l7_source_a",
           "letter": "A",
           "title": "Source A: Sir Francis Drake Planning the Pre-emptive Raid on Cadiz (1587)",
-          "src": "/images/drake.jpg",
-          "image": "/images/drake.jpg",
-          "source": "/images/drake.jpg",
-          "caption": "Sir Francis Drake, appointed Vice-Admiral by Elizabeth with royal orders to disrupt Spanish naval preparations for the invasion of England in 1587.",
-          "desc": "Portrait of Sir Francis Drake in naval dress.",
-          "provenance": "National Maritime Museum, Greenwich (BHC2662), c. 1585.",
-          "citation": "National Maritime Museum, Greenwich.",
+          "src": "/images/eee/kt2/sir_francis_drake_hondius_1583.jpg",
+          "image": "/images/eee/kt2/sir_francis_drake_hondius_1583.jpg",
+          "source": "/images/eee/kt2/sir_francis_drake_hondius_1583.jpg",
+          "caption": "Sir Francis Drake (contemporary portrait engraving by Jodocus Hondius, c. 1583): Vice-Admiral appointed by Elizabeth I with royal orders to disrupt Spanish naval preparations at Cadiz in April 1587.",
+          "desc": "Contemporary copperplate portrait engraving of Sir Francis Drake by Jodocus Hondius (c. 1583).",
+          "provenance": "Contemporary copperplate engraving by Jodocus Hondius I, London, c. 1583 (inscribed Franciscus Draeck Nobilissimus Eques Angliae An. Aet. Sue 43).",
+          "citation": "Jodocus Hondius I, London, c. 1583.",
           "hinge_question": "Why did Drake describe his destruction of Spanish supplies at Cadiz as 'singeing the King of Spain's beard'?",
           "source_context": "In April 1587, Sir Francis Drake sailed into the heavily defended Spanish naval base at Cadiz, destroying over 30 warships and thousands of seasoned barrel staves needed for food and water storage. He playfully referred to the raid as 'singeing the King of Spain's beard'. **Hinge Question:** Why did Drake describe his destruction of Spanish supplies at Cadiz as 'singeing the King of Spain's beard'?",
           "context": "In April 1587, Sir Francis Drake sailed into the heavily defended Spanish naval base at Cadiz.",
@@ -10885,7 +11099,8 @@
           "model_answer": "Source A indicates that Drake's bold pre-emptive strike devastated Spanish naval logistics, destroying essential barrel staves and forcing Philip II to delay the launch of the Armada by an entire year, granting England critical time to prepare its defenses.",
           "teacher_notes": {
             "source_context": "In April 1587, Sir Francis Drake sailed into the heavily defended Spanish naval base at Cadiz, destroying over 30 warships and thousands of seasoned barrel staves needed for food and water storage. He playfully referred to the raid as 'singeing the King of Spain's beard'. **Hinge Question:** Why did Drake describe his destruction of Spanish supplies at Cadiz as 'singeing the King of Spain's beard'?"
-          }
+          },
+          "image_alt": "Contemporary copperplate portrait engraving by Jodocus Hondius (c. 1583) inscribed Franciscus Draeck Nobilissimus Eques Angliae, showing Sir Francis Drake with his hand resting on an ornate plumed helmet beside a suspended terrestrial globe"
         },
         {
           "id": "eee_l7_source_b",
@@ -11573,9 +11788,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt2/siege_of_antwerp_1585_banner.jpg",
-        "position": "center 50%",
-        "caption": "The Siege of Antwerp (1584–1585): Panoramic engraving by Jan Luyken showing the Duke of Parma’s fortified bridge across the River Scheldt, whose capture of Antwerp pushed England into open intervention in the Netherlands."
+        "image": "/images/eee/kt2/vroom_dutch_revolt_spanish_galleys_banner.jpg",
+        "position": "center 56%",
+        "caption": "Naval Warfare of the Dutch Revolt (1617, by Hendrick Cornelisz Vroom, Rijksmuseum SK-A-460): Towering square-rigged Protestant warships engaging Spanish war galleys off the Flemish coast.",
+        "alt": "Early seventeenth-century maritime oil painting by Hendrick Cornelisz Vroom showing square-rigged Dutch Revolt warships ramming and firing cannon broadsides into Spanish galleys off the Flemish coast"
       },
       "banner_position": "center 50%",
       "banner_image": "/images/eee/kt2/siege_of_antwerp_1585_banner.jpg"
@@ -12105,9 +12321,6 @@
           "theme_heading": "The Protestant Wind: The Ordeal of the Scottish Isles and Shipwrecks on Irish Rocks (1588)",
           "text": "<span class=\"para-ref\">[4.1]</span> Driven off the coast of Flanders (Calais and Dunkirk) after passing the Isle of Wight earlier, the battered Armada faced a strong south-westerly gale on 9 August. Hailed in England as the **‘Protestant Wind’**, it blew Spain’s fleet into the North Sea. Short of shot and drinking foul water, Medina Sidonia had to sail north around the stormy coasts of Scotland and western **Ireland**.\n\n<span class=\"para-ref\">[4.2]</span> Fierce autumn storms turned Spain’s retreat along the Irish coast into disaster. Lacking the heavy anchors cut at Calais and misled by poor sea charts, over twenty-five Spanish ships wrecked on rocky Scottish and Irish shores, where thousands died. Barely **67 ships** limped home to Spain, with over 15,000 men lost.",
           "level_4": "Driven north by gale-force winds, the Armada was forced to sail around Scotland and Ireland. Lacking anchors, dozens of ships were wrecked in Atlantic storms, and only 67 ships limped home.",
-          "image": "/images/armada_gravelines_chart_1590.jpg",
-          "image_alt": "Augustine Ryther chart depicting the English fireship attack on the Armada off Calais and the battle of Gravelines",
-          "caption": "The Fireships at Calais (August 1588): Eight flaming hulks sent into the anchorage, panicking the Spanish fleet into cutting their anchor cables.",
           "isReversed": true,
           "sources": [
             {
@@ -12137,7 +12350,87 @@
             "<span class=\"para-ref\">[4.1]</span> Blocked by the pursuing English fleet behind them and treacherous Flemish shoals ahead, a fierce south-westerly gale—celebrated across Protestant England as the **‘Protestant Wind’**—drove Medina Sidonia’s battered fleet north into the open North Sea on 9 August. Critically short of cannonballs, leaking badly, and drinking putrid water from green-wood barrels, the Armada had to limp home around Scotland and **Ireland**.",
             "<span class=\"para-ref\">[4.2]</span> Uncharted North Atlantic autumn tempests turned Spain’s retreat into utter catastrophe: lacking spare heavy anchors cut at Calais and guided by inaccurate charts of the Gulf Stream, over twenty-five Spanish vessels wrecked along rocky Scottish and Irish coasts where thousands drowned or were killed ashore. Barely **67 ships**—roughly half the original fleet—straggled back to Spain with over 15,000 men lost."
           ],
-          "act_title": "Stage 4: The Winds & Atlantic Retreat — Why did gales and cut anchors wreck retreating ships off Ireland?"
+          "act_title": "Stage 4: The Winds & Atlantic Retreat — Why did gales and cut anchors wreck retreating ships off Ireland?",
+          "stage_hook_map": {
+            "id": "eee-l8-spanish-armada-campaign-map",
+            "title": "Defeat of the Spanish Armada: Channel Battles, Fireships & Atlantic Wrecks (1588)",
+            "subtitle": "Corunna, Plymouth, Calais Fireships, Gravelines & Irish Wrecks · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/eee/kt2/eee_map_l8_spanish_armada_campaign_1588.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 39.2,
+                "y": 81.3,
+                "color": "#be123c",
+                "label": "1. Corunna (130 Ships)",
+                "badge": "Armada Departure",
+                "date": "May–22 July 1588",
+                "title": "Lisbon & Corunna Departure: 130 Ships Sail Under Medina Sidonia",
+                "details": "Delayed a year by Drake’s 1587 Cádiz raid—which burned seasoned barrel staves and left Spanish food rotting in green-pine casks—the reluctant, seasick Duke of Medina Sidonia sailed from Lisbon in May 1588. After storm repairs at Corunna, 130 vessels carrying 30,000 men headed north on 22 July to rendezvous with the Duke of Parma.",
+                "hinge": "How had Drake’s 1587 Cádiz raid and Admiral Santa Cruz’s sudden death already weakened the Armada before it left Corunna?"
+              },
+              {
+                "id": "spot-2",
+                "x": 47.6,
+                "y": 55.1,
+                "color": "#1d4ed8",
+                "label": "2. Lizard & Plymouth",
+                "badge": "Crescent Formation",
+                "date": "29–31 July 1588",
+                "title": "Lizard Point & Plymouth: Seizing the Windward Gauge Behind the Crescent",
+                "details": "Sighted off the Lizard in Cornwall on 29 July, Spain’s fleet advanced in a disciplined seven-mile crescent protecting supply ships in the centre. Warping out of Plymouth against the breeze, Lord Howard of Effingham, Francis Drake, and John Hawkins seized the windward weather gauge behind Medina Sidonia.",
+                "hinge": "Why did seizing the windward gauge west of the Armada give smaller English squadrons the tactical initiative up the Channel?"
+              },
+              {
+                "id": "spot-3",
+                "x": 53,
+                "y": 53.5,
+                "color": "#2563eb",
+                "label": "3. Portland & Isle of Wight",
+                "badge": "Solent Denied",
+                "date": "2–4 August 1588",
+                "title": "Portland Bill & Isle of Wight: Denying Medina Sidonia a Solent Anchorage",
+                "details": "During running gunfights off Portland Bill (2 August) and the Isle of Wight (3–4 August), agile English ships avoided Spanish grappling hooks and fired stand-off cannon salvos. Crucially, Howard blocked Medina Sidonia from seizing sheltered Solent waters, herding Spain onward to exposed Calais Roads.",
+                "hinge": "Why was preventing Medina Sidonia from anchoring in the Solent off the Isle of Wight a vital strategic success for Howard?"
+              },
+              {
+                "id": "spot-4",
+                "x": 57.8,
+                "y": 51.9,
+                "color": "#d97706",
+                "label": "4. Calais Fireships & Dunkirk",
+                "badge": "Anchors Cut",
+                "date": "6–7 August 1588",
+                "title": "Calais Roads & Dunkirk: Eight Midnight Fireships & Parma Trapped Ashore",
+                "details": "Anchored off Calais on 6 August, Medina Sidonia discovered Parma lacked any deep-water port and was pinned inside shallow Flemish canals by Justin of Nassau’s Dutch flyboats. Around midnight on 7 August, England drifted eight pitch-and-gunpowder fireships into Calais Roads—panicking Spanish captains into cutting their main anchor cables and scattering.",
+                "hinge": "Even though zero Spanish ships burned at Calais, why did cutting their anchor cables prove fatal both the next morning and weeks later?"
+              },
+              {
+                "id": "spot-5",
+                "x": 59.3,
+                "y": 48.5,
+                "color": "#dc2626",
+                "label": "5. Battle of Gravelines",
+                "badge": "Decisive Broadsides",
+                "date": "8 August 1588",
+                "title": "Battle of Gravelines: Hawkins’ Race-Built Galleons & Culverin Broadsides",
+                "details": "At dawn on 8 August off Gravelines, fast low-hulled English race-built galleons closed within 100 yards of the scattered Spanish ships. Mounted on compact four-wheeled carriages, English bronze culverins fired three times faster than Spanish guns—sinking or wrecking five warships, killing over 1,000 men, and ending any hope of invading Kent.",
+                "hinge": "How did John Hawkins’ race-built ship design and four-wheeled gun carriages neutralise Spain’s massive advantage in boarding infantry?"
+              },
+              {
+                "id": "spot-6",
+                "x": 41.1,
+                "y": 37.6,
+                "color": "#991b1b",
+                "label": "6. ‘Protestant Wind’ & Wrecks",
+                "badge": "~65 Ships Lost",
+                "date": "Aug–Oct 1588",
+                "title": "The ‘Protestant Wind’, Fair Isle Passage & 25+ Wrecks Off Scotland and Ireland",
+                "details": "Blown north into the North Sea on 9 August by south-westerly gales hailed in England as the “Protestant Wind”, the battered, thirsty Armada rounded Scotland via Fair Isle into ferocious Atlantic storms. Lacking the heavy anchors cut at Calais and misled by poor charts, over 25 galleons wrecked along Scottish and Irish shores; barely 67 ships and half of the 30,000 men ever reached Spain.",
+                "hinge": "How far was the Armada defeated by Atlantic weather (“God blew and they were scattered”) versus earlier English tactics and Spanish logistical flaws?"
+              }
+            ]
+          }
         },
         {
           "stage": 5,
@@ -12517,13 +12810,13 @@
           "id": "eee_l8_source_b",
           "letter": "B",
           "title": "Source B: The Armada Portrait of Queen Elizabeth I (1588)",
-          "src": "/images/armada_portrait.jpg",
-          "image": "/images/armada_portrait.jpg",
-          "source": "/images/armada_portrait.jpg",
-          "caption": "The Armada Portrait of Elizabeth I, painted by George Gower c. 1588, with her hand resting upon the globe and the defeat of the Armada depicted in the background windows.",
-          "desc": "Oil on panel painting of Elizabeth I in pearl-embroidered black gown with background naval scenes.",
-          "provenance": "National Maritime Museum, Greenwich (ZBA5461), c. 1588.",
-          "citation": "National Maritime Museum, Greenwich.",
+          "src": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+          "image": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+          "source": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+          "caption": "The Armada Portrait of Queen Elizabeth I (c. 1588, Woburn Abbey Collection), with her hand resting upon the globe and the defeat of the Spanish Armada depicted in the background windows.",
+          "desc": "Oil on panel Armada Portrait of Queen Elizabeth I (c. 1588, Woburn Abbey version).",
+          "provenance": "Woburn Abbey Collection (Bedford Estates), English School (formerly attributed to George Gower), c. 1588.",
+          "citation": "Woburn Abbey Collection, c. 1588.",
           "hinge_question": "How do the visual symbols in the Armada Portrait (hand resting on the globe, sunlit calmness vs stormy shipwreck) celebrate English naval triumph?",
           "source_context": "Painted immediately after the Armada's defeat, the portrait shows Elizabeth with her hand resting over North America on a terrestrial globe. The left window displays the calm English fleet; the right window shows Spanish galleons crashing onto rocky shores in a violent storm. **Hinge Question:** How do the visual symbols in the Armada Portrait (hand resting on the globe, sunlit calmness vs stormy shipwreck) celebrate English naval triumph?",
           "context": "Painted immediately after the Armada's defeat, the portrait shows Elizabeth with her hand resting over North America.",
@@ -12533,7 +12826,8 @@
           "model_answer": "The artist intended to portray the Armada's destruction as providential divine judgement, visually demonstrating that God actively defended Elizabeth's Protestant realm and blessed England's global imperial destiny.",
           "teacher_notes": {
             "source_context": "Painted immediately after the Armada's defeat, the portrait shows Elizabeth with her hand resting over North America on a terrestrial globe. The left window displays the calm English fleet; the right window shows Spanish galleons crashing onto rocky shores in a violent storm. **Hinge Question:** How do the visual symbols in the Armada Portrait (hand resting on the globe, sunlit calmness vs stormy shipwreck) celebrate English naval triumph?"
-          }
+          },
+          "image_alt": "The Woburn Abbey Armada Portrait of Queen Elizabeth I (c. 1588) showing the Queen in pearl-studded gown with her right hand resting on North America on a globe, flanked by background windows contrasting English fireships with storm-wrecked Spanish galleons"
         },
         {
           "id": "eee_l8_source_c",
@@ -13203,7 +13497,8 @@
       "banner": {
         "image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
         "position": "center 48%",
-        "caption": "The Spanish Armada off the English Coast (c. 1620–1625, by Cornelis Claesz van Wieringen, Rijksmuseum SK-A-1629): Panoramic maritime painting capturing the 1588 naval struggle across the English Channel."
+        "caption": "The Spanish Armada off the English Coast (c. 1620–1625, by Cornelis Claesz van Wieringen, Rijksmuseum SK-A-1629): Panoramic maritime painting capturing the 1588 naval struggle across the English Channel.",
+        "alt": "Panoramic early seventeenth-century maritime oil painting by Cornelis Claesz van Wieringen showing English and Spanish galleons engaged across the English Channel in 1588"
       },
       "banner_position": "center 48%",
       "banner_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg"
@@ -13788,9 +14083,9 @@
           "type": "narrative",
           "title": "Development of the Theatre",
           "theme_heading": "The Elizabethan Playhouse: Commercial Theatres, Groundlings and Puritan Opposition",
-          "image": "/images/theatre.jpg",
-          "image_alt": "The Chandos portrait of William Shakespeare wearing an earring and white collar",
-          "caption": "Attributed to John Taylor, The Chandos Portrait of William Shakespeare (c. 1600–1610, NPG 1). Playwright whose works for the Lord Chamberlain's Men defined the booming commercial Elizabethan stage.",
+          "image": "/images/eee/kt3/eee_l9_b4_shakespeare_chandos_npg1.jpg",
+          "image_alt": "Attributed to John Taylor, The Chandos Portrait of William Shakespeare (c. 1600–1610, National Portrait Gallery NPG 1), wearing a white linen collar and gold hoop earring",
+          "caption": "Attributed to John Taylor, The Chandos Portrait of William Shakespeare (c. 1600–1610, National Portrait Gallery NPG 1). Playwright and sharer whose histories, comedies, and tragedies epitomised the booming commercial Elizabethan theatre.",
           "isReversed": true,
           "text": "<span class=\"para-ref\">[5.1]</span> Secular drama thrived after the 1572 Vagabonds Act required touring actors to hold a nobleman’s licence, creating troupes like Leicester’s Men and the **Queen’s Men** (1583). In 1576, actor **James Burbage** built England’s first permanent purpose-built playhouse, **‘The Theatre’**, in Shoreditch outside City of London rule, followed by the Curtain (1577) and the Rose (1587).\n\n<span class=\"para-ref\">[5.2]</span> Plays drew up to 2,000 spectators across all classes. Poorer **groundlings** paid one penny to stand in the open yard around the stage, while wealthy gentry bought covered gallery seats. Conversely, **Puritans** and London aldermen attacked theatres for spreading bubonic plague, drawing pickpockets, and encouraging idleness.",
           "level_4": "Permanent playhouses like 'The Theatre' (1576) emerged outside London, attracting thousands from penny groundlings to nobles. Puritans and magistrates opposed theatres due to fears of plague and immorality.",
@@ -14876,10 +15171,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt3/l9_banner_visscher_southwark.jpg",
-        "alt": "Historical copperplate engraving after Wenceslaus Hollar depicting the circular open-air Globe amphitheatre playhouse on Bankside, Southwark, surrounded by timbered houses beside the River Thames",
-        "position": "center 32%",
-        "caption": "After Wenceslaus Hollar, Bankside Southwark and the Open-Air Playhouse (c. 1644–1647 engraving). Situated south of the Thames outside City of London aldermanic jurisdiction, Southwark became the hub of commercial playhouses and baiting arenas."
+        "image": "/images/eee/kt3/eee_l9_banner_hardwick_hall.jpg",
+        "alt": "Symmetrical Elizabethan prodigy-house west facade of Hardwick Hall in Derbyshire built for Bess of Hardwick (1590–1597), showcasing vast mullioned glass window bays and carved ES crests atop the towers",
+        "position": "center 56%",
+        "caption": "Hardwick Hall, Derbyshire (built 1590–1597 for Bess of Hardwick, Countess of Shrewsbury, designed by Robert Smythson). Famous as “Hardwick Hall, more glass than wall”, its soaring mullioned windows and rooftop initials embodied rising Elizabethan noble wealth, classical taste, and renaissance culture."
       },
       "banner_position": "center 32%",
       "banner_image": "/images/eee/kt3/l9_banner_visscher_southwark.jpg"
@@ -15875,35 +16170,36 @@
         {
           "id": "eee_l10_source_d",
           "letter": "D",
-          "title": "Source D: Contemporary Woodcut of Vagrants Whipped at the Cart-Tail under the 1572 Act",
-          "src": "/images/tudor_vagrant_whipping.jpg",
-          "image": "/images/tudor_vagrant_whipping.jpg",
-          "source": "/images/tudor_vagrant_whipping.jpg",
-          "caption": "A contemporary Elizabethan woodcut depicting sturdy beggars being tied to the cart-tail and whipped through the market town until bloody under the harsh 1572 Vagabonds Act.",
-          "desc": "A woodcut showing the public corporal punishment of vagrants in an Elizabethan market town.",
-          "provenance": "British Library, London (penal broadsheet woodcut), c. 1575.",
+          "title": "Source D: Contemporary Elizabethan Woodcut of an Armed ‘Upright Man’ (Sturdy Beggar) on the Highway (c. 1570s)",
+          "src": "/images/eee/kt3/eee_l10_s3_tudor_sturdy_beggar_woodcut.jpg",
+          "image": "/images/eee/kt3/eee_l10_s3_tudor_sturdy_beggar_woodcut.jpg",
+          "source": "/images/eee/kt3/eee_l10_s3_tudor_sturdy_beggar_woodcut.jpg",
+          "caption": "Sixteenth-century English woodcut depicting an able-bodied “Upright Man” (sturdy beggar) armed with a heavy staff accosting parish women on the highway—illustrating gentry anxieties that prompted the harsh 1572 Vagabonds Act.",
+          "desc": "Contemporary Tudor woodcut of an able-bodied sturdy beggar (“Upright Man”) carrying a staff and wallet on a parish highway.",
+          "provenance": "Tudor rogue-pamphlet woodcut (after Thomas Harman / Elizabethan ballad tradition, reproduced in C. J. Ribton-Turner, A History of Vagrants and Vagrancy, 1887), c. 1570s.",
           "citation": "British Library, London.",
           "question_badge": "Reliability & Provenance",
           "question_type": "Reliability & Provenance",
-          "enquiry_question": "Why is Source D reliable evidence of the severe punitive measures Elizabeth's government used against mobile vagrants?",
-          "model_answer": "Source D faithfully illustrates the corporal punishment mandated by the 1572 Vagabonds Act, where sturdy beggars were publicly whipped and had their ear bored through with a hot iron to deter mobile vagrancy.",
+          "enquiry_question": "How does Source D help explain why Elizabethan Justices of the Peace supported harsh physical punishments under the 1572 Vagabonds Act?",
+          "model_answer": "Source D portrays the able-bodied “Upright Man” as an armed, intimidating masterless vagrant accosting respectable women on the open road, explaining why unpoliced Tudor gentry feared sturdy beggars as a threat to social order and backed whipping and ear-boring under the 1572 Act.",
           "teacher_notes": {
-            "source_context": "The 1572 Vagabonds Act introduced draconian punishments: first-time offenders were whipped and bored through the ear; second-time offenders were treated as felons; and persistent vagrants could be executed. However, it also introduced compulsory local poor rates. **Hinge Question:** How did the 1572 Act mark a major turning point by combining brutal corporal deterrence with the first mandatory taxpayer poor relief?"
+            "source_context": "Elizabethan pamphlets like Thomas Harman’s Caveat portrayed able-bodied “Upright Men” as intimidating gang leaders who extorted alms with heavy staffs rather than seeking honest work. Without a professional police force, Parliament responded in the 1572 Vagabonds Act by combining compulsory local poor rates for the impotent poor with public whipping and ear-boring for sturdy beggars. **Hinge Question:** Why did Elizabethan magistrates view wandering “masterless men” like the figure in Source D as a political danger to the realm as well as a parish nuisance?"
           },
-          "source_context": "The 1572 Vagabonds Act introduced draconian punishments: first-time offenders were whipped and bored through the ear; second-time offenders were treated as felons; and persistent vagrants could be executed. However, it also introduced compulsory local poor rates. **Hinge Question:** How did the 1572 Act mark a major turning point by combining brutal corporal deterrence with the first mandatory taxpayer poor relief?",
-          "hinge_question": "How did the 1572 Act mark a major turning point by combining brutal corporal deterrence with the first mandatory taxpayer poor relief?"
+          "source_context": "Elizabethan pamphlets like Thomas Harman’s Caveat portrayed able-bodied “Upright Men” as intimidating gang leaders who extorted alms with heavy staffs rather than seeking honest work. Without a professional police force, Parliament responded in the 1572 Vagabonds Act by combining compulsory local poor rates for the impotent poor with public whipping and ear-boring for sturdy beggars. **Hinge Question:** Why did Elizabethan magistrates view wandering “masterless men” like the figure in Source D as a political danger to the realm as well as a parish nuisance?",
+          "hinge_question": "Why did Elizabethan magistrates view wandering “masterless men” like the figure in Source D as a political danger to the realm as well as a parish nuisance?",
+          "image_alt": "Sixteenth-century English woodcut depicting a bearded able-bodied sturdy beggar (an Upright Man) carrying a stout staff and waist wallet while accosting two townswomen on a country highway"
         },
         {
           "id": "eee_l10_source_e",
           "letter": "E",
           "title": "Source E: The Elizabethan Poor Law Statute of 1601 (Parliamentary Roll)",
-          "src": "/images/poor_law_1601.jpg",
-          "image": "/images/poor_law_1601.jpg",
-          "source": "/images/poor_law_1601.jpg",
+          "src": "/images/eee/kt3/eee_l10_s4_burghley_almshouses_1597.jpg",
+          "image": "/images/eee/kt3/eee_l10_s4_burghley_almshouses_1597.jpg",
+          "source": "/images/eee/kt3/eee_l10_s4_burghley_almshouses_1597.jpg",
           "type": "written",
           "text": "Be it enacted by the authority of this present Parliament, that the churchwardens of every parish, and four, three or two substantial householders there... shall be called Overseers of the Poor of the same parish; and they shall take order from time to time... for setting to work the children of all such whose parents shall not be thought able to keep and maintain them; and also for setting to work all such persons, married or unmarried, having no means to maintain them, and use no ordinary and daily trade of life to get their living by; and also to raise weekly or otherwise... a convenient stock of flax, hemp, wool, thread, iron, and other necessary ware and stuff, to set the poor on work; and also competent sums of money for and towards the necessary relief of the lame, impotent, old, blind, and such other among them being poor and not able to work...",
-          "caption": "The official printed parliamentary statute of the 1601 Act for the Relief of the Poor (43 Elizabeth I c. 2), establishing compulsory parish poor rates, appointing Overseers of the Poor, providing raw materials to set the able-bodied to work, and funding almshouses for the impotent poor.",
-          "desc": "Parliamentary statute of the 1601 Elizabethan Poor Relief Act.",
+          "caption": "Lord Burghley’s Hospital (Burghley Almshouses), Stamford, founded in 1597 alongside the 1597–1601 Elizabethan Poor Laws (43 Elizabeth I c. 2), which appointed parish Overseers of the Poor to levy compulsory poor rates, supply raw wool and flax to employ the able-bodied, and house the impotent poor.",
+          "desc": "Parliamentary statute extract of the 1601 Elizabethan Poor Relief Act paired with Lord Burghley’s 1597 Elizabethan almshouses at Stamford.",
           "provenance": "Parliamentary Archives, London (HL/PO/PU/1/1601/43Eliz1n2), 1601.",
           "citation": "Parliamentary Archives, London (1601).",
           "question_badge": "Author's Purpose",
@@ -15914,7 +16210,8 @@
             "source_context": "The 1601 'Act for the Relief of the Poor' created a comprehensive welfare system: Overseers levied a compulsory local tax; the impotent poor were given pensions or almshouses; the able-bodied were provided raw flax and wool to work; and orphans were apprenticed. It endured until 1834. **Hinge Question:** Why did the 1601 Poor Law place administrative and financial responsibility strictly on individual parishes rather than creating a centralized royal welfare fund?"
           },
           "source_context": "The 1601 'Act for the Relief of the Poor' created a comprehensive welfare system: Overseers levied a compulsory local tax; the impotent poor were given pensions or almshouses; the able-bodied were provided raw flax and wool to work; and orphans were apprenticed. It endured until 1834. **Hinge Question:** Why did the 1601 Poor Law place administrative and financial responsibility strictly on individual parishes rather than creating a centralized royal welfare fund?",
-          "hinge_question": "Why did the 1601 Poor Law place administrative and financial responsibility strictly on individual parishes rather than creating a centralized royal welfare fund?"
+          "hinge_question": "Why did the 1601 Poor Law place administrative and financial responsibility strictly on individual parishes rather than creating a centralized royal welfare fund?",
+          "image_alt": "Limestone Tudor gable, mullioned windows, and five tall stone chimney stacks of Lord Burghley’s Hospital (Burghley Almshouses) in Stamford, founded in 1597 by William Cecil, 1st Baron Burghley"
         }
       ],
       "pair_share": {
@@ -16557,10 +16854,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt3/l10_banner_saxton_england_1579.jpg",
-        "alt": "Christopher Saxton hand-coloured engraved map Anglia (1579) engraved by Augustine Ryther with Queen Elizabeth I's royal coat of arms and shire boundaries across England and Wales",
-        "position": "center 38%",
-        "caption": "Christopher Saxton (engraved by Augustine Ryther), Anglia (1579, British Library). Commissioned by Lord Burghley’s administration to map every shire, market town, and parish across Elizabeth’s rapidly growing realm."
+        "image": "/images/eee/kt3/eee_l10_banner_bruegel_harvesters_1565.jpg",
+        "alt": "Pieter Bruegel the Elder oil painting The Harvesters (1565) depicting 16th-century rural labourers scything golden wheat, binding sheaves, and eating bread and porridge beneath a pear tree",
+        "position": "center 55%",
+        "caption": "Pieter Bruegel the Elder, The Harvesters (1565, Metropolitan Museum of Art). Depicting sixteenth-century seasonal grain reapers whose livelihood depended on bountiful summer harvests and labour-intensive arable farming before sheep enclosure."
       },
       "banner_position": "center 38%",
       "banner_image": "/images/eee/kt3/l10_banner_saxton_england_1579.jpg"
@@ -17066,9 +17363,6 @@
               "National Pride and Oceanic Mastery: As the first Englishman—and only the second commander in world history—to successfully navigate the globe and survive, Drake shattered the myth of Spanish and Portuguese maritime invincibility, claiming 'Nova Albion' (California) for Elizabeth and establishing England as a daring, global seafaring power."
             ]
           },
-          "image": "/images/upgraded/gcse-med-eee/eee_drake_1591_rmg_bhc2662.jpg",
-          "image_alt": "1591 oil portrait of Sir Francis Drake by Marcus Gheeraerts the Younger (Royal Museums Greenwich BHC2662) wearing the Drake Jewel beside a terrestrial globe",
-          "caption": "Sir Francis Drake (1540–1596, painted 1591 by Marcus Gheeraerts the Younger, RMG BHC2662): Celebrated privateer and navigator who led the circumnavigation of the globe (1577–1580).",
           "isReversed": true,
           "sources": [
             {
@@ -17105,7 +17399,88 @@
             "<span class=\"para-ref\">[4.1]</span> In December 1577 **Francis Drake** sailed from Plymouth with five vessels and 164 men—backed secretly by Elizabeth, Walsingham, and Leicester—to raid Spanish Pacific ports and avenge Spain’s 1568 treachery at San Juan de Ulúa. Surviving mutiny and ferocious storms through the **Strait of Magellan**, only Drake’s renamed flagship *Golden Hind* reached the Pacific in September 1578.",
             "<span class=\"para-ref\">[4.2]</span> Sweeping north past unfortified Valparaíso and Callao, Drake captured the silver-laden *Cacafuego* before sailing up the North American coast in June 1579, where friendly Miwok people welcomed him and he claimed **Nova Albion** (‘New England’, likely California) for Queen Elizabeth. Crossing the Pacific, trading for cloves in the Moluccas, and rounding Africa, Drake reached Plymouth in September 1580."
           ],
-          "act_title": "Stage 4: Drake’s Circumnavigation — How did Drake navigate the Strait of Magellan and claim Nova Albion?"
+          "act_title": "Stage 4: Drake’s Circumnavigation — How did Drake navigate the Strait of Magellan and claim Nova Albion?",
+          "stage_hook_map": {
+            "id": "eee-l11-drake-circumnavigation-map",
+            "title": "Francis Drake’s Circumnavigation of the Globe Aboard the Golden Hind (1577–80)",
+            "subtitle": "December 1577 – 26 September 1580 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/eee/kt3/eee_map_l11_drake_circumnavigation_1577_80.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 49,
+                "y": 27.2,
+                "color": "#1d4ed8",
+                "label": "1. Plymouth Departure",
+                "badge": "5 Ships & Secret Backing",
+                "date": "Dec 1577",
+                "title": "Plymouth Sound: Five Ships Sail with Secret Royal Backing (December 1577)",
+                "details": "In December 1577, Francis Drake sailed from Plymouth with five ships and 164 men, secretly financed by Queen Elizabeth I, Sir Francis Walsingham, and the Earl of Leicester. Officially bound for Alexandria, Drake’s real mission was to raid unguarded Spanish Pacific treasure ports and avenge Spain’s 1568 ambush at San Juan de Ulúa.",
+                "hinge": "Why did Queen Elizabeth I invest secretly in Drake’s 1577 expedition while publicly denying royal involvement to the Spanish ambassador?"
+              },
+              {
+                "id": "spot-2",
+                "x": 32.4,
+                "y": 78,
+                "color": "#0284c7",
+                "label": "2. Strait of Magellan",
+                "badge": "Pelican → Golden Hind",
+                "date": "Aug–Sep 1578",
+                "title": "Strait of Magellan: Pelican Renamed Golden Hind & Pacific Storms",
+                "details": "Entering the treacherous Strait of Magellan in August 1578, Drake renamed his flagship Pelican the Golden Hind in honour of court patron Sir Christopher Hatton’s crest. Violent Pacific gales sank the Marigold and drove the Elizabeth home, leaving the Golden Hind alone—and blowing Drake far enough south to prove Tierra del Fuego was an island.",
+                "hinge": "How did surviving the Strait of Magellan give Drake complete tactical surprise along Spain’s Pacific coast?"
+              },
+              {
+                "id": "spot-3",
+                "x": 26.6,
+                "y": 51.5,
+                "color": "#be123c",
+                "label": "3. Valparaíso & Cacafuego",
+                "badge": "£140,000 Silver Prize",
+                "date": "Dec 1578–1 Mar 1579",
+                "title": "Valparaíso, Callao & Capture of the Cacafuego off Peru (1 March 1579)",
+                "details": "Sailing north into Spain’s hitherto unchallenged \"Spanish Lake\", Drake raided Valparaíso and Callao before intercepting the Spanish treasure galleon Nuestra Señora de la Concepción (nicknamed Cacafuego) on 1 March 1579. Its 26 tons of silver, 80 pounds of gold, and precious Spanish sea charts yielded roughly £140,000 from a single ship.",
+                "hinge": "Why were Spain’s Pacific ports and treasure galleons like the Cacafuego so lightly defended when Drake arrived in 1578–79?"
+              },
+              {
+                "id": "spot-4",
+                "x": 16.8,
+                "y": 33.2,
+                "color": "#7c3aed",
+                "label": "4. Nova Albion",
+                "badge": "Claimed for Elizabeth I",
+                "date": "Jun 1579",
+                "title": "Nova Albion (California): Coast Miwok Welcome & English Claim (June 1579)",
+                "details": "Unable to return safely past alerted Spanish squadrons in Peru, Drake careened the leaking Golden Hind in a sheltered California bay in June 1579. Welcomed peacefully by Coast Miwok people, Drake nailed a brass plate to a post claiming \"Nova Albion\" (\"New England\") for Queen Elizabeth I—foreshadowing English North American colonisation.",
+                "hinge": "How did Drake’s peaceful landing and territorial claim at Nova Albion boost later English ambitions in North America?"
+              },
+              {
+                "id": "spot-5",
+                "x": 86.9,
+                "y": 51.5,
+                "align": "left",
+                "color": "#047857",
+                "label": "5. Moluccas / Ternate",
+                "badge": "Spice Islands Treaty",
+                "date": "Nov 1579",
+                "title": "Ternate in the Moluccas: Clove Cargo & Anglo-Moluccan Spice Treaty",
+                "details": "After a 68-day Pacific crossing, Drake reached Ternate in the Moluccas (\"Spice Islands\") in November 1579. Welcomed by Sultan Baabullah—who was fighting Portuguese dominance—Drake traded linen and silver for six tons of valuable cloves and struck a commercial agreement opening future English East Indies trade.",
+                "hinge": "Why was Drake’s November 1579 treaty with the Sultan of Ternate significant long after the Golden Hind’s Spanish silver was spent?"
+              },
+              {
+                "id": "spot-6",
+                "x": 55.1,
+                "y": 68.8,
+                "color": "#b45309",
+                "label": "6. Cape & Return Home",
+                "badge": "4,700% Profit (Sep 1580)",
+                "date": "Jun–26 Sep 1580",
+                "title": "Cape of Good Hope & Return to Plymouth: £400,000 Treasure & Knighthood",
+                "details": "Rounding the Cape of Good Hope in June 1580, the Golden Hind anchored in Plymouth on 26 September 1580 with £400,000+ in treasure—delivering ~4,600–4,700% returns to investors and clearing Elizabeth’s entire royal debt. Defying Philip II’s fury, Elizabeth publicly knighted Drake aboard the Golden Hind at Deptford in April 1581.",
+                "hinge": "Why did Elizabeth’s public knighting of Drake at Deptford in April 1581 push England and Spain markedly closer to open war?"
+              }
+            ]
+          }
         },
         {
           "stage": 5,
@@ -18179,10 +18554,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt3/l11_banner_ortelius_world_map_1570.jpg",
-        "alt": "Abraham Ortelius hand-coloured world map Typus Orbis Terrarum (1570) engraved by Frans Hogenberg showing the Americas, Europe, Africa, Asia, and Terra Australis on an oval projection",
-        "position": "center 35%",
-        "caption": "Abraham Ortelius (engraved by Frans Hogenberg), Typus Orbis Terrarum, from Theatrum Orbis Terrarum (Antwerp, 1570). The landmark Renaissance world atlas consulted by Elizabethan navigators, geographers, and joint-stock investors."
+        "image": "/images/eee/kt3/eee_l11_banner_vroom_galleons_1600.jpg",
+        "alt": "Hendrick Cornelisz Vroom maritime oil painting (1600, Rijksmuseum) showing multi-masted ocean-going galleons under square main sails, lateen mizzen sails, and broadside gunports setting sail onto the open sea",
+        "position": "center 56%",
+        "caption": "Hendrick Cornelisz Vroom, Ocean-Going Galleons Setting Sail (1600, Rijksmuseum, Amsterdam). Illustrating the sleek, multi-masted hulls, combined square and lateen rigging, and low gun decks that enabled late sixteenth-century transoceanic voyages."
       },
       "banner_position": "center 35%",
       "banner_image": "/images/eee/kt3/l11_banner_ortelius_world_map_1570.jpg"
@@ -18685,9 +19060,74 @@
             "<span class=\"para-ref\">[3.2]</span> When Grenville sailed back to England in August for fresh supplies, Lane’s 107 men at Roanoke became dangerously dependent on local Algonquians for maize and woven reed **Secotan fish traps** they could neither build nor repair themselves, while brought-over European diseases (measles or smallpox) sparked mysterious deaths and deep suspicion inside Native villages."
           ],
           "act_title": "Stage 3: The First Roanoke Colony & Disaster — How did the wreck of the Tiger ruin seed corn and force food reliance?",
-          "image": "/images/eee/kt3/l12_s2_fort_raleigh_roanoke_1585.jpg",
-          "image_alt": "Archaeological reconstruction illustration by the U.S. National Park Service showing Ralph Lane's 1585 star-shaped earthwork bastion fort at Roanoke Island with timber storehouse and St George's flag",
-          "caption": "Archaeological Reconstruction of Ralph Lane’s 1585 Earthwork Fort at Roanoke Island (U.S. National Park Service, 1962). Built to defend the 107 male colonists after the Tiger grounded at Ocracoke Inlet and ruined their seed corn."
+          "stage_hook_map": {
+            "id": "eee-l12-raleigh-roanoke-virginia-map",
+            "title": "Raleigh’s Colonisation of Virginia: Roanoke Island, Tiger Grounding & ‘CROATOAN’",
+            "subtitle": "1584–1590 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/eee/kt3/eee_map_l12_raleigh_roanoke_virginia_1584_90.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 29.5,
+                "y": 21,
+                "color": "#0284c7",
+                "label": "1. Chesapeake Bay",
+                "badge": "Intended 1587 Harbour",
+                "date": "May–Jul 1587",
+                "title": "Chesapeake Bay: Intended Deep-Water Harbour for John White’s 1587 Colony",
+                "details": "Having seen how shallow Outer Banks sandbars crippled shipping at Roanoke in 1585, Ralph Lane and Thomas Harriot recommended settling further north inside deep-water Chesapeake Bay. In May 1587, Raleigh instructed Governor John White’s 118 men, women, and children to build the \"Cittie of Ralegh\" on the Chesapeake—until pilot Simon Fernandez refused to sail past Roanoke.",
+                "hinge": "Why would a deep-water harbour inside Chesapeake Bay have solved one of Roanoke Island’s biggest geographic weaknesses?"
+              },
+              {
+                "id": "spot-2",
+                "x": 34.6,
+                "y": 51.7,
+                "color": "#1d4ed8",
+                "label": "2. Roanoke Island",
+                "badge": "1585 Fort & 1587 Families",
+                "date": "1585–86 & 1587",
+                "title": "Roanoke Island: Lane’s 1585 Military Garrison & White’s 1587 Family Settlement",
+                "details": "Reconnoitred by Amadas and Barlowe in 1584, sheltered Roanoke Island hosted both Ralph Lane’s 107 all-male colonists (1585–86)—half of them soldiers and gentlemen lacking farming skills—and John White’s 1587 family colony where Virginia Dare was born and Manteo was named Lord of Roanoke. Yet dangerous Outer Banks shoals prevented large supply ships anchoring close inshore.",
+                "hinge": "How did the recruitment of John White’s 1587 settlers improve on the mistakes made in Ralph Lane’s 1585 expedition?"
+              },
+              {
+                "id": "spot-3",
+                "x": 32.5,
+                "y": 51.9,
+                "color": "#7c3aed",
+                "label": "3. Dasamonquepeuc & Secotan",
+                "badge": "Chief Wingina Ambush",
+                "date": "1585–1 Jun 1586",
+                "title": "Dasamonquepeuc & Secotan: Algonquin Relations Collapse & Wingina Killed",
+                "details": "Unable to grow crops or weave Native reed fish traps, Lane’s hungry garrison relied on Secotan villages for maize even as drought struck and Grenville’s burning of Aquascogoc poisoned trust. When Chief Wingina (Pemisapan) halted food trade in spring 1586, Lane staged a pre-emptive 1 June 1586 ambush at Dasamonquepeuc killing Wingina—forcing the starving garrison to flee home with Drake on 18 June.",
+                "hinge": "Why did English dependence on Algonquin maize and fish traps turn strained relations with Chief Wingina into a fatal crisis for the 1585 colony?"
+              },
+              {
+                "id": "spot-4",
+                "x": 29.8,
+                "y": 73.1,
+                "color": "#be123c",
+                "label": "4. Wokokon / Ocracoke Inlet",
+                "badge": "Tiger Grounded",
+                "date": "29 Jun 1585",
+                "title": "Wokokon (Ocracoke Inlet): Flagship Tiger Strikes a Sandbar (29 June 1585)",
+                "details": "Already arriving in late June—too late in the season to plant spring crops—Sir Richard Grenville’s flagship Tiger grounded violently on a shallow Outer Banks sandbar at Wokokon (Ocracoke Inlet) on 29 June 1585. Flooding seawater ruined most of the expedition’s seed corn, salt, dried peas, and gunpowder before the fort on Roanoke was even built.",
+                "hinge": "How did the grounding of the Tiger on 29 June 1585 trigger a chain reaction of food shortages and conflict over the following twelve months?"
+              },
+              {
+                "id": "spot-5",
+                "x": 36.3,
+                "y": 68.1,
+                "color": "#047857",
+                "label": "5. Croatoan (Hatteras)",
+                "badge": "‘CROATOAN’ Post",
+                "date": "Aug 1587–Aug 1590",
+                "title": "Croatoan (Hatteras Island): Armada Delay & The ‘Lost Colony’ (August 1590)",
+                "details": "When John White sailed back to England for urgent supplies in August 1587, Queen Elizabeth requisitioned every seaworthy vessel against the 1588 Spanish Armada, blocking relief ships for three years. Returning at last in August 1590, White found Roanoke dismantled without a distress cross—only \"CROATOAN\" carved on a palisade post, pointing toward Manteo’s friendly kin on Hatteras Island before storms forced White’s ship away.",
+                "hinge": "How did war with Spain in 1588 seal the fate of the 1587 Roanoke settlers despite Raleigh and White’s better planning?"
+              }
+            ]
+          }
         },
         {
           "stage": 4,
@@ -19074,10 +19514,10 @@
           "id": "eee_l12_source_a",
           "letter": "A",
           "title": "Source A: Sir Walter Raleigh, Courtier, Explorer, and Coloniser (c. 1588)",
-          "src": "/images/sir_walter_raleigh.jpg",
-          "image": "/images/sir_walter_raleigh.jpg",
-          "source": "/images/sir_walter_raleigh.jpg",
-          "caption": "Sir Walter Raleigh (1554–1618), royal favourite who received a royal patent from Elizabeth in 1584 granting him exclusive rights to colonize 'Virginia'.",
+          "src": "/images/eee/kt3/eee_l12_s0_sir_walter_raleigh_1588_npg7.jpg",
+          "image": "/images/eee/kt3/eee_l12_s0_sir_walter_raleigh_1588_npg7.jpg",
+          "source": "/images/eee/kt3/eee_l12_s0_sir_walter_raleigh_1588_npg7.jpg",
+          "caption": "Sir Walter Raleigh (painted 1588 by the “H” monogrammist, National Portrait Gallery NPG 7), royal favourite granted a six-year patent by Queen Elizabeth I in March 1584 to colonise Virginia.",
           "desc": "Portrait of Sir Walter Raleigh wearing a pearl-adorned doublet and cloak.",
           "provenance": "National Portrait Gallery, London (NPG 7), c. 1588.",
           "citation": "National Portrait Gallery, London.",
@@ -19090,7 +19530,8 @@
           "model_answer": "Raleigh sought to establish a permanent English base to raid Spanish treasure fleets in the Caribbean, discover precious metals, and demonstrate that Protestant England could rival the Spanish Empire in the New World.",
           "teacher_notes": {
             "source_context": "Portrait of Sir Walter Raleigh. In March 1584, Elizabeth granted Raleigh letters patent to discover and settle overseas lands not possessed by any Christian prince. He named the territory 'Virginia' in honour of the Virgin Queen. However, Elizabeth refused to let Raleigh leave England because he was her personal favourite at court. **Hinge Question:** Why was Sir Walter Raleigh unable to lead the Virginia colonization expeditions in person despite holding the royal patent from Elizabeth?"
-          }
+          },
+          "image_alt": "Oil portrait of Sir Walter Raleigh (1588, National Portrait Gallery NPG 7) wearing a silver-white silk doublet, pearl-trimmed black cloak, and large drop-pearl earring beneath the motto AMOR ET VIRTUTE"
         },
         {
           "id": "eee_l12_source_b",
@@ -19812,10 +20253,10 @@
         ]
       },
       "banner": {
-        "image": "/images/eee/kt3/l12_banner_debry_virginia_coast_1590.jpg",
-        "alt": "Theodor de Bry after John White engraved coastal chart Americae pars, Nunc Virginia dicta (1590) showing English sailing ships approaching the Outer Banks, Roanoke Island, Croatoan, Secotan, and Chesapeake Bay",
-        "position": "center 45%",
-        "caption": "Theodor de Bry after John White, Americae pars, Nunc Virginia dicta (Frankfurt, 1590, Library of Congress). Engraved panorama of the Virginia coastline charting shallow Outer Banks inlets, Roanoke Island, Secotan villages, and Chesapeake Bay."
+        "image": "/images/eee/kt3/eee_l12_banner_outer_banks_hatteras_coast.jpg",
+        "alt": "Wide coastal panorama of shallow Atlantic surf breaking across sandy barrier shoals and sea-oats dunes along Cape Hatteras National Seashore on the Outer Banks of North Carolina",
+        "position": "center 52%",
+        "caption": "Barrier-Island Dunes and Shallow Atlantic Shoals of the Outer Banks (Cape Hatteras National Seashore, North Carolina). These shifting barrier sandbars sheltered Roanoke Island inside Pamlico Sound yet grounded heavy supply ships like the Tiger in June 1585."
       },
       "banner_position": "center 45%",
       "banner_image": "/images/eee/kt3/l12_banner_debry_virginia_coast_1590.jpg"
@@ -20022,5 +20463,214 @@
   "key_stage": "GCSE",
   "yearGroup": "GCSE (9–1)",
   "year_group": "GCSE (9–1)",
-  "category": "GCSE"
+  "category": "GCSE",
+  "guided_reading": [
+    {
+      "id": "eee_gr_kt1_settlement_1559",
+      "lesson_index": 1,
+      "lesson_id": "lesson_1_2",
+      "lesson_label": "KT 1.2: The Religious Settlement (1559)",
+      "short_tab_title": "1559 Settlement Acts",
+      "book_title": "Verbatim Statutory Extracts from Elizabeth I’s Act of Supremacy (1 Eliz. c. 1) & Act of Uniformity (1 Eliz. c. 2), April 1559",
+      "author": "Parliament of England (Westminster • April 1559 • 1 Eliz. 1, cc. 1–2)",
+      "cover_image": "/images/book_of_common_prayer_1559_authentic.png",
+      "cover_caption": "Title page of the Elizabethan Book of Common Prayer printed in London by Richard Jugge and John Cawood by royal privilege, establishing the single English pattern of parish worship mandated under the 1559 Act of Uniformity.",
+      "author_context": "Meeting at Westminster between January and May 1559 amidst fierce opposition from twenty-six Catholic Marian bishops in the House of Lords and high expectations from returning Protestant exiles, Elizabeth I’s first Parliament passed two foundational statutes that shaped the Church of England. The Act of Supremacy severed England from papal jurisdiction in Rome while styling Elizabeth \"Supreme Governor\" rather than Henry VIII’s \"Supreme Head\"; alongside it, the Act of Uniformity passed the Lords by just twenty-one votes to eighteen, mandating a revised English Book of Common Prayer, traditional parish ornaments, and a twelve-penny Sunday recusancy fine.",
+      "source_type": "primary_statute",
+      "source_type_label": "Acts of Parliament (1 Eliz. cc. 1–2, April 1559)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim statutory extracts from An Act restoring to the Crown the ancient Jurisdiction over the State Ecclesiastical and Spiritual (1 Eliz. c. 1) and An Act for the Uniformity of Common Prayer and Divine Service in the Church (1 Eliz. c. 2), April 1559, in Statutes of the Realm, Vol. IV, Part 1 (London, 1819), pp. 350–358.",
+      "extract": "<strong>Document I — The Act of Supremacy (1 Eliz. c. 1, April 1559): Extinguishing Papal Jurisdiction &amp; The Oath of Supremacy</strong>\n\n\"And to the intent that all usurped and foreign power and authority, spiritual and temporal, may forever be clearly extinguished, and never to be used or obeyed within this realm... may it please Your Highness that it may be further enacted by the authority aforesaid, that no foreign prince, person, prelate, state, or potentate, spiritual or temporal, shall at any time after the last day of this session of Parliament, use, enjoy, or exercise any manner of power, jurisdiction, superiority, authority, pre-eminence, or privilege, spiritual or ecclesiastical, within this realm...\n\nAnd for the better observation and maintenance of this Act, may it please Your Highness that it may be further enacted... that every archbishop, bishop, and all and every other ecclesiastical person, and other ecclesiastical officer and minister... and every temporal judge, justice, mayor, and other lay or temporal officer and minister... shall make, take, and receive a corporal oath upon the Evangelist, before such person or persons as shall please Your Highness... according to the tenor and effect hereafter following, that is to say:\n\n‘I, A. B., do utterly testify and declare in my conscience, that the Queen’s Highness is the only Supreme Governor of this realm, and of all other her Highness’s dominions and countries, as well in all spiritual or ecclesiastical things or causes, as temporal, and that no foreign prince, person, prelate, state, or potentate hath, or ought to have, any jurisdiction, power, superiority, pre-eminence, or authority ecclesiastical or spiritual, within this realm; and therefore I do utterly renounce and forsake all foreign jurisdictions, powers, superiorities, and authorities...’\"\n\n<strong>Document II — The Act of Uniformity (1 Eliz. c. 2, April 1559): The English Prayer Book, Twelve-Penny Recusancy Fine &amp; Ornaments Rubric</strong>\n\n\"...all and singular ministers in any cathedral or parish church, or other place within this realm of England, Wales, and the marches of the same... shall from and after the feast of the Nativity of St. John Baptist next coming be bounden to say and use the Mattins, Evensong, celebration of the Lord’s Supper and administration of each of the sacraments, and all their common and open prayer, in such order and form as is mentioned in the said book, so authorized by Parliament in the said fifth and sixth years of the reign of King Edward the Sixth, with one alteration or addition of certain lessons to be used on every Sunday in the year, and the form of the Litany altered and corrected, and two sentences only added in the delivery of the sacrament to the communicants, and none other or otherwise...\n\nAnd that from and after the said feast of the Nativity of St. John Baptist next coming, all and every person and persons inhabiting within this realm, or any other the Queen’s Majesty’s dominions, shall diligently and faithfully, having no lawful or reasonable excuse to be absent, endeavour themselves to resort to their parish church or chapel accustomed... upon every Sunday and other days ordained and used to be kept as holy days, and then and there to abide orderly and soberly during the time of the common prayer, preachings, or other service of God there to be used and ministered; upon pain of punishment by the censures of the Church, and also upon pain that every person so offending shall forfeit for every such offence twelve pence, to be levied by the churchwardens of the parish where such offence shall be done, to the use of the poor of the same parish...\n\nProvided always, and be it enacted, that such ornaments of the church, and of the ministers thereof, shall be retained and be in use, as was in this church of England, by authority of Parliament, in the second year of the reign of King Edward the Sixth, until other order shall be therein taken by the authority of the Queen’s Majesty...\"",
+      "vocabVault": [
+        {
+          "term": "Supreme Governor",
+          "def": "Elizabeth I’s carefully chosen statutory title over the Church of England, replacing Henry VIII’s \"Supreme Head\" to ease Catholic scruples and patriarchal objections to female spiritual headship.",
+          "word": "Supreme Governor",
+          "definition": "Elizabeth I’s carefully chosen statutory title over the Church of England, replacing Henry VIII’s \"Supreme Head\" to ease Catholic scruples and patriarchal objections to female spiritual headship."
+        },
+        {
+          "term": "Foreign Prelate or Potentate",
+          "def": "Legal wording aimed directly at the Pope in Rome, abolishing papal courts, taxes, and spiritual jurisdiction across Elizabeth’s dominions.",
+          "word": "Foreign Prelate or Potentate",
+          "definition": "Legal wording aimed directly at the Pope in Rome, abolishing papal courts, taxes, and spiritual jurisdiction across Elizabeth’s dominions."
+        },
+        {
+          "term": "Two Sentences Added",
+          "def": "The Act of Uniformity’s deliberate fusion of the traditionalist 1549 Communion words (\"The Body of our Lord Jesus Christ...\") with the Protestant 1552 memorial sentence (\"Take and eat this in remembrance...\").",
+          "word": "Two Sentences Added",
+          "definition": "The Act of Uniformity’s deliberate fusion of the traditionalist 1549 Communion words (\"The Body of our Lord Jesus Christ...\") with the Protestant 1552 memorial sentence (\"Take and eat this in remembrance...\")."
+        },
+        {
+          "term": "Forfeit Twelve Pence",
+          "def": "The one-shilling statutory recusancy fine collected by parish churchwardens for poor relief from anyone absent without lawful excuse from Sunday or holy-day worship.",
+          "word": "Forfeit Twelve Pence",
+          "definition": "The one-shilling statutory recusancy fine collected by parish churchwardens for poor relief from anyone absent without lawful excuse from Sunday or holy-day worship."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Look at the Oath in Document I: who actually had to swear the Oath of Supremacy—every ordinary villager in England, or specific officeholders?",
+          "answer": "Only clergy, bishops, judges, mayors, university fellows, and royal officeholders had to swear the Oath—ordinary lay Catholics were not forced to take an oath of conscience so long as they stayed outwardly obedient.",
+          "prompt": "Look at the Oath in Document I: who actually had to swear the Oath of Supremacy—every ordinary villager in England, or specific officeholders?",
+          "parent_guide": "Only clergy, bishops, judges, mayors, university fellows, and royal officeholders had to swear the Oath—ordinary lay Catholics were not forced to take an oath of conscience so long as they stayed outwardly obedient."
+        },
+        {
+          "question": "Why did adding \"two sentences\" at Communion and keeping Edward VI’s early church ornaments (\"Ornaments Rubric\") help prevent religious civil war in 1559?",
+          "answer": "Combining the 1549 and 1552 Communion words allowed traditionalists to believe in Christ’s Real Presence while Protestants saw a memorial meal, and keeping familiar vestments made parish churches look reassuringly traditional.",
+          "prompt": "Why did adding \"two sentences\" at Communion and keeping Edward VI’s early church ornaments (\"Ornaments Rubric\") help prevent religious civil war in 1559?",
+          "parent_guide": "Combining the 1549 and 1552 Communion words allowed traditionalists to believe in Christ’s Real Presence while Protestants saw a memorial meal, and keeping familiar vestments made parish churches look reassuringly traditional."
+        },
+        {
+          "question": "How harsh was a twelve-penny (one shilling) fine for missing Sunday church—and why did it affect poor labourers differently from wealthy Catholic gentry?",
+          "answer": "Twelve pence equalled roughly two days’ wages for an agricultural labourer, compelling ordinary villagers to attend, whereas wealthy Catholic gentry could easily pay the fine or attend occasionally as \"Church Papists\".",
+          "prompt": "How harsh was a twelve-penny (one shilling) fine for missing Sunday church—and why did it affect poor labourers differently from wealthy Catholic gentry?",
+          "parent_guide": "Twelve pence equalled roughly two days’ wages for an agricultural labourer, compelling ordinary villagers to attend, whereas wealthy Catholic gentry could easily pay the fine or attend occasionally as \"Church Papists\"."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Which exact words in Document I strip the Pope of authority in England without ever printing the word \"Pope\"?<br><br><strong>Pair:</strong> Compare the Protestant English Prayer Book requirement in Document II with its final \"Ornaments Rubric\" proviso—why did strict returning Puritans later condemn that proviso as \"popish\"?<br><br><strong>Share:</strong> Taken together, do these two verbatim statutes prove Elizabeth was building a Protestant church disguised with conservative outward compromises, or a genuine middle ground?",
+      "questions": [
+        "Which title did the Oath of Supremacy (1 Eliz. c. 1) require all clergy, judges, and royal officers to recognise for Queen Elizabeth I, and whose authority did they have to renounce?",
+        "What two alterations did the Act of Uniformity (1 Eliz. c. 2) make to Edward VI’s 1552 Prayer Book regarding the Litany and the delivery of Communion?",
+        "What financial penalty did the Act of Uniformity impose on anyone absent from their parish church on Sundays and holy days without reasonable excuse, and how was the money used?"
+      ]
+    },
+    {
+      "id": "eee_gr_kt2_tilbury_1588",
+      "lesson_index": 7,
+      "lesson_id": "lesson_2_4",
+      "lesson_label": "KT 2.4: The Spanish Armada (1588)",
+      "short_tab_title": "Tilbury Speech (1588)",
+      "book_title": "Queen Elizabeth I’s Verbatim Speech to the Troops at Tilbury Camp (9 August 1588)",
+      "author": "Queen Elizabeth I (recorded by Camp Chaplain Dr Leonel Sharp • Cabala, 1654 / BL Harley MS 6798)",
+      "cover_image": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+      "cover_caption": "The Armada Portrait of Queen Elizabeth I (c. 1588, Woburn Abbey Collection), commemorating England’s deliverance from the Spanish invasion.",
+      "author_context": "On 8–9 August 1588 (Old Style), even as English warships battered the Spanish Armada off Gravelines, Londoners still feared that the Duke of Parma’s 27,000 veteran soldiers might cross from Flanders and land in Kent or up the Thames estuary. Rejecting nervous councillors who warned against appearing before armed crowds after Catholic assassination plots, fifty-four-year-old Queen Elizabeth I rode on a white horse into the Earl of Leicester’s camp at West Tilbury in Essex, where Camp Chaplain Dr Leonel Sharp copied down her famous address to be read aloud across the militia.",
+      "source_type": "primary_speech",
+      "source_type_label": "Royal Military Oration (Tilbury Camp, Essex • 9 August 1588)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim primary text transmitted by eyewitness camp chaplain Dr Leonel Sharp in his letter to the Duke of Buckingham, printed in Cabala, Mysteries of State and Government (London, 1654, p. 260; cf. British Library Harley MS 6798, f. 87).",
+      "extract": "<strong>Queen Elizabeth I to the Land Forces Assembled at Tilbury Camp, Essex (9 August 1588):</strong>\n\n\"My loving people,\n\nWe have been persuaded by some that are careful of our safety, to take heed how we commit our selves to armed multitudes, for fear of treachery; but I assure you I do not desire to live to distrust my faithful and loving people. Let tyrants fear. I have always so behaved myself that, under God, I have placed my chiefest strength and safeguard in the loyal hearts and good-will of my subjects; and therefore I am come amongst you, as you see, at this time, not for my recreation and disport, but being resolved, in the midst and heat of the battle, to live and die amongst you all; to lay down for my God, and for my kingdom, and my people, my honour and my blood, even in the dust.\n\nI know I have the body but of a weak and feeble woman; but I have the heart and stomach of a king, and of a king of England too, and think foul scorn that Parma or Spain, or any prince of Europe, should dare to invade the borders of my realm; to which rather than any dishonour shall grow by me, I myself will take up arms, I myself will be your general, judge, and rewarder of every one of your virtues in the field.\n\nI know already, for your forwardness you have deserved rewards and crowns; and We do assure you in the word of a prince, they shall be duly paid you. In the mean time, my lieutenant general shall be in my stead, than whom never prince commanded a more noble or worthy subject; not doubting but by your obedience to my general, by your concord in the camp, and your valour in the field, we shall shortly have a famous victory over those enemies of my God, of my kingdom, and of my people.\"",
+      "vocabVault": [
+        {
+          "term": "Armed Multitudes & Treachery",
+          "def": "Large gatherings of armed militia soldiers; Privy Councillors feared a concealed Catholic assassin might shoot Elizabeth following the 1584 murder of William of Orange and the 1586 Babington Plot.",
+          "word": "Armed Multitudes & Treachery",
+          "definition": "Large gatherings of armed militia soldiers; Privy Councillors feared a concealed Catholic assassin might shoot Elizabeth following the 1584 murder of William of Orange and the 1586 Babington Plot."
+        },
+        {
+          "term": "Heart and Stomach of a King",
+          "def": "In Tudor English, \"stomach\" meant fierce martial courage and spirit; Elizabeth contrasted her mortal female body (\"body natural\") with her sovereign kingly authority (\"body politic\").",
+          "word": "Heart and Stomach of a King",
+          "definition": "In Tudor English, \"stomach\" meant fierce martial courage and spirit; Elizabeth contrasted her mortal female body (\"body natural\") with her sovereign kingly authority (\"body politic\")."
+        },
+        {
+          "term": "Think Foul Scorn (Parma or Spain)",
+          "def": "To hold in utter contempt; Elizabeth named Alexander Farnese, Duke of Parma—commander of Spain’s 27,000 invasion troops in Flanders—and King Philip II as would-be invaders of England.",
+          "word": "Think Foul Scorn (Parma or Spain)",
+          "definition": "To hold in utter contempt; Elizabeth named Alexander Farnese, Duke of Parma—commander of Spain’s 27,000 invasion troops in Flanders—and King Philip II as would-be invaders of England."
+        },
+        {
+          "term": "My Lieutenant General",
+          "def": "Robert Dudley, Earl of Leicester, appointed Commander-in-Chief of the English land army encamped at Tilbury to guard the Thames approaches to London.",
+          "word": "My Lieutenant General",
+          "definition": "Robert Dudley, Earl of Leicester, appointed Commander-in-Chief of the English land army encamped at Tilbury to guard the Thames approaches to London."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why had Elizabeth’s advisers warned her against riding out in front of \"armed multitudes\" in August 1588—and how did she turn that warning into a compliment to her soldiers?",
+          "answer": "After Pope Pius V’s 1570 excommunication bull, William of Orange’s assassination in 1584, and the 1586 Babington Plot, advisers feared a lone traitor in the ranks might kill the Queen; Elizabeth flipped that fear around (\"Let tyrants fear\"), telling the militia she trusted their \"loyal hearts\" with her life."
+        },
+        {
+          "question": "Look at the famous line \"I know I have the body but of a weak and feeble woman; but I have the heart and stomach of a king\"—is Elizabeth agreeing with Tudor sexism or outsmarting it?",
+          "answer": "She cleverly concedes sixteenth-century patriarchal assumptions about a woman’s physical body only to sweep them aside, asserting that an anointed English monarch’s divinely granted courage and authority (\"heart and stomach of a king of England\") outrank mortal gender."
+        },
+        {
+          "question": "Why did Elizabeth promise \"in the word of a prince, they shall be duly paid you\" near the end of the speech?",
+          "answer": "Leicester’s Tilbury camp suffered from unpaid wages and patchy food supplies; promising royal pay and battlefield rewards directly addressed ordinary conscripts’ practical grievances before asking for their obedience in battle."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why was Elizabeth still rallying land troops against \"Parma or Spain\" on 9 August 1588 when the naval Battle of Gravelines had been fought the day before?<br><br><strong>Pair:</strong> How does Elizabeth connect \"my God, my kingdom, and my people\" to turn a dynastic war into a patriotic Protestant crusade?<br><br><strong>Share:</strong> Which did more to secure England in August 1588: royal propaganda and morale at Tilbury, or Hawkins’ race-built galleons and fireships in the Channel?",
+      "questions": [
+        "Why had cautious advisers urged Elizabeth not to appear before \"armed multitudes\" at Tilbury, and how did she contrast herself with \"tyrants\" in her opening paragraph?",
+        "How did Elizabeth use the contrast between \"the body but of a weak and feeble woman\" and \"the heart and stomach of a king\" to overcome Tudor doubts about female military leadership?",
+        "Which two foreign enemies did Elizabeth name directly in Paragraph 2, and what three qualities (\"obedience... concord... valour\") did she demand from Leicester’s troops?"
+      ]
+    },
+    {
+      "id": "eee_gr_kt3_harriot_virginia_1588",
+      "lesson_index": 11,
+      "lesson_id": "lesson_3_4",
+      "lesson_label": "KT 3.4: Raleigh & Virginia (1584–90)",
+      "short_tab_title": "Harriot’s Virginia Report",
+      "book_title": "Verbatim Extracts from Thomas Harriot’s A Briefe and True Report of the New Found Land of Virginia (1588)",
+      "author": "Thomas Harriot (London • February 1588; Theodor de Bry Illustrated Edition, Frankfurt • 1590)",
+      "cover_image": "/images/eee/kt3/l12_s0_harriot_briefe_true_report_1590.jpg",
+      "cover_caption": "Engraved architectural title page of Thomas Harriot’s A Briefe and True Report of the New Found Land of Virginia (Theodor de Bry edition, Frankfurt, 1590, Library of Congress), flanking Harriot’s English title with portraits of coastal Algonquin inhabitants after John White.",
+      "author_context": "Oxford mathematician and astronomer Thomas Harriot spent a full year on Roanoke Island (1585–86) alongside artist John White under Sir Walter Raleigh’s royal patent, having first learned Carolina Algonquian in London from Manteo and Wanchese. Published in February 1588, Harriot’s scientific report aimed to refute bleak rumours spread by returning soldiers from Ralph Lane’s abandoned garrison and convince English merchants and families to invest in Virginia.",
+      "source_type": "primary_treatise",
+      "source_type_label": "Colonial Scientific Survey & Promotional Tract (1588)",
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim primary extracts from Thomas Harriot, A Briefe and True Report of the New Found Land of Virginia (London: Robert Robinson, February 1588; Theodor de Bry illustrated folio, Frankfurt, 1590, STC 12785 / Library of Congress Rare Book and Special Collections Division).",
+      "is_primary": true,
+      "is_adapted": false,
+      "extract": "<strong>I. Countering Slanderous Reports of the 1585–86 Roanoke Voyage:</strong>\n\n\"There have bin divers and variable reportes with some slaunderous and shamefull speeches bruited abroade by many that returned from the same Voyage: especially of that discovery which was made by the Colony transported by Sir Richard Greinvile in the yeare 1585, being of all the others the most principall and as yet of most effect, the time of their abode in the countrey beeing a whole yeare, when as in the other voyage before they stayed but sixe weekes; and the others after were onelie for supply and transportation, nothing more being discovered then had been before.\"\n\n<strong>II. Of Algonquian Crops — <em>Pagatowr</em> (Maize) &amp; <em>Uppowoc</em> (Tobacco):</strong>\n\n\"<em>Pagatowr</em>, a kinde of graine so called by the inhabitants; the same in the West Indies is called <em>Mayze</em>: English men call it Guinney wheate or Turkie wheate, according to the names of the countreys from whence the like hath beene brought. The graine is about the bignesse of our ordinary English peaze and not much different in forme and shape: but of divers colours: some white, some red, some yellow, and some blew. All of them yeelde a very white and sweete flowre: beeing used according to his kinde it maketh a very good bread.\"\n\n\"There is an herbe which is sowed a part by it selfe &amp; is called by the inhabitants <em>Uppowoc</em>: In the West Indies it hath divers names, according to the severall places &amp; countries where it groweth and is used: The Spaniardes generally call it <em>Tobacco</em>. The leaves thereof being dried and brought into powder: they use to take the fume or smoke thereof by sucking it thorough pipes made of clay into their stomacke and heade; from whence it purgeth superfluous fleame &amp; other grosse humors.\"\n\n<strong>III. Of the Ingenuity of the Inhabitants &amp; Unseen Epidemic Disease:</strong>\n\n\"In respect of us they are a people poore, and for want of skill and judgement in the knowledge and use of our things, doe esteeme our trifles before thinges of greater value: Notwithstanding in their proper manner considering the want of such meanes as we have, they seeme very ingenious; For although they have no such tooles, nor any such craftes, sciences and artes as wee; yet in those thinges they doe, they shewe excellencie of wit.\"\n\n\"There was no towne where wee had any subtile devise practised against us, wee leaving it unpunished or not revenged (because wee sought by all meanes possible to win them by gentlenesse) but that within a few dayes after our departure from everie such towne, the people began to die very fast, and many in short space; in some townes twenty, in some fourtie, in some sixtie, &amp; in one sixe score, which in trueth was very manie in respect of their numbers... The disease also so strange, that they neither knew what it was, nor how to cure it; the like by report of the oldest men in the countrey never happened before, time out of minde.\"",
+      "vocabVault": [
+        {
+          "term": "Bruited Abroade",
+          "def": "Spread publicly as rumour across England—referring to the complaints of hungry gentlemen and soldiers who returned from Ralph Lane’s abandoned 1585–86 Roanoke garrison after failing to find instant gold.",
+          "word": "Bruited Abroade",
+          "definition": "Spread publicly as rumour across England—referring to the complaints of hungry gentlemen and soldiers who returned from Ralph Lane’s abandoned 1585–86 Roanoke garrison after failing to find instant gold."
+        },
+        {
+          "term": "Pagatowr (Maize)",
+          "def": "The Carolina Algonquian name for high-yield Indian corn, on which English colonists relied for survival after seawater aboard the grounded Tiger ruined their English seed corn in June 1585.",
+          "word": "Pagatowr (Maize)",
+          "definition": "The Carolina Algonquian name for high-yield Indian corn, on which English colonists relied for survival after seawater aboard the grounded Tiger ruined their English seed corn in June 1585."
+        },
+        {
+          "term": "Uppowoc (Tobacco)",
+          "def": "The Native American plant dried and smoked through clay pipes, brought back from Roanoke and popularised at Elizabeth’s court by Sir Walter Raleigh before becoming Virginia’s lucrative cash crop.",
+          "word": "Uppowoc (Tobacco)",
+          "definition": "The Native American plant dried and smoked through clay pipes, brought back from Roanoke and popularised at Elizabeth’s court by Sir Walter Raleigh before becoming Virginia’s lucrative cash crop."
+        },
+        {
+          "term": "Sixe Score (Epidemic Mortality)",
+          "def": "One hundred and twenty people (6 × 20) dying in a single Algonquian town from Old World infectious diseases—such as influenza, smallpox, or measles—against which Native Americans had zero prior immunity.",
+          "word": "Sixe Score (Epidemic Mortality)",
+          "definition": "One hundred and twenty people (6 × 20) dying in a single Algonquian town from Old World infectious diseases—such as influenza, smallpox, or measles—against which Native Americans had zero prior immunity."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Why did Thomas Harriot feel compelled in 1588 to defend Virginia against \"slaunderous and shamefull speeches\"?",
+          "answer": "Roughly half of the 107 men on the 1585 Roanoke voyage were soldiers and gentlemen expecting easy Spanish-style gold and silver; when they faced hunger and fled home with Drake in June 1586, they blamed Virginia’s land rather than their own poor farming preparation—scaring off investors whom Raleigh needed.",
+          "prompt": "Why did Thomas Harriot feel compelled in 1588 to defend Virginia against \"slaunderous and shamefull speeches\"?",
+          "parent_guide": "Roughly half of the 107 men on the 1585 Roanoke voyage were soldiers and gentlemen expecting easy Spanish-style gold and silver; when they faced hunger and fled home with Drake in June 1586, they blamed Virginia’s land rather than their own poor farming preparation—scaring off investors whom Raleigh needed."
+        },
+        {
+          "question": "How does Harriot’s praise of Algonquian \"excellencie of wit\" help explain why the English struggled to feed themselves on Roanoke Island?",
+          "answer": "Although the Algonquians lacked European iron tools, they had mastered local maize farming and woven reed fish weirs suited to shallow coastal sounds—skills English soldiers and gentlemen neither possessed nor could copy once relations broke down.",
+          "prompt": "How does Harriot’s praise of Algonquian \"excellencie of wit\" help explain why the English struggled to feed themselves on Roanoke Island?",
+          "parent_guide": "Although the Algonquians lacked European iron tools, they had mastered local maize farming and woven reed fish weirs suited to shallow coastal sounds—skills English soldiers and gentlemen neither possessed nor could copy once relations broke down."
+        },
+        {
+          "question": "What happened inside Algonquian villages within days of English visits, and how did that wreck relations with Chief Wingina?",
+          "answer": "Unseen European microbes triggered devastating epidemics—killing 20 to 120 villagers per town—which terrified Algonquian communities, convinced Chief Wingina (Pemisapan) that the English were deadly enemies, and led to his decision to cut off food supplies in spring 1586.",
+          "prompt": "What happened inside Algonquian villages within days of English visits, and how did that wreck relations with Chief Wingina?",
+          "parent_guide": "Unseen European microbes triggered devastating epidemics—killing 20 to 120 villagers per town—which terrified Algonquian communities, convinced Chief Wingina (Pemisapan) that the English were deadly enemies, and led to his decision to cut off food supplies in spring 1586."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Which two Algonquian crops described by Harriot later sustained permanent English colonies in North America?<br><br><strong>Pair:</strong> Read Harriot’s dual purpose carefully: as a scientist he recorded Native ingenuity and mysterious epidemic deaths accurately, yet as Raleigh’s employee he was promoting investment—what harsh realities (like Grenville burning Aquascogoc or Lane’s ambush of Chief Wingina) did he downplay?<br><br><strong>Share:</strong> Why did Harriot and John White’s 1585–88 surveys prove vital for England’s later 1607 Jamestown colony even though Roanoke itself failed?",
+      "questions": [
+        "Why had returning members of the 1585–86 expedition spread \"slaunderous and shamefull speeches\" about Virginia?",
+        "What were the Algonquian and English/Spanish names of the two key crops Harriot described?",
+        "How many people died in affected Algonquian towns shortly after English visits, and why could Native elders not cure the disease?"
+      ]
+    }
+  ]
 }
