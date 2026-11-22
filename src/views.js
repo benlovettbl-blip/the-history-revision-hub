@@ -172,23 +172,38 @@ export function renderDashboard() {
     const bgPos = unit.cover_image_position || positionFallbacks[unit.id] || 'center';
 
     const isGcse = meta.stage === 'gcse';
+    const isKs2 = meta.stage === 'ks2';
     const badgeText = isGcse
       ? (meta.paperBadge || 'Edexcel Paper')
-      : (meta.eraBadge || meta.stageLabel || 'Key Stage 3');
+      : isKs2
+        ? (meta.eraBadge || meta.stageLabel || 'Key Stage 2')
+        : (meta.eraBadge || meta.stageLabel || 'Key Stage 3');
 
-    const imgLoadingAttr = meta.stage === 'gcse' || index >= 6 ? ' loading="lazy" decoding="async"' : ' decoding="async"';
+    const cardTopBorder = isGcse
+      ? 'border-top: 3.5px solid #f59e0b;'
+      : isKs2
+        ? 'border-top: 3.5px solid #4f46e5;'
+        : 'border-top: 3.5px solid #2563eb;';
+    const cardBadgeBg = isGcse
+      ? 'rgba(180, 83, 9, 0.92)'
+      : isKs2
+        ? (meta.badgeBg || 'rgba(67, 56, 202, 0.92)')
+        : 'rgba(30, 58, 138, 0.92)';
+    const launchColor = isKs2 ? '#4f46e5' : '#2563eb';
+
+    const imgLoadingAttr = meta.stage === 'gcse' || index >= 8 ? ' loading="lazy" decoding="async"' : ' decoding="async"';
     const cardImgHtml = imageUrl
       ? `
         <div class="module-card-img" style="position: relative; height: 130px; overflow: hidden; background: #0a101f; margin: -12px -12px 10px -12px; border-bottom: 1px solid var(--border-glass, #e2e8f0); flex-shrink: 0;">
           <div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imageUrl}'); background-size: cover; background-position: ${bgPos}; filter: blur(12px) brightness(0.35); opacity: 0.7; transform: scale(1.1);"></div>
-          <img src="${imageUrl}" alt="${displayTitle}"${imgLoadingAttr} style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.5)); transition: transform 0.3s ease;" />
+          <img src="${imageUrl}" alt="${displayTitle}"${imgLoadingAttr} onload="if(this.naturalWidth > this.naturalHeight * 1.18){this.style.objectFit='cover';this.style.objectPosition='${bgPos}';}" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.5)); transition: transform 0.3s ease;" />
         </div>
       `
       : `<div class="module-card-img" style="height: 130px; background: var(--primary); margin: -12px -12px 10px -12px;"></div>`;
 
     return `
-      <div class="module-card ${isUnlocked ? '' : 'locked'}" data-year="${meta.year || ''}" data-era="${meta.eraGroup || ''}" data-paper="${meta.paper || ''}" data-stage="${meta.stage}" style="animation-delay: ${index * 0.04}s; cursor: pointer; position: relative; ${isGcse ? 'border-top: 3.5px solid #f59e0b;' : 'border-top: 3.5px solid #2563eb;'}" data-action="launch-subapp" data-unit="${unit.id}">
-        <span style="position: absolute; top: 7px; left: 7px; z-index: 10; background: ${isGcse ? 'rgba(180, 83, 9, 0.92)' : 'rgba(30, 58, 138, 0.92)'}; color: #ffffff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.25); backdrop-filter: blur(4px);">
+      <div class="module-card ${isUnlocked ? '' : 'locked'}" data-year="${meta.year || ''}" data-era="${meta.eraGroup || ''}" data-paper="${meta.paper || ''}" data-stage="${meta.stage}" style="animation-delay: ${index * 0.04}s; cursor: pointer; position: relative; ${cardTopBorder}" data-action="launch-subapp" data-unit="${unit.id}">
+        <span style="position: absolute; top: 7px; left: 7px; z-index: 10; background: ${cardBadgeBg}; color: #ffffff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.25); backdrop-filter: blur(4px);">
           ${badgeText}
         </span>
         ${cardImgHtml}
@@ -203,7 +218,7 @@ export function renderDashboard() {
           <span style="color: var(--text-muted, #64748b); font-size: 0.72rem; font-weight: 600;">
             ${(unit.lessons && unit.lessons.length) ? `${unit.lessons.length} Lessons` : 'Enquiry Unit'}
           </span>
-          <span class="module-launch-link" style="font-weight: 700; color: #2563eb; display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem;">
+          <span class="module-launch-link" style="font-weight: 700; color: ${launchColor}; display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem;">
             <span>Explore</span>
             <i class="fa-solid fa-arrow-right" style="font-size: 0.66rem;"></i>
           </span>
@@ -212,100 +227,32 @@ export function renderDashboard() {
     `;
   };
 
-  // Key Stage 2 Section (Two-Tier Primary History Showcase: Lower/Bridge KS2 & Upper KS2)
+  // Key Stage 2 Section (Unified Compact Card Grid — Scales Cleanly as New KS2 Units Land)
   if (ks2Units.length > 0) {
-    const ks2CardMeta = {
-      ks2_romans: {
-        phaseBadge: 'Key Stage 2 • Ancient & Roman Britain',
-        badgeBg: '#b45309',
-        gradient: 'linear-gradient(135deg, #451a03 0%, #7c2d12 52%, #9a3412 100%)',
-        borderCol: 'rgba(253, 230, 138, 0.38)',
-        btnBg: 'linear-gradient(135deg, #d97706 0%, #b45309 100%)',
-        summary:
-          'Explore Iron Age Celtic roundhouses & hillforts, Emperor Claudius\'s AD 43 invasion, Queen Boudicca\'s rebellion, Hadrian\'s Wall & Vindolanda wooden letters, Aquae Sulis baths, and Rome\'s lasting legacy.',
-      },
-      ks2_anglo_saxons_vikings: {
-        phaseBadge: 'Key Stage 2 • Early Medieval Britain',
-        badgeBg: '#065f46',
-        gradient: 'linear-gradient(135deg, #022c22 0%, #064e3b 52%, #0f766e 100%)',
-        borderCol: 'rgba(167, 243, 208, 0.38)',
-        btnBg: 'linear-gradient(135deg, #059669 0%, #047857 100%)',
-        summary:
-          'Explore Angles, Saxons & Jutes at West Stow, the Sutton Hoo ghost ship & helmet, Lindisfarne AD 793 & clinker longships, Alfred the Great & the Danelaw, Jorvik traders, Athelstan, Cnut, and 1066.',
-      },
-      ks2_ww2: {
-        phaseBadge: 'Key Stage 2 • British & Modern Study',
-        badgeBg: '#4f46e5',
-        gradient: 'linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #312e81 100%)',
-        borderCol: 'rgba(199, 210, 254, 0.35)',
-        btnBg: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)',
-        summary:
-          'Explore outbreak & gas masks, Operation Pied Piper evacuation, pre-war Jewish life, the Kindertransport & rescuers, the Blitz, rationing, women at war, Bletchley Park, VE Day, and the Windermere Children.',
-      },
+    const ks2Meta = {
+      ks2_romans: { stage: 'ks2', eraBadge: 'KS2 • Roman Britain', badgeBg: 'rgba(180, 83, 9, 0.92)' },
+      ks2_anglo_saxons_vikings: { stage: 'ks2', eraBadge: 'KS2 • Early Medieval', badgeBg: 'rgba(6, 95, 70, 0.92)' },
+      ks2_ww2: { stage: 'ks2', eraBadge: 'KS2 • Modern Study', badgeBg: 'rgba(67, 56, 202, 0.92)' },
     };
 
     html += `
       <div class="dashboard-curriculum-block stage-block-ks2" id="block-ks2" style="margin-bottom: 24px;">
         <div id="ks2-section" style="position: relative; top: -14px;"></div>
-        <div class="curriculum-stage-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1.5px solid var(--border-glass, #e2e8f0);">
+        <div class="curriculum-stage-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1.5px solid var(--border-glass, #e2e8f0);">
           <div style="display: flex; align-items: center; gap: 10px;">
             <span style="background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; padding: 3px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Key Stage 2</span>
             <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a);">
               Primary History Enquiries
             </h3>
           </div>
-          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">${ks2Units.length} Curriculum ${ks2Units.length === 1 ? 'Unit' : 'Units'} &bull; Key Stage 2</span>
+          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">${ks2Units.length} Curriculum ${ks2Units.length === 1 ? 'Unit' : 'Units'}</span>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
+        <div class="modules-grid ks2-modules-grid" style="margin-bottom: 1.5rem;">
           ${ks2Units
-            .map((ks2Unit) => {
-              const cfg = ks2CardMeta[ks2Unit.id] || ks2CardMeta.ks2_ww2;
-              const ks2Cover =
-                ks2Unit.homepage_background ||
-                ks2Unit.cover_image ||
-                '/units/ks2_ww2/assets/banner_unit_hero.jpg';
-              const displayTitle =
-                unitCanonicalTitles[ks2Unit.id] ||
-                (ks2Unit.title || ks2Unit.id).replace(/^KS2:\s*/i, '');
-              const lessonCount = Array.isArray(ks2Unit.lessons) ? ks2Unit.lessons.length : 6;
-              const eqText =
-                ks2Unit.enquiry_question ||
-                ks2Unit.enquiry ||
-                'Key Stage 2 Primary Historical Enquiry';
-              return `
-          <div class="ks2-feature-banner" data-stage="ks2" data-unit="${ks2Unit.id}" style="background: ${cfg.gradient}; border-radius: 12px; border: 1.5px solid ${cfg.borderCol}; box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.22); display: flex; flex-direction: column; overflow: hidden; position: relative;">
-            <div style="height: 155px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 32%; position: relative;">
-              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.18) 0%, rgba(15, 23, 42, 0.76) 100%);"></div>
-              <span style="position: absolute; top: 10px; left: 12px; background: ${cfg.badgeBg}; color: #ffffff; padding: 3px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
-                ${cfg.phaseBadge}
-              </span>
-              <span style="position: absolute; bottom: 8px; left: 12px; color: #f8fafc; font-size: 0.74rem; font-weight: 700;">
-                <i class="fa-solid fa-layer-group" style="margin-right: 4px; color: #fcd34d;"></i>${lessonCount} Enquiry Lessons &bull; Textbook, Workbook &amp; Worksheets
-              </span>
-            </div>
-
-            <div style="flex: 1; padding: 16px 20px; display: flex; flex-direction: column; justify-content: space-between;">
-              <div>
-                <h3 style="margin: 0 0 5px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.24rem; font-weight: 800; color: #ffffff; line-height: 1.25;">
-                  ${displayTitle}
-                </h3>
-                <p style="margin: 0 0 8px 0; color: #fef3c7; font-size: 0.82rem; font-style: italic; line-height: 1.38;">
-                  "${eqText}"
-                </p>
-                <p style="margin: 0 0 12px 0; color: #e2e8f0; font-size: 0.8rem; line-height: 1.45;">
-                  ${cfg.summary}
-                </p>
-              </div>
-
-              <div style="display: flex; align-items: center; justify-content: flex-end; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.16);">
-                <button type="button" class="btn" onclick="window.launchSubApp('${ks2Unit.id}')" style="background: ${cfg.btnBg}; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);">
-                  <span>Explore KS2 Unit</span>
-                  <i class="fa-solid fa-arrow-right" style="font-size: 0.74rem;"></i>
-                </button>
-              </div>
-            </div>
-          </div>`;
+            .map((ks2Unit, idx) => {
+              const meta = ks2Meta[ks2Unit.id] || { stage: 'ks2', eraBadge: 'Key Stage 2' };
+              return renderUnitCard(ks2Unit, idx, meta);
             })
             .join('')}
         </div>
@@ -359,7 +306,7 @@ export function renderDashboard() {
               Edexcel GCSE History (Papers 1–3)
             </h3>
           </div>
-          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">5 Specification Units</span>
+          <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">${gcseUnits.length} Specification Units</span>
         </div>
 
         <div class="modules-grid gcse-modules-grid" style="margin-bottom: 1.5rem;">

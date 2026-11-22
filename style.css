@@ -15772,3 +15772,49 @@ body.lesson-full-width .btn-fullwidth-toggle,
 
 
 
+
+/* =========================================================================
+   Portrait-Safe Split-Hero Cameo for Lesson Headers (.lesson-hero-cameo)
+   ========================================================================= */
+.lesson-hero.has-hero-cameo .lesson-hero-content {
+  padding-right: 176px !important;
+}
+
+.lesson-hero-cameo {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: calc(100% - 20px);
+  max-height: 184px;
+  max-width: 150px;
+  z-index: 6;
+  padding: 4px;
+  border-radius: 9px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1.5px solid rgba(251, 191, 36, 0.55);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.lesson-hero-cameo img {
+  height: 100%;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+}
+
+@media (max-width: 740px) {
+  .lesson-hero-cameo {
+    display: none !important;
+  }
+  .lesson-hero.has-hero-cameo .lesson-hero-content {
+    padding-right: 1.25rem !important;
+  }
+}

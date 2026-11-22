@@ -1,5 +1,6 @@
 import { getAssetUrl } from './engine/assets.js'; // refreshed
 import { renderSidebarVideoBadgeHTML } from './engine/video_utils.js';
+import { getIconicLessonVisuals } from './data/iconic_lesson_visuals.js';
 
 export function getLessonEnquiryQuestion(lesson) {
   if (!lesson) return '';
@@ -58,11 +59,18 @@ export function isValidCardPhoto(url) {
   return true;
 }
 
-export function resolveLessonCardImage(lesson) {
+export function resolveLessonCardImage(lesson, unitIdOverride = '') {
   if (!lesson) return null;
 
+  // 0. Curated Iconic Visual Registry (prioritises high-recognition portraits/artefacts over generic skylines)
+  const activeUnitId =
+    unitIdOverride || (typeof window !== 'undefined' && window.currentUnitId) || '';
+  const iconic = getIconicLessonVisuals(activeUnitId, lesson);
+  if (iconic && iconic.cardImage && isValidCardPhoto(iconic.cardImage)) {
+    return iconic.cardImage;
+  }
+
   // 1. Mandatory hardcoded historical protections for high-stakes GCSE turning points
-  const activeUnitId = (typeof window !== 'undefined' && window.currentUnitId) || '';
   const isCME =
     activeUnitId.startsWith('cme') ||
     (lesson.title &&
@@ -220,7 +228,8 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
     currentUnitId === 'cme_new' ||
     currentUnitId === 'weimar_nazi_germany' ||
     currentUnitId === 'eee' ||
-    currentUnitId === 'usa'
+    currentUnitId === 'usa' ||
+    currentUnitId === 'gcse_cold_war'
   ) {
     let periods = [];
     if (currentUnitId === 'edexcel_medicine') {
@@ -440,6 +449,42 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             'Why did domestic opposition force the USA to withdraw, and what was the consequence of the fall of Saigon?',
         },
       ];
+    } else if (
+      currentUnitId === 'gcse_cold_war' ||
+      (currentUnitData && currentUnitData.title && currentUnitData.title.includes('Superpower'))
+    ) {
+      periods = [
+        {
+          id: 'KT1',
+          title: 'Key Topic 1: The origins of the Cold War, 1941–58',
+          prefix: 'KT 1',
+          gradient: 'linear-gradient(135deg, #1e3a8a, #2563eb)',
+          border: '#2563eb',
+          image: '/images/cold_war/yalta_conference_1945.jpg',
+          bgPos: 'center 25%',
+          enquiry: 'How did the wartime Grand Alliance fracture into two rival nuclear blocs by 1958?',
+        },
+        {
+          id: 'KT2',
+          title: 'Key Topic 2: Cold War crises, 1958–70',
+          prefix: 'KT 2',
+          gradient: 'linear-gradient(135deg, #7f1d1d, #dc2626)',
+          border: '#dc2626',
+          image: '/images/checkpoint_charlie_tanks_1961.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'Why did superpower confrontation peak in Berlin, Cuba, and Czechoslovakia?',
+        },
+        {
+          id: 'KT3',
+          title: 'Key Topic 3: The end of the Cold War, 1970–91',
+          prefix: 'KT 3',
+          gradient: 'linear-gradient(135deg, #064e3b, #10b981)',
+          border: '#10b981',
+          image: '/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg',
+          bgPos: 'center 30%',
+          enquiry: 'How did Détente collapse into the Second Cold War before Gorbachev and 1989 ended Soviet rule?',
+        },
+      ];
     }
 
     periods.forEach((p) => {
@@ -523,7 +568,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             overlayBadge = `INTRO`;
           }
 
-          let candidateImg = resolveLessonCardImage(lesson);
+          let candidateImg = resolveLessonCardImage(lesson, currentUnitId);
           let topMediaHTML = '';
           if (candidateImg) {
             let imgUrl = getAssetUrl(candidateImg);
@@ -535,23 +580,19 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
                 ? lesson.banner.card_position || lesson.banner.position
                 : null) ||
               lesson.banner_position ||
-              'center';
+              'center 22%';
 
             if (imgUrl.includes('edward_jenner')) {
               cardPos = 'center 15%';
             } else if (imgUrl.includes('oslo_handshake') || lesson.id === 'lesson_11' || lesson.id === 'lesson_13') {
               cardPos = 'center 20%';
             }
-            cardPos = String(cardPos || 'center').replace(/\bcentre\b/gi, 'center');
+            cardPos = String(cardPos || 'center 22%').replace(/\bcentre\b/gi, 'center');
 
-            const useCoverFit =
-            Boolean(lesson.card_image) ||
-            Boolean(unitData?.is_ks2) ||
-            String(unitData?.id || currentUnitId || '').startsWith('ks2_');
             topMediaHTML = `
-              <div style="position: relative; width: 100%; height: 112px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
-                ${useCoverFit ? '' : `<div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(12px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
-                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 3px 10px rgba(0,0,0,0.45));'}" />
+              <div style="position: relative; width: 100%; height: 128px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+                <div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.34); opacity: 0.72; transform: scale(1.12);"></div>
+                <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" onload="if(this.naturalHeight > this.naturalWidth * 0.72){this.style.objectFit='contain';this.style.objectPosition='center center';this.style.filter='drop-shadow(0 3px 10px rgba(0,0,0,0.52))';}else{this.style.objectFit='cover';}" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: cover; object-position: ${cardPos}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);" />
                 <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
                   ${overlayBadge}
                 </span>
@@ -636,7 +677,7 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
         const cardBadge = `Lesson ${index + 1}`;
         const overlayBadge = `LESSON ${index + 1}`;
 
-        let candidateImg = resolveLessonCardImage(lesson);
+        let candidateImg = resolveLessonCardImage(lesson, currentUnitId || unitData?.id || '');
 
         let topMediaHTML = '';
         if (candidateImg) {
@@ -656,15 +697,14 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
             cardPos = 'center 20%';
           }
 
-          if (!cardPos) cardPos = 'center center';
+          if (!cardPos) cardPos = 'center 22%';
           cardPos = String(cardPos).replace(/\bcentre\b/gi, 'center');
           const hasExplicitCardPos = Boolean(lesson.card_position || lesson.card_image_position);
-          const useCoverFit = Boolean(lesson.card_image) || isKs2UnitCards;
 
           topMediaHTML = `
-            <div style="position: relative; width: 100%; height: 112px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
-              ${useCoverFit ? '' : `<div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(12px) brightness(0.32); opacity: 0.65; transform: scale(1.1);"></div>`}
-              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: ${useCoverFit ? 'cover' : 'contain'}; object-position: ${cardPos}${hasExplicitCardPos ? ' !important' : ''}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); ${useCoverFit ? '' : 'filter: drop-shadow(0 3px 10px rgba(0,0,0,0.45));'}" />
+            <div style="position: relative; width: 100%; height: 128px; overflow: hidden; background: #0a101f; flex-shrink: 0;">
+              <div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background-image: url('${imgUrl}'); background-size: cover; background-position: center; filter: blur(14px) brightness(0.34); opacity: 0.72; transform: scale(1.12);"></div>
+              <img src="${imgUrl}" alt="${lesson.title}" class="lesson-card-banner-img" onload="if(this.naturalHeight > this.naturalWidth * 0.82){this.style.objectFit='contain';this.style.objectPosition='center center';this.style.filter='drop-shadow(0 3px 10px rgba(0,0,0,0.52))';}else{this.style.objectFit='cover';}" style="position: relative; z-index: 2; width: 100%; height: 100%; object-fit: cover; object-position: ${cardPos}${hasExplicitCardPos ? ' !important' : ''}; display: block; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);" />
               <span style="position: absolute; top: 8px; left: 8px; z-index: 3; background: rgba(15, 23, 42, 0.84); color: #ffffff; font-size: 0.63rem; font-weight: 800; letter-spacing: 0.05em; padding: 2.5px 7px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
                 ${overlayBadge}
               </span>

@@ -237,7 +237,7 @@ export function renderHomepage() {
         ${renderUnitSynopsis(appStore.state.activeUnitData, activeUnitId)}
         ${cmeRevisionGuideBannerHTML}
         ${medicineVisualGuideBannerHTML}
-        ${isTripUnit ? '' : `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">${String(activeUnitId || '').startsWith('ks2_') || appStore.state.activeUnitData?.is_ks2 ? `Enquiry Lessons (1–${(appStore.state.activeUnitData?.lessons || []).length || 6})` : 'Key Topic Lessons'}</h2>`}
+        ${isTripUnit ? '' : ['edexcel_medicine', 'cme_new', 'weimar_nazi_germany', 'eee', 'usa', 'gcse_cold_war'].includes(activeUnitId) ? `<h2 style="margin-top: 40px; text-align: left; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Key Topic Lessons</h2>` : ''}
         ${lessonsHTML}
       </div>
     `;

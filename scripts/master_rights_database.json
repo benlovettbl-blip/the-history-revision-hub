@@ -12988,11 +12988,41 @@
           "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Francis_Drake,_1540-96_RMG_BHC2662.tiff",
           "asset_path": "/images/upgraded/gcse-med-eee/eee_drake_1591_rmg_bhc2662.jpg",
           "visual_inspection_verified": "Verified via read_file (1536x1956, ~450KB): three-quarter-length oil portrait dated \"1591\" at upper right showing Sir Francis Drake in black doublet and cloak wearing the Drake Jewel at his waist beside a terrestrial globe and his \"SIC PARVIS MAGNA\" arms."
+        },
+        {
+          "lesson_num": 1,
+          "lesson_title": "KT 1.1: The Situation on Elizabeth's Accession, 1558",
+          "source_id": "Card & Hero Cameo",
+          "artifact_title": "Queen Elizabeth I in her cloth-of-gold Coronation robes (c. 1600 copy of lost 1559 original)",
+          "date": "c. 1559 / c. 1600",
+          "creator": "Unknown English Artist",
+          "repository": "National Portrait Gallery, London / Wikimedia Commons",
+          "accession_id": "NPG 5175 (Commons: Elizabeth I in coronation robes detail.jpg)",
+          "rights_status": "Public Domain (16th/17th-century work)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Elizabeth_I_in_coronation_robes_detail.jpg",
+          "asset_path": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
+          "visual_inspection_verified": "Verified via read_file: High-res colour detail of Queen Elizabeth I wearing St Edward Crown, ermine collar, and jewelled cloth-of-gold coronation mantle."
+        },
+        {
+          "lesson_num": 8,
+          "lesson_title": "KT 2.4: The Spanish Armada: Strategy, Conflict & Defeat, 1588",
+          "source_id": "Card & Hero Cameo",
+          "artifact_title": "The Armada Portrait of Queen Elizabeth I with hand resting on the terrestrial globe",
+          "date": "c. 1588",
+          "creator": "Unknown English Artist (formerly attr. George Gower)",
+          "repository": "Woburn Abbey Collection / Wikimedia Commons",
+          "accession_id": "Commons: Elizabeth I (Armada Portrait).jpg",
+          "rights_status": "Public Domain (16th-century painting)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Elizabeth_I_(Armada_Portrait).jpg",
+          "asset_path": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+          "visual_inspection_verified": "Verified via read_file: High-res Woburn Abbey Armada Portrait showing Elizabeth I with hand on globe, imperial crown, English fireships left, and wrecked Armada right."
         }
       ],
       "total_registered": 82,
       "last_synchronized": "2026-10-26T08:47:06.554Z",
-      "total_sources": 152,
+      "total_sources": 154,
       "unit_id": "eee"
     },
     "usa": {

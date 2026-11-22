@@ -432,11 +432,11 @@ export function bindEvents() {
     ]);
     const ks2Units = getOrderedUnits(['ks2_romans', 'ks2_anglo_saxons_vikings', 'ks2_ww2']);
 
-    renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
-    renderAccordionGroup('GCSE (9–1)', gcseUnits, false);
     if (ks2Units.length > 0) {
       renderAccordionGroup('Key Stage 2 (Primary)', ks2Units, isInitialKs2Unit);
     }
+    renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
+    renderAccordionGroup('GCSE (9–1)', gcseUnits, false);
   }
 }
 
