@@ -358,30 +358,62 @@ export const ICONIC_LESSON_VISUALS = {
 
   great_war: {
     lesson_1: {
-      cardImage: '/units/great_war/assets/werner_versailles_1871_highres.jpg',
-      heroCameo: '/images/otto_von_bismarck_portrait.jpg',
-      cameoAlt: 'Otto von Bismarck, Chancellor of the German Empire',
+      cardImage: "/images/great_war/gw1_l1_b1_bismarck_napoleon_iii_sedan_1870.jpg",
+      heroCameo: "/images/great_war/gw1_l1_cameo_bismarck_lenbach.jpg",
+      cameoAlt: "Prince Otto von Bismarck (1815–1898), Minister-President of Prussia and first Chancellor of the German Empire, wearing Halberstadt Cuirassier uniform (Franz von Lenbach, 1890)",
+    },
+    lesson_2: {
+      cardImage: "/units/great_war/assets/sms_panther_agadir_1911.jpg",
+      heroCameo: "/images/great_war/gw1_l2_cameo_kaiser_wilhelm_ii.jpg",
+      cameoAlt: "Kaiser Wilhelm II (1859–1941), German Emperor who dismissed Bismarck in 1890 to pursue aggressive overseas Weltpolitik and \"a place in the sun\" (1902 portrait)",
     },
     lesson_3: {
-      cardImage: '/images/hms_dreadnought_1906.jpg',
+      cardImage: "/images/hms_dreadnought_1906.jpg",
+      heroCameo: "/images/great_war/gw1_l3_cameo_jackie_fisher.jpg",
+      cameoAlt: "Admiral of the Fleet Sir John \"Jackie\" Fisher (1841–1920), First Sea Lord of the Royal Navy who championed HMS Dreadnought in 1906",
+    },
+    lesson_4: {
+      cardImage: "/images/great_war/gw1_l4_b3_bosnian_crisis_1908_petit_journal.jpg",
+      heroCameo: "/units/great_war/assets/alfred_von_schlieffen.jpg",
+      cameoAlt: "Field Marshal Count Alfred von Schlieffen (1833–1913), Chief of the Imperial German General Staff (1891–1906) who devised the 1905 plan to knock out France via Belgium",
     },
     lesson_5: {
-      cardImage: '/units/great_war/assets/sarajevo_assassination_beltrame_1914.jpg',
-      heroCameo: '/units/great_war/assets/sarajevo_assassination_beltrame_1914.jpg',
-      cameoAlt: 'Assassination of Archduke Franz Ferdinand at Sarajevo (28 June 1914)',
+      cardImage: "/units/great_war/assets/sarajevo_assassination_beltrame_1914.jpg",
+      heroCameo: "/images/great_war/gw1_l5_cameo_archduke_franz_ferdinand.jpg",
+      cameoAlt: "Archduke Franz Ferdinand of Austria-Este (1863–1914), Heir Presumptive to the Austro-Hungarian throne whose assassination in Sarajevo ignited the July Crisis",
+    },
+    lesson_6: {
+      cardImage: "/images/great_war/gw1_l6_b4_chain_of_friendship_1914.jpg",
+      heroCameo: "/images/great_war/gw1_l6_cameo_tsar_nicholas_ii.jpg",
+      cameoAlt: "Tsar Nicholas II of Russia (1868–1918), painted by Valentin Serov (1900, Tretyakov Gallery), whose 30 July 1914 general mobilisation order to defend Serbia triggered German war declarations",
     },
   },
 
   great_war_part2: {
     lesson_1_enlistment: {
-      cardImage: '/images/gw_kitchener_poster.jpg',
-      heroCameo: '/images/gw_kitchener_poster.jpg',
-      cameoAlt: 'Lord Kitchener "Wants You" recruitment poster (1914)',
+      cardImage: "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg",
+      heroCameo: "/images/great_war_part2/gw2_l1_cameo_lord_kitchener_portrait.jpg",
+      cameoAlt: "Field Marshal Horatio Herbert Kitchener, 1st Earl Kitchener (1850–1916), Secretary of State for War who foresaw a multi-year conflict and launched the August 1914 appeal for New Army volunteers",
+    },
+    lesson_2_trenches_haig: {
+      cardImage: "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg",
+      heroCameo: "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg",
+      cameoAlt: "Field Marshal Sir Douglas Haig (1861–1928), Commander-in-Chief of the British Expeditionary Force on the Western Front from December 1915 to 1918 (Library of Congress Bain Collection)",
     },
     lesson_3_empire_troops: {
-      cardImage: '/images/upgraded/ks3-empire-gw/gw2_l3_srcc_walter_tull_1917.jpg',
-      heroCameo: '/images/upgraded/ks3-empire-gw/gw2_l3_srcc_walter_tull_1917.jpg',
-      cameoAlt: 'Second Lieutenant Walter Tull (1917)',
+      cardImage: "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg",
+      heroCameo: "/images/great_war_part2/gw2_l3_cameo_maharaja_pratap_singh_1914.jpg",
+      cameoAlt: "Lieutenant-General Maharaja Sir Pratap Singh of Idar (1845–1922), veteran seventy-year-old Rajput commander who served alongside the Indian Expeditionary Force in France and Flanders in 1914–1915",
+    },
+    lesson_4_home_front_dora: {
+      cardImage: "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg",
+      heroCameo: "/images/great_war_part2/gw2_l4_cameo_david_lloyd_george_portrait.jpg",
+      cameoAlt: "David Lloyd George (1863–1945), appointed Britain’s first Minister of Munitions during the May 1915 Shell Crisis before serving as wartime Coalition Prime Minister from December 1916",
+    },
+    lesson_5_versailles: {
+      cardImage: "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg",
+      heroCameo: "/images/great_war_part2/gw2_l5_cameo_georges_clemenceau_portrait.jpg",
+      cameoAlt: "French Prime Minister Georges Clemenceau (“The Tiger”, 1841–1929), President of the 1919 Paris Peace Conference who demanded French border security and heavy German reparations (Agence Rol, BnF Gallica)",
     },
   },
 
