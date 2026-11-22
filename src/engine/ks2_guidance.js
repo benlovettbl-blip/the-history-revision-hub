@@ -14,9 +14,13 @@ import {
   KS2_ROMANS_WORKSHEETS_MAP,
   KS2_ROMANS_TEACHER_GUIDANCE,
 } from './ks2_romans_guidance.js';
+import {
+  KS2_SAXONS_WORKSHEETS_MAP,
+  KS2_SAXONS_TEACHER_GUIDANCE,
+} from './ks2_saxons_guidance.js';
 
-// Backwards-compatible alias normalization for KS2 Romans guidance
-Object.values(KS2_ROMANS_TEACHER_GUIDANCE).forEach((g) => {
+// Backwards-compatible alias normalization for KS2 Romans & Saxons guidance
+[...Object.values(KS2_ROMANS_TEACHER_GUIDANCE), ...Object.values(KS2_SAXONS_TEACHER_GUIDANCE)].forEach((g) => {
   if (g && g.answers) {
     g.answers.block1 = g.answers.task1;
     g.answers.block2 = g.answers.task2;
@@ -35,6 +39,7 @@ function detectActiveKs2UnitId() {
     window.currentUnitData?.id ||
     '';
   if (cand === 'ks2_romans') return 'ks2_romans';
+  if (cand === 'ks2_anglo_saxons_vikings') return 'ks2_anglo_saxons_vikings';
   return 'ks2_ww2';
 }
 
@@ -53,6 +58,21 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       sowLabel: '6-Lesson Scheme of Work',
       wagollAgeLabel: 'Year 3/4/5 Dual-Scaffolded Model Answer',
       skillsPeriod: '55 BC–AD 410',
+    };
+  }
+  if (unitId === 'ks2_anglo_saxons_vikings') {
+    return {
+      unitId: 'ks2_anglo_saxons_vikings',
+      worksheetsMap: KS2_SAXONS_WORKSHEETS_MAP,
+      guidanceMap: KS2_SAXONS_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_anglo_saxons_vikings/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_anglo_saxons_vikings_pupil_workbook.pdf',
+      sowUrl: '/units/ks2_anglo_saxons_vikings/ks2_anglo_saxons_vikings_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Year 4/5/6 Dual-Scaffolded Model Answer',
+      skillsPeriod: 'AD 410–1066',
     };
   }
   return {

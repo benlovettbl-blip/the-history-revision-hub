@@ -342,6 +342,84 @@ const KS3_MARKING_DATA = {
       },
     ],
   },
+  ks2_anglo_saxons_vikings: {
+    unitTitle: 'Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)',
+    subtitle: '24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)',
+    enquiries: [
+      {
+        number: 1,
+        title: 'Enquiry 01: After the Romans Left — Angles, Saxons & Jutes (c. AD 410–600)',
+        shortTitle: 'Saxon Settlement',
+        enquiryFocus: 'Who were the Angles, Saxons, and Jutes, and why did they cross the North Sea to settle in Britain after AD 410?',
+        questions: [
+          { num: 1, tier: 'Explain', q: 'Give one "push" reason and one "pull" reason why Angles, Saxons, and Jutes crossed the North Sea to Britain.', a: 'Push: salty tides flooded coastal farms in Jutland and northern Germany; Pull: fertile British farmland and no Roman legions after AD 410.', exp: 'Bede also recorded that British leaders first invited Jutish and Saxon warriors as mercenaries to fight northern raiders in return for land.' },
+          { num: 2, tier: 'Recall', q: 'What materials did Anglo-Saxon villagers at sites like West Stow use to build their halls and houses?', a: 'Sturdy oak timber planks, woven wattle-and-daub walls, and steep thatched straw or reed roofs.', exp: 'Rather than repairing crumbling Roman stone villas, settlers built warm timber halls around a central hearth fire.' },
+          { num: 3, tier: 'Detail', q: 'Name four of the seven major Anglo-Saxon kingdoms known as the Heptarchy.', a: 'Any four from: Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, Wessex.', exp: 'For centuries lowland Britain was divided into rival kingdoms before "Angle-land" (England) was united.' },
+          { num: 4, tier: 'Recall', q: 'Which two pagan Anglo-Saxon gods gave their names to Wednesday and Thursday?', a: 'Woden (Wednesday = Woden’s day) and Thunor (Thursday = Thunor’s day).', exp: 'Tiw also gave Tuesday and Frige gave Friday, while village endings like -ham and -ton mark early Anglo-Saxon settlements!' },
+        ],
+      },
+      {
+        number: 2,
+        title: 'Enquiry 02: Ship Burials & Monasteries — Sutton Hoo & Christian Monks (c. AD 597–750)',
+        shortTitle: 'Sutton Hoo & Bede',
+        enquiryFocus: 'What does the Sutton Hoo ship burial reveal about Anglo-Saxon kings, and how did Christianity change Britain?',
+        questions: [
+          { num: 5, tier: 'Explain', q: 'Why did archaeologists in 1939 find no wooden planks or human skeleton inside Mound 1 at Sutton Hoo?', a: 'Suffolk’s acidic sandy soil completely rotted away organic wood and human bones over 1,300 years, leaving rows of iron ship rivets.', exp: 'Edith Pretty and archaeologist Basil Brown uncovered the ghostly 27-metre ship outline and dazzling burial chamber.' },
+          { num: 6, tier: 'Detail', q: 'How do treasures inside Sutton Hoo (likely King Raedwald, c. AD 625) prove Britain was NOT in a backward "Dark Age"?', a: 'The dragon-browed iron helmet and gold clasps inlaid with garnets from Sri Lanka, Byzantine silver spoons, and Frankish coins prove master art and long-distance trade.', exp: 'The burial linked East Anglia to trade networks stretching across Europe, Constantinople, and South Asia.' },
+          { num: 7, tier: 'Recall', q: 'From which two directions did missionaries Augustine (AD 597) and Aidan (AD 635) bring Christianity to Anglo-Saxon kingdoms?', a: 'Augustine came from Rome to Canterbury in Kent (AD 597); Aidan came from Iona in Scotland to Lindisfarne in Northumbria (AD 635).', exp: 'Monasteries became centres of reading, stone architecture, calfskin vellum manuscripts, and illuminated art like the Lindisfarne Gospels.' },
+          { num: 8, tier: 'Recall', q: 'Which Northumbrian monk at Jarrow wrote the Ecclesiastical History of the English People in AD 731?', a: 'The Venerable Bede.', exp: 'Bede popularized counting dates from AD ("Anno Domini") and earned the title "Father of English History".' },
+        ],
+      },
+      {
+        number: 3,
+        title: 'Enquiry 03: Fury of the Northmen — Lindisfarne & The Great Heathen Army (AD 793–878)',
+        shortTitle: 'Lindisfarne & Raids',
+        enquiryFocus: 'Why did Viking raiders cross the sea from Scandinavia in AD 793, and how did the Great Heathen Army nearly conquer all England?',
+        questions: [
+          { num: 9, tier: 'Explain', q: 'Why did Viking raiders target island and coastal monasteries like Lindisfarne on 8 June AD 793?', a: 'Monasteries stood isolated right beside the sea, held rich silver chalices and jewelled Gospel covers, and were guarded only by unarmed monks.', exp: 'The surprise attack shocked Christian courts right across Britain and Europe.' },
+          { num: 10, tier: 'Explain', q: 'How did clinker-built oak longships allow Vikings to cross stormy oceans AND strike inland English towns?', a: 'Overlapping oak planks flexed over ocean waves under a wool sail, while a shallow 1-metre hull let crews row straight up shallow rivers and beach on sand.', exp: 'Longships needed no deep harbours and could reverse direction rapidly.' },
+          { num: 11, tier: 'Recall', q: 'Did real Viking warriors wear horned helmets in battle?', a: 'No — zero Viking helmets ever found have horns (real helmets like Coppergate and Gjermundbu were smooth iron cones with nose-guards).', exp: 'Horned helmets were invented by 19th-century opera costume designers in 1876!' },
+          { num: 12, tier: 'Detail', q: 'How did the "Great Heathen Army" of AD 865 differ from earlier summer raiders, and which three kingdoms fell?', a: 'Instead of sailing home in autumn, thousands stayed over winter at fortified camps like Repton to conquer Northumbria, East Anglia, and Mercia.', exp: 'By January AD 878 only the southern kingdom of Wessex remained unconquered.' },
+        ],
+      },
+      {
+        number: 4,
+        title: 'Enquiry 04: Alfred the Great, Burhs & the Danelaw — Saving Wessex (AD 871–899)',
+        shortTitle: 'Alfred & Danelaw',
+        enquiryFocus: 'How did King Alfred save Wessex in AD 878, and why do historians call him "Alfred the Great"?',
+        questions: [
+          { num: 13, tier: 'Recall', q: 'Where did King Alfred shelter in early AD 878 before defeating Danish leader Guthrum at the Battle of Edington?', a: 'In the reed-filled marshes of Athelney in Somerset.', exp: 'In May AD 878 Alfred rallied the shire fyrd at Egbert’s Stone and broke Guthrum’s shield wall at Edington.' },
+          { num: 14, tier: 'Detail', q: 'What did Alfred and baptised Guthrum agree along Roman Watling Street, and what was the Viking region called?', a: 'They divided England along Watling Street: Alfred ruled Wessex and western Mercia while northern and eastern England became the Danelaw.', exp: 'Across the Danelaw, Scandinavian laws and "-by" / "-thorpe" village names took root.' },
+          { num: 15, tier: 'Explain', q: 'How did Alfred’s network of 33 fortified "burhs" and reorganised "fyrd" protect Wessex from future raids?', a: 'Walled burhs (like Wareham) meant no farm lay over 20 miles from safety, and splitting the fyrd in half kept forts guarded while crops were harvested.', exp: 'Alfred also built taller warships to intercept raiders at sea.' },
+          { num: 16, tier: 'Recall', q: 'What Old English words are inscribed in gold around the Alfred Jewel, and why did Alfred care about books?', a: '"AELFRED MEC HEHT GEWYRCAN" ("Alfred ordered me to be made"); Alfred translated Latin books into Old English so people could read and learn.', exp: 'Alfred also launched the Anglo-Saxon Chronicle to record history year by year in English.' },
+        ],
+      },
+      {
+        number: 5,
+        title: 'Enquiry 05: Life in Jorvik & the Danelaw — Raiders or Traders? (c. AD 876–1000)',
+        shortTitle: 'Viking Jorvik',
+        enquiryFocus: 'What does archaeology from Jorvik (York) reveal about everyday Viking settlers, traders, and craftworkers?',
+        questions: [
+          { num: 17, tier: 'Detail', q: 'Why did 40,000 everyday Viking objects survive beneath Coppergate in Jorvik (York), and what does "Coppergate" mean?', a: 'Wet, oxygen-free peaty soil stopped wood and leather rotting; "Coppergate" comes from Old Norse meaning "Street of the Cup-Makers".', exp: 'Archaeologists uncovered leather boots, bone ice-skates, wooden bowls, iron tools, and hnefatafl board games.' },
+          { num: 18, tier: 'Explain', q: 'What do deer-antler combs and Islamic silver dirham coins found in York prove about Viking life?', a: 'Hundreds of combs prove Vikings cared about neatness and hygiene, while Baghdad and Samarkand silver dirhams prove peaceful long-distance trade.', exp: 'Jorvik workshops also traded Byzantine silk, Baltic amber, and Red Sea cowrie shells!' },
+          { num: 19, tier: 'Recall', q: 'What was an open-air Viking "Thing", and what rights did free Viking women have?', a: 'A Thing was an outdoor assembly where free citizens made laws and settled disputes; Viking women wore house keys, owned land, and could divorce.', exp: 'Tynwald Hill on the Isle of Man still preserves this Norse parliamentary tradition today.' },
+          { num: 20, tier: 'Recall', q: 'Name four everyday English words or place-name endings left behind by Old Norse speakers.', a: 'Words: sky, window, egg, knife, leg, husband, law, Thursday; Place-name endings: -by (Grimsby, Whitby, Derby) and -thorpe.', exp: 'Everyday language proves Anglo-Saxon and Scandinavian neighbours lived, farmed, and traded side by side.' },
+        ],
+      },
+      {
+        number: 6,
+        title: 'Enquiry 06: Aethelflaed, Athelstan, Cnut & 1066 — Struggle for England (AD 900–1066)',
+        shortTitle: 'One England & 1066',
+        enquiryFocus: 'How did Anglo-Saxon and Viking rulers forge one united Kingdom of England — and why did it all change in 1066?',
+        questions: [
+          { num: 21, tier: 'Recall', q: 'Who was "Lady of the Mercians", and which grandson of Alfred became the first King of All England in AD 927?', a: 'Alfred’s daughter Aethelflaed was Lady of the Mercians; her nephew King Athelstan captured York in AD 927 (and won Brunanburh in AD 937) to rule all England.', exp: 'Athelstan’s c. AD 934 illuminated manuscript is the oldest surviving portrait of an English monarch.' },
+          { num: 22, tier: 'Explain', q: 'Why did paying silver "Danegeld" fail under King Aethelred, and how did Danish King Cnut rule from AD 1016–1035?', a: 'Danegeld tempted Viking fleets to return demanding even more silver; Cnut ruled England, Denmark, and Norway peacefully while keeping English laws.', exp: 'After Cnut’s sons died, Anglo-Saxon King Edward the Confessor ruled from AD 1042 until January 1066.' },
+          { num: 23, tier: 'Recall', q: 'Name the three rivals who claimed the English crown after Edward the Confessor died childless in January 1066.', a: 'Harold Godwinson (Earl of Wessex), Harald Hardrada (Viking King of Norway), and Duke William of Normandy.', exp: 'The Witan crowned Harold II at Westminster, triggering invasions from both Norway and Normandy.' },
+          { num: 24, tier: 'Explain', q: 'How did King Harold’s victory at Stamford Bridge (25 Sept 1066) help cause his defeat at Hastings (14 Oct 1066)?', a: 'Defeating Hardrada in Yorkshire cost elite housecarls and forced Harold’s exhausted army to march 250 miles south to fight William’s cavalry and archers.', exp: 'Stamford Bridge ended the Viking Age, while Hastings nineteen days later ended Anglo-Saxon rule.' },
+        ],
+      },
+    ],
+  },
   ks2_ww2: {
     unitTitle: 'World War II & The Home Front (1933–1945)',
     subtitle: '44-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–11)',
@@ -513,9 +591,9 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
             isKs2
               ? `
           <a href="/units/${unitId}/textbook.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
-            <i class="fa-solid fa-book-open" style="color: #38bdf8;"></i> <span>${unitId === 'ks2_romans' ? '12-Page Textbook' : '16-Page Textbook'}</span>
+            <i class="fa-solid fa-book-open" style="color: #38bdf8;"></i> <span>${unitId === 'ks2_ww2' ? '16-Page Textbook' : '12-Page Textbook'}</span>
           </a>
-          <a href="${unitId === 'ks2_romans' ? '/units/ks2_romans/retrieval_companion.html' : '/units/ks2_ww2/quiz_pack.html'}" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+          <a href="/units/${unitId}/quiz_pack.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
             <i class="fa-solid fa-list-check" style="color: #fbbf24;"></i> <span>4-Page Quiz Pack</span>
           </a>
           `

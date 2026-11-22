@@ -2,8 +2,8 @@
   "id": "ks2_ww2",
   "title": "KS2: World War II & The Home Front (1933–1945)",
   "shortTitle": "World War II & The Home Front",
-  "yearGroup": "Years 5–6",
-  "year_group": "Years 5–6",
+  "yearGroup": "Key Stage 2",
+  "year_group": "Key Stage 2",
   "keyStage": "KS2",
   "key_stage": "KS2",
   "category": "KS2",
@@ -264,9 +264,9 @@
           "act": 2,
           "title": "38 Million Gas Masks on Shoulder Strings",
           "text": "<span class=\"para-ref\">[1.3]</span> People still remembered the deadly poison gas used during the First World War. The British government feared enemy aircraft might drop gas bombs on crowded towns. Before war was even declared, officials handed out **38 million free gas masks** to protect every civilian.<br><br><span class=\"para-ref\">[1.4]</span> Adults and schoolchildren carried black rubber respirators inside square cardboard boxes on shoulder strings. Toddlers were given bright red-and-blue **\"Mickey Mouse\" gas masks** so they looked less scary. Babies were placed inside enclosed protective gas helmets fitted with a hand pump. At school, children practised putting on their masks in seconds despite the hot rubber smell.",
-          "image": "/units/ks2_ww2/assets/gas_mask_warning_poster_1939.jpg",
-          "image_alt": "Civilian gas mask and cardboard carrying box from 1939",
-          "caption": "Ministry of Home Security poster ('Hitler will send no warning — so always carry your gas mask', 1939), reminding children and adults to carry their cardboard gas mask box everywhere.",
+          "image": "/images/upgraded/ks2-ww2/l01_blk1_hitler_no_warning_poster_iwmpst13861.jpg",
+          "image_alt": "Ministry of Home Security poster reading 'Hitler will send no warning — so always carry your gas mask' (1939)",
+          "caption": "Ministry of Home Security poster ('Hitler will send no warning — so always carry your gas mask', Art.IWM PST 13861), reminding children and adults to carry their cardboard gas mask box everywhere.",
           "isReversed": true,
           "sources": [
             {
@@ -1071,8 +1071,8 @@
           "prose_hash": "0d54311667"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l01.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l01.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg",
       "banner_position": "center 25%",
       "enquiry_question": "Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?",
       "visual_story_sheet": {
@@ -1160,7 +1160,13 @@
       },
       "vocab_cloze_text": "When Britain entered the Second World War on 3 September 1939, families prepared for enemy air raids. Every child carried a boxed [Gas Mask] on a shoulder string, and houses covered windows at night to obey the [Blackout]. Out in the dark streets, volunteer patrols led by each local [ARP Warden] checked for chinks of light while listening for the wailing [Air Raid Siren].",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_1_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg",
+        "caption": "Anti-Aircraft Searchlight and Sandbagged Emplacement at Royal Hospital Chelsea, London (17 April 1940)",
+        "position": "center 25%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg"
     },
     {
       "id": "lesson_2",
@@ -2194,8 +2200,8 @@
           "prose_hash": "492439d928"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l02.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l02.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg",
       "banner_position": "center 22%",
       "enquiry_question": "What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?",
       "visual_story_sheet": {
@@ -2285,7 +2291,13 @@
       },
       "vocab_cloze_text": "On 1 September 1939, the government launched [Operation Pied Piper] to move 1.5 million children and mothers away from city danger. Wearing name labels on their coats, each young [Evacuee] rode steam trains into the countryside. At the village hall, a local [Billeting Officer] matched the children with a welcoming [Host Family] until the danger of bombing passed.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_2_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg",
+        "caption": "Smiling Evacuee Children from Rotherhithe Carrying Gas Mask Boxes in Reading (1940)",
+        "position": "center 22%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg"
     },
     {
       "id": "lesson_3",
@@ -2484,12 +2496,12 @@
               "letter": "A",
               "source_letter": "A",
               "type": "visual",
-              "src": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
-              "image": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
-              "title": "Source A: Players of Jewish Sports Club SC Hakoah Vienna (1925)",
-              "caption": "Footballers and coaches of SC Hakoah Vienna—one of Europe’s most famous pre-war Jewish sports clubs—posing proudly before a packed stadium with their Star of David club flag (1925, Public Domain).",
+              "src": "/images/upgraded/ks2-ww2/l03_src0_hakoah_vienna_team_1927.jpg",
+              "image": "/images/upgraded/ks2-ww2/l03_src0_hakoah_vienna_team_1927.jpg",
+              "title": "Source A: Players of Jewish Sports Club SC Hakoah Vienna Before a Packed Stadium (1927)",
+              "caption": "Footballers of SC Hakoah Vienna—one of Europe’s most famous pre-war Jewish sports clubs, fresh from winning the Austrian league—exchanging a club pennant with American hosts Indiana Flooring before a packed stadium during their celebrated 1927 tour (Public Domain).",
               "author": "Austrian Sports Press Photographer (Wikimedia Commons, Public Domain)",
-              "date": "1925",
+              "date": "1927",
               "context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
               "hinge_question": "Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
               "question_badge": "PRE-WAR JEWISH COMMUNITY LIFE",
@@ -2532,17 +2544,17 @@
               "letter": "B",
               "source_letter": "B",
               "type": "visual",
-              "src": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
-              "image": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
-              "title": "Source B: Six Jewish Schoolgirls Holding First-Day 'Schultüten' in Berlin (Early 1930s)",
-              "caption": "Six young Jewish schoolgirls on their very first day of primary school in Berlin holding decorated cardboard gift cones ('Schultüten') filled with sweets and pencils.",
+              "src": "/images/upgraded/ks2-ww2/l03_src1_schultuete_children_mufo_1930s.jpg",
+              "image": "/images/upgraded/ks2-ww2/l03_src1_schultuete_children_mufo_1930s.jpg",
+              "title": "Source B: Pre-War Schoolchildren Holding a Traditional First-Day 'Schultüte' Cone (c. 1930)",
+              "caption": "A young schoolboy wearing his leather satchel and holding a tall, decorated cardboard gift cone ('Schultüte') packed with sweets beside his little sister—the cherished first-day-of-school tradition shared by Jewish and non-Jewish families alike across Central Europe before 1933 (Museum of Photography, Kraków, MHF 18405/II, Public Domain).",
               "author": "German Studio Photographer",
-              "date": "1930s",
+              "date": "c. 1930",
               "context": "In German tradition, children starting primary school are given a 'Schultüte' (a giant colourful cone filled with sweets and pencils) by their parents to celebrate their first day. These Jewish children shared the exact same cultural customs, language, and school pride as their non-Jewish neighbours. **Hinge Question:** How does this photograph show that Jewish children were completely part of German cultural tradition before Nazi laws segregated them?",
               "hinge_question": "How does this photograph show that Jewish children were completely part of German cultural tradition before Nazi laws segregated them?",
               "question_badge": "FIRST DAY OF SCHOOL",
-              "question": "How does Source B show that Jewish children were proud to take part in German school traditions?",
-              "model_answer": "Source B shows young girls proudly holding traditional cones filled with sweets on their first day of school. It shows that Jewish families were completely part of German society and loved the same school traditions as everyone else.",
+              "question": "What does the traditional first-day Schultüte cone in Source B help us understand about shared childhood customs before Nazi school laws divided communities?",
+              "model_answer": "Source B shows a proud young pupil wearing a leather satchel and holding a giant cardboard cone filled with sweets for the first day of school. Before 1933, Jewish and non-Jewish children across Germany and Central Europe celebrated these exact same joyful first-day school traditions side by side.",
               "provenance_clues": {
                 "author": "Professional neighbourhood photographer.",
                 "audience": "Proud parents celebrating their children starting school.",
@@ -3017,12 +3029,12 @@
           "letter": "A",
           "source_letter": "A",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
-          "image": "/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg",
-          "title": "Source A: Players of Jewish Sports Club SC Hakoah Vienna (1925)",
-          "caption": "Footballers and coaches of SC Hakoah Vienna—one of Europe’s most famous pre-war Jewish sports clubs—posing proudly before a packed stadium with their Star of David club flag (1925, Public Domain).",
+          "src": "/images/upgraded/ks2-ww2/l03_src0_hakoah_vienna_team_1927.jpg",
+          "image": "/images/upgraded/ks2-ww2/l03_src0_hakoah_vienna_team_1927.jpg",
+          "title": "Source A: Players of Jewish Sports Club SC Hakoah Vienna Before a Packed Stadium (1927)",
+          "caption": "Footballers of SC Hakoah Vienna—one of Europe’s most famous pre-war Jewish sports clubs, fresh from winning the Austrian league—exchanging a club pennant with American hosts Indiana Flooring before a packed stadium during their celebrated 1927 tour (Public Domain).",
           "author": "Austrian Sports Press Photographer (Wikimedia Commons, Public Domain)",
-          "date": "1925",
+          "date": "1927",
           "context": "Before Nazi persecution, Jewish sports clubs like Hakoah Vienna and Maccabi brought thousands of young athletes, swimmers, and footballers together across Central Europe. **Hinge Question:** Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
           "hinge_question": "Why do historians study pre-war photographs of thriving sports clubs and family life before examining Nazi anti-Jewish laws?",
           "question_badge": "PRE-WAR JEWISH COMMUNITY LIFE",
@@ -3053,17 +3065,17 @@
           "letter": "B",
           "source_letter": "B",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
-          "image": "/units/ks2_ww2/assets/jewish_schoolchildren_berlin_schultuete_1930s.jpg",
-          "title": "Source B: Six Jewish Schoolgirls Holding First-Day 'Schultüten' in Berlin (Early 1930s)",
-          "caption": "Six young Jewish schoolgirls on their very first day of primary school in Berlin holding decorated cardboard gift cones ('Schultüten') filled with sweets and pencils.",
+          "src": "/images/upgraded/ks2-ww2/l03_src1_schultuete_children_mufo_1930s.jpg",
+          "image": "/images/upgraded/ks2-ww2/l03_src1_schultuete_children_mufo_1930s.jpg",
+          "title": "Source B: Pre-War Schoolchildren Holding a Traditional First-Day 'Schultüte' Cone (c. 1930)",
+          "caption": "A young schoolboy wearing his leather satchel and holding a tall, decorated cardboard gift cone ('Schultüte') packed with sweets beside his little sister—the cherished first-day-of-school tradition shared by Jewish and non-Jewish families alike across Central Europe before 1933 (Museum of Photography, Kraków, MHF 18405/II, Public Domain).",
           "author": "German Studio Photographer",
-          "date": "1930s",
+          "date": "c. 1930",
           "context": "In German tradition, children starting primary school are given a 'Schultüte' (a giant colourful cone filled with sweets and pencils) by their parents to celebrate their first day. These Jewish children shared the exact same cultural customs, language, and school pride as their non-Jewish neighbours. **Hinge Question:** How does this photograph show that Jewish children were completely part of German cultural tradition before Nazi laws segregated them?",
           "hinge_question": "How does this photograph show that Jewish children were completely part of German cultural tradition before Nazi laws segregated them?",
           "question_badge": "FIRST DAY OF SCHOOL",
-          "question": "How does Source B show that Jewish children were proud to take part in German school traditions?",
-          "model_answer": "Source B shows young girls proudly holding traditional cones filled with sweets on their first day of school. It shows that Jewish families were completely part of German society and loved the same school traditions as everyone else.",
+          "question": "What does the traditional first-day Schultüte cone in Source B help us understand about shared childhood customs before Nazi school laws divided communities?",
+          "model_answer": "Source B shows a proud young pupil wearing a leather satchel and holding a giant cardboard cone filled with sweets for the first day of school. Before 1933, Jewish and non-Jewish children across Germany and Central Europe celebrated these exact same joyful first-day school traditions side by side.",
           "provenance_clues": {
             "author": "Professional neighbourhood photographer.",
             "audience": "Proud parents celebrating their children starting school.",
@@ -3288,8 +3300,8 @@
           "prose_hash": "1a48251c01"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l03.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l03.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg",
       "banner_position": "center 18%",
       "enquiry_question": "What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?",
       "visual_story_sheet": {
@@ -3380,7 +3392,13 @@
       },
       "vocab_cloze_text": "Before 1933, Jewish children in Germany enjoyed ordinary schooldays and carried a sweet-filled [Schultüte] cone on their first morning at school. Once Adolf Hitler took power, cruel [Discrimination] spread across daily life and stripped Jewish families of their equal [Civil Rights]. By November 1938, state-backed [Persecution] banned Jewish pupils from German schools altogether.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_3_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg",
+        "caption": "Pre-War Everyday Street Life on Nalewki Street in Warsaw's Jewish Quarter (1934)",
+        "position": "center 18%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg"
     },
     {
       "id": "lesson_4",
@@ -4393,8 +4411,8 @@
           "prose_hash": "ea586cbdcc"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l04.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l04.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg",
       "banner_position": "center 25%",
       "enquiry_question": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?",
       "visual_story_sheet": {
@@ -4483,7 +4501,13 @@
       },
       "vocab_cloze_text": "After the violent attacks of the [November Pogrom] in 1938, Britain agreed to rescue nearly 10,000 mostly Jewish children through the [Kindertransport]. Each young [Refugee] had to say goodbye to their parents with only one small suitcase. Kind British families and charities acted as a [Sponsor], promising £50 and a safe home until peace returned.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_4_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg",
+        "caption": "Kindertransport Bronze Memorial 'Channel Crossing to Life' at Hook of Holland (Frank Meisler & Arie Ovadia)",
+        "position": "center 25%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg"
     },
     {
       "id": "lesson_5",
@@ -4730,17 +4754,17 @@
               "letter": "B",
               "source_letter": "B",
               "type": "visual",
-              "src": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
-              "image": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
-              "title": "Source B: Archival Portrait of British Volunteer Rescuer Trevor Chadwick (c. 1935)",
-              "caption": "Pre-war portrait of Dorset schoolteacher Trevor Chadwick (1907–1979), who left his teaching post in Swanage in early 1939 to run the Prague Kindertransport children’s office on the ground alongside Doreen Warriner (Wikimedia Commons, Public Domain).",
+              "src": "/images/upgraded/ks2-ww2/l05_src1_kindertransport_uk_id_permit_1939.jpg",
+              "image": "/images/upgraded/ks2-ww2/l05_src1_kindertransport_uk_id_permit_1939.jpg",
+              "title": "Source B: British Home Office Kindertransport Child Identity Permit (1939)",
+              "caption": "Original 1939 British Home Office travel permit ('This Document Requires No Visa') issued under the Inter-Aid Committee for nine-year-old refugee Helga Beck. In Prague and London, Dorset teacher Trevor Chadwick, Doreen Warriner, and Nicholas Winton raced against time to secure permits like this for 669 children (Public Domain).",
               "author": "Anonymous Pre-War Photographer (Wikimedia Commons, Public Domain)",
-              "date": "c. 1935 (Prague Rescue 1939)",
+              "date": "1939",
               "context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
               "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
               "question_badge": "RESCUE TEAM IN PRAGUE",
-              "question": "What does Source B remind us about how old even the youngest Kindertransport refugees were, and why volunteers like Trevor Chadwick were vital?",
-              "model_answer": "Source B shows Dorset teacher Trevor Chadwick gently holding a tiny baby outdoors in Prague. Even infants and toddlers had to travel without their parents, so brave volunteers in Prague were vital to care for them and guide them safely onto the trains.",
+              "question": "Look closely at the official travel permit in Source B. Why did volunteers like Trevor Chadwick in Prague and Nicholas Winton in London have to work together so urgently to obtain documents like this?",
+              "model_answer": "Source B shows that every child needed an official stamped British government identity permit with their photograph and family details before they could enter Britain without a visa. While Nicholas Winton raised guarantees and permits in London, Trevor Chadwick worked on the ground in occupied Prague matching permits to children and guiding them safely onto the trains.",
               "teacher_notes": {
                 "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
                 "source_context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
@@ -5232,17 +5256,17 @@
           "letter": "B",
           "source_letter": "B",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
-          "image": "/units/ks2_ww2/assets/trevor_chadwick_portrait_pd.jpg",
-          "title": "Source B: Archival Portrait of British Volunteer Rescuer Trevor Chadwick (c. 1935)",
-          "caption": "Pre-war portrait of Dorset schoolteacher Trevor Chadwick (1907–1979), who left his teaching post in Swanage in early 1939 to run the Prague Kindertransport children’s office on the ground alongside Doreen Warriner (Wikimedia Commons, Public Domain).",
+          "src": "/images/upgraded/ks2-ww2/l05_src1_kindertransport_uk_id_permit_1939.jpg",
+          "image": "/images/upgraded/ks2-ww2/l05_src1_kindertransport_uk_id_permit_1939.jpg",
+          "title": "Source B: British Home Office Kindertransport Child Identity Permit (1939)",
+          "caption": "Original 1939 British Home Office travel permit ('This Document Requires No Visa') issued under the Inter-Aid Committee for nine-year-old refugee Helga Beck. In Prague and London, Dorset teacher Trevor Chadwick, Doreen Warriner, and Nicholas Winton raced against time to secure permits like this for 669 children (Public Domain).",
           "author": "Anonymous Pre-War Photographer (Wikimedia Commons, Public Domain)",
-          "date": "c. 1935 (Prague Rescue 1939)",
+          "date": "1939",
           "context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
           "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
           "question_badge": "RESCUE TEAM IN PRAGUE",
-          "question": "What does Source B remind us about how old even the youngest Kindertransport refugees were, and why volunteers like Trevor Chadwick were vital?",
-          "model_answer": "Source B shows Dorset teacher Trevor Chadwick gently holding a tiny baby outdoors in Prague. Even infants and toddlers had to travel without their parents, so brave volunteers in Prague were vital to care for them and guide them safely onto the trains.",
+          "question": "Look closely at the official travel permit in Source B. Why did volunteers like Trevor Chadwick in Prague and Nicholas Winton in London have to work together so urgently to obtain documents like this?",
+          "model_answer": "Source B shows that every child needed an official stamped British government identity permit with their photograph and family details before they could enter Britain without a visa. While Nicholas Winton raised guarantees and permits in London, Trevor Chadwick worked on the ground in occupied Prague matching permits to children and guiding them safely onto the trains.",
           "teacher_notes": {
             "hinge_question": "Why was Trevor Chadwick's dangerous work on the ground in Prague just as essential to the rescue as Winton's work in London?",
             "source_context": "After Nicholas Winton returned to his job in London in January 1939 to raise funds and Home Office permits, Dorset Latin teacher Trevor Chadwick stayed in Prague alongside Doreen Warriner. Chadwick visited anxious parents, organised travel papers under Nazi occupation, and personally carried babies and comforted frightened children onto the eight rescue trains. **Hinge Question:** Why did rescuing 669 children require brave volunteers on the ground in Prague as well as organisers in London?",
@@ -5481,8 +5505,8 @@
           "prose_hash": "8776abbf21"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l05.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l05.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg",
       "banner_position": "center 25%",
       "enquiry_question": "How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?",
       "visual_story_sheet": {
@@ -5569,7 +5593,13 @@
       },
       "vocab_cloze_text": "In December 1938, stockbroker Nicholas Winton refused to be a silent [Bystander] when he saw families in danger in Prague. Choosing to act as a determined [Upstander], he worked with volunteers in Prague and London to build a life-saving [Rescue Chain]. Together they arranged foster homes and every official [Visa] needed to bring 669 children safely to Britain.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_5_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg",
+        "caption": "Commemorative 'The Winton Train (1939–2009): Prague – London' Steam Locomotive at Liverpool Street Station",
+        "position": "center 25%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg"
     },
     {
       "id": "lesson_6",
@@ -6614,8 +6644,8 @@
           "prose_hash": "dfd2b0a86f"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l06.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l06.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg",
       "banner_position": "center 30%",
       "enquiry_question": "How did ordinary families protect themselves when bombs fell night after night during the Blitz?",
       "visual_story_sheet": {
@@ -6703,7 +6733,13 @@
       },
       "vocab_cloze_text": "Starting in September 1940, German bombers launched [The Blitz], attacking London and British industrial cities night after night. Families with gardens sheltered underground inside a corrugated-steel [Anderson Shelter], while indoor households slept beneath a heavy table-shaped [Morrison Shelter]. Volunteer fire-watchers bravely tackled roof blazes sparked by each falling [Incendiary Bomb].",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_6_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg",
+        "caption": "Smoke Rising Over the London Docks and Tower Bridge During the First Mass Blitz Raid (7 September 1940)",
+        "position": "center 30%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg"
     },
     {
       "id": "lesson_7",
@@ -7750,8 +7786,8 @@
           "prose_hash": "60f9b47f77"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l07.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l07.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg",
       "banner_position": "center 25%",
       "enquiry_question": "Why did the British government ration butter, sugar, and meat, and ask families to \"Dig for Victory\"?",
       "visual_story_sheet": {
@@ -7839,7 +7875,13 @@
       },
       "vocab_cloze_text": "When German submarines attacked food ships in the Atlantic, Britain introduced [Rationing] in January 1940 to guarantee fair shares for everyone. Shoppers handed over a stamped [Ration Coupon] alongside their money for meat, butter, and sugar. Millions joined the [Dig for Victory] campaign to grow vegetables in parks and gardens rather than buying stolen goods on the illegal [Black Market].",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_7_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg",
+        "caption": "Families Resting for Tea on Their 'Dig for Victory' Allotment in Acton, London (1940)",
+        "position": "center 25%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg"
     },
     {
       "id": "lesson_8",
@@ -8719,17 +8761,17 @@
           "letter": "D",
           "source_letter": "D",
           "type": "visual",
-          "src": "/units/ks2_ww2/assets/ata_pilot_maureen_dunlop.jpg",
-          "image": "/units/ks2_ww2/assets/ata_pilot_maureen_dunlop.jpg",
-          "title": "Source D: ATA Pilot Maureen Dunlop on the Wing of a Fleet Air Arm Barracuda (1944)",
-          "caption": "Iconic photograph of 24-year-old Anglo-Argentine ATA pilot Maureen Dunlop pushing her hair from her eyes after delivering a military aircraft (Picture Post / IWM).",
+          "src": "/images/upgraded/ks2-ww2/l08_src3_ata_women_ferry_pilots_ch8945.jpg",
+          "image": "/images/upgraded/ks2-ww2/l08_src3_ata_women_ferry_pilots_ch8945.jpg",
+          "title": "Source D: Allied Women Ferry Pilots of the Air Transport Auxiliary Leaving Their Aircraft (1943)",
+          "caption": "Four uniformed women ferry pilots of the Air Transport Auxiliary (ATA)—carrying parachute harnesses and flying goggles—walk past a Hawker Hurricane fighter at an airfield near Maidenhead on 19 March 1943. Overseas volunteers from Argentina, America, and Poland, including famous Anglo-Argentine pilot Maureen Dunlop, flew Spitfires and heavy bombers across Britain (Imperial War Museum CH 8945).",
           "author": "Picture Post Magazine Photographer",
-          "date": "1944",
+          "date": "19 March 1943",
           "context": "Maureen Dunlop volunteered for the ATA from Argentina, flying eighty different types of military aircraft across Britain during the war. Her photograph on the cover of *Picture Post* magazine in 1944 became an international sensation, inspiring thousands of young women. **Hinge Question:** How did photographs of glamorous yet highly skilled women pilots challenge pre-war stereotypes about women's roles in society?",
           "hinge_question": "How did photographs of glamorous yet highly skilled women pilots challenge pre-war stereotypes about women's roles in society?",
           "question_badge": "FLYING FOR THE ATA",
-          "question": "How did photographs of Maureen Dunlop change what people thought women were capable of doing?",
-          "model_answer": "The photograph shows Maureen Dunlop smiling confidently on the wing of a huge naval warplane. It proved to the public that women were brave, skilled, and able to fly powerful military aircraft just as well as men.",
+          "question": "How did photographs of skilled Air Transport Auxiliary women pilots like those in Source D—and famous ATA pilot Maureen Dunlop—change what people thought women could do?",
+          "model_answer": "Source D shows uniformed women ferry pilots walking confidently past a front-line fighter plane wearing flying goggles and heavy parachute gear. Photographs of brave ATA pilots proved to the public that women could fly fast, powerful military aircraft across Britain just as skilfully as men.",
           "provenance_clues": {
             "author": "Photojournalist for Picture Post magazine.",
             "audience": "Millions of British magazine readers.",
@@ -8888,8 +8930,8 @@
           "prose_hash": "b3361d8957"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l08.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l08.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg",
       "banner_position": "center 22%",
       "enquiry_question": "How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?",
       "visual_story_sheet": {
@@ -8979,7 +9021,13 @@
       },
       "vocab_cloze_text": "In December 1941, Parliament passed [Conscription] calling unmarried women up for vital wartime service. Over 80,000 Land Girls joined the [Women's Land Army] to plough fields and harvest crops, while hardy [Lumberjills] felled timber in British forests. Hundreds of thousands more worked inside dangerous factories making [Munitions] such as shells, bullets, and aircraft parts.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_8_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg",
+        "caption": "Three Women's Land Army 'Land Girls' Harvesting Flax by Tractor in Huntingdonshire (1942)",
+        "position": "center 22%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg"
     },
     {
       "id": "lesson_9",
@@ -9232,8 +9280,8 @@
               "letter": "B",
               "source_letter": "B",
               "type": "artefact",
-              "src": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
-              "image": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
+              "src": "/images/upgraded/ks2-ww2/l09_src1_bombe_bletchley_park_hires.jpg",
+              "image": "/images/upgraded/ks2-ww2/l09_src1_bombe_bletchley_park_hires.jpg",
               "title": "Source B: The Turing-Welchman Bombe Decryption Machine in Hut 11 (Bletchley Park)",
               "caption": "Reconstructed electromechanical Bombe machine in Hut 11, featuring thirty-six revolving drums that simulated multiple Enigma machines simultaneously (Bletchley Park Trust).",
               "author": "Alan Turing, Gordon Welchman & British Tabulating Machine Company",
@@ -9752,8 +9800,8 @@
           "letter": "B",
           "source_letter": "B",
           "type": "artefact",
-          "src": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
-          "image": "/units/ks2_ww2/assets/bombe_bletchley_park.jpg",
+          "src": "/images/upgraded/ks2-ww2/l09_src1_bombe_bletchley_park_hires.jpg",
+          "image": "/images/upgraded/ks2-ww2/l09_src1_bombe_bletchley_park_hires.jpg",
           "title": "Source B: The Turing-Welchman Bombe Decryption Machine in Hut 11 (Bletchley Park)",
           "caption": "Reconstructed electromechanical Bombe machine in Hut 11, featuring thirty-six revolving drums that simulated multiple Enigma machines simultaneously (Bletchley Park Trust).",
           "author": "Alan Turing, Gordon Welchman & British Tabulating Machine Company",
@@ -11149,8 +11197,8 @@
           "prose_hash": "354a452f3c"
         }
       ],
-      "hero_image": "/units/ks2_ww2/assets/banner_l10.jpg",
-      "card_image": "/units/ks2_ww2/assets/card_l10.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg",
       "banner_position": "center 25%",
       "enquiry_question": "Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?",
       "visual_story_sheet": {
@@ -11240,7 +11288,13 @@
       },
       "vocab_cloze_text": "Street parties filled Britain on 8 May 1945 as crowds celebrated [VE Day] and the end of war in Europe. Victory depended on millions of men and women from across the [Commonwealth], including India, Canada, Australia, and the Caribbean. Every November, wreaths of red poppies are laid at [The Cenotaph] in Whitehall in quiet [Remembrance] of all who served.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_10_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg",
+        "caption": "VE Day Crowds Gathered Around the Flag-Draped Cenotaph on Whitehall, London (8 May 1945)",
+        "position": "center 25%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg"
     },
     {
       "id": "lesson_11",
@@ -11248,7 +11302,7 @@
       "title": "Enquiry 11: After the War — The Windermere Children (1945)",
       "subtitle": "Ten RAF Bombers Carrying 300 Child Survivors from Prague to Peace in the Lake District",
       "enquiryQuestion": "How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?",
-      "hero_image": "/units/ks2_ww2/assets/banner_l11.jpg",
+      "hero_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
       "banner_position": "center 25%",
       "teacher_notes": {
         "primer": "This extension enquiry bridges the pre-war Kindertransport (Enquiries 4 & 5) with post-war reconstruction in 1945. While Enquiries 4 and 5 examined children rescued before the outbreak of war, this lesson confronts the question pupils frequently ask: What happened to the children across Europe who could not escape? Approximately 1.5 million Jewish children were murdered during the Holocaust. In August 1945, a humanitarian airlift brought 300 surviving orphan children from Prague to the Calgarth Estate beside Lake Windermere in Cumbria to recuperate, heal, and learn to live again. Pupils investigate this remarkable journey—from hiding bread under pillows in fear of starvation to swimming in Lake Windermere and riding donated red bicycles. Finally, pupils explore how award-winning children's author Tom Palmer conducted oral history interviews with real survivors (including Arek Hersh MBE and Ike Alterman) to write his acclaimed novel 'After the War: From Auschwitz to Ambleside', demonstrating how historical evidence and empathy come together in literature.",
@@ -12284,7 +12338,7 @@
           "prose_hash": "efc88914e7"
         }
       ],
-      "card_image": "/units/ks2_ww2/assets/card_l11.jpg",
+      "card_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
       "enquiry_question": "How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?",
       "visual_story_sheet": {
         "num": "11",
@@ -12373,7 +12427,13 @@
       },
       "vocab_cloze_text": "In August 1945, the RAF flew 300 orphaned camp survivors known as the [Windermere Children] from Prague to safety in the Lake District. Caring staff at the [Calgarth Estate] helped them recover their strength, learn English, and ride bicycles. Years later, survivors founded the ['45 Aid Society] and shared priceless [Oral History] testimonies with schools.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_11_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "banner": {
+        "image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
+        "caption": "Panoramic View Over Northern Lake Windermere and the Cumbria Fells from Orrest Head",
+        "position": "center 25%"
+      },
+      "banner_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg"
     }
   ],
   "edition": "Key Stage 2 Primary Classroom Edition",

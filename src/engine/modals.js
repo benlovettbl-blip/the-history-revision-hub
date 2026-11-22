@@ -3419,6 +3419,11 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       group: 'Key Stage 2',
     },
     {
+      id: 'ks2_anglo_saxons_vikings',
+      title: 'KS2: Anglo-Saxons & Vikings (AD 410–1066)',
+      group: 'Key Stage 2',
+    },
+    {
       id: 'ks2_ww2',
       title: 'KS2: World War II & The Home Front (1933–1945)',
       group: 'Key Stage 2',

@@ -22,6 +22,15 @@ const unitData = JSON.parse(fs.readFileSync(unitPath, 'utf8'));
 
 const VERIFIED_COMMERCIAL_ASSETS = {
   'banner_unit_hero.jpg': {
+    date: '2008-06-07 (Re-enactment of 1st-Century Roman Legionaries)',
+    creator: 'MatthiasKabel (cropped by Beyond My Ken)',
+    repository: 'Wikimedia Commons',
+    accession_id: 'Commons: Pilensalve_crop.jpg',
+    rights_status: 'CC BY-SA 3.0 (Commercial Use Permitted with Attribution)',
+    commercial_use_permitted: true,
+    source_url: 'https://commons.wikimedia.org/wiki/File:Pilensalve_crop.jpg',
+  },
+  'milecastle_39_hadrians_wall.jpg': {
     date: 'Begun AD 122 (Photograph 2006)',
     creator: 'Adam Cuerden',
     repository: 'Wikimedia Commons',
@@ -290,6 +299,105 @@ const VERIFIED_COMMERCIAL_ASSETS = {
     rights_status: 'CC BY-SA 3.0 (Commercial Use Permitted with Attribution)',
     commercial_use_permitted: true,
     source_url: 'https://commons.wikimedia.org/wiki/File:Mildenhall_treasure_great_dish_british_museum.JPG',
+  },
+  "old_sarum_iron_age_ramparts.jpg": {
+      "date": "2019-10-03 15:49:21",
+      "creator": "Ethan Doyle White",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Ramparts of Old Sarum Hillfort.jpg",
+      "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ramparts_of_Old_Sarum_Hillfort.jpg"
+  },
+  "castell_henllys_roundhouse_interior.jpg": {
+      "date": "2023-04-29",
+      "creator": "Keith Ruffles",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Roundhouses couvertes de chaume de Castell Henllys. Reconstitution 1.jpg",
+      "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Roundhouses_couvertes_de_chaume_de_Castell_Henllys._Reconstitution_1.jpg"
+  },
+  "claudius_de_britann_coin.jpg": {
+      "date": "ROMAN",
+      "creator": "North Lincolnshire Museum, Martin Foreman, 2015-01-15 08:55:59",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Roman Coin, Sestertius of Claudius (FindID 660285).jpg",
+      "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Roman_Coin,_Sestertius_of_Claudius_(FindID_660285).jpg"
+  },
+  "dover_roman_pharos_lighthouse.jpg": {
+      "date": "2018-06-28",
+      "creator": "Michael Garlick",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Dover Castle, The Roman Pharos interior - geograph.org.uk - 5823386.jpg",
+      "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dover_Castle,_The_Roman_Pharos_interior_-_geograph.org.uk_-_5823386.jpg"
+  },
+  "colchester_temple_of_claudius_castle.jpg": {
+      "date": "21 May 2004 (original upload date)",
+      "creator": "The original uploader was Sannse at English Wikipedia .",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Colchester castle 800.jpg",
+      "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Colchester_castle_800.jpg"
+  },
+  "verulamium_roman_wall_st_albans.jpg": {
+      "date": "2014-05-17 14:36",
+      "creator": "Carole Raddato from FRANKFURT, Germany",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Roman City Walls, Verulamium, St Albans (14234744873).jpg",
+      "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Roman_City_Walls,_Verulamium,_St_Albans_(14234744873).jpg"
+  },
+  "regina_tombstone_south_shields.jpg": {
+      "date": "July 2018",
+      "creator": "Abigail Baker and Alison Cooley",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Reginas-Tombstone-a-relief-portrait-with-inscriptions-in-Latin-and-Palmyrene-Copyright.jpg",
+      "rights_status": "CC BY 4.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reginas-Tombstone-a-relief-portrait-with-inscriptions-in-Latin-and-Palmyrene-Copyright.jpg"
+  },
+  "wheeldale_roman_road_yorkshire.jpg": {
+      "date": "1993-10-19",
+      "creator": "Colin Park",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Wheeldale Roman Road near Goathland - geograph.org.uk - 6473727.jpg",
+      "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wheeldale_Roman_Road_near_Goathland_-_geograph.org.uk_-_6473727.jpg"
+  },
+  "bignor_roman_villa_mosaic.jpg": {
+      "date": "2017-04-26 15:27",
+      "creator": "Mike Prince from Bangalore, India",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Roman Mosaic at Bignor Roman Villa (47360551581).jpg",
+      "rights_status": "CC BY 2.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Roman_Mosaic_at_Bignor_Roman_Villa_(47360551581).jpg"
+  },
+  "pevensey_roman_saxon_shore_fort.jpg": {
+      "date": "2011-10-28 18:05",
+      "creator": "Pevensey_Castle_aerial_view.jpg : Lieven Smits derivative work: Hchc2009 ( talk )",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: Pevensey Castle aerial alt.jpg",
+      "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pevensey_Castle_aerial_alt.jpg"
+  },
+  "constantine_statue_york_minster.jpg": {
+      "date": "2009-04-13",
+      "creator": "Gernot Keller",
+      "repository": "Wikimedia Commons",
+      "accession_id": "Commons: 2009-04-13 ConstantineTheGreat York.jpg",
+      "rights_status": "CC BY 3.0 (Commercial Use Permitted with Attribution)",
+      "commercial_use_permitted": true,
+      "source_url": "https://commons.wikimedia.org/wiki/File:2009-04-13_ConstantineTheGreat_York.jpg"
   },
   'york_roman_multangular_tower.jpg': {
     date: 'Begun c. AD 306 at Eboracum (York)',

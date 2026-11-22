@@ -339,9 +339,9 @@ function buildTextbookHtml(unitData) {
       <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:10.5pt; color:#fef3c7;">Invasion, Resistance &amp; Lasting Legacy</div>
     </div>
     <div style="border-radius:7px; overflow:hidden; border:1.5px solid #cbd5e1;">
-      <img src="${heroImg}" alt="Milecastle 39 on Hadrian's Wall" style="width:100%; height:64mm; object-fit:cover; display:block;" />
+      <img src="${heroImg}" alt="Roman legionaries locking red-and-gold scutum shields" style="width:100%; height:64mm; object-fit:cover; object-position:center 35%; display:block;" />
       <div style="background:#0f172a; color:#e2e8f0; font-size:7.3pt; padding:2mm 3.5mm; line-height:1.3;">
-        <strong>Cover Plate:</strong> Milecastle 39 ("Castle Nick") on Hadrian’s Wall climbing the steep crags near Steel Rigg in Northumberland (begun AD 122 • Public Domain, Adam Cuerden).
+        <strong>Cover Plate:</strong> Roman legionaries in gleaming <em>lorica segmentata</em> iron strip armour locking curved red-and-gold <em>scutum</em> shields to hurl <em>pilum</em> javelins (CC BY-SA 3.0, MatthiasKabel).
       </div>
     </div>
     <div style="background:#fffbeb; border:1.5px solid #fcd34d; border-left:5px solid #b45309; border-radius:6px; padding:3.2mm 4.5mm;">
@@ -790,7 +790,7 @@ function buildMasterWorkbookHtml(unitData) {
       <h1 style="font-family:'Cinzel',serif; font-size:19pt; font-weight:900; margin:2mm 0;">THE ROMANS IN BRITAIN</h1>
       <div style="font-family:'Lora',serif; font-style:italic; font-size:10pt; color:#ffedd5;">“How did the Roman Empire conquer Britain and change life on our island forever?”</div>
     </div>
-    <img src="${heroImg}" alt="Hadrian's Wall" style="width:100%; height:56mm; object-fit:cover; border-radius:7px; border:1.5px solid #cbd5e1;" />
+    <img src="${heroImg}" alt="Roman legionaries with scutum shields" style="width:100%; height:56mm; object-fit:cover; object-position:center 35%; border-radius:7px; border:1.5px solid #cbd5e1;" />
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4mm; background:#fffbeb; border:1.5px solid #fcd34d; border-radius:6px; padding:3.5mm 4.5mm; font-size:9pt; font-weight:700;">
       <div>Historian's Name: ___________________________</div>
       <div>Class / Year Group: _________________________</div>
@@ -1004,7 +1004,7 @@ function buildRetrievalCompanionHtml(unitData) {
       <h1 style="font-family:'Cinzel',serif; font-size:17pt; margin:1.5mm 0;">THE ROMANS IN BRITAIN (24 CORE QUESTIONS)</h1>
       <div style="font-family:'Lora',serif; font-style:italic; font-size:9.2pt; color:#ffedd5;">Low-Stakes Memory Practice Across Enquiries 1 to 6 • Years 3–5</div>
     </div>
-    <img src="${heroImg}" alt="Hadrian's Wall" style="width:100%; height:54mm; object-fit:cover; border-radius:6px; border:1.2px solid #cbd5e1;" />
+    <img src="${heroImg}" alt="Roman legionaries with scutum shields" style="width:100%; height:54mm; object-fit:cover; object-position:center 35%; border-radius:6px; border:1.2px solid #cbd5e1;" />
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4mm; background:#fffbeb; border:1.2px solid #fcd34d; border-radius:5px; padding:3mm 4mm; font-size:8.6pt; font-weight:700;">
       <div>Pupil Name: ____________________________</div>
       <div>Class: _________________________________</div>

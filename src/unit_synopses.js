@@ -256,6 +256,18 @@ export const unitSynopses = {
       'VE Day & The Windermere Children',
     ],
   },
+  ks2_anglo_saxons_vikings: {
+    period: 'AD 410 – 1066',
+    synopsis:
+      "How did rival Anglo-Saxon kingdoms and dragon-prowed Viking fleets clash and unite to forge the Kingdom of England? Cross the stormy North Sea after Rome's departure in AD 410 into smoky thatched timber halls, uncover the 27-metre ghost ship and garnet-studded warrior helmet inside Sutton Hoo Mound 1, and witness Viking longships strike Holy Island at Lindisfarne in AD 793. Stand beside King Alfred the Great in the Somerset marshes and behind his 33 walled burhs, dig beneath Jorvik's Coppergate workshops to find antler combs and Baghdad silver coins, and march with Aethelflaed, King Athelstan, King Cnut, and Harold Godwinson to the dramatic twin battles of 1066!",
+    tags: [
+      'Angles, Saxons & Jutes (AD 410+)',
+      'Sutton Hoo Ship Burial & Bede',
+      'Lindisfarne AD 793 & Longships',
+      'Alfred the Great & The Danelaw',
+      'Jorvik, Athelstan, Cnut & 1066',
+    ],
+  },
 };
 
 /**

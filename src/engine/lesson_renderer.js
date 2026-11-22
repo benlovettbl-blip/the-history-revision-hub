@@ -221,6 +221,8 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
         : 'Unit';
       if (unitId === 'ks2_romans') {
         unitTitle = 'The Romans in Britain';
+      } else if (unitId === 'ks2_anglo_saxons_vikings') {
+        unitTitle = 'Anglo-Saxons & Vikings';
       } else if (unitId === 'ks2_ww2') {
         unitTitle = 'Britain at War (WWII)';
       }
