@@ -7696,11 +7696,78 @@ const cme_new = {
               }
             }
           ],
-          "image": "/images/cme_new/kt2/cme_map_l4_water_raids_samu_1964_67.svg",
-          "image_alt": "Edexcel GCSE geopolitical map of the 1964–67 escalation to war showing Israel’s 1964 National Water Carrier from the Sea of Galilee to the Negev, Arab League headwater diversion works at Banias, Dan, and Hasbani, Syrian Golan shelling and Fatah border raids, Israel’s 13 November 1966 reprisal raid on As-Samu in the Jordanian West Bank, and the 7 April 1967 air battle in which six Syrian MiG-21s were shot down near Damascus",
-          "caption": "Reference Map: Escalation to War (1964–April 1967) — tracing Israel’s National Water Carrier, Arab headwater diversion works (Banias, Dan, Hasbani), Syrian-backed Fatah raids, the 13 November 1966 Samu reprisal in the Jordanian West Bank, and the 7 April 1967 air clash over Damascus.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[3.1]</span> Frustrated by conservative Arab diplomacy, younger Palestinian militants led by **Yasser Arafat** formed **Fatah** in Kuwait to wage independent revolutionary warfare. Fatah rejected reliance on Arab governments, arguing that direct guerrilla attacks inside Israel would ignite a wider Arab-Israeli conflict. In January 1965, Fatah carried out its first sabotage raid, attempting to dynamite an Israeli water canal pumping facility.\n\n<span class=\"para-ref\">[3.2]</span> In 1966, a radical military regime seized power in Damascus, offering Fatah advanced weapons, training facilities, and operational sanctuary. From heavily fortified artillery bunkers atop the **Golan Heights**, Syrian gunners routinely shelled Israeli tractors and farming kibbutzim in the Hula Valley below, prompting Israeli military leaders to warn that Syria faced devastating military retaliation if guerrilla attacks continued."
+          "content": "<span class=\"para-ref\">[3.1]</span> Frustrated by conservative Arab diplomacy, younger Palestinian militants led by **Yasser Arafat** formed **Fatah** in Kuwait to wage independent revolutionary warfare. Fatah rejected reliance on Arab governments, arguing that direct guerrilla attacks inside Israel would ignite a wider Arab-Israeli conflict. In January 1965, Fatah carried out its first sabotage raid, attempting to dynamite an Israeli water canal pumping facility.\n\n<span class=\"para-ref\">[3.2]</span> In 1966, a radical military regime seized power in Damascus, offering Fatah advanced weapons, training facilities, and operational sanctuary. From heavily fortified artillery bunkers atop the **Golan Heights**, Syrian gunners routinely shelled Israeli tractors and farming kibbutzim in the Hula Valley below, prompting Israeli military leaders to warn that Syria faced devastating military retaliation if guerrilla attacks continued.",
+          "stage_hook_map": {
+            "id": "cme-l4-escalation-map",
+            "title": "Water Politics, Fatah Raids & Pre-War Escalation (1964–May 1967)",
+            "subtitle": "1964 – May 1967 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/cme_new/kt2/cme_map_l4_water_raids_samu_1964_67.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 41.9,
+                "y": 52.4,
+                "color": "#0284c7",
+                "label": "Water Carrier (1964)",
+                "badge": "Water Politics",
+                "date": "Jan–May 1964",
+                "title": "Israeli National Water Carrier & The 1964 Cairo Summit",
+                "details": "Opened in 1964, Israel’s National Water Carrier pumped fresh water from the north-west Sea of Galilee (Lake Tiberias) southward to irrigate farms and settlements in the Negev desert. Alarmed Arab leaders met at Nasser’s January 1964 Cairo Summit, founding the PLO in East Jerusalem (May 1964) while backing rival water diversion plans.",
+                "hinge": "Why did control over the River Jordan’s scarce fresh water turn an engineering project into an immediate Arab-Israeli security crisis?"
+              },
+              {
+                "id": "spot-2",
+                "x": 53.9,
+                "y": 21.9,
+                "color": "#d97706",
+                "label": "Headwater Diversion",
+                "badge": "Border Skirmishes",
+                "date": "1964–1966",
+                "title": "Hasbani, Dan & Banias Springs: Headwater Diversion Clashes",
+                "details": "To block water reaching the Sea of Galilee, Syria and the Arab League began digging channels to divert the Hasbani and Banias headwaters north of Israel’s border. Between 1965 and 1966, Israeli tank fire and air strikes repeatedly destroyed Syrian earth-moving equipment, halting the diversion and normalising cross-border fire.",
+                "hinge": "How did Israeli strikes on Syrian diversion works demonstrate both Israel’s military superiority and the growing fragility of the 1949 armistice?"
+              },
+              {
+                "id": "spot-3",
+                "x": 54.9,
+                "y": 28.5,
+                "align": "left",
+                "color": "#be123c",
+                "label": "Golan & Fatah Raids",
+                "badge": "Guerrilla Escalation",
+                "date": "Jan 1965 – 1966",
+                "title": "Syrian Golan Sanctuary & Fatah Sabotage Raids",
+                "details": "Rejecting Nasser’s caution, Yasser Arafat’s Fatah launched its first sabotage raid against Israel’s water carrier in January 1965 to provoke a wider war. After a radical regime took power in Damascus in 1966, Syria armed and sheltered Fatah raiders while shelling Israeli kibbutzim in the Hula Valley from fortified Golan bunkers.",
+                "hinge": "Why did Fatah’s cross-border raids from Syria drag reluctant Arab states closer to a conventional war they were not ready to fight?"
+              },
+              {
+                "id": "spot-4",
+                "x": 43.7,
+                "y": 74.7,
+                "color": "#1d4ed8",
+                "label": "As-Samu Raid (Nov 66)",
+                "badge": "Major IDF Reprisal",
+                "date": "13 Nov 1966",
+                "title": "IDF Armoured Reprisal Raid on As-Samu (West Bank)",
+                "details": "After a Fatah landmine killed three Israeli paratroopers near the southern Green Line, Israel sent 4,000 troops, tanks, and aircraft into Jordanian-ruled As-Samu on 13 November 1966. Fighting killed 15 Jordanian soldiers and flattened over 100 homes, sparking furious West Bank riots that forced King Hussein to align with Nasser.",
+                "hinge": "Why was retaliating heavily against moderate Jordan at As-Samu—rather than radical Syria—a strategic miscalculation that united Israel’s neighbours?"
+              },
+              {
+                "id": "spot-5",
+                "x": 60.3,
+                "y": 20.7,
+                "align": "left",
+                "color": "#7c3aed",
+                "label": "7 Apr 1967 Air Battle",
+                "badge": "Trigger to Crisis",
+                "date": "7 Apr – May 1967",
+                "title": "Six Syrian MiG-21s Shot Down Over Golan & Damascus",
+                "details": "When Syrian Golan artillery shelled an Israeli armoured tractor ploughing disputed DMZ land on 7 April 1967, French-built IAF Mirage jets scrambled and shot down six Syrian MiG-21s—including over the outskirts of Damascus. Humiliated, Damascus turned to Moscow, contributing to false May 1967 Soviet warnings of an imminent Israeli invasion.",
+                "hinge": "How did the 7 April 1967 dogfight over Damascus trigger the chain of Soviet warnings and Egyptian troop movements that sparked the Six-Day War?"
+              }
+            ]
+          }
         },
         {
           "title": "The Israeli Raid on Samu",
@@ -12503,10 +12570,78 @@ const cme_new = {
             }
           ],
           "isReversed": false,
-          "image": "/images/cme_new/kt2/cme_map_l7_karameh_black_september_1968_72.svg",
-          "image_alt": "Edexcel GCSE geopolitical map of the Palestinian armed struggle (1968–72) plotting the Battle of Karameh in the Jordan Valley (21 March 1968), the PFLP triple airliner hijacking at Dawson's Field near Zarqa (6–12 September 1970), Black September fighting in Amman, Jordanian forces repelling Syrian tanks near Irbid and Ramtha, and the PLO’s expulsion to Beirut and Southern Lebanon ('Fatahland') in 1970–71",
-          "caption": "Reference Map: Palestinian Armed Struggle & Jordanian Civil War (1968–72) — tracing the Battle of Karameh (March 1968), the PFLP’s Dawson’s Field hijackings, Black September in Amman, the repelled Syrian tank incursion at Irbid/Ramtha, and PLO relocation to Southern Lebanon (\"Fatahland\").",
-          "content": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international aircraft hijackings to publicize the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, PFLP operatives coordinated the simultaneous hijacking of four Western passenger airliners, forcing three aircraft to land at **Dawson’s Field**, a remote desert landing strip in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and demonstrating that armed Palestinian groups operated entirely beyond Jordanian government control."
+          "content": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international aircraft hijackings to publicize the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, PFLP operatives coordinated the simultaneous hijacking of four Western passenger airliners, forcing three aircraft to land at **Dawson’s Field**, a remote desert landing strip in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and demonstrating that armed Palestinian groups operated entirely beyond Jordanian government control.",
+          "stage_hook_map": {
+            "id": "cme-l7-black-september-map",
+            "title": "Karameh, Black September & PLO Relocation to Lebanon (1968–72)",
+            "subtitle": "1968 – 1972 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/cme_new/kt2/cme_map_l7_karameh_black_september_1968_72.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 47.4,
+                "y": 64.3,
+                "color": "#1d4ed8",
+                "label": "Karameh (21 Mar 68)",
+                "badge": "PLO Turning Point",
+                "date": "21 March 1968",
+                "title": "Battle of Karameh: Fatah Stands Against Israeli Armour",
+                "details": "On 21 March 1968, Israeli tanks crossed the River Jordan to destroy Yasser Arafat’s Fatah base at Karameh. Fighting alongside Jordanian army artillery, Palestinian guerrillas inflicted 28 Israeli deaths and damaged several tanks; Arafat hailed Karameh as a moral victory, inspiring thousands of recruits and winning the PLO chairmanship in February 1969.",
+                "hinge": "Why did Karameh transform Fatah’s prestige across the Arab world even though Israeli troops physically demolished the camp?"
+              },
+              {
+                "id": "spot-2",
+                "x": 55.7,
+                "y": 61.1,
+                "align": "left",
+                "color": "#dc2626",
+                "label": "Dawson’s Field (Sep 70)",
+                "badge": "PFLP Hijackings",
+                "date": "6–12 Sept 1970",
+                "title": "Dawson’s Field: PFLP Airliner Hijackings & Explosions",
+                "details": "On 6 September 1970, Dr George Habash’s Marxist PFLP hijacked four Western passenger jets, landing three at Dawson’s Field near Zarqa in Jordan. After freeing over 300 hostages, militants blew up the empty airliners before world television cameras, humiliating King Hussein and exposing the PLO’s armed “state-within-a-state”.",
+                "hinge": "Why did blowing up three Western airliners on Jordanian soil leave King Hussein with little choice but to confront the Palestinian militias?"
+              },
+              {
+                "id": "spot-3",
+                "x": 52.6,
+                "y": 64.3,
+                "align": "left",
+                "color": "#991b1b",
+                "label": "Amman (Black Sept.)",
+                "badge": "Jordanian Civil War",
+                "date": "16–27 Sept 1970",
+                "title": "Amman: “Black September” Civil War in Jordan",
+                "details": "With fedayeen checkpoints and tax-collection openly challenging royal rule in Amman, King Hussein ordered his loyal Bedouin army to disarm Palestinian militias on 16 September 1970. Ten days of fierce urban shelling across Amman’s refugee camps killed thousands and broke the PLO’s power in Jordan by mid-1971.",
+                "hinge": "How did the PLO’s creation of an armed “state-within-a-state” turn its former Jordanian hosts into determined military adversaries?"
+              },
+              {
+                "id": "spot-4",
+                "x": 52.8,
+                "y": 49.4,
+                "align": "left",
+                "color": "#d97706",
+                "label": "Ramtha / Irbid Tanks",
+                "badge": "Syrian Incursion",
+                "date": "19–22 Sept 1970",
+                "title": "Ramtha & Irbid: Syrian Armoured Incursion Repelled",
+                "details": "To rescue besieged PLO fighters, Syria sent roughly 250 tanks—painted in Palestine Liberation Army markings—across the border toward Ramtha and Irbid on 19 September 1970. With Syrian Defence Minister Hafez al-Assad withholding air cover amid US and Israeli deterrence, Jordan’s army and air force routed the Syrian armour.",
+                "hinge": "Why did the defeat of Syria’s tank incursion seal the complete expulsion of PLO forces from Jordan by July 1971?"
+              },
+              {
+                "id": "spot-5",
+                "x": 46.5,
+                "y": 16.9,
+                "color": "#7e22ce",
+                "label": "Lebanon & Beirut HQ",
+                "badge": "PLO Relocation",
+                "date": "1970–1972",
+                "title": "Southern Lebanon (“Fatahland”) & Beirut PLO Headquarters",
+                "details": "Driven out of Jordan, the PLO relocated its political headquarters to Beirut and established cross-border guerrilla bases in Southern Lebanon (“Fatahland”). Seeking vengeance for Jordan, the covert Black September faction murdered 11 Israeli Olympians at Munich in September 1972, triggering Israeli air strikes on Lebanon and Operation Wrath of God.",
+                "hinge": "How did relocating the PLO to weakly governed Lebanon shift the epicentre of the Arab-Israeli conflict northward while fuelling international terrorism?"
+              }
+            ]
+          }
         },
         {
           "title": "Black September (Civil War in Jordan)",
@@ -16100,9 +16235,6 @@ const cme_new = {
           "act_title": "Stage 5: Arab Boycott & The Assassination of Sadat — How did Arab states boycott Egypt, and why was Sadat assassinated in 1981?",
           "theme_heading": "Arab Boycott & The Assassination of Sadat",
           "text": "<span class=\"para-ref\">[5.1]</span> The separate peace treaty triggered furious condemnation across the Arab world, which accused Sadat of betraying Palestinian national rights simply to recover Egyptian territory. The **Arab League** suspended Egypt's membership, severed formal diplomatic relations, moved its headquarters from Cairo to Tunis, and organized sweeping economic boycotts against Egyptian businesses to isolate the Cairo government completely from the Arab community.\n\n<span class=\"para-ref\">[5.2]</span> At home, domestic Islamist fundamentalists condemned Sadat as a traitor to the Islamic cause. On **6 October 1981**, while reviewing a military parade in Cairo celebrating the 1973 canal crossing, Sadat was assassinated by Egyptian Islamic Jihad soldiers. His successor took power, upholding the formal treaty with Israel while gradually repairing Egypt's severed diplomatic relations with Arab neighbors over the following decade.",
-          "image": "/images/cme_new/kt3/cme_map_l9_peace_treaty_arab_boycott_1978_82.svg",
-          "image_alt": "Edexcel GCSE geopolitical map of the 1979 Egypt–Israel Peace Treaty showing the phased return of Sinai by April 1982, annual ~$2bn US aid to Cairo, the 1978–79 Baghdad Summits suspending Egypt from the Arab League, relocation of Arab League HQ from Cairo to Tunis, boycotts by 17+ Arab states, and the 6 October 1981 assassination of Anwar Sadat in Cairo",
-          "caption": "Reference Map: The 26 March 1979 Egypt–Israel Peace Treaty returned the Sinai Peninsula to Egypt by April 1982 backed by ~$2bn/yr in US aid, while triggering Arab League suspension (relocating HQ from Cairo to Tunis), boycotts by 17+ Arab states, and Sadat’s assassination on 6 October 1981.",
           "isReversed": false,
           "sources": [
             {
@@ -16154,7 +16286,76 @@ const cme_new = {
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> The separate peace treaty triggered furious condemnation across the Arab world, which accused Sadat of betraying Palestinian national rights simply to recover Egyptian territory. The **Arab League** suspended Egypt's membership, severed formal diplomatic relations, moved its headquarters from Cairo to Tunis, and organized sweeping economic boycotts against Egyptian businesses to isolate the Cairo government completely from the Arab community.\n\n<span class=\"para-ref\">[5.2]</span> At home, domestic Islamist fundamentalists condemned Sadat as a traitor to the Islamic cause. On **6 October 1981**, while reviewing a military parade in Cairo celebrating the 1973 canal crossing, Sadat was assassinated by Egyptian Islamic Jihad soldiers. His successor took power, upholding the formal treaty with Israel while gradually repairing Egypt's severed diplomatic relations with Arab neighbors over the following decade."
+          "content": "<span class=\"para-ref\">[5.1]</span> The separate peace treaty triggered furious condemnation across the Arab world, which accused Sadat of betraying Palestinian national rights simply to recover Egyptian territory. The **Arab League** suspended Egypt's membership, severed formal diplomatic relations, moved its headquarters from Cairo to Tunis, and organized sweeping economic boycotts against Egyptian businesses to isolate the Cairo government completely from the Arab community.\n\n<span class=\"para-ref\">[5.2]</span> At home, domestic Islamist fundamentalists condemned Sadat as a traitor to the Islamic cause. On **6 October 1981**, while reviewing a military parade in Cairo celebrating the 1973 canal crossing, Sadat was assassinated by Egyptian Islamic Jihad soldiers. His successor took power, upholding the formal treaty with Israel while gradually repairing Egypt's severed diplomatic relations with Arab neighbors over the following decade.",
+          "stage_hook_map": {
+            "id": "cme-l9-peace-boycott-map",
+            "title": "The Egypt–Israel Peace Treaty, Sinai Return & Arab League Boycott (1978–82)",
+            "subtitle": "1978 – April 1982 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/cme_new/kt3/cme_map_l9_peace_treaty_arab_boycott_1978_82.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 51.7,
+                "y": 37.1,
+                "color": "#0284c7",
+                "label": "Jerusalem & Treaty",
+                "badge": "Bilateral Peace",
+                "date": "Nov 1977 – Mar 1979",
+                "title": "Cairo–Jerusalem Axis & The 26 March 1979 Peace Treaty",
+                "details": "After Anwar Sadat shattered a 30-year taboo by addressing Israel’s Knesset in Jerusalem (November 1977) and Jimmy Carter mediated the September 1978 Camp David Accords, Sadat and Menachem Begin signed the formal Egypt–Israel Peace Treaty on 26 March 1979—securing peace between Israel and the largest Arab military power while leaving Palestinian statehood unresolved.",
+                "hinge": "Why did Begin agree to return the entire Sinai Peninsula while refusing sovereign Palestinian statehood in the West Bank and Gaza?"
+              },
+              {
+                "id": "spot-2",
+                "x": 49.3,
+                "y": 43,
+                "color": "#15803d",
+                "label": "Sinai Return (1979–82)",
+                "badge": "Land for Peace",
+                "date": "May 1979 – Apr 1982",
+                "title": "Staged Return & Demilitarisation of the Sinai Peninsula",
+                "details": "Under the 1979 treaty, Israel withdrew from the Sinai Peninsula in stages up to April 1982, dismantling Israeli settlements such as Yamit and returning Sinai oil fields to Egypt. In exchange, Egypt demilitarised Sinai, guaranteed Israeli shipping through the Suez Canal and Straits of Tiran, and received roughly $2 billion a year in US aid.",
+                "hinge": "How did recovering Sinai, Suez Canal revenues, and US financial aid address the economic crisis that had driven Sadat to seek peace?"
+              },
+              {
+                "id": "spot-3",
+                "x": 66.3,
+                "y": 31.9,
+                "align": "left",
+                "color": "#be123c",
+                "label": "Baghdad Boycott",
+                "badge": "Arab Condemnation",
+                "date": "Nov 1978 & Mar 1979",
+                "title": "The Baghdad Summits: Diplomatic Rupture & Economic Sanctions",
+                "details": "Furious that Sadat had signed a separate bilateral treaty that abandoned collective Arab leverage and Palestinian self-determination, Arab governments met in Baghdad in November 1978 and March 1979. Seventeen Arab League states severed diplomatic relations, cut financial subsidies, and imposed sweeping economic boycotts against Egypt, with only Sudan and Oman maintaining regional ties.",
+                "hinge": "Why did Arab leaders view Egypt’s separate peace with Israel as a betrayal of both Palestinian national rights and front-line Arab unity?"
+              },
+              {
+                "id": "spot-4",
+                "x": 13.2,
+                "y": 17.9,
+                "color": "#9f1239",
+                "label": "Tunis (League HQ)",
+                "badge": "Egypt Suspended",
+                "date": "March 1979",
+                "title": "Tunis: Suspension of Egypt & Relocation of Arab League HQ",
+                "details": "Having stood at the heart of pan-Arab politics since hosting the Arab League’s founding in Cairo in 1945, Egypt had its membership formally suspended in March 1979. The League transferred its permanent headquarters across the Mediterranean from Cairo to Tunis, symbolically stripping Egypt of leadership of the Arab world for a decade.",
+                "hinge": "What did moving the Arab League’s headquarters from Cairo to Tunis symbolise about Egypt’s shift from Nasser’s pan-Arabism to Sadat’s “Egypt First” policy?"
+              },
+              {
+                "id": "spot-5",
+                "x": 45.2,
+                "y": 41.9,
+                "color": "#7c3aed",
+                "label": "Cairo (6 Oct 1981)",
+                "badge": "Sadat Assassinated",
+                "date": "6 October 1981",
+                "title": "Cairo: Assassination of President Anwar Sadat",
+                "details": "Denounced at home by Islamist militants and opposition critics for making peace with Israel amid continuing economic inequality, Sadat cracked down on domestic dissidents in 1981. On 6 October 1981, soldiers belonging to Egyptian Islamic Jihad assassinated Sadat during Cairo’s annual military parade; his successor Hosni Mubarak preserved the Israeli treaty while slowly repairing Arab ties.",
+                "hinge": "Why did the 1979 Egypt–Israel Peace Treaty survive for decades despite Sadat’s assassination in October 1981 and intense Arab isolation?"
+              }
+            ]
+          }
         }
       ],
       "draw_tasks": [],

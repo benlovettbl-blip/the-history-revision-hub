@@ -219,9 +219,16 @@ function verifyImages() {
           }
 
           (l.narrative_blocks || []).forEach((b, bIdx) => {
+            const blockSeenPaths = new Set();
+            const pushBlockImage = (typeLabel, cleanPath) => {
+              const norm = cleanPath.toLowerCase();
+              if (blockSeenPaths.has(norm)) return; // Dual-mode toggle / print fallback on the SAME block is intentional
+              blockSeenPaths.add(norm);
+              lessonImages.push({ type: typeLabel, path: cleanPath });
+            };
             if (b.image) {
               const cleanBlk = b.image.split('?')[0];
-              lessonImages.push({ type: `Narrative Plate ${bIdx + 1}`, path: cleanBlk });
+              pushBlockImage(`Narrative Plate ${bIdx + 1}`, cleanBlk);
               if (b.image.includes('placeholder.jpg') || b.image.includes('default_person.jpg')) {
                 console.error(`❌ CRITICAL ERROR: Placeholder image detected in ${jf} Lesson ${l.id || l.title}: ${b.image}`);
                 errors++;
@@ -234,12 +241,24 @@ function verifyImages() {
                 }
               }
             }
+            if (b.stage_hook_map && typeof b.stage_hook_map === 'object') {
+              const hookImg = b.stage_hook_map.image || b.stage_hook_map.src || b.stage_hook_map.image_url;
+              if (hookImg && typeof hookImg === 'string' && !/^https?:\/\//i.test(hookImg)) {
+                const cleanHook = hookImg.split('?')[0];
+                pushBlockImage(`Stage Hook Map ${bIdx + 1}`, cleanHook);
+                const resolvedHook = path.join(ROOT_DIR, 'public', cleanHook.replace(/^\/+/, ''));
+                if (!fs.existsSync(resolvedHook) || !fs.statSync(resolvedHook).isFile()) {
+                  console.error(`❌ CRITICAL ERROR (Missing Stage Hook Map in public/ in ${jf} ${l.id || l.title}): ${hookImg}`);
+                  errors++;
+                }
+              }
+            }
             if (b.slide_compare && typeof b.slide_compare === 'object') {
               const scBefore = (b.slide_compare.before && (b.slide_compare.before.image || b.slide_compare.before.src)) || b.slide_compare.before_image;
               const scAfter = (b.slide_compare.after && (b.slide_compare.after.image || b.slide_compare.after.src)) || b.slide_compare.after_image;
               [scBefore, scAfter].filter(Boolean).forEach((scImg, scIdx) => {
                 const cleanSc = scImg.split('?')[0];
-                lessonImages.push({ type: `Slide-Compare ${scIdx === 0 ? 'Before' : 'After'}`, path: cleanSc });
+                pushBlockImage(`Slide-Compare ${scIdx === 0 ? 'Before' : 'After'}`, cleanSc);
                 const resolvedSc = path.join(ROOT_DIR, 'public', cleanSc.replace(/^\/+/, ''));
                 if (!fs.existsSync(resolvedSc) || !fs.statSync(resolvedSc).isFile()) {
                   console.error(`❌ CRITICAL ERROR (Missing Slide-Compare Image in ${jf}): ${scImg}`);

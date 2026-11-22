@@ -24,8 +24,12 @@ units.forEach((u) => {
     unit.lessons.forEach((l) => {
       const items = [];
       (l.narrative_blocks || []).forEach((b, i) => {
+        const hm = b.stage_hook_map && (b.stage_hook_map.image || b.stage_hook_map.src);
         if (b.image)
           items.push({ where: 'Block ' + (i + 1), file: b.image, hash: getHash(b.image) });
+        if (hm && hm !== b.image) {
+          items.push({ where: 'HookMap ' + (i + 1), file: hm, hash: getHash(hm) });
+        }
       });
       (l.sources || []).forEach((s) => {
         const f = s.src || s.image || s.source;

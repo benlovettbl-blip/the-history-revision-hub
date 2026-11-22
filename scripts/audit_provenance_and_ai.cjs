@@ -83,6 +83,20 @@ for (const [unitKey, raw] of Object.entries(db)) {
             true,
           );
         }
+        if (b.stage_hook_map && typeof b.stage_hook_map === 'object') {
+          const hookImg = b.stage_hook_map.image || b.stage_hook_map.src || b.stage_hook_map.image_url;
+          if (hookImg) {
+            inspectImage(
+              hookImg,
+              unitKey,
+              unitTitle,
+              lTitle,
+              `Stage Hook Map ${bIdx + 1}`,
+              b.stage_hook_map.title || b.stage_hook_map.subtitle || '',
+              true,
+            );
+          }
+        }
         if (b.slide_compare && typeof b.slide_compare === 'object') {
           const scBefore =
             (b.slide_compare.before && (b.slide_compare.before.image || b.slide_compare.before.src)) ||

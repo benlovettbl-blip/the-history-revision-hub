@@ -520,9 +520,75 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[3.1]</span> By the **Yalta Conference** in **February 1945**, Nazi defeat was imminent and **Red Army** troops already occupied **Poland** and much of Eastern Europe. **Roosevelt**, **Churchill**, and **Stalin** agreed to divide defeated **Germany**—and **Berlin** deep inside the Soviet zone—into **four occupation zones** run by the USA, Britain, France, and the USSR, while setting German **reparations** at **$20 billion** (half going to Moscow).\n\n<span class=\"para-ref\">[3.2]</span> Stalin signed the **Declaration on Liberated Europe**, promising **free elections** across Eastern Europe, and confirmed Soviet entry against **Japan** within three months of German surrender. However, **Poland** exposed sharp division: Stalin insisted on recognising the pro-Soviet **Lublin Poles** to guarantee a friendly buffer zone, whereas Churchill backed the democratic **London Poles** in exile.",
           "content": "<span class=\"para-ref\">[3.1]</span> By the **Yalta Conference** in **February 1945**, Nazi defeat was imminent and **Red Army** troops already occupied **Poland** and much of Eastern Europe. **Roosevelt**, **Churchill**, and **Stalin** agreed to divide defeated **Germany**—and **Berlin** deep inside the Soviet zone—into **four occupation zones** run by the USA, Britain, France, and the USSR, while setting German **reparations** at **$20 billion** (half going to Moscow).\n\n<span class=\"para-ref\">[3.2]</span> Stalin signed the **Declaration on Liberated Europe**, promising **free elections** across Eastern Europe, and confirmed Soviet entry against **Japan** within three months of German surrender. However, **Poland** exposed sharp division: Stalin insisted on recognising the pro-Soviet **Lublin Poles** to guarantee a friendly buffer zone, whereas Churchill backed the democratic **London Poles** in exile.",
-          "image": "/images/gcse_cold_war/kt1/cw_map_l1_germany_berlin_four_zones_1945.svg",
-          "image_alt": "Cartographic map of 1945 Allied four-zone occupation of Germany (British, French, US, and Soviet zones), Poland’s westward shift to the Oder–Neisse line, and magnified inset of Four-Sector Berlin 100 miles inside the Soviet zone",
-          "caption": "Reference Map: The four Allied occupation zones of Germany agreed at Yalta and confirmed at Potsdam (1945), alongside Poland’s Oder–Neisse frontier and Four-Sector Berlin 100 miles inside the Soviet zone."
+          "stage_hook_map": {
+            "id": "cw-l1-germany-four-zones-map",
+            "title": "Allied Division of Germany & Four-Sector Berlin (1945)",
+            "subtitle": "Yalta & Potsdam Conferences, Feb–Aug 1945 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt1/cw_map_l1_germany_berlin_four_zones_1945.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 19.3,
+                "y": 41.5,
+                "color": "#1d4ed8",
+                "label": "British & US Western Zones",
+                "badge": "Yalta & Potsdam (1945)",
+                "date": "Feb–Aug 1945",
+                "title": "British & American Zones: Industrial Ruhr, Bavaria & Bremen Port",
+                "details": "At Yalta (February 1945) and Potsdam (July–August 1945), Britain took north-west Germany—including Hamburg and the industrial Ruhr—while the USA occupied Bavaria, Hesse, northern Württemberg-Baden, and a port enclave at Bremen. Truman blocked Stalin’s demand for heavy reparations from these western zones lest economic ruin breed communism.",
+                "hinge": "Why did Truman refuse to let Stalin strip unlimited industrial reparations from the British and American western zones at Potsdam?"
+              },
+              {
+                "id": "spot-2",
+                "x": 11.6,
+                "y": 61.1,
+                "color": "#4338ca",
+                "label": "French Zone (SW)",
+                "badge": "Carved from Western Share",
+                "date": "Feb 1945",
+                "title": "French Occupation Zone: Rhineland, Saar & South Baden",
+                "details": "Churchill pressed at Yalta for liberated France to receive a fourth occupation zone and a seat on the Allied Control Council so Britain would not stand alone in Western Europe once US troops went home. Stalin agreed only on condition that France’s zone was carved entirely out of the British and American zones.",
+                "hinge": "Why was Churchill determined to give France an occupation zone in 1945—and why did Stalin insist it come out of the Anglo-American share?"
+              },
+              {
+                "id": "spot-3",
+                "x": 31.5,
+                "y": 44.5,
+                "color": "#be123c",
+                "label": "Soviet Zone (SBZ)",
+                "badge": "Reparations & Buffer",
+                "date": "May–Aug 1945",
+                "title": "Soviet Occupation Zone (SBZ) & Reparations Extraction",
+                "details": "Having lost roughly 27 million Soviet lives defeating Nazi Germany, Stalin occupied eastern Germany and agreed at Potsdam that each power would extract reparations primarily from its own zone, plus 10–15% of spare western industrial equipment traded for eastern food and coal. Red Army authorities immediately dismantled factories and restructured eastern politics.",
+                "hinge": "How did the Potsdam deal—each power taking reparations from its own zone—lay the economic foundation for two separate German states?"
+              },
+              {
+                "id": "spot-4",
+                "x": 42.6,
+                "y": 39.8,
+                "color": "#d97706",
+                "label": "Oder–Neisse & Poland",
+                "badge": "Border Shift & Lublin Poles",
+                "date": "Feb–Aug 1945",
+                "title": "The Oder–Neisse Frontier & Clash Over Polish Democracy",
+                "details": "Following bargains struck at Tehran and Yalta, Potsdam confirmed shifting Poland’s western border to the Oder and Lusatian Neisse rivers while the USSR kept eastern Poland beyond the Curzon Line. Despite signing Yalta’s Declaration on Liberated Europe, Stalin sidelined the democratic London Poles and installed the pro-Soviet Communist Lublin government in Warsaw.",
+                "hinge": "Why was Poland the sharpest flashpoint between Stalin, Churchill, and Truman at both Yalta and Potsdam?"
+              },
+              {
+                "id": "spot-5",
+                "x": 79.9,
+                "y": 36.4,
+                "align": "left",
+                "color": "#dc2626",
+                "label": "Four-Sector Berlin",
+                "badge": "100 Miles Inside SBZ",
+                "date": "July 1945",
+                "title": "Four-Sector Berlin: Joint Capital 100 Miles Inside the Soviet Zone",
+                "details": "Although Berlin lay 100 miles deep inside the Soviet Zone, the Allies divided the German capital into French, British, American, and Soviet sectors governed jointly by the Allied Kommandatura. Western garrisons relied on narrow road, rail, and three 20-mile air corridors across Soviet-held territory—creating the Cold War’s supreme pressure point.",
+                "hinge": "Why did placing Western sectors of Berlin 100 miles inside the Soviet Zone give Moscow an immediate geographic lever in 1948 and 1958–61?"
+              }
+            ]
+          }
         },
         {
           "act": 4,
@@ -1775,9 +1841,74 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[5.1]</span> To counter the **Truman Doctrine** and **Marshall Plan**, **Stalin** established **Cominform** (the Communist Information Bureau) in **September 1947**. Cominform bound European Communist parties under strict ideological direction from Moscow, instructed French and Italian Communists to stage strikes against Marshall Aid, and expelled Marshal **Josip Broz Tito**’s independent Communist **Yugoslavia** in **1948** for refusing to take Stalin’s orders.\n\n<span class=\"para-ref\">[5.2]</span> In **January 1949**, Moscow added **Comecon** (the Council for Mutual Economic Assistance) as its economic answer to the Marshall Plan. Rather than injecting billions of dollars like Washington, Comecon integrated **Eastern Bloc** state economies around Soviet priorities—specialising production across satellite states (such as Bulgarian agriculture or Czech heavy industry) while cutting off trade with Western Europe and cementing two rival camps.",
           "content": "<span class=\"para-ref\">[5.1]</span> To counter the **Truman Doctrine** and **Marshall Plan**, **Stalin** established **Cominform** (the Communist Information Bureau) in **September 1947**. Cominform bound European Communist parties under strict ideological direction from Moscow, instructed French and Italian Communists to stage strikes against Marshall Aid, and expelled Marshal **Josip Broz Tito**’s independent Communist **Yugoslavia** in **1948** for refusing to take Stalin’s orders.\n\n<span class=\"para-ref\">[5.2]</span> In **January 1949**, Moscow added **Comecon** (the Council for Mutual Economic Assistance) as its economic answer to the Marshall Plan. Rather than injecting billions of dollars like Washington, Comecon integrated **Eastern Bloc** state economies around Soviet priorities—specialising production across satellite states (such as Bulgarian agriculture or Czech heavy industry) while cutting off trade with Western Europe and cementing two rival camps.",
-          "image": "/images/gcse_cold_war/kt1/cw_map_l2_iron_curtain_satellites_1948.svg",
-          "image_alt": "Cartographic map of Divided Post-War Europe (1945–49) contrasting Western Marshall Plan recipients ($13bn+) and Greece/Turkey ($400m Truman Doctrine) against Soviet satellite states under Cominform and Comecon, independent Yugoslavia, and the Iron Curtain from Stettin to Trieste",
-          "caption": "Reference Map: Europe divided by 1949 between Western Marshall Plan recipients ($13bn+) and Truman Doctrine states ($400m) versus Stalin’s satellite bloc bound by Cominform (1947) and Comecon (1949) behind the Iron Curtain."
+          "stage_hook_map": {
+            "id": "cw-l2-iron-curtain-satellites-map",
+            "title": "The Iron Curtain, Marshall Plan & Soviet Satellite Bloc (1946–49)",
+            "subtitle": "Containment vs Cominform & Comecon · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt1/cw_map_l2_iron_curtain_satellites_1948.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 46.5,
+                "y": 59.7,
+                "color": "#dc2626",
+                "label": "Iron Curtain (1946)",
+                "badge": "Stettin to Trieste",
+                "date": "5 March 1946",
+                "title": "The Iron Curtain: From Stettin in the Baltic to Trieste in the Adriatic",
+                "details": "Following George Kennan’s Long Telegram (February 1946), former Prime Minister Winston Churchill warned at Fulton, Missouri (5 March 1946) that an \"iron curtain\" had descended across Europe from Stettin to Trieste. Stalin condemned Churchill as a warmonger and countered with the Novikov Telegram in September 1946.",
+                "hinge": "How did Kennan’s Long Telegram, Churchill’s Fulton speech, and Novikov’s Telegram harden mutual suspicion in 1946?"
+              },
+              {
+                "id": "spot-2",
+                "x": 63.4,
+                "y": 83.1,
+                "color": "#0f766e",
+                "label": "Greece & Turkey ($400m)",
+                "badge": "Truman Doctrine",
+                "date": "12 March 1947",
+                "title": "Greece & Turkey: The Truman Doctrine & Containment ($400m)",
+                "details": "When bankrupt Britain announced in February 1947 that it could no longer fund royalist forces in the Greek Civil War, President Truman secured $400 million in military and economic aid for Greece and Turkey on 12 March 1947. The Truman Doctrine ended US peacetime isolationism and made containment official American policy.",
+                "hinge": "Why was Britain’s February 1947 withdrawal from Greece the decisive trigger that ended American peacetime isolationism?"
+              },
+              {
+                "id": "spot-3",
+                "x": 30.4,
+                "y": 47.2,
+                "color": "#2563eb",
+                "label": "Marshall Plan ($13bn+)",
+                "badge": "European Recovery Program",
+                "date": "June 1947–1948",
+                "title": "Western Europe: The Marshall Plan ($13bn+ Economic Containment)",
+                "details": "Unveiled by Secretary of State George Marshall in June 1947 and passed by Congress after the 1948 Prague coup, the Marshall Plan delivered over $13 billion in food, fuel, and machinery to 16 Western European states. Stalin denounced it as \"dollar imperialism\" and barred Poland and Czechoslovakia from taking part.",
+                "hinge": "Why did Stalin forbid Poland and Czechoslovakia from accepting Marshall Aid even though their post-war economies badly needed rebuilding?"
+              },
+              {
+                "id": "spot-4",
+                "x": 47.6,
+                "y": 45.7,
+                "color": "#b45309",
+                "label": "Prague Coup & Satellites",
+                "badge": "Cominform & Comecon",
+                "date": "1947–Jan 1949",
+                "title": "Czechoslovakia & Stalin’s Satellite Bloc: Cominform (1947) & Comecon (1949)",
+                "details": "Using \"salami tactics\", rigged elections, and the February 1948 Communist coup in Prague, Stalin turned Eastern Europe into one-party satellite states. Moscow enforced ideological obedience through Cominform (September 1947) and integrated Eastern Bloc state economies around Soviet priorities through Comecon (January 1949).",
+                "hinge": "How did the February 1948 Communist coup in democratic Czechoslovakia persuade a hesitant US Congress to pass the Marshall Plan?"
+              },
+              {
+                "id": "spot-5",
+                "x": 53.8,
+                "y": 63.9,
+                "color": "#7c3aed",
+                "label": "Yugoslavia (Tito Split)",
+                "badge": "Expelled from Cominform",
+                "date": "June 1948",
+                "title": "Tito’s Yugoslavia: Expelled from Cominform (June 1948)",
+                "details": "Because Marshal Josip Broz Tito’s Partisans had liberated Yugoslavia largely without the Red Army, Tito refused to subordinate Yugoslav foreign and economic policy to Stalin. Expelled from Cominform in June 1948, Yugoslavia survived outside the Soviet bloc as an independent Communist state.",
+                "hinge": "Why was Tito able to defy Stalin in 1948 whereas Communist leaders in Poland, Hungary, and Czechoslovakia could not?"
+              }
+            ]
+          }
         }
       ],
       "workbook_stages": [
@@ -2126,37 +2257,67 @@ export default {
       "vocab_cloze_text": "Guided by Kennan’s 1946 Long Telegram, President Truman abandoned isolationism through the March 1947 [Truman Doctrine], making [Containment] official US policy. Backed economically by the multi-billion-dollar [Marshall Plan], Washington rebuilt Western Europe while Stalin tightened his Eastern European [Satellite States], denouncing US aid as [Dollar Imperialism] and locking his bloc behind [Cominform] and [Comecon].",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Where and when did Roosevelt, Churchill, and Stalin meet for the first time, agreeing on a May 1944 Second Front in France?",
-            "answer": "The Tehran Conference (November 1943)",
-            "explanation": "At Tehran in November 1943, the West promised a French Second Front while Stalin pledged to fight Japan after Germany’s defeat."
+            "stage": 1,
+            "question": "Which three leaders formed the original wartime \"Big Three\" of the Grand Alliance in 1941?",
+            "answer": "Roosevelt, Churchill, and Stalin",
+            "explanation": "Franklin D. Roosevelt (USA), Winston Churchill (Britain), and Joseph Stalin (USSR) led the Grand Alliance from 1941 until April 1945."
           },
           {
-            "question": "How did the Big Three agree to administer defeated Germany and Berlin at the Yalta Conference in February 1945?",
-            "answer": "Divide both Germany and Berlin into four Allied occupation zones (US, British, French, Soviet)",
-            "explanation": "Four-zone occupation placed divided Berlin 100 miles inside the surrounding Soviet zone."
+            "stage": 2,
+            "question": "Where and when did the Big Three meet face-to-face for the first time?",
+            "answer": "Tehran, November 1943",
+            "explanation": "Stalin, Roosevelt, and Churchill held their first summit at Tehran in November 1943."
           },
           {
-            "question": "Which two rival Polish factions did Stalin and Churchill argue over at Yalta?",
-            "answer": "The pro-Soviet Lublin Poles and the democratic London Poles",
-            "explanation": "Stalin backed the Communist Lublin Committee to secure a friendly Polish buffer state."
+            "stage": 3,
+            "question": "How did the Big Three agree to administer defeated Germany and Berlin at the Yalta Conference (February 1945)?",
+            "answer": "Divide both Germany and Berlin into four Allied occupation zones",
+            "explanation": "Germany and Berlin (inside the Soviet zone) were each split into US, British, French, and Soviet occupation zones."
           },
           {
-            "question": "Which two Western leaders replaced Roosevelt and Churchill at the Potsdam Conference in July 1945?",
-            "answer": "President Harry S. Truman (USA) and Prime Minister Clement Attlee (Britain)",
-            "explanation": "Roosevelt died in April 1945 and Attlee defeated Churchill in the July 1945 British general election."
+            "stage": 4,
+            "question": "Who replaced Franklin D. Roosevelt as US President following Roosevelt’s death in April 1945?",
+            "answer": "Harry S. Truman",
+            "explanation": "Vice-President Harry S. Truman succeeded Roosevelt on 12 April 1945 and adopted a much firmer anti-communist stance."
           },
           {
-            "question": "What secret weapon did the USA successfully test in New Mexico on 16 July 1945, the day before Potsdam opened?",
-            "answer": "The atomic bomb",
-            "explanation": "Successful testing of the atomic bomb meant Truman no longer needed Soviet military help to defeat Japan."
+            "stage": 5,
+            "question": "On what date did the United States successfully detonate the first atomic bomb in New Mexico, one day before Potsdam opened?",
+            "answer": "16 July 1945",
+            "explanation": "The Trinity test succeeded in New Mexico on 16 July 1945, transforming Truman’s confidence at Potsdam."
           },
           {
-            "question": "How did the US atomic bombings of Hiroshima and Nagasaki (August 1945) affect Stalin’s policy in Eastern Europe?",
-            "answer": "Made Stalin more determined to build a tight Eastern European buffer zone and develop a Soviet atomic bomb (1949)",
-            "explanation": "Rather than intimidating Stalin into concessions, the US nuclear monopoly heightened Soviet insecurity."
+            "stage": 1,
+            "question": "How did the Soviet economic system differ fundamentally from American capitalism?",
+            "answer": "Industry and land were owned and planned by the one-party Communist state",
+            "explanation": "Soviet communism abolished private enterprise in favour of state ownership and Communist Party monopoly."
+          },
+          {
+            "stage": 2,
+            "question": "What key military promise did Britain and the USA make to Stalin at the Tehran Conference (1943)?",
+            "answer": "To open a Second Front in Nazi-occupied France by May 1944",
+            "explanation": "Roosevelt backed Stalin against Churchill’s Balkan plan, promising cross-Channel landings in France for May 1944."
+          },
+          {
+            "stage": 3,
+            "question": "What total figure for German reparations was provisionally agreed at Yalta, with half earmarked for the USSR?",
+            "answer": "$20 billion",
+            "explanation": "At Yalta the Big Three agreed on $20 billion in reparations, half going to the devastated Soviet Union."
+          },
+          {
+            "stage": 4,
+            "question": "Which Labour leader replaced Winston Churchill as British Prime Minister midway through the Potsdam Conference?",
+            "answer": "Clement Attlee",
+            "explanation": "Labour’s July 1945 general election victory brought Clement Attlee to the Potsdam negotiating table."
+          },
+          {
+            "stage": 5,
+            "question": "Why was Stalin seemingly unfazed when Truman mentioned a weapon of \"unusual destructive force\" on 24 July 1945?",
+            "answer": "Soviet spies inside the Manhattan Project had already kept Stalin informed",
+            "explanation": "Atomic espionage meant Stalin already knew about the Manhattan Project and immediately ordered Lavrentiy Beria to speed up Soviet research."
           }
         ]
       },
@@ -3001,9 +3162,75 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[5.1]</span> Superpower rivalry escalated dramatically after the **Soviet Union** tested its first **atomic bomb** in **August 1949**, ending America’s four-year nuclear monopoly. Determined to stay ahead, the USA detonated a **hydrogen bomb** (**H-bomb**) in **November 1952**—roughly 1,000 times more powerful than Hiroshima—followed within nine months by a Soviet H-bomb in **August 1953**, and by **1957** Soviet **intercontinental ballistic missiles (ICBMs)** capable of striking North America.\n\n<span class=\"para-ref\">[5.2]</span> Conventional military blocs hardened in lockstep. When NATO admitted a rearmed **West Germany (FRG)** in **May 1955**, new Soviet leader **Nikita Khrushchev** immediately established the **Warsaw Pact** on **14 May 1955**, placing the USSR and **seven Eastern European satellite states** under unified Soviet military command and locking Europe into two nuclear-armed alliances.",
           "content": "<span class=\"para-ref\">[5.1]</span> Superpower rivalry escalated dramatically after the **Soviet Union** tested its first **atomic bomb** in **August 1949**, ending America’s four-year nuclear monopoly. Determined to stay ahead, the USA detonated a **hydrogen bomb** (**H-bomb**) in **November 1952**—roughly 1,000 times more powerful than Hiroshima—followed within nine months by a Soviet H-bomb in **August 1953**, and by **1957** Soviet **intercontinental ballistic missiles (ICBMs)** capable of striking North America.\n\n<span class=\"para-ref\">[5.2]</span> Conventional military blocs hardened in lockstep. When NATO admitted a rearmed **West Germany (FRG)** in **May 1955**, new Soviet leader **Nikita Khrushchev** immediately established the **Warsaw Pact** on **14 May 1955**, placing the USSR and **seven Eastern European satellite states** under unified Soviet military command and locking Europe into two nuclear-armed alliances.",
-          "image": "/images/gcse_cold_war/kt1/cw_map_l3_nato_vs_warsaw_pact_1955.svg",
-          "image_alt": "Strategic map comparing NATO (April 1949 plus Greece/Turkey 1952 and West Germany May 1955) against the Warsaw Pact (14 May 1955), paired with a 1945–57 Nuclear Arms Race escalation timeline from the US A-bomb to H-bombs and Soviet ICBMs",
-          "caption": "Reference Map: Rival military alliances in Europe after West Germany joined NATO (May 1955) and Khrushchev formed the Warsaw Pact (14 May 1955), paired with the 1945–57 superpower nuclear arms race."
+          "stage_hook_map": {
+            "id": "cw-l3-nato-warsaw-pact-map",
+            "title": "Rival Military Alliances: NATO (1949–55) vs The Warsaw Pact (May 1955)",
+            "subtitle": "Collective Security, West German Rearmament & Nuclear Deterrence · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt1/cw_map_l3_nato_vs_warsaw_pact_1955.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 46.9,
+                "y": 39.8,
+                "color": "#0284c7",
+                "label": "Berlin Airlift (1948–49)",
+                "badge": "Catalyst for NATO",
+                "date": "Jun 1948–May 1949",
+                "title": "Berlin Blockade & Airlift: Catalyst for Two Germanys & NATO",
+                "details": "After Stalin blockaded West Berlin in June 1948 over the new Western Deutschmark, 275,000 Allied airlift flights sustained 2.1 million Berliners until Stalin lifted the siege in May 1949. Within months, Germany split into democratic West Germany (FRG, May 1949) and Communist East Germany (GDR, October 1949).",
+                "hinge": "Why did Stalin’s 1948–49 Berlin Blockade accelerate the very outcome Moscow feared most: a united Western military alliance?"
+              },
+              {
+                "id": "spot-2",
+                "x": 31.5,
+                "y": 48.8,
+                "color": "#1e40af",
+                "label": "NATO Founded (Apr 1949)",
+                "badge": "Article 5 Collective Security",
+                "date": "4 April 1949",
+                "title": "Formation of NATO & Permanent US Troops in Europe (April 1949)",
+                "details": "Signed on 4 April 1949 by the USA, Britain, France, Canada, and eight Western European allies (joined by Greece and Turkey in 1952), NATO pledged under Article 5 that an armed attack on one member would be treated as an attack on all. Washington permanently stationed conventional forces and nuclear-capable bombers in Europe.",
+                "hinge": "Why was Article 5 of the April 1949 NATO treaty a historic break from traditional US foreign policy?"
+              },
+              {
+                "id": "spot-3",
+                "x": 38.5,
+                "y": 44.4,
+                "color": "#2563eb",
+                "label": "FRG Joins NATO (May 55)",
+                "badge": "Trigger for Warsaw Pact",
+                "date": "9 May 1955",
+                "title": "Rearmed West Germany (FRG) Admitted to NATO (May 1955)",
+                "details": "To strengthen Western European defences during the Korean War era, NATO admitted a rearmed Federal Republic of Germany (FRG) under Chancellor Konrad Adenauer in May 1955. Just ten years after Nazi surrender, German divisions inside a US-led alliance crossed Moscow’s strategic red line.",
+                "hinge": "Why did West Germany’s entry into NATO in May 1955 alarm Soviet leaders far more than NATO’s original creation in 1949?"
+              },
+              {
+                "id": "spot-4",
+                "x": 56.7,
+                "y": 40.4,
+                "color": "#9f1239",
+                "label": "Warsaw Pact (14 May 55)",
+                "badge": "Unified Soviet Command",
+                "date": "14 May 1955",
+                "title": "The Warsaw Pact: Eight-Nation Eastern Bloc Alliance (14 May 1955)",
+                "details": "Five days after West Germany joined NATO, Nikita Khrushchev established the Warsaw Pact uniting the USSR with Poland, East Germany, Czechoslovakia, Hungary, Romania, Bulgaria, and Albania under Soviet military command. Europe now stood formally divided into two nuclear-backed military blocs.",
+                "hinge": "In what ways did the Warsaw Pact tighten Moscow’s military grip over its own Eastern European satellites as much as it countered NATO?"
+              },
+              {
+                "id": "spot-5",
+                "x": 75.6,
+                "y": 24.3,
+                "align": "left",
+                "color": "#dc2626",
+                "label": "Nuclear & H-Bomb Race",
+                "badge": "Arms Race Escalation",
+                "date": "1949–1957",
+                "title": "Soviet Atomic Bomb (1949), Hydrogen Bombs (1952–53) & ICBMs",
+                "details": "Moscow ended America’s nuclear monopoly by testing an atomic bomb in August 1949. Both superpowers raced upward: the USA detonated the first hydrogen bomb in November 1952, the USSR matched it in August 1953, and by 1957 Soviet intercontinental ballistic missiles (ICBMs) made direct superpower war mutually catastrophic.",
+                "hinge": "How did the rapid shift from atomic bombs to thermonuclear H-bombs between 1949 and 1955 reshape both deterrence and Cold War tension?"
+              }
+            ]
+          }
         }
       ],
       "workbook_stages": [
@@ -3348,37 +3575,67 @@ export default {
       "vocab_cloze_text": "When the Western Allies merged their zones into [Bizonia & Trizonia] and introduced the [Deutschmark] in June 1948, Stalin cut land access to West Berlin. Defeated peacefully by the 11-month [Berlin Airlift], the crisis produced two rival German states—[FRG & GDR]—and locked Europe into two nuclear-armed alliances: Western [NATO] (1949) and the Soviet-led [Warsaw Pact] (1955).",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Which February 1946 dispatch by George Kennan urged Washington to adopt firm \"containment\" against Soviet expansion?",
-            "answer": "The Long Telegram",
-            "explanation": "Kennan’s Long Telegram argued that the USSR respected firmness and would back down when contained."
+            "stage": 1,
+            "question": "Who sent the 8,000-word \"Long Telegram\" from Moscow to Washington on 22 February 1946?",
+            "answer": "George F. Kennan",
+            "explanation": "US Embassy diplomat George F. Kennan authored the Long Telegram recommending firm containment of Soviet power."
           },
           {
-            "question": "What retaliatory Soviet telegram in September 1946 accused the USA of seeking \"world supremacy\"?",
-            "answer": "The Novikov Telegram",
-            "explanation": "Soviet Ambassador Nikolai Novikov warned Moscow that US bases and atomic power aimed at global dominance."
+            "stage": 2,
+            "question": "Where did Winston Churchill deliver his famous \"Iron Curtain\" speech on 5 March 1946?",
+            "answer": "Fulton, Missouri (USA)",
+            "explanation": "Churchill spoke at Westminster College in Fulton, Missouri with President Harry S. Truman seated on the platform."
           },
           {
-            "question": "How much aid did the March 1947 Truman Doctrine provide to Greece and Turkey?",
+            "stage": 3,
+            "question": "Which country’s announcement in February 1947 that it could no longer afford aid to Greece and Turkey triggered the Truman Doctrine?",
+            "answer": "Britain",
+            "explanation": "Exhausted by wartime debt and the severe winter of 1946–47, Britain handed responsibility for supporting Greek royalists to the USA."
+          },
+          {
+            "stage": 4,
+            "question": "Who proposed the European Recovery Program in a June 1947 speech at Harvard University?",
+            "answer": "US Secretary of State George Marshall",
+            "explanation": "Secretary of State George Marshall launched the European Recovery Program—known as the Marshall Plan—in June 1947."
+          },
+          {
+            "stage": 5,
+            "question": "What organisation did Stalin establish in September 1947 to enforce ideological obedience across European Communist parties?",
+            "answer": "Cominform",
+            "explanation": "Cominform (the Communist Information Bureau) coordinated Communist parties under strict Moscow control from September 1947."
+          },
+          {
+            "stage": 1,
+            "question": "What key reassuring conclusion did Kennan’s Long Telegram offer US leaders alongside its warning about Soviet hostility?",
+            "answer": "The USSR was cautious and would back down when faced with firm resistance",
+            "explanation": "Kennan argued that Soviet power was \"sensitive to the logic of force\" and would retreat when firmly contained."
+          },
+          {
+            "stage": 2,
+            "question": "What phrase did Hungarian Communist Matyas Rakosi coin for slicing away non-communist opposition piece by piece?",
+            "answer": "\"Salami tactics\"",
+            "explanation": "\"Salami tactics\" sliced away rival parties slice-by-slice through police intimidation and rigged elections."
+          },
+          {
+            "stage": 3,
+            "question": "How much immediate military and economic aid did President Truman request for Greece and Turkey on 12 March 1947?",
             "answer": "$400 million",
-            "explanation": "Congress approved $400 million to stop Communist victory in the Greek Civil War and protect Turkey."
+            "explanation": "Congress approved $400 million for Greece and Turkey under the Truman Doctrine, helping defeat Greek Communist guerrillas by 1949."
           },
           {
-            "question": "Why did Stalin forbid Poland and Czechoslovakia from accepting US Marshall Plan aid in 1947?",
-            "answer": "He condemned it as \"dollar imperialism\" that would open Eastern Bloc economies to US control",
-            "explanation": "Marshall Aid required open economic books and trade with the USA, threatening Stalin’s buffer zone."
+            "stage": 4,
+            "question": "Roughly how much economic assistance did the Marshall Plan channel to 16 Western European nations between 1948 and 1952?",
+            "answer": "Over $13 billion (up to $17 billion including prior grants)",
+            "explanation": "Pearson Edexcel accepts $13bn–$17bn for Marshall Plan aid distributed across 16 Western European economies."
           },
           {
-            "question": "Distinguish Cominform (1947) from Comecon (1949).",
-            "answer": "Cominform enforced Moscow ideological/political control; Comecon coordinated Eastern Bloc state economies and trade",
-            "explanation": "Cominform (Sept 1947) directed Communist parties politically, while Comecon (Jan 1949) answered Marshall Aid economically."
-          },
-          {
-            "question": "How had Yalta and Potsdam divided Berlin in 1945 despite its geographic location?",
-            "answer": "Divided Berlin into four Allied sectors even though Berlin lay 100 miles inside the Soviet zone",
-            "explanation": "West Berlin’s isolated position deep inside Soviet-occupied eastern Germany made its land routes vulnerable."
+            "stage": 5,
+            "question": "Which independent Communist state led by Marshal Tito was expelled from Cominform in June 1948 for defying Stalin?",
+            "answer": "Yugoslavia",
+            "explanation": "Because Tito’s partisans had liberated Yugoslavia largely without the Red Army, Tito refused Moscow’s dictation and was expelled from Cominform in 1948."
           }
         ]
       },
@@ -4569,37 +4826,67 @@ export default {
       "vocab_cloze_text": "After years of [ÁVH] secret-police terror under Rákosi, Khrushchev’s 1956 policy of [De-Stalinisation] sparked protests in Budapest. When new Prime Minister [Imre Nagy] announced free elections and Hungary’s exit from the Warsaw Pact, Khrushchev launched [Operation Whirlwind] on 4 November 1956, installing [János Kádár] while nuclear fears and the [Suez Crisis] prevented Western military intervention.",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What Western economic reform in June 1948 directly triggered Stalin’s Berlin Blockade?",
-            "answer": "Introducing the new Deutschmark currency into Trizonia and West Berlin",
-            "explanation": "Stalin viewed the Deutschmark and Trizonia as creating a strong capitalist West Germany."
+            "stage": 1,
+            "question": "What name was given to the January 1947 economic merger of the British and American occupation zones of Germany?",
+            "answer": "Bizonia",
+            "explanation": "Britain and the USA merged their zones into Bizonia in January 1947, joined by France in 1948 to form Trizonia."
           },
           {
-            "question": "How did the USA and Britain keep 2.1 million West Berliners supplied from June 1948 to May 1949?",
-            "answer": "The Berlin Airlift (Operation Vittles / Plainfare) down three agreed air corridors",
-            "explanation": "Over 275,000 flights supplied coal and food without risking war on East German roads."
+            "stage": 2,
+            "question": "What were the American and British codenames for the 1948–49 Berlin Airlift?",
+            "answer": "Operation Vittles (US) and Operation Plainfare (UK)",
+            "explanation": "USAF Operation Vittles and RAF Operation Plainfare sustained West Berlin for nearly eleven months."
           },
           {
-            "question": "Name the two separate German states established in May and October 1949.",
-            "answer": "The Federal Republic of Germany (FRG / West) and the German Democratic Republic (GDR / East)",
-            "explanation": "Konrad Adenauer led the democratic FRG; Walter Ulbricht led the Communist GDR."
+            "stage": 3,
+            "question": "Which new democratic West German state was established on 23 May 1949 with its capital at Bonn?",
+            "answer": "The Federal Republic of Germany (FRG)",
+            "explanation": "Trizonia became the Federal Republic of Germany (FRG) in May 1949 with Konrad Adenauer elected first Chancellor."
           },
           {
-            "question": "What collective-security alliance was founded by the USA and 11 Western partners in April 1949?",
-            "answer": "NATO (North Atlantic Treaty Organisation)",
-            "explanation": "Article 5 pledged that an armed attack on one member would be treated as an attack on all."
+            "stage": 4,
+            "question": "In what month and year was the North Atlantic Treaty Organisation (NATO) signed in Washington?",
+            "answer": "April 1949",
+            "explanation": "Twelve Western nations signed the North Atlantic Treaty on 4 April 1949 during the final weeks of the Berlin Blockade."
           },
           {
-            "question": "In what years did the USA and USSR test their first thermonuclear hydrogen bombs (H-bombs)?",
+            "stage": 5,
+            "question": "When did the Soviet Union test its first atomic bomb, ending the US nuclear monopoly?",
+            "answer": "August 1949",
+            "explanation": "The Soviet RDS-1 test in August 1949 shocked Washington and accelerated the race for the hydrogen bomb."
+          },
+          {
+            "stage": 1,
+            "question": "What immediate Western economic action in June 1948 triggered Stalin’s Berlin Blockade?",
+            "answer": "Introducing a new currency, the Deutschmark, into Trizonia and West Berlin",
+            "explanation": "Stalin saw the June 1948 Deutschmark reform as proof that the West was creating a separate capitalist German state."
+          },
+          {
+            "stage": 2,
+            "question": "Why could Stalin not block the Berlin Airlift without risking a full-scale war with the United States?",
+            "answer": "Stopping unarmed Allied aircraft in the three agreed air corridors would require shooting them down",
+            "explanation": "Shooting down unarmed cargo planes inside agreed air corridors would have been an open act of war against a nuclear-armed USA."
+          },
+          {
+            "stage": 3,
+            "question": "Who became the first Chancellor of West Germany (FRG) in 1949?",
+            "answer": "Konrad Adenauer",
+            "explanation": "Christian Democrat Konrad Adenauer led West Germany’s economic recovery and integration into NATO."
+          },
+          {
+            "stage": 4,
+            "question": "What principle is enshrined in Article 5 of the 1949 NATO treaty?",
+            "answer": "Collective security — an armed attack on one member is treated as an attack on all",
+            "explanation": "Article 5 bound the United States to defend Western Europe militarily against any Soviet attack."
+          },
+          {
+            "stage": 5,
+            "question": "In what years did the USA and USSR respectively test their first thermonuclear hydrogen bombs (H-bombs)?",
             "answer": "USA in 1952; USSR in 1953",
-            "explanation": "After the 1949 Soviet atomic bomb, both sides developed H-bombs roughly 1,000 times stronger than Hiroshima."
-          },
-          {
-            "question": "Why did Khrushchev create the Warsaw Pact on 14 May 1955?",
-            "answer": "In direct response to rearmed West Germany (FRG) joining NATO in May 1955",
-            "explanation": "The Warsaw Pact bound the USSR and seven Eastern European satellites under Soviet military command."
+            "explanation": "The USA tested an H-bomb in November 1952 and the USSR matched it within nine months in August 1953."
           }
         ]
       },
@@ -5383,9 +5670,74 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[1.1]</span> Throughout the **1950s**, **West Berlin** thrived on **Marshall Plan** investment as a prosperous capitalist **\"window to the West\"** deep inside Communist **East Germany (GDR)**. Contrasting Western consumer goods and democratic freedoms with low wages, forced collectivisation, and **Stasi** secret-police repression under unpopular GDR leader **Walter Ulbricht**, East Germans crossed openly into West Berlin to fly out to **West Germany (FRG)**.\n\n<span class=\"para-ref\">[1.2]</span> Between **1949** and **1961**, roughly **2.7 million** to **3 million** citizens fled East Germany—a crippling **\"brain drain\"** of young doctors, engineers, teachers, and skilled technicians that pushed the GDR toward economic collapse. Determined to halt this humiliation, Soviet leader **Nikita Khrushchev** issued his **Berlin Ultimatum** on **27 November 1958**, giving the Western powers **six months** to withdraw troops and make West Berlin a demilitarised **\"free city\"**.",
           "content": "<span class=\"para-ref\">[1.1]</span> Throughout the **1950s**, **West Berlin** thrived on **Marshall Plan** investment as a prosperous capitalist **\"window to the West\"** deep inside Communist **East Germany (GDR)**. Contrasting Western consumer goods and democratic freedoms with low wages, forced collectivisation, and **Stasi** secret-police repression under unpopular GDR leader **Walter Ulbricht**, East Germans crossed openly into West Berlin to fly out to **West Germany (FRG)**.\n\n<span class=\"para-ref\">[1.2]</span> Between **1949** and **1961**, roughly **2.7 million** to **3 million** citizens fled East Germany—a crippling **\"brain drain\"** of young doctors, engineers, teachers, and skilled technicians that pushed the GDR toward economic collapse. Determined to halt this humiliation, Soviet leader **Nikita Khrushchev** issued his **Berlin Ultimatum** on **27 November 1958**, giving the Western powers **six months** to withdraw troops and make West Berlin a demilitarised **\"free city\"**.",
-          "image": "/images/gcse_cold_war/kt2/cw_map_l5_berlin_wall_sectors_1961.svg",
-          "image_alt": "Edexcel GCSE cartographic map of Divided Berlin (1958–61) showing French, British, and American West Berlin sectors encircled inside Communist East Germany (GDR), Soviet East Berlin, the 155 km Berlin Wall ring erected from 13 August 1961, Checkpoint Charlie, Tempelhof and Tegel airfields, and the 2.7–3 million East German Brain Drain",
-          "caption": "Reference Map: Divided Berlin (1958–61), showing how nearly 3 million East German refugees escaping via open West Berlin triggered Khrushchev’s 1958 Berlin Ultimatum and the 155 km Berlin Wall ring built from 13 August 1961."
+          "stage_hook_map": {
+            "id": "cw-l5-berlin-wall-sectors-map",
+            "title": "Divided Berlin, The Refugee Crisis & Construction of the Berlin Wall (1958–63)",
+            "subtitle": "13 August 1961 · 155 km Encirclement Ring & Allied Sectors · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt2/cw_map_l5_berlin_wall_sectors_1961.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 62.6,
+                "y": 43.8,
+                "color": "#be123c",
+                "label": "East Berlin Brain Drain",
+                "badge": "2.7m–3m Refugees (1949–61)",
+                "date": "1949–Nov 1958",
+                "title": "The East German Refugee Crisis (\"Brain Drain\") & 1958 Ultimatum",
+                "details": "Between 1949 and August 1961, between 2.7 and 3 million East Germans—disproportionately young doctors, engineers, teachers, and skilled workers—escaped low wages and Stasi repression under Walter Ulbricht by crossing into West Berlin. Facing GDR economic collapse, Khrushchev issued his November 1958 Ultimatum demanding Western troops leave West Berlin within six months.",
+                "hinge": "Why was the open sector border in Berlin far more damaging to East Germany’s survival than the fortified Inner German Border?"
+              },
+              {
+                "id": "spot-2",
+                "x": 49.3,
+                "y": 56.7,
+                "color": "#0284c7",
+                "label": "Tempelhof & Air Corridors",
+                "badge": "Escape Gateway to FRG",
+                "date": "1949–Aug 1961",
+                "title": "Tempelhof, Tegel & Gatow: Prosperous \"Window to the West\"",
+                "details": "Rebuilt with Marshall Plan investment, West Berlin showcased capitalist prosperity deep inside Communist East Germany. Once East German refugees stepped across into the French, British, or US sectors, they registered at Marienfelde and flew safely out of Tempelhof, Tegel, or Gatow airports along Allied air corridors to West Germany.",
+                "hinge": "Why could East German police stop citizens crossing roads into West Germany yet not intercept Allied flights leaving Tempelhof?"
+              },
+              {
+                "id": "spot-3",
+                "x": 47.8,
+                "y": 44.2,
+                "color": "#991b1b",
+                "label": "13 Aug 1961 Wall Built",
+                "badge": "155 km Concrete & Wire Ring",
+                "date": "13 August 1961",
+                "title": "13 August 1961: Barbed Wire, Bernauer Straße & The \"Death Strip\"",
+                "details": "After Khrushchev failed to intimidate Kennedy at the June 1961 Vienna Summit and over 30,000 refugees fled in July alone, East German troops sealed the entire 155 km border around West Berlin before dawn on 13 August 1961. Barbed wire gave way to a 3.6-metre concrete Wall, watchtowers, and a mined \"Death Strip\" where escapees like Peter Fechter (August 1962) were shot.",
+                "hinge": "Why did Kennedy strengthen US garrisons in West Berlin yet take no military action when East Germany built the Wall on 13 August 1961?"
+              },
+              {
+                "id": "spot-4",
+                "x": 48.3,
+                "y": 49.5,
+                "color": "#dc2626",
+                "label": "Checkpoint Charlie",
+                "badge": "18-Hour Tank Standoff",
+                "date": "27 October 1961",
+                "title": "Checkpoint Charlie: US & Soviet Tanks Face Off (27 October 1961)",
+                "details": "When GDR guards tried to inspect American diplomatic papers at the Friedrichstraße crossing (\"Checkpoint Charlie\"), ten US M48 tanks and ten Soviet T-55 tanks stood guns-loaded just 100 metres apart for 18 hours on 27–28 October 1961. Secret back-channel talks between Kennedy and Khrushchev pulled the tanks back one by one, averting war.",
+                "hinge": "What did the peaceful tank-by-tank withdrawal at Checkpoint Charlie reveal about both superpowers’ real priorities in Berlin?"
+              },
+              {
+                "id": "spot-5",
+                "x": 44.3,
+                "y": 54.2,
+                "color": "#1d4ed8",
+                "label": "Rathaus Schöneberg (1963)",
+                "badge": "\"Ich bin ein Berliner\"",
+                "date": "26 June 1963",
+                "title": "Kennedy at Rathaus Schöneberg: Propaganda Victory & Stabilisation",
+                "details": "While the Wall rescued East Germany’s economy and quietly ended Khrushchev’s ultimatum (\"a wall is a hell of a lot better than a war\"), it became the global symbol of Communist tyranny. On 26 June 1963, President Kennedy addressed 120,000 West Berliners at Rathaus Schöneberg, declaring \"Ich bin ein Berliner\" to affirm US commitment to Western freedom.",
+                "hinge": "How could the Berlin Wall be a practical success for Khrushchev and Ulbricht yet simultaneously a devastating propaganda defeat for communism?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -5846,32 +6198,67 @@ export default {
       "vocab_cloze_text": "Alarmed by East Germany’s skilled refugee [Brain Drain] through prosperous West Berlin, Khrushchev issued his November 1958 [Berlin Ultimatum]. Although goodwill briefly returned at the 1959 [Camp David Summit], the May 1960 [U-2 Incident] wrecked Paris talks and led to a tense showdown with Kennedy at the June 1961 [Vienna Summit]. On 13 August 1961 East Germany began building the [Berlin Wall], stopping the exodus while handing the West a propaganda victory.",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Which announcement by Hungarian Prime Minister Imre Nagy on 1 November 1956 triggered Khrushchev’s Soviet tank invasion?",
-            "answer": "Hungary’s withdrawal from the Warsaw Pact",
-            "explanation": "Leaving the Warsaw Pact threatened a gap in the Soviet buffer zone, prompting Operation Whirlwind on 4 November 1956."
+            "stage": 1,
+            "question": "Which hardline Hungarian Communist dictator ruled from 1949 to 1956 as \"Stalin’s best pupil\"?",
+            "answer": "Mátyás Rákosi",
+            "explanation": "Mátyás Rákosi enforced ruthless Stalinist dictatorship in Hungary through secret-police terror and censorship."
           },
           {
-            "question": "Which simultaneous October–November 1956 Middle Eastern crisis distracted Britain, France, and the USA during the Hungarian Uprising?",
-            "answer": "The Suez Crisis",
-            "explanation": "Anglo-French-Israeli intervention in Egypt split NATO and prevented united Western diplomatic pressure over Hungary."
+            "stage": 2,
+            "question": "Who was appointed Hungarian Prime Minister on 24 October 1956 in an effort to calm the protests?",
+            "answer": "Imre Nagy",
+            "explanation": "Reformist Communist Imre Nagy took office on 24 October 1956 and initially won Soviet agreement to pull tanks out of Budapest."
           },
           {
-            "question": "How did the Western Allies defeat Stalin’s 1948–49 Berlin Blockade without provoking direct war?",
-            "answer": "Through the 11-month Berlin Airlift (Operation Vittles)",
-            "explanation": "Allied aircraft flew over 275,000 supply flights along agreed air corridors until Stalin lifted the blockade in May 1949."
+            "stage": 3,
+            "question": "On what date did Khrushchev launch Operation Whirlwind, sending over 1,000 Soviet tanks back into Budapest?",
+            "answer": "4 November 1956",
+            "explanation": "At dawn on 4 November 1956, massive Soviet tank columns stormed Budapest to overthrow Nagy’s government."
           },
           {
-            "question": "What were the two separate German states formally established in May and October 1949 after the Berlin Blockade?",
-            "answer": "The FRG (West Germany) and GDR (East Germany)",
-            "explanation": "Trizonia became the capitalist Federal Republic of Germany in May 1949, followed by the Communist German Democratic Republic in October."
+            "stage": 4,
+            "question": "Which loyal pro-Soviet leader did Khrushchev install to replace Imre Nagy in November 1956?",
+            "answer": "János Kádár",
+            "explanation": "János Kádár restored strict Communist Party rule, kept Hungary inside the Warsaw Pact, and oversaw 35,000 arrests."
           },
           {
-            "question": "Which March 1947 US presidential policy committed America to containing communism from spreading further?",
-            "answer": "The Truman Doctrine",
-            "explanation": "Announced alongside $400m aid for Greece and Turkey, the Truman Doctrine replaced American isolationism with containment."
+            "stage": 5,
+            "question": "Why had many Hungarian rebels hoped the United States might assist them in October–November 1956?",
+            "answer": "US-funded Radio Free Europe broadcasts and Dulles’s \"rollback\" rhetoric encouraged resistance to communism",
+            "explanation": "Radio Free Europe broadcasts gave Hungarians false hope of Western military intervention."
+          },
+          {
+            "stage": 1,
+            "question": "What were the initials of Hungary’s hated Communist state security police under Rákosi?",
+            "answer": "ÁVH",
+            "explanation": "The ÁVH arrested over 380,000 Hungarians and executed thousands of suspected opponents."
+          },
+          {
+            "stage": 2,
+            "question": "Which domestic political reform announced by Imre Nagy ended Communist monopoly inside Hungary?",
+            "answer": "Ending one-party rule and inviting non-communist parties into a coalition for free elections",
+            "explanation": "Nagy dissolved the ÁVH, freed political prisoners like Cardinal Mindszenty, and restored multi-party politics."
+          },
+          {
+            "stage": 3,
+            "question": "Why did Khrushchev fear a \"domino effect\" if he permitted Hungary to leave the Warsaw Pact?",
+            "answer": "Satellite states like Poland, East Germany, and Czechoslovakia might also break away from Soviet control",
+            "explanation": "Allowing one Warsaw Pact member to become neutral risked the collapse of Moscow’s entire Eastern European security buffer."
+          },
+          {
+            "stage": 4,
+            "question": "Where did Imre Nagy seek refuge on 4 November 1956 before Soviet agents seized him despite a safe-conduct promise?",
+            "answer": "The Yugoslav Embassy in Budapest",
+            "explanation": "Nagy took shelter in the Yugoslav Embassy; when he stepped onto a bus under Kádár’s safe-conduct pledge on 22 November, Soviet KGB officers arrested him."
+          },
+          {
+            "stage": 5,
+            "question": "What was the primary strategic reason President Eisenhower refused to send US or NATO military forces to Hungary?",
+            "answer": "Intervening militarily inside the Soviet sphere risked triggering a thermonuclear war with the USSR",
+            "explanation": "With both superpowers armed with hydrogen bombs, Eisenhower refused to risk World War Three inside the Warsaw Pact."
           }
         ]
       },
@@ -6682,9 +7069,77 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[3.1]</span> On **14 October 1962**, an American **U-2** spy plane photographed Soviet **R-12 (SS-4)** medium-range nuclear missile launch sites under construction at **San Cristóbal** in Cuba, placing Washington, D.C. and major US cities within a ten-minute strike window. Convening his secret crisis advisers, **ExComm**, **Kennedy** weighed agonising choices: immediate airstrikes and invasion risked killing Soviet troops and igniting nuclear war, whereas diplomatic protest alone left missiles operational.\n\n<span class=\"para-ref\">[3.2]</span> On **22 October 1962**, Kennedy addressed the nation on television to expose the bases, raise US forces to **DEFCON 2**, and order a **500-mile naval \"quarantine\"** around Cuba (avoiding the warlike term *blockade*). On **24 October**, as Soviet freighters neared US Navy warships, **Khrushchev** ordered missile-carrying vessels to stop and turn back.",
           "content": "<span class=\"para-ref\">[3.1]</span> On **14 October 1962**, an American **U-2** spy plane photographed Soviet **R-12 (SS-4)** medium-range nuclear missile launch sites under construction at **San Cristóbal** in Cuba, placing Washington, D.C. and major US cities within a ten-minute strike window. Convening his secret crisis advisers, **ExComm**, **Kennedy** weighed agonising choices: immediate airstrikes and invasion risked killing Soviet troops and igniting nuclear war, whereas diplomatic protest alone left missiles operational.\n\n<span class=\"para-ref\">[3.2]</span> On **22 October 1962**, Kennedy addressed the nation on television to expose the bases, raise US forces to **DEFCON 2**, and order a **500-mile naval \"quarantine\"** around Cuba (avoiding the warlike term *blockade*). On **24 October**, as Soviet freighters neared US Navy warships, **Khrushchev** ordered missile-carrying vessels to stop and turn back.",
-          "image": "/images/gcse_cold_war/kt2/cw_map_l6_cuban_missile_crisis_ranges_1962.svg",
-          "image_alt": "Edexcel GCSE strategic map of the October 1962 Cuban Missile Crisis showing Cuba 90 miles south of Florida, the San Cristóbal missile site discovered by U-2 reconnaissance on 14 October 1962, concentric SS-4 MRBM (~1,000-mile) and SS-5 IRBM (~2,200-mile) nuclear strike arcs across Washington D.C., New York, and Chicago, Kennedy’s 500-mile US Navy Quarantine Line, and Soviet ships turning back on 24 October 1962",
-          "caption": "Reference Map: Strategic geography of the Thirteen Days (October 1962), showing Soviet SS-4 and SS-5 missile strike ranges from San Cristóbal across major US cities alongside Kennedy’s 500-mile Naval Quarantine."
+          "stage_hook_map": {
+            "id": "cw-l6-cuban-missile-crisis-map",
+            "title": "The Cuban Missile Crisis: Missile Ranges & US Naval Quarantine",
+            "subtitle": "14–28 October 1962 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt2/cw_map_l6_cuban_missile_crisis_ranges_1962.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 44.3,
+                "y": 67.9,
+                "color": "#dc2626",
+                "label": "San Cristóbal Sites",
+                "badge": "U-2 Discovery",
+                "date": "14 Oct 1962",
+                "title": "San Cristóbal: Soviet R-12 (SS-4) Launch Sites Photographed",
+                "details": "On 14 October 1962, an American U-2 spy plane photographed Soviet medium-range nuclear missile pads under construction at San Cristóbal in western Cuba. Khrushchev aimed both to deter a second US invasion of socialist Cuba and to counterbalance American Jupiter missiles stationed in Turkey.",
+                "hinge": "Why did Soviet missiles just 90 miles off Florida alter the Cold War balance of power even though the USA already held more warheads overall?"
+              },
+              {
+                "id": "spot-2",
+                "x": 46.7,
+                "y": 68.9,
+                "color": "#b45309",
+                "label": "Bay of Pigs",
+                "badge": "CIA Fiasco",
+                "date": "17 Apr 1961",
+                "title": "Bay of Pigs Invasion: Catalyst for Castro’s Nuclear Request",
+                "details": "When 1,400 CIA-trained Cuban exiles (Brigade 2506) landed at the Bay of Pigs in April 1961 without US air cover, Castro’s 20,000 troops defeated them within 72 hours. Rather than toppling Castro, US hostility pushed him to declare Cuba Communist in December 1961 and seek Soviet nuclear protection.",
+                "hinge": "How did Kennedy’s humiliation at the Bay of Pigs directly encourage Khrushchev to gamble on placing missiles in Cuba in May 1962?"
+              },
+              {
+                "id": "spot-3",
+                "x": 51.1,
+                "y": 35.5,
+                "align": "left",
+                "color": "#1d4ed8",
+                "label": "Washington & ExComm",
+                "badge": "SS-4 Strike Window",
+                "date": "16–22 Oct 1962",
+                "title": "Washington, D.C.: Inside the SS-4 Strike Ring & ExComm Debates",
+                "details": "Operational SS-4 MRBMs (~1,100 nautical miles) placed Washington, D.C., Miami, and Atlanta within a 10–15 minute warning window, while longer-range SS-5 IRBMs (~2,200 nautical miles) threatened New York, Chicago, and SAC headquarters in Omaha. Inside ExComm, Kennedy rejected immediate airstrikes in favour of a calibrated naval quarantine.",
+                "hinge": "Why did Kennedy reject his generals’ demand for an immediate air strike and invasion of Cuba during the ExComm debates?"
+              },
+              {
+                "id": "spot-4",
+                "x": 59,
+                "y": 58.1,
+                "align": "left",
+                "color": "#0284c7",
+                "label": "Naval Quarantine",
+                "badge": "500-Mile Barrier",
+                "date": "22–24 Oct 1962",
+                "title": "US Naval Quarantine Line: Avoiding the Act of \"Blockade\"",
+                "details": "On 22 October 1962, Kennedy raised US forces to DEFCON 2 and ordered a 500-nautical-mile naval \"quarantine\" around Cuba—deliberately avoiding the legal term blockade, which constituted an act of war. Warships stopped and searched incoming vessels for offensive missile cargoes while giving Khrushchev time to reconsider.",
+                "hinge": "Why was calling the naval barrier a \"quarantine\" rather than a \"blockade\" crucial to Kennedy’s crisis diplomacy?"
+              },
+              {
+                "id": "spot-5",
+                "x": 63.4,
+                "y": 61,
+                "align": "left",
+                "color": "#991b1b",
+                "label": "Soviet Convoy Halts",
+                "badge": "Thirteen Days Turning Point",
+                "date": "24–28 Oct 1962",
+                "title": "Mid-Atlantic Confrontation: Soviet Ships Turn Back & Secret Deal",
+                "details": "On 24 October 1962, missile-carrying Soviet freighters halted and turned back just short of US Navy picket ships. Four days later, Khrushchev agreed to dismantle the Cuban sites under UN inspection in return for Kennedy’s public non-invasion pledge and a secret assurance to withdraw US Jupiter missiles from Turkey.",
+                "hinge": "Why did keeping the Turkish Jupiter missile withdrawal secret boost Kennedy’s prestige while contributing to Khrushchev’s downfall in 1964?"
+              }
+            ]
+          }
         },
         {
           "act": 4,
@@ -7118,32 +7573,67 @@ export default {
       "vocab_cloze_text": "After the 1959 [Cuban Revolution] and Washington’s failed April 1961 [Bay of Pigs] landing pushed Castro to welcome Soviet missiles, Kennedy and [ExComm] imposed a 500-mile [Naval Quarantine] in October 1962 before reaching a secret Turkish missile swap. Shocked by the near-miss, the superpowers installed the 1963 [Hotline] and signed the [Limited Test Ban Treaty], followed by the 1967 Outer Space and 1968 Non-Proliferation treaties.",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Why had roughly 2.7 to 3 million East Germans fled westward via West Berlin by August 1961?",
-            "answer": "Higher Western living standards and GDR Stasi repression",
-            "explanation": "Prosperous Marshall-funded West Berlin acted as an escape route from Walter Ulbricht’s low-wage Communist GDR."
+            "stage": 1,
+            "question": "Roughly how many East Germans had fled westward via West Berlin between 1949 and August 1961?",
+            "answer": "2.7 to 3 million citizens",
+            "explanation": "Around a sixth of East Germany’s population—heavily young skilled professionals—fled through West Berlin between 1949 and 1961."
           },
           {
-            "question": "Which May 1960 espionage crisis wrecked the Paris Summit between Eisenhower and Khrushchev?",
-            "answer": "The shooting down of Gary Powers’s U-2 spy plane",
-            "explanation": "Capturing CIA pilot Francis Gary Powers alive exposed America’s weather-plane cover story and collapsed Paris talks."
+            "stage": 2,
+            "question": "At which September 1959 summit with President Eisenhower did Khrushchev withdraw his six-month Berlin Ultimatum?",
+            "answer": "The Camp David Summit",
+            "explanation": "Personal talks between Eisenhower and Khrushchev at Camp David in September 1959 eased tensions and postponed the deadline."
           },
           {
-            "question": "On what date did East German troops begin sealing the border around West Berlin with barbed wire?",
+            "stage": 3,
+            "question": "Where and when did new US President John F. Kennedy meet Nikita Khrushchev face-to-face?",
+            "answer": "Vienna, June 1961",
+            "explanation": "Khrushchev met the 43-year-old Kennedy at the Vienna Summit in June 1961 and renewed his six-month Berlin Ultimatum."
+          },
+          {
+            "stage": 4,
+            "question": "On what exact date did East German troops first seal the border around West Berlin with barbed wire?",
             "answer": "13 August 1961",
-            "explanation": "Overnight on 13 August 1961, East Germany closed the sector border to stop the skilled refugee \"brain drain\"."
+            "explanation": "In the early hours of \"Barbed Wire Sunday\", 13 August 1961, East German troops closed crossing points around West Berlin."
           },
           {
-            "question": "Who did Khrushchev install as Hungary’s pro-Soviet leader after crushing Imre Nagy’s uprising in November 1956?",
-            "answer": "János Kádár",
-            "explanation": "Following Operation Whirlwind in November 1956, János Kádár restored Warsaw Pact loyalty and Communist Party rule."
+            "stage": 5,
+            "question": "How did President Kennedy privately compare the Berlin Wall against fighting a war over Berlin?",
+            "answer": "\"Better than a war\"",
+            "explanation": "Kennedy remarked privately that \"a wall is a hell of a lot better than a war\" once Khrushchev dropped threats to West Berlin."
           },
           {
-            "question": "Which Soviet-led military alliance of Eastern European states was formed in May 1955 after West Germany joined NATO?",
-            "answer": "The Warsaw Pact",
-            "explanation": "Established on 14 May 1955, the Warsaw Pact placed seven satellite states and the USSR under unified Soviet command."
+            "stage": 1,
+            "question": "Who was the unpopular Communist leader of East Germany (GDR) aided by the Stasi secret police?",
+            "answer": "Walter Ulbricht",
+            "explanation": "Walter Ulbricht governed the GDR under strict state planning, collectivisation, and Stasi surveillance, fuelling mass emigration."
+          },
+          {
+            "stage": 2,
+            "question": "Who piloted the American U-2 spy plane shot down over the Soviet Union on 1 May 1960?",
+            "answer": "Francis Gary Powers",
+            "explanation": "CIA pilot Francis Gary Powers survived the missile strike and was captured with intact reconnaissance photographs, exposing Washington’s cover story."
+          },
+          {
+            "stage": 3,
+            "question": "Which April 1961 US setback in Cuba led Khrushchev to think he could bully Kennedy at Vienna?",
+            "answer": "The failed Bay of Pigs invasion",
+            "explanation": "Kennedy’s refusal to send US combat troops to rescue Brigade 2506 at the Bay of Pigs convinced Khrushchev the young president lacked resolve."
+          },
+          {
+            "stage": 4,
+            "question": "At which Berlin sector crossing did US and Soviet tanks face off 100 metres apart in October 1961?",
+            "answer": "Checkpoint Charlie",
+            "explanation": "US M48 and Soviet T-55 tanks confronted each other for 18 hours at Checkpoint Charlie on 27–28 October 1961."
+          },
+          {
+            "stage": 5,
+            "question": "What famous German phrase did President Kennedy declare to 120,000 citizens in West Berlin on 26 June 1963?",
+            "answer": "\"Ich bin ein Berliner\"",
+            "explanation": "Speaking outside Schöneberg Rathaus in June 1963, Kennedy proclaimed \"Ich bin ein Berliner\" (\"I am a Berliner\") to express solidarity."
           }
         ]
       },
@@ -8493,32 +8983,67 @@ export default {
       ],
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Which two communication and nuclear agreements were signed in 1963 directly after the Cuban Missile Crisis?",
-            "answer": "The Moscow–Washington Hotline (June 1963) and the Limited Test Ban Treaty (August 1963)",
-            "explanation": "Having come to the brink of nuclear war over Cuba in October 1962, Kennedy and Khrushchev set up a direct Hotline and banned atmospheric nuclear tests."
+            "stage": 1,
+            "question": "Which corrupt US-backed military dictator of Cuba did Fidel Castro overthrow in January 1959?",
+            "answer": "Fulgencio Batista",
+            "explanation": "Fidel Castro and Che Guevara toppled pro-American dictator Fulgencio Batista in January 1959."
           },
           {
-            "question": "On what date did East German authorities seal the West Berlin border and begin constructing the Berlin Wall?",
-            "answer": "13 August 1961",
-            "explanation": "To halt the brain drain of over 2.7 million East German refugees fleeing via West Berlin, Ulbricht and Khrushchev sealed the border overnight on 13 August 1961."
+            "stage": 2,
+            "question": "What was the name of the CIA-trained force of 1,400 Cuban exiles that landed at the Bay of Pigs in April 1961?",
+            "answer": "Brigade 2506",
+            "explanation": "Trained in Guatemala by the CIA, 1,400 Cuban exiles of Brigade 2506 landed at the Bay of Pigs on 17 April 1961."
           },
           {
-            "question": "What fatal foreign-policy announcement by Hungarian Prime Minister Imre Nagy on 1 November 1956 triggered Soviet invasion?",
-            "answer": "Withdrawing Hungary from the Warsaw Pact and declaring Cold War neutrality",
-            "explanation": "Khrushchev might have tolerated limited domestic reform, but leaving the Warsaw Pact threatened the entire Soviet buffer zone, triggering Operation Whirlwind on 4 November 1956."
+            "stage": 3,
+            "question": "On what date did an American U-2 spy plane photograph Soviet nuclear missile sites at San Cristóbal in Cuba?",
+            "answer": "14 October 1962",
+            "explanation": "High-altitude U-2 reconnaissance photographs taken on 14 October 1962 revealed Soviet R-12 medium-range missile bases on Cuba."
           },
           {
-            "question": "What Soviet economic council (founded in January 1949) coordinated trade and industrial production across Eastern Bloc satellite states?",
-            "answer": "Comecon (Council for Mutual Economic Assistance)",
-            "explanation": "Comecon integrated Eastern European command economies around Soviet industrial needs rather than Western trade."
+            "stage": 4,
+            "question": "Which American U-2 pilot was shot down and killed over Cuba on \"Black Saturday\", 27 October 1962?",
+            "answer": "Major Rudolf Anderson",
+            "explanation": "A Soviet surface-to-air missile killed Major Rudolf Anderson over Cuba on 27 October 1962, yet Kennedy restrained military calls to retaliate."
           },
           {
-            "question": "In what month and year had a Communist coup first turned democratic Czechoslovakia into a one-party Soviet satellite state?",
-            "answer": "February 1948",
-            "explanation": "The February 1948 Communist coup in Prague—and death of Foreign Minister Jan Masaryk—completed Stalin’s Eastern European buffer zone and spurred US Congress to pass Marshall Aid."
+            "stage": 5,
+            "question": "What direct crisis communication link was set up between Moscow and Washington in June 1963?",
+            "answer": "The Moscow–Washington \"hotline\"",
+            "explanation": "Installed in June 1963, the direct teletype \"hotline\" prevented dangerous delays in urgent superpower communication."
+          },
+          {
+            "stage": 1,
+            "question": "Roughly how close is the island of Cuba to the southern coast of Florida in the United States?",
+            "answer": "90 miles",
+            "explanation": "Located just 90 miles south of Florida, Cuba lay squarely inside America’s traditional sphere of influence."
+          },
+          {
+            "stage": 2,
+            "question": "How quickly did Castro’s 20,000 Cuban troops defeat the CIA-backed Bay of Pigs landing in April 1961?",
+            "answer": "Within 72 hours",
+            "explanation": "Deprived of US air cover and popular Cuban support, Brigade 2506 surrendered within 72 hours with 1,189 exiles captured."
+          },
+          {
+            "stage": 3,
+            "question": "What was the name of President Kennedy’s secret crisis committee convened during the Thirteen Days?",
+            "answer": "ExComm",
+            "explanation": "The Executive Committee of the National Security Council (ExComm) debated airstrikes, invasion, diplomacy, and naval quarantine."
+          },
+          {
+            "stage": 4,
+            "question": "What extra demand did Khrushchev add in his tougher second letter on 27 October 1962?",
+            "answer": "Removal of US Jupiter missiles from Turkey",
+            "explanation": "Whereas Khrushchev’s 26 October letter sought only a US non-invasion pledge, his 27 October letter demanded removing US missiles from Turkey."
+          },
+          {
+            "stage": 5,
+            "question": "Which August 1963 treaty banned nuclear weapons tests in the atmosphere, outer space, and underwater?",
+            "answer": "The Limited Test Ban Treaty",
+            "explanation": "Signed in Moscow on 5 August 1963 by the USA, USSR, and Britain, the Limited Test Ban Treaty restricted testing to underground sites."
           }
         ]
       },
@@ -9299,9 +9824,76 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[1.1]</span> Convinced after the **Čierna nad Tisou** and **Bratislava** summits that **Alexander Dubček** would never reimpose censorship or silence anti-Soviet newspapers, the Soviet Politburo voted on **17 August 1968** for armed intervention. Late on the night of **20–21 August 1968**, roughly **500,000 Warsaw Pact** troops—drawn from the **Soviet Union**, **Poland**, **Hungary**, and **Bulgaria**—crossed every frontier into **Czechoslovakia**.\n\n<span class=\"para-ref\">[1.2]</span> Columns of tanks painted with white invasion stripes rumbled into Prague, while Soviet paratroopers seized Ruzyňe Airport after a transport plane requested an emergency landing. Moscow’s state news agency claimed unnamed Czechoslovak Communists had requested \"fraternal assistance\" against counter-revolutionaries, yet no senior Prague leader had signed such an appeal, and President **Ludvík Svoboda** ordered the Czechoslovak army to remain inside its barracks to prevent catastrophic bloodshed.",
           "content": "<span class=\"para-ref\">[1.1]</span> Convinced after the **Čierna nad Tisou** and **Bratislava** summits that **Alexander Dubček** would never reimpose censorship or silence anti-Soviet newspapers, the Soviet Politburo voted on **17 August 1968** for armed intervention. Late on the night of **20–21 August 1968**, roughly **500,000 Warsaw Pact** troops—drawn from the **Soviet Union**, **Poland**, **Hungary**, and **Bulgaria**—crossed every frontier into **Czechoslovakia**.\n\n<span class=\"para-ref\">[1.2]</span> Columns of tanks painted with white invasion stripes rumbled into Prague, while Soviet paratroopers seized Ruzyňe Airport after a transport plane requested an emergency landing. Moscow’s state news agency claimed unnamed Czechoslovak Communists had requested \"fraternal assistance\" against counter-revolutionaries, yet no senior Prague leader had signed such an appeal, and President **Ludvík Svoboda** ordered the Czechoslovak army to remain inside its barracks to prevent catastrophic bloodshed.",
-          "image": "/images/gcse_cold_war/kt2/cw_map_l8_warsaw_pact_invasion_czechoslovakia_1968.svg",
-          "image_alt": "Edexcel GCSE strategic map of Operation Danube (20–21 August 1968) showing 500,000 Warsaw Pact troops invading Prague and Bratislava from the Soviet Union, Poland, East Germany, Hungary, and Bulgaria, contrasted with Romania (Ceaușescu) and Yugoslavia (Tito) refusing to participate alongside NATO West Germany and neutral Austria",
-          "caption": "Reference Map: Operation Danube (20–21 August 1968), showing 500,000 Warsaw Pact troops converging on Prague and Bratislava while Romania and Yugoslavia refused to participate and condemned Moscow."
+          "stage_hook_map": {
+            "id": "cw-l8-czechoslovakia-1968-map",
+            "title": "Prague Spring & Warsaw Pact Invasion of Czechoslovakia",
+            "subtitle": "20–21 August 1968 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt2/cw_map_l8_warsaw_pact_invasion_czechoslovakia_1968.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 38.3,
+                "y": 35.5,
+                "color": "#b45309",
+                "label": "Prague Passive Resistance",
+                "badge": "Prague Spring Crushed",
+                "date": "20–21 Aug 1968",
+                "title": "Prague: Airborne Seizure of Ruzyně & Unarmed Passive Resistance",
+                "details": "Soviet paratroopers seized Prague’s Ruzyně Airport on the night of 20–21 August 1968 as columns of white-striped tanks entered the capital. Determined to avoid a repeat of Hungary’s 1956 bloodbath, Alexander Dubček urged citizens to offer peaceful passive resistance—debating Soviet conscripts, repainting road signs, and running secret radio broadcasts.",
+                "hinge": "Why did Dubček urge strictly non-violent passive resistance in August 1968 rather than ordering the Czechoslovak army to fight?"
+              },
+              {
+                "id": "spot-2",
+                "x": 48.2,
+                "y": 37.5,
+                "color": "#dc2626",
+                "label": "Operation Danube",
+                "badge": "500,000 Pact Troops",
+                "date": "20–21 Aug 1968",
+                "title": "Northern & Eastern Frontiers: 500,000 Warsaw Pact Troops Converge",
+                "details": "Roughly 500,000 troops from the Soviet Union, Poland, Hungary, and Bulgaria crossed Czechoslovakia’s frontiers simultaneously while East German forces mobilised on the Saxony border. Moscow claimed unnamed Czechoslovak Communists had requested \"fraternal assistance\", before flying Dubček to sign the Moscow Protocol and later installing Gustáv Husák.",
+                "hinge": "Why did Brezhnev organise a multi-nation Warsaw Pact invasion rather than sending Red Army divisions alone?"
+              },
+              {
+                "id": "spot-3",
+                "x": 58.3,
+                "y": 45.4,
+                "align": "left",
+                "color": "#991b1b",
+                "label": "Čierna & Brezhnev Doctrine",
+                "badge": "Ideological Red Line",
+                "date": "Jul–Sep 1968",
+                "title": "Eastern Frontier & The Brezhnev Doctrine (September 1968)",
+                "details": "Although Dubček pledged at Čierna nad Tisou and Bratislava to keep Czechoslovakia inside the Warsaw Pact, abolishing censorship threatened one-party rule across neighbouring Poland and East Germany. In September 1968 Pravda set out the Brezhnev Doctrine: socialist states had a collective duty to intervene militarily whenever one-party Communist control was endangered.",
+                "hinge": "How did Dubček’s April 1968 reforms differ from Imre Nagy’s actions in Hungary in 1956—and why did Moscow invade anyway?"
+              },
+              {
+                "id": "spot-4",
+                "x": 66.3,
+                "y": 59.1,
+                "align": "left",
+                "color": "#7c3aed",
+                "label": "Romania & Yugoslavia",
+                "badge": "Communist Split",
+                "date": "Aug–Sep 1968",
+                "title": "Bucharest, Belgrade & Tirana: Communist States Condemn Moscow",
+                "details": "Warsaw Pact member Romania under Nicolae Ceaușescu refused to join Operation Danube and publicly denounced Soviet intervention alongside Tito’s Yugoslavia, Mao’s China, and Albania (which formally withdrew from the Warsaw Pact in September 1968). French and Italian Communist parties also condemned the invasion, accelerating independent Eurocommunism.",
+                "hinge": "Why did crushing Czechoslovakia strengthen Soviet control over Central Europe yet fracture unity across the wider Communist world?"
+              },
+              {
+                "id": "spot-5",
+                "x": 32.8,
+                "y": 38,
+                "color": "#1d4ed8",
+                "label": "Iron Curtain & West",
+                "badge": "Western Restraint",
+                "date": "Aug 1968",
+                "title": "The Bavarian Iron Curtain: Loud Condemnation, Zero Intervention",
+                "details": "Along the West German and Austrian frontiers, NATO monitored the invasion closely. US President Lyndon B. Johnson condemned Soviet aggression and cancelled a planned Moscow summit, yet with 500,000 American troops bogged down in Vietnam and unspoken spheres of influence intact, Washington took zero military action.",
+                "hinge": "Why did the Vietnam War and nuclear deterrence prevent the United States from going beyond verbal protest in August 1968?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -9766,32 +10358,67 @@ export default {
       ],
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Which hardline Stalinist leader did Alexander Dubček replace as Czechoslovak First Secretary in January 1968?",
+            "stage": 1,
+            "question": "Which hardline Stalinist leader ruled Czechoslovakia as Communist Party First Secretary from 1957 to January 1968?",
             "answer": "Antonín Novotný",
-            "explanation": "Novotný’s refusal of de-Stalinisation, StB censorship, economic stagnation under Comecon, and the October 1967 student beatings led to his removal."
+            "explanation": "Antonín Novotný resisted de-Stalinisation and presided over growing economic stagnation and StB repression until January 1968."
           },
           {
-            "question": "Name two key domestic reforms introduced in Dubček’s April 1968 Action Programme (\"Socialism with a human face\").",
-            "answer": "Abolition of press/TV censorship, freedom of travel to the West, and Ota Šik’s market decentralisation",
-            "explanation": "Dubček ended censorship, curbed arbitrary StB arrests, rehabilitated Stalinist victims, and introduced consumer-focused economic reforms."
+            "stage": 2,
+            "question": "Who replaced Antonín Novotný as First Secretary of the Czechoslovak Communist Party on 5 January 1968?",
+            "answer": "Alexander Dubček",
+            "explanation": "Reform-minded Slovak Communist Alexander Dubček became First Secretary in January 1968 with Brezhnev’s initial acquiescence."
           },
           {
-            "question": "How did Dubček try to avoid Imre Nagy’s 1956 mistake in Hungary when launching the Prague Spring?",
-            "answer": "He repeatedly pledged that Czechoslovakia would stay loyal to the Warsaw Pact and Comecon",
-            "explanation": "Unlike Nagy—who announced neutrality and withdrawal from the Warsaw Pact—Dubček insisted Czechoslovakia remained a loyal socialist ally."
+            "stage": 3,
+            "question": "Which two Soviet-led organisations did Dubček repeatedly promise Czechoslovakia would remain loyal to in 1968?",
+            "answer": "The Warsaw Pact and Comecon",
+            "explanation": "Having learned from Hungary in 1956, Dubček constantly reassured Moscow that Czechoslovakia would stay inside the Warsaw Pact and Comecon."
           },
           {
-            "question": "Which June 1968 uncensored manifesto by Ludvík Vaculík convinced Brezhnev, Ulbricht, and Gomułka that Dubček was losing control?",
-            "answer": "The \"Two Thousand Words\" manifesto",
-            "explanation": "Vaculík’s call for grassroots protests and strikes against Communist hardliners alarmed Moscow and prompted the 15 July Warsaw Letter."
+            "stage": 4,
+            "question": "Who had replaced Nikita Khrushchev as Soviet leader in 1964 and confronted the Prague Spring in 1968?",
+            "answer": "Leonid Brezhnev",
+            "explanation": "General Secretary Leonid Brezhnev led the USSR from 1964 to 1982 and refused to let Eastern Bloc satellites weaken one-party rule."
           },
           {
-            "question": "During the October 1962 Cuban Missile Crisis, what secret US concession accompanied Khrushchev’s public pledge to remove missiles from Cuba?",
-            "answer": "Secret removal of US Jupiter nuclear missiles from Turkey (plus a public US non-invasion pledge)",
-            "explanation": "Robert Kennedy privately assured Ambassador Dobrynin that obsolete US Jupiter missiles in Turkey would be dismantled within months."
+            "stage": 5,
+            "question": "How did Moscow use Warsaw Pact troops in June 1968 to intimidate Dubček’s government?",
+            "answer": "Staging military exercises inside Czechoslovakia and delaying withdrawal",
+            "explanation": "June 1968 Warsaw Pact command exercises brought Soviet tanks onto Czech soil both to intimidate Prague and rehearse invasion routes."
+          },
+          {
+            "stage": 1,
+            "question": "What were the initials of Czechoslovakia’s feared Communist secret police?",
+            "answer": "StB",
+            "explanation": "The StB (Státní bezpečnost) enforced strict press censorship and arrested critics of Novotný’s Stalinist regime."
+          },
+          {
+            "stage": 2,
+            "question": "What famous slogan summed up Alexander Dubček’s goal during the 1968 Prague Spring?",
+            "answer": "\"Socialism with a human face\"",
+            "explanation": "Dubček wanted to keep socialism while removing fear, censorship, and StB repression so citizens willingly supported the system."
+          },
+          {
+            "stage": 3,
+            "question": "Which 1956 Eastern Bloc leader’s fatal mistake was Dubček determined NOT to repeat?",
+            "answer": "Imre Nagy in Hungary",
+            "explanation": "Imre Nagy’s November 1956 announcement leaving the Warsaw Pact had triggered immediate Soviet invasion and Nagy’s execution."
+          },
+          {
+            "stage": 4,
+            "question": "Which two hardline Eastern Bloc neighbours pressed Brezhnev hardest to crush Dubček’s reforms?",
+            "answer": "Walter Ulbricht (GDR) and Władysław Gomułka (Poland)",
+            "explanation": "East Germany’s Ulbricht and Poland’s Gomułka feared uncensored Czech reforms would spark uprisings in their own states."
+          },
+          {
+            "stage": 5,
+            "question": "What joint warning did the USSR, East Germany, Poland, Hungary, and Bulgaria send to Prague on 15 July 1968?",
+            "answer": "The Warsaw Letter",
+            "explanation": "The 15 July 1968 Warsaw Letter warned that defending socialism in Czechoslovakia was the \"common affair\" of the entire bloc."
           }
         ]
       },
@@ -10572,9 +11199,77 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[1.1]</span> By the early **1970s**, urgent strategic and economic pressures pushed both the **USA** and the **USSR** toward **Détente**—a deliberate relaxation of Cold War tension. Since the **1962 Cuban Missile Crisis**, both superpowers feared **Mutually Assured Destruction (MAD)** and wanted to curb ruinous arms spending. Under President **Richard Nixon** and adviser **Henry Kissinger**, the **USA** was drained by the **Vietnam War**, which cost over **$150 billion**, killed **58,000** Americans, fuelled inflation, and sparked fierce domestic protests.\n\n<span class=\"para-ref\">[1.2]</span> Meanwhile, Soviet leader **Leonid Brezhnev** needed Western grain imports and modern industrial technology to rescue stagnant living standards across the **USSR**. Having finally achieved rough nuclear parity with Washington, Moscow also feared diplomatic isolation after its bitter **Sino-Soviet** border split—especially once Nixon visited Communist **China** in **February 1972**—giving both capitals strong incentives to negotiate.",
           "content": "<span class=\"para-ref\">[1.1]</span> By the early **1970s**, urgent strategic and economic pressures pushed both the **USA** and the **USSR** toward **Détente**—a deliberate relaxation of Cold War tension. Since the **1962 Cuban Missile Crisis**, both superpowers feared **Mutually Assured Destruction (MAD)** and wanted to curb ruinous arms spending. Under President **Richard Nixon** and adviser **Henry Kissinger**, the **USA** was drained by the **Vietnam War**, which cost over **$150 billion**, killed **58,000** Americans, fuelled inflation, and sparked fierce domestic protests.\n\n<span class=\"para-ref\">[1.2]</span> Meanwhile, Soviet leader **Leonid Brezhnev** needed Western grain imports and modern industrial technology to rescue stagnant living standards across the **USSR**. Having finally achieved rough nuclear parity with Washington, Moscow also feared diplomatic isolation after its bitter **Sino-Soviet** border split—especially once Nixon visited Communist **China** in **February 1972**—giving both capitals strong incentives to negotiate.",
-          "image": "/images/gcse_cold_war/kt3/cw_map_l9_detente_helsinki_baskets_1975.svg",
-          "image_alt": "Edexcel GCSE strategic diagram and geopolitical map of 1970s Détente showing US Vietnam War costs ($150bn+), Nixon's 1972 China opening, the Sino-Soviet split, MAD parity, SALT 1 (1972), and the Three Baskets of the Helsinki Accords (1975)",
-          "caption": "Reference Map: Strategic architecture of 1970s Détente, showing why economic and geopolitical pressures drove Washington and Moscow toward SALT 1 (May 1972) and the Three Baskets of the Helsinki Accords (August 1975)."
+          "stage_hook_map": {
+            "id": "cw-l9-detente-helsinki-map",
+            "title": "Superpower Détente: Summits, SALT 1 & the Helsinki Accords",
+            "subtitle": "1972–1975 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt3/cw_map_l9_detente_helsinki_baskets_1975.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 87.6,
+                "y": 34.5,
+                "align": "left",
+                "color": "#d97706",
+                "label": "1. Beijing Summit",
+                "badge": "Triangular Diplomacy",
+                "date": "Feb 1972",
+                "title": "Beijing: Nixon–Mao Rapprochement Pressures Moscow",
+                "details": "Exploiting the bitter Sino-Soviet border split, President Richard Nixon and Henry Kissinger visited Communist China in February 1972. Fearing diplomatic encirclement by a US–Chinese alignment while needing Western grain and industrial technology, Leonid Brezhnev became eager to strike arms agreements with Washington.",
+                "hinge": "How did Nixon’s historic visit to Beijing in February 1972 strengthen America’s negotiating hand with the USSR three months later?"
+              },
+              {
+                "id": "spot-2",
+                "x": 58.7,
+                "y": 24.4,
+                "align": "left",
+                "color": "#be123c",
+                "label": "2. Moscow (SALT 1)",
+                "badge": "First Nuclear Accord",
+                "date": "26 May 1972",
+                "title": "Moscow Summit: SALT 1, the ABM Treaty & MIRV Loopholes",
+                "details": "At the May 1972 Moscow Summit, Nixon and Brezhnev signed SALT 1: limiting each superpower to two Anti-Ballistic Missile (ABM) sites, freezing ICBM and SLBM launcher totals for five years, and pledging peaceful coexistence. However, SALT 1 left multiple-warhead MIRVs unrestricted, allowing total warhead stockpiles to keep rising.",
+                "hinge": "Why was SALT 1 hailed as a diplomatic breakthrough in 1972 despite failing to stop the growth of nuclear warheads?"
+              },
+              {
+                "id": "spot-3",
+                "x": 18.6,
+                "y": 35.1,
+                "color": "#1d4ed8",
+                "label": "3. Washington Summit",
+                "badge": "Trade & Vietnam Pressure",
+                "date": "Jun 1973",
+                "title": "Washington, D.C.: Vietnam Exhaustion, Grain Trade & Summit Thaw",
+                "details": "Drained by a Vietnam War costing over $150 billion and 58,000 American lives, Washington welcomed Détente to curb military spending. Brezhnev visited the USA in June 1973 to sign agreements on trade, agriculture, and preventing nuclear war, securing vital American grain shipments to relieve Soviet food shortages.",
+                "hinge": "Why did domestic economic pressures inside both the USA and the USSR make Détente mutually attractive in the early 1970s?"
+              },
+              {
+                "id": "spot-4",
+                "x": 92.4,
+                "y": 32.4,
+                "align": "left",
+                "color": "#7c3aed",
+                "label": "4. Vladivostok Accord",
+                "badge": "SALT 2 Framework",
+                "date": "Nov 1974",
+                "title": "Vladivostok Summit: Ford & Brezhnev Agree Equal Strategic Caps",
+                "details": "Following Nixon’s Watergate resignation, President Gerald Ford met Brezhnev at Vladivostok in November 1974 to agree equal ceilings of 2,400 strategic nuclear delivery vehicles and limits on MIRV launchers. This framework paved the way for the June 1979 Vienna SALT 2 treaty—and the symbolic July 1975 Apollo–Soyuz space handshake.",
+                "hinge": "Why did negotiations to turn the 1974 Vladivostok framework into the 1979 SALT 2 treaty drag on for nearly five years?"
+              },
+              {
+                "id": "spot-5",
+                "x": 54.4,
+                "y": 21.8,
+                "color": "#047857",
+                "label": "5. Helsinki Accords",
+                "badge": "Baskets 1, 2 & 3",
+                "date": "Aug 1975",
+                "title": "Helsinki: 35 Nations Sign the Three Baskets (Borders, Trade & Rights)",
+                "details": "In August 1975, the USA, USSR, Canada, and 32 European states signed the Helsinki Accords: Basket 1 recognised post-1945 European borders (including East Germany), Basket 2 expanded trade and scientific links, and Basket 3 pledged respect for speech, religion, and movement. Dissidents soon formed Helsinki Watch and Charter 77 to hold Moscow to Basket 3.",
+                "hinge": "Why did Basket 1 initially look like a triumph for Brezhnev, yet Basket 3 prove a long-term political trap for Communist regimes?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -11038,32 +11733,67 @@ export default {
       "vocab_cloze_text": "Driven by Vietnam War costs, Soviet economic stagnation, and shared fear of [Mutually Assured Destruction (MAD)], Washington and Moscow embraced [Détente] in the early 1970s. Nixon and Brezhnev signed [SALT 1] in May 1972, though multi-warhead [MIRV] missiles remained unrestricted. In August 1975, 35 nations signed the [Helsinki Accords], recognising European borders while inspiring Basket 3 human-rights dissidents, before Senate opposition and Afghanistan doomed [SALT 2] in 1979–80.",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Last Lesson (KT 2.3): What policy did Leonid Brezhnev announce in autumn 1968 to justify the Warsaw Pact invasion of Czechoslovakia?",
-            "answer": "The Brezhnev Doctrine",
-            "explanation": "Brezhnev declared that the USSR had the duty to intervene militarily whenever any Eastern Bloc country threatened one-party Communist rule or the Warsaw Pact."
+            "stage": 1,
+            "question": "On what night did Warsaw Pact forces launch their full-scale military invasion of Czechoslovakia?",
+            "answer": "20–21 August 1968",
+            "explanation": "Late on 20–21 August 1968, Warsaw Pact troops and tanks crossed into Czechoslovakia from multiple directions."
           },
           {
-            "question": "Last Lesson (KT 2.3): What slogan summed up Alexander Dubček’s April 1968 Prague Spring reforms?",
-            "answer": "Socialism with a human face",
-            "explanation": "Dubček ended press censorship and allowed open debate while insisting Czechoslovakia would stay loyal to the Warsaw Pact."
+            "stage": 2,
+            "question": "How did ordinary Czechoslovaks respond to Dubček’s call for peaceful passive resistance in August 1968?",
+            "answer": "Removing street signs and running secret radio broadcasts",
+            "explanation": "Citizens removed or repainted road signs to confuse tank columns, argued with soldiers in Russian, and broadcast from hidden studios."
           },
           {
-            "question": "Earlier in KT2 (KT 2.2): Name ONE direct agreement reached in 1963 to reduce nuclear miscalculation after the Cuban Missile Crisis.",
-            "answer": "The Moscow–Washington Hotline (or the Limited Test Ban Treaty)",
-            "explanation": "The June 1963 direct Teletype Hotline and August 1963 Limited Test Ban Treaty marked early steps toward managing nuclear danger."
+            "stage": 3,
+            "question": "What coerced agreement was an arrested Alexander Dubček forced to sign in the Kremlin on 26 August 1968?",
+            "answer": "The Moscow Protocol",
+            "explanation": "Flown to Moscow under arrest, Dubček signed the Moscow Protocol restoring censorship and stationing Soviet garrisons in Czechoslovakia."
           },
           {
-            "question": "Earlier in KT2 (KT 2.1): On what date did East Germany begin erecting the Berlin Wall to halt the refugee brain drain?",
-            "answer": "13 August 1961",
-            "explanation": "Over 2.7 million East Germans had fled westward via West Berlin between 1949 and August 1961 before Khrushchev approved closing the border."
+            "stage": 4,
+            "question": "In which Soviet newspaper was the justification known as the Brezhnev Doctrine first published in September 1968?",
+            "answer": "Pravda",
+            "explanation": "Pravda published the doctrine on 26 September 1968 before Brezhnev proclaimed it formally in Warsaw in November 1968."
           },
           {
-            "question": "Synoptic Prior Topic (KT 1.3): Which November 1956 announcement by Imre Nagy triggered Khrushchev’s second Soviet invasion of Hungary?",
-            "answer": "Hungary’s withdrawal from the Warsaw Pact",
-            "explanation": "Once Nagy announced on 1 November 1956 that Hungary would leave the Warsaw Pact and become neutral, Khrushchev sent Soviet tanks back into Budapest."
+            "stage": 5,
+            "question": "How did US President Lyndon B. Johnson respond to the August 1968 Soviet invasion of Czechoslovakia?",
+            "answer": "Condemned it verbally and cancelled a Moscow summit",
+            "explanation": "Johnson protested verbally and cancelled his planned Moscow summit, yet took zero military action inside the Soviet sphere."
+          },
+          {
+            "stage": 1,
+            "question": "Roughly how many Warsaw Pact troops invaded Czechoslovakia in August 1968?",
+            "answer": "Around 500,000 troops",
+            "explanation": "Roughly half a million troops backed by thousands of tanks rapidly overwhelmed Czechoslovakia overnight."
+          },
+          {
+            "stage": 2,
+            "question": "Approximately how many Czechoslovaks were killed during the August 1968 invasion, compared with thousands in Hungary in 1956?",
+            "answer": "Fewer than 100",
+            "explanation": "Because Dubček ordered non-violent passive resistance rather than armed combat, fewer than 100 people died during the August invasion."
+          },
+          {
+            "stage": 3,
+            "question": "Which hardline pro-Soviet leader replaced Alexander Dubček in April 1969?",
+            "answer": "Gustáv Husák",
+            "explanation": "Moscow installed Gustáv Husák in April 1969 to dismantle all remaining Prague Spring reforms over the next twenty years."
+          },
+          {
+            "stage": 4,
+            "question": "What core rule did the 1968 Brezhnev Doctrine impose on every Warsaw Pact satellite state?",
+            "answer": "Maintain one-party Communist rule and Warsaw Pact membership",
+            "explanation": "The Brezhnev Doctrine declared Warsaw Pact states had a duty to intervene militarily whenever one-party socialism was threatened."
+          },
+          {
+            "stage": 5,
+            "question": "Which major Asian conflict tying down 500,000 US soldiers deterred Washington from confronting Moscow in 1968?",
+            "answer": "The Vietnam War",
+            "explanation": "With 500,000 US troops bogged down in Vietnam and a 1968 presidential election underway, Washington avoided a European crisis."
           }
         ]
       },
@@ -11847,9 +12577,77 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[1.1]</span> In **April 1978**, the **Saur Revolution** brought the pro-Soviet Communist **PDPA** under **Nur Muhammad Taraki** to power in **Afghanistan**. Radical land and secular reforms provoked fierce armed rebellion from Islamic **Mujahideen** guerrillas, and in **September 1979** Prime Minister **Hafizullah Amin** seized power and had Taraki murdered. Watching the **1979 Iranian Revolution** next door, **Leonid Brezhnev** feared Islamic fundamentalism spreading north across the border into **30 million** Muslims living in Soviet Central Asian republics.\n\n<span class=\"para-ref\">[1.2]</span> Suspecting the unpredictable **Amin** of secretly contacting the **USA**, **Brezhnev** invoked the **Brezhnev Doctrine** to preserve a bordering Communist state. Between **24 and 27 December 1979**, Soviet airborne forces and armoured columns invaded **Afghanistan**, storming Kabul’s presidential palace, killing Amin, and installing Moscow-backed **Babrak Karmal**—trapping the **USSR** in a costly ten-year guerrilla war.",
           "content": "<span class=\"para-ref\">[1.1]</span> In **April 1978**, the **Saur Revolution** brought the pro-Soviet Communist **PDPA** under **Nur Muhammad Taraki** to power in **Afghanistan**. Radical land and secular reforms provoked fierce armed rebellion from Islamic **Mujahideen** guerrillas, and in **September 1979** Prime Minister **Hafizullah Amin** seized power and had Taraki murdered. Watching the **1979 Iranian Revolution** next door, **Leonid Brezhnev** feared Islamic fundamentalism spreading north across the border into **30 million** Muslims living in Soviet Central Asian republics.\n\n<span class=\"para-ref\">[1.2]</span> Suspecting the unpredictable **Amin** of secretly contacting the **USA**, **Brezhnev** invoked the **Brezhnev Doctrine** to preserve a bordering Communist state. Between **24 and 27 December 1979**, Soviet airborne forces and armoured columns invaded **Afghanistan**, storming Kabul’s presidential palace, killing Amin, and installing Moscow-backed **Babrak Karmal**—trapping the **USSR** in a costly ten-year guerrilla war.",
-          "image": "/images/gcse_cold_war/kt3/cw_map_l10_soviet_invasion_afghanistan_1979.svg",
-          "image_alt": "Edexcel GCSE regional geopolitical map of the December 1979 Soviet invasion of Afghanistan showing Soviet 40th Army routes into Kabul, Bagram, Herat, and Kandahar, Mujahideen Hindu Kush zones, CIA supply routes via Peshawar, 1979 Iran, and the Carter Doctrine Persian Gulf oil lifeline",
-          "caption": "Reference Map: Regional geopolitics of the December 1979 Soviet invasion of Afghanistan, showing Soviet airborne and overland thrusts into Kabul, Bagram, Herat, and Kandahar, CIA supply lines via Pakistan, and the January 1980 Carter Doctrine."
+          "stage_hook_map": {
+            "id": "cw-l10-afghanistan-1979-map",
+            "title": "Soviet Invasion of Afghanistan & The Carter Doctrine",
+            "subtitle": "December 1979 – January 1980 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt3/cw_map_l10_soviet_invasion_afghanistan_1979.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 65.7,
+                "y": 45.1,
+                "align": "left",
+                "color": "#dc2626",
+                "label": "Kabul Palace Stormed",
+                "badge": "Brezhnev Doctrine",
+                "date": "24–27 Dec 1979",
+                "title": "Kabul & Bagram: Hafizullah Amin Killed & Babrak Karmal Installed",
+                "details": "After Hafizullah Amin seized power in Kabul from fellow Communist Nur Muhammad Taraki amid swelling Mujahideen rebellion, Brezhnev suspected Amin of contacting Washington and invoked the Brezhnev Doctrine. Between 24 and 27 December 1979, Soviet airborne troops landed at Bagram and Kabul, killed Amin, and installed Moscow loyalist Babrak Karmal.",
+                "hinge": "Why did Brezhnev expect a swift 1968-style intervention in Kabul, yet instead trap the USSR in a ten-year guerrilla war?"
+              },
+              {
+                "id": "spot-2",
+                "x": 61.5,
+                "y": 35.7,
+                "align": "left",
+                "color": "#991b1b",
+                "label": "Termez & Salang Thrust",
+                "badge": "40th Army Corridors",
+                "date": "Dec 1979",
+                "title": "Termez, Salang Pass & Kushka: Soviet 40th Army Overland Invasion",
+                "details": "Soviet armoured divisions crossed the Amu Darya at Termez through the high-altitude Salang Tunnel toward Kabul while a western thrust from Kushka seized Herat and Kandahar. Controlling cities and highways proved far easier than subduing rugged mountain valleys, eventually costing Moscow ~15,000 Soviet lives and $8 billion a year.",
+                "hinge": "How did Afghanistan’s mountainous geography expose the limits of conventional Soviet tank and air power?"
+              },
+              {
+                "id": "spot-3",
+                "x": 34.7,
+                "y": 52.1,
+                "color": "#7c3aed",
+                "label": "Iranian Revolution",
+                "badge": "Ideological Contagion",
+                "date": "1979",
+                "title": "Iran (1979): Fears of Islamic Fundamentalism on the Soviet Border",
+                "details": "Ayatollah Khomeini’s 1979 Islamic Revolution in neighbouring Iran alarmed both superpowers: Washington lost its key Persian Gulf ally, while the Kremlin feared militant Islamism spreading across Afghanistan into the 30 million Muslim citizens of the Turkmen, Uzbek, and Tajik Soviet republics.",
+                "hinge": "Why did the 1979 Iranian Revolution heighten security fears simultaneously in Moscow and in Washington?"
+              },
+              {
+                "id": "spot-4",
+                "x": 70.6,
+                "y": 46.4,
+                "align": "left",
+                "color": "#047857",
+                "label": "Peshawar & CIA Supply",
+                "badge": "Operation Cyclone",
+                "date": "1980–1989",
+                "title": "Peshawar & Quetta: Mujahideen Sanctuaries & CIA Operation Cyclone",
+                "details": "Under President Carter—and vastly expanded under Ronald Reagan’s Second Cold War—the CIA funnelled billions of dollars in cash, rifles, and later shoulder-fired Stinger anti-aircraft missiles through Karachi to Pakistani bases around Peshawar and Quetta, bleeding the Red Army across the frontier.",
+                "hinge": "Why was covertly arming the Mujahideen through Pakistan so effective at draining Soviet military morale and resources?"
+              },
+              {
+                "id": "spot-5",
+                "x": 38.3,
+                "y": 74.3,
+                "color": "#1d4ed8",
+                "label": "Carter Doctrine (Gulf)",
+                "badge": "Death of Détente",
+                "date": "23 Jan 1980",
+                "title": "Persian Gulf & Strait of Hormuz: The Carter Doctrine & Sanctions",
+                "details": "On 23 January 1980, President Jimmy Carter declared that the USA would use military force if necessary to defend the oil-rich Persian Gulf from outside control, backed by a Rapid Deployment Force. Carter simultaneously withdrew SALT 2 from the Senate, imposed grain and high-tech embargoes, and led a 60-nation boycott of the 1980 Moscow Olympics.",
+                "hinge": "Why did the Soviet invasion of Afghanistan immediately kill 1970s Détente and trigger the 1980 and 1984 Olympic boycotts?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -12313,32 +13111,67 @@ export default {
       "vocab_cloze_text": "After Soviet troops invaded Afghanistan in December 1979 to crush Islamic [Mujahideen] rebels, Jimmy Carter proclaimed the [Carter Doctrine] over the Persian Gulf and sparked tit-for-tat [Olympic Boycotts] in 1980 and 1984. From 1981, Ronald Reagan escalated the [Second Cold War] through a $1 trillion arms build-up, backing anti-communist guerrillas under the [Reagan Doctrine], and unveiling the space-based [Strategic Defence Initiative (SDI)] in March 1983.",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Last Lesson (KT 3.1): How many Anti-Ballistic Missile (ABM) sites was each superpower allowed under SALT 1 (May 1972)?",
+            "stage": 1,
+            "question": "Roughly how much had the Vietnam War cost the United States financially by the early 1970s?",
+            "answer": "Over $150 billion",
+            "explanation": "Vietnam drained over $150 billion from the US budget alongside 58,000 American deaths, fuelling inflation and social protest."
+          },
+          {
+            "stage": 2,
+            "question": "Where and when did Richard Nixon and Leonid Brezhnev sign the SALT 1 agreements?",
+            "answer": "Moscow, May 1972",
+            "explanation": "Nixon and Brezhnev signed SALT 1 in the Grand Kremlin Palace in Moscow on 26 May 1972."
+          },
+          {
+            "stage": 3,
+            "question": "Who succeeded Richard Nixon as US President in August 1974 after the Watergate scandal?",
+            "answer": "Gerald Ford",
+            "explanation": "Vice-President Gerald Ford assumed the presidency in August 1974 and continued Détente summits with Brezhnev."
+          },
+          {
+            "stage": 4,
+            "question": "How many nations signed the Helsinki Accords in Finland in August 1975?",
+            "answer": "35 nations",
+            "explanation": "Thirty-five states—the USA, Canada, the USSR, and 32 European countries—signed the Helsinki Final Act on 1 August 1975."
+          },
+          {
+            "stage": 5,
+            "question": "Which issue did President Jimmy Carter place at the heart of US foreign policy from January 1977?",
+            "answer": "Human rights",
+            "explanation": "Carter wrote to dissident Andrei Sakharov and linked Soviet trade to human rights, angering Brezhnev."
+          },
+          {
+            "stage": 1,
+            "question": "Which Communist power did President Richard Nixon visit in February 1972, alarming Moscow?",
+            "answer": "China",
+            "explanation": "Following the Sino-Soviet border split, Nixon’s February 1972 visit to Mao’s China made Brezhnev eager to avoid facing a US–Chinese alignment."
+          },
+          {
+            "stage": 2,
+            "question": "How many Anti-Ballistic Missile (ABM) defensive sites was each superpower permitted under the 1972 ABM Treaty?",
             "answer": "Two ABM sites each",
-            "explanation": "The 1972 ABM Treaty limited each side to defending its capital and one ICBM field so nuclear deterrence under MAD held firm."
+            "explanation": "Each side could defend only its national capital and one ICBM field, ensuring nuclear deterrence remained stable."
           },
           {
-            "question": "Last Lesson (KT 3.1): Which Basket of the August 1975 Helsinki Accords pledged freedom of speech, religion, and movement?",
-            "answer": "Basket 3 (Human Rights)",
-            "explanation": "Basket 3 inspired Helsinki Watch and Charter 77 dissidents to expose Communist arrests against Brezhnev’s own signed pledges."
+            "stage": 3,
+            "question": "Which joint US–Soviet space mission docked in Earth orbit on 17 July 1975?",
+            "answer": "Apollo–Soyuz",
+            "explanation": "An American Apollo capsule docked with a Soviet Soyuz spacecraft on 17 July 1975 in a televised symbol of Détente."
           },
           {
-            "question": "Last Lesson (KT 3.1): Which joint orbital mission on 17 July 1975 symbolised superpower cooperation in space?",
-            "answer": "The Apollo–Soyuz mission",
-            "explanation": "US commander Thomas Stafford and Soviet cosmonaut Alexei Leonov shook hands in orbit as their capsules docked live on television."
+            "stage": 4,
+            "question": "What did Basket 1 of the August 1975 Helsinki Accords establish regarding Europe?",
+            "answer": "European borders were inviolable, recognising East Germany",
+            "explanation": "Basket 1 formally accepted Europe’s post-1945 frontiers and recognised Communist East Germany, fulfilling a long-held Soviet diplomatic goal."
           },
           {
-            "question": "Earlier in KT2 (KT 2.3): What was the core rule of the 1968 Brezhnev Doctrine?",
-            "answer": "Warsaw Pact military intervention to preserve Communist rule",
-            "explanation": "Issued after the August 1968 invasion of Czechoslovakia, it claimed socialist states had a duty to intervene if any Communist regime was threatened."
-          },
-          {
-            "question": "Synoptic Prior Topic (KT 1.2): What did President Harry S. Truman pledge in the March 1947 Truman Doctrine?",
-            "answer": "US economic and military aid to contain communism",
-            "explanation": "Triggered by civil war in Greece and pressures on Turkey, the Truman Doctrine committed America to containing Soviet expansion."
+            "stage": 5,
+            "question": "In which two African countries did Soviet-backed Communist interventions anger US Senators in the late 1970s?",
+            "answer": "Angola and Ethiopia",
+            "explanation": "Soviet arms and Cuban troops in Angola and Ethiopia convinced US hawks that Moscow was exploiting Détente."
           }
         ]
       },
@@ -13686,32 +14519,67 @@ export default {
       "vocab_cloze_text": "Shaken by economic stagnation, the Afghan war, and the April 1986 Chernobyl disaster, Mikhail Gorbachev launched [New Thinking] to rescue Soviet socialism through economic [Perestroika] and political [Glasnost]. Although talks with Reagan stalled over SDI at the October 1986 [Reykjavik Summit], both leaders eliminated intermediate nuclear missiles under the December 1987 [INF Treaty] before Bush and Gorbachev declared the Cold War over at the [Malta Summit].",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "What high-technology space-based anti-missile shield did President Ronald Reagan announce in March 1983?",
-            "answer": "The Strategic Defence Initiative (SDI / \"Star Wars\")",
-            "explanation": "Reagan’s proposed laser satellite shield threatened Mutually Assured Destruction and exposed the USSR’s weakness in computer technology."
+            "stage": 1,
+            "question": "Which April 1978 coup first brought the pro-Soviet Communist PDPA party to power in Afghanistan?",
+            "answer": "The Saur Revolution",
+            "explanation": "In April 1978 the Saur Revolution installed Communist leader Nur Muhammad Taraki in Kabul, sparking fierce Islamic resistance."
           },
           {
-            "question": "Which December 1979 Soviet military action destroyed 1970s Détente and prompted the Carter Doctrine?",
-            "answer": "The Soviet invasion of Afghanistan",
-            "explanation": "Brezhnev sent Soviet troops into Afghanistan in December 1979 to prop up a pro-Moscow Communist regime, triggering US sanctions and the 1980 Olympic boycott."
+            "stage": 2,
+            "question": "Which vital oil-producing region did the January 1980 Carter Doctrine pledge US military force to defend?",
+            "answer": "The Persian Gulf",
+            "explanation": "On 23 January 1980 Carter warned that any outside bid to control the oil-rich Persian Gulf would be repelled by military force."
           },
           {
-            "question": "What were the three \"Baskets\" agreed by 35 nations in the August 1975 Helsinki Accords?",
-            "answer": "European borders (Basket 1), economic/scientific cooperation (Basket 2), and human rights (Basket 3)",
-            "explanation": "While Moscow celebrated formal recognition of post-war borders, dissidents used Basket 3 human rights commitments to challenge Communist censorship."
+            "stage": 3,
+            "question": "How many countries joined the US-led boycott of the 1980 Moscow Summer Olympics?",
+            "answer": "Over 60 nations",
+            "explanation": "After Moscow ignored Carter’s February 1980 withdrawal deadline, over 60 countries boycotted the Moscow Summer Games."
           },
           {
-            "question": "What was the 1968 Brezhnev Doctrine announced after Warsaw Pact forces crushed the Prague Spring?",
-            "answer": "Moscow’s claim to intervene militarily in any Eastern Bloc state where one-party Communist rule was threatened",
-            "explanation": "Following Alexander Dubček’s reforms in Czechoslovakia, Brezhnev declared no Warsaw Pact member would be allowed to leave or introduce multi-party politics."
+            "stage": 4,
+            "question": "When was Republican Ronald Reagan inaugurated as President of the United States?",
+            "answer": "January 1981",
+            "explanation": "Elected in November 1980, Ronald Reagan took office in January 1981 promising peace through overwhelming American strength."
           },
           {
-            "question": "Why did Khrushchev and East German leader Walter Ulbricht construct the Berlin Wall beginning on 13 August 1961?",
-            "answer": "To halt the mass \"brain drain\" of skilled East Germans escaping to prosperous West Berlin",
-            "explanation": "Over 2.7 million East Germans had defected westwards between 1949 and 1961, threatening East Germany’s economic survival."
+            "stage": 5,
+            "question": "What media nickname was given to Reagan’s 23 March 1983 Strategic Defence Initiative (SDI)?",
+            "answer": "\"Star Wars\"",
+            "explanation": "Journalists dubbed SDI \"Star Wars\" after George Lucas’s sci-fi films because it proposed orbiting laser satellites in space."
+          },
+          {
+            "stage": 1,
+            "question": "Who overthrew and murdered Nur Muhammad Taraki in September 1979, alarming Leonid Brezhnev?",
+            "answer": "Hafizullah Amin",
+            "explanation": "Prime Minister Hafizullah Amin seized power in September 1979, and Brezhnev suspected him of secretly contacting the USA."
+          },
+          {
+            "stage": 2,
+            "question": "Which major 1979 arms treaty did Jimmy Carter withdraw from the US Senate in January 1980?",
+            "answer": "SALT 2",
+            "explanation": "Carter shelved Senate ratification of the June 1979 Vienna SALT 2 treaty in direct retaliation for the invasion of Afghanistan."
+          },
+          {
+            "stage": 3,
+            "question": "Which alternative athletics event did the USA host in Philadelphia for boycotting athletes in 1980?",
+            "answer": "The Liberty Bell Classic",
+            "explanation": "Washington organised the rival Liberty Bell Classic in July 1980 for athletes from nations boycotting Moscow."
+          },
+          {
+            "stage": 4,
+            "question": "Roughly how much did Ronald Reagan commit to his massive US defence build-up in the early 1980s?",
+            "answer": "Over $1 trillion",
+            "explanation": "Reagan spent over $1 trillion across the early 1980s on B-1 bombers, Trident submarines, stealth aircraft, and Pershing II/Cruise missiles."
+          },
+          {
+            "stage": 5,
+            "question": "What was the core military purpose of the Strategic Defence Initiative (SDI)?",
+            "answer": "Destroy Soviet ICBMs in flight with space lasers",
+            "explanation": "SDI aimed to intercept Soviet ballistic missiles from orbit before they could strike the USA, rendering Soviet ICBMs obsolete."
           }
         ]
       },
@@ -14526,9 +15394,87 @@ export default {
           ],
           "text": "<span class=\"para-ref\">[3.1]</span> The opening of the **Berlin Wall** triggered a rapid domino collapse of Communist rule across **Eastern Europe** before the end of **1989**. In **Czechoslovakia**, peaceful mass strikes during November’s **Velvet Revolution** swept dissident playwright **Václav Havel** into the presidency; **Bulgaria**’s Communist veteran Todor Zhivkov was ousted, while in **Romania** a violent December uprising overthrew and executed hated dictator **Nicolae Ceaușescu**.\n\n<span class=\"para-ref\">[3.2]</span> In Germany, West German Chancellor **Helmut Kohl** secured **Gorbachev**’s consent—backed by Western financial loans—for formal **German reunification** on **3 October 1990**, with a united democratic Germany remaining inside **NATO**. Once newly elected governments in Poland, Hungary, and Czechoslovakia demanded the withdrawal of Soviet garrisons, the **Warsaw Pact** lost all purpose: its military structures dissolved in **March 1991** and the alliance formally ended on **1 July 1991**.",
           "content": "<span class=\"para-ref\">[3.1]</span> The opening of the **Berlin Wall** triggered a rapid domino collapse of Communist rule across **Eastern Europe** before the end of **1989**. In **Czechoslovakia**, peaceful mass strikes during November’s **Velvet Revolution** swept dissident playwright **Václav Havel** into the presidency; **Bulgaria**’s Communist veteran Todor Zhivkov was ousted, while in **Romania** a violent December uprising overthrew and executed hated dictator **Nicolae Ceaușescu**.\n\n<span class=\"para-ref\">[3.2]</span> In Germany, West German Chancellor **Helmut Kohl** secured **Gorbachev**’s consent—backed by Western financial loans—for formal **German reunification** on **3 October 1990**, with a united democratic Germany remaining inside **NATO**. Once newly elected governments in Poland, Hungary, and Czechoslovakia demanded the withdrawal of Soviet garrisons, the **Warsaw Pact** lost all purpose: its military structures dissolved in **March 1991** and the alliance formally ended on **1 July 1991**.",
-          "image": "/images/gcse_cold_war/kt3/cw_map_l12_collapse_eastern_bloc_ussr_1989_91.svg",
-          "image_alt": "Edexcel GCSE dated chronological atlas map showing the 1989 Eastern European revolutions in Poland, Hungary, East Germany, Czechoslovakia, Bulgaria, and Romania, German reunification (October 1990), Warsaw Pact dissolution (July 1991), Baltic independence, and the December 1991 breakup of the USSR into 15 states",
-          "caption": "Reference Map: Chronological atlas of the 1989–91 collapse, tracing Eastern Europe’s 1989 revolutions, German reunification (3 October 1990), dissolution of the Warsaw Pact (1 July 1991), and the December 1991 breakup of the USSR into 15 independent states."
+          "stage_hook_map": {
+            "id": "cw-l12-collapse-eastern-bloc-ussr-map",
+            "title": "Collapse of the Eastern Bloc (1989–90) & Dissolution of the USSR (1991)",
+            "subtitle": "1989 – 25 December 1991 · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/gcse_cold_war/kt3/cw_map_l12_collapse_eastern_bloc_ussr_1989_91.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 19.7,
+                "y": 44.4,
+                "color": "#b45309",
+                "label": "Poland: Solidarity",
+                "badge": "Sinatra Doctrine",
+                "date": "Jun 1989",
+                "title": "Poland: Solidarity Wins Semi-Free Elections (June 1989)",
+                "details": "Once Gorbachev renounced the Brezhnev Doctrine (\"Sinatra Doctrine\"), Polish strikes forced General Jaruzelski to legalise Lech Wałęsa’s trade union Solidarity. Winning 99 of 100 Senate seats in June 1989, Solidarity formed Eastern Europe’s first non-communist government since 1948 under Tadeusz Mazowiecki without Soviet tanks intervening.",
+                "hinge": "Why did Moscow’s silence after Solidarity’s June 1989 landslide embolden opposition movements across the entire Eastern Bloc?"
+              },
+              {
+                "id": "spot-2",
+                "x": 15.2,
+                "y": 53.1,
+                "color": "#d97706",
+                "label": "Hungary Opens Border",
+                "badge": "Iron Curtain Breached",
+                "date": "May–Sep 1989",
+                "title": "Austro-Hungarian Frontier: Hungary Cuts Open the Iron Curtain",
+                "details": "Between May and September 1989, reformist Communists in Hungary dismantled their barbed-wire frontier fence with neutral Austria. Tens of thousands of holidaying East Germans poured westwards through Hungary into Austria and West Germany, fatally bypassing the Berlin Wall.",
+                "hinge": "How did Hungary opening its border with neutral Austria turn an internal Hungarian reform into a fatal crisis for East Germany?"
+              },
+              {
+                "id": "spot-3",
+                "x": 13.3,
+                "y": 38.5,
+                "color": "#1d4ed8",
+                "label": "Berlin Wall & Reunification",
+                "badge": "9 Nov 89 · 3 Oct 90",
+                "date": "Nov 1989 – Oct 1990",
+                "title": "Fall of the Berlin Wall & German Reunification Inside NATO",
+                "details": "After Gorbachev told East German leaders Soviet garrisons would stay in their barracks during mass Leipzig protests, a fumbled travel announcement on 9 November 1989 prompted jubilant crowds to breach the Berlin Wall. Backed by Chancellor Helmut Kohl and Gorbachev’s consent, East and West Germany formally reunited inside NATO on 3 October 1990.",
+                "hinge": "Why was the fall of the Berlin Wall on 9 November 1989 both the symbolic end of the Iron Curtain and the death knell of the GDR?"
+              },
+              {
+                "id": "spot-4",
+                "x": 22.4,
+                "y": 58.2,
+                "color": "#92400e",
+                "label": "Velvet & Romanian Revolts",
+                "badge": "Warsaw Pact Ends",
+                "date": "Nov 1989 – Jul 1991",
+                "title": "Czechoslovakia, Bulgaria, Romania & End of the Warsaw Pact",
+                "details": "In November–December 1989, peaceful mass strikes in Czechoslovakia’s Velvet Revolution made dissident Václav Havel president, Bulgaria ousted Todor Zhivkov, and a bloody uprising in Romania overthrew and executed Nicolae Ceaușescu. With democratic states demanding Soviet troop withdrawal, the Warsaw Pact formally dissolved on 1 July 1991.",
+                "hinge": "Why did the Warsaw Pact lose its entire military and political purpose once non-communist governments took office in 1989–90?"
+              },
+              {
+                "id": "spot-5",
+                "x": 26.7,
+                "y": 32.6,
+                "color": "#ca8a04",
+                "label": "Baltic Pioneers",
+                "badge": "Republics Secede",
+                "date": "Mar 1990 – Aug 1991",
+                "title": "Lithuania, Latvia & Estonia: Baltic Independence Pioneers",
+                "details": "Inspired by Eastern Europe’s liberation and enabled by Gorbachev’s Glasnost openness, nationalist movements swept elections across the Baltic republics annexed by Stalin in 1940. Lithuania declared full independence in March 1990, soon joined by Latvia and Estonia, proving that reform was unravelling the Soviet Union from within.",
+                "hinge": "How did Gorbachev’s Glasnost reforms inadvertently unleash nationalist movements inside the USSR’s own fifteen republics?"
+              },
+              {
+                "id": "spot-6",
+                "x": 40.3,
+                "y": 36.2,
+                "align": "left",
+                "color": "#be123c",
+                "label": "Moscow Coup & USSR Ends",
+                "badge": "USSR Dissolved",
+                "date": "Aug – 25 Dec 1991",
+                "title": "August 1991 Coup, Belavezha Accords & Gorbachev’s Resignation",
+                "details": "When Communist hardliners (\"Gang of Eight\") staged a coup on 19 August 1991 to block Gorbachev’s New Union Treaty, Russian President Boris Yeltsin rallied Moscow crowds atop a tank to defeat them. After Ukraine voted 90% for independence, Russia, Ukraine, and Belarus formed the CIS on 8 December, and Gorbachev resigned on 25 December 1991—ending the USSR and the Cold War.",
+                "hinge": "Why did the failed hardline Communist coup of August 1991 accelerate the exact breakup of the USSR its plotters hoped to prevent?"
+              }
+            ]
+          }
         },
         {
           "act": 4,
@@ -14963,32 +15909,67 @@ export default {
       "vocab_cloze_text": "Protected by Gorbachev’s [Sinatra Doctrine], Poland’s [Solidarity] movement won free elections in June 1989 before the Berlin Wall fell on 9 November, inspiring Czechoslovakia’s peaceful [Velvet Revolution] and formal German Reunification in October 1990. Inside Moscow, when the hardline [Gang of Eight] staged an August 1991 coup, Russian President [Boris Yeltsin] rallied popular resistance and soon replaced the USSR with the [Commonwealth of Independent States].",
       "do_now": {
         "type": "questions",
-        "is_baseline": false,
+        "derived_from_prev": true,
         "items": [
           {
-            "question": "Distinguish between Gorbachev’s twin domestic reforms of Perestroika and Glasnost introduced after March 1985.",
-            "answer": "Perestroika was economic restructuring; Glasnost was political openness and relaxed censorship",
-            "explanation": "Gorbachev intended Perestroika and Glasnost to modernise and rescue Soviet socialism from stagnation rather than abolish communism."
+            "stage": 1,
+            "question": "In what month and year did Mikhail Gorbachev become General Secretary of the Soviet Communist Party?",
+            "answer": "March 1985",
+            "explanation": "Following the deaths of Brezhnev, Andropov, and Chernenko, 54-year-old Mikhail Gorbachev became General Secretary in March 1985."
           },
           {
-            "question": "Why was the December 1987 INF Treaty signed by Reagan and Gorbachev in Washington a historic first in nuclear arms control?",
-            "answer": "It was the first treaty to physically eliminate an entire class of nuclear missiles (500–5,500 km range) with on-site inspections",
-            "explanation": "Unlike SALT 1 (which merely capped launchers), the INF Treaty destroyed over 2,600 Soviet SS-20 and US Pershing II and Cruise missiles."
+            "stage": 2,
+            "question": "What was Mikhail Gorbachev’s ultimate ideological goal in launching \"New Thinking\" in 1985?",
+            "answer": "To modernise and save communism",
+            "explanation": "Gorbachev was a committed socialist who intended Perestroika and Glasnost to revitalise Soviet communism, not destroy it."
           },
           {
-            "question": "What major announcement did Gorbachev make at the United Nations in December 1988 regarding Eastern Europe and the Red Army?",
-            "answer": "Unilateral cuts of 500,000 troops and abandonment of the 1968 Brezhnev Doctrine (\"freedom of choice\")",
-            "explanation": "Renouncing military force assured Eastern Europeans that Soviet tanks would no longer crush political reform."
+            "stage": 3,
+            "question": "Where did Ronald Reagan and Mikhail Gorbachev meet face-to-face for the first time in November 1985?",
+            "answer": "The Geneva Summit",
+            "explanation": "At Geneva in November 1985, Reagan and Gorbachev built fireside personal rapport and declared that a nuclear war could never be won."
           },
           {
-            "question": "Why had Warsaw Pact troops invaded Czechoslovakia in August 1968 under Leonid Brezhnev?",
-            "answer": "To crush Alexander Dubček’s \"Prague Spring\" reforms (\"socialism with a human face\") and preserve one-party control",
-            "explanation": "Moscow feared ending censorship in Prague would trigger demands to leave the Warsaw Pact across Eastern Europe."
+            "stage": 4,
+            "question": "At which West Berlin landmark did Reagan challenge Gorbachev to \"tear down this wall!\" in June 1987?",
+            "answer": "The Brandenburg Gate",
+            "explanation": "Speaking before the Brandenburg Gate on 12 June 1987, Reagan challenged Gorbachev to prove Soviet openness by opening Berlin."
           },
           {
-            "question": "What military alliance had Khrushchev formed in May 1955 after West Germany joined NATO?",
-            "answer": "The Warsaw Pact",
-            "explanation": "The Warsaw Pact bound the USSR and seven Eastern European Communist states under unified Soviet military command."
+            "stage": 5,
+            "question": "During which May–June 1988 summit did Reagan walk across Red Square and drop his \"Evil Empire\" label?",
+            "answer": "The Moscow Summit",
+            "explanation": "At the Moscow Summit in May–June 1988, Reagan declared his 1983 \"Evil Empire\" description belonged to \"another time, another era\"."
+          },
+          {
+            "stage": 1,
+            "question": "Roughly what proportion of Soviet GDP was consumed by military spending by 1985?",
+            "answer": "Around 25% of GDP",
+            "explanation": "Trying to match US nuclear and computer spending drained roughly a quarter of Soviet GDP while civilian shops suffered acute shortages."
+          },
+          {
+            "stage": 2,
+            "question": "Which Russian term described Gorbachev’s policy of \"economic restructuring\" and limited cooperative enterprise?",
+            "answer": "Perestroika",
+            "explanation": "Perestroika (\"restructuring\") relaxed rigid central quotas, legalised small private cooperatives, and sought cuts in military waste."
+          },
+          {
+            "stage": 3,
+            "question": "Why did the October 1986 Reykjavik Summit collapse without a signed disarmament treaty?",
+            "answer": "Reagan refused to scrap SDI",
+            "explanation": "Although both leaders nearly agreed to abolish ballistic missiles, Reagan refused Gorbachev’s condition that SDI be confined to laboratories."
+          },
+          {
+            "stage": 4,
+            "question": "Which landmark treaty did Reagan and Gorbachev sign at the Washington Summit on 8 December 1987?",
+            "answer": "The INF Treaty",
+            "explanation": "The Intermediate-Range Nuclear Forces (INF) Treaty was signed at the White House on 8 December 1987."
+          },
+          {
+            "stage": 5,
+            "question": "How many Red Army troops did Gorbachev pledge to cut unilaterally at the United Nations in December 1988?",
+            "answer": "500,000 troops",
+            "explanation": "Addressing the UN on 7 December 1988, Gorbachev announced unilateral cuts of 500,000 Soviet troops and abandoned the Brezhnev Doctrine."
           }
         ]
       },
