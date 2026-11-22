@@ -552,8 +552,13 @@ export default {
   "lessons": [
     {
       "id": "lesson_1_1",
-      "banner": "/images/med_banner_kt1_1_supernatural_belief.jpg",
-      "banner_position": "center 36%",
+      "banner": {
+        "image": "/images/med_banner_kt1_1_supernatural_belief.jpg",
+        "alt": "Fourteenth-century illuminated manuscript miniature showing hooded Flagellants stripped to the waist whipping themselves behind a raised crucifix and liturgical banners to appease God’s wrath",
+        "position": "center 34%",
+        "caption": "Public Penitential Procession of the Flagellants (1349, Chronicles of Gilles Li Muisis): Convinced epidemic pestilence was divine punishment for human sin, medieval Christians turned to public penance, prayer, and saintly intercession."
+      },
+      "banner_position": "center 34%",
       "title": "KT1.1: Supernatural & Religious Explanations of Disease (c1250–c1500)",
       "specification_anchor": "Ideas about the cause of disease and illness: supernatural and religious explanations; the influence of the Church on medicine and science.",
       "enquiry_question": "Why did the medieval Catholic Church hold an unshakeable monopoly over beliefs about the causes of disease?",
@@ -933,9 +938,9 @@ export default {
           "title": "Spiritual Intercession, Relics, and Miracle Cures",
           "content": "<p><span class=\"para-ref\">[4.1]</span> Because disease was viewed as supernatural in origin, treatments were predominantly religious and spiritual. Suffering patients undertook an **arduous pilgrimage to Canterbury** to pray at the sacred tomb of Archbishop Thomas Becket, or travelled to Walsingham. Pilgrims sought miraculous healing through **kissing holy relics of saints**, believing that touching holy bones, dried blood, or fragments of the True Cross channelled miraculous divine grace.</p><p><span class=\"para-ref\">[4.2]</span> Wealthy medieval families secured spiritual protection by funding perpetual **chantry masses** and purchasing **indulgences**, paying parish priests to recite prayers for sick relatives to hasten healing or purge sins. Monasteries and cathedrals organised solemn processions carrying jeweled reliquaries through crowded streets during pestilence, demonstrating how medieval healing remained an act of collective religious devotion rather than clinical intervention.</p>",
           "text": "<p><span class=\"para-ref\">[4.1]</span> Because disease was viewed as supernatural in origin, treatments were predominantly religious and spiritual. Suffering patients undertook an **arduous pilgrimage to Canterbury** to pray at the sacred tomb of Archbishop Thomas Becket, or travelled to Walsingham. Pilgrims sought miraculous healing through **kissing holy relics of saints**, believing that touching holy bones, dried blood, or fragments of the True Cross channelled miraculous divine grace.</p><p><span class=\"para-ref\">[4.2]</span> Wealthy medieval families secured spiritual protection by funding perpetual **chantry masses** and purchasing **indulgences**, paying parish priests to recite prayers for sick relatives to hasten healing or purge sins. Monasteries and cathedrals organised solemn processions carrying jeweled reliquaries through crowded streets during pestilence, demonstrating how medieval healing remained an act of collective religious devotion rather than clinical intervention.</p>",
-          "image": "/images/becket_murder.jpg",
-          "caption": "The Martyrdom of St Thomas Becket (Carrow Psalter / Walters MS W.34, late 13th century): Knights strike Archbishop Thomas Becket before the altar at Canterbury Cathedral. Following his canonisation in 1173, Becket's shrine became England's foremost centre for sick pilgrims seeking miraculous healing.",
-          "image_alt": "Late thirteenth-century illuminated psalter miniature depicting the martyrdom of Archbishop Thomas Becket at Canterbury Cathedral in 1170",
+          "image": "/images/edexcel_medicine/kt12/med_l1_1_b3_shrine_miracle_curing_1420_wellcome.jpg",
+          "caption": "Seeking a Miracle Cure at an English Saint’s Shrine (c.1420 stained-glass panel, York Minster, Wellcome Collection M0005439): Convinced illness stemmed from sin or divine trial, medieval pilgrims travelled to shrines such as St Thomas Becket’s at Canterbury and St William’s at York to pray beside holy relics.",
+          "image_alt": "Early fifteenth-century English stained-glass panel (c.1420) depicting a bearded pilgrim kneeling and touching his afflicted face before the pinnacled Gothic stone feretory shrine of St William in York Minster",
           "isReversed": false,
           "sources": [
             {
@@ -2049,7 +2054,7 @@ export default {
         "timer_seconds": 90
       },
       "hero_image": "/images/med_banner_kt1_1_supernatural_belief.jpg",
-      "card_image": "/images/med_banner_kt1_1_supernatural_belief.jpg",
+      "card_image": "/images/medieval_church_interior.jpg",
       "card_position": "center 36%",
       "key_topic": "KT1: c1250–c1500: Medicine in Medieval England",
       "visual_story_sheet": {
@@ -2159,12 +2164,18 @@ export default {
             "Church backing for Galen’s ancient books, making criticism seem like heresy."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/med_banner_kt1_1_supernatural_belief.jpg"
     },
     {
       "id": "lesson_1_2",
-      "banner": "/images/medieval_physician_bedside.jpg",
-      "banner_position": "center 38%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg",
+        "alt": "Gold-and-vermilion illuminated Greek medical headpiece depicting Claudius Galen enthroned in red and green robes holding an open medical codex flanked by foliate scroll borders and Greek inscriptions",
+        "position": "center 46%",
+        "caption": "Claudius Galen Enthroned Holding His Medical Codex (Illuminated Greek headpiece, Venice, 1500, Wellcome Collection M0011642): Building upon Hippocrates’s Four Humours, Galen’s Theory of Opposites dominated European university medicine for over 1,400 years."
+      },
+      "banner_position": "center 46%",
       "title": "KT1.2: Rational Explanations: Hippocrates, Galen & The Four Humours (c1250–c1500)",
       "specification_anchor": "Rational explanations: the Theory of the Four Humours and the Theory of Opposites; the miasma theory; the continuing influence of Hippocrates and Galen.",
       "enquiry_question": "How did the Theory of the Four Humours provide a logical, complete explanation for every illness in medieval England?",
@@ -2420,9 +2431,9 @@ export default {
           "decimal": "[1.2.1]",
           "title": "Hippocrates and the Secular Shift in Medicine",
           "text": "<p><span class=\"para-ref\">[1.1]</span> In fifth-century BC Greece, Hippocrates revolutionised healing by pioneering the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, he championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically. This revolutionary approach represented a dramatic **rejection of gods** and supernatural superstition, establishing the enduring principle that physical disease was caused by natural bodily imbalances.</p><p><span class=\"para-ref\">[1.2]</span> Hippocrates also established medical professionalism through the **Hippocratic Oath ethics**, which bound physicians to preserve life, protect patient confidentiality, and do no deliberate harm. His extensive written treatises formed the foundation of Western rational medicine. When translated into Latin during the Middle Ages, his secular diagnostic principles became the core curriculum taught in newly founded European university medical faculties.</p>",
-          "image": "/images/hippocrates_portrait.jpg",
-          "image_alt": "Classical portrait engraving of a sculpted marble bust of Hippocrates of Cos, Father of Clinical Medicine",
-          "caption": "Hippocrates of Cos (c.460–c.370 BC): Classical portrait engraving after an ancient Greek marble bust. Hippocrates rejected supernatural explanations of illness, pioneering bedside clinical observation and the Theory of the Four Humours.",
+          "image": "/images/edexcel_medicine/kt12/med_l1_2_b0_hippocrates_portrait_wellcome.jpg",
+          "image_alt": "Seventeenth-century line engraving inscribed HIPPOCRATIS COI showing Hippocrates of Cos seated at a writing desk with quill, open medical treatise, surgical scissors, herbs, and lidded apothecary vessels",
+          "caption": "Hippocrates of Cos (c.460–c.370 BC, engraving by Pieter Philippe, 1665, Wellcome Collection L0046422): Rejecting supernatural curses, Hippocrates pioneered secular bedside observation, detailed symptom recording, and the ethical Hippocratic Oath.",
           "theme_heading": "Hippocrates and the Secular Shift in Medicine",
           "sources": [
             {
@@ -2501,9 +2512,9 @@ export default {
           "decimal": "[1.2.3]",
           "title": "Galen's Theory of Opposites and Animal Dissections",
           "text": "<p><span class=\"para-ref\">[3.1]</span> In second-century Rome, Claudius Galen expanded Hippocratic humoralism by developing Galen’s influential **Theory of Opposites**. While Hippocrates relied on passive rest, Galen introduced active treatment based on the principle that **contraries cure contraries**. For instance, a cold, moist fever was aggressively treated with hot, dry remedies like crushed pepper and wine, while hot inflammatory fevers were treated with cooling cucumber.</p><p><span class=\"para-ref\">[3.2]</span> Galen also produced extensive anatomical treatises, but because Roman religious law strictly prohibited human dissection, he relied on pigs, dogs, and apes. This led to serious **animal dissection errors**, including claiming the human jawbone comprised two bones and that blood passed through invisible heart septum pores. Canonised by the medieval Church, Galen’s anatomical mistakes remained unchallenged for fourteen centuries.</p>",
-          "image": "/images/galen_portrait.jpg",
-          "image_alt": "Renaissance copperplate portrait engraving of Roman physician Claudius Galen of Pergamon inscribed GALENVS",
-          "caption": "Claudius Galen of Pergamon (AD 129–c.216): Portrait engraving inscribed \"GALENVS\". Serving as physician to Roman gladiators and emperors, Galen developed the Theory of Opposites and anatomical writings that dominated European medicine for over 1,300 years.",
+          "image": "/images/edexcel_medicine/kt12/med_l1_2_b2_galen_portrait_wellcome.jpg",
+          "image_alt": "Classical portrait line engraving inscribed Galen showing the bearded Roman physician Claudius Galen of Pergamon in draped classical tunic and cloak",
+          "caption": "Claudius Galen of Pergamon (AD 129–c.216, Wellcome Collection L0012587): Physician to gladiators and Roman emperors, Galen expanded the Four Humours with his active Theory of Opposites and animal dissections endorsed by the medieval Church.",
           "theme_heading": "Galen's Theory of Opposites and Animal Dissections",
           "sources": [
             {
@@ -3659,8 +3670,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/medieval_physician_bedside.jpg",
-      "card_image": "/images/medieval_physician_bedside.jpg",
+      "hero_image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg",
+      "card_image": "/images/edexcel_medicine/kt12/med_l1_2_b0_hippocrates_portrait_wellcome.jpg",
       "card_position": "center 38%",
       "key_topic": "KT1: c1250–c1500: Medicine in Medieval England",
       "visual_story_sheet": {
@@ -3770,12 +3781,18 @@ export default {
             "Belief that disease spread through foul, poisonous air rising from rotting filth."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg"
     },
     {
       "id": "lesson_1_3",
-      "banner": "/images/med_banner_kt1_3_bloodletting.jpg",
-      "banner_position": "center 28%",
+      "banner": {
+        "image": "/images/med_banner_kt1_3_bloodletting.jpg",
+        "alt": "Hand-coloured medical manuscript illustration showing a patient with a red tourniquet ribbon tied around the upper arm as venous blood arcs into three graduated collecting bowls on a table",
+        "position": "center 38%",
+        "caption": "Humoral Phlebotomy in Practice (Wellcome MS 990, Wellcome Collection L0041074): A tourniquet constricts the upper arm while venous blood streams into three graduated bowls to drain supposed excess hot, wet blood."
+      },
+      "banner_position": "center 38%",
       "title": "KT1.3: Approaches to Prevention & Treatment: Rituals, Bleeding & Purging (c1250–c1500)",
       "specification_anchor": "Approaches to prevention and treatment: religious and supernatural methods (prayer, fasting, pilgrimages); rational treatments (bloodletting, purging, herbal remedies, regimen sanitatis).",
       "enquiry_question": "Why did standard medieval medical treatments frequently endanger the lives of the patients they were meant to cure?",
@@ -4072,9 +4089,9 @@ export default {
           "title": "Phlebotomy: Restoring Humoral Balance by Bloodletting",
           "content": "<p><span class=\"para-ref\">[2.1]</span> The most widespread rational physical treatment in medieval medicine was bloodletting, or phlebotomy. Humoral pathology taught that excess blood caused inflammation, fever, and violent disease. Surgeons performed **phlebotomy** (vein incision) using specialised **iron fleams**, or applied freshwater **leeches** to delicate skin, allowing these blood-sucking worms to extract corrupted fluid until the patient turned pale or faint.</p><p><span class=\"para-ref\">[2.2]</span> Another popular bloodletting method was dry or wet cupping, using heated **brass or pewter cupping vessels** to create a vacuum over scarified skin, drawing blood to the surface. Barber-surgeons collected the extracted blood into measured pewter bowls to inspect its colour, thickness, and smell. Bloodletting was administered routinely as preventative healthcare every spring, leaving millions of medieval patients dangerously weakened.</p>",
           "text": "<p><span class=\"para-ref\">[2.1]</span> The most widespread rational physical treatment in medieval medicine was bloodletting, or phlebotomy. Humoral pathology taught that excess blood caused inflammation, fever, and violent disease. Surgeons performed **phlebotomy** (vein incision) using specialised **iron fleams**, or applied freshwater **leeches** to delicate skin, allowing these blood-sucking worms to extract corrupted fluid until the patient turned pale or faint.</p><p><span class=\"para-ref\">[2.2]</span> Another popular bloodletting method was dry or wet cupping, using heated **brass or pewter cupping vessels** to create a vacuum over scarified skin, drawing blood to the surface. Barber-surgeons collected the extracted blood into measured pewter bowls to inspect its colour, thickness, and smell. Bloodletting was administered routinely as preventative healthcare every spring, leaving millions of medieval patients dangerously weakened.</p>",
-          "image": "/images/phlebotomy_manuscript.jpg",
-          "caption": "Medieval Medical Calendar Leaf for January (Fécamp Psalter, c.1180, Koninklijke Bibliotheek, The Hague, MS 76 E 15, f. 1v): Medieval calendars linked each month and zodiac sign (here Aquarius the water-bearer) to seasonal diet, warming by the hearth, and safe intervals for preventative phlebotomy.",
-          "image_alt": "Late twelfth-century English medical calendar illumination for January showing Aquarius pouring water and seasonal warming and bloodletting",
+          "image": "/images/edexcel_medicine/kt12/med_l1_3_b1_bloodletting_16c_wellcome.jpg",
+          "caption": "Supervised Humoral Bloodletting (16th-century woodcut, Wellcome Collection L0003183): While a university-trained physician directs from a distance in fur-trimmed robes, practical barber-surgeons open the patient’s vein over a collecting basin.",
+          "image_alt": "Sixteenth-century woodcut showing a fur-trimmed university physician pointing instructions on the right while two barber-surgeons bleed a seated patient’s arm into a catch-basin",
           "isReversed": false,
           "sources": [
             {
@@ -4257,9 +4274,9 @@ export default {
           "letter": "B",
           "type": "visual",
           "title": "Source B (Surgical Woodcut): The Phlebotomy \"Vein Man\" Chart, Fasciculo de medicina (1493/1494)",
-          "src": "/images/traditional_phlebotomy_man.jpg",
-          "image": "/images/traditional_phlebotomy_man.jpg",
-          "caption": "Woodcut Phlebotomy Chart (\"Vein Man\") from the Italian edition of Johannes de Ketham’s Fasciculo de medicina (Venice, 1494), mapping dozens of incision points across the human body—from the forehead vein for migraines to ankle veins for reproductive and liver complaints.",
+          "src": "/images/edexcel_medicine/kt12/med_l1_3_s1_ketham_vein_man_1494_met.jpg",
+          "image": "/images/edexcel_medicine/kt12/med_l1_3_s1_ketham_vein_man_1494_met.jpg",
+          "caption": "Woodcut Phlebotomy Chart (\"Vein Man\") from the Venetian edition of Johannes de Ketham’s Fasciculo di medicina (Venice, 1494, Metropolitan Museum of Art DP817217), mapping dozens of incision points across the human body—from forehead veins for migraines to arm and ankle veins for liver and cardiac complaints.",
           "desc": "Manuscript miniature showing a surgeon performing venesection on a patient's arm.",
           "question_badge": "Continuity in Treatment",
           "question_type": "Change & Continuity",
@@ -4272,7 +4289,7 @@ export default {
           "teacher_notes": {
             "source_context": "Because Galenic medicine taught that fevers arose from an overabundance of hot, wet blood, Vein Man diagrams guided barber-surgeons on precisely where to strike with a metal fleam or apply medicinal leeches."
           },
-          "image_alt": "Late fifteenth-century Venetian woodcut of the Vein Man from Johannes de Ketham’s Fasciculo de medicina, with pointer lines mapping specific veins across the head, arms, torso, and legs to marginal medical instructions",
+          "image_alt": "Venetian woodcut Phlebotomy Vein Man chart from Johannes de Ketham’s Fasciculo di medicina (Venice, 1494) with pointer lines mapping specific veins across the head, arms, torso, and legs to Italian bloodletting instructions",
           "image_url": "/images/traditional_phlebotomy_man.jpg",
           "source": "/images/traditional_phlebotomy_man.jpg"
         },
@@ -5264,7 +5281,7 @@ export default {
         "timer_seconds": 90
       },
       "hero_image": "/images/med_banner_kt1_3_bloodletting.jpg",
-      "card_image": "/images/med_banner_kt1_3_bloodletting.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_l1_3_preparation_of_theriac_wellcome.jpg",
       "card_position": "center 28%",
       "key_topic": "KT1: c1250–c1500: Medicine in Medieval England",
       "visual_story_sheet": {
@@ -5374,11 +5391,12 @@ export default {
             "Preventative health rules on diet, exercise, bathing, sleep, and clean air."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/med_banner_kt1_3_bloodletting.jpg"
     },
     {
       "id": "lesson_1_4",
-      "banner_position": "center 32%",
+      "banner_position": "center 62%",
       "title": "KT1.4: Medical Care Providers & Monastic Hospitals: ‘Care Not Cure’ (c1250–c1500)",
       "specification_anchor": "The roles of the physician, apothecary and barber surgeon; care in the home; the role of medieval hospitals.",
       "enquiry_question": "How did social hierarchy and the Catholic Church shape who provided medical care in medieval England?",
@@ -5636,9 +5654,6 @@ export default {
           "title": "University-Trained Physicians: Theory Over Practice",
           "content": "<p><span class=\"para-ref\">[1.1]</span> Medieval healthcare in England was strictly stratified by social wealth. At the top of the professional medical hierarchy stood elite **university-trained physicians**, educated at Oxford, Cambridge, Paris, or Bologna. These doctors spent up to ten years studying ancient **Latin medical texts and astrological star charts**, mastering Galenic humoral theory and astrological almanacs without ever touching a patient or receiving practical surgical instruction.</p><p><span class=\"para-ref\">[1.2]</span> Because few university physicians practised in England—fewer than one hundred by 1300—they charged exorbitant **high diagnostic fees**, catering exclusively to the royal court, wealthy bishops, and noble aristocrats. A physician evaluated uroscopy samples, consulted astrological charts, and wrote Latin prescriptions, but considered manual surgical labour beneath their professional dignity, delegating physical operations to practical barber-surgeons.</p>",
           "text": "<p><span class=\"para-ref\">[1.1]</span> Medieval healthcare in England was strictly stratified by social wealth. At the top of the professional medical hierarchy stood elite **university-trained physicians**, educated at Oxford, Cambridge, Paris, or Bologna. These doctors spent up to ten years studying ancient **Latin medical texts and astrological star charts**, mastering Galenic humoral theory and astrological almanacs without ever touching a patient or receiving practical surgical instruction.</p><p><span class=\"para-ref\">[1.2]</span> Because few university physicians practised in England—fewer than one hundred by 1300—they charged exorbitant **high diagnostic fees**, catering exclusively to the royal court, wealthy bishops, and noble aristocrats. A physician evaluated uroscopy samples, consulted astrological charts, and wrote Latin prescriptions, but considered manual surgical labour beneath their professional dignity, delegating physical operations to practical barber-surgeons.</p>",
-          "image": "/images/medieval_physician_bedside.jpg",
-          "caption": "University-trained physician conducting a formal bedside consultation with a wealthy patron.",
-          "image_alt": "Medieval physician taking a patient's pulse in a richly draped bedchamber",
           "isReversed": false,
           "sources": [
             {
@@ -5667,7 +5682,108 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> Medieval healthcare in England was strictly stratified by social wealth. At the top of the professional medical hierarchy stood elite **university-trained physicians**, educated at Oxford, Cambridge, Paris, or Bologna. These doctors spent up to ten years studying ancient **Latin medical texts and astrological star charts**, mastering Galenic humoral theory and astrological almanacs without ever touching a patient or receiving practical surgical instruction.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Because few university physicians practised in England—fewer than one hundred by 1300—they charged exorbitant **high diagnostic fees**, catering exclusively to the royal court, wealthy bishops, and noble aristocrats. A physician evaluated uroscopy samples, consulted astrological charts, and wrote Latin prescriptions, but considered manual surgical labour beneath their professional dignity, delegating physical operations to practical barber-surgeons.</p>"
           ],
-          "theme_heading": "University-Trained Physicians: Theory Over Practice"
+          "theme_heading": "University-Trained Physicians: Theory Over Practice",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Care Hierarchy",
+            "title": "The Medieval Medical Marketplace: Comparing England’s 4 Care Providers (c1250–c1500)",
+            "default_index": 0,
+            "caption": "Click each provider to compare training, cost, methods, and who could afford them in medieval England.",
+            "items": [
+              {
+                "tab_label": "1. Physician",
+                "title": "University-Trained Physician",
+                "dates": "7–10 Years Latin Study (Oxford, Cambridge, Paris)",
+                "badge": "Elite & Expensive",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Training",
+                    "value": "Hippocrates, Galen & Avicenna"
+                  },
+                  {
+                    "label": "Core Method",
+                    "value": "Uroscopy Chart & Astrology"
+                  },
+                  {
+                    "label": "Patients",
+                    "value": "Royalty, Nobility & Wealthy Clergy"
+                  }
+                ],
+                "takeaway": "Fewer than 100 university physicians practised across 14th-century England; they diagnosed humours from a distance and left hands-on cutting or mixing to lower trades."
+              },
+              {
+                "tab_label": "2. Apothecary",
+                "title": "Guild Apothecary & Spicer",
+                "dates": "7-Year Urban Guild Apprenticeship",
+                "badge": "Herbal & Compound Drugs",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Training",
+                    "value": "Practical Shop Apprenticeship"
+                  },
+                  {
+                    "label": "Core Stock",
+                    "value": "Simples, Purgatives & Theriac"
+                  },
+                  {
+                    "label": "Patients",
+                    "value": "Town Merchants & Craftspeople"
+                  }
+                ],
+                "takeaway": "Cheaper than physicians, apothecaries mixed herbal remedies from manuals like Materia Medica alongside exotic spices, amulets, and sometimes toxic compounds."
+              },
+              {
+                "tab_label": "3. Barber-Surgeon",
+                "title": "Craft Barber-Surgeon",
+                "dates": "Guild Apprenticeship (No University Degree)",
+                "badge": "Hands-On Minor Surgery",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Training",
+                    "value": "By Watching & Wound Charts"
+                  },
+                  {
+                    "label": "Core Tasks",
+                    "value": "Bloodletting, Teeth & Splints"
+                  },
+                  {
+                    "label": "Patients",
+                    "value": "Townspeople & Soldiers"
+                  }
+                ],
+                "takeaway": "Advertising with red-and-white striped poles, barber-surgeons performed phlebotomy, pulled teeth, lanced boils, and stitched surface wounds without anaesthetics."
+              },
+              {
+                "tab_label": "4. Hospital & Home",
+                "title": "Wise Women & Monastic Hospitals",
+                "dates": "Over 1,100 Monastic Hospitals by 1500",
+                "badge": "\"Care Not Cure\"",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Rural Majority",
+                    "value": "Mothers, Midwives & Wise Women"
+                  },
+                  {
+                    "label": "Hospital Rule",
+                    "value": "Warm Bed, Clean Linen & Mass"
+                  },
+                  {
+                    "label": "Excluded",
+                    "value": "Leper, Plague & Pregnant Cases"
+                  }
+                ],
+                "takeaway": "Over 90% of villagers relied on unpaid female household healers, while church-run hospitals prioritised spiritual prayer and hospitality rather than medical cures."
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -5882,9 +5998,9 @@ export default {
           "letter": "C",
           "type": "visual",
           "title": "Source C (Surgical Illumination): Medieval Surgeon Treating a Head Wound, Chirurgia of Roger Frugardi (c.1300)",
-          "src": "/images/medieval_barber_surgeon.jpg",
-          "image": "/images/medieval_barber_surgeon.jpg",
-          "caption": "Illuminated surgical miniature from an Anglo-Norman manuscript of Roger of Salerno’s (Roger Frugardi’s) Chirurgia (c.1300, British Library MS Sloane 1977), depicting a practical surgeon inspecting and dressing a deep cranial wound on a seated patient.",
+          "src": "/images/edexcel_medicine/kt12/med_l1_4_s2_roger_frugardi_chirurgia_wellcome.jpg",
+          "image": "/images/edexcel_medicine/kt12/med_l1_4_s2_roger_frugardi_chirurgia_wellcome.jpg",
+          "caption": "Illuminated surgical folio from an Anglo-Norman manuscript of Roger of Salerno’s (Roger Frugardi’s) Chirurgia (c.1300, British Library MS Sloane 1977, Wellcome Collection M0006984), depicting practical surgeons probing, trepanning, and dressing cranial fractures beneath biblical scenes.",
           "desc": "Historical depiction of barber-surgeons gathered in guild regalia practising practical manual treatment.",
           "question_badge": "Practical Craft Surgery",
           "question_type": "Change & Continuity",
@@ -5897,7 +6013,7 @@ export default {
           "teacher_notes": {
             "source_context": "Created around 1300 (BL MS Sloane 1977), this illumination illustrates practical wound care taught through craft apprenticeship. Unlike élite physicians who studied theoretical Latin texts, barber-surgeons carried out bloodletting, tooth extraction, lancing boils, and wound suturing."
           },
-          "image_alt": "Early fourteenth-century Anglo-Norman manuscript miniature from Roger Frugardi’s Chirurgia (BL MS Sloane 1977) showing a bearded medieval surgeon examining and dressing a seated patient’s bleeding scalp wound",
+          "image_alt": "Early fourteenth-century Anglo-Norman illuminated folio from Roger Frugardi’s Chirurgia (British Library MS Sloane 1977) showing six lower panels of medieval surgeons probing, trepanning, and dressing head and skull wounds beneath three biblical arches",
           "image_url": "/images/medieval_barber_surgeon.jpg",
           "source": "/images/medieval_barber_surgeon.jpg"
         },
@@ -6871,9 +6987,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt1_4_monastic_hospital.jpg",
-      "hero_image": "/images/med_banner_kt1_4_monastic_hospital.jpg",
-      "card_image": "/images/med_banner_kt1_4_monastic_hospital.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg",
+        "alt": "Fifteenth-century hospital ward fresco Care of the Sick by Domenico di Bartolo at Santa Maria della Scala showing robed physicians inspecting urine, brothers washing a wounded patient’s leg in a brass basin, and attendants carrying a stretcher",
+        "position": "center 62%",
+        "caption": "Hospital Ward Care in Late-Medieval Europe — Care of the Sick (Domenico di Bartolo fresco, 1440–1441, Ospedale di Santa Maria della Scala, Siena): Religious brothers wash patients and tend beds alongside visiting physicians."
+      },
+      "hero_image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg",
+      "card_image": "/images/upgraded/gcse-med-eee/med_l1_4_hotel_dieu_paris_nuns.jpg",
       "card_position": "center 32%",
       "key_topic": "KT1: c1250–c1500: Medicine in Medieval England",
       "visual_story_sheet": {
@@ -6983,14 +7104,16 @@ export default {
             "Church hospital rule offering warm beds, food, and prayer rather than surgery."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg"
     },
     {
       "id": "lesson_1_5",
       "banner": {
         "image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
-        "caption": "The Plague of Florence in 1348, as Described in Boccaccio's Decameron",
-        "position": "center 45%"
+        "alt": "Dramatic etching by Luigi Sabatelli depicting the 1348 Black Death in Florence as described in Boccaccio’s Decameron, with clergy raising a skull-marked banner amid heaps of plague dead and fleeing citizens",
+        "position": "center 45%",
+        "caption": "The Plague of Florence in 1348, as Described in Giovanni Boccaccio’s Decameron (Etching by Luigi Sabatelli, Wellcome Collection): Between 1348 and 1349, bubonic and pneumonic plague killed between one-third and one-half of England’s population."
       },
       "banner_position": "center 45%",
       "title": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
@@ -7248,9 +7371,9 @@ export default {
           "decimal": "[1.5.1]",
           "title": "The Pestilence Arrives: Maritime Trade and Melcombe Regis (1348)",
           "text": "<p><span class=\"para-ref\">[1.1]</span> In the summer of 1348, the Second Plague Pandemic struck England through international maritime commerce. A merchant cog from Gascony dropped anchor at **Melcombe Regis** in Dorset in June **1348**, carrying a lethal cargo across the English Channel. Within the ship's hold, cargo crates carried the microscopic **Yersinia pestis bacteria**, harboured within the blood of black rats and transmitted by parasitic tropical rat fleas.</p><p><span class=\"para-ref\">[1.2]</span> When dockers unloaded wool sacks and grain baskets onto wharves, infected **black rats and Oriental rat fleas** escaped into crowded port alleyways. Medieval timber dwellings, open rubbish heaps, and unpaved streets provided the ideal environment for the rodent population to multiply rapidly. Within weeks, the infection established an unstoppable foothold, spreading inland along river trade routes and reaching London by autumn 1348.</p>",
-          "image": "/images/medieval_trading_cog_ship.jpg",
-          "image_alt": "Early fifteenth-century manuscript miniature depicting high-sided wooden medieval trading cogs under sail on the open sea",
-          "caption": "Medieval Maritime Trade Cogs (c.1410): High-sided merchant cogs carrying wool, grain, and Gascon wine across the English Channel unwittingly transported plague-infected black rats (Rattus rattus) and fleas into Melcombe Regis in June 1348.",
+          "image": "/images/edexcel_medicine/maps/med_map_kt1_black_death_spread_britain_1347_50.svg",
+          "image_alt": "Two-panel historical GIS atlas map charting the maritime and overland spread of the Black Death (1347–1350) from Genoese galleys at Messina, Genoa, and Marseille via Bordeaux and Calais to Melcombe Regis in Dorset (June 1348), Bristol, London (East Smithfield mass pits), East Anglia, Wales, unpartitioned Ireland, York, and the Kingdom of Scotland",
+          "caption": "Reference Map: Arrival and spread of the Black Death from Mediterranean galley ports (1347) and Gascon trade cogs into Melcombe Regis (June 1348), Bristol, London, unpartitioned Ireland, Wales, York, and Scotland (1348–1350).",
           "theme_heading": "The Pestilence Arrives: Maritime Trade and Melcombe Regis (1348)",
           "sources": [
             {
@@ -7281,7 +7404,92 @@ export default {
           ],
           "act": 1,
           "theme": "The Pestilence Arrives: Maritime Trade and Melcombe Regis (1348)",
-          "content": "<p><span class=\"para-ref\">[1.1]</span> In the summer of 1348, the Second Plague Pandemic struck England through international maritime commerce. A merchant cog from Gascony dropped anchor at **Melcombe Regis** in Dorset in June **1348**, carrying a lethal cargo across the English Channel. Within the ship's hold, cargo crates carried the microscopic **Yersinia pestis bacteria**, harboured within the blood of black rats and transmitted by parasitic tropical rat fleas.</p><p><span class=\"para-ref\">[1.2]</span> When dockers unloaded wool sacks and grain baskets onto wharves, infected **black rats and Oriental rat fleas** escaped into crowded port alleyways. Medieval timber dwellings, open rubbish heaps, and unpaved streets provided the ideal environment for the rodent population to multiply rapidly. Within weeks, the infection established an unstoppable foothold, spreading inland along river trade routes and reaching London by autumn 1348.</p>"
+          "content": "<p><span class=\"para-ref\">[1.1]</span> In the summer of 1348, the Second Plague Pandemic struck England through international maritime commerce. A merchant cog from Gascony dropped anchor at **Melcombe Regis** in Dorset in June **1348**, carrying a lethal cargo across the English Channel. Within the ship's hold, cargo crates carried the microscopic **Yersinia pestis bacteria**, harboured within the blood of black rats and transmitted by parasitic tropical rat fleas.</p><p><span class=\"para-ref\">[1.2]</span> When dockers unloaded wool sacks and grain baskets onto wharves, infected **black rats and Oriental rat fleas** escaped into crowded port alleyways. Medieval timber dwellings, open rubbish heaps, and unpaved streets provided the ideal environment for the rodent population to multiply rapidly. Within weeks, the infection established an unstoppable foothold, spreading inland along river trade routes and reaching London by autumn 1348.</p>",
+          "stage_hook_map": {
+            "id": "med-kt1-black-death-spread-1347-50-map",
+            "title": "Arrival & Spread of the Black Death: Europe to Medieval Britain (1347–50)",
+            "subtitle": "Messina, Bordeaux, Melcombe Regis, Bristol, London & 1351 Statute · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/edexcel_medicine/maps/med_map_kt1_black_death_spread_britain_1347_50.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 40.8,
+                "y": 62.2,
+                "color": "#881337",
+                "label": "1. Messina & Genoa (1347)",
+                "badge": "Genoese Galleys from Caffa",
+                "date": "Oct–Nov 1347",
+                "title": "Messina, Genoa & Marseille: Mediterranean Maritime Arrival (Oct–Nov 1347)",
+                "details": "Fleeing the Mongol siege of Caffa on the Crimean Black Sea coast, twelve Genoese merchant galleys docked at Messina in Sicily in October 1347 with crews dying of bubonic and pneumonic plague. Expelled ships rapidly seeded Yersinia pestis into Genoa, Pisa, Venice, and Marseille by November 1347.",
+                "hinge": "Why did bustling Mediterranean galley ports accelerate the spread of Yersinia pestis far faster than overland travel?"
+              },
+              {
+                "id": "spot-2",
+                "x": 16.2,
+                "y": 44.6,
+                "align": "right",
+                "color": "#b45309",
+                "label": "2. Bordeaux & Calais Trade",
+                "badge": "Gascon Wine & Wool Route",
+                "date": "Spring 1348",
+                "title": "Bordeaux & Calais: English Crown Trade Hubs Carry Contagion North",
+                "details": "Spreading overland from Marseille along the Garonne trade corridor, the pestilence struck English-ruled Bordeaux in Gascony and Channel ports toward Calais by spring 1348. High-sided merchant cogs loaded with Gascon wine barrels, grain, and wool sacks unwittingly carried infected black rats (Rattus rattus) and fleas toward England.",
+                "hinge": "How did England’s close commercial and political ties with Gascony under King Edward III expose English ports directly to the pandemic?"
+              },
+              {
+                "id": "spot-3",
+                "x": 75.2,
+                "y": 79.9,
+                "align": "left",
+                "color": "#881337",
+                "label": "3. Melcombe Regis (Jun 1348)",
+                "badge": "First English Landfall",
+                "date": "June 1348",
+                "title": "Melcombe Regis (Weymouth, Dorset): First English Landfall of the Black Death",
+                "details": "In June 1348, a merchant cog sailing from Gascony dropped anchor at Melcombe Regis in Dorset. As dockers unloaded cargo onto timber wharves, Oriental rat fleas (Xenopsylla cheopis) carrying Yersinia pestis hopped from dying ship rats onto townspeople, igniting Britain’s deadliest recorded epidemic.",
+                "hinge": "Why did medieval port conditions—timber tenements, open middens, and grain stores—allow shipborne plague rats to multiply immediately?"
+              },
+              {
+                "id": "spot-4",
+                "x": 74.7,
+                "y": 73.2,
+                "align": "left",
+                "color": "#be123c",
+                "label": "4. Bristol & Severn Corridor",
+                "badge": "Riverine & Irish Sea Spread",
+                "date": "August 1348",
+                "title": "Bristol & The Severn Trade Corridor: Failed Quarantine at Gloucester",
+                "details": "Reaching England’s major western port of Bristol by August 1348, plague raced up the River Severn commercial artery and across the Irish Sea to Dublin and Drogheda. Although Gloucester’s town council frantically barred travellers from Bristol, quarantine failed completely because flea-carrying rats ignored human roadblocks.",
+                "hinge": "Why did medieval town quarantines fail to stop the Black Death even when councils tried to shut out travellers from infected ports?"
+              },
+              {
+                "id": "spot-5",
+                "x": 83.2,
+                "y": 72.4,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "5. London & Smithfield Pits",
+                "badge": "Edward III Clean-Up Order",
+                "date": "Nov 1348 – Spring 1349",
+                "title": "London: East Smithfield Mass Burial Pits & King Edward III’s Miasma Order",
+                "details": "Striking overcrowded London by November 1348, the epidemic overwhelmed parish churchyards, forcing authorities to dig vast mass burial trenches at East Smithfield where shrouded bodies were stacked five deep. Blaming foul miasma (\"corrupt air\"), King Edward III ordered London’s streets cleared of human waste and butcher offal in 1349.",
+                "hinge": "What does King Edward III’s 1349 street-cleaning order reveal about medieval beliefs regarding how epidemic disease spread?"
+              },
+              {
+                "id": "spot-6",
+                "x": 79.5,
+                "y": 53.3,
+                "align": "left",
+                "color": "#1e3a8a",
+                "label": "6. York, Scotland & Impact",
+                "badge": "33%–50% Mortality • 1351 Act",
+                "date": "1349–1351",
+                "title": "East Anglia, York & Scotland: Demographic Collapse & 1351 Statute of Labourers",
+                "details": "Throughout 1349–1350, plague swept across East Anglia, Wales, York (May 1349), and the Kingdom of Scotland, killing between one-third and one-half of England’s population (~1.5–2 million people). Severe survivor labour shortages drove peasant wages sharply upward, prompting Parliament’s 1351 Statute of Labourers to try to freeze wages at pre-plague levels.",
+                "hinge": "How did catastrophic Black Death mortality inadvertently weaken feudal serfdom and trigger conflict over the 1351 Statute of Labourers?"
+              }
+            ]
+          }
         },
         {
           "id": "block_2",
@@ -7322,8 +7530,9 @@ export default {
           "act": 2,
           "theme": "The Dual Pathology: Bubonic Swellings and Pneumonic Terror",
           "content": "<p><span class=\"para-ref\">[2.1]</span> The Black Death presented in two lethal clinical manifestations. In its bubonic form, flea bites injected plague bacteria directly into the human lymphatic system, producing agonising **bubonic groin swellings (buboes)**, blackened neck tumours, and armpit sores that oozed foul pus and blood. Sufferers experienced raging fevers, violent vomiting, dark subcutaneous blotches, and unbearable muscle spasms before falling into comatose states.</p><p><span class=\"para-ref\">[2.2]</span> Far more terrifying was the pneumonic form, which occurred when bacteria infected the lungs. Victims began **pneumonic bloody coughing**, aerosolising bacteria directly into shared room air and infecting entire households through breathing. The virulence was devastating, with **mortality in three days** following initial fever, killing nearly one hundred percent of pneumonic victims and leaving entire peasant families dead in their timber cottages.</p>",
-          "image": "/images/plague_victim_buboes.jpg",
-          "caption": "Plague Sufferers Displaying Painful Buboes (Toggenburg Bible, Switzerland, 1411): Illuminated miniature showing a man and woman bedridden with prominent inflammatory swellings (buboes) characteristic of bubonic Yersinia pestis infection."
+          "image": "/images/edexcel_medicine/kt12/med_l1_5_b1_toggenburg_bible_buboes_1411.jpg",
+          "caption": "Plague Sufferers Displaying Painful Swellings (Toggenburg Bible, Switzerland, 1411, Kupferstichkabinett Berlin MS 78 E 1, fol. 42v): Illuminated shortly after recurring plague waves swept Europe, capturing the terror of painful buboes erupting across victims’ bodies.",
+          "image_alt": "Illuminated miniature from the Swiss Toggenburg Bible (1411) showing a man and woman lying on chequered pillows covered in painful bubonic swellings while Moses raises his hands toward heaven"
         },
         {
           "id": "block_3",
@@ -7411,9 +7620,9 @@ export default {
           "decimal": "[1.5.5]",
           "title": "Demographic Collapse: Mass Graves and Feudal Transformation",
           "text": "<p><span class=\"para-ref\">[5.1]</span> By winter 1349, the immense volume of dead overwhelmed churchyards. Authorities purchased suburban fields, excavating deep **mass burial trenches** at East Smithfield outside London walls, where corpses were stacked five deep in rough timber coffins. Between 1348 and 1350, between **one-third and one-half of England’s population perished**, wiping out an estimated 1.5 to 2 million people across England and leaving entire villages completely abandoned.</p><p><span class=\"para-ref\">[5.2]</span> This demographic catastrophe permanently transformed medieval feudal society. The sudden annihilation of agricultural workers generated an acute **labour shortage and rising peasant wages**, empowering surviving peasants to demand higher wages and freely leave their lords' manors. When Parliament attempted to freeze wages through the 1351 Statute of Labourers, deep peasant resentment erupted, fatally undermining feudal servitude and culminating in the 1381 Peasants' Revolt.</p>",
-          "image": "/images/plague_burial.jpg",
-          "image_alt": "Late fifteenth-century panel painting by Josse Lieferinxe showing St Sebastian interceding in heaven above shrouded plague victims lowered into mass graves while a gravedigger collapses with a neck bubo",
-          "caption": "St Sebastian Interceding for the Plague-Stricken (Josse Lieferinxe, c.1497–1499, Walters Art Museum): Shrouded corpses are lowered into consecrated mass pits while an exhausted gravedigger collapses clutching a swollen neck bubo and a priest prays to St Sebastian overhead.",
+          "image": "/images/edexcel_medicine/kt12/med_l1_5_b4_tournai_plague_coffin_burial_1349.jpg",
+          "image_alt": "Fourteenth-century illuminated miniature by Pierart dou Tielt (1349) showing two hooded gravediggers lowering a wooden coffin on carrying poles into an open burial trench beside a shovel and grave slab",
+          "caption": "Burying the Black Death Victims of Tournai (Illuminated miniature by Pierart dou Tielt in Gilles Li Muisis’s Chronicles, 1349, Royal Library of Belgium MS 13076–77, f. 24v): Overwhelmed churchyards gave way to mass plague trenches, triggering severe rural labour shortages across England.",
           "theme_heading": "Demographic Collapse: Mass Graves and Feudal Transformation",
           "sources": [
             {
@@ -8500,7 +8709,7 @@ export default {
         "timer_seconds": 90
       },
       "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
-      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
+      "card_image": "/images/edexcel_medicine/kt12/med_l1_5_b4_tournai_plague_coffin_burial_1349.jpg",
       "card_position": "center 45%",
       "key_topic": "KT1: c1250–c1500: Medicine in Medieval England",
       "visual_story_sheet": {
@@ -8615,7 +8824,7 @@ export default {
     },
     {
       "id": "lesson_2_1",
-      "banner_position": "center 42%",
+      "banner_position": "center 44%",
       "title": "KT2.1: The New Spirit of Enquiry: Humanism, The Printing Press & The Royal Society (c1500–c1700)",
       "specification_anchor": "Ideas about the cause of disease and illness: the influence of the printing press and the work of the Royal Society on the communication of ideas.",
       "enquiry_question": "How did the invention of printing and the scientific method challenge 1,500 years of medical orthodoxy?",
@@ -8931,9 +9140,9 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> Around 1440 in Mainz, German inventor Johannes Gutenberg developed the revolutionary **Gutenberg printing press**, sparking an intellectual information revolution across Renaissance Europe. By casting reusable individual letters from durable **movable metal type**, Gutenberg mechanised book manufacturing, decisively breaking the centuries-old clerical monopoly on written manuscript knowledge previously guarded by Catholic monastic scriptoria throughout European Christendom.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> When William Caxton established England's first commercial press at Westminster in 1476, **rapid book mass-production** transformed medical scholarship. Textbooks could now be printed accurately in identical editions, eliminating transcription errors made by exhausted monk copyists. Scientific ideas, anatomical diagrams, and empirical treatises circulated swiftly across European borders, allowing researchers to study, debate, and verify medical breakthroughs simultaneously in print.</p>"
           ],
-          "image": "/images/printing_press.jpg",
-          "image_alt": "Wooden Gutenberg-style screw printing press with leather inking balls and flat platen",
-          "caption": "The Movable-Type Screw Printing Press (c.1440 onwards): Johannes Gutenberg’s mechanical press—operated with leather ink balls and a heavy wooden screw platen—broke the monastic monopoly over copying texts, allowing medical discoveries to circulate identically across Europe."
+          "image": "/images/edexcel_medicine/kt12/med_l2_1_b0_buchdruckerei_chodowiecki.jpg",
+          "image_alt": "Copperplate engraving Die Buchdruckerei by Daniel Chodowiecki depicting a compositor setting movable metal type at an angled case, a seated proofreader, and two pressmen inking a forme with leather ink-balls on a wooden screw printing press",
+          "caption": "Movable Type and the Wooden Screw Printing Press (Die Buchdruckerei by Daniel Chodowiecki): Following Johannes Gutenberg’s c.1440 invention in Mainz, mechanical presses reproduced identical medical texts and anatomical woodcuts across Europe without monastic copying errors."
         },
         {
           "theme": "Renaissance Humanism: Questioning Ancient Authority",
@@ -9007,9 +9216,107 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> In November 1660, a distinguished gathering of natural philosophers—including architect Christopher Wren, chemist Robert Boyle, and John Wilkins—founded a new scientific academy at Gresham College in London. This landmark assembly became the prestigious **Royal Society** in **1660**, chartered by King Charles II to promote natural knowledge through collaborative laboratory experimentation and rational debate rather than theological speculation. The society rapidly attracted Britain's leading scientific minds.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> In 1662, the institution received an official **Royal Charter from King Charles II**, granting royal patronage and intellectual freedom. The Society adopted the famous **'Nullius in Verba' motto** ('Take nobody’s word for it'), boldly declaring that scientific truth could never rely on ancient authority, but must be demonstrated through rigorous, repeatable physical experiments. This motto established empirical observation as the core principle of modern British medical science.</p>"
           ],
-          "image": "/images/royal_society_crest.png",
-          "image_alt": "Heraldic coat of arms of the Royal Society of London (chartered 1662) bearing the Latin motto Nullius in verba",
-          "caption": "Coat of Arms of the Royal Society of London (Chartered 1662 by King Charles II): Bearing the motto \"Nullius in verba\" (\"Take nobody’s word for it\"), the Society championed open experimental verification and published Philosophical Transactions from 1665."
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Factor Analysis",
+            "title": "Engines of the Medical Renaissance: Four Communication & Science Catalysts",
+            "default_index": 2,
+            "caption": "Click each catalyst to examine how communication, institutions, and technology weakened Church control over medical ideas after 1500.",
+            "items": [
+              {
+                "tab_label": "1. Printing (c1440)",
+                "title": "Gutenberg’s Movable-Type Printing Press",
+                "dates": "Mainz c.1440 → Westminster 1476",
+                "badge": "Communication Factor",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Breakthrough",
+                    "value": "Fast, Exact Mass Reproduction"
+                  },
+                  {
+                    "label": "Church Impact",
+                    "value": "Ended Monastic Scriptoria Monopoly"
+                  },
+                  {
+                    "label": "Medical Proof",
+                    "value": "Spread Vesalius (1543) & Harvey (1628)"
+                  }
+                ],
+                "takeaway": "Identical woodcuts and Latin/vernacular editions let anatomists across Europe compare dissections directly without scribal copying mistakes."
+              },
+              {
+                "tab_label": "2. Humanism",
+                "title": "Renaissance Humanism & Reformation",
+                "dates": "c.1500–c.1600",
+                "badge": "Attitudes & Enquiry",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Core Ethos",
+                    "value": "Question Dogma; Observe Nature"
+                  },
+                  {
+                    "label": "Artistic Skill",
+                    "value": "3D Realism & Dissection Drawings"
+                  },
+                  {
+                    "label": "1530s Shift",
+                    "value": "English Reformation Weakened Church"
+                  }
+                ],
+                "takeaway": "Checking original Greek texts and testing claims with their own eyes emboldened scholars to challenge 1,400 years of uncritical faith in Galen."
+              },
+              {
+                "tab_label": "3. Royal Society",
+                "title": "The Royal Society & Philosophical Transactions",
+                "dates": "Founded 1660 • Chartered 1662 • Journal 1665",
+                "badge": "Nullius in Verba",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Royal Patron",
+                    "value": "King Charles II (1662 Charter)"
+                  },
+                  {
+                    "label": "Motto",
+                    "value": "\"Take Nobody’s Word For It\""
+                  },
+                  {
+                    "label": "1665 Journal",
+                    "value": "Oldenburg’s Philosophical Transactions"
+                  }
+                ],
+                "takeaway": "Royal patronage gave experimental science prestige, while the world’s first scientific journal enabled European peer review—publishing Hooke and Leeuwenhoek."
+              },
+              {
+                "tab_label": "4. Microscopes",
+                "title": "Early Compound & Single-Lens Microscopes",
+                "dates": "1661 Malpighi • 1665 Hooke • 1683 Leeuwenhoek",
+                "badge": "Science & Technology",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.22)",
+                "metrics": [
+                  {
+                    "label": "1661 Proof",
+                    "value": "Malpighi Sees Lung Capillaries"
+                  },
+                  {
+                    "label": "1665 Book",
+                    "value": "Hooke’s Micrographia Plant Cells"
+                  },
+                  {
+                    "label": "1683 Sighting",
+                    "value": "Leeuwenhoek’s \"Animalcules\""
+                  }
+                ],
+                "takeaway": "Improved glass lenses revealed capillaries and microscopic bacteria (\"animalcules\"), though lenses remained too blurry to prove Germ Theory until 1861."
+              }
+            ]
+          }
         },
         {
           "theme": "Philosophical Transactions and Empirical Peer Review (1665)",
@@ -9523,9 +9830,9 @@ export default {
           "letter": "E",
           "type": "visual",
           "title": "Source E: Robert Hooke’s Microscopic Study of a Flea, Micrographia (1665)",
-          "src": "/images/hooke_micrographia_flea.jpg",
-          "image": "/images/hooke_micrographia_flea.jpg",
-          "caption": "Fold-out engraving of a common flea magnified several hundred times, displaying armoured scales, jointed legs, and hairs, drawn by Robert Hooke using his compound microscope.",
+          "src": "/images/edexcel_medicine/kt12/med_l2_1_s4_hooke_micrographia_flea_1665_wellcome.jpg",
+          "image": "/images/edexcel_medicine/kt12/med_l2_1_s4_hooke_micrographia_flea_1665_wellcome.jpg",
+          "caption": "Fold-out copperplate engraving of a common flea (Scheme XXXIV) from Robert Hooke’s Micrographia (published by the Royal Society, London, 1665, Wellcome Collection L0043504), revealing microscopic armoured scales, bristles, and jointed legs invisible to the naked eye.",
           "desc": "Detailed scientific fold-out engraving from Robert Hooke’s Micrographia illustrating the microscopic anatomy of a flea.",
           "question_badge": "Factor: Science & Technology",
           "question_type": "Turning Point & Limits",
@@ -9539,7 +9846,8 @@ export default {
             "source_context": "Engraving from Hooke’s Micrographia, 1665. The microscope allowed humans to view biological structures invisible to the naked eye."
           },
           "image_url": "/images/hooke_micrographia_flea.jpg",
-          "source": "/images/hooke_micrographia_flea.jpg"
+          "source": "/images/hooke_micrographia_flea.jpg",
+          "image_alt": "Large unfolded 1665 copperplate engraving (Scheme XXXIV) from Robert Hooke’s Micrographia showing a giant magnified flea with overlapping armoured plates, bristles, and segmented legs"
         }
       ],
       "quick_quiz": [
@@ -10115,9 +10423,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt2_1_printing_press.jpg",
+      "banner": {
+        "image": "/images/med_banner_kt2_1_printing_press.jpg",
+        "alt": "Engraved view inside an early modern Dutch printing workshop showing compositors setting movable metal type from angled cases on the left, a spectacled proofreader, and a pressman pulling the bar of a wooden screw press on the right",
+        "position": "center 44%",
+        "caption": "Inside an Early Modern Printing House (Wellcome Collection V0023786): Compositors set movable metal type while pressmen pull the wooden screw press, breaking the medieval Church’s monopoly over hand-copied manuscripts."
+      },
       "hero_image": "/images/med_banner_kt2_1_printing_press.jpg",
-      "card_image": "/images/med_banner_kt2_1_printing_press.jpg",
+      "card_image": "/images/renaissance_printing_house_stradanus.jpg",
       "card_position": "center 42%",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
       "visual_story_sheet": {
@@ -10227,11 +10540,17 @@ export default {
             "First scientific journal (1665), sharing new medical experiments across Europe."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/med_banner_kt2_1_printing_press.jpg"
     },
     {
       "id": "lesson_2_2",
-      "banner": "/images/med_banner_kt2_2_apothecary_hall.jpg",
+      "banner": {
+        "image": "/images/med_banner_kt2_2_apothecary_hall.jpg",
+        "alt": "Seventeenth-century oil painting of a red-capped apothecary grinding medicinal ingredients with a brass mortar and pestle beside labelled wooden drawers, four tall glass drug jars, and a blue-and-white ceramic Triacha jar",
+        "position": "center 42%",
+        "caption": "A Seventeenth-Century Apothecary’s Dispensary (Wellcome Collection): While traditional apothecaries still compounded classical Theriac alongside New World remedies like Peruvian cinchona bark, Dr Thomas Sydenham championed direct bedside observation."
+      },
       "banner_position": "center 42%",
       "title": "KT2.2: Thomas Sydenham & The Art of Bedside Observation (1676)",
       "specification_anchor": "Continuity and change in care and treatment: Thomas Sydenham and the observation of symptoms.",
@@ -10548,9 +10867,9 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> During the mid-seventeenth century, London pioneering physician **Dr Thomas Sydenham** revolutionised bedside clinical medical practice. Nicknamed the \"English Hippocrates\", Sydenham broke with orthodox university traditions. While academic physicians spent their careers studying classical Galenic texts and drawing astrological charts in libraries, Sydenham insisted that true medical knowledge could only be gained directly at the patient’s bedside. He argued that healing required hands-on experience rather than ancient library learning.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Sydenham pioneered **close clinical observation**, spending hours monitoring the patient’s physical pulse, skin tone, breathing, and fever patterns. He recorded **detailed symptom logging** across hundreds of clinical cases, meticulously tracking how different illnesses progressed over time. Sydenham taught that doctors should observe natural bodily healing processes without intervening unnecessarily with dangerous purges, fundamentally shifting English medical practice toward rational clinical empircism.</p>"
           ],
-          "image": "/images/thomas_sydenham_portrait.jpg",
-          "image_alt": "Oil portrait of physician Thomas Sydenham (1624–1689) painted by Mary Beale in 1688",
-          "caption": "Dr Thomas Sydenham, \"The English Hippocrates\" (Oil on canvas by Mary Beale, 1688, National Portrait Gallery / RCP): Rejecting abstract Galenic book-theory, Sydenham insisted doctors must observe symptoms directly at the patient’s bedside."
+          "image": "/images/edexcel_medicine/kt12/med_l2_2_b0_thomas_sydenham_mary_beale.jpg",
+          "image_alt": "Oil portrait on canvas of Dr Thomas Sydenham painted by Mary Beale in 1688 showing Sydenham with silver-grey shoulder-length hair, floral lace collar, and brown cloak",
+          "caption": "Dr Thomas Sydenham, \"The English Hippocrates\" (Oil on canvas by Mary Beale, 1688, National Portrait Gallery NPG 3901): Rejecting armchair reliance on ancient Latin treatises, Sydenham insisted doctors must visit the sickbed and record patients’ actual symptoms."
         },
         {
           "theme": "Disease Classification and Observationes Medicae (1676)",
@@ -11144,9 +11463,9 @@ export default {
           "letter": "E",
           "type": "visual",
           "title": "Source E: Jan Steen, The Quack (De Kwakzalver, c.1650–1660)",
-          "src": "/images/quack_physician_steen.jpg",
-          "image": "/images/quack_physician_steen.jpg",
-          "caption": "Oil painting The Quack (c.1650–1660, Rijksmuseum, Amsterdam) by Dutch artist Jan Steen. Standing beside a ribbon-sealed certificate at a village fairground, an itinerant charlatan dramatically holds up a bloodied pebble (\"stone of folly\") with surgical pincers, pretending to have cut madness out of the bandaged peasant strapped into the chair.",
+          "src": "/images/edexcel_medicine/kt12/med_l2_2_s4_jan_steen_quack_rijksmuseum.jpg",
+          "image": "/images/edexcel_medicine/kt12/med_l2_2_s4_jan_steen_quack_rijksmuseum.jpg",
+          "caption": "Jan Steen, The Quack (De Kwakzalver, c.1650–1660, Rijksmuseum Amsterdam, SK-A-387): Standing beside a bogus wax-sealed diploma on a fairground stage, a travelling charlatan holds up a palmed \"stone of madness\" allegedly cut from a gullible villager’s neck.",
           "desc": "Satirical genre painting by Jan Steen depicting a quack physician pretending to diagnose illness from a urine flask.",
           "question_badge": "Continuity in Everyday Care",
           "question_type": "Change & Continuity",
@@ -11159,7 +11478,7 @@ export default {
           "teacher_notes": {
             "source_context": "Jan Steen’s satirical painting (Rijksmuseum SK-A-387) depicts the classic early modern \"stone operation\" fraud, in which a travelling quack palmed a pebble and claimed to have excised it from a gullible patient’s neck while pickpockets worked the crowd."
           },
-          "image_alt": "Seventeenth-century Dutch oil painting The Quack by Jan Steen showing a theatrical charlatan beneath a village tree holding up a small pebble with pincers before gullible onlookers while an assistant treats a peasant’s neck",
+          "image_alt": "Oil painting The Quack (De Kwakzalver, c.1650–1660) by Jan Steen showing a top-hatted charlatan on a wooden village stage holding up a pebble with pincers beside a ribbon-sealed certificate while an assistant cuts a peasant’s neck",
           "image_url": "/images/quack_physician_steen.jpg",
           "source": "/images/quack_physician_steen.jpg"
         }
@@ -11722,7 +12041,7 @@ export default {
         "timer_seconds": 90
       },
       "hero_image": "/images/med_banner_kt2_2_apothecary_hall.jpg",
-      "card_image": "/images/med_banner_kt2_2_apothecary_hall.jpg",
+      "card_image": "/images/edexcel_medicine/kt12/med_l2_2_b0_thomas_sydenham_mary_beale.jpg",
       "card_position": "center 42%",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
       "visual_story_sheet": {
@@ -11833,16 +12152,18 @@ export default {
             "Watching and recording a patient’s real bedside symptoms rather than old books."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/med_banner_kt2_2_apothecary_hall.jpg"
     },
     {
       "id": "lesson_2_3",
       "banner": {
         "image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
-        "caption": "Andreas Vesalius Dissecting a Human Body beside an Open Anatomical Volume",
-        "position": "center 52%"
+        "alt": "Historical painting after Edouard Hamman showing anatomist Andreas Vesalius leaning intently over a human cadaver with surgical scalpel and bone-saw beside an open folio volume",
+        "position": "center 44%",
+        "caption": "Andreas Vesalius Performing Direct Human Dissection (After Edouard Hamman, Wellcome Collection): By descending from the professorial chair at Padua in 1537 to dissect human corpses himself, Vesalius exposed over 300 errors in Galenic anatomy."
       },
-      "banner_position": "center 52%",
+      "banner_position": "center 44%",
       "title": "KT2.3: Andreas Vesalius & The Anatomical Revolution (1543)",
       "specification_anchor": "Andreas Vesalius and his work on anatomy; the impact of De Humani Corporis Fabrica (1543).",
       "enquiry_question": "Why did Andreas Vesalius succeed in overturning 1,400 years of Galenic anatomical authority?",
@@ -12160,17 +12481,18 @@ export default {
           "act": 1,
           "theme": "Andreas Vesalius and Anatomical Dissection at Padua (1537)",
           "content": "<p><span class=\"para-ref\">[1.1]</span> Appointed Professor of Surgery and Anatomy at the University of Padua in 1537, Andreas Vesalius transformed medical education across Europe. Breaking radically with medieval custom, where professors sat high upon chairs reading Latin texts while lowly barber-surgeons butchered corpses below, Vesalius entered the **Padua dissection theatre** to conduct **direct personal dissection** with his own hands before packed student audiences.</p><p><span class=\"para-ref\">[1.2]</span> Vesalius insisted that medical students must verify every anatomical structure with their own eyes rather than trusting ancient manuscripts. Through meticulous human dissections, Vesalius began **challenging Galen's 300 errors**, realising that the ancient Roman authority had dissected animals like apes, dogs, and pigs because Roman law forbade dissecting human cadavers, leading to hundreds of false assumptions about human anatomy.</p>",
-          "image": "/images/vesalius_dissection_wide.jpg",
-          "caption": "Andreas Vesalius Dissecting the Muscles of the Human Forearm (Author portrait woodcut from De Humani Corporis Fabrica, Basel, 1543): Aged twenty-eight at the University of Padua, Vesalius stepped down from the professor’s high chair to dissect human cadavers with his own hands."
+          "image": "/images/edexcel_medicine/kt12/med_l2_3_b0_vesalius_fabrica_author_portrait_met.jpg",
+          "caption": "Andreas Vesalius Dissecting the Human Forearm (1543 woodcut author portrait from De Humani Corporis Fabrica, Metropolitan Museum of Art DP853465): Appointed Professor of Surgery and Anatomy at Padua aged twenty-two, Vesalius performed dissections with his own hands.",
+          "image_alt": "Woodcut author portrait inscribed ANDREAE VESALII from the 1543 De Humani Corporis Fabrica showing twenty-eight-year-old Andreas Vesalius dissecting the flexor tendons of a human forearm beside an inkpot and Latin anatomy note"
         },
         {
           "id": "block_2",
           "decimal": "[2.3.2]",
           "title": "De Humani Corporis Fabrica: A Printing Masterpiece (1543)",
           "text": "<p><span class=\"para-ref\">[2.1]</span> In 1543, at the young age of twenty-eight, Vesalius published his revolutionary anatomical masterpiece, **De Humani Corporis Fabrica** (On the Fabric of the Human Body). Printed in Basel by master printer **Johannes Oporinus in Basel**, the monumental folio volume combined rigorous Renaissance scientific observation with the cutting-edge reprographic technology of movable metal type and woodblock printing.</p><p><span class=\"para-ref\">[2.2]</span> The Fabrica featured over two hundred stunning anatomical illustrations produced by Renaissance master artists using **woodcut plates from Titian’s studio**. Skeletons and muscle figures were depicted posing dynamically against Italian landscapes, displaying layers of dissected muscle tissue with forensic accuracy. The book set a new global standard for anatomical publication, allowing accurate anatomical knowledge to be mass-produced and studied simultaneously across European universities.</p>",
-          "image": "/images/vesalius_muscle_men.jpg",
-          "image_alt": "Woodcut of the Third Plate of the Muscles (Tabula III, p. 178) from Andreas Vesalius’s De Humani Corporis Fabrica (Basel, 1543)",
-          "caption": "The \"Muscle Men\" of the Fabrica (Book II, Tabula III, 1543): Executed by artists associated with Titian’s Venetian workshop and printed by Johannes Oporinus in Basel, Vesalius’s lifelike flayed figures posed in an Italian landscape revealed superficial human musculature drawn directly from human cadavers.",
+          "image": "/images/edexcel_medicine/kt12/med_l2_3_b1_vesalius_third_muscle_man_wellcome.jpg",
+          "image_alt": "Full-page 1543 anatomical woodcut inscribed AND. VESALII DE CORPORIS TERTIA MUSCULORUM TABULA showing an écorché human figure displaying superficial and deep muscles standing in an Italianate landscape",
+          "caption": "The \"Muscle Men\" of De Humani Corporis Fabrica (Book II, Tabula III, Basel, 1543, Wellcome Collection L0001646): Combining Paduan human dissection with Renaissance perspective art and movable-type printing, Vesalius set a new benchmark for anatomical accuracy.",
           "theme_heading": "De Humani Corporis Fabrica: A Printing Masterpiece (1543)",
           "sources": [
             {
@@ -12239,17 +12561,106 @@ export default {
           "act": 3,
           "theme": "Correcting Ancient Dogma: Jawbone, Septum and Sternum",
           "content": "<p><span class=\"para-ref\">[3.1]</span> Through direct human dissection, Vesalius systematically corrected Galen's most famous anatomical dogmas. Vesalius proved conclusively that the **human lower jawbone** was a single fused bone, refuting Galen's ancient claim that it comprised two distinct halves like that of a dog. Furthermore, he demonstrated that the human breastbone (**sternum**) had **three segments**, rather than the seven segments Galen had mistakenly described from dissecting monkeys.</p><p><span class=\"para-ref\">[3.2]</span> Most significantly for physiology, Vesalius searched extensively for the **invisible pores in the heart’s septum** that Galen claimed allowed blood to pass directly between the left and right ventricles. Finding solid muscular tissue with zero invisible holes, Vesalius frankly admitted that blood could not cross the septum, sowing the critical doubts about cardiovascular flow that paved the way for William Harvey’s later circulatory breakthrough.</p>",
-          "slide_compare": {
-            "title": "Galen’s Animal Anatomy (2nd C. AD) ↔ Vesalius’s Human Dissection (1543)",
-            "before": {
-              "image": "/images/med_svg_galen_anatomy_errors.svg",
-              "label": "Galen: Ape, Pig & Dog Anatomy"
-            },
-            "after": {
-              "image": "/images/med_svg_vesalius_anatomy_corrected.svg",
-              "label": "Vesalius: Direct Human Dissection (1543)"
-            },
-            "caption": "Drag the slider to compare Galen’s animal-derived anatomical errors (two-bone jaw, seven-segment sternum, porous heart septum, five-lobed liver) with Andreas Vesalius’s direct human findings in De Humani Corporis Fabrica (1543)."
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Anatomical Audit",
+            "title": "Overturning 1,400 Years of Galen: Vesalius’s Key Anatomical Corrections (1543)",
+            "default_index": 0,
+            "caption": "Click each structure to see why Galen’s animal dissections misled medieval doctors—and what Vesalius proved inside human corpses.",
+            "items": [
+              {
+                "tab_label": "1. Lower Jaw",
+                "title": "The Human Lower Jawbone (Mandible)",
+                "dates": "Fabrica Book I (1543)",
+                "badge": "1 Bone, Not 2",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Galen’s Claim",
+                    "value": "Two Bones Joined at Chin"
+                  },
+                  {
+                    "label": "Why Galen Erred",
+                    "value": "Dissected Dogs & Barbary Apes"
+                  },
+                  {
+                    "label": "Vesalius’s Proof",
+                    "value": "Single Fused Human Mandible"
+                  }
+                ],
+                "takeaway": "Dissecting executed human criminals rather than animals proved immediately that the human jaw consists of one solid bone."
+              },
+              {
+                "tab_label": "2. Heart Septum",
+                "title": "The Muscular Septum of the Heart",
+                "dates": "Fabrica Book VI (1543 / 1555 ed.)",
+                "badge": "Zero Invisible Pores",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Galen’s Claim",
+                    "value": "Blood Seeped Through Invisible Pores"
+                  },
+                  {
+                    "label": "Vesalius’s Test",
+                    "value": "Thick, Dense Impermeable Muscle"
+                  },
+                  {
+                    "label": "Future Impact",
+                    "value": "Paved Way for Harvey (1628)"
+                  }
+                ],
+                "takeaway": "Proving blood could NOT pass through the solid cardiac septum undermined Galenic physiology and forced anatomists to rethink how blood moved."
+              },
+              {
+                "tab_label": "3. Breastbone",
+                "title": "The Human Breastbone (Sternum)",
+                "dates": "Fabrica Book I (1543)",
+                "badge": "3 Parts, Not 7",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Galen’s Claim",
+                    "value": "Seven Separate Bone Segments"
+                  },
+                  {
+                    "label": "Why Galen Erred",
+                    "value": "Copied Ape Chest Anatomy"
+                  },
+                  {
+                    "label": "Vesalius’s Proof",
+                    "value": "Only Three Human Segments"
+                  }
+                ],
+                "takeaway": "Revealed that medieval professors who read Galen aloud while ostensors pointed had ignored physical evidence right in front of them."
+              },
+              {
+                "tab_label": "4. Liver & Veins",
+                "title": "Human Liver Lobes & Vena Cava",
+                "dates": "Fabrica Books III & V (1543)",
+                "badge": "5-Lobe Myth Disproved",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Galen’s Claim",
+                    "value": "Five-Lobed Blood-Making Liver"
+                  },
+                  {
+                    "label": "Why Galen Erred",
+                    "value": "Dissected Pigs & Dogs"
+                  },
+                  {
+                    "label": "Clinical Limit",
+                    "value": "Anatomy Alone Cured Zero Diseases"
+                  }
+                ],
+                "takeaway": "Vesalius transformed surgical training (via Geminus’s 1545 London plates), yet accurate anatomy could not yet cure fevers or infections."
+              }
+            ]
           }
         },
         {
@@ -13378,7 +13789,7 @@ export default {
         "timer_seconds": 90
       },
       "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
-      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
+      "card_image": "/images/edexcel_medicine/kt12/med_l2_3_b1_vesalius_third_muscle_man_wellcome.jpg",
       "card_position": "center 52%",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
       "visual_story_sheet": {
@@ -13494,7 +13905,7 @@ export default {
     },
     {
       "id": "lesson_2_4",
-      "banner_position": "center 26%",
+      "banner_position": "center 42%",
       "title": "KT2.4: William Harvey & The Circulation of the Blood (1628)",
       "specification_anchor": "William Harvey and his work on the circulation of the blood; the impact of De Motu Cordis (1628).",
       "enquiry_question": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?",
@@ -13847,8 +14258,9 @@ export default {
             "<p><span class=\"para-ref\">[2.1]</span> To prove blood circulated continuously, Harvey applied revolutionary quantitative calculations, providing **mathematical proof of blood circulation**. Measuring cardiac ventricles, he calculated that each beat expelled two ounces of blood. With seventy beats per minute, the heart pumped over five hundred pints of blood hourly—three times an adult's body weight—proving it was physically impossible for food to manufacture such massive quantities continually.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> Harvey concluded that the **heart acts as a mechanical pump** that must continuously circulate the exact same blood throughout the body in an endless closed loop. Through this rigorous mathematical proof, the centuries-old **Galenic liver theory** was permanently refuted. Harvey proved that the liver did not continuously manufacture fresh blood consumed as bodily fuel, overturning one of the most foundational dogmas of ancient Greek medicine.</p>"
           ],
-          "image": "/images/william_harvey_npg.jpg",
-          "caption": "Dr William Harvey (Oil portrait, c.1627, National Portrait Gallery, London): Calculating the volume of blood expelled with every heartbeat, Harvey proved mathematically that the liver could never manufacture blood fast enough to sustain Galen’s open-ended consumption model."
+          "image": "/images/edexcel_medicine/kt12/med_l2_4_b1_william_harvey_rolls_park_wellcome.jpg",
+          "caption": "Dr William Harvey (c.1627, The Rolls Park Portrait, Wellcome Collection M0015998): Physician Extraordinary to King James I and Physician in Ordinary to King Charles I, Harvey combined mechanical pump models with quantitative blood-volume calculations.",
+          "image_alt": "Contemporary oval portrait inscribed Doctor William Harvey showing the bearded English royal physician in white ruff collar and dark buttoned doublet (c.1627, Rolls Park Portrait, Wellcome Collection M0015998)"
         },
         {
           "theme": "De Motu Cordis (1628) and the Tourniquet Experiment",
@@ -13886,19 +14298,9 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> In 1628, Harvey published his revolutionary findings in Frankfurt in his masterpiece ***De Motu Cordis*** (*On the Motion of the Heart and Blood*). To convince sceptical physicians, Harvey devised an ingenious public experiment on living human arms: the **forearm tight-ligature test**. By tying a tight cord around a volunteer’s upper arm, he cut off arterial flow, leaving the hand cold and pulse-less.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> Loosening the band slightly allowed arterial blood to rush into the arm while blocking venous return, swelling the veins. Harvey then conducted his famous **venous valve demonstration**, pressing a finger along a surface vein to push blood backward. The blood refused to flow past venous valves, visibly proving to spectators that blood flowed exclusively toward the central heart in a unified circulatory system.</p>"
           ],
-          "image_alt": "Seventeenth-century oil portrait of Dr William Harvey (1578–1657), discoverer of the circulation of the blood",
-          "slide_compare": {
-            "title": "Galen’s Open Liver Fuel Model ↔ Harvey’s Closed Mechanical Pump (1628)",
-            "before": {
-              "image": "/images/med_svg_galen_open_bloodflow.svg",
-              "label": "Galen: Open Fuel Consumption by Organs"
-            },
-            "after": {
-              "image": "/images/med_svg_harvey_closed_circulation.svg",
-              "label": "Harvey: Closed-Loop Pump (De Motu Cordis, 1628)"
-            },
-            "caption": "Drag the divider to compare Galen’s belief that the liver constantly manufactured new blood to be burned up as fuel with William Harvey’s 1628 proof that the heart pumps a fixed volume around a continuous one-way circuit."
-          }
+          "image_alt": "Interior photograph/engraving of the concentric six-tiered wooden anatomical theatre built in 1594 at the University of Padua looking down onto the central oval dissecting table",
+          "image": "/images/edexcel_medicine/kt12/med_l2_4_b2_padua_anatomical_theatre_wellcome.jpg",
+          "caption": "The 1594 Anatomical Theatre at the University of Padua (Wellcome Collection M0015500): Built for Harvey’s teacher Girolamo Fabricius, whose discovery of venous valves (\"little doors\") inspired Harvey’s famous 1628 De Motu Cordis forearm tourniquet experiment proving veins carry blood solely toward the heart."
         },
         {
           "theme": "Professional Scepticism and the Limits of Immediate Impact",
@@ -14966,7 +15368,7 @@ export default {
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Physiology & Circulation of the Blood",
       "inquiry_question": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?",
-      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
+      "card_image": "/images/harvey_demonstrating_heart.jpg",
       "card_position": "center 26%",
       "key_individual": {
         "id": "harvey",
@@ -15031,8 +15433,9 @@ export default {
       },
       "banner": {
         "image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
-        "caption": "The Entrance of the Royall Colledge of Phisitians, Warwick Lane, London",
-        "position": "center 26%"
+        "alt": "Coloured seventeenth-century architectural engraving titled The Entrance of the Royall Colledge of Phisitians showing the classical arched gateway and octagonal domed lecture theatre at Warwick Lane, London",
+        "position": "center 42%",
+        "caption": "The Entrance of the Royal College of Physicians, Warwick Lane, London (Wellcome Collection): As Lumleian Lecturer to the College from 1615, Dr William Harvey demonstrated that the heart acts as a mechanical pump driving blood in a continuous circle."
       },
       "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
@@ -15148,7 +15551,7 @@ export default {
     },
     {
       "id": "lesson_2_5",
-      "banner_position": "center 48%",
+      "banner_position": "center 58%",
       "title": "KT2.5: Continuity in Treatment & The Great Plague of London (1665)",
       "specification_anchor": "Dealing with the Great Plague in London, 1665: approaches to treatment and attempts to prevent its spread.",
       "enquiry_question": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?",
@@ -15464,8 +15867,90 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> In the spring of 1665, catastrophic bubonic plague returned to England with terrifying ferocity during the **Great Plague of London**. Originating in the impoverished suburban parish of **St Giles parish outbreak** outside London walls, the epidemic spread rapidly through overcrowded timber slums where raw sewage and rubbish heaps fostered thousands of black rats carrying plague-infected fleas. Summer heat accelerated the bacterial infection into an uncontrollable urban wildfire.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> As weekly mortalities escalated, wealthy elites abandoned the capital. The **flight of King Charles II and his court** saw the royal family, parliament, wealthy merchants, and senior clergymen evacuate London for rural estates in Oxford and Salisbury. Over thirty qualified physicians and parish priests fled, abandoning over four hundred thousand poor Londoners to face the epidemic with minimal medical assistance or civic support.</p>"
           ],
-          "image": "/images/plague_in_london_1665_wellcome.jpg",
-          "caption": "Engraving after George Cruikshank showing a 1665 London bellman and parish watchman outside a padlocked plague house marked with a cross and \"Lord Have Mercy\"."
+          "image": "/images/edexcel_medicine/maps/med_map_kt2_great_plague_london_1665.svg",
+          "caption": "Reference Map: The Great Plague of London (1665), contrasting the Walled City of London against impoverished suburban Out-Parishes (St Giles, Whitechapel, Stepney), suburban Pest Houses, mass plague pits, and the Royal Court’s flight along the Thames.",
+          "image_alt": "Historical GIS atlas map of the 1665 Great Plague of London contrasting the Walled City of London (97 parishes and Roman-Medieval wall) against overcrowded suburban Out-Parishes (St Giles-in-the-Fields, Clerkenwell, Whitechapel, Stepney, Southwark), Tothill Fields and Finsbury Pest Houses, Aldgate and Holywell Mount Mass Plague Pits, and King Charles II’s court flight along the River Thames",
+          "stage_hook_map": {
+            "id": "med-kt2-great-plague-london-1665-map",
+            "title": "The Great Plague of London (1665): Out-Parishes, Walled City & Quarantine",
+            "subtitle": "St Giles Epicentre, 1665 Orders, Stepney, Pest Houses, Plague Pits & Royal Flight · Tap numbered pins or enlarge",
+            "image": "/images/edexcel_medicine/maps/med_map_kt2_great_plague_london_1665.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 36.6,
+                "y": 45.2,
+                "color": "#be123c",
+                "label": "1. St Giles Epicentre (1665)",
+                "badge": "Out-Parish Slum Origin",
+                "date": "Spring 1665",
+                "title": "St Giles-in-the-Fields: Impoverished Out-Parish Epicentre Outside the Walls",
+                "details": "The 1665 Great Plague began in spring 1665 in the poor, densely packed suburban parish of St Giles-in-the-Fields northwest of the City walls. Unpaved alleys, overflowing cesspits, and timber lodging houses created ideal breeding grounds for black rats and plague-infected fleas as summer temperatures rose.",
+                "hinge": "Why did the 1665 epidemic strike impoverished suburban Out-Parishes like St Giles far harder than wealthy streets inside the City walls?"
+              },
+              {
+                "id": "spot-2",
+                "x": 58.9,
+                "y": 44.6,
+                "color": "#1e3a8a",
+                "label": "2. Walled City & 1665 Orders",
+                "badge": "Quarantine & Red Crosses",
+                "date": "May–Nov 1665",
+                "title": "Guildhall & Walled City of London: Lord Mayor’s 1665 Plague Orders",
+                "details": "Inside the Walled Square Mile, Lord Mayor Sir John Lawrence enforced royal Plague Orders far stricter than in 1348: paid Women Searchers inspected corpses, infected houses were padlocked for 40 days under armed watchmen with a foot-high red cross (\"Lord Have Mercy Upon Us\"), coal fires burned against miasma, and ~40,000 dogs and ~200,000 cats were culled.",
+                "hinge": "Why did London’s well-organised 1665 animal cull and 40-day house lock-ins inadvertently worsen mortality inside quarantined homes?"
+              },
+              {
+                "id": "spot-3",
+                "x": 83,
+                "y": 42.2,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "3. Whitechapel & Stepney",
+                "badge": ">75% Out-Parish Deaths",
+                "date": "Summer–Autumn 1665",
+                "title": "Whitechapel, Spitalfields & Stepney: Catastrophic Mortality Beyond the Walls",
+                "details": "Sweeping eastward around the City walls into unregulated dockside and artisan Out-Parishes—Whitechapel, Spitalfields, Shoreditch, and Stepney—weekly deaths topped 7,165 in September 1665. Over three-quarters of all London plague fatalities occurred in the overcrowded Liberties and Out-Parishes outside the 97 walled parishes.",
+                "hinge": "What did the contrast between the Walled City and eastern Out-Parishes like Stepney reveal about housing density and poverty in 1665?"
+              },
+              {
+                "id": "spot-4",
+                "x": 33,
+                "y": 73.5,
+                "color": "#059669",
+                "label": "4. Tothill Fields Pest House",
+                "badge": "1 of Only 5 Isolation Wards",
+                "date": "1665",
+                "title": "Tothill Fields Pest House (Westminster): 1 of Only 5 Suburban Isolation Wards",
+                "details": "Civic parishes maintained only five dedicated wooden \"pest houses\" in open suburban fields—such as Tothill Fields in Westminster and Bunhill/Finsbury Fields in the north—to isolate plague sufferers away from crowded tenements. Although safer than locking whole families indoors, they held only a few hundred beds across a city of ~450,000.",
+                "hinge": "How did 1665 parish pest houses like Tothill Fields represent a genuine step forward in civic public health despite their tiny bed capacity?"
+              },
+              {
+                "id": "spot-5",
+                "x": 69.8,
+                "y": 46.9,
+                "color": "#881337",
+                "label": "5. Aldgate & Moorfields Pits",
+                "badge": "68,596 Bills / ~100k Dead",
+                "date": "Aug–Nov 1665",
+                "title": "Aldgate & Holywell Mount Mass Plague Pits: Dead-Carts & Bills of Mortality",
+                "details": "With parish churchyards overflowing, night dead-carts (\"Bring out your dead!\") tipped thousands of shrouded corpses into giant mass trenches such as the Great Pit at St Botolph Aldgate and Holywell Mount near Moorfields. Weekly Bills of Mortality recorded 68,596 plague deaths, though historians estimate actual London deaths reached ~100,000 (nearly 1 in 4 citizens).",
+                "hinge": "Why are the 1665 weekly parish Bills of Mortality valuable historical evidence, yet likely an underestimate of the true death toll?"
+              },
+              {
+                "id": "spot-6",
+                "x": 38.1,
+                "y": 60.8,
+                "color": "#581c87",
+                "label": "6. Royal Flight Along Thames",
+                "badge": "Charles II → Oxford",
+                "date": "July 1665",
+                "title": "Whitehall Palace: Flight of King Charles II, Parliament & Wealthy Physicians",
+                "details": "In July 1665, King Charles II, the royal court, and Privy Council fled Whitehall by barge and coach up the Thames corridor to Hampton Court, Salisbury, and finally Oxford (where Parliament reconvened). Wealthy merchants, clergy, and Royal College physicians also fled, leaving poor Londoners reliant on apothecaries and civic magistrates.",
+                "hinge": "What did the flight of King Charles II and elite physicians from London in July 1665 show about the limits of Renaissance medical cures?"
+              }
+            ]
+          }
         },
         {
           "theme": "Supernatural Fears and Humoral Continuity (1665)",
@@ -15579,8 +16064,102 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> Because authorities believed the epidemic was spread by atmospheric miasma and animal fur, they enacted well-intentioned but disastrous preventative policies. Convinced household pets carried infection, the Lord Mayor ordered the **mass culling of dogs and cats**, leading to the slaughter of an estimated two hundred thousand animals, which eliminated the natural predators of black rats and accelerated the flea population. This tragic mistake allowed plague-carrying rats to multiply unhindered across London.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> To combat corrupt miasma, town authorities maintained continuous **street barrel fires**, burning coal, pitch, and sulphur day and night at road intersections to purify the heavy summer atmosphere. Citizens also practised **tobacco smoke warding**, compelling children and adults to smoke clay pipes continuously in schools and streets, believing pungent tobacco fumes acted as a powerful protective disinfectant against airborne contagion.</p>"
           ],
-          "image": "/images/london_bill_of_mortality_1665.jpg",
-          "caption": "Title page of London’s Dreadful Visitation (1665), compiling the weekly parish Bills of Mortality recorded by the Company of Parish Clerks during the Great Plague."
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Case-Study Comparison",
+            "title": "Dealing with Plague: 1348 Black Death ↔ 1665 Continuity ↔ 1665 Organised Civic Action",
+            "default_index": 2,
+            "caption": "Slide or click across the three stages to evaluate Edexcel Paper 1 change and continuity between the 1348 Black Death and the 1665 Great Plague of London.",
+            "stops": [
+              {
+                "short_label": "1. 1348 Black Death",
+                "label": "1348–49 Black Death: Ad-Hoc Medieval Response",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Attributed to God’s wrath, planetary alignment, and corrupt miasma; parish burial systems and sporadic street-cleaning orders were rapidly overwhelmed.",
+                "traits": [
+                  {
+                    "category": "Perceived Cause",
+                    "glyph": "church",
+                    "value": "Sin, Planets & Corrupt Miasma"
+                  },
+                  {
+                    "category": "Treatments",
+                    "glyph": "language",
+                    "value": "Flagellants, Bleeding & Live Hens"
+                  },
+                  {
+                    "category": "Royal Action",
+                    "glyph": "leader",
+                    "value": "Edward III 1349 Street-Cleaning Writ"
+                  },
+                  {
+                    "category": "Enforcement",
+                    "glyph": "law",
+                    "value": "Weak Local Guild & Parish Capacity"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. 1665 Continuity",
+                "label": "1665 Great Plague: Deep Medical & Belief Continuity",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Despite Vesalius and Harvey, 1665 Londoners still blamed God and miasma—buying quack pills, carrying pomanders, and slaughtering 240,000 flea-hunting cats and dogs.",
+                "traits": [
+                  {
+                    "category": "Perceived Cause",
+                    "glyph": "church",
+                    "value": "National Fasting & Miasma Fears"
+                  },
+                  {
+                    "category": "Treatments",
+                    "glyph": "language",
+                    "value": "Sweating, Plucked Chickens & Theriac"
+                  },
+                  {
+                    "category": "Protective Dress",
+                    "glyph": "clothes",
+                    "value": "Waxed Robe & Herb-Stuffed Beak Mask"
+                  },
+                  {
+                    "category": "Backfiring Rule",
+                    "glyph": "people",
+                    "value": "40k Dogs & 200k Cats Culled"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. 1665 Civic Progress",
+                "label": "1665 Great Plague: Far More Organised Civic Quarantine",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "Backed by printing and stronger municipal bureaucracy, London’s Lord Mayor enforced strict 28/40-day household quarantines, paid watchmen, and printed weekly mortality statistics.",
+                "traits": [
+                  {
+                    "category": "Surveillance",
+                    "glyph": "people",
+                    "value": "Sworn Parish Women-Searchers"
+                  },
+                  {
+                    "category": "Quarantine Law",
+                    "glyph": "law",
+                    "value": "40-Day Shutting Up & Red Cross Doors"
+                  },
+                  {
+                    "category": "Public Order",
+                    "glyph": "leader",
+                    "value": "Day & Night Watchmen; Theatres Closed"
+                  },
+                  {
+                    "category": "Printed Data",
+                    "glyph": "language",
+                    "value": "Weekly Bills Recorded 68,596 Deaths"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "theme": "The Dead Carts and the Great Demographic Toll (1665)",
@@ -16059,7 +16638,7 @@ export default {
           "type": "visual",
           "title": "Source E: Samuel Pepys’s Diary (31 Aug 1665) & The Annual London Bill of Mortality (68,596 Recorded Plague Deaths)",
           "text": "In the City died this week 7,496, and of them 6,102 of the plague. But it is feared that the true number is nearer 10,000, partly by the Quakers and others that will not have any bell ring for them, and partly that the clerks do not report the dead. Thus one of the saddest sights I saw today in the street was to see how empty the City is: no boats upon the river, shops shut up, grass growing in the streets of Whitehall, and people walking down the middle of the roadway for fear of passing infected doors.",
-          "caption": "Extract from the personal diary of Samuel Pepys, Clerk of the Acts to the Navy Board, writing on 31 August 1665 during the height of the epidemic.",
+          "caption": "Original London Annual General Bill of Mortality (\"A generall Bill for this present year, ending the 19 of December 1665\", Company of Parish Clerks, Wellcome Collection L0000352), recording 97,306 burials across 130 London parishes—\"Whereof, of the Plague, 68,596\"—paired with Samuel Pepys’s 31 August 1665 diary entry.",
           "desc": "Diary entry by Samuel Pepys describing the extreme weekly death toll, underreporting of fatalities, and the total abandonment of commercial streets.",
           "question_badge": "Mortality & Surveillance",
           "question_type": "Change & Continuity",
@@ -16073,9 +16652,10 @@ export default {
             "source_context": "Samuel Pepys’s diary entry, August 1665. The Great Plague caused widespread economic ruin and psychological terror."
           },
           "content": "In the City died this week 7,496, and of them 6,102 of the plague. But it is feared that the true number is nearer 10,000, partly by the Quakers and others that will not have any bell ring for them, and partly that the clerks do not report the dead. Thus one of the saddest sights I saw today in the street was to see how empty the City is: no boats upon the river, shops shut up, grass growing in the streets of Whitehall, and people walking down the middle of the roadway for fear of passing infected doors.",
-          "image": "/images/bill_of_mortality_1665.jpg",
-          "src": "/images/bill_of_mortality_1665.jpg",
-          "source": "/images/bill_of_mortality_1665.jpg"
+          "image": "/images/edexcel_medicine/kt12/med_l2_5_s4_general_bill_mortality_1665_wellcome.jpg",
+          "src": "/images/edexcel_medicine/kt12/med_l2_5_s4_general_bill_mortality_1665_wellcome.jpg",
+          "source": "/images/bill_of_mortality_1665.jpg",
+          "image_alt": "Original printed broadsheet A generall Bill for this present year, ending the 19 of December 1665 compiled by the Company of Parish Clerks of London recording 97,306 total burials whereof 68,596 died of the Plague"
         }
       ],
       "lesson_reflection": {
@@ -16587,7 +17167,7 @@ export default {
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Treatments, Prevention & The Great Plague (1665)",
       "inquiry_question": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?",
-      "card_image": "/images/med_banner_kt2_5_great_plague_1665.jpg",
+      "card_image": "/images/plague_in_london_1665_wellcome.jpg",
       "card_position": "center 48%",
       "key_individual": {
         "id": "org_royal_society",
@@ -16650,8 +17230,13 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt2_5_great_plague_1665.jpg",
-      "hero_image": "/images/med_banner_kt2_5_great_plague_1665.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
+        "alt": "Copperplate engraving titled The Great Plague in London 1665 showing plague victims collapsed in the foreground street with an infant while a horse-drawn dead-cart rolls past shuttered timber-framed London houses and church spires",
+        "position": "center 58%",
+        "caption": "The Great Plague in London, 1665 (Copperplate engraving, Wellcome Collection V0010608): Despite organised parish quarantines and red-crossed doors, seventeenth-century Londoners still lacked any understanding of bacteria or rat-flea transmission."
+      },
+      "hero_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
       "visual_story_sheet": {
         "num": "10",
@@ -16761,7 +17346,8 @@ export default {
             "Lord Mayor’s rule nailing infected homes shut for 40 days under armed watchmen."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg"
     },
     {
       "id": "lesson_3_1",
@@ -17082,8 +17668,102 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> In the first half of the nineteenth century, British and European understanding of disease causation remained fundamentally flawed. The dominant scientific orthodoxy was the **spontaneous generation theory**, which taught that microscopic organisms and maggots were created spontaneously inside decaying organic matter, mistakenly viewing microbes as the harmless secondary consequence of rotting tissue rather than its active biological cause.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Alongside this, **foul miasma stenches** were blamed for devastating urban epidemics like cholera and typhus, as medical authorities insisted foul vapours rising from cesspools poisoned human blood. These **pre-bacteriology limits** prevented physicians from recognising human-to-human contagion, leaving doctors completely powerless to treat infections while municipal councils focused exclusively on removing atmospheric smells rather than targeting microscopic bacterial pathogens.</p>"
           ],
-          "image": "/images/cholera_miasma.jpg",
-          "caption": "Robert Seymour’s 1831 etching \"Cholera Trampling the Victors and the Vanquished\", portraying cholera as a giant shrouded spectre spreading deadly miasma clouds."
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Causation Shift",
+            "title": "Ideas on Disease Causation (c.1700–1884): Miasma ↔ Germ Theory ↔ Bacteriology",
+            "default_index": 1,
+            "caption": "Slide or click across the three scientific stages to trace how Louis Pasteur (1861) and Robert Koch (1876–84) overturned centuries of miasma and spontaneous generation.",
+            "stops": [
+              {
+                "short_label": "1. Miasma & Decay",
+                "label": "Miasma & Spontaneous Generation (Pre-1861 Orthodoxy)",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Taught that poisonous foul air (miasma) caused epidemics and that microbes seen under early microscopes were the by-product—not the cause—of rotting matter.",
+                "traits": [
+                  {
+                    "category": "Core Claim",
+                    "glyph": "language",
+                    "value": "Decay Creates Microbes"
+                  },
+                  {
+                    "category": "Epidemic Blame",
+                    "glyph": "people",
+                    "value": "Poisonous Foul Air (Miasma)"
+                  },
+                  {
+                    "category": "British Backers",
+                    "glyph": "leader",
+                    "value": "Dr Charlton Bastian"
+                  },
+                  {
+                    "category": "Fatal Flaw",
+                    "glyph": "law",
+                    "value": "Missed Water & Contact Germs"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Pasteur (1861)",
+                "label": "Louis Pasteur’s Swan-Neck Germ Theory (1861)",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "summary": "Proved via curved swan-neck glass flasks that airborne living micro-organisms cause fermentation and putrefaction—shattering spontaneous generation.",
+                "traits": [
+                  {
+                    "category": "Key Proof",
+                    "glyph": "language",
+                    "value": "Sterile Swan-Neck Flasks"
+                  },
+                  {
+                    "category": "Catalyst",
+                    "glyph": "people",
+                    "value": "Souring Beet-Alcohol & Wine"
+                  },
+                  {
+                    "category": "UK Champion",
+                    "glyph": "leader",
+                    "value": "Physicist John Tyndall (1870s)"
+                  },
+                  {
+                    "category": "Remaining Gap",
+                    "glyph": "law",
+                    "value": "Not Yet Linked to Specific Human Illnesses"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Koch (1876–84)",
+                "label": "Robert Koch’s Specific Microbe Hunting (1876–1884)",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "Used solid agar jelly, chemical aniline dyes, and Carl Zeiss microphotography to prove which exact bacterium caused each specific human disease.",
+                "traits": [
+                  {
+                    "category": "Lab Toolkit",
+                    "glyph": "language",
+                    "value": "Solid Agar & Aniline Stains"
+                  },
+                  {
+                    "category": "1876 Breakthrough",
+                    "glyph": "leader",
+                    "value": "Anthrax Bacillus Isolated"
+                  },
+                  {
+                    "category": "1882–83 Killers",
+                    "glyph": "people",
+                    "value": "Tuberculosis (1882) & Cholera (1883)"
+                  },
+                  {
+                    "category": "Medical Impact",
+                    "glyph": "law",
+                    "value": "Targeted Vaccines & Aseptic Proof"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -17254,8 +17934,9 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Armed with advanced staining and culture methods, Koch’s Berlin research team made historic pathological discoveries. In 1882, Koch isolated the deadly **tuberculosis bacillus** (*Mycobacterium tuberculosis*), proving that the widespread lung disease killing one in seven Europeans was an infectious bacterial illness rather than a hereditary weakness passed down through family bloodlines. This discovery shocked the European medical world.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> In 1883, travelling to Egypt and India, Koch isolated the comma-shaped **cholera bacillus** (*Vibrio cholerae*), confirming John Snow’s theory that contaminated drinking water transmitted the disease. Koch documented his findings using **high-resolution microphotography**, photographing microbes through microscope lenses to provide indisputable visual proof that destroyed miasma theory forever and established the modern bacterial basis of infectious disease.</p>"
           ],
-          "image": "/images/cholera_microscope_gummelt_1897.jpg",
-          "caption": "Chromolithograph by W. Gummelt (1897) showing cholera-damaged intestinal tissue above a stained microscopic view of Robert Koch’s comma-shaped cholera bacteria."
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l1_b4_gummelt_cholera_bacilli.jpg",
+          "caption": "Pathological Chromolithograph of Robert Koch’s Cholera Bacillus (W. Gummelt, 1897, Wellcome Collection L0074373): Dissected cholera-damaged intestinal tissue above a stained microscopic view of comma-shaped Vibrio cholerae (\"Bacilli Kochii\"), isolated by Koch in 1883–1884—confirming John Snow’s 1854 waterborne discovery.",
+          "image_alt": "1897 pathological chromolithograph by W. Gummelt (ILEUM CUM CONTENTIS — BACILLI KOCHII, CHOLERA ASIATICA) showing cholera-damaged human intestinal mucosa above a stained red microscopic field of comma-shaped Vibrio cholerae bacteria"
         }
       ],
       "vocab": [
@@ -17509,9 +18190,9 @@ export default {
           "letter": "D",
           "type": "visual",
           "title": "Source D: Robert Koch’s Chromolithographic Plate of Stained Tuberculosis Bacilli (1884)",
-          "image": "/images/koch_plate_439.jpg",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l1_s3_koch_tb_solid_culture_plate.jpg",
           "image_url": "/images/koch_bacteria.jpg",
-          "caption": "Chromolithographic histological plate (Tafel XXVI) from Robert Koch’s landmark study Die Aetiologie der Tuberkulose (1884), illustrating rod-shaped Mycobacterium tuberculosis bacilli stained vivid blue with alkaline methylene blue against animal tissue counterstained brown.",
+          "caption": "Culturing & Staining the Tuberculosis Bacillus by Robert Koch’s Method (Wellcome Collection M0012591): Pure single-species Mycobacterium tuberculosis colonies grown on solid sloped medium (Fig. 1) and a flat glass Petri capsule (Fig. 2) alongside dye-stained microscopic colonies (Figs. 3–4).",
           "citation": "Wellcome Collection / National Library of Medicine, Koch, Tafel XXVI (1884, Public Domain).",
           "question_badge": "Factor: Science & Technology",
           "question": "How did Robert Koch’s solid agar plates, chemical aniline dyes, and microphotography (Source D) turn Germ Theory into an exact science?",
@@ -17521,8 +18202,8 @@ export default {
           },
           "enquiry_question": "How did Robert Koch’s solid agar plates, chemical aniline dyes, and microphotography (Source D) turn Germ Theory into an exact science?",
           "source_context": "Tuberculosis killed one in seven people in nineteenth-century Europe, yet most doctors assumed it was hereditary. By staining the waxy bacillus bright blue against brown tissue in 1882–1884, Koch proved beyond doubt that TB was caused by a specific transmissible microbe.",
-          "src": "/images/koch_plate_439.jpg",
-          "image_alt": "Chromolithographic histological plate (Tafel XXVI) from Robert Koch’s 1884 tuberculosis treatise showing rod-shaped blue Mycobacterium tuberculosis bacteria amid brown-stained tissue cells",
+          "src": "/images/edexcel_medicine/kt3/med_kt3_l1_s3_koch_tb_solid_culture_plate.jpg",
+          "image_alt": "Four-part bacteriological plate (Wellcome Collection M0012591) showing Fig. 1 pure Mycobacterium tuberculosis culture on solid sloped serum in a glass test tube, Fig. 2 colonies on a flat Petri dish, and Figs. 3–4 magnified dye-stained cord colonies of tuberculosis bacilli",
           "provenance": "Published in Robert Koch, \"Die Aetiologie der Tuberkulose\", Mittheilungen aus dem Kaiserlichen Gesundheitsamte, vol. 2, Berlin, 1884, Tafel XXVI.",
           "source": "/images/koch_plate_439.jpg",
           "question_type": "Turning Point & Limits"
@@ -17549,7 +18230,8 @@ export default {
           "question_type": "Turning Point & Limits",
           "caption": "High-magnification photomicrograph of Mycobacterium tuberculosis bacilli stained bright crimson using acid-fast aniline dye against a blue counterstain—demonstrating how chemical staining made specific invisible pathogens visible under the microscope.",
           "provenance": "Robert Koch’s address \"Die Aetiologie der Tuberkulose\" delivered to the Physiological Society of Berlin, 24 March 1882, paired with stained Mycobacterium tuberculosis microscopy.",
-          "image_url": "/images/koch_bacteria.jpg"
+          "image_url": "/images/koch_bacteria.jpg",
+          "image_alt": "High-magnification photomicrograph showing rod-shaped Mycobacterium tuberculosis bacilli stained bright crimson-red with aniline dye against a blue cellular counterstain"
         }
       ],
       "video": [
@@ -18231,11 +18913,16 @@ export default {
           "explanation": "Photographing stained microbes through microscope lenses provided undeniable visual proof of pathogenic bacteria."
         }
       ],
-      "banner": "/images/med_banner_kt3_1_pasteur_lab.jpg",
-      "card_image": "/images/med_banner_kt3_1_pasteur_lab.jpg",
-      "banner_position": "center 42%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
+        "alt": "Nineteenth-century wood engraving titled MONSIEUR PASTEUR IN HIS LABORATORY showing Louis Pasteur in a skullcap peering intently through a brass microscope beside a curved swan-neck glass flask and laboratory apparatus",
+        "position": "center 38%",
+        "caption": "Louis Pasteur in His Paris Laboratory (\"Monsieur Pasteur in His Laboratory\", Wellcome Collection M0010355): Pasteur peers through his microscope beside a curved swan-neck glass flask—the apparatus that disproved spontaneous generation in 1861."
+      },
+      "card_image": "/images/pasteur_actual_flask.jpg",
+      "banner_position": "center 38%",
       "card_position": "center 42%",
-      "hero_image": "/images/med_banner_kt3_1_pasteur_lab.jpg",
+      "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
       "inquiry_question": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?",
       "key_individual": {
         "id": "pasteur",
@@ -18404,7 +19091,8 @@ export default {
             "Koch’s method using agar jelly and chemical dyes to spot specific disease germs."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg"
     },
     {
       "id": "lesson_3_2",
@@ -18725,8 +19413,9 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> Throughout the eighteenth century, smallpox was the most terrifying epidemic killer in Britain, killing roughly forty thousand people annually and blinding or disfiguring hundreds of thousands of survivors. The only known preventative method was **smallpox variolation inoculation**, introduced to England from the Ottoman Empire in 1721 by aristocratic traveller Lady Mary Wortley Montagu. It involved transferring live smallpox matter into scratches on healthy patients.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> By the 1760s, commercial doctors popularised the lucrative Suttonian method, charging steep **Suttonian method fees** that only wealthy merchants and aristocrats could afford. However, the severe **risk of fatal infection** made inoculation dangerous: patients suffered full-blown smallpox, and inoculated individuals frequently triggered fresh epidemic outbreaks across unvaccinated communities, killing two to three percent of those treated.</p>"
           ],
-          "image": "/images/med_stage_montagu_variolation.jpg",
-          "caption": "Engraved portrait of Lady Mary Wortley Montagu (after a 1710 miniature), who introduced smallpox inoculation to Britain in 1721 after witnessing it in Constantinople."
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l2_b0_lady_mary_montagu_1803.jpg",
+          "caption": "Lady Mary Wortley Montagu (1689–1762, stipple engraving by Caroline Watson, 1803, Wellcome Collection V0004079): Having survived disfiguring smallpox herself and witnessed Ottoman variolation in Constantinople, she had her young children inoculated in 1718 and 1721.",
+          "image_alt": "Oval 1803 stipple engraving by Caroline Watson titled Lady Mary Pierrepont, 1710 portraying Lady Mary Wortley Montagu, who introduced smallpox variolation to Britain in 1721"
         },
         {
           "act": 2,
@@ -18810,9 +19499,6 @@ export default {
           "title": "Government Intervention: Grants and the 1840 Vaccination Act",
           "theme_heading": "Government Intervention: Grants and the 1840 Vaccination Act",
           "text": "<p><span class=\"para-ref\">[4.1]</span> Despite vocal conservative opposition, vaccination’s overwhelming clinical efficacy gradually convinced the British state. In 1802 and 1807, Parliament voted substantial **parliamentary grants (£30,000)** to Jenner to establish the Royal Jennerian Society, providing free vaccinations to Londoners. Across Europe, Napoleon Bonaparte vaccinated the French army and praised Jenner as one of humanity’s greatest benefactors. This royal and parliamentary support elevated Jenner's status.</p><p><span class=\"para-ref\">[4.2]</span> The decisive shift from private charity to state public health came with the landmark **1840 Vaccination Act**, which made smallpox vaccination available completely free of charge to all infants, funded by local poor rate taxes. Simultaneously, dangerous variolation **inoculation was legally banned**, making it a criminal offence to deliberately spread live smallpox, establishing the revolutionary principle that the state held responsibility for public epidemic prevention.</p>",
-          "image": "/images/med_stage_vaccination_dispensary.jpg",
-          "image_alt": "Official nineteenth-century studio portrait photograph of Queen Victoria",
-          "caption": "Royal & Parliamentary Endorsement in Victorian Britain: State backing—beginning with £30,000 in parliamentary grants to Jenner (1802, 1807), free infant vaccination under the 1840 Vaccination Act, and compulsory enforcement in 1853 and 1871—drove smallpox deaths down dramatically.",
           "isReversed": true,
           "sources": [
             {
@@ -18839,7 +19525,108 @@ export default {
           "paragraphs": [
             "<p><span class=\"para-ref\">[4.1]</span> Despite vocal conservative opposition, vaccination’s overwhelming clinical efficacy gradually convinced the British state. In 1802 and 1807, Parliament voted substantial **parliamentary grants (£30,000)** to Jenner to establish the Royal Jennerian Society, providing free vaccinations to Londoners. Across Europe, Napoleon Bonaparte vaccinated the French army and praised Jenner as one of humanity’s greatest benefactors. This royal and parliamentary support elevated Jenner's status.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> The decisive shift from private charity to state public health came with the landmark **1840 Vaccination Act**, which made smallpox vaccination available completely free of charge to all infants, funded by local poor rate taxes. Simultaneously, dangerous variolation **inoculation was legally banned**, making it a criminal offence to deliberately spread live smallpox, establishing the revolutionary principle that the state held responsibility for public epidemic prevention.</p>"
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive State Intervention Sequence",
+            "title": "Government & Smallpox Vaccination (1802–1898): From Grants to Compulsion",
+            "default_index": 0,
+            "caption": "Click each legislative milestone to trace why Parliament gradually abandoned laissez-faire non-intervention to fund and enforce Jenner’s smallpox vaccine.",
+            "items": [
+              {
+                "tab_label": "1. Grants (1802–07)",
+                "title": "Parliamentary Grants to Dr Edward Jenner",
+                "dates": "1802 & 1807",
+                "badge": "£30,000 Awarded",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "1802 Grant",
+                    "value": "£10,000 State Vote"
+                  },
+                  {
+                    "label": "1807 Grant",
+                    "value": "£20,000 + National Estab."
+                  },
+                  {
+                    "label": "Significance",
+                    "value": "Rare Early State Funding"
+                  }
+                ],
+                "takeaway": "Even during laissez-faire rule, MPs voted £30,000 to reward Jenner’s 1798 cowpox inquiry and open the National Vaccine Establishment (1808)."
+              },
+              {
+                "tab_label": "2. 1840 Free Act",
+                "title": "The Vaccination Act 1840",
+                "dates": "July 1840",
+                "badge": "Variolation Outlawed",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Provision",
+                    "value": "Free Infant Vaccination"
+                  },
+                  {
+                    "label": "Funded By",
+                    "value": "Local Poor Law Unions"
+                  },
+                  {
+                    "label": "Criminal Ban",
+                    "value": "Old Smallpox Inoculation Banned"
+                  }
+                ],
+                "takeaway": "Provided free cowpox vaccination for infants via Poor Law guardians and made dangerous live-smallpox variolation a criminal offence—yet remained voluntary."
+              },
+              {
+                "tab_label": "3. 1853 Compulsory",
+                "title": "Compulsory Vaccination Act 1853",
+                "dates": "August 1853",
+                "badge": "Mandatory Under 3 Months",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Legal Duty",
+                    "value": "All Infants Within 3 Months"
+                  },
+                  {
+                    "label": "Penalty",
+                    "value": "20s Fine or Imprisonment"
+                  },
+                  {
+                    "label": "Weakness",
+                    "value": "Patchy Local Enforcement"
+                  }
+                ],
+                "takeaway": "Made infant vaccination compulsory across England and Wales, sparking the Anti-Vaccination League (1866) yet hampered at first by reluctant local boards."
+              },
+              {
+                "tab_label": "4. 1871 Enforcement",
+                "title": "Vaccination Act 1871 & 1898 Clause",
+                "dates": "1871 – 1898",
+                "badge": "Smallpox Plummets",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "1871 Reform",
+                    "value": "Paid Vaccination Officers"
+                  },
+                  {
+                    "label": "Epidemic Result",
+                    "value": "Deaths Slashed Nationwide"
+                  },
+                  {
+                    "label": "1898 Safety Valve",
+                    "value": "Conscientious Objection"
+                  }
+                ],
+                "takeaway": "After a severe 1870–71 epidemic, paid Vaccination Officers strictly enforced the law until smallpox vanished as a mass killer (adding a conscience clause in 1898)."
+              }
+            ]
+          }
         },
         {
           "act": 5,
@@ -19106,7 +19893,8 @@ export default {
           "image": "/images/sarah_nelmes_cowpox_hand.jpg",
           "src": "/images/sarah_nelmes_cowpox_hand.jpg",
           "source": "/images/sarah_nelmes_cowpox_hand.jpg",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "image_alt": "Open first-edition 1798 copy of Dr Edward Jenner’s Variolae Vaccinae displaying page 32 (CASE XVII on eight-year-old James Phipps) facing the hand-coloured copperplate engraving of cowpox pustules on dairymaid Sarah Nelmes’s hand and wrist"
         },
         {
           "id": "source_a_gillray_cow_pock",
@@ -19127,7 +19915,8 @@ export default {
           "source_context": "Gillray's savage caricature satirised the virulent anti-vaccination propaganda propagated by the Anti-Vaccine Society and religious clergy, who preached that transferring beasts' diseases into Christian humans was an ungodly abomination.",
           "question_type": "Change & Continuity",
           "src": "/images/gillray_cow_pock_1802.jpg",
-          "source": "/images/gillray_cow_pock_1802.jpg"
+          "source": "/images/gillray_cow_pock_1802.jpg",
+          "image_alt": "Hand-coloured satirical etching by James Gillray titled The Cow-Pock—or—the Wonderful Effects of the New Inoculation! (12 June 1802) showing Dr Edward Jenner vaccinating patients at St Pancras while miniature cows erupt from their arms, cheeks, noses, and ears"
         },
         {
           "id": "source_d_parliamentary_grant_1802",
@@ -19854,11 +20643,16 @@ export default {
           "explanation": "Building on Jenner's vaccine, the World Health Organization achieved complete global eradication of smallpox in 1980."
         }
       ],
-      "banner_position": "center 24%",
+      "banner_position": "center 34%",
       "card_position": "center 24%",
-      "banner": "/images/med_banner_kt3_2_jenner_vaccination.jpg",
-      "card_image": "/images/med_banner_kt3_2_jenner_vaccination.jpg",
-      "hero_image": "/images/med_banner_kt3_2_jenner_vaccination.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg",
+        "alt": "Oil painting by Ernest Board depicting Dr Edward Jenner seated in his study gently vaccinating the bare arm of eight-year-old James Phipps with a lancet while a woman in a ruffled shawl holds the boy steady",
+        "position": "center 34%",
+        "caption": "Dr Edward Jenner Vaccinating Eight-Year-Old James Phipps, 14 May 1796 (Oil painting by Ernest Board, Wellcome Collection): Using cowpox matter from dairymaid Sarah Nelmes’s hand, Jenner proved empirically that cowpox conferred immunity against lethal smallpox."
+      },
+      "card_image": "/images/jenner_vaccinating_phipps.jpg",
+      "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg",
       "inquiry_question": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?",
       "key_individual": {
         "id": "jenner",
@@ -20027,7 +20821,8 @@ export default {
             "1853 and 1871 laws making infant vaccination mandatory and fining refusers."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg"
     },
     {
       "id": "lesson_3_3",
@@ -20357,9 +21152,9 @@ export default {
           "title": "Florence Nightingale at Scutari: The Sanitary Revolution (1854–1856)",
           "theme_heading": "Florence Nightingale at Scutari: The Sanitary Revolution (1854–1856)",
           "text": "<p><span class=\"para-ref\">[2.1]</span> In 1854, Britain entered the **Crimean War** against Russia. Newspaper reports by William Howard Russell in *The Times* revealed scandalous medical negligence in the British army, prompting Minister for War Sidney Herbert to invite Florence Nightingale to lead thirty-eight volunteer nurses to the British military hospital at Scutari near Constantinople. Nightingale arrived in November to find wounded soldiers lying in raw filth.</p><p><span class=\"para-ref\">[2.2]</span> Nightingale implemented immediate **Scutari hospital sanitation**, organising soldiers' wives to wash bedsheets, scrub wards with boiling water, clear blocked sewers, and serve nutritious food. When the government Sanitary Commission flushed out dead animals from water pipes, the hospital **mortality rate plummeted from 42% to 2%** within six months. Nightingale proved conclusively that environmental hygiene and basic sanitation saved vastly more lives than contemporary medicine.</p>",
-          "image": "/images/nightingale_scutari.jpg",
-          "image_alt": "Tinted lithograph by war artist William Simpson (published April 1856) showing the clean, spacious, daylight interior of a reformed ward at the Barrack Hospital, Scutari",
-          "caption": "One of the Wards of the Hospital at Scutari (Tinted lithograph by William Simpson, 21 April 1856, Wellcome Collection): Following Florence Nightingale’s sanitary reforms and the Sanitary Commission’s flushing of the sewers, casualties lay in spaced iron bedsteads in bright, scrubbed, well-ventilated wards.",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l3_b1_scutari_ward_simpson.jpg",
+          "image_alt": "Hand-tinted lithograph titled ONE OF THE WARDS OF THE HOSPITAL AT SCUTARI (William Simpson, published 21 April 1856) showing clean timber floors, open arched windows, spaced iron bedsteads, and Florence Nightingale consulting an army medical officer",
+          "caption": "One of the Wards of the Hospital at Scutari (Tinted lithograph by William Simpson, 21 April 1856, Wellcome Collection M0007724): Following Florence Nightingale’s sanitary reforms and the Sanitary Commission’s flushing of the sewers, casualties lay in spaced iron bedsteads inside bright, scrubbed, cross-ventilated wards.",
           "isReversed": false,
           "sources": [
             {
@@ -20423,7 +21218,8 @@ export default {
             "<p><span class=\"para-ref\">[3.2]</span> A pioneer in statistical graphics, Nightingale designed sophisticated **sanitary statistical charts** (the famous \"polar area diagram\" or coxcomb chart), visually demonstrating to politicians and generals that army mortality resulted from preventable infectious disease rather than battlefield combat. Her statistical evidence persuaded Parliament to reconstruct British civil and military hospitals around scientific **pavilion hospital architecture** to guarantee patient survival.</p>"
           ],
           "image": "/images/nightingale_reforms_museum.jpg",
-          "caption": "First Edition Title Page of Notes on Nursing: What It Is, and What It Is Not (Harrison, London, December 1859): Selling tens of thousands of copies across Britain, Nightingale’s practical handbook championed pure air, pure water, efficient drainage, cleanliness, and natural daylight."
+          "caption": "First Edition Title Page of Notes on Nursing: What It Is, and What It Is Not (Harrison, London, December 1859): Selling tens of thousands of copies across Britain, Nightingale’s practical handbook championed pure air, pure water, efficient drainage, cleanliness, and natural daylight.",
+          "image_alt": "Original printed title page of Notes on Nursing: What It Is, and What It Is Not by Florence Nightingale, published in London by Harrison, 59 Pall Mall, Bookseller to the Queen (1859–1860)"
         },
         {
           "act": 4,
@@ -20457,8 +21253,9 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> In 1859, Nightingale published *Notes on Hospitals*, detailing revolutionary architectural standards that transformed hospital construction across the Victorian era. She insisted that hospitals abandon large, central buildings in favour of detached **separate pavilion wards**. Connected by covered walkways, these long, narrow, single-story wings isolated infectious patients from surgical wards, preventing airborne contagion from spreading throughout the institution. This layout minimised cross-infection between different medical departments.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Each ward featured **cross-ventilation high windows** placed opposite each other, allowing fresh air to circulate continually over beds and flush out noxious miasmas. Floors were constructed of polished hardwood and walls lined with **tiled washable surfaces** that could be easily scrubbed with carbolic disinfectant, creating bright, sanitary environments that became the global blueprint for modern hospital architecture.</p>"
           ],
-          "image": "/images/med_stage_st_thomas_pavilion.jpg",
-          "caption": "Archival photograph of the \"Florence Nightingale Ward\" at St Thomas’s Hospital, Westminster, showing spaced beds and tall opposing windows for cross-ventilation."
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l3_b3_st_thomas_pavilion.jpg",
+          "caption": "The Pavilion Plan Realised — New St Thomas’s Hospital, Lambeth (Wood engraving by T. Sulman, Old and New London, 1878): Designed by architect Henry Currey under Florence Nightingale’s direct guidance (opened 1871), seven separate riverfront pavilion wings maximised cross-ventilation and isolated infectious wards.",
+          "image_alt": "Panoramic Victorian architectural wood engraving by T. Sulman titled ST. THOMAS’S HOSPITAL showing seven separate multi-storey pavilion ward blocks spaced along the Albert Embankment opposite the Houses of Parliament"
         },
         {
           "act": 5,
@@ -20494,8 +21291,84 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> In 1860, Nightingale founded the **St Thomas' Training School** for nurses in London, financed by £44,000 raised through the public **Nightingale Fund (£44,000)**. The school transformed nursing into an educated, respectable profession for middle-class women, requiring a year of rigorous practical and scientific instruction under the command of **professional disciplined matrons** who enforced strict hygiene, morality, and compassionate patient care.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> Nightingale’s graduates established modern nursing departments across Britain and the British Empire. Meanwhile, Jamaican doctress Mary Seacole demonstrated alternative nursing excellence in the Crimea, establishing the \"British Hotel\" near Balaclava using herbal remedies to treat cholera and dysentery. Together, their wartime heroism dismantled the drunken \"Betsy Prig\" stereotype, turning nursing into a respected, indispensable pillar of modern healthcare.</p>"
           ],
-          "image": "/images/pre_nightingale_hospital_conditions.jpg",
-          "caption": "Florence Nightingale with Probationer Nurses of the Nightingale Training School at St Thomas’ Hospital (Photographed at Claydon House, Buckinghamshire, 1886, Wellcome Collection): Funded by the £44,000 Nightingale Fund (1860), her school transformed nursing into a disciplined, secular medical profession."
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Hospital Reform Comparison",
+            "title": "Transforming Nursing & Wards (1854–1870s): Nightingale, Seacole & Pavilion Design",
+            "default_index": 0,
+            "caption": "Click each pillar to compare Florence Nightingale’s institutional nursing reforms, Mary Seacole’s front-line Crimean care, and Victorian Pavilion architecture.",
+            "items": [
+              {
+                "tab_label": "1. Nightingale School",
+                "title": "Florence Nightingale & St Thomas’ Training School",
+                "dates": "1854 – 1860s",
+                "badge": "£44,000 Nightingale Fund",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Scutari Impact",
+                    "value": "Mortality Cut ~42% to ~2%"
+                  },
+                  {
+                    "label": "1859 Bestseller",
+                    "value": "Notes on Nursing Handbook"
+                  },
+                  {
+                    "label": "1860 Institution",
+                    "value": "St Thomas’ Nurse School"
+                  }
+                ],
+                "takeaway": "Backed by War Office authority and the £44,000 public Nightingale Fund, Nightingale turned nursing into a trained, disciplined, respectable profession across Britain."
+              },
+              {
+                "tab_label": "2. Mary Seacole",
+                "title": "Mary Seacole & The Spring Hill \"British Hotel\"",
+                "dates": "1855 – 1857",
+                "badge": "Front-Line Crimean Care",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Funding",
+                    "value": "Self-Funded After Rejection"
+                  },
+                  {
+                    "label": "Location",
+                    "value": "Spring Hill Near Balaclava"
+                  },
+                  {
+                    "label": "Care Provided",
+                    "value": "Herbal Remedies & Battlefield Aid"
+                  }
+                ],
+                "takeaway": "Rejected by the War Office and Nightingale’s recruiters, Jamaican-Scottish healer Mary Seacole tended wounded soldiers under fire, though lacking post-war state funding."
+              },
+              {
+                "tab_label": "3. Pavilion Wards",
+                "title": "The Pavilion Hospital Plan",
+                "dates": "1859 – 1871",
+                "badge": "Cross-Ventilation & Isolation",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Key Blueprint",
+                    "value": "Notes on Hospitals (1859)"
+                  },
+                  {
+                    "label": "Ward Layout",
+                    "value": "Separate Wings & Tall Windows"
+                  },
+                  {
+                    "label": "Flagship Build",
+                    "value": "New St Thomas’ Hospital (1871)"
+                  }
+                ],
+                "takeaway": "Though motivated by Nightingale’s belief in miasma, separate pavilion blocks, washable surfaces, and infectious isolation wards dramatically curbed cross-infection."
+              }
+            ]
+          }
         }
       ],
       "vocab": [
@@ -20711,9 +21584,9 @@ export default {
           "letter": "C",
           "type": "visual",
           "title": "Source C: Florence Nightingale's 'Coxcomb' Diagram of Crimean War Mortality (1858)",
-          "image": "/images/nightingale_coxcomb.jpg",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l3_s2_nightingale_coxcomb_1858.jpg",
           "image_url": "/images/nightingale_coxcomb.jpg",
-          "caption": "Diagram of the Causes of Mortality in the Army in the East (1858) by Florence Nightingale. The large blue wedges show soldiers dying from preventable zymotic diseases (typhus, cholera, dysentery), dwarfing the tiny red slices of deaths from direct combat wounds.",
+          "caption": "Diagram of the Causes of Mortality in the Army in the East (Florence Nightingale, 1858, Wellcome Collection L0041105): Vast blue wedges of deaths from preventable \"zymotic\" diseases (typhus, cholera, dysentery) dwarf red battle-wound slices in 1854–55 before shrinking sharply after Scutari’s spring 1855 sanitary reforms.",
           "citation": "National Army Museum, London, Accession NAM. 1975-03-61 / Wellcome Collection (Public Domain).",
           "question_badge": "Factor: Communication & Data",
           "question": "Why was Florence Nightingale’s 1858 \"Coxcomb\" polar-area diagram (Source C) such an effective weapon for persuading Parliament and the Army to fund hospital reform?",
@@ -20724,8 +21597,9 @@ export default {
           "enquiry_question": "Why was Florence Nightingale’s 1858 \"Coxcomb\" polar-area diagram (Source C) such an effective weapon for persuading Parliament and the Army to fund hospital reform?",
           "source_context": "Nightingale was an expert statistician and the first female fellow of the Royal Statistical Society. She invented this 'rose' or 'coxcomb' diagram because she knew politicians and generals would skip long written tables but could not ignore dramatic visual wedges.",
           "question_type": "Turning Point & Limits",
-          "src": "/images/nightingale_coxcomb.jpg",
-          "source": "/images/nightingale_coxcomb.jpg"
+          "src": "/images/edexcel_medicine/kt3/med_kt3_l3_s2_nightingale_coxcomb_1858.jpg",
+          "source": "/images/nightingale_coxcomb.jpg",
+          "image_alt": "Florence Nightingale’s 1858 polar-area (\"Coxcomb\") statistical chart titled DIAGRAM OF THE CAUSES OF MORTALITY IN THE ARMY IN THE EAST comparing immense blue wedges of preventable epidemic disease deaths in 1854–1855 (right) with dramatically shrunken wedges after sanitary reform in 1855–1856 (left)"
         },
         {
           "id": "source_e_nightingale_notes_hospitals_1859",
@@ -20764,7 +21638,8 @@ export default {
           "image": "/images/upgraded/gcse-med-eee/med_l3_3_mary_seacole_challen_1869.jpg",
           "src": "/images/upgraded/gcse-med-eee/med_l3_3_mary_seacole_challen_1869.jpg",
           "source": "/images/mary_seacole.jpg",
-          "question_type": "Change & Continuity"
+          "question_type": "Change & Continuity",
+          "image_alt": "1869 oil portrait on panel of Jamaican-Scottish healer Mary Seacole by Albert Charles Challen (National Portrait Gallery NPG 6805), wearing a crimson scarf and three Crimean campaign medals pinned to her dark bodice"
         }
       ],
       "video": [
@@ -21446,10 +22321,15 @@ export default {
           "explanation": "Close to Balaclava, Seacole nursed wounded troops and treated cholera and dysentery with herbal remedies."
         }
       ],
-      "banner": "/images/med_banner_kt3_3_scutari_ward.jpg",
-      "card_image": "/images/med_banner_kt3_3_scutari_ward.jpg",
-      "hero_image": "/images/med_banner_kt3_3_scutari_ward.jpg",
-      "banner_position": "center 55%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
+        "alt": "Panoramic nineteenth-century engraving by Samuel Bellin after Jerry Barrett showing Florence Nightingale standing beneath the stone archway of the Barrack Hospital at Scutari welcoming wounded Crimean War soldiers overlooking the Bosphorus",
+        "position": "center 58%",
+        "caption": "The Mission of Mercy — Florence Nightingale Receiving Wounded Soldiers at Scutari Hospital (Samuel Bellin after Jerry Barrett, 1857, Wellcome Collection V0006854): Arriving in November 1854 with thirty-eight nurses, Nightingale transformed ward hygiene, laundry, and ventilation."
+      },
+      "card_image": "/images/edexcel_medicine/kt3/med_kt3_l3_b1_scutari_ward_simpson.jpg",
+      "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
+      "banner_position": "center 58%",
       "card_position": "center 55%",
       "inquiry_question": "How did Florence Nightingale transform British hospitals from Victorian death houses into clean, scientific institutions?",
       "key_individual": {
@@ -21620,7 +22500,8 @@ export default {
             "Hospital layout of separate wings, tall windows, and washable tiled walls."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg"
     },
     {
       "id": "lesson_3_4",
@@ -21944,16 +22825,17 @@ export default {
             "<p><span class=\"para-ref\">[1.2]</span> The overwhelming danger was acute **surgical shock mortality**, where immense pain caused blood pressure collapse and heart failure on the operating table. Early chemical experiments with **ether and nitrous oxide** (laughing gas) had severe limitations: nitrous oxide was too weak for deep incisions, while ether irritated patients’ lungs, caused violent vomiting, and was dangerously flammable near open gas lamps in operating rooms.</p>"
           ],
           "image": "/images/med_stage_liston_ether_1846.jpg",
-          "caption": "Portrait of Scottish surgeon Robert Liston (1794–1847), famed for 30-second pre-anaesthetic amputations before performing Europe’s first ether operation in December 1846."
+          "caption": "Portrait of Scottish surgeon Robert Liston (1794–1847), famed for 30-second pre-anaesthetic amputations before performing Europe’s first ether operation in December 1846.",
+          "image_alt": "Three-quarter-length oil portrait of Scottish surgeon Robert Liston seated in a dark high-collared frock coat and tartan waistcoat"
         },
         {
           "act": 2,
           "title": "James Simpson and the Discovery of Chloroform (1847)",
           "theme_heading": "James Simpson and the Discovery of Chloroform (1847)",
           "text": "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in surgical anaesthesia was achieved in Edinburgh in **1847** by Professor **James Young Simpson**. Seeking a safer chemical alternative to ether for delivering babies, Simpson tested various chemical compounds on himself and colleagues. In November 1847, they inhaled **chloroform anaesthetic vapour**, instantly knocking themselves unconscious under the dining room table, proving its immense potency and rapid onset. Simpson immediately introduced chloroform into his obstetrical practice.</p><p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** from Dr John Snow during the birth of Prince Leopold, during the delivery of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>",
-          "image": "/images/queen_victoria.jpg",
-          "image_alt": "Nineteenth-century portrait photograph of Queen Victoria, whose use of \"chloroform à la reine\" in 1853 silenced moral and medical opposition to obstetric anaesthesia",
-          "caption": "Queen Victoria & \"Chloroform à la Reine\" (April 1853): When Dr John Snow administered chloroform to Queen Victoria during the birth of Prince Leopold—which she praised as \"blessed chloroform, soothing, quieting and delightful beyond measure\"—religious and medical hostility to pain relief evaporated.",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l4_b1_queen_victoria_winterhalter.jpg",
+          "image_alt": "Oval royal oil portrait of young Queen Victoria by Franz Xaver Winterhalter wearing the Diamond Diadem, crimson off-the-shoulder gown, and blue ribbon and star of the Order of the Garter",
+          "caption": "Queen Victoria & \"Chloroform à la Reine\" (Portrait by Franz Xaver Winterhalter, Royal Collection): When Dr John Snow administered regulated chloroform vapour to thirty-three-year-old Queen Victoria during the birth of Prince Leopold in April 1853—which she praised as \"blessed chloroform, soothing, quieting and delightful beyond measure\"—religious and social hostility to obstetric pain relief evaporated.",
           "isReversed": false,
           "sources": [
             {
@@ -22042,8 +22924,9 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> Paradoxically, the conquest of pain did not immediately lower surgical mortality, leading directly to the disastrous **'Black Period' surgery** era (1846–1865). Because patients were unconscious and relaxed, surgeons carried out far **deeper invasive operations** inside the abdominal cavity, undertaking complex procedures that lasted hours rather than seconds, exposing open internal tissues to contaminated hospital environments. However, surgeons still operated without washing hands or sterilising instruments.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> Because medical science had not yet accepted Germ Theory, unsterilised surgical instruments, dirty bandages, and unwashed aprons transferred deadly bacteria directly into open wounds. This triggered a catastrophic **hospital gangrene surge**, alongside lethal outbreaks of pyaemia and sepsis that killed up to fifty percent of all surgical patients, making Victorian hospitals far more dangerous than battlefield dressing stations.</p>"
           ],
-          "image": "/images/med_stage_victorian_amputation_saw.jpg",
-          "caption": "Mid-nineteenth-century velvet-lined mahogany amputation case holding an unsterilised bone saw, surgical knives, and tourniquet—breeding fatal ward sepsis before 1865."
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l4_b2_amputation_saw_case.jpg",
+          "caption": "Mid-Victorian Velvet-Lined Amputation Case (Arnold & Sons, London, c. 1866, Wellcome Collection L0057275): Intricate chequered-ivory handles and plush velvet linings trapped dried blood and pus between operations, fueling fatal post-operative gangrene and sepsis during Surgery’s \"Black Period\" (1846–1865).",
+          "image_alt": "Open brass-bound mahogany surgical amputation case lined in green velvet by Arnold & Sons of West Smithfield, London (1866–1871), holding steel and chequered-ivory amputation saws, long Liston knives, bone forceps, and fabric screw tourniquets"
         },
         {
           "act": 4,
@@ -22332,7 +23215,7 @@ export default {
           "title": "Source B: Two Clashing Views on Chloroform Anaesthesia — Prof. James Young Simpson (1847) vs Dr John Hall (Crimea, 1854)",
           "provenance": "Comparison of James Young Simpson’s Account of a New Anaesthetic Agent (Edinburgh, Nov 1847) and Principal Medical Officer Dr John Hall’s caution to British Army surgeons in the Crimea (1854).",
           "citation": "J. Y. Simpson, Account of a New Anaesthetic Agent (1847); Army Medical Department Reports, Dr John Hall memorandum (1854).",
-          "caption": "Debate over whether chloroform anaesthesia was a merciful surgical breakthrough or a dangerous drug that suppressed survival reflexes.",
+          "caption": "Discovery of Chloroform Anaesthesia in Edinburgh (4 November 1847, Wellcome Collection M0003274): Professor James Young Simpson regains consciousness beside Drs George Keith and Matthews Duncan after inhaling chloroform—sparking intense debate with conservative army surgeons like Dr John Hall.",
           "desc": "Debate over whether chloroform anaesthesia was a merciful surgical breakthrough or a dangerous drug that suppressed survival reflexes.",
           "source_context": "After Hannah Greener (aged 15) died from a chloroform overdose during a toenail operation in January 1848—and religious critics cited Genesis on childbirth pain—conservative surgeons resisted chloroform until John Snow’s inhaler and Queen Victoria’s 1853 endorsement.",
           "teacher_notes": {
@@ -22343,8 +23226,8 @@ export default {
           "question": "Why did conservative surgeons like Dr John Hall oppose Simpson’s chloroform, and what overcame resistance in the 1850s?",
           "enquiry_question": "Why did conservative surgeons like Dr John Hall oppose Simpson’s chloroform, and what overcame resistance in the 1850s?",
           "model_answer": "Early handkerchief dosing caused sudden cardiac deaths (Hannah Greener, 1848), while traditional military surgeons like Hall believed a patient’s screams proved their heart remained stimulated under shock. John Snow’s regulated vapour inhaler solved dosage safety, Simpson answered biblical objections, and Queen Victoria praising \"blessed chloroform\" during Prince Leopold’s birth (1853) made anaesthesia socially respectable.",
-          "image": "/images/simpson_chloroform.jpg",
-          "src": "/images/simpson_chloroform.jpg",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l4_s1_simpson_chloroform_1847.jpg",
+          "src": "/images/edexcel_medicine/kt3/med_kt3_l4_s1_simpson_chloroform_1847.jpg",
           "source": "/images/simpson_chloroform.jpg",
           "perspective_pair": {
             "framing_note": "Discovering chloroform in November 1847 conquered surgical pain—yet sparked fierce arguments over dosage safety, shock, and tradition.",
@@ -22365,7 +23248,8 @@ export default {
               "text_type": "primary_extract",
               "provenance": "Dr John Hall, Principal Medical Officer of the British Army in the Crimea, Departmental Caution (1854)."
             }
-          }
+          },
+          "image_alt": "Historical line illustration (Wellcome Collection M0003274) depicting Professor James Young Simpson waking beside his Edinburgh dining table on 4 November 1847 while assistants Dr George Keith and Dr Matthews Duncan lie unconscious under the table and slumped across a chair after inhaling chloroform"
         },
         {
           "id": "med_l14_source_black_period",
@@ -22407,12 +23291,12 @@ export default {
           "enquiry_question": "How did Joseph Lister’s carbolic acid method (Source D) slash amputation deaths from ~46% to ~15%—and why did some rational surgeons still resist his steam spray?",
           "source_context": "Having read Louis Pasteur’s Germ Theory in 1865, Glasgow and Edinburgh surgeon Joseph Lister soaked dressings and sprayed the air with carbolic acid (phenol), formerly used to deodorise Carlisle sewage. By 1890, Lister himself abandoned the harsh spray as hospitals transitioned to steam-sterilised aseptic theatres.",
           "question_type": "Rationality in Context",
-          "image": "/images/lister_carbolic_spray.jpg",
-          "image_alt": "Engraving FIG. 23 from William Watson Cheyne’s Antiseptic Surgery (1882) showing surgeons in frock coats operating on a patient on a wooden table while a tripod-mounted steam sprayer blasts a cone of carbolic acid mist over the wound and instruments",
-          "caption": "Surgical engraving (\"FIG. 23\") from Antiseptic Surgery (1882) by Joseph Lister’s chief assistant William Watson Cheyne, illustrating a tripod-mounted steam spray enveloping the surgeon’s hands, instruments, and patient incision in a continuous cloud of carbolic acid mist.",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l4_s3_lister_carbolic_spray_1882.jpg",
+          "image_alt": "High-resolution surgical engraving FIG. 23 from William Watson Cheyne’s Antiseptic Surgery (1882, Wellcome Collection M0003436) showing frock-coated surgeons operating on an anaesthetised patient while a stool-mounted steam sprayer projects a cone of carbolic acid mist across hands, instruments, and incision",
+          "caption": "Surgical engraving (\"FIG. 23\") from Antiseptic Surgery (1882, Wellcome Collection M0003436) by Joseph Lister’s chief assistant William Watson Cheyne, illustrating a steam spray enveloping the surgeon’s hands, instruments, and incision in a continuous cloud of carbolic acid mist.",
           "provenance": "Published surgical manual illustration in William Watson Cheyne, Antiseptic Surgery: Its Principles, Practice, History, and Results, London: Smith, Elder & Co., 1882, Fig. 23.",
           "image_url": "/images/lister_carbolic_spray.jpg",
-          "src": "/images/lister_carbolic_spray.jpg",
+          "src": "/images/edexcel_medicine/kt3/med_kt3_l4_s3_lister_carbolic_spray_1882.jpg",
           "source": "/images/lister_carbolic_spray.jpg"
         },
         {
@@ -23113,10 +23997,15 @@ export default {
           "explanation": "Tiled rooms, autoclaves, sterile rubber gloves, masks, and white gowns reduced post-operative infection near zero."
         }
       ],
-      "banner": "/images/med_banner_kt3_4_lister_antiseptic.jpg",
-      "card_image": "/images/med_banner_kt3_4_lister_antiseptic.jpg",
-      "hero_image": "/images/med_banner_kt3_4_lister_antiseptic.jpg",
-      "banner_position": "center 28%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
+        "alt": "Panoramic painting by Ernest Board depicting surgeon Robert Liston in white shirt-sleeves holding an amputation knife beside an ether inhaler bottle at University College Hospital on 21 December 1846 while medical students including young Joseph Lister watch from the gallery",
+        "position": "center 34%",
+        "caption": "Europe’s First Public Operation Under Anaesthetic — University College Hospital, London (21 December 1846, by Ernest Board, Wellcome Collection M0005603): Robert Liston amputates a butler’s leg using William Squire’s ether inhaler while a young Joseph Lister watches from the packed gallery."
+      },
+      "card_image": "/images/lister_carbolic_spray_apparatus.jpg",
+      "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
+      "banner_position": "center 34%",
       "card_position": "center 28%",
       "inquiry_question": "Why did the discovery of anaesthetics initially make surgical operations more dangerous rather than safer?",
       "key_individual": {
@@ -23286,7 +24175,8 @@ export default {
             "Keeping germs out of operating theatres entirely with steam autoclaves and gloves."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg"
     },
     {
       "id": "lesson_3_5",
@@ -23649,73 +24539,91 @@ export default {
             "<p><span class=\"para-ref\">[2.2]</span> Snow conducted meticulous epidemiological field research, compiling a pioneering **Broad Street spot map** that plotted every cholera fatality as a black bar on street charts. The deaths clustered heavily around the public Broad Street water pump. Persuading sceptical parish vestrymen, Snow had the **pump handle removed** on 8 September 1854, bringing an immediate, dramatic halt to the localised epidemic.</p>"
           ],
           "stage_hook_map": {
-            "id": "med-l14-broad-street-map",
-            "title": "Dr John Snow’s Soho Cholera Investigation (September 1854)",
-            "subtitle": "Tap numbered pins to inspect Snow’s epidemiological clues · Fullscreen for Whiteboard Mode",
-            "image": "/images/med_svg_snow_broad_street_map.svg",
+            "id": "med-kt3-snow-soho-bazalgette-1854-75-map",
+            "title": "Victorian London Public Health (1854–75): Snow’s Soho Map & Bazalgette’s Sewers",
+            "subtitle": "Broad St Pump, Lion Brewery, Workhouse, Grand Experiment & Bazalgette Sewers · Tap numbered pins or enlarge",
+            "image": "/images/edexcel_medicine/maps/med_map_kt3_snow_soho_cholera_bazalgette_1854_75.svg",
             "hotspots": [
               {
-                "id": "soho-1",
-                "x": 50,
-                "y": 52,
+                "id": "spot-1",
+                "x": 24.3,
+                "y": 46.5,
                 "color": "#0284c7",
-                "label": "Broad St Pump",
-                "badge": "Epicentre · 8 Sept 1854",
+                "label": "1. Broad Street Pump (8 Sept)",
+                "badge": "Handle Removed • Cesspit 3 ft",
                 "date": "31 Aug – 8 Sept 1854",
-                "title": "The Broad Street Water Pump (Handle Removed)",
-                "details": "Over 500 fatal cholera cases clustered within 250 yards of this public street pump in ten days. On 7 September Snow presented his spot map to the St James’s Parish Board of Guardians, who removed the iron pump handle the next day—halting new infections from the well.",
-                "hinge": "Why was mapping exact walking distances to the nearest water pump more revealing than looking at wind direction?"
+                "title": "Broad Street Water Pump [51.5133°N, -0.1366°W]: Handle Removed & No. 40 Cesspit",
+                "details": "Over 500 fatal cholera cases clustered within 250 yards of the Broad Street pump in ten days. Persuaded by Dr John Snow’s spot map, the St James’s Parish Board removed the pump handle on 8 September 1854; Reverend Henry Whitehead later helped prove a cracked brick cesspit at No. 40 Broad Street was leaking sewage just 3 feet from the well.",
+                "hinge": "Why did mapping exact walking distances to the Broad Street pump disprove the Board of Health’s belief in airborne miasma?"
               },
               {
-                "id": "soho-2",
-                "x": 45,
-                "y": 57,
-                "color": "#dc2626",
-                "label": "40 Broad St Cesspit",
-                "badge": "Hidden Source of Sewage",
-                "date": "Excavated Autumn 1854",
-                "title": "Leaking Brick Cesspit at No. 40 Broad Street",
-                "details": "Parish curate Reverend Henry Whitehead helped trace the index case to an infant who died of diarrhoea at 40 Broad Street, whose mother washed soiled nappies into a cracked brick cesspit just three feet from the public pump well.",
-                "hinge": "How did excavating the leaking cesspit confirm Snow’s theory even before Koch isolated the cholera bacterium in 1883?"
+                "id": "spot-2",
+                "x": 27.9,
+                "y": 44.6,
+                "color": "#b45309",
+                "label": "2. Lion Brewery (0 Deaths)",
+                "badge": "~70 Workers Unharmed",
+                "date": "September 1854",
+                "title": "Lion Brewery, Broad Street [51.5135°N, -0.1357°W]: Zero Cholera Deaths",
+                "details": "Standing yards from the Broad Street pump, not a single one of the Lion Brewery’s ~70 workers died of cholera. Snow interviewed the brewery manager and confirmed workers received a free daily allowance of malt beer (brewed with boiled water) and drew water from the brewery’s own deep private well rather than the street pump.",
+                "hinge": "Why was the survival of ~70 Lion Brewery workers right beside the Broad Street pump devastating evidence against miasma theory?"
               },
               {
-                "id": "soho-3",
-                "x": 54,
-                "y": 27,
+                "id": "spot-3",
+                "x": 21.9,
+                "y": 30.5,
+                "align": "right",
                 "color": "#059669",
-                "label": "Poland St Workhouse",
-                "badge": "Crucial Anomaly #1",
+                "label": "3. St James's Workhouse",
+                "badge": "Only 5 Deaths / 535 Inmates",
                 "date": "September 1854",
-                "title": "St James’s Workhouse, Poland Street (535 Inmates, Only 5 Deaths)",
-                "details": "Surrounded on three sides by cholera-stricken houses, only 5 of the workhouse’s 535 pauper inmates died—far below Miasma expectations. Snow proved the workhouse drew water from its own deep private well and never sent inmates to the Broad Street pump.",
-                "hinge": "If cholera had been spread by miasma air blowing across Soho, what would have happened inside this crowded workhouse?"
+                "title": "St James's Parish Workhouse, Poland Street [51.5150°N, -0.1372°W]",
+                "details": "Surrounded on three sides by cholera-ravaged tenements, overcrowded St James’s Workhouse lost only 5 out of 535 pauper inmates. Snow showed the workhouse had its own separate piped water supply and private well, so inmates never drank water fetched from the Broad Street pump.",
+                "hinge": "If cholera had been caused by foul miasmatic air blowing across Soho, what mortality rate should have occurred inside this crowded workhouse?"
               },
               {
-                "id": "soho-4",
-                "x": 68,
-                "y": 50,
-                "color": "#d97706",
-                "label": "Lion Brewery",
-                "badge": "Crucial Anomaly #2",
-                "date": "September 1854",
-                "title": "The Lion Brewery, Broad Street (70 Workers, Zero Deaths)",
-                "details": "Right beside the epicentre on Broad Street, not a single one of the Lion Brewery’s 70 workers caught cholera. The proprietor confirmed his men received a free daily allowance of fermented malt liquor (made with boiled water) and never drank raw pump water.",
-                "hinge": "Why did boiling water during brewing protect the Lion Brewery workers completely?"
-              },
-              {
-                "id": "soho-5",
-                "x": 22,
+                "id": "spot-4",
+                "x": 6.3,
                 "y": 24,
-                "color": "#7c3aed",
-                "label": "Hampstead Outlier",
-                "badge": "Crucial Anomaly #3",
+                "align": "right",
+                "color": "#6d28d9",
+                "label": "4. Hampstead Widow Outlier",
+                "badge": "Susannah Eley • Bottled Water",
                 "date": "2 September 1854",
-                "title": "Widow Susannah Eley in Leafy Hampstead (Miles Away)",
-                "details": "Widow Susannah Eley and her visiting niece died of cholera miles uphill in healthy, clean-air Hampstead where no outbreak existed. Snow discovered Mrs Eley formerly lived in Soho, loved the taste of Broad Street pump water, and had a large bottle delivered by cart on 31 August!",
-                "hinge": "Why was Mrs Eley’s death in clean-air Hampstead the \"smoking gun\" against miasma theory?"
+                "title": "West End, Hampstead Outlier: Widow Susannah Eley & Carted Pump Water",
+                "details": "Four miles uphill in leafy, clean-air Hampstead—where no cholera outbreak existed—59-year-old widow Susannah Eley and her visiting niece both died of cholera. Snow discovered Mrs Eley formerly lived on Broad Street, preferred the taste of its pump water, and had a large glass bottle delivered by cart on 31 August.",
+                "hinge": "Why did Widow Susannah Eley’s death miles away in clean-air Hampstead act as Snow’s \"smoking gun\" proving waterborne transmission?"
+              },
+              {
+                "id": "spot-5",
+                "x": 68.8,
+                "y": 44.2,
+                "color": "#be123c",
+                "label": "5. Snow's ‘Grand Experiment’",
+                "badge": "Battersea 315 vs Ditton 37",
+                "date": "1854–1855",
+                "title": "South London ‘Grand Experiment’: Dirty Battersea vs Clean Thames Ditton Intakes",
+                "details": "Across South London, two rival companies piped water side-by-side down the same streets to 300,000 residents regardless of wealth. Snow proved households supplied by Southwark & Vauxhall (drawing sewage-laden Thames water at Battersea) suffered 315 deaths per 10,000 homes—over eight times higher than Lambeth Co. homes supplied upstream from clean Thames Ditton (37 per 10,000).",
+                "hinge": "Why was comparing two water companies serving neighbours on the exact same streets even stronger scientific proof than Soho alone?"
+              },
+              {
+                "id": "spot-6",
+                "x": 83.2,
+                "y": 33.7,
+                "align": "left",
+                "color": "#047857",
+                "label": "6. Bazalgette's Sewers (1858–75)",
+                "badge": "Abbey Mills & Crossness → 1875",
+                "date": "1858–1875",
+                "title": "1858 ‘Great Stink’, Sir Joseph Bazalgette’s Sewers & 1875 Public Health Act",
+                "details": "When the sweltering Summer 1858 \"Great Stink\" overwhelmed MPs at Westminster, Parliament voted £3 million for Metropolitan Board engineer Sir Joseph Bazalgette to build 82 miles of brick intercepting sewers, 1,100+ miles of street sewers, Thames embankments, and giant pumping stations at Abbey Mills and Crossness (1859–75)—eradicating London cholera and paving the way for Disraeli’s compulsory 1875 Public Health Act.",
+                "hinge": "Why did it take the 1858 Great Stink, 1861 Germ Theory, and the 1867 working-class vote to finally kill laissez-faire in the 1875 Public Health Act?"
               }
             ]
-          }
+          },
+          "image": "/images/edexcel_medicine/maps/med_map_kt3_snow_soho_cholera_bazalgette_1854_75.svg",
+          "image_alt": "Two-panel historical GIS atlas map of Victorian London public health (1854–75): Panel A plots Dr John Snow’s September 1854 Soho investigation on real WGS84 streets (Broad Street pump, No. 40 cesspit, Lion Brewery, Poland Street Workhouse, and Hampstead widow outlier); Panel B maps the Metropolitan River Thames contrasting dirty Battersea vs clean Thames Ditton water intakes alongside Sir Joseph Bazalgette’s intercepting sewer network to Abbey Mills and Crossness",
+          "caption": "Reference Map: Dr John Snow’s Soho Broad Street pump investigation (September 1854), the South London water-company \"Grand Experiment\" (Battersea vs Thames Ditton), and Sir Joseph Bazalgette’s Metropolitan intercepting sewers (1858–1875)."
         },
         {
           "act": 3,
@@ -23769,16 +24677,17 @@ export default {
             "<p><span class=\"para-ref\">[3.2]</span> When comparing **Southwark vs Lambeth**, Snow proved that homes supplied by Southwark and Vauxhall (drawing sewage-polluted water from central London) suffered over eight times more cholera deaths than Lambeth customers (drawing clean water upstream from Thames Ditton). Through this rigorous statistical study **proved waterborne cholera transmission** conclusively, although conservative medical authorities clinging to miasma theory resisted his findings for another thirty years.</p>"
           ],
           "image": "/images/snow_grand_experiment_table_1854.jpg",
-          "caption": "Table IX from Dr John Snow’s On the Mode of Communication of Cholera (1855, p. 86), proving Southwark & Vauxhall homes suffered 315 deaths per 10,000 houses versus 37 for Lambeth."
+          "caption": "Table IX from Dr John Snow’s On the Mode of Communication of Cholera (1855, p. 86), proving Southwark & Vauxhall homes suffered 315 deaths per 10,000 houses versus 37 for Lambeth.",
+          "image_alt": "Original printed page 86 showing TABLE IX from Dr John Snow’s On the Mode of Communication of Cholera (1855), contrasting 315 cholera deaths per 10,000 houses supplied by the Southwark and Vauxhall Company against 37 per 10,000 supplied by the Lambeth Company"
         },
         {
           "act": 4,
           "title": "The Great Stink of 1858 and Bazalgette's London Sewers",
           "theme_heading": "The Great Stink of 1858 and Bazalgette's London Sewers",
           "text": "<p><span class=\"para-ref\">[4.1]</span> What finally broke government inertia was not medical evidence, but political self-interest triggered by the **Great Stink of 1858**. In the sweltering summer of 1858, the Thames became an open sewer choked with raw human waste, creating a suffocating stench that penetrated the Houses of Parliament. MPs soaked curtains in chloride of lime to flee debates, forcing Parliament to pass emergency legislation within eighteen days.</p><p><span class=\"para-ref\">[4.2]</span> Parliament funded civil engineer **Sir Joseph Bazalgette’s sewer network**, constructing an unprecedented underground drainage network between 1859 and 1865. Bazalgette built eighty-two miles of massive **underground London interceptors** and over a thousand miles of street sewers, diverting London’s raw sewage eastward to Barking and Crossness. Although intended to eliminate miasma, the sewers cleansed London’s drinking water, permanently eradicating cholera from the capital by 1866.</p>",
-          "image": "/images/bazalgette_sewer.jpg",
-          "image_alt": "Nineteenth-century photograph showing the massive brick subterranean arch construction of Sir Joseph Bazalgette's London Main Drainage intercepting sewer",
-          "caption": "Bazalgette's London Sewer Construction (c.1865): Following the Great Stink of 1858, Sir Joseph Bazalgette engineered 1,100 miles of underground brick sewers, redirecting billions of gallons of London sewage east of the city, inadvertently ending cholera epidemics.",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l5_b3_bazalgette_old_ford_sewers.jpg",
+          "image_alt": "Contemporary 1859–1865 engraving titled MAIN DRAINAGE OF THE METROPOLIS.—SECTIONAL VIEW OF THE TUNNELS FROM WICK LANE, NEAR OLD FORD, BOW, LOOKING WESTWARD showing navvies and bricklayers constructing twin arched brick intercepting sewer tunnels over timber scaffolding",
+          "caption": "Main Drainage of the Metropolis — Constructing Sir Joseph Bazalgette’s Brick Sewer Tunnels at Wick Lane, Old Ford (Wellcome Collection V0020257): Triggered by the 1858 Great Stink, 318 million engineering bricks formed 82 miles of intercepting sewers and 1,100 miles of street sewers, ending major London cholera outbreaks after 1866.",
           "isReversed": true,
           "sources": [
             {
@@ -23844,8 +24753,102 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> By the 1870s, two decisive developments dismantled *laissez-faire* government in Britain: the 1867 Reform Act enfranchised working-class male town laborers, forcing politicians to address sanitary reform, while Pasteur’s 1861 Germ Theory proved scientifically that dirty water and sewage fostered deadly bacteria that caused infectious epidemic disease. This political pressure forced Benjamin Disraeli’s Conservative government to take decisive national action.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> In 1875, Disraeli’s administration enacted the landmark **1875 Public Health Act**, which decisively ended government inaction by mandating **compulsory town sewers**, clean piped water, street lighting, and dedicated medical officers of health across every municipality. This statute represented the definitive **end of laissez-faire**, establishing the modern legal principle that national government held an absolute legal duty to safeguard public sanitary health.</p>"
           ],
-          "image": "/images/victorian_slum.jpg",
-          "caption": "Gustave Doré’s 1872 wood engraving \"Over London — By Rail\", exposing the overcrowded Victorian terraced backyards and privies that drove the compulsory 1875 Public Health Act."
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Public Health Turning Point",
+            "title": "Government & Sanitation (1800–1875): Laissez-Faire ↔ 1848 Permissive ↔ 1875 Compulsory",
+            "default_index": 2,
+            "caption": "Slide or click across the three stages to see how working-class enfranchisement (1867), John Snow, the 1858 Great Stink, and Germ Theory killed laissez-faire inaction.",
+            "stops": [
+              {
+                "short_label": "1. Laissez-Faire",
+                "label": "Laissez-Faire Non-Intervention (c.1800–1847)",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Governments believed public health was not the state’s job, while ratepayer landlords (\"Dirty Party\") resisted taxes for clean water or sewers.",
+                "traits": [
+                  {
+                    "category": "State Attitude",
+                    "glyph": "leader",
+                    "value": "\"Leave Alone\" (Laissez-Faire)"
+                  },
+                  {
+                    "category": "Franchise",
+                    "glyph": "people",
+                    "value": "Working Men Had No Vote"
+                  },
+                  {
+                    "category": "1842 Warning",
+                    "glyph": "language",
+                    "value": "Chadwick’s Sanitary Report"
+                  },
+                  {
+                    "category": "Urban Reality",
+                    "glyph": "law",
+                    "value": "Overflowing Cesspits & Cholera"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. 1848 Public Health Act",
+                "label": "1848 Public Health Act (Permissive First Step)",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Triggered by Edwin Chadwick and the 1848 cholera epidemic, establishing a Central Board of Health—but making local sanitary action optional in most towns.",
+                "traits": [
+                  {
+                    "category": "Key Architect",
+                    "glyph": "leader",
+                    "value": "Edwin Chadwick (Board of Health)"
+                  },
+                  {
+                    "category": "Fatal Weakness",
+                    "glyph": "law",
+                    "value": "Permissive (Optional), Not Forced"
+                  },
+                  {
+                    "category": "28+ Death Rule",
+                    "glyph": "people",
+                    "value": "Compulsory Only If Death Rate >23/1,000"
+                  },
+                  {
+                    "category": "1854 Setback",
+                    "glyph": "language",
+                    "value": "Central Board Abolished in 1858"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. 1875 Public Health Act",
+                "label": "1875 Compulsory Public Health Act (Death of Laissez-Faire)",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "Driven by the 1867 working-class male vote and 1861 Germ Theory, Disraeli’s government forced every council in Britain to provide clean water and sewers.",
+                "traits": [
+                  {
+                    "category": "Political Catalyst",
+                    "glyph": "people",
+                    "value": "1867 Reform Act (Workers Vote)"
+                  },
+                  {
+                    "category": "Scientific Proof",
+                    "glyph": "language",
+                    "value": "1861 Germ Theory Accepted"
+                  },
+                  {
+                    "category": "Legal Mandate",
+                    "glyph": "law",
+                    "value": "Compulsory Sewers, Water & Rubbish"
+                  },
+                  {
+                    "category": "Inspectors",
+                    "glyph": "leader",
+                    "value": "Medical Officers & Sanitary Inspectors"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "vocab": [
@@ -24059,7 +25062,8 @@ export default {
           "source_context": "Snow was already a famous anaesthetist who had administered chloroform to Queen Victoria. During the terrifying September 1854 Soho outbreak, which killed over 500 people in ten days, he went door-to-door interviewing residents to record their water sources.",
           "src": "/images/snow_cholera_map.jpg",
           "question_type": "Turning Point & Limits",
-          "source": "/images/snow_cholera_map.jpg"
+          "source": "/images/snow_cholera_map.jpg",
+          "image_alt": "Dr John Snow’s 1854–1855 Soho street spot map (lithographed by C. F. Cheffins) plotting stacked black mortality bars around the Broad Street water pump alongside Golden Square, Poland Street Workhouse, and the Broad Street Brewery"
         },
         {
           "id": "med_l15_source_snow_vs_board",
@@ -24114,13 +25118,13 @@ export default {
           "enquiry_question": "What does the July 1858 Punch cartoon in Source D reveal about why Parliament finally paid £3 million for Joseph Bazalgette’s London sewers?",
           "source_context": "During the blistering summer heatwave of June–July 1858, raw human sewage baking on the banks of the Thames overwhelmed the newly rebuilt Palace of Westminster, where curtains were soaked in chloride of lime. Within weeks of Leech’s cartoon, Parliament rushed through the Metropolis Local Management Amendment Act enabling Bazalgette’s sewer network.",
           "question_type": "Turning Point & Limits",
-          "image": "/images/father_thames_punch_1858.jpg",
-          "image_alt": "Satirical wood engraving by John Leech in Punch magazine (3 July 1858) showing filthy Father Thames rising from polluted sewage water to present hideous figures personifying Diphtheria, Scrofula, and Cholera to Britannia beside the Houses of Parliament",
-          "caption": "Satirical Punch cartoon (3 July 1858) showing \"Father Thames\" emerging from sewage sludge to present Diphtheria, Scrofula, and Cholera to a horrified Britannia during the Great Stink.",
+          "image": "/images/edexcel_medicine/kt3/med_kt3_l5_s3_father_thames_punch_1858.jpg",
+          "image_alt": "Full-page satirical wood engraving by John Leech in Punch, or the London Charivari (3 July 1858) titled FATHER THAMES INTRODUCING HIS OFFSPRING TO THE FAIR CITY OF LONDON showing filthy Father Thames rising from dead-animal-strewn sewage sludge to present Diphtheria, Scrofula, and Cholera to a recoiling Britannia",
+          "caption": "Satirical Punch cartoon (John Leech, 3 July 1858, Vol. XXXV, p. 5) showing filthy \"Father Thames\" emerging from sewage sludge to present Diphtheria, Scrofula, and Cholera to a horrified Britannia during the Great Stink.",
           "provenance": "Wood-engraved political cartoon by John Leech, Punch, or the London Charivari, 3 July 1858.",
           "image_url": "/images/father_thames_punch_1858.jpg",
           "desc": "Satirical Punch cartoon (3 July 1858) showing \"Father Thames\" emerging from sewage sludge to present Diphtheria, Scrofula, and Cholera to a horrified Britannia during the Great Stink.",
-          "src": "/images/father_thames_punch_1858.jpg",
+          "src": "/images/edexcel_medicine/kt3/med_kt3_l5_s3_father_thames_punch_1858.jpg",
           "source": "/images/father_thames_punch_1858.jpg"
         },
         {
@@ -24831,10 +25835,15 @@ export default {
           "explanation": "By compelling local authorities to protect sanitation, the 1875 Act ended laissez-faire government inaction."
         }
       ],
-      "banner": "/images/med_banner_kt3_5_bazalgette_sewage.jpg",
-      "card_image": "/images/med_banner_kt3_5_bazalgette_sewage.jpg",
-      "hero_image": "/images/med_banner_kt3_5_bazalgette_sewage.jpg",
-      "banner_position": "center 60%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
+        "alt": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) titled SECTION OF THE THAMES EMBANKMENT, 1867 showing Sir Joseph Bazalgette’s subterranean brick Low-Level Intercepting Sewer, pipe subway, and underground railway beneath the river wall",
+        "position": "center 48%",
+        "caption": "Cutaway Engineering Section of Sir Joseph Bazalgette’s Thames Embankment & Low-Level Intercepting Sewer (The Illustrated London News, 22 June 1867, Wellcome Collection M0010346): Built after the 1858 Great Stink to carry London’s sewage safely downstream away from drinking-water intakes."
+      },
+      "card_image": "/images/edexcel_medicine/kt3/med_kt3_l5_b3_bazalgette_old_ford_sewers.jpg",
+      "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
+      "banner_position": "center 48%",
       "card_position": "center 60%",
       "inquiry_question": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?",
       "key_individual": {
@@ -25004,7 +26013,8 @@ export default {
             "Compulsory law forcing all town councils to supply clean water and sewers."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg"
     },
     {
       "id": "lesson_4_1",
@@ -25114,7 +26124,7 @@ export default {
           "content": "<p><span class=\"para-ref\">[1.1]</span> In the early twentieth century, Germ Theory explained how external bacteria caused epidemic infections, but doctors could not explain why conditions like haemophilia ran in families. In 1900, scientists rediscovered **Gregor Mendel’s genetics** research from 1866. By cross-breeding thousands of pea plants, Mendel proved that physical characteristics were inherited in predictable mathematical ratios through invisible units later named genes.</p><p><span class=\"para-ref\">[1.2]</span> Under high-powered laboratory compound microscopes, cellular **chromosomes were observed** inside cell nuclei, but scientists could not decipher their complex chemical structure. For decades, researchers operated with an **unknown hereditary mechanism**, mistakenly assuming complex bodily proteins carried genetic instructions. Without understanding how genetic code was chemically stored, doctors remained entirely powerless to treat hereditary disorders or prevent inherited diseases.</p>",
           "theme": "Mendel, Heredity & The Chromosomal Mystery (c1900–1940s)",
           "image": "/images/gregor_mendel_pea_experiments.jpg",
-          "image_alt": "Archival portrait of Augustinian friar Gregor Mendel alongside botanical illustrations of garden pea plant pods, flowers, and round vs wrinkled seeds",
+          "image_alt": "Archival oval portrait photograph of Augustinian friar and Abbot Gregor Johann Mendel wearing oval wire-rimmed spectacles, dark clerical cassock, and an abbot’s pectoral cross",
           "caption": "Gregor Johann Mendel (1822–1884, Abbot of St Thomas’s Abbey, Brno): Cross-breeding over 28,000 pea plants between 1856 and 1863, Mendel established the mathematical laws of dominant and recessive hereditary units—rediscovered in 1900 as the foundation of modern genetics.",
           "sources": [
             {
@@ -25222,16 +26232,17 @@ export default {
           ],
           "image": "/images/med_svg_dna_to_genomics.svg",
           "caption": "Timeline diagram tracing modern genetics from Watson, Crick, Franklin, and Wilkins’s 1953 double-helix DNA model through the Human Genome Project (1990–2003) to targeted gene screening.",
-          "image_caption": "Timeline diagram tracing modern genetics from Watson, Crick, Franklin, and Wilkins’s 1953 double-helix DNA model through the Human Genome Project (1990–2003) to targeted gene screening."
+          "image_caption": "Timeline diagram tracing modern genetics from Watson, Crick, Franklin, and Wilkins’s 1953 double-helix DNA model through the Human Genome Project (1990–2003) to targeted gene screening.",
+          "image_alt": "Infographic progression diagram tracing modern genetics from Rosalind Franklin, James Watson, and Francis Crick’s 1953 DNA double-helix base-pairing model to the Human Genome Project (1990–2003) and clinical gene screening"
         },
         {
           "act": 4,
           "title": "The Human Genome Project (1990–2003)",
           "theme_heading": "The Human Genome Project (1990–2003)",
           "text": "<p><span class=\"para-ref\">[4.1]</span> Deciphering DNA's molecular structure led directly to the launch of the **Human Genome Project** in 1990. Coordinated by international public bodies, including Britain’s Wellcome Trust and Medical Research Council alongside American laboratories, this global scientific consortium set out to decode the complete instruction manual of human life. It was an extraordinary triumph of **international teamwork**, publishing all genomic findings freely online.</p><p><span class=\"para-ref\">[4.2]</span> By April 2003, researchers had successfully **mapped three billion base pairs** across twenty-five thousand human genes. Utilising automated computer sequencing, scientists pinpointed the precise chromosomal locations of over four thousand faulty genes responsible for inherited conditions, including sickle cell anaemia, cystic fibrosis, and hereditary forms of breast and bowel cancer, transforming medical understanding of pathology.</p>",
-          "image": "/images/dna_sequencing_sanger_lab.jpg",
-          "image_alt": "Automated capillary DNA sequencing machines in an international genomics laboratory during the Human Genome Project",
-          "caption": "The Human Genome Project (1990–2003): International public research consortium—including the Wellcome Sanger Institute near Cambridge—that mapped all three billion chemical base pairs of human DNA.",
+          "image": "/images/edexcel_medicine/kt4/med_kt4_1_b3_hgp_capillary_sequencer_doe.jpg",
+          "image_alt": "Two Human Genome Project researchers in a darkened laboratory aligning blue and green laser beams across capillary electrophoresis optics while multicoloured DNA base-sequence peaks appear on a computer monitor",
+          "caption": "High-Speed Laser Capillary DNA Sequencing (Human Genome Project, 1990–2003): Researchers calibrate laser-induced fluorescence across capillary electrophoresis arrays to read colour-coded DNA base peaks on screen—automated technology shared across 18 countries, including the Wellcome Sanger Institute near Cambridge, to map all three billion human base pairs (U.S. Department of Energy Human Genome Program, HD.17.102).",
           "isReversed": true,
           "sources": [
             {
@@ -25297,9 +26308,107 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Decoding the human genome transformed clinical diagnostics, enabling routine **genetic screening** to identify individuals carrying hereditary disorders before clinical symptoms appear. For instance, **BRCA1/2 gene testing** allows women with family histories of breast cancer to assess their personal risk and elect for preventative mastectomies, transforming medicine from reactive emergency treatment into proactive, personalised genetic risk management.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> However, a persistent **gene therapy lag** means that while identifying faulty chromosomes is now rapid and inexpensive, repairing or replacing defective genes inside living tissues remains extraordinarily difficult and costly. Doctors can diagnose thousands of inherited conditions with absolute precision, but effective clinical cures remain elusive, leaving a substantial gap between scientific diagnosis and practical bedside treatment.</p>"
           ],
-          "image": "/images/med_stage_dna_microarray_screening.jpg",
-          "caption": "Human Chromosomal Karyotype Map (National Human Genome Research Institute): Mapping all 22 autosome pairs alongside the XX and XY sex chromosomes enables modern clinical geneticists to screen embryos and adults for inherited conditions, even where curative gene therapies still lag behind.",
-          "image_alt": "Clinical diagram of a banded human karyotype displaying autosome pairs 1 to 22 alongside male XY and female XX sex chromosomes"
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Genetics & Exam Crux",
+            "title": "Genetics Breakthroughs vs The Treatment Gap (1953–Present)",
+            "default_index": 3,
+            "caption": "Click through the four milestones to see why decoding DNA transformed disease identification and screening far faster than routine cures for inherited disorders.",
+            "items": [
+              {
+                "tab_label": "1. Double Helix (1953)",
+                "title": "Cracking the Structure of DNA",
+                "dates": "May 1952 – April 1953",
+                "badge": "Cause Explained",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Key Evidence",
+                    "value": "Franklin’s X-Ray Photo 51"
+                  },
+                  {
+                    "label": "Cambridge Model",
+                    "value": "Watson & Crick Double Helix"
+                  },
+                  {
+                    "label": "Clinical Impact",
+                    "value": "Explained Faulty Gene Copying"
+                  }
+                ],
+                "takeaway": "Revealing A–T and C–G base pairing proved how hereditary conditions like haemophilia and cystic fibrosis are passed on through copying errors in DNA, even though doctors could not yet repair genes."
+              },
+              {
+                "tab_label": "2. Genome Map (2003)",
+                "title": "The Human Genome Project (HGP)",
+                "dates": "1990–2003",
+                "badge": "3bn Base Pairs",
+                "color": "#0891b2",
+                "bg_color": "rgba(8, 145, 178, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Global Team",
+                    "value": "18-Country Public Consortium"
+                  },
+                  {
+                    "label": "UK Hub",
+                    "value": "Wellcome Sanger Institute"
+                  },
+                  {
+                    "label": "Achievement",
+                    "value": "~20,000 Human Genes Mapped"
+                  }
+                ],
+                "takeaway": "Using robotic capillary sequencers and supercomputers, scientists published a free reference blueprint of human DNA so researchers worldwide could pinpoint specific disease-linked mutations."
+              },
+              {
+                "tab_label": "3. Gene Screening",
+                "title": "BRCA1/2, Prenatal & Newborn Screening",
+                "dates": "1990s–Present",
+                "badge": "Preventive Gain",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Cancer Risk",
+                    "value": "BRCA1/2 Breast & Ovarian Tests"
+                  },
+                  {
+                    "label": "Prenatal / Baby",
+                    "value": "Down’s, Cystic Fibrosis & PKU"
+                  },
+                  {
+                    "label": "Pharmacogenomics",
+                    "value": "Matching Drugs to Tumour DNA"
+                  }
+                ],
+                "takeaway": "Carriers of faulty BRCA1 or BRCA2 genes (publicised by Angelina Jolie) can choose regular MRI surveillance or preventive mastectomy before cancer ever develops."
+              },
+              {
+                "tab_label": "4. Treatment Gap",
+                "title": "Why Genetic Diagnosis Outpaced Gene Cures",
+                "dates": "2000s–Present",
+                "badge": "Paper 1 Exam Crux",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Biological Barrier",
+                    "value": "Editing Billions of Adult Cells"
+                  },
+                  {
+                    "label": "Complex Diseases",
+                    "value": "Many Genes + Lifestyle Mix"
+                  },
+                  {
+                    "label": "Current Frontier",
+                    "value": "Early Gene & Stem-Cell Trials"
+                  }
+                ],
+                "takeaway": "Just as Pasteur’s 1861 Germ Theory preceded magic bullets by nearly fifty years, reading faulty DNA is far easier than safely rewriting genes across living human organs—leaving a major gap between diagnosis and cure."
+              }
+            ]
+          }
         }
       ],
       "vocab": [
@@ -26404,10 +27513,15 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt4_1_dna_sequencing.jpg",
-      "hero_image": "/images/med_banner_kt4_1_dna_sequencing.jpg",
-      "banner_position": "center 34%",
-      "card_image": "/images/med_banner_kt4_1_dna_sequencing.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
+        "alt": "Two National Cancer Institute genetic researchers in laboratory coats examining dark vertical base-pair bands on illuminated X-ray DNA sequencing autoradiograph gels mounted on a lightbox",
+        "position": "center 38%",
+        "caption": "Reading the Genetic Code: National Cancer Institute researchers inspect X-ray autoradiograph DNA sequencing gel columns, tracing the chemical sequence of adenine, thymine, cytosine, and guanine base pairs (Linda Bartlett, National Cancer Institute, NIH ID 2018)."
+      },
+      "hero_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
+      "banner_position": "center 38%",
+      "card_image": "/images/edexcel_medicine/kt4/med_kt4_1_cameo_francis_crick_wellcome.jpg",
       "card_position": "center 34%",
       "topic": "Genetics, DNA & Lifestyle Factors",
       "key_topic": "KT4: c1900–present: Medicine in Modern Britain",
@@ -26521,11 +27635,12 @@ export default {
             "Testing a person’s DNA to spot inherited disease risks before symptoms start."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg"
     },
     {
       "id": "lesson_4_2",
-      "banner_position": "center 40%",
+      "banner_position": "center 42%",
       "title": "KT4.2: Lifestyle Factors & The Technological Revolution in Diagnosis (c.1900–present)",
       "specification_anchor": "Ideas about the cause of disease and illness: lifestyle factors (smoking, diet, alcohol); improvements in diagnosis: laboratories, X-rays, scans (CT, MRI), endoscopes, monitors.",
       "enquiry_question": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?",
@@ -26731,14 +27846,112 @@ export default {
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> While conventional X-rays clearly revealed dense skeletal structures, they could not depict soft internal organs, leaving brain tumours and internal bleeding invisible behind bone shadows. In 1971, British electrical engineer **Godfrey Hounsfield** resolved this problem by inventing Computerised Tomography, creating commercial **EMI CT body scanning** systems that revolutionised diagnostic imaging across modern hospital medicine.</p><p><span class=\"para-ref\">[3.2]</span> CT scanners directed rotating X-ray beams through patients, using powerful computers to assemble thousands of cross-sectional measurements into detailed three-dimensional images of internal organs. By the 1980s, **MRI magnetic imaging** advanced diagnostics further, using strong magnetic fields and radio frequencies to image delicate brain tissue, spinal cords, and ligaments without exposing patients to ionising radiation, achieving unprecedented diagnostic clarity.</p>",
           "theme": "Godfrey Hounsfield, CT Scans & MRI (1971–1980s)",
-          "image": "/images/med_stage_mri_scanner_3t.png",
-          "image_alt": "Modern hospital magnetic resonance imaging (MRI) scanner suite with circular superconducting magnet bore",
-          "caption": "Modern Hospital 3-Tesla Magnetic Resonance Imaging (MRI) Scanner (Philips Achieva 3.0T): Combining Godfrey Hounsfield’s 1971 CT breakthrough with magnetic resonance technology (late 1970s–1980s), MRI produces high-resolution 3D scans of soft tissues, brain tumours, and ligaments without ionising radiation.",
           "isReversed": true,
           "paragraphs": [
             "<p><span class=\"para-ref\">[3.1]</span> While conventional X-rays clearly revealed dense skeletal structures, they could not depict soft internal organs, leaving brain tumours and internal bleeding invisible behind bone shadows. In 1971, British electrical engineer **Godfrey Hounsfield** resolved this problem by inventing Computerised Tomography, creating commercial **EMI CT body scanning** systems that revolutionised diagnostic imaging across modern hospital medicine.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> CT scanners directed rotating X-ray beams through patients, using powerful computers to assemble thousands of cross-sectional measurements into detailed three-dimensional images of internal organs. By the 1980s, **MRI magnetic imaging** advanced diagnostics further, using strong magnetic fields and radio frequencies to image delicate brain tissue, spinal cords, and ligaments without exposing patients to ionising radiation, achieving unprecedented diagnostic clarity.</p>"
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Diagnostic Toolkit",
+            "title": "Modern Non-Invasive Diagnostics (1895–Present)",
+            "default_index": 3,
+            "caption": "Compare the four technological breakthroughs that allowed twentieth-century doctors to diagnose internal disease accurately without exploratory surgery.",
+            "items": [
+              {
+                "tab_label": "1. X-Rays (1895)",
+                "title": "Röntgen’s X-Rays & Mobile Radiography",
+                "dates": "1895–1918",
+                "badge": "Skeletal Imaging",
+                "color": "#6366f1",
+                "bg_color": "rgba(99, 102, 241, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Pioneer",
+                    "value": "Wilhelm Röntgen (Würzburg, 1895)"
+                  },
+                  {
+                    "label": "WWI Innovation",
+                    "value": "Marie Curie’s 20 Mobile Vans"
+                  },
+                  {
+                    "label": "Key Limitation",
+                    "value": "Flat 2D Bone Shadows & Radiation"
+                  }
+                ],
+                "takeaway": "X-rays passed through soft flesh to reveal fractures, tuberculosis lesions, and shrapnel without cutting the patient open, though soft organs remained hidden behind bone."
+              },
+              {
+                "tab_label": "2. Blood & Monitors",
+                "title": "Pathology Labs, ECGs & Biometric Monitors",
+                "dates": "1901–Present",
+                "badge": "Biochemical Data",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Lab Milestones",
+                    "value": "1901 ABO Groups & Auto-Analysers"
+                  },
+                  {
+                    "label": "Ward Tracking",
+                    "value": "ECG, Blood-Pressure & Oximeters"
+                  },
+                  {
+                    "label": "Patient Self-Care",
+                    "value": "Finger-Prick Glucose & Wearables"
+                  }
+                ],
+                "takeaway": "Automated blood chemistry tests detect cholesterol, diabetes, kidney failure, and cancer biomarkers from a single vial long before outward symptoms appear."
+              },
+              {
+                "tab_label": "3. Endoscopes",
+                "title": "Flexible Fibre-Optic Endoscopy",
+                "dates": "1950s–1960s",
+                "badge": "Internal Camera",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Core Technology",
+                    "value": "Coated Glass Fibre-Optic Bundles"
+                  },
+                  {
+                    "label": "Clinical Reach",
+                    "value": "Stomach, Colon, Joints & Airways"
+                  },
+                  {
+                    "label": "Dual Function",
+                    "value": "Live Colour View + Tissue Biopsy"
+                  }
+                ],
+                "takeaway": "Flexible endoscopes and bronchoscopes let hospital specialists inspect ulcers, internal bleeding, and suspicious growths directly and snip biopsy samples without major open surgery."
+              },
+              {
+                "tab_label": "4. CT & MRI Scans",
+                "title": "Hounsfield’s 3D CT (1971) & MRI Scanners (1980s)",
+                "dates": "1971–Present",
+                "badge": "3D Soft-Tissue",
+                "color": "#0ea5e9",
+                "bg_color": "rgba(14, 165, 233, 0.2)",
+                "metrics": [
+                  {
+                    "label": "CT Inventor",
+                    "value": "Godfrey Hounsfield (EMI, 1971)"
+                  },
+                  {
+                    "label": "CT + PET-CT",
+                    "value": "Rotating Computer X-Ray + Tracer"
+                  },
+                  {
+                    "label": "MRI Advantage",
+                    "value": "Magnets & Radio Waves (No X-Rays)"
+                  }
+                ],
+                "takeaway": "Computers assemble thousands of cross-sectional slices into 3D maps of the brain, lungs, and ligaments, pinpointing early tumours and strokes invisibly hidden from standard X-rays."
+              }
+            ]
+          }
         },
         {
           "act": 4,
@@ -27916,9 +29129,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
+      "banner": {
+        "image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
+        "alt": "Hospital computed tomography (CT) control-room console displaying four cross-sectional brain scans in the foreground while a radiographer positions a supine patient inside the circular CT scanner gantry behind the observation window",
+        "position": "center 42%",
+        "caption": "Non-Invasive 3D Clinical Imaging: A hospital CT control console displays four axial cross-sectional scans while a radiographer prepares a patient inside the rotating scanner gantry behind leaded observation glass."
+      },
       "hero_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
-      "card_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
+      "card_image": "/images/edexcel_medicine/kt4/med_kt4_2_cameo_wilhelm_roentgen.jpg",
       "card_position": "center 40%",
       "topic": "Magic Bullets, Antibiotics & High-Tech Diagnostics",
       "key_topic": "KT4: c1900–present: Medicine in Modern Britain",
@@ -28034,16 +29252,18 @@ export default {
             "Radiation-free scan using magnets and radio waves to image soft organs clearly."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg"
     },
     {
       "id": "lesson_4_3",
       "banner": {
         "image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
-        "caption": "Uniformed Nurses in a Hospital Ward at St Bartholomew's Hospital, London",
-        "position": "center 28%"
+        "alt": "Uniformed hospital nurses in starched white aprons and caps standing beside iron patient beds in a spacious brick-pillared ward at St Bartholomew’s Hospital, London (c. 1908)",
+        "position": "center 44%",
+        "caption": "Early Twentieth-Century Hospital Nursing Care: Uniformed nurses tend iron beds in a clean ward at St Bartholomew’s Hospital, London (c. 1908, Wellcome Collection V0028973) — one of Britain’s historic voluntary hospitals later integrated into the National Health Service in July 1948."
       },
-      "banner_position": "center 28%",
+      "banner_position": "center 44%",
       "title": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
       "specification_anchor": "Advances in medicines: magic bullets (Salvarsan 606, Prontosil); high-tech medical and surgical treatments; public health: the National Health Service (1948).",
       "enquiry_question": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?",
@@ -28169,9 +29389,9 @@ export default {
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> By 1900, bacteriology had identified specific disease-causing microbes, but doctors lacked chemical treatments that could kill bacteria inside living patients without causing fatal poisoning. In Germany, scientist **Paul Ehrlich** pioneered chemotherapy, introducing the revolutionary **magic bullet concept**—a synthetic chemical compound that would seek out and destroy specific microbes while leaving surrounding bodily tissues completely unharmed.</p><p><span class=\"para-ref\">[1.2]</span> Working with Japanese bacteriologist Sahachiro Hata, Ehrlich systematically tested hundreds of arsenic chemical derivatives. In 1909, their 606th experimental compound successfully destroyed the spirochaete bacterium responsible for syphilis. Developed in **1909** and marketed internationally as **Salvarsan 606**, this became the world's first synthetic chemical cure, proving scientifically that targeted chemical compounds could eradicate specific internal bacterial infections inside the living human body.</p>",
           "theme": "Paul Ehrlich & Salvarsan 606 (1906–1909)",
-          "image": "/images/paul_ehrlich_lab.jpg",
-          "image_alt": "Archival photograph of German bacteriologist Paul Ehrlich in a dark suit and pince-nez spectacles holding a glass test tube above reagent bottles in his Frankfurt laboratory (c.1910)",
-          "caption": "Paul Ehrlich in his Frankfurt Laboratory (c.1910): Wearing pince-nez spectacles, Nobel laureate Paul Ehrlich inspects a chemical reagent tube. Working with Japanese bacteriologist Sahachiro Hata in 1909, Ehrlich’s team identified Compound 606 (Salvarsan), the first synthetic \"magic bullet\" cure for syphilis.",
+          "image": "/images/edexcel_medicine/kt4/med_kt4_3_b0_ehrlich_hata_salvarsan_wellcome.jpg",
+          "image_alt": "Double portrait photograph of German Nobel laureate Paul Ehrlich in spectacles and dark suit alongside Japanese bacteriologist Sahachiro Hata in a white laboratory coat examining experimental notes in Frankfurt (c. 1909–1910)",
+          "caption": "Discoverers of the First \"Magic Bullet\" (Frankfurt, c. 1909–1910): German immunologist Paul Ehrlich (left) and Japanese bacteriologist Sahachiro Hata (right), whose systematic re-testing of arsenic derivatives identified Compound 606 (Salvarsan) as the first targeted synthetic chemical cure for syphilis (Wellcome Collection M0013258).",
           "isReversed": false,
           "paragraphs": [
             "<p><span class=\"para-ref\">[1.1]</span> By 1900, bacteriology had identified specific disease-causing microbes, but doctors lacked chemical treatments that could kill bacteria inside living patients without causing fatal poisoning. In Germany, scientist **Paul Ehrlich** pioneered chemotherapy, introducing the revolutionary **magic bullet concept**—a synthetic chemical compound that would seek out and destroy specific microbes while leaving surrounding bodily tissues completely unharmed.</p>",
@@ -28248,7 +29468,8 @@ export default {
             "<p><span class=\"para-ref\">[3.2]</span> In December 1942, economist William Beveridge published the landmark **1942 Beveridge Report**, proposing a comprehensive system of social insurance to slay the **Five Giant Evils**: Want, Disease, Ignorance, Squalor, and Idleness. The report became an instant bestseller, laying the architectural foundation for a **post-war welfare state** that guaranteed medical care as a fundamental universal right for all citizens.</p>"
           ],
           "image": "/images/med_stage_beveridge_ems_1942.jpg",
-          "caption": "Social Insurance and Allied Services: Report by Sir William Beveridge (Cmd. 6404, HMSO, November 1942): Selling over 600,000 copies to wartime Britons, the Beveridge Report identified \"Disease\" as one of the Five Giant Evils and proposed a comprehensive national health service."
+          "caption": "Social Insurance and Allied Services: Report by Sir William Beveridge (Cmd. 6404, HMSO, November 1942): Selling over 600,000 copies to wartime Britons, the Beveridge Report identified \"Disease\" as one of the Five Giant Evils and proposed a comprehensive national health service.",
+          "image_alt": "Original printed title page of Social Insurance and Allied Services: Report by Sir William Beveridge (Cmd. 6404), presented to Parliament in November 1942 and published by His Majesty’s Stationery Office at two shillings net"
         },
         {
           "act": 4,
@@ -28343,8 +29564,107 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Following the creation of the NHS, British hospitals embraced high-tech surgery. In 1962, Sir John Charnley perfected low-friction **hip replacement surgery**, restoring mobility to hundreds of thousands of elderly patients. Simultaneously, mechanical **kidney dialysis units** cleansed toxic blood in patients suffering renal failure, while organ transplants and minimally invasive keyhole operations drastically accelerated patient recovery and reduced surgical trauma.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> However, clinical success created severe financial challenges. An aging population, public expectations of modern pharmaceuticals, and expensive diagnostic technologies generated **rising NHS cost pressures**. Managing escalating hospital budgets for cutting-edge treatments while maintaining Bevan’s founding principle of free universal access at the point of delivery remains the primary structural dilemma of contemporary British healthcare.</p>"
           ],
-          "image": "/images/robotic_surgery_da_vinci.jpg",
-          "caption": "Multi-arm Intuitive da Vinci robotic surgical system positioned over an operating table, enabling high-precision keyhole procedures inside modern hospitals."
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Hospital Medicine Deck",
+            "title": "High-Tech Modern Hospital Treatments & Escalating NHS Costs",
+            "default_index": 2,
+            "caption": "Explore the four pillars of post-1948 high-tech hospital care and why clinical success created severe long-term funding pressures for the NHS.",
+            "items": [
+              {
+                "tab_label": "1. Cancer Therapy",
+                "title": "Radiotherapy & Combined Chemotherapy",
+                "dates": "1940s–Present",
+                "badge": "Medical Physics",
+                "color": "#8b5cf6",
+                "bg_color": "rgba(139, 92, 246, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Radiation Tech",
+                    "value": "Rotating LINAC & CyberKnife Beams"
+                  },
+                  {
+                    "label": "Drug Evolution",
+                    "value": "Cytotoxic Chemo → Immunotherapy"
+                  },
+                  {
+                    "label": "Patient Gain",
+                    "value": "Shrinks Deep Inoperable Tumours"
+                  }
+                ],
+                "takeaway": "Computer-guided radiation beams and multi-drug chemotherapy turned formerly fatal leukaemias, lymphomas, and solid tumours into treatable conditions across specialist NHS oncology centres."
+              },
+              {
+                "tab_label": "2. Dialysis & Heart",
+                "title": "Kidney Haemodialysis, Pacemakers & Bypass Surgery",
+                "dates": "1940s–1960s",
+                "badge": "Vital Organ Support",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Renal Support",
+                    "value": "Artificial Kidney Dialysis Machines"
+                  },
+                  {
+                    "label": "Heart Tech",
+                    "value": "1958 Pacemakers & Heart-Lung Bypass"
+                  },
+                  {
+                    "label": "Clinical Shift",
+                    "value": "Stopped Heart Surgery Made Possible"
+                  }
+                ],
+                "takeaway": "External machines capable of filtering toxic blood or oxygenating circulation temporarily enabled surgeons to repair blocked coronary arteries and defective heart valves directly."
+              },
+              {
+                "tab_label": "3. Joints & Keyhole",
+                "title": "Prosthetic Joints, Keyhole & Robotic Surgery",
+                "dates": "1962–Present",
+                "badge": "Minimally Invasive",
+                "color": "#0ea5e9",
+                "bg_color": "rgba(14, 165, 233, 0.2)",
+                "metrics": [
+                  {
+                    "label": "1962 Pioneer",
+                    "value": "Sir John Charnley (Hip Replacement)"
+                  },
+                  {
+                    "label": "Keyhole Ports",
+                    "value": "Fibre-Optic Laparoscopic Surgery"
+                  },
+                  {
+                    "label": "Robotic Arms",
+                    "value": "Tremor-Free Microsurgical Control"
+                  }
+                ],
+                "takeaway": "Titanium-and-polyethylene joint prosthetics restored mobility to millions, while tiny keyhole incisions and robotic wrists slashed blood loss, infection risk, and hospital bed stays."
+              },
+              {
+                "tab_label": "4. Transplants",
+                "title": "Organ Transplants & Rising NHS Cost Pressures",
+                "dates": "1954–Present",
+                "badge": "Rejection Solved",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Landmark Firsts",
+                    "value": "1960 UK Kidney • 1967/68 Heart"
+                  },
+                  {
+                    "label": "1970s–80s Key",
+                    "value": "Cyclosporine Immunosuppressants"
+                  },
+                  {
+                    "label": "NHS Dilemma",
+                    "value": "Longer Lives + Costly Tech vs Tax"
+                  }
+                ],
+                "takeaway": "Anti-rejection drugs made kidney, heart, liver, and lung transplants routine—yet keeping an aging British population alive with expensive machines and patented drugs stretches free universal NHS budgets relentlessly."
+              }
+            ]
+          }
         }
       ],
       "vocab": [
@@ -28602,7 +29922,7 @@ export default {
           "title": "Source D: The Battle Over the NHS (1946–1948) — Aneurin Bevan vs The British Medical Association (BMA)",
           "provenance": "Comparison of Health Minister Aneurin Bevan’s NHS Bill speech (30 April 1946) & 1948 Ministry of Health Leaflet alongside the BMA Representative Plebiscite Statement (January 1948).",
           "citation": "Hansard HC Deb 30 April 1946 vol 422 cc43–63; Ministry of Health Leaflet MH 55/933 (1948); BMJ Statement of the BMA Council (Jan 1948).",
-          "caption": "Policy clash between Aneurin Bevan’s vision of tax-funded care free at the point of need and BMA doctors’ fear of losing clinical independence and private income.",
+          "caption": "Health Minister Aneurin Bevan Defending the New NHS (February 1949): Photographed by Geoff Charles at Corwen Pavilion shortly after launching the National Health Service, Bevan had overcome fierce British Medical Association plebiscite resistance by preserving GPs’ independent capitation contracts and hospital consultants’ private pay-beds (National Library of Wales, CC BY-SA 4.0).",
           "desc": "Policy clash between Aneurin Bevan’s vision of tax-funded care free at the point of need and BMA doctors’ fear of losing clinical independence and private income.",
           "source_context": "In February 1948, over 40,800 doctors voted 9-to-1 against joining the NHS before Bevan won consultants over (\"stuffed their mouths with gold\") by allowing private pay-beds inside NHS hospitals and preserving GPs as independent contractors.",
           "teacher_notes": {
@@ -28613,8 +29933,8 @@ export default {
           "question": "Why did the British Medical Association oppose the NHS so fiercely in 1946–48, and how did Aneurin Bevan secure doctors’ support by 5 July 1948?",
           "enquiry_question": "Why did the British Medical Association oppose the NHS so fiercely in 1946–48, and how did Aneurin Bevan secure doctors’ support by 5 July 1948?",
           "model_answer": "Bevan argued healthcare must never depend on a patient’s bank balance, uniting 2,688 charity and council hospitals under tax funding. BMA doctors feared becoming salaried civil servants directed by Whitehall and losing lucrative private fees and the sale of GP practices. Bevan broke the deadlock pragmatically—guaranteeing GPs independent capitation contracts and letting hospital consultants keep private pay-beds—so over 90% of doctors joined by launch day.",
-          "image": "/images/nhs_established.jpg",
-          "src": "/images/nhs_established.jpg",
+          "image": "/images/edexcel_medicine/kt4/med_kt4_3_s3_aneurin_bevan_speaking_1949.jpg",
+          "src": "/images/edexcel_medicine/kt4/med_kt4_3_s3_aneurin_bevan_speaking_1949.jpg",
           "source": "/images/nhs_established.jpg",
           "perspective_pair": {
             "framing_note": "Launching the NHS on 5 July 1948 required overcoming eighteen months of fierce resistance from the British Medical Association.",
@@ -28634,7 +29954,8 @@ export default {
               "text_type": "primary_extract",
               "provenance": "Adapted from the British Medical Association Council Plebiscite Resolution, British Medical Journal (January–February 1948)."
             }
-          }
+          },
+          "image_alt": "Minister of Health Aneurin Bevan in a double-breasted pinstripe suit standing at a stage microphone pointing forcefully forward beneath Daily Herald Labour posters at a public rally in Corwen Pavilion, February 1949"
         },
         {
           "id": "med_l18_source_high_tech_nhs",
@@ -29460,7 +30781,7 @@ export default {
         "timer_seconds": 90
       },
       "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
-      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
+      "card_image": "/images/bevan_first_day_nhs_1948.jpg",
       "card_position": "center 28%",
       "topic": "The National Health Service & Modern Surgery",
       "key_topic": "KT4: c1900–present: Medicine in Modern Britain",
@@ -29725,9 +31046,9 @@ export default {
           "title": "Florey, Chain & The Oxford Team (1938–1940)",
           "theme_heading": "Florey, Chain & The Oxford Team (1938–1940)",
           "text": "<p><span class=\"para-ref\">[2.1]</span> In 1938, Australian pathologist Howard Florey and German-Jewish refugee biochemist Ernst Chain re-examined Fleming's paper at Oxford University. Leading an interdisciplinary research team of chemists and bacteriologists, **Howard Florey and Ernst Chain** at Oxford recognised penicillin's revolutionary potential, securing essential research funding from the British Medical Research Council and the American Rockefeller Foundation to investigate its clinical properties.</p><p><span class=\"para-ref\">[2.2]</span> The team faced the enormous technical obstacle of **purifying active penicillin** in usable therapeutic quantities. Oxford technician Norman Heatley designed ingenious laboratory equipment, assembling a makeshift **Norman Heatley apparatus** of milk churns, hospital bedpans, and glass flasks to brew culture fluid in university basements, freeze-drying the delicate chemical into a stable brown therapeutic powder that could be safely injected into living patients.</p>",
-          "image": "/images/florey_chain_apparatus.jpg",
-          "image_alt": "Wartime photograph (c.1942–1943) showing a white-coated laboratory technician inspecting a round glass penicillin surface-culture vessel in front of tall wooden racks filled with flat glass fermentation flasks",
-          "caption": "Surface-Culture Penicillin Fermentation Racks (c.1942–1943): A laboratory technician inspects Penicillium mould growing inside glass culture vessels stacked across floor-to-ceiling incubation racks—illustrating how hundreds of labour-intensive flasks were needed to harvest tiny quantities of drug before US deep-tank fermentation.",
+          "image": "/images/edexcel_medicine/kt4/med_kt4_4_b1_oxford_fermentation_vessel_wellcome.jpg",
+          "image_alt": "Museum photograph of an early wartime British glass surface-fermentation vessel with an angled cotton-wool-plugged spout containing a wrinkled brown Penicillium mould mat floating atop dark liquid nutrient broth",
+          "caption": "Improvised Surface-Culture Penicillin Vessel (England, c. 1940–1943): A shallow glass culture vessel plugged with sterile cotton wool holds a wrinkled mat of Penicillium mould growing on nutrient broth—illustrating the labour-intensive Oxford surface-fermentation method pioneered by Howard Florey, Ernst Chain, and Norman Heatley before US deep-tank production (Science Museum / Wellcome Collection L0059171).",
           "isReversed": true,
           "sources": [
             {
@@ -29829,9 +31150,92 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> With British chemical plants committed to wartime explosives and vulnerable to Luftwaffe bombing, Florey and Heatley travelled to the United States in July 1941. Working with the US Department of Agriculture in Peoria, Illinois, researchers discovered that corn-steep liquor and a cantaloupe mould strain yielded two hundred times more penicillin, securing substantial **US government funding** for industrial manufacturing across major pharmaceutical corporations.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> American pharmaceutical corporations constructed massive industrial **deep fermentation tanks**, pumping sterile air through thousands of gallons of nutrient broth to mass-produce pure antibiotic medicine. By June 1944, American factories supplied **2.3m D-Day doses** to Allied armed forces, preventing gangrene, eliminating surgical amputations, and ensuring thousands of wounded soldiers survived battlefield trauma.</p>"
           ],
-          "image": "/images/med_svg_penicillin_mass_production.svg",
-          "caption": "Industrial schematic showing how US deep-tank fermentation, corn-steep liquor, and high-yield Penicillium chrysogenum scaled penicillin from Oxford bedpans (1941) to 2.3 million D-Day doses (1944).",
-          "image_caption": "Industrial schematic showing how US deep-tank fermentation, corn-steep liquor, and high-yield Penicillium chrysogenum scaled penicillin from Oxford bedpans (1941) to 2.3 million D-Day doses (1944)."
+          "image": "/images/edexcel_medicine/maps/med_map_kt4_penicillin_oxford_peoria_normandy_1928_44.svg",
+          "caption": "Reference Map: The Transatlantic Penicillin Pipeline (1928–1944)—from Fleming’s St Mary’s dish (1928) and Florey, Chain, and Heatley’s Oxford trials (1938–41) across the Atlantic to Peoria agricultural fermentation, $80m US deep-tank plants, North Africa (1943), and 2.3 million D-Day doses in Normandy (June 1944).",
+          "image_caption": "Industrial schematic showing how US deep-tank fermentation, corn-steep liquor, and high-yield Penicillium chrysogenum scaled penicillin from Oxford bedpans (1941) to 2.3 million D-Day doses (1944).",
+          "image_alt": "Historical GIS atlas map of North America, the Great Lakes, the Atlantic Ocean, Great Britain, Western Europe, and North Africa charting Alexander Fleming’s September 1928 discovery of Penicillium notatum at St Mary’s Hospital, Paddington, Florey, Chain and Heatley’s 1938–41 purification and trials at the Dunn School in Oxford, their June–July 1941 wartime mission to Peoria, Illinois (corn-steep liquor and cantaloupe Penicillium chrysogenum), $80m US government-backed deep-tank mass production in New York and New Jersey, and Allied battlefield deployment in North Africa (1943) and D-Day Normandy (June 1944, 2.3 million doses)",
+          "stage_hook_map": {
+            "id": "med-kt4-penicillin-transatlantic-pipeline-map",
+            "title": "From Laboratory Mould to Allied Wonder Drug: The Transatlantic Penicillin Pipeline (1928–44)",
+            "subtitle": "Paddington (1928) & Oxford (1938–41) to Peoria, NY/NJ Deep Tanks & D-Day Normandy · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/edexcel_medicine/maps/med_map_kt4_penicillin_oxford_peoria_normandy_1928_44.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 57.9,
+                "y": 23.7,
+                "color": "#be123c",
+                "label": "1. St Mary’s, Paddington (1928)",
+                "badge": "Chance + Observation",
+                "date": "September 1928",
+                "title": "St Mary’s Hospital, Paddington, London: Fleming’s Penicillium notatum Discovery",
+                "details": "Returning from holiday in September 1928, bacteriologist Alexander Fleming spotted a stray colony of Penicillium notatum mould dissolving deadly staphylococci on an unwashed culture plate at St Mary’s Hospital, London. Although Fleming published his findings in June 1929, crude \"mould juice\" was unstable and unpurified, stalling clinical development for nearly a decade.",
+                "hinge": "Why could Alexander Fleming identify penicillin’s antibacterial halo in 1928 yet fail to turn it into an injectable life-saving medicine on his own?"
+              },
+              {
+                "id": "spot-2",
+                "x": 52.8,
+                "y": 21,
+                "color": "#1d4ed8",
+                "label": "2. Dunn School, Oxford (1938–41)",
+                "badge": "Mice Trials & Albert Alexander",
+                "date": "1938 – Feb 1941",
+                "title": "Sir William Dunn School of Pathology, Oxford: Florey, Chain & Heatley Prove Efficacy",
+                "details": "Reviving Fleming’s paper in 1938 with narrow UK funding, Howard Florey, Ernst Chain, and Norman Heatley improvised ceramic bedpans, milk churns, and bath-tubs to freeze-dry pure penicillin. After curing infected mice in May 1940, their first human trial on Oxford policeman Albert Alexander (February 1941) brought dramatic recovery until supplies ran out—even after recycling penicillin from his urine.",
+                "hinge": "What did the tragic relapse and death of PC Albert Alexander in February 1941 prove about both penicillin’s clinical power and Britain’s production bottleneck?"
+              },
+              {
+                "id": "spot-3",
+                "x": 52.5,
+                "y": 48.8,
+                "color": "#6d28d9",
+                "label": "3. Wartime Atlantic Mission (1941)",
+                "badge": "Spores Smuggled from Blitz",
+                "date": "June–July 1941",
+                "title": "June–July 1941 Wartime Mission Across the Atlantic: Escaping Bombed UK Factories",
+                "details": "With British chemical factories fully committed to high explosives and battered by Luftwaffe Blitz raids, Britain could not build industrial fermentation plants. Funded by the Rockefeller Foundation, Florey and Heatley flew via neutral Lisbon to the United States in summer 1941— famously smearing precious Penicillium spores into their coat linings lest their phials be broken or seized.",
+                "hinge": "Why was the Second World War simultaneously an obstacle to mass-producing penicillin in Britain and the decisive catalyst for scaling it up in America?"
+              },
+              {
+                "id": "spot-4",
+                "x": 10,
+                "y": 49.6,
+                "align": "right",
+                "color": "#d97706",
+                "label": "4. Peoria USDA Lab, Illinois",
+                "badge": "Corn-Steep Liquor & Cantaloupe",
+                "date": "July 1941 – 1943",
+                "title": "USDA Northern Regional Research Lab, Peoria, Illinois: 200× Yield Breakthrough",
+                "details": "At the US Department of Agriculture’s fermentation laboratory in Peoria, Illinois, Andrew Moyer and Heatley boosted mould growth over tenfold using Midwest corn-steep liquor (a cheap starch by-product). In 1943, lab assistant Mary Hunt found a rotting Peoria market cantaloupe carrying Penicillium chrysogenum—which, after X-ray and UV mutation, yielded roughly 200 times more penicillin than Fleming’s strain.",
+                "hinge": "How did agricultural fermentation science in Peoria solve the biological yield barrier that ceramic bedpans in Oxford could never overcome?"
+              },
+              {
+                "id": "spot-5",
+                "x": 22.9,
+                "y": 49.6,
+                "color": "#1d4ed8",
+                "label": "5. NY / NJ Deep-Tank Plants",
+                "badge": "$80m US Govt + Big Pharma",
+                "date": "Dec 1941 – 1944",
+                "title": "US Deep-Tank Industrial Plants (New York & New Jersey): Pfizer, Merck & Squibb",
+                "details": "After Pearl Harbor (December 1941), the US Office of Scientific Research and Development (OSRD) and War Production Board committed $80 million in government loans, tax incentives, and patent-sharing across 21 chemical firms. In Brooklyn (Pfizer), Rahway NJ (Merck), and New Brunswick NJ (Squibb), engineers built 10,000–25,000-gallon aerated deep-fermentation tanks that turned micrograms into billions of units.",
+                "hinge": "Why was $80 million in US government intervention after Pearl Harbor essential to persuade rival pharmaceutical giants like Pfizer, Merck, and Squibb to pool their secrets?"
+              },
+              {
+                "id": "spot-6",
+                "x": 82.6,
+                "y": 36.5,
+                "align": "left",
+                "color": "#059669",
+                "label": "6. North Africa & D-Day (1943–44)",
+                "badge": "2.3 Million D-Day Doses",
+                "date": "May 1943 – June 1944",
+                "title": "Allied Fronts: North Africa Field Trials (1943) & D-Day Normandy Beaches (June 1944)",
+                "details": "In May–June 1943, Florey and army neurosurgeon Hugh Cairns conducted successful battlefield trials on wounded British soldiers in Algiers and Tunis (North Africa). By D-Day on 6 June 1944, Allied medics landed in Normandy with 2.3 million doses of pure penicillin—slashing gas gangrene, septicaemia, and surgical amputations, cutting Allied non-mortal wound recovery times in half, and earning Fleming, Florey, and Chain the 1945 Nobel Prize.",
+                "hinge": "How did having 2.3 million doses of penicillin on D-Day (June 1944) transform battlefield wound survival compared with the Western Front in 1914–18?"
+              }
+            ]
+          }
         },
         {
           "act": 5,
@@ -30127,9 +31531,9 @@ export default {
           "letter": "D",
           "type": "visual",
           "title": "Source D: Allied Wartime Penicillin Motivational Poster: 'Penicillin Saves Soldiers' Lives!' (1944)",
-          "image": "/images/penicillin_propaganda.jpg",
+          "image": "/images/edexcel_medicine/kt4/med_kt4_4_s3_penicillin_saves_soldiers_poster.jpg",
           "image_url": "/images/penicillin_propaganda.jpg",
-          "caption": "'Penicillin Saves Soldiers' Lives!' (1944) — Official US War Production Board / British Ministry of Supply industrial motivational poster urging pharmaceutical factory workers to maximise production for frontline combat casualties.",
+          "caption": "'Penicillin Saves Soldiers' Lives!' (1944) — Official US wartime industrial motivational poster urging pharmaceutical plant workers to maximise deep-tank fermentation output so wounded Allied servicemen on the fighting fronts would survive bacterial infection (Science History Institute / National Library of Medicine, Public Domain).",
           "citation": "National Library of Medicine, Bethesda, NLM ID 101454641 (Public Domain).",
           "question_badge": "Factor: War, Government & US Industry",
           "question": "Why was Second World War government intervention and US deep-tank fermentation (Source D) the decisive factor that turned penicillin into 2.3 million D-Day doses by June 1944?",
@@ -30137,11 +31541,11 @@ export default {
           "teacher_notes": {
             "source_context": "By D-Day in June 1944, Allied pharmaceutical plants were producing 300 billion units of penicillin a month—enough to treat every single Allied casualty of the Normandy invasion, cutting bacterial wound deaths by 85%."
           },
-          "image_alt": "Allied wartime motivational poster from 1944 reading 'Penicillin Saves Soldiers' Lives! Men who might have died will live...'",
+          "image_alt": "High-resolution 1944 US wartime industrial motivational poster showing a smiling convalescent soldier sitting up in a hospital bed reading a magazine beneath the bold red-and-black headline Penicillin The New Life-Saving Drug Saves Soldiers’ Lives! Men who might have died will live... if YOU Give this job Everything You’ve got!",
           "enquiry_question": "Why was Second World War government intervention and US deep-tank fermentation (Source D) the decisive factor that turned penicillin into 2.3 million D-Day doses by June 1944?",
           "source_context": "By D-Day in June 1944, Allied pharmaceutical plants were producing 300 billion units of penicillin a month—enough to treat every single Allied casualty of the Normandy invasion, cutting bacterial wound deaths by 85%.",
           "question_type": "Factor Analysis",
-          "src": "/images/penicillin_propaganda.jpg",
+          "src": "/images/edexcel_medicine/kt4/med_kt4_4_s3_penicillin_saves_soldiers_poster.jpg",
           "source": "/images/penicillin_propaganda.jpg"
         },
         {
@@ -30958,9 +32362,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
+      "banner": {
+        "image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
+        "alt": "White-coated chemist Dr Wilson Baker adjusting the stopcock of a glass separating funnel amidst rows of reagent bottles and distillation glassware in the Dyson Perrins Laboratory at Oxford University in 1944",
+        "position": "center 38%",
+        "caption": "Wartime Penicillin Chemistry at Oxford (1944): Dr Wilson Baker purifies experimental penicillin extracts with a glass separating funnel in the Dyson Perrins Laboratory, Oxford University (Official Ministry of Information photograph, Imperial War Museums D 17816)."
+      },
       "hero_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
-      "card_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
+      "card_image": "/images/edexcel_medicine/kt4/med_kt4_4_cameo_howard_florey_1960.jpg",
       "card_position": "center 38%",
       "topic": "Case Study 1: Fleming, Florey, Chain & Penicillin",
       "key_topic": "KT4: c1900–present: Medicine in Modern Britain",
@@ -31074,12 +32483,18 @@ export default {
             "Superbugs like MRSA that have mutated to survive standard penicillin treatment."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg"
     },
     {
       "id": "lesson_4_5",
-      "banner": "/images/banner_radiotherapy.jpg",
-      "banner_position": "center 42%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg",
+        "alt": "United States Surgeon General Dr Luther Terry standing at a wooden lectern with microphones addressing reporters alongside his seated medical advisory committee at the January 1964 Smoking and Health press conference",
+        "position": "center 38%",
+        "caption": "Epidemiology Confronts Big Tobacco (11 January 1964): Surgeon General Dr Luther Terry (at lectern) and his medical advisory panel unveil the landmark Smoking and Health report confirming the causal link between cigarette smoking and lung cancer first established in Britain by Richard Doll and Austin Bradford Hill (National Institutes of Health)."
+      },
+      "banner_position": "center 38%",
       "title": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
       "specification_anchor": "Case study: The fight against lung cancer in the twenty-first century: the use of science and technology in diagnosis and treatment; government action.",
       "enquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?",
@@ -31209,9 +32624,9 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> In the twentieth century, lung cancer emerged as the deadliest malignant epidemic in Great Britain, driven by the mass popularity of cigarette smoking. Early diagnosis remained extraordinarily difficult because human lungs possess **few pain receptors** inside internal alveolar tissues. Patients do not feel developing tumours expanding, mistaking early symptoms for a harmless smoker's cough or mild breathlessness.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Consequently, malignant tumours develop through silent **asymptomatic growth** for months or years without causing clinical distress. By the time patients experience acute warning signs like persistent chest pain or coughing blood, the disease has reached **late Stage 3/4 detection**. At this advanced stage, cancer cells have metastasised to the lymph nodes and other organs, rendering curative surgery impossible.</p>"
           ],
-          "image": "/images/vintage_doctor_cigarette_ad.jpg",
-          "image_alt": "1946 American colour magazine advertisement for Camel cigarettes featuring a smiling man in a grey suit, a T-Zone diagram, a testimonial from ballet star Kathryn Lee, and the headline More Doctors Smoke Camels Than Any Other Cigarette",
-          "caption": "Commercial Medical Endorsement in Tobacco Advertising (R. J. Reynolds Camel \"T-Zone\" Advertisement, 1946): Featuring a smiling smoker in a business suit, a testimonial from Broadway dancer Kathryn Lee, and the bold slogan \"More Doctors Smoke Camels Than Any Other Cigarette,\" mid-century tobacco marketing reassured consumers that smoking was throat-friendly and harmless."
+          "image": "/images/edexcel_medicine/kt4/med_kt4_5_b0_more_doctors_smoke_camels_1948.jpg",
+          "image_alt": "1948 American colour magazine advertisement for Camel cigarettes showing a smiling man with a white T-Zone diagram superimposed over his mouth and throat, a testimonial from ballet star Kathryn Lee, a Camel pack, and the bold slogan MORE DOCTORS SMOKE CAMELS THAN ANY OTHER CIGARETTE",
+          "caption": "Medical Reassurance in Mid-Century Tobacco Marketing (1948): R. J. Reynolds’s \"T-Zone\" magazine advertisement claimed a nationwide survey of 113,597 physicians proved \"More Doctors Smoke Camels Than Any Other Cigarette\"—normalising mass smoking just as Britain’s silent, asymptomatic lung cancer epidemic surged."
         },
         {
           "act": 2,
@@ -31248,8 +32663,9 @@ export default {
             "<p><span class=\"para-ref\">[2.1]</span> Conventional 2D chest X-rays were inadequate for detecting early lung cancer, as small tumours remained hidden behind the heart and ribcage shadows. Modern diagnosis was revolutionised by **high-resolution CT scans**, which rotate around the patient's thorax to assemble hundreds of digital cross-sections, pinpointing microscopic nodules long before they cause noticeable physical symptoms or severe respiratory distress.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> Oncology centres combine CT with advanced **PET-CT tracer imaging**, injecting radioactive glucose that lights up fast-growing cancer cells to show whether tumours are active and spreading. Specialists then perform a **bronchoscopy and tissue biopsy**, sliding a thin flexible camera down the airways to extract cellular tissue, confirming the precise histological subtype of cancer to design targeted clinical treatments.</p>"
           ],
-          "image": "/images/med_stage_lung_ct_bronchoscopy.jpg",
-          "caption": "High-Resolution Thoracic CT Scan Revealing a Cavitating Lung Tumour: Cross-sectional spiral CT and PET-CT imaging allow NHS chest specialists to pinpoint early-stage pulmonary tumours and guide fibre-optic bronchoscopy biopsies before metastasis occurs."
+          "image": "/images/edexcel_medicine/kt4/med_kt4_5_b1_bronchoscopy_nci.jpg",
+          "caption": "Fibre-Optic Bronchoscopy & Biopsy (National Cancer Institute, NIH ID 1951): Guided by high-resolution spiral CT and PET-CT scans that reveal tiny early nodules hidden from 2D X-rays, chest specialists pass a thin illuminated bronchoscope down the patient’s airways to collect cellular tissue for histological and genetic testing.",
+          "image_alt": "Two masked hospital thoracic specialists in surgical gowns and caps guiding an illuminated flexible fibre-optic bronchoscope with a video monitor visible behind them in a clinical suite"
         },
         {
           "act": 3,
@@ -31286,7 +32702,8 @@ export default {
             "<p><span class=\"para-ref\">[3.2]</span> For elderly patients or those too frail for surgery, modern oncology utilises advanced radiotherapy systems like the **CyberKnife pinpoint rays**. This robotic machine fires targeted beams of high-dose radiation from hundreds of angles directly into the tumour while tracking patient breathing, destroying malignant cancer cells while preserving surrounding healthy lung tissue from destructive radiation damage.</p>"
           ],
           "image": "/images/med_stage_radiotherapy_linac.jpg",
-          "caption": "Clinical Medical Linear Accelerator (Elekta LINAC Radiotherapy Gantry): Rotating 360 degrees around the patient couch, computer-guided radiotherapy beams converge precisely on lung tumours from multiple angles to destroy malignant DNA while sparing healthy lung tissue."
+          "caption": "Clinical Medical Linear Accelerator (Elekta LINAC Radiotherapy Gantry): Rotating 360 degrees around the patient couch, computer-guided radiotherapy beams converge precisely on lung tumours from multiple angles to destroy malignant DNA while sparing healthy lung tissue.",
+          "image_alt": "Modern hospital Elekta Compact medical linear accelerator (LINAC) radiotherapy gantry positioned over a treatment couch inside a shielded blue clinical suite"
         },
         {
           "act": 4,
@@ -31323,8 +32740,9 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> In the twenty-first century, decoding the human genome transformed modern lung cancer treatment from blunt chemotherapy into precision genetic oncology. Pathologists perform routine **tumour DNA sequencing** on biopsy tissue to identify specific genetic mutations that stimulate tumour growth, such as EGFR mutations, allowing oncologists to personalise therapy to each individual patient's unique cellular profile and cancer characteristics.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Doctors prescribe advanced **targeted pharmacotherapy** drugs that block the specific molecular proteins feeding the tumour, halting cancer progression without destroying healthy blood cells. Alongside this, **targeted immunotherapy** medications unmask cancer cells, training the patient’s own immune system to identify and destroy malignant tumours, significantly extending life expectancy for patients with advanced lung cancer across NHS hospitals.</p>"
           ],
-          "image": "/images/med_stage_cancer_immunotherapy.jpg",
-          "caption": "Scientific illustration showing an immune T-cell (blue) releasing targeted cytotoxic granules (red) to destroy a cancerous tumour cell (green) during immunotherapy."
+          "image": "/images/edexcel_medicine/kt4/med_kt4_5_b3_checkpoint_immunotherapy.jpg",
+          "caption": "Unmasking Lung Tumours — Targeted Immune Checkpoint Blockade: Tumour cells evade destruction by engaging PD-1/PD-L1 \"brakes\" on immune T-cells (left); modern targeted immunotherapy antibodies block PD-L1 and CTLA-4 (right), enabling the patient’s own cytotoxic T-cells to recognise and destroy advanced lung cancer cells (Law et al., 2020, CC BY 4.0).",
+          "image_alt": "Two-panel biomedical diagram comparing T-cell suppression via PD-1/PD-L1 and CTLA-4 checkpoints on the left against targeted anti-PD-L1 and anti-CTLA-4 checkpoint inhibitor antibodies triggering cancer cell death on the right"
         },
         {
           "act": 5,
@@ -31364,9 +32782,102 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> While high-tech oncology improved survival rates, the British government recognised that prevention was vastly more effective than attempting to cure advanced disease. The decisive legislative breakthrough was the landmark **2007 smoking ban**, prohibiting smoking in all enclosed workplaces, restaurants, and public transport across England, virtually eliminating deadly secondhand smoke exposure and encouraging thousands of citizens to quit permanently.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> Parliament reinforced prevention through **standardised plain tobacco packaging (2016)**, replacing branded logos with standardised drab olive boxes covered in graphic health warnings. Looking ahead, statutory initiatives like the proposed **smoke-free generation law** aim to raise the legal smoking age annually, proving that government legislation and public health education remain the most decisive weapons against lung cancer.</p>"
           ],
-          "image": "/images/lung_cancer_campaign.jpg",
-          "image_alt": "Close-up photograph of a discarded red-and-white Carlton Superkings cigarette packet lying on rain-wet tarmac displaying a large black-bordered warning reading Smoking kills",
-          "caption": "Mandatory High-Contrast Packet Warnings (UK Tobacco Advertising & Labelling Regulations, 2003 onwards): A discarded Carlton Superkings packet displays the compulsory black-bordered \"Smoking kills\" front-of-pack warning that preceded Britain’s 2007 indoor smoking ban and 2016 plain-packaging laws."
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Public Health Spectrum",
+            "title": "UK Government Action Against Lung Cancer: 1950s Hesitation ↔ Persuasion ↔ Legal Compulsion",
+            "default_index": 2,
+            "caption": "Slide or click across the three eras to trace why British governments escalated from cautious inaction in the 1950s to strict statutory compulsion after 2007.",
+            "stops": [
+              {
+                "short_label": "1. 1950s Hesitation",
+                "label": "1950s Doll & Hill Link vs Slow Early Action",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Even after Richard Doll and Austin Bradford Hill proved smoking caused lung cancer (1950–54), ministers hesitated to curb an addictive habit practised by most adults that generated vast Treasury tax revenues.",
+                "traits": [
+                  {
+                    "category": "Medical Proof",
+                    "glyph": "language",
+                    "value": "1950 Doll & Hill BMJ Study"
+                  },
+                  {
+                    "category": "Social Norm",
+                    "glyph": "people",
+                    "value": "~80% of British Men Smoked"
+                  },
+                  {
+                    "category": "Economic Barrier",
+                    "glyph": "leader",
+                    "value": "Huge Tobacco Tax Revenue"
+                  },
+                  {
+                    "category": "State Response",
+                    "glyph": "law",
+                    "value": "Reluctant Ministerial Advice"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. 1965–2005 Persuasion",
+                "label": "1965–2005 Ad Bans, Tax Hikes & Health Warnings",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Following the 1962 Royal College of Physicians report, governments expanded anti-smoking education, banned cigarette adverts, raised tobacco duty sharply, and funded free NHS Stop Smoking clinics.",
+                "traits": [
+                  {
+                    "category": "Broadcast Law",
+                    "glyph": "law",
+                    "value": "1965 TV Cigarette Ad Ban"
+                  },
+                  {
+                    "category": "Packet Rules",
+                    "glyph": "language",
+                    "value": "1971+ Compulsory Warnings"
+                  },
+                  {
+                    "category": "Fiscal Deterrent",
+                    "glyph": "leader",
+                    "value": "Steep Annual Tax Hikes"
+                  },
+                  {
+                    "category": "Total Ad Ban",
+                    "glyph": "people",
+                    "value": "2002–05 Billboards & Sport"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. 2007–Present Compulsion",
+                "label": "2007 Indoor Smoking Ban, Age-18 Rise & Plain Packs",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "Conclusive evidence on lethal passive second-hand smoke drove Parliament from persuasion to legal compulsion—banning indoor workplace and pub smoking (2007) and stripping branding from packs (2016).",
+                "traits": [
+                  {
+                    "category": "Landmark Statute",
+                    "glyph": "law",
+                    "value": "July 2007 Indoor Smoking Ban"
+                  },
+                  {
+                    "category": "Youth Access",
+                    "glyph": "people",
+                    "value": "2007 Legal Age Rise (16 → 18)"
+                  },
+                  {
+                    "category": "Child Protection",
+                    "glyph": "leader",
+                    "value": "2015 Car Ban With Under-18s"
+                  },
+                  {
+                    "category": "Standardised Packs",
+                    "glyph": "clothes",
+                    "value": "2016 Drab Olive Plain Packs"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "vocab": [
@@ -32457,8 +33968,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/banner_radiotherapy.jpg",
-      "card_image": "/images/banner_radiotherapy.jpg",
+      "hero_image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg",
+      "card_image": "/images/edexcel_medicine/kt4/med_kt4_5_cameo_sir_richard_doll_nlm.jpg",
       "card_position": "center 42%",
       "topic": "Case Study 2: Fighting Lung Cancer",
       "key_topic": "KT4: c1900–present: Medicine in Modern Britain",
@@ -32574,7 +34085,8 @@ export default {
             "Government bans on TV ads (1965), indoor smoking (2007), and branded packs (2016)."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg"
     },
     {
       "id": "lesson_5_1",
@@ -32582,7 +34094,7 @@ export default {
       "enquiry_question": "How did the geography of the British sector and trench design shape medical challenges on the Western Front?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
-      "banner_position": "center 62%",
+      "banner_position": "center 46%",
       "hook_text": "In autumn 1914, the mobile war of movement ground to a shuddering halt in the mud of northern France and Flanders. Confronted by lethal rapid-firing artillery and Vickers machine guns, British and German armies dug thousands of miles of opposing earthworks stretching from the Swiss border to the North Sea. The British sector—defending key Channel ports and the precarious Ypres Salient—forced military doctors to operate inside waterlogged, shell-smashed ditches where every geological feature dictated life, death, and casualty evacuation. How did the geography and terrain of the Western Front create unprecedented logistical challenges for medical personnel?",
       "teacher_notes": {
         "primer": "This enquiry explores the environmental, geological, and architectural realities of the British sector of the Western Front in Flanders and northern France between 1914 and 1918, examining how low-lying clay, shallow water tables, zig-zag trench engineering, subterranean chalk caverns at Arras, and mass-casualty offensives at the Somme and Cambrai dictated medical evacuation and care.",
@@ -32698,7 +34210,7 @@ export default {
           "title": "Flanders Terrain & The Ypres Salient (1914–1915)",
           "theme_heading": "Flanders Terrain & The Ypres Salient (1914–1915)",
           "text": "<p><span class=\"para-ref\">[1.1]</span> In autumn 1914, the British Expeditionary Force defended the Ypres Salient in western Belgium, a vulnerable bulge in the Allied line jutting into German territory. The **vulnerable geography of the Ypres Salient** exposed British soldiers to constant bombardment from three sides, as German forces occupied surrounding high ground like Passchendaele Ridge, directing devastating observed artillery fire directly down into British frontline positions day and night.</p><p><span class=\"para-ref\">[1.2]</span> Underneath the battlefield, British tunnelling companies engaged in intensive **Hill 60 mine warfare**, detonating massive subterranean explosive charges that shattered opposing defensive lines. Compounding combat danger, heavy autumn rain transformed Flanders clay into deep **Passchendaele liquid mud**, filling shell holes and trenches, swallowing wounded men, and making stretcher evacuation an agonising physical ordeal across the front.</p>",
-          "image": "/images/med_svg_western_front_sector_map.svg",
+          "image": "/images/edexcel_medicine/maps/med_map_kt5_british_sector_western_front_1914_18.svg",
           "sources": [
             {
               "id": "med_l21_source_a",
@@ -32729,76 +34241,87 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> In autumn 1914, the British Expeditionary Force defended the Ypres Salient in western Belgium, a vulnerable bulge in the Allied line jutting into German territory. The **vulnerable geography of the Ypres Salient** exposed British soldiers to constant bombardment from three sides, as German forces occupied surrounding high ground like Passchendaele Ridge, directing devastating observed artillery fire directly down into British frontline positions day and night.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Underneath the battlefield, British tunnelling companies engaged in intensive **Hill 60 mine warfare**, detonating massive subterranean explosive charges that shattered opposing defensive lines. Compounding combat danger, heavy autumn rain transformed Flanders clay into deep **Passchendaele liquid mud**, filling shell holes and trenches, swallowing wounded men, and making stretcher evacuation an agonising physical ordeal across the front.</p>"
           ],
-          "image_alt": "Strategic military map of the Ypres Salient showing British frontline sectors encircled on three sides by German-held high ground at Passchendaele and Messines Ridge",
-          "caption": "Strategic Geography of the Ypres Salient (1914–1918): Encircled on three sides by German artillery occupying the higher ridges around Passchendaele and Messines, British trenches sat in low-lying Flanders clay with a high water table.",
+          "image_alt": "True 1:10m GIS historical atlas map of Flanders, Artois, Picardy, the Strait of Dover, and Kent showing the 1914–18 British Sector of the Western Front from Nieuwpoort past the Ypres Salient and Passchendaele, Loos, Vimy Ridge, Arras (700-bed underground Thompson’s Cave hospital), the Somme (57,470 Day-1 casualties), and the 1917 Hindenburg Line at Cambrai (476 massed tanks and Captain Oswald Robertson’s stored blood bank), alongside coastal Base Hospitals at Calais, Boulogne, and Étaples and the Dover/Folkestone hospital-ship lifeline",
+          "caption": "Reference Map: The British Sector of the Western Front (1914–1918), contrasting waterlogged Flanders clay in the Ypres Salient against Arras chalk caverns and Somme/Cambrai downland, linked to Calais, Boulogne, Étaples, Dover, and Folkestone.",
           "stage_hook_map": {
-            "map_image": "/images/med_svg_western_front_sector_map.svg",
-            "kicker": "Historic Environment GIS • Paper 1 Section A",
-            "title": "The British Sector of the Western Front: Terrain, Battles & Evacuation (1914–1918)",
-            "subtitle": "Click all 5 numbered sector pins to see how Flanders clay, Arras chalk caves, and mass offensives shaped RAMC survival.",
+            "id": "med-kt5-british-sector-western-front-map",
+            "title": "The British Sector of the Western Front: Terrain, Key Battles & Medical Context (1914–18)",
+            "subtitle": "Ypres Salient, Loos, Arras Chalk Caves, Somme, Cambrai & Channel Base Ports · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/edexcel_medicine/maps/med_map_kt5_british_sector_western_front_1914_18.svg",
             "hotspots": [
               {
-                "id": "wf-1",
-                "x": 18,
-                "y": 28,
+                "id": "spot-1",
+                "x": 54.3,
+                "y": 34.5,
+                "color": "#be123c",
+                "label": "1. Ypres Salient & Passchendaele",
+                "badge": "Clay Mud, Gas & Gangrene",
+                "date": "Oct 1914, Apr 1915 & Jul–Nov 1917",
+                "title": "The Ypres Salient & Passchendaele (Flanders): Waterlogged Clay, Chlorine Gas & Mine Warfare",
+                "details": "Jutting east into German-held high ground around Ypres in western Belgium, British trenches sat in low-lying Flanders clay with a high water table. Here Germany unleashed chlorine gas on 22 April 1915, British sappers blew subterranean mines at Hill 60 and Messines (June 1917), and autumn rains during Third Ypres / Passchendaele (July–November 1917) turned heavily manured farmland into waist-deep liquid mud—triggering epidemic trench foot, slow 6–8-bearer carries, and fatal Clostridium welchii gas gangrene.",
+                "hinge": "Why did low-lying, heavily manured Flanders clay around Ypres produce both agonising stretcher delays and lethal gas-gangrene wound infections?"
+              },
+              {
+                "id": "spot-2",
+                "x": 52.7,
+                "y": 54.1,
+                "color": "#6d28d9",
+                "label": "2. Arras Chalk Quarries (1917)",
+                "badge": "700-Bed Thompson’s Cave",
+                "date": "Nov 1916 – May 1917",
+                "title": "Arras & Underground Chalk Quarries (April–May 1917): Thompson’s Cave Hospital",
+                "details": "Unlike waterlogged Flanders clay, Arras in Artois sat above porous, easily excavated medieval chalk quarries. Ahead of the April 1917 offensive, New Zealand and British tunnellers linked miles of bombproof caverns sheltering 24,000 troops and built Thompson’s Cave Hospital just 800 yards behind the front line—complete with 700 beds, piped water, electric lighting, and operating theatres safe from artillery fire.",
+                "hinge": "How did the chalk geology beneath Arras allow the RAMC to perform sterile surgery far closer to the front line than was possible in the Ypres Salient?"
+              },
+              {
+                "id": "spot-3",
+                "x": 51.2,
+                "y": 62.8,
+                "color": "#b45309",
+                "label": "3. The Somme (Jul–Nov 1916)",
+                "badge": "57,470 Day-1 Casualties",
+                "date": "1 July – Nov 1916",
+                "title": "The Battle of the Somme (July–November 1916): Mass Industrial Attrition & Triage Strain",
+                "details": "Launched across rolling Picardy chalk downland around Albert and Beaumont-Hamel on 1 July 1916, the Battle of the Somme inflicted 57,470 British casualties (including 19,240 killed) on its opening day alone—over 400,000 by November. The sudden flood of high-explosive shrapnel and machine-gun wounds overwhelmed Field Ambulances, Casualty Clearing Stations, and ambulance trains, forcing rapid expansion of motor transport and forward surgical triage.",
+                "hinge": "Why did the scale of casualties on 1 July 1916 force the RAMC to move specialist surgical teams and nurses forward to Casualty Clearing Stations?"
+              },
+              {
+                "id": "spot-4",
+                "x": 59.8,
+                "y": 58.1,
+                "color": "#059669",
+                "label": "4. Cambrai (Nov–Dec 1917)",
+                "badge": "476 Tanks & First Blood Bank",
+                "date": "20 Nov – Dec 1917",
+                "title": "The Battle of Cambrai (November–December 1917): Massed Tanks & Stored Blood Depot",
+                "details": "Attacking across firmer, dry chalk ground facing the German Hindenburg Line at Cambrai on 20 November 1917, the British Army deployed 476 massed Mark IV tanks after an unannounced artillery barrage. Preparing for the offensive, US-born RAMC officer Captain Oswald Robertson created the world’s first stored blood bank—preserving Group O universal-donor blood for up to 26 days in iced sodium citrate-glucose bottles to treat traumatic haemorrhagic shock.",
+                "hinge": "How did Captain Oswald Robertson’s portable blood depot at Cambrai overcome the fatal flaw of earlier donor-to-patient vein-to-vein transfusions?"
+              },
+              {
+                "id": "spot-5",
+                "x": 35,
+                "y": 38.7,
+                "color": "#1d4ed8",
+                "label": "5. Boulogne, Calais & Étaples",
+                "badge": "Coastal Base Hospitals",
+                "date": "1914 – 1918",
+                "title": "Boulogne, Calais & Étaples Coastal Base Hospital Complex: Research & Specialist Surgery",
+                "details": "Linked directly to frontline sectors by trunk railways and northern French canals, coastal ports at Calais, Boulogne (Wimereux), and Étaples housed vast stationary and general Base Hospitals with over 20,000 beds. Here Sir Almroth Wright’s bacteriology laboratory at No. 13 General Hospital (Boulogne Casino) investigated gas gangrene, FANY women drivers ran Calais motor ambulance convoys from January 1916, and specialist wards pioneered Carrel–Dakin wound irrigation and femur fracture care.",
+                "hinge": "Why were French Channel ports like Boulogne, Calais, and Étaples the ideal geographic locations for both large Base Hospitals and bacteriological research labs?"
+              },
+              {
+                "id": "spot-6",
+                "x": 30.6,
+                "y": 24.5,
                 "color": "#0284c7",
-                "label": "Coastal Bases",
-                "badge": "Evacuation Terminus",
-                "date": "1914–1918",
-                "title": "Boulogne, Calais & Étaples Base Hospitals",
-                "details": "Vast stationary and general hospitals (up to 20,000+ beds at Étaples alone) linked to the front by ambulance trains and slow, smooth-riding canal barges, with hospital ships sailing across the Channel to Britain (\"Blighty\").",
-                "hinge": "Why were coastal ports with deep-water harbours and main railway lines essential for specialist recovery wards?"
-              },
-              {
-                "id": "wf-2",
-                "x": 58,
-                "y": 26,
-                "color": "#dc2626",
-                "label": "Ypres Salient",
-                "badge": "Flanders Clay & Gas",
-                "date": "1914 · 1915 · 1917",
-                "title": "The Ypres Salient (First Ypres, 1915 Chlorine Gas & 1917 Passchendaele)",
-                "details": "A low-lying Flanders bulge surrounded on three sides by German artillery on higher ridges. Heavy rain turned bombed drainage ditches into waist-deep liquid clay—causing epidemic trench foot, gas gangrene from manured soil, and requiring 6–8 stretcher bearers per casualty.",
-                "hinge": "Why did the geography of the Ypres Salient make frontline stretcher recovery slower and deadlier than anywhere else?"
-              },
-              {
-                "id": "wf-3",
-                "x": 53,
-                "y": 56,
-                "color": "#d97706",
-                "label": "Arras Caves",
-                "badge": "Subterranean Hospital",
-                "date": "April–May 1917",
-                "title": "Arras & Thompson’s Cave Underground Hospital",
-                "details": "Unlike waterlogged Flanders clay, Arras sat above firm Artois chalk. Ahead of the April 1917 offensive, New Zealand tunnellers linked medieval chalk quarries into a shell-proof subterranean hospital 800m from the trenches—complete with piped water, electric light, 700 beds, and operating theatres!",
-                "hinge": "How did Arras’s chalk geology allow surgeons to operate far closer to the front line than at Ypres?"
-              },
-              {
-                "id": "wf-4",
-                "x": 55,
-                "y": 76,
-                "color": "#b91c1c",
-                "label": "The Somme",
-                "badge": "Mass Casualty Surge",
-                "date": "July–Nov 1916",
-                "title": "The Battle of the Somme (57,470 Day-1 Casualties)",
-                "details": "On 1 July 1916 alone, the British suffered 57,470 casualties (19,240 killed), overwhelming RAMC plans for 10,000 evacuated per day. In response, the RAMC moved Casualty Clearing Stations forward beside railheads and expanded specialist surgical teams.",
-                "hinge": "How did the shock of 1 July 1916 force the RAMC to reorganise Casualty Clearing Stations?"
-              },
-              {
-                "id": "wf-5",
-                "x": 68,
-                "y": 66,
-                "color": "#15803d",
-                "label": "Cambrai",
-                "badge": "1st Blood Bank",
-                "date": "Nov–Dec 1917",
-                "title": "Battle of Cambrai — Tanks & Capt. Robertson’s Blood Depot",
-                "details": "Site of the first massed attack by 476 British tanks over firm chalk downland—and where US/RAMC Captain Oswald Robertson set up the world’s first battlefield \"blood bank\" storing 22 units of chilled Group O citrated-glucose blood in ammunition ice-boxes before the battle began.",
-                "hinge": "Why did storing Group O blood *before* an offensive began save men dying of shock at the CCS?"
+                "label": "6. Dover & Folkestone Lifeline",
+                "badge": "Supply & Hospital Ships",
+                "date": "1914 – 1918",
+                "title": "Dover & Folkestone: Cross-Channel Supply Lifeline & ‘Blighty’ Hospital Ships",
+                "details": "Just 21 miles across the Strait of Dover from Calais, Kent ports at Folkestone and Dover formed the vital maritime artery of the British sector—shipping millions of troops, splints, X-ray tubes, and dressings into France while receiving white-painted hospital ships carrying severely wounded \"Blighty\" casualties onto waiting UK ambulance trains.",
+                "hinge": "Why did the 21-mile proximity of Dover and Folkestone to Calais and Boulogne make defending the Ypres Salient and Channel ports a matter of survival for the BEF?"
               }
-            ],
-            "image": "/images/med_svg_western_front_sector_map.svg"
+            ]
           }
         },
         {
@@ -32806,9 +34329,6 @@ export default {
           "title": "Trench Architecture & Defensive Features (1914–1918)",
           "theme_heading": "Trench Architecture & Defensive Features (1914–1918)",
           "text": "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments, British soldiers constructed sophisticated earthworks six to seven feet deep. To contain explosive shell fragments, trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses. This structural design prevented flying shrapnel from sweeping down long ditches and stopped enemy trench-raiders from firing unchecked along entire frontline lengths.</p><p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>",
-          "image": "/images/trench_construction_diagram_1914.png",
-          "image_alt": "British War Office field engineering cross-section and plan diagram of zig-zag trench traverses, parapet, parados, fire-step, and drainage sump (1914)",
-          "caption": "British War Office Manual of Field Engineering (1914): Cross-section and plan showing zig-zag traverses—designed to contain shell blasts and prevent enfilade fire—alongside sandbagged parapets, fire-steps, duckboards, and drainage sumps.",
           "isReversed": false,
           "sources": [
             {
@@ -32838,7 +34358,108 @@ export default {
           "paragraphs": [
             "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments, British soldiers constructed sophisticated earthworks six to seven feet deep. To contain explosive shell fragments, trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses. This structural design prevented flying shrapnel from sweeping down long ditches and stopped enemy trench-raiders from firing unchecked along entire frontline lengths.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>"
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Trench Architecture",
+            "title": "The Four-Line Western Front Trench System (1914–1918)",
+            "default_index": 0,
+            "caption": "Click each defensive zone to trace how British trench geometry protected infantry from shellfire while creating severe stretcher-evacuation bottlenecks.",
+            "items": [
+              {
+                "tab_label": "1. Front-Line Fire Bay",
+                "title": "Front-Line Fire Trench & Zig-Zag Traverses",
+                "dates": "Facing No Man’s Land",
+                "badge": "Blast Containment",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Depth & Protection",
+                    "value": "6–7 ft Deep + Sandbag Parapet"
+                  },
+                  {
+                    "label": "Flooring",
+                    "value": "Duckboards Over Drainage Sump"
+                  },
+                  {
+                    "label": "Blast Defence",
+                    "value": "Right-Angled Traverses"
+                  }
+                ],
+                "takeaway": "Built in zig-zag bays with raised fire-steps so an exploding shell or raiding party could never sweep straight down the trench—forcing stretcher-bearers around tight 90-degree corners."
+              },
+              {
+                "tab_label": "2. Support Trench",
+                "title": "Support Trench & Deep Dugouts",
+                "dates": "70–100m Behind Front Line",
+                "badge": "Second Defensive Line",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Role",
+                    "value": "Retreat & Relief Line"
+                  },
+                  {
+                    "label": "Shelter",
+                    "value": "Timbered Earth Dugouts"
+                  },
+                  {
+                    "label": "Medical Post",
+                    "value": "Regimental Aid Post (RAP)"
+                  }
+                ],
+                "takeaway": "Shielded frontline troops during heavy preliminary artillery bombardments and housed the Battalion Medical Officer’s Regimental Aid Post inside a reinforced dugout or ruined cellar."
+              },
+              {
+                "tab_label": "3. Reserve Trench",
+                "title": "Reserve Trench & Counter-Attack Line",
+                "dates": "200–400m Further Rearward",
+                "badge": "Counter-Attack Force",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Garrison",
+                    "value": "Fresh Reserve Platoons"
+                  },
+                  {
+                    "label": "Supplies",
+                    "value": "Ammunition & Rations Stores"
+                  },
+                  {
+                    "label": "Function",
+                    "value": "Repel Breakthroughs"
+                  }
+                ],
+                "takeaway": "Held reserve companies ready to launch immediate counter-attacks if German assault waves overran the front-line and support trenches."
+              },
+              {
+                "tab_label": "4. Communication & No Man’s Land",
+                "title": "Communication Trenches & No Man’s Land",
+                "dates": "1–2 km Relay to Rear Roads",
+                "badge": "Evacuation Bottleneck",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.2)",
+                "metrics": [
+                  {
+                    "label": "No Man’s Land",
+                    "value": "Barbed Wire & Shell Craters"
+                  },
+                  {
+                    "label": "Two-Way Traffic",
+                    "value": "Troops In vs Wounded Out"
+                  },
+                  {
+                    "label": "Mud Impact",
+                    "value": "4–8 Bearers per Stretcher"
+                  }
+                ],
+                "takeaway": "Narrow zig-zag communication trenches choked whenever fresh battalions and ammunition moved forward at the exact moment stretcher squads tried to carry casualties back to motor ambulances."
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -32912,8 +34533,9 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> In northern France, the ancient city of Arras sat above vast subterranean chalk quarries excavated during the Middle Ages. In late 1916, British and New Zealand tunnelling companies connected these chalk caverns, excavating over eight miles of **Arras underground chalk tunnels** to conceal twenty-five thousand assault troops directly beneath German frontline positions ahead of the planned 1917 offensive.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Within these bombproof chalk caverns, the RAMC constructed a **700-bed underground hospital in Thompson’s Cave**, a subterranean medical station located just eight hundred yards behind the frontline. Powered by generator-driven **electric lighting and piped running water**, the complex contained fully functioning surgical operating theatres, triage wards, and mortuaries, allowing military surgeons to operate safely under intense surface artillery bombardments without interruption.</p>"
           ],
-          "image": "/images/arras_underground_hospital_tonks_1918.jpg",
-          "caption": "Henry Tonks, An Underground Casualty Clearing Station, Arras (1918, IWM), depicting RAMC surgeons operating inside bombproof chalk cellars beneath Arras."
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l51_b3_arras_christchurch_tunnel_1917.jpg",
+          "caption": "Subterranean Chalk Tunnels Beneath Arras (\"Christchurch Tunnel\", 4 December 1917, Official NZEF Photograph H1210): Linked medieval chalk quarries excavated by New Zealand tunnellers housed 24,000 troops and the shell-proof 700-bed Thompson’s Cave Underground Hospital with piped water and electric operating theatres.",
+          "image_alt": "Timber-propped subterranean chalk passage beneath Arras marked with a wooden CHRIST CHURCH sign, overhead electric wiring, and narrow-gauge tramway tracks built by the New Zealand Tunnelling Company in 1917"
         },
         {
           "act": 5,
@@ -32947,7 +34569,8 @@ export default {
             "<p><span class=\"para-ref\">[5.2]</span> In November 1917, the British launched the **Battle of Cambrai**, deploying over four hundred tanks supported by surprise artillery fire. To support this advance, the army deployed the world's first stored blood depot. Managing intense **mass casualty triage strain** during these giant offensives compelled military medical authorities to modernise surgical triage, motor transport, and blood storage.</p>"
           ],
           "image": "/images/med_stage_somme_battle_1916.jpg",
-          "caption": "Evacuating Casualties During the Battle of the Somme (Official British photograph by Lt Ernest Brooks, 19 July 1916, IWM Q 800): A helmeted stretcher-bearer carries a wounded comrade on his back along a chalk communication trench, illustrating the immense casualty pressures unleashed on 1 July 1916 (57,470 British casualties on day one)."
+          "caption": "Casualty Streams During the Battle of the Somme (Official British Photograph by Lt Ernest Brooks, Bernafay Wood, 19 July 1916, IWM Q 800): Bandaged British walking wounded and a captured German soldier help each other rearward beside an SB-armbanded stretcher-bearer—reflecting the immense casualty surge unleashed from 1 July 1916 (57,470 British casualties on Day One).",
+          "image_alt": "Bandaged British walking wounded—accompanied by an RAMC stretcher-bearer wearing an SB armband on the left—and a wounded German prisoner supporting one another along a muddy track near Bernafay Wood during the Battle of the Somme on 19 July 1916"
         }
       ],
       "sources": [
@@ -32999,9 +34622,9 @@ export default {
           "letter": "C",
           "type": "visual",
           "title": "Source C (Photograph): Troops Crossing Chateau Wood on a Duckboard Track, Ypres Salient (29 October 1917)",
-          "image": "/images/gw_flooded_trench.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l51_s2_chateau_wood_hurley_1917.jpg",
           "image_url": "/images/gw_flooded_trench.jpg",
-          "caption": "Official photograph taken by Captain Frank Hurley at Chateau Wood in the Ypres Salient during the Third Battle of Ypres (Passchendaele, 29 October 1917, AWM E01220 / IWM E(AUS) 1220), showing troops filing along a narrow raised wooden duckboard track built across waterlogged shell craters and shattered tree trunks.",
+          "caption": "Official photograph taken by Captain Frank Hurley at Chateau Wood in the Ypres Salient during the Third Battle of Ypres (Passchendaele, 29 October 1917, AWM E01220 / IWM E(AUS) 1220), showing troops filing along a narrow raised wooden duckboard track across waterlogged shell craters.",
           "citation": "Imperial War Museum / Australian War Memorial, IWM E(AUS) 1220 / AWM E01220 (Public Domain).",
           "question_badge": "Western Front Evidence Analysis",
           "question_type": "Evidence Analysis",
@@ -33012,9 +34635,9 @@ export default {
           },
           "enquiry_question": "How does Captain Frank Hurley’s photograph at Chateau Wood (Source C, October 1917) illustrate the transport crisis facing horse and motor ambulances at Third Ypres?",
           "source_context": "Taken on 29 October 1917 during the Battle of Passchendaele (Third Ypres), Frank Hurley’s photograph captures how shattered Flanders drainage turned the battlefield into a sea of flooded craters bridged only by narrow wooden duckboard ribbons.",
-          "image_alt": "Official wartime photograph by Captain Frank Hurley (29 October 1917) showing steel-helmeted Allied soldiers walking single-file along a narrow raised wooden duckboard track winding across flooded shell craters and shattered tree trunks at Chateau Wood, Ypres",
+          "image_alt": "Australian artillerymen walking single-file along a narrow wooden duckboard track winding across flooded shell craters and splintered tree trunks in Chateau Wood near Hooge in the Ypres Salient on 29 October 1917",
           "provenance": "Official wartime photograph by Captain J. F. (Frank) Hurley, Australian Official Photographer, Chateau Wood, Ypres Salient, 29 October 1917 (AWM E01220 / IWM E(AUS) 1220).",
-          "src": "/images/gw_flooded_trench.jpg",
+          "src": "/images/edexcel_medicine/kt5/med_kt5_l51_s2_chateau_wood_hurley_1917.jpg",
           "source": "/images/gw_flooded_trench.jpg"
         },
         {
@@ -34050,9 +35673,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt5_1_ypres_salient.jpg",
-      "hero_image": "/images/med_banner_kt5_1_ypres_salient.jpg",
-      "card_image": "/images/med_banner_kt5_1_ypres_salient.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg",
+        "alt": "Wounded British and Dominion soldiers lying on canvas stretchers and walking with bandaged arms beside a shell-ditched supply lorry along the Menin Road in the Ypres Sector in September 1917",
+        "position": "center 46%",
+        "caption": "Casualties Awaiting Evacuation Along the Menin Road, Ypres Sector (September 1917): Stretcher cases and walking wounded gather beside a ditched lorry along the shell-swept Menin Road during the Third Battle of Ypres."
+      },
+      "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg",
+      "card_image": "/images/med_stage_trench_stretcher_bottleneck.jpg",
       "card_position": "center 62%",
       "topic": "The British Sector, Terrain & Trench System",
       "visual_story_sheet": {
@@ -34166,7 +35794,8 @@ export default {
             "700-bed underground RAMC hospital dug inside chalk caverns beneath Arras (1917)."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg"
     },
     {
       "id": "lesson_5_2",
@@ -34174,7 +35803,7 @@ export default {
       "enquiry_question": "How did the horrific physical environment of the trenches create widespread non-combat medical crises?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
-      "banner_position": "center 38%",
+      "banner_position": "center 44%",
       "hook_text": "Long before an infantryman faced enemy machine guns or artillery barrages, he fought an agonising daily battle against the environment itself. Submerged in freezing, stagnant water saturated with human excrement and decomposing corpses, soldiers fell prey to devastating non-combat ailments. From the black, rotting necrosis of trench foot to the debilitating bone-pain of trench fever spread by swarms of body lice, maintaining the physical health of an army in the trenches demanded ruthless preventive medical discipline. How did the trench environment cause debilitating conditions like trench foot and trench fever, and how were they treated?",
       "teacher_notes": {
         "primer": "This enquiry investigates non-combat environmental health hazards on the Western Front, exploring the physiological pathology and command discipline of trench foot, the entomology and transmission of trench fever by body lice, water purification methods against dysentery, and the clinical recognition and psychological treatment of shell shock.",
@@ -34328,9 +35957,9 @@ export default {
           "title": "Preventing Trench Foot: Whale Oil & The Buddy System (1915–1918)",
           "theme_heading": "Preventing Trench Foot: Whale Oil & The Buddy System (1915–1918)",
           "text": "<p><span class=\"para-ref\">[2.1]</span> Recognising that trench foot drained frontline fighting strength, the British Army introduced strict preventative discipline. Every soldier was ordered to rub grease into their skin, performing a mandatory **daily whale-oil foot rub** to create a waterproof barrier repelling damp. In addition, the army distributed thousands of pairs of clean socks, enforcing a strict **twice-daily foot inspection and dry-sock routine** by battalion officers.</p><p><span class=\"para-ref\">[2.2]</span> Command established **buddy-system partner checks**, pairing soldiers together with instructions to examine, dry, and massage each other's feet daily. Drainage channels were deepened and duckboards elevated across trench floors. Because commanding officers faced disciplinary court-martial if their men contracted the condition, trench foot cases plummeted dramatically across the British sector by 1917.</p>",
-          "image": "/images/cheshire_regiment_trench.png",
-          "image_alt": "Official photograph (IWM Q 5100, July 1916) showing soldiers of the 1st Battalion, Cheshire Regiment, including a sentry on the fire-step, occupying a captured German trench at La Boisselle on the Somme",
-          "caption": "Living Conditions in Frontline Trenches (1st Battalion, Cheshire Regiment, La Boisselle, July 1916, IWM Q 5100): Exhausted infantrymen rest cramped against earth trench walls while a sentry keeps watch—illustrating the crowded frontline conditions in which body lice spread rapidly and daily foot inspections were enforced.",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l52_b1_trench_foot_inspection_q10622.jpg",
+          "image_alt": "British Medical Officer of the 12th Battalion, East Yorkshire Regiment bending down in a sandbagged support trench near Roclincourt on 9 January 1918 to inspect the bare feet of a row of helmeted infantrymen",
+          "caption": "Mandatory Frontline Foot Inspection (12th Battalion, East Yorkshire Regiment near Roclincourt, 9 January 1918, IWM Q 10622): Medical and platoon officers enforced daily bare-foot inspections, spare dry socks, and whale-oil rubbing to prevent gangrenous trench foot.",
           "isReversed": false,
           "sources": [
             {
@@ -34476,9 +36105,9 @@ export default {
           "letter": "A",
           "type": "visual",
           "title": "Source A (Clinical Photograph): Bilateral Trench Foot in a British Soldier (c.1915)",
-          "image": "/images/trench_foot_clinical.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l52_s0_trench_feet_wellcome_l0025834.jpg",
           "image_url": "/images/trench_foot_clinical.jpg",
-          "caption": "RAMC clinical photograph documenting severe bilateral trench foot in a British infantryman (c.1915). Prolonged immersion in freezing, waterlogged mud constricted blood vessels, resulting in tissue death, blistering, and wet gangrene.",
+          "caption": "RAMC clinical photograph from King George V Military Hospital (\"155. Waldron. 62. Trench Feet. 29.11.16\", Wellcome Collection L0025834) documenting severe bilateral trench foot caused by prolonged immersion in freezing Flanders mud.",
           "citation": "The Wellcome Collection, London (Wellcome Images / Public Domain).",
           "question_badge": "Western Front Evidence Analysis",
           "question_type": "Evidence Analysis",
@@ -34489,8 +36118,9 @@ export default {
           },
           "enquiry_question": "Why was severe trench foot (Source A) so dangerous to both individual soldiers and British battalion fighting strength in the winter of 1914–15?",
           "source_context": "RAMC clinical photograph of trench foot, c.1915. Trench foot was caused by standing in cold water/mud between 0 and 15°C for prolonged hours.",
-          "src": "/images/trench_foot_clinical.jpg",
-          "source": "/images/trench_foot_clinical.jpg"
+          "src": "/images/edexcel_medicine/kt5/med_kt5_l52_s0_trench_feet_wellcome_l0025834.jpg",
+          "source": "/images/trench_foot_clinical.jpg",
+          "image_alt": "Wartime clinical photograph from King George V Military Hospital dated 29 November 1916 showing severe bilateral gangrenous trench foot with blackened toes and ulcerated tissue"
         },
         {
           "id": "med_l22_source_b",
@@ -35512,9 +37142,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt5_2_flanders_mud.jpg",
-      "hero_image": "/images/med_banner_kt5_2_flanders_mud.jpg",
-      "card_image": "/images/med_banner_kt5_2_flanders_mud.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
+        "alt": "British soldiers watching a horse-drawn water cart sunk to its axle with one mule belly-deep in liquid Flanders mud during the Battle of Pilckem Ridge at Passchendaele on 11 August 1917",
+        "position": "center 44%",
+        "caption": "Bogged Down in Liquid Flanders Clay (Battle of Pilckem Ridge, Passchendaele, 11 August 1917, IWM Q 5943): A regimental water cart sunk to its axle illustrates the waterlogged Flanders terrain that triggered epidemic trench foot and paralysed wheeled transport."
+      },
+      "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
+      "card_image": "/images/divisional_baths_delousing.jpg",
       "card_position": "center 38%",
       "topic": "Trench Illnesses: Trench Foot, Trench Fever & Shell Shock",
       "visual_story_sheet": {
@@ -35629,7 +37264,8 @@ export default {
             "Psychological trauma from relentless shelling causing tremors and speech loss."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg"
     },
     {
       "id": "lesson_5_3",
@@ -35637,8 +37273,13 @@ export default {
       "enquiry_question": "How did industrialised weaponry and manured soil create terrifying new forms of wound trauma and infection?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
-      "banner": "/images/med_banner_kt5_3_vickers_gas_helmets.jpg",
-      "banner_position": "center 55%",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg",
+        "alt": "John Singer Sargent’s monumental 1919 oil painting Gassed showing a file of British soldiers blinded by mustard gas walking with bandaged eyes and hands on each other’s shoulders past wounded men lying at a Western Front dressing station",
+        "position": "center 45%",
+        "caption": "John Singer Sargent RA, \"Gassed\" (1919, Imperial War Museum Art.IWM ART 1460): Blinded mustard-gas casualties led by a medical orderly along a duckboard path toward a Western Front dressing station in August 1918."
+      },
+      "banner_position": "center 45%",
       "hook_text": "The First World War was an industrial collision between high-technology steel and fragile human flesh. Over 70% of all battlefield casualties were inflicted not by rifle bullets, but by high-explosive artillery shells that tore bodies apart with jagged metal fragments. Yet the most lethal enemy was often microscopic: Flanders agricultural soil, heavily manured for centuries with animal dung, teemed with deadly anaerobic bacteria that invaded ragged wounds, spawning lethal gas gangrene and tetanus within hours of injury. Why were shrapnel injuries, poison gas, and wound infections such lethal threats to British soldiers on the Western Front?",
       "teacher_notes": {
         "primer": "This enquiry examines the lethal combat trauma generated by industrialised artillery shrapnel and chemical gas warfare on the Western Front, exploring compound fractures, cloth contamination, anaerobic gas gangrene caused by manured Flanders soil, the invention of the Brodie helmet, and the rapid British countermeasures developed to neutralise chlorine, phosgene, and mustard gas.",
@@ -35831,7 +37472,7 @@ export default {
           "title": "Head Trauma & The Brodie Steel Helmet (Late 1915–1918)",
           "theme_heading": "Head Trauma & The Brodie Steel Helmet (Late 1915–1918)",
           "text": "<p><span class=\"para-ref\">[3.1]</span> In 1914, British soldiers arrived on the Western Front wearing soft peaked cloth caps, which offered zero physical protection against descending artillery shell bursts and falling masonry. Because trench warfare forced soldiers to raise their heads above earthwork parapets to observe enemy lines, men suffered **severe shrapnel head trauma**, resulting in skull fractures, cerebral lacerations, and fatal brain haemorrhages that filled field ambulances.</p><p><span class=\"para-ref\">[3.2]</span> In late 1915, the British Army introduced the pressed-steel **Brodie helmet**. Pressed from a single sheet of hardened manganese steel with a protective rim, this circular helmet deflected falling shrapnel balls. The Brodie helmet delivered an estimated **eighty percent trauma reduction** in fatal penetrating cranial wounds across British frontline sectors, saving tens of thousands of infantry lives.</p>",
-          "image": "/images/brodie_helmet_shrapnel.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l53_b2_mark1_brodie_helmet.jpg",
           "sources": [
             {
               "id": "source_c_brodie_helmet_report_1916",
@@ -35860,8 +37501,8 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> In 1914, British soldiers arrived on the Western Front wearing soft peaked cloth caps, which offered zero physical protection against descending artillery shell bursts and falling masonry. Because trench warfare forced soldiers to raise their heads above earthwork parapets to observe enemy lines, men suffered **severe shrapnel head trauma**, resulting in skull fractures, cerebral lacerations, and fatal brain haemorrhages that filled field ambulances.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> In late 1915, the British Army introduced the pressed-steel **Brodie helmet**. Pressed from a single sheet of hardened manganese steel with a protective rim, this circular helmet deflected falling shrapnel balls. The Brodie helmet delivered an estimated **eighty percent trauma reduction** in fatal penetrating cranial wounds across British frontline sectors, saving tens of thousands of infantry lives.</p>"
           ],
-          "image_alt": "Original First World War British Mark I Brodie steel helmet with wide circular brim and leather chinstrap",
-          "caption": "The British Brodie Steel Helmet (Introduced Autumn 1915): Stamped from a single sheet of manganese steel with a wide shallow brim to deflect overhead shrapnel balls and falling shell splinters, reducing fatal head injuries by roughly 80%."
+          "image_alt": "Original First World War Mark I manganese-steel Brodie combat helmet with wide shallow brim and leather chinstrap preserved in museum collection",
+          "caption": "The Mark I Manganese-Steel Brodie Helmet (Issued from Autumn 1915–Spring 1916): Pressed from a single sheet of Hadfield manganese steel with a wide shallow brim to deflect overhead shrapnel balls and shell splinters, cutting fatal head wounds by roughly 80%."
         },
         {
           "act": 4,
@@ -35894,14 +37535,110 @@ export default {
           "paragraphs": [
             "<p><span class=\"para-ref\">[4.1]</span> In April 1915, during the Second Battle of Ypres, German forces unleashed industrial chemical warfare by releasing cylinders of chlorine gas. The green cloud inflicted **acute chlorine asphyxiation**, reacting with bodily water to form hydrochloric acid that stripped victims' bronchial linings, causing fluid to flood internal airways so soldiers slowly drowned in their own bodily fluids.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Having no protective equipment, Allied troops desperately improvised by pressing **urine-soaked cloth pads** against their faces, using ammonia in urine to neutralise the acidic chlorine vapour. In December 1915, Germany introduced **phosgene gas**, a colourless gas six times more lethal than chlorine that delayed symptoms for forty-eight hours, causing unsuspected lung collapse after casualties returned to frontline trenches.</p>"
-          ]
+          ],
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Chemical Warfare Progression",
+            "title": "Poison Gas & Anti-Gas Evolution on the Western Front (1915–1918)",
+            "default_index": 1,
+            "caption": "Slide or click across the three German chemical weapons to compare how each gas injured troops and how RAMC chemists upgraded frontline protection.",
+            "stops": [
+              {
+                "short_label": "1. Chlorine (Apr 1915)",
+                "label": "Chlorine Gas — Second Ypres (22 April 1915)",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "Released from 5,730 pressurized cylinders at Ypres as a visible greenish-yellow cloud, reacting with lung moisture to form corrosive hydrochloric acid.",
+                "traits": [
+                  {
+                    "category": "Delivery & Clue",
+                    "glyph": "law",
+                    "value": "Wind-Blown Green Cloud"
+                  },
+                  {
+                    "category": "Medical Trauma",
+                    "glyph": "people",
+                    "value": "Acute Lung Suffocation"
+                  },
+                  {
+                    "category": "Early Defence",
+                    "glyph": "clothes",
+                    "value": "Urine-Soaked Cotton Pads"
+                  },
+                  {
+                    "category": "Next Upgrade",
+                    "glyph": "leader",
+                    "value": "Black Veil & Hypo Hood"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Phosgene (Dec 1915)",
+                "label": "Phosgene Gas — Ypres Sector (December 1915)",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Nearly colourless gas smelling faintly of musty hay; eighteen times deadlier than chlorine and capable of killing seemingly fit men within 48 hours.",
+                "traits": [
+                  {
+                    "category": "Delivery & Clue",
+                    "glyph": "law",
+                    "value": "Colourless Musty-Hay Vapour"
+                  },
+                  {
+                    "category": "Medical Trauma",
+                    "glyph": "people",
+                    "value": "Delayed 48hr Lung Oedema"
+                  },
+                  {
+                    "category": "RAMC Defence",
+                    "glyph": "clothes",
+                    "value": "Phenate-Hexamine (PH) Helmet"
+                  },
+                  {
+                    "category": "Lethality Share",
+                    "glyph": "language",
+                    "value": "~85% of All Gas Deaths"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Mustard Gas (Jul 1917)",
+                "label": "Mustard Gas — Third Ypres (July 1917)",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Odourless oily liquid fired in artillery shells that lingered in mud for weeks, soaking through wool uniforms to blister skin and blind eyes.",
+                "traits": [
+                  {
+                    "category": "Delivery & Clue",
+                    "glyph": "law",
+                    "value": "Oily Artillery Shell Liquid"
+                  },
+                  {
+                    "category": "Medical Trauma",
+                    "glyph": "people",
+                    "value": "Skin Blisters & Blindness"
+                  },
+                  {
+                    "category": "Airway Shield",
+                    "glyph": "clothes",
+                    "value": "Harrison Small Box Respirator"
+                  },
+                  {
+                    "category": "CCS Care",
+                    "glyph": "language",
+                    "value": "Bathing, Clean Clothes & Eye Wash"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 5,
           "title": "Mustard Gas & The Small Box Respirator (1917–1918)",
           "theme_heading": "Mustard Gas & The Small Box Respirator (1917–1918)",
           "text": "<p><span class=\"para-ref\">[5.1]</span> In July 1917, German forces deployed **mustard gas** at Ypres. Delivered inside artillery shells, this oily liquid soaked through woollen uniforms, blistering skin, causing temporary blindness, and producing severe internal burns. It caused agonising **internal airway suffocation** and contaminated muddy shell holes for days, forcing medical units to establish specialised washing and decontamination clearing stations.</p><p><span class=\"para-ref\">[5.2]</span> In response, British researchers issued the **Small Box Respirator (1916)**, featuring a rubber face mask connected by a corrugated hose to a chest canister containing charcoal and chemical neutralisers. The respirator was extraordinarily effective: while chemical gas attacks produced terrifying psychological panic and blinded thousands, gas accounted for under three percent of total British wartime fatalities.</p>",
-          "image": "/images/blinded_soldiers_gas_1918.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l53_b4_55th_div_gas_casualties_q11586.jpg",
           "sources": [
             {
               "id": "source_e_british_ph_gas_helmet_1916",
@@ -35933,8 +37670,8 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> In July 1917, German forces deployed **mustard gas** at Ypres. Delivered inside artillery shells, this oily liquid soaked through woollen uniforms, blistering skin, causing temporary blindness, and producing severe internal burns. It caused agonising **internal airway suffocation** and contaminated muddy shell holes for days, forcing medical units to establish specialised washing and decontamination clearing stations.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> In response, British researchers issued the **Small Box Respirator (1916)**, featuring a rubber face mask connected by a corrugated hose to a chest canister containing charcoal and chemical neutralisers. The respirator was extraordinarily effective: while chemical gas attacks produced terrifying psychological panic and blinded thousands, gas accounted for under three percent of total British wartime fatalities.</p>"
           ],
-          "image_alt": "Official photograph (IWM Q 11586, 10 April 1918) showing British 55th Division soldiers blinded by tear and mustard gas queuing with bandaged eyes outside an Advanced Dressing Station near Béthune, each holding the shoulder of the man in front",
-          "caption": "Gas Casualties at an Advanced Dressing Station near Béthune (10 April 1918, Battle of Estaires, IWM Q 11586): Troops of the 55th (West Lancashire) Division temporarily blinded by German gas stand in line with bandaged eyes holding each other’s shoulders while awaiting treatment."
+          "image_alt": "Line of British 55th (West Lancashire) Division soldiers temporarily blinded by German gas standing with white eye bandages and hands resting on each other’s shoulders outside an Advanced Dressing Station near Béthune on 10 April 1918",
+          "caption": "Gas Casualties at an Advanced Dressing Station near Béthune (10 April 1918, Battle of Estaires, Official Photograph by 2nd Lt T. K. Aitken, IWM Q 11586): Troops of the 55th (West Lancashire) Division temporarily blinded by gas queue in single file holding each other’s shoulders—the scene that inspired John Singer Sargent’s Gassed."
         }
       ],
       "sources": [
@@ -36035,12 +37772,12 @@ export default {
           },
           "enquiry_question": "How did British anti-gas protection evolve from the 1916 PH Helmet shown in Source E to counter 1917 Mustard Gas?",
           "source_context": "Issued in millions during 1915–1916 to counter German phosgene and chlorine clouds, the PH helmet had to be tucked tightly inside the tunic collar. From August 1916 onward, it was superseded by Edward Harrison’s Small Box Respirator with a charcoal filter canister.",
-          "image": "/images/british_ph_gas_helmet.jpg",
-          "image_alt": "Official War Office photograph by Ernest Brooks (IWM Q 4002, July 1916) showing two British Machine Gun Corps soldiers wearing chemically treated flannel Phenate-Hexamine (PH) gas hoods with circular glass eyepieces and rubber exhalation tubes while manning a Vickers gun on the Somme",
-          "caption": "Official British photograph taken by Lieutenant Ernest Brooks near Ovillers during the Battle of the Somme (July 1916, IWM Q 4002), showing a Vickers machine-gun crew wearing Phenate-Hexamine (PH) flannel gas helmets tucked into their tunics, fitted with glass eyepieces and a one-way rubber exhalation mouthpiece.",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l53_s4_vickers_ph_gas_helmet_q3995.jpg",
+          "image_alt": "Two British soldiers crewing a tripod-mounted Vickers machine gun in a shell-torn trench near Ovillers in July 1916 while wearing chemical-dipped flannel PH anti-gas helmets with glass eyepieces and rubber exhaust valves",
+          "caption": "Official British photograph by Lieutenant John Warwick Brooke near Ovillers during the Battle of the Somme (July 1916, IWM Q 3995), showing a Vickers machine-gun crew wearing Phenate-Hexamine (PH) flannel anti-gas helmets tucked into their tunics.",
           "provenance": "Official British War Office photograph by Second Lieutenant Ernest Brooks, near Ovillers, Somme, July 1916 (Imperial War Museum, IWM Q 4002).",
           "image_url": "/images/british_ph_gas_helmet.jpg",
-          "src": "/images/british_ph_gas_helmet.jpg",
+          "src": "/images/edexcel_medicine/kt5/med_kt5_l53_s4_vickers_ph_gas_helmet_q3995.jpg",
           "source": "/images/british_ph_gas_helmet.jpg"
         }
       ],
@@ -37040,8 +38777,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/med_banner_kt5_3_vickers_gas_helmets.jpg",
-      "card_image": "/images/med_banner_kt5_3_vickers_gas_helmets.jpg",
+      "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg",
+      "card_image": "/images/edexcel_medicine/kt5/med_kt5_l53_b4_55th_div_gas_casualties_q11586.jpg",
       "card_position": "center 52%",
       "topic": "Weapons & Injuries: Shrapnel, Gas Gangrene & Poison Gas",
       "visual_story_sheet": {
@@ -37154,7 +38891,8 @@ export default {
             "Oily blistering chemical agent burning skin, eyes, and lungs through uniforms."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg"
     },
     {
       "id": "lesson_5_4",
@@ -37163,11 +38901,12 @@ export default {
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
       "banner": {
-        "image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg",
-        "caption": "Wounded Soldiers Arriving Along Duckboards at a Western Front Casualty Clearing Station",
-        "position": "center 35%"
+        "image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg",
+        "alt": "Helmeted stretcher-bearers carefully lifting a wounded soldier on a canvas stretcher into the rear berth of a Red Cross motor ambulance wagon at a Casualty Clearing Station in Bertrancourt, France on 6 April 1918",
+        "position": "center 56%",
+        "caption": "Loading Stretcher Cases into a Motor Ambulance at Bertrancourt Casualty Clearing Station (6 April 1918, Official Photograph by H. A. Sanders): Motorised ambulance convoys linked forward dressing stations with railhead surgical hubs."
       },
-      "banner_position": "center 35%",
+      "banner_position": "center 56%",
       "hook_text": "When a soldier was struck down in the mud of No Man’s Land, his survival depended on a vast, integrated medical machine: the Chain of Evacuation. Operated by the Royal Army Medical Corps (RAMC) and heroic volunteers of the First Aid Nursing Yeomanry (FANY), this multi-stage system ferried casualties from the frontline firing line through Regimental Aid Posts, Advanced Dressing Stations, and Casualty Clearing Stations, back to coastal Base Hospitals. In a war where untreated wounds quickly succumbed to fatal gas gangrene, every hour saved in transit was the difference between life and death. How did the Chain of Evacuation function under intense shellfire to treat and transport wounded soldiers?",
       "teacher_notes": {
         "primer": "This enquiry examines the operational structure and humanitarian logistics of the Royal Army Medical Corps (RAMC) Chain of Evacuation on the Western Front, exploring stretcher bearer retrieval, first aid at Regimental Aid Posts, intermediate triage at Dressing Stations, surgical intervention and the 3-tier triage system at Casualty Clearing Stations, coastal Base Hospitals, and transport innovations including motor ambulances and converted canal barges.",
@@ -37330,7 +39069,7 @@ export default {
                 "title": "Stage 1: Regimental Stretcher Bearers (Recovery Under Fire)",
                 "details": "Only 16 stretcher bearers per 1,000-man infantry battalion (4 men per stretcher, rising to 6–8 in Passchendaele mud). Working under shellfire or at night, they applied shell dressings and basic tourniquets to stop fatal bleeding.",
                 "hinge": "Why did a battalion with 300 casualties immediately face a dangerous stretcher-bearer shortage?",
-                "photo": "/images/stretcher_bearers_passchendaele_1917.jpg",
+                "photo": "/images/edexcel_medicine/kt5/med_kt5_l54_s0_passchendaele_bearers_q5935.jpg",
                 "photo_pos": "center 35%",
                 "photo_caption": "IWM Q 5935: Seven mud-splattered stretcher-bearers wading knee-deep at Passchendaele (16 Aug 1917)."
               },
@@ -37432,8 +39171,9 @@ export default {
             "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded were patched up to return to defensive duties, while critically injured casualties were swiftly dispatched rearward to the next medical stage along the chain of evacuation to save their lives from fatal collapse.</p>"
           ],
-          "image": "/images/med_stage_dressing_station_ww1.jpg",
-          "caption": "Emergency First Aid Close Behind the Firing Line (Fortunino Matania, \"An Advanced Dressing Station on the Western Front\", The Sphere, 1917): RAMC Medical Officers and orderlies apply emergency field dressings, tourniquets, and splints in candle- and lamp-lit forward posts to stabilise casualties for evacuation rearward."
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l54_b1_rap_warneton_1917.jpg",
+          "caption": "Frontline Regimental Aid Post at Warneton (25 August 1917, Official NZEF Photograph by H. A. Sanders, H206): Stretcher-bearers carry a casualty into the sandbagged \"PATIENTS ENTRANCE\" bunker sheltered inside a ruined brick cellar just behind the trenches, where the Regimental Medical Officer applied field dressings, morphine, and splints.",
+          "image_alt": "RAMC stretcher-bearers carrying a wounded soldier toward a heavily sandbagged bunker doorway marked PATIENTS ENTRANCE built against a shell-damaged brick wall at the Regimental Aid Post in Warneton on 25 August 1917"
         },
         {
           "act": 3,
@@ -37514,7 +39254,7 @@ export default {
           "title": "Base Hospitals, Ambulance Trains & Coastal Evacuation (1914–1918)",
           "theme_heading": "Base Hospitals, Ambulance Trains & Coastal Evacuation (1914–1918)",
           "text": "<p><span class=\"para-ref\">[5.1]</span> Once operated on and stabilised at clearing stations, casualties were loaded onto ambulance trains travelling to large **base hospitals near French ports** like Boulogne, Le Havre, and Rouen. These coastal facilities had thousands of beds and specialised departments for chest wounds, head trauma, and orthopaedic surgery, staffed by skilled doctors and civilian volunteer nurses working in clean wards.</p><p><span class=\"para-ref\">[5.2]</span> Transport between clearing stations and coastal ports utilised heated **ambulance trains and hospital canal barges**. Converted canal barges carried men with severe abdominal and head injuries smoothly along calm French waterways, preventing painful road vibration. Patients who permanently lost limbs or suffered disabling trauma were evacuated via hospital ships on **'Blighty' ship evacuations** home to Britain for long-term recovery.</p>",
-          "image": "/images/ramc_canal_barge.jpg",
+          "image": "/images/edexcel_medicine/maps/med_map_kt5_evacuation_logistics_rail_canal_1914_18.svg",
           "sources": [
             {
               "id": "med_l24_source_d",
@@ -37544,8 +39284,89 @@ export default {
             "<p><span class=\"para-ref\">[5.1]</span> Once operated on and stabilised at clearing stations, casualties were loaded onto ambulance trains travelling to large **base hospitals near French ports** like Boulogne, Le Havre, and Rouen. These coastal facilities had thousands of beds and specialised departments for chest wounds, head trauma, and orthopaedic surgery, staffed by skilled doctors and civilian volunteer nurses working in clean wards.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> Transport between clearing stations and coastal ports utilised heated **ambulance trains and hospital canal barges**. Converted canal barges carried men with severe abdominal and head injuries smoothly along calm French waterways, preventing painful road vibration. Patients who permanently lost limbs or suffered disabling trauma were evacuated via hospital ships on **'Blighty' ship evacuations** home to Britain for long-term recovery.</p>"
           ],
-          "image_alt": "Wartime interior photograph of a converted British hospital canal barge in northern France showing two QAIMNS military nurses dressing a seated soldier’s bandaged arm inside a clean wooden ward",
-          "caption": "Evacuation by Hospital Canal Barge (Northern France, c.1917, IWM): Two Queen Alexandra’s Imperial Military Nursing Service (QAIMNS) sisters dress a wounded soldier’s arm inside a converted canal barge—used to transport casualties with shattered limbs or head wounds smoothly to coastal Base Hospitals without rail jolting."
+          "image_alt": "True 1:10m GIS medical logistics atlas of the British Sector of the Western Front, English Channel, and South-East England (1914–18), mapping frontline Regimental Aid Post and Field Ambulance relays (Menin Road/Ypres and Albert) to forward railhead Casualty Clearing Stations (Lijssenthoek/Remy Siding, Brandhoek, Agny, and Gezaincourt), Red Cross Ambulance Train trunk lines via Hazebrouck, St-Omer, Amiens, and Abbeville, smooth-gliding hospital canal barges on the Yser, Aa, and Somme canals, coastal Base Hospitals at Calais, Wimereux, Boulogne, and Étaples, and cross-Channel hospital ships to Dover, Southampton, and Queen’s Hospital, Sidcup",
+          "caption": "Reference Map: Spatial logistics of the RAMC Evacuation Chain (1914–1918), tracing casualty movement from frontline RAP/ADS relays through railhead Casualty Clearing Stations, Red Cross Ambulance Trains, smooth-gliding canal barges, and 20,000-bed Channel Base Hospitals to Dover, Southampton, and Harold Gillies’s Queen’s Hospital at Sidcup.",
+          "stage_hook_map": {
+            "id": "med-kt5-evacuation-logistics-rail-canal-map",
+            "title": "Spatial Logistics of the RAMC Evacuation Chain: CCS Railheads, Canal Barges & Base Hospitals (1914–18)",
+            "subtitle": "Frontline RAP/ADS Relay to Lijssenthoek CCS, Ambulance Trains, Canal Barges, Boulogne & Sidcup · Tap numbered pins or enlarge for Whiteboard Mode",
+            "image": "/images/edexcel_medicine/maps/med_map_kt5_evacuation_logistics_rail_canal_1914_18.svg",
+            "hotspots": [
+              {
+                "id": "spot-1",
+                "x": 72.9,
+                "y": 41.3,
+                "color": "#be123c",
+                "label": "1. Frontline RAP & ADS/MDS Relay",
+                "badge": "0–2 Miles Behind Trenches",
+                "date": "1914 – 1918",
+                "title": "Frontline Salient RAP & Field Ambulance ADS/MDS Relay (Menin Road → Ypres & Albert)",
+                "details": "Battalion stretcher-bearers carried wounded men through shell-cratered mud to the Regimental Aid Post (RAP, ~200m behind the front in dugouts or ruined cellars like Ypres ramparts) for tourniquets, field dressings, and morphine. Casualties were then relayed along dangerous choke-points such as Menin Road (\"Hellfire Corner\") or Albert roads to Field Ambulance Advanced and Main Dressing Stations (ADS/MDS) for anti-tetanus serum, Thomas splints, and motor ambulance dispatch.",
+                "hinge": "Why did bottlenecks along exposed roads like Menin Corner make replacing horse-drawn wagons with motor ambulances from 1915 a life-saving reform?"
+              },
+              {
+                "id": "spot-2",
+                "x": 68.3,
+                "y": 42.2,
+                "color": "#dc2626",
+                "label": "2. Railhead CCS Surgical Hubs",
+                "badge": "7–10 Miles Back • 24-Hr Window",
+                "date": "1915 – 1918",
+                "title": "Forward Railhead Casualty Clearing Stations: Lijssenthoek (Remy Siding), Brandhoek & Gezaincourt",
+                "details": "Sited 7–10 miles behind the front beside railway sidings out of routine field-gun range—such as Lijssenthoek (Remy Siding, housing four giant CCS units with 4,000 beds) and Brandhoek near Poperinghe, Agny near Arras, and Gezaincourt near the Somme—the CCS became the decisive surgical hub of the war. Staffed by specialist surgeons and QAIMNS/VAD female nurses, CCS teams performed 3-way triage, mobile X-rays, blood transfusions, and urgent wound debridement before gas gangrene set in.",
+                "hinge": "Why was siting Casualty Clearing Stations directly beside railway sidings 7–10 miles behind the front the decisive geographic solution to gas gangrene?"
+              },
+              {
+                "id": "spot-3",
+                "x": 65.5,
+                "y": 46.9,
+                "color": "#b45309",
+                "label": "3. Red Cross Ambulance Trains",
+                "badge": "400–500 Beds & Operating Cars",
+                "date": "Nov 1914 – 1918",
+                "title": "Red Cross Ambulance Train Trunk Lines (via Hazebrouck, St-Omer, Amiens & Abbeville)",
+                "details": "Replacing the jolting cattle trucks of autumn 1914, 30+ purpose-built Red Cross Ambulance Trains steamed from CCS sidings through junctions at Hazebrouck, St-Omer, Amiens, and Abbeville to Channel ports. Each heated 14-carriage train carried 400–500 lying and sitting casualties in tiered spring berths alongside whitewashed operating theatres, dispensaries, kitchens, and QAIMNS nursing sisters.",
+                "hinge": "How did purpose-built ambulance trains with onboard operating cars improve survival compared with the makeshift goods wagons used during First Ypres in 1914?"
+              },
+              {
+                "id": "spot-4",
+                "x": 59.2,
+                "y": 42.3,
+                "color": "#0d9488",
+                "label": "4. Hospital Canal Barges",
+                "badge": "Zero Jolting for Head & Chest",
+                "date": "1915 – 1918",
+                "title": "Smooth-Gliding Hospital Canal Barges (Yser, Aa & Somme Waterways)",
+                "details": "Converted 120-foot northern French and Flemish cargo barges towed smoothly along the Yser, Aa, Calais, and Somme canals carried 30 stretcher cases each in airy, electric-lit below-deck wards with operating tables and nursing staff. Although slow, canal barges spared soldiers with shattered femurs, penetrating chest wounds, or fractured skulls from fatal road and railway vibration—while freeing congested rail lines during major offensives.",
+                "hinge": "Why did RAMC surgeons deliberately choose slow canal barges over fast ambulance trains for casualties suffering severe skull, spine, or abdominal trauma?"
+              },
+              {
+                "id": "spot-5",
+                "x": 48.3,
+                "y": 56.4,
+                "color": "#1d4ed8",
+                "label": "5. Coastal Base Hospitals",
+                "badge": "20,000+ Beds & Wright’s Lab",
+                "date": "1914 – 1918",
+                "title": "Coastal Base Hospitals: Wimereux, Boulogne, Calais & Étaples (20,000+ Beds)",
+                "details": "At Channel ports including Calais (served by FANY female ambulance drivers from January 1916), Wimereux, Boulogne, and the vast 20,000-bed Étaples hospital camp (plus Rouen and Le Havre), stationary and general hospitals delivered long-term specialist care. Boulogne housed Sir Almroth Wright’s pioneering wound-bacteriology research lab, specialist neurosurgical and orthopaedic wards, Carrel–Dakin antiseptic irrigation, and convalescent depots returning fit men to the front.",
+                "hinge": "How did coastal Base Hospitals divide medical labour with forward Casualty Clearing Stations so the front line neither lost recoverable manpower nor clogged up?"
+              },
+              {
+                "id": "spot-6",
+                "x": 19.3,
+                "y": 15.5,
+                "align": "right",
+                "color": "#6d28d9",
+                "label": "6. Hospital Ships & Sidcup (1917)",
+                "badge": "Gillies Facial Reconstruction",
+                "date": "1914 – Aug 1917+",
+                "title": "Cross-Channel Hospital Ships → Dover/Southampton & Queen’s Hospital, Sidcup (1917)",
+                "details": "Casualties requiring months of specialist reconstruction sailed aboard hospital ships to Dover and Southampton (\"a Blighty wound\") and boarded UK ambulance trains. At Queen’s Hospital, Frognal, Sidcup (opened August 1917 in Kent with over 1,000 beds), Major Harold Gillies and multidisciplinary surgical, dental, and artist teams (including Henry Tonks) performed over 11,000 pioneering skin-graft and tubed-pedicle operations for men with devastating shrapnel jaw and facial wounds.",
+                "hinge": "Why did trench warfare—where steel-helmeted soldiers peered above sandbagged parapets—create an unprecedented demand for Harold Gillies’s facial surgery at Sidcup?"
+              }
+            ]
+          }
         }
       ],
       "sources": [
@@ -37554,9 +39375,9 @@ export default {
           "letter": "A",
           "type": "visual",
           "title": "Source A (Photograph): Stretcher Bearers Carrying a Wounded Soldier through Mud at the Battle of Passchendaele (1917)",
-          "image": "/images/stretcher_bearers_passchendaele_1917.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l54_s0_passchendaele_bearers_q5935.jpg",
           "image_url": "/images/stretcher_bearers_passchendaele_1917.jpg",
-          "caption": "Official British photograph taken near Boezinge during the Third Battle of Ypres (Passchendaele, 16 August 1917, IWM Q 5935), showing seven mud-splattered stretcher-bearers struggling up to their knees in deep, waterlogged mud to carry a single wounded comrade rearward.",
+          "caption": "Official British photograph by Lieutenant John Warwick Brooke during the Third Battle of Ypres (Passchendaele, August 1917, IWM Q 5935), showing seven mud-splattered stretcher-bearers struggling up to their knees in liquid clay to evacuate a single wounded comrade.",
           "citation": "Imperial War Museum, London (IWM Q 5935 / Public Domain).",
           "question_badge": "Western Front Evidence Analysis",
           "question_type": "Evidence Analysis",
@@ -37567,8 +39388,9 @@ export default {
           },
           "enquiry_question": "What does this official 1917 Passchendaele photograph (Source A) reveal about why Stage 1 of the Chain of Evacuation was often the slowest link?",
           "source_context": "IWM photograph Q 5935, Third Battle of Ypres. Stretcher bearers were unarmed and sustained some of the highest casualty rates in the BEF.",
-          "src": "/images/stretcher_bearers_passchendaele_1917.jpg",
-          "source": "/images/stretcher_bearers_passchendaele_1917.jpg"
+          "src": "/images/edexcel_medicine/kt5/med_kt5_l54_s0_passchendaele_bearers_q5935.jpg",
+          "source": "/images/stretcher_bearers_passchendaele_1917.jpg",
+          "image_alt": "Seven mud-caked British stretcher-bearers wading knee-deep through thick Flanders mud near Boezinge during the Battle of Pilckem Ridge at Passchendaele in August 1917 to carry a single wounded soldier on a stretcher"
         },
         {
           "id": "med_l24_source_b",
@@ -38594,8 +40416,8 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg",
-      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg",
+      "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg",
+      "card_image": "/images/source_b_ambulance_somme_1916.jpg",
       "card_position": "center 35%",
       "topic": "The Chain of Evacuation: Bearers, RAP, ADS, CCS & Base Hospitals",
       "visual_story_sheet": {
@@ -38711,7 +40533,7 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_4_ccs_wounded_evacuation.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg"
     },
     {
       "id": "lesson_5_5",
@@ -38719,7 +40541,7 @@ export default {
       "enquiry_question": "How did pioneering surgical techniques and mechanical innovations conquer the crisis of compound fractures and wound sepsis?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
-      "banner_position": "center 65%",
+      "banner_position": "center 52%",
       "hook_text": "In the opening months of the First World War, an infantryman who suffered a broken thigh bone had an 80% chance of dying before ever reaching a hospital. The violent jolting of horse ambulances caused shattered bone ends to tear through the femoral artery, triggering fatal internal haemorrhaging. Furthermore, standard nineteenth-century antiseptics completely failed against the anaerobic bacteria of Flanders mud. Confronted by catastrophic mortality, military surgeons revolutionised trauma medicine through brilliant mechanical engineering, chemical irrigation, and mobile radiology. How did the Thomas Splint and mobile X-ray units drastically reduce battlefield mortality rates during the war?",
       "teacher_notes": {
         "primer": "This enquiry investigates the transformative surgical and radiological innovations developed on the Western Front, exploring radical wound debridement to prevent gas gangrene, Alexis Carrel and Henry Dakin’s continuous chemical antiseptic irrigation system, Sir Robert Jones’s introduction of the Thomas Splint to slash fractured femur mortality, and the clinical deployment and practical limitations of mobile X-ray units.",
@@ -38948,8 +40770,8 @@ export default {
           "title": "Mobile X-Ray Units & Radiology (1914–1918)",
           "theme_heading": "Mobile X-Ray Units & Radiology (1914–1918)",
           "text": "<p><span class=\"para-ref\">[4.1]</span> Locating buried bullets and shell shrapnel prior to surgery was critical to operative success. If surgeons probed blindly through muscle tissue with surgical forceps, they risked tearing deep arteries or forcing soil bacteria deeper into flesh. The RAMC resolved this by deploying fleets of **mobile X-ray vans**, bringing diagnostic radiology directly to frontline Casualty Clearing Stations across the British sector in northern France.</p><p><span class=\"para-ref\">[4.2]</span> Mounted in mobile light trucks, radiographic units assisted in **locating shrapnel before surgery**, producing two-dimensional shadow plates from different angles so surgeons could determine the exact depth and trajectory of metal fragments. This precision reduced operating times, successfully **preventing tissue damage** and ensuring surgeons extracted contaminated shrapnel before gas gangrene could develop inside deep wounds.</p>",
-          "image_alt": "Archival First World War photograph of Marie Curie seated in the cab of a French military mobile X-ray lorry (Petite Curie)",
-          "caption": "Allied Mobile Field Radiography Unit (French Army Service de Santé Voiture Radiologique, c.1915–1917): Parked directly outside a field hospital tent, the truck’s petrol engine generated electrical current to power portable X-ray tubes for pinpointing bullets and shrapnel before debridement.",
+          "image_alt": "Wounded soldier lying on a field stretcher table beside an open French military Voiture radiologique automobile, wired directly to the vehicle’s petrol-driven electrical generator and overhead glass X-ray bulb",
+          "caption": "Battlefield Radiography Beside a Mobile X-Ray Car (Service de Santé Voiture Radiologique Massiot, Agence Rol / Bibliothèque nationale de France): Powered by a dynamo driven off the lorry’s petrol engine, portable X-ray tubes pinpointed deeply buried shrapnel and bullets before surgeons attempted debridement.",
           "isReversed": true,
           "sources": [
             {
@@ -38980,7 +40802,7 @@ export default {
             "<p><span class=\"para-ref\">[4.1]</span> Locating buried bullets and shell shrapnel prior to surgery was critical to operative success. If surgeons probed blindly through muscle tissue with surgical forceps, they risked tearing deep arteries or forcing soil bacteria deeper into flesh. The RAMC resolved this by deploying fleets of **mobile X-ray vans**, bringing diagnostic radiology directly to frontline Casualty Clearing Stations across the British sector in northern France.</p>",
             "<p><span class=\"para-ref\">[4.2]</span> Mounted in mobile light trucks, radiographic units assisted in **locating shrapnel before surgery**, producing two-dimensional shadow plates from different angles so surgeons could determine the exact depth and trajectory of metal fragments. This precision reduced operating times, successfully **preventing tissue damage** and ensuring surgeons extracted contaminated shrapnel before gas gangrene could develop inside deep wounds.</p>"
           ],
-          "image": "/images/med_stage_voiture_radiologique.jpg"
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l55_b3_voiture_radiologique_blesse_1914.jpg"
         },
         {
           "act": 5,
@@ -39086,9 +40908,9 @@ export default {
           "letter": "D",
           "type": "visual",
           "title": "Source D: Marie Curie at the Wheel of a Mobile Field Radiography Car ('Petite Curie') on the Western Front (c.1915)",
-          "image": "/images/field_hospital_xray_1917.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l55_s3_voiture_radiologique_exterior_1914.jpg",
           "image_url": "/images/field_hospital_xray_1917.jpg",
-          "caption": "Marie Curie at the wheel of a mobile radiographic car ('petite Curie') on the Western Front (c.1915). Equipped with a petrol dynamo, portable X-ray apparatus, and photographic darkroom supplies, these mobile radiological vans brought diagnostic imaging directly to frontline dressing stations and casualty clearing units, enabling surgeons to locate bullets and shrapnel before operating.",
+          "caption": "Allied Mobile Field Radiography Van (\"Voiture Radiologique\" / \"Petite Curie\", Agence Rol / Bibliothèque nationale de France, 1914–1915): Organised on the Western Front by Marie Curie alongside six British Sector mobile X-ray lorries, these petrol-dynamo vans brought X-ray tubes and darkrooms directly to Casualty Clearing Stations.",
           "citation": "Curie Institute Archive / Wellcome Collection (Public Domain).",
           "question_badge": "Western Front Evidence Analysis",
           "question_type": "Evidence Analysis",
@@ -39099,8 +40921,9 @@ export default {
           },
           "enquiry_question": "Why were mobile X-ray vans like Marie Curie’s \"Petites Curies\" and the six British Sector mobile radiology lorries (Source D) vital before surgeons attempted debridement?",
           "source_context": "Marie Curie equipped 20 mobile field radiography vehicles ('petites Curies') and trained 150 female technicians, examining over one million wounded soldiers during the war.",
-          "src": "/images/field_hospital_xray_1917.jpg",
-          "source": "/images/field_hospital_xray_1917.jpg"
+          "src": "/images/edexcel_medicine/kt5/med_kt5_l55_s3_voiture_radiologique_exterior_1914.jpg",
+          "source": "/images/field_hospital_xray_1917.jpg",
+          "image_alt": "French military Service de Santé mobile radiography motor van (Voiture radiologique Massiot) marked with a Red Cross and RADIOLOGIE on its enclosed darkroom body"
         },
         {
           "id": "med_l25_source_e",
@@ -40119,12 +41942,13 @@ export default {
         "timer_seconds": 90
       },
       "banner": {
-        "image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg",
-        "caption": "\"In the Operating Theatre\": 34th (1/1 West Lancashire) Casualty Clearing Hospital, Western Front",
-        "position": "center 65%"
+        "image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
+        "alt": "Surgeons in white gowns, a military nursing sister, and an anaesthetist operating beneath an overhead electric lamp inside the timber-lined operating hut of the 34th (1/1 West Lancashire) Casualty Clearing Hospital on the Western Front",
+        "position": "center 52%",
+        "caption": "\"In the Operating Theatre\": Surgical team operating beneath electric lighting inside the 34th (1/1 West Lancashire) Casualty Clearing Hospital on the Western Front (Wellcome Collection L0030464)."
       },
-      "hero_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg",
-      "card_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg",
+      "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
+      "card_image": "/images/thomas_splint_authentic.jpg",
       "card_position": "center 65%",
       "topic": "Surgical Breakthroughs: Debridement, Carrel-Dakin, Thomas Splint & X-Rays",
       "visual_story_sheet": {
@@ -40237,7 +42061,7 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt5_5_operating_theatre_ww1.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg"
     },
     {
       "id": "lesson_5_6",
@@ -40245,7 +42069,7 @@ export default {
       "enquiry_question": "How did the horrific casualties of the Western Front drive revolutionary breakthroughs in blood storage, neurosurgery, and facial reconstruction?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
-      "banner_position": "center 50%",
+      "banner_position": "center 54%",
       "hook_text": "By 1917, the industrial violence of the Western Front was shattering human bodies in ways never before encountered in surgical history. Massive blood loss triggered fatal haemorrhagic shock before casualties could reach the operating table, while artillery shrapnel gouged out brains and ripped away soldiers’ faces. In response, brilliant visionaries transformed medicine forever: Captain Oswald Robertson established the world’s first blood bank on ice, Harvey Cushing pioneered microscopic brain surgery, and Harold Gillies sculpted entirely new living faces at Sidcup. How did wartime necessity drive revolutionary breakthroughs in blood transfusions, brain surgery, and plastic reconstruction?",
       "teacher_notes": {
         "primer": "This enquiry explores the lifesaving medical breakthroughs achieved on the Western Front in blood storage, neurosurgery, and plastic reconstruction, examining Albert Hustin’s sodium citrate anticoagulation, Francis Rous and Joseph Turner’s refrigerated citrate-glucose preservation, Captain Oswald Robertson’s pioneering blood bank depot at Cambrai in 1917, Harvey Cushing’s brain surgery breakthroughs under local anaesthetic, and Harold Gillies’s tubed pedicle plastic reconstruction at Queen’s Hospital, Sidcup.",
@@ -40392,8 +42216,107 @@ export default {
             "<p><span class=\"para-ref\">[1.1]</span> Massive arterial blood loss was one of the leading causes of battlefield mortality on the Western Front. Severely wounded casualties succumbed rapidly to **haemorrhagic shock and severe blood loss**, suffering fatal cardiovascular collapse before reaching operating huts. In 1914, transfusions were rare, dangerous, and required direct person-to-person connection using rubber tubes, an impossible procedure under active artillery bombardment inside chaotic frontline aid posts.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> In 1915, American physician **Richard Lewisohn’s sodium citrate** research established the exact non-toxic concentration (0.2%) required for indirect transfusions. By **preventing fatal blood clotting** outside the human body, sodium citrate allowed blood to be collected in sterile glass flasks and administered hours later without poisoning the recipient, transforming emergency resuscitation across frontline British medical stations along the Western Front.</p>"
           ],
-          "image": "/images/med_stage_ww1_blood_transfusion.jpg",
-          "caption": "First Indirect Sodium Citrate Blood Transfusion (Dr Luis Agote at Rawson Hospital, Buenos Aires, 9 November 1914): Adding small quantities of sodium citrate prevented donor blood from clotting outside the body, overturning the need for perilous vein-to-vein surgical anastomosis."
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Transfusion Breakthroughs",
+            "title": "Solving Blood Loss on the Western Front (1901–1917)",
+            "default_index": 3,
+            "caption": "Click each stage in the scientific chain to see how battlefield transfusion evolved from risky live-donor surgery to the world’s first stored blood bank at Cambrai.",
+            "items": [
+              {
+                "tab_label": "1. ABO & Syringe (1901)",
+                "title": "ABO Blood Groups & Direct Vein-to-Vein Transfusion",
+                "dates": "1901–1914 (Landsteiner & Kimpton-Brown)",
+                "badge": "Clotting Barrier",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Discovery",
+                    "value": "Landsteiner A, B, AB, O"
+                  },
+                  {
+                    "label": "1914 Method",
+                    "value": "Donor Beside Patient"
+                  },
+                  {
+                    "label": "Fatal Flaw",
+                    "value": "Blood Clotted in Minutes"
+                  }
+                ],
+                "takeaway": "Karl Landsteiner’s 1901 ABO groups explained incompatible transfusion shock, yet because blood clotted rapidly outside veins, 1914 surgeons still needed a live donor lying next to the casualty."
+              },
+              {
+                "tab_label": "2. Sodium Citrate (1914–15)",
+                "title": "Sodium Citrate Anticoagulant (Indirect Transfusion)",
+                "dates": "1914–1915 (Hustin, Agote & Lewisohn)",
+                "badge": "Stopped Clotting",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Breakthrough",
+                    "value": "0.2% Sodium Citrate"
+                  },
+                  {
+                    "label": "Clinical Gain",
+                    "value": "Donor Separated from Patient"
+                  },
+                  {
+                    "label": "Remaining Limit",
+                    "value": "Cells Spoiled in ~48 Hours"
+                  }
+                ],
+                "takeaway": "Albert Hustin (1914) and Richard Lewisohn (1915) proved a small 0.2% sodium citrate dose safely prevented clotting in glass bottles or syringes—introduced to the British Sector by Lawrence Bruce Robertson."
+              },
+              {
+                "tab_label": "3. Citrate-Glucose (1916)",
+                "title": "Citrate-Dextrose Solution & Ice Preservation",
+                "dates": "1916 (Peyton Rous & J. R. Turner)",
+                "badge": "4-Week Storage",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Cell Fuel",
+                    "value": "Citrate + Dextrose (Glucose)"
+                  },
+                  {
+                    "label": "Cooling",
+                    "value": "Chilled on Ice"
+                  },
+                  {
+                    "label": "Shelf Life",
+                    "value": "Viable Up to 4 Weeks"
+                  }
+                ],
+                "takeaway": "American researchers Peyton Rous and Joseph Turner showed that feeding red blood cells with glucose (dextrose) while chilling citrated blood stopped cell breakdown for up to twenty-eight days."
+              },
+              {
+                "tab_label": "4. Cambrai Depot (Nov 1917)",
+                "title": "Capt. Oswald Robertson’s World-First Blood Bank",
+                "dates": "November 1917 (Battle of Cambrai)",
+                "badge": "First Blood Depot",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Stockpile",
+                    "value": "22 Units Universal Group O"
+                  },
+                  {
+                    "label": "Storage Crate",
+                    "value": "Ice-Packed Munitions Boxes"
+                  },
+                  {
+                    "label": "Cambrai Survival",
+                    "value": "11 of 20 Critical Men Saved"
+                  }
+                ],
+                "takeaway": "Ahead of the November 1917 Cambrai tank offensive, US/RAMC Captain Oswald Robertson pre-collected universal Group O blood up to 26 days in advance—resuscitating casualties in shock before surgery."
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -40441,7 +42364,7 @@ export default {
           "title": "Captain Oswald Robertson & The Cambrai Blood Depot (Nov 1917)",
           "theme_heading": "Captain Oswald Robertson & The Cambrai Blood Depot (Nov 1917)",
           "text": "<p><span class=\"para-ref\">[3.1]</span> In autumn 1917, Canadian-American medical officer Captain Oswald Robertson put these laboratory discoveries into clinical practice. Ahead of the Battle of Cambrai, he created **Captain Oswald Robertson’s blood depot**, the world's first mobile blood bank. Robertson collected universal donor blood from healthy troops, added sodium citrate and glucose, and packed twenty-two glass bottles into iced ammunition boxes stored in sawdust.</p><p><span class=\"para-ref\">[3.2]</span> During the **Battle of Cambrai (November 1917)**, Robertson resuscitated twenty severely wounded casualties suffering from catastrophic haemorrhage; eleven survived completely. Demonstrating the lifesaving power of **stored universal donor blood**, Robertson proved that pre-collected, stored blood banks could function effectively on active battlefields, establishing the operational blueprint for modern emergency blood transfusion services in military and civilian medicine.</p>",
-          "image": "/images/robertson_blood_depot_1917.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l56_b2_robertson_transfusion_kit_l0058180.jpg",
           "sources": [
             {
               "id": "med_l26_source_b",
@@ -40471,8 +42394,8 @@ export default {
             "<p><span class=\"para-ref\">[3.1]</span> In autumn 1917, Canadian-American medical officer Captain Oswald Robertson put these laboratory discoveries into clinical practice. Ahead of the Battle of Cambrai, he created **Captain Oswald Robertson’s blood depot**, the world's first mobile blood bank. Robertson collected universal donor blood from healthy troops, added sodium citrate and glucose, and packed twenty-two glass bottles into iced ammunition boxes stored in sawdust.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> During the **Battle of Cambrai (November 1917)**, Robertson resuscitated twenty severely wounded casualties suffering from catastrophic haemorrhage; eleven survived completely. Demonstrating the lifesaving power of **stored universal donor blood**, Robertson proved that pre-collected, stored blood banks could function effectively on active battlefields, establishing the operational blueprint for modern emergency blood transfusion services in military and civilian medicine.</p>"
           ],
-          "image_alt": "Museum photograph of Captain Oswald Robertson’s portable hinged wooden blood transfusion apparatus case (1917) containing a graduated glass bottle, rubber tubing, metal cannulae, hand pump, and printed DIRECTIONS FOR USE inside the lid",
-          "caption": "Oswald Robertson’s Portable Blood Transfusion Kit (1917, Science Museum, London): Used at the Battle of Cambrai (November 1917), this compact wooden case held a graduated glass bottle for citrated universal Group O blood, rubber tubing, cannulae, and lid-mounted operating instructions."
+          "image_alt": "Open wooden British military blood transfusion case (1917) displaying War Office DIRECTIONS FOR USE inside the lid, a strapped graduated 900 cc glass citrate-blood bottle, curved glass cannulae, and transfusion needles",
+          "caption": "Captain Oswald Robertson’s Portable Blood Transfusion Case (1917, Science Museum / Wellcome Collection L0058180): Fitted with War Office \"DIRECTIONS FOR USE\" inside the lid, a graduated 900 cc glass bottle for citrated universal Group O blood, rubber stoppers, and sterile needles used at the Battle of Cambrai."
         },
         {
           "act": 4,
@@ -40513,7 +42436,7 @@ export default {
           "title": "Harold Gillies & Plastic Reconstruction (1917–1918)",
           "theme_heading": "Harold Gillies & Plastic Reconstruction (1917–1918)",
           "text": "<p><span class=\"para-ref\">[5.1]</span> Shrapnel and bullet wounds produced horrific facial mutilation, tearing away noses, lips, and jaws when soldiers peered over trench parapets. In 1917, New Zealand pioneering plastic surgeon **Harold Gillies** established the Queen's Hospital in Sidcup, Kent. As Britain's specialist centre for facial reconstruction, **Queen's Hospital Sidcup** performed over eleven thousand complex reconstructive operations on disfigured servicemen.</p><p><span class=\"para-ref\">[5.2]</span> Gillies invented the revolutionary **tubed pedicle skin grafting** method. A flap of healthy skin from the chest or forehead was cut and rolled into a hollow tube, keeping blood vessels alive while one end was stitched to the wounded face. Once vascular connections formed, the tube was separated, restoring facial features, speech, and dignity to disfigured veterans.</p>",
-          "image": "/images/gillies_tubed_pedicle.jpg",
+          "image": "/images/edexcel_medicine/kt5/med_kt5_l56_b4_gillies_tubed_pedicle_l0050370.jpg",
           "sources": [
             {
               "id": "med_l26_source_e",
@@ -40542,8 +42465,8 @@ export default {
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Shrapnel and bullet wounds produced horrific facial mutilation, tearing away noses, lips, and jaws when soldiers peered over trench parapets. In 1917, New Zealand pioneering plastic surgeon **Harold Gillies** established the Queen's Hospital in Sidcup, Kent. As Britain's specialist centre for facial reconstruction, **Queen's Hospital Sidcup** performed over eleven thousand complex reconstructive operations on disfigured servicemen.</p><p><span class=\"para-ref\">[5.2]</span> Gillies invented the revolutionary **tubed pedicle skin grafting** method. A flap of healthy skin from the chest or forehead was cut and rolled into a hollow tube, keeping blood vessels alive while one end was stitched to the wounded face. Once vascular connections formed, the tube was separated, restoring facial features, speech, and dignity to disfigured veterans.</p>",
           "theme": "Harold Gillies & Plastic Reconstruction (1917–1918)",
-          "image_alt": "Archival clinical photographs from Queen’s Hospital, Sidcup (1917–1918) showing Warrant Officer Walter Yeo’s facial burn injuries and staged reconstruction using Major Harold Gillies’s tubed pedicle chest skin flap",
-          "caption": "The \"Tubed Pedicle\" Skin Graft at Queen’s Hospital, Sidcup (Walter Yeo Case Record, 1917): Clinical photographs documenting Major Harold Gillies’s staged facial reconstruction on sailor Walter Yeo (injured at Jutland), keeping chest skin alive via rolled blood-supplied pedicle tubes.",
+          "image_alt": "Six-part clinical diagram from Major Harold Gillies’s Plastic Surgery of the Face (1920) titled Principles: With Pedicle tubed (Author’s Method), tracing incision, rolled chest-to-cheek skin tube, flap suture, and unrolling",
+          "caption": "Principles of the \"Tubed Pedicle\" Skin Graft (Major H. D. Gillies, Plastic Surgery of the Face, 1920, Wellcome Collection L0050370): By stitching a strip of healthy chest or neck skin into a sealed, blood-fed tube before swinging it onto a shattered cheek or jaw, Gillies prevented bacterial infection at Queen’s Hospital, Sidcup.",
           "isReversed": true,
           "paragraphs": [
             "<p><span class=\"para-ref\">[5.1]</span> Shrapnel and bullet wounds produced horrific facial mutilation, tearing away noses, lips, and jaws when soldiers peered over trench parapets. In 1917, New Zealand pioneering plastic surgeon **Harold Gillies** established the Queen's Hospital in Sidcup, Kent. As Britain's specialist centre for facial reconstruction, **Queen's Hospital Sidcup** performed over eleven thousand complex reconstructive operations on disfigured servicemen.</p>",
@@ -41617,9 +43540,14 @@ export default {
         ],
         "timer_seconds": 90
       },
-      "banner": "/images/med_banner_kt5_6_sidcup_hospital.jpg",
-      "hero_image": "/images/med_banner_kt5_6_sidcup_hospital.jpg",
-      "card_image": "/images/med_banner_kt5_6_sidcup_hospital.jpg",
+      "banner": {
+        "image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
+        "alt": "John Hodgson Lobley’s 1918 painting of convalescent soldiers in blue hospital suits—several wearing facial and jaw bandages—seated at green baize tables inside a vocational classroom at The Queen’s Hospital for Facial Injuries, Sidcup",
+        "position": "center 54%",
+        "caption": "John Hodgson Lobley, \"The Queen’s Hospital for Facial Injuries, Frognal, Sidcup: The Commercial Class\" (1918, IWM Art.IWM ART 3767): Convalescent facial-reconstruction patients in hospital blues retraining for civilian life."
+      },
+      "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
+      "card_image": "/images/med_stage_cushing_neurosurgery.jpg",
       "card_position": "center 50%",
       "topic": "Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Surgery",
       "visual_story_sheet": {
@@ -41733,7 +43661,8 @@ export default {
             "Gillies’s living skin-tube graft keeping blood flowing while rebuilding faces."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg"
     }
   ],
   "specification": [
@@ -42938,6 +44867,319 @@ export default {
   "year_group": "GCSE (9–1)",
   "guided_reading": [
     {
+      "id": "med_gr_kt1_black_death_ordinances_1348_49",
+      "lesson_index": 4,
+      "lesson_id": "lesson_1_5",
+      "lesson_key": "lesson_1_5",
+      "lesson_label": "KT1.5: Case Study: Dealing with the Black Death (1348–1349)",
+      "short_tab_title": "1349 Plague Royal Order",
+      "title": "Verbatim Primary Translations: King Edward III’s Royal Letter to the Mayor & Sheriffs of London Against Corrupt Miasma (April 1349) & Henry Knighton’s Chronicon (1348–49)",
+      "book_title": "Verbatim Primary Translations: King Edward III’s Royal Letter to the Mayor & Sheriffs of London Against Corrupt Miasma (April 1349) & Henry Knighton’s Chronicon (1348–49)",
+      "author": "King Edward III of England (Westminster • April 1349) & Henry Knighton, Canon of St Mary’s Abbey, Leicester (c.1348–1349)",
+      "cover_image": "/images/edexcel_medicine/kt12/med_gr1_cover_lead_mortuary_crosses_england_wellcome.jpg",
+      "cover_caption": "Medieval English lead mortuary crosses excavated from emergency plague burial grounds, placed on the chests of Black Death victims when parish clergy were overwhelmed (Wellcome Collection L0058244).",
+      "author_context": "Arriving through Dorset’s port of Melcombe Regis in the summer of 1348, the Black Death killed between one-third and one-half of England’s population within eighteen months. Convinced that foul urban odours (\"corrupt air\" or miasma) spread pestilential poison alongside God’s wrath, King Edward III sent an urgent royal letter in April 1349 ordering London’s Mayor and Sheriffs to clear human waste and offal from city lanes. Simultaneously at St Mary’s Abbey in Leicester, Augustinian canon Henry Knighton recorded one of England’s sharpest eyewitness accounts of sudden mortality, rotting harvests, and peasant labourers defying royal wage caps.",
+      "source_type": "primary_chronicle_and_writ",
+      "source_type_label": "Royal Sanitary Writ (April 1349) & Contemporary Monastic Chronicle (1348–49)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim primary translations from King Edward III’s Royal Letter on the Cleansing of the Streets of London (April 1349, Calendar of Close Rolls, Edward III, Vol. IX: 1349–1354, p. 62; cf. H. T. Riley, Memorials of London and London Life in the XIIIth, XIVth, and XVth Centuries, London, 1868, pp. 253–254), paired with Chronicon Henrici Knighton, vel Monachi Leycestrensis, ed. J. R. Lumby, Rolls Series, Vol. II (London, 1895), pp. 61–64.",
+      "extract": "<strong>Document I — King Edward III’s Royal Letter to the Mayor &amp; Sheriffs of London Ordering Street Cleansing Against Corrupt Miasma (April 1349)</strong>\n\n\"The King to the Mayor and Sheriffs of London, greeting.\n\nSeeing that we are forced by catastrophic necessity to preserve the health of those remaining in our city of London, and having considered how the air in the said city—formerly healthful and clear—is now become utterly infected and corrupted: because human faeces and other abominable filth lying in the streets and lanes in the city and its suburbs are casting forth foul and intolerable stenches, so that the air there is more than ever corrupted and poisoned, and mortal perils and contagious sicknesses are daily increasing among the men dwelling in the said city and resorting thither, to the grievous danger and loss of our people...\n\nAnd being unwilling any longer to tolerate such great and shameful uncleanness and peril in our chief city: We command you, firmly enjoining that straightway upon sight of these presents you cause the human faeces and other filth and offal lying in the streets and lanes in the city aforesaid and its suburbs to be removed and carried elsewhere without the city with all speed by the rakers and other officers, and the said streets and lanes to be cleansed from all abominable odour, and so kept clean hereafter; chastising and punishing all those whom you shall find rebellious or negligent in this behalf by distresses and amercements, so that no worse peril of death may come upon the people dwelling there by reason of such corruption.\"\n\n<strong>Document II — Henry Knighton’s <em>Chronicon</em>: Eyewitness Account of the Black Death in England (1348–1349)</strong>\n\n\"Then the grievous plague penetrated the seacoasts from Southampton, and came to Bristol, and there almost the whole strength of the town died, struck as it were by sudden death; for there were few who kept their beds more than three days, or two days, or half a day; and after this the fell death broke forth on every side with the course of the sun. There died at Leicester, in the small parish of St Leonard, more than three hundred and eighty; in the parish of Holy Cross, more than four hundred; and in the parish of St Margaret in Leicester, more than seven hundred; and so in each parish individuals died in great numbers...\n\nIn the same year there was a great mortality of sheep everywhere in the realm, so that in one pasture more than five thousand sheep died, and became so putrid that neither beast nor bird would touch them. And prices were low on account of the fear of death, for there were very few who cared either for riches or for possessions of any kind...\n\nMeanwhile the King sent proclamation into all the counties that reapers and other labourers should not take more than they had been accustomed to take, under the penalty appointed by statute. Nevertheless the workmen were so puffed up and contentious that they heeded not the mandate of the King; and if anyone wished to hire them, he had to give them what they asked, and had either to lose his fruit and standing corn, or satisfy the lofty and covetous wishes of the workmen... After the aforesaid pestilence many buildings, both great and small, in all cities, boroughs, and vills fell into total ruin for lack of inhabitants; likewise many small villages and hamlets became desolate, no house remaining in them, all those who had dwelt within them having died.\"",
+      "vocabVault": [
+        {
+          "term": "Infected and Corrupted Air",
+          "def": "Classical and medieval miasma theory: the belief that rotting waste, dung, and slaughterhouse offal released poisonous invisible vapours that entered the lungs and corrupted the Four Humours.",
+          "word": "Infected and Corrupted Air",
+          "definition": "Classical and medieval miasma theory: the belief that rotting waste, dung, and slaughterhouse offal released poisonous invisible vapours that entered the lungs and corrupted the Four Humours."
+        },
+        {
+          "term": "Rakers",
+          "def": "Paid municipal ward scavengers employed by medieval London aldermen to shovel dung and household waste out of street gutters into carts for dumping outside the city walls or into the Thames.",
+          "word": "Rakers",
+          "definition": "Paid municipal ward scavengers employed by medieval London aldermen to shovel dung and household waste out of street gutters into carts for dumping outside the city walls or into the Thames."
+        },
+        {
+          "term": "Distresses and Amercements",
+          "def": "Legal seizures of goods (\"distresses\") and financial court fines (\"amercements\") authorised by the Crown against householders or butchers who illegally dumped waste into London lanes.",
+          "word": "Distresses and Amercements",
+          "definition": "Legal seizures of goods (\"distresses\") and financial court fines (\"amercements\") authorised by the Crown against householders or butchers who illegally dumped waste into London lanes."
+        },
+        {
+          "term": "Kept Their Beds",
+          "def": "Knighton’s chilling clinical observation that victims of septicaemic and pneumonic plague died within half a day to three days of their first symptoms.",
+          "word": "Kept Their Beds",
+          "definition": "Knighton’s chilling clinical observation that victims of septicaemic and pneumonic plague died within half a day to three days of their first symptoms."
+        },
+        {
+          "term": "Mandate of the King",
+          "def": "Edward III’s June 1349 Ordinance of Labourers (followed by the 1351 Statute of Labourers), which tried—and failed—to freeze surviving peasants’ wages at pre-plague 1346 levels.",
+          "word": "Mandate of the King",
+          "definition": "Edward III’s June 1349 Ordinance of Labourers (followed by the 1351 Statute of Labourers), which tried—and failed—to freeze surviving peasants’ wages at pre-plague 1346 levels."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Look closely at King Edward III’s April 1349 writ in Document I: does it support or challenge the stereotype that medieval people ONLY prayed and ignored practical street cleanliness?",
+          "answer": "It directly challenges that stereotype: although Edward III misunderstood bacteria and blamed miasma (\"abominable stenches\"), his writ ordered practical removal of sewage and offal by ward rakers backed by financial fines.",
+          "prompt": "Look closely at King Edward III’s April 1349 writ in Document I: does it support or challenge the stereotype that medieval people ONLY prayed and ignored practical street cleanliness?",
+          "parent_guide": "It directly challenges that stereotype: although Edward III misunderstood bacteria and blamed miasma (\"abominable stenches\"), his writ ordered practical removal of sewage and offal by ward rakers backed by financial fines."
+        },
+        {
+          "question": "Why did cleaning London’s streets in April 1349 still fail to stop the Black Death—and why couldn’t the Mayor and Sheriffs enforce it consistently?",
+          "answer": "Bubonic plague was spread by Yersinia pestis bacteria carried by fleas on black rats living inside timber-and-thatch homes as well as pneumonic coughing, and medieval town councils had tiny budgets, no permanent public-health officers, and dead rakers.",
+          "prompt": "Why did cleaning London’s streets in April 1349 still fail to stop the Black Death—and why couldn’t the Mayor and Sheriffs enforce it consistently?",
+          "parent_guide": "Bubonic plague was spread by Yersinia pestis bacteria carried by fleas on black rats living inside timber-and-thatch homes as well as pneumonic coughing, and medieval town councils had tiny budgets, no permanent public-health officers, and dead rakers."
+        },
+        {
+          "question": "Why does Canon Henry Knighton sound angry at surviving farm workers (\"puffed up and contentious\") in Document II?",
+          "answer": "As an abbey canon whose monastic estates relied on cheap peasant labour to harvest grain, Knighton resented surviving labourers using the massive labour shortage to demand triple wages in defiance of the 1349 Ordinance of Labourers.",
+          "prompt": "Why does Canon Henry Knighton sound angry at surviving farm workers (\"puffed up and contentious\") in Document II?",
+          "parent_guide": "As an abbey canon whose monastic estates relied on cheap peasant labour to harvest grain, Knighton resented surviving labourers using the massive labour shortage to demand triple wages in defiance of the 1349 Ordinance of Labourers."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Which exact words in Document I prove that King Edward III’s street-cleansing order was driven by classical <em>miasma theory</em> rather than any knowledge of germs or fleas?<br><br><strong>Pair:</strong> Compare the speed of death in Leicester in Document II (\"three days, or two days, or half a day\") with medieval humoral treatments like bloodletting—why were physicians powerless once plague entered a parish?<br><br><strong>Share:</strong> Why did the Black Death devastate England’s population in 1348–49 yet paradoxically raise living standards and bargaining power for surviving peasants?",
+      "questions": [
+        "In Document I, what specific environmental hazard in London’s streets and lanes did King Edward III blame for corrupting the air and spreading mortal sickness in April 1349?",
+        "What practical actions and legal punishments did Edward III order the Mayor, Sheriffs, and ward rakers of London to carry out in Document I?",
+        "According to Henry Knighton in Document II, how rapidly did victims die in Bristol and Leicester, and how did surviving labourers respond to the King’s 1349 wage proclamation?"
+      ]
+    },
+    {
+      "id": "med_gr_kt2_harvey_de_motu_plague_orders_1628_65",
+      "lesson_index": 8,
+      "lesson_id": "lesson_2_4",
+      "lesson_key": "lesson_2_4",
+      "lesson_label": "KT2.4: William Harvey & The Circulation of the Blood (1628)",
+      "short_tab_title": "1628 Harvey & 1665 Orders",
+      "title": "Verbatim Primary Texts: William Harvey’s De Motu Cordis on Blood Circulation (1628, Chs. VIII & XIV) & The Lord Mayor of London’s Plague Quarantine Orders (1665)",
+      "book_title": "Verbatim Primary Texts: William Harvey’s De Motu Cordis on Blood Circulation (1628, Chs. VIII & XIV) & The Lord Mayor of London’s Plague Quarantine Orders (1665)",
+      "author": "Dr William Harvey (Frankfurt • 1628) & The Lord Mayor and Aldermen of the City of London (Guildhall • July 1665)",
+      "cover_image": "/images/edexcel_medicine/kt12/med_l2_5_s4_bill_of_mortality_aug_1665_wellcome.jpg",
+      "cover_caption": "Original printed London Weekly Bill of Mortality for 15–22 August 1665 recording 3,880 plague deaths in seven days alongside the Lord Mayor’s civic order (Wellcome Collection L0043359).",
+      "author_context": "Nothing captures the paradox of the Medical Renaissance more clearly than reading these two seventeenth-century primary texts side by side. In 1628, royal physician William Harvey published Exercitatio Anatomica de Motu Cordis et Sanguinis in Animalibus in Frankfurt, using vivisection, venous-valve experiments, and quantitative mathematics to overturn 1,400 years of Galenic teaching by proving the heart pumps blood in a continuous circle. Yet thirty-seven years later, when bubonic plague struck London in 1665, Harvey’s physiological triumph offered zero cure for infectious disease—forcing London’s Lord Mayor and Aldermen to rely on sworn Women-Searchers, day-and-night Watchmen, red-crossed doors, and compulsory shutting up of infected households.",
+      "source_type": "primary_treatise_and_civic_order",
+      "source_type_label": "Anatomical Treatise (1628) & Municipal Quarantine Orders (1665)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim text from William Harvey, An Anatomical Disquisition on the Motion of the Heart and Blood in Animals (1628, Chapters VIII & XIV), trans. Robert Willis, The Works of William Harvey, M.D. (London: Sydenham Society, 1847), pp. 45–47, 68, paired with verbatim statutory clauses from Orders Conceived and Published by the Lord Major and Aldermen of the City of London, Concerning the Infection of the Plague (London: Printed by James Flesher, Printer to the Honourable City of London, 1665).",
+      "extract": "<strong>Document I — William Harvey’s <em>De Motu Cordis</em> (1628, Chapters VIII &amp; XIV): Proving the Circular Motion of the Blood</strong>\n\n\"<em>Chapter VIII:</em> But what remains to be said upon the quantity and source of the blood which thus passes, is of so novel and unheard-of character, that I not only fear injury to myself from the envy of a few, but I tremble lest I have mankind at large for my enemies, so much doth wont and custom, that become as another nature, and doctrine once sown and that hath struck deep root, and respect for antiquity influence all men: Still the die is cast, and my trust is in my love of truth, and the candour that inheres in cultivated minds...\n\nI frequently and seriously bethought me, and long revolved in my mind, what might be the quantity of blood which was transmitted, in how short a time its passage might be effected, and the like; and not finding it possible that this could be supplied by the juices of the ingested aliment without the veins on the one hand becoming drained, and the arteries on the other getting ruptured through the excessive charge of blood, unless the blood should somehow find its way from the arteries into the veins, and so return to the right side of the heart; I began to think whether there might not be A MOTION, AS IT WERE, IN A CIRCLE. Now this I afterwards found to be true...\n\n<em>Chapter XIV:</em> Since all things, both argument and ocular demonstration, show that the blood passes through the lungs and heart by the action of the ventricles, and is sent for distribution to all parts of the body, where it makes its way into the veins and pores of the flesh, and then flows by the veins from the circumference on every side to the centre, from the lesser to the greater veins, and is by them finally discharged into the vena cava and right auricle of the heart, and this in such a quantity or in such a flux and reflux thither by the arteries, hither by the veins, as cannot possibly be supplied by the ingesta, and is much greater than can be required for mere purposes of nutrition; it is absolutely necessary to conclude that the blood in the animal body is impelled in a circle, and is in a state of ceaseless motion; that this is the act or function which the heart performs by means of its pulse; and that it is the sole and only end of the motion and contraction of the heart.\"\n\n<strong>Document II — Lord Mayor of London’s <em>Orders Conceived and Published Concerning the Infection of the Plague</em> (July 1665)</strong>\n\n\"<em>Searchers:</em> That there be a special care to appoint Women-Searchers in every Parish, such as are of honest reputation, and of the best sort as can be got in this kind: And these to be sworn to make due search, and true report to the utmost of their knowledge, whether the persons whose bodies they are appointed to Search, do die of the Infection, or of what other Diseases, as near as they can...\n\n<em>Watchmen:</em> That to every infected House there be appointed two Watchmen, one for the Day, and the other for the Night; And that these Watchmen have a special care that no person go in or out of such infected Houses, whereof they have the Charge, upon pain of severe punishment. And the said Watchmen to do such further Offices as the sick House shall need and require: and if the Watchman be sent upon any Business, to lock up the House, and take the Key with him...\n\n<em>The Sequestration of the Sick:</em> As soon as any man shall be found by this Examiner, Chirurgeon or Searcher to be sick of the Plague, he shall the same night be sequestered in the same House. And in case he be so sequestered, then though he afterwards die not, the House wherein he sickned, should be shut up for a Moneth, after the use of the due Preservatives taken by the rest.\n\n<em>The Marking of the House:</em> That every House visited, be marked with a red Cross of a foot long, in the middle of the door, evident to be seen, and with these usual Printed words, that is to say, <em>Lord have mercy upon us</em>, to be set close over the same Cross, there to continue until lawful opening of the same House.\"",
+      "vocabVault": [
+        {
+          "term": "Respect for Antiquity",
+          "def": "Harvey’s warning in Chapter VIII that conservative seventeenth-century physicians were so devoted to ancient Greek and Roman authorities like Galen that they would attack anyone who disproved them.",
+          "word": "Respect for Antiquity",
+          "definition": "Harvey’s warning in Chapter VIII that conservative seventeenth-century physicians were so devoted to ancient Greek and Roman authorities like Galen that they would attack anyone who disproved them."
+        },
+        {
+          "term": "Juices of the Ingested Aliment",
+          "def": "Digested food and drink: Galen claimed the liver constantly turned digested food into fresh blood burned up as fuel, which Harvey’s volume calculations proved mathematically impossible.",
+          "word": "Juices of the Ingested Aliment",
+          "definition": "Digested food and drink: Galen claimed the liver constantly turned digested food into fresh blood burned up as fuel, which Harvey’s volume calculations proved mathematically impossible."
+        },
+        {
+          "term": "Ocular Demonstration",
+          "def": "Proof witnessed directly with one’s own eyes—such as Harvey’s live cold-blooded reptile dissections and his simple forearm tourniquet experiment showing one-way venous valves.",
+          "word": "Ocular Demonstration",
+          "definition": "Proof witnessed directly with one’s own eyes—such as Harvey’s live cold-blooded reptile dissections and his simple forearm tourniquet experiment showing one-way venous valves."
+        },
+        {
+          "term": "Women-Searchers",
+          "def": "Sworn elderly parish women paid by London churchwardens in 1665 to enter houses, inspect corpses for plague buboes or \"tokens\", and report weekly death totals to the Parish Clerks.",
+          "word": "Women-Searchers",
+          "definition": "Sworn elderly parish women paid by London churchwardens in 1665 to enter houses, inspect corpses for plague buboes or \"tokens\", and report weekly death totals to the Parish Clerks."
+        },
+        {
+          "term": "Sequestered / Shut Up",
+          "def": "Compulsory household quarantine under the 1665 Plague Orders: locking both sick and healthy family members inside a padlocked, red-crossed house guarded by Watchmen for up to forty days.",
+          "word": "Sequestered / Shut Up",
+          "definition": "Compulsory household quarantine under the 1665 Plague Orders: locking both sick and healthy family members inside a padlocked, red-crossed house guarded by Watchmen for up to forty days."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Look at Harvey’s opening confession in Document I (\"I tremble lest I have mankind at large for my enemies\"): why was proving blood circulation so professionally risky in 1628?",
+          "answer": "Galen’s liver-production theory underpinned fourteen centuries of university teaching and lucrative bloodletting; contemporary gossip writer John Aubrey noted that Harvey’s private medical practice \"fell mightily\" after publishing De Motu Cordis because conservative doctors called him crack-brained.",
+          "prompt": "Look at Harvey’s opening confession in Document I (\"I tremble lest I have mankind at large for my enemies\"): why was proving blood circulation so professionally risky in 1628?",
+          "parent_guide": "Galen’s liver-production theory underpinned fourteen centuries of university teaching and lucrative bloodletting; contemporary gossip writer John Aubrey noted that Harvey’s private medical practice \"fell mightily\" after publishing De Motu Cordis because conservative doctors called him crack-brained."
+        },
+        {
+          "question": "Notice in Chapter XIV that Harvey says blood passes into the \"pores of the flesh\" between arteries and veins: why couldn’t Harvey name capillaries in 1628, and who solved that puzzle in 1661?",
+          "answer": "Capillaries are microscopic, and strong compound lenses did not yet exist in 1628; in 1661 Italian professor Marcello Malpighi used an early microscope to observe capillaries in frog lungs, confirming Harvey’s prediction.",
+          "prompt": "Notice in Chapter XIV that Harvey says blood passes into the \"pores of the flesh\" between arteries and veins: why couldn’t Harvey name capillaries in 1628, and who solved that puzzle in 1661?",
+          "parent_guide": "Capillaries are microscopic, and strong compound lenses did not yet exist in 1628; in 1661 Italian professor Marcello Malpighi used an early microscope to observe capillaries in frog lungs, confirming Harvey’s prediction."
+        },
+        {
+          "question": "Comparing Document I (1628) and Document II (1665), why did Renaissance breakthroughs in anatomy and physiology fail to save Londoners during the Great Plague—yet how had government organisation improved since 1348?",
+          "answer": "Knowing how blood circulates could not identify bacteria (Yersinia pestis) or provide antibiotics, and blood transfusion remained unsafe until 1901; however, 1665 London deployed sworn Searchers, paid Watchmen, printed notices, and enforced quarantine far more systematically than in 1348.",
+          "prompt": "Comparing Document I (1628) and Document II (1665), why did Renaissance breakthroughs in anatomy and physiology fail to save Londoners during the Great Plague—yet how had government organisation improved since 1348?",
+          "parent_guide": "Knowing how blood circulates could not identify bacteria (Yersinia pestis) or provide antibiotics, and blood transfusion remained unsafe until 1901; however, 1665 London deployed sworn Searchers, paid Watchmen, printed notices, and enforced quarantine far more systematically than in 1348."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> How does Harvey’s argument about \"the juices of the ingested aliment\" in Document I destroy Galen’s claim that the liver constantly manufactures new blood?<br><br><strong>Pair:</strong> Trace the four-step municipal chain in Document II (<em>Searchers → Sequestration → Watchmen → Red Cross &amp; Printed Words</em>)—how did printing and parish bureaucracy make 1665 quarantine far tighter than 1348?<br><br><strong>Share:</strong> Together, why are these two texts the ultimate exam evidence that the Medical Renaissance achieved a <em>scientific revolution in anatomical knowledge</em> alongside <em>deep continuity in curing infectious disease</em>?",
+      "questions": [
+        "In Document I (Chapter VIII), why did William Harvey conclude that the quantity of blood pumped by the heart could not possibly come from digested food (\"ingested aliment\")?",
+        "According to Chapter XIV of Document I, what is \"the sole and only end of the motion and contraction of the heart\"?",
+        "In Document II, what specific duties did the 1665 London Plague Orders assign to Parish Women-Searchers and day-and-night Watchmen, and how were infected doors marked?"
+      ]
+    },
+    {
+      "id": "med_gr_kt3_jenner_snow_public_health_1798_1855",
+      "lesson_index": 14,
+      "lesson_id": "lesson_3_5",
+      "lesson_label": "KT 3.2 & 3.5: Jenner’s Smallpox Inquiry (1798) & Snow’s Soho Cholera Investigation (1855)",
+      "short_tab_title": "1798 Jenner & 1855 Snow",
+      "title": "Verbatim Empirical Extracts: Edward Jenner’s Variolae Vaccinae (1798) & Dr John Snow’s On the Mode of Communication of Cholera (2nd ed., 1855)",
+      "book_title": "Verbatim Empirical Extracts from Edward Jenner’s An Inquiry into the Causes and Effects of the Variolae Vaccinae (1798) & Dr John Snow’s On the Mode of Communication of Cholera (2nd ed., 1855)",
+      "author": "Dr Edward Jenner FRS (Berkeley, Gloucestershire • June 1798) & Dr John Snow (Soho, London • 1855)",
+      "cover_image": "/images/edexcel_medicine/kt3/med_kt3_gr_jenner_1798_titlepage.jpg",
+      "cover_caption": "Original 1798 London title page of Dr Edward Jenner’s An Inquiry into the Causes and Effects of the Variolae Vaccinae (printed by Sampson Low, Berwick Street, Soho — remarkably the very street bordering John Snow’s 1854 Broad Street cholera investigation fifty-six years later, Wellcome Collection).",
+      "author_context": "Across Industrial Britain (c.1700–c.1900), two brilliant empirical investigations defeated killer epidemic diseases decades before Louis Pasteur’s 1861 Germ Theory or Robert Koch’s bacteriology could explain why they worked. In May–July 1796, Gloucestershire country physician Edward Jenner tested rural milkmaid lore by inoculating eight-year-old James Phipps with cowpox pus from dairymaid Sarah Nelmes’s hand before challenging him with live smallpox—publishing twenty-three clinical cases privately in 1798 after the Royal Society declined his paper. Fifty-six years later, in September 1854, Soho physician Dr John Snow mapped eighty-three rapid cholera deaths around the Broad Street water pump and investigated critical negative outliers—St James’s Workhouse on Poland Street and Huggins’s Lion Brewery—proving that cholera was waterborne rather than carried by foul air (miasma).",
+      "source_type": "primary_treatise",
+      "source_type_label": "Published Clinical & Epidemiological Inquiries (1798 & 1855)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim primary extracts from Edward Jenner, An Inquiry into the Causes and Effects of the Variolae Vaccinae, a Disease Discovered in Some of the Western Counties of England, Particularly Gloucestershire, and Known by the Name of the Cow Pox (London: Sampson Low, 1798), Cases XVI–XVII, pp. 31–34, paired with John Snow, On the Mode of Communication of Cholera, 2nd edition, much enlarged (London: John Churchill, 1855), pp. 38–42.",
+      "extract": "<strong>Document I — Dr Edward Jenner’s <em>An Inquiry into the Causes and Effects of the Variolae Vaccinae</em> (1798): Case XVI (Sarah Nelmes) &amp; Case XVII (Eight-Year-Old James Phipps)</strong>\n\n\"<strong>CASE XVI.</strong>\nSARAH NELMES, a dairymaid at a Farmer’s near this place, was infected with the Cow Pox from her master’s cows in May, 1796. She received the infection on a part of the hand which had been previously in a slight degree injured by a scratch from a thorn. A large pustulous sore and the usual symptoms accompanying the disease were produced in consequence...\n\n<strong>CASE XVII.</strong>\nTHE more accurately to observe the progress of the infection, I selected a healthy boy, about eight years old, for the purpose of inoculation for the Cow Pox. The matter was taken from a sore on the hand of a dairymaid [Sarah Nelmes], who was infected by her master’s cows, and it was inserted, on the 14th of May, 1796, into the arm of the boy by means of two superficial incisions, barely penetrating the cutis, each about half an inch long.\n\nOn the seventh day he complained of uneasiness in the axilla, and on the ninth he became a little chilly, lost his appetite, and had a slight head-ach. During the whole of this day he was perceptibly indisposed, and spent the night with some degree of restlessness, but on the day following he was perfectly well...\n\nIn order to ascertain whether the boy, after feeling so slight an affection of the system from the Cow-pox virus, was secure from the contagion of the Small-pox, he was inoculated the 1st of July following with variolous matter, immediately taken from a pustule. Several slight punctures and incisions were made on both his arms, and the matter was carefully inserted, but no disease followed. The same appearances were observable on the arms as we commonly see when a patient has had variolous matter applied, after having either the Cow-pox or the Small-pox. Several months afterwards, he was again inoculated with variolous matter, but no sensible effect was produced on the constitution.\"\n\n<strong>Document II — Dr John Snow’s <em>On the Mode of Communication of Cholera</em> (2nd ed., 1855): The Broad Street Pump, Poland Street Workhouse &amp; Broad Street Brewery</strong>\n\n\"The most terrible outbreak of cholera which ever occurred in this kingdom, is probably that which took place in Broad Street, Golden Square, and the adjoining streets, a few weeks ago. Within two hundred and fifty yards of the spot where Cambridge Street joins Broad Street, there were upwards of five hundred fatal attacks of cholera in ten days...\n\nOn proceeding to the spot, I found that nearly all the deaths had taken place within a short distance of the pump. There were only ten deaths in houses situated decidedly nearer to another street pump. In five of these cases the families of the deceased persons informed me that they always sent to the pump in Broad Street, as they preferred the water to that of the pump which was nearer. In three other cases, the deceased were children who went to school near the pump in Broad Street...\n\nThe result of the inquiry then was, that there had been no particular outbreak or increase of cholera, in this part of London, except among the persons who were in the habit of drinking the water of the above-mentioned pump-well. I had an interview with the Board of Guardians of St. James’s parish, on the evening of Thursday, 7th September, and represented the above circumstances to them. In consequence of what I said, the handle of the pump was removed on the following day...\n\nThe Workhouse in Poland Street is more than three-fourths surrounded by houses in which deaths from cholera occurred, yet out of five hundred and thirty-five inmates only five died of cholera, the other deaths which took place being those of persons admitted after they were attacked. The workhouse has a pump-well on the premises, in addition to the supply from the Grand Junction Waterworks, and the inmates never sent to Broad Street for water. If the mortality in the workhouse had been equal to that in the streets immediately surrounding it on three sides, upwards of one hundred persons would have died.\n\nThere is a Brewery in Broad Street, near to the pump, and on perceiving that no brewer’s men were registered as having died of cholera, I called on Mr. Huggins, the proprietor. He informed me that there were above seventy workmen employed in the brewery, and that none of them had suffered from cholera,—at least in a severe form,—only two having been indisposed, and that not seriously, at the time the disease prevailed. The men are allowed a certain quantity of malt liquor, and Mr. Huggins believes they do not drink water at all; and he is quite certain that the workmen never obtained water from the pump in the street.\"",
+      "vocabVault": [
+        {
+          "term": "Variolae Vaccinae (Cow-Pox)",
+          "def": "Jenner’s Latin medical name (\"smallpox of the cow\") for the mild bovine infection transferred from Sarah Nelmes’s hand to James Phipps—giving us the modern word \"vaccination\" (from Latin vacca, cow).",
+          "word": "Variolae Vaccinae (Cow-Pox)",
+          "definition": "Jenner’s Latin medical name (\"smallpox of the cow\") for the mild bovine infection transferred from Sarah Nelmes’s hand to James Phipps—giving us the modern word \"vaccination\" (from Latin vacca, cow)."
+        },
+        {
+          "term": "Barely Penetrating the Cutis",
+          "def": "Two shallow half-inch skin scratches made on James Phipps’s arm on 14 May 1796 to introduce cowpox pus, producing only a mild one-day chill and armpit soreness (\"uneasiness in the axilla\").",
+          "word": "Barely Penetrating the Cutis",
+          "definition": "Two shallow half-inch skin scratches made on James Phipps’s arm on 14 May 1796 to introduce cowpox pus, producing only a mild one-day chill and armpit soreness (\"uneasiness in the axilla\")."
+        },
+        {
+          "term": "Variolous Matter",
+          "def": "Live human smallpox pus taken straight from a smallpox pustule and inserted into both of Phipps’s arms on 1 July 1796—proving empirically that prior cowpox infection conferred full smallpox immunity.",
+          "word": "Variolous Matter",
+          "definition": "Live human smallpox pus taken straight from a smallpox pustule and inserted into both of Phipps’s arms on 1 July 1796—proving empirically that prior cowpox infection conferred full smallpox immunity."
+        },
+        {
+          "term": "Board of Guardians of St. James’s Parish",
+          "def": "The local Soho parish authorities persuaded by John Snow on Thursday 7 September 1854 to remove the Broad Street pump handle the following day—even though they still doubted his waterborne theory.",
+          "word": "Board of Guardians of St. James’s Parish",
+          "definition": "The local Soho parish authorities persuaded by John Snow on Thursday 7 September 1854 to remove the Broad Street pump handle the following day—even though they still doubted his waterborne theory."
+        },
+        {
+          "term": "Pump-Well on the Premises",
+          "def": "The private water supply inside Poland Street Workhouse (alongside Huggins’s Lion Brewery beer allowance) that spared 530 workhouse inmates and 70+ brewery workers breathing the exact same Soho air.",
+          "word": "Pump-Well on the Premises",
+          "definition": "The private water supply inside Poland Street Workhouse (alongside Huggins’s Lion Brewery beer allowance) that spared 530 workhouse inmates and 70+ brewery workers breathing the exact same Soho air."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Look at Case XVII in Document I: how did Edward Jenner prove scientifically that cowpox protected James Phipps against lethal smallpox—even though nobody in 1796 knew germs or viruses existed?",
+          "answer": "Six weeks after Phipps recovered from mild cowpox (14 May 1796), Jenner deliberately inoculated both of the boy’s arms on 1 July 1796—and again months later—with live smallpox pus (\"variolous matter\"), observing carefully that no smallpox disease developed.",
+          "prompt": "Look at Case XVII in Document I: how did Edward Jenner prove scientifically that cowpox protected James Phipps against lethal smallpox—even though nobody in 1796 knew germs or viruses existed?",
+          "parent_guide": "Six weeks after Phipps recovered from mild cowpox (14 May 1796), Jenner deliberately inoculated both of the boy’s arms on 1 July 1796—and again months later—with live smallpox pus (\"variolous matter\"), observing carefully that no smallpox disease developed."
+        },
+        {
+          "question": "In Document II, why were the ten deaths located \"decidedly nearer to another street pump\" actually a triumph—rather than a defeat—for John Snow’s Broad Street pump hypothesis?",
+          "answer": "By interviewing bereaved families door-to-door, Snow discovered that five families sent specifically to Broad Street because they preferred its taste and three victims were schoolchildren walking past the Broad Street pump—turning apparent exceptions into clinching proof.",
+          "prompt": "In Document II, why were the ten deaths located \"decidedly nearer to another street pump\" actually a triumph—rather than a defeat—for John Snow’s Broad Street pump hypothesis?",
+          "parent_guide": "By interviewing bereaved families door-to-door, Snow discovered that five families sent specifically to Broad Street because they preferred its taste and three victims were schoolchildren walking past the Broad Street pump—turning apparent exceptions into clinching proof."
+        },
+        {
+          "question": "Why did the Poland Street Workhouse (only 5 deaths among 535 inmates) and Mr Huggins’s Broad Street Brewery (0 deaths among 70+ workers) deal such a devastating logical blow to Miasma Theory?",
+          "answer": "Both buildings stood right inside the supposedly poisoned Soho \"miasma cloud\", yet their residents escaped mass death because the workhouse had its own private well and the brewery workers drank malt liquor instead of Broad Street pump water.",
+          "prompt": "Why did the Poland Street Workhouse (only 5 deaths among 535 inmates) and Mr Huggins’s Broad Street Brewery (0 deaths among 70+ workers) deal such a devastating logical blow to Miasma Theory?",
+          "parent_guide": "Both buildings stood right inside the supposedly poisoned Soho \"miasma cloud\", yet their residents escaped mass death because the workhouse had its own private well and the brewery workers drank malt liquor instead of Broad Street pump water."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> Why could neither Edward Jenner in 1798 (Document I) nor John Snow in 1855 (Document II) explain the exact microscopic pathogen causing smallpox or cholera?<br><br><strong>Pair:</strong> Compare how the Royal Society reacted to Jenner in 1797 with how the General Board of Health reacted to Snow in 1855—why did Victorian medical authorities accept vaccination far faster than Snow’s waterborne cholera proof?<br><br><strong>Share:</strong> Which mattered more in saving nineteenth-century British lives before 1875: empirical observation on the ground (Jenner &amp; Snow) or laboratory Germ Theory (Pasteur &amp; Koch)?",
+      "questions": [
+        "In Case XVII of Document I, trace the exact two-stage experiment Edward Jenner carried out on eight-year-old James Phipps on 14 May 1796 and 1 July 1796, including the boy’s symptoms at each stage.",
+        "How did Dr John Snow investigate the ten Soho cholera deaths that occurred closer to other street pumps in Document II, and what action did St James’s Board of Guardians take after meeting him on 7 September 1854?",
+        "Explain how Snow used the Poland Street Workhouse (535 inmates) and Mr Huggins’s Broad Street Brewery (over 70 workmen) in Document II as negative controls to disprove atmospheric miasma."
+      ]
+    },
+    {
+      "id": "med_gr_kt4_beveridge_bevan_nhs_1942_48",
+      "lesson_index": 17,
+      "lesson_id": "lesson_4_3",
+      "lesson_label": "KT 4.3: Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
+      "short_tab_title": "1942 Beveridge & 1948 NHS",
+      "book_title": "Verbatim Crown & Parliamentary Extracts: Sir William Beveridge’s Report Social Insurance and Allied Services (Cmd. 6404, November 1942) & Ministry of Health Household Leaflet The New National Health Service (July 1948)",
+      "author": "Sir William Beveridge (HMSO Cmd. 6404 • November 1942) & Ministry of Health / Aneurin Bevan (Central Office of Information • February–July 1948)",
+      "cover_image": "/images/edexcel_medicine/kt4/med_kt4_3_cameo_william_beveridge_1943_iwm.jpg",
+      "cover_caption": "Sir William Beveridge in his study at University College, Oxford in 1943 in front of cartoonist David Low’s framed drawing on the reception of the Beveridge Plan (Official Ministry of Information photograph, Imperial War Museums D 17134).",
+      "author_context": "Before the Second World War, Britain’s 1911 National Insurance Act covered only low-paid employed workers for GP visits, leaving wives, children, the self-employed, and the elderly to pay doctors’ bills or rely on means-tested charities and municipal infirmaries. Wartime evacuation, the Blitz, and the state-coordinated Emergency Medical Service forged an overwhelming public consensus for egalitarian post-war reconstruction. In November 1942, Liberal economist Sir William Beveridge presented his bestseller Social Insurance and Allied Services (Cmd. 6404), naming \"Disease\" among Five Giant Evils and insisting under \"Assumption B\" on a universal National Health Service. Following Labour’s landslide victory in July 1945, Minister of Health Aneurin Bevan carried the National Health Service Act (1946) through fierce British Medical Association opposition and distributed The New National Health Service leaflet to every household in Britain ahead of the \"Appointed Day\" on 5 July 1948.",
+      "source_type": "primary_statute",
+      "source_type_label": "Command Paper (Cmd. 6404, 1942) & Ministry of Health Household Leaflet (1948)",
+      "is_primary": true,
+      "is_adapted": false,
+      "provenance_tier": "verbatim_primary",
+      "provenance_note": "Verbatim Crown primary text from Social Insurance and Allied Services: Report by Sir William Beveridge, Command Paper Cmd. 6404 (London: His Majesty’s Stationery Office, November 1942), Part I, §8 & Part V, §427, paired with verbatim text from The New National Health Service, Prepared by the Central Office of Information for the Ministry of Health (London: HMSO, Wt. 39168, February 1948, effective 5 July 1948). UK Crown Copyright expired under Section 163 CDPA 1988.",
+      "extract": "<strong>Document I — Sir William Beveridge, <em>Social Insurance and Allied Services</em> (Cmd. 6404, November 1942): The Five Giants (§8) &amp; Assumption B — A Comprehensive National Health Service (§427)</strong>\n\n\"8. The second principle is that organisation of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is one only of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor and Idleness...\n\n427. The first part of Assumption B is that a comprehensive national health service will ensure that for every citizen there is available whatever medical treatment he requires, in whatever form he requires it, domiciliary or institutional, general, specialist or consultant, and will ensure also the provision of dental, ophthalmic and surgical appliances, nursing and midwifery and rehabilitation after accidents. Whether or not payment towards the cost of the health service is included in the social insurance contribution, the service itself should (i) be organised, not by the Ministry concerned with social insurance, but by Departments responsible for the health of the people and for positive and preventive as well as curative measures; (ii) be provided where needed without contribution conditions in any individual case. Restoration of a sick person to health is a duty of the State and the sick person, prior to any other consideration.\"\n\n<strong>Document II — Ministry of Health Public Household Leaflet, <em>The New National Health Service</em> (Distributed Under Health Minister Aneurin Bevan Ahead of the Appointed Day, 5 July 1948)</strong>\n\n\"<strong>Your new National Health Service begins on 5th July. What is it? How do you get it?</strong>\n\nIt will provide you with all medical, dental, and nursing care. Everyone—rich or poor, man, woman or child—can use it or any part of it. There are no charges, except for a few special items. There are no insurance qualifications. But it is not a 'charity'. You are all paying for it, mainly as taxpayers, and it will relieve your money worries in time of illness.\n\n<strong>Choose Your Doctor Now:</strong> You and everyone in your family will be entitled to all usual advice and treatment from a family doctor. Everyone aged 16 and over can choose his or her own doctor... Your dealings with your doctor will remain as they are now: <em>personal and confidential.</em> You will visit his surgery, or he will call on you, as may be necessary. The difference is that the doctor will be paid by the Government, out of funds provided by everybody.\n\n<strong>Hospital and Specialist Services:</strong> You will also be entitled to all forms of treatment in general or special hospitals, whether as an in-patient or as an out-patient. These include, for instance, maternity care, sanatorium treatment, care of mental health, and <em>all surgical operations.</em> ... Hospital charges will cease on 5th July. Where accommodation permits, however, you can pay something for greater privacy (for example, in single rooms or small wards). Or if you do not want to use the new service itself, there will be private pay-bed accommodation for which you can make your own private fee arrangements with doctors.\n\n<strong>Medicines, Drugs, and Appliances:</strong> Your doctor will give you a prescription for any medicines and drugs you need. You can get these free from any chemist who takes part in the Scheme... <strong>Care of the Teeth / Care of the Eyes:</strong> All necessary fillings and dentures will be supplied without fee... If you need glasses, these will be provided without charge.\"",
+      "vocabVault": [
+        {
+          "term": "Five Giants",
+          "def": "Beveridge’s vivid personification of Britain’s five interlinked social evils—Want (poverty), Disease (illness), Ignorance (lack of schooling), Squalor (slum housing), and Idleness (mass unemployment).",
+          "word": "Five Giants",
+          "definition": "Beveridge’s vivid personification of Britain’s five interlinked social evils—Want (poverty), Disease (illness), Ignorance (lack of schooling), Squalor (slum housing), and Idleness (mass unemployment)."
+        },
+        {
+          "term": "Assumption B",
+          "def": "Beveridge’s foundational precondition in Paragraph 427 that social insurance could only succeed alongside a comprehensive, preventative and curative National Health Service open to every citizen.",
+          "word": "Assumption B",
+          "definition": "Beveridge’s foundational precondition in Paragraph 427 that social insurance could only succeed alongside a comprehensive, preventative and curative National Health Service open to every citizen."
+        },
+        {
+          "term": "Domiciliary or Institutional",
+          "def": "Medical treatment delivered either in the patient’s own home (\"domiciliary\"—GPs, midwives, health visitors, home nurses) or inside general and specialist hospitals (\"institutional\").",
+          "word": "Domiciliary or Institutional",
+          "definition": "Medical treatment delivered either in the patient’s own home (\"domiciliary\"—GPs, midwives, health visitors, home nurses) or inside general and specialist hospitals (\"institutional\")."
+        },
+        {
+          "term": "No Insurance Qualifications",
+          "def": "The decisive break from Lloyd George’s 1911 National Insurance Act: from 5 July 1948, non-earning wives, children, pensioners, and the unemployed received full care without needing prior payroll stamps.",
+          "word": "No Insurance Qualifications",
+          "definition": "The decisive break from Lloyd George’s 1911 National Insurance Act: from 5 July 1948, non-earning wives, children, pensioners, and the unemployed received full care without needing prior payroll stamps."
+        },
+        {
+          "term": "Private Pay-Bed Accommodation",
+          "def": "Aneurin Bevan’s pragmatic concession inside NHS hospitals allowing senior consultants to treat fee-paying private patients alongside NHS wards—winning over British Medical Association specialists by July 1948.",
+          "word": "Private Pay-Bed Accommodation",
+          "definition": "Aneurin Bevan’s pragmatic concession inside NHS hospitals allowing senior consultants to treat fee-paying private patients alongside NHS wards—winning over British Medical Association specialists by July 1948."
+        }
+      ],
+      "parent_discussion": [
+        {
+          "question": "Look at the opening paragraph of Document II: why did the Ministry of Health explicitly tell British families \"But it is not a 'charity'. You are all paying for it, mainly as taxpayers\"?",
+          "answer": "Before 1948, working-class families hated the humiliating stigma of Poor Law infirmaries and means-tested hospital almoners; framing the NHS as a shared civic right already paid for through general taxation encouraged proud citizens of all classes—rich and poor alike—to use it without shame.",
+          "prompt": "Look at the opening paragraph of Document II: why did the Ministry of Health explicitly tell British families \"But it is not a 'charity'. You are all paying for it, mainly as taxpayers\"?",
+          "parent_guide": "Before 1948, working-class families hated the humiliating stigma of Poor Law infirmaries and means-tested hospital almoners; framing the NHS as a shared civic right already paid for through general taxation encouraged proud citizens of all classes—rich and poor alike—to use it without shame."
+        },
+        {
+          "question": "Which clues in Document II reveal how Aneurin Bevan reassured nervous British Medical Association (BMA) doctors and middle-class patients ahead of 5 July 1948?",
+          "answer": "The leaflet stresses that GP consultations remain \"personal and confidential\", patients can still choose or decline doctors rather than being assigned state officials, and hospital consultants retain \"private pay-bed accommodation\" for private fee arrangements.",
+          "prompt": "Which clues in Document II reveal how Aneurin Bevan reassured nervous British Medical Association (BMA) doctors and middle-class patients ahead of 5 July 1948?",
+          "parent_guide": "The leaflet stresses that GP consultations remain \"personal and confidential\", patients can still choose or decline doctors rather than being assigned state officials, and hospital consultants retain \"private pay-bed accommodation\" for private fee arrangements."
+        },
+        {
+          "question": "Look at the final lines of Document II promising free prescriptions, dental fillings, dentures, and spectacles: what happened across Britain immediately after 5 July 1948 when pent-up medical need met free care?",
+          "answer": "Millions of Britons who had endured rotten teeth, poor eyesight, and untreated illnesses for decades rushed to dentists, opticians, and chemists—causing NHS spending to double initial forecasts and prompting modest charges for spectacles and dentures by 1951 (triggering Bevan’s cabinet resignation).",
+          "prompt": "Look at the final lines of Document II promising free prescriptions, dental fillings, dentures, and spectacles: what happened across Britain immediately after 5 July 1948 when pent-up medical need met free care?",
+          "parent_guide": "Millions of Britons who had endured rotten teeth, poor eyesight, and untreated illnesses for decades rushed to dentists, opticians, and chemists—causing NHS spending to double initial forecasts and prompting modest charges for spectacles and dentures by 1951 (triggering Bevan’s cabinet resignation)."
+        }
+      ],
+      "hinge_question": "<strong>Think:</strong> In Document I (§427), why did Beveridge insist medical treatment must be provided \"without contribution conditions in any individual case\" rather than tied to National Insurance stamps?<br><br><strong>Pair:</strong> Spot the exact sentences in Document II designed to calm fears raised by the British Medical Association during the 1946–48 dispute—how did Bevan balance universal socialism with professional compromise?<br><br><strong>Share:</strong> Comparing Beveridge’s 1942 blueprint (Document I) with Bevan’s 1948 household leaflet (Document II), which groups in British society gained the biggest immediate transformation in daily healthcare on 5 July 1948?",
+      "questions": [
+        "What are the \"five giants on the road of reconstruction\" named by Sir William Beveridge in Paragraph 8 of Document I, and what comprehensive service does \"Assumption B\" (§427) propose to defeat Disease?",
+        "According to Document II, how did access to a family doctor change on 5 July 1948 for women, children, and uninsured citizens compared with the pre-1948 National Health Insurance Scheme, and how were doctors paid?",
+        "Identify two specific concessions or reassurances printed in Document II (\"Choose Your Doctor Now\" and \"Hospital and Specialist Services\") that show how Aneurin Bevan overcame opposition from doctors and private patients."
+      ]
+    },
+    {
       "lesson_index": 20,
       "lesson_id": "lesson_5_1",
       "lesson_key": "5.1",
@@ -43058,7 +45300,8 @@ export default {
       "id": "med_gr_5_1_arras",
       "title": "KT5.1 Literary Companion: Birdsong (Underground Hospital at Arras)",
       "provenance_tier": "scholarly_summary",
-      "provenance_note": "Adapted literary companion introducing tunnel warfare beneath the Western Front, inspired by Sebastian Faulks’s Birdsong."
+      "provenance_note": "Adapted literary companion introducing tunnel warfare beneath the Western Front, inspired by Sebastian Faulks’s Birdsong.",
+      "short_tab_title": "5.1 Arras Tunnels"
     },
     {
       "lesson_index": 21,
@@ -43181,7 +45424,8 @@ export default {
       "id": "med_gr_5_2_trenches",
       "title": "KT5.2 Literary Companion: All Quiet on the Western Front (Trench Vermin & Mud)",
       "provenance_tier": "scholarly_summary",
-      "provenance_note": "Adapted literary companion illustrating trench lice, hygiene, and dugout conditions on the Western Front."
+      "provenance_note": "Adapted literary companion illustrating trench lice, hygiene, and dugout conditions on the Western Front.",
+      "short_tab_title": "5.2 Trench Illnesses"
     },
     {
       "lesson_index": 22,
@@ -43304,7 +45548,8 @@ export default {
       "id": "med_gr_5_3_forbidden_zone",
       "title": "KT5.3 Primary Memoir: The Forbidden Zone (Gas Gangrene & Shrapnel Trauma)",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted companion grounded in casualty clearing station nursing accounts from Mary Borden’s 1929 memoir The Forbidden Zone."
+      "provenance_note": "Adapted companion grounded in casualty clearing station nursing accounts from Mary Borden’s 1929 memoir The Forbidden Zone.",
+      "short_tab_title": "5.3 Borden Forbidden Zone"
     },
     {
       "lesson_index": 23,
@@ -43427,7 +45672,8 @@ export default {
       "id": "med_gr_5_4_evacuation",
       "title": "KT5.4 Primary Memoir: Testament of Youth (The Chain of Evacuation)",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted companion grounded in VAD nurse Vera Brittain’s accounts of ambulance trains and base hospitals on the French coast."
+      "provenance_note": "Adapted companion grounded in VAD nurse Vera Brittain’s accounts of ambulance trains and base hospitals on the French coast.",
+      "short_tab_title": "5.4 Evacuation Chain"
     },
     {
       "lesson_index": 24,
@@ -43550,7 +45796,8 @@ export default {
       "id": "med_gr_5_5_radiology",
       "title": "KT5.5 Clinical Treatise: La Radiologie et la Guerre (Mobile X-Rays & The Thomas Splint)",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Classroom synthesis grounded in wartime surgical reports on the Thomas Splint and Marie Curie’s mobile X-ray units (\"Petites Curies\")."
+      "provenance_note": "Classroom synthesis grounded in wartime surgical reports on the Thomas Splint and Marie Curie’s mobile X-ray units (\"Petites Curies\").",
+      "short_tab_title": "5.5 Mobile X-Rays"
     },
     {
       "lesson_index": 25,
@@ -43673,7 +45920,8 @@ export default {
       "id": "med_gr_5_6_sidcup",
       "title": "KT5.6 Clinical Scholarship: Plastic Surgery of the Face (Harold Gillies at Sidcup)",
       "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom synthesis grounded in Sir Harold Gillies’s Queen’s Hospital Sidcup case records and modern medical historiography."
+      "provenance_note": "Classroom synthesis grounded in Sir Harold Gillies’s Queen’s Hospital Sidcup case records and modern medical historiography.",
+      "short_tab_title": "5.6 Gillies at Sidcup"
     }
   ],
   "timelineEvents": [

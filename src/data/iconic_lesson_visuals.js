@@ -420,31 +420,135 @@ export const ICONIC_LESSON_VISUALS = {
   // GCSE: Medicine, USA, Weimar & Nazi Germany, Cold War, Middle East
   // =========================================================================
   edexcel_medicine: {
+    lesson_1_1: {
+      cardImage: "/images/medieval_church_interior.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l1_1_cameo_roger_bacon_wellcome.jpg",
+      cameoAlt: "Franciscan friar and Oxford scholar Roger Bacon (c.1219–c.1292), imprisoned after urging direct experimental observation over blind obedience to ancient authority (Wellcome Collection M0004257)",
+    },
+    lesson_1_2: {
+      cardImage: "/images/edexcel_medicine/kt12/med_l1_2_b0_hippocrates_portrait_wellcome.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l1_2_cameo_avicenna_wellcome.jpg",
+      cameoAlt: "Persian polymath Avicenna (Ibn Sina, 980–1037), author of The Canon of Medicine, whose systematic synthesis of Hippocratic and Galenic humoralism anchored medieval European university curricula (Wellcome Collection M0000768)",
+    },
+    lesson_1_3: {
+      cardImage: "/images/upgraded/gcse-med-eee/med_l1_3_preparation_of_theriac_wellcome.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l1_3_cameo_dioscorides_mandrake_wellcome.jpg",
+      cameoAlt: "Greek physician-botanist Pedanius Dioscorides compiling De Materia Medica while an assistant holds a mandrake root (Oil painting by Ernest Board, Wellcome Collection L0068371)",
+    },
+    lesson_1_4: {
+      cardImage: "/images/upgraded/gcse-med-eee/med_l1_4_hotel_dieu_paris_nuns.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l1_4_cameo_ellesmere_physician.jpg",
+      cameoAlt: "Geoffrey Chaucer’s university-trained \"Doctour of Phisik\" in scarlet robes holding up a glass uroscopy matula flask on horseback (Ellesmere Chaucer Manuscript, c.1400–1410, Huntington Library EL 26 C 9, f. 133r)",
+    },
+    lesson_1_5: {
+      cardImage: "/images/edexcel_medicine/kt12/med_l1_5_b4_tournai_plague_coffin_burial_1349.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l1_5_cameo_king_edward_iii_npg.jpg",
+      cameoAlt: "King Edward III of England (r. 1327–1377), who issued the April 1349 London street-cleansing writ against corrupt miasma and the 1349 Ordinance of Labourers (National Portrait Gallery NPG 4980)",
+    },
+    lesson_2_1: {
+      cardImage: "/images/renaissance_printing_house_stradanus.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l2_1_cameo_robert_boyle_shannon.jpg",
+      cameoAlt: "Experimental chemist Robert Boyle (1627–1691), founding Fellow of the Royal Society of London chartered in 1662 under the empirical motto Nullius in verba (Shannon Portrait by Johann Kerseboom, 1689)",
+    },
+    lesson_2_2: {
+      cardImage: "/images/edexcel_medicine/kt12/med_l2_2_b0_thomas_sydenham_mary_beale.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l2_2_cameo_john_locke_kneller.jpg",
+      cameoAlt: "Physician and empiricist philosopher John Locke (1632–1704), close clinical collaborator who accompanied Dr Thomas Sydenham on London bedside rounds during smallpox and fever epidemics (Portrait by Sir Godfrey Kneller, NPG 3912)",
+    },
+    lesson_2_3: {
+      cardImage: "/images/edexcel_medicine/kt12/med_l2_3_b1_vesalius_third_muscle_man_wellcome.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l2_3_cameo_emperor_charles_v_titian.jpg",
+      cameoAlt: "Holy Roman Emperor Charles V (1500–1558), to whom Andreas Vesalius dedicated De Humani Corporis Fabrica in 1543 before serving as his Imperial Physician from 1544 (Portrait by Titian, Museo di Capodimonte)",
+    },
     lesson_2_4: {
-      cardImage: '/images/harvey_demonstrating_heart.jpg',
-      heroCameo: '/images/william_harvey_npg.jpg',
-      cameoAlt: 'Dr William Harvey (c. 1627, National Portrait Gallery)',
+      cardImage: "/images/harvey_demonstrating_heart.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l2_4_cameo_girolamo_fabricius_wellcome.jpg",
+      cameoAlt: "Professor Girolamo Fabricius of Acquapendente (1533–1619), Paduan anatomist who taught William Harvey and published the discovery of one-way venous valves in 1603 (Wellcome Collection V0001828)",
+    },
+    lesson_2_5: {
+      cardImage: "/images/plague_in_london_1665_wellcome.jpg",
+      heroCameo: "/images/edexcel_medicine/kt12/med_l2_5_cameo_samuel_pepys_hayls_1666.jpg",
+      cameoAlt: "Naval administrator and eyewitness diarist Samuel Pepys (1633–1703), whose 1665 diary vividly recorded red-crossed houses, deserted streets, and soaring weekly plague mortality in London (Oil portrait by John Hayls, 1666, NPG 211)",
+    },
+    lesson_3_1: {
+      cardImage: "/images/pasteur_actual_flask.jpg",
+      heroCameo: "/images/edexcel_medicine/kt3/med_kt3_l1_cameo_louis_pasteur.jpg",
+      cameoAlt: "Studio portrait photograph of French chemist and microbiologist Louis Pasteur (1822–1895) by Paul Nadar, whose 1861 Germ Theory overturned spontaneous generation",
     },
     lesson_3_2: {
-      cardImage: '/images/jenner_vaccinating_phipps.jpg',
+      cardImage: "/images/jenner_vaccinating_phipps.jpg",
+      heroCameo: "/images/edexcel_medicine/kt3/med_kt3_l2_cameo_edward_jenner.jpg",
+      cameoAlt: "Portrait of Dr Edward Jenner FRS (1749–1823) after James Northcote (1803, Wellcome Collection M0009130), seated beside an open plate of a cow and his treatise on vaccine inoculation",
     },
     lesson_3_3: {
-      cardImage: '/images/nightingale_scutari.jpg',
-      heroCameo: '/images/upgraded/gcse-med-eee/med_l3_3_mary_seacole_challen_1869.jpg',
-      cameoAlt: 'Mary Seacole (1869, NPG 6805)',
+      cardImage: "/images/edexcel_medicine/kt3/med_kt3_l3_b1_scutari_ward_simpson.jpg",
+      heroCameo: "/images/edexcel_medicine/kt3/med_kt3_l3_cameo_florence_nightingale.jpg",
+      cameoAlt: "Three-quarter-length studio portrait photograph of Florence Nightingale (1820–1910) in lace cap and dark dress taken by Henry Hering in London c. 1858 after her return from the Crimean War",
+    },
+    lesson_3_4: {
+      cardImage: "/images/lister_carbolic_spray_apparatus.jpg",
+      heroCameo: "/images/edexcel_medicine/kt3/med_kt3_l4_cameo_joseph_lister.jpg",
+      cameoAlt: "Engraved portrait of pioneering antiseptic surgeon Joseph Lister, 1st Baron Lister (1827–1912), who introduced carbolic acid wound antisepsis in 1865 after reading Pasteur’s Germ Theory",
+    },
+    lesson_3_5: {
+      cardImage: "/images/edexcel_medicine/kt3/med_kt3_l5_b3_bazalgette_old_ford_sewers.jpg",
+      heroCameo: "/images/edexcel_medicine/kt3/med_kt3_l5_cameo_john_snow_1856.jpg",
+      cameoAlt: "Seated studio portrait photograph of Soho physician and epidemiologist Dr John Snow (1813–1858) taken in 1856, two years after he traced the Broad Street cholera outbreak to contaminated pump water",
     },
     lesson_4_1: {
-      cardImage: '/images/dna_structure.jpg',
-      heroCameo: '/images/dna_structure.jpg',
-      cameoAlt: 'Watson and Crick with the 1953 DNA Double Helix model',
+      cardImage: "/images/edexcel_medicine/kt4/med_kt4_1_cameo_francis_crick_wellcome.jpg",
+      heroCameo: "/images/edexcel_medicine/kt4/med_kt4_1_cameo_francis_crick_wellcome.jpg",
+      cameoAlt: "Molecular biologist Francis Crick (1916–2004) lecturing at a podium at the University of Cambridge, where he and James Watson deduced the double-helix structure of DNA in 1953 using Rosalind Franklin’s X-ray diffraction data (Wellcome Collection L0042633)",
+    },
+    lesson_4_2: {
+      cardImage: "/images/edexcel_medicine/kt4/med_kt4_2_cameo_wilhelm_roentgen.jpg",
+      heroCameo: "/images/edexcel_medicine/kt4/med_kt4_2_cameo_wilhelm_roentgen.jpg",
+      cameoAlt: "Studio portrait of German physicist Wilhelm Conrad Röntgen (1845–1923), whose November 1895 discovery of X-rays launched non-invasive internal medical diagnosis (Erwin Hanfstaengl, Frankfurt)",
     },
     lesson_4_3: {
-      cardImage: '/images/bevan_first_day_nhs_1948.jpg',
+      cardImage: "/images/bevan_first_day_nhs_1948.jpg",
+      heroCameo: "/images/edexcel_medicine/kt4/med_kt4_3_cameo_william_beveridge_1943_iwm.jpg",
+      cameoAlt: "Economist Sir William Beveridge (1879–1963) in his study at University College, Oxford in 1943 in front of David Low’s cartoon celebrating the November 1942 Beveridge Report (Imperial War Museums D 17134)",
     },
     lesson_4_4: {
-      cardImage: '/images/penicillin_mould.jpg',
-      heroCameo: '/images/penicillin_mould.jpg',
-      cameoAlt: "Alexander Fleming in his St Mary's Hospital laboratory",
+      cardImage: "/images/edexcel_medicine/kt4/med_kt4_4_cameo_howard_florey_1960.jpg",
+      heroCameo: "/images/edexcel_medicine/kt4/med_kt4_4_cameo_howard_florey_1960.jpg",
+      cameoAlt: "Australian pathologist Professor Sir Howard Florey (1898–1968), who led the Oxford team with Ernst Chain and Norman Heatley that purified penicillin and secured US wartime mass production (National Library of Australia)",
+    },
+    lesson_4_5: {
+      cardImage: "/images/edexcel_medicine/kt4/med_kt4_5_cameo_sir_richard_doll_nlm.jpg",
+      heroCameo: "/images/edexcel_medicine/kt4/med_kt4_5_cameo_sir_richard_doll_nlm.jpg",
+      cameoAlt: "British epidemiologist Sir Richard Doll (1912–2005, centre) with his wife Dr Joan Faulkner and daughter at Green College, Oxford; with Austin Bradford Hill in 1950, Doll proved the link between cigarette smoking and lung cancer (National Cancer Institute / NIH ID 8174)",
+    },
+    lesson_5_1: {
+      cardImage: "/images/med_stage_trench_stretcher_bottleneck.jpg",
+      heroCameo: "/images/edexcel_medicine/kt5/med_kt5_l51_cameo_ypres_cloth_hall.jpg",
+      cameoAlt: "Shell-shattered Gothic belfry and arcade of the medieval Cloth Hall at Ypres (c. 1915, Canadian Expeditionary Force Archive), focal landmark of the Ypres Salient",
+    },
+    lesson_5_2: {
+      cardImage: "/images/divisional_baths_delousing.jpg",
+      heroCameo: "/images/edexcel_medicine/kt5/med_kt5_l52_cameo_noel_chavasse_q67309.jpg",
+      cameoAlt: "Captain Noel Godfrey Chavasse VC and Bar, MC (1884–1917), Royal Army Medical Corps Medical Officer to the 1/10th King’s (Liverpool Scottish), the only man awarded two Victoria Crosses in the First World War (IWM Q 67309)",
+    },
+    lesson_5_3: {
+      cardImage: "/images/edexcel_medicine/kt5/med_kt5_l53_b4_55th_div_gas_casualties_q11586.jpg",
+      heroCameo: "/images/edexcel_medicine/kt5/med_kt5_l53_cameo_edward_harrison_1916.jpg",
+      cameoAlt: "Lieutenant-Colonel Edward Frank Harrison (1869–1918), RAMC chemist who led the development of the life-saving British Small Box Respirator in 1916",
+    },
+    lesson_5_4: {
+      cardImage: "/images/source_b_ambulance_somme_1916.jpg",
+      heroCameo: "/images/edexcel_medicine/kt5/med_kt5_l54_cameo_fany_drivers_1917.jpg",
+      cameoAlt: "Volunteer women ambulance drivers of the First Aid Nursing Yeomanry (FANY) in winter fur coats beside their motor ambulance convoy in northern France (January 1917, IWM)",
+    },
+    lesson_5_5: {
+      cardImage: "/images/thomas_splint_authentic.jpg",
+      heroCameo: "/images/edexcel_medicine/kt5/med_kt5_l55_cameo_hugh_owen_thomas_l0018018.jpg",
+      cameoAlt: "Liverpool orthopaedic pioneer Hugh Owen Thomas (1834–1891), inventor of the traction splint introduced to the Western Front by his nephew Sir Robert Jones in December 1915 (Wellcome Collection)",
+    },
+    lesson_5_6: {
+      cardImage: "/images/med_stage_cushing_neurosurgery.jpg",
+      heroCameo: "/images/edexcel_medicine/kt5/med_kt5_l56_cameo_harold_gillies_v0011539.jpg",
+      cameoAlt: "Major Sir Harold Delf Gillies (1882–1960) in surgical gown, cap, and rubber gloves, pioneer of the tubed pedicle skin graft at The Queen’s Hospital, Sidcup (Wellcome Collection)",
     },
   },
 

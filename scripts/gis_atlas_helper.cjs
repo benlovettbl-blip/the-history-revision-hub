@@ -185,6 +185,10 @@ function loadUsStates20m() {
   return rewindForD3(JSON.parse(fs.readFileSync(path.join(GIS_CACHE, 'us_states_20m.geojson'), 'utf8')));
 }
 
+function loadLondonBoroughs() {
+  return rewindForD3(JSON.parse(fs.readFileSync(path.join(GIS_CACHE, 'london_boroughs.geojson'), 'utf8')));
+}
+
 function filterGreaterReich1938(fc1938) {
   return fc1938.features.filter((f) => {
     const n = f.properties && (f.properties.NAME || f.properties.SUBJECTO || '');
@@ -389,6 +393,7 @@ module.exports = {
   filterGreaterReich1938,
   loadWorld1960,
   loadUsStates20m,
+  loadLondonBoroughs,
   loadBerlinOrtsteile,
   getBerlin1945Sectors,
   cleanPath,
