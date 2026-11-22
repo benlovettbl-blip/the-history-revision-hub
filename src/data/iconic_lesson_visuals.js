@@ -532,17 +532,63 @@ export const ICONIC_LESSON_VISUALS = {
   gcse_cold_war: {
     lesson_1: {
       cardImage: '/images/cold_war/yalta_conference_1945.jpg',
+      heroCameo: '/images/cold_war/yalta_conference_1945.jpg',
+      cameoAlt: "Winston Churchill, Franklin D. Roosevelt, and Joseph Stalin seated at Livadia Palace during the Yalta Conference, February 1945",
+    },
+    lesson_2: {
+      cardImage: '/images/gcse_cold_war/kt1/cw_l2_iconic_truman_churchill_fulton_1946.jpg',
+      heroCameo: '/images/gcse_cold_war/kt1/cw_l2_iconic_truman_churchill_fulton_1946.jpg',
+      cameoAlt: "Winston Churchill flashing his V-for-Victory sign beside President Harry S. Truman aboard the special train to Fulton, Missouri, March 1946",
+    },
+    lesson_3: {
+      cardImage: '/images/cold_war/berlin_airlift_c54_tempelhof.jpg',
+      heroCameo: '/images/cold_war/candy_bomber_gail_halvorsen_1948.jpg',
+      cameoAlt: "USAF Lieutenant Gail Halvorsen ('The Candy Bomber') rigging miniature handkerchief parachutes for West Berlin children, 1948",
+    },
+    lesson_4: {
+      cardImage: '/images/gcse_cold_war/budapest_damaged_tank_1956.jpg',
+      heroCameo: '/images/gcse_cold_war/imre_nagy_portrait.jpg',
+      cameoAlt: "Imre Nagy, Reformist Prime Minister of Hungary during the October–November 1956 Hungarian Uprising",
+    },
+    lesson_5: {
+      cardImage: '/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg',
+      heroCameo: '/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg',
+      cameoAlt: "US President John F. Kennedy and Soviet Premier Nikita Khrushchev seated face-to-face during the Vienna Summit (June 1961)",
     },
     lesson_6: {
-      cardImage: '/images/portraits/fidel_castro_1959.jpg',
-      heroCameo: '/images/portraits/fidel_castro_1959.jpg',
-      cameoAlt: 'Fidel Castro (1959)',
+      cardImage: '/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg',
+      heroCameo: '/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg',
+      cameoAlt: "President John F. Kennedy meeting with ExComm advisers in the White House Cabinet Room during the Cuban Missile Crisis (October 1962)",
     },
     lesson_7: {
       cardImage: '/images/gcse_cold_war/alexander_dubcek_portrait.png',
+      heroCameo: '/images/gcse_cold_war/alexander_dubcek_portrait.png',
+      cameoAlt: "Alexander Dubček, First Secretary of the Communist Party of Czechoslovakia and architect of the 1968 Prague Spring",
+    },
+    lesson_8: {
+      cardImage: '/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg',
+      heroCameo: '/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg',
+      cameoAlt: "Soviet soldier manning a heavy machine gun atop an armoured scout car in Prague during Operation Danube (August 1968)",
+    },
+    lesson_9: {
+      cardImage: '/images/gcse_cold_war/nixon_brezhnev_salt1_1972.jpg',
+      heroCameo: '/images/gcse_cold_war/nixon_brezhnev_salt1_1972.jpg',
+      cameoAlt: "US President Richard Nixon and Soviet leader Leonid Brezhnev signing the SALT 1 agreements in the Grand Kremlin Palace, Moscow (26 May 1972)",
     },
     lesson_10: {
-      cardImage: '/images/upgraded/gcse-cw-cme/cw_l10_reagan_sdi_oval_office_1983.jpg',
+      cardImage: '/images/upgraded/gcse-cw-cme/cw_l10_reagan_afghan_delegation_1983.jpg',
+      heroCameo: '/images/upgraded/gcse-cw-cme/cw_l10_reagan_afghan_delegation_1983.jpg',
+      cameoAlt: "President Ronald Reagan meeting Afghan Mujahideen resistance representatives in the White House Oval Office (February 1983)",
+    },
+    lesson_11: {
+      cardImage: '/images/upgraded/gcse-cw-cme/cw_l11_reagan_gorbachev_reykjavik_1986.jpg',
+      heroCameo: '/images/upgraded/gcse-cw-cme/cw_l11_reagan_gorbachev_reykjavik_1986.jpg',
+      cameoAlt: "Mikhail Gorbachev and Ronald Reagan in one-to-one talks inside Höfði House at the Reykjavik Summit (October 1986)",
+    },
+    lesson_12: {
+      cardImage: '/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg',
+      heroCameo: '/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg',
+      cameoAlt: "Jubilant Berliners helping one another climb atop the graffiti-covered Berlin Wall following the opening of the East German border (10 November 1989)",
     },
   },
 };

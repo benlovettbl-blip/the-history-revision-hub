@@ -867,8 +867,8 @@ export function renderLesson(lesson) {
     }
   }
 
-  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 164px for Secondary/GCSE panoramic banners)
-  const heroBannerHeight = isKs2 ? '210px' : '164px';
+  // Full-Bleed Hero Image (Calibrated Height: 210px for KS2, 192px for Secondary/GCSE panoramic + Split-Hero banners)
+  const heroBannerHeight = isKs2 ? '210px' : '192px';
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();
@@ -959,8 +959,8 @@ export function renderLesson(lesson) {
     ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);`
     : `position: relative; width: 100%; margin-left: 0; margin-right: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.5rem; border-radius: 10px; overflow: hidden; border: 1px solid rgba(15,23,42,0.14); box-shadow: 0 4px 16px rgba(0,0,0,0.08);`;
   const heroOverlayStyle = isKs2
-    ? `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.52) 56%, rgba(15,23,42,0.14) 100%), linear-gradient(to top, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.22) 55%, rgba(15,23,42,0.04) 100%);`
-    : `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.56) 56%, rgba(15,23,42,0.16) 100%), linear-gradient(to top, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.26) 55%, rgba(15,23,42,0.05) 100%);`;
+    ? `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.46) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.16) 52%, rgba(15,23,42,0.02) 100%);`
+    : `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.48) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.84) 0%, rgba(15,23,42,0.18) 52%, rgba(15,23,42,0.02) 100%);`;
   const heroContentPadding = isKs2 ? '0.9rem 1.75rem' : '0.72rem 1.5rem';
 
   const heroCameoHtml = hasHeroCameo

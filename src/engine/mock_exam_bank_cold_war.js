@@ -353,15 +353,15 @@ export const MOCK_BANK_COLD_WAR = {
             level: 'Level 2 Top (Pearson Exam Standard)',
             badge: 'Edexcel Benchmark',
             text: 'One consequence of mounting opposition to hardline Soviet-style rule in Czechoslovakia by early 1968 was the removal of unpopular Stalinist leader Antonín Novotný and the launch of Alexander Dubček’s reform programme. Appointed First Secretary in January 1968, Dubček introduced his April Action Programme ("Socialism with a human face"), abolishing press censorship and curbing StB secret-police powers.',
-            verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 56w • Option B: 56w). Develops ONE clear consequence—either Novotný’s replacement and Dubček’s April 1968 Action Programme (Option A) or intense alarm among Warsaw Pact hardliners leading to the August 1968 invasion (Option B).',
+            verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 56w • Option B: 57w). Develops ONE clear consequence—either Novotný’s replacement and Dubček’s April 1968 Action Programme (Option A) or intense alarm among Warsaw Pact hardliners culminating in the July 1968 Warsaw Letter (Option B).',
             options: [
               {
                 label: 'Option A (4/4): Removal of Novotný & Action Programme',
                 text: 'One consequence of mounting opposition to hardline Soviet-style rule in Czechoslovakia by early 1968 was the removal of unpopular Stalinist leader Antonín Novotný and the launch of Alexander Dubček’s reform programme. Appointed First Secretary in January 1968, Dubček introduced his April Action Programme ("Socialism with a human face"), abolishing press censorship and curbing StB secret-police powers.',
               },
               {
-                label: 'Option B (4/4): Warsaw Pact Alarm & Military Invasion',
-                text: 'One consequence of outspoken opposition to Soviet control—such as Ludvík Vaculík’s June 1968 "Two Thousand Words" manifesto—was fierce alarm among Warsaw Pact hardliners. Fearing uncensored criticism would topple one-party Communist rule across East Germany and Poland, Leonid Brezhnev ordered 500,000 Warsaw Pact troops to invade Czechoslovakia on 20–21 August 1968.',
+                label: 'Option B (4/4): Warsaw Pact Alarm & July 1968 Warsaw Letter',
+                text: 'One consequence of outspoken opposition during the Prague Spring—such as Ludvík Vaculík’s June 1968 "Two Thousand Words" manifesto—was fierce alarm among neighbouring Communist hardliners. Fearing uncensored criticism would destabilise one-party rule in East Germany and Poland, Brezhnev, Ulbricht, and Gomułka staged June military exercises and issued the stern Five-Party Warsaw Letter on 15 July 1968.',
               },
             ],
           },

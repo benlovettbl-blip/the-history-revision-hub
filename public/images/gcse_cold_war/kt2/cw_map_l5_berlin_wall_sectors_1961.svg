@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="640" viewBox="0 0 880 640" role="img" aria-labelledby="cw-l5-title cw-l5-desc">
+  <title id="cw-l5-title">Divided Berlin, Allied Sectors &amp; Construction of the Berlin Wall (1958–61)</title>
+  <desc id="cw-l5-desc">Edexcel GCSE History cartographic map of Divided Berlin (1958–61) showing French, British, and US West Berlin sectors encircled inside Communist East Germany (GDR), Soviet East Berlin, the 155 km Berlin Wall ring built from 13 August 1961, Checkpoint Charlie, Tempelhof and Tegel airfields, and the 2.7–3 million East German Brain Drain.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .banner-overline { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; fill: #fbbf24; letter-spacing: 2px; }
+      .banner-title { font-family: Georgia, 'Times New Roman', serif; font-size: 19px; font-weight: 700; fill: #ffffff; }
+      .banner-pill-text { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; fill: #fde68a; letter-spacing: 1px; }
+      .gdr-lbl { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 800; fill: #991b1b; letter-spacing: 2.2px; paint-order: stroke fill; stroke: rgba(255,255,255,0.85); stroke-width: 3.4px; stroke-linejoin: round; }
+      .sector-lbl { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 1.1px; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.8px; stroke-linejoin: round; }
+      .sector-sub { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 700; fill: #334155; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.2px; stroke-linejoin: round; }
+      .poi-lbl { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 800; fill: #0f172a; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.6px; stroke-linejoin: round; }
+      .poi-sub { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 700; fill: #475569; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3px; stroke-linejoin: round; }
+      .water-lbl { font-family: Georgia, 'Times New Roman', serif; font-size: 10.5px; font-style: italic; font-weight: 700; fill: #0369a1; paint-order: stroke fill; stroke: rgba(255,255,255,0.85); stroke-width: 2.6px; }
+      .card-hdr { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 800; fill: #fbbf24; letter-spacing: 1.1px; }
+      .card-bold { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 800; fill: #0f172a; }
+      .card-txt { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 600; fill: #334155; }
+      .legend-txt { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 700; fill: #0f172a; }
+      .legend-sub { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 500; fill: #475569; }
+    ]]></style>
+    <clipPath id="map-clip">
+      <rect x="0" y="62" width="880" height="500" />
+    </clipPath>
+    <filter id="card-shadow" x="-8%" y="-8%" width="118%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <!-- MAP VIEWPORT -->
+  <g clip-path="url(#map-clip)">
+    <!-- Surrounding Communist East Germany (GDR) -->
+    <rect x="0" y="62" width="880" height="500" fill="#f3e8e6" />
+
+    <!-- Subtle Atlas Grid -->
+    <g stroke="#94a3b8" stroke-opacity="0.22" stroke-width="0.9" stroke-dasharray="4,4">
+      <line x1="220" y1="62" x2="220" y2="562" />
+      <line x1="440" y1="62" x2="440" y2="562" />
+      <line x1="660" y1="62" x2="660" y2="562" />
+      <line x1="0" y1="185" x2="880" y2="185" />
+      <line x1="0" y1="312" x2="880" y2="312" />
+      <line x1="0" y1="440" x2="880" y2="440" />
+    </g>
+
+    <!-- Western Allied Air & Autobahn Access Corridors (dashed hints entering West Berlin) -->
+    <g stroke="#2563eb" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.55" fill="none">
+      <path d="M 0,165 L 395,215" />
+      <path d="M 0,348 L 285,342" />
+      <path d="M 140,562 L 330,455" />
+    </g>
+
+    <!-- ================= GREATER BERLIN FOUR SECTORS ================= -->
+
+    <!-- 1. SOVIET SECTOR (EAST BERLIN) -->
+    <path d="M 505,104 L 556,96 L 605,112 L 648,108 L 692,135 L 724,182 L 758,225 L 788,274 L 806,332 L 828,392 L 812,448 L 774,488 L 722,504 L 675,478 L 635,450 L 584,424 L 552,386 L 528,358 L 500,346 L 494,312 L 484,282 L 492,248 L 486,216 L 502,182 L 496,144 Z"
+          fill="#fecaca" stroke="#dc2626" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- 2. FRENCH SECTOR (NORTH-WEST WEST BERLIN) -->
+    <path d="M 332,126 L 378,108 L 424,116 L 468,122 L 496,144 L 502,182 L 486,216 L 492,248 L 444,252 L 392,244 L 342,236 L 308,218 L 302,182 L 314,150 Z"
+          fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- 3. BRITISH SECTOR (WEST-CENTRAL WEST BERLIN) -->
+    <path d="M 308,218 L 342,236 L 392,244 L 444,252 L 492,248 L 484,282 L 494,312 L 442,324 L 390,336 L 342,354 L 296,382 L 266,374 L 254,332 L 262,280 L 278,236 Z"
+          fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- 4. US SECTOR (SOUTH WEST BERLIN) -->
+    <path d="M 296,382 L 342,354 L 390,336 L 442,324 L 494,312 L 500,346 L 528,358 L 552,386 L 538,426 L 498,456 L 456,488 L 402,496 L 348,482 L 298,464 L 274,432 L 280,402 Z"
+          fill="#cffafe" stroke="#0284c7" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Internal Allied West Berlin Sector Boundaries (dashed blue-slate) -->
+    <path d="M 308,218 L 342,236 L 392,244 L 444,252 L 492,248" fill="none" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="5,3" />
+    <path d="M 296,382 L 342,354 L 390,336 L 442,324 L 494,312" fill="none" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="5,3" />
+
+    <!-- Havel Lakes & Spree River System -->
+    <g fill="none" stroke="#38bdf8" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Havel River (North-South through western edge of West Berlin) -->
+      <path d="M 326,62 C 324,115 322,175 316,230 C 308,285 294,342 282,402 C 272,442 248,478 218,505" stroke-width="6.5" opacity="0.75" />
+      <!-- Tegeler See & Wannsee widenings -->
+      <ellipse cx="332" cy="192" rx="14" ry="8" fill="#7dd3fc" stroke="none" />
+      <ellipse cx="288" cy="418" rx="15" ry="9" fill="#7dd3fc" stroke="none" />
+      <!-- Spree River (East-West through Köpenick, Mitte, Tiergarten to Spandau) -->
+      <path d="M 835,432 C 772,412 722,374 662,344 C 608,318 548,298 486,284 C 436,274 374,272 314,264" stroke-width="4.2" opacity="0.8" />
+      <ellipse cx="755" cy="418" rx="22" ry="11" fill="#7dd3fc" stroke="none" />
+    </g>
+
+    <!-- East Berlin Municipal Outer Boundary (dashed red-grey) -->
+    <path d="M 505,104 L 556,96 L 605,112 L 648,108 L 692,135 L 724,182 L 758,225 L 788,274 L 806,332 L 828,392 L 812,448 L 774,488 L 722,504 L 675,478 L 635,450 L 584,424 L 552,386"
+          fill="none" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="6,4" />
+
+    <!-- ================= THE 155 KM BERLIN WALL RING (13 AUGUST 1961) ================= -->
+    <!-- Outer White Halo for High Print Legibility -->
+    <path d="M 332,126 L 378,108 L 424,116 L 468,122 L 496,144 L 502,182 L 486,216 L 492,248 L 484,282 L 494,312 L 500,346 L 528,358 L 552,386 L 538,426 L 498,456 L 456,488 L 402,496 L 348,482 L 298,464 L 274,432 L 280,402 L 296,382 L 266,374 L 254,332 L 262,280 L 278,236 L 308,218 L 302,182 L 314,150 Z"
+          fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round" />
+    <!-- Solid Crimson Wall Core -->
+    <path d="M 332,126 L 378,108 L 424,116 L 468,122 L 496,144 L 502,182 L 486,216 L 492,248 L 484,282 L 494,312 L 500,346 L 528,358 L 552,386 L 538,426 L 498,456 L 456,488 L 402,496 L 348,482 L 298,464 L 274,432 L 280,402 L 296,382 L 266,374 L 254,332 L 262,280 L 278,236 L 308,218 L 302,182 L 314,150 Z"
+          fill="none" stroke="#b91c1c" stroke-width="4.4" stroke-linejoin="round" />
+    <!-- Barbed-Wire / Watchtower Cross-Ticks along the Wall Ring -->
+    <path d="M 332,126 L 378,108 L 424,116 L 468,122 L 496,144 L 502,182 L 486,216 L 492,248 L 484,282 L 494,312 L 500,346 L 528,358 L 552,386 L 538,426 L 498,456 L 456,488 L 402,496 L 348,482 L 298,464 L 274,432 L 280,402 L 296,382 L 266,374 L 254,332 L 262,280 L 278,236 L 308,218 L 302,182 L 314,150 Z"
+          fill="none" stroke="#450a0a" stroke-width="7.5" stroke-dasharray="2,13" stroke-linejoin="round" />
+
+    <!-- Refugee Escape Arrows (1949–Aug 1961, Blocked by Wall) -->
+    <g stroke="#0f172a" stroke-width="2" fill="none">
+      <path d="M 595,212 Q 548,210 508,210" stroke-dasharray="4,3" />
+      <polygon points="508,210 516,205 516,215" fill="#0f172a" stroke="none" />
+      <path d="M 605,356 Q 566,356 526,352" stroke-dasharray="4,3" />
+      <polygon points="526,352 534,347 534,357" fill="#0f172a" stroke="none" />
+    </g>
+
+    <!-- ================= TERRITORY & SECTOR LABELS ================= -->
+    <text x="692" y="92" text-anchor="middle" class="gdr-lbl">SURROUNDING EAST GERMANY (GDR)</text>
+    <text x="195" y="538" text-anchor="middle" class="gdr-lbl">POTSDAM · EAST GERMANY (GDR)</text>
+
+    <!-- French Sector -->
+    <text x="404" y="156" text-anchor="middle" class="sector-lbl" fill="#1d4ed8">FRENCH SECTOR</text>
+    <text x="404" y="170" text-anchor="middle" class="sector-sub">(West Berlin)</text>
+
+    <!-- British Sector -->
+    <text x="366" y="294" text-anchor="middle" class="sector-lbl" fill="#3730a3">BRITISH SECTOR</text>
+    <text x="366" y="308" text-anchor="middle" class="sector-sub">(West Berlin)</text>
+
+    <!-- US Sector -->
+    <text x="394" y="454" text-anchor="middle" class="sector-lbl" fill="#0369a1">AMERICAN SECTOR</text>
+    <text x="394" y="468" text-anchor="middle" class="sector-sub">(West Berlin)</text>
+
+    <!-- Soviet Sector -->
+    <text x="678" y="238" text-anchor="middle" class="sector-lbl" fill="#991b1b">SOVIET SECTOR</text>
+    <text x="678" y="254" text-anchor="middle" class="sector-lbl" fill="#991b1b">(EAST BERLIN)</text>
+    <text x="678" y="269" text-anchor="middle" class="sector-sub">Capital of Communist GDR</text>
+
+    <!-- Water Labels -->
+    <text x="678" y="370" class="water-lbl" transform="rotate(24,678,370)">R. Spree</text>
+
+    <!-- ================= KEY AIRFIELDS & FLASHPOINTS ================= -->
+    <!-- Tegel Airport (French Sector) -->
+    <g transform="translate(378, 200)">
+      <circle cx="0" cy="0" r="5.5" fill="#1d4ed8" stroke="#ffffff" stroke-width="1.8" />
+      <text x="10" y="4" class="poi-lbl">Tegel Airfield</text>
+    </g>
+
+    <!-- Gatow Airfield (British Sector) -->
+    <g transform="translate(284, 342)">
+      <circle cx="0" cy="0" r="5" fill="#4338ca" stroke="#ffffff" stroke-width="1.8" />
+      <text x="9" y="4" class="poi-sub">Gatow Airfield</text>
+    </g>
+
+    <!-- Tempelhof Airport (US Sector) -->
+    <g transform="translate(454, 386)">
+      <circle cx="0" cy="0" r="5.5" fill="#0284c7" stroke="#ffffff" stroke-width="1.8" />
+      <text x="0" y="16" text-anchor="middle" class="poi-lbl">Tempelhof Airport</text>
+    </g>
+
+    <!-- Schöneberg Rathaus (JFK June 1963) -->
+    <g transform="translate(402, 366)">
+      <circle cx="0" cy="0" r="4.5" fill="#0f172a" stroke="#ffffff" stroke-width="1.6" />
+      <text x="-8" y="-7" text-anchor="end" class="poi-lbl">Schöneberg Rathaus</text>
+      <text x="-8" y="5" text-anchor="end" class="poi-sub">JFK Speech (June 1963)</text>
+    </g>
+
+    <!-- Bernauer Straße -->
+    <g transform="translate(486, 216)">
+      <circle cx="0" cy="0" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.8" />
+      <text x="11" y="-2" class="poi-lbl">Bernauer Straße</text>
+      <text x="11" y="10" class="poi-sub">Split homes &amp; escapes</text>
+    </g>
+
+    <!-- Brandenburg Gate -->
+    <g transform="translate(484, 282)">
+      <rect x="-5" y="-5" width="10" height="10" rx="2" fill="#f59e0b" stroke="#0f172a" stroke-width="1.6" />
+      <text x="12" y="2" class="poi-lbl">Brandenburg Gate</text>
+    </g>
+
+    <!-- Checkpoint Charlie (Oct 1961 Tank Standoff) -->
+    <g transform="translate(494, 314)">
+      <circle cx="0" cy="0" r="6.5" fill="#dc2626" stroke="#fbbf24" stroke-width="2.2" />
+      <text x="13" y="2" class="poi-lbl" fill="#991b1b">Checkpoint Charlie</text>
+      <text x="13" y="14" class="poi-sub">US–Soviet tank standoff (Oct 1961)</text>
+    </g>
+
+    <!-- Outer Ring Wall Callout Pill -->
+    <g transform="translate(414, 514)">
+      <rect x="-134" y="-11" width="268" height="20" rx="10" fill="#991b1b" stroke="#ffffff" stroke-width="1.4" />
+      <text x="0" y="3" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="9.5" font-weight="800" fill="#ffffff" letter-spacing="0.5">112 KM OUTER WALL SEALING GDR BORDER</text>
+    </g>
+
+    <!-- ================= CALLOUT CARDS ================= -->
+    <!-- Card 1: The Brain Drain & 1958–61 Crisis -->
+    <g filter="url(#card-shadow)">
+      <rect x="14" y="76" width="242" height="176" rx="7" fill="#ffffff" fill-opacity="0.96" stroke="#cbd5e1" stroke-width="1.3" />
+      <rect x="14" y="76" width="242" height="25" rx="7" fill="#0f172a" />
+      <rect x="14" y="91" width="242" height="10" fill="#0f172a" />
+      <text x="25" y="93" class="card-hdr">REFUGEE "BRAIN DRAIN" (1949–61)</text>
+
+      <text x="25" y="118" class="card-bold" fill="#991b1b">2.7–3.0 Million East Germans Fled</text>
+      <text x="25" y="132" class="card-txt">Doctors, engineers &amp; skilled youth crossed</text>
+      <text x="25" y="145" class="card-txt">openly into capitalist West Berlin ("Window</text>
+      <text x="25" y="158" class="card-txt">to the West") to fly out to West Germany.</text>
+
+      <line x1="25" y1="168" x2="244" y2="168" stroke="#e2e8f0" stroke-width="1" />
+      <text x="25" y="183" class="card-bold">Nov 1958: Khrushchev’s Ultimatum</text>
+      <text x="25" y="196" class="card-txt">6 months for Western troops to leave.</text>
+      <text x="25" y="213" class="card-bold" fill="#b91c1c">13 Aug 1961: Border Sealed Overnight</text>
+      <text x="25" y="226" class="card-txt">Barbed wire → 3.6m concrete Wall, 300+</text>
+      <text x="25" y="239" class="card-txt">watchtowers &amp; mined "Death Strip".</text>
+    </g>
+
+    <!-- Card 2: Edexcel Exam Takeaway -->
+    <g filter="url(#card-shadow)">
+      <rect x="14" y="266" width="222" height="132" rx="7" fill="#ffffff" fill-opacity="0.96" stroke="#cbd5e1" stroke-width="1.3" />
+      <rect x="14" y="266" width="222" height="24" rx="7" fill="#0f172a" />
+      <rect x="14" y="280" width="222" height="10" fill="#0f172a" />
+      <text x="25" y="282" class="card-hdr">EDEXCEL EXAM TAKEAWAY</text>
+
+      <text x="25" y="306" class="card-bold" fill="#1e3a8a">1. Eased Immediate War Risk:</text>
+      <text x="25" y="319" class="card-txt">Stopped GDR collapse; JFK kept West</text>
+      <text x="25" y="332" class="card-txt">Berlin ("better a wall than a war").</text>
+      <text x="25" y="351" class="card-bold" fill="#991b1b">2. Western Moral Victory:</text>
+      <text x="25" y="364" class="card-txt">Proved communism had to lock its own</text>
+      <text x="25" y="377" class="card-txt">people in ("Ich bin ein Berliner", 1963).</text>
+    </g>
+
+    <!-- North Arrow & Scale Bar -->
+    <g filter="url(#card-shadow)">
+      <rect x="730" y="508" width="136" height="42" rx="6" fill="#ffffff" fill-opacity="0.95" stroke="#cbd5e1" stroke-width="1.2" />
+      <g transform="translate(748, 530)">
+        <polygon points="0,-11 5,5 0,2" fill="#0f172a" />
+        <polygon points="0,-11 -5,5 0,2" fill="#94a3b8" stroke="#0f172a" stroke-width="0.6" />
+        <text x="0" y="14" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.5" font-weight="800" fill="#0f172a">N</text>
+      </g>
+      <line x1="762" y1="514" x2="762" y2="544" stroke="#e2e8f0" stroke-width="1" />
+      <rect x="772" y="532" width="36" height="5" fill="#0f172a" stroke="#0f172a" stroke-width="0.7" />
+      <rect x="808" y="532" width="36" height="5" fill="#ffffff" stroke="#0f172a" stroke-width="0.7" />
+      <text x="772" y="527" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.5" font-weight="700" fill="#334155">0</text>
+      <text x="808" y="527" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.5" font-weight="700" fill="#334155">5</text>
+      <text x="844" y="527" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="8.5" font-weight="700" fill="#0f172a">10 km</text>
+    </g>
+  </g>
+
+  <!-- Neatline -->
+  <rect x="0.5" y="62" width="879" height="500" fill="none" stroke="#334155" stroke-width="1" />
+
+  <!-- TOP HEADER BAR -->
+  <g id="atlas-header">
+    <rect x="0" y="0" width="880" height="62" fill="#0f172a" />
+    <line x1="0" y1="61" x2="880" y2="61" stroke="#f59e0b" stroke-width="2" />
+    <text x="20" y="22" class="banner-overline">EDEXCEL GCSE HISTORY · SUPERPOWER RELATIONS (KT 2.1)</text>
+    <text x="20" y="46" class="banner-title">Divided Berlin &amp; Construction of the Berlin Wall</text>
+    <rect x="716" y="17" width="144" height="28" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1.2" />
+    <text x="788" y="35" text-anchor="middle" class="banner-pill-text">13 AUGUST 1961</text>
+  </g>
+
+  <!-- BOTTOM LEGEND STRIP -->
+  <g id="atlas-legend">
+    <rect x="0" y="562" width="880" height="78" fill="#f8fafc" />
+    <line x1="0" y1="562" x2="880" y2="562" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Swatch 1 -->
+    <rect x="20" y="576" width="18" height="13" rx="2.5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.3" />
+    <text x="45" y="586" class="legend-txt">Allied West Berlin Sectors</text>
+    <text x="45" y="598" class="legend-sub">French (N), British (W), US (S)</text>
+
+    <!-- Swatch 2 -->
+    <rect x="230" y="576" width="18" height="13" rx="2.5" fill="#fecaca" stroke="#dc2626" stroke-width="1.3" />
+    <text x="255" y="586" class="legend-txt">Soviet Sector (East Berlin)</text>
+    <text x="255" y="598" class="legend-sub">Plus surrounding East Germany (GDR)</text>
+
+    <!-- Swatch 3 -->
+    <line x1="454" y1="582" x2="482" y2="582" stroke="#b91c1c" stroke-width="4.4" />
+    <line x1="454" y1="582" x2="482" y2="582" stroke="#450a0a" stroke-width="7" stroke-dasharray="2,8" />
+    <text x="490" y="586" class="legend-txt">Berlin Wall Ring (155 km total)</text>
+    <text x="490" y="598" class="legend-sub">43 km inner split + 112 km outer ring</text>
+
+    <!-- Swatch 4 -->
+    <circle cx="692" cy="582" r="5.5" fill="#dc2626" stroke="#fbbf24" stroke-width="2" />
+    <text x="705" y="586" class="legend-txt">Key Flashpoint / Crossing</text>
+    <text x="705" y="598" class="legend-sub">Checkpoint Charlie · Airfields</text>
+
+    <!-- Bottom Note Row -->
+    <text x="20" y="624" class="legend-sub" font-weight="700" fill="#334155">Note: West Berlin lay 100 miles (160 km) deep inside Communist East Germany (GDR), connected to West Germany (FRG) by three Allied air corridors, autobahns, and rail lines.</text>
+  </g>
+</svg>

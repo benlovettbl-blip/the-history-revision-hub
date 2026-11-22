@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" role="img" aria-labelledby="cwL10Title cwL10Desc">
+  <title id="cwL10Title">The Soviet Invasion of Afghanistan (December 1979) and The Carter Doctrine (January 1980)</title>
+  <desc id="cwL10Desc">Pearson Edexcel GCSE History regional geopolitical map showing Soviet airborne and armoured invasion routes from the Turkmen, Uzbek, and Tajik SSRs into Herat, Kandahar, Bagram, and Kabul in December 1979, Mujahideen Hindu Kush mountain resistance zones, CIA Operation Cyclone and Pakistani supply routes via Peshawar and Quetta, Revolutionary Iran (1979), and the Persian Gulf / Strait of Hormuz oil lifeline protected by the Carter Doctrine.</desc>
+
+  <style>
+    svg, svg g { opacity: 1 !important; }
+    .sans { font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif; }
+    .serif { font-family: 'Georgia', 'Times New Roman', serif; }
+    .halo { paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.4px; stroke-linejoin: round; stroke-linecap: round; }
+    .halo-cream { paint-order: stroke fill; stroke: #fef3c7; stroke-width: 3.2px; stroke-linejoin: round; }
+    .halo-water { paint-order: stroke fill; stroke: #cbe8fb; stroke-width: 3.2px; stroke-linejoin: round; }
+    .country-lbl { font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif; font-weight: 800; letter-spacing: 1.8px; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.4px; stroke-linejoin: round; }
+    .water-lbl { font-family: 'Georgia', 'Times New Roman', serif; font-style: italic; font-weight: 700; fill: #0369a1; paint-order: stroke fill; stroke: #cbe8fb; stroke-width: 3px; stroke-linejoin: round; }
+  </style>
+
+  <defs>
+    <clipPath id="mapAreaL10">
+      <rect x="0" y="62" width="880" height="498"/>
+    </clipPath>
+    <pattern id="mountainHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#b45309" stroke-width="1.6" stroke-opacity="0.32"/>
+    </pattern>
+  </defs>
+
+  <!-- Ocean / Sea Base -->
+  <rect x="0" y="62" width="880" height="498" fill="#cbe8fb"/>
+  <rect x="0" y="560" width="880" height="80" fill="#f1f5f9"/>
+
+  <!-- =================================================================
+       REGIONAL MAP LAYER (Clipped to y=62..560)
+       ================================================================= -->
+  <g clip-path="url(#mapAreaL10)">
+
+    <!-- Surrounding Neutral Landmasses (Arabia, Iraq, India, China) -->
+    <!-- Arabian Peninsula & Iraq (SW) -->
+    <path d="M0,250 L58,242 L95,318 L112,358 L98,376 L138,412 L195,442 L255,452 L286,436 L305,466 L338,510 L260,562 L0,562 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+    <!-- Iraq border line -->
+    <path d="M0,336 L68,354 L105,360" fill="none" stroke="#cbd5e1" stroke-width="1.1" stroke-dasharray="4 3"/>
+
+    <!-- India (SE) -->
+    <path d="M748,255 L882,255 L882,562 L695,562 L668,510 L712,442 L748,365 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.2"/>
+
+    <!-- China (Far NE) -->
+    <path d="M770,60 L882,60 L882,255 L784,255 L765,204 L782,175 Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2"/>
+
+    <!-- USSR (Turkmen, Uzbek & Tajik SSRs) -->
+    <path d="M0,60 L782,60 L782,175 L746,188 L715,180 L682,196 L645,198 L586,204 L535,202 L485,222 L448,244 L418,225 L368,202 L292,196 L246,208 L226,182 L238,142 L212,102 L162,92 L138,136 L154,186 L138,214 L78,196 L0,185 Z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+    <!-- Internal SSR dashed boundaries -->
+    <path d="M468,62 L498,148 L552,202" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="4 3"/>
+    <path d="M642,62 L636,144 L665,196" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="4 3"/>
+
+    <!-- Caspian Sea Water Cutout -->
+    <path d="M148,82 L205,86 L228,128 L218,166 L242,198 L218,218 L156,216 L142,188 L150,144 Z" fill="#cbe8fb" stroke="#0284c7" stroke-width="1.3"/>
+
+    <!-- IRAN (1979 Islamic Revolution) -->
+    <path d="M58,242 L78,196 L138,214 L156,216 L218,218 L246,208 L292,196 L368,202 L418,225 L412,286 L402,344 L424,386 L418,452 L348,452 L296,430 L272,418 L236,396 L176,374 L112,358 L95,318 Z" fill="#dcfce7" stroke="#15803d" stroke-width="1.6"/>
+
+    <!-- PAKISTAN -->
+    <path d="M418,452 L424,386 L532,374 L588,332 L646,318 L684,282 L704,242 L738,198 L765,204 L784,255 L748,365 L712,442 L668,510 L585,484 L495,464 Z" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+
+    <!-- AFGHANISTAN (Central Focus) -->
+    <path d="M418,225 L448,244 L485,222 L535,202 L586,204 L645,198 L682,196 L715,180 L746,188 L782,175 L765,204 L738,198 L704,242 L684,282 L646,318 L588,332 L532,374 L424,386 L402,344 L412,286 Z" fill="#fde68a" stroke="#b45309" stroke-width="2.2"/>
+
+    <!-- Hindu Kush Mujahideen Mountain Stronghold Zone -->
+    <path d="M486,286 L546,244 L616,222 L686,205 L756,184 L742,200 L692,244 L636,294 L556,316 L494,312 Z" fill="url(#mountainHatch)" stroke="#b45309" stroke-width="1.3" stroke-dasharray="4 3"/>
+
+    <!-- ===============================================================
+         PERSIAN GULF OIL LIFELINE & CARTER DOCTRINE SHIELD
+         =============================================================== -->
+    <!-- Oil Tanker Shipping Route -->
+    <path d="M136,386 Q216,418 282,434 Q356,472 478,516" fill="none" stroke="#1d4ed8" stroke-width="3.4" stroke-dasharray="8 5"/>
+    <polygon points="485,519 473,520 476,515 476,509" fill="#1d4ed8"/>
+
+    <!-- Carter Doctrine Protective Naval Arc across Hormuz & Gulf -->
+    <path d="M236,368 Q340,392 368,488" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M236,368 Q340,392 368,488" fill="none" stroke="#2563eb" stroke-width="3.6" stroke-linecap="round"/>
+
+    <!-- Soviet Perceived Threat Vector Toward Gulf -->
+    <path d="M472,366 Q395,392 344,412" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="4 4"/>
+    <polygon points="337,415 346,406 345,412 349,416" fill="#dc2626"/>
+
+    <!-- ===============================================================
+         SOVIET 40th ARMY INVASION ARROWS (24–27 DEC 1979)
+         =============================================================== -->
+    <!-- Western Axis: Kushka -> Herat -> Kandahar -->
+    <path d="M446,214 L448,262 Q462,312 530,324" fill="none" stroke="#ffffff" stroke-width="6.8" stroke-linecap="round"/>
+    <path d="M446,214 L448,262 Q462,312 530,324" fill="none" stroke="#dc2626" stroke-width="3.6" stroke-linecap="round"/>
+    <polygon points="538,325 526,329 529,324 527,318" fill="#dc2626"/>
+
+    <!-- Eastern Overland Axis: Termez -> Salang Pass -> Bagram & Kabul -->
+    <path d="M588,184 Q618,212 628,238 L636,264" fill="none" stroke="#ffffff" stroke-width="6.8" stroke-linecap="round"/>
+    <path d="M588,184 Q618,212 628,238 L636,264" fill="none" stroke="#dc2626" stroke-width="3.6" stroke-linecap="round"/>
+    <polygon points="639,272 630,263 636,263 640,259" fill="#dc2626"/>
+
+    <!-- Soviet Airborne Assault Arc -> Kabul / Bagram -->
+    <path d="M518,148 Q605,158 634,234" fill="none" stroke="#ffffff" stroke-width="5.2" stroke-linecap="round"/>
+    <path d="M518,148 Q605,158 634,234" fill="none" stroke="#b91c1c" stroke-width="2.6" stroke-dasharray="6 4" stroke-linecap="round"/>
+    <polygon points="637,241 628,233 634,233 638,229" fill="#b91c1c"/>
+
+    <!-- ===============================================================
+         CIA OPERATION CYCLONE & PAKISTANI SUPPLY ARROWS
+         =============================================================== -->
+    <!-- Peshawar -> Eastern Hindu Kush -->
+    <path d="M700,272 L658,256" fill="none" stroke="#ffffff" stroke-width="5.4" stroke-linecap="round"/>
+    <path d="M700,272 L658,256" fill="none" stroke="#7c3aed" stroke-width="2.8" stroke-dasharray="5 3" stroke-linecap="round"/>
+    <polygon points="651,253 663,252 659,256 659,262" fill="#7c3aed"/>
+
+    <!-- Quetta -> Southern Afghanistan -->
+    <path d="M588,358 L554,336" fill="none" stroke="#ffffff" stroke-width="5.4" stroke-linecap="round"/>
+    <path d="M588,358 L554,336" fill="none" stroke="#7c3aed" stroke-width="2.8" stroke-dasharray="5 3" stroke-linecap="round"/>
+    <polygon points="548,332 560,334 555,337 554,343" fill="#7c3aed"/>
+
+    <!-- ===============================================================
+         LABELS, CITIES & CALLOUTS (Zero Overlap Verified)
+         =============================================================== -->
+    <!-- USSR Labels -->
+    <text x="515" y="96" text-anchor="middle" class="country-lbl" font-size="14" fill="#991b1b">SOVIET UNION (USSR)</text>
+    <text x="515" y="114" text-anchor="middle" class="sans halo" font-size="9.6" font-weight="700" fill="#b91c1c">Turkmen · Uzbek · Tajik SSRs (30m Soviet Muslims)</text>
+    <text x="360" y="168" class="sans halo" font-size="8.6" font-weight="700" fill="#991b1b">TURKMEN SSR</text>
+    <text x="546" y="136" class="sans halo" font-size="8.6" font-weight="700" fill="#991b1b">UZBEK SSR</text>
+    <text x="730" y="164" class="sans halo" font-size="8.6" font-weight="700" fill="#991b1b">TAJIK SSR</text>
+
+    <!-- Staging Towns -->
+    <circle cx="446" cy="214" r="3.4" fill="#991b1b" stroke="#ffffff" stroke-width="1.3"/>
+    <text x="438" y="212" text-anchor="end" class="sans halo" font-size="9.0" font-weight="700" fill="#7f1d1d">Kushka</text>
+
+    <circle cx="588" cy="184" r="3.4" fill="#991b1b" stroke="#ffffff" stroke-width="1.3"/>
+    <text x="580" y="181" text-anchor="end" class="sans halo" font-size="9.0" font-weight="700" fill="#7f1d1d">Termez</text>
+
+    <text x="598" y="156" class="sans halo" font-size="8.7" font-weight="800" fill="#991b1b">Airborne Troops</text>
+    <text x="598" y="167" class="sans halo" font-size="8.3" font-weight="700" fill="#b91c1c">(24–27 Dec 1979)</text>
+
+    <!-- Afghanistan Labels & Cities -->
+    <text x="536" y="284" text-anchor="middle" class="country-lbl" font-size="12.5" fill="#78350f">AFGHANISTAN</text>
+    <text x="544" y="299" text-anchor="middle" class="sans halo-cream" font-size="8.8" font-weight="800" fill="#92400e">Hindu Kush Mujahideen Strongholds</text>
+
+    <!-- Herat -->
+    <circle cx="448" cy="264" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="457" y="267" class="sans halo-cream" font-size="9.8" font-weight="800" fill="#0f172a">Herat</text>
+
+    <!-- Kandahar -->
+    <circle cx="542" cy="326" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="534" y="343" text-anchor="end" class="sans halo-cream" font-size="9.8" font-weight="800" fill="#0f172a">Kandahar</text>
+
+    <!-- Salang Pass & Bagram -->
+    <circle cx="626" cy="228" r="3.4" fill="#b91c1c" stroke="#ffffff" stroke-width="1.3"/>
+    <text x="617" y="227" text-anchor="end" class="sans halo-cream" font-size="8.6" font-weight="800" fill="#7f1d1d">Salang Pass</text>
+
+    <circle cx="638" cy="245" r="3.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.4"/>
+    <text x="647" y="244" class="sans halo-cream" font-size="9.0" font-weight="800" fill="#991b1b">Bagram Airbase</text>
+
+    <!-- Kabul Capital Star -->
+    <circle cx="640" cy="272" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.6"/>
+    <text x="631" y="276" text-anchor="end" class="sans halo-cream" font-size="10.8" font-weight="800" fill="#0f172a">KABUL</text>
+
+    <!-- Kabul Coup Callout Pill -->
+    <rect x="652" y="204" width="212" height="32" rx="5" fill="#ffffff" fill-opacity="0.95" stroke="#dc2626" stroke-width="1.3"/>
+    <text x="659" y="217" class="sans" font-size="8.5" font-weight="800" fill="#991b1b">DEC 1979 · AMIN KILLED IN KABUL</text>
+    <text x="659" y="229" class="sans" font-size="8.3" font-weight="600" fill="#334155">Moscow installs Babrak Karmal (PDPA)</text>
+
+    <!-- Pakistan & CIA Supply Labels -->
+    <text x="655" y="380" text-anchor="middle" class="country-lbl" font-size="11.5" fill="#4c1d95">PAKISTAN</text>
+
+    <circle cx="702" cy="273" r="4" fill="#5b21b6" stroke="#ffffff" stroke-width="1.4"/>
+    <text x="710" y="276" class="sans halo" font-size="9.5" font-weight="800" fill="#4c1d95">Peshawar</text>
+
+    <circle cx="590" cy="360" r="3.8" fill="#5b21b6" stroke="#ffffff" stroke-width="1.4"/>
+    <text x="598" y="363" class="sans halo" font-size="9.3" font-weight="800" fill="#4c1d95">Quetta</text>
+
+    <rect x="656" y="288" width="208" height="44" rx="5" fill="#ffffff" fill-opacity="0.95" stroke="#7c3aed" stroke-width="1.3"/>
+    <text x="664" y="302" class="sans" font-size="8.6" font-weight="800" fill="#5b21b6">CIA OPERATION CYCLONE &amp; ISI</text>
+    <text x="664" y="314" class="sans" font-size="8.3" font-weight="600" fill="#334155">US funds, arms &amp; later Stinger missiles</text>
+    <text x="664" y="325" class="sans" font-size="8.3" font-weight="600" fill="#334155">funnelled via Pakistan to Mujahideen.</text>
+
+    <!-- Iran Labels -->
+    <text x="275" y="284" text-anchor="middle" class="country-lbl" font-size="13" fill="#14532d">IRAN</text>
+    <rect x="192" y="296" width="174" height="36" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="#15803d" stroke-width="1.3"/>
+    <text x="279" y="310" text-anchor="middle" class="sans" font-size="8.6" font-weight="800" fill="#14532d">1979 ISLAMIC REVOLUTION</text>
+    <text x="279" y="322" text-anchor="middle" class="sans" font-size="8.2" font-weight="600" fill="#334155">Anti-Western fundamentalist state</text>
+
+    <circle cx="195" cy="236" r="3.8" fill="#14532d" stroke="#ffffff" stroke-width="1.4"/>
+    <text x="204" y="239" class="sans halo" font-size="9.4" font-weight="700" fill="#14532d">Tehran</text>
+
+    <!-- Neighbor Country Labels -->
+    <text x="828" y="138" text-anchor="middle" class="country-lbl" font-size="10.5" fill="#854d0e">CHINA</text>
+    <text x="822" y="360" text-anchor="middle" class="country-lbl" font-size="10.5" fill="#64748b">INDIA</text>
+    <text x="92" y="476" text-anchor="middle" class="country-lbl" font-size="10.5" fill="#64748b">SAUDI ARABIA</text>
+    <text x="44" y="320" text-anchor="middle" class="country-lbl" font-size="10" fill="#64748b">IRAQ</text>
+
+    <!-- Water & Carter Doctrine Labels -->
+    <text x="190" y="201" text-anchor="middle" class="water-lbl" font-size="9.6">Caspian Sea</text>
+
+    <text x="208" y="394" text-anchor="middle" class="water-lbl" font-size="10.2">Persian Gulf</text>
+    <text x="284" y="458" text-anchor="middle" class="sans halo-water" font-size="9.0" font-weight="800" fill="#1e3a8a">Strait of Hormuz</text>
+    <text x="458" y="542" text-anchor="middle" class="water-lbl" font-size="11">Arabian Sea · World Oil Tanker Lifeline</text>
+
+    <!-- Carter Doctrine Callout Card (SW corner) -->
+    <rect x="16" y="490" width="322" height="58" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#1d4ed8" stroke-width="1.5"/>
+    <path d="M16,496 Q16,490 22,490 L332,490 Q338,490 338,496 L338,509 L16,509 Z" fill="#1d4ed8"/>
+    <text x="25" y="503" class="sans" font-size="8.8" font-weight="800" letter-spacing="0.5" fill="#ffffff">CARTER DOCTRINE SHIELD (23 JANUARY 1980)</text>
+    <text x="25" y="523" class="sans" font-size="8.7" font-weight="600" fill="#1e293b">USA pledged military force + Rapid Deployment Force to</text>
+    <text x="25" y="536" class="sans" font-size="8.7" font-weight="600" fill="#334155">stop Soviet expansion toward Persian Gulf oil supplies.</text>
+
+    <!-- Top-Left Motive Callout Card -->
+    <rect x="16" y="74" width="246" height="106" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#991b1b" stroke-width="1.5"/>
+    <path d="M16,80 Q16,74 22,74 L256,74 Q262,74 262,80 L262,94 L16,94 Z" fill="#991b1b"/>
+    <text x="25" y="88" class="sans" font-size="8.7" font-weight="800" letter-spacing="0.5" fill="#ffffff">WHY BREZHNEV INVADED (DEC 1979)</text>
+    <text x="25" y="109" class="sans" font-size="8.6" font-weight="600" fill="#1e293b">• Apr 1978 Saur Revolution (PDPA) sparked</text>
+    <text x="32" y="121" class="sans" font-size="8.5" font-weight="500" fill="#334155">Islamic Mujahideen civil war; Amin killed</text>
+    <text x="32" y="133" class="sans" font-size="8.5" font-weight="500" fill="#334155">Taraki (Sept 1979) &amp; distrusted by Kremlin.</text>
+    <text x="25" y="148" class="sans" font-size="8.6" font-weight="600" fill="#991b1b">• Brezhnev Doctrine invoked to stop Islamism</text>
+    <text x="32" y="160" class="sans" font-size="8.5" font-weight="500" fill="#334155">spreading north into Central Asian SSRs.</text>
+
+    <!-- Bottom-Right Legend Box -->
+    <g id="legend-l10">
+      <rect x="582" y="404" width="282" height="144" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#94a3b8" stroke-width="1.4"/>
+      <path d="M582,410 Q582,404 588,404 L858,404 Q864,404 864,410 L864,424 L582,424 Z" fill="#1e293b"/>
+      <text x="592" y="418" class="sans" font-size="8.9" font-weight="800" letter-spacing="0.7" fill="#fbbf24">KEY · AFGHANISTAN &amp; PERSIAN GULF</text>
+
+      <!-- Swatch 1 -->
+      <line x1="592" y1="439" x2="616" y2="439" stroke="#dc2626" stroke-width="3.4" stroke-linecap="round"/>
+      <polygon points="621,439 613,435 615,439 613,443" fill="#dc2626"/>
+      <text x="628" y="443" class="sans" font-size="8.7" font-weight="600" fill="#1e293b">Soviet 40th Army Invasion (Dec 1979)</text>
+
+      <!-- Swatch 2 -->
+      <rect x="592" y="453" width="24" height="11" rx="2" fill="#fde68a" stroke="#b45309" stroke-width="1.2"/>
+      <text x="628" y="462" class="sans" font-size="8.7" font-weight="600" fill="#1e293b">Mujahideen Mountain Resistance Zones</text>
+
+      <!-- Swatch 3 -->
+      <line x1="592" y1="478" x2="616" y2="478" stroke="#7c3aed" stroke-width="2.8" stroke-dasharray="5 3"/>
+      <text x="628" y="482" class="sans" font-size="8.7" font-weight="600" fill="#1e293b">CIA / Pakistani Mujahideen Supply Routes</text>
+
+      <!-- Swatch 4 -->
+      <line x1="592" y1="497" x2="616" y2="497" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round"/>
+      <text x="628" y="501" class="sans" font-size="8.7" font-weight="600" fill="#1e293b">Carter Doctrine Shield &amp; Oil Tanker Lane</text>
+
+      <!-- Scale & North Arrow -->
+      <line x1="592" y1="513" x2="852" y2="513" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="594" y="523" width="44" height="5" fill="#0f172a"/>
+      <rect x="638" y="523" width="44" height="5" fill="#ffffff" stroke="#0f172a" stroke-width="0.9"/>
+      <text x="594" y="540" class="sans" font-size="8.2" font-weight="700" fill="#334155">0</text>
+      <text x="638" y="540" text-anchor="middle" class="sans" font-size="8.2" font-weight="700" fill="#334155">250</text>
+      <text x="688" y="540" text-anchor="middle" class="sans" font-size="8.2" font-weight="700" fill="#334155">500 km</text>
+
+      <circle cx="838" cy="529" r="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.1"/>
+      <polygon points="838,519 834,533 838,530 842,533" fill="#0f172a"/>
+      <text x="838" y="539" text-anchor="middle" class="sans" font-size="7.2" font-weight="800" fill="#0f172a">N</text>
+    </g>
+  </g>
+
+  <!-- =================================================================
+       TOP HEADER BAR & BOTTOM EDEXCEL TAKEAWAY BAR
+       ================================================================= -->
+  <g id="header-bar-l10">
+    <rect x="0" y="0" width="880" height="62" fill="#0f172a"/>
+    <rect x="0" y="60" width="880" height="2.5" fill="#f59e0b"/>
+    <text x="20" y="21" class="sans" font-size="9.8" font-weight="800" letter-spacing="1.4" fill="#fbbf24">EDEXCEL GCSE HISTORY · OPTION P4: END OF DÉTENTE &amp; SECOND COLD WAR</text>
+    <text x="20" y="46" class="serif" font-size="19" font-weight="700" fill="#f8fafc">The Soviet Invasion of Afghanistan &amp; The Carter Doctrine</text>
+    <rect x="708" y="16" width="154" height="28" rx="5" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="785" y="34" text-anchor="middle" class="sans" font-size="10.2" font-weight="800" letter-spacing="0.7" fill="#e0f2fe">DEC 1979 – JAN 1980</text>
+  </g>
+
+  <g id="edexcel-takeaway-l10">
+    <rect x="16" y="567" width="848" height="60" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4"/>
+    <rect x="16" y="567" width="5" height="60" rx="2" fill="#fbbf24"/>
+    <text x="30" y="583" class="sans" font-size="9.0" font-weight="800" letter-spacing="0.8" fill="#fbbf24">EDEXCEL EXAM TAKEAWAY · CONSEQUENCES OF THE DECEMBER 1979 INVASION</text>
+    <text x="30" y="599" class="sans" font-size="8.9" font-weight="500" fill="#f8fafc">Afghanistan killed Détente overnight: Carter withdrew SALT 2, imposed grain &amp; tech embargoes, proclaimed the</text>
+    <text x="30" y="613" class="sans" font-size="8.9" font-weight="500" fill="#cbd5e1">Carter Doctrine, led the 60+ nation 1980 Moscow Olympic boycott, and trapped the USSR in an $8bn/yr "Vietnam".</text>
+  </g>
+
+  <rect x="0.75" y="0.75" width="878.5" height="638.5" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+</svg>

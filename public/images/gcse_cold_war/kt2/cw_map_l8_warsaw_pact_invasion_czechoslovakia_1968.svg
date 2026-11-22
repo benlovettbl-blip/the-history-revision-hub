@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="640" viewBox="0 0 880 640" role="img" aria-labelledby="cw-l8-title cw-l8-desc">
+  <title id="cw-l8-title">Operation Danube: The Warsaw Pact Invasion of Czechoslovakia (20–21 August 1968)</title>
+  <desc id="cw-l8-desc">Edexcel GCSE History cartographic map of Operation Danube (20–21 August 1968) showing 500,000 Warsaw Pact troops invading Prague and Bratislava from the Soviet Union, Poland, East Germany, Hungary, and Bulgaria, contrasted with Romania (Ceaușescu) and Yugoslavia (Tito) refusing to participate, alongside NATO West Germany and neutral Austria.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg, svg g { opacity: 1 !important; }
+      .banner-overline { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; fill: #fbbf24; letter-spacing: 2px; }
+      .banner-title { font-family: Georgia, 'Times New Roman', serif; font-size: 19px; font-weight: 700; fill: #ffffff; }
+      .banner-pill-text { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 800; fill: #fde68a; letter-spacing: 1px; }
+      .state-lbl { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 12.5px; font-weight: 800; letter-spacing: 1.8px; paint-order: stroke fill; stroke: rgba(255,255,255,0.88); stroke-width: 3.6px; stroke-linejoin: round; }
+      .state-sub { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 700; paint-order: stroke fill; stroke: rgba(255,255,255,0.9); stroke-width: 3.2px; stroke-linejoin: round; }
+      .city-lbl { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 700; fill: #0f172a; paint-order: stroke fill; stroke: #ffffff; stroke-width: 3.6px; stroke-linejoin: round; }
+      .city-major { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 12.5px; font-weight: 800; fill: #0f172a; paint-order: stroke fill; stroke: #ffffff; stroke-width: 4px; stroke-linejoin: round; }
+      .card-hdr { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.8px; font-weight: 800; fill: #fbbf24; letter-spacing: 1.1px; }
+      .card-bold { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10.3px; font-weight: 800; fill: #0f172a; }
+      .card-txt { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.6px; font-weight: 600; fill: #334155; }
+      .legend-txt { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 10.5px; font-weight: 700; fill: #0f172a; }
+      .legend-sub { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 9.5px; font-weight: 500; fill: #475569; }
+    ]]></style>
+    <clipPath id="map-clip-l8">
+      <rect x="0" y="62" width="880" height="500" />
+    </clipPath>
+    <filter id="card-shadow-l8" x="-8%" y="-8%" width="118%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <!-- MAP VIEWPORT -->
+  <g clip-path="url(#map-clip-l8)">
+    <!-- Base Sea Fill (Baltic North & Adriatic/Black Sea South) -->
+    <rect x="0" y="62" width="880" height="500" fill="#cbe8fb" />
+
+    <!-- ================= POLITICAL POLYGONS (CENTRAL & EASTERN EUROPE, 1968) ================= -->
+
+    <!-- NATO WEST GERMANY (FRG) -->
+    <path d="M 0,62 L 152,62 L 156,98 L 146,138 L 166,184 L 204,218 L 222,254 L 258,308 L 262,344 L 210,356 L 142,366 L 78,362 L 0,352 Z"
+          fill="#dbeafe" stroke="#2563eb" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- SWITZERLAND & ITALY (Neutral / NATO South-West) -->
+    <path d="M 0,352 L 78,362 L 142,366 L 154,412 L 118,434 L 58,432 L 0,418 Z"
+          fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.2" />
+    <path d="M 0,418 L 58,432 L 118,434 L 154,412 L 226,426 L 266,442 L 252,482 L 282,562 L 0,562 Z"
+          fill="#dbeafe" stroke="#64748b" stroke-width="1.2" />
+
+    <!-- AUSTRIA (Neutral State, 1955) -->
+    <path d="M 142,366 L 210,356 L 262,344 L 314,328 L 368,332 L 386,356 L 378,396 L 326,422 L 266,442 L 226,426 L 154,412 Z"
+          fill="#e2e8f0" stroke="#64748b" stroke-width="1.4" stroke-linejoin="round" />
+
+    <!-- EAST GERMANY (GDR — Invading/Mobilised Warsaw Pact Hardliner) -->
+    <path d="M 152,62 L 278,62 L 296,104 L 308,162 L 306,216 L 262,238 L 222,254 L 204,218 L 166,184 L 146,138 L 156,98 Z"
+          fill="#fecaca" stroke="#b91c1c" stroke-width="1.5" stroke-linejoin="round" />
+    <!-- West Berlin Tiny Island Marker inside GDR -->
+    <circle cx="248" cy="148" r="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.6" />
+
+    <!-- POLAND (Invading Warsaw Pact State) -->
+    <path d="M 278,62 L 435,62 L 486,78 L 594,82 L 614,148 L 602,226 L 566,288 L 494,284 L 438,266 L 392,248 L 352,226 L 306,216 L 308,162 L 296,104 Z"
+          fill="#fecaca" stroke="#b91c1c" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- SOVIET UNION (USSR — Leader of Operation Danube) -->
+    <path d="M 552,62 L 880,62 L 880,382 L 832,374 L 786,348 L 742,318 L 654,308 L 584,316 L 566,288 L 602,226 L 614,148 L 594,82 L 552,82 Z"
+          fill="#fca5a5" stroke="#991b1b" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- CZECHOSLOVAKIA (Target of Invasion — Central Highlight) -->
+    <path d="M 222,254 L 262,238 L 306,216 L 352,226 L 392,248 L 438,266 L 494,284 L 566,288 L 584,316 L 548,334 L 492,342 L 438,354 L 386,356 L 368,332 L 314,328 L 262,344 L 258,308 Z"
+          fill="#fff1f2" stroke="#9f1239" stroke-width="2.8" stroke-linejoin="round" />
+
+    <!-- HUNGARY (Invading Warsaw Pact State) -->
+    <path d="M 386,356 L 438,354 L 492,342 L 548,334 L 574,352 L 548,402 L 486,426 L 414,424 L 378,396 Z"
+          fill="#fecaca" stroke="#b91c1c" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- ROMANIA (Warsaw Pact Member that REFUSED to Participate!) -->
+    <path d="M 584,316 L 654,308 L 742,318 L 786,348 L 832,374 L 826,436 L 798,476 L 696,482 L 622,472 L 586,436 L 548,402 L 574,352 L 548,334 Z"
+          fill="#fef08a" stroke="#b45309" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- YUGOSLAVIA (Independent Communist State that Condemned Invasion!) -->
+    <path d="M 266,442 L 326,422 L 378,396 L 414,424 L 486,426 L 548,402 L 586,436 L 622,472 L 614,536 L 576,562 L 422,562 L 348,506 L 298,468 Z"
+          fill="#fde68a" stroke="#b45309" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- BULGARIA (Invading Warsaw Pact State — Southern Contingent) -->
+    <path d="M 622,472 L 696,482 L 798,476 L 814,518 L 792,562 L 614,562 L 614,536 Z"
+          fill="#fecaca" stroke="#b91c1c" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Bold Iron Curtain Line (NATO FRG / Neutral Austria vs Warsaw Pact) -->
+    <path d="M 152,62 L 156,98 L 146,138 L 166,184 L 204,218 L 222,254 L 258,308 L 262,344"
+          fill="none" stroke="#1e293b" stroke-width="3.2" stroke-dasharray="7,4" />
+
+    <!-- ================= OPERATION DANUBE INVASION ARROWS (500,000 TROOPS, 20–21 AUG 1968) ================= -->
+    <g>
+      <!-- 1. From East Germany (GDR) toward NW Bohemia / Prague -->
+      <path d="M 246,186 Q 268,224 294,258" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" />
+      <path d="M 246,186 Q 268,224 294,258" fill="none" stroke="#b91c1c" stroke-width="3.8" stroke-linecap="round" />
+      <polygon points="300,266 286,259 297,250" fill="#b91c1c" />
+
+      <!-- 2. From Poland (West Silesia) into Prague -->
+      <path d="M 362,168 Q 340,214 318,256" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" />
+      <path d="M 362,168 Q 340,214 318,256" fill="none" stroke="#b91c1c" stroke-width="4" stroke-linecap="round" />
+      <polygon points="313,265 313,249 325,256" fill="#b91c1c" />
+
+      <!-- 3. From Poland (Kraków/Katowice) into Northern Moravia / Ostrava -->
+      <path d="M 468,196 Q 454,238 438,284" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+      <path d="M 468,196 Q 454,238 438,284" fill="none" stroke="#b91c1c" stroke-width="3.6" stroke-linecap="round" />
+      <polygon points="434,294 432,278 445,283" fill="#b91c1c" />
+
+      <!-- 4. From USSR (Main Eastern Ground Thrust via Kosice/Slovakia) -->
+      <path d="M 678,258 Q 608,288 524,312" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linecap="round" />
+      <path d="M 678,258 Q 608,288 524,312" fill="none" stroke="#991b1b" stroke-width="4.8" stroke-linecap="round" />
+      <polygon points="512,315 525,304 528,318" fill="#991b1b" />
+
+      <!-- 5. Soviet Airborne Seizure of Prague Ruzyňe Airport (Dashed Arc) -->
+      <path d="M 684,186 Q 495,152 320,262" fill="none" stroke="#ffffff" stroke-width="5" />
+      <path d="M 684,186 Q 495,152 320,262" fill="none" stroke="#991b1b" stroke-width="2.8" stroke-dasharray="7,4" />
+      <polygon points="312,267 320,254 328,265" fill="#991b1b" />
+
+      <!-- 6. From Hungary into Bratislava & Southern Slovakia -->
+      <path d="M 458,396 Q 434,372 412,350" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" />
+      <path d="M 458,396 Q 434,372 412,350" fill="none" stroke="#b91c1c" stroke-width="3.8" stroke-linecap="round" />
+      <polygon points="404,343 419,348 410,358" fill="#b91c1c" />
+
+      <!-- 7. Bulgarian Contingent Airlifted via Soviet Ukraine (Bypassing Romania!) -->
+      <path d="M 744,506 C 858,448 858,308 724,274" fill="none" stroke="#b91c1c" stroke-width="2.4" stroke-dasharray="5,4" />
+      <polygon points="714,272 728,268 725,280" fill="#b91c1c" />
+    </g>
+
+    <!-- ================= COUNTRY & CITY LABELS ================= -->
+    <!-- NATO / Neutral -->
+    <text x="92" y="252" text-anchor="middle" class="state-lbl" fill="#1e40af">WEST GERMANY</text>
+    <text x="92" y="267" text-anchor="middle" class="state-sub" fill="#1e3a8a">(FRG · NATO)</text>
+    <text x="232" y="372" text-anchor="middle" class="state-lbl" fill="#475569">AUSTRIA</text>
+    <text x="232" y="385" text-anchor="middle" class="state-sub" fill="#475569">(Neutral, 1955)</text>
+
+    <!-- Invading Warsaw Pact States -->
+    <text x="218" y="122" text-anchor="middle" class="state-lbl" fill="#991b1b">EAST</text>
+    <text x="218" y="137" text-anchor="middle" class="state-lbl" fill="#991b1b">GERMANY</text>
+    <text x="466" y="134" text-anchor="middle" class="state-lbl" fill="#991b1b">POLAND</text>
+    <text x="466" y="148" text-anchor="middle" class="state-sub" fill="#7f1d1d">(Gomułka · Invaded)</text>
+
+    <text x="752" y="152" text-anchor="middle" class="state-lbl" fill="#7f1d1d" font-size="14">SOVIET UNION (USSR)</text>
+    <text x="752" y="168" text-anchor="middle" class="state-sub" fill="#7f1d1d">Brezhnev · Led 500,000-Troop Invasion</text>
+    <text x="536" y="192" text-anchor="middle" class="state-sub" fill="#991b1b">Soviet Airborne Seizure (Ruzyňe Airport)</text>
+
+    <text x="492" y="384" text-anchor="middle" class="state-lbl" fill="#991b1b">HUNGARY</text>
+    <text x="492" y="397" text-anchor="middle" class="state-sub" fill="#7f1d1d">(Kádár · Invaded)</text>
+
+    <text x="712" y="528" text-anchor="middle" class="state-lbl" fill="#991b1b">BULGARIA</text>
+    <text x="712" y="542" text-anchor="middle" class="state-sub" fill="#7f1d1d">(Sent troops via USSR)</text>
+
+    <!-- Refusing Communist States -->
+    <text x="694" y="396" text-anchor="middle" class="state-lbl" fill="#92400e">ROMANIA</text>
+    <text x="694" y="411" text-anchor="middle" class="state-sub" fill="#92400e">Ceaușescu · WARSAW PACT</text>
+    <text x="694" y="424" text-anchor="middle" class="state-sub" fill="#b45309">REFUSED &amp; CONDEMNED!</text>
+
+    <text x="478" y="492" text-anchor="middle" class="state-lbl" fill="#92400e">YUGOSLAVIA</text>
+    <text x="478" y="506" text-anchor="middle" class="state-sub" fill="#92400e">Tito · Independent Communist</text>
+    <text x="478" y="519" text-anchor="middle" class="state-sub" fill="#b45309">Condemned Invasion</text>
+
+    <!-- Czechoslovakia & Key Cities -->
+    <text x="394" y="308" text-anchor="middle" class="state-lbl" fill="#881337" font-size="13">CZECHOSLOVAKIA</text>
+
+    <!-- Prague -->
+    <circle cx="306" cy="274" r="6" fill="#fbbf24" stroke="#881337" stroke-width="2.2" />
+    <text x="296" y="292" text-anchor="end" class="city-major" fill="#881337">PRAGUE</text>
+
+    <!-- Bratislava -->
+    <circle cx="394" cy="338" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.6" />
+    <text x="386" y="350" text-anchor="end" class="city-lbl">Bratislava</text>
+
+    <!-- Čierna nad Tisou -->
+    <circle cx="556" cy="316" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1.5" />
+    <text x="564" y="330" class="city-lbl" font-size="9.8">Čierna nad Tisou</text>
+
+    <!-- Other Capitals -->
+    <circle cx="254" cy="148" r="3.2" fill="#991b1b" />
+    <text x="264" y="152" class="city-lbl" font-size="10">East Berlin</text>
+    <circle cx="514" cy="158" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1.4" />
+    <text x="522" y="162" class="city-lbl">Warsaw</text>
+    <circle cx="468" cy="368" r="3.8" fill="#0f172a" stroke="#ffffff" stroke-width="1.4" />
+    <text x="476" y="370" class="city-lbl" font-size="10">Budapest</text>
+    <circle cx="722" cy="452" r="4" fill="#92400e" stroke="#ffffff" stroke-width="1.4" />
+    <text x="730" y="456" class="city-lbl">Bucharest</text>
+    <circle cx="372" cy="362" r="3.5" fill="#475569" stroke="#ffffff" stroke-width="1.3" />
+    <text x="364" y="374" text-anchor="end" class="city-lbl" font-size="10">Vienna</text>
+
+    <!-- ================= EDEXCEL EXAM TAKEAWAY CARD (Bottom-Left) ================= -->
+    <g filter="url(#card-shadow-l8)">
+      <rect x="12" y="394" width="282" height="156" rx="7" fill="#ffffff" fill-opacity="0.96" stroke="#cbd5e1" stroke-width="1.3" />
+      <rect x="12" y="394" width="282" height="24" rx="7" fill="#0f172a" />
+      <rect x="12" y="408" width="282" height="10" fill="#0f172a" />
+      <text x="23" y="410" class="card-hdr">OPERATION DANUBE &amp; BREZHNEV DOCTRINE</text>
+
+      <text x="23" y="432" class="card-bold" fill="#991b1b">20–21 Aug 1968: ~500,000 Troops Invade</text>
+      <text x="23" y="445" class="card-txt">Passive resistance in Prague (&lt;100 killed); Dubček</text>
+      <text x="23" y="458" class="card-txt">forced to sign Moscow Protocol → Husák (1969).</text>
+
+      <text x="23" y="476" class="card-bold" fill="#92400e">Communist Split &amp; Western Restraint:</text>
+      <text x="23" y="489" class="card-txt">Romania, Yugoslavia, China &amp; Eurocommunists</text>
+      <text x="23" y="502" class="card-txt">condemned USSR; USA (in Vietnam) only protested.</text>
+
+      <text x="23" y="520" class="card-bold" fill="#1e3a8a">Brezhnev Doctrine (Sept–Nov 1968):</text>
+      <text x="23" y="533" class="card-txt">Collective military duty to protect one-party</text>
+      <text x="23" y="545" class="card-txt">Communist rule across the Warsaw Pact.</text>
+    </g>
+  </g>
+
+  <!-- Neatline -->
+  <rect x="0.5" y="62" width="879" height="500" fill="none" stroke="#334155" stroke-width="1" />
+
+  <!-- TOP HEADER BAR -->
+  <g id="atlas-header-l8">
+    <rect x="0" y="0" width="880" height="62" fill="#0f172a" />
+    <line x1="0" y1="61" x2="880" y2="61" stroke="#f59e0b" stroke-width="2" />
+    <text x="20" y="22" class="banner-overline">EDEXCEL GCSE HISTORY · SUPERPOWER RELATIONS (KT 2.4)</text>
+    <text x="20" y="46" class="banner-title">Operation Danube: Warsaw Pact Invasion of Czechoslovakia</text>
+    <rect x="706" y="17" width="154" height="28" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1.2" />
+    <text x="783" y="35" text-anchor="middle" class="banner-pill-text">20–21 AUGUST 1968</text>
+  </g>
+
+  <!-- BOTTOM LEGEND STRIP -->
+  <g id="atlas-legend-l8">
+    <rect x="0" y="562" width="880" height="78" fill="#f8fafc" />
+    <line x1="0" y1="562" x2="880" y2="562" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Swatch 1 -->
+    <rect x="20" y="576" width="18" height="13" rx="2.5" fill="#fecaca" stroke="#b91c1c" stroke-width="1.3" />
+    <text x="45" y="586" class="legend-txt">Invading Warsaw Pact States</text>
+    <text x="45" y="598" class="legend-sub">USSR, Poland, Hungary, Bulgaria, GDR</text>
+
+    <!-- Swatch 2 -->
+    <line x1="252" y1="582" x2="278" y2="582" stroke="#b91c1c" stroke-width="4" />
+    <polygon points="282,582 273,577 273,587" fill="#b91c1c" />
+    <text x="290" y="586" class="legend-txt">Invasion Thrusts (500,000)</text>
+    <text x="290" y="598" class="legend-sub">Ground columns &amp; Ruzyňe airborne</text>
+
+    <!-- Swatch 3 -->
+    <rect x="476" y="576" width="18" height="13" rx="2.5" fill="#fef08a" stroke="#b45309" stroke-width="1.4" />
+    <text x="501" y="586" class="legend-txt">Refused &amp; Condemned USSR</text>
+    <text x="501" y="598" class="legend-sub">Romania (Ceaușescu) &amp; Yugoslavia (Tito)</text>
+
+    <!-- Swatch 4 -->
+    <rect x="708" y="576" width="18" height="13" rx="2.5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.3" />
+    <text x="733" y="586" class="legend-txt">NATO / Neutral West</text>
+    <text x="733" y="598" class="legend-sub">West Germany (NATO) · Austria</text>
+
+    <text x="20" y="624" class="legend-sub" font-weight="700" fill="#334155">Note: East German (NVA) divisions mobilised along the border in Operation Danube were held back at the last moment to avoid evoking 1939 Nazi memories.</text>
+  </g>
+</svg>
