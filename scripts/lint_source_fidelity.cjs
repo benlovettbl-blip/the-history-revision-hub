@@ -177,7 +177,13 @@ units.forEach(unit => {
       const verifiedHints = VERIFIED_EYES_FIRST_STEMS[baseFile] || [];
       const keywords = extractKeywords(item.image);
       if (keywords.length > 0) {
-        const searchableText = `${item.title} ${item.caption} ${item.alt} ${item.textSnippet}`.toLowerCase();
+        const rawSearchable = `${item.title} ${item.caption} ${item.alt} ${item.textSnippet}`.toLowerCase();
+        const germanAscii = rawSearchable
+          .replace(/ß/g, 'ss')
+          .replace(/ä/g, 'ae')
+          .replace(/ö/g, 'oe')
+          .replace(/ü/g, 'ue');
+        const searchableText = `${rawSearchable} ${germanAscii}`;
         const hasVerifiedHint = verifiedHints.some((h) => searchableText.includes(h));
 
         // Count how many keywords match

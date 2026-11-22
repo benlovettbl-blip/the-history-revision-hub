@@ -476,35 +476,85 @@ export const ICONIC_LESSON_VISUALS = {
   },
 
   weimar_nazi_germany: {
+    lesson_1_1: {
+      cardImage: "/images/weimar_assembly_1919.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt1/wng_l01_cameo_friedrich_ebert.jpg",
+      cameoAlt: "Reich President Friedrich Ebert (1871–1925), Social Democratic leader and first democratically elected President of the Weimar Republic",
+    },
     lesson_1_2: {
-      cardImage: '/images/upgraded/gcse-p3/weimar_l02_b4_hyperinflation_berlin_bread_1923.jpg',
+      cardImage: "/images/upgraded/gcse-p3/weimar_l02_b4_hyperinflation_berlin_bread_1923.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt1/wng_l02_cameo_walther_rathenau.jpg",
+      cameoAlt: "Weimar Foreign Minister Walther Rathenau (1867–1922), assassinated in Berlin by far-right Organisation Consul gunmen in June 1922",
+    },
+    lesson_1_3: {
+      cardImage: "/images/weimar_nazi_germany/kt1/wng_l03_b3_stresemann_geneva_league_1926.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt1/wng_l03_cameo_gustav_stresemann.jpg",
+      cameoAlt: "Chancellor and Foreign Minister Gustav Stresemann (1878–1929), Nobel Peace Prize laureate who stabilised Weimar currency and foreign relations",
     },
     lesson_1_4: {
-      cardImage: '/images/weimar_new_woman_1920s.jpg',
+      cardImage: "/images/weimar_nazi_germany/kt1/wng_l04_b2_bauhaus_dessau_gropius.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt1/wng_l04_cameo_walter_gropius_1919.jpg",
+      cameoAlt: "Architect Walter Gropius (1883–1969), founder of the modernist Bauhaus school of functionalist art and architecture in Weimar and Dessau",
+    },
+    lesson_2_1: {
+      cardImage: "/images/weimar_nazi_germany/kt2/wng_l2_1_cameo_hitler_early_1923.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt2/wng_l2_1_cameo_hitler_early_1923.jpg",
+      cameoAlt: "Early Munich studio portrait of Adolf Hitler in civilian suit and collar pin as Chairman of the NSDAP (c. 1921–1923)",
     },
     lesson_2_2: {
-      cardImage: '/images/munich_putsch_defendants.jpg',
+      cardImage: "/images/weimar_nazi_germany/kt2/wng_l2_2_cameo_erich_ludendorff.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt2/wng_l2_2_cameo_erich_ludendorff.jpg",
+      cameoAlt: "General Erich Ludendorff wearing the Pour le Mérite, First World War commander and co-leader of the November 1923 Munich Putsch",
     },
     lesson_2_3: {
-      cardImage: '/images/nazi_poster_our_last_hope.jpg',
-      heroCameo: '/images/nazi_poster_our_last_hope.jpg',
-      cameoAlt: '1932 Election Poster: "Our Last Hope: Hitler"',
+      cardImage: "/images/weimar_nazi_germany/kt2/wng_l2_3_cameo_heinrich_bruning_1931.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt2/wng_l2_3_cameo_heinrich_bruning_1931.jpg",
+      cameoAlt: "Centre Party Chancellor Heinrich Brüning (\"The Hunger Chancellor\", 1930–1932) reading press dispatches in 1931",
     },
     lesson_2_4: {
-      cardImage: '/images/papen_hitler_cartoon.jpg',
-      heroCameo: '/images/papen_hitler_cartoon.jpg',
-      cameoAlt: '"The Temporary Triangle" cartoon — Hindenburg and Von Papen carrying Hitler (January 1933)',
+      cardImage: "/images/weimar_nazi_germany/kt2/wng_l2_4_cameo_paul_von_hindenburg.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt2/wng_l2_4_cameo_paul_von_hindenburg.jpg",
+      cameoAlt: "Reich President Paul von Hindenburg, photographed in civilian statesman’s attire during his Weimar presidency (1927)",
     },
     lesson_3_1: {
-      cardImage: '/images/hitler_hindenburg_1933.jpg',
+      cardImage: "/images/weimar_nazi_germany/kt3/wng_l9_iconic_potsdam_hitler_hindenburg_1933.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt3/wng_l9_iconic_potsdam_hitler_hindenburg_1933.jpg",
+      cameoAlt: "Chancellor Adolf Hitler bowing respectfully to Reich President Field Marshal Paul von Hindenburg on the Day of Potsdam (21 March 1933, Bundesarchiv Bild 183-S38324)",
     },
     lesson_3_2: {
-      cardImage: '/images/weimar_individuals/heinrich_himmler.jpg',
-      heroCameo: '/images/weimar_individuals/martin_niem_ller.jpg',
-      cameoAlt: 'Pastor Martin Niemöller, Confessing Church opposition leader',
+      cardImage: "/images/weimar_nazi_germany/kt3/wng_l10_iconic_himmler_heydrich_1938.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt3/wng_l10_iconic_himmler_heydrich_1938.jpg",
+      cameoAlt: "Reichsführer-SS Heinrich Himmler (left) alongside SD and Gestapo Chief Reinhard Heydrich (right) in SS greatcoats (March 1938)",
+    },
+    lesson_3_3: {
+      cardImage: "/images/weimar_nazi_germany/kt3/wng_l11_b0_hitler_goebbels_1934.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt3/wng_l11_cameo_book_burning_opernplatz_1933.jpg",
+      cameoAlt: "SA stormtroopers and nationalist university students marching past towering pyres of banned books on Berlin’s Opernplatz (10 May 1933)",
+    },
+    lesson_3_4: {
+      cardImage: "/images/weimar_nazi_germany/kt3/wng_l12_b4_galen_monument_muenster.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt3/wng_l12_cameo_confessing_church_red_card_1934.jpg",
+      cameoAlt: "Confessing Church (Bekennende Kirche) Berlin-Dahlem membership declaration card signed by Pastor Martin Niemöller (19 July 1934)",
     },
     lesson_4_1: {
-      cardImage: '/images/upgraded/gcse-p3/weimar_l13_b3_mothers_cross_award.jpg',
+      cardImage: "/images/weimar_nazi_germany/kt4/wng_kt4_l13_cameo_mutter_und_kind_1934.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt4/wng_kt4_l13_cameo_mutter_und_kind_1934.jpg",
+      cameoAlt: "1934 NSV welfare poster by Werner Beucke ('Deutschland muß stärker werden — Spendet für Mutter und Kind') depicting an Aryan mother and young boy waving a swastika pennant",
+    },
+    lesson_4_2: {
+      cardImage: "/images/weimar_nazi_germany/kt4/wng_kt4_l14_cameo_baldur_von_schirach_1937.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt4/wng_kt4_l14_cameo_baldur_von_schirach_1937.jpg",
+      cameoAlt: "Reich Youth Leader Baldur von Schirach seated beside Count Yoshinori Futara reviewing a Hitlerjugend rally in Bremen (1937)",
+    },
+    lesson_4_3: {
+      cardImage: "/images/weimar_nazi_germany/kt4/wng_kt4_l15_cameo_robert_ley_1930s.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt4/wng_kt4_l15_cameo_robert_ley_1930s.jpg",
+      cameoAlt: "Dr Robert Ley, Reichsorganisationsleiter and head of the German Labour Front (Deutsche Arbeitsfront, DAF), in party uniform (1930s)",
+    },
+    lesson_4_4: {
+      cardImage: "/images/weimar_nazi_germany/kt4/wng_kt4_l16_cameo_kindertransport_harwich_1938.jpg",
+      heroCameo: "/images/weimar_nazi_germany/kt4/wng_kt4_l16_cameo_kindertransport_harwich_1938.jpg",
+      cameoAlt: "Jewish refugee children from Germany arriving at Harwich docks in England aboard the first Kindertransport rescue ship (December 1938)",
     },
   },
 
