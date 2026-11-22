@@ -186,22 +186,61 @@ function verifyImages() {
           }
         });
 
+        // 4c. Audit unit-level cover_image / homepage_background existence in public/
+        [
+          { label: 'cover_image', val: unitData.cover_image },
+          { label: 'homepage_background', val: unitData.homepage_background },
+        ].forEach(({ label, val }) => {
+          if (!val || typeof val !== 'string' || /^https?:\/\//i.test(val)) return;
+          const clean = val.split('?')[0];
+          const relPath = clean.startsWith('/') ? clean.replace(/^\/+/, '') : path.posix.join('units', unitName, clean);
+          const resolvedCover = path.join(ROOT_DIR, 'public', relPath);
+          if (!fs.existsSync(resolvedCover) || !fs.statSync(resolvedCover).isFile()) {
+            console.error(`❌ CRITICAL ERROR (Missing ${label} in public/ for ${jf}): ${val}`);
+            errors++;
+          }
+        });
+
         lessons.forEach(l => {
           const lessonImages = [];
-          (l.narrative_blocks || []).forEach(b => {
+          const bannerRaw =
+            (typeof l.banner === 'object' && l.banner ? l.banner.image : l.banner) ||
+            l.banner_image ||
+            l.hero_image ||
+            '';
+          if (bannerRaw && typeof bannerRaw === 'string' && !/^https?:\/\//i.test(bannerRaw)) {
+            const cleanBanner = bannerRaw.split('?')[0];
+            lessonImages.push({ type: 'Lesson Banner', path: cleanBanner });
+            const resolvedBanner = path.join(ROOT_DIR, 'public', cleanBanner.replace(/^\/+/, ''));
+            if (!fs.existsSync(resolvedBanner) || !fs.statSync(resolvedBanner).isFile()) {
+              console.error(`❌ CRITICAL ERROR (Missing Lesson Banner in public/ — check units/ -> public/units/ mirror in ${jf} ${l.id || l.title}): ${bannerRaw}`);
+              errors++;
+            }
+          }
+
+          (l.narrative_blocks || []).forEach((b, bIdx) => {
             if (b.image) {
-              lessonImages.push({ type: 'Narrative Plate', path: b.image });
+              const cleanBlk = b.image.split('?')[0];
+              lessonImages.push({ type: `Narrative Plate ${bIdx + 1}`, path: cleanBlk });
               if (b.image.includes('placeholder.jpg') || b.image.includes('default_person.jpg')) {
                 console.error(`❌ CRITICAL ERROR: Placeholder image detected in ${jf} Lesson ${l.id || l.title}: ${b.image}`);
                 errors++;
+              }
+              if (!/^https?:\/\//i.test(cleanBlk)) {
+                const resolvedBlk = path.join(ROOT_DIR, 'public', cleanBlk.replace(/^\/+/, ''));
+                if (!fs.existsSync(resolvedBlk) || !fs.statSync(resolvedBlk).isFile()) {
+                  console.error(`❌ CRITICAL ERROR (Missing Narrative Plate in public/ — check units/ -> public/units/ mirror in ${jf} ${l.id || l.title}): ${b.image}`);
+                  errors++;
+                }
               }
             }
             if (b.slide_compare && typeof b.slide_compare === 'object') {
               const scBefore = (b.slide_compare.before && (b.slide_compare.before.image || b.slide_compare.before.src)) || b.slide_compare.before_image;
               const scAfter = (b.slide_compare.after && (b.slide_compare.after.image || b.slide_compare.after.src)) || b.slide_compare.after_image;
               [scBefore, scAfter].filter(Boolean).forEach((scImg, scIdx) => {
-                lessonImages.push({ type: `Slide-Compare ${scIdx === 0 ? 'Before' : 'After'}`, path: scImg });
-                const resolvedSc = path.join(ROOT_DIR, 'public', scImg.replace(/^\/+/, ''));
+                const cleanSc = scImg.split('?')[0];
+                lessonImages.push({ type: `Slide-Compare ${scIdx === 0 ? 'Before' : 'After'}`, path: cleanSc });
+                const resolvedSc = path.join(ROOT_DIR, 'public', cleanSc.replace(/^\/+/, ''));
                 if (!fs.existsSync(resolvedSc) || !fs.statSync(resolvedSc).isFile()) {
                   console.error(`❌ CRITICAL ERROR (Missing Slide-Compare Image in ${jf}): ${scImg}`);
                   errors++;
@@ -212,27 +251,52 @@ function verifyImages() {
           (l.sources || []).forEach(s => {
             const srcImg = s.image || s.src;
             if (srcImg && !srcImg.endsWith('.html') && !srcImg.endsWith('.pdf')) {
-              lessonImages.push({ type: `Source ${s.letter || s.id}`, path: srcImg });
+              const cleanSrc = srcImg.split('?')[0];
+              lessonImages.push({ type: `Source ${s.letter || s.id}`, path: cleanSrc });
               if (srcImg.includes('placeholder.jpg') || srcImg.includes('default_person.jpg')) {
                 console.error(`❌ CRITICAL ERROR: Placeholder image detected in ${jf} Lesson ${l.id || l.title} Source ${s.letter}: ${srcImg}`);
                 errors++;
               }
+              if (!/^https?:\/\//i.test(cleanSrc)) {
+                const resolvedSrc = path.join(ROOT_DIR, 'public', cleanSrc.replace(/^\/+/, ''));
+                if (!fs.existsSync(resolvedSrc) || !fs.statSync(resolvedSrc).isFile()) {
+                  console.error(`❌ CRITICAL ERROR (Missing Source Image in public/ — check units/ -> public/units/ mirror in ${jf} ${l.id || l.title}): ${srcImg}`);
+                  errors++;
+                }
+              }
             }
           });
 
-          // Check intra-lesson duplicate images (Strict Platform-Wide Zero-Duplicate Gate)
+          // Check intra-lesson duplicate images (Strict Platform-Wide Zero-Duplicate Gate, including Lesson Banner vs Block/Source)
           const seen = new Map();
           lessonImages.forEach(img => {
-            if (seen.has(img.path)) {
-              console.error(`❌ CRITICAL ERROR: Intra-lesson duplicate image detected in ${jf} Lesson ${l.id || l.title}: "${img.path}" used in both ${seen.get(img.path)} and ${img.type}.`);
+            const key = img.path.toLowerCase();
+            if (seen.has(key)) {
+              console.error(`❌ CRITICAL ERROR: Intra-lesson duplicate image detected in ${jf} Lesson ${l.id || l.title}: "${img.path}" used in both ${seen.get(key)} and ${img.type}.`);
               errors++;
             } else {
-              seen.set(img.path, img.type);
+              seen.set(key, img.type);
             }
           });
         });
       } catch (e) {
         // Skip non-unit or malformed JSON
+      }
+    }
+  }
+
+  // 5. Audit src/data/iconic_lesson_visuals.js asset existence in public/
+  const iconicPath = path.join(ROOT_DIR, 'src', 'data', 'iconic_lesson_visuals.js');
+  if (fs.existsSync(iconicPath)) {
+    const iconicText = fs.readFileSync(iconicPath, 'utf8');
+    const propRegex = /\b(cardImage|heroCameo)\s*:\s*['"]([^'"]+)['"]/g;
+    let match;
+    while ((match = propRegex.exec(iconicText)) !== null) {
+      const [, prop, imgUrl] = match;
+      const resolved = path.join(ROOT_DIR, 'public', imgUrl.split('?')[0].replace(/^\/+/, ''));
+      if (!fs.existsSync(resolved) || !fs.statSync(resolved).isFile()) {
+        console.error(`❌ CRITICAL ERROR (Missing ${prop} in iconic_lesson_visuals.js): ${imgUrl}`);
+        errors++;
       }
     }
   }

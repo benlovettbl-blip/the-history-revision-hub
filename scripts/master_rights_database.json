@@ -13030,7 +13030,7 @@
       "key_stage": "GCSE (Edexcel Paper 3)",
       "unit_title": "The USA, 1954–1975: Conflict at Home and Abroad (Civil Rights and Vietnam)",
       "total_lessons": 16,
-      "total_sources": 151,
+      "total_sources": 154,
       "exam_board": "Pearson Edexcel GCSE (9–1) Option 33",
       "sources": [
         {
@@ -15154,6 +15154,51 @@
           "source_url": "https://commons.wikimedia.org/wiki/File:Checking_house_during_patrol.jpg",
           "asset_path": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg",
           "visual_inspection_verified": "Verified via read_file: 1600x999 sharp colour photograph of two helmeted US infantrymen with M16 rifles outside a thatched Vietnamese peasant dwelling."
+        },
+        {
+          "lesson_num": 2,
+          "lesson_title": "KT 1.2: How did developments in education challenge segregation (1954–57)?",
+          "source_id": "Lesson Banner",
+          "artifact_title": "Little Rock Central High School in Arkansas — focal point of the 1957 school desegregation showdown between Governor Orval Faubus and President Eisenhower.",
+          "date": "Archival / Historic Site",
+          "creator": "Adam Jones, Ph.D.",
+          "repository": "Wikimedia Commons / Library of Congress",
+          "accession_id": "Panorama of Facade of Central High School - Little Rock - Arkansas - USA.jpg",
+          "rights_status": "CC BY-SA 3.0",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Facade_of_Central_High_School_-_Little_Rock_-_Arkansas_-_USA.jpg",
+          "asset_path": "/images/upgraded/gcse-p3/usa_l02_banner_central_high_little_rock.jpg",
+          "visual_inspection_verified": "Verified via Eyes-First read_file inspection (2026-11-22)"
+        },
+        {
+          "lesson_num": 5,
+          "lesson_title": "KT 2.1: How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
+          "source_id": "Lesson Banner",
+          "artifact_title": "Historic storefront of the F. W. Woolworth building in Greensboro, North Carolina, where four college students launched the February 1960 sit-in movement.",
+          "date": "Archival / Historic Site",
+          "creator": "dbking from Washington, DC",
+          "repository": "Wikimedia Commons / Library of Congress",
+          "accession_id": "Former Woolworth store in Greensboro, NC (2008).jpg",
+          "rights_status": "CC BY 2.0",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Former_Woolworth_store_in_Greensboro,_NC_(2008).jpg",
+          "asset_path": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg",
+          "visual_inspection_verified": "Verified via Eyes-First read_file inspection (2026-11-22)"
+        },
+        {
+          "lesson_num": 6,
+          "lesson_title": "KT 2.2: How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
+          "source_id": "Lesson Banner",
+          "artifact_title": "The steel-arch Edmund Pettus Bridge spanning the Alabama River in Selma — site of the 7 March 1965 \"Bloody Sunday\" voting-rights march.",
+          "date": "Archival / Historic Site",
+          "creator": "Carol M. Highsmith",
+          "repository": "Wikimedia Commons / Library of Congress",
+          "accession_id": "Edmund Pettus Bridge 03.jpg",
+          "rights_status": "Public domain",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Edmund_Pettus_Bridge_03.jpg",
+          "asset_path": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg",
+          "visual_inspection_verified": "Verified via Eyes-First read_file inspection (2026-11-22)"
         }
       ]
     },

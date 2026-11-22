@@ -457,6 +457,9 @@ export const ICONIC_LESSON_VISUALS = {
       heroCameo: '/units/usa/assets/sources/rosa-parks-bus-1956.jpg',
       cameoAlt: 'Rosa Parks seated at the front of a Montgomery bus (December 1956)',
     },
+    lesson_2_1: {
+      cardImage: '/units/usa/assets/sources/greensboro-sit-in-counter.jpg',
+    },
     lesson_2_2: {
       cardImage: '/units/usa/assets/sources/mlk-dream-speech-1963.jpg',
       heroCameo: '/units/usa/assets/sources/mlk-dream-speech-1963.jpg',

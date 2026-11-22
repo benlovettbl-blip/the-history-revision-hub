@@ -1,1 +1,1 @@
-node scripts/verify_sanitization.cjs
+node scripts/verify_images.cjs && node scripts/verify_sanitization.cjs

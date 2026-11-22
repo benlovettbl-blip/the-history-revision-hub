@@ -3563,9 +3563,13 @@
           "model_answer": "Recall: Faubus was facing a tough re-election campaign and sought to win racist white segregationist votes by defying the federal court.\nExplain: Faubus defied a direct order from a federal judge; Eisenhower had to assert the constitutional supremacy of the federal government over states' rights or see the rule of law collapse.\nChallenge: Rather than integrate, Faubus closed all four public high schools in Little Rock for the entire academic year, depriving 3,000 students of education in a spiteful attempt to preserve segregation."
         }
       ],
-      "banner": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l02_banner_central_high_little_rock.jpg",
+        "caption": "Little Rock Central High School in Arkansas — focal point of the 1957 school desegregation showdown between Governor Orval Faubus and President Eisenhower.",
+        "position": "center 42%"
+      },
       "card_image": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg",
-      "hero_image": "/units/usa/assets/sources/airborne-little-rock-patrol.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l02_banner_central_high_little_rock.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -3898,7 +3902,8 @@
             "Nine Black students escorted into Central High by the 101st Airborne in 1957."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l02_banner_central_high_little_rock.jpg"
     },
     {
       "id": "lesson_1_3",
@@ -9328,9 +9333,13 @@
           "model_answer": "<ol><li><strong>Quick Check:</strong> To test whether Southern states were obeying the Supreme Court's ruling (Boynton v. Virginia) banning segregation in interstate bus terminals, waiting rooms, and lunch counters.</li><li><strong>Hinge Question:</strong> The riders anticipated white violent retaliation; when national television broadcast local police complicity and mob brutality, the Kennedy administration was internationally humiliated on the Cold War stage, compelling the ICC to ban all segregation in interstate travel by November 1961.</li></ol>"
         }
       ],
-      "banner": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg",
+        "caption": "Historic storefront of the F. W. Woolworth building in Greensboro, North Carolina, where four college students launched the February 1960 sit-in movement.",
+        "position": "center 42%"
+      },
       "card_image": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg",
-      "hero_image": "/units/usa/assets/sources/greensboro-sit-in-counter.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -9664,7 +9673,8 @@
             "Federal Interstate Commerce Commission rule banning segregated bus terminals."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg"
     },
     {
       "id": "lesson_2_2",
@@ -10873,9 +10883,13 @@
           "model_answer": "National television broadcast Bull Connor’s police dogs and fire hoses—and state troopers beating marchers on Edmund Pettus Bridge—shaming the USA internationally during the Cold War and compelling Presidents Kennedy and Johnson to pass federal laws. Legal de jure segregation in the South ended, but de facto economic inequality, ghetto housing, and police brutality in northern cities remained untouched."
         }
       ],
-      "banner": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
+      "banner": {
+        "image": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg",
+        "caption": "The steel-arch Edmund Pettus Bridge spanning the Alabama River in Selma — site of the 7 March 1965 \"Bloody Sunday\" voting-rights march.",
+        "position": "center 52%"
+      },
       "card_image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
-      "hero_image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
+      "hero_image": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg",
       "banner_position": "center 20%",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -11211,7 +11225,8 @@
             "Federal law banning literacy tests and sending examiners to register voters."
           ]
         ]
-      }
+      },
+      "banner_image": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg"
     },
     {
       "id": "lesson_2_3",
