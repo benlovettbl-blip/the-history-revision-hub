@@ -431,20 +431,107 @@ export const ICONIC_LESSON_VISUALS = {
     },
   },
 
-  post_war_britain: {
+  the_shoah: {
     lesson_1: {
-      cardImage: '/images/post_war_britain/pankhurst_arrest_1914.jpg',
+      cardImage: "/images/upgraded/ks3-modern/shoah_l1_block1_tarbut_school_poland_1933.jpg",
+      heroCameo: "/images/the_shoah/shoah_l1_cameo_albert_einstein_1921.jpg",
+      cameoAlt: "German-Jewish physicist and 1921 Nobel Prize laureate Professor Albert Einstein (1879–1955) lecturing at a chalkboard in 1921 (photographed by Ferdinand Schmutzer), exemplifying Jewish scientific and cultural contributions in Central Europe before 1933",
     },
     lesson_2: {
-      cardImage: '/images/bevan_first_day_nhs_1948.jpg',
+      cardImage: "/images/the_shoah/shoah_l2_b0_sa_boycott_shop_window_1933.jpg",
+      heroCameo: "/images/the_shoah/shoah_l2_cameo_leo_baeck_bust.jpg",
+      cameoAlt: "Bronze portrait bust of Rabbi Dr Leo Baeck (1873–1956), scholar and President of the Reichsvertretung der Deutschen Juden who led and defended Germany’s persecuted Jewish community from 1933 until his deportation to Theresienstadt",
     },
     lesson_3: {
-      cardImage: '/images/empire_windrush_1948.jpg',
-      heroCameo: '/images/upgraded/ks3-modern/pwb_l3_block4_claudia_jones_1948.jpg',
-      cameoAlt: 'Claudia Jones, founder of the West Indian Gazette',
+      cardImage: "/images/the_shoah/shoah_l3_b3_krochmalna_street_warsaw_ghetto.jpg",
+      heroCameo: "/images/the_shoah/shoah_l3_cameo_janusz_korczak.jpg",
+      cameoAlt: "Polish-Jewish paediatrician, children’s author, and Warsaw Ghetto orphanage director Dr Janusz Korczak (Henryk Goldszmit, 1878–1942), who refused offers of personal escape in August 1942 so he would not abandon his 192 Jewish orphans on the deportation train to Treblinka",
     },
     lesson_4: {
-      cardImage: '/images/bristol_bus_boycott_mural.jpg',
+      cardImage: "/images/the_shoah/shoah_l4_b2_babi_yar_clothes_haehle_1941.jpg",
+      heroCameo: "/images/the_shoah/shoah_l4_cameo_benjamin_ferencz_nuremberg.jpg",
+      cameoAlt: "Twenty-seven-year-old US Chief Prosecutor Benjamin B. Ferencz (1920–2023) at the Nuremberg Einsatzgruppen Trial (1947–1948), where captured SS daily tally reports convicted mobile killing squad commanders of murdering over one million civilians",
+    },
+    lesson_5: {
+      cardImage: "/images/the_shoah/shoah_l5_b3_warsaw_ghetto_uprising_burning_1943.jpg",
+      heroCameo: "/images/the_shoah/shoah_l5_cameo_marek_edelman.jpg",
+      cameoAlt: "Marek Edelman (1919–2009), co-founder and surviving deputy commander of the Jewish Combat Organisation (ŻOB) during the April–May 1943 Warsaw Ghetto Uprising after commander Mordechai Anielewicz fell at Miła 18",
+    },
+    lesson_6: {
+      cardImage: "/images/the_shoah/shoah_l6_b4_auschwitz_birkenau_aerial_1944_nara.jpg",
+      heroCameo: "/images/the_shoah/shoah_l6_cameo_raoul_wallenberg.jpg",
+      cameoAlt: "Swedish diplomat Raoul Wallenberg (1912–c. 1947) at his desk in 1944, who issued thousands of protective Swedish Schutz-Pass documents and established safe houses in Budapest to rescue tens of thousands of Hungarian Jews",
+    },
+    lesson_7: {
+      cardImage: "/images/the_shoah/shoah_l7_b2_bergen_belsen_dp_camp_1946.jpg",
+      heroCameo: "/images/the_shoah/shoah_l7_cameo_robert_jackson_nuremberg.jpg",
+      cameoAlt: "United States Supreme Court Justice and Chief Prosecutor Robert H. Jackson (1892–1954) addressing the International Military Tribunal from the podium in Courtroom 600 at Nuremberg (November 1945)",
+    },
+  },
+
+  cold_war: {
+    lesson_1: {
+      cardImage: "/images/gcse_cold_war/tehran_conference_1943.jpg",
+      heroCameo: "/images/ks3_cold_war/cw_l1_cameo_stalin_portrait_1942.jpg",
+      cameoAlt: "Soviet Premier Joseph Stalin (1878–1953) seated at his Kremlin desk in tunic and riding boots (c. 1942, U.S. Office of War Information / Library of Congress)",
+    },
+    lesson_2: {
+      cardImage: "/images/gcse_cold_war/kt1/cw_l1_banner_cecilienhof_potsdam.jpg",
+      heroCameo: "/images/ks3_cold_war/cw_l2_cameo_truman_portrait_1945.jpg",
+      cameoAlt: "U.S. President Harry S. Truman (1884–1972), who succeeded Franklin D. Roosevelt in April 1945 and confronted Joseph Stalin at the July 1945 Potsdam Conference",
+    },
+    lesson_3: {
+      cardImage: "/images/ks3_cold_war/cw_l3_b4_eisenhower_shape_nato_nara.jpg",
+      heroCameo: "/images/gcse_cold_war/kt1/cw_l2_iconic_truman_churchill_fulton_1946.jpg",
+      cameoAlt: "Winston Churchill flashing his V-for-Victory sign beside President Harry S. Truman aboard the special train to Fulton, Missouri before delivering the \"Iron Curtain\" speech (March 1946, NARA)",
+    },
+    lesson_4: {
+      cardImage: "/images/gcse_cold_war/kt2/cw_l6_banner_us_navy_quarantine_1962.jpg",
+      heroCameo: "/images/ks3_cold_war/cw_l4_cameo_jfk_white_house_portrait_1963.jpg",
+      cameoAlt: "U.S. President John F. Kennedy (1917–1963), whose naval quarantine and secret back-channel diplomacy steered the October 1962 Cuban Missile Crisis away from nuclear war (Cecil Stoughton, White House)",
+    },
+    lesson_5: {
+      cardImage: "/images/usa/kt3/usa_l11_b3_ranch_hand_c123_agent_orange_run.jpg",
+      heroCameo: "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
+      cameoAlt: "Vietnamese revolutionary and North Vietnamese President Ho Chi Minh (1890–1969), who led communist independence struggles against French colonial rule and American containment",
+    },
+    lesson_6: {
+      cardImage: "/images/gcse_cold_war/kt3/cw_l12_banner_brandenburg_gate_wall_1989.jpg",
+      heroCameo: "/images/ks3_cold_war/cw_l6_s4_gorbachev_white_house_1987.jpg",
+      cameoAlt: "Soviet General Secretary Mikhail Gorbachev (1931–2022), whose Glasnost, Perestroika, and refusal to use Red Army tanks in 1989 peacefully ended the Cold War (White House Photo Office)",
+    },
+    lesson_7: {
+      cardImage: "/images/gcse_cold_war/kt3/cw_l9_b2_apollo_soyuz_docked_1975.jpg",
+      heroCameo: "/images/ks3_cold_war/cw_l7_cameo_yuri_gagarin_1961.jpg",
+      cameoAlt: "Soviet Air Force cosmonaut Major Yuri Gagarin (1934–1968), who became the first human in space aboard Vostok 1 on 12 April 1961 at the height of the superpower Space Race",
+    },
+  },
+
+  post_war_britain: {
+    lesson_1: {
+      cardImage: "/images/post_war_britain/canary_girls_chilwell_1917.jpg",
+      heroCameo: "/images/post_war_britain/pwb_l1_cameo_emmeline_pankhurst_1913.jpg",
+      cameoAlt: "Emmeline Pankhurst (1858–1928), founder of the Women’s Social and Political Union (WSPU), photographed in November 1913 during her 'Freedom or Death' speaking tour (Library of Congress)",
+    },
+    lesson_2: {
+      cardImage: "/images/bevan_first_day_nhs_1948.jpg",
+      heroCameo: "/images/post_war_britain/pwb_l2_cameo_aneurin_bevan_1952_nlw.jpg",
+      cameoAlt: "Aneurin 'Nye' Bevan (1897–1960), Minister of Health from 1945 to 1951 and founder of the National Health Service, addressing a rally at a microphone in 1952 (Geoff Charles Collection, National Library of Wales)",
+    },
+    lesson_3: {
+      cardImage: "/images/empire_windrush_1948.jpg",
+      heroCameo: "/images/upgraded/ks3-modern/pwb_l3_block4_claudia_jones_1948.jpg",
+      cameoAlt: "Claudia Jones (1915–1964), Trinidadian-born journalist and civil rights pioneer who founded the West Indian Gazette in Brixton (1958) and launched London’s first Caribbean Carnival in January 1959 (Library of Congress)",
+    },
+    lesson_4: {
+      cardImage: "/images/bristol_bus_boycott_mural.jpg",
+      heroCameo: "/images/post_war_britain/harold_wilson_1967.jpg",
+      cameoAlt: "Prime Minister Harold Wilson (1916–1995), who publicly backed the 1963 Bristol Bus Boycott as Opposition Leader before enacting Britain’s first Race Relations Acts in 1965 and 1968 (Nationaal Archief)",
+    },
+    lesson_5: {
+      cardImage: "/images/post_war_britain/aldermaston_cnd_demo.jpg",
+      heroCameo: "/images/post_war_britain/pwb_l5_cameo_bertrand_russell_1950.jpg",
+      cameoAlt: "Philosopher and Nobel laureate Bertrand Russell (1872–1970), co-author of the 1955 Russell–Einstein Manifesto and founding president of the Campaign for Nuclear Disarmament in 1958 (Rijksmuseum)",
     },
   },
 
