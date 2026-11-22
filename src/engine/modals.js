@@ -3433,6 +3433,26 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       title: 'KS2: World War II & The Home Front (1933–1945)',
       group: 'Key Stage 2',
     },
+    {
+      id: 'ks2_ancient_egypt',
+      title: 'KS2: Ancient Egypt (c. 3100–30 BC)',
+      group: 'Key Stage 2',
+    },
+    {
+      id: 'ks2_ancient_greece',
+      title: 'KS2: Ancient Greece (c. 800–146 BC)',
+      group: 'Key Stage 2',
+    },
+    {
+      id: 'ks2_early_islamic_baghdad',
+      title: 'KS2: Early Islamic Civilisation — Baghdad (c. AD 750–1258)',
+      group: 'Key Stage 2',
+    },
+    {
+      id: 'ks2_maya_civilisation',
+      title: 'KS2: The Ancient Maya (c. 2000 BC–AD 1500)',
+      group: 'Key Stage 2',
+    },
   ];
 
   const DEFAULT_SET_MAPPING = {

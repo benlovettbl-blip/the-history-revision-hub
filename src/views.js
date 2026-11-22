@@ -68,8 +68,17 @@ export function renderDashboard() {
       </div>
   `;
 
-  // Key Stage 2 Grouping (Chronological Order: Prehistoric -> Roman -> Early Medieval -> Modern)
-  const ks2Order = ['ks2_stone_to_iron_age', 'ks2_romans', 'ks2_anglo_saxons_vikings', 'ks2_ww2'];
+  // Key Stage 2 Grouping (4 British Chronological Units + 4 World/Ancient Civilisation Units = 8-Unit Symmetrical Grid)
+  const ks2Order = [
+    'ks2_stone_to_iron_age',
+    'ks2_romans',
+    'ks2_anglo_saxons_vikings',
+    'ks2_ww2',
+    'ks2_ancient_egypt',
+    'ks2_ancient_greece',
+    'ks2_early_islamic_baghdad',
+    'ks2_maya_civilisation',
+  ];
   const ks2Units = units
     .filter((u) => ks2Order.includes(u.id) || String(u.id || '').startsWith('ks2_'))
     .sort((a, b) => {
@@ -117,6 +126,10 @@ export function renderDashboard() {
     ks2_romans: 'The Romans in Britain (55 BC–AD 410)',
     ks2_anglo_saxons_vikings: 'Anglo-Saxons & Vikings (AD 410–1066)',
     ks2_ww2: 'World War II & The Home Front (1933–1945)',
+    ks2_ancient_egypt: 'Ancient Egypt (c. 3100–30 BC)',
+    ks2_ancient_greece: 'Ancient Greece (c. 800–146 BC)',
+    ks2_early_islamic_baghdad: 'Early Islamic Baghdad (c. AD 750–1258)',
+    ks2_maya_civilisation: 'The Ancient Maya (c. 2000 BC–AD 1500)',
     water_and_sanitation: 'Water & Sanitation (1250–Present)',
     medieval_england: 'Medieval England (1066–1485)',
     monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
@@ -252,6 +265,46 @@ export function renderDashboard() {
         btnBg: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)',
         summary:
           'Explore outbreak & gas masks, Operation Pied Piper evacuation, pre-war Jewish life, the Kindertransport & rescuers, the Blitz, rationing, women at war, Bletchley Park, VE Day, and the Windermere Children.',
+      },
+      ks2_ancient_egypt: {
+        phaseBadge: 'Key Stage 2 • Earliest Civilisations',
+        badgeBg: '#b45309',
+        gradient: 'linear-gradient(135deg, #451a03 0%, #78350f 48%, #a16207 100%)',
+        borderCol: 'rgba(253, 224, 71, 0.42)',
+        btnBg: 'linear-gradient(135deg, #eab308 0%, #b45309 100%)',
+        bgPos: 'center 48%',
+        summary:
+          'Explore the 4 earliest river civilisations & the Gift of the Nile, Giza pyramids & the Great Sphinx, scribes & the Rosetta Stone, mummification & Weighing the Heart, Hatshepsut & Ramesses II, and Tutankhamun & Cleopatra VII.',
+      },
+      ks2_ancient_greece: {
+        phaseBadge: 'Key Stage 2 • Ancient Greece & Legacy',
+        badgeBg: '#0369a1',
+        gradient: 'linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #1d4ed8 100%)',
+        borderCol: 'rgba(186, 230, 253, 0.42)',
+        btnBg: 'linear-gradient(135deg, #0284c7 0%, #1d4ed8 100%)',
+        bgPos: 'center 18%',
+        summary:
+          'Explore mountains & rival city-states (poleis), Athenian democracy vs Spartan warriors, Olympian gods & the 776 BC Olympic Games, Marathon, Thermopylae & Salamis, Socrates & Hippocrates, and Alexander the Great.',
+      },
+      ks2_early_islamic_baghdad: {
+        phaseBadge: 'Key Stage 2 • World Study c. AD 900',
+        badgeBg: '#0f766e',
+        gradient: 'linear-gradient(135deg, #042f2e 0%, #115e59 50%, #065f46 100%)',
+        borderCol: 'rgba(153, 246, 228, 0.4)',
+        btnBg: 'linear-gradient(135deg, #0d9488 0%, #065f46 100%)',
+        bgPos: 'center 38%',
+        summary:
+          'Contrast Britain c. AD 900 with Caliph al-Mansur\'s million-strong Round City of Baghdad, the House of Wisdom & paper mills, al-Khwarizmi\'s zero & algebra, free bimaristan hospitals, Silk Road dhows & Viking dirhams, and 1258.',
+      },
+      ks2_maya_civilisation: {
+        phaseBadge: 'Key Stage 2 • World Study c. AD 900',
+        badgeBg: '#15803d',
+        gradient: 'linear-gradient(135deg, #052e16 0%, #14532d 50%, #166534 100%)',
+        borderCol: 'rgba(134, 239, 172, 0.4)',
+        btnBg: 'linear-gradient(135deg, #16a34a 0%, #15803d 100%)',
+        bgPos: 'center 22%',
+        summary:
+          'Explore rainforest city-states & cenotes, Three Sisters maize farming, King Pakal\'s jade mask at Palenque, Maya glyphs, folding bark codices & shell-dot-bar zero, frothy cacao & Pok-ta-Pok, Chichén Itzá, and 7 million Maya today.',
       },
     };
 
@@ -1592,6 +1645,30 @@ export async function renderTimeline() {
     return;
   }
 
+  if (unitId === 'ks2_ancient_egypt') {
+    const { renderKs2EgyptTimelineSlider } = await import('./ks2_egypt_chronology_slider.js');
+    renderKs2EgyptTimelineSlider(container);
+    return;
+  }
+
+  if (unitId === 'ks2_ancient_greece') {
+    const { renderKs2GreeceTimelineSlider } = await import('./ks2_greece_chronology_slider.js');
+    renderKs2GreeceTimelineSlider(container);
+    return;
+  }
+
+  if (unitId === 'ks2_early_islamic_baghdad') {
+    const { renderKs2BaghdadTimelineSlider } = await import('./ks2_baghdad_chronology_slider.js');
+    renderKs2BaghdadTimelineSlider(container);
+    return;
+  }
+
+  if (unitId === 'ks2_maya_civilisation') {
+    const { renderKs2MayaTimelineSlider } = await import('./ks2_maya_chronology_slider.js');
+    renderKs2MayaTimelineSlider(container);
+    return;
+  }
+
   const events = state.activeUnitData ? state.activeUnitData.timelineEvents : null;
 
   if (!events || events.length === 0) {
@@ -1808,6 +1885,10 @@ export async function renderLessonsView() {
       if (unitId === 'ks2_romans') unitTitle = 'The Romans in Britain';
       if (unitId === 'ks2_anglo_saxons_vikings') unitTitle = 'Anglo-Saxons & Vikings';
       if (unitId === 'ks2_ww2') unitTitle = 'Britain at War (WWII)';
+      if (unitId === 'ks2_ancient_egypt') unitTitle = 'Ancient Egypt';
+      if (unitId === 'ks2_ancient_greece') unitTitle = 'Ancient Greece';
+      if (unitId === 'ks2_early_islamic_baghdad') unitTitle = 'Baghdad c. AD 900';
+      if (unitId === 'ks2_maya_civilisation') unitTitle = 'The Ancient Maya';
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
         {

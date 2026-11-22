@@ -280,6 +280,54 @@ export const unitSynopses = {
       'Jorvik, Athelstan, Cnut & 1066',
     ],
   },
+  ks2_ancient_egypt: {
+    period: 'c. 3100 – 30 BC',
+    synopsis:
+      "Why did one of humanity's greatest civilisations blossom along a narrow green ribbon cutting through the scorching Sahara Desert? Compare the four earliest river civilisations—Sumer, the Indus Valley, Shang China, and Ancient Egypt—before sailing down the River Nile to watch summer floods lay down rich black silt (*Kemet*). Haul 2.3 million limestone blocks up Khufu's Great Pyramid at Giza, crack 700 sacred hieroglyphs with the Rosetta Stone, wrap mummies for the Weighing of the Heart, meet mighty Pharaohs Hatshepsut and Ramesses II, and peer by candlelight with Howard Carter into Tutankhamun's golden tomb!",
+    tags: [
+      'Four Cradles & Gift of the Nile',
+      'Pyramids of Giza & Great Sphinx',
+      'Scribes, Papyrus & Rosetta Stone',
+      'Mummies & Weighing of the Heart',
+      'Hatshepsut, Ramesses II, Tutankhamun & Cleopatra',
+    ],
+  },
+  ks2_ancient_greece: {
+    period: 'c. 800 – 146 BC',
+    synopsis:
+      "How did a land of steep mountains and a thousand sunlit Aegean islands invent democracy, theatre, the Olympic Games, and modern science? Step inside fiercely independent Greek city-states (*poleis*) to debate votes on Athens's rocky Pnyx hill and compare life inside Sparta's warrior barracks. Climb Mount Olympus with Zeus and Athena, sprint barefoot on Olympia's 776 BC track during the Sacred Truce, lock bronze shields at Marathon and Thermopylae, ram Persian warships in wooden triremes at Salamis, question everything with Socrates and Hippocrates, and march across three continents with Alexander the Great!",
+    tags: [
+      'Aegean Islands & Rival Poleis',
+      'Athenian Democracy vs Sparta',
+      'Olympian Gods & 776 BC Olympics',
+      'Marathon, Thermopylae & Salamis',
+      'Socrates, Hippocrates & Alexander the Great',
+    ],
+  },
+  ks2_early_islamic_baghdad: {
+    period: 'c. AD 750 – 1258',
+    synopsis:
+      "While Anglo-Saxon towns in Britain held just a few thousand people around AD 900, nearly one million citizens lived inside the dazzling brick walls of Baghdad! Watch Caliph al-Mansur lay out his circular Round City beside the River Tigris in AD 762, step inside the world-famous House of Wisdom where Muslim, Christian, and Jewish scholars translated ancient books onto cheap Samarkand paper, and discover how al-Khwarizmi gave us zero (0–9), algebra, and algorithms! Craft brass star-finding astrolabes, visit free bimaristan hospitals, sail Indian Ocean dhows, trace Baghdad silver dirhams all the way to Viking York, and uncover how Golden Age science sparked Europe's Renaissance!",
+    tags: [
+      'Round City of Baghdad (AD 762)',
+      'House of Wisdom & Paper Mills',
+      'Zero, Algebra, Astrolabes & Hospitals',
+      'Silk Road Caravans & Viking Dirhams',
+      'Geometric Art, 1258 Siege & Global Legacy',
+    ],
+  },
+  ks2_maya_civilisation: {
+    period: 'c. 2000 BC – AD 1500',
+    synopsis:
+      "How did the Ancient Maya build towering stone step-pyramids, write folding bark-paper books, and invent zero deep inside the tropical rainforests of Mesoamerica? Dive into natural limestone cenote sinkholes, plant Three Sisters gardens of maize, beans, and squash, and uncover the green jade mosaic mask of King Pakal beneath Palenque! Count in base-20 with shells, dots, and bars, track Venus from Chichén Itzá's El Caracol observatory, sip frothy chilli-spiced cacao, bounce heavy rubber balls off padded hips in Pok-ta-Pok, solve the AD 900 drought mystery, and meet seven million proud Maya people thriving today!",
+    tags: [
+      'Rainforest Cities, Cenotes & Maize',
+      'Tikal, Palenque & King Pakal',
+      'Maya Glyphs, Bark Codices & Zero',
+      'Frothy Cacao & Pok-ta-Pok Ballcourts',
+      'Chichén Itzá, AD 900 & 7 Million Maya Today',
+    ],
+  },
 };
 
 /**

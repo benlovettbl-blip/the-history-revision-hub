@@ -227,6 +227,14 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
         unitTitle = 'Anglo-Saxons & Vikings';
       } else if (unitId === 'ks2_ww2') {
         unitTitle = 'Britain at War (WWII)';
+      } else if (unitId === 'ks2_ancient_egypt') {
+        unitTitle = 'Ancient Egypt';
+      } else if (unitId === 'ks2_ancient_greece') {
+        unitTitle = 'Ancient Greece';
+      } else if (unitId === 'ks2_early_islamic_baghdad') {
+        unitTitle = 'Baghdad c. AD 900';
+      } else if (unitId === 'ks2_maya_civilisation') {
+        unitTitle = 'The Ancient Maya';
       }
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },

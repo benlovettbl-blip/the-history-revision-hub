@@ -636,6 +636,894 @@ const KS3_MARKING_DATA = {
       },
     ],
   },
+  ks2_ancient_egypt: {
+      "unitTitle": "Ancient Egypt (c. 3100 – 30 BC)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Four River Cradles & The Gift of the Nile — Why Did Ancient Egypt Flourish? (c. 3500–2700 BC)",
+              "shortTitle": "Four River Cradles & The G",
+              "enquiryFocus": "Where did the earliest river civilisations grow, and why did Ancient Egypt flourish beside the River Nile?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "Which four earliest river civilisations grew beside great rivers across Africa and Asia from around 3500 BC?",
+                      "a": "Ancient Sumer, Indus Valley, Shang Dynasty, and Ancient Egypt",
+                      "exp": "All four earliest civilisations flourished beside great rivers: Tigris/Euphrates, Indus, Yellow River, and the River Nile!"
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "What did Ancient Egyptians call the rich black silt left behind by the summer Nile flood (inundation)?",
+                      "a": "Kemet",
+                      "exp": "Kemet meant \"Black Land\" for the dark fertile Nile mud, contrasted against Deshret (\"Red Land\"), the hot dry desert."
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "What was a \"shaduf\" used for by Ancient Egyptian farmers?",
+                      "a": "Lifting buckets of Nile water onto fields using a weighted wooden lever",
+                      "exp": "A shaduf used a heavy mud counterweight on a pivoting pole so farmers could hoist Nile water easily into irrigation ditches."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "Why was \"Upper Egypt\" in the south and \"Lower Egypt\" in the north near the Mediterranean Sea?",
+                      "a": "The River Nile flows downhill northwards from high southern land to the low northern delta",
+                      "exp": "\"Upper\" and \"Lower\" describe land height along the Nile: high upstream mountains in the south down to the low delta in the north!"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Pyramids of Giza & The Great Sphinx — How Were Giant Stone Tombs Built? (c. 2670–2500 BC)",
+              "shortTitle": "Pyramids of Giza & The Gre",
+              "enquiryFocus": "Why and how did Old Kingdom Egyptians build giant stone pyramids and the Great Sphinx at Giza?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "Which brilliant royal architect designed Egypt’s first stone tomb — Pharaoh Djoser’s Step Pyramid at Saqqara (c. 2670 BC)?",
+                      "a": "Imhotep",
+                      "exp": "Around 2670 BC, royal architect Imhotep stacked six stone platforms at Saqqara to create Pharaoh Djoser’s pioneering Step Pyramid."
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "How tall was Pharaoh Khufu’s Great Pyramid at Giza originally, and roughly how many limestone blocks formed it?",
+                      "a": "146 metres tall and 2.3 million limestone blocks",
+                      "exp": "Standing 146 metres high from around 2.3 million blocks, Khufu’s Great Pyramid remained the tallest building on Earth for nearly 4,000 years!"
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "What clever trick helped Egyptian rope teams pull heavy wooden sledges across desert sand at Giza?",
+                      "a": "Pouring water onto the sand right in front of the sledge runners to halve friction",
+                      "exp": "Dampening desert sand stopped dry grains piling up ahead of wooden sledges, cutting the pulling force needed in half!"
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "What archaeological evidence proved that paid skilled workers and farmers — NOT slaves — built the Giza pyramids?",
+                      "a": "Walled builders’ villages with giant bread bakeries, beef and fish rations, and healed bones",
+                      "exp": "Excavations uncovered neat workers’ towns, bakeries, prime meat and fish rations, and skeletons with doctor-treated fractures."
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Scribes, Hieroglyphs & Everyday Life — How Did Ordinary Egyptians Live? (c. 2500–1200 BC)",
+              "shortTitle": "Scribes, Hieroglyphs & Eve",
+              "enquiryFocus": "How did everyday life differ across Egypt’s social pyramid, and how did historians finally crack hieroglyphs?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "On Ancient Egypt’s social pyramid, which group formed the widest layer right at the bottom and grew everyone’s food?",
+                      "a": "Peasant farmers",
+                      "exp": "Millions of peasant farmers ploughed fields, dug canals, and grew the wheat and barley taxes that fed all Egypt."
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "Why did Egyptian families build whitewashed mud-brick houses with small high windows and flat roofs?",
+                      "a": "To bounce away fierce sun, keep rooms shady, and sleep on cool flat roofs at night",
+                      "exp": "Whitewashed mud-brick walls reflected scorching desert sunlight, while flat roofs caught cool evening river breezes."
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "What was \"Senet\", found in wealthy tombs as glazed boxes and scratched by farmers onto stone steps?",
+                      "a": "A thirty-square Egyptian board game played with throwing sticks and counters",
+                      "exp": "Rich and poor Egyptians alike loved racing counters across thirty-square Senet boards!"
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "Roughly how many sacred picture and sound signs (hieroglyphs) did pupils at Egyptian scribe school have to learn?",
+                      "a": "Over 700 hieroglyphs",
+                      "exp": "Mastering over 700 hieroglyphs with chewed reed brushes took years of practice on pottery scraps before writing on papyrus scrolls."
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Gods, Mummies & Weighing the Heart — What Did Egyptians Believe About Death? (c. 2000–1000 BC)",
+              "shortTitle": "Gods, Mummies & Weighing t",
+              "enquiryFocus": "What did Ancient Egyptians believe happened after death, and why did they make mummies?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "Which black jackal-headed Egyptian god guarded cemeteries and watched over mummification?",
+                      "a": "Anubis",
+                      "exp": "Anubis was shown as a watchful black desert jackal who protected tombs, guided mummification, and worked the judgement scales."
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "How many days did full Egyptian mummification take, and what dry desert salt soaked up moisture from the body?",
+                      "a": "Seventy days using dry natron salt",
+                      "exp": "Full mummification took seventy days, including forty days packed under dry natron salt before oiling and wrapping in linen."
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "Why did Egyptian embalmers keep the heart inside the chest while storing four other organs in Canopic jars?",
+                      "a": "They believed the heart held a person's memories and had to be weighed by Anubis",
+                      "exp": "Egyptians believed the heart held wisdom, feelings, and deeds, so Anubis weighed it against Ma'at's feather of truth!"
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "What job were small blue shabti figurines buried inside Egyptian tombs meant to do?",
+                      "a": "Magically wake up and do farm work for their owner in the Field of Reeds",
+                      "exp": "Shabtis carried tiny hoes and baskets so they could answer Osiris's call and plough afterlife fields for their owner."
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Hatshepsut, Nefertiti & Ramesses II — Who Were Egypt's Mightiest New Kingdom Rulers? (c. 1500–1213 BC)",
+              "shortTitle": "Hatshepsut, Nefertiti & Ra",
+              "enquiryFocus": "What made Hatshepsut, Nefertiti, and Ramesses II three of Ancient Egypt's most remarkable New Kingdom rulers?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "Which royal symbol did female Pharaoh Hatshepsut wear on statues to show she held full kingly authority?",
+                      "a": "The traditional royal false beard and striped headcloth",
+                      "exp": "Hatshepsut commissioned statues and sphinxes showing her wearing the striped nemes headcloth and ceremonial false beard of kings."
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "What precious living cargo did Hatshepsut's Red Sea trading ships bring back in baskets from the Land of Punt?",
+                      "a": "Living frankincense trees along with gold and ebony",
+                      "exp": "Temple reliefs at Deir el-Bahari proudly show sailors carrying living frankincense trees in baskets back from Punt!"
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "Which single sun-disc god did Pharaoh Akhenaten and Queen Nefertiti worship at their new desert capital of Amarna?",
+                      "a": "Aten",
+                      "exp": "Akhenaten and Queen Nefertiti shocked traditional priests by turning away from Karnak's many gods to worship the sun-disc Aten."
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "How many years did Ramesses II rule Egypt, and how tall are his four seated cliff statues at Abu Simbel?",
+                      "a": "Sixty-six years; twenty metres tall",
+                      "exp": "Ramesses the Great reigned for 66 years (1279–1213 BC) and carved four 20-metre colossi into the cliffs at Abu Simbel."
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: Tutankhamun's Tomb & Cleopatra VII — How Did Ancient Egypt End & Live On? (1332–30 BC & AD 1922)",
+              "shortTitle": "Tutankhamun's Tomb & Cleop",
+              "enquiryFocus": "Why did Tutankhamun's hidden tomb survive until 1922, and how did Cleopatra VII's reign end pharaonic Egypt?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "Why did New Kingdom pharaohs like Tutankhamun cut hidden tombs in the Valley of the Kings instead of building pyramids?",
+                      "a": "Giant pyramids stood out across the desert and attracted tomb robbers",
+                      "exp": "Hidden rock-cut tombs deep inside desert cliffs were meant to keep royal mummies and treasures safe from thieves."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Who uncovered the first buried stone step leading down to Tutankhamun's tomb KV62 in November 1922?",
+                      "a": "Egyptian water-boy Hussein Abdel Rassoul working with Howard Carter's team",
+                      "exp": "While hollowing sand to rest water jars in November 1922, Hussein Abdel Rassoul struck the top stone step of KV62!"
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "Roughly how many treasures were recorded inside KV62, and how heavy is Tutankhamun's solid gold death mask?",
+                      "a": "Over 5,000 treasures and an 11-kilogram solid gold death mask",
+                      "exp": "Carter's team spent ten years cataloguing over 5,000 items, crowned by Tutankhamun's 11kg solid gold inlaid death mask."
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "What set Queen Cleopatra VII apart from earlier Greek-speaking Ptolemaic rulers in Alexandria?",
+                      "a": "She learned to speak fluent Egyptian alongside eight other languages",
+                      "exp": "Cleopatra VII was a gifted scholar and diplomat who spoke Egyptian plus eight other languages, winning deep loyalty along the Nile."
+                  }
+              ]
+          }
+      ]
+  },
+  ks2_ancient_greece: {
+      "unitTitle": "Ancient Greece (c. 800 – 146 BC)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Mountains, Islands & Rival Poleis — Why Was Ancient Greece Divided Into City-States? (c. 800–500 BC)",
+              "shortTitle": "Mountains, Islands & Rival",
+              "enquiryFocus": "Why did geography divide Ancient Greece into rival city-states, and what shared culture still united all Greeks?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "Which famous gateway guarded the Bronze Age mainland fortress of Mycenae around 1250 BC?",
+                      "a": "The Lion Gate",
+                      "exp": "Bronze Age Mycenaean stonemasons crowned their giant limestone fortress entrance with two carved lions around 1250 BC."
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "Why did Ancient Greece develop into separate city-states (poleis) instead of one united kingdom?",
+                      "a": "Steep rocky mountains and over 1,000 Aegean islands separated communities",
+                      "exp": "Mountain barriers and scattered islands isolated valleys and harbours, so each polis governed itself independently."
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "Inside a Greek polis, what was the difference between the Acropolis and the Agora?",
+                      "a": "The Acropolis was the high fortified temple hill, while the Agora was the open marketplace below",
+                      "exp": "Acropolis means 'high city' (fortress and temples), whereas the sunny Agora below buzzed with market stalls and debate."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "From which seafaring traders did Greeks adapt symbols around 800 BC to create their 24-letter alphabet?",
+                      "a": "Phoenicians",
+                      "exp": "Greek merchants adapted Phoenician letters and cleverly added vowels to create a 24-letter alphabet starting with Alpha and Beta."
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Athens vs Sparta — Where Would You Rather Grow Up in Ancient Greece? (c. 508–430 BC)",
+              "shortTitle": "Athens vs Sparta",
+              "enquiryFocus": "How did democratic Athens and warrior Sparta govern their cities differently, and whose lives were freer in each polis?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "What does the Ancient Greek word 'demokratia' (invented in Athens around 508 BC) literally mean?",
+                      "a": "People-power (rule by the citizens)",
+                      "exp": "Combining demos (the people) and kratos (power), demokratia gave adult male Athenian citizens a direct vote on laws."
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "Which groups living in Athens were completely shut out from voting on the Pnyx hill?",
+                      "a": "Women, enslaved people, and foreign-born metics",
+                      "exp": "Only adult men with Athenian citizen parents could vote in the Assembly — women, enslaved people, and metics were excluded."
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "What job did the slotted marble 'kleroterion' machine do in Athens?",
+                      "a": "Picked 500 courtroom jurors fairly at random so nobody could bribe them",
+                      "exp": "Citizens placed name-tickets into the marble slots while falling black and white balls chose jurors by pure chance."
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "At what age did Spartan citizen boys leave home to enter the tough 'agoge' military barracks?",
+                      "a": "Seven years old",
+                      "exp": "From age seven, Spartan boys lived together in strict agoge barracks, training barefoot and sleeping on river reeds."
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Mount Olympus, Myths & The Ancient Olympics — How Did Religion Shape Greek Life? (776–400 BC)",
+              "shortTitle": "Mount Olympus, Myths & The",
+              "enquiryFocus": "How did belief in the Olympian gods inspire Greek temples, hero myths, and the Ancient Olympic Games?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "Where did Ancient Greeks believe the twelve chief Olympian gods and goddesses lived?",
+                      "a": "High on snow-capped Mount Olympus",
+                      "exp": "Mount Olympus, the highest mountain peak in Greece, was imagined as the cloud-wrapped home of Zeus, Hera, Athena, and the other Olympians."
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "Which gleaming marble temple was built atop Athens's Acropolis to honour wise warrior goddess Athena?",
+                      "a": "The Parthenon",
+                      "exp": "Athens built the white-marble Parthenon on the Acropolis to house Phidias's towering gold-and-ivory statue of Athena Parthenos."
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "Why did Greek kings, generals, and travellers climb high up to the sanctuary of Delphi?",
+                      "a": "To ask Apollo's Oracle (the priestess Pythia) for wise guidance about the future",
+                      "exp": "Greeks believed god Apollo spoke mysterious prophecies through his priestess, the Pythia, at mountain Delphi."
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "In what year were the first recorded Ancient Olympic Games held at Olympia in honour of Zeus?",
+                      "a": "776 BC",
+                      "exp": "From 776 BC, Greeks gathered every four summers at Olympia to honour king of the gods Zeus with athletic contests."
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Marathon, Thermopylae & Salamis — How Did Tiny City-States Defeat the Persian Empire? (490–479 BC)",
+              "shortTitle": "Marathon, Thermopylae & Sa",
+              "enquiryFocus": "How did tiny, rival Greek city-states unite to defeat the mighty Persian Empire between 490 and 479 BC?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "What do historians call the tight shoulder-to-shoulder battle formation of Greek hoplites locking shields together?",
+                      "a": "A phalanx",
+                      "exp": "In a phalanx, citizen hoplites overlapped heavy round bronze shields and pointed rows of long spears forward like a wall."
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "Which legendary messenger ran roughly twenty-six miles from the battlefield of Marathon to Athens in 490 BC?",
+                      "a": "Pheidippides",
+                      "exp": "Pheidippides’s famous run from Marathon to announce Athens’s victory in 490 BC inspired the modern 26.2-mile marathon race!"
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "Which Spartan king led 300 Spartans and Greek allies to hold the narrow mountain pass of Thermopylae in 480 BC?",
+                      "a": "King Leonidas",
+                      "exp": "King Leonidas and his force held the narrow coastal pass of Thermopylae for three days against King Xerxes’s huge invading army."
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "How many oarsmen rowed an ancient Greek wooden trireme, and what weapon sat at its waterline prow?",
+                      "a": "170 oarsmen on three levels and a heavy bronze ram",
+                      "exp": "Triple-banked rows of 170 free oarsmen drove each nimble wooden trireme forward so its bronze ram smashed enemy hulls."
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Theatre, Philosophy, Maths & Medicine — How Did Greek Thinkers Change Human Knowledge? (c. 460–322 BC)",
+              "shortTitle": "Theatre, Philosophy, Maths",
+              "enquiryFocus": "How did Ancient Greek playwrights, philosophers, doctors, and mathematicians transform human knowledge?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "Roughly how many spectators could sit inside the curved stone hillside amphitheatre at Epidaurus and still hear clearly?",
+                      "a": "About 14,000 spectators",
+                      "exp": "Epidaurus’s semicircular limestone bowl seated around 14,000 people and carried stage voices right to the top row."
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "What were the two main types of plays performed by masked actors at Greek festivals for Dionysus?",
+                      "a": "Tragedies and comedies",
+                      "exp": "Greek playwrights wrote serious tragedies about fate and pride alongside lively comedies poking fun at leaders and daily life."
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "What does the Greek word \"philosopher\" literally mean, and which three thinkers formed Athens’s famous chain of teachers?",
+                      "a": "\"Lover of wisdom\" — Socrates taught Plato, and Plato taught Aristotle",
+                      "exp": "Socrates questioned citizens in the Agora, his pupil Plato founded the Academy, and Plato’s pupil Aristotle classified living nature."
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "On the island of Kos, how did physician Hippocrates change the way Greek doctors treated sick patients?",
+                      "a": "He observed natural symptoms, diet, and rest instead of blaming angry gods",
+                      "exp": "Hippocrates taught careful clinical observation and inspired the ethical Hippocratic Oath still honoured by doctors."
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: Alexander the Great & Our World Today — What Is Ancient Greece’s Lasting Legacy? (336–146 BC & Today)",
+              "shortTitle": "Alexander the Great & Our ",
+              "enquiryFocus": "How did Alexander the Great spread Greek culture, and what is Ancient Greece’s lasting legacy in our world today?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "Which famous philosopher tutored young Alexander of Macedon, and what was the name of Alexander’s beloved warhorse?",
+                      "a": "Tutored by Aristotle; rode his warhorse Bucephalus",
+                      "exp": "Aristotle sparked Alexander’s love of Greek learning, while young Alexander famously tamed his black warhorse Bucephalus."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Which two famous landmarks stood in Egypt’s Hellenistic city of Alexandria?",
+                      "a": "The Great Library of papyrus scrolls and the towering Pharos Lighthouse",
+                      "exp": "Alexandria in Egypt boasted the ancient world’s greatest scroll library alongside the sky-scraping Pharos Lighthouse."
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "What happened in 146 BC when the Roman Republic conquered mainland Greece?",
+                      "a": "Rome ruled Greece politically, yet eagerly copied Greek statues, temples, and teachers",
+                      "exp": "Even after conquering Greece in 146 BC, Romans deeply admired Greek art, theatre, philosophy, and architecture."
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "How can you recognise a Greek Corinthian column capital compared with plain Doric and scrolled Ionic capitals?",
+                      "a": "It is decorated with ornate carved acanthus leaves",
+                      "exp": "Doric tops are plain and sturdy, Ionic tops feature twin spiral scrolls, and Corinthian tops bloom with carved acanthus leaves."
+                  }
+              ]
+          }
+      ]
+  },
+  ks2_early_islamic_baghdad: {
+      "unitTitle": "Early Islamic Baghdad (c. AD 750 – 1258)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Crossroads of the World — Why Did Caliph al-Mansur Build the Round City of Baghdad? (AD 750–800)",
+              "shortTitle": "Crossroads of the World",
+              "enquiryFocus": "Why did Caliph al-Mansur build the Round City of Baghdad, and how did it compare with Britain around AD 900?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "Which Abbasid Caliph founded the circular Round City of Baghdad beside the River Tigris in AD 762?",
+                      "a": "Caliph al-Mansur",
+                      "exp": "Abbasid Caliph al-Mansur chose a fertile bend on the River Tigris in AD 762 and hired 100,000 workers to build Baghdad."
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "What did Baghdad’s official Arabic name, Madinat al-Salam, mean in English?",
+                      "a": "City of Peace",
+                      "exp": "Caliph al-Mansur officially named his planned circular capital Madinat al-Salam, meaning the \"City of Peace\"."
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "Which two buildings stood right at the very centre of the two-kilometre Round City of Baghdad?",
+                      "a": "The Great Mosque and the Green Dome Palace",
+                      "exp": "Straight roads from the Kufa, Basra, Khorasan, and Syria gates led to the central park holding the Great Mosque and Green Dome Palace."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "Roughly how many people lived in Baghdad by AD 900 compared with major Anglo-Saxon towns in Britain?",
+                      "a": "Nearly 1,000,000 in Baghdad vs 5,000–10,000 in big Anglo-Saxon towns",
+                      "exp": "By AD 900, Baghdad held nearly one million citizens with paved streets and libraries, while large Anglo-Saxon towns held 5,000–10,000."
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Inside the House of Wisdom — How Did Paper & Translators Rescue World Knowledge? (c. AD 800–1000)",
+              "shortTitle": "Inside the House of Wisdom",
+              "enquiryFocus": "How did cheap paper and Baghdad’s House of Wisdom rescue and expand world knowledge?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "What was Baghdad’s famous royal library and research academy called in English and Arabic?",
+                      "a": "The House of Wisdom (Bayt al-Hikma)",
+                      "exp": "Expanded by Caliphs Harun al-Rashid and al-Ma’mun, the House of Wisdom (Bayt al-Hikma) welcomed scholars and translators from many lands."
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "Through which Central Asian Silk Road city did Chinese paper-making reach Baghdad, replacing costly European parchment?",
+                      "a": "Samarkand",
+                      "exp": "Craftworkers via Samarkand taught Islamic mills how to beat cotton and linen rags into cheap, smooth paper, sparking over 100 bookshops in Baghdad."
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "Who was Hunayn ibn Ishaq inside ninth-century Baghdad’s House of Wisdom?",
+                      "a": "A gifted Christian doctor who translated Greek medical books into Arabic",
+                      "exp": "Hunayn ibn Ishaq worked alongside Muslim and Jewish colleagues, translating Greek medical scrolls into clear Arabic and testing their ideas."
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "What lasting centre of learning did Fatima al-Fihri found in Fez, Morocco, in AD 859?",
+                      "a": "Al-Qarawiyyin mosque and teaching college",
+                      "exp": "Fatima al-Fihri used her family inheritance in AD 859 to build al-Qarawiyyin in Fez, which still welcomes students today!"
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Zero, Algebra, Astrolabes & Free Hospitals — What Did Golden Age Scientists Discover? (c. AD 820–1050)",
+              "shortTitle": "Zero, Algebra, Astrolabes ",
+              "enquiryFocus": "How did Golden Age mathematicians, astronomers, engineers, and doctors change world science forever?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "Which Baghdad mathematician championed 0–9 numerals (including zero, sifr) and gave us the words \"algebra\" and \"algorithm\"?",
+                      "a": "Muhammad al-Khwarizmi",
+                      "exp": "Muhammad al-Khwarizmi’s book al-Jabr gave us \"algebra\", while his own name in Latin gave us \"algorithm\"."
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "What precision brass instrument did tenth-century craftworker Mariam al-Asturlabi make to map stars, time, and Mecca?",
+                      "a": "An astrolabe",
+                      "exp": "Mariam al-Asturlabi crafted intricate brass astrolabes used by astronomers, sailors, and travellers across the Islamic world."
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "What did scientist Ibn al-Haytham prove inside his pitch-dark pinhole room (camera obscura)?",
+                      "a": "Light travels in straight lines from objects into our eyes",
+                      "exp": "By watching an upside-down outdoor scene shine through a tiny pinhole onto a dark wall, Ibn al-Haytham proved light travels in straight lines into our eyes."
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "Why did Baghdad’s chief physician al-Razi hang fresh pieces of meat across different parts of the city?",
+                      "a": "To find where meat rotted slowest so he could build a hospital in the cleanest air",
+                      "exp": "Al-Razi chose the spot where the meat rotted slowest, knowing clean air would help bimaristan patients recover!"
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Silk Road Caravans, Dhows & Viking Dirhams — How Far Did Baghdad's Traders Reach? (c. AD 850–1000)",
+              "shortTitle": "Silk Road Caravans, Dhows ",
+              "enquiryFocus": "How did land caravans and sea dhows make Baghdad a trading superpower, and how did Islamic coins reach Britain?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "Roughly how far apart were fortified roadside caravanserais built along the Silk Road?",
+                      "a": "Every thirty kilometres (about one day’s camel march)",
+                      "exp": "Spacing walled caravanserais every 30 km meant camel caravans could reach safe shelter, water, and locked gates before nightfall."
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "What type of stitched wooden sailing ship carried merchants from Basra across the Indian Ocean?",
+                      "a": "An Arab dhow with triangular sails",
+                      "exp": "Stitched wooden dhows rigged with triangular sails rode monsoon winds across the Indian Ocean while captains navigated with brass astrolabes."
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "Which Arabic banking word for a signed paper payment slip gave English the word \"cheque\"?",
+                      "a": "Sakk",
+                      "exp": "Baghdad merchants carried a signed paper sakk instead of heavy gold bags and cashed it safely in distant cities."
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "Near which Viking city in England have archaeologists dug up hoards containing Abbasid silver dirhams?",
+                      "a": "Jorvik (modern York)",
+                      "exp": "Viking traders brought pure Islamic silver dirhams along Russian rivers to Scandinavia and Viking Yorkshire around Jorvik!"
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Geometric Tilework, Calligraphy & Chess — What Was Everyday Life Like in Baghdad c. AD 900?",
+              "shortTitle": "Geometric Tilework, Callig",
+              "enquiryFocus": "How did Baghdad’s families keep cool, eat, worship, create dazzling art, and relax around AD 900?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "How did a tall windcatcher (badgir) tower cool a Baghdad courtyard house without electricity?",
+                      "a": "By scooping high outdoor breezes down indoors while pushing hot air out",
+                      "exp": "Facing into the wind above rooftop level, badgir windcatcher towers funnelled cool air straight into shaded courtyard rooms."
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "Which group of crops spread through Baghdad’s irrigated orchards and kitchens around AD 900?",
+                      "a": "Lemons, oranges, aubergines, spinach, pomegranates, almonds, and cane sugar",
+                      "exp": "Canal waterwheels allowed citrus fruits, aubergines, spinach, pomegranates, almonds, and sweet cane sugar to flourish."
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "Why did artists decorating mosques avoid carving human or animal statues?",
+                      "a": "So worshippers focused purely on honouring God rather than statues, inspiring geometry, arabesque, and calligraphy",
+                      "exp": "Avoiding idols in worship inspired Islamic artists to master mathematical star mosaics, leafy arabesques, and sacred Arabic calligraphy."
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "What were shimmering metallic-glazed ceramic dishes and royal embroidered silk bands called in Baghdad?",
+                      "a": "Lustreware bowls and tiraz silk robes",
+                      "exp": "Iraqi potters invented metallic lustreware glazes that shone like gold, while royal tiraz workshops wove honoured silk robes."
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: The 1258 Siege of Baghdad & Our World Today — Did the Golden Age Really Disappear? (AD 1258 & Today)",
+              "shortTitle": "The 1258 Siege of Baghdad ",
+              "enquiryFocus": "Why did Baghdad fall in 1258, how did Golden Age ideas survive, and how do they shape our lives today?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "Which Mongol commander besieged and captured Baghdad in January–February AD 1258?",
+                      "a": "Hulagu Khan",
+                      "exp": "Hulagu Khan’s vast Mongol army surrounded Baghdad on the Tigris in January 1258 and breached its walls with counterweight trebuchets in February."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Why weren’t all of Baghdad’s Golden Age discoveries lost forever when the House of Wisdom burned in 1258?",
+                      "a": "Copies written on paper already sat safely in libraries in Cairo, Damascus, Samarkand, and Islamic Spain",
+                      "exp": "Because cheap paper had spread centuries earlier, scholars across the wider Islamic world already owned thousands of manuscript copies!"
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "In which Spanish city did Muslim, Jewish, and Christian scholars translate Arabic science books into Latin?",
+                      "a": "Toledo",
+                      "exp": "Toledo’s famous multi-faith translation workshops turned al-Khwarizmi, Ibn al-Haytham, and Ibn Sina into Latin, helping spark Europe’s Renaissance."
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "Which magnificent palace in Granada, Spain, shows Islamic architecture flourishing in Al-Andalus even after 1258?",
+                      "a": "The Alhambra",
+                      "exp": "With its carved stucco arches, geometric tiles, and marble courtyards, the Alhambra in Spain showcases continuing Islamic artistry."
+                  }
+              ]
+          }
+      ]
+  },
+  ks2_maya_civilisation: {
+      "unitTitle": "The Ancient Maya (c. 2000 BC – AD 1500)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Cities in the Rainforest — How Did the Maya Build Thriving Cities in Mesoamerica? (c. 2000 BC–AD 600)",
+              "shortTitle": "Cities in the Rainforest",
+              "enquiryFocus": "How did the Maya build thriving stone cities in Mesoamerica without metal tools or wheels?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "Which five modern countries make up the ancient Maya homeland in Mesoamerica?",
+                      "a": "Southern Mexico, Guatemala, Belize, Honduras, and El Salvador",
+                      "exp": "Maya villages and stone cities stretched across Mesoamerica from southern Mexico through Guatemala, Belize, Honduras, and El Salvador!"
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "What razor-sharp black volcanic glass did Maya workers dig from the southern highlands?",
+                      "a": "Obsidian",
+                      "exp": "Highland volcanoes formed glassy black obsidian, which Maya craftworkers chipped into cutting blades sharper than modern steel!"
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "What are the deep natural limestone sinkholes used as freshwater wells across northern Yucatán called?",
+                      "a": "Cenotes",
+                      "exp": "Because rainwater soaked straight through porous Yucatán limestone, collapsed natural sinkholes called cenotes gave vital drinking water."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "Which three crops grew together in clever Mesoamerican \"Three Sisters\" companion planting?",
+                      "a": "Maize, climbing beans, and broad-leaved squash",
+                      "exp": "Tall maize supported climbing beans, beans enriched the soil, and broad squash leaves shaded the earth to hold in moisture!"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Step Pyramids & Jade Kings — How Were Rival Maya City-States Ruled? (c. AD 250–900)",
+              "shortTitle": "Step Pyramids & Jade Kings",
+              "enquiryFocus": "Were the Classic Maya ruled as one empire, and what reveals the power of their kings and queens?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "How was the Classic Maya world organised politically between AD 250 and 900?",
+                      "a": "Over forty rival independent city-states like Tikal, Calakmul, and Palenque",
+                      "exp": "Just like Ancient Greece, the Classic Maya lived in dozens of independent city-states that traded, allied, and competed!"
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "What did the royal Maya title \"K'uhul Ajaw\" mean?",
+                      "a": "Holy Lord",
+                      "exp": "Maya people believed their K'uhul Ajaw (\"holy lord\") spoke directly with the gods to secure rain and rich harvests."
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "How old was K'inich Janaab' Pakal when he became ruler of Palenque in AD 615, and how long did he reign?",
+                      "a": "Aged 12, ruling for 68 years",
+                      "exp": "Pakal took Palenque’s throne aged twelve in AD 615 and ruled for sixty-eight years until AD 683!"
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "What dazzling treasure did archaeologists uncover inside King Pakal’s tomb beneath the Temple of the Inscriptions?",
+                      "a": "A life-sized funerary mask made from green jade mosaic tiles",
+                      "exp": "Craftworkers fitted over two hundred polished green jade pieces with shell and obsidian eyes over King Pakal’s face!"
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Glyphs, Bark-Paper Books & Zero — Why Were Maya Scribes & Astronomers So Brilliant? (c. AD 300–900)",
+              "shortTitle": "Glyphs, Bark-Paper Books &",
+              "enquiryFocus": "Why do historians celebrate Maya scribes, mathematicians, and astronomers as world pioneers?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "Roughly how many word and syllable hieroglyphs could Classic Maya scribes combine to write their language?",
+                      "a": "Over 800 glyphs",
+                      "exp": "Mixing over 800 whole-word signs and spoken syllable signs let Maya scribes write any sentence on stone stelae or bark paper!"
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "What were Maya accordion-folded books called, and what material were their pages made from?",
+                      "a": "Codices made from softened fig-tree bark coated with white lime paste",
+                      "exp": "Scribes beat inner fig-tree bark flat, coated it in smooth white lime paste, and painted codices like the Dresden Codex with turkey-quill brushes!"
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "In Maya base-20 mathematics, what values did a shell, a pebble dot, and a wooden bar stand for?",
+                      "a": "Shell = 0, pebble dot = 1, wooden bar = 5",
+                      "exp": "With just a shell for zero, a dot for one, and a bar for five, Maya mathematicians wrote huge base-20 numbers effortlessly!"
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "What was \"El Caracol\" at the Maya city of Chichén Itzá?",
+                      "a": "A round stone astronomical observatory aligned with Venus and sunsets",
+                      "exp": "Without glass telescopes, Maya priests sighted Venus and solar alignments through narrow windows high inside El Caracol!"
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Maize Tortillas, Frothy Cacao & Pok-ta-Pok — What Was Everyday Maya Life Like? (c. AD 600–900)",
+              "shortTitle": "Maize Tortillas, Frothy Ca",
+              "enquiryFocus": "What did Classic Maya people eat, trade, and play in everyday life between AD 600 and 900?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "What volcanic stone grinding tool did Maya cooks use every morning to crush lime-soaked maize into dough?",
+                      "a": "A stone metate",
+                      "exp": "After soaking maize overnight in limewater (nixtamal), cooks rolled a stone pin across a volcanic metate to make tortilla and tamale dough."
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "How did royal Maya hosts flavour their frothy cacao drink, and how else were dried cacao beans used?",
+                      "a": "With fiery chilli peppers and wild honey; spent as everyday market money",
+                      "exp": "Bitter cacao was whipped into a spiced royal drink, while dried beans worked as cash — 10 beans for a rabbit and 100 for a turkey!"
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "Which shiny black volcanic glass did highland Maya traders swap for razor-sharp cutting blades?",
+                      "a": "Obsidian",
+                      "exp": "Because the Classic Maya did not smelt iron, highland volcanic obsidian gave craftworkers and farmers ultra-sharp blades."
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "How did Maya traders transport heavy jade, salt, and feathers without horses, oxen, or wheeled carts?",
+                      "a": "Carried by human porters with forehead straps and paddled in wooden canoes",
+                      "exp": "Porters walked stone causeways (sacbeob) using forehead tump-lines while dugout canoes paddled rivers and coastal waters."
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Maize Gods, Rain Caves & Chichén Itzá — How Did Maya Beliefs Shape Their World? (c. AD 600–1200)",
+              "shortTitle": "Maize Gods, Rain Caves & C",
+              "enquiryFocus": "What did the Maya believe about creation and the gods, and how did beliefs shape Chichén Itzá?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "According to the sacred Maya book Popol Vuh, what ingredient did the gods successfully use to make human beings?",
+                      "a": "Yellow and white maize dough",
+                      "exp": "After mud people crumbled and wooden people forgot their makers, the gods kneaded sacred yellow and white maize dough into humans!"
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "What did the Maya call the eerie watery underworld where the Hero Twins outsmarted its fearsome lords?",
+                      "a": "Xibalba",
+                      "exp": "Maya communities believed deep limestone caves and water-filled cenotes were portals leading down into Xibalba."
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "Which long-nosed Maya god controlled life-giving rain, thunder, and lightning?",
+                      "a": "Chaac",
+                      "exp": "Carved masks of long-nosed Chaac covered dry Yucatán palaces like Kabah, and priests offered him gifts painted in turquoise Maya Blue."
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "Why do El Castillo’s four staircases (4 × 91 steps) plus its top temple platform add up to 365?",
+                      "a": "To match the 365 days of the solar year",
+                      "exp": "Maya architect-astronomers turned El Castillo into a giant stone calendar honouring every day of the Haab' solar year."
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: The AD 900 Mystery & Living Maya Today — Did the Maya Really Vanish? (c. AD 800–Present)",
+              "shortTitle": "The AD 900 Mystery & Livin",
+              "enquiryFocus": "Why were southern Maya cities abandoned around AD 900, and why is the \"vanished Maya\" story a myth?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "What scientific clue from lake-bed mud and snail shells helped explain why southern cities like Tikal emptied around AD 900?",
+                      "a": "Severe multi-year droughts that dried up southern reservoirs",
+                      "exp": "Chemical clues locked in ancient lake-core shells proved southern lowlands suffered their worst droughts in thousands of years."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Besides drought and warfare, how did burning huge amounts of white lime plaster for pyramids hurt Maya cities?",
+                      "a": "It caused widespread deforestation, letting heavy rain wash away fertile hillside soil",
+                      "exp": "Felling twenty trees to burn just one square metre of stucco plaster stripped hillsides bare and worsened local soil erosion."
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "Which walled Postclassic Maya city perched on Caribbean Sea cliffs thrived with canoe trade centuries after AD 900?",
+                      "a": "Tulum",
+                      "exp": "Northern Yucatán centres like Chichén Itzá, Uxmal, and coastal Tulum flourished long after southern jungle plazas fell quiet."
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "What do historians call an explanation that links several causes together — like drought, deforestation, and war?",
+                      "a": "A multi-causal explanation",
+                      "exp": "Good historians test how environmental pressures (drought and soil loss) interacted with human choices (warfare and plaster burning)."
+                  }
+              ]
+          }
+      ]
+  },
 };
 
 export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
@@ -790,7 +1678,7 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
       <!-- Disciplinary Pathways Reference Card -->
       <div style="margin-top: 36px; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
         <h3 style="margin: 0 0 14px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 10px;">
-          <i class="fa-solid fa-stairs" style="color: #1e3a8a;"></i> ${isKs2 ? 'Young Historian Self-Check Steps (Years 5–6)' : 'KS3 Level Assessment Pathways'}
+          <i class="fa-solid fa-stairs" style="color: #1e3a8a;"></i> ${isKs2 ? 'Young Historian Self-Check Steps (Key Stage 2)' : 'KS3 Level Assessment Pathways'}
         </h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;">
           <div style="padding: 14px; background: #f8fafc; border-radius: 6px; border-left: 4px solid #94a3b8;">

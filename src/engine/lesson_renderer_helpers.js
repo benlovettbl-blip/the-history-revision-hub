@@ -38,6 +38,10 @@ export const KS2_CANONICAL_UNITS = [
   'ks2_romans',
   'ks2_anglo_saxons_vikings',
   'ks2_ww2',
+  'ks2_ancient_egypt',
+  'ks2_ancient_greece',
+  'ks2_early_islamic_baghdad',
+  'ks2_maya_civilisation',
 ];
 export const KS3_CANONICAL_UNITS = [
   'medieval_england',

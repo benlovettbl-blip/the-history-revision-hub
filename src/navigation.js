@@ -112,28 +112,27 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
   }
 
   // Keep search bar placeholder contextual when inside a KS2 unit, normal everywhere else
-  const isStoneAgeKs2 =
-    unitParam === 'ks2_stone_to_iron_age' ||
-    (resolvedData && resolvedData.id === 'ks2_stone_to_iron_age');
-  const isRomansKs2 =
-    unitParam === 'ks2_romans' || (resolvedData && resolvedData.id === 'ks2_romans');
-  const isSaxonsKs2 =
-    unitParam === 'ks2_anglo_saxons_vikings' ||
-    (resolvedData && resolvedData.id === 'ks2_anglo_saxons_vikings');
-  const ks2SearchPillHint = isStoneAgeKs2
-    ? 'Search Stone Age...'
-    : isRomansKs2
-      ? 'Search Romans...'
-      : isSaxonsKs2
-        ? 'Search Saxons...'
-        : 'Search WWII...';
-  const ks2SearchModalHint = isStoneAgeKs2
-    ? 'Search Stonehenge, Skara Brae, Bronze Age, Hillforts...'
-    : isRomansKs2
-      ? 'Search Romans, Celts, Boudicca, Hadrian...'
-      : isSaxonsKs2
-        ? 'Search Saxons, Vikings, Sutton Hoo, Alfred...'
-        : 'Search WWII topics, evacuees, Blitz...';
+  const activeKs2Id = unitParam || (resolvedData && resolvedData.id) || '';
+  const ks2PillHints = {
+    ks2_stone_to_iron_age: 'Search Stone Age...',
+    ks2_romans: 'Search Romans...',
+    ks2_anglo_saxons_vikings: 'Search Saxons...',
+    ks2_ancient_egypt: 'Search Egypt...',
+    ks2_ancient_greece: 'Search Greece...',
+    ks2_early_islamic_baghdad: 'Search Baghdad...',
+    ks2_maya_civilisation: 'Search Maya...',
+  };
+  const ks2ModalHints = {
+    ks2_stone_to_iron_age: 'Search Stonehenge, Skara Brae, Bronze Age, Hillforts...',
+    ks2_romans: 'Search Romans, Celts, Boudicca, Hadrian...',
+    ks2_anglo_saxons_vikings: 'Search Saxons, Vikings, Sutton Hoo, Alfred...',
+    ks2_ancient_egypt: 'Search Nile, Pyramids, Hieroglyphs, Tutankhamun...',
+    ks2_ancient_greece: 'Search Athens, Sparta, Olympics, Alexander...',
+    ks2_early_islamic_baghdad: 'Search Baghdad, House of Wisdom, Silk Road, Astrolabe...',
+    ks2_maya_civilisation: 'Search Tikal, Palenque, Maya Glyphs, Cacao, Chichén Itzá...',
+  };
+  const ks2SearchPillHint = ks2PillHints[activeKs2Id] || 'Search WWII...';
+  const ks2SearchModalHint = ks2ModalHints[activeKs2Id] || 'Search WWII topics, evacuees, Blitz...';
   const searchPlaceholder = document.querySelector('#header-search-bar .search-placeholder');
   if (searchPlaceholder) {
     searchPlaceholder.textContent = isKs2UnitContext
@@ -693,6 +692,10 @@ export function updateBreadcrumbs(customTrail = null) {
     if (id === 'ks2_romans') return 'The Romans in Britain';
     if (id === 'ks2_anglo_saxons_vikings') return 'Anglo-Saxons & Vikings';
     if (id === 'ks2_ww2') return 'World War II & The Home Front';
+    if (id === 'ks2_ancient_egypt') return 'Ancient Egypt';
+    if (id === 'ks2_ancient_greece') return 'Ancient Greece';
+    if (id === 'ks2_early_islamic_baghdad') return 'Baghdad c. AD 900';
+    if (id === 'ks2_maya_civilisation') return 'The Ancient Maya';
     const activeUnit = unitData?.title ? unitData : appStore.state.activeUnitData || {};
     if (activeUnit && activeUnit.shortTitle) return activeUnit.shortTitle;
     if (activeUnit && activeUnit.title) {
@@ -1918,6 +1921,10 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     unitId === 'ks2_stone_to_iron_age' ||
     unitId === 'ks2_romans' ||
     unitId === 'ks2_anglo_saxons_vikings' ||
+    unitId === 'ks2_ancient_egypt' ||
+    unitId === 'ks2_ancient_greece' ||
+    unitId === 'ks2_early_islamic_baghdad' ||
+    unitId === 'ks2_maya_civilisation' ||
     Boolean(unitData.timelineEvents && unitData.timelineEvents.length > 0) ||
     Boolean(unitData.timeline && unitData.timeline.length > 0);
 

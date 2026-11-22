@@ -35,6 +35,10 @@ import { KS2_WW2_CORNERS } from './arena_corners/ks2_ww2.js';
 import { KS2_STONE_TO_IRON_AGE_CORNERS } from './arena_corners/ks2_stone_to_iron_age.js';
 import { KS2_ROMANS_CORNERS } from './arena_corners/ks2_romans.js';
 import { KS2_ANGLO_SAXONS_VIKINGS_CORNERS } from './arena_corners/ks2_anglo_saxons_vikings.js';
+import { KS2_ANCIENT_EGYPT_CORNERS } from './arena_corners/ks2_ancient_egypt.js';
+import { KS2_ANCIENT_GREECE_CORNERS } from './arena_corners/ks2_ancient_greece.js';
+import { KS2_EARLY_ISLAMIC_BAGHDAD_CORNERS } from './arena_corners/ks2_early_islamic_baghdad.js';
+import { KS2_MAYA_CIVILISATION_CORNERS } from './arena_corners/ks2_maya_civilisation.js';
 
 export const ARENA_CORNERS_REGISTRY = {
   cme_new: CME_NEW_CORNERS,
@@ -59,6 +63,10 @@ export const ARENA_CORNERS_REGISTRY = {
   ks2_stone_to_iron_age: KS2_STONE_TO_IRON_AGE_CORNERS,
   ks2_romans: KS2_ROMANS_CORNERS,
   ks2_anglo_saxons_vikings: KS2_ANGLO_SAXONS_VIKINGS_CORNERS,
+  ks2_ancient_egypt: KS2_ANCIENT_EGYPT_CORNERS,
+  ks2_ancient_greece: KS2_ANCIENT_GREECE_CORNERS,
+  ks2_early_islamic_baghdad: KS2_EARLY_ISLAMIC_BAGHDAD_CORNERS,
+  ks2_maya_civilisation: KS2_MAYA_CIVILISATION_CORNERS,
 };
 
 /**

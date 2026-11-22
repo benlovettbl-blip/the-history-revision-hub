@@ -47,6 +47,50 @@
           "assessment": "11 Lesson Worksheets, 28-Page Pupil Workbook, and 44-Question Master Retrieval Quiz Pack alongside the 20-Page Classroom Textbook. Overarching enquiry: 'How did World War II transform children's lives in Britain and Europe?'",
           "smsc": "<strong>Spiritual:</strong> Reflecting on loss, separation, and remembrance. <strong>Moral:</strong> Choices made by rescuers and upstanders (Trevor Chadwick, Doreen Warriner, Nicholas Winton). <strong>Social:</strong> Community resilience during the Blitz, rationing, and post-war rebuilding (NHS, Windermere). <strong>Cultural:</strong> Celebrating pre-war European Jewish family heritage and wartime Home Front life.",
           "careers": "Museum Educator, Archivist, Historian, Cryptographer, Civil Service, Journalist"
+        },
+        {
+          "uid": "ks2_ancient_egypt",
+          "terms": ["Spring 1", "Summer 1"],
+          "shortTitle": "Ancient Egypt — The River Nile, Pyramids, Pharaohs & The Afterlife (c. 3100–30 BC)",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) covering the DfE overview of the four earliest river civilisations (Sumer, Indus, Shang, Egypt) plus an in-depth study of Ancient Egypt: the annual Nile flood (Kemet vs Deshret) and Narmer's unification, Giza pyramids and paid tomb-builder villages, scribes, papyrus, and Champollion cracking the Rosetta Stone, mummification and Weighing of the Heart, New Kingdom rulers Hatshepsut, Nefertiti, and Ramesses II, and Tutankhamun's 1922 tomb discovery alongside Queen Cleopatra VII.",
+          "vocab": "Civilisation, Inundation, Kemet, Shaduf, Pharaoh, Pyramid, Sphinx, Hieroglyphs, Papyrus, Cartouche, Rosetta Stone, Mummification, Natron, Canopic Jars, Shabti, Book of the Dead, Obelisk, Peace Treaty, Sarcophagus",
+          "skills": ["Chronological Comparison of Earliest Civilisations", "Primary Artefact & Tomb Mural Inference", "Cause, Consequence & Engineering", "Beliefs, Values & Archaeological Discovery"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Exploring Ma'at (truth and balance), Osiris, Isis, and Weighing of the Heart. <strong>Moral:</strong> Examining truthfulness in judgement, fair rations for Giza builders, and the world's oldest peace treaty at Kadesh. <strong>Social:</strong> Understanding Egypt's social pyramid from peasant farmers to scribes and female Pharaohs. <strong>Cultural:</strong> Celebrating 3,000 years of African river-valley architecture, medicine, and hieroglyphic art.",
+          "careers": "Egyptologist, Field Archaeologist, Museum Conservator, Epigrapher, Structural Engineer"
+        },
+        {
+          "uid": "ks2_ancient_greece",
+          "terms": ["Summer 1", "Summer 2"],
+          "shortTitle": "Ancient Greece — City-States, Democracy, Myths & Lasting Legacy (c. 800–146 BC)",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) investigating Greek life, achievements, and lasting influence on the western world: Aegean geography and independent poleis, Athenian direct democracy on the Pnyx vs Spartan warrior society, the 12 Olympians, myths, and the 776 BC Olympic Games, hoplites and triremes at Marathon, Thermopylae, and Salamis, Greek theatre, Socrates, Aristotle, and Hippocrates, and Alexander the Great alongside Greek legacies today.",
+          "vocab": "Polis, Acropolis, Agora, Democracy, Citizen, Ostrakon, Kleroterion, Oligarchy, Agoge, Myth, Sanctuary, Sacred Truce, Hoplite, Phalanx, Trireme, Tragedy, Comedy, Philosophy, Hellenistic, Legacy",
+          "skills": ["Civic Comparison (Athens vs Sparta)", "Evaluating Democratic Participation", "Primary Pottery & Inscription Evidence", "Tracing Long-Term Cultural Legacy"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Exploring Olympian gods, Delphi, and the Olympic Sacred Truce. <strong>Moral:</strong> Debating who was included and excluded in Athenian democracy and Socrates's courage to ask questions. <strong>Social:</strong> Comparing women's lives in Athens and Sparta, citizen juries, and open-air community theatre. <strong>Cultural:</strong> Tracing Greek roots in English vocabulary, columns, maths, medicine, and the modern Olympic Games.",
+          "careers": "Classicist, Political Historian, Theatre Director, Medical Historian, Architect, Museum Curator"
+        },
+        {
+          "uid": "ks2_early_islamic_baghdad",
+          "terms": ["Spring 2", "Summer 1"],
+          "shortTitle": "Early Islamic Civilisation — Round City of Baghdad, Silk Roads & House of Wisdom (c. AD 750–1258)",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) contrasting non-European society c. AD 900 with Anglo-Saxon Britain: Caliph al-Mansur's circular brick Round City of Baghdad (AD 762), paper-making and Muslim, Christian, and Jewish translators in the House of Wisdom, al-Khwarizmi's Hindu-Arabic numerals (0–9) and algebra, Mariam al-Asturlabi's astrolabes, Ibn al-Haytham's optics, and free bimaristan hospitals, Silk Road caravans, dhows, and silver dirhams reaching Viking Jorvik, geometric art and everyday life, and the 1258 Mongol siege alongside Baghdad's global legacy.",
+          "vocab": "Caliph, Caliphate, Round City, House of Wisdom, Translation Movement, Paper Mill, Algebra, Algorithm, Zero, Astrolabe, Optics, Bimaristan, Silk Road, Caravanserai, Dhow, Dirham, Calligraphy, Geometric, Arabesque",
+          "skills": ["Simultaneous Chronology & Contrast With Britain c. AD 900", "History of Science, Maths & Medicine", "Global Trade & Numismatic Connections", "Multi-Faith Scholarly Collaboration"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Exploring Islamic scholarship, Kufic calligraphy, and respect for seeking knowledge. <strong>Moral:</strong> Examining free medical care for rich and poor alike in bimaristan hospitals. <strong>Social:</strong> Celebrating Muslim, Christian, and Jewish translators working side by side in Baghdad and Toledo. <strong>Cultural:</strong> Discovering everyday Arabic words, 0–9 numerals, chess, geometric mosaics, and Silk Road links to Viking Britain.",
+          "careers": "Historian of Science, Mathematician, Astronomer, Medical Researcher, Translator, Museum Curator"
+        },
+        {
+          "uid": "ks2_maya_civilisation",
+          "terms": ["Summer 1", "Summer 2"],
+          "shortTitle": "The Ancient Maya — Rainforest Cities, Calendar Maths, Cacao & Pok-ta-Pok (c. 2000 BC–AD 1500)",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) contrasting Mesoamerican society c. AD 900 with Britain: rainforest geography, limestone cenotes, and Three Sisters maize farming, rival city-states (Tikal, Calakmul, Palenque, Copán) and King Pakal's jade mask, 800+ Maya glyphs, bark-paper codices, independent invention of zero, and interlocking Tzolk'in/Haab' calendars, tortillas, frothy cacao, obsidian, and Pok-ta-Pok ballcourts, Popol Vuh myths and Chichén Itzá's equinox serpent shadow, and the AD 900 lowland abandonment alongside 7 million living Maya today.",
+          "vocab": "Mesoamerica, Cenote, Terrace, Three Sisters, Maize, City-State, Ajaw, Step-Pyramid, Jade, Stela, Glyphs, Codex, Base-20, Zero, Tzolk'in, Haab', Metate, Cacao, Obsidian, Pok-ta-Pok, Popol Vuh, Chaac, Kukulkan",
+          "skills": ["Environmental Adaptation & Contrast With Britain c. AD 900", "Decoding Non-European Glyphs & Base-20 Maths", "Testing Multi-Causal Theories (AD 900 Drought)", "Challenging 'Vanished Civilisation' Myths"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Exploring the Popol Vuh creation story, Maize God, rain god Chaac, and equinox alignments at Chichén Itzá. <strong>Moral:</strong> Investigating sustainable rainforest farming vs deforestation and drought lessons around AD 900. <strong>Social:</strong> Understanding city-state diplomacy, royal Maya women (Lady Six Sky), and sacred team sport (Pok-ta-Pok). <strong>Cultural:</strong> Celebrating 7 million living Maya speakers, weavers, and scholars across Mesoamerica today.",
+          "careers": "Mesoamerican Archaeologist, Epigrapher, Paleoclimatologist, Astronomer, Anthropologist, Botanist"
         }
       ]
     },

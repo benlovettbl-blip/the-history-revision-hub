@@ -1,0 +1,434 @@
+{
+  "ancient_greece_aegean_map_ks2.png": {
+    "date": "2026 (Historical Map: c. 800–146 BC)",
+    "creator": "The History Revision Hub Cartography Studio (Natural Earth 50m Public Domain Coastlines)",
+    "repository": "The History Revision Hub Original Digital Cartography",
+    "accession_id": "HRH-MAP-KS2-GREECE-01",
+    "rights_status": "Original In-House Studio Creation — 100% Commercial Copyright Cleared",
+    "commercial_use_permitted": true,
+    "source_url": "https://thehistoryrevisionhub.co.uk"
+  },
+  "athens_vs_sparta_comparison_ks2.png": {
+    "date": "2026 (Educational Diagram: Athens vs Sparta)",
+    "creator": "The History Revision Hub Illustration Studio",
+    "repository": "The History Revision Hub Original Educational Graphics",
+    "accession_id": "HRH-DIAG-KS2-GREECE-02",
+    "rights_status": "Original In-House Studio Creation — 100% Commercial Copyright Cleared",
+    "commercial_use_permitted": true,
+    "source_url": "https://thehistoryrevisionhub.co.uk"
+  },
+  "banner_unit_hero.jpg": {
+    "date": "Parthenon, Athens Greece. Photo taken in 1978.",
+    "creator": "Steve Swayne",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: The Parthenon Athens.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Parthenon_Athens.jpg"
+  },
+  "cape_sounion_poseidon_aegean.jpg": {
+    "date": "View of the Aegean Sea from the Temple of Poseidon at Cape Sounion on 9 June 2018.",
+    "creator": "George E. Koronaios",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: View of the Aegean Sea from the Temple of Poseidon at Cape Sounion on 9 June 2018.jpg",
+    "rights_status": "CC0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Aegean_Sea_from_the_Temple_of_Poseidon_at_Cape_Sounion_on_9_June_2018.jpg"
+  },
+  "athens_acropolis_rock_panorama.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: athens_acropolis_rock_panorama.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/athens_acropolis_rock_panorama.jpg"
+  },
+  "athenian_agora_hephaestus_temple.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: athenian_agora_hephaestus_temple.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/athenian_agora_hephaestus_temple.jpg"
+  },
+  "mycenae_bronze_age_lion_gate.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: mycenae_bronze_age_lion_gate.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/mycenae_bronze_age_lion_gate.jpg"
+  },
+  "carved_greek_alphabet_stone.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: carved_greek_alphabet_stone.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/carved_greek_alphabet_stone.jpg"
+  },
+  "athenian_silver_owl_coin.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: athenian_silver_owl_coin.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/athenian_silver_owl_coin.jpg"
+  },
+  "attic_red_figure_kylix_cup.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: attic_red_figure_kylix_cup.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/attic_red_figure_kylix_cup.jpg"
+  },
+  "pnyx_speakers_platform_athens.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: pnyx_speakers_platform_athens.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/pnyx_speakers_platform_athens.jpg"
+  },
+  "sparta_valley_mount_taygetos.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: sparta_valley_mount_taygetos.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/sparta_valley_mount_taygetos.jpg"
+  },
+  "erechtheion_caryatid_porch.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: erechtheion_caryatid_porch.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/erechtheion_caryatid_porch.jpg"
+  },
+  "pericles_helmeted_marble_bust.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: pericles_helmeted_marble_bust.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/pericles_helmeted_marble_bust.jpg"
+  },
+  "athenian_ostrakon_cimon_shard.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: athenian_ostrakon_cimon_shard.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/athenian_ostrakon_cimon_shard.jpg"
+  },
+  "kleroterion_stone_jury_machine.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: kleroterion_stone_jury_machine.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/kleroterion_stone_jury_machine.jpg"
+  },
+  "bronze_corinthian_hoplite_helmet.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: bronze_corinthian_hoplite_helmet.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/bronze_corinthian_hoplite_helmet.jpg"
+  },
+  "olympia_ancient_running_track.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: olympia_ancient_running_track.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/olympia_ancient_running_track.jpg"
+  },
+  "parthenon_doric_marble_columns.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: parthenon_doric_marble_columns.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/parthenon_doric_marble_columns.jpg"
+  },
+  "delphi_mountain_tholos_sanctuary.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: delphi_mountain_tholos_sanctuary.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/delphi_mountain_tholos_sanctuary.jpg"
+  },
+  "olympia_temple_of_zeus_ruins.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: olympia_temple_of_zeus_ruins.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/olympia_temple_of_zeus_ruins.jpg"
+  },
+  "artemision_bronze_zeus_poseidon.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: artemision_bronze_zeus_poseidon.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/artemision_bronze_zeus_poseidon.jpg"
+  },
+  "athena_parthenos_marble_statue.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: athena_parthenos_marble_statue.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/athena_parthenos_marble_statue.jpg"
+  },
+  "heracles_hydra_black_figure_vase.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: heracles_hydra_black_figure_vase.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/heracles_hydra_black_figure_vase.jpg"
+  },
+  "panathenaic_sprinters_amphora.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: panathenaic_sprinters_amphora.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/panathenaic_sprinters_amphora.jpg"
+  },
+  "olympias_wooden_greek_trireme.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: olympias_wooden_greek_trireme.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/olympias_wooden_greek_trireme.jpg"
+  },
+  "marathon_athenian_burial_mound.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: marathon_athenian_burial_mound.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/marathon_athenian_burial_mound.jpg"
+  },
+  "salamis_narrow_sea_strait_1910.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: salamis_narrow_sea_strait_1910.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/salamis_narrow_sea_strait_1910.jpg"
+  },
+  "knossos_minoan_palace_crete.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: knossos_minoan_palace_crete.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/knossos_minoan_palace_crete.jpg"
+  },
+  "hoplite_warriors_clashing_vase.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: hoplite_warriors_clashing_vase.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/hoplite_warriors_clashing_vase.jpg"
+  },
+  "persian_immortals_glazed_frieze.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: persian_immortals_glazed_frieze.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/persian_immortals_glazed_frieze.jpg"
+  },
+  "spartan_warrior_leonidas_statue.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: spartan_warrior_leonidas_statue.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/spartan_warrior_leonidas_statue.jpg"
+  },
+  "themistocles_marble_portrait.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: themistocles_marble_portrait.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/themistocles_marble_portrait.jpg"
+  },
+  "epidaurus_stone_theatre_bowl.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: epidaurus_stone_theatre_bowl.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/epidaurus_stone_theatre_bowl.jpg"
+  },
+  "death_of_socrates_david_painting.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: death_of_socrates_david_painting.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/death_of_socrates_david_painting.jpg"
+  },
+  "kos_asclepieion_healing_terraces.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: kos_asclepieion_healing_terraces.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/kos_asclepieion_healing_terraces.jpg"
+  },
+  "pythagoras_turbaned_marble_bust.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: pythagoras_turbaned_marble_bust.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/pythagoras_turbaned_marble_bust.jpg"
+  },
+  "greek_terracotta_theatre_mask.jpg": {
+    "date": "Greek; Roundels; Terracottas",
+    "creator": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+    "repository": "Metropolitan Museum of Art (Open Access CC0) / Wikimedia Commons",
+    "accession_id": "Commons: Two terracotta roundels with theatrical masks MET DT4439.jpg",
+    "rights_status": "CC0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Two_terracotta_roundels_with_theatrical_masks_MET_DT4439.jpg"
+  },
+  "socrates_marble_portrait_louvre.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: socrates_marble_portrait_louvre.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/socrates_marble_portrait_louvre.jpg"
+  },
+  "aristotle_marble_portrait_bust.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: aristotle_marble_portrait_bust.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/aristotle_marble_portrait_bust.jpg"
+  },
+  "hippocrates_inscribed_bust.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: hippocrates_inscribed_bust.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/hippocrates_inscribed_bust.jpg"
+  },
+  "alexander_mosaic_bucephalus.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: alexander_mosaic_bucephalus.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/alexander_mosaic_bucephalus.jpg"
+  },
+  "euclid_geometry_papyrus_diagram.jpg": {
+    "date": "Oxyrhynchus papyrus (P.Oxy. I 29) showing fragment of Euclid's Elements",
+    "creator": "Euclid",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: P. Oxy. I 29.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg"
+  },
+  "panathenaic_stadium_1896_athens.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: panathenaic_stadium_1896_athens.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/panathenaic_stadium_1896_athens.jpg"
+  },
+  "panathenaic_prize_amphora_athletes.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: panathenaic_prize_amphora_athletes.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/panathenaic_prize_amphora_athletes.jpg"
+  },
+  "alexander_heracles_silver_coin.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: alexander_heracles_silver_coin.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/alexander_heracles_silver_coin.jpg"
+  },
+  "doric_ionic_corinthian_capitals.png": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: doric_ionic_corinthian_capitals.png",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/doric_ionic_corinthian_capitals.png"
+  },
+  "artemision_bronze_racehorse_jockey.jpg": {
+    "date": "Historical / Museum Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: artemision_bronze_racehorse_jockey.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/artemision_bronze_racehorse_jockey.jpg"
+  }
+}

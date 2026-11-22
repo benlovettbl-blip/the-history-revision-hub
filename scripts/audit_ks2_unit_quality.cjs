@@ -19,7 +19,15 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const targetUnits = process.argv.slice(2).length
   ? process.argv.slice(2)
-  : ['ks2_stone_to_iron_age', 'ks2_romans', 'ks2_anglo_saxons_vikings'];
+  : [
+      'ks2_stone_to_iron_age',
+      'ks2_romans',
+      'ks2_anglo_saxons_vikings',
+      'ks2_ancient_egypt',
+      'ks2_ancient_greece',
+      'ks2_early_islamic_baghdad',
+      'ks2_maya_civilisation',
+    ];
 
 const rightsDb = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts/master_rights_database.json'), 'utf8'));
 const viewsJs = fs.readFileSync(path.join(ROOT, 'src/views.js'), 'utf8');

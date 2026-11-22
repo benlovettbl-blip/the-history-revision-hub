@@ -317,6 +317,58 @@ export const SEO_UNIT_ROUTES = [
       'Age-calibrated UK Key Stage 2 Primary History lessons, studio audio read-aloud stories, authentic visual sources, and retrieval quizzes for World War II: Evacuation, the Blitz, Rationing, Battle of Britain, Kindertransport, and VE Day.',
     priority: '0.85',
   },
+  {
+    unitId: 'ks2_ancient_egypt',
+    slug: 'ks2-ancient-egypt',
+    aliases: ['ancient-egypt-ks2', 'primary-ancient-egypt'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Ancient Egypt — The River Nile, Pyramids, Pharaohs & The Afterlife (c. 3100–30 BC)',
+    seoTitle:
+      'KS2 Ancient Egypt | River Nile, Giza Pyramids, Hieroglyphs & Tutankhamun | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Ancient Egypt (c. 3100–30 BC): River Nile, Giza Pyramids, Rosetta Stone, Mummies, Hatshepsut, Ramesses II, Tutankhamun, and Cleopatra.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_ancient_greece',
+    slug: 'ks2-ancient-greece',
+    aliases: ['ancient-greece-ks2', 'primary-ancient-greece'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Ancient Greece — City-States, Democracy, Myths & Lasting Legacy (c. 800–146 BC)',
+    seoTitle:
+      'KS2 Ancient Greece | Athens vs Sparta, Olympic Games, Myths & Legacy | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Ancient Greece (c. 800–146 BC): Poleis, Athens vs Sparta, 776 BC Olympics, Marathon, Salamis, Socrates, Hippocrates, and Alexander the Great.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_early_islamic_baghdad',
+    slug: 'ks2-early-islamic-civilisation-baghdad',
+    aliases: ['early-islamic-baghdad-ks2', 'baghdad-ad-900-ks2'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Early Islamic Civilisation — Round City of Baghdad, Silk Roads & House of Wisdom (c. AD 750–1258)',
+    seoTitle:
+      'KS2 Early Islamic Civilisation (Baghdad c. AD 900) | House of Wisdom & Silk Roads | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Early Islamic Civilisation c. AD 900: Round City of Baghdad, House of Wisdom, al-Khwarizmi, Astrolabes, Silk Roads, and Viking Dirhams.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_maya_civilisation',
+    slug: 'ks2-ancient-maya-civilisation',
+    aliases: ['maya-civilisation-ks2', 'ancient-maya-ks2'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'The Ancient Maya — Rainforest Cities, Calendar Maths, Cacao & Pok-ta-Pok (c. 2000 BC–AD 1500)',
+    seoTitle:
+      'KS2 Ancient Maya Civilisation | Tikal, Palenque, Glyphs, Cacao & Chichén Itzá | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for the Ancient Maya: Rainforest Cenotes, King Pakal, Maya Glyphs & Zero, Cacao, Pok-ta-Pok, Chichén Itzá, and Living Maya Today.',
+    priority: '0.85',
+  },
 ];
 
 const SLUG_TO_ROUTE = new Map();

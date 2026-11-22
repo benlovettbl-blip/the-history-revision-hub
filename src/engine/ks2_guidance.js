@@ -22,12 +22,32 @@ import {
   KS2_SAXONS_WORKSHEETS_MAP,
   KS2_SAXONS_TEACHER_GUIDANCE,
 } from './ks2_saxons_guidance.js';
+import {
+  KS2_EGYPT_WORKSHEETS_MAP,
+  KS2_EGYPT_TEACHER_GUIDANCE,
+} from './ks2_egypt_guidance.js';
+import {
+  KS2_GREECE_WORKSHEETS_MAP,
+  KS2_GREECE_TEACHER_GUIDANCE,
+} from './ks2_greece_guidance.js';
+import {
+  KS2_BAGHDAD_WORKSHEETS_MAP,
+  KS2_BAGHDAD_TEACHER_GUIDANCE,
+} from './ks2_baghdad_guidance.js';
+import {
+  KS2_MAYA_WORKSHEETS_MAP,
+  KS2_MAYA_TEACHER_GUIDANCE,
+} from './ks2_maya_guidance.js';
 
-// Backwards-compatible alias normalization for KS2 Prehistory, Romans & Saxons guidance
+// Backwards-compatible alias normalization across all KS2 modular guidance packs
 [
   ...Object.values(KS2_STONE_AGE_TEACHER_GUIDANCE),
   ...Object.values(KS2_ROMANS_TEACHER_GUIDANCE),
   ...Object.values(KS2_SAXONS_TEACHER_GUIDANCE),
+  ...Object.values(KS2_EGYPT_TEACHER_GUIDANCE),
+  ...Object.values(KS2_GREECE_TEACHER_GUIDANCE),
+  ...Object.values(KS2_BAGHDAD_TEACHER_GUIDANCE),
+  ...Object.values(KS2_MAYA_TEACHER_GUIDANCE),
 ].forEach((g) => {
   if (g && g.answers) {
     g.answers.block1 = g.answers.task1;
@@ -49,6 +69,10 @@ function detectActiveKs2UnitId() {
   if (cand === 'ks2_stone_to_iron_age') return 'ks2_stone_to_iron_age';
   if (cand === 'ks2_romans') return 'ks2_romans';
   if (cand === 'ks2_anglo_saxons_vikings') return 'ks2_anglo_saxons_vikings';
+  if (cand === 'ks2_ancient_egypt') return 'ks2_ancient_egypt';
+  if (cand === 'ks2_ancient_greece') return 'ks2_ancient_greece';
+  if (cand === 'ks2_early_islamic_baghdad') return 'ks2_early_islamic_baghdad';
+  if (cand === 'ks2_maya_civilisation') return 'ks2_maya_civilisation';
   return 'ks2_ww2';
 }
 
@@ -97,6 +121,66 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       sowLabel: '6-Lesson Scheme of Work',
       wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
       skillsPeriod: 'AD 410–1066',
+    };
+  }
+  if (unitId === 'ks2_ancient_egypt') {
+    return {
+      unitId: 'ks2_ancient_egypt',
+      worksheetsMap: KS2_EGYPT_WORKSHEETS_MAP,
+      guidanceMap: KS2_EGYPT_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_ancient_egypt/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_ancient_egypt_pupil_workbook.pdf',
+      sowUrl: '/units/ks2_ancient_egypt/ks2_ancient_egypt_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      skillsPeriod: 'c. 3100–30 BC',
+    };
+  }
+  if (unitId === 'ks2_ancient_greece') {
+    return {
+      unitId: 'ks2_ancient_greece',
+      worksheetsMap: KS2_GREECE_WORKSHEETS_MAP,
+      guidanceMap: KS2_GREECE_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_ancient_greece/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_ancient_greece_pupil_workbook.pdf',
+      sowUrl: '/units/ks2_ancient_greece/ks2_ancient_greece_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      skillsPeriod: 'c. 800–146 BC',
+    };
+  }
+  if (unitId === 'ks2_early_islamic_baghdad') {
+    return {
+      unitId: 'ks2_early_islamic_baghdad',
+      worksheetsMap: KS2_BAGHDAD_WORKSHEETS_MAP,
+      guidanceMap: KS2_BAGHDAD_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_early_islamic_baghdad/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_early_islamic_baghdad_pupil_workbook.pdf',
+      sowUrl: '/units/ks2_early_islamic_baghdad/ks2_early_islamic_baghdad_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      skillsPeriod: 'c. AD 750–1258',
+    };
+  }
+  if (unitId === 'ks2_maya_civilisation') {
+    return {
+      unitId: 'ks2_maya_civilisation',
+      worksheetsMap: KS2_MAYA_WORKSHEETS_MAP,
+      guidanceMap: KS2_MAYA_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_maya_civilisation/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_maya_civilisation_pupil_workbook.pdf',
+      sowUrl: '/units/ks2_maya_civilisation/ks2_maya_civilisation_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      skillsPeriod: 'c. 2000 BC–AD 1500',
     };
   }
   return {

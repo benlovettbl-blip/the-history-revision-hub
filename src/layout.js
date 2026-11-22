@@ -435,6 +435,10 @@ export function bindEvents() {
       'ks2_romans',
       'ks2_anglo_saxons_vikings',
       'ks2_ww2',
+      'ks2_ancient_egypt',
+      'ks2_ancient_greece',
+      'ks2_early_islamic_baghdad',
+      'ks2_maya_civilisation',
     ]);
 
     renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
