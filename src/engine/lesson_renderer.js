@@ -30,6 +30,7 @@ import {
 } from './narrative_annotator.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
+import { getIconicLessonVisuals } from '../data/iconic_lesson_visuals.js';
 
 import {
   KS2_CANONICAL_UNITS,
@@ -943,16 +944,35 @@ export function renderLesson(lesson) {
     `;
   }
 
+  const iconicVisuals = getIconicLessonVisuals(unitId, lesson);
+  const cameoImageUrl =
+    iconicVisuals && iconicVisuals.heroCameo ? getAssetUrl(iconicVisuals.heroCameo) : '';
+  const firstStageImageUrl =
+    lesson.narrative_blocks && lesson.narrative_blocks[0] && lesson.narrative_blocks[0].image
+      ? getAssetUrl(lesson.narrative_blocks[0].image)
+      : '';
+  const hasHeroCameo = Boolean(
+    cameoImageUrl && cameoImageUrl !== resolvedHeroImage && cameoImageUrl !== firstStageImageUrl,
+  );
+
   const heroContainerStyle = isKs2
-    ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);`
+    ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);`
     : `position: relative; width: 100%; margin-left: 0; margin-right: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.5rem; border-radius: 10px; overflow: hidden; border: 1px solid rgba(15,23,42,0.14); box-shadow: 0 4px 16px rgba(0,0,0,0.08);`;
   const heroOverlayStyle = isKs2
-    ? `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.16) 0%, rgba(15,23,42,0.54) 55%, rgba(15,23,42,0.88) 100%);`
-    : `position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.26) 0%, rgba(15,23,42,0.66) 55%, rgba(15,23,42,0.92) 100%);`;
+    ? `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.52) 56%, rgba(15,23,42,0.14) 100%), linear-gradient(to top, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.22) 55%, rgba(15,23,42,0.04) 100%);`
+    : `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.56) 56%, rgba(15,23,42,0.16) 100%), linear-gradient(to top, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.26) 55%, rgba(15,23,42,0.05) 100%);`;
   const heroContentPadding = isKs2 ? '0.9rem 1.75rem' : '0.72rem 1.5rem';
 
+  const heroCameoHtml = hasHeroCameo
+    ? `
+      <div class="lesson-hero-cameo" title="${String(iconicVisuals.cameoAlt || cleanLessonHeading).replace(/"/g, '&quot;')}">
+        <img src="${cameoImageUrl}" alt="${String(iconicVisuals.cameoAlt || cleanLessonHeading).replace(/"/g, '&quot;')}" decoding="async" />
+      </div>
+    `
+    : '';
+
   html += `
-      <div class="lesson-hero${heroExtraClass}" style="${heroContainerStyle}">
+      <div class="lesson-hero${heroExtraClass}${hasHeroCameo ? ' has-hero-cameo' : ''}" style="${heroContainerStyle}">
         <div style="${heroOverlayStyle}"></div>
         <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: ${heroContentPadding}; box-sizing: border-box;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 1px;">
@@ -962,7 +982,8 @@ export function renderLesson(lesson) {
           <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.55rem; margin: 0.15rem 0 0 0; line-height: 1.18; text-shadow: 0 2px 8px rgba(0,0,0,0.75);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
         </div>
-        ${bannerGalleryBtn}
+        ${heroCameoHtml}
+        ${hasHeroCameo ? '' : bannerGalleryBtn}
       </div>
     `;
 

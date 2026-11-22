@@ -441,11 +441,11 @@ export function bindEvents() {
       'ks2_maya_civilisation',
     ]);
 
-    renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
-    renderAccordionGroup('GCSE (9–1)', gcseUnits, false);
     if (ks2Units.length > 0) {
       renderAccordionGroup('Key Stage 2 (Primary)', ks2Units, isInitialKs2Unit);
     }
+    renderAccordionGroup('Key Stage 3 (KS3)', ks3Units, false);
+    renderAccordionGroup('GCSE (9–1)', gcseUnits, false);
   }
 }
 
