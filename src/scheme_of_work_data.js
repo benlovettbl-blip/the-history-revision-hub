@@ -1531,6 +1531,79 @@ export const SCHEMES_OF_WORK_DATA = {
       }
     ]
   },
+  "ks2_stone_to_iron_age": {
+    "unitId": "ks2_stone_to_iron_age",
+    "yearGroup": "Key Stage 2",
+    "keyStage": "KS2",
+    "title": "Stone Age to Iron Age Britain — Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43)",
+    "subtitle": "Ice Age Flint & Sunken Doggerland, Neolithic Farming & Skara Brae, Stonehenge & Durrington Walls, Bronze Age & The Amesbury Archer, Must Farm ('Britain's Pompeii'), and Iron Age Celtic Hillforts",
+    "overarchingEnquiry": "How did life in Britain transform from Ice Age hunter-gatherers to Neolithic farmers, Bronze Age metalworkers, and Iron Age hillfort tribes?",
+    "textbookPdf": "/pdfs/ks2_stone_to_iron_age_textbook.pdf",
+    "sowPdf": "/pdfs/ks2_stone_to_iron_age_scheme_of_work.pdf",
+    "workbookPdf": "/pdfs/ks2_stone_to_iron_age_pupil_workbook.pdf",
+    "enquiries": [
+      {
+        "num": 1,
+        "title": "Ice Age Hunters & Sunken Doggerland (c. 800,000–4000 BC)",
+        "enquiryQuestion": "How did hunter-gatherers survive the Ice Age, and how did Britain become an island?",
+        "disciplinaryFocus": "Archaeological Inference & Environmental Change",
+        "sources": "Palaeolithic Flint Handaxe; Creswell Crags Cave; Cheddar Man; Star Carr Antler Mask & Doggerland Map",
+        "keyFigure": "Cheddar Man & Star Carr Hunters",
+        "figureRole": "Mesolithic Hunter-Gatherers of Somerset & Yorkshire (c. 9000–8300 BC)",
+        "vocabulary": ["Prehistory", "Palaeolithic", "Flint Knapping", "Mesolithic", "Hunter-Gatherer", "Doggerland"]
+      },
+      {
+        "num": 2,
+        "title": "The First Farmers & Skara Brae (c. 4000–2500 BC)",
+        "enquiryQuestion": "How did farming change everyday life in Britain, and what did the storm uncover at Skara Brae?",
+        "disciplinaryFocus": "Change & Continuity (Settled Village Life)",
+        "sources": "Skara Brae Stone Dresser, Beds & Village; Polished Stone Axe; Flint Sickle; West Kennet Pottery",
+        "keyFigure": "Villagers of Skara Brae",
+        "figureRole": "Neolithic Orkney Farmers & Stone House Builders (c. 3100–2500 BC)",
+        "vocabulary": ["Neolithic", "Agriculture", "Domesticate", "Polished Stone Axe", "Skara Brae", "Long Barrow"]
+      },
+      {
+        "num": 3,
+        "title": "Secrets of Stonehenge — Giant Stones & Winter Feasts (c. 3000–2200 BC)",
+        "enquiryQuestion": "How and why did prehistoric communities build Stonehenge without wheels, cranes, or metal tools?",
+        "disciplinaryFocus": "Historical Interpretation & Prehistoric Engineering",
+        "sources": "Stonehenge Sarsen Trilithons & Heel Stone; RAF 1928 Aerial Henge Photo; Durrington Walls Houses",
+        "keyFigure": "Stonehenge Engineers & Durrington Pilgrims",
+        "figureRole": "Builders of the Sarsen Circle & Welsh Bluestone Ring (c. 3000–2500 BC)",
+        "vocabulary": ["Henge", "Megalith", "Bluestone", "Sarsen", "Trilithon", "Solstice"]
+      },
+      {
+        "num": 4,
+        "title": "Enter the Bronze Age — Beakers, Metal & The Amesbury Archer (c. 2500–1200 BC)",
+        "enquiryQuestion": "Who was the Amesbury Archer, and how did bronze metalwork transform prehistoric Britain?",
+        "disciplinaryFocus": "Scientific Archaeology & Technological Change",
+        "sources": "Amesbury Archer Grave; Bell Beaker Pots; Two-Piece Bronze Axe Mould; Great Orme Mine; Mold Gold Cape",
+        "keyFigure": "The Amesbury Archer",
+        "figureRole": "Alpine-Born Early Bronze Age Traveller & Metalworker Near Stonehenge (c. 2300 BC)",
+        "vocabulary": ["Beaker People", "Smelting", "Alloy", "Bronze", "Mould", "Isotope"]
+      },
+      {
+        "num": 5,
+        "title": "\"Britain's Pompeii\" — Everyday Life at Must Farm (c. 1200–800 BC)",
+        "enquiryQuestion": "What does the burnt stilt village at Must Farm reveal about everyday Bronze Age families?",
+        "disciplinaryFocus": "Evidential Preservation & Challenging Stereotypes",
+        "sources": "Must Farm Stilt Dig, Hafted Bronze Axes, Charred Pot & Eel Trap; Dover Boat; Rhyd-y-Gorse Shield",
+        "keyFigure": "Bronze Age Fenland Families of Must Farm",
+        "figureRole": "River-Stilt Carpenters, Weavers & Traders in Cambridgeshire (c. 850 BC)",
+        "vocabulary": ["Stilt House", "Waterlogged", "Socketed Axe", "Loom", "Causeway", "Votive Offering"]
+      },
+      {
+        "num": 6,
+        "title": "Iron Age Celts & Giant Hillforts — On the Eve of Rome (c. 800 BC–AD 43)",
+        "enquiryQuestion": "How did iron tools, roundhouses, and giant hillforts shape Celtic Britain before the Romans arrived?",
+        "disciplinaryFocus": "Similarity, Difference & Synoptic Comparison",
+        "sources": "Stone-Bronze-Iron Diagram; Maiden Castle Ramparts; Butser Roundhouses; Snettisham Torc; Battersea Shield",
+        "keyFigure": "Iron Age Celtic Blacksmiths & Tribal Elders",
+        "figureRole": "Builders of Maiden Castle & Makers of Snettisham Gold (c. 800 BC–AD 43)",
+        "vocabulary": ["Iron Ore", "Blacksmith", "Roundhouse", "Rotary Quern", "Hillfort", "Torc"]
+      }
+    ]
+  },
   "ks2_anglo_saxons_vikings": {
     "unitId": "ks2_anglo_saxons_vikings",
     "yearGroup": "Key Stage 2",

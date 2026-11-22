@@ -16,6 +16,7 @@ try {
 }
 
 const units = [
+  'ks2_stone_to_iron_age',
   'ks2_romans',
   'ks2_anglo_saxons_vikings',
   'ks2_ww2',

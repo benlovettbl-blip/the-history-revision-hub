@@ -219,7 +219,9 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
       let unitTitle = unitDataObj.title
         ? unitDataObj.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
         : 'Unit';
-      if (unitId === 'ks2_romans') {
+      if (unitId === 'ks2_stone_to_iron_age') {
+        unitTitle = 'Stone Age to Iron Age';
+      } else if (unitId === 'ks2_romans') {
         unitTitle = 'The Romans in Britain';
       } else if (unitId === 'ks2_anglo_saxons_vikings') {
         unitTitle = 'Anglo-Saxons & Vikings';

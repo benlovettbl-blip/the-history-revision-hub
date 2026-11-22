@@ -256,6 +256,18 @@ export const unitSynopses = {
       'VE Day & The Windermere Children',
     ],
   },
+  ks2_stone_to_iron_age: {
+    period: 'c. 800,000 BC – AD 43',
+    synopsis:
+      "How did life in Britain transform across 800,000 years from Ice Age mammoth hunters to Celtic hillfort builders? Follow Palaeolithic families flaking teardrop flint handaxes at Creswell Crags, watch rising North Sea waves drown the green hunting plains of Doggerland around 6500 BC, and step inside 5,000-year-old stone beds and dressers uncovered by an Orkney storm at Skara Brae. Haul Welsh bluestones and 25-tonne sarsen trilithons at Stonehenge, decode Alpine tooth enamel inside the Amesbury Archer's grave, dig into 'Britain's Pompeii' at Must Farm for 3,000-year-old wooden wheels and bowls of porridge, and climb the giant ramparts of Maiden Castle on the eve of Rome!",
+    tags: [
+      'Ice Age Flint & Sunken Doggerland',
+      'Neolithic Farming & Skara Brae',
+      'Stonehenge & Durrington Walls',
+      'Bronze Age & The Amesbury Archer',
+      'Must Farm & Iron Age Hillforts',
+    ],
+  },
   ks2_anglo_saxons_vikings: {
     period: 'AD 410 – 1066',
     synopsis:

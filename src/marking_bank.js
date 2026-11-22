@@ -342,6 +342,84 @@ const KS3_MARKING_DATA = {
       },
     ],
   },
+  ks2_stone_to_iron_age: {
+    unitTitle: 'Stone Age to Iron Age Britain — Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43)',
+    subtitle: '24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)',
+    enquiries: [
+      {
+        number: 1,
+        title: 'Enquiry 01: Ice Age Hunters & Sunken Doggerland (c. 800,000–4000 BC)',
+        shortTitle: 'Ice Age & Doggerland',
+        enquiryFocus: 'How did hunter-gatherers survive the Ice Age, and how did Britain become an island?',
+        questions: [
+          { num: 1, tier: 'Recall', q: 'What does the word "prehistory" mean, and how do archaeologists find out about it without written books?', a: 'Prehistory means the time before written records began in Britain; archaeologists study buried clues like flint tools, bones, houses, and pollen.', exp: 'Over 99% of human time in Britain happened during prehistory before AD 43!' },
+          { num: 2, tier: 'Explain', q: 'How did Palaeolithic families make flint handaxes, and why did they move camp instead of living in one village?', a: 'They chipped ("knapped") flint nodules with hammerstones into sharp teardrop blades, and moved camp to follow wild mammoth, horse, and deer herds.', exp: 'Without farms or storage pots, hunter-gatherers followed seasonal animals, nuts, and berries.' },
+          { num: 3, tier: 'Detail', q: 'What astonishing 11,000-year-old objects did archaeologists find in the peat beside an ancient lake at Star Carr in Yorkshire?', a: 'Britain’s oldest wooden house platform and 21 carved red-deer skull and antler headdresses.', exp: 'Star Carr proves Mesolithic Britons were skilled carpenters and held woodland ceremonies.' },
+          { num: 4, tier: 'Explain', q: 'What was Doggerland, and how did Britain become an island around 6500 BC?', a: 'Doggerland was the wide, grassy land bridge joining Britain to Europe; melting Ice Age glaciers raised North Sea levels and flooded it around 6500 BC.', exp: 'North Sea fishing trawlers still drag up mammoth tusks and bone harpoons from sunken Doggerland!' },
+        ],
+      },
+      {
+        number: 2,
+        title: 'Enquiry 02: The First Farmers & Skara Brae (c. 4000–2500 BC)',
+        shortTitle: 'Skara Brae & Farming',
+        enquiryFocus: 'How did farming change everyday life in Britain, and what did the storm uncover at Skara Brae?',
+        questions: [
+          { num: 5, tier: 'Recall', q: 'Which crops and tame animals did the first Neolithic farmers bring across the sea to Britain around 4000 BC?', a: 'Wheat and barley seeds alongside tame sheep, goats, cattle, and pigs.', exp: 'Wild ancestors of wheat and sheep came originally from the Fertile Crescent and spread across Europe by boat.' },
+          { num: 6, tier: 'Explain', q: 'Why did Neolithic farmers grind polished stone axes smooth and start making coiled clay pots?', a: 'Polished stone axes felled forest trees without shattering, while clay pots cooked porridge and stored dry grain safely through winter.', exp: 'Clearing forests for crops and pastures created Britain’s first permanent villages.' },
+          { num: 7, tier: 'Detail', q: 'How was the 5,000-year-old village of Skara Brae in Orkney rediscovered in winter 1850?', a: 'A fierce winter storm tore away grass and sand dunes on Mainland Orkney, uncovering eight stone houses.', exp: 'Sand had sealed the village like a time capsule for over 4,300 years.' },
+          { num: 8, tier: 'Explain', q: 'Why did villagers at Skara Brae build beds, shelved dressers, and walls out of stone slabs instead of wood?', a: 'Windy Orkney had very few tall trees for timber, whereas flat sandstone slabs split neatly along the seashore.', exp: 'Houses were sunk into warm earth mounds with central hearths, roofed passages, and indoor drains.' },
+        ],
+      },
+      {
+        number: 3,
+        title: 'Enquiry 03: Secrets of Stonehenge — Giant Stones & Winter Feasts (c. 3000–2200 BC)',
+        shortTitle: 'Stonehenge Builders',
+        enquiryFocus: 'How and why did prehistoric communities build Stonehenge without wheels, cranes, or metal tools?',
+        questions: [
+          { num: 9, tier: 'Recall', q: 'What tools did Neolithic workers use around 3000 BC to dig Stonehenge’s first circular chalk ditch and bank?', a: 'Red-deer antler picks and cattle shoulder-blade shovels.', exp: 'Stonehenge was built in stages over nearly 1,000 years—over 2,000 years before Iron Age Celtic Druids!' },
+          { num: 10, tier: 'Detail', q: 'From how far away were Stonehenge’s spotted bluestones hauled, and how heavy were the biggest grey sarsen stones?', a: 'Bluestones came over 150 miles from the Preseli Hills in West Wales; the biggest Wiltshire sarsens weighed 25 to 30 tonnes.', exp: 'Teams dragged stones on wooden sledges and greased timber rails before tipping them upright with earth ramps.' },
+          { num: 11, tier: 'Explain', q: 'How did Neolithic masons lock horizontal lintel stones onto upright sarsen pillars without cement or nails?', a: 'They pounded interlocking stone pegs and holes ("mortise-and-tenon" and tongue-and-groove joints) just like woodworking!', exp: 'Those stone joints have kept 7-tonne lintels balanced high in the air for 4,500 years.' },
+          { num: 12, tier: 'Explain', q: 'What clues at nearby Durrington Walls show how people used Stonehenge in midwinter and midsummer?', a: 'Thousands of pig and cattle bones prove families travelled from across Britain (even Scotland) for midwinter feasts aligned with the Solstice sun.', exp: 'Stonehenge also held over 150 cremation burials, honouring ancestors and the solar calendar together.' },
+        ],
+      },
+      {
+        number: 4,
+        title: 'Enquiry 04: Enter the Bronze Age — Beakers, Metal & The Amesbury Archer (c. 2500–1200 BC)',
+        shortTitle: 'Bronze & Amesbury Archer',
+        enquiryFocus: 'Who was the Amesbury Archer, and how did bronze metalwork transform prehistoric Britain?',
+        questions: [
+          { num: 13, tier: 'Recall', q: 'Which two metals did Bronze Age smiths melt together at 1,000°C to make bronze, and where in Britain were they mined?', a: 'Copper (mined in tunnels like Great Orme in North Wales) mixed with rare Tin (from Cornwall and Devon).', exp: 'Roughly 90% copper + 10% tin created a hard golden-brown alloy.' },
+          { num: 14, tier: 'Explain', q: 'Why was a cast bronze axe a huge improvement over a chipped Stone Age flint axe?', a: 'Liquid bronze could be poured into two-piece moulds in sharp shapes, and if a bronze axe snapped it could be melted down and recast!', exp: 'When a flint axe snapped, it could never be melted back together.' },
+          { num: 15, tier: 'Detail', q: 'What treasures were buried with the Amesbury Archer (c. 2300 BC), and what did tests on his tooth enamel prove?', a: 'Over 100 items including 5 Beaker pots, 3 copper knives, flint arrowheads, gold hair rings, and a metalworking stone; tooth enamel proved he grew up near the Alps!', exp: 'Chemical oxygen isotopes from childhood mountain drinking water stayed locked in his teeth.' },
+          { num: 16, tier: 'Recall', q: 'What famous Bronze Age treasure found in North Wales was hammered from a single lump of gold?', a: 'The Mold Gold Cape (c. 1900–1600 BC).', exp: 'Now in the British Museum, its hundreds of tiny ribs show extraordinary Bronze Age wealth and artistry.' },
+        ],
+      },
+      {
+        number: 5,
+        title: 'Enquiry 05: "Britain\'s Pompeii" — Everyday Life at Must Farm (c. 1200–800 BC)',
+        shortTitle: 'Must Farm Village',
+        enquiryFocus: 'What does the burnt stilt village at Must Farm reveal about everyday Bronze Age families?',
+        questions: [
+          { num: 17, tier: 'Explain', q: 'Why did archaeologists nickname the Late Bronze Age village at Must Farm in Cambridgeshire "Britain’s Pompeii"?', a: 'Around 850 BC a sudden fire dropped five stilt roundhouses into wet, oxygen-free river mud that preserved everyday life like a time capsule.', exp: 'Happily, zero human bodies died in the fire—all the families escaped safely!' },
+          { num: 18, tier: 'Detail', q: 'Name four everyday things preserved in the airless mud at Must Farm that normally rot away on dry land.', a: 'Any four from: Britain’s oldest complete wooden wheel, fine woven flax/bark cloth, wooden handles on bronze axes, wicker eel traps, or bowls of porridge with wooden spoons.', exp: 'Bacteria that rot wood and cloth cannot survive in wet, oxygen-free Fenland silt.' },
+          { num: 19, tier: 'Recall', q: 'Where had the tiny turquoise glass beads found in necklaces at Must Farm been traded from?', a: 'All the way from the Mediterranean and the Middle East!', exp: 'Along with the stitched oak Dover Bronze Age Boat, they prove long-distance sea and river trade.' },
+          { num: 20, tier: 'Explain', q: 'Why did Bronze Age people deliberately drop valuable bronze swords and shields into sacred waters at Flag Fen?', a: 'As precious religious offerings to water spirits or gods (not dropped by accident!).', exp: 'Over 300 bronze weapons and pins were placed along the timber causeway at Flag Fen.' },
+        ],
+      },
+      {
+        number: 6,
+        title: 'Enquiry 06: Iron Age Celts & Giant Hillforts — On the Eve of Rome (c. 800 BC–AD 43)',
+        shortTitle: 'Iron Age Hillforts',
+        enquiryFocus: 'How did iron tools, roundhouses, and giant hillforts shape Celtic Britain before the Romans arrived?',
+        questions: [
+          { num: 21, tier: 'Explain', q: 'Give two reasons why red-hot hammered iron replaced bronze for ploughs, axes, and swords after 800 BC.', a: 'Iron ore was common across Britain (no rare tin needed) AND hammered iron stayed harder and tougher for ploughing heavy clay soils.', exp: 'Iron-tipped ploughs and rotary quern stones helped feed a rapidly growing population.' },
+          { num: 22, tier: 'Explain', q: 'Why didn’t Iron Age thatched roundhouses have a chimney hole at the top of the roof?', a: 'A roof hole causes dangerous wind sparks; without a chimney, smoke drifted gently through the thatch, smoking meat and keeping insects out.', exp: 'Reconstructions at Butser Ancient Farm proved how warm and safe cone-roofed roundhouses were.' },
+          { num: 23, tier: 'Detail', q: 'How did giant earthwork hillforts like Maiden Castle in Dorset protect and serve Iron Age Celtic tribes?', a: 'Towering chalk ramparts, deep ditches, and maze-like gates defended against raids while protecting grain stores, workshops, and tribal markets.', exp: 'Maiden Castle’s ramparts enclosed an area the size of 47 football pitches!' },
+          { num: 24, tier: 'Recall', q: 'What treasures prove Celtic Britain was rich and skilled before Emperor Claudius’s Roman invasion of AD 43?', a: 'Twisted gold neck-rings (Snettisham Great Torc), swirling bronze shields (Battersea Shield), and stamped tribal gold coins (staters).', exp: 'In AD 43 Roman legions brought written records to Britain, ending prehistory and beginning Roman Britain!' },
+        ],
+      },
+    ],
+  },
   ks2_anglo_saxons_vikings: {
     unitTitle: 'Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)',
     subtitle: '24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)',
@@ -367,7 +445,7 @@ const KS3_MARKING_DATA = {
           { num: 5, tier: 'Explain', q: 'Why did archaeologists in 1939 find no wooden planks or human skeleton inside Mound 1 at Sutton Hoo?', a: 'Suffolk’s acidic sandy soil completely rotted away organic wood and human bones over 1,300 years, leaving rows of iron ship rivets.', exp: 'Edith Pretty and archaeologist Basil Brown uncovered the ghostly 27-metre ship outline and dazzling burial chamber.' },
           { num: 6, tier: 'Detail', q: 'How do treasures inside Sutton Hoo (likely King Raedwald, c. AD 625) prove Britain was NOT in a backward "Dark Age"?', a: 'The dragon-browed iron helmet and gold clasps inlaid with garnets from Sri Lanka, Byzantine silver spoons, and Frankish coins prove master art and long-distance trade.', exp: 'The burial linked East Anglia to trade networks stretching across Europe, Constantinople, and South Asia.' },
           { num: 7, tier: 'Recall', q: 'From which two directions did missionaries Augustine (AD 597) and Aidan (AD 635) bring Christianity to Anglo-Saxon kingdoms?', a: 'Augustine came from Rome to Canterbury in Kent (AD 597); Aidan came from Iona in Scotland to Lindisfarne in Northumbria (AD 635).', exp: 'Monasteries became centres of reading, stone architecture, calfskin vellum manuscripts, and illuminated art like the Lindisfarne Gospels.' },
-          { num: 8, tier: 'Recall', q: 'Which Northumbrian monk at Jarrow wrote the Ecclesiastical History of the English People in AD 731?', a: 'The Venerable Bede.', exp: 'Bede popularized counting dates from AD ("Anno Domini") and earned the title "Father of English History".' },
+          { num: 8, tier: 'Recall', q: 'Which Northumbrian monk at Jarrow wrote the History of the English Church and People in AD 731?', a: 'The Venerable Bede.', exp: 'Bede popularized counting dates from AD ("Anno Domini") and earned the title "Father of English History".' },
         ],
       },
       {

@@ -33,7 +33,12 @@ import { getLessonInfographicCount, getLessonInfographicsSync } from '../infogra
 
 
 // Canonical Key Stage Taxonomy Constants
-export const KS2_CANONICAL_UNITS = ['ks2_romans', 'ks2_anglo_saxons_vikings', 'ks2_ww2'];
+export const KS2_CANONICAL_UNITS = [
+  'ks2_stone_to_iron_age',
+  'ks2_romans',
+  'ks2_anglo_saxons_vikings',
+  'ks2_ww2',
+];
 export const KS3_CANONICAL_UNITS = [
   'medieval_england',
   'monarchy_religion_power',

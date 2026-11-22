@@ -2,16 +2,27 @@
   "yearGroups": [
     {
       "year": "Key Stage 2",
-      "ks": "Key Stage 2 Primary (Years 3–6)",
+      "ks": "Key Stage 2 Primary",
       "units": [
+        {
+          "uid": "ks2_stone_to_iron_age",
+          "terms": ["Autumn 1", "Spring 1"],
+          "shortTitle": "Stone Age to Iron Age Britain — Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43)",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) investigating Ice Age flint handaxes, caves, Star Carr antler masks, and the flooding of Doggerland around 6500 BC, Neolithic farming and the storm-revealed stone village of Skara Brae, Welsh bluestones, 25-tonne sarsens, and winter feasts at Stonehenge and Durrington Walls, Bronze Age copper-and-tin smelting and the Amesbury Archer, waterlogged everyday life at Must Farm ('Britain's Pompeii'), and Iron Age roundhouses, Snettisham gold torcs, and Maiden Castle hillfort up to AD 43.",
+          "vocab": "Prehistory, Palaeolithic, Mesolithic, Flint Knapping, Doggerland, Neolithic, Agriculture, Skara Brae, Megalith, Sarsen, Bluestone, Solstice, Bronze, Smelting, Beaker, Amesbury Archer, Roundhouse, Hillfort, Torc, Celts",
+          "skills": ["Chronological Understanding (c. 800,000 BC–AD 43)", "Archaeological Inference Without Written Texts", "Change & Continuity Across Three Ages", "Cause, Consequence & Engineering"],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did life in Britain transform from Ice Age hunter-gatherers to Neolithic farmers, Bronze Age metalworkers, and Iron Age hillfort tribes?'",
+          "smsc": "<strong>Spiritual:</strong> Exploring Star Carr antler headdresses, Stonehenge Solstice alignments, West Kennet ancestor tombs, and Flag Fen water offerings. <strong>Moral:</strong> Examining how communities shared scarce resources, cared for injured elders (like the Amesbury Archer's knee), and debated war vs defence at hillforts. <strong>Social:</strong> Tracing how farming, copper/tin trade, and monumental building united distant communities across Britain and Europe. <strong>Cultural:</strong> Celebrating world-famous prehistoric treasures from Skara Brae and the Mold Gold Cape to the Battersea Shield.",
+          "careers": "Field Archaeologist, Osteoarchaeologist, Geoarchaeologist, Museum Curator, Experimental Heritage Craftworker"
+        },
         {
           "uid": "ks2_romans",
           "terms": ["Autumn 1", "Spring 1"],
           "shortTitle": "The Romans in Britain — Invasion, Resistance & Legacy (55 BC–AD 410)",
-          "summary": "A 6-enquiry primary unit (Years 3–5 Dual-Scaffolded) investigating Iron Age Celtic tribes and Maiden Castle hillfort, Emperor Claudius's AD 43 invasion and Roman army tactics, Queen Boudicca's AD 60–61 Iceni rebellion and the burning of Londinium, Hadrian's 73-mile frontier wall and diverse Vindolanda soldiers from Europe, Syria, and North Africa, everyday life in Roman towns, Aquae Sulis baths, and countryside roundhouses, and Rome's AD 410 departure and lasting legacy across Britain today.",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) investigating Iron Age Celtic tribes and Maiden Castle hillfort, Emperor Claudius's AD 43 invasion and Roman army tactics, Queen Boudicca's AD 60–61 Iceni rebellion and the burning of Londinium, Hadrian's 73-mile frontier wall and diverse Vindolanda soldiers from Europe, Syria, and North Africa, everyday life in Roman towns, Aquae Sulis baths, and countryside roundhouses, and Rome's AD 410 departure and lasting legacy across Britain today.",
           "vocab": "Tribe, Hillfort, Roundhouse, Torc, Druids, Emperor, Legionary, Testudo, Province, Rebellion, Iceni, Frontier, Milecastle, Auxiliary, Forum, Hypocaust, Aqueduct, Mosaic, Hoard, Castra, Legacy",
           "skills": ["Chronological Understanding (55 BC–AD 410)", "Archaeological & Primary Source Investigation", "Cause & Consequence", "Change, Continuity & Legacy"],
-          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Years 3–4 & Scholar Year 5+), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did the Roman Empire conquer Britain and change life on our island forever?'",
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did the Roman Empire conquer Britain and change life on our island forever?'",
           "smsc": "<strong>Spiritual:</strong> Exploring Celtic Druid beliefs, Sulis Minerva at Bath, and early Christianity in Roman Britain. <strong>Moral:</strong> Examining broken treaties, taxation, and Boudicca's resistance against imperial injustice. <strong>Social:</strong> Discovering diverse frontier communities along Hadrian's Wall (Vindolanda letters, Regina & Barates, Aurelian Moors). <strong>Cultural:</strong> Tracing how Roman towns, roads, Latin words, and our 12-month calendar still shape Britain today.",
           "careers": "Field Archaeologist, Museum Curator, Classical Historian, Heritage Conservator, Cartographer"
         },
@@ -19,7 +30,7 @@
           "uid": "ks2_anglo_saxons_vikings",
           "terms": ["Autumn 2", "Spring 2"],
           "shortTitle": "Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)",
-          "summary": "A 6-enquiry primary unit (Years 4–5 Dual-Scaffolded Y3–6) picking up directly after AD 410: Angles, Saxons, and Jutes settling in timber villages like West Stow, the Sutton Hoo ghost ship burial and Christian conversion via Canterbury and Lindisfarne, Viking longships striking Lindisfarne in AD 793 and the Great Heathen Army of AD 865, King Alfred the Great's 33 walled burhs and the Danelaw, everyday craftworkers and Baghdad silver traders in Viking Jorvik, and Aethelflaed, King Athelstan, King Cnut, and the twin 1066 battles of Stamford Bridge and Hastings.",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) picking up directly after AD 410: Angles, Saxons, and Jutes settling in timber villages like West Stow, the Sutton Hoo ghost ship burial and Christian conversion via Canterbury and Lindisfarne, Viking longships striking Lindisfarne in AD 793 and the Great Heathen Army of AD 865, King Alfred the Great's 33 walled burhs and the Danelaw, everyday craftworkers and Baghdad silver traders in Viking Jorvik, and Aethelflaed, King Athelstan, King Cnut, and the twin 1066 battles of Stamford Bridge and Hastings.",
           "vocab": "Angles, Saxons & Jutes, Heptarchy, Ship Burial, Vellum, Monastery, Clinker-Built, Draught, Great Heathen Army, Fyrd, Burh, Danelaw, Jorvik, Thing, Danegeld, Witan, Housecarl",
           "skills": ["Chronological Understanding (AD 410–1066)", "Archaeological Inference (Sutton Hoo & Jorvik)", "Source Provenance & Bias", "Cause, Consequence & Unification"],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation & Scholar), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?'",

@@ -1,0 +1,452 @@
+{
+  "prehistoric_britain_doggerland_map_ks2.png": {
+    "date": "2026 (Historical Map: c. 800,000 BC – AD 43)",
+    "creator": "The History Revision Hub Cartography Studio (Natural Earth 50m Public Domain Coastlines)",
+    "repository": "The History Revision Hub Original Digital Cartography",
+    "accession_id": "HRH-MAP-KS2-PREHIST-01",
+    "rights_status": "Original In-House Studio Creation — 100% Commercial Copyright Cleared",
+    "commercial_use_permitted": true,
+    "source_url": "https://thehistoryrevisionhub.co.uk"
+  },
+  "stone_bronze_iron_tools_comparison_ks2.png": {
+    "date": "2026 (Educational Diagram: Stone, Bronze & Iron Ages)",
+    "creator": "The History Revision Hub Illustration Studio",
+    "repository": "The History Revision Hub Original Educational Graphics",
+    "accession_id": "HRH-DIAG-KS2-PREHIST-02",
+    "rights_status": "Original In-House Studio Creation — 100% Commercial Copyright Cleared",
+    "commercial_use_permitted": true,
+    "source_url": "https://thehistoryrevisionhub.co.uk"
+  },
+  "banner_unit_hero.jpg": {
+    "date": "Prehistoric Collection Photograph",
+    "creator": "Wikimedia Commons Contributor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Summer Solstice Sunrise over Stonehenge 2005.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Summer_Solstice_Sunrise_over_Stonehenge_2005.jpg"
+  },
+  "woolly_mammoth_reconstruction.jpg": {
+    "date": "2008 (Ice Age Woolly Mammoth Reconstruction)",
+    "creator": "Tracy O",
+    "repository": "Royal BC Museum / Wikimedia Commons",
+    "accession_id": "Commons: Wooly Mammoth-RBC.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wooly_Mammoth-RBC.jpg"
+  },
+  "creswell_crags_ice_age_cave.jpg": {
+    "date": "2018-05-15 12:53:05",
+    "creator": "Enchufla Con Clave",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Pin Hole Cave, Creswell Crags (2).jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pin_Hole_Cave,_Creswell_Crags_(2).jpg"
+  },
+  "goughs_cave_cheddar_gorge.jpg": {
+    "date": "2002-09-22",
+    "creator": "Rwendland",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Gough's Cave, Alladdin's Cave.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gough%27s_Cave,_Alladdin%27s_Cave.jpg"
+  },
+  "palaeolithic_flint_handaxe.jpg": {
+    "date": "between 500000 BC and 300000 BC",
+    "creator": "Sussex Archaeological Society, Laura Burnett, 2009-11-28 03:13:07",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Palaeolithic handaxe (FindID 277003).jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Palaeolithic_handaxe_(FindID_277003).jpg"
+  },
+  "woolly_mammoth_skeleton_tusks.jpg": {
+    "date": "2009-05-22",
+    "creator": "HTO",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Mammoth skeleton 02.JPG",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mammoth_skeleton_02.JPG"
+  },
+  "cheddar_man_mesolithic_skull.jpg": {
+    "date": "2023-08-15",
+    "creator": "Photo by user:geni",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Cheddar man skull.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cheddar_man_skull.jpg"
+  },
+  "star_carr_antler_headdress.jpg": {
+    "date": "2018-09-25 13:14:28",
+    "creator": "Ethan Doyle White",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Star Carr Antler Mask in the British Museum.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Star_Carr_Antler_Mask_in_the_British_Museum.jpg"
+  },
+  "skara_brae_stone_dresser_hero.jpg": {
+    "date": "2016-07-08 10:54:46",
+    "creator": "S Marshall",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Skara Brae 8.7.16 - 22.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Skara_Brae_8.7.16_-_22.jpg"
+  },
+  "neolithic_thatched_farmhouses.jpg": {
+    "date": "2018-12-22",
+    "creator": "Moonraker",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Round houses at Stonehenge Visitor Centre, December 2018.jpg",
+    "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Round_houses_at_Stonehenge_Visitor_Centre,_December_2018.jpg"
+  },
+  "skara_brae_orkney_village.jpg": {
+    "date": "2019-07-04",
+    "creator": "Mike Pennington",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Skara Brae Neolithic Village - geograph.org.uk - 6202639.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Skara_Brae_Neolithic_Village_-_geograph.org.uk_-_6202639.jpg"
+  },
+  "west_kennet_long_barrow_stones.jpg": {
+    "date": "2007-07-22",
+    "creator": "Isabella Perry",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: West Kennet long barrow entrance - geograph.org.uk - 1877235.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:West_Kennet_long_barrow_entrance_-_geograph.org.uk_-_1877235.jpg"
+  },
+  "skara_brae_stone_beds_hearth.jpg": {
+    "date": "2016-07-08 10:53:26",
+    "creator": "S Marshall",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Skara Brae 8.7.16 - 19.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Skara_Brae_8.7.16_-_19.jpg"
+  },
+  "neolithic_polished_stone_axe.jpg": {
+    "date": "between 2900 BC and 2100 BC",
+    "creator": "Birmingham Museums Trust, Peter Reavill, 2012-05-04 15:22:41",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Neolithic, Polished Stone Axe (FindID 468960).jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neolithic,_Polished_Stone_Axe_(FindID_468960).jpg"
+  },
+  "neolithic_flint_sickle_blade.jpg": {
+    "date": "between 2500 BC and 1500 BC",
+    "creator": "Isle of Wight Council, Frank Basford, 2006-09-10 10:23:13",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Late Neolithic or Early Bronze Age Flint Sickle. (FindID 142070).jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Late_Neolithic_or_Early_Bronze_Age_Flint_Sickle._(FindID_142070).jpg"
+  },
+  "neolithic_pottery_and_beads.jpg": {
+    "date": "2014-04-09 15:19:11",
+    "creator": "Pasicles",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: West Kennet Long Barrow artefacts - Wiltshire Museum, Devizes.jpg",
+    "rights_status": "CC0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:West_Kennet_Long_Barrow_artefacts_-_Wiltshire_Museum,_Devizes.jpg"
+  },
+  "stonehenge_sarsen_trilithons.jpg": {
+    "date": "2014-08-12 15:42:39",
+    "creator": "Diego Delso",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Stonehenge, Condado de Wiltshire, Inglaterra, 2014-08-12, DD 18.JPG",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG"
+  },
+  "stonehenge_wide_circle_view.jpg": {
+    "date": "2014-08-12 15:28:58",
+    "creator": "Diego Delso",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Stonehenge, Condado de Wiltshire, Inglaterra, 2014-08-12, DD 13.JPG",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_13.JPG"
+  },
+  "stonehenge_solstice_heel_stone.jpg": {
+    "date": "2016-02-27",
+    "creator": "DeFacto",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Stonehenge Heel Stone.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stonehenge_Heel_Stone.jpg"
+  },
+  "durrington_neolithic_house_interior.jpg": {
+    "date": "2015-09-01",
+    "creator": "Rich Tea",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Interior of a replica Neolithic house, Stonehenge Visitor Centre - geograph.org.uk - 4735314.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Interior_of_a_replica_Neolithic_house,_Stonehenge_Visitor_Centre_-_geograph.org.uk_-_4735314.jpg"
+  },
+  "stonehenge_aerial_henge_ditch_1928.jpg": {
+    "date": "1928-07-18",
+    "creator": "Royal Air Force",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Stonehenge and Aerodrome 1928.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stonehenge_and_Aerodrome_1928.jpg"
+  },
+  "stonehenge_era_flint_axehead.jpg": {
+    "date": "between 3500 BC and 2900 BC",
+    "creator": "The Portable Antiquities Scheme, John Davey, 2006-09-11 16:29:37",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Neolithic polished flint axe (FindID 142113).jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neolithic_polished_flint_axe_(FindID_142113).jpg"
+  },
+  "mold_bronze_age_gold_cape.jpg": {
+    "date": "2012-03-25",
+    "creator": "BabelStone",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Mold gold cape front view.jpg",
+    "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mold_gold_cape_front_view.jpg"
+  },
+  "great_orme_bronze_age_copper_mine.jpg": {
+    "date": "2023-06-11",
+    "creator": "Llywelyn2000",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Mwyngloddiau Copr y Gogarth - Great Orme Copper Mines; Mehefin - June 2023 01.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mwyngloddiau_Copr_y_Gogarth_-_Great_Orme_Copper_Mines;_Mehefin_-_June_2023_01.jpg"
+  },
+  "amesbury_archer_skeleton_grave.jpg": {
+    "date": "2016-08-17 21:49:05",
+    "creator": "TobyEditor",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Amesbury Archer.jpg",
+    "rights_status": "CC BY 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Amesbury_Archer.jpg"
+  },
+  "bell_beaker_pottery_vessels.jpg": {
+    "date": "2011-06-04",
+    "creator": "Rept0n1x",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Bronze Age pottery, Worcester City Art Gallery & Museum, England - DSCF0746.JPG",
+    "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bronze_Age_pottery,_Worcester_City_Art_Gallery_%26_Museum,_England_-_DSCF0746.JPG"
+  },
+  "bronze_age_two_piece_axe_mould.jpg": {
+    "date": "between 1020 BC and 800 BC",
+    "creator": "Leicestershire County Council, Wendy Scott, 2010-08-17 12:14:05",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Late Bronze age copper alloy two piece axe mould (FindID 403105).jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Late_Bronze_age_copper_alloy_two_piece_axe_mould_(FindID_403105).jpg"
+  },
+  "bronze_age_gold_lunula_collar.jpg": {
+    "date": "2008-12-02",
+    "creator": "Michael Gäbler",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Goldlunula.jpg",
+    "rights_status": "CC BY 3.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Goldlunula.jpg"
+  },
+  "bush_barrow_gold_lozenge.jpg": {
+    "date": "9 April 2014 (according to Exif data)",
+    "creator": "Pasicles",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Gold lozenge from Wilsford G5, Bush Barrow.jpg",
+    "rights_status": "CC0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gold_lozenge_from_Wilsford_G5,_Bush_Barrow.jpg"
+  },
+  "flag_fen_bronze_age_roundhouse.jpg": {
+    "date": "9 September 2006 (original upload date)",
+    "creator": "Viv Hamilton at English Wikipedia",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Bronze age dwelling at Flag Fen.JPG",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bronze_age_dwelling_at_Flag_Fen.JPG"
+  },
+  "must_farm_stilt_village_dig.jpg": {
+    "date": "2016-04-19 16:17",
+    "creator": "Dr._Colleen_Morgan from York, UK",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Must Farm CL3 4817 (26447110732).jpg",
+    "rights_status": "CC BY 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Must_Farm_CL3_4817_(26447110732).jpg"
+  },
+  "flag_fen_wetland_causeway.jpg": {
+    "date": "21 July 2012 (original upload date)",
+    "creator": "User:Midnightblueowl",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Flag Fen Droveway.jpg",
+    "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Flag_Fen_Droveway.jpg"
+  },
+  "dover_bronze_age_oak_boat.jpg": {
+    "date": "2011-04-29 19:42:43",
+    "creator": "Hiyotchi",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Dover Bronze Age Boat 2011.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dover_Bronze_Age_Boat_2011.jpg"
+  },
+  "flag_fen_bronze_axes_spearhead.jpg": {
+    "date": "Prehistoric Collection Photograph",
+    "creator": "Cmglee",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Cmglee Must Farm axes.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cmglee_Must_Farm_axes.jpg"
+  },
+  "must_farm_charred_storage_pot.jpg": {
+    "date": "Prehistoric Collection Photograph",
+    "creator": "Cmglee",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Cmglee Must Farm pot.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cmglee_Must_Farm_pot.jpg"
+  },
+  "must_farm_wicker_eel_trap.jpg": {
+    "date": "Prehistoric Collection Photograph",
+    "creator": "Cmglee",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Cmglee Must Farm trap.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cmglee_Must_Farm_trap.jpg"
+  },
+  "rhyd_y_gorse_bronze_shield.jpg": {
+    "date": "c. 1200-900 BC",
+    "creator": "Daderot",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Shield, from Rhyd-y-Gorse, Dyfed, Wales, Late Bronze Age, c. 1200-900 BC, bronze - British Museum - DSC01339.jpg",
+    "rights_status": "CC0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Shield,_from_Rhyd-y-Gorse,_Dyfed,_Wales,_Late_Bronze_Age,_c._1200-900_BC,_bronze_-_British_Museum_-_DSC01339.jpg"
+  },
+  "butser_iron_age_roundhouse_village.jpg": {
+    "date": "2022-11-21",
+    "creator": "Butser Ancient Farm",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Iron Age Village at Butser Ancient Farm.jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Iron_Age_Village_at_Butser_Ancient_Farm.jpg"
+  },
+  "castell_henllys_hillfort_roundhouse.jpg": {
+    "date": "1987",
+    "creator": "Sandy Gerrard",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Castell Henllys Reconstructed Roundhouse - geograph.org.uk - 6740800.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Castell_Henllys_Reconstructed_Roundhouse_-_geograph.org.uk_-_6740800.jpg"
+  },
+  "maiden_castle_earth_ramparts.jpg": {
+    "date": "2018-06-19 20:30:29",
+    "creator": "Hadrianus1959",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Maiden Castle (multivallate hillfort).jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Maiden_Castle_(multivallate_hillfort).jpg"
+  },
+  "uffington_white_horse_hillfort.jpg": {
+    "date": "2014-08-31",
+    "creator": "Dave Price",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: The White Horse, The Manger, Dragon Hill & Uffington Castle - geograph.org.uk - 4221269.jpg",
+    "rights_status": "CC BY-SA 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_White_Horse,_The_Manger,_Dragon_Hill_%26_Uffington_Castle_-_geograph.org.uk_-_4221269.jpg"
+  },
+  "iron_age_rotary_quern_stone.jpg": {
+    "date": "between 100 BC and 100",
+    "creator": "North Lincolnshire Museum, Martin Foreman, 2019-07-25 13:54:21",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Iron Age Rotary Quern fragment (scale of 100mm intervals) (FindID 964181).jpg",
+    "rights_status": "CC BY 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Iron_Age_Rotary_Quern_fragment_(scale_of_100mm_intervals)_(FindID_964181).jpg"
+  },
+  "waterloo_bridge_horned_helmet.jpg": {
+    "date": "Prehistoric Collection Photograph",
+    "creator": "WordRidden",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Celtic Horned Helmet I-IIBC British-Museum.jpg",
+    "rights_status": "CC BY 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Celtic_Horned_Helmet_I-IIBC_British-Museum.jpg"
+  },
+  "snettisham_twisted_gold_torc.jpg": {
+    "date": "2013-06-17 19:50",
+    "creator": "Paul Hudson from United Kingdom",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Golden torc (9077974271).jpg",
+    "rights_status": "CC BY 2.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Golden_torc_(9077974271).jpg"
+  },
+  "iron_age_celtic_gold_stater.jpg": {
+    "date": "between 55 BC and 45 BC",
+    "creator": "West Yorkshire Archaeology Service, Amy Downes, 2009-12-10 12:14:56",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Iron age coin; gold stater (FindID 280453).jpg",
+    "rights_status": "CC BY-SA 4.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Iron_age_coin;_gold_stater_(FindID_280453).jpg"
+  },
+  "battersea_bronze_celtic_shield.jpg": {
+    "date": "c. 350–50 BC (Photograph 2010)",
+    "creator": "Photographed by BabelStone",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: British_Museum_Battersea_Shield.jpg",
+    "rights_status": "CC0 1.0 Universal Public Domain Dedication (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:British_Museum_Battersea_Shield.jpg"
+  },
+  "durrington_walls_builders_village.jpg": {
+    "date": "c. 2500 BC Neolithic Timber Rings (Photograph 2012)",
+    "creator": "Midnightblueowl at English Wikipedia",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Woodhenge Wiltshire cropped.jpg",
+    "rights_status": "Public domain (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Woodhenge_Wiltshire_cropped.jpg"
+  },
+  "avebury_standing_megalith.jpg": {
+    "date": "2008-12-29",
+    "creator": "JimChampion",
+    "repository": "Wikimedia Commons",
+    "accession_id": "Commons: Stone 14 avebury great circle.jpg",
+    "rights_status": "CC BY-SA 3.0 (Commercial Use Permitted)",
+    "commercial_use_permitted": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stone_14_avebury_great_circle.jpg"
+  }
+}

@@ -68,8 +68,8 @@ export function renderDashboard() {
       </div>
   `;
 
-  // Key Stage 2 Grouping
-  const ks2Order = ['ks2_romans', 'ks2_anglo_saxons_vikings', 'ks2_ww2'];
+  // Key Stage 2 Grouping (Chronological Order: Prehistoric -> Roman -> Early Medieval -> Modern)
+  const ks2Order = ['ks2_stone_to_iron_age', 'ks2_romans', 'ks2_anglo_saxons_vikings', 'ks2_ww2'];
   const ks2Units = units
     .filter((u) => ks2Order.includes(u.id) || String(u.id || '').startsWith('ks2_'))
     .sort((a, b) => {
@@ -113,6 +113,7 @@ export function renderDashboard() {
     .sort((a, b) => gcseOrder.indexOf(a.id) - gcseOrder.indexOf(b.id));
 
   const unitCanonicalTitles = {
+    ks2_stone_to_iron_age: 'Stone Age to Iron Age (c. 800,000 BC–AD 43)',
     ks2_romans: 'The Romans in Britain (55 BC–AD 410)',
     ks2_anglo_saxons_vikings: 'Anglo-Saxons & Vikings (AD 410–1066)',
     ks2_ww2: 'World War II & The Home Front (1933–1945)',
@@ -215,6 +216,16 @@ export function renderDashboard() {
   // Key Stage 2 Section (Two-Tier Primary History Showcase: Lower/Bridge KS2 & Upper KS2)
   if (ks2Units.length > 0) {
     const ks2CardMeta = {
+      ks2_stone_to_iron_age: {
+        phaseBadge: 'Key Stage 2 • Prehistoric Britain',
+        badgeBg: '#92400e',
+        gradient: 'linear-gradient(135deg, #292524 0%, #57534e 46%, #78350f 100%)',
+        borderCol: 'rgba(253, 230, 138, 0.4)',
+        btnBg: 'linear-gradient(135deg, #d97706 0%, #92400e 100%)',
+        bgPos: 'center 78%',
+        summary:
+          'Explore Ice Age flint handaxes & sunken Doggerland, Neolithic farming & Skara Brae, Stonehenge sarsens & Preseli bluestones, the Amesbury Archer, Must Farm ("Britain\'s Pompeii"), and Maiden Castle hillfort.',
+      },
       ks2_romans: {
         phaseBadge: 'Key Stage 2 • Ancient & Roman Britain',
         badgeBg: '#b45309',
@@ -257,7 +268,7 @@ export function renderDashboard() {
           <span style="font-size: 0.76rem; font-weight: 600; color: #64748b;">${ks2Units.length} Curriculum ${ks2Units.length === 1 ? 'Unit' : 'Units'} &bull; Key Stage 2</span>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 16px;">
           ${ks2Units
             .map((ks2Unit) => {
               const cfg = ks2CardMeta[ks2Unit.id] || ks2CardMeta.ks2_ww2;
@@ -265,6 +276,7 @@ export function renderDashboard() {
                 ks2Unit.homepage_background ||
                 ks2Unit.cover_image ||
                 '/units/ks2_ww2/assets/banner_unit_hero.jpg';
+              const ks2BgPos = cfg.bgPos || ks2Unit.cover_image_position || 'center 32%';
               const displayTitle =
                 unitCanonicalTitles[ks2Unit.id] ||
                 (ks2Unit.title || ks2Unit.id).replace(/^KS2:\s*/i, '');
@@ -275,7 +287,7 @@ export function renderDashboard() {
                 'Key Stage 2 Primary Historical Enquiry';
               return `
           <div class="ks2-feature-banner" data-stage="ks2" data-unit="${ks2Unit.id}" style="background: ${cfg.gradient}; border-radius: 12px; border: 1.5px solid ${cfg.borderCol}; box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.22); display: flex; flex-direction: column; overflow: hidden; position: relative;">
-            <div style="height: 155px; background-image: url('${ks2Cover}'); background-size: cover; background-position: center 32%; position: relative;">
+            <div style="height: 155px; background-image: url('${ks2Cover}'); background-size: cover; background-position: ${ks2BgPos}; position: relative;">
               <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.18) 0%, rgba(15, 23, 42, 0.76) 100%);"></div>
               <span style="position: absolute; top: 10px; left: 12px; background: ${cfg.badgeBg}; color: #ffffff; padding: 3px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
                 ${cfg.phaseBadge}
@@ -1562,6 +1574,12 @@ export async function renderTimeline() {
     return;
   }
 
+  if (unitId === 'ks2_stone_to_iron_age') {
+    const { renderKs2StoneAgeTimelineSlider } = await import('./ks2_stone_age_chronology_slider.js');
+    renderKs2StoneAgeTimelineSlider(container);
+    return;
+  }
+
   if (unitId === 'ks2_romans') {
     const { renderKs2RomansTimelineSlider } = await import('./ks2_romans_chronology_slider.js');
     renderKs2RomansTimelineSlider(container);
@@ -1786,6 +1804,7 @@ export async function renderLessonsView() {
         (data.title
           ? data.title.replace(/^(?:Paper \d+:?|KS3:?|KS2:?|GCSE[^:]*:?)\s*/i, '').trim()
           : 'Unit');
+      if (unitId === 'ks2_stone_to_iron_age') unitTitle = 'Stone Age to Iron Age';
       if (unitId === 'ks2_romans') unitTitle = 'The Romans in Britain';
       if (unitId === 'ks2_anglo_saxons_vikings') unitTitle = 'Anglo-Saxons & Vikings';
       if (unitId === 'ks2_ww2') unitTitle = 'Britain at War (WWII)';

@@ -334,7 +334,7 @@ function buildTextbookHtml(unitData) {
       <div style="font-size:7.6pt; font-weight:800; letter-spacing:0.12em; color:#7c2d12; text-transform:uppercase;">The History Revision Hub • Key Stage 2 Disciplinary Classroom Textbook</div>
     </div>
     <div style="background:linear-gradient(135deg,#451a03 0%,#7c2d12 60%,#9a3412 100%); color:#fff; border-radius:8px; padding:5mm 6mm; text-align:center; border:2px solid #f59e0b;">
-      <div style="display:inline-block; background:#f59e0b; color:#0f172a; font-size:7.5pt; font-weight:900; padding:2px 10px; border-radius:12px; text-transform:uppercase; letter-spacing:0.08em;">55 BC – AD 410 • Primary History (Years 3–5)</div>
+      <div style="display:inline-block; background:#f59e0b; color:#0f172a; font-size:7.5pt; font-weight:900; padding:2px 10px; border-radius:12px; text-transform:uppercase; letter-spacing:0.08em;">55 BC – AD 410 • Key Stage 2 Primary History</div>
       <h1 style="font-family:'Cinzel',serif; font-size:20pt; font-weight:900; margin:2mm 0 1.5mm; letter-spacing:0.02em;">THE ROMANS IN BRITAIN</h1>
       <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:10.5pt; color:#fef3c7;">Invasion, Resistance &amp; Lasting Legacy</div>
     </div>
@@ -543,7 +543,7 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
   <div class="${pageClass}">
     <div class="ws-hdr">
       <div>
-        <div class="ws-kicker">KS2 ROMANS IN BRITAIN • MISSION ${String(idx + 1).padStart(2, '0')} OF 06 • YEARS 3–5 DUAL-SCAFFOLD</div>
+        <div class="ws-kicker">KS2 ROMANS IN BRITAIN • MISSION ${String(idx + 1).padStart(2, '0')} OF 06 • KEY STAGE 2 DUAL-SCAFFOLD</div>
         <h1>${escapeHtml(lesson.title)}</h1>
         <div class="ws-eq">Big Question: ${escapeHtml(lesson.enquiryQuestion)}</div>
       </div>
@@ -639,7 +639,7 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
       <div class="task-title"><span class="t-badge purple">TASK 5</span> Mission Challenge • Answer Today's Big Enquiry Question</div>
       <p class="q-item"><strong>${escapeHtml(lesson.enquiryQuestion)}</strong></p>
       <div class="dual-scaffold-bar">
-        <div><strong>🟢 Foundation Scaffold (Years 3–4):</strong> Start with <em>"${escapeHtml(task4.starter || 'The evidence shows that...')}"</em> &bull; <strong>Word Bank:</strong> ${escapeHtml(wordBank)}</div>
+        <div><strong>🟢 Foundation Clues:</strong> Start with <em>"${escapeHtml(task4.starter || 'The evidence shows that...')}"</em> &bull; <strong>Word Bank:</strong> ${escapeHtml(wordBank)}</div>
         <div style="margin-top:0.8mm; color:#5b21b6;"><strong>🟣 ${escapeHtml(scholarHint)}</strong></div>
       </div>
       <div class="lines-stack">
@@ -793,7 +793,7 @@ function buildMasterWorkbookHtml(unitData) {
     <img src="${heroImg}" alt="Roman legionaries with scutum shields" style="width:100%; height:56mm; object-fit:cover; object-position:center 35%; border-radius:7px; border:1.5px solid #cbd5e1;" />
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4mm; background:#fffbeb; border:1.5px solid #fcd34d; border-radius:6px; padding:3.5mm 4.5mm; font-size:9pt; font-weight:700;">
       <div>Historian's Name: ___________________________</div>
-      <div>Class / Year Group: _________________________</div>
+      <div>Class: _____________________________________</div>
     </div>
     <div style="border:1.2px solid #cbd5e1; border-radius:6px; overflow:hidden;">
       <div style="background:#0f172a; color:#fff; font-size:8pt; font-weight:800; padding:2mm 3.5mm; text-transform:uppercase;">Your 6 Historical Detective Missions</div>
@@ -817,15 +817,15 @@ function buildMasterWorkbookHtml(unitData) {
   <div class="wb-page">
     <div class="ws-subhdr">
       <span>HOW TO USE YOUR DUAL-SCAFFOLDED WORKBOOK &amp; REFERENCE MAP</span>
-      <span>YEARS 3–5</span>
+      <span>KEY STAGE 2</span>
     </div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; margin:2mm 0;">
       <div style="background:#f0fdf4; border:1.2px solid #86efac; border-radius:6px; padding:3mm;">
-        <div style="font-size:8.2pt; font-weight:800; color:#166534; margin-bottom:1mm;">🟢 Foundation Clues (Years 3–4)</div>
+        <div style="font-size:8.2pt; font-weight:800; color:#166534; margin-bottom:1mm;">🟢 Foundation Clues</div>
         <p style="font-size:7.6pt; line-height:1.35; color:#1e293b;">Use the <strong>Syllable Key Words</strong> at the top of each mission, borrow the <em>Sentence Starters</em>, and tick off words from the <strong>Word Bank</strong> as you write!</p>
       </div>
       <div style="background:#f5f3ff; border:1.2px solid #c4b5fd; border-radius:6px; padding:3mm;">
-        <div style="font-size:8.2pt; font-weight:800; color:#5b21b6; margin-bottom:1mm;">🟣 Scholar Challenge (Year 5+)</div>
+        <div style="font-size:8.2pt; font-weight:800; color:#5b21b6; margin-bottom:1mm;">🟣 Scholar Challenge</div>
         <p style="font-size:7.6pt; line-height:1.35; color:#1e293b;">Ready to stretch your historical thinking? Tackle the purple <strong>Scholar Challenge</strong> in Task 5 by comparing viewpoints or weighing archaeological clues!</p>
       </div>
     </div>
@@ -1002,7 +1002,7 @@ function buildRetrievalCompanionHtml(unitData) {
     <div style="background:linear-gradient(135deg,#451a03 0%,#7c2d12 100%); color:#fff; padding:5mm 6mm; border-radius:8px; border-bottom:3px solid #f59e0b;">
       <div style="font-size:7.4pt; font-weight:800; color:#fde68a; text-transform:uppercase;">The History Revision Hub • Spaced Retrieval &amp; Homework Companion</div>
       <h1 style="font-family:'Cinzel',serif; font-size:17pt; margin:1.5mm 0;">THE ROMANS IN BRITAIN (24 CORE QUESTIONS)</h1>
-      <div style="font-family:'Lora',serif; font-style:italic; font-size:9.2pt; color:#ffedd5;">Low-Stakes Memory Practice Across Enquiries 1 to 6 • Years 3–5</div>
+      <div style="font-family:'Lora',serif; font-style:italic; font-size:9.2pt; color:#ffedd5;">Low-Stakes Memory Practice Across Enquiries 1 to 6 • Key Stage 2</div>
     </div>
     <img src="${heroImg}" alt="Roman legionaries with scutum shields" style="width:100%; height:54mm; object-fit:cover; object-position:center 35%; border-radius:6px; border:1.2px solid #cbd5e1;" />
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4mm; background:#fffbeb; border:1.2px solid #fcd34d; border-radius:5px; padding:3mm 4mm; font-size:8.6pt; font-weight:700;">
@@ -1176,7 +1176,7 @@ function buildSchemeOfWorkHtml(unitData) {
   <!-- PAGE 1: OVERVIEW & TWO-TIER AGE DIFFERENTIATION -->
   <div class="sow-page">
     <div style="background:linear-gradient(135deg,#451a03 0%,#7c2d12 100%); color:#fff; border-radius:6px; padding:5mm 6mm; border-bottom:3px solid #f59e0b;">
-      <div style="font-size:7.6pt; font-weight:800; color:#fde68a; text-transform:uppercase; letter-spacing:0.08em;">Key Stage 2 Primary History • Bridge Years 3–4 (Adaptable to Year 5)</div>
+      <div style="font-size:7.6pt; font-weight:800; color:#fde68a; text-transform:uppercase; letter-spacing:0.08em;">Key Stage 2 Primary History • Ancient &amp; Roman Britain</div>
       <h1 style="font-family:'Cinzel',serif; font-size:15.5pt; margin:1.2mm 0;">THE ROMANS IN BRITAIN: TEACHER GUIDE &amp; SOW</h1>
       <p style="font-family:'Lora',serif; font-style:italic; font-size:9pt; color:#ffedd5;">Complete Walk-In Planning Pack • 6 Modular 3-Act Enquiries (55 BC–AD 410) • 100% Commercially Cleared Sources</p>
     </div>

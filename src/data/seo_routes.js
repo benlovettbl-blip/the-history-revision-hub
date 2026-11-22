@@ -266,6 +266,19 @@ export const SEO_UNIT_ROUTES = [
 
   // Key Stage 2: Primary History
   {
+    unitId: 'ks2_stone_to_iron_age',
+    slug: 'ks2-stone-age-to-iron-age',
+    aliases: ['stone-age-to-iron-age-ks2', 'primary-stone-age-bronze-age-iron-age'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Stone Age to Iron Age Britain — Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43)',
+    seoTitle:
+      'KS2 Stone Age to Iron Age Britain | Skara Brae, Stonehenge, Must Farm & Hillforts | The History Revision Hub',
+    metaDescription:
+      'Age-calibrated UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Stone Age to Iron Age Britain: Doggerland, Star Carr, Skara Brae, Stonehenge, the Amesbury Archer, Must Farm, and Maiden Castle.',
+    priority: '0.85',
+  },
+  {
     unitId: 'ks2_romans',
     slug: 'ks2-romans-in-britain',
     aliases: ['primary-romans-in-britain', 'romans-ks2'],

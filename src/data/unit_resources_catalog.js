@@ -33,6 +33,63 @@ export const UNIT_RESOURCES_CATALOG = {
   // ============================================================================
   // KEY STAGE 2
   // ============================================================================
+  ks2_stone_to_iron_age: {
+    unitTitle: 'Stone Age to Iron Age Britain: Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43)',
+    specSubtitle: 'Key Stage 2 History • Prehistoric Britain • 6 Enquiries',
+    stage: 'ks2',
+    textbook: {
+      title: 'Stone Age to Iron Age Classroom Textbook',
+      label: 'Classroom Textbook',
+      pages: '12 Pages',
+      desc: 'Wide-margin primary reading anthology across all 6 enquiries (c. 800,000 BC–AD 43), Chronological Spine, and Phonetic Vocabulary Bank.',
+      htmlUrl: '/units/ks2_stone_to_iron_age/textbook.html',
+      pdfUrl: '/pdfs/ks2_stone_to_iron_age_textbook.pdf',
+      downloadName: 'KS2_Stone_Age_to_Iron_Age_Classroom_Textbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    workbook: {
+      title: 'Stone Age to Iron Age Pupil Workbook',
+      label: 'Pupil Workbook',
+      pages: '16 Pages',
+      desc: 'Dual-scaffolded pupil workbook across Enquiries 1–6 (Foundation Clues + Scholar Challenges), Doggerland Map, and Historian Certificate.',
+      htmlUrl: '/units/ks2_stone_to_iron_age/pupil_workbook.html',
+      pdfUrl: '/pdfs/ks2_stone_to_iron_age_pupil_workbook.pdf',
+      downloadName: 'KS2_Stone_Age_to_Iron_Age_Pupil_Workbook.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    retrieval: {
+      title: 'Stone Age to Iron Age Retrieval Companion (24 Questions)',
+      label: 'Retrieval Companion',
+      pages: '4 Pages',
+      questionsCount: 24,
+      desc: '4 core recall questions per enquiry across all 6 lessons (pp. 2–3) plus Master Marking Bank & Family Quiz Guide (p. 4).',
+      htmlUrl: '/units/ks2_stone_to_iron_age/quiz_pack.html',
+      pdfUrl: '/pdfs/ks2_stone_to_iron_age_retrieval_companion.pdf',
+      downloadName: 'KS2_Stone_Age_to_Iron_Age_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Primary Teacher Guide & 6-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 6-lesson primary scheme of work, dual-scaffold differentiation guide, misconceptions, and answer keys.',
+      htmlUrl: '/units/ks2_stone_to_iron_age/ks2_stone_to_iron_age_scheme_of_work.html',
+      pdfUrl: '/pdfs/ks2_stone_to_iron_age_scheme_of_work.pdf',
+      downloadName: 'KS2_Stone_Age_to_Iron_Age_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
+    timelineUrl: '/units/ks2_stone_to_iron_age/timeline_slider.html',
+    worksheets: [
+      { id: 'L01', label: 'Lesson 1: Ice Age Hunters & Sunken Doggerland', htmlUrl: '/units/ks2_stone_to_iron_age/worksheets/lesson_01_ice_age_doggerland_worksheet.html', pdfUrl: '/pdfs/ks2_stone_to_iron_age/lesson_01_ice_age_doggerland_worksheet.pdf' },
+      { id: 'L02', label: 'Lesson 2: First Farmers & Skara Brae', htmlUrl: '/units/ks2_stone_to_iron_age/worksheets/lesson_02_neolithic_skara_brae_worksheet.html', pdfUrl: '/pdfs/ks2_stone_to_iron_age/lesson_02_neolithic_skara_brae_worksheet.pdf' },
+      { id: 'L03', label: 'Lesson 3: Secrets of Stonehenge & Winter Feasts', htmlUrl: '/units/ks2_stone_to_iron_age/worksheets/lesson_03_stonehenge_builders_worksheet.html', pdfUrl: '/pdfs/ks2_stone_to_iron_age/lesson_03_stonehenge_builders_worksheet.pdf' },
+      { id: 'L04', label: 'Lesson 4: Bronze Age & The Amesbury Archer', htmlUrl: '/units/ks2_stone_to_iron_age/worksheets/lesson_04_bronze_age_amesbury_archer_worksheet.html', pdfUrl: '/pdfs/ks2_stone_to_iron_age/lesson_04_bronze_age_amesbury_archer_worksheet.pdf' },
+      { id: 'L05', label: 'Lesson 5: "Britain\'s Pompeii" — Must Farm', htmlUrl: '/units/ks2_stone_to_iron_age/worksheets/lesson_05_must_farm_bronze_age_worksheet.html', pdfUrl: '/pdfs/ks2_stone_to_iron_age/lesson_05_must_farm_bronze_age_worksheet.pdf' },
+      { id: 'L06', label: 'Lesson 6: Iron Age Celts & Giant Hillforts', htmlUrl: '/units/ks2_stone_to_iron_age/worksheets/lesson_06_iron_age_celts_hillforts_worksheet.html', pdfUrl: '/pdfs/ks2_stone_to_iron_age/lesson_06_iron_age_celts_hillforts_worksheet.pdf' },
+    ],
+  },
+
   ks2_romans: {
     unitTitle: 'The Romans in Britain: Invasion, Resistance & Legacy (55 BC–AD 410)',
     specSubtitle: 'Key Stage 2 History • Ancient & Roman Britain • 6 Enquiries',

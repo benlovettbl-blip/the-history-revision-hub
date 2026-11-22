@@ -3414,6 +3414,11 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
     },
     // Key Stage 2
     {
+      id: 'ks2_stone_to_iron_age',
+      title: 'KS2: Stone Age to Iron Age Britain (c. 800,000 BC–AD 43)',
+      group: 'Key Stage 2',
+    },
+    {
       id: 'ks2_romans',
       title: 'KS2: The Romans in Britain (55 BC–AD 410)',
       group: 'Key Stage 2',

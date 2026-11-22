@@ -1225,6 +1225,14 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 4
     }
   },
+  "ks2_stone_to_iron_age": {
+    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 0 },
+    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 1 },
+    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 2 },
+    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 3 },
+    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 4 },
+    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 5 }
+  },
   "ks2_romans": {
     "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 0 },
     "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 1 },

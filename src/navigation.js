@@ -112,21 +112,28 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
   }
 
   // Keep search bar placeholder contextual when inside a KS2 unit, normal everywhere else
+  const isStoneAgeKs2 =
+    unitParam === 'ks2_stone_to_iron_age' ||
+    (resolvedData && resolvedData.id === 'ks2_stone_to_iron_age');
   const isRomansKs2 =
     unitParam === 'ks2_romans' || (resolvedData && resolvedData.id === 'ks2_romans');
   const isSaxonsKs2 =
     unitParam === 'ks2_anglo_saxons_vikings' ||
     (resolvedData && resolvedData.id === 'ks2_anglo_saxons_vikings');
-  const ks2SearchPillHint = isRomansKs2
-    ? 'Search Romans...'
-    : isSaxonsKs2
-      ? 'Search Saxons...'
-      : 'Search WWII...';
-  const ks2SearchModalHint = isRomansKs2
-    ? 'Search Romans, Celts, Boudicca, Hadrian...'
-    : isSaxonsKs2
-      ? 'Search Saxons, Vikings, Sutton Hoo, Alfred...'
-      : 'Search WWII topics, evacuees, Blitz...';
+  const ks2SearchPillHint = isStoneAgeKs2
+    ? 'Search Stone Age...'
+    : isRomansKs2
+      ? 'Search Romans...'
+      : isSaxonsKs2
+        ? 'Search Saxons...'
+        : 'Search WWII...';
+  const ks2SearchModalHint = isStoneAgeKs2
+    ? 'Search Stonehenge, Skara Brae, Bronze Age, Hillforts...'
+    : isRomansKs2
+      ? 'Search Romans, Celts, Boudicca, Hadrian...'
+      : isSaxonsKs2
+        ? 'Search Saxons, Vikings, Sutton Hoo, Alfred...'
+        : 'Search WWII topics, evacuees, Blitz...';
   const searchPlaceholder = document.querySelector('#header-search-bar .search-placeholder');
   if (searchPlaceholder) {
     searchPlaceholder.textContent = isKs2UnitContext
@@ -682,6 +689,7 @@ export function updateBreadcrumbs(customTrail = null) {
 
   const getUnitName = (id) => {
     if (!id) return '';
+    if (id === 'ks2_stone_to_iron_age') return 'Stone Age to Iron Age';
     if (id === 'ks2_romans') return 'The Romans in Britain';
     if (id === 'ks2_anglo_saxons_vikings') return 'Anglo-Saxons & Vikings';
     if (id === 'ks2_ww2') return 'World War II & The Home Front';
@@ -1907,6 +1915,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     unitId === 'cme_new' ||
     unitId === 'gcse_middle_east_1945_1995' ||
     unitId === 'ks2_ww2' ||
+    unitId === 'ks2_stone_to_iron_age' ||
     unitId === 'ks2_romans' ||
     unitId === 'ks2_anglo_saxons_vikings' ||
     Boolean(unitData.timelineEvents && unitData.timelineEvents.length > 0) ||

@@ -181,7 +181,7 @@ const SOURCE_A_STARTERS = [
 ];
 
 const SOURCE_A_CLUE_NOTES = [
-  'Bede (Ecclesiastical History I.15, AD 731): "Those who came over were of the three most powerful nations of Germany—that is, the Saxons, the Angles, and the Jutes."',
+  'Bede (History of the English Church and People I.15, AD 731): "Those who came over were of the three most powerful nations of Germany—that is, the Saxons, the Angles, and the Jutes."',
   'Archaeology Clue: Acidic Suffolk sand dissolved the 27m oak ship and bones in Mound 1, leaving iron ship rivets, Sri Lankan garnets, and this iconic warrior helmet!',
   'Anglo-Saxon Chronicle (AD 793): "Fierce, foreboding omens came over Northumbria... and the ravaging of heathen men miserably destroyed God’s church at Lindisfarne."',
   'Inscription Clue: Around the gold and rock-crystal frame run Old English letters: "AELFRED MEC HEHT GEWYRCAN" — meaning "Alfred ordered me to be made"!',
@@ -348,7 +348,7 @@ function buildTextbookHtml(unitData) {
     <div style="border:2px solid rgba(167,243,208,0.45); border-radius:10px; padding:10mm; height:100%; display:flex; flex-direction:column; justify-content:space-between;">
       <div>
         <div style="display:inline-block; background:#059669; color:#fff; font-size:8pt; font-weight:800; letter-spacing:0.1em; padding:4px 12px; border-radius:20px; text-transform:uppercase; margin-bottom:5mm;">
-          Key Stage 2 Primary History • Years 3–6 Edition
+          Key Stage 2 Primary History • Classroom Edition
         </div>
         <h1 style="font-family:'Cinzel',serif; font-size:25pt; font-weight:900; line-height:1.12; letter-spacing:0.02em; margin-bottom:3mm;">
           ANGLO-SAXONS &amp; VIKINGS
@@ -548,7 +548,7 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
   <div class="${pageClass}">
     <div class="ws-hdr">
       <div>
-        <div class="ws-kicker">KS2 ANGLO-SAXONS &amp; VIKINGS • MISSION ${String(idx + 1).padStart(2, '0')} OF 06 • YEARS 3–6 DUAL-SCAFFOLD</div>
+        <div class="ws-kicker">KS2 ANGLO-SAXONS &amp; VIKINGS • MISSION ${String(idx + 1).padStart(2, '0')} OF 06 • KEY STAGE 2 DUAL-SCAFFOLD</div>
         <h1>${escapeHtml(lesson.title)}</h1>
         <div class="ws-eq">Big Question: ${escapeHtml(lesson.enquiryQuestion)}</div>
       </div>
@@ -644,7 +644,7 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
       <div class="task-title"><span class="t-badge purple">TASK 5</span> Mission Challenge • Answer Today's Big Enquiry Question</div>
       <p class="q-item"><strong>${escapeHtml(lesson.enquiryQuestion)}</strong></p>
       <div class="dual-scaffold-bar">
-        <div><strong>🟢 Foundation Scaffold (Years 3–4):</strong> Start with <em>"${escapeHtml(task4.starter || 'The evidence shows that...')}"</em> &bull; <strong>Word Bank:</strong> ${escapeHtml(wordBank)}</div>
+        <div><strong>🟢 Foundation Clues:</strong> Start with <em>"${escapeHtml(task4.starter || 'The evidence shows that...')}"</em> &bull; <strong>Word Bank:</strong> ${escapeHtml(wordBank)}</div>
         <div style="margin-top:0.8mm; color:#5b21b6;"><strong>🟣 ${escapeHtml(scholarHint)}</strong></div>
       </div>
       <div class="lines-stack">
@@ -798,7 +798,7 @@ function buildMasterWorkbookHtml(unitData) {
     <img src="${heroImg}" alt="Viking longship Draken Harald Hårfagre" style="width:100%; height:56mm; object-fit:cover; object-position:center 42%; border-radius:7px; border:1.5px solid #cbd5e1;" />
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4mm; background:#ecfdf5; border:1.5px solid #6ee7b7; border-radius:6px; padding:3.5mm 4.5mm; font-size:9pt; font-weight:700;">
       <div>Historian's Name: ___________________________</div>
-      <div>Class / Year Group: _________________________</div>
+      <div>Class: _____________________________________</div>
     </div>
     <div style="border:1.2px solid #cbd5e1; border-radius:6px; overflow:hidden;">
       <div style="background:#0f172a; color:#fff; font-size:8pt; font-weight:800; padding:2mm 3.5mm; text-transform:uppercase;">Your 6 Historical Detective Missions (AD 410–1066)</div>
@@ -822,15 +822,15 @@ function buildMasterWorkbookHtml(unitData) {
   <div class="wb-page">
     <div class="ws-subhdr">
       <span>HOW TO USE YOUR DUAL-SCAFFOLDED WORKBOOK &amp; REFERENCE MAP</span>
-      <span>YEARS 3–6</span>
+      <span>KEY STAGE 2</span>
     </div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; margin:2mm 0;">
       <div style="background:#f0fdf4; border:1.2px solid #86efac; border-radius:6px; padding:3mm;">
-        <div style="font-size:8.2pt; font-weight:800; color:#166534; margin-bottom:1mm;">🟢 Foundation Clues (Years 3–4)</div>
+        <div style="font-size:8.2pt; font-weight:800; color:#166534; margin-bottom:1mm;">🟢 Foundation Clues</div>
         <p style="font-size:7.6pt; line-height:1.35; color:#1e293b;">Use the <strong>Syllable Key Words</strong> at the top of each mission, borrow the <em>Sentence Starters</em>, and tick off words from the <strong>Word Bank</strong> as you write!</p>
       </div>
       <div style="background:#f5f3ff; border:1.2px solid #c4b5fd; border-radius:6px; padding:3mm;">
-        <div style="font-size:8.2pt; font-weight:800; color:#5b21b6; margin-bottom:1mm;">🟣 Scholar Challenge (Years 5–6)</div>
+        <div style="font-size:8.2pt; font-weight:800; color:#5b21b6; margin-bottom:1mm;">🟣 Scholar Challenge</div>
         <p style="font-size:7.6pt; line-height:1.35; color:#1e293b;">Ready to stretch your historical thinking? Tackle the purple <strong>Scholar Challenge</strong> in Task 5 by weighing archaeological clues against monk chronicles!</p>
       </div>
     </div>
@@ -1000,7 +1000,7 @@ function buildRetrievalCompanionHtml(unitData) {
     <div style="background:linear-gradient(135deg,#022c22 0%,#065f46 100%); color:#fff; padding:5mm 6mm; border-radius:8px; border-bottom:3px solid #f59e0b;">
       <div style="font-size:7.4pt; font-weight:800; color:#fde68a; text-transform:uppercase;">The History Revision Hub • Spaced Retrieval &amp; Homework Companion</div>
       <h1 style="font-family:'Cinzel',serif; font-size:16.5pt; margin:1.5mm 0;">ANGLO-SAXONS &amp; VIKINGS (24 CORE QUESTIONS)</h1>
-      <div style="font-family:'Lora',serif; font-style:italic; font-size:9.2pt; color:#d1fae5;">Low-Stakes Memory Practice Across Enquiries 1 to 6 • Years 3–6</div>
+      <div style="font-family:'Lora',serif; font-style:italic; font-size:9.2pt; color:#d1fae5;">Low-Stakes Memory Practice Across Enquiries 1 to 6 • Key Stage 2</div>
     </div>
     <img src="${heroImg}" alt="Viking longship Draken Harald Hårfagre" style="width:100%; height:54mm; object-fit:cover; object-position:center 42%; border-radius:6px; border:1.2px solid #cbd5e1;" />
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4mm; background:#ecfdf5; border:1.2px solid #6ee7b7; border-radius:5px; padding:3mm 4mm; font-size:8.6pt; font-weight:700;">
@@ -1174,7 +1174,7 @@ function buildSchemeOfWorkHtml(unitData) {
   <!-- PAGE 1: OVERVIEW & TWO-TIER AGE DIFFERENTIATION -->
   <div class="sow-page">
     <div style="background:linear-gradient(135deg,#022c22 0%,#065f46 100%); color:#fff; border-radius:6px; padding:5mm 6mm; border-bottom:3px solid #f59e0b;">
-      <div style="font-size:7.6pt; font-weight:800; color:#fde68a; text-transform:uppercase; letter-spacing:0.08em;">Key Stage 2 Primary History • Bridge/Upper Years 4–5 (Adaptable Years 3–6)</div>
+      <div style="font-size:7.6pt; font-weight:800; color:#fde68a; text-transform:uppercase; letter-spacing:0.08em;">Key Stage 2 Primary History • Early Medieval Britain</div>
       <h1 style="font-family:'Cinzel',serif; font-size:15pt; margin:1.2mm 0;">ANGLO-SAXONS &amp; VIKINGS: TEACHER GUIDE &amp; SOW</h1>
       <p style="font-family:'Lora',serif; font-style:italic; font-size:9pt; color:#d1fae5;">Complete Walk-In Planning Pack • 6 Modular 3-Act Enquiries (AD 410–1066) • 100% Commercially Cleared Sources</p>
     </div>

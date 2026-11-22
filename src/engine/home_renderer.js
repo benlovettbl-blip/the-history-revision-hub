@@ -104,6 +104,7 @@ export function renderHomepage() {
 
     if (heroImageUrl) {
       const positionFallbacks = {
+        ks2_stone_to_iron_age: 'center 78%',
         ks2_romans: 'center 38%',
         ks2_anglo_saxons_vikings: 'center 42%',
         ks2_ww2: 'center center',
