@@ -449,29 +449,85 @@ export const ICONIC_LESSON_VISUALS = {
   },
 
   usa: {
+    lesson_1_1: {
+      cardImage: "/images/usa/kt1/usa_l01_b1_colored_water_cooler_oklahoma_1939.jpg",
+      heroCameo: "/images/usa/kt1/usa_l01_cameo_a_philip_randolph_1942.jpg",
+      cameoAlt: "A. Philip Randolph (1889–1979), trade unionist and civil rights strategist whose pressure helped secure Executive Order 9981 desegregating the U.S. Armed Forces (photographed by Gordon Parks, 1942, Library of Congress)",
+    },
     lesson_1_2: {
-      cardImage: '/units/usa/assets/sources/little-rock-nine-1957.jpg',
+      cardImage: "/images/usa/kt1/usa_l02_s3_elizabeth_eckford_central_high_1957.jpg",
+      heroCameo: "/images/usa/kt1/usa_l02_cameo_linda_brown_loc.jpg",
+      cameoAlt: "Linda Brown (later Linda Brown Smith), whose exclusion from Topeka’s Sumner Elementary School anchored the landmark Brown v. Board of Education class-action lawsuit (Library of Congress)",
     },
     lesson_1_3: {
-      cardImage: '/units/usa/assets/sources/rosa-parks-bus-1956.jpg',
-      heroCameo: '/units/usa/assets/sources/rosa-parks-bus-1956.jpg',
-      cameoAlt: 'Rosa Parks seated at the front of a Montgomery bus (December 1956)',
+      cardImage: "/images/usa/kt1/usa_l03_cameo_rosa_parks_1956_loc.jpg",
+      heroCameo: "/images/usa/kt1/usa_l03_cameo_rosa_parks_1956_loc.jpg",
+      cameoAlt: "Rosa Parks (1913–2005), Montgomery NAACP branch secretary whose refusal to surrender her bus seat on 1 December 1955 sparked the 381-day Montgomery Bus Boycott (November 1956, Library of Congress)",
+    },
+    lesson_1_4: {
+      cardImage: "/images/usa/kt1/usa_l04_b4_eisenhower_signing_1957_civil_rights_act.jpg",
+      heroCameo: "/images/usa/kt1/usa_l04_cameo_strom_thurmond_1961_loc.jpg",
+      cameoAlt: "Senator Strom Thurmond of South Carolina, co-drafter of the 1956 Southern Manifesto who staged a 24-hour-18-minute Senate filibuster against the Civil Rights Act of 1957 (Library of Congress)",
     },
     lesson_2_1: {
-      cardImage: '/units/usa/assets/sources/greensboro-sit-in-counter.jpg',
+      cardImage: "/images/usa/kt2/usa_l2_1_cameo_john_lewis_1964.jpg",
+      heroCameo: "/images/usa/kt2/usa_l2_1_cameo_john_lewis_1964.jpg",
+      cameoAlt: "SNCC Chairman and original May 1961 Freedom Rider John Lewis speaking at a press conference (16 April 1964, Library of Congress)",
     },
     lesson_2_2: {
-      cardImage: '/units/usa/assets/sources/mlk-dream-speech-1963.jpg',
-      heroCameo: '/units/usa/assets/sources/mlk-dream-speech-1963.jpg',
-      cameoAlt: "Dr Martin Luther King Jr. delivering his 'I Have a Dream' speech (1963)",
+      cardImage: "/images/usa/kt2/usa_l2_2_cameo_lbj_mlk_capitol_1965.jpg",
+      heroCameo: "/images/usa/kt2/usa_l2_2_cameo_lbj_mlk_capitol_1965.jpg",
+      cameoAlt: "President Lyndon B. Johnson shaking hands with Dr Martin Luther King Jr. alongside Rev. Ralph Abernathy, Coretta Scott King, and Rosa Parks at the U.S. Capitol after signing the Voting Rights Act (6 August 1965)",
     },
     lesson_2_3: {
-      cardImage: '/units/usa/assets/sources/olympics-black-power-1968.jpg',
-      heroCameo: '/units/usa/assets/sources/olympics-black-power-1968.jpg',
-      cameoAlt: 'Tommie Smith and John Carlos Black Power salute (1968 Olympics)',
+      cardImage: "/images/usa/kt2/usa_l2_3_cameo_bobby_seale_panthers.jpg",
+      heroCameo: "/images/usa/kt2/usa_l2_3_cameo_bobby_seale_panthers.jpg",
+      cameoAlt: "Bobby Seale, co-founder and Chairman of the Black Panther Party for Self-Defense, photographed in California",
+    },
+    lesson_2_4: {
+      cardImage: "/images/usa/kt2/usa_l2_4_cameo_mlk_1968_portrait.jpg",
+      heroCameo: "/images/usa/kt2/usa_l2_4_cameo_mlk_1968_portrait.jpg",
+      cameoAlt: "Dr Martin Luther King Jr. speaking with right hand raised during his northern open-housing and economic justice campaigns (Library of Congress)",
+    },
+    lesson_3_1: {
+      cardImage: "/images/usa/kt3/usa_l09_cameo_ngo_dinh_diem_1957.jpg",
+      heroCameo: "/images/usa/kt3/usa_l09_cameo_ngo_dinh_diem_1957.jpg",
+      cameoAlt: "South Vietnamese President Ngo Dinh Diem (1901–1963) during his official arrival in Washington, D.C. (8 May 1957, U.S. Air Force / NARA ARC 542189)",
+    },
+    lesson_3_2: {
+      cardImage: "/images/usa/kt3/usa_l10_cameo_lbj_tonkin_midnight_address_1964.jpg",
+      heroCameo: "/images/usa/kt3/usa_l10_cameo_lbj_tonkin_midnight_address_1964.jpg",
+      cameoAlt: "President Lyndon B. Johnson at the White House podium delivering his televised late-night address to the nation on the Gulf of Tonkin incident (4 August 1964, LBJ Presidential Library)",
+    },
+    lesson_3_3: {
+      cardImage: "/images/usa/kt3/usa_l11_cameo_westmoreland_1st_cav_vietnam.jpg",
+      heroCameo: "/images/usa/kt3/usa_l11_cameo_westmoreland_1st_cav_vietnam.jpg",
+      cameoAlt: "General William C. Westmoreland, Commander of U.S. Military Assistance Command, Vietnam (MACV), standing atop a jeep to address troopers of the 1st Cavalry Division (Airmobile) at LZ Hammond (6 December 1966)",
+    },
+    lesson_3_4: {
+      cardImage: "/images/usa/kt3/usa_l12_cameo_richard_nixon_portrait_1969.jpg",
+      heroCameo: "/images/usa/kt3/usa_l12_cameo_richard_nixon_portrait_1969.jpg",
+      cameoAlt: "Official White House close-up portrait of President Richard M. Nixon (1969, White House Photo Office / National Archives)",
     },
     lesson_4_1: {
-      cardImage: '/units/usa/assets/sources/kent-state-protests-1970.jpg',
+      cardImage: "/images/usa/kt4/usa_kt4_l13_cameo_muhammad_ali_1967.jpg",
+      heroCameo: "/images/usa/kt4/usa_kt4_l13_cameo_muhammad_ali_1967.jpg",
+      cameoAlt: "World heavyweight boxing champion Muhammad Ali in 1967, the year he refused Selective Service induction into the U.S. Army on religious and moral grounds",
+    },
+    lesson_4_2: {
+      cardImage: "/images/usa/kt4/usa_kt4_l14_cameo_richard_nixon_1971.jpg",
+      heroCameo: "/images/usa/kt4/usa_kt4_l14_cameo_richard_nixon_1971.jpg",
+      cameoAlt: "Official White House portrait of President Richard M. Nixon (July 1971), architect of Vietnamization and the \"Silent Majority\" electoral coalition",
+    },
+    lesson_4_3: {
+      cardImage: "/images/usa/kt4/usa_kt4_l15_cameo_henry_kissinger_1973.jpg",
+      heroCameo: "/images/usa/kt4/usa_kt4_l15_cameo_henry_kissinger_1973.jpg",
+      cameoAlt: "Official portrait of Dr Henry A. Kissinger (1973), National Security Advisor and Secretary of State who negotiated the January 1973 Paris Peace Accords with Le Duc Tho",
+    },
+    lesson_4_4: {
+      cardImage: "/images/usa/kt4/usa_kt4_l16_cameo_creighton_abrams.jpg",
+      heroCameo: "/images/usa/kt4/usa_kt4_l16_cameo_creighton_abrams.jpg",
+      cameoAlt: "General Creighton W. Abrams (Commander, U.S. Military Assistance Command, Vietnam, 1968–1972), who oversaw the drawdown of U.S. ground forces and ARVN handover",
     },
   },
 

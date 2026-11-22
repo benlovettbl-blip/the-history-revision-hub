@@ -177,6 +177,14 @@ function loadWorld1938() {
   return rewindForD3(JSON.parse(fs.readFileSync(path.join(GIS_CACHE, 'world_1938.geojson'), 'utf8')));
 }
 
+function loadWorld1960() {
+  return rewindForD3(JSON.parse(fs.readFileSync(path.join(GIS_CACHE, 'world_1960.geojson'), 'utf8')));
+}
+
+function loadUsStates20m() {
+  return rewindForD3(JSON.parse(fs.readFileSync(path.join(GIS_CACHE, 'us_states_20m.geojson'), 'utf8')));
+}
+
 function filterGreaterReich1938(fc1938) {
   return fc1938.features.filter((f) => {
     const n = f.properties && (f.properties.NAME || f.properties.SUBJECTO || '');
@@ -379,6 +387,8 @@ module.exports = {
   filterWeimarReich1920,
   loadWorld1938,
   filterGreaterReich1938,
+  loadWorld1960,
+  loadUsStates20m,
   loadBerlinOrtsteile,
   getBerlin1945Sectors,
   cleanPath,
