@@ -2719,8 +2719,7 @@
       "enquiry_question": "How did Beaker newcomers and bronze metalworking transform life and power in Britain?",
       "prologue": "Around 2400 BC, travellers crossed the sea from Europe bringing patterned bell-shaped clay drinking pots and a dazzling secret: melting rock in roaring fires to pour liquid metal! How did mixing Welsh copper with Cornish tin create tough bronze tools, golden capes, and rich burials like the Amesbury Archer near Stonehenge?",
       "blurb": "Around 2400 BC, travellers crossed the sea from Europe bringing patterned bell-shaped clay drinking pots and a dazzling secret: melting rock in roaring fires to pour liquid metal! How did mixing Welsh copper with Cornish tin create tough bronze tools, golden capes, and rich burials like the Amesbury Archer near Stonehenge?",
-      "hero_image": "/units/ks2_stone_to_iron_age/assets/mold_bronze_age_gold_cape.jpg",
-      "card_image": "/units/ks2_stone_to_iron_age/assets/mold_bronze_age_gold_cape.jpg",
+      "hero_image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg",
       "banner_position": "center 45%",
       "card_position": "center 45%",
       "teacher_notes": {
@@ -3634,7 +3633,13 @@
           "viewing_task": "[01:15] Recall: Which two metals are melted together to make bronze?\n[03:10] Explain: Why were reusable bronze moulds such an improvement on flint tools?\n[04:50] Challenge: How did metal trade change who held power in Bronze Age villages?",
           "model_answer": "Recall: Nine parts copper and one part tin.\nExplain: Liquid bronze could be poured into moulds to make tough, sharp axes and remelted if broken.\nChallenge: Families controlling rare metal mines and trade routes grew into wealthy chieftains."
         }
-      ]
+      ],
+      "banner": {
+        "image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg",
+        "caption": "Bronze Age round barrow burial mounds on the chalk landscape near Stonehenge in Wiltshire (New King Barrows).",
+        "position": "center 52%"
+      },
+      "banner_image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg"
     },
     {
       "id": "lesson_5",

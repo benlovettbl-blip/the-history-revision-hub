@@ -946,8 +946,7 @@
       "enquiry_question": "Were the Classic Maya ruled as one empire, and what reveals the power of their kings and queens?",
       "prologue": "Forget one single emperor — over forty rival Maya city-states clashed and traded across the jungle! Climb steep corbel-vaulted pyramids at Tikal and Calakmul, unlock King Pakal’s hidden tomb at Palenque to see his green jade mask, and meet warrior queen Lady Six Sky.",
       "blurb": "Forget one single emperor — over forty rival Maya city-states clashed and traded across the jungle! Climb steep corbel-vaulted pyramids at Tikal and Calakmul, unlock King Pakal’s hidden tomb at Palenque to see his green jade mask, and meet warrior queen Lady Six Sky.",
-      "hero_image": "/units/ks2_maya_civilisation/assets/tikal_temple_of_the_great_jaguar.jpg",
-      "card_image": "/units/ks2_maya_civilisation/assets/tikal_temple_of_the_great_jaguar.jpg",
+      "hero_image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -1834,11 +1833,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_maya_civilisation/assets/tikal_temple_of_the_great_jaguar.jpg",
-        "caption": "Stepped limestone Temple of the Great Jaguar towering above the Great Plaza at the Classic Maya superpower of Tikal",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg",
+        "caption": "Panoramic view across the stepped limestone temples and four-storey Royal Palace tower of Classic Maya Palenque in the Chiapas rainforest.",
+        "position": "center 45%"
       },
-      "banner_image": "/units/ks2_maya_civilisation/assets/tikal_temple_of_the_great_jaguar.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg"
     },
     {
       "id": "lesson_3",
@@ -2752,8 +2751,7 @@
       "enquiry_question": "What did Classic Maya people eat, trade, and play in everyday life between AD 600 and 900?",
       "prologue": "Wake before dawn to hear maize dough grinding on volcanic stone metates, spend dried chocolate beans as cash in a bustling plaza market, and dive hip-first after a four-kilogram rubber ball in Pok-ta-Pok!",
       "blurb": "Wake before dawn to hear maize dough grinding on volcanic stone metates, spend dried chocolate beans as cash in a bustling plaza market, and dive hip-first after a four-kilogram rubber ball in Pok-ta-Pok!",
-      "hero_image": "/units/ks2_maya_civilisation/assets/copan_ballcourt_macaw_marker.jpg",
-      "card_image": "/units/ks2_maya_civilisation/assets/copan_ballcourt_macaw_marker.jpg",
+      "hero_image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -3640,11 +3638,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_maya_civilisation/assets/copan_ballcourt_macaw_marker.jpg",
-        "caption": "Carved stone scarlet macaw marker overlooking the Classic Maya Pok-ta-Pok ballcourt at Copán in Honduras",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
+        "caption": "High stone walls of the Great Ball Court (Gran Juego de Pelota) at Chichén Itzá, the largest Pok-ta-Pok arena in ancient Mesoamerica.",
+        "position": "center 46%"
       },
-      "banner_image": "/units/ks2_maya_civilisation/assets/copan_ballcourt_macaw_marker.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg"
     },
     {
       "id": "lesson_5",
@@ -3655,8 +3653,7 @@
       "enquiry_question": "What did the Maya believe about creation and the gods, and how did beliefs shape Chichén Itzá?",
       "prologue": "Hear how the gods shaped the first humans from yellow and white maize dough, follow the Hero Twins into the watery underworld of Xibalba, and watch sunlight slither down Chichén Itzá’s 365-step pyramid as the feathered serpent Kukulkan!",
       "blurb": "Hear how the gods shaped the first humans from yellow and white maize dough, follow the Hero Twins into the watery underworld of Xibalba, and watch sunlight slither down Chichén Itzá’s 365-step pyramid as the feathered serpent Kukulkan!",
-      "hero_image": "/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg",
-      "card_image": "/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg",
+      "hero_image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -4543,11 +4540,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg",
-        "caption": "Giant carved stone head of the feathered serpent god Kukulkan at the foot of El Castillo pyramid at Chichén Itzá",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
+        "caption": "Rows of carved limestone columns beside the stepped Temple of the Warriors at Chichén Itzá in Yucatán.",
+        "position": "center 52%"
       },
-      "banner_image": "/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg"
     },
     {
       "id": "lesson_6",
@@ -4558,8 +4555,7 @@
       "enquiry_question": "Why were southern Maya cities abandoned around AD 900, and why is the \"vanished Maya\" story a myth?",
       "prologue": "Around AD 900, jungle vines crept silently over southern pyramids at Tikal and Palenque — sparking wild rumours that the Maya vanished! Become a history detective testing lake-mud drought clues, northern coastal cities like Tulum, and over seven million living Maya people today.",
       "blurb": "Around AD 900, jungle vines crept silently over southern pyramids at Tikal and Palenque — sparking wild rumours that the Maya vanished! Become a history detective testing lake-mud drought clues, northern coastal cities like Tulum, and over seven million living Maya people today.",
-      "hero_image": "/units/ks2_maya_civilisation/assets/tulum_cliffside_coastal_maya_temple.jpg",
-      "card_image": "/units/ks2_maya_civilisation/assets/tulum_cliffside_coastal_maya_temple.jpg",
+      "hero_image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -5446,11 +5442,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_maya_civilisation/assets/tulum_cliffside_coastal_maya_temple.jpg",
-        "caption": "Postclassic Maya walled trading city of Tulum perched high on Caribbean limestone cliffs — thriving centuries after AD 900!",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
+        "caption": "Lake Atitlán and towering volcanic highlands in Guatemala — heartland of vibrant living Maya communities and languages today.",
+        "position": "center 46%"
       },
-      "banner_image": "/units/ks2_maya_civilisation/assets/tulum_cliffside_coastal_maya_temple.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg"
     }
   ],
   "key_individuals": [

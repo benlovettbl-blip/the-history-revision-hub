@@ -49,8 +49,7 @@
       "enquiry_question": "Why did Caliph al-Mansur build the Round City of Baghdad, and how did it compare with Britain around AD 900?",
       "prologue": "In AD 762, one hundred thousand builders raised a dazzling circular capital beside the River Tigris! Step through Baghdad’s four great gates, explore the Green Dome Palace at the City of Peace, and discover why this Silk Road crossroads dwarfed Anglo-Saxon towns in Britain.",
       "blurb": "In AD 762, one hundred thousand builders raised a dazzling circular capital beside the River Tigris! Step through Baghdad’s four great gates, explore the Green Dome Palace at the City of Peace, and discover why this Silk Road crossroads dwarfed Anglo-Saxon towns in Britain.",
-      "hero_image": "/units/ks2_early_islamic_baghdad/assets/abbasid_palace_muqarnas_arch_baghdad.jpg",
-      "card_image": "/units/ks2_early_islamic_baghdad/assets/abbasid_palace_muqarnas_arch_baghdad.jpg",
+      "hero_image": "/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -931,11 +930,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_early_islamic_baghdad/assets/abbasid_palace_muqarnas_arch_baghdad.jpg",
-        "caption": "Carved baked-brick honeycomb muqarnas archway inside the medieval Abbasid Palace in Baghdad",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg",
+        "caption": "The 52-metre Abbasid Spiral Minaret (Malwiya) and walled Great Mosque at Samarra in Iraq (9th century AD).",
+        "position": "center 42%"
       },
-      "banner_image": "/units/ks2_early_islamic_baghdad/assets/abbasid_palace_muqarnas_arch_baghdad.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg"
     },
     {
       "id": "lesson_2",
@@ -946,8 +945,7 @@
       "enquiry_question": "How did cheap paper and Baghdad’s House of Wisdom rescue and expand world knowledge?",
       "prologue": "Step inside Baghdad’s legendary House of Wisdom, where Muslim, Christian, and Jewish translators worked side by side! Discover how cheap rag paper from Samarkand filled over a hundred bookshops, while Fatima al-Fihri and Queen Zubayda funded learning and desert wells.",
       "blurb": "Step inside Baghdad’s legendary House of Wisdom, where Muslim, Christian, and Jewish translators worked side by side! Discover how cheap rag paper from Samarkand filled over a hundred bookshops, while Fatima al-Fihri and Queen Zubayda funded learning and desert wells.",
-      "hero_image": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg",
-      "card_image": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg",
+      "hero_image": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -1834,11 +1832,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg",
-        "caption": "1237 Baghdad painting by Yahya al-Wasiti showing scholars reading and debating beneath rows of stacked paper books",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
+        "caption": "Arched brick courtyard of Al-Mustansiriya Madrasah in Baghdad (founded AD 1227), one of the Islamic world’s oldest centres of higher learning.",
+        "position": "center 44%"
       },
-      "banner_image": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg"
     },
     {
       "id": "lesson_3",
@@ -1849,8 +1847,7 @@
       "enquiry_question": "How did Golden Age mathematicians, astronomers, engineers, and doctors change world science forever?",
       "prologue": "Every time you write zero, solve algebra, snap a photo, or visit a hospital, you use breakthroughs from the Islamic Golden Age! Meet al-Khwarizmi, astrolabe maker Mariam al-Asturlabi, light detective Ibn al-Haytham, and master surgeon al-Zahrawi.",
       "blurb": "Every time you write zero, solve algebra, snap a photo, or visit a hospital, you use breakthroughs from the Islamic Golden Age! Meet al-Khwarizmi, astrolabe maker Mariam al-Asturlabi, light detective Ibn al-Haytham, and master surgeon al-Zahrawi.",
-      "hero_image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
-      "card_image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
+      "hero_image": "/images/upgraded/ks2-world/baghdad_l3_banner_ulugh_beg_observatory.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -2737,11 +2734,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
-        "caption": "Finely engraved medieval Islamic brass planispheric astrolabe used to map the stars and tell prayer times",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/baghdad_l3_banner_ulugh_beg_observatory.jpg",
+        "caption": "Giant underground curved stone sextant arc inside Ulugh Beg’s medieval Islamic astronomical observatory at Samarkand.",
+        "position": "center 50%"
       },
-      "banner_image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l3_banner_ulugh_beg_observatory.jpg"
     },
     {
       "id": "lesson_4",
@@ -2752,8 +2749,7 @@
       "enquiry_question": "How did land caravans and sea dhows make Baghdad a trading superpower, and how did Islamic coins reach Britain?",
       "prologue": "Follow camel caravans resting inside walled Silk Road caravanserais, hoist triangular sails aboard an Indian Ocean dhow from Basra, cash an early paper cheque, and uncover Baghdad silver dirhams buried in Viking York!",
       "blurb": "Follow camel caravans resting inside walled Silk Road caravanserais, hoist triangular sails aboard an Indian Ocean dhow from Basra, cash an early paper cheque, and uncover Baghdad silver dirhams buried in Viking York!",
-      "hero_image": "/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg",
-      "card_image": "/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg",
+      "hero_image": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -3038,10 +3034,10 @@
               "letter": "C",
               "source_letter": "C",
               "type": "artefact",
-              "src": "/units/ks2_early_islamic_baghdad/assets/spice_market_cardamom_star_anise.jpg",
-              "image": "/units/ks2_early_islamic_baghdad/assets/spice_market_cardamom_star_anise.jpg",
+              "src": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
+              "image": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
               "title": "Source C: Fragrant Cardamom, Star Anise, Mace & Cumin Traded into Baghdad’s Bazaars",
-              "caption": "Aromatic eastern spices — green cardamom pods, star anise, mace, and cumin — carried by dhow ships and camel caravans into Baghdad’s covered souks.",
+              "caption": "Source C: Whole Star Anise Pods, Rolled Cinnamon Bark Quills & Cloves — High-Value Eastern Spices Traded Through Baghdad’s Bazaars.",
               "author": "Maritime Spice Route & Silk Road Merchants",
               "date": "c. AD 850–1000 Trade Goods",
               "context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars. **Hinge Question:** Why were tiny, lightweight sacks of pepper, cardamom, and cinnamon worth so much silver in Baghdad’s bazaars?",
@@ -3214,10 +3210,10 @@
           "letter": "C",
           "source_letter": "C",
           "type": "artefact",
-          "src": "/units/ks2_early_islamic_baghdad/assets/spice_market_cardamom_star_anise.jpg",
-          "image": "/units/ks2_early_islamic_baghdad/assets/spice_market_cardamom_star_anise.jpg",
+          "src": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
+          "image": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
           "title": "Source C: Fragrant Cardamom, Star Anise, Mace & Cumin Traded into Baghdad’s Bazaars",
-          "caption": "Aromatic eastern spices — green cardamom pods, star anise, mace, and cumin — carried by dhow ships and camel caravans into Baghdad’s covered souks.",
+          "caption": "Source C: Whole Star Anise Pods, Rolled Cinnamon Bark Quills & Cloves — High-Value Eastern Spices Traded Through Baghdad’s Bazaars.",
           "author": "Maritime Spice Route & Silk Road Merchants",
           "date": "c. AD 850–1000 Trade Goods",
           "context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars. **Hinge Question:** Why were tiny, lightweight sacks of pepper, cardamom, and cinnamon worth so much silver in Baghdad’s bazaars?",
@@ -3640,11 +3636,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg",
-        "caption": "Yahya al-Wasiti’s AD 1237 Baghdad manuscript painting of a Silk Road camel caravan carrying trade goods across Asia",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
+        "caption": "A desert caravan of pack dromedary camels crossing golden sand dunes along historic overland trade routes.",
+        "position": "center 56%"
       },
-      "banner_image": "/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg"
     },
     {
       "id": "lesson_5",
@@ -3655,8 +3651,7 @@
       "enquiry_question": "How did Baghdad’s families keep cool, eat, worship, create dazzling art, and relax around AD 900?",
       "prologue": "Step inside a fountain courtyard cooled by a tall windcatcher tower, taste Baghdad’s lemons, pomegranates, and cane sugar, trace eight-pointed geometric star tiles and Kufic calligraphy, and play medieval shatranj chess!",
       "blurb": "Step inside a fountain courtyard cooled by a tall windcatcher tower, taste Baghdad’s lemons, pomegranates, and cane sugar, trace eight-pointed geometric star tiles and Kufic calligraphy, and play medieval shatranj chess!",
-      "hero_image": "/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg",
-      "card_image": "/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg",
+      "hero_image": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -4543,11 +4538,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg",
-        "caption": "Intricate green-and-gold Islamic eight-pointed geometric star mosaic tilework crafted using compasses and symmetry",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
+        "caption": "1840 architectural plate by Pascal Coste showing glazed turquoise geometric tilework, soaring iwans, and shaded courtyard arcades.",
+        "position": "center 48%"
       },
-      "banner_image": "/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg"
     },
     {
       "id": "lesson_6",
@@ -4558,8 +4553,7 @@
       "enquiry_question": "Why did Baghdad fall in 1258, how did Golden Age ideas survive, and how do they shape our lives today?",
       "prologue": "Witness Hulagu Khan’s Mongol siege trebuchets breach Baghdad’s walls in February 1258 — then follow rescued Arabic books to Cairo, Córdoba, the Alhambra, and Toledo to discover why you still use Golden Age words and inventions every day!",
       "blurb": "Witness Hulagu Khan’s Mongol siege trebuchets breach Baghdad’s walls in February 1258 — then follow rescued Arabic books to Cairo, Córdoba, the Alhambra, and Toledo to discover why you still use Golden Age words and inventions every day!",
-      "hero_image": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg",
-      "card_image": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg",
+      "hero_image": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -5446,11 +5440,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg",
-        "caption": "14th-century Persian manuscript showing Hulagu Khan’s Mongol army besieging walled Baghdad on the River Tigris in February 1258",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
+        "caption": "Stone arches of the historic bridge and Great Mosque-Cathedral in Córdoba (Al-Andalus), where Arabic science and philosophy passed into Europe.",
+        "position": "center 70%"
       },
-      "banner_image": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg"
     }
   ],
   "key_individuals": [

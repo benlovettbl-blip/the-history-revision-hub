@@ -115,7 +115,7 @@
       // Early non-blocking Course Index & direct-URL Unit JSON prefetch (eliminates 20.7 MB cold boot stall)
       (function () {
         try {
-          window.__dbIndexBootPromise = fetch('/data/database_index.json')
+          window.__dbIndexBootPromise = fetch('/data/database_index.json', { cache: 'no-cache' })
             .then(function (r) {
               return r.ok ? r.json() : null;
             })

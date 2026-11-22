@@ -1849,8 +1849,7 @@
       "enquiry_question": "How did everyday life differ across Egypt’s social pyramid, and how did historians finally crack hieroglyphs?",
       "prologue": "Not everyone in Ancient Egypt wore a golden crown or lived inside a palace! Climb onto the flat roof of a whitewashed mud-brick house to catch the evening breeze, race counters across a 30-square Senet board, dip a chewed reed brush into red and black ink at scribe school, and crack the Rosetta Stone with Champollion in 1822!",
       "blurb": "Not everyone in Ancient Egypt wore a golden crown or lived inside a palace! Climb onto the flat roof of a whitewashed mud-brick house to catch the evening breeze, race counters across a 30-square Senet board, dip a chewed reed brush into red and black ink at scribe school, and crack the Rosetta Stone with Champollion in 1822!",
-      "hero_image": "/units/ks2_ancient_egypt/assets/seated_scribe_statue_louvre.jpg",
-      "card_image": "/units/ks2_ancient_egypt/assets/seated_scribe_statue_louvre.jpg",
+      "hero_image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -2135,10 +2134,10 @@
               "letter": "C",
               "source_letter": "C",
               "type": "artefact",
-              "src": "/units/ks2_ancient_egypt/assets/senet_board_game_egypt.jpg",
-              "image": "/units/ks2_ancient_egypt/assets/senet_board_game_egypt.jpg",
+              "src": "/images/upgraded/ks2-world/egypt_l3_srcc_senet_board_amenhotep_iii.jpg",
+              "image": "/images/upgraded/ks2-world/egypt_l3_srcc_senet_board_amenhotep_iii.jpg",
               "title": "Source C: Glazed Blue Faience Senet Game Board and Playing Pieces (c. 1390 BC)",
-              "caption": "Thirty-square Ancient Egyptian Senet game box with a sliding storage drawer and cone- and spool-shaped playing counters.",
+              "caption": "Source C: Turquoise Glazed Faience Thirty-Square Senet Game Board & Playing Pieces of Pharaoh Amenhotep III (c. 1390 BC, Brooklyn Museum).",
               "author": "Egyptian Royal Workshop Glaze Craftworker",
               "date": "c. 1390 BC (New Kingdom)",
               "context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
@@ -2311,10 +2310,10 @@
           "letter": "C",
           "source_letter": "C",
           "type": "artefact",
-          "src": "/units/ks2_ancient_egypt/assets/senet_board_game_egypt.jpg",
-          "image": "/units/ks2_ancient_egypt/assets/senet_board_game_egypt.jpg",
+          "src": "/images/upgraded/ks2-world/egypt_l3_srcc_senet_board_amenhotep_iii.jpg",
+          "image": "/images/upgraded/ks2-world/egypt_l3_srcc_senet_board_amenhotep_iii.jpg",
           "title": "Source C: Glazed Blue Faience Senet Game Board and Playing Pieces (c. 1390 BC)",
-          "caption": "Thirty-square Ancient Egyptian Senet game box with a sliding storage drawer and cone- and spool-shaped playing counters.",
+          "caption": "Source C: Turquoise Glazed Faience Thirty-Square Senet Game Board & Playing Pieces of Pharaoh Amenhotep III (c. 1390 BC, Brooklyn Museum).",
           "author": "Egyptian Royal Workshop Glaze Craftworker",
           "date": "c. 1390 BC (New Kingdom)",
           "context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
@@ -2737,11 +2736,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_ancient_egypt/assets/seated_scribe_statue_louvre.jpg",
-        "caption": "Painted limestone Old Kingdom statue of the Seated Scribe holding a papyrus scroll across his white linen kilt",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg",
+        "caption": "Giant sandstone columns carved in sunken relief hieroglyphs inside the Great Temple of Karnak at Luxor.",
+        "position": "center 42%"
       },
-      "banner_image": "/units/ks2_ancient_egypt/assets/seated_scribe_statue_louvre.jpg"
+      "banner_image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg"
     },
     {
       "id": "lesson_4",
@@ -4558,8 +4557,7 @@
       "enquiry_question": "Why did Tutankhamun's hidden tomb survive until 1922, and how did Cleopatra VII's reign end pharaonic Egypt?",
       "prologue": "Brush desert sand off sixteen hidden stone steps in November 1922 with Howard Carter and Hussein Abdel Rassoul to peer inside Tutankhamun's gleaming tomb — then sail to Alexandria to meet nine-language Queen Cleopatra VII as Rome conquers Egypt in 30 BC!",
       "blurb": "Brush desert sand off sixteen hidden stone steps in November 1922 with Howard Carter and Hussein Abdel Rassoul to peer inside Tutankhamun's gleaming tomb — then sail to Alexandria to meet nine-language Queen Cleopatra VII as Rome conquers Egypt in 30 BC!",
-      "hero_image": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_death_mask.jpg",
-      "card_image": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_death_mask.jpg",
+      "hero_image": "/images/upgraded/ks2-world/egypt_l6_banner_valley_of_the_kings.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -4833,9 +4831,9 @@
           "title": "332–30 BC: Ptolemaic Alexandria, Cleopatra VII & Rome",
           "text": "<span class=\"para-ref\">[6.5]</span> Centuries after Tutankhamun, Greek general **Alexander the Great** marched into Egypt in **332 BC**. He founded the seaside city of **Alexandria**, famous for its towering lighthouse and library. Afterwards, his general Ptolemy started the Greek-speaking **Ptolemaic dynasty** that ruled Egypt for centuries.<br><br><span class=\"para-ref\">[6.6]</span> Its sharpest ruler was **Queen Cleopatra VII**, who governed from **51 BC** with fierce intelligence. Unlike earlier Ptolemaic kings, brilliant Cleopatra learned **Egyptian** alongside **eight other languages** for diplomacy! However, growing **Roman** armies defeated Cleopatra's fleet, and she died in **30 BC**. Egypt became a Roman province, yet its temples, mummies, and hieroglyphs still amaze us today!",
           "content": "<span class=\"para-ref\">[6.5]</span> Centuries after Tutankhamun, Greek general **Alexander the Great** marched into Egypt in **332 BC**. He founded the seaside city of **Alexandria**, famous for its towering lighthouse and library. Afterwards, his general Ptolemy started the Greek-speaking **Ptolemaic dynasty** that ruled Egypt for centuries.<br><br><span class=\"para-ref\">[6.6]</span> Its sharpest ruler was **Queen Cleopatra VII**, who governed from **51 BC** with fierce intelligence. Unlike earlier Ptolemaic kings, brilliant Cleopatra learned **Egyptian** alongside **eight other languages** for diplomacy! However, growing **Roman** armies defeated Cleopatra's fleet, and she died in **30 BC**. Egypt became a Roman province, yet its temples, mummies, and hieroglyphs still amaze us today!",
-          "image": "/units/ks2_ancient_egypt/assets/philae_ptolemaic_island_temple.jpg",
-          "image_alt": "Sandstone pylons and colonnades of the Ptolemaic Temple of Isis rising from island waters at Philae near Aswan",
-          "caption": "The Ptolemaic Temple of Isis at Philae — built in classic Egyptian style even while Greek-speaking rulers governed from Alexandria.",
+          "image": "/images/upgraded/ks2-world/egypt_l6_blk3_philae_temple_of_isis.jpg",
+          "image_alt": "Carved stone pylons of the Ptolemaic Temple of Isis at Philae (Agilkia Island, Aswan)",
+          "caption": "The Ptolemaic Temple of Isis at Philae — built in classic Egyptian style with towering relief pylons while Greek-speaking rulers governed from Alexandria.",
           "image_caption": "The Ptolemaic Temple of Isis at Philae — built in classic Egyptian style even while Greek-speaking rulers governed from Alexandria.",
           "isReversed": false,
           "sources": [
@@ -5445,11 +5443,11 @@
           "model_answer": "Quick Check: Tutankhamun became pharaoh aged around nine and died suddenly aged nineteen in 1323 BC.\nHinge Question: Rubble from digging later tombs covered KV62's steps in the Valley of the Kings, hiding it from ancient tomb robbers!"
         }
       ],
-      "banner_image": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_death_mask.jpg",
+      "banner_image": "/images/upgraded/ks2-world/egypt_l6_banner_valley_of_the_kings.jpg",
       "banner": {
-        "image": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_death_mask.jpg",
-        "caption": "Valley of the Kings, Howard Carter's 1922 KV62 Discovery, Ptolemaic Alexandria & Cleopatra VII",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/egypt_l6_banner_valley_of_the_kings.jpg",
+        "caption": "Sun-baked limestone cliffs of the Valley of the Kings on the West Bank at Thebes (Luxor), royal burial valley of Tutankhamun.",
+        "position": "center 28%"
       }
     }
   ],

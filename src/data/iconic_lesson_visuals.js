@@ -173,52 +173,86 @@ export const ICONIC_LESSON_VISUALS = {
 
   ks2_stone_to_iron_age: {
     lesson_1: {
+      cardImage: '/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg',
       heroCameo: '/units/ks2_stone_to_iron_age/assets/star_carr_antler_headdress.jpg',
       cameoAlt: '11,000-Year-Old Carved Red-Deer Antler Headdress from Star Carr',
     },
+    lesson_2: {
+      cardImage: '/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg',
+    },
+    lesson_3: {
+      cardImage: '/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg',
+    },
     lesson_4: {
+      cardImage: '/units/ks2_stone_to_iron_age/assets/mold_bronze_age_gold_cape.jpg',
       heroCameo: '/units/ks2_stone_to_iron_age/assets/mold_bronze_age_gold_cape.jpg',
       cameoAlt: 'The Mold Bronze Age Gold Cape (c. 1900–1600 BC)',
     },
+    lesson_5: {
+      cardImage: '/units/ks2_stone_to_iron_age/assets/must_farm_stilt_village_dig.jpg',
+    },
     lesson_6: {
-      heroCameo: '/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg',
-      cameoAlt: 'The Snettisham Twisted Gold Torc (Late Iron Age)',
+      cardImage: '/units/ks2_stone_to_iron_age/assets/maiden_castle_earth_ramparts.jpg',
+      heroCameo: '/units/ks2_stone_to_iron_age/assets/waterloo_bridge_horned_helmet.jpg',
+      cameoAlt: 'The Waterloo Bridge Ceremonial Bronze Horned Helmet (British Museum)',
     },
   },
 
   ks2_ancient_egypt: {
     lesson_1: {
+      cardImage: '/units/ks2_ancient_egypt/assets/nile_delta_satellite_space.jpg',
       heroCameo: '/units/ks2_ancient_egypt/assets/narmer_palette_unification.jpg',
       cameoAlt: 'The Carved Narmer Palette Uniting Upper and Lower Egypt (c. 3100 BC)',
     },
+    lesson_2: {
+      cardImage: '/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg',
+    },
     lesson_3: {
+      cardImage: '/units/ks2_ancient_egypt/assets/seated_scribe_statue_louvre.jpg',
       heroCameo: '/units/ks2_ancient_egypt/assets/rosetta_stone_three_scripts.jpg',
       cameoAlt: 'The Rosetta Stone Inscribed in Three Scripts (196 BC)',
     },
+    lesson_4: {
+      cardImage: '/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg',
+      heroCameo: '/units/ks2_ancient_egypt/assets/anubis_jackal_shrine_statue.jpg',
+      cameoAlt: 'Black and Gold Jackal Shrine Statue of Anubis',
+    },
     lesson_5: {
+      cardImage: '/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg',
       heroCameo: '/units/ks2_ancient_egypt/assets/queen_nefertiti_painted_bust.jpg',
       cameoAlt: 'Painted Limestone Royal Bust of Queen Nefertiti',
     },
     lesson_6: {
-      heroCameo: '/units/ks2_ancient_egypt/assets/cleopatra_vii_marble_portrait.jpg',
-      cameoAlt: 'Marble Portrait Bust of Queen Cleopatra VII Philopator',
+      cardImage: '/units/ks2_ancient_egypt/assets/tutankhamun_golden_death_mask.jpg',
+      heroCameo: '/units/ks2_ancient_egypt/assets/tutankhamun_golden_death_mask.jpg',
+      cameoAlt: 'Golden Funerary Mask of Boy-Pharaoh Tutankhamun (KV62)',
     },
   },
 
   ks2_ancient_greece: {
+    lesson_1: {
+      cardImage: '/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg',
+    },
     lesson_2: {
+      cardImage: '/units/ks2_ancient_greece/assets/erechtheion_caryatid_porch.jpg',
       heroCameo: '/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg',
       cameoAlt: 'Helmeted Marble Portrait Bust of Athenian Leader Pericles',
     },
+    lesson_3: {
+      cardImage: '/units/ks2_ancient_greece/assets/parthenon_doric_marble_columns.jpg',
+    },
     lesson_4: {
+      cardImage: '/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg',
       heroCameo: '/units/ks2_ancient_greece/assets/spartan_warrior_leonidas_statue.jpg',
       cameoAlt: 'Marble Statue of a Helmeted Spartan Hoplite ("Leonidas")',
     },
     lesson_5: {
+      cardImage: '/units/ks2_ancient_greece/assets/death_of_socrates_david_painting.jpg',
       heroCameo: '/units/ks2_ancient_greece/assets/hippocrates_inscribed_bust.jpg',
       cameoAlt: 'Inscribed Marble Bust of Physician Hippocrates of Kos',
     },
     lesson_6: {
+      cardImage: '/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg',
       heroCameo: '/units/ks2_ancient_greece/assets/alexander_heracles_silver_coin.jpg',
       cameoAlt: 'Silver Coin of Alexander the Great Wearing Heracles’s Lion Skin',
     },
@@ -226,39 +260,59 @@ export const ICONIC_LESSON_VISUALS = {
 
   ks2_early_islamic_baghdad: {
     lesson_1: {
+      cardImage: '/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg',
       heroCameo: '/units/ks2_early_islamic_baghdad/assets/harun_al_rashid_gold_dinar.jpg',
       cameoAlt: 'Abbasid Gold Dinar Coin Minted in Baghdad',
     },
+    lesson_2: {
+      cardImage: '/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg',
+    },
     lesson_3: {
+      cardImage: '/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg',
       heroCameo: '/units/ks2_early_islamic_baghdad/assets/al_khwarizmi_algebra_manuscript.jpg',
       cameoAlt: 'Arabic Manuscript Page from Al-Khwarizmi’s Kitab al-Jabr (Algebra)',
     },
     lesson_4: {
+      cardImage: '/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg',
       heroCameo: '/units/ks2_early_islamic_baghdad/assets/abbasid_silver_dirham_coin.jpg',
       cameoAlt: 'Abbasid Silver Dirham Trade Coin Found Across Silk & Viking Routes',
     },
     lesson_5: {
-      heroCameo: '/units/ks2_early_islamic_baghdad/assets/enameled_glass_mosque_lamp.jpg',
+      cardImage: '/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg',
+      heroCameo: '/units/ks2_early_islamic_baghdad/assets/gilded_enameled_mosque_lamp_met.jpg',
       cameoAlt: 'Gilded and Enamelled Islamic Glass Mosque Lamp',
+    },
+    lesson_6: {
+      cardImage: '/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg',
     },
   },
 
   ks2_maya_civilisation: {
+    lesson_1: {
+      cardImage: '/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg',
+    },
     lesson_2: {
+      cardImage: '/units/ks2_maya_civilisation/assets/tikal_temple_of_the_great_jaguar.jpg',
       heroCameo: '/units/ks2_maya_civilisation/assets/king_pakal_jade_funerary_mask.jpg',
       cameoAlt: 'Green Jade Mosaic Funerary Mask of King K’inich Janaab’ Pakal',
     },
     lesson_3: {
+      cardImage: '/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg',
       heroCameo: '/units/ks2_maya_civilisation/assets/dresden_codex_bark_paper_numbers.jpg',
       cameoAlt: 'Painted Fig-Bark Page from the Maya Dresden Codex',
     },
     lesson_4: {
+      cardImage: '/units/ks2_maya_civilisation/assets/copan_ballcourt_macaw_marker.jpg',
       heroCameo: '/units/ks2_maya_civilisation/assets/carved_maya_cacao_drinking_vase.jpg',
       cameoAlt: 'Classic Maya Cylinder Vase Used for Frothy Cacao Drinks',
     },
     lesson_5: {
-      heroCameo: '/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg',
-      cameoAlt: 'Carved Stone Head of Kukulcán (the Feathered Serpent) at Chichén Itzá',
+      cardImage: '/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg',
+      heroCameo: '/units/ks2_maya_civilisation/assets/palenque_terracotta_god_censer.jpg',
+      cameoAlt: 'Tall Terracotta God-Effigy Incense Burner from Palenque',
+    },
+    lesson_6: {
+      cardImage: '/units/ks2_maya_civilisation/assets/tulum_cliffside_coastal_maya_temple.jpg',
     },
   },
 

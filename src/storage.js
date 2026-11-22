@@ -250,7 +250,9 @@ export async function loadDatabaseIndex() {
         : null;
     const indexJson =
       preflight ||
-      (await fetch('/data/database_index.json').then((r) => (r.ok ? r.json() : null)));
+      (await fetch('/data/database_index.json', { cache: 'no-cache' }).then((r) =>
+        r.ok ? r.json() : null,
+      ));
 
     if (indexJson && typeof indexJson === 'object' && Object.keys(indexJson).length > 0) {
       if (!state.db || Object.keys(state.db).length === 0) {

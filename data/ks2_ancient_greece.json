@@ -2752,8 +2752,7 @@
       "enquiry_question": "How did tiny, rival Greek city-states unite to defeat the mighty Persian Empire between 490 and 479 BC?",
       "prologue": "In 490 BC, the gigantic Persian Empire sailed across the Aegean to crush tiny Greece! Lock bronze shields in the Marathon phalanx, guard the narrow cliffs of Thermopylae alongside King Leonidas, and ram enemy warships with wooden triremes in the Strait of Salamis.",
       "blurb": "In 490 BC, the gigantic Persian Empire sailed across the Aegean to crush tiny Greece! Lock bronze shields in the Marathon phalanx, guard the narrow cliffs of Thermopylae alongside King Leonidas, and ram enemy warships with wooden triremes in the Strait of Salamis.",
-      "hero_image": "/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg",
-      "card_image": "/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg",
+      "hero_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -3640,11 +3639,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg",
-        "caption": "Full-scale reconstructed Athenian wooden trireme Olympias under oar, showing the painted prow eye and waterline bronze ram",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
+        "caption": "1816 historical engraving looking down toward the narrow coastal pass (defile) of Thermopylae between steep Greek mountains and the sea.",
+        "position": "center 45%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg"
     },
     {
       "id": "lesson_5",
@@ -3655,8 +3654,7 @@
       "enquiry_question": "How did Ancient Greek playwrights, philosophers, doctors, and mathematicians transform human knowledge?",
       "prologue": "Test the crystal-clear acoustics of Epidaurus’s 14,000-seat stone theatre, debate big questions barefoot alongside Socrates in Athens, observe patients on Kos with Hippocrates, and shout \"Eureka!\" with Archimedes as Greek thinkers change human knowledge forever!",
       "blurb": "Test the crystal-clear acoustics of Epidaurus’s 14,000-seat stone theatre, debate big questions barefoot alongside Socrates in Athens, observe patients on Kos with Hippocrates, and shout \"Eureka!\" with Archimedes as Greek thinkers change human knowledge forever!",
-      "hero_image": "/units/ks2_ancient_greece/assets/epidaurus_stone_theatre_bowl.jpg",
-      "card_image": "/units/ks2_ancient_greece/assets/epidaurus_stone_theatre_bowl.jpg",
+      "hero_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -4543,11 +4541,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_ancient_greece/assets/epidaurus_stone_theatre_bowl.jpg",
-        "caption": "The 14,000-seat open-air limestone bowl of the Ancient Theatre of Epidaurus, famed for its remarkable natural acoustics",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
+        "caption": "Marble tholos and sanctuary terraces at Delphi set high on the slopes of Mount Parnassus.",
+        "position": "center 48%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/epidaurus_stone_theatre_bowl.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg"
     },
     {
       "id": "lesson_6",
@@ -4558,8 +4556,7 @@
       "enquiry_question": "How did Alexander the Great spread Greek culture, and what is Ancient Greece’s lasting legacy in our world today?",
       "prologue": "Gallop east beside young King Alexander the Great on his warhorse Bucephalus, climb past Alexandria’s towering Pharos Lighthouse into the Great Library, and spot Greek democracy, English words, stone columns, and the Modern Olympics alive all around us today!",
       "blurb": "Gallop east beside young King Alexander the Great on his warhorse Bucephalus, climb past Alexandria’s towering Pharos Lighthouse into the Great Library, and spot Greek democracy, English words, stone columns, and the Modern Olympics alive all around us today!",
-      "hero_image": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg",
-      "card_image": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg",
+      "hero_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
@@ -5446,11 +5443,11 @@
         }
       ],
       "banner": {
-        "image": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg",
-        "caption": "Ancient Roman floor mosaic from Pompeii showing young Alexander the Great charging into battle astride his warhorse Bucephalus",
-        "position": "center 35%"
+        "image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
+        "caption": "Two-storey marble facade of the ancient Library of Celsus at Ephesus — showcasing the lasting spread of Greek architecture and scholarship.",
+        "position": "center 45%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg"
     }
   ],
   "key_individuals": [

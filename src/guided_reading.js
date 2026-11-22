@@ -805,7 +805,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       unitId === 'weimar_nazi_germany'
   );
   const stageBadge = isKs2Course
-    ? 'Key Stage 2 (Years 5–6) • Home Read-Aloud Companion'
+    ? 'Key Stage 2 • Home Read-Aloud Companion'
     : isGcseCourse
       ? 'Edexcel GCSE (9–1) History • Guided Reading & Retrieval Companion'
       : 'Key Stage 3 • Home Read-Aloud & Discussion Companion';

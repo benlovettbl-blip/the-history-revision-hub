@@ -23,6 +23,7 @@ public/screenshots/
 /*.jpg
 /test_*.jpg
 !public/images/**
+!public/units/**/assets/**
 !units/**/assets/**
 !src/**/assets/**
 public/images/*.zip

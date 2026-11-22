@@ -1,5 +1,5 @@
-const CACHE_NAME = 'history-hub-cache-v19-gdpr';
-const DYNAMIC_CACHE = 'history-hub-dynamic-v19-gdpr';
+const CACHE_NAME = 'history-hub-cache-v20-gdpr';
+const DYNAMIC_CACHE = 'history-hub-dynamic-v20-gdpr';
 
 const CORE_ASSETS = [
   '/',

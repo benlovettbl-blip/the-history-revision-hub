@@ -249,7 +249,7 @@ function seoCoursePagesPlugin() {
             <ul style="line-height: 1.75; padding-left: 22px; margin-bottom: 20px;">
               <li><strong>Zero Student Accounts or Personal Data:</strong> Share lesson, audio, and quiz links directly into Google Classroom or Microsoft Teams with zero GDPR Data Processing Agreement delays.</li>
               <li><strong>Four Classroom Publications Per Course:</strong> Master Classroom Textbooks, Double-Page Pupil Workbooks (with Teacher Mark Schemes &amp; WAGOLLs), Knowledge Retrieval Companions, and Mastery Exam Packs.</li>
-              <li><strong>19 Complete Courses:</strong> Pearson Edexcel GCSE (Medicine, Early Elizabethan England, Superpower Cold War 1941–91, Conflict in the Middle East, Weimar &amp; Nazi Germany, USA 1954–75), 12 Key Stage 3 National Curriculum units, and KS2 World War II.</li>
+              <li><strong>26 Complete Courses:</strong> Pearson Edexcel GCSE (Medicine, Early Elizabethan England, Superpower Cold War 1941–91, Conflict in the Middle East, Weimar &amp; Nazi Germany, USA 1954–75), 12 Key Stage 3 National Curriculum units, and all 8 Key Stage 2 Primary History units.</li>
             </ul>
             <p style="margin-bottom: 20px;">Department enquiries: <a href="mailto:contact@historyrevisionhub.co.uk"><strong>contact@historyrevisionhub.co.uk</strong></a></p>
             <nav aria-label="All History Courses" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
@@ -315,22 +315,31 @@ function serviceWorkerVersionPlugin() {
   return {
     name: 'sw-version-stamper',
     closeBundle() {
-      const swPath = path.resolve(process.cwd(), 'dist/sw.js');
+      const distDir = path.resolve(process.cwd(), 'dist');
+      const swPath = path.join(distDir, 'sw.js');
+      const buildTimestamp = Date.now();
       if (fs.existsSync(swPath)) {
         let swContent = fs.readFileSync(swPath, 'utf8');
-        const buildTimestamp = Date.now();
         swContent = swContent.replace(
           /const CACHE_NAME = ['"][^'"]+['"];/,
-          `const CACHE_NAME = 'history-hub-cache-v18-gdpr-${buildTimestamp}';`,
+          `const CACHE_NAME = 'history-hub-cache-v20-gdpr-${buildTimestamp}';`,
         );
         swContent = swContent.replace(
           /const DYNAMIC_CACHE = ['"][^'"]+['"];/,
-          `const DYNAMIC_CACHE = 'history-hub-dynamic-v18-gdpr-${buildTimestamp}';`,
+          `const DYNAMIC_CACHE = 'history-hub-dynamic-v20-gdpr-${buildTimestamp}';`,
         );
         fs.writeFileSync(swPath, swContent, 'utf8');
         console.log(
           `[sw-version-stamper] Stamped dist/sw.js with build timestamp: ${buildTimestamp}`,
         );
+      }
+      // Stamp ?v=<buildTimestamp> onto /data/database_index.json in dist/index.html so Cloudflare/browser HTTP cache never serves a stale course index
+      const distIndexPath = path.join(distDir, 'index.html');
+      if (fs.existsSync(distIndexPath)) {
+        const html = fs
+          .readFileSync(distIndexPath, 'utf8')
+          .replace(/\/data\/database_index\.json/g, `/data/database_index.json?v=${buildTimestamp}`);
+        fs.writeFileSync(distIndexPath, html, 'utf8');
       }
     },
   };

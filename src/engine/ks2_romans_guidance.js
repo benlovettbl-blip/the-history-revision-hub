@@ -95,7 +95,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
         time: '25–45 mins',
         phase: 'Act 3 & Dual-Scaffolded Worksheet',
         activity:
-          'Read Act 3 on gold torcs, Druids, and sea trade; complete Tasks 1–5 using Foundation Word Banks (Years 3–4) or Scholar Challenge prompts (Year 5).',
+          'Read Act 3 on gold torcs, Druids, and sea trade; complete Tasks 1–5 using Foundation Word Banks or Scholar Challenge prompts.',
       },
       {
         time: '45–60 mins',
