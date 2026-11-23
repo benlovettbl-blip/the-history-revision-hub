@@ -13,7 +13,7 @@
   "period": "1066–1485",
   "enquiry": "How was power won, maintained, and contested in Medieval England?",
   "description": "From the succession crisis of 1066 and Norman castle subjugation to the murder of Thomas Becket, Magna Carta, and the catastrophe of the Black Death, explore how military force, religious authority, and popular rebellion forged the medieval realm.",
-  "cover_image": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+  "cover_image": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
   "cover_image_position": "center 30%",
   "is_ks3": true,
   "year_group": "Key Stage 3",
@@ -378,7 +378,7 @@
       "enquiry": "Why did William of Normandy win the Battle of Hastings in 1066?",
       "subtitle": "From the Succession Crisis of Edward the Confessor to the Shield Wall at Senlac Hill",
       "skill": "Causation & Battlefield Tactics",
-      "card_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
+      "card_image": "/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg",
       "card_position": "center 20%",
       "banner": {
         "image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
@@ -629,15 +629,116 @@
               "source_context": "In 1064, Harold Godwinson traveled to Normandy, where Norman accounts allege he swore an oath supporting William's claim to the English crown. **Hinge Question:** Why did Norman chroniclers place so much emphasis on Harold's oath rather than William's military strength?"
             }
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> On 5 January 1066, King Edward the Confessor died after reigning for twenty-four years. Edward left England in an existential crisis: he had died childless, leaving no direct heir to the throne. In Anglo-Saxon England, royal blood did not guarantee succession; the royal council, known as the <strong>Witan</strong>, held the constitutional right to elect the next monarch. Within twenty-four hours of Edward’s burial in Westminster Abbey, the Witan elected England’s wealthiest nobleman, <strong>Harold Godwinson</strong>, Earl of Wessex. Harold was crowned King Harold II, but his coronation ignited an international dynastic bloodbath."
+          "content": "<span class=\"para-ref\">[1.1]</span> On 5 January 1066, King Edward the Confessor died after reigning for twenty-four years. Edward left England in an existential crisis: he had died childless, leaving no direct heir to the throne. In Anglo-Saxon England, royal blood did not guarantee succession; the royal council, known as the <strong>Witan</strong>, held the constitutional right to elect the next monarch. Within twenty-four hours of Edward’s burial in Westminster Abbey, the Witan elected England’s wealthiest nobleman, <strong>Harold Godwinson</strong>, Earl of Wessex. Harold was crowned King Harold II, but his coronation ignited an international dynastic bloodbath.",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 7 Succession Crisis • January 1066",
+            "title": "January 1066: Three Rivals for One English Crown",
+            "default_index": 0,
+            "caption": "Click each tab to compare why Edward the Confessor’s death sparked a three-way race for the throne of England.",
+            "items": [
+              {
+                "tab_label": "1. Witan’s Crisis",
+                "title": "5 January 1066: A Childless King & An Urgent Vote",
+                "dates": "5–6 January 1066 • Westminster Abbey",
+                "badge": "Power Vacuum",
+                "color": "#64748b",
+                "bg_color": "rgba(100, 116, 139, 0.2)",
+                "metrics": [
+                  {
+                    "label": "The Trigger",
+                    "value": "King Edward the Confessor Died With No Children"
+                  },
+                  {
+                    "label": "Who Decided",
+                    "value": "The Witan (Council of Leading Earls & Bishops)"
+                  },
+                  {
+                    "label": "Urgent Danger",
+                    "value": "Invasion Fleets Gathering in Normandy & Norway"
+                  }
+                ],
+                "takeaway": "In Anglo-Saxon England, the crown did not pass automatically—the Witan needed a proven adult war-leader on the throne immediately."
+              },
+              {
+                "tab_label": "2. Harold Godwinson",
+                "title": "King Harold II (Earl of Wessex)",
+                "dates": "Crowned 6 January 1066 • English Claimant",
+                "badge": "Chosen by the Witan",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Main Claim",
+                    "value": "Named on Edward’s Deathbed & Elected by the Witan"
+                  },
+                  {
+                    "label": "Big Strength",
+                    "value": "Richest Earl in England With Elite Housecarl Troops"
+                  },
+                  {
+                    "label": "Key Weakness",
+                    "value": "Accused of Breaking His 1064 Sacred Oath to William"
+                  }
+                ],
+                "takeaway": "Backed by English nobles and crowned within twenty-four hours, Harold held England—but had to defend both north and south coasts at once."
+              },
+              {
+                "tab_label": "3. William of Normandy",
+                "title": "Duke William of Normandy",
+                "dates": "1051 Promise • 1064 Relics Oath",
+                "badge": "Backed by the Pope",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Main Claim",
+                    "value": "1051 Promise From Edward & Harold’s 1064 Oath"
+                  },
+                  {
+                    "label": "Big Strength",
+                    "value": "Papal Banner, Heavy Cavalry Knights & Archers"
+                  },
+                  {
+                    "label": "Key Challenge",
+                    "value": "Had to Ship Thousands of Men & Horses Across Channel"
+                  }
+                ],
+                "takeaway": "By branding Harold an oath-breaker, William won Pope Alexander II’s blessing and turned his invasion into a holy war."
+              },
+              {
+                "tab_label": "4. Harald Hardrada",
+                "title": "King Harald Hardrada of Norway",
+                "dates": "300 Viking Longships • September 1066",
+                "badge": "Feared Viking Warrior",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Main Claim",
+                    "value": "Older Viking Pact Between Magnus & Harthacnut"
+                  },
+                  {
+                    "label": "Big Strength",
+                    "value": "Veteran Warrior Backed by Harold’s Rebel Brother Tostig"
+                  },
+                  {
+                    "label": "Fatal Gamble",
+                    "value": "Caught Unarmoured at Stamford Bridge (25 Sept 1066)"
+                  }
+                ],
+                "takeaway": "Hardrada’s northern invasion failed at Stamford Bridge, yet it exhausted Harold’s best housecarls just days before William landed in Sussex."
+              }
+            ]
+          }
         },
         {
           "act": 2,
           "title": "The Three Claimants (1066)",
           "text": "<span class=\"para-ref\">[1.2]</span> Harold’s crown was immediately challenged by two formidable foreign rulers. In Normandy, <strong>Duke William</strong> claimed that Edward the Confessor had promised him the English throne in 1051, and that Harold Godwinson had sworn a sacred oath on holy relics in 1064 supporting William’s claim. William secured the blessing of Pope Alexander II, carrying a papal banner into battle. Simultaneously in Scandinavia, the fearsome Viking king <strong>Harald Hardrada</strong> of Norway staked a claim based on an earlier agreement between his ancestors and former Danish rulers of England. Surrounded by enemies, King Harold mobilized England’s armies for an unavoidable two-front invasion.",
           "image": "/images/medieval_england/plate_1_1_bayeux_edward_confessor.jpg",
-          "image_alt": "Opening scene of the Bayeux Tapestry showing King Edward the Confessor enthroned conferring with Harold Godwinson",
-          "caption": "King Edward the Confessor enthroned in royal council (c. 1070s, Bayeux Tapestry Scene 1). Edward's death without a direct blood heir on 5 January 1066 triggered an unprecedented succession crisis across Northwestern Europe.",
+          "image_alt": "Opening scene of the Bayeux Tapestry inscribed EDVVARD REX showing crowned King Edward the Confessor enthroned inside Westminster palace conferring with Harold Godwinson",
+          "caption": "Bayeux Tapestry Scene 1 (EDVVARD REX, c. 1070s, Musée de la Tapisserie de Bayeux): King Edward the Confessor enthroned in royal council with Harold Godwinson before the 1066 succession crisis erupted.",
           "isReversed": false,
           "sources": [
             {
@@ -731,15 +832,160 @@
               "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge, winning a total victory but exhausting his elite troops. **Hinge Question:** Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?"
             }
           },
-          "content": "<span class=\"para-ref\">[1.3]</span> The first blow fell in the north. In September 1066, Harald Hardrada landed 300 Viking longships along the Yorkshire coast. King Harold performed a superhuman military feat: he marched his army 190 miles north from London in just four days. On 25 September, Harold surprised the Vikings at <strong>Stamford Bridge</strong>. In a savage battle, Hardrada was killed with an arrow through the throat, and the Viking army was so utterly annihilated that only 24 longships were needed to carry the survivors home. But Harold’s triumph was fatally brief. Two days later, Duke William’s invasion fleet landed unopposed at Pevensey Bay on the southern coast."
+          "content": "<span class=\"para-ref\">[1.3]</span> The first blow fell in the north. In September 1066, Harald Hardrada landed 300 Viking longships along the Yorkshire coast. King Harold performed a superhuman military feat: he marched his army 190 miles north from London in just four days. On 25 September, Harold surprised the Vikings at <strong>Stamford Bridge</strong>. In a savage battle, Hardrada was killed with an arrow through the throat, and the Viking army was so utterly annihilated that only 24 longships were needed to carry the survivors home. But Harold’s triumph was fatally brief. Two days later, Duke William’s invasion fleet landed unopposed at Pevensey Bay on the southern coast.",
+          "image": "/images/medieval_england/maps/med7_map_l1_1066_invasions_stamford_hastings.svg",
+          "image_alt": "KS3 Year 7 historical GIS map of the 1066 invasions, Stamford Bridge, and the Battle of Hastings showing unpartitioned Britain and Ireland, Harald Hardrada’s Viking fleet from Norway, King Harold’s forced marches, and Duke William’s crossing from Normandy to Pevensey Bay and Senlac Hill",
+          "caption": "Reference Map: Rival Invasions of 1066, Stamford Bridge & The Battle of Hastings (Sept–Oct 1066)—charting Hardrada’s 300-ship Norse invasion from Norway, Harold’s 190-mile march north and 250-mile forced march south, and Duke William’s landing at Pevensey Bay and triumph at Senlac Hill, Hastings.",
+          "stage_hook_map": {
+            "id": "med7-l1-1066-invasions-stamford-hastings-map",
+            "image": "/images/medieval_england/maps/med7_map_l1_1066_invasions_stamford_hastings.svg",
+            "alt": "KS3 Year 7 historical GIS map of the 1066 invasions, Stamford Bridge, and the Battle of Hastings showing unpartitioned Britain and Ireland, Harald Hardrada’s Viking fleet from Norway, King Harold’s forced marches, and Duke William’s crossing from Normandy to Pevensey Bay and Senlac Hill",
+            "caption": "Reference Map: Rival Invasions of 1066, Stamford Bridge & The Battle of Hastings (Sept–Oct 1066)—charting Hardrada’s 300-ship Norse invasion from Norway, Harold’s 190-mile march north and 250-mile forced march south, and Duke William’s landing at Pevensey Bay and triumph at Senlac Hill, Hastings.",
+            "title": "The 1066 Crisis: Rival Invasions, Stamford Bridge & Hastings",
+            "subtitle": "Stamford Bridge, Pevensey Bay, 250-Mile Forced March & Senlac Hill · Tap pins 1–4",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 70.4,
+                "y": 53.3,
+                "color": "#1e3a8a",
+                "label": "1. Fulford & Stamford Bridge (20–25 Sept 1066)",
+                "kicker": "190-Mile March • Viking Defeat",
+                "badge": "190-Mile March • Viking Defeat",
+                "date": "20–25 September 1066",
+                "title": "Fulford & Stamford Bridge (20–25 Sept 1066): Defeating Harald Hardrada",
+                "summary": "After Viking King Harald Hardrada landed 300 longships in Yorkshire and defeated the northern earls at Fulford (20 Sept), King Harold Godwinson marched his army 190 miles north from London in four days. Surprising the Vikings at Stamford Bridge on 25 September, Harold killed Hardrada—only 24 ships were needed to carry the survivors home.",
+                "body": "After Viking King Harald Hardrada landed 300 longships in Yorkshire and defeated the northern earls at Fulford (20 Sept), King Harold Godwinson marched his army 190 miles north from London in four days. Surprising the Vikings at Stamford Bridge on 25 September, Harold killed Hardrada—only 24 ships were needed to carry the survivors home.",
+                "details": "After Viking King Harald Hardrada landed 300 longships in Yorkshire and defeated the northern earls at Fulford (20 Sept), King Harold Godwinson marched his army 190 miles north from London in four days. Surprising the Vikings at Stamford Bridge on 25 September, Harold killed Hardrada—only 24 ships were needed to carry the survivors home.",
+                "hinge": "How did Harold’s stunning victory at Stamford Bridge actually weaken his chances of defeating Duke William three weeks later?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 72,
+                "y": 76.6,
+                "color": "#065f46",
+                "label": "2. Pevensey Bay Landing (28 Sept 1066)",
+                "kicker": "Channel Winds Turn",
+                "badge": "Channel Winds Turn",
+                "date": "28 September 1066",
+                "title": "Pevensey Bay Landing (28 Sept 1066): William Crosses the Channel Unopposed",
+                "summary": "Just as Harold fought in Yorkshire, southerly Channel winds finally blew in Duke William’s favour. Sailing overnight from Saint-Valery in Normandy with warhorses, archers, and pre-cut timber castle forts, William landed unopposed at Pevensey Bay in Sussex on 28 September 1066.",
+                "body": "Just as Harold fought in Yorkshire, southerly Channel winds finally blew in Duke William’s favour. Sailing overnight from Saint-Valery in Normandy with warhorses, archers, and pre-cut timber castle forts, William landed unopposed at Pevensey Bay in Sussex on 28 September 1066.",
+                "details": "Just as Harold fought in Yorkshire, southerly Channel winds finally blew in Duke William’s favour. Sailing overnight from Saint-Valery in Normandy with warhorses, archers, and pre-cut timber castle forts, William landed unopposed at Pevensey Bay in Sussex on 28 September 1066.",
+                "hinge": "Why was the sudden shift in English Channel winds in late September 1066 such a stroke of luck for Duke William?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 70.8,
+                "y": 65.7,
+                "color": "#b45309",
+                "label": "3. Harold’s 250-Mile Forced March South (Oct 1066)",
+                "kicker": "Exhausted Army via London",
+                "badge": "Exhausted Army via London",
+                "date": "Early October 1066",
+                "title": "Harold’s 250-Mile Forced March South (Oct 1066): Racing Back via London",
+                "summary": "Hearing news of the Norman landing in Sussex, King Harold immediately marched his battle-weary soldiers 250 miles back south through London in under two weeks. Many elite housecarls had fallen in Yorkshire, and northern reinforcements had not yet caught up when Harold confronted William.",
+                "body": "Hearing news of the Norman landing in Sussex, King Harold immediately marched his battle-weary soldiers 250 miles back south through London in under two weeks. Many elite housecarls had fallen in Yorkshire, and northern reinforcements had not yet caught up when Harold confronted William.",
+                "details": "Hearing news of the Norman landing in Sussex, King Harold immediately marched his battle-weary soldiers 250 miles back south through London in under two weeks. Many elite housecarls had fallen in Yorkshire, and northern reinforcements had not yet caught up when Harold confronted William.",
+                "hinge": "Should King Harold have waited in London to rest his men and gather fresh troops rather than rushing straight to Sussex?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 74.9,
+                "y": 73.5,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "4. Senlac Hill, Hastings (14 Oct 1066)",
+                "kicker": "Feigned Retreat Breaks Wall",
+                "badge": "Feigned Retreat Breaks Wall",
+                "date": "14 October 1066",
+                "title": "Senlac Hill, Hastings (14 Oct 1066): Feigned Retreats & Fall of King Harold",
+                "summary": "Deploying atop steep Senlac Hill, Harold’s interlocking shield wall held back Norman charges for hours. In the afternoon, William ordered clever feigned retreats—faking flight to lure Saxon fyrd militia downhill out of formation. Surrounding the broken ranks, Norman knights and archers overwhelmed the ridge and killed King Harold.",
+                "body": "Deploying atop steep Senlac Hill, Harold’s interlocking shield wall held back Norman charges for hours. In the afternoon, William ordered clever feigned retreats—faking flight to lure Saxon fyrd militia downhill out of formation. Surrounding the broken ranks, Norman knights and archers overwhelmed the ridge and killed King Harold.",
+                "details": "Deploying atop steep Senlac Hill, Harold’s interlocking shield wall held back Norman charges for hours. In the afternoon, William ordered clever feigned retreats—faking flight to lure Saxon fyrd militia downhill out of formation. Surrounding the broken ranks, Norman knights and archers overwhelmed the ridge and killed King Harold.",
+                "hinge": "Why was discipline inside the Anglo-Saxon shield wall so critical, and how did William’s feigned retreats exploit its weakness?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 70.4,
+                "y": 53.3,
+                "color": "#1e3a8a",
+                "label": "1. Fulford & Stamford Bridge (20–25 Sept 1066)",
+                "kicker": "190-Mile March • Viking Defeat",
+                "badge": "190-Mile March • Viking Defeat",
+                "date": "20–25 September 1066",
+                "title": "Fulford & Stamford Bridge (20–25 Sept 1066): Defeating Harald Hardrada",
+                "summary": "After Viking King Harald Hardrada landed 300 longships in Yorkshire and defeated the northern earls at Fulford (20 Sept), King Harold Godwinson marched his army 190 miles north from London in four days. Surprising the Vikings at Stamford Bridge on 25 September, Harold killed Hardrada—only 24 ships were needed to carry the survivors home.",
+                "body": "After Viking King Harald Hardrada landed 300 longships in Yorkshire and defeated the northern earls at Fulford (20 Sept), King Harold Godwinson marched his army 190 miles north from London in four days. Surprising the Vikings at Stamford Bridge on 25 September, Harold killed Hardrada—only 24 ships were needed to carry the survivors home.",
+                "details": "After Viking King Harald Hardrada landed 300 longships in Yorkshire and defeated the northern earls at Fulford (20 Sept), King Harold Godwinson marched his army 190 miles north from London in four days. Surprising the Vikings at Stamford Bridge on 25 September, Harold killed Hardrada—only 24 ships were needed to carry the survivors home.",
+                "hinge": "How did Harold’s stunning victory at Stamford Bridge actually weaken his chances of defeating Duke William three weeks later?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 72,
+                "y": 76.6,
+                "color": "#065f46",
+                "label": "2. Pevensey Bay Landing (28 Sept 1066)",
+                "kicker": "Channel Winds Turn",
+                "badge": "Channel Winds Turn",
+                "date": "28 September 1066",
+                "title": "Pevensey Bay Landing (28 Sept 1066): William Crosses the Channel Unopposed",
+                "summary": "Just as Harold fought in Yorkshire, southerly Channel winds finally blew in Duke William’s favour. Sailing overnight from Saint-Valery in Normandy with warhorses, archers, and pre-cut timber castle forts, William landed unopposed at Pevensey Bay in Sussex on 28 September 1066.",
+                "body": "Just as Harold fought in Yorkshire, southerly Channel winds finally blew in Duke William’s favour. Sailing overnight from Saint-Valery in Normandy with warhorses, archers, and pre-cut timber castle forts, William landed unopposed at Pevensey Bay in Sussex on 28 September 1066.",
+                "details": "Just as Harold fought in Yorkshire, southerly Channel winds finally blew in Duke William’s favour. Sailing overnight from Saint-Valery in Normandy with warhorses, archers, and pre-cut timber castle forts, William landed unopposed at Pevensey Bay in Sussex on 28 September 1066.",
+                "hinge": "Why was the sudden shift in English Channel winds in late September 1066 such a stroke of luck for Duke William?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 70.8,
+                "y": 65.7,
+                "color": "#b45309",
+                "label": "3. Harold’s 250-Mile Forced March South (Oct 1066)",
+                "kicker": "Exhausted Army via London",
+                "badge": "Exhausted Army via London",
+                "date": "Early October 1066",
+                "title": "Harold’s 250-Mile Forced March South (Oct 1066): Racing Back via London",
+                "summary": "Hearing news of the Norman landing in Sussex, King Harold immediately marched his battle-weary soldiers 250 miles back south through London in under two weeks. Many elite housecarls had fallen in Yorkshire, and northern reinforcements had not yet caught up when Harold confronted William.",
+                "body": "Hearing news of the Norman landing in Sussex, King Harold immediately marched his battle-weary soldiers 250 miles back south through London in under two weeks. Many elite housecarls had fallen in Yorkshire, and northern reinforcements had not yet caught up when Harold confronted William.",
+                "details": "Hearing news of the Norman landing in Sussex, King Harold immediately marched his battle-weary soldiers 250 miles back south through London in under two weeks. Many elite housecarls had fallen in Yorkshire, and northern reinforcements had not yet caught up when Harold confronted William.",
+                "hinge": "Should King Harold have waited in London to rest his men and gather fresh troops rather than rushing straight to Sussex?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 74.9,
+                "y": 73.5,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "4. Senlac Hill, Hastings (14 Oct 1066)",
+                "kicker": "Feigned Retreat Breaks Wall",
+                "badge": "Feigned Retreat Breaks Wall",
+                "date": "14 October 1066",
+                "title": "Senlac Hill, Hastings (14 Oct 1066): Feigned Retreats & Fall of King Harold",
+                "summary": "Deploying atop steep Senlac Hill, Harold’s interlocking shield wall held back Norman charges for hours. In the afternoon, William ordered clever feigned retreats—faking flight to lure Saxon fyrd militia downhill out of formation. Surrounding the broken ranks, Norman knights and archers overwhelmed the ridge and killed King Harold.",
+                "body": "Deploying atop steep Senlac Hill, Harold’s interlocking shield wall held back Norman charges for hours. In the afternoon, William ordered clever feigned retreats—faking flight to lure Saxon fyrd militia downhill out of formation. Surrounding the broken ranks, Norman knights and archers overwhelmed the ridge and killed King Harold.",
+                "details": "Deploying atop steep Senlac Hill, Harold’s interlocking shield wall held back Norman charges for hours. In the afternoon, William ordered clever feigned retreats—faking flight to lure Saxon fyrd militia downhill out of formation. Surrounding the broken ranks, Norman knights and archers overwhelmed the ridge and killed King Harold.",
+                "hinge": "Why was discipline inside the Anglo-Saxon shield wall so critical, and how did William’s feigned retreats exploit its weakness?"
+              }
+            ]
+          }
         },
         {
           "act": 4,
           "title": "The Shield Wall at Senlac Hill (14 October 1066)",
           "text": "<span class=\"para-ref\">[1.4]</span> Rather than resting his exhausted troops in London, Harold immediately force-marched his men 250 miles back south. On the morning of 14 October 1066, the armies collided on <strong>Senlac Hill</strong> near Hastings. Harold deployed his men in a dense, interlocking <strong>shield wall</strong> across the ridge, with elite two-handed axemen (housecarls) in front and peasant militia (the fyrd) behind. For five gruelling hours, the Saxon shield wall held firm. Norman cavalry charged uphill into a blizzard of javelins and axes, while Norman archers shot blind into the shield wall without breaking it.",
-          "image": "/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg",
-          "image_alt": "Bayeux Tapestry embroidery showing Norman heavy cavalry charging the Anglo-Saxon shield wall",
-          "caption": "Duke William's armoured Norman cavalry charging the interlocking Anglo-Saxon shield wall atop Senlac Hill (c. 1070s, Bayeux Tapestry Scene 51). The Saxon shield wall withstood repeated cavalry assaults until the discipline of the line was broken.",
+          "image": "/images/ks3_med7/med7_l1_b3_bayeux_norman_cavalry_shield_wall.jpg",
+          "image_alt": "Bayeux Tapestry Scene 52 embroidery showing Norman mail-clad cavalry knights on warhorses charging with couched lances and kite shields against the tightly locked Anglo-Saxon shield wall and battleaxe housecarls",
+          "caption": "Bayeux Tapestry Scene 52 (c. 1070s, Musée de la Tapisserie de Bayeux): Mail-clad Norman cavalry knights charge uphill with lances and kite shields into King Harold’s tightly locked Anglo-Saxon shield wall and two-handed battleaxes on Senlac Hill (14 October 1066).",
           "isReversed": true,
           "sources": [
             {
@@ -794,10 +1040,10 @@
               "id": "medieval_england_l1_src_e",
               "letter": "E",
               "type": "visual",
-              "src": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
-              "image": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+              "src": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
+              "image": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
               "title": "Source E: The Death of King Harold at Hastings (Bayeux Tapestry Scene 57, c. 1070s)",
-              "caption": "The Bayeux Tapestry: King Harold Godwinson struck near the eye and hacked down by a Norman knight, precipitating the final collapse of the Anglo-Saxon shield wall.",
+              "caption": "The Bayeux Tapestry Scene 57 (Hic Harold Rex Interfectus Est — \"Here King Harold Has Been Slain\", c. 1070s, Musée de la Tapisserie de Bayeux): Depicting the fatal arrow-in-the-eye tradition and sword blow that killed King Harold II on Senlac Hill.",
               "author": "Anglo-Saxon embroiderers commissioned by Bishop Odo of Bayeux",
               "date": "c. 1070s",
               "question_badge": "DECISIVE TURNING POINT",
@@ -808,17 +1054,18 @@
               "teacher_notes": {
                 "hinge_question": "If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?",
                 "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
-              }
+              },
+              "image_alt": "High-resolution detail of Bayeux Tapestry Scene 57 inscribed HAROLD REX INTERFECTVS EST showing a Saxon figure pulling an arrow from his eye beside a mounted Norman knight cutting down a falling warrior holding a battleaxe"
             }
           ],
           "source": {
             "id": "medieval_england_l1_src_e",
             "letter": "E",
             "type": "visual",
-            "src": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
-            "image": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+            "src": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
+            "image": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
             "title": "Source E: The Death of King Harold at Hastings (Bayeux Tapestry Scene 57, c. 1070s)",
-            "caption": "The Bayeux Tapestry: King Harold Godwinson struck near the eye and hacked down by a Norman knight, precipitating the final collapse of the Anglo-Saxon shield wall.",
+            "caption": "The Bayeux Tapestry Scene 57 (Hic Harold Rex Interfectus Est — \"Here King Harold Has Been Slain\", c. 1070s, Musée de la Tapisserie de Bayeux): Depicting the fatal arrow-in-the-eye tradition and sword blow that killed King Harold II on Senlac Hill.",
             "author": "Anglo-Saxon embroiderers commissioned by Bishop Odo of Bayeux",
             "date": "c. 1070s",
             "question_badge": "DECISIVE TURNING POINT",
@@ -829,9 +1076,13 @@
             "teacher_notes": {
               "hinge_question": "If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?",
               "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
-            }
+            },
+            "image_alt": "High-resolution detail of Bayeux Tapestry Scene 57 inscribed HAROLD REX INTERFECTVS EST showing a Saxon figure pulling an arrow from his eye beside a mounted Norman knight cutting down a falling warrior holding a battleaxe"
           },
-          "content": "<span class=\"para-ref\">[1.5]</span> The turning point came in the late afternoon. Sensing panic on his left flank where Breton soldiers retreated, William turned disaster into tactical genius. He ordered repeated <strong>feigned retreats</strong>: Norman cavalry charged the hill, then pretended to flee in terror. Tempted by the prospect of victory, undisciplined Saxon fyrd militia broke rank and surged downhill in pursuit. Immediately, Norman horsemen wheeled around, surrounded the scattered Saxons on open ground, and butchered them. With the shield wall fractured, Norman archers angled arrows high into the air. Harold was killed—traditionally struck in the eye with an arrow—and the Anglo-Saxon army disintegrated."
+          "content": "<span class=\"para-ref\">[1.5]</span> The turning point came in the late afternoon. Sensing panic on his left flank where Breton soldiers retreated, William turned disaster into tactical genius. He ordered repeated <strong>feigned retreats</strong>: Norman cavalry charged the hill, then pretended to flee in terror. Tempted by the prospect of victory, undisciplined Saxon fyrd militia broke rank and surged downhill in pursuit. Immediately, Norman horsemen wheeled around, surrounded the scattered Saxons on open ground, and butchered them. With the shield wall fractured, Norman archers angled arrows high into the air. Harold was killed—traditionally struck in the eye with an arrow—and the Anglo-Saxon army disintegrated.",
+          "image": "/images/ks3_med7/med7_l1_b4_battle_abbey_gatehouse_hastings.jpg",
+          "image_alt": "Crenellated fourteenth-century stone gatehouse of Battle Abbey rising above the medieval courtyard at Battle near Hastings in East Sussex",
+          "caption": "The fortified stone gatehouse of Battle Abbey at Battle near Hastings, East Sussex: Founded by William the Conqueror on the Senlac Hill ridge where Norman feigned retreats broke the Saxon shield wall and King Harold fell on 14 October 1066."
         }
       ],
       "tasks": [
@@ -1359,10 +1610,10 @@
           "id": "medieval_england_l1_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
-          "image": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+          "src": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
+          "image": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
           "title": "Source E: The Death of King Harold at Hastings (Bayeux Tapestry Scene 57, c. 1070s)",
-          "caption": "The Bayeux Tapestry: King Harold Godwinson struck near the eye and hacked down by a Norman knight, precipitating the final collapse of the Anglo-Saxon shield wall.",
+          "caption": "The Bayeux Tapestry Scene 57 (Hic Harold Rex Interfectus Est — \"Here King Harold Has Been Slain\", c. 1070s, Musée de la Tapisserie de Bayeux): Depicting the fatal arrow-in-the-eye tradition and sword blow that killed King Harold II on Senlac Hill.",
           "author": "Anglo-Saxon embroiderers commissioned by Bishop Odo of Bayeux",
           "date": "c. 1070s",
           "question_badge": "DECISIVE TURNING POINT",
@@ -1374,7 +1625,8 @@
             "hinge_question": "If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?",
             "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
           },
-          "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance, handing William total tactical victory. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?"
+          "source_context": "Late in the afternoon of 14 October 1066, Harold was killed. His death shattered Anglo-Saxon resistance, handing William total tactical victory. **Hinge Question:** If Harold had survived the arrow volley, could the Saxon shield wall have held until nightfall?",
+          "image_alt": "High-resolution detail of Bayeux Tapestry Scene 57 inscribed HAROLD REX INTERFECTVS EST showing a Saxon figure pulling an arrow from his eye beside a mounted Norman knight cutting down a falling warrior holding a battleaxe"
         }
       ],
       "quiz": [
@@ -1929,7 +2181,7 @@
             "isOutcome": true,
             "heading": "Anglo-Saxon England Falls",
             "date": "25 Dec 1066",
-            "img": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+            "img": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
             "mode": "contain-light",
             "stat": "Christmas 1066: William Crowned at Westminster",
             "html": "With <strong>King Harold dead</strong> on the ridge, English resistance collapsed. <strong>William the Conqueror</strong> was crowned at Westminster on Christmas Day, ending <strong>Anglo-Saxon rule</strong>.",
@@ -1964,7 +2216,7 @@
       "enquiry": "How did a minority Norman elite of fewer than 10,000 soldiers control two million hostile Anglo-Saxons?",
       "subtitle": "Earthworks, Extermination, and Fiscal Surveillance",
       "skill": "Historical Analysis: Control & Subjugation",
-      "card_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
+      "card_image": "/images/ks3_med7/med7_l2_card_cliffords_tower_york_motte.jpg",
       "card_position": "center 25%",
       "banner": {
         "image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
@@ -2174,9 +2426,9 @@
           "decimal": "[2.1]",
           "title": "The Motte & Bailey Blitz (1066–1068)",
           "text": "<span class=\"para-ref\">[2.1]</span> When William was crowned on Christmas Day 1066, he faced an existential emergency: an invading elite of just ten thousand Normans had to subjugate and control a hostile conquered population of approximately two million Anglo-Saxons. William’s immediate military solution was an unprecedented blitz of <strong>Motte and Bailey</strong> castles across England. Built in just eight to fourteen days using forced Saxon labour, over <strong>500 Castles Built Fast</strong> established immediate military control. A steep earth mound—the <strong>High Earth Mounds</strong> (motte)—stood up to ten metres high, topped with a wooden watchtower keep, while below lay the bailey protected by <strong>Quick Timber Walls</strong> and a deep defensive ditch.",
-          "image": "/images/medieval_england/plate_2_1_bayeux_castle_building.jpg",
-          "image_alt": "Bayeux Tapestry Motte-and-Bailey Construction",
-          "caption": "Scene from the Bayeux Tapestry showing Norman troops constructing a timber motte-and-bailey castle at Hastings.",
+          "image": "/images/ks3_med7/med7_l2_b0_bayeux_hastings_motte_scene45.jpg",
+          "image_alt": "Bayeux Tapestry Scene 45 inscribed ISTE IVSSIT VT FODERETVR CASTELLVM AT HESTENGA CEASTRA showing Norman overseers directing labourers with spades and picks digging a steep earthen motte mound below a timber palisade",
+          "caption": "Bayeux Tapestry Scene 45 (Iste Jussit Ut Foderetur Castellum At Hestenga Ceastra, c. 1070s): Forced labourers dig the steep earth motte and timber palisade of William’s new motte-and-bailey castle at Hastings in October 1066.",
           "theme_heading": "Military Architecture & Coercion",
           "sources": [
             {
@@ -2207,8 +2459,8 @@
           "decimal": "[2.2]",
           "title": "The Scorched-Earth Harrying of the North (1069–1070)",
           "text": "<span class=\"para-ref\">[2.2]</span> Where castles failed to deter rebellion, William deployed merciless state terror. In the winter of 1069, northern English <strong>Rebels Attack York</strong> and slaughtered the Norman garrison with Danish allies. William marched north in fury, ordering the systematic destruction of Yorkshire and the northern shires. Norman cavalry conducted total war by <strong>Burning Every Crop</strong>, slaughtering livestock, salting agricultural soil, and destroying farming tools. Chronicler Orderic Vitalis recorded that over <strong>100,000 Starve to Death</strong> in the ensuing famine, leaving vast areas entirely desolate and broken for over a generation.",
-          "image_alt": "The Harrying of the North Devastation",
-          "caption": "Depiction of Norman troops burning villages and crops across Yorkshire during the brutal winter campaign of 1069–1070.",
+          "image_alt": "KS3 Year 7 historical GIS map of the Norman Conquest, the Harrying of the North, and the Domesday Book (1066–1086) showing Norman castles at London, Berkhamsted, Portchester, Pevensey, and the Welsh Marches, the land-clipped Yorkshire scorched-earth zone, and Winchester",
+          "caption": "Reference Map: Norman Conquest, Castles, The Harrying of the North & The Domesday Book (1066–1086)—showing Berkhamsted and London’s White Tower, the scorched-earth devastation of Yorkshire (1069–70), Portchester, Pevensey and Welsh Marcher fortresses, and the 1086 Winchester Domesday audit.",
           "theme_heading": "State Terror & Pacification",
           "sources": [
             {
@@ -2234,7 +2486,148 @@
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.2]</span> Where castles failed to deter rebellion, William deployed merciless state terror. In the winter of 1069, northern English <strong>Rebels Attack York</strong> and slaughtered the Norman garrison with Danish allies. William marched north in fury, ordering the systematic destruction of Yorkshire and the northern shires. Norman cavalry conducted total war by <strong>Burning Every Crop</strong>, slaughtering livestock, salting agricultural soil, and destroying farming tools. Chronicler Orderic Vitalis recorded that over <strong>100,000 Starve to Death</strong> in the ensuing famine, leaving vast areas entirely desolate and broken for over a generation."
+          "content": "<span class=\"para-ref\">[2.2]</span> Where castles failed to deter rebellion, William deployed merciless state terror. In the winter of 1069, northern English <strong>Rebels Attack York</strong> and slaughtered the Norman garrison with Danish allies. William marched north in fury, ordering the systematic destruction of Yorkshire and the northern shires. Norman cavalry conducted total war by <strong>Burning Every Crop</strong>, slaughtering livestock, salting agricultural soil, and destroying farming tools. Chronicler Orderic Vitalis recorded that over <strong>100,000 Starve to Death</strong> in the ensuing famine, leaving vast areas entirely desolate and broken for over a generation.",
+          "image": "/images/medieval_england/maps/med7_map_l2_norman_conquest_harrying_domesday_1066_86.svg",
+          "stage_hook_map": {
+            "id": "med7-l2-norman-conquest-harrying-domesday-map",
+            "image": "/images/medieval_england/maps/med7_map_l2_norman_conquest_harrying_domesday_1066_86.svg",
+            "alt": "KS3 Year 7 historical GIS map of the Norman Conquest, the Harrying of the North, and the Domesday Book (1066–1086) showing Norman castles at London, Berkhamsted, Portchester, Pevensey, and the Welsh Marches, the land-clipped Yorkshire scorched-earth zone, and Winchester",
+            "caption": "Reference Map: Norman Conquest, Castles, The Harrying of the North & The Domesday Book (1066–1086)—showing Berkhamsted and London’s White Tower, the scorched-earth devastation of Yorkshire (1069–70), Portchester, Pevensey and Welsh Marcher fortresses, and the 1086 Winchester Domesday audit.",
+            "title": "Norman Control: Castles, Harrying of the North & Domesday (1066–1086)",
+            "subtitle": "White Tower, Harrying of the North, Marcher & Channel Castles, Domesday · Tap pins 1–4",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 66.9,
+                "y": 66.8,
+                "color": "#1e3a8a",
+                "label": "1. Berkhamsted & The White Tower, London (1066–78)",
+                "kicker": "Securing the Capital",
+                "badge": "Securing the Capital",
+                "date": "1066–1078",
+                "title": "Berkhamsted & The White Tower, London (1066–78): Securing the Capital",
+                "summary": "After Hastings, William burned a ring of manors around London until Saxon nobles submitted at Berkhamsted before his Christmas Day 1066 coronation. Across England, forced Saxon labour raised over 500 earth-and-timber motte-and-bailey castles, crowned by the towering limestone White Tower (begun c. 1078) on the Thames.",
+                "body": "After Hastings, William burned a ring of manors around London until Saxon nobles submitted at Berkhamsted before his Christmas Day 1066 coronation. Across England, forced Saxon labour raised over 500 earth-and-timber motte-and-bailey castles, crowned by the towering limestone White Tower (begun c. 1078) on the Thames.",
+                "details": "After Hastings, William burned a ring of manors around London until Saxon nobles submitted at Berkhamsted before his Christmas Day 1066 coronation. Across England, forced Saxon labour raised over 500 earth-and-timber motte-and-bailey castles, crowned by the towering limestone White Tower (begun c. 1078) on the Thames.",
+                "hinge": "Why did William build castles inside major towns like London and York rather than only along England’s coastline?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 61.7,
+                "y": 45.1,
+                "color": "#9f1239",
+                "label": "2. The Harrying of the North (1069–70)",
+                "kicker": "Scorched-Earth Terror",
+                "badge": "Scorched-Earth Terror",
+                "date": "Winter 1069–1070",
+                "title": "The Harrying of the North (1069–70): Scorched-Earth Devastation in Yorkshire",
+                "summary": "When northern Anglo-Saxon rebels and Danish allies wiped out the Norman garrison at York in 1069, William unleashed merciless total war between the Humber and the Tees. Norman troops burned villages, crops, barns, and ploughs in midwinter; chronicler Orderic Vitalis recorded that around 100,000 people starved to death, leaving tracts recorded as “waste” in 1086.",
+                "body": "When northern Anglo-Saxon rebels and Danish allies wiped out the Norman garrison at York in 1069, William unleashed merciless total war between the Humber and the Tees. Norman troops burned villages, crops, barns, and ploughs in midwinter; chronicler Orderic Vitalis recorded that around 100,000 people starved to death, leaving tracts recorded as “waste” in 1086.",
+                "details": "When northern Anglo-Saxon rebels and Danish allies wiped out the Norman garrison at York in 1069, William unleashed merciless total war between the Humber and the Tees. Norman troops burned villages, crops, barns, and ploughs in midwinter; chronicler Orderic Vitalis recorded that around 100,000 people starved to death, leaving tracts recorded as “waste” in 1086.",
+                "hinge": "Why did William destroy farms, seeds, and livestock across Yorkshire instead of only fighting rebel soldiers on a battlefield?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 62.8,
+                "y": 75.1,
+                "color": "#065f46",
+                "label": "3. Portchester, Pevensey & Welsh Marcher Castles (1067–1100)",
+                "kicker": "Channel & Welsh Frontier",
+                "badge": "Channel & Welsh Frontier",
+                "date": "1067–1100",
+                "title": "Portchester, Pevensey & Welsh Marcher Castles: Guarding Coast & Frontier",
+                "summary": "Along the Channel coast at Portchester (inside massive Roman walls overlooking Portsmouth Harbour) and Pevensey, stone fortresses protected William’s sea link to Normandy. Along the turbulent Welsh border, powerful Marcher Earls at Chester, Shrewsbury, and Hereford received special military powers to build dense chains of castles.",
+                "body": "Along the Channel coast at Portchester (inside massive Roman walls overlooking Portsmouth Harbour) and Pevensey, stone fortresses protected William’s sea link to Normandy. Along the turbulent Welsh border, powerful Marcher Earls at Chester, Shrewsbury, and Hereford received special military powers to build dense chains of castles.",
+                "details": "Along the Channel coast at Portchester (inside massive Roman walls overlooking Portsmouth Harbour) and Pevensey, stone fortresses protected William’s sea link to Normandy. Along the turbulent Welsh border, powerful Marcher Earls at Chester, Shrewsbury, and Hereford received special military powers to build dense chains of castles.",
+                "hinge": "How did reusing ancient Roman walls at Portchester and Pevensey help the Normans project permanent authority across southern England?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 60,
+                "y": 70.7,
+                "color": "#5b21b6",
+                "label": "4. Winchester & The Great Domesday Survey (1085–86)",
+                "kicker": "Every Manor & Taxpayer",
+                "badge": "Every Manor & Taxpayer",
+                "date": "1085–1086",
+                "title": "Winchester & The Great Domesday Survey (1085–86): Total Royal Audit",
+                "summary": "Fearing a Danish invasion at Christmas 1085 in Gloucester, William sent royal commissioners into every shire to record every manor, plough team, mill, pig, and tenant—compiling the Great Domesday Book at the royal treasury in Winchester (1086). It maximized royal taxes and proved that over 80% of English land now belonged to roughly 200 Norman barons.",
+                "body": "Fearing a Danish invasion at Christmas 1085 in Gloucester, William sent royal commissioners into every shire to record every manor, plough team, mill, pig, and tenant—compiling the Great Domesday Book at the royal treasury in Winchester (1086). It maximized royal taxes and proved that over 80% of English land now belonged to roughly 200 Norman barons.",
+                "details": "Fearing a Danish invasion at Christmas 1085 in Gloucester, William sent royal commissioners into every shire to record every manor, plough team, mill, pig, and tenant—compiling the Great Domesday Book at the royal treasury in Winchester (1086). It maximized royal taxes and proved that over 80% of English land now belonged to roughly 200 Norman barons.",
+                "hinge": "Why did Anglo-Saxons nickname William’s 1086 land survey “Domesday”—comparing it to God’s final Day of Judgement?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 66.9,
+                "y": 66.8,
+                "color": "#1e3a8a",
+                "label": "1. Berkhamsted & The White Tower, London (1066–78)",
+                "kicker": "Securing the Capital",
+                "badge": "Securing the Capital",
+                "date": "1066–1078",
+                "title": "Berkhamsted & The White Tower, London (1066–78): Securing the Capital",
+                "summary": "After Hastings, William burned a ring of manors around London until Saxon nobles submitted at Berkhamsted before his Christmas Day 1066 coronation. Across England, forced Saxon labour raised over 500 earth-and-timber motte-and-bailey castles, crowned by the towering limestone White Tower (begun c. 1078) on the Thames.",
+                "body": "After Hastings, William burned a ring of manors around London until Saxon nobles submitted at Berkhamsted before his Christmas Day 1066 coronation. Across England, forced Saxon labour raised over 500 earth-and-timber motte-and-bailey castles, crowned by the towering limestone White Tower (begun c. 1078) on the Thames.",
+                "details": "After Hastings, William burned a ring of manors around London until Saxon nobles submitted at Berkhamsted before his Christmas Day 1066 coronation. Across England, forced Saxon labour raised over 500 earth-and-timber motte-and-bailey castles, crowned by the towering limestone White Tower (begun c. 1078) on the Thames.",
+                "hinge": "Why did William build castles inside major towns like London and York rather than only along England’s coastline?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 61.7,
+                "y": 45.1,
+                "color": "#9f1239",
+                "label": "2. The Harrying of the North (1069–70)",
+                "kicker": "Scorched-Earth Terror",
+                "badge": "Scorched-Earth Terror",
+                "date": "Winter 1069–1070",
+                "title": "The Harrying of the North (1069–70): Scorched-Earth Devastation in Yorkshire",
+                "summary": "When northern Anglo-Saxon rebels and Danish allies wiped out the Norman garrison at York in 1069, William unleashed merciless total war between the Humber and the Tees. Norman troops burned villages, crops, barns, and ploughs in midwinter; chronicler Orderic Vitalis recorded that around 100,000 people starved to death, leaving tracts recorded as “waste” in 1086.",
+                "body": "When northern Anglo-Saxon rebels and Danish allies wiped out the Norman garrison at York in 1069, William unleashed merciless total war between the Humber and the Tees. Norman troops burned villages, crops, barns, and ploughs in midwinter; chronicler Orderic Vitalis recorded that around 100,000 people starved to death, leaving tracts recorded as “waste” in 1086.",
+                "details": "When northern Anglo-Saxon rebels and Danish allies wiped out the Norman garrison at York in 1069, William unleashed merciless total war between the Humber and the Tees. Norman troops burned villages, crops, barns, and ploughs in midwinter; chronicler Orderic Vitalis recorded that around 100,000 people starved to death, leaving tracts recorded as “waste” in 1086.",
+                "hinge": "Why did William destroy farms, seeds, and livestock across Yorkshire instead of only fighting rebel soldiers on a battlefield?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 62.8,
+                "y": 75.1,
+                "color": "#065f46",
+                "label": "3. Portchester, Pevensey & Welsh Marcher Castles (1067–1100)",
+                "kicker": "Channel & Welsh Frontier",
+                "badge": "Channel & Welsh Frontier",
+                "date": "1067–1100",
+                "title": "Portchester, Pevensey & Welsh Marcher Castles: Guarding Coast & Frontier",
+                "summary": "Along the Channel coast at Portchester (inside massive Roman walls overlooking Portsmouth Harbour) and Pevensey, stone fortresses protected William’s sea link to Normandy. Along the turbulent Welsh border, powerful Marcher Earls at Chester, Shrewsbury, and Hereford received special military powers to build dense chains of castles.",
+                "body": "Along the Channel coast at Portchester (inside massive Roman walls overlooking Portsmouth Harbour) and Pevensey, stone fortresses protected William’s sea link to Normandy. Along the turbulent Welsh border, powerful Marcher Earls at Chester, Shrewsbury, and Hereford received special military powers to build dense chains of castles.",
+                "details": "Along the Channel coast at Portchester (inside massive Roman walls overlooking Portsmouth Harbour) and Pevensey, stone fortresses protected William’s sea link to Normandy. Along the turbulent Welsh border, powerful Marcher Earls at Chester, Shrewsbury, and Hereford received special military powers to build dense chains of castles.",
+                "hinge": "How did reusing ancient Roman walls at Portchester and Pevensey help the Normans project permanent authority across southern England?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 60,
+                "y": 70.7,
+                "color": "#5b21b6",
+                "label": "4. Winchester & The Great Domesday Survey (1085–86)",
+                "kicker": "Every Manor & Taxpayer",
+                "badge": "Every Manor & Taxpayer",
+                "date": "1085–1086",
+                "title": "Winchester & The Great Domesday Survey (1085–86): Total Royal Audit",
+                "summary": "Fearing a Danish invasion at Christmas 1085 in Gloucester, William sent royal commissioners into every shire to record every manor, plough team, mill, pig, and tenant—compiling the Great Domesday Book at the royal treasury in Winchester (1086). It maximized royal taxes and proved that over 80% of English land now belonged to roughly 200 Norman barons.",
+                "body": "Fearing a Danish invasion at Christmas 1085 in Gloucester, William sent royal commissioners into every shire to record every manor, plough team, mill, pig, and tenant—compiling the Great Domesday Book at the royal treasury in Winchester (1086). It maximized royal taxes and proved that over 80% of English land now belonged to roughly 200 Norman barons.",
+                "details": "Fearing a Danish invasion at Christmas 1085 in Gloucester, William sent royal commissioners into every shire to record every manor, plough team, mill, pig, and tenant—compiling the Great Domesday Book at the royal treasury in Winchester (1086). It maximized royal taxes and proved that over 80% of English land now belonged to roughly 200 Norman barons.",
+                "hinge": "Why did Anglo-Saxons nickname William’s 1086 land survey “Domesday”—comparing it to God’s final Day of Judgement?"
+              }
+            ]
+          }
         },
         {
           "id": "block_3",
@@ -2242,8 +2635,8 @@
           "title": "Stone Keeps & Portchester Castle (1070–1100)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> As Norman rule stabilized, temporary timber watchtowers were replaced with massive stone keeps to project permanent imperial dominance. Along the south coast, the Normans commandeered massive 3rd-century ancient Roman walls, constructing a formidable four-storey thick limestone keep inside the Roman fort enclosure.</p><p class=\"prose-p\">The fortress guarded a deep warship harbour in Portsmouth Harbour, securing William’s cross-Channel supply lines to Normandy and deterring French invasion fleets. The towering stone walls projected terrifying royal authority over defeated Anglo-Saxons across southern England.</p>",
           "image": "/images/upgraded/ks3-early/med_l2_b2_portchester_keep.jpg",
-          "image_alt": "12th-century limestone Norman keep of Portchester Castle rising inside 3rd-century Roman flint walls",
-          "caption": "Portchester Castle, Hampshire: The towering 12th-century Norman limestone keep built inside the surviving 3rd-century Roman Saxon Shore fort walls to command Portsmouth Harbour.",
+          "image_alt": "Towering twelfth-century four-storey grey limestone Norman Great Keep of Portchester Castle rising inside third-century Roman flint curtain walls beside Portsmouth Harbour",
+          "caption": "The four-storey twelfth-century Norman limestone Great Keep at Portchester Castle, Hampshire: Built inside massive Roman shore-fort walls overlooking Portsmouth Harbour to secure royal supply lines to Normandy and project permanent Norman authority.",
           "theme_heading": "Imperial Stone Fortifications",
           "sources": [
             {
@@ -2274,16 +2667,16 @@
           "decimal": "[2.4]",
           "title": "The Great Domesday Book Audit (1085–1086)",
           "text": "<span class=\"para-ref\">[2.4]</span> Physical conquest had to be cemented by administrative surveillance. At Midwinter 1085, <strong>Fearing Viking Invasion</strong> by King Cnut IV of Denmark, William gathered his council at Gloucester and commissioned an exhaustive nationwide economic survey. Royal commissioners were sent across every English shire, <strong>Counting Every Cow and Pig</strong>, meadow, woodland, and mill, demanding oaths under threat of severe penalty. Completed in 1086, the Domesday Book ensured the Crown extracted maximum fiscal revenue, guaranteeing every landholder was <strong>Paying Every Penny in Tax</strong>.",
-          "image_alt": "Domesday Book Folio",
-          "caption": "Parchment page from Great Domesday Book recording landholding, livestock, and taxable wealth in 1086.",
+          "image_alt": "Historical engraving of the heavy iron-strapped, triple-locked medieval oak Domesday Chest with raised lid preserved at The National Archives",
+          "caption": "The iron-bound, triple-locked royal Domesday Chest (preserved at The National Archives, Kew): Built to guard the Crown treasury records and William the Conqueror’s 1086 Great Domesday Book tax and land survey.",
           "theme_heading": "Bureaucratic Fiscal Control",
           "sources": [
             {
               "id": "medieval_england_l2_src_b",
               "letter": "B",
               "type": "visual",
-              "src": "/images/medieval_england/source_a_berkhamsted_motte_bailey.jpg",
-              "image": "/images/medieval_england/source_a_berkhamsted_motte_bailey.jpg",
+              "src": "/images/ks3_med7/med7_l2_s1_berkhamsted_motte_bailey_plan.jpg",
+              "image": "/images/ks3_med7/med7_l2_s1_berkhamsted_motte_bailey_plan.jpg",
               "title": "Source B: Motte-and-Bailey Earthwork Plan: Berkhamsted Castle (c. 1066–1070)",
               "caption": "Earthwork plan and ditch profile of Berkhamsted Castle, Hertfordshire (Historic England / RCHME), founded by William immediately following Hastings to encircle London.",
               "author": "Norman military engineers under Robert, Count of Mortain",
@@ -2299,25 +2692,24 @@
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[2.4]</span> Physical conquest had to be cemented by administrative surveillance. At Midwinter 1085, <strong>Fearing Viking Invasion</strong> by King Cnut IV of Denmark, William gathered his council at Gloucester and commissioned an exhaustive nationwide economic survey. Royal commissioners were sent across every English shire, <strong>Counting Every Cow and Pig</strong>, meadow, woodland, and mill, demanding oaths under threat of severe penalty. Completed in 1086, the Domesday Book ensured the Crown extracted maximum fiscal revenue, guaranteeing every landholder was <strong>Paying Every Penny in Tax</strong>."
+          "content": "<span class=\"para-ref\">[2.4]</span> Physical conquest had to be cemented by administrative surveillance. At Midwinter 1085, <strong>Fearing Viking Invasion</strong> by King Cnut IV of Denmark, William gathered his council at Gloucester and commissioned an exhaustive nationwide economic survey. Royal commissioners were sent across every English shire, <strong>Counting Every Cow and Pig</strong>, meadow, woodland, and mill, demanding oaths under threat of severe penalty. Completed in 1086, the Domesday Book ensured the Crown extracted maximum fiscal revenue, guaranteeing every landholder was <strong>Paying Every Penny in Tax</strong>.",
+          "image": "/images/ks3_med7/med7_l2_b3_domesday_chest_national_archives.jpg"
         },
         {
           "id": "block_5",
           "decimal": "[2.5]",
           "title": "Feudal Hierarchy & Land Dispossession (1086)",
           "text": "<span class=\"para-ref\">[2.5]</span> The Domesday audit laid bare the most complete redistribution of land and power in English history. Local surveys such as the <strong>Hundred of Fareham Survey</strong> demonstrate how Anglo-Saxon thegns were systematically dispossessed. Virtually all <strong>English Landlords Kicked Out</strong> were replaced by approximately two hundred Norman tenants-in-chief as <strong>Barons Take the Manors</strong>. This created a rigid feudal pyramid: William held all land by divine right, leasing manors to Norman barons in exchange for military knights, binding the kingdom in a tight web of feudal vassalage.",
-          "image_alt": "The Norman Feudal Pyramid",
-          "caption": "The Feudal Hierarchy: Land held from the King by Tenants-in-Chief (Barons and Bishops), sub-infeudated to Knights and worked by unfree Villeins.",
           "theme_heading": "Social Transformation & Feudalism",
           "sources": [
             {
               "id": "medieval_england_l2_src_e",
               "letter": "E",
               "type": "visual",
-              "src": "/images/medieval_england/source_d_portchester_castle_church.jpg",
-              "image": "/images/medieval_england/source_d_portchester_castle_church.jpg",
+              "src": "/images/ks3_med7/med7_l2_s4_portchester_st_marys_norman_church.jpg",
+              "image": "/images/ks3_med7/med7_l2_s4_portchester_st_marys_norman_church.jpg",
               "title": "Source E: St Mary's Norman Church & Roman Outer Bailey: Portchester Castle (c. 1120s)",
-              "caption": "Exterior of St Mary’s Norman Augustinian priory church, established directly within the 3rd-century Roman Saxon Shore fort walls at Portchester Castle, Hampshire.",
+              "caption": "St Mary’s twelfth-century Norman Priory Church standing inside the Roman outer-bailey walls of Portchester Castle, Hampshire (founded by Henry I c. 1133): Demonstrating how Norman stone castles and Romanesque churches fused military and spiritual authority side by side.",
               "author": "Norman Master Masons and Augustinian Monks",
               "date": "c. 1120s",
               "question_badge": "LOCAL FIELDWORK & MILITARY FORENSICS",
@@ -2328,10 +2720,112 @@
               "teacher_notes": {
                 "hinge_question": "Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?",
                 "source_context": "Normans repurposed Portchester's Roman fort with a royal keep and monastic church. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?"
-              }
+              },
+              "image_alt": "Exterior photograph of twelfth-century St Mary’s Norman Priory Church showing its carved Romanesque west doorway and churchyard standing inside the flint Roman outer-bailey curtain walls of Portchester Castle"
             }
           ],
-          "content": "<span class=\"para-ref\">[2.5]</span> The Domesday audit laid bare the most complete redistribution of land and power in English history. Local surveys such as the <strong>Hundred of Fareham Survey</strong> demonstrate how Anglo-Saxon thegns were systematically dispossessed. Virtually all <strong>English Landlords Kicked Out</strong> were replaced by approximately two hundred Norman tenants-in-chief as <strong>Barons Take the Manors</strong>. This created a rigid feudal pyramid: William held all land by divine right, leasing manors to Norman barons in exchange for military knights, binding the kingdom in a tight web of feudal vassalage."
+          "content": "<span class=\"para-ref\">[2.5]</span> The Domesday audit laid bare the most complete redistribution of land and power in English history. Local surveys such as the <strong>Hundred of Fareham Survey</strong> demonstrate how Anglo-Saxon thegns were systematically dispossessed. Virtually all <strong>English Landlords Kicked Out</strong> were replaced by approximately two hundred Norman tenants-in-chief as <strong>Barons Take the Manors</strong>. This created a rigid feudal pyramid: William held all land by divine right, leasing manors to Norman barons in exchange for military knights, binding the kingdom in a tight web of feudal vassalage.",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 7 Power & Land Control • 1066–1086",
+            "title": "How William’s Feudal Pyramid Locked Down England",
+            "default_index": 0,
+            "caption": "Click each level of the feudal hierarchy to see how William traded stolen English land for loyal soldiers and taxes.",
+            "items": [
+              {
+                "tab_label": "1. The King",
+                "title": "Top of the Pyramid: King William I Owns All England",
+                "dates": "1066–1087 • Royal Monopoly of Land",
+                "badge": "Supreme Landowner",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Legal Rule",
+                    "value": "Every Acre in England Belonged Directly to the King"
+                  },
+                  {
+                    "label": "Royal Share",
+                    "value": "Kept ~20% as Royal Estates & Hunting Forests"
+                  },
+                  {
+                    "label": "1086 Check",
+                    "value": "Domesday Book Recorded Every Manor’s Exact Tax Value"
+                  }
+                ],
+                "takeaway": "Nobody in Norman England truly 'owned' land anymore—everyone below the King merely rented it in return for strict loyalty."
+              },
+              {
+                "tab_label": "2. Norman Barons",
+                "title": "Tenants-in-Chief: ~200 Norman Barons & Bishops",
+                "dates": "Over 80% of Saxon Landlords Dispossessed",
+                "badge": "Great Landholders",
+                "color": "#7c3aed",
+                "bg_color": "rgba(124, 58, 237, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Who Lost Out",
+                    "value": "4,000+ Anglo-Saxon Thegns Stripped of Their Manors"
+                  },
+                  {
+                    "label": "Sacred Duty",
+                    "value": "Knelt to Swear Feudal Homage & Fealty to William"
+                  },
+                  {
+                    "label": "Price of Land",
+                    "value": "Supplied Fixed Quotas of Armed Knights & Royal Taxes"
+                  }
+                ],
+                "takeaway": "By sweeping away the old English nobility, William put trusted French-speaking allies in charge of every shire and castle."
+              },
+              {
+                "tab_label": "3. Norman Knights",
+                "title": "Under-Tenants: Approximately 5,000 Mounted Knights",
+                "dates": "40 Days’ Free Military Service Each Year",
+                "badge": "Instant Army",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Land Grant",
+                    "value": "Granted Smaller Manors ('Knight’s Fees') by Barons"
+                  },
+                  {
+                    "label": "Military Duty",
+                    "value": "40 Days’ Armed Warhorse & Castle-Guard Service Yearly"
+                  },
+                  {
+                    "label": "Local Policing",
+                    "value": "Crushed Local Saxon Unrest From Motte-and-Bailey Forts"
+                  }
+                ],
+                "takeaway": "Without paying a standing wage bill, William could summon thousands of heavily armoured horsemen anywhere in England."
+              },
+              {
+                "tab_label": "4. English Peasants",
+                "title": "Base of the Pyramid: ~2 Million Villeins & Freemen",
+                "dates": "90% of England’s Population",
+                "badge": "Bonded Farm Labour",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Daily Work",
+                    "value": "Farmed the Baron’s & Knight’s Strips Without Pay"
+                  },
+                  {
+                    "label": "Unfree Status",
+                    "value": "Villeins Could Not Leave the Manor or Marry Freely"
+                  },
+                  {
+                    "label": "Bottom Line",
+                    "value": "English Sweat & Harvests Fed the Entire Norman Elite"
+                  }
+                ],
+                "takeaway": "For ordinary English villagers, 1066 swapped Anglo-Saxon lords for harsher Norman masters backed by stone castles and royal law."
+              }
+            ]
+          }
         }
       ],
       "tasks": [
@@ -2813,8 +3307,8 @@
           "id": "medieval_england_l2_src_b",
           "letter": "B",
           "type": "visual",
-          "src": "/images/medieval_england/source_a_berkhamsted_motte_bailey.jpg",
-          "image": "/images/medieval_england/source_a_berkhamsted_motte_bailey.jpg",
+          "src": "/images/ks3_med7/med7_l2_s1_berkhamsted_motte_bailey_plan.jpg",
+          "image": "/images/ks3_med7/med7_l2_s1_berkhamsted_motte_bailey_plan.jpg",
           "title": "Source B: Motte-and-Bailey Earthwork Plan: Berkhamsted Castle (c. 1066–1070)",
           "caption": "Earthwork plan and ditch profile of Berkhamsted Castle, Hertfordshire (Historic England / RCHME), founded by William immediately following Hastings to encircle London.",
           "author": "Norman military engineers under Robert, Count of Mortain",
@@ -2878,10 +3372,10 @@
           "id": "medieval_england_l2_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/medieval_england/source_d_portchester_castle_church.jpg",
-          "image": "/images/medieval_england/source_d_portchester_castle_church.jpg",
+          "src": "/images/ks3_med7/med7_l2_s4_portchester_st_marys_norman_church.jpg",
+          "image": "/images/ks3_med7/med7_l2_s4_portchester_st_marys_norman_church.jpg",
           "title": "Source E: St Mary's Norman Church & Roman Outer Bailey: Portchester Castle (c. 1120s)",
-          "caption": "Exterior of St Mary’s Norman Augustinian priory church, established directly within the 3rd-century Roman Saxon Shore fort walls at Portchester Castle, Hampshire.",
+          "caption": "St Mary’s twelfth-century Norman Priory Church standing inside the Roman outer-bailey walls of Portchester Castle, Hampshire (founded by Henry I c. 1133): Demonstrating how Norman stone castles and Romanesque churches fused military and spiritual authority side by side.",
           "author": "Norman Master Masons and Augustinian Monks",
           "date": "c. 1120s",
           "question_badge": "LOCAL FIELDWORK & MILITARY FORENSICS",
@@ -2893,7 +3387,8 @@
             "hinge_question": "Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?",
             "source_context": "Normans repurposed Portchester's Roman fort with a royal keep and monastic church. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?"
           },
-          "source_context": "Portchester Castle commands Portsmouth Harbour. Norman kings adapted the existing 3rd-century Roman walls, creating a fortified transit hub linking England to the Duchy of Normandy. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?"
+          "source_context": "Portchester Castle commands Portsmouth Harbour. Norman kings adapted the existing 3rd-century Roman walls, creating a fortified transit hub linking England to the Duchy of Normandy. **Hinge Question:** Why did Norman conquerors choose to insert castles inside existing Roman forts rather than clearing new greenfield sites?",
+          "image_alt": "Exterior photograph of twelfth-century St Mary’s Norman Priory Church showing its carved Romanesque west doorway and churchyard standing inside the flint Roman outer-bailey curtain walls of Portchester Castle"
         }
       ],
       "quiz": [
@@ -3435,7 +3930,7 @@
             "badge": "Stage 5",
             "heading": "Norman Barons Take the Land",
             "date": "1086",
-            "img": "/images/medieval_england/source_d_portchester_castle_church.jpg",
+            "img": "/images/ks3_med7/med7_l2_s4_portchester_st_marys_norman_church.jpg",
             "mode": "contain",
             "stat": "200 Norman Barons Replace English Landowners",
             "html": "Domesday proved <strong>Anglo-Saxon lords</strong> had been wiped out: roughly <strong>200 Norman barons</strong> now held England’s manors in exchange for supplying <strong>armoured knights</strong>.",
@@ -3483,7 +3978,7 @@
       "enquiry": "Why did the conflict between King Henry II and Archbishop Thomas Becket erupt into murder in Canterbury Cathedral?",
       "subtitle": "Criminous Clerks, Royal Sovereignty, and the Martyrdom of 1170",
       "skill": "Historical Significance & Church-State Conflict",
-      "card_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
+      "card_image": "/images/ks3_med7/med7_l3_card_canterbury_cathedral_towers.jpg",
       "card_position": "center 20%",
       "banner": {
         "image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
@@ -3693,8 +4188,8 @@
           "decimal": "[3.1]",
           "title": "Worldly Chancellor to Archbishop (1154–1162)",
           "text": "<span class=\"para-ref\">[3.1]</span> In 1154, the energetic young King Henry II appointed his close drinking companion and brilliant courtier Thomas Becket as Chancellor of England. Becket lived as the <strong>King’s Hunting Friend</strong>, reveling in luxury with <strong>Silk Robes and Feasting</strong>, and executing royal policy ruthlessly. When Archbishop Theobald died in 1161, Henry devised an audacious strategy: by appointing Becket as Archbishop of Canterbury, he believed he had secured an unquestioning royal pawn who would fuse church and crown authority, <strong>Hoping for an Easy Puppet</strong>.",
-          "image_alt": "Henry II and Thomas Becket at Court",
-          "caption": "Henry II with his Chancellor Thomas Becket before their bitter ideological falling out.",
+          "image_alt": "Thirteenth-century illuminated manuscript miniature from The Becket Leaves (BL Loan MS 88 f. 2v) showing crowned Kings Henry II and Louis VII on horseback on the left confronting mitred Archbishop Thomas Becket on horseback on the right",
+          "caption": "The Becket Leaves (c. 1220–1240, British Library Loan MS 88, f. 2v): Thirteenth-century illumination depicting crowned King Henry II (left) confronting his former friend and Chancellor, Archbishop Thomas Becket (right).",
           "theme_heading": "Royal Patronage & Ambition",
           "sources": [
             {
@@ -3718,7 +4213,8 @@
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> In 1154, the energetic young King Henry II appointed his close drinking companion and brilliant courtier Thomas Becket as Chancellor of England. Becket lived as the <strong>King’s Hunting Friend</strong>, reveling in luxury with <strong>Silk Robes and Feasting</strong>, and executing royal policy ruthlessly. When Archbishop Theobald died in 1161, Henry devised an audacious strategy: by appointing Becket as Archbishop of Canterbury, he believed he had secured an unquestioning royal pawn who would fuse church and crown authority, <strong>Hoping for an Easy Puppet</strong>."
+          "content": "<span class=\"para-ref\">[3.1]</span> In 1154, the energetic young King Henry II appointed his close drinking companion and brilliant courtier Thomas Becket as Chancellor of England. Becket lived as the <strong>King’s Hunting Friend</strong>, reveling in luxury with <strong>Silk Robes and Feasting</strong>, and executing royal policy ruthlessly. When Archbishop Theobald died in 1161, Henry devised an audacious strategy: by appointing Becket as Archbishop of Canterbury, he believed he had secured an unquestioning royal pawn who would fuse church and crown authority, <strong>Hoping for an Easy Puppet</strong>.",
+          "image": "/images/ks3_med7/med7_l3_b0_henry_ii_and_becket_leaves.jpg"
         },
         {
           "id": "block_2",
@@ -3726,8 +4222,8 @@
           "title": "Becket’s Metamorphosis & Spiritual Allegiance (1162)",
           "text": "<span class=\"para-ref\">[3.2]</span> The moment Becket was consecrated Archbishop in June 1162, he underwent an astonishing personal and spiritual transformation. Becket immediately resigned the Chancellorship, <strong>Throws Off Silk Robes</strong> of worldly power, and adopted a life of severe monastic asceticism, wearing a <strong>Scratchy Goat Hairshirt</strong> infested with lice beneath his vestments and washing the feet of thirteen paupers daily. Becket declared himself <strong>Loyal Only to the Pope</strong> and the universal Catholic Church, setting up an unavoidable collision course with the Crown.",
           "image": "/images/upgraded/ks3-early/med_l3_b1_becket_leaves_pope.jpg",
-          "image_alt": "13th-century Becket Leaves manuscript illumination showing Archbishop Thomas Becket embracing Pope Alexander III",
-          "caption": "Archbishop Thomas Becket ('S. Th.') pledging spiritual allegiance to Pope Alexander III ('Alexand papa'), attended by his cross-bearer (The Becket Leaves, c. 1220–1240, British Library Loan MS 88, fol. 1v).",
+          "image_alt": "Thirteenth-century illuminated miniature from The Becket Leaves showing Archbishop Thomas Becket on horseback embracing Pope Alexander III while an attendant holds the archiepiscopal cross",
+          "caption": "The Becket Leaves (c. 1220–1240, British Library Loan MS 88): Consecrated Archbishop of Canterbury in June 1162, Thomas Becket cast off royal luxury and pledged supreme spiritual obedience to Pope Alexander III.",
           "theme_heading": "Spiritual Metamorphosis",
           "sources": [
             {
@@ -3759,8 +4255,6 @@
           "decimal": "[3.3]",
           "title": "The Constitutions of Clarendon & ‘Criminous Clerks’ (1164)",
           "text": "<span class=\"para-ref\">[3.3]</span> The flashpoint between King and Archbishop was the legal scandal of 'criminous clerks'. Anyone who could read a Latin psalm claimed 'benefit of clergy', meaning corrupt <strong>Priests Escaping Punishment</strong> for robbery, rape, and murder faced lenient church courts instead of royal gallows by simply <strong>Reading a Latin Verse</strong>. Henry summoned the barons and bishops to Clarendon in January 1164, issuing the Constitutions of Clarendon where the <strong>King Demands Royal Trials</strong> and punishment for defrocked priests. Becket furiously refused to seal the document.",
-          "image_alt": "The Council of Clarendon 1164",
-          "caption": "King Henry II demanding his bishops accept the Constitutions of Clarendon.",
           "theme_heading": "Jurisdiction & Royal Law",
           "sources": [
             {
@@ -3785,15 +4279,111 @@
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.3]</span> The flashpoint between King and Archbishop was the legal scandal of 'criminous clerks'. Anyone who could read a Latin psalm claimed 'benefit of clergy', meaning corrupt <strong>Priests Escaping Punishment</strong> for robbery, rape, and murder faced lenient church courts instead of royal gallows by simply <strong>Reading a Latin Verse</strong>. Henry summoned the barons and bishops to Clarendon in January 1164, issuing the Constitutions of Clarendon where the <strong>King Demands Royal Trials</strong> and punishment for defrocked priests. Becket furiously refused to seal the document."
+          "content": "<span class=\"para-ref\">[3.3]</span> The flashpoint between King and Archbishop was the legal scandal of 'criminous clerks'. Anyone who could read a Latin psalm claimed 'benefit of clergy', meaning corrupt <strong>Priests Escaping Punishment</strong> for robbery, rape, and murder faced lenient church courts instead of royal gallows by simply <strong>Reading a Latin Verse</strong>. Henry summoned the barons and bishops to Clarendon in January 1164, issuing the Constitutions of Clarendon where the <strong>King Demands Royal Trials</strong> and punishment for defrocked priests. Becket furiously refused to seal the document.",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Year 7 Church vs State Showdown • January 1164",
+            "title": "Crown vs Church: The 1164 Constitutions of Clarendon Clash",
+            "default_index": 1,
+            "caption": "Slide or click across the three positions to see why King Henry II and Archbishop Becket collided over 'criminous clerks'.",
+            "stops": [
+              {
+                "short_label": "1. Henry II’s View",
+                "label": "One Royal Law for Every Subject ('King’s Justice')",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "summary": "King Henry II argued that England could never be peaceful while 1 in 6 adult men claimed clerical status to dodge the King’s courts for violent crimes.",
+                "traits": [
+                  {
+                    "category": "Scandal",
+                    "glyph": "law",
+                    "value": "100+ Murders Committed by 'Clerks' Since 1154"
+                  },
+                  {
+                    "category": "Loophole",
+                    "glyph": "language",
+                    "value": "Reading One Latin Psalm ('Neck Verse') Saved Criminals"
+                  },
+                  {
+                    "category": "Soft Penalty",
+                    "glyph": "people",
+                    "value": "Church Courts Used Fines or Penance—Never Hanging"
+                  },
+                  {
+                    "category": "Royal Goal",
+                    "glyph": "leader",
+                    "value": "Restore Strong Order Across the Whole Kingdom"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. 1164 Clarendon",
+                "label": "January 1164: Clause 3 of the Constitutions of Clarendon",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "summary": "Summoning bishops and barons to Clarendon Palace, Henry II wrote down 16 ancient royal customs demanding two-stage justice for guilty churchmen—which Becket refused to seal.",
+                "traits": [
+                  {
+                    "category": "Clause 3 Rule",
+                    "glyph": "law",
+                    "value": "Church Tries Priest → Defrocks Him → King’s Court Punishes"
+                  },
+                  {
+                    "category": "Papal Ban",
+                    "glyph": "language",
+                    "value": "Bishops Barred From Appealing to Rome Without Royal Leave"
+                  },
+                  {
+                    "category": "Becket’s Stand",
+                    "glyph": "leader",
+                    "value": "Refused His Seal: 'God Will Not Judge Twice for One Sin'"
+                  },
+                  {
+                    "category": "Outcome",
+                    "glyph": "people",
+                    "value": "Becket Charged at Northampton & Fled Into 6-Year Exile"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Becket’s View",
+                "label": "Sacred Freedom of the Catholic Church ('Canon Law')",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.2)",
+                "summary": "Archbishop Becket insisted that priests were anointed servants of God under the Pope’s Canon Law—putting secular royal judges below spiritual authority.",
+                "traits": [
+                  {
+                    "category": "Higher Law",
+                    "glyph": "leader",
+                    "value": "Clergy Answered to the Pope & Canon Law, Not Kings"
+                  },
+                  {
+                    "category": "Double Trial",
+                    "glyph": "law",
+                    "value": "Defrocking PLUS Royal Hanging Punished Twice"
+                  },
+                  {
+                    "category": "Weapon Used",
+                    "glyph": "language",
+                    "value": "Excommunicated Bishops & Nobles Loyal to Henry II"
+                  },
+                  {
+                    "category": "1174 Result",
+                    "glyph": "people",
+                    "value": "After Becket’s Martyrdom, Henry Dropped Clause 3"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "block_4",
           "decimal": "[3.4]",
           "title": "Murder in Canterbury Cathedral (1170)",
           "text": "<span class=\"para-ref\">[3.4]</span> Following six years of bitter exile in France, Becket returned to Canterbury in December 1170 and immediately excommunicated bishops who supported Henry. When news reached Normandy at Christmas, the <strong>King Shouts in Fury</strong>: <em>'What miserable drones have I nourished that allow their lord to be treated with such contempt?'</em> Hearing this, <strong>Four Knights Gallop Away</strong> across the icy Channel, bursting into Canterbury Cathedral at dusk on 29 December 1170. When Becket refused to yield, their <strong>Swords Smashed at the Altar</strong>, severing his skull and spraying his brains across the stones.",
-          "image_alt": "The Murder of Thomas Becket in Canterbury Cathedral",
-          "caption": "Four Norman knights assassinating Archbishop Thomas Becket at the altar of Canterbury Cathedral on 29 December 1170.",
+          "image_alt": "Twelfth-century Limoges gilded copper and blue champlevé enamel reliquary casket (châsse) showing four sword-wielding knights striking Archbishop Thomas Becket beside the altar below and his entombment above",
+          "caption": "Limoges champlevé enamel and gilt-copper reliquary châsse of Saint Thomas Becket (c. 1190–1200, British Museum / V&A): The lower panel depicts the four Norman knights striking down Becket beside Canterbury’s altar on 29 December 1170, while angels receive the martyr above.",
           "theme_heading": "Royal Rage & Sacrilege",
           "sources": [
             {
@@ -3817,7 +4407,8 @@
               }
             }
           ],
-          "content": "<span class=\"para-ref\">[3.4]</span> Following six years of bitter exile in France, Becket returned to Canterbury in December 1170 and immediately excommunicated bishops who supported Henry. When news reached Normandy at Christmas, the <strong>King Shouts in Fury</strong>: <em>'What miserable drones have I nourished that allow their lord to be treated with such contempt?'</em> Hearing this, <strong>Four Knights Gallop Away</strong> across the icy Channel, bursting into Canterbury Cathedral at dusk on 29 December 1170. When Becket refused to yield, their <strong>Swords Smashed at the Altar</strong>, severing his skull and spraying his brains across the stones."
+          "content": "<span class=\"para-ref\">[3.4]</span> Following six years of bitter exile in France, Becket returned to Canterbury in December 1170 and immediately excommunicated bishops who supported Henry. When news reached Normandy at Christmas, the <strong>King Shouts in Fury</strong>: <em>'What miserable drones have I nourished that allow their lord to be treated with such contempt?'</em> Hearing this, <strong>Four Knights Gallop Away</strong> across the icy Channel, bursting into Canterbury Cathedral at dusk on 29 December 1170. When Becket refused to yield, their <strong>Swords Smashed at the Altar</strong>, severing his skull and spraying his brains across the stones.",
+          "image": "/images/ks3_med7/med7_l3_b3_becket_limoges_reliquary_chasse.jpg"
         },
         {
           "id": "block_5",
@@ -3825,18 +4416,18 @@
           "title": "Barefoot Royal Penance & Papal Compromise (1174)",
           "text": "<span class=\"para-ref\">[3.5]</span> Becket’s brutal assassination horrified Christian Europe. Pope Alexander III canonised him as a martyr within three years, and pilgrims flooded Canterbury seeking miraculous cures after sensational reports of <strong>Miracles at the Tomb</strong>. Facing papal interdict, rebellions, and personal torment, Henry performed abject penance in July 1174: he walked barefoot through Canterbury’s streets and knelt before Becket’s shrine, suffering public <strong>Whipping with Birch Rods</strong> by eighty monks. In the eventual compromise, <strong>Church Courts Kept Intact</strong> their privileges, preserving clerical immunity for centuries.",
           "image": "/images/medieval_england/plate_3_2_henry_ii_penance_becket.jpg",
-          "image_alt": "Henry II Barefoot Penance at Canterbury",
-          "caption": "King Henry II submitting to scourging by monks at Becket’s tomb in July 1174.",
+          "image_alt": "Nineteenth-century engraving showing bare-backed, barefoot King Henry II kneeling in repentance before Thomas Becket’s stone tomb in Canterbury Cathedral as monks raise birch scourges",
+          "caption": "King Henry II’s barefoot public penance at Canterbury Cathedral (12 July 1174): Stripped to a woollen penitent’s tunic, Henry knelt at Thomas Becket’s shrine to be whipped by eighty Canterbury monks, forcing the Crown to abandon trials of criminous clerks.",
           "theme_heading": "Martyrdom & Royal Humiliation",
           "sources": [
             {
               "id": "medieval_england_l3_src_e",
               "letter": "E",
               "type": "visual",
-              "src": "/images/medieval_england/source_b_becket_murder_cathedral.jpg",
-              "image": "/images/medieval_england/source_b_becket_murder_cathedral.jpg",
+              "src": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
+              "image": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
               "title": "Source E: The Murder of Thomas Becket in Canterbury Cathedral (Harley MS 5102, c. 1250)",
-              "caption": "Illuminated manuscript miniature (British Library Harley MS 5102, f. 32r): Four Norman knights striking down Archbishop Becket before the altar of Canterbury Cathedral on 29 December 1170.",
+              "caption": "Martyrdom of Archbishop Thomas Becket in Canterbury Cathedral (Psalter illumination, c. 1220, British Library Harley MS 5102, f. 32): Four mail-clad knights—Reginald FitzUrse, Hugh de Morville, William de Tracy, and Richard le Breton—strike kneeling Becket before the altar as wounded clerk Edward Grim raises the cross.",
               "author": "English Monastic Illuminator",
               "date": "c. 1250",
               "question_badge": "MARTYRDOM & SACRILEGE",
@@ -3847,7 +4438,8 @@
               "teacher_notes": {
                 "hinge_question": "Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?",
                 "source_context": "On 29 December 1170, four royal knights butchered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?"
-              }
+              },
+              "image_alt": "Full-folio early thirteenth-century illumination from British Library Harley MS 5102 f. 32 showing four mail-clad knights striking kneeling Archbishop Thomas Becket on the head with swords before the altar while clerk Edward Grim holds the cross"
             }
           ],
           "content": "<span class=\"para-ref\">[3.5]</span> Becket’s brutal assassination horrified Christian Europe. Pope Alexander III canonised him as a martyr within three years, and pilgrims flooded Canterbury seeking miraculous cures after sensational reports of <strong>Miracles at the Tomb</strong>. Facing papal interdict, rebellions, and personal torment, Henry performed abject penance in July 1174: he walked barefoot through Canterbury’s streets and knelt before Becket’s shrine, suffering public <strong>Whipping with Birch Rods</strong> by eighty monks. In the eventual compromise, <strong>Church Courts Kept Intact</strong> their privileges, preserving clerical immunity for centuries."
@@ -4380,10 +4972,10 @@
           "id": "medieval_england_l3_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/medieval_england/source_b_becket_murder_cathedral.jpg",
-          "image": "/images/medieval_england/source_b_becket_murder_cathedral.jpg",
+          "src": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
+          "image": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
           "title": "Source E: The Murder of Thomas Becket in Canterbury Cathedral (Harley MS 5102, c. 1250)",
-          "caption": "Illuminated manuscript miniature (British Library Harley MS 5102, f. 32r): Four Norman knights striking down Archbishop Becket before the altar of Canterbury Cathedral on 29 December 1170.",
+          "caption": "Martyrdom of Archbishop Thomas Becket in Canterbury Cathedral (Psalter illumination, c. 1220, British Library Harley MS 5102, f. 32): Four mail-clad knights—Reginald FitzUrse, Hugh de Morville, William de Tracy, and Richard le Breton—strike kneeling Becket before the altar as wounded clerk Edward Grim raises the cross.",
           "author": "English Monastic Illuminator",
           "date": "c. 1250",
           "question_badge": "MARTYRDOM & SACRILEGE",
@@ -4395,7 +4987,8 @@
             "hinge_question": "Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?",
             "source_context": "On 29 December 1170, four royal knights butchered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?"
           },
-          "source_context": "On 29 December 1170, knights Reginald FitzUrse, Hugh de Moreville, William de Tracy, and Richard le Breton murdered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?"
+          "source_context": "On 29 December 1170, knights Reginald FitzUrse, Hugh de Moreville, William de Tracy, and Richard le Breton murdered Becket inside Canterbury Cathedral. **Hinge Question:** Did Henry II's famous outburst ('Will no one rid me of this turbulent priest?') make him morally guilty of murder?",
+          "image_alt": "Full-folio early thirteenth-century illumination from British Library Harley MS 5102 f. 32 showing four mail-clad knights striking kneeling Archbishop Thomas Becket on the head with swords before the altar while clerk Edward Grim holds the cross"
         }
       ],
       "quiz": [
@@ -4925,7 +5518,7 @@
             "badge": "Stage 4",
             "heading": "Swords at Canterbury’s Altar",
             "date": "29 Dec 1170",
-            "img": "/images/medieval_england/source_b_becket_murder_cathedral.jpg",
+            "img": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
             "mode": "contain-light",
             "stat": "Four Knights Hack Becket Dead in the Cathedral",
             "html": "When Becket returned and punished royal bishops, <strong>Henry shouted in fury</strong>. Hearing him, <strong>four knights</strong> galloped to <strong>Canterbury Cathedral</strong> and killed Becket at the altar.",
@@ -4985,7 +5578,7 @@
       "enquiry": "Was Magna Carta a revolutionary victory for human freedom or a selfish act of baronial extortion?",
       "subtitle": "Scutage, Royal Autocracy, and the Meadow of Runnymede",
       "skill": "Historical Interpretation: Liberty vs Self-Interest",
-      "card_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
+      "card_image": "/images/ks3_med7/med7_l4_card_runnymede_magna_carta_monument.jpg",
       "card_position": "center 20%",
       "banner": {
         "image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
@@ -5194,9 +5787,9 @@
           "act": 1,
           "title": "‘Softsword’ & The Loss of Normandy (1199–1204)",
           "text": "<span class=\"para-ref\">[4.1]</span> When King John inherited the Angevin Empire in 1199, he succeeded his heroic elder brother, Richard the Lionheart. But while Richard had spent England’s wealth on crusades, John was an administrative micromanager who lacked military genius. In 1204, King Philip II of France outmanoeuvred John and captured Normandy—the ancestral homeland of the English aristocracy. Mocked by his barons as \"John Softsword,\" John spent the next decade obsessively raising astronomical sums of money to finance an army to win Normandy back, pushing royal feudal taxation to breaking point.",
-          "image": "/images/upgraded/ks3-early/med_l4_b0_king_john_matthew_paris_f9.jpg",
-          "image_alt": "Illuminated royal portraits by Matthew Paris showing Richard the Lionheart above and King John below in British Library Royal MS 14 C. VII",
-          "caption": "Royal portraits in Matthew Paris’s Historia Anglorum (c. 1250–1259, British Library Royal MS 14 C. VII, fol. 9r), contrasting warrior-crusader Richard I (top right) with King John (bottom left), whose 1204 loss of Normandy triggered relentless fiscal extortion.",
+          "image": "/images/ks3_med7/med7_l4_b0_chateau_gaillard_normandy_1204.jpg",
+          "image_alt": "Ruined circular limestone keep and chalk cliffs of Château Gaillard towering high above the green banks of the River Seine at Les Andelys in Normandy",
+          "caption": "Ruins of Château Gaillard overlooking the River Seine at Les Andelys, Normandy: Built by Richard the Lionheart, its fall to King Philip II of France in March 1204 sealed King John’s loss of Normandy and earned him the humiliating nickname \"Softsword\".",
           "isReversed": false,
           "sources": [
             {
@@ -5251,10 +5844,10 @@
               "id": "medieval_england_l4_src_b",
               "letter": "B",
               "type": "visual",
-              "src": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
-              "image": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+              "src": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
+              "image": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
               "title": "Source B: Contemporary Fresco Portrait of Pope Innocent III (Sacro Speco, Subiaco, c. 1219)",
-              "caption": "Fresco of Pope Innocent III, who placed England under Papal Interdict (1208–1213) and excommunicated King John before annulling Magna Carta in August 1215.",
+              "caption": "Contemporary fresco portrait of Pope Innocent III (c. 1219, Monastery of Sacro Speco, Subiaco, Italy): The formidable pontiff who placed King John’s England under the 1208–1213 Papal Interdict, accepted England as a papal fief, and later annulled Magna Carta.",
               "author": "Italian Monastic Painter",
               "date": "c. 1219",
               "question_badge": "AUTHORITY & PAPAL INTERVENTION",
@@ -5265,17 +5858,18 @@
               "teacher_notes": {
                 "hinge_question": "Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?",
                 "source_context": "Pope Innocent III placed England under interdict, forcing John to surrender his crown as a papal fief. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?"
-              }
+              },
+              "image_alt": "Contemporary early thirteenth-century wall fresco at the Monastery of Sacro Speco in Subiaco showing Pope Innocent III wearing the conical papal tiara and red-and-white pallium marked with black crosses"
             }
           ],
           "source": {
             "id": "medieval_england_l4_src_b",
             "letter": "B",
             "type": "visual",
-            "src": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
-            "image": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+            "src": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
+            "image": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
             "title": "Source B: Contemporary Fresco Portrait of Pope Innocent III (Sacro Speco, Subiaco, c. 1219)",
-            "caption": "Fresco of Pope Innocent III, who placed England under Papal Interdict (1208–1213) and excommunicated King John before annulling Magna Carta in August 1215.",
+            "caption": "Contemporary fresco portrait of Pope Innocent III (c. 1219, Monastery of Sacro Speco, Subiaco, Italy): The formidable pontiff who placed King John’s England under the 1208–1213 Papal Interdict, accepted England as a papal fief, and later annulled Magna Carta.",
             "author": "Italian Monastic Painter",
             "date": "c. 1219",
             "question_badge": "AUTHORITY & PAPAL INTERVENTION",
@@ -5286,9 +5880,13 @@
             "teacher_notes": {
               "hinge_question": "Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?",
               "source_context": "Pope Innocent III placed England under interdict, forcing John to surrender his crown as a papal fief. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?"
-            }
+            },
+            "image_alt": "Contemporary early thirteenth-century wall fresco at the Monastery of Sacro Speco in Subiaco showing Pope Innocent III wearing the conical papal tiara and red-and-white pallium marked with black crosses"
           },
-          "content": "<span class=\"para-ref\">[4.2]</span> John’s financial desperation led him into a catastrophic feud with Pope Innocent III over who should appoint the next Archbishop of Canterbury. When John refused to accept Stephen Langton, the Pope placed England under an <strong>Interdict</strong> in 1208. For five agonizing years, church doors were locked, church bells fell silent, babies could not be baptized in church, and the dead were buried in unhallowed ditches. John retaliated by confiscating all church lands and revenues, pocketing over £100,000. In 1209, the Pope excommunicated John. To avoid a French invasion, John capitulated in 1213: he surrendered England as a papal fiefdom, agreeing to pay the Pope an annual tribute of 1,000 marks."
+          "content": "<span class=\"para-ref\">[4.2]</span> John’s financial desperation led him into a catastrophic feud with Pope Innocent III over who should appoint the next Archbishop of Canterbury. When John refused to accept Stephen Langton, the Pope placed England under an <strong>Interdict</strong> in 1208. For five agonizing years, church doors were locked, church bells fell silent, babies could not be baptized in church, and the dead were buried in unhallowed ditches. John retaliated by confiscating all church lands and revenues, pocketing over £100,000. In 1209, the Pope excommunicated John. To avoid a French invasion, John capitulated in 1213: he surrendered England as a papal fiefdom, agreeing to pay the Pope an annual tribute of 1,000 marks.",
+          "image": "/images/ks3_med7/med7_l4_b1_king_john_crown_pandulf_1213.jpg",
+          "image_alt": "Sixteenth-century woodcut titled King Iohn offering his Crowne to Pandulphus, Legate showing King John on his knees handing the royal crown of England to enthroned Papal Legate Pandulf before bishops and nobles",
+          "caption": "King John Offering His Crown to Papal Legate Pandulf (woodcut from John Foxe’s Actes and Monuments, 1563): After five years under Pope Innocent III’s 1208 Interdict and 1209 excommunication, John knelt in May 1213 to surrender England as a papal fief paying 1,000 marks a year."
         },
         {
           "act": 3,
@@ -5336,25 +5934,28 @@
               "source_context": "John affixed his Great Seal to the Articles of the Barons at Runnymede under military duress. **Hinge Question:** Can an agreement signed under military coercion ever be considered legally binding?"
             }
           },
-          "content": "<span class=\"para-ref\">[4.3]</span> John’s gamble collapsed in July 1214 at the Battle of Bouvines in Flanders. John’s expensive coalition of mercenaries was smashed by the French king, and John’s dream of reconquering Normandy was permanently extinguished. When John returned to England demanding yet another crushing <strong>scutage</strong> tax from barons who had refused to fight in France, the aristocracy revolted. Led by Robert Fitzwalter—who styled himself \"Marshal of the Army of God\"—a coalition of northern and eastern barons renounced their feudal homage, marched south, and captured the city of London in May 1215. Cornered and bankrupt, John was forced to negotiate."
+          "content": "<span class=\"para-ref\">[4.3]</span> John’s gamble collapsed in July 1214 at the Battle of Bouvines in Flanders. John’s expensive coalition of mercenaries was smashed by the French king, and John’s dream of reconquering Normandy was permanently extinguished. When John returned to England demanding yet another crushing <strong>scutage</strong> tax from barons who had refused to fight in France, the aristocracy revolted. Led by Robert Fitzwalter—who styled himself \"Marshal of the Army of God\"—a coalition of northern and eastern barons renounced their feudal homage, marched south, and captured the city of London in May 1215. Cornered and bankrupt, John was forced to negotiate.",
+          "image": "/images/ks3_med7/med7_l4_b2_battle_of_bouvines_1214.jpg",
+          "image_alt": "Horace Vernet oil painting of the Battle of Bouvines on 27 July 1214 showing French King Philip II Augustus in fleur-de-lis surcoat beside a crown-topped altar rallying armoured knights on horseback",
+          "caption": "Horace Vernet, The Battle of Bouvines, 27 July 1214 (1827, Palace of Versailles): King Philip II Augustus’s crushing victory in Flanders destroyed King John’s expensive mercenary coalition, ending hopes of regaining Normandy and sparking the 1215 baronial revolt."
         },
         {
           "act": 4,
           "title": "The Clauses of Runnymede (15 June 1215)",
           "text": "<span class=\"para-ref\">[4.4]</span> On 15 June 1215, in the water-meadow of <strong>Runnymede</strong> beside the River Thames near Windsor, King John met the armed rebel barons. John affixed the Great Seal of England to a parchment document comprising 63 revolutionary clauses: <strong>Magna Carta</strong> (The Great Charter). The charter curtailed royal autocracy: it stopped the king from seizing baronial lands, protected widows from forced remarriages, standardized weights and measures, and prohibited arbitrary taxation without baronial consent. Crucially, <strong>Clause 39</strong> established the foundational bedrock of English common law: <em>\"No free man shall be seized or imprisoned... except by the lawful judgement of his equals or by the law of the land.\"</em>",
-          "image": "/images/medieval_england/plate_4_2_king_john_runnymede.jpg",
-          "image_alt": "Illustration of King John granting Magna Carta to the armed barons at Runnymede",
-          "caption": "King John granting the Great Charter to the confederated barons at Runnymede on 15 June 1215. Faced with armed rebellion and the loss of London, John conceded sixty-three legal clauses establishing that the monarch's will remained subject to customary law.",
+          "image": "/images/ks3_med7/med7_l4_b3_king_john_magna_carta_runnymede_1215.jpg",
+          "image_alt": "1864 colour wood-engraving by James William Edmund Doyle and Edmund Evans showing King John seated in crimson mantle at a cloth-draped table at Runnymede affixing his assent to Magna Carta before Archbishop Stephen Langton and mail-clad rebel barons",
+          "caption": "James William Edmund Doyle, John Signs the Great Charter (A Chronicle of England, 1864): Surrounded by armed rebel barons led by Robert Fitzwalter and Archbishop Stephen Langton at Runnymede on 15 June 1215, King John grants the 63 clauses of Magna Carta.",
           "isReversed": true,
           "sources": [
             {
               "id": "medieval_england_l4_src_d",
               "letter": "D",
               "type": "visual",
-              "src": "/images/medieval_england/source_b_magna_carta_1215.jpg",
-              "image": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+              "src": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
+              "image": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
               "title": "Source D: Magna Carta Parchment Exemplar: Clauses 39 and 40 (15 June 1215)",
-              "caption": "The 1215 Magna Carta (British Library Cotton MS Augustus II. 106). In Clause 39, John promises no free man shall be seized or stripped of property except by lawful judgement of his equals.",
+              "caption": "Original 15 June 1215 sheepskin parchment exemplar of Magna Carta (British Library Cotton MS Augustus II.106): One of only four surviving 1215 exemplars sealed at Runnymede, recording Clauses 39 and 40 subjecting the English monarch to the law of the land.",
               "author": "Baronial Draftsmen and Royal Chancery Clerks",
               "date": "15 June 1215",
               "question_badge": "RULE OF LAW & CONSTITUTIONAL LIMITS",
@@ -5365,17 +5966,18 @@
               "teacher_notes": {
                 "hinge_question": "Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?",
                 "source_context": "Clauses 39 and 40 established that the King is bound by the law and due process. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?"
-              }
+              },
+              "image_alt": "High-resolution photograph of the original 15 June 1215 Latin sheepskin parchment exemplar of Magna Carta (British Library Cotton MS Augustus II.106) densely inscribed in iron-gall chancery script"
             }
           ],
           "source": {
             "id": "medieval_england_l4_src_d",
             "letter": "D",
             "type": "visual",
-            "src": "/images/medieval_england/source_b_magna_carta_1215.jpg",
-            "image": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+            "src": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
+            "image": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
             "title": "Source D: Magna Carta Parchment Exemplar: Clauses 39 and 40 (15 June 1215)",
-            "caption": "The 1215 Magna Carta (British Library Cotton MS Augustus II. 106). In Clause 39, John promises no free man shall be seized or stripped of property except by lawful judgement of his equals.",
+            "caption": "Original 15 June 1215 sheepskin parchment exemplar of Magna Carta (British Library Cotton MS Augustus II.106): One of only four surviving 1215 exemplars sealed at Runnymede, recording Clauses 39 and 40 subjecting the English monarch to the law of the land.",
             "author": "Baronial Draftsmen and Royal Chancery Clerks",
             "date": "15 June 1215",
             "question_badge": "RULE OF LAW & CONSTITUTIONAL LIMITS",
@@ -5386,7 +5988,8 @@
             "teacher_notes": {
               "hinge_question": "Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?",
               "source_context": "Clauses 39 and 40 established that the King is bound by the law and due process. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?"
-            }
+            },
+            "image_alt": "High-resolution photograph of the original 15 June 1215 Latin sheepskin parchment exemplar of Magna Carta (British Library Cotton MS Augustus II.106) densely inscribed in iron-gall chancery script"
           },
           "content": "<span class=\"para-ref\">[4.4]</span> On 15 June 1215, in the water-meadow of <strong>Runnymede</strong> beside the River Thames near Windsor, King John met the armed rebel barons. John affixed the Great Seal of England to a parchment document comprising 63 revolutionary clauses: <strong>Magna Carta</strong> (The Great Charter). The charter curtailed royal autocracy: it stopped the king from seizing baronial lands, protected widows from forced remarriages, standardized weights and measures, and prohibited arbitrary taxation without baronial consent. Crucially, <strong>Clause 39</strong> established the foundational bedrock of English common law: <em>\"No free man shall be seized or imprisoned... except by the lawful judgement of his equals or by the law of the land.\"</em>"
         },
@@ -5399,10 +6002,10 @@
               "id": "medieval_england_l4_src_e",
               "letter": "E",
               "type": "visual",
-              "src": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
-              "image": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
+              "src": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
+              "image": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
               "title": "Source E: Ruined Great Keep of Rochester Castle Undermined by King John (1215)",
-              "caption": "Interior and breached south-east corner of the Norman keep at Rochester Castle, Kent, destroyed when King John mined the corner and burned the props with the fat of 40 bacon pigs.",
+              "caption": "The Great Keep of Rochester Castle in Kent: Besieged by King John in autumn 1215 after Pope Innocent III annulled Magna Carta—note the round turret rebuilt where John’s sappers collapsed the square south-east corner using the fat of forty pigs.",
               "author": "Norman Military Builders / Destruction ordered by King John",
               "date": "October–November 1215",
               "question_badge": "MILITARY RETRIBUTION & FIRST BARONS WAR",
@@ -5413,17 +6016,18 @@
               "teacher_notes": {
                 "hinge_question": "Why did Magna Carta immediately plunge England into civil war rather than establishing peace?",
                 "source_context": "Within months of Runnymede, John mined Rochester Castle, triggering the First Barons' War. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
-              }
+              },
+              "image_alt": "Exterior view of the towering twelfth-century stone Great Keep of Rochester Castle in Kent showing its square Norman turrets alongside the rebuilt cylindrical turret where King John undermined the corner in 1215"
             }
           ],
           "source": {
             "id": "medieval_england_l4_src_e",
             "letter": "E",
             "type": "visual",
-            "src": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
-            "image": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
+            "src": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
+            "image": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
             "title": "Source E: Ruined Great Keep of Rochester Castle Undermined by King John (1215)",
-            "caption": "Interior and breached south-east corner of the Norman keep at Rochester Castle, Kent, destroyed when King John mined the corner and burned the props with the fat of 40 bacon pigs.",
+            "caption": "The Great Keep of Rochester Castle in Kent: Besieged by King John in autumn 1215 after Pope Innocent III annulled Magna Carta—note the round turret rebuilt where John’s sappers collapsed the square south-east corner using the fat of forty pigs.",
             "author": "Norman Military Builders / Destruction ordered by King John",
             "date": "October–November 1215",
             "question_badge": "MILITARY RETRIBUTION & FIRST BARONS WAR",
@@ -5434,9 +6038,13 @@
             "teacher_notes": {
               "hinge_question": "Why did Magna Carta immediately plunge England into civil war rather than establishing peace?",
               "source_context": "Within months of Runnymede, John mined Rochester Castle, triggering the First Barons' War. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
-            }
+            },
+            "image_alt": "Exterior view of the towering twelfth-century stone Great Keep of Rochester Castle in Kent showing its square Norman turrets alongside the rebuilt cylindrical turret where King John undermined the corner in 1215"
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Magna Carta brought immediate war rather than peace when Pope tears up the treaty at King John’s request. Furious barons launched a rebellion, with a French prince invited in as Prince Louis marched troops into London to claim the English crown.</p><p class=\"prose-p\">John waged a scorched-earth campaign until disaster struck, famously leaving the crown jewels lost in the Wash tidal estuary. John’s sudden death in October 1216 allowed the legendary William Marshal to reissue Magna Carta, securing the crown for nine-year-old Henry III.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Magna Carta brought immediate war rather than peace when Pope tears up the treaty at King John’s request. Furious barons launched a rebellion, with a French prince invited in as Prince Louis marched troops into London to claim the English crown.</p><p class=\"prose-p\">John waged a scorched-earth campaign until disaster struck, famously leaving the crown jewels lost in the Wash tidal estuary. John’s sudden death in October 1216 allowed the legendary William Marshal to reissue Magna Carta, securing the crown for nine-year-old Henry III.</p>",
+          "image": "/images/ks3_med7/med7_l4_b4_dover_castle_barons_war_1216.jpg",
+          "image_alt": "Massive square twelfth-century ragstone Great Tower keep and corner turrets of Dover Castle standing beneath a clear blue sky in Kent",
+          "caption": "The Great Tower Keep of Dover Castle, Kent: Besieged by French Prince Louis and rebel barons during the 1216 First Barons’ War after Pope Innocent III annulled Magna Carta, before King John’s death allowed regent William Marshal to reissue the charter for nine-year-old Henry III."
         }
       ],
       "tasks": [
@@ -5900,10 +6508,10 @@
           "id": "medieval_england_l4_src_b",
           "letter": "B",
           "type": "visual",
-          "src": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
-          "image": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+          "src": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
+          "image": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
           "title": "Source B: Contemporary Fresco Portrait of Pope Innocent III (Sacro Speco, Subiaco, c. 1219)",
-          "caption": "Fresco of Pope Innocent III, who placed England under Papal Interdict (1208–1213) and excommunicated King John before annulling Magna Carta in August 1215.",
+          "caption": "Contemporary fresco portrait of Pope Innocent III (c. 1219, Monastery of Sacro Speco, Subiaco, Italy): The formidable pontiff who placed King John’s England under the 1208–1213 Papal Interdict, accepted England as a papal fief, and later annulled Magna Carta.",
           "author": "Italian Monastic Painter",
           "date": "c. 1219",
           "question_badge": "AUTHORITY & PAPAL INTERVENTION",
@@ -5915,7 +6523,8 @@
             "hinge_question": "Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?",
             "source_context": "Pope Innocent III placed England under interdict, forcing John to surrender his crown as a papal fief. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?"
           },
-          "source_context": "When John refused Innocent's appointee Stephen Langton as Archbishop of Canterbury, Innocent subjected England to a devastating papal interdict. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?"
+          "source_context": "When John refused Innocent's appointee Stephen Langton as Archbishop of Canterbury, Innocent subjected England to a devastating papal interdict. **Hinge Question:** Why was John forced to surrender his entire kingdom to the Pope as a vassal state in 1213?",
+          "image_alt": "Contemporary early thirteenth-century wall fresco at the Monastery of Sacro Speco in Subiaco showing Pope Innocent III wearing the conical papal tiara and red-and-white pallium marked with black crosses"
         },
         {
           "id": "medieval_england_l4_src_c",
@@ -5942,10 +6551,10 @@
           "id": "medieval_england_l4_src_d",
           "letter": "D",
           "type": "visual",
-          "src": "/images/medieval_england/source_b_magna_carta_1215.jpg",
-          "image": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+          "src": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
+          "image": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
           "title": "Source D: Magna Carta Parchment Exemplar: Clauses 39 and 40 (15 June 1215)",
-          "caption": "The 1215 Magna Carta (British Library Cotton MS Augustus II. 106). In Clause 39, John promises no free man shall be seized or stripped of property except by lawful judgement of his equals.",
+          "caption": "Original 15 June 1215 sheepskin parchment exemplar of Magna Carta (British Library Cotton MS Augustus II.106): One of only four surviving 1215 exemplars sealed at Runnymede, recording Clauses 39 and 40 subjecting the English monarch to the law of the land.",
           "author": "Baronial Draftsmen and Royal Chancery Clerks",
           "date": "15 June 1215",
           "question_badge": "RULE OF LAW & CONSTITUTIONAL LIMITS",
@@ -5957,16 +6566,17 @@
             "hinge_question": "Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?",
             "source_context": "Clauses 39 and 40 established that the King is bound by the law and due process. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?"
           },
-          "source_context": "Issued at Runnymede on 15 June 1215, Magna Carta contained 63 clauses restricting royal feudal extortion and establishing trial by jury of peers. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?"
+          "source_context": "Issued at Runnymede on 15 June 1215, Magna Carta contained 63 clauses restricting royal feudal extortion and establishing trial by jury of peers. **Hinge Question:** Was Magna Carta a selfish power-grab by wealthy barons or a genuine foundation of universal liberty?",
+          "image_alt": "High-resolution photograph of the original 15 June 1215 Latin sheepskin parchment exemplar of Magna Carta (British Library Cotton MS Augustus II.106) densely inscribed in iron-gall chancery script"
         },
         {
           "id": "medieval_england_l4_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
-          "image": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
+          "src": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
+          "image": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
           "title": "Source E: Ruined Great Keep of Rochester Castle Undermined by King John (1215)",
-          "caption": "Interior and breached south-east corner of the Norman keep at Rochester Castle, Kent, destroyed when King John mined the corner and burned the props with the fat of 40 bacon pigs.",
+          "caption": "The Great Keep of Rochester Castle in Kent: Besieged by King John in autumn 1215 after Pope Innocent III annulled Magna Carta—note the round turret rebuilt where John’s sappers collapsed the square south-east corner using the fat of forty pigs.",
           "author": "Norman Military Builders / Destruction ordered by King John",
           "date": "October–November 1215",
           "question_badge": "MILITARY RETRIBUTION & FIRST BARONS WAR",
@@ -5978,7 +6588,8 @@
             "hinge_question": "Why did Magna Carta immediately plunge England into civil war rather than establishing peace?",
             "source_context": "Within months of Runnymede, John mined Rochester Castle, triggering the First Barons' War. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
           },
-          "source_context": "In autumn 1215, rebel barons occupied Rochester Castle. John besieged it for seven weeks, mining beneath the south-east tower and starving the garrison into surrender. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?"
+          "source_context": "In autumn 1215, rebel barons occupied Rochester Castle. John besieged it for seven weeks, mining beneath the south-east tower and starving the garrison into surrender. **Hinge Question:** Why did Magna Carta immediately plunge England into civil war rather than establishing peace?",
+          "image_alt": "Exterior view of the towering twelfth-century stone Great Keep of Rochester Castle in Kent showing its square Norman turrets alongside the rebuilt cylindrical turret where King John undermined the corner in 1215"
         }
       ],
       "quiz": [
@@ -6458,7 +7069,7 @@
         "topicLabel": "Enquiry 04: Magna Carta (1215) & Medieval Kingship (1199–1216)",
         "title": "Why Did Rebel Barons Force King John to Seal Magna Carta in 1215?",
         "spokenTitle": "Why did rebel barons force King John to seal Magna Carta in 1215?",
-        "thumbUrl": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+        "thumbUrl": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
         "provenanceNote": "British Library Manuscripts, Worcester Cathedral, English Heritage & Sacro Speco Subiaco (Zero AI Imagery)",
         "bridges": [
           "Churches Locked",
@@ -6484,7 +7095,7 @@
             "badge": "Stage 2",
             "heading": "Five Years of Silent Churches",
             "date": "1208–1213",
-            "img": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+            "img": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
             "mode": "contain",
             "stat": "1208 Interdict Locks Every English Parish Church",
             "html": "Quarrelling with <strong>Pope Innocent III</strong>, John brought a five-year <strong>Interdict</strong> on England: church doors stayed locked and bells fell silent until <strong>John backed down</strong>.",
@@ -6508,7 +7119,7 @@
             "badge": "Stage 4",
             "heading": "Sixty-Three Rules at Runnymede",
             "date": "15 June 1215",
-            "img": "/images/medieval_england/source_b_magna_carta_1215.jpg",
+            "img": "/images/ks3_med7/med7_l4_s3_magna_carta_1215_cotton_augustus.jpg",
             "mode": "contain-light",
             "stat": "Clause 39: No Prison Without Fair Lawful Trial",
             "html": "Cornered at <strong>Runnymede</strong>, John sealed <strong>Magna Carta</strong>. It banned unfair taxes, while <strong>Clause 39</strong> promised no free man could be jailed without lawful trial.",
@@ -6520,7 +7131,7 @@
             "badge": "Stage 5",
             "heading": "Broken Charter and Civil War",
             "date": "1215–Oct 1216",
-            "img": "/images/medieval_england/source_e_rochester_castle_keep.jpg",
+            "img": "/images/ks3_med7/med7_l4_s4_rochester_castle_keep_ruins.jpg",
             "mode": "contain",
             "stat": "Pope Voids Charter; Rebels Invite French Prince",
             "html": "Peace lasted weeks: John persuaded the Pope to tear up the charter, sparking <strong>baronial civil war</strong> and a French invasion until <strong>John died</strong> in October 1216.",
@@ -6568,7 +7179,7 @@
       "enquiry": "How did the demographic shock of the Black Death lead to the peasant uprising of 1381?",
       "subtitle": "Yersinia Pestis, The Statute of Labourers, and the Storming of London",
       "skill": "Causal Links & Socio-Economic Change",
-      "card_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
+      "card_image": "/images/ks3_med7/med7_l5_card_luttrell_psalter_manor_mill.jpg",
       "card_position": "center 20%",
       "banner": {
         "image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
@@ -6778,19 +7389,19 @@
           "decimal": "[5.1]",
           "title": "Arrival of the Plague at Melcombe Regis (1348)",
           "text": "<span class=\"para-ref\">[5.1]</span> In June 1348, the Black Death landed on English shores when a <strong>Sailor Ship at Weymouth</strong> (Melcombe Regis) carried plague-carrying fleas from Gascony. The pandemic spread with terrifying speed. Victims developed agonizing egg-sized black swelling <strong>Buboes Under the Arms</strong> and in the groin, spat dark blood, and suffered acute fever, perishing within three to five days. By 1350, with <strong>Nearly Half the Country Dead</strong>, entire villages lay deserted, churchyards overflowed into mass trenches, and medieval society stood shattered.",
-          "image": "/images/medieval_england/plate_5_1_black_death_burial.jpg",
-          "image_alt": "Black Death Mass Burials",
-          "caption": "Contemporary illustration of mass burials during the catastrophic Black Death of 1348–1350.",
+          "image": "/images/medieval_england/maps/med7_map_l5_black_death_peasants_revolt_1348_81.svg",
+          "image_alt": "KS3 Year 7 two-panel historical GIS map of the Black Death (1348) and the Peasants’ Revolt (1381) showing European merchant trade routes into Melcombe Regis in Dorset and a zoomed Thames Estuary and London inset of Brentwood, Maidstone, Blackheath, Mile End, and Smithfield",
+          "caption": "Reference Map: Arrival of the Black Death (1348) & The Peasants’ Revolt (1381)—charting merchant shipping lanes into Melcombe Regis, Dorset alongside a zoomed Thames Estuary and London inset of the Essex and Kent Poll Tax marches from Brentwood, Maidstone, and Blackheath to Smithfield.",
           "theme_heading": "Demographic Catastrophe",
           "sources": [
             {
               "id": "medieval_england_l5_src_a",
               "letter": "A",
               "type": "written",
-              "src": "/images/medieval_england/source_a_henry_knighton_chronicle.jpg",
-              "image": "/images/medieval_england/source_a_henry_knighton_chronicle.jpg",
+              "src": "/images/upgraded/ks3-early/med_l5_s0_omne_bonum_plague_folio.jpg",
+              "image": "/images/upgraded/ks3-early/med_l5_s0_omne_bonum_plague_folio.jpg",
               "title": "Source A: Chronicle of Henry Knighton on Plague Mortality and Labour Shortages (c. 1395)",
-              "caption": "Extract from Henry Knighton’s Chronicle (British Library Cotton MS Tiberius C. VII), recording catastrophic mortality, unharvested crops, and soaring wage demands following the 1348 plague.",
+              "caption": "Plague Victims Marked With Swollen Spots Blessed by a Bishop (James le Palmer, Omne Bonum, c. 1360–1375, British Library Royal MS 6 E VI, f. 301r): Contemporary fourteenth-century English visual evidence accompanying Henry Knighton’s chronicle of the 1348–1350 Black Death.",
               "author": "Henry Knighton, Augustinian Canon of St Mary de Pratis, Leicester",
               "date": "c. 1395",
               "citation": "Henry Knighton, Chronicon Henrici Knighton (Leicester Abbey, c. 1395), British Library Cotton MS Tiberius C. VII.",
@@ -6803,18 +7414,159 @@
               "teacher_notes": {
                 "hinge_question": "Why did a biological disaster like the plague create economic empowerment for ordinary peasants?",
                 "source_context": "In 1348–1350, the Black Death destroyed half the population, enabling surviving labourers to demand higher wages. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
-              }
+              },
+              "image_alt": "Fourteenth-century English illuminated initial from James le Palmer’s Omne Bonum (BL Royal MS 6 E VI f. 301r, c. 1360–1375) showing four plague victims covered in red-spotted buboes standing before a mitred bishop"
             }
           ],
-          "content": "<span class=\"para-ref\">[5.1]</span> In June 1348, the Black Death landed on English shores when a <strong>Sailor Ship at Weymouth</strong> (Melcombe Regis) carried plague-carrying fleas from Gascony. The pandemic spread with terrifying speed. Victims developed agonizing egg-sized black swelling <strong>Buboes Under the Arms</strong> and in the groin, spat dark blood, and suffered acute fever, perishing within three to five days. By 1350, with <strong>Nearly Half the Country Dead</strong>, entire villages lay deserted, churchyards overflowed into mass trenches, and medieval society stood shattered."
+          "content": "<span class=\"para-ref\">[5.1]</span> In June 1348, the Black Death landed on English shores when a <strong>Sailor Ship at Weymouth</strong> (Melcombe Regis) carried plague-carrying fleas from Gascony. The pandemic spread with terrifying speed. Victims developed agonizing egg-sized black swelling <strong>Buboes Under the Arms</strong> and in the groin, spat dark blood, and suffered acute fever, perishing within three to five days. By 1350, with <strong>Nearly Half the Country Dead</strong>, entire villages lay deserted, churchyards overflowed into mass trenches, and medieval society stood shattered.",
+          "stage_hook_map": {
+            "id": "med7-l5-black-death-peasants-revolt-map",
+            "image": "/images/medieval_england/maps/med7_map_l5_black_death_peasants_revolt_1348_81.svg",
+            "alt": "KS3 Year 7 two-panel historical GIS map of the Black Death (1348) and the Peasants’ Revolt (1381) showing European merchant trade routes into Melcombe Regis in Dorset and a zoomed Thames Estuary and London inset of Brentwood, Maidstone, Blackheath, Mile End, and Smithfield",
+            "caption": "Reference Map: Arrival of the Black Death (1348) & The Peasants’ Revolt (1381)—charting merchant shipping lanes into Melcombe Regis, Dorset alongside a zoomed Thames Estuary and London inset of the Essex and Kent Poll Tax marches from Brentwood, Maidstone, and Blackheath to Smithfield.",
+            "title": "Plague & Rebellion: The Black Death (1348) & Peasants’ Revolt (1381)",
+            "subtitle": "European Trade Ships, Melcombe Regis (1348), Brentwood & Blackheath, Smithfield (1381) · Tap pins 1–4",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 37,
+                "y": 58.3,
+                "color": "#b45309",
+                "label": "1. European Trade Routes (1347–48)",
+                "kicker": "Merchant Galleys & Gascon Ships",
+                "badge": "Merchant Galleys & Gascon Ships",
+                "date": "Oct 1347 – Spring 1348",
+                "title": "European Trade Routes (1347–48): Fleaborne Plague Follows Merchant Shipping",
+                "summary": "Carried by rat fleas aboard merchant galleys from the Black Sea to Messina in Sicily (October 1347), Genoa, and Marseille, the Black Death raced overland and by sea to Bordeaux in English-held Gascony and Calais—turning Europe’s busiest wine and wool trade lanes into highways of contagion.",
+                "body": "Carried by rat fleas aboard merchant galleys from the Black Sea to Messina in Sicily (October 1347), Genoa, and Marseille, the Black Death raced overland and by sea to Bordeaux in English-held Gascony and Calais—turning Europe’s busiest wine and wool trade lanes into highways of contagion.",
+                "details": "Carried by rat fleas aboard merchant galleys from the Black Sea to Messina in Sicily (October 1347), Genoa, and Marseille, the Black Death raced overland and by sea to Bordeaux in English-held Gascony and Calais—turning Europe’s busiest wine and wool trade lanes into highways of contagion.",
+                "hinge": "Why did busy medieval ports like Genoa, Marseille, Bordeaux, and Calais suffer the Black Death first and hardest?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 34.6,
+                "y": 47,
+                "color": "#9f1239",
+                "label": "2. Melcombe Regis, Dorset (June 1348)",
+                "kicker": "~40% Mortality • Labour Shortage",
+                "badge": "~40% Mortality • Labour Shortage",
+                "date": "June 1348 – 1350",
+                "title": "Melcombe Regis, Dorset (June 1348): Arrival of the Black Death in England",
+                "summary": "In June 1348, a ship from Gascony docked at Melcombe Regis (Weymouth) in Dorset, unleashing bubonic and pneumonic plague across Bristol, London, York, and Scotland. Roughly 40% of England’s population died—leaving fields unharvested, giving surviving peasants power to demand higher wages, and prompting lords to pass the 1351 Statute of Labourers.",
+                "body": "In June 1348, a ship from Gascony docked at Melcombe Regis (Weymouth) in Dorset, unleashing bubonic and pneumonic plague across Bristol, London, York, and Scotland. Roughly 40% of England’s population died—leaving fields unharvested, giving surviving peasants power to demand higher wages, and prompting lords to pass the 1351 Statute of Labourers.",
+                "details": "In June 1348, a ship from Gascony docked at Melcombe Regis (Weymouth) in Dorset, unleashing bubonic and pneumonic plague across Bristol, London, York, and Scotland. Roughly 40% of England’s population died—leaving fields unharvested, giving surviving peasants power to demand higher wages, and prompting lords to pass the 1351 Statute of Labourers.",
+                "hinge": "How did the tragic death of ~40% of England’s population unexpectedly give surviving peasant workers new economic power?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 68.3,
+                "y": 39.3,
+                "color": "#5b21b6",
+                "label": "3. Brentwood, Maidstone & Blackheath (May–June 1381)",
+                "kicker": "Poll Tax Spark • Rebel March",
+                "badge": "Poll Tax Spark • Rebel March",
+                "date": "30 May – 13 June 1381",
+                "title": "Brentwood, Maidstone & Blackheath (May–June 1381): Essex & Kent Rise Up",
+                "summary": "Decades of frozen wages boiled over when royal collectors tried to enforce a third flat-rate Poll Tax (twelve pence per adult). On 30 May 1381, Essex villagers at Brentwood chased out tax commissioner John Bampton; Kent rebels led by Wat Tyler freed radical priest John Ball at Maidstone and camped tens of thousands strong at Blackheath.",
+                "body": "Decades of frozen wages boiled over when royal collectors tried to enforce a third flat-rate Poll Tax (twelve pence per adult). On 30 May 1381, Essex villagers at Brentwood chased out tax commissioner John Bampton; Kent rebels led by Wat Tyler freed radical priest John Ball at Maidstone and camped tens of thousands strong at Blackheath.",
+                "details": "Decades of frozen wages boiled over when royal collectors tried to enforce a third flat-rate Poll Tax (twelve pence per adult). On 30 May 1381, Essex villagers at Brentwood chased out tax commissioner John Bampton; Kent rebels led by Wat Tyler freed radical priest John Ball at Maidstone and camped tens of thousands strong at Blackheath.",
+                "hinge": "Why did a flat Poll Tax—charging a poor farm labourer the exact same twelve pence as a wealthy merchant—spark fury in 1381?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 64,
+                "y": 33.9,
+                "color": "#065f46",
+                "label": "4. Smithfield, London (15 June 1381)",
+                "kicker": "Richard II & Wat Tyler",
+                "badge": "Richard II & Wat Tyler",
+                "date": "14–15 June 1381",
+                "title": "Smithfield, London (15 June 1381): Showdown with Boy-King Richard II",
+                "summary": "After rebels entered London, burned hated tax records, and met 14-year-old King Richard II at Mile End, a tense second meeting took place at Smithfield on 15 June 1381. London’s Mayor stabbed Wat Tyler and Richard II later broke his charters of freedom—yet lords dared not pass another Poll Tax, and serfdom steadily crumbled across England.",
+                "body": "After rebels entered London, burned hated tax records, and met 14-year-old King Richard II at Mile End, a tense second meeting took place at Smithfield on 15 June 1381. London’s Mayor stabbed Wat Tyler and Richard II later broke his charters of freedom—yet lords dared not pass another Poll Tax, and serfdom steadily crumbled across England.",
+                "details": "After rebels entered London, burned hated tax records, and met 14-year-old King Richard II at Mile End, a tense second meeting took place at Smithfield on 15 June 1381. London’s Mayor stabbed Wat Tyler and Richard II later broke his charters of freedom—yet lords dared not pass another Poll Tax, and serfdom steadily crumbled across England.",
+                "hinge": "Was the 1381 Peasants’ Revolt a failure because Wat Tyler was killed, or a long-term victory because serfdom and the Poll Tax withered away?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 37,
+                "y": 58.3,
+                "color": "#b45309",
+                "label": "1. European Trade Routes (1347–48)",
+                "kicker": "Merchant Galleys & Gascon Ships",
+                "badge": "Merchant Galleys & Gascon Ships",
+                "date": "Oct 1347 – Spring 1348",
+                "title": "European Trade Routes (1347–48): Fleaborne Plague Follows Merchant Shipping",
+                "summary": "Carried by rat fleas aboard merchant galleys from the Black Sea to Messina in Sicily (October 1347), Genoa, and Marseille, the Black Death raced overland and by sea to Bordeaux in English-held Gascony and Calais—turning Europe’s busiest wine and wool trade lanes into highways of contagion.",
+                "body": "Carried by rat fleas aboard merchant galleys from the Black Sea to Messina in Sicily (October 1347), Genoa, and Marseille, the Black Death raced overland and by sea to Bordeaux in English-held Gascony and Calais—turning Europe’s busiest wine and wool trade lanes into highways of contagion.",
+                "details": "Carried by rat fleas aboard merchant galleys from the Black Sea to Messina in Sicily (October 1347), Genoa, and Marseille, the Black Death raced overland and by sea to Bordeaux in English-held Gascony and Calais—turning Europe’s busiest wine and wool trade lanes into highways of contagion.",
+                "hinge": "Why did busy medieval ports like Genoa, Marseille, Bordeaux, and Calais suffer the Black Death first and hardest?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 34.6,
+                "y": 47,
+                "color": "#9f1239",
+                "label": "2. Melcombe Regis, Dorset (June 1348)",
+                "kicker": "~40% Mortality • Labour Shortage",
+                "badge": "~40% Mortality • Labour Shortage",
+                "date": "June 1348 – 1350",
+                "title": "Melcombe Regis, Dorset (June 1348): Arrival of the Black Death in England",
+                "summary": "In June 1348, a ship from Gascony docked at Melcombe Regis (Weymouth) in Dorset, unleashing bubonic and pneumonic plague across Bristol, London, York, and Scotland. Roughly 40% of England’s population died—leaving fields unharvested, giving surviving peasants power to demand higher wages, and prompting lords to pass the 1351 Statute of Labourers.",
+                "body": "In June 1348, a ship from Gascony docked at Melcombe Regis (Weymouth) in Dorset, unleashing bubonic and pneumonic plague across Bristol, London, York, and Scotland. Roughly 40% of England’s population died—leaving fields unharvested, giving surviving peasants power to demand higher wages, and prompting lords to pass the 1351 Statute of Labourers.",
+                "details": "In June 1348, a ship from Gascony docked at Melcombe Regis (Weymouth) in Dorset, unleashing bubonic and pneumonic plague across Bristol, London, York, and Scotland. Roughly 40% of England’s population died—leaving fields unharvested, giving surviving peasants power to demand higher wages, and prompting lords to pass the 1351 Statute of Labourers.",
+                "hinge": "How did the tragic death of ~40% of England’s population unexpectedly give surviving peasant workers new economic power?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 68.3,
+                "y": 39.3,
+                "color": "#5b21b6",
+                "label": "3. Brentwood, Maidstone & Blackheath (May–June 1381)",
+                "kicker": "Poll Tax Spark • Rebel March",
+                "badge": "Poll Tax Spark • Rebel March",
+                "date": "30 May – 13 June 1381",
+                "title": "Brentwood, Maidstone & Blackheath (May–June 1381): Essex & Kent Rise Up",
+                "summary": "Decades of frozen wages boiled over when royal collectors tried to enforce a third flat-rate Poll Tax (twelve pence per adult). On 30 May 1381, Essex villagers at Brentwood chased out tax commissioner John Bampton; Kent rebels led by Wat Tyler freed radical priest John Ball at Maidstone and camped tens of thousands strong at Blackheath.",
+                "body": "Decades of frozen wages boiled over when royal collectors tried to enforce a third flat-rate Poll Tax (twelve pence per adult). On 30 May 1381, Essex villagers at Brentwood chased out tax commissioner John Bampton; Kent rebels led by Wat Tyler freed radical priest John Ball at Maidstone and camped tens of thousands strong at Blackheath.",
+                "details": "Decades of frozen wages boiled over when royal collectors tried to enforce a third flat-rate Poll Tax (twelve pence per adult). On 30 May 1381, Essex villagers at Brentwood chased out tax commissioner John Bampton; Kent rebels led by Wat Tyler freed radical priest John Ball at Maidstone and camped tens of thousands strong at Blackheath.",
+                "hinge": "Why did a flat Poll Tax—charging a poor farm labourer the exact same twelve pence as a wealthy merchant—spark fury in 1381?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 64,
+                "y": 33.9,
+                "color": "#065f46",
+                "label": "4. Smithfield, London (15 June 1381)",
+                "kicker": "Richard II & Wat Tyler",
+                "badge": "Richard II & Wat Tyler",
+                "date": "14–15 June 1381",
+                "title": "Smithfield, London (15 June 1381): Showdown with Boy-King Richard II",
+                "summary": "After rebels entered London, burned hated tax records, and met 14-year-old King Richard II at Mile End, a tense second meeting took place at Smithfield on 15 June 1381. London’s Mayor stabbed Wat Tyler and Richard II later broke his charters of freedom—yet lords dared not pass another Poll Tax, and serfdom steadily crumbled across England.",
+                "body": "After rebels entered London, burned hated tax records, and met 14-year-old King Richard II at Mile End, a tense second meeting took place at Smithfield on 15 June 1381. London’s Mayor stabbed Wat Tyler and Richard II later broke his charters of freedom—yet lords dared not pass another Poll Tax, and serfdom steadily crumbled across England.",
+                "details": "After rebels entered London, burned hated tax records, and met 14-year-old King Richard II at Mile End, a tense second meeting took place at Smithfield on 15 June 1381. London’s Mayor stabbed Wat Tyler and Richard II later broke his charters of freedom—yet lords dared not pass another Poll Tax, and serfdom steadily crumbled across England.",
+                "hinge": "Was the 1381 Peasants’ Revolt a failure because Wat Tyler was killed, or a long-term victory because serfdom and the Poll Tax withered away?"
+              }
+            ]
+          }
         },
         {
           "id": "block_2",
           "decimal": "[5.2]",
           "title": "Labour Shortage & The Economic Revolution (1349–1351)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> The catastrophic population collapse triggered an unprecedented economic revolution across the English countryside. Entire farming communities stood silent with empty village cottages, while overgrown fields were left abandoned with unharvested wheat rotting on the ground for lack of reapers.</p><p class=\"prose-p\">For the first time in medieval history, surviving peasant labourers possessed immense economic bargaining power. Desperate landowners competed fiercely for workers, resulting in workers demanding double pay and boldly refusing unpaid feudal bondage, permanently shattering centuries of customary manorial control.</p>",
-          "image_alt": "Medieval Agricultural Labourers",
-          "caption": "Peasant labourers reaping wheat; after 1348, surviving workers demanded dramatically higher cash wages.",
+          "image_alt": "Contemporary 1349 medieval manuscript illumination by Pierart dou Tielt showing grieving citizens of Tournai carrying wooden plague coffins on their shoulders and digging crowded burial pits with spades",
+          "caption": "Citizens of Tournai Burying Victims of the Black Death (illuminated by Pierart dou Tielt in Gilles Li Muisis’s Annales, 1349, Bibliothèque royale de Belgique MS 13076–77, f. 24v): Catastrophic 1348–1350 plague mortality emptied villages and created an acute shortage of surviving farm labourers.",
           "theme_heading": "Socio-Economic Upheaval",
           "sources": [
             {
@@ -6838,15 +7590,14 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> The catastrophic population collapse triggered an unprecedented economic revolution across the English countryside. Entire farming communities stood silent with empty village cottages, while overgrown fields were left abandoned with unharvested wheat rotting on the ground for lack of reapers.</p><p class=\"prose-p\">For the first time in medieval history, surviving peasant labourers possessed immense economic bargaining power. Desperate landowners competed fiercely for workers, resulting in workers demanding double pay and boldly refusing unpaid feudal bondage, permanently shattering centuries of customary manorial control.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> The catastrophic population collapse triggered an unprecedented economic revolution across the English countryside. Entire farming communities stood silent with empty village cottages, while overgrown fields were left abandoned with unharvested wheat rotting on the ground for lack of reapers.</p><p class=\"prose-p\">For the first time in medieval history, surviving peasant labourers possessed immense economic bargaining power. Desperate landowners competed fiercely for workers, resulting in workers demanding double pay and boldly refusing unpaid feudal bondage, permanently shattering centuries of customary manorial control.</p>",
+          "image": "/images/ks3_med7/med7_l5_b1_tournai_black_death_coffins_1349.jpg"
         },
         {
           "id": "block_3",
           "decimal": "[5.3]",
           "title": "The Statute of Labourers & Sumptuary Resistance (1351–1363)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Outraged by rising wages and their loss of feudal control, the landowner-dominated Parliament struck back decisively. The 1351 Statute of Labourers decreed that wages frozen by lords must remain strictly at pre-plague levels, making wage negotiation a punishable crime.</p><p class=\"prose-p\">Runaway serfs faced imprisonment and having an iron \"F\" burned on foreheads for falsity to brand them as fugitive outlaws. Furthermore, 1363 Sumptuary Laws ensured commoners were banned from wearing fur, silk, or fine dyed cloth, entrenching bitter social resentment that exploded in rebellion thirty years later.</p>",
-          "image_alt": "Statute of Labourers 1351",
-          "caption": "The parliamentary statute attempting to freeze peasant wages and enforce feudal servitude.",
           "theme_heading": "Feudal Retaliation & Repression",
           "sources": [
             {
@@ -6870,7 +7621,108 @@
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Outraged by rising wages and their loss of feudal control, the landowner-dominated Parliament struck back decisively. The 1351 Statute of Labourers decreed that wages frozen by lords must remain strictly at pre-plague levels, making wage negotiation a punishable crime.</p><p class=\"prose-p\">Runaway serfs faced imprisonment and having an iron \"F\" burned on foreheads for falsity to brand them as fugitive outlaws. Furthermore, 1363 Sumptuary Laws ensured commoners were banned from wearing fur, silk, or fine dyed cloth, entrenching bitter social resentment that exploded in rebellion thirty years later.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Outraged by rising wages and their loss of feudal control, the landowner-dominated Parliament struck back decisively. The 1351 Statute of Labourers decreed that wages frozen by lords must remain strictly at pre-plague levels, making wage negotiation a punishable crime.</p><p class=\"prose-p\">Runaway serfs faced imprisonment and having an iron \"F\" burned on foreheads for falsity to brand them as fugitive outlaws. Furthermore, 1363 Sumptuary Laws ensured commoners were banned from wearing fur, silk, or fine dyed cloth, entrenching bitter social resentment that exploded in rebellion thirty years later.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 7 Economic & Social Chain Reaction • 1349–1381",
+            "title": "How Plague Shortages & The 1351 Statute of Labourers Sparked Anger",
+            "default_index": 0,
+            "caption": "Click each step to trace how the Black Death gave surviving peasants rare bargaining power—and how lords tried to crush it by law.",
+            "items": [
+              {
+                "tab_label": "1. Labour Shortage",
+                "title": "1348–1350: Empty Cottages & Unharvested Fields",
+                "dates": "Over One-Third to Half of England Dead",
+                "badge": "Demographic Shock",
+                "color": "#64748b",
+                "bg_color": "rgba(100, 116, 139, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Population Drop",
+                    "value": "40%–50% of English Villagers Died in Two Years"
+                  },
+                  {
+                    "label": "Countryside Crisis",
+                    "value": "Wheat Rotted Uncut in Overgrown Lordly Fields"
+                  },
+                  {
+                    "label": "Lords’ Problem",
+                    "value": "Too Few Surviving Reapers & Ploughmen to Work Estates"
+                  }
+                ],
+                "takeaway": "Land was suddenly cheap and plentiful, while surviving farm workers had become the scarcest resource in England."
+              },
+              {
+                "tab_label": "2. Worker Power",
+                "title": "1349–1351: Peasants Demand Double Pay & Freedom",
+                "dates": "Supply & Demand Flipped Upside Down",
+                "badge": "Rising Wages",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Wage Surge",
+                    "value": "Surviving Workers Demanded Double or Triple Daily Pay"
+                  },
+                  {
+                    "label": "Walking Away",
+                    "value": "Bonded Villeins Slipped Away to Rival Lords Paying Cash"
+                  },
+                  {
+                    "label": "Feudal Refusal",
+                    "value": "Refused Unpaid Week-Work on the Manor Demesne"
+                  }
+                ],
+                "takeaway": "For the first time since 1066, desperate landowners had to compete for peasant labour instead of ordering serfs around."
+              },
+              {
+                "tab_label": "3. 1351 Wage Freeze",
+                "title": "1351 Statute of Labourers: Lords Strike Back",
+                "dates": "Passed by Landowner-Dominated Parliament (1351)",
+                "badge": "Harsh Repression",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Wage Cap",
+                    "value": "Legally Froze All Farm Pay at Pre-1346 Plague Levels"
+                  },
+                  {
+                    "label": "Punishments",
+                    "value": "Stocks & Jail for Asking or Paying Higher Wages"
+                  },
+                  {
+                    "label": "1361 Branding",
+                    "value": "Runaway Serfs Branded With a Red-Hot Iron 'F' (Falsity)"
+                  }
+                ],
+                "takeaway": "Instead of accepting fair market wages, noblemen used Parliament’s courts and branding irons to force peasants back into serfdom."
+              },
+              {
+                "tab_label": "4. Boiling Point",
+                "title": "1363 Sumptuary Laws & 1377–1381 Poll Taxes",
+                "dates": "30 Years of Resentment → May 1381 Spark",
+                "badge": "Revolt Ignited",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "metrics": [
+                  {
+                    "label": "1363 Clothing Ban",
+                    "value": "Sumptuary Laws Banned Commoners Wearing Fur, Silk or Fine Cloth"
+                  },
+                  {
+                    "label": "1381 Poll Tax",
+                    "value": "Flat 12 Pence Per Adult—Rich Duke Paid Same as Poor Ploughman"
+                  },
+                  {
+                    "label": "30 May 1381",
+                    "value": "Brentwood Villagers Chased Out Tax Collector John Bampton"
+                  }
+                ],
+                "takeaway": "Wage caps, status bans, and unfair war taxes turned post-plague hope into the explosive 1381 Peasants’ Revolt."
+              }
+            ]
+          }
         },
         {
           "id": "block_4",
@@ -6878,8 +7730,8 @@
           "title": "The Regressive Poll Taxes & Brentwood Spark (1377–1381)",
           "text": "<span class=\"para-ref\">[5.4]</span> Simmering tensions erupted when the royal government faced bankruptcy from the costly Hundred Years’ War, passing a crippling <strong>French War Debt Bill</strong>. Unlike property taxes, the third Poll Tax of 1381 demanded a flat <strong>Twelve Pence from Every Head</strong> aged over fifteen—equivalent to two weeks' hard wages for a labourer. Mass tax evasion followed, and when royal commissioner John Bampton arrived on 30 May 1381, he was a <strong>Tax Collector Chased with Pitchforks</strong> by furious Essex villagers at Brentwood, igniting armed rebellion.",
           "image": "/images/upgraded/ks3-early/med_l5_b3_froissart_peasants_revolt_f172.jpg",
-          "image_alt": "15th-century Froissart manuscript miniature showing 1381 Peasants' Revolt rebels seizing Chancellor Simon Sudbury and Treasurer Robert Hales",
-          "caption": "Illuminated miniature from Jean Froissart’s Chronicles (c. 1460–1480, British Library Royal MS 18 E. I, fol. 172r) depicting 1381 rebels seizing Chancellor Simon Sudbury and Treasurer Robert Hales—architects of the hated Poll Tax.",
+          "image_alt": "Fifteenth-century illuminated manuscript miniature from Jean Froissart’s Chroniques (BnF MS Fr. 2644 f. 172r) showing armed rebels with drawn swords seizing royal church and tax officials during the June 1381 Peasants’ Revolt",
+          "caption": "Jean Froissart, Chroniques (15th century, Bibliothèque nationale de France MS Fr. 2644, f. 172r): Armed rebels confront royal ministers after the hated 1381 Poll Tax of twelve pence per head sparked uprising across Essex and Kent.",
           "theme_heading": "Fiscal Oppression & Revolt",
           "sources": [
             {
@@ -6911,18 +7763,18 @@
           "decimal": "[5.5]",
           "title": "Showdown at Smithfield & The End of Serfdom (1381)",
           "text": "<span class=\"para-ref\">[5.5]</span> Under leaders Wat Tyler and radical priest John Ball, over 30,000 <strong>Peasants Swarm the Capital</strong>, burning tax rolls and storming the Tower of London. On 15 June 1381, fourteen-year-old King Richard II met the rebels at Smithfield. Tensions flared and <strong>Tyler Stabbed at the Peace Talks</strong> by the Mayor of London. With bows drawn, the bold <strong>Boy King Promises Freedom</strong>, declaring himself their leader and pledging to abolish serfdom. Though the revolt was brutally crushed, feudal bondage was terminally undermined and withered away over the next century.",
-          "image_alt": "Richard II and Wat Tyler at Smithfield",
-          "caption": "King Richard II confronting the rebel army at Smithfield after the death of Wat Tyler.",
+          "image_alt": "1784 copperplate portrait engraving by Richard Godfrey inscribed Sr William Walworth Knt showing Lord Mayor of London William Walworth in fur-trimmed civic robes and gold chain holding the dagger used against Wat Tyler at Smithfield",
+          "caption": "Sir William Walworth Holding the Smithfield Dagger (engraved by Richard Godfrey, 1 November 1784, after the Fishmongers’ Hall civic portrait): Depicting the Lord Mayor of London who fatally stabbed rebel leader Wat Tyler during King Richard II’s 15 June 1381 confrontation at Smithfield.",
           "theme_heading": "Climax at Smithfield & Legacy",
           "sources": [
             {
               "id": "medieval_england_l5_src_e",
               "letter": "E",
               "type": "visual",
-              "src": "/images/medieval_england/source_b_death_wat_tyler_smithfield.jpg",
-              "image": "/images/medieval_england/source_b_death_wat_tyler_smithfield.jpg",
+              "src": "/images/ks3_med7/med7_l5_s4_death_wat_tyler_smithfield_froissart.jpg",
+              "image": "/images/ks3_med7/med7_l5_s4_death_wat_tyler_smithfield_froissart.jpg",
               "title": "Source E: The Murder of Wat Tyler at Smithfield (Froissart’s Chroniques, c. 1470–1475)",
-              "caption": "Illuminated miniature (British Library Royal MS 18 E. I, f. 175r): Lord Mayor William Walworth striking down rebel leader Wat Tyler before King Richard II at Smithfield on 15 June 1381.",
+              "caption": "The Death of Wat Tyler at Smithfield (Jean Froissart, Chroniques, c. 1475–1483, British Library Royal MS 18 E I, f. 175v): Dual narrative scene depicting Mayor William Walworth striking down Wat Tyler (left) as fourteen-year-old King Richard II rides out alone (right) to calm the rebel longbowmen.",
               "author": "Flemish Illuminator for Froissart’s Chroniques",
               "date": "c. 1470–1475",
               "question_badge": "STATE REACTION & FEUDAL SURVIVAL",
@@ -6933,10 +7785,12 @@
               "teacher_notes": {
                 "hinge_question": "Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?",
                 "source_context": "On 15 June 1381, Wat Tyler was killed at Smithfield, shattering the rebellion. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?"
-              }
+              },
+              "image_alt": "Full-folio illuminated miniature from Jean Froissart’s Chroniques (BL Royal MS 18 E I f. 175v, c. 1475–1483) showing Mayor William Walworth striking Wat Tyler with a sword on the left while fourteen-year-old King Richard II rides in blue robes on the right to address the massed peasant archers"
             }
           ],
-          "content": "<span class=\"para-ref\">[5.5]</span> Under leaders Wat Tyler and radical priest John Ball, over 30,000 <strong>Peasants Swarm the Capital</strong>, burning tax rolls and storming the Tower of London. On 15 June 1381, fourteen-year-old King Richard II met the rebels at Smithfield. Tensions flared and <strong>Tyler Stabbed at the Peace Talks</strong> by the Mayor of London. With bows drawn, the bold <strong>Boy King Promises Freedom</strong>, declaring himself their leader and pledging to abolish serfdom. Though the revolt was brutally crushed, feudal bondage was terminally undermined and withered away over the next century."
+          "content": "<span class=\"para-ref\">[5.5]</span> Under leaders Wat Tyler and radical priest John Ball, over 30,000 <strong>Peasants Swarm the Capital</strong>, burning tax rolls and storming the Tower of London. On 15 June 1381, fourteen-year-old King Richard II met the rebels at Smithfield. Tensions flared and <strong>Tyler Stabbed at the Peace Talks</strong> by the Mayor of London. With bows drawn, the bold <strong>Boy King Promises Freedom</strong>, declaring himself their leader and pledging to abolish serfdom. Though the revolt was brutally crushed, feudal bondage was terminally undermined and withered away over the next century.",
+          "image": "/images/ks3_med7/med7_l5_b4_walworth_smithfield_dagger_1381.jpg"
         }
       ],
       "tasks": [
@@ -7383,7 +8237,7 @@
           "src": "/images/upgraded/ks3-early/med_l5_s0_omne_bonum_plague_folio.jpg",
           "image": "/images/upgraded/ks3-early/med_l5_s0_omne_bonum_plague_folio.jpg",
           "title": "Source A: Chronicle of Henry Knighton on Plague Mortality and Labour Shortages (c. 1395)",
-          "caption": "14th-century English manuscript illumination of plague-stricken sufferers covered in buboes (Omne Bonum, British Library Royal MS 6 E. VI, fol. 301r, c. 1360–1375), accompanying Henry Knighton’s chronicle account of 1348 plague mortality and labour shortages.",
+          "caption": "Plague Victims Marked With Swollen Spots Blessed by a Bishop (James le Palmer, Omne Bonum, c. 1360–1375, British Library Royal MS 6 E VI, f. 301r): Contemporary fourteenth-century English visual evidence accompanying Henry Knighton’s chronicle of the 1348–1350 Black Death.",
           "author": "Henry Knighton, Augustinian Canon of St Mary de Pratis, Leicester",
           "date": "c. 1395",
           "citation": "Henry Knighton, Chronicon Henrici Knighton (Leicester Abbey, c. 1395), British Library Cotton MS Tiberius C. VII.",
@@ -7397,7 +8251,8 @@
             "hinge_question": "Why did a biological disaster like the plague create economic empowerment for ordinary peasants?",
             "source_context": "In 1348–1350, the Black Death destroyed half the population, enabling surviving labourers to demand higher wages. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
           },
-          "source_context": "In 1348–1350, the Black Death swept across England, killing an estimated 30–50% of the population and triggering a massive structural labour shortage. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
+          "source_context": "In 1348–1350, the Black Death swept across England, killing an estimated 30–50% of the population and triggering a massive structural labour shortage. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?",
+          "image_alt": "Fourteenth-century English illuminated initial from James le Palmer’s Omne Bonum (BL Royal MS 6 E VI f. 301r, c. 1360–1375) showing four plague victims covered in red-spotted buboes standing before a mitred bishop"
         },
         {
           "id": "medieval_england_l5_src_b",
@@ -7467,10 +8322,10 @@
           "id": "medieval_england_l5_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/medieval_england/source_b_death_wat_tyler_smithfield.jpg",
-          "image": "/images/medieval_england/source_b_death_wat_tyler_smithfield.jpg",
+          "src": "/images/ks3_med7/med7_l5_s4_death_wat_tyler_smithfield_froissart.jpg",
+          "image": "/images/ks3_med7/med7_l5_s4_death_wat_tyler_smithfield_froissart.jpg",
           "title": "Source E: The Murder of Wat Tyler at Smithfield (Froissart’s Chroniques, c. 1470–1475)",
-          "caption": "Illuminated miniature (British Library Royal MS 18 E. I, f. 175r): Lord Mayor William Walworth striking down rebel leader Wat Tyler before King Richard II at Smithfield on 15 June 1381.",
+          "caption": "The Death of Wat Tyler at Smithfield (Jean Froissart, Chroniques, c. 1475–1483, British Library Royal MS 18 E I, f. 175v): Dual narrative scene depicting Mayor William Walworth striking down Wat Tyler (left) as fourteen-year-old King Richard II rides out alone (right) to calm the rebel longbowmen.",
           "author": "Flemish Illuminator for Froissart’s Chroniques",
           "date": "c. 1470–1475",
           "question_badge": "STATE REACTION & FEUDAL SURVIVAL",
@@ -7482,7 +8337,8 @@
             "hinge_question": "Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?",
             "source_context": "On 15 June 1381, Wat Tyler was killed at Smithfield, shattering the rebellion. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?"
           },
-          "source_context": "On 15 June 1381, negotiations at Smithfield turned violent. Lord Mayor Walworth slashed Tyler, mortally wounding him and breaking the momentum of the revolt. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?"
+          "source_context": "On 15 June 1381, negotiations at Smithfield turned violent. Lord Mayor Walworth slashed Tyler, mortally wounding him and breaking the momentum of the revolt. **Hinge Question:** Did the Peasants' Revolt fail completely, or did it make feudal lords permanently fearful of demanding heavy taxes?",
+          "image_alt": "Full-folio illuminated miniature from Jean Froissart’s Chroniques (BL Royal MS 18 E I f. 175v, c. 1475–1483) showing Mayor William Walworth striking Wat Tyler with a sword on the left while fourteen-year-old King Richard II rides in blue robes on the right to address the massed peasant archers"
         }
       ],
       "quiz": [
@@ -8024,7 +8880,7 @@
             "badge": "Stage 5",
             "heading": "Showdown Against the Boy King",
             "date": "15 June 1381",
-            "img": "/images/medieval_england/source_b_death_wat_tyler_smithfield.jpg",
+            "img": "/images/ks3_med7/med7_l5_s4_death_wat_tyler_smithfield_froissart.jpg",
             "mode": "landscape",
             "stat": "30,000 Rebels in London; Wat Tyler Killed",
             "html": "<strong>Wat Tyler</strong> led 30,000 rebels into London. When London’s mayor stabbed Tyler at <strong>Smithfield</strong>, fourteen-year-old <strong>Richard II</strong> boldly promised freedom to calm the crowd.",
@@ -8068,7 +8924,7 @@
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",
-  "homepage_background": "/images/medieval_england/source_b_bayeux_harold_death.jpg",
+  "homepage_background": "/images/ks3_med7/med7_l1_s4_bayeux_harold_death_scene57.jpg",
   "keyStage": "KS3",
   "key_stage": "KS3",
   "yearGroup": "Key Stage 3",
@@ -8101,7 +8957,7 @@
       ],
       "lifespan": "c. 1022 – 14 October 1066",
       "role": "Earl of Wessex & Last Crowned Anglo-Saxon King of England (1066)",
-      "image": "/images/harold_godwinson.jpg",
+      "image": "/images/ks3_med7/med7_l1_cameo_harold_coronation_bayeux.jpg",
       "image_position": "center 20%",
       "origins": "England’s wealthiest nobleman and Earl of Wessex, elected king by the Witan in January 1066 despite Norman claims that he had sworn a sacred 1064 oath on holy relics supporting Duke William.",
       "significance": "Marched 190 miles north in four days to annihilate Harald Hardrada’s Vikings at Stamford Bridge (25 September 1066), before force-marching 250 miles south to die defending Senlac Hill at Hastings on 14 October 1066.",
@@ -8119,7 +8975,7 @@
       ],
       "lifespan": "c. 1015 – 25 September 1066",
       "role": "King of Norway & Viking Claimant to the English Throne (1046–1066)",
-      "image": "/images/harald_hardrada.png",
+      "image": "/images/ks3_med7/med7_ki2_harald_hardrada_stamford_bridge.jpg",
       "image_fit": "contain",
       "origins": "Fearsome Norwegian warrior-king (\"Hard-Ruler\") who claimed the English crown through an earlier pact between Scandinavian rulers and sailed 300 Viking longships to Yorkshire in September 1066.",
       "significance": "Forced King Harold II to march his elite housecarls 190 miles north just days before Duke William landed at Pevensey—fatally exhausting England’s army even though Hardrada himself was killed at Stamford Bridge.",
@@ -8138,7 +8994,7 @@
       ],
       "lifespan": "c. 1028 – 1087",
       "role": "Duke of Normandy & First Norman King of England (1066–1087)",
-      "image": "/images/william_the_conqueror.jpg",
+      "image": "/images/ks3_med7/med7_l2_cameo_william_conqueror_bayeux.jpg",
       "image_position": "center 12%",
       "origins": "Formidable Duke of Normandy who secured the papal banner of Pope Alexander II, landed unopposed at Pevensey Bay in late September 1066, and defeated Harold II at Hastings using disciplined cavalry feigned retreats.",
       "significance": "Subjugated two million Anglo-Saxons with an elite of ten thousand Normans through 500 rapid motte-and-bailey castles, the merciless 1069–70 Harrying of the North, total feudal land redistribution, and the 1086 Domesday Book.",
@@ -8156,7 +9012,7 @@
       ],
       "lifespan": "1133 – 1189",
       "role": "First Plantagenet King of England & Ruler of the Angevin Empire (1154–1189)",
-      "image": "/images/portraits/king_henry_ii_manuscript.jpg",
+      "image": "/images/ks3_med7/med7_ki4_king_henry_ii_fontevraud_effigy.jpg",
       "image_position": "center 60%",
       "origins": "Energetic Angevin ruler determined to restore royal law and order across England—including ending the scandal of \"criminous clerks\" escaping royal gallows in lenient Church courts by reading a Latin verse (\"benefit of clergy\").",
       "significance": "Appointed his close friend and Chancellor Thomas Becket as Archbishop of Canterbury in 1162 expecting a loyal ally, issued the 1164 Constitutions of Clarendon, and suffered European outrage and barefoot public penance (1174) after his furious outburst prompted four knights to murder Becket.",
@@ -8175,7 +9031,7 @@
       ],
       "lifespan": "c. 1119 – 29 December 1170",
       "role": "Royal Chancellor (1155–62), Archbishop of Canterbury & Canonised Martyr",
-      "image": "/images/portraits/thomas_becket_manuscript.jpg",
+      "image": "/images/ks3_med7/med7_l3_cameo_thomas_becket_stained_glass.jpg",
       "image_position": "center 18%",
       "origins": "Once Henry II’s wealthy hunting companion in silk robes, Becket shocked the court upon becoming Archbishop of Canterbury in June 1162 by resigning the Chancellorship, wearing a lice-infested goat hairshirt, and declaring loyalty solely to the Pope.",
       "significance": "Refused to seal the 1164 Constitutions of Clarendon, spent six years in French exile, and was hacked down at the altar of Canterbury Cathedral on 29 December 1170—becoming medieval England’s greatest martyr-saint and forcing Henry II to back down over Church courts.",
@@ -8189,7 +9045,7 @@
       "name": "King John",
       "lifespan": "1166 – 1216",
       "role": "Plantagenet King of England Sealed at Runnymede (1199–1216)",
-      "image": "/images/medieval_england/plate_4_1_king_john_matthew_paris.jpg",
+      "image": "/images/ks3_med7/med7_l4_cameo_king_john_portrait.jpg",
       "image_position": "center 15%",
       "origins": "Younger brother of Richard the Lionheart who lost ancestral Normandy to King Philip II of France in 1204 (earning the nickname \"John Softsword\") and spent a decade squeezing heavy feudal taxes and scutage from English barons.",
       "significance": "Provoked a five-year Papal Interdict (1208–13), saw his continental coalition crushed at Bouvines (1214), and—cornered after rebel barons led by Robert Fitzwalter seized London—affixed the Great Seal to Magna Carta at Runnymede on 15 June 1215.",
@@ -8207,7 +9063,7 @@
       ],
       "lifespan": "1160 – 1216",
       "role": "Head of the Medieval Catholic Church (1198–1216)",
-      "image": "/images/medieval_england/source_c_pope_innocent_iii_portrait.jpg",
+      "image": "/images/ks3_med7/med7_l4_s1_pope_innocent_iii_subiaco_fresco.jpg",
       "image_position": "center 28%",
       "origins": "Most powerful medieval Pope, who asserted supreme spiritual authority over European monarchs from Rome.",
       "significance": "Demonstrated the immense religious power of the medieval papacy by placing all England under a five-year Interdict (1208) and excommunicating King John (1209) until John knelt as a papal vassal—after which Innocent annulled Magna Carta in 1215.",
@@ -8226,7 +9082,7 @@
       ],
       "lifespan": "Ball: c. 1338 – July 1381 · Tyler: d. 15 June 1381",
       "role": "Radical Preacher & Military Leader of the 1381 Peasants’ Revolt",
-      "image": "/images/medieval_england/plate_5_2_wat_tyler_john_ball.jpg",
+      "image": "/images/medieval_england/source_c_john_ball_preaching.jpg",
       "image_position": "center 18%",
       "origins": "Following the 1348–50 Black Death, the wage-freezing 1351 Statute of Labourers, and the flat 12-pence third Poll Tax of May 1381 (sparked when Essex villagers chased tax commissioner John Bampton from Brentwood), Kentish rebel Wat Tyler freed radical priest John Ball.",
       "significance": "Led over 30,000 Essex and Kent rebels into London in June 1381—burning tax rolls, storming the Tower of London, and preaching human equality (\"When Adam delved and Eve span, who was then the gentleman?\")—accelerating the long-term collapse of English serfdom.",
@@ -8243,7 +9099,7 @@
       ],
       "lifespan": "1367 – 1400",
       "role": "Fourteen-Year-Old Boy King During the 1381 Peasants’ Revolt (1377–1399)",
-      "image": "/images/portraits/king_richard_ii_westminster.jpg",
+      "image": "/images/ks3_med7/med7_l5_cameo_king_richard_ii_westminster_portrait.jpg",
       "image_position": "23% 70%",
       "origins": "Fourteen-year-old grandson of Edward III whose royal ministers imposed three regressive Poll Taxes (culminating in 12d per adult in 1381) to pay French war debts from the Hundred Years’ War.",
       "significance": "Displayed cool nerve at Mile End and Smithfield on 14–15 June 1381—riding forward when Wat Tyler was killed (\"I shall be your captain!\") to disperse the rebel army with promises of freedom, before revoking every charter and executing rebel leaders.",
@@ -8260,8 +9116,8 @@
       "lesson_label": "Enquiry 1",
       "book_title": "Gesta Guillelmi (The Deeds of William): Senlac Hill & the Feigned Retreat",
       "author": "William of Poitiers (c. 1071 • Norman Court Chronicle)",
-      "cover_image": "/images/medieval_england/plate_1_2_bayeux_norman_cavalry.jpg",
-      "cover_caption": "Scene from the Bayeux Tapestry (c. 1070s) showing mounted Norman knights charging the locked kite-shields and battleaxes of King Harold’s English huscarls.",
+      "cover_image": "/images/ks3_med7/med7_l1_b3_bayeux_norman_cavalry_shield_wall.jpg",
+      "cover_caption": "Bayeux Tapestry Scene 52 (c. 1070s, Musée de la Tapisserie de Bayeux): Mail-clad Norman cavalry knights charge uphill against King Harold’s interlocking Anglo-Saxon shield wall at Hastings.",
       "author_context": "William of Poitiers (c. 1020–1090) was a Norman chaplain who had trained as a knight before entering the Church and serving Duke William of Normandy. Writing around five years after 1066, his Latin chronicle Gesta Guillelmi flatters his Norman patron, yet provides our most detailed military account of how Norman cavalry broke the English shield-wall on 14 October 1066.",
       "source_type": "primary_chronicle",
       "source_type_label": "Contemporary Norman Chronicle (c. 1071)",
@@ -8310,7 +9166,8 @@
       "studio_audio": "/audio/reading/medieval_england/r0.mp3",
       "studio_voice_label": "Studio Male Historian · Primary Chronicle",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and condensed for KS3 reading aloud from William of Poitiers’s c. 1071 Norman chronicle."
+      "provenance_note": "Translated from Latin and condensed for KS3 reading aloud from William of Poitiers’s c. 1071 Norman chronicle.",
+      "short_tab_title": "1. Poitiers: Senlac Hill (1066)"
     },
     {
       "lesson_index": 1,
@@ -8318,8 +9175,8 @@
       "lesson_label": "Enquiry 2",
       "book_title": "Historia Ecclesiastica: Orderic Vitalis on Castles & the Harrying of the North",
       "author": "Orderic Vitalis (Book IV, c. 1125 • Monastery of Saint-Évroul)",
-      "cover_image": "/images/medieval_england/plate_2_1_bayeux_castle_building.jpg",
-      "cover_caption": "Bayeux Tapestry scene inscribed \"ISTE IVSSIT VT FODERETVR CASTELLVM AT HESTENGACEASTRA\", showing forced English labourers digging the motte-and-bailey castle at Hastings.",
+      "cover_image": "/images/ks3_med7/med7_l2_b0_bayeux_hastings_motte_scene45.jpg",
+      "cover_caption": "Bayeux Tapestry Scene 45 (c. 1070s, Musée de la Tapisserie de Bayeux): Norman overseers force English labourers to dig the steep earthen motte and palisade of Hastings Castle.",
       "author_context": "Orderic Vitalis (1075–c. 1142) was born in Shropshire to a Norman father and an English mother before becoming a Benedictine monk in Normandy. Because of his mixed Anglo-Norman heritage, Orderic wrote with rare moral honesty—praising King William’s strength while fiercely condemning the merciless starvation inflicted on Yorkshire during the Harrying of the North (1069–1070).",
       "source_type": "primary_chronicle",
       "source_type_label": "Anglo-Norman Monastic Chronicle (c. 1125)",
@@ -8368,7 +9225,8 @@
       "studio_audio": "/audio/reading/medieval_england/r1.mp3",
       "studio_voice_label": "Studio Male Historian · Primary Chronicle",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and condensed for KS3 pupils from Orderic Vitalis’s c. 1125 monastic chronicle."
+      "provenance_note": "Translated from Latin and condensed for KS3 pupils from Orderic Vitalis’s c. 1125 monastic chronicle.",
+      "short_tab_title": "2. Vitalis: Norman Terror (1069)"
     },
     {
       "lesson_index": 2,
@@ -8376,8 +9234,8 @@
       "lesson_label": "Enquiry 3",
       "book_title": "Vita Sancti Thomae: Eyewitness Account of the Murder in the Cathedral",
       "author": "Edward Grim (c. 1172 • British Library Cotton MS Claudius B II)",
-      "cover_image": "/images/medieval_england/plate_3_2_henry_ii_penance_becket.jpg",
-      "cover_caption": "Historical engraving of King Henry II kneeling barefoot in penance before the tomb of St Thomas Becket at Canterbury Cathedral in July 1174.",
+      "cover_image": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
+      "cover_caption": "British Library Harley MS 5102, f. 32 (c. 1220): Eyewitness clerk Edward Grim holds the cross at the altar as four Norman knights murder Archbishop Thomas Becket in Canterbury Cathedral on 29 December 1170.",
       "author_context": "Edward Grim was a clerk from Cambridge visiting Archbishop Thomas Becket at Canterbury on the evening of 29 December 1170. When four household knights of King Henry II—Reginald FitzUrse, Hugh de Morville, William de Tracy, and Richard le Breton—stormed into the cathedral, Grim stood beside Becket and had his own arm nearly severed by the first sword blow before writing this famous eyewitness biography.",
       "source_type": "primary_chronicle",
       "source_type_label": "Eyewitness Cathedral Testimony (c. 1172)",
@@ -8426,7 +9284,8 @@
       "studio_audio": "/audio/reading/medieval_england/r2.mp3",
       "studio_voice_label": "Studio Male Historian · Primary Chronicle",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and abridged for KS3 reading aloud from eyewitness Edward Grim’s c. 1172 account at Canterbury."
+      "provenance_note": "Translated from Latin and abridged for KS3 reading aloud from eyewitness Edward Grim’s c. 1172 account at Canterbury.",
+      "short_tab_title": "3. Grim: Becket’s Murder (1170)"
     },
     {
       "lesson_index": 3,
@@ -8434,8 +9293,8 @@
       "lesson_label": "Enquiry 4",
       "book_title": "Flores Historiarum & Magna Carta: Confrontation at Runnymede (June 1215)",
       "author": "Roger of Wendover (St Albans Chronicle, c. 1235) & Magna Carta Clauses 12, 39 & 61",
-      "cover_image": "/images/medieval_england/plate_4_2_king_john_runnymede.jpg",
-      "cover_caption": "Historical engraving depicting King John seated in his pavilion at Runnymede beside the River Thames surrounded by mailed rebel barons and bishops in June 1215.",
+      "cover_image": "/images/ks3_med7/med7_l4_b3_king_john_magna_carta_runnymede_1215.jpg",
+      "cover_caption": "James William Edmund Doyle, John Signs the Great Charter (1864): King John confronted by armed rebel barons and Archbishop Stephen Langton in the meadow of Runnymede on 15 June 1215.",
       "author_context": "Roger of Wendover (died 1236) was the chronicler of St Albans Abbey, a great monastery just north of London through which royal officials and rebel barons constantly passed. Paired here with the translated Latin text of the Great Charter sealed at Runnymede on 15 June 1215, his account captures how military defeat in France and crushing scutage taxes forced King John to accept the rule of law.",
       "source_type": "primary_decree",
       "source_type_label": "Royal Charter & St Albans Chronicle (1215)",
@@ -8484,7 +9343,8 @@
       "studio_audio": "/audio/reading/medieval_england/r3.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines translated clauses of Magna Carta (1215) with Roger of Wendover’s St Albans chronicle account."
+      "provenance_note": "Combines translated clauses of Magna Carta (1215) with Roger of Wendover’s St Albans chronicle account.",
+      "short_tab_title": "4. Wendover: Runnymede (1215)"
     },
     {
       "lesson_index": 4,
@@ -8492,8 +9352,8 @@
       "lesson_label": "Enquiry 5",
       "book_title": "Historia Anglicana: John Ball’s Blackheath Sermon & the 1381 Rising",
       "author": "Thomas Walsingham (St Albans Abbey Chronicle, c. 1381–1394)",
-      "cover_image": "/images/medieval_england/plate_5_2_wat_tyler_john_ball.jpg",
-      "cover_caption": "Illuminated detail from Jean Froissart’s Chronicles inscribed \"Iehā Balle\", depicting radical priest John Ball preaching from horseback during the Peasants’ Revolt of 1381.",
+      "cover_image": "/images/medieval_england/source_c_john_ball_preaching.jpg",
+      "cover_caption": "Jean Froissart, Chroniques (c. 1470–1475, British Library Royal MS 18 E I, f. 165v): Radical priest John Ball ('Jehan Balle') preaching equality to Wat Tyler ('Waultre le Tieulier') and the rebel host at Blackheath in June 1381.",
       "author_context": "After the Black Death (1348–1349) killed between a third and half of England’s population, surviving peasants realised their labour was scarce—yet lords enforced the 1351 Statute of Labourers to freeze wages and imposed three flat-rate Poll Taxes between 1377 and 1381. Monastic chronicler Thomas Walsingham of St Albans disliked the rebels intensely, yet preserved the revolutionary words preached by radical priest John Ball at Blackheath on 12 June 1381.",
       "source_type": "primary_chronicle",
       "source_type_label": "Contemporary Monastic Chronicle (c. 1381–1394)",
@@ -8542,7 +9402,8 @@
       "studio_audio": "/audio/reading/medieval_england/r4.mp3",
       "studio_voice_label": "Studio Male Historian · Primary Chronicle",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated and condensed for KS3 reading aloud from Thomas Walsingham’s chronicle of the 1381 Peasants’ Revolt."
+      "provenance_note": "Translated and condensed for KS3 reading aloud from Thomas Walsingham’s chronicle of the 1381 Peasants’ Revolt.",
+      "short_tab_title": "5. John Ball: Blackheath (1381)"
     }
   ]
 }

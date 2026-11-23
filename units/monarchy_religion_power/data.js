@@ -296,11 +296,12 @@ export default {
       "enquiry": "Why did Henry VIII break with Rome, and how was Royal Supremacy established?",
       "subtitle": "From Martin Luther’s Hammer to Henry VIII’s Crowned Supremacy",
       "skill": "Causation & Motivation",
-      "card_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
+      "card_image": "/images/ks3_mrp/mrp_l1_card_field_of_cloth_of_gold_1520.jpg",
       "card_position": "center 2%",
       "banner": {
         "image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
-        "caption": "The Embarkation of Henry VIII at Dover",
+        "alt": "Monumental Tudor oil painting The Embarkation of Henry VIII at Dover (c. 1540, Royal Collection) showing England's carrack warships with golden sails and St George pennants departing Dover fortified harbour towers",
+        "caption": "The Embarkation of Henry VIII at Dover (c. 1540, Royal Collection RCIN 405793): King Henry VIII's great carrack Henry Grace à Dieu and Tudor fleet setting sail from Dover beneath St George banners, projecting independent English royal sovereignty.",
         "position": "center 46%"
       },
       "margin_spine": [
@@ -468,10 +469,10 @@ export default {
             "id": "monarchy_religion_power_l1_src_a",
             "letter": "A",
             "type": "visual",
-            "src": "/images/martin_luther_portrait.jpg",
-            "image": "/images/martin_luther_portrait.jpg",
+            "src": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
+            "image": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
             "title": "Source A (Theological Schism): Martin Luther in Academic Doctor's Robes (Lucas Cranach the Elder, 1529)",
-            "caption": "Oil on panel by Lucas Cranach the Elder (1529, Uffizi Gallery / St. Anne's Museum) depicting Martin Luther in dignified academic doctor's gown and scholar's beret, gazing steadfastly forward as the intellectual catalyst of European Protestantism.",
+            "caption": "Oil on panel by Lucas Cranach the Elder and workshop (dated 1529, Uffizi Gallery, Florence) depicting Martin Luther in dignified black academic doctor's gown and scholar's beret, gazing steadfastly forward as the intellectual catalyst of the European Reformation.",
             "author": "Lucas Cranach the Elder",
             "date": "1529",
             "question_badge": "THEOLOGICAL SCHISM & REFORMATION SPARK",
@@ -482,17 +483,18 @@ export default {
             "teacher_notes": {
               "hinge_question": "Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?",
               "source_context": "Luther's 95 Theses attacked papal indulgence sales in 1517, sparking the European Protestant Reformation. **Hinge Question:** Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?"
-            }
+            },
+            "image_alt": "1529 oil panel portrait by Lucas Cranach the Elder and workshop (Uffizi Gallery, Florence) signed with Cranach's winged serpent cipher and dated 1529, depicting Martin Luther in black academic doctor's robe and beret against a bright blue ground."
           },
           "sources": [
             {
               "id": "monarchy_religion_power_l1_src_a",
               "letter": "A",
               "type": "visual",
-              "src": "/images/martin_luther_portrait.jpg",
-              "image": "/images/martin_luther_portrait.jpg",
+              "src": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
+              "image": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
               "title": "Source A (Theological Schism): Martin Luther in Academic Doctor's Robes (Lucas Cranach the Elder, 1529)",
-              "caption": "Oil on panel by Lucas Cranach the Elder (1529, Uffizi Gallery / St. Anne's Museum) depicting Martin Luther in dignified academic doctor's gown and scholar's beret, gazing steadfastly forward as the intellectual catalyst of European Protestantism.",
+              "caption": "Oil on panel by Lucas Cranach the Elder and workshop (dated 1529, Uffizi Gallery, Florence) depicting Martin Luther in dignified black academic doctor's gown and scholar's beret, gazing steadfastly forward as the intellectual catalyst of the European Reformation.",
               "author": "Lucas Cranach the Elder",
               "date": "1529",
               "question_badge": "THEOLOGICAL SCHISM & REFORMATION SPARK",
@@ -503,7 +505,8 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?",
                 "source_context": "Luther's 95 Theses attacked papal indulgence sales in 1517, sparking the European Protestant Reformation. **Hinge Question:** Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?"
-              }
+              },
+              "image_alt": "1529 oil panel portrait by Lucas Cranach the Elder and workshop (Uffizi Gallery, Florence) signed with Cranach's winged serpent cipher and dated 1529, depicting Martin Luther in black academic doctor's robe and beret against a bright blue ground."
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In October 1517, German monk Martin Luther nailed 95 fiery arguments to the <strong>Wittenberg church door</strong>. Luther attacked corrupt friars selling an <strong>indulgence</strong>—a certificate promising that paying for forgiveness would free dead relatives from the agonies of <strong>Purgatory</strong>.</p><p class=\"prose-p\">Printed copies spread across Europe, triggering the Protestant <strong>Reformation</strong>. When young King Henry VIII wrote a book defending Catholic sacraments against Luther, Pope Leo X rewarded him with the proud <strong>Defender of the Faith title</strong>.</p>",
@@ -726,17 +729,17 @@ export default {
           "act": 3,
           "title": "The Roman Deadlock (1527–1529)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Normally, popes readily granted royal annulments, but Pope Clement VII was trapped. In May 1527, Holy Roman Emperor Charles V—Catherine’s nephew—led imperial troops that attacks Rome, ransacked the city, and left the Pope held prisoner in Castel Sant’Angelo.</p><p class=\"prose-p\">Charles warned the <strong>papacy</strong> that ending Catherine’s marriage would bring ruin. When Henry’s chief minister Cardinal Wolsey opened a legatine court in London, Clement revoked the case, the church trial cancelled, and English <strong>sovereignty</strong> was defied, causing Wolsey’s immediate arrest.</p>",
-          "image": "/images/cardinal_wolsey.jpg",
-          "image_alt": "Contemporary oil painting of Cardinal Thomas Wolsey, Lord Chancellor to King Henry VIII",
-          "caption": "Cardinal Thomas Wolsey (c. 1473–1530), Lord Chancellor and Archbishop of York, charged by Henry VIII with securing the papal annulment from Pope Clement VII (National Portrait Gallery, London / NPG 320).",
+          "image": "/images/ks3_mrp/mrp_l1_b2_cardinal_thomas_wolsey_portrait.jpg",
+          "image_alt": "Tudor oval oil portrait of Cardinal Thomas Wolsey in profile wearing scarlet cardinal's mozzetta and biretta while holding a rolled state petition (after Sampson Strong, National Trust Blickling Hall NT 129751).",
+          "caption": "Cardinal Thomas Wolsey (c. 1473–1530) in scarlet cardinal's robes holding a rolled petition (after Sampson Strong, National Trust NT 129751): Charged by Henry VIII with securing an annulment from Pope Clement VII, Wolsey fell from power in 1529 when Rome revoked the Blackfriars legatine trial.",
           "source": {
             "id": "monarchy_religion_power_l1_src_c",
             "letter": "C",
             "type": "visual",
-            "src": "/images/henry_viii.jpg",
-            "image": "/images/henry_viii.jpg",
+            "src": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
+            "image": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
             "title": "Source C (Monarchical Supremacy): Portrait of King Henry VIII (Hans Holbein the Younger, c. 1537)",
-            "caption": "Monumental royal portrait by Hans Holbein the Younger (Walker Art Gallery, Liverpool), projecting absolute monarchical majesty, physical bulk, and sovereign defiance.",
+            "caption": "Monumental full-length royal portrait of King Henry VIII after Hans Holbein the Younger's 1537 Whitehall Palace mural (Walker Art Gallery, Liverpool WAG 1350), projecting supreme monarchical majesty, broad-shouldered authority, and defiance of Rome.",
             "author": "Hans Holbein the Younger",
             "date": "c. 1537",
             "question_badge": "SOVEREIGN MAJESTY & IMPERIAL KINGSHIP",
@@ -747,17 +750,18 @@ export default {
             "teacher_notes": {
               "hinge_question": "How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?",
               "source_context": "Holbein's iconic portrait projected Henry's supreme sovereignty over Church and State. **Hinge Question:** How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?"
-            }
+            },
+            "image_alt": "Full-length Tudor oil portrait of King Henry VIII after Hans Holbein the Younger's 1537 Whitehall mural (Walker Art Gallery, Liverpool WAG 1350), standing feet apart in a jewel-slashed doublet, fur-trimmed crimson gown, and feathered bonnet."
           },
           "sources": [
             {
               "id": "monarchy_religion_power_l1_src_c",
               "letter": "C",
               "type": "visual",
-              "src": "/images/henry_viii.jpg",
-              "image": "/images/henry_viii.jpg",
+              "src": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
+              "image": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
               "title": "Source C (Monarchical Supremacy): Portrait of King Henry VIII (Hans Holbein the Younger, c. 1537)",
-              "caption": "Monumental royal portrait by Hans Holbein the Younger (Walker Art Gallery, Liverpool), projecting absolute monarchical majesty, physical bulk, and sovereign defiance.",
+              "caption": "Monumental full-length royal portrait of King Henry VIII after Hans Holbein the Younger's 1537 Whitehall Palace mural (Walker Art Gallery, Liverpool WAG 1350), projecting supreme monarchical majesty, broad-shouldered authority, and defiance of Rome.",
               "author": "Hans Holbein the Younger",
               "date": "c. 1537",
               "question_badge": "SOVEREIGN MAJESTY & IMPERIAL KINGSHIP",
@@ -768,7 +772,8 @@ export default {
               "teacher_notes": {
                 "hinge_question": "How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?",
                 "source_context": "Holbein's iconic portrait projected Henry's supreme sovereignty over Church and State. **Hinge Question:** How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?"
-              }
+              },
+              "image_alt": "Full-length Tudor oil portrait of King Henry VIII after Hans Holbein the Younger's 1537 Whitehall mural (Walker Art Gallery, Liverpool WAG 1350), standing feet apart in a jewel-slashed doublet, fur-trimmed crimson gown, and feathered bonnet."
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Normally, popes readily granted royal annulments, but Pope Clement VII was trapped. In May 1527, Holy Roman Emperor Charles V—Catherine’s nephew—led imperial troops that attacks Rome, ransacked the city, and left the Pope held prisoner in Castel Sant’Angelo.</p><p class=\"prose-p\">Charles warned the <strong>papacy</strong> that ending Catherine’s marriage would bring ruin. When Henry’s chief minister Cardinal Wolsey opened a legatine court in London, Clement revoked the case, the church trial cancelled, and English <strong>sovereignty</strong> was defied, causing Wolsey’s immediate arrest.</p>"
@@ -784,10 +789,10 @@ export default {
             "id": "monarchy_religion_power_l1_src_d",
             "letter": "D",
             "type": "visual",
-            "src": "/images/great_bible_frontispiece.jpg",
-            "image": "/images/great_bible_frontispiece.jpg",
+            "src": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
+            "image": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
             "title": "Source D (Vernacular Scripture & Statecraft): Title Page of the Great Bible (Hans Holbein the Younger, 1539)",
-            "caption": "Woodcut title page of the Great Bible (British Library), showing King Henry VIII receiving the Word of God directly and distributing it downward to Archbishop Cranmer and Cromwell.",
+            "caption": "Hand-coloured 1539 woodcut title page of the Great Bible ('The Byble in Englyshe', National Library of Wales), showing King Henry VIII receiving the Word of God directly from heaven and handing Scripture downward to Archbishop Cranmer and Thomas Cromwell while loyal subjects cry 'God Save the Kynge'.",
             "author": "Hans Holbein the Younger / Thomas Cromwell",
             "date": "1539",
             "question_badge": "STATE-SANCTIONED REFORMATION & HIERARCHY",
@@ -798,17 +803,18 @@ export default {
             "teacher_notes": {
               "hinge_question": "Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?",
               "source_context": "In 1539, the Great Bible placed English scripture under royal authority, bypassing Rome. **Hinge Question:** Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?"
-            }
+            },
+            "image_alt": "Hand-coloured 1539 woodcut title page inscribed The Byble in Englyshe (Great Bible), showing King Henry VIII enthroned at the top handing Verbum Dei Bibles to Archbishop Thomas Cranmer and Thomas Cromwell above English subjects crying Vivat Rex and God Save the Kynge."
           },
           "sources": [
             {
               "id": "monarchy_religion_power_l1_src_d",
               "letter": "D",
               "type": "visual",
-              "src": "/images/great_bible_frontispiece.jpg",
-              "image": "/images/great_bible_frontispiece.jpg",
+              "src": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
+              "image": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
               "title": "Source D (Vernacular Scripture & Statecraft): Title Page of the Great Bible (Hans Holbein the Younger, 1539)",
-              "caption": "Woodcut title page of the Great Bible (British Library), showing King Henry VIII receiving the Word of God directly and distributing it downward to Archbishop Cranmer and Cromwell.",
+              "caption": "Hand-coloured 1539 woodcut title page of the Great Bible ('The Byble in Englyshe', National Library of Wales), showing King Henry VIII receiving the Word of God directly from heaven and handing Scripture downward to Archbishop Cranmer and Thomas Cromwell while loyal subjects cry 'God Save the Kynge'.",
               "author": "Hans Holbein the Younger / Thomas Cromwell",
               "date": "1539",
               "question_badge": "STATE-SANCTIONED REFORMATION & HIERARCHY",
@@ -819,7 +825,8 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?",
                 "source_context": "In 1539, the Great Bible placed English scripture under royal authority, bypassing Rome. **Hinge Question:** Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?"
-              }
+              },
+              "image_alt": "Hand-coloured 1539 woodcut title page inscribed The Byble in Englyshe (Great Bible), showing King Henry VIII enthroned at the top handing Verbum Dei Bibles to Archbishop Thomas Cranmer and Thomas Cromwell above English subjects crying Vivat Rex and God Save the Kynge."
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> A ruthless lawyer named Thomas Cromwell showed Henry how to bypass Rome. Cromwell used the Reformation Parliament to pass revolutionary <strong>statute</strong> laws. Henry cowed the English clergy by threatening church fines under ancient treason laws, forcing bishops into complete royal submission.</p><p class=\"prose-p\">Cromwell escalated the siege by stopping taxes to Rome (annates) and passing the 1533 Act in Restraint of Appeals, banning appeals to the Pope. Archbishop Cranmer declared Henry’s marriage void and crowned Anne Boleyn, sealing England’s legal independence.</p>"
@@ -907,10 +914,10 @@ export default {
           "id": "monarchy_religion_power_l1_src_a",
           "letter": "A",
           "type": "visual",
-          "src": "/images/martin_luther_portrait.jpg",
-          "image": "/images/martin_luther_portrait.jpg",
+          "src": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
+          "image": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
           "title": "Source A (Theological Schism): Martin Luther in Academic Doctor's Robes (Lucas Cranach the Elder, 1529)",
-          "caption": "Oil on panel by Lucas Cranach the Elder (1529, Uffizi Gallery / St. Anne's Museum) depicting Martin Luther in dignified academic doctor's gown and scholar's beret, gazing steadfastly forward as the intellectual catalyst of European Protestantism.",
+          "caption": "Oil on panel by Lucas Cranach the Elder and workshop (dated 1529, Uffizi Gallery, Florence) depicting Martin Luther in dignified black academic doctor's gown and scholar's beret, gazing steadfastly forward as the intellectual catalyst of the European Reformation.",
           "author": "Lucas Cranach the Elder",
           "date": "1529",
           "question_badge": "THEOLOGICAL SCHISM & REFORMATION SPARK",
@@ -922,7 +929,8 @@ export default {
             "hinge_question": "Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?",
             "source_context": "Luther's 95 Theses attacked papal indulgence sales in 1517, sparking the European Protestant Reformation. **Hinge Question:** Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?"
           },
-          "source_context": "In October 1517, Martin Luther attacked papal corruption by circulating his 95 Theses in Wittenberg, sparking the Protestant Reformation across Europe. **Hinge Question:** Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?"
+          "source_context": "In October 1517, Martin Luther attacked papal corruption by circulating his 95 Theses in Wittenberg, sparking the Protestant Reformation across Europe. **Hinge Question:** Why was the invention of printing crucial for turning Luther's local protest into an unstoppable European revolution?",
+          "image_alt": "1529 oil panel portrait by Lucas Cranach the Elder and workshop (Uffizi Gallery, Florence) signed with Cranach's winged serpent cipher and dated 1529, depicting Martin Luther in black academic doctor's robe and beret against a bright blue ground."
         },
         {
           "id": "monarchy_religion_power_l1_src_b",
@@ -949,10 +957,10 @@ export default {
           "id": "monarchy_religion_power_l1_src_c",
           "letter": "C",
           "type": "visual",
-          "src": "/images/henry_viii.jpg",
-          "image": "/images/henry_viii.jpg",
+          "src": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
+          "image": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
           "title": "Source C (Monarchical Supremacy): Portrait of King Henry VIII (Hans Holbein the Younger, c. 1537)",
-          "caption": "Monumental royal portrait by Hans Holbein the Younger (Walker Art Gallery, Liverpool), projecting absolute monarchical majesty, physical bulk, and sovereign defiance.",
+          "caption": "Monumental full-length royal portrait of King Henry VIII after Hans Holbein the Younger's 1537 Whitehall Palace mural (Walker Art Gallery, Liverpool WAG 1350), projecting supreme monarchical majesty, broad-shouldered authority, and defiance of Rome.",
           "author": "Hans Holbein the Younger",
           "date": "c. 1537",
           "question_badge": "SOVEREIGN MAJESTY & IMPERIAL KINGSHIP",
@@ -964,16 +972,17 @@ export default {
             "hinge_question": "How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?",
             "source_context": "Holbein's iconic portrait projected Henry's supreme sovereignty over Church and State. **Hinge Question:** How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?"
           },
-          "source_context": "Following the Break with Rome, Henry used royal portraiture to project supreme imperium, styling himself as an Old Testament king and Supreme Head of the Church. **Hinge Question:** How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?"
+          "source_context": "Following the Break with Rome, Henry used royal portraiture to project supreme imperium, styling himself as an Old Testament king and Supreme Head of the Church. **Hinge Question:** How did Holbein's visual propaganda help establish the concept of the 'Imperial Crown' of England?",
+          "image_alt": "Full-length Tudor oil portrait of King Henry VIII after Hans Holbein the Younger's 1537 Whitehall mural (Walker Art Gallery, Liverpool WAG 1350), standing feet apart in a jewel-slashed doublet, fur-trimmed crimson gown, and feathered bonnet."
         },
         {
           "id": "monarchy_religion_power_l1_src_d",
           "letter": "D",
           "type": "visual",
-          "src": "/images/great_bible_frontispiece.jpg",
-          "image": "/images/great_bible_frontispiece.jpg",
+          "src": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
+          "image": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
           "title": "Source D (Vernacular Scripture & Statecraft): Title Page of the Great Bible (Hans Holbein the Younger, 1539)",
-          "caption": "Woodcut title page of the Great Bible (British Library), showing King Henry VIII receiving the Word of God directly and distributing it downward to Archbishop Cranmer and Cromwell.",
+          "caption": "Hand-coloured 1539 woodcut title page of the Great Bible ('The Byble in Englyshe', National Library of Wales), showing King Henry VIII receiving the Word of God directly from heaven and handing Scripture downward to Archbishop Cranmer and Thomas Cromwell while loyal subjects cry 'God Save the Kynge'.",
           "author": "Hans Holbein the Younger / Thomas Cromwell",
           "date": "1539",
           "question_badge": "STATE-SANCTIONED REFORMATION & HIERARCHY",
@@ -985,7 +994,8 @@ export default {
             "hinge_question": "Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?",
             "source_context": "In 1539, the Great Bible placed English scripture under royal authority, bypassing Rome. **Hinge Question:** Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?"
           },
-          "source_context": "In 1538, Cromwell ordered every parish church in England to purchase a copy of the English Great Bible, placing vernacular scripture under royal oversight. **Hinge Question:** Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?"
+          "source_context": "In 1538, Cromwell ordered every parish church in England to purchase a copy of the English Great Bible, placing vernacular scripture under royal oversight. **Hinge Question:** Why did Henry VIII allow the Bible in English while brutally burning Protestants who challenged Catholic doctrine?",
+          "image_alt": "Hand-coloured 1539 woodcut title page inscribed The Byble in Englyshe (Great Bible), showing King Henry VIII enthroned at the top handing Verbum Dei Bibles to Archbishop Thomas Cranmer and Thomas Cromwell above English subjects crying Vivat Rex and God Save the Kynge."
         },
         {
           "id": "monarchy_religion_power_l1_src_e",
@@ -1128,7 +1138,7 @@ export default {
         "skill_title": "Disciplinary Skill: Causation & Motivation",
         "instructions": "Historians debate why Henry VIII broke with Rome. Was it driven by personal lust for Anne Boleyn, greed for monastery gold, or an obsession with royal power? Examine the evidence and weigh the causes.",
         "visual_source": {
-          "image": "/images/martin_luther_portrait.jpg",
+          "image": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
           "title": "Source A: Lucas Cranach, Portrait of Martin Luther (1529)",
           "caption": "Lucas Cranach the Elder’s portrait of Martin Luther, holding the vernacular German Bible that challenged papal monopoly on Scripture.",
           "question": "How does Source A portray Martin Luther: as an arrogant rebel or a pious scholar guided by Scripture?"
@@ -1976,7 +1986,7 @@ export default {
             "badge": "Stage 1",
             "heading": "Luther Sparks the Reformation",
             "date": "1517–1521",
-            "img": "/images/martin_luther_portrait.jpg",
+            "img": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
             "mode": "contain",
             "stat": "1517: Luther’s 95 Arguments Attack Indulgences",
             "html": "In 1517, German monk <strong>Martin Luther</strong> attacked paid Church <strong>indulgences</strong>, sparking the Reformation while young Henry VIII earned the Pope’s title <strong>Defender of the Faith</strong>.",
@@ -2012,7 +2022,7 @@ export default {
             "badge": "Stage 4",
             "heading": "Cromwell Cuts Rome’s Power",
             "date": "1529–1533",
-            "img": "/images/great_bible_frontispiece.jpg",
+            "img": "/images/ks3_mrp/mrp_l1_s3_great_bible_frontispiece_1539.jpg",
             "mode": "contain-light",
             "stat": "1533 Act Bans Appeals to Rome; Anne Crowned",
             "html": "Clever lawyer <strong>Thomas Cromwell</strong> used <strong>Parliamentary laws</strong> to stop taxes and legal appeals to Rome, letting Archbishop Cranmer crown <strong>Anne Boleyn</strong> in 1533.",
@@ -2024,7 +2034,7 @@ export default {
             "badge": "Stage 5",
             "heading": "Supreme Head & Ruined Abbeys",
             "date": "1534–1540",
-            "img": "/images/henry_viii.jpg",
+            "img": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
             "mode": "contain",
             "stat": "1534 Act of Supremacy; 800+ Monasteries Closed",
             "html": "The 1534 <strong>Act of Supremacy</strong> named Henry <strong>Supreme Head</strong> of England’s Church. Henry executed rebels like Thomas More and closed over <strong>800 rich monasteries</strong>.",
@@ -2064,7 +2074,8 @@ export default {
       },
       "vocab_cloze_text": "Sparked across Europe by Martin Luther’s attack on papal abuses in 1517, the [Reformation] collided with Henry VIII’s [Dynastic] need for a male heir. When the [Papacy] refused to grant a royal [Annulment] of Henry’s marriage to Catherine of Aragon, Thomas Cromwell steered laws through Parliament ending Rome’s rule. The 1534 Act of [Supremacy] and the [Dissolution] of the monasteries transferred vast church wealth to the Crown.",
       "banner_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
-      "hero_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg"
+      "hero_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
+      "banner_position": "center 46%"
     },
     {
       "id": "lesson_2",
@@ -2072,11 +2083,12 @@ export default {
       "enquiry": "How did Elizabeth I navigate religious divisions through the 1559 Via Media?",
       "subtitle": "From the Fires of Smithfield to the Golden Age Settlement",
       "skill": "Historical Significance & Compromise",
-      "card_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
+      "card_image": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
       "card_position": "center 12%",
       "banner": {
         "image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
-        "caption": "The Coronation Procession of Queen Elizabeth I through London on 14 January 1559",
+        "alt": "Contemporary 1559 Tudor pen-and-ink heraldic drawing showing Queen Elizabeth I crowned and holding her sceptre inside a horse-drawn open litter beneath a canopy of state flanked by Lord Robert Dudley and royal footmen",
+        "caption": "The Coronation Procession of Queen Elizabeth I through London on 14 January 1559 (contemporary College of Arms manuscript drawing, British Library Egerton MS 3320): Elizabeth rides in an open litter beneath a royal canopy surrounded by courtiers and cheering Londoners.",
         "position": "center 28%"
       },
       "margin_spine": [
@@ -2490,9 +2502,9 @@ export default {
           "act": 4,
           "title": "The Catholic Storm Gathers (1568–1570)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> Elizabeth’s Middle Way soon faced violent Catholic resistance. In 1569, traditionalist Northern Earls rebel against royal authority, marching into Durham Cathedral, tearing down Protestant communion tables, and celebrating secret Catholic mass. Elizabeth swiftly crushed the rebellion, executing four hundred rebels.</p><p class=\"prose-p\">In response, Pope Pius V issued the 1570 <strong>papal bull</strong> <em>Regnans in Excelsis</em>, ordering Elizabeth's <strong>excommunication</strong>. By declaring Elizabeth a heretic and usurper, the Pope orders Elizabeth deposed, freeing English Catholics from their allegiance and turning every Catholic subject into a suspected traitor.</p>",
-          "image": "/images/regnans_in_excelsis_1570.jpg",
-          "image_alt": "Papal bull Regnans in Excelsis issued by Pope Pius V in 1570",
-          "caption": "Pope Pius V's papal bull 'Regnans in Excelsis' (25 February 1570), excommunicating Elizabeth I as a heretic and releasing English Catholic subjects from their oath of allegiance (Vatican Secret Archives).",
+          "image": "/images/eee/kt2/pope_pius_v_passarotti_walters.jpg",
+          "image_alt": "c. 1566–1572 oil portrait by Bartolomeo Passarotti showing bearded Pope Pius V enthroned in crimson velvet mozzetta and camauro raising his right hand in papal blessing while holding a bound volume (Walters Art Museum 37.453).",
+          "caption": "Pope Pius V (r. 1566–1572), painted by Bartolomeo Passarotti (Walters Art Museum 37.453): On 25 February 1570, Pius V issued the papal bull Regnans in Excelsis excommunicating Elizabeth I as a heretic and releasing English Catholics from their oath of allegiance.",
           "source": {
             "id": "monarchy_religion_power_l2_src_d",
             "letter": "D",
@@ -2820,7 +2832,7 @@ export default {
         "skill_title": "Disciplinary Skill: Significance & Compromise",
         "instructions": "Elizabeth I famously walked a political tightrope between radical Puritans and orthodox Catholics. Analyse how her 1559 Settlement managed to keep peace for thirty years.",
         "visual_source": {
-          "image": "/images/armada_portrait.jpg",
+          "image": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
           "title": "Source B: The Armada Portrait of Elizabeth I (c. 1588)",
           "caption": "The Armada Portrait depicts Elizabeth victorious over Spanish Catholic forces, her hand resting on the globe.",
           "question": "What symbols in Source B show that Elizabeth saw Protestant England as a divinely protected world power?"
@@ -3760,7 +3772,8 @@ export default {
       },
       "vocab_cloze_text": "Inheriting a divided kingdom in 1558, Elizabeth I sought religious stability through her [Via Media] settlement. Taking the careful title of [Supreme Governor], she enforced common prayer-book worship through the 1559 Act of [Uniformity] while fining any Catholic [Recusant] who stayed away. After the Pope’s 1570 decree of [Excommunication] encouraged Catholic plots, Sir Francis Walsingham used [Espionage] and codebreaking to protect the Queen.",
       "banner_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
-      "hero_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg"
+      "hero_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
+      "banner_position": "center 28%"
     },
     {
       "id": "lesson_3",
@@ -3768,11 +3781,12 @@ export default {
       "enquiry": "Why was Philip II’s Armada defeated, and how did naval strategy transform warfare?",
       "subtitle": "From Drake’s Fireships to the Protestant Wind",
       "skill": "Causation & Strategic Evaluation",
-      "card_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
+      "card_image": "/images/ks3_mrp/mrp_l3_card_armada_gravelines_broadsides_1588.jpg",
       "card_position": "center 40%",
       "banner": {
         "image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
-        "caption": "De Spaanse Armada voor de Engelse Kust (The Spanish Armada off the English Coast in 1588)",
+        "alt": "Early-17th-century Dutch maritime oil painting by Cornelis Claesz van Wieringen showing Spanish Armada and English galleons locked in cannon combat amid choppy Channel swells with swimming horses cast overboard in the foreground",
+        "caption": "Cornelis Claesz van Wieringen, De Spaanse Armada voor de Engelse Kust (c. 1620–1625, Rijksmuseum SK-A-1691): English race-built galleons engaging the towering warships of the 1588 Spanish Armada in the English Channel.",
         "position": "center 35%"
       },
       "margin_spine": [
@@ -3936,9 +3950,9 @@ export default {
           "act": 1,
           "title": "The Catholic Crusade (1585–1587)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> By 1585, King Philip II of Spain launched a holy Catholic <strong>crusade</strong> to conquer Protestant England. Philip was infuriated by English help for Dutch rebels fighting Spanish rule in the Netherlands, and enraged by English <strong>privateer</strong> Sir Francis Drake stealing Spanish gold and raiding Caribbean treasure fleets.</p><p class=\"prose-p\">When Mary Queen of Scots was beheaded in 1587, Philip secured papal blessings to depose Elizabeth. Philip assembled an invincible Armada to sail up the English Channel, ferry the Duke of Parma's veteran army from Flanders, and overthrow the Protestant Crown.</p>",
-          "image": "/images/philip_ii.jpg",
-          "image_alt": "Portrait of King Philip II of Spain in black court dress with the Order of the Golden Fleece",
-          "caption": "King Philip II of Spain (1527–1598), ruler of the global Spanish Empire and architect of the 'Enterprise of England' to overthrow Elizabeth I and restore Catholicism (Sofonisba Anguissola / Museo del Prado, P001036).",
+          "image": "/images/ks3_mrp/mrp_l3_b0_king_philip_ii_prado_anguissola.jpg",
+          "image_alt": "Oil portrait by Sofonisba Anguissola (Museo del Prado P001036) showing King Philip II of Spain in austere black velvet court dress and high crowned hat wearing the golden Order of the Golden Fleece and holding rosary beads.",
+          "caption": "King Philip II of Spain (1527–1598) wearing the Order of the Golden Fleece and holding rosary beads (painted by Sofonisba Anguissola, 1565/1573, Museo Nacional del Prado P001036): Devout Catholic ruler who launched the 1588 Spanish Armada crusade against Protestant England.",
           "source": {
             "id": "monarchy_religion_power_l3_src_a",
             "letter": "A",
@@ -3993,10 +4007,10 @@ export default {
             "id": "monarchy_religion_power_l3_src_b",
             "letter": "B",
             "type": "visual",
-            "src": "/images/drake_cadiz_1587.jpg",
-            "image": "/images/drake_cadiz_1587.jpg",
+            "src": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
+            "image": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
             "title": "Source B (Preemptive Strike): Sir Francis Drake Singeing the King of Spain's Beard at Cadiz (April 1587)",
-            "caption": "Engraving of Drake’s raid on Cadiz harbour, where four royal naval galleons destroyed over 30 Spanish transports and tons of seasoned barrel staves.",
+            "caption": "Historical naval etching by Matthew White Ridley depicting Sir Francis Drake's preemptive April 1587 raid on Cadiz harbour ('singeing the King of Spain's beard'), where English galleons burned or sank dozens of Spanish supply vessels and seasoned barrel staves.",
             "author": "Contemporary Dutch Engraver",
             "date": "April 1587",
             "question_badge": "PREEMPTIVE STRIKE & SUPPLY LOGISTICS",
@@ -4007,17 +4021,18 @@ export default {
             "teacher_notes": {
               "hinge_question": "Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?",
               "source_context": "In April 1587, Drake attacked Cadiz, destroying supplies and delaying the Armada for a year. **Hinge Question:** Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?"
-            }
+            },
+            "image_alt": "Detailed naval engraving by Matthew White Ridley depicting Sir Francis Drake's English galleons firing broadsides at close range into towering Spanish ships inside Cadiz Harbour during the April 1587 raid."
           },
           "sources": [
             {
               "id": "monarchy_religion_power_l3_src_b",
               "letter": "B",
               "type": "visual",
-              "src": "/images/drake_cadiz_1587.jpg",
-              "image": "/images/drake_cadiz_1587.jpg",
+              "src": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
+              "image": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
               "title": "Source B (Preemptive Strike): Sir Francis Drake Singeing the King of Spain's Beard at Cadiz (April 1587)",
-              "caption": "Engraving of Drake’s raid on Cadiz harbour, where four royal naval galleons destroyed over 30 Spanish transports and tons of seasoned barrel staves.",
+              "caption": "Historical naval etching by Matthew White Ridley depicting Sir Francis Drake's preemptive April 1587 raid on Cadiz harbour ('singeing the King of Spain's beard'), where English galleons burned or sank dozens of Spanish supply vessels and seasoned barrel staves.",
               "author": "Contemporary Dutch Engraver",
               "date": "April 1587",
               "question_badge": "PREEMPTIVE STRIKE & SUPPLY LOGISTICS",
@@ -4028,21 +4043,22 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?",
                 "source_context": "In April 1587, Drake attacked Cadiz, destroying supplies and delaying the Armada for a year. **Hinge Question:** Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?"
-              }
+              },
+              "image_alt": "Detailed naval engraving by Matthew White Ridley depicting Sir Francis Drake's English galleons firing broadsides at close range into towering Spanish ships inside Cadiz Harbour during the April 1587 raid."
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In April 1587, Francis Drake struck a daring pre-emptive blow, sailing directly into Cadiz harbour. In this raid, known as 'singeing the King of Spain’s beard', Drake destroyed thirty Spanish warships and burned vast warehouses of seasoned barrel staves, devastating Spanish naval <strong>logistics</strong>.</p><p class=\"prose-p\">Burning food barrels forced the Spanish to construct fresh casks from unseasoned green wood. Consequently, rotten water and bread contaminated supplies before the fleet even sailed. Drake's audacious raid caused the invasion fleet held back for a year, buying precious time for English coastal defenses.</p>",
-          "image": "/images/francis_drake.jpg",
-          "image_alt": "Portrait of Sir Francis Drake with terrestrial globe by Marcus Gheeraerts the Younger (1591)",
-          "caption": "Vice-Admiral Sir Francis Drake standing beside a terrestrial globe wearing the Armada Jewel (Marcus Gheeraerts the Younger, 1591, Buckland Abbey / National Maritime Museum)."
+          "image": "/images/ks3_mrp/mrp_l3_b1_sir_francis_drake_gheeraerts_1591.jpg",
+          "image_alt": "1591 oil portrait by Marcus Gheeraerts the Younger showing Vice-Admiral Sir Francis Drake in black doublet and lace ruff wearing the gold Armada Jewel beside a terrestrial globe beneath his coat of arms Sic Parvis Magna.",
+          "caption": "Vice-Admiral Sir Francis Drake standing beside a terrestrial globe and wearing the Queen's Armada Jewel (Marcus Gheeraerts the Younger, 1591, National Maritime Museum, Greenwich BHC2662): In April 1587, Drake raided Cadiz harbour to 'singe the King of Spain's beard'."
         },
         {
           "act": 3,
           "title": "Channel Standoff & Gun Tactics (July 1588)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 29 July 1588, the Armada entered the English Channel under the Duke of Medina Sidonia. The Spanish sailed 130 ships in crescent line formation, designed to resist boarding attacks and protect slow transport vessels with lumbering floating castles.</p><p class=\"prose-p\">Lord Howard and Drake counterattacked using faster race-built ships designed by John Hawkins. Rather than grappling, the nimble English ships delivered rapid naval <strong>broadside</strong> firepower, firing cannons from afar using long-range brass <strong>culverin</strong> guns that battered the Spanish formation while staying out of reach.</p>",
-          "image": "/images/ark_royal.jpg",
-          "image_alt": "Contemporary woodcut of the English flagship Ark Royal, 1587",
-          "caption": "The Ark Royal (originally Ark Ralegh), 38-gun English race-built galleon and flagship of Lord High Admiral Howard of Effingham during the Armada campaign of 1588 (British Museum, 1864,0611.187).",
+          "image": "/images/monarchy_religion_power/maps/mrp7_map_l3_spanish_armada_voyage_wrecks_1588.svg",
+          "image_alt": "KS3 Year 7 historical GIS map of the 1588 Spanish Armada voyage and wrecks showing Lisbon, Corunna, Plymouth, the English Channel crescent advance, a zoomed Straits of Dover inset of the Calais midnight fireships, Dunkirk, and Battle of Gravelines, and the northward Protestant Wind gale retreat and shipwrecks around Scotland and unpartitioned Ireland",
+          "caption": "Reference Map: Voyage & Wrecks of the 1588 Spanish Armada—tracking Philip II’s 130-ship fleet from Lisbon and Corunna up the English Channel past Plymouth, the midnight fireships at Calais and Battle of Gravelines (inset), and the devastating \"Protestant Wind\" shipwrecks off Scotland and Ireland.",
           "source": {
             "id": "monarchy_religion_power_l3_src_c",
             "letter": "C",
@@ -4085,7 +4101,133 @@ export default {
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 29 July 1588, the Armada entered the English Channel under the Duke of Medina Sidonia. The Spanish sailed 130 ships in crescent line formation, designed to resist boarding attacks and protect slow transport vessels with lumbering floating castles.</p><p class=\"prose-p\">Lord Howard and Drake counterattacked using faster race-built ships designed by John Hawkins. Rather than grappling, the nimble English ships delivered rapid naval <strong>broadside</strong> firepower, firing cannons from afar using long-range brass <strong>culverin</strong> guns that battered the Spanish formation while staying out of reach.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 29 July 1588, the Armada entered the English Channel under the Duke of Medina Sidonia. The Spanish sailed 130 ships in crescent line formation, designed to resist boarding attacks and protect slow transport vessels with lumbering floating castles.</p><p class=\"prose-p\">Lord Howard and Drake counterattacked using faster race-built ships designed by John Hawkins. Rather than grappling, the nimble English ships delivered rapid naval <strong>broadside</strong> firepower, firing cannons from afar using long-range brass <strong>culverin</strong> guns that battered the Spanish formation while staying out of reach.</p>",
+          "stage_hook_map": {
+            "id": "mrp7-l3-spanish-armada-voyage-wrecks-map",
+            "image": "/images/monarchy_religion_power/maps/mrp7_map_l3_spanish_armada_voyage_wrecks_1588.svg",
+            "title": "The 1588 Spanish Armada: Channel Battles, Fireships & Atlantic Wrecks",
+            "subtitle": "Lisbon & Plymouth, Calais Fireships, Gravelines & Atlantic Wrecks · Tap pins 1–4",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 39.1,
+                "y": 48.2,
+                "color": "#1e3a8a",
+                "label": "1. Lisbon, Corunna & Plymouth (May–July 1588)",
+                "badge": "130 Ships • Crescent Formation",
+                "date": "May–July 1588",
+                "title": "Lisbon, Corunna & Plymouth (May–July 1588): Crescent Fleet vs Race-Built Ships",
+                "body": "Delayed a year by Francis Drake’s 1587 raid on Cádiz, King Philip II’s 130-ship Armada sailed from Lisbon and Corunna under the Duke of Medina Sidonia and entered the English Channel on 29 July 1588 in a tight seven-mile defensive crescent. Sailing out of Plymouth, Lord Howard and Drake slipped behind the Spanish windward (\"upwind\") and fired long-range brass culverin cannons while staying safely out of boarding reach.",
+                "details": "Delayed a year by Francis Drake’s 1587 raid on Cádiz, King Philip II’s 130-ship Armada sailed from Lisbon and Corunna under the Duke of Medina Sidonia and entered the English Channel on 29 July 1588 in a tight seven-mile defensive crescent. Sailing out of Plymouth, Lord Howard and Drake slipped behind the Spanish windward (\"upwind\") and fired long-range brass culverin cannons while staying safely out of boarding reach.",
+                "hinge": "Why did sailing faster race-built ships upwind of the Armada stop Spain from using its traditional boarding tactics?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 76.2,
+                "y": 45.9,
+                "align": "left",
+                "color": "#b45309",
+                "label": "2. Calais Roads Midnight Fireships (7–8 Aug 1588)",
+                "badge": "8 Blazing “Hellburners”",
+                "date": "7–8 August 1588",
+                "title": "Calais Roads Midnight Fireships (7–8 Aug 1588): Scattering the Crescent",
+                "body": "Forced to anchor in exposed Calais Roads while waiting for the Duke of Parma’s delayed army in Flanders, the Spanish fleet faced disaster at midnight on 7–8 August. English captains packed eight old ships with pitch, tar, and gunpowder and drifted them blazing into the anchorage—panicking Spanish crews into cutting their heavy anchor cables and scattering in the dark.",
+                "details": "Forced to anchor in exposed Calais Roads while waiting for the Duke of Parma’s delayed army in Flanders, the Spanish fleet faced disaster at midnight on 7–8 August. English captains packed eight old ships with pitch, tar, and gunpowder and drifted them blazing into the anchorage—panicking Spanish crews into cutting their heavy anchor cables and scattering in the dark.",
+                "hinge": "Even though the fireships did not sink a single Spanish galleon at Calais, why did forcing captains to cut their anchors prove fatal?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 80.9,
+                "y": 43.5,
+                "align": "left",
+                "color": "#be123c",
+                "label": "3. Battle of Gravelines (8 Aug 1588)",
+                "badge": "Point-Blank Broadsides",
+                "date": "8 August 1588",
+                "title": "Battle of Gravelines (8 August 1588): English Broadsides Block Parma’s Invasion",
+                "body": "At dawn on 8 August off Gravelines, English warships closed in on the scattered Spanish galleons and blasted their wooden hulls for eight hours with rapid close-range broadsides. With Dutch rebel flyboats also blocking shallow Flemish canals at Dunkirk, Parma’s 27,000 invasion troops could never board barges to cross to England.",
+                "details": "At dawn on 8 August off Gravelines, English warships closed in on the scattered Spanish galleons and blasted their wooden hulls for eight hours with rapid close-range broadsides. With Dutch rebel flyboats also blocking shallow Flemish canals at Dunkirk, Parma’s 27,000 invasion troops could never board barges to cross to England.",
+                "hinge": "Why was preventing Medina Sidonia from linking up with the Duke of Parma’s army at Dunkirk the decisive turning point of 1588?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 31.6,
+                "y": 31.8,
+                "color": "#9f1239",
+                "label": "4. The “Protestant Wind” & Atlantic Shipwrecks",
+                "badge": "Scotland & Ireland Wrecks",
+                "date": "Aug–Oct 1588",
+                "title": "The “Protestant Wind” & Atlantic Shipwrecks (Aug–Oct 1588): Disaster Around Ireland",
+                "body": "Blown north into the North Sea after Gravelines, the battered, thirsty Armada had no choice but to sail home the perilous long way around Scotland and Ireland. Ferocious Atlantic gales—hailed by Elizabeth I on her victory medal as the “Protestant Wind” (\"God blew and they were scattered\")—drove over two dozen anchorless galleons onto Scottish and Irish rocks; barely 67 ships reached Spain.",
+                "details": "Blown north into the North Sea after Gravelines, the battered, thirsty Armada had no choice but to sail home the perilous long way around Scotland and Ireland. Ferocious Atlantic gales—hailed by Elizabeth I on her victory medal as the “Protestant Wind” (\"God blew and they were scattered\")—drove over two dozen anchorless galleons onto Scottish and Irish rocks; barely 67 ships reached Spain.",
+                "hinge": "Was the Spanish Armada defeated mainly by Atlantic storms, or had English naval tactics already ruined Philip II’s invasion plan?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 39.1,
+                "y": 48.2,
+                "color": "#1e3a8a",
+                "label": "1. Lisbon, Corunna & Plymouth (May–July 1588)",
+                "badge": "130 Ships • Crescent Formation",
+                "date": "May–July 1588",
+                "title": "Lisbon, Corunna & Plymouth (May–July 1588): Crescent Fleet vs Race-Built Ships",
+                "body": "Delayed a year by Francis Drake’s 1587 raid on Cádiz, King Philip II’s 130-ship Armada sailed from Lisbon and Corunna under the Duke of Medina Sidonia and entered the English Channel on 29 July 1588 in a tight seven-mile defensive crescent. Sailing out of Plymouth, Lord Howard and Drake slipped behind the Spanish windward (\"upwind\") and fired long-range brass culverin cannons while staying safely out of boarding reach.",
+                "details": "Delayed a year by Francis Drake’s 1587 raid on Cádiz, King Philip II’s 130-ship Armada sailed from Lisbon and Corunna under the Duke of Medina Sidonia and entered the English Channel on 29 July 1588 in a tight seven-mile defensive crescent. Sailing out of Plymouth, Lord Howard and Drake slipped behind the Spanish windward (\"upwind\") and fired long-range brass culverin cannons while staying safely out of boarding reach.",
+                "hinge": "Why did sailing faster race-built ships upwind of the Armada stop Spain from using its traditional boarding tactics?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 76.2,
+                "y": 45.9,
+                "align": "left",
+                "color": "#b45309",
+                "label": "2. Calais Roads Midnight Fireships (7–8 Aug 1588)",
+                "badge": "8 Blazing “Hellburners”",
+                "date": "7–8 August 1588",
+                "title": "Calais Roads Midnight Fireships (7–8 Aug 1588): Scattering the Crescent",
+                "body": "Forced to anchor in exposed Calais Roads while waiting for the Duke of Parma’s delayed army in Flanders, the Spanish fleet faced disaster at midnight on 7–8 August. English captains packed eight old ships with pitch, tar, and gunpowder and drifted them blazing into the anchorage—panicking Spanish crews into cutting their heavy anchor cables and scattering in the dark.",
+                "details": "Forced to anchor in exposed Calais Roads while waiting for the Duke of Parma’s delayed army in Flanders, the Spanish fleet faced disaster at midnight on 7–8 August. English captains packed eight old ships with pitch, tar, and gunpowder and drifted them blazing into the anchorage—panicking Spanish crews into cutting their heavy anchor cables and scattering in the dark.",
+                "hinge": "Even though the fireships did not sink a single Spanish galleon at Calais, why did forcing captains to cut their anchors prove fatal?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 80.9,
+                "y": 43.5,
+                "align": "left",
+                "color": "#be123c",
+                "label": "3. Battle of Gravelines (8 Aug 1588)",
+                "badge": "Point-Blank Broadsides",
+                "date": "8 August 1588",
+                "title": "Battle of Gravelines (8 August 1588): English Broadsides Block Parma’s Invasion",
+                "body": "At dawn on 8 August off Gravelines, English warships closed in on the scattered Spanish galleons and blasted their wooden hulls for eight hours with rapid close-range broadsides. With Dutch rebel flyboats also blocking shallow Flemish canals at Dunkirk, Parma’s 27,000 invasion troops could never board barges to cross to England.",
+                "details": "At dawn on 8 August off Gravelines, English warships closed in on the scattered Spanish galleons and blasted their wooden hulls for eight hours with rapid close-range broadsides. With Dutch rebel flyboats also blocking shallow Flemish canals at Dunkirk, Parma’s 27,000 invasion troops could never board barges to cross to England.",
+                "hinge": "Why was preventing Medina Sidonia from linking up with the Duke of Parma’s army at Dunkirk the decisive turning point of 1588?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 31.6,
+                "y": 31.8,
+                "color": "#9f1239",
+                "label": "4. The “Protestant Wind” & Atlantic Shipwrecks",
+                "badge": "Scotland & Ireland Wrecks",
+                "date": "Aug–Oct 1588",
+                "title": "The “Protestant Wind” & Atlantic Shipwrecks (Aug–Oct 1588): Disaster Around Ireland",
+                "body": "Blown north into the North Sea after Gravelines, the battered, thirsty Armada had no choice but to sail home the perilous long way around Scotland and Ireland. Ferocious Atlantic gales—hailed by Elizabeth I on her victory medal as the “Protestant Wind” (\"God blew and they were scattered\")—drove over two dozen anchorless galleons onto Scottish and Irish rocks; barely 67 ships reached Spain.",
+                "details": "Blown north into the North Sea after Gravelines, the battered, thirsty Armada had no choice but to sail home the perilous long way around Scotland and Ireland. Ferocious Atlantic gales—hailed by Elizabeth I on her victory medal as the “Protestant Wind” (\"God blew and they were scattered\")—drove over two dozen anchorless galleons onto Scottish and Irish rocks; barely 67 ships reached Spain.",
+                "hinge": "Was the Spanish Armada defeated mainly by Atlantic storms, or had English naval tactics already ruined Philip II’s invasion plan?"
+              }
+            ]
+          }
         },
         {
           "act": 4,
@@ -4217,10 +4359,10 @@ export default {
           "id": "monarchy_religion_power_l3_src_b",
           "letter": "B",
           "type": "visual",
-          "src": "/images/drake_cadiz_1587.jpg",
-          "image": "/images/drake_cadiz_1587.jpg",
+          "src": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
+          "image": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
           "title": "Source B (Preemptive Strike): Sir Francis Drake Singeing the King of Spain's Beard at Cadiz (April 1587)",
-          "caption": "Engraving of Drake’s raid on Cadiz harbour, where four royal naval galleons destroyed over 30 Spanish transports and tons of seasoned barrel staves.",
+          "caption": "Historical naval etching by Matthew White Ridley depicting Sir Francis Drake's preemptive April 1587 raid on Cadiz harbour ('singeing the King of Spain's beard'), where English galleons burned or sank dozens of Spanish supply vessels and seasoned barrel staves.",
           "author": "Contemporary Dutch Engraver",
           "date": "April 1587",
           "question_badge": "PREEMPTIVE STRIKE & SUPPLY LOGISTICS",
@@ -4232,7 +4374,8 @@ export default {
             "hinge_question": "Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?",
             "source_context": "In April 1587, Drake attacked Cadiz, destroying supplies and delaying the Armada for a year. **Hinge Question:** Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?"
           },
-          "source_context": "In April 1587, Elizabeth dispatched Drake to 'singe the King of Spain's beard'. His tactical triumph delayed the invasion until the summer of 1588. **Hinge Question:** Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?"
+          "source_context": "In April 1587, Elizabeth dispatched Drake to 'singe the King of Spain's beard'. His tactical triumph delayed the invasion until the summer of 1588. **Hinge Question:** Why do logistics, food, and water barrels matter just as much as cannons in winning naval campaigns?",
+          "image_alt": "Detailed naval engraving by Matthew White Ridley depicting Sir Francis Drake's English galleons firing broadsides at close range into towering Spanish ships inside Cadiz Harbour during the April 1587 raid."
         },
         {
           "id": "monarchy_religion_power_l3_src_c",
@@ -5256,7 +5399,7 @@ export default {
             "badge": "Stage 2",
             "heading": "Singeing the King’s Beard",
             "date": "April 1587",
-            "img": "/images/drake_cadiz_1587.jpg",
+            "img": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
             "mode": "contain-light",
             "stat": "30 Ships & Seasoned Food-Barrel Staves Burned",
             "html": "Drake raided <strong>Cadiz harbour</strong> in 1587, burning thirty ships and barrel wood—delaying Spain a year so <strong>damp new casks</strong> rotted the Armada’s <strong>food and water</strong>.",
@@ -5305,7 +5448,7 @@ export default {
             "isOutcome": true,
             "heading": "Sea Power Protects England",
             "date": "Late 1588",
-            "img": "/images/armada_portrait.jpg",
+            "img": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
             "mode": "landscape",
             "pos": "center 20%",
             "stat": "1588 Medal: “God Blew and They Were Scattered”",
@@ -5333,7 +5476,8 @@ export default {
       },
       "vocab_cloze_text": "In 1588, Philip II of Spain launched a Catholic [Crusade] to overthrow Elizabeth I, despite English [Privateer] Francis Drake raiding Spanish supplies at Cadiz in 1587. In the English Channel, nimble race-built warships outmanoeuvred each towering Spanish [Galleon], firing long-range [Broadside] volleys. On the night of 7–8 August, eight blazing [Fireship] vessels scattered Spain’s fleet at Calais before Atlantic storms completed what Protestants hailed as divine [Providence].",
       "banner_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
-      "hero_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg"
+      "hero_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
+      "banner_position": "center 35%"
     },
     {
       "id": "lesson_4",
@@ -5341,11 +5485,12 @@ export default {
       "enquiry": "Why did the collision over Divine Right lead to the trial and execution of Charles I?",
       "subtitle": "From the Battle of Naseby to Parliamentary Sovereignty",
       "skill": "Causation & Constitutional Change",
-      "card_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
+      "card_image": "/images/ks3_mrp/mrp_l4_card_cromwell_at_dunbar_gow.jpg",
       "card_position": "center 65%",
       "banner": {
         "image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
-        "caption": "The Prince of Orange Landing at Torbay, 5 November 1688",
+        "alt": "Engraving after J. M. W. Turner's painting The Prince of Orange, William III, Embarked from Holland, and Landed at Torbay, November 4th, 1688, after a Stormy Passage showing Dutch warships and rowboats in rolling Channel surf",
+        "caption": "William Miller after J. M. W. Turner, The Prince of Orange Landing at Torbay, November 1688 (published 1852 after 1832 Tate painting): William of Orange's Protestant fleet arriving off Devon during the Glorious Revolution.",
         "position": "center 25%"
       },
       "margin_spine": [
@@ -5513,10 +5658,10 @@ export default {
             "id": "monarchy_religion_power_l4_src_a",
             "letter": "A",
             "type": "visual",
-            "src": "/images/charles_first.jpg",
-            "image": "/images/charles_first.jpg",
+            "src": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
+            "image": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
             "title": "Source A (Divine Monarchy): King Charles I in Three Positions (Sir Anthony van Dyck, 1635–1636)",
-            "caption": "Triple portrait painted by Anthony van Dyck (Royal Collection Trust) for the sculptor Bernini in Rome, capturing the aloof majesty and Divine Right ideology of Charles I.",
+            "caption": "Triple oil portrait Charles I in Three Positions painted by Sir Anthony van Dyck (1635–1636, Royal Collection Trust RCIN 404420) as a sculptor's model for Gian Lorenzo Bernini in Rome, capturing Charles I's serene conviction in his sacred Divine Right majesty.",
             "author": "Sir Anthony van Dyck",
             "date": "1635–1636",
             "question_badge": "DIVINE RIGHT OF KINGS & PERSONAL RULE",
@@ -5527,17 +5672,18 @@ export default {
             "teacher_notes": {
               "hinge_question": "Can an absolutist king rule indefinitely without parliamentary taxation?",
               "source_context": "Van Dyck's portrait captured Charles I's divine right ideology during his 11-year Personal Rule. **Hinge Question:** Can an absolutist king rule indefinitely without parliamentary taxation?"
-            }
+            },
+            "image_alt": "1635–1636 oil painting Charles I in Three Positions by Sir Anthony van Dyck (Royal Collection RCIN 404420), depicting King Charles I in left profile, full-face, and right three-quarter view wearing silk doublets, lace collars, and the blue Garter ribbon."
           },
           "sources": [
             {
               "id": "monarchy_religion_power_l4_src_a",
               "letter": "A",
               "type": "visual",
-              "src": "/images/charles_first.jpg",
-              "image": "/images/charles_first.jpg",
+              "src": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
+              "image": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
               "title": "Source A (Divine Monarchy): King Charles I in Three Positions (Sir Anthony van Dyck, 1635–1636)",
-              "caption": "Triple portrait painted by Anthony van Dyck (Royal Collection Trust) for the sculptor Bernini in Rome, capturing the aloof majesty and Divine Right ideology of Charles I.",
+              "caption": "Triple oil portrait Charles I in Three Positions painted by Sir Anthony van Dyck (1635–1636, Royal Collection Trust RCIN 404420) as a sculptor's model for Gian Lorenzo Bernini in Rome, capturing Charles I's serene conviction in his sacred Divine Right majesty.",
               "author": "Sir Anthony van Dyck",
               "date": "1635–1636",
               "question_badge": "DIVINE RIGHT OF KINGS & PERSONAL RULE",
@@ -5548,7 +5694,8 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Can an absolutist king rule indefinitely without parliamentary taxation?",
                 "source_context": "Van Dyck's portrait captured Charles I's divine right ideology during his 11-year Personal Rule. **Hinge Question:** Can an absolutist king rule indefinitely without parliamentary taxation?"
-              }
+              },
+              "image_alt": "1635–1636 oil painting Charles I in Three Positions by Sir Anthony van Dyck (Royal Collection RCIN 404420), depicting King Charles I in left profile, full-face, and right three-quarter view wearing silk doublets, lace collars, and the blue Garter ribbon."
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Believing in the absolute <strong>Divine Right</strong> of Kings, Charles I insisted monarchs answered only to God. When MPs challenged his religious policy and taxation in 1629, Charles dismissed Parliament and ruled for eleven years with no MPs, a period opponents branded the 'Eleven Years' Tyranny' or <strong>Personal Rule</strong>.</p><p class=\"prose-p\">To raise funds without Parliament, Charles levied <strong>Ship Money</strong> on inland towns, an ancient naval tax traditionally charged only to coastal counties. In 1637, wealthy landowner John Hampden refuses to pay, sparking widespread tax boycotts across England.</p>",
@@ -5560,9 +5707,9 @@ export default {
           "act": 2,
           "title": "The Breakdown of Trust (1640–1642)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Scottish rebellion forced Charles to recall Parliament in 1640. Furious MPs dismantled royal courts and pursued the <strong>impeachment</strong> of Charles's closest ministers. Tensions exploded on 4 January 1642, when armed royal guards raid the Commons chamber as Charles attempted to arrest Five MPs for high treason.</p><p class=\"prose-p\">Warned beforehand, the Five MPs escape by river boat into the protective shelter of the City of London. Humiliated and furious, Charles fled London. In August 1642, the King raises war flag at Nottingham, plunging England into brutal civil war.</p>",
-          "image": "/images/archbishop_laud.jpg",
-          "image_alt": "Portrait of William Laud, Archbishop of Canterbury, by the studio of Anthony van Dyck",
-          "caption": "William Laud (1573–1645), Archbishop of Canterbury under Charles I, whose High Church Arminian reforms and persecution of Puritans triggered fierce parliamentary opposition (Studio of Anthony van Dyck / Fitzwilliam Museum).",
+          "image": "/images/ks3_mrp/mrp_l4_b1_archbishop_william_laud_vandyck.jpg",
+          "image_alt": "c. 1638 oil portrait from the workshop of Sir Anthony van Dyck showing William Laud, Archbishop of Canterbury, in black square cap, white lawn rochet sleeves, and black chimere leaning beside a stone column.",
+          "caption": "William Laud (1573–1645), Archbishop of Canterbury under Charles I (Workshop of Sir Anthony van Dyck, c. 1638, State Hermitage Museum): Laud's ceremonial High Church reforms and Star Chamber punishments inflamed Puritan MPs as trust collapsed between 1640 and 1642.",
           "source": {
             "id": "monarchy_religion_power_l4_src_b",
             "letter": "B",
@@ -5656,9 +5803,9 @@ export default {
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Early royalist victories exposed Parliament's weak regional militias. In 1645, Parliament created the revolutionary <strong>New Model Army</strong>: Britain’s first professional national force of full-time paid redcoats, promoted purely on merit rather than noble birth, commanded by Sir Thomas Fairfax and Oliver Cromwell.</p><p class=\"prose-p\">At the decisive Battle of Naseby in June 1645, Cromwell’s cavalry charges smashed the King’s flanks. Royalists routed and captured surrendered their artillery and private royal correspondence, completely destroying Charles’s military hopes and sealing Parliamentary victory.</p>",
-          "image": "/images/monarchy_religion_power/sir_thomas_fairfax.jpg",
-          "image_alt": "Portrait engraving of General Sir Thomas Fairfax, Commander-in-Chief of the New Model Army",
-          "caption": "General Sir Thomas Fairfax (1612–1671), appointed Commander-in-Chief of Parliament’s professional New Model Army in 1645 alongside Oliver Cromwell, victor at the decisive Battle of Naseby."
+          "image": "/images/ks3_mrp/mrp_l4_b2_sir_thomas_fairfax_portrait.jpg",
+          "image_alt": "Mid-17th-century oil portrait by Robert Walker and studio showing Parliamentary Commander-in-Chief General Sir Thomas Fairfax in polished black steel breastplate and plain white linen collar.",
+          "caption": "General Sir Thomas Fairfax (1612–1671) in steel armour (painted by Robert Walker and studio, National Portrait Gallery, London): Appointed Commander-in-Chief of Parliament's professional New Model Army in 1645 alongside Oliver Cromwell, routing King Charles I's forces at Naseby."
         },
         {
           "act": 4,
@@ -5715,9 +5862,9 @@ export default {
           "act": 5,
           "title": "The Glorious Revolution & The Bill of Rights (1660–1689)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> The 1660 Stuart <strong>Restoration</strong> brought back the Crown, but religious conflict reignited under Catholic King James II. In 1688, Protestant nobles invited Dutch Prince William of Orange to intervene. A Dutch army lands at Torbay, and James II flees the country to France in the Glorious Revolution.</p><p class=\"prose-p\">Parliament offered the crown to William and Mary on strict conditions, enacting the 1689 <strong>Bill of Rights</strong>. Monarchy was permanently bound by the law: kings could neither cancel statutes nor raise taxes without parliamentary consent, cementing constitutional rule.</p>",
-          "image": "/images/oliver_cromwell.jpg",
-          "image_alt": "Portrait of Oliver Cromwell, Lord Protector of the Commonwealth of England, Scotland, and Ireland",
-          "caption": "Oliver Cromwell (1599–1658), commander of the New Model Army and Lord Protector of the Commonwealth (1653–1658), whose military rule followed the execution of Charles I (Samuel Cooper / National Portrait Gallery, NPG 520).",
+          "image": "/images/ks3_mrp/mrp_l4_b4_coronation_william_mary_westminster_1689.jpg",
+          "image_alt": "1689 multi-panel Dutch copperplate etching by Romeyn de Hooghe depicting the joint Westminster Abbey coronation, Bible oath, and royal procession of King William III and Queen Mary II in April 1689.",
+          "caption": "Romeyn de Hooghe, The Joint Coronation of King William III and Queen Mary II in Westminster Abbey, April 1689 (Rijksmuseum RP-P-OB-67.721): Following the 1688 Glorious Revolution, William and Mary accepted the Crown bound by parliamentary consent and the 1689 Bill of Rights.",
           "source": {
             "id": "monarchy_religion_power_l4_src_e",
             "letter": "E",
@@ -5768,10 +5915,10 @@ export default {
           "id": "monarchy_religion_power_l4_src_a",
           "letter": "A",
           "type": "visual",
-          "src": "/images/charles_first.jpg",
-          "image": "/images/charles_first.jpg",
+          "src": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
+          "image": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
           "title": "Source A (Divine Monarchy): King Charles I in Three Positions (Sir Anthony van Dyck, 1635–1636)",
-          "caption": "Triple portrait painted by Anthony van Dyck (Royal Collection Trust) for the sculptor Bernini in Rome, capturing the aloof majesty and Divine Right ideology of Charles I.",
+          "caption": "Triple oil portrait Charles I in Three Positions painted by Sir Anthony van Dyck (1635–1636, Royal Collection Trust RCIN 404420) as a sculptor's model for Gian Lorenzo Bernini in Rome, capturing Charles I's serene conviction in his sacred Divine Right majesty.",
           "author": "Sir Anthony van Dyck",
           "date": "1635–1636",
           "question_badge": "DIVINE RIGHT OF KINGS & PERSONAL RULE",
@@ -5783,7 +5930,8 @@ export default {
             "hinge_question": "Can an absolutist king rule indefinitely without parliamentary taxation?",
             "source_context": "Van Dyck's portrait captured Charles I's divine right ideology during his 11-year Personal Rule. **Hinge Question:** Can an absolutist king rule indefinitely without parliamentary taxation?"
           },
-          "source_context": "Between 1629 and 1640, Charles I ruled without calling Parliament (the 'Eleven Years\\' Tyranny'), raising illegal revenues through Ship Money and Distraint of Knighthood. **Hinge Question:** Can an absolutist king rule indefinitely without parliamentary taxation?"
+          "source_context": "Between 1629 and 1640, Charles I ruled without calling Parliament (the 'Eleven Years\\' Tyranny'), raising illegal revenues through Ship Money and Distraint of Knighthood. **Hinge Question:** Can an absolutist king rule indefinitely without parliamentary taxation?",
+          "image_alt": "1635–1636 oil painting Charles I in Three Positions by Sir Anthony van Dyck (Royal Collection RCIN 404420), depicting King Charles I in left profile, full-face, and right three-quarter view wearing silk doublets, lace collars, and the blue Garter ribbon."
         },
         {
           "id": "monarchy_religion_power_l4_src_b",
@@ -6837,7 +6985,7 @@ export default {
             "badge": "Stage 1",
             "heading": "Eleven Years Without MPs",
             "date": "1629–1640",
-            "img": "/images/charles_first.jpg",
+            "img": "/images/ks3_mrp/mrp_l4_s0_charles_i_three_positions_vandyck.jpg",
             "mode": "contain",
             "stat": "1637: John Hampden Refuses Inland Ship Money Tax",
             "html": "Claiming <strong>Divine Right</strong> from God, <strong>Charles I</strong> shut Parliament for eleven years and taxed inland counties with <strong>Ship Money</strong>, sparking angry protests.",
@@ -6925,7 +7073,8 @@ export default {
       },
       "vocab_cloze_text": "Believing firmly in the [Divine Right] of kings, Charles I governed without Parliament during eleven years of [Personal Rule] and collected unpopular [Ship Money] taxes inland. Civil war broke out in 1642, and Oliver Cromwell’s disciplined [New Model Army] crushed royalist forces at Naseby. Charles’s trial and [Regicide] in January 1649 shocked Europe, paving the way by 1689 for William and Mary to accept Parliament’s [Bill of Rights].",
       "banner_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
-      "hero_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg"
+      "hero_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
+      "banner_position": "center 25%"
     },
     {
       "id": "lesson_5",
@@ -6933,11 +7082,12 @@ export default {
       "enquiry": "Which turning point decisively transformed the English state between 1517 and 1689?",
       "subtitle": "The 170-Year Struggle for Sovereign Power in Britain",
       "skill": "Synoptic Evaluation & Extent of Change",
-      "card_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
+      "card_image": "/images/ks3_mrp/mrp_l5_card_charles_i_house_of_commons_copley.jpg",
       "card_position": "center 20%",
       "banner": {
         "image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
-        "caption": "Sala Regalis cum Curia West-monasterij, vulgo Westminster Haall (New Palace Yard and Westminster Hall)",
+        "alt": "1647 copperplate etching by Wenceslaus Hollar inscribed Sala Regalis cum Curia West-monasterij, vulgo Westminster Haall showing horse-drawn coaches and citizens in New Palace Yard before the great Gothic doorway of Westminster Hall and clock tower",
+        "caption": "Wenceslaus Hollar, Sala Regalis cum Curia West-monasterij, vulgo Westminster Haall (1647, British Museum / Metropolitan Museum of Art): New Palace Yard and Westminster Hall, seat of England's royal law courts, parliamentary state trials, and constitutional struggle.",
         "position": "center 24%"
       },
       "margin_spine": [
@@ -7158,10 +7308,10 @@ export default {
             "id": "monarchy_religion_power_l5_src_b",
             "letter": "B",
             "type": "visual",
-            "src": "/images/armada_portrait.jpg",
-            "image": "/images/armada_portrait.jpg",
+            "src": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+            "image": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
             "title": "Source B (Imperial Protestant Identity): The Armada Portrait of Queen Elizabeth I (George Gower, 1588)",
-            "caption": "Monumental royal portrait (Woburn Abbey / Queen’s House, Greenwich) showing Elizabeth resting her hand upon the global sphere with the destroyed Spanish Armada in the background.",
+            "caption": "Monumental Armada Portrait of Queen Elizabeth I (c. 1588, Woburn Abbey / Royal Museums Greenwich ZBA7769), showing Elizabeth resting her hand upon the terrestrial globe beneath an imperial crown while English fireships scatter the wrecked Spanish Armada behind her.",
             "author": "George Gower",
             "date": "c. 1588",
             "question_badge": "SYNOPTIC THEME: NATIONAL PROTESTANT IDENTITY",
@@ -7172,17 +7322,18 @@ export default {
             "teacher_notes": {
               "hinge_question": "How did anti-Catholicism become the glue of English national identity under the Tudors?",
               "source_context": "The 1588 Armada Portrait celebrated England's emergence as an imperial Protestant maritime power. **Hinge Question:** How did anti-Catholicism become the glue of English national identity under the Tudors?"
-            }
+            },
+            "image_alt": "c. 1588 Woburn Abbey Armada Portrait of Queen Elizabeth I in pearl-studded black and gold gown with her right hand resting on the Americas upon a terrestrial globe, flanked by the imperial crown and twin seascapes of English fireships and wrecked Spanish Armada galleons."
           },
           "sources": [
             {
               "id": "monarchy_religion_power_l5_src_b",
               "letter": "B",
               "type": "visual",
-              "src": "/images/armada_portrait.jpg",
-              "image": "/images/armada_portrait.jpg",
+              "src": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+              "image": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
               "title": "Source B (Imperial Protestant Identity): The Armada Portrait of Queen Elizabeth I (George Gower, 1588)",
-              "caption": "Monumental royal portrait (Woburn Abbey / Queen’s House, Greenwich) showing Elizabeth resting her hand upon the global sphere with the destroyed Spanish Armada in the background.",
+              "caption": "Monumental Armada Portrait of Queen Elizabeth I (c. 1588, Woburn Abbey / Royal Museums Greenwich ZBA7769), showing Elizabeth resting her hand upon the terrestrial globe beneath an imperial crown while English fireships scatter the wrecked Spanish Armada behind her.",
               "author": "George Gower",
               "date": "c. 1588",
               "question_badge": "SYNOPTIC THEME: NATIONAL PROTESTANT IDENTITY",
@@ -7193,21 +7344,22 @@ export default {
               "teacher_notes": {
                 "hinge_question": "How did anti-Catholicism become the glue of English national identity under the Tudors?",
                 "source_context": "The 1588 Armada Portrait celebrated England's emergence as an imperial Protestant maritime power. **Hinge Question:** How did anti-Catholicism become the glue of English national identity under the Tudors?"
-              }
+              },
+              "image_alt": "c. 1588 Woburn Abbey Armada Portrait of Queen Elizabeth I in pearl-studded black and gold gown with her right hand resting on the Americas upon a terrestrial globe, flanked by the imperial crown and twin seascapes of English fireships and wrecked Spanish Armada galleons."
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Elizabeth I anchored national unity through pragmatic statecraft. Her 1559 Elizabethan Religious Settlement provided a compromise for both sides, creating a Protestant national church with moderate ceremonies that allowed broad outward <strong>conformity</strong> without religious inquisitions.</p><p class=\"prose-p\">She enforced order through modest fines for missing church on Sundays to penalize recusants. When Spain invaded in 1588, England was united by Armada victory, forging a lasting patriotic myth that God favoured Protestant England and strengthening parliamentary support for the Crown.</p>",
-          "image": "/images/elizabeth_coronation_portrait.jpg",
-          "image_alt": "Coronation Portrait of Queen Elizabeth I holding the orb and sceptre (c. 1600, National Portrait Gallery)",
-          "caption": "Queen Elizabeth I in her cloth-of-gold coronation robes clasping the royal orb and sceptre (c. 1600 after 1559 original, National Portrait Gallery, NPG 5175), embodying England’s confident Protestant national monarchy."
+          "image": "/images/ks3_mrp/mrp_l5_b1_elizabeth_i_coronation_robes_npg5175.jpg",
+          "image_alt": "c. 1600 panel portrait after the lost 1559 original showing Queen Elizabeth I wearing St Edward's Crown and ermine-trimmed cloth-of-gold coronation robes while clasping the royal sceptre and orb (National Portrait Gallery NPG 5175).",
+          "caption": "Queen Elizabeth I in her cloth-of-gold coronation robes clasping the royal sceptre and orb (c. 1600 after 1559 original, National Portrait Gallery, London NPG 5175), embodying England's confident Protestant national monarchy."
         },
         {
           "act": 3,
           "title": "The Stuart Rupture: Divine Right (1603–1640)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The Stuart accession shattered Tudor harmony. James I and Charles I embraced <strong>absolutism</strong>, insisting through Divine Right that kings claim only God rules them, free from parliamentary consent. Charles ruled eleven years without MPs, extracting illegal taxes without votes through Ship Money.</p><p class=\"prose-p\">This tyranny collapsed when Scots rebel against English rules and prayer books. Bankrupted by military resistance, Charles was forced to recall MPs in 1640, triggering an ideological showdown between absolute royal power and parliamentary privilege.</p>",
-          "image": "/images/james_i.jpg",
-          "image_alt": "Portrait of King James I of England and VI of Scotland by John de Critz",
-          "caption": "King James I of England and VI of Scotland (1566–1625), who articulated the doctrine of the Divine Right of Kings in 'The True Law of Free Monarchies' (John de Critz / National Portrait Gallery, NPG 548).",
+          "image": "/images/ks3_mrp/mrp_l5_b2_king_james_i_decritz_npg.jpg",
+          "image_alt": "c. 1606 oil portrait by John de Critz the Elder showing King James I of England and VI of Scotland in a plumed jewelled hat, white silk doublet, fur-lined cloak, and Great George collar of the Order of the Garter.",
+          "caption": "King James I of England and VI of Scotland (1566–1625), painted by John de Critz the Elder (c. 1606): First Stuart king of England, who proclaimed the Divine Right of Kings and clashed repeatedly with MPs over royal prerogative and taxation.",
           "source": {
             "id": "monarchy_religion_power_l5_src_c",
             "letter": "C",
@@ -7301,9 +7453,9 @@ export default {
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> The Civil War transformed English constitutional history. Parliament's citizen army beat the King at Naseby, ending royal hopes of military victory. Following Charles’s repeated intrigues, Pride's Purge cleared dissenters from Parliament, abolishing the House of Lords and monarchy to establish a republican <strong>Commonwealth</strong>.</p><p class=\"prose-p\">Beheading Charles I in 1649 set a revolutionary <strong>precedent</strong>: an anointed monarch was held to the law. A ruler who broke his constitutional trust with the people could be tried and executed for treason.</p>",
-          "image": "/images/charles_i_execution.jpg",
-          "image_alt": "Contemporary 1649 German engraving of the public execution of King Charles I outside Banqueting House, Whitehall",
-          "caption": "Contemporary 1649 European engraving depicting the public beheading of King Charles I on the scaffold outside the Banqueting House, Whitehall (30 January 1649), shattering the untouchability of anointed monarchs."
+          "image": "/images/ks3_mrp/mrp_l5_b3_execution_charles_i_whitehall_1649.jpg",
+          "image_alt": "Contemporary 1649 German broadside engraving inscribed Bancket Haus showing the public beheading of King Charles I on a crowded timber scaffold outside Whitehall's Banqueting House beneath portrait roundels of Fairfax, Charles I, and Cromwell.",
+          "caption": "Contemporary 1649 German broadside engraving (signed C.R.V.N., National Portrait Gallery, London) depicting the public execution of King Charles I outside the Banqueting House, Whitehall on 30 January 1649, proving that an anointed king could be held accountable to the law."
         },
         {
           "act": 5,
@@ -7520,10 +7672,10 @@ export default {
           "id": "monarchy_religion_power_l5_src_b",
           "letter": "B",
           "type": "visual",
-          "src": "/images/armada_portrait.jpg",
-          "image": "/images/armada_portrait.jpg",
+          "src": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
+          "image": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
           "title": "Source B (Imperial Protestant Identity): The Armada Portrait of Queen Elizabeth I (George Gower, 1588)",
-          "caption": "Monumental royal portrait (Woburn Abbey / Queen’s House, Greenwich) showing Elizabeth resting her hand upon the global sphere with the destroyed Spanish Armada in the background.",
+          "caption": "Monumental Armada Portrait of Queen Elizabeth I (c. 1588, Woburn Abbey / Royal Museums Greenwich ZBA7769), showing Elizabeth resting her hand upon the terrestrial globe beneath an imperial crown while English fireships scatter the wrecked Spanish Armada behind her.",
           "author": "George Gower",
           "date": "c. 1588",
           "question_badge": "SYNOPTIC THEME: NATIONAL PROTESTANT IDENTITY",
@@ -7535,7 +7687,8 @@ export default {
             "hinge_question": "How did anti-Catholicism become the glue of English national identity under the Tudors?",
             "source_context": "The 1588 Armada Portrait celebrated England's emergence as an imperial Protestant maritime power. **Hinge Question:** How did anti-Catholicism become the glue of English national identity under the Tudors?"
           },
-          "source_context": "Commissioned following the defeat of the Spanish Armada in 1588, the portrait forged an indissoluble bond between English national identity and Protestantism. **Hinge Question:** How did anti-Catholicism become the glue of English national identity under the Tudors?"
+          "source_context": "Commissioned following the defeat of the Spanish Armada in 1588, the portrait forged an indissoluble bond between English national identity and Protestantism. **Hinge Question:** How did anti-Catholicism become the glue of English national identity under the Tudors?",
+          "image_alt": "c. 1588 Woburn Abbey Armada Portrait of Queen Elizabeth I in pearl-studded black and gold gown with her right hand resting on the Americas upon a terrestrial globe, flanked by the imperial crown and twin seascapes of English fireships and wrecked Spanish Armada galleons."
         },
         {
           "id": "monarchy_religion_power_l5_src_c",
@@ -8590,7 +8743,7 @@ export default {
             "badge": "Stage 1",
             "heading": "Henry Uses MPs to Break Rome",
             "date": "1517–1547",
-            "img": "/images/henry_viii.jpg",
+            "img": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
             "mode": "contain",
             "stat": "1534: Statute Law Ends Papal Rule in England",
             "html": "<strong>Henry VIII</strong> ended the Pope’s power in England, yet passing Reformation changes through <strong>Parliamentary statutes</strong> and selling monastery land strengthened <strong>MPs</strong>.",
@@ -8602,7 +8755,7 @@ export default {
             "badge": "Stage 2",
             "heading": "Elizabeth Unites a Nation",
             "date": "1558–1603",
-            "img": "/images/armada_portrait.jpg",
+            "img": "/images/eee/iconic/elizabeth_i_armada_portrait_woburn_hires.jpg",
             "mode": "landscape",
             "pos": "center 20%",
             "stat": "1559 Settlement & Armada Forge National Pride",
@@ -8680,7 +8833,8 @@ export default {
       },
       "vocab_cloze_text": "Between 1517 and 1689, supreme [Sovereignty] in England shifted decisively away from royal [Absolutism]. Henry VIII relied on written [Statute Law] in Parliament to break with Rome, creating a lasting [Precedent] that major religious and tax changes needed MPs’ consent. After Stuart civil war and the republican [Commonwealth], the Glorious Revolution of 1688–89 established a permanent [Constitutional Monarchy] under parliamentary supremacy.",
       "banner_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
-      "hero_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg"
+      "hero_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
+      "banner_position": "center 24%"
     }
   ],
   "homepage_background": "/images/family_of_henry_viii_c1545.jpg",
@@ -8698,7 +8852,7 @@ export default {
       ],
       "lifespan": "1483 – 1546",
       "role": "German Monk, Professor of Theology & Catalyst of the Reformation",
-      "image": "/images/martin_luther_portrait.jpg",
+      "image": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
       "image_position": "center 18%",
       "origins": "German monk and scholar in Wittenberg outraged by friars selling papal indulgences—certificates claiming cash payments could free souls from Purgatory.",
       "significance": "Challenged papal authority in October 1517 with his Ninety-Five Theses; rapidly multiplied by printing presses across Europe, his ideas shattered Catholic unity and launched the Protestant Reformation.",
@@ -8715,7 +8869,7 @@ export default {
       ],
       "lifespan": "1491 – 1547",
       "role": "Tudor King Who Broke with Rome (1509–1547)",
-      "image": "/images/henry_viii.jpg",
+      "image": "/images/ks3_mrp/mrp_l1_s2_henry_viii_walker_holbein.jpg",
       "image_position": "center 14%",
       "origins": "Second Tudor monarch desperate by 1527 for a legitimate male heir to secure the Tudor succession and marry Anne Boleyn, yet blocked when Emperor Charles V’s troops held Pope Clement VII captive in Rome.",
       "significance": "Used statute laws passed through the Reformation Parliament to sever England from the Pope—declaring himself Supreme Head of the Church of England under the 1534 Act of Supremacy and dissolving over 800 monasteries (1536–40).",
@@ -8754,7 +8908,7 @@ export default {
       ],
       "lifespan": "1533 – 1603",
       "role": "Tudor Queen & Architect of the 1559 \"Middle Way\" (1558–1603)",
-      "image": "/images/queen_elizabeth_i.jpg",
+      "image": "/images/ks3_mrp/mrp_l2_cameo_elizabeth_darnley_npg2082.jpg",
       "image_position": "center 16%",
       "origins": "Daughter of Henry VIII and Anne Boleyn who inherited a religiously fractured England in November 1558 after Mary I burned nearly 300 Protestant martyrs and exiled Puritans demanded radical Calvinist reform.",
       "significance": "Stabilised England via the 1559 Elizabethan Religious Settlement (Via Media / Middle Way), survived Pope Pius V’s 1570 excommunication and Catholic plots centred on Mary, Queen of Scots, and defeated Philip II’s 1588 Spanish Armada.",
@@ -8791,7 +8945,7 @@ export default {
       ],
       "lifespan": "c. 1532 – 1590",
       "role": "Principal Secretary & Protestant Spymaster to Queen Elizabeth I",
-      "image": "/images/sir_francis_walsingham.jpg",
+      "image": "/images/eee/kt2/sir_francis_walsingham_npg.jpg",
       "image_position": "center 18%",
       "origins": "Devout Protestant statesman who built an intelligence network of double agents, overseas informers, and cryptographers across Europe to protect Elizabeth I after her 1570 papal excommunication.",
       "significance": "Uncovered Catholic assassination conspiracies culminating in the 1586 Babington Plot—intercepting letters hidden in beer-barrel bungs and breaking Mary Stuart’s cipher to secure the hard proof Parliament needed for Mary’s execution.",
@@ -8808,7 +8962,7 @@ export default {
       ],
       "lifespan": "1527 – 1598",
       "role": "Catholic Ruler of the Spanish Empire & Architect of the 1588 Armada",
-      "image": "/images/philip_ii.jpg",
+      "image": "/images/ks3_mrp/mrp_l3_b0_king_philip_ii_prado_anguissola.jpg",
       "image_position": "center 18%",
       "origins": "Devout Catholic Habsburg monarch provoked by English military support for Protestant Dutch rebels, Sir Francis Drake’s privateering raids on Spanish treasure, and the February 1587 execution of Mary, Queen of Scots.",
       "significance": "Launched the 130-ship Spanish Armada under the Duke of Medina Sidonia in July 1588 to ferry the Duke of Parma’s Flanders army across the Channel and overthrow Protestant England—ending in catastrophic defeat off Calais, Gravelines, and stormy Scottish and Irish coasts.",
@@ -8826,7 +8980,7 @@ export default {
       ],
       "lifespan": "c. 1540 – 1596",
       "role": "Elizabethan Privateer, Circumnavigator & Vice-Admiral Against the Armada",
-      "image": "/images/francis_drake.jpg",
+      "image": "/images/ks3_mrp/mrp_l3_b1_sir_francis_drake_gheeraerts_1591.jpg",
       "image_position": "center 18%",
       "origins": "Audacious English sea captain and privateer whose raids on Spanish Caribbean ports and treasure fleets infuriated King Philip II.",
       "significance": "Delayed the Spanish Armada for a crucial year by raiding Cadiz in April 1587 (\"singeing the King of Spain’s beard\") and served alongside Lord Howard in 1588 using fast race-built galleons, long-range culverin broadsides, and Calais fireships.",
@@ -8846,7 +9000,7 @@ export default {
       ],
       "lifespan": "James I: 1566–1625 · Charles I: 1600–1649",
       "role": "Stuart Monarchs Who Championed the Divine Right of Kings",
-      "image": "/images/charles_first.jpg",
+      "image": "/images/ks3_mrp/mrp_ki8_charles_i_garter_robes_vandyck.jpg",
       "image_position": "center 15%",
       "origins": "Scottish Stuart monarchs (from 1603) who embraced absolutism and the Divine Right of Kings—insisting monarchs answered to God alone rather than to elected Members of Parliament.",
       "significance": "Charles I ruled for eleven years without Parliament (1629–40, taxing inland counties via Ship Money defied by John Hampden in 1637), backed Archbishop William Laud’s unpopular High Church reforms, raided the Commons to arrest Five MPs (January 1642), lost the Civil War, and was tried and beheaded for high treason on 30 January 1649.",
@@ -8865,7 +9019,7 @@ export default {
       ],
       "lifespan": "1573 – 1645",
       "role": "Archbishop of Canterbury Under King Charles I (1633–1645)",
-      "image": "/images/archbishop_laud.jpg",
+      "image": "/images/ks3_mrp/mrp_l4_b1_archbishop_william_laud_vandyck.jpg",
       "image_position": "center 18%",
       "origins": "Charles I’s chief religious minister during the Personal Rule, who enforced ceremonial \"beauty of holiness\" reforms (railed altars, vestments) that Puritans feared were a secret return to Catholicism.",
       "significance": "Persecuted Puritan critics and attempted to impose a new English-style prayer book on Presbyterian Scotland—triggering the Scottish rebellion that bankrupted Charles I and forced him to recall Parliament in 1640.",
@@ -8883,7 +9037,7 @@ export default {
       ],
       "lifespan": "1599 – 1658 (New Model Army founded 1645)",
       "role": "Parliamentary Cavalry Commander & Lord Protector of the Commonwealth (1653–1658)",
-      "image": "/images/individuals/oliver_cromwell.jpg",
+      "image": "/images/ks3_fbe/fbe_l3_cameo_oliver_cromwell_cooper.jpg",
       "image_position": "center 18%",
       "origins": "Puritan East Anglian MP who helped create Parliament’s professional, merit-promoted New Model Army in 1645 alongside Sir Thomas Fairfax.",
       "significance": "Routed Charles I’s Royalists with disciplined cavalry charges at the Battle of Naseby (June 1645), signed Charles I’s 1649 death warrant after Pride’s Purge, and ruled republican Britain as Lord Protector of the Commonwealth (1653–58).",
@@ -8921,7 +9075,7 @@ export default {
       "book_title": "Letters on the Dissolution of the Monasteries & Robert Aske’s Pilgrimage Oath (1536)",
       "author": "Royal Commissioners & Robert Aske (1536 • The National Archives SP 1)",
       "cover_image": "/images/thomas_cromwell.jpg",
-      "cover_caption": "Hans Holbein the Younger, Portrait of Thomas Cromwell (c. 1532–1533), King Henry VIII’s Chief Minister who masterminded the Dissolution of the Monasteries.",
+      "cover_caption": "Hans Holbein the Younger, Portrait of Thomas Cromwell (1532–1533, The Frick Collection 1915.1.79), King Henry VIII's Chief Minister who masterminded the Dissolution of the Monasteries.",
       "author_context": "After breaking with Rome under the 1534 Act of Supremacy, King Henry VIII and his Chief Minister Thomas Cromwell compiled the Valor Ecclesiasticus tax survey (1535) and sent royal commissioners to inspect and close over 800 monasteries across England, Wales, and Ireland. In October 1536, Yorkshire lawyer Robert Aske led 30,000 northern rebels in the \"Pilgrimage of Grace\" to defend their parish faith and local abbeys.",
       "source_type": "primary_decree",
       "source_type_label": "Tudor State Papers & Rebel Proclamation (1536)",
@@ -8970,7 +9124,8 @@ export default {
       "studio_audio": "/audio/reading/monarchy_religion_power/r0.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Condensed and modernised in spelling from 1536 Tudor State Papers (TNA SP 1) and Robert Aske’s Pilgrimage of Grace oath."
+      "provenance_note": "Condensed and modernised in spelling from 1536 Tudor State Papers (TNA SP 1) and Robert Aske’s Pilgrimage of Grace oath.",
+      "short_tab_title": "1. Dissolution & Pilgrimage (1536)"
     },
     {
       "lesson_index": 1,
@@ -8979,7 +9134,7 @@ export default {
       "book_title": "The Elizabethan Religious Settlement (1559) & \"Windows into Men’s Souls\"",
       "author": "Act of Uniformity (1559) & Sir Francis Bacon (\"Observations\", 1592)",
       "cover_image": "/images/elizabeth_procession_1601.jpg",
-      "cover_caption": "Robert Peake the Elder, Procession Portrait of Queen Elizabeth I (c. 1600–1601), depicting the Protestant monarch carried in state surrounded by her courtiers.",
+      "cover_caption": "Attributed to Robert Peake the Elder, Procession Picture of Queen Elizabeth I (c. 1600–1601, Sherborne Castle), depicting the Protestant monarch carried in state surrounded by Garter knights and courtiers.",
       "author_context": "When twenty-five-year-old Elizabeth I inherited the throne in November 1558 after the turbulent reigns of Edward VI (strictly Protestant) and Mary I (strictly Catholic), Europe was tearing itself apart in wars of religion. Through her 1559 Acts of Supremacy and Uniformity, Elizabeth crafted a pragmatic \"Middle Way\" (Via Media), later famously summarised by statesman Sir Francis Bacon.",
       "source_type": "primary_decree",
       "source_type_label": "Parliamentary Statute (1559) & Contemporary Commentary",
@@ -9028,7 +9183,8 @@ export default {
       "studio_audio": "/audio/reading/monarchy_religion_power/r1.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines modernised wording from the 1559 Act of Uniformity with Sir Francis Bacon’s 1592 commentary on Elizabeth I."
+      "provenance_note": "Combines modernised wording from the 1559 Act of Uniformity with Sir Francis Bacon’s 1592 commentary on Elizabeth I.",
+      "short_tab_title": "2. 1559 Settlement & Conformity"
     },
     {
       "lesson_index": 2,
@@ -9037,7 +9193,7 @@ export default {
       "book_title": "Queen Elizabeth I’s Speech to the Troops at Tilbury Camp (9 August 1588)",
       "author": "Queen Elizabeth I (preserved by Dr Leonel Sharp • British Library Harley MS 6798)",
       "cover_image": "/images/ark_royal.jpg",
-      "cover_caption": "Sixteenth-century engraving of the 38-gun English flagship Ark Royal, commanded by Lord Howard of Effingham against the Spanish Armada in 1588.",
+      "cover_caption": "Sixteenth-century woodcut engraving of the 38-gun English flagship Ark Royal (British Museum 1864,0611.187), commanded by Lord High Admiral Howard of Effingham against the Spanish Armada in 1588.",
       "author_context": "In August 1588, even after English fireships scattered King Philip II’s 130-ship Spanish Armada off Calais and Gravelines, England feared that the Duke of Parma’s veteran Spanish army in Flanders might still land along the Thames estuary. Riding on a white horse in a polished breastplate at Tilbury Camp in Essex on 9 August 1588, Elizabeth I delivered one of the most famous speeches in English history, recorded by chaplain Dr Leonel Sharp.",
       "source_type": "primary_speech",
       "source_type_label": "Royal Battlefield Oration (9 August 1588)",
@@ -9086,7 +9242,8 @@ export default {
       "studio_audio": "/audio/reading/monarchy_religion_power/r2.mp3",
       "studio_voice_label": "Studio Female Historian · Historic Speech",
       "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original text of Queen Elizabeth I’s 1588 Tilbury speech as preserved by chaplain Dr Leonel Sharp (BL Harley MS 6798)."
+      "provenance_note": "Original text of Queen Elizabeth I’s 1588 Tilbury speech as preserved by chaplain Dr Leonel Sharp (BL Harley MS 6798).",
+      "short_tab_title": "3. Elizabeth I: Tilbury Speech (1588)"
     },
     {
       "lesson_index": 3,
@@ -9094,8 +9251,8 @@ export default {
       "lesson_label": "Enquiry 4",
       "book_title": "The Trial & Scaffold Speech of King Charles I (January 1649)",
       "author": "Westminster Hall High Court Record & King Charles I (20–30 January 1649)",
-      "cover_image": "/images/charles_first.jpg",
-      "cover_caption": "Studio of Sir Anthony van Dyck, Portrait of King Charles I in Garter Robes (c. 1636), embodying the Stuart ideal of Divine Right majesty.",
+      "cover_image": "/images/ks3_mrp/mrp_ki8_charles_i_garter_robes_vandyck.jpg",
+      "cover_caption": "After Sir Anthony van Dyck, Portrait of King Charles I in Garter Robes (after 1636 original), standing beside the imperial crown in ermine-lined velvet robes embodying Stuart Divine Right monarchy.",
       "author_context": "After seven years of bitter Civil War between Royalists (\"Cavaliers\") and Parliamentarians (\"Roundheads\") and Oliver Cromwell’s New Model Army, Parliament put an anointed monarch on public trial for treason in Westminster Hall in January 1649. This verbatim clash between Lord President John Bradshaw and King Charles I crystallised two irreconcilable visions of power: Divine Right monarchy versus accountability to the people.",
       "source_type": "primary_speech",
       "source_type_label": "State Trial Transcript (January 1649)",
@@ -9144,7 +9301,8 @@ export default {
       "studio_audio": "/audio/reading/monarchy_religion_power/r3.mp3",
       "studio_voice_label": "Studio Male Historian · Historic Speech",
       "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original exchanges from the January 1649 Westminster Hall trial record and King Charles I’s scaffold speech, framed with brief context."
+      "provenance_note": "Original exchanges from the January 1649 Westminster Hall trial record and King Charles I’s scaffold speech, framed with brief context.",
+      "short_tab_title": "4. Charles I: Trial & Scaffold (1649)"
     },
     {
       "lesson_index": 4,
@@ -9153,7 +9311,7 @@ export default {
       "book_title": "Two Treatises of Government & The Bill of Rights (1689)",
       "author": "John Locke (1689) & Parliamentary Bill of Rights (1 Will. & Mar. Sess. 2 c. 2)",
       "cover_image": "/images/william_mary_declaration_of_rights_1689.jpg",
-      "cover_caption": "Historical painting depicting Parliament presenting the Declaration of Rights to William III and Mary II in Whitehall on 13 February 1689.",
+      "cover_caption": "Historical painting depicting the Clerk of the Parliaments reading the Declaration of Rights before William III and Mary II in the Banqueting House, Whitehall on 13 February 1689.",
       "author_context": "After Catholic King James II tried to suspend Parliament’s laws and rule without consent, Parliament invited Protestant William of Orange and Mary Stuart to take the throne in the \"Glorious Revolution\" of 1688–1689—strictly on condition that they accepted the Bill of Rights. English philosopher John Locke published Two Treatises of Government in 1689 to explain why legitimate government rests on the consent of the governed.",
       "source_type": "primary_decree",
       "source_type_label": "Constitutional Statute & Enlightenment Treatise (1689)",
@@ -9202,7 +9360,8 @@ export default {
       "studio_audio": "/audio/reading/monarchy_religion_power/r4.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original clauses from the 1689 Parliamentary Bill of Rights paired with John Locke’s Two Treatises of Government (1689)."
+      "provenance_note": "Original clauses from the 1689 Parliamentary Bill of Rights paired with John Locke’s Two Treatises of Government (1689).",
+      "short_tab_title": "5. Locke & Bill of Rights (1689)"
     }
   ]
 };

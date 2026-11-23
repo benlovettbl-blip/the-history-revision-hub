@@ -14,8 +14,8 @@ export default {
   "period": "c.AD 43–Present",
   "enquiry": "Why did it take so long to clean up Britain?",
   "description": "From Roman aqueducts and medieval cesspits to the Great Stink of 1858 and John Snow’s Broad Street pump, explore how two millennia of engineering triumphs, devastating epidemics, and scientific breakthroughs transformed public health in Britain.",
-  "cover_image": "/images/john_snow_cholera_map.jpg",
-  "homepage_background": "/images/john_snow_cholera_map.jpg",
+  "cover_image": "/images/ks3_was/was_l5_s0_snow_cholera_spot_map_1854.jpg",
+  "homepage_background": "/images/ks3_was/was_l5_s0_snow_cholera_spot_map_1854.jpg",
   "color": "#0288d1",
   "is_ks3": true,
   "year_group": "Key Stage 3",
@@ -88,7 +88,7 @@ export default {
       ],
       "lifespan": "1560 – 1612",
       "role": "Tudor Courtier & Inventor of the Flush Water Closet (1596)",
-      "image": "/images/harington.jpg",
+      "image": "/images/ks3_was/was_l3_b1_sir_john_harington_portrait.jpg",
       "image_position": "center 18%",
       "bio": "Godson of Queen Elizabeth I who invented England’s first flushing toilet (\"the Ajax\") at Kelston in 1596 using an overhead water cistern and brass valve.",
       "achievements": [
@@ -106,7 +106,7 @@ export default {
       ],
       "lifespan": "1560 – 1631",
       "role": "Goldsmith, Entrepreneur & Builder of the New River (1613)",
-      "image": "/images/myddelton.jpg",
+      "image": "/images/ks3_was/was_ki1_sir_hugh_myddelton_portrait.jpg",
       "image_position": "center 18%",
       "bio": "London goldsmith and engineer—backed financially by King James I—who constructed the 38-mile artificial New River channel from Hertfordshire springs to Clerkenwell in 1613.",
       "achievements": [
@@ -123,7 +123,7 @@ export default {
       ],
       "lifespan": "1633 – 1703",
       "role": "Naval Administrator & Restoration Eyewitness Diarist",
-      "image": "/images/pepys.jpg",
+      "image": "/images/ks3_was/was_l3_b3_samuel_pepys_hayls_1666.jpg",
       "image_position": "center 18%",
       "bio": "London official whose famous secret diary vivid records overflowing shared cesspits, cellar sewage leaks, the 1665 Great Plague, and the 1666 Great Fire of London.",
       "achievements": [
@@ -140,7 +140,7 @@ export default {
       ],
       "lifespan": "1800 – 1890",
       "role": "Civil Servant, Social Reformer & Author of the 1842 Sanitary Report",
-      "image": "/images/chadwick.jpg",
+      "image": "/images/ks3_was/was_l4_b2_edwin_chadwick_portrait.jpg",
       "image_position": "center 18%",
       "bio": "Published the landmark 1842 Report on the Sanitary Condition of the Labouring Population, proving empirically that industrial slum filth shortened working-class life expectancy and drove up Poor Law taxes.",
       "achievements": [
@@ -157,7 +157,7 @@ export default {
       ],
       "lifespan": "1813 – 1858",
       "role": "London Physician & Pioneer of Epidemiology",
-      "image": "/images/john_snow.jpg",
+      "image": "/images/ks3_was/was_l5_b1_john_snow_portrait_1856.jpg",
       "image_position": "center 18%",
       "bio": "Challenged the dominant miasma (\"bad air\") theory during the August–September 1854 Soho cholera outbreak by mapping every death around the Broad Street water pump.",
       "achievements": [
@@ -174,7 +174,7 @@ export default {
       ],
       "lifespan": "1791 – 1867",
       "role": "Physicist, Chemist & Public Critic of the Polluted River Thames",
-      "image": "/images/faraday.jpg",
+      "image": "/images/ks3_was/was_l4_cameo_michael_faraday_portrait.jpg",
       "image_position": "center 18%",
       "bio": "Renowned Victorian scientist who tested the opacity of the sewage-choked River Thames in July 1855 and wrote an alarming open letter to The Times warning of impending disaster.",
       "achievements": [
@@ -192,7 +192,7 @@ export default {
       ],
       "lifespan": "1819 – 1891",
       "role": "Chief Engineer to London’s Metropolitan Board of Works",
-      "image": "/images/bazalgette.jpg",
+      "image": "/images/ks3_was/was_l4_b4_joseph_bazalgette_portrait.jpg",
       "image_position": "center 18%",
       "bio": "Funded with £3 million by Parliament after the scorching 1858 \"Great Stink\", Bazalgette engineered London’s monumental network of brick intercepting sewers and Thames Embankments.",
       "achievements": [
@@ -209,7 +209,7 @@ export default {
       ],
       "lifespan": "1822 – 1895",
       "role": "French Chemist, Microbiologist & Author of Germ Theory (1861)",
-      "image": "/images/pasteur.png",
+      "image": "/images/ks3_was/was_l5_b3_louis_pasteur_portrait.jpg",
       "image_position": "center 18%",
       "bio": "Used swan-neck glass flasks in 1861 to prove that microscopic living bacteria—not spontaneous generation or foul miasma air—cause decay and infectious disease.",
       "achievements": [
@@ -232,12 +232,13 @@ export default {
       "enquiry": "Was Roman water engineering built to protect ordinary people, or to show off imperial power and luxury?",
       "subtitle": "From Celtic streams to monumental aqueducts, thermae, and public latrines",
       "skill": "Disciplinary Skill: Change & Continuity / Causation",
-      "card_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
+      "card_image": "/images/ks3_was/was_l1_card_roman_aqueduct_segovia.jpg",
       "card_position": "center 25%",
       "banner": {
         "image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
-        "caption": "The Great Roman Bath and Colonnade at Aquae Sulis (Bath, Somerset)",
-        "position": "center 30%"
+        "alt": "Illuminated dusk view across the steaming emerald water of the Great Roman Bath at Aquae Sulis in Bath, Somerset, framed by stone Doric columns, flaming braziers, and Bath Abbey behind",
+        "caption": "The Great Roman Bath and Colonnade at Aquae Sulis (Bath, Somerset, c. AD 70): Fed continuously by geothermal hot springs through lead conduits, showcasing imperial Roman hydraulic engineering in Britain.",
+        "position": "center 35%"
       },
       "cover_image": "/images/roman_aqueduct.jpg",
       "prologue": "In AD 43, Roman legions landed on the shores of Britain, bringing not merely swords and armor, but an engineering revolution. In place of dispersed Celtic roundhouses drawing water from local streams, the conquerors erected stone-walled cities requiring vast volumes of freshwater. Through towering aqueducts, pressurized lead conduits, luxurious public thermae, and flushing latrines, Rome transformed the landscape. But did these monumental hydraulic feats stem from genuine medical understanding, or were they imperial displays of power and prestige?",
@@ -698,7 +699,132 @@ export default {
             },
             "source_context": "Roman plumbers cast flat lead sheets and folded them into teardrop-shaped pipes (fistulae) soldered with lead-tin alloy. **Hinge Question:** Why did the Romans continue using lead pipes even though writers like Vitruvius warned that lead water caused workers to become pale, sick, and poisoned?"
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Before the Roman conquest, Iron Age Britain was a farming society of small, dispersed settlements and timber Celtic roundhouses. Dealing with waste was simple. Families dug shallow **cesspits** in open fields, where waste rotted into farm manure without spoiling streams or wells.</p><p class=\"prose-p\">Everything changed in **AD 43** when Emperor Claudius invaded with four imperial legions. The Romans built cramped walled cities like Londinium (London) and Eboracum (York), packing thousands of soldiers and townsfolk together. Without clean water pipes and drains, crowded towns faced deadly outbreaks of disease.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Before the Roman conquest, Iron Age Britain was a farming society of small, dispersed settlements and timber Celtic roundhouses. Dealing with waste was simple. Families dug shallow **cesspits** in open fields, where waste rotted into farm manure without spoiling streams or wells.</p><p class=\"prose-p\">Everything changed in **AD 43** when Emperor Claudius invaded with four imperial legions. The Romans built cramped walled cities like Londinium (London) and Eboracum (York), packing thousands of soldiers and townsfolk together. Without clean water pipes and drains, crowded towns faced deadly outbreaks of disease.</p>",
+          "image": "/images/water_and_sanitation/maps/was7_map_l1_roman_britain_aqueducts_baths_ad43_410.svg",
+          "image_alt": "KS3 Year 7 historical GIS map of Roman Britain (AD 43–410) showing Roman Britannia south of Hadrian’s Wall, unconquered Caledonia in the north, Watling Street, Fosse Way, Ermine Street, Londinium, Aquae Sulis (Bath), Lindum and Durnovaria aqueducts, and Eboracum and Housesteads stone sewers and latrines",
+          "caption": "Reference Map: Roman Britain (Britannia, AD 43–410)—showing Roman towns, aqueducts, baths, and stone sewers south of Hadrian’s Wall (Londinium, Aquae Sulis, Lindum, Durnovaria, Eboracum, and Housesteads) alongside Watling Street, the Fosse Way, and Ermine Street.",
+          "stage_hook_map": {
+            "id": "was7-l1-roman-britain-aqueducts-baths-map",
+            "image": "/images/water_and_sanitation/maps/was7_map_l1_roman_britain_aqueducts_baths_ad43_410.svg",
+            "title": "Roman Britain (Britannia): Aqueducts, Baths & Stone Sewers (AD 43–410)",
+            "subtitle": "Londinium, Aquae Sulis (Bath), Lindum/Durnovaria Aqueducts & Housesteads · Tap pins 1–4",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 70.6,
+                "y": 74.3,
+                "color": "#9f1239",
+                "label": "1. Londinium — Roman London (AD 43–400)",
+                "badge": "Provincial Capital Plumbing",
+                "date": "AD 43–400",
+                "title": "Londinium — Roman London (AD 43–400): Walled Capital, Pipes & Drains",
+                "body": "Founded beside the River Thames soon after Emperor Claudius’s AD 43 invasion, Londinium grew into Roman Britain’s bustling walled capital. Roman engineers laid hollowed timber water mains joined with iron collars, soldered lead pipes (fistulae), public bathhouses, and stone-lined street drains to serve thousands of soldiers and townsfolk.",
+                "details": "Founded beside the River Thames soon after Emperor Claudius’s AD 43 invasion, Londinium grew into Roman Britain’s bustling walled capital. Roman engineers laid hollowed timber water mains joined with iron collars, soldered lead pipes (fistulae), public bathhouses, and stone-lined street drains to serve thousands of soldiers and townsfolk.",
+                "hinge": "Why did crowding thousands of people inside walled Londinium make clean water pipes and drains far more urgent than on Iron Age farms?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 62.3,
+                "y": 75.6,
+                "color": "#b45309",
+                "label": "2. Aquae Sulis — Bath (c. AD 70)",
+                "badge": "Sacred Hot-Spring Thermae",
+                "date": "c. AD 70",
+                "title": "Aquae Sulis — Bath (c. AD 70): Hypocaust Bathhouses & Lead-Lined Great Bath",
+                "body": "At Aquae Sulis (modern Bath), Roman engineers harnessed natural hot springs steaming out of the ground at 46°C to feed a monumental temple and public bathhouse complex (thermae). Heavy lead sheets lined the Great Bath and cast lead pipes carried spring water between hot sweat rooms (caldaria) and cold plunge pools (frigidaria).",
+                "details": "At Aquae Sulis (modern Bath), Roman engineers harnessed natural hot springs steaming out of the ground at 46°C to feed a monumental temple and public bathhouse complex (thermae). Heavy lead sheets lined the Great Bath and cast lead pipes carried spring water between hot sweat rooms (caldaria) and cold plunge pools (frigidaria).",
+                "hinge": "Why could public bathhouses at places like Aquae Sulis feel wonderfully clean yet still spread stomach parasites between bathers?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 68.6,
+                "y": 59.7,
+                "color": "#065f46",
+                "label": "3. Lindum (Lincoln) & Durnovaria (Dorchester)",
+                "badge": "Gravity-Fed Aqueducts",
+                "date": "AD 70–150",
+                "title": "Lindum (Lincoln) & Durnovaria (Dorchester) (AD 70–150): Gravity-Fed Aqueducts",
+                "body": "Because town rivers quickly became fouled with waste, Roman military surveyors channelled pure hill springs miles into towns along carefully angled aqueducts. At Durnovaria (Dorchester), an open chalk channel carried millions of gallons along a gentle downward slope, while Lindum (Lincoln) piped spring water into hilltop storage tanks (castella).",
+                "details": "Because town rivers quickly became fouled with waste, Roman military surveyors channelled pure hill springs miles into towns along carefully angled aqueducts. At Durnovaria (Dorchester), an open chalk channel carried millions of gallons along a gentle downward slope, while Lindum (Lincoln) piped spring water into hilltop storage tanks (castella).",
+                "hinge": "How did Roman engineers move millions of gallons of spring water for miles into towns without modern electric pumps?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 62.3,
+                "y": 44.6,
+                "color": "#5b21b6",
+                "label": "4. Eboracum (York) & Housesteads (Hadrian's Wall)",
+                "badge": "Stone Sewers & Soldier Latrines",
+                "date": "AD 122",
+                "title": "Eboracum (York) & Housesteads Fort (AD 122): Stone Sewers & Communal Latrines",
+                "body": "Roman army forts prioritized keeping legionaries fit to fight: Eboracum (York) built giant stone-vaulted sewers flushed by bathwater, while Housesteads Fort high on Hadrian's Wall (AD 122) built a multi-seat stone latrine block flushed by rainwater tanks. Yet soldiers wiped with a shared sponge on a stick (tersorium) rinsed in a water channel, spreading whipworm and dysentery.",
+                "details": "Roman army forts prioritized keeping legionaries fit to fight: Eboracum (York) built giant stone-vaulted sewers flushed by bathwater, while Housesteads Fort high on Hadrian's Wall (AD 122) built a multi-seat stone latrine block flushed by rainwater tanks. Yet soldiers wiped with a shared sponge on a stick (tersorium) rinsed in a water channel, spreading whipworm and dysentery.",
+                "hinge": "What does the shared sponge stick at Housesteads Fort prove about what the Romans still did NOT understand about germs?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 70.6,
+                "y": 74.3,
+                "color": "#9f1239",
+                "label": "1. Londinium — Roman London (AD 43–400)",
+                "badge": "Provincial Capital Plumbing",
+                "date": "AD 43–400",
+                "title": "Londinium — Roman London (AD 43–400): Walled Capital, Pipes & Drains",
+                "body": "Founded beside the River Thames soon after Emperor Claudius’s AD 43 invasion, Londinium grew into Roman Britain’s bustling walled capital. Roman engineers laid hollowed timber water mains joined with iron collars, soldered lead pipes (fistulae), public bathhouses, and stone-lined street drains to serve thousands of soldiers and townsfolk.",
+                "details": "Founded beside the River Thames soon after Emperor Claudius’s AD 43 invasion, Londinium grew into Roman Britain’s bustling walled capital. Roman engineers laid hollowed timber water mains joined with iron collars, soldered lead pipes (fistulae), public bathhouses, and stone-lined street drains to serve thousands of soldiers and townsfolk.",
+                "hinge": "Why did crowding thousands of people inside walled Londinium make clean water pipes and drains far more urgent than on Iron Age farms?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 62.3,
+                "y": 75.6,
+                "color": "#b45309",
+                "label": "2. Aquae Sulis — Bath (c. AD 70)",
+                "badge": "Sacred Hot-Spring Thermae",
+                "date": "c. AD 70",
+                "title": "Aquae Sulis — Bath (c. AD 70): Hypocaust Bathhouses & Lead-Lined Great Bath",
+                "body": "At Aquae Sulis (modern Bath), Roman engineers harnessed natural hot springs steaming out of the ground at 46°C to feed a monumental temple and public bathhouse complex (thermae). Heavy lead sheets lined the Great Bath and cast lead pipes carried spring water between hot sweat rooms (caldaria) and cold plunge pools (frigidaria).",
+                "details": "At Aquae Sulis (modern Bath), Roman engineers harnessed natural hot springs steaming out of the ground at 46°C to feed a monumental temple and public bathhouse complex (thermae). Heavy lead sheets lined the Great Bath and cast lead pipes carried spring water between hot sweat rooms (caldaria) and cold plunge pools (frigidaria).",
+                "hinge": "Why could public bathhouses at places like Aquae Sulis feel wonderfully clean yet still spread stomach parasites between bathers?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 68.6,
+                "y": 59.7,
+                "color": "#065f46",
+                "label": "3. Lindum (Lincoln) & Durnovaria (Dorchester)",
+                "badge": "Gravity-Fed Aqueducts",
+                "date": "AD 70–150",
+                "title": "Lindum (Lincoln) & Durnovaria (Dorchester) (AD 70–150): Gravity-Fed Aqueducts",
+                "body": "Because town rivers quickly became fouled with waste, Roman military surveyors channelled pure hill springs miles into towns along carefully angled aqueducts. At Durnovaria (Dorchester), an open chalk channel carried millions of gallons along a gentle downward slope, while Lindum (Lincoln) piped spring water into hilltop storage tanks (castella).",
+                "details": "Because town rivers quickly became fouled with waste, Roman military surveyors channelled pure hill springs miles into towns along carefully angled aqueducts. At Durnovaria (Dorchester), an open chalk channel carried millions of gallons along a gentle downward slope, while Lindum (Lincoln) piped spring water into hilltop storage tanks (castella).",
+                "hinge": "How did Roman engineers move millions of gallons of spring water for miles into towns without modern electric pumps?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 62.3,
+                "y": 44.6,
+                "color": "#5b21b6",
+                "label": "4. Eboracum (York) & Housesteads (Hadrian's Wall)",
+                "badge": "Stone Sewers & Soldier Latrines",
+                "date": "AD 122",
+                "title": "Eboracum (York) & Housesteads Fort (AD 122): Stone Sewers & Communal Latrines",
+                "body": "Roman army forts prioritized keeping legionaries fit to fight: Eboracum (York) built giant stone-vaulted sewers flushed by bathwater, while Housesteads Fort high on Hadrian's Wall (AD 122) built a multi-seat stone latrine block flushed by rainwater tanks. Yet soldiers wiped with a shared sponge on a stick (tersorium) rinsed in a water channel, spreading whipworm and dysentery.",
+                "details": "Roman army forts prioritized keeping legionaries fit to fight: Eboracum (York) built giant stone-vaulted sewers flushed by bathwater, while Housesteads Fort high on Hadrian's Wall (AD 122) built a multi-seat stone latrine block flushed by rainwater tanks. Yet soldiers wiped with a shared sponge on a stick (tersorium) rinsed in a water channel, spreading whipworm and dysentery.",
+                "hinge": "What does the shared sponge stick at Housesteads Fort prove about what the Romans still did NOT understand about germs?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -709,10 +835,10 @@ export default {
             "id": "water_l1_src_b",
             "letter": "B",
             "type": "visual",
-            "src": "/images/roman_thermae_cross_section.jpg",
-            "image": "/images/roman_thermae_cross_section.jpg",
+            "src": "/images/ks3_was/was_l1_s1_roman_bathhouse_cutaway_wellcome.jpg",
+            "image": "/images/ks3_was/was_l1_s1_roman_bathhouse_cutaway_wellcome.jpg",
             "title": "Source B: Architectural Cutaway Reconstruction of a Roman Public Bathhouse (Thermae)",
-            "caption": "Detailed architectural cutaway diagram illustrating the subterranean furnace (praefurnium), hypocaust pillar stacks, and sequential thermal chambers: Apodyterium, Tepidarium, Caldarium, and Frigidarium (Historic England / J. Bennett).",
+            "caption": "Source B: Hand-coloured architectural cutaway engraving of a Roman public bathhouse (c. 1804–1811, Wellcome Collection L0047693), illustrating the underground furnace (praefurnium), copper water boilers, hypocaust heating chambers, and sequential hot-to-cool vaulted bathing rooms.",
             "author": "Archaeological Reconstruction Artist",
             "date": "Roman Imperial Period (1st–2nd Century AD)",
             "question_badge": "HYPOCAUST HEATING & THERMAL ZONING",
@@ -735,17 +861,18 @@ export default {
                 "motive": "Visualizing the complex underground furnace and air circulation systems of a Roman bathhouse."
               }
             },
-            "source_context": "Roman thermae were civic palaces designed for progressive sweating, scraping, and bathing. **Hinge Question:** Did public bathhouses genuinely improve Roman public health, or did unchlorinated, shared bathwater spread infectious skin and eye diseases?"
+            "source_context": "Roman thermae were civic palaces designed for progressive sweating, scraping, and bathing. **Hinge Question:** Did public bathhouses genuinely improve Roman public health, or did unchlorinated, shared bathwater spread infectious skin and eye diseases?",
+            "image_alt": "Early nineteenth-century hand-coloured architectural cutaway engraving of a Roman bathhouse (thermae) showing the blazing underground furnace, raised hypocaust fire chambers, three tiered copper water boilers, and vaulted sweating and bathing rooms"
           },
           "sources": [
             {
               "id": "water_l1_src_b",
               "letter": "B",
               "type": "visual",
-              "src": "/images/roman_thermae_cross_section.jpg",
-              "image": "/images/roman_thermae_cross_section.jpg",
+              "src": "/images/ks3_was/was_l1_s1_roman_bathhouse_cutaway_wellcome.jpg",
+              "image": "/images/ks3_was/was_l1_s1_roman_bathhouse_cutaway_wellcome.jpg",
               "title": "Source B: Architectural Cutaway Reconstruction of a Roman Public Bathhouse (Thermae)",
-              "caption": "Detailed architectural cutaway diagram illustrating the subterranean furnace (praefurnium), hypocaust pillar stacks, and sequential thermal chambers: Apodyterium, Tepidarium, Caldarium, and Frigidarium (Historic England / J. Bennett).",
+              "caption": "Source B: Hand-coloured architectural cutaway engraving of a Roman public bathhouse (c. 1804–1811, Wellcome Collection L0047693), illustrating the underground furnace (praefurnium), copper water boilers, hypocaust heating chambers, and sequential hot-to-cool vaulted bathing rooms.",
               "author": "Archaeological Reconstruction Artist",
               "date": "Roman Imperial Period (1st–2nd Century AD)",
               "question_badge": "HYPOCAUST HEATING & THERMAL ZONING",
@@ -768,12 +895,13 @@ export default {
                   "motive": "Visualizing the complex underground furnace and air circulation systems of a Roman bathhouse."
                 }
               },
-              "source_context": "Roman thermae were civic palaces designed for progressive sweating, scraping, and bathing. **Hinge Question:** Did public bathhouses genuinely improve Roman public health, or did unchlorinated, shared bathwater spread infectious skin and eye diseases?"
+              "source_context": "Roman thermae were civic palaces designed for progressive sweating, scraping, and bathing. **Hinge Question:** Did public bathhouses genuinely improve Roman public health, or did unchlorinated, shared bathwater spread infectious skin and eye diseases?",
+              "image_alt": "Early nineteenth-century hand-coloured architectural cutaway engraving of a Roman bathhouse (thermae) showing the blazing underground furnace, raised hypocaust fire chambers, three tiered copper water boilers, and vaulted sweating and bathing rooms"
             }
           ],
-          "image": "/images/roman_aqueduct.jpg",
-          "image_alt": "Archival photograph of a monumental multi-tiered Roman stone aqueduct bridge",
-          "caption": "The Roman Aqueduct: Gravity-fed stone conduits engineered at a precise gradient of 1:3000 to deliver millions of litres of clean mountain water daily into imperial cities.",
+          "image": "/images/ks3_was/was_l1_b1_pont_du_gard_aqueduct.jpg",
+          "image_alt": "Three-tiered Roman limestone arch bridge of the Pont du Gard aqueduct spanning the River Gardon valley in southern France",
+          "caption": "The Roman Pont du Gard Aqueduct (1st century AD): Gravity-fed stone conduits engineered along a gentle downward slope to carry millions of gallons of pure upland spring water daily into Roman castella water towers, street fountains, and bathhouses.",
           "isReversed": false,
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Roman engineers solved town water shortages using gravity. Because local rivers grew fouled with urban filth, engineers surveyed distant hill and mountain springs to bring pure upland water into growing towns.</p><p class=\"prose-p\">They built giant stone **aqueducts** along a gentle, measured downward slope that carried millions of gallons into **castella** water towers. From these storage tanks, lead and clay pipes sent flowing water across town to public street fountains, communal **thermae** baths, and rich private villas.</p>"
         },
@@ -848,7 +976,10 @@ export default {
               "source_context": "The Romans had no detergents or chemical soap for skin washing. **Hinge Question:** How does this toiletry set reflect the social divide between wealthy citizens with slaves to scrape them and poorer citizens?"
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> At the heart of Roman town hygiene stood the communal public bathhouse (**thermae**), open to citizens for a tiny copper coin. Bathers rubbed olive oil onto their skin, and enslaved attendants scraped away sweat and dirt with a curved bronze **strigil**.</p><p class=\"prose-p\">Visitors moved from hot steam rooms into the icy **frigidarium** cold plunge pool to close their pores. Underneath the mosaic floors, a clever underground **hypocaust** furnace pumped hot air through hollow pillars. Bathhouses became lively town centres where Romans exercised, met friends, and washed.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> At the heart of Roman town hygiene stood the communal public bathhouse (**thermae**), open to citizens for a tiny copper coin. Bathers rubbed olive oil onto their skin, and enslaved attendants scraped away sweat and dirt with a curved bronze **strigil**.</p><p class=\"prose-p\">Visitors moved from hot steam rooms into the icy **frigidarium** cold plunge pool to close their pores. Underneath the mosaic floors, a clever underground **hypocaust** furnace pumped hot air through hollow pillars. Bathhouses became lively town centres where Romans exercised, met friends, and washed.</p>",
+          "image": "/images/ks3_was/was_l1_b2_roman_hypocaust_pilae_bath.jpg",
+          "image_alt": "Excavated subterranean Roman hypocaust heating chamber at the Roman Baths in Bath showing dozens of stacked square terracotta brick pilae pillars supporting a former bathhouse floor",
+          "caption": "Excavated Roman Hypocaust Pilae Stacks at the Roman Baths, Bath (Aquae Sulis): Rows of stacked terracotta brick pillars held up the bathhouse mosaic floor so roaring hot air from the underground furnace could circulate beneath the thermae steam rooms."
         },
         {
           "act": 4,
@@ -859,10 +990,10 @@ export default {
             "id": "water_l1_src_d",
             "letter": "D",
             "type": "written",
-            "src": "/units/water_and_sanitation/assets/seneca.jpg",
-            "image": "/units/water_and_sanitation/assets/seneca.jpg",
+            "src": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
+            "image": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
             "title": "Source D: Seneca the Younger, Letters from a Stoic: Life Above a Bathhouse (c.64 AD)",
-            "caption": "Roman marble bust of Lucius Annaeus Seneca, statesman and philosopher, alongside an excerpt from Epistulae Morales ad Lucilium describing the noisy reality of Roman bathhouses (Museo Archeologico Nazionale di Napoli).",
+            "caption": "Source D: Ancient Roman bronze bust from Herculaneum traditionally identified as statesman and Stoic philosopher Lucius Annaeus Seneca (Museo Archeologico Nazionale di Napoli, Inv. 5616), paired with his AD 64 letter describing the noisy chaos of living above a Roman bathhouse.",
             "author": "Lucius Annaeus Seneca, Roman Statesman & Philosopher",
             "date": "c. 64 AD",
             "content": "I live directly above a bathhouse. Picture to yourself every variety of shouting that can make the ears hate sound! When the athletic men exercise, swinging lead weights, I hear their grunts and wheezes... Add to this the noisy brawler, the thief caught in the act, and the man who loves the sound of his own voice in the bath. Then imagine the hair-plucker with his thin, strident shriek, never silent except when he makes someone else scream, and the mingled cries of the sausage-seller, the pastry-cook, and all the hawkers of tavern-food crying their wares, each with his own distinctive tune.",
@@ -886,17 +1017,18 @@ export default {
                 "motive": "Complaining humorously about sensory distraction while studying philosophy above noisy public baths."
               }
             },
-            "source_context": "Seneca lived in rented lodgings directly above public baths in Rome. **Hinge Question:** Does Seneca's account suggest that Romans visited bathhouses primarily for physical hygiene or for social entertainment?"
+            "source_context": "Seneca lived in rented lodgings directly above public baths in Rome. **Hinge Question:** Does Seneca's account suggest that Romans visited bathhouses primarily for physical hygiene or for social entertainment?",
+            "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples"
           },
           "sources": [
             {
               "id": "water_l1_src_d",
               "letter": "D",
               "type": "written",
-              "src": "/units/water_and_sanitation/assets/seneca.jpg",
-              "image": "/units/water_and_sanitation/assets/seneca.jpg",
+              "src": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
+              "image": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
               "title": "Source D: Seneca the Younger, Letters from a Stoic: Life Above a Bathhouse (c.64 AD)",
-              "caption": "Roman marble bust of Lucius Annaeus Seneca, statesman and philosopher, alongside an excerpt from Epistulae Morales ad Lucilium describing the noisy reality of Roman bathhouses (Museo Archeologico Nazionale di Napoli).",
+              "caption": "Source D: Ancient Roman bronze bust from Herculaneum traditionally identified as statesman and Stoic philosopher Lucius Annaeus Seneca (Museo Archeologico Nazionale di Napoli, Inv. 5616), paired with his AD 64 letter describing the noisy chaos of living above a Roman bathhouse.",
               "author": "Lucius Annaeus Seneca, Roman Statesman & Philosopher",
               "date": "c. 64 AD",
               "content": "I live directly above a bathhouse. Picture to yourself every variety of shouting that can make the ears hate sound! When the athletic men exercise, swinging lead weights, I hear their grunts and wheezes... Add to this the noisy brawler, the thief caught in the act, and the man who loves the sound of his own voice in the bath. Then imagine the hair-plucker with his thin, strident shriek, never silent except when he makes someone else scream, and the mingled cries of the sausage-seller, the pastry-cook, and all the hawkers of tavern-food crying their wares, each with his own distinctive tune.",
@@ -920,12 +1052,13 @@ export default {
                   "motive": "Complaining humorously about sensory distraction while studying philosophy above noisy public baths."
                 }
               },
-              "source_context": "Seneca lived in rented lodgings directly above public baths in Rome. **Hinge Question:** Does Seneca's account suggest that Romans visited bathhouses primarily for physical hygiene or for social entertainment?"
+              "source_context": "Seneca lived in rented lodgings directly above public baths in Rome. **Hinge Question:** Does Seneca's account suggest that Romans visited bathhouses primarily for physical hygiene or for social entertainment?",
+              "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples"
             }
           ],
-          "image": "/units/water_and_sanitation/assets/was_roman_bathhouse.png",
-          "image_alt": "Excavated Roman communal latrines at Housesteads Fort on Hadrian's Wall",
-          "caption": "Roman Communal Latrine: Authentic excavated stone latrine benches and drainage channels at Housesteads Roman Fort (Vercovicium) on Hadrian's Wall, flushed continuously by wastewater.",
+          "image": "/images/ks3_was/was_l1_b3_housesteads_roman_latrine.jpg",
+          "image_alt": "Excavated stone multi-seater communal latrine benches, central water basins, and deep perimeter sewer drainage channels at Housesteads Roman Fort on Hadrian’s Wall",
+          "caption": "Excavated Roman Communal Latrine at Housesteads Fort (Vercovicium, Hadrian’s Wall): Soldiers sat side by side above running bathhouse wastewater while rinsing a shared sea sponge on a stick (tersorium) in the shallow stone floor channel.",
           "isReversed": true,
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Roman towns also had stone public **latrines** flushed day and night by dirty bathhouse wastewater. Citizens sat side by side on stone benches with no cubicles. Instead of toilet paper, Romans shared a sea sponge on a stick (**tersorium**), rinsed in a saltwater channel at their feet.</p><p class=\"prose-p\">Despite grand stonework, Roman towns hid serious health dangers. Warm bath water was rarely drained, leaving tiny intestinal parasite eggs that spread whipworm and dysentery. Worse still, drinking water piped through toxic lead pipes caused slow lead poisoning, known as **plumbism**.</p>"
         },
@@ -939,10 +1072,10 @@ export default {
               "id": "water_l1_src_e",
               "letter": "E",
               "type": "visual",
-              "src": "/images/water_local_fishbourne.jpg",
-              "image": "/images/water_local_fishbourne.jpg",
+              "src": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
+              "image": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
               "title": "Source E: Cupid on a Dolphin Mosaic from the Bath Suite at Fishbourne Roman Palace (Sussex, c.75–100 AD)",
-              "caption": "Excavated polychrome mosaic floor uncovered in the private residential bathhouse suite of Fishbourne Roman Palace near Chichester, depicting Cupid astride a dolphin (Sussex Archaeological Society).",
+              "caption": "Source E: Excavated polychrome floor mosaic depicting Cupid astride a dolphin from Fishbourne Roman Palace near Chichester, West Sussex (late 1st–2nd century AD), showcasing elite Roman bathing and villa luxury in southern Britain.",
               "author": "Sussex Archaeological Society Excavation Team",
               "date": "c. 75 AD (Excavated 1961)",
               "question_badge": "LOCAL ARCHAEOLOGICAL EVIDENCE",
@@ -965,17 +1098,18 @@ export default {
                   "motive": "Documenting high-status Mediterranean decorative art and bathing culture in Britannia."
                 }
               },
-              "source_context": "Fishbourne Roman Palace was built shortly after the Roman invasion, likely for client king Tiberius Claudius Cogidubnus. It features one of the earliest and most elaborate private Roman bath suites discovered in Britain. **Hinge Question:** Why did wealthy Romanised elites invest fortunes in private luxury bath suites while ordinary Celtic Britons continued drawing water from outdoor wells?"
+              "source_context": "Fishbourne Roman Palace was built shortly after the Roman invasion, likely for client king Tiberius Claudius Cogidubnus. It features one of the earliest and most elaborate private Roman bath suites discovered in Britain. **Hinge Question:** Why did wealthy Romanised elites invest fortunes in private luxury bath suites while ordinary Celtic Britons continued drawing water from outdoor wells?",
+              "image_alt": "Polychrome Roman floor mosaic at Fishbourne Roman Palace near Chichester showing winged Cupid riding a dolphin surrounded by sea-horses, wine amphorae, and braided guilloche borders"
             }
           ],
           "source": {
             "id": "water_l1_src_e",
             "letter": "E",
             "type": "visual",
-            "src": "/images/water_local_fishbourne.jpg",
-            "image": "/images/water_local_fishbourne.jpg",
+            "src": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
+            "image": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
             "title": "Source E: Cupid on a Dolphin Mosaic from the Bath Suite at Fishbourne Roman Palace (Sussex, c.75–100 AD)",
-            "caption": "Excavated polychrome mosaic floor uncovered in the private residential bathhouse suite of Fishbourne Roman Palace near Chichester, depicting Cupid astride a dolphin (Sussex Archaeological Society).",
+            "caption": "Source E: Excavated polychrome floor mosaic depicting Cupid astride a dolphin from Fishbourne Roman Palace near Chichester, West Sussex (late 1st–2nd century AD), showcasing elite Roman bathing and villa luxury in southern Britain.",
             "author": "Sussex Archaeological Society Excavation Team",
             "date": "c. 75 AD (Excavated 1961)",
             "question_badge": "LOCAL ARCHAEOLOGICAL EVIDENCE",
@@ -998,9 +1132,106 @@ export default {
                 "motive": "Documenting high-status Mediterranean decorative art and bathing culture in Britannia."
               }
             },
-            "source_context": "Fishbourne Roman Palace was built shortly after the Roman invasion, likely for client king Tiberius Claudius Cogidubnus. It features one of the earliest and most elaborate private Roman bath suites discovered in Britain. **Hinge Question:** Why did wealthy Romanised elites invest fortunes in private luxury bath suites while ordinary Celtic Britons continued drawing water from outdoor wells?"
+            "source_context": "Fishbourne Roman Palace was built shortly after the Roman invasion, likely for client king Tiberius Claudius Cogidubnus. It features one of the earliest and most elaborate private Roman bath suites discovered in Britain. **Hinge Question:** Why did wealthy Romanised elites invest fortunes in private luxury bath suites while ordinary Celtic Britons continued drawing water from outdoor wells?",
+            "image_alt": "Polychrome Roman floor mosaic at Fishbourne Roman Palace near Chichester showing winged Cupid riding a dolphin surrounded by sea-horses, wine amphorae, and braided guilloche borders"
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Modern historians see Roman **sanitation** as a symbol of imperial power and pride rather than true germ science. Governors built giant aqueducts and marble baths mainly to show off **Romanitas** and civilised prestige across newly conquered lands.</p><p class=\"prose-p\">The fatal weakness of Roman hygiene was its total dependence on centralized imperial administration. When Roman legions left Britain in **AD 410**, skilled upkeep collapsed, leaving a thousand-year sanitation gap as stone aqueducts crumbled into weeds and rubble.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Modern historians see Roman **sanitation** as a symbol of imperial power and pride rather than true germ science. Governors built giant aqueducts and marble baths mainly to show off **Romanitas** and civilised prestige across newly conquered lands.</p><p class=\"prose-p\">The fatal weakness of Roman hygiene was its total dependence on centralized imperial administration. When Roman legions left Britain in **AD 410**, skilled upkeep collapsed, leaving a thousand-year sanitation gap as stone aqueducts crumbled into weeds and rubble.</p>",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Year 7 Historical Verdict",
+            "title": "Did Roman Public Health Help Everyone? Forts & Towns vs Lead Pipes & Collapse",
+            "default_index": 1,
+            "caption": "Slide or click across the three views to judge how far Roman aqueducts and baths truly improved health in Britain.",
+            "stops": [
+              {
+                "short_label": "1. Imperial Showcase",
+                "label": "Forts, Towns & Romanitas (AD 43–300)",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "In army forts and walled towns like Londinium, Eboracum, and Bath, Roman engineers built clean spring aqueducts, cheap public baths, and stone flushing latrines.",
+                "traits": [
+                  {
+                    "category": "Clean Water",
+                    "glyph": "law",
+                    "value": "Gravity Aqueducts & Castella Water Towers"
+                  },
+                  {
+                    "category": "Daily Washing",
+                    "glyph": "people",
+                    "value": "Public Thermae Open for One Tiny Copper Coin"
+                  },
+                  {
+                    "category": "Imperial Pride",
+                    "glyph": "leader",
+                    "value": "Built to Show Off Romanitas & Civilised Power"
+                  },
+                  {
+                    "category": "Army Health",
+                    "glyph": "clothes",
+                    "value": "Kept Legionaries Fit in Crowded Castra Forts"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Hidden Dangers",
+                "label": "Rural Britons, Parasites & Lead Pipes",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Most ordinary Celtic farming families still lived in country villages without pipes, while town baths and latrines secretly spread worms, dysentery, and lead poisoning.",
+                "traits": [
+                  {
+                    "category": "Shared Sponge",
+                    "glyph": "people",
+                    "value": "Communal Tersorium Spread Gut Germs in Latrines"
+                  },
+                  {
+                    "category": "Dirty Pools",
+                    "glyph": "clothes",
+                    "value": "Rarely Drained Warm Baths Held Whipworm Eggs"
+                  },
+                  {
+                    "category": "Toxic Plumbing",
+                    "glyph": "law",
+                    "value": "Lead Pipes Caused Slow Lead Poisoning (Plumbism)"
+                  },
+                  {
+                    "category": "Countryside Gap",
+                    "glyph": "leader",
+                    "value": "90% of Rural Britons Still Used Streams & Wells"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. AD 410 Collapse",
+                "label": "When the Legions Left (After AD 410)",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Because Roman waterworks relied completely on imperial taxes, army engineers, and enslaved labour, everything fell into ruin once the legions left Britain in AD 410.",
+                "traits": [
+                  {
+                    "category": "Lost Taxes",
+                    "glyph": "leader",
+                    "value": "No Roman Governors or Councils Left to Pay Upkeep"
+                  },
+                  {
+                    "category": "Broken Stone",
+                    "glyph": "law",
+                    "value": "Aqueducts Choked With Mud, Weeds & Rubble"
+                  },
+                  {
+                    "category": "Stolen Metal",
+                    "glyph": "clothes",
+                    "value": "Lead Water Pipes Dug Up & Melted Down"
+                  },
+                  {
+                    "category": "1,000-Year Gap",
+                    "glyph": "language",
+                    "value": "City-Wide Piped Water Vanished Across Britain"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "tasks": [
@@ -1696,10 +1927,10 @@ export default {
           "id": "water_l1_src_b",
           "letter": "B",
           "type": "visual",
-          "src": "/images/roman_thermae_cross_section.jpg",
-          "image": "/images/roman_thermae_cross_section.jpg",
+          "src": "/images/ks3_was/was_l1_s1_roman_bathhouse_cutaway_wellcome.jpg",
+          "image": "/images/ks3_was/was_l1_s1_roman_bathhouse_cutaway_wellcome.jpg",
           "title": "Source B: Architectural Cutaway Reconstruction of a Roman Public Bathhouse (Thermae)",
-          "caption": "Detailed architectural cutaway diagram illustrating the subterranean furnace (praefurnium), hypocaust pillar stacks, and sequential thermal chambers: Apodyterium, Tepidarium, Caldarium, and Frigidarium (Historic England / J. Bennett).",
+          "caption": "Source B: Hand-coloured architectural cutaway engraving of a Roman public bathhouse (c. 1804–1811, Wellcome Collection L0047693), illustrating the underground furnace (praefurnium), copper water boilers, hypocaust heating chambers, and sequential hot-to-cool vaulted bathing rooms.",
           "author": "Archaeological Reconstruction Artist",
           "date": "Roman Imperial Period (1st–2nd Century AD)",
           "question_badge": "HYPOCAUST HEATING & THERMAL ZONING",
@@ -1722,7 +1953,8 @@ export default {
               "motive": "Visualizing the complex underground furnace and air circulation systems of a Roman bathhouse."
             }
           },
-          "source_context": "Roman thermae were civic palaces designed for progressive sweating, scraping, and bathing. **Hinge Question:** Did public bathhouses genuinely improve Roman public health, or did unchlorinated, shared bathwater spread infectious skin and eye diseases?"
+          "source_context": "Roman thermae were civic palaces designed for progressive sweating, scraping, and bathing. **Hinge Question:** Did public bathhouses genuinely improve Roman public health, or did unchlorinated, shared bathwater spread infectious skin and eye diseases?",
+          "image_alt": "Early nineteenth-century hand-coloured architectural cutaway engraving of a Roman bathhouse (thermae) showing the blazing underground furnace, raised hypocaust fire chambers, three tiered copper water boilers, and vaulted sweating and bathing rooms"
         },
         {
           "id": "water_l1_src_c",
@@ -1760,10 +1992,10 @@ export default {
           "id": "water_l1_src_d",
           "letter": "D",
           "type": "written",
-          "src": "/units/water_and_sanitation/assets/seneca.jpg",
-          "image": "/units/water_and_sanitation/assets/seneca.jpg",
+          "src": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
+          "image": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
           "title": "Source D: Seneca the Younger, Letters from a Stoic: Life Above a Bathhouse (c.64 AD)",
-          "caption": "Roman marble bust of Lucius Annaeus Seneca, statesman and philosopher, alongside an excerpt from Epistulae Morales ad Lucilium describing the noisy reality of Roman bathhouses (Museo Archeologico Nazionale di Napoli).",
+          "caption": "Source D: Ancient Roman bronze bust from Herculaneum traditionally identified as statesman and Stoic philosopher Lucius Annaeus Seneca (Museo Archeologico Nazionale di Napoli, Inv. 5616), paired with his AD 64 letter describing the noisy chaos of living above a Roman bathhouse.",
           "author": "Lucius Annaeus Seneca, Roman Statesman & Philosopher",
           "date": "c. 64 AD",
           "content": "I live directly above a bathhouse. Picture to yourself every variety of shouting that can make the ears hate sound! When the athletic men exercise, swinging lead weights, I hear their grunts and wheezes... Add to this the noisy brawler, the thief caught in the act, and the man who loves the sound of his own voice in the bath. Then imagine the hair-plucker with his thin, strident shriek, never silent except when he makes someone else scream, and the mingled cries of the sausage-seller, the pastry-cook, and all the hawkers of tavern-food crying their wares, each with his own distinctive tune.",
@@ -1787,16 +2019,17 @@ export default {
               "motive": "Complaining humorously about sensory distraction while studying philosophy above noisy public baths."
             }
           },
-          "source_context": "Seneca lived in rented lodgings directly above public baths in Rome. **Hinge Question:** Does Seneca's account suggest that Romans visited bathhouses primarily for physical hygiene or for social entertainment?"
+          "source_context": "Seneca lived in rented lodgings directly above public baths in Rome. **Hinge Question:** Does Seneca's account suggest that Romans visited bathhouses primarily for physical hygiene or for social entertainment?",
+          "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples"
         },
         {
           "id": "water_l1_src_e",
           "letter": "E",
           "type": "visual",
-          "src": "/images/water_local_fishbourne.jpg",
-          "image": "/images/water_local_fishbourne.jpg",
+          "src": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
+          "image": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
           "title": "Source E: Cupid on a Dolphin Mosaic from the Bath Suite at Fishbourne Roman Palace (Sussex, c.75–100 AD)",
-          "caption": "Excavated polychrome mosaic floor uncovered in the private residential bathhouse suite of Fishbourne Roman Palace near Chichester, depicting Cupid astride a dolphin (Sussex Archaeological Society).",
+          "caption": "Source E: Excavated polychrome floor mosaic depicting Cupid astride a dolphin from Fishbourne Roman Palace near Chichester, West Sussex (late 1st–2nd century AD), showcasing elite Roman bathing and villa luxury in southern Britain.",
           "author": "Sussex Archaeological Society Excavation Team",
           "date": "c. 75 AD (Excavated 1961)",
           "question_badge": "LOCAL ARCHAEOLOGICAL EVIDENCE",
@@ -1819,7 +2052,8 @@ export default {
               "motive": "Documenting high-status Mediterranean decorative art and bathing culture in Britannia."
             }
           },
-          "source_context": "Fishbourne Roman Palace was built shortly after the Roman invasion, likely for client king Tiberius Claudius Cogidubnus. It features one of the earliest and most elaborate private Roman bath suites discovered in Britain. **Hinge Question:** Why did wealthy Romanised elites invest fortunes in private luxury bath suites while ordinary Celtic Britons continued drawing water from outdoor wells?"
+          "source_context": "Fishbourne Roman Palace was built shortly after the Roman invasion, likely for client king Tiberius Claudius Cogidubnus. It features one of the earliest and most elaborate private Roman bath suites discovered in Britain. **Hinge Question:** Why did wealthy Romanised elites invest fortunes in private luxury bath suites while ordinary Celtic Britons continued drawing water from outdoor wells?",
+          "image_alt": "Polychrome Roman floor mosaic at Fishbourne Roman Palace near Chichester showing winged Cupid riding a dolphin surrounded by sea-horses, wine amphorae, and braided guilloche borders"
         }
       ],
       "visual_story_sheet": {
@@ -1844,7 +2078,7 @@ export default {
             "badge": "Stage 1",
             "heading": "AD 43 Conquest & Walled Towns",
             "date": "AD 43",
-            "img": "/images/water_local_fishbourne.jpg",
+            "img": "/images/ks3_was/was_l1_s4_fishbourne_cupid_dolphin_mosaic.jpg",
             "mode": "landscape",
             "pos": "center 50%",
             "stat": "4 Roman Legions Build Busy Walled Cities",
@@ -1895,7 +2129,7 @@ export default {
             "badge": "Stage 5",
             "heading": "Imperial Pride & AD 410 Ruin",
             "date": "AD 410",
-            "img": "/units/water_and_sanitation/assets/seneca.jpg",
+            "img": "/images/ks3_was/was_l1_s3_seneca_bust_naples.jpg",
             "mode": "contain",
             "stat": "1,000-Year Sanitation Gap After AD 410",
             "html": "Governors built grand baths to show off <strong>Romanitas</strong> and imperial power, not germ science. When Roman armies left in <strong>AD 410</strong>, nobody maintained the crumbling <strong>aqueducts</strong>.",
@@ -1935,7 +2169,8 @@ export default {
       },
       "vocab_cloze_text": "After conquering Britain in AD 43, Roman engineers promoted urban [Romanitas] by building gravity-fed [Aqueduct] channels to carry clean spring water into towns. Citizens exercised and bathed inside public [Thermae] heated from beneath the floor by a [Hypocaust] furnace, alongside stone [Latrine] blocks flushed by running drains. Yet shared bathwater, communal sponges, and toxic [Plumbism] from lead pipes still spread illness before Roman rule collapsed in AD 410.",
       "banner_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
-      "hero_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg"
+      "hero_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
+      "banner_position": "center 35%"
     },
     {
       "id": "lesson_2",
@@ -1943,12 +2178,13 @@ export default {
       "enquiry": "Was medieval public health squalor caused by a lack of money, or by mistaken medical beliefs like miasma?",
       "subtitle": "From urban filth and gong farmers to monastic hydraulics and the Black Death",
       "skill": "Disciplinary Skill: Comparison & Living Conditions / Causation",
-      "card_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
+      "card_image": "/images/ks3_was/was_l2_card_tournai_plague_burial_1349.jpg",
       "card_position": "center 30%",
       "banner": {
         "image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
-        "caption": "Bernardo Tolomei Visiting Victims of the 1348 Black Death Plague",
-        "position": "center 30%"
+        "alt": "Giuseppe Maria Crespi oil painting showing Saint Bernardo Tolomei and white-robed Olivetani monks tending collapsed and dying victims of the 1348 Black Death plague in Siena",
+        "caption": "Giuseppe Maria Crespi, Blessed Bernardo Tolomei Visiting Victims of the 1348 Plague (c. 1735): Depicting monastic charity amid the catastrophic Black Death pandemic that killed up to half of Europe’s population.",
+        "position": "center 45%"
       },
       "cover_image": "/images/black_death.jpg",
       "prologue": "When the Roman legions withdrew in AD 410, their monumental aqueducts and hypocausts fell into ruin. Across medieval Britain, newly expanding boroughs grew rapidly with narrow unpaved alleys, timber-framed houses, and overflowing cesspits. Yet the popular myth of the \"filthy dark ages\" overlooks the remarkable engineering of medieval monasteries like Canterbury and Titchfield, as well as municipal ordinances fining polluters. When the Black Death struck in 1348, wiping out nearly half the population, it exposed the tragic divide between medieval hygiene efforts and the limits of medical understanding. Did medieval public health collapse because town councils lacked the resources to act, or because mistaken medical beliefs like miasma blinded them to the real causes of disease?",
@@ -2412,15 +2648,18 @@ export default {
             },
             "source_context": "Medieval towns held Court Leet hearings twice a year where neighbours reported sanitation offences. **Hinge Question:** Why were small municipal fines of 6d or 12d ineffective at permanently keeping medieval streets clean?"
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> After the Roman legions left Britain in AD 410, old stone aqueducts and town drains fell into ruin. As Anglo-Saxons and Normans rebuilt England, people settled along river crossings and walled market towns called **boroughs**. By the twelfth century, thousands of traders crowded along narrow, unpaved muddy lanes.</p><p class=\"prose-p\">Early medieval boroughs had no central sewers, so messy trades worked right in the street. Butchers slaughtered cattle outside their shops and tossed offal into gutters, while tanners soaked hides in vats of foul urine. Dyers poured toxic cloth dyes straight into rivers used downstream for drinking water.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> After the Roman legions left Britain in AD 410, old stone aqueducts and town drains fell into ruin. As Anglo-Saxons and Normans rebuilt England, people settled along river crossings and walled market towns called **boroughs**. By the twelfth century, thousands of traders crowded along narrow, unpaved muddy lanes.</p><p class=\"prose-p\">Early medieval boroughs had no central sewers, so messy trades worked right in the street. Butchers slaughtered cattle outside their shops and tossed offal into gutters, while tanners soaked hides in vats of foul urine. Dyers poured toxic cloth dyes straight into rivers used downstream for drinking water.</p>",
+          "image": "/images/ks3_was/was_l2_b0_shambles_york_overhanging_jetties.jpg",
+          "image_alt": "Narrow medieval lane of The Shambles in York lined with overhanging timber-framed jettied upper storeys reaching out across the cobbled street",
+          "caption": "Overhanging Timber-Framed Jetties on The Shambles, York: Medieval market boroughs packed narrow butcher lanes with projecting upper storeys that blocked sunlight while blood, offal, and workshop waste ran down open street gutters."
         },
         {
           "act": 2,
           "title": "Municipal Waste Battles: Rakers, Gong Farmers & Court Leet Fines",
           "theme_heading": "Municipal Waste Battles: Rakers, Gong Farmers & Court Leet Fines",
-          "image": "/images/medieval_court_roll_manuscript.png",
-          "image_alt": "Archival photograph of a medieval rolled parchment court roll manuscript with Latin script",
-          "caption": "Manorial Court Roll (c. 14th Century). Municipal courts and local Leets met regularly to levy heavy fines on townspeople dumping offal, nightsoil, and refuse into public streets.",
+          "image": "/images/ks3_was/was_l2_b1_medieval_court_roll_manuscript.jpg",
+          "image_alt": "Fourteenth-century Latin parchment medieval manorial and borough court roll manuscript recording local court presentments and fines",
+          "caption": "Medieval Parchment Court Roll (c. 14th Century): Town bailiffs and local Court Leet juries met regularly to fine householders, butchers, and tanners who let backyard cesspits overflow or dumped nightsoil and animal offal into public lanes.",
           "isReversed": false,
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> In medieval towns like London, York, and Coventry, town councils fought a constant battle against filth. Narrow lanes were packed with tall timber tenements, where families built wooden privies over backyard **cesspits**.</p><p class=\"prose-p\">To stop pits overflowing, households paid night-time **gong farmers** (nightmen) to shovel human waste into barrels and cart it out to farm fields. Town bailiffs hired municipal **rakers** to clear rubbish, while local **Court Leet** courts fined butchers and tanners who dumped offal in the road.</p>",
           "source": {
@@ -2500,10 +2739,10 @@ export default {
             "id": "water_l2_src_c",
             "letter": "C",
             "type": "visual",
-            "src": "/images/water_local_titchfield.jpg",
-            "image": "/images/water_local_titchfield.jpg",
+            "src": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
+            "image": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
             "title": "Source C: Monastic Water Management and Fish Ponds at Titchfield Abbey (Hampshire)",
-            "caption": "Excavated monastic drainage channel, flushing conduit, and stew pond system engineered by the White Canons of Titchfield along the River Meon (English Heritage / Historic England).",
+            "caption": "Source C: Stone monastic precinct of Titchfield Abbey in the Meon Valley, Hampshire (founded 1232, English Heritage), where Premonstratensian White Canons engineered spring-fed conduits, flushing reredorter drains, and stocked fishponds.",
             "author": "Premonstratensian Monastic Builders",
             "date": "c. 1232–1537",
             "question_badge": "MONASTIC RURAL HYDRAULICS",
@@ -2526,17 +2765,18 @@ export default {
                 "motive": "Documenting the sophisticated stone conduits used by medieval religious orders."
               }
             },
-            "source_context": "Founded in 1232, Titchfield Abbey diverted the River Meon into engineered channels. **Hinge Question:** What happened to these monastic water channels when Henry VIII dissolved the monasteries in 1537?"
+            "source_context": "Founded in 1232, Titchfield Abbey diverted the River Meon into engineered channels. **Hinge Question:** What happened to these monastic water channels when Henry VIII dissolved the monasteries in 1537?",
+            "image_alt": "Stone turreted monastic gatehouse and abbey precinct ruins of Premonstratensian Titchfield Abbey beside the River Meon valley in Hampshire"
           },
           "sources": [
             {
               "id": "water_l2_src_c",
               "letter": "C",
               "type": "visual",
-              "src": "/images/water_local_titchfield.jpg",
-              "image": "/images/water_local_titchfield.jpg",
+              "src": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
+              "image": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
               "title": "Source C: Monastic Water Management and Fish Ponds at Titchfield Abbey (Hampshire)",
-              "caption": "Excavated monastic drainage channel, flushing conduit, and stew pond system engineered by the White Canons of Titchfield along the River Meon (English Heritage / Historic England).",
+              "caption": "Source C: Stone monastic precinct of Titchfield Abbey in the Meon Valley, Hampshire (founded 1232, English Heritage), where Premonstratensian White Canons engineered spring-fed conduits, flushing reredorter drains, and stocked fishponds.",
               "author": "Premonstratensian Monastic Builders",
               "date": "c. 1232–1537",
               "question_badge": "MONASTIC RURAL HYDRAULICS",
@@ -2559,18 +2799,22 @@ export default {
                   "motive": "Documenting the sophisticated stone conduits used by medieval religious orders."
                 }
               },
-              "source_context": "Founded in 1232, Titchfield Abbey diverted the River Meon into engineered channels. **Hinge Question:** What happened to these monastic water channels when Henry VIII dissolved the monasteries in 1537?"
+              "source_context": "Founded in 1232, Titchfield Abbey diverted the River Meon into engineered channels. **Hinge Question:** What happened to these monastic water channels when Henry VIII dissolved the monasteries in 1537?",
+              "image_alt": "Stone turreted monastic gatehouse and abbey precinct ruins of Premonstratensian Titchfield Abbey beside the River Meon valley in Hampshire"
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Medieval monasteries were far cleaner than crowded market towns. Rich religious houses laid **lead conduits** and stone **settling tanks**. Pure hilltop spring water flowed straight into kitchens, infirmaries, and washbasins (**lavatorium**).</p><p class=\"prose-p\">Monks lived inside quiet walled cloisters away from town crowds. At **Canterbury Priory**, water passed through five successive settling tanks to trap grit before running water flushed the latrines clean. Sites like **Titchfield Abbey** also kept clean fishponds, blending Church wealth with careful engineering.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Medieval monasteries were far cleaner than crowded market towns. Rich religious houses laid **lead conduits** and stone **settling tanks**. Pure hilltop spring water flowed straight into kitchens, infirmaries, and washbasins (**lavatorium**).</p><p class=\"prose-p\">Monks lived inside quiet walled cloisters away from town crowds. At **Canterbury Priory**, water passed through five successive settling tanks to trap grit before running water flushed the latrines clean. Sites like **Titchfield Abbey** also kept clean fishponds, blending Church wealth with careful engineering.</p>",
+          "image": "/images/ks3_was/was_l2_b2_canterbury_priory_water_tower.jpg",
+          "image_alt": "Twelfth-century two-storey Norman stone and flint Water Tower and lavatorium washhouse standing beside the cloister walls of Christ Church Priory at Canterbury Cathedral",
+          "caption": "Prior Wibert’s Norman Water Tower (Lavatorium) at Christ Church Priory, Canterbury Cathedral (c. 1160): Clean hilltop spring water passed through five settling tanks before feeding monastic washbasins, kitchens, and running-water latrines."
         },
         {
           "act": 4,
           "title": "The Black Death Catastrophe: Bubonic Plague & Miasma Dogma (1348)",
           "theme_heading": "The Black Death Catastrophe: Bubonic Plague & Miasma Dogma (1348)",
-          "image": "/images/plague_burial.jpg",
-          "image_alt": "Josse Lieferinxe painting Saint Sebastian Interceding for the Plague Stricken showing plague victims buried outside city walls",
-          "caption": "Josse Lieferinxe, Saint Sebastian Interceding for the Plague Stricken (1497–1499). Medieval depiction of shrouded plague victims being carried to graves outside the city gates as panicked citizens pray.",
+          "image": "/images/ks3_was/was_l2_b3_lieferinxe_plague_burial_1497.jpg",
+          "image_alt": "Josse Lieferinxe’s late-medieval panel painting Saint Sebastian Interceding for the Plague-Stricken showing white-shrouded Black Death corpses lowered into open graves as a gravedigger collapses with a painful neck bubo and clergy pray",
+          "caption": "Josse Lieferinxe, Saint Sebastian Interceding for the Plague-Stricken (1497–1499, Walters Art Museum 37.1995): Shrouded plague victims buried in mass graves outside city walls while a stricken gravedigger collapses clutching a swollen neck bubo.",
           "isReversed": true,
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In summer **1348**, a terrible plague struck Britain: the **Black Death**. Caused by the bacterium <em>Yersinia pestis</em> carried on flea-infested black rats, it killed 30% to 50% of Britain's people in eighteen months. Medieval doctors did not know about germs, so they blamed the stars, God's anger, and foul air (**miasma**).</p><p class=\"prose-p\">Even so, town councils tried hard to fight the **epidemic**. Ports held incoming ships for forty-day quarantines (<em>quarantena</em>), and towns barred travellers from infected areas. In London, churchyards filled within weeks, forcing workers to dig deep mass burial trenches at Smithfield and East Smithfield.</p>",
           "sources": [
@@ -2714,7 +2958,108 @@ export default {
               "source_context": "Following recurring outbreaks of pestilence after 1348, Parliament enacted the 1388 Statute of Cambridge. **Hinge Question:** Why was a national law from Parliament nearly impossible to enforce in distant provincial towns without a modern police force?"
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Historian **Carole Rawcliffe** has shown that medieval town leaders cared deeply about clean streets and rivers. In **1388**, Parliament passed the **Statute of Cambridge**, Britain's first national hygiene law. It set huge **£20 fines** for dumping animal guts or dung into rivers and ditches.</p><p class=\"prose-p\">In **Coventry**, officials banned rubbish dumping in the River Sherbourne and built waste heaps outside the town walls. Medieval towns struggled not because people liked dirt, but because small councils lacked money, pumps, and police to keep up with growing crowds.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Historian **Carole Rawcliffe** has shown that medieval town leaders cared deeply about clean streets and rivers. In **1388**, Parliament passed the **Statute of Cambridge**, Britain's first national hygiene law. It set huge **£20 fines** for dumping animal guts or dung into rivers and ditches.</p><p class=\"prose-p\">In **Coventry**, officials banned rubbish dumping in the River Sherbourne and built waste heaps outside the town walls. Medieval towns struggled not because people liked dirt, but because small councils lacked money, pumps, and police to keep up with growing crowds.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 7 Medieval Comparison",
+            "title": "Medieval Towns vs Monasteries: Why Was Clean Water So Unequal?",
+            "default_index": 0,
+            "caption": "Click each card to compare crowded market boroughs, rich monasteries, and medieval laws like the 1388 Statute of Cambridge.",
+            "items": [
+              {
+                "tab_label": "1. Market Towns",
+                "title": "Crowded Medieval Boroughs & Polluted Wells",
+                "dates": "1100–1348 • Everyday Town Life",
+                "badge": "High Filth Risk",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Streets",
+                    "value": "Unpaved Muddy Lanes & Overhanging Jetties"
+                  },
+                  {
+                    "label": "Dirty Trades",
+                    "value": "Butchers’ Offal, Tanners’ Urine & Cloth Dyes"
+                  },
+                  {
+                    "label": "Toilets",
+                    "value": "Unlined Backyard Cesspits Leaking Into Wells"
+                  }
+                ],
+                "takeaway": "Because growing market towns had no underground sewers or water pumps, noisy street trades polluted the same rivers families drank from."
+              },
+              {
+                "tab_label": "2. Monasteries",
+                "title": "Walled Cloisters, Lead Pipes & Settling Tanks",
+                "dates": "c. 1165 • Canterbury & Titchfield Abbey",
+                "badge": "Best Medieval Hygiene",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Church Wealth",
+                    "value": "Tithes & Land Paid for Lead Water Conduits"
+                  },
+                  {
+                    "label": "Clean Design",
+                    "value": "5 Settling Tanks Filtered Spring Water First"
+                  },
+                  {
+                    "label": "Daily Rules",
+                    "value": "Monks Washed at Lavatorium Before Meals"
+                  }
+                ],
+                "takeaway": "Wealthy, educated monks lived behind quiet stone walls and engineered pure spring water to flush their kitchens, infirmaries, and latrines."
+              },
+              {
+                "tab_label": "3. Town Clean-Ups",
+                "title": "Gong Farmers, Rakers & The 1388 Law",
+                "dates": "1348–1421 • Fighting Back Against Filth",
+                "badge": "£20 Fines in 1388",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Night Workers",
+                    "value": "Gong Farmers Dug Out Cesspits After Dark"
+                  },
+                  {
+                    "label": "Local Courts",
+                    "value": "Rakers Cleared Lanes & Court Leets Fined Dumpers"
+                  },
+                  {
+                    "label": "National Law",
+                    "value": "1388 Statute of Cambridge Banned River Dumping"
+                  }
+                ],
+                "takeaway": "Historian Carole Rawcliffe proved medieval townspeople hated dirt and passed real laws—including £20 fines—to keep streets and rivers clean."
+              },
+              {
+                "tab_label": "4. Why Towns Lost",
+                "title": "No Germ Science, Small Budgets & Weak Enforcement",
+                "dates": "1348–1500 • The Missing Pieces",
+                "badge": "Miasma Trap",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Wrong Belief",
+                    "value": "Blamed Bad Smells (Miasma), Stars & Sin"
+                  },
+                  {
+                    "label": "Hidden Killer",
+                    "value": "Missed Fleas & Rats Spreading 1348 Black Death"
+                  },
+                  {
+                    "label": "Money Gap",
+                    "value": "Tiny Town Taxes Could Not Fund Stone Sewers"
+                  }
+                ],
+                "takeaway": "Medieval councils cared about cleanliness, but without taxes, steam pumps, police, or knowledge of germs, they could not stop deadly epidemics."
+              }
+            ]
+          }
         }
       ],
       "tasks": [
@@ -3441,10 +3786,10 @@ export default {
           "id": "water_l2_src_c",
           "letter": "C",
           "type": "visual",
-          "src": "/images/water_local_titchfield.jpg",
-          "image": "/images/water_local_titchfield.jpg",
+          "src": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
+          "image": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
           "title": "Source C: Monastic Water Management and Fish Ponds at Titchfield Abbey (Hampshire)",
-          "caption": "Excavated monastic drainage channel, flushing conduit, and stew pond system engineered by the White Canons of Titchfield along the River Meon (English Heritage / Historic England).",
+          "caption": "Source C: Stone monastic precinct of Titchfield Abbey in the Meon Valley, Hampshire (founded 1232, English Heritage), where Premonstratensian White Canons engineered spring-fed conduits, flushing reredorter drains, and stocked fishponds.",
           "author": "Premonstratensian Monastic Builders",
           "date": "c. 1232–1537",
           "question_badge": "MONASTIC RURAL HYDRAULICS",
@@ -3467,7 +3812,8 @@ export default {
               "motive": "Documenting the sophisticated stone conduits used by medieval religious orders."
             }
           },
-          "source_context": "Founded in 1232, Titchfield Abbey diverted the River Meon into engineered channels. **Hinge Question:** What happened to these monastic water channels when Henry VIII dissolved the monasteries in 1537?"
+          "source_context": "Founded in 1232, Titchfield Abbey diverted the River Meon into engineered channels. **Hinge Question:** What happened to these monastic water channels when Henry VIII dissolved the monasteries in 1537?",
+          "image_alt": "Stone turreted monastic gatehouse and abbey precinct ruins of Premonstratensian Titchfield Abbey beside the River Meon valley in Hampshire"
         },
         {
           "id": "water_l2_src_d",
@@ -3541,7 +3887,7 @@ export default {
         "topicLabel": "Enquiry 2: Medieval Towns, Monasteries & The Black Death (1100–1388)",
         "title": "Why Did Public Health Decline During the Middle Ages?",
         "spokenTitle": "Why did public health decline during the Middle Ages?",
-        "thumbUrl": "/images/water_local_titchfield.jpg",
+        "thumbUrl": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
         "provenanceNote": "Trinity College Cambridge, The National Archives UK, British Library & Historic England Archive (Zero AI Imagery)",
         "bridges": [
           "Dirty Trades",
@@ -3618,7 +3964,7 @@ export default {
             "isOutcome": true,
             "heading": "People Hated Dirt, Lacked Cash",
             "date": "By 1400",
-            "img": "/images/water_local_titchfield.jpg",
+            "img": "/images/ks3_was/was_l2_s2_titchfield_abbey_monastic_ruins.jpg",
             "mode": "landscape",
             "pos": "center 45%",
             "stat": "Small Councils Lacked Taxes, Pumps & Pipes",
@@ -3646,7 +3992,8 @@ export default {
       },
       "vocab_cloze_text": "As each medieval [Borough] expanded after 1100, households dumped waste into streets and overflowing [Cesspit] shafts dug dangerously close to wells, hiring a night-time [Gong Farmer] to clear the filth. By contrast, wealthy monasteries piped clean water through a stone [Lavatorium] for washing. When the [Black Death] struck in 1348, townsfolk blamed foul-smelling [Miasma], prompting Parliament to pass the 1388 [Statute of Cambridge] against river pollution.",
       "banner_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
-      "hero_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg"
+      "hero_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
+      "banner_position": "center 45%"
     },
     {
       "id": "lesson_3",
@@ -3654,12 +4001,13 @@ export default {
       "enquiry": "Was early modern filth caused by population explosion, or the lack of running water to make inventions work?",
       "subtitle": "From Sir John Harington’s flush toilet to Samuel Pepys’ cellar and the Great Plague of 1665",
       "skill": "Disciplinary Skill: Extent of Change / Source Utility",
-      "card_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
+      "card_image": "/images/ks3_was/was_l3_card_great_plague_street_1665.jpg",
       "card_position": "center 20%",
       "banner": {
         "image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
-        "caption": "Long View of Early Modern London from Bankside Showing Congested Riverside Tenements",
-        "position": "center 30%"
+        "alt": "Detail from Wenceslaus Hollar’s 1647 panoramic etching Long View of London from Bankside looking across the River Thames past The Globe towards tightly packed gabled tenements at Blackfriars and Baynard’s Castle",
+        "caption": "Wenceslaus Hollar, Long View of London from Bankside (1647): Showing the densely packed gabled timber and brick tenements crowding the north bank of the River Thames between Blackfriars and Baynard’s Castle before the 1665 Plague and 1666 Fire.",
+        "position": "center 48%"
       },
       "cover_image": "/images/harington_toilet.jpg",
       "prologue": "Between 1500 and 1700, England underwent a staggering demographic surge. London exploded from 60,000 residents into a bustling metropolis of over half a million souls, packing families into cantilevered wooden tenements. In 1596, Sir John Harington invented the world's first flush toilet for Queen Elizabeth I—yet without running water networks, it remained an isolated palace curiosity. When Samuel Pepys stepped into his basement in 1660 only to find his neighbour's overflowing cesspit seeping through the wall, he documented the daily reality of early modern hygiene. When the Great Plague of 1665 struck, Londoners still turned to smoking tobacco and painting red crosses on doors, trapped between Renaissance innovation and medieval squalor. Why did rapid urban population growth make Early Modern towns filthier, and why did brilliant inventions like the flushing toilet fail to improve public health?",
@@ -4118,15 +4466,18 @@ export default {
             },
             "source_context": "Antiquary John Stow surveyed every ward of Elizabethan London, documenting how rapid migration from the countryside had divided ancient family homes into overcrowded tenements without sewage disposal. **Hinge Question:** Why did the construction of cantilevered overhanging houses make street sanitation and disease outbreaks far worse in Tudor London?"
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> Between 1500 and 1700, England's national population doubled from 2.5 million to over 5 million. As rural migrants flooded the capital, the great **metropolis** of London grew past **500,000** residents by 1665. Families crowded into overhanging multi-family tenements that blocked sunlight along narrow, unpaved alleys.</p><p class=\"prose-p\">Rich merchants moved west into brick houses around Covent Garden, while poorer families rented damp cellars. Until the **Great Fire of London** burned those wooden slums in 1666, rapid growth overwhelmed Tudor waste disposal and hollowed-out elm tree trunk water pipes.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> Between 1500 and 1700, England's national population doubled from 2.5 million to over 5 million. As rural migrants flooded the capital, the great **metropolis** of London grew past **500,000** residents by 1665. Families crowded into overhanging multi-family tenements that blocked sunlight along narrow, unpaved alleys.</p><p class=\"prose-p\">Rich merchants moved west into brick houses around Covent Garden, while poorer families rented damp cellars. Until the **Great Fire of London** burned those wooden slums in 1666, rapid growth overwhelmed Tudor waste disposal and hollowed-out elm tree trunk water pipes.</p>",
+          "image": "/images/ks3_was/was_l3_b0_old_london_bridge_houses_1630.jpg",
+          "image_alt": "Claude de Jongh’s 1630 oil painting View of Old London Bridge showing multi-storey overhanging timber tenements crowded densely across the stone arches spanning the River Thames",
+          "caption": "Claude de Jongh, View of Old London Bridge (1630, Yale Center for British Art): As Tudor and Stuart London boomed past 500,000 residents, overhanging multi-storey timber houses crowded every arch and alley above the polluted River Thames."
         },
         {
           "act": 2,
           "title": "The Royal Novelty: Sir John Harington’s Flush Toilet (1596)",
           "theme_heading": "The Royal Novelty: Sir John Harington’s Flush Toilet (1596)",
-          "image": "/images/queen_elizabeth_i.jpg",
-          "image_alt": "Nicholas Hilliard portrait of Queen Elizabeth I in ornate embroidered gown and ruff",
-          "caption": "Nicholas Hilliard, Queen Elizabeth I (The Phoenix Portrait, c. 1575, NPG 190). Godmother to Sir John Harington and early royal adopter of his 1596 water closet installed at Richmond Palace.",
+          "image": "/images/ks3_was/was_l3_b1_sir_john_harington_portrait.jpg",
+          "image_alt": "Engraved oval portrait of Elizabethan courtier Sir John Harington in a pleated lace ruff and patterned doublet beside an open pocket watch, signed John Haryngton below",
+          "caption": "Sir John Harington of Kelston (1560–1612, Wellcome Collection L0000070): Godson to Queen Elizabeth I who invented England’s first valve-flushing water closet (\"the Ajax\") at Richmond Palace in 1596—an invention stalled by the lack of city water mains and sewers.",
           "isReversed": false,
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In **1596**, **Queen Elizabeth I**'s godson **Sir John Harington** invented the first flushing **water closet**. He nicknamed it the 'Ajax' in his book <em>The Metamorphosis of Ajax</em>. Harington fitted a working model at **Richmond Palace**, using a brass valve and cistern to wash waste into a vault below.</p><p class=\"prose-p\">Yet Harington's clever invention failed to change Tudor towns. Because streets had no pressurized water mains or underground sewers, the flush toilet stayed a rare royal toy. Ordinary Elizabethans went on using chamber pots and wooden close-stools for another two hundred years.</p>",
           "source": {
@@ -4268,25 +4619,28 @@ export default {
             },
             "source_context": "Completed in 1613 with financial backing from King James I, the New River brought spring water from Hertfordshire into Islington. **Hinge Question:** Why did the New River Project primarily benefit wealthy Londoners while leaving poor slum areas vulnerable to water-borne disease?"
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> As leaking cesspits poisoned London's old parish wells, wealthy businessmen saw a chance to sell clean water. In 1609, goldsmith and financier **Sir Hugh Myddelton** paid to dig the **New River** for the growing capital.</p><p class=\"prose-p\">Opened in **1613**, Myddelton's **38-mile** hand-dug canal carried fresh spring water from Amwell and Chadwell in **Hertfordshire** into **Islington** in North London. Workers laid hollowed-out elm tree trunks under the streets, piping clean water into rich homes that paid the yearly fee.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> As leaking cesspits poisoned London's old parish wells, wealthy businessmen saw a chance to sell clean water. In 1609, goldsmith and financier **Sir Hugh Myddelton** paid to dig the **New River** for the growing capital.</p><p class=\"prose-p\">Opened in **1613**, Myddelton's **38-mile** hand-dug canal carried fresh spring water from Amwell and Chadwell in **Hertfordshire** into **Islington** in North London. Workers laid hollowed-out elm tree trunks under the streets, piping clean water into rich homes that paid the yearly fee.</p>",
+          "image": "/images/ks3_was/was_l3_b2_wooden_water_pipe_trunk.jpg",
+          "image_alt": "Excavated hollowed-out English elm tree-trunk wooden water pipe dug up from a London street, laid around 1600 with tapered joint end",
+          "caption": "Excavated Hollowed-Out Elm Wooden Water Pipe from London (c. 1600, Auckland Museum AM 68284): After Sir Hugh Myddelton opened the 38-mile New River to Islington in 1613, private companies piped spring water under streets through bored elm trunks only to wealthy paying homes."
         },
         {
           "act": 4,
           "title": "Nightsoil and Leaking Cesspits: The Misery of Samuel Pepys’ Cellar (1660)",
           "theme_heading": "Nightsoil and Leaking Cesspits: The Misery of Samuel Pepys’ Cellar (1660)",
-          "image": "/images/pepys.jpg",
-          "image_alt": "John Hayls oil portrait of Samuel Pepys holding a sheet of music",
-          "caption": "John Hayls, Samuel Pepys (1666, NPG 211). The famous naval administrator whose diary laid bare the sanitary squalor of Restoration London when his neighbour's cracked cesspit flooded his cellar.",
+          "image": "/images/ks3_was/was_l3_b3_samuel_pepys_hayls_1666.jpg",
+          "image_alt": "John Hayls’s 1666 oil portrait of Restoration naval official and diarist Samuel Pepys in dark brown silk gown and white cravat holding his sheet music Beauty Retire",
+          "caption": "John Hayls, Portrait of Samuel Pepys (1666, National Portrait Gallery NPG 211): Restoration naval official whose famous shorthand diary recorded stepping into his flooded Seething Lane cellar in October 1660 after a neighbour’s cracked brick cesspit leaked through the wall.",
           "isReversed": true,
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> **Samuel Pepys** left a vivid record of seventeenth-century filth in his famous diary. One morning in October **1660**, Pepys walked down into his cellar and stepped into his neighbour's waste! His neighbour's cesspit had cracked and leaked right through the cellar wall.</p><p class=\"prose-p\">Because brick cellars were poorly mortared, fractured brick **cesspits** cracked and leaked raw sewage into basements and nearby drinking wells. Householders had to hire **nightsoil** men with filth carts after midnight to bucket out smelly vaults and haul the waste outside city walls.</p>",
           "source": {
             "id": "water_l3_src_d",
             "letter": "D",
             "type": "written",
-            "src": "/units/water_and_sanitation/assets/pepys_cover.png",
-            "image": "/units/water_and_sanitation/assets/pepys_cover.png",
+            "src": "/images/ks3_was/was_l3_s3_pepys_diary_volumes_magdalene.jpg",
+            "image": "/images/ks3_was/was_l3_s3_pepys_diary_volumes_magdalene.jpg",
             "title": "Source D: Diary Entry of Samuel Pepys, London (20 October 1660)",
-            "caption": "Portrait plate of Samuel Pepys alongside his personal shorthand diary entry recording a domestic sewage disaster in his Seething Lane house (Magdalene College Cambridge / NPG).",
+            "caption": "Source D: Original leather-bound shorthand manuscript volumes of Samuel Pepys’s Diary (1660–1669) stamped with his heraldic Admiralty crest at the Pepys Library, Magdalene College, Cambridge—recording his 20 October 1660 cellar sewage flood.",
             "author": "Samuel Pepys, Navy Board Administrator",
             "date": "20 October 1660",
             "content": "Going down to my cellar this morning, I put my foot into a great heap of turds, by which I find that Sir Luke Crew’s house of office is fallen into my cellar, which do trouble me, but for this day I could do no more, having business elsewhere... In the evening home and told my wife, and tomorrow we must get people to dig and carry it away.",
@@ -4310,17 +4664,18 @@ export default {
                 "motive": "Recording candid daily events without intention of public publication."
               }
             },
-            "source_context": "London townhouses had brick or timber cesspools beneath basements. **Hinge Question:** How does Pepys' casual reaction show that sewage leaks were seen as an annoying everyday inconvenience rather than a medical danger?"
+            "source_context": "London townhouses had brick or timber cesspools beneath basements. **Hinge Question:** How does Pepys' casual reaction show that sewage leaks were seen as an annoying everyday inconvenience rather than a medical danger?",
+            "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge"
           },
           "sources": [
             {
               "id": "water_l3_src_d",
               "letter": "D",
               "type": "written",
-              "src": "/units/water_and_sanitation/assets/pepys_cover.png",
-              "image": "/units/water_and_sanitation/assets/pepys_cover.png",
+              "src": "/images/ks3_was/was_l3_s3_pepys_diary_volumes_magdalene.jpg",
+              "image": "/images/ks3_was/was_l3_s3_pepys_diary_volumes_magdalene.jpg",
               "title": "Source D: Diary Entry of Samuel Pepys, London (20 October 1660)",
-              "caption": "Portrait plate of Samuel Pepys alongside his personal shorthand diary entry recording a domestic sewage disaster in his Seething Lane house (Magdalene College Cambridge / NPG).",
+              "caption": "Source D: Original leather-bound shorthand manuscript volumes of Samuel Pepys’s Diary (1660–1669) stamped with his heraldic Admiralty crest at the Pepys Library, Magdalene College, Cambridge—recording his 20 October 1660 cellar sewage flood.",
               "author": "Samuel Pepys, Navy Board Administrator",
               "date": "20 October 1660",
               "content": "Going down to my cellar this morning, I put my foot into a great heap of turds, by which I find that Sir Luke Crew’s house of office is fallen into my cellar, which do trouble me, but for this day I could do no more, having business elsewhere... In the evening home and told my wife, and tomorrow we must get people to dig and carry it away.",
@@ -4344,7 +4699,8 @@ export default {
                   "motive": "Recording candid daily events without intention of public publication."
                 }
               },
-              "source_context": "London townhouses had brick or timber cesspools beneath basements. **Hinge Question:** How does Pepys' casual reaction show that sewage leaks were seen as an annoying everyday inconvenience rather than a medical danger?"
+              "source_context": "London townhouses had brick or timber cesspools beneath basements. **Hinge Question:** How does Pepys' casual reaction show that sewage leaks were seen as an annoying everyday inconvenience rather than a medical danger?",
+              "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> **Samuel Pepys** left a vivid record of seventeenth-century filth in his famous diary. One morning in October **1660**, Pepys walked down into his cellar and stepped into his neighbour's waste! His neighbour's cesspit had cracked and leaked right through the cellar wall.</p><p class=\"prose-p\">Because brick cellars were poorly mortared, fractured brick **cesspits** cracked and leaked raw sewage into basements and nearby drinking wells. Householders had to hire **nightsoil** men with filth carts after midnight to bucket out smelly vaults and haul the waste outside city walls.</p>"
@@ -4354,8 +4710,8 @@ export default {
           "title": "Historical Verdict: The Great Plague of 1665 & The Limits of Science",
           "theme_heading": "Historical Verdict: The Great Plague of 1665 & The Limits of Science",
           "image": "/images/great_plague_1665_broadside.jpg",
-          "image_alt": "John Dunstall 9-panel pictorial broadside illustrating the Great Plague of London in 1665",
-          "caption": "John Dunstall, London's Dreadful Visitation (1665). Contemporary 9-panel broadside documenting overhanging wooden houses, red-crossed quarantined doors, and mass burial trenches.",
+          "image_alt": "John Dunstall’s 1665 nine-panel pictorial broadside London’s Dreadful Visitation showing plague sickrooms, red-crossed quarantined houses, fleeing barges on the Thames, dead-carts, and mass burial pits",
+          "caption": "John Dunstall, London’s Dreadful Visitation (1665–1666 Pictorial Broadside): Contemporary nine-panel woodcut documenting quarantined houses, Searchers of the Dead, smoking miasma fires, and overflowing parish burial pits during the Great Plague of 1665.",
           "isReversed": true,
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Although the **Scientific Revolution** brought big breakthroughs in science, **epidemic medicine remained trapped in medieval miasma theory**. When the **Great Plague of 1665** killed over **100,000** Londoners, parish **Searchers of the Dead** tallied victims in weekly **Bills of Mortality** while officials still blamed foul air.</p><p class=\"prose-p\">The Lord Mayor ordered 40,000 dogs and 200,000 cats killed — wiping out the very animals that hunted plague rats! Watchmen locked families inside houses marked with a red cross and <em>\"Lord Have Mercy Upon Us\"</em>. People smoked **tobacco** and sniffed herb pomanders, unaware that rat fleas spread plague.</p>",
           "source": {
@@ -5175,10 +5531,10 @@ export default {
           "id": "water_l3_src_d",
           "letter": "D",
           "type": "written",
-          "src": "/units/water_and_sanitation/assets/pepys_cover.png",
-          "image": "/units/water_and_sanitation/assets/pepys_cover.png",
+          "src": "/images/ks3_was/was_l3_s3_pepys_diary_volumes_magdalene.jpg",
+          "image": "/images/ks3_was/was_l3_s3_pepys_diary_volumes_magdalene.jpg",
           "title": "Source D: Diary Entry of Samuel Pepys, London (20 October 1660)",
-          "caption": "Portrait plate of Samuel Pepys alongside his personal shorthand diary entry recording a domestic sewage disaster in his Seething Lane house (Magdalene College Cambridge / NPG).",
+          "caption": "Source D: Original leather-bound shorthand manuscript volumes of Samuel Pepys’s Diary (1660–1669) stamped with his heraldic Admiralty crest at the Pepys Library, Magdalene College, Cambridge—recording his 20 October 1660 cellar sewage flood.",
           "author": "Samuel Pepys, Navy Board Administrator",
           "date": "20 October 1660",
           "content": "Going down to my cellar this morning, I put my foot into a great heap of turds, by which I find that Sir Luke Crew’s house of office is fallen into my cellar, which do trouble me, but for this day I could do no more, having business elsewhere... In the evening home and told my wife, and tomorrow we must get people to dig and carry it away.",
@@ -5202,7 +5558,8 @@ export default {
               "motive": "Recording candid daily events without intention of public publication."
             }
           },
-          "source_context": "London townhouses had brick or timber cesspools beneath basements. **Hinge Question:** How does Pepys' casual reaction show that sewage leaks were seen as an annoying everyday inconvenience rather than a medical danger?"
+          "source_context": "London townhouses had brick or timber cesspools beneath basements. **Hinge Question:** How does Pepys' casual reaction show that sewage leaks were seen as an annoying everyday inconvenience rather than a medical danger?",
+          "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge"
         },
         {
           "id": "water_l3_src_e",
@@ -5349,7 +5706,8 @@ export default {
       },
       "vocab_cloze_text": "Rapid Tudor and Stuart growth turned London into a crowded [Metropolis] where overflowing privies leaked into cellars, as [Samuel Pepys] famously recorded in 1660. Although [Sir John Harington] designed a flushing [Water Closet] in 1596 and the 1613 [New River] canal piped fresh water from Hertfordshire, poor districts remained filthy. During the 1665 Great Plague, parish clerks tracked soaring deaths through weekly [Bills of Mortality].",
       "banner_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
-      "hero_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg"
+      "hero_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
+      "banner_position": "center 48%"
     },
     {
       "id": "lesson_4",
@@ -5359,14 +5717,15 @@ export default {
       "enquiry": "Was Victorian cholera conquered by civil engineering and fear of the Great Stink, or did politicians act out of genuine care for the poor?",
       "subtitle": "Enquiry 04: Boomtown Squalor, Asiatic Cholera & Joseph Bazalgette’s Underground Revolution (1750–1858)",
       "skill": "Causation & Significance",
-      "card_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
+      "card_image": "/images/ks3_was/was_l4_card_crossness_pumping_station.jpg",
       "card_position": "center",
       "banner": {
         "image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
-        "caption": "Section of the Thames Embankment Showing Joseph Bazalgette’s Low-Level Intercepting Sewer",
-        "position": "center 30%"
+        "alt": "1867 cutaway engineering wood engraving titled SECTION OF THE THAMES EMBANKMENT showing the granite river wall beside steamboats on the Thames, pipe subway (1), Sir Joseph Bazalgette’s circular brick Low-Level Sewer (2), and underground District Railway (3)",
+        "caption": "Section of the Thames Embankment Showing Sir Joseph Bazalgette’s Low-Level Intercepting Sewer (The Illustrated London News, 1867): Built after the 1858 Great Stink to carry London’s sewage eastward away from central drinking supplies.",
+        "position": "center 48%"
       },
-      "cover_image": "/images/father_thames_punch_1858.jpg",
+      "cover_image": "/images/ks3_was/was_l4_s3_father_thames_punch_1858.jpg",
       "prologue": "Between 1780 and 1858, the Industrial Revolution catapulted Britain into the modern era, but at a horrifying human cost. Millions of rural labourers flooded into factory boomtowns like Manchester, Leeds, and London, crammed into unventilated back-to-back slums where cesspools overflowed into drinking wells. When Asiatic cholera struck in 1831, the medical establishment was helpless, trapped by ancient miasma beliefs. Even when Edwin Chadwick proved in 1842 that filth caused disease and poverty, Victorian politicians clung to laissez-faire inaction. It took the terrifying heatwave of June 1858—the Great Stink—when the raw sewage of three million Londoners fermenting in the Thames threatened Parliament itself, to finally force the government to act and commission Sir Joseph Bazalgette’s brick revolution. Did the British government commission Sir Joseph Bazalgette’s sewer network out of compassion for the working class, or out of terror when the Great Stink reached the Palace of Westminster?",
       "did_you_know": "During the Great Stink of June 1858, Members of Parliament soaked their window curtains in chloride of lime to neutralize the river stench, but MPs still fled the committee rooms clutching handkerchiefs over their noses!",
       "do_now": {
@@ -5569,9 +5928,9 @@ export default {
           "ref": "[4.1]",
           "period": "1780–1840",
           "title": "Boomtown Squalor: Back-to-Backs, Cellar Dwellings & Privy Middens",
-          "image": "/images/victorian_slum.jpg",
-          "image_alt": "Gustave Doré wood engraving depicting crowded Victorian industrial back-to-backs and railway viaducts in London, 1872",
-          "caption": "Gustave Doré, Over London by Rail (1872). Industrial expansion packed millions of factory labourers into unventilated back-to-back brick tenements with zero municipal drainage.",
+          "image": "/images/ks3_was/was_l4_b0_dore_over_london_by_rail_1872.jpg",
+          "image_alt": "Gustave Doré’s 1872 wood engraving Over London—By Rail looking out from under a dark brick railway arch across cramped, smoke-choked rows of back-to-back Victorian terrace tenements and tiny laundry-hung yards",
+          "caption": "Gustave Doré, Over London—By Rail (1872): Industrialisation crammed millions of factory families into airless back-to-back brick slums where up to sixty residents shared a single overflowing courtyard privy and working-class life expectancy fell to nineteen years.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Between 1780 and 1850, **industrialisation** during the **Industrial Revolution** turned Britain into a nation of busy factory towns. Millions of farm workers moved to smoky boomtowns like **Manchester, Birmingham, and Leeds**. Builders crammed cheap **back-to-back slums** into narrow courts with no fresh air, taps, or drains.</p><p class=\"prose-p\">Up to **sixty people** shared one wooden **privy** over an overflowing **cesspool** or midden heap. Raw waste spilled across unpaved yards where children played. In Manchester's worst slums, working-class life expectancy dropped to just **nineteen years**, compared with forty years in country villages.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Between 1780 and 1850, **industrialisation** during the **Industrial Revolution** turned Britain into a nation of busy factory towns. Millions of farm workers moved to smoky boomtowns like **Manchester, Birmingham, and Leeds**. Builders crammed cheap **back-to-back slums** into narrow courts with no fresh air, taps, or drains.</p><p class=\"prose-p\">Up to **sixty people** shared one wooden **privy** over an overflowing **cesspool** or midden heap. Raw waste spilled across unpaved yards where children played. In Manchester's worst slums, working-class life expectancy dropped to just **nineteen years**, compared with forty years in country villages.</p>"
         },
@@ -5580,15 +5939,116 @@ export default {
           "period": "1831–1832",
           "title": "The Blue Death: Asiatic Cholera Strikes & The Miasma Trap",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> In October 1831, a terrifying new illness reached the port of **Sunderland** on ships from the Baltic: **Asiatic cholera**. Spread by bacteria in dirty water, cholera caused catastrophic dehydration that thickened victims' blood and turned their skin blue. Over **52,000** fatalities were recorded across Great Britain during the 1831–32 outbreak.</p><p class=\"prose-p\">Because doctors still believed in **miasma**, town councils burned barrels of pitch and tar to purify foul air. Nobody realised that human sewage seeping into shared street water pumps was spreading the killer disease.</p>",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> In October 1831, a terrifying new illness reached the port of **Sunderland** on ships from the Baltic: **Asiatic cholera**. Spread by bacteria in dirty water, cholera caused catastrophic dehydration that thickened victims' blood and turned their skin blue. Over **52,000** fatalities were recorded across Great Britain during the 1831–32 outbreak.</p><p class=\"prose-p\">Because doctors still believed in **miasma**, town councils burned barrels of pitch and tar to purify foul air. Nobody realised that human sewage seeping into shared street water pumps was spreading the killer disease.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> In October 1831, a terrifying new illness reached the port of **Sunderland** on ships from the Baltic: **Asiatic cholera**. Spread by bacteria in dirty water, cholera caused catastrophic dehydration that thickened victims' blood and turned their skin blue. Over **52,000** fatalities were recorded across Great Britain during the 1831–32 outbreak.</p><p class=\"prose-p\">Because doctors still believed in **miasma**, town councils burned barrels of pitch and tar to purify foul air. Nobody realised that human sewage seeping into shared street water pumps was spreading the killer disease.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 7 Disease Detective",
+            "title": "Miasma ('Bad Air') vs Waterborne Germs: Why Victorian Doctors Missed the Killer",
+            "default_index": 0,
+            "caption": "Click each tab to discover why Victorian authorities burned tar barrels for bad smells while invisible cholera bacteria spread through drinking water.",
+            "items": [
+              {
+                "tab_label": "1. Blue Death (1831)",
+                "title": "Asiatic Cholera Hits Industrial Britain",
+                "dates": "October 1831–1832 • Sunderland to London",
+                "badge": "52,000+ Killed",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Arrival Port",
+                    "value": "Reached Sunderland by Ship in October 1831"
+                  },
+                  {
+                    "label": "Symptoms",
+                    "value": "Violent Dehydration Turned Victims’ Skin Blue"
+                  },
+                  {
+                    "label": "Speed",
+                    "value": "Healthy Adults Could Die Within Hours"
+                  }
+                ],
+                "takeaway": "Terrified townspeople nicknamed Asiatic cholera the 'Blue Death' because rapid fluid loss thickened blood and killed thousands in days."
+              },
+              {
+                "tab_label": "2. Miasma Mistake",
+                "title": "Blaming Foul Smells Instead of Dirty Water",
+                "dates": "1831–1858 • Stubborn Medical Belief",
+                "badge": "Wrong Cause",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Miasma Idea",
+                    "value": "Doctors Claimed Rotting Smells Poisoned Air"
+                  },
+                  {
+                    "label": "Useless Cure",
+                    "value": "Councils Burned Pitch & Tar Barrels in Streets"
+                  },
+                  {
+                    "label": "1858 Panic",
+                    "value": "MPs Hung Lime-Soaked Curtains in Parliament"
+                  }
+                ],
+                "takeaway": "Because microscopes and germ science were not yet accepted, even top reformers like Edwin Chadwick believed 'all smell is disease'."
+              },
+              {
+                "tab_label": "3. Poisoned Pumps",
+                "title": "Leaking Cesspools & Shared Street Wells",
+                "dates": "1800–1854 • Invisible Bacteria",
+                "badge": "Real Killer",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Shared Privies",
+                    "value": "Up to 60 Slum Residents Used One Privy Pit"
+                  },
+                  {
+                    "label": "Cracked Bricks",
+                    "value": "Raw Human Sewage Seeped Into Shallow Wells"
+                  },
+                  {
+                    "label": "Daily Danger",
+                    "value": "Families Drank Unboiled Cholera-Infected Water"
+                  }
+                ],
+                "takeaway": "Cholera was actually swallowed in dirty water whenever human waste from overflowing privies leaked into neighbourhood street pumps."
+              },
+              {
+                "tab_label": "4. Flushing Backfires",
+                "title": "200,000 Water Closets Poison the River Thames",
+                "dates": "1848–1858 • Road to the Great Stink",
+                "badge": "River Sewer",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.2)",
+                "metrics": [
+                  {
+                    "label": "New Toilets",
+                    "value": "200,000 Flush Closets Emptied Into Old Drains"
+                  },
+                  {
+                    "label": "Fatal Loop",
+                    "value": "Water Companies Pumped Drinking Water From Thames"
+                  },
+                  {
+                    "label": "1858 Result",
+                    "value": "35°C Heatwave Forced £3m Grant for Bazalgette"
+                  }
+                ],
+                "takeaway": "Trying to wash smelly waste away without proper sewers turned the Thames into an open toilet—until the 1858 Great Stink forced Parliament to pay £3m."
+              }
+            ]
+          }
         },
         {
           "ref": "[4.3]",
           "period": "1842–1848",
           "title": "Edwin Chadwick’s Sanitary Report & The Permissive 1848 Act",
-          "image": "/units/water_and_sanitation/assets/edwin_chadwick.jpg",
-          "image_alt": "Portrait photograph of social reformer and Poor Law commissioner Sir Edwin Chadwick",
-          "caption": "Sir Edwin Chadwick (1800–1890). His monumental 1842 Sanitary Report proved that disease caused poverty and sparked Britain’s first General Board of Health.",
+          "image": "/images/ks3_was/was_l4_b2_edwin_chadwick_portrait.jpg",
+          "image_alt": "Three-quarter-length Victorian portrait photograph of sanitary reformer Sir Edwin Chadwick in dark frock coat, white collar, and bow tie",
+          "caption": "Sir Edwin Chadwick (1800–1890, Wellcome Collection M0010963): Civil servant whose statistical 1842 Sanitary Report proved slum filth caused epidemic deaths and poverty, sparking the permissive 1848 Public Health Act.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> The first big step forward came from civil servant **Edwin Chadwick**. In **1842**, he published his landmark <em>Report on the Sanitary Condition of the Labouring Population</em>. Using death records from across Britain, Chadwick proved that slum dirt, blocked drains, and bad water caused epidemic disease and poverty.</p><p class=\"prose-p\">Chadwick argued that clean drains would save taxpayers money by reducing epidemic deaths and workhouse dependency. Parliament passed the **Public Health Act of 1848**, setting up a General Board of Health. Yet the 1848 law was strictly **permissive** rather than compulsory, so **laissez-faire** councils refused to pay for sewers.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> The first big step forward came from civil servant **Edwin Chadwick**. In **1842**, he published his landmark <em>Report on the Sanitary Condition of the Labouring Population</em>. Using death records from across Britain, Chadwick proved that slum dirt, blocked drains, and bad water caused epidemic disease and poverty.</p><p class=\"prose-p\">Chadwick argued that clean drains would save taxpayers money by reducing epidemic deaths and workhouse dependency. Parliament passed the **Public Health Act of 1848**, setting up a General Board of Health. Yet the 1848 law was strictly **permissive** rather than compulsory, so **laissez-faire** councils refused to pay for sewers.</p>"
         },
@@ -5597,15 +6057,18 @@ export default {
           "period": "June 1858",
           "title": "The Toxic Tide & The Great Stink of London",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> By 1855, nearly three million people lived in London, and wealthy homes had fitted **200,000** flushing water closets. Instead of improving health, they flushed raw human waste into old storm drains leading straight into the Thames. Worse still, water companies pumped London's drinking water out of that same dirty river!</p><p class=\"prose-p\">In the hot summer of **1858**, 35°C heat baked the river mud into a foul smell called the **Great Stink**. Sheets soaked in **chloride of lime** hung in Parliament's windows failed to block the stench. Within eighteen days, panicked MPs voted a **£3m** grant to rebuild London's drains.</p>",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> By 1855, nearly three million people lived in London, and wealthy homes had fitted **200,000** flushing water closets. Instead of improving health, they flushed raw human waste into old storm drains leading straight into the Thames. Worse still, water companies pumped London's drinking water out of that same dirty river!</p><p class=\"prose-p\">In the hot summer of **1858**, 35°C heat baked the river mud into a foul smell called the **Great Stink**. Sheets soaked in **chloride of lime** hung in Parliament's windows failed to block the stench. Within eighteen days, panicked MPs voted a **£3m** grant to rebuild London's drains.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> By 1855, nearly three million people lived in London, and wealthy homes had fitted **200,000** flushing water closets. Instead of improving health, they flushed raw human waste into old storm drains leading straight into the Thames. Worse still, water companies pumped London's drinking water out of that same dirty river!</p><p class=\"prose-p\">In the hot summer of **1858**, 35°C heat baked the river mud into a foul smell called the **Great Stink**. Sheets soaked in **chloride of lime** hung in Parliament's windows failed to block the stench. Within eighteen days, panicked MPs voted a **£3m** grant to rebuild London's drains.</p>",
+          "image": "/images/ks3_was/was_l4_b3_faraday_card_father_thames_1855.jpg",
+          "image_alt": "Punch cartoon published 21 July 1855 titled FARADAY GIVING HIS CARD TO FATHER THAMES showing scientist Michael Faraday holding his nose on a Thames steamboat as he hands his visiting card to a filthy, weed-draped Father Thames surrounded by dead dogs",
+          "caption": "\"Faraday Giving His Card to Father Thames\" (Punch, 21 July 1855, Wellcome Collection M0012507): Satirising Professor Michael Faraday’s famous warning after white cards dropped into the sewage-choked River Thames vanished within an inch—three years before the 1858 Great Stink."
         },
         {
           "ref": "[4.5]",
           "period": "1858–1865",
           "title": "Sir Joseph Bazalgette’s Civil Engineering Triumph: 82 Miles of Sewers",
-          "image": "/units/water_and_sanitation/assets/joseph_bazalgette.jpg",
-          "image_alt": "Portrait photograph of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works",
-          "caption": "Sir Joseph Bazalgette (1819–1891). Chief Engineer who directed the construction of London's 82-mile underground intercepting brick sewer network.",
+          "image": "/images/ks3_was/was_l4_b4_joseph_bazalgette_portrait.jpg",
+          "image_alt": "Victorian woodburytype portrait photograph of civil engineer Sir Joseph Bazalgette with prominent side-whiskers wearing a dark coat and spotted cravat",
+          "caption": "Sir Joseph Bazalgette (1819–1891, Lock & Whitfield woodburytype): Chief Engineer to the Metropolitan Board of Works who used 318 million bricks and waterproof Portland cement to build 82 miles of intercepting sewers beneath London.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> To rescue the capital, the Metropolitan Board of Works hired **civil engineering** mastermind **Joseph Bazalgette**. Between 1859 and 1875, he built **82 miles** of giant underground **intercepting sewers** along the Thames banks. Workers laid **318 million bricks** bonded with waterproof **Portland cement**.</p><p class=\"prose-p\">Set on a steady downward gravity slope, the tunnels carried waste eastwards away from central London. Huge steam pumping stations at **Abbey Mills** and **Crossness** (and Portsmouth's Eastney station) lifted the sewage into the tidal river to wash out to sea.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> To rescue the capital, the Metropolitan Board of Works hired **civil engineering** mastermind **Joseph Bazalgette**. Between 1859 and 1875, he built **82 miles** of giant underground **intercepting sewers** along the Thames banks. Workers laid **318 million bricks** bonded with waterproof **Portland cement**.</p><p class=\"prose-p\">Set on a steady downward gravity slope, the tunnels carried waste eastwards away from central London. Huge steam pumping stations at **Abbey Mills** and **Crossness** (and Portsmouth's Eastney station) lifted the sewage into the tidal river to wash out to sea.</p>"
         }
@@ -5714,26 +6177,30 @@ export default {
           "letter": "Source D",
           "type": "visual",
           "title": "'Father Thames Introducing His Offspring to the Fair City of London' (Punch, July 1858)",
-          "caption": "Father Thames Introducing His Offspring (Punch, 1858). Satirical cartoon personifying the Thames delivering Diphtheria, Scrofula, and Cholera to London.",
-          "image": "/images/father_thames_punch_1858.jpg",
+          "caption": "Source D: John Leech, \"Father Thames Introducing His Offspring to the Fair City of London\" (Punch, 3 July 1858, Vol. XXXV, p. 5). Published at the height of the Great Stink, personifying the sewage-choked River Thames presenting Diphtheria, Scrofula, and Cholera to London.",
+          "image": "/images/ks3_was/was_l4_s3_father_thames_punch_1858.jpg",
           "source_context": "Published in Punch magazine at the peak of the Great Stink in July 1858. The cartoon personifies the River Thames as a decrepit, slime-covered old man presenting his deadly children—Diphtheria, Scrofula, and Cholera—to the female embodiment of the City of London. **Hinge Question:** Why did the stench of the Thames in 1858 succeed in forcing Parliament to act when thirty years of cholera deaths in the slums had failed?",
           "prompt": "What can you infer from Source D about public attitudes toward the pollution of the River Thames in the summer of 1858?",
           "model_answer": "Source D reveals deep public anger and disgust towards the toxic condition of the River Thames, portraying it as a lethal source of pestilence and preventable death. By depicting the river introducing diseases directly to London, Punch mocked the failure of government authorities to clean up the river until it threatened the entire metropolis.",
           "context": "Published in Punch magazine at the peak of the Great Stink in July 1858. The cartoon personifies the River Thames as a decrepit, slime-covered old man presenting his deadly children—Diphtheria, Scrofula, and Cholera—to the female embodiment of the City of London.",
-          "hinge_question": "Why did the stench of the Thames in 1858 succeed in forcing Parliament to act when thirty years of cholera deaths in the slums had failed?"
+          "hinge_question": "Why did the stench of the Thames in 1858 succeed in forcing Parliament to act when thirty years of cholera deaths in the slums had failed?",
+          "src": "/images/ks3_was/was_l4_s3_father_thames_punch_1858.jpg",
+          "image_alt": "John Leech’s 3 July 1858 Punch cartoon titled FATHER THAMES INTRODUCING HIS OFFSPRING TO THE FAIR CITY OF LONDON showing filthy river-god Father Thames rising from sewage and dead animals to present Diphtheria, Scrofula, and Cholera to Britannia"
         },
         {
           "id": "water_l4_src_e",
           "letter": "Source E",
           "type": "visual",
           "title": "Construction of the Low-Level Intercepting Sewer (The Illustrated London News, 1862)",
-          "caption": "Wood engraving showing navvies constructing Sir Joseph Bazalgette's egg-shaped brick sewer tunnels beneath London, 1862.",
-          "image": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
+          "caption": "Source E: \"Main Drainage of the Metropolis — Sectional View of the Tunnels from Wick Lane, Near Old Ford, Bow\" (The Illustrated London News, 1859, Wellcome Collection V0020257), showing navvies and bricklayers constructing Sir Joseph Bazalgette’s brick intercepting sewers.",
+          "image": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
           "source_context": "Published in The Illustrated London News during the peak construction of Bazalgette's 82-mile sewer system. Navvies excavated deep trenches through London streets, laying egg-shaped brick tunnels that used natural gravity gradients to carry waste away from the Thames. **Hinge Question:** Why was the egg-shaped cross-section of Bazalgette's brick sewers essential for preventing blockages during dry summer spells?",
           "prompt": "What does Source E demonstrate about the scale, engineering techniques, and materials used in Bazalgette’s sewer revolution?",
           "model_answer": "Source E shows the immense industrial scale and precision of Victorian civil engineering, with teams of skilled bricklayers constructing massive egg-shaped tunnels using waterproof Portland cement. The curved profile allowed water to flow rapidly even at low volumes, preventing sludge buildup and ensuring self-cleansing drainage.",
           "context": "Published in The Illustrated London News during the peak construction of Bazalgette's 82-mile sewer system. Navvies excavated deep trenches through London streets, laying egg-shaped brick tunnels that used natural gravity gradients to carry waste away from the Thames.",
-          "hinge_question": "Why was the egg-shaped cross-section of Bazalgette's brick sewers essential for preventing blockages during dry summer spells?"
+          "hinge_question": "Why was the egg-shaped cross-section of Bazalgette's brick sewers essential for preventing blockages during dry summer spells?",
+          "src": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
+          "image_alt": "1859 Illustrated London News wood engraving titled MAIN DRAINAGE OF THE METROPOLIS — SECTIONAL VIEW OF THE TUNNELS FROM WICK LANE, NEAR OLD FORD, BOW showing bricklayers and navvies on timber scaffolding building twin arched brick intercepting sewer tunnels"
         }
       ],
       "tasks": [
@@ -6534,7 +7001,7 @@ export default {
         "topicLabel": "Enquiry 4: Industrial Slums, Cholera, The 1858 Great Stink & Bazalgette’s Sewers",
         "title": "How Did Industrial Slums and the Great Stink Force Britain to Build Modern Sewers?",
         "spokenTitle": "How did industrial slums and the Great Stink force Britain to build modern sewers?",
-        "thumbUrl": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
+        "thumbUrl": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
         "provenanceNote": "Wellcome Collection, British Library, National Portrait Gallery & British Museum (Zero AI Imagery)",
         "bridges": [
           "Factory Slums",
@@ -6573,7 +7040,7 @@ export default {
             "badge": "Stage 3",
             "heading": "Chadwick & Weak 1848 Law",
             "date": "1842–1848",
-            "img": "/units/water_and_sanitation/assets/edwin_chadwick.jpg",
+            "img": "/images/ks3_was/was_l4_b2_edwin_chadwick_portrait.jpg",
             "mode": "contain",
             "stat": "1848 Public Health Act Was Optional Only",
             "html": "<strong>Edwin Chadwick’s</strong> 1842 report proved slum filth caused disease and poverty. Yet the <strong>1848 Public Health Act</strong> was optional, so <strong>laissez-faire</strong> councils refused to pay.",
@@ -6585,7 +7052,7 @@ export default {
             "badge": "Stage 4",
             "heading": "June 1858: The Great Stink",
             "date": "June 1858",
-            "img": "/images/father_thames_punch_1858.jpg",
+            "img": "/images/ks3_was/was_l4_s3_father_thames_punch_1858.jpg",
             "mode": "contain-light",
             "stat": "£3 Million Voted by Panicked MPs in 18 Days",
             "html": "London’s flushing toilets poured waste into the <strong>River Thames</strong>. When June 1858 heat baked the river into the <strong>Great Stink</strong>, choking MPs voted <strong>£3 million</strong>.",
@@ -6610,7 +7077,7 @@ export default {
             "isOutcome": true,
             "heading": "Sewers Save Capital From Cholera",
             "date": "By 1875",
-            "img": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
+            "img": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
             "mode": "landscape",
             "pos": "center 40%",
             "stat": "Cholera Wiped Out Once Tunnels Opened",
@@ -6638,7 +7105,8 @@ export default {
       },
       "vocab_cloze_text": "Rapid [Industrialisation] packed working families into damp back-to-back slums sharing a filthy outdoor [Privy] and leaking [Cesspool]. Because MPs favoured [Laissez-faire] non-interference and doctors blamed foul [Miasma], deadly waterborne [Cholera] swept British cities from 1831 onwards. Only when the 1858 Great Stink overwhelmed Parliament did MPs fund Joseph Bazalgette’s [Intercepting Sewer] network across London.",
       "banner_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
-      "hero_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg"
+      "hero_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
+      "banner_position": "center 48%"
     },
     {
       "id": "lesson_5",
@@ -6648,12 +7116,13 @@ export default {
       "enquiry": "Was cholera defeated by scientific observation, laboratory discovery of bacteria, or the introduction of compulsory government legislation?",
       "subtitle": "Enquiry 05: The Broad Street Pump, Louis Pasteur’s Swan-Neck Flasks & The 1875 Sanitary Revolution (1854–1900)",
       "skill": "Significance & Evidence",
-      "card_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
+      "card_image": "/images/ks3_was/was_l5_card_board_of_health_cholera_1832.jpg",
       "card_position": "center",
       "banner": {
         "image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
-        "caption": "Monster Soup Commonly Called Thames Water (Microscopic Satire on Polluted London Water)",
-        "position": "center 30%"
+        "alt": "William Heath’s 1828 hand-coloured satirical etching Monster Soup Commonly Called Thames Water showing a horrified Georgian woman dropping her teacup as she peers through a microscope at writhing monsters in a drop of London Thames drinking water",
+        "caption": "William Heath, \"Monster Soup Commonly Called Thames Water\" (1828, Wellcome Collection): Satirical print exposing the invisible sewage filth pumped into London homes decades before Dr John Snow and Louis Pasteur proved waterborne germs.",
+        "position": "center 38%"
       },
       "cover_image": "/images/john_snow.jpg",
       "prologue": "Between 1854 and 1884, a scientific revolution shattered centuries of medical ignorance. In September 1854, when Asiatic cholera struck Soho, Dr John Snow mapped every death around the Broad Street pump, deducing that cholera was waterborne long before bacteria could be seen. Though the medical establishment stubbornly defended miasma dogma, French chemist Louis Pasteur proved in 1861 that microscopic germs caused fermentation and disease. German microbiologist Robert Koch isolated Vibrio cholerae in 1884, providing undeniable laboratory proof. Armed with scientific certainty and galvanized by expanding working-class voting power, Disraeli’s government passed the landmark Public Health Act of 1875—compelling local councils to provide clean water, covered drainage, and sanitary inspections, permanently defeating epidemic cholera in Britain. Was epidemic cholera finally defeated by Dr John Snow’s epidemiological detective work, Pasteur’s Germ Theory, or the compulsory powers of the 1875 Public Health Act?",
@@ -6859,15 +7328,146 @@ export default {
           "period": "1854",
           "title": "The Soho Cholera Outbreak & Miasma Dogma (1854)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In late August **1854**, a sudden cholera outbreak struck the crowded streets of **Soho** around Broad Street in central London. Within 250 yards of Broad Street, **over 500 deaths** (616 in total) struck in ten days, and **three-quarters of the neighbourhood** fled.</p><p class=\"prose-p\">Health authorities still clung to airborne **miasma** theories rather than blaming contaminated well water from communal pumps. Doctors claimed **poisonous miasmatic vapours rising from decaying matter in cesspools** were choking Soho residents at night.</p>",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In late August **1854**, a sudden cholera outbreak struck the crowded streets of **Soho** around Broad Street in central London. Within 250 yards of Broad Street, **over 500 deaths** (616 in total) struck in ten days, and **three-quarters of the neighbourhood** fled.</p><p class=\"prose-p\">Health authorities still clung to airborne **miasma** theories rather than blaming contaminated well water from communal pumps. Doctors claimed **poisonous miasmatic vapours rising from decaying matter in cesspools** were choking Soho residents at night.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In late August **1854**, a sudden cholera outbreak struck the crowded streets of **Soho** around Broad Street in central London. Within 250 yards of Broad Street, **over 500 deaths** (616 in total) struck in ten days, and **three-quarters of the neighbourhood** fled.</p><p class=\"prose-p\">Health authorities still clung to airborne **miasma** theories rather than blaming contaminated well water from communal pumps. Doctors claimed **poisonous miasmatic vapours rising from decaying matter in cesspools** were choking Soho residents at night.</p>",
+          "image": "/images/water_and_sanitation/maps/was7_map_l5_victorian_london_soho_cholera_bazalgette_1854_75.svg",
+          "image_alt": "KS3 Year 7 two-panel GIS map of Victorian London and Soho (1854–1875) showing the River Thames, Westminster during the 1858 Great Stink, Sir Joseph Bazalgette’s Northern and Southern intercepting sewers to Abbey Mills and Crossness, and Dr John Snow’s Soho cholera spot map around the Broad Street pump, 40 Broad Street cesspool, Lion Brewery, and Poland Street Workhouse",
+          "caption": "Reference Map: Victorian London, Dr John Snow’s Soho Cholera Investigation & Sir Joseph Bazalgette’s Sewers (1854–1875)—pairing London’s 1858 \"Great Stink\" and 82-mile intercepting sewers with Snow’s Soho spot map around the Broad Street pump, 40 Broad Street cesspool, and Lion Brewery.",
+          "stage_hook_map": {
+            "id": "was7-l5-victorian-london-soho-cholera-bazalgette-map",
+            "image": "/images/water_and_sanitation/maps/was7_map_l5_victorian_london_soho_cholera_bazalgette_1854_75.svg",
+            "title": "Conquering Dirty Water: Snow’s Soho Pump & Bazalgette’s Sewers (1854–75)",
+            "subtitle": "Broad St Pump, 40 Broad St Cesspool, 1858 Great Stink & Bazalgette’s Sewers · Tap pins 1–4",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 75.5,
+                "y": 45.1,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "1. Broad Street Pump, Soho (Sept 1854)",
+                "badge": "500+ Deaths Mapped • Handle Removed",
+                "date": "Sept 1854",
+                "title": "Broad Street Water Pump, Soho (September 1854): Dr John Snow’s Spot Map",
+                "body": "When over 500 Soho residents died of cholera within ten days in August–September 1854, Dr John Snow knocked on doors and plotted every death as a black bar on a street map. Proving deaths clustered tightly around the Broad Street water pump, Snow persuaded parish officials to remove the iron pump handle on 8 September 1854.",
+                "details": "When over 500 Soho residents died of cholera within ten days in August–September 1854, Dr John Snow knocked on doors and plotted every death as a black bar on a street map. Proving deaths clustered tightly around the Broad Street water pump, Snow persuaded parish officials to remove the iron pump handle on 8 September 1854.",
+                "hinge": "How did Dr John Snow’s street map challenge Victorian doctors who insisted cholera floated through “bad air” (miasma)?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 78.7,
+                "y": 42.7,
+                "align": "left",
+                "color": "#5b21b6",
+                "label": "2. 40 Broad St Cesspool vs Lion Brewery (1854)",
+                "badge": "Poisoned Well vs Safe Beer",
+                "date": "Aug–Sept 1854",
+                "title": "40 Broad Street Leaking Cesspool vs Lion Brewery & Workhouse (1854)",
+                "body": "Reverend Henry Whitehead discovered that a baby’s cholera-soiled nappies at 40 Broad Street had been washed into a cracked brick cesspool leaking sewage less than three feet from the public pump well. Meanwhile, zero workers died next door at the Lion Brewery—where 70 men drank free beer and used a deep private well—and almost everyone survived inside Poland Street Workhouse!",
+                "details": "Reverend Henry Whitehead discovered that a baby’s cholera-soiled nappies at 40 Broad Street had been washed into a cracked brick cesspool leaking sewage less than three feet from the public pump well. Meanwhile, zero workers died next door at the Lion Brewery—where 70 men drank free beer and used a deep private well—and almost everyone survived inside Poland Street Workhouse!",
+                "hinge": "Why was the survival of 70 Lion Brewery workers right beside the Broad Street pump Snow’s strongest clue against miasma?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 14.9,
+                "y": 45.2,
+                "align": "right",
+                "color": "#b45309",
+                "label": "3. Westminster & The 1858 “Great Stink”",
+                "badge": "River Thames Overwhelms MPs",
+                "date": "Summer 1858",
+                "title": "Westminster & The 1858 “Great Stink”: Sewage-Choked River Thames Forces Action",
+                "body": "Flushing water closets emptied raw human waste straight into old storm drains and into the tidal River Thames. During a scorching heatwave in Summer 1858, the foul smell of baking sewage right outside the Houses of Parliament soaked curtains in chloride of lime and drove MPs in just 18 days to vote £3 million for new London-wide sewers.",
+                "details": "Flushing water closets emptied raw human waste straight into old storm drains and into the tidal River Thames. During a scorching heatwave in Summer 1858, the foul smell of baking sewage right outside the Houses of Parliament soaked curtains in chloride of lime and drove MPs in just 18 days to vote £3 million for new London-wide sewers.",
+                "hinge": "Why did the smell outside Parliament in Summer 1858 persuade MPs to spend £3 million faster than earlier cholera outbreaks in poor slums?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 30.4,
+                "y": 36.9,
+                "color": "#065f46",
+                "label": "4. Bazalgette’s 82-Mile Sewers & 1875 Act",
+                "badge": "Abbey Mills, Crossness & 1875 Law",
+                "date": "1859–1875",
+                "title": "Sir Joseph Bazalgette’s 82-Mile Sewers & The Compulsory 1875 Public Health Act",
+                "body": "Chief Engineer Sir Joseph Bazalgette used 318 million bricks and waterproof Portland cement to build 82 miles of giant intercepting sewers and 1,100 miles of street sewers, using steam pumping stations at Abbey Mills and Crossness to carry waste far downstream. Backed by Pasteur’s 1861 Germ Theory, Parliament’s 1875 Public Health Act finally made clean water and covered sewers compulsory across Britain.",
+                "details": "Chief Engineer Sir Joseph Bazalgette used 318 million bricks and waterproof Portland cement to build 82 miles of giant intercepting sewers and 1,100 miles of street sewers, using steam pumping stations at Abbey Mills and Crossness to carry waste far downstream. Backed by Pasteur’s 1861 Germ Theory, Parliament’s 1875 Public Health Act finally made clean water and covered sewers compulsory across Britain.",
+                "hinge": "Why was making the 1875 Public Health Act compulsory so much more effective than the voluntary 1848 Public Health Act?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 75.5,
+                "y": 45.1,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "1. Broad Street Pump, Soho (Sept 1854)",
+                "badge": "500+ Deaths Mapped • Handle Removed",
+                "date": "Sept 1854",
+                "title": "Broad Street Water Pump, Soho (September 1854): Dr John Snow’s Spot Map",
+                "body": "When over 500 Soho residents died of cholera within ten days in August–September 1854, Dr John Snow knocked on doors and plotted every death as a black bar on a street map. Proving deaths clustered tightly around the Broad Street water pump, Snow persuaded parish officials to remove the iron pump handle on 8 September 1854.",
+                "details": "When over 500 Soho residents died of cholera within ten days in August–September 1854, Dr John Snow knocked on doors and plotted every death as a black bar on a street map. Proving deaths clustered tightly around the Broad Street water pump, Snow persuaded parish officials to remove the iron pump handle on 8 September 1854.",
+                "hinge": "How did Dr John Snow’s street map challenge Victorian doctors who insisted cholera floated through “bad air” (miasma)?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 78.7,
+                "y": 42.7,
+                "align": "left",
+                "color": "#5b21b6",
+                "label": "2. 40 Broad St Cesspool vs Lion Brewery (1854)",
+                "badge": "Poisoned Well vs Safe Beer",
+                "date": "Aug–Sept 1854",
+                "title": "40 Broad Street Leaking Cesspool vs Lion Brewery & Workhouse (1854)",
+                "body": "Reverend Henry Whitehead discovered that a baby’s cholera-soiled nappies at 40 Broad Street had been washed into a cracked brick cesspool leaking sewage less than three feet from the public pump well. Meanwhile, zero workers died next door at the Lion Brewery—where 70 men drank free beer and used a deep private well—and almost everyone survived inside Poland Street Workhouse!",
+                "details": "Reverend Henry Whitehead discovered that a baby’s cholera-soiled nappies at 40 Broad Street had been washed into a cracked brick cesspool leaking sewage less than three feet from the public pump well. Meanwhile, zero workers died next door at the Lion Brewery—where 70 men drank free beer and used a deep private well—and almost everyone survived inside Poland Street Workhouse!",
+                "hinge": "Why was the survival of 70 Lion Brewery workers right beside the Broad Street pump Snow’s strongest clue against miasma?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 14.9,
+                "y": 45.2,
+                "align": "right",
+                "color": "#b45309",
+                "label": "3. Westminster & The 1858 “Great Stink”",
+                "badge": "River Thames Overwhelms MPs",
+                "date": "Summer 1858",
+                "title": "Westminster & The 1858 “Great Stink”: Sewage-Choked River Thames Forces Action",
+                "body": "Flushing water closets emptied raw human waste straight into old storm drains and into the tidal River Thames. During a scorching heatwave in Summer 1858, the foul smell of baking sewage right outside the Houses of Parliament soaked curtains in chloride of lime and drove MPs in just 18 days to vote £3 million for new London-wide sewers.",
+                "details": "Flushing water closets emptied raw human waste straight into old storm drains and into the tidal River Thames. During a scorching heatwave in Summer 1858, the foul smell of baking sewage right outside the Houses of Parliament soaked curtains in chloride of lime and drove MPs in just 18 days to vote £3 million for new London-wide sewers.",
+                "hinge": "Why did the smell outside Parliament in Summer 1858 persuade MPs to spend £3 million faster than earlier cholera outbreaks in poor slums?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 30.4,
+                "y": 36.9,
+                "color": "#065f46",
+                "label": "4. Bazalgette’s 82-Mile Sewers & 1875 Act",
+                "badge": "Abbey Mills, Crossness & 1875 Law",
+                "date": "1859–1875",
+                "title": "Sir Joseph Bazalgette’s 82-Mile Sewers & The Compulsory 1875 Public Health Act",
+                "body": "Chief Engineer Sir Joseph Bazalgette used 318 million bricks and waterproof Portland cement to build 82 miles of giant intercepting sewers and 1,100 miles of street sewers, using steam pumping stations at Abbey Mills and Crossness to carry waste far downstream. Backed by Pasteur’s 1861 Germ Theory, Parliament’s 1875 Public Health Act finally made clean water and covered sewers compulsory across Britain.",
+                "details": "Chief Engineer Sir Joseph Bazalgette used 318 million bricks and waterproof Portland cement to build 82 miles of giant intercepting sewers and 1,100 miles of street sewers, using steam pumping stations at Abbey Mills and Crossness to carry waste far downstream. Backed by Pasteur’s 1861 Germ Theory, Parliament’s 1875 Public Health Act finally made clean water and covered sewers compulsory across Britain.",
+                "hinge": "Why was making the 1875 Public Health Act compulsory so much more effective than the voluntary 1848 Public Health Act?"
+              }
+            ]
+          }
         },
         {
           "ref": "[5.2]",
           "period": "1854",
           "title": "The Medical Detective: Dr John Snow & The Broad Street Investigation",
-          "image": "/units/water_and_sanitation/assets/john_snow.jpg",
-          "image_alt": "Portrait photograph of Dr John Snow, pioneer epidemiologist and physician",
-          "caption": "Dr John Snow (1813–1858). Pioneer epidemiologist who rejected miasma theory and proved cholera was a waterborne infection using cartographic data.",
+          "image": "/images/ks3_was/was_l5_b1_john_snow_portrait_1856.jpg",
+          "image_alt": "1856 seated studio portrait photograph of London physician Dr John Snow in dark frock coat, waistcoat, and bow tie",
+          "caption": "Dr John Snow (1813–1858, 1856 studio photograph): London physician and medical detective who walked Soho door to door in September 1854, mapping 616 cholera deaths and checking the nearby Lion Brewery to prove cholera spread through dirty water.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Local doctor **Dr John Snow** — who had given chloroform to **Queen Victoria** — rejected miasma theory. Because cholera attacked the digestive tract rather than the lungs, Snow reasoned victims were swallowing dirty water. Using pioneering **epidemiology**, he walked door to door and drew an empirical cholera **spot map** marking every death.</p><p class=\"prose-p\">Deaths clustered tightly around the **Broad Street** water pump. Even better, nobody died at the nearby **Lion Brewery**, where 70 workers drank free beer instead of water from the Broad Street pump!</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Local doctor **Dr John Snow** — who had given chloroform to **Queen Victoria** — rejected miasma theory. Because cholera attacked the digestive tract rather than the lungs, Snow reasoned victims were swallowing dirty water. Using pioneering **epidemiology**, he walked door to door and drew an empirical cholera **spot map** marking every death.</p><p class=\"prose-p\">Deaths clustered tightly around the **Broad Street** water pump. Even better, nobody died at the nearby **Lion Brewery**, where 70 workers drank free beer instead of water from the Broad Street pump!</p>"
         },
@@ -6876,15 +7476,18 @@ export default {
           "period": "1854–1855",
           "title": "The Cesspool Revelation: 40 Broad Street & The Removed Handle",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> On Thursday 7 September 1854, Snow showed his map to parish leaders. Next morning, officials **removed the Broad Street pump handle**, and the Soho cholera outbreak stopped almost at once.</p><p class=\"prose-p\">Local curate **Reverend Henry Whitehead** soon traced how the well had been poisoned. At 40 Broad Street, baby **infant Frances Lewis** had caught cholera in late August. Her mother had rinsed dirty nappies into a leaking cesspool **less than three feet** from the public well, letting waste seep through cracked bricks into Soho's water.</p>",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> On Thursday 7 September 1854, Snow showed his map to parish leaders. Next morning, officials **removed the Broad Street pump handle**, and the Soho cholera outbreak stopped almost at once.</p><p class=\"prose-p\">Local curate **Reverend Henry Whitehead** soon traced how the well had been poisoned. At 40 Broad Street, baby **infant Frances Lewis** had caught cholera in late August. Her mother had rinsed dirty nappies into a leaking cesspool **less than three feet** from the public well, letting waste seep through cracked bricks into Soho's water.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> On Thursday 7 September 1854, Snow showed his map to parish leaders. Next morning, officials **removed the Broad Street pump handle**, and the Soho cholera outbreak stopped almost at once.</p><p class=\"prose-p\">Local curate **Reverend Henry Whitehead** soon traced how the well had been poisoned. At 40 Broad Street, baby **infant Frances Lewis** had caught cholera in late August. Her mother had rinsed dirty nappies into a leaking cesspool **less than three feet** from the public well, letting waste seep through cracked bricks into Soho's water.</p>",
+          "image": "/images/ks3_was/was_l5_b2_broad_street_soho_pump_site.jpg",
+          "image_alt": "Archival photograph of Broad Street (now Broadwick Street) in Soho, London showing a white wooden marker post on the kerbstone outside the public house at the exact site of the 1854 Broad Street cholera water pump",
+          "caption": "Site of the 1854 Broad Street Water Pump in Soho, London (Wellcome Collection L0028567): Where parish officials removed the iron pump handle on 8 September 1854 and Reverend Henry Whitehead traced the cholera leak to a cracked cesspool at 40 Broad Street less than three feet away."
         },
         {
           "ref": "[5.4]",
           "period": "1861–1884",
           "title": "Louis Pasteur’s Germ Theory (1861) & Robert Koch’s Cholera Bacterium (1884)",
-          "image": "/units/water_and_sanitation/assets/louis_pasteur.jpg",
-          "image_alt": "Portrait photograph of French chemist and microbiologist Louis Pasteur",
-          "caption": "Louis Pasteur (1822–1895). His 1861 Germ Theory proved diseases were caused by living micro-organisms, providing scientific backing for clean water engineering.",
+          "image": "/images/ks3_was/was_l5_b3_louis_pasteur_portrait.jpg",
+          "image_alt": "Paul Nadar’s studio portrait photograph of French chemist and microbiologist Louis Pasteur seated in a dark double-breasted coat with pince-nez spectacles",
+          "caption": "Louis Pasteur (1822–1895, photographed by Paul Nadar): French chemist whose 1861 swan-neck flask experiments proved Germ Theory and overthrown spontaneous generation, paving the way for Robert Koch to isolate the cholera bacterium in 1884.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Even after Snow's map, many doctors doubted him because nobody had seen the tiny germ itself. That changed in **1861**, when French chemist **Louis Pasteur** published his **Germ Theory** of disease. Using curved **swan-neck flasks**, Pasteur proved airborne microbes soured liquid, disproving **spontaneous generation**.</p><p class=\"prose-p\">Twenty-three years later, in **1884**, German scientist **Robert Koch** isolated the comma-shaped cholera **bacterium** (<em>Vibrio cholerae</em>) under his microscope. Koch's lab proof backed up Dr John Snow completely and ended miasma theory for good.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Even after Snow's map, many doctors doubted him because nobody had seen the tiny germ itself. That changed in **1861**, when French chemist **Louis Pasteur** published his **Germ Theory** of disease. Using curved **swan-neck flasks**, Pasteur proved airborne microbes soured liquid, disproving **spontaneous generation**.</p><p class=\"prose-p\">Twenty-three years later, in **1884**, German scientist **Robert Koch** isolated the comma-shaped cholera **bacterium** (<em>Vibrio cholerae</em>) under his microscope. Koch's lab proof backed up Dr John Snow completely and ended miasma theory for good.</p>"
         },
@@ -6892,9 +7495,9 @@ export default {
           "ref": "[5.5]",
           "period": "1875",
           "title": "The Public Health Act of 1875 & The Fall of Laissez-Faire",
-          "image": "/images/water_local_eastney_opt.jpg",
-          "image_alt": "Historic photograph of the Victorian Eastney Beam Engine House in Portsmouth, built 1865",
-          "caption": "Eastney Beam Engine House, Portsmouth (1865). Monumental steam pumping stations embodied the compulsory municipal sanitary revolution mandated by the 1875 Act.",
+          "image": "/images/ks3_was/was_l5_b4_eastney_beam_engine_house_portsmouth.jpg",
+          "image_alt": "Victorian red-brick gable facade of Eastney Beam Engine House in Portsmouth with tall arched industrial windows and carved stone date plaque reading 1887 above the doorway",
+          "caption": "Eastney Beam Engine House, Portsmouth (1887): Built as British councils invested heavily in steam sewage pumping stations, Medical Officers of Health, and clean piped water under the compulsory Public Health Act of 1875.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Scientific proof, Bazalgette's sewers, and votes for town working men in 1867 finally pushed Parliament into firm action. In **1875**, Prime Minister Benjamin Disraeli's government passed the landmark **Public Health Act of 1875**.</p><p class=\"prose-p\">Unlike the weak 1848 law, the 1875 Act was strictly **compulsory** across Great Britain. Every council had to tax **ratepayers** to hire **Medical Officers of Health** and water inspectors. Councils also had to provide **clean piped water, refuse collection, and covered sewers**, ending **laissez-faire** excuses forever.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Scientific proof, Bazalgette's sewers, and votes for town working men in 1867 finally pushed Parliament into firm action. In **1875**, Prime Minister Benjamin Disraeli's government passed the landmark **Public Health Act of 1875**.</p><p class=\"prose-p\">Unlike the weak 1848 law, the 1875 Act was strictly **compulsory** across Great Britain. Every council had to tax **ratepayers** to hire **Medical Officers of Health** and water inspectors. Councils also had to provide **clean piped water, refuse collection, and covered sewers**, ending **laissez-faire** excuses forever.</p>"
         }
@@ -6951,13 +7554,15 @@ export default {
           "letter": "Source A",
           "type": "visual",
           "title": "Dr John Snow's 1854 Cholera Spot Map of Soho (Broad Street Area)",
-          "caption": "Detail of Dr John Snow's landmark 1854 cartographic spot map showing cholera deaths (bars) clustering tightly around the Broad Street water pump.",
-          "image": "/images/john_snow_cholera_map.jpg",
+          "caption": "Source A: Dr John Snow’s landmark 1854 Soho cholera spot map (lithographed by C. F. Cheffins for On the Mode of Communication of Cholera, 1855, Wellcome Collection), showing fatal cholera cases (black bars) clustering tightly around the Broad Street water pump.",
+          "image": "/images/ks3_was/was_l5_s0_snow_cholera_spot_map_1854.jpg",
           "source_context": "Drawn by Dr John Snow and lithographed by C.F. Cheffins for the second edition of Snow’s treatise On the Mode of Communication of Cholera (1855). Snow plotted 616 deaths across Soho, marking each address with stacked black lines indicating individual fatalities. **Hinge Question:** Why did Snow use a geographical spot map rather than a conventional statistical table to present his findings to the Board of Health?",
           "prompt": "What can you infer from the distribution of black bars on Source A regarding the cause and source of the 1854 Soho cholera outbreak?",
           "model_answer": "Source A clearly indicates that the Broad Street pump was the epicentre of the outbreak, as the thick clusters of black bars are densely concentrated directly on Broad Street and thin out rapidly as distance from that specific pump increases. This cartographic evidence demonstrates that residents using the Broad Street pump were exposed to a common, localized source of infection.",
           "context": "Drawn by Dr John Snow and lithographed by C.F. Cheffins for the second edition of Snow’s treatise On the Mode of Communication of Cholera (1855). Snow plotted 616 deaths across Soho, marking each address with stacked black lines indicating individual fatalities.",
-          "hinge_question": "Why did Snow use a geographical spot map rather than a conventional statistical table to present his findings to the Board of Health?"
+          "hinge_question": "Why did Snow use a geographical spot map rather than a conventional statistical table to present his findings to the Board of Health?",
+          "src": "/images/ks3_was/was_l5_s0_snow_cholera_spot_map_1854.jpg",
+          "image_alt": "Dr John Snow’s high-resolution 1854–1855 Soho street map lithographed by C. F. Cheffins showing stacked black mortality bars densely clustered around the Broad Street water pump alongside the Poland Street Workhouse and Broad Street Brewery"
         },
         {
           "id": "water_l5_src_b",
@@ -7838,7 +8443,7 @@ export default {
             "badge": "Stage 2",
             "heading": "John Snow’s Cholera Spot Map",
             "date": "Sept 1854",
-            "img": "/images/john_snow_cholera_map.jpg",
+            "img": "/images/ks3_was/was_l5_s0_snow_cholera_spot_map_1854.jpg",
             "mode": "contain-light",
             "stat": "0 Deaths Among 70 Beer-Drinking Brewery Men",
             "html": "<strong>Dr John Snow</strong> mapped every victim on a street <strong>spot map</strong>. Deaths clustered around the <strong>Broad Street pump</strong>, while beer-drinking brewery workers stayed healthy!",
@@ -7916,7 +8521,8 @@ export default {
       },
       "vocab_cloze_text": "When cholera killed over 500 Soho residents in 1854, Dr John Snow pioneered [Epidemiology] by plotting every death on a street [Spot Map] tracing the outbreak to the Broad Street pump. In 1861, Louis Pasteur’s [Germ Theory] disproved [Spontaneous Generation], and Robert Koch later identified the cholera [Bacterium]. Finally, the 1875 Public Health Act made clean water and appointing a [Medical Officer of Health] [Compulsory] for every council.",
       "banner_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
-      "hero_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg"
+      "hero_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
+      "banner_position": "center 38%"
     },
     {
       "id": "lesson_6",
@@ -7929,12 +8535,13 @@ export default {
       "enquiry": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
       "subtitle": "Step-by-step PEEL Planning & Revision Workshop: John Snow, Joseph Bazalgette, Louis Pasteur, and the 1875 Public Health Act",
       "skill": "Historical Explanation & Evaluation",
-      "card_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
+      "card_image": "/images/ks3_was/was_l6_card_crossness_main_drainage_1865.jpg",
       "card_position": "center",
       "banner": {
         "image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
-        "caption": "Opening of the Southern Embankment of the Thames at Lambeth",
-        "position": "center 30%"
+        "alt": "1869 Illustrated London News wood engraving titled OPENING OF THE SOUTHERN EMBANKMENT OF THE THAMES, AT LAMBETH showing crowds of top-hatted Victorian citizens walking along the newly completed granite riverside promenade past Lambeth Palace",
+        "caption": "Opening of the Southern Embankment of the Thames at Lambeth (The Illustrated London News, 1869): Celebrating the monumental civil-engineering and sanitary transformation of Victorian London between 1858 and 1875.",
+        "position": "center 42%"
       },
       "cover_image": "/images/water_local_eastney_opt.jpg",
       "prologue": "Welcome to your Summative Assessment Masterclass! In this workshop, you will prepare for your 30-minute formal assessment: \"Explain why there was rapid progress in Public Health 1800–1900?\". You will write three developed PEEL paragraphs explaining how scientific investigation (Dr John Snow), civil engineering (Sir Joseph Bazalgette), laboratory microbiology (Louis Pasteur), and compulsory government legislation (the 1875 Public Health Act) transformed British public health from deadly squalor into modern sanitary safety. Over half term, you are permitted to prepare ONE single sheet of A4 lined paper containing bullet points, mind maps, statistics, and dates to bring directly into the assessment room! How will you combine evidence of scientific investigation, civil engineering, and government legislation to construct a compelling historical explanation?",
@@ -8147,15 +8754,116 @@ export default {
           "period": "1800–1900",
           "title": "Deconstructing the Question: The 19th-Century Transformation (1800–1900)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.1]</span> In this assessment, answer: <strong>\"Explain why there was rapid progress in Public Health between 1800 and 1900.\"</strong> (<strong>12 marks and 30 minutes</strong>). In 1800, British towns were death traps where infant deaths topped <strong>over 50%</strong> and raw sewage filled cellars. By 1900, cities across Britain had clean piped water, covered sewers, and rising life spans.</p><p class=\"prose-p\">To win top marks, write <strong>three developed PEEL paragraphs</strong> explaining three key causes of **sanitation** reform. Finish with a clear, sustained <strong>evaluative conclusion weighing the master spark</strong> that made lasting change possible.</p>",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.1]</span> In this assessment, answer: <strong>\"Explain why there was rapid progress in Public Health between 1800 and 1900.\"</strong> (<strong>12 marks and 30 minutes</strong>). In 1800, British towns were death traps where infant deaths topped <strong>over 50%</strong> and raw sewage filled cellars. By 1900, cities across Britain had clean piped water, covered sewers, and rising life spans.</p><p class=\"prose-p\">To win top marks, write <strong>three developed PEEL paragraphs</strong> explaining three key causes of **sanitation** reform. Finish with a clear, sustained <strong>evaluative conclusion weighing the master spark</strong> that made lasting change possible.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.1]</span> In this assessment, answer: <strong>\"Explain why there was rapid progress in Public Health between 1800 and 1900.\"</strong> (<strong>12 marks and 30 minutes</strong>). In 1800, British towns were death traps where infant deaths topped <strong>over 50%</strong> and raw sewage filled cellars. By 1900, cities across Britain had clean piped water, covered sewers, and rising life spans.</p><p class=\"prose-p\">To win top marks, write <strong>three developed PEEL paragraphs</strong> explaining three key causes of **sanitation** reform. Finish with a clear, sustained <strong>evaluative conclusion weighing the master spark</strong> that made lasting change possible.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 7 Assessment Essay Planner",
+            "title": "How Four Breakthroughs Transformed Victorian Public Health (1854–1884)",
+            "default_index": 0,
+            "caption": "Click each factor to revise key dates, facts, and links for your three PEEL paragraphs and final evaluative conclusion.",
+            "items": [
+              {
+                "tab_label": "1. John Snow (1854)",
+                "title": "Detective Epidemiology & The Soho Spot Map",
+                "dates": "August–September 1854 • Soho, London",
+                "badge": "616 Deaths Mapped",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Key Evidence",
+                    "value": "Spot Map Clustered Around Broad Street Pump"
+                  },
+                  {
+                    "label": "Control Proof",
+                    "value": "0 Deaths Among 70 Beer-Drinking Brewery Men"
+                  },
+                  {
+                    "label": "Direct Action",
+                    "value": "Removing Pump Handle Stopped Outbreak Fast"
+                  }
+                ],
+                "takeaway": "Snow proved cholera was swallowed in dirty water rather than breathed in foul air, though many doctors doubted him until germs were seen."
+              },
+              {
+                "tab_label": "2. Bazalgette (1858)",
+                "title": "The Great Stink & 82 Miles of Brick Sewers",
+                "dates": "1858–1865 • Civil Engineering Triumph",
+                "badge": "£3m Parliament Grant",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "1858 Trigger",
+                    "value": "200,000 Closets + Heatwave Choked Parliament"
+                  },
+                  {
+                    "label": "Huge Scale",
+                    "value": "318 Million Bricks & 82 Miles of Main Sewers"
+                  },
+                  {
+                    "label": "Health Impact",
+                    "value": "Carried 420m Gallons/Day Downstream & Ended Cholera"
+                  }
+                ],
+                "takeaway": "Even though MPs acted to escape a bad smell, Bazalgette’s waterproof brick intercepting sewers physically separated sewage from London’s water."
+              },
+              {
+                "tab_label": "3. Germ Theory (1861)",
+                "title": "Pasteur’s Flasks & Koch’s Cholera Microbe",
+                "dates": "1861 & 1884 • Laboratory Proof",
+                "badge": "Miasma Defeated",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.22)",
+                "metrics": [
+                  {
+                    "label": "1861 Pasteur",
+                    "value": "Swan-Neck Flasks Disproved Spontaneous Generation"
+                  },
+                  {
+                    "label": "1884 Koch",
+                    "value": "Isolated Comma-Shaped Vibrio cholerae Germ"
+                  },
+                  {
+                    "label": "Big Shift",
+                    "value": "Proved Snow Right With Undeniable Lab Science"
+                  }
+                ],
+                "takeaway": "Laboratory science destroyed old miasma excuses forever, giving reformers hard proof that unseen bacteria in dirty water killed people."
+              },
+              {
+                "tab_label": "4. 1875 Health Act",
+                "title": "Working-Class Votes & Compulsory National Law",
+                "dates": "1867 & 1875 • Disraeli’s Government",
+                "badge": "100% Compulsory",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "1867 Spark",
+                    "value": "Town Working Men Won the Vote in Elections"
+                  },
+                  {
+                    "label": "1875 Duties",
+                    "value": "Clean Water, Covered Sewers & Refuse Collection"
+                  },
+                  {
+                    "label": "Enforcement",
+                    "value": "Every Council Had to Hire a Medical Officer"
+                  }
+                ],
+                "takeaway": "Science and engineering showed how to beat disease, but only Parliament’s compulsory 1875 law forced every town council in Britain to act."
+              }
+            ]
+          }
         },
         {
           "ref": "[6.2]",
           "period": "1854",
           "title": "Reason 1: Dr John Snow & Scientific Epidemiology (1854)",
-          "image": "/units/water_and_sanitation/assets/john_snow.jpg",
-          "image_alt": "Portrait engraving of Dr John Snow, pioneer of epidemiology and the 1854 Broad Street investigation",
-          "caption": "Dr John Snow (1813–1858). The London physician whose 1854 Soho spot-map deduced cholera was a waterborne poison swallowed from contaminated water.",
+          "image": "/images/ks3_was/was_l6_b1_john_snow_replica_pump_soho.jpg",
+          "image_alt": "Cast-iron handleless replica of the 1854 Broad Street water pump standing on an octagonal granite memorial plinth with explanatory plaque on Broadwick Street in Soho, London",
+          "caption": "The Handleless Broad Street Memorial Water Pump on Broadwick Street, Soho: Commemorating Dr John Snow’s September 1854 epidemiological investigation that traced 616 local cholera deaths to sewage-contaminated well water.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.2]</span> Your first key factor is detective **epidemiology** led by **Dr John Snow** in **1854**. While stubborn doctors blamed **miasma** (foul air), Snow mapped **616 deaths** in Soho on a street **spot map**. Every cluster pointed straight to the **Broad Street water pump**.</p><p class=\"prose-p\">Snow also checked **The Lion Brewery**, where workers drank beer instead of pump water and suffered zero deaths. Persuading officials to take off the pump handle proved cholera spread through dirty water, shifting reform **from purifying air to purifying water**.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.2]</span> Your first key factor is detective **epidemiology** led by **Dr John Snow** in **1854**. While stubborn doctors blamed **miasma** (foul air), Snow mapped **616 deaths** in Soho on a street **spot map**. Every cluster pointed straight to the **Broad Street water pump**.</p><p class=\"prose-p\">Snow also checked **The Lion Brewery**, where workers drank beer instead of pump water and suffered zero deaths. Persuading officials to take off the pump handle proved cholera spread through dirty water, shifting reform **from purifying air to purifying water**.</p>"
         },
@@ -8163,9 +8871,9 @@ export default {
           "ref": "[6.3]",
           "period": "1858–1865",
           "title": "Reason 2: Sir Joseph Bazalgette & Civil Engineering (1858–1865)",
-          "image": "/units/water_and_sanitation/assets/joseph_bazalgette.jpg",
-          "image_alt": "Portrait photograph of Sir Joseph Bazalgette, Chief Engineer of the Metropolitan Board of Works",
-          "caption": "Sir Joseph Bazalgette (1819–1891). Chief Engineer whose 82-mile intercepting sewer network permanently eradicated cholera epidemics from London.",
+          "image": "/images/ks3_was/was_l6_b2_abbey_mills_pumping_station.jpg",
+          "image_alt": "Elevated view of the ornate Victorian polychrome brick and stone buildings of Sir Joseph Bazalgette’s Abbey Mills Pumping Station in Stratford, East London",
+          "caption": "Sir Joseph Bazalgette’s Abbey Mills Pumping Station, Stratford (1865–1868): Nicknamed the \"Cathedral of Sewage\", its giant steam beam engines lifted waste from London’s Low-Level Sewer into the Northern Outfall toward the tidal Thames.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.3]</span> Your second key factor is bold Victorian engineering led by **Sir Joseph Bazalgette**. After London homes fitted **200,000 water closets** draining into the River Thames, hot weather in **June 1858** caused **The Great Stink** right outside Parliament.</p><p class=\"prose-p\">Driven out of **laissez-faire** delay by the awful smell, MPs voted **£3 million** for new drains. Bazalgette built 82 miles of brick intercepting sewers that carried **420 million gallons daily** downstream past London, wiping out cholera across the capital.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.3]</span> Your second key factor is bold Victorian engineering led by **Sir Joseph Bazalgette**. After London homes fitted **200,000 water closets** draining into the River Thames, hot weather in **June 1858** caused **The Great Stink** right outside Parliament.</p><p class=\"prose-p\">Driven out of **laissez-faire** delay by the awful smell, MPs voted **£3 million** for new drains. Bazalgette built 82 miles of brick intercepting sewers that carried **420 million gallons daily** downstream past London, wiping out cholera across the capital.</p>"
         },
@@ -8173,9 +8881,9 @@ export default {
           "ref": "[6.4]",
           "period": "1861",
           "title": "Reason 3: Louis Pasteur & The Germ Theory (1861)",
-          "image": "/units/water_and_sanitation/assets/louis_pasteur.jpg",
-          "image_alt": "Portrait photograph of French microbiologist Louis Pasteur in his laboratory",
-          "caption": "Louis Pasteur (1822–1895). French chemist whose 1861 Germ Theory proved microscopic organisms cause decay and disease.",
+          "image": "/images/ks3_was/was_l6_b3_pasteur_laboratory_edelfelt_1885.jpg",
+          "image_alt": "Albert Edelfelt’s 1885 oil painting showing bearded French scientist Louis Pasteur standing attentively at a wooden laboratory bench examining a glass bottle surrounded by flasks and a microscope",
+          "caption": "Albert Edelfelt, Louis Pasteur in His Laboratory (1885, Musée d’Orsay): Pasteur’s 1861 Germ Theory and Robert Koch’s 1884 isolation of Vibrio cholerae gave governments unshakeable scientific proof for clean water engineering.",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.4]</span> Your third key factor is lab science led by French chemist **Louis Pasteur**. Before **1861**, councils begrudged paying for sewers because people believed disease arose from decaying matter by **spontaneous generation**. Pasteur's swan-neck flasks proved **the sterilized broth stayed pure** until airborne germs entered, proving his **Germ Theory** of disease.</p><p class=\"prose-p\">In **1884**, German doctor **Robert Koch** isolated the cholera germ (<em>Vibrio cholerae</em>) under a microscope. Together, Pasteur and Koch proved John **Snow** right and gave reformers solid scientific proof.</p>",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.4]</span> Your third key factor is lab science led by French chemist **Louis Pasteur**. Before **1861**, councils begrudged paying for sewers because people believed disease arose from decaying matter by **spontaneous generation**. Pasteur's swan-neck flasks proved **the sterilized broth stayed pure** until airborne germs entered, proving his **Germ Theory** of disease.</p><p class=\"prose-p\">In **1884**, German doctor **Robert Koch** isolated the cholera germ (<em>Vibrio cholerae</em>) under a microscope. Together, Pasteur and Koch proved John **Snow** right and gave reformers solid scientific proof.</p>"
         },
@@ -8184,7 +8892,103 @@ export default {
           "period": "1875",
           "title": "Reason 4: Government Legislation & The 1875 Public Health Act",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.5]</span> Your fourth key factor is national law under **Prime Minister Benjamin Disraeli** and Parliament. After working-class town men won the vote in **1867**, politicians could no longer ignore filthy slums. Whereas **Edwin** Chadwick's 1848 law failed **because local health boards were permissive**, the **Public Health Act of 1875** was **compulsory**.</p><p class=\"prose-p\">By law, every council in Britain had to **appoint a medical officer of health, pave streets, collect refuse, and provide clean piped water**. Only a **compulsory state** law turned science and engineering into protection for everyone.</p>",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.5]</span> Your fourth key factor is national law under **Prime Minister Benjamin Disraeli** and Parliament. After working-class town men won the vote in **1867**, politicians could no longer ignore filthy slums. Whereas **Edwin** Chadwick's 1848 law failed **because local health boards were permissive**, the **Public Health Act of 1875** was **compulsory**.</p><p class=\"prose-p\">By law, every council in Britain had to **appoint a medical officer of health, pave streets, collect refuse, and provide clean piped water**. Only a **compulsory state** law turned science and engineering into protection for everyone.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.5]</span> Your fourth key factor is national law under **Prime Minister Benjamin Disraeli** and Parliament. After working-class town men won the vote in **1867**, politicians could no longer ignore filthy slums. Whereas **Edwin** Chadwick's 1848 law failed **because local health boards were permissive**, the **Public Health Act of 1875** was **compulsory**.</p><p class=\"prose-p\">By law, every council in Britain had to **appoint a medical officer of health, pave streets, collect refuse, and provide clean piped water**. Only a **compulsory state** law turned science and engineering into protection for everyone.</p>",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Year 7 Role of Government",
+            "title": "From Laissez-Faire ('Leave Alone') to Compulsory Clean Water (1800–1875)",
+            "default_index": 2,
+            "caption": "Slide across the three stages to trace why Parliament finally forced every local council in Britain to build sewers and pipe clean water.",
+            "stops": [
+              {
+                "short_label": "1. Laissez-Faire",
+                "label": "Laissez-Faire: 'Leave Well Alone' (1800–1847)",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Early Victorian governments believed town health was none of their business, while wealthy ratepayers refused to pay extra taxes to clean up poor factory slums.",
+                "traits": [
+                  {
+                    "category": "Government View",
+                    "glyph": "leader",
+                    "value": "Hands-Off Belief That Private Markets Knew Best"
+                  },
+                  {
+                    "category": "Tax Resistance",
+                    "glyph": "law",
+                    "value": "Rich Ratepayers Blocked Spending on Poor Courts"
+                  },
+                  {
+                    "category": "Slum Reality",
+                    "glyph": "people",
+                    "value": "Over 50% Infant Mortality in Worst Factory Slums"
+                  },
+                  {
+                    "category": "Water Supply",
+                    "glyph": "clothes",
+                    "value": "Private Companies Pumped Dirty River Water"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. 1848 Permissive Act",
+                "label": "Chadwick & The Optional 1848 Law",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Shocked by Edwin Chadwick’s 1842 Sanitary Report and returning cholera, Parliament created a General Board of Health in 1848—but left council action optional.",
+                "traits": [
+                  {
+                    "category": "1842 Evidence",
+                    "glyph": "language",
+                    "value": "Chadwick Proved Filth Caused Sickness & Poverty"
+                  },
+                  {
+                    "category": "Fatal Loophole",
+                    "glyph": "law",
+                    "value": "Permissive Law Let Councils Choose to Do Nothing"
+                  },
+                  {
+                    "category": "Local Delay",
+                    "glyph": "leader",
+                    "value": "Most Town Councils Refused Expensive New Drains"
+                  },
+                  {
+                    "category": "1854 Shut-Down",
+                    "glyph": "people",
+                    "value": "Central Board Abolished After Ratepayer Anger"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. 1875 Compulsory Act",
+                "label": "Votes, Science & Compulsory Clean Water (1875)",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "After working-class town men won the vote in 1867 and Pasteur proved Germ Theory, Disraeli’s 1875 Public Health Act forced every council in Britain to clean up by law.",
+                "traits": [
+                  {
+                    "category": "1867 Reform",
+                    "glyph": "people",
+                    "value": "New Working-Class Voters Demanded Healthy Homes"
+                  },
+                  {
+                    "category": "Strict Law",
+                    "glyph": "law",
+                    "value": "Compulsory Clean Water, Covered Sewers & Rubbish"
+                  },
+                  {
+                    "category": "Expert Staff",
+                    "glyph": "leader",
+                    "value": "Every Town Appointed a Medical Officer of Health"
+                  },
+                  {
+                    "category": "1900 Result",
+                    "glyph": "language",
+                    "value": "Cholera Wiped Out & British Life Spans Rose"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "video": [
@@ -8238,10 +9042,10 @@ export default {
           "id": "water_l6_src_a",
           "letter": "A",
           "type": "visual",
-          "src": "/units/water_and_sanitation/assets/edwin_chadwick.jpg",
-          "image": "/units/water_and_sanitation/assets/edwin_chadwick.jpg",
+          "src": "/images/ks3_was/was_l4_b2_edwin_chadwick_portrait.jpg",
+          "image": "/images/ks3_was/was_l4_b2_edwin_chadwick_portrait.jpg",
           "title": "Source A: Portrait and Sanitary Campaign of Edwin Chadwick (1800–1890)",
-          "caption": "Formal portrait photograph of Sir Edwin Chadwick, utilitarian reformer whose 1842 report forced the British state to confront the relationship between urban squalor and mortality (National Portrait Gallery NPG x12882).",
+          "caption": "Source A: Portrait photograph of Sir Edwin Chadwick (1800–1890, Wellcome Collection M0010963), utilitarian reformer whose 1842 Sanitary Report forced the British state to confront the link between urban slum filth and mortality.",
           "author": "Victorian Portrait Studio",
           "date": "c. 1860",
           "question_badge": "THE 19TH-CENTURY CRISIS & CHADWICK",
@@ -8264,7 +9068,8 @@ export default {
               "motive": "Documenting the influential architect of the English public health movement."
             }
           },
-          "source_context": "Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?"
+          "source_context": "Chadwick was a dogmatic social reformer who proved filthy living conditions caused pauperism. **Hinge Question:** Why is Chadwick considered the father of British public health despite his mistaken belief in miasma?",
+          "image_alt": "Three-quarter-length Victorian portrait photograph of sanitary reformer Sir Edwin Chadwick in dark frock coat, white collar, and bow tie"
         },
         {
           "id": "water_l6_src_b",
@@ -8302,10 +9107,10 @@ export default {
           "id": "water_l6_src_c",
           "letter": "C",
           "type": "visual",
-          "src": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
-          "image": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
+          "src": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
+          "image": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
           "title": "Source C: Construction of the Low-Level Intercepting Sewer (1862)",
-          "caption": "Engraving from The Illustrated London News showing bricklayers constructing the egg-shaped brick tunnels of the London main drainage system (Wellcome Collection 38481i).",
+          "caption": "Source C: Engraving from The Illustrated London News (1859, Wellcome Collection V0020257) showing bricklayers and navvies constructing the arched brick tunnels of Sir Joseph Bazalgette’s London main drainage network near Old Ford.",
           "author": "The Illustrated London News Special Artist",
           "date": "1862",
           "question_badge": "REASON 2: CIVIL ENGINEERING & MAIN DRAINAGE",
@@ -8328,7 +9133,8 @@ export default {
               "motive": "Celebrating the unprecedented subterranean engineering works transforming London."
             }
           },
-          "source_context": "Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?"
+          "source_context": "Bazalgette oversaw the construction of 82 miles of underground intercepting sewers using 318 million bricks. **Hinge Question:** Why did Bazalgette insist on testing every single batch of Portland cement, and how did this decision save London from sewer collapses?",
+          "image_alt": "1859 Illustrated London News wood engraving titled MAIN DRAINAGE OF THE METROPOLIS — SECTIONAL VIEW OF THE TUNNELS FROM WICK LANE, NEAR OLD FORD, BOW showing bricklayers and navvies on timber scaffolding building twin arched brick intercepting sewer tunnels"
         },
         {
           "id": "water_l6_src_d",
@@ -9099,7 +9905,7 @@ export default {
         "topicLabel": "Enquiry 6: Summative Masterclass — 19th-Century Public Health Revolution",
         "title": "Why Was There Rapid Progress in Public Health Between 1800 and 1900?",
         "spokenTitle": "Why was there rapid progress in public health between 1800 and 1900?",
-        "thumbUrl": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
+        "thumbUrl": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
         "provenanceNote": "Wellcome Collection, National Portrait Gallery, Institut Pasteur & Historic England Archive (Zero AI Imagery)",
         "bridges": [
           "1800 Crisis",
@@ -9138,7 +9944,7 @@ export default {
             "badge": "Stage 3",
             "heading": "Factor 2: Bazalgette’s Sewers",
             "date": "1858–1865",
-            "img": "/units/water_and_sanitation/assets/bazalgette_sewer.jpg",
+            "img": "/images/ks3_was/was_l4_s4_bazalgette_wick_lane_sewers_1859.jpg",
             "mode": "landscape",
             "pos": "center 40%",
             "stat": "420 Million Gallons Carried Away Daily",
@@ -9204,7 +10010,8 @@ export default {
       },
       "vocab_cloze_text": "Between 1800 and 1900, British public health advanced from [Laissez-Faire] neglect to a modern [Compulsory State]. First, Dr John Snow used [Epidemiology] in Soho in 1854 to prove cholera spread through dirty water rather than [Miasma Theory]. Next, Joseph Bazalgette transformed London’s [Sanitation] with brick sewers, while Louis Pasteur’s 1861 [Germ Theory] gave Parliament scientific proof to pass the 1875 Public Health Act.",
       "banner_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
-      "hero_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg"
+      "hero_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
+      "banner_position": "center 42%"
     }
   ],
   "keyStage": "KS3",
@@ -9218,8 +10025,8 @@ export default {
       "lesson_label": "Enquiry 1",
       "book_title": "De Aquaeductu Urbis Romae (On the Aqueducts of Rome)",
       "author": "Sextus Julius Frontinus (c. 97 AD • Roman Water Commissioner)",
-      "cover_image": "/images/roman_aqueduct.jpg",
-      "cover_caption": "The Pont du Gard, a monumental three-tiered Roman limestone aqueduct bridge built in the 1st century AD in Roman Gaul to carry fresh spring water.",
+      "cover_image": "/images/ks3_was/was_l1_b1_pont_du_gard_aqueduct.jpg",
+      "cover_caption": "The Pont du Gard in southern Gaul (1st century AD): Monumental three-tiered Roman limestone aqueduct bridge engineered to carry pure spring water across the Gardon valley by gravity.",
       "author_context": "Sextus Julius Frontinus (c. 40–103 AD) served as Governor of Roman Britain before Emperor Nerva appointed him curator aquarum—Water Commissioner of Rome—in 97 AD. Inspecting every mile of stone channels, settling tanks, and lead pipes personally, Frontinus wrote De Aquaeductu to explain how Roman public engineering protected civic cleanliness and health.",
       "source_type": "primary_decree",
       "source_type_label": "Roman Engineering Treatise (c. 97 AD)",
@@ -9268,7 +10075,8 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r0.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and condensed for KS3 reading aloud from Roman Water Commissioner Frontinus’s treatise (c. 97 AD)."
+      "provenance_note": "Translated from Latin and condensed for KS3 reading aloud from Roman Water Commissioner Frontinus’s treatise (c. 97 AD).",
+      "short_tab_title": "1. Frontinus: Roman Aqueducts"
     },
     {
       "lesson_index": 1,
@@ -9277,7 +10085,7 @@ export default {
       "book_title": "King Edward III’s Royal Sanitary Writ to the Mayor of London (1349)",
       "author": "King Edward III (1349 • Corporation of London Letter-Book F)",
       "cover_image": "/images/canterbury_waterworks_plan_1165.jpg",
-      "cover_caption": "Illuminated parchment plan of the piped waterworks and fishponds of Christ Church Priory, Canterbury, from the Eadwine Psalter (c. 1165).",
+      "cover_caption": "Illuminated parchment plan of the piped waterworks and settling tanks of Christ Church Priory, Canterbury, from the Eadwine Psalter (c. 1165, Trinity College Cambridge MS R.17.1).",
       "author_context": "While wealthy medieval monasteries like Canterbury Priory maintained remarkable piped water systems for their monks, crowded medieval towns relied on shallow wells, wooden conduits, and open street gutters. During the terrifying outbreak of the Black Death in 1349, King Edward III wrote furiously to the Mayor of London after riding through streets choked with butcher waste and household filth.",
       "source_type": "primary_decree",
       "source_type_label": "Medieval Royal Sanitary Order (1349)",
@@ -9326,7 +10134,8 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r1.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from medieval Latin and condensed from King Edward III’s 1349 sanitary order to the Mayor of London."
+      "provenance_note": "Translated from medieval Latin and condensed from King Edward III’s 1349 sanitary order to the Mayor of London.",
+      "short_tab_title": "2. Edward III’s 1349 Writ"
     },
     {
       "lesson_index": 2,
@@ -9334,8 +10143,8 @@ export default {
       "lesson_label": "Enquiry 3",
       "book_title": "The Diary of Samuel Pepys During the Great Plague of London (1665)",
       "author": "Samuel Pepys (June–September 1665 • Magdalene College, Cambridge)",
-      "cover_image": "/images/pepys.jpg",
-      "cover_caption": "John Hayls, Portrait of Samuel Pepys (1666, National Portrait Gallery), Navy Board administrator whose shorthand diary recorded both the 1665 Great Plague and 1666 Great Fire.",
+      "cover_image": "/images/ks3_was/was_l3_b3_samuel_pepys_hayls_1666.jpg",
+      "cover_caption": "John Hayls, Portrait of Samuel Pepys (1666, National Portrait Gallery NPG 211): Navy Board administrator whose shorthand diary vividly recorded London’s leaking cesspits and the 1665 Great Plague.",
       "author_context": "Between 1500 and 1665, London’s population exploded nearly tenfold from around 50,000 to almost half a million, packing wooden tenements into dark alleys without sewers. Naval official Samuel Pepys stayed working in London throughout the scorching summer of 1665 as the Great Plague killed nearly 100,000 Londoners, recording daily quarantine rules and human terror in secret shorthand.",
       "source_type": "primary_diary",
       "source_type_label": "Eyewitness 17th-Century Diary (1665)",
@@ -9384,7 +10193,8 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r2.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original 1665 diary entries of Samuel Pepys during the Great Plague of London (lightly abridged for classroom length)."
+      "provenance_note": "Original 1665 diary entries of Samuel Pepys during the Great Plague of London (lightly abridged for classroom length).",
+      "short_tab_title": "3. Pepys’s Plague Diary (1665)"
     },
     {
       "lesson_index": 3,
@@ -9392,8 +10202,8 @@ export default {
       "lesson_label": "Enquiry 4",
       "book_title": "\"Observations on the Filth of the Thames\": Letter to The Times (1855) & The Great Stink",
       "author": "Professor Michael Faraday (7 July 1855 • The Times Archive)",
-      "cover_image": "/images/father_thames_punch_1858.jpg",
-      "cover_caption": "Punch cartoon (3 July 1858), \"Father Thames Introducing His Offspring [Diphtheria, Scrofula, and Cholera] to the Fair City of London\" during the Great Stink.",
+      "cover_image": "/images/ks3_was/was_l4_s3_father_thames_punch_1858.jpg",
+      "cover_caption": "John Leech, \"Father Thames Introducing His Offspring [Diphtheria, Scrofula, and Cholera] to the Fair City of London\" (Punch, 3 July 1858) during the Great Stink.",
       "author_context": "As Industrial Revolution factories drew millions into cities and middle-class homes flushed new water-closets straight into old rainwater drains, the River Thames became an open sewer for 2.5 million people—while private water companies still pumped drinking water from that same river! On 7 July 1855, Britain’s greatest experimental scientist, Michael Faraday, tested the river from a steamboat and shamed Parliament in The Times, foreshadowing the \"Great Stink\" of 1858.",
       "source_type": "primary_testimony",
       "source_type_label": "Scientific Eyewitness Letter to The Times (1855)",
@@ -9442,7 +10252,8 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r3.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original text of Professor Michael Faraday’s eyewitness letter to The Times on 7 July 1855 describing the polluted Thames."
+      "provenance_note": "Original text of Professor Michael Faraday’s eyewitness letter to The Times on 7 July 1855 describing the polluted Thames.",
+      "short_tab_title": "4. Faraday & The Great Stink"
     },
     {
       "lesson_index": 4,
@@ -9450,8 +10261,8 @@ export default {
       "lesson_label": "Enquiry 5",
       "book_title": "On the Mode of Communication of Cholera: The Broad Street Pump (1855)",
       "author": "Dr John Snow (2nd Edition, 1855 • Wellcome Collection)",
-      "cover_image": "/units/water_and_sanitation/assets/john_snow.jpg",
-      "cover_caption": "Photographic portrait of London physician Dr John Snow (1813–1858), who traced the August–September 1854 Soho cholera outbreak to the Broad Street water pump.",
+      "cover_image": "/images/ks3_was/was_l5_b1_john_snow_portrait_1856.jpg",
+      "cover_caption": "Studio portrait photograph of London physician Dr John Snow (1856), who traced the August–September 1854 Soho cholera outbreak to the sewage-contaminated Broad Street water pump.",
       "author_context": "When a terrifying cholera epidemic killed over 500 residents within ten days around Golden Square in Soho, London, in late August 1854, nearly every doctor blamed \"miasma\" rising from street drains. Local physician Dr John Snow knocked on doors, mapped every single death, investigated outliers, and proved in his landmark 1855 book that cholera was swallowed in contaminated drinking water.",
       "source_type": "primary_testimony",
       "source_type_label": "Foundational Epidemiological Study (1855)",
@@ -9500,7 +10311,8 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r4.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading",
       "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original extract from Dr John Snow’s 1855 epidemiological study of the Broad Street cholera outbreak in Soho."
+      "provenance_note": "Original extract from Dr John Snow’s 1855 epidemiological study of the Broad Street cholera outbreak in Soho.",
+      "short_tab_title": "5. Snow’s Broad Street Study"
     },
     {
       "lesson_index": 5,
@@ -9508,8 +10320,8 @@ export default {
       "lesson_label": "Enquiry 6",
       "book_title": "The Greatest Benefit to Mankind: How Science, Engineering & Law Conquered Urban Disease",
       "author": "Roy Porter (\"The Greatest Benefit to Mankind\", 1997 • Medical Historiography)",
-      "cover_image": "/units/water_and_sanitation/assets/joseph_bazalgette.jpg",
-      "cover_caption": "Portrait of Sir Joseph Bazalgette (1819–1891), Chief Engineer to the Metropolitan Board of Works, whose intercepting sewer network transformed London’s health.",
+      "cover_image": "/images/ks3_was/was_l4_b4_joseph_bazalgette_portrait.jpg",
+      "cover_caption": "Portrait of Sir Joseph Bazalgette (1819–1891, Lock & Whitfield woodburytype), Chief Engineer to the Metropolitan Board of Works whose 82-mile intercepting sewer network transformed London’s health.",
       "author_context": "British historian Roy Porter (1946–2002) of the Wellcome Institute was one of the world’s foremost historians of medicine and public health. Looking back across two thousand years—from Roman aqueducts to the compulsory 1875 Public Health Act—Porter argues that conquering epidemic water-borne disease required four interlocking forces working together: data, engineering, laboratory science, and democratic political will.",
       "source_type": "historical_scholarship",
       "source_type_label": "Medical Historiography & Synthesis",
@@ -9558,7 +10370,8 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r5.mp3",
       "studio_voice_label": "Studio Male Historian · Scholarship",
       "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom summary of historian Roy Porter’s argument on 19th-century public health reform—written for KS3 pupils rather than quoted verbatim."
+      "provenance_note": "Classroom summary of historian Roy Porter’s argument on 19th-century public health reform—written for KS3 pupils rather than quoted verbatim.",
+      "short_tab_title": "6. Porter: Sanitary Triumph"
     }
   ]
 };

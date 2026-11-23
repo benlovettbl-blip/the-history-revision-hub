@@ -319,40 +319,92 @@ export const ICONIC_LESSON_VISUALS = {
   // =========================================================================
   // KS3 Secondary Units — Iconic Focal Overrides Where Needed
   // =========================================================================
-  medieval_england: {
+  water_and_sanitation: {
+    lesson_1: {
+      cardImage: "/images/ks3_was/was_l1_card_roman_aqueduct_segovia.jpg",
+      heroCameo: "/images/ks3_was/was_l1_cameo_emperor_claudius_bust.jpg",
+      cameoAlt: "Roman marble portrait bust of Emperor Claudius (reigned AD 41–54, Antikensammlung Berlin Sk 1965.10), whose AD 43 invasion brought walled towns, stone aqueducts, and public bathhouses to Roman Britain",
+    },
+    lesson_2: {
+      cardImage: "/images/ks3_was/was_l2_card_tournai_plague_burial_1349.jpg",
+      heroCameo: "/images/ks3_was/was_l2_cameo_king_edward_iii_npg.jpg",
+      cameoAlt: "Portrait of King Edward III of England (reigned 1327–1377, National Portrait Gallery NPG 4980), who issued the 1349 Royal Sanitary Writ ordering the Mayor of London to clear human waste and filth from the streets during the Black Death",
+    },
     lesson_3: {
-      cardImage: '/images/medieval_england/plate_3_2_henry_ii_penance_becket.jpg',
-      heroCameo: '/images/medieval_england/plate_3_2_henry_ii_penance_becket.jpg',
-      cameoAlt: "Henry II doing penance at Thomas Becket's shrine",
+      cardImage: "/images/ks3_was/was_l3_card_great_plague_street_1665.jpg",
+      heroCameo: "/images/ks3_was/was_l3_cameo_queen_elizabeth_i_phoenix_npg.jpg",
+      cameoAlt: "Nicholas Hilliard, Queen Elizabeth I — The Phoenix Portrait (c. 1575, National Portrait Gallery NPG 190), godmother to Sir John Harington who had his 1596 flushing water closet installed at Richmond Palace",
     },
     lesson_4: {
-      cardImage: '/images/medieval_england/plate_4_2_king_john_runnymede.jpg',
-      heroCameo: '/images/medieval_england/plate_4_2_king_john_runnymede.jpg',
-      cameoAlt: 'King John granting Magna Carta at Runnymede (1215)',
+      cardImage: "/images/ks3_was/was_l4_card_crossness_pumping_station.jpg",
+      heroCameo: "/images/ks3_was/was_l4_cameo_michael_faraday_portrait.jpg",
+      cameoAlt: "Professor Michael Faraday FRS (1791–1867, photographed by Maull & Polyblank, Wellcome Collection M0017169), who dropped white cards into the sewage-choked River Thames in July 1855 and warned The Times three years before the Great Stink",
     },
     lesson_5: {
-      cardImage: '/images/medieval_england/source_d_richard_ii_meeting_rebels.jpg',
+      cardImage: "/images/ks3_was/was_l5_card_board_of_health_cholera_1832.jpg",
+      heroCameo: "/images/ks3_was/was_l5_cameo_robert_koch_portrait.jpg",
+      cameoAlt: "German bacteriologist Dr Robert Koch (1843–1910), who isolated the comma-shaped cholera bacterium (Vibrio cholerae) under the microscope in 1884, proving Dr John Snow and Louis Pasteur right",
+    },
+    lesson_6: {
+      cardImage: "/images/ks3_was/was_l6_card_crossness_main_drainage_1865.jpg",
+      heroCameo: "/images/ks3_was/was_l6_cameo_benjamin_disraeli_millais_npg.jpg",
+      cameoAlt: "Prime Minister Benjamin Disraeli, 1st Earl of Beaconsfield (painted by Sir John Everett Millais, 1881, National Portrait Gallery NPG 3241), whose government passed the landmark compulsory Public Health Act of 1875",
+    },
+  },
+
+  medieval_england: {
+    lesson_1: {
+      cardImage: "/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg",
+      heroCameo: "/images/ks3_med7/med7_l1_cameo_harold_coronation_bayeux.jpg",
+      cameoAlt: "Bayeux Tapestry Scene 30 (Hic Residet Harold Rex Anglorum, c. 1070s): Newly crowned King Harold II Godwinson enthroned with royal crown, orb, and sceptre beside Archbishop Stigand",
+    },
+    lesson_2: {
+      cardImage: "/images/ks3_med7/med7_l2_card_cliffords_tower_york_motte.jpg",
+      heroCameo: "/images/ks3_med7/med7_l2_cameo_william_conqueror_bayeux.jpg",
+      cameoAlt: "Bayeux Tapestry Scene 44 (c. 1070s): Duke William the Conqueror seated with raised sword of authority flanked by his half-brothers Bishop Odo of Bayeux and Count Robert of Mortain",
+    },
+    lesson_3: {
+      cardImage: "/images/ks3_med7/med7_l3_card_canterbury_cathedral_towers.jpg",
+      heroCameo: "/images/ks3_med7/med7_l3_cameo_thomas_becket_stained_glass.jpg",
+      cameoAlt: "Medieval stained-glass portrait roundel of Archbishop Thomas Becket wearing mitre and archiepiscopal pallium inside Canterbury Cathedral (13th century)",
+    },
+    lesson_4: {
+      cardImage: "/images/ks3_med7/med7_l4_card_runnymede_magna_carta_monument.jpg",
+      heroCameo: "/images/ks3_med7/med7_l4_cameo_king_john_portrait.jpg",
+      cameoAlt: "Crowned portrait engraving of King John of England (r. 1199–1216), whose military defeat in France, crushing feudal taxes, and clash with the barons led to the sealing of Magna Carta at Runnymede in June 1215",
+    },
+    lesson_5: {
+      cardImage: "/images/ks3_med7/med7_l5_card_luttrell_psalter_manor_mill.jpg",
+      heroCameo: "/images/ks3_med7/med7_l5_cameo_king_richard_ii_westminster_portrait.jpg",
+      cameoAlt: "Contemporary Westminster Abbey panel portrait of young King Richard II (r. 1377–1399) enthroned in ermine robes holding the royal orb and sceptre (c. 1390s)",
     },
   },
 
   monarchy_religion_power: {
     lesson_1: {
-      cardImage: '/images/henry_viii.jpg',
-      heroCameo: '/images/henry_viii.jpg',
-      cameoAlt: 'King Henry VIII (after Hans Holbein the Younger)',
+      cardImage: "/images/ks3_mrp/mrp_l1_card_field_of_cloth_of_gold_1520.jpg",
+      heroCameo: "/images/ks3_mrp/mrp_l1_cameo_henry_viii_thyssen_holbein.jpg",
+      cameoAlt: "King Henry VIII (1491–1547), painted on oak panel by Hans Holbein the Younger (c. 1537, Museo Nacional Thyssen-Bornemisza, Madrid), who severed England from papal authority through the 1534 Act of Supremacy",
     },
     lesson_2: {
-      cardImage: '/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg',
-      heroCameo: '/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg',
-      cameoAlt: 'Queen Elizabeth I in Coronation robes (1559)',
+      cardImage: "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
+      heroCameo: "/images/ks3_mrp/mrp_l2_cameo_elizabeth_darnley_npg2082.jpg",
+      cameoAlt: "Queen Elizabeth I (1533–1603), The Darnley Portrait (c. 1575, National Portrait Gallery NPG 2082), architect of the 1559 Protestant 'Middle Way' Religious Settlement",
+    },
+    lesson_3: {
+      cardImage: "/images/ks3_mrp/mrp_l3_card_armada_gravelines_broadsides_1588.jpg",
+      heroCameo: "/images/eee/kt2/charles_howard_nottingham_admiral.jpg",
+      cameoAlt: "Charles Howard, 1st Earl of Nottingham and 2nd Baron Howard of Effingham (1536–1624), Lord High Admiral of England who commanded Queen Elizabeth I's fleet aboard the Ark Royal against the 1588 Spanish Armada",
     },
     lesson_4: {
-      cardImage: '/images/monarchy_religion_power/trial_charles_i_westminster_1649.jpg',
-      heroCameo: '/images/oliver_cromwell.jpg',
-      cameoAlt: 'Oliver Cromwell (1599–1658)',
+      cardImage: "/images/ks3_mrp/mrp_l4_card_cromwell_at_dunbar_gow.jpg",
+      heroCameo: "/images/ks3_fbe/fbe_l3_cameo_oliver_cromwell_cooper.jpg",
+      cameoAlt: "Oliver Cromwell (1599–1658) in steel armour (after Samuel Cooper, 1656, National Portrait Gallery NPG 3065), New Model Army cavalry commander at Naseby and Lord Protector of the Commonwealth",
     },
     lesson_5: {
-      cardImage: '/images/william_mary_declaration_of_rights_1689.jpg',
+      cardImage: "/images/ks3_mrp/mrp_l5_card_charles_i_house_of_commons_copley.jpg",
+      heroCameo: "/images/ks3_mrp/mrp_l5_cameo_john_locke_kneller_1697.jpg",
+      cameoAlt: "John Locke (1632–1704), English constitutional philosopher whose Two Treatises of Government (1689) defended parliamentary consent and the Glorious Revolution (painted by Sir Godfrey Kneller, 1697, State Hermitage Museum)",
     },
   },
 
