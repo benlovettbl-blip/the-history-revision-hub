@@ -417,17 +417,115 @@ export const ICONIC_LESSON_VISUALS = {
     },
   },
 
-  second_british_empire: {
+  first_british_empire: {
+    lesson_1: {
+      cardImage: "/images/ks3_fbe/fbe_l1_card_clive_mir_jafar_plassey_hayman.jpg",
+      heroCameo: "/images/ks3_fbe/fbe_l1_cameo_emperor_jahangir_bichitr.jpg",
+      cameoAlt: "Mughal Emperor Jahangir (r. 1605–1627) enthroned atop an allegorical hourglass before a golden solar halo while King James I of England waits among tributary rulers below (painted by imperial artist Bichitr, c. 1615–1618, Freer Gallery of Art)",
+    },
+    lesson_2: {
+      cardImage: "/images/ks3_fbe/fbe_l2_card_turner_slave_ship_1840.jpg",
+      heroCameo: "/images/ks3_fbe/fbe_l2_cameo_granville_sharp_portrait.jpg",
+      cameoAlt: "Profile portrait engraving of British abolitionist campaigner Granville Sharp (1735–1813), who fought chattel slavery in the English courts and exposed the 1781 Zong slave-ship massacre alongside Olaudah Equiano",
+    },
     lesson_3: {
-      cardImage: '/images/upgraded/ks3-empire-gw/sbe_l3_srcb_rani_lakshmibai_sword_shield.jpg',
-      heroCameo: '/images/upgraded/ks3-empire-gw/sbe_l3_srcb_rani_lakshmibai_sword_shield.jpg',
-      cameoAlt: 'Rani Lakshmibai of Jhansi (1857)',
+      cardImage: "/images/ks3_fbe/fbe_l3_card_maroon_pacification_brunias.jpg",
+      heroCameo: "/images/ks3_fbe/fbe_l3_cameo_oliver_cromwell_cooper.jpg",
+      cameoAlt: "Lord Protector Oliver Cromwell (1599–1658) in steel armour (after Samuel Cooper, 1656, National Portrait Gallery), whose 1655 Western Design expedition seized Jamaica from Spain and sparked Maroon mountain resistance",
     },
     lesson_4: {
-      cardImage: '/images/cetshwayo_king_of_zulus.jpg',
+      cardImage: "/images/ks3_fbe/fbe_l4_card_samuel_adams_copley_1772.jpg",
+      heroCameo: "/images/king_george_iii.jpg",
+      cameoAlt: "Coronation portrait of King George III (r. 1760–1820) in gold-embroidered robes and ermine mantle (Allan Ramsay, 1762), whose ministers sought to tax the Thirteen Colonies after the Seven Years’ War",
     },
     lesson_5: {
-      cardImage: '/images/rhodes_colossus.png',
+      cardImage: "/images/ks3_fbe/fbe_l5_card_treaty_of_paris_commissioners_west_1783.jpg",
+      heroCameo: "/images/ks3_fbe/fbe_l5_cameo_george_washington_stuart.jpg",
+      cameoAlt: "General George Washington (1732–1799), Commander-in-Chief of the Continental Army who besieged British forces at Yorktown in 1781 and became first President of the United States (Gilbert Stuart, 1796)",
+    },
+  },
+
+  industrialisation_and_empire: {
+    lesson_1: {
+      cardImage: "/images/ks3_ind/ind_l1_card_wright_iron_forge_1772.jpg",
+      heroCameo: "/images/ks3_ind/ind_l1_cameo_matthew_boulton_beechey.jpg",
+      cameoAlt: "Matthew Boulton FRS (1728–1809), Birmingham industrialist and Soho Manufactory partner of James Watt who commercialised rotary steam power across Britain (engraved by William Sharp after Sir William Beechey, 1801, Wellcome Collection V0006455)",
+    },
+    lesson_2: {
+      cardImage: "/images/ks3_ind/ind_l2_card_dinner_hour_wigan_1874.jpg",
+      heroCameo: "/images/ks3_ind/ind_l2_cameo_sir_richard_arkwright.jpg",
+      cameoAlt: "Sir Richard Arkwright (1732–1792), pioneer of the regimented mechanized cotton-mill factory system at Cromford, painted by Joseph Wright of Derby (c. 1790)",
+    },
+    lesson_3: {
+      cardImage: "/images/ks3_ind/ind_l3_card_abbey_mills_pumping_station.jpg",
+      heroCameo: "/images/ks3_ind/ind_l3_cameo_john_snow_1856.jpg",
+      cameoAlt: "Dr John Snow (1813–1858), London physician whose 1854 Soho Broad Street water-pump investigation proved that cholera spread through sewage-contaminated water rather than foul-smelling miasma (1856 portrait, Wellcome Collection M0009238)",
+    },
+    lesson_4: {
+      cardImage: "/images/ks3_ind/ind_l4_b4_tolpuddle_six_cottages.jpg",
+      heroCameo: "/images/ks3_ind/ind_l4_cameo_henry_hunt_cup_1819.jpg",
+      cameoAlt: "1819 Staffordshire lustreware portrait cup of radical speaker Henry \"Orator\" Hunt (1773–1835) inscribed \"HUNT AND LIBERTY\", made to commemorate his arrest on the hustings at the Peterloo Massacre (British Museum)",
+    },
+    lesson_5: {
+      cardImage: "/images/ks3_ind/ind_l5_card_old_sarum_constable.jpg",
+      heroCameo: "/images/ks3_ind/ind_l5_cameo_feargus_oconnor_1847.jpg",
+      cameoAlt: "Feargus O’Connor MP (1796–1855), charismatic Chartist orator, founder of the Northern Star newspaper, and organiser of the April 1848 Kennington Common mass rally",
+    },
+  },
+
+  australia: {
+    lesson_1: {
+      cardImage: "/images/ks3_aus/aus_l1_card_endeavour_bark_new_holland.jpg",
+      heroCameo: "/images/ks3_aus/aus_l1_cameo_sir_joseph_banks_portrait.jpg",
+      cameoAlt: "Sir Joseph Banks (1743–1820), Royal Society naturalist aboard HMS Endeavour at Botany Bay in 1770 who later urged Parliament to establish a convict colony in New South Wales (engraved by Niccolò Schiavonetti after Thomas Phillips RA, 1812)",
+    },
+    lesson_2: {
+      cardImage: "/images/ks3_aus/aus_l2_card_founding_australia_sydney_cove_1788.jpg",
+      heroCameo: "/images/ks3_aus/aus_l2_cameo_arthur_phillip_wheatley_1786.jpg",
+      cameoAlt: "Captain Arthur Phillip RN (1738–1814), commander of the 1787–1788 First Fleet and first Governor of New South Wales, holding a 1787 plan of the colony (oil portrait by Francis Wheatley, 1786, State Library of New South Wales ML 124)",
+    },
+    lesson_3: {
+      cardImage: "/images/ks3_aus/aus_l3_card_taking_bennelong_colbee_1789.jpg",
+      heroCameo: "/images/ks3_aus/aus_l3_cameo_governor_philip_gidley_king.jpg",
+      cameoAlt: "Governor Philip Gidley King RN (1758–1808), third Governor of New South Wales who issued the May 1801 government proclamation outlawing Bidjigal resistance leader Pemulwuy during the Hawkesbury Frontier War (State Library of New South Wales)",
+    },
+    lesson_4: {
+      cardImage: "/images/ks3_aus/aus_l4_card_ouse_river_tasmania_glover_1838.jpg",
+      heroCameo: "/images/ks3_aus/aus_l4_cameo_woureddy_duterrau_1834.jpg",
+      cameoAlt: "Woureddy (d. 1842), senior Nuennonne (Palawa) warrior, storyteller, and husband of Truganini who survived Tasmania's Black War before forced exile to Wybalenna on Flinders Island (oil portrait by Benjamin Duterrau, 1834, British Museum Oc2006,Ptg.22)",
+    },
+    lesson_5: {
+      cardImage: "/images/ks3_aus/aus_l5_card_forest_creek_diggings_gill_1852.jpg",
+      heroCameo: "/images/ks3_aus/aus_l5_cameo_peter_lalor_portrait.jpg",
+      cameoAlt: "Peter Lalor (1827–1889), Irish-born Ballarat miner elected leader of the 1854 Eureka Stockade rebellion who lost his left arm in the fighting before winning election to the Victorian Parliament in 1855 (portrait after Ludwig Becker, 1856)",
+    },
+  },
+
+  second_british_empire: {
+    lesson_1: {
+      cardImage: "/images/ks3_sbe/sbe_l1_card_hms_victory_portsmouth.jpg",
+      heroCameo: "/images/ks3_sbe/sbe_l1_cameo_horatio_nelson_abbott.jpg",
+      cameoAlt: "Vice-Admiral Horatio, Lord Nelson (1758–1805), painted by Lemuel Francis Abbott (1797, National Portrait Gallery NPG 394), whose 1805 victory at Cape Trafalgar secured a century of Royal Navy ocean mastery",
+    },
+    lesson_2: {
+      cardImage: "/images/east_india_house.jpg",
+      heroCameo: "/images/ks3_sbe/sbe_l2_cameo_robert_clive_dance.jpg",
+      cameoAlt: "Robert Clive, 1st Baron Clive (1725–1774), painted by Nathaniel Dance (National Portrait Gallery NPG 39), who secured the 1765 Bengal Diwani giving the East India Company sovereign tax-collecting power",
+    },
+    lesson_3: {
+      cardImage: "/images/ks3_sbe/sbe_l3_card_cashmere_gate_delhi_1858.jpg",
+      heroCameo: "/images/ks3_sbe/sbe_l3_cameo_rani_lakshmibai_equestrian.jpg",
+      cameoAlt: "Contemporary Indian equestrian gouache painting of Rani Lakshmibai of Jhansi (1828–1858) armed on a rearing white charger (c. 1860), celebrated commander of the 1857–1858 Indian Rebellion",
+    },
+    lesson_4: {
+      cardImage: "/images/ks3_sbe/sbe_l4_card_battle_of_isandlwana_fripp.jpg",
+      heroCameo: "/images/ks3_sbe/sbe_l4_cameo_cecil_rhodes_portrait.jpg",
+      cameoAlt: "Cecil John Rhodes (1853–1902), De Beers diamond financier, founder of the Chartered British South Africa Company, and Prime Minister of the Cape Colony who championed 'Cape to Cairo' imperial expansion",
+    },
+    lesson_5: {
+      cardImage: "/images/ks3_sbe/sbe_l5_card_rhodes_colossus_1892.jpg",
+      heroCameo: "/images/ks3_sbe/sbe_l5_cameo_lord_curzon_viceroy.jpg",
+      cameoAlt: "George Nathaniel Curzon, 1st Marquess Curzon of Kedleston (1859–1925), Viceroy of India from 1899 to 1905 in ceremonial Star of India robes, chief defender of Britain’s imperial 'civilising' mission (Library of Congress)",
     },
   },
 

@@ -9,9 +9,9 @@ export default {
   ],
   "title": "KS3: The Industrial Revolution (1750–1900)",
   "short_title": "The Industrial Revolution",
-  "homepage_background": "/images/coalbrookdale_by_night.jpg",
+  "homepage_background": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
   "enquiry": "How did steam, factories, and the fight for democracy transform Britain?",
-  "cover_image": "/images/coalbrookdale_by_night.jpg",
+  "cover_image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
   "cover_caption": "Philip James de Loutherbourg, Coalbrookdale by Night (1801), depicting the blazing iron furnaces of the Industrial Revolution.",
   "period": "1750–1900",
   "workbooks": [
@@ -27,7 +27,6 @@ export default {
       "dates": "1741 – 1800",
       "title": "Fareham Ironmaster & Metallurgical Pioneer",
       "role": "Industrial Pioneer",
-      "image": "/images/henry_cort.jpg",
       "significance": "Invented the puddling process at Funtley Ironworks in Hampshire. His breakthrough liberated Britain from foreign iron imports, providing the structural wrought iron that built the Royal Navy and the world’s railways.",
       "actions": "Patented puddling and grooved rolling (1783–1784); produced naval iron tested at Portsmouth Dockyard; transformed Britain from an iron importer into the world’s leading exporter.",
       "lifespan": "1741 – 1800",
@@ -38,7 +37,7 @@ export default {
       "dates": "1736 – 1819",
       "title": "Scottish Mechanical Engineer & Inventor",
       "role": "Mechanical Engineer",
-      "image": "/images/james_watt.jpg",
+      "image": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
       "significance": "Radically improved the Newcomen steam engine by introducing the separate condenser and rotary motion, freeing industrial manufacturing from reliance on water power.",
       "actions": "Patented the separate condenser (1769); partnered with Matthew Boulton at Soho Manufactory; adapted steam engines to drive rotary machinery in textile mills and mines.",
       "lifespan": "1736 – 1819",
@@ -49,7 +48,7 @@ export default {
       "dates": "1801 – 1885",
       "title": "Politician, Philanthropist & Social Reformer",
       "role": "Parliamentary Reformer",
-      "image": "/images/lord_shaftesbury.jpg",
+      "image": "/images/ks3_ind/ind_l2_b4_lord_shaftesbury_watts_npg.jpg",
       "significance": "Led the parliamentary struggle against unbridled laissez-faire capitalism, fighting for statutory limits on factory working hours and championing the abolition of child labor in mines.",
       "actions": "Championed the Ten Hours Act (1847); sponsored the Mines Act 1842 banning underground child labour; served as President of the Ragged Schools Union for forty years.",
       "lifespan": "1801 – 1885",
@@ -60,7 +59,7 @@ export default {
       "dates": "1800 – 1890",
       "title": "Social Reformer & Sanitary Pioneer",
       "role": "Public Health Pioneer",
-      "image": "/images/chadwick.jpg",
+      "image": "/images/ks3_ind/ind_l3_b3_edwin_chadwick_portrait.jpg",
       "significance": "Published the monumental 1842 Report on the Sanitary Condition of the Labouring Population, establishing that infectious disease in industrial slums was directly caused by environmental filth and contaminated water.",
       "actions": "Authored the seminal 1842 Sanitary Report; drafted the Public Health Act 1848; advocated arterial drainage networks, clean pressurized water, and state sanitary regulation.",
       "lifespan": "1800 – 1890",
@@ -71,7 +70,7 @@ export default {
       "dates": "1806 – 1859",
       "title": "Civil & Mechanical Engineer",
       "role": "Imperial Engineer",
-      "image": "/images/isambard_kingdom_brunel.jpg",
+      "image": "/images/ks3_ind/ind_ki4_brunel_great_eastern_chains_1857.jpg",
       "significance": "The preeminent engineering genius of the Victorian era. Constructed the Great Western Railway, revolutionary suspension bridges, and massive steamships that shrank imperial trade routes.",
       "actions": "Constructed the Great Western Railway (1833–1841) and Box Tunnel; designed the SS Great Britain (first iron-hulled propeller liner) and SS Great Eastern; bridged the Avon Gorge.",
       "lifespan": "1806 – 1859",
@@ -82,7 +81,7 @@ export default {
       "dates": "1800 – 1877",
       "title": "Cabinetmaker, Radical Reformer & Chartist Leader",
       "role": "Working-Class Leader",
-      "image": "/images/william_lovett.jpg",
+      "image": "/images/ks3_ind/ind_l5_b3_william_lovett_chartist.jpg",
       "significance": "Principal author of the People’s Charter of 1838. Championed \"Moral Force\" Chartism, advocating working-class education, non-violent agitation, and universal male suffrage.",
       "actions": "Drafted the Six Points of the People’s Charter (1838); served as Secretary of the National Chartist Convention; endured imprisonment for political agitation.",
       "lifespan": "1800 – 1877",
@@ -93,7 +92,7 @@ export default {
       "dates": "1764 – 1845",
       "title": "Whig Prime Minister of the United Kingdom (1830–1834)",
       "role": "Prime Minister",
-      "image": "/images/earl_grey.jpg",
+      "image": "/images/ks3_ind/ind_l5_b2_earl_grey_lawrence_npg.jpg",
       "significance": "Steered the landmark 1832 Great Reform Act through fierce aristocratic resistance, disenfranchising rotten boroughs and establishing the foundation for Britain’s modern parliamentary democracy.",
       "actions": "Formed reform government in 1830; secured royal pledge to create peers to overcome House of Lords veto; oversaw the 1832 Reform Act and the Slavery Abolition Act 1833.",
       "lifespan": "1764 – 1845",
@@ -517,8 +516,8 @@ export default {
             "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
             "context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
             "hinge_question": "Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
-            "image": "/images/coalbrookdale_by_night.jpg",
-            "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London). The blast furnaces of Shropshire illuminating the dark landscape, symbolising the dawn of Britain’s coal and steam revolution.",
+            "image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+            "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London 1952-446). Blazing coke-fired blast furnaces in Shropshire illuminating the night sky, symbolising Britain’s shift from woodland charcoal to coal-powered heavy industry.",
             "question_badge": "Source Inference",
             "question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
             "enquiry_question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
@@ -529,7 +528,8 @@ export default {
             },
             "id": "iae_l1_src_a",
             "type": "visual",
-            "src": "/images/coalbrookdale_by_night.jpg"
+            "src": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+            "image_alt": "Philipp Jakob de Loutherbourg’s 1801 oil painting Coalbrookdale by Night showing towering orange flames and smoke erupting from Shropshire coke-fired iron blast furnaces at night behind horse-drawn carts and cast-iron cylinders"
           },
           "sources": [
             {
@@ -537,8 +537,8 @@ export default {
               "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
               "context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
               "hinge_question": "Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
-              "image": "/images/coalbrookdale_by_night.jpg",
-              "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London). The blast furnaces of Shropshire illuminating the dark landscape, symbolising the dawn of Britain’s coal and steam revolution.",
+              "image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+              "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London 1952-446). Blazing coke-fired blast furnaces in Shropshire illuminating the night sky, symbolising Britain’s shift from woodland charcoal to coal-powered heavy industry.",
               "question_badge": "Source Inference",
               "question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
               "enquiry_question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
@@ -549,12 +549,176 @@ export default {
               },
               "id": "iae_l1_src_a",
               "type": "visual",
-              "src": "/images/coalbrookdale_by_night.jpg"
+              "src": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+              "image_alt": "Philipp Jakob de Loutherbourg’s 1801 oil painting Coalbrookdale by Night showing towering orange flames and smoke erupting from Shropshire coke-fired iron blast furnaces at night behind horse-drawn carts and cast-iron cylinders"
             }
           ],
           "heading": "The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the mid-eighteenth century, Great Britain confronted an acute metallurgical bottleneck that threatened its economic expansion. Smelting iron required immense quantities of timber charcoal, causing devastating deforestation of English oaks and stripping the realm's ancient woodlands.</p><p class=\"prose-p\">Early coal-fired blast furnaces produced brittle impure pig iron saturated with carbon and sulphur, which fractured under pressure. Consequently, Britain suffered costly dependence on Swedish imports of refined bar iron to supply naval anchors and weapons for the Royal Navy.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the mid-eighteenth century, Great Britain confronted an acute metallurgical bottleneck that threatened its economic expansion. Smelting iron required immense quantities of timber charcoal, causing devastating deforestation of English oaks and stripping the realm's ancient woodlands.</p><p class=\"prose-p\">Early coal-fired blast furnaces produced brittle impure pig iron saturated with carbon and sulphur, which fractured under pressure. Consequently, Britain suffered costly dependence on Swedish imports of refined bar iron to supply naval anchors and weapons for the Royal Navy.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the mid-eighteenth century, Great Britain confronted an acute metallurgical bottleneck that threatened its economic expansion. Smelting iron required immense quantities of timber charcoal, causing devastating deforestation of English oaks and stripping the realm's ancient woodlands.</p><p class=\"prose-p\">Early coal-fired blast furnaces produced brittle impure pig iron saturated with carbon and sulphur, which fractured under pressure. Consequently, Britain suffered costly dependence on Swedish imports of refined bar iron to supply naval anchors and weapons for the Royal Navy.</p>",
+          "image": "/images/industrialisation_and_empire/maps/ind_map_l1_britain_coalfields_steam_iron_1750_1830.svg",
+          "image_alt": "KS3 Year 8 historical GIS map of Britain’s Industrial Revolution (1750–1830) showing British coalfields, Coalbrookdale coke iron, Birmingham steam engines, Manchester cotton mills, and a zoomed Hampshire inset of Funtley Ironworks and Portsmouth Royal Dockyard",
+          "caption": "Reference Map: Britain’s Industrial Revolution (1750–1830)—major coalfields, Boulton & Watt’s rotary steam engines, Lancashire cotton mills, Coalbrookdale coke iron, and a zoomed Hampshire inset of Henry Cort’s Funtley Ironworks and Portsmouth Royal Dockyard.",
+          "stage_hook_map": {
+            "id": "ind-l1-britain-coalfields-steam-iron-map",
+            "image": "/images/industrialisation_and_empire/maps/ind_map_l1_britain_coalfields_steam_iron_1750_1830.svg",
+            "title": "Britain’s Industrial Revolution: Coalfields, Steam, Cotton & Iron (1750–1830)",
+            "subtitle": "Coalbrookdale, Soho Steam, Manchester Cottonopolis, Funtley & Portsmouth · Tap pins 1–5",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 16.2,
+                "y": 63.1,
+                "align": "right",
+                "color": "#b45309",
+                "label": "1. Coalbrookdale & Ironbridge Gorge (1709–79)",
+                "badge": "Coke Smelting & Cast Iron",
+                "date": "1709–1779",
+                "title": "Coalbrookdale & Ironbridge Gorge (1709–79): Breaking the Timber Bottleneck",
+                "body": "As England’s oak forests shrank, Quaker ironmaster Abraham Darby pioneered smelting iron ore with purified coal (coke) at Coalbrookdale in Shropshire, culminating in the world’s first cast-iron bridge across the River Severn in 1779—though coal-smelted pig iron remained too brittle for warship anchors until Henry Cort’s puddling breakthrough.",
+                "details": "As England’s oak forests shrank, Quaker ironmaster Abraham Darby pioneered smelting iron ore with purified coal (coke) at Coalbrookdale in Shropshire, culminating in the world’s first cast-iron bridge across the River Severn in 1779—though coal-smelted pig iron remained too brittle for warship anchors until Henry Cort’s puddling breakthrough.",
+                "hinge": "Why was Coalbrookdale cast iron strong enough for bridges in compression, yet still too brittle for Royal Navy anchors and hull bolts?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 19.9,
+                "y": 66.4,
+                "align": "right",
+                "color": "#5b21b6",
+                "label": "2. Birmingham & Soho Manufactory (1769–81)",
+                "badge": "Rotary Steam Revolution",
+                "date": "1769–1781",
+                "title": "Birmingham & Soho Manufactory (1769–81): Boulton & Watt’s Rotary Steam Engine",
+                "body": "Scottish engineer James Watt patented his fuel-saving separate condenser in 1769 and partnered with entrepreneur Matthew Boulton at Birmingham’s Soho Manufactory to build rotary-motion steam engines (1781). Factories no longer needed fast rural rivers—huge mills and forges could run 24 hours a day wherever coal arrived by canal.",
+                "details": "Scottish engineer James Watt patented his fuel-saving separate condenser in 1769 and partnered with entrepreneur Matthew Boulton at Birmingham’s Soho Manufactory to build rotary-motion steam engines (1781). Factories no longer needed fast rural rivers—huge mills and forges could run 24 hours a day wherever coal arrived by canal.",
+                "hinge": "Why did converting up-and-down pumping steam engines into smooth rotary shaft motion move factories from rural valleys into cities?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 17.9,
+                "y": 56.8,
+                "align": "right",
+                "color": "#1e3a8a",
+                "label": "3. Manchester & Lancashire Mills (1780–1830)",
+                "badge": "Cottonopolis & Liverpool Port",
+                "date": "1780–1830",
+                "title": "Manchester & Lancashire Mills (1780–1830): “Cottonopolis” & Atlantic Trade",
+                "body": "Powered by damp Pennine air, South Lancashire coal, and steam spinning mules, Manchester boomed from a market town into “Cottonopolis”—linked by canal and the 1830 Liverpool & Manchester Railway to Liverpool Docks, where raw cotton arrived from plantations across the Americas and finished cloth sailed worldwide.",
+                "details": "Powered by damp Pennine air, South Lancashire coal, and steam spinning mules, Manchester boomed from a market town into “Cottonopolis”—linked by canal and the 1830 Liverpool & Manchester Railway to Liverpool Docks, where raw cotton arrived from plantations across the Americas and finished cloth sailed worldwide.",
+                "hinge": "How did Lancashire coal, steam machinery, and Liverpool’s Atlantic shipping docks combine to make Britain the “Workshop of the World”?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 79.3,
+                "y": 30.7,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "4. Funtley Ironworks, Hampshire (1783–84)",
+                "badge": "Puddling Furnace & Rollers",
+                "date": "1775–1784",
+                "title": "Funtley Ironworks, Hampshire (1783–84): Henry Cort’s Twin Patents",
+                "body": "Harnessing the River Meon waterwheel near Fareham, ironmaster Henry Cort solved Britain’s wrought-iron crisis with two breakthroughs: his 1783 reverberatory puddling furnace (bouncing 1,200°C heat off an arched brick roof so coal sulphur never poisoned the molten iron) and his 1784 grooved rollers (shaping bars fifteen times faster than hand hammers).",
+                "details": "Harnessing the River Meon waterwheel near Fareham, ironmaster Henry Cort solved Britain’s wrought-iron crisis with two breakthroughs: his 1783 reverberatory puddling furnace (bouncing 1,200°C heat off an arched brick roof so coal sulphur never poisoned the molten iron) and his 1784 grooved rollers (shaping bars fifteen times faster than hand hammers).",
+                "hinge": "Why did Cort need both chemical purification (the puddling furnace) and mechanical speed (grooved rollers) to transform British ironmaking?"
+              },
+              {
+                "num": 5,
+                "id": "spot-5",
+                "x": 82.1,
+                "y": 36,
+                "align": "left",
+                "color": "#065f46",
+                "label": "5. Portsmouth Royal Dockyard (1787–1800)",
+                "badge": "Admiralty Forge Trials",
+                "date": "1787–1800",
+                "title": "Portsmouth Royal Dockyard (1787–1800): Admiralty Trials & Naval Self-Sufficiency",
+                "body": "In March 1787, sceptical Navy Board inspectors at Portsmouth Royal Dockyard twisted Funtley wrought-iron bars cold and pounded heavy anchors with sledgehammers, proving Cort’s Hampshire iron matched expensive Swedish Orgrounds imports. British iron output surged 400%, forging the anchors and bolts of Nelson’s fleet.",
+                "details": "In March 1787, sceptical Navy Board inspectors at Portsmouth Royal Dockyard twisted Funtley wrought-iron bars cold and pounded heavy anchors with sledgehammers, proving Cort’s Hampshire iron matched expensive Swedish Orgrounds imports. British iron output surged 400%, forging the anchors and bolts of Nelson’s fleet.",
+                "hinge": "How did Portsmouth Dockyard’s 1787 trials turn a local Hampshire forge breakthrough into a weapon of global naval supremacy?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 16.2,
+                "y": 63.1,
+                "align": "right",
+                "color": "#b45309",
+                "label": "1. Coalbrookdale & Ironbridge Gorge (1709–79)",
+                "badge": "Coke Smelting & Cast Iron",
+                "date": "1709–1779",
+                "title": "Coalbrookdale & Ironbridge Gorge (1709–79): Breaking the Timber Bottleneck",
+                "body": "As England’s oak forests shrank, Quaker ironmaster Abraham Darby pioneered smelting iron ore with purified coal (coke) at Coalbrookdale in Shropshire, culminating in the world’s first cast-iron bridge across the River Severn in 1779—though coal-smelted pig iron remained too brittle for warship anchors until Henry Cort’s puddling breakthrough.",
+                "details": "As England’s oak forests shrank, Quaker ironmaster Abraham Darby pioneered smelting iron ore with purified coal (coke) at Coalbrookdale in Shropshire, culminating in the world’s first cast-iron bridge across the River Severn in 1779—though coal-smelted pig iron remained too brittle for warship anchors until Henry Cort’s puddling breakthrough.",
+                "hinge": "Why was Coalbrookdale cast iron strong enough for bridges in compression, yet still too brittle for Royal Navy anchors and hull bolts?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 19.9,
+                "y": 66.4,
+                "align": "right",
+                "color": "#5b21b6",
+                "label": "2. Birmingham & Soho Manufactory (1769–81)",
+                "badge": "Rotary Steam Revolution",
+                "date": "1769–1781",
+                "title": "Birmingham & Soho Manufactory (1769–81): Boulton & Watt’s Rotary Steam Engine",
+                "body": "Scottish engineer James Watt patented his fuel-saving separate condenser in 1769 and partnered with entrepreneur Matthew Boulton at Birmingham’s Soho Manufactory to build rotary-motion steam engines (1781). Factories no longer needed fast rural rivers—huge mills and forges could run 24 hours a day wherever coal arrived by canal.",
+                "details": "Scottish engineer James Watt patented his fuel-saving separate condenser in 1769 and partnered with entrepreneur Matthew Boulton at Birmingham’s Soho Manufactory to build rotary-motion steam engines (1781). Factories no longer needed fast rural rivers—huge mills and forges could run 24 hours a day wherever coal arrived by canal.",
+                "hinge": "Why did converting up-and-down pumping steam engines into smooth rotary shaft motion move factories from rural valleys into cities?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 17.9,
+                "y": 56.8,
+                "align": "right",
+                "color": "#1e3a8a",
+                "label": "3. Manchester & Lancashire Mills (1780–1830)",
+                "badge": "Cottonopolis & Liverpool Port",
+                "date": "1780–1830",
+                "title": "Manchester & Lancashire Mills (1780–1830): “Cottonopolis” & Atlantic Trade",
+                "body": "Powered by damp Pennine air, South Lancashire coal, and steam spinning mules, Manchester boomed from a market town into “Cottonopolis”—linked by canal and the 1830 Liverpool & Manchester Railway to Liverpool Docks, where raw cotton arrived from plantations across the Americas and finished cloth sailed worldwide.",
+                "details": "Powered by damp Pennine air, South Lancashire coal, and steam spinning mules, Manchester boomed from a market town into “Cottonopolis”—linked by canal and the 1830 Liverpool & Manchester Railway to Liverpool Docks, where raw cotton arrived from plantations across the Americas and finished cloth sailed worldwide.",
+                "hinge": "How did Lancashire coal, steam machinery, and Liverpool’s Atlantic shipping docks combine to make Britain the “Workshop of the World”?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 79.3,
+                "y": 30.7,
+                "align": "left",
+                "color": "#9f1239",
+                "label": "4. Funtley Ironworks, Hampshire (1783–84)",
+                "badge": "Puddling Furnace & Rollers",
+                "date": "1775–1784",
+                "title": "Funtley Ironworks, Hampshire (1783–84): Henry Cort’s Twin Patents",
+                "body": "Harnessing the River Meon waterwheel near Fareham, ironmaster Henry Cort solved Britain’s wrought-iron crisis with two breakthroughs: his 1783 reverberatory puddling furnace (bouncing 1,200°C heat off an arched brick roof so coal sulphur never poisoned the molten iron) and his 1784 grooved rollers (shaping bars fifteen times faster than hand hammers).",
+                "details": "Harnessing the River Meon waterwheel near Fareham, ironmaster Henry Cort solved Britain’s wrought-iron crisis with two breakthroughs: his 1783 reverberatory puddling furnace (bouncing 1,200°C heat off an arched brick roof so coal sulphur never poisoned the molten iron) and his 1784 grooved rollers (shaping bars fifteen times faster than hand hammers).",
+                "hinge": "Why did Cort need both chemical purification (the puddling furnace) and mechanical speed (grooved rollers) to transform British ironmaking?"
+              },
+              {
+                "num": 5,
+                "id": "spot-5",
+                "x": 82.1,
+                "y": 36,
+                "align": "left",
+                "color": "#065f46",
+                "label": "5. Portsmouth Royal Dockyard (1787–1800)",
+                "badge": "Admiralty Forge Trials",
+                "date": "1787–1800",
+                "title": "Portsmouth Royal Dockyard (1787–1800): Admiralty Trials & Naval Self-Sufficiency",
+                "body": "In March 1787, sceptical Navy Board inspectors at Portsmouth Royal Dockyard twisted Funtley wrought-iron bars cold and pounded heavy anchors with sledgehammers, proving Cort’s Hampshire iron matched expensive Swedish Orgrounds imports. British iron output surged 400%, forging the anchors and bolts of Nelson’s fleet.",
+                "details": "In March 1787, sceptical Navy Board inspectors at Portsmouth Royal Dockyard twisted Funtley wrought-iron bars cold and pounded heavy anchors with sledgehammers, proving Cort’s Hampshire iron matched expensive Swedish Orgrounds imports. British iron output surged 400%, forging the anchors and bolts of Nelson’s fleet.",
+                "hinge": "How did Portsmouth Dockyard’s 1787 trials turn a local Hampshire forge breakthrough into a weapon of global naval supremacy?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -568,9 +732,9 @@ export default {
             "title": "Source B (Visual Record): Carl Frederik von Breda, Portrait of James Watt with Steam Engine Drafting Plans (1792)",
             "context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
             "hinge_question": "Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
-            "image": "/images/james_watt.jpg",
-            "src": "/images/james_watt.jpg",
-            "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery, NPG 186a). Watt is shown contemplating his separate condenser steam engine, the mechanical breakthrough that powered the Industrial Revolution.",
+            "image": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
+            "src": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
+            "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery NPG 186a). Watt is shown seated beside mechanical blueprints of his separate condenser steam engine, the breakthrough that powered British mills and mines.",
             "question_badge": "Technological Transformation",
             "question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
             "enquiry_question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
@@ -578,11 +742,12 @@ export default {
             "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
             "teacher_notes": {
               "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?"
-            }
+            },
+            "image_alt": "Carl Frederik von Breda’s 1792 oil portrait of Scottish engineer James Watt seated in a dark suit resting his head on his hand beside technical engineering drawings of his separate condenser steam engine"
           },
-          "image": "/images/spinning_mule.jpg",
-          "image_alt": "Samuel Crompton spinning mule mechanized textile spinning",
-          "caption": "Samuel Crompton’s spinning mule (1779), combining the moving carriage of the spinning jenny with the rollers of the water frame to mass-produce fine cotton yarn for British factories.",
+          "image": "/images/ks3_ind/ind_l1_b1_watt_rotative_diagram_1782.jpg",
+          "image_alt": "Technical cross-section diagram titled Fig. 336 — Watt’s double-acting engine (1782) showing cylinder J, separate condenser M, overhead rocking beam B, centrifugal governor Q, sun-and-planet gear E, and heavy rotary flywheel F",
+          "caption": "Technical Cross-Section of James Watt’s Double-Acting Rotative Steam Engine (1782, Soho / Birmingham): Combining the fuel-saving separate condenser (M) with sun-and-planet gearing (E) and a heavy flywheel (F) produced smooth rotary shaft motion that freed British factories from rural river valleys.",
           "sources": [
             {
               "letter": "B",
@@ -591,9 +756,9 @@ export default {
               "title": "Source B (Visual Record): Carl Frederik von Breda, Portrait of James Watt with Steam Engine Drafting Plans (1792)",
               "context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
               "hinge_question": "Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
-              "image": "/images/james_watt.jpg",
-              "src": "/images/james_watt.jpg",
-              "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery, NPG 186a). Watt is shown contemplating his separate condenser steam engine, the mechanical breakthrough that powered the Industrial Revolution.",
+              "image": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
+              "src": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
+              "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery NPG 186a). Watt is shown seated beside mechanical blueprints of his separate condenser steam engine, the breakthrough that powered British mills and mines.",
               "question_badge": "Technological Transformation",
               "question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
               "enquiry_question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
@@ -601,7 +766,8 @@ export default {
               "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
               "teacher_notes": {
                 "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?"
-              }
+              },
+              "image_alt": "Carl Frederik von Breda’s 1792 oil portrait of Scottish engineer James Watt seated in a dark suit resting his head on his hand beside technical engineering drawings of his separate condenser steam engine"
             }
           ],
           "heading": "James Watt & The Rotary Steam Revolution (1769–1781)",
@@ -618,8 +784,8 @@ export default {
             "title": "Source C (Technical Cross-Section): Cort’s Reverberatory Puddling Furnace at Funtley (1783)",
             "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
             "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
-            "image": "/images/funtley_ironworks.jpg",
-            "caption": "Source C: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
+            "image": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
+            "caption": "Source C: Technical cross-section and plan of a reverberatory puddling furnace (Four à puddler, after Henry Cort’s 1783–1784 Funtley design), showing how the brick fire-bridge kept dirty coal separate while the low arched roof deflected intense heat onto the stirred molten iron.",
             "question_badge": "Technology & Change",
             "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
             "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
@@ -630,7 +796,8 @@ export default {
             },
             "id": "iae_l1_src_c",
             "type": "visual",
-            "src": "/images/funtley_ironworks.jpg"
+            "src": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
+            "image_alt": "Technical cross-section and plan engraving of a reverberatory puddling furnace (Four à puddler) showing the separate coal fire-grate on the left, brick bridge wall, arched reverberating roof over the central molten iron hearth, and tall flue chimney on the right"
           },
           "photo_slider": {
             "type": "photo_slider",
@@ -647,8 +814,8 @@ export default {
               "title": "Source C (Technical Cross-Section): Cort’s Reverberatory Puddling Furnace at Funtley (1783)",
               "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
               "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
-              "image": "/images/funtley_ironworks.jpg",
-              "caption": "Source C: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
+              "image": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
+              "caption": "Source C: Technical cross-section and plan of a reverberatory puddling furnace (Four à puddler, after Henry Cort’s 1783–1784 Funtley design), showing how the brick fire-bridge kept dirty coal separate while the low arched roof deflected intense heat onto the stirred molten iron.",
               "question_badge": "Technology & Change",
               "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
               "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
@@ -659,21 +826,123 @@ export default {
               },
               "id": "iae_l1_src_c",
               "type": "visual",
-              "src": "/images/funtley_ironworks.jpg"
+              "src": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
+              "image_alt": "Technical cross-section and plan engraving of a reverberatory puddling furnace (Four à puddler) showing the separate coal fire-grate on the left, brick bridge wall, arched reverberating roof over the central molten iron hearth, and tall flue chimney on the right"
             }
           ],
           "heading": "Henry Cort’s Puddling Breakthrough at Funtley (1775–1784)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> In 1775, Fareham ironmaster Henry Cort leased an iron mill at Funtley in Hampshire to conquer the metallurgical crisis. Cort engineered an innovative reverberatory furnace chamber that separated burning coal fuel from the molten pig iron charge, preventing chemical contamination.</p><p class=\"prose-p\">By stirring molten decarburisation puddles with long iron bars, puddlers exposed the metal to air, burning away excess carbon while eliminating harmful sulphur impurities. Cort’s breakthrough converted cheap British pig iron into malleable, high-grade wrought iron.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> In 1775, Fareham ironmaster Henry Cort leased an iron mill at Funtley in Hampshire to conquer the metallurgical crisis. Cort engineered an innovative reverberatory furnace chamber that separated burning coal fuel from the molten pig iron charge, preventing chemical contamination.</p><p class=\"prose-p\">By stirring molten decarburisation puddles with long iron bars, puddlers exposed the metal to air, burning away excess carbon while eliminating harmful sulphur impurities. Cort’s breakthrough converted cheap British pig iron into malleable, high-grade wrought iron.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> In 1775, Fareham ironmaster Henry Cort leased an iron mill at Funtley in Hampshire to conquer the metallurgical crisis. Cort engineered an innovative reverberatory furnace chamber that separated burning coal fuel from the molten pig iron charge, preventing chemical contamination.</p><p class=\"prose-p\">By stirring molten decarburisation puddles with long iron bars, puddlers exposed the metal to air, burning away excess carbon while eliminating harmful sulphur impurities. Cort’s breakthrough converted cheap British pig iron into malleable, high-grade wrought iron.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 8 Engineering Breakthrough",
+            "title": "How Henry Cort’s Puddling & Rolling Solved Britain’s Iron Crisis (1775–1787)",
+            "default_index": 0,
+            "caption": "Click each stage to trace how Fareham ironmaster Henry Cort turned brittle coal-smelted pig iron into tough Royal Navy wrought iron.",
+            "items": [
+              {
+                "tab_label": "1. Pig Iron Crisis",
+                "title": "Woodland Shortage & Brittle Pig Iron",
+                "dates": "1750–1775 • Pre-Cort Bottleneck",
+                "badge": "Resource Trap",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Timber Crisis",
+                    "value": "Oak Woodlands Stripped for Charcoal"
+                  },
+                  {
+                    "label": "Coal Flaw",
+                    "value": "Carbon & Sulphur Made Pig Iron Shatter"
+                  },
+                  {
+                    "label": "Naval Risk",
+                    "value": "50,000 Tons/Yr Imported from Sweden"
+                  }
+                ],
+                "takeaway": "Because British pit coal poisoned molten iron with sulphur, the Royal Navy depended dangerously on foreign Baltic iron for warship anchors and bolts."
+              },
+              {
+                "tab_label": "2. Puddling Furnace",
+                "title": "Cort’s Reverberatory Puddling Furnace at Funtley",
+                "dates": "1775–1784 • Chemical Purification",
+                "badge": "Sulphur Removed",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Bridge Wall",
+                    "value": "Kept Dirty Coal Separate from Molten Iron"
+                  },
+                  {
+                    "label": "Arched Roof",
+                    "value": "Bounced Clean 1,200°C Heat Downward"
+                  },
+                  {
+                    "label": "Puddler’s Bar",
+                    "value": "Stirred Metal to Burn Off Carbon"
+                  }
+                ],
+                "takeaway": "At Funtley Ironworks near Fareham, Cort refined cheap British pig iron using abundant pit coal without letting sulphur smoke touch the metal."
+              },
+              {
+                "tab_label": "3. Grooved Rollers",
+                "title": "Water-Powered Grooved Rolling Cylinders",
+                "dates": "1783–1784 • Patent No. 1420",
+                "badge": "15× Faster",
+                "color": "#38bdf8",
+                "bg_color": "rgba(56, 189, 248, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Old Method",
+                    "value": "Slow Manual Forge Trip-Hammers"
+                  },
+                  {
+                    "label": "New Mechanism",
+                    "value": "Heavy Grooved Rollers Driven by River Meon"
+                  },
+                  {
+                    "label": "Slag Action",
+                    "value": "Squeezed Out Waste into Uniform Bars"
+                  }
+                ],
+                "takeaway": "Passing red-hot puddled blooms through grooved rollers expelled glassy slag and shaped standard iron bars fifteen times faster than hammering."
+              },
+              {
+                "tab_label": "4. 1787 Navy Trials",
+                "title": "Portsmouth Royal Dockyard Forge Tests",
+                "dates": "March 1787 • Admiralty Approval",
+                "badge": "400% Iron Surge",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Test Site",
+                    "value": "Portsmouth Dockyard Master Smiths"
+                  },
+                  {
+                    "label": "Stress Proof",
+                    "value": "Cold Corkscrew Twists & Sledgehammer Blows"
+                  },
+                  {
+                    "label": "Strategic Result",
+                    "value": "Beat Swedish Iron & Freed Royal Navy"
+                  }
+                ],
+                "takeaway": "Proving tougher than imported Swedish Orgrounds iron, Cort’s Hampshire process armoured Nelson’s fleet and built Britain’s bridges, mills, and railways."
+              }
+            ]
+          }
         },
         {
           "act": 4,
           "title": "Grooved Rollers & The Hampshire Archaeology (1783–1784)",
           "theme_heading": "Grooved Rollers & The Hampshire Archaeology (1783–1784)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1783, Cort patented a second revolutionary breakthrough: replacing slow, labour-intensive trip-hammers with steam-driven mechanical grooved cylinders. Passing red-hot puddled iron through these heavy rollers accelerated processing speeds fifteen-fold compared to traditional forge hammering.</p><p class=\"prose-p\">The tremendous rolling pressure compressed the metal, squeezing out slag impurities while shaping hot iron into standardized dimensions. Cort’s mechanized innovation established rapid, uniform naval bar production, supplying structural iron and bolts directly to the Royal Navy at Portsmouth Dockyard.</p>",
-          "image": "/images/isambard_kingdom_brunel.jpg",
-          "image_alt": "Iconic photograph of engineer Isambard Kingdom Brunel standing before the launching chains of the SS Great Eastern",
-          "caption": "Isambard Kingdom Brunel (1806–1859), master Victorian engineer whose iron bridges, railways, and steamships relied directly upon the mass-produced rolled iron techniques pioneered by Henry Cort (Robert Howlett, 1857 / National Portrait Gallery, NPG P110).",
+          "image": "/images/ks3_ind/ind_l1_b3_iron_grooved_rolling_mill_pass.jpg",
+          "image_alt": "Hand-coloured Regency technical engraving by J. Pass titled ROLLING MILL: Machines for rolling bars and plates of Iron (1826) showing six elevations of heavy geared flat and grooved iron rolling cylinders",
+          "caption": "J. Pass, Rolling Mill — Machines for Rolling Bars and Plates of Iron (Encyclopaedia Londinensis, 1826, Wellcome Collection V0024519): Geared collared and grooved iron cylinders (Figs. 5–6) of the type patented by Henry Cort at Funtley in 1783–1784 to squeeze out glassy slag and shape wrought-iron bars fifteen times faster than forge hammers.",
           "source": {
             "letter": "D",
             "title": "Source D (Patent Specification): Henry Cort, Patent Specification No. 1420 for Grooved Rollers (1784)",
@@ -779,7 +1048,10 @@ export default {
           ],
           "heading": "The Portsmouth Dockyard Trials & Naval Supremacy (1787–1800)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> In 1787, the Royal Navy subjected Cort’s Funtley iron to exhaustive Admiralty smith forge tests at Portsmouth Dockyard. Master naval blacksmiths twisted, bent, and hammered the iron bars under heavy drop-forges, proving they were tougher and more resilient than expensive Swedish imports.</p><p class=\"prose-p\">Blacksmiths forged massive, shatter-resistant anchors and hull fittings capable of withstanding ferocious ocean gales. Cort’s Hampshire invention granted Great Britain complete naval independence, supplying the indestructible iron fabric that forged the Victorian Empire.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> In 1787, the Royal Navy subjected Cort’s Funtley iron to exhaustive Admiralty smith forge tests at Portsmouth Dockyard. Master naval blacksmiths twisted, bent, and hammered the iron bars under heavy drop-forges, proving they were tougher and more resilient than expensive Swedish imports.</p><p class=\"prose-p\">Blacksmiths forged massive, shatter-resistant anchors and hull fittings capable of withstanding ferocious ocean gales. Cort’s Hampshire invention granted Great Britain complete naval independence, supplying the indestructible iron fabric that forged the Victorian Empire.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> In 1787, the Royal Navy subjected Cort’s Funtley iron to exhaustive Admiralty smith forge tests at Portsmouth Dockyard. Master naval blacksmiths twisted, bent, and hammered the iron bars under heavy drop-forges, proving they were tougher and more resilient than expensive Swedish imports.</p><p class=\"prose-p\">Blacksmiths forged massive, shatter-resistant anchors and hull fittings capable of withstanding ferocious ocean gales. Cort’s Hampshire invention granted Great Britain complete naval independence, supplying the indestructible iron fabric that forged the Victorian Empire.</p>",
+          "image": "/images/ks3_ind/ind_l1_b4_hms_victory_portsmouth_carmichael.jpg",
+          "image_alt": "John Wilson Carmichael oil painting showing the three-deck wooden warship HMS Victory and Royal Navy ships of the line anchored off Portsmouth and the Solent surrounded by naval longboats",
+          "caption": "John Wilson Carmichael, HMS \"Victory\" Anchored off the Isle of Wight (National Museum of the Royal Navy, Portsmouth): Following the decisive March 1787 Admiralty forge trials at Portsmouth Royal Dockyard, Henry Cort’s shatter-resistant Hampshire wrought iron forged the anchors, bolts, and hull fittings of Britain’s battle fleet."
         }
       ],
       "video": [
@@ -1287,8 +1559,8 @@ export default {
           "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
           "context": "Philipp Jakob de Loutherbourg’s 1801 painting captures the violent energy transition of the Industrial Revolution in Shropshire. Blast furnaces replaced tranquil rural darkness with 24-hour smoke and fire. **Hinge Question:** Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
           "hinge_question": "Why did the shift from water power to coal-fired blast furnaces transform both Britain’s physical landscape and the daily autonomy of its workers?",
-          "image": "/images/coalbrookdale_by_night.jpg",
-          "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London). The blast furnaces of Shropshire illuminating the dark landscape, symbolising the dawn of Britain’s coal and steam revolution.",
+          "image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+          "caption": "Source A: Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London 1952-446). Blazing coke-fired blast furnaces in Shropshire illuminating the night sky, symbolising Britain’s shift from woodland charcoal to coal-powered heavy industry.",
           "question_badge": "Source Inference",
           "question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
           "enquiry_question": "What does this dramatic night painting suggest about how industrial furnaces changed the English countryside?",
@@ -1299,7 +1571,8 @@ export default {
           },
           "id": "iae_l1_src_a",
           "type": "visual",
-          "src": "/images/coalbrookdale_by_night.jpg"
+          "src": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+          "image_alt": "Philipp Jakob de Loutherbourg’s 1801 oil painting Coalbrookdale by Night showing towering orange flames and smoke erupting from Shropshire coke-fired iron blast furnaces at night behind horse-drawn carts and cast-iron cylinders"
         },
         {
           "letter": "B",
@@ -1308,9 +1581,9 @@ export default {
           "title": "Source B (Visual Record): Carl Frederik von Breda, Portrait of James Watt with Steam Engine Drafting Plans (1792)",
           "context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
           "hinge_question": "Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
-          "image": "/images/james_watt.jpg",
-          "src": "/images/james_watt.jpg",
-          "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery, NPG 186a). Watt is shown contemplating his separate condenser steam engine, the mechanical breakthrough that powered the Industrial Revolution.",
+          "image": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
+          "src": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
+          "caption": "Source B: Carl Frederik von Breda, Portrait of James Watt (1792, National Portrait Gallery NPG 186a). Watt is shown seated beside mechanical blueprints of his separate condenser steam engine, the breakthrough that powered British mills and mines.",
           "question_badge": "Technological Transformation",
           "question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
           "enquiry_question": "How does this portrait depict James Watt’s contribution to Britain’s transition from water to steam power?",
@@ -1318,15 +1591,16 @@ export default {
           "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?",
           "teacher_notes": {
             "source_context": "Carl Frederik von Breda’s 1792 portrait depicts James Watt seated beside his drafting table, with mechanical engineering drawings of his separate condenser steam engine. **Hinge Question:** Why did Watt’s separate condenser liberate British factories from their dependence on remote river valleys?"
-          }
+          },
+          "image_alt": "Carl Frederik von Breda’s 1792 oil portrait of Scottish engineer James Watt seated in a dark suit resting his head on his hand beside technical engineering drawings of his separate condenser steam engine"
         },
         {
           "letter": "C",
           "title": "Source C (Technical Cross-Section): Cort’s Reverberatory Puddling Furnace at Funtley (1783)",
           "context": "Patent drawing cross-section of Henry Cort’s 1783 reverberatory puddling furnace at Funtley Ironworks, Hampshire. By reverberating flame from an arched brick ceiling down onto the hearth, Cort separated molten metal from sulphur-rich coal, solving Britain’s pig iron crisis. **Hinge Question:** How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
           "hinge_question": "How did separating coal fuel from refining metal in an arched air furnace solve the Royal Navy’s materials crisis?",
-          "image": "/images/funtley_ironworks.jpg",
-          "caption": "Source C: Technical cross-section diagram of Henry Cort’s reverberatory puddling furnace and grooved rolling mill at Funtley Ironworks in Hampshire (Patent No. 1420, 1784).",
+          "image": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
+          "caption": "Source C: Technical cross-section and plan of a reverberatory puddling furnace (Four à puddler, after Henry Cort’s 1783–1784 Funtley design), showing how the brick fire-bridge kept dirty coal separate while the low arched roof deflected intense heat onto the stirred molten iron.",
           "question_badge": "Technology & Change",
           "question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
           "enquiry_question": "How did Henry Cort's arched furnace design allow ironworkers to make pure, strong iron using British coal?",
@@ -1337,7 +1611,8 @@ export default {
           },
           "id": "iae_l1_src_c",
           "type": "visual",
-          "src": "/images/funtley_ironworks.jpg"
+          "src": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
+          "image_alt": "Technical cross-section and plan engraving of a reverberatory puddling furnace (Four à puddler) showing the separate coal fire-grate on the left, brick bridge wall, arched reverberating roof over the central molten iron hearth, and tall flue chimney on the right"
         },
         {
           "letter": "D",
@@ -1393,7 +1668,7 @@ export default {
         "topicLabel": "Coal, Steam & Hampshire Iron",
         "title": "What Powered the Industrial Revolution, and How Did a Fareham Ironmaster Change the World?",
         "spokenTitle": "What powered the Industrial Revolution, and how did a Fareham ironmaster change the world?",
-        "thumbUrl": "/images/coalbrookdale_by_night.jpg",
+        "thumbUrl": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
         "provenanceNote": "Verified museum plates from the Science Museum Group, National Archives, and National Maritime Museum.",
         "bridges": [
           "Watt’s rotary steam →",
@@ -1407,7 +1682,7 @@ export default {
             "badge": "Stage 1",
             "heading": "Wood Shortage & Pig Iron",
             "date": "1750–1770",
-            "img": "/images/coalbrookdale_by_night.jpg",
+            "img": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
             "mode": "landscape",
             "stat": "Brittle Coal Iron Forced Costly Swedish Imports",
             "html": "Smelting iron stripped Britain’s <strong>oak forests</strong> bare. Early coal furnaces made brittle <strong>pig iron</strong>, forcing the Royal Navy to buy costly <strong>Swedish iron</strong>.",
@@ -1419,7 +1694,7 @@ export default {
             "badge": "Stage 2",
             "heading": "James Watt’s Rotary Steam",
             "date": "1769–1781",
-            "img": "/images/james_watt.jpg",
+            "img": "/images/ks3_ind/ind_l1_s1_james_watt_breda_1792.jpg",
             "mode": "contain",
             "stat": "1769 Separate Condenser Freed Mills from Rivers",
             "html": "In <strong>1769</strong>, <strong>James Watt</strong> cut coal waste with a separate condenser. With Matthew Boulton, his <strong>rotary steam engine</strong> freed factories from rivers.",
@@ -1431,7 +1706,7 @@ export default {
             "badge": "Stage 3",
             "heading": "Cort’s Puddling at Funtley",
             "date": "1775–1784",
-            "img": "/images/funtley_ironworks.jpg",
+            "img": "/images/ks3_ind/ind_l1_s2_reverberatory_puddling_furnace.jpg",
             "mode": "contain-light",
             "stat": "Stirring Molten Iron Burned Out Carbon & Sulphur",
             "html": "At <strong>Funtley</strong> near Fareham, <strong>Henry Cort</strong> kept coal smoke away from melted metal. Stirring the molten puddle turned brittle metal into tough <strong>wrought iron</strong>.",
@@ -1497,11 +1772,14 @@ export default {
       "vocab_cloze_text": "During the [Industrial Revolution], steam power transformed cottage craftwork, yet Britain still relied on imported iron because furnace [Pig Iron] was too brittle. At Funtley near Fareham in 1783–84, [Henry Cort] invented the coal-fired [Puddling Process] and [Grooved Rolling Mill] to mass-produce strong [Wrought Iron], proven in 1787 naval trials at Portsmouth Dockyard.",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg",
-        "caption": "The Iron Bridge, Coalbrookdale",
-        "position": "center 30%"
+        "alt": "Eighteenth-century watercolour of the cast-iron arch of the Iron Bridge spanning the River Severn at Coalbrookdale in Shropshire with pack-donkeys on the bank and river barges below",
+        "caption": "Thomas Frederick Burney, The Iron Bridge, Coalbrookdale (c. 1780s, Yale Center for British Art B1981.25.2406): World’s first major cast-iron arch bridge across the River Severn Gorge, symbolising Britain’s transition from timber to coal and iron.",
+        "position": "center 52%"
       },
       "banner_image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg",
-      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg"
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l1_banner_iron_bridge_coalbrookdale.jpg",
+      "banner_position": "center 52%",
+      "card_image": "/images/ks3_ind/ind_l1_card_wright_iron_forge_1772.jpg"
     },
     {
       "id": "lesson_2",
@@ -1919,8 +2197,8 @@ export default {
             "title": "Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)",
             "context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
             "hinge_question": "How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
-            "image": "/images/19th_century_mill.jpg",
-            "caption": "Source A: Thomas Allom, Powerloom Weaving (1835, Science Museum). A steam-driven Lancashire textile mill showing children working as scavengers beneath clattering powerlooms under the supervision of an overseer.",
+            "image": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
+            "caption": "Source A: Thomas Allom, Powerloom Weaving (engraved by J. Tingle for Edward Baines’s History of the Cotton Manufacture in Great Britain, 1835). Steam-driven powerlooms inside a Lancashire cotton mill operating continuously under overhead drive belts and an overlooker’s supervision.",
             "question_badge": "Source Inference",
             "question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
             "enquiry_question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
@@ -1931,7 +2209,8 @@ export default {
             },
             "id": "iae_l2_src_a",
             "type": "visual",
-            "src": "/images/19th_century_mill.jpg"
+            "src": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
+            "image_alt": "Thomas Allom’s 1835 steel engraving Powerloom Weaving showing ranks of belt-driven iron powerlooms stretching down a vast Lancashire cotton weaving shed tended by female operatives under a male overlooker’s watch"
           },
           "sources": [
             {
@@ -1939,8 +2218,8 @@ export default {
               "title": "Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)",
               "context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
               "hinge_question": "How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
-              "image": "/images/19th_century_mill.jpg",
-              "caption": "Source A: Thomas Allom, Powerloom Weaving (1835, Science Museum). A steam-driven Lancashire textile mill showing children working as scavengers beneath clattering powerlooms under the supervision of an overseer.",
+              "image": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
+              "caption": "Source A: Thomas Allom, Powerloom Weaving (engraved by J. Tingle for Edward Baines’s History of the Cotton Manufacture in Great Britain, 1835). Steam-driven powerlooms inside a Lancashire cotton mill operating continuously under overhead drive belts and an overlooker’s supervision.",
               "question_badge": "Source Inference",
               "question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
               "enquiry_question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
@@ -1951,12 +2230,16 @@ export default {
               },
               "id": "iae_l2_src_a",
               "type": "visual",
-              "src": "/images/19th_century_mill.jpg"
+              "src": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
+              "image_alt": "Thomas Allom’s 1835 steel engraving Powerloom Weaving showing ranks of belt-driven iron powerlooms stretching down a vast Lancashire cotton weaving shed tended by female operatives under a male overlooker’s watch"
             }
           ],
           "heading": "The Death of Domestic Crafts & Rise of the Mill (1780–1820)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> The Industrial Revolution permanently reshaped how ordinary Britons lived, worked, and survived. For generations, textile production was organized around domestic home handlooms in rural cottages, where independent weaving families controlled their own daily hours and working rhythms.</p><p class=\"prose-p\">Steam power rapidly replaced family cottages with centralised steam factories housing hundreds of powerlooms. Factory operatives surrendered their customary independence to relentless machine speed, forced to subordinate their bodies to the tireless, unbroken pace of steam engines from sunrise to sunset.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> The Industrial Revolution permanently reshaped how ordinary Britons lived, worked, and survived. For generations, textile production was organized around domestic home handlooms in rural cottages, where independent weaving families controlled their own daily hours and working rhythms.</p><p class=\"prose-p\">Steam power rapidly replaced family cottages with centralised steam factories housing hundreds of powerlooms. Factory operatives surrendered their customary independence to relentless machine speed, forced to subordinate their bodies to the tireless, unbroken pace of steam engines from sunrise to sunset.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> The Industrial Revolution permanently reshaped how ordinary Britons lived, worked, and survived. For generations, textile production was organized around domestic home handlooms in rural cottages, where independent weaving families controlled their own daily hours and working rhythms.</p><p class=\"prose-p\">Steam power rapidly replaced family cottages with centralised steam factories housing hundreds of powerlooms. Factory operatives surrendered their customary independence to relentless machine speed, forced to subordinate their bodies to the tireless, unbroken pace of steam engines from sunrise to sunset.</p>",
+          "image": "/images/ks3_ind/ind_l2_b0_hincks_handloom_weaving_1783.jpg",
+          "image_alt": "William Hincks 1783 stipple engraving showing an independent domestic weaver seated inside a timber-roofed cottage working a wooden handloom alongside family members winding bobbins, operating a warping frame, and spinning at a wheel",
+          "caption": "William Hincks, Winding, Warping, and Domestic Handloom Weaving (20 June 1783, Library of Congress): Before centralised steam mills, rural families wove cloth on wooden handlooms inside their own cottages and controlled their own daily working hours."
         },
         {
           "act": 2,
@@ -1983,9 +2266,9 @@ export default {
             "src": "",
             "image": ""
           },
-          "image": "/images/spinning_mule.jpg",
-          "image_alt": "Portrait of Samuel Crompton with his revolutionary spinning mule machine",
-          "caption": "Samuel Crompton (1753–1827) and his 1779 Spinning Mule, the revolutionary hybrid machine that combined the roller drafting of Arkwright with the carriage action of Hargreaves to produce unprecedented quantities of yarn (Library of Congress, LC-USZ62-96488).",
+          "image": "/images/ks3_ind/ind_l2_b1_crompton_spinning_mule_mill.jpg",
+          "image_alt": "Thomas Allom 1834 steel engraving titled MULE SPINNING showing long belt-driven rows of Samuel Crompton spinning mules under iron roof trusses inside a Lancashire cotton mill while a young child scavenger crawls on hands and knees with a brush beneath the moving frame",
+          "caption": "Thomas Allom, Mule Spinning (engraved by J. W. Lowry, 1834, Wellcome Collection V0024077): Overhead belt line-shafting drove hundreds of whirling spinning-mule spindles in sweltering, dust-filled rooms governed by the factory clock—note the barefoot child scavenger sweeping beneath the moving frame at lower right.",
           "sources": [
             {
               "letter": "B",
@@ -2022,8 +2305,8 @@ export default {
             "title": "Source C (Visual Record): Contemporary Engraving of Factory Child Labour (1840)",
             "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
             "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
-            "image": "/images/child_labour.jpg",
-            "caption": "Source C: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
+            "image": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+            "caption": "Source C: Auguste Hervieu, \"Love Conquered Fear\" (April 1839 plate from Frances Trollope’s The Life and Adventures of Michael Armstrong, the Factory Boy, 1840), depicting barefoot child operatives and a tiny scavenger girl crawling beneath moving spinning-mule machinery.",
             "question_badge": "Propaganda & Persuasion",
             "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
             "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
@@ -2034,7 +2317,8 @@ export default {
             },
             "id": "iae_l2_src_c",
             "type": "visual",
-            "src": "/images/child_labour.jpg"
+            "src": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+            "image_alt": "Auguste Hervieu’s April 1839 etching Love Conquered Fear from Frances Trollope’s Michael Armstrong showing ragged child workers embracing beside a whirling cotton spinning mule while a tiny girl scavenger crawls on hands and knees beneath the moving frame and gentlemen in top hats look on"
           },
           "sources": [
             {
@@ -2042,8 +2326,8 @@ export default {
               "title": "Source C (Visual Record): Contemporary Engraving of Factory Child Labour (1840)",
               "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
               "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
-              "image": "/images/child_labour.jpg",
-              "caption": "Source C: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
+              "image": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+              "caption": "Source C: Auguste Hervieu, \"Love Conquered Fear\" (April 1839 plate from Frances Trollope’s The Life and Adventures of Michael Armstrong, the Factory Boy, 1840), depicting barefoot child operatives and a tiny scavenger girl crawling beneath moving spinning-mule machinery.",
               "question_badge": "Propaganda & Persuasion",
               "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
               "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
@@ -2054,12 +2338,16 @@ export default {
               },
               "id": "iae_l2_src_c",
               "type": "visual",
-              "src": "/images/child_labour.jpg"
+              "src": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+              "image_alt": "Auguste Hervieu’s April 1839 etching Love Conquered Fear from Frances Trollope’s Michael Armstrong showing ragged child workers embracing beside a whirling cotton spinning mule while a tiny girl scavenger crawls on hands and knees beneath the moving frame and gentlemen in top hats look on"
             }
           ],
           "heading": "Pauper Apprentices & Northern Textile Exploitation (1810–1832)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Mill owners relied heavily on vulnerable child labour to maximize commercial factory profits. Poor Law parish authorities engaged in systemic workhouse apprentice trafficking, transporting destitute orphans from southern workhouses to northern mills as indentured factory hands without parental protection.</p><p class=\"prose-p\">Employed as scavengers, tiny children spent long shifts crawling under spinning mules to gather loose cotton beneath moving machinery. Catastrophic factory injuries were routine, resulting in crushed fingers & hair scalpings beneath heavy, unguarded iron gears and belts.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Mill owners relied heavily on vulnerable child labour to maximize commercial factory profits. Poor Law parish authorities engaged in systemic workhouse apprentice trafficking, transporting destitute orphans from southern workhouses to northern mills as indentured factory hands without parental protection.</p><p class=\"prose-p\">Employed as scavengers, tiny children spent long shifts crawling under spinning mules to gather loose cotton beneath moving machinery. Catastrophic factory injuries were routine, resulting in crushed fingers & hair scalpings beneath heavy, unguarded iron gears and belts.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Mill owners relied heavily on vulnerable child labour to maximize commercial factory profits. Poor Law parish authorities engaged in systemic workhouse apprentice trafficking, transporting destitute orphans from southern workhouses to northern mills as indentured factory hands without parental protection.</p><p class=\"prose-p\">Employed as scavengers, tiny children spent long shifts crawling under spinning mules to gather loose cotton beneath moving machinery. Catastrophic factory injuries were routine, resulting in crushed fingers & hair scalpings beneath heavy, unguarded iron gears and belts.</p>",
+          "image": "/images/ks3_ind/ind_l2_b2_pauper_apprentices_deep_valley_1840.jpg",
+          "image_alt": "1839 etching from Frances Trollope’s Michael Armstrong titled Make haste young un or they wont leave a turnip paring for us showing barefoot ragged pauper apprentice children scrambling on hands and knees beside pigs to eat scraps from a wooden trough outside Deep Valley Mill",
+          "caption": "Starving Pauper Apprentices Scrambling at the Pig Trough at \"Deep Valley Mill\" (Frances Trollope, The Life and Adventures of Michael Armstrong, the Factory Boy, July 1839): Grounded in Robert Blincoe’s real testimony of parish workhouse orphans trafficked north into isolated cotton mills."
         },
         {
           "act": 4,
@@ -2110,7 +2398,103 @@ export default {
           ],
           "heading": "The Sadler Committee & Matthew Crabtree’s Testimony (1832)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In 1832, parliamentary investigations laid bare the terrifying physical toll of industrial employment on young children. Former child operative Matthew Crabtree testified before Michael Sadler’s parliamentary committee, recounting his sixteen-hour daily fatigue in Yorkshire textile mills from eight years old.</p><p class=\"prose-p\">Crabtree described brutal overlooker leather strap beatings administered to exhausted children who slowed down. Constant physical strain produced permanent spinal stunting, bowed legs, and lifelong bodily deformities across entire generations of British factory workers.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In 1832, parliamentary investigations laid bare the terrifying physical toll of industrial employment on young children. Former child operative Matthew Crabtree testified before Michael Sadler’s parliamentary committee, recounting his sixteen-hour daily fatigue in Yorkshire textile mills from eight years old.</p><p class=\"prose-p\">Crabtree described brutal overlooker leather strap beatings administered to exhausted children who slowed down. Constant physical strain produced permanent spinal stunting, bowed legs, and lifelong bodily deformities across entire generations of British factory workers.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In 1832, parliamentary investigations laid bare the terrifying physical toll of industrial employment on young children. Former child operative Matthew Crabtree testified before Michael Sadler’s parliamentary committee, recounting his sixteen-hour daily fatigue in Yorkshire textile mills from eight years old.</p><p class=\"prose-p\">Crabtree described brutal overlooker leather strap beatings administered to exhausted children who slowed down. Constant physical strain produced permanent spinal stunting, bowed legs, and lifelong bodily deformities across entire generations of British factory workers.</p>",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Year 8 Historical Interpretations",
+            "title": "Progress or Punishment? The 1832 Sadler Committee Debate",
+            "default_index": 1,
+            "caption": "Slide or click across the three viewpoints to judge whether early cotton mills brought national progress, human punishment, or urgent legal reform.",
+            "stops": [
+              {
+                "short_label": "1. Optimist View",
+                "label": "The Optimist View (Industrial Boom)",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "summary": "Mill owners and free-market defenders argued steam factories multiplied cloth output, lowered prices for ordinary families, and made Britain the 'Workshop of the World'.",
+                "traits": [
+                  {
+                    "category": "Production Leap",
+                    "glyph": "clothes",
+                    "value": "Cheap Mass-Produced Cotton Cloth for Millions"
+                  },
+                  {
+                    "category": "Steady Pay",
+                    "glyph": "people",
+                    "value": "Year-Round Factory Wages vs Seasonal Farm Work"
+                  },
+                  {
+                    "category": "Owner Argument",
+                    "glyph": "leader",
+                    "value": "Laissez-Faire Freedom Kept British Trade Ahead"
+                  },
+                  {
+                    "category": "Blind Spot",
+                    "glyph": "law",
+                    "value": "Ignored Exhaustion, Fines & Unguarded Gears"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. 1833 Factory Act",
+                "label": "Reform Through Law (1833)",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "Shocked by Michael Sadler’s 1832 Parliamentary Committee, Lord Ashley (Earl of Shaftesbury) proved Parliament had to step in and regulate private mill owners by law.",
+                "traits": [
+                  {
+                    "category": "Age Limit",
+                    "glyph": "law",
+                    "value": "Banned Children Under 9 in Textile Mills"
+                  },
+                  {
+                    "category": "Shift Cap",
+                    "glyph": "people",
+                    "value": "Max 8-Hour Day for Ages 9–13 + 2 Hours’ School"
+                  },
+                  {
+                    "category": "Enforcement",
+                    "glyph": "leader",
+                    "value": "Four Paid Factory Inspectors Appointed"
+                  },
+                  {
+                    "category": "Turning Point",
+                    "glyph": "language",
+                    "value": "Broke Pure Laissez-Faire to Protect Children"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Pessimist View",
+                "label": "The Pessimist View (Human Cost)",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "summary": "Workers and witnesses like former child operative Matthew Crabtree testified that industrial wealth was bought with stolen childhoods, beatings, and crippled bodies.",
+                "traits": [
+                  {
+                    "category": "Factory Clock",
+                    "glyph": "law",
+                    "value": "14–16 Hour Shifts in 80°F Locked Rooms & Fines"
+                  },
+                  {
+                    "category": "Child Scavengers",
+                    "glyph": "clothes",
+                    "value": "Workhouse Orphans Crawling Under Moving Mules"
+                  },
+                  {
+                    "category": "Brutal Discipline",
+                    "glyph": "leader",
+                    "value": "Leather-Strap Beatings for Exhausted Children"
+                  },
+                  {
+                    "category": "Lifelong Harm",
+                    "glyph": "people",
+                    "value": "Crushed Fingers, Cotton Lung & Bowed Legs"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 5,
@@ -2142,9 +2526,9 @@ export default {
             "src": "",
             "image": ""
           },
-          "image": "/images/lord_shaftesbury.jpg",
-          "image_alt": "Portrait of Anthony Ashley-Cooper, 7th Earl of Shaftesbury, factory reformer",
-          "caption": "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (Lord Ashley, 1801–1885), reform politician who championed the Ten Hours Movement and led the parliamentary crusade against child factory labour (George Frederic Watts, 1862 / National Portrait Gallery, NPG 1012).",
+          "image": "/images/ks3_ind/ind_l2_b4_lord_shaftesbury_watts_npg.jpg",
+          "image_alt": "Oil portrait by George Frederic Watts of factory reformer Anthony Ashley-Cooper, 7th Earl of Shaftesbury in dark coat and white collar",
+          "caption": "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (Lord Ashley, 1801–1885), painted by George Frederic Watts (National Portrait Gallery NPG 1012): Parliamentary leader of the Ten Hours Movement who championed the landmark 1833 Factory Act, the 1842 Mines Act, and statutory factory inspection.",
           "sources": [
             {
               "letter": "E",
@@ -2633,8 +3017,8 @@ export default {
           "title": "Source A (Visual Record): Powerloom Weaving in a Lancashire Cotton Mill (1835)",
           "context": "Thomas Allom’s 1835 engraving captures the deafening, machine-dominated landscape of a steam-driven cotton mill. Small children work as scavengers and piecers under fast-moving, unguarded drive belts and looms. **Hinge Question:** How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
           "hinge_question": "How does the physical danger of child labour in steam factories illustrate the human cost of industrial mechanization?",
-          "image": "/images/19th_century_mill.jpg",
-          "caption": "Source A: Thomas Allom, Powerloom Weaving (1835, Science Museum). A steam-driven Lancashire textile mill showing children working as scavengers beneath clattering powerlooms under the supervision of an overseer.",
+          "image": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
+          "caption": "Source A: Thomas Allom, Powerloom Weaving (engraved by J. Tingle for Edward Baines’s History of the Cotton Manufacture in Great Britain, 1835). Steam-driven powerlooms inside a Lancashire cotton mill operating continuously under overhead drive belts and an overlooker’s supervision.",
           "question_badge": "Source Inference",
           "question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
           "enquiry_question": "What can you learn from this engraving about the dangers faced by children working in steam-powered mills?",
@@ -2645,7 +3029,8 @@ export default {
           },
           "id": "iae_l2_src_a",
           "type": "visual",
-          "src": "/images/19th_century_mill.jpg"
+          "src": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
+          "image_alt": "Thomas Allom’s 1835 steel engraving Powerloom Weaving showing ranks of belt-driven iron powerlooms stretching down a vast Lancashire cotton weaving shed tended by female operatives under a male overlooker’s watch"
         },
         {
           "letter": "B",
@@ -2672,8 +3057,8 @@ export default {
           "title": "Source C (Visual Record): Contemporary Engraving of Factory Child Labour (1840)",
           "context": "An 1840 illustration from Frances Trollope’s Michael Armstrong, the Factory Boy. Visual exposés published in Victorian popular fiction campaigned alongside parliamentary reports to mobilize public outrage against child labour. **Hinge Question:** Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
           "hinge_question": "Why were visual depictions of child labour often more politically powerful in shifting public opinion than dry statistical reports?",
-          "image": "/images/child_labour.jpg",
-          "caption": "Source C: Contemporary 1840 illustration from Frances Trollope’s novel The Life and Adventures of Michael Armstrong, depicting child scavengers crawling under spinning machinery as an overseer looks on.",
+          "image": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+          "caption": "Source C: Auguste Hervieu, \"Love Conquered Fear\" (April 1839 plate from Frances Trollope’s The Life and Adventures of Michael Armstrong, the Factory Boy, 1840), depicting barefoot child operatives and a tiny scavenger girl crawling beneath moving spinning-mule machinery.",
           "question_badge": "Propaganda & Persuasion",
           "question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
           "enquiry_question": "How did book illustrations like this persuade ordinary British people to demand an end to child labour?",
@@ -2684,7 +3069,8 @@ export default {
           },
           "id": "iae_l2_src_c",
           "type": "visual",
-          "src": "/images/child_labour.jpg"
+          "src": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+          "image_alt": "Auguste Hervieu’s April 1839 etching Love Conquered Fear from Frances Trollope’s Michael Armstrong showing ragged child workers embracing beside a whirling cotton spinning mule while a tiny girl scavenger crawls on hands and knees beneath the moving frame and gentlemen in top hats look on"
         },
         {
           "letter": "D",
@@ -2740,7 +3126,7 @@ export default {
         "topicLabel": "Factory Discipline & Child Labour",
         "title": "Was Industrial Work Progress or Punishment for Ordinary British Families?",
         "spokenTitle": "Was industrial work progress or punishment for ordinary British families?",
-        "thumbUrl": "/images/19th_century_mill.jpg",
+        "thumbUrl": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
         "provenanceNote": "Verified engravings and portraits from the British Museum, National Archives, and Library of Congress.",
         "bridges": [
           "Strict factory clocks →",
@@ -2754,7 +3140,7 @@ export default {
             "badge": "Stage 1",
             "heading": "From Cottage Looms to Mills",
             "date": "1780–1820",
-            "img": "/images/19th_century_mill.jpg",
+            "img": "/images/ks3_ind/ind_l2_s0_allom_powerloom_weaving_1835.jpg",
             "mode": "landscape",
             "stat": "Steam Powerlooms Ended Independent Home Weaving",
             "html": "Rural families once wove cloth on <strong>home handlooms</strong> at their own pace. Giant <strong>steam factories</strong> forced workers to match tireless <strong>machine speed</strong> all day.",
@@ -2778,7 +3164,7 @@ export default {
             "badge": "Stage 3",
             "heading": "Orphan Child Scavengers",
             "date": "1810–1832",
-            "img": "/images/child_labour.jpg",
+            "img": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
             "mode": "contain-light",
             "stat": "Workhouse Orphans Crawled Under Moving Gears",
             "html": "Parishes sent poor <strong>workhouse orphans</strong> north to tend spinning mules. Tiny <strong>scavengers</strong> crawled under moving gears, suffering <strong>crushed fingers</strong> and scalpings.",
@@ -2815,7 +3201,7 @@ export default {
             "isOutcome": true,
             "heading": "Booming Output, Human Cost",
             "date": "1780–1850",
-            "img": "/images/coalbrookdale_by_night.jpg",
+            "img": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
             "mode": "landscape",
             "stat": "Cheap Cloth Enriched Britain at Heavy Human Cost",
             "html": "Factories made Britain rich with <strong>cheap cloth</strong>, yet early workers paid in <strong>broken health</strong>. The <strong>1833 Act</strong> began state limits on private owners.",
@@ -2843,11 +3229,14 @@ export default {
       "vocab_cloze_text": "As steam-powered [Textile Mill] factories and clay [Pug Mill] brickworks baking [Fareham Reds] expanded, employers relied heavily on cheap [Child Labour] working fourteen-hour shifts amid unguarded machinery. Destitute families dreaded the parish [Workhouse], leaving orphan apprentices trapped under strict factory clocks. Shocking 1832 evidence finally persuaded Parliament to pass the 1833 [Factory Acts] limiting child hours and appointing inspectors.",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg",
-        "caption": "Quarry Bank Cotton Mill, Styal, Cheshire (founded 1784)",
-        "position": "center 30%"
+        "alt": "Four-storey Georgian red-brick cotton spinning mill building and tall brick steam chimney of Quarry Bank Mill beside the River Bollin at Styal in Cheshire",
+        "caption": "Quarry Bank Mill, Styal, Cheshire (founded by Samuel Greg in 1784): Preserved multi-storey red-brick textile factory where waterwheels, Boulton & Watt steam engines, and pauper apprentices drove relentless cotton production.",
+        "position": "center 42%"
       },
       "banner_image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg",
-      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg"
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l2_banner_quarry_bank_mill.jpg",
+      "banner_position": "center 42%",
+      "card_image": "/images/ks3_ind/ind_l2_card_dinner_hour_wigan_1874.jpg"
     },
     {
       "id": "lesson_3",
@@ -3309,8 +3698,8 @@ export default {
             "title": "Source A (Visual Record): Gustave Doré, Over London by Rail (1872)",
             "context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
             "hinge_question": "Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
-            "image": "/images/victorian_slum.jpg",
-            "caption": "Source A: Gustave Doré, Over London by Rail (1872). A wood engraving illustrating the suffocating density of back-to-back tenements in industrial London under railway viaducts.",
+            "image": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+            "caption": "Source A: Gustave Doré, Over London—By Rail (from London: A Pilgrimage, 1872, Yale Center for British Art). Wood engraving capturing the suffocating density of cramped, smoke-choked working-class tenements and tiny walled yards beneath Victorian railway viaducts.",
             "question_badge": "Source Inference",
             "question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
             "enquiry_question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
@@ -3321,7 +3710,8 @@ export default {
             },
             "id": "iae_l3_src_a",
             "type": "visual",
-            "src": "/images/victorian_slum.jpg"
+            "src": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+            "image_alt": "Gustave Doré’s 1872 wood engraving Over London—By Rail looking from beneath a brick railway arch across densely packed rows of smoky back-to-back Victorian terrace yards hung with laundry beneath a passing steam train"
           },
           "sources": [
             {
@@ -3329,8 +3719,8 @@ export default {
               "title": "Source A (Visual Record): Gustave Doré, Over London by Rail (1872)",
               "context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
               "hinge_question": "Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
-              "image": "/images/victorian_slum.jpg",
-              "caption": "Source A: Gustave Doré, Over London by Rail (1872). A wood engraving illustrating the suffocating density of back-to-back tenements in industrial London under railway viaducts.",
+              "image": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+              "caption": "Source A: Gustave Doré, Over London—By Rail (from London: A Pilgrimage, 1872, Yale Center for British Art). Wood engraving capturing the suffocating density of cramped, smoke-choked working-class tenements and tiny walled yards beneath Victorian railway viaducts.",
               "question_badge": "Source Inference",
               "question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
               "enquiry_question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
@@ -3341,12 +3731,16 @@ export default {
               },
               "id": "iae_l3_src_a",
               "type": "visual",
-              "src": "/images/victorian_slum.jpg"
+              "src": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+              "image_alt": "Gustave Doré’s 1872 wood engraving Over London—By Rail looking from beneath a brick railway arch across densely packed rows of smoky back-to-back Victorian terrace yards hung with laundry beneath a passing steam train"
             }
           ],
           "heading": "The Slum Explosion: Back-to-Back Courts & Cellars (1800–1830)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> Between 1800 and 1850, explosive urban migration completely overwhelmed Britain's northern industrial towns. Millions of rural families flooded into Manchester, Leeds, and Sheffield seeking factory employment, sparking an unchecked boom in unregulated speculative building by private landlords.</p><p class=\"prose-p\">Greedy builders packed rows of back-to-back dwellings along narrow, sunless courts, featuring windowless shared party walls that prevented ventilation. The poorest families rented damp, flooded earthen cellars beneath street level, where contaminated sewage seeped directly through porous brick walls.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> Between 1800 and 1850, explosive urban migration completely overwhelmed Britain's northern industrial towns. Millions of rural families flooded into Manchester, Leeds, and Sheffield seeking factory employment, sparking an unchecked boom in unregulated speculative building by private landlords.</p><p class=\"prose-p\">Greedy builders packed rows of back-to-back dwellings along narrow, sunless courts, featuring windowless shared party walls that prevented ventilation. The poorest families rented damp, flooded earthen cellars beneath street level, where contaminated sewage seeped directly through porous brick walls.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> Between 1800 and 1850, explosive urban migration completely overwhelmed Britain's northern industrial towns. Millions of rural families flooded into Manchester, Leeds, and Sheffield seeking factory employment, sparking an unchecked boom in unregulated speculative building by private landlords.</p><p class=\"prose-p\">Greedy builders packed rows of back-to-back dwellings along narrow, sunless courts, featuring windowless shared party walls that prevented ventilation. The poorest families rented damp, flooded earthen cellars beneath street level, where contaminated sewage seeped directly through porous brick walls.</p>",
+          "image": "/images/ks3_ind/ind_l3_b0_industrial_slum_court_annan.jpg",
+          "image_alt": "Thomas Annan 1868 albumen photograph looking down the narrow, canyon-like cobbled alley of Broad Close, No. 167 High Street lined by tall, soot-darkened tenement walls, open drainage gutters, and poles hung with drying washing",
+          "caption": "Thomas Annan, Broad Close, No. 167 High Street (1868): Narrow, airless urban tenement closes and back-to-back slum courts packed working-class families around damp cellars and open street gutters with almost no sunlight or fresh ventilation."
         },
         {
           "act": 2,
@@ -3395,7 +3789,108 @@ export default {
           ],
           "heading": "Cesspools, Privies & Contaminated Pumps (1830–1840)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Rapid urban growth completely outstripped primitive municipal sanitation arrangements across industrial towns. Dozens of families shared a single overflowing outdoor earth closet, resulting in disgusting shared privy overflow across communal alleyways and public courtyards where children played.</p><p class=\"prose-p\">Human waste accumulated into towering nightsoil dunghills that festered beside front doors for months before disposal. Heavy rain washed waste deep into the earth, seeping groundwater wells from which local residents drew their daily drinking and cooking water.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Rapid urban growth completely outstripped primitive municipal sanitation arrangements across industrial towns. Dozens of families shared a single overflowing outdoor earth closet, resulting in disgusting shared privy overflow across communal alleyways and public courtyards where children played.</p><p class=\"prose-p\">Human waste accumulated into towering nightsoil dunghills that festered beside front doors for months before disposal. Heavy rain washed waste deep into the earth, seeping groundwater wells from which local residents drew their daily drinking and cooking water.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Rapid urban growth completely outstripped primitive municipal sanitation arrangements across industrial towns. Dozens of families shared a single overflowing outdoor earth closet, resulting in disgusting shared privy overflow across communal alleyways and public courtyards where children played.</p><p class=\"prose-p\">Human waste accumulated into towering nightsoil dunghills that festered beside front doors for months before disposal. Heavy rain washed waste deep into the earth, seeping groundwater wells from which local residents drew their daily drinking and cooking water.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 8 Public Health Mechanism",
+            "title": "Why Laissez-Faire & Miasma Theory Failed Industrial Towns (1800–1854)",
+            "default_index": 0,
+            "caption": "Click each factor to see why booming Victorian factory towns became deadly cholera traps before clean water and interceptor sewers were built.",
+            "items": [
+              {
+                "tab_label": "1. Back-to-Back Slums",
+                "title": "Unregulated Speculative Slum Building",
+                "dates": "1800–1840 • Zero Building Rules",
+                "badge": "Airless Courts",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Urban Surge",
+                    "value": "Millions Crowded into Manchester, Leeds & London"
+                  },
+                  {
+                    "label": "Housing Type",
+                    "value": "Windowless Shared-Wall Back-to-Backs"
+                  },
+                  {
+                    "label": "Poorest Homes",
+                    "value": "Flooded Underground Cellars Oozing Sewage"
+                  }
+                ],
+                "takeaway": "With zero housing laws, private landlords crammed families into sunless courts and damp cellars right beside smoking mills."
+              },
+              {
+                "tab_label": "2. Poisoned Pumps",
+                "title": "Overflowing Privies & Contaminated Wells",
+                "dates": "1830–1854 • Hidden Water Danger",
+                "badge": "Sewage Seepage",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Shared Toilets",
+                    "value": "Dozens of Families to One Outdoor Earth Privy"
+                  },
+                  {
+                    "label": "Courtyard Filth",
+                    "value": "Towering Nightsoil Dunghills Left for Months"
+                  },
+                  {
+                    "label": "Deadly Link",
+                    "value": "Rain Washed Cesspool Waste into Drinking Wells"
+                  }
+                ],
+                "takeaway": "Families unknowingly pumped invisible cholera bacteria into their kettles and cups from shallow street wells next to leaking cesspools."
+              },
+              {
+                "tab_label": "3. Miasma Mistake",
+                "title": "Blaming 'Bad Air' Instead of Dirty Water",
+                "dates": "Pre-1854 • Medical Misunderstanding",
+                "badge": "Wrong Cause",
+                "color": "#a855f7",
+                "bg_color": "rgba(168, 85, 247, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Miasma Belief",
+                    "value": "Thought Foul Smells Spread Cholera & Typhus"
+                  },
+                  {
+                    "label": "Flawed Fix",
+                    "value": "Flushed Cesspools Straight into Drinking Rivers"
+                  },
+                  {
+                    "label": "1854 Breakthrough",
+                    "value": "Dr John Snow Mapped Soho’s Broad Street Pump"
+                  }
+                ],
+                "takeaway": "Because Victorian doctors could not yet prove germ theory, flushing foul smells into rivers often poisoned downstream drinking water even worse."
+              },
+              {
+                "tab_label": "4. Laissez-Faire Crack",
+                "title": "Ratepayer Resistance vs Cholera & Chadwick",
+                "dates": "1831–1848 • End of 'Leave Well Alone'",
+                "badge": "State Action",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Ratepayer Fear",
+                    "value": "Wealthy Voters Resisted Taxes for Poor Slums"
+                  },
+                  {
+                    "label": "1842 Evidence",
+                    "value": "Chadwick: 19-Yr Manchester Life vs 38 in Rutland"
+                  },
+                  {
+                    "label": "1858 Catalyst",
+                    "value": "'Great Stink' Forced MPs to Fund Bazalgette’s Sewers"
+                  }
+                ],
+                "takeaway": "Once cholera struck rich streets too and the 1858 Thames stench choked Westminster, Parliament abandoned laissez-faire and funded 82 miles of brick sewers."
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -3423,8 +3918,8 @@ export default {
             "image": ""
           },
           "image": "/images/snow_cholera_map.jpg",
-          "image_alt": "Dr. John Snow's famous 1854 epidemiological dot map of the Broad Street cholera outbreak in Soho, London",
-          "caption": "Dr. John Snow's 1854 dot-map of Soho, London, pinpointing cholera deaths clustered around the contaminated Broad Street water pump, disproving the miasma theory and establishing modern epidemiology (Wellcome Collection, L0063431).",
+          "image_alt": "Dr John Snow’s 1854 epidemiological street map of Soho, London marking stacked black mortality bars clustered tightly around the Broad Street water pump",
+          "caption": "Dr John Snow’s Epidemiological Dot-Map of Soho, London (1854, Wellcome Collection L0063431): Pinpointing fatal cholera cases clustered around the sewage-contaminated Broad Street water pump proved cholera was waterborne and shattered laissez-faire complacency.",
           "sources": [
             {
               "letter": "C",
@@ -3456,16 +3951,16 @@ export default {
           "title": "Edwin Chadwick & The 1842 Sanitary Report (1842)",
           "theme_heading": "Edwin Chadwick & The 1842 Sanitary Report (1842)",
           "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In 1842, pioneering civil servant Edwin Chadwick published his landmark Sanitary Report on the condition of the labouring population. Chadwick utilized meticulous statistical lifespan comparison charts and medical evidence to shock the Victorian governing class into action.</p><p class=\"prose-p\">His data revealed a horrifying nineteen-year Manchester average life expectancy for working-class labourers, compared to thirty-eight years in rural Rutland. Chadwick underscored the immense economic cost of epidemics on ratepayers, arguing that clean municipal water would save national wealth and prevent poverty.</p>",
-          "image": "/images/chadwick.jpg",
-          "image_alt": "Portrait of social reformer Sir Edwin Chadwick",
-          "caption": "Sir Edwin Chadwick (1800–1890), social reformer and Secretary to the Poor Law Commission, whose 1842 Report exposed the link between filth, disease, and poverty, laying the groundwork for the 1848 Public Health Act (National Portrait Gallery, NPG 1271).",
+          "image": "/images/ks3_ind/ind_l3_b3_edwin_chadwick_portrait.jpg",
+          "image_alt": "Three-quarter-length portrait photograph of sanitary reformer Sir Edwin Chadwick in dark frock coat and bow tie",
+          "caption": "Sir Edwin Chadwick (1800–1890, Wellcome Collection M0010963): Secretary to the Poor Law Commission whose 1842 Sanitary Report proved that Manchester labourers died at an average age of nineteen compared with thirty-eight in rural Rutland, paving the way for the 1848 Public Health Act.",
           "source": {
             "letter": "D",
             "title": "Source D (Political Cartoon): Father Thames Introducing his Offspring to the Fair City of London (Punch, 1858)",
             "context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
             "hinge_question": "How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
-            "image": "/images/father_thames_punch_1858.jpg",
-            "caption": "Source D: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
+            "image": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
+            "caption": "Source D: John Leech, \"Father Thames Introducing His Offspring to the Fair City of London\", Punch (3 July 1858, Vol. XXXV, p. 5). Published at the height of the Great Stink, personifying the sewage-choked River Thames presenting Diphtheria, Scrofula, and Cholera to London.",
             "discussion_ideas": [
               "Personification of Lethal Waterborne Epidemics: Leech personifies the Thames not as the romantic, bountiful river god of British folklore, but as a filthy, bedraggled monster crawling from the slime to present his skeletal, diseased children—Diphtheria, Scrofula, and Cholera—to a refined, classical Britannia representing the city of London, graphically connecting environmental filth to childhood mortality.",
               "Political Pressure Shaming Parliament into Action: The subtitle mocks Parliament ('A Design for a Fresco in the New Houses of Parliament'), highlighting the hypocrisy of Victorian politicians who spent millions gilding the Palace of Westminster while refusing to spend public money on municipal sewers; within eighteen days of this cartoon appearing, Parliament passed emergency legislation authorizing Bazalgette's £3 million interceptor sewer system."
@@ -3481,7 +3976,8 @@ export default {
               "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?"
             },
             "type": "visual",
-            "src": "/images/father_thames_punch_1858.jpg"
+            "src": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
+            "image_alt": "John Leech’s 3 July 1858 Punch cartoon titled FATHER THAMES INTRODUCING HIS OFFSPRING TO THE FAIR CITY OF LONDON showing filthy river-god Father Thames rising from dead animals and sewage to present Diphtheria, Scrofula, and Cholera to a recoiling crowned Britannia"
           },
           "sources": [
             {
@@ -3489,8 +3985,8 @@ export default {
               "title": "Source D (Political Cartoon): Father Thames Introducing his Offspring to the Fair City of London (Punch, 1858)",
               "context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
               "hinge_question": "How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
-              "image": "/images/father_thames_punch_1858.jpg",
-              "caption": "Source D: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
+              "image": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
+              "caption": "Source D: John Leech, \"Father Thames Introducing His Offspring to the Fair City of London\", Punch (3 July 1858, Vol. XXXV, p. 5). Published at the height of the Great Stink, personifying the sewage-choked River Thames presenting Diphtheria, Scrofula, and Cholera to London.",
               "discussion_ideas": [
                 "Personification of Lethal Waterborne Epidemics: Leech personifies the Thames not as the romantic, bountiful river god of British folklore, but as a filthy, bedraggled monster crawling from the slime to present his skeletal, diseased children—Diphtheria, Scrofula, and Cholera—to a refined, classical Britannia representing the city of London, graphically connecting environmental filth to childhood mortality.",
                 "Political Pressure Shaming Parliament into Action: The subtitle mocks Parliament ('A Design for a Fresco in the New Houses of Parliament'), highlighting the hypocrisy of Victorian politicians who spent millions gilding the Palace of Westminster while refusing to spend public money on municipal sewers; within eighteen days of this cartoon appearing, Parliament passed emergency legislation authorizing Bazalgette's £3 million interceptor sewer system."
@@ -3506,7 +4002,8 @@ export default {
                 "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?"
               },
               "type": "visual",
-              "src": "/images/father_thames_punch_1858.jpg"
+              "src": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
+              "image_alt": "John Leech’s 3 July 1858 Punch cartoon titled FATHER THAMES INTRODUCING HIS OFFSPRING TO THE FAIR CITY OF LONDON showing filthy river-god Father Thames rising from dead animals and sewage to present Diphtheria, Scrofula, and Cholera to a recoiling crowned Britannia"
             }
           ],
           "heading": "Edwin Chadwick & The 1842 Sanitary Report (1842)",
@@ -3560,7 +4057,10 @@ export default {
           ],
           "heading": "The Great Stink & Bazalgette’s Sewer Triumph (1858–1865)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> In July 1858, an intense heatwave brought London to a standstill during the infamous \"Great Stink\". Unprocessed sewage produced noxious midsummer Thames fermentation, turning the River Thames into a bubbling, pestilent open sewer.</p><p class=\"prose-p\">Fearing deadly disease, MPs in Parliament soaked their Commons chloride curtains in disinfectant to dull the suffocating stench. Parliament rapidly authorized Joseph Bazalgette’s engineering masterpiece: constructing eighty-two miles of brick Bazalgette interceptor tunnels that redirected London’s effluent eastward, permanently eradicating urban cholera.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> In July 1858, an intense heatwave brought London to a standstill during the infamous \"Great Stink\". Unprocessed sewage produced noxious midsummer Thames fermentation, turning the River Thames into a bubbling, pestilent open sewer.</p><p class=\"prose-p\">Fearing deadly disease, MPs in Parliament soaked their Commons chloride curtains in disinfectant to dull the suffocating stench. Parliament rapidly authorized Joseph Bazalgette’s engineering masterpiece: constructing eighty-two miles of brick Bazalgette interceptor tunnels that redirected London’s effluent eastward, permanently eradicating urban cholera.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> In July 1858, an intense heatwave brought London to a standstill during the infamous \"Great Stink\". Unprocessed sewage produced noxious midsummer Thames fermentation, turning the River Thames into a bubbling, pestilent open sewer.</p><p class=\"prose-p\">Fearing deadly disease, MPs in Parliament soaked their Commons chloride curtains in disinfectant to dull the suffocating stench. Parliament rapidly authorized Joseph Bazalgette’s engineering masterpiece: constructing eighty-two miles of brick Bazalgette interceptor tunnels that redirected London’s effluent eastward, permanently eradicating urban cholera.</p>",
+          "image": "/images/ks3_ind/ind_l3_b4_thames_embankment_bazalgette_1867.jpg",
+          "image_alt": "Cutaway Victorian engineering wood-engraving titled SECTION OF THE THAMES EMBANKMENT, 1867 showing the granite river wall beside the Thames, pedestrian pipe subway (1), Sir Joseph Bazalgette’s circular brick Low-Level Interceptor Sewer (2), and underground railway tunnel (3)",
+          "caption": "Section of the Thames Embankment Showing Sir Joseph Bazalgette’s Low-Level Interceptor Sewer (The Illustrated London News, 22 June 1867, Wellcome Collection M0010346): Built after the July 1858 \"Great Stink\", 82 miles of brick interceptor tunnels carried London’s sewage eastward away from drinking supplies."
         }
       ],
       "quiz": [
@@ -3975,8 +4475,8 @@ export default {
           "title": "Source A (Visual Record): Gustave Doré, Over London by Rail (1872)",
           "context": "Gustave Doré's celebrated 1872 engraving captures the claustrophobic reality of Victorian urbanisation. Packed into narrow yards without gardens or drainage, back-to-back houses were overshadowed by industrial transport infrastructure. **Hinge Question:** Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
           "hinge_question": "Does Doré portray the railway as a triumph of modern engineering or as an intrusive monster dominating the lives of the working poor?",
-          "image": "/images/victorian_slum.jpg",
-          "caption": "Source A: Gustave Doré, Over London by Rail (1872). A wood engraving illustrating the suffocating density of back-to-back tenements in industrial London under railway viaducts.",
+          "image": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+          "caption": "Source A: Gustave Doré, Over London—By Rail (from London: A Pilgrimage, 1872, Yale Center for British Art). Wood engraving capturing the suffocating density of cramped, smoke-choked working-class tenements and tiny walled yards beneath Victorian railway viaducts.",
           "question_badge": "Source Inference",
           "question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
           "enquiry_question": "What does Doré's engraving suggest about the living conditions of working-class families in industrial London?",
@@ -3987,7 +4487,8 @@ export default {
           },
           "id": "iae_l3_src_a",
           "type": "visual",
-          "src": "/images/victorian_slum.jpg"
+          "src": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+          "image_alt": "Gustave Doré’s 1872 wood engraving Over London—By Rail looking from beneath a brick railway arch across densely packed rows of smoky back-to-back Victorian terrace yards hung with laundry beneath a passing steam train"
         },
         {
           "letter": "B",
@@ -4033,8 +4534,8 @@ export default {
           "title": "Source D (Political Cartoon): Father Thames Introducing his Offspring to the Fair City of London (Punch, 1858)",
           "context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
           "hinge_question": "How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?",
-          "image": "/images/father_thames_punch_1858.jpg",
-          "caption": "Source D: John Leech's celebrated cartoon in Punch (3 July 1858) personifying Father Thames introducing his diseased children—Diphtheria, Scrofula, and Cholera—to London during the Great Stink.",
+          "image": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
+          "caption": "Source D: John Leech, \"Father Thames Introducing His Offspring to the Fair City of London\", Punch (3 July 1858, Vol. XXXV, p. 5). Published at the height of the Great Stink, personifying the sewage-choked River Thames presenting Diphtheria, Scrofula, and Cholera to London.",
           "discussion_ideas": [
             "Personification of Lethal Waterborne Epidemics: Leech personifies the Thames not as the romantic, bountiful river god of British folklore, but as a filthy, bedraggled monster crawling from the slime to present his skeletal, diseased children—Diphtheria, Scrofula, and Cholera—to a refined, classical Britannia representing the city of London, graphically connecting environmental filth to childhood mortality.",
             "Political Pressure Shaming Parliament into Action: The subtitle mocks Parliament ('A Design for a Fresco in the New Houses of Parliament'), highlighting the hypocrisy of Victorian politicians who spent millions gilding the Palace of Westminster while refusing to spend public money on municipal sewers; within eighteen days of this cartoon appearing, Parliament passed emergency legislation authorizing Bazalgette's £3 million interceptor sewer system."
@@ -4050,7 +4551,8 @@ export default {
             "source_context": "During the searing summer heat wave of June–July 1858, the Thames became so choked with decomposing human sewage and industrial effluent that the resulting stench—known as the \"Great Stink\"—paralyzed the Houses of Parliament, forcing MPs to soak window curtains in chloride of lime to avoid fainting. Punch published this biting cartoon showing Father Thames presenting his deadly children—Diphtheria, Scrofula, and Cholera—to London. **Hinge Question:** How did satirical magazines like Punch use dark humor to compel a reluctant Parliament to fund massive civil engineering projects like Bazalgette’s sewers?"
           },
           "type": "visual",
-          "src": "/images/father_thames_punch_1858.jpg"
+          "src": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
+          "image_alt": "John Leech’s 3 July 1858 Punch cartoon titled FATHER THAMES INTRODUCING HIS OFFSPRING TO THE FAIR CITY OF LONDON showing filthy river-god Father Thames rising from dead animals and sewage to present Diphtheria, Scrofula, and Cholera to a recoiling crowned Britannia"
         },
         {
           "letter": "E",
@@ -4094,7 +4596,7 @@ export default {
             "badge": "Stage 1",
             "heading": "Back-to-Back Courts & Cellars",
             "date": "1800–1830",
-            "img": "/images/victorian_slum.jpg",
+            "img": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
             "mode": "contain-light",
             "stat": "Airless Brick Courts & Sewage-Soaked Cellars",
             "html": "Millions moved to factory towns like <strong>Manchester</strong>. Landlords crammed families into airless <strong>back-to-back houses</strong> and damp <strong>cellars</strong> soaked with sewage.",
@@ -4142,7 +4644,7 @@ export default {
             "badge": "Stage 5",
             "heading": "1858 Great Stink & MPs",
             "date": "July 1858",
-            "img": "/images/father_thames_punch_1858.jpg",
+            "img": "/images/ks3_ind/ind_l3_s3_father_thames_punch_1858.jpg",
             "mode": "contain-light",
             "stat": "Boiling Sewage Stench Forced Westminster Action",
             "html": "A hot <strong>July 1858</strong> heatwave turned the sewage-choked <strong>River Thames</strong> into the <strong>“Great Stink”</strong>, forcing choking MPs in Parliament to fund new sewers.",
@@ -4183,11 +4685,14 @@ export default {
       "vocab_cloze_text": "Rapid [Urbanisation] crammed factory workers into damp back-to-back courts while councils clung to [Laissez-faire] neglect. Overflowing sewage from each shared [Cesspool] seeped into drinking pumps, triggering deadly [Cholera] outbreaks from 1831 even as doctors blamed foul [Miasma Theory]. Edwin Chadwick’s 1842 report and the 1858 Great Stink finally forced MPs to invest in modern sewers and [Public Health].",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg",
-        "caption": "Manchester from Kersal Moor",
-        "position": "center 30%"
+        "alt": "William Wyld’s 1852 panoramic watercolour looking down from green Kersal Moor onto dozens of smoking factory chimneys shrouding Victorian Manchester in industrial haze",
+        "caption": "William Wyld, Manchester from Kersal Moor (1852, Royal Collection RCIN 920223): Dozens of coal-fired cotton-mill chimneys rising above \"Cottonopolis\", where explosive urban growth overwhelmed housing and sanitation.",
+        "position": "center 55%"
       },
       "banner_image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg",
-      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg"
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l3_banner_manchester_cottonopolis_1852.jpg",
+      "banner_position": "center 55%",
+      "card_image": "/images/ks3_ind/ind_l3_card_abbey_mills_pumping_station.jpg"
     },
     {
       "id": "lesson_4",
@@ -4665,8 +5170,8 @@ export default {
             "image": ""
           },
           "image": "/images/leader_of_the_luddites.jpg",
-          "image_alt": "Contemporary 1812 satirical handbill showing The Leader of the Luddites in woman's dress",
-          "caption": "The Leader of the Luddites (May 1812), contemporary hand-coloured etching depicting the folkloric 'General Ned Ludd' dressed in women's clothing leading night-time machine-breaking raids in the textile districts (British Museum, 1873,0712.809).",
+          "image_alt": "May 1812 hand-coloured satirical etching titled THE LEADER OF THE LUDDITES showing a weaver disguised in a woman’s bonnet and spotted gown gesturing ahead of armed frame-breakers while a factory burns in the background",
+          "caption": "The Leader of the Luddites (May 1812, British Museum 1873,0712.809): Hand-coloured etching depicting a follower of mythical \"General Ned Ludd\" disguised in women’s clothes leading nocturnal machine-breaking raids—answered by Parliament’s 1812 capital Frame-Breaking Act and 12,000 troops.",
           "sources": [
             {
               "letter": "A",
@@ -4744,7 +5249,10 @@ export default {
           ],
           "heading": "The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> On 16 August 1819, sixty thousand working-class men, women, and children assembled at St Peter’s Field in Manchester. Dressed in their Sunday best, the peaceful St Peter’s Field crowd gathered to demand parliamentary representation, lower food prices, and political liberty.</p><p class=\"prose-p\">Panicked magistrates unleashed a drunken Manchester Yeomanry sabre charge into the defenceless gathering, killing eighteen and injuring over six hundred. Defending the massacre, the government passed the repressive Tory Six Acts, outlawing political assemblies and taxing radical publications.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> On 16 August 1819, sixty thousand working-class men, women, and children assembled at St Peter’s Field in Manchester. Dressed in their Sunday best, the peaceful St Peter’s Field crowd gathered to demand parliamentary representation, lower food prices, and political liberty.</p><p class=\"prose-p\">Panicked magistrates unleashed a drunken Manchester Yeomanry sabre charge into the defenceless gathering, killing eighteen and injuring over six hundred. Defending the massacre, the government passed the repressive Tory Six Acts, outlawing political assemblies and taxing radical publications.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> On 16 August 1819, sixty thousand working-class men, women, and children assembled at St Peter’s Field in Manchester. Dressed in their Sunday best, the peaceful St Peter’s Field crowd gathered to demand parliamentary representation, lower food prices, and political liberty.</p><p class=\"prose-p\">Panicked magistrates unleashed a drunken Manchester Yeomanry sabre charge into the defenceless gathering, killing eighteen and injuring over six hundred. Defending the massacre, the government passed the repressive Tory Six Acts, outlawing political assemblies and taxing radical publications.</p>",
+          "image": "/images/ks3_ind/ind_l4_b1_peterloo_dreadful_scene_1819.jpg",
+          "image_alt": "Hand-coloured broadside engraving published 27 August 1819 by J. Evans & Sons titled A MEETING OF THE RADICAL REFORMERS on St Peter’s Place Manchester showing Henry Hunt arrested on the hustings beneath banners reading Vote by Ballot, Universal Suffrage, Annual Parliaments, and Female Union of Royton while cavalry sabre the crowd",
+          "caption": "A Meeting of the Radical Reformers on St Peter’s Place, Manchester (published by J. Evans & Sons, London, 27 August 1819): Published eleven days after the Peterloo Massacre, showing unarmed families carrying \"Universal Suffrage\" and \"Female Union of Royton\" banners cut down by Yeomanry sabres."
         },
         {
           "act": 3,
@@ -4772,8 +5280,8 @@ export default {
             "src": "/images/captain_swing_letter.jpg"
           },
           "image": "/images/captain_swing_portrait.jpg",
-          "image_alt": "Satirical print 'An original portrait of Captain Swing' (December 1830)",
-          "caption": "An original portrait of Captain Swing (December 1830), contemporary hand-coloured satirical lithograph personifying the mythical rural protest leader as a demonic creature formed of pitch-barrels, firebrands, and farming implements (British Museum, 1948,0214.941).",
+          "image_alt": "December 1830 hand-coloured satirical lithograph titled AN ORIGINAL PORTRAIT OF CAPTAIN SWING depicting a figure made of straw ricks, pitch and tar barrels, turpentine, gunpowder, and lucifer matches",
+          "caption": "An Original Portrait of Captain Swing (December 1830, British Museum 1948,0214.941): Satirical print personifying the mythical leader of the 1830 Hampshire and southern harvest riots out of burning straw ricks, pitch barrels, turpentine, and gunpowder.",
           "interactive_hotspot_map": {
             "type": "interactive_hotspot_map",
             "title": "Interactive Primary Map: The Hampshire Swing Riots & Rural Rebellion (1830)",
@@ -4917,7 +5425,108 @@ export default {
           ],
           "heading": "The Winchester Special Assizes & State Vengeance (December 1830)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> The British government responded to the Swing Riots with unsparing judicial vengeance. In December 1830, Special Assize judges conducted dramatic Winchester Great Hall trials, prosecuting three hundred Hampshire agricultural workers for riot, machine breaking, and arson.</p><p class=\"prose-p\">The judges carried out the public Micheldever youth execution of nineteen-year-old labourer Henry Cook for striking a local magistrate. Furthermore, over four hundred convicted farm hands were sentenced to Australian penal transportation, shattering rural radicalism through terrifying state retribution.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> The British government responded to the Swing Riots with unsparing judicial vengeance. In December 1830, Special Assize judges conducted dramatic Winchester Great Hall trials, prosecuting three hundred Hampshire agricultural workers for riot, machine breaking, and arson.</p><p class=\"prose-p\">The judges carried out the public Micheldever youth execution of nineteen-year-old labourer Henry Cook for striking a local magistrate. Furthermore, over four hundred convicted farm hands were sentenced to Australian penal transportation, shattering rural radicalism through terrifying state retribution.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> The British government responded to the Swing Riots with unsparing judicial vengeance. In December 1830, Special Assize judges conducted dramatic Winchester Great Hall trials, prosecuting three hundred Hampshire agricultural workers for riot, machine breaking, and arson.</p><p class=\"prose-p\">The judges carried out the public Micheldever youth execution of nineteen-year-old labourer Henry Cook for striking a local magistrate. Furthermore, over four hundred convicted farm hands were sentenced to Australian penal transportation, shattering rural radicalism through terrifying state retribution.</p>",
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Year 8 State Power & Protest",
+            "title": "State Repression: Special Assizes, Hanging & Transportation (1812–1834)",
+            "default_index": 2,
+            "caption": "Click each crisis to see how an unrepresented Parliament used troops, sabres, gallows, and penal ships against working-class protest.",
+            "items": [
+              {
+                "tab_label": "1. Luddites (1812)",
+                "title": "Capital Frame-Breaking Act & Northern Garrisons",
+                "dates": "1811–1816 • Crushing General Ludd",
+                "badge": "Death Penalty",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Worker Grievance",
+                    "value": "Steam Looms Slashed Skilled Weavers’ Wages"
+                  },
+                  {
+                    "label": "1812 Statute",
+                    "value": "Smashing Frames Made a Hanging Offence"
+                  },
+                  {
+                    "label": "Military Force",
+                    "value": "12,000 Troops Stationed in Mill Districts"
+                  }
+                ],
+                "takeaway": "With zero MPs speaking for textile workers, Parliament protected factory machinery with the gallows and more soldiers than Wellington had in Spain."
+              },
+              {
+                "tab_label": "2. Peterloo (1819)",
+                "title": "Yeomanry Sabres & The Tory Six Acts",
+                "dates": "Aug–Dec 1819 • Silencing Reformers",
+                "badge": "18 Killed • 600+ Hurt",
+                "color": "#ef4444",
+                "bg_color": "rgba(239, 68, 68, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Peaceful Crowd",
+                    "value": "60,000 Families in Sunday Best at St Peter’s Field"
+                  },
+                  {
+                    "label": "Cavalry Attack",
+                    "value": "Manchester Yeomanry Charged With Drawn Sabres"
+                  },
+                  {
+                    "label": "Tory Six Acts",
+                    "value": "Banned Mass Meetings & Taxed Radical Papers"
+                  }
+                ],
+                "takeaway": "Instead of punishing the magistrates behind Peterloo, ministers congratulated them, jailed speaker Henry Hunt, and outlawed large reform rallies."
+              },
+              {
+                "tab_label": "3. Winchester Assizes",
+                "title": "Winchester Great Hall Trials & Henry Cook’s Hanging",
+                "dates": "December 1830 • Hampshire Swing Vengeance",
+                "badge": "300 Tried at Winchester",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Special Court",
+                    "value": "300 Hampshire Farmhands Tried in Great Hall"
+                  },
+                  {
+                    "label": "Public Hanging",
+                    "value": "19-Yr-Old Henry Cook Executed (Micheldever)"
+                  },
+                  {
+                    "label": "Penal Exile",
+                    "value": "Over 400 Swing Rioters Transported to Australia"
+                  }
+                ],
+                "takeaway": "Starving farmhands who smashed threshing machines for a 2s daily wage faced terrifying courtroom vengeance designed to break village solidarity."
+              },
+              {
+                "tab_label": "4. Tolpuddle (1834)",
+                "title": "Penal Transportation & Mass Union Backlash",
+                "dates": "1834–1836 • Dorset Friendly Society",
+                "badge": "Pardoned 1836",
+                "color": "#10b981",
+                "bg_color": "rgba(16, 185, 129, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Peaceful Action",
+                    "value": "Six Dorset Farmhands Formed Mutual Aid Union"
+                  },
+                  {
+                    "label": "Legal Trap",
+                    "value": "7 Years’ Exile Under 1797 Secret Oaths Law"
+                  },
+                  {
+                    "label": "Public Victory",
+                    "value": "100,000 Marched in London → Full Pardon (1836)"
+                  }
+                ],
+                "takeaway": "Harsh penal exile finally backfired at Tolpuddle: disciplined mass marches and petitions forced the Crown to pardon all six martyrs."
+              }
+            ]
+          }
         },
         {
           "act": 5,
@@ -4968,7 +5577,10 @@ export default {
           ],
           "heading": "The Tolpuddle Martyrs & The Right to Combine (1834)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> In 1834, six agricultural labourers in Tolpuddle, Dorset, formed a friendly society mutual aid union to resist crippling farm wage cuts. Threatening to blacklist union members, local landowners and magistrates plotted to destroy their organization.</p><p class=\"prose-p\">Authorities prosecuted the six leaders under an obscure secret oaths law dating from naval mutinies, sentencing them to seven years' penal exile. The conviction sparked massive London protest marches, mobilizing over one hundred thousand trade unionists and forcing the Crown to pardon the men in 1836.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> In 1834, six agricultural labourers in Tolpuddle, Dorset, formed a friendly society mutual aid union to resist crippling farm wage cuts. Threatening to blacklist union members, local landowners and magistrates plotted to destroy their organization.</p><p class=\"prose-p\">Authorities prosecuted the six leaders under an obscure secret oaths law dating from naval mutinies, sentencing them to seven years' penal exile. The conviction sparked massive London protest marches, mobilizing over one hundred thousand trade unionists and forcing the Crown to pardon the men in 1836.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> In 1834, six agricultural labourers in Tolpuddle, Dorset, formed a friendly society mutual aid union to resist crippling farm wage cuts. Threatening to blacklist union members, local landowners and magistrates plotted to destroy their organization.</p><p class=\"prose-p\">Authorities prosecuted the six leaders under an obscure secret oaths law dating from naval mutinies, sentencing them to seven years' penal exile. The conviction sparked massive London protest marches, mobilizing over one hundred thousand trade unionists and forcing the Crown to pardon the men in 1836.</p>",
+          "image": "/images/ks3_ind/ind_l4_b4_tolpuddle_martyrs_march_1834.jpg",
+          "image_alt": "Painted historical mural at Copenhagen Fields in Islington depicting 100,000 London trade unionists marching behind banners and a giant rolled petition to Westminster in April 1834 to demand a pardon for the six Tolpuddle Martyrs",
+          "caption": "The Copenhagen Fields Trade Union Procession of 21 April 1834 (Tolpuddle Martyrs Commemorative Mural, Islington, London): Over 100,000 trade unionists marched peacefully to Whitehall with a mammoth petition after six Dorset farm labourers were sentenced to seven years’ Australian transportation, winning their full pardon in 1836."
         }
       ],
       "quiz": [
@@ -5489,7 +6101,7 @@ export default {
         "topicLabel": "Luddites, Peterloo, Swing & Unions",
         "title": "How Did Ordinary Working People Fight for Fair Wages and a Political Voice?",
         "spokenTitle": "How did ordinary working people fight for fair wages and a political voice?",
-        "thumbUrl": "/images/chartist_demo.jpg",
+        "thumbUrl": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
         "provenanceNote": "Verified protest etchings, National Archives Swing letters, and naval records from the British Museum and Kew.",
         "bridges": [
           "60,000 meet peacefully →",
@@ -5565,7 +6177,7 @@ export default {
             "isOutcome": true,
             "heading": "From Machine Raids to Unions",
             "date": "By 1836",
-            "img": "/images/chartist_demo.jpg",
+            "img": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
             "mode": "landscape",
             "stat": "Peaceful Unions & Marches Proved Stronger",
             "html": "Soldiers and courts crushed <strong>Luddite and Swing raids</strong>. Yet the <strong>Tolpuddle pardon</strong> proved disciplined <strong>trade unions</strong> and peaceful marches could win change.",
@@ -5593,11 +6205,14 @@ export default {
       "vocab_cloze_text": "Shut out of the parliamentary [Franchise], working people protested against low pay and high food prices. In August 1819, cavalry sabred peaceful reformers at the [Peterloo Massacre], while southern farmworkers smashed threshing machines during the 1830 [Swing Riots] and rallied behind the transported [Tolpuddle Martyrs] in 1834. Between 1838 and 1848, millions signed petitions for [Chartism], debating [Moral vs Physical Force].",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg",
-        "caption": "Peterloo Massacre: To Henry Hunt, Esq., as Chairman of the Meeting Assembled in St. Peter's Field, Manchester, 16th August 1819",
-        "position": "center 30%"
+        "alt": "Richard Carlile’s October 1819 hand-coloured aquatint showing Henry Hunt and female reformers on the central hustings holding Universal Suffrage banners as blue-coated Manchester Yeomanry cavalry charge the crowd with sabres at St Peter’s Field",
+        "caption": "Richard Carlile, St Peter’s Field, Manchester, 16 August 1819 (October 1819): Manchester Yeomanry cavalry charging with drawn sabres into 60,000 unarmed men, women, and children gathered around Henry Hunt’s hustings to demand parliamentary reform.",
+        "position": "center 38%"
       },
       "banner_image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg",
-      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg"
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg",
+      "banner_position": "center 38%",
+      "card_image": "/images/ks3_ind/ind_l4_b4_tolpuddle_six_cottages.jpg"
     },
     {
       "id": "lesson_5",
@@ -6059,8 +6674,8 @@ export default {
             "title": "Source A (Cartographic Record): Parliamentary Representation Map of Rotten Boroughs (1832)",
             "context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
             "hinge_question": "Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
-            "image": "/images/map_rotten_boroughs.jpg",
-            "caption": "Source A: Historical map illustrating the distribution of parliamentary seats before 1832, showing the heavy concentration of rotten boroughs in southern coastal counties.",
+            "image": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+            "caption": "Source A: W. & A. K. Johnston, England and Wales Shewing the Parliamentary Representation Down to the Reform Bill of 1832 (Historical Atlas of Modern Europe, Oxford: Clarendon Press, 1902, Plate 23), highlighting the heavy cluster of decayed southern rotten boroughs disenfranchised in 1832.",
             "question_badge": "Source Inference",
             "question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
             "enquiry_question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
@@ -6071,7 +6686,8 @@ export default {
             },
             "id": "iae_l5_src_a",
             "type": "visual",
-            "src": "/images/map_rotten_boroughs.jpg"
+            "src": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+            "image_alt": "Historical atlas map titled ENGLAND AND WALES shewing the PARLIAMENTARY REPRESENTATION down to the REFORM BILL OF 1832 (Clarendon Press / W. & A. K. Johnston) densely crowded with medieval southern and Cornish rotten boroughs"
           },
           "sources": [
             {
@@ -6079,8 +6695,8 @@ export default {
               "title": "Source A (Cartographic Record): Parliamentary Representation Map of Rotten Boroughs (1832)",
               "context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
               "hinge_question": "Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
-              "image": "/images/map_rotten_boroughs.jpg",
-              "caption": "Source A: Historical map illustrating the distribution of parliamentary seats before 1832, showing the heavy concentration of rotten boroughs in southern coastal counties.",
+              "image": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+              "caption": "Source A: W. & A. K. Johnston, England and Wales Shewing the Parliamentary Representation Down to the Reform Bill of 1832 (Historical Atlas of Modern Europe, Oxford: Clarendon Press, 1902, Plate 23), highlighting the heavy cluster of decayed southern rotten boroughs disenfranchised in 1832.",
               "question_badge": "Source Inference",
               "question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
               "enquiry_question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
@@ -6091,12 +6707,166 @@ export default {
               },
               "id": "iae_l5_src_a",
               "type": "visual",
-              "src": "/images/map_rotten_boroughs.jpg"
+              "src": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+              "image_alt": "Historical atlas map titled ENGLAND AND WALES shewing the PARLIAMENTARY REPRESENTATION down to the REFORM BILL OF 1832 (Clarendon Press / W. & A. K. Johnston) densely crowded with medieval southern and Cornish rotten boroughs"
             }
           ],
           "heading": "The Rotten Oligarchy: Old Sarum & The Unrepresented Cities (1800–1830)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In 1830, Britain’s parliamentary franchise was deeply corrupt, unrepresentative, and undemocratic. Wealthy aristocratic landowners maintained absolute control over Parliament through an exclusive under-five-percent electorate restricted to rich male property owners.</p><p class=\"prose-p\">Deserted medieval sites like Old Sarum & Newtown rotten boroughs sent two MPs to Westminster with virtually zero resident voters. In stark contrast, massive unrepresented industrial cities such as Manchester, Birmingham, and Leeds had no parliamentary representation whatsoever, denying millions of urban citizens a political voice.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In 1830, Britain’s parliamentary franchise was deeply corrupt, unrepresentative, and undemocratic. Wealthy aristocratic landowners maintained absolute control over Parliament through an exclusive under-five-percent electorate restricted to rich male property owners.</p><p class=\"prose-p\">Deserted medieval sites like Old Sarum & Newtown rotten boroughs sent two MPs to Westminster with virtually zero resident voters. In stark contrast, massive unrepresented industrial cities such as Manchester, Birmingham, and Leeds had no parliamentary representation whatsoever, denying millions of urban citizens a political voice.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In 1830, Britain’s parliamentary franchise was deeply corrupt, unrepresentative, and undemocratic. Wealthy aristocratic landowners maintained absolute control over Parliament through an exclusive under-five-percent electorate restricted to rich male property owners.</p><p class=\"prose-p\">Deserted medieval sites like Old Sarum & Newtown rotten boroughs sent two MPs to Westminster with virtually zero resident voters. In stark contrast, massive unrepresented industrial cities such as Manchester, Birmingham, and Leeds had no parliamentary representation whatsoever, denying millions of urban citizens a political voice.</p>",
+          "image": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+          "image_alt": "KS3 Year 8 historical GIS map of Great Britain (1819–1872) showing rotten boroughs at Old Sarum and Dunwich, unrepresented industrial cities, the Peterloo Massacre, Hampshire Captain Swing and Tolpuddle protest, the 1831 Bristol Reform Riots, London Chartism, and the 1872 Secret Ballot Act",
+          "caption": "Reference Map: Protest, Rotten Boroughs & Parliamentary Reform in Great Britain (1819–1872)—contrasting unrepresented northern industrial cities (0 MPs pre-1832) and Peterloo with Old Sarum, Tolpuddle, the 1831 Bristol Reform Riots, Chartism, and the 1872 Secret Ballot Act.",
+          "stage_hook_map": {
+            "id": "ind-l5-rotten-boroughs-protest-reform-map",
+            "image": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+            "title": "Protest, Rotten Boroughs & The Road to Democracy (1819–1872)",
+            "subtitle": "Old Sarum, Peterloo, Swing & Tolpuddle, Bristol 1831 & Chartist Secret Ballot · Tap pins 1–5",
+            "pins": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 51.2,
+                "y": 74.9,
+                "color": "#b45309",
+                "label": "1. Old Sarum, Wiltshire & Dunwich (Pre-1832)",
+                "badge": "7 Voters • 2 MPs",
+                "date": "Pre-1832",
+                "title": "Old Sarum & Dunwich: Symbols of the “Rotten Borough” Oligarchy",
+                "body": "Before 1832, fewer than 5% of adults could vote and constituency maps had barely changed since the Middle Ages. Old Sarum—an empty windswept hill in Wiltshire with seven absentee voters—and Dunwich in Suffolk, which had crumbled into the North Sea, still returned two MPs each while aristocratic patrons controlled “pocket boroughs”.",
+                "details": "Before 1832, fewer than 5% of adults could vote and constituency maps had barely changed since the Middle Ages. Old Sarum—an empty windswept hill in Wiltshire with seven absentee voters—and Dunwich in Suffolk, which had crumbled into the North Sea, still returned two MPs each while aristocratic patrons controlled “pocket boroughs”.",
+                "hinge": "Why did wealthy landowners defend empty rotten boroughs like Old Sarum so fiercely before 1832?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 48.9,
+                "y": 56.2,
+                "color": "#9f1239",
+                "label": "2. St Peter’s Field, Manchester (16 Aug 1819)",
+                "badge": "Peterloo Massacre • 0 MPs",
+                "date": "16 August 1819",
+                "title": "St Peter’s Field, Manchester (August 1819): The Peterloo Massacre",
+                "body": "Booming northern and Midland cities—Manchester, Birmingham, and Leeds—housed hundreds of thousands of millworkers and merchants yet had zero MPs. On 16 August 1819, 60,000 peaceful men, women, and children gathered at St Peter’s Field to hear Henry Hunt demand the vote; sabre-wielding Yeomanry cavalry charged the crowd, killing 18 and injuring over 600.",
+                "details": "Booming northern and Midland cities—Manchester, Birmingham, and Leeds—housed hundreds of thousands of millworkers and merchants yet had zero MPs. On 16 August 1819, 60,000 peaceful men, women, and children gathered at St Peter’s Field to hear Henry Hunt demand the vote; sabre-wielding Yeomanry cavalry charged the crowd, killing 18 and injuring over 600.",
+                "hinge": "Why did the government respond to peaceful reform banners at Peterloo with cavalry sabres and the repressive Six Acts?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 48.3,
+                "y": 79.6,
+                "color": "#065f46",
+                "label": "3. Hampshire & Tolpuddle, Dorset (1830–34)",
+                "badge": "Captain Swing & Trade Unions",
+                "date": "1830–1834",
+                "title": "Hampshire & Tolpuddle, Dorset (1830–34): Swing Riots & Tolpuddle Martyrs",
+                "body": "In autumn 1830, starving farmworkers across Hampshire and southern England smashed winter-job-destroying threshing machines under letters signed “Captain Swing” (leading to mass trials at Winchester). Four years later in Tolpuddle, Dorset, six Methodist labourers led by George Loveless formed a peaceful union against wage cuts and were transported to Australia for seven years—until an 800,000-signature campaign won their pardon.",
+                "details": "In autumn 1830, starving farmworkers across Hampshire and southern England smashed winter-job-destroying threshing machines under letters signed “Captain Swing” (leading to mass trials at Winchester). Four years later in Tolpuddle, Dorset, six Methodist labourers led by George Loveless formed a peaceful union against wage cuts and were transported to Australia for seven years—until an 800,000-signature campaign won their pardon.",
+                "hinge": "What do the Winchester Swing trials (1830) and the Tolpuddle sentences (1834) reveal about how elites treated rural workers?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 47.8,
+                "y": 72.8,
+                "color": "#1e3a8a",
+                "label": "4. Bristol Reform Riots (Oct 1831 → 1832 Act)",
+                "badge": "3-Day Uprising → 1832 Act",
+                "date": "Oct 1831 – June 1832",
+                "title": "Bristol (October 1831): Three-Day Reform Riots & The 1832 Great Reform Act",
+                "body": "When the Tory House of Lords blocked Earl Grey’s Reform Bill in October 1831, three days of rioting erupted across Bristol—crowds torched the Mansion House, Bishop’s Palace, and prisons—followed by the May 1832 “Go for Gold” bank run. Fearing revolution, the Lords yielded: the 1832 Great Reform Act abolished 56 rotten boroughs and gave MPs to Manchester, Birmingham, and Leeds, though its £10 property rule still excluded working-class men.",
+                "details": "When the Tory House of Lords blocked Earl Grey’s Reform Bill in October 1831, three days of rioting erupted across Bristol—crowds torched the Mansion House, Bishop’s Palace, and prisons—followed by the May 1832 “Go for Gold” bank run. Fearing revolution, the Lords yielded: the 1832 Great Reform Act abolished 56 rotten boroughs and gave MPs to Manchester, Birmingham, and Leeds, though its £10 property rule still excluded working-class men.",
+                "hinge": "Why did working-class reformers call the 1832 Great Reform Act “The Great Betrayal” even though it abolished 56 rotten boroughs?"
+              },
+              {
+                "num": 5,
+                "id": "spot-5",
+                "x": 56.5,
+                "y": 72.4,
+                "color": "#5b21b6",
+                "label": "5. Kennington Common & Westminster (1838–72)",
+                "badge": "Chartism → 1872 Secret Ballot",
+                "date": "1838–1872",
+                "title": "Kennington Common & Westminster (1838–72): Chartism to the Secret Ballot",
+                "body": "Shut out in 1832, working-class Chartists led by William Lovett and Feargus O’Connor drafted the 1838 People’s Charter (six democratic points including votes for all men and a secret ballot), rallying at Kennington Common in April 1848 with monster petitions. Though rejected at the time, five of the six points later became law—anchored by the 1867 Reform Act and Gladstone’s 1872 Secret Ballot Act, first used with wax-sealed boxes at Pontefract.",
+                "details": "Shut out in 1832, working-class Chartists led by William Lovett and Feargus O’Connor drafted the 1838 People’s Charter (six democratic points including votes for all men and a secret ballot), rallying at Kennington Common in April 1848 with monster petitions. Though rejected at the time, five of the six points later became law—anchored by the 1867 Reform Act and Gladstone’s 1872 Secret Ballot Act, first used with wax-sealed boxes at Pontefract.",
+                "hinge": "Why was replacing open-air hustings with private voting booths in 1872 essential before working-class voters could vote freely?"
+              }
+            ],
+            "hotspots": [
+              {
+                "num": 1,
+                "id": "spot-1",
+                "x": 51.2,
+                "y": 74.9,
+                "color": "#b45309",
+                "label": "1. Old Sarum, Wiltshire & Dunwich (Pre-1832)",
+                "badge": "7 Voters • 2 MPs",
+                "date": "Pre-1832",
+                "title": "Old Sarum & Dunwich: Symbols of the “Rotten Borough” Oligarchy",
+                "body": "Before 1832, fewer than 5% of adults could vote and constituency maps had barely changed since the Middle Ages. Old Sarum—an empty windswept hill in Wiltshire with seven absentee voters—and Dunwich in Suffolk, which had crumbled into the North Sea, still returned two MPs each while aristocratic patrons controlled “pocket boroughs”.",
+                "details": "Before 1832, fewer than 5% of adults could vote and constituency maps had barely changed since the Middle Ages. Old Sarum—an empty windswept hill in Wiltshire with seven absentee voters—and Dunwich in Suffolk, which had crumbled into the North Sea, still returned two MPs each while aristocratic patrons controlled “pocket boroughs”.",
+                "hinge": "Why did wealthy landowners defend empty rotten boroughs like Old Sarum so fiercely before 1832?"
+              },
+              {
+                "num": 2,
+                "id": "spot-2",
+                "x": 48.9,
+                "y": 56.2,
+                "color": "#9f1239",
+                "label": "2. St Peter’s Field, Manchester (16 Aug 1819)",
+                "badge": "Peterloo Massacre • 0 MPs",
+                "date": "16 August 1819",
+                "title": "St Peter’s Field, Manchester (August 1819): The Peterloo Massacre",
+                "body": "Booming northern and Midland cities—Manchester, Birmingham, and Leeds—housed hundreds of thousands of millworkers and merchants yet had zero MPs. On 16 August 1819, 60,000 peaceful men, women, and children gathered at St Peter’s Field to hear Henry Hunt demand the vote; sabre-wielding Yeomanry cavalry charged the crowd, killing 18 and injuring over 600.",
+                "details": "Booming northern and Midland cities—Manchester, Birmingham, and Leeds—housed hundreds of thousands of millworkers and merchants yet had zero MPs. On 16 August 1819, 60,000 peaceful men, women, and children gathered at St Peter’s Field to hear Henry Hunt demand the vote; sabre-wielding Yeomanry cavalry charged the crowd, killing 18 and injuring over 600.",
+                "hinge": "Why did the government respond to peaceful reform banners at Peterloo with cavalry sabres and the repressive Six Acts?"
+              },
+              {
+                "num": 3,
+                "id": "spot-3",
+                "x": 48.3,
+                "y": 79.6,
+                "color": "#065f46",
+                "label": "3. Hampshire & Tolpuddle, Dorset (1830–34)",
+                "badge": "Captain Swing & Trade Unions",
+                "date": "1830–1834",
+                "title": "Hampshire & Tolpuddle, Dorset (1830–34): Swing Riots & Tolpuddle Martyrs",
+                "body": "In autumn 1830, starving farmworkers across Hampshire and southern England smashed winter-job-destroying threshing machines under letters signed “Captain Swing” (leading to mass trials at Winchester). Four years later in Tolpuddle, Dorset, six Methodist labourers led by George Loveless formed a peaceful union against wage cuts and were transported to Australia for seven years—until an 800,000-signature campaign won their pardon.",
+                "details": "In autumn 1830, starving farmworkers across Hampshire and southern England smashed winter-job-destroying threshing machines under letters signed “Captain Swing” (leading to mass trials at Winchester). Four years later in Tolpuddle, Dorset, six Methodist labourers led by George Loveless formed a peaceful union against wage cuts and were transported to Australia for seven years—until an 800,000-signature campaign won their pardon.",
+                "hinge": "What do the Winchester Swing trials (1830) and the Tolpuddle sentences (1834) reveal about how elites treated rural workers?"
+              },
+              {
+                "num": 4,
+                "id": "spot-4",
+                "x": 47.8,
+                "y": 72.8,
+                "color": "#1e3a8a",
+                "label": "4. Bristol Reform Riots (Oct 1831 → 1832 Act)",
+                "badge": "3-Day Uprising → 1832 Act",
+                "date": "Oct 1831 – June 1832",
+                "title": "Bristol (October 1831): Three-Day Reform Riots & The 1832 Great Reform Act",
+                "body": "When the Tory House of Lords blocked Earl Grey’s Reform Bill in October 1831, three days of rioting erupted across Bristol—crowds torched the Mansion House, Bishop’s Palace, and prisons—followed by the May 1832 “Go for Gold” bank run. Fearing revolution, the Lords yielded: the 1832 Great Reform Act abolished 56 rotten boroughs and gave MPs to Manchester, Birmingham, and Leeds, though its £10 property rule still excluded working-class men.",
+                "details": "When the Tory House of Lords blocked Earl Grey’s Reform Bill in October 1831, three days of rioting erupted across Bristol—crowds torched the Mansion House, Bishop’s Palace, and prisons—followed by the May 1832 “Go for Gold” bank run. Fearing revolution, the Lords yielded: the 1832 Great Reform Act abolished 56 rotten boroughs and gave MPs to Manchester, Birmingham, and Leeds, though its £10 property rule still excluded working-class men.",
+                "hinge": "Why did working-class reformers call the 1832 Great Reform Act “The Great Betrayal” even though it abolished 56 rotten boroughs?"
+              },
+              {
+                "num": 5,
+                "id": "spot-5",
+                "x": 56.5,
+                "y": 72.4,
+                "color": "#5b21b6",
+                "label": "5. Kennington Common & Westminster (1838–72)",
+                "badge": "Chartism → 1872 Secret Ballot",
+                "date": "1838–1872",
+                "title": "Kennington Common & Westminster (1838–72): Chartism to the Secret Ballot",
+                "body": "Shut out in 1832, working-class Chartists led by William Lovett and Feargus O’Connor drafted the 1838 People’s Charter (six democratic points including votes for all men and a secret ballot), rallying at Kennington Common in April 1848 with monster petitions. Though rejected at the time, five of the six points later became law—anchored by the 1867 Reform Act and Gladstone’s 1872 Secret Ballot Act, first used with wax-sealed boxes at Pontefract.",
+                "details": "Shut out in 1832, working-class Chartists led by William Lovett and Feargus O’Connor drafted the 1838 People’s Charter (six democratic points including votes for all men and a secret ballot), rallying at Kennington Common in April 1848 with monster petitions. Though rejected at the time, five of the six points later became law—anchored by the 1867 Reform Act and Gladstone’s 1872 Secret Ballot Act, first used with wax-sealed boxes at Pontefract.",
+                "hinge": "Why was replacing open-air hustings with private voting booths in 1872 essential before working-class voters could vote freely?"
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -6145,7 +6915,10 @@ export default {
           ],
           "heading": "Bristol in Flames & The Days of May (1831–1832)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> When the Tory House of Lords rejected the Whig government's Reform Bill in October 1831, revolutionary unrest erupted nationwide. Rioting crowds set off the destructive Bristol reform riots & fires, burning the Bishop’s Palace and releasing imprisoned radicals.</p><p class=\"prose-p\">In May 1832, political unions organized nationwide financial boycotts under the slogan \"Stop the Duke, go for gold\", triggering a \"Days of May\" bank run gold panic. Facing financial collapse, the Tory House of Lords surrender allowed the landmark reform measure to pass.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> When the Tory House of Lords rejected the Whig government's Reform Bill in October 1831, revolutionary unrest erupted nationwide. Rioting crowds set off the destructive Bristol reform riots & fires, burning the Bishop’s Palace and releasing imprisoned radicals.</p><p class=\"prose-p\">In May 1832, political unions organized nationwide financial boycotts under the slogan \"Stop the Duke, go for gold\", triggering a \"Days of May\" bank run gold panic. Facing financial collapse, the Tory House of Lords surrender allowed the landmark reform measure to pass.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> When the Tory House of Lords rejected the Whig government's Reform Bill in October 1831, revolutionary unrest erupted nationwide. Rioting crowds set off the destructive Bristol reform riots & fires, burning the Bishop’s Palace and releasing imprisoned radicals.</p><p class=\"prose-p\">In May 1832, political unions organized nationwide financial boycotts under the slogan \"Stop the Duke, go for gold\", triggering a \"Days of May\" bank run gold panic. Facing financial collapse, the Tory House of Lords surrender allowed the landmark reform measure to pass.</p>",
+          "image": "/images/ks3_ind/ind_l5_b1_queen_square_riot_1831_engraving.jpg",
+          "image_alt": "Nineteenth-century wood engraving of the October 1831 Bristol Reform Riots in Queen Square showing mounted Dragoon Guards charging with drawn sabres past toppled furniture and fleeing crowds while Classical civic buildings blaze behind Ionic columns",
+          "caption": "The Bristol Reform Riots — Burning of Queen Square (30–31 October 1831): After the Tory House of Lords rejected the Reform Bill, furious crowds torched the Mansion House, Custom House, and Bishop’s Palace in Bristol before the May 1832 \"Days of May\" gold run forced the Lords to yield."
         },
         {
           "act": 3,
@@ -6172,9 +6945,9 @@ export default {
             "src": "",
             "image": ""
           },
-          "image": "/images/earl_grey.jpg",
-          "image_alt": "Portrait of Prime Minister Charles Grey, 2nd Earl Grey",
-          "caption": "Charles Grey, 2nd Earl Grey (1764–1845), Whig Prime Minister whose administration overcame fierce aristocratic opposition to pass the landmark Great Reform Act of 1832 (Sir Thomas Lawrence, c. 1828 / National Portrait Gallery, NPG 51).",
+          "image": "/images/ks3_ind/ind_l5_b2_earl_grey_lawrence_npg.jpg",
+          "image_alt": "Portrait of Whig Prime Minister Charles Grey, 2nd Earl Grey in dark double-breasted coat and high white cravat against a crimson background, after Sir Thomas Lawrence",
+          "caption": "Charles Grey, 2nd Earl Grey (1764–1845), after Sir Thomas Lawrence (National Portrait Gallery NPG 51): Whig Prime Minister whose 1832 Great Reform Act abolished fifty-six rotten boroughs and enfranchised industrial cities like Manchester, Birmingham, and Leeds—while excluding working-class men below the £10 property threshold.",
           "sources": [
             {
               "letter": "C",
@@ -6211,8 +6984,8 @@ export default {
             "title": "Source D (Visual Record): The Chartist Mass Demonstration at Kennington Common (1848)",
             "context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament.",
             "hinge_question": "Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
-            "image": "/images/chartist_demo.jpg",
-            "caption": "Source D: Daguerreotype photograph of the historic Chartist rally at Kennington Common on 10 April 1848. Over 25,000 working-class supporters assembled under the leadership of Feargus O’Connor to present the six million signatures of the third People’s Charter to the House of Commons.",
+            "image": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+            "caption": "Source D: William Edward Kilburn, View of the Great Chartist Meeting on Kennington Common (10 April 1848 daguerreotype, Royal Collection RCIN 2932484). Tens of thousands of working-class Chartists assembled under Feargus O’Connor to accompany the third People’s Charter petition to Westminster.",
             "question_badge": "Historical Significance",
             "question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
             "enquiry_question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
@@ -6223,19 +6996,20 @@ export default {
             },
             "id": "iae_l5_src_d",
             "type": "visual",
-            "src": "/images/chartist_demo.jpg"
+            "src": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+            "image_alt": "William Edward Kilburn’s 10 April 1848 daguerreotype photograph of tens of thousands of Chartist demonstrators in top hats and caps packed across Kennington Common in South London around hustings wagons and banners in front of a tall factory chimney"
           },
-          "image": "/images/william_lovett.jpg",
-          "image_alt": "Portrait of Chartist leader William Lovett",
-          "caption": "William Lovett (1800–1877), leader of the London Working Men's Association and principal author of the 1838 People's Charter demanding universal manhood suffrage and the secret ballot (National Portrait Gallery, NPG 2977).",
+          "image": "/images/ks3_ind/ind_l5_b3_william_lovett_chartist.jpg",
+          "image_alt": "Engraved portrait of Chartist leader and cabinetmaker William Lovett wearing a dark frock coat, buttoned waistcoat, and black silk cravat",
+          "caption": "William Lovett (1800–1877), Secretary of the London Working Men’s Association and principal author of the 1838 People’s Charter: Champion of \"Moral Force\" Chartism who campaigned for the Six Points—including universal male suffrage, equal electoral districts, payment of MPs, and the secret ballot.",
           "sources": [
             {
               "letter": "D",
               "title": "Source D (Visual Record): The Chartist Mass Demonstration at Kennington Common (1848)",
               "context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament.",
               "hinge_question": "Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
-              "image": "/images/chartist_demo.jpg",
-              "caption": "Source D: Daguerreotype photograph of the historic Chartist rally at Kennington Common on 10 April 1848. Over 25,000 working-class supporters assembled under the leadership of Feargus O’Connor to present the six million signatures of the third People’s Charter to the House of Commons.",
+              "image": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+              "caption": "Source D: William Edward Kilburn, View of the Great Chartist Meeting on Kennington Common (10 April 1848 daguerreotype, Royal Collection RCIN 2932484). Tens of thousands of working-class Chartists assembled under Feargus O’Connor to accompany the third People’s Charter petition to Westminster.",
               "question_badge": "Historical Significance",
               "question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
               "enquiry_question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
@@ -6246,7 +7020,8 @@ export default {
               },
               "id": "iae_l5_src_d",
               "type": "visual",
-              "src": "/images/chartist_demo.jpg"
+              "src": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+              "image_alt": "William Edward Kilburn’s 10 April 1848 daguerreotype photograph of tens of thousands of Chartist demonstrators in top hats and caps packed across Kennington Common in South London around hustings wagons and banners in front of a tall factory chimney"
             }
           ],
           "heading": "The People’s Charter: Six Points for Working-Class Power (1838–1848)",
@@ -6263,8 +7038,8 @@ export default {
             "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
             "context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
             "hinge_question": "Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
-            "image": "/images/secret_ballot.jpg",
-            "caption": "Source E: The historic tin ballot box and wax seals used at the Pontefract municipal by-election on 15 August 1872, the first election conducted under the Ballot Act.",
+            "image": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+            "caption": "Source E: The historic locked wooden ballot box and liquorice-stamp red wax seals preserved at Pontefract Museum (Wakefield Museums), used on 15 August 1872 at the Pontefract parliamentary by-election—the first British election held under the Ballot Act 1872.",
             "question_badge": "Technology & Democracy",
             "question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
             "enquiry_question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
@@ -6275,7 +7050,8 @@ export default {
             },
             "id": "iae_l5_src_e",
             "type": "visual",
-            "src": "/images/secret_ballot.jpg"
+            "src": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+            "image_alt": "Photograph at Pontefract Museum of the dark-varnished wooden ballot box with slotted lid, keyhole, red liquorice-stamp wax seals, and turned wooden hand-stamp used in Britain’s first secret-ballot parliamentary by-election on 15 August 1872"
           },
           "sources": [
             {
@@ -6283,8 +7059,8 @@ export default {
               "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
               "context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
               "hinge_question": "Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
-              "image": "/images/secret_ballot.jpg",
-              "caption": "Source E: The historic tin ballot box and wax seals used at the Pontefract municipal by-election on 15 August 1872, the first election conducted under the Ballot Act.",
+              "image": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+              "caption": "Source E: The historic locked wooden ballot box and liquorice-stamp red wax seals preserved at Pontefract Museum (Wakefield Museums), used on 15 August 1872 at the Pontefract parliamentary by-election—the first British election held under the Ballot Act 1872.",
               "question_badge": "Technology & Democracy",
               "question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
               "enquiry_question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
@@ -6295,12 +7071,16 @@ export default {
               },
               "id": "iae_l5_src_e",
               "type": "visual",
-              "src": "/images/secret_ballot.jpg"
+              "src": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+              "image_alt": "Photograph at Pontefract Museum of the dark-varnished wooden ballot box with slotted lid, keyhole, red liquorice-stamp wax seals, and turned wooden hand-stamp used in Britain’s first secret-ballot parliamentary by-election on 15 August 1872"
             }
           ],
           "heading": "The Secret Ballot Act: The Death of Landlord Coercion (1872)",
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In nineteenth-century Britain, parliamentary voting took place openly on wooden platforms, exposing voters to intimidation and employer bribery. In 1872, Gladstone’s government passed the Ballot Act, mandating the statutory abolition of public hustings across the realm.</p><p class=\"prose-p\">The legislation introduced private booths & liquorice wax seals on ballot boxes to guarantee total voter privacy. Secret voting gave tenant farmers and factory hands freedom from landlord eviction and dismissal, permanently transforming British parliamentary elections into a modern, independent democratic process.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In nineteenth-century Britain, parliamentary voting took place openly on wooden platforms, exposing voters to intimidation and employer bribery. In 1872, Gladstone’s government passed the Ballot Act, mandating the statutory abolition of public hustings across the realm.</p><p class=\"prose-p\">The legislation introduced private booths & liquorice wax seals on ballot boxes to guarantee total voter privacy. Secret voting gave tenant farmers and factory hands freedom from landlord eviction and dismissal, permanently transforming British parliamentary elections into a modern, independent democratic process.</p>"
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In nineteenth-century Britain, parliamentary voting took place openly on wooden platforms, exposing voters to intimidation and employer bribery. In 1872, Gladstone’s government passed the Ballot Act, mandating the statutory abolition of public hustings across the realm.</p><p class=\"prose-p\">The legislation introduced private booths & liquorice wax seals on ballot boxes to guarantee total voter privacy. Secret voting gave tenant farmers and factory hands freedom from landlord eviction and dismissal, permanently transforming British parliamentary elections into a modern, independent democratic process.</p>",
+          "image": "/images/ks3_ind/ind_l5_b4_hogarth_open_polling_hustings.jpg",
+          "image_alt": "William Hogarth’s 1758 engraving THE POLLING, Plate III showing rival party agents crowding a raised open wooden hustings booth to intimidate, bribe, and coach voters swearing oaths in full public view of landlords and clerks",
+          "caption": "William Hogarth, The Polling, Plate III (1758, Yale Center for British Art B1981.25.1450): Open wooden hustings forced electors to declare their votes aloud in front of landlords, employers, and party agents—exposing the bribery and eviction threats finally abolished by Gladstone’s 1872 Secret Ballot Act."
         }
       ],
       "quiz": [
@@ -6708,8 +7488,8 @@ export default {
           "title": "Source A (Cartographic Record): Parliamentary Representation Map of Rotten Boroughs (1832)",
           "context": "Before 1832, parliamentary representation was anchored in medieval geography. Cornwall returned 44 MPs (almost as many as all of Scotland), while booming industrial giants like Manchester and Birmingham returned zero. **Hinge Question:** Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
           "hinge_question": "Why did the geography of parliamentary representation fail to reflect the economic reality of the Industrial Revolution?",
-          "image": "/images/map_rotten_boroughs.jpg",
-          "caption": "Source A: Historical map illustrating the distribution of parliamentary seats before 1832, showing the heavy concentration of rotten boroughs in southern coastal counties.",
+          "image": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+          "caption": "Source A: W. & A. K. Johnston, England and Wales Shewing the Parliamentary Representation Down to the Reform Bill of 1832 (Historical Atlas of Modern Europe, Oxford: Clarendon Press, 1902, Plate 23), highlighting the heavy cluster of decayed southern rotten boroughs disenfranchised in 1832.",
           "question_badge": "Source Inference",
           "question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
           "enquiry_question": "What does this map suggest about how unfair the British voting system was before the 1832 Reform Act?",
@@ -6720,7 +7500,8 @@ export default {
           },
           "id": "iae_l5_src_a",
           "type": "visual",
-          "src": "/images/map_rotten_boroughs.jpg"
+          "src": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+          "image_alt": "Historical atlas map titled ENGLAND AND WALES shewing the PARLIAMENTARY REPRESENTATION down to the REFORM BILL OF 1832 (Clarendon Press / W. & A. K. Johnston) densely crowded with medieval southern and Cornish rotten boroughs"
         },
         {
           "letter": "B",
@@ -6766,8 +7547,8 @@ export default {
           "title": "Source D (Visual Record): The Chartist Mass Demonstration at Kennington Common (1848)",
           "context": "Contemporary daguerreotype photograph by William Edward Kilburn showing the massive Chartist assembly at Kennington Common, London, gathered to present the third Monster Petition to Parliament.",
           "hinge_question": "Why did the British state assemble 85,000 special constables and deploy the Duke of Wellington to confront a crowd presenting a petition?",
-          "image": "/images/chartist_demo.jpg",
-          "caption": "Source D: Daguerreotype photograph of the historic Chartist rally at Kennington Common on 10 April 1848. Over 25,000 working-class supporters assembled under the leadership of Feargus O’Connor to present the six million signatures of the third People’s Charter to the House of Commons.",
+          "image": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+          "caption": "Source D: William Edward Kilburn, View of the Great Chartist Meeting on Kennington Common (10 April 1848 daguerreotype, Royal Collection RCIN 2932484). Tens of thousands of working-class Chartists assembled under Feargus O’Connor to accompany the third People’s Charter petition to Westminster.",
           "question_badge": "Historical Significance",
           "question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
           "enquiry_question": "Why was this photograph of the Chartist rally at Kennington Common so historic?",
@@ -6778,15 +7559,16 @@ export default {
           },
           "id": "iae_l5_src_d",
           "type": "visual",
-          "src": "/images/chartist_demo.jpg"
+          "src": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+          "image_alt": "William Edward Kilburn’s 10 April 1848 daguerreotype photograph of tens of thousands of Chartist demonstrators in top hats and caps packed across Kennington Common in South London around hustings wagons and banners in front of a tall factory chimney"
         },
         {
           "letter": "E",
           "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
           "context": "In August 1872, Hugh Childers won re-election in Pontefract in the first British election where voters cast their ballots in private voting compartments. The box was sealed with liquorice stamps from a local confectionery factory to prevent fraud. **Hinge Question:** Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
           "hinge_question": "Why was the introduction of the secret ballot box the decisive turning point that allowed the working class to vote freely?",
-          "image": "/images/secret_ballot.jpg",
-          "caption": "Source E: The historic tin ballot box and wax seals used at the Pontefract municipal by-election on 15 August 1872, the first election conducted under the Ballot Act.",
+          "image": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+          "caption": "Source E: The historic locked wooden ballot box and liquorice-stamp red wax seals preserved at Pontefract Museum (Wakefield Museums), used on 15 August 1872 at the Pontefract parliamentary by-election—the first British election held under the Ballot Act 1872.",
           "question_badge": "Technology & Democracy",
           "question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
           "enquiry_question": "Why was this simple tin box with wax seals such an important turning point for British democracy?",
@@ -6797,7 +7579,8 @@ export default {
           },
           "id": "iae_l5_src_e",
           "type": "visual",
-          "src": "/images/secret_ballot.jpg"
+          "src": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+          "image_alt": "Photograph at Pontefract Museum of the dark-varnished wooden ballot box with slotted lid, keyhole, red liquorice-stamp wax seals, and turned wooden hand-stamp used in Britain’s first secret-ballot parliamentary by-election on 15 August 1872"
         }
       ],
       "visual_story_sheet": {
@@ -6808,7 +7591,7 @@ export default {
         "topicLabel": "Reform Acts, Chartism & Secret Ballot",
         "title": "How Did Britain Move from Rotten Boroughs Toward Modern Democracy?",
         "spokenTitle": "How did Britain move from rotten boroughs toward modern democracy?",
-        "thumbUrl": "/images/chartist_demo.jpg",
+        "thumbUrl": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
         "provenanceNote": "Verified electoral maps, lithographs, and Pontefract ballot records from the National Archives, Royal Collection, and Wakefield Museums.",
         "bridges": [
           "Riots & gold bank run →",
@@ -6822,7 +7605,7 @@ export default {
             "badge": "Stage 1",
             "heading": "Rotten Boroughs & No MPs",
             "date": "1800–1830",
-            "img": "/images/map_rotten_boroughs.jpg",
+            "img": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
             "mode": "contain-light",
             "stat": "Under 5% Voted While Manchester Had Zero MPs",
             "html": "Before 1832, <strong>under five percent</strong> of adults could vote. Empty <strong>rotten boroughs</strong> like Old Sarum had two MPs, while booming <strong>Manchester</strong> had none.",
@@ -6858,7 +7641,7 @@ export default {
             "badge": "Stage 4",
             "heading": "Chartism’s Six Demands",
             "date": "1838–1848",
-            "img": "/images/chartist_demo.jpg",
+            "img": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
             "mode": "landscape",
             "stat": "3 Giant Petitions Signed by Millions of Workers",
             "html": "Shut out in 1832, <strong>Chartists</strong> launched the <strong>1838 People’s Charter</strong>. Millions signed three giant petitions demanding <strong>votes for all men</strong>, paid MPs, and secret ballots.",
@@ -6870,7 +7653,7 @@ export default {
             "badge": "Stage 5",
             "heading": "1872 Secret Ballot Act",
             "date": "1872",
-            "img": "/images/secret_ballot.jpg",
+            "img": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
             "mode": "contain",
             "stat": "Private Booths Ended Open Bribery & Evictions",
             "html": "Before 1872, public voting on <strong>open hustings</strong> let bosses and landlords bully voters. Gladstone’s <strong>1872 Ballot Act</strong> introduced locked boxes and <strong>private booths</strong>.",
@@ -6911,11 +7694,14 @@ export default {
       "vocab_cloze_text": "Before 1832, tiny villages like Old Sarum elected MPs as a [Rotten Borough] or landlord-owned [Pocket Borough], while growing factory cities had none. Public pressure forced through the [1832 Great Reform Act], beginning gradual [Franchise Expansion] for middle-class men, though open voting at noisy [Hustings] still allowed bribery until the [Secret Ballot Act 1872] protected voters in private booths.",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg",
-        "caption": "The House of Commons, 1833 (The Meeting of the First Reformed Parliament)",
-        "position": "center 30%"
+        "alt": "Sir George Hayter’s oil painting of nearly four hundred MPs seated in dark coats beneath tall arched windows and galleries during the first sitting of the newly reformed House of Commons in February 1833",
+        "caption": "Sir George Hayter, The House of Commons, 1833 (National Portrait Gallery NPG 54): Commemorating the first session of the reformed Parliament at St Stephen’s Chapel on 5 February 1833 following passage of the 1832 Great Reform Act.",
+        "position": "center 45%"
       },
       "banner_image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg",
-      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg"
+      "hero_image": "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg",
+      "banner_position": "center 45%",
+      "card_image": "/images/ks3_ind/ind_l5_card_old_sarum_constable.jpg"
     }
   ],
   "glossary": [
@@ -7085,8 +7871,8 @@ export default {
       "lesson_index": 0,
       "book_title": "Coalbrookdale by Night: Eyewitness Impressions of the Iron Gorge",
       "author": "Adapted from 18th-Century Travellers at Coalbrookdale (1776–1801)",
-      "cover_image": "/images/coalbrookdale_by_night.jpg",
-      "cover_caption": "Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801), Science Museum, London. Blast furnaces illuminating the Severn Gorge.",
+      "cover_image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+      "cover_caption": "Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London): Coke-fired Shropshire blast furnaces illuminating the Severn Gorge day and night.",
       "author_context": "Daniel Defoe (c. 1660–1731), celebrated author and perceptive economic traveller, journeyed across 18th-century Britain recording its nascent industrial and metallurgical energy. Later observers of Abraham Darby's Coalbrookdale and Matthew Boulton's Soho Manufactory recorded the astonishing sight of coal and iron transforming ancient woodlands into subterranean cauldrons of steam and fire.",
       "is_adapted": true,
       "extract": "...The approach to Coalbrookdale appeared like a vision of subterranean fire. As night fell upon the Severn valley, dense columns of black smoke curled into the heavens, illuminated from below by the blinding crimson glare of the blast furnaces. The ground beneath our feet trembled with the rhythmic thud of colossal iron hammers driven by water and steam.<br><br>Here, night and day, the roaring bellows urge the fire to an intolerable fury. Rivers of liquid iron pour from the stone hearths into the casting beds of sand, casting a lurid, unearthly glow across the swarthy figures of the workmen who guide the molten metal with long iron rods.<br><br>It seemed to the traveller as if the bowels of the earth had broken open, and that Vulcan with all his Cyclopes had established his empire upon the hills of Shropshire. What was once quiet English woodland is now an unceasing foundry of national wealth.",
@@ -7137,14 +7923,15 @@ export default {
           "question": "What environmental and human changes came alongside this new \"foundry of national wealth\"?",
           "answer": "Quiet rural valleys were transformed into smoky industrial landscapes where workers laboured long, dangerous shifts beside molten metal."
         }
-      ]
+      ],
+      "short_tab_title": "1. Coalbrookdale by Night"
     },
     {
       "lesson_index": 1,
       "book_title": "A Memoir of Robert Blincoe, an Orphan Boy",
       "author": "Robert Blincoe (recorded by John Brown)",
-      "cover_image": "/images/child_labour.jpg",
-      "cover_caption": "Young child labourers working underneath spinning mules in a 19th-century cotton factory.",
+      "cover_image": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+      "cover_caption": "Auguste Hervieu, \"Love Conquered Fear\" (from Frances Trollope’s Michael Armstrong, 1840): Barefoot child operatives and a young scavenger crawling beneath moving cotton-mill spinning mules.",
       "author_context": "Robert Blincoe (c. 1792–1860) was a London workhouse orphan apprenticed at age seven to work in northern cotton mills in Nottinghamshire and Derbyshire. His published testimony before parliamentary commissioners shocked Victorian Britain and directly spurred Lord Shaftesbury's factory reform campaigns.",
       "is_adapted": true,
       "extract": "The children were aroused from their beds at five o'clock in the morning by the ringing of the factory bell. If any boy or girl was late by even two minutes, the heavy leather strap was laid unmercifully across their shoulders by the overlooker.<br><br>Our work as scavengers was to creep beneath the revolving machinery while the cotton mules were in full, rapid motion, sweeping up the flying dust and loose cotton fibres. The deafening roar of hundreds of whirling spindles filled the air, and the heat in the spinning rooms was kept at eighty degrees so that the threads would not snap.<br><br>...Many a time have I seen a poor child, overcome by utter fatigue, drop his head against the frame and fall asleep while standing. In an instant, the iron cog would seize his fingers or hair, and a limb would be torn away before the engine could be halted. We were fed on coarse oatcakes and pig porridge, working fourteen hours a day without respite.",
@@ -7195,14 +7982,15 @@ export default {
           "question": "How did testimonies like Robert Blincoe’s eventually help bring about Parliamentary Factory Acts (such as the 1833 Factory Act)?",
           "answer": "Shocking eyewitness evidence before MPs exposed the cruelty of child mill labour, forcing Parliament to ban under-nines in textile mills and appoint factory inspectors."
         }
-      ]
+      ],
+      "short_tab_title": "2. Robert Blincoe’s Memoir"
     },
     {
       "lesson_index": 2,
       "book_title": "Report on the Sanitary Condition of the Labouring Population",
       "author": "Sir Edwin Chadwick",
-      "cover_image": "/images/chadwick.jpg",
-      "cover_caption": "Sir Edwin Chadwick KCB (1800–1890), pioneering public health reformer whose data forced Britain to build modern sewers.",
+      "cover_image": "/images/ks3_ind/ind_l3_b3_edwin_chadwick_portrait.jpg",
+      "cover_caption": "Sir Edwin Chadwick KCB (1800–1890, Wellcome Collection M0010963), whose landmark 1842 Sanitary Report exposed the collapse of urban working-class life expectancy.",
       "author_context": "Edwin Chadwick was Secretary to the Poor Law Commission. His landmark 1842 report utilized empirical statistics and medical interviews to prove that life expectancy in industrial slums had collapsed due to contaminated water, unpaved alleys, and rotting cesspools.",
       "is_adapted": true,
       "extract": "...In the crowded courts and cellar dwellings of Manchester, Liverpool, and Leeds, the primary source of pestilence is the total absence of drainage and clean water. The privies are universally foul, overflowing into the courtyards where children play barefoot in stagnant pools of excrement and putrid refuse.<br><br>In one narrow alley in Leeds, thirty-four houses with over two hundred inhabitants were found to possess but a single privy, which had not been emptied for three years. The air is so thick with noxious miasma and decaying animal matter that the inhabitants suffer from continual typhus, cholera, and consumption.<br><br>The statistical evidence proves beyond contradiction that the average age at death of a labourer in Manchester is but seventeen years, compared to thirty-eight years for an agricultural worker in rural Rutland. More lives are destroyed annually in England by filth and preventable disease than were lost in any war in which the country has been engaged in modern times.",
@@ -7253,14 +8041,15 @@ export default {
           "question": "Even though Chadwick still believed in \"miasma\" (bad air), why did his 1842 Report save lives?",
           "answer": "His hard data proved poverty and sickness were caused by filthy environments rather than laziness, leading to the 1848 Public Health Act."
         }
-      ]
+      ],
+      "short_tab_title": "3. Chadwick’s 1842 Report"
     },
     {
       "lesson_index": 3,
       "book_title": "The Azamgarh Proclamation",
       "author": "Firoz Shah & Leaders of the 1857 Indian Uprising",
-      "cover_image": "/images/indian_rebellion_1857.jpg",
-      "cover_caption": "Contemporary print depicting the fierce clashes of the 1857 Indian Rebellion across northern India.",
+      "cover_image": "/images/ks3_ind/ind_l4_b4_tolpuddle_six_cottages.jpg",
+      "cover_caption": "Thompson Dagnall’s limestone sculpture of George Loveless and the Six Men of Dorset outside the TUC Tolpuddle Martyrs Memorial Cottages, commemorating working-class resistance to state repression.",
       "author_context": "In August 1857, as Indian insurgents held Delhi against the British East India Company, Prince Firoz Shah published the Azamgarh Proclamation. Written in Urdu and Persian, it systematically catalogued how British corporate rule had dispossessed Indian rulers, ruined native artisans, and violated religious faith.",
       "is_adapted": true,
       "extract": "It is well known to all, that in this age the people of Hindostan, both Hindoos and Mahommedans, are being ruined under the tyranny and oppression of the treacherous English. It is therefore the bounden duty of all wealthy men and princes to risk their life and property for the common good.<br><br><em>Section I: Regarding the Zamindars.</em> The British Government has dispossessed the ancient landlords, imposing exorbitant land taxes and selling off ancestral estates at public auction upon the slightest delay in payment... Under our royal government, their hereditary honours and estates shall be confirmed forever.<br><br><em>Section II: Regarding the Merchants.</em> The British have monopolized all valuable trade—indigo, opium, cloth, and salt—leaving only petty commerce to native merchants. Furthermore, by importing cheap machine-made goods from England, they have impoverished millions of native weavers and craftsmen.<br><br><em>Section III: Regarding the Sepoys.</em> The British have broken their most sacred oaths, dishonouring the religious caste and faith of both Hindoos and Muslims by their defiled cartridges. Let all brave soldiers unite to expel the foreign rulers.",
@@ -7311,14 +8100,15 @@ export default {
           "question": "Why is reading an Indian rebel proclamation essential alongside British accounts of 1857?",
           "answer": "British officials dismissed the uprising as a mere military \"Mutiny,\" whereas rebel manifestos reveal broad political, economic, and religious grievances against Company rule."
         }
-      ]
+      ],
+      "short_tab_title": "4. Protest & Popular Voice"
     },
     {
       "lesson_index": 4,
       "book_title": "Passages in the Life of a Radical",
       "author": "Samuel Bamford",
-      "cover_image": "/images/chartist_demo.jpg",
-      "cover_caption": "Contemporary print of working-class political reform demonstrations demanding the right to vote.",
+      "cover_image": "/images/ks3_ind/ind_l4_b1_peterloo_dreadful_scene_1819.jpg",
+      "cover_caption": "Contemporary hand-coloured broadside engraving (27 August 1819) showing peaceful Lancashire reformers led by Samuel Bamford and Henry Hunt charged by Manchester Yeomanry sabres at St Peter’s Field.",
       "author_context": "Samuel Bamford (1788–1872) was a Lancashire weaver and radical reformer who organized the Middleton contingent of 6,000 peaceful men, women, and children marching to St Peter's Field in Manchester on 16 August 1819 to demand parliamentary reform.",
       "is_adapted": true,
       "extract": "It was a bright, sunny morning. We assembled in the market square at Middleton, six thousand strong, dressed in our clean Sunday suits, with sprigs of laurel and rosemary in our buttonholes. We carried banners of green and white silk bearing the words: 'Annual Parliaments' and 'Liberty and Fraternity'. Before marching, I strictly commanded that not a single stick or weapon should be borne; our weapon was the moral righteousness of our cause.<br><br>When we reached St. Peter's Field, over sixty thousand souls were gathered in peaceful order, listening with bated breath to Mr. Henry Hunt as he stepped upon the hustings.<br><br>Suddenly, a heavy clatter of hooves echoed down the street. The Manchester Yeomanry Cavalry rode into the crowd at a fierce trot, their sabres drawn and glittering in the midday sun. 'Forward!' shouted their commander. In a moment they were hacking right and left at the defenceless throng. Shrieks of terror and groans of agony rose from the crushed multitude. Women and children were trampled beneath the charging horses. Within ten minutes, the field was a shambles of blood, torn banners, and groaning wounded.",
@@ -7369,7 +8159,8 @@ export default {
           "question": "Why did journalists nickname the atrocity \"Peterloo,\" and what long-term change did it help inspire?",
           "answer": "Mocking the cavalry by comparing their attack on unarmed families to the Battle of Waterloo, public outrage strengthened the push for parliamentary reform (1832 Reform Act and Chartism)."
         }
-      ]
+      ],
+      "short_tab_title": "5. Bamford at Peterloo (1819)"
     }
   ],
   "edition": "2026.1",
