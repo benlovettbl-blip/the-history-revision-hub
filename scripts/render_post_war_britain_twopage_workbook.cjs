@@ -615,6 +615,7 @@ const enquiryConfigs = [
       'In December 1982, over 30,000 women joined hands to "Embrace the Base" at RAF Greenham Common, protesting against American nuclear cruise missiles.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('post_war_britain', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('post_war_britain', enquiryConfigs);

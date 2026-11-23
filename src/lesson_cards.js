@@ -4,19 +4,22 @@ import { getIconicLessonVisuals } from './data/iconic_lesson_visuals.js';
 
 export function getLessonEnquiryQuestion(lesson) {
   if (!lesson) return '';
-  if (lesson.enquiry_question && typeof lesson.enquiry_question === 'string') {
-    return lesson.enquiry_question.trim();
-  }
-  if (lesson.enquiryQuestion && typeof lesson.enquiryQuestion === 'string') {
-    return lesson.enquiryQuestion.trim();
-  }
   if (lesson.enquiry && typeof lesson.enquiry === 'string') {
     const text = lesson.enquiry.trim();
     if (text.split(/\s+/).length > 35) {
       const qMatch = text.match(/([^.?!]+[?])/g);
       if (qMatch && qMatch.length > 0) return qMatch[qMatch.length - 1].trim();
     }
-    return text;
+    if (text) return text;
+  }
+  if (lesson.enquiry_question && typeof lesson.enquiry_question === 'string' && lesson.enquiry_question.trim()) {
+    return lesson.enquiry_question.trim();
+  }
+  if (lesson.enquiryQuestion && typeof lesson.enquiryQuestion === 'string' && lesson.enquiryQuestion.trim()) {
+    return lesson.enquiryQuestion.trim();
+  }
+  if (lesson.inquiry_question && typeof lesson.inquiry_question === 'string' && lesson.inquiry_question.trim()) {
+    return lesson.inquiry_question.trim();
   }
   if (lesson.hook_text && typeof lesson.hook_text === 'string') {
     const qMatch = lesson.hook_text.trim().match(/([^.?!]+[?])/g);

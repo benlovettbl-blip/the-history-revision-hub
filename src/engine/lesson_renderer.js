@@ -668,7 +668,8 @@ export function renderLesson(lesson) {
     return getWbThinStripStylesHTML();
   };
 
-  let headerEnquiry = lesson.enquiry || lesson.enquiry_question || lesson.inquiry_question;
+  let headerEnquiry =
+    lesson.enquiry || lesson.enquiry_question || lesson.enquiryQuestion || lesson.inquiry_question;
   let targetText = headerEnquiry || lesson.title || '';
   if (targetText && targetText.length > 90) {
     targetText = lesson.title || targetText;
@@ -840,7 +841,7 @@ export function renderLesson(lesson) {
     /^(?:How|Why|Who|What|Where|When|Was|Were|To what extent)\b/i.test(cleanLessonHeading);
 
   const enquiryText =
-    lesson.enquiryQuestion || lesson.enquiry_question || lesson.inquiry_question || lesson.enquiry || '';
+    lesson.enquiry || lesson.enquiry_question || lesson.enquiryQuestion || lesson.inquiry_question || '';
 
   let enquirySubtitle = '';
   if (isKs2 && enquiryText) {
@@ -6845,116 +6846,9 @@ export function renderLesson(lesson) {
         )
       : [];
 
-  // Build unified Workbook Map Task strips (e.g. cme_new L1 Map Tasks 1 & 2, and L2/L10/L12 secondary_map strips)
   const unifiedMapStripItems = [];
-  if (!isKs3 && !isKs2) {
-    if (lesson.extended && lesson.extended.question && /map\s*task/i.test(lesson.extended.title || '')) {
-      const ext = lesson.extended;
-      let sourceHtml = '';
-      if (ext.source_a || ext.source_b) {
-        sourceHtml = `<div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 12px 0;">`;
-        [
-          ['Source A', ext.source_a],
-          ['Source B', ext.source_b],
-        ].forEach(([lbl, sObj]) => {
-          if (!sObj) return;
-          const prov = typeof sObj === 'string' ? '' : sObj.provenance;
-          const content = typeof sObj === 'string' ? sObj : sObj.content;
-          const isImg =
-            typeof content === 'string' && /\.(?:png|jpe?g|webp|svg)$/i.test(content.trim());
-          const rendered = isImg
-            ? `<div style="text-align: center;"><img src="${getAssetUrl(content)}" style="max-width: 100%; max-height: 460px; object-fit: contain; border-radius: 6px; border: 1.5px solid #cbd5e1; cursor: zoom-in;" data-action="open-modal" data-src="${getAssetUrl(content)}" alt="${lbl}"></div>`
-            : String(content || '').replace(/\n/g, '<br>');
-          sourceHtml += `<div style="flex: 1 1 250px;"><strong style="color:#1e3a8a;display:block;margin-bottom:6px;">${lbl}</strong>${prov ? `<div style="color:#475569;margin-bottom:10px;font-style:italic;font-size:0.9rem;">${prov}</div>` : ''}<div style="border:1.5px solid #cbd5e1;border-radius:10px;padding:16px;background:#ffffff;">${rendered}</div></div>`;
-        });
-        sourceHtml += `</div>`;
-      }
-      const extUid = `ext_map_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}`;
-      const hasExtWb = Array.isArray(ext.word_bank) && ext.word_bank.length > 0;
-      const hasExtHints = Array.isArray(ext.hints) && ext.hints.length > 0;
-      unifiedMapStripItems.push({
-        tariffTag: 'Map Task 1',
-        stemPreview: cleanStemForStripSummary(ext.title || ext.question || 'Map Task 1'),
-        bodyHtml: `
-          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
-              <div style="font-weight: 700; font-size: 1.02rem; color: #0f172a; flex: 1 1 260px;">
-                ${formatBold(ext.question)}
-              </div>
-              <div style="display: inline-flex; flex-wrap: wrap; gap: 6px;">
-                ${ext.answer_image ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="extended-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
-                <button type="button" class="btn btn-pedagogy btn-pedagogy-sm" style="background: #0284c7; color: #ffffff; border: 1px solid #0369a1;" data-action="toggle-element" data-target-id="extended-map-interactive-${lesson.id}"><i class="fa-solid fa-earth-americas"></i> Interactive Classroom Map</button>
-              </div>
-            </div>
-            ${sourceHtml}
-            ${hasExtWb || hasExtHints ? `
-              <div class="no-print" style="margin: 8px 0;">
-                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                  ${hasExtWb ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ext-wb-${extUid}" style="background:#f0fdfa;color:#0f766e;border:1px solid #99f6e4;font-weight:700;"><i class="fa-solid fa-tags"></i> Word Bank</button>` : ''}
-                  ${hasExtHints ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ext-hints-${extUid}" style="background:#f1f5f9;color:#1e3a8a;border:1px solid #cbd5e1;font-weight:600;"><i class="fa-solid fa-lightbulb"></i> Map Checklist</button>` : ''}
-                </div>
-                ${hasExtWb ? `<div id="ext-wb-${extUid}" class="scaffold-box" style="display:none;background:#f8fafc;border:1.5px solid #99f6e4;border-radius:8px;padding:10px 14px;margin-top:8px;"><div style="display:flex;flex-wrap:wrap;gap:6px;">${ext.word_bank.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" style="background:#f0fdfa;border:1px solid #99f6e4;color:#115e59;font-size:0.8rem;font-weight:700;padding:2px 9px;border-radius:12px;">${w}</span>`).join('')}</div></div>` : ''}
-                ${hasExtHints ? `<div id="ext-hints-${extUid}" class="scaffold-box" style="display:none;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:10px 14px;margin-top:8px;"><ul style="margin:0;padding-left:20px;color:#92400e;font-size:0.88rem;line-height:1.5;">${ext.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>` : ''}
-              </div>
-            ` : ''}
-            ${ext.answer_image ? `
-              <div id="extended-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 12px; border: 2px solid #16a34a; border-radius: 8px; padding: 14px; background: #f0fdf4;">
-                <strong style="color: #166534; font-size: 0.96rem; display: block; margin-bottom: 8px;"><i class="fa-solid fa-circle-check"></i> Reference Map:</strong>
-                <div style="text-align: center;"><img src="${getAssetUrl(ext.answer_image)}" data-action="open-modal" data-src="${getAssetUrl(ext.answer_image)}" style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 6px; border: 1px solid #86efac; cursor: zoom-in;" /></div>
-              </div>
-            ` : ''}
-            <div id="extended-map-interactive-${lesson.id}" style="display:none; margin-top: 12px; border: 2px solid #0284c7; border-radius: 8px; padding: 14px; background: #f0f9ff;">
-              <div style="width: 100%; height: 400px; border-radius: 6px; overflow: hidden; border: 1.5px solid #0284c7;">
-                <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=25.0%2C20.0%2C55.0%2C38.0&amp;layer=mapnik&amp;marker=31.5%2C35.0" style="border: 0;"></iframe>
-              </div>
-            </div>
-          </div>
-        `,
-      });
-    }
 
-    if (lesson.secondary_map) {
-      const sm = lesson.secondary_map;
-      const smContent = sm.source_a
-        ? typeof sm.source_a === 'string'
-          ? sm.source_a
-          : sm.source_a.content
-        : '';
-      const smHints =
-        sm.hints && sm.hints.length > 0
-          ? `<div style="margin-top: 12px; padding: 10px 14px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px;"><strong style="color: #d97706;">Hints:</strong><ul style="margin: 5px 0 0 0; padding-left: 20px; color: #92400e; font-size: 0.9rem;">${sm.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>`
-          : '';
-      unifiedMapStripItems.push({
-        tariffTag: unifiedMapStripItems.length > 0 ? 'Map Task 2' : 'Map Task',
-        stemPreview: cleanStemForStripSummary(sm.title || sm.instructions || sm.question || 'Map Task'),
-        bodyHtml: `
-          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-              <div style="font-weight: 700; font-size: 1.04rem; color: #1e3a8a;">${sm.title || 'Workbook Map Task'}</div>
-              ${sm.answer_image ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="secondary-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
-            </div>
-            <p style="font-size: 0.95rem; color: #334155; line-height: 1.5; margin-bottom: 12px;">${formatBold(sm.instructions || sm.question || '')}</p>
-            ${smContent ? `<div style="text-align: center; margin: 12px 0; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px; background: #f8fafc;"><img src="${getAssetUrl(smContent)}" data-action="open-modal" data-src="${getAssetUrl(smContent)}" style="max-width: 100%; max-height: 480px; object-fit: contain; border-radius: 4px; cursor: zoom-in;" alt="${sm.title || 'Map Task'}"></div>` : ''}
-            ${smHints}
-            ${sm.answer_image ? `
-              <div id="secondary-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 14px; border: 2px solid #16a34a; border-radius: 8px; padding: 14px; background: #f0fdf4;">
-                <strong style="color: #166534; font-size: 0.98rem; display: block; margin-bottom: 8px;"><i class="fa-solid fa-circle-check"></i> Reference Map${sm.macro_map ? 's' : ''}</strong>
-                <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;">
-                  <div style="flex: 1 1 280px; text-align: center;">
-                    <img src="${getAssetUrl(sm.answer_image)}" data-action="open-modal" data-src="${getAssetUrl(sm.answer_image)}" style="max-width: 100%; max-height: 460px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0; cursor: zoom-in;" alt="Reference Map">
-                  </div>
-                  ${sm.macro_map ? `<div style="flex: 1 1 280px; text-align: center;"><img src="${getAssetUrl(sm.macro_map)}" data-action="open-modal" data-src="${getAssetUrl(sm.macro_map)}" style="max-width: 100%; max-height: 460px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0; cursor: zoom-in;" alt="Regional Reference Map"></div>` : ''}
-                </div>
-                ${sm.historical_notes ? `<div style="margin-top: 10px; padding: 10px; background: #ffffff; border: 1px solid #86efac; border-radius: 6px; font-size: 0.9rem; color: #14532d; line-height: 1.45;"><strong>Historical Context:</strong> ${sm.historical_notes}</div>` : ''}
-              </div>
-            ` : ''}
-          </div>
-        `,
-      });
-    }
-  }
-
-  if ((lesson.exam_practice || preFetchedExtraMocks.length > 0 || unifiedMapStripItems.length > 0) && (!isKs3 || !hasRenderableTasks)) {
+  if ((lesson.exam_practice || preFetchedExtraMocks.length > 0) && (!isKs3 || !hasRenderableTasks)) {
     let epQuestions = [];
     let epStimulus = [];
     if (Array.isArray(lesson.exam_practice)) {

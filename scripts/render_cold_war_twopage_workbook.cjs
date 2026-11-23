@@ -648,6 +648,7 @@ const enquiryConfigs = [
       'At its peak in 1986, the global nuclear stockpile reached over 70,000 active nuclear warheads—enough to obliterate human civilization dozens of times over.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('cold_war', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('cold_war', enquiryConfigs);

@@ -205,7 +205,7 @@ const medievalConfigs = [
     keyTopicBadge: 'KEY TOPIC 1.2',
     title: 'KT1.2: Rational Explanations: Hippocrates, Galen & The Four Humours',
     enquiryQuestion:
-      'Why did the Theory of the Four Humours dominate rational medicine for centuries?',
+      'Why did ancient ideas like the Four Humours and miasma dominate medieval medicine?',
     specAnchor:
       'Rational explanations: Four Humours (Hippocrates), Theory of Opposites (Galen), Miasma; diagnostic tools.',
     tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
@@ -601,6 +601,7 @@ const medievalConfigs = [
     ],
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('edexcel_medicine', medievalConfigs, { slice: [0, 5] });
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('edexcel_medicine', medievalConfigs);

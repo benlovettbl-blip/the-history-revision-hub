@@ -293,7 +293,7 @@ export default {
     {
       "id": "lesson_1",
       "title": "The Reformation & The Break with Rome (1517–1547)",
-      "enquiry": "Why did Henry VIII break with Rome, and how was Royal Supremacy established?",
+      "enquiry": "Why did Henry VIII break with Rome and destroy the monasteries?",
       "subtitle": "From Martin Luther’s Hammer to Henry VIII’s Crowned Supremacy",
       "skill": "Causation & Motivation",
       "card_image": "/images/ks3_mrp/mrp_l1_card_field_of_cloth_of_gold_1520.jpg",
@@ -2060,12 +2060,14 @@ export default {
       "vocab_cloze_text": "Sparked across Europe by Martin Luther’s attack on papal abuses in 1517, the [Reformation] collided with Henry VIII’s [Dynastic] need for a male heir. When the [Papacy] refused to grant a royal [Annulment] of Henry’s marriage to Catherine of Aragon, Thomas Cromwell steered laws through Parliament ending Rome’s rule. The 1534 Act of [Supremacy] and the [Dissolution] of the monasteries transferred vast church wealth to the Crown.",
       "banner_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
       "hero_image": "/images/upgraded/ks3-early/mrp_l1_banner_henry_viii_dover.jpg",
-      "banner_position": "center 46%"
+      "banner_position": "center 46%",
+      "enquiry_question": "Why did Henry VIII break with Rome and destroy the monasteries?",
+      "enquiryQuestion": "Why did Henry VIII break with Rome and destroy the monasteries?"
     },
     {
       "id": "lesson_2",
       "title": "Elizabeth I & The Middle Way (1558–1588)",
-      "enquiry": "How did Elizabeth I navigate religious divisions through the 1559 Via Media?",
+      "enquiry": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
       "subtitle": "From the Fires of Smithfield to the Golden Age Settlement",
       "skill": "Historical Significance & Compromise",
       "card_image": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
@@ -3743,12 +3745,14 @@ export default {
       "vocab_cloze_text": "Inheriting a divided kingdom in 1558, Elizabeth I sought religious stability through her [Via Media] settlement. Taking the careful title of [Supreme Governor], she enforced common prayer-book worship through the 1559 Act of [Uniformity] while fining any Catholic [Recusant] who stayed away. After the Pope’s 1570 decree of [Excommunication] encouraged Catholic plots, Sir Francis Walsingham used [Espionage] and codebreaking to protect the Queen.",
       "banner_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
       "hero_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
-      "banner_position": "center 28%"
+      "banner_position": "center 28%",
+      "enquiry_question": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
+      "enquiryQuestion": "How did Elizabeth I try to settle England’s religious divisions after 1558?"
     },
     {
       "id": "lesson_3",
       "title": "The Spanish Armada & Naval Warfare (1588)",
-      "enquiry": "Why was Philip II’s Armada defeated, and how did naval strategy transform warfare?",
+      "enquiry": "Why did Philip II’s Spanish Armada fail to invade England in 1588?",
       "subtitle": "From Drake’s Fireships to the Protestant Wind",
       "skill": "Causation & Strategic Evaluation",
       "card_image": "/images/ks3_mrp/mrp_l3_card_armada_gravelines_broadsides_1588.jpg",
@@ -5432,12 +5436,14 @@ export default {
       "vocab_cloze_text": "In 1588, Philip II of Spain launched a Catholic [Crusade] to overthrow Elizabeth I, despite English [Privateer] Francis Drake raiding Spanish supplies at Cadiz in 1587. In the English Channel, nimble race-built warships outmanoeuvred each towering Spanish [Galleon], firing long-range [Broadside] volleys. On the night of 7–8 August, eight blazing [Fireship] vessels scattered Spain’s fleet at Calais before Atlantic storms completed what Protestants hailed as divine [Providence].",
       "banner_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
       "hero_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiry_question": "Why did Philip II’s Spanish Armada fail to invade England in 1588?",
+      "enquiryQuestion": "Why did Philip II’s Spanish Armada fail to invade England in 1588?"
     },
     {
       "id": "lesson_4",
       "title": "The Civil War, Regicide & The Bill of Rights (1642–1689)",
-      "enquiry": "Why did the collision over Divine Right lead to the trial and execution of Charles I?",
+      "enquiry": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
       "subtitle": "From the Battle of Naseby to Parliamentary Sovereignty",
       "skill": "Causation & Constitutional Change",
       "card_image": "/images/ks3_mrp/mrp_l4_card_cromwell_at_dunbar_gow.jpg",
@@ -7014,12 +7020,14 @@ export default {
       "vocab_cloze_text": "Believing firmly in the [Divine Right] of kings, Charles I governed without Parliament during eleven years of [Personal Rule] and collected unpopular [Ship Money] taxes inland. Civil war broke out in 1642, and Oliver Cromwell’s disciplined [New Model Army] crushed royalist forces at Naseby. Charles’s trial and [Regicide] in January 1649 shocked Europe, paving the way by 1689 for William and Mary to accept Parliament’s [Bill of Rights].",
       "banner_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
       "hero_image": "/images/upgraded/ks3-early/mrp_l4_banner_william_landing_torbay_1688.jpg",
-      "banner_position": "center 72%"
+      "banner_position": "center 72%",
+      "enquiry_question": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
+      "enquiryQuestion": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?"
     },
     {
       "id": "lesson_5",
-      "title": "Crown, Church, or Parliament? (1517–1689)",
-      "enquiry": "Which turning point decisively transformed the English state between 1517 and 1689?",
+      "title": "Shifting Power: Crown, Church & Parliament (1517–1689)",
+      "enquiry": "Which turning point shifted power most decisively from monarchs to Parliament?",
       "subtitle": "The 170-Year Struggle for Sovereign Power in Britain",
       "skill": "Synoptic Evaluation & Extent of Change",
       "card_image": "/images/ks3_mrp/mrp_l5_card_charles_i_house_of_commons_copley.jpg",
@@ -8759,7 +8767,9 @@ export default {
       "vocab_cloze_text": "Between 1517 and 1689, supreme [Sovereignty] in England shifted decisively away from royal [Absolutism]. Henry VIII relied on written [Statute Law] in Parliament to break with Rome, creating a lasting [Precedent] that major religious and tax changes needed MPs’ consent. After Stuart civil war and the republican [Commonwealth], the Glorious Revolution of 1688–89 established a permanent [Constitutional Monarchy] under parliamentary supremacy.",
       "banner_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
       "hero_image": "/images/upgraded/ks3-early/mrp_l5_banner_hollar_westminster_1647.jpg",
-      "banner_position": "center 24%"
+      "banner_position": "center 24%",
+      "enquiry_question": "Which turning point shifted power most decisively from monarchs to Parliament?",
+      "enquiryQuestion": "Which turning point shifted power most decisively from monarchs to Parliament?"
     }
   ],
   "homepage_background": "/images/family_of_henry_viii_c1545.jpg",

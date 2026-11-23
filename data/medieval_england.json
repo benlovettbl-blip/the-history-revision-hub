@@ -374,7 +374,7 @@
   "lessons": [
     {
       "id": "lesson_1",
-      "title": "1066 & The Battle of Hastings: Why did William win?",
+      "title": "1066 & The Battle of Hastings",
       "enquiry": "Why did William of Normandy win the Battle of Hastings in 1066?",
       "subtitle": "From the Succession Crisis of Edward the Confessor to the Shield Wall at Senlac Hill",
       "skill": "Causation & Battlefield Tactics",
@@ -2194,12 +2194,14 @@
       },
       "vocab_cloze_text": "When Edward the Confessor died childless in January 1066, a fierce [Succession] crisis erupted despite the [Witan] electing Harold Godwinson as king. After marching north to defeat Harald Hardrada, Harold’s exhausted peasant [Fyrd] and axe-wielding [Housecarl] bodyguards formed a tight shield wall at Hastings on 14 October. Duke William finally broke their line using the clever [Feigned Retreat] trick.",
       "banner_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
+      "enquiry_question": "Why did William of Normandy win the Battle of Hastings in 1066?",
+      "enquiryQuestion": "Why did William of Normandy win the Battle of Hastings in 1066?"
     },
     {
       "id": "lesson_2",
-      "title": "Castles, Terror & Domesday: How did the Normans subjugate England?",
-      "enquiry": "How did a minority Norman elite of fewer than 10,000 soldiers control two million hostile Anglo-Saxons?",
+      "title": "Castles, Terror & The Domesday Book (1066–1086)",
+      "enquiry": "How did fewer than 10,000 Normans control two million Anglo-Saxons?",
       "subtitle": "Earthworks, Extermination, and Fiscal Surveillance",
       "skill": "Historical Analysis: Control & Subjugation",
       "card_image": "/images/ks3_med7/med7_l2_card_cliffords_tower_york_motte.jpg",
@@ -3947,12 +3949,14 @@
       },
       "vocab_cloze_text": "After Hastings, William enforced Norman [Subjugation] across England by building hundreds of timber [Motte-and-Bailey] forts, each guarded by a loyal Norman [Castellan]. When northern rebels rose up in 1069, William ordered the ruthless [Harrying] of the North, burning crops and villages across Yorkshire. Finally, in 1086, royal commissioners compiled the [Domesday Book] to tax the realm and record Norman landownership.",
       "banner_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
+      "enquiry_question": "How did fewer than 10,000 Normans control two million Anglo-Saxons?",
+      "enquiryQuestion": "How did fewer than 10,000 Normans control two million Anglo-Saxons?"
     },
     {
       "id": "lesson_3",
-      "title": "Crown vs Church: Why did Henry II clash with Thomas Becket?",
-      "enquiry": "Why did the conflict between King Henry II and Archbishop Thomas Becket erupt into murder in Canterbury Cathedral?",
+      "title": "Crown vs Church: Henry II & Thomas Becket (1154–1174)",
+      "enquiry": "Why did the quarrel between Henry II and Becket end in murder?",
       "subtitle": "Criminous Clerks, Royal Sovereignty, and the Martyrdom of 1170",
       "skill": "Historical Significance & Church-State Conflict",
       "card_image": "/images/ks3_med7/med7_l3_card_canterbury_cathedral_towers.jpg",
@@ -5538,12 +5542,14 @@
       },
       "vocab_cloze_text": "King Henry II appointed his friend Thomas Becket as Archbishop expecting help in curbing separate [Canon Law] courts. Instead, Becket defended [Benefit of Clergy], which allowed any [Criminous Clerk] accused of serious crime to escape royal hanging. Their bitter clash over the 1164 [Constitutions of Clarendon] ended in December 1170 with Becket’s [Martyrdom] inside Canterbury Cathedral, forcing Henry into barefoot penance.",
       "banner_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
+      "enquiry_question": "Why did the quarrel between Henry II and Becket end in murder?",
+      "enquiryQuestion": "Why did the quarrel between Henry II and Becket end in murder?"
     },
     {
       "id": "lesson_4",
-      "title": "Magna Carta (1215) & Medieval Kingship: Liberty or Barons’ Power Grab?",
-      "enquiry": "Was Magna Carta a revolutionary victory for human freedom or a selfish act of baronial extortion?",
+      "title": "King John & Magna Carta (1199–1225)",
+      "enquiry": "Was Magna Carta a victory for liberty or a barons’ power grab?",
       "subtitle": "Scutage, Royal Autocracy, and the Meadow of Runnymede",
       "skill": "Historical Interpretation: Liberty vs Self-Interest",
       "card_image": "/images/ks3_med7/med7_l4_card_runnymede_magna_carta_monument.jpg",
@@ -7125,12 +7131,14 @@
       },
       "vocab_cloze_text": "After losing Normandy in 1204, King John angered English barons by demanding heavy [Scutage] taxes, while his quarrel with the Pope placed England under a six-year [Interdict]. Defeat at Bouvines in 1214 forced John to Runnymede in June 1215 to seal [Magna Carta]. Clause 39 laid early foundations for [Habeas Corpus] and established the [Rule of Law] over the monarch himself.",
       "banner_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
+      "enquiry_question": "Was Magna Carta a victory for liberty or a barons’ power grab?",
+      "enquiryQuestion": "Was Magna Carta a victory for liberty or a barons’ power grab?"
     },
     {
       "id": "lesson_5",
-      "title": "The Black Death (1348) & The Peasants’ Revolt (1381): How did plague and rebellion shatter feudalism?",
-      "enquiry": "How did the demographic shock of the Black Death lead to the peasant uprising of 1381?",
+      "title": "The Black Death & The Peasants’ Revolt (1348–1381)",
+      "enquiry": "How did the Black Death spark the Peasants’ Revolt of 1381?",
       "subtitle": "Yersinia Pestis, The Statute of Labourers, and the Storming of London",
       "skill": "Causal Links & Socio-Economic Change",
       "card_image": "/images/ks3_med7/med7_l5_card_luttrell_psalter_manor_mill.jpg",
@@ -8865,7 +8873,9 @@
       },
       "vocab_cloze_text": "England’s [Demography] changed dramatically after the Black Death of 1348–49 killed over a third of the population and created acute labour shortages. Angry lords passed the 1351 [Statute of Labourers] to freeze wages and preserve [Serfdom]. When King Richard II’s government collected three unfair [Poll Tax] levies by 1381, Wat Tyler and John Ball led a dramatic peasant [Insurrection] into London.",
       "banner_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
+      "enquiry_question": "How did the Black Death spark the Peasants’ Revolt of 1381?",
+      "enquiryQuestion": "How did the Black Death spark the Peasants’ Revolt of 1381?"
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",

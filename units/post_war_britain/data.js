@@ -180,7 +180,7 @@ export default {
   "lessons": [
     {
       "id": "lesson_1",
-      "title": "Votes for Women: Were the Suffragists or Suffragettes more effective in securing the vote?",
+      "title": "Votes for Women: Suffragists, Suffragettes & 1918",
       "card_image": "/images/post_war_britain/canary_girls_chilwell_1917.jpg",
       "card_position": "center 20%",
       "prologue": "In early twentieth-century Britain, women were denied the parliamentary vote. While Millicent Fawcett’s peaceful Suffragists used patient lobbying and petitions, Emmeline Pankhurst’s militant Suffragettes turned to direct action, smashing windows, hunger strikes, and civil disobedience. Were peaceful arguments or militant headlines more effective in securing female emancipation?",
@@ -1930,11 +1930,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/pwb_l1_banner_suffragette_procession_1911.jpg",
       "hero_image": "/images/upgraded/ks3-modern/pwb_l1_banner_suffragette_procession_1911.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiry": "How did women’s campaigning and wartime work win the vote in 1918?",
+      "enquiry_question": "How did women’s campaigning and wartime work win the vote in 1918?",
+      "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?"
     },
     {
       "id": "lesson_2",
-      "title": "1945: How did the aftermath of total war build the Welfare State and the NHS?",
+      "title": "1945: Building the Welfare State & The NHS",
       "card_image": "/images/bevan_first_day_nhs_1948.jpg",
       "card_position": "center 30%",
       "prologue": "In July 1945, having survived the Blitz and total war, British voters stunned the world by voting out Winston Churchill and electing Clement Attlee’s Labour government. Based on William Beveridge's report, Labour launched the National Health Service and the Welfare State. How did wartime suffering inspire a postwar social revolution?",
@@ -3727,11 +3730,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/pwb_l2_banner_ve_day_whitehall_1945.jpg",
       "hero_image": "/images/upgraded/ks3-modern/pwb_l2_banner_ve_day_whitehall_1945.jpg",
-      "banner_position": "center 45%"
+      "banner_position": "center 45%",
+      "enquiry": "Why and how did post-war Britain create the Welfare State and free NHS?",
+      "enquiry_question": "Why and how did post-war Britain create the Welfare State and free NHS?",
+      "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?"
     },
     {
       "id": "lesson_3",
-      "title": "The Windrush Generation: Why did Britain invite Commonwealth citizens, and what did they face?",
+      "title": "The Empire Windrush & Caribbean Pioneers (1948–1959)",
       "card_image": "/images/empire_windrush_1948.jpg",
       "card_position": "center 40%",
       "prologue": "In June 1948, the Empire Windrush docked at Tilbury, carrying hundreds of Caribbean passengers invited to help rebuild war-torn Britain. Arriving as proud British subjects, Caribbean nurses, bus drivers, and railway workers faced cold weather, poor housing, and colour bars. What challenges and prejudice did the Windrush generation overcome?",
@@ -5656,11 +5662,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/pwb_l3_banner_windrush_square_brixton.jpg",
       "hero_image": "/images/upgraded/ks3-modern/pwb_l3_banner_windrush_square_brixton.jpg",
-      "banner_position": "center 48%"
+      "banner_position": "center 48%",
+      "enquiry": "Why did the Windrush generation come to Britain, and what hostility did they face?",
+      "enquiry_question": "Why did the Windrush generation come to Britain, and what hostility did they face?",
+      "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?"
     },
     {
       "id": "lesson_4",
-      "title": "The 1963 Bristol Bus Boycott & the fight for British civil rights.",
+      "title": "The 1963 Bristol Bus Boycott & Race Relations Laws",
       "card_image": "/images/bristol_bus_boycott_mural.jpg",
       "card_position": "center 30%",
       "prologue": "In 1963, the Bristol Omnibus Company refused to employ Black or Asian bus conductors, enforcing an open 'colour bar'. Inspired by Martin Luther King and Rosa Parks, local youth activists Paul Stephenson and Roy Hackett organised a citywide passenger boycott. How did community direct action force Britain’s first Race Relations Act?",
@@ -7396,11 +7405,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/pwb_l4_banner_bristol_omnibus_1960s.jpg",
       "hero_image": "/images/upgraded/ks3-modern/pwb_l4_banner_bristol_omnibus_1960s.jpg",
-      "banner_position": "center 52%"
+      "banner_position": "center 52%",
+      "enquiry": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
+      "enquiry_question": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
+      "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?"
     },
     {
       "id": "lesson_5",
-      "title": "The Cold War on the Home Front: How did nuclear paranoia shape British popular culture?",
+      "title": "Nuclear Fear, CND & Cold War Culture in Britain (1952–1983)",
       "card_image": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
       "card_position": "center center",
       "prologue": "During the Cold War, nuclear anxiety penetrated everyday British life. Schoolchildren learned to 'Duck and Cover', television broadcast chilling government survival films, and underground bunkers were dug for politicians in the Chilterns. How did the ever-present shadow of the atomic bomb transform British popular culture, protest, and domestic life?",
@@ -9295,7 +9307,10 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/pwb_l5_banner_raf_vulcan_nuclear_bomber.jpg",
       "hero_image": "/images/upgraded/ks3-modern/pwb_l5_banner_raf_vulcan_nuclear_bomber.jpg",
-      "banner_position": "center 54%"
+      "banner_position": "center 54%",
+      "enquiry": "How did the threat of nuclear war spark protest and shape British life?",
+      "enquiry_question": "How did the threat of nuclear war spark protest and shape British life?",
+      "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?"
     }
   ],
   "edition": "2026.1",

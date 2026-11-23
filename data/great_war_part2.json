@@ -1290,7 +1290,8 @@
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
       "banner_position": "center 56%",
-      "card_image": "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg"
+      "card_image": "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg",
+      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?"
     },
     {
       "id": "lesson_2_trenches_haig",
@@ -2550,8 +2551,8 @@
         }
       ],
       "subtitle": "Industrialized Attrition, The Somme Bloodbath, and the \"Lions Led by Donkeys\" Debate",
-      "enquiry": "Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?",
-      "enquiry_question": "Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?",
+      "enquiry": "Why was the Somme so costly—and does General Haig deserve the blame?",
+      "enquiry_question": "Why was the Somme so costly—and does General Haig deserve the blame?",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
         "alt": "British infantrymen crouched in a shell-torn earth trench in the foreground while a line of supporting troops advances across open Somme ground beside a white artillery shell burst at Ginchy on 9 September 1916",
@@ -2808,7 +2809,8 @@
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
       "banner_position": "center 42%",
-      "card_image": "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg"
+      "card_image": "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg",
+      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?"
     },
     {
       "id": "lesson_3_empire_troops",
@@ -4221,7 +4223,8 @@
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
       "banner_position": "center 50%",
-      "card_image": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg"
+      "card_image": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg",
+      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?"
     },
     {
       "id": "lesson_4_home_front_dora",
@@ -5237,8 +5240,8 @@
         }
       ],
       "subtitle": "The Defence of the Realm Act (DORA), Conscientious Objectors, and the Canary Girls",
-      "enquiry": "How far did the First World War transform the British state and daily life on the Home Front?",
-      "enquiry_question": "How far did the First World War transform the British state and daily life on the Home Front?",
+      "enquiry": "How far did the First World War transform life on Britain’s Home Front?",
+      "enquiry_question": "How far did the First World War transform life on Britain’s Home Front?",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
         "alt": "Rows of thousands of heavy steel high-explosive artillery shells standing upright inside the vast iron-trussed shell warehouse at National Shell Filling Factory No. 6, Chilwell, tended by female munition workers in July 1917",
@@ -5585,7 +5588,8 @@
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
       "banner_position": "center 42%",
-      "card_image": "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg"
+      "card_image": "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg",
+      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?"
     },
     {
       "id": "lesson_5_versailles",
@@ -6996,7 +7000,8 @@
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
       "banner_position": "center 55%",
-      "card_image": "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg"
+      "card_image": "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg",
+      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?"
     }
   ],
   "guided_reading": [

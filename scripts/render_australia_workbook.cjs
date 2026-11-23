@@ -591,6 +591,7 @@ const enquiryConfigs = [
       'In 1992, the High Court’s Mabo ruling officially extinguished the legal fiction of terra nullius after 222 years.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('australia', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('australia', enquiryConfigs);

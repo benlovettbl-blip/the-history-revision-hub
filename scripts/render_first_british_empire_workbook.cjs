@@ -557,6 +557,7 @@ const enquiryConfigs = [
       'When the British surrendered at Yorktown in 1781, their military band played ‘The World Turned Upside Down’.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('first_british_empire', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('first_british_empire', enquiryConfigs);

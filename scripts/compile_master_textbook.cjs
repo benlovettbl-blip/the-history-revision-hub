@@ -116,10 +116,10 @@ function cleanStageFlowLabel(rawTitle) {
 
 function getShortEnquiryQuestion(lesson, dispTitle = '') {
   const candidates = [
-    lesson.enquiryQuestion,
-    lesson.enquiry_question,
-    lesson.inquiry_question,
     lesson.enquiry,
+    lesson.enquiry_question,
+    lesson.enquiryQuestion,
+    lesson.inquiry_question,
     lesson.subtitle,
   ];
   for (const c of candidates) {

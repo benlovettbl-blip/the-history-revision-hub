@@ -3131,7 +3131,9 @@ export function renderLearningObjectivesSidebarHTML(objectivesData) {
 export function renderLearningObjectivesPanelHTML(objectivesData, lesson) {
   if (!objectivesData) return '';
   const { overarching, scaffolded } = objectivesData;
-  const enquiryPrompt = lesson && (lesson.enquiry || lesson.enquiry_question || lesson.title) ? (lesson.enquiry || lesson.enquiry_question || lesson.title) : '';
+  const resolvedLessonEnquiry =
+    lesson && (lesson.enquiry || lesson.enquiry_question || lesson.enquiryQuestion || lesson.inquiry_question);
+  const enquiryPrompt = resolvedLessonEnquiry || (lesson && lesson.title) || '';
   return `
     <div class="launchpad-objectives-panel-content" style="padding: 16px 20px; background: #ffffff;">
       <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">

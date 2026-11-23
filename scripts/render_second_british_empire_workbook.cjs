@@ -545,6 +545,7 @@ const enquiryConfigs = [
       'To Optimists, the Empire brought railways and global trade; to Pessimists, it was an engine of resource extraction and de-industrialisation.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('second_british_empire', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('second_british_empire', enquiryConfigs);

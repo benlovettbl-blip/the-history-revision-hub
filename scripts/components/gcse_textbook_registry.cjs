@@ -889,10 +889,10 @@ const GCSE_TEXTBOOK_REGISTRY = {
     accentSoft: '#ccfbf1',
     accentTint: '#f0fdfa',
     secondary: '#b45309',
-    heroImage: '/units/usa/assets/sources/saigon-embassy-evacuation.jpg',
+    heroImage: '/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg',
     heroFit: 'cover',
     heroPos: 'center center',
-    heroCaption: 'Evacuees climbing a rooftop ladder to an Air America Huey helicopter in Saigon during Operation Frequent Wind, 29 April 1975 (Hubert van Es).',
+    heroCaption: 'A U.S. Marine guards the perimeter in Saigon as a CH-53 Sea Stallion helicopter lands during Operation Frequent Wind, 29 April 1975 (U.S. Marine Corps / NARA, Public Domain).',
     synopsis: 'Examine why the first "television war" tore American society apart between anti-war "Doves" and pro-war "Hawks". Analyse draft-card burnings, Muhammad Ali, the My Lai Massacre revelations, Kent State shootings, Pentagon Papers, and Nixon’s "Silent Majority" & Hard Hat Riot; follow Kissinger’s 1973 Paris Peace Accords, Watergate, and the 1975 Fall of Saigon; and weigh the military, political, and social reasons for US failure.',
     driveTargets: [
       'G:\\My Drive\\AAMX\\Dep File\\01_Curriculum_and_Key_Stages\\GCSE (Years 10-11)\\Paper 3 - USA 1954-75\\USA 1954-75 Master Textbook (KT4).pdf',

@@ -300,7 +300,7 @@ export default {
     {
       "id": "lesson_1",
       "title": "Claiming Australia: Captain Cook, Tupaia & The Myth of Terra Nullius (1768–1770)",
-      "enquiry": "Why did the British Empire claim eastern Australia and declare it terra nullius between 1768 and 1788?",
+      "enquiry": "Why did Britain claim eastern Australia and declare the land ‘terra nullius’?",
       "subtitle": "From Polynesian Star Navigation to the Imperial Fiction of ‘Nobody’s Land’",
       "skill": "Causation & Motive",
       "card_image": "/images/ks3_aus/aus_l1_card_endeavour_bark_new_holland.jpg",
@@ -2046,7 +2046,9 @@ export default {
       "vocab_cloze_text": "Sent into the Pacific by the British [Admiralty] in 1768, James Cook relied on Tahitian high priest and master navigator [Tupaia] to chart Polynesian islands before reaching eastern Australia in April 1770. Although Aboriginal nations had practised 65,000 years of [Sovereignty] and sacred [Custodianship] over Country, Britain used the false legal claim of [Terra Nullius] to justify colonial [Dispossession].",
       "banner_image": "/images/upgraded/ks3-empire-gw/aus_l1_banner_cook_landing_botany_bay_1770.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/aus_l1_banner_cook_landing_botany_bay_1770.jpg",
-      "banner_position": "center 28%"
+      "banner_position": "center 28%",
+      "enquiry_question": "Why did Britain claim eastern Australia and declare the land ‘terra nullius’?",
+      "enquiryQuestion": "Why did Britain claim eastern Australia and declare the land ‘terra nullius’?"
     },
     {
       "id": "lesson_2",
@@ -3963,7 +3965,9 @@ export default {
       "vocab_cloze_text": "Under Britain’s harsh [Bloody Code], losing the American colonies left thousands of prisoners crowded inside rotting Thames [Prison Hulk] vessels until Parliament ordered [Transportation] to New South Wales. Arriving at Sydney Cove in January 1788, Governor Phillip’s penal settlement endured near-famine on strict [Rations] and harsh [Cat-o'-Nine-Tails] floggings, though freed convicts could later farm land as a pardoned [Emancipist].",
       "banner_image": "/images/upgraded/ks3-empire-gw/aus_l2_banner_first_fleet_port_jackson_1788.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/aus_l2_banner_first_fleet_port_jackson_1788.jpg",
-      "banner_position": "center 52%"
+      "banner_position": "center 52%",
+      "enquiry_question": "Whose story do we tell about the founding of the first British penal colony in Australia?",
+      "enquiryQuestion": "Whose story do we tell about the founding of the first British penal colony in Australia?"
     },
     {
       "id": "lesson_3",
@@ -5703,7 +5707,9 @@ export default {
       "vocab_cloze_text": "For millennia, First Nations clans cared for Country along sacred [Songlines] of [Custodianship]. Just over a year after the First Fleet landed, a devastating 1789 smallpox [Epidemic] killed half of Sydney’s Eora population and accelerated colonial [Dispossession]. While Wangal man Bennelong served reluctantly as diplomatic [Intermediary], Bidjigal elder Pemulwuy waged twelve years of [Guerrilla Warfare] defending Bidjigal and Darug lands.",
       "banner_image": "/images/upgraded/ks3-empire-gw/aus_l3_banner_nepean_river_lycett_1825.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/aus_l3_banner_nepean_river_lycett_1825.jpg",
-      "banner_position": "center 55%"
+      "banner_position": "center 55%",
+      "enquiry_question": "Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?",
+      "enquiryQuestion": "Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?"
     },
     {
       "id": "lesson_4",
@@ -7501,7 +7507,9 @@ export default {
       "vocab_cloze_text": "Across Tasmania and mainland pastures, booming sheep [Pastoralism] drove wealthy [Squatter] settlers onto Indigenous hunting grounds, sparking bitter [Frontier War] clashes. In Van Diemen’s Land, Governor Arthur declared [Martial Law] in 1828 before forcing surviving Palawa families into [Exile] on Flinders Island. On the mainland, rare colonial justice followed the 1838 Myall Creek [Massacre] when seven perpetrators were hanged.",
       "banner_image": "/images/upgraded/ks3-empire-gw/aus_l4_banner_glover_river_nile_1837.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/aus_l4_banner_glover_river_nile_1837.jpg",
-      "banner_position": "center 48%"
+      "banner_position": "center 48%",
+      "enquiry_question": "How did pastoral expansion and frontier conflict transform colonial Australia?",
+      "enquiryQuestion": "How did pastoral expansion and frontier conflict transform colonial Australia?"
     },
     {
       "id": "lesson_5",
@@ -9262,7 +9270,9 @@ export default {
       "vocab_cloze_text": "The 1851 Victorian [Gold Rush] trebled Australia’s population and sparked the 1854 [Eureka Stockade] rebellion at Ballarat, helping win male [Suffrage] in colonial parliaments. Yet anti-Chinese racism culminated at Federation in 1901 in the discriminatory [White Australia Policy], while Indigenous families suffered child removals creating the [Stolen Generations] until the 1992 Mabo ruling recognised [Native Title].",
       "banner_image": "/images/upgraded/ks3-empire-gw/aus_l5_banner_eureka_stockade_1854_henderson.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/aus_l5_banner_eureka_stockade_1854_henderson.jpg",
-      "banner_position": "center 42%"
+      "banner_position": "center 42%",
+      "enquiry_question": "How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?",
+      "enquiryQuestion": "How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?"
     }
   ],
   "edition": "2026.1",

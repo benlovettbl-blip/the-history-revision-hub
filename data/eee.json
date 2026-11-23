@@ -128,7 +128,7 @@
     {
       "id": "lesson_1_1",
       "title": "KT 1.1: The Situation on Elizabeth’s Accession, 1558",
-      "enquiry": "How did an inexperienced queen secure an impoverished and divided England amidst acute foreign encirclement in 1558?",
+      "enquiry": "Why was Elizabeth’s position so insecure at home and abroad in 1558?",
       "do_now": {
         "type": "questions",
         "is_baseline": true,
@@ -1703,7 +1703,7 @@
         "kt1.1",
         "lesson_1_1"
       ],
-      "enquiry_question": "How did an inexperienced queen secure an impoverished and divided England amidst acute foreign encirclement in 1558?",
+      "enquiry_question": "Why was Elizabeth’s position so insecure at home and abroad in 1558?",
       "visual_story_sheet": {
         "num": "01",
         "slug": "eee_l01_visual_story_sheet",
@@ -1818,7 +1818,7 @@
     {
       "id": "lesson_1_2",
       "title": "KT 1.2: The 'Settlement' of Religion, 1559",
-      "enquiry": "To what extent was the 1559 Religious Settlement an enduring theological compromise designed to prevent civil war?",
+      "enquiry": "How did Elizabeth’s 1559 Religious Settlement try to unite a divided country?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -3402,7 +3402,7 @@
         "kt1.2",
         "lesson_1_2"
       ],
-      "enquiry_question": "To what extent was the 1559 Religious Settlement an enduring theological compromise designed to prevent civil war?",
+      "enquiry_question": "How did Elizabeth’s 1559 Religious Settlement try to unite a divided country?",
       "visual_story_sheet": {
         "num": "02",
         "slug": "eee_l02_visual_story_sheet",
@@ -5129,7 +5129,7 @@
           "Circle your effort level (1-5) and set a specific target for the next Key Topic."
         ]
       },
-      "enquiry": "How did the arrival of Mary, Queen of Scots in 1568 transform Elizabeth’s dynastic security into a permanent national crisis?",
+      "enquiry": "Why was Mary, Queen of Scots such a dangerous problem for Elizabeth from 1568?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -6679,7 +6679,7 @@
         "kt1.4",
         "lesson_1_4"
       ],
-      "enquiry_question": "How did the arrival of Mary, Queen of Scots in 1568 transform Elizabeth’s dynastic security into a permanent national crisis?",
+      "enquiry_question": "Why was Mary, Queen of Scots such a dangerous problem for Elizabeth from 1568?",
       "visual_story_sheet": {
         "num": "04",
         "slug": "eee_l04_visual_story_sheet",
@@ -6793,7 +6793,7 @@
     {
       "id": "lesson_2_1",
       "title": "KT 2.1: Plots and Revolts at Home, 1569–1587",
-      "enquiry": "Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?",
+      "enquiry": "Why did Catholic rebellions and plots finally persuade Elizabeth to execute Mary in 1587?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -8467,7 +8467,7 @@
         "kt2.1",
         "lesson_2_1"
       ],
-      "enquiry_question": "Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?",
+      "enquiry_question": "Why did Catholic rebellions and plots finally persuade Elizabeth to execute Mary in 1587?",
       "visual_story_sheet": {
         "num": "05",
         "slug": "eee_l05_visual_story_sheet",
@@ -8588,7 +8588,7 @@
     {
       "id": "lesson_2_2",
       "title": "KT 2.2: Relations with Spain, 1569–1585",
-      "enquiry": "How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?",
+      "enquiry": "Why did rivalry with Spain slide toward open war between 1569 and 1585?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -10065,7 +10065,7 @@
         "kt2.2",
         "lesson_2_2"
       ],
-      "enquiry_question": "How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?",
+      "enquiry_question": "Why did rivalry with Spain slide toward open war between 1569 and 1585?",
       "visual_story_sheet": {
         "num": "06",
         "slug": "eee_l06_visual_story_sheet",
@@ -10186,7 +10186,7 @@
     {
       "id": "lesson_2_3",
       "title": "KT 2.3: The Outbreak of War with Spain, 1585–1588",
-      "enquiry": "Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?",
+      "enquiry": "How did war in the Netherlands and Drake’s raid on Cadiz trigger the Armada?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -11670,7 +11670,7 @@
         "kt2.3",
         "lesson_2_3"
       ],
-      "enquiry_question": "Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?",
+      "enquiry_question": "How did war in the Netherlands and Drake’s raid on Cadiz trigger the Armada?",
       "visual_story_sheet": {
         "num": "07",
         "slug": "eee_l07_visual_story_sheet",
@@ -11799,7 +11799,7 @@
           "Circle your effort level (1-5) and set a specific target for the next Key Topic."
         ]
       },
-      "enquiry": "Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?",
+      "enquiry": "Why did Philip II’s Spanish Armada fail to conquer England in 1588?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -13375,7 +13375,7 @@
         "kt2.4",
         "lesson_2_4"
       ],
-      "enquiry_question": "Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?",
+      "enquiry_question": "Why did Philip II’s Spanish Armada fail to conquer England in 1588?",
       "visual_story_sheet": {
         "num": "08",
         "slug": "eee_l08_visual_story_sheet",
@@ -15171,7 +15171,7 @@
     {
       "id": "lesson_3_2",
       "title": "KT 3.2: The Problem of the Poor and Vagrancy, 1558–1588",
-      "enquiry": "Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?",
+      "enquiry": "Why did poverty rise in Elizabethan England, and how did laws toward the poor change?",
       "do_now": {
         "type": "questions",
         "derived_from_prev": true,
@@ -16737,7 +16737,7 @@
         "kt3.2",
         "lesson_3_2"
       ],
-      "enquiry_question": "Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?",
+      "enquiry_question": "Why did poverty rise in Elizabethan England, and how did laws toward the poor change?",
       "visual_story_sheet": {
         "num": "10",
         "slug": "eee_l10_visual_story_sheet",

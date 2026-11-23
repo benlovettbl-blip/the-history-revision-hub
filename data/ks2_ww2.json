@@ -28,7 +28,7 @@
       "skill": "Historical Significance & Cause",
       "title": "Enquiry 1: Outbreak 1939 & Home Front Mobilisation",
       "subtitle": "From Chamberlain's Radio Broadcast to Blackout Curtains and 38 Million Gas Masks",
-      "enquiryQuestion": "Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?",
+      "enquiryQuestion": "Why did British families carry gas masks and black out windows in 1939?",
       "teacher_notes": {
         "primer": "This enquiry introduces pupils to the outbreak of the Second World War on the British Home Front. On Sunday 3 September 1939, Prime Minister Neville Chamberlain announced over the radio that Britain was at war with Germany. Within fifteen minutes, the first wailing air raid siren sounded across London. Pupils investigate how the government prepared civilians for total war by issuing 38 million gas masks in cardboard boxes, painting street corners with white blackout paint, and establishing Air Raid Precautions (ARP) wardens to patrol darkened streets.",
         "objectives": [
@@ -875,7 +875,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?",
+      "enquiry_question": "Why did British families carry gas masks and black out windows in 1939?",
       "visual_story_sheet": {
         "num": "01",
         "slug": "ks2_ww2_l01_visual_story_sheet",
@@ -967,14 +967,15 @@
         "caption": "Anti-Aircraft Searchlight and Sandbagged Emplacement at Royal Hospital Chelsea, London (17 April 1940)",
         "position": "center 25%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg",
+      "enquiry": "Why did British families carry gas masks and black out windows in 1939?"
     },
     {
       "id": "lesson_2",
       "skill": "Perspectives & Historical Experience",
       "title": "Enquiry 2: Operation Pied Piper & British Evacuation",
       "subtitle": "Luggage Labels, Country Trains, and 1.5 Million Children Sent to Safety",
-      "enquiryQuestion": "What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?",
+      "enquiryQuestion": "What was it like for evacuated children to be sent away in 1939?",
       "teacher_notes": {
         "primer": "Explores Operation Pied Piper, launched on 1 September 1939. Over four days, 1.5 million school pupils, mothers, and teachers were evacuated from industrial cities to rural reception areas like Devon, Wales, and Yorkshire. Pupils analyze the emotional farewells at railway stations, the lottery of the billeting process in village halls, and the stark culture shock between city slums and countryside farms.",
         "objectives": [
@@ -1805,7 +1806,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg",
       "banner_position": "center 22%",
-      "enquiry_question": "What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?",
+      "enquiry_question": "What was it like for evacuated children to be sent away in 1939?",
       "visual_story_sheet": {
         "num": "02",
         "slug": "ks2_ww2_l02_visual_story_sheet",
@@ -1899,14 +1900,15 @@
         "caption": "Smiling Evacuee Children from Rotherhithe Carrying Gas Mask Boxes in Reading (1940)",
         "position": "center 22%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l02_banner_evacuees_gas_masks_d824.jpg",
+      "enquiry": "What was it like for evacuated children to be sent away in 1939?"
     },
     {
       "id": "lesson_3",
       "skill": "Historical Diversity, Human Dignity & Step-by-Step Persecution",
-      "title": "Enquiry 3: Pre-War Life & Rights Lost (1933–1938)",
+      "title": "Enquiry 3: Pre-War Jewish Life & Rights Lost (1933–1938)",
       "subtitle": "Ordinary Childhoods Across Europe and How Unfair Laws Took Rights Away Step by Step",
-      "enquiryQuestion": "What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?",
+      "enquiryQuestion": "How were Jewish children’s everyday rights taken away in Nazi Germany?",
       "teacher_notes": {
         "primer": "Grounded in age-appropriate primary history safeguarding principles. Pupils discover that Jewish families lived rich, varied, and integrated lives across Europe for centuries—as doctors, teachers, athletes, and neighbours. The lesson then traces how anti-Jewish laws between 1933 and 1939 systematically stripped away rights step-by-step: banning sports, pets, radios, public parks, and finally barring children from going to school. In strict accordance with trauma-informed primary safeguarding practice, there is zero atrocity imagery, focusing instead on human dignity and civil rights.",
         "objectives": [
@@ -2739,7 +2741,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg",
       "banner_position": "center 18%",
-      "enquiry_question": "What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?",
+      "enquiry_question": "How were Jewish children’s everyday rights taken away in Nazi Germany?",
       "visual_story_sheet": {
         "num": "03",
         "slug": "ks2_ww2_l03_visual_story_sheet",
@@ -2834,14 +2836,15 @@
         "caption": "Pre-War Everyday Street Life on Nalewki Street in Warsaw's Jewish Quarter (1934)",
         "position": "center 18%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l03_banner_prewar_jewish_warsaw_1934.jpg",
+      "enquiry": "How were Jewish children’s everyday rights taken away in Nazi Germany?"
     },
     {
       "id": "lesson_4",
       "skill": "Historical Empathy, Evidence & Human Dignity",
       "title": "Enquiry 4: One Small Suitcase — The Kindertransport (1938–1939)",
       "subtitle": "One Small Suitcase, A Porcelain Doll, and 10,000 Refugee Children Welcomed to Britain",
-      "enquiryQuestion": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?",
+      "enquiryQuestion": "How did 10,000 Kindertransport children travel alone to safety in Britain?",
       "teacher_notes": {
         "primer": "Grounded in age-appropriate primary history safeguarding principles. Focuses on the Kindertransport rescue mission (1938–1939) that brought nearly 10,000 Jewish and refugee children from Nazi Germany, Austria, and Czechoslovakia to Britain. Pupils follow the personal journey of 9-year-old Vera Schaufeld leaving Prague, examining parental love, the sacrifice of sending children away alone, and arrival at Liverpool Street Station with numbered neck tags.",
         "objectives": [
@@ -3687,7 +3690,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?",
+      "enquiry_question": "How did 10,000 Kindertransport children travel alone to safety in Britain?",
       "visual_story_sheet": {
         "num": "04",
         "slug": "ks2_ww2_l04_visual_story_sheet",
@@ -3780,14 +3783,15 @@
         "caption": "Kindertransport Bronze Memorial 'Channel Crossing to Life' at Hook of Holland (Frank Meisler & Arie Ovadia)",
         "position": "center 25%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l04_banner_channel_crossing_to_life_hoek.jpg",
+      "enquiry": "How did 10,000 Kindertransport children travel alone to safety in Britain?"
     },
     {
       "id": "lesson_5",
       "skill": "Moral Courage, Agency & Upstander Ethics",
-      "title": "Enquiry 5: Who Were the Rescuers? (1938–1939)",
+      "title": "Enquiry 5: Rescuing 669 Children from Prague (1938–1939)",
       "subtitle": "Nicholas Winton, Doreen Warriner, Trevor Chadwick, and the Secret Scrapbook of 669 Children",
-      "enquiryQuestion": "How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?",
+      "enquiryQuestion": "How did ordinary volunteers rescue 669 children from Prague before war began?",
       "teacher_notes": {
         "primer": "Centered directly on the HET Primary Guidelines regarding rescuers and upstanders. Explores the Prague rescue operation organised in 1939 by a small collaborative team: Nicholas Winton (a 29-year-old London stockbroker who gave up a skiing holiday), Trevor Chadwick (a headmaster from Swanage, Dorset who stayed in Prague facing the Gestapo), and Doreen Warriner. They organised 8 trains carrying 669 predominantly Jewish children to safety in Britain. Features Nicky's Scrapbook, hidden in an attic for 50 years until discovered by his wife Grete.",
         "objectives": [
@@ -4618,7 +4622,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?",
+      "enquiry_question": "How did ordinary volunteers rescue 669 children from Prague before war began?",
       "visual_story_sheet": {
         "num": "05",
         "slug": "ks2_ww2_l05_visual_story_sheet",
@@ -4709,14 +4713,15 @@
         "caption": "Commemorative 'The Winton Train (1939–2009): Prague – London' Steam Locomotive at Liverpool Street Station",
         "position": "center 25%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l05_banner_winton_train_locomotive_cc0.jpg",
+      "enquiry": "How did ordinary volunteers rescue 669 children from Prague before war began?"
     },
     {
       "id": "lesson_6",
       "skill": "Causation & Community Resilience",
-      "title": "Enquiry 6: The Blitz & Air Raids (1940–1941)",
+      "title": "Enquiry 6: The Blitz & Air Raid Shelters (1940–1941)",
       "subtitle": "57 Nights of Bombing, Garden Anderson Shelters, and Sleeping Deep on Tube Platforms",
-      "enquiryQuestion": "How did ordinary families protect themselves when bombs fell night after night during the Blitz?",
+      "enquiryQuestion": "How did British families keep safe when bombs fell during the Blitz?",
       "teacher_notes": {
         "primer": "Examines the German bombing campaign known as The Blitz (September 1940 – May 1941). Explores how British civilians adapted to intense night-time bombardment, constructing corrugated steel Anderson shelters in muddy gardens, sleeping under steel Morrison tables, and sheltering communal groups on Underground platform tracks. Highlights ARP wardens, the Auxiliary Fire Service (AFS), and the enduring reality of community resilience.",
         "objectives": [
@@ -5558,7 +5563,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg",
       "banner_position": "center 30%",
-      "enquiry_question": "How did ordinary families protect themselves when bombs fell night after night during the Blitz?",
+      "enquiry_question": "How did British families keep safe when bombs fell during the Blitz?",
       "visual_story_sheet": {
         "num": "06",
         "slug": "ks2_ww2_l06_visual_story_sheet",
@@ -5650,14 +5655,15 @@
         "caption": "Smoke Rising Over the London Docks and Tower Bridge During the First Mass Blitz Raid (7 September 1940)",
         "position": "center 30%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l06_banner_london_blitz_thames_7sep1940.jpg",
+      "enquiry": "How did British families keep safe when bombs fell during the Blitz?"
     },
     {
       "id": "lesson_7",
       "skill": "Historical Significance & Economic Interdependence",
       "title": "Enquiry 7: Dig for Victory & Wartime Rationing (1940–1945)",
       "subtitle": "U-Boat Danger at Sea, Fair-Shares Coupon Books, and Growing Vegetables in Every Park",
-      "enquiryQuestion": "Why did the British government ration butter, sugar, and meat, and ask families to \"Dig for Victory\"?",
+      "enquiryQuestion": "Why did Britain ration food and ask families to ‘Dig for Victory’?",
       "teacher_notes": {
         "primer": "Explores how Britain avoided starvation during the Battle of the Atlantic. Before 1939, Britain imported over 55 million tons of food annually. When German U-boat submarines attacked merchant supply convoys, the Ministry of Food introduced rationing in January 1940. Pupils investigate ration books, coupon points, Lord Woolton Pie, and the nationwide Dig for Victory campaign that turned lawns, parks, and flower beds into vegetable allotments.",
         "objectives": [
@@ -6501,7 +6507,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "Why did the British government ration butter, sugar, and meat, and ask families to \"Dig for Victory\"?",
+      "enquiry_question": "Why did Britain ration food and ask families to ‘Dig for Victory’?",
       "visual_story_sheet": {
         "num": "07",
         "slug": "ks2_ww2_l07_visual_story_sheet",
@@ -6593,14 +6599,15 @@
         "caption": "Families Resting for Tea on Their 'Dig for Victory' Allotment in Acton, London (1940)",
         "position": "center 25%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l07_banner_dig_for_victory_acton_d477.jpg",
+      "enquiry": "Why did Britain ration food and ask families to ‘Dig for Victory’?"
     },
     {
       "id": "lesson_8",
       "skill": "Change & Continuity & Social Significance",
       "title": "Enquiry 8: Women at War (1941–1945)",
       "subtitle": "Conscription, 80,000 Land Girls, Lumberjills, Canary Girls, and Female Spitfire Pilots",
-      "enquiryQuestion": "How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?",
+      "enquiryQuestion": "How did women’s work on farms and in factories keep Britain fighting?",
       "teacher_notes": {
         "primer": "Examines the total mobilization of British society and the revolutionary transformation of women's roles. As millions of men were conscripted into the Armed Forces, Britain faced a severe labour shortage. In December 1941, Britain became the first country to conscript women for war work. Pupils explore the Women's Land Army (80,000 Land Girls), munitions factory workers (\"Canary Girls\"), and the daring female pilots of the Air Transport Auxiliary (ATA).",
         "objectives": [
@@ -7446,7 +7453,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg",
       "banner_position": "center 22%",
-      "enquiry_question": "How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?",
+      "enquiry_question": "How did women’s work on farms and in factories keep Britain fighting?",
       "visual_story_sheet": {
         "num": "08",
         "slug": "ks2_ww2_l08_visual_story_sheet",
@@ -7540,14 +7547,15 @@
         "caption": "Three Women's Land Army 'Land Girls' Harvesting Flax by Tractor in Huntingdonshire (1942)",
         "position": "center 22%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l08_banner_land_girls_flax_harvest_d9617.jpg",
+      "enquiry": "How did women’s work on farms and in factories keep Britain fighting?"
     },
     {
       "id": "lesson_9",
       "skill": "Technological Innovation & Historical Secrecy",
       "title": "Enquiry 9: Secret Codebreakers & Bletchley Park (1941–1945)",
       "subtitle": "The Enigma Cipher Machine, Alan Turing's Bombe, and 7,500 Women Keeping Station X Secret",
-      "enquiryQuestion": "How did secret codebreakers working in wooden huts at Bletchley Park help shorten the Second World War?",
+      "enquiryQuestion": "How did secret codebreakers at Bletchley Park help win the war?",
       "teacher_notes": {
         "primer": "Uncovers the secret wartime codebreaking station at Bletchley Park (Station X) in Buckinghamshire. Explores the German Enigma cipher machine—an electro-mechanical device with billions of combinations—and how mathematicians like Alan Turing, alongside thousands of women from the WRNS (Wrens), built the Turing-Welchman Bombe machine to decipher intercepted military messages. Highlights the paramount importance of wartime secrecy (\"Careless talk costs lives\").",
         "objectives": [
@@ -8378,7 +8386,7 @@
       "hero_image": "/units/ks2_ww2/assets/banner_l09.jpg",
       "card_image": "/units/ks2_ww2/assets/card_l09.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "How did secret codebreakers working in wooden huts at Bletchley Park help shorten the Second World War?",
+      "enquiry_question": "How did secret codebreakers at Bletchley Park help win the war?",
       "visual_story_sheet": {
         "num": "09",
         "slug": "ks2_ww2_l09_visual_story_sheet",
@@ -8466,14 +8474,15 @@
       },
       "vocab_cloze_text": "During the war, German commanders scrambled secret radio orders using the [Enigma Machine], creating a shifting [Cipher] they believed nobody could crack. At Britain’s top-secret [Bletchley Park] estate, Alan Turing, Gordon Welchman, and 7,500 mostly female staff built the high-speed [Bombe Machine] to break enemy codes and save Allied ships.",
       "prologue_audio": "/audio/lessons/ks2_ww2/lesson_9_prologue.mp3",
-      "prologue_voice_label": "Studio Cold-Open · Historian"
+      "prologue_voice_label": "Studio Cold-Open · Historian",
+      "enquiry": "How did secret codebreakers at Bletchley Park help win the war?"
     },
     {
       "id": "lesson_10",
       "skill": "Historical Significance & Legacy",
       "title": "Enquiry 10: VE Day, Rebuilding Britain & Remembrance (1945)",
       "subtitle": "Street Parties on 8 May 1945, Founding the NHS, and Why We Wear Red Poppies Today",
-      "enquiryQuestion": "Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?",
+      "enquiryQuestion": "Why did VE Day bring both street parties and sadness across Britain?",
       "teacher_notes": {
         "primer": "Concludes the unit by examining Victory in Europe (VE) Day on 8 May 1945. Explores the ecstatic relief of street parties with red, white, and blue bunting alongside the profound sadness for lives lost across Britain, Europe, and the Commonwealth. Examines post-war reconstruction (the founding of the NHS, rebuilding bombed cities) and the lasting moral duty of remembrance symbolized by the red poppy and the Cenotaph.",
         "objectives": [
@@ -9315,7 +9324,7 @@
       "hero_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg",
       "card_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg",
       "banner_position": "center 25%",
-      "enquiry_question": "Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?",
+      "enquiry_question": "Why did VE Day bring both street parties and sadness across Britain?",
       "visual_story_sheet": {
         "num": "10",
         "slug": "ks2_ww2_l10_visual_story_sheet",
@@ -9409,14 +9418,15 @@
         "caption": "VE Day Crowds Gathered Around the Flag-Draped Cenotaph on Whitehall, London (8 May 1945)",
         "position": "center 25%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg",
+      "enquiry": "Why did VE Day bring both street parties and sadness across Britain?"
     },
     {
       "id": "lesson_11",
       "skill": "Historical Empathy, Evidence & Literature",
       "title": "Enquiry 11: After the War — The Windermere Children (1945)",
       "subtitle": "Ten RAF Bombers Carrying 300 Child Survivors from Prague to Peace in the Lake District",
-      "enquiryQuestion": "How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?",
+      "enquiryQuestion": "How did 300 child survivors rebuild their lives by Lake Windermere?",
       "hero_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
       "banner_position": "center 25%",
       "teacher_notes": {
@@ -10267,7 +10277,7 @@
         }
       ],
       "card_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
-      "enquiry_question": "How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?",
+      "enquiry_question": "How did 300 child survivors rebuild their lives by Lake Windermere?",
       "visual_story_sheet": {
         "num": "11",
         "slug": "ks2_ww2_l11_visual_story_sheet",
@@ -10361,7 +10371,8 @@
         "caption": "Panoramic View Over Northern Lake Windermere and the Cumbria Fells from Orrest Head",
         "position": "center 25%"
       },
-      "banner_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg"
+      "banner_image": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
+      "enquiry": "How did 300 child survivors rebuild their lives by Lake Windermere?"
     }
   ],
   "edition": "Key Stage 2 Primary Classroom Edition",

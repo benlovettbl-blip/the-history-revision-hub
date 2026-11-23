@@ -40,8 +40,8 @@
     {
       "id": "lesson_1_1",
       "utility_starters": null,
-      "title": "KT1.1: The Origins of the Republic, 1918–1919",
-      "enquiry": "Out of the ashes: How did the devastating legacy of the First World War forge the Weimar Republic, and were the democratic foundations of its new Constitution fatally flawed from the start?",
+      "title": "KT 1.1: The Origins of the Republic, 1918–1919",
+      "enquiry": "How did defeat in 1918 create the Weimar Republic—and weaken it from birth?",
       "teacher_notes": {
         "primer": "This enquiry examines the chaotic birth of the Weimar Republic from the ashes of military defeat in late 1918, exploring the impact of the First World War and naval blockade, the Kiel Mutiny and revolution, the abdication of Kaiser Wilhelm II, the creation of the provisional government under Friedrich Ebert, and the democratic architecture and fatal structural flaws of the 1919 Weimar Constitution.",
         "objectives": [
@@ -1818,8 +1818,8 @@
     },
     {
       "id": "lesson_1_2",
-      "title": "KT1.2: Early Challenges to the Republic, 1919–1923",
-      "enquiry": "Surrounded by enemies: How did the Weimar Republic survive the traumatic birth of the Treaty of Versailles, violent uprisings from the extreme left and right, and the catastrophic economic collapse of 1923?",
+      "title": "KT 1.2: Early Challenges to the Republic, 1919–1923",
+      "enquiry": "How did the Weimar Republic survive Versailles, armed revolts, and hyperinflation by 1923?",
       "teacher_notes": {
         "primer": "This enquiry evaluates the existential political and economic challenges that threatened the Weimar Republic between 1919 and 1923, investigating the territorial, military, and financial terms of the Treaty of Versailles, the Dolchstoßlegende myth, the left-wing Spartacist Uprising, the right-wing Kapp Putsch, right-wing political assassinations, and the 1923 French occupation of the Ruhr that triggered runaway hyperinflation.",
         "objectives": [
@@ -3949,8 +3949,8 @@
     },
     {
       "id": "lesson_1_3",
-      "title": "KT1.3: The Recovery of the Republic, 1924–1929",
-      "enquiry": "Dancing on a volcano: Did Gustav Stresemann genuinely rescue the Weimar Republic from the ashes of 1923, or was Germany's 'Golden Age' built on quicksand?",
+      "title": "KT 1.3: The Recovery of the Republic, 1924–1929",
+      "enquiry": "Did Gustav Stresemann truly solve Weimar Germany’s problems between 1924 and 1929?",
       "teacher_notes": {
         "primer": "This enquiry evaluates the apparent stabilization of the Weimar Republic during the \"Golden Twenties\" under Gustav Stresemann, examining the Rentenmark currency reform, the Dawes Plan of 1924, American Wall Street loans, the Locarno Treaties of 1925, Germany’s admission to the League of Nations in 1926, the Kellogg-Briand Pact, the Young Plan of 1929, and Stresemann’s prophetic warning that Germany was \"dancing on a volcano\".",
         "objectives": [
@@ -5673,7 +5673,7 @@
     },
     {
       "id": "lesson_1_4",
-      "title": "KT1.4: Changes in Society, 1924–1929",
+      "title": "KT 1.4: Changes in Society, 1924–1929",
       "lesson_reflection": {
         "prompt": "You have reached the end of this Key Topic booklet! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
         "instructions": [
@@ -5682,7 +5682,7 @@
           "Circle your effort level (1-5) and set a specific target for the next Key Topic."
         ]
       },
-      "enquiry": "A Golden Age or a divided nation: To what extent did the lives of workers, women, and artists genuinely improve during the Weimar Republic's era of recovery?",
+      "enquiry": "How far did everyday life and culture improve in Weimar’s ‘Golden Twenties’?",
       "teacher_notes": {
         "primer": "This enquiry examines the social and cultural transformations of the Weimar Republic between 1924 and 1929, exploring rising wages and the 1927 Unemployment Insurance Act, the changing position of women and the phenomenon of the \"New Woman\", Walter Gropius and the Bauhaus architectural movement, Neue Sachlichkeit art and Weimar cinema, and the bitter cultural polarization between modern urbanites and conservative traditionalists.",
         "objectives": [
@@ -7671,8 +7671,8 @@
     },
     {
       "id": "lesson_2_1",
-      "title": "KT2.1: The Early Development of the Nazi Party, 1919–1922",
-      "enquiry": "From the shadows: How did a tiny, obscure political group in a Munich beer hall transform into a highly organised and violent political machine under Adolf Hitler's early leadership?",
+      "title": "KT 2.1: The Early Development of the Nazi Party, 1919–1922",
+      "enquiry": "How did Hitler turn a tiny Munich fringe group into the violent Nazi Party?",
       "teacher_notes": {
         "primer": "This enquiry examines the transformation of an obscure Munich beer-cellar debating club into the aggressive, paramilitary National Socialist German Workers’ Party (NSDAP) between 1919 and 1922. Students analyze Anton Drexler’s founding of the DAP, Hitler’s recruitment and extraordinary oratorical appeal, the formulation of the 25-Point Programme, the strategic visual rebranding under the swastika emblem, Hitler’s seizure of absolute dictatorial control (Führerprinzip), and the institutionalization of street violence through Ernst Röhm’s Sturmabteilung (SA).",
         "objectives": [
@@ -9377,8 +9377,8 @@
     },
     {
       "id": "lesson_2_2",
-      "title": "KT2.2: The Munich Putsch and the Lean Years, 1923–1929",
-      "enquiry": "A spectacular failure or a political masterstroke: How did Hitler use the disaster of the Munich Putsch to completely rebuild the Nazi Party during its 'lean years'?",
+      "title": "KT 2.2: The Munich Putsch and the Lean Years, 1923–1929",
+      "enquiry": "How did Hitler turn the failed 1923 Munich Putsch into a new path to power?",
       "teacher_notes": {
         "primer": "This enquiry examines the climactic failure of Hitler’s armed insurrection in November 1923 and the subsequent strategic reorganization of the NSDAP during the \"Lean Years\" (1924–1929). Students explore the immediate triggers of the Munich Putsch (Ruhr occupation, hyperinflation, and Bavarian nationalist plots), the dramatic storming of the Bürgerbräukeller and collapse at the Residenzstrasse, the February 1924 Munich Treason Trial that Hitler converted into a national propaganda triumph, his imprisonment at Landsberg and writing of Mein Kampf, the decisive Bamberg Conference of 1926 that established the Führerprinzip over northern socialist dissidents, and the party’s minimal electoral returns during Stresemann’s Golden Twenties.",
         "objectives": [
@@ -11361,8 +11361,8 @@
     },
     {
       "id": "lesson_2_3",
-      "title": "KT2.3: The Growth of Nazi Support, 1929–1932",
-      "enquiry": "The shattered Republic: How did the economic earthquake of the Great Depression destroy Weimar democracy and propel Adolf Hitler from the political fringes to the brink of power?",
+      "title": "KT 2.3: The Growth of Nazi Support, 1929–1932",
+      "enquiry": "Why did the Great Depression turn the Nazis into Germany’s largest party by 1932?",
       "teacher_notes": {
         "primer": "This enquiry examines the dramatic electoral explosion of the Nazi Party between 1929 and 1932 following the Great Depression. Students investigate the catastrophic impact of the Wall Street Crash and the collapse of American loans, the surge in German unemployment to six million, the political paralysis of democratic coalitions leading to Chancellor Heinrich Brüning’s austerity and reliance on Article 48 decrees (\"Hunger Chancellor\"), the polarising surge of the Communist Party (KPD) and how bourgeois fear of Bolshevism drove middle-class voters to Hitler (\"negative cohesion\"), Joseph Goebbels’ pioneering multimedia propaganda campaigns, and the historic breakthrough of July 1932 when the NSDAP won 230 seats to become Germany’s largest political party.",
         "objectives": [
@@ -13753,7 +13753,7 @@
     },
     {
       "id": "lesson_2_4",
-      "title": "KT2.4: How Hitler Became Chancellor, 1932–1933",
+      "title": "KT 2.4: Hitler’s Appointment as Chancellor, 1932–1933",
       "lesson_reflection": {
         "prompt": "You have reached the end of this Key Topic booklet! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
         "instructions": [
@@ -13762,7 +13762,7 @@
           "Circle your effort level (1-5) and set a specific target for the next Key Topic."
         ]
       },
-      "enquiry": "The Backstairs Intrigue: How did secret political scheming, revenge, and a fatal underestimation rescue a struggling Adolf Hitler and hand him the Chancellorship of Germany?",
+      "enquiry": "Why did Germany’s conservative elites hand Hitler the Chancellorship in January 1933?",
       "teacher_notes": {
         "primer": "This enquiry examines the climactic political intrigues between July 1932 and January 1933 that culminated in Adolf Hitler being appointed Chancellor of Germany. Students analyze the November 1932 electoral setback and financial exhaustion of the NSDAP, General Kurt von Schleicher’s failed chancellorship and alienation of Prussian aristocratic landowners, Franz von Papen’s bitter rivalry and secret negotiations at Cologne banker Kurt von Schroeder’s villa, the fatal miscalculation of conservative elites (\"boxed into a corner\"), and President Paul von Hindenburg’s capitulation leading to Hitler’s legal swearing-in on 30 January 1933.",
         "objectives": [
@@ -15996,8 +15996,8 @@
     },
     {
       "id": "lesson_3_1",
-      "title": "Key Topic 3.1: The Creation of a Dictatorship, 1933–1934",
-      "enquiry": "From chains to absolute control: How did Hitler completely dismantle the Weimar democracy and forge a totalitarian dictatorship in just 18 months?",
+      "title": "KT 3.1: The Creation of a Dictatorship, 1933–1934",
+      "enquiry": "How did Hitler destroy Weimar democracy and become absolute dictator in 18 months?",
       "teacher_notes": {
         "primer": "This enquiry examines the rapid and ruthless process through which Adolf Hitler dismantled the Weimar constitutional democracy to create a totalitarian one-party dictatorship between February 1933 and August 1934. Students investigate the Reichstag Fire and the suspension of civil liberties via the emergency decree, the passage of the Enabling Act through intimidation in the Kroll Opera House, the process of Gleichschaltung (co-ordination) that abolished trade unions and political parties, the bloody purge of Ernst Röhm and the SA during the Night of the Long Knives, and the death of President Hindenburg leading to the military oath of personal obedience to the Führer.",
         "objectives": [
@@ -17870,8 +17870,8 @@
     },
     {
       "id": "lesson_3_2",
-      "title": "Key Topic 3.2: The Police State and Religion, 1933–1939",
-      "enquiry": "The architecture of fear: How did Hitler construct a terrifying police state and attempt to crush the moral authority of the German churches?",
+      "title": "KT 3.2: The Police State and Religion, 1933–1939",
+      "enquiry": "How did the Nazis use terror and church policy to control German society?",
       "teacher_notes": {
         "primer": "This enquiry examines the mechanisms of terror, surveillance, and legal perversion through which the Nazi police state maintained control over Germany between 1933 and 1939. Students explore Heinrich Himmler’s expansion of the Schutzstaffel (SS) and the creation of early concentration camps like Dachau, the clandestine operations and public myth of the Gestapo under Reinhard Heydrich, the subversion of the judiciary through the People’s Court (Volksgerichtshof) and Roland Freisler, the regime’s persecution of the Roman Catholic Church and Pope Pius XI’s 1937 encyclical With Burning Concern, and the suppression of Protestant dissent alongside Martin Niemöller’s Confessional Church.",
         "objectives": [
@@ -19658,8 +19658,8 @@
     },
     {
       "id": "lesson_3_3",
-      "title": "Key Topic 3.3: Controlling and Influencing Attitudes, 1933–1939",
-      "enquiry": "The war for the German mind: How did Joseph Goebbels use censorship, mass propaganda, and the arts to brainwash an entire nation?",
+      "title": "KT 3.3: Controlling and Influencing Attitudes, 1933–1939",
+      "enquiry": "How did Goebbels use propaganda, censorship, and culture to shape German minds?",
       "teacher_notes": {
         "primer": "This enquiry examines the sophisticated propaganda, censorship, and cultural control apparatus engineered by Dr. Joseph Goebbels to manufacture total ideological conformity across Germany between 1933 and 1939. Students analyze the establishment of the Reich Chamber of Culture and the symbolic book burnings of May 1933, the state monopoly over print and broadcasting through the affordable Volksempfänger (People’s Receiver), the theatrical mass spectacle of the Nuremberg Rallies and the \"Cathedral of Light,\" the international propaganda triumph of the 1936 Berlin Olympic Games, and the aesthetic purging of modernist culture through the 1937 Degenerate Art exhibition.",
         "objectives": [
@@ -21695,7 +21695,7 @@
     },
     {
       "id": "lesson_3_4",
-      "title": "Key Topic 3.4: Opposition, Resistance and Conformity, 1933–1939",
+      "title": "KT 3.4: Opposition, Resistance and Conformity, 1933–1939",
       "lesson_reflection": {
         "prompt": "You have reached the end of this Key Topic booklet! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
         "instructions": [
@@ -21704,7 +21704,7 @@
           "Circle your effort level (1-5) and set a specific target for the next Key Topic."
         ]
       },
-      "enquiry": "Why was there so little active opposition to the Nazi regime, and how did underground networks, workers, and young people attempt to resist?",
+      "enquiry": "Why did so few Germans openly resist the Nazis—and how did some try?",
       "teacher_notes": {
         "primer": "This enquiry examines the complex spectrum between passive conformity, everyday dissent, and active political resistance inside Nazi Germany between 1933 and 1939. Students analyze the reasons why the majority of ordinary Germans conformed (economic recovery, fear of the Gestapo, and foreign policy triumphs), the clandestine underground resistance of outlawed socialist and communist workers (SPD Sopade and KPD cells), the cultural and physical rebellion of working-class youth groups (Edelweiss Pirates) and middle-class jazz fans (Swing Youth), and the courageous moral opposition of Christian leaders including Martin Niemöller and Bishop Clemens August Graf von Galen.",
         "objectives": [
@@ -23776,8 +23776,8 @@
     },
     {
       "id": "lesson_4_1",
-      "title": "Key Topic 4.1: Nazi Policies Towards Women, 1933–1939",
-      "enquiry": "How did the Nazis attempt to reverse the freedoms of Weimar women, and why did their policies ultimately contradict their own economic goals?",
+      "title": "KT 4.1: Nazi Policies Towards Women, 1933–1939",
+      "enquiry": "How successful were Nazi policies aimed at reshaping the lives of German women?",
       "teacher_notes": {
         "primer": "This enquiry examines the deeply contradictory ideological and practical policies enacted by the Nazi regime towards German women between 1933 and 1939. Students explore the traditional patriarchal ideal summarized in the slogan Kinder, Küche, Kirche (Children, Kitchen, Church) and the removal of women from professional employment, the financial incentives of the 1933 Law for the Encouragement of Marriage, the eugenic obsession with population expansion via the Mother’s Cross (Mutterkreuz) and Lebensborn breeding clinics, the brutal enforcement of racial purity through forced sterilization under the 1933 Genetic Health Courts, and the dramatic policy reversal from 1937 when Hermann Göring’s Four-Year Plan and rearmament forced millions of women back into factories.",
         "objectives": [
@@ -25462,8 +25462,8 @@
     },
     {
       "id": "lesson_4_2",
-      "title": "Key Topic 4.2: Nazi Policies Towards the Young, 1933–1939",
-      "enquiry": "How did the Nazis use the education system and youth movements to indoctrinate the next generation, and how successful were they?",
+      "title": "KT 4.2: Nazi Policies Towards the Young, 1933–1939",
+      "enquiry": "How did the Nazis use schools and youth groups to control the next generation?",
       "teacher_notes": {
         "primer": "This enquiry investigates how the Nazi regime sought to capture the minds, bodies, and loyalties of German young people between 1933 and 1939. Students examine the total reorganization of schooling under Reich Education Minister Bernhard Rust—including the purging of teachers via the National Socialist Teachers' League (NSLB) and the nazification of subjects like Biology, History, and PE. They also analyze the Hitler Youth (HJ) and League of German Girls (BDM), tracking how these organizations evolved from exciting voluntary youth clubs into compulsory, regimented instruments of pre-military conditioning, while assessing the limits of indoctrination and the emergence of youth counter-cultures like the Edelweiss Pirates and Swing Youth.",
         "objectives": [
@@ -27071,8 +27071,8 @@
     },
     {
       "id": "lesson_4_3",
-      "title": "Key Topic 4.3: Employment and Living Standards, 1933–1939",
-      "enquiry": "How did the Nazis achieve the 'economic miracle' of full employment, and did the standard of living actually improve for German workers?",
+      "title": "KT 4.3: Employment and Living Standards, 1933–1939",
+      "enquiry": "Did Nazi economic policies genuinely improve life for ordinary German workers?",
       "teacher_notes": {
         "primer": "This enquiry investigates the economic policies, labour controls, and living standards experienced by ordinary German citizens under the Nazi regime between 1933 and 1939. Students analyze the reduction of unemployment from 6 million to under 300,000, interrogating the extent to which this was a genuine \"economic miracle\" or an illusion created by \"invisible unemployment\" (RAD labor camps, military conscription, and the purging of women and Jews). They also examine the destruction of free trade unions, the regimentation of workers under Dr. Robert Ley’s German Labour Front (DAF), the social pacification strategies of Strength Through Joy (KdF), and the impact of Hermann Göring’s Four-Year Plan and the \"Guns vs. Butter\" debate on real wages and working hours.",
         "objectives": [
@@ -29170,7 +29170,7 @@
     },
     {
       "id": "lesson_4_4",
-      "title": "Key Topic 4.4: The Persecution of Minorities, 1933–1939",
+      "title": "KT 4.4: The Persecution of Minorities, 1933–1939",
       "lesson_reflection": {
         "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
         "instructions": [
@@ -29179,7 +29179,7 @@
           "Circle your effort level (1-5) and set a specific target for the next unit."
         ]
       },
-      "enquiry": "How and why did the Nazis persecute minorities, and how did the persecution of Jewish people escalate between 1933 and 1939?",
+      "enquiry": "How and why did Nazi persecution of Jews and minorities escalate by 1939?",
       "teacher_notes": {
         "primer": "This enquiry examines the escalating, systematic persecution and legal dehumanization of Jewish Germans and other minority groups under the Nazi dictatorship between 1933 and 1939. Students analyze the biological hierarchy of the Aryan \"master race\" (Herrenvolk) and the April 1933 nationwide anti-Jewish boycott, the codification of racial discrimination in the September 1935 Nuremberg Laws (Reich Citizenship Law and Blood Protection Law), the parallel persecution of Roma, homosexuals, and the disabled through forced sterilization, the state-orchestrated pogrom of Kristallnacht (Night of Broken Glass) in November 1938, and the subsequent economic Aryanization and forced emigration orchestrated by Reinhard Heydrich.",
         "objectives": [

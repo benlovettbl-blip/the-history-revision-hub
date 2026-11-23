@@ -1910,7 +1910,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l1_banner_warsaw_jewish_quarter_1934.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l1_banner_warsaw_jewish_quarter_1934.jpg",
-      "banner_position": "center 38%"
+      "banner_position": "center 38%",
+      "enquiry_question": "Who were the Jews of Europe before the Second World War?"
     },
     {
       "id": "lesson_2",
@@ -3471,7 +3472,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l2_banner_aachen_synagogue_kristallnacht_1938.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l2_banner_aachen_synagogue_kristallnacht_1938.jpg",
-      "banner_position": "center 52%"
+      "banner_position": "center 52%",
+      "enquiry_question": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?"
     },
     {
       "id": "lesson_3",
@@ -5032,7 +5034,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l3_banner_warsaw_ghetto_footbridge_1942.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l3_banner_warsaw_ghetto_footbridge_1942.jpg",
-      "banner_position": "center 28%"
+      "banner_position": "center 28%",
+      "enquiry_question": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?"
     },
     {
       "id": "lesson_4",
@@ -6662,7 +6665,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l4_banner_barbarossa_eastern_front_1941.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l4_banner_barbarossa_eastern_front_1941.jpg",
-      "banner_position": "center 50%"
+      "banner_position": "center 50%",
+      "enquiry_question": "How and why did persecution turn into systematic mass murder (1941–1942)?"
     },
     {
       "id": "lesson_5",
@@ -8325,7 +8329,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l5_banner_birkenau_gatehouse_tracks.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l5_banner_birkenau_gatehouse_tracks.jpg",
-      "banner_position": "center 58%"
+      "banner_position": "center 58%",
+      "enquiry_question": "How did the \"Final Solution\" operate, and how did Jews resist?"
     },
     {
       "id": "lesson_6",
@@ -9893,7 +9898,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l6_banner_righteous_among_nations_yad_vashem.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l6_banner_righteous_among_nations_yad_vashem.jpg",
-      "banner_position": "center 62%"
+      "banner_position": "center 62%",
+      "enquiry_question": "Who was responsible, who collaborated, and who tried to save?"
     },
     {
       "id": "lesson_7",
@@ -11442,7 +11448,8 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/shoah_l7_banner_nuremberg_courtroom_600.jpg",
       "hero_image": "/images/upgraded/ks3-modern/shoah_l7_banner_nuremberg_courtroom_600.jpg",
-      "banner_position": "center 55%"
+      "banner_position": "center 55%",
+      "enquiry_question": "What was lost, and what does survivor testimony teach us?"
     }
   ],
   "keyStage": "KS3",

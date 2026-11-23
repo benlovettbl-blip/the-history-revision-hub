@@ -547,6 +547,7 @@ const enquiryConfigs = [
       '14-year-old Richard II told the fleeing peasants: ‘I am your captain, follow me!’—before executing their leaders once the danger passed.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('medieval_england', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('medieval_england', enquiryConfigs);

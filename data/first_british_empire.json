@@ -293,7 +293,7 @@
     {
       "id": "lesson_1",
       "title": "The East India Company & Mughal Bengal (1600–1757)",
-      "enquiry": "How did a private chartered trading company seize sovereign military control of Bengal?",
+      "enquiry": "How did a London trading company seize military control of Mughal Bengal?",
       "subtitle": "From Spice Merchants to Sovereign Conquerors",
       "skill": "Causation & Motive",
       "card_image": "/images/ks3_fbe/fbe_l1_card_clive_mir_jafar_plassey_hayman.jpg",
@@ -2183,7 +2183,7 @@
           "prose_hash": "a8edcae95d"
         }
       ],
-      "enquiry_question": "How did a private London trading corporation conquer Mughal Bengal?",
+      "enquiry_question": "How did a London trading company seize military control of Mughal Bengal?",
       "learning_objectives": {
         "overarching": "How did the East India Company transform from Elizabethan merchants into sovereign rulers of Bengal?",
         "scaffolded": [
@@ -2304,12 +2304,13 @@
       "vocab_cloze_text": "Granted a royal [Charter] by Elizabeth I in 1600, the East India Company held a lucrative [Monopoly] over Asian trade and built armed coastal [Factory] posts across India. After clashing with the [Nawab] of Bengal, Robert Clive used bribery and trained [Sepoy] regiments to win the Battle of Plassey in 1757. By 1765, securing the [Diwani] gave the Company direct control over Bengal’s vast land taxes.",
       "banner_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?"
     },
     {
       "id": "lesson_2",
       "title": "The Transatlantic Slave Trade & The Middle Passage (1619–1807)",
-      "enquiry": "What were the economic mechanics and human horrors of the Triangular Trade?",
+      "enquiry": "How did the transatlantic slave trade operate, and how was it challenged?",
       "subtitle": "The Mechanics and Human Reality of the Triangular Trade",
       "skill": "Source Utility & Forensic Evidence",
       "card_image": "/images/ks3_fbe/fbe_l2_card_turner_slave_ship_1840.jpg",
@@ -4224,7 +4225,7 @@
           "prose_hash": "00801deccd"
         }
       ],
-      "enquiry_question": "How did the Triangular Trade and Middle Passage fuel Britain’s imperial economy?",
+      "enquiry_question": "How did the transatlantic slave trade operate, and how was it challenged?",
       "learning_objectives": {
         "overarching": "What were the economic mechanics and human horrors of the Transatlantic Slave Trade?",
         "scaffolded": [
@@ -4345,12 +4346,13 @@
       "vocab_cloze_text": "Driven by plantation profits, Britain dominated [Transatlantic Trade] after securing the Spanish [Asiento] contract in 1713. Captive Africans were locked inside coastal [Barracoon] pens before enduring disease, chains, and overcrowding on the [Middle Passage] into lifelong [Chattel Slavery]. Outrage over the 1781 Zong killings and Olaudah Equiano’s testimony strengthened the [Abolitionist] campaign until Parliament banned the British slave trade in 1807.",
       "banner_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
-      "banner_position": "center 40%"
+      "banner_position": "center 40%",
+      "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?"
     },
     {
       "id": "lesson_3",
       "title": "Plantation Reality, Queen Nanny & Maroon Resistance (1655–1740)",
-      "enquiry": "How did enslaved Africans actively resist colonial bondage in the Caribbean?",
+      "enquiry": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
       "subtitle": "Sugar Barons, Mountain Guerrillas, and Freedom Treaties",
       "skill": "Historical Interpretations & Significance",
       "card_image": "/images/ks3_fbe/fbe_l3_card_maroon_pacification_brunias.jpg",
@@ -6090,7 +6092,7 @@
           "prose_hash": "8f529b55ab"
         }
       ],
-      "enquiry_question": "How did Caribbean sugar monoculture spark fierce Maroon guerrilla resistance?",
+      "enquiry_question": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
       "learning_objectives": {
         "overarching": "How did enslaved Africans endure and resist the brutal regime of Caribbean sugar plantations?",
         "scaffolded": [
@@ -6212,12 +6214,13 @@
       "vocab_cloze_text": "On Jamaican sugar estates, enslaved Africans were driven from dawn to dusk on each [Plantation] under the harsh [Gang System] and armed overseers. Many fought back through tool [Sabotage] or escaped into the Blue Mountains to join free [Maroon] communities. Led by Queen Nanny, fighters used the cow-horn [Abeng] and [Guerrilla Warfare] ambushes to force Britain to recognise Maroon freedom in 1739.",
       "banner_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiryQuestion": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?"
     },
     {
       "id": "lesson_4",
       "title": "The Thirteen Colonies, The Proclamation of 1763 & The Boston Tea Party (1763–1773)",
-      "enquiry": "Why did imperial taxation drive American colonists from loyal British subjects to open rebellion?",
+      "enquiry": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
       "subtitle": "From Loyal Subjects to Revolutionary Rebellion",
       "skill": "Causal Sequencing & Narrative Account",
       "card_image": "/images/ks3_fbe/fbe_l4_card_samuel_adams_copley_1772.jpg",
@@ -7997,7 +8000,7 @@
           "prose_hash": "ed7b3d0476"
         }
       ],
-      "enquiry_question": "Why did imperial taxation push the Thirteen Colonies from protest to revolution?",
+      "enquiry_question": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
       "learning_objectives": {
         "overarching": "Why did British imperial taxation provoke the American colonies to rebel between 1763 and 1773?",
         "scaffolded": [
@@ -8118,12 +8121,13 @@
       "vocab_cloze_text": "Deep in debt after 1763, Parliament angered American colonists by enforcing import [Tariff] taxes and the 1765 Stamp Act. Organised by the [Sons of Liberty], merchants launched a coordinated [Boycott] of British goods and condemned troops stationed under [Quartering] rules. After Samuel Adams’s protesters dumped 342 East India Company tea chests into Boston Harbour in December 1773, George III answered with the punitive [Coercive Acts].",
       "banner_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
-      "banner_position": "center 45%"
+      "banner_position": "center 45%",
+      "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?"
     },
     {
       "id": "lesson_5",
       "title": "The American Revolution, 1776 Declaration & The Black Loyalists (1775–1783)",
-      "enquiry": "How did the ideals of the 1776 Revolution contrast with the reality of slavery and imperial defeat?",
+      "enquiry": "How did the American Revolution win independence while leaving slavery intact?",
       "subtitle": "Liberty, Hypocrisy, and the Fracture of the First Empire",
       "skill": "Evaluative Synthesis & Historical Verdict",
       "card_image": "/images/ks3_fbe/fbe_l5_card_treaty_of_paris_commissioners_west_1783.jpg",
@@ -9837,7 +9841,7 @@
           "prose_hash": "361ca7d998"
         }
       ],
-      "enquiry_question": "How did the American Revolution shatter the First British Empire?",
+      "enquiry_question": "How did the American Revolution win independence while leaving slavery intact?",
       "learning_objectives": {
         "overarching": "How was the American Revolutionary War fought, and why was it a paradox of liberty for Black Loyalists?",
         "scaffolded": [
@@ -9959,7 +9963,8 @@
       "vocab_cloze_text": "Colonial [Militia] clashed with British regulars at Lexington in 1775 before Thomas Jefferson’s July 1776 [Declaration] proclaimed [Unalienable Rights]—exposing painful [Hypocrisy] alongside ongoing slavery. Meanwhile, thousands of escaped [Black Loyalist] soldiers fought for British promises of freedom. Following crucial [Allied Intervention] by France and Cornwallis’s surrender at Yorktown, Britain recognised US independence in the 1783 [Treaty of Paris].",
       "banner_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
-      "banner_position": "center 40%"
+      "banner_position": "center 40%",
+      "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?"
     }
   ],
   "homepage_background": "/images/first_british_empire/battle_of_plassey_1757.jpg",

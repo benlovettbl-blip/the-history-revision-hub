@@ -43,10 +43,10 @@
     {
       "id": "lesson_1",
       "skill": "Chronology & Geographical Causation",
-      "title": "Enquiry 1: Mountains, Islands & Rival Poleis — Why Was Ancient Greece Divided Into City-States? (c. 800–500 BC)",
+      "title": "Enquiry 1: Mountains, Islands & Rival City-States (c. 800–500 BC)",
       "subtitle": "Minoans & Mycenaeans, Rugged Mountains & Aegean Islands, Acropolis & Agora, the Greek Alphabet, and Sea Trade",
-      "enquiryQuestion": "Why did geography divide Ancient Greece into rival city-states, and what shared culture still united all Greeks?",
-      "enquiry_question": "Why did geography divide Ancient Greece into rival city-states, and what shared culture still united all Greeks?",
+      "enquiryQuestion": "Why was Ancient Greece split into rival city-states, yet united by culture?",
+      "enquiry_question": "Why was Ancient Greece split into rival city-states, yet united by culture?",
       "prologue": "Sail across sparkling Aegean waves past over a thousand sunlit islands and steep mountain ridges! Discover Bronze Age Mycenae's Lion Gate, climb a fortified Acropolis, haggle in a bustling Agora, and find out what united rival Greek city-states.",
       "blurb": "Sail across sparkling Aegean waves past over a thousand sunlit islands and steep mountain ridges! Discover Bronze Age Mycenae's Lion Gate, climb a fortified Acropolis, haggle in a bustling Agora, and find out what united rival Greek city-states.",
       "hero_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
@@ -708,15 +708,16 @@
         "caption": "Marble columns of the Temple of Poseidon at Cape Sounion overlooking the islands and blue waters of the Aegean Sea",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg"
+      "banner_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
+      "enquiry": "Why was Ancient Greece split into rival city-states, yet united by culture?"
     },
     {
       "id": "lesson_2",
       "skill": "Similarity, Difference & Civic Comparison",
-      "title": "Enquiry 2: Athens vs Sparta — Where Would You Rather Grow Up in Ancient Greece? (c. 508–430 BC)",
+      "title": "Enquiry 2: Growing Up in Athens and Sparta (c. 508–430 BC)",
       "subtitle": "People-Power on the Pnyx, Ostrakon Shards & Kleroterion Juries, Sparta's Agoge Barracks, and Girls' & Women's Lives",
-      "enquiryQuestion": "How did democratic Athens and warrior Sparta govern their cities differently, and whose lives were freer in each polis?",
-      "enquiry_question": "How did democratic Athens and warrior Sparta govern their cities differently, and whose lives were freer in each polis?",
+      "enquiryQuestion": "How different was daily life in democratic Athens and warrior Sparta?",
+      "enquiry_question": "How different was daily life in democratic Athens and warrior Sparta?",
       "prologue": "Climb the windy Pnyx hill in Athens to vote by raising your hand, or march barefoot at age seven into Sparta's tough agoge barracks! Compare pottery ostraka and marble jury machines with bronze helmets — and discover a big surprise about Spartan girls and women.",
       "blurb": "Climb the windy Pnyx hill in Athens to vote by raising your hand, or march barefoot at age seven into Sparta's tough agoge barracks! Compare pottery ostraka and marble jury machines with bronze helmets — and discover a big surprise about Spartan girls and women.",
       "hero_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
@@ -1384,15 +1385,16 @@
         "caption": "Carved stone speakers' platform (bema) on the Pnyx hill in Athens, where citizens addressed thousands of Assembly voters",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg"
+      "banner_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
+      "enquiry": "How different was daily life in democratic Athens and warrior Sparta?"
     },
     {
       "id": "lesson_3",
       "skill": "Beliefs, Culture & Source Evidence",
-      "title": "Enquiry 3: Mount Olympus, Myths & The Ancient Olympics — How Did Religion Shape Greek Life? (776–400 BC)",
+      "title": "Enquiry 3: Mount Olympus, Myths & The Ancient Olympics (776–400 BC)",
       "subtitle": "The Twelve Olympians, Athens's Parthenon & Delphi's Oracle, Myths on Painted Vases, and Olympia's Sacred Truce from 776 BC",
-      "enquiryQuestion": "How did belief in the Olympian gods inspire Greek temples, hero myths, and the Ancient Olympic Games?",
-      "enquiry_question": "How did belief in the Olympian gods inspire Greek temples, hero myths, and the Ancient Olympic Games?",
+      "enquiryQuestion": "How did Greek gods inspire temples, myths, and the Olympic Games?",
+      "enquiry_question": "How did Greek gods inspire temples, myths, and the Olympic Games?",
       "prologue": "Gaze up at snowy Mount Olympus where Zeus hurls thunderbolts, climb misty Delphi to hear the Oracle's riddles, and spot Heracles battling the Hydra on clay vases! Then race down Olympia's dusty track in 776 BC under the Sacred Truce.",
       "blurb": "Gaze up at snowy Mount Olympus where Zeus hurls thunderbolts, climb misty Delphi to hear the Oracle's riddles, and spot Heracles battling the Hydra on clay vases! Then race down Olympia's dusty track in 776 BC under the Sacred Truce.",
       "hero_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
@@ -2060,15 +2062,16 @@
         "caption": "The ancient packed-earth stadion running track at Olympia, where barefoot Greek sprinters raced in honour of Zeus from 776 BC",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg"
+      "banner_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
+      "enquiry": "How did Greek gods inspire temples, myths, and the Olympic Games?"
     },
     {
       "id": "lesson_4",
       "skill": "Cause, Consequence & Turning Points",
-      "title": "Enquiry 4: Marathon, Thermopylae & Salamis — How Did Tiny City-States Defeat the Persian Empire? (490–479 BC)",
+      "title": "Enquiry 4: Marathon, Thermopylae & Salamis (490–479 BC)",
       "subtitle": "King Darius & King Xerxes, the Hoplite Phalanx at Marathon, 300 Spartans at Thermopylae, and Triremes at Salamis",
-      "enquiryQuestion": "How did tiny, rival Greek city-states unite to defeat the mighty Persian Empire between 490 and 479 BC?",
-      "enquiry_question": "How did tiny, rival Greek city-states unite to defeat the mighty Persian Empire between 490 and 479 BC?",
+      "enquiryQuestion": "How did tiny Greek city-states defeat the giant Persian Empire?",
+      "enquiry_question": "How did tiny Greek city-states defeat the giant Persian Empire?",
       "prologue": "In 490 BC, the gigantic Persian Empire sailed across the Aegean to crush tiny Greece! Lock bronze shields in the Marathon phalanx, guard the narrow cliffs of Thermopylae alongside King Leonidas, and ram enemy warships with wooden triremes in the Strait of Salamis.",
       "blurb": "In 490 BC, the gigantic Persian Empire sailed across the Aegean to crush tiny Greece! Lock bronze shields in the Marathon phalanx, guard the narrow cliffs of Thermopylae alongside King Leonidas, and ram enemy warships with wooden triremes in the Strait of Salamis.",
       "hero_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
@@ -2735,15 +2738,16 @@
         "caption": "1816 historical engraving looking down toward the narrow coastal pass (defile) of Thermopylae between steep Greek mountains and the sea.",
         "position": "center 45%"
       },
-      "banner_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
+      "enquiry": "How did tiny Greek city-states defeat the giant Persian Empire?"
     },
     {
       "id": "lesson_5",
       "skill": "Significance & History of Ideas",
-      "title": "Enquiry 5: Theatre, Philosophy, Maths & Medicine — How Did Greek Thinkers Change Human Knowledge? (c. 460–322 BC)",
+      "title": "Enquiry 5: Greek Theatre, Philosophy, Maths & Medicine (c. 460–322 BC)",
       "subtitle": "Epidaurus Amphitheatre, Tragedies & Comedies, Socrates, Plato & Aristotle, Hippocrates of Kos, and Euclid & Archimedes",
-      "enquiryQuestion": "How did Ancient Greek playwrights, philosophers, doctors, and mathematicians transform human knowledge?",
-      "enquiry_question": "How did Ancient Greek playwrights, philosophers, doctors, and mathematicians transform human knowledge?",
+      "enquiryQuestion": "How did Greek thinkers, doctors, and writers change human knowledge?",
+      "enquiry_question": "How did Greek thinkers, doctors, and writers change human knowledge?",
       "prologue": "Test the crystal-clear acoustics of Epidaurus’s 14,000-seat stone theatre, debate big questions barefoot alongside Socrates in Athens, observe patients on Kos with Hippocrates, and shout \"Eureka!\" with Archimedes as Greek thinkers change human knowledge forever!",
       "blurb": "Test the crystal-clear acoustics of Epidaurus’s 14,000-seat stone theatre, debate big questions barefoot alongside Socrates in Athens, observe patients on Kos with Hippocrates, and shout \"Eureka!\" with Archimedes as Greek thinkers change human knowledge forever!",
       "hero_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
@@ -3410,15 +3414,16 @@
         "caption": "Marble tholos and sanctuary terraces at Delphi set high on the slopes of Mount Parnassus.",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
+      "enquiry": "How did Greek thinkers, doctors, and writers change human knowledge?"
     },
     {
       "id": "lesson_6",
       "skill": "Change, Continuity & Lasting Legacy",
-      "title": "Enquiry 6: Alexander the Great & Our World Today — What Is Ancient Greece’s Lasting Legacy? (336–146 BC & Today)",
+      "title": "Enquiry 6: Alexander the Great & Greece’s Legacy Today (336–146 BC)",
       "subtitle": "Alexander & Bucephalus, Alexandria’s Great Library & Pharos Lighthouse, Rome (146 BC), Democracy, Words, Columns & 1896 Olympics",
-      "enquiryQuestion": "How did Alexander the Great spread Greek culture, and what is Ancient Greece’s lasting legacy in our world today?",
-      "enquiry_question": "How did Alexander the Great spread Greek culture, and what is Ancient Greece’s lasting legacy in our world today?",
+      "enquiryQuestion": "How did Alexander spread Greek ideas that still shape our world today?",
+      "enquiry_question": "How did Alexander spread Greek ideas that still shape our world today?",
       "prologue": "Gallop east beside young King Alexander the Great on his warhorse Bucephalus, climb past Alexandria’s towering Pharos Lighthouse into the Great Library, and spot Greek democracy, English words, stone columns, and the Modern Olympics alive all around us today!",
       "blurb": "Gallop east beside young King Alexander the Great on his warhorse Bucephalus, climb past Alexandria’s towering Pharos Lighthouse into the Great Library, and spot Greek democracy, English words, stone columns, and the Modern Olympics alive all around us today!",
       "hero_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
@@ -4085,7 +4090,8 @@
         "caption": "Two-storey marble facade of the ancient Library of Celsus at Ephesus — showcasing the lasting spread of Greek architecture and scholarship.",
         "position": "center 45%"
       },
-      "banner_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
+      "enquiry": "How did Alexander spread Greek ideas that still shape our world today?"
     }
   ],
   "key_individuals": [

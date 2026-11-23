@@ -228,8 +228,8 @@ export default {
   "lessons": [
     {
       "id": "lesson_1",
-      "title": "How much progress did the Romans make in public health?",
-      "enquiry": "Was Roman water engineering built to protect ordinary people, or to show off imperial power and luxury?",
+      "title": "Roman Water Engineering: Aqueducts, Baths & Sewers",
+      "enquiry": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?",
       "subtitle": "From Celtic streams to monumental aqueducts, thermae, and public latrines",
       "skill": "Disciplinary Skill: Change & Continuity / Causation",
       "card_image": "/images/ks3_was/was_l1_card_roman_aqueduct_segovia.jpg",
@@ -2155,12 +2155,14 @@ export default {
       "vocab_cloze_text": "After conquering Britain in AD 43, Roman engineers promoted urban [Romanitas] by building gravity-fed [Aqueduct] channels to carry clean spring water into towns. Citizens exercised and bathed inside public [Thermae] heated from beneath the floor by a [Hypocaust] furnace, alongside stone [Latrine] blocks flushed by running drains. Yet shared bathwater, communal sponges, and toxic [Plumbism] from lead pipes still spread illness before Roman rule collapsed in AD 410.",
       "banner_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
       "hero_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiry_question": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?",
+      "enquiryQuestion": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?"
     },
     {
       "id": "lesson_2",
-      "title": "Why did public health decline during the Middle Ages?",
-      "enquiry": "Was medieval public health squalor caused by a lack of money, or by mistaken medical beliefs like miasma?",
+      "title": "Medieval Towns, Monasteries & Public Health",
+      "enquiry": "Why did medieval towns struggle so badly to keep streets and water clean?",
       "subtitle": "From urban filth and gong farmers to monastic hydraulics and the Black Death",
       "skill": "Disciplinary Skill: Comparison & Living Conditions / Causation",
       "card_image": "/images/ks3_was/was_l2_card_tournai_plague_burial_1349.jpg",
@@ -3963,12 +3965,14 @@ export default {
       "vocab_cloze_text": "As each medieval [Borough] expanded after 1100, households dumped waste into streets and overflowing [Cesspit] shafts dug dangerously close to wells, hiring a night-time [Gong Farmer] to clear the filth. By contrast, wealthy monasteries piped clean water through a stone [Lavatorium] for washing. When the [Black Death] struck in 1348, townsfolk blamed foul-smelling [Miasma], prompting Parliament to pass the 1388 [Statute of Cambridge] against river pollution.",
       "banner_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
       "hero_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
-      "banner_position": "center 45%"
+      "banner_position": "center 45%",
+      "enquiry_question": "Why did medieval towns struggle so badly to keep streets and water clean?",
+      "enquiryQuestion": "Why did medieval towns struggle so badly to keep streets and water clean?"
     },
     {
       "id": "lesson_3",
-      "title": "To what extent did towns become filthier during the Early Modern period?",
-      "enquiry": "Was early modern filth caused by population explosion, or the lack of running water to make inventions work?",
+      "title": "Early Modern London, Cesspits & Plague (1500–1665)",
+      "enquiry": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?",
       "subtitle": "From Sir John Harington’s flush toilet to Samuel Pepys’ cellar and the Great Plague of 1665",
       "skill": "Disciplinary Skill: Extent of Change / Source Utility",
       "card_image": "/images/ks3_was/was_l3_card_great_plague_street_1665.jpg",
@@ -5662,14 +5666,16 @@ export default {
       "vocab_cloze_text": "Rapid Tudor and Stuart growth turned London into a crowded [Metropolis] where overflowing privies leaked into cellars, as [Samuel Pepys] famously recorded in 1660. Although [Sir John Harington] designed a flushing [Water Closet] in 1596 and the 1613 [New River] canal piped fresh water from Hertfordshire, poor districts remained filthy. During the 1665 Great Plague, parish clerks tracked soaring deaths through weekly [Bills of Mortality].",
       "banner_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
       "hero_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
-      "banner_position": "center 48%"
+      "banner_position": "center 48%",
+      "enquiry_question": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?",
+      "enquiryQuestion": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?"
     },
     {
       "id": "lesson_4",
-      "title": "Enquiry 4: How did industrial growth and the 'Great Stink' force Britain to build modern sewers?",
+      "title": "Industrial Slums, Cholera & The Great Stink (1800–1865)",
       "short_title": "Industrial Squalor & The Great Stink",
       "period": "1750–1858",
-      "enquiry": "Was Victorian cholera conquered by civil engineering and fear of the Great Stink, or did politicians act out of genuine care for the poor?",
+      "enquiry": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?",
       "subtitle": "Enquiry 04: Boomtown Squalor, Asiatic Cholera & Joseph Bazalgette’s Underground Revolution (1750–1858)",
       "skill": "Causation & Significance",
       "card_image": "/images/ks3_was/was_l4_card_crossness_pumping_station.jpg",
@@ -7071,14 +7077,16 @@ export default {
       "vocab_cloze_text": "Rapid [Industrialisation] packed working families into damp back-to-back slums sharing a filthy outdoor [Privy] and leaking [Cesspool]. Because MPs favoured [Laissez-faire] non-interference and doctors blamed foul [Miasma], deadly waterborne [Cholera] swept British cities from 1831 onwards. Only when the 1858 Great Stink overwhelmed Parliament did MPs fund Joseph Bazalgette’s [Intercepting Sewer] network across London.",
       "banner_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
       "hero_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
-      "banner_position": "center 48%"
+      "banner_position": "center 48%",
+      "enquiry_question": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?",
+      "enquiryQuestion": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?"
     },
     {
       "id": "lesson_5",
-      "title": "Enquiry 5: How did Dr John Snow, Germ Theory, and the 1875 Public Health Act conquer water-borne disease?",
+      "title": "John Snow, Germ Theory & The 1875 Public Health Act",
       "short_title": "Germ Theory, Dr Snow & The 1875 Revolution",
       "period": "1854–1900",
-      "enquiry": "Was cholera defeated by scientific observation, laboratory discovery of bacteria, or the introduction of compulsory government legislation?",
+      "enquiry": "How did science and government laws finally defeat water-borne cholera?",
       "subtitle": "Enquiry 05: The Broad Street Pump, Louis Pasteur’s Swan-Neck Flasks & The 1875 Sanitary Revolution (1854–1900)",
       "skill": "Significance & Evidence",
       "card_image": "/images/ks3_was/was_l5_card_board_of_health_cholera_1832.jpg",
@@ -8497,7 +8505,9 @@ export default {
       "vocab_cloze_text": "When cholera killed over 500 Soho residents in 1854, Dr John Snow pioneered [Epidemiology] by plotting every death on a street [Spot Map] tracing the outbreak to the Broad Street pump. In 1861, Louis Pasteur’s [Germ Theory] disproved [Spontaneous Generation], and Robert Koch later identified the cholera [Bacterium]. Finally, the 1875 Public Health Act made clean water and appointing a [Medical Officer of Health] [Compulsory] for every council.",
       "banner_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
       "hero_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
-      "banner_position": "center 38%"
+      "banner_position": "center 38%",
+      "enquiry_question": "How did science and government laws finally defeat water-borne cholera?",
+      "enquiryQuestion": "How did science and government laws finally defeat water-borne cholera?"
     },
     {
       "id": "lesson_6",
@@ -9981,7 +9991,9 @@ export default {
       "vocab_cloze_text": "Between 1800 and 1900, British public health advanced from [Laissez-Faire] neglect to a modern [Compulsory State]. First, Dr John Snow used [Epidemiology] in Soho in 1854 to prove cholera spread through dirty water rather than [Miasma Theory]. Next, Joseph Bazalgette transformed London’s [Sanitation] with brick sewers, while Louis Pasteur’s 1861 [Germ Theory] gave Parliament scientific proof to pass the 1875 Public Health Act.",
       "banner_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
       "hero_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
-      "banner_position": "center 42%"
+      "banner_position": "center 42%",
+      "enquiry_question": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
+      "enquiryQuestion": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]"
     }
   ],
   "keyStage": "KS3",

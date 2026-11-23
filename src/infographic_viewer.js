@@ -1822,8 +1822,10 @@ function renderDrawerTools(modal, item) {
       }
     }
 
-    if (!questionText && lesson && lesson.enquiry_question && !ghostRegex.test(lesson.enquiry_question)) {
-      questionText = lesson.enquiry_question.trim();
+    const candidateEnquiry =
+      lesson && (lesson.enquiry || lesson.enquiry_question || lesson.enquiryQuestion || lesson.inquiry_question);
+    if (!questionText && candidateEnquiry && !ghostRegex.test(candidateEnquiry)) {
+      questionText = candidateEnquiry.trim();
     }
 
     if (!questionText) {

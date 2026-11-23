@@ -608,6 +608,7 @@ const renaissanceConfigs = [
     ],
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('edexcel_medicine', renaissanceConfigs, { slice: [5, 10] });
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('edexcel_medicine', renaissanceConfigs);

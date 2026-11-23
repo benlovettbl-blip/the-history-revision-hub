@@ -609,6 +609,7 @@ const enquiryConfigs = [
       'On 4 August 1914, Britain went to war to uphold the 1839 Treaty of London, defending Belgian neutrality against German invasion.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('great_war', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('great_war', enquiryConfigs);

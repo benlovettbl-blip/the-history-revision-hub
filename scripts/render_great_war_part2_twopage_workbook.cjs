@@ -551,6 +551,7 @@ const enquiryConfigs = [
       'Marshal Ferdinand Foch famously commented on the Treaty of Versailles: ‘This is not peace. It is an armistice for twenty years.’ World War II broke out twenty years and 64 days later.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('great_war_part2', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('great_war_part2', enquiryConfigs);

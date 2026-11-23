@@ -132,14 +132,19 @@ async function buildDatabase() {
         cover_image: unitData.cover_image,
         cover_image_position: unitData.cover_image_position,
         homepage_background: unitData.homepage_background,
-        lessons: rawLessons.map((l) => ({
-          id: l.id,
-          slug: l.slug,
-          alias_ids: l.alias_ids,
-          title: l.title,
-          enquiry: l.enquiry,
-          enquiry_question: l.enquiry_question,
-        })),
+        lessons: rawLessons.map((l) => {
+          const resolvedEnq =
+            l.enquiry || l.enquiry_question || l.enquiryQuestion || l.inquiry_question || '';
+          return {
+            id: l.id,
+            slug: l.slug,
+            alias_ids: l.alias_ids,
+            title: l.title,
+            enquiry: resolvedEnq,
+            enquiry_question: resolvedEnq,
+            enquiryQuestion: resolvedEnq,
+          };
+        }),
       },
     };
   }

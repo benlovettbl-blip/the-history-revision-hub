@@ -55,7 +55,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 4–5',
         title: 'The Situation on Elizabeth’s Accession, 1558',
         enquiryQuestion:
-          'How did an inexperienced queen secure an impoverished and divided England amidst acute foreign encirclement in 1558?',
+          'Why was Elizabeth’s position so insecure at home and abroad in 1558?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.1-accession-1558',
         vocabBank: [
           'Privy Council',
@@ -119,7 +119,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 6–7',
         title: 'The ‘Settlement’ of Religion, 1559',
         enquiryQuestion:
-          'To what extent was the 1559 Religious Settlement an enduring theological compromise designed to prevent civil war?',
+          'How did Elizabeth’s 1559 Religious Settlement try to unite a divided country?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.2-religious-settlement',
         vocabBank: [
           'Supreme Governor',
@@ -247,7 +247,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 10–11',
         title: 'The Problem of Mary, Queen of Scots, 1568–69',
         enquiryQuestion:
-          'How did the arrival of Mary, Queen of Scots in 1568 transform Elizabeth’s dynastic security into a permanent national crisis?',
+          'Why was Mary, Queen of Scots such a dangerous problem for Elizabeth from 1568?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt1.4-mary-queen-of-scots',
         vocabBank: [
           'Casket Letters',
@@ -530,7 +530,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 4–5',
         title: 'Plots and Revolts at Home, 1569–87',
         enquiryQuestion:
-          'Why did escalating assassination conspiracies compel Elizabeth to take the unprecedented step of executing an anointed monarch?',
+          'Why did Catholic rebellions and plots finally persuade Elizabeth to execute Mary in 1587?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.1-plots-and-revolts',
         vocabBank: [
           'Babington Plot',
@@ -594,7 +594,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 6–7',
         title: 'Relations with Spain, 1569–85',
         enquiryQuestion:
-          'How did maritime raiding and covert proxy intervention escalate an undeclared cold war into direct military conflict with Spain?',
+          'Why did rivalry with Spain slide toward open war between 1569 and 1585?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.2-relations-with-spain',
         vocabBank: [
           'Cacafuego',
@@ -658,7 +658,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 8–9',
         title: 'Outbreak of War with Spain, 1585–88',
         enquiryQuestion:
-          'Why did direct English military intervention in the Low Countries and the raid on Cadiz lead directly to the Spanish Armada?',
+          'How did war in the Netherlands and Drake’s raid on Cadiz trigger the Armada?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.3-outbreak-of-war',
         vocabBank: [
           'Cadiz',
@@ -722,7 +722,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 10–11',
         title: 'The Armada, 1588',
         enquiryQuestion:
-          'Was the defeat of the Spanish Armada primarily the result of superior English naval tactics or flawed Spanish planning and Atlantic storms?',
+          'Why did Philip II’s Spanish Armada fail to conquer England in 1588?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt2.4-spanish-armada',
         vocabBank: [
           'Gravelines',
@@ -1069,7 +1069,7 @@ const EEE_BOOKLETS = {
         textbookSpread: 'Textbook pp. 6–7',
         title: 'The ‘Problem’ of the Poor, 1558–88',
         enquiryQuestion:
-          'Why did poverty and vagabondage surge, and why did Tudor policy shift from harsh punishment toward parish work relief?',
+          'Why did poverty rise in Elizabethan England, and how did laws toward the poor change?',
         qrUrl: 'https://historyrevisionhub.co.uk/?view=lessons&unit=eee&lesson=kt3.2-poverty-and-vagabondage',
         vocabBank: [
           'enclosure',
@@ -1447,6 +1447,8 @@ const { applyCanonicalStageOverrides } = require('./components/canonical_stage_l
 Object.values(EEE_BOOKLETS).forEach((b) => {
   if (Array.isArray(b.lessons)) applyCanonicalStageOverrides('eee', b.lessons);
 });
+
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('eee', Object.values(EEE_BOOKLETS).flatMap(b => b.backCoverRows || []));
 
 module.exports = {
   EEE_BOOKLETS,

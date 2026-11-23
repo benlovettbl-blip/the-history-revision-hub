@@ -43,10 +43,10 @@ window.UNIT_DATA = {
     {
       "id": "lesson_1",
       "skill": "Cause & Consequence / Migration & Settlement",
-      "title": "Enquiry 1: After the Romans Left — Why Did Angles, Saxons & Jutes Settle in Britain? (c. AD 410–600)",
+      "title": "Enquiry 1: Angles, Saxons & Jutes Settle in Britain (c. AD 410–600)",
       "subtitle": "North Sea Boats, Timber Mead Halls, Seven Kingdoms & Everyday Old English Clues",
-      "enquiryQuestion": "Who were the Angles, Saxons, and Jutes, and why did they cross the North Sea to settle in Britain after AD 410?",
-      "enquiry_question": "Who were the Angles, Saxons, and Jutes, and why did they cross the North Sea to settle in Britain after AD 410?",
+      "enquiryQuestion": "Why did Angles, Saxons, and Jutes cross the sea to settle in Britain?",
+      "enquiry_question": "Why did Angles, Saxons, and Jutes cross the sea to settle in Britain?",
       "prologue": "After the last Roman legions marched away in AD 410, long wooden rowing boats sliced through the grey North Sea mist carrying families, seeds, and iron tools. Discover why the Angles, Saxons, and Jutes crossed the sea — and how their timber villages gave England its name and our days of the week!",
       "blurb": "After the last Roman legions marched away in AD 410, long wooden rowing boats sliced through the grey North Sea mist carrying families, seeds, and iron tools. Discover why the Angles, Saxons, and Jutes crossed the sea — and how their timber villages gave England its name and our days of the week!",
       "hero_image": "/images/upgraded/ks2-ancient/asv_l1_banner_west_stow_village.jpg",
@@ -693,15 +693,16 @@ window.UNIT_DATA = {
         "caption": "Panoramic View of Reconstructed Early Anglo-Saxon Thatched Timber Houses at West Stow Village, Suffolk",
         "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/asv_l1_banner_west_stow_village.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/asv_l1_banner_west_stow_village.jpg",
+      "enquiry": "Why did Angles, Saxons, and Jutes cross the sea to settle in Britain?"
     },
     {
       "id": "lesson_2",
       "skill": "Evidential Understanding / Archaeological Inference",
-      "title": "Enquiry 2: Ship Burials & Monasteries — What Do Sutton Hoo & Christian Monks Reveal? (c. AD 597–750)",
+      "title": "Enquiry 2: Sutton Hoo & Christian Monasteries (c. AD 597–750)",
       "subtitle": "The Ghost Ship in Mound 1, Missionaries at Canterbury & Lindisfarne, and Illuminated Vellum Books",
-      "enquiryQuestion": "What does the Sutton Hoo ship burial reveal about Anglo-Saxon kings, and how did Christianity change Britain?",
-      "enquiry_question": "What does the Sutton Hoo ship burial reveal about Anglo-Saxon kings, and how did Christianity change Britain?",
+      "enquiryQuestion": "What do Sutton Hoo and early monasteries tell us about Saxon Britain?",
+      "enquiry_question": "What do Sutton Hoo and early monasteries tell us about Saxon Britain?",
       "prologue": "In 1939, spades scraping sandy Suffolk soil uncovered rows of iron rivets tracing a 27-metre Anglo-Saxon ship packed with gold, Sri Lankan garnets, and a dragon-browed war helmet! Step from Sutton Hoo’s royal burial mound into candlelit monasteries to see how archaeology and Christian monks transformed Britain.",
       "blurb": "In 1939, spades scraping sandy Suffolk soil uncovered rows of iron rivets tracing a 27-metre Anglo-Saxon ship packed with gold, Sri Lankan garnets, and a dragon-browed war helmet! Step from Sutton Hoo’s royal burial mound into candlelit monasteries to see how archaeology and Christian monks transformed Britain.",
       "hero_image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_gold_buckle.jpg",
@@ -1347,15 +1348,16 @@ window.UNIT_DATA = {
           "viewing_task": "[01:15] Quick Check: Which distant lands supplied the red garnets, silver dishes, and gold coins buried in Mound 1?\n[03:30] Hinge Question: How do these treasures change our view of Britain around AD 625?",
           "model_answer": "Quick Check: Red garnets came from India and Sri Lanka, silver vessels from the eastern Mediterranean Byzantine Empire, and gold coins from Frankish Europe.\nHinge Question: Far from being isolated or backward after Rome left, 7th-century Anglo-Saxon kingdoms were wealthy, artistic, and plugged into long-distance trade networks."
         }
-      ]
+      ],
+      "enquiry": "What do Sutton Hoo and early monasteries tell us about Saxon Britain?"
     },
     {
       "id": "lesson_3",
       "skill": "Cause & Consequence / Technological Advantage",
-      "title": "Enquiry 3: Fury of the Northmen — Why Did Vikings Raid Lindisfarne & Conquer Kingdoms? (AD 793–878)",
+      "title": "Enquiry 3: Viking Longships, Lindisfarne & Conquest (AD 793–878)",
       "subtitle": "Shock on Holy Island, Shallow-Draught Oak Longships & the Great Heathen Army at Jorvik",
-      "enquiryQuestion": "Why did Viking raiders cross the sea from Scandinavia in AD 793, and how did the Great Heathen Army nearly conquer all England?",
-      "enquiry_question": "Why did Viking raiders cross the sea from Scandinavia in AD 793, and how did the Great Heathen Army nearly conquer all England?",
+      "enquiryQuestion": "Why did Vikings raid Britain, and how did they conquer Saxon kingdoms?",
+      "enquiry_question": "Why did Vikings raid Britain, and how did they conquer Saxon kingdoms?",
       "prologue": "On 8 June AD 793, dragon-prowed warships beached silently on Holy Island at Lindisfarne, shocking every kingdom in Europe! Uncover the clever ocean-and-river engineering behind the Viking longship — and trace how summer raiders returned in AD 865 as a Great Heathen Army determined to conquer all England.",
       "blurb": "On 8 June AD 793, dragon-prowed warships beached silently on Holy Island at Lindisfarne, shocking every kingdom in Europe! Uncover the clever ocean-and-river engineering behind the Viking longship — and trace how summer raiders returned in AD 865 as a Great Heathen Army determined to conquer all England.",
       "hero_image": "/units/ks2_anglo_saxons_vikings/assets/viking_coastal_shield_wall.jpg",
@@ -2001,15 +2003,16 @@ window.UNIT_DATA = {
           "viewing_task": "[00:45] Quick Check: Why did Viking families and warriors decide to sail across the sea from Scandinavia?\n[02:05] Hinge Question: How did Viking aims shift from coastal raiding to settling and ruling parts of Britain?",
           "model_answer": "Quick Check: Much of Scandinavia was mountainous, icy, or sandy with limited farmland, so crews sailed fast oak longships seeking silver treasure, trade, and fertile land.\nHinge Question: Starting with surprise monastery raids in AD 793, larger Viking armies returned from AD 865 to stay over winter, capture York (Jorvik), and farm permanently."
         }
-      ]
+      ],
+      "enquiry": "Why did Vikings raid Britain, and how did they conquer Saxon kingdoms?"
     },
     {
       "id": "lesson_4",
       "skill": "Historical Significance & Leadership",
-      "title": "Enquiry 4: Alfred the Great, Burhs & the Danelaw — How Did Wessex Survive? (AD 871–899)",
+      "title": "Enquiry 4: Alfred the Great, Burhs & The Danelaw (AD 871–899)",
       "subtitle": "Athelney Marshes, Victory at Edington, 33 Fortified Burhs & Schools of Learning",
-      "enquiryQuestion": "How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?",
-      "enquiry_question": "How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?",
+      "enquiryQuestion": "How did King Alfred save Wessex from Viking conquest in AD 878?",
+      "enquiry_question": "How did King Alfred save Wessex from Viking conquest in AD 878?",
       "prologue": "In January AD 878, a surprise midwinter Viking attack forced King Alfred of Wessex to flee into the misty Somerset marshes at Athelney with only a tiny band of followers! How did Alfred turn near-defeat into triumph at Edington, agree the Danelaw border, ring Wessex with 33 walled burhs, and become the ONLY monarch in British history called \"the Great\"?",
       "blurb": "In January AD 878, a surprise midwinter Viking attack forced King Alfred of Wessex to flee into the misty Somerset marshes at Athelney with only a tiny band of followers! How did Alfred turn near-defeat into triumph at Edington, agree the Danelaw border, ring Wessex with 33 walled burhs, and become the ONLY monarch in British history called \"the Great\"?",
       "hero_image": "/units/ks2_anglo_saxons_vikings/assets/viking_palisade_shield_wall.jpg",
@@ -2699,15 +2702,16 @@ window.UNIT_DATA = {
           "viewing_task": "[01:25] Quick Check: Why was Wessex in such grave danger in early AD 878?\n[03:10] Hinge Question: How did King Alfred use BOTH strong defences (burhs) and peacemaking to protect Wessex?",
           "model_answer": "Quick Check: Viking armies had already toppled Northumbria, East Anglia, and Mercia, and Guthrum's surprise winter attack forced Alfred into the Somerset marshes.\nHinge Question: After winning at Edington, Alfred made a Christian peace treaty creating the Danelaw border while building walled burhs and warships so Wessex remained ready."
         }
-      ]
+      ],
+      "enquiry": "How did King Alfred save Wessex from Viking conquest in AD 878?"
     },
     {
       "id": "lesson_5",
       "skill": "Similarity, Difference & Challenging Stereotypes",
-      "title": "Enquiry 5: Life in Jorvik & the Danelaw — Were the Vikings Only Fierce Raiders? (c. AD 876–1000)",
+      "title": "Enquiry 5: Everyday Viking Life in Jorvik (c. AD 876–1000)",
       "subtitle": "40,000 Finds Under Coppergate, Baghdad Silver Dirhams, Viking Women & Old Norse Words",
-      "enquiryQuestion": "What does archaeology from Jorvik (York) reveal about everyday Viking settlers, traders, and craftworkers?",
-      "enquiry_question": "What does archaeology from Jorvik (York) reveal about everyday Viking settlers, traders, and craftworkers?",
+      "enquiryQuestion": "Were the Vikings only fierce raiders, or peaceful traders and settlers too?",
+      "enquiry_question": "Were the Vikings only fierce raiders, or peaceful traders and settlers too?",
       "prologue": "If we only read chronicles written by terrified monks at monasteries like Lindisfarne, we might think every Viking spent all day swinging a battle-axe! Yet when archaeologists dug into spongy, wet mud beneath Coppergate street in York — Viking Jorvik — they uncovered 40,000 everyday clues from combs and board games to silk from Byzantium and silver coins from Baghdad!",
       "blurb": "If we only read chronicles written by terrified monks at monasteries like Lindisfarne, we might think every Viking spent all day swinging a battle-axe! Yet when archaeologists dug into spongy, wet mud beneath Coppergate street in York — Viking Jorvik — they uncovered 40,000 everyday clues from combs and board games to silk from Byzantium and silver coins from Baghdad!",
       "hero_image": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
@@ -3385,15 +3389,16 @@ window.UNIT_DATA = {
           "viewing_task": "[01:05] Quick Check: Why do written chronicles from monasteries give an incomplete picture of the Vikings?\n[02:45] Explain: Name three everyday jobs or home activities that archaeological finds from York reveal.",
           "model_answer": "Quick Check: Monks wrote mainly when their monasteries were raided, leaving out peaceful Viking townspeople and farmers.\nExplain: Wood-turning cups and bowls, carving bone and antler combs, weaving warm woollen clothes, stitching leather shoes, and trading goods along rivers!"
         }
-      ]
+      ],
+      "enquiry": "Were the Vikings only fierce raiders, or peaceful traders and settlers too?"
     },
     {
       "id": "lesson_6",
       "skill": "Change, Continuity & Turning Points",
-      "title": "Enquiry 6: Aethelflaed, Athelstan, Cnut & 1066 — Who Won the Struggle for England? (AD 900–1066)",
+      "title": "Enquiry 6: Aethelflaed, Athelstan, Cnut & 1066 (AD 900–1066)",
       "subtitle": "Lady of the Mercians, First King of All England, Danegeld, Stamford Bridge & Hastings",
-      "enquiryQuestion": "How did Anglo-Saxon and Viking rulers forge one united Kingdom of England — and why did it all change in 1066?",
-      "enquiry_question": "How did Anglo-Saxon and Viking rulers forge one united Kingdom of England — and why did it all change in 1066?",
+      "enquiryQuestion": "How was one Kingdom of England forged—and why did 1066 change everything?",
+      "enquiry_question": "How was one Kingdom of England forged—and why did 1066 change everything?",
       "prologue": "When Roman legions left in AD 410, Britain split into rival kingdoms. Five hundred years later, Alfred's bold daughter Aethelflaed and grandson Athelstan united one Kingdom of England, Danish King Cnut ruled a peaceful North Sea Empire, and then in 1066 three rival warriors fought two epic battles in nineteen days from Stamford Bridge to Hastings!",
       "blurb": "When Roman legions left in AD 410, Britain split into rival kingdoms. Five hundred years later, Alfred's bold daughter Aethelflaed and grandson Athelstan united one Kingdom of England, Danish King Cnut ruled a peaceful North Sea Empire, and then in 1066 three rival warriors fought two epic battles in nineteen days from Stamford Bridge to Hastings!",
       "hero_image": "/units/ks2_anglo_saxons_vikings/assets/hastings_1066_shield_wall.jpg",
@@ -4083,7 +4088,8 @@ window.UNIT_DATA = {
           "viewing_task": "[01:00] Quick Check: Why were King Harold's soldiers already exhausted before the Battle of Hastings even began?\n[02:55] Hinge Question: How did Duke William finally break the tough Anglo-Saxon shield wall on Senlac Hill?",
           "model_answer": "Quick Check: Harold's army had marched 185 miles north to defeat Harald Hardrada at Stamford Bridge on 25 September, then marched 250 miles straight back south!\nHinge Question: Norman warriors used feigned retreats (pretending to flee downhill) to tempt Saxon defenders out of their tight hilltop shield wall before surrounding them with cavalry and archers."
         }
-      ]
+      ],
+      "enquiry": "How was one Kingdom of England forged—and why did 1066 change everything?"
     }
   ],
   "key_individuals": [

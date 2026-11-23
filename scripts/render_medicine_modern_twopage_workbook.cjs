@@ -501,7 +501,7 @@ const modernConfigs = [
     keyTopicBadge: 'KEY TOPIC 4.5',
     title: 'KT4.5: Case Study 2: The Fight Against Lung Cancer (21st Century)',
     enquiryQuestion:
-      'Why has the 21st-century fight against lung cancer required state coercion rather than high-tech cures?',
+      'How have modern science and government action combined to fight lung cancer?',
     specAnchor:
       'The fight against lung cancer in the twenty-first century: diagnostic science (chest X-rays vs high-resolution CT, PET-CT, bronchoscopy); surgical and clinical treatments (VATS keyhole lobectomy, CyberKnife radiotherapy, targeted immunotherapy); compulsory government prevention (Health Act 2006, 2007 public smoking ban, 2016 plain packaging, 2024 smoke-free generation).',
     tariff: 'Question 5/6: Evaluative Essay [16+4 marks &bull; 20 mins]',
@@ -597,6 +597,7 @@ const modernConfigs = [
     ],
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('edexcel_medicine', modernConfigs, { slice: [15, 20] });
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('edexcel_medicine', modernConfigs);

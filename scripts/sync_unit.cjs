@@ -224,6 +224,19 @@ async function runSync() {
     'cold_war',
     'gcse_cold_war',
   ];
+  if (unitId !== 'trip_ypres') {
+    console.log(`\n[Step 2a/6] 🧭 Auditing Age-Calibrated Key Enquiries & Title Architecture for ${unitId}...`);
+    try {
+      execSync(`node scripts/audit_key_enquiries.cjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+    } catch (err) {
+      console.error(`❌ Fatal: Key Enquiry & Age-Calibration audit failed for ${unitId}. Build aborted.`);
+      return false;
+    }
+  }
+
   if (GCSE_UNITS.includes(unitId)) {
     console.log(
       `\n[Step 2b/6] 🗣️ Auditing GCSE plain-English language & anti-hindsight guardrails...`,

@@ -58,25 +58,25 @@
       "updatedAt": "2026-11-20T17:28:04.130Z"
     },
     "mock_notebook_2_i2": {
-      "hash": "7c72d894b6641346",
-      "bytes": 151340,
-      "voiceKey": "male_historian",
+      "hash": "d2c5dee8f98d5dda",
+      "bytes": 182732,
+      "voiceKey": "female_historian",
       "badge": "Historian 2 · Contrasting View",
-      "updatedAt": "2026-11-20T17:28:04.868Z"
+      "updatedAt": "2026-11-23T15:17:58.943Z"
     },
     "mock_notebook_3_i1": {
-      "hash": "ccd1defec4d84896",
-      "bytes": 191948,
-      "voiceKey": "male_historian",
+      "hash": "eb5081897163626c",
+      "bytes": 205292,
+      "voiceKey": "female_historian",
       "badge": "Historian 1 · Academic View",
-      "updatedAt": "2026-11-20T17:28:05.331Z"
+      "updatedAt": "2026-11-23T15:17:59.470Z"
     },
     "mock_notebook_1_i2": {
-      "hash": "5bcdafbee796fe68",
-      "bytes": 220268,
-      "voiceKey": "male_historian",
+      "hash": "fdaad79d1cb16cef",
+      "bytes": 221228,
+      "voiceKey": "female_historian",
       "badge": "Historian 2 · Contrasting View",
-      "updatedAt": "2026-11-20T17:28:05.877Z"
+      "updatedAt": "2026-11-23T15:18:00.040Z"
     },
     "lesson_1_2_i2": {
       "hash": "e8c119f99f877e76",
@@ -135,25 +135,25 @@
       "updatedAt": "2026-11-20T17:29:27.236Z"
     },
     "mock_notebook_2_i1": {
-      "hash": "b4ebfe18f6fb4f3d",
-      "bytes": 186188,
-      "voiceKey": "female_historian",
+      "hash": "ce408db5b8e7743b",
+      "bytes": 181100,
+      "voiceKey": "male_historian",
       "badge": "Historian 1 · Academic View",
-      "updatedAt": "2026-11-20T17:29:28.102Z"
+      "updatedAt": "2026-11-23T15:17:46.414Z"
     },
     "mock_notebook_3_i2": {
-      "hash": "5d9d88058ed021d4",
-      "bytes": 200972,
-      "voiceKey": "female_historian",
+      "hash": "1b0dba77522079d6",
+      "bytes": 185420,
+      "voiceKey": "male_historian",
       "badge": "Historian 2 · Contrasting View",
-      "updatedAt": "2026-11-20T17:29:28.708Z"
+      "updatedAt": "2026-11-23T15:17:46.960Z"
     },
     "mock_notebook_1_i1": {
-      "hash": "d9eecd20c013f62c",
-      "bytes": 189932,
-      "voiceKey": "female_historian",
+      "hash": "a702a8707444eee7",
+      "bytes": 180332,
+      "voiceKey": "male_historian",
       "badge": "Historian 1 · Academic View",
-      "updatedAt": "2026-11-20T17:29:29.282Z"
+      "updatedAt": "2026-11-23T15:17:47.479Z"
     }
   }
 }

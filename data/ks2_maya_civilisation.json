@@ -43,10 +43,10 @@
     {
       "id": "lesson_1",
       "skill": "Chronology, Geography & Contrast With Britain c. AD 900",
-      "title": "Enquiry 1: Cities in the Rainforest — How Did the Maya Build Thriving Cities in Mesoamerica? (c. 2000 BC–AD 600)",
+      "title": "Enquiry 1: Stone Cities in the Rainforest (c. 2000 BC–AD 600)",
       "subtitle": "Mesoamerica’s Three Zones, Cenotes & Reservoirs, Three Sisters Farming, and Contrasts With Anglo-Saxon Britain",
-      "enquiryQuestion": "How did the Maya build thriving stone cities in Mesoamerica without metal tools or wheels?",
-      "enquiry_question": "How did the Maya build thriving stone cities in Mesoamerica without metal tools or wheels?",
+      "enquiryQuestion": "How did the Maya build stone rainforest cities without metal or wheels?",
+      "enquiry_question": "How did the Maya build stone rainforest cities without metal or wheels?",
       "prologue": "Deep inside steaming rainforests and dry limestone plains, Maya builders raised gleaming stone pyramids while Anglo-Saxon Britain lived in timber villages! Explore Mesoamerica’s three zones, peer into deep cenote sinkholes, and discover how Three Sisters crops fed tens of thousands.",
       "blurb": "Deep inside steaming rainforests and dry limestone plains, Maya builders raised gleaming stone pyramids while Anglo-Saxon Britain lived in timber villages! Explore Mesoamerica’s three zones, peer into deep cenote sinkholes, and discover how Three Sisters crops fed tens of thousands.",
       "hero_image": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg",
@@ -708,15 +708,16 @@
         "caption": "Stepped limestone temples of Tikal rising high above the emerald rainforest canopy in Guatemala",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg"
+      "banner_image": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg",
+      "enquiry": "How did the Maya build stone rainforest cities without metal or wheels?"
     },
     {
       "id": "lesson_2",
       "skill": "Similarity, Difference & Archaeological Evidence",
-      "title": "Enquiry 2: Step Pyramids & Jade Kings — How Were Rival Maya City-States Ruled? (c. AD 250–900)",
+      "title": "Enquiry 2: Step Pyramids, Pakal & Maya Rulers (c. AD 250–900)",
       "subtitle": "Rival City-States, Holy Ajaw Rulers, Stepped Pyramids, King Pakal’s Jade Mask & Royal Maya Women",
-      "enquiryQuestion": "Were the Classic Maya ruled as one empire, and what reveals the power of their kings and queens?",
-      "enquiry_question": "Were the Classic Maya ruled as one empire, and what reveals the power of their kings and queens?",
+      "enquiryQuestion": "How did powerful kings and queens rule rival Maya city-states?",
+      "enquiry_question": "How did powerful kings and queens rule rival Maya city-states?",
       "prologue": "Forget one single emperor — over forty rival Maya city-states clashed and traded across the jungle! Climb steep corbel-vaulted pyramids at Tikal and Calakmul, unlock King Pakal’s hidden tomb at Palenque to see his green jade mask, and meet warrior queen Lady Six Sky.",
       "blurb": "Forget one single emperor — over forty rival Maya city-states clashed and traded across the jungle! Climb steep corbel-vaulted pyramids at Tikal and Calakmul, unlock King Pakal’s hidden tomb at Palenque to see his green jade mask, and meet warrior queen Lady Six Sky.",
       "hero_image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg",
@@ -1383,15 +1384,16 @@
         "caption": "Panoramic view across the stepped limestone temples and four-storey Royal Palace tower of Classic Maya Palenque in the Chiapas rainforest.",
         "position": "center 45%"
       },
-      "banner_image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg",
+      "enquiry": "How did powerful kings and queens rule rival Maya city-states?"
     },
     {
       "id": "lesson_3",
       "skill": "Significance & History of Maths and Writing",
-      "title": "Enquiry 3: Glyphs, Bark-Paper Books & Zero — Why Were Maya Scribes & Astronomers So Brilliant? (c. AD 300–900)",
+      "title": "Enquiry 3: Maya Glyphs, Bark Books & Inventing Zero (c. AD 300–900)",
       "subtitle": "800 Maya Hieroglyphs, Bark-Paper Codices, Shell-Dot-Bar Zero, El Caracol & Interlocking Calendars",
-      "enquiryQuestion": "Why do historians celebrate Maya scribes, mathematicians, and astronomers as world pioneers?",
-      "enquiry_question": "Why do historians celebrate Maya scribes, mathematicians, and astronomers as world pioneers?",
+      "enquiryQuestion": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?",
+      "enquiry_question": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?",
       "prologue": "Centuries before Europe used the number zero, Maya scholars wrote huge sums using just a shell, a pebble dot, and a bar! Climb Copán’s 2,200-glyph stairway, unfold painted fig-bark codices, and track Venus from El Caracol’s stone observatory.",
       "blurb": "Centuries before Europe used the number zero, Maya scholars wrote huge sums using just a shell, a pebble dot, and a bar! Climb Copán’s 2,200-glyph stairway, unfold painted fig-bark codices, and track Venus from El Caracol’s stone observatory.",
       "hero_image": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg",
@@ -2059,15 +2061,16 @@
         "caption": "Round limestone dome and viewing windows of El Caracol astronomical observatory at Chichén Itzá in Yucatán",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg"
+      "banner_image": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg",
+      "enquiry": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?"
     },
     {
       "id": "lesson_4",
       "skill": "Everyday Life, Trade & Material Culture",
-      "title": "Enquiry 4: Maize Tortillas, Frothy Cacao & Pok-ta-Pok — What Was Everyday Maya Life Like? (c. AD 600–900)",
+      "title": "Enquiry 4: Maize Tortillas, Frothy Cacao & Pok-ta-Pok (c. AD 600–900)",
       "subtitle": "Limewater Maize, Volcanic Stone Metates, Cacao Bean Money, Obsidian Trade & Sacred Ballcourts",
-      "enquiryQuestion": "What did Classic Maya people eat, trade, and play in everyday life between AD 600 and 900?",
-      "enquiry_question": "What did Classic Maya people eat, trade, and play in everyday life between AD 600 and 900?",
+      "enquiryQuestion": "What did Maya families eat, trade, and play in everyday life?",
+      "enquiry_question": "What did Maya families eat, trade, and play in everyday life?",
       "prologue": "Wake before dawn to hear maize dough grinding on volcanic stone metates, spend dried chocolate beans as cash in a bustling plaza market, and dive hip-first after a four-kilogram rubber ball in Pok-ta-Pok!",
       "blurb": "Wake before dawn to hear maize dough grinding on volcanic stone metates, spend dried chocolate beans as cash in a bustling plaza market, and dive hip-first after a four-kilogram rubber ball in Pok-ta-Pok!",
       "hero_image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
@@ -2734,15 +2737,16 @@
         "caption": "High stone walls of the Great Ball Court (Gran Juego de Pelota) at Chichén Itzá, the largest Pok-ta-Pok arena in ancient Mesoamerica.",
         "position": "center 46%"
       },
-      "banner_image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
+      "enquiry": "What did Maya families eat, trade, and play in everyday life?"
     },
     {
       "id": "lesson_5",
       "skill": "Beliefs, Architecture & Cultural Meaning",
-      "title": "Enquiry 5: Maize Gods, Rain Caves & Chichén Itzá — How Did Maya Beliefs Shape Their World? (c. AD 600–1200)",
+      "title": "Enquiry 5: Maize Gods, Rain Caves & Chichén Itzá (c. AD 600–1200)",
       "subtitle": "The Popol Vuh Creation Story, Hero Twins in Xibalba, Chaac Rain Caves & El Castillo’s Serpent Shadow",
-      "enquiryQuestion": "What did the Maya believe about creation and the gods, and how did beliefs shape Chichén Itzá?",
-      "enquiry_question": "What did the Maya believe about creation and the gods, and how did beliefs shape Chichén Itzá?",
+      "enquiryQuestion": "How did Maya beliefs about gods and calendars shape their temples?",
+      "enquiry_question": "How did Maya beliefs about gods and calendars shape their temples?",
       "prologue": "Hear how the gods shaped the first humans from yellow and white maize dough, follow the Hero Twins into the watery underworld of Xibalba, and watch sunlight slither down Chichén Itzá’s 365-step pyramid as the feathered serpent Kukulkan!",
       "blurb": "Hear how the gods shaped the first humans from yellow and white maize dough, follow the Hero Twins into the watery underworld of Xibalba, and watch sunlight slither down Chichén Itzá’s 365-step pyramid as the feathered serpent Kukulkan!",
       "hero_image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
@@ -3409,15 +3413,16 @@
         "caption": "Rows of carved limestone columns beside the stepped Temple of the Warriors at Chichén Itzá in Yucatán.",
         "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
+      "enquiry": "How did Maya beliefs about gods and calendars shape their temples?"
     },
     {
       "id": "lesson_6",
       "skill": "Multi-Causal Explanation & Challenging Misconceptions",
-      "title": "Enquiry 6: The AD 900 Mystery & Living Maya Today — Did the Maya Really Vanish? (c. AD 800–Present)",
+      "title": "Enquiry 6: The AD 900 Mystery & Seven Million Living Maya",
       "subtitle": "Drought, Deforestation & Warfare in the South, Thriving Northern Tulum, and Seven Million Maya Today",
-      "enquiryQuestion": "Why were southern Maya cities abandoned around AD 900, and why is the \"vanished Maya\" story a myth?",
-      "enquiry_question": "Why were southern Maya cities abandoned around AD 900, and why is the \"vanished Maya\" story a myth?",
+      "enquiryQuestion": "Why did southern Maya cities empty—and why didn’t the Maya vanish?",
+      "enquiry_question": "Why did southern Maya cities empty—and why didn’t the Maya vanish?",
       "prologue": "Around AD 900, jungle vines crept silently over southern pyramids at Tikal and Palenque — sparking wild rumours that the Maya vanished! Become a history detective testing lake-mud drought clues, northern coastal cities like Tulum, and over seven million living Maya people today.",
       "blurb": "Around AD 900, jungle vines crept silently over southern pyramids at Tikal and Palenque — sparking wild rumours that the Maya vanished! Become a history detective testing lake-mud drought clues, northern coastal cities like Tulum, and over seven million living Maya people today.",
       "hero_image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
@@ -4084,7 +4089,8 @@
         "caption": "Lake Atitlán and towering volcanic highlands in Guatemala — heartland of vibrant living Maya communities and languages today.",
         "position": "center 46%"
       },
-      "banner_image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg"
+      "banner_image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
+      "enquiry": "Why did southern Maya cities empty—and why didn’t the Maya vanish?"
     }
   ],
   "key_individuals": [

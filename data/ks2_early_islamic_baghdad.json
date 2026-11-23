@@ -43,10 +43,10 @@
     {
       "id": "lesson_1",
       "skill": "Chronology, Geography & Contrast With Britain c. AD 900",
-      "title": "Enquiry 1: Crossroads of the World — Why Did Caliph al-Mansur Build the Round City of Baghdad? (AD 750–800)",
+      "title": "Enquiry 1: Building the Round City of Baghdad (AD 750–900)",
       "subtitle": "Early Islam, the River Tigris, the Round City of Peace & Contrast With Anglo-Saxon Britain c. AD 900",
-      "enquiryQuestion": "Why did Caliph al-Mansur build the Round City of Baghdad, and how did it compare with Britain around AD 900?",
-      "enquiry_question": "Why did Caliph al-Mansur build the Round City of Baghdad, and how did it compare with Britain around AD 900?",
+      "enquiryQuestion": "Why was the Round City of Baghdad built, and how big did it grow?",
+      "enquiry_question": "Why was the Round City of Baghdad built, and how big did it grow?",
       "prologue": "In AD 762, one hundred thousand builders raised a dazzling circular capital beside the River Tigris! Step through Baghdad’s four great gates, explore the Green Dome Palace at the City of Peace, and discover why this Silk Road crossroads dwarfed Anglo-Saxon towns in Britain.",
       "blurb": "In AD 762, one hundred thousand builders raised a dazzling circular capital beside the River Tigris! Step through Baghdad’s four great gates, explore the Green Dome Palace at the City of Peace, and discover why this Silk Road crossroads dwarfed Anglo-Saxon towns in Britain.",
       "hero_image": "/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg",
@@ -707,15 +707,16 @@
         "caption": "The 52-metre Abbasid Spiral Minaret (Malwiya) and walled Great Mosque at Samarra in Iraq (9th century AD).",
         "position": "center 42%"
       },
-      "banner_image": "/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l1_banner_samarra_malwiya_minaret.jpg",
+      "enquiry": "Why was the Round City of Baghdad built, and how big did it grow?"
     },
     {
       "id": "lesson_2",
       "skill": "Historical Significance & Cultural Exchange",
-      "title": "Enquiry 2: Inside the House of Wisdom — How Did Paper & Translators Rescue World Knowledge? (c. AD 800–1000)",
+      "title": "Enquiry 2: Paper & The House of Wisdom (c. AD 800–1000)",
       "subtitle": "Harun al-Rashid, Al-Ma’mun, Samarkand Paper-Making, Hunayn ibn Ishaq, Fatima al-Fihri & Queen Zubayda",
-      "enquiryQuestion": "How did cheap paper and Baghdad’s House of Wisdom rescue and expand world knowledge?",
-      "enquiry_question": "How did cheap paper and Baghdad’s House of Wisdom rescue and expand world knowledge?",
+      "enquiryQuestion": "How did cheap paper and Baghdad’s House of Wisdom save world knowledge?",
+      "enquiry_question": "How did cheap paper and Baghdad’s House of Wisdom save world knowledge?",
       "prologue": "Step inside Baghdad’s legendary House of Wisdom, where Muslim, Christian, and Jewish translators worked side by side! Discover how cheap rag paper from Samarkand filled over a hundred bookshops, while Fatima al-Fihri and Queen Zubayda funded learning and desert wells.",
       "blurb": "Step inside Baghdad’s legendary House of Wisdom, where Muslim, Christian, and Jewish translators worked side by side! Discover how cheap rag paper from Samarkand filled over a hundred bookshops, while Fatima al-Fihri and Queen Zubayda funded learning and desert wells.",
       "hero_image": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
@@ -1382,15 +1383,16 @@
         "caption": "Arched brick courtyard of Al-Mustansiriya Madrasah in Baghdad (founded AD 1227), one of the Islamic world’s oldest centres of higher learning.",
         "position": "center 44%"
       },
-      "banner_image": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
+      "enquiry": "How did cheap paper and Baghdad’s House of Wisdom save world knowledge?"
     },
     {
       "id": "lesson_3",
       "skill": "Significance & History of Science",
-      "title": "Enquiry 3: Zero, Algebra, Astrolabes & Free Hospitals — What Did Golden Age Scientists Discover? (c. AD 820–1050)",
+      "title": "Enquiry 3: Zero, Astrolabes & Free Hospitals (c. AD 820–1050)",
       "subtitle": "Al-Khwarizmi, Mariam al-Asturlabi, Ibn al-Haytham, Al-Jazari’s Elephant Clock, Al-Razi & Al-Zahrawi",
-      "enquiryQuestion": "How did Golden Age mathematicians, astronomers, engineers, and doctors change world science forever?",
-      "enquiry_question": "How did Golden Age mathematicians, astronomers, engineers, and doctors change world science forever?",
+      "enquiryQuestion": "What amazing discoveries did Baghdad’s doctors and scientists make?",
+      "enquiry_question": "What amazing discoveries did Baghdad’s doctors and scientists make?",
       "prologue": "Every time you write zero, solve algebra, snap a photo, or visit a hospital, you use breakthroughs from the Islamic Golden Age! Meet al-Khwarizmi, astrolabe maker Mariam al-Asturlabi, light detective Ibn al-Haytham, and master surgeon al-Zahrawi.",
       "blurb": "Every time you write zero, solve algebra, snap a photo, or visit a hospital, you use breakthroughs from the Islamic Golden Age! Meet al-Khwarizmi, astrolabe maker Mariam al-Asturlabi, light detective Ibn al-Haytham, and master surgeon al-Zahrawi.",
       "hero_image": "/images/upgraded/ks2-world/baghdad_l3_banner_ulugh_beg_observatory.jpg",
@@ -2057,15 +2059,16 @@
         "caption": "Giant underground curved stone sextant arc inside Ulugh Beg’s medieval Islamic astronomical observatory at Samarkand.",
         "position": "center 50%"
       },
-      "banner_image": "/images/upgraded/ks2-world/baghdad_l3_banner_ulugh_beg_observatory.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l3_banner_ulugh_beg_observatory.jpg",
+      "enquiry": "What amazing discoveries did Baghdad’s doctors and scientists make?"
     },
     {
       "id": "lesson_4",
       "skill": "Consequence, Trade & Global Connections",
-      "title": "Enquiry 4: Silk Road Caravans, Dhows & Viking Dirhams — How Far Did Baghdad's Traders Reach? (c. AD 850–1000)",
+      "title": "Enquiry 4: Silk Road Caravans, Dhows & Viking Coins (c. AD 850–1000)",
       "subtitle": "Covered Souks, Roadside Caravanserais, Indian Ocean Dhows, Paper Sakk Cheques, Viking York Hoards & King Offa’s Coin",
-      "enquiryQuestion": "How did land caravans and sea dhows make Baghdad a trading superpower, and how did Islamic coins reach Britain?",
-      "enquiry_question": "How did land caravans and sea dhows make Baghdad a trading superpower, and how did Islamic coins reach Britain?",
+      "enquiryQuestion": "How did Baghdad’s traders connect the world all the way to Britain?",
+      "enquiry_question": "How did Baghdad’s traders connect the world all the way to Britain?",
       "prologue": "Follow camel caravans resting inside walled Silk Road caravanserais, hoist triangular sails aboard an Indian Ocean dhow from Basra, cash an early paper cheque, and uncover Baghdad silver dirhams buried in Viking York!",
       "blurb": "Follow camel caravans resting inside walled Silk Road caravanserais, hoist triangular sails aboard an Indian Ocean dhow from Basra, cash an early paper cheque, and uncover Baghdad silver dirhams buried in Viking York!",
       "hero_image": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
@@ -2732,15 +2735,16 @@
         "caption": "A desert caravan of pack dromedary camels crossing golden sand dunes along historic overland trade routes.",
         "position": "center 56%"
       },
-      "banner_image": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
+      "enquiry": "How did Baghdad’s traders connect the world all the way to Britain?"
     },
     {
       "id": "lesson_5",
       "skill": "Similarity, Difference & Cultural Life",
-      "title": "Enquiry 5: Geometric Tilework, Calligraphy & Chess — What Was Everyday Life Like in Baghdad c. AD 900?",
+      "title": "Enquiry 5: Courtyards, Tilework & Chess in Baghdad (c. AD 900)",
       "subtitle": "Windcatcher Courtyards, Hammams, Citrus & Sugar Kitchens, Geometric Star Mosaics, Arabesque, Lustreware & Shatranj",
-      "enquiryQuestion": "How did Baghdad’s families keep cool, eat, worship, create dazzling art, and relax around AD 900?",
-      "enquiry_question": "How did Baghdad’s families keep cool, eat, worship, create dazzling art, and relax around AD 900?",
+      "enquiryQuestion": "What was everyday family life like in Baghdad around AD 900?",
+      "enquiry_question": "What was everyday family life like in Baghdad around AD 900?",
       "prologue": "Step inside a fountain courtyard cooled by a tall windcatcher tower, taste Baghdad’s lemons, pomegranates, and cane sugar, trace eight-pointed geometric star tiles and Kufic calligraphy, and play medieval shatranj chess!",
       "blurb": "Step inside a fountain courtyard cooled by a tall windcatcher tower, taste Baghdad’s lemons, pomegranates, and cane sugar, trace eight-pointed geometric star tiles and Kufic calligraphy, and play medieval shatranj chess!",
       "hero_image": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
@@ -3407,15 +3411,16 @@
         "caption": "1840 architectural plate by Pascal Coste showing glazed turquoise geometric tilework, soaring iwans, and shaded courtyard arcades.",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
+      "enquiry": "What was everyday family life like in Baghdad around AD 900?"
     },
     {
       "id": "lesson_6",
       "skill": "Causation, Consequence & Lasting Legacy",
-      "title": "Enquiry 6: The 1258 Siege of Baghdad & Our World Today — Did the Golden Age Really Disappear? (AD 1258 & Today)",
+      "title": "Enquiry 6: The 1258 Siege of Baghdad & Surviving Ideas",
       "subtitle": "Hulagu Khan’s 1258 Mongol Siege, Counterweight Trebuchets, Cairo, Córdoba, the Alhambra, Toledo Translators & Arabic Words Today",
-      "enquiryQuestion": "Why did Baghdad fall in 1258, how did Golden Age ideas survive, and how do they shape our lives today?",
-      "enquiry_question": "Why did Baghdad fall in 1258, how did Golden Age ideas survive, and how do they shape our lives today?",
+      "enquiryQuestion": "Why did Baghdad fall in 1258, and how did its ideas survive?",
+      "enquiry_question": "Why did Baghdad fall in 1258, and how did its ideas survive?",
       "prologue": "Witness Hulagu Khan’s Mongol siege trebuchets breach Baghdad’s walls in February 1258 — then follow rescued Arabic books to Cairo, Córdoba, the Alhambra, and Toledo to discover why you still use Golden Age words and inventions every day!",
       "blurb": "Witness Hulagu Khan’s Mongol siege trebuchets breach Baghdad’s walls in February 1258 — then follow rescued Arabic books to Cairo, Córdoba, the Alhambra, and Toledo to discover why you still use Golden Age words and inventions every day!",
       "hero_image": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
@@ -4082,7 +4087,8 @@
         "caption": "Stone arches of the historic bridge and Great Mosque-Cathedral in Córdoba (Al-Andalus), where Arabic science and philosophy passed into Europe.",
         "position": "center 70%"
       },
-      "banner_image": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg"
+      "banner_image": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
+      "enquiry": "Why did Baghdad fall in 1258, and how did its ideas survive?"
     }
   ],
   "key_individuals": [

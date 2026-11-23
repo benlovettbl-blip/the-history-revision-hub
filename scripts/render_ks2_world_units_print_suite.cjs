@@ -588,6 +588,7 @@ function shortLessonTitle(rawTitle) {
 function buildTextbookHtml(spec, unitData) {
   const heroImg = getBase64Asset(`/units/${spec.unitId}/assets/banner_unit_hero.jpg`);
   const mapImg = getBase64Asset(`/units/${spec.unitId}/assets/${spec.mapFile}`);
+  require('./components/resolve_unit_enquiries.cjs').normalizeUnitLessonEnquiries(unitData);
   const lessons = unitData.lessons;
 
   const lessonPagesHtml = lessons
@@ -1308,6 +1309,7 @@ function buildMasterWorkbookHtml(spec, unitData) {
 
 function buildRetrievalCompanionHtml(spec, unitData) {
   const heroImg = getBase64Asset(`/units/${spec.unitId}/assets/banner_unit_hero.jpg`);
+  require('./components/resolve_unit_enquiries.cjs').normalizeUnitLessonEnquiries(unitData);
   const lessons = unitData.lessons;
 
   function renderEnquiryBlock(l, idx) {
@@ -1477,6 +1479,7 @@ function buildRetrievalCompanionHtml(spec, unitData) {
 }
 
 function buildSchemeOfWorkHtml(spec, unitData) {
+  require('./components/resolve_unit_enquiries.cjs').normalizeUnitLessonEnquiries(unitData);
   const lessons = unitData.lessons;
   function renderLessonPairPage(idxA, idxB, pgNum) {
     return `

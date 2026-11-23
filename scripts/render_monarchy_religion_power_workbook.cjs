@@ -582,6 +582,7 @@ const enquiryConfigs = [
       'After monarchy, civil war, and military rule, Parliament decided in 1689 that binding written rules were the safest remedy.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('monarchy_religion_power', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('monarchy_religion_power', enquiryConfigs);

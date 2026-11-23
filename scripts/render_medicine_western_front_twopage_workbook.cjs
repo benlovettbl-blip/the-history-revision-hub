@@ -453,7 +453,7 @@ const wfConfigs = [
     keyTopicBadge: 'KEY TOPIC 5.4',
     title: 'KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS',
     enquiryQuestion:
-      'How successfully did the Chain of Evacuation transport, triage, and treat mass battlefield casualties?',
+      'How did the Chain of Evacuation move wounded soldiers from frontline trenches to hospitals?',
     specAnchor:
       'The work of the RAMC and FANY: the Chain of Evacuation (stretcher bearers, Regimental Aid Posts, Field Ambulances and Dressing Stations, Casualty Clearing Stations, Base Hospitals); triage systems; transport methods (motor ambulances, ambulance trains, canal barges).',
     sourceIndex: 0,
@@ -680,7 +680,7 @@ const wfConfigs = [
     keyTopicBadge: 'KEY TOPIC 5.6',
     title: 'KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction',
     enquiryQuestion:
-      'How did stored blood banks, specialised neurosurgery, and plastic reconstruction transform wartime survival?',
+      'How did Western Front casualties drive lifesaving breakthroughs in blood storage and specialist surgery?',
     specAnchor:
       'Medical advances on the Western Front: blood transfusions and storage (Landsteiner, Hustin, Rous and Turner, Captain Oswald Robertson and the Cambrai blood bank); specialised neurosurgery (Harvey Cushing); plastic and facial reconstruction (Harold Gillies, Queen’s Hospital Sidcup, tubed pedicle).',
     sourceIndex: 2,
@@ -789,6 +789,7 @@ const wfConfigs = [
     ],
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('edexcel_medicine', wfConfigs, { slice: [20, 26] });
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('edexcel_medicine', wfConfigs);

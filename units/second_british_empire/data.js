@@ -1157,7 +1157,7 @@ export default {
           "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)"
         }
       ],
-      "enquiry_question": "How was the British Empire built and sustained through maritime industrial power?",
+      "enquiry_question": "How did naval power and Portsmouth Dockyard sustain the British Empire?",
       "workbook_stages": [
         {
           "step": 1,
@@ -1444,7 +1444,9 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l1_banner_british_fleet_portsmouth.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l1_banner_british_fleet_portsmouth.jpg",
       "banner_position": "center 45%",
-      "card_image": "/images/ks3_sbe/sbe_l1_card_hms_victory_portsmouth.jpg"
+      "card_image": "/images/ks3_sbe/sbe_l1_card_hms_victory_portsmouth.jpg",
+      "enquiry": "How did naval power and Portsmouth Dockyard sustain the British Empire?",
+      "enquiryQuestion": "How did naval power and Portsmouth Dockyard sustain the British Empire?"
     },
     {
       "id": "lesson_2",
@@ -2387,7 +2389,7 @@ export default {
           "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)"
         }
       ],
-      "enquiry_question": "Why did British corporate expansion de-industrialise the world’s leading textile economy?",
+      "enquiry_question": "How did East India Company rule ruin India’s world-leading textile industry?",
       "workbook_stages": [
         {
           "step": 1,
@@ -2673,7 +2675,9 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l2_banner_calcutta_garden_reach_daniell.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l2_banner_calcutta_garden_reach_daniell.jpg",
       "banner_position": "center 48%",
-      "card_image": "/images/east_india_house.jpg"
+      "card_image": "/images/east_india_house.jpg",
+      "enquiry": "How did East India Company rule ruin India’s world-leading textile industry?",
+      "enquiryQuestion": "How did East India Company rule ruin India’s world-leading textile industry?"
     },
     {
       "id": "lesson_3",
@@ -4053,7 +4057,9 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l3_banner_relief_of_lucknow_1857.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l3_banner_relief_of_lucknow_1857.jpg",
       "banner_position": "center 46%",
-      "card_image": "/images/ks3_sbe/sbe_l3_card_cashmere_gate_delhi_1858.jpg"
+      "card_image": "/images/ks3_sbe/sbe_l3_card_cashmere_gate_delhi_1858.jpg",
+      "enquiry": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?",
+      "enquiryQuestion": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?"
     },
     {
       "id": "lesson_4",
@@ -5336,11 +5342,13 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l4_banner_rorkes_drift_1879.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l4_banner_rorkes_drift_1879.jpg",
       "banner_position": "center 48%",
-      "card_image": "/images/ks3_sbe/sbe_l4_card_battle_of_isandlwana_fripp.jpg"
+      "card_image": "/images/ks3_sbe/sbe_l4_card_battle_of_isandlwana_fripp.jpg",
+      "enquiry": "How did European industrial powers partition Africa, and how was conquest justified?",
+      "enquiryQuestion": "How did European industrial powers partition Africa, and how was conquest justified?"
     },
     {
       "id": "lesson_5",
-      "title": "The Imperial Verdict: Workshop of the World or Age of Exploitation?",
+      "title": "The Imperial Verdict: Workshop of the World or Exploitation",
       "teacher_notes": {
         "primer": "The capstone synoptic enquiry of the Second British Empire unit. Pupils bring together the entire nineteenth-century imperial arc—from Portsmouth Royal Dockyard and gunboat diplomacy, through the Bengal Diwani, Indian de-industrialisation, and the 1857 Rebellion, to the Berlin Conference and Scramble for Africa—engaging directly with Dadabhai Naoroji’s 'Drain of Wealth' critique alongside Victorian imperial apologists to reach a balanced, evidence-grounded historical verdict.",
         "delivery_plan": {
@@ -6286,7 +6294,7 @@ export default {
           "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)"
         }
       ],
-      "enquiry_question": "How do historians evaluate the legacy and consequences of the Second British Empire?",
+      "enquiry_question": "How and why do historians disagree fiercely over the legacy of the British Empire?",
       "workbook_stages": [
         {
           "step": 1,
@@ -6571,7 +6579,9 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/sbe_l5_banner_suez_canal_opening_1869.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/sbe_l5_banner_suez_canal_opening_1869.jpg",
       "banner_position": "center 52%",
-      "card_image": "/images/ks3_sbe/sbe_l5_card_rhodes_colossus_1892.jpg"
+      "card_image": "/images/ks3_sbe/sbe_l5_card_rhodes_colossus_1892.jpg",
+      "enquiry": "How and why do historians disagree fiercely over the legacy of the British Empire?",
+      "enquiryQuestion": "How and why do historians disagree fiercely over the legacy of the British Empire?"
     }
   ],
   "glossary": [

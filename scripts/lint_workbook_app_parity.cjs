@@ -164,6 +164,29 @@ if (narrativeDuplicateViolations === 0) {
   console.log(`  ✅ All 18 units: 100% Unique Narratives (0 duplicate blocks detected)`);
 }
 
+// 4. Audit Zero Ghost Map-Task Workbook Strips Across All Units
+console.log('\n--- [4/4] AUDITING ZERO GHOST WORKBOOK MAP TASKS ---');
+let ghostMapViolations = 0;
+for (const [unitId, wrapper] of Object.entries(db)) {
+  const unit = wrapper && wrapper.data ? wrapper.data : wrapper;
+  if (!unit || !Array.isArray(unit.lessons)) continue;
+  unit.lessons.forEach((lesson, lIdx) => {
+    if (lesson.secondary_map) {
+      console.log(`  ❌ [${unitId}] Lesson ${lIdx + 1} (${lesson.id}): Contains legacy secondary_map ("${lesson.secondary_map.title || 'Map Task'}") not present in printed workbook!`);
+      ghostMapViolations++;
+      totalViolations++;
+    }
+    if (lesson.extended && /map\s*task/i.test(lesson.extended.title || '')) {
+      console.log(`  ❌ [${unitId}] Lesson ${lIdx + 1} (${lesson.id}): Contains legacy extended Map Task ("${lesson.extended.title}") not present in printed workbook!`);
+      ghostMapViolations++;
+      totalViolations++;
+    }
+  });
+}
+if (ghostMapViolations === 0) {
+  console.log(`  ✅ All units: Zero ghost Map Task workbook strips detected!`);
+}
+
 console.log('\n====================================================');
 console.log(`📊 AUDIT SUMMARY: Inspected ${totalLessonsAudited} lessons across ${gcseUnits.length + ks3AndDepthUnits.length} units.`);
 if (totalViolations === 0) {

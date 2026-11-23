@@ -108,10 +108,12 @@ export function buildDynamicStudioItem(payload) {
     (isBanner && lesson && typeof lesson.banner === 'object' && lesson.banner.caption) ||
     payload.caption ||
     '';
-  const context = (source && source.source_context) || (lesson && lesson.enquiry) || '';
+  const lessonEnquiry =
+    lesson && (lesson.enquiry || lesson.enquiry_question || lesson.enquiryQuestion || lesson.inquiry_question);
+  const context = (source && source.source_context) || lessonEnquiry || '';
   const hinge =
     (source && source.hinge_question) ||
-    (lesson && lesson.enquiry) ||
+    lessonEnquiry ||
     'What does this primary source reveal about historical power, motive, and intent?';
   const citation =
     (source && source.citation) || payload.citation || 'Archival & Museum Heritage Collection';

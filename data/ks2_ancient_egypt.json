@@ -43,10 +43,10 @@
     {
       "id": "lesson_1",
       "skill": "Chronology & Geographical Significance",
-      "title": "Enquiry 1: Four River Cradles & The Gift of the Nile — Why Did Ancient Egypt Flourish? (c. 3500–2700 BC)",
+      "title": "Enquiry 1: Four River Cradles & The Gift of the Nile (c. 3500–2700 BC)",
       "subtitle": "Ancient Sumer, Indus & Shang Cradles, the Nile Flood, Black Land vs Red Land, Shadufs & King Narmer",
-      "enquiryQuestion": "Where did the earliest river civilisations grow, and why did Ancient Egypt flourish beside the River Nile?",
-      "enquiry_question": "Where did the earliest river civilisations grow, and why did Ancient Egypt flourish beside the River Nile?",
+      "enquiryQuestion": "Why did Ancient Egypt grow so strong beside the River Nile?",
+      "enquiry_question": "Why did Ancient Egypt grow so strong beside the River Nile?",
       "prologue": "Why did four of the world’s earliest civilisations spring up beside giant rivers? Watch the summer Nile flood cloak Egypt in rich black mud, swing a wooden shaduf to water golden wheat, and sail alongside King Narmer as he unites Upper and Lower Egypt around 3100 BC!",
       "blurb": "Why did four of the world’s earliest civilisations spring up beside giant rivers? Watch the summer Nile flood cloak Egypt in rich black mud, swing a wooden shaduf to water golden wheat, and sail alongside King Narmer as he unites Upper and Lower Egypt around 3100 BC!",
       "hero_image": "/units/ks2_ancient_egypt/assets/nile_delta_satellite_space.jpg",
@@ -708,15 +708,16 @@
         "caption": "Satellite view from space showing the lush green Nile valley and fan-shaped Nile Delta cutting through golden Sahara sands",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_egypt/assets/nile_delta_satellite_space.jpg"
+      "banner_image": "/units/ks2_ancient_egypt/assets/nile_delta_satellite_space.jpg",
+      "enquiry": "Why did Ancient Egypt grow so strong beside the River Nile?"
     },
     {
       "id": "lesson_2",
       "skill": "Cause, Consequence & Historical Evidence",
-      "title": "Enquiry 2: Pyramids of Giza & The Great Sphinx — How Were Giant Stone Tombs Built? (c. 2670–2500 BC)",
+      "title": "Enquiry 2: Pyramids of Giza & The Great Sphinx (c. 2670–2500 BC)",
       "subtitle": "Old Kingdom Pharaohs, Imhotep’s Step Pyramid, Khufu’s Great Pyramid, Paid Tomb Builders & Khafre’s Great Sphinx",
-      "enquiryQuestion": "Why and how did Old Kingdom Egyptians build giant stone pyramids and the Great Sphinx at Giza?",
-      "enquiry_question": "Why and how did Old Kingdom Egyptians build giant stone pyramids and the Great Sphinx at Giza?",
+      "enquiryQuestion": "How and why did Egyptians build the giant Pyramids of Giza?",
+      "enquiry_question": "How and why did Egyptians build the giant Pyramids of Giza?",
       "prologue": "How on earth did people without cranes, lorries, or iron tools stack 2.3 million stone blocks 146 metres into the sky? Meet genius architect Imhotep at Saqqara, slide giant limestone blocks across wet sand at Giza, bust the myth of pyramid slaves, and gaze up at Pharaoh Khafre’s Great Sphinx!",
       "blurb": "How on earth did people without cranes, lorries, or iron tools stack 2.3 million stone blocks 146 metres into the sky? Meet genius architect Imhotep at Saqqara, slide giant limestone blocks across wet sand at Giza, bust the myth of pyramid slaves, and gaze up at Pharaoh Khafre’s Great Sphinx!",
       "hero_image": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg",
@@ -1384,15 +1385,16 @@
         "caption": "The lion-bodied Great Sphinx carved from Giza’s limestone bedrock for Pharaoh Khafre, standing guard before the Great Pyramids",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg"
+      "banner_image": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg",
+      "enquiry": "How and why did Egyptians build the giant Pyramids of Giza?"
     },
     {
       "id": "lesson_3",
       "skill": "Similarity, Difference & Primary Sources",
-      "title": "Enquiry 3: Scribes, Hieroglyphs & Everyday Life — How Did Ordinary Egyptians Live? (c. 2500–1200 BC)",
+      "title": "Enquiry 3: Scribes, Hieroglyphs & Everyday Life (c. 2500–1200 BC)",
       "subtitle": "The Social Pyramid, Mud-Brick Homes, Linen & Senet, Scribe School, Papyrus Scrolls & Cracking the Rosetta Stone",
-      "enquiryQuestion": "How did everyday life differ across Egypt’s social pyramid, and how did historians finally crack hieroglyphs?",
-      "enquiry_question": "How did everyday life differ across Egypt’s social pyramid, and how did historians finally crack hieroglyphs?",
+      "enquiryQuestion": "What was daily life like in Egypt—and how were hieroglyphs cracked?",
+      "enquiry_question": "What was daily life like in Egypt—and how were hieroglyphs cracked?",
       "prologue": "Not everyone in Ancient Egypt wore a golden crown or lived inside a palace! Climb onto the flat roof of a whitewashed mud-brick house to catch the evening breeze, race counters across a 30-square Senet board, dip a chewed reed brush into red and black ink at scribe school, and crack the Rosetta Stone with Champollion in 1822!",
       "blurb": "Not everyone in Ancient Egypt wore a golden crown or lived inside a palace! Climb onto the flat roof of a whitewashed mud-brick house to catch the evening breeze, race counters across a 30-square Senet board, dip a chewed reed brush into red and black ink at scribe school, and crack the Rosetta Stone with Champollion in 1822!",
       "hero_image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg",
@@ -2059,15 +2061,16 @@
         "caption": "Giant sandstone columns carved in sunken relief hieroglyphs inside the Great Temple of Karnak at Luxor.",
         "position": "center 42%"
       },
-      "banner_image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg"
+      "banner_image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg",
+      "enquiry": "What was daily life like in Egypt—and how were hieroglyphs cracked?"
     },
     {
       "id": "lesson_4",
       "skill": "Beliefs, Values & Source Inference",
-      "title": "Enquiry 4: Gods, Mummies & Weighing the Heart — What Did Egyptians Believe About Death? (c. 2000–1000 BC)",
+      "title": "Enquiry 4: Gods, Mummies & Weighing the Heart (c. 2000–1000 BC)",
       "subtitle": "Ra, Osiris & Anubis, 70-Day Mummification, Canopic Jars, Shabtis & Weighing the Heart",
-      "enquiryQuestion": "What did Ancient Egyptians believe happened after death, and why did they make mummies?",
-      "enquiry_question": "What did Ancient Egyptians believe happened after death, and why did they make mummies?",
+      "enquiryQuestion": "Why did Ancient Egyptians make mummies for the afterlife?",
+      "enquiry_question": "Why did Ancient Egyptians make mummies for the afterlife?",
       "prologue": "Why did Egyptian priests spend seventy days packing bodies in desert salt and wrapping linen bandages? Meet animal-headed gods like Anubis and Thoth, inspect Canopic jars and blue shabti servants, and watch your heart weighed against Ma'at's feather of truth!",
       "blurb": "Why did Egyptian priests spend seventy days packing bodies in desert salt and wrapping linen bandages? Meet animal-headed gods like Anubis and Thoth, inspect Canopic jars and blue shabti servants, and watch your heart weighed against Ma'at's feather of truth!",
       "hero_image": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
@@ -2735,15 +2738,16 @@
         "image": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
         "caption": "Ra, Osiris & Anubis, 70-Day Mummification, Canopic Jars, Shabtis & Weighing the Heart",
         "position": "center 35%"
-      }
+      },
+      "enquiry": "Why did Ancient Egyptians make mummies for the afterlife?"
     },
     {
       "id": "lesson_5",
       "skill": "Historical Significance & Interpretations",
-      "title": "Enquiry 5: Hatshepsut, Nefertiti & Ramesses II — Who Were Egypt's Mightiest New Kingdom Rulers? (c. 1500–1213 BC)",
+      "title": "Enquiry 5: Hatshepsut, Nefertiti & Ramesses II (c. 1500–1213 BC)",
       "subtitle": "Thebes & Karnak, Hatshepsut's Voyage to Punt, Nefertiti at Amarna, Kadesh Peace Treaty & Abu Simbel",
-      "enquiryQuestion": "What made Hatshepsut, Nefertiti, and Ramesses II three of Ancient Egypt's most remarkable New Kingdom rulers?",
-      "enquiry_question": "What made Hatshepsut, Nefertiti, and Ramesses II three of Ancient Egypt's most remarkable New Kingdom rulers?",
+      "enquiryQuestion": "What made Hatshepsut, Nefertiti, and Ramesses II such famous rulers?",
+      "enquiry_question": "What made Hatshepsut, Nefertiti, and Ramesses II such famous rulers?",
       "prologue": "Meet a female pharaoh who wore the royal false beard and sailed for frankincense trees, a powerful queen who worshipped a single sun-disc, and a warrior king who ruled for 66 years and signed the world's oldest surviving peace treaty!",
       "blurb": "Meet a female pharaoh who wore the royal false beard and sailed for frankincense trees, a powerful queen who worshipped a single sun-disc, and a warrior king who ruled for 66 years and signed the world's oldest surviving peace treaty!",
       "hero_image": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
@@ -3411,15 +3415,16 @@
         "image": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
         "caption": "Thebes & Karnak, Hatshepsut's Voyage to Punt, Nefertiti at Amarna, Kadesh Peace Treaty & Abu Simbel",
         "position": "center 35%"
-      }
+      },
+      "enquiry": "What made Hatshepsut, Nefertiti, and Ramesses II such famous rulers?"
     },
     {
       "id": "lesson_6",
       "skill": "Archaeological Discovery & Change Over Time",
-      "title": "Enquiry 6: Tutankhamun's Tomb & Cleopatra VII — How Did Ancient Egypt End & Live On? (1332–30 BC & AD 1922)",
+      "title": "Enquiry 6: Tutankhamun's Tomb & Cleopatra VII (1332–30 BC & AD 1922)",
       "subtitle": "Valley of the Kings, Howard Carter's 1922 KV62 Discovery, Ptolemaic Alexandria & Cleopatra VII",
-      "enquiryQuestion": "Why did Tutankhamun's hidden tomb survive until 1922, and how did Cleopatra VII's reign end pharaonic Egypt?",
-      "enquiry_question": "Why did Tutankhamun's hidden tomb survive until 1922, and how did Cleopatra VII's reign end pharaonic Egypt?",
+      "enquiryQuestion": "Why did Tutankhamun’s treasure survive—and how did pharaonic Egypt end?",
+      "enquiry_question": "Why did Tutankhamun’s treasure survive—and how did pharaonic Egypt end?",
       "prologue": "Brush desert sand off sixteen hidden stone steps in November 1922 with Howard Carter and Hussein Abdel Rassoul to peer inside Tutankhamun's gleaming tomb — then sail to Alexandria to meet nine-language Queen Cleopatra VII as Rome conquers Egypt in 30 BC!",
       "blurb": "Brush desert sand off sixteen hidden stone steps in November 1922 with Howard Carter and Hussein Abdel Rassoul to peer inside Tutankhamun's gleaming tomb — then sail to Alexandria to meet nine-language Queen Cleopatra VII as Rome conquers Egypt in 30 BC!",
       "hero_image": "/images/upgraded/ks2-world/egypt_l6_banner_valley_of_the_kings.jpg",
@@ -4086,7 +4091,8 @@
         "image": "/images/upgraded/ks2-world/egypt_l6_banner_valley_of_the_kings.jpg",
         "caption": "Sun-baked limestone cliffs of the Valley of the Kings on the West Bank at Thebes (Luxor), royal burial valley of Tutankhamun.",
         "position": "center 28%"
-      }
+      },
+      "enquiry": "Why did Tutankhamun’s treasure survive—and how did pharaonic Egypt end?"
     }
   ],
   "key_individuals": [

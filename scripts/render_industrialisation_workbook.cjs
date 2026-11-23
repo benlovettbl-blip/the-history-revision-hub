@@ -619,6 +619,7 @@ const enquiryConfigs = [
       'The 1872 Secret Ballot Act at Pontefract permanently ended open-air hustings and landlord intimidation in British elections.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('industrialisation_and_empire', enquiryConfigs);
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('industrialisation_and_empire', enquiryConfigs);

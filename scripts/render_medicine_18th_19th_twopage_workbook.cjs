@@ -303,7 +303,7 @@ const eighteenthNineteenthConfigs = [
     keyTopicBadge: 'KEY TOPIC 3.3',
     title: 'KT3.3: Improvements in Hospital Care: Florence Nightingale & Professional Nursing',
     enquiryQuestion:
-      'How did Florence Nightingale transform hospitals from death traps into places of cure?',
+      'How did nursing pioneers and sanitary reform transform 19th-century hospital care?',
     specAnchor:
       'Florence Nightingale; hospital conditions at Scutari (1854–56); Notes on Hospitals and Notes on Nursing (1859); pavilion hospital plan; professional nursing training.',
     tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
@@ -402,7 +402,7 @@ const eighteenthNineteenthConfigs = [
     keyTopicBadge: 'KEY TOPIC 3.4',
     title: 'KT3.4: The Surgical Revolution: Simpson’s Chloroform & Lister’s Antiseptics',
     enquiryQuestion:
-      'Why did the conquest of pain in surgery temporarily increase the patient death rate?',
+      'How did 19th-century surgeons overcome the twin killers of pain and infection?',
     specAnchor:
       'Surgical breakthroughs: pain (anaesthetics: nitrous oxide, ether, James Simpson and chloroform); infection (Joseph Lister and carbolic acid; asepsis); bleeding.',
     tariff: 'Question 4: Explain Why [12 marks &bull; 15 mins]',
@@ -597,6 +597,7 @@ const eighteenthNineteenthConfigs = [
     ],
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('edexcel_medicine', eighteenthNineteenthConfigs, { slice: [10, 15] });
 
 const { applyCanonicalStageOverrides } = require('./components/canonical_stage_loader.cjs');
 applyCanonicalStageOverrides('edexcel_medicine', eighteenthNineteenthConfigs);

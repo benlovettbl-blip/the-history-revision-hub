@@ -43,10 +43,10 @@ window.UNIT_DATA = {
     {
       "id": "lesson_1",
       "skill": "Chronology & Change Over Time",
-      "title": "Enquiry 1: Ice Age Hunters & Sunken Doggerland — How Did Stone Age People Survive? (c. 800,000–4000 BC)",
+      "title": "Enquiry 1: Ice Age Hunters & Sunken Doggerland (c. 800,000–4000 BC)",
       "subtitle": "Happisburgh Footprints, Flint Knapping, Woolly Mammoths, Cheddar Man, Star Carr & the Flooding of Doggerland",
-      "enquiryQuestion": "How did Old and Middle Stone Age hunter-gatherers survive in Britain, and how did Britain become an island?",
-      "enquiry_question": "How did Old and Middle Stone Age hunter-gatherers survive in Britain, and how did Britain become an island?",
+      "enquiryQuestion": "How did Stone Age hunters survive—and how did Britain become an island?",
+      "enquiry_question": "How did Stone Age hunters survive—and how did Britain become an island?",
       "prologue": "Over 800,000 years ago, barefoot families pressed footprints into Norfolk mud while woolly mammoths roamed icy plains! Step inside caves at Creswell Crags and Gough’s Cave, try flint knapping, and watch melting ice drown Doggerland to turn Britain into an island.",
       "blurb": "Over 800,000 years ago, barefoot families pressed footprints into Norfolk mud while woolly mammoths roamed icy plains! Step inside caves at Creswell Crags and Gough’s Cave, try flint knapping, and watch melting ice drown Doggerland to turn Britain into an island.",
       "hero_image": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg",
@@ -697,15 +697,16 @@ window.UNIT_DATA = {
         "caption": "Life-size woolly mammoth reconstruction showing the shaggy coat and curved ivory tusks hunted by Ice Age bands",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg"
+      "banner_image": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg",
+      "enquiry": "How did Stone Age hunters survive—and how did Britain become an island?"
     },
     {
       "id": "lesson_2",
       "skill": "Change & Continuity / Archaeological Evidence",
-      "title": "Enquiry 2: The First Farmers & Skara Brae — How Did Farming Change Stone Age Life? (c. 4000–2500 BC)",
+      "title": "Enquiry 2: The First Farmers & Skara Brae (c. 4000–2500 BC)",
       "subtitle": "Polished Stone Axes, Wheat & Sheep, the 1850 Storm at Skara Brae, and West Kennet Long Barrow",
-      "enquiryQuestion": "How did farming transform everyday Stone Age life, and what does Skara Brae reveal about Neolithic homes?",
-      "enquiry_question": "How did farming transform everyday Stone Age life, and what does Skara Brae reveal about Neolithic homes?",
+      "enquiryQuestion": "How did farming and stone villages change Stone Age life?",
+      "enquiry_question": "How did farming and stone villages change Stone Age life?",
       "prologue": "Around 4000 BC, wooden boats landed on British beaches carrying sheep, cattle, and precious wheat seeds — changing Stone Age life forever! Clear forests with polished stone axes, peer inside Skara Brae’s 5,000-year-old stone bedrooms in Orkney, and explore West Kennet Long Barrow.",
       "blurb": "Around 4000 BC, wooden boats landed on British beaches carrying sheep, cattle, and precious wheat seeds — changing Stone Age life forever! Clear forests with polished stone axes, peer inside Skara Brae’s 5,000-year-old stone bedrooms in Orkney, and explore West Kennet Long Barrow.",
       "hero_image": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg",
@@ -1362,15 +1363,16 @@ window.UNIT_DATA = {
         "caption": "The iconic 5,000-year-old Neolithic flagstone dresser and hearth inside House 7 at Skara Brae, Orkney",
         "position": "center 48%"
       },
-      "banner_image": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg"
+      "banner_image": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg",
+      "enquiry": "How did farming and stone villages change Stone Age life?"
     },
     {
       "id": "lesson_3",
       "skill": "Historical Interpretation & Significance",
-      "title": "Enquiry 3: Secrets of Stonehenge — How & Why Did Neolithic People Raise Giant Stones? (c. 3000–2200 BC)",
+      "title": "Enquiry 3: Secrets of Stonehenge (c. 3000–2200 BC)",
       "subtitle": "Antler Picks, Welsh Bluestones, 25-Tonne Sarsen Trilithons, Durrington Walls & Solstice Sunbeams",
-      "enquiryQuestion": "How did Neolithic communities build Stonehenge without wheels or metal, and why was it aligned with the sun?",
-      "enquiry_question": "How did Neolithic communities build Stonehenge without wheels or metal, and why was it aligned with the sun?",
+      "enquiryQuestion": "How and why did Stone Age people build giant Stonehenge?",
+      "enquiry_question": "How and why did Stone Age people build giant Stonehenge?",
       "prologue": "Imagine dragging 25-tonne boulders across Wiltshire on wooden rollers and hauling spotted bluestones 140 miles from Wales — with zero wheels, cranes, or metal tools! Discover how Neolithic builders locked giant trilithons together, feasted at Durrington Walls, and lined Stonehenge up with the sun.",
       "blurb": "Imagine dragging 25-tonne boulders across Wiltshire on wooden rollers and hauling spotted bluestones 140 miles from Wales — with zero wheels, cranes, or metal tools! Discover how Neolithic builders locked giant trilithons together, feasted at Durrington Walls, and lined Stonehenge up with the sun.",
       "hero_image": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg",
@@ -2027,15 +2029,16 @@ window.UNIT_DATA = {
         "caption": "Giant sarsen sandstone trilithons and lintel stones locked with mortise-and-tenon joints at Stonehenge, Wiltshire",
         "position": "center 48%"
       },
-      "banner_image": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg"
+      "banner_image": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg",
+      "enquiry": "How and why did Stone Age people build giant Stonehenge?"
     },
     {
       "id": "lesson_4",
       "skill": "Change & Continuity (Technology & Migration)",
-      "title": "Enquiry 4: Enter the Bronze Age — How Did Metal & Beaker People Change Britain? (c. 2500–1200 BC)",
+      "title": "Enquiry 4: Enter the Bronze Age & Beaker People (c. 2500–1200 BC)",
       "subtitle": "Bell Beaker Newcomers, Great Orme Copper, Cornish Tin, Bronze Moulds & The Amesbury Archer",
-      "enquiryQuestion": "How did Beaker newcomers and bronze metalworking transform life and power in Britain?",
-      "enquiry_question": "How did Beaker newcomers and bronze metalworking transform life and power in Britain?",
+      "enquiryQuestion": "How did Beaker newcomers and bronze metal change life in Britain?",
+      "enquiry_question": "How did Beaker newcomers and bronze metal change life in Britain?",
       "prologue": "Around 2400 BC, travellers crossed the sea from Europe bringing patterned bell-shaped clay drinking pots and a dazzling secret: melting rock in roaring fires to pour liquid metal! How did mixing Welsh copper with Cornish tin create tough bronze tools, golden capes, and rich burials like the Amesbury Archer near Stonehenge?",
       "blurb": "Around 2400 BC, travellers crossed the sea from Europe bringing patterned bell-shaped clay drinking pots and a dazzling secret: melting rock in roaring fires to pour liquid metal! How did mixing Welsh copper with Cornish tin create tough bronze tools, golden capes, and rich burials like the Amesbury Archer near Stonehenge?",
       "hero_image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg",
@@ -2731,15 +2734,16 @@ window.UNIT_DATA = {
         "caption": "Bronze Age round barrow burial mounds on the chalk landscape near Stonehenge in Wiltshire (New King Barrows).",
         "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg"
+      "banner_image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg",
+      "enquiry": "How did Beaker newcomers and bronze metal change life in Britain?"
     },
     {
       "id": "lesson_5",
       "skill": "Using Archaeological Evidence",
-      "title": "Enquiry 5: \"Britain's Pompeii\" — What Does Must Farm Reveal About Everyday Bronze Age Life? (c. 1200–800 BC)",
+      "title": "Enquiry 5: Must Farm — \"Britain's Pompeii\" (c. 1200–800 BC)",
       "subtitle": "Stilt Roundhouses in Wet Mud, Charred Porridge, Woven Cloth, Britain's Oldest Wheel & The Dover Boat",
-      "enquiryQuestion": "Why do archaeologists call Must Farm \"Britain's Pompeii\", and what does it reveal about Bronze Age life?",
-      "enquiry_question": "Why do archaeologists call Must Farm \"Britain's Pompeii\", and what does it reveal about Bronze Age life?",
+      "enquiryQuestion": "What did the sunken village at Must Farm reveal about Bronze Age homes?",
+      "enquiry_question": "What did the sunken village at Must Farm reveal about Bronze Age homes?",
       "prologue": "Imagine stepping inside a 3,000-year-old wooden house where bowls still hold burnt porridge, wooden spoons rest inside pots, willow traps wait for eels, and Britain's oldest complete wheel lies beside the wall! Discover how a sudden fire and wet Cambridgeshire river mud froze Must Farm in time — and how sewn-plank oak boats crossed the Channel!",
       "blurb": "Imagine stepping inside a 3,000-year-old wooden house where bowls still hold burnt porridge, wooden spoons rest inside pots, willow traps wait for eels, and Britain's oldest complete wheel lies beside the wall! Discover how a sudden fire and wet Cambridgeshire river mud froze Must Farm in time — and how sewn-plank oak boats crossed the Channel!",
       "hero_image": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_age_roundhouse.jpg",
@@ -3430,15 +3434,16 @@ window.UNIT_DATA = {
           "viewing_task": "[00:55] Recall: Why were Must Farm's roundhouses built on wooden stilts?\n[02:10] Explain: How did the fire and wet river mud preserve wooden handles, cloth, and food?\n[03:25] Challenge: What did Britain's oldest complete wheel prove about how Must Farm families used dry land nearby?",
           "model_answer": "Recall: They stood directly above a slow-moving Cambridgeshire river.\nExplain: Burning houses fell into thick, airless wet silt where wood, cloth, and porridge could not rot away.\nChallenge: Families weren't trapped on water — they also drove wheeled carts across dry fields nearby!"
         }
-      ]
+      ],
+      "enquiry": "What did the sunken village at Must Farm reveal about Bronze Age homes?"
     },
     {
       "id": "lesson_6",
       "skill": "Change, Continuity & Unit Synthesis",
-      "title": "Enquiry 6: Iron Age Celts & Giant Hillforts — How Did Iron Transform Tribal Britain? (c. 800 BC–AD 43)",
+      "title": "Enquiry 6: Iron Age Celts & Giant Hillforts (c. 800 BC–AD 43)",
       "subtitle": "Blacksmith Furnaces, Rotary Querns, Wattle-and-Daub Roundhouses, Maiden Castle & Gold Torcs",
-      "enquiryQuestion": "How did iron tools, hillforts, and Celtic craftwork transform Britain before the Romans arrived in AD 43?",
-      "enquiry_question": "How did iron tools, hillforts, and Celtic craftwork transform Britain before the Romans arrived in AD 43?",
+      "enquiryQuestion": "How did iron tools and giant hillforts shape Celtic Britain?",
+      "enquiry_question": "How did iron tools and giant hillforts shape Celtic Britain?",
       "prologue": "Around 800 BC, blacksmiths learned to hammer common reddish iron rock into razor-sharp ploughs and swords! Discover how booming Celtic tribes ground flour on spinning quern stones, lived in cosy thatched roundhouses, ringed hilltops with giant earth ramparts like Maiden Castle, wore twisted gold torcs, and minted gold coins right before Rome invaded in AD 43!",
       "blurb": "Around 800 BC, blacksmiths learned to hammer common reddish iron rock into razor-sharp ploughs and swords! Discover how booming Celtic tribes ground flour on spinning quern stones, lived in cosy thatched roundhouses, ringed hilltops with giant earth ramparts like Maiden Castle, wore twisted gold torcs, and minted gold coins right before Rome invaded in AD 43!",
       "hero_image": "/units/ks2_stone_to_iron_age/assets/butser_iron_age_roundhouse_village.jpg",
@@ -4129,7 +4134,8 @@ window.UNIT_DATA = {
           "viewing_task": "[01:10] Recall: How did blacksmiths turn reddish iron ore rock into tough tools?\n[03:05] Explain: Why were giant hilltop hillforts built across Iron Age Britain?\n[04:55] Challenge: What event in AD 43 brought Prehistoric Britain to an end?",
           "model_answer": "Recall: They heated iron ore in super-hot furnaces and hammered the glowing metal on anvils.\nExplain: Growing Celtic tribes built earth-banked hillforts to guard families, livestock, and grain stores from rivals.\nChallenge: Emperor Claudius sent Roman armies across the Channel in AD 43, beginning Roman Britain and written records."
         }
-      ]
+      ],
+      "enquiry": "How did iron tools and giant hillforts shape Celtic Britain?"
     }
   ],
   "key_individuals": [

@@ -1963,7 +1963,6 @@
       ],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Supernatural & Religious Explanations",
-      "inquiry_question": "Why did the medieval Catholic Church hold an unshakeable monopoly over beliefs about the causes of disease?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], why did the medieval Catholic Church teach that disease was sent by God?",
@@ -2155,7 +2154,8 @@
           ]
         ]
       },
-      "banner_image": "/images/med_banner_kt1_1_supernatural_belief.jpg"
+      "banner_image": "/images/med_banner_kt1_1_supernatural_belief.jpg",
+      "enquiry": "Why did the medieval Catholic Church hold an unshakeable monopoly over beliefs about the causes of disease?"
     },
     {
       "id": "lesson_1_2",
@@ -2168,7 +2168,7 @@
       "banner_position": "center 46%",
       "title": "KT1.2: Rational Explanations: Hippocrates, Galen & The Four Humours (c1250–c1500)",
       "specification_anchor": "Rational explanations: the Theory of the Four Humours and the Theory of Opposites; the miasma theory; the continuing influence of Hippocrates and Galen.",
-      "enquiry_question": "How did the Theory of the Four Humours provide a logical, complete explanation for every illness in medieval England?",
+      "enquiry_question": "Why did ancient ideas like the Four Humours and miasma dominate medieval medicine?",
       "living_timeline_mission": {
         "target_milestones": "Milestone 1 (c. 1250)",
         "pages": "Pages 2–3",
@@ -3575,7 +3575,6 @@
       ],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Rational Explanations & Ancient Authorities",
-      "inquiry_question": "How did the Theory of the Four Humours provide a logical, complete explanation for every illness in medieval England?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], why was Hippocrates important for medical history?",
@@ -3762,7 +3761,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg"
+      "banner_image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg",
+      "enquiry": "Why did ancient ideas like the Four Humours and miasma dominate medieval medicine?"
     },
     {
       "id": "lesson_1_3",
@@ -5175,7 +5175,6 @@
       ],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Approaches to Prevention & Treatment",
-      "inquiry_question": "Why did standard medieval medical treatments frequently endanger the lives of the patients they were meant to cure?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], what spiritual treatments did medieval people use to seek healing?",
@@ -5362,7 +5361,8 @@
           ]
         ]
       },
-      "banner_image": "/images/med_banner_kt1_3_bloodletting.jpg"
+      "banner_image": "/images/med_banner_kt1_3_bloodletting.jpg",
+      "enquiry": "Why did standard medieval medical treatments frequently endanger the lives of the patients they were meant to cure?"
     },
     {
       "id": "lesson_1_4",
@@ -6867,7 +6867,6 @@
       ],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Medical Providers & Monastic Hospitals",
-      "inquiry_question": "How did social hierarchy and the Catholic Church shape who provided medical care in medieval England?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], why did university-trained physicians rarely touch their patients?",
@@ -7065,7 +7064,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg"
+      "banner_image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg",
+      "enquiry": "How did social hierarchy and the Catholic Church shape who provided medical care in medieval England?"
     },
     {
       "id": "lesson_1_5",
@@ -8584,7 +8584,6 @@
       ],
       "period": "Medieval Britain (c.1250–c.1500)",
       "topic": "Case Study: The Black Death (1348–1349)",
-      "inquiry_question": "Why were medieval communities, doctors, and civic authorities completely powerless to stop the Black Death?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], in what year and at which Dorset port did the Black Death arrive in England?",
@@ -8770,7 +8769,8 @@
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg"
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
+      "enquiry": "Why were medieval communities, doctors, and civic authorities completely powerless to stop the Black Death?"
     },
     {
       "id": "lesson_2_1",
@@ -10301,7 +10301,6 @@
       },
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "The Scientific Revolution & New Spirit of Enquiry",
-      "inquiry_question": "How did the invention of printing and the scientific method challenge 1,500 years of medical orthodoxy?",
       "key_individual": {
         "id": "org_royal_society",
         "entity_type": "organisation",
@@ -10481,7 +10480,8 @@
           ]
         ]
       },
-      "banner_image": "/images/med_banner_kt2_1_printing_press.jpg"
+      "banner_image": "/images/med_banner_kt2_1_printing_press.jpg",
+      "enquiry": "How did the invention of printing and the scientific method challenge 1,500 years of medical orthodoxy?"
     },
     {
       "id": "lesson_2_2",
@@ -11914,7 +11914,6 @@
       },
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Clinical Observation & Disease Classification",
-      "inquiry_question": "How did Thomas Sydenham's focus on direct observation challenge traditional medical practice?",
       "key_individual": {
         "id": "sydenham",
         "entity_type": "person",
@@ -12083,7 +12082,8 @@
           ]
         ]
       },
-      "banner_image": "/images/med_banner_kt2_2_apothecary_hall.jpg"
+      "banner_image": "/images/med_banner_kt2_2_apothecary_hall.jpg",
+      "enquiry": "How did Thomas Sydenham's focus on direct observation challenge traditional medical practice?"
     },
     {
       "id": "lesson_2_3",
@@ -13647,7 +13647,6 @@
       },
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Anatomy & The Anatomical Revolution",
-      "inquiry_question": "Why did Andreas Vesalius succeed in overturning 1,400 years of Galenic anatomical authority?",
       "key_individual": {
         "id": "vesalius",
         "entity_type": "person",
@@ -13821,7 +13820,8 @@
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg"
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
+      "enquiry": "Why did Andreas Vesalius succeed in overturning 1,400 years of Galenic anatomical authority?"
     },
     {
       "id": "lesson_2_4",
@@ -15277,7 +15277,6 @@
       },
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Physiology & Circulation of the Blood",
-      "inquiry_question": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?",
       "card_image": "/images/harvey_demonstrating_heart.jpg",
       "card_position": "center 26%",
       "key_individual": {
@@ -15457,7 +15456,8 @@
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg"
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
+      "enquiry": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?"
     },
     {
       "id": "lesson_2_5",
@@ -17066,7 +17066,6 @@
       },
       "period": "The Medical Renaissance (c.1500–c.1700)",
       "topic": "Treatments, Prevention & The Great Plague (1665)",
-      "inquiry_question": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?",
       "card_image": "/images/plague_in_london_1665_wellcome.jpg",
       "card_position": "center 48%",
       "key_individual": {
@@ -17247,7 +17246,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg"
+      "banner_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
+      "enquiry": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?"
     },
     {
       "id": "lesson_3_1",
@@ -18813,7 +18813,6 @@
       "banner_position": "center 38%",
       "card_position": "center 42%",
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
-      "inquiry_question": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?",
       "key_individual": {
         "id": "pasteur",
         "entity_type": "person",
@@ -18982,7 +18981,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg"
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
+      "enquiry": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?"
     },
     {
       "id": "lesson_3_2",
@@ -20533,7 +20533,6 @@
       },
       "card_image": "/images/jenner_vaccinating_phipps.jpg",
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg",
-      "inquiry_question": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?",
       "key_individual": {
         "id": "jenner",
         "entity_type": "person",
@@ -20702,13 +20701,14 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg"
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg",
+      "enquiry": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?"
     },
     {
       "id": "lesson_3_3",
       "title": "KT3.3: Improvements in Hospital Care: Florence Nightingale, Mary Seacole & The Sanitary Revolution (1854–1863)",
       "specification_anchor": "Improvements in hospital care and nursing: the influence of Florence Nightingale; the impact on hospital organisation and design.",
-      "enquiry_question": "How did Florence Nightingale transform British hospitals from Victorian death houses into clean, scientific institutions?",
+      "enquiry_question": "How did nursing pioneers and sanitary reform transform 19th-century hospital care?",
       "living_timeline_mission": {
         "target_milestones": "Milestones 4 & 5 (1854 & 1860)",
         "pages": "Pages 2–3",
@@ -22201,7 +22201,6 @@
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
       "banner_position": "center 58%",
       "card_position": "center 55%",
-      "inquiry_question": "How did Florence Nightingale transform British hospitals from Victorian death houses into clean, scientific institutions?",
       "key_individual": {
         "id": "nightingale",
         "entity_type": "person",
@@ -22371,13 +22370,14 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg"
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
+      "enquiry": "How did nursing pioneers and sanitary reform transform 19th-century hospital care?"
     },
     {
       "id": "lesson_3_4",
       "title": "KT3.4: The Surgical Revolution: Simpson, Lister & The Conquest of Pain and Sepsis (1847–1870s)",
       "specification_anchor": "The development of anaesthetics and antiseptics: James Simpson and chloroform; Joseph Lister and carbolic acid; opposition and surgical progress.",
-      "enquiry_question": "Why did the discovery of anaesthetics initially make surgical operations more dangerous rather than safer?",
+      "enquiry_question": "How did 19th-century surgeons overcome the twin killers of pain and infection?",
       "living_timeline_mission": {
         "target_milestones": "Milestones 2 & 7 (1847 & 1865)",
         "pages": "Pages 2–3",
@@ -23871,7 +23871,6 @@
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
       "banner_position": "center 34%",
       "card_position": "center 28%",
-      "inquiry_question": "Why did the discovery of anaesthetics initially make surgical operations more dangerous rather than safer?",
       "key_individual": {
         "id": "lister",
         "entity_type": "person",
@@ -24040,7 +24039,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg"
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
+      "enquiry": "How did 19th-century surgeons overcome the twin killers of pain and infection?"
     },
     {
       "id": "lesson_3_5",
@@ -25701,7 +25701,6 @@
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
       "banner_position": "center 48%",
       "card_position": "center 60%",
-      "inquiry_question": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?",
       "key_individual": {
         "id": "snow",
         "entity_type": "person",
@@ -25870,7 +25869,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg"
+      "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
+      "enquiry": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?"
     },
     {
       "id": "lesson_4_1",
@@ -27303,7 +27303,6 @@
           "explanation": "Genetic screening lets doctors assess inherited risk proactively before clinical disease appears."
         }
       ],
-      "inquiry_question": "How did unlocking the double helix and mapping the human genome revolutionise our understanding of disease causation?",
       "key_individual": {
         "id": "franklin",
         "entity_type": "person",
@@ -27482,7 +27481,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg"
+      "banner_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
+      "enquiry": "How did unlocking the double helix and mapping the human genome revolutionise our understanding of disease causation?"
     },
     {
       "id": "lesson_4_2",
@@ -28906,7 +28906,6 @@
           "explanation": "Cutting secondhand smoke exposure lowered hospital admissions for acute heart attacks across England."
         }
       ],
-      "inquiry_question": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?",
       "key_individual": {
         "id": "roentgen",
         "entity_type": "person",
@@ -29091,7 +29090,8 @@
           ]
         ]
       },
-      "banner_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg"
+      "banner_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
+      "enquiry": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?"
     },
     {
       "id": "lesson_4_3",
@@ -30552,7 +30552,6 @@
           "explanation": "Balancing escalating costs of an aging population and high-tech care with free universal access remains the NHS's central challenge."
         }
       ],
-      "inquiry_question": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?",
       "key_individual": {
         "id": "bevan",
         "entity_type": "person",
@@ -30724,7 +30723,8 @@
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg"
+      "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
+      "enquiry": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?"
     },
     {
       "id": "lesson_4_4",
@@ -32118,7 +32118,6 @@
           "explanation": "Antibiotic-resistant superbugs such as MRSA cannot be killed by standard penicillin and require strict hospital infection control."
         }
       ],
-      "inquiry_question": "How did an accidental laboratory mould transform into humanity’s first mass-produced antibiotic wonder drug?",
       "key_individual": {
         "id": "florey_chain",
         "entity_type": "person",
@@ -32302,7 +32301,8 @@
           ]
         ]
       },
-      "banner_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg"
+      "banner_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
+      "enquiry": "How did an accidental laboratory mould transform into humanity’s first mass-produced antibiotic wonder drug?"
     },
     {
       "id": "lesson_4_5",
@@ -32315,7 +32315,7 @@
       "banner_position": "center 38%",
       "title": "KT4.5: Case Study 2: Public Health & The Fight Against Lung Cancer (c.1950–present)",
       "specification_anchor": "Case study: The fight against lung cancer in the twenty-first century: the use of science and technology in diagnosis and treatment; government action.",
-      "enquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?",
+      "enquiry_question": "How have modern science and government action combined to fight lung cancer?",
       "living_timeline_mission": "Turn to Pages 2–3 (Key Topic 4.5). In the drawing box, sketch a 1950s cigarette advertisement and a modern plain-packaged packet with health warnings. Annotate how government regulation ended modern laissez-faire!",
       "timeline_anchor": [
         {
@@ -33714,7 +33714,6 @@
           "explanation": "Raising the legal age of sale by one year every year is designed to create a smoke-free generation."
         }
       ],
-      "inquiry_question": "How did the battle against lung cancer drive modern high-tech oncology and permanently dismantle government laissez-faire?",
       "key_individual": {
         "id": "org_nhs",
         "entity_type": "organisation",
@@ -33894,7 +33893,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg"
+      "banner_image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg",
+      "enquiry": "How have modern science and government action combined to fight lung cancer?"
     },
     {
       "id": "lesson_5_1",
@@ -35379,7 +35379,6 @@
           "explanation": "Mass-casualty battles spurred medical innovation, culminating in the first stored blood bank at Cambrai."
         }
       ],
-      "inquiry_question": "How did the geography of the British sector and trench design shape medical challenges on the Western Front?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.2], why did the high water table and German positions make the Ypres Salient so dangerous?",
@@ -35583,7 +35582,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg",
+      "enquiry": "How did the geography of the British sector and trench design shape medical challenges on the Western Front?"
     },
     {
       "id": "lesson_5_2",
@@ -36828,7 +36828,6 @@
           "explanation": "Institutions like Craiglockhart in Edinburgh replaced harsh accusations of cowardice with rest and psychological care."
         }
       ],
-      "inquiry_question": "How did the horrific physical environment of the trenches create widespread non-combat medical crises?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], what caused Trench Foot in the trenches of Flanders?",
@@ -37033,7 +37032,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
+      "enquiry": "How did the horrific physical environment of the trenches create widespread non-combat medical crises?"
     },
     {
       "id": "lesson_5_3",
@@ -38445,7 +38445,6 @@
           "explanation": "Thanks to effective respirators like the Small Box Respirator, gas caused terrifying panic and blindness but under 3% of deaths."
         }
       ],
-      "inquiry_question": "How did industrialised weaponry and manured soil create terrifying new forms of wound trauma and infection?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.1], what percentage of wounds on the Western Front were caused by artillery shells and shrapnel?",
@@ -38642,12 +38641,13 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg",
+      "enquiry": "How did industrialised weaponry and manured soil create terrifying new forms of wound trauma and infection?"
     },
     {
       "id": "lesson_5_4",
       "title": "KT5.4: The Chain of Evacuation: Stretcher Bearers, RAP, Dressing Stations & CCS (1914–1918)",
-      "enquiry_question": "How did the Chain of Evacuation function as a race against time to save wounded soldiers from the battlefield to base hospital?",
+      "enquiry_question": "How did the Chain of Evacuation move wounded soldiers from frontline trenches to hospitals?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
       "banner": {
@@ -40065,7 +40065,6 @@
           "explanation": "Hospital ships carried severely disabled casualties across the Channel home to 'Blighty' for long-term care."
         }
       ],
-      "inquiry_question": "How did the Chain of Evacuation function as a race against time to save wounded soldiers from the battlefield to base hospital?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.2], what medical care was provided at the Regimental Aid Post (RAP)?",
@@ -40263,7 +40262,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg",
+      "enquiry": "How did the Chain of Evacuation move wounded soldiers from frontline trenches to hospitals?"
     },
     {
       "id": "lesson_5_5",
@@ -41576,7 +41576,6 @@
           "explanation": "Because X-rays missed soil, wood, and cloth, surgeons still had to explore and debride wounds meticulously."
         }
       ],
-      "inquiry_question": "How did pioneering surgical techniques and mechanical innovations conquer the crisis of compound fractures and wound sepsis?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.2], what was wound debridement and why was the wound left open?",
@@ -41771,12 +41770,13 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
+      "enquiry": "How did pioneering surgical techniques and mechanical innovations conquer the crisis of compound fractures and wound sepsis?"
     },
     {
       "id": "lesson_5_6",
       "title": "KT5.6: Lifesaving Innovations: Blood Storage, Brain Surgery & Plastic Reconstruction (1914–1918)",
-      "enquiry_question": "How did the horrific casualties of the Western Front drive revolutionary breakthroughs in blood storage, neurosurgery, and facial reconstruction?",
+      "enquiry_question": "How did Western Front casualties drive lifesaving breakthroughs in blood storage and specialist surgery?",
       "key_topic": "KT5: The British Sector of the Western Front, 1914–18",
       "period": "western_front",
       "banner_position": "center 54%",
@@ -43159,7 +43159,6 @@
           "explanation": "Preserving live vascular blood flow inside the skin tube allowed grafts to heal cleanly without rotting."
         }
       ],
-      "inquiry_question": "How did the horrific casualties of the Western Front drive revolutionary breakthroughs in blood storage, neurosurgery, and facial reconstruction?",
       "guided_reading": [
         {
           "question": "According to paragraph [1.2], what chemical discovery by Albert Hustin in 1914 stopped blood from clotting in storage flasks?",
@@ -43356,7 +43355,8 @@
           ]
         ]
       },
-      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg"
+      "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
+      "enquiry": "How did Western Front casualties drive lifesaving breakthroughs in blood storage and specialist surgery?"
     }
   ],
   "specification": [

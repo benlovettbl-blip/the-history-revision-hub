@@ -485,6 +485,7 @@ const enquiryConfigs = [
       'Raphael Lemkin lost 49 family members in the Shoah; he devoted his life to ensuring international law recognized the crime of Genocide.',
   },
 ];
+require('./components/resolve_unit_enquiries.cjs').syncWorkbookEnquiryConfigs('the_shoah', enquiryConfigs);
 
 // Single Source of Truth: automatically sync titles, enquiry questions, and 5 stages from data/the_shoah.json
 if (SHOAH_DATA && Array.isArray(SHOAH_DATA.lessons)) {

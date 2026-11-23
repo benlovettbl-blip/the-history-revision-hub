@@ -30,10 +30,10 @@
     {
       "id": "lesson_1",
       "skill": "Evidence & Everyday Life",
-      "title": "Enquiry 1: Celtic Britain Before the Romans (c. 500 BC – AD 43)",
+      "title": "Enquiry 1: Celtic Britain Before the Romans (c. 500 BC–AD 43)",
       "subtitle": "Iron Age Tribes, Hillforts, Thatched Roundhouses & Dazzling Gold Torcs",
-      "enquiryQuestion": "Who were the Iron Age Celts, and how did they live before the Roman legions arrived?",
-      "enquiry_question": "Who were the Iron Age Celts, and how did they live before the Roman legions arrived?",
+      "enquiryQuestion": "How did Iron Age Celts live before the Roman army arrived?",
+      "enquiry_question": "How did Iron Age Celts live before the Roman army arrived?",
       "prologue": "Before a single Roman road was built across Britain, dozens of proud Iron Age tribes farmed green valleys, crowned hilltops with giant earth ramparts, and twisted pure gold into gleaming neck rings. Step inside a smoky thatched roundhouse to discover how Celtic Britons really lived!",
       "blurb": "Before a single Roman road was built across Britain, dozens of proud Iron Age tribes farmed green valleys, crowned hilltops with giant earth ramparts, and twisted pure gold into gleaming neck rings. Step inside a smoky thatched roundhouse to discover how Celtic Britons really lived!",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l1_banner_british_camp.jpg",
@@ -809,15 +809,16 @@
         "caption": "Iron Age Earthwork Ramparts at British Camp Hillfort (Herefordshire Beacon), Malvern Hills",
         "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l1_banner_british_camp.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l1_banner_british_camp.jpg",
+      "enquiry": "How did Iron Age Celts live before the Roman army arrived?"
     },
     {
       "id": "lesson_2",
       "skill": "Cause & Consequence",
-      "title": "Enquiry 2: Why Did Emperor Claudius Invade Britain in AD 43?",
+      "title": "Enquiry 2: Emperor Claudius Invades Britain (AD 43)",
       "subtitle": "40,000 Roman Soldiers, Tortoise Shields & War Elephants at Colchester",
-      "enquiryQuestion": "Why did Emperor Claudius send 40,000 Roman soldiers and war elephants across the sea in AD 43?",
-      "enquiry_question": "Why did Emperor Claudius send 40,000 Roman soldiers and war elephants across the sea in AD 43?",
+      "enquiryQuestion": "Why and how did Emperor Claudius invade Britain in AD 43?",
+      "enquiry_question": "Why and how did Emperor Claudius invade Britain in AD 43?",
       "prologue": "In AD 43, hundreds of Roman warships appeared through the sea mist off the coast of Kent carrying 40,000 armored soldiers — followed weeks later by Emperor Claudius and trumpeting war elephants! Why did Claudius want Britain so badly, and what made the Roman army so tough to beat?",
       "blurb": "In AD 43, hundreds of Roman warships appeared through the sea mist off the coast of Kent carrying 40,000 armored soldiers — followed weeks later by Emperor Claudius and trumpeting war elephants! Why did Claudius want Britain so badly, and what made the Roman army so tough to beat?",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l2_banner_white_cliffs_dover.jpg",
@@ -1623,15 +1624,16 @@
         "caption": "Panoramic Sea View of the White Cliffs of Dover Across the English Channel",
         "position": "center 62%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l2_banner_white_cliffs_dover.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l2_banner_white_cliffs_dover.jpg",
+      "enquiry": "Why and how did Emperor Claudius invade Britain in AD 43?"
     },
     {
       "id": "lesson_3",
       "skill": "Cause, Consequence & Perspectives",
-      "title": "Enquiry 3: Boudicca's Rebellion — Why Did the Iceni Rise Up? (AD 60–61)",
+      "title": "Enquiry 3: Boudicca's Iceni Rebellion (AD 60–61)",
       "subtitle": "Broken Promises, Burning Londinium & The Final Battle of Watling Street",
-      "enquiryQuestion": "Why did Queen Boudicca lead a huge rebellion against Rome in AD 60, and why did it fail?",
-      "enquiry_question": "Why did Queen Boudicca lead a huge rebellion against Rome in AD 60, and why did it fail?",
+      "enquiryQuestion": "Why did Queen Boudicca rebel against Rome—and why did she lose?",
+      "enquiry_question": "Why did Queen Boudicca rebel against Rome—and why did she lose?",
       "prologue": "Seventeen years after Claudius's invasion, Roman Britain nearly collapsed in flames! Enraged by broken Roman promises and cruel treatment, Queen Boudicca of the Iceni united rebel tribes and burned three Roman towns into red ash — before facing 10,000 Roman legionaries in a narrow valley along Watling Street.",
       "blurb": "Seventeen years after Claudius's invasion, Roman Britain nearly collapsed in flames! Enraged by broken Roman promises and cruel treatment, Queen Boudicca of the Iceni united rebel tribes and burned three Roman towns into red ash — before facing 10,000 Roman legionaries in a narrow valley along Watling Street.",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l3_banner_colchester_roman_wall.jpg",
@@ -2437,15 +2439,16 @@
         "caption": "Surviving Roman Stone and Red-Tile Town Wall of Camulodunum in Colchester Castle Park",
         "position": "center 68%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l3_banner_colchester_roman_wall.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l3_banner_colchester_roman_wall.jpg",
+      "enquiry": "Why did Queen Boudicca rebel against Rome—and why did she lose?"
     },
     {
       "id": "lesson_4",
       "skill": "Evidence & Diversity",
-      "title": "Enquiry 4: Hadrian's Wall & Diverse Soldiers on the Frontier (AD 122–400)",
+      "title": "Enquiry 4: Hadrian's Wall & Frontier Soldiers (AD 122–400)",
       "subtitle": "73 Miles From Sea to Sea, Vindolanda Wooden Letters & Troops From Three Continents",
-      "enquiryQuestion": "Why did Emperor Hadrian build a 73-mile stone wall across northern Britain, and who guarded it?",
-      "enquiry_question": "Why did Emperor Hadrian build a 73-mile stone wall across northern Britain, and who guarded it?",
+      "enquiryQuestion": "Why did Hadrian build a 73-mile wall, and who guarded it?",
+      "enquiry_question": "Why did Hadrian build a 73-mile wall, and who guarded it?",
       "prologue": "In AD 122, Emperor Hadrian ordered Roman soldiers to build a 73-mile stone wall right across northern Britain from sea to sea. Buried in wet mud and carved onto stone tombstones, amazing clues reveal birthday parties, woollen socks, and soldiers from Europe, Syria, and North Africa guarding the cold frontier!",
       "blurb": "In AD 122, Emperor Hadrian ordered Roman soldiers to build a 73-mile stone wall right across northern Britain from sea to sea. Buried in wet mud and carved onto stone tombstones, amazing clues reveal birthday parties, woollen socks, and soldiers from Europe, Syria, and North Africa guarding the cold frontier!",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l4_banner_hadrians_wall_steel_rigg.jpg",
@@ -3241,15 +3244,16 @@
         "caption": "Panoramic View of Hadrian's Wall Skirting the Volcanic Crags at Steel Rigg, Northumberland",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l4_banner_hadrians_wall_steel_rigg.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l4_banner_hadrians_wall_steel_rigg.jpg",
+      "enquiry": "Why did Hadrian build a 73-mile wall, and who guarded it?"
     },
     {
       "id": "lesson_5",
       "skill": "Change & Continuity",
       "title": "Enquiry 5: Life in Roman Towns — Roads, Baths & Villas",
       "subtitle": "Straight Stone Highways, Aquae Sulis Steam Baths, Hypocaust Heating & Mosaics",
-      "enquiryQuestion": "How did Roman roads, bathhouses, and stone towns transform everyday life in Britain?",
-      "enquiry_question": "How did Roman roads, bathhouses, and stone towns transform everyday life in Britain?",
+      "enquiryQuestion": "How did Roman roads, baths, and towns change life in Britain?",
+      "enquiry_question": "How did Roman roads, baths, and towns change life in Britain?",
       "prologue": "Roman engineers laid 10,000 miles of straight stone roads, piped fresh water into steaming bathhouses like Aquae Sulis, and heated dolphin-mosaic villas from underneath! Yet out in the countryside, did life really change for everyone?",
       "blurb": "Roman engineers laid 10,000 miles of straight stone roads, piped fresh water into steaming bathhouses like Aquae Sulis, and heated dolphin-mosaic villas from underneath! Yet out in the countryside, did life really change for everyone?",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l5_banner_corbridge_roman_town.jpg",
@@ -4038,15 +4042,16 @@
         "caption": "Excavated Stone Granaries, Columns, and Paved Main Street at Corbridge Roman Town (Coria), Northumberland",
         "position": "center 56%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l5_banner_corbridge_roman_town.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l5_banner_corbridge_roman_town.jpg",
+      "enquiry": "How did Roman roads, baths, and towns change life in Britain?"
     },
     {
       "id": "lesson_6",
       "skill": "Historical Significance & Legacy",
-      "title": "Enquiry 6: Farewell to the Legions — What Was Rome's Lasting Legacy? (AD 410 & Beyond)",
+      "title": "Enquiry 6: Farewell to the Legions & Roman Legacy (AD 410 & Beyond)",
       "subtitle": "Emperor Honorius's Reply, Buried Silver Hoards & Roman Clues All Around Us Today",
-      "enquiryQuestion": "Why did the Roman army leave Britain around AD 410, and what did the Romans leave behind for us today?",
-      "enquiry_question": "Why did the Roman army leave Britain around AD 410, and what did the Romans leave behind for us today?",
+      "enquiryQuestion": "Why did the Romans leave Britain, and what did they leave behind?",
+      "enquiry_question": "Why did the Romans leave Britain, and what did they leave behind?",
       "prologue": "By AD 410, raiders struck every coast and Emperor Honorius told Britain's towns they must defend themselves! Families buried chests of glittering silver underground as bathhouses crumbled — yet from London and straight A-roads to our ABC alphabet, July, apples, and rabbits, Roman clues still surround us every single day.",
       "blurb": "By AD 410, raiders struck every coast and Emperor Honorius told Britain's towns they must defend themselves! Families buried chests of glittering silver underground as bathhouses crumbled — yet from London and straight A-roads to our ABC alphabet, July, apples, and rabbits, Roman clues still surround us every single day.",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l6_banner_burgh_castle_fort.jpg",
@@ -4839,7 +4844,8 @@
         "caption": "Late-Roman Saxon Shore Stone Fort Walls and Bastions at Burgh Castle (Gariannonum), Norfolk",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l6_banner_burgh_castle_fort.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l6_banner_burgh_castle_fort.jpg",
+      "enquiry": "Why did the Romans leave Britain, and what did they leave behind?"
     }
   ],
   "key_individuals": [

@@ -177,6 +177,7 @@ const MILESTONES_SPINE = [
 function buildTextbookHtml(unitData) {
   const heroImg = getBase64Asset('/units/ks2_romans/assets/banner_unit_hero.jpg');
   const mapImg = getBase64Asset('/units/ks2_romans/assets/roman_britain_map_ks2.png');
+  require('./components/resolve_unit_enquiries.cjs').normalizeUnitLessonEnquiries(unitData);
   const lessons = unitData.lessons;
 
   const lessonPagesHtml = lessons
@@ -916,6 +917,7 @@ function buildMasterWorkbookHtml(unitData) {
 // ============================================================================
 function buildRetrievalCompanionHtml(unitData) {
   const heroImg = getBase64Asset('/units/ks2_romans/assets/banner_unit_hero.jpg');
+  require('./components/resolve_unit_enquiries.cjs').normalizeUnitLessonEnquiries(unitData);
   const lessons = unitData.lessons;
 
   function renderEnquiryBlock(l, idx) {
@@ -1085,6 +1087,7 @@ function buildRetrievalCompanionHtml(unitData) {
 // 5. 6-PAGE WALK-IN TEACHER GUIDE & SCHEME OF WORK
 // ============================================================================
 function buildSchemeOfWorkHtml(unitData) {
+  require('./components/resolve_unit_enquiries.cjs').normalizeUnitLessonEnquiries(unitData);
   const lessons = unitData.lessons;
   function renderLessonPairPage(idxA, idxB, pgNum) {
     return `
