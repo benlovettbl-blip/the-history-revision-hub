@@ -50,6 +50,13 @@ const CALIBRATED_STAGE_UNITS = new Set([
 ]);
 
 const UNIT_COHORT_CONFIG = {
+  ks2_stone_to_iron_age: { label: 'KS2 (Y3–4)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_ancient_egypt: { label: 'KS2 (Y3–4)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_romans: { label: 'KS2 (Y3–4)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_anglo_saxons_vikings: { label: 'KS2 (Y4–5)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_ancient_greece: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_early_islamic_baghdad: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_maya_civilisation: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
   ks2_ww2: { label: 'KS2 (Y5–6)', maxWords: 13, maxHardCommonWords: 2, hasPrintedStageBanners: false },
   medieval_england: { label: 'Year 7', maxWords: 13, maxHardCommonWords: 2, hasPrintedStageBanners: true },
   monarchy_religion_power: { label: 'Year 7', maxWords: 13, maxHardCommonWords: 2, hasPrintedStageBanners: true },

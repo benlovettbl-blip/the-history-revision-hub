@@ -16,7 +16,7 @@ window.UNIT_DATA = {
   "homepage_background": "/units/ks2_stone_to_iron_age/assets/banner_unit_hero.jpg",
   "cover_image": "/units/ks2_stone_to_iron_age/assets/banner_unit_hero.jpg",
   "cover_image_position": "center 78%",
-  "cover_caption": "Summer Solstice sunrise shining directly between the giant Neolithic sarsen trilithons at Stonehenge in Wiltshire (CC BY-SA 2.0, Wikimedia Commons).",
+  "cover_caption": "Summer Solstice sunrise shining directly between the giant Neolithic sarsen trilithons at Stonehenge in Wiltshire.",
   "enquiry": "How did life in Britain transform from Ice Age hunter-gatherers to Neolithic farmers, Bronze Age metalworkers, and Iron Age hillfort tribes?",
   "enquiry_question": "How did life in Britain transform from Ice Age hunter-gatherers to Neolithic farmers, Bronze Age metalworkers, and Iron Age hillfort tribes?",
   "workbooks": [
@@ -73,10 +73,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Old Stone Age toolmakers had no metal, so they struck flint nodules with hammerstones to chip off razor-sharp flakes — a skill called knapping. **Hinge Question:** Why did a tear-drop flint handaxe have a rounded heavy base as well as a sharp pointed tip?",
-          "Source B": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, a single woolly mammoth could feed and clothe a whole hunting band. **Hinge Question:** Why did Ice Age people have to work together in brave teams to hunt a giant woolly mammoth?",
-          "Source C": "Found in 1903 inside cool limestone Gough's Cave in Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton, and ancient DNA revealed he had dark skin, dark curly hair, and blue eyes. **Hinge Question:** Why did cool limestone caves like Gough's Cave preserve Cheddar Man's bones for 10,000 years?",
-          "Source D": "Archaeologists digging waterlogged peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps. **Hinge Question:** Do you think Star Carr’s antler headdresses were worn as sneaky hunting disguises or for special campfire ceremonies?"
+          "Source A": "Found in Ice Age river gravels in southern Britain, this tear-drop flint handaxe was shaped around 400,000 BC before anyone knew how to make metal. **Hinge Question:** Why did a tear-drop flint handaxe need a rounded base as well as a sharp pointed tip?",
+          "Source B": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, one woolly mammoth could feed and clothe a whole hunting band. **Hinge Question:** Why did Ice Age hunters have to work together in brave teams to track a woolly mammoth?",
+          "Source C": "Found in 1903 inside cool limestone Gough's Cave in Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton from around 8000 BC. **Hinge Question:** Why did cool limestone caves like Gough's Cave keep Cheddar Man's bones safe for 10,000 years?",
+          "Source D": "Archaeologists digging wet peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps. **Hinge Question:** Do you think Star Carr's antler headdresses were worn as sneaky hunting disguises or for campfire dances?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -126,7 +126,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -205,12 +205,12 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. 850,000–10,000 BC: Ice Age Caves, Flint Handaxes & Mammoth Hunters",
-          "text": "<span class=\"para-ref\">[1.1]</span> Long before written books, early humans lived through a huge age called **prehistory**. Around **850,000 BC**, barefoot families left footprints in wet mud at **Happisburgh** in Norfolk. During the **Palaeolithic**, or **Old Stone Age**, thick ice sheets covered northern Britain. Hunters sheltered from freezing winds inside deep limestone caves like **Creswell Crags**.<br><br><span class=\"para-ref\">[1.2]</span> Nobody had metal tools yet, so makers struck flint rocks to chip sharp flakes. Craftworkers called this clever stone-shaping skill **knapping**, making tear-drop **handaxes** to chop meat and wood. Brave teams worked together to track giant **woolly mammoths** and wild horses. One mammoth gave warm furry hides for clothes, lamp fat, and strong bones.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Long before written books, early humans lived through a huge age called **prehistory**. Around **850,000 BC**, barefoot families left footprints in wet mud at **Happisburgh** in Norfolk. During the **Palaeolithic**, or **Old Stone Age**, thick ice sheets covered northern Britain. Hunters sheltered from freezing winds inside deep limestone caves like **Creswell Crags**.<br><br><span class=\"para-ref\">[1.2]</span> Nobody had metal tools yet, so makers struck flint rocks to chip sharp flakes. Craftworkers called this clever stone-shaping skill **knapping**, making tear-drop **handaxes** to chop meat and wood. Brave teams worked together to track giant **woolly mammoths** and wild horses. One mammoth gave warm furry hides for clothes, lamp fat, and strong bones.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Long before books, early humans lived during **prehistory**. Around **850,000 BC**, barefoot families left footprints in wet mud at **Happisburgh** [HAPSB-ruh] in Norfolk. During the **Palaeolithic** [pal-ee-oh-LITH-ik], or **Old Stone Age**, thick **Ice Age** snow covered northern Britain. Families sheltered inside deep limestone caves like **Creswell Crags**.<br><br><span class=\"para-ref\">[1.2]</span> Nobody had metal yet, so makers chipped sharp **flint** flakes by **knapping**. They shaped tear-drop **handaxes** to chop meat and wood. Brave teams tracked giant **woolly mammoths** for meat, warm hides, lamp fat, and bones.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Long before books, early humans lived during **prehistory**. Around **850,000 BC**, barefoot families left footprints in wet mud at **Happisburgh** [HAPSB-ruh] in Norfolk. During the **Palaeolithic** [pal-ee-oh-LITH-ik], or **Old Stone Age**, thick **Ice Age** snow covered northern Britain. Families sheltered inside deep limestone caves like **Creswell Crags**.<br><br><span class=\"para-ref\">[1.2]</span> Nobody had metal yet, so makers chipped sharp **flint** flakes by **knapping**. They shaped tear-drop **handaxes** to chop meat and wood. Brave teams tracked giant **woolly mammoths** for meat, warm hides, lamp fat, and bones.",
           "image": "/units/ks2_stone_to_iron_age/assets/creswell_crags_ice_age_cave.jpg",
           "image_alt": "Limestone gorge and Ice Age cave entrance at Creswell Crags in Derbyshire",
-          "caption": "Limestone caves at Creswell Crags on the Derbyshire–Nottinghamshire border, where Ice Age hunters sheltered from bitter winds.",
-          "image_caption": "Limestone caves at Creswell Crags on the Derbyshire–Nottinghamshire border, where Ice Age hunters sheltered from bitter winds.",
+          "caption": "Limestone caves at Creswell Crags on the Derbyshire–Nottinghamshire border, where Ice Age hunters sheltered from freezing winds.",
+          "image_caption": "Limestone caves at Creswell Crags on the Derbyshire–Nottinghamshire border, where Ice Age hunters sheltered from freezing winds.",
           "isReversed": false,
           "sources": [
             {
@@ -221,27 +221,28 @@ window.UNIT_DATA = {
               "src": "/units/ks2_stone_to_iron_age/assets/palaeolithic_flint_handaxe.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/palaeolithic_flint_handaxe.jpg",
               "title": "Source A: Tear-Drop Chipped Flint Handaxe (c. 400,000 BC)",
-              "caption": "A Palaeolithic (Old Stone Age) flint handaxe shaped into a neat tear-drop blade by chipping sharp stone flakes off both sides.",
+              "caption": "An Old Stone Age flint handaxe chipped on both sides into a sharp tear-drop blade that fitted neatly in a hunter's palm.",
               "author": "Palaeolithic Stone Age Toolmaker",
               "date": "c. 400,000 BC",
-              "context": "Excavated from Ice Age river gravels in southern Britain, this tear-drop stone tool was shaped around 400,000 years ago long before anyone knew how to melt metal.",
-              "source_context": "Excavated from Ice Age river gravels in southern Britain, this tear-drop stone tool was shaped around 400,000 years ago long before anyone knew how to melt metal.",
+              "context": "Found in Ice Age river gravels in southern Britain, this tear-drop flint handaxe was shaped around 400,000 BC before anyone knew how to make metal.",
+              "source_context": "Found in Ice Age river gravels in southern Britain, this tear-drop flint handaxe was shaped around 400,000 BC before anyone knew how to make metal. **Hinge Question:** Why did a tear-drop flint handaxe need a rounded base as well as a sharp pointed tip?",
               "question_badge": "CHIPPED FLINT HANDAXE",
               "question": "Look closely at the chipped edges on Source A. How was it made, and what jobs did it do?",
-              "model_answer": "Source A was shaped by flint knapping, striking off sharp stone flakes until a neat tear-drop blade appeared. Hunters held the rounded base in their palm to butcher meat, smash marrow bones, scrape hides, and chop wood.",
-              "provenance": "Palaeolithic bifacial chipped flint handaxe from southern Britain (c. 400,000 BC, archaeological museum collection)."
+              "model_answer": "Toolmakers shaped Source A by flint knapping, striking off sharp stone flakes. Hunters held the smooth base in their palm to cut meat, crack bones, scrape hides, and chop wood.",
+              "provenance": "Old Stone Age chipped flint handaxe from southern Britain (c. 400,000 BC).",
+              "text": "Artefact note: A toolmaker struck this hard flint stone with a hammerstone to chip off razor-sharp flakes, leaving a rounded base to grip safely in one hand."
             }
           ]
         },
         {
           "act": 2,
           "title": "c. 10,000–7000 BC: Warming Forests, Cheddar Man & Star Carr",
-          "text": "<span class=\"para-ref\">[1.3]</span> Around **10,000 BC**, the bitter Ice Age ended and the **Mesolithic**, or **Middle Stone Age**, began. Melting ice left green forests filled with red deer, wild boar, and hazelnuts. Small **hunter-gatherer** groups moved camp each season to fish clear rivers and pick berries. Inside **Gough's Cave** in Somerset, archaeologists found the skeleton of **Cheddar Man**.<br><br><span class=\"para-ref\">[1.4]</span> Scientists tested his ancient skull and learned he had dark skin, dark curls, and blue eyes. Farther north at **Star Carr** in Yorkshire, families built wooden lakeside platforms. Makers there carved **red-deer antler headdresses** with strap holes for hunting disguises or special dances.",
-          "content": "<span class=\"para-ref\">[1.3]</span> Around **10,000 BC**, the bitter Ice Age ended and the **Mesolithic**, or **Middle Stone Age**, began. Melting ice left green forests filled with red deer, wild boar, and hazelnuts. Small **hunter-gatherer** groups moved camp each season to fish clear rivers and pick berries. Inside **Gough's Cave** in Somerset, archaeologists found the skeleton of **Cheddar Man**.<br><br><span class=\"para-ref\">[1.4]</span> Scientists tested his ancient skull and learned he had dark skin, dark curls, and blue eyes. Farther north at **Star Carr** in Yorkshire, families built wooden lakeside platforms. Makers there carved **red-deer antler headdresses** with strap holes for hunting disguises or special dances.",
+          "text": "<span class=\"para-ref\">[1.3]</span> Around **10,000 BC**, the Ice Age ended and the **Mesolithic** [mez-oh-LITH-ik], or **Middle Stone Age**, began. Green **forests** spread with red deer, wild boar, and hazelnuts. Small **hunter-gatherer** groups moved camp each season to fish rivers and pick berries. Inside **Gough's Cave** [GOFS kayv] in Somerset, diggers found **Cheddar Man**.<br><br><span class=\"para-ref\">[1.4]</span> DNA tests on his skull showed dark skin, dark curls, and blue eyes. At **Star Carr** in Yorkshire, families built wooden lakeside platforms. Makers carved **red-deer antler headdresses** with holes for hunting disguises or dances.",
+          "content": "<span class=\"para-ref\">[1.3]</span> Around **10,000 BC**, the Ice Age ended and the **Mesolithic** [mez-oh-LITH-ik], or **Middle Stone Age**, began. Green **forests** spread with red deer, wild boar, and hazelnuts. Small **hunter-gatherer** groups moved camp each season to fish rivers and pick berries. Inside **Gough's Cave** [GOFS kayv] in Somerset, diggers found **Cheddar Man**.<br><br><span class=\"para-ref\">[1.4]</span> DNA tests on his skull showed dark skin, dark curls, and blue eyes. At **Star Carr** in Yorkshire, families built wooden lakeside platforms. Makers carved **red-deer antler headdresses** with holes for hunting disguises or dances.",
           "image": "/units/ks2_stone_to_iron_age/assets/goughs_cave_cheddar_gorge.jpg",
           "image_alt": "Limestone chambers inside Gough's Cave in Cheddar Gorge, Somerset, where Cheddar Man was discovered",
-          "caption": "Inside Gough's Cave in Cheddar Gorge, Somerset — where archaeologists uncovered the 10,000-year-old Mesolithic skeleton of Cheddar Man.",
-          "image_caption": "Inside Gough's Cave in Cheddar Gorge, Somerset — where archaeologists uncovered the 10,000-year-old Mesolithic skeleton of Cheddar Man.",
+          "caption": "Inside Gough's Cave in Cheddar Gorge, Somerset, where archaeologists uncovered the 10,000-year-old skeleton of Cheddar Man.",
+          "image_caption": "Inside Gough's Cave in Cheddar Gorge, Somerset, where archaeologists uncovered the 10,000-year-old skeleton of Cheddar Man.",
           "isReversed": true,
           "sources": [
             {
@@ -251,28 +252,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_skeleton_tusks.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_skeleton_tusks.jpg",
-              "title": "Source B: Fossil Skeleton and Curved Tusks of a Woolly Mammoth (Ice Age)",
-              "caption": "Preserved fossil skeleton and giant curved ivory tusks of an Ice Age woolly mammoth — the largest prey hunted by Palaeolithic bands.",
+              "title": "Source B: Skeleton and Curved Tusks of a Woolly Mammoth (Ice Age)",
+              "caption": "Fossil skeleton and giant curved ivory tusks of an Ice Age woolly mammoth — the largest animal hunted by Old Stone Age teams.",
               "author": "Ice Age Fossil Remains (Palaeolithic Period)",
               "date": "Palaeolithic Ice Age (c. 400,000–12,000 BC)",
-              "context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, a single woolly mammoth could feed and clothe a whole hunting band.",
-              "source_context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, a single woolly mammoth could feed and clothe a whole hunting band.",
+              "context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, one woolly mammoth could feed and clothe a whole hunting band.",
+              "source_context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, one woolly mammoth could feed and clothe a whole hunting band. **Hinge Question:** Why did Ice Age hunters have to work together in brave teams to track a woolly mammoth?",
               "question_badge": "WOOLLY MAMMOTH SKELETON",
               "question": "Inspect the huge bones and tusks in Source B. How did one mammoth help families survive the cold?",
-              "model_answer": "One woolly mammoth provided huge amounts of meat to roast, thick shaggy hides for warm winter clothes and tents, fat to burn in stone lamps, and heavy bones and ivory tusks for tools or shelter frames.",
-              "provenance": "Fossil skeleton and curved ivory tusks of an Ice Age woolly mammoth (Mammuthus primigenius)."
+              "model_answer": "One woolly mammoth gave meat to roast, thick furry hides for warm winter clothes and tents, fat for stone lamps, and strong bones and tusks for tools.",
+              "provenance": "Fossil skeleton and curved ivory tusks of an Ice Age woolly mammoth.",
+              "text": "Artefact note: Standing taller than a double-decker bus wheel with thick shaggy fur and curved ivory tusks, one woolly mammoth could feed and clothe an entire camp."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. 6500–4000 BC: Rising Seas & the Sinking of Doggerland",
-          "text": "<span class=\"para-ref\">[1.5]</span> For thousands of years, hunters walked straight from Europe to Britain across dry land. Historians call this lost green land bridge **Doggerland**, where rivers wound through marshes and woods. Families camped beside Doggerland's pools to spear eels, net ducks, and trap beavers.<br><br><span class=\"para-ref\">[1.6]</span> Yet melting northern ice sheets kept pouring huge amounts of water into the sea. Around **6500 BC**, rising waves and storms flooded the low valleys of Doggerland forever. Today, fishing boats drag mammoth teeth and flint spear tips from the **North Sea** seabed. Sinking Doggerland cut Britain off from mainland Europe and made our home an island!",
-          "content": "<span class=\"para-ref\">[1.5]</span> For thousands of years, hunters walked straight from Europe to Britain across dry land. Historians call this lost green land bridge **Doggerland**, where rivers wound through marshes and woods. Families camped beside Doggerland's pools to spear eels, net ducks, and trap beavers.<br><br><span class=\"para-ref\">[1.6]</span> Yet melting northern ice sheets kept pouring huge amounts of water into the sea. Around **6500 BC**, rising waves and storms flooded the low valleys of Doggerland forever. Today, fishing boats drag mammoth teeth and flint spear tips from the **North Sea** seabed. Sinking Doggerland cut Britain off from mainland Europe and made our home an island!",
+          "text": "<span class=\"para-ref\">[1.5]</span> For thousands of years, hunters walked from Europe to Britain across dry land. Historians call this green land bridge **Doggerland**. Families camped beside its rivers and marshes to spear eels, net ducks, and trap beavers.<br><br><span class=\"para-ref\">[1.6]</span> Yet melting northern ice sheets kept pouring huge amounts of water into the sea. Around **6500 BC**, rising waves and storms flooded low **Doggerland** forever. Today, fishing boats still pull mammoth teeth and flint tools from the **North Sea** floor. Flooding **Doggerland** turned Britain into an **island**!",
+          "content": "<span class=\"para-ref\">[1.5]</span> For thousands of years, hunters walked from Europe to Britain across dry land. Historians call this green land bridge **Doggerland**. Families camped beside its rivers and marshes to spear eels, net ducks, and trap beavers.<br><br><span class=\"para-ref\">[1.6]</span> Yet melting northern ice sheets kept pouring huge amounts of water into the sea. Around **6500 BC**, rising waves and storms flooded low **Doggerland** forever. Today, fishing boats still pull mammoth teeth and flint tools from the **North Sea** floor. Flooding **Doggerland** turned Britain into an **island**!",
           "image": "/units/ks2_stone_to_iron_age/assets/prehistoric_britain_doggerland_map_ks2.png",
           "image_alt": "Illustrated Key Stage 2 map showing prehistoric Britain joined to mainland Europe by green Doggerland before rising seas flooded it",
-          "caption": "Key Stage 2 map showing the green plain of Doggerland linking Britain to mainland Europe before melting ice flooded the North Sea around 6500 BC.",
-          "image_caption": "Key Stage 2 map showing the green plain of Doggerland linking Britain to mainland Europe before melting ice flooded the North Sea around 6500 BC.",
+          "caption": "Map showing green Doggerland linking Britain to mainland Europe before melting ice flooded the North Sea around 6500 BC.",
+          "image_caption": "Map showing green Doggerland linking Britain to mainland Europe before melting ice flooded the North Sea around 6500 BC.",
           "isReversed": false,
           "sources": [
             {
@@ -283,15 +285,16 @@ window.UNIT_DATA = {
               "src": "/units/ks2_stone_to_iron_age/assets/cheddar_man_mesolithic_skull.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/cheddar_man_mesolithic_skull.jpg",
               "title": "Source C: 10,000-Year-Old Skull of Cheddar Man from Gough's Cave (c. 8000 BC)",
-              "caption": "The Mesolithic skull of Cheddar Man, discovered deep inside Gough's Cave in Cheddar Gorge, Somerset, dating to around 8000 BC.",
+              "caption": "The Middle Stone Age skull of Cheddar Man, found deep inside cool limestone Gough's Cave in Cheddar Gorge, Somerset.",
               "author": "Mesolithic Cave Burial (Gough's Cave, Somerset)",
               "date": "c. 8000 BC (10,000 years old)",
-              "context": "Discovered in 1903 inside cool limestone Gough's Cave in Cheddar Gorge, Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton (c. 8000 BC).",
-              "source_context": "Discovered in 1903 inside cool limestone Gough's Cave in Cheddar Gorge, Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton (c. 8000 BC).",
+              "context": "Found in 1903 inside cool limestone Gough's Cave in Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton from around 8000 BC.",
+              "source_context": "Found in 1903 inside cool limestone Gough's Cave in Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton from around 8000 BC. **Hinge Question:** Why did cool limestone caves like Gough's Cave keep Cheddar Man's bones safe for 10,000 years?",
               "question_badge": "CHEDDAR MAN SKULL",
               "question": "What did scientists discover about Cheddar Man by studying his 10,000-year-old skull in Source C?",
-              "model_answer": "By testing ancient DNA trapped inside Cheddar Man's skull bone from Gough's Cave, scientists discovered that this Mesolithic hunter-gatherer lived around 8000 BC and had dark brown-to-black skin, dark curly hair, and bright blue eyes.",
-              "provenance": "Mesolithic human skull of 'Cheddar Man' excavated at Gough's Cave, Cheddar Gorge, Somerset (c. 8000 BC, Natural History Museum)."
+              "model_answer": "By testing ancient DNA inside Cheddar Man's skull from Gough's Cave, scientists learned he lived around 8000 BC and had dark skin, dark curly hair, and bright blue eyes.",
+              "provenance": "Middle Stone Age human skull of Cheddar Man from Gough's Cave, Somerset (c. 8000 BC).",
+              "text": "Artefact note: Preserved in a cool Somerset cave for 10,000 years, tiny clues inside this ancient bone let scientists see what Cheddar Man looked like."
             },
             {
               "id": "ks2_stone_to_iron_age_l1_src_d",
@@ -300,16 +303,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/star_carr_antler_headdress.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/star_carr_antler_headdress.jpg",
-              "title": "Source D: 11,000-Year-Old Carved Red-Deer Antler Headdress from Star Carr (c. 9000 BC)",
-              "caption": "Mesolithic red-deer skull cap and antlers from Star Carr in Yorkshire, smoothed inside and pierced with neat holes for tying onto a wearer’s head.",
+              "title": "Source D: Carved Red-Deer Antler Headdress from Star Carr (c. 9000 BC)",
+              "caption": "Middle Stone Age red-deer skull cap and antlers from Star Carr in Yorkshire, smoothed inside and bored with neat strap holes.",
               "author": "Mesolithic Craftworker at Star Carr, Yorkshire",
               "date": "c. 9000 BC (11,000 years old)",
-              "context": "Archaeologists digging waterlogged peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps.",
-              "source_context": "Archaeologists digging waterlogged peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps.",
+              "context": "Archaeologists digging wet peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps.",
+              "source_context": "Archaeologists digging wet peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps. **Hinge Question:** Do you think Star Carr's antler headdresses were worn as sneaky hunting disguises or for campfire dances?",
               "question_badge": "STAR CARR ANTLER MASK",
-              "question": "Look at the holes and antlers on Source D. Mention two reasons Mesolithic people may have worn it.",
-              "model_answer": "Mesolithic hunters at Star Carr may have tied Source D onto their heads as a clever camouflage disguise when stalking shy red deer, or worn it during special seasonal dances and spirit ceremonies around the lakeside camp.",
-              "provenance": "Carved Mesolithic red-deer skull and antler frontlet excavated at Star Carr, North Yorkshire (c. 9000 BC)."
+              "question": "Look at the holes and antlers on Source D. Give two reasons Middle Stone Age people may have worn it.",
+              "model_answer": "Hunters at Star Carr may have tied Source D onto their heads as a disguise when stalking shy red deer, or worn it during special seasonal dances round the campfire.",
+              "provenance": "Carved Middle Stone Age red-deer antler headdress from Star Carr, North Yorkshire (c. 9000 BC).",
+              "text": "Artefact note: Middle Stone Age makers hollowed out this real deer skull and drilled two side holes so leather laces could tie the antlers onto someone's head."
             }
           ]
         }
@@ -323,15 +327,16 @@ window.UNIT_DATA = {
           "src": "/units/ks2_stone_to_iron_age/assets/palaeolithic_flint_handaxe.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/palaeolithic_flint_handaxe.jpg",
           "title": "Source A: Tear-Drop Chipped Flint Handaxe (c. 400,000 BC)",
-          "caption": "A Palaeolithic (Old Stone Age) flint handaxe shaped into a neat tear-drop blade by chipping sharp stone flakes off both sides.",
+          "caption": "An Old Stone Age flint handaxe chipped on both sides into a sharp tear-drop blade that fitted neatly in a hunter's palm.",
           "author": "Palaeolithic Stone Age Toolmaker",
           "date": "c. 400,000 BC",
-          "context": "Excavated from Ice Age river gravels in southern Britain, this tear-drop stone tool was shaped around 400,000 years ago long before anyone knew how to melt metal.",
-          "source_context": "Excavated from Ice Age river gravels in southern Britain, this tear-drop stone tool was shaped around 400,000 years ago long before anyone knew how to melt metal.",
+          "context": "Found in Ice Age river gravels in southern Britain, this tear-drop flint handaxe was shaped around 400,000 BC before anyone knew how to make metal.",
+          "source_context": "Found in Ice Age river gravels in southern Britain, this tear-drop flint handaxe was shaped around 400,000 BC before anyone knew how to make metal. **Hinge Question:** Why did a tear-drop flint handaxe need a rounded base as well as a sharp pointed tip?",
           "question_badge": "CHIPPED FLINT HANDAXE",
           "question": "Look closely at the chipped edges on Source A. How was it made, and what jobs did it do?",
-          "model_answer": "Source A was shaped by flint knapping, striking off sharp stone flakes until a neat tear-drop blade appeared. Hunters held the rounded base in their palm to butcher meat, smash marrow bones, scrape hides, and chop wood.",
-          "provenance": "Palaeolithic bifacial chipped flint handaxe from southern Britain (c. 400,000 BC, archaeological museum collection)."
+          "model_answer": "Toolmakers shaped Source A by flint knapping, striking off sharp stone flakes. Hunters held the smooth base in their palm to cut meat, crack bones, scrape hides, and chop wood.",
+          "provenance": "Old Stone Age chipped flint handaxe from southern Britain (c. 400,000 BC).",
+          "text": "Artefact note: A toolmaker struck this hard flint stone with a hammerstone to chip off razor-sharp flakes, leaving a rounded base to grip safely in one hand."
         },
         {
           "id": "ks2_stone_to_iron_age_l1_src_b",
@@ -340,16 +345,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_skeleton_tusks.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_skeleton_tusks.jpg",
-          "title": "Source B: Fossil Skeleton and Curved Tusks of a Woolly Mammoth (Ice Age)",
-          "caption": "Preserved fossil skeleton and giant curved ivory tusks of an Ice Age woolly mammoth — the largest prey hunted by Palaeolithic bands.",
+          "title": "Source B: Skeleton and Curved Tusks of a Woolly Mammoth (Ice Age)",
+          "caption": "Fossil skeleton and giant curved ivory tusks of an Ice Age woolly mammoth — the largest animal hunted by Old Stone Age teams.",
           "author": "Ice Age Fossil Remains (Palaeolithic Period)",
           "date": "Palaeolithic Ice Age (c. 400,000–12,000 BC)",
-          "context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, a single woolly mammoth could feed and clothe a whole hunting band.",
-          "source_context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, a single woolly mammoth could feed and clothe a whole hunting band.",
+          "context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, one woolly mammoth could feed and clothe a whole hunting band.",
+          "source_context": "Standing over three metres tall at the shoulder with shaggy fur and curved tusks, one woolly mammoth could feed and clothe a whole hunting band. **Hinge Question:** Why did Ice Age hunters have to work together in brave teams to track a woolly mammoth?",
           "question_badge": "WOOLLY MAMMOTH SKELETON",
           "question": "Inspect the huge bones and tusks in Source B. How did one mammoth help families survive the cold?",
-          "model_answer": "One woolly mammoth provided huge amounts of meat to roast, thick shaggy hides for warm winter clothes and tents, fat to burn in stone lamps, and heavy bones and ivory tusks for tools or shelter frames.",
-          "provenance": "Fossil skeleton and curved ivory tusks of an Ice Age woolly mammoth (Mammuthus primigenius)."
+          "model_answer": "One woolly mammoth gave meat to roast, thick furry hides for warm winter clothes and tents, fat for stone lamps, and strong bones and tusks for tools.",
+          "provenance": "Fossil skeleton and curved ivory tusks of an Ice Age woolly mammoth.",
+          "text": "Artefact note: Standing taller than a double-decker bus wheel with thick shaggy fur and curved ivory tusks, one woolly mammoth could feed and clothe an entire camp."
         },
         {
           "id": "ks2_stone_to_iron_age_l1_src_c",
@@ -359,15 +365,16 @@ window.UNIT_DATA = {
           "src": "/units/ks2_stone_to_iron_age/assets/cheddar_man_mesolithic_skull.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/cheddar_man_mesolithic_skull.jpg",
           "title": "Source C: 10,000-Year-Old Skull of Cheddar Man from Gough's Cave (c. 8000 BC)",
-          "caption": "The Mesolithic skull of Cheddar Man, discovered deep inside Gough's Cave in Cheddar Gorge, Somerset, dating to around 8000 BC.",
+          "caption": "The Middle Stone Age skull of Cheddar Man, found deep inside cool limestone Gough's Cave in Cheddar Gorge, Somerset.",
           "author": "Mesolithic Cave Burial (Gough's Cave, Somerset)",
           "date": "c. 8000 BC (10,000 years old)",
-          "context": "Discovered in 1903 inside cool limestone Gough's Cave in Cheddar Gorge, Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton (c. 8000 BC).",
-          "source_context": "Discovered in 1903 inside cool limestone Gough's Cave in Cheddar Gorge, Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton (c. 8000 BC).",
+          "context": "Found in 1903 inside cool limestone Gough's Cave in Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton from around 8000 BC.",
+          "source_context": "Found in 1903 inside cool limestone Gough's Cave in Somerset, Cheddar Man is Britain's oldest nearly complete human skeleton from around 8000 BC. **Hinge Question:** Why did cool limestone caves like Gough's Cave keep Cheddar Man's bones safe for 10,000 years?",
           "question_badge": "CHEDDAR MAN SKULL",
           "question": "What did scientists discover about Cheddar Man by studying his 10,000-year-old skull in Source C?",
-          "model_answer": "By testing ancient DNA trapped inside Cheddar Man's skull bone from Gough's Cave, scientists discovered that this Mesolithic hunter-gatherer lived around 8000 BC and had dark brown-to-black skin, dark curly hair, and bright blue eyes.",
-          "provenance": "Mesolithic human skull of 'Cheddar Man' excavated at Gough's Cave, Cheddar Gorge, Somerset (c. 8000 BC, Natural History Museum)."
+          "model_answer": "By testing ancient DNA inside Cheddar Man's skull from Gough's Cave, scientists learned he lived around 8000 BC and had dark skin, dark curly hair, and bright blue eyes.",
+          "provenance": "Middle Stone Age human skull of Cheddar Man from Gough's Cave, Somerset (c. 8000 BC).",
+          "text": "Artefact note: Preserved in a cool Somerset cave for 10,000 years, tiny clues inside this ancient bone let scientists see what Cheddar Man looked like."
         },
         {
           "id": "ks2_stone_to_iron_age_l1_src_d",
@@ -376,16 +383,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/star_carr_antler_headdress.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/star_carr_antler_headdress.jpg",
-          "title": "Source D: 11,000-Year-Old Carved Red-Deer Antler Headdress from Star Carr (c. 9000 BC)",
-          "caption": "Mesolithic red-deer skull cap and antlers from Star Carr in Yorkshire, smoothed inside and pierced with neat holes for tying onto a wearer’s head.",
+          "title": "Source D: Carved Red-Deer Antler Headdress from Star Carr (c. 9000 BC)",
+          "caption": "Middle Stone Age red-deer skull cap and antlers from Star Carr in Yorkshire, smoothed inside and bored with neat strap holes.",
           "author": "Mesolithic Craftworker at Star Carr, Yorkshire",
           "date": "c. 9000 BC (11,000 years old)",
-          "context": "Archaeologists digging waterlogged peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps.",
-          "source_context": "Archaeologists digging waterlogged peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps.",
+          "context": "Archaeologists digging wet peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps.",
+          "source_context": "Archaeologists digging wet peat at Star Carr in North Yorkshire uncovered twenty-one carved red-deer skull caps pierced with holes for leather straps. **Hinge Question:** Do you think Star Carr's antler headdresses were worn as sneaky hunting disguises or for campfire dances?",
           "question_badge": "STAR CARR ANTLER MASK",
-          "question": "Look at the holes and antlers on Source D. Mention two reasons Mesolithic people may have worn it.",
-          "model_answer": "Mesolithic hunters at Star Carr may have tied Source D onto their heads as a clever camouflage disguise when stalking shy red deer, or worn it during special seasonal dances and spirit ceremonies around the lakeside camp.",
-          "provenance": "Carved Mesolithic red-deer skull and antler frontlet excavated at Star Carr, North Yorkshire (c. 9000 BC)."
+          "question": "Look at the holes and antlers on Source D. Give two reasons Middle Stone Age people may have worn it.",
+          "model_answer": "Hunters at Star Carr may have tied Source D onto their heads as a disguise when stalking shy red deer, or worn it during special seasonal dances round the campfire.",
+          "provenance": "Carved Middle Stone Age red-deer antler headdress from Star Carr, North Yorkshire (c. 9000 BC).",
+          "text": "Artefact note: Middle Stone Age makers hollowed out this real deer skull and drilled two side holes so leather laces could tie the antlers onto someone's head."
         }
       ],
       "causal_domino_spine": {
@@ -402,7 +410,7 @@ window.UNIT_DATA = {
             "trigger": "Families walked Norfolk mud at Happisburgh, sheltered in caves like Creswell Crags, chipped flint handaxes, and hunted woolly mammoths.",
             "connective": "Taught early humans clever toolmaking and teamwork across freezing Ice Age plains.",
             "question": "How did Old Stone Age families survive the freezing Ice Age?",
-            "prose_hash": "a9a26b3e66"
+            "prose_hash": "60eadac5e6"
           },
           {
             "step": 2,
@@ -414,7 +422,7 @@ window.UNIT_DATA = {
             "trigger": "As ice melted around 10,000 BC, green forests spread; hunter-gatherers like Cheddar Man and Star Carr families hunted deer and fished lakes.",
             "connective": "Melting ice sheets kept pouring fresh water into the rising seas around Britain.",
             "question": "How did warming forests change Mesolithic life after 10,000 BC?",
-            "prose_hash": "75933621fe"
+            "prose_hash": "93d4b85ba9"
           },
           {
             "step": 3,
@@ -426,7 +434,7 @@ window.UNIT_DATA = {
             "trigger": "Around 6500 BC, rising sea waters drowned the low green land bridge of Doggerland beneath the North Sea.",
             "connective": "Cut Britain off from mainland Europe so future newcomers had to cross by boat.",
             "question": "Why did flooding Doggerland turn Britain into an island around 6500 BC?",
-            "prose_hash": "22f9c01ed5"
+            "prose_hash": "74fed1802d"
           }
         ]
       },
@@ -458,7 +466,7 @@ window.UNIT_DATA = {
           "dates": "c. 850,000–10,000 BC",
           "para_ref": "[1.1]",
           "paraRef": "[1.1]",
-          "prose_hash": "a9a26b3e66"
+          "prose_hash": "60eadac5e6"
         },
         {
           "step": 2,
@@ -487,7 +495,7 @@ window.UNIT_DATA = {
           "dates": "c. 10,000–7000 BC",
           "para_ref": "[1.3]",
           "paraRef": "[1.3]",
-          "prose_hash": "75933621fe"
+          "prose_hash": "93d4b85ba9"
         },
         {
           "step": 3,
@@ -516,7 +524,7 @@ window.UNIT_DATA = {
           "dates": "c. 6500–4000 BC",
           "para_ref": "[1.5]",
           "paraRef": "[1.5]",
-          "prose_hash": "22f9c01ed5"
+          "prose_hash": "74fed1802d"
         }
       ],
       "tasks": [
@@ -605,78 +613,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Where in Norfolk did archaeologists find 850,000-year-old human footprints pressed into ancient mud?",
-          "q": "Where in Norfolk did archaeologists find 850,000-year-old human footprints pressed into ancient mud?",
+          "question": "Where in Norfolk did archaeologists find 850,000-year-old human footprints pressed into wet mud?",
+          "q": "Where in Norfolk did archaeologists find 850,000-year-old human footprints pressed into wet mud?",
           "options": [
             "Happisburgh",
-            "Londinium",
             "Skara Brae",
-            "Canterbury"
+            "Maiden Castle",
+            "Dover"
           ],
           "correct": 0,
           "answer": "Happisburgh",
           "a": "Happisburgh",
-          "explanation": "Waves washing away cliff sand at Happisburgh in Norfolk revealed mud footprints from around 850,000 BC — the oldest in Britain!"
+          "explanation": "Waves at Happisburgh in Norfolk uncovered 850,000-year-old footprints — the oldest human clues in Britain!"
         },
         {
           "stage": 1,
-          "question": "What do archaeologists call the Stone Age skill of striking flint rocks to chip off sharp cutting flakes?",
-          "q": "What do archaeologists call the Stone Age skill of striking flint rocks to chip off sharp cutting flakes?",
+          "question": "What does the word \"Palaeolithic\" mean when describing the earliest part of the Stone Age?",
+          "q": "What does the word \"Palaeolithic\" mean when describing the earliest part of the Stone Age?",
           "options": [
-            "Weaving",
+            "New Metal Age",
+            "Middle Castle Age",
+            "Roman Road Age",
+            "Old Stone Age"
+          ],
+          "correct": 3,
+          "answer": "Old Stone Age",
+          "a": "Old Stone Age",
+          "explanation": "Palaeolithic means the Old Stone Age, when Ice Age hunters sheltered in caves and chipped flint tools."
+        },
+        {
+          "stage": 1,
+          "question": "Inside which deep limestone caves did Old Stone Age hunters shelter from freezing Ice Age winds?",
+          "q": "Inside which deep limestone caves did Old Stone Age hunters shelter from freezing Ice Age winds?",
+          "options": [
+            "Fishbourne Palace",
+            "Flag Fen",
+            "Creswell Crags",
+            "Snettisham"
+          ],
+          "correct": 2,
+          "answer": "Creswell Crags",
+          "a": "Creswell Crags",
+          "explanation": "Families sheltered from bitter Ice Age weather inside deep limestone caves such as Creswell Crags."
+        },
+        {
+          "stage": 1,
+          "question": "What do historians call the clever skill of striking flint rocks to chip off sharp stone flakes?",
+          "q": "What do historians call the clever skill of striking flint rocks to chip off sharp stone flakes?",
+          "options": [
+            "Smelting",
             "Knapping",
             "Ploughing",
-            "Smelting"
+            "Weaving"
           ],
           "correct": 1,
           "answer": "Knapping",
           "a": "Knapping",
-          "explanation": "Flint knapping let Palaeolithic and Mesolithic toolmakers shape razor-sharp handaxes, scrapers, and spear points without metal."
+          "explanation": "Flint knapping chipped razor-sharp stone flakes to shape tear-drop handaxes without any metal."
         },
         {
-          "stage": 2,
-          "question": "Where was the 10,000-year-old Mesolithic skeleton known as 'Cheddar Man' discovered?",
-          "q": "Where was the 10,000-year-old Mesolithic skeleton known as 'Cheddar Man' discovered?",
+          "stage": 1,
+          "question": "Besides meat to eat, what else did one giant woolly mammoth give an Ice Age family?",
+          "q": "Besides meat to eat, what else did one giant woolly mammoth give an Ice Age family?",
           "options": [
-            "Inside a wooden boat in Kent",
-            "On top of Ben Nevis",
-            "Inside Gough's Cave in Somerset",
-            "Under a Roman road in York"
+            "Iron swords and bronze shields",
+            "Warm furry hides, lamp fat, and strong bones",
+            "Baked clay roof tiles",
+            "Bags of wheat and barley seeds"
           ],
-          "correct": 2,
-          "answer": "Inside Gough's Cave in Somerset",
-          "a": "Inside Gough's Cave in Somerset",
-          "explanation": "Cool limestone conditions inside Gough's Cave in Cheddar Gorge, Somerset, preserved Cheddar Man's skeleton and ancient DNA."
+          "correct": 1,
+          "answer": "Warm furry hides, lamp fat, and strong bones",
+          "a": "Warm furry hides, lamp fat, and strong bones",
+          "explanation": "Hunters used furry mammoth hides for clothes and tents, fat for stone lamps, and heavy bones for tools."
         },
         {
           "stage": 2,
-          "question": "What remarkable 11,000-year-old Mesolithic objects did archaeologists dig up from wet peat at Star Carr in Yorkshire?",
-          "q": "What remarkable 11,000-year-old Mesolithic objects did archaeologists dig up from wet peat at Star Carr in Yorkshire?",
+          "question": "Around 10,000 BC, what spread across Britain as the Ice Age ended and the Mesolithic began?",
+          "q": "Around 10,000 BC, what spread across Britain as the Ice Age ended and the Mesolithic began?",
           "options": [
-            "Iron chainmail shirts",
-            "Glass drinking horns",
-            "Gold coins stamped with mammoths",
-            "Carved red-deer skull and antler headdresses"
+            "Green forests with red deer, wild boar, and hazelnuts",
+            "Giant sandy deserts",
+            "Paved stone highways",
+            "Solid sheets of thicker ice"
+          ],
+          "correct": 0,
+          "answer": "Green forests with red deer, wild boar, and hazelnuts",
+          "a": "Green forests with red deer, wild boar, and hazelnuts",
+          "explanation": "Melting ice allowed green forests filled with red deer, wild boar, and hazelnuts to spread across Britain."
+        },
+        {
+          "stage": 2,
+          "question": "Why did Mesolithic hunter-gatherer families move their camps as the seasons changed?",
+          "q": "Why did Mesolithic hunter-gatherer families move their camps as the seasons changed?",
+          "options": [
+            "To mine tin and copper underground",
+            "To build giant stone pyramids",
+            "To escape Roman tax collectors",
+            "To follow wild animals, fish clear rivers, and pick ripe nuts and berries"
           ],
           "correct": 3,
-          "answer": "Carved red-deer skull and antler headdresses",
-          "a": "Carved red-deer skull and antler headdresses",
-          "explanation": "Twenty-one red-deer skull caps pierced with strap holes were preserved at Star Carr, worn for stalking deer or camp ceremonies."
+          "answer": "To follow wild animals, fish clear rivers, and pick ripe nuts and berries",
+          "a": "To follow wild animals, fish clear rivers, and pick ripe nuts and berries",
+          "explanation": "Hunter-gatherers moved seasonally so they could fish rivers, hunt forest deer, and gather ripe wild food."
+        },
+        {
+          "stage": 2,
+          "question": "Inside which Somerset cave did archaeologists find the 10,000-year-old skeleton of Cheddar Man?",
+          "q": "Inside which Somerset cave did archaeologists find the 10,000-year-old skeleton of Cheddar Man?",
+          "options": [
+            "Creswell Crags",
+            "West Kennet Long Barrow",
+            "Gough's Cave",
+            "Great Orme"
+          ],
+          "correct": 2,
+          "answer": "Gough's Cave",
+          "a": "Gough's Cave",
+          "explanation": "Cool limestone chambers inside Gough's Cave in Somerset preserved Cheddar Man's skeleton for 10,000 years."
+        },
+        {
+          "stage": 2,
+          "question": "What did ancient DNA tests on Cheddar Man's skull reveal about how he looked?",
+          "q": "What did ancient DNA tests on Cheddar Man's skull reveal about how he looked?",
+          "options": [
+            "Pale skin, red hair, and brown eyes",
+            "Fair hair and green eyes",
+            "Dark skin, dark curls, and blue eyes",
+            "Shaved head painted bright blue"
+          ],
+          "correct": 2,
+          "answer": "Dark skin, dark curls, and blue eyes",
+          "a": "Dark skin, dark curls, and blue eyes",
+          "explanation": "Scientists testing DNA from Cheddar Man's skull discovered he had dark skin, dark curly hair, and blue eyes."
+        },
+        {
+          "stage": 2,
+          "question": "What special objects did Mesolithic craftworkers carve beside the lake at Star Carr in Yorkshire?",
+          "q": "What special objects did Mesolithic craftworkers carve beside the lake at Star Carr in Yorkshire?",
+          "options": [
+            "Gold neck torcs",
+            "Red-deer antler headdresses with strap holes",
+            "Iron plough blades",
+            "Clay Beaker pots"
+          ],
+          "correct": 1,
+          "answer": "Red-deer antler headdresses with strap holes",
+          "a": "Red-deer antler headdresses with strap holes",
+          "explanation": "Makers at Star Carr carved red-deer skull and antler headdresses with holes for hunting disguises or dances."
         },
         {
           "stage": 3,
-          "question": "What happened to the green land bridge of Doggerland around 6500 BC?",
-          "q": "What happened to the green land bridge of Doggerland around 6500 BC?",
+          "question": "What was Doggerland before around 6500 BC?",
+          "q": "What was Doggerland before around 6500 BC?",
           "options": [
-            "It froze into a solid mountain of ice",
-            "Melting ice sheets raised sea levels and flooded it beneath the North Sea",
-            "Neolithic farmers built a stone wall right across it",
-            "Volcanoes turned it into a desert"
+            "A green land bridge of rivers and marshes linking Britain to Europe",
+            "A snowy mountain range in Wales",
+            "A Roman stone wall across Scotland",
+            "A Bronze Age copper mine"
+          ],
+          "correct": 0,
+          "answer": "A green land bridge of rivers and marshes linking Britain to Europe",
+          "a": "A green land bridge of rivers and marshes linking Britain to Europe",
+          "explanation": "Doggerland was a wide green land bridge with rivers and marshes that joined Britain straight to mainland Europe."
+        },
+        {
+          "stage": 3,
+          "question": "Which wild foods did Stone Age families catch beside Doggerland's pools and marshes?",
+          "q": "Which wild foods did Stone Age families catch beside Doggerland's pools and marshes?",
+          "options": [
+            "Mediterranean olives and grapes",
+            "Camels and ostriches",
+            "Farmed sheep and wheat",
+            "Eels, ducks, and beavers"
+          ],
+          "correct": 3,
+          "answer": "Eels, ducks, and beavers",
+          "a": "Eels, ducks, and beavers",
+          "explanation": "Families camped beside Doggerland's watery marshes to spear eels, net ducks, and trap beavers."
+        },
+        {
+          "stage": 3,
+          "question": "Around 6500 BC, what caused rising sea waves and storms to flood low-lying Doggerland forever?",
+          "q": "Around 6500 BC, what caused rising sea waves and storms to flood low-lying Doggerland forever?",
+          "options": [
+            "Beavers building giant wooden dams",
+            "Heavy rain during one weekend",
+            "Builders digging ditches with antler picks",
+            "Melting northern ice sheets pouring huge amounts of water into the sea"
+          ],
+          "correct": 3,
+          "answer": "Melting northern ice sheets pouring huge amounts of water into the sea",
+          "a": "Melting northern ice sheets pouring huge amounts of water into the sea",
+          "explanation": "Melting northern ice sheets poured water into the rising sea until waves drowned Doggerland around 6500 BC."
+        },
+        {
+          "stage": 3,
+          "question": "What amazing clues do fishing boats still drag up from the North Sea floor today?",
+          "q": "What amazing clues do fishing boats still drag up from the North Sea floor today?",
+          "options": [
+            "Roman mosaic tiles",
+            "Iron Age chariots",
+            "Mammoth teeth and flint tools",
+            "Viking silver helmets"
+          ],
+          "correct": 2,
+          "answer": "Mammoth teeth and flint tools",
+          "a": "Mammoth teeth and flint tools",
+          "explanation": "Trawlers in the North Sea still pull up mammoth teeth and flint spear tips from sunken Doggerland!"
+        },
+        {
+          "stage": 3,
+          "question": "How did the sinking of Doggerland change Britain forever after 6500 BC?",
+          "q": "How did the sinking of Doggerland change Britain forever after 6500 BC?",
+          "options": [
+            "It connected Britain to France by dry chalk hills",
+            "It cut Britain off from mainland Europe and made Britain an island",
+            "It froze every river in southern Britain",
+            "It turned Yorkshire into a desert"
           ],
           "correct": 1,
-          "answer": "Melting ice sheets raised sea levels and flooded it beneath the North Sea",
-          "a": "Melting ice sheets raised sea levels and flooded it beneath the North Sea",
-          "explanation": "Rising waters drowned Doggerland around 6500 BC, separating Britain from mainland Europe as an island."
+          "answer": "It cut Britain off from mainland Europe and made Britain an island",
+          "a": "It cut Britain off from mainland Europe and made Britain an island",
+          "explanation": "Once Doggerland flooded beneath the North Sea, Britain was cut off from Europe as an island."
         }
       ],
       "video": [
@@ -733,10 +891,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf mounds over their roofs. **Hinge Question:** Why can we still see the beds, shelves, and fireplaces inside Skara Brae when wooden Neolithic houses elsewhere rotted away?",
-          "Source B": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic craftspeople ground and polished volcanic rock or flint smooth on wet sandstone. **Hinge Question:** Why did Neolithic farmers spend days grinding a stone axe smooth instead of leaving rough chipped edges?",
-          "Source C": "Cutting thousands of silica-rich wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C! **Hinge Question:** How did harvesting grain with flint sickles allow families to stay in one village all winter?",
-          "Source D": "Hunter-gatherers avoided heavy breakable clay pots while moving camp, whereas settled Neolithic villagers coiled wet clay into cooking bowls and left offerings inside ancestor tombs. **Hinge Question:** Why did clay cooking pots appear at the exact same time that Stone Age people settled down in farming villages?"
+          "Source A": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf over their roofs. **Hinge Question:** Why can we still see the beds and shelves inside Skara Brae when wooden Stone Age houses rotted away?",
+          "Source B": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic makers ground and polished tough stone smooth on wet sandstone. **Hinge Question:** Why did Neolithic farmers spend days polishing a stone axe smooth instead of leaving rough chipped edges?",
+          "Source C": "Cutting thousands of wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C. **Hinge Question:** How did harvesting grain with flint sickles let families stay in one village all winter?",
+          "Source D": "Moving hunter-gatherers rarely carried heavy clay bowls, whereas settled Neolithic villagers coiled wet clay into sturdy cooking pots and tomb gifts. **Hinge Question:** Why did clay cooking pots appear at the exact same time Stone Age families settled in farming villages?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -786,7 +944,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -871,12 +1029,12 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. 4000–3500 BC: Boats Across the Sea & the First British Farms",
-          "text": "<span class=\"para-ref\">[2.1]</span> Around **4000 BC**, families paddling boats across the sea brought big new ideas to island Britain. Historians call this age the **Neolithic**, or **New Stone Age**, when people began **farming**. Settlers brought tame **sheep**, **pigs**, and **cattle**, plus bags of **wheat** and **barley** seeds. None of those farm animals or grain crops grew wild in Britain before!<br><br><span class=\"para-ref\">[2.2]</span> First, villagers chopped down thick forests using smooth **polished stone axes** in wooden handles. Next, farmers planted seeds and sliced ripe crops with curved flint **sickles**. Potters also coiled wet clay into round **pottery** bowls for boiling hot stews. Because farms grew steady food, families stayed in permanent **thatched villages** all year.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Around **4000 BC**, families paddling boats across the sea brought big new ideas to island Britain. Historians call this age the **Neolithic**, or **New Stone Age**, when people began **farming**. Settlers brought tame **sheep**, **pigs**, and **cattle**, plus bags of **wheat** and **barley** seeds. None of those farm animals or grain crops grew wild in Britain before!<br><br><span class=\"para-ref\">[2.2]</span> First, villagers chopped down thick forests using smooth **polished stone axes** in wooden handles. Next, farmers planted seeds and sliced ripe crops with curved flint **sickles**. Potters also coiled wet clay into round **pottery** bowls for boiling hot stews. Because farms grew steady food, families stayed in permanent **thatched villages** all year.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Around **4000 BC**, families sailed wooden boats across the sea to island Britain. Thus began the **Neolithic** [nee-oh-LITH-ik], or **New Stone Age**, when **farming** (**agriculture**) started. Settlers brought tame **sheep**, **pigs**, and **cattle**, plus **wheat** and **barley** seeds.<br><br><span class=\"para-ref\">[2.2]</span> Villagers felled thick forests using smooth **polished stone axes** in wooden handles. Farmers planted crops and cut ripe stalks with curved flint **sickles**. Potters coiled wet clay into **pottery** bowls for hot stews. Steady harvests let families live in **thatched villages** all year.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Around **4000 BC**, families sailed wooden boats across the sea to island Britain. Thus began the **Neolithic** [nee-oh-LITH-ik], or **New Stone Age**, when **farming** (**agriculture**) started. Settlers brought tame **sheep**, **pigs**, and **cattle**, plus **wheat** and **barley** seeds.<br><br><span class=\"para-ref\">[2.2]</span> Villagers felled thick forests using smooth **polished stone axes** in wooden handles. Farmers planted crops and cut ripe stalks with curved flint **sickles**. Potters coiled wet clay into **pottery** bowls for hot stews. Steady harvests let families live in **thatched villages** all year.",
           "image": "/units/ks2_stone_to_iron_age/assets/neolithic_thatched_farmhouses.jpg",
           "image_alt": "Reconstructed Neolithic timber-and-thatch farmhouses surrounded by fenced clearings",
-          "caption": "Reconstructed Neolithic thatched farmhouses — once families grew wheat and raised livestock, they could stay in permanent villages all year.",
-          "image_caption": "Reconstructed Neolithic thatched farmhouses — once families grew wheat and raised livestock, they could stay in permanent villages all year.",
+          "caption": "Reconstructed Neolithic thatched farmhouses — once families grew wheat and raised animals, they stayed in villages all year.",
+          "image_caption": "Reconstructed Neolithic thatched farmhouses — once families grew wheat and raised animals, they stayed in villages all year.",
           "isReversed": false,
           "sources": [
             {
@@ -886,28 +1044,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/neolithic_polished_stone_axe.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/neolithic_polished_stone_axe.jpg",
-              "title": "Source B: Ground-and-Polished Neolithic Stone Axehead (c. 3800–3000 BC)",
-              "caption": "A heavy Neolithic stone axehead rubbed smooth for dozens of hours on wet sandstone blocks so its tough edge could chop down forest trees.",
+              "title": "Source B: Ground-and-Polished Neolithic Stone Axehead (c. 3500 BC)",
+              "caption": "A heavy Neolithic stone axehead rubbed smooth on wet sandstone so its tough blade could chop down thick forest trees.",
               "author": "Neolithic Stone Axe Maker",
               "date": "c. 3800–3000 BC",
-              "context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic craftspeople ground and polished volcanic rock or flint smooth on wet sandstone.",
-              "source_context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic craftspeople ground and polished volcanic rock or flint smooth on wet sandstone.",
+              "context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic makers ground and polished tough stone smooth on wet sandstone.",
+              "source_context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic makers ground and polished tough stone smooth on wet sandstone. **Hinge Question:** Why did Neolithic farmers spend days polishing a stone axe smooth instead of leaving rough chipped edges?",
               "question_badge": "POLISHED STONE AXEHEAD",
               "question": "Compare smooth Source B with older chipped tools. Why did early farmers need tough polished axes?",
-              "model_answer": "Polishing the stone blade smooth stopped it cracking when slamming into hard tree trunks. Mounted into a wooden handle, Source B let Neolithic farmers chop down dense forests to clear sunny fields for wheat and timber houses.",
-              "provenance": "Ground and polished Neolithic stone axehead from Britain (c. 3800–3000 BC, archaeological museum collection)."
+              "model_answer": "Polishing the stone smooth stopped the blade cracking when hitting thick oak trunks. Fitted into a wooden handle, Source B helped farmers clear forests for sunny wheat fields.",
+              "provenance": "Ground and polished Neolithic stone axehead from Britain (c. 3800–3000 BC).",
+              "text": "Artefact note: A craftworker rubbed this hard rock back and forth on wet gritty sandstone for hours until its cutting edge felt as smooth as glass."
             }
           ]
         },
         {
           "act": 2,
           "title": "c. 3100 BC & 1850: The Storm That Uncovered Skara Brae in Orkney",
-          "text": "<span class=\"para-ref\">[2.3]</span> In winter **1850**, a fierce storm whipped away sand dunes on **Orkney**, off northern Scotland. Beneath the grass lay **Skara Brae**, a hidden Neolithic village built around **3100 BC**! Few trees grew on windy Orkney, so villagers stacked flat stones to build eight houses. Covered passages linked the homes together so neighbours stayed dry during winter gales.<br><br><span class=\"para-ref\">[2.4]</span> Stepping inside Skara Brae feels like visiting a Stone Age home frozen in time. Each room still has **stone box beds** once stuffed with soft heather and sheepskins. Families cooked over a central **hearth**, placed treasures on a **stone dresser**, and used indoor **drains**!",
-          "content": "<span class=\"para-ref\">[2.3]</span> In winter **1850**, a fierce storm whipped away sand dunes on **Orkney**, off northern Scotland. Beneath the grass lay **Skara Brae**, a hidden Neolithic village built around **3100 BC**! Few trees grew on windy Orkney, so villagers stacked flat stones to build eight houses. Covered passages linked the homes together so neighbours stayed dry during winter gales.<br><br><span class=\"para-ref\">[2.4]</span> Stepping inside Skara Brae feels like visiting a Stone Age home frozen in time. Each room still has **stone box beds** once stuffed with soft heather and sheepskins. Families cooked over a central **hearth**, placed treasures on a **stone dresser**, and used indoor **drains**!",
+          "text": "<span class=\"para-ref\">[2.3]</span> In winter **1850**, a fierce storm blew sand dunes off **Orkney** [ORK-nee] in northern Scotland. Underneath lay **Skara Brae** [SKA-ruh BRAY], a stone village built around **3100 BC**! Few trees grew on windy Orkney, so villagers stacked flat coastal flagstones into eight snug homes linked by roofed passages.<br><br><span class=\"para-ref\">[2.4]</span> Inside each house, **stone box beds** were once stuffed with soft heather and sheepskins. Families cooked over a central **hearth**, displayed treasures on a **stone dresser**, and even built indoor stone **drains**!",
+          "content": "<span class=\"para-ref\">[2.3]</span> In winter **1850**, a fierce storm blew sand dunes off **Orkney** [ORK-nee] in northern Scotland. Underneath lay **Skara Brae** [SKA-ruh BRAY], a stone village built around **3100 BC**! Few trees grew on windy Orkney, so villagers stacked flat coastal flagstones into eight snug homes linked by roofed passages.<br><br><span class=\"para-ref\">[2.4]</span> Inside each house, **stone box beds** were once stuffed with soft heather and sheepskins. Families cooked over a central **hearth**, displayed treasures on a **stone dresser**, and even built indoor stone **drains**!",
           "image": "/units/ks2_stone_to_iron_age/assets/skara_brae_orkney_village.jpg",
           "image_alt": "Sunken Neolithic flagstone houses and covered passages overlooking the bay at Skara Brae in Orkney, Scotland",
-          "caption": "The 5,000-year-old Neolithic village of Skara Brae on Orkney in Scotland, revealed when a winter gale stripped away sand dunes in 1850.",
-          "image_caption": "The 5,000-year-old Neolithic village of Skara Brae on Orkney in Scotland, revealed when a winter gale stripped away sand dunes in 1850.",
+          "caption": "The 5,000-year-old Neolithic village of Skara Brae on Orkney in Scotland, uncovered when a winter storm blew away sand dunes in 1850.",
+          "image_caption": "The 5,000-year-old Neolithic village of Skara Brae on Orkney in Scotland, uncovered when a winter storm blew away sand dunes in 1850.",
           "isReversed": true,
           "sources": [
             {
@@ -917,28 +1076,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_beds_hearth.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_beds_hearth.jpg",
-              "title": "Source A: Stone Box Beds, Central Hearth & Flagstone Walls at Skara Brae, Orkney (c. 3100–2500 BC)",
-              "caption": "Inside a Neolithic stone house at Skara Brae in Orkney, showing the square central fire hearth, stone box beds, and neat flat flagstone walls.",
+              "title": "Source A: Stone Box Beds, Central Hearth & Flagstone Walls at Skara Brae (c. 3100 BC)",
+              "caption": "Inside a Neolithic stone house at Skara Brae in Orkney, showing the square central fireplace, stone box beds, and flat flagstone walls.",
               "author": "Neolithic Builders of Skara Brae, Orkney",
               "date": "c. 3100–2500 BC (Uncovered 1850)",
-              "context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf mounds over their roofs.",
-              "source_context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf mounds over their roofs.",
+              "context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf over their roofs.",
+              "source_context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf over their roofs. **Hinge Question:** Why can we still see the beds and shelves inside Skara Brae when wooden Stone Age houses rotted away?",
               "question_badge": "SKARA BRAE STONE HOME",
               "question": "Spot three pieces of indoor stone furniture in Source A. How did families stay warm inside?",
-              "model_answer": "Source A shows stone box beds, a square stone-edged central hearth, and flat flagstone shelves and walls. Families heaped soft heather, bracken, and sheepskins into the box beds and burned peat or driftwood on the central hearth.",
-              "provenance": "Interior of a preserved Neolithic stone dwelling at Skara Brae, Mainland, Orkney, Scotland (c. 3100–2500 BC, UNESCO World Heritage Site)."
+              "model_answer": "Source A shows stone box beds, a square central hearth fireplace, and flat stone walls and shelves. Families stuffed the beds with soft heather and sheepskins and lit warm fires on the hearth.",
+              "provenance": "Interior of a preserved Neolithic stone house at Skara Brae, Orkney, Scotland (c. 3100–2500 BC).",
+              "text": "Artefact note: Because windy Orkney had almost no trees, villagers stacked flat beach stones to build cosy indoor beds, shelves, and fireplaces that never rotted."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. 3650–2500 BC: Ancestor Tombs at West Kennet Long Barrow",
-          "text": "<span class=\"para-ref\">[2.5]</span> Settled farming families also worked together to honour dead ancestors on high hills. Around **3650 BC**, villagers in Wiltshire built **West Kennet Long Barrow**, a long chalk mound. Heavy standing boulders guarded five dark stone chambers tucked inside its eastern entrance.<br><br><span class=\"para-ref\">[2.6]</span> Over many lifetimes, families carried the bones of nearly fifty people inside. Mourners left hand-coiled clay bowls, bone pins, and beads beside their loved ones. Neighbours also gathered outside the stone entrance for seasonal ceremonies and shared feasts. Giant **long barrows** showed travellers that farming communities belonged to that land forever.",
-          "content": "<span class=\"para-ref\">[2.5]</span> Settled farming families also worked together to honour dead ancestors on high hills. Around **3650 BC**, villagers in Wiltshire built **West Kennet Long Barrow**, a long chalk mound. Heavy standing boulders guarded five dark stone chambers tucked inside its eastern entrance.<br><br><span class=\"para-ref\">[2.6]</span> Over many lifetimes, families carried the bones of nearly fifty people inside. Mourners left hand-coiled clay bowls, bone pins, and beads beside their loved ones. Neighbours also gathered outside the stone entrance for seasonal ceremonies and shared feasts. Giant **long barrows** showed travellers that farming communities belonged to that land forever.",
+          "text": "<span class=\"para-ref\">[2.5]</span> Settled **Neolithic** villagers also worked together to build giant **stone tombs** on high hills. Around **3650 BC**, families in Wiltshire raised **West Kennet Long Barrow**, a long chalk mound. Heavy boulders guarded five dark **stone chambers** inside its entrance.<br><br><span class=\"para-ref\">[2.6]</span> Over many years, villagers placed the bones of nearly fifty **ancestors** inside. Mourners left hand-coiled **clay bowls**, bone pins, and **beads** beside them. Families feasted outside, as **long barrows** showed everyone that their community belonged to that land.",
+          "content": "<span class=\"para-ref\">[2.5]</span> Settled **Neolithic** villagers also worked together to build giant **stone tombs** on high hills. Around **3650 BC**, families in Wiltshire raised **West Kennet Long Barrow**, a long chalk mound. Heavy boulders guarded five dark **stone chambers** inside its entrance.<br><br><span class=\"para-ref\">[2.6]</span> Over many years, villagers placed the bones of nearly fifty **ancestors** inside. Mourners left hand-coiled **clay bowls**, bone pins, and **beads** beside them. Families feasted outside, as **long barrows** showed everyone that their community belonged to that land.",
           "image": "/units/ks2_stone_to_iron_age/assets/west_kennet_long_barrow_stones.jpg",
           "image_alt": "Giant sarsen boulders framing the entrance to West Kennet Long Barrow on a chalk ridge in Wiltshire",
-          "caption": "Massive standing boulders blocking the entrance chambers of West Kennet Long Barrow in Wiltshire, built around 3650 BC.",
-          "image_caption": "Massive standing boulders blocking the entrance chambers of West Kennet Long Barrow in Wiltshire, built around 3650 BC.",
+          "caption": "Huge standing boulders guarding the entrance chambers of West Kennet Long Barrow in Wiltshire, built around 3650 BC.",
+          "image_caption": "Huge standing boulders guarding the entrance chambers of West Kennet Long Barrow in Wiltshire, built around 3650 BC.",
           "isReversed": false,
           "sources": [
             {
@@ -948,16 +1108,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/neolithic_flint_sickle_blade.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/neolithic_flint_sickle_blade.jpg",
-              "title": "Source C: Curved Neolithic Flint Sickle Blade for Harvesting Crops (c. 3500–2500 BC)",
-              "caption": "A curved crescent-shaped Neolithic flint sickle blade finely chipped along its inner cutting edge to slice ripe stalks of wheat and barley.",
+              "title": "Source C: Curved Neolithic Flint Sickle Blade for Cutting Crops (c. 3000 BC)",
+              "caption": "A curved Neolithic flint sickle blade chipped along its inner edge to slice ripe stalks of wheat and barley.",
               "author": "Neolithic Farmer-Toolmaker",
               "date": "c. 3500–2500 BC",
-              "context": "Cutting thousands of silica-rich wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C!",
-              "source_context": "Cutting thousands of silica-rich wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C!",
+              "context": "Cutting thousands of wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C.",
+              "source_context": "Cutting thousands of wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C. **Hinge Question:** How did harvesting grain with flint sickles let families stay in one village all winter?",
               "question_badge": "CURVED FLINT SICKLE",
               "question": "What job did the curved blade in Source C do at harvest time on a Neolithic farm?",
-              "model_answer": "Set into a wooden handle, the curved flint blade in Source C sliced handfuls of ripe wheat and barley stalks cleanly. Families ground that stored grain into flour for flatbreads, feeding their village right through winter.",
-              "provenance": "Curved Neolithic chipped flint sickle blade showing harvest polish (c. 3500–2500 BC, archaeological collection)."
+              "model_answer": "Mounted in a wooden handle, Source C sliced ripe stalks of wheat and barley cleanly at harvest time. Stored grain gave families flour for bread right through winter.",
+              "provenance": "Curved Neolithic flint sickle blade from Britain (c. 3500–2500 BC).",
+              "text": "Artefact note: Slotted into a wooden handle like a curved claw, this sharp flint blade still gleams with a shiny polish from slicing thousands of wheat stalks!"
             },
             {
               "id": "ks2_stone_to_iron_age_l2_src_d",
@@ -966,16 +1127,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/neolithic_pottery_and_beads.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/neolithic_pottery_and_beads.jpg",
-              "title": "Source D: Hand-Coiled Neolithic Clay Bowls, Bone Pins & Beads from West Kennet Long Barrow (c. 3650 BC)",
-              "caption": "Round-bottomed Neolithic clay bowls coiled by hand, carved bone pins, and stone beads excavated inside West Kennet Long Barrow in Wiltshire.",
+              "title": "Source D: Hand-Coiled Clay Bowls, Bone Pins & Beads from West Kennet Long Barrow (c. 3650 BC)",
+              "caption": "Round-bottomed Neolithic clay bowls coiled by hand, bone pins, and beads found inside West Kennet Long Barrow in Wiltshire.",
               "author": "Neolithic Potters and Mourners in Wiltshire",
               "date": "c. 3650–2500 BC",
-              "context": "Mobile hunter-gatherers rarely carried heavy, breakable clay bowls from camp to camp, whereas settled Neolithic villagers coiled wet clay into sturdy pots.",
-              "source_context": "Mobile hunter-gatherers rarely carried heavy, breakable clay bowls from camp to camp, whereas settled Neolithic villagers coiled wet clay into sturdy pots.",
+              "context": "Moving hunter-gatherers rarely carried heavy clay bowls, whereas settled Neolithic villagers coiled wet clay into sturdy cooking pots and tomb gifts.",
+              "source_context": "Moving hunter-gatherers rarely carried heavy clay bowls, whereas settled Neolithic villagers coiled wet clay into sturdy cooking pots and tomb gifts. **Hinge Question:** Why did clay cooking pots appear at the exact same time Stone Age families settled in farming villages?",
               "question_badge": "NEOLITHIC BOWLS & BEADS",
               "question": "Where were the clay bowls and beads in Source D found, and why were pots useful?",
-              "model_answer": "These hand-coiled clay bowls, bone pins, and beads were placed inside West Kennet Long Barrow to honour dead ancestors. In daily village life, clay pots let settled farmers boil grain porridge, stew meat, and store milk safely.",
-              "provenance": "Neolithic hand-coiled pottery bowls, bone pins, and beads excavated from West Kennet Long Barrow, Wiltshire (c. 3650 BC)."
+              "model_answer": "These clay bowls, bone pins, and beads were placed inside West Kennet Long Barrow to honour dead ancestors. In villages, clay pots let farmers boil stews and porridge safely.",
+              "provenance": "Neolithic hand-coiled clay bowls, bone pins, and beads from West Kennet Long Barrow, Wiltshire (c. 3650 BC).",
+              "text": "Artefact note: Settled village potters rolled wet clay into long snakes, coiled them into round cooking bowls, and placed them carefully beside their ancestors."
             }
           ]
         }
@@ -988,16 +1150,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_beds_hearth.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_beds_hearth.jpg",
-          "title": "Source A: Stone Box Beds, Central Hearth & Flagstone Walls at Skara Brae, Orkney (c. 3100–2500 BC)",
-          "caption": "Inside a Neolithic stone house at Skara Brae in Orkney, showing the square central fire hearth, stone box beds, and neat flat flagstone walls.",
+          "title": "Source A: Stone Box Beds, Central Hearth & Flagstone Walls at Skara Brae (c. 3100 BC)",
+          "caption": "Inside a Neolithic stone house at Skara Brae in Orkney, showing the square central fireplace, stone box beds, and flat flagstone walls.",
           "author": "Neolithic Builders of Skara Brae, Orkney",
           "date": "c. 3100–2500 BC (Uncovered 1850)",
-          "context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf mounds over their roofs.",
-          "source_context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf mounds over their roofs.",
+          "context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf over their roofs.",
+          "source_context": "Trees barely grew on windswept Orkney off northern Scotland, so Skara Brae villagers built snug furniture from flat beach flagstones and tucked turf over their roofs. **Hinge Question:** Why can we still see the beds and shelves inside Skara Brae when wooden Stone Age houses rotted away?",
           "question_badge": "SKARA BRAE STONE HOME",
           "question": "Spot three pieces of indoor stone furniture in Source A. How did families stay warm inside?",
-          "model_answer": "Source A shows stone box beds, a square stone-edged central hearth, and flat flagstone shelves and walls. Families heaped soft heather, bracken, and sheepskins into the box beds and burned peat or driftwood on the central hearth.",
-          "provenance": "Interior of a preserved Neolithic stone dwelling at Skara Brae, Mainland, Orkney, Scotland (c. 3100–2500 BC, UNESCO World Heritage Site)."
+          "model_answer": "Source A shows stone box beds, a square central hearth fireplace, and flat stone walls and shelves. Families stuffed the beds with soft heather and sheepskins and lit warm fires on the hearth.",
+          "provenance": "Interior of a preserved Neolithic stone house at Skara Brae, Orkney, Scotland (c. 3100–2500 BC).",
+          "text": "Artefact note: Because windy Orkney had almost no trees, villagers stacked flat beach stones to build cosy indoor beds, shelves, and fireplaces that never rotted."
         },
         {
           "id": "ks2_stone_to_iron_age_l2_src_b",
@@ -1006,16 +1169,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/neolithic_polished_stone_axe.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/neolithic_polished_stone_axe.jpg",
-          "title": "Source B: Ground-and-Polished Neolithic Stone Axehead (c. 3800–3000 BC)",
-          "caption": "A heavy Neolithic stone axehead rubbed smooth for dozens of hours on wet sandstone blocks so its tough edge could chop down forest trees.",
+          "title": "Source B: Ground-and-Polished Neolithic Stone Axehead (c. 3500 BC)",
+          "caption": "A heavy Neolithic stone axehead rubbed smooth on wet sandstone so its tough blade could chop down thick forest trees.",
           "author": "Neolithic Stone Axe Maker",
           "date": "c. 3800–3000 BC",
-          "context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic craftspeople ground and polished volcanic rock or flint smooth on wet sandstone.",
-          "source_context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic craftspeople ground and polished volcanic rock or flint smooth on wet sandstone.",
+          "context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic makers ground and polished tough stone smooth on wet sandstone.",
+          "source_context": "Roughly chipped flint could shatter against thick oak trunks, so Neolithic makers ground and polished tough stone smooth on wet sandstone. **Hinge Question:** Why did Neolithic farmers spend days polishing a stone axe smooth instead of leaving rough chipped edges?",
           "question_badge": "POLISHED STONE AXEHEAD",
           "question": "Compare smooth Source B with older chipped tools. Why did early farmers need tough polished axes?",
-          "model_answer": "Polishing the stone blade smooth stopped it cracking when slamming into hard tree trunks. Mounted into a wooden handle, Source B let Neolithic farmers chop down dense forests to clear sunny fields for wheat and timber houses.",
-          "provenance": "Ground and polished Neolithic stone axehead from Britain (c. 3800–3000 BC, archaeological museum collection)."
+          "model_answer": "Polishing the stone smooth stopped the blade cracking when hitting thick oak trunks. Fitted into a wooden handle, Source B helped farmers clear forests for sunny wheat fields.",
+          "provenance": "Ground and polished Neolithic stone axehead from Britain (c. 3800–3000 BC).",
+          "text": "Artefact note: A craftworker rubbed this hard rock back and forth on wet gritty sandstone for hours until its cutting edge felt as smooth as glass."
         },
         {
           "id": "ks2_stone_to_iron_age_l2_src_c",
@@ -1024,16 +1188,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/neolithic_flint_sickle_blade.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/neolithic_flint_sickle_blade.jpg",
-          "title": "Source C: Curved Neolithic Flint Sickle Blade for Harvesting Crops (c. 3500–2500 BC)",
-          "caption": "A curved crescent-shaped Neolithic flint sickle blade finely chipped along its inner cutting edge to slice ripe stalks of wheat and barley.",
+          "title": "Source C: Curved Neolithic Flint Sickle Blade for Cutting Crops (c. 3000 BC)",
+          "caption": "A curved Neolithic flint sickle blade chipped along its inner edge to slice ripe stalks of wheat and barley.",
           "author": "Neolithic Farmer-Toolmaker",
           "date": "c. 3500–2500 BC",
-          "context": "Cutting thousands of silica-rich wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C!",
-          "source_context": "Cutting thousands of silica-rich wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C!",
+          "context": "Cutting thousands of wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C.",
+          "source_context": "Cutting thousands of wheat and barley stalks left a tell-tale glossy shine called \"sickle gloss\" along the sharp flint edge of blades like Source C. **Hinge Question:** How did harvesting grain with flint sickles let families stay in one village all winter?",
           "question_badge": "CURVED FLINT SICKLE",
           "question": "What job did the curved blade in Source C do at harvest time on a Neolithic farm?",
-          "model_answer": "Set into a wooden handle, the curved flint blade in Source C sliced handfuls of ripe wheat and barley stalks cleanly. Families ground that stored grain into flour for flatbreads, feeding their village right through winter.",
-          "provenance": "Curved Neolithic chipped flint sickle blade showing harvest polish (c. 3500–2500 BC, archaeological collection)."
+          "model_answer": "Mounted in a wooden handle, Source C sliced ripe stalks of wheat and barley cleanly at harvest time. Stored grain gave families flour for bread right through winter.",
+          "provenance": "Curved Neolithic flint sickle blade from Britain (c. 3500–2500 BC).",
+          "text": "Artefact note: Slotted into a wooden handle like a curved claw, this sharp flint blade still gleams with a shiny polish from slicing thousands of wheat stalks!"
         },
         {
           "id": "ks2_stone_to_iron_age_l2_src_d",
@@ -1042,16 +1207,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/neolithic_pottery_and_beads.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/neolithic_pottery_and_beads.jpg",
-          "title": "Source D: Hand-Coiled Neolithic Clay Bowls, Bone Pins & Beads from West Kennet Long Barrow (c. 3650 BC)",
-          "caption": "Round-bottomed Neolithic clay bowls coiled by hand, carved bone pins, and stone beads excavated inside West Kennet Long Barrow in Wiltshire.",
+          "title": "Source D: Hand-Coiled Clay Bowls, Bone Pins & Beads from West Kennet Long Barrow (c. 3650 BC)",
+          "caption": "Round-bottomed Neolithic clay bowls coiled by hand, bone pins, and beads found inside West Kennet Long Barrow in Wiltshire.",
           "author": "Neolithic Potters and Mourners in Wiltshire",
           "date": "c. 3650–2500 BC",
-          "context": "Mobile hunter-gatherers rarely carried heavy, breakable clay bowls from camp to camp, whereas settled Neolithic villagers coiled wet clay into sturdy pots.",
-          "source_context": "Mobile hunter-gatherers rarely carried heavy, breakable clay bowls from camp to camp, whereas settled Neolithic villagers coiled wet clay into sturdy pots.",
+          "context": "Moving hunter-gatherers rarely carried heavy clay bowls, whereas settled Neolithic villagers coiled wet clay into sturdy cooking pots and tomb gifts.",
+          "source_context": "Moving hunter-gatherers rarely carried heavy clay bowls, whereas settled Neolithic villagers coiled wet clay into sturdy cooking pots and tomb gifts. **Hinge Question:** Why did clay cooking pots appear at the exact same time Stone Age families settled in farming villages?",
           "question_badge": "NEOLITHIC BOWLS & BEADS",
           "question": "Where were the clay bowls and beads in Source D found, and why were pots useful?",
-          "model_answer": "These hand-coiled clay bowls, bone pins, and beads were placed inside West Kennet Long Barrow to honour dead ancestors. In daily village life, clay pots let settled farmers boil grain porridge, stew meat, and store milk safely.",
-          "provenance": "Neolithic hand-coiled pottery bowls, bone pins, and beads excavated from West Kennet Long Barrow, Wiltshire (c. 3650 BC)."
+          "model_answer": "These clay bowls, bone pins, and beads were placed inside West Kennet Long Barrow to honour dead ancestors. In villages, clay pots let farmers boil stews and porridge safely.",
+          "provenance": "Neolithic hand-coiled clay bowls, bone pins, and beads from West Kennet Long Barrow, Wiltshire (c. 3650 BC).",
+          "text": "Artefact note: Settled village potters rolled wet clay into long snakes, coiled them into round cooking bowls, and placed them carefully beside their ancestors."
         }
       ],
       "causal_domino_spine": {
@@ -1068,7 +1234,7 @@ window.UNIT_DATA = {
             "trigger": "Sea travellers brought sheep, pigs, cattle, wheat, and barley around 4000 BC, clearing forests with smooth polished stone axes.",
             "connective": "Reliable harvests and herds allowed families to stay in permanent villages all year.",
             "question": "How did farming change everyday life in Britain after 4000 BC?",
-            "prose_hash": "26e887d4bb"
+            "prose_hash": "3a96c9d655"
           },
           {
             "step": 2,
@@ -1080,7 +1246,7 @@ window.UNIT_DATA = {
             "trigger": "On windswept Orkney, villagers built eight snug stone houses linked by passages with stone box beds, dressers, hearths, and drains.",
             "connective": "Settled villages grew proud communities deeply rooted in their surrounding landscape.",
             "question": "What did the 1850 storm reveal inside the stone homes of Skara Brae?",
-            "prose_hash": "f31192d198"
+            "prose_hash": "c5d4e10028"
           },
           {
             "step": 3,
@@ -1092,7 +1258,7 @@ window.UNIT_DATA = {
             "trigger": "Villagers raised hundred-metre chalk mounds like West Kennet Long Barrow, placing ancestors’ bones inside stone chambers with clay bowls.",
             "connective": "Teamwork on giant tombs prepared communities to build even grander stone circles next!",
             "question": "Why did Neolithic villagers build stone tombs like West Kennet Long Barrow?",
-            "prose_hash": "e39d5336b2"
+            "prose_hash": "5f81109f43"
           }
         ]
       },
@@ -1124,7 +1290,7 @@ window.UNIT_DATA = {
           "dates": "c. 4000–3500 BC",
           "para_ref": "[2.1]",
           "paraRef": "[2.1]",
-          "prose_hash": "26e887d4bb"
+          "prose_hash": "3a96c9d655"
         },
         {
           "step": 2,
@@ -1153,7 +1319,7 @@ window.UNIT_DATA = {
           "dates": "c. 3100 BC & 1850",
           "para_ref": "[2.3]",
           "paraRef": "[2.3]",
-          "prose_hash": "f31192d198"
+          "prose_hash": "c5d4e10028"
         },
         {
           "step": 3,
@@ -1182,7 +1348,7 @@ window.UNIT_DATA = {
           "dates": "c. 3650–2500 BC",
           "para_ref": "[2.5]",
           "paraRef": "[2.5]",
-          "prose_hash": "e39d5336b2"
+          "prose_hash": "5f81109f43"
         }
       ],
       "tasks": [
@@ -1271,78 +1437,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Around 4000 BC, how did the first sheep, cattle, and wheat seeds reach Britain to start Neolithic farming?",
-          "q": "Around 4000 BC, how did the first sheep, cattle, and wheat seeds reach Britain to start Neolithic farming?",
+          "question": "Around 4000 BC, how did Britain's first farmers bring tame sheep, cattle, and grain seeds to our island?",
+          "q": "Around 4000 BC, how did Britain's first farmers bring tame sheep, cattle, and grain seeds to our island?",
           "options": [
-            "Families walked them across dry Doggerland",
-            "Pioneers carried them across the sea in wooden boats",
-            "Roman legions marched them over stone bridges",
-            "They grew wild on top of Scottish glaciers"
+            "Across the sea in wooden boats",
+            "Walking across dry Doggerland",
+            "Along straight Roman stone roads",
+            "Inside iron steamships"
           ],
-          "correct": 1,
-          "answer": "Pioneers carried them across the sea in wooden boats",
-          "a": "Pioneers carried them across the sea in wooden boats",
-          "explanation": "Because Doggerland had already flooded around 6500 BC, Neolithic farmers paddled livestock and grain seeds across the sea in boats!"
+          "correct": 0,
+          "answer": "Across the sea in wooden boats",
+          "a": "Across the sea in wooden boats",
+          "explanation": "Because Doggerland had already flooded around 6500 BC, Neolithic settlers paddled animals and seeds across in boats."
         },
         {
           "stage": 1,
-          "question": "Why did Neolithic craftworkers grind and polish stone axeheads smooth on wet sandstone?",
-          "q": "Why did Neolithic craftworkers grind and polish stone axeheads smooth on wet sandstone?",
+          "question": "What does the word \"Neolithic\" mean to historians?",
+          "q": "What does the word \"Neolithic\" mean to historians?",
           "options": [
-            "To use them as shiny mirrors",
-            "So the tough smooth blade could chop down forest trees without shattering",
-            "To melt them into liquid bronze",
-            "So they would float on rivers"
-          ],
-          "correct": 1,
-          "answer": "So the tough smooth blade could chop down forest trees without shattering",
-          "a": "So the tough smooth blade could chop down forest trees without shattering",
-          "explanation": "Ground-and-polished stone axes were strong enough to fell thick woodland trees and clear sunny fields for crops."
-        },
-        {
-          "stage": 2,
-          "question": "How was the 5,000-year-old Neolithic village of Skara Brae on Orkney rediscovered in 1850?",
-          "q": "How was the 5,000-year-old Neolithic village of Skara Brae on Orkney rediscovered in 1850?",
-          "options": [
-            "A fierce winter storm blew away the sand dunes hiding the stone houses",
-            "Railway builders tunnelled underneath London",
-            "Divers spotted it at the bottom of Loch Ness",
-            "An ancient written map marked the exact spot"
-          ],
-          "correct": 0,
-          "answer": "A fierce winter storm blew away the sand dunes hiding the stone houses",
-          "a": "A fierce winter storm blew away the sand dunes hiding the stone houses",
-          "explanation": "In winter 1850, gale-force winds stripped sand and grass from the Bay of Skaill in Orkney, revealing eight stone houses!"
-        },
-        {
-          "stage": 2,
-          "question": "Which surprising features still survive inside the Neolithic houses at Skara Brae?",
-          "q": "Which surprising features still survive inside the Neolithic houses at Skara Brae?",
-          "options": [
-            "Brick chimneys and glass windows",
-            "Iron spiral staircases and tiled baths",
-            "Wooden bunk beds and velvet curtains",
-            "Stone box beds, stone dressers, central hearths, and indoor drains"
+            "Old Stone Age",
+            "Late Iron Age",
+            "Middle Bronze Age",
+            "New Stone Age"
           ],
           "correct": 3,
-          "answer": "Stone box beds, stone dressers, central hearths, and indoor drains",
-          "a": "Stone box beds, stone dressers, central hearths, and indoor drains",
-          "explanation": "Because Orkney had few trees, villagers built beds, shelves, hearths, and drains out of flat flagstones that never rotted!"
+          "answer": "New Stone Age",
+          "a": "New Stone Age",
+          "explanation": "Neolithic means the New Stone Age, when families began farming crops and keeping tame animals."
+        },
+        {
+          "stage": 1,
+          "question": "Which tame farm animals and grain crops did Neolithic settlers introduce to Britain around 4000 BC?",
+          "q": "Which tame farm animals and grain crops did Neolithic settlers introduce to Britain around 4000 BC?",
+          "options": [
+            "Turkeys, potatoes, and sweetcorn",
+            "Woolly mammoths and wild reindeer",
+            "Sheep, pigs, and cattle, plus wheat and barley",
+            "Elephants, camels, and rice"
+          ],
+          "correct": 2,
+          "answer": "Sheep, pigs, and cattle, plus wheat and barley",
+          "a": "Sheep, pigs, and cattle, plus wheat and barley",
+          "explanation": "None of sheep, pigs, cattle, wheat, or barley grew wild in Britain before Neolithic farmers brought them!"
+        },
+        {
+          "stage": 1,
+          "question": "Why did Neolithic craftworkers rub stone axeheads smooth on wet sandstone?",
+          "q": "Why did Neolithic craftworkers rub stone axeheads smooth on wet sandstone?",
+          "options": [
+            "To turn grey rock into shiny gold",
+            "So the tough blade could chop down forest trees without cracking",
+            "To use them as dinner plates",
+            "So they would float down rivers"
+          ],
+          "correct": 1,
+          "answer": "So the tough blade could chop down forest trees without cracking",
+          "a": "So the tough blade could chop down forest trees without cracking",
+          "explanation": "Smooth polished stone axes felled thick woodland trees cleanly to open sunny fields for crops."
+        },
+        {
+          "stage": 1,
+          "question": "Which curved flint tool did Neolithic farmers use to slice ripe stalks of wheat and barley?",
+          "q": "Which curved flint tool did Neolithic farmers use to slice ripe stalks of wheat and barley?",
+          "options": [
+            "A bronze strigil",
+            "A flint sickle",
+            "An antler headdress",
+            "A rotary quern"
+          ],
+          "correct": 1,
+          "answer": "A flint sickle",
+          "a": "A flint sickle",
+          "explanation": "Farmers sliced ripe grain stalks with a curved flint sickle before coiling clay pottery bowls for hot stews."
+        },
+        {
+          "stage": 2,
+          "question": "On which windy island group off northern Scotland does the Neolithic village of Skara Brae stand?",
+          "q": "On which windy island group off northern Scotland does the Neolithic village of Skara Brae stand?",
+          "options": [
+            "Orkney",
+            "Anglesey",
+            "The Isle of Wight",
+            "Sicily"
+          ],
+          "correct": 0,
+          "answer": "Orkney",
+          "a": "Orkney",
+          "explanation": "Skara Brae stands beside the sea on Orkney off the north coast of Scotland."
+        },
+        {
+          "stage": 2,
+          "question": "How was the 5,000-year-old village of Skara Brae uncovered in winter 1850?",
+          "q": "How was the 5,000-year-old village of Skara Brae uncovered in winter 1850?",
+          "options": [
+            "Builders dug a tunnel for a railway",
+            "Divers spotted it under the North Sea",
+            "A farmer hit a gold torc with his plough",
+            "A fierce winter storm blew away the sand dunes hiding it"
+          ],
+          "correct": 3,
+          "answer": "A fierce winter storm blew away the sand dunes hiding it",
+          "a": "A fierce winter storm blew away the sand dunes hiding it",
+          "explanation": "A powerful winter storm in 1850 stripped grass and sand dunes away to reveal eight stone houses."
+        },
+        {
+          "stage": 2,
+          "question": "Why did villagers at Skara Brae build houses, beds, and shelves from flat stone slabs instead of wood?",
+          "q": "Why did villagers at Skara Brae build houses, beds, and shelves from flat stone slabs instead of wood?",
+          "options": [
+            "Stone was softer to carve than wood",
+            "Wood was sacred and forbidden to touch",
+            "Orkney was too windy for many trees to grow",
+            "Termites ate every wooden house in Scotland"
+          ],
+          "correct": 2,
+          "answer": "Orkney was too windy for many trees to grow",
+          "a": "Orkney was too windy for many trees to grow",
+          "explanation": "Few trees grew on windswept Orkney, so families stacked flat coastal flagstones that never rotted."
+        },
+        {
+          "stage": 2,
+          "question": "How could neighbours at Skara Brae visit each other's houses without getting soaked in winter gales?",
+          "q": "How could neighbours at Skara Brae visit each other's houses without getting soaked in winter gales?",
+          "options": [
+            "In sewn-plank oak boats",
+            "Across high rope bridges in the treetops",
+            "Through roofed stone passages linking the eight homes",
+            "Along underground brick sewers"
+          ],
+          "correct": 2,
+          "answer": "Through roofed stone passages linking the eight homes",
+          "a": "Through roofed stone passages linking the eight homes",
+          "explanation": "Covered stone passages joined the houses together and sheltered villagers from fierce Orkney storms."
+        },
+        {
+          "stage": 2,
+          "question": "Which cosy indoor features still survive inside each home at Skara Brae?",
+          "q": "Which cosy indoor features still survive inside each home at Skara Brae?",
+          "options": [
+            "Glass windows and iron radiators",
+            "Stone box beds, a central hearth, a stone dresser, and indoor drains",
+            "Brick chimneys and velvet beds",
+            "Mosaic dolphin floors"
+          ],
+          "correct": 1,
+          "answer": "Stone box beds, a central hearth, a stone dresser, and indoor drains",
+          "a": "Stone box beds, a central hearth, a stone dresser, and indoor drains",
+          "explanation": "Each stone room still holds stone box beds, a central fireplace hearth, a proud stone dresser, and drains!"
         },
         {
           "stage": 3,
-          "question": "What was West Kennet Long Barrow in Wiltshire used for during the Neolithic period?",
-          "q": "What was West Kennet Long Barrow in Wiltshire used for during the Neolithic period?",
+          "question": "Around 3650 BC, what giant monument did Neolithic families raise on a Wiltshire hill to honour their dead?",
+          "q": "Around 3650 BC, what giant monument did Neolithic families raise on a Wiltshire hill to honour their dead?",
           "options": [
-            "Storing chariots for Iron Age queens",
-            "Mining copper ore deep underground",
-            "A stone-chambered chalk mound where farming families buried and honoured their ancestors",
-            "Trapping woolly mammoths in a pit"
+            "West Kennet Long Barrow",
+            "Hadrian's Wall",
+            "Maiden Castle hillfort",
+            "Must Farm causeway"
+          ],
+          "correct": 0,
+          "answer": "West Kennet Long Barrow",
+          "a": "West Kennet Long Barrow",
+          "explanation": "Villagers in Wiltshire heaped a long chalk mound over stone chambers at West Kennet Long Barrow around 3650 BC."
+        },
+        {
+          "stage": 3,
+          "question": "What guarded the five dark burial chambers tucked inside the eastern end of West Kennet Long Barrow?",
+          "q": "What guarded the five dark burial chambers tucked inside the eastern end of West Kennet Long Barrow?",
+          "options": [
+            "Roman soldiers in strip armour",
+            "Locked iron gates",
+            "A deep moat filled with eels",
+            "Heavy standing boulders"
+          ],
+          "correct": 3,
+          "answer": "Heavy standing boulders",
+          "a": "Heavy standing boulders",
+          "explanation": "Massive standing sarsen boulders blocked and guarded the entrance to the five stone burial chambers."
+        },
+        {
+          "stage": 3,
+          "question": "Roughly how many ancestors had their bones placed inside West Kennet Long Barrow over many years?",
+          "q": "Roughly how many ancestors had their bones placed inside West Kennet Long Barrow over many years?",
+          "options": [
+            "Only one king",
+            "Three hundred chariot horses",
+            "Five thousand Roman legionaries",
+            "Nearly fifty people"
+          ],
+          "correct": 3,
+          "answer": "Nearly fifty people",
+          "a": "Nearly fifty people",
+          "explanation": "Over generations, farming families carried the bones of nearly fifty men, women, and children inside."
+        },
+        {
+          "stage": 3,
+          "question": "Which gifts did mourners leave beside their ancestors inside West Kennet Long Barrow?",
+          "q": "Which gifts did mourners leave beside their ancestors inside West Kennet Long Barrow?",
+          "options": [
+            "Gold Roman coins and glass bottles",
+            "Bronze shields and iron swords",
+            "Hand-coiled clay bowls, bone pins, and beads",
+            "Wooden wheels and eel traps"
           ],
           "correct": 2,
-          "answer": "A stone-chambered chalk mound where farming families buried and honoured their ancestors",
-          "a": "A stone-chambered chalk mound where farming families buried and honoured their ancestors",
-          "explanation": "Nearly fifty men, women, and children were placed inside West Kennet Long Barrow’s stone chambers alongside clay bowls and beads."
+          "answer": "Hand-coiled clay bowls, bone pins, and beads",
+          "a": "Hand-coiled clay bowls, bone pins, and beads",
+          "explanation": "Families placed hand-coiled clay pottery bowls, bone pins, and stone beads carefully inside the chambers."
+        },
+        {
+          "stage": 3,
+          "question": "What clear message did giant hilltop long barrows send to travellers passing across the landscape?",
+          "q": "What clear message did giant hilltop long barrows send to travellers passing across the landscape?",
+          "options": [
+            "The land was empty and free to take",
+            "A settled farming community belonged proudly to that land",
+            "Everyone had sailed back to mainland Europe",
+            "Hunting mammoths was still the main way of life"
+          ],
+          "correct": 1,
+          "answer": "A settled farming community belonged proudly to that land",
+          "a": "A settled farming community belonged proudly to that land",
+          "explanation": "Towering long barrows honoured ancestors and showed everyone that settled farming families belonged to that land."
         }
       ],
       "video": [
@@ -1399,10 +1715,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this huge outer circle around 3000 BC. **Hinge Question:** Why is an aeroplane photograph from high in the sky so helpful for spotting Stonehenge’s oldest earth ring?",
-          "Source B": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of square chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts! **Hinge Question:** What do thousands of roasted pig and cattle bones at Durrington Walls prove about the people who built Stonehenge?",
-          "Source C": "Stonehenge’s builders had zero iron tools, cranes, or wheeled wagons — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C! **Hinge Question:** How could Neolithic teams shape 25-tonne sarsen boulders and wooden sledges using only stone, bone, and wood?",
-          "Source D": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around huge ditches at Avebury! **Hinge Question:** What does finding another giant circle at Avebury prove about how important sacred stone rings were in Neolithic Britain?"
+          "Source A": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this outer circle around 3000 BC. **Hinge Question:** Why is a photograph taken from high in the sky so helpful for spotting Stonehenge's oldest earth ring?",
+          "Source B": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts. **Hinge Question:** What do thousands of roast pig and cattle bones at Durrington Walls prove about the builders of Stonehenge?",
+          "Source C": "Stonehenge's builders had zero metal tools, cranes, or wheeled carts — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C. **Hinge Question:** How could Neolithic teams move and shape 25-tonne sarsen boulders using only stone, bone, and wood?",
+          "Source D": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around deep ditches at Avebury. **Hinge Question:** What does finding another giant circle at Avebury prove about sacred stone rings in Neolithic Britain?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -1452,7 +1768,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -1537,12 +1853,12 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. 3000–2500 BC: Antler Picks, Chalk Henges & Welsh Bluestones",
-          "text": "<span class=\"para-ref\">[3.1]</span> Nobody built **Stonehenge** in one summer, as families worked on Salisbury Plain for centuries! Around **3000 BC**, workers dug a round chalk ditch and bank called a **henge**. Teams had no metal spades, so they chipped white chalk with **red-deer antler picks**. Workers scooped loose rubble into baskets using flat cattle shoulder bones as shovels. Villagers buried the cremated ashes of respected ancestors inside holes around the chalk ring.<br><br><span class=\"para-ref\">[3.2]</span> Later, around **2500 BC**, builders hauled eighty spotted **bluestones** from the **Preseli Hills** in Wales. Dragging those heavy rocks **140 miles** over hills and rivers took amazing teamwork and plant ropes!",
-          "content": "<span class=\"para-ref\">[3.1]</span> Nobody built **Stonehenge** in one summer, as families worked on Salisbury Plain for centuries! Around **3000 BC**, workers dug a round chalk ditch and bank called a **henge**. Teams had no metal spades, so they chipped white chalk with **red-deer antler picks**. Workers scooped loose rubble into baskets using flat cattle shoulder bones as shovels. Villagers buried the cremated ashes of respected ancestors inside holes around the chalk ring.<br><br><span class=\"para-ref\">[3.2]</span> Later, around **2500 BC**, builders hauled eighty spotted **bluestones** from the **Preseli Hills** in Wales. Dragging those heavy rocks **140 miles** over hills and rivers took amazing teamwork and plant ropes!",
+          "text": "<span class=\"para-ref\">[3.1]</span> Families built **Stonehenge** on Salisbury Plain in stages over many centuries! Around **3000 BC**, workers dug a round chalk ditch and bank called a **henge**. Using **red-deer antler picks** and cattle **bone shovels**, they chipped white chalk and buried cremated **ancestors** inside.<br><br><span class=\"para-ref\">[3.2]</span> Around **2500 BC**, teams hauled eighty spotted **bluestones** from the **Preseli Hills** [preh-SEL-ee] in **Wales**. Moving those heavy stones **140 miles** across hills and rivers took plant ropes, wooden sledges, and huge teamwork!",
+          "content": "<span class=\"para-ref\">[3.1]</span> Families built **Stonehenge** on Salisbury Plain in stages over many centuries! Around **3000 BC**, workers dug a round chalk ditch and bank called a **henge**. Using **red-deer antler picks** and cattle **bone shovels**, they chipped white chalk and buried cremated **ancestors** inside.<br><br><span class=\"para-ref\">[3.2]</span> Around **2500 BC**, teams hauled eighty spotted **bluestones** from the **Preseli Hills** [preh-SEL-ee] in **Wales**. Moving those heavy stones **140 miles** across hills and rivers took plant ropes, wooden sledges, and huge teamwork!",
           "image": "/units/ks2_stone_to_iron_age/assets/stonehenge_wide_circle_view.jpg",
           "image_alt": "Wide view of Stonehenge standing on open grassy Salisbury Plain in Wiltshire",
-          "caption": "Stonehenge rising on Salisbury Plain in Wiltshire — begun around 3000 BC as a circular chalk henge before Welsh bluestones and giant sarsens arrived.",
-          "image_caption": "Stonehenge rising on Salisbury Plain in Wiltshire — begun around 3000 BC as a circular chalk henge before Welsh bluestones and giant sarsens arrived.",
+          "caption": "Stonehenge rising on Salisbury Plain in Wiltshire — begun around 3000 BC as a round chalk henge before Welsh bluestones and giant sarsens arrived.",
+          "image_caption": "Stonehenge rising on Salisbury Plain in Wiltshire — begun around 3000 BC as a round chalk henge before Welsh bluestones and giant sarsens arrived.",
           "isReversed": false,
           "sources": [
             {
@@ -1552,28 +1868,29 @@ window.UNIT_DATA = {
               "type": "visual",
               "src": "/units/ks2_stone_to_iron_age/assets/stonehenge_aerial_henge_ditch_1928.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/stonehenge_aerial_henge_ditch_1928.jpg",
-              "title": "Source A: 1928 Aerial Photograph Showing the Circular Earth Bank and Ditch Around Stonehenge",
-              "caption": "Historic 1928 view from an aeroplane above Salisbury Plain, clearly showing the wide circular earth ditch and chalk bank (\"henge\") dug around 3000 BC.",
+              "title": "Source A: 1928 Aeroplane Photograph of Stonehenge's Circular Chalk Henge",
+              "caption": "Historic 1928 view from high above Salisbury Plain, showing the wide circular ditch and chalk bank (\"henge\") dug around 3000 BC.",
               "author": "Early Archaeological Aerial Photographer (Wiltshire, 1928)",
               "date": "c. 3000 BC earthwork (1928 photograph)",
-              "context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this huge outer circle around 3000 BC.",
-              "source_context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this huge outer circle around 3000 BC.",
+              "context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this outer circle around 3000 BC.",
+              "source_context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this outer circle around 3000 BC. **Hinge Question:** Why is a photograph taken from high in the sky so helpful for spotting Stonehenge's oldest earth ring?",
               "question_badge": "1928 HENGE AERIAL VIEW",
               "question": "Look beyond the centre stones in Source A. What giant outer shape can you spot in the grass?",
-              "model_answer": "From the sky, Source A reveals a wide, neat circular earth ditch and raised chalk bank — called a henge — ringing the whole monument, plus the straight Avenue path leading towards the Heel Stone.",
-              "provenance": "1928 historic aerial photograph of Stonehenge and its circular Neolithic henge ditch and bank on Salisbury Plain, Wiltshire."
+              "model_answer": "From the sky, Source A shows a wide circular ditch and chalk bank — called a henge — ringing the whole site, plus a straight path leading towards the Heel Stone.",
+              "provenance": "1928 aerial photograph of Stonehenge and its circular Neolithic henge ditch on Salisbury Plain, Wiltshire.",
+              "text": "Artefact note: From high in the sky, you can spot the giant outer ring dug into white Wiltshire chalk 500 years before the tall stones arrived!"
             }
           ]
         },
         {
           "act": 2,
           "title": "c. 2500 BC: 25-Tonne Sarsen Trilithons & Durrington Walls Village",
-          "text": "<span class=\"para-ref\">[3.3]</span> Next came giant grey **sarsen** boulders, each weighing **twenty-five tonnes** like four elephants! Workers had no wheels or cranes, so teams pulled stones twenty miles on **wooden sledges** and **rollers**. Craftworkers pounded every hard sarsen block smooth using heavy round stone hammer-balls. Builders tipped tall uprights into deep pits and levered heavy capstones across the top.<br><br><span class=\"para-ref\">[3.4]</span> Each three-stone arch, called a **trilithon**, locked tight with stone peg-and-hole **mortise-and-tenon** joints! Two miles away at **Durrington Walls**, hundreds of builders slept inside warm chalk-walled houses. Huge heaps of pig and cattle bones prove families gathered there for winter feasts. Roasted meat fed hungry workers after frosty days hauling massive stones across Wiltshire.",
-          "content": "<span class=\"para-ref\">[3.3]</span> Next came giant grey **sarsen** boulders, each weighing **twenty-five tonnes** like four elephants! Workers had no wheels or cranes, so teams pulled stones twenty miles on **wooden sledges** and **rollers**. Craftworkers pounded every hard sarsen block smooth using heavy round stone hammer-balls. Builders tipped tall uprights into deep pits and levered heavy capstones across the top.<br><br><span class=\"para-ref\">[3.4]</span> Each three-stone arch, called a **trilithon**, locked tight with stone peg-and-hole **mortise-and-tenon** joints! Two miles away at **Durrington Walls**, hundreds of builders slept inside warm chalk-walled houses. Huge heaps of pig and cattle bones prove families gathered there for winter feasts. Roasted meat fed hungry workers after frosty days hauling massive stones across Wiltshire.",
+          "text": "<span class=\"para-ref\">[3.3]</span> Next came giant grey **sarsen** [SAR-sun] boulders, as heavy as four elephants! Without wheels or cranes, teams dragged these **25-tonne** blocks twenty miles on **wooden sledges** and **rollers**. Masons pounded them smooth with stone balls.<br><br><span class=\"para-ref\">[3.4]</span> Builders raised upright pairs and locked top lintels into three-stone **trilithons** [TRY-lith-onz] using **mortise-and-tenon** peg joints. Two miles away at **Durrington Walls**, workers slept in warm chalk houses and shared huge winter feasts of roast pig and cattle.",
+          "content": "<span class=\"para-ref\">[3.3]</span> Next came giant grey **sarsen** [SAR-sun] boulders, as heavy as four elephants! Without wheels or cranes, teams dragged these **25-tonne** blocks twenty miles on **wooden sledges** and **rollers**. Masons pounded them smooth with stone balls.<br><br><span class=\"para-ref\">[3.4]</span> Builders raised upright pairs and locked top lintels into three-stone **trilithons** [TRY-lith-onz] using **mortise-and-tenon** peg joints. Two miles away at **Durrington Walls**, workers slept in warm chalk houses and shared huge winter feasts of roast pig and cattle.",
           "image": "/units/ks2_stone_to_iron_age/assets/durrington_walls_builders_village.jpg",
           "image_alt": "Reconstructed thatched Neolithic houses representing the Stonehenge builders’ village at Durrington Walls",
-          "caption": "Six rings of Neolithic timber post-markers at Woodhenge beside the giant builders’ settlement of Durrington Walls, just two miles from Stonehenge in Wiltshire (Public Domain).",
-          "image_caption": "Reconstructed Neolithic houses based on Durrington Walls — the bustling builders’ village two miles from Stonehenge where families feasted in winter.",
+          "caption": "Neolithic timber post-markers at Woodhenge beside the builders' village of Durrington Walls, two miles from Stonehenge in Wiltshire.",
+          "image_caption": "Neolithic timber post-markers at Woodhenge beside the builders' village of Durrington Walls, two miles from Stonehenge in Wiltshire.",
           "isReversed": true,
           "sources": [
             {
@@ -1583,16 +1900,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/durrington_neolithic_house_interior.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/durrington_neolithic_house_interior.jpg",
-              "title": "Source B: Inside a Reconstructed Stonehenge Builder's House (Durrington Walls Style, c. 2500 BC)",
-              "caption": "Inside a reconstructed Neolithic house based on chalk floors excavated at Durrington Walls, showing whitewashed walls, woven baskets, wooden beds, and a central hearth.",
+              "title": "Source B: Reconstructed Stonehenge Builder's House (Durrington Walls, c. 2500 BC)",
+              "caption": "Inside a reconstructed Neolithic house based on chalk floors dug up at Durrington Walls, with woven baskets, wooden beds, and a warm hearth.",
               "author": "Experimental Archaeologists (Based on Durrington Walls Excavations)",
               "date": "c. 2500 BC village",
-              "context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of square chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts!",
-              "source_context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of square chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts!",
+              "context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts.",
+              "source_context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts. **Hinge Question:** What do thousands of roast pig and cattle bones at Durrington Walls prove about the builders of Stonehenge?",
               "question_badge": "BUILDERS’ COSY HOUSE",
-              "question": "Inspect the builders’ house in Source B. Where did Stonehenge’s workers live, and how did they celebrate?",
-              "model_answer": "Source B shows Stonehenge’s builders lived two miles away at Durrington Walls inside cosy chalk-walled houses with central fires and woven baskets. Huge heaps of animal bones prove families travelled from across Britain to feast together!",
-              "provenance": "Interior reconstruction of a Late Neolithic house based on c. 2500 BC excavations at Durrington Walls near Stonehenge, Wiltshire."
+              "question": "Inspect the builders' house in Source B. Where did Stonehenge's workers live, and how did they celebrate?",
+              "model_answer": "Source B shows builders lived two miles away at Durrington Walls inside cosy chalk-walled homes with central fires. Huge piles of animal bones prove families feasted together in winter!",
+              "provenance": "Reconstructed Late Neolithic house based on c. 2500 BC excavations at Durrington Walls near Stonehenge, Wiltshire.",
+              "text": "Artefact note: Two miles from Stonehenge, hundreds of cosy square houses stood beside huge heaps of 80,000 roasted pig and cattle bones from winter feasts!"
             },
             {
               "id": "ks2_stone_to_iron_age_l3_src_c",
@@ -1601,28 +1919,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/stonehenge_era_flint_axehead.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/stonehenge_era_flint_axehead.jpg",
-              "title": "Source C: Heavy Neolithic Flint Axehead from the Age of Stonehenge (c. 3000–2500 BC)",
-              "caption": "A heavy Neolithic flint axehead — reminding us that Stonehenge’s builders cut timber sledges and shaped giant stones without metal cranes or wheeled carts.",
+              "title": "Source C: Heavy Neolithic Flint Axehead from the Age of Stonehenge (c. 2500 BC)",
+              "caption": "A heavy Neolithic flint axehead — proving Stonehenge's builders felled trees for wooden sledges without any metal saws or cranes.",
               "author": "Late Neolithic Stone Toolmaker",
               "date": "c. 3000–2500 BC",
-              "context": "Stonehenge’s builders had zero iron tools, cranes, or wheeled wagons — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C!",
-              "source_context": "Stonehenge’s builders had zero iron tools, cranes, or wheeled wagons — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C!",
+              "context": "Stonehenge's builders had zero metal tools, cranes, or wheeled carts — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C.",
+              "source_context": "Stonehenge's builders had zero metal tools, cranes, or wheeled carts — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C. **Hinge Question:** How could Neolithic teams move and shape 25-tonne sarsen boulders using only stone, bone, and wood?",
               "question_badge": "NEOLITHIC FLINT AXE",
               "question": "Why does a stone axe like Source C make building giant Stonehenge even more impressive?",
-              "model_answer": "Source C proves the builders had no metal saws, cranes, or wheels! Instead, they felled hundreds of oak trees for sledges and rollers using flint axes, and pounded hard sarsen boulders smooth using heavy stone hammer-balls.",
-              "provenance": "Heavy Late Neolithic flint axehead from southern Britain (c. 3000–2500 BC, archaeological museum collection)."
+              "model_answer": "Source C reminds us the builders had no metal saws, cranes, or wheels! They cut oak trees for sledges with stone axes and pounded sarsen boulders smooth using round hammer-stones.",
+              "provenance": "Late Neolithic flint axehead from southern Britain (c. 3000–2500 BC).",
+              "text": "Artefact note: Every oak roller and wooden sledge used to drag Stonehenge's giant boulders had to be chopped down using stone axe blades like this one."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. 2500–2200 BC: The Heel Stone & Solstice Sun Alignments",
-          "text": "<span class=\"para-ref\">[3.5]</span> Why did Neolithic communities work without metal tools to raise Stonehenge and nearby **Avebury**? Nobody left written notes, so archaeologists study buried clues and test sky alignments. Outside the main stone circle stands a lone marker boulder called the **Heel Stone**.<br><br><span class=\"para-ref\">[3.6]</span> On **Midsummer** morning, the rising sun shines straight over the Heel Stone into Stonehenge! Better still, on the shortest **Midwinter** day, the setting sun glows between the tallest trilithon. Careful builders had lined the giant stones up with the sun's yearly path. Stonehenge worked as a **solar calendar**, an ancestor shrine, and a sacred healing place!",
-          "content": "<span class=\"para-ref\">[3.5]</span> Why did Neolithic communities work without metal tools to raise Stonehenge and nearby **Avebury**? Nobody left written notes, so archaeologists study buried clues and test sky alignments. Outside the main stone circle stands a lone marker boulder called the **Heel Stone**.<br><br><span class=\"para-ref\">[3.6]</span> On **Midsummer** morning, the rising sun shines straight over the Heel Stone into Stonehenge! Better still, on the shortest **Midwinter** day, the setting sun glows between the tallest trilithon. Careful builders had lined the giant stones up with the sun's yearly path. Stonehenge worked as a **solar calendar**, an ancestor shrine, and a sacred healing place!",
+          "text": "<span class=\"para-ref\">[3.5]</span> Why did **Neolithic** people work without metal to raise **Stonehenge** and nearby **Avebury**? Nobody left written records, so archaeologists study buried clues and sky alignments. Outside the main circle stands a lone boulder called the **Heel Stone**.<br><br><span class=\"para-ref\">[3.6]</span> At the **Midsummer** **solstice**, the rising sun shines straight over the **Heel Stone** into Stonehenge! At the **Midwinter** **solstice**, the setting sun glows between the tallest trilithon. Aligning the stones with the sun created a giant **solar calendar** and ancestor shrine.",
+          "content": "<span class=\"para-ref\">[3.5]</span> Why did **Neolithic** people work without metal to raise **Stonehenge** and nearby **Avebury**? Nobody left written records, so archaeologists study buried clues and sky alignments. Outside the main circle stands a lone boulder called the **Heel Stone**.<br><br><span class=\"para-ref\">[3.6]</span> At the **Midsummer** **solstice**, the rising sun shines straight over the **Heel Stone** into Stonehenge! At the **Midwinter** **solstice**, the setting sun glows between the tallest trilithon. Aligning the stones with the sun created a giant **solar calendar** and ancestor shrine.",
           "image": "/units/ks2_stone_to_iron_age/assets/stonehenge_solstice_heel_stone.jpg",
           "image_alt": "Golden sunlight shining past the Heel Stone and between the standing stones of Stonehenge",
-          "caption": "Sunlight glowing past the Heel Stone at Stonehenge — aligned precisely with Midsummer sunrise and Midwinter sunset.",
-          "image_caption": "Sunlight glowing past the Heel Stone at Stonehenge — aligned precisely with Midsummer sunrise and Midwinter sunset.",
+          "caption": "Sunlight glowing past the Heel Stone at Stonehenge — lined up carefully with Midsummer sunrise and Midwinter sunset.",
+          "image_caption": "Sunlight glowing past the Heel Stone at Stonehenge — lined up carefully with Midsummer sunrise and Midwinter sunset.",
           "isReversed": false,
           "sources": [
             {
@@ -1632,16 +1951,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/avebury_standing_megalith.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/avebury_standing_megalith.jpg",
-              "title": "Source D: Giant Standing Stone at Nearby Avebury Stone Circle in Wiltshire (c. 2850–2500 BC)",
-              "caption": "One of the massive unshaped sarsen standing stones (\"megaliths\") at Avebury in Wiltshire — part of the widest prehistoric stone circle in the world.",
+              "title": "Source D: Giant Standing Stone at Nearby Avebury in Wiltshire (c. 2500 BC)",
+              "caption": "One of the massive sarsen standing stones at Avebury in Wiltshire — part of the widest prehistoric stone circle in the world.",
               "author": "Neolithic Communities of Wiltshire",
               "date": "c. 2850–2500 BC",
-              "context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around huge ditches at Avebury!",
-              "source_context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around huge ditches at Avebury!",
+              "context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around deep ditches at Avebury.",
+              "source_context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around deep ditches at Avebury. **Hinge Question:** What does finding another giant circle at Avebury prove about sacred stone rings in Neolithic Britain?",
               "question_badge": "AVEBURY GIANT STONE",
               "question": "Look at the huge standing stone at Avebury in Source D. What does it show about Neolithic Wiltshire?",
-              "model_answer": "Source D shows Stonehenge was part of a wider sacred landscape across Neolithic Wiltshire. Thousands of farming families co-operated peacefully to haul giant standing stones for seasonal gatherings, ceremonies, and honouring ancestors at both Avebury and Stonehenge.",
-              "provenance": "Giant Neolithic sarsen standing stone at Avebury Henge and Stone Circle, Wiltshire (c. 2850–2500 BC, UNESCO World Heritage Site)."
+              "model_answer": "Source D proves Stonehenge belonged to a wider sacred landscape across Wiltshire. Thousands of farming families worked peacefully together to raise giant stone circles for ceremonies.",
+              "provenance": "Neolithic sarsen standing stone at Avebury Stone Circle, Wiltshire (c. 2850–2500 BC).",
+              "text": "Artefact note: Just twenty miles north of Stonehenge, farming families hauled nearly a hundred huge unshaped boulders to ring an enormous grassy henge at Avebury."
             }
           ]
         }
@@ -1654,16 +1974,17 @@ window.UNIT_DATA = {
           "type": "visual",
           "src": "/units/ks2_stone_to_iron_age/assets/stonehenge_aerial_henge_ditch_1928.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/stonehenge_aerial_henge_ditch_1928.jpg",
-          "title": "Source A: 1928 Aerial Photograph Showing the Circular Earth Bank and Ditch Around Stonehenge",
-          "caption": "Historic 1928 view from an aeroplane above Salisbury Plain, clearly showing the wide circular earth ditch and chalk bank (\"henge\") dug around 3000 BC.",
+          "title": "Source A: 1928 Aeroplane Photograph of Stonehenge's Circular Chalk Henge",
+          "caption": "Historic 1928 view from high above Salisbury Plain, showing the wide circular ditch and chalk bank (\"henge\") dug around 3000 BC.",
           "author": "Early Archaeological Aerial Photographer (Wiltshire, 1928)",
           "date": "c. 3000 BC earthwork (1928 photograph)",
-          "context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this huge outer circle around 3000 BC.",
-          "source_context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this huge outer circle around 3000 BC.",
+          "context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this outer circle around 3000 BC.",
+          "source_context": "Long before the giant stones arrived, Neolithic workers chipped into solid white chalk using red-deer antler picks to dig this outer circle around 3000 BC. **Hinge Question:** Why is a photograph taken from high in the sky so helpful for spotting Stonehenge's oldest earth ring?",
           "question_badge": "1928 HENGE AERIAL VIEW",
           "question": "Look beyond the centre stones in Source A. What giant outer shape can you spot in the grass?",
-          "model_answer": "From the sky, Source A reveals a wide, neat circular earth ditch and raised chalk bank — called a henge — ringing the whole monument, plus the straight Avenue path leading towards the Heel Stone.",
-          "provenance": "1928 historic aerial photograph of Stonehenge and its circular Neolithic henge ditch and bank on Salisbury Plain, Wiltshire."
+          "model_answer": "From the sky, Source A shows a wide circular ditch and chalk bank — called a henge — ringing the whole site, plus a straight path leading towards the Heel Stone.",
+          "provenance": "1928 aerial photograph of Stonehenge and its circular Neolithic henge ditch on Salisbury Plain, Wiltshire.",
+          "text": "Artefact note: From high in the sky, you can spot the giant outer ring dug into white Wiltshire chalk 500 years before the tall stones arrived!"
         },
         {
           "id": "ks2_stone_to_iron_age_l3_src_b",
@@ -1672,16 +1993,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/durrington_neolithic_house_interior.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/durrington_neolithic_house_interior.jpg",
-          "title": "Source B: Inside a Reconstructed Stonehenge Builder's House (Durrington Walls Style, c. 2500 BC)",
-          "caption": "Inside a reconstructed Neolithic house based on chalk floors excavated at Durrington Walls, showing whitewashed walls, woven baskets, wooden beds, and a central hearth.",
+          "title": "Source B: Reconstructed Stonehenge Builder's House (Durrington Walls, c. 2500 BC)",
+          "caption": "Inside a reconstructed Neolithic house based on chalk floors dug up at Durrington Walls, with woven baskets, wooden beds, and a warm hearth.",
           "author": "Experimental Archaeologists (Based on Durrington Walls Excavations)",
           "date": "c. 2500 BC village",
-          "context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of square chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts!",
-          "source_context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of square chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts!",
+          "context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts.",
+          "source_context": "Just two miles from Stonehenge at Durrington Walls, archaeologists uncovered hundreds of chalk house floors alongside 80,000 pig and cattle bones from Midwinter feasts. **Hinge Question:** What do thousands of roast pig and cattle bones at Durrington Walls prove about the builders of Stonehenge?",
           "question_badge": "BUILDERS’ COSY HOUSE",
-          "question": "Inspect the builders’ house in Source B. Where did Stonehenge’s workers live, and how did they celebrate?",
-          "model_answer": "Source B shows Stonehenge’s builders lived two miles away at Durrington Walls inside cosy chalk-walled houses with central fires and woven baskets. Huge heaps of animal bones prove families travelled from across Britain to feast together!",
-          "provenance": "Interior reconstruction of a Late Neolithic house based on c. 2500 BC excavations at Durrington Walls near Stonehenge, Wiltshire."
+          "question": "Inspect the builders' house in Source B. Where did Stonehenge's workers live, and how did they celebrate?",
+          "model_answer": "Source B shows builders lived two miles away at Durrington Walls inside cosy chalk-walled homes with central fires. Huge piles of animal bones prove families feasted together in winter!",
+          "provenance": "Reconstructed Late Neolithic house based on c. 2500 BC excavations at Durrington Walls near Stonehenge, Wiltshire.",
+          "text": "Artefact note: Two miles from Stonehenge, hundreds of cosy square houses stood beside huge heaps of 80,000 roasted pig and cattle bones from winter feasts!"
         },
         {
           "id": "ks2_stone_to_iron_age_l3_src_c",
@@ -1690,16 +2012,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/stonehenge_era_flint_axehead.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/stonehenge_era_flint_axehead.jpg",
-          "title": "Source C: Heavy Neolithic Flint Axehead from the Age of Stonehenge (c. 3000–2500 BC)",
-          "caption": "A heavy Neolithic flint axehead — reminding us that Stonehenge’s builders cut timber sledges and shaped giant stones without metal cranes or wheeled carts.",
+          "title": "Source C: Heavy Neolithic Flint Axehead from the Age of Stonehenge (c. 2500 BC)",
+          "caption": "A heavy Neolithic flint axehead — proving Stonehenge's builders felled trees for wooden sledges without any metal saws or cranes.",
           "author": "Late Neolithic Stone Toolmaker",
           "date": "c. 3000–2500 BC",
-          "context": "Stonehenge’s builders had zero iron tools, cranes, or wheeled wagons — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C!",
-          "source_context": "Stonehenge’s builders had zero iron tools, cranes, or wheeled wagons — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C!",
+          "context": "Stonehenge's builders had zero metal tools, cranes, or wheeled carts — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C.",
+          "source_context": "Stonehenge's builders had zero metal tools, cranes, or wheeled carts — every tree felled for wooden rollers and sledges was chopped with stone axes like Source C. **Hinge Question:** How could Neolithic teams move and shape 25-tonne sarsen boulders using only stone, bone, and wood?",
           "question_badge": "NEOLITHIC FLINT AXE",
           "question": "Why does a stone axe like Source C make building giant Stonehenge even more impressive?",
-          "model_answer": "Source C proves the builders had no metal saws, cranes, or wheels! Instead, they felled hundreds of oak trees for sledges and rollers using flint axes, and pounded hard sarsen boulders smooth using heavy stone hammer-balls.",
-          "provenance": "Heavy Late Neolithic flint axehead from southern Britain (c. 3000–2500 BC, archaeological museum collection)."
+          "model_answer": "Source C reminds us the builders had no metal saws, cranes, or wheels! They cut oak trees for sledges with stone axes and pounded sarsen boulders smooth using round hammer-stones.",
+          "provenance": "Late Neolithic flint axehead from southern Britain (c. 3000–2500 BC).",
+          "text": "Artefact note: Every oak roller and wooden sledge used to drag Stonehenge's giant boulders had to be chopped down using stone axe blades like this one."
         },
         {
           "id": "ks2_stone_to_iron_age_l3_src_d",
@@ -1708,16 +2031,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/avebury_standing_megalith.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/avebury_standing_megalith.jpg",
-          "title": "Source D: Giant Standing Stone at Nearby Avebury Stone Circle in Wiltshire (c. 2850–2500 BC)",
-          "caption": "One of the massive unshaped sarsen standing stones (\"megaliths\") at Avebury in Wiltshire — part of the widest prehistoric stone circle in the world.",
+          "title": "Source D: Giant Standing Stone at Nearby Avebury in Wiltshire (c. 2500 BC)",
+          "caption": "One of the massive sarsen standing stones at Avebury in Wiltshire — part of the widest prehistoric stone circle in the world.",
           "author": "Neolithic Communities of Wiltshire",
           "date": "c. 2850–2500 BC",
-          "context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around huge ditches at Avebury!",
-          "source_context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around huge ditches at Avebury!",
+          "context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around deep ditches at Avebury.",
+          "source_context": "Stonehenge was not alone: twenty miles north in Wiltshire, Neolithic communities raised an even wider ring of giant standing stones around deep ditches at Avebury. **Hinge Question:** What does finding another giant circle at Avebury prove about sacred stone rings in Neolithic Britain?",
           "question_badge": "AVEBURY GIANT STONE",
           "question": "Look at the huge standing stone at Avebury in Source D. What does it show about Neolithic Wiltshire?",
-          "model_answer": "Source D shows Stonehenge was part of a wider sacred landscape across Neolithic Wiltshire. Thousands of farming families co-operated peacefully to haul giant standing stones for seasonal gatherings, ceremonies, and honouring ancestors at both Avebury and Stonehenge.",
-          "provenance": "Giant Neolithic sarsen standing stone at Avebury Henge and Stone Circle, Wiltshire (c. 2850–2500 BC, UNESCO World Heritage Site)."
+          "model_answer": "Source D proves Stonehenge belonged to a wider sacred landscape across Wiltshire. Thousands of farming families worked peacefully together to raise giant stone circles for ceremonies.",
+          "provenance": "Neolithic sarsen standing stone at Avebury Stone Circle, Wiltshire (c. 2850–2500 BC).",
+          "text": "Artefact note: Just twenty miles north of Stonehenge, farming families hauled nearly a hundred huge unshaped boulders to ring an enormous grassy henge at Avebury."
         }
       ],
       "causal_domino_spine": {
@@ -1734,7 +2058,7 @@ window.UNIT_DATA = {
             "trigger": "Workers dug a round chalk henge ditch with red-deer antler picks for ancestor burials, then hauled bluestones 140 miles from Wales.",
             "connective": "Shared sacred work inspired an even bolder plan using giant local boulders.",
             "question": "How did Stonehenge begin around 3000 BC, and where did the bluestones come from?",
-            "prose_hash": "ca10426cc1"
+            "prose_hash": "24ce856541"
           },
           {
             "step": 2,
@@ -1746,7 +2070,7 @@ window.UNIT_DATA = {
             "trigger": "Teams dragged 25-tonne sarsen boulders on wooden rollers, locked trilithons with stone peg joints, and feasted on pork at Durrington Walls.",
             "connective": "Careful builders angled the whole horseshoe and circle towards exact points on the horizon.",
             "question": "How did builders raise 25-tonne sarsen trilithons and live at Durrington Walls?",
-            "prose_hash": "7c56195c50"
+            "prose_hash": "008c4c221d"
           },
           {
             "step": 3,
@@ -1758,7 +2082,7 @@ window.UNIT_DATA = {
             "trigger": "Lined up with the Heel Stone, Stonehenge framed the Midsummer sunrise and Midwinter sunset across the changing farming year.",
             "connective": "Soon, newcomers bringing shiny copper and bronze metal would transform Britain again!",
             "question": "Why did Neolithic people align Stonehenge and the Heel Stone with the sun?",
-            "prose_hash": "bae0a095c2"
+            "prose_hash": "1cf246cd91"
           }
         ]
       },
@@ -1790,7 +2114,7 @@ window.UNIT_DATA = {
           "dates": "c. 3000–2500 BC",
           "para_ref": "[3.1]",
           "paraRef": "[3.1]",
-          "prose_hash": "ca10426cc1"
+          "prose_hash": "24ce856541"
         },
         {
           "step": 2,
@@ -1819,7 +2143,7 @@ window.UNIT_DATA = {
           "dates": "c. 2500 BC",
           "para_ref": "[3.3]",
           "paraRef": "[3.3]",
-          "prose_hash": "7c56195c50"
+          "prose_hash": "008c4c221d"
         },
         {
           "step": 3,
@@ -1848,7 +2172,7 @@ window.UNIT_DATA = {
           "dates": "c. 2500–2200 BC",
           "para_ref": "[3.5]",
           "paraRef": "[3.5]",
-          "prose_hash": "bae0a095c2"
+          "prose_hash": "1cf246cd91"
         }
       ],
       "tasks": [
@@ -1937,78 +2261,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "What natural tools did Neolithic workers use around 3000 BC to dig Stonehenge’s circular chalk ditch?",
-          "q": "What natural tools did Neolithic workers use around 3000 BC to dig Stonehenge’s circular chalk ditch?",
+          "question": "How did Stonehenge first begin on Salisbury Plain around 3000 BC?",
+          "q": "How did Stonehenge first begin on Salisbury Plain around 3000 BC?",
           "options": [
-            "Iron mechanical diggers",
-            "Red-deer antler picks and bone shovels",
-            "Bronze swords and shields",
-            "Wooden oars from Viking longships"
+            "As a circular chalk ditch and bank called a henge",
+            "As a Roman stone fortress with watchtowers",
+            "As a wooden village built on river stilts",
+            "As an underground copper mine"
           ],
-          "correct": 1,
-          "answer": "Red-deer antler picks and bone shovels",
-          "a": "Red-deer antler picks and bone shovels",
-          "explanation": "Hard red-deer antlers worked like strong pickaxes to wedge and chip blocks out of solid Wiltshire chalk."
+          "correct": 0,
+          "answer": "As a circular chalk ditch and bank called a henge",
+          "a": "As a circular chalk ditch and bank called a henge",
+          "explanation": "Around 3000 BC, families dug a round white chalk ditch and bank called a henge long before the giant stones arrived."
         },
         {
           "stage": 1,
-          "question": "From which mountains 140 miles away in Wales did Neolithic teams haul Stonehenge’s eighty spotted bluestones?",
-          "q": "From which mountains 140 miles away in Wales did Neolithic teams haul Stonehenge’s eighty spotted bluestones?",
+          "question": "Which natural tools did Neolithic workers use to chip white chalk for Stonehenge's ditch?",
+          "q": "Which natural tools did Neolithic workers use to chip white chalk for Stonehenge's ditch?",
           "options": [
-            "The Preseli Hills",
-            "The Scottish Highlands",
-            "The Alps",
-            "The Pennines"
-          ],
-          "correct": 0,
-          "answer": "The Preseli Hills",
-          "a": "The Preseli Hills",
-          "explanation": "Geological tests matched Stonehenge’s spotted bluestones directly to rocky outcrops in the Preseli Hills of south-west Wales!"
-        },
-        {
-          "stage": 2,
-          "question": "How did Neolithic carpenters and masons lock horizontal lintel stones onto the top of giant sarsen trilithons?",
-          "q": "How did Neolithic carpenters and masons lock horizontal lintel stones onto the top of giant sarsen trilithons?",
-          "options": [
-            "With iron bolts and steel screws",
-            "With sticky tree resin and mud",
-            "With carved stone peg-and-hole mortise-and-tenon joints (like giant Lego)",
-            "With melted lead poured from buckets"
-          ],
-          "correct": 2,
-          "answer": "With carved stone peg-and-hole mortise-and-tenon joints (like giant Lego)",
-          "a": "With carved stone peg-and-hole mortise-and-tenon joints (like giant Lego)",
-          "explanation": "Raised stone pegs (\"tenons\") on top of each upright fitted snugly into hollowed holes (\"mortises\") underneath the lintel!"
-        },
-        {
-          "stage": 2,
-          "question": "What did archaeologists discover at Durrington Walls, just two miles from Stonehenge?",
-          "q": "What did archaeologists discover at Durrington Walls, just two miles from Stonehenge?",
-          "options": [
-            "A sunken Roman amphitheatre",
-            "An Ice Age mammoth cave",
-            "A medieval stone castle",
-            "Hundreds of Neolithic builders’ houses and thousands of roast pig and cattle feast bones"
+            "Iron spades and steel wheelbarrows",
+            "Wooden oars from oak boats",
+            "Cast bronze socketed axes",
+            "Red-deer antler picks and cattle bone shovels"
           ],
           "correct": 3,
-          "answer": "Hundreds of Neolithic builders’ houses and thousands of roast pig and cattle feast bones",
-          "a": "Hundreds of Neolithic builders’ houses and thousands of roast pig and cattle feast bones",
-          "explanation": "Durrington Walls housed the communities who built Stonehenge and gathered for huge Midwinter feasts."
+          "answer": "Red-deer antler picks and cattle bone shovels",
+          "a": "Red-deer antler picks and cattle bone shovels",
+          "explanation": "Without metal tools, workers wedged chalk loose with tough red-deer antler picks and scooped rubble with cattle shoulder bones."
+        },
+        {
+          "stage": 1,
+          "question": "Who did Neolithic families bury inside holes around Stonehenge's early chalk ring?",
+          "q": "Who did Neolithic families bury inside holes around Stonehenge's early chalk ring?",
+          "options": [
+            "Captured Roman generals",
+            "Woolly mammoth skeletons",
+            "The cremated ashes of respected ancestors",
+            "Boxes of silver coins"
+          ],
+          "correct": 2,
+          "answer": "The cremated ashes of respected ancestors",
+          "a": "The cremated ashes of respected ancestors",
+          "explanation": "Early Stonehenge served as a sacred burial place holding the cremated bones and ashes of respected ancestors."
+        },
+        {
+          "stage": 1,
+          "question": "From which Welsh hills did teams haul eighty spotted bluestones around 2500 BC?",
+          "q": "From which Welsh hills did teams haul eighty spotted bluestones around 2500 BC?",
+          "options": [
+            "The Chiltern Hills",
+            "The Preseli Hills",
+            "The Pennines",
+            "The Scottish Highlands"
+          ],
+          "correct": 1,
+          "answer": "The Preseli Hills",
+          "a": "The Preseli Hills",
+          "explanation": "Scientists matched Stonehenge's eighty spotted bluestones to rocky outcrops in the Preseli Hills of south-west Wales."
+        },
+        {
+          "stage": 1,
+          "question": "Roughly how far did Neolithic teams drag and float the Welsh bluestones to reach Wiltshire?",
+          "q": "Roughly how far did Neolithic teams drag and float the Welsh bluestones to reach Wiltshire?",
+          "options": [
+            "5 miles",
+            "140 miles",
+            "1,000 miles",
+            "20 metres"
+          ],
+          "correct": 1,
+          "answer": "140 miles",
+          "a": "140 miles",
+          "explanation": "Moving eighty heavy bluestones 140 miles from Wales took plant ropes, sledges, rafts, and huge teamwork!"
+        },
+        {
+          "stage": 2,
+          "question": "How heavy was each giant grey sarsen boulder dragged across Wiltshire to Stonehenge?",
+          "q": "How heavy was each giant grey sarsen boulder dragged across Wiltshire to Stonehenge?",
+          "options": [
+            "Around 25 tonnes — as heavy as four elephants",
+            "About as light as a sack of flour",
+            "Half a tonne like a pony",
+            "Over 500 tonnes like a skyscraper"
+          ],
+          "correct": 0,
+          "answer": "Around 25 tonnes — as heavy as four elephants",
+          "a": "Around 25 tonnes — as heavy as four elephants",
+          "explanation": "Each massive grey sarsen block weighed around 25 tonnes, roughly the weight of four adult elephants!"
+        },
+        {
+          "stage": 2,
+          "question": "Because builders had no wheels or cranes, how did they move 25-tonne sarsen stones twenty miles?",
+          "q": "Because builders had no wheels or cranes, how did they move 25-tonne sarsen stones twenty miles?",
+          "options": [
+            "Floated along brick aqueducts",
+            "Carried on the backs of war elephants",
+            "Dropped from hot-air balloons",
+            "On wooden sledges pulled over log rollers"
+          ],
+          "correct": 3,
+          "answer": "On wooden sledges pulled over log rollers",
+          "a": "On wooden sledges pulled over log rollers",
+          "explanation": "Hundreds of people hauled stones on sturdy wooden sledges sliding over smooth timber log rollers."
+        },
+        {
+          "stage": 2,
+          "question": "What do archaeologists call each giant three-stone arch (two tall uprights and one top lintel) at Stonehenge?",
+          "q": "What do archaeologists call each giant three-stone arch (two tall uprights and one top lintel) at Stonehenge?",
+          "options": [
+            "A roundhouse",
+            "A milecastle",
+            "A trilithon",
+            "A lunula"
+          ],
+          "correct": 2,
+          "answer": "A trilithon",
+          "a": "A trilithon",
+          "explanation": "Trilithon means \"three stones\" — two tall upright sarsens topped by a heavy horizontal lintel block."
+        },
+        {
+          "stage": 2,
+          "question": "How did Neolithic masons lock the top lintel stones tightly onto the upright sarsen pillars?",
+          "q": "How did Neolithic masons lock the top lintel stones tightly onto the upright sarsen pillars?",
+          "options": [
+            "With melted iron nails",
+            "With sticky mud and straw",
+            "With carved stone mortise-and-tenon peg-and-hole joints",
+            "With rope tied every winter"
+          ],
+          "correct": 2,
+          "answer": "With carved stone mortise-and-tenon peg-and-hole joints",
+          "a": "With carved stone mortise-and-tenon peg-and-hole joints",
+          "explanation": "Masons shaped raised stone pegs (\"tenons\") on top of uprights that clicked neatly into hollowed holes (\"mortises\") underneath lintels!"
+        },
+        {
+          "stage": 2,
+          "question": "Where did Stonehenge's builders live and feast on roast pork just two miles away?",
+          "q": "Where did Stonehenge's builders live and feast on roast pork just two miles away?",
+          "options": [
+            "Skara Brae",
+            "Durrington Walls",
+            "Star Carr",
+            "Must Farm"
+          ],
+          "correct": 1,
+          "answer": "Durrington Walls",
+          "a": "Durrington Walls",
+          "explanation": "Excavations at Durrington Walls uncovered hundreds of warm chalk houses and 80,000 pig and cattle feast bones."
         },
         {
           "stage": 3,
-          "question": "With which two special sky events do Stonehenge and the Heel Stone line up each year?",
-          "q": "With which two special sky events do Stonehenge and the Heel Stone line up each year?",
+          "question": "Which famous neighbour twenty miles north in Wiltshire has an even wider ring of standing stones?",
+          "q": "Which famous neighbour twenty miles north in Wiltshire has an even wider ring of standing stones?",
           "options": [
-            "Full moons in March and October",
-            "Midsummer sunrise and Midwinter sunset",
-            "Halley’s Comet every 76 years",
-            "High tide in the North Sea"
+            "Avebury",
+            "Happisburgh",
+            "Cheddar Gorge",
+            "Richborough"
+          ],
+          "correct": 0,
+          "answer": "Avebury",
+          "a": "Avebury",
+          "explanation": "Avebury in Wiltshire holds the widest prehistoric stone circle in the world, showing how important stone rings were."
+        },
+        {
+          "stage": 3,
+          "question": "What is the name of the lone marker boulder standing outside Stonehenge's main stone circle?",
+          "q": "What is the name of the lone marker boulder standing outside Stonehenge's main stone circle?",
+          "options": [
+            "The Rosetta Stone",
+            "The Quern Stone",
+            "The Blarney Stone",
+            "The Heel Stone"
+          ],
+          "correct": 3,
+          "answer": "The Heel Stone",
+          "a": "The Heel Stone",
+          "explanation": "The lone Heel Stone stands outside the main circle along the Avenue to mark the solstice sun."
+        },
+        {
+          "stage": 3,
+          "question": "What happens at Stonehenge on Midsummer solstice morning (the longest day of the year)?",
+          "q": "What happens at Stonehenge on Midsummer solstice morning (the longest day of the year)?",
+          "options": [
+            "Snow buries the tallest trilithon",
+            "Total darkness lasts all afternoon",
+            "The River Thames floods the chalk ditch",
+            "The rising sun shines straight over the Heel Stone into the circle"
+          ],
+          "correct": 3,
+          "answer": "The rising sun shines straight over the Heel Stone into the circle",
+          "a": "The rising sun shines straight over the Heel Stone into the circle",
+          "explanation": "At Midsummer sunrise, the sun rises directly over the Heel Stone and shines into the heart of Stonehenge."
+        },
+        {
+          "stage": 3,
+          "question": "What happens at Stonehenge on the shortest day of the year at Midwinter solstice?",
+          "q": "What happens at Stonehenge on the shortest day of the year at Midwinter solstice?",
+          "options": [
+            "High tide fills Salisbury Plain",
+            "Builders take down all eighty bluestones",
+            "The setting sun glows right between the tallest trilithon arch",
+            "The Heel Stone points to the North Star"
+          ],
+          "correct": 2,
+          "answer": "The setting sun glows right between the tallest trilithon arch",
+          "a": "The setting sun glows right between the tallest trilithon arch",
+          "explanation": "Midwinter was a huge feast time when the setting sun framed itself neatly inside the tallest sarsen trilithon."
+        },
+        {
+          "stage": 3,
+          "question": "Because Stonehenge tracked Midsummer and Midwinter so carefully, what do historians think it worked as?",
+          "q": "Because Stonehenge tracked Midsummer and Midwinter so carefully, what do historians think it worked as?",
+          "options": [
+            "A market for selling iron ploughs",
+            "A giant solar calendar, ancestor shrine, and sacred gathering place",
+            "A quarry for digging copper",
+            "A fort for blocking Viking ships"
           ],
           "correct": 1,
-          "answer": "Midsummer sunrise and Midwinter sunset",
-          "a": "Midsummer sunrise and Midwinter sunset",
-          "explanation": "On Midsummer solstice the sun rises over the Heel Stone, and on Midwinter solstice it sets between the tallest trilithon!"
+          "answer": "A giant solar calendar, ancestor shrine, and sacred gathering place",
+          "a": "A giant solar calendar, ancestor shrine, and sacred gathering place",
+          "explanation": "Stonehenge worked as a sacred solar calendar marking farming seasons, honouring ancestors, and uniting families."
         }
       ],
       "video": [
@@ -2064,10 +2538,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. Families placed these patterned pots beside loved ones in round burial mounds. **Hinge Question:** What two major new skills did the Beaker newcomers bring to Britain around 2400 BC?",
-          "Source B": "Bronze smiths mixed nine parts copper with one part tin over roaring charcoal fires until the metal melted into glowing orange liquid. They tied these two matching mould halves tightly together and poured liquid bronze in through the top funnel. **Hinge Question:** Why was casting axes inside a reusable two-piece mould much faster and handier than chipping flint axes?",
-          "Source C": "Bronze Age goldsmiths hammered nuggets of river gold from Ireland, Wales, and Cornwall into wafer-thin, gleaming sheets. Because lunula collars are shaped like a shining crescent moon, archaeologists think rulers wore them during sun and moon ceremonies. **Hinge Question:** What does wearing a shining sheet-gold lunula collar suggest about leaders in Early Bronze Age communities?",
-          "Source D": "Excavated from a giant round burial mound called Bush Barrow less than a mile from Stonehenge, this diamond-shaped gold lozenge lay upon a tall chieftain's chest beside bronze daggers inlaid with thousands of microscopic gold pins. **Hinge Question:** Why did powerful Bronze Age chieftains choose to be buried inside round barrows right beside Stonehenge?"
+          "Source A": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. **Hinge Question:** What two major new skills did the Beaker newcomers bring to Britain around 2400 BC?",
+          "Source B": "Bronze smiths mixed nine parts copper with one part tin over roaring fires and poured the liquid metal into reusable two-piece moulds like this one. **Hinge Question:** Why was casting axes inside a reusable two-piece mould much handier than chipping flint axes?",
+          "Source C": "Bronze Age goldsmiths hammered river gold into gleaming thin sheets shaped like crescent moons called lunulae for ceremonies. **Hinge Question:** What does wearing a shining gold lunula collar suggest about leaders in Bronze Age Britain?",
+          "Source D": "Dug up from a round burial mound called Bush Barrow less than a mile from Stonehenge, this gold diamond lay on a chieftain's chest beside bronze daggers. **Hinge Question:** Why did powerful Bronze Age chieftains choose to be buried in round barrows right beside Stonehenge?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2117,7 +2591,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz to consolidate Key Stage 2 mastery."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz to consolidate Key Stage 2 mastery."
               }
             ]
           }
@@ -2234,12 +2708,12 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Beaker Newcomers & Mining Metal (c. 2500–2000 BC)",
-          "text": "<span class=\"para-ref\">[4.1]</span> Around **2400 BC**, newcomers called the **Beaker people** sailed from Europe across the sea to Britain. Archaeologists named them after their **beakers**, which were bell-shaped clay drinking pots stamped with neat patterns. Even more excitingly, these travellers brought clever **metalworking** skills that ended the Stone Age forever!<br><br><span class=\"para-ref\">[4.2]</span> Early miners crawled down dark tunnels at **Great Orme** in North Wales to dig green **copper** rock. Down in **Cornwall**, workers panned cold streams and dug cliffs to gather heavy **tin** ore. Metalworkers crushed the rock and **smelted** it, melting shiny liquid metal out of stone over roaring fires.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Around **2400 BC**, newcomers called the **Beaker people** sailed from Europe across the sea to Britain. Archaeologists named them after their **beakers**, which were bell-shaped clay drinking pots stamped with neat patterns. Even more excitingly, these travellers brought clever **metalworking** skills that ended the Stone Age forever!<br><br><span class=\"para-ref\">[4.2]</span> Early miners crawled down dark tunnels at **Great Orme** in North Wales to dig green **copper** rock. Down in **Cornwall**, workers panned cold streams and dug cliffs to gather heavy **tin** ore. Metalworkers crushed the rock and **smelted** it, melting shiny liquid metal out of stone over roaring fires.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Around **2400 BC**, newcomers called the **Beaker people** sailed from Europe to Britain. They brought bell-shaped clay **beakers** stamped with comb patterns. Better still, these newcomers brought **metalworking** skills that ended the Stone Age!<br><br><span class=\"para-ref\">[4.2]</span> Miners crawled through tunnels at **Great Orme** [grayt ORM] in North Wales to dig green **copper** rock. In **Cornwall**, workers gathered heavy **tin** ore from streams and cliffs. Smiths crushed the rock and **smelted** it over hot fires until liquid metal ran free.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Around **2400 BC**, newcomers called the **Beaker people** sailed from Europe to Britain. They brought bell-shaped clay **beakers** stamped with comb patterns. Better still, these newcomers brought **metalworking** skills that ended the Stone Age!<br><br><span class=\"para-ref\">[4.2]</span> Miners crawled through tunnels at **Great Orme** [grayt ORM] in North Wales to dig green **copper** rock. In **Cornwall**, workers gathered heavy **tin** ore from streams and cliffs. Smiths crushed the rock and **smelted** it over hot fires until liquid metal ran free.",
           "image": "/units/ks2_stone_to_iron_age/assets/great_orme_bronze_age_copper_mine.jpg",
           "image_alt": "Ancient Bronze Age copper mining rock workings on the limestone headland of Great Orme in North Wales",
-          "caption": "Prehistoric copper mine workings on the Great Orme headland near Llandudno in North Wales, where Bronze Age miners dug miles of tunnels (CC BY-SA 4.0, Llywelyn2000).",
-          "image_caption": "Prehistoric copper mine workings on the Great Orme headland near Llandudno in North Wales, where Bronze Age miners dug miles of tunnels (CC BY-SA 4.0, Llywelyn2000).",
+          "caption": "Prehistoric copper mine tunnels on the Great Orme headland in North Wales, where Bronze Age miners dug green copper rock.",
+          "image_caption": "Prehistoric copper mine tunnels on the Great Orme headland in North Wales, where Bronze Age miners dug green copper rock.",
           "isReversed": false,
           "sources": [
             {
@@ -2249,29 +2723,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
-              "title": "Source A: Decorated Bell Beaker Clay Vessels & Early Bronze Blades (c. 2400–1900 BC)",
-              "caption": "Bronze Age Bell Beaker clay drinking pots stamped with comb patterns alongside early bronze blades, Worcester City Art Gallery & Museum (CC BY-SA 3.0, Rept0n1x).",
+              "title": "Source A: Decorated Bell Beaker Clay Pots & Early Bronze Blades (c. 2400–1900 BC)",
+              "caption": "Bronze Age Bell Beaker clay drinking pots stamped with comb patterns alongside early flat metal blades.",
               "author": "Early Bronze Age Beaker Potters & Smiths in Britain",
               "date": "c. 2400–1900 BC",
-              "context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. Families placed these patterned pots beside loved ones in round burial mounds.",
-              "source_context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. Families placed these patterned pots beside loved ones in round burial mounds.",
+              "context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal.",
+              "source_context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. **Hinge Question:** What two major new skills did the Beaker newcomers bring to Britain around 2400 BC?",
               "question_badge": "BELL BEAKER CLUES",
               "question": "Look closely at Source A. What clues show how skilled Beaker craftworkers were with both clay and metal?",
-              "model_answer": "Source A shows tall, neatly shaped clay beaker pots stamped with careful rows of geometric patterns, alongside flat metal blades. Together they prove Beaker craftworkers could shape fine pottery by hand and cast strong metal tools that began the Bronze Age.",
-              "text": "Museum artefact notes: Hand-coiled Bell Beaker pottery vessels decorated before firing using toothed bone or wooden combs, displayed beside cast copper-alloy blades from Early Bronze Age Britain.",
-              "provenance": "Bronze Age Bell Beaker pottery and bronze implements, Worcester City Art Gallery & Museum (Wikimedia Commons, CC BY-SA 3.0, photographed by Rept0n1x)."
+              "model_answer": "Source A shows tall clay beaker cups stamped with neat rows of patterns beside flat metal blades. They prove Beaker makers could shape fine pottery and cast strong metal tools.",
+              "text": "Artefact note: Potters pressed a toothed bone comb into soft wet clay to stamp neat zig-zag stripes around these bell-shaped drinking cups before baking them.",
+              "provenance": "Early Bronze Age Bell Beaker clay pots and bronze blades from Britain (c. 2400–1900 BC)."
             }
           ]
         },
         {
           "act": 2,
           "title": "Mixing Copper & Tin Into Tough Bronze (c. 2100–1500 BC)",
-          "text": "<span class=\"para-ref\">[4.3]</span> Pure copper bent far too easily when chopping thick oak trees. Clever smiths mixed nine parts **copper** with one part **tin** to create tough golden **bronze**! They poured glowing liquid bronze into **two-piece moulds**, which were hollow stone shapes carved for axe blades. Once cooled, smiths hammered the sharp bronze edge until it gleamed.<br><br><span class=\"para-ref\">[4.4]</span> Unlike chipped flint that snapped forever, a broken bronze axe could be melted down and cast again. Sharp bronze axes cleared dense woodland much faster, opening wide sunny fields for barley and cattle. Communities guarding precious tin and copper routes soon grew wealthy. Bronze tools changed farming across Britain.",
-          "content": "<span class=\"para-ref\">[4.3]</span> Pure copper bent far too easily when chopping thick oak trees. Clever smiths mixed nine parts **copper** with one part **tin** to create tough golden **bronze**! They poured glowing liquid bronze into **two-piece moulds**, which were hollow stone shapes carved for axe blades. Once cooled, smiths hammered the sharp bronze edge until it gleamed.<br><br><span class=\"para-ref\">[4.4]</span> Unlike chipped flint that snapped forever, a broken bronze axe could be melted down and cast again. Sharp bronze axes cleared dense woodland much faster, opening wide sunny fields for barley and cattle. Communities guarding precious tin and copper routes soon grew wealthy. Bronze tools changed farming across Britain.",
+          "text": "<span class=\"para-ref\">[4.3]</span> Pure **copper** bent too easily against hard oak trees. Clever smiths mixed nine parts **copper** with one part **tin** to make tough golden **bronze**! They poured hot liquid bronze into hollow stone **two-piece moulds** to cast sharp axe blades.<br><br><span class=\"para-ref\">[4.4]</span> Chipped **flint** snapped forever, whereas broken bronze axes could be melted down and cast again. Strong bronze axes cleared thick **woodland** much faster for sunny crop fields. Families guarding copper and tin trade routes soon grew rich.",
+          "content": "<span class=\"para-ref\">[4.3]</span> Pure **copper** bent too easily against hard oak trees. Clever smiths mixed nine parts **copper** with one part **tin** to make tough golden **bronze**! They poured hot liquid bronze into hollow stone **two-piece moulds** to cast sharp axe blades.<br><br><span class=\"para-ref\">[4.4]</span> Chipped **flint** snapped forever, whereas broken bronze axes could be melted down and cast again. Strong bronze axes cleared thick **woodland** much faster for sunny crop fields. Families guarding copper and tin trade routes soon grew rich.",
           "image": "/units/ks2_stone_to_iron_age/assets/stone_bronze_iron_tools_comparison_ks2.png",
           "image_alt": "Clear educational comparison diagram showing Stone Age flint tools, Bronze Age cast socketed axes, and Iron Age forged blades",
-          "caption": "How prehistoric toolmaking advanced from chipped and polished Stone Age flint to cast Bronze Age axes and hammered Iron Age tools (The History Revision Hub Illustration Studio).",
-          "image_caption": "How prehistoric toolmaking advanced from chipped and polished Stone Age flint to cast Bronze Age axes and hammered Iron Age tools (The History Revision Hub Illustration Studio).",
+          "caption": "How prehistoric toolmaking advanced from chipped and polished Stone Age flint to cast Bronze Age axes and hammered Iron Age tools.",
+          "image_caption": "How prehistoric toolmaking advanced from chipped and polished Stone Age flint to cast Bronze Age axes and hammered Iron Age tools.",
           "isReversed": true,
           "sources": [
             {
@@ -2281,29 +2755,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/bronze_age_two_piece_axe_mould.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/bronze_age_two_piece_axe_mould.jpg",
-              "title": "Source B: Two-Piece Bronze Mould for Casting Socketed Axes (Portable Antiquities Scheme)",
-              "caption": "Matching halves of a Bronze Age two-piece casting mould used to pour liquid bronze into hollow socketed axe heads (CC BY-SA 4.0, Leicestershire County Council / Wendy Scott).",
+              "title": "Source B: Two-Piece Mould for Casting Bronze Axes (c. 1000 BC)",
+              "caption": "Matching halves of a Bronze Age two-piece mould used to pour glowing liquid bronze into hollow axe heads.",
               "author": "Bronze Age Master Founder (Metalworker)",
               "date": "c. 1200–800 BC",
-              "context": "Carved around 3,000 years ago and recorded by the Portable Antiquities Scheme, these two matching stone halves come from a Bronze Age metalworker's workshop.",
-              "source_context": "Carved around 3,000 years ago and recorded by the Portable Antiquities Scheme, these two matching stone halves come from a Bronze Age metalworker's workshop.",
+              "context": "Bronze smiths mixed nine parts copper with one part tin over roaring fires and poured the liquid metal into reusable two-piece moulds like this one.",
+              "source_context": "Bronze smiths mixed nine parts copper with one part tin over roaring fires and poured the liquid metal into reusable two-piece moulds like this one. **Hinge Question:** Why was casting axes inside a reusable two-piece mould much handier than chipping flint axes?",
               "question_badge": "POURING LIQUID BRONZE",
               "question": "Inspect the two matching halves in Source B. How did smiths use this mould to make bronze axes?",
-              "model_answer": "Bronze smiths tied the two carved halves of Source B tightly together and poured glowing liquid bronze into the hollow space inside. Once the metal cooled and hardened, they opened the mould, took out a sharp axe head, and reused the same mould again and again!",
-              "text": "Archaeological find record (FindID 403105): Two matching halves of a copper-alloy casting mould with side loops for binding together while pouring molten bronze into a hollow socketed axe shape.",
-              "provenance": "Bronze Age two-piece axe casting mould, Portable Antiquities Scheme FindID 403105 (Wikimedia Commons, CC BY-SA 4.0, Leicestershire County Council / Wendy Scott)."
+              "model_answer": "Smiths tied the two carved halves tightly together and poured hot liquid bronze inside. Once cool, they opened the mould, lifted out a sharp axe head, and used the mould again!",
+              "text": "Artefact note: Smiths tied these two matching halves together like a sandwich and poured glowing orange liquid bronze into the top hole to make a shiny axe!",
+              "provenance": "Bronze Age two-piece axe casting mould found in Leicestershire (c. 1000 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "Golden Capes & The Amesbury Archer (c. 2300–1500 BC)",
-          "text": "<span class=\"para-ref\">[4.5]</span> Master craftworkers also beat thin sheets of Welsh and Irish **gold** into dazzling treasures for chieftains. In Wales, one leader wore the **Mold Gold Cape**, hammered from a single nugget of gold! Other rulers wore crescent-moon gold neck collars called **lunulae** and diamond breastplates at **Bush Barrow**.<br><br><span class=\"para-ref\">[4.6]</span> Near **Stonehenge**, archaeologists found the **Amesbury Archer**, buried around **2300 BC** with over one hundred grave goods. His grave held five clay **beakers**, copper knives, flint arrowheads, stone wrist-guards, and Britain's oldest gold hair rings. Tests on his **tooth enamel** proved he grew up near the snowy **Alps**! Clearly, skilled travellers now linked Britain tightly to Europe.",
-          "content": "<span class=\"para-ref\">[4.5]</span> Master craftworkers also beat thin sheets of Welsh and Irish **gold** into dazzling treasures for chieftains. In Wales, one leader wore the **Mold Gold Cape**, hammered from a single nugget of gold! Other rulers wore crescent-moon gold neck collars called **lunulae** and diamond breastplates at **Bush Barrow**.<br><br><span class=\"para-ref\">[4.6]</span> Near **Stonehenge**, archaeologists found the **Amesbury Archer**, buried around **2300 BC** with over one hundred grave goods. His grave held five clay **beakers**, copper knives, flint arrowheads, stone wrist-guards, and Britain's oldest gold hair rings. Tests on his **tooth enamel** proved he grew up near the snowy **Alps**! Clearly, skilled travellers now linked Britain tightly to Europe.",
+          "text": "<span class=\"para-ref\">[4.5]</span> Master smiths hammered thin **gold** sheets into dazzling treasures for Bronze Age leaders. One Welsh ruler wore the **Mold Gold Cape**, while others wore crescent-moon **lunulae** [LOO-nyoo-lee] collars and diamond gold plates at **Bush Barrow**.<br><br><span class=\"para-ref\">[4.6]</span> Near **Stonehenge**, diggers found the **Amesbury Archer** [AYMZ-bree AR-cher], buried around **2300 BC** with over a hundred items. His grave held five clay **beakers**, copper knives, arrowheads, and gold hair rings. Chemical tests on his **tooth enamel** proved he grew up near the snowy **Alps**!",
+          "content": "<span class=\"para-ref\">[4.5]</span> Master smiths hammered thin **gold** sheets into dazzling treasures for Bronze Age leaders. One Welsh ruler wore the **Mold Gold Cape**, while others wore crescent-moon **lunulae** [LOO-nyoo-lee] collars and diamond gold plates at **Bush Barrow**.<br><br><span class=\"para-ref\">[4.6]</span> Near **Stonehenge**, diggers found the **Amesbury Archer** [AYMZ-bree AR-cher], buried around **2300 BC** with over a hundred items. His grave held five clay **beakers**, copper knives, arrowheads, and gold hair rings. Chemical tests on his **tooth enamel** proved he grew up near the snowy **Alps**!",
           "image": "/units/ks2_stone_to_iron_age/assets/amesbury_archer_skeleton_grave.jpg",
           "image_alt": "Skeleton and rich grave goods of the Early Bronze Age Amesbury Archer displayed at Salisbury Museum",
-          "caption": "Burial of the Amesbury Archer (c. 2300 BC) found three miles from Stonehenge with five Beaker pots, copper knives, arrowheads, and gold hair rings (CC BY 4.0, TobyEditor).",
-          "image_caption": "Burial of the Amesbury Archer (c. 2300 BC) found three miles from Stonehenge with five Beaker pots, copper knives, arrowheads, and gold hair rings (CC BY 4.0, TobyEditor).",
+          "caption": "Burial of the Amesbury Archer (c. 2300 BC) found three miles from Stonehenge with five Beaker pots, copper knives, arrowheads, and gold hair rings.",
+          "image_caption": "Burial of the Amesbury Archer (c. 2300 BC) found three miles from Stonehenge with five Beaker pots, copper knives, arrowheads, and gold hair rings.",
           "isReversed": false,
           "sources": [
             {
@@ -2313,17 +2787,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/bronze_age_gold_lunula_collar.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/bronze_age_gold_lunula_collar.jpg",
-              "title": "Source C: Hammered Sheet-Gold Crescent Neck Collar (Lunula, c. 2200–2000 BC)",
-              "caption": "Early Bronze Age crescent-moon neck collar (lunula) beaten from thin sheet gold and etched with fine geometric lines (CC BY 3.0, Michael Gäbler).",
+              "title": "Source C: Hammered Gold Crescent Neck Collar (Lunula, c. 2100 BC)",
+              "caption": "Early Bronze Age crescent-moon neck collar (lunula) beaten from thin sheet gold and traced with tiny triangles.",
               "author": "Early Bronze Age Goldworker",
               "date": "c. 2200–2000 BC",
-              "context": "Bronze Age goldsmiths hammered nuggets of river gold from Ireland, Wales, and Cornwall into wafer-thin, gleaming sheets. Because lunula collars are shaped like a shining crescent moon, archaeologists think rulers wore them during sun and moon ceremonies.",
-              "source_context": "Bronze Age goldsmiths hammered nuggets of river gold from Ireland, Wales, and Cornwall into wafer-thin, gleaming sheets. Because lunula collars are shaped like a shining crescent moon, archaeologists think rulers wore them during sun and moon ceremonies.",
+              "context": "Bronze Age goldsmiths hammered river gold into gleaming thin sheets shaped like crescent moons called lunulae for ceremonies.",
+              "source_context": "Bronze Age goldsmiths hammered river gold into gleaming thin sheets shaped like crescent moons called lunulae for ceremonies. **Hinge Question:** What does wearing a shining gold lunula collar suggest about leaders in Bronze Age Britain?",
               "question_badge": "CRESCENT MOON GOLD",
               "question": "Look at the shining gold collar in Source C. Why did Bronze Age leaders wear treasures like this?",
-              "model_answer": "Source C is beaten from gleaming sheet gold into a wide crescent-moon collar etched with delicate lines. Because gold was rare and never rusted, wearing a bright lunula showed everyone that the wearer was a wealthy, powerful leader during special ceremonies.",
-              "text": "Museum artefact description: Crescent-shaped Early Bronze Age gold lunula collar hammered from a thin gold sheet and incised around the edges with tiny triangles and lines.",
-              "provenance": "Early Bronze Age sheet-gold lunula neck collar (Wikimedia Commons, CC BY 3.0, photographed by Michael Gäbler)."
+              "model_answer": "Source C is beaten from gleaming gold into a crescent-moon collar with neat patterns. Because gold was rare and never rusted, wearing it showed everyone a powerful, respected leader.",
+              "text": "Artefact note: A goldsmith hammered river gold thinner than cardboard to curve like a shining crescent moon around an important leader's shoulders.",
+              "provenance": "Early Bronze Age hammered sheet-gold lunula neck collar (c. 2200–2000 BC)."
             },
             {
               "id": "ks2_stone_to_iron_age_l4_src_d",
@@ -2332,17 +2806,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/bush_barrow_gold_lozenge.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/bush_barrow_gold_lozenge.jpg",
-              "title": "Source D: Decorated Gold Breastplate Lozenge from Bush Barrow near Stonehenge (c. 1900 BC)",
-              "caption": "Diamond-shaped sheet-gold breastplate (lozenge) found on the chest of a Bronze Age chieftain buried at Bush Barrow within sight of Stonehenge, Wiltshire Museum (CC0, Pasicles).",
+              "title": "Source D: Gold Breastplate Lozenge from Bush Barrow near Stonehenge (c. 1900 BC)",
+              "caption": "Diamond-shaped gold chest plate buried with a Bronze Age chieftain inside Bush Barrow within sight of Stonehenge.",
               "author": "Wessex Culture Master Goldsmith",
               "date": "c. 1900 BC",
-              "context": "Excavated from a giant round burial mound called Bush Barrow less than a mile from Stonehenge, this diamond-shaped gold lozenge lay upon a tall chieftain's chest beside bronze daggers inlaid with thousands of microscopic gold pins.",
-              "source_context": "Excavated from a giant round burial mound called Bush Barrow less than a mile from Stonehenge, this diamond-shaped gold lozenge lay upon a tall chieftain's chest beside bronze daggers inlaid with thousands of microscopic gold pins.",
+              "context": "Dug up from a round burial mound called Bush Barrow less than a mile from Stonehenge, this gold diamond lay on a chieftain's chest beside bronze daggers.",
+              "source_context": "Dug up from a round burial mound called Bush Barrow less than a mile from Stonehenge, this gold diamond lay on a chieftain's chest beside bronze daggers. **Hinge Question:** Why did powerful Bronze Age chieftains choose to be buried in round barrows right beside Stonehenge?",
               "question_badge": "CHIEFTAIN OF STONEHENGE",
               "question": "Study Source D from Bush Barrow near Stonehenge. What does this burial prove about Bronze Age society?",
-              "model_answer": "Source D is a finely stamped diamond-shaped gold chest plate buried with a powerful man right beside Stonehenge. Unlike earlier Stone Age tombs shared by whole communities, rich individual graves like Bush Barrow prove Bronze Age Britain now had wealthy chieftains at the top of society.",
-              "text": "Wiltshire Museum Devizes record: Sheet-gold diamond lozenge embossed with four concentric bands of zig-zag and geometric patterns, excavated in 1808 from Bush Barrow (Wilsford G5) on Salisbury Plain.",
-              "provenance": "Gold lozenge from Bush Barrow near Stonehenge, Wiltshire Museum, Devizes (Wikimedia Commons, CC0 1.0 Public Domain, photographed by Pasicles)."
+              "model_answer": "Source D is a gleaming gold chest plate buried with one powerful man beside Stonehenge. Unlike shared Neolithic tombs, single rich graves show Bronze Age Britain now had wealthy chieftains.",
+              "text": "Artefact note: Buried on a tall chieftain's chest right beside Stonehenge, this shining gold diamond was pressed with neat zig-zag lines using a smooth bone tool.",
+              "provenance": "Sheet-gold diamond breastplate from Bush Barrow near Stonehenge, Wiltshire (c. 1900 BC)."
             }
           ]
         }
@@ -2355,17 +2829,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
-          "title": "Source A: Decorated Bell Beaker Clay Vessels & Early Bronze Blades (c. 2400–1900 BC)",
-          "caption": "Bronze Age Bell Beaker clay drinking pots stamped with comb patterns alongside early bronze blades, Worcester City Art Gallery & Museum (CC BY-SA 3.0, Rept0n1x).",
+          "title": "Source A: Decorated Bell Beaker Clay Pots & Early Bronze Blades (c. 2400–1900 BC)",
+          "caption": "Bronze Age Bell Beaker clay drinking pots stamped with comb patterns alongside early flat metal blades.",
           "author": "Early Bronze Age Beaker Potters & Smiths in Britain",
           "date": "c. 2400–1900 BC",
-          "context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. Families placed these patterned pots beside loved ones in round burial mounds.",
-          "source_context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. Families placed these patterned pots beside loved ones in round burial mounds.",
+          "context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal.",
+          "source_context": "Around 2400 BC, newcomers from Europe arrived in Britain bringing bell-shaped clay drinking pots called beakers and the secret of working metal. **Hinge Question:** What two major new skills did the Beaker newcomers bring to Britain around 2400 BC?",
           "question_badge": "BELL BEAKER CLUES",
           "question": "Look closely at Source A. What clues show how skilled Beaker craftworkers were with both clay and metal?",
-          "model_answer": "Source A shows tall, neatly shaped clay beaker pots stamped with careful rows of geometric patterns, alongside flat metal blades. Together they prove Beaker craftworkers could shape fine pottery by hand and cast strong metal tools that began the Bronze Age.",
-          "text": "Museum artefact notes: Hand-coiled Bell Beaker pottery vessels decorated before firing using toothed bone or wooden combs, displayed beside cast copper-alloy blades from Early Bronze Age Britain.",
-          "provenance": "Bronze Age Bell Beaker pottery and bronze implements, Worcester City Art Gallery & Museum (Wikimedia Commons, CC BY-SA 3.0, photographed by Rept0n1x)."
+          "model_answer": "Source A shows tall clay beaker cups stamped with neat rows of patterns beside flat metal blades. They prove Beaker makers could shape fine pottery and cast strong metal tools.",
+          "text": "Artefact note: Potters pressed a toothed bone comb into soft wet clay to stamp neat zig-zag stripes around these bell-shaped drinking cups before baking them.",
+          "provenance": "Early Bronze Age Bell Beaker clay pots and bronze blades from Britain (c. 2400–1900 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l4_src_b",
@@ -2374,17 +2848,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/bronze_age_two_piece_axe_mould.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/bronze_age_two_piece_axe_mould.jpg",
-          "title": "Source B: Two-Piece Bronze Mould for Casting Socketed Axes (Portable Antiquities Scheme)",
-          "caption": "Matching halves of a Bronze Age two-piece casting mould used to pour liquid bronze into hollow socketed axe heads (CC BY-SA 4.0, Leicestershire County Council / Wendy Scott).",
+          "title": "Source B: Two-Piece Mould for Casting Bronze Axes (c. 1000 BC)",
+          "caption": "Matching halves of a Bronze Age two-piece mould used to pour glowing liquid bronze into hollow axe heads.",
           "author": "Bronze Age Master Founder (Metalworker)",
           "date": "c. 1200–800 BC",
-          "context": "Carved around 3,000 years ago and recorded by the Portable Antiquities Scheme, these two matching stone halves come from a Bronze Age metalworker's workshop.",
-          "source_context": "Carved around 3,000 years ago and recorded by the Portable Antiquities Scheme, these two matching stone halves come from a Bronze Age metalworker's workshop.",
+          "context": "Bronze smiths mixed nine parts copper with one part tin over roaring fires and poured the liquid metal into reusable two-piece moulds like this one.",
+          "source_context": "Bronze smiths mixed nine parts copper with one part tin over roaring fires and poured the liquid metal into reusable two-piece moulds like this one. **Hinge Question:** Why was casting axes inside a reusable two-piece mould much handier than chipping flint axes?",
           "question_badge": "POURING LIQUID BRONZE",
           "question": "Inspect the two matching halves in Source B. How did smiths use this mould to make bronze axes?",
-          "model_answer": "Bronze smiths tied the two carved halves of Source B tightly together and poured glowing liquid bronze into the hollow space inside. Once the metal cooled and hardened, they opened the mould, took out a sharp axe head, and reused the same mould again and again!",
-          "text": "Archaeological find record (FindID 403105): Two matching halves of a copper-alloy casting mould with side loops for binding together while pouring molten bronze into a hollow socketed axe shape.",
-          "provenance": "Bronze Age two-piece axe casting mould, Portable Antiquities Scheme FindID 403105 (Wikimedia Commons, CC BY-SA 4.0, Leicestershire County Council / Wendy Scott)."
+          "model_answer": "Smiths tied the two carved halves tightly together and poured hot liquid bronze inside. Once cool, they opened the mould, lifted out a sharp axe head, and used the mould again!",
+          "text": "Artefact note: Smiths tied these two matching halves together like a sandwich and poured glowing orange liquid bronze into the top hole to make a shiny axe!",
+          "provenance": "Bronze Age two-piece axe casting mould found in Leicestershire (c. 1000 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l4_src_c",
@@ -2393,17 +2867,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/bronze_age_gold_lunula_collar.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/bronze_age_gold_lunula_collar.jpg",
-          "title": "Source C: Hammered Sheet-Gold Crescent Neck Collar (Lunula, c. 2200–2000 BC)",
-          "caption": "Early Bronze Age crescent-moon neck collar (lunula) beaten from thin sheet gold and etched with fine geometric lines (CC BY 3.0, Michael Gäbler).",
+          "title": "Source C: Hammered Gold Crescent Neck Collar (Lunula, c. 2100 BC)",
+          "caption": "Early Bronze Age crescent-moon neck collar (lunula) beaten from thin sheet gold and traced with tiny triangles.",
           "author": "Early Bronze Age Goldworker",
           "date": "c. 2200–2000 BC",
-          "context": "Bronze Age goldsmiths hammered nuggets of river gold from Ireland, Wales, and Cornwall into wafer-thin, gleaming sheets. Because lunula collars are shaped like a shining crescent moon, archaeologists think rulers wore them during sun and moon ceremonies.",
-          "source_context": "Bronze Age goldsmiths hammered nuggets of river gold from Ireland, Wales, and Cornwall into wafer-thin, gleaming sheets. Because lunula collars are shaped like a shining crescent moon, archaeologists think rulers wore them during sun and moon ceremonies.",
+          "context": "Bronze Age goldsmiths hammered river gold into gleaming thin sheets shaped like crescent moons called lunulae for ceremonies.",
+          "source_context": "Bronze Age goldsmiths hammered river gold into gleaming thin sheets shaped like crescent moons called lunulae for ceremonies. **Hinge Question:** What does wearing a shining gold lunula collar suggest about leaders in Bronze Age Britain?",
           "question_badge": "CRESCENT MOON GOLD",
           "question": "Look at the shining gold collar in Source C. Why did Bronze Age leaders wear treasures like this?",
-          "model_answer": "Source C is beaten from gleaming sheet gold into a wide crescent-moon collar etched with delicate lines. Because gold was rare and never rusted, wearing a bright lunula showed everyone that the wearer was a wealthy, powerful leader during special ceremonies.",
-          "text": "Museum artefact description: Crescent-shaped Early Bronze Age gold lunula collar hammered from a thin gold sheet and incised around the edges with tiny triangles and lines.",
-          "provenance": "Early Bronze Age sheet-gold lunula neck collar (Wikimedia Commons, CC BY 3.0, photographed by Michael Gäbler)."
+          "model_answer": "Source C is beaten from gleaming gold into a crescent-moon collar with neat patterns. Because gold was rare and never rusted, wearing it showed everyone a powerful, respected leader.",
+          "text": "Artefact note: A goldsmith hammered river gold thinner than cardboard to curve like a shining crescent moon around an important leader's shoulders.",
+          "provenance": "Early Bronze Age hammered sheet-gold lunula neck collar (c. 2200–2000 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l4_src_d",
@@ -2412,17 +2886,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/bush_barrow_gold_lozenge.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/bush_barrow_gold_lozenge.jpg",
-          "title": "Source D: Decorated Gold Breastplate Lozenge from Bush Barrow near Stonehenge (c. 1900 BC)",
-          "caption": "Diamond-shaped sheet-gold breastplate (lozenge) found on the chest of a Bronze Age chieftain buried at Bush Barrow within sight of Stonehenge, Wiltshire Museum (CC0, Pasicles).",
+          "title": "Source D: Gold Breastplate Lozenge from Bush Barrow near Stonehenge (c. 1900 BC)",
+          "caption": "Diamond-shaped gold chest plate buried with a Bronze Age chieftain inside Bush Barrow within sight of Stonehenge.",
           "author": "Wessex Culture Master Goldsmith",
           "date": "c. 1900 BC",
-          "context": "Excavated from a giant round burial mound called Bush Barrow less than a mile from Stonehenge, this diamond-shaped gold lozenge lay upon a tall chieftain's chest beside bronze daggers inlaid with thousands of microscopic gold pins.",
-          "source_context": "Excavated from a giant round burial mound called Bush Barrow less than a mile from Stonehenge, this diamond-shaped gold lozenge lay upon a tall chieftain's chest beside bronze daggers inlaid with thousands of microscopic gold pins.",
+          "context": "Dug up from a round burial mound called Bush Barrow less than a mile from Stonehenge, this gold diamond lay on a chieftain's chest beside bronze daggers.",
+          "source_context": "Dug up from a round burial mound called Bush Barrow less than a mile from Stonehenge, this gold diamond lay on a chieftain's chest beside bronze daggers. **Hinge Question:** Why did powerful Bronze Age chieftains choose to be buried in round barrows right beside Stonehenge?",
           "question_badge": "CHIEFTAIN OF STONEHENGE",
           "question": "Study Source D from Bush Barrow near Stonehenge. What does this burial prove about Bronze Age society?",
-          "model_answer": "Source D is a finely stamped diamond-shaped gold chest plate buried with a powerful man right beside Stonehenge. Unlike earlier Stone Age tombs shared by whole communities, rich individual graves like Bush Barrow prove Bronze Age Britain now had wealthy chieftains at the top of society.",
-          "text": "Wiltshire Museum Devizes record: Sheet-gold diamond lozenge embossed with four concentric bands of zig-zag and geometric patterns, excavated in 1808 from Bush Barrow (Wilsford G5) on Salisbury Plain.",
-          "provenance": "Gold lozenge from Bush Barrow near Stonehenge, Wiltshire Museum, Devizes (Wikimedia Commons, CC0 1.0 Public Domain, photographed by Pasicles)."
+          "model_answer": "Source D is a gleaming gold chest plate buried with one powerful man beside Stonehenge. Unlike shared Neolithic tombs, single rich graves show Bronze Age Britain now had wealthy chieftains.",
+          "text": "Artefact note: Buried on a tall chieftain's chest right beside Stonehenge, this shining gold diamond was pressed with neat zig-zag lines using a smooth bone tool.",
+          "provenance": "Sheet-gold diamond breastplate from Bush Barrow near Stonehenge, Wiltshire (c. 1900 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -2439,7 +2913,7 @@ window.UNIT_DATA = {
             "trigger": "Beaker newcomers arrived from Europe with bell-shaped clay pots, while miners dug copper at Great Orme and tin in Cornwall to smelt over fires.",
             "connective": "Gave smiths the two raw metals needed to invent a much harder material.",
             "question": "How did newcomers and miners start metalworking in Britain around 2400 BC?",
-            "prose_hash": "cd2f551756"
+            "prose_hash": "10def65659"
           },
           {
             "step": 2,
@@ -2451,7 +2925,7 @@ window.UNIT_DATA = {
             "trigger": "Smiths mixed nine parts copper with one part tin and poured liquid bronze into reusable two-piece axe moulds.",
             "connective": "Cleared forests faster for farms and enriched families guarding metal trade routes.",
             "question": "Why were cast bronze axes better than copper or chipped flint?",
-            "prose_hash": "f03b7c597b"
+            "prose_hash": "66eae15ae5"
           },
           {
             "step": 3,
@@ -2463,7 +2937,7 @@ window.UNIT_DATA = {
             "trigger": "Chieftains wore the Mold Gold Cape and Bush Barrow gold, while tooth enamel proved the Amesbury Archer grew up near the Alps.",
             "connective": "Showed Britain now had wealthy leaders connected across mainland Europe.",
             "question": "What do gold treasures and the Archer near Stonehenge reveal?",
-            "prose_hash": "3c09d2f985"
+            "prose_hash": "07eff83caa"
           }
         ]
       },
@@ -2495,7 +2969,7 @@ window.UNIT_DATA = {
           "dates": "c. 2500–2000 BC",
           "para_ref": "[4.1]",
           "paraRef": "[4.1]",
-          "prose_hash": "cd2f551756"
+          "prose_hash": "10def65659"
         },
         {
           "step": 2,
@@ -2524,7 +2998,7 @@ window.UNIT_DATA = {
           "dates": "c. 2100–1500 BC",
           "para_ref": "[4.3]",
           "paraRef": "[4.3]",
-          "prose_hash": "f03b7c597b"
+          "prose_hash": "66eae15ae5"
         },
         {
           "step": 3,
@@ -2553,7 +3027,7 @@ window.UNIT_DATA = {
           "dates": "c. 2300–1500 BC",
           "para_ref": "[4.5]",
           "paraRef": "[4.5]",
-          "prose_hash": "3c09d2f985"
+          "prose_hash": "07eff83caa"
         }
       ],
       "tasks": [
@@ -2642,78 +3116,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Why do archaeologists call the newcomers who arrived in Britain from Europe around 2400 BC the \"Beaker people\"?",
-          "q": "Why do archaeologists call the newcomers who arrived in Britain from Europe around 2400 BC the \"Beaker people\"?",
+          "question": "Why did archaeologists name the newcomers of around 2400 BC the \"Beaker people\"?",
+          "q": "Why did archaeologists name the newcomers of around 2400 BC the \"Beaker people\"?",
           "options": [
-            "They brought tall, bell-shaped clay drinking pots stamped with neat patterns",
-            "They built glass science beakers inside laboratories",
-            "They lived inside giant stone castles with glass windows",
-            "They wrote books in Latin about making tea"
+            "They brought bell-shaped clay drinking pots stamped with comb patterns",
+            "They drank from clear Roman glass beakers",
+            "They wore tall iron helmets shaped like cups",
+            "They carved wooden boats out of birch bark"
           ],
           "correct": 0,
-          "answer": "They brought tall, bell-shaped clay drinking pots stamped with neat patterns",
-          "a": "They brought tall, bell-shaped clay drinking pots stamped with neat patterns",
-          "explanation": "Archaeologists named the Beaker people after the distinctive comb-decorated, bell-shaped clay drinking vessels placed in their graves."
+          "answer": "They brought bell-shaped clay drinking pots stamped with comb patterns",
+          "a": "They brought bell-shaped clay drinking pots stamped with comb patterns",
+          "explanation": "They were named after the patterned, bell-shaped clay drinking beakers placed carefully inside their graves."
         },
         {
           "stage": 1,
-          "question": "Where in Britain did Early Bronze Age miners dig copper tunnels and gather tin ore?",
-          "q": "Where in Britain did Early Bronze Age miners dig copper tunnels and gather tin ore?",
+          "question": "What game-changing skill did the Beaker newcomers bring across the sea to Britain?",
+          "q": "What game-changing skill did the Beaker newcomers bring across the sea to Britain?",
           "options": [
-            "Copper at Great Orme in North Wales, and tin in Cornwall",
-            "Copper in London, and tin in Orkney",
-            "Both copper and tin inside Cheddar Gorge",
-            "Neither metal existed anywhere in Britain"
+            "Printing paper books",
+            "Blowing window glass",
+            "Building stone aqueducts",
+            "Metalworking"
           ],
-          "correct": 0,
-          "answer": "Copper at Great Orme in North Wales, and tin in Cornwall",
-          "a": "Copper at Great Orme in North Wales, and tin in Cornwall",
-          "explanation": "Miners dug miles of copper tunnels at Great Orme in North Wales and gathered precious tin ore from streams and cliffs in Cornwall."
+          "correct": 3,
+          "answer": "Metalworking",
+          "a": "Metalworking",
+          "explanation": "Beaker travellers brought the secret of heating rocks to make metal, ending the Stone Age forever."
+        },
+        {
+          "stage": 1,
+          "question": "Where in North Wales did Bronze Age miners crawl through dark tunnels to dig green copper rock?",
+          "q": "Where in North Wales did Bronze Age miners crawl through dark tunnels to dig green copper rock?",
+          "options": [
+            "Maiden Castle",
+            "Cheddar Gorge",
+            "Great Orme",
+            "Skara Brae"
+          ],
+          "correct": 2,
+          "answer": "Great Orme",
+          "a": "Great Orme",
+          "explanation": "Bronze Age miners dug miles of underground tunnels on the Great Orme headland in North Wales for copper."
+        },
+        {
+          "stage": 1,
+          "question": "In which part of south-west Britain did workers gather heavy tin ore from streams and cliffs?",
+          "q": "In which part of south-west Britain did workers gather heavy tin ore from streams and cliffs?",
+          "options": [
+            "Orkney",
+            "Cornwall",
+            "Norfolk",
+            "Yorkshire"
+          ],
+          "correct": 1,
+          "answer": "Cornwall",
+          "a": "Cornwall",
+          "explanation": "Precious tin ore came from streams and rocky cliffs in Cornwall, making Cornish tin famous across Europe."
+        },
+        {
+          "stage": 1,
+          "question": "What does the word \"smelting\" mean in Bronze Age metalworking?",
+          "q": "What does the word \"smelting\" mean in Bronze Age metalworking?",
+          "options": [
+            "Chipping sharp flakes off cold flint nodules",
+            "Crushing metal ore rock and heating it over roaring fires until liquid metal runs free",
+            "Weaving willow twigs into river eel traps",
+            "Polishing stone axes on wet sandstone"
+          ],
+          "correct": 1,
+          "answer": "Crushing metal ore rock and heating it over roaring fires until liquid metal runs free",
+          "a": "Crushing metal ore rock and heating it over roaring fires until liquid metal runs free",
+          "explanation": "Smelting heats crushed copper or tin rock over hot charcoal fires until shiny liquid metal melts out of the stone."
         },
         {
           "stage": 2,
-          "question": "How did Bronze Age smiths make tough golden bronze, and why did it beat chipped flint?",
-          "q": "How did Bronze Age smiths make tough golden bronze, and why did it beat chipped flint?",
+          "question": "Why did smiths stop making axe blades out of pure copper on its own?",
+          "q": "Why did smiths stop making axe blades out of pure copper on its own?",
           "options": [
-            "They mixed nine parts copper with one part tin, and broken bronze tools could be melted down and cast again in moulds",
-            "They painted grey flint stones with yellow mud",
-            "They froze rainwater inside wooden buckets",
-            "They mixed iron ore with chalk dust"
+            "Pure copper was too soft and bent easily against thick oak trees",
+            "Pure copper melted in cold rain",
+            "Pure copper was heavier than an elephant",
+            "Pure copper exploded in sunlight"
           ],
           "correct": 0,
-          "answer": "They mixed nine parts copper with one part tin, and broken bronze tools could be melted down and cast again in moulds",
-          "a": "They mixed nine parts copper with one part tin, and broken bronze tools could be melted down and cast again in moulds",
-          "explanation": "Adding one part tin to nine parts copper created hard bronze that kept a sharp edge and could be remelted in two-piece moulds whenever damaged."
+          "answer": "Pure copper was too soft and bent easily against thick oak trees",
+          "a": "Pure copper was too soft and bent easily against thick oak trees",
+          "explanation": "Pure copper was soft and bent easily, so smiths needed a clever recipe to harden the metal."
         },
         {
-          "stage": 3,
-          "question": "What were the Mold Gold Cape, gold lunulae, and the Bush Barrow lozenge?",
-          "q": "What were the Mold Gold Cape, gold lunulae, and the Bush Barrow lozenge?",
+          "stage": 2,
+          "question": "What exact mixture of metals did smiths melt together to make hard golden bronze?",
+          "q": "What exact mixture of metals did smiths melt together to make hard golden bronze?",
           "options": [
-            "Dazzling sheet-gold treasures worn by wealthy Bronze Age chieftains and leaders during ceremonies",
-            "Everyday hats worn by miners crawling down muddy tunnels",
-            "Heavy anchors dropped from fishing canoes",
-            "Coins stamped by Roman emperors"
+            "Half iron and half silver",
+            "Ten parts gold and ten parts lead",
+            "Equal parts chalk and flint",
+            "Nine parts copper and one part tin"
           ],
-          "correct": 0,
-          "answer": "Dazzling sheet-gold treasures worn by wealthy Bronze Age chieftains and leaders during ceremonies",
-          "a": "Dazzling sheet-gold treasures worn by wealthy Bronze Age chieftains and leaders during ceremonies",
-          "explanation": "Master goldsmiths hammered thin sheet gold into the Mold Gold Cape, crescent-moon lunula collars, and the Bush Barrow diamond breastplate for high-status leaders."
+          "correct": 3,
+          "answer": "Nine parts copper and one part tin",
+          "a": "Nine parts copper and one part tin",
+          "explanation": "Adding one part tin to nine parts copper created tough golden bronze that held a sharp cutting edge!"
         },
         {
-          "stage": 3,
-          "question": "How did scientists prove that the Amesbury Archer (buried near Stonehenge around 2300 BC) grew up near the Alps in Europe?",
-          "q": "How did scientists prove that the Amesbury Archer (buried near Stonehenge around 2300 BC) grew up near the Alps in Europe?",
+          "stage": 2,
+          "question": "How did Bronze Age smiths shape glowing liquid bronze into neat axe heads?",
+          "q": "How did Bronze Age smiths shape glowing liquid bronze into neat axe heads?",
           "options": [
-            "He left a written passport carved on slate",
-            "Chemical clues from childhood drinking water locked inside his tooth enamel matched the Alpine region",
-            "His wooden boat still floated beside his grave",
-            "Roman writers interviewed him in Wiltshire"
+            "They rolled it flat with a stone quern",
+            "They knitted metal threads on a wooden loom",
+            "They poured it into hollow stone two-piece moulds",
+            "They chipped it cold with red-deer antlers"
+          ],
+          "correct": 2,
+          "answer": "They poured it into hollow stone two-piece moulds",
+          "a": "They poured it into hollow stone two-piece moulds",
+          "explanation": "Smiths poured molten bronze into carved two-piece moulds, let it cool hard, and hammered the cutting edge sharp."
+        },
+        {
+          "stage": 2,
+          "question": "What big advantage did a broken bronze axe have over a snapped Stone Age flint axe?",
+          "q": "What big advantage did a broken bronze axe have over a snapped Stone Age flint axe?",
+          "options": [
+            "It grew back by itself underground",
+            "It floated back up if dropped in a lake",
+            "It could be melted down and cast into a brand-new axe again",
+            "It never went blunt even after a hundred years"
+          ],
+          "correct": 2,
+          "answer": "It could be melted down and cast into a brand-new axe again",
+          "a": "It could be melted down and cast into a brand-new axe again",
+          "explanation": "Snapped flint was ruined forever, whereas broken bronze tools could be remelted and recast in moulds again and again."
+        },
+        {
+          "stage": 2,
+          "question": "How did sharp bronze axes change the British countryside and local leaders?",
+          "q": "How did sharp bronze axes change the British countryside and local leaders?",
+          "options": [
+            "Everyone abandoned farming and returned to Ice Age caves",
+            "Woodland was cleared faster for crop fields, and families guarding metal routes grew rich",
+            "All trees in Britain were banned from being cut",
+            "People stopped sailing boats across the sea"
           ],
           "correct": 1,
-          "answer": "Chemical clues from childhood drinking water locked inside his tooth enamel matched the Alpine region",
-          "a": "Chemical clues from childhood drinking water locked inside his tooth enamel matched the Alpine region",
-          "explanation": "Oxygen clues locked inside adult tooth enamel form in childhood, proving the Amesbury Archer grew up near the cool Alpine mountains of central Europe!"
+          "answer": "Woodland was cleared faster for crop fields, and families guarding metal routes grew rich",
+          "a": "Woodland was cleared faster for crop fields, and families guarding metal routes grew rich",
+          "explanation": "Tough bronze axes cleared woodland faster for barley and cattle, enriching communities along copper and tin trade routes."
+        },
+        {
+          "stage": 3,
+          "question": "Which famous Welsh Bronze Age treasure was hammered from a single nugget of gold?",
+          "q": "Which famous Welsh Bronze Age treasure was hammered from a single nugget of gold?",
+          "options": [
+            "The Mold Gold Cape",
+            "The Snettisham Great Torc",
+            "The Waterloo Horned Helmet",
+            "The Mildenhall Great Dish"
+          ],
+          "correct": 0,
+          "answer": "The Mold Gold Cape",
+          "a": "The Mold Gold Cape",
+          "explanation": "Craftworkers beat a single lump of gold into the gleaming, finely patterned Mold Gold Cape in North Wales."
+        },
+        {
+          "stage": 3,
+          "question": "What was a Bronze Age gold \"lunula\"?",
+          "q": "What was a Bronze Age gold \"lunula\"?",
+          "options": [
+            "A two-wheeled war chariot",
+            "A bell-shaped clay cooking pot",
+            "A stone hammer for smoothing sarsens",
+            "A crescent-moon neck collar beaten from thin sheet gold"
+          ],
+          "correct": 3,
+          "answer": "A crescent-moon neck collar beaten from thin sheet gold",
+          "a": "A crescent-moon neck collar beaten from thin sheet gold",
+          "explanation": "Lunula means \"little moon\" — a wide crescent-moon collar of shining sheet gold worn by leaders at ceremonies."
+        },
+        {
+          "stage": 3,
+          "question": "What rich burial mound right beside Stonehenge held a chieftain wearing a diamond-shaped gold chest plate?",
+          "q": "What rich burial mound right beside Stonehenge held a chieftain wearing a diamond-shaped gold chest plate?",
+          "options": [
+            "West Kennet Long Barrow",
+            "Gough's Cave",
+            "Star Carr",
+            "Bush Barrow"
+          ],
+          "correct": 3,
+          "answer": "Bush Barrow",
+          "a": "Bush Barrow",
+          "explanation": "The Bush Barrow chieftain was buried within sight of Stonehenge wearing a stamped gold diamond lozenge on his chest."
+        },
+        {
+          "stage": 3,
+          "question": "Roughly how many grave goods were buried with the Amesbury Archer near Stonehenge around 2300 BC?",
+          "q": "Roughly how many grave goods were buried with the Amesbury Archer near Stonehenge around 2300 BC?",
+          "options": [
+            "Three Roman silver spoons",
+            "Only one chipped flint scraper",
+            "Over one hundred items, including five beakers, copper knives, arrowheads, and gold hair rings",
+            "A wooden cart wheel and willow eel trap"
+          ],
+          "correct": 2,
+          "answer": "Over one hundred items, including five beakers, copper knives, arrowheads, and gold hair rings",
+          "a": "Over one hundred items, including five beakers, copper knives, arrowheads, and gold hair rings",
+          "explanation": "The Amesbury Archer had the richest Bronze Age grave near Stonehenge, with over a hundred precious items!"
+        },
+        {
+          "stage": 3,
+          "question": "How did scientists prove the Amesbury Archer grew up near the snowy Alps in central Europe?",
+          "q": "How did scientists prove the Amesbury Archer grew up near the snowy Alps in central Europe?",
+          "options": [
+            "He carried a wooden map written in Latin",
+            "Tests on his tooth enamel matched childhood drinking water from the Alps",
+            "His cloak still had Alpine flowers pinned to it",
+            "His name was carved onto the Heel Stone"
+          ],
+          "correct": 1,
+          "answer": "Tests on his tooth enamel matched childhood drinking water from the Alps",
+          "a": "Tests on his tooth enamel matched childhood drinking water from the Alps",
+          "explanation": "Childhood water leaves a chemical fingerprint locked inside tooth enamel, proving he travelled to Britain from near the Alps!"
         }
       ],
       "video": [
@@ -2770,10 +3394,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Normally archaeologists only ever dig up bare metal axe blades because wooden handles rot away in dry soil. At Must Farm in Cambridgeshire, thick airless river mud preserved complete ash and oak handles still slotted tightly into bronze axe sockets! **Hinge Question:** Why did wooden axe handles survive for 3,000 years at Must Farm when wood usually rots away?",
-          "Source B": "When a sudden fire swept through Must Farm around 900 BC, families fled while shelves of stacked pottery crashed straight into the river below. Several bowls still held burnt wheat-and-seed porridge with a wooden stirring spoon resting inside! **Hinge Question:** Why did archaeologists nickname Must Farm \"Britain's Pompeii\" when they found bowls still holding food and spoons?",
-          "Source C": "Living on stilts right above a slow Cambridgeshire river gave Must Farm families fresh fish on their doorstep! Villagers wove springy willow twigs into funnel baskets so eels and pike could swim easily inside but could not swim back out. **Hinge Question:** How did Must Farm families turn living above wet Fenland rivers into a clever advantage for food?",
-          "Source D": "At wetlands like Rhyd-y-Gorse in Wales and Flag Fen near Must Farm, Late Bronze Age people carefully lowered gleaming bronze shields, swords, and spearheads into watery marshes and rivers, never intending to dig them back up. **Hinge Question:** Why did Bronze Age people deliberately place valuable bronze shields and swords into wet bogs and rivers?"
+          "Source A": "Normally wooden handles rot away in dry soil, but at Must Farm in Cambridgeshire, airless river mud preserved complete handles still fitted onto bronze axes. **Hinge Question:** Why did wooden axe handles survive for 3,000 years at Must Farm when wood usually rots away?",
+          "Source B": "When a sudden fire swept through Must Farm around 900 BC, shelves of clay bowls crashed into the river below with burnt wheat porridge and wooden spoons still inside. **Hinge Question:** Why did archaeologists nickname Must Farm \"Britain's Pompeii\" when they found bowls still holding food and spoons?",
+          "Source C": "Living on stilts right above a slow Cambridgeshire river gave Must Farm families fresh fish and eels right underneath their floorboards. **Hinge Question:** How did Must Farm families turn living above wet Fenland rivers into a clever advantage for food?",
+          "Source D": "At wetlands like Rhyd-y-Gorse in Wales and Flag Fen near Must Farm, Bronze Age people carefully lowered gleaming shields and swords into sacred waters. **Hinge Question:** Why did Bronze Age people deliberately place valuable bronze shields and swords into wet bogs and rivers?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2823,7 +3447,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz to consolidate Key Stage 2 mastery."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz to consolidate Key Stage 2 mastery."
               }
             ]
           }
@@ -2940,12 +3564,12 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Stilt Roundhouses & A Sudden Fire (c. 900 BC)",
-          "text": "<span class=\"para-ref\">[5.1]</span> Around **900 BC**, Bronze Age families built wooden **roundhouses** at **Must Farm** in Cambridgeshire. Each home stood high on oak **stilts**, which were sturdy wooden posts driven into a slow river. Nearby at **Flag Fen**, builders drove thousands of posts to carry a timber **causeway** road across wet marshes.<br><br><span class=\"para-ref\">[5.2]</span> Less than a year later, a sudden roaring fire swept across **Must Farm's** thatched roofs! Families escaped safely outside, while burning homes crashed straight into the sluggish river below. Thick, airless wet mud sealed everything inside so nothing rotted away! Archaeologists soon nicknamed **Must Farm** **\"Britain's Pompeii.\"**",
-          "content": "<span class=\"para-ref\">[5.1]</span> Around **900 BC**, Bronze Age families built wooden **roundhouses** at **Must Farm** in Cambridgeshire. Each home stood high on oak **stilts**, which were sturdy wooden posts driven into a slow river. Nearby at **Flag Fen**, builders drove thousands of posts to carry a timber **causeway** road across wet marshes.<br><br><span class=\"para-ref\">[5.2]</span> Less than a year later, a sudden roaring fire swept across **Must Farm's** thatched roofs! Families escaped safely outside, while burning homes crashed straight into the sluggish river below. Thick, airless wet mud sealed everything inside so nothing rotted away! Archaeologists soon nicknamed **Must Farm** **\"Britain's Pompeii.\"**",
+          "text": "<span class=\"para-ref\">[5.1]</span> Around **900 BC**, Bronze Age families built wooden **roundhouses** at **Must Farm** in Cambridgeshire. Each house stood on sturdy oak **stilts** above a slow river. Nearby at **Flag Fen**, builders drove thousands of timber posts to carry a wooden **causeway** across marshes.<br><br><span class=\"para-ref\">[5.2]</span> Soon after, a sudden fire swept across Must Farm's thatched roofs! Families escaped safely as burning homes dropped into the river. Thick, airless **waterlogged** **wet mud** sealed everything inside, earning Must Farm the nickname **\"Britain's Pompeii\"** [pom-PAY].",
+          "content": "<span class=\"para-ref\">[5.1]</span> Around **900 BC**, Bronze Age families built wooden **roundhouses** at **Must Farm** in Cambridgeshire. Each house stood on sturdy oak **stilts** above a slow river. Nearby at **Flag Fen**, builders drove thousands of timber posts to carry a wooden **causeway** across marshes.<br><br><span class=\"para-ref\">[5.2]</span> Soon after, a sudden fire swept across Must Farm's thatched roofs! Families escaped safely as burning homes dropped into the river. Thick, airless **waterlogged** **wet mud** sealed everything inside, earning Must Farm the nickname **\"Britain's Pompeii\"** [pom-PAY].",
           "image": "/units/ks2_stone_to_iron_age/assets/must_farm_stilt_village_dig.jpg",
           "image_alt": "Archaeologists excavating preserved 3,000-year-old Bronze Age oak posts and Britain's oldest complete wooden wheel at Must Farm in Cambridgeshire",
-          "caption": "Archaeologists at Must Farm in Cambridgeshire uncovering Bronze Age house timbers and Britain's oldest complete 1-metre wooden wheel from wet river silt (CC BY 2.0, Dr Colleen Morgan).",
-          "image_caption": "Archaeologists at Must Farm in Cambridgeshire uncovering Bronze Age house timbers and Britain's oldest complete 1-metre wooden wheel from wet river silt (CC BY 2.0, Dr Colleen Morgan).",
+          "caption": "Archaeologists at Must Farm in Cambridgeshire uncovering Bronze Age house timbers and Britain's oldest complete wooden wheel from wet river mud.",
+          "image_caption": "Archaeologists at Must Farm in Cambridgeshire uncovering Bronze Age house timbers and Britain's oldest complete wooden wheel from wet river mud.",
           "isReversed": false,
           "sources": [
             {
@@ -2955,29 +3579,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_axes_spearhead.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_axes_spearhead.jpg",
-              "title": "Source A: Hafted Bronze Axes & Spearhead Excavated at Must Farm, Cambridgeshire (c. 900 BC)",
-              "caption": "Bronze Age cast socketed axe blades and spearhead discovered at Must Farm in the Cambridgeshire Fens, including axes whose wooden handles survived in wet mud (CC BY-SA 4.0, Cmglee).",
+              "title": "Source A: Bronze Axes with Wooden Handles from Must Farm (c. 900 BC)",
+              "caption": "Bronze Age axe blades and a spearhead dug up at Must Farm in Cambridgeshire, including axes whose wooden handles survived in wet mud.",
               "author": "Late Bronze Age Smiths & Carpenters at Must Farm",
               "date": "c. 900 BC",
-              "context": "Excavated from the 900 BC stilt village at Must Farm in Cambridgeshire, these bronze axeheads and spearhead survived beneath a slow-moving Fenland river.",
-              "source_context": "Excavated from the 900 BC stilt village at Must Farm in Cambridgeshire, these bronze axeheads and spearhead survived beneath a slow-moving Fenland river.",
+              "context": "Normally wooden handles rot away in dry soil, but at Must Farm in Cambridgeshire, airless river mud preserved complete handles still fitted onto bronze axes.",
+              "source_context": "Normally wooden handles rot away in dry soil, but at Must Farm in Cambridgeshire, airless river mud preserved complete handles still fitted onto bronze axes. **Hinge Question:** Why did wooden axe handles survive for 3,000 years at Must Farm when wood usually rots away?",
               "question_badge": "HANDLES IN THE MUD",
               "question": "Look closely at Source A. Why was finding wooden handles still attached to bronze blades so exciting?",
-              "model_answer": "In dry ground, wooden handles rot away completely, leaving only bare metal blades. At Must Farm, thick airless river mud kept the carved ash and oak handles intact inside their bronze sockets, showing archaeologists exactly how Bronze Age carpenters shaped and swung their axes!",
-              "text": "Cambridge Archaeological Unit find display: Cast Late Bronze Age socketed bronze axes and leaf-shaped spearhead from Must Farm, Whittlesey, showing preserved wooden hafts recovered from waterlogged river silt.",
-              "provenance": "Must Farm Bronze Age axes and spearhead, photographed by Cmglee (Wikimedia Commons, CC BY-SA 4.0)."
+              "model_answer": "In dry soil, wooden handles rot away and leave bare metal blades. At Must Farm, airless wet mud preserved the carved wooden handles inside their bronze sockets!",
+              "text": "Artefact note: Thick river mud kept the carved ash and oak handles still slotted tightly inside these shiny bronze axe blades for 3,000 years!",
+              "provenance": "Late Bronze Age axes and spearhead excavated from Must Farm, Cambridgeshire (c. 900 BC)."
             }
           ]
         },
         {
           "act": 2,
           "title": "Porridge Spoons, Cloth & Britain's Oldest Wheel",
-          "text": "<span class=\"para-ref\">[5.3]</span> On dry land, ancient wood, baskets, and cloth almost always rot away completely. Beneath **Must Farm's** wet river mud, archaeologists uncovered thousands of everyday items in amazing condition! Clay bowls still held **charred porridge** with a wooden spoon resting inside. Villagers also wove funnel **eel traps** from bendy willow twigs.<br><br><span class=\"para-ref\">[5.4]</span> Families spun fine **plant-fibre cloth** softer than linen and fitted **bronze axes** tightly into wooden handles. Best of all, diggers uncovered a solid **one-metre wooden wheel** made from ash planks! Built around **900 BC**, it is the oldest complete wheel ever found in Britain.",
-          "content": "<span class=\"para-ref\">[5.3]</span> On dry land, ancient wood, baskets, and cloth almost always rot away completely. Beneath **Must Farm's** wet river mud, archaeologists uncovered thousands of everyday items in amazing condition! Clay bowls still held **charred porridge** with a wooden spoon resting inside. Villagers also wove funnel **eel traps** from bendy willow twigs.<br><br><span class=\"para-ref\">[5.4]</span> Families spun fine **plant-fibre cloth** softer than linen and fitted **bronze axes** tightly into wooden handles. Best of all, diggers uncovered a solid **one-metre wooden wheel** made from ash planks! Built around **900 BC**, it is the oldest complete wheel ever found in Britain.",
+          "text": "<span class=\"para-ref\">[5.3]</span> On dry land, ancient wood and cloth usually rot away. Beneath **Must Farm's** wet river mud, diggers found amazing everyday treasures! Clay bowls still held **charred porridge** with a wooden spoon inside. Villagers also wove **wicker** **eel traps** from willow twigs.<br><br><span class=\"para-ref\">[5.4]</span> Families spun soft **plant-fibre cloth** and slotted **bronze axes** into wooden handles. Best of all, diggers found a complete **one-metre wooden wheel** made of ash planks around **900 BC** — the oldest complete wheel in Britain!",
+          "content": "<span class=\"para-ref\">[5.3]</span> On dry land, ancient wood and cloth usually rot away. Beneath **Must Farm's** wet river mud, diggers found amazing everyday treasures! Clay bowls still held **charred porridge** with a wooden spoon inside. Villagers also wove **wicker** **eel traps** from willow twigs.<br><br><span class=\"para-ref\">[5.4]</span> Families spun soft **plant-fibre cloth** and slotted **bronze axes** into wooden handles. Best of all, diggers found a complete **one-metre wooden wheel** made of ash planks around **900 BC** — the oldest complete wheel in Britain!",
           "image": "/units/ks2_stone_to_iron_age/assets/flag_fen_wetland_causeway.jpg",
           "image_alt": "Preserved Bronze Age oak timber posts of the Flag Fen wetland causeway in Cambridgeshire",
-          "caption": "Ancient Bronze Age oak timbers of the Flag Fen causeway near Peterborough, built across marshy wetlands right beside Must Farm (CC BY-SA 3.0, Midnightblueowl).",
-          "image_caption": "Ancient Bronze Age oak timbers of the Flag Fen causeway near Peterborough, built across marshy wetlands right beside Must Farm (CC BY-SA 3.0, Midnightblueowl).",
+          "caption": "Ancient Bronze Age oak timbers of the Flag Fen causeway near Peterborough, built across marshy wetlands right beside Must Farm.",
+          "image_caption": "Ancient Bronze Age oak timbers of the Flag Fen causeway near Peterborough, built across marshy wetlands right beside Must Farm.",
           "isReversed": true,
           "sources": [
             {
@@ -2987,17 +3611,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/must_farm_charred_storage_pot.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/must_farm_charred_storage_pot.jpg",
-              "title": "Source B: Fire-Scorched Clay Cooking & Storage Pot from Must Farm (c. 900 BC)",
-              "caption": "Intact Late Bronze Age clay vessel rescued from the burnt stilt roundhouses at Must Farm, where some bowls still contained charred porridge and wooden spoons (CC BY-SA 4.0, Cmglee).",
+              "title": "Source B: Fire-Scorched Clay Cooking Pot from Must Farm (c. 900 BC)",
+              "caption": "Complete Late Bronze Age clay pot rescued from the burnt stilt houses at Must Farm, where bowls still held burnt porridge and spoons.",
               "author": "Late Bronze Age Household Potter at Must Farm",
               "date": "c. 900 BC",
-              "context": "Uncovered in the riverbed beneath Must Farm's stilt houses in Cambridgeshire, clay cooking bowls like this preserved rare physical clues from the day of the fire.",
-              "source_context": "Uncovered in the riverbed beneath Must Farm's stilt houses in Cambridgeshire, clay cooking bowls like this preserved rare physical clues from the day of the fire.",
+              "context": "When a sudden fire swept through Must Farm around 900 BC, shelves of clay bowls crashed into the river below with burnt wheat porridge and wooden spoons still inside.",
+              "source_context": "When a sudden fire swept through Must Farm around 900 BC, shelves of clay bowls crashed into the river below with burnt wheat porridge and wooden spoons still inside. **Hinge Question:** Why did archaeologists nickname Must Farm \"Britain's Pompeii\" when they found bowls still holding food and spoons?",
               "question_badge": "PORRIDGE FROZEN IN TIME",
               "question": "Inspect Source B. What does finding pots still holding charred porridge tell us about how Must Farm ended?",
-              "model_answer": "Finding intact pots like Source B with burnt wheat porridge and wooden spoons still inside proves the fire struck very suddenly during an ordinary mealtime! Families dropped everything to escape safely, and the river mud froze their kitchen shelves in a single moment.",
-              "text": "Must Farm excavation kitchen assemblage: Hand-built Late Bronze Age ceramic jar scorched by the settlement fire before sinking upright into soft Fenland river mud.",
-              "provenance": "Must Farm Bronze Age clay pot, photographed by Cmglee (Wikimedia Commons, CC BY-SA 4.0)."
+              "model_answer": "Finding unbroken pots with burnt porridge and wooden spoons still inside proves the fire struck suddenly at mealtime! Families rushed outside safely while river mud froze their kitchen.",
+              "text": "Artefact note: Blackened by flames when the stilt house roof caught fire, this clay cooking pot splashed upright into soft river mud during suppertime!",
+              "provenance": "Late Bronze Age clay cooking pot from Must Farm, Cambridgeshire (c. 900 BC)."
             },
             {
               "id": "ks2_stone_to_iron_age_l5_src_c",
@@ -3006,29 +3630,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/must_farm_wicker_eel_trap.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/must_farm_wicker_eel_trap.jpg",
-              "title": "Source C: 3,000-Year-Old Woven Willow Fish & Eel Trap from Must Farm (c. 900 BC)",
-              "caption": "Delicate cone-shaped fish and eel trap woven from split willow wands, preserved for 3,000 years in the wet mud beneath Must Farm (CC BY-SA 4.0, Cmglee).",
+              "title": "Source C: 3,000-Year-Old Woven Willow Eel Trap from Must Farm (c. 900 BC)",
+              "caption": "Cone-shaped fish and eel trap woven from bendy willow twigs, preserved for 3,000 years in the wet mud beneath Must Farm.",
               "author": "Fenland Basket-Weaver & Fisher at Must Farm",
               "date": "c. 900 BC",
-              "context": "Preserved in wet mud right underneath Must Farm's oak stilt houses in Cambridgeshire, this long cone-shaped basket was woven by hand from springy willow twigs.",
-              "source_context": "Preserved in wet mud right underneath Must Farm's oak stilt houses in Cambridgeshire, this long cone-shaped basket was woven by hand from springy willow twigs.",
+              "context": "Living on stilts right above a slow Cambridgeshire river gave Must Farm families fresh fish and eels right underneath their floorboards.",
+              "source_context": "Living on stilts right above a slow Cambridgeshire river gave Must Farm families fresh fish and eels right underneath their floorboards. **Hinge Question:** How did Must Farm families turn living above wet Fenland rivers into a clever advantage for food?",
               "question_badge": "WOVEN WILLOW TRAP",
               "question": "Look at the woven willow basket in Source C. How did river families use this clever design?",
-              "model_answer": "Source C is a cone-shaped basket woven tightly from bendy willow sticks and lowered into the slow river beneath the stilt houses. Eels and fish swam in through the wide funnel mouth after bait, got trapped inside the narrow end, and gave families fresh supper!",
-              "text": "Must Farm organic artefact record: Woven wickerwork fish and eel trap (c. 1000–800 BC) preserved intact inside oxygen-free Fenland silt.",
-              "provenance": "Must Farm woven Bronze Age fish trap, photographed by Cmglee (Wikimedia Commons, CC BY-SA 4.0)."
+              "model_answer": "Families lowered this cone-shaped willow basket into the slow river beneath their stilt homes. Eels swam into the wide funnel mouth after bait and stayed trapped inside for supper!",
+              "text": "Artefact note: Woven by hand from springy willow sticks like a funnel basket, hungry river eels swam easily in through the wide mouth but could not swim back out.",
+              "provenance": "Late Bronze Age woven willow fish and eel trap from Must Farm, Cambridgeshire (c. 900 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "Sacred Waters & Crossing the Channel in Oak Boats",
-          "text": "<span class=\"para-ref\">[5.5]</span> That sturdy **wooden wheel** proved families drove carts across dry fields beside the marshes, raising sheep and harvesting wheat. Inside the burnt roundhouses, tiny **glass beads** from **Mediterranean** workshops showed how far trade reached! Meanwhile at **Flag Fen**, villagers lowered shining bronze shields and swords into sacred marsh waters.<br><br><span class=\"para-ref\">[5.6]</span> How did traders cross the choppy **English Channel** before iron nails existed? At **Dover** in Kent, archaeologists unearthed the **Dover Bronze Age Boat**! Shipwrights split giant **oak** planks and stitched them tightly together using twisted **yew** branches and moss. Brave crews paddled tin and bronze safely between Britain and France. Bronze Age families were skilled builders, weavers, and sea traders!",
-          "content": "<span class=\"para-ref\">[5.5]</span> That sturdy **wooden wheel** proved families drove carts across dry fields beside the marshes, raising sheep and harvesting wheat. Inside the burnt roundhouses, tiny **glass beads** from **Mediterranean** workshops showed how far trade reached! Meanwhile at **Flag Fen**, villagers lowered shining bronze shields and swords into sacred marsh waters.<br><br><span class=\"para-ref\">[5.6]</span> How did traders cross the choppy **English Channel** before iron nails existed? At **Dover** in Kent, archaeologists unearthed the **Dover Bronze Age Boat**! Shipwrights split giant **oak** planks and stitched them tightly together using twisted **yew** branches and moss. Brave crews paddled tin and bronze safely between Britain and France. Bronze Age families were skilled builders, weavers, and sea traders!",
+          "text": "<span class=\"para-ref\">[5.5]</span> Tiny **glass beads** from **Mediterranean** workshops reached Must Farm by long trade routes! Meanwhile at **Flag Fen**, villagers lowered shiny **bronze shields** and swords into sacred waters as gifts.<br><br><span class=\"para-ref\">[5.6]</span> How did Bronze Age sailors cross the choppy **English Channel** before iron nails existed? At Dover in Kent, diggers found the **Dover Bronze Age Boat** — a **sewn-plank boat**! Builders stitched thick **oak** planks together with twisted **yew** branches and moss, paddling tin and bronze between Britain and France.",
+          "content": "<span class=\"para-ref\">[5.5]</span> Tiny **glass beads** from **Mediterranean** workshops reached Must Farm by long trade routes! Meanwhile at **Flag Fen**, villagers lowered shiny **bronze shields** and swords into sacred waters as gifts.<br><br><span class=\"para-ref\">[5.6]</span> How did Bronze Age sailors cross the choppy **English Channel** before iron nails existed? At Dover in Kent, diggers found the **Dover Bronze Age Boat** — a **sewn-plank boat**! Builders stitched thick **oak** planks together with twisted **yew** branches and moss, paddling tin and bronze between Britain and France.",
           "image": "/units/ks2_stone_to_iron_age/assets/dover_bronze_age_oak_boat.jpg",
           "image_alt": "Preserved 3,500-year-old sewn-plank oak hull of the Dover Bronze Age Boat on display at Dover Museum",
-          "caption": "The Dover Bronze Age Boat (c. 1550 BC) at Dover Museum — the world's oldest known seagoing oak plank boat, stitched together with twisted yew branches (CC BY-SA 4.0, Hiyotchi).",
-          "image_caption": "The Dover Bronze Age Boat (c. 1550 BC) at Dover Museum — the world's oldest known seagoing oak plank boat, stitched together with twisted yew branches (CC BY-SA 4.0, Hiyotchi).",
+          "caption": "The Dover Bronze Age Boat (c. 1550 BC) at Dover Museum — the world's oldest known seagoing oak plank boat, stitched with twisted yew branches.",
+          "image_caption": "The Dover Bronze Age Boat (c. 1550 BC) at Dover Museum — the world's oldest known seagoing oak plank boat, stitched with twisted yew branches.",
           "isReversed": false,
           "sources": [
             {
@@ -3038,17 +3662,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/rhyd_y_gorse_bronze_shield.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/rhyd_y_gorse_bronze_shield.jpg",
-              "title": "Source D: Circular Hammered Sheet-Bronze Shield from Rhyd-y-Gorse, Wales (c. 1100–900 BC)",
-              "caption": "Late Bronze Age circular bronze shield decorated with rings of raised bosses and ribs, discovered in a Welsh wetland bog, British Museum (CC0, Daderot).",
+              "title": "Source D: Circular Sheet-Bronze Shield Placed in a Welsh Bog (c. 1000 BC)",
+              "caption": "Late Bronze Age round bronze shield decorated with neat rings of raised bumps, discovered in a wet marshy bog in Wales.",
               "author": "Late Bronze Age Master Bronzesmith",
               "date": "c. 1100–900 BC",
-              "context": "Discovered in a watery bog at Rhyd-y-Gorse in Wales (like hundreds of bronze finds at Flag Fen), this thin, gleaming sheet-bronze shield shows zero battle dents.",
-              "source_context": "Discovered in a watery bog at Rhyd-y-Gorse in Wales (like hundreds of bronze finds at Flag Fen), this thin, gleaming sheet-bronze shield shows zero battle dents.",
+              "context": "At wetlands like Rhyd-y-Gorse in Wales and Flag Fen near Must Farm, Bronze Age people carefully lowered gleaming shields and swords into sacred waters.",
+              "source_context": "At wetlands like Rhyd-y-Gorse in Wales and Flag Fen near Must Farm, Bronze Age people carefully lowered gleaming shields and swords into sacred waters. **Hinge Question:** Why did Bronze Age people deliberately place valuable bronze shields and swords into wet bogs and rivers?",
               "question_badge": "GIFTS TO THE WATERS",
               "question": "Study the shining bronze shield in Source D. Why was it placed carefully into a wetland bog?",
-              "model_answer": "Source D is a finely hammered circular bronze shield covered in neat rings of raised bumps. Rather than losing it by accident, Bronze Age communities believed rivers and bogs were sacred places, so they offered precious shields and swords into the water to thank spirits or ancestors.",
-              "text": "British Museum Collection (1873,0210.1): Circular Late Bronze Age sheet-bronze shield (66 cm diameter) decorated with twenty concentric raised ribs and rings of bosses, found in peat at Rhyd-y-Gorse near Aberystwyth, Wales.",
-              "provenance": "Bronze Age shield from Rhyd-y-Gorse, Wales, British Museum (Wikimedia Commons, CC0 1.0 Public Domain, photographed by Daderot)."
+              "model_answer": "Source D is a gleaming round bronze shield with zero battle dents. Bronze Age people believed rivers and bogs were sacred, so they offered precious metalwork into the water to thank spirits.",
+              "text": "Artefact note: Hammered from thin golden bronze with twenty neat rings of raised bumps, this spotless shield was lowered gently into a watery bog as a special gift.",
+              "provenance": "Late Bronze Age circular sheet-bronze shield from a Welsh wetland bog (c. 1100–900 BC)."
             }
           ]
         }
@@ -3061,17 +3685,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_axes_spearhead.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_axes_spearhead.jpg",
-          "title": "Source A: Hafted Bronze Axes & Spearhead Excavated at Must Farm, Cambridgeshire (c. 900 BC)",
-          "caption": "Bronze Age cast socketed axe blades and spearhead discovered at Must Farm in the Cambridgeshire Fens, including axes whose wooden handles survived in wet mud (CC BY-SA 4.0, Cmglee).",
+          "title": "Source A: Bronze Axes with Wooden Handles from Must Farm (c. 900 BC)",
+          "caption": "Bronze Age axe blades and a spearhead dug up at Must Farm in Cambridgeshire, including axes whose wooden handles survived in wet mud.",
           "author": "Late Bronze Age Smiths & Carpenters at Must Farm",
           "date": "c. 900 BC",
-          "context": "Excavated from the 900 BC stilt village at Must Farm in Cambridgeshire, these bronze axeheads and spearhead survived beneath a slow-moving Fenland river.",
-          "source_context": "Excavated from the 900 BC stilt village at Must Farm in Cambridgeshire, these bronze axeheads and spearhead survived beneath a slow-moving Fenland river.",
+          "context": "Normally wooden handles rot away in dry soil, but at Must Farm in Cambridgeshire, airless river mud preserved complete handles still fitted onto bronze axes.",
+          "source_context": "Normally wooden handles rot away in dry soil, but at Must Farm in Cambridgeshire, airless river mud preserved complete handles still fitted onto bronze axes. **Hinge Question:** Why did wooden axe handles survive for 3,000 years at Must Farm when wood usually rots away?",
           "question_badge": "HANDLES IN THE MUD",
           "question": "Look closely at Source A. Why was finding wooden handles still attached to bronze blades so exciting?",
-          "model_answer": "In dry ground, wooden handles rot away completely, leaving only bare metal blades. At Must Farm, thick airless river mud kept the carved ash and oak handles intact inside their bronze sockets, showing archaeologists exactly how Bronze Age carpenters shaped and swung their axes!",
-          "text": "Cambridge Archaeological Unit find display: Cast Late Bronze Age socketed bronze axes and leaf-shaped spearhead from Must Farm, Whittlesey, showing preserved wooden hafts recovered from waterlogged river silt.",
-          "provenance": "Must Farm Bronze Age axes and spearhead, photographed by Cmglee (Wikimedia Commons, CC BY-SA 4.0)."
+          "model_answer": "In dry soil, wooden handles rot away and leave bare metal blades. At Must Farm, airless wet mud preserved the carved wooden handles inside their bronze sockets!",
+          "text": "Artefact note: Thick river mud kept the carved ash and oak handles still slotted tightly inside these shiny bronze axe blades for 3,000 years!",
+          "provenance": "Late Bronze Age axes and spearhead excavated from Must Farm, Cambridgeshire (c. 900 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l5_src_b",
@@ -3080,17 +3704,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/must_farm_charred_storage_pot.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/must_farm_charred_storage_pot.jpg",
-          "title": "Source B: Fire-Scorched Clay Cooking & Storage Pot from Must Farm (c. 900 BC)",
-          "caption": "Intact Late Bronze Age clay vessel rescued from the burnt stilt roundhouses at Must Farm, where some bowls still contained charred porridge and wooden spoons (CC BY-SA 4.0, Cmglee).",
+          "title": "Source B: Fire-Scorched Clay Cooking Pot from Must Farm (c. 900 BC)",
+          "caption": "Complete Late Bronze Age clay pot rescued from the burnt stilt houses at Must Farm, where bowls still held burnt porridge and spoons.",
           "author": "Late Bronze Age Household Potter at Must Farm",
           "date": "c. 900 BC",
-          "context": "Uncovered in the riverbed beneath Must Farm's stilt houses in Cambridgeshire, clay cooking bowls like this preserved rare physical clues from the day of the fire.",
-          "source_context": "Uncovered in the riverbed beneath Must Farm's stilt houses in Cambridgeshire, clay cooking bowls like this preserved rare physical clues from the day of the fire.",
+          "context": "When a sudden fire swept through Must Farm around 900 BC, shelves of clay bowls crashed into the river below with burnt wheat porridge and wooden spoons still inside.",
+          "source_context": "When a sudden fire swept through Must Farm around 900 BC, shelves of clay bowls crashed into the river below with burnt wheat porridge and wooden spoons still inside. **Hinge Question:** Why did archaeologists nickname Must Farm \"Britain's Pompeii\" when they found bowls still holding food and spoons?",
           "question_badge": "PORRIDGE FROZEN IN TIME",
           "question": "Inspect Source B. What does finding pots still holding charred porridge tell us about how Must Farm ended?",
-          "model_answer": "Finding intact pots like Source B with burnt wheat porridge and wooden spoons still inside proves the fire struck very suddenly during an ordinary mealtime! Families dropped everything to escape safely, and the river mud froze their kitchen shelves in a single moment.",
-          "text": "Must Farm excavation kitchen assemblage: Hand-built Late Bronze Age ceramic jar scorched by the settlement fire before sinking upright into soft Fenland river mud.",
-          "provenance": "Must Farm Bronze Age clay pot, photographed by Cmglee (Wikimedia Commons, CC BY-SA 4.0)."
+          "model_answer": "Finding unbroken pots with burnt porridge and wooden spoons still inside proves the fire struck suddenly at mealtime! Families rushed outside safely while river mud froze their kitchen.",
+          "text": "Artefact note: Blackened by flames when the stilt house roof caught fire, this clay cooking pot splashed upright into soft river mud during suppertime!",
+          "provenance": "Late Bronze Age clay cooking pot from Must Farm, Cambridgeshire (c. 900 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l5_src_c",
@@ -3099,17 +3723,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/must_farm_wicker_eel_trap.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/must_farm_wicker_eel_trap.jpg",
-          "title": "Source C: 3,000-Year-Old Woven Willow Fish & Eel Trap from Must Farm (c. 900 BC)",
-          "caption": "Delicate cone-shaped fish and eel trap woven from split willow wands, preserved for 3,000 years in the wet mud beneath Must Farm (CC BY-SA 4.0, Cmglee).",
+          "title": "Source C: 3,000-Year-Old Woven Willow Eel Trap from Must Farm (c. 900 BC)",
+          "caption": "Cone-shaped fish and eel trap woven from bendy willow twigs, preserved for 3,000 years in the wet mud beneath Must Farm.",
           "author": "Fenland Basket-Weaver & Fisher at Must Farm",
           "date": "c. 900 BC",
-          "context": "Preserved in wet mud right underneath Must Farm's oak stilt houses in Cambridgeshire, this long cone-shaped basket was woven by hand from springy willow twigs.",
-          "source_context": "Preserved in wet mud right underneath Must Farm's oak stilt houses in Cambridgeshire, this long cone-shaped basket was woven by hand from springy willow twigs.",
+          "context": "Living on stilts right above a slow Cambridgeshire river gave Must Farm families fresh fish and eels right underneath their floorboards.",
+          "source_context": "Living on stilts right above a slow Cambridgeshire river gave Must Farm families fresh fish and eels right underneath their floorboards. **Hinge Question:** How did Must Farm families turn living above wet Fenland rivers into a clever advantage for food?",
           "question_badge": "WOVEN WILLOW TRAP",
           "question": "Look at the woven willow basket in Source C. How did river families use this clever design?",
-          "model_answer": "Source C is a cone-shaped basket woven tightly from bendy willow sticks and lowered into the slow river beneath the stilt houses. Eels and fish swam in through the wide funnel mouth after bait, got trapped inside the narrow end, and gave families fresh supper!",
-          "text": "Must Farm organic artefact record: Woven wickerwork fish and eel trap (c. 1000–800 BC) preserved intact inside oxygen-free Fenland silt.",
-          "provenance": "Must Farm woven Bronze Age fish trap, photographed by Cmglee (Wikimedia Commons, CC BY-SA 4.0)."
+          "model_answer": "Families lowered this cone-shaped willow basket into the slow river beneath their stilt homes. Eels swam into the wide funnel mouth after bait and stayed trapped inside for supper!",
+          "text": "Artefact note: Woven by hand from springy willow sticks like a funnel basket, hungry river eels swam easily in through the wide mouth but could not swim back out.",
+          "provenance": "Late Bronze Age woven willow fish and eel trap from Must Farm, Cambridgeshire (c. 900 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l5_src_d",
@@ -3118,17 +3742,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/rhyd_y_gorse_bronze_shield.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/rhyd_y_gorse_bronze_shield.jpg",
-          "title": "Source D: Circular Hammered Sheet-Bronze Shield from Rhyd-y-Gorse, Wales (c. 1100–900 BC)",
-          "caption": "Late Bronze Age circular bronze shield decorated with rings of raised bosses and ribs, discovered in a Welsh wetland bog, British Museum (CC0, Daderot).",
+          "title": "Source D: Circular Sheet-Bronze Shield Placed in a Welsh Bog (c. 1000 BC)",
+          "caption": "Late Bronze Age round bronze shield decorated with neat rings of raised bumps, discovered in a wet marshy bog in Wales.",
           "author": "Late Bronze Age Master Bronzesmith",
           "date": "c. 1100–900 BC",
-          "context": "Discovered in a watery bog at Rhyd-y-Gorse in Wales (like hundreds of bronze finds at Flag Fen), this thin, gleaming sheet-bronze shield shows zero battle dents.",
-          "source_context": "Discovered in a watery bog at Rhyd-y-Gorse in Wales (like hundreds of bronze finds at Flag Fen), this thin, gleaming sheet-bronze shield shows zero battle dents.",
+          "context": "At wetlands like Rhyd-y-Gorse in Wales and Flag Fen near Must Farm, Bronze Age people carefully lowered gleaming shields and swords into sacred waters.",
+          "source_context": "At wetlands like Rhyd-y-Gorse in Wales and Flag Fen near Must Farm, Bronze Age people carefully lowered gleaming shields and swords into sacred waters. **Hinge Question:** Why did Bronze Age people deliberately place valuable bronze shields and swords into wet bogs and rivers?",
           "question_badge": "GIFTS TO THE WATERS",
           "question": "Study the shining bronze shield in Source D. Why was it placed carefully into a wetland bog?",
-          "model_answer": "Source D is a finely hammered circular bronze shield covered in neat rings of raised bumps. Rather than losing it by accident, Bronze Age communities believed rivers and bogs were sacred places, so they offered precious shields and swords into the water to thank spirits or ancestors.",
-          "text": "British Museum Collection (1873,0210.1): Circular Late Bronze Age sheet-bronze shield (66 cm diameter) decorated with twenty concentric raised ribs and rings of bosses, found in peat at Rhyd-y-Gorse near Aberystwyth, Wales.",
-          "provenance": "Bronze Age shield from Rhyd-y-Gorse, Wales, British Museum (Wikimedia Commons, CC0 1.0 Public Domain, photographed by Daderot)."
+          "model_answer": "Source D is a gleaming round bronze shield with zero battle dents. Bronze Age people believed rivers and bogs were sacred, so they offered precious metalwork into the water to thank spirits.",
+          "text": "Artefact note: Hammered from thin golden bronze with twenty neat rings of raised bumps, this spotless shield was lowered gently into a watery bog as a special gift.",
+          "provenance": "Late Bronze Age circular sheet-bronze shield from a Welsh wetland bog (c. 1100–900 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -3145,7 +3769,7 @@ window.UNIT_DATA = {
             "trigger": "A sudden fire dropped Must Farm's oak stilt roundhouses into thick, airless river mud near Flag Fen's timber causeway.",
             "connective": "Stopped wood, cloth, and food from rotting away for 3,000 years.",
             "question": "Why did Must Farm earn the nickname \"Britain's Pompeii\"?",
-            "prose_hash": "402d621dc4"
+            "prose_hash": "ad3f6d1af1"
           },
           {
             "step": 2,
@@ -3157,7 +3781,7 @@ window.UNIT_DATA = {
             "trigger": "Mud preserved bowls of charred porridge with spoons, willow eel traps, plant-fibre cloth, hafted bronze axes, and a 1-metre wooden wheel.",
             "connective": "Proved families fished rivers AND drove wheeled carts across nearby farmland.",
             "question": "What everyday treasures survived beneath Must Farm's wet river mud?",
-            "prose_hash": "14cf4176d5"
+            "prose_hash": "2de0f1a378"
           },
           {
             "step": 3,
@@ -3169,7 +3793,7 @@ window.UNIT_DATA = {
             "trigger": "Mediterranean beads reached Must Farm, shields entered Flag Fen waters, and yew-stitched oak planks formed the Dover Boat.",
             "connective": "Connected Bronze Age Britain directly to France and distant European trade.",
             "question": "How did Bronze Age sailors cross the English Channel to trade?",
-            "prose_hash": "03910a0374"
+            "prose_hash": "1eadf610fd"
           }
         ]
       },
@@ -3201,7 +3825,7 @@ window.UNIT_DATA = {
           "dates": "c. 900 BC",
           "para_ref": "[5.1]",
           "paraRef": "[5.1]",
-          "prose_hash": "402d621dc4"
+          "prose_hash": "ad3f6d1af1"
         },
         {
           "step": 2,
@@ -3230,7 +3854,7 @@ window.UNIT_DATA = {
           "dates": "c. 900 BC",
           "para_ref": "[5.3]",
           "paraRef": "[5.3]",
-          "prose_hash": "14cf4176d5"
+          "prose_hash": "2de0f1a378"
         },
         {
           "step": 3,
@@ -3259,7 +3883,7 @@ window.UNIT_DATA = {
           "dates": "c. 1550–800 BC",
           "para_ref": "[5.5]",
           "paraRef": "[5.5]",
-          "prose_hash": "03910a0374"
+          "prose_hash": "1eadf610fd"
         }
       ],
       "tasks": [
@@ -3348,78 +3972,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "How were the Late Bronze Age roundhouses at Must Farm in Cambridgeshire built around 900 BC?",
-          "q": "How were the Late Bronze Age roundhouses at Must Farm in Cambridgeshire built around 900 BC?",
+          "question": "How were the Bronze Age wooden roundhouses at Must Farm built around 900 BC?",
+          "q": "How were the Bronze Age wooden roundhouses at Must Farm built around 900 BC?",
           "options": [
-            "High up on sturdy wooden oak stilts driven into a slow-moving river",
-            "Deep inside underground chalk caves",
-            "Out of baked Roman red bricks and cement",
-            "On top of a snowy Scottish mountain peak"
+            "High on sturdy oak stilts driven into a slow river",
+            "Carved into chalk cliffs beside the sea",
+            "Inside deep limestone caves",
+            "Out of squared Roman stone blocks"
           ],
           "correct": 0,
-          "answer": "High up on sturdy wooden oak stilts driven into a slow-moving river",
-          "a": "High up on sturdy wooden oak stilts driven into a slow-moving river",
-          "explanation": "Must Farm's wooden roundhouses stood on oak stilts directly above a slow Fenland river channel near the Flag Fen timber causeway."
+          "answer": "High on sturdy oak stilts driven into a slow river",
+          "a": "High on sturdy oak stilts driven into a slow river",
+          "explanation": "Must Farm's roundhouses stood on oak stilts right above a slow Fenland river in Cambridgeshire."
         },
         {
           "stage": 1,
-          "question": "Why did wooden spoons, woven willow eel traps, and fine plant-fibre cloth survive for 3,000 years at Must Farm?",
-          "q": "Why did wooden spoons, woven willow eel traps, and fine plant-fibre cloth survive for 3,000 years at Must Farm?",
+          "question": "What did Bronze Age builders construct across the wet marshes nearby at Flag Fen?",
+          "q": "What did Bronze Age builders construct across the wet marshes nearby at Flag Fen?",
           "options": [
-            "A sudden fire dropped them into thick, airless wet river mud where they could not rot away",
-            "They were frozen solid inside an Ice Age glacier",
-            "Villagers coated every basket in liquid gold",
-            "Dry desert sand blew over Cambridgeshire"
+            "A 73-mile stone frontier wall",
+            "A chalk white horse",
+            "A marble amphitheatre",
+            "A long wooden timber causeway held up by thousands of posts"
           ],
-          "correct": 0,
-          "answer": "A sudden fire dropped them into thick, airless wet river mud where they could not rot away",
-          "a": "A sudden fire dropped them into thick, airless wet river mud where they could not rot away",
-          "explanation": "Waterlogged, airless river silt stopped rot completely, preserving organic wood, cloth, and even burnt porridge inside bowls!"
+          "correct": 3,
+          "answer": "A long wooden timber causeway held up by thousands of posts",
+          "a": "A long wooden timber causeway held up by thousands of posts",
+          "explanation": "At Flag Fen, communities drove thousands of oak posts into the marsh to carry a long wooden causeway."
+        },
+        {
+          "stage": 1,
+          "question": "What sudden disaster struck Must Farm less than a year after the stilt houses were built?",
+          "q": "What sudden disaster struck Must Farm less than a year after the stilt houses were built?",
+          "options": [
+            "An earthquake split Cambridgeshire",
+            "A tidal wave from the North Sea",
+            "A roaring fire swept across the thatched roofs and dropped the homes into the river",
+            "An Ice Age glacier crushed the village"
+          ],
+          "correct": 2,
+          "answer": "A roaring fire swept across the thatched roofs and dropped the homes into the river",
+          "a": "A roaring fire swept across the thatched roofs and dropped the homes into the river",
+          "explanation": "Fire swept through the thatched roundhouses, dropping furniture, pots, and tools straight into the river below."
+        },
+        {
+          "stage": 1,
+          "question": "Why did wood, cloth, and food at Must Farm NOT rot away over 3,000 years?",
+          "q": "Why did wood, cloth, and food at Must Farm NOT rot away over 3,000 years?",
+          "options": [
+            "Villagers wrapped every item in sheet gold",
+            "Thick, airless waterlogged river mud sealed everything inside",
+            "Dry desert sand covered the Fens",
+            "The river froze into solid ice"
+          ],
+          "correct": 1,
+          "answer": "Thick, airless waterlogged river mud sealed everything inside",
+          "a": "Thick, airless waterlogged river mud sealed everything inside",
+          "explanation": "Airless, waterlogged mud stopped wood-rotting germs from breaking down organic materials!"
+        },
+        {
+          "stage": 1,
+          "question": "Which famous nickname did archaeologists give Must Farm because everyday life was frozen in a single moment?",
+          "q": "Which famous nickname did archaeologists give Must Farm because everyday life was frozen in a single moment?",
+          "options": [
+            "\"Cheddar Gorge\"",
+            "\"Britain's Pompeii\"",
+            "\"Sunken Doggerland\"",
+            "\"The Great Orme\""
+          ],
+          "correct": 1,
+          "answer": "\"Britain's Pompeii\"",
+          "a": "\"Britain's Pompeii\"",
+          "explanation": "Like Roman Pompeii, Must Farm preserved an ordinary day down to spoons left inside porridge bowls!"
         },
         {
           "stage": 2,
-          "question": "Which record-breaking transport object from around 900 BC was excavated intact from the mud at Must Farm?",
-          "q": "Which record-breaking transport object from around 900 BC was excavated intact from the mud at Must Farm?",
+          "question": "What surprising meal clue was still sitting inside fire-scorched clay bowls at Must Farm?",
+          "q": "What surprising meal clue was still sitting inside fire-scorched clay bowls at Must Farm?",
           "options": [
-            "An iron steam engine wheel",
-            "Britain's oldest complete 1-metre wooden wheel",
-            "A Roman marble chariot",
-            "A Viking pine surfboard"
-          ],
-          "correct": 1,
-          "answer": "Britain's oldest complete 1-metre wooden wheel",
-          "a": "Britain's oldest complete 1-metre wooden wheel",
-          "explanation": "Crafted from ash planks pinned firmly around an oak hub, Must Farm's 1-metre wheel is the earliest complete wheel ever found in Britain."
-        },
-        {
-          "stage": 3,
-          "question": "How did Bronze Age shipwrights fasten the thick oak planks of the Dover Bronze Age Boat together?",
-          "q": "How did Bronze Age shipwrights fasten the thick oak planks of the Dover Bronze Age Boat together?",
-          "options": [
-            "With heavy steel nuts and bolts",
-            "They stitched the oak planks tightly with twisted yew branches and sealed seams with moss",
-            "With melted plastic glue",
-            "They carved the whole ship from one tiny willow twig"
-          ],
-          "correct": 1,
-          "answer": "They stitched the oak planks tightly with twisted yew branches and sealed seams with moss",
-          "a": "They stitched the oak planks tightly with twisted yew branches and sealed seams with moss",
-          "explanation": "Long before iron nails, Bronze Age boatbuilders stitched split oak planks with strong twisted yew withies and packed moss into the seams."
-        },
-        {
-          "stage": 3,
-          "question": "Why did Late Bronze Age people place valuable items like the Rhyd-y-Gorse bronze shield and Flag Fen swords into wet marshes?",
-          "q": "Why did Late Bronze Age people place valuable items like the Rhyd-y-Gorse bronze shield and Flag Fen swords into wet marshes?",
-          "options": [
-            "As sacred ceremonial gifts offered to watery spirits and ancestors",
-            "Because bronze rusted away if kept indoors",
-            "They forgot how to carry shields home",
-            "To build stepping stones for sheep"
+            "Charred porridge with a wooden spoon resting inside",
+            "Salted Roman fish sauce",
+            "Roasted potatoes and tomatoes",
+            "Frozen mammoth steaks"
           ],
           "correct": 0,
-          "answer": "As sacred ceremonial gifts offered to watery spirits and ancestors",
-          "a": "As sacred ceremonial gifts offered to watery spirits and ancestors",
-          "explanation": "Communities gathered on causeways like Flag Fen and beside Welsh bogs to offer treasured bronze shields and weapons to sacred waters."
+          "answer": "Charred porridge with a wooden spoon resting inside",
+          "a": "Charred porridge with a wooden spoon resting inside",
+          "explanation": "Diggers found bowls still holding burnt wheat-and-seed porridge with a wooden stirring spoon left inside!"
+        },
+        {
+          "stage": 2,
+          "question": "What clever river trap did Must Farm villagers weave from bendy willow twigs?",
+          "q": "What clever river trap did Must Farm villagers weave from bendy willow twigs?",
+          "options": [
+            "Lobster pots made of iron wire",
+            "Whale harpoons",
+            "Silk butterfly nets",
+            "Wicker funnel eel traps"
+          ],
+          "correct": 3,
+          "answer": "Wicker funnel eel traps",
+          "a": "Wicker funnel eel traps",
+          "explanation": "Villagers wove cone-shaped wicker traps from willow twigs to catch eels and fish right beneath their homes."
+        },
+        {
+          "stage": 2,
+          "question": "How were Must Farm's soft clothes woven before woollen looms took over everywhere?",
+          "q": "How were Must Farm's soft clothes woven before woollen looms took over everywhere?",
+          "options": [
+            "From knitted nylon yarn",
+            "From imported Chinese silk",
+            "From spun plant-fibre cloth made of flax and tree bark",
+            "From stiff bronze wires"
+          ],
+          "correct": 2,
+          "answer": "From spun plant-fibre cloth made of flax and tree bark",
+          "a": "From spun plant-fibre cloth made of flax and tree bark",
+          "explanation": "Skilled weavers spun plant fibres into fine, soft cloth preserved cleanly inside the wet river silt."
+        },
+        {
+          "stage": 2,
+          "question": "Why were the bronze axes dug up at Must Farm rarer than almost all other Bronze Age axes found on dry land?",
+          "q": "Why were the bronze axes dug up at Must Farm rarer than almost all other Bronze Age axes found on dry land?",
+          "options": [
+            "They were painted bright blue",
+            "They were three metres long",
+            "Their carved wooden handles were still slotted tightly inside the bronze blades",
+            "They were made of pure tin"
+          ],
+          "correct": 2,
+          "answer": "Their carved wooden handles were still slotted tightly inside the bronze blades",
+          "a": "Their carved wooden handles were still slotted tightly inside the bronze blades",
+          "explanation": "Normally wood rots away, so finding complete ash and oak handles still attached to bronze blades was thrilling!"
+        },
+        {
+          "stage": 2,
+          "question": "What record-breaking transport object made of ash planks around 900 BC was found at Must Farm?",
+          "q": "What record-breaking transport object made of ash planks around 900 BC was found at Must Farm?",
+          "options": [
+            "A two-deck Roman warship",
+            "A complete one-metre wooden wheel — the oldest complete wheel in Britain",
+            "A golden chariot from Egypt",
+            "A pair of wooden ice skates"
+          ],
+          "correct": 1,
+          "answer": "A complete one-metre wooden wheel — the oldest complete wheel in Britain",
+          "a": "A complete one-metre wooden wheel — the oldest complete wheel in Britain",
+          "explanation": "Must Farm's solid one-metre wooden wheel proved Bronze Age families drove carts across nearby dry farmland."
+        },
+        {
+          "stage": 3,
+          "question": "Where had the tiny colourful glass beads discovered inside Must Farm's burnt houses been made?",
+          "q": "Where had the tiny colourful glass beads discovered inside Must Farm's burnt houses been made?",
+          "options": [
+            "Inside workshops around the distant Mediterranean",
+            "In Gough's Cave in Somerset",
+            "On top of Orkney sand dunes",
+            "In North American forests"
+          ],
+          "correct": 0,
+          "answer": "Inside workshops around the distant Mediterranean",
+          "a": "Inside workshops around the distant Mediterranean",
+          "explanation": "Tiny glass beads travelled along long trade routes all the way from Mediterranean workshops to Cambridgeshire!"
+        },
+        {
+          "stage": 3,
+          "question": "Why did Late Bronze Age people lower shiny bronze shields and swords into wet marshes like Flag Fen?",
+          "q": "Why did Late Bronze Age people lower shiny bronze shields and swords into wet marshes like Flag Fen?",
+          "options": [
+            "They ran out of cupboard space indoors",
+            "To rust them into red iron",
+            "To dam the river for swimming",
+            "As sacred gifts offered to watery spirits and ancestors"
+          ],
+          "correct": 3,
+          "answer": "As sacred gifts offered to watery spirits and ancestors",
+          "a": "As sacred gifts offered to watery spirits and ancestors",
+          "explanation": "Communities treated rivers and bogs as sacred places, offering spotless shields and weapons into the water."
+        },
+        {
+          "stage": 3,
+          "question": "Where in Kent did archaeologists uncover the world's oldest known seagoing oak plank boat?",
+          "q": "Where in Kent did archaeologists uncover the world's oldest known seagoing oak plank boat?",
+          "options": [
+            "Richborough",
+            "Canterbury",
+            "Maidstone",
+            "Dover"
+          ],
+          "correct": 3,
+          "answer": "Dover",
+          "a": "Dover",
+          "explanation": "Diggers working deep beneath Dover uncovered the 3,500-year-old Dover Bronze Age Boat!"
+        },
+        {
+          "stage": 3,
+          "question": "Because iron nails had not been invented yet, how was the Dover Bronze Age Boat held together?",
+          "q": "Because iron nails had not been invented yet, how was the Dover Bronze Age Boat held together?",
+          "options": [
+            "Sticky clay daub glued willow twigs together",
+            "Copper bolts were screwed in with spanners",
+            "Thick oak planks were stitched together with twisted yew branches and sealed with moss",
+            "Rope tied hollow reeds into a raft"
+          ],
+          "correct": 2,
+          "answer": "Thick oak planks were stitched together with twisted yew branches and sealed with moss",
+          "a": "Thick oak planks were stitched together with twisted yew branches and sealed with moss",
+          "explanation": "Shipbuilders split giant oak trunks into planks, stitched them tight with twisted yew branches, and packed moss in the seams."
+        },
+        {
+          "stage": 3,
+          "question": "What cargo did brave Bronze Age boat crews paddle back and forth across the English Channel?",
+          "q": "What cargo did brave Bronze Age boat crews paddle back and forth across the English Channel?",
+          "options": [
+            "Potatoes and sweetcorn",
+            "British tin, copper, and bronze tools traded between Britain and France",
+            "Blocks of sarsen stone from Stonehenge",
+            "Live woolly mammoths"
+          ],
+          "correct": 1,
+          "answer": "British tin, copper, and bronze tools traded between Britain and France",
+          "a": "British tin, copper, and bronze tools traded between Britain and France",
+          "explanation": "Sewn-plank boats linked Britain closely to France and Europe, carrying precious Cornish tin and cast bronze."
         }
       ],
       "video": [
@@ -3470,10 +4244,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "In earlier Stone and Bronze Age homes, families knelt for hours pushing a rubbing stone back and forth on a flat saddle stone. Iron Age engineers invented the spinning rotary quern: a heavy round top stone turned with a wooden handle over a bottom stone! **Hinge Question:** How did spinning a round rotary quern stone make daily life easier for Iron Age farming families?",
-          "Source B": "Dredged from the muddy bed of the River Thames in London in 1868, this unique bronze horned helmet is made from thin riveted bronze sheets decorated with swirling Celtic curves and red enamel studs. Its thin sheet metal would dent easily against an iron sword! **Hinge Question:** If the Waterloo Helmet's bronze sheet was too thin for real sword fights, why was it made and placed in the River Thames?",
-          "Source C": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy neck ring (torc) weighs over a kilogram! Celtic goldsmiths twisted sixty-four fine gold-and-silver threads into eight neat ropes and soldered richly patterned hollow terminals onto both ends. **Hinge Question:** What does the Snettisham Great Torc prove about the skill and wealth of Iron Age Celtic Britain BEFORE the Romans invaded?",
-          "Source D": "By 100–50 BC, powerful Celtic tribes across Britain began minting their own gold, silver, and bronze coins called staters. Many stamped bold galloping horses, wheat ears, and even the names of tribal kings in Latin letters learned through cross-Channel trade! **Hinge Question:** Why does stamping gold coins and king names mark the moment British \"prehistory\" began turning into written history?"
+          "Source A": "Earlier families knelt for hours rubbing grain back and forth on flat stones before Iron Age makers invented spinning rotary querns like Source A. **Hinge Question:** How did spinning a round rotary quern stone make daily life easier for Iron Age farming families?",
+          "Source B": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique horned helmet is made of wafer-thin bronze sheets. **Hinge Question:** If the Waterloo Helmet's bronze sheet was too thin for real sword fights, why was it made and placed in the River Thames?",
+          "Source C": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy gold neck ring (torc) was twisted from sixty-four fine gold-and-silver threads. **Hinge Question:** What does the Snettisham Great Torc prove about the skill and wealth of Iron Age Britain BEFORE the Romans invaded?",
+          "Source D": "By 50 BC, powerful Celtic tribes across Britain minted gold and silver stater coins stamped with horses, wheat ears, and even king names in Latin letters. **Hinge Question:** Why does stamping gold coins and king names mark the moment British \"prehistory\" began turning into written history?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -3523,7 +4297,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Grand Unit Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 5-question Plenary Quiz to celebrate completing Prehistoric Britain!"
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz to celebrate completing Prehistoric Britain!"
               }
             ]
           }
@@ -3640,12 +4414,12 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Blacksmiths, Iron Ploughs & Cosy Roundhouses (c. 800–400 BC)",
-          "text": "<span class=\"para-ref\">[6.1]</span> Around **800 BC**, clever metalworkers mastered a tough new metal that began Britain's **Iron Age**. Unlike rare tin and copper, reddish **iron ore** rock lay widely across British hills and bogs. **Blacksmiths** heated iron ore in roaring clay furnaces and hammered glowing iron into saws, swords, and **ploughshares**.<br><br><span class=\"para-ref\">[6.2]</span> Strong iron ploughs sliced heavy clay soil easily, helping **Celtic** farmers grow bumper wheat harvests. Families spun round **rotary quern** stones to grind grain into soft flour. They lived inside warm thatched **roundhouses** with **wattle-and-daub** walls of woven sticks and mud. Inside, weavers made bright checked wool on **upright looms**. Hearth smoke drifted gently out through the tall roof.",
-          "content": "<span class=\"para-ref\">[6.1]</span> Around **800 BC**, clever metalworkers mastered a tough new metal that began Britain's **Iron Age**. Unlike rare tin and copper, reddish **iron ore** rock lay widely across British hills and bogs. **Blacksmiths** heated iron ore in roaring clay furnaces and hammered glowing iron into saws, swords, and **ploughshares**.<br><br><span class=\"para-ref\">[6.2]</span> Strong iron ploughs sliced heavy clay soil easily, helping **Celtic** farmers grow bumper wheat harvests. Families spun round **rotary quern** stones to grind grain into soft flour. They lived inside warm thatched **roundhouses** with **wattle-and-daub** walls of woven sticks and mud. Inside, weavers made bright checked wool on **upright looms**. Hearth smoke drifted gently out through the tall roof.",
+          "text": "<span class=\"para-ref\">[6.1]</span> Around **800 BC**, smiths mastered a tough metal that began Britain's **Iron Age**. Common reddish **iron ore** lay across British hills and bogs. **Blacksmiths** heated **iron ore** in clay furnaces and hammered strong saws, swords, and **ploughshares**.<br><br><span class=\"para-ref\">[6.2]</span> Iron ploughs sliced heavy clay soil so **Celtic** farmers grew bumper wheat crops. Families spun a stone **rotary quern** [KWURN] to grind grain into flour. They lived in thatched **roundhouses** with **wattle-and-daub** walls, weaving bright wool on upright **looms**.",
+          "content": "<span class=\"para-ref\">[6.1]</span> Around **800 BC**, smiths mastered a tough metal that began Britain's **Iron Age**. Common reddish **iron ore** lay across British hills and bogs. **Blacksmiths** heated **iron ore** in clay furnaces and hammered strong saws, swords, and **ploughshares**.<br><br><span class=\"para-ref\">[6.2]</span> Iron ploughs sliced heavy clay soil so **Celtic** farmers grew bumper wheat crops. Families spun a stone **rotary quern** [KWURN] to grind grain into flour. They lived in thatched **roundhouses** with **wattle-and-daub** walls, weaving bright wool on upright **looms**.",
           "image": "/units/ks2_stone_to_iron_age/assets/castell_henllys_hillfort_roundhouse.jpg",
           "image_alt": "Reconstructed Iron Age thatched roundhouse built on original post-holes at Castell Henllys hillfort in Wales",
-          "caption": "Reconstructed Iron Age wattle-and-daub roundhouse with tall conical thatched roof built directly on ancient post-holes at Castell Henllys in Wales (CC BY-SA 2.0, Sandy Gerrard).",
-          "image_caption": "Reconstructed Iron Age wattle-and-daub roundhouse with tall conical thatched roof built directly on ancient post-holes at Castell Henllys in Wales (CC BY-SA 2.0, Sandy Gerrard).",
+          "caption": "Reconstructed Iron Age wattle-and-daub roundhouse with a tall cone-shaped thatched roof built on ancient post-holes at Castell Henllys in Wales.",
+          "image_caption": "Reconstructed Iron Age wattle-and-daub roundhouse with a tall cone-shaped thatched roof built on ancient post-holes at Castell Henllys in Wales.",
           "isReversed": false,
           "sources": [
             {
@@ -3655,29 +4429,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/iron_age_rotary_quern_stone.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/iron_age_rotary_quern_stone.jpg",
-              "title": "Source A: Spinning Iron Age Rotary Quern Stone for Grinding Grain (Portable Antiquities Scheme)",
-              "caption": "Heavy round Iron Age rotary quern millstone with central hopper hole for pouring wheat grain to grind into flour (CC BY 2.0, North Lincolnshire Museum / Martin Foreman).",
+              "title": "Source A: Spinning Iron Age Rotary Quern Stone for Grinding Grain (c. 200 BC)",
+              "caption": "Heavy round Iron Age rotary quern stone with a central hole for pouring wheat grain to grind into bread flour.",
               "author": "Iron Age Stone-Carver & Farming Household",
               "date": "c. 200 BC–AD 43",
-              "context": "Earlier Stone and Bronze Age families knelt for hours pushing a rubbing stone back and forth on a flat saddle stone, before Iron Age villages introduced heavy round stone querns like this.",
-              "source_context": "Earlier Stone and Bronze Age families knelt for hours pushing a rubbing stone back and forth on a flat saddle stone, before Iron Age villages introduced heavy round stone querns like this.",
+              "context": "Earlier families knelt for hours rubbing grain back and forth on flat stones before Iron Age makers invented spinning rotary querns like Source A.",
+              "source_context": "Earlier families knelt for hours rubbing grain back and forth on flat stones before Iron Age makers invented spinning rotary querns like Source A. **Hinge Question:** How did spinning a round rotary quern stone make daily life easier for Iron Age farming families?",
               "question_badge": "SPINNING STONE MILL",
               "question": "Look closely at the round stone with a hole in Source A. How did families use it?",
-              "model_answer": "Source A is the heavy top stone of an Iron Age rotary quern. Families poured wheat or barley grains into the central hole and turned a wooden peg handle to spin the stone round and round, grinding grain into soft bread flour much faster than rubbing stones back and forth!",
-              "text": "Archaeological find record (FindID 964181): Upper stone of a beehive-shaped Iron Age rotary quern with central grain-feed funnel and side socket for a wooden turning handle.",
-              "provenance": "Iron Age rotary quern stone, Portable Antiquities Scheme FindID 964181 (Wikimedia Commons, CC BY 2.0, North Lincolnshire Museum / Martin Foreman)."
+              "model_answer": "Families poured wheat or barley into the top hole and turned a wooden side handle to spin Source A round and round, grinding flour much faster than rubbing stones.",
+              "text": "Artefact note: Children poured golden wheat into the top hole and pushed a wooden peg handle in a circle, spinning this heavy stone to crush grain into soft flour!",
+              "provenance": "Iron Age beehive-shaped rotary quern stone from Lincolnshire (c. 300–50 BC)."
             }
           ]
         },
         {
           "act": 2,
           "title": "Celtic Tribes & Giant Hillforts Like Maiden Castle (c. 400–100 BC)",
-          "text": "<span class=\"para-ref\">[6.3]</span> As harvests grew, Britain's population boomed and proud **Celtic tribes** competed fiercely for land and cattle. Across high ridges, tribes dug giant **hillforts**, which were hilltop towns ringed by earth banks and ditches! At **Maiden Castle** in Dorset, white chalk **ramparts** rose like giant ocean waves.<br><br><span class=\"para-ref\">[6.4]</span> Maze-like gateways and timber fences forced attackers past defenders armed with smooth river **slingshot** stones. Inside hillforts, hundreds of villagers stored grain in pits, traded sheep, and hammered red-hot iron. In Oxfordshire, tribes even carved the giant **Uffington White Horse** into gleaming white chalk high above the green valley!",
-          "content": "<span class=\"para-ref\">[6.3]</span> As harvests grew, Britain's population boomed and proud **Celtic tribes** competed fiercely for land and cattle. Across high ridges, tribes dug giant **hillforts**, which were hilltop towns ringed by earth banks and ditches! At **Maiden Castle** in Dorset, white chalk **ramparts** rose like giant ocean waves.<br><br><span class=\"para-ref\">[6.4]</span> Maze-like gateways and timber fences forced attackers past defenders armed with smooth river **slingshot** stones. Inside hillforts, hundreds of villagers stored grain in pits, traded sheep, and hammered red-hot iron. In Oxfordshire, tribes even carved the giant **Uffington White Horse** into gleaming white chalk high above the green valley!",
+          "text": "<span class=\"para-ref\">[6.3]</span> Richer harvests helped Britain's population grow, and rival **Celtic tribes** competed for cattle and land. Tribes built giant **hillforts** on high ridges ringed by steep earth **ramparts** and ditches. At **Maiden Castle** in Dorset, chalk banks rose like huge waves.<br><br><span class=\"para-ref\">[6.4]</span> Winding gates forced raiders past defenders armed with smooth river **slingshot** stones. Inside, villagers stored grain in pits and forged red-hot iron. In Oxfordshire, tribes carved the giant **Uffington White Horse** into bright white hillside chalk!",
+          "content": "<span class=\"para-ref\">[6.3]</span> Richer harvests helped Britain's population grow, and rival **Celtic tribes** competed for cattle and land. Tribes built giant **hillforts** on high ridges ringed by steep earth **ramparts** and ditches. At **Maiden Castle** in Dorset, chalk banks rose like huge waves.<br><br><span class=\"para-ref\">[6.4]</span> Winding gates forced raiders past defenders armed with smooth river **slingshot** stones. Inside, villagers stored grain in pits and forged red-hot iron. In Oxfordshire, tribes carved the giant **Uffington White Horse** into bright white hillside chalk!",
           "image": "/units/ks2_stone_to_iron_age/assets/maiden_castle_earth_ramparts.jpg",
           "image_alt": "Towering multi-layered grass-covered chalk earth ramparts and deep ditches of Maiden Castle Iron Age hillfort in Dorset",
-          "caption": "The giant multi-ringed earth and chalk ramparts of Maiden Castle in Dorset — one of the largest Iron Age hillforts in all Europe (CC BY-SA 4.0, Hadrianus1959).",
-          "image_caption": "The giant multi-ringed earth and chalk ramparts of Maiden Castle in Dorset — one of the largest Iron Age hillforts in all Europe (CC BY-SA 4.0, Hadrianus1959).",
+          "caption": "The giant multi-ringed earth and chalk ramparts of Maiden Castle in Dorset — one of the largest Iron Age hillforts in Europe.",
+          "image_caption": "The giant multi-ringed earth and chalk ramparts of Maiden Castle in Dorset — one of the largest Iron Age hillforts in Europe.",
           "isReversed": true,
           "sources": [
             {
@@ -3687,29 +4461,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/waterloo_bridge_horned_helmet.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/waterloo_bridge_horned_helmet.jpg",
-              "title": "Source B: The Waterloo Bridge Ceremonial Bronze Horned Helmet (c. 150–50 BC, British Museum)",
-              "caption": "Riveted sheet-bronze Iron Age horned helmet decorated with swirling Celtic patterns and red glass studs, dredged from the River Thames at Waterloo Bridge (CC BY 2.0, WordRidden).",
+              "title": "Source B: The Waterloo Bridge Bronze Horned Helmet (c. 150–50 BC)",
+              "caption": "Thin sheet-bronze Iron Age horned helmet decorated with swirling Celtic curves and red glass studs, found in the River Thames.",
               "author": "Celtic Master Bronzesmith in Southern Britain",
               "date": "c. 150–50 BC",
-              "context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique Iron Age helmet is made from wafer-thin riveted bronze sheets.",
-              "source_context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique Iron Age helmet is made from wafer-thin riveted bronze sheets.",
+              "context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique horned helmet is made of wafer-thin bronze sheets.",
+              "source_context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique horned helmet is made of wafer-thin bronze sheets. **Hinge Question:** If the Waterloo Helmet's bronze sheet was too thin for real sword fights, why was it made and placed in the River Thames?",
               "question_badge": "HORNED RIVER TREASURE",
               "question": "Inspect Source B. Why do historians think this horned helmet was made for ceremonies or sacred offerings?",
-              "model_answer": "Source B is crafted from thin sheet bronze with tall riveted horns, swirling Celtic art, and red glass studs. Because thin bronze would crumple against tough iron swords, historians think a proud leader wore it for grand parades or offered it on a wooden statue into the sacred River Thames!",
-              "text": "British Museum Collection (1988,1004.1): Sheet-bronze Iron Age helmet with conical riveted horns, repoussé swirling Celtic scrollwork, and red glass enamel studs; recovered from the River Thames near Waterloo Bridge in 1868.",
-              "provenance": "The Waterloo Bridge Celtic Horned Helmet, British Museum (Wikimedia Commons, CC BY 2.0, photographed by WordRidden)."
+              "model_answer": "Source B is made of wafer-thin bronze with tall horns and red glass studs that would dent against an iron sword. Instead, it was worn in parades or offered to water gods in the River Thames!",
+              "text": "Artefact note: Made from thin shiny bronze with two pointed horns and bright red glass dots, this fancy helmet was placed into the River Thames as a sacred gift.",
+              "provenance": "The Waterloo Bridge Iron Age bronze horned helmet from the River Thames, London (c. 150–50 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "Twisted Gold Torcs, Coins & Rome Arrives (c. 100 BC–AD 43)",
-          "text": "<span class=\"para-ref\">[6.5]</span> Iron Age Britain shone with dazzling art, brave warriors, and wise priests called **Druids**. Master smiths twisted gold wires into heavy neck rings called **torcs**, like the **Snettisham Great Torc**! Craftworkers also beat ceremonial bronze **horned helmets** and swirling shields. Families offered many treasures into the sacred **River Thames**.<br><br><span class=\"para-ref\">[6.6]</span> By **50 BC**, tribal rulers stamped galloping horses onto gold **stater** coins. Merchants traded British grain, hunting dogs, and tin across the sea with **Gaul** and **Rome**. Then, in **AD 43**, **Emperor Claudius** sent four **Roman legions** across the Channel! Over **800,000 years** of British **prehistory** ended as written history began.",
-          "content": "<span class=\"para-ref\">[6.5]</span> Iron Age Britain shone with dazzling art, brave warriors, and wise priests called **Druids**. Master smiths twisted gold wires into heavy neck rings called **torcs**, like the **Snettisham Great Torc**! Craftworkers also beat ceremonial bronze **horned helmets** and swirling shields. Families offered many treasures into the sacred **River Thames**.<br><br><span class=\"para-ref\">[6.6]</span> By **50 BC**, tribal rulers stamped galloping horses onto gold **stater** coins. Merchants traded British grain, hunting dogs, and tin across the sea with **Gaul** and **Rome**. Then, in **AD 43**, **Emperor Claudius** sent four **Roman legions** across the Channel! Over **800,000 years** of British **prehistory** ended as written history began.",
+          "text": "<span class=\"para-ref\">[6.5]</span> Wise priests called **Druids** memorised sacred laws, while smiths twisted gold wires into heavy **torcs** like the **Snettisham Great Torc** [SNET-ish-um]! Makers also beat bronze **horned helmets** and shields as gifts for the **River Thames**.<br><br><span class=\"para-ref\">[6.6]</span> By **50 BC**, rulers stamped galloping horses onto gold **stater** coins and traded with **Gaul** and **Rome**. Then in **AD 43**, **Emperor Claudius** [KLAW-dee-us] sent four **Roman legions** to invade! Over 800,000 years of British **prehistory** ended as written history began.",
+          "content": "<span class=\"para-ref\">[6.5]</span> Wise priests called **Druids** memorised sacred laws, while smiths twisted gold wires into heavy **torcs** like the **Snettisham Great Torc** [SNET-ish-um]! Makers also beat bronze **horned helmets** and shields as gifts for the **River Thames**.<br><br><span class=\"para-ref\">[6.6]</span> By **50 BC**, rulers stamped galloping horses onto gold **stater** coins and traded with **Gaul** and **Rome**. Then in **AD 43**, **Emperor Claudius** [KLAW-dee-us] sent four **Roman legions** to invade! Over 800,000 years of British **prehistory** ended as written history began.",
           "image": "/units/ks2_stone_to_iron_age/assets/uffington_white_horse_hillfort.jpg",
           "image_alt": "Aerial landscape view of the prehistoric chalk Uffington White Horse and Uffington Castle hillfort in Oxfordshire",
-          "caption": "The 110-metre prehistoric Uffington White Horse cut into gleaming white chalk beside Uffington Castle hillfort on the Berkshire Downs in Oxfordshire (CC BY-SA 2.0, Dave Price).",
-          "image_caption": "The 110-metre prehistoric Uffington White Horse cut into gleaming white chalk beside Uffington Castle hillfort on the Berkshire Downs in Oxfordshire (CC BY-SA 2.0, Dave Price).",
+          "caption": "The 110-metre prehistoric Uffington White Horse cut into gleaming white chalk beside Uffington Castle hillfort in Oxfordshire.",
+          "image_caption": "The 110-metre prehistoric Uffington White Horse cut into gleaming white chalk beside Uffington Castle hillfort in Oxfordshire.",
           "isReversed": false,
           "sources": [
             {
@@ -3719,17 +4493,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
-              "title": "Source C: The Snettisham Great Torc — Twisted Gold Neck Ring (c. 100 BC, British Museum)",
-              "caption": "The Snettisham Great Torc found in Norfolk — over one kilogram of gold and silver wires twisted into eight ropes and welded onto hollow ring ends (CC BY 2.0, Paul Hudson).",
+              "title": "Source C: The Snettisham Great Torc — Twisted Gold Neck Ring (c. 100 BC)",
+              "caption": "The Snettisham Great Torc found in Norfolk — over one kilogram of gold and silver wires twisted into eight neat ropes.",
               "author": "Master Celtic Goldsmith in Eastern Britain (Iceni Territory)",
               "date": "c. 100–75 BC",
-              "context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy neck ring (torc) weighs over a kilogram! Celtic goldsmiths twisted sixty-four fine gold-and-silver threads into eight neat ropes and soldered richly patterned hollow terminals onto both ends.",
-              "source_context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy neck ring (torc) weighs over a kilogram! Celtic goldsmiths twisted sixty-four fine gold-and-silver threads into eight neat ropes and soldered richly patterned hollow terminals onto both ends.",
+              "context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy gold neck ring (torc) was twisted from sixty-four fine gold-and-silver threads.",
+              "source_context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy gold neck ring (torc) was twisted from sixty-four fine gold-and-silver threads. **Hinge Question:** What does the Snettisham Great Torc prove about the skill and wealth of Iron Age Britain BEFORE the Romans invaded?",
               "question_badge": "TWISTED CELTIC GOLD",
               "question": "Look closely at the twisted gold ropes in Source C. What does this torc prove about Celtic craftworkers?",
-              "model_answer": "Source C is woven from sixty-four fine gold wires twisted into eight neat ropes with richly carved hollow ends, weighing over a kilogram! It proves Iron Age Celtic Britons were world-class artists and wealthy tribal rulers long before Roman armies ever arrived.",
-              "text": "British Museum Collection (1951,0402.2): The Snettisham Great Torc (c. 100 BC), crafted from 64 electrum (gold-silver) wires twisted into eight strands with cast ring terminals decorated in Celtic relief.",
-              "provenance": "The Snettisham Great Torc, British Museum (Wikimedia Commons, CC BY 2.0, photographed by Paul Hudson)."
+              "model_answer": "Source C twists sixty-four fine gold wires into eight neat ropes weighing over a kilogram! It proves Iron Age Celtic Britons were brilliant artists and wealthy rulers before Rome invaded.",
+              "text": "Artefact note: Weighing as much as a full bag of sugar, sixty-four thin gold wires were twisted into eight shining ropes for a Celtic king or queen's neck!",
+              "provenance": "The Snettisham Great Torc, Late Iron Age gold neck ring from Norfolk (c. 100 BC)."
             },
             {
               "id": "ks2_stone_to_iron_age_l6_src_d",
@@ -3738,17 +4512,17 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_stone_to_iron_age/assets/iron_age_celtic_gold_stater.jpg",
               "image": "/units/ks2_stone_to_iron_age/assets/iron_age_celtic_gold_stater.jpg",
-              "title": "Source D: Iron Age British Gold Stater Coin Stamped with a Celtic Horse (c. 50 BC)",
-              "caption": "Late Iron Age British gold stater coin stamped with a stylised galloping Celtic horse, Portable Antiquities Scheme (CC BY-SA 4.0, West Yorkshire Archaeology Service / Amy Downes).",
+              "title": "Source D: Iron Age British Gold Stater Coin with a Galloping Horse (c. 50 BC)",
+              "caption": "Late Iron Age British gold stater coin stamped with a lively galloping Celtic horse and chariot wheel.",
               "author": "Late Iron Age Tribal Moneyer in Britain",
               "date": "c. 55–45 BC",
-              "context": "By 100–50 BC, powerful Celtic tribes across Britain began minting their own gold, silver, and bronze coins called staters. Many stamped bold galloping horses, wheat ears, and even the names of tribal kings in Latin letters learned through cross-Channel trade!",
-              "source_context": "By 100–50 BC, powerful Celtic tribes across Britain began minting their own gold, silver, and bronze coins called staters. Many stamped bold galloping horses, wheat ears, and even the names of tribal kings in Latin letters learned through cross-Channel trade!",
+              "context": "By 50 BC, powerful Celtic tribes across Britain minted gold and silver stater coins stamped with horses, wheat ears, and even king names in Latin letters.",
+              "source_context": "By 50 BC, powerful Celtic tribes across Britain minted gold and silver stater coins stamped with horses, wheat ears, and even king names in Latin letters. **Hinge Question:** Why does stamping gold coins and king names mark the moment British \"prehistory\" began turning into written history?",
               "question_badge": "GALLOPING GOLD COIN",
               "question": "Study the galloping horse coin in Source D. What does minting gold coins reveal about Late Iron Age tribes?",
-              "model_answer": "Source D shows Late Iron Age tribes minted stamped gold stater coins decorated with proud horses and wheat symbols. Minting coins proves Celtic kingdoms had organised rulers, busy trade markets with Europe, and the very first stamped words right before Roman history began!",
-              "text": "Archaeological find record (FindID 280453): Late Iron Age British gold stater coin (c. 55–45 BC) struck with a stylised disjointed Celtic horse, wheel, and pellets.",
-              "provenance": "Iron Age gold stater coin, Portable Antiquities Scheme FindID 280453 (Wikimedia Commons, CC BY-SA 4.0, West Yorkshire Archaeology Service / Amy Downes)."
+              "model_answer": "Source D shows Late Iron Age tribes minted stamped gold stater coins decorated with proud horses and wheels. It proves Celtic Britain had organised kings, busy trade with Europe, and its earliest stamped words!",
+              "text": "Artefact note: Struck with a heavy hammer onto a hot button of pure gold, this shiny Celtic coin shows a galloping horse leaping above a chariot wheel.",
+              "provenance": "Late Iron Age British gold stater coin found in Yorkshire (c. 55–45 BC)."
             }
           ]
         }
@@ -3761,17 +4535,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/iron_age_rotary_quern_stone.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/iron_age_rotary_quern_stone.jpg",
-          "title": "Source A: Spinning Iron Age Rotary Quern Stone for Grinding Grain (Portable Antiquities Scheme)",
-          "caption": "Heavy round Iron Age rotary quern millstone with central hopper hole for pouring wheat grain to grind into flour (CC BY 2.0, North Lincolnshire Museum / Martin Foreman).",
+          "title": "Source A: Spinning Iron Age Rotary Quern Stone for Grinding Grain (c. 200 BC)",
+          "caption": "Heavy round Iron Age rotary quern stone with a central hole for pouring wheat grain to grind into bread flour.",
           "author": "Iron Age Stone-Carver & Farming Household",
           "date": "c. 200 BC–AD 43",
-          "context": "Earlier Stone and Bronze Age families knelt for hours pushing a rubbing stone back and forth on a flat saddle stone, before Iron Age villages introduced heavy round stone querns like this.",
-          "source_context": "Earlier Stone and Bronze Age families knelt for hours pushing a rubbing stone back and forth on a flat saddle stone, before Iron Age villages introduced heavy round stone querns like this.",
+          "context": "Earlier families knelt for hours rubbing grain back and forth on flat stones before Iron Age makers invented spinning rotary querns like Source A.",
+          "source_context": "Earlier families knelt for hours rubbing grain back and forth on flat stones before Iron Age makers invented spinning rotary querns like Source A. **Hinge Question:** How did spinning a round rotary quern stone make daily life easier for Iron Age farming families?",
           "question_badge": "SPINNING STONE MILL",
           "question": "Look closely at the round stone with a hole in Source A. How did families use it?",
-          "model_answer": "Source A is the heavy top stone of an Iron Age rotary quern. Families poured wheat or barley grains into the central hole and turned a wooden peg handle to spin the stone round and round, grinding grain into soft bread flour much faster than rubbing stones back and forth!",
-          "text": "Archaeological find record (FindID 964181): Upper stone of a beehive-shaped Iron Age rotary quern with central grain-feed funnel and side socket for a wooden turning handle.",
-          "provenance": "Iron Age rotary quern stone, Portable Antiquities Scheme FindID 964181 (Wikimedia Commons, CC BY 2.0, North Lincolnshire Museum / Martin Foreman)."
+          "model_answer": "Families poured wheat or barley into the top hole and turned a wooden side handle to spin Source A round and round, grinding flour much faster than rubbing stones.",
+          "text": "Artefact note: Children poured golden wheat into the top hole and pushed a wooden peg handle in a circle, spinning this heavy stone to crush grain into soft flour!",
+          "provenance": "Iron Age beehive-shaped rotary quern stone from Lincolnshire (c. 300–50 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l6_src_b",
@@ -3780,17 +4554,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/waterloo_bridge_horned_helmet.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/waterloo_bridge_horned_helmet.jpg",
-          "title": "Source B: The Waterloo Bridge Ceremonial Bronze Horned Helmet (c. 150–50 BC, British Museum)",
-          "caption": "Riveted sheet-bronze Iron Age horned helmet decorated with swirling Celtic patterns and red glass studs, dredged from the River Thames at Waterloo Bridge (CC BY 2.0, WordRidden).",
+          "title": "Source B: The Waterloo Bridge Bronze Horned Helmet (c. 150–50 BC)",
+          "caption": "Thin sheet-bronze Iron Age horned helmet decorated with swirling Celtic curves and red glass studs, found in the River Thames.",
           "author": "Celtic Master Bronzesmith in Southern Britain",
           "date": "c. 150–50 BC",
-          "context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique Iron Age helmet is made from wafer-thin riveted bronze sheets.",
-          "source_context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique Iron Age helmet is made from wafer-thin riveted bronze sheets.",
+          "context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique horned helmet is made of wafer-thin bronze sheets.",
+          "source_context": "Dredged from the muddy bed of the River Thames near Waterloo Bridge in 1868, this unique horned helmet is made of wafer-thin bronze sheets. **Hinge Question:** If the Waterloo Helmet's bronze sheet was too thin for real sword fights, why was it made and placed in the River Thames?",
           "question_badge": "HORNED RIVER TREASURE",
           "question": "Inspect Source B. Why do historians think this horned helmet was made for ceremonies or sacred offerings?",
-          "model_answer": "Source B is crafted from thin sheet bronze with tall riveted horns, swirling Celtic art, and red glass studs. Because thin bronze would crumple against tough iron swords, historians think a proud leader wore it for grand parades or offered it on a wooden statue into the sacred River Thames!",
-          "text": "British Museum Collection (1988,1004.1): Sheet-bronze Iron Age helmet with conical riveted horns, repoussé swirling Celtic scrollwork, and red glass enamel studs; recovered from the River Thames near Waterloo Bridge in 1868.",
-          "provenance": "The Waterloo Bridge Celtic Horned Helmet, British Museum (Wikimedia Commons, CC BY 2.0, photographed by WordRidden)."
+          "model_answer": "Source B is made of wafer-thin bronze with tall horns and red glass studs that would dent against an iron sword. Instead, it was worn in parades or offered to water gods in the River Thames!",
+          "text": "Artefact note: Made from thin shiny bronze with two pointed horns and bright red glass dots, this fancy helmet was placed into the River Thames as a sacred gift.",
+          "provenance": "The Waterloo Bridge Iron Age bronze horned helmet from the River Thames, London (c. 150–50 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l6_src_c",
@@ -3799,17 +4573,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
-          "title": "Source C: The Snettisham Great Torc — Twisted Gold Neck Ring (c. 100 BC, British Museum)",
-          "caption": "The Snettisham Great Torc found in Norfolk — over one kilogram of gold and silver wires twisted into eight ropes and welded onto hollow ring ends (CC BY 2.0, Paul Hudson).",
+          "title": "Source C: The Snettisham Great Torc — Twisted Gold Neck Ring (c. 100 BC)",
+          "caption": "The Snettisham Great Torc found in Norfolk — over one kilogram of gold and silver wires twisted into eight neat ropes.",
           "author": "Master Celtic Goldsmith in Eastern Britain (Iceni Territory)",
           "date": "c. 100–75 BC",
-          "context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy neck ring (torc) weighs over a kilogram! Celtic goldsmiths twisted sixty-four fine gold-and-silver threads into eight neat ropes and soldered richly patterned hollow terminals onto both ends.",
-          "source_context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy neck ring (torc) weighs over a kilogram! Celtic goldsmiths twisted sixty-four fine gold-and-silver threads into eight neat ropes and soldered richly patterned hollow terminals onto both ends.",
+          "context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy gold neck ring (torc) was twisted from sixty-four fine gold-and-silver threads.",
+          "source_context": "Ploughed up by a farmer at Snettisham in Norfolk in 1950, this heavy gold neck ring (torc) was twisted from sixty-four fine gold-and-silver threads. **Hinge Question:** What does the Snettisham Great Torc prove about the skill and wealth of Iron Age Britain BEFORE the Romans invaded?",
           "question_badge": "TWISTED CELTIC GOLD",
           "question": "Look closely at the twisted gold ropes in Source C. What does this torc prove about Celtic craftworkers?",
-          "model_answer": "Source C is woven from sixty-four fine gold wires twisted into eight neat ropes with richly carved hollow ends, weighing over a kilogram! It proves Iron Age Celtic Britons were world-class artists and wealthy tribal rulers long before Roman armies ever arrived.",
-          "text": "British Museum Collection (1951,0402.2): The Snettisham Great Torc (c. 100 BC), crafted from 64 electrum (gold-silver) wires twisted into eight strands with cast ring terminals decorated in Celtic relief.",
-          "provenance": "The Snettisham Great Torc, British Museum (Wikimedia Commons, CC BY 2.0, photographed by Paul Hudson)."
+          "model_answer": "Source C twists sixty-four fine gold wires into eight neat ropes weighing over a kilogram! It proves Iron Age Celtic Britons were brilliant artists and wealthy rulers before Rome invaded.",
+          "text": "Artefact note: Weighing as much as a full bag of sugar, sixty-four thin gold wires were twisted into eight shining ropes for a Celtic king or queen's neck!",
+          "provenance": "The Snettisham Great Torc, Late Iron Age gold neck ring from Norfolk (c. 100 BC)."
         },
         {
           "id": "ks2_stone_to_iron_age_l6_src_d",
@@ -3818,17 +4592,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_stone_to_iron_age/assets/iron_age_celtic_gold_stater.jpg",
           "image": "/units/ks2_stone_to_iron_age/assets/iron_age_celtic_gold_stater.jpg",
-          "title": "Source D: Iron Age British Gold Stater Coin Stamped with a Celtic Horse (c. 50 BC)",
-          "caption": "Late Iron Age British gold stater coin stamped with a stylised galloping Celtic horse, Portable Antiquities Scheme (CC BY-SA 4.0, West Yorkshire Archaeology Service / Amy Downes).",
+          "title": "Source D: Iron Age British Gold Stater Coin with a Galloping Horse (c. 50 BC)",
+          "caption": "Late Iron Age British gold stater coin stamped with a lively galloping Celtic horse and chariot wheel.",
           "author": "Late Iron Age Tribal Moneyer in Britain",
           "date": "c. 55–45 BC",
-          "context": "By 100–50 BC, powerful Celtic tribes across Britain began minting their own gold, silver, and bronze coins called staters. Many stamped bold galloping horses, wheat ears, and even the names of tribal kings in Latin letters learned through cross-Channel trade!",
-          "source_context": "By 100–50 BC, powerful Celtic tribes across Britain began minting their own gold, silver, and bronze coins called staters. Many stamped bold galloping horses, wheat ears, and even the names of tribal kings in Latin letters learned through cross-Channel trade!",
+          "context": "By 50 BC, powerful Celtic tribes across Britain minted gold and silver stater coins stamped with horses, wheat ears, and even king names in Latin letters.",
+          "source_context": "By 50 BC, powerful Celtic tribes across Britain minted gold and silver stater coins stamped with horses, wheat ears, and even king names in Latin letters. **Hinge Question:** Why does stamping gold coins and king names mark the moment British \"prehistory\" began turning into written history?",
           "question_badge": "GALLOPING GOLD COIN",
           "question": "Study the galloping horse coin in Source D. What does minting gold coins reveal about Late Iron Age tribes?",
-          "model_answer": "Source D shows Late Iron Age tribes minted stamped gold stater coins decorated with proud horses and wheat symbols. Minting coins proves Celtic kingdoms had organised rulers, busy trade markets with Europe, and the very first stamped words right before Roman history began!",
-          "text": "Archaeological find record (FindID 280453): Late Iron Age British gold stater coin (c. 55–45 BC) struck with a stylised disjointed Celtic horse, wheel, and pellets.",
-          "provenance": "Iron Age gold stater coin, Portable Antiquities Scheme FindID 280453 (Wikimedia Commons, CC BY-SA 4.0, West Yorkshire Archaeology Service / Amy Downes)."
+          "model_answer": "Source D shows Late Iron Age tribes minted stamped gold stater coins decorated with proud horses and wheels. It proves Celtic Britain had organised kings, busy trade with Europe, and its earliest stamped words!",
+          "text": "Artefact note: Struck with a heavy hammer onto a hot button of pure gold, this shiny Celtic coin shows a galloping horse leaping above a chariot wheel.",
+          "provenance": "Late Iron Age British gold stater coin found in Yorkshire (c. 55–45 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -3845,7 +4619,7 @@ window.UNIT_DATA = {
             "trigger": "Blacksmiths hammered widespread iron ore into tough ploughshares, while families spun rotary querns inside thatched wattle-and-daub roundhouses.",
             "connective": "Bumper wheat harvests fed a booming population across Britain.",
             "question": "How did iron tools and roundhouses change farming after 800 BC?",
-            "prose_hash": "9a3a0f0aac"
+            "prose_hash": "64879897fe"
           },
           {
             "step": 2,
@@ -3857,7 +4631,7 @@ window.UNIT_DATA = {
             "trigger": "Rival Celtic tribes dug giant multi-banked hillforts like Maiden Castle and carved the gleaming chalk Uffington White Horse.",
             "connective": "Protected tribal grain stores, smithies, and markets behind towering ramparts.",
             "question": "Why did rival Celtic tribes build giant hillforts across Britain?",
-            "prose_hash": "59ed0f7a95"
+            "prose_hash": "d0f43689c0"
           },
           {
             "step": 3,
@@ -3869,7 +4643,7 @@ window.UNIT_DATA = {
             "trigger": "Smiths crafted the Snettisham Great Torc and horned helmets, rulers minted gold stater coins, and Claudius invaded in AD 43.",
             "connective": "Brought over 800,000 years of British prehistory into written history.",
             "question": "What do gold treasures and coins prove about Britain before AD 43?",
-            "prose_hash": "247f29a57d"
+            "prose_hash": "706e259c97"
           }
         ]
       },
@@ -3901,7 +4675,7 @@ window.UNIT_DATA = {
           "dates": "c. 800–400 BC",
           "para_ref": "[6.1]",
           "paraRef": "[6.1]",
-          "prose_hash": "9a3a0f0aac"
+          "prose_hash": "64879897fe"
         },
         {
           "step": 2,
@@ -3930,7 +4704,7 @@ window.UNIT_DATA = {
           "dates": "c. 400–100 BC",
           "para_ref": "[6.3]",
           "paraRef": "[6.3]",
-          "prose_hash": "59ed0f7a95"
+          "prose_hash": "d0f43689c0"
         },
         {
           "step": 3,
@@ -3959,7 +4733,7 @@ window.UNIT_DATA = {
           "dates": "c. 100 BC–AD 43",
           "para_ref": "[6.5]",
           "paraRef": "[6.5]",
-          "prose_hash": "247f29a57d"
+          "prose_hash": "706e259c97"
         }
       ],
       "tasks": [
@@ -4048,78 +4822,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Around 800 BC, why did iron tools spread much more widely across British farms than bronze tools had?",
-          "q": "Around 800 BC, why did iron tools spread much more widely across British farms than bronze tools had?",
+          "question": "Around 800 BC, why could local blacksmiths make iron tools in almost every part of Britain?",
+          "q": "Around 800 BC, why could local blacksmiths make iron tools in almost every part of Britain?",
           "options": [
-            "Reddish iron ore rock was common across Britain, and hammered iron held an even tougher edge than bronze",
-            "Iron fell ready-made out of rainclouds every winter",
-            "Iron melted over a tiny candle flame",
-            "Tin and copper suddenly vanished from Cornwall and Wales"
+            "Reddish iron ore rock lay widely across British hills and bogs",
+            "Iron washed up ready-made on sandy beaches",
+            "Every family dug tin and copper in their garden",
+            "Roman merchants gave away free iron swords"
           ],
           "correct": 0,
-          "answer": "Reddish iron ore rock was common across Britain, and hammered iron held an even tougher edge than bronze",
-          "a": "Reddish iron ore rock was common across Britain, and hammered iron held an even tougher edge than bronze",
-          "explanation": "Because iron ore lay widely across British hills and bogs, local blacksmiths could forge strong ploughshares, saws, and sickles for every village."
+          "answer": "Reddish iron ore rock lay widely across British hills and bogs",
+          "a": "Reddish iron ore rock lay widely across British hills and bogs",
+          "explanation": "Unlike rare tin and copper, reddish iron ore rock was common across Britain's hills and bogs."
         },
         {
           "stage": 1,
-          "question": "How were Iron Age roundhouses built, and how did families grind grain into flour inside them?",
-          "q": "How were Iron Age roundhouses built, and how did families grind grain into flour inside them?",
+          "question": "How did Iron Age blacksmiths turn reddish iron ore into tough saws, swords, and ploughshares?",
+          "q": "How did Iron Age blacksmiths turn reddish iron ore into tough saws, swords, and ploughshares?",
           "options": [
-            "Wattle-and-daub walls under a tall thatched roof; families spun heavy round rotary quern stones",
-            "Glass windows and brick chimneys; families used wind-powered iron mills",
-            "Square stone towers; families bought sliced bread from Roman shops",
-            "Floating reed rafts; families boiled whole stalks of grass"
+            "They poured cold water over flint nodules",
+            "They baked wet mud in the sun",
+            "They carved soft rock with antler picks",
+            "They heated iron ore in clay furnaces and hammered the glowing metal on an anvil"
           ],
-          "correct": 0,
-          "answer": "Wattle-and-daub walls under a tall thatched roof; families spun heavy round rotary quern stones",
-          "a": "Wattle-and-daub walls under a tall thatched roof; families spun heavy round rotary quern stones",
-          "explanation": "Wattle-and-daub walls kept warmth inside chimney-free thatched roundhouses, while spinning rotary querns ground wheat quickly into flour."
+          "correct": 3,
+          "answer": "They heated iron ore in clay furnaces and hammered the glowing metal on an anvil",
+          "a": "They heated iron ore in clay furnaces and hammered the glowing metal on an anvil",
+          "explanation": "Blacksmiths heated iron ore in roaring clay furnaces and hammered the red-hot iron into strong tools."
+        },
+        {
+          "stage": 1,
+          "question": "How did iron-tipped ploughshares help Celtic farming families grow bigger wheat harvests?",
+          "q": "How did iron-tipped ploughshares help Celtic farming families grow bigger wheat harvests?",
+          "options": [
+            "They watered crops automatically",
+            "They scared away crows with loud bells",
+            "They sliced easily through heavy clay soil that wooden or bronze ploughs struggled to turn",
+            "They harvested ripe stalks without farmers"
+          ],
+          "correct": 2,
+          "answer": "They sliced easily through heavy clay soil that wooden or bronze ploughs struggled to turn",
+          "a": "They sliced easily through heavy clay soil that wooden or bronze ploughs struggled to turn",
+          "explanation": "Tough iron ploughshares cut deep into heavy British clay soil, opening rich new farmland."
+        },
+        {
+          "stage": 1,
+          "question": "Which clever spinning stone tool did Iron Age families turn inside roundhouses to grind grain into flour?",
+          "q": "Which clever spinning stone tool did Iron Age families turn inside roundhouses to grind grain into flour?",
+          "options": [
+            "A flint handaxe",
+            "A rotary quern",
+            "A wooden loom",
+            "A bronze lunula"
+          ],
+          "correct": 1,
+          "answer": "A rotary quern",
+          "a": "A rotary quern",
+          "explanation": "Spinning a round rotary quern ground wheat and barley into bread flour much faster than rubbing stones back and forth."
+        },
+        {
+          "stage": 1,
+          "question": "How were the circular walls and tall roofs of cosy Iron Age roundhouses built?",
+          "q": "How were the circular walls and tall roofs of cosy Iron Age roundhouses built?",
+          "options": [
+            "Baked red Roman bricks and slate tiles",
+            "Woven wattle-and-daub walls topped by a cone-shaped thatched roof",
+            "Flat Orkney flagstones with glass windows",
+            "Oak planks stitched with yew branches"
+          ],
+          "correct": 1,
+          "answer": "Woven wattle-and-daub walls topped by a cone-shaped thatched roof",
+          "a": "Woven wattle-and-daub walls topped by a cone-shaped thatched roof",
+          "explanation": "Families wove sticks daubed with mud and straw for warm walls under a steep thatched roof, weaving bright wool on upright looms."
         },
         {
           "stage": 2,
-          "question": "What was Maiden Castle in Dorset, and how did its giant chalk ramparts protect a Celtic tribe?",
-          "q": "What was Maiden Castle in Dorset, and how did its giant chalk ramparts protect a Celtic tribe?",
+          "question": "Why did rival Celtic tribes build giant hillforts along high ridges across Britain?",
+          "q": "Why did rival Celtic tribes build giant hillforts along high ridges across Britain?",
           "options": [
-            "A giant Iron Age hillfort ringed by multi-layered earth banks, deep ditches, and maze-like gates",
-            "A medieval Norman stone castle with a drawbridge",
-            "A sunken Stone Age cave beneath the sea",
-            "A Roman amphitheatre built for gladiators"
+            "To protect villagers, grain pits, and cattle behind steep earth ramparts and ditches",
+            "To launch seagoing boats",
+            "To trap woolly mammoths in snow",
+            "To copy Egyptian stone pyramids"
           ],
           "correct": 0,
-          "answer": "A giant Iron Age hillfort ringed by multi-layered earth banks, deep ditches, and maze-like gates",
-          "a": "A giant Iron Age hillfort ringed by multi-layered earth banks, deep ditches, and maze-like gates",
-          "explanation": "Maiden Castle's wave-like chalk ramparts and winding entrances protected hundreds of roundhouses, grain pits, and slingshot defenders."
+          "answer": "To protect villagers, grain pits, and cattle behind steep earth ramparts and ditches",
+          "a": "To protect villagers, grain pits, and cattle behind steep earth ramparts and ditches",
+          "explanation": "As Britain's population grew, tribes defended cattle, grain stores, and workshops inside hilltop forts."
+        },
+        {
+          "stage": 2,
+          "question": "Which massive hillfort in Dorset had white chalk ramparts rising like giant ocean waves?",
+          "q": "Which massive hillfort in Dorset had white chalk ramparts rising like giant ocean waves?",
+          "options": [
+            "Skara Brae",
+            "Durrington Walls",
+            "Star Carr",
+            "Maiden Castle"
+          ],
+          "correct": 3,
+          "answer": "Maiden Castle",
+          "a": "Maiden Castle",
+          "explanation": "Maiden Castle in Dorset is one of the largest Iron Age hillforts in Europe, ringed by towering chalk ramparts."
+        },
+        {
+          "stage": 2,
+          "question": "How did the winding, maze-like gateways at Maiden Castle trap enemy raiders?",
+          "q": "How did the winding, maze-like gateways at Maiden Castle trap enemy raiders?",
+          "options": [
+            "They flooded attackers with boiling bathwater",
+            "They dropped iron portcullis gates from stone towers",
+            "They forced attackers slowly past defenders armed with smooth river slingshot stones",
+            "They led raiders straight into the North Sea"
+          ],
+          "correct": 2,
+          "answer": "They forced attackers slowly past defenders armed with smooth river slingshot stones",
+          "a": "They forced attackers slowly past defenders armed with smooth river slingshot stones",
+          "explanation": "Defenders stood high on the chalk banks hurling deadly river slingshot stones at raiders stuck in winding entrances."
+        },
+        {
+          "stage": 2,
+          "question": "Inside a busy hillfort, where did Celtic villagers safely store spare wheat and barley grain for winter?",
+          "q": "Inside a busy hillfort, where did Celtic villagers safely store spare wheat and barley grain for winter?",
+          "options": [
+            "On open thatched roofs",
+            "Inside hollow bronze shields",
+            "Inside deep underground storage pits",
+            "Floating in wicker river baskets"
+          ],
+          "correct": 2,
+          "answer": "Inside deep underground storage pits",
+          "a": "Inside deep underground storage pits",
+          "explanation": "Sealed underground pits kept harvested grain cool and dry inside the safety of the hillfort ramparts."
+        },
+        {
+          "stage": 2,
+          "question": "What giant 110-metre landmark did an Iron Age tribe carve into gleaming white chalk in Oxfordshire?",
+          "q": "What giant 110-metre landmark did an Iron Age tribe carve into gleaming white chalk in Oxfordshire?",
+          "options": [
+            "The Heel Stone",
+            "The Uffington White Horse",
+            "West Kennet Long Barrow",
+            "Cheddar Gorge"
+          ],
+          "correct": 1,
+          "answer": "The Uffington White Horse",
+          "a": "The Uffington White Horse",
+          "explanation": "Tribes cut away turf on the Oxfordshire hillside to reveal the sleek, 110-metre chalk Uffington White Horse!"
         },
         {
           "stage": 3,
-          "question": "What was the Snettisham Great Torc (c. 100 BC) discovered in Norfolk?",
-          "q": "What was the Snettisham Great Torc (c. 100 BC) discovered in Norfolk?",
+          "question": "Who were the wise Celtic priests and judges who memorised sacred laws and poems without writing books?",
+          "q": "Who were the wise Celtic priests and judges who memorised sacred laws and poems without writing books?",
           "options": [
-            "A heavy royal neck ring woven from sixty-four gold-and-silver wires twisted into eight ropes",
-            "An iron plough blade used to dig ditches",
-            "A clay beaker pot brought from the Alps",
-            "A woven willow trap for catching river eels"
+            "Druids",
+            "Legionaries",
+            "Gladiators",
+            "Senators"
           ],
           "correct": 0,
-          "answer": "A heavy royal neck ring woven from sixty-four gold-and-silver wires twisted into eight ropes",
-          "a": "A heavy royal neck ring woven from sixty-four gold-and-silver wires twisted into eight ropes",
-          "explanation": "Weighing over one kilogram, the Snettisham Great Torc showcases the extraordinary goldsmithing skill and wealth of Iron Age Celtic leaders."
+          "answer": "Druids",
+          "a": "Druids",
+          "explanation": "Celtic Druids trained for many years to memorise laws, prayers, and stories by heart."
         },
         {
           "stage": 3,
-          "question": "Which two clues show Britain was entering written history right before AD 43, and what happened in AD 43?",
-          "q": "Which two clues show Britain was entering written history right before AD 43, and what happened in AD 43?",
+          "question": "What was the Snettisham Great Torc found in Norfolk made from?",
+          "q": "What was the Snettisham Great Torc found in Norfolk made from?",
           "options": [
-            "Tribal kings minted stamped gold stater coins and traded with Gaul and Rome, before Emperor Claudius invaded in AD 43",
-            "Vikings landed at Lindisfarne in AD 43",
-            "Rising seas flooded Doggerland in AD 43",
-            "Skara Brae was built in Orkney in AD 43"
+            "Carved red-deer antler",
+            "Cast Cornish tin",
+            "Polished volcanic greenstone",
+            "Twisted ropes of gold and silver wires weighing over a kilogram"
           ],
-          "correct": 0,
-          "answer": "Tribal kings minted stamped gold stater coins and traded with Gaul and Rome, before Emperor Claudius invaded in AD 43",
-          "a": "Tribal kings minted stamped gold stater coins and traded with Gaul and Rome, before Emperor Claudius invaded in AD 43",
-          "explanation": "Stamped Celtic gold staters and cross-Channel trade flourished right before Emperor Claudius's four Roman legions invaded Britain in AD 43."
+          "correct": 3,
+          "answer": "Twisted ropes of gold and silver wires weighing over a kilogram",
+          "a": "Twisted ropes of gold and silver wires weighing over a kilogram",
+          "explanation": "Master smiths twisted sixty-four gold-and-silver wires into eight ropes to craft the heavy Snettisham Great Torc!"
+        },
+        {
+          "stage": 3,
+          "question": "Where did Iron Age Britons offer treasures like the Waterloo Bridge horned helmet to water spirits?",
+          "q": "Where did Iron Age Britons offer treasures like the Waterloo Bridge horned helmet to water spirits?",
+          "options": [
+            "Underneath Skara Brae",
+            "On top of Ben Nevis",
+            "Inside Gough's Cave",
+            "Into the sacred River Thames"
+          ],
+          "correct": 3,
+          "answer": "Into the sacred River Thames",
+          "a": "Into the sacred River Thames",
+          "explanation": "Like Bronze Age people before them, Iron Age Celts placed precious ceremonial helmets and shields into sacred rivers like the Thames."
+        },
+        {
+          "stage": 3,
+          "question": "What were the stamped gold coins minted by Late Iron Age British rulers around 50 BC called?",
+          "q": "What were the stamped gold coins minted by Late Iron Age British rulers around 50 BC called?",
+          "options": [
+            "Denarii",
+            "Beakers",
+            "Staters",
+            "Lunulae"
+          ],
+          "correct": 2,
+          "answer": "Staters",
+          "a": "Staters",
+          "explanation": "Tribal kings minted gold stater coins stamped with galloping horses, wheels, and wheat ears while trading with Gaul and Rome."
+        },
+        {
+          "stage": 3,
+          "question": "What major event in AD 43 brought over 800,000 years of British prehistory to an end?",
+          "q": "What major event in AD 43 brought over 800,000 years of British prehistory to an end?",
+          "options": [
+            "Doggerland flooded beneath the North Sea",
+            "Emperor Claudius sent four Roman legions to invade Britain, starting written history",
+            "A winter storm uncovered Skara Brae",
+            "Fire destroyed the stilt village at Must Farm"
+          ],
+          "correct": 1,
+          "answer": "Emperor Claudius sent four Roman legions to invade Britain, starting written history",
+          "a": "Emperor Claudius sent four Roman legions to invade Britain, starting written history",
+          "explanation": "In AD 43, Emperor Claudius's Roman invasion brought written Latin records to Britain, ending prehistory!"
         }
       ],
       "video": [

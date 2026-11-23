@@ -16,7 +16,7 @@ window.UNIT_DATA = {
   "homepage_background": "/units/ks2_ancient_greece/assets/banner_unit_hero.jpg",
   "cover_image": "/units/ks2_ancient_greece/assets/banner_unit_hero.jpg",
   "cover_image_position": "center 18%",
-  "cover_caption": "The marble Parthenon temple crowning the rocky Acropolis of Athens at golden hour (CC BY-SA, Wikimedia Commons).",
+  "cover_caption": "The marble Parthenon temple crowning the rocky Acropolis of Athens at golden hour.",
   "enquiry": "How was life organised across Greek city-states, and how did Ancient Greek ideas shape the modern Western world?",
   "enquiry_question": "How was life organised across Greek city-states, and how did Ancient Greek ideas shape the modern Western world?",
   "workbooks": [
@@ -43,10 +43,10 @@ window.UNIT_DATA = {
     {
       "id": "lesson_1",
       "skill": "Chronology & Geographical Causation",
-      "title": "Enquiry 1: Mountains, Islands & Rival Poleis — Why Was Ancient Greece Divided Into City-States? (c. 800–500 BC)",
+      "title": "Enquiry 1: Mountains, Islands & Rival City-States (c. 800–500 BC)",
       "subtitle": "Minoans & Mycenaeans, Rugged Mountains & Aegean Islands, Acropolis & Agora, the Greek Alphabet, and Sea Trade",
-      "enquiryQuestion": "Why did geography divide Ancient Greece into rival city-states, and what shared culture still united all Greeks?",
-      "enquiry_question": "Why did geography divide Ancient Greece into rival city-states, and what shared culture still united all Greeks?",
+      "enquiryQuestion": "Why was Ancient Greece split into rival city-states, yet united by culture?",
+      "enquiry_question": "Why was Ancient Greece split into rival city-states, yet united by culture?",
       "prologue": "Sail across sparkling Aegean waves past over a thousand sunlit islands and steep mountain ridges! Discover Bronze Age Mycenae's Lion Gate, climb a fortified Acropolis, haggle in a bustling Agora, and find out what united rival Greek city-states.",
       "blurb": "Sail across sparkling Aegean waves past over a thousand sunlit islands and steep mountain ridges! Discover Bronze Age Mycenae's Lion Gate, climb a fortified Acropolis, haggle in a bustling Agora, and find out what united rival Greek city-states.",
       "hero_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
@@ -73,10 +73,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Centuries before classical Athens, Bronze Age Mycenaean warrior kings built cyclopean stone walls so massive that later Greeks thought one-eyed giants had lifted them! **Hinge Question:** Why did Mycenaean kings carve two fierce stone lions right above the main entrance to their citadel?",
-          "Source B": "Around 800 BC, Greeks met Phoenician sea traders and adapted their symbols by adding clear vowel letters to invent the twenty-four-letter Greek alphabet — from Alpha and Beta comes our word 'alphabet'! **Hinge Question:** How did sharing one easy-to-learn 24-letter alphabet help unite rival Greek city-states across the Aegean Sea?",
-          "Source C": "Each independent Greek polis minted its own coins with proud local symbols — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena's owl alongside an olive branch. **Hinge Question:** What do the owl, the olive sprig, and the letters ΑΘΕ on Source C prove about Athens as an independent polis?",
-          "Source D": "Because Greece's rocky mountains left little flat land for wheat, Greek workshops crafted fine painted pottery and pressed golden olive oil to swap overseas for shiploads of grain. **Hinge Question:** Why do archaeologists dig up Athenian cups like Source D as far away as Italy, Egypt, and Spain?"
+          "Source A": "Centuries before classical Athens, Bronze Age Mycenaean kings built stone walls so huge that later Greeks thought one-eyed Cyclops giants had lifted them! **Hinge Question:** Why did Mycenaean kings carve two fierce stone lions right above the main entrance to their fortress?",
+          "Source B": "Around 800 BC, Greeks met Phoenician sea traders and added vowel letters to create the 24-letter Greek alphabet — from Alpha and Beta comes our word \"alphabet\"! **Hinge Question:** How did sharing one easy-to-learn 24-letter alphabet help unite rival Greek city-states across the Aegean Sea?",
+          "Source C": "Each independent Greek polis minted its own coins with proud local badges — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena’s owl. **Hinge Question:** What do the owl, the olive sprig, and the letters ΑΘΕ on Source C prove about Athens as an independent polis?",
+          "Source D": "Because Greece’s rocky mountains left little flat land for wheat, Greek workshops crafted painted clay cups and pressed golden olive oil to swap overseas for grain. **Hinge Question:** Why do archaeologists dig up Athenian cups like Source D as far away as Italy, Egypt, and Spain?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -205,20 +205,20 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. 2000–500 BC: Minoans, Mycenaeans & Mountain-Divided Poleis",
-          "text": "<span class=\"para-ref\">[1.1]</span> Before marble temples rose in Athens, two Bronze Age peoples thrived around Greece. On **Crete**, **Minoan** sailors built painted palaces and traded across blue waves. Later, mainland **Mycenaean** kings raised giant stone fortresses guarded by the carved **Lion Gate**. Yet rugged land stopped Greece from uniting into one single kingdom.<br><br><span class=\"para-ref\">[1.2]</span> Steep mountains sliced the mainland into narrow valleys, while over a thousand islands dotted the **Aegean Sea**. Travelling overland took days on rocky mule tracks, so communities grew up fiercely independent. Greeks built separate city-states called **poleis**, including **Athens**, **Sparta**, **Corinth**, and **Thebes**. Every **polis** guarded its own laws, citizen army, and silver coins.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Before marble temples rose in Athens, two Bronze Age peoples thrived around Greece. On **Crete**, **Minoan** sailors built painted palaces and traded across blue waves. Later, mainland **Mycenaean** kings raised giant stone fortresses guarded by the carved **Lion Gate**. Yet rugged land stopped Greece from uniting into one single kingdom.<br><br><span class=\"para-ref\">[1.2]</span> Steep mountains sliced the mainland into narrow valleys, while over a thousand islands dotted the **Aegean Sea**. Travelling overland took days on rocky mule tracks, so communities grew up fiercely independent. Greeks built separate city-states called **poleis**, including **Athens**, **Sparta**, **Corinth**, and **Thebes**. Every **polis** guarded its own laws, citizen army, and silver coins.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Long ago in **Ancient Greece**, two Bronze Age peoples thrived by the sea. On **Crete**, **Minoan** [mih-NOH-un] sailors built painted palaces and sailed blue waves. Later, mainland **Mycenaean** [my-suh-NEE-un] kings raised stone forts behind the **Lion Gate**. Yet rugged land stopped Greece from becoming one kingdom.<br><br><span class=\"para-ref\">[1.2]</span> Steep **mountains** sliced the mainland into narrow valleys. Over a thousand **islands** also dotted the **Aegean Sea**. Slow mountain tracks kept towns apart, so Greeks built rival **city-states** called **poleis** [POH-lace]. **Athens**, **Sparta**, **Corinth**, and **Thebes** each guarded their own **polis** laws and coins.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Long ago in **Ancient Greece**, two Bronze Age peoples thrived by the sea. On **Crete**, **Minoan** [mih-NOH-un] sailors built painted palaces and sailed blue waves. Later, mainland **Mycenaean** [my-suh-NEE-un] kings raised stone forts behind the **Lion Gate**. Yet rugged land stopped Greece from becoming one kingdom.<br><br><span class=\"para-ref\">[1.2]</span> Steep **mountains** sliced the mainland into narrow valleys. Over a thousand **islands** also dotted the **Aegean Sea**. Slow mountain tracks kept towns apart, so Greeks built rival **city-states** called **poleis** [POH-lace]. **Athens**, **Sparta**, **Corinth**, and **Thebes** each guarded their own **polis** laws and coins.",
           "image": "/units/ks2_ancient_greece/assets/ancient_greece_aegean_map_ks2.png",
           "image_alt": "Illustrated Key Stage 2 map of Ancient Greece and the Aegean Sea showing Crete, Mycenae, Athens, Sparta, Corinth, and Thebes",
-          "caption": "Key Stage 2 Reference Map of Ancient Greece & the Aegean Sea — steep mountains and 1,000+ islands divided rival city-states.",
-          "image_caption": "Key Stage 2 Reference Map of Ancient Greece & the Aegean Sea — steep mountains and 1,000+ islands divided rival city-states.",
+          "caption": "Key Stage 2 Reference Map of Ancient Greece & the Aegean Sea — steep mountains and over 1,000 islands divided rival city-states.",
+          "image_caption": "Key Stage 2 Reference Map of Ancient Greece & the Aegean Sea — steep mountains and over 1,000 islands divided rival city-states.",
           "isReversed": false,
           "sources": []
         },
         {
           "act": 2,
           "title": "High City & Busy Market: Inside the Acropolis and the Agora",
-          "text": "<span class=\"para-ref\">[1.3]</span> Although rival city-states often quarrelled, almost every Greek polis shared two famous town spaces. High above the rooftops stood a steep fortified hill called the **Acropolis**, meaning high city. Families climbed behind its thick stone walls whenever enemy soldiers marched near their farms. Citizens also crowned that hilltop with shining temples for their city's favourite protective god.<br><br><span class=\"para-ref\">[1.4]</span> Down on flatter ground lay the **Agora**, a sunny open marketplace buzzing with voices. Farmers sold figs, goat cheese, and fresh fish while potters stacked painted clay bowls. Men also gathered there each morning to swap news and debate fair city laws.",
-          "content": "<span class=\"para-ref\">[1.3]</span> Although rival city-states often quarrelled, almost every Greek polis shared two famous town spaces. High above the rooftops stood a steep fortified hill called the **Acropolis**, meaning high city. Families climbed behind its thick stone walls whenever enemy soldiers marched near their farms. Citizens also crowned that hilltop with shining temples for their city's favourite protective god.<br><br><span class=\"para-ref\">[1.4]</span> Down on flatter ground lay the **Agora**, a sunny open marketplace buzzing with voices. Farmers sold figs, goat cheese, and fresh fish while potters stacked painted clay bowls. Men also gathered there each morning to swap news and debate fair city laws.",
+          "text": "<span class=\"para-ref\">[1.3]</span> Rival city-states often argued, yet almost every Greek **polis** shared two spaces. High above the roofs stood a walled hill called the **Acropolis** [uh-KROP-uh-liss], meaning high city. Families sheltered behind its thick stone walls when enemies marched near. Citizens also crowned that hill with marble temples for their patron god.<br><br><span class=\"para-ref\">[1.4]</span> Down on flat ground lay the **Agora** [AG-uh-ruh], a sunny open marketplace. Farmers sold figs, goat cheese, and fresh fish there. Potters also stacked painted clay bowls on wooden stalls. Men met each morning to swap news and debate city laws.",
+          "content": "<span class=\"para-ref\">[1.3]</span> Rival city-states often argued, yet almost every Greek **polis** shared two spaces. High above the roofs stood a walled hill called the **Acropolis** [uh-KROP-uh-liss], meaning high city. Families sheltered behind its thick stone walls when enemies marched near. Citizens also crowned that hill with marble temples for their patron god.<br><br><span class=\"para-ref\">[1.4]</span> Down on flat ground lay the **Agora** [AG-uh-ruh], a sunny open marketplace. Farmers sold figs, goat cheese, and fresh fish there. Potters also stacked painted clay bowls on wooden stalls. Men met each morning to swap news and debate city laws.",
           "image": "/units/ks2_ancient_greece/assets/athens_acropolis_rock_panorama.jpg",
           "image_alt": "Panoramic view of the steep limestone rock of the Acropolis rising high above Athens",
           "caption": "The steep fortified rock of the Acropolis rising above Athens — both a safe hilltop refuge and a sacred home for marble temples.",
@@ -233,15 +233,15 @@ window.UNIT_DATA = {
               "src": "/units/ks2_ancient_greece/assets/mycenae_bronze_age_lion_gate.jpg",
               "image": "/units/ks2_ancient_greece/assets/mycenae_bronze_age_lion_gate.jpg",
               "title": "Source A: Carved Stone Lion Gate at Bronze Age Mycenae (c. 1250 BC)",
-              "caption": "Giant limestone gateway into the Bronze Age hill fortress of Mycenae on mainland Greece, crowned with two carved stone lions flanking a sacred column.",
+              "caption": "Giant limestone gateway into the Bronze Age hill fortress of Mycenae, crowned with two carved stone lions beside a central pillar.",
               "author": "Mycenaean Royal Stonemasons",
               "date": "c. 1250 BC",
-              "context": "Centuries before classical Athens, Bronze Age Mycenaean warrior kings built cyclopean stone walls so massive that later Greeks thought one-eyed giants had lifted them!",
-              "source_context": "Centuries before classical Athens, Bronze Age Mycenaean warrior kings built cyclopean stone walls so massive that later Greeks thought one-eyed giants had lifted them!",
+              "context": "Centuries before classical Athens, Bronze Age Mycenaean kings built stone walls so huge that later Greeks thought one-eyed Cyclops giants had lifted them!",
+              "source_context": "Centuries before classical Athens, Bronze Age Mycenaean kings built stone walls so huge that later Greeks thought one-eyed Cyclops giants had lifted them! **Hinge Question:** Why did Mycenaean kings carve two fierce stone lions right above the main entrance to their fortress?",
               "question_badge": "MYCENAE LION GATE",
               "question": "Look at the giant blocks and lions in Source A. What message did this gate send visitors?",
-              "model_answer": "The huge limestone blocks and twin carved lions showed visitors and enemies that Mycenae's Bronze Age warrior king was wealthy, protected by strong walls, and fierce enough to defend his fortress.",
-              "provenance": "Carved limestone relief of the Lion Gate at the Bronze Age citadel of Mycenae, Peloponnese, Greece (c. 1250 BC)."
+              "model_answer": "The huge stone blocks and twin carved lions showed visitors and enemies that Mycenae’s Bronze Age warrior king was wealthy, well protected, and fierce enough to defend his city.",
+              "provenance": "Carved limestone Lion Gate at the Bronze Age fortress of Mycenae in southern Greece (c. 1250 BC)."
             },
             {
               "id": "ks2_ancient_greece_l1_src_b",
@@ -250,24 +250,24 @@ window.UNIT_DATA = {
               "type": "written",
               "src": "/units/ks2_ancient_greece/assets/carved_greek_alphabet_stone.jpg",
               "image": "/units/ks2_ancient_greece/assets/carved_greek_alphabet_stone.jpg",
-              "title": "Source B: Ancient Greek Stone Inscription Carved in Capital Letters (c. 5th Century BC)",
-              "caption": "Neat rows of Greek capital letters chiselled into marble so laws and public records could be read aloud in the city.",
+              "title": "Source B: Ancient Greek Stone Inscription in Capital Letters (c. 450 BC)",
+              "caption": "Neat rows of Greek capital letters chiselled into white marble so laws and public records could be read aloud in the city.",
               "author": "Ancient Greek Civic Stonecutter",
               "date": "c. 500–400 BC",
-              "context": "Around 800 BC, Greeks met Phoenician sea traders and adapted their symbols by adding clear vowel letters to invent the twenty-four-letter Greek alphabet — from Alpha and Beta comes our word 'alphabet'!",
-              "source_context": "Around 800 BC, Greeks met Phoenician sea traders and adapted their symbols by adding clear vowel letters to invent the twenty-four-letter Greek alphabet — from Alpha and Beta comes our word 'alphabet'!",
+              "context": "Around 800 BC, Greeks met Phoenician sea traders and added vowel letters to create the 24-letter Greek alphabet — from Alpha and Beta comes our word \"alphabet\"!",
+              "source_context": "Around 800 BC, Greeks met Phoenician sea traders and added vowel letters to create the 24-letter Greek alphabet — from Alpha and Beta comes our word \"alphabet\"! **Hinge Question:** How did sharing one easy-to-learn 24-letter alphabet help unite rival Greek city-states across the Aegean Sea?",
               "question_badge": "CARVED GREEK ALPHABET",
               "question": "Spot familiar letters on Source B. How did this alphabet help connect Greeks across different cities?",
-              "model_answer": "Letters like A, E, K, M, N, O, and T look just like ours! Sharing one 24-letter alphabet let Greeks across distant islands and city-states read trade agreements, public stone laws, and epic poems.",
-              "provenance": "Ancient Greek marble inscription carved in classical capital Greek script (epigraphic museum collection, Greece)."
+              "model_answer": "Letters like A, E, K, M, N, O, and T look just like ours! Sharing one 24-letter alphabet let Greeks across distant islands and city-states read trade deals, public stone laws, and poems.",
+              "provenance": "Ancient Greek marble stone carved with capital Greek letters in Athens, Greece (c. 500–400 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. 800–500 BC: One Hellene Family, 24 Letters & Sea Trade",
-          "text": "<span class=\"para-ref\">[1.5]</span> Across those divided valleys and islands, proud Greeks still called themselves **Hellenes** of one family. Everywhere they sailed, Greeks spoke one shared language and worshipped the same Olympian gods. Around **800 BC**, merchants adapted **Phoenician** letters to invent a clever twenty-four-letter **Greek alphabet**. Adding vowel letters let writers carve clear stone laws and label painted pottery cups!<br><br><span class=\"para-ref\">[1.6]</span> Because rocky hillsides had thin soil, farmers grew hardy **olives** and **grapes** instead of wide wheatfields. Wooden ships carried jars of golden **olive oil** and fine **pottery** across the Mediterranean Sea. Busy sea trade linked Greek harbours together while bringing home vital grain from overseas.",
-          "content": "<span class=\"para-ref\">[1.5]</span> Across those divided valleys and islands, proud Greeks still called themselves **Hellenes** of one family. Everywhere they sailed, Greeks spoke one shared language and worshipped the same Olympian gods. Around **800 BC**, merchants adapted **Phoenician** letters to invent a clever twenty-four-letter **Greek alphabet**. Adding vowel letters let writers carve clear stone laws and label painted pottery cups!<br><br><span class=\"para-ref\">[1.6]</span> Because rocky hillsides had thin soil, farmers grew hardy **olives** and **grapes** instead of wide wheatfields. Wooden ships carried jars of golden **olive oil** and fine **pottery** across the Mediterranean Sea. Busy sea trade linked Greek harbours together while bringing home vital grain from overseas.",
+          "text": "<span class=\"para-ref\">[1.5]</span> Across valleys and islands, proud Greeks called themselves **Hellenes** [HEL-eenz] of one family. Everywhere they sailed, Greeks spoke one language and honoured Olympian gods. Around **800 BC**, traders adapted **Phoenician** [fuh-NEE-shun] signs into the twenty-four-letter **Greek alphabet**. Adding vowel letters let Greeks carve stone laws and label clay cups.<br><br><span class=\"para-ref\">[1.6]</span> Rocky hillsides had thin soil, so farmers grew hardy **olives** and **grapes**. Potters also shaped smooth red clay into painted jars. Wooden ships carried golden **olive oil** and fine **pottery** overseas, bringing home vital wheat grain.",
+          "content": "<span class=\"para-ref\">[1.5]</span> Across valleys and islands, proud Greeks called themselves **Hellenes** [HEL-eenz] of one family. Everywhere they sailed, Greeks spoke one language and honoured Olympian gods. Around **800 BC**, traders adapted **Phoenician** [fuh-NEE-shun] signs into the twenty-four-letter **Greek alphabet**. Adding vowel letters let Greeks carve stone laws and label clay cups.<br><br><span class=\"para-ref\">[1.6]</span> Rocky hillsides had thin soil, so farmers grew hardy **olives** and **grapes**. Potters also shaped smooth red clay into painted jars. Wooden ships carried golden **olive oil** and fine **pottery** overseas, bringing home vital wheat grain.",
           "image": "/units/ks2_ancient_greece/assets/athenian_agora_hephaestus_temple.jpg",
           "image_alt": "Marble Temple of Hephaestus overlooking the green trees and ruins of the Ancient Agora marketplace in Athens",
           "caption": "Overlooking the Ancient Agora in Athens — where merchants traded olive oil and painted pottery while citizens debated news.",
@@ -281,16 +281,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/athenian_silver_owl_coin.jpg",
               "image": "/units/ks2_ancient_greece/assets/athenian_silver_owl_coin.jpg",
-              "title": "Source C: Silver Athenian Tetradrachm Coin with Owl & Olive Sprig (c. 450 BC)",
-              "caption": "A thick silver coin minted by Athens, stamped with the wise little owl of goddess Athena, a tiny olive twig, and the Greek letters ΑΘΕ ('of the Athenians').",
+              "title": "Source C: Silver Athenian Owl Coin With Olive Sprig (c. 450 BC)",
+              "caption": "A thick silver four-drachma coin minted by Athens, stamped with goddess Athena’s wise little owl, an olive twig, and the letters ΑΘΕ (\"of the Athenians\").",
               "author": "City Mint of Ancient Athens",
               "date": "c. 450 BC",
-              "context": "Each independent Greek polis minted its own coins with proud local symbols — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena's owl alongside an olive branch.",
-              "source_context": "Each independent Greek polis minted its own coins with proud local symbols — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena's owl alongside an olive branch.",
+              "context": "Each independent Greek polis minted its own coins with proud local badges — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena’s owl.",
+              "source_context": "Each independent Greek polis minted its own coins with proud local badges — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena’s owl. **Hinge Question:** What do the owl, the olive sprig, and the letters ΑΘΕ on Source C prove about Athens as an independent polis?",
               "question_badge": "ATHENIAN SILVER OWL COIN",
               "question": "Identify two symbols stamped on Source C. What do they tell us about proud Athens?",
-              "model_answer": "Source C shows the wise owl of Athens's patron goddess Athena and an olive sprig celebrating rich Athenian olive oil exports, proving Athens ruled itself with its own silver money.",
-              "provenance": "Silver tetradrachm coin of Athens showing Athena's owl, olive sprig, and inscription ΑΘΕ (c. 450 BC, numismatic collection)."
+              "model_answer": "Source C shows the wise owl of patron goddess Athena and an olive twig celebrating prized olive oil exports, proving Athens ruled itself with its own trusted silver money.",
+              "provenance": "Silver four-drachma owl coin minted by the city of Athens, Greece (c. 450 BC)."
             },
             {
               "id": "ks2_ancient_greece_l1_src_d",
@@ -299,16 +299,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/attic_red_figure_kylix_cup.jpg",
               "image": "/units/ks2_ancient_greece/assets/attic_red_figure_kylix_cup.jpg",
-              "title": "Source D: Painted Attic Red-Figure Pottery Drinking Cup (Kylix, c. 480 BC)",
-              "caption": "A finely painted two-handled clay drinking cup (kylix) made in an Athenian potter's workshop and traded by ship across the Mediterranean.",
+              "title": "Source D: Painted Athenian Red-Figure Pottery Drinking Cup (c. 480 BC)",
+              "caption": "A finely painted two-handled clay drinking cup (kylix) made in an Athenian workshop and traded by ship across the Mediterranean Sea.",
               "author": "Athenian Potter and Vase Painter",
               "date": "c. 480 BC",
-              "context": "Because Greece's rocky mountains left little flat land for wheat, Greek workshops crafted fine painted pottery and pressed golden olive oil to swap overseas for shiploads of grain.",
-              "source_context": "Because Greece's rocky mountains left little flat land for wheat, Greek workshops crafted fine painted pottery and pressed golden olive oil to swap overseas for shiploads of grain.",
+              "context": "Because Greece’s rocky mountains left little flat land for wheat, Greek workshops crafted painted clay cups and pressed golden olive oil to swap overseas for grain.",
+              "source_context": "Because Greece’s rocky mountains left little flat land for wheat, Greek workshops crafted painted clay cups and pressed golden olive oil to swap overseas for grain. **Hinge Question:** Why do archaeologists dig up Athenian cups like Source D as far away as Italy, Egypt, and Spain?",
               "question_badge": "RED-FIGURE KYLIX CUP",
               "question": "Why did Greek sailors carry painted cups like Source D across the Mediterranean Sea?",
-              "model_answer": "Greek sailors traded prized painted cups like Source D, along with jars of olive oil and wine, to distant ports in return for wheat grain and metals that rocky Greece lacked.",
-              "provenance": "Attic red-figure terracotta kylix drinking cup from Athens (c. 480 BC, museum collection)."
+              "model_answer": "Greek sailors traded prized painted cups like Source D, along with jars of olive oil, to distant ports in exchange for shiploads of wheat grain that rocky Greece could not grow easily.",
+              "provenance": "Painted red-figure clay drinking cup (kylix) made in an Athenian potter’s workshop (c. 480 BC)."
             }
           ]
         }
@@ -322,15 +322,15 @@ window.UNIT_DATA = {
           "src": "/units/ks2_ancient_greece/assets/mycenae_bronze_age_lion_gate.jpg",
           "image": "/units/ks2_ancient_greece/assets/mycenae_bronze_age_lion_gate.jpg",
           "title": "Source A: Carved Stone Lion Gate at Bronze Age Mycenae (c. 1250 BC)",
-          "caption": "Giant limestone gateway into the Bronze Age hill fortress of Mycenae on mainland Greece, crowned with two carved stone lions flanking a sacred column.",
+          "caption": "Giant limestone gateway into the Bronze Age hill fortress of Mycenae, crowned with two carved stone lions beside a central pillar.",
           "author": "Mycenaean Royal Stonemasons",
           "date": "c. 1250 BC",
-          "context": "Centuries before classical Athens, Bronze Age Mycenaean warrior kings built cyclopean stone walls so massive that later Greeks thought one-eyed giants had lifted them!",
-          "source_context": "Centuries before classical Athens, Bronze Age Mycenaean warrior kings built cyclopean stone walls so massive that later Greeks thought one-eyed giants had lifted them!",
+          "context": "Centuries before classical Athens, Bronze Age Mycenaean kings built stone walls so huge that later Greeks thought one-eyed Cyclops giants had lifted them!",
+          "source_context": "Centuries before classical Athens, Bronze Age Mycenaean kings built stone walls so huge that later Greeks thought one-eyed Cyclops giants had lifted them! **Hinge Question:** Why did Mycenaean kings carve two fierce stone lions right above the main entrance to their fortress?",
           "question_badge": "MYCENAE LION GATE",
           "question": "Look at the giant blocks and lions in Source A. What message did this gate send visitors?",
-          "model_answer": "The huge limestone blocks and twin carved lions showed visitors and enemies that Mycenae's Bronze Age warrior king was wealthy, protected by strong walls, and fierce enough to defend his fortress.",
-          "provenance": "Carved limestone relief of the Lion Gate at the Bronze Age citadel of Mycenae, Peloponnese, Greece (c. 1250 BC)."
+          "model_answer": "The huge stone blocks and twin carved lions showed visitors and enemies that Mycenae’s Bronze Age warrior king was wealthy, well protected, and fierce enough to defend his city.",
+          "provenance": "Carved limestone Lion Gate at the Bronze Age fortress of Mycenae in southern Greece (c. 1250 BC)."
         },
         {
           "id": "ks2_ancient_greece_l1_src_b",
@@ -339,16 +339,16 @@ window.UNIT_DATA = {
           "type": "written",
           "src": "/units/ks2_ancient_greece/assets/carved_greek_alphabet_stone.jpg",
           "image": "/units/ks2_ancient_greece/assets/carved_greek_alphabet_stone.jpg",
-          "title": "Source B: Ancient Greek Stone Inscription Carved in Capital Letters (c. 5th Century BC)",
-          "caption": "Neat rows of Greek capital letters chiselled into marble so laws and public records could be read aloud in the city.",
+          "title": "Source B: Ancient Greek Stone Inscription in Capital Letters (c. 450 BC)",
+          "caption": "Neat rows of Greek capital letters chiselled into white marble so laws and public records could be read aloud in the city.",
           "author": "Ancient Greek Civic Stonecutter",
           "date": "c. 500–400 BC",
-          "context": "Around 800 BC, Greeks met Phoenician sea traders and adapted their symbols by adding clear vowel letters to invent the twenty-four-letter Greek alphabet — from Alpha and Beta comes our word 'alphabet'!",
-          "source_context": "Around 800 BC, Greeks met Phoenician sea traders and adapted their symbols by adding clear vowel letters to invent the twenty-four-letter Greek alphabet — from Alpha and Beta comes our word 'alphabet'!",
+          "context": "Around 800 BC, Greeks met Phoenician sea traders and added vowel letters to create the 24-letter Greek alphabet — from Alpha and Beta comes our word \"alphabet\"!",
+          "source_context": "Around 800 BC, Greeks met Phoenician sea traders and added vowel letters to create the 24-letter Greek alphabet — from Alpha and Beta comes our word \"alphabet\"! **Hinge Question:** How did sharing one easy-to-learn 24-letter alphabet help unite rival Greek city-states across the Aegean Sea?",
           "question_badge": "CARVED GREEK ALPHABET",
           "question": "Spot familiar letters on Source B. How did this alphabet help connect Greeks across different cities?",
-          "model_answer": "Letters like A, E, K, M, N, O, and T look just like ours! Sharing one 24-letter alphabet let Greeks across distant islands and city-states read trade agreements, public stone laws, and epic poems.",
-          "provenance": "Ancient Greek marble inscription carved in classical capital Greek script (epigraphic museum collection, Greece)."
+          "model_answer": "Letters like A, E, K, M, N, O, and T look just like ours! Sharing one 24-letter alphabet let Greeks across distant islands and city-states read trade deals, public stone laws, and poems.",
+          "provenance": "Ancient Greek marble stone carved with capital Greek letters in Athens, Greece (c. 500–400 BC)."
         },
         {
           "id": "ks2_ancient_greece_l1_src_c",
@@ -357,16 +357,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/athenian_silver_owl_coin.jpg",
           "image": "/units/ks2_ancient_greece/assets/athenian_silver_owl_coin.jpg",
-          "title": "Source C: Silver Athenian Tetradrachm Coin with Owl & Olive Sprig (c. 450 BC)",
-          "caption": "A thick silver coin minted by Athens, stamped with the wise little owl of goddess Athena, a tiny olive twig, and the Greek letters ΑΘΕ ('of the Athenians').",
+          "title": "Source C: Silver Athenian Owl Coin With Olive Sprig (c. 450 BC)",
+          "caption": "A thick silver four-drachma coin minted by Athens, stamped with goddess Athena’s wise little owl, an olive twig, and the letters ΑΘΕ (\"of the Athenians\").",
           "author": "City Mint of Ancient Athens",
           "date": "c. 450 BC",
-          "context": "Each independent Greek polis minted its own coins with proud local symbols — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena's owl alongside an olive branch.",
-          "source_context": "Each independent Greek polis minted its own coins with proud local symbols — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena's owl alongside an olive branch.",
+          "context": "Each independent Greek polis minted its own coins with proud local badges — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena’s owl.",
+          "source_context": "Each independent Greek polis minted its own coins with proud local badges — Corinth chose winged Pegasus, Aegina chose a sea turtle, and Athens stamped Athena’s owl. **Hinge Question:** What do the owl, the olive sprig, and the letters ΑΘΕ on Source C prove about Athens as an independent polis?",
           "question_badge": "ATHENIAN SILVER OWL COIN",
           "question": "Identify two symbols stamped on Source C. What do they tell us about proud Athens?",
-          "model_answer": "Source C shows the wise owl of Athens's patron goddess Athena and an olive sprig celebrating rich Athenian olive oil exports, proving Athens ruled itself with its own silver money.",
-          "provenance": "Silver tetradrachm coin of Athens showing Athena's owl, olive sprig, and inscription ΑΘΕ (c. 450 BC, numismatic collection)."
+          "model_answer": "Source C shows the wise owl of patron goddess Athena and an olive twig celebrating prized olive oil exports, proving Athens ruled itself with its own trusted silver money.",
+          "provenance": "Silver four-drachma owl coin minted by the city of Athens, Greece (c. 450 BC)."
         },
         {
           "id": "ks2_ancient_greece_l1_src_d",
@@ -375,16 +375,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/attic_red_figure_kylix_cup.jpg",
           "image": "/units/ks2_ancient_greece/assets/attic_red_figure_kylix_cup.jpg",
-          "title": "Source D: Painted Attic Red-Figure Pottery Drinking Cup (Kylix, c. 480 BC)",
-          "caption": "A finely painted two-handled clay drinking cup (kylix) made in an Athenian potter's workshop and traded by ship across the Mediterranean.",
+          "title": "Source D: Painted Athenian Red-Figure Pottery Drinking Cup (c. 480 BC)",
+          "caption": "A finely painted two-handled clay drinking cup (kylix) made in an Athenian workshop and traded by ship across the Mediterranean Sea.",
           "author": "Athenian Potter and Vase Painter",
           "date": "c. 480 BC",
-          "context": "Because Greece's rocky mountains left little flat land for wheat, Greek workshops crafted fine painted pottery and pressed golden olive oil to swap overseas for shiploads of grain.",
-          "source_context": "Because Greece's rocky mountains left little flat land for wheat, Greek workshops crafted fine painted pottery and pressed golden olive oil to swap overseas for shiploads of grain.",
+          "context": "Because Greece’s rocky mountains left little flat land for wheat, Greek workshops crafted painted clay cups and pressed golden olive oil to swap overseas for grain.",
+          "source_context": "Because Greece’s rocky mountains left little flat land for wheat, Greek workshops crafted painted clay cups and pressed golden olive oil to swap overseas for grain. **Hinge Question:** Why do archaeologists dig up Athenian cups like Source D as far away as Italy, Egypt, and Spain?",
           "question_badge": "RED-FIGURE KYLIX CUP",
           "question": "Why did Greek sailors carry painted cups like Source D across the Mediterranean Sea?",
-          "model_answer": "Greek sailors traded prized painted cups like Source D, along with jars of olive oil and wine, to distant ports in return for wheat grain and metals that rocky Greece lacked.",
-          "provenance": "Attic red-figure terracotta kylix drinking cup from Athens (c. 480 BC, museum collection)."
+          "model_answer": "Greek sailors traded prized painted cups like Source D, along with jars of olive oil, to distant ports in exchange for shiploads of wheat grain that rocky Greece could not grow easily.",
+          "provenance": "Painted red-figure clay drinking cup (kylix) made in an Athenian potter’s workshop (c. 480 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -400,10 +400,10 @@ window.UNIT_DATA = {
             "tag": "⛰️ RIVAL POLEIS",
             "trigger": "After Bronze Age Minoans and Mycenaeans, steep mountains and 1,000+ Aegean islands split Greece into independent poleis like Athens and Sparta.",
             "connective": "Each separate polis still needed a safe hilltop refuge and a central town marketplace.",
-            "question": "Why did geography divide Ancient Greece into separate city-states?",
-            "prose_hash": "c34a5c70b8",
-            "questionHeading": "Why did geography divide Ancient Greece into separate city-states?",
-            "focusClue": "Why did geography divide Ancient Greece into separate city-states?",
+            "question": "Why did mountains and islands split Ancient Greece into city-states?",
+            "prose_hash": "7566ad3f98",
+            "questionHeading": "Why did mountains and islands split Ancient Greece into city-states?",
+            "focusClue": "Why did mountains and islands split Ancient Greece into city-states?",
             "dates": "c. 2000–500 BC",
             "paraRef": "[1.1]"
           },
@@ -417,7 +417,7 @@ window.UNIT_DATA = {
             "trigger": "Across Greece, city-states fortified a high rocky Acropolis for temples and safety, above a bustling Agora marketplace for trade and talk.",
             "connective": "Busy harbours and markets soon connected Greek sailors with wider Mediterranean neighbours.",
             "question": "How did the Acropolis and the Agora work together inside a polis?",
-            "prose_hash": "972800e0d4",
+            "prose_hash": "a93764bbf4",
             "questionHeading": "How did the Acropolis and the Agora work together inside a polis?",
             "focusClue": "How did the Acropolis and the Agora work together inside a polis?",
             "dates": "c. 750–500 BC",
@@ -433,7 +433,7 @@ window.UNIT_DATA = {
             "trigger": "Calling themselves Hellenes, Greeks shared one language, a 24-letter alphabet adapted from Phoenicians, Olympian gods, and olive-oil sea trade.",
             "connective": "Prepared rival Greek city-states to develop very different ways of ruling their citizens.",
             "question": "What united all Greeks despite living in rival city-states?",
-            "prose_hash": "5469f13685",
+            "prose_hash": "c4e34606ef",
             "questionHeading": "What united all Greeks despite living in rival city-states?",
             "focusClue": "What united all Greeks despite living in rival city-states?",
             "dates": "c. 800–500 BC",
@@ -444,8 +444,8 @@ window.UNIT_DATA = {
       "workbook_stages": [
         {
           "step": 1,
-          "heading": "Why did geography divide Ancient Greece into separate city-states?",
-          "focus_clue": "Why did geography divide Ancient Greece into separate city-states?",
+          "heading": "Why did mountains and islands split Ancient Greece into city-states?",
+          "focus_clue": "Why did mountains and islands split Ancient Greece into city-states?",
           "words": [
             {
               "term": "Mycenaean",
@@ -462,14 +462,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "After Bronze Age <strong>Mycenaean</strong> kings, steep mountains and islands in the <strong>Aegean Sea</strong> divided Greece into independent <strong>poleis</strong>.",
           "title": "c. 2000–500 BC: Minoans, Mycenaeans & Mountain-Divided Poleis",
-          "question": "Why did geography divide Ancient Greece into separate city-states?",
-          "questionHeading": "Why did geography divide Ancient Greece into separate city-states?",
-          "focusClue": "Why did geography divide Ancient Greece into separate city-states?",
+          "question": "Why did mountains and islands split Ancient Greece into city-states?",
+          "questionHeading": "Why did mountains and islands split Ancient Greece into city-states?",
+          "focusClue": "Why did mountains and islands split Ancient Greece into city-states?",
           "date": "c. 2000–500 BC",
           "dates": "c. 2000–500 BC",
           "para_ref": "[1.1]",
           "paraRef": "[1.1]",
-          "prose_hash": "c34a5c70b8"
+          "prose_hash": "7566ad3f98"
         },
         {
           "step": 2,
@@ -498,7 +498,7 @@ window.UNIT_DATA = {
           "dates": "c. 750–500 BC",
           "para_ref": "[1.3]",
           "paraRef": "[1.3]",
-          "prose_hash": "972800e0d4"
+          "prose_hash": "a93764bbf4"
         },
         {
           "step": 3,
@@ -527,7 +527,7 @@ window.UNIT_DATA = {
           "dates": "c. 800–500 BC",
           "para_ref": "[1.5]",
           "paraRef": "[1.5]",
-          "prose_hash": "5469f13685"
+          "prose_hash": "c4e34606ef"
         }
       ],
       "tasks": [
@@ -616,78 +616,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Which famous gateway guarded the Bronze Age mainland fortress of Mycenae around 1250 BC?",
-          "q": "Which famous gateway guarded the Bronze Age mainland fortress of Mycenae around 1250 BC?",
+          "question": "On which large island did Bronze Age Minoan sailors build painted palaces?",
+          "q": "On which large island did Bronze Age Minoan sailors build painted palaces?",
           "options": [
-            "The Lion Gate",
-            "The Dragon Arch",
-            "The Marble Bridge",
-            "The Golden Tower"
+            "Crete",
+            "Sicily",
+            "Cyprus",
+            "Britain"
           ],
           "correct": 0,
-          "answer": "The Lion Gate",
-          "a": "The Lion Gate",
-          "explanation": "Bronze Age Mycenaean stonemasons crowned their giant limestone fortress entrance with two carved lions around 1250 BC."
+          "answer": "Crete",
+          "a": "Crete",
+          "explanation": "Bronze Age Minoan sailors built colourful palaces on the island of Crete and traded across the sea."
         },
         {
           "stage": 1,
-          "question": "Why did Ancient Greece develop into separate city-states (poleis) instead of one united kingdom?",
-          "q": "Why did Ancient Greece develop into separate city-states (poleis) instead of one united kingdom?",
+          "question": "Which carved stone entrance guarded the Bronze Age mainland fortress of Mycenae?",
+          "q": "Which carved stone entrance guarded the Bronze Age mainland fortress of Mycenae?",
           "options": [
-            "Thick jungles covered the whole country",
-            "Steep rocky mountains and over 1,000 Aegean islands separated communities",
-            "A giant stone wall split Greece in half",
-            "Greeks refused to build any boats"
+            "The Golden Arch",
+            "The Lion Gate",
+            "The Bull Tower",
+            "The Eagle Bridge"
           ],
           "correct": 1,
-          "answer": "Steep rocky mountains and over 1,000 Aegean islands separated communities",
-          "a": "Steep rocky mountains and over 1,000 Aegean islands separated communities",
-          "explanation": "Mountain barriers and scattered islands isolated valleys and harbours, so each polis governed itself independently."
+          "answer": "The Lion Gate",
+          "a": "The Lion Gate",
+          "explanation": "Mainland Mycenaean warrior kings guarded their hilltop stone fortress behind the famous carved Lion Gate."
+        },
+        {
+          "stage": 1,
+          "question": "Roughly how many rocky islands dot the Aegean Sea around mainland Greece?",
+          "q": "Roughly how many rocky islands dot the Aegean Sea around mainland Greece?",
+          "options": [
+            "Fewer than ten islands",
+            "About fifty islands",
+            "Over a thousand islands",
+            "Exactly two giant islands"
+          ],
+          "correct": 2,
+          "answer": "Over a thousand islands",
+          "a": "Over a thousand islands",
+          "explanation": "Steep mainland mountains and more than a thousand Aegean islands kept early Greek communities separate."
+        },
+        {
+          "stage": 1,
+          "question": "What Greek word did people use for an independent Greek city-state (plural: poleis)?",
+          "q": "What Greek word did people use for an independent Greek city-state (plural: poleis)?",
+          "options": [
+            "Agora",
+            "Trireme",
+            "Phalanx",
+            "Polis"
+          ],
+          "correct": 3,
+          "answer": "Polis",
+          "a": "Polis",
+          "explanation": "Each self-ruling Greek city-state and its surrounding farmland was called a polis (plural: poleis)."
+        },
+        {
+          "stage": 1,
+          "question": "Which four rival Greek city-states are named in Stage 1 as independent poleis?",
+          "q": "Which four rival Greek city-states are named in Stage 1 as independent poleis?",
+          "options": [
+            "Athens, Sparta, Corinth, and Thebes",
+            "Rome, Carthage, Troy, and Memphis",
+            "London, York, Bath, and Chester",
+            "Babylon, Ur, Susa, and Nineveh"
+          ],
+          "correct": 0,
+          "answer": "Athens, Sparta, Corinth, and Thebes",
+          "a": "Athens, Sparta, Corinth, and Thebes",
+          "explanation": "Athens, Sparta, Corinth, and Thebes each ruled as an independent polis with its own laws and citizen army."
         },
         {
           "stage": 2,
-          "question": "Inside a Greek polis, what was the difference between the Acropolis and the Agora?",
-          "q": "Inside a Greek polis, what was the difference between the Acropolis and the Agora?",
+          "question": "What does the Greek name \"Acropolis\" literally mean?",
+          "q": "What does the Greek name \"Acropolis\" literally mean?",
           "options": [
-            "Both were underground caves for storing grain",
-            "The Acropolis was a ship harbour and the Agora was a mountain farm",
-            "The Acropolis was the high fortified temple hill, while the Agora was the open marketplace below",
-            "The Agora was only for kings and the Acropolis was a horse racetrack"
-          ],
-          "correct": 2,
-          "answer": "The Acropolis was the high fortified temple hill, while the Agora was the open marketplace below",
-          "a": "The Acropolis was the high fortified temple hill, while the Agora was the open marketplace below",
-          "explanation": "Acropolis means 'high city' (fortress and temples), whereas the sunny Agora below buzzed with market stalls and debate."
-        },
-        {
-          "stage": 3,
-          "question": "From which seafaring traders did Greeks adapt symbols around 800 BC to create their 24-letter alphabet?",
-          "q": "From which seafaring traders did Greeks adapt symbols around 800 BC to create their 24-letter alphabet?",
-          "options": [
-            "Vikings",
-            "Aztecs",
-            "Incas",
-            "Phoenicians"
-          ],
-          "correct": 3,
-          "answer": "Phoenicians",
-          "a": "Phoenicians",
-          "explanation": "Greek merchants adapted Phoenician letters and cleverly added vowels to create a 24-letter alphabet starting with Alpha and Beta."
-        },
-        {
-          "stage": 3,
-          "question": "Which two symbols did Athens proudly stamp onto its silver tetradrachm coins?",
-          "q": "Which two symbols did Athens proudly stamp onto its silver tetradrachm coins?",
-          "options": [
-            "A crocodile and a palm tree",
-            "Athena's wise owl and an olive sprig",
-            "A woolly mammoth and a flint axe",
-            "An elephant and a chariot wheel"
+            "Sunny market",
+            "High city",
+            "Deep harbour",
+            "Olive grove"
           ],
           "correct": 1,
-          "answer": "Athena's wise owl and an olive sprig",
-          "a": "Athena's wise owl and an olive sprig",
-          "explanation": "Athenian silver coins celebrated patron goddess Athena's owl alongside the prized olive trees of Attica."
+          "answer": "High city",
+          "a": "High city",
+          "explanation": "Acropolis means \"high city\" — the steep walled hilltop at the centre of a Greek polis."
+        },
+        {
+          "stage": 2,
+          "question": "Which two main purposes did the rocky Acropolis serve inside a Greek polis?",
+          "q": "Which two main purposes did the rocky Acropolis serve inside a Greek polis?",
+          "options": [
+            "Growing wheat and grazing cattle",
+            "Racing chariots and building ships",
+            "Sheltering families in war and housing marble temples",
+            "Digging silver mines and baking clay bricks"
+          ],
+          "correct": 2,
+          "answer": "Sheltering families in war and housing marble temples",
+          "a": "Sheltering families in war and housing marble temples",
+          "explanation": "Families climbed behind the Acropolis walls during attacks and built shining temples there for their protective god."
+        },
+        {
+          "stage": 2,
+          "question": "What was the Agora inside an Ancient Greek city-state?",
+          "q": "What was the Agora inside an Ancient Greek city-state?",
+          "options": [
+            "A secret underground royal tomb",
+            "A mountain pass guarded by Spartans",
+            "A wooden warship with three banks of oars",
+            "A sunny open marketplace and meeting square"
+          ],
+          "correct": 3,
+          "answer": "A sunny open marketplace and meeting square",
+          "a": "A sunny open marketplace and meeting square",
+          "explanation": "Down on flatter ground, the Agora was a busy open-air marketplace where people shopped, swapped news, and debated laws."
+        },
+        {
+          "stage": 2,
+          "question": "Which everyday foods and goods did farmers and craftworkers sell in the Agora?",
+          "q": "Which everyday foods and goods did farmers and craftworkers sell in the Agora?",
+          "options": [
+            "Figs, goat cheese, fresh fish, and painted clay bowls",
+            "Potatoes, tomatoes, chocolate, and sweetcorn",
+            "Silk robes, porcelain teacups, and paper cheques",
+            "Frozen cod, coal sacks, and iron railway spikes"
+          ],
+          "correct": 0,
+          "answer": "Figs, goat cheese, fresh fish, and painted clay bowls",
+          "a": "Figs, goat cheese, fresh fish, and painted clay bowls",
+          "explanation": "Greek farmers brought figs, goat cheese, and fish to the Agora alongside potters selling painted clay bowls."
+        },
+        {
+          "stage": 2,
+          "question": "Look at Source C from Athens. Which bird was stamped onto Athenian silver coins?",
+          "q": "Look at Source C from Athens. Which bird was stamped onto Athenian silver coins?",
+          "options": [
+            "A golden eagle",
+            "Athena’s wise little owl",
+            "A white sea gull",
+            "A proud peacock"
+          ],
+          "correct": 1,
+          "answer": "Athena’s wise little owl",
+          "a": "Athena’s wise little owl",
+          "explanation": "Athens stamped its four-drachma silver coins with the wise owl of patron goddess Athena and a tiny olive twig."
+        },
+        {
+          "stage": 3,
+          "question": "What proud shared name did Ancient Greeks use for themselves across rival city-states?",
+          "q": "What proud shared name did Ancient Greeks use for themselves across rival city-states?",
+          "options": [
+            "Romans",
+            "Vikings",
+            "Hellenes",
+            "Persians"
+          ],
+          "correct": 2,
+          "answer": "Hellenes",
+          "a": "Hellenes",
+          "explanation": "Even when rival city-states quarrelled, Greeks called themselves Hellenes because they shared one language and culture."
+        },
+        {
+          "stage": 3,
+          "question": "Around 800 BC, whose trading symbols did Greeks adapt by adding vowels to make their 24-letter alphabet?",
+          "q": "Around 800 BC, whose trading symbols did Greeks adapt by adding vowels to make their 24-letter alphabet?",
+          "options": [
+            "Egyptian pharaohs",
+            "Anglo-Saxon monks",
+            "Mayan astronomers",
+            "Phoenician sea traders"
+          ],
+          "correct": 3,
+          "answer": "Phoenician sea traders",
+          "a": "Phoenician sea traders",
+          "explanation": "Around 800 BC, Greek traders adapted Phoenician letters and added clear vowels to create a 24-letter alphabet."
+        },
+        {
+          "stage": 3,
+          "question": "Why did Greek farmers grow hardy olives and grapes instead of wide fields of wheat?",
+          "q": "Why did Greek farmers grow hardy olives and grapes instead of wide fields of wheat?",
+          "options": [
+            "Rocky hillsides had thin soil unsuitable for wide wheatfields",
+            "Greek laws banned anyone from eating bread",
+            "Snow covered Greek valleys for ten months every year",
+            "Olives grew underwater in salt-water lagoons"
+          ],
+          "correct": 0,
+          "answer": "Rocky hillsides had thin soil unsuitable for wide wheatfields",
+          "a": "Rocky hillsides had thin soil unsuitable for wide wheatfields",
+          "explanation": "Because Greece’s steep, rocky hillsides had thin soil, hardy olive trees and grapevines thrived far better than wheat."
+        },
+        {
+          "stage": 3,
+          "question": "What goods did Greek merchant ships export across the Mediterranean Sea to swap for grain?",
+          "q": "What goods did Greek merchant ships export across the Mediterranean Sea to swap for grain?",
+          "options": [
+            "Coal and heavy iron cannons",
+            "Jars of golden olive oil and fine painted pottery",
+            "Cotton rags and printed paper books",
+            "Polar furs and walrus ivory"
+          ],
+          "correct": 1,
+          "answer": "Jars of golden olive oil and fine painted pottery",
+          "a": "Jars of golden olive oil and fine painted pottery",
+          "explanation": "Wooden trading ships carried Greek olive oil and painted clay cups overseas and brought back vital shiploads of wheat grain."
+        },
+        {
+          "stage": 3,
+          "question": "How many letters made up the classical Ancient Greek alphabet?",
+          "q": "How many letters made up the classical Ancient Greek alphabet?",
+          "options": [
+            "12 letters",
+            "50 letters",
+            "24 letters",
+            "100 picture signs"
+          ],
+          "correct": 2,
+          "answer": "24 letters",
+          "a": "24 letters",
+          "explanation": "The Ancient Greek alphabet used 24 clear vowel and consonant letters, making reading and carving stone laws much easier."
         }
       ],
       "video": [
@@ -708,15 +858,16 @@ window.UNIT_DATA = {
         "caption": "Marble columns of the Temple of Poseidon at Cape Sounion overlooking the islands and blue waters of the Aegean Sea",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg"
+      "banner_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
+      "enquiry": "Why was Ancient Greece split into rival city-states, yet united by culture?"
     },
     {
       "id": "lesson_2",
       "skill": "Similarity, Difference & Civic Comparison",
-      "title": "Enquiry 2: Athens vs Sparta — Where Would You Rather Grow Up in Ancient Greece? (c. 508–430 BC)",
+      "title": "Enquiry 2: Growing Up in Athens and Sparta (c. 508–430 BC)",
       "subtitle": "People-Power on the Pnyx, Ostrakon Shards & Kleroterion Juries, Sparta's Agoge Barracks, and Girls' & Women's Lives",
-      "enquiryQuestion": "How did democratic Athens and warrior Sparta govern their cities differently, and whose lives were freer in each polis?",
-      "enquiry_question": "How did democratic Athens and warrior Sparta govern their cities differently, and whose lives were freer in each polis?",
+      "enquiryQuestion": "How different was daily life in democratic Athens and warrior Sparta?",
+      "enquiry_question": "How different was daily life in democratic Athens and warrior Sparta?",
       "prologue": "Climb the windy Pnyx hill in Athens to vote by raising your hand, or march barefoot at age seven into Sparta's tough agoge barracks! Compare pottery ostraka and marble jury machines with bronze helmets — and discover a big surprise about Spartan girls and women.",
       "blurb": "Climb the windy Pnyx hill in Athens to vote by raising your hand, or march barefoot at age seven into Sparta's tough agoge barracks! Compare pottery ostraka and marble jury machines with bronze helmets — and discover a big surprise about Spartan girls and women.",
       "hero_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
@@ -743,10 +894,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Elected general year after year by Athens's citizen Assembly, Pericles championed direct democracy and even introduced daily pay so poorer rowers and cobblers could afford to serve on juries! **Hinge Question:** Why did Pericles's sculptor show him wearing a soldier's helmet tilted calmly back rather than wearing a royal gold crown?",
-          "Source B": "Once a year, Athenian citizens could hold an 'ostracism' vote: if at least 6,000 voters scratched a leader's name onto broken pottery shards (ostraka), the 'winner' had to leave Athens for ten years! **Hinge Question:** Why did Athenians vote on cheap broken potsherds to banish ambitious politicians for ten years?",
-          "Source C": "Athenians worried that rich defendants might bribe courtroom judges if they knew who would sit on the jury beforehand — so each morning they slotted citizens' bronze tickets into a marble kleroterion! **Hinge Question:** How did picking 500 jurors at random on the morning of a trial stop wealthy people from cheating or bribing the court?",
-          "Source D": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside an unbreakable bronze-armoured shield wall! **Hinge Question:** What must it have felt like — for sight, hearing, and breathing — fighting inside a heavy bronze helmet like Source D?"
+          "Source A": "Elected general year after year by Athens’s citizen Assembly, Pericles championed direct democracy and introduced daily pay so poorer rowers and cobblers could serve on juries! **Hinge Question:** Why did Pericles’s sculptor show him wearing a soldier’s helmet tilted calmly back rather than wearing a royal gold crown?",
+          "Source B": "Dug up in the Agora of Athens and dated to 461 BC, this everyday clay pot shard has \"Cimon son of Miltiades\" scratched into its surface. **Hinge Question:** Why did Athenians scratch names onto cheap broken pot shards to banish ambitious politicians for ten years?",
+          "Source C": "Athenians worried rich people might bribe judges if they knew who would sit on the jury — so each morning they slotted citizens’ bronze tickets into a marble kleroterion! **Hinge Question:** How did picking 500 jurors at random on the morning of a trial stop wealthy people from cheating or bribing the court?",
+          "Source D": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside a bronze-armoured shield wall! **Hinge Question:** What must it have felt like — for sight, hearing, and breathing — fighting inside a heavy bronze helmet like Source D?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -881,20 +1032,20 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. 508–430 BC: People-Power on the Pnyx & Who Was Left Out",
-          "text": "<span class=\"para-ref\">[2.1]</span> Around **508 BC**, citizens in sea-trading **Athens** invented a bold new government called **demokratia**, meaning people-power! Instead of obeying kings, adult male citizens climbed the rocky **Pnyx** hill every few days. Thousands debated war, taxes, and building plans before raising hands to vote directly on every law. Voters even scratched bossy leaders' names onto broken pottery **ostrakon** shards to banish them for ten years.<br><br><span class=\"para-ref\">[2.2]</span> To stop rich people bribing courts, Athens slotted citizens' tickets into a marble **kleroterion** machine. Dropping coloured balls picked five hundred jurors fairly by chance! Yet Athenian **direct democracy** shut most residents out: **women**, **enslaved people**, and foreign-born **metics** could never vote.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Around **508 BC**, citizens in sea-trading **Athens** invented a bold new government called **demokratia**, meaning people-power! Instead of obeying kings, adult male citizens climbed the rocky **Pnyx** hill every few days. Thousands debated war, taxes, and building plans before raising hands to vote directly on every law. Voters even scratched bossy leaders' names onto broken pottery **ostrakon** shards to banish them for ten years.<br><br><span class=\"para-ref\">[2.2]</span> To stop rich people bribing courts, Athens slotted citizens' tickets into a marble **kleroterion** machine. Dropping coloured balls picked five hundred jurors fairly by chance! Yet Athenian **direct democracy** shut most residents out: **women**, **enslaved people**, and foreign-born **metics** could never vote.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Around **508 BC**, citizens in sea-trading **Athens** invented **demokratia** [dem-oh-KRAH-tee-uh], meaning people-power! Instead of obeying kings, adult male citizens climbed the rocky **Pnyx** [puh-NIKS] hill every few days. Thousands debated war and taxes before raising hands to vote on every law. Voters even scratched bossy leaders' names onto broken pottery **ostrakon** [OS-truh-kon] shards to banish them for ten years.<br><br><span class=\"para-ref\">[2.2]</span> Athens also slotted bronze name-tickets into a marble **kleroterion** [kler-oh-TEER-ee-on] machine. Falling balls picked five hundred jurors fairly by chance! Yet **direct democracy** shut out **women**, **enslaved people**, and foreign **metics**.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Around **508 BC**, citizens in sea-trading **Athens** invented **demokratia** [dem-oh-KRAH-tee-uh], meaning people-power! Instead of obeying kings, adult male citizens climbed the rocky **Pnyx** [puh-NIKS] hill every few days. Thousands debated war and taxes before raising hands to vote on every law. Voters even scratched bossy leaders' names onto broken pottery **ostrakon** [OS-truh-kon] shards to banish them for ten years.<br><br><span class=\"para-ref\">[2.2]</span> Athens also slotted bronze name-tickets into a marble **kleroterion** [kler-oh-TEER-ee-on] machine. Falling balls picked five hundred jurors fairly by chance! Yet **direct democracy** shut out **women**, **enslaved people**, and foreign **metics**.",
           "image": "/units/ks2_ancient_greece/assets/erechtheion_caryatid_porch.jpg",
           "image_alt": "Carved marble maiden columns of the Erechtheion porch standing on the Acropolis of democratic Golden Age Athens",
-          "caption": "The Porch of the Maidens at the Erechtheion in Athens — built during Athens's democratic Golden Age when citizens voted directly on city projects.",
-          "image_caption": "The Porch of the Maidens at the Erechtheion in Athens — built during Athens's democratic Golden Age when citizens voted directly on city projects.",
+          "caption": "The Porch of the Maidens at the Erechtheion in Athens — built during Athens’s democratic Golden Age when citizens voted directly on city projects.",
+          "image_caption": "The Porch of the Maidens at the Erechtheion in Athens — built during Athens’s democratic Golden Age when citizens voted directly on city projects.",
           "isReversed": false,
           "sources": []
         },
         {
           "act": 2,
           "title": "Two Kings & Tough Barracks: Growing Up Inside Warrior Sparta",
-          "text": "<span class=\"para-ref\">[2.3]</span> Far inland beneath snowy Mount Taygetos lay Athens's toughest rival, land-locked **Sparta**. Spartans cared little for fancy speeches, silver coins, or marble theatres, prizing discipline and obedience instead. Two kings led Sparta's army alongside a strict council of older nobles. Conquered local farmworkers called **helots** toiled in the fields so Spartan citizens trained full-time for war.<br><br><span class=\"para-ref\">[2.4]</span> At just **seven years old**, Spartan boys left home to enter harsh army barracks called the **agoge**. Barefoot in winter, they slept on scratchy river reeds, endured tough drills, and ate plain dark broth! Hungry boys were even dared to sneak extra food without getting caught.",
-          "content": "<span class=\"para-ref\">[2.3]</span> Far inland beneath snowy Mount Taygetos lay Athens's toughest rival, land-locked **Sparta**. Spartans cared little for fancy speeches, silver coins, or marble theatres, prizing discipline and obedience instead. Two kings led Sparta's army alongside a strict council of older nobles. Conquered local farmworkers called **helots** toiled in the fields so Spartan citizens trained full-time for war.<br><br><span class=\"para-ref\">[2.4]</span> At just **seven years old**, Spartan boys left home to enter harsh army barracks called the **agoge**. Barefoot in winter, they slept on scratchy river reeds, endured tough drills, and ate plain dark broth! Hungry boys were even dared to sneak extra food without getting caught.",
+          "text": "<span class=\"para-ref\">[2.3]</span> Far inland beneath snowy Mount Taygetos lay rival **Sparta**. Spartans cared little for speeches, silver coins, or theatres. Instead, citizens prized strict discipline and quiet obedience. **Two kings** led Sparta's army beside a council of older nobles. Conquered farmworkers called **helots** grew crops so Spartan men trained full-time.<br><br><span class=\"para-ref\">[2.4]</span> At **seven years old**, boys left home for harsh barracks called the **agoge** [uh-GOH-gay]. Barefoot in winter, they slept on river reeds and ate dark broth! Hungry boys even sneaked extra food to practise stealth.",
+          "content": "<span class=\"para-ref\">[2.3]</span> Far inland beneath snowy Mount Taygetos lay rival **Sparta**. Spartans cared little for speeches, silver coins, or theatres. Instead, citizens prized strict discipline and quiet obedience. **Two kings** led Sparta's army beside a council of older nobles. Conquered farmworkers called **helots** grew crops so Spartan men trained full-time.<br><br><span class=\"para-ref\">[2.4]</span> At **seven years old**, boys left home for harsh barracks called the **agoge** [uh-GOH-gay]. Barefoot in winter, they slept on river reeds and ate dark broth! Hungry boys even sneaked extra food to practise stealth.",
           "image": "/units/ks2_ancient_greece/assets/sparta_valley_mount_taygetos.jpg",
           "image_alt": "Olive groves and stone ruins in the valley of Ancient Sparta overlooked by the snow-capped peaks of Mount Taygetos",
           "caption": "The fertile inland valley of Ancient Sparta guarded by towering Mount Taygetos — where Spartan boys entered the agoge at age seven.",
@@ -908,16 +1059,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg",
               "image": "/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg",
-              "title": "Source A: Inscribed Marble Portrait Bust of Athenian Leader Pericles (c. 430 BC Copy)",
-              "caption": "A marble portrait bust of the famous Athenian statesman and general Pericles wearing a Corinthian helmet pushed high on his head, inscribed with his name in Greek.",
+              "title": "Source A: Marble Portrait Bust of Athenian Leader Pericles (c. 430 BC Copy)",
+              "caption": "A marble portrait bust of famous Athenian leader and general Pericles wearing a soldier’s helmet tilted back on his head, carved with his name in Greek.",
               "author": "After the Greek Sculptor Cresilas",
               "date": "Original c. 430 BC",
-              "context": "Elected general year after year by Athens's citizen Assembly, Pericles championed direct democracy and even introduced daily pay so poorer rowers and cobblers could afford to serve on juries!",
-              "source_context": "Elected general year after year by Athens's citizen Assembly, Pericles championed direct democracy and even introduced daily pay so poorer rowers and cobblers could afford to serve on juries!",
+              "context": "Elected general year after year by Athens’s citizen Assembly, Pericles championed direct democracy and introduced daily pay so poorer rowers and cobblers could serve on juries!",
+              "source_context": "Elected general year after year by Athens’s citizen Assembly, Pericles championed direct democracy and introduced daily pay so poorer rowers and cobblers could serve on juries! **Hinge Question:** Why did Pericles’s sculptor show him wearing a soldier’s helmet tilted calmly back rather than wearing a royal gold crown?",
               "question_badge": "BUST OF PERICLES",
-              "question": "Why does Pericles wear a raised soldier's helmet instead of a king's crown in Source A?",
-              "model_answer": "Democratic Athens had no kings! Citizens elected Pericles as both a persuasive Assembly speaker and an army general (strategos), so the tilted helmet showed civic leadership rather than royal rule.",
-              "provenance": "Inscribed marble portrait herm of Pericles wearing a Corinthian helmet (after Cresilas, c. 430 BC, museum collection)."
+              "question": "Why does Pericles wear a raised soldier’s helmet instead of a king’s crown in Source A?",
+              "model_answer": "Democratic Athens had no kings! Citizens elected Pericles as both a persuasive Assembly speaker and an army general, so the tilted helmet showed civic duty rather than royal rule.",
+              "provenance": "Carved marble portrait bust of Pericles wearing a Corinthian helmet (ancient copy of a c. 430 BC Greek statue)."
             },
             {
               "id": "ks2_ancient_greece_l2_src_b",
@@ -926,24 +1077,24 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/athenian_ostrakon_cimon_shard.jpg",
               "image": "/units/ks2_ancient_greece/assets/athenian_ostrakon_cimon_shard.jpg",
-              "title": "Source B: Broken Athenian Pottery Ostrakon Scratched with 'Cimon, Son of Miltiades' (c. 461 BC)",
-              "caption": "A broken potsherd (ostrakon) used as a voting ballot in Athens, scratched in Greek letters with the name of powerful general Cimon to banish him for ten years.",
+              "title": "Source B: Broken Athenian Pottery Ostrakon Naming Cimon (461 BC)",
+              "caption": "A broken piece of clay pot (ostrakon) used as a voting token in Athens, scratched with the name of general Cimon to banish him for ten years.",
               "author": "Athenian Male Citizen Voter",
               "date": "461 BC",
-              "context": "Dug up in the Ancient Agora of Athens and dated to 461 BC, this broken piece of everyday clay pot (an ostrakon) has the name 'Cimon son of Miltiades' scratched into it.",
-              "source_context": "Dug up in the Ancient Agora of Athens and dated to 461 BC, this broken piece of everyday clay pot (an ostrakon) has the name 'Cimon son of Miltiades' scratched into it.",
+              "context": "Dug up in the Agora of Athens and dated to 461 BC, this everyday clay pot shard has \"Cimon son of Miltiades\" scratched into its surface.",
+              "source_context": "Dug up in the Agora of Athens and dated to 461 BC, this everyday clay pot shard has \"Cimon son of Miltiades\" scratched into its surface. **Hinge Question:** Why did Athenians scratch names onto cheap broken pot shards to banish ambitious politicians for ten years?",
               "question_badge": "OSTRAKON VOTING SHARD",
               "question": "What did Athenian citizens use broken pottery shards like Source B to do?",
-              "model_answer": "Citizens scratched the name of any politician growing too bossy onto a free pottery ostrakon; if enough votes piled up, that leader was banished from Athens for ten years to protect democracy.",
-              "provenance": "Incised terracotta ostrakon ballot naming Cimon son of Miltiades, excavated in Athens (461 BC, Kerameikos / Agora collection)."
+              "model_answer": "Citizens scratched the name of any politician growing too bossy onto a free clay ostrakon; if enough votes piled up, that leader had to leave Athens for ten years.",
+              "provenance": "Scratched clay ostrakon voting shard naming Cimon son of Miltiades, dug up in the Agora of Athens (461 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "Boys, Girls & Women: Comparing Daily Life in Athens and Sparta",
-          "text": "<span class=\"para-ref\">[2.5]</span> Growing up felt wildly different depending on whether you were born in Athens or Sparta! Wealthy **Athenian boys** paid tutors to teach reading, geometry, poetry, music, and graceful athletics. **Athenian girls**, however, rarely attended school, learning spinning, weaving, and household skills indoors under strict male guardians.<br><br><span class=\"para-ref\">[2.6]</span> In **Sparta**, girls trained outdoors alongside boys at running, wrestling, and throwing the javelin! Because Spartan husbands spent years away in army barracks, **Spartan women** ran farms and owned land themselves. Visitors from Athens gasped to hear confident Spartan women speaking openly in public! Spartans believed strong, athletic mothers raised the bravest soldiers.",
-          "content": "<span class=\"para-ref\">[2.5]</span> Growing up felt wildly different depending on whether you were born in Athens or Sparta! Wealthy **Athenian boys** paid tutors to teach reading, geometry, poetry, music, and graceful athletics. **Athenian girls**, however, rarely attended school, learning spinning, weaving, and household skills indoors under strict male guardians.<br><br><span class=\"para-ref\">[2.6]</span> In **Sparta**, girls trained outdoors alongside boys at running, wrestling, and throwing the javelin! Because Spartan husbands spent years away in army barracks, **Spartan women** ran farms and owned land themselves. Visitors from Athens gasped to hear confident Spartan women speaking openly in public! Spartans believed strong, athletic mothers raised the bravest soldiers.",
+          "text": "<span class=\"para-ref\">[2.5]</span> Childhood felt wildly different depending on whether you grew up in Athens or Sparta! Wealthy **Athenian boys** paid tutors to teach reading, geometry, poetry, music, and graceful sport. **Athenian girls**, however, rarely went to school, learning spinning, weaving, and housework indoors under male guardians.<br><br><span class=\"para-ref\">[2.6]</span> In **Sparta**, girls trained outdoors at running, wrestling, and throwing the javelin! Because Spartan husbands lived away in army barracks, **Spartan women** ran farms and owned land themselves. Athenians gasped to hear confident Spartan women speaking openly in public! Spartans believed strong mothers raised the bravest soldiers.",
+          "content": "<span class=\"para-ref\">[2.5]</span> Childhood felt wildly different depending on whether you grew up in Athens or Sparta! Wealthy **Athenian boys** paid tutors to teach reading, geometry, poetry, music, and graceful sport. **Athenian girls**, however, rarely went to school, learning spinning, weaving, and housework indoors under male guardians.<br><br><span class=\"para-ref\">[2.6]</span> In **Sparta**, girls trained outdoors at running, wrestling, and throwing the javelin! Because Spartan husbands lived away in army barracks, **Spartan women** ran farms and owned land themselves. Athenians gasped to hear confident Spartan women speaking openly in public! Spartans believed strong mothers raised the bravest soldiers.",
           "image": "/units/ks2_ancient_greece/assets/athens_vs_sparta_comparison_ks2.png",
           "image_alt": "Illustrated Key Stage 2 comparison chart contrasting government, boys' schooling, and women's rights in Athens versus Sparta",
           "caption": "Key Stage 2 Athens vs Sparta Comparison Diagram — contrasting Assembly voting and arts in Athens with agoge barracks and freer women in Sparta.",
@@ -957,16 +1108,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/kleroterion_stone_jury_machine.jpg",
               "image": "/units/ks2_ancient_greece/assets/kleroterion_stone_jury_machine.jpg",
-              "title": "Source C: Slotted Marble Kleroterion Machine for Picking Athenian Jurors by Lot (c. 4th Century BC)",
-              "caption": "A block of Athenian marble carved with neat rows of horizontal slots for citizens' bronze name-tickets and a side tube that dropped black and white balls at random.",
+              "title": "Source C: Slotted Marble Kleroterion Machine From Athens (c. 4th Century BC)",
+              "caption": "A block of Athenian marble carved with neat rows of slots for citizens’ bronze name-tickets and a side tube that dropped black and white balls by chance.",
               "author": "Athenian Lawcourt Stonemason",
               "date": "c. 350 BC",
-              "context": "Athenians worried that rich defendants might bribe courtroom judges if they knew who would sit on the jury beforehand — so each morning they slotted citizens' bronze tickets into a marble kleroterion!",
-              "source_context": "Athenians worried that rich defendants might bribe courtroom judges if they knew who would sit on the jury beforehand — so each morning they slotted citizens' bronze tickets into a marble kleroterion!",
+              "context": "Athenians worried rich people might bribe judges if they knew who would sit on the jury — so each morning they slotted citizens’ bronze tickets into a marble kleroterion!",
+              "source_context": "Athenians worried rich people might bribe judges if they knew who would sit on the jury — so each morning they slotted citizens’ bronze tickets into a marble kleroterion! **Hinge Question:** How did picking 500 jurors at random on the morning of a trial stop wealthy people from cheating or bribing the court?",
               "question_badge": "KLEROTERION JURY MACHINE",
               "question": "How did the slotted marble machine in Source C make Athenian court trials fairer?",
-              "model_answer": "Citizens slid name-plaques into the marble slots of Source C while black and white balls dropped down a tube, picking 500 jurors purely by chance so nobody could bribe them beforehand!",
-              "provenance": "Slotted marble kleroterion allotment machine excavated in the Ancient Agora of Athens (Agora Museum, Athens)."
+              "model_answer": "Citizens slid bronze name-tickets into the marble slots while coloured balls dropped down a tube, picking 500 jurors purely by chance so nobody could bribe them beforehand!",
+              "provenance": "Slotted marble jury-picking machine (kleroterion) excavated in the Ancient Agora of Athens."
             },
             {
               "id": "ks2_ancient_greece_l2_src_d",
@@ -975,16 +1126,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/bronze_corinthian_hoplite_helmet.jpg",
               "image": "/units/ks2_ancient_greece/assets/bronze_corinthian_hoplite_helmet.jpg",
-              "title": "Source D: Hammered Bronze Corinthian Hoplite Warrior Helmet (c. 500 BC)",
-              "caption": "A heavy one-piece bronze Greek warrior helmet with narrow eye slits, a thick nose-guard, and cheek plates designed for close-quarters shield-wall combat.",
+              "title": "Source D: Hammered Bronze Corinthian Warrior Helmet (c. 500 BC)",
+              "caption": "A heavy one-piece bronze Greek warrior helmet with narrow eye slits, a thick nose-guard, and cheek plates built for close shield-wall fighting.",
               "author": "Ancient Greek Bronze Armourer",
               "date": "c. 500 BC",
-              "context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside an unbreakable bronze-armoured shield wall!",
-              "source_context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside an unbreakable bronze-armoured shield wall!",
+              "context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside a bronze-armoured shield wall!",
+              "source_context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside a bronze-armoured shield wall! **Hinge Question:** What must it have felt like — for sight, hearing, and breathing — fighting inside a heavy bronze helmet like Source D?",
               "question_badge": "BRONZE HOPLITE HELMET",
               "question": "Inspect the bronze cheek plates on Source D. How did it protect warriors, yet limit their senses?",
-              "model_answer": "Thick hammered bronze shielded a warrior's skull, cheeks, and nose from enemy spear thrusts, though narrow eye slits and covered ears made Source D hot, dark, and hard to hear inside!",
-              "provenance": "Archaic Greek hammered bronze Corinthian-type hoplite helmet (c. 500 BC, archaeological museum collection)."
+              "model_answer": "Thick hammered bronze shielded a warrior’s head, cheeks, and nose from spear blows, though narrow eye slits and covered ears made Source D hot, dark, and hard to hear inside!",
+              "provenance": "Hammered bronze Greek hoplite helmet made around 500 BC."
             }
           ]
         }
@@ -997,16 +1148,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg",
           "image": "/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg",
-          "title": "Source A: Inscribed Marble Portrait Bust of Athenian Leader Pericles (c. 430 BC Copy)",
-          "caption": "A marble portrait bust of the famous Athenian statesman and general Pericles wearing a Corinthian helmet pushed high on his head, inscribed with his name in Greek.",
+          "title": "Source A: Marble Portrait Bust of Athenian Leader Pericles (c. 430 BC Copy)",
+          "caption": "A marble portrait bust of famous Athenian leader and general Pericles wearing a soldier’s helmet tilted back on his head, carved with his name in Greek.",
           "author": "After the Greek Sculptor Cresilas",
           "date": "Original c. 430 BC",
-          "context": "Elected general year after year by Athens's citizen Assembly, Pericles championed direct democracy and even introduced daily pay so poorer rowers and cobblers could afford to serve on juries!",
-          "source_context": "Elected general year after year by Athens's citizen Assembly, Pericles championed direct democracy and even introduced daily pay so poorer rowers and cobblers could afford to serve on juries!",
+          "context": "Elected general year after year by Athens’s citizen Assembly, Pericles championed direct democracy and introduced daily pay so poorer rowers and cobblers could serve on juries!",
+          "source_context": "Elected general year after year by Athens’s citizen Assembly, Pericles championed direct democracy and introduced daily pay so poorer rowers and cobblers could serve on juries! **Hinge Question:** Why did Pericles’s sculptor show him wearing a soldier’s helmet tilted calmly back rather than wearing a royal gold crown?",
           "question_badge": "BUST OF PERICLES",
-          "question": "Why does Pericles wear a raised soldier's helmet instead of a king's crown in Source A?",
-          "model_answer": "Democratic Athens had no kings! Citizens elected Pericles as both a persuasive Assembly speaker and an army general (strategos), so the tilted helmet showed civic leadership rather than royal rule.",
-          "provenance": "Inscribed marble portrait herm of Pericles wearing a Corinthian helmet (after Cresilas, c. 430 BC, museum collection)."
+          "question": "Why does Pericles wear a raised soldier’s helmet instead of a king’s crown in Source A?",
+          "model_answer": "Democratic Athens had no kings! Citizens elected Pericles as both a persuasive Assembly speaker and an army general, so the tilted helmet showed civic duty rather than royal rule.",
+          "provenance": "Carved marble portrait bust of Pericles wearing a Corinthian helmet (ancient copy of a c. 430 BC Greek statue)."
         },
         {
           "id": "ks2_ancient_greece_l2_src_b",
@@ -1015,16 +1166,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/athenian_ostrakon_cimon_shard.jpg",
           "image": "/units/ks2_ancient_greece/assets/athenian_ostrakon_cimon_shard.jpg",
-          "title": "Source B: Broken Athenian Pottery Ostrakon Scratched with 'Cimon, Son of Miltiades' (c. 461 BC)",
-          "caption": "A broken potsherd (ostrakon) used as a voting ballot in Athens, scratched in Greek letters with the name of powerful general Cimon to banish him for ten years.",
+          "title": "Source B: Broken Athenian Pottery Ostrakon Naming Cimon (461 BC)",
+          "caption": "A broken piece of clay pot (ostrakon) used as a voting token in Athens, scratched with the name of general Cimon to banish him for ten years.",
           "author": "Athenian Male Citizen Voter",
           "date": "461 BC",
-          "context": "Dug up in the Ancient Agora of Athens and dated to 461 BC, this broken piece of everyday clay pot (an ostrakon) has the name 'Cimon son of Miltiades' scratched into it.",
-          "source_context": "Dug up in the Ancient Agora of Athens and dated to 461 BC, this broken piece of everyday clay pot (an ostrakon) has the name 'Cimon son of Miltiades' scratched into it.",
+          "context": "Dug up in the Agora of Athens and dated to 461 BC, this everyday clay pot shard has \"Cimon son of Miltiades\" scratched into its surface.",
+          "source_context": "Dug up in the Agora of Athens and dated to 461 BC, this everyday clay pot shard has \"Cimon son of Miltiades\" scratched into its surface. **Hinge Question:** Why did Athenians scratch names onto cheap broken pot shards to banish ambitious politicians for ten years?",
           "question_badge": "OSTRAKON VOTING SHARD",
           "question": "What did Athenian citizens use broken pottery shards like Source B to do?",
-          "model_answer": "Citizens scratched the name of any politician growing too bossy onto a free pottery ostrakon; if enough votes piled up, that leader was banished from Athens for ten years to protect democracy.",
-          "provenance": "Incised terracotta ostrakon ballot naming Cimon son of Miltiades, excavated in Athens (461 BC, Kerameikos / Agora collection)."
+          "model_answer": "Citizens scratched the name of any politician growing too bossy onto a free clay ostrakon; if enough votes piled up, that leader had to leave Athens for ten years.",
+          "provenance": "Scratched clay ostrakon voting shard naming Cimon son of Miltiades, dug up in the Agora of Athens (461 BC)."
         },
         {
           "id": "ks2_ancient_greece_l2_src_c",
@@ -1033,16 +1184,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/kleroterion_stone_jury_machine.jpg",
           "image": "/units/ks2_ancient_greece/assets/kleroterion_stone_jury_machine.jpg",
-          "title": "Source C: Slotted Marble Kleroterion Machine for Picking Athenian Jurors by Lot (c. 4th Century BC)",
-          "caption": "A block of Athenian marble carved with neat rows of horizontal slots for citizens' bronze name-tickets and a side tube that dropped black and white balls at random.",
+          "title": "Source C: Slotted Marble Kleroterion Machine From Athens (c. 4th Century BC)",
+          "caption": "A block of Athenian marble carved with neat rows of slots for citizens’ bronze name-tickets and a side tube that dropped black and white balls by chance.",
           "author": "Athenian Lawcourt Stonemason",
           "date": "c. 350 BC",
-          "context": "Athenians worried that rich defendants might bribe courtroom judges if they knew who would sit on the jury beforehand — so each morning they slotted citizens' bronze tickets into a marble kleroterion!",
-          "source_context": "Athenians worried that rich defendants might bribe courtroom judges if they knew who would sit on the jury beforehand — so each morning they slotted citizens' bronze tickets into a marble kleroterion!",
+          "context": "Athenians worried rich people might bribe judges if they knew who would sit on the jury — so each morning they slotted citizens’ bronze tickets into a marble kleroterion!",
+          "source_context": "Athenians worried rich people might bribe judges if they knew who would sit on the jury — so each morning they slotted citizens’ bronze tickets into a marble kleroterion! **Hinge Question:** How did picking 500 jurors at random on the morning of a trial stop wealthy people from cheating or bribing the court?",
           "question_badge": "KLEROTERION JURY MACHINE",
           "question": "How did the slotted marble machine in Source C make Athenian court trials fairer?",
-          "model_answer": "Citizens slid name-plaques into the marble slots of Source C while black and white balls dropped down a tube, picking 500 jurors purely by chance so nobody could bribe them beforehand!",
-          "provenance": "Slotted marble kleroterion allotment machine excavated in the Ancient Agora of Athens (Agora Museum, Athens)."
+          "model_answer": "Citizens slid bronze name-tickets into the marble slots while coloured balls dropped down a tube, picking 500 jurors purely by chance so nobody could bribe them beforehand!",
+          "provenance": "Slotted marble jury-picking machine (kleroterion) excavated in the Ancient Agora of Athens."
         },
         {
           "id": "ks2_ancient_greece_l2_src_d",
@@ -1051,16 +1202,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/bronze_corinthian_hoplite_helmet.jpg",
           "image": "/units/ks2_ancient_greece/assets/bronze_corinthian_hoplite_helmet.jpg",
-          "title": "Source D: Hammered Bronze Corinthian Hoplite Warrior Helmet (c. 500 BC)",
-          "caption": "A heavy one-piece bronze Greek warrior helmet with narrow eye slits, a thick nose-guard, and cheek plates designed for close-quarters shield-wall combat.",
+          "title": "Source D: Hammered Bronze Corinthian Warrior Helmet (c. 500 BC)",
+          "caption": "A heavy one-piece bronze Greek warrior helmet with narrow eye slits, a thick nose-guard, and cheek plates built for close shield-wall fighting.",
           "author": "Ancient Greek Bronze Armourer",
           "date": "c. 500 BC",
-          "context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside an unbreakable bronze-armoured shield wall!",
-          "source_context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside an unbreakable bronze-armoured shield wall!",
+          "context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside a bronze-armoured shield wall!",
+          "source_context": "While citizen farmers in Athens fought only when wars broke out, Spartan men trained full-time from age seven to fight inside a bronze-armoured shield wall! **Hinge Question:** What must it have felt like — for sight, hearing, and breathing — fighting inside a heavy bronze helmet like Source D?",
           "question_badge": "BRONZE HOPLITE HELMET",
           "question": "Inspect the bronze cheek plates on Source D. How did it protect warriors, yet limit their senses?",
-          "model_answer": "Thick hammered bronze shielded a warrior's skull, cheeks, and nose from enemy spear thrusts, though narrow eye slits and covered ears made Source D hot, dark, and hard to hear inside!",
-          "provenance": "Archaic Greek hammered bronze Corinthian-type hoplite helmet (c. 500 BC, archaeological museum collection)."
+          "model_answer": "Thick hammered bronze shielded a warrior’s head, cheeks, and nose from spear blows, though narrow eye slits and covered ears made Source D hot, dark, and hard to hear inside!",
+          "provenance": "Hammered bronze Greek hoplite helmet made around 500 BC."
         }
       ],
       "causal_domino_spine": {
@@ -1077,7 +1228,7 @@ window.UNIT_DATA = {
             "trigger": "Male citizens voted directly on the Pnyx, scratched pottery ostraka, and picked 500-person juries with a kleroterion — excluding women, enslaved people, and metics.",
             "connective": "Meanwhile, inland rival Sparta chose a completely different path built on military discipline.",
             "question": "How did direct democracy work in Athens, and who was shut out?",
-            "prose_hash": "9d1f1172ee",
+            "prose_hash": "e94cdcfb5f",
             "questionHeading": "How did direct democracy work in Athens, and who was shut out?",
             "focusClue": "How did direct democracy work in Athens, and who was shut out?",
             "dates": "c. 508–430 BC",
@@ -1093,7 +1244,7 @@ window.UNIT_DATA = {
             "trigger": "Ruled by two kings and elders while helots farmed the fields, Sparta sent citizen boys at age seven into barefoot agoge barracks.",
             "connective": "Those two opposite systems shaped childhood and women's freedoms in surprising ways.",
             "question": "How was Sparta ruled, and how were Spartan boys raised from age seven?",
-            "prose_hash": "b2b2508c49",
+            "prose_hash": "19b7b388f9",
             "questionHeading": "How was Sparta ruled, and how were Spartan boys raised from age seven?",
             "focusClue": "How was Sparta ruled, and how were Spartan boys raised from age seven?",
             "dates": "c. 600–430 BC",
@@ -1109,7 +1260,7 @@ window.UNIT_DATA = {
             "trigger": "Athenian boys studied reading and music while Athenian women stayed mostly indoors; Spartan girls trained in athletics and Spartan women owned land!",
             "connective": "Even as Athens and Sparta differed sharply, religious festivals and games still brought Greeks together.",
             "question": "How did growing up as a girl or woman differ between Athens and Sparta?",
-            "prose_hash": "3c314362fd",
+            "prose_hash": "a6ed34f215",
             "questionHeading": "How did growing up as a girl or woman differ between Athens and Sparta?",
             "focusClue": "How did growing up as a girl or woman differ between Athens and Sparta?",
             "dates": "c. 500–430 BC",
@@ -1145,7 +1296,7 @@ window.UNIT_DATA = {
           "dates": "c. 508–430 BC",
           "para_ref": "[2.1]",
           "paraRef": "[2.1]",
-          "prose_hash": "9d1f1172ee"
+          "prose_hash": "e94cdcfb5f"
         },
         {
           "step": 2,
@@ -1174,7 +1325,7 @@ window.UNIT_DATA = {
           "dates": "c. 600–430 BC",
           "para_ref": "[2.3]",
           "paraRef": "[2.3]",
-          "prose_hash": "b2b2508c49"
+          "prose_hash": "19b7b388f9"
         },
         {
           "step": 3,
@@ -1203,7 +1354,7 @@ window.UNIT_DATA = {
           "dates": "c. 500–430 BC",
           "para_ref": "[2.5]",
           "paraRef": "[2.5]",
-          "prose_hash": "3c314362fd"
+          "prose_hash": "a6ed34f215"
         }
       ],
       "tasks": [
@@ -1213,7 +1364,7 @@ window.UNIT_DATA = {
           "type": "source_clues",
           "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "question": "Why does Pericles wear a raised soldier's helmet instead of a king's crown in Source A?",
+          "question": "Why does Pericles wear a raised soldier’s helmet instead of a king’s crown in Source A?",
           "starter": "Looking closely at Source A, Pericles wears a raised soldier’s helmet rather than a king’s crown because Athens...",
           "word_bank": [
             "Pericles",
@@ -1292,78 +1443,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "What does the Ancient Greek word 'demokratia' (invented in Athens around 508 BC) literally mean?",
-          "q": "What does the Ancient Greek word 'demokratia' (invented in Athens around 508 BC) literally mean?",
+          "question": "Around 508 BC, what bold new system of government did Athens invent, meaning \"people-power\"?",
+          "q": "Around 508 BC, what bold new system of government did Athens invent, meaning \"people-power\"?",
           "options": [
-            "Rule by two warrior kings",
-            "People-power (rule by the citizens)",
-            "Rule by wealthy priests",
-            "Power of the sea gods"
+            "Monarchy",
+            "Demokratia (direct democracy)",
+            "Military kingship",
+            "Pharaoh rule"
           ],
           "correct": 1,
-          "answer": "People-power (rule by the citizens)",
-          "a": "People-power (rule by the citizens)",
-          "explanation": "Combining demos (the people) and kratos (power), demokratia gave adult male Athenian citizens a direct vote on laws."
+          "answer": "Demokratia (direct democracy)",
+          "a": "Demokratia (direct democracy)",
+          "explanation": "Combining demos (people) and kratos (power), Athenian demokratia let adult male citizens vote directly on laws."
         },
         {
           "stage": 1,
-          "question": "Which groups living in Athens were completely shut out from voting on the Pnyx hill?",
-          "q": "Which groups living in Athens were completely shut out from voting on the Pnyx hill?",
+          "question": "Which rocky hillside in Athens did thousands of male citizens climb every few days to debate and vote?",
+          "q": "Which rocky hillside in Athens did thousands of male citizens climb every few days to debate and vote?",
           "options": [
-            "Sailors and potters",
-            "Farmers who grew olives",
-            "Women, enslaved people, and foreign-born metics",
-            "Men aged over thirty"
+            "Mount Olympus",
+            "Mount Taygetos",
+            "The Pnyx hill",
+            "Cape Sounion"
           ],
           "correct": 2,
-          "answer": "Women, enslaved people, and foreign-born metics",
-          "a": "Women, enslaved people, and foreign-born metics",
-          "explanation": "Only adult men with Athenian citizen parents could vote in the Assembly — women, enslaved people, and metics were excluded."
+          "answer": "The Pnyx hill",
+          "a": "The Pnyx hill",
+          "explanation": "Adult male Athenian citizens gathered outdoors on the rocky Pnyx hill to debate war, taxes, and laws before voting by hand."
         },
         {
           "stage": 1,
-          "question": "What job did the slotted marble 'kleroterion' machine do in Athens?",
-          "q": "What job did the slotted marble 'kleroterion' machine do in Athens?",
+          "question": "For how many years was an overly bossy Athenian politician banished if citizens voted him out on pottery ostrakon shards?",
+          "q": "For how many years was an overly bossy Athenian politician banished if citizens voted him out on pottery ostrakon shards?",
           "options": [
-            "Picked 500 courtroom jurors fairly at random so nobody could bribe them",
-            "Pressed olives into golden cooking oil",
-            "Fired heavy stones over enemy city walls",
-            "Counted silver owl coins in the market"
+            "One month",
+            "Two years",
+            "Fifty years",
+            "Ten years"
+          ],
+          "correct": 3,
+          "answer": "Ten years",
+          "a": "Ten years",
+          "explanation": "Scratching a leader’s name onto enough broken ostrakon pot shards banished him from Athens for ten years to protect democracy."
+        },
+        {
+          "stage": 1,
+          "question": "Why did Athenians use a slotted marble kleroterion machine with falling balls to choose 500 court jurors?",
+          "q": "Why did Athenians use a slotted marble kleroterion machine with falling balls to choose 500 court jurors?",
+          "options": [
+            "To pick jurors randomly on the morning of a trial so nobody could bribe them",
+            "To count silver coins collected at the harbour gate",
+            "To measure olive oil poured into clay storage jars",
+            "To time footraces during religious festivals"
           ],
           "correct": 0,
-          "answer": "Picked 500 courtroom jurors fairly at random so nobody could bribe them",
-          "a": "Picked 500 courtroom jurors fairly at random so nobody could bribe them",
-          "explanation": "Citizens placed name-tickets into the marble slots while falling black and white balls chose jurors by pure chance."
+          "answer": "To pick jurors randomly on the morning of a trial so nobody could bribe them",
+          "a": "To pick jurors randomly on the morning of a trial so nobody could bribe them",
+          "explanation": "Picking 500 jurors by pure chance right before a trial stopped wealthy defendants from bribing judges."
+        },
+        {
+          "stage": 1,
+          "question": "Which three large groups living in Athens were completely shut out from voting in its direct democracy?",
+          "q": "Which three large groups living in Athens were completely shut out from voting in its direct democracy?",
+          "options": [
+            "Farmers, potters, and rowers",
+            "Women, enslaved people, and foreign-born metics",
+            "Generals, sculptors, and poets",
+            "Sailors, blacksmiths, and olive growers"
+          ],
+          "correct": 1,
+          "answer": "Women, enslaved people, and foreign-born metics",
+          "a": "Women, enslaved people, and foreign-born metics",
+          "explanation": "Only adult male Athenian citizens could vote; women, enslaved people, and foreign-born residents called metics were excluded."
         },
         {
           "stage": 2,
-          "question": "At what age did Spartan citizen boys leave home to enter the tough 'agoge' military barracks?",
-          "q": "At what age did Spartan citizen boys leave home to enter the tough 'agoge' military barracks?",
+          "question": "How was inland Sparta’s government led differently from democratic Athens?",
+          "q": "How was inland Sparta’s government led differently from democratic Athens?",
           "options": [
-            "Three years old",
-            "Twelve years old",
-            "Eighteen years old",
-            "Seven years old"
+            "By one elected Prime Minister",
+            "By lottery tickets drawn every morning",
+            "By two kings alongside a council of older nobles",
+            "By foreign merchants from Phoenicia"
+          ],
+          "correct": 2,
+          "answer": "By two kings alongside a council of older nobles",
+          "a": "By two kings alongside a council of older nobles",
+          "explanation": "Two warrior kings led Sparta’s army alongside a strict council of older nobles."
+        },
+        {
+          "stage": 2,
+          "question": "Who were the \"helots\" in Ancient Sparta?",
+          "q": "Who were the \"helots\" in Ancient Sparta?",
+          "options": [
+            "Elected courtroom judges",
+            "Wealthy sea captains",
+            "Travelling storytellers",
+            "Conquered local farmworkers forced to grow food for Sparta"
           ],
           "correct": 3,
+          "answer": "Conquered local farmworkers forced to grow food for Sparta",
+          "a": "Conquered local farmworkers forced to grow food for Sparta",
+          "explanation": "Conquered helots worked the fields around Sparta so male Spartan citizens could train full-time as soldiers."
+        },
+        {
+          "stage": 2,
+          "question": "At what young age did Spartan boys leave their families to enter the tough agoge army barracks?",
+          "q": "At what young age did Spartan boys leave their families to enter the tough agoge army barracks?",
+          "options": [
+            "Seven years old",
+            "Twelve years old",
+            "Sixteen years old",
+            "Twenty-one years old"
+          ],
+          "correct": 0,
           "answer": "Seven years old",
           "a": "Seven years old",
-          "explanation": "From age seven, Spartan boys lived together in strict agoge barracks, training barefoot and sleeping on river reeds."
+          "explanation": "At just seven years old, Spartan boys left home to live and train inside the harsh agoge military barracks."
+        },
+        {
+          "stage": 2,
+          "question": "What tough conditions did Spartan boys endure inside the agoge barracks?",
+          "q": "What tough conditions did Spartan boys endure inside the agoge barracks?",
+          "options": [
+            "Sleeping on feather beds and eating sweet honey cakes",
+            "Going barefoot in winter, sleeping on river reeds, and eating plain dark broth",
+            "Sailing wooden merchant ships to Egypt every summer",
+            "Carving marble statues on the Acropolis"
+          ],
+          "correct": 1,
+          "answer": "Going barefoot in winter, sleeping on river reeds, and eating plain dark broth",
+          "a": "Going barefoot in winter, sleeping on river reeds, and eating plain dark broth",
+          "explanation": "Spartan boys trained barefoot in winter, slept on rough river reeds, and ate plain dark broth to build endurance."
+        },
+        {
+          "stage": 2,
+          "question": "According to Source A, which elected Athenian general paid poorer citizens a daily wage so they could serve on juries?",
+          "q": "According to Source A, which elected Athenian general paid poorer citizens a daily wage so they could serve on juries?",
+          "options": [
+            "King Leonidas",
+            "Cimon",
+            "Pericles",
+            "King Darius"
+          ],
+          "correct": 2,
+          "answer": "Pericles",
+          "a": "Pericles",
+          "explanation": "Pericles championed Athenian democracy and introduced daily jury pay so poorer rowers and cobblers could take part."
         },
         {
           "stage": 3,
-          "question": "How did Spartan women's lives surprise visitors from democratic Athens?",
-          "q": "How did Spartan women's lives surprise visitors from democratic Athens?",
+          "question": "What subjects did wealthy Athenian boys study with private tutors?",
+          "q": "What subjects did wealthy Athenian boys study with private tutors?",
           "options": [
-            "Spartan women voted on the Pnyx hill in Athens",
-            "Spartan girls trained in outdoor athletics, and Spartan women owned land and spoke freely",
-            "Spartan women sailed warships to Egypt",
-            "Spartan women were never allowed outside their houses"
+            "Only shield-wall spear combat",
+            "Hieroglyphs and pyramid building",
+            "Ship stitching and camel riding",
+            "Reading, geometry, poetry, music, and athletics"
+          ],
+          "correct": 3,
+          "answer": "Reading, geometry, poetry, music, and athletics",
+          "a": "Reading, geometry, poetry, music, and athletics",
+          "explanation": "Wealthy Athenian families paid tutors to teach boys reading, geometry, poetry, music, and graceful athletics."
+        },
+        {
+          "stage": 3,
+          "question": "How were most girls raised in classical Athens compared with boys?",
+          "q": "How were most girls raised in classical Athens compared with boys?",
+          "options": [
+            "They stayed mostly indoors learning spinning, weaving, and household skills",
+            "They entered army barracks at age seven",
+            "They voted on laws every week on the Pnyx hill",
+            "They captained wooden warships at sea"
+          ],
+          "correct": 0,
+          "answer": "They stayed mostly indoors learning spinning, weaving, and household skills",
+          "a": "They stayed mostly indoors learning spinning, weaving, and household skills",
+          "explanation": "Athenian girls rarely attended school, instead learning spinning, weaving, and running a household indoors under male guardians."
+        },
+        {
+          "stage": 3,
+          "question": "Which outdoor sports did Spartan girls practise to grow strong and athletic?",
+          "q": "Which outdoor sports did Spartan girls practise to grow strong and athletic?",
+          "options": [
+            "Ice skating and skiing",
+            "Running, wrestling, and throwing the javelin",
+            "Archery from camel saddles",
+            "Deep-sea sponge diving"
           ],
           "correct": 1,
-          "answer": "Spartan girls trained in outdoor athletics, and Spartan women owned land and spoke freely",
-          "a": "Spartan girls trained in outdoor athletics, and Spartan women owned land and spoke freely",
-          "explanation": "Unlike secluded Athenian women, Spartan women exercised outdoors as girls, ran farms, inherited land, and spoke boldly in public."
+          "answer": "Running, wrestling, and throwing the javelin",
+          "a": "Running, wrestling, and throwing the javelin",
+          "explanation": "Spartan girls trained outdoors at running, wrestling, and javelin throwing because Spartans believed strong mothers raised brave soldiers."
+        },
+        {
+          "stage": 3,
+          "question": "Why did Spartan women enjoy far greater freedom to run farms and own land than Athenian women?",
+          "q": "Why did Spartan women enjoy far greater freedom to run farms and own land than Athenian women?",
+          "options": [
+            "Athens had no farms or countryside at all",
+            "Spartan women were allowed to vote on the Pnyx hill",
+            "Spartan husbands spent years away in army barracks, so women managed estates",
+            "Greek gods forbade men in Sparta from speaking"
+          ],
+          "correct": 2,
+          "answer": "Spartan husbands spent years away in army barracks, so women managed estates",
+          "a": "Spartan husbands spent years away in army barracks, so women managed estates",
+          "explanation": "With Spartan men living in military barracks or away on campaign, Spartan women ran farms, owned land, and spoke openly in public."
+        },
+        {
+          "stage": 3,
+          "question": "Inspect Source D. What drawback came with wearing a heavy one-piece bronze Corinthian helmet in battle?",
+          "q": "Inspect Source D. What drawback came with wearing a heavy one-piece bronze Corinthian helmet in battle?",
+          "options": [
+            "It melted in warm sunshine",
+            "It floated off in strong winds",
+            "It shattered if dropped on grass",
+            "Narrow eye slits and covered ears made it hot, dark, and hard to hear inside"
+          ],
+          "correct": 3,
+          "answer": "Narrow eye slits and covered ears made it hot, dark, and hard to hear inside",
+          "a": "Narrow eye slits and covered ears made it hot, dark, and hard to hear inside",
+          "explanation": "Although thick bronze protected the skull and face, tiny eye openings and solid cheek plates restricted vision and hearing."
         }
       ],
       "video": [
@@ -1384,15 +1685,16 @@ window.UNIT_DATA = {
         "caption": "Carved stone speakers' platform (bema) on the Pnyx hill in Athens, where citizens addressed thousands of Assembly voters",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg"
+      "banner_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
+      "enquiry": "How different was daily life in democratic Athens and warrior Sparta?"
     },
     {
       "id": "lesson_3",
       "skill": "Beliefs, Culture & Source Evidence",
-      "title": "Enquiry 3: Mount Olympus, Myths & The Ancient Olympics — How Did Religion Shape Greek Life? (776–400 BC)",
+      "title": "Enquiry 3: Mount Olympus, Myths & The Ancient Olympics (776–400 BC)",
       "subtitle": "The Twelve Olympians, Athens's Parthenon & Delphi's Oracle, Myths on Painted Vases, and Olympia's Sacred Truce from 776 BC",
-      "enquiryQuestion": "How did belief in the Olympian gods inspire Greek temples, hero myths, and the Ancient Olympic Games?",
-      "enquiry_question": "How did belief in the Olympian gods inspire Greek temples, hero myths, and the Ancient Olympic Games?",
+      "enquiryQuestion": "How did Greek gods inspire temples, myths, and the Olympic Games?",
+      "enquiry_question": "How did Greek gods inspire temples, myths, and the Olympic Games?",
       "prologue": "Gaze up at snowy Mount Olympus where Zeus hurls thunderbolts, climb misty Delphi to hear the Oracle's riddles, and spot Heracles battling the Hydra on clay vases! Then race down Olympia's dusty track in 776 BC under the Sacred Truce.",
       "blurb": "Gaze up at snowy Mount Olympus where Zeus hurls thunderbolts, climb misty Delphi to hear the Oracle's riddles, and spot Heracles battling the Hydra on clay vases! Then race down Olympia's dusty track in 776 BC under the Sacred Truce.",
       "hero_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
@@ -1419,10 +1721,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Ancient Greeks imagined their twelve Olympian gods in powerful human form — yet because the weapon in Source A's raised right hand was lost under the sea, historians still debate whether he is sky-king Zeus or sea-god Poseidon! **Hinge Question:** Why do archaeologists debate whether Source A shows Zeus with a thunderbolt or Poseidon with a three-pronged trident?",
-          "Source B": "Inside the shadowed inner hall of Athens's marble Parthenon stood Phidias's dazzling twelve-metre statue of wise warrior Athena, covered in more than a tonne of removable gold plates and carved elephant ivory! **Hinge Question:** Why did Greeks place giant statues like Source B inside temples while crowds worshipped outside at open-air altars?",
-          "Source C": "Long before printed storybooks, Greek potters painted thrilling myths onto everyday storage jars and cups — here Heracles battles the Lernaean Hydra, which sprouted two new snake heads whenever one was chopped off! **Hinge Question:** How do painted clay vases like Source C help historians rediscover Greek myths told aloud around evening fires?",
-          "Source D": "For the earliest festivals at Olympia starting in 776 BC, the entire Games consisted of one thrilling barefoot sprint called the stadion — about 192 metres down a packed-earth track — giving us our word 'stadium'! **Hinge Question:** Why did Ancient Greek athletes train and race in honour of the gods rather than simply treating sport as casual fun?"
+          "Source A": "Pulled up by sponge divers from an Aegean shipwreck, this towering bronze god was cast around 460 BC, though the weapon in his right hand was lost at sea. **Hinge Question:** Why do archaeologists still debate whether Source A shows Zeus with a thunderbolt or Poseidon with a three-pronged trident?",
+          "Source B": "Inside the inner hall of Athens’s Parthenon stood sculptor Phidias’s twelve-metre statue of wise warrior Athena, gleaming with removable gold plates and carved elephant ivory! **Hinge Question:** Why did Greeks place giant statues like Source B inside temples while crowds worshipped outside at open-air stone altars?",
+          "Source C": "Long before printed storybooks, Athenian potters painted thrilling myths onto clay storage jars — here Heracles battles the Hydra, which grew new snake heads when cut! **Hinge Question:** How do painted clay vases like Source C help historians rediscover Greek myths once told aloud around evening fires?",
+          "Source D": "At the earliest festivals in Olympia from 776 BC, the Games featured one barefoot sprint called the stadion — about 192 metres — giving us our word \"stadium\"! **Hinge Question:** Why did Ancient Greek athletes train and race in honour of the gods rather than treating sport as casual fun?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -1557,24 +1859,24 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Twelve Gods on Snowy Mount Olympus & Gleaming Marble Temples",
-          "text": "<span class=\"para-ref\">[3.1]</span> Religion wove through every single day in Ancient Greece! Greeks believed twelve immortal gods ruled from snowy **Mount Olympus**, Greece's tallest peak. **Zeus** hurled thunderbolts beside queen **Hera**, while **Poseidon** shook the seas and wise **Athena** guarded craftworkers and Athens. Twin gods **Apollo** and **Artemis** loved music and hunting, and winged-sandalled **Hermes** carried swift messages.<br><br><span class=\"para-ref\">[3.2]</span> Cities built gleaming marble homes for their gods, such as Athens's **Parthenon**. Inside its inner hall stood a giant gold-and-ivory statue of **Athena**. Ordinary people worshipped outdoors at stone altars, pouring wine and roasting meat so fragrant smoke drifted skyward! Families also kept small home altars to thank the gods daily.",
-          "content": "<span class=\"para-ref\">[3.1]</span> Religion wove through every single day in Ancient Greece! Greeks believed twelve immortal gods ruled from snowy **Mount Olympus**, Greece's tallest peak. **Zeus** hurled thunderbolts beside queen **Hera**, while **Poseidon** shook the seas and wise **Athena** guarded craftworkers and Athens. Twin gods **Apollo** and **Artemis** loved music and hunting, and winged-sandalled **Hermes** carried swift messages.<br><br><span class=\"para-ref\">[3.2]</span> Cities built gleaming marble homes for their gods, such as Athens's **Parthenon**. Inside its inner hall stood a giant gold-and-ivory statue of **Athena**. Ordinary people worshipped outdoors at stone altars, pouring wine and roasting meat so fragrant smoke drifted skyward! Families also kept small home altars to thank the gods daily.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Religion shaped every single day in Ancient Greece! Greeks believed twelve immortal gods ruled from snowy **Mount Olympus**, Greece's tallest peak. **Zeus** hurled thunderbolts beside queen **Hera**, while **Poseidon** shook the seas. Wise **Athena** guarded Athens, twins **Apollo** and **Artemis** loved music and hunting, and **Hermes** wore winged sandals.<br><br><span class=\"para-ref\">[3.2]</span> Cities built marble homes for their gods, like Athens's **Parthenon**. Inside stood a tall gold-and-ivory statue of **Athena**. Crowds worshipped outdoors at stone **altars**, pouring wine and roasting meat so sweet smoke rose skyward!",
+          "content": "<span class=\"para-ref\">[3.1]</span> Religion shaped every single day in Ancient Greece! Greeks believed twelve immortal gods ruled from snowy **Mount Olympus**, Greece's tallest peak. **Zeus** hurled thunderbolts beside queen **Hera**, while **Poseidon** shook the seas. Wise **Athena** guarded Athens, twins **Apollo** and **Artemis** loved music and hunting, and **Hermes** wore winged sandals.<br><br><span class=\"para-ref\">[3.2]</span> Cities built marble homes for their gods, like Athens's **Parthenon**. Inside stood a tall gold-and-ivory statue of **Athena**. Crowds worshipped outdoors at stone **altars**, pouring wine and roasting meat so sweet smoke rose skyward!",
           "image": "/units/ks2_ancient_greece/assets/parthenon_doric_marble_columns.jpg",
           "image_alt": "Sunlight shining on the tall fluted Doric marble columns of the Parthenon temple atop the Acropolis in Athens",
-          "caption": "The Doric marble columns of the Parthenon on Athens's Acropolis — built as a sacred earthly home for patron goddess Athena.",
-          "image_caption": "The Doric marble columns of the Parthenon on Athens's Acropolis — built as a sacred earthly home for patron goddess Athena.",
+          "caption": "The Doric marble columns of the Parthenon on Athens’s Acropolis — built as a sacred earthly home for patron goddess Athena.",
+          "image_caption": "The Doric marble columns of the Parthenon on Athens’s Acropolis — built as a sacred earthly home for patron goddess Athena.",
           "isReversed": false,
           "sources": []
         },
         {
           "act": 2,
           "title": "Riddles at Mountain Delphi & Hero Myths on Painted Clay Vases",
-          "text": "<span class=\"para-ref\">[3.3]</span> Before risking wars or sea voyages, anxious leaders climbed mountain **Delphi** to consult Apollo's **Oracle**. There, a priestess called the **Pythia** spoke mysterious riddles believed to come straight from Apollo! Generals puzzled over every word before marching armies or launching ships. Storytellers also chanted epic **myths** about brave heroes and terrifying monsters.<br><br><span class=\"para-ref\">[3.4]</span> Families loved hearing how strong **Heracles** battled the many-headed **Hydra**, clever **Odysseus** outwitted giants, and Perseus faced snake-haired **Medusa**. Potters painted those thrilling adventures onto glossy **black-figure** and **red-figure** clay vases that still survive today! Painted jars turned Greek supper tables into lively storybooks of courage.",
-          "content": "<span class=\"para-ref\">[3.3]</span> Before risking wars or sea voyages, anxious leaders climbed mountain **Delphi** to consult Apollo's **Oracle**. There, a priestess called the **Pythia** spoke mysterious riddles believed to come straight from Apollo! Generals puzzled over every word before marching armies or launching ships. Storytellers also chanted epic **myths** about brave heroes and terrifying monsters.<br><br><span class=\"para-ref\">[3.4]</span> Families loved hearing how strong **Heracles** battled the many-headed **Hydra**, clever **Odysseus** outwitted giants, and Perseus faced snake-haired **Medusa**. Potters painted those thrilling adventures onto glossy **black-figure** and **red-figure** clay vases that still survive today! Painted jars turned Greek supper tables into lively storybooks of courage.",
+          "text": "<span class=\"para-ref\">[3.3]</span> Before wars or sea trips, leaders climbed mountain **Delphi** to ask Apollo's **Oracle**. Inside the temple, a priestess called the **Pythia** [PITH-ee-uh] spoke mysterious riddles from Apollo! Generals studied every clue carefully before marching their armies out. Storytellers also chanted exciting **myths** about brave heroes and fierce monsters.<br><br><span class=\"para-ref\">[3.4]</span> Families loved hearing how strong **Heracles** [HER-uh-kleez] fought the many-headed **Hydra**. Clever **Odysseus** [oh-DISS-ee-us] outwitted giants, and Perseus faced snake-haired **Medusa**. Potters painted those tales onto glossy **black-figure** and **red-figure** clay vases. Every painted jar turned Greek supper tables into lively storybooks!",
+          "content": "<span class=\"para-ref\">[3.3]</span> Before wars or sea trips, leaders climbed mountain **Delphi** to ask Apollo's **Oracle**. Inside the temple, a priestess called the **Pythia** [PITH-ee-uh] spoke mysterious riddles from Apollo! Generals studied every clue carefully before marching their armies out. Storytellers also chanted exciting **myths** about brave heroes and fierce monsters.<br><br><span class=\"para-ref\">[3.4]</span> Families loved hearing how strong **Heracles** [HER-uh-kleez] fought the many-headed **Hydra**. Clever **Odysseus** [oh-DISS-ee-us] outwitted giants, and Perseus faced snake-haired **Medusa**. Potters painted those tales onto glossy **black-figure** and **red-figure** clay vases. Every painted jar turned Greek supper tables into lively storybooks!",
           "image": "/units/ks2_ancient_greece/assets/delphi_mountain_tholos_sanctuary.jpg",
           "image_alt": "Round marble columns of the Tholos sanctuary perched on steep green mountain slopes at Delphi",
-          "caption": "The mountain sanctuary of Delphi high on Mount Parnassus — where kings and generals climbed to consult Apollo's famous Oracle.",
-          "image_caption": "The mountain sanctuary of Delphi high on Mount Parnassus — where kings and generals climbed to consult Apollo's famous Oracle.",
+          "caption": "The mountain sanctuary of Delphi high on Mount Parnassus — where kings and generals climbed to consult Apollo’s famous Oracle.",
+          "image_caption": "The mountain sanctuary of Delphi high on Mount Parnassus — where kings and generals climbed to consult Apollo’s famous Oracle.",
           "isReversed": true,
           "sources": [
             {
@@ -1584,16 +1886,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/artemision_bronze_zeus_poseidon.jpg",
               "image": "/units/ks2_ancient_greece/assets/artemision_bronze_zeus_poseidon.jpg",
-              "title": "Source A: Over-Life-Size Greek Bronze Statue of Zeus or Poseidon (c. 460 BC)",
-              "caption": "A magnificent two-metre-tall hollow-cast bronze statue rescued from an ancient shipwreck off Cape Artemision, showing either Zeus hurling a thunderbolt or Poseidon aiming his trident.",
+              "title": "Source A: Over-Life-Size Bronze Statue of Zeus or Poseidon (c. 460 BC)",
+              "caption": "A two-metre-tall hollow bronze statue rescued from an ancient shipwreck off Cape Artemision, showing either Zeus aiming a thunderbolt or Poseidon aiming a trident.",
               "author": "Classical Greek Master Bronze Sculptor",
               "date": "c. 460 BC",
-              "context": "Recovered by sponge divers from an ancient shipwreck off Cape Artemision in Greece, this towering two-metre bronze statue was cast around 460 BC.",
-              "source_context": "Recovered by sponge divers from an ancient shipwreck off Cape Artemision in Greece, this towering two-metre bronze statue was cast around 460 BC.",
+              "context": "Pulled up by sponge divers from an Aegean shipwreck, this towering bronze god was cast around 460 BC, though the weapon in his right hand was lost at sea.",
+              "source_context": "Pulled up by sponge divers from an Aegean shipwreck, this towering bronze god was cast around 460 BC, though the weapon in his right hand was lost at sea. **Hinge Question:** Why do archaeologists still debate whether Source A shows Zeus with a thunderbolt or Poseidon with a three-pronged trident?",
               "question_badge": "ARTEMISION BRONZE GOD",
-              "question": "Why can't historians be certain whether Source A shows Zeus or Poseidon?",
-              "model_answer": "Both bearded brothers shared a mighty muscular build, and the weapon once gripped in Source A's raised right hand — either Zeus's thunderbolt or Poseidon's trident — vanished in the shipwreck!",
-              "provenance": "Classical Greek bronze statue of Zeus or Poseidon recovered from the sea off Cape Artemision (c. 460 BC, National Archaeological Museum, Athens)."
+              "question": "Why can’t historians be certain whether Source A shows Zeus or Poseidon?",
+              "model_answer": "Both bearded brothers shared a powerful build, and the weapon once held in Source A’s raised right hand — Zeus’s thunderbolt or Poseidon’s trident — was lost in the shipwreck!",
+              "provenance": "Classical Greek bronze statue of Zeus or Poseidon rescued from the sea off Cape Artemision (c. 460 BC, Athens)."
             },
             {
               "id": "ks2_ancient_greece_l3_src_b",
@@ -1602,24 +1904,24 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/athena_parthenos_marble_statue.jpg",
               "image": "/units/ks2_ancient_greece/assets/athena_parthenos_marble_statue.jpg",
-              "title": "Source B: Marble Statue Copy of Phidias's Giant Athena Parthenos Holding Nike (Original c. 438 BC)",
-              "caption": "An ancient marble copy of the lost twelve-metre gold-and-ivory statue of goddess Athena that stood inside the Parthenon, wearing Medusa's head on her breastplate and holding winged Victory (Nike).",
+              "title": "Source B: Ancient Marble Copy of Athena Parthenos Holding Nike (Original c. 438 BC)",
+              "caption": "An ancient marble copy of the lost twelve-metre gold-and-ivory statue of goddess Athena from inside the Parthenon, holding tiny winged Victory (Nike).",
               "author": "After the Athenian Sculptor Phidias",
               "date": "Original 438 BC (Varvakeion Marble Copy)",
-              "context": "Inside the shadowed inner hall of Athens's marble Parthenon stood Phidias's dazzling twelve-metre statue of wise warrior Athena, covered in more than a tonne of removable gold plates and carved elephant ivory!",
-              "source_context": "Inside the shadowed inner hall of Athens's marble Parthenon stood Phidias's dazzling twelve-metre statue of wise warrior Athena, covered in more than a tonne of removable gold plates and carved elephant ivory!",
+              "context": "Inside the inner hall of Athens’s Parthenon stood sculptor Phidias’s twelve-metre statue of wise warrior Athena, gleaming with removable gold plates and carved elephant ivory!",
+              "source_context": "Inside the inner hall of Athens’s Parthenon stood sculptor Phidias’s twelve-metre statue of wise warrior Athena, gleaming with removable gold plates and carved elephant ivory! **Hinge Question:** Why did Greeks place giant statues like Source B inside temples while crowds worshipped outside at open-air stone altars?",
               "question_badge": "ATHENA PARTHENOS STATUE",
-              "question": "Spot two symbols on Source B that show Athena's wisdom, protection, and victory.",
-              "model_answer": "Athena wears a crested warrior helmet and protective shield with a sacred snake, while holding tiny winged goddess Nike in her palm to promise victory to Athens!",
-              "provenance": "Varvakeion marble statuette copy after Phidias's chryselephantine Athena Parthenos of 438 BC (National Archaeological Museum, Athens)."
+              "question": "Spot two symbols on Source B that show Athena’s protection and victory.",
+              "model_answer": "Athena wears a tall warrior helmet and rests her hand on a shield guarded by a sacred snake, while holding winged goddess Nike to promise victory to Athens!",
+              "provenance": "Ancient marble copy of Phidias’s giant gold-and-ivory statue of Athena from the Parthenon in Athens (original c. 438 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "776 BC at Olympia: The Sacred Truce, Chariots & Olive Crowns",
-          "text": "<span class=\"para-ref\">[3.5]</span> Religion even inspired the world's most famous sports festival! Every four summers from **776 BC**, Greeks gathered at **Olympia** to honour **Zeus** with the **Ancient Olympic Games**. Before athletes set off, messengers proclaimed a **Sacred Truce** called **Ekecheiria**, pausing wars so rivals travelled safely. Athletes swore beside Zeus's smoky altar never to cheat in competition.<br><br><span class=\"para-ref\">[3.6]</span> Crowds cheered the barefoot **stadion** sprint, **discus**, **javelin**, **wrestling**, and thunderous **chariot racing**! Winners received no gold medals, wearing a woven wild-olive crown called a **kotinos** that brought glory to their home polis. Hometown crowds welcomed champions back like heroes with songs and feasts!",
-          "content": "<span class=\"para-ref\">[3.5]</span> Religion even inspired the world's most famous sports festival! Every four summers from **776 BC**, Greeks gathered at **Olympia** to honour **Zeus** with the **Ancient Olympic Games**. Before athletes set off, messengers proclaimed a **Sacred Truce** called **Ekecheiria**, pausing wars so rivals travelled safely. Athletes swore beside Zeus's smoky altar never to cheat in competition.<br><br><span class=\"para-ref\">[3.6]</span> Crowds cheered the barefoot **stadion** sprint, **discus**, **javelin**, **wrestling**, and thunderous **chariot racing**! Winners received no gold medals, wearing a woven wild-olive crown called a **kotinos** that brought glory to their home polis. Hometown crowds welcomed champions back like heroes with songs and feasts!",
+          "text": "<span class=\"para-ref\">[3.5]</span> Religion also inspired the world's most famous sports festival! Every four summers from **776 BC**, Greeks met at **Olympia** for **Zeus** at the **Ancient Olympic Games**. Messengers first announced a **Sacred Truce** called **Ekecheiria** [ek-eh-KY-ree-uh]. Fighting paused across Greece so athletes and crowds travelled safely.<br><br><span class=\"para-ref\">[3.6]</span> Athletes swore beside Zeus's smoky altar never to cheat. Crowds cheered the barefoot **stadion** sprint, **discus**, **javelin**, **wrestling**, and **chariot racing**! Champions won no gold medals at Olympia. Instead, winners wore a wild-olive crown called a **kotinos** [KOT-ih-nos] that brought glory home.",
+          "content": "<span class=\"para-ref\">[3.5]</span> Religion also inspired the world's most famous sports festival! Every four summers from **776 BC**, Greeks met at **Olympia** for **Zeus** at the **Ancient Olympic Games**. Messengers first announced a **Sacred Truce** called **Ekecheiria** [ek-eh-KY-ree-uh]. Fighting paused across Greece so athletes and crowds travelled safely.<br><br><span class=\"para-ref\">[3.6]</span> Athletes swore beside Zeus's smoky altar never to cheat. Crowds cheered the barefoot **stadion** sprint, **discus**, **javelin**, **wrestling**, and **chariot racing**! Champions won no gold medals at Olympia. Instead, winners wore a wild-olive crown called a **kotinos** [KOT-ih-nos] that brought glory home.",
           "image": "/units/ks2_ancient_greece/assets/olympia_temple_of_zeus_ruins.jpg",
           "image_alt": "Fallen giant stone column drums among olive trees at the Temple of Zeus in Ancient Olympia",
           "caption": "Giant fallen column drums at the Temple of Zeus in Olympia — where athletes from rival city-states competed every four years from 776 BC.",
@@ -1633,16 +1935,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/heracles_hydra_black_figure_vase.jpg",
               "image": "/units/ks2_ancient_greece/assets/heracles_hydra_black_figure_vase.jpg",
-              "title": "Source C: Black-Figure Greek Clay Amphora Showing Heracles Battling the Hydra (c. 530 BC)",
-              "caption": "A painted Greek storage jar (amphora) decorated in glossy black-figure silhouette, showing hero Heracles and nephew Iolaus fighting the nine-headed swamp monster Hydra.",
+              "title": "Source C: Black-Figure Clay Jar Showing Heracles Fighting the Hydra (c. 530 BC)",
+              "caption": "A painted Greek storage jar (amphora) decorated in glossy black silhouette, showing hero Heracles fighting the multi-headed swamp monster Hydra.",
               "author": "Greek Black-Figure Vase Painter",
               "date": "c. 530 BC",
-              "context": "Long before printed storybooks existed, sixth-century BC Athenian potters painted famous Greek tales in glossy black silhouette onto terracotta storage jars (amphorae).",
-              "source_context": "Long before printed storybooks existed, sixth-century BC Athenian potters painted famous Greek tales in glossy black silhouette onto terracotta storage jars (amphorae).",
+              "context": "Long before printed storybooks, Athenian potters painted thrilling myths onto clay storage jars — here Heracles battles the Hydra, which grew new snake heads when cut!",
+              "source_context": "Long before printed storybooks, Athenian potters painted thrilling myths onto clay storage jars — here Heracles battles the Hydra, which grew new snake heads when cut! **Hinge Question:** How do painted clay vases like Source C help historians rediscover Greek myths once told aloud around evening fires?",
               "question_badge": "HERACLES & HYDRA VASE",
               "question": "Look closely at the monster on Source C. Which myth is painted here, and why did potters paint myths?",
-              "model_answer": "Source C shows brave Heracles fighting the many-headed Hydra monster! Potters painted famous hero myths onto clay jars because families loved recognising exciting stories of courage at mealtimes.",
-              "provenance": "Archaic Greek black-figure terracotta amphora depicting Heracles and Iolaus slaying the Lernaian Hydra (c. 530 BC, museum collection)."
+              "model_answer": "Source C shows brave Heracles battling the many-headed Hydra! Potters painted famous hero myths onto clay jars because families loved spotting exciting tales of courage at mealtimes.",
+              "provenance": "Greek black-figure clay storage jar (amphora) showing Heracles battling the Hydra (c. 530 BC)."
             },
             {
               "id": "ks2_ancient_greece_l3_src_d",
@@ -1651,16 +1953,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/panathenaic_sprinters_amphora.jpg",
               "image": "/units/ks2_ancient_greece/assets/panathenaic_sprinters_amphora.jpg",
-              "title": "Source D: Black-Figure Prize Amphora Showing Barefoot Greek Sprinters Racing (c. 500 BC)",
-              "caption": "A large painted Greek prize jar once filled with sacred olive oil, showing four muscular barefoot athletes pumping their arms in a fast footrace.",
+              "title": "Source D: Painted Prize Jar Showing Barefoot Greek Sprinters (c. 500 BC)",
+              "caption": "A tall painted Greek prize jar once filled with sacred olive oil, showing four barefoot athletes pumping their arms in a fast sprint.",
               "author": "Athenian Prize-Vase Painter",
               "date": "c. 500 BC",
-              "context": "For the earliest festivals at Olympia starting in 776 BC, the entire Games consisted of one thrilling barefoot sprint called the stadion — about 192 metres down a packed-earth track — giving us our word 'stadium'!",
-              "source_context": "For the earliest festivals at Olympia starting in 776 BC, the entire Games consisted of one thrilling barefoot sprint called the stadion — about 192 metres down a packed-earth track — giving us our word 'stadium'!",
+              "context": "At the earliest festivals in Olympia from 776 BC, the Games featured one barefoot sprint called the stadion — about 192 metres — giving us our word \"stadium\"!",
+              "source_context": "At the earliest festivals in Olympia from 776 BC, the Games featured one barefoot sprint called the stadion — about 192 metres — giving us our word \"stadium\"! **Hinge Question:** Why did Ancient Greek athletes train and race in honour of the gods rather than treating sport as casual fun?",
               "question_badge": "BAREFOOT SPRINTERS VASE",
               "question": "Observe the four runners on Source D. How can you tell they are sprinting at top speed?",
-              "model_answer": "All four barefoot runners lean forward with knees lifted high and arms pumping wide in unison, showing the explosive speed of a Greek stadion sprint!",
-              "provenance": "Black-figure Panathenaic prize amphora showing four barefoot footrace sprinters (c. 500 BC, Metropolitan Museum / museum collection)."
+              "model_answer": "All four barefoot runners lean forward with knees lifted high and arms pumping wide together, capturing the explosive speed of a Greek stadion footrace!",
+              "provenance": "Painted black-figure Greek prize jar showing four barefoot sprinters (c. 500 BC)."
             }
           ]
         }
@@ -1673,16 +1975,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/artemision_bronze_zeus_poseidon.jpg",
           "image": "/units/ks2_ancient_greece/assets/artemision_bronze_zeus_poseidon.jpg",
-          "title": "Source A: Over-Life-Size Greek Bronze Statue of Zeus or Poseidon (c. 460 BC)",
-          "caption": "A magnificent two-metre-tall hollow-cast bronze statue rescued from an ancient shipwreck off Cape Artemision, showing either Zeus hurling a thunderbolt or Poseidon aiming his trident.",
+          "title": "Source A: Over-Life-Size Bronze Statue of Zeus or Poseidon (c. 460 BC)",
+          "caption": "A two-metre-tall hollow bronze statue rescued from an ancient shipwreck off Cape Artemision, showing either Zeus aiming a thunderbolt or Poseidon aiming a trident.",
           "author": "Classical Greek Master Bronze Sculptor",
           "date": "c. 460 BC",
-          "context": "Recovered by sponge divers from an ancient shipwreck off Cape Artemision in Greece, this towering two-metre bronze statue was cast around 460 BC.",
-          "source_context": "Recovered by sponge divers from an ancient shipwreck off Cape Artemision in Greece, this towering two-metre bronze statue was cast around 460 BC.",
+          "context": "Pulled up by sponge divers from an Aegean shipwreck, this towering bronze god was cast around 460 BC, though the weapon in his right hand was lost at sea.",
+          "source_context": "Pulled up by sponge divers from an Aegean shipwreck, this towering bronze god was cast around 460 BC, though the weapon in his right hand was lost at sea. **Hinge Question:** Why do archaeologists still debate whether Source A shows Zeus with a thunderbolt or Poseidon with a three-pronged trident?",
           "question_badge": "ARTEMISION BRONZE GOD",
-          "question": "Why can't historians be certain whether Source A shows Zeus or Poseidon?",
-          "model_answer": "Both bearded brothers shared a mighty muscular build, and the weapon once gripped in Source A's raised right hand — either Zeus's thunderbolt or Poseidon's trident — vanished in the shipwreck!",
-          "provenance": "Classical Greek bronze statue of Zeus or Poseidon recovered from the sea off Cape Artemision (c. 460 BC, National Archaeological Museum, Athens)."
+          "question": "Why can’t historians be certain whether Source A shows Zeus or Poseidon?",
+          "model_answer": "Both bearded brothers shared a powerful build, and the weapon once held in Source A’s raised right hand — Zeus’s thunderbolt or Poseidon’s trident — was lost in the shipwreck!",
+          "provenance": "Classical Greek bronze statue of Zeus or Poseidon rescued from the sea off Cape Artemision (c. 460 BC, Athens)."
         },
         {
           "id": "ks2_ancient_greece_l3_src_b",
@@ -1691,16 +1993,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/athena_parthenos_marble_statue.jpg",
           "image": "/units/ks2_ancient_greece/assets/athena_parthenos_marble_statue.jpg",
-          "title": "Source B: Marble Statue Copy of Phidias's Giant Athena Parthenos Holding Nike (Original c. 438 BC)",
-          "caption": "An ancient marble copy of the lost twelve-metre gold-and-ivory statue of goddess Athena that stood inside the Parthenon, wearing Medusa's head on her breastplate and holding winged Victory (Nike).",
+          "title": "Source B: Ancient Marble Copy of Athena Parthenos Holding Nike (Original c. 438 BC)",
+          "caption": "An ancient marble copy of the lost twelve-metre gold-and-ivory statue of goddess Athena from inside the Parthenon, holding tiny winged Victory (Nike).",
           "author": "After the Athenian Sculptor Phidias",
           "date": "Original 438 BC (Varvakeion Marble Copy)",
-          "context": "Inside the shadowed inner hall of Athens's marble Parthenon stood Phidias's dazzling twelve-metre statue of wise warrior Athena, covered in more than a tonne of removable gold plates and carved elephant ivory!",
-          "source_context": "Inside the shadowed inner hall of Athens's marble Parthenon stood Phidias's dazzling twelve-metre statue of wise warrior Athena, covered in more than a tonne of removable gold plates and carved elephant ivory!",
+          "context": "Inside the inner hall of Athens’s Parthenon stood sculptor Phidias’s twelve-metre statue of wise warrior Athena, gleaming with removable gold plates and carved elephant ivory!",
+          "source_context": "Inside the inner hall of Athens’s Parthenon stood sculptor Phidias’s twelve-metre statue of wise warrior Athena, gleaming with removable gold plates and carved elephant ivory! **Hinge Question:** Why did Greeks place giant statues like Source B inside temples while crowds worshipped outside at open-air stone altars?",
           "question_badge": "ATHENA PARTHENOS STATUE",
-          "question": "Spot two symbols on Source B that show Athena's wisdom, protection, and victory.",
-          "model_answer": "Athena wears a crested warrior helmet and protective shield with a sacred snake, while holding tiny winged goddess Nike in her palm to promise victory to Athens!",
-          "provenance": "Varvakeion marble statuette copy after Phidias's chryselephantine Athena Parthenos of 438 BC (National Archaeological Museum, Athens)."
+          "question": "Spot two symbols on Source B that show Athena’s protection and victory.",
+          "model_answer": "Athena wears a tall warrior helmet and rests her hand on a shield guarded by a sacred snake, while holding winged goddess Nike to promise victory to Athens!",
+          "provenance": "Ancient marble copy of Phidias’s giant gold-and-ivory statue of Athena from the Parthenon in Athens (original c. 438 BC)."
         },
         {
           "id": "ks2_ancient_greece_l3_src_c",
@@ -1709,16 +2011,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/heracles_hydra_black_figure_vase.jpg",
           "image": "/units/ks2_ancient_greece/assets/heracles_hydra_black_figure_vase.jpg",
-          "title": "Source C: Black-Figure Greek Clay Amphora Showing Heracles Battling the Hydra (c. 530 BC)",
-          "caption": "A painted Greek storage jar (amphora) decorated in glossy black-figure silhouette, showing hero Heracles and nephew Iolaus fighting the nine-headed swamp monster Hydra.",
+          "title": "Source C: Black-Figure Clay Jar Showing Heracles Fighting the Hydra (c. 530 BC)",
+          "caption": "A painted Greek storage jar (amphora) decorated in glossy black silhouette, showing hero Heracles fighting the multi-headed swamp monster Hydra.",
           "author": "Greek Black-Figure Vase Painter",
           "date": "c. 530 BC",
-          "context": "Long before printed storybooks existed, sixth-century BC Athenian potters painted famous Greek tales in glossy black silhouette onto terracotta storage jars (amphorae).",
-          "source_context": "Long before printed storybooks existed, sixth-century BC Athenian potters painted famous Greek tales in glossy black silhouette onto terracotta storage jars (amphorae).",
+          "context": "Long before printed storybooks, Athenian potters painted thrilling myths onto clay storage jars — here Heracles battles the Hydra, which grew new snake heads when cut!",
+          "source_context": "Long before printed storybooks, Athenian potters painted thrilling myths onto clay storage jars — here Heracles battles the Hydra, which grew new snake heads when cut! **Hinge Question:** How do painted clay vases like Source C help historians rediscover Greek myths once told aloud around evening fires?",
           "question_badge": "HERACLES & HYDRA VASE",
           "question": "Look closely at the monster on Source C. Which myth is painted here, and why did potters paint myths?",
-          "model_answer": "Source C shows brave Heracles fighting the many-headed Hydra monster! Potters painted famous hero myths onto clay jars because families loved recognising exciting stories of courage at mealtimes.",
-          "provenance": "Archaic Greek black-figure terracotta amphora depicting Heracles and Iolaus slaying the Lernaian Hydra (c. 530 BC, museum collection)."
+          "model_answer": "Source C shows brave Heracles battling the many-headed Hydra! Potters painted famous hero myths onto clay jars because families loved spotting exciting tales of courage at mealtimes.",
+          "provenance": "Greek black-figure clay storage jar (amphora) showing Heracles battling the Hydra (c. 530 BC)."
         },
         {
           "id": "ks2_ancient_greece_l3_src_d",
@@ -1727,16 +2029,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/panathenaic_sprinters_amphora.jpg",
           "image": "/units/ks2_ancient_greece/assets/panathenaic_sprinters_amphora.jpg",
-          "title": "Source D: Black-Figure Prize Amphora Showing Barefoot Greek Sprinters Racing (c. 500 BC)",
-          "caption": "A large painted Greek prize jar once filled with sacred olive oil, showing four muscular barefoot athletes pumping their arms in a fast footrace.",
+          "title": "Source D: Painted Prize Jar Showing Barefoot Greek Sprinters (c. 500 BC)",
+          "caption": "A tall painted Greek prize jar once filled with sacred olive oil, showing four barefoot athletes pumping their arms in a fast sprint.",
           "author": "Athenian Prize-Vase Painter",
           "date": "c. 500 BC",
-          "context": "For the earliest festivals at Olympia starting in 776 BC, the entire Games consisted of one thrilling barefoot sprint called the stadion — about 192 metres down a packed-earth track — giving us our word 'stadium'!",
-          "source_context": "For the earliest festivals at Olympia starting in 776 BC, the entire Games consisted of one thrilling barefoot sprint called the stadion — about 192 metres down a packed-earth track — giving us our word 'stadium'!",
+          "context": "At the earliest festivals in Olympia from 776 BC, the Games featured one barefoot sprint called the stadion — about 192 metres — giving us our word \"stadium\"!",
+          "source_context": "At the earliest festivals in Olympia from 776 BC, the Games featured one barefoot sprint called the stadion — about 192 metres — giving us our word \"stadium\"! **Hinge Question:** Why did Ancient Greek athletes train and race in honour of the gods rather than treating sport as casual fun?",
           "question_badge": "BAREFOOT SPRINTERS VASE",
           "question": "Observe the four runners on Source D. How can you tell they are sprinting at top speed?",
-          "model_answer": "All four barefoot runners lean forward with knees lifted high and arms pumping wide in unison, showing the explosive speed of a Greek stadion sprint!",
-          "provenance": "Black-figure Panathenaic prize amphora showing four barefoot footrace sprinters (c. 500 BC, Metropolitan Museum / museum collection)."
+          "model_answer": "All four barefoot runners lean forward with knees lifted high and arms pumping wide together, capturing the explosive speed of a Greek stadion footrace!",
+          "provenance": "Painted black-figure Greek prize jar showing four barefoot sprinters (c. 500 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -1753,7 +2055,7 @@ window.UNIT_DATA = {
             "trigger": "Believing twelve gods ruled from Mount Olympus, Greeks built marble temples like Athens's Parthenon and offered sacrifices at outdoor altars.",
             "connective": "Worshippers also sought divine guidance and told thrilling stories of gods and heroes.",
             "question": "How did Greeks honour the twelve gods of Mount Olympus?",
-            "prose_hash": "7601600271",
+            "prose_hash": "07feb36425",
             "questionHeading": "How did Greeks honour the twelve gods of Mount Olympus?",
             "focusClue": "How did Greeks honour the twelve gods of Mount Olympus?",
             "dates": "c. 800–400 BC",
@@ -1768,10 +2070,10 @@ window.UNIT_DATA = {
             "tag": "🏺 MYTHS & ORACLE",
             "trigger": "Leaders questioned Apollo's Oracle at Delphi, while potters painted Heracles, the Hydra, Odysseus, and Medusa onto black- and red-figure vases.",
             "connective": "Shared devotion to Zeus also drew rival city-states together for peaceful athletic contests.",
-            "question": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
-            "prose_hash": "e0bf6c8780",
-            "questionHeading": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
-            "focusClue": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
+            "question": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
+            "prose_hash": "720bb39550",
+            "questionHeading": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
+            "focusClue": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
             "dates": "c. 700–400 BC",
             "paraRef": "[3.3]"
           },
@@ -1785,7 +2087,7 @@ window.UNIT_DATA = {
             "trigger": "Every four summers from 776 BC, the Sacred Truce paused wars so athletes raced at Olympia for Zeus and won wild-olive kotinos crowns!",
             "connective": "Proved that shared festivals could unite Greeks right before mighty foreign empires threatened Greece.",
             "question": "How did the Ancient Olympic Games unite rival city-states from 776 BC?",
-            "prose_hash": "16300ca693",
+            "prose_hash": "91aa806de4",
             "questionHeading": "How did the Ancient Olympic Games unite rival city-states from 776 BC?",
             "focusClue": "How did the Ancient Olympic Games unite rival city-states from 776 BC?",
             "dates": "From 776 BC",
@@ -1821,12 +2123,12 @@ window.UNIT_DATA = {
           "dates": "c. 800–400 BC",
           "para_ref": "[3.1]",
           "paraRef": "[3.1]",
-          "prose_hash": "7601600271"
+          "prose_hash": "07feb36425"
         },
         {
           "step": 2,
-          "heading": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
-          "focus_clue": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
+          "heading": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
+          "focus_clue": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
           "words": [
             {
               "term": "Delphi",
@@ -1843,14 +2145,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "Travellers sought advice from Apollo's Oracle at <strong>Delphi</strong>, while potters painted heroes like <strong>Heracles</strong> onto glossy <strong>black-figure</strong> vases.",
           "title": "Riddles at Mountain Delphi & Hero Myths on Painted Clay Vases",
-          "question": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
-          "questionHeading": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
-          "focusClue": "How did the Oracle at Delphi and painted clay vases bring Greek beliefs to life?",
+          "question": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
+          "questionHeading": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
+          "focusClue": "How did Delphi’s Oracle and painted clay vases share Greek beliefs?",
           "date": "c. 700–400 BC",
           "dates": "c. 700–400 BC",
           "para_ref": "[3.3]",
           "paraRef": "[3.3]",
-          "prose_hash": "e0bf6c8780"
+          "prose_hash": "720bb39550"
         },
         {
           "step": 3,
@@ -1879,7 +2181,7 @@ window.UNIT_DATA = {
           "dates": "776–400 BC",
           "para_ref": "[3.5]",
           "paraRef": "[3.5]",
-          "prose_hash": "16300ca693"
+          "prose_hash": "91aa806de4"
         }
       ],
       "tasks": [
@@ -1889,7 +2191,7 @@ window.UNIT_DATA = {
           "type": "source_clues",
           "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "question": "Why can't historians be certain whether Source A shows Zeus or Poseidon?",
+          "question": "Why can’t historians be certain whether Source A shows Zeus or Poseidon?",
           "starter": "Looking closely at Source A, historians cannot be certain whether this bronze statue is Zeus or Poseidon because...",
           "word_bank": [
             "Zeus",
@@ -1968,78 +2270,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Where did Ancient Greeks believe the twelve chief Olympian gods and goddesses lived?",
-          "q": "Where did Ancient Greeks believe the twelve chief Olympian gods and goddesses lived?",
+          "question": "Where did Ancient Greeks believe the twelve immortal Olympian gods and goddesses lived?",
+          "q": "Where did Ancient Greeks believe the twelve immortal Olympian gods and goddesses lived?",
           "options": [
-            "At the bottom of the Nile River",
-            "High on snow-capped Mount Olympus",
-            "Inside the Lion Gate at Mycenae",
-            "Underground beneath Sparta's barracks"
+            "High on snowy Mount Olympus",
+            "Deep beneath the Sahara Desert",
+            "Inside the walls of Sparta",
+            "On the island of Britain"
           ],
-          "correct": 1,
-          "answer": "High on snow-capped Mount Olympus",
-          "a": "High on snow-capped Mount Olympus",
-          "explanation": "Mount Olympus, the highest mountain peak in Greece, was imagined as the cloud-wrapped home of Zeus, Hera, Athena, and the other Olympians."
+          "correct": 0,
+          "answer": "High on snowy Mount Olympus",
+          "a": "High on snowy Mount Olympus",
+          "explanation": "Greeks imagined Zeus, Hera, Athena, and the other Olympians ruling from snowy Mount Olympus, Greece’s highest peak."
         },
         {
           "stage": 1,
-          "question": "Which gleaming marble temple was built atop Athens's Acropolis to honour wise warrior goddess Athena?",
-          "q": "Which gleaming marble temple was built atop Athens's Acropolis to honour wise warrior goddess Athena?",
+          "question": "Which Greek god shook the seas with his trident, and which wise goddess protected Athens?",
+          "q": "Which Greek god shook the seas with his trident, and which wise goddess protected Athens?",
           "options": [
-            "The Parthenon",
-            "The Colosseum",
-            "Stonehenge",
-            "The Great Pyramid"
+            "Apollo shook the seas; Artemis protected Athens",
+            "Poseidon shook the seas; Athena protected Athens",
+            "Hermes shook the seas; Hera protected Athens",
+            "Heracles shook the seas; Medusa protected Athens"
+          ],
+          "correct": 1,
+          "answer": "Poseidon shook the seas; Athena protected Athens",
+          "a": "Poseidon shook the seas; Athena protected Athens",
+          "explanation": "Sea-god Poseidon ruled the waves while wise warrior goddess Athena guarded craftworkers and the city of Athens."
+        },
+        {
+          "stage": 1,
+          "question": "What stood inside the inner hall of Athens’s gleaming marble Parthenon temple?",
+          "q": "What stood inside the inner hall of Athens’s gleaming marble Parthenon temple?",
+          "options": [
+            "A wooden Trojan horse",
+            "A bronze battering ram",
+            "A giant gold-and-ivory statue of goddess Athena",
+            "A marble kleroterion jury machine"
+          ],
+          "correct": 2,
+          "answer": "A giant gold-and-ivory statue of goddess Athena",
+          "a": "A giant gold-and-ivory statue of goddess Athena",
+          "explanation": "Inside the Parthenon stood sculptor Phidias’s dazzling twelve-metre statue of Athena made with gold plates and carved ivory."
+        },
+        {
+          "stage": 1,
+          "question": "Where did ordinary Greek crowds gather to pour wine and roast offerings for the gods?",
+          "q": "Where did ordinary Greek crowds gather to pour wine and roast offerings for the gods?",
+          "options": [
+            "Locked inside dark temple cellars",
+            "On board moving warships",
+            "Inside underground silver mines",
+            "Outdoors at open-air stone altars"
+          ],
+          "correct": 3,
+          "answer": "Outdoors at open-air stone altars",
+          "a": "Outdoors at open-air stone altars",
+          "explanation": "Temples were sacred homes for a god’s statue, so crowds worshipped outside around open-air stone altars where smoke rose skyward."
+        },
+        {
+          "stage": 1,
+          "question": "Which swift messenger god wore winged sandals in Greek belief?",
+          "q": "Which swift messenger god wore winged sandals in Greek belief?",
+          "options": [
+            "Hermes",
+            "Zeus",
+            "Poseidon",
+            "Apollo"
           ],
           "correct": 0,
-          "answer": "The Parthenon",
-          "a": "The Parthenon",
-          "explanation": "Athens built the white-marble Parthenon on the Acropolis to house Phidias's towering gold-and-ivory statue of Athena Parthenos."
+          "answer": "Hermes",
+          "a": "Hermes",
+          "explanation": "Winged-sandalled Hermes sped between Mount Olympus and mortals as the swift messenger of the gods."
         },
         {
           "stage": 2,
-          "question": "Why did Greek kings, generals, and travellers climb high up to the sanctuary of Delphi?",
-          "q": "Why did Greek kings, generals, and travellers climb high up to the sanctuary of Delphi?",
+          "question": "Why did Greek kings and generals climb mountain Delphi before starting wars or voyages?",
+          "q": "Why did Greek kings and generals climb mountain Delphi before starting wars or voyages?",
           "options": [
-            "To buy silver owl coins from Sparta",
-            "To train seven-year-old boys in the agoge",
-            "To ask Apollo's Oracle (the priestess Pythia) for wise guidance about the future",
-            "To race chariots inside a covered stadium"
+            "To mine gold for new shields",
+            "To question Apollo’s Oracle for divine guidance",
+            "To watch chariot races at Olympia",
+            "To hide inside Mycenae’s Lion Gate"
+          ],
+          "correct": 1,
+          "answer": "To question Apollo’s Oracle for divine guidance",
+          "a": "To question Apollo’s Oracle for divine guidance",
+          "explanation": "Anxious leaders travelled high up to Delphi to ask Apollo’s Oracle for advice before big decisions."
+        },
+        {
+          "stage": 2,
+          "question": "What was the title of the priestess at Delphi who spoke mysterious riddles from Apollo?",
+          "q": "What was the title of the priestess at Delphi who spoke mysterious riddles from Apollo?",
+          "options": [
+            "The Metic",
+            "The Helot",
+            "The Pythia",
+            "The Phalanx"
           ],
           "correct": 2,
-          "answer": "To ask Apollo's Oracle (the priestess Pythia) for wise guidance about the future",
-          "a": "To ask Apollo's Oracle (the priestess Pythia) for wise guidance about the future",
-          "explanation": "Greeks believed god Apollo spoke mysterious prophecies through his priestess, the Pythia, at mountain Delphi."
+          "answer": "The Pythia",
+          "a": "The Pythia",
+          "explanation": "Seated inside Apollo’s mountain temple at Delphi, the priestess known as the Pythia chanted riddles generals tried to decode."
         },
         {
-          "stage": 3,
-          "question": "In what year were the first recorded Ancient Olympic Games held at Olympia in honour of Zeus?",
-          "q": "In what year were the first recorded Ancient Olympic Games held at Olympia in honour of Zeus?",
+          "stage": 2,
+          "question": "In Greek myth, which multi-headed swamp monster did strong hero Heracles battle on Source C?",
+          "q": "In Greek myth, which multi-headed swamp monster did strong hero Heracles battle on Source C?",
           "options": [
-            "3100 BC",
-            "508 BC",
-            "43 AD",
-            "776 BC"
+            "The Minotaur",
+            "Pegasus",
+            "Cerberus",
+            "The Hydra"
           ],
           "correct": 3,
-          "answer": "776 BC",
-          "a": "776 BC",
-          "explanation": "From 776 BC, Greeks gathered every four summers at Olympia to honour king of the gods Zeus with athletic contests."
+          "answer": "The Hydra",
+          "a": "The Hydra",
+          "explanation": "Source C shows Heracles fighting the terrifying many-headed Hydra monster painted in black silhouette on a clay jar."
+        },
+        {
+          "stage": 2,
+          "question": "Which snake-haired monster did hero Perseus face in Greek mythology?",
+          "q": "Which snake-haired monster did hero Perseus face in Greek mythology?",
+          "options": [
+            "Medusa",
+            "Athena",
+            "Hera",
+            "Artemis"
+          ],
+          "correct": 0,
+          "answer": "Medusa",
+          "a": "Medusa",
+          "explanation": "Greek storytellers told how brave Perseus outwitted snake-haired Medusa, while Odysseus outsmarted giants."
+        },
+        {
+          "stage": 2,
+          "question": "What were the two famous styles of glossy painted Greek myth pottery called?",
+          "q": "What were the two famous styles of glossy painted Greek myth pottery called?",
+          "options": [
+            "Blue-glaze and green-glaze",
+            "Black-figure and red-figure",
+            "Stone-carved and iron-cast",
+            "Papyrus-wrapped and wax-sealed"
+          ],
+          "correct": 1,
+          "answer": "Black-figure and red-figure",
+          "a": "Black-figure and red-figure",
+          "explanation": "Greek potters painted gods and heroes onto glossy black-figure and red-figure clay vases that survived for millennia."
         },
         {
           "stage": 3,
-          "question": "What did the 'Sacred Truce' (Ekecheiria) do before every Ancient Olympic Games, and what prize did winners receive?",
-          "q": "What did the 'Sacred Truce' (Ekecheiria) do before every Ancient Olympic Games, and what prize did winners receive?",
+          "question": "In which year were the earliest recorded Ancient Olympic Games held at Olympia in honour of Zeus?",
+          "q": "In which year were the earliest recorded Ancient Olympic Games held at Olympia in honour of Zeus?",
           "options": [
-            "Paused wars for safe travel, and winners received a woven wild-olive crown (kotinos)",
-            "Doubled city taxes, and winners received a bag of gold coins",
-            "Closed every harbour, and winners received a bronze helmet",
-            "Banished losing runners for ten years on pottery shards"
+            "1250 BC",
+            "490 BC",
+            "776 BC",
+            "146 BC"
+          ],
+          "correct": 2,
+          "answer": "776 BC",
+          "a": "776 BC",
+          "explanation": "Every four summers starting in 776 BC, Greeks gathered at Olympia to honour sky-king Zeus with athletic contests."
+        },
+        {
+          "stage": 3,
+          "question": "What did the Olympic Sacred Truce (Ekecheiria) do before every Olympic festival?",
+          "q": "What did the Olympic Sacred Truce (Ekecheiria) do before every Olympic festival?",
+          "options": [
+            "Doubled taxes across every city-state",
+            "Banned spectators from cheering aloud",
+            "Awarded silver coins to every runner",
+            "Paused wars so athletes and visitors could travel safely"
+          ],
+          "correct": 3,
+          "answer": "Paused wars so athletes and visitors could travel safely",
+          "a": "Paused wars so athletes and visitors could travel safely",
+          "explanation": "Heralds proclaimed the Sacred Truce (Ekecheiria) across Greece so rival cities paused fighting while travellers journeyed to Olympia."
+        },
+        {
+          "stage": 3,
+          "question": "Which barefoot sprint at Olympia gave English our modern word \"stadium\"?",
+          "q": "Which barefoot sprint at Olympia gave English our modern word \"stadium\"?",
+          "options": [
+            "The stadion sprint",
+            "The marathon march",
+            "The phalanx charge",
+            "The kotinos dash"
           ],
           "correct": 0,
-          "answer": "Paused wars for safe travel, and winners received a woven wild-olive crown (kotinos)",
-          "a": "Paused wars for safe travel, and winners received a woven wild-olive crown (kotinos)",
-          "explanation": "Ekecheiria paused fighting so athletes and crowds reached Olympia safely, where champions were crowned with sacred wild-olive leaves."
+          "answer": "The stadion sprint",
+          "a": "The stadion sprint",
+          "explanation": "Runners raced barefoot down a packed-earth track called the stadion — giving us our modern word \"stadium\"!"
+        },
+        {
+          "stage": 3,
+          "question": "What prize was placed on an Olympic champion’s head instead of a gold medal?",
+          "q": "What prize was placed on an Olympic champion’s head instead of a gold medal?",
+          "options": [
+            "A solid silver helmet",
+            "A woven crown of wild olive leaves called a kotinos",
+            "A necklace of Egyptian emeralds",
+            "A purple silk cloak"
+          ],
+          "correct": 1,
+          "answer": "A woven crown of wild olive leaves called a kotinos",
+          "a": "A woven crown of wild olive leaves called a kotinos",
+          "explanation": "Victorious athletes at Olympia won a sacred wild-olive wreath called a kotinos and brought lasting honour to their home polis."
+        },
+        {
+          "stage": 3,
+          "question": "Alongside the stadion sprint, which other events thrilled crowds at the Ancient Olympics?",
+          "q": "Alongside the stadion sprint, which other events thrilled crowds at the Ancient Olympics?",
+          "options": [
+            "Jousting on armoured knights’ horses",
+            "Football, cricket, and tennis",
+            "Discus, javelin, wrestling, and chariot racing",
+            "Ski jumping and ice hockey"
+          ],
+          "correct": 2,
+          "answer": "Discus, javelin, wrestling, and chariot racing",
+          "a": "Discus, javelin, wrestling, and chariot racing",
+          "explanation": "Ancient Olympic crowds cheered the barefoot sprint, discus, javelin, wrestling, and thunderous horse-drawn chariot races."
         }
       ],
       "video": [
@@ -2060,15 +2512,16 @@ window.UNIT_DATA = {
         "caption": "The ancient packed-earth stadion running track at Olympia, where barefoot Greek sprinters raced in honour of Zeus from 776 BC",
         "position": "center 35%"
       },
-      "banner_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg"
+      "banner_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
+      "enquiry": "How did Greek gods inspire temples, myths, and the Olympic Games?"
     },
     {
       "id": "lesson_4",
       "skill": "Cause, Consequence & Turning Points",
-      "title": "Enquiry 4: Marathon, Thermopylae & Salamis — How Did Tiny City-States Defeat the Persian Empire? (490–479 BC)",
+      "title": "Enquiry 4: Marathon, Thermopylae & Salamis (490–479 BC)",
       "subtitle": "King Darius & King Xerxes, the Hoplite Phalanx at Marathon, 300 Spartans at Thermopylae, and Triremes at Salamis",
-      "enquiryQuestion": "How did tiny, rival Greek city-states unite to defeat the mighty Persian Empire between 490 and 479 BC?",
-      "enquiry_question": "How did tiny, rival Greek city-states unite to defeat the mighty Persian Empire between 490 and 479 BC?",
+      "enquiryQuestion": "How did tiny Greek city-states defeat the giant Persian Empire?",
+      "enquiry_question": "How did tiny Greek city-states defeat the giant Persian Empire?",
       "prologue": "In 490 BC, the gigantic Persian Empire sailed across the Aegean to crush tiny Greece! Lock bronze shields in the Marathon phalanx, guard the narrow cliffs of Thermopylae alongside King Leonidas, and ram enemy warships with wooden triremes in the Strait of Salamis.",
       "blurb": "In 490 BC, the gigantic Persian Empire sailed across the Aegean to crush tiny Greece! Lock bronze shields in the Marathon phalanx, guard the narrow cliffs of Thermopylae alongside King Leonidas, and ram enemy warships with wooden triremes in the Strait of Salamis.",
       "hero_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
@@ -2094,10 +2547,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Greek citizen-soldiers called hoplites bought their own bronze helmets, greaves, long spears, and heavy round shields, locking them edge-to-edge in a tight wall called a phalanx. **Hinge Question:** Why did each hoplite’s round shield protect both his own left side and his neighbour’s right side in the phalanx?",
-          "Source B": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one soldier fell, another stepped forward immediately. **Hinge Question:** How does the colourful cloth clothing of the Persian Immortals in Source B differ from the heavy bronze armour of Greek hoplites?",
-          "Source C": "Excavated in Sparta, this fierce marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans who held the narrow pass of Thermopylae in 480 BC. **Hinge Question:** Why was a narrow mountain pass squeezed between cliffs and sea the cleverest place for Leonidas’s small force to block Xerxes’s huge army?",
-          "Source D": "When Athens struck a rich seam of silver in its mines at Laurion, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money! **Hinge Question:** How did Themistocles use geography to turn Persia’s huge number of ships into a disadvantage inside the narrow Strait of Salamis?"
+          "Source A": "Greek citizen-soldiers called hoplites bought their own bronze helmets, shin guards, spears, and heavy round shields, locking them edge-to-edge in a tight phalanx. **Hinge Question:** Why did each hoplite’s round shield protect both his own left side and his neighbour’s right side in the phalanx?",
+          "Source B": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one fell, another stepped into place at once. **Hinge Question:** How does the colourful woven clothing of the Persian Immortals in Source B differ from the heavy bronze armour of Greek hoplites?",
+          "Source C": "Unearthed on the hilltop of Sparta, this marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans at Thermopylae in 480 BC. **Hinge Question:** Why was a narrow mountain pass squeezed between cliffs and sea the cleverest place for Leonidas’s small force to block Xerxes’s huge army?",
+          "Source D": "When Athens struck rich silver in its mines, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money! **Hinge Question:** How did Themistocles use geography to turn Persia’s huge number of ships into a weakness inside the narrow Strait of Salamis?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2232,20 +2685,20 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "490 BC: Darius Invades, the Hoplite Phalanx & Marathon",
-          "text": "<span class=\"para-ref\">[4.1]</span> Across the Aegean Sea lay the gigantic **Achaemenid Persian Empire**, ruled by **King Darius I**. In **490 BC**, Darius sent warships to punish **Athens** for helping rebel Greek towns. Persian archers landed on the coastal plain of **Marathon**, north of Athens. Citizen **hoplites** marched out with bronze shields and long spears locked in a tight **phalanx**.<br><br><span class=\"para-ref\">[4.2]</span> Charging at a run, the Greek phalanx smashed through the lighter Persian ranks and won! Legend tells how messenger **Pheidippides** raced twenty-six miles to Athens, shouted \"Joy, we win!\", and collapsed. His famous run inspired our modern **marathon** race, while Athenians heaped a grassy **burial mound** over their fallen heroes.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Across the Aegean Sea lay the gigantic **Achaemenid Persian Empire**, ruled by **King Darius I**. In **490 BC**, Darius sent warships to punish **Athens** for helping rebel Greek towns. Persian archers landed on the coastal plain of **Marathon**, north of Athens. Citizen **hoplites** marched out with bronze shields and long spears locked in a tight **phalanx**.<br><br><span class=\"para-ref\">[4.2]</span> Charging at a run, the Greek phalanx smashed through the lighter Persian ranks and won! Legend tells how messenger **Pheidippides** raced twenty-six miles to Athens, shouted \"Joy, we win!\", and collapsed. His famous run inspired our modern **marathon** race, while Athenians heaped a grassy **burial mound** over their fallen heroes.",
+          "text": "<span class=\"para-ref\">[4.1]</span> East across the sea lay the **Persian Empire**, ruled by **King Darius I**. In **490 BC**, Darius sent ships to punish **Athens** for helping rebel towns. Persian archers landed on the plain of **Marathon**, north of Athens. Citizen **hoplites** [HOP-lyts] locked bronze shields and spears in a tight **phalanx** [FAL-anks].<br><br><span class=\"para-ref\">[4.2]</span> Charging fast, the Greek phalanx smashed through the Persian lines! Legend says **Pheidippides** [fy-DIP-ih-deez] ran twenty-six miles to Athens, cried \"Joy, we win!\", and fell. His run inspired our **marathon**, and Athens raised a grassy **burial mound**.",
+          "content": "<span class=\"para-ref\">[4.1]</span> East across the sea lay the **Persian Empire**, ruled by **King Darius I**. In **490 BC**, Darius sent ships to punish **Athens** for helping rebel towns. Persian archers landed on the plain of **Marathon**, north of Athens. Citizen **hoplites** [HOP-lyts] locked bronze shields and spears in a tight **phalanx** [FAL-anks].<br><br><span class=\"para-ref\">[4.2]</span> Charging fast, the Greek phalanx smashed through the Persian lines! Legend says **Pheidippides** [fy-DIP-ih-deez] ran twenty-six miles to Athens, cried \"Joy, we win!\", and fell. His run inspired our **marathon**, and Athens raised a grassy **burial mound**.",
           "image": "/units/ks2_ancient_greece/assets/marathon_athenian_burial_mound.jpg",
           "image_alt": "The grass-covered Athenian Soros burial mound standing on the plain of Marathon in Greece",
-          "caption": "The nine-metre-high Athenian burial mound (Soros) on the plain of Marathon, raised to honour the 192 Athenians who fell in 490 BC.",
-          "image_caption": "The nine-metre-high Athenian burial mound (Soros) on the plain of Marathon, raised to honour the 192 Athenians who fell in 490 BC.",
+          "caption": "The nine-metre-high Athenian burial mound on the plain of Marathon, raised to honour the 192 Athenians who fell in 490 BC.",
+          "image_caption": "The nine-metre-high Athenian burial mound on the plain of Marathon, raised to honour the 192 Athenians who fell in 490 BC.",
           "isReversed": false,
           "sources": []
         },
         {
           "act": 2,
           "title": "480 BC: King Xerxes & the Brave Stand at Thermopylae",
-          "text": "<span class=\"para-ref\">[4.3]</span> Ten years later, in **480 BC**, Darius’s son **King Xerxes** led an even bigger invasion. Vast armies including elite **Persian Immortals** marched south to conquer every free Greek city-state. Rival **poleis** united at last, sending **Spartan King Leonidas** to guard the narrow mountain pass of **Thermopylae**.<br><br><span class=\"para-ref\">[4.4]</span> Steep cliffs towered on one side while deep sea waves crashed right below the road. For three fierce days, **three hundred Spartans** and brave Greek allies held back thousands of invaders. When a traitor showed Xerxes a hidden mountain path, Leonidas stayed fighting so allied troops could escape. Today a stone lion monument still honours their fearless courage.",
-          "content": "<span class=\"para-ref\">[4.3]</span> Ten years later, in **480 BC**, Darius’s son **King Xerxes** led an even bigger invasion. Vast armies including elite **Persian Immortals** marched south to conquer every free Greek city-state. Rival **poleis** united at last, sending **Spartan King Leonidas** to guard the narrow mountain pass of **Thermopylae**.<br><br><span class=\"para-ref\">[4.4]</span> Steep cliffs towered on one side while deep sea waves crashed right below the road. For three fierce days, **three hundred Spartans** and brave Greek allies held back thousands of invaders. When a traitor showed Xerxes a hidden mountain path, Leonidas stayed fighting so allied troops could escape. Today a stone lion monument still honours their fearless courage.",
+          "text": "<span class=\"para-ref\">[4.3]</span> Ten years later, in **480 BC**, Darius's son **King Xerxes** led a bigger invasion. Huge armies with elite **Persian Immortals** marched south to conquer Greece. Rival Greeks united at last to defend their homeland. **Spartan King Leonidas** marched north to guard the narrow pass of **Thermopylae** [ther-MOP-ih-lee].<br><br><span class=\"para-ref\">[4.4]</span> Steep cliffs rose on one side while deep sea waves crashed below. For three days, **three hundred Spartans** and allies blocked thousands of soldiers. When a traitor showed Xerxes a **mountain path**, Leonidas stayed fighting so allies escaped.",
+          "content": "<span class=\"para-ref\">[4.3]</span> Ten years later, in **480 BC**, Darius's son **King Xerxes** led a bigger invasion. Huge armies with elite **Persian Immortals** marched south to conquer Greece. Rival Greeks united at last to defend their homeland. **Spartan King Leonidas** marched north to guard the narrow pass of **Thermopylae** [ther-MOP-ih-lee].<br><br><span class=\"para-ref\">[4.4]</span> Steep cliffs rose on one side while deep sea waves crashed below. For three days, **three hundred Spartans** and allies blocked thousands of soldiers. When a traitor showed Xerxes a **mountain path**, Leonidas stayed fighting so allies escaped.",
           "image": "/units/ks2_ancient_greece/assets/salamis_narrow_sea_strait_1910.jpg",
           "image_alt": "Historical view across the narrow coastal waters of the Strait of Salamis near Athens",
           "caption": "The narrow coastal channel of the Strait of Salamis near Athens, where geography squeezed Persia’s huge invading fleet into tight waters.",
@@ -2259,16 +2712,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
               "image": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
-              "title": "Source A: Black-Figure Greek Vase Showing Hoplite Warriors in Battle (c. 510 BC)",
-              "caption": "Ancient Greek black-figure pottery painting of citizen hoplites wearing crested bronze helmets, carrying round shields, and thrusting long spears.",
+              "title": "Source A: Black-Figure Greek Vase Showing Hoplites in Battle (c. 510 BC)",
+              "caption": "Ancient Greek pottery painting of citizen hoplites wearing crested bronze helmets, carrying round shields, and thrusting long spears.",
               "author": "Athenian Black-Figure Vase Painter",
               "date": "c. 510 BC",
-              "context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, greaves, long spears, and heavy round shields, locking them edge-to-edge in a tight wall called a phalanx.",
-              "source_context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, greaves, long spears, and heavy round shields, locking them edge-to-edge in a tight wall called a phalanx.",
+              "context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, shin guards, spears, and heavy round shields, locking them edge-to-edge in a tight phalanx.",
+              "source_context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, shin guards, spears, and heavy round shields, locking them edge-to-edge in a tight phalanx. **Hinge Question:** Why did each hoplite’s round shield protect both his own left side and his neighbour’s right side in the phalanx?",
               "question_badge": "HOPLITE PHALANX VASE",
               "question": "Look closely at the warriors on Source A. What armour and weapons made a phalanx so tough?",
-              "model_answer": "Source A shows Greek hoplites wearing crested bronze helmets and leg guards while holding large round shields and thrusting long iron-tipped spears. Locked shoulder-to-shoulder in a tight phalanx, their overlapping shields formed a bronze wall.",
-              "provenance": "Attic black-figure ceramic amphora depicting armoured hoplites clashing with spears and shields (c. 510 BC, museum collection)."
+              "model_answer": "Source A shows hoplites wearing crested bronze helmets and shin guards while overlapping large round shields and pointing long spears forward like a moving bronze wall.",
+              "provenance": "Painted black-figure Greek clay jar showing armoured hoplites clashing with spears and shields (c. 510 BC)."
             },
             {
               "id": "ks2_ancient_greece_l4_src_b",
@@ -2277,24 +2730,24 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/persian_immortals_glazed_frieze.jpg",
               "image": "/units/ks2_ancient_greece/assets/persian_immortals_glazed_frieze.jpg",
-              "title": "Source B: Glazed Brick Palace Frieze of Persian Immortals Archers from Susa (c. 510 BC)",
-              "caption": "Colourful glazed-brick wall frieze from King Darius I’s royal palace at Susa showing elite Persian Immortals carrying bows, quivers, and silver-butt spears.",
+              "title": "Source B: Glazed Brick Frieze of Persian Immortals From Susa (c. 510 BC)",
+              "caption": "Colourful glazed-brick palace wall frieze from Susa showing elite Persian Immortals carrying curved bows, arrow quivers, and spears.",
               "author": "Royal Craftworkers of King Darius I at Susa",
               "date": "c. 510 BC",
-              "context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one soldier fell, another stepped forward immediately.",
-              "source_context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one soldier fell, another stepped forward immediately.",
+              "context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one fell, another stepped into place at once.",
+              "source_context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one fell, another stepped into place at once. **Hinge Question:** How does the colourful woven clothing of the Persian Immortals in Source B differ from the heavy bronze armour of Greek hoplites?",
               "question_badge": "PERSIAN IMMORTALS FRIEZE",
               "question": "Compare Source B with Source A. How were Persian Immortals armed differently from Greek hoplites?",
-              "model_answer": "In Source B, Persian Immortals wear patterned woven robes rather than heavy bronze chest plates, carrying curved bows, arrow quivers, and lighter spears. They fought rapidly from a distance, whereas Greek hoplites smashed forward behind heavy bronze shields.",
-              "provenance": "Polychrome glazed-brick palace frieze of Achaemenid Persian royal guards (\"Immortals\") from Susa, Iran (c. 510 BC, Musée du Louvre)."
+              "model_answer": "In Source B, Persian Immortals wear patterned cloth robes rather than heavy bronze armour, carrying bows and quivers to shoot from afar while Greek hoplites charged behind bronze shields.",
+              "provenance": "Colourful glazed-brick wall frieze of Persian royal guards (\"Immortals\") from King Darius’s palace at Susa, Iran (c. 510 BC)."
             }
           ]
         },
         {
           "act": 3,
           "title": "480–479 BC: Wooden Triremes & Victory in the Strait of Salamis",
-          "text": "<span class=\"para-ref\">[4.5]</span> Persian troops marched on and burned empty Athens, after Athenian families evacuated safely by boat. Clever Admiral **Themistocles** trusted Athens’s sleek wooden warships, called **triremes**, rowed by **170 oarsmen** on three levels. Each fast trireme bore painted eyes on its prow and a heavy **bronze ram** at the waterline.<br><br><span class=\"para-ref\">[4.6]</span> Themistocles sent a trick message that lured Xerxes’s huge fleet into the narrow **Strait of Salamis**. Jammed tightly together, giant Persian vessels collided while nimble Greek triremes rammed their wooden hulls. After Salamis in **480 BC** and Plataea in **479 BC**, Greece stayed independent and free!",
-          "content": "<span class=\"para-ref\">[4.5]</span> Persian troops marched on and burned empty Athens, after Athenian families evacuated safely by boat. Clever Admiral **Themistocles** trusted Athens’s sleek wooden warships, called **triremes**, rowed by **170 oarsmen** on three levels. Each fast trireme bore painted eyes on its prow and a heavy **bronze ram** at the waterline.<br><br><span class=\"para-ref\">[4.6]</span> Themistocles sent a trick message that lured Xerxes’s huge fleet into the narrow **Strait of Salamis**. Jammed tightly together, giant Persian vessels collided while nimble Greek triremes rammed their wooden hulls. After Salamis in **480 BC** and Plataea in **479 BC**, Greece stayed independent and free!",
+          "text": "<span class=\"para-ref\">[4.5]</span> Persian troops marched on and burned empty Athens after families sailed to safety. Clever Admiral **Themistocles** [thuh-MIS-tuh-kleez] trusted Athens's fast wooden warships, called **triremes** [TRY-reemz]. Each sleek trireme used **170 oarsmen** seated on three wooden levels. Painted eyes gleamed above a heavy **bronze ram** at the waterline.<br><br><span class=\"para-ref\">[4.6]</span> Themistocles sent a trick message to lure Xerxes's fleet into the narrow **Strait of Salamis**. Crowded Persian ships crashed together while nimble Greek triremes rammed their hulls. After Salamis in **480 BC** and Plataea in **479 BC**, Greece stayed free!",
+          "content": "<span class=\"para-ref\">[4.5]</span> Persian troops marched on and burned empty Athens after families sailed to safety. Clever Admiral **Themistocles** [thuh-MIS-tuh-kleez] trusted Athens's fast wooden warships, called **triremes** [TRY-reemz]. Each sleek trireme used **170 oarsmen** seated on three wooden levels. Painted eyes gleamed above a heavy **bronze ram** at the waterline.<br><br><span class=\"para-ref\">[4.6]</span> Themistocles sent a trick message to lure Xerxes's fleet into the narrow **Strait of Salamis**. Crowded Persian ships crashed together while nimble Greek triremes rammed their hulls. After Salamis in **480 BC** and Plataea in **479 BC**, Greece stayed free!",
           "image": "/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg",
           "image_alt": "Reconstructed ancient Athenian wooden trireme Olympias showing three banks of oars, painted eye, and bronze waterline ram",
           "caption": "The reconstructed Greek trireme Olympias, powered by 170 rowers and armed with a bronze ram like the fleet at Salamis in 480 BC.",
@@ -2308,16 +2761,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/spartan_warrior_leonidas_statue.jpg",
               "image": "/units/ks2_ancient_greece/assets/spartan_warrior_leonidas_statue.jpg",
-              "title": "Source C: Carved Marble Statue of a Crested Spartan Warrior Linked to Leonidas (c. 480 BC)",
-              "caption": "Parian marble torso and crested Corinthian helmet of a fierce warrior excavated on the acropolis of Sparta and popularly linked to King Leonidas.",
+              "title": "Source C: Marble Statue of a Helmeted Spartan Warrior (c. 480 BC)",
+              "caption": "Carved white marble torso and crested helmet of a fierce warrior dug up in Sparta and popularly linked to King Leonidas.",
               "author": "Classical Greek Marble Sculptor in Sparta",
               "date": "c. 480–470 BC",
-              "context": "Excavated in Sparta, this fierce marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans who held the narrow pass of Thermopylae in 480 BC.",
-              "source_context": "Excavated in Sparta, this fierce marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans who held the narrow pass of Thermopylae in 480 BC.",
+              "context": "Unearthed on the hilltop of Sparta, this marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans at Thermopylae in 480 BC.",
+              "source_context": "Unearthed on the hilltop of Sparta, this marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans at Thermopylae in 480 BC. **Hinge Question:** Why was a narrow mountain pass squeezed between cliffs and sea the cleverest place for Leonidas’s small force to block Xerxes’s huge army?",
               "question_badge": "SPARTAN WARRIOR STATUE",
               "question": "Inspect Source C. Why do historians link this Spartan marble statue to the stand at Thermopylae?",
-              "model_answer": "Carved around 480 BC and discovered in Sparta, Source C shows a determined warrior wearing a tall crested helmet and cheek-pieces. It matches the era when Spartan King Leonidas and his allies bravely blocked King Xerxes’s vast army at Thermopylae.",
-              "provenance": "Archaic-Classical Parian marble statue of a helmeted hoplite (\"Leonidas\"), excavated at Sparta (c. 480–470 BC, Archaeological Museum of Sparta)."
+              "model_answer": "Carved around 480 BC and found in Sparta, Source C shows a determined warrior in a tall crested helmet right from the time King Leonidas bravely held narrow Thermopylae.",
+              "provenance": "Carved marble statue of a helmeted Spartan hoplite (\"Leonidas\"), unearthed in Sparta, Greece (c. 480–470 BC)."
             },
             {
               "id": "ks2_ancient_greece_l4_src_d",
@@ -2326,16 +2779,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/themistocles_marble_portrait.jpg",
               "image": "/units/ks2_ancient_greece/assets/themistocles_marble_portrait.jpg",
-              "title": "Source D: Marble Portrait Bust of Athenian Naval Commander Themistocles (Roman Copy of Greek Original)",
-              "caption": "Carved marble portrait bust of Athenian statesman and admiral Themistocles, who persuaded Athens to build a fleet of 200 wooden triremes.",
+              "title": "Source D: Marble Portrait Bust of Athenian Admiral Themistocles",
+              "caption": "Carved marble portrait bust of clever Athenian leader and admiral Themistocles, who persuaded Athens to build 200 wooden triremes.",
               "author": "Roman Copy after an Early Classical Greek Bronze Original (c. 470 BC)",
               "date": "Original c. 470 BC",
-              "context": "When Athens struck a rich seam of silver in its mines at Laurion, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money!",
-              "source_context": "When Athens struck a rich seam of silver in its mines at Laurion, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money!",
+              "context": "When Athens struck rich silver in its mines, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money!",
+              "source_context": "When Athens struck rich silver in its mines, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money! **Hinge Question:** How did Themistocles use geography to turn Persia’s huge number of ships into a weakness inside the narrow Strait of Salamis?",
               "question_badge": "ADMIRAL THEMISTOCLES",
               "question": "How did Themistocles’s clever plan save Greece inside the narrow Strait of Salamis in 480 BC?",
-              "model_answer": "First, Themistocles convinced Athenians to spend silver-mine wealth building swift 170-oar wooden triremes. Then, in 480 BC, he tricked King Xerxes into steering Persia’s huge fleet into the narrow Strait of Salamis, where jammed ships were rammed and sunk!",
-              "provenance": "Marble portrait herm of Themistocles excavated at Ostia, Roman copy of a Greek original of c. 470 BC (Archaeological Museum of Ostia)."
+              "model_answer": "First, Themistocles persuaded Athens to build swift 170-oar wooden triremes with silver-mine wealth; then he lured Xerxes’s huge fleet into narrow Salamis, where jammed ships were rammed!",
+              "provenance": "Ancient Roman marble copy of a Greek portrait bust of Admiral Themistocles (original c. 470 BC)."
             }
           ]
         }
@@ -2348,16 +2801,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
           "image": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
-          "title": "Source A: Black-Figure Greek Vase Showing Hoplite Warriors in Battle (c. 510 BC)",
-          "caption": "Ancient Greek black-figure pottery painting of citizen hoplites wearing crested bronze helmets, carrying round shields, and thrusting long spears.",
+          "title": "Source A: Black-Figure Greek Vase Showing Hoplites in Battle (c. 510 BC)",
+          "caption": "Ancient Greek pottery painting of citizen hoplites wearing crested bronze helmets, carrying round shields, and thrusting long spears.",
           "author": "Athenian Black-Figure Vase Painter",
           "date": "c. 510 BC",
-          "context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, greaves, long spears, and heavy round shields, locking them edge-to-edge in a tight wall called a phalanx.",
-          "source_context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, greaves, long spears, and heavy round shields, locking them edge-to-edge in a tight wall called a phalanx.",
+          "context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, shin guards, spears, and heavy round shields, locking them edge-to-edge in a tight phalanx.",
+          "source_context": "Greek citizen-soldiers called hoplites bought their own bronze helmets, shin guards, spears, and heavy round shields, locking them edge-to-edge in a tight phalanx. **Hinge Question:** Why did each hoplite’s round shield protect both his own left side and his neighbour’s right side in the phalanx?",
           "question_badge": "HOPLITE PHALANX VASE",
           "question": "Look closely at the warriors on Source A. What armour and weapons made a phalanx so tough?",
-          "model_answer": "Source A shows Greek hoplites wearing crested bronze helmets and leg guards while holding large round shields and thrusting long iron-tipped spears. Locked shoulder-to-shoulder in a tight phalanx, their overlapping shields formed a bronze wall.",
-          "provenance": "Attic black-figure ceramic amphora depicting armoured hoplites clashing with spears and shields (c. 510 BC, museum collection)."
+          "model_answer": "Source A shows hoplites wearing crested bronze helmets and shin guards while overlapping large round shields and pointing long spears forward like a moving bronze wall.",
+          "provenance": "Painted black-figure Greek clay jar showing armoured hoplites clashing with spears and shields (c. 510 BC)."
         },
         {
           "id": "ks2_ancient_greece_l4_src_b",
@@ -2366,16 +2819,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/persian_immortals_glazed_frieze.jpg",
           "image": "/units/ks2_ancient_greece/assets/persian_immortals_glazed_frieze.jpg",
-          "title": "Source B: Glazed Brick Palace Frieze of Persian Immortals Archers from Susa (c. 510 BC)",
-          "caption": "Colourful glazed-brick wall frieze from King Darius I’s royal palace at Susa showing elite Persian Immortals carrying bows, quivers, and silver-butt spears.",
+          "title": "Source B: Glazed Brick Frieze of Persian Immortals From Susa (c. 510 BC)",
+          "caption": "Colourful glazed-brick palace wall frieze from Susa showing elite Persian Immortals carrying curved bows, arrow quivers, and spears.",
           "author": "Royal Craftworkers of King Darius I at Susa",
           "date": "c. 510 BC",
-          "context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one soldier fell, another stepped forward immediately.",
-          "source_context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one soldier fell, another stepped forward immediately.",
+          "context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one fell, another stepped into place at once.",
+          "source_context": "King Darius I and King Xerxes commanded an elite guard of 10,000 soldiers nicknamed the \"Immortals\" because whenever one fell, another stepped into place at once. **Hinge Question:** How does the colourful woven clothing of the Persian Immortals in Source B differ from the heavy bronze armour of Greek hoplites?",
           "question_badge": "PERSIAN IMMORTALS FRIEZE",
           "question": "Compare Source B with Source A. How were Persian Immortals armed differently from Greek hoplites?",
-          "model_answer": "In Source B, Persian Immortals wear patterned woven robes rather than heavy bronze chest plates, carrying curved bows, arrow quivers, and lighter spears. They fought rapidly from a distance, whereas Greek hoplites smashed forward behind heavy bronze shields.",
-          "provenance": "Polychrome glazed-brick palace frieze of Achaemenid Persian royal guards (\"Immortals\") from Susa, Iran (c. 510 BC, Musée du Louvre)."
+          "model_answer": "In Source B, Persian Immortals wear patterned cloth robes rather than heavy bronze armour, carrying bows and quivers to shoot from afar while Greek hoplites charged behind bronze shields.",
+          "provenance": "Colourful glazed-brick wall frieze of Persian royal guards (\"Immortals\") from King Darius’s palace at Susa, Iran (c. 510 BC)."
         },
         {
           "id": "ks2_ancient_greece_l4_src_c",
@@ -2384,16 +2837,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/spartan_warrior_leonidas_statue.jpg",
           "image": "/units/ks2_ancient_greece/assets/spartan_warrior_leonidas_statue.jpg",
-          "title": "Source C: Carved Marble Statue of a Crested Spartan Warrior Linked to Leonidas (c. 480 BC)",
-          "caption": "Parian marble torso and crested Corinthian helmet of a fierce warrior excavated on the acropolis of Sparta and popularly linked to King Leonidas.",
+          "title": "Source C: Marble Statue of a Helmeted Spartan Warrior (c. 480 BC)",
+          "caption": "Carved white marble torso and crested helmet of a fierce warrior dug up in Sparta and popularly linked to King Leonidas.",
           "author": "Classical Greek Marble Sculptor in Sparta",
           "date": "c. 480–470 BC",
-          "context": "Excavated in Sparta, this fierce marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans who held the narrow pass of Thermopylae in 480 BC.",
-          "source_context": "Excavated in Sparta, this fierce marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans who held the narrow pass of Thermopylae in 480 BC.",
+          "context": "Unearthed on the hilltop of Sparta, this marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans at Thermopylae in 480 BC.",
+          "source_context": "Unearthed on the hilltop of Sparta, this marble warrior wears a cheek-guarded helmet with a tall crest — recalling King Leonidas and the 300 Spartans at Thermopylae in 480 BC. **Hinge Question:** Why was a narrow mountain pass squeezed between cliffs and sea the cleverest place for Leonidas’s small force to block Xerxes’s huge army?",
           "question_badge": "SPARTAN WARRIOR STATUE",
           "question": "Inspect Source C. Why do historians link this Spartan marble statue to the stand at Thermopylae?",
-          "model_answer": "Carved around 480 BC and discovered in Sparta, Source C shows a determined warrior wearing a tall crested helmet and cheek-pieces. It matches the era when Spartan King Leonidas and his allies bravely blocked King Xerxes’s vast army at Thermopylae.",
-          "provenance": "Archaic-Classical Parian marble statue of a helmeted hoplite (\"Leonidas\"), excavated at Sparta (c. 480–470 BC, Archaeological Museum of Sparta)."
+          "model_answer": "Carved around 480 BC and found in Sparta, Source C shows a determined warrior in a tall crested helmet right from the time King Leonidas bravely held narrow Thermopylae.",
+          "provenance": "Carved marble statue of a helmeted Spartan hoplite (\"Leonidas\"), unearthed in Sparta, Greece (c. 480–470 BC)."
         },
         {
           "id": "ks2_ancient_greece_l4_src_d",
@@ -2402,16 +2855,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/themistocles_marble_portrait.jpg",
           "image": "/units/ks2_ancient_greece/assets/themistocles_marble_portrait.jpg",
-          "title": "Source D: Marble Portrait Bust of Athenian Naval Commander Themistocles (Roman Copy of Greek Original)",
-          "caption": "Carved marble portrait bust of Athenian statesman and admiral Themistocles, who persuaded Athens to build a fleet of 200 wooden triremes.",
+          "title": "Source D: Marble Portrait Bust of Athenian Admiral Themistocles",
+          "caption": "Carved marble portrait bust of clever Athenian leader and admiral Themistocles, who persuaded Athens to build 200 wooden triremes.",
           "author": "Roman Copy after an Early Classical Greek Bronze Original (c. 470 BC)",
           "date": "Original c. 470 BC",
-          "context": "When Athens struck a rich seam of silver in its mines at Laurion, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money!",
-          "source_context": "When Athens struck a rich seam of silver in its mines at Laurion, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money!",
+          "context": "When Athens struck rich silver in its mines, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money!",
+          "source_context": "When Athens struck rich silver in its mines, Themistocles persuaded citizens to spend the silver building 200 fast wooden triremes instead of sharing out pocket money! **Hinge Question:** How did Themistocles use geography to turn Persia’s huge number of ships into a weakness inside the narrow Strait of Salamis?",
           "question_badge": "ADMIRAL THEMISTOCLES",
           "question": "How did Themistocles’s clever plan save Greece inside the narrow Strait of Salamis in 480 BC?",
-          "model_answer": "First, Themistocles convinced Athenians to spend silver-mine wealth building swift 170-oar wooden triremes. Then, in 480 BC, he tricked King Xerxes into steering Persia’s huge fleet into the narrow Strait of Salamis, where jammed ships were rammed and sunk!",
-          "provenance": "Marble portrait herm of Themistocles excavated at Ostia, Roman copy of a Greek original of c. 470 BC (Archaeological Museum of Ostia)."
+          "model_answer": "First, Themistocles persuaded Athens to build swift 170-oar wooden triremes with silver-mine wealth; then he lured Xerxes’s huge fleet into narrow Salamis, where jammed ships were rammed!",
+          "provenance": "Ancient Roman marble copy of a Greek portrait bust of Admiral Themistocles (original c. 470 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -2428,7 +2881,7 @@ window.UNIT_DATA = {
             "trigger": "King Darius I landed troops at Marathon in 490 BC, where citizen hoplites charged in a tight bronze phalanx.",
             "connective": "Proved Persian armies could be beaten, prompting King Xerxes to plan a huge return invasion.",
             "question": "How did Athens defeat Darius’s army on the plain of Marathon?",
-            "prose_hash": "a879fdc118",
+            "prose_hash": "f37c86d95b",
             "questionHeading": "How did Athens defeat Darius’s army on the plain of Marathon?",
             "focusClue": "How did Athens defeat Darius’s army on the plain of Marathon?",
             "dates": "490 BC",
@@ -2444,7 +2897,7 @@ window.UNIT_DATA = {
             "trigger": "In 480 BC, Leonidas, 300 Spartans, and Greek allies blocked Xerxes’s army for three days inside narrow Thermopylae.",
             "connective": "Bought vital time for Athenians to evacuate their city and prepare warships at sea.",
             "question": "Why could Leonidas hold back Xerxes’s huge army at Thermopylae?",
-            "prose_hash": "2b451c47d0",
+            "prose_hash": "d6966cd2d7",
             "questionHeading": "Why could Leonidas hold back Xerxes’s huge army at Thermopylae?",
             "focusClue": "Why could Leonidas hold back Xerxes’s huge army at Thermopylae?",
             "dates": "480 BC",
@@ -2460,7 +2913,7 @@ window.UNIT_DATA = {
             "trigger": "Admiral Themistocles lured Xerxes’s fleet into the narrow Strait of Salamis, where wooden triremes rammed jammed Persian ships.",
             "connective": "Shattered Persian sea power in 480 BC and secured lasting freedom for Greece’s city-states.",
             "question": "What naval trap helped Themistocles sink the fleet at Salamis?",
-            "prose_hash": "a3ee649f1c",
+            "prose_hash": "bedf901139",
             "questionHeading": "What naval trap helped Themistocles sink the fleet at Salamis?",
             "focusClue": "What naval trap helped Themistocles sink the fleet at Salamis?",
             "dates": "480–479 BC",
@@ -2496,7 +2949,7 @@ window.UNIT_DATA = {
           "dates": "490 BC",
           "para_ref": "[4.1]",
           "paraRef": "[4.1]",
-          "prose_hash": "a879fdc118"
+          "prose_hash": "f37c86d95b"
         },
         {
           "step": 2,
@@ -2525,7 +2978,7 @@ window.UNIT_DATA = {
           "dates": "480 BC",
           "para_ref": "[4.3]",
           "paraRef": "[4.3]",
-          "prose_hash": "2b451c47d0"
+          "prose_hash": "d6966cd2d7"
         },
         {
           "step": 3,
@@ -2554,7 +3007,7 @@ window.UNIT_DATA = {
           "dates": "480–479 BC",
           "para_ref": "[4.5]",
           "paraRef": "[4.5]",
-          "prose_hash": "a3ee649f1c"
+          "prose_hash": "bedf901139"
         }
       ],
       "tasks": [
@@ -2643,78 +3096,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "What do historians call the tight shoulder-to-shoulder battle formation of Greek hoplites locking shields together?",
-          "q": "What do historians call the tight shoulder-to-shoulder battle formation of Greek hoplites locking shields together?",
+          "question": "Which Persian king sent warships across the Aegean Sea in 490 BC to punish Athens at Marathon?",
+          "q": "Which Persian king sent warships across the Aegean Sea in 490 BC to punish Athens at Marathon?",
           "options": [
-            "A phalanx",
-            "An ostrakon",
-            "An acropolis",
-            "An agora"
+            "King Xerxes",
+            "King Leonidas",
+            "King Philip II",
+            "King Darius I"
           ],
-          "correct": 0,
-          "answer": "A phalanx",
-          "a": "A phalanx",
-          "explanation": "In a phalanx, citizen hoplites overlapped heavy round bronze shields and pointed rows of long spears forward like a wall."
+          "correct": 3,
+          "answer": "King Darius I",
+          "a": "King Darius I",
+          "explanation": "In 490 BC, King Darius I of the Persian Empire sent troops to Marathon to punish Athens for aiding rebel Greek towns."
         },
         {
           "stage": 1,
-          "question": "Which legendary messenger ran roughly twenty-six miles from the battlefield of Marathon to Athens in 490 BC?",
-          "q": "Which legendary messenger ran roughly twenty-six miles from the battlefield of Marathon to Athens in 490 BC?",
+          "question": "What was a Greek citizen-soldier armed with a round bronze shield, helmet, and long spear called?",
+          "q": "What was a Greek citizen-soldier armed with a round bronze shield, helmet, and long spear called?",
           "options": [
-            "Leonidas",
-            "Pheidippides",
-            "Darius",
-            "Socrates"
+            "A hoplite",
+            "A gladiator",
+            "A samurai",
+            "A knight"
+          ],
+          "correct": 0,
+          "answer": "A hoplite",
+          "a": "A hoplite",
+          "explanation": "Greek citizen-soldiers were called hoplites, named after their heavy bronze equipment and round shields."
+        },
+        {
+          "stage": 1,
+          "question": "How did Greek hoplites fight together inside a tight \"phalanx\" formation?",
+          "q": "How did Greek hoplites fight together inside a tight \"phalanx\" formation?",
+          "options": [
+            "By riding camels in wide circles",
+            "By locking round shields edge-to-edge with rows of spears pointing forward",
+            "By hiding individually behind olive trees",
+            "By firing iron cannons from stone castles"
           ],
           "correct": 1,
+          "answer": "By locking round shields edge-to-edge with rows of spears pointing forward",
+          "a": "By locking round shields edge-to-edge with rows of spears pointing forward",
+          "explanation": "Locking heavy shields shoulder-to-shoulder turned a Greek phalanx into a tough wall of bronze and spears."
+        },
+        {
+          "stage": 1,
+          "question": "According to Greek legend, who ran 26 miles from Marathon to Athens to announce victory in 490 BC?",
+          "q": "According to Greek legend, who ran 26 miles from Marathon to Athens to announce victory in 490 BC?",
+          "options": [
+            "Themistocles",
+            "Socrates",
+            "Pheidippides",
+            "Pericles"
+          ],
+          "correct": 2,
           "answer": "Pheidippides",
           "a": "Pheidippides",
-          "explanation": "Pheidippides’s famous run from Marathon to announce Athens’s victory in 490 BC inspired the modern 26.2-mile marathon race!"
+          "explanation": "Legend tells how runner Pheidippides raced 26 miles from Marathon to Athens shouting \"Joy, we win!\" — inspiring our modern marathon."
+        },
+        {
+          "stage": 1,
+          "question": "What monument still rises on the plain of Marathon to honour the Athenians who fell in 490 BC?",
+          "q": "What monument still rises on the plain of Marathon to honour the Athenians who fell in 490 BC?",
+          "options": [
+            "A glass pyramid",
+            "A spiral brick minaret",
+            "A Roman stone aqueduct",
+            "A grassy nine-metre burial mound"
+          ],
+          "correct": 3,
+          "answer": "A grassy nine-metre burial mound",
+          "a": "A grassy nine-metre burial mound",
+          "explanation": "Athenians heaped a tall grassy burial mound over their fallen citizen-soldiers right on the plain of Marathon."
         },
         {
           "stage": 2,
-          "question": "Which Spartan king led 300 Spartans and Greek allies to hold the narrow mountain pass of Thermopylae in 480 BC?",
-          "q": "Which Spartan king led 300 Spartans and Greek allies to hold the narrow mountain pass of Thermopylae in 480 BC?",
+          "question": "Who led the massive second Persian invasion of Greece in 480 BC, ten years after Marathon?",
+          "q": "Who led the massive second Persian invasion of Greece in 480 BC, ten years after Marathon?",
           "options": [
-            "King Xerxes",
-            "King Pericles",
+            "King Xerxes, son of Darius I",
+            "Alexander the Great",
+            "Julius Caesar",
+            "Hulagu Khan"
+          ],
+          "correct": 0,
+          "answer": "King Xerxes, son of Darius I",
+          "a": "King Xerxes, son of Darius I",
+          "explanation": "In 480 BC, Darius’s son King Xerxes marched a huge army south to conquer Greece’s independent city-states."
+        },
+        {
+          "stage": 2,
+          "question": "Why were Persia’s 10,000 elite royal guards in Source B nicknamed the \"Immortals\"?",
+          "q": "Why were Persia’s 10,000 elite royal guards in Source B nicknamed the \"Immortals\"?",
+          "options": [
+            "They wore solid diamond helmets",
+            "Whenever one soldier fell, another stepped forward immediately to keep their number at 10,000",
+            "They never slept or ate food on campaign",
+            "They rode winged horses into battle"
+          ],
+          "correct": 1,
+          "answer": "Whenever one soldier fell, another stepped forward immediately to keep their number at 10,000",
+          "a": "Whenever one soldier fell, another stepped forward immediately to keep their number at 10,000",
+          "explanation": "Replacing every fallen guard straight away made Persia’s elite 10,000-strong force seem never-ending."
+        },
+        {
+          "stage": 2,
+          "question": "Which Spartan king led 300 Spartans and Greek allies at the narrow pass of Thermopylae in 480 BC?",
+          "q": "Which Spartan king led 300 Spartans and Greek allies at the narrow pass of Thermopylae in 480 BC?",
+          "options": [
+            "Pericles",
+            "Euclid",
             "King Leonidas",
-            "King Darius I"
+            "Hippocrates"
           ],
           "correct": 2,
           "answer": "King Leonidas",
           "a": "King Leonidas",
-          "explanation": "King Leonidas and his force held the narrow coastal pass of Thermopylae for three days against King Xerxes’s huge invading army."
+          "explanation": "Spartan King Leonidas led 300 Spartans alongside brave Greek allies to block the narrow coastal pass of Thermopylae."
         },
         {
-          "stage": 3,
-          "question": "How many oarsmen rowed an ancient Greek wooden trireme, and what weapon sat at its waterline prow?",
-          "q": "How many oarsmen rowed an ancient Greek wooden trireme, and what weapon sat at its waterline prow?",
+          "stage": 2,
+          "question": "Why was the narrow pass of Thermopylae such a clever place for a small Greek force to block a huge army?",
+          "q": "Why was the narrow pass of Thermopylae such a clever place for a small Greek force to block a huge army?",
           "options": [
-            "20 oarsmen and a stone catapult",
-            "50 oarsmen and iron cannons",
-            "500 oarsmen and flaming arrows",
-            "170 oarsmen on three levels and a heavy bronze ram"
+            "Thick snowstorms hid the entire Persian camp",
+            "A wide desert stretched for miles on every side",
+            "Wooden drawbridges lifted across a deep moat",
+            "Steep cliffs on one side and deep sea waves below stopped Persia using its huge numbers at once"
           ],
           "correct": 3,
-          "answer": "170 oarsmen on three levels and a heavy bronze ram",
-          "a": "170 oarsmen on three levels and a heavy bronze ram",
-          "explanation": "Triple-banked rows of 170 free oarsmen drove each nimble wooden trireme forward so its bronze ram smashed enemy hulls."
+          "answer": "Steep cliffs on one side and deep sea waves below stopped Persia using its huge numbers at once",
+          "a": "Steep cliffs on one side and deep sea waves below stopped Persia using its huge numbers at once",
+          "explanation": "Squeezed between sheer mountain cliffs and the sea, only a narrow front of Persian troops could fight the Greek shield wall at one time."
+        },
+        {
+          "stage": 2,
+          "question": "How did King Xerxes’s soldiers finally get behind Leonidas’s defenders after three days at Thermopylae?",
+          "q": "How did King Xerxes’s soldiers finally get behind Leonidas’s defenders after three days at Thermopylae?",
+          "options": [
+            "A traitor showed the Persians a hidden mountain path around the pass",
+            "Persian ships tunnelled right underneath the cliffs",
+            "The Spartans ran out of drinking water on the first hour",
+            "Giant wooden trebuchets knocked the mountain flat"
+          ],
+          "correct": 0,
+          "answer": "A traitor showed the Persians a hidden mountain path around the pass",
+          "a": "A traitor showed the Persians a hidden mountain path around the pass",
+          "explanation": "After three fierce days, a local traitor guided Persian soldiers along a hidden mountain path behind Leonidas’s position."
         },
         {
           "stage": 3,
-          "question": "Which Athenian commander lured King Xerxes’s huge fleet into a trap inside the narrow Strait of Salamis in 480 BC?",
-          "q": "Which Athenian commander lured King Xerxes’s huge fleet into a trap inside the narrow Strait of Salamis in 480 BC?",
+          "question": "What were Athens’s fast wooden warships with three banks of oars called?",
+          "q": "What were Athens’s fast wooden warships with three banks of oars called?",
           "options": [
-            "Hippocrates",
-            "Themistocles",
-            "Euclid",
-            "Bucephalus"
+            "Longships",
+            "Triremes",
+            "Galleons",
+            "Dhows"
           ],
           "correct": 1,
+          "answer": "Triremes",
+          "a": "Triremes",
+          "explanation": "Sleek Greek warships powered by three tiers of oars were called triremes."
+        },
+        {
+          "stage": 3,
+          "question": "How many oarsmen rowed a Greek trireme, and what weapon sat at its waterline prow?",
+          "q": "How many oarsmen rowed a Greek trireme, and what weapon sat at its waterline prow?",
+          "options": [
+            "20 oarsmen and a stone catapult",
+            "50 oarsmen and Greek fire",
+            "170 oarsmen and a heavy bronze ram",
+            "500 oarsmen and iron cannons"
+          ],
+          "correct": 2,
+          "answer": "170 oarsmen and a heavy bronze ram",
+          "a": "170 oarsmen and a heavy bronze ram",
+          "explanation": "Powered by 170 rowers, each nimble trireme steered a heavy underwater bronze ram straight into enemy wooden hulls."
+        },
+        {
+          "stage": 3,
+          "question": "Which clever Athenian admiral persuaded citizens to build 200 triremes and set a trap at Salamis?",
+          "q": "Which clever Athenian admiral persuaded citizens to build 200 triremes and set a trap at Salamis?",
+          "options": [
+            "Leonidas",
+            "Aristotle",
+            "Pheidippides",
+            "Themistocles"
+          ],
+          "correct": 3,
           "answer": "Themistocles",
           "a": "Themistocles",
-          "explanation": "Admiral Themistocles persuaded Athens to build wooden triremes and tricked Xerxes into fighting inside the cramped Strait of Salamis."
+          "explanation": "Admiral Themistocles convinced Athens to spend silver-mine riches on triremes and lured Xerxes’s fleet into a narrow channel."
+        },
+        {
+          "stage": 3,
+          "question": "Why did Persia’s much larger fleet lose inside the narrow Strait of Salamis in 480 BC?",
+          "q": "Why did Persia’s much larger fleet lose inside the narrow Strait of Salamis in 480 BC?",
+          "options": [
+            "Crowded Persian ships jammed together in the tight water while nimble Greek triremes rammed them",
+            "A sudden volcano sank only the Persian ships",
+            "Persian sailors forgot to bring wooden oars",
+            "Icebergs blocked the Aegean Sea in summer"
+          ],
+          "correct": 0,
+          "answer": "Crowded Persian ships jammed together in the tight water while nimble Greek triremes rammed them",
+          "a": "Crowded Persian ships jammed together in the tight water while nimble Greek triremes rammed them",
+          "explanation": "Lured into the narrow Strait of Salamis by Themistocles’s trick message, Persia’s huge ships collided and could not manoeuvre."
+        },
+        {
+          "stage": 3,
+          "question": "After Salamis in 480 BC, which final Greek victory in 479 BC kept Greece’s city-states independent and free?",
+          "q": "After Salamis in 480 BC, which final Greek victory in 479 BC kept Greece’s city-states independent and free?",
+          "options": [
+            "Mycenae",
+            "Plataea",
+            "Alexandria",
+            "Olympia"
+          ],
+          "correct": 1,
+          "answer": "Plataea",
+          "a": "Plataea",
+          "explanation": "Following naval victory at Salamis (480 BC) and land victory at Plataea (479 BC), Greece remained independent."
         }
       ],
       "video": [
@@ -2735,15 +3338,16 @@ window.UNIT_DATA = {
         "caption": "1816 historical engraving looking down toward the narrow coastal pass (defile) of Thermopylae between steep Greek mountains and the sea.",
         "position": "center 45%"
       },
-      "banner_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
+      "enquiry": "How did tiny Greek city-states defeat the giant Persian Empire?"
     },
     {
       "id": "lesson_5",
       "skill": "Significance & History of Ideas",
-      "title": "Enquiry 5: Theatre, Philosophy, Maths & Medicine — How Did Greek Thinkers Change Human Knowledge? (c. 460–322 BC)",
+      "title": "Enquiry 5: Greek Theatre, Philosophy, Maths & Medicine (c. 460–322 BC)",
       "subtitle": "Epidaurus Amphitheatre, Tragedies & Comedies, Socrates, Plato & Aristotle, Hippocrates of Kos, and Euclid & Archimedes",
-      "enquiryQuestion": "How did Ancient Greek playwrights, philosophers, doctors, and mathematicians transform human knowledge?",
-      "enquiry_question": "How did Ancient Greek playwrights, philosophers, doctors, and mathematicians transform human knowledge?",
+      "enquiryQuestion": "How did Greek thinkers, doctors, and writers change human knowledge?",
+      "enquiry_question": "How did Greek thinkers, doctors, and writers change human knowledge?",
       "prologue": "Test the crystal-clear acoustics of Epidaurus’s 14,000-seat stone theatre, debate big questions barefoot alongside Socrates in Athens, observe patients on Kos with Hippocrates, and shout \"Eureka!\" with Archimedes as Greek thinkers change human knowledge forever!",
       "blurb": "Test the crystal-clear acoustics of Epidaurus’s 14,000-seat stone theatre, debate big questions barefoot alongside Socrates in Athens, observe patients on Kos with Hippocrates, and shout \"Eureka!\" with Archimedes as Greek thinkers change human knowledge forever!",
       "hero_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
@@ -2769,10 +3373,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Only three main male actors spoke roles in most Greek plays, swapping bold lightweight masks backstage to play kings, queens, gods, or comic servants in front of 14,000 spectators! **Hinge Question:** Why did Greek actors wear bold masks with exaggerated faces and wide mouths inside giant open-air hillside theatres?",
-          "Source B": "Unlike smoothed statues of handsome athletes, Socrates was carved with a snub nose, creased brow, and tangled beard — matching a humble thinker who cared about truth rather than riches. **Hinge Question:** Why did Socrates believe asking careful questions was a better way to teach people than simply telling them what to think?",
-          "Source C": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into clear groups! **Hinge Question:** How did Aristotle’s habit of observing real plants and animals closely help launch modern science?",
-          "Source D": "Before Hippocrates taught on the island of Kos, many people blamed fevers or seizures on curses from angry gods; Hippocrates insisted every illness has a natural physical cause! **Hinge Question:** Why was recording a patient’s daily temperature, breathing, and diet a giant leap forward for medicine?"
+          "Source A": "Only three main male actors spoke roles in most Greek plays, swapping lightweight masks backstage to play kings, queens, or comic servants before 14,000 spectators! **Hinge Question:** Why did Greek actors wear bold masks with exaggerated faces and wide mouths inside giant open-air hillside theatres?",
+          "Source B": "Unlike statues of handsome athletes, Socrates was carved with a snub nose and tangled beard — matching a humble thinker who cared about truth rather than wealth. **Hinge Question:** Why did Socrates believe asking careful questions was a better way to teach people than simply telling them what to think?",
+          "Source C": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into groups! **Hinge Question:** How did Aristotle’s habit of observing real plants and animals closely help launch modern science?",
+          "Source D": "Before Hippocrates taught on the island of Kos, many people blamed fevers on curses from angry gods; he insisted every illness has a natural physical cause! **Hinge Question:** Why was recording a patient’s daily temperature, breathing, and diet a giant leap forward for medicine?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2907,8 +3511,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. 460–330 BC: Hillside Amphitheatres, Masks, Tragedies & Comedies",
-          "text": "<span class=\"para-ref\">[5.1]</span> After defeating Persia, Greek city-states entered a golden age of drama, science, and bold ideas. Builders carved semicircular stone **amphitheatres** into sunny hillsides, such as **Epidaurus**, seating **14,000 spectators**. Clever curved stone acoustics carried even a quiet whisper from the round stage to the back row!<br><br><span class=\"para-ref\">[5.2]</span> During festivals for **Dionysus**, male actors staged serious **tragedies** about pride and funny **comedies** teasing leaders. Performers wore painted clay or linen **theatre masks** with wide mouths so distant crowds saw clear faces. Poorer citizens even received state coins so everyone could attend. Watching plays together taught Greek citizens to debate fairness, courage, and tough moral choices.",
-          "content": "<span class=\"para-ref\">[5.1]</span> After defeating Persia, Greek city-states entered a golden age of drama, science, and bold ideas. Builders carved semicircular stone **amphitheatres** into sunny hillsides, such as **Epidaurus**, seating **14,000 spectators**. Clever curved stone acoustics carried even a quiet whisper from the round stage to the back row!<br><br><span class=\"para-ref\">[5.2]</span> During festivals for **Dionysus**, male actors staged serious **tragedies** about pride and funny **comedies** teasing leaders. Performers wore painted clay or linen **theatre masks** with wide mouths so distant crowds saw clear faces. Poorer citizens even received state coins so everyone could attend. Watching plays together taught Greek citizens to debate fairness, courage, and tough moral choices.",
+          "text": "<span class=\"para-ref\">[5.1]</span> After defeating Persia, Greece entered a golden age of drama and bold ideas. Builders carved curved stone **amphitheatres** into sunny hillsides, like **Epidaurus** [ep-ih-DAW-rus]. Its stone rows seated **14,000 spectators** under open blue skies. Clever curved steps carried even a quiet whisper right to the back row!<br><br><span class=\"para-ref\">[5.2]</span> At festivals for **Dionysus** [dy-uh-NY-sus], male actors staged sad **tragedies** and funny **comedies**. Performers wore bold **theatre masks** with wide mouths so distant crowds saw every face. Poor citizens even got coin tokens so everyone could watch and debate fairness.",
+          "content": "<span class=\"para-ref\">[5.1]</span> After defeating Persia, Greece entered a golden age of drama and bold ideas. Builders carved curved stone **amphitheatres** into sunny hillsides, like **Epidaurus** [ep-ih-DAW-rus]. Its stone rows seated **14,000 spectators** under open blue skies. Clever curved steps carried even a quiet whisper right to the back row!<br><br><span class=\"para-ref\">[5.2]</span> At festivals for **Dionysus** [dy-uh-NY-sus], male actors staged sad **tragedies** and funny **comedies**. Performers wore bold **theatre masks** with wide mouths so distant crowds saw every face. Poor citizens even got coin tokens so everyone could watch and debate fairness.",
           "image": "/units/ks2_ancient_greece/assets/epidaurus_stone_theatre_bowl.jpg",
           "image_alt": "Rising semicircular stone seating tiers and circular stage floor of the Ancient Theatre of Epidaurus in Greece",
           "caption": "The fourth-century BC limestone theatre at Epidaurus, where 14,000 spectators could hear actors clearly without microphones.",
@@ -2919,8 +3523,8 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "c. 430–322 BC: Athens’s Philosophers — Socrates, Plato & Aristotle",
-          "text": "<span class=\"para-ref\">[5.3]</span> In busy Athens, bold thinkers called **philosophers**, meaning **\"lovers of wisdom\"**, asked how people should live. Barefoot **Socrates** walked around the **Agora** asking sharp questions that made citizens test their own beliefs. In **399 BC**, angry jurors condemned Socrates, yet he bravely drank poison rather than stop questioning.<br><br><span class=\"para-ref\">[5.4]</span> His devoted pupil **Plato** founded a shady garden school in Athens called the **Academy** to share wisdom. Plato’s brightest student, **Aristotle**, studied nature closely by observing, measuring, and sorting real facts. Aristotle classified hundreds of plants and animals, laying vital foundations for modern **science** and logic. Later, Aristotle opened his own shady school called the **Lyceum**.",
-          "content": "<span class=\"para-ref\">[5.3]</span> In busy Athens, bold thinkers called **philosophers**, meaning **\"lovers of wisdom\"**, asked how people should live. Barefoot **Socrates** walked around the **Agora** asking sharp questions that made citizens test their own beliefs. In **399 BC**, angry jurors condemned Socrates, yet he bravely drank poison rather than stop questioning.<br><br><span class=\"para-ref\">[5.4]</span> His devoted pupil **Plato** founded a shady garden school in Athens called the **Academy** to share wisdom. Plato’s brightest student, **Aristotle**, studied nature closely by observing, measuring, and sorting real facts. Aristotle classified hundreds of plants and animals, laying vital foundations for modern **science** and logic. Later, Aristotle opened his own shady school called the **Lyceum**.",
+          "text": "<span class=\"para-ref\">[5.3]</span> In busy Athens, thinkers called **philosophers**, or **\"lovers of wisdom\"**, asked how people should live. Barefoot **Socrates** [SOK-ruh-teez] walked through the **Agora** every day. He asked sharp questions so citizens tested their own beliefs. In **399 BC**, angry jurors condemned Socrates, yet he drank poison rather than stop.<br><br><span class=\"para-ref\">[5.4]</span> His pupil **Plato** opened a shady garden school in Athens called the **Academy**. Next, **Aristotle** [AR-ih-stot-ul] studied nature by observing, measuring, and sorting real facts. Grouping hundreds of plants and animals built roots for **science** at his **Lyceum** school.",
+          "content": "<span class=\"para-ref\">[5.3]</span> In busy Athens, thinkers called **philosophers**, or **\"lovers of wisdom\"**, asked how people should live. Barefoot **Socrates** [SOK-ruh-teez] walked through the **Agora** every day. He asked sharp questions so citizens tested their own beliefs. In **399 BC**, angry jurors condemned Socrates, yet he drank poison rather than stop.<br><br><span class=\"para-ref\">[5.4]</span> His pupil **Plato** opened a shady garden school in Athens called the **Academy**. Next, **Aristotle** [AR-ih-stot-ul] studied nature by observing, measuring, and sorting real facts. Grouping hundreds of plants and animals built roots for **science** at his **Lyceum** school.",
           "image": "/units/ks2_ancient_greece/assets/death_of_socrates_david_painting.jpg",
           "image_alt": "Jacques-Louis David’s 1787 painting showing philosopher Socrates teaching his pupils bravely before drinking hemlock in 399 BC",
           "caption": "Jacques-Louis David’s famous painting of Socrates in 399 BC, calmly debating truth with his friends right to the end of his life.",
@@ -2934,16 +3538,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
               "image": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
-              "title": "Source A: Ancient Greek Terracotta Theatre Mask Roundels with Open Mouths (c. 300 BC)",
-              "caption": "Moulded Greek terracotta theatrical masks with bold eyebrows and wide open mouths, modelled on the full-face masks worn by actors on stage.",
+              "title": "Source A: Ancient Greek Clay Theatre Masks With Open Mouths (c. 300 BC)",
+              "caption": "Moulded Greek clay theatre masks with bold eyebrows and wide open mouths, copied from the full-face masks worn on stage.",
               "author": "Ancient Greek Terracotta Craftworker",
               "date": "c. 350–250 BC",
-              "context": "Performances in Ancient Greece took place outdoors in huge open-air stone amphitheatres like Epidaurus, with only three speaking actors on stage at a time.",
-              "source_context": "Performances in Ancient Greece took place outdoors in huge open-air stone amphitheatres like Epidaurus, with only three speaking actors on stage at a time.",
+              "context": "Only three main male actors spoke roles in most Greek plays, swapping lightweight masks backstage to play kings, queens, or comic servants before 14,000 spectators!",
+              "source_context": "Only three main male actors spoke roles in most Greek plays, swapping lightweight masks backstage to play kings, queens, or comic servants before 14,000 spectators! **Hinge Question:** Why did Greek actors wear bold masks with exaggerated faces and wide mouths inside giant open-air hillside theatres?",
               "question_badge": "GREEK THEATRE MASK",
               "question": "Inspect Source A. Mention two clever reasons Greek actors wore masks like these on stage.",
-              "model_answer": "First, exaggerated eyebrows and wide mouths let spectators sitting right at the back of a 14,000-seat hillside amphitheatre see whether a character was tragic or comic. Second, swapping masks let three male actors play many different male and female roles!",
-              "provenance": "Ancient Greek terracotta roundels featuring theatrical masks with open mouths (Metropolitan Museum of Art Open Access Collection)."
+              "model_answer": "Bold eyebrows and wide mouths let 14,000 spectators see clearly whether a character was tragic or comic, while swapping masks let three male actors play many male and female parts!",
+              "provenance": "Moulded Ancient Greek clay theatre mask carvings with wide open mouths (c. 300 BC)."
             },
             {
               "id": "ks2_ancient_greece_l5_src_b",
@@ -2952,24 +3556,24 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/socrates_marble_portrait_louvre.jpg",
               "image": "/units/ks2_ancient_greece/assets/socrates_marble_portrait_louvre.jpg",
-              "title": "Source B: Ancient Marble Portrait Head of Athenian Philosopher Socrates (c. 470–399 BC)",
-              "caption": "Carved marble portrait head of barefoot Athenian philosopher Socrates, famous for questioning citizens in the Agora rather than writing books.",
+              "title": "Source B: Ancient Marble Portrait Head of Philosopher Socrates (c. 470–399 BC)",
+              "caption": "Carved marble portrait head of barefoot Athenian philosopher Socrates, famous for questioning citizens in the Agora instead of writing books.",
               "author": "Roman Marble Copy after a Greek Bronze Original by Lysippos (c. 350 BC)",
               "date": "Original c. 350 BC (Socrates lived c. 470–399 BC)",
-              "context": "Unlike smoothed statues of handsome athletes, Socrates was carved with a snub nose, creased brow, and tangled beard — matching a humble thinker who cared about truth rather than riches.",
-              "source_context": "Unlike smoothed statues of handsome athletes, Socrates was carved with a snub nose, creased brow, and tangled beard — matching a humble thinker who cared about truth rather than riches.",
+              "context": "Unlike statues of handsome athletes, Socrates was carved with a snub nose and tangled beard — matching a humble thinker who cared about truth rather than wealth.",
+              "source_context": "Unlike statues of handsome athletes, Socrates was carved with a snub nose and tangled beard — matching a humble thinker who cared about truth rather than wealth. **Hinge Question:** Why did Socrates believe asking careful questions was a better way to teach people than simply telling them what to think?",
               "question_badge": "PHILOSOPHER SOCRATES",
               "question": "Who is shown in Source B, and how did he challenge people in Athens’s Agora?",
-              "model_answer": "Source B shows Athenian philosopher Socrates (\"lover of wisdom\"). Instead of giving grand speeches or charging fees, barefoot Socrates walked around the Agora asking sharp questions about justice and courage so citizens tested whether their beliefs made sense.",
-              "provenance": "Marble portrait head of Socrates, Roman copy of a fourth-century BC Greek bronze original (Musée du Louvre, Paris)."
+              "model_answer": "Source B shows Athenian philosopher Socrates (\"lover of wisdom\"), who walked barefoot around the Agora asking sharp questions about justice so citizens tested their own beliefs.",
+              "provenance": "Ancient marble portrait head of Athenian philosopher Socrates (copy of a 4th-century BC Greek bronze statue)."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. 420–212 BC: Hippocrates on Kos, Geometry & Archimedes’s \"Eureka!\"",
-          "text": "<span class=\"para-ref\">[5.5]</span> For centuries, sick people blamed illnesses on angry gods and begged priests for magic cures. On the island of **Kos**, doctor **Hippocrates** taught physicians to observe **symptoms**, clean diet, fresh air, and rest. Modern doctors still promise to care ethically for patients, honouring his famous **Hippocratic Oath**.<br><br><span class=\"para-ref\">[5.6]</span> Greek **mathematicians** also unlocked rules of numbers, shapes, and machines that engineers still use today. **Pythagoras** studied right-angled triangles, while **Euclid** wrote a clear **geometry** guide to lines and angles. Later, **Archimedes** mastered levers and reportedly leaped from his bath shouting **\"Eureka!\"** after solving a puzzle!",
-          "content": "<span class=\"para-ref\">[5.5]</span> For centuries, sick people blamed illnesses on angry gods and begged priests for magic cures. On the island of **Kos**, doctor **Hippocrates** taught physicians to observe **symptoms**, clean diet, fresh air, and rest. Modern doctors still promise to care ethically for patients, honouring his famous **Hippocratic Oath**.<br><br><span class=\"para-ref\">[5.6]</span> Greek **mathematicians** also unlocked rules of numbers, shapes, and machines that engineers still use today. **Pythagoras** studied right-angled triangles, while **Euclid** wrote a clear **geometry** guide to lines and angles. Later, **Archimedes** mastered levers and reportedly leaped from his bath shouting **\"Eureka!\"** after solving a puzzle!",
+          "text": "<span class=\"para-ref\">[5.5]</span> For centuries, sick people blamed illnesses on angry gods and begged for magic cures. On the island of **Kos**, doctor **Hippocrates** [hip-OK-ruh-teez] taught a wiser method. Doctors checked natural **symptoms** closely and kept careful bedside notes. He prescribed clean food, fresh air, and rest under the ethical **Hippocratic Oath**.<br><br><span class=\"para-ref\">[5.6]</span> Greek **mathematicians** also unlocked rules of shapes and machines we still use today. **Pythagoras** studied right-angled triangles, while **Euclid** [YOO-klid] wrote a clear **geometry** guide. Later, **Archimedes** [ar-kih-MEE-deez] mastered levers and shouted **\"Eureka!\"** after solving a bath puzzle!",
+          "content": "<span class=\"para-ref\">[5.5]</span> For centuries, sick people blamed illnesses on angry gods and begged for magic cures. On the island of **Kos**, doctor **Hippocrates** [hip-OK-ruh-teez] taught a wiser method. Doctors checked natural **symptoms** closely and kept careful bedside notes. He prescribed clean food, fresh air, and rest under the ethical **Hippocratic Oath**.<br><br><span class=\"para-ref\">[5.6]</span> Greek **mathematicians** also unlocked rules of shapes and machines we still use today. **Pythagoras** studied right-angled triangles, while **Euclid** [YOO-klid] wrote a clear **geometry** guide. Later, **Archimedes** [ar-kih-MEE-deez] mastered levers and shouted **\"Eureka!\"** after solving a bath puzzle!",
           "image": "/units/ks2_ancient_greece/assets/kos_asclepieion_healing_terraces.jpg",
           "image_alt": "Stone steps and hillside terraces of the ancient healing sanctuary on the Greek island of Kos",
           "caption": "Stone terraces of the ancient healing centre on the island of Kos, home of physician Hippocrates (c. 460–370 BC).",
@@ -2983,16 +3587,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/aristotle_marble_portrait_bust.jpg",
               "image": "/units/ks2_ancient_greece/assets/aristotle_marble_portrait_bust.jpg",
-              "title": "Source C: Carved Marble Portrait Bust of Philosopher & Scientist Aristotle (384–322 BC)",
-              "caption": "Marble portrait bust of Aristotle, pupil of Plato and pioneer of careful observation across biology, astronomy, politics, and logic.",
+              "title": "Source C: Marble Portrait Bust of Philosopher & Scientist Aristotle (384–322 BC)",
+              "caption": "Marble portrait bust of Aristotle, student of Plato and pioneer of careful observation across nature, stars, and logic.",
               "author": "Roman Copy after a Greek Bronze Original by Lysippos (c. 330 BC)",
               "date": "Original c. 330 BC (Aristotle lived 384–322 BC)",
-              "context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into clear groups!",
-              "source_context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into clear groups!",
+              "context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into groups!",
+              "source_context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into groups! **Hinge Question:** How did Aristotle’s habit of observing real plants and animals closely help launch modern science?",
               "question_badge": "SCIENTIST ARISTOTLE",
               "question": "Look at Source C. How did Aristotle investigate the natural world differently from myth-tellers?",
-              "model_answer": "Rather than relying only on old myths, Aristotle observed real plants, sea creatures, and stars closely with his own eyes. He measured facts, took notes, and sorted living things into clear groups, laying key foundations for biology and science.",
-              "provenance": "Marble portrait bust of Aristotle after a Greek bronze original of c. 330 BC by Lysippos (Kunsthistorisches Museum / Palazzo Altemps collection)."
+              "model_answer": "Instead of relying on old myths, Aristotle observed real plants and sea creatures closely with his own eyes, measured facts, and sorted living things into clear scientific groups.",
+              "provenance": "Ancient marble portrait bust of Greek philosopher and scientist Aristotle (after a c. 330 BC bronze statue)."
             },
             {
               "id": "ks2_ancient_greece_l5_src_d",
@@ -3001,16 +3605,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/hippocrates_inscribed_bust.jpg",
               "image": "/units/ks2_ancient_greece/assets/hippocrates_inscribed_bust.jpg",
-              "title": "Source D: Inscribed Marble Portrait Bust of Greek Physician Hippocrates of Kos (c. 460–370 BC)",
-              "caption": "Ancient marble portrait bust of Hippocrates of Kos, remembered as the \"Father of Medicine\" for teaching doctors to observe natural symptoms.",
+              "title": "Source D: Marble Portrait Bust of Physician Hippocrates of Kos (c. 460–370 BC)",
+              "caption": "Ancient marble portrait bust of Hippocrates of Kos, remembered as the \"Father of Medicine\" for teaching doctors to check natural symptoms.",
               "author": "Hellenistic-Roman Marble Sculptor",
               "date": "Original c. 3rd Century BC (Hippocrates lived c. 460–370 BC)",
-              "context": "Born around 460 BC on the Greek island of Kos, the famous teacher and doctor shown on this marble bust trained generations of Greek physicians.",
-              "source_context": "Born around 460 BC on the Greek island of Kos, the famous teacher and doctor shown on this marble bust trained generations of Greek physicians.",
+              "context": "Before Hippocrates taught on the island of Kos, many people blamed fevers on curses from angry gods; he insisted every illness has a natural physical cause!",
+              "source_context": "Before Hippocrates taught on the island of Kos, many people blamed fevers on curses from angry gods; he insisted every illness has a natural physical cause! **Hinge Question:** Why was recording a patient’s daily temperature, breathing, and diet a giant leap forward for medicine?",
               "question_badge": "PHYSICIAN HIPPOCRATES",
               "question": "What does Source D celebrate, and how did Hippocrates change how doctors treated sick patients?",
-              "model_answer": "Source D celebrates Hippocrates of Kos. Instead of blaming angry gods for sickness, he taught doctors to examine a patient’s symptoms carefully, prescribe clean food, fresh air, and rest, and promise ethical care under the Hippocratic Oath.",
-              "provenance": "Marble portrait bust of Greek physician Hippocrates of Kos (ancient portrait sculpture collection)."
+              "model_answer": "Source D celebrates Hippocrates of Kos, who taught doctors to examine natural symptoms carefully, prescribe clean food and rest, and promise ethical care under the Hippocratic Oath.",
+              "provenance": "Ancient marble portrait bust of Greek physician Hippocrates of Kos."
             }
           ]
         }
@@ -3023,16 +3627,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
           "image": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
-          "title": "Source A: Ancient Greek Terracotta Theatre Mask Roundels with Open Mouths (c. 300 BC)",
-          "caption": "Moulded Greek terracotta theatrical masks with bold eyebrows and wide open mouths, modelled on the full-face masks worn by actors on stage.",
+          "title": "Source A: Ancient Greek Clay Theatre Masks With Open Mouths (c. 300 BC)",
+          "caption": "Moulded Greek clay theatre masks with bold eyebrows and wide open mouths, copied from the full-face masks worn on stage.",
           "author": "Ancient Greek Terracotta Craftworker",
           "date": "c. 350–250 BC",
-          "context": "Performances in Ancient Greece took place outdoors in huge open-air stone amphitheatres like Epidaurus, with only three speaking actors on stage at a time.",
-          "source_context": "Performances in Ancient Greece took place outdoors in huge open-air stone amphitheatres like Epidaurus, with only three speaking actors on stage at a time.",
+          "context": "Only three main male actors spoke roles in most Greek plays, swapping lightweight masks backstage to play kings, queens, or comic servants before 14,000 spectators!",
+          "source_context": "Only three main male actors spoke roles in most Greek plays, swapping lightweight masks backstage to play kings, queens, or comic servants before 14,000 spectators! **Hinge Question:** Why did Greek actors wear bold masks with exaggerated faces and wide mouths inside giant open-air hillside theatres?",
           "question_badge": "GREEK THEATRE MASK",
           "question": "Inspect Source A. Mention two clever reasons Greek actors wore masks like these on stage.",
-          "model_answer": "First, exaggerated eyebrows and wide mouths let spectators sitting right at the back of a 14,000-seat hillside amphitheatre see whether a character was tragic or comic. Second, swapping masks let three male actors play many different male and female roles!",
-          "provenance": "Ancient Greek terracotta roundels featuring theatrical masks with open mouths (Metropolitan Museum of Art Open Access Collection)."
+          "model_answer": "Bold eyebrows and wide mouths let 14,000 spectators see clearly whether a character was tragic or comic, while swapping masks let three male actors play many male and female parts!",
+          "provenance": "Moulded Ancient Greek clay theatre mask carvings with wide open mouths (c. 300 BC)."
         },
         {
           "id": "ks2_ancient_greece_l5_src_b",
@@ -3041,16 +3645,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/socrates_marble_portrait_louvre.jpg",
           "image": "/units/ks2_ancient_greece/assets/socrates_marble_portrait_louvre.jpg",
-          "title": "Source B: Ancient Marble Portrait Head of Athenian Philosopher Socrates (c. 470–399 BC)",
-          "caption": "Carved marble portrait head of barefoot Athenian philosopher Socrates, famous for questioning citizens in the Agora rather than writing books.",
+          "title": "Source B: Ancient Marble Portrait Head of Philosopher Socrates (c. 470–399 BC)",
+          "caption": "Carved marble portrait head of barefoot Athenian philosopher Socrates, famous for questioning citizens in the Agora instead of writing books.",
           "author": "Roman Marble Copy after a Greek Bronze Original by Lysippos (c. 350 BC)",
           "date": "Original c. 350 BC (Socrates lived c. 470–399 BC)",
-          "context": "Unlike smoothed statues of handsome athletes, Socrates was carved with a snub nose, creased brow, and tangled beard — matching a humble thinker who cared about truth rather than riches.",
-          "source_context": "Unlike smoothed statues of handsome athletes, Socrates was carved with a snub nose, creased brow, and tangled beard — matching a humble thinker who cared about truth rather than riches.",
+          "context": "Unlike statues of handsome athletes, Socrates was carved with a snub nose and tangled beard — matching a humble thinker who cared about truth rather than wealth.",
+          "source_context": "Unlike statues of handsome athletes, Socrates was carved with a snub nose and tangled beard — matching a humble thinker who cared about truth rather than wealth. **Hinge Question:** Why did Socrates believe asking careful questions was a better way to teach people than simply telling them what to think?",
           "question_badge": "PHILOSOPHER SOCRATES",
           "question": "Who is shown in Source B, and how did he challenge people in Athens’s Agora?",
-          "model_answer": "Source B shows Athenian philosopher Socrates (\"lover of wisdom\"). Instead of giving grand speeches or charging fees, barefoot Socrates walked around the Agora asking sharp questions about justice and courage so citizens tested whether their beliefs made sense.",
-          "provenance": "Marble portrait head of Socrates, Roman copy of a fourth-century BC Greek bronze original (Musée du Louvre, Paris)."
+          "model_answer": "Source B shows Athenian philosopher Socrates (\"lover of wisdom\"), who walked barefoot around the Agora asking sharp questions about justice so citizens tested their own beliefs.",
+          "provenance": "Ancient marble portrait head of Athenian philosopher Socrates (copy of a 4th-century BC Greek bronze statue)."
         },
         {
           "id": "ks2_ancient_greece_l5_src_c",
@@ -3059,16 +3663,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/aristotle_marble_portrait_bust.jpg",
           "image": "/units/ks2_ancient_greece/assets/aristotle_marble_portrait_bust.jpg",
-          "title": "Source C: Carved Marble Portrait Bust of Philosopher & Scientist Aristotle (384–322 BC)",
-          "caption": "Marble portrait bust of Aristotle, pupil of Plato and pioneer of careful observation across biology, astronomy, politics, and logic.",
+          "title": "Source C: Marble Portrait Bust of Philosopher & Scientist Aristotle (384–322 BC)",
+          "caption": "Marble portrait bust of Aristotle, student of Plato and pioneer of careful observation across nature, stars, and logic.",
           "author": "Roman Copy after a Greek Bronze Original by Lysippos (c. 330 BC)",
           "date": "Original c. 330 BC (Aristotle lived 384–322 BC)",
-          "context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into clear groups!",
-          "source_context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into clear groups!",
+          "context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into groups!",
+          "source_context": "Aristotle spent years wading beside Greek lagoons with fishermen to study octopuses, seashells, and dolphins first-hand, sorting over 500 living species into groups! **Hinge Question:** How did Aristotle’s habit of observing real plants and animals closely help launch modern science?",
           "question_badge": "SCIENTIST ARISTOTLE",
           "question": "Look at Source C. How did Aristotle investigate the natural world differently from myth-tellers?",
-          "model_answer": "Rather than relying only on old myths, Aristotle observed real plants, sea creatures, and stars closely with his own eyes. He measured facts, took notes, and sorted living things into clear groups, laying key foundations for biology and science.",
-          "provenance": "Marble portrait bust of Aristotle after a Greek bronze original of c. 330 BC by Lysippos (Kunsthistorisches Museum / Palazzo Altemps collection)."
+          "model_answer": "Instead of relying on old myths, Aristotle observed real plants and sea creatures closely with his own eyes, measured facts, and sorted living things into clear scientific groups.",
+          "provenance": "Ancient marble portrait bust of Greek philosopher and scientist Aristotle (after a c. 330 BC bronze statue)."
         },
         {
           "id": "ks2_ancient_greece_l5_src_d",
@@ -3077,16 +3681,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/hippocrates_inscribed_bust.jpg",
           "image": "/units/ks2_ancient_greece/assets/hippocrates_inscribed_bust.jpg",
-          "title": "Source D: Inscribed Marble Portrait Bust of Greek Physician Hippocrates of Kos (c. 460–370 BC)",
-          "caption": "Ancient marble portrait bust of Hippocrates of Kos, remembered as the \"Father of Medicine\" for teaching doctors to observe natural symptoms.",
+          "title": "Source D: Marble Portrait Bust of Physician Hippocrates of Kos (c. 460–370 BC)",
+          "caption": "Ancient marble portrait bust of Hippocrates of Kos, remembered as the \"Father of Medicine\" for teaching doctors to check natural symptoms.",
           "author": "Hellenistic-Roman Marble Sculptor",
           "date": "Original c. 3rd Century BC (Hippocrates lived c. 460–370 BC)",
-          "context": "Born around 460 BC on the Greek island of Kos, the famous teacher and doctor shown on this marble bust trained generations of Greek physicians.",
-          "source_context": "Born around 460 BC on the Greek island of Kos, the famous teacher and doctor shown on this marble bust trained generations of Greek physicians.",
+          "context": "Before Hippocrates taught on the island of Kos, many people blamed fevers on curses from angry gods; he insisted every illness has a natural physical cause!",
+          "source_context": "Before Hippocrates taught on the island of Kos, many people blamed fevers on curses from angry gods; he insisted every illness has a natural physical cause! **Hinge Question:** Why was recording a patient’s daily temperature, breathing, and diet a giant leap forward for medicine?",
           "question_badge": "PHYSICIAN HIPPOCRATES",
           "question": "What does Source D celebrate, and how did Hippocrates change how doctors treated sick patients?",
-          "model_answer": "Source D celebrates Hippocrates of Kos. Instead of blaming angry gods for sickness, he taught doctors to examine a patient’s symptoms carefully, prescribe clean food, fresh air, and rest, and promise ethical care under the Hippocratic Oath.",
-          "provenance": "Marble portrait bust of Greek physician Hippocrates of Kos (ancient portrait sculpture collection)."
+          "model_answer": "Source D celebrates Hippocrates of Kos, who taught doctors to examine natural symptoms carefully, prescribe clean food and rest, and promise ethical care under the Hippocratic Oath.",
+          "provenance": "Ancient marble portrait bust of Greek physician Hippocrates of Kos."
         }
       ],
       "causal_domino_spine": {
@@ -3103,7 +3707,7 @@ window.UNIT_DATA = {
             "trigger": "Stone hillside theatres like Epidaurus gathered 14,000 spectators to watch masked tragedies and comedies.",
             "connective": "Sparked lively public debate in Athens about justice, pride, and how citizens should behave.",
             "question": "How did hillside theatres like Epidaurus share stories with huge crowds?",
-            "prose_hash": "04916a009f",
+            "prose_hash": "5d144ce834",
             "questionHeading": "How did hillside theatres like Epidaurus share stories with huge crowds?",
             "focusClue": "How did hillside theatres like Epidaurus share stories with huge crowds?",
             "dates": "c. 460–330 BC",
@@ -3119,7 +3723,7 @@ window.UNIT_DATA = {
             "trigger": "Socrates questioned beliefs in the Agora, Plato opened the Academy, and Aristotle classified living nature.",
             "connective": "Inspired doctors and mathematicians to explain the world using real evidence rather than myths.",
             "question": "Why did Socrates and Aristotle become famous thinkers in Athens?",
-            "prose_hash": "488c87405c",
+            "prose_hash": "b4759ba133",
             "questionHeading": "Why did Socrates and Aristotle become famous thinkers in Athens?",
             "focusClue": "Why did Socrates and Aristotle become famous thinkers in Athens?",
             "dates": "c. 430–322 BC",
@@ -3135,7 +3739,7 @@ window.UNIT_DATA = {
             "trigger": "Hippocrates observed patient symptoms on Kos, while Pythagoras, Euclid, and Archimedes transformed maths and levers.",
             "connective": "Created lasting textbooks and medical rules later carried across three continents by Alexander.",
             "question": "What new methods did Hippocrates and Greek mathematicians teach the world?",
-            "prose_hash": "6c44224860",
+            "prose_hash": "c10bf492f0",
             "questionHeading": "What new methods did Hippocrates and Greek mathematicians teach the world?",
             "focusClue": "What new methods did Hippocrates and Greek mathematicians teach the world?",
             "dates": "c. 420–212 BC",
@@ -3171,7 +3775,7 @@ window.UNIT_DATA = {
           "dates": "c. 460–330 BC",
           "para_ref": "[5.1]",
           "paraRef": "[5.1]",
-          "prose_hash": "04916a009f"
+          "prose_hash": "5d144ce834"
         },
         {
           "step": 2,
@@ -3200,7 +3804,7 @@ window.UNIT_DATA = {
           "dates": "c. 430–322 BC",
           "para_ref": "[5.3]",
           "paraRef": "[5.3]",
-          "prose_hash": "488c87405c"
+          "prose_hash": "b4759ba133"
         },
         {
           "step": 3,
@@ -3229,7 +3833,7 @@ window.UNIT_DATA = {
           "dates": "c. 420–212 BC",
           "para_ref": "[5.5]",
           "paraRef": "[5.5]",
-          "prose_hash": "6c44224860"
+          "prose_hash": "c10bf492f0"
         }
       ],
       "tasks": [
@@ -3318,78 +3922,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Roughly how many spectators could sit inside the curved stone hillside amphitheatre at Epidaurus and still hear clearly?",
-          "q": "Roughly how many spectators could sit inside the curved stone hillside amphitheatre at Epidaurus and still hear clearly?",
+          "question": "Roughly how many spectators could sit inside the curved stone hillside theatre at Epidaurus?",
+          "q": "Roughly how many spectators could sit inside the curved stone hillside theatre at Epidaurus?",
           "options": [
-            "About 150 spectators",
+            "About 500 spectators",
+            "About 2,000 spectators",
             "About 14,000 spectators",
-            "About 800 spectators",
             "About 250,000 spectators"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "About 14,000 spectators",
           "a": "About 14,000 spectators",
-          "explanation": "Epidaurus’s semicircular limestone bowl seated around 14,000 people and carried stage voices right to the top row."
+          "explanation": "Carved into a sunny hillside, the semicircular limestone amphitheatre at Epidaurus seated 14,000 spectators with clear acoustics."
         },
         {
           "stage": 1,
-          "question": "What were the two main types of plays performed by masked actors at Greek festivals for Dionysus?",
-          "q": "What were the two main types of plays performed by masked actors at Greek festivals for Dionysus?",
+          "question": "Which Greek god of wine and festivities was honoured by open-air drama festivals in Athens?",
+          "q": "Which Greek god of wine and festivities was honoured by open-air drama festivals in Athens?",
           "options": [
-            "Operas and ballets",
-            "Jousts and pantomimes",
-            "Tragedies and comedies",
-            "Sagas and riddles"
+            "Poseidon",
+            "Ares",
+            "Hermes",
+            "Dionysus"
+          ],
+          "correct": 3,
+          "answer": "Dionysus",
+          "a": "Dionysus",
+          "explanation": "Greek actors performed tragedies and comedies at lively outdoor religious festivals honouring Dionysus."
+        },
+        {
+          "stage": 1,
+          "question": "What was the difference between a Greek \"tragedy\" and a Greek \"comedy\" on stage?",
+          "q": "What was the difference between a Greek \"tragedy\" and a Greek \"comedy\" on stage?",
+          "options": [
+            "Tragedies were serious plays about pride and fate, while comedies were funny plays teasing leaders",
+            "Tragedies used puppets, while comedies used chariots",
+            "Tragedies lasted ten seconds, while comedies lasted three weeks",
+            "Tragedies were silent dances, while comedies were flute solos"
+          ],
+          "correct": 0,
+          "answer": "Tragedies were serious plays about pride and fate, while comedies were funny plays teasing leaders",
+          "a": "Tragedies were serious plays about pride and fate, while comedies were funny plays teasing leaders",
+          "explanation": "Greek tragedies explored serious moral choices and pride, whereas comedies made audiences laugh by poking fun at powerful politicians."
+        },
+        {
+          "stage": 1,
+          "question": "Why did Greek actors wear bold painted masks like Source A during outdoor performances?",
+          "q": "Why did Greek actors wear bold painted masks like Source A during outdoor performances?",
+          "options": [
+            "To shield their faces from winter blizzards",
+            "So back-row crowds saw clear expressions and three male actors could swap many roles",
+            "Because speaking aloud on stage was forbidden",
+            "To hide secret scrolls inside their helmets"
+          ],
+          "correct": 1,
+          "answer": "So back-row crowds saw clear expressions and three male actors could swap many roles",
+          "a": "So back-row crowds saw clear expressions and three male actors could swap many roles",
+          "explanation": "Exaggerated masks let 14,000 distant spectators spot sad or comic faces and allowed three male actors to play both male and female characters."
+        },
+        {
+          "stage": 1,
+          "question": "How did Athens make sure poorer citizens could afford to attend theatre festivals?",
+          "q": "How did Athens make sure poorer citizens could afford to attend theatre festivals?",
+          "options": [
+            "Actors visited every farm kitchen individually",
+            "Plays were staged only after midnight",
+            "Poor citizens received state coin tokens so everyone could attend",
+            "Only Spartan kings paid for everyone’s seats"
           ],
           "correct": 2,
-          "answer": "Tragedies and comedies",
-          "a": "Tragedies and comedies",
-          "explanation": "Greek playwrights wrote serious tragedies about fate and pride alongside lively comedies poking fun at leaders and daily life."
+          "answer": "Poor citizens received state coin tokens so everyone could attend",
+          "a": "Poor citizens received state coin tokens so everyone could attend",
+          "explanation": "Athens gave poorer citizens special coin tokens so rich and poor alike could watch plays and think about fairness together."
         },
         {
           "stage": 2,
-          "question": "What does the Greek word \"philosopher\" literally mean, and which three thinkers formed Athens’s famous chain of teachers?",
-          "q": "What does the Greek word \"philosopher\" literally mean, and which three thinkers formed Athens’s famous chain of teachers?",
+          "question": "What does the Ancient Greek word \"philosopher\" literally mean?",
+          "q": "What does the Ancient Greek word \"philosopher\" literally mean?",
           "options": [
-            "\"Lover of wisdom\" — Socrates taught Plato, and Plato taught Aristotle",
-            "\"Master of ships\" — Leonidas taught Xerxes, and Xerxes taught Darius",
-            "\"Builder of walls\" — Homer taught Pericles, and Pericles taught Zeus",
-            "\"Keeper of coins\" — Pheidippides taught Euclid, and Euclid taught Kos"
-          ],
-          "correct": 0,
-          "answer": "\"Lover of wisdom\" — Socrates taught Plato, and Plato taught Aristotle",
-          "a": "\"Lover of wisdom\" — Socrates taught Plato, and Plato taught Aristotle",
-          "explanation": "Socrates questioned citizens in the Agora, his pupil Plato founded the Academy, and Plato’s pupil Aristotle classified living nature."
-        },
-        {
-          "stage": 3,
-          "question": "On the island of Kos, how did physician Hippocrates change the way Greek doctors treated sick patients?",
-          "q": "On the island of Kos, how did physician Hippocrates change the way Greek doctors treated sick patients?",
-          "options": [
-            "He told patients to wear heavy bronze hoplite helmets in bed",
-            "He blamed every cough on Poseidon’s trident",
-            "He banned patients from drinking fresh water or resting",
-            "He observed natural symptoms, diet, and rest instead of blaming angry gods"
+            "Master of bronze",
+            "Ruler of islands",
+            "Builder of temples",
+            "Lover of wisdom"
           ],
           "correct": 3,
-          "answer": "He observed natural symptoms, diet, and rest instead of blaming angry gods",
-          "a": "He observed natural symptoms, diet, and rest instead of blaming angry gods",
-          "explanation": "Hippocrates taught careful clinical observation and inspired the ethical Hippocratic Oath still honoured by doctors."
+          "answer": "Lover of wisdom",
+          "a": "Lover of wisdom",
+          "explanation": "Combining philos (loving) and sophia (wisdom), Greek philosophers were \"lovers of wisdom\" who questioned how people should live."
+        },
+        {
+          "stage": 2,
+          "question": "How did barefoot Socrates teach and challenge citizens in Athens’s Agora before 399 BC?",
+          "q": "How did barefoot Socrates teach and challenge citizens in Athens’s Agora before 399 BC?",
+          "options": [
+            "By asking sharp questions that made people test their own beliefs",
+            "By charging bags of gold for printed textbooks",
+            "By commanding a wooden trireme at Salamis",
+            "By painting black-figure vases in a workshop"
+          ],
+          "correct": 0,
+          "answer": "By asking sharp questions that made people test their own beliefs",
+          "a": "By asking sharp questions that made people test their own beliefs",
+          "explanation": "Barefoot Socrates strolled through the Agora asking probing questions about justice and courage rather than writing books."
+        },
+        {
+          "stage": 2,
+          "question": "Which devoted pupil of Socrates founded a shady garden school in Athens called the Academy?",
+          "q": "Which devoted pupil of Socrates founded a shady garden school in Athens called the Academy?",
+          "options": [
+            "Leonidas",
+            "Plato",
+            "Pheidippides",
+            "Darius"
+          ],
+          "correct": 1,
+          "answer": "Plato",
+          "a": "Plato",
+          "explanation": "After Socrates died in 399 BC, his pupil Plato founded the Academy in Athens to continue debating wisdom and justice."
+        },
+        {
+          "stage": 2,
+          "question": "How did Plato’s student Aristotle lay vital foundations for modern science at his Lyceum school?",
+          "q": "How did Plato’s student Aristotle lay vital foundations for modern science at his Lyceum school?",
+          "options": [
+            "By blaming every storm on Poseidon’s trident",
+            "By banning students from looking at animals",
+            "By observing, measuring, and sorting hundreds of real plants and sea creatures into groups",
+            "By inventing gunpowder rockets"
+          ],
+          "correct": 2,
+          "answer": "By observing, measuring, and sorting hundreds of real plants and sea creatures into groups",
+          "a": "By observing, measuring, and sorting hundreds of real plants and sea creatures into groups",
+          "explanation": "Aristotle studied real nature first-hand — even wading beside lagoons with fishermen — to classify over 500 living species."
+        },
+        {
+          "stage": 2,
+          "question": "Look at Source B. Why did Greek sculptors carve Socrates with a snub nose and tangled beard rather than like a handsome athlete?",
+          "q": "Look at Source B. Why did Greek sculptors carve Socrates with a snub nose and tangled beard rather than like a handsome athlete?",
+          "options": [
+            "The sculptor dropped his chisel in the dark",
+            "It was actually a statue of a Persian king",
+            "Marble could not be carved smoothly in Athens",
+            "It matched a humble thinker who cared about truth rather than wealth or appearances"
+          ],
+          "correct": 3,
+          "answer": "It matched a humble thinker who cared about truth rather than wealth or appearances",
+          "a": "It matched a humble thinker who cared about truth rather than wealth or appearances",
+          "explanation": "Socrates’s honest, unpolished portrait reflected a barefoot philosopher who valued wisdom far above riches or vanity."
         },
         {
           "stage": 3,
-          "question": "Which Greek thinker famously shouted \"Eureka!\" (\"I have found it!\") and explained how levers lift heavy loads?",
-          "q": "Which Greek thinker famously shouted \"Eureka!\" (\"I have found it!\") and explained how levers lift heavy loads?",
+          "question": "On which Greek island did physician Hippocrates teach doctors to observe natural patient symptoms?",
+          "q": "On which Greek island did physician Hippocrates teach doctors to observe natural patient symptoms?",
           "options": [
-            "Pheidippides",
-            "Themistocles",
-            "Archimedes",
-            "Leonidas"
+            "Kos",
+            "Crete",
+            "Salamis",
+            "Sicily"
+          ],
+          "correct": 0,
+          "answer": "Kos",
+          "a": "Kos",
+          "explanation": "On the Aegean island of Kos, Hippocrates taught doctors that illnesses had natural causes rather than magic curses."
+        },
+        {
+          "stage": 3,
+          "question": "What natural treatments and promise are linked to Hippocrates even in modern medicine?",
+          "q": "What natural treatments and promise are linked to Hippocrates even in modern medicine?",
+          "options": [
+            "Magic spells and the Olympic Truce",
+            "Checking symptoms, clean food, fresh air, rest, and the ethical Hippocratic Oath",
+            "Leeches and astrological star charts",
+            "Dissolving catgut stitches and pinhole cameras"
+          ],
+          "correct": 1,
+          "answer": "Checking symptoms, clean food, fresh air, rest, and the ethical Hippocratic Oath",
+          "a": "Checking symptoms, clean food, fresh air, rest, and the ethical Hippocratic Oath",
+          "explanation": "Hippocrates urged careful bedside observation, clean diet, fresh air, and rest, inspiring the modern Hippocratic Oath."
+        },
+        {
+          "stage": 3,
+          "question": "Which Greek mathematician studied right-angled triangles, and who wrote a famous guide to geometry?",
+          "q": "Which Greek mathematician studied right-angled triangles, and who wrote a famous guide to geometry?",
+          "options": [
+            "Socrates and Pericles",
+            "Homer and Phidias",
+            "Pythagoras studied triangles, and Euclid wrote a clear geometry guide",
+            "Xerxes and Themistocles"
           ],
           "correct": 2,
+          "answer": "Pythagoras studied triangles, and Euclid wrote a clear geometry guide",
+          "a": "Pythagoras studied triangles, and Euclid wrote a clear geometry guide",
+          "explanation": "Pythagoras explored rules of right-angled triangles while Euclid organised lines, angles, and shapes into a clear geometry textbook."
+        },
+        {
+          "stage": 3,
+          "question": "Which Greek inventor mastered levers and famously shouted \"Eureka!\" (\"I have found it!\") from his bath?",
+          "q": "Which Greek inventor mastered levers and famously shouted \"Eureka!\" (\"I have found it!\") from his bath?",
+          "options": [
+            "Hippocrates",
+            "Cimon",
+            "Leonidas",
+            "Archimedes"
+          ],
+          "correct": 3,
           "answer": "Archimedes",
           "a": "Archimedes",
-          "explanation": "Alongside Pythagoras and Euclid in geometry, Archimedes made famous breakthroughs in levers, pulleys, and floating bodies."
+          "explanation": "Brilliant Greek engineer Archimedes studied levers and water displacement, leaping from his bath shouting \"Eureka!\""
+        },
+        {
+          "stage": 3,
+          "question": "Before Hippocrates changed Greek medicine, what did many sick people blame for fevers and illnesses?",
+          "q": "Before Hippocrates changed Greek medicine, what did many sick people blame for fevers and illnesses?",
+          "options": [
+            "Angry gods sending punishments or curses",
+            "Microscopic bacteria seen through glass lenses",
+            "Vitamin shortages on long ocean voyages",
+            "Air pollution from coal factories"
+          ],
+          "correct": 0,
+          "answer": "Angry gods sending punishments or curses",
+          "a": "Angry gods sending punishments or curses",
+          "explanation": "For centuries many people blamed sickness on angry gods until Hippocrates taught doctors to look for natural physical symptoms."
         }
       ],
       "video": [
@@ -3410,15 +4164,16 @@ window.UNIT_DATA = {
         "caption": "Marble tholos and sanctuary terraces at Delphi set high on the slopes of Mount Parnassus.",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
+      "enquiry": "How did Greek thinkers, doctors, and writers change human knowledge?"
     },
     {
       "id": "lesson_6",
       "skill": "Change, Continuity & Lasting Legacy",
-      "title": "Enquiry 6: Alexander the Great & Our World Today — What Is Ancient Greece’s Lasting Legacy? (336–146 BC & Today)",
+      "title": "Enquiry 6: Alexander the Great & Greece’s Legacy Today (336–146 BC)",
       "subtitle": "Alexander & Bucephalus, Alexandria’s Great Library & Pharos Lighthouse, Rome (146 BC), Democracy, Words, Columns & 1896 Olympics",
-      "enquiryQuestion": "How did Alexander the Great spread Greek culture, and what is Ancient Greece’s lasting legacy in our world today?",
-      "enquiry_question": "How did Alexander the Great spread Greek culture, and what is Ancient Greece’s lasting legacy in our world today?",
+      "enquiryQuestion": "How did Alexander spread Greek ideas that still shape our world today?",
+      "enquiry_question": "How did Alexander spread Greek ideas that still shape our world today?",
       "prologue": "Gallop east beside young King Alexander the Great on his warhorse Bucephalus, climb past Alexandria’s towering Pharos Lighthouse into the Great Library, and spot Greek democracy, English words, stone columns, and the Modern Olympics alive all around us today!",
       "blurb": "Gallop east beside young King Alexander the Great on his warhorse Bucephalus, climb past Alexandria’s towering Pharos Lighthouse into the Great Library, and spot Greek democracy, English words, stone columns, and the Modern Olympics alive all around us today!",
       "hero_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
@@ -3444,10 +4199,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters and portraits over thousands of miles! **Hinge Question:** Why did Alexander choose to appear on his silver coins wearing the lion-skin hood of the hero Heracles?",
-          "Source B": "Next time you walk past the British Museum in London or a grand town hall in your nearest city, look up at the tops (\"capitals\") of the stone columns! **Hinge Question:** How can you tell in three seconds whether a building’s stone columns copy the Doric, Ionic, or Corinthian style?",
-          "Source C": "Pulled from an ancient shipwreck off Cape Artemision — possibly looted by a ship heading toward Rome — this dynamic bronze captures rippling muscles, flying hooves, and breathless speed! **Hinge Question:** Why did wealthy Romans eagerly ship Greek bronze statues and hire educated Greek teachers after conquering Greece in 146 BC?",
-          "Source D": "For over a thousand years, Greek athletic festivals inspired fierce but peaceful sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the first Modern Olympic Games! **Hinge Question:** What stayed the same and what changed between ancient Greek athletic festivals and the Modern Olympic Games revived in 1896?"
+          "Source A": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters over thousands of miles! **Hinge Question:** Why did Alexander choose to appear on his silver coins wearing the lion-skin hood of the hero Heracles?",
+          "Source B": "Next time you walk past the British Museum in London or a grand town hall, look up at the carved stone tops (\"capitals\") of the columns! **Hinge Question:** How can you tell in three seconds whether a building’s stone columns copy the Doric, Ionic, or Corinthian style?",
+          "Source C": "Pulled from an ancient shipwreck off Cape Artemision — likely aboard a ship heading toward Rome — this bronze captures straining muscles, flying hooves, and speed! **Hinge Question:** Why did wealthy Romans eagerly ship Greek bronze statues and hire educated Greek teachers after conquering Greece in 146 BC?",
+          "Source D": "For over a thousand years, Greek athletic festivals inspired sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the Modern Olympic Games! **Hinge Question:** What stayed the same and what changed between ancient Greek athletic festivals and the Modern Olympic Games revived in 1896?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -3582,8 +4337,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "336–323 BC: Young King Alexander, Bucephalus & a Vast Empire",
-          "text": "<span class=\"para-ref\">[6.1]</span> North of the old poleis lay mountainous **Macedon**, where young prince **Alexander** was tutored by **Aristotle**. As a boy, Alexander tamed a wild black warhorse named **Bucephalus** by turning him toward the sun. Crowned king in **336 BC** aged twenty, **Alexander the Great** united Greece and marched east against Persia.<br><br><span class=\"para-ref\">[6.2]</span> Over eleven years, Alexander never lost a battle, leading troops across **Egypt**, **Persia**, and north-west **India**. Before dying aged **thirty-two** in **323 BC**, he founded dozens of cities named **Alexandria**. Blending Greek speech and art with Egyptian and Asian customs created the lively **Hellenistic** world. Traders, artists, and scholars now travelled freely from Greece to Asia.",
-          "content": "<span class=\"para-ref\">[6.1]</span> North of the old poleis lay mountainous **Macedon**, where young prince **Alexander** was tutored by **Aristotle**. As a boy, Alexander tamed a wild black warhorse named **Bucephalus** by turning him toward the sun. Crowned king in **336 BC** aged twenty, **Alexander the Great** united Greece and marched east against Persia.<br><br><span class=\"para-ref\">[6.2]</span> Over eleven years, Alexander never lost a battle, leading troops across **Egypt**, **Persia**, and north-west **India**. Before dying aged **thirty-two** in **323 BC**, he founded dozens of cities named **Alexandria**. Blending Greek speech and art with Egyptian and Asian customs created the lively **Hellenistic** world. Traders, artists, and scholars now travelled freely from Greece to Asia.",
+          "text": "<span class=\"para-ref\">[6.1]</span> North of the old city-states lay mountainous **Macedon** [MASS-ih-don]. There, young prince **Alexander** learned science and poetry from **Aristotle**. As a boy, he tamed a wild black warhorse named **Bucephalus** [byoo-SEF-uh-lus] in the sun. Crowned king in **336 BC** aged twenty, **Alexander the Great** united Greece and marched east.<br><br><span class=\"para-ref\">[6.2]</span> Over eleven years, unbeaten Alexander led armies across **Egypt**, **Persia**, and north-west **India**. Before dying aged **thirty-two** in **323 BC**, he founded cities named **Alexandria**. Blending Greek speech with eastern customs shaped the lively **Hellenistic** [hel-uh-NIS-tik] world.",
+          "content": "<span class=\"para-ref\">[6.1]</span> North of the old city-states lay mountainous **Macedon** [MASS-ih-don]. There, young prince **Alexander** learned science and poetry from **Aristotle**. As a boy, he tamed a wild black warhorse named **Bucephalus** [byoo-SEF-uh-lus] in the sun. Crowned king in **336 BC** aged twenty, **Alexander the Great** united Greece and marched east.<br><br><span class=\"para-ref\">[6.2]</span> Over eleven years, unbeaten Alexander led armies across **Egypt**, **Persia**, and north-west **India**. Before dying aged **thirty-two** in **323 BC**, he founded cities named **Alexandria**. Blending Greek speech with eastern customs shaped the lively **Hellenistic** [hel-uh-NIS-tik] world.",
           "image": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg",
           "image_alt": "Ancient mosaic from Pompeii showing young King Alexander the Great riding his black warhorse Bucephalus in battle against Persia",
           "caption": "Detail of the famous Pompeii Alexander Mosaic showing fearless young Alexander riding his beloved warhorse Bucephalus into battle.",
@@ -3594,8 +4349,8 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "323–146 BC: Alexandria’s Great Library, Pharos & Conquering Rome",
-          "text": "<span class=\"para-ref\">[6.3]</span> Egypt’s port of **Alexandria** became a wonder of learning, lit by its towering **Pharos Lighthouse**. Inside the **Great Library**, scholars gathered hundreds of thousands of papyrus scrolls on stars, maps, and **geometry**. Thinkers from distant lands studied Euclid’s diagrams and shared discoveries in a common Greek language.<br><br><span class=\"para-ref\">[6.4]</span> Meanwhile, a mighty new power rose west across the sea in Italy: the **Roman Republic**. In **146 BC**, tough Roman legions conquered mainland Greece and ruled its old city-states. Yet Romans deeply admired Greek culture, copying marble statues, hiring **Greek teachers**, and matching Roman gods to Olympians. Educated Romans proudly read Homer’s poems and learned to speak Greek.",
-          "content": "<span class=\"para-ref\">[6.3]</span> Egypt’s port of **Alexandria** became a wonder of learning, lit by its towering **Pharos Lighthouse**. Inside the **Great Library**, scholars gathered hundreds of thousands of papyrus scrolls on stars, maps, and **geometry**. Thinkers from distant lands studied Euclid’s diagrams and shared discoveries in a common Greek language.<br><br><span class=\"para-ref\">[6.4]</span> Meanwhile, a mighty new power rose west across the sea in Italy: the **Roman Republic**. In **146 BC**, tough Roman legions conquered mainland Greece and ruled its old city-states. Yet Romans deeply admired Greek culture, copying marble statues, hiring **Greek teachers**, and matching Roman gods to Olympians. Educated Romans proudly read Homer’s poems and learned to speak Greek.",
+          "text": "<span class=\"para-ref\">[6.3]</span> Egypt's busy port of **Alexandria** shone with its tall **Pharos Lighthouse**. Inside the **Great Library**, scholars gathered hundreds of thousands of papyrus scrolls. Thinkers from distant lands studied stars, maps, and Euclid's **geometry** in Greek.<br><br><span class=\"para-ref\">[6.4]</span> Meanwhile, a strong new power rose west across the sea in Italy: the **Roman Republic**. In **146 BC**, tough Roman legions conquered mainland Greece and its old city-states. Yet Romans admired Greece deeply, copying marble statues and hiring **Greek teachers**. Educated Romans also read Homer and matched Roman gods to Olympians.",
+          "content": "<span class=\"para-ref\">[6.3]</span> Egypt's busy port of **Alexandria** shone with its tall **Pharos Lighthouse**. Inside the **Great Library**, scholars gathered hundreds of thousands of papyrus scrolls. Thinkers from distant lands studied stars, maps, and Euclid's **geometry** in Greek.<br><br><span class=\"para-ref\">[6.4]</span> Meanwhile, a strong new power rose west across the sea in Italy: the **Roman Republic**. In **146 BC**, tough Roman legions conquered mainland Greece and its old city-states. Yet Romans admired Greece deeply, copying marble statues and hiring **Greek teachers**. Educated Romans also read Homer and matched Roman gods to Olympians.",
           "image": "/units/ks2_ancient_greece/assets/euclid_geometry_papyrus_diagram.jpg",
           "image_alt": "Ancient Egyptian papyrus fragment from Oxyrhynchus preserving Greek writing and a hand-drawn geometry diagram from Euclid’s Elements",
           "caption": "A third-century papyrus fragment discovered in Egypt preserving Greek text and a geometry diagram from Euclid’s Elements.",
@@ -3609,16 +4364,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/alexander_heracles_silver_coin.jpg",
               "image": "/units/ks2_ancient_greece/assets/alexander_heracles_silver_coin.jpg",
-              "title": "Source A: Silver Tetradrachm Coin Showing Alexander Wearing Heracles’s Lion Skin (c. 325 BC)",
-              "caption": "Struck silver tetradrachm coin showing young Alexander styled in the knotted lion-skin headdress of legendary Greek hero Heracles.",
+              "title": "Source A: Silver Coin of Alexander Wearing Heracles’s Lion Skin (c. 325 BC)",
+              "caption": "Struck silver four-drachma coin showing young Alexander wearing the knotted lion-skin hood of legendary Greek hero Heracles.",
               "author": "Royal Macedonian Mint Engraver",
               "date": "c. 330–320 BC",
-              "context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters and portraits over thousands of miles!",
-              "source_context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters and portraits over thousands of miles!",
+              "context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters over thousands of miles!",
+              "source_context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters over thousands of miles! **Hinge Question:** Why did Alexander choose to appear on his silver coins wearing the lion-skin hood of the hero Heracles?",
               "question_badge": "ALEXANDER SILVER COIN",
               "question": "Look closely at Source A. Why did minting coins like this help unite Alexander’s vast empire?",
-              "model_answer": "Source A shows Alexander wearing the fierce lion skin of Greek hero Heracles, advertising his unbeaten strength to every subject. Using one trusted silver coin design and Greek script across Egypt and Asia also made long-distance trade much easier.",
-              "provenance": "Hellenistic silver tetradrachm of Alexander the Great wearing the Nemean lion scalp of Heracles (c. 330–320 BC, museum numismatic collection)."
+              "model_answer": "Source A showed Alexander in Heracles’s fierce lion skin to project unbeaten strength, while one trusted silver coin and Greek script made trade across Egypt and Asia easy.",
+              "provenance": "Hellenistic silver coin of Alexander the Great wearing the lion skin of Heracles (c. 325 BC)."
             },
             {
               "id": "ks2_ancient_greece_l6_src_b",
@@ -3627,24 +4382,24 @@ window.UNIT_DATA = {
               "type": "diagram",
               "src": "/units/ks2_ancient_greece/assets/doric_ionic_corinthian_capitals.png",
               "image": "/units/ks2_ancient_greece/assets/doric_ionic_corinthian_capitals.png",
-              "title": "Source B: Architectural Diagram Comparing Greek Doric, Ionic & Corinthian Column Capitals",
-              "caption": "Clear comparison of the three classic Greek architectural orders: sturdy plain Doric, scrolled ram’s-horn Ionic, and leafy carved Corinthian.",
+              "title": "Source B: Diagram Comparing Greek Doric, Ionic & Corinthian Columns",
+              "caption": "Clear comparison of the three classic Greek stone column styles: sturdy plain Doric, scrolled Ionic, and leafy carved Corinthian.",
               "author": "Classical Architectural Illustration",
               "date": "Classical & Hellenistic Orders (5th–2nd Century BC & Modern Buildings)",
-              "context": "Next time you walk past the British Museum in London or a grand town hall in your nearest city, look up at the tops (\"capitals\") of the stone columns!",
-              "source_context": "Next time you walk past the British Museum in London or a grand town hall in your nearest city, look up at the tops (\"capitals\") of the stone columns!",
+              "context": "Next time you walk past the British Museum in London or a grand town hall, look up at the carved stone tops (\"capitals\") of the columns!",
+              "source_context": "Next time you walk past the British Museum in London or a grand town hall, look up at the carved stone tops (\"capitals\") of the columns! **Hinge Question:** How can you tell in three seconds whether a building’s stone columns copy the Doric, Ionic, or Corinthian style?",
               "question_badge": "THREE GREEK COLUMNS",
               "question": "Inspect Source B. How can you tell Doric, Ionic, and Corinthian column tops apart?",
-              "model_answer": "Looking at Source B, a Doric column top is sturdy, plain, and cushion-shaped with no curls. An Ionic capital has two neat spiral scrolls like rolled-up papyrus or ram’s horns, while a Corinthian capital bursts with carved acanthus leaves!",
-              "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian column capitals (Public Domain educational graphic)."
+              "model_answer": "In Source B, a Doric column top is plain and sturdy, an Ionic top curls into two neat spiral scrolls, and a Corinthian top bursts with carved acanthus leaves!",
+              "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian stone column tops."
             }
           ]
         },
         {
           "act": 3,
           "title": "1896 & Today: Democracy, Words, Columns & the Modern Olympics",
-          "text": "<span class=\"para-ref\">[6.5]</span> Over two thousand years have passed since ancient Greece flourished. Yet its rich **legacy** still shapes Britain and the wider world. Whenever citizens vote in elections or serve on courtroom **juries**, they echo Athenian **democracy**. Hundreds of common English words come from Greek, including **school**, **dinosaur**, **planet**, **music**, **theatre**, and **history**!<br><br><span class=\"para-ref\">[6.6]</span> Look up at grand museums or town halls to spot **Doric**, **Ionic**, and leafy **Corinthian** stone columns. In **1896**, athletes met inside Athens’s marble **Panathenaic Stadium** to launch the **Modern Olympic Games**. From geometry lessons to Olympic medals, Greek curiosity still inspires our world every single day!",
-          "content": "<span class=\"para-ref\">[6.5]</span> Over two thousand years have passed since ancient Greece flourished. Yet its rich **legacy** still shapes Britain and the wider world. Whenever citizens vote in elections or serve on courtroom **juries**, they echo Athenian **democracy**. Hundreds of common English words come from Greek, including **school**, **dinosaur**, **planet**, **music**, **theatre**, and **history**!<br><br><span class=\"para-ref\">[6.6]</span> Look up at grand museums or town halls to spot **Doric**, **Ionic**, and leafy **Corinthian** stone columns. In **1896**, athletes met inside Athens’s marble **Panathenaic Stadium** to launch the **Modern Olympic Games**. From geometry lessons to Olympic medals, Greek curiosity still inspires our world every single day!",
+          "text": "<span class=\"para-ref\">[6.5]</span> Over two thousand years have passed, yet Ancient Greece's rich **legacy** still shapes our lives. When citizens vote in elections or sit on courtroom **juries**, they echo Athenian **democracy**. Everyday English words come straight from Greek, including **school**, **dinosaur**, **planet**, **music**, **theatre**, and **history**!<br><br><span class=\"para-ref\">[6.6]</span> Grand museums and town halls still copy **Doric**, **Ionic**, and leafy **Corinthian** stone **columns**. In **1896**, athletes met inside Athens's white marble **Panathenaic** [pan-ath-uh-NAY-ik] **Stadium**. Fourteen nations launched the **Modern Olympic Games** there. Today, Greek curiosity still inspires classrooms worldwide!",
+          "content": "<span class=\"para-ref\">[6.5]</span> Over two thousand years have passed, yet Ancient Greece's rich **legacy** still shapes our lives. When citizens vote in elections or sit on courtroom **juries**, they echo Athenian **democracy**. Everyday English words come straight from Greek, including **school**, **dinosaur**, **planet**, **music**, **theatre**, and **history**!<br><br><span class=\"para-ref\">[6.6]</span> Grand museums and town halls still copy **Doric**, **Ionic**, and leafy **Corinthian** stone **columns**. In **1896**, athletes met inside Athens's white marble **Panathenaic** [pan-ath-uh-NAY-ik] **Stadium**. Fourteen nations launched the **Modern Olympic Games** there. Today, Greek curiosity still inspires classrooms worldwide!",
           "image": "/units/ks2_ancient_greece/assets/panathenaic_stadium_1896_athens.jpg",
           "image_alt": "Crowds filling the horseshoe-shaped white marble Panathenaic Stadium in Athens during the first Modern Olympic Games in April 1896",
           "caption": "Opening day inside Athens’s white marble Panathenaic Stadium during the revival of the first Modern Olympic Games in April 1896.",
@@ -3658,16 +4413,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/artemision_bronze_racehorse_jockey.jpg",
               "image": "/units/ks2_ancient_greece/assets/artemision_bronze_racehorse_jockey.jpg",
-              "title": "Source C: Hellenistic Bronze Statue of the Galloping Racehorse & Jockey of Artemision (c. 140 BC)",
-              "caption": "Life-size Hellenistic Greek cast-bronze sculpture of a barefoot young jockey urging his racehorse forward at a full gallop, recovered from an Aegean shipwreck.",
+              "title": "Source C: Bronze Statue of the Galloping Racehorse & Jockey (c. 140 BC)",
+              "caption": "Life-size Hellenistic Greek bronze sculpture of a barefoot young jockey urging his racehorse into a full gallop, rescued from an Aegean shipwreck.",
               "author": "Hellenistic Greek Master Bronze Sculptor",
               "date": "c. 150–140 BC",
-              "context": "Pulled from an ancient shipwreck off Cape Artemision — possibly looted by a ship heading toward Rome — this dynamic bronze captures rippling muscles, flying hooves, and breathless speed!",
-              "source_context": "Pulled from an ancient shipwreck off Cape Artemision — possibly looted by a ship heading toward Rome — this dynamic bronze captures rippling muscles, flying hooves, and breathless speed!",
+              "context": "Pulled from an ancient shipwreck off Cape Artemision — likely aboard a ship heading toward Rome — this bronze captures straining muscles, flying hooves, and speed!",
+              "source_context": "Pulled from an ancient shipwreck off Cape Artemision — likely aboard a ship heading toward Rome — this bronze captures straining muscles, flying hooves, and speed! **Hinge Question:** Why did wealthy Romans eagerly ship Greek bronze statues and hire educated Greek teachers after conquering Greece in 146 BC?",
               "question_badge": "ARTEMISION BRONZE JOCKEY",
               "question": "What does the lifelike energy of Source C reveal about Hellenistic art and why Romans admired it?",
-              "model_answer": "Source C captures astonishing movement, from the horse’s straining muscles and flared nostrils to the tiny barefoot jockey leaning forward mid-gallop. Its lifelike skill explains why conquering Romans admired Greek sculptors and shipped Greek art home to Italy!",
-              "provenance": "Hellenistic bronze statue of the Horse and Jockey of Cape Artemision, recovered from the sea off Euboea (c. 140 BC, National Archaeological Museum, Athens)."
+              "model_answer": "Source C captures vivid motion from the horse’s flared nostrils to the tiny barefoot jockey leaning forward mid-gallop, showing why conquering Romans prized Greek sculptors.",
+              "provenance": "Hellenistic bronze statue of the Horse and Jockey rescued from the sea off Cape Artemision (c. 140 BC, Athens)."
             },
             {
               "id": "ks2_ancient_greece_l6_src_d",
@@ -3676,16 +4431,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_ancient_greece/assets/panathenaic_prize_amphora_athletes.jpg",
               "image": "/units/ks2_ancient_greece/assets/panathenaic_prize_amphora_athletes.jpg",
-              "title": "Source D: Black-Figure Panathenaic Prize Amphora Celebrating Greek Athletic Competition (c. 500 BC)",
-              "caption": "Tall painted clay prize amphora once filled with precious sacred olive oil from Athens and awarded to victorious Greek athletes.",
+              "title": "Source D: Painted Greek Prize Jar Celebrating Athletic Competition (c. 500 BC)",
+              "caption": "Tall painted clay prize jar once filled with precious sacred olive oil from Athens and awarded to champion Greek athletes.",
               "author": "Athenian Panathenaic Vase Painter",
               "date": "c. 500 BC",
-              "context": "For over a thousand years, Greek athletic festivals inspired fierce but peaceful sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the first Modern Olympic Games!",
-              "source_context": "For over a thousand years, Greek athletic festivals inspired fierce but peaceful sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the first Modern Olympic Games!",
+              "context": "For over a thousand years, Greek athletic festivals inspired sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the Modern Olympic Games!",
+              "source_context": "For over a thousand years, Greek athletic festivals inspired sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the Modern Olympic Games! **Hinge Question:** What stayed the same and what changed between ancient Greek athletic festivals and the Modern Olympic Games revived in 1896?",
               "question_badge": "ATHLETIC PRIZE AMPHORA",
               "question": "Look at Source D. How does this ancient Greek prize jar connect to our Modern Olympic Games?",
-              "model_answer": "Source D was awarded full of precious Athenian olive oil to champion athletes competing peacefully for sporting glory. That ancient Greek love of athletics inspired the world to revive the Modern Olympic Games inside Athens’s marble stadium in 1896!",
-              "provenance": "Attic black-figure Panathenaic prize amphora depicting competing athletes (c. 500 BC, museum archaeological collection)."
+              "model_answer": "Source D was awarded full of prized olive oil to champion athletes competing peacefully, inspiring the world to revive the Modern Olympic Games in Athens in 1896!",
+              "provenance": "Painted black-figure Athenian clay prize jar showing competing Greek athletes (c. 500 BC)."
             }
           ]
         }
@@ -3698,16 +4453,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/alexander_heracles_silver_coin.jpg",
           "image": "/units/ks2_ancient_greece/assets/alexander_heracles_silver_coin.jpg",
-          "title": "Source A: Silver Tetradrachm Coin Showing Alexander Wearing Heracles’s Lion Skin (c. 325 BC)",
-          "caption": "Struck silver tetradrachm coin showing young Alexander styled in the knotted lion-skin headdress of legendary Greek hero Heracles.",
+          "title": "Source A: Silver Coin of Alexander Wearing Heracles’s Lion Skin (c. 325 BC)",
+          "caption": "Struck silver four-drachma coin showing young Alexander wearing the knotted lion-skin hood of legendary Greek hero Heracles.",
           "author": "Royal Macedonian Mint Engraver",
           "date": "c. 330–320 BC",
-          "context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters and portraits over thousands of miles!",
-          "source_context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters and portraits over thousands of miles!",
+          "context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters over thousands of miles!",
+          "source_context": "Millions of silver coins like Source A paid soldiers and traders from Greece across Egypt and Persia, spreading Greek letters over thousands of miles! **Hinge Question:** Why did Alexander choose to appear on his silver coins wearing the lion-skin hood of the hero Heracles?",
           "question_badge": "ALEXANDER SILVER COIN",
           "question": "Look closely at Source A. Why did minting coins like this help unite Alexander’s vast empire?",
-          "model_answer": "Source A shows Alexander wearing the fierce lion skin of Greek hero Heracles, advertising his unbeaten strength to every subject. Using one trusted silver coin design and Greek script across Egypt and Asia also made long-distance trade much easier.",
-          "provenance": "Hellenistic silver tetradrachm of Alexander the Great wearing the Nemean lion scalp of Heracles (c. 330–320 BC, museum numismatic collection)."
+          "model_answer": "Source A showed Alexander in Heracles’s fierce lion skin to project unbeaten strength, while one trusted silver coin and Greek script made trade across Egypt and Asia easy.",
+          "provenance": "Hellenistic silver coin of Alexander the Great wearing the lion skin of Heracles (c. 325 BC)."
         },
         {
           "id": "ks2_ancient_greece_l6_src_b",
@@ -3716,16 +4471,16 @@ window.UNIT_DATA = {
           "type": "diagram",
           "src": "/units/ks2_ancient_greece/assets/doric_ionic_corinthian_capitals.png",
           "image": "/units/ks2_ancient_greece/assets/doric_ionic_corinthian_capitals.png",
-          "title": "Source B: Architectural Diagram Comparing Greek Doric, Ionic & Corinthian Column Capitals",
-          "caption": "Clear comparison of the three classic Greek architectural orders: sturdy plain Doric, scrolled ram’s-horn Ionic, and leafy carved Corinthian.",
+          "title": "Source B: Diagram Comparing Greek Doric, Ionic & Corinthian Columns",
+          "caption": "Clear comparison of the three classic Greek stone column styles: sturdy plain Doric, scrolled Ionic, and leafy carved Corinthian.",
           "author": "Classical Architectural Illustration",
           "date": "Classical & Hellenistic Orders (5th–2nd Century BC & Modern Buildings)",
-          "context": "Next time you walk past the British Museum in London or a grand town hall in your nearest city, look up at the tops (\"capitals\") of the stone columns!",
-          "source_context": "Next time you walk past the British Museum in London or a grand town hall in your nearest city, look up at the tops (\"capitals\") of the stone columns!",
+          "context": "Next time you walk past the British Museum in London or a grand town hall, look up at the carved stone tops (\"capitals\") of the columns!",
+          "source_context": "Next time you walk past the British Museum in London or a grand town hall, look up at the carved stone tops (\"capitals\") of the columns! **Hinge Question:** How can you tell in three seconds whether a building’s stone columns copy the Doric, Ionic, or Corinthian style?",
           "question_badge": "THREE GREEK COLUMNS",
           "question": "Inspect Source B. How can you tell Doric, Ionic, and Corinthian column tops apart?",
-          "model_answer": "Looking at Source B, a Doric column top is sturdy, plain, and cushion-shaped with no curls. An Ionic capital has two neat spiral scrolls like rolled-up papyrus or ram’s horns, while a Corinthian capital bursts with carved acanthus leaves!",
-          "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian column capitals (Public Domain educational graphic)."
+          "model_answer": "In Source B, a Doric column top is plain and sturdy, an Ionic top curls into two neat spiral scrolls, and a Corinthian top bursts with carved acanthus leaves!",
+          "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian stone column tops."
         },
         {
           "id": "ks2_ancient_greece_l6_src_c",
@@ -3734,16 +4489,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/artemision_bronze_racehorse_jockey.jpg",
           "image": "/units/ks2_ancient_greece/assets/artemision_bronze_racehorse_jockey.jpg",
-          "title": "Source C: Hellenistic Bronze Statue of the Galloping Racehorse & Jockey of Artemision (c. 140 BC)",
-          "caption": "Life-size Hellenistic Greek cast-bronze sculpture of a barefoot young jockey urging his racehorse forward at a full gallop, recovered from an Aegean shipwreck.",
+          "title": "Source C: Bronze Statue of the Galloping Racehorse & Jockey (c. 140 BC)",
+          "caption": "Life-size Hellenistic Greek bronze sculpture of a barefoot young jockey urging his racehorse into a full gallop, rescued from an Aegean shipwreck.",
           "author": "Hellenistic Greek Master Bronze Sculptor",
           "date": "c. 150–140 BC",
-          "context": "Pulled from an ancient shipwreck off Cape Artemision — possibly looted by a ship heading toward Rome — this dynamic bronze captures rippling muscles, flying hooves, and breathless speed!",
-          "source_context": "Pulled from an ancient shipwreck off Cape Artemision — possibly looted by a ship heading toward Rome — this dynamic bronze captures rippling muscles, flying hooves, and breathless speed!",
+          "context": "Pulled from an ancient shipwreck off Cape Artemision — likely aboard a ship heading toward Rome — this bronze captures straining muscles, flying hooves, and speed!",
+          "source_context": "Pulled from an ancient shipwreck off Cape Artemision — likely aboard a ship heading toward Rome — this bronze captures straining muscles, flying hooves, and speed! **Hinge Question:** Why did wealthy Romans eagerly ship Greek bronze statues and hire educated Greek teachers after conquering Greece in 146 BC?",
           "question_badge": "ARTEMISION BRONZE JOCKEY",
           "question": "What does the lifelike energy of Source C reveal about Hellenistic art and why Romans admired it?",
-          "model_answer": "Source C captures astonishing movement, from the horse’s straining muscles and flared nostrils to the tiny barefoot jockey leaning forward mid-gallop. Its lifelike skill explains why conquering Romans admired Greek sculptors and shipped Greek art home to Italy!",
-          "provenance": "Hellenistic bronze statue of the Horse and Jockey of Cape Artemision, recovered from the sea off Euboea (c. 140 BC, National Archaeological Museum, Athens)."
+          "model_answer": "Source C captures vivid motion from the horse’s flared nostrils to the tiny barefoot jockey leaning forward mid-gallop, showing why conquering Romans prized Greek sculptors.",
+          "provenance": "Hellenistic bronze statue of the Horse and Jockey rescued from the sea off Cape Artemision (c. 140 BC, Athens)."
         },
         {
           "id": "ks2_ancient_greece_l6_src_d",
@@ -3752,16 +4507,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_ancient_greece/assets/panathenaic_prize_amphora_athletes.jpg",
           "image": "/units/ks2_ancient_greece/assets/panathenaic_prize_amphora_athletes.jpg",
-          "title": "Source D: Black-Figure Panathenaic Prize Amphora Celebrating Greek Athletic Competition (c. 500 BC)",
-          "caption": "Tall painted clay prize amphora once filled with precious sacred olive oil from Athens and awarded to victorious Greek athletes.",
+          "title": "Source D: Painted Greek Prize Jar Celebrating Athletic Competition (c. 500 BC)",
+          "caption": "Tall painted clay prize jar once filled with precious sacred olive oil from Athens and awarded to champion Greek athletes.",
           "author": "Athenian Panathenaic Vase Painter",
           "date": "c. 500 BC",
-          "context": "For over a thousand years, Greek athletic festivals inspired fierce but peaceful sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the first Modern Olympic Games!",
-          "source_context": "For over a thousand years, Greek athletic festivals inspired fierce but peaceful sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the first Modern Olympic Games!",
+          "context": "For over a thousand years, Greek athletic festivals inspired sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the Modern Olympic Games!",
+          "source_context": "For over a thousand years, Greek athletic festivals inspired sporting pride — a tradition revived in Athens in April 1896 when fourteen nations launched the Modern Olympic Games! **Hinge Question:** What stayed the same and what changed between ancient Greek athletic festivals and the Modern Olympic Games revived in 1896?",
           "question_badge": "ATHLETIC PRIZE AMPHORA",
           "question": "Look at Source D. How does this ancient Greek prize jar connect to our Modern Olympic Games?",
-          "model_answer": "Source D was awarded full of precious Athenian olive oil to champion athletes competing peacefully for sporting glory. That ancient Greek love of athletics inspired the world to revive the Modern Olympic Games inside Athens’s marble stadium in 1896!",
-          "provenance": "Attic black-figure Panathenaic prize amphora depicting competing athletes (c. 500 BC, museum archaeological collection)."
+          "model_answer": "Source D was awarded full of prized olive oil to champion athletes competing peacefully, inspiring the world to revive the Modern Olympic Games in Athens in 1896!",
+          "provenance": "Painted black-figure Athenian clay prize jar showing competing Greek athletes (c. 500 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -3778,7 +4533,7 @@ window.UNIT_DATA = {
             "trigger": "Taught by Aristotle, young King Alexander rode Bucephalus across Egypt, Persia, and north-west India by age thirty-two.",
             "connective": "Founded Greek-speaking cities named Alexandria that blended eastern and western ideas.",
             "question": "How did Alexander build a vast empire across three continents?",
-            "prose_hash": "2147c00910",
+            "prose_hash": "3e36889504",
             "questionHeading": "How did Alexander build a vast empire across three continents?",
             "focusClue": "How did Alexander build a vast empire across three continents?",
             "dates": "336–323 BC",
@@ -3794,7 +4549,7 @@ window.UNIT_DATA = {
             "trigger": "Alexandria’s Great Library stored Greek scrolls until Rome conquered Greece in 146 BC and eagerly adopted Greek learning.",
             "connective": "Carried Greek architecture, drama, maths, and medicine across Europe, including Roman Britain.",
             "question": "Why did Alexandria and conquered Greece still dazzle the Roman Republic?",
-            "prose_hash": "29077222d6",
+            "prose_hash": "9bacf928c4",
             "questionHeading": "Why did Alexandria and conquered Greece still dazzle the Roman Republic?",
             "focusClue": "Why did Alexandria and conquered Greece still dazzle the Roman Republic?",
             "dates": "323–146 BC",
@@ -3810,7 +4565,7 @@ window.UNIT_DATA = {
             "trigger": "Greek democracy, juries, English words, Doric/Ionic/Corinthian columns, and the 1896 Athens Olympics still thrive worldwide.",
             "connective": "Proves tiny Greek city-states left one of the deepest cultural footprints in human history.",
             "question": "Where can we spot Ancient Greece’s living legacy around us today?",
-            "prose_hash": "aed8cf40cb",
+            "prose_hash": "bd51477bdf",
             "questionHeading": "Where can we spot Ancient Greece’s living legacy around us today?",
             "focusClue": "Where can we spot Ancient Greece’s living legacy around us today?",
             "dates": "1896 & Today",
@@ -3846,7 +4601,7 @@ window.UNIT_DATA = {
           "dates": "336–323 BC",
           "para_ref": "[6.1]",
           "paraRef": "[6.1]",
-          "prose_hash": "2147c00910"
+          "prose_hash": "3e36889504"
         },
         {
           "step": 2,
@@ -3875,7 +4630,7 @@ window.UNIT_DATA = {
           "dates": "323–146 BC",
           "para_ref": "[6.3]",
           "paraRef": "[6.3]",
-          "prose_hash": "29077222d6"
+          "prose_hash": "9bacf928c4"
         },
         {
           "step": 3,
@@ -3904,7 +4659,7 @@ window.UNIT_DATA = {
           "dates": "1896 & Today",
           "para_ref": "[6.5]",
           "paraRef": "[6.5]",
-          "prose_hash": "aed8cf40cb"
+          "prose_hash": "bd51477bdf"
         }
       ],
       "tasks": [
@@ -3993,78 +4748,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Which famous philosopher tutored young Alexander of Macedon, and what was the name of Alexander’s beloved warhorse?",
-          "q": "Which famous philosopher tutored young Alexander of Macedon, and what was the name of Alexander’s beloved warhorse?",
+          "question": "From which mountainous northern kingdom did young King Alexander set out in 336 BC?",
+          "q": "From which mountainous northern kingdom did young King Alexander set out in 336 BC?",
           "options": [
-            "Tutored by Aristotle; rode his warhorse Bucephalus",
-            "Tutored by Leonidas; rode his warhorse Pegasus",
-            "Tutored by Xerxes; rode his warhorse Marathon",
-            "Tutored by Pheidippides; rode his warhorse Salamis"
-          ],
-          "correct": 0,
-          "answer": "Tutored by Aristotle; rode his warhorse Bucephalus",
-          "a": "Tutored by Aristotle; rode his warhorse Bucephalus",
-          "explanation": "Aristotle sparked Alexander’s love of Greek learning, while young Alexander famously tamed his black warhorse Bucephalus."
-        },
-        {
-          "stage": 2,
-          "question": "Which two famous landmarks stood in Egypt’s Hellenistic city of Alexandria?",
-          "q": "Which two famous landmarks stood in Egypt’s Hellenistic city of Alexandria?",
-          "options": [
-            "Stonehenge and Hadrian’s Wall",
-            "The Great Library of papyrus scrolls and the towering Pharos Lighthouse",
-            "The Lion Gate of Mycenae and Skara Brae",
-            "Creswell Crags and West Kennet Long Barrow"
+            "Sparta",
+            "Macedon",
+            "Crete",
+            "Italy"
           ],
           "correct": 1,
-          "answer": "The Great Library of papyrus scrolls and the towering Pharos Lighthouse",
-          "a": "The Great Library of papyrus scrolls and the towering Pharos Lighthouse",
-          "explanation": "Alexandria in Egypt boasted the ancient world’s greatest scroll library alongside the sky-scraping Pharos Lighthouse."
+          "answer": "Macedon",
+          "a": "Macedon",
+          "explanation": "Alexander grew up in mountainous Macedon, north of the older Greek city-states, before becoming king aged twenty in 336 BC."
         },
         {
-          "stage": 2,
-          "question": "What happened in 146 BC when the Roman Republic conquered mainland Greece?",
-          "q": "What happened in 146 BC when the Roman Republic conquered mainland Greece?",
+          "stage": 1,
+          "question": "Which famous Greek philosopher tutored young Prince Alexander, and what was Alexander’s warhorse called?",
+          "q": "Which famous Greek philosopher tutored young Prince Alexander, and what was Alexander’s warhorse called?",
           "options": [
-            "Romans forgot everything Greece ever built or wrote",
-            "Greece conquered Italy and banned Latin forever",
-            "Rome ruled Greece politically, yet eagerly copied Greek statues, temples, and teachers",
-            "Persia recaptured Athens and rebuilt Thermopylae"
+            "Tutored by Socrates; rode Pegasus",
+            "Tutored by Euclid; rode Marathon",
+            "Tutored by Aristotle; rode Bucephalus",
+            "Tutored by Plato; rode Hydra"
           ],
           "correct": 2,
-          "answer": "Rome ruled Greece politically, yet eagerly copied Greek statues, temples, and teachers",
-          "a": "Rome ruled Greece politically, yet eagerly copied Greek statues, temples, and teachers",
-          "explanation": "Even after conquering Greece in 146 BC, Romans deeply admired Greek art, theatre, philosophy, and architecture."
+          "answer": "Tutored by Aristotle; rode Bucephalus",
+          "a": "Tutored by Aristotle; rode Bucephalus",
+          "explanation": "Aristotle taught young Alexander to love Greek learning, while boyhood Alexander tamed his wild black warhorse Bucephalus."
         },
         {
-          "stage": 3,
-          "question": "How can you recognise a Greek Corinthian column capital compared with plain Doric and scrolled Ionic capitals?",
-          "q": "How can you recognise a Greek Corinthian column capital compared with plain Doric and scrolled Ionic capitals?",
+          "stage": 1,
+          "question": "Across which three regions beyond Greece did unbeaten Alexander march his army before 323 BC?",
+          "q": "Across which three regions beyond Greece did unbeaten Alexander march his army before 323 BC?",
           "options": [
-            "It is carved from solid ice",
-            "It has no top at all",
-            "It is shaped like a bronze trireme ram",
-            "It is decorated with ornate carved acanthus leaves"
+            "Britain, France, and Spain",
+            "Russia, Sweden, and Norway",
+            "China, Japan, and Korea",
+            "Egypt, Persia, and north-west India"
           ],
           "correct": 3,
-          "answer": "It is decorated with ornate carved acanthus leaves",
-          "a": "It is decorated with ornate carved acanthus leaves",
-          "explanation": "Doric tops are plain and sturdy, Ionic tops feature twin spiral scrolls, and Corinthian tops bloom with carved acanthus leaves."
+          "answer": "Egypt, Persia, and north-west India",
+          "a": "Egypt, Persia, and north-west India",
+          "explanation": "Over eleven unbeaten years, Alexander marched across Egypt, toppled Persia, and reached north-west India before dying aged thirty-two."
+        },
+        {
+          "stage": 1,
+          "question": "What do historians call the new blended culture created as Greek speech mixed with Egyptian and Asian customs?",
+          "q": "What do historians call the new blended culture created as Greek speech mixed with Egyptian and Asian customs?",
+          "options": [
+            "The Hellenistic world",
+            "The Bronze Age",
+            "The Anglo-Saxon kingdom",
+            "The Sacred Truce"
+          ],
+          "correct": 0,
+          "answer": "The Hellenistic world",
+          "a": "The Hellenistic world",
+          "explanation": "Blending Greek language, coins, and art with Egyptian and Asian traditions created the vibrant Hellenistic world."
+        },
+        {
+          "stage": 1,
+          "question": "Look at Source A. Whose fierce lion-skin hood did Alexander wear on his silver coins?",
+          "q": "Look at Source A. Whose fierce lion-skin hood did Alexander wear on his silver coins?",
+          "options": [
+            "Zeus’s cloud cloak",
+            "Legendary Greek hero Heracles’s lion skin",
+            "Medusa’s snake crown",
+            "Apollo’s olive wreath"
+          ],
+          "correct": 1,
+          "answer": "Legendary Greek hero Heracles’s lion skin",
+          "a": "Legendary Greek hero Heracles’s lion skin",
+          "explanation": "Minting silver coins showing Alexander in Heracles’s lion skin advertised fearless strength across his vast empire."
+        },
+        {
+          "stage": 2,
+          "question": "Which towering landmark guided ships safely into Egypt’s bustling Hellenistic port of Alexandria?",
+          "q": "Which towering landmark guided ships safely into Egypt’s bustling Hellenistic port of Alexandria?",
+          "options": [
+            "The Lion Gate",
+            "The Parthenon",
+            "The Pharos Lighthouse",
+            "The Green Dome"
+          ],
+          "correct": 2,
+          "answer": "The Pharos Lighthouse",
+          "a": "The Pharos Lighthouse",
+          "explanation": "Egypt’s port of Alexandria shone with the towering Pharos Lighthouse, one of the famous wonders of the ancient world."
+        },
+        {
+          "stage": 2,
+          "question": "What made the Great Library of Alexandria famous across the Mediterranean world?",
+          "q": "What made the Great Library of Alexandria famous across the Mediterranean world?",
+          "options": [
+            "It banned anyone from reading mathematics",
+            "It stored only Spartan bronze shields",
+            "It printed daily newspapers on steam presses",
+            "Scholars gathered hundreds of thousands of papyrus scrolls on stars, maps, and geometry"
+          ],
+          "correct": 3,
+          "answer": "Scholars gathered hundreds of thousands of papyrus scrolls on stars, maps, and geometry",
+          "a": "Scholars gathered hundreds of thousands of papyrus scrolls on stars, maps, and geometry",
+          "explanation": "Thinkers from many lands met inside Alexandria’s Great Library to study Euclid’s geometry and hundreds of thousands of papyrus scrolls."
+        },
+        {
+          "stage": 2,
+          "question": "Which rising power from Italy conquered mainland Greece in 146 BC?",
+          "q": "Which rising power from Italy conquered mainland Greece in 146 BC?",
+          "options": [
+            "The Roman Republic",
+            "The Persian Immortals",
+            "The Viking Danelaw",
+            "The Minoan fleet"
+          ],
+          "correct": 0,
+          "answer": "The Roman Republic",
+          "a": "The Roman Republic",
+          "explanation": "In 146 BC, tough Roman legions from Italy conquered mainland Greece and took control of its old city-states."
+        },
+        {
+          "stage": 2,
+          "question": "How did wealthy Romans treat Greek culture after conquering Greece in 146 BC?",
+          "q": "How did wealthy Romans treat Greek culture after conquering Greece in 146 BC?",
+          "options": [
+            "They burned every Greek poem and forbade Greek speech",
+            "They admired Greece deeply, copying marble statues, hiring Greek teachers, and reading Homer",
+            "They turned every Greek amphitheatre into a wheat farm",
+            "They forced Greeks to forget the 24-letter alphabet"
+          ],
+          "correct": 1,
+          "answer": "They admired Greece deeply, copying marble statues, hiring Greek teachers, and reading Homer",
+          "a": "They admired Greece deeply, copying marble statues, hiring Greek teachers, and reading Homer",
+          "explanation": "Conquering Romans loved Greek art and wisdom — shipping statues like Source C towards Italy, hiring Greek tutors, and matching Roman gods to Olympians."
+        },
+        {
+          "stage": 2,
+          "question": "On what writing material were scrolls stored inside Alexandria’s Great Library?",
+          "q": "On what writing material were scrolls stored inside Alexandria’s Great Library?",
+          "options": [
+            "Baked clay bricks",
+            "Scraped cowhide",
+            "Egyptian papyrus scrolls",
+            "Pressed rag paper"
+          ],
+          "correct": 2,
+          "answer": "Egyptian papyrus scrolls",
+          "a": "Egyptian papyrus scrolls",
+          "explanation": "Hellenistic scholars wrote star tables, maps, and Euclid’s geometry diagrams in Greek ink across rolls of Egyptian papyrus."
         },
         {
           "stage": 3,
-          "question": "Where and when were the first Modern Olympic Games revived, and which of these everyday English words come from Greek?",
-          "q": "Where and when were the first Modern Olympic Games revived, and which of these everyday English words come from Greek?",
+          "question": "Which two parts of modern government and law echo Ancient Athens’s democratic legacy?",
+          "q": "Which two parts of modern government and law echo Ancient Athens’s democratic legacy?",
           "options": [
-            "London in 1066; words like igloo and kayak",
-            "Athens in 1896; words like school, dinosaur, planet, music, theatre, and history",
-            "Rome in 43 BC; words like fjord and ski",
-            "Babylon in 323 BC; words like potato and tomato"
+            "Royal coronations and knighthoods",
+            "Castle moats and drawbridges",
+            "Chariot races and olive-oil jars",
+            "Citizens voting in elections and serving on courtroom juries"
+          ],
+          "correct": 3,
+          "answer": "Citizens voting in elections and serving on courtroom juries",
+          "a": "Citizens voting in elections and serving on courtroom juries",
+          "explanation": "Modern elections and citizen courtroom juries build directly on ideas pioneered in democratic Athens."
+        },
+        {
+          "stage": 3,
+          "question": "Which set of everyday English words all come from Ancient Greek roots?",
+          "q": "Which set of everyday English words all come from Ancient Greek roots?",
+          "options": [
+            "School, dinosaur, planet, music, theatre, and history",
+            "Window, husband, sky, egg, and knife",
+            "Zero, algebra, lemon, sugar, and sofa",
+            "Igloo, kayak, parka, and husky"
+          ],
+          "correct": 0,
+          "answer": "School, dinosaur, planet, music, theatre, and history",
+          "a": "School, dinosaur, planet, music, theatre, and history",
+          "explanation": "Hundreds of English words — including school, dinosaur, planet, music, theatre, and history (historia = enquiry!) — come from Greek."
+        },
+        {
+          "stage": 3,
+          "question": "Look at Source B. How can you spot Doric, Ionic, and Corinthian stone columns on grand buildings today?",
+          "q": "Look at Source B. How can you spot Doric, Ionic, and Corinthian stone columns on grand buildings today?",
+          "options": [
+            "By counting whether the building has one, two, or three doors",
+            "Doric tops are plain, Ionic tops have two spiral scrolls, and Corinthian tops have carved leaves",
+            "Doric columns are wooden, Ionic are brick, and Corinthian are glass",
+            "Only Corinthian columns stand upright"
           ],
           "correct": 1,
-          "answer": "Athens in 1896; words like school, dinosaur, planet, music, theatre, and history",
-          "a": "Athens in 1896; words like school, dinosaur, planet, music, theatre, and history",
-          "explanation": "Athletes revived the Modern Olympics inside Athens’s marble Panathenaic Stadium in 1896, and hundreds of English words stem from Greek!"
+          "answer": "Doric tops are plain, Ionic tops have two spiral scrolls, and Corinthian tops have carved leaves",
+          "a": "Doric tops are plain, Ionic tops have two spiral scrolls, and Corinthian tops have carved leaves",
+          "explanation": "Sturdy plain Doric, twin-scrolled Ionic, and leafy Corinthian column capitals still decorate museums and town halls worldwide."
+        },
+        {
+          "stage": 3,
+          "question": "In which year and stadium were the first Modern Olympic Games revived?",
+          "q": "In which year and stadium were the first Modern Olympic Games revived?",
+          "options": [
+            "776 BC at Delphi",
+            "146 BC in Rome’s Colosseum",
+            "1896 inside Athens’s white marble Panathenaic Stadium",
+            "1948 at Wembley Stadium"
+          ],
+          "correct": 2,
+          "answer": "1896 inside Athens’s white marble Panathenaic Stadium",
+          "a": "1896 inside Athens’s white marble Panathenaic Stadium",
+          "explanation": "In April 1896, athletes from fourteen nations marched into Athens’s marble Panathenaic Stadium to launch the first Modern Olympic Games."
+        },
+        {
+          "stage": 3,
+          "question": "What do historians mean by the \"legacy\" of Ancient Greece?",
+          "q": "What do historians mean by the \"legacy\" of Ancient Greece?",
+          "options": [
+            "A pile of silver coins buried under Sparta",
+            "A secret mountain path behind Thermopylae",
+            "A wooden warship rowed by 170 oarsmen",
+            "Lasting Greek ideas, words, buildings, and sports that still shape our lives today"
+          ],
+          "correct": 3,
+          "answer": "Lasting Greek ideas, words, buildings, and sports that still shape our lives today",
+          "a": "Lasting Greek ideas, words, buildings, and sports that still shape our lives today",
+          "explanation": "A civilisation’s legacy means the enduring ideas, inventions, and traditions it passes down to later generations."
         }
       ],
       "video": [
@@ -4085,7 +4990,8 @@ window.UNIT_DATA = {
         "caption": "Two-storey marble facade of the ancient Library of Celsus at Ephesus — showcasing the lasting spread of Greek architecture and scholarship.",
         "position": "center 45%"
       },
-      "banner_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg"
+      "banner_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
+      "enquiry": "How did Alexander spread Greek ideas that still shape our world today?"
     }
   ],
   "key_individuals": [

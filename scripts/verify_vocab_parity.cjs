@@ -33,9 +33,10 @@ async function verifyVocabParity() {
 
     let unitData;
     try {
+      globalThis.window = {};
       const fileUrl = pathToFileURL(dataPath).href;
       const module = await import(fileUrl);
-      unitData = module.default || module.unitData || module[unitId];
+      unitData = module.default || module.unitData || module[unitId] || globalThis.window.UNIT_DATA;
     } catch (e) {
       console.error(`❌ [${unitId}] Could not load data.js: ${e.message}`);
       totalErrors++;

@@ -16,7 +16,7 @@ window.UNIT_DATA = {
   "homepage_background": "/units/ks2_early_islamic_baghdad/assets/banner_unit_hero.jpg",
   "cover_image": "/units/ks2_early_islamic_baghdad/assets/banner_unit_hero.jpg",
   "cover_image_position": "center 38%",
-  "cover_caption": "Shimmering 10th-century gold-leaf arabesque mosaics and carved marble horseshoe arches of the Islamic Golden Age (CC BY-SA, Wikimedia Commons).",
+  "cover_caption": "Shimmering 10th-century gold-leaf arabesque mosaics and carved marble horseshoe arches of the Islamic Golden Age.",
   "enquiry": "Why was the Round City of Baghdad a world crossroads of trade, books, mathematics, and medicine around AD 900?",
   "enquiry_question": "Why was the Round City of Baghdad a world crossroads of trade, books, mathematics, and medicine around AD 900?",
   "workbooks": [
@@ -53,7 +53,7 @@ window.UNIT_DATA = {
       "banner_position": "center 35%",
       "card_position": "center 35%",
       "teacher_notes": {
-        "primer": "This opening Key Stage 2 enquiry introduces the rapid spread of early Islam from Mecca and Medina across Damascus, Cairo, Persia, and Spain before focusing on Abbasid Caliph al-Mansur’s decision to found Baghdad in AD 762. Primary pupils investigate why the fertile bend between the Tigris and Euphrates was a Silk Road crossroads, how 100,000 bricklayers built the 2km circular Round City (*Madinat al-Salam*), and how Baghdad’s nearly one million citizens around AD 900 contrasted starkly with Anglo-Saxon Britain’s small timber towns of 5,000–10,000 people.",
+        "primer": "This opening Key Stage 2 enquiry introduces the rapid spread of early Islam from Arabia before focusing on Abbasid Caliph al-Mansur’s decision to found Baghdad in AD 762. Primary pupils investigate why the fertile bend between the Tigris and Euphrates was a Silk Road crossroads, how 100,000 bricklayers built the 2km circular Round City (Madinat al-Salam), and how Baghdad’s nearly one million citizens around AD 900 contrasted starkly with Anglo-Saxon Britain’s small timber towns of 5,000–10,000 people.",
         "objectives": [
           {
             "objective": "Locate Baghdad on the River Tigris and explain why Caliph al-Mansur chose this Silk Road crossroads in AD 762.",
@@ -72,10 +72,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Built in Jerusalem less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the rapidly growing early Islamic Empire. **Hinge Question:** Why did early Islamic architects decorate sacred buildings with dazzling geometric stars and calligraphy instead of statues of people?",
-          "Source B": "Before Baghdad was built in AD 762, Damascus in Syria served as the Umayyad capital while Islam spread rapidly west to Spain and east across Persia. **Hinge Question:** Why did Abbasid Caliph al-Mansur decide in AD 762 to move the empire’s capital east from Damascus to the River Tigris?",
-          "Source C": "Little stone lay near the River Tigris, so Caliph al-Mansur’s 100,000 builders baked millions of river-clay bricks to raise Baghdad’s double walls and guarded gates. **Hinge Question:** Why did builders in Baghdad use baked river-clay bricks instead of quarried stone blocks for their city walls and gates?",
-          "Source D": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road merchants from China to the Mediterranean while Anglo-Saxon villages mostly bartered local goods or used thin silver pennies. **Hinge Question:** What does finding Abbasid coins thousands of kilometres from Iraq prove about Baghdad’s reach as a trading crossroads?"
+          "Source A": "Built less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the growing early Islamic Empire. **Hinge Question:** Why did early Islamic architects decorate sacred buildings with dazzling geometric stars and calligraphy instead of statues of people?",
+          "Source B": "Before Baghdad was founded in AD 762, Damascus in Syria served as the earlier Islamic capital and welcomed worshippers into grand marble courtyards. **Hinge Question:** Why did Abbasid Caliph al-Mansur decide in AD 762 to build a brand-new capital further east on the River Tigris?",
+          "Source C": "Little stone lay near the River Tigris, so Baghdad’s 100,000 builders baked millions of river-clay bricks in hot kilns to raise thick city walls and guarded gates. **Hinge Question:** Why did builders in Baghdad use baked river-clay bricks instead of quarried stone blocks for their city walls and gates?",
+          "Source D": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road traders from China to the Mediterranean while Anglo-Saxon villages mostly swapped goods or used silver pennies. **Hinge Question:** What does finding Abbasid coins thousands of kilometres from Iraq prove about Baghdad’s reach as a trading crossroads?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -204,8 +204,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "AD 610–762: Rapid Spread of Early Islam & Choosing the River Tigris",
-          "text": "<span class=\"para-ref\">[1.1]</span> Beginning in **Mecca** and **Medina**, the faith of **Islam** spread swiftly across **Damascus**, **Cairo**, **Persia**, and **Spain**. In **AD 750**, the **Abbasid** family took charge of this vast empire, ruled by a **Caliph**. Twelve years later, in **AD 762**, **Caliph al-Mansur** searched for a safe, central place for his capital. He chose a fertile green bend on the **River Tigris**.<br><br><span class=\"para-ref\">[1.2]</span> Deep **canals** linked the **Tigris** straight to the **River Euphrates**, watering rich date palms and wheat fields. Round woven-reed **quffa** boats and river ships arrived carrying precious silk, spices, and porcelain. Camel caravans from China, India, and Africa also met at this busy crossroads. Al-Mansur knew peaceful trade would make his new city wealthy and strong.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Beginning in **Mecca** and **Medina**, the faith of **Islam** spread swiftly across **Damascus**, **Cairo**, **Persia**, and **Spain**. In **AD 750**, the **Abbasid** family took charge of this vast empire, ruled by a **Caliph**. Twelve years later, in **AD 762**, **Caliph al-Mansur** searched for a safe, central place for his capital. He chose a fertile green bend on the **River Tigris**.<br><br><span class=\"para-ref\">[1.2]</span> Deep **canals** linked the **Tigris** straight to the **River Euphrates**, watering rich date palms and wheat fields. Round woven-reed **quffa** boats and river ships arrived carrying precious silk, spices, and porcelain. Camel caravans from China, India, and Africa also met at this busy crossroads. Al-Mansur knew peaceful trade would make his new city wealthy and strong.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Beginning in **Arabia**, the faith of **Islam** spread swiftly across wide lands. In **AD 750**, the **Abbasid** [uh-BASS-id] family took charge of this empire, led by a **Caliph**. In **AD 762**, **Caliph al-Mansur** [al-man-SOOR] searched for a safe central spot for his **capital**. He chose a fertile green bend on the **River Tigris**.<br><br><span class=\"para-ref\">[1.2]</span> Deep **canals** linked the Tigris straight to the **River Euphrates**. Fresh water fed lush date palms and golden wheat fields. Round woven-reed **quffa** [KOOF-uh] boats brought silk and spices, while Silk Road camel caravans met there.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Beginning in **Arabia**, the faith of **Islam** spread swiftly across wide lands. In **AD 750**, the **Abbasid** [uh-BASS-id] family took charge of this empire, led by a **Caliph**. In **AD 762**, **Caliph al-Mansur** [al-man-SOOR] searched for a safe central spot for his **capital**. He chose a fertile green bend on the **River Tigris**.<br><br><span class=\"para-ref\">[1.2]</span> Deep **canals** linked the Tigris straight to the **River Euphrates**. Fresh water fed lush date palms and golden wheat fields. Round woven-reed **quffa** [KOOF-uh] boats brought silk and spices, while Silk Road camel caravans met there.",
           "image": "/units/ks2_early_islamic_baghdad/assets/quffa_round_boats_tigris_baghdad.jpg",
           "image_alt": "Traditional circular woven-reed quffa boats floating along the River Tigris in Baghdad",
           "caption": "Traditional round woven-reed quffa river boats on the River Tigris in Baghdad — a river craft used in Iraq since ancient times.",
@@ -216,8 +216,8 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "AD 762–766: 100,000 Builders & the Round City of Peace",
-          "text": "<span class=\"para-ref\">[1.3]</span> Caliph al-Mansur gathered **100,000 bricklayers**, diggers, and craftworkers from many lands to raise **Baghdad**. Architects first traced a giant circle **two kilometres** across in flaming cotton seeds to test the layout. Builders then baked millions of mud bricks to construct thick **double walls** and a deep moat. Al-Mansur proudly called his circular capital **Madinat al-Salam**, meaning the **City of Peace**.<br><br><span class=\"para-ref\">[1.4]</span> Four guarded iron gates pierced the walls, named **Kufa**, **Basra**, **Khorasan**, and **Syria** towards **Damascus**. Straight covered market streets ran from each gate towards an open central ring. Right at the heart stood the **Great Mosque** beside the **Green Dome Palace**, rising high above the Tigris.",
-          "content": "<span class=\"para-ref\">[1.3]</span> Caliph al-Mansur gathered **100,000 bricklayers**, diggers, and craftworkers from many lands to raise **Baghdad**. Architects first traced a giant circle **two kilometres** across in flaming cotton seeds to test the layout. Builders then baked millions of mud bricks to construct thick **double walls** and a deep moat. Al-Mansur proudly called his circular capital **Madinat al-Salam**, meaning the **City of Peace**.<br><br><span class=\"para-ref\">[1.4]</span> Four guarded iron gates pierced the walls, named **Kufa**, **Basra**, **Khorasan**, and **Syria** towards **Damascus**. Straight covered market streets ran from each gate towards an open central ring. Right at the heart stood the **Great Mosque** beside the **Green Dome Palace**, rising high above the Tigris.",
+          "text": "<span class=\"para-ref\">[1.3]</span> Al-Mansur gathered **100,000 bricklayers** and diggers to raise the circular **Round City** of **Baghdad**. Architects first traced a circle **two kilometres** wide in flaming cotton seeds! Builders then baked millions of mud bricks for thick **double walls** and a deep moat. Al-Mansur named his capital **Madinat al-Salam** [mah-DEE-nat al-sah-LAHM], meaning **City of Peace**.<br><br><span class=\"para-ref\">[1.4]</span> Four guarded iron gates pierced the walls, named **Kufa**, **Basra**, **Khorasan**, and **Syria**. Straight market streets led towards the open centre. Right at the heart stood the **Great Mosque** beside the **Green Dome Palace**.",
+          "content": "<span class=\"para-ref\">[1.3]</span> Al-Mansur gathered **100,000 bricklayers** and diggers to raise the circular **Round City** of **Baghdad**. Architects first traced a circle **two kilometres** wide in flaming cotton seeds! Builders then baked millions of mud bricks for thick **double walls** and a deep moat. Al-Mansur named his capital **Madinat al-Salam** [mah-DEE-nat al-sah-LAHM], meaning **City of Peace**.<br><br><span class=\"para-ref\">[1.4]</span> Four guarded iron gates pierced the walls, named **Kufa**, **Basra**, **Khorasan**, and **Syria**. Straight market streets led towards the open centre. Right at the heart stood the **Great Mosque** beside the **Green Dome Palace**.",
           "image": "/units/ks2_early_islamic_baghdad/assets/baghdad_round_city_silk_road_map_ks2.png",
           "image_alt": "Illustrated Key Stage 2 map showing Baghdad on the River Tigris along the Silk Roads with an inset plan of the Round City",
           "caption": "Key Stage 2 map of Baghdad at the crossroads of the Silk Roads, with an inset diagram of Caliph al-Mansur’s circular Round City.",
@@ -231,16 +231,16 @@ window.UNIT_DATA = {
               "type": "architecture",
               "src": "/units/ks2_early_islamic_baghdad/assets/dome_of_the_rock_gold_mosaics.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/dome_of_the_rock_gold_mosaics.jpg",
-              "title": "Source A: Golden Dome and Geometric Tilework of the Dome of the Rock, Jerusalem (AD 691)",
-              "caption": "Completed in AD 691, the Dome of the Rock in Jerusalem gleams with a gilded dome and intricate geometric and floral patterns.",
+              "title": "Source A: Golden Dome and Geometric Tilework of the Dome of the Rock (AD 691)",
+              "caption": "Completed in AD 691 in Jerusalem, the Dome of the Rock gleams with a gilded dome and colourful geometric and floral tilework.",
               "author": "Early Umayyad Architects & Mosaic Craftworkers",
               "date": "AD 691",
-              "context": "Built in Jerusalem less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the rapidly growing early Islamic Empire.",
-              "source_context": "Built in Jerusalem less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the rapidly growing early Islamic Empire.",
+              "context": "Built less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the growing early Islamic Empire.",
+              "source_context": "Built less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the growing early Islamic Empire. **Hinge Question:** Why did early Islamic architects decorate sacred buildings with dazzling geometric stars and calligraphy instead of statues of people?",
               "question_badge": "DOME OF THE ROCK",
               "question": "Look closely at Source A. What does this building show about early Islamic wealth and skill?",
-              "model_answer": "Source A shows that by AD 691 the early Islamic Empire already commanded rich trade wealth, master engineers who raised a giant gilded dome, and skilled artists creating mathematical tile and mosaic patterns.",
-              "provenance": "Dome of the Rock (Qubbat al-Sakhra), Jerusalem, completed AD 691 (exterior dome and tilework)."
+              "model_answer": "Source A shows that by AD 691 the early Islamic Empire already had rich trade wealth, clever engineers who raised a giant golden dome, and artists skilled in mathematical patterns.",
+              "provenance": "Exterior gilded dome and geometric tilework of the Dome of the Rock in Jerusalem (completed AD 691)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l1_src_b",
@@ -249,28 +249,28 @@ window.UNIT_DATA = {
               "type": "architecture",
               "src": "/units/ks2_early_islamic_baghdad/assets/umayyad_mosque_courtyard_damascus.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/umayyad_mosque_courtyard_damascus.jpg",
-              "title": "Source B: Marble Courtyard and Double Arches of the Great Mosque of Damascus (AD 715)",
-              "caption": "The sunlit marble courtyard and two-storey stone arcades of the Great Mosque of Damascus in Syria, completed in AD 715.",
+              "title": "Source B: Marble Courtyard of the Great Mosque of Damascus (AD 715)",
+              "caption": "The sunlit marble courtyard and two-storey stone arches of the Great Mosque of Damascus in Syria, completed in AD 715.",
               "author": "Architects of Caliph al-Walid I in Damascus",
               "date": "AD 715",
-              "context": "Before Baghdad was built in AD 762, Damascus in Syria served as the Umayyad capital while Islam spread rapidly west to Spain and east across Persia.",
-              "source_context": "Before Baghdad was built in AD 762, Damascus in Syria served as the Umayyad capital while Islam spread rapidly west to Spain and east across Persia.",
+              "context": "Before Baghdad was founded in AD 762, Damascus in Syria served as the earlier Islamic capital and welcomed worshippers into grand marble courtyards.",
+              "source_context": "Before Baghdad was founded in AD 762, Damascus in Syria served as the earlier Islamic capital and welcomed worshippers into grand marble courtyards. **Hinge Question:** Why did Abbasid Caliph al-Mansur decide in AD 762 to build a brand-new capital further east on the River Tigris?",
               "question_badge": "GREAT MOSQUE OF DAMASCUS",
               "question": "How does Source B prove early Islamic cities built grand public spaces before Baghdad existed?",
-              "model_answer": "Built in AD 715, Source B’s huge polished marble courtyard and tall stone arches in Damascus show that early Islamic rulers were already creating peaceful, grand gathering places decades before Baghdad was founded.",
-              "provenance": "Courtyard and arcades of the Umayyad Great Mosque of Damascus, Syria (completed AD 715)."
+              "model_answer": "Completed in AD 715, Source B’s polished marble courtyard and tall arches in Damascus prove early Islamic builders were already creating grand public spaces decades before Baghdad.",
+              "provenance": "Marble courtyard and double stone arches of the Great Mosque of Damascus, Syria (completed AD 715)."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. AD 900: One Million Citizens vs Anglo-Saxon Britain",
-          "text": "<span class=\"para-ref\">[1.5]</span> Soon lively markets, bathhouses, and gardens spilled far beyond the original Round City walls. By **AD 900**, bustling Baghdad was home to nearly **one million people**! Residents strolled down **paved streets** beside cool **canals** and studied inside grand **libraries**.<br><br><span class=\"para-ref\">[1.6]</span> Meanwhile, life in **Anglo-Saxon Britain** around **AD 900** looked tiny by comparison. Even major English towns like **London** or **Winchester** held only **5,000 to 10,000 people**. Most British families lived inside smoky **timber huts** with thatched roofs along muddy lanes, showing how extraordinary Baghdad truly was!",
-          "content": "<span class=\"para-ref\">[1.5]</span> Soon lively markets, bathhouses, and gardens spilled far beyond the original Round City walls. By **AD 900**, bustling Baghdad was home to nearly **one million people**! Residents strolled down **paved streets** beside cool **canals** and studied inside grand **libraries**.<br><br><span class=\"para-ref\">[1.6]</span> Meanwhile, life in **Anglo-Saxon Britain** around **AD 900** looked tiny by comparison. Even major English towns like **London** or **Winchester** held only **5,000 to 10,000 people**. Most British families lived inside smoky **timber huts** with thatched roofs along muddy lanes, showing how extraordinary Baghdad truly was!",
+          "text": "<span class=\"para-ref\">[1.5]</span> Busy markets, bathhouses, and gardens soon spread beyond the Round City walls. By **AD 900**, bustling **Baghdad** was home to nearly **one million people**! Families strolled down **paved streets** beside cool **canals** and studied inside grand **libraries**.<br><br><span class=\"para-ref\">[1.6]</span> Meanwhile, towns in **Anglo-Saxon Britain** around **AD 900** looked tiny by comparison. Even major English towns like **London** or **Winchester** held only **5,000 to 10,000 people**. Most British families lived in smoky **timber huts** with thatched roofs. Muddy village lanes showed how huge Baghdad truly was!",
+          "content": "<span class=\"para-ref\">[1.5]</span> Busy markets, bathhouses, and gardens soon spread beyond the Round City walls. By **AD 900**, bustling **Baghdad** was home to nearly **one million people**! Families strolled down **paved streets** beside cool **canals** and studied inside grand **libraries**.<br><br><span class=\"para-ref\">[1.6]</span> Meanwhile, towns in **Anglo-Saxon Britain** around **AD 900** looked tiny by comparison. Even major English towns like **London** or **Winchester** held only **5,000 to 10,000 people**. Most British families lived in smoky **timber huts** with thatched roofs. Muddy village lanes showed how huge Baghdad truly was!",
           "image": "/units/ks2_early_islamic_baghdad/assets/abbasid_palace_muqarnas_arch_baghdad.jpg",
           "image_alt": "Intricately carved brick honeycomb muqarnas archway inside the medieval Abbasid Palace in Baghdad",
-          "caption": "Carved baked-brick honeycomb muqarnas vaulting inside the Abbasid Palace in Baghdad, showcasing master Islamic brickwork.",
-          "image_caption": "Carved baked-brick honeycomb muqarnas vaulting inside the Abbasid Palace in Baghdad, showcasing master Islamic brickwork.",
+          "caption": "Carved baked-brick honeycomb archway inside the medieval Abbasid Palace in Baghdad, showcasing master Islamic brickwork.",
+          "image_caption": "Carved baked-brick honeycomb archway inside the medieval Abbasid Palace in Baghdad, showcasing master Islamic brickwork.",
           "isReversed": false,
           "sources": [
             {
@@ -280,16 +280,16 @@ window.UNIT_DATA = {
               "type": "architecture",
               "src": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
-              "title": "Source C: Bab al-Wastani — Surviving Medieval Abbasid Brick City Gate in Baghdad",
-              "caption": "Bab al-Wastani, Baghdad’s surviving medieval Abbasid baked-brick fortification tower and arched gateway surrounded by a moat wall.",
+              "title": "Source C: Bab al-Wastani — Medieval Abbasid Brick Gate in Baghdad",
+              "caption": "Bab al-Wastani, Baghdad’s surviving medieval Abbasid baked-brick tower and arched gateway surrounded by a moat wall.",
               "author": "Abbasid Royal Bricklayers & Military Engineers, Baghdad",
               "date": "Medieval Abbasid Period (Baghdad)",
-              "context": "Little stone lay near the River Tigris, so Caliph al-Mansur’s 100,000 builders baked millions of river-clay bricks to raise Baghdad’s double walls and guarded gates.",
-              "source_context": "Little stone lay near the River Tigris, so Caliph al-Mansur’s 100,000 builders baked millions of river-clay bricks to raise Baghdad’s double walls and guarded gates.",
+              "context": "Little stone lay near the River Tigris, so Baghdad’s 100,000 builders baked millions of river-clay bricks in hot kilns to raise thick city walls and guarded gates.",
+              "source_context": "Little stone lay near the River Tigris, so Baghdad’s 100,000 builders baked millions of river-clay bricks in hot kilns to raise thick city walls and guarded gates. **Hinge Question:** Why did builders in Baghdad use baked river-clay bricks instead of quarried stone blocks for their city walls and gates?",
               "question_badge": "ABBASID BRICK CITY GATE",
               "question": "Inspect the brickwork and shape of Source C. How did gates like this protect Baghdad?",
-              "model_answer": "Source C’s thick baked-brick round tower, narrow guarded archway, and outer moat bridge controlled everyone entering Baghdad and shielded the capital against enemy attacks.",
-              "provenance": "Bab al-Wastani (also known as Bab al-Dhafar), surviving medieval Abbasid brick city gate in Baghdad, Iraq."
+              "model_answer": "Source C’s thick baked-brick round tower, narrow guarded archway, and outer moat bridge checked everyone entering Baghdad and protected the city from attack.",
+              "provenance": "Bab al-Wastani, surviving medieval Abbasid baked-brick city gate in Baghdad, Iraq."
             },
             {
               "id": "ks2_early_islamic_baghdad_l1_src_d",
@@ -298,16 +298,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/harun_al_rashid_gold_dinar.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/harun_al_rashid_gold_dinar.jpg",
-              "title": "Source D: Abbasid Gold Dinar Coin Minted Under Caliph Harun al-Rashid (AD 787)",
-              "caption": "A pure gold Abbasid dinar coin struck in AD 787 with neat Kufic Arabic inscriptions and no ruler portrait.",
+              "title": "Source D: Abbasid Gold Dinar Minted Under Harun al-Rashid (AD 787)",
+              "caption": "A pure gold Abbasid dinar coin struck in AD 787 with neat Arabic writing and no ruler’s portrait.",
               "author": "Abbasid Royal Mint under Caliph Harun al-Rashid",
               "date": "AD 787",
-              "context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road merchants from China to the Mediterranean while Anglo-Saxon villages mostly bartered local goods or used thin silver pennies.",
-              "source_context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road merchants from China to the Mediterranean while Anglo-Saxon villages mostly bartered local goods or used thin silver pennies.",
+              "context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road traders from China to the Mediterranean while Anglo-Saxon villages mostly swapped goods or used silver pennies.",
+              "source_context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road traders from China to the Mediterranean while Anglo-Saxon villages mostly swapped goods or used silver pennies. **Hinge Question:** What does finding Abbasid coins thousands of kilometres from Iraq prove about Baghdad’s reach as a trading crossroads?",
               "question_badge": "ABBASID GOLD DINAR",
               "question": "Look at the Arabic writing on Source D. Why did traders trust Abbasid gold dinars?",
-              "model_answer": "Merchants across Asia, Africa, and Europe trusted Abbasid gold dinars because the Caliph’s mint guaranteed pure, reliable gold stamped with clear Arabic religious inscriptions.",
-              "provenance": "Abbasid gold dinar minted during the reign of Caliph Harun al-Rashid, AH 171 / AD 787 (museum numismatic collection)."
+              "model_answer": "Merchants across Asia, Africa, and Europe trusted Abbasid gold dinars because the Caliph’s mint guaranteed pure, reliable gold stamped with clear Arabic religious verses.",
+              "provenance": "Pure gold Abbasid dinar coin minted under Caliph Harun al-Rashid (AD 787)."
             }
           ]
         }
@@ -320,16 +320,16 @@ window.UNIT_DATA = {
           "type": "architecture",
           "src": "/units/ks2_early_islamic_baghdad/assets/dome_of_the_rock_gold_mosaics.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/dome_of_the_rock_gold_mosaics.jpg",
-          "title": "Source A: Golden Dome and Geometric Tilework of the Dome of the Rock, Jerusalem (AD 691)",
-          "caption": "Completed in AD 691, the Dome of the Rock in Jerusalem gleams with a gilded dome and intricate geometric and floral patterns.",
+          "title": "Source A: Golden Dome and Geometric Tilework of the Dome of the Rock (AD 691)",
+          "caption": "Completed in AD 691 in Jerusalem, the Dome of the Rock gleams with a gilded dome and colourful geometric and floral tilework.",
           "author": "Early Umayyad Architects & Mosaic Craftworkers",
           "date": "AD 691",
-          "context": "Built in Jerusalem less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the rapidly growing early Islamic Empire.",
-          "source_context": "Built in Jerusalem less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the rapidly growing early Islamic Empire.",
+          "context": "Built less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the growing early Islamic Empire.",
+          "source_context": "Built less than sixty years after Prophet Muhammad died, the Dome of the Rock showed the wealth and mathematical artistry of the growing early Islamic Empire. **Hinge Question:** Why did early Islamic architects decorate sacred buildings with dazzling geometric stars and calligraphy instead of statues of people?",
           "question_badge": "DOME OF THE ROCK",
           "question": "Look closely at Source A. What does this building show about early Islamic wealth and skill?",
-          "model_answer": "Source A shows that by AD 691 the early Islamic Empire already commanded rich trade wealth, master engineers who raised a giant gilded dome, and skilled artists creating mathematical tile and mosaic patterns.",
-          "provenance": "Dome of the Rock (Qubbat al-Sakhra), Jerusalem, completed AD 691 (exterior dome and tilework)."
+          "model_answer": "Source A shows that by AD 691 the early Islamic Empire already had rich trade wealth, clever engineers who raised a giant golden dome, and artists skilled in mathematical patterns.",
+          "provenance": "Exterior gilded dome and geometric tilework of the Dome of the Rock in Jerusalem (completed AD 691)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l1_src_b",
@@ -338,16 +338,16 @@ window.UNIT_DATA = {
           "type": "architecture",
           "src": "/units/ks2_early_islamic_baghdad/assets/umayyad_mosque_courtyard_damascus.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/umayyad_mosque_courtyard_damascus.jpg",
-          "title": "Source B: Marble Courtyard and Double Arches of the Great Mosque of Damascus (AD 715)",
-          "caption": "The sunlit marble courtyard and two-storey stone arcades of the Great Mosque of Damascus in Syria, completed in AD 715.",
+          "title": "Source B: Marble Courtyard of the Great Mosque of Damascus (AD 715)",
+          "caption": "The sunlit marble courtyard and two-storey stone arches of the Great Mosque of Damascus in Syria, completed in AD 715.",
           "author": "Architects of Caliph al-Walid I in Damascus",
           "date": "AD 715",
-          "context": "Before Baghdad was built in AD 762, Damascus in Syria served as the Umayyad capital while Islam spread rapidly west to Spain and east across Persia.",
-          "source_context": "Before Baghdad was built in AD 762, Damascus in Syria served as the Umayyad capital while Islam spread rapidly west to Spain and east across Persia.",
+          "context": "Before Baghdad was founded in AD 762, Damascus in Syria served as the earlier Islamic capital and welcomed worshippers into grand marble courtyards.",
+          "source_context": "Before Baghdad was founded in AD 762, Damascus in Syria served as the earlier Islamic capital and welcomed worshippers into grand marble courtyards. **Hinge Question:** Why did Abbasid Caliph al-Mansur decide in AD 762 to build a brand-new capital further east on the River Tigris?",
           "question_badge": "GREAT MOSQUE OF DAMASCUS",
           "question": "How does Source B prove early Islamic cities built grand public spaces before Baghdad existed?",
-          "model_answer": "Built in AD 715, Source B’s huge polished marble courtyard and tall stone arches in Damascus show that early Islamic rulers were already creating peaceful, grand gathering places decades before Baghdad was founded.",
-          "provenance": "Courtyard and arcades of the Umayyad Great Mosque of Damascus, Syria (completed AD 715)."
+          "model_answer": "Completed in AD 715, Source B’s polished marble courtyard and tall arches in Damascus prove early Islamic builders were already creating grand public spaces decades before Baghdad.",
+          "provenance": "Marble courtyard and double stone arches of the Great Mosque of Damascus, Syria (completed AD 715)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l1_src_c",
@@ -356,16 +356,16 @@ window.UNIT_DATA = {
           "type": "architecture",
           "src": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
-          "title": "Source C: Bab al-Wastani — Surviving Medieval Abbasid Brick City Gate in Baghdad",
-          "caption": "Bab al-Wastani, Baghdad’s surviving medieval Abbasid baked-brick fortification tower and arched gateway surrounded by a moat wall.",
+          "title": "Source C: Bab al-Wastani — Medieval Abbasid Brick Gate in Baghdad",
+          "caption": "Bab al-Wastani, Baghdad’s surviving medieval Abbasid baked-brick tower and arched gateway surrounded by a moat wall.",
           "author": "Abbasid Royal Bricklayers & Military Engineers, Baghdad",
           "date": "Medieval Abbasid Period (Baghdad)",
-          "context": "Little stone lay near the River Tigris, so Caliph al-Mansur’s 100,000 builders baked millions of river-clay bricks to raise Baghdad’s double walls and guarded gates.",
-          "source_context": "Little stone lay near the River Tigris, so Caliph al-Mansur’s 100,000 builders baked millions of river-clay bricks to raise Baghdad’s double walls and guarded gates.",
+          "context": "Little stone lay near the River Tigris, so Baghdad’s 100,000 builders baked millions of river-clay bricks in hot kilns to raise thick city walls and guarded gates.",
+          "source_context": "Little stone lay near the River Tigris, so Baghdad’s 100,000 builders baked millions of river-clay bricks in hot kilns to raise thick city walls and guarded gates. **Hinge Question:** Why did builders in Baghdad use baked river-clay bricks instead of quarried stone blocks for their city walls and gates?",
           "question_badge": "ABBASID BRICK CITY GATE",
           "question": "Inspect the brickwork and shape of Source C. How did gates like this protect Baghdad?",
-          "model_answer": "Source C’s thick baked-brick round tower, narrow guarded archway, and outer moat bridge controlled everyone entering Baghdad and shielded the capital against enemy attacks.",
-          "provenance": "Bab al-Wastani (also known as Bab al-Dhafar), surviving medieval Abbasid brick city gate in Baghdad, Iraq."
+          "model_answer": "Source C’s thick baked-brick round tower, narrow guarded archway, and outer moat bridge checked everyone entering Baghdad and protected the city from attack.",
+          "provenance": "Bab al-Wastani, surviving medieval Abbasid baked-brick city gate in Baghdad, Iraq."
         },
         {
           "id": "ks2_early_islamic_baghdad_l1_src_d",
@@ -374,16 +374,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/harun_al_rashid_gold_dinar.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/harun_al_rashid_gold_dinar.jpg",
-          "title": "Source D: Abbasid Gold Dinar Coin Minted Under Caliph Harun al-Rashid (AD 787)",
-          "caption": "A pure gold Abbasid dinar coin struck in AD 787 with neat Kufic Arabic inscriptions and no ruler portrait.",
+          "title": "Source D: Abbasid Gold Dinar Minted Under Harun al-Rashid (AD 787)",
+          "caption": "A pure gold Abbasid dinar coin struck in AD 787 with neat Arabic writing and no ruler’s portrait.",
           "author": "Abbasid Royal Mint under Caliph Harun al-Rashid",
           "date": "AD 787",
-          "context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road merchants from China to the Mediterranean while Anglo-Saxon villages mostly bartered local goods or used thin silver pennies.",
-          "source_context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road merchants from China to the Mediterranean while Anglo-Saxon villages mostly bartered local goods or used thin silver pennies.",
+          "context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road traders from China to the Mediterranean while Anglo-Saxon villages mostly swapped goods or used silver pennies.",
+          "source_context": "Trusted for their pure gold weight, Abbasid dinars paid Silk Road traders from China to the Mediterranean while Anglo-Saxon villages mostly swapped goods or used silver pennies. **Hinge Question:** What does finding Abbasid coins thousands of kilometres from Iraq prove about Baghdad’s reach as a trading crossroads?",
           "question_badge": "ABBASID GOLD DINAR",
           "question": "Look at the Arabic writing on Source D. Why did traders trust Abbasid gold dinars?",
-          "model_answer": "Merchants across Asia, Africa, and Europe trusted Abbasid gold dinars because the Caliph’s mint guaranteed pure, reliable gold stamped with clear Arabic religious inscriptions.",
-          "provenance": "Abbasid gold dinar minted during the reign of Caliph Harun al-Rashid, AH 171 / AD 787 (museum numismatic collection)."
+          "model_answer": "Merchants across Asia, Africa, and Europe trusted Abbasid gold dinars because the Caliph’s mint guaranteed pure, reliable gold stamped with clear Arabic religious verses.",
+          "provenance": "Pure gold Abbasid dinar coin minted under Caliph Harun al-Rashid (AD 787)."
         }
       ],
       "causal_domino_spine": {
@@ -397,12 +397,12 @@ window.UNIT_DATA = {
             "title": "Fertile Bend on the River Tigris",
             "actor": "Caliph al-Mansur",
             "tag": "🌊 TIGRIS CROSSROADS",
-            "trigger": "After Islam spread from Mecca and Medina across Spain to Persia, Abbasid Caliph al-Mansur chose a fertile Tigris bend linked by canals to the Euphrates.",
+            "trigger": "After Islam spread rapidly from Arabia, Abbasid Caliph al-Mansur chose a fertile River Tigris bend linked by canals to the Euphrates.",
             "connective": "Waterways and Silk Road caravans brought rich food and trade to fund a planned capital.",
-            "question": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
-            "prose_hash": "4dda4e3417",
-            "questionHeading": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
-            "focusClue": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
+            "question": "Why did Caliph al-Mansur build his capital on the River Tigris?",
+            "prose_hash": "1e63e4cdec",
+            "questionHeading": "Why did Caliph al-Mansur build his capital on the River Tigris?",
+            "focusClue": "Why did Caliph al-Mansur build his capital on the River Tigris?",
             "dates": "AD 750–762",
             "paraRef": "[1.1]"
           },
@@ -416,7 +416,7 @@ window.UNIT_DATA = {
             "trigger": "100,000 builders baked millions of bricks for a 2km circular city (*Madinat al-Salam*) with double walls, four gates, the Great Mosque, and the Green Dome Palace.",
             "connective": "Peaceful security and busy trade drew merchants, craftworkers, and scholars from across the world.",
             "question": "How was the circular Round City of Baghdad designed and built?",
-            "prose_hash": "58b38409b6",
+            "prose_hash": "de893470b3",
             "questionHeading": "How was the circular Round City of Baghdad designed and built?",
             "focusClue": "How was the circular Round City of Baghdad designed and built?",
             "dates": "AD 762–766",
@@ -432,7 +432,7 @@ window.UNIT_DATA = {
             "trigger": "By AD 900, Baghdad held nearly one million people with paved streets, canals, and libraries, whereas Anglo-Saxon towns held 5,000–10,000 in timber huts.",
             "connective": "Turned Baghdad into the wealthiest, largest centre of learning in the western world.",
             "question": "How did Baghdad around AD 900 compare with towns in Anglo-Saxon Britain?",
-            "prose_hash": "d1f20555c0",
+            "prose_hash": "551663a713",
             "questionHeading": "How did Baghdad around AD 900 compare with towns in Anglo-Saxon Britain?",
             "focusClue": "How did Baghdad around AD 900 compare with towns in Anglo-Saxon Britain?",
             "dates": "c. AD 900",
@@ -443,8 +443,8 @@ window.UNIT_DATA = {
       "workbook_stages": [
         {
           "step": 1,
-          "heading": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
-          "focus_clue": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
+          "heading": "Why did Caliph al-Mansur build his capital on the River Tigris?",
+          "focus_clue": "Why did Caliph al-Mansur build his capital on the River Tigris?",
           "words": [
             {
               "term": "Caliph al-Mansur",
@@ -461,14 +461,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "In AD 762, <strong>Caliph al-Mansur</strong> chose a fertile bend on the <strong>River Tigris</strong> linked by deep <strong>canals</strong> to the Euphrates.",
           "title": "AD 610–762: Rapid Spread of Early Islam & Choosing the River Tigris",
-          "question": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
-          "questionHeading": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
-          "focusClue": "Why did Caliph al-Mansur choose the River Tigris for his capital in AD 762?",
+          "question": "Why did Caliph al-Mansur build his capital on the River Tigris?",
+          "questionHeading": "Why did Caliph al-Mansur build his capital on the River Tigris?",
+          "focusClue": "Why did Caliph al-Mansur build his capital on the River Tigris?",
           "date": "AD 610–762",
           "dates": "AD 610–762",
           "para_ref": "[1.1]",
           "paraRef": "[1.1]",
-          "prose_hash": "4dda4e3417"
+          "prose_hash": "1e63e4cdec"
         },
         {
           "step": 2,
@@ -497,7 +497,7 @@ window.UNIT_DATA = {
           "dates": "AD 762–766",
           "para_ref": "[1.3]",
           "paraRef": "[1.3]",
-          "prose_hash": "58b38409b6"
+          "prose_hash": "de893470b3"
         },
         {
           "step": 3,
@@ -526,7 +526,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 900",
           "para_ref": "[1.5]",
           "paraRef": "[1.5]",
-          "prose_hash": "d1f20555c0"
+          "prose_hash": "551663a713"
         }
       ],
       "tasks": [
@@ -615,78 +615,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Which Abbasid Caliph founded the circular Round City of Baghdad beside the River Tigris in AD 762?",
-          "q": "Which Abbasid Caliph founded the circular Round City of Baghdad beside the River Tigris in AD 762?",
+          "question": "In which year did the Abbasid family take charge of the Islamic Empire before founding Baghdad?",
+          "q": "In which year did the Abbasid family take charge of the Islamic Empire before founding Baghdad?",
           "options": [
-            "Caliph al-Mansur",
-            "King Alfred the Great",
-            "Julius Caesar",
-            "Alexander the Great"
+            "AD 750",
+            "AD 410",
+            "AD 1066",
+            "AD 1258"
           ],
           "correct": 0,
-          "answer": "Caliph al-Mansur",
-          "a": "Caliph al-Mansur",
-          "explanation": "Abbasid Caliph al-Mansur chose a fertile bend on the River Tigris in AD 762 and hired 100,000 workers to build Baghdad."
+          "answer": "AD 750",
+          "a": "AD 750",
+          "explanation": "In AD 750, the Abbasid ruling family took charge of the vast Islamic Empire led by a Caliph."
         },
         {
           "stage": 1,
-          "question": "What did Baghdad’s official Arabic name, Madinat al-Salam, mean in English?",
-          "q": "What did Baghdad’s official Arabic name, Madinat al-Salam, mean in English?",
+          "question": "Which Abbasid Caliph chose a fertile bend on the River Tigris in AD 762 to build Baghdad?",
+          "q": "Which Abbasid Caliph chose a fertile bend on the River Tigris in AD 762 to build Baghdad?",
           "options": [
-            "Mountain of Iron",
-            "City of Peace",
-            "Island of Ice",
-            "Valley of Kings"
+            "Caliph Harun al-Rashid",
+            "Caliph al-Mansur",
+            "King Offa of Mercia",
+            "Hulagu Khan"
           ],
           "correct": 1,
-          "answer": "City of Peace",
-          "a": "City of Peace",
-          "explanation": "Caliph al-Mansur officially named his planned circular capital Madinat al-Salam, meaning the \"City of Peace\"."
+          "answer": "Caliph al-Mansur",
+          "a": "Caliph al-Mansur",
+          "explanation": "Twelve years after AD 750, in AD 762, Caliph al-Mansur founded his new capital beside the River Tigris."
+        },
+        {
+          "stage": 1,
+          "question": "Which second great river was linked to the River Tigris by deep human-made canals?",
+          "q": "Which second great river was linked to the River Tigris by deep human-made canals?",
+          "options": [
+            "The River Nile",
+            "The River Thames",
+            "The River Euphrates",
+            "The River Indus"
+          ],
+          "correct": 2,
+          "answer": "The River Euphrates",
+          "a": "The River Euphrates",
+          "explanation": "Deep canals connected the River Tigris straight to the nearby River Euphrates, watering wheat fields and date palms."
+        },
+        {
+          "stage": 1,
+          "question": "What were the traditional circular woven-reed boats floating along the River Tigris in Baghdad called?",
+          "q": "What were the traditional circular woven-reed boats floating along the River Tigris in Baghdad called?",
+          "options": [
+            "Triremes",
+            "Longships",
+            "Galleons",
+            "Quffa boats"
+          ],
+          "correct": 3,
+          "answer": "Quffa boats",
+          "a": "Quffa boats",
+          "explanation": "Round woven-reed quffa boats carried cargos of silk, spices, and bowls smoothly along the River Tigris."
+        },
+        {
+          "stage": 1,
+          "question": "In which region did the faith of Islam begin before spreading across a vast empire?",
+          "q": "In which region did the faith of Islam begin before spreading across a vast empire?",
+          "options": [
+            "Arabia",
+            "Scandinavia",
+            "Britain",
+            "Macedon"
+          ],
+          "correct": 0,
+          "answer": "Arabia",
+          "a": "Arabia",
+          "explanation": "Beginning in Arabia, early Islam spread swiftly across wide lands before the Abbasids built Baghdad."
         },
         {
           "stage": 2,
-          "question": "Which two buildings stood right at the very centre of the two-kilometre Round City of Baghdad?",
-          "q": "Which two buildings stood right at the very centre of the two-kilometre Round City of Baghdad?",
+          "question": "Roughly how many bricklayers, diggers, and craftworkers did Caliph al-Mansur gather to build Baghdad?",
+          "q": "Roughly how many bricklayers, diggers, and craftworkers did Caliph al-Mansur gather to build Baghdad?",
           "options": [
-            "A Roman amphitheatre and bathhouse",
-            "A stone pyramid and lighthouse",
-            "The Great Mosque and the Green Dome Palace",
-            "A Viking longhall and shipyard"
+            "About 500 workers",
+            "100,000 workers",
+            "2,000 workers",
+            "Ten million workers"
+          ],
+          "correct": 1,
+          "answer": "100,000 workers",
+          "a": "100,000 workers",
+          "explanation": "Caliph al-Mansur brought together 100,000 bricklayers, diggers, and craftworkers from many lands to raise the Round City."
+        },
+        {
+          "stage": 2,
+          "question": "How did architects trace the two-kilometre circular outline of Baghdad on the ground before building?",
+          "q": "How did architects trace the two-kilometre circular outline of Baghdad on the ground before building?",
+          "options": [
+            "With white chalk boulders",
+            "With iron railway tracks",
+            "With a ring of flaming cotton seeds",
+            "With painted wooden fences"
           ],
           "correct": 2,
+          "answer": "With a ring of flaming cotton seeds",
+          "a": "With a ring of flaming cotton seeds",
+          "explanation": "Architects traced a giant two-kilometre circle in cotton seeds and lit them at night so Caliph al-Mansur could see the exact plan!"
+        },
+        {
+          "stage": 2,
+          "question": "What did Baghdad’s official Arabic name, \"Madinat al-Salam\", mean in English?",
+          "q": "What did Baghdad’s official Arabic name, \"Madinat al-Salam\", mean in English?",
+          "options": [
+            "City of Gold",
+            "Fortress of Lions",
+            "Harbour of Spices",
+            "City of Peace"
+          ],
+          "correct": 3,
+          "answer": "City of Peace",
+          "a": "City of Peace",
+          "explanation": "Caliph al-Mansur named his circular capital Madinat al-Salam, which means \"City of Peace\" in Arabic."
+        },
+        {
+          "stage": 2,
+          "question": "Which two grand buildings stood right at the very centre of the circular Round City?",
+          "q": "Which two grand buildings stood right at the very centre of the circular Round City?",
+          "options": [
+            "The Great Mosque and the Green Dome Palace",
+            "The Parthenon and the Agora",
+            "The Pharos Lighthouse and the Great Library",
+            "A stone amphitheatre and a stadium"
+          ],
+          "correct": 0,
           "answer": "The Great Mosque and the Green Dome Palace",
           "a": "The Great Mosque and the Green Dome Palace",
-          "explanation": "Straight roads from the Kufa, Basra, Khorasan, and Syria gates led to the central park holding the Great Mosque and Green Dome Palace."
+          "explanation": "Right in the middle of the open central ring stood the Great Mosque beside Caliph al-Mansur’s towering Green Dome Palace."
+        },
+        {
+          "stage": 2,
+          "question": "Why did Baghdad’s builders make millions of baked river-clay bricks instead of cutting stone blocks?",
+          "q": "Why did Baghdad’s builders make millions of baked river-clay bricks instead of cutting stone blocks?",
+          "options": [
+            "Bricks floated on water",
+            "Little stone lay near the River Tigris, whereas rich river clay was plentiful",
+            "Caliph al-Mansur banned hammers and chisels",
+            "Mud bricks turned into pure gold in the sun"
+          ],
+          "correct": 1,
+          "answer": "Little stone lay near the River Tigris, whereas rich river clay was plentiful",
+          "a": "Little stone lay near the River Tigris, whereas rich river clay was plentiful",
+          "explanation": "Because rocky quarries were scarce along Iraq’s flat river plains, builders baked millions of strong mud bricks in kilns."
         },
         {
           "stage": 3,
-          "question": "Roughly how many people lived in Baghdad by AD 900 compared with major Anglo-Saxon towns in Britain?",
-          "q": "Roughly how many people lived in Baghdad by AD 900 compared with major Anglo-Saxon towns in Britain?",
+          "question": "By around AD 900, roughly how many people lived in bustling Baghdad?",
+          "q": "By around AD 900, roughly how many people lived in bustling Baghdad?",
           "options": [
-            "About 500 people in Baghdad vs 1,000,000 in Britain",
-            "About 5,000 people in both places",
-            "Nobody lived outside the Round City walls",
-            "Nearly 1,000,000 in Baghdad vs 5,000–10,000 in big Anglo-Saxon towns"
+            "Around 2,000 people",
+            "Around 25,000 people",
+            "Nearly one million people",
+            "Over fifty million people"
           ],
-          "correct": 3,
-          "answer": "Nearly 1,000,000 in Baghdad vs 5,000–10,000 in big Anglo-Saxon towns",
-          "a": "Nearly 1,000,000 in Baghdad vs 5,000–10,000 in big Anglo-Saxon towns",
-          "explanation": "By AD 900, Baghdad held nearly one million citizens with paved streets and libraries, while large Anglo-Saxon towns held 5,000–10,000."
+          "correct": 2,
+          "answer": "Nearly one million people",
+          "a": "Nearly one million people",
+          "explanation": "By AD 900, Baghdad had grown far beyond its original round walls to hold nearly one million residents!"
         },
         {
-          "stage": 2,
-          "question": "Why were deep human-made canals between the River Tigris and River Euphrates so vital to Baghdad?",
-          "q": "Why were deep human-made canals between the River Tigris and River Euphrates so vital to Baghdad?",
+          "stage": 3,
+          "question": "Around AD 900, how many people lived in major Anglo-Saxon English towns like London or Winchester?",
+          "q": "Around AD 900, how many people lived in major Anglo-Saxon English towns like London or Winchester?",
           "options": [
-            "They froze solid for winter ice-skating",
-            "They watered rich farmland and let trading boats sail straight between both rivers",
-            "They kept woolly mammoths out of Iraq",
-            "They drained the North Sea around Britain"
+            "Half a million people",
+            "Two million people",
+            "Exactly one hundred people",
+            "Only 5,000 to 10,000 people"
+          ],
+          "correct": 3,
+          "answer": "Only 5,000 to 10,000 people",
+          "a": "Only 5,000 to 10,000 people",
+          "explanation": "Even big Anglo-Saxon burh towns like London or Winchester held only 5,000 to 10,000 residents around AD 900."
+        },
+        {
+          "stage": 3,
+          "question": "How did everyday homes and streets in Anglo-Saxon Britain contrast with Baghdad around AD 900?",
+          "q": "How did everyday homes and streets in Anglo-Saxon Britain contrast with Baghdad around AD 900?",
+          "options": [
+            "Most British families lived in smoky thatched timber huts along muddy lanes rather than paved brick streets",
+            "Anglo-Saxon towns had tall glass skyscrapers and underground trains",
+            "Baghdad had only wooden tents while London had marble palaces",
+            "Both places looked completely identical in size and materials"
+          ],
+          "correct": 0,
+          "answer": "Most British families lived in smoky thatched timber huts along muddy lanes rather than paved brick streets",
+          "a": "Most British families lived in smoky thatched timber huts along muddy lanes rather than paved brick streets",
+          "explanation": "While Baghdad boasted paved streets, canals, bathhouses, and libraries, most families in Britain lived in smoky thatched timber huts."
+        },
+        {
+          "stage": 3,
+          "question": "Inspect Source A. In which city and year was the gilded Dome of the Rock completed?",
+          "q": "Inspect Source A. In which city and year was the gilded Dome of the Rock completed?",
+          "options": [
+            "In London in AD 900",
+            "In Jerusalem in AD 691",
+            "In Fez in AD 859",
+            "In Toledo in AD 1258"
           ],
           "correct": 1,
-          "answer": "They watered rich farmland and let trading boats sail straight between both rivers",
-          "a": "They watered rich farmland and let trading boats sail straight between both rivers",
-          "explanation": "The canal network irrigated lush orchards and wheat fields while connecting river ships and round quffa boats to long-distance trade."
+          "answer": "In Jerusalem in AD 691",
+          "a": "In Jerusalem in AD 691",
+          "explanation": "Completed in Jerusalem in AD 691, the Dome of the Rock showcased early Islamic geometric artistry decades before Baghdad."
+        },
+        {
+          "stage": 3,
+          "question": "Look at Source D. Why did Abbasid gold dinar coins carry neat Arabic writing instead of a king’s portrait?",
+          "q": "Look at Source D. Why did Abbasid gold dinar coins carry neat Arabic writing instead of a king’s portrait?",
+          "options": [
+            "No artist in Baghdad owned small chisels",
+            "Gold was too soft to stamp faces onto",
+            "Islamic coins honoured God with sacred Arabic inscriptions rather than ruler portraits",
+            "Only Viking coins were round"
+          ],
+          "correct": 2,
+          "answer": "Islamic coins honoured God with sacred Arabic inscriptions rather than ruler portraits",
+          "a": "Islamic coins honoured God with sacred Arabic inscriptions rather than ruler portraits",
+          "explanation": "Abbasid mints stamped pure gold dinars with crisp Arabic religious inscriptions rather than portraits of rulers."
         }
       ],
       "video": [
@@ -742,10 +892,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Once Islamic craftworkers learned paper-making from Chinese makers via Samarkand, smooth rag paper replaced expensive animal-skin parchment for sacred texts, poetry, and science books. **Hinge Question:** Why did switching from calfskin parchment to cotton-and-rag paper let Baghdad open over 100 bookshops?",
-          "Source B": "Inside Baghdad’s House of Wisdom, Christian physician Hunayn ibn Ishaq worked alongside Muslim and Jewish colleagues to translate Greek medical books by Galen and Hippocrates into clear Arabic. **Hinge Question:** What does Caliph al-Ma’mun hiring Christian, Jewish, and Muslim translators side by side reveal about Baghdad’s House of Wisdom?",
-          "Source C": "Positioned halfway between China and Persia, the Silk Road oasis of Samarkand became famous in the AD 750s for fine rag paper that soon inspired paper mills in Baghdad, Damascus, and Spain. **Hinge Question:** How did Silk Road cities like Samarkand carry life-changing inventions as well as luxury silk and spices?",
-          "Source D": "Building on Greek star catalogues translated into Arabic, astronomer al-Sufi observed the night sky himself to correct star positions and record the earliest note of the Andromeda Galaxy! **Hinge Question:** How does Source D prove Golden Age scholars tested and improved ancient Greek books rather than just copying them?"
+          "Source A": "Once Islamic craftworkers learned paper-making via Samarkand, smooth rag paper replaced costly animal-skin parchment for sacred texts, poetry, and science books. **Hinge Question:** Why did switching from calfskin parchment to cotton-and-rag paper let Baghdad open over 100 bookshops?",
+          "Source B": "Inside Baghdad’s House of Wisdom, Christian physician Hunayn ibn Ishaq worked beside Muslim and Jewish scholars to translate Greek medical books into clear Arabic. **Hinge Question:** What does Caliph al-Ma’mun hiring Christian, Jewish, and Muslim translators side by side reveal about Baghdad’s House of Wisdom?",
+          "Source C": "Positioned halfway between China and Persia along the Silk Roads, Samarkand became famous in the AD 750s for fine rag paper that inspired Baghdad’s paper mills. **Hinge Question:** How did Silk Road cities like Samarkand carry life-changing inventions as well as luxury silk and spices?",
+          "Source D": "Building on Greek star lists translated into Arabic, astronomer al-Sufi checked the night sky himself to fix star positions and note the Andromeda Galaxy! **Hinge Question:** How does Source D prove Golden Age scholars tested and improved ancient Greek books rather than just copying them?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -880,8 +1030,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. AD 786–833: Harun al-Rashid, Al-Ma’mun & the Paper Revolution",
-          "text": "<span class=\"para-ref\">[2.1]</span> Under **Caliph Harun al-Rashid** and his son **Caliph al-Ma'mun**, bustling Baghdad became a magnet for curious thinkers. Together they expanded a royal library into the famous **House of Wisdom**, or **Bayt al-Hikma**. Meanwhile, craftworkers via the Silk Road city of **Samarkand** learned the Chinese secret of **paper-making**. Baghdad watermills beat old cotton and linen rags into smooth, cheap sheets of paper.<br><br><span class=\"para-ref\">[2.2]</span> Across **Europe**, scribes still scraped costly **calfskin parchment**, needing whole cattle herds for one big book! Cheap rag paper transformed Baghdad and sparked over **100 bustling bookshops** in the **Paper Sellers' Market**. Readers browsed poetry, history, and star charts written in neat Arabic ink.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Under **Caliph Harun al-Rashid** and his son **Caliph al-Ma'mun**, bustling Baghdad became a magnet for curious thinkers. Together they expanded a royal library into the famous **House of Wisdom**, or **Bayt al-Hikma**. Meanwhile, craftworkers via the Silk Road city of **Samarkand** learned the Chinese secret of **paper-making**. Baghdad watermills beat old cotton and linen rags into smooth, cheap sheets of paper.<br><br><span class=\"para-ref\">[2.2]</span> Across **Europe**, scribes still scraped costly **calfskin parchment**, needing whole cattle herds for one big book! Cheap rag paper transformed Baghdad and sparked over **100 bustling bookshops** in the **Paper Sellers' Market**. Readers browsed poetry, history, and star charts written in neat Arabic ink.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Under **Caliph Harun al-Rashid** and his son **Caliph al-Ma'mun** [al-mah-MOON], Baghdad drew thinkers from afar. Together they expanded a royal library into the **House of Wisdom**, or **Bayt al-Hikma** [bayt al-HIK-mah]. Via the Silk Road city of **Samarkand**, craftworkers learned Chinese **paper-making**. Watermills beat old cotton and linen rags into smooth, cheap paper.<br><br><span class=\"para-ref\">[2.2]</span> Across **Europe**, scribes still scraped costly **calfskin parchment** from whole cattle herds! Cheap rag paper transformed Baghdad's **book markets**. Soon over **100 bookshops** buzzed in the **Paper Sellers' Market** with poetry and star charts.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Under **Caliph Harun al-Rashid** and his son **Caliph al-Ma'mun** [al-mah-MOON], Baghdad drew thinkers from afar. Together they expanded a royal library into the **House of Wisdom**, or **Bayt al-Hikma** [bayt al-HIK-mah]. Via the Silk Road city of **Samarkand**, craftworkers learned Chinese **paper-making**. Watermills beat old cotton and linen rags into smooth, cheap paper.<br><br><span class=\"para-ref\">[2.2]</span> Across **Europe**, scribes still scraped costly **calfskin parchment** from whole cattle herds! Cheap rag paper transformed Baghdad's **book markets**. Soon over **100 bookshops** buzzed in the **Paper Sellers' Market** with poetry and star charts.",
           "image": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg",
           "image_alt": "1237 Baghdad manuscript painting by Yahya al-Wasiti showing scholars discussing books beneath stacked library shelves",
           "caption": "A 1237 Baghdad painting by artist Yahya al-Wasiti showing eager scholars reading and debating beneath rows of stacked paper books.",
@@ -892,12 +1042,12 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "c. AD 830–900: The Translation Movement & Hunayn ibn Ishaq",
-          "text": "<span class=\"para-ref\">[2.3]</span> Caliph al-Ma'mun sent keen messengers to Constantinople, Persia, and India to buy rare ancient scrolls. Inside the House of Wisdom, this bold **Translation Movement** rescued fragile books before they crumbled away. **Muslim**, **Christian**, and **Jewish** scholars worked side by side translating **Greek**, **Persian**, and **Sanskrit** books into **Arabic**.<br><br><span class=\"para-ref\">[2.4]</span> The star translator was **Hunayn ibn Ishaq**, a gifted Christian doctor fluent in Greek, Syriac, and Arabic. Stories tell that Caliph al-Ma'mun paid Hunayn the weight of every finished medical book in gold! Crucially, Baghdad's scholars never copied old writers blindly. Instead, they tested every idea, fixed errors, and added fresh discoveries.",
-          "content": "<span class=\"para-ref\">[2.3]</span> Caliph al-Ma'mun sent keen messengers to Constantinople, Persia, and India to buy rare ancient scrolls. Inside the House of Wisdom, this bold **Translation Movement** rescued fragile books before they crumbled away. **Muslim**, **Christian**, and **Jewish** scholars worked side by side translating **Greek**, **Persian**, and **Sanskrit** books into **Arabic**.<br><br><span class=\"para-ref\">[2.4]</span> The star translator was **Hunayn ibn Ishaq**, a gifted Christian doctor fluent in Greek, Syriac, and Arabic. Stories tell that Caliph al-Ma'mun paid Hunayn the weight of every finished medical book in gold! Crucially, Baghdad's scholars never copied old writers blindly. Instead, they tested every idea, fixed errors, and added fresh discoveries.",
+          "text": "<span class=\"para-ref\">[2.3]</span> Al-Ma'mun sent messengers to buy rare ancient scrolls from Greece, Persia, and India. Inside the House of Wisdom, the **Translation Movement** rescued fragile books before they crumbled. **Muslim**, **Christian**, and **Jewish** scholars worked together turning **Greek**, **Persian**, and **Sanskrit** texts into **Arabic**.<br><br><span class=\"para-ref\">[2.4]</span> Their star translator was **Hunayn ibn Ishaq** [hoo-NAYN ib-in is-HAHK], a gifted Christian doctor. Stories say al-Ma'mun paid him the weight of every finished book in gold! Baghdad's scholars never copied old writers blindly. Instead, they tested every claim and fixed mistakes.",
+          "content": "<span class=\"para-ref\">[2.3]</span> Al-Ma'mun sent messengers to buy rare ancient scrolls from Greece, Persia, and India. Inside the House of Wisdom, the **Translation Movement** rescued fragile books before they crumbled. **Muslim**, **Christian**, and **Jewish** scholars worked together turning **Greek**, **Persian**, and **Sanskrit** texts into **Arabic**.<br><br><span class=\"para-ref\">[2.4]</span> Their star translator was **Hunayn ibn Ishaq** [hoo-NAYN ib-in is-HAHK], a gifted Christian doctor. Stories say al-Ma'mun paid him the weight of every finished book in gold! Baghdad's scholars never copied old writers blindly. Instead, they tested every claim and fixed mistakes.",
           "image": "/units/ks2_early_islamic_baghdad/assets/qarawiyyin_courtyard_fountain_fez.jpg",
           "image_alt": "Tiled courtyard, marble fountain, and carved arches of al-Qarawiyyin in Fez, founded by Fatima al-Fihri in AD 859",
-          "caption": "The serene courtyard and fountain of al-Qarawiyyin in Fez, Morocco — founded by patron Fatima al-Fihri in AD 859.",
-          "image_caption": "The serene courtyard and fountain of al-Qarawiyyin in Fez, Morocco — founded by patron Fatima al-Fihri in AD 859.",
+          "caption": "The peaceful courtyard and fountain of al-Qarawiyyin in Fez, Morocco — founded by patron Fatima al-Fihri in AD 859.",
+          "image_caption": "The peaceful courtyard and fountain of al-Qarawiyyin in Fez, Morocco — founded by patron Fatima al-Fihri in AD 859.",
           "isReversed": true,
           "sources": [
             {
@@ -907,16 +1057,16 @@ window.UNIT_DATA = {
               "type": "manuscript",
               "src": "/units/ks2_early_islamic_baghdad/assets/eleventh_century_kufic_quran_page.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/eleventh_century_kufic_quran_page.jpg",
-              "title": "Source A: 11th-Century Kufic Arabic Qur’an Page Written on Rag Paper With Gold Medallions",
-              "caption": "An 11th-century Qur’an page written in bold Kufic calligraphy on smooth rag paper and decorated with shimmering gold medallions.",
+              "title": "Source A: 11th-Century Arabic Qur’an Page on Rag Paper With Gold Medallions",
+              "caption": "An 11th-century Qur’an page written in bold Kufic calligraphy on smooth rag paper and decorated with shining gold medallions.",
               "author": "Master Calligrapher & Illuminator in the Eastern Islamic World",
               "date": "11th Century (c. AD 1000–1099)",
-              "context": "Once Islamic craftworkers learned paper-making from Chinese makers via Samarkand, smooth rag paper replaced expensive animal-skin parchment for sacred texts, poetry, and science books.",
-              "source_context": "Once Islamic craftworkers learned paper-making from Chinese makers via Samarkand, smooth rag paper replaced expensive animal-skin parchment for sacred texts, poetry, and science books.",
+              "context": "Once Islamic craftworkers learned paper-making via Samarkand, smooth rag paper replaced costly animal-skin parchment for sacred texts, poetry, and science books.",
+              "source_context": "Once Islamic craftworkers learned paper-making via Samarkand, smooth rag paper replaced costly animal-skin parchment for sacred texts, poetry, and science books. **Hinge Question:** Why did switching from calfskin parchment to cotton-and-rag paper let Baghdad open over 100 bookshops?",
               "question_badge": "PAPER QUR’AN MANUSCRIPT",
               "question": "Look closely at Source A. Why was rag paper a breakthrough compared with European parchment?",
-              "model_answer": "Cotton-and-rag paper in Source A was light, smooth for ink and gold leaf, and far quicker and cheaper to make than scraping hundreds of calfskins for parchment, making books affordable across Baghdad.",
-              "provenance": "11th-century Kufic Arabic Qur’an folio on paper with gold verse markers and marginal medallions (museum manuscript collection)."
+              "model_answer": "Cotton-and-rag paper in Source A was light, smooth for ink and gold leaf, and far cheaper to make than scraping animal skins for parchment, making books widely affordable.",
+              "provenance": "11th-century Kufic Arabic Qur’an page written on rag paper with gold medallions."
             },
             {
               "id": "ks2_early_islamic_baghdad_l2_src_b",
@@ -925,24 +1075,24 @@ window.UNIT_DATA = {
               "type": "manuscript",
               "src": "/units/ks2_early_islamic_baghdad/assets/hunayn_ibn_ishaq_galen_manuscript.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/hunayn_ibn_ishaq_galen_manuscript.jpg",
-              "title": "Source B: Medieval Arabic Manuscript Page From Translator Hunayn ibn Ishaq’s Medical Guide",
-              "caption": "An Arabic medical manuscript page preserving the work of Baghdad’s famous Christian scholar-translator Hunayn ibn Ishaq (AD 809–873).",
+              "title": "Source B: Arabic Medical Page From Translator Hunayn ibn Ishaq",
+              "caption": "An Arabic medical manuscript page preserving the work of Baghdad’s famous Christian doctor and translator Hunayn ibn Ishaq (AD 809–873).",
               "author": "Hunayn ibn Ishaq (Baghdad Translator & Physician, AD 809–873)",
               "date": "Original c. AD 850 (Medieval Arabic Manuscript Copy)",
-              "context": "Copied in clear Arabic script with geometric diagrams, this medieval medical manuscript comes from ninth-century Baghdad's famous Translation Movement.",
-              "source_context": "Copied in clear Arabic script with geometric diagrams, this medieval medical manuscript comes from ninth-century Baghdad's famous Translation Movement.",
+              "context": "Inside Baghdad’s House of Wisdom, Christian physician Hunayn ibn Ishaq worked beside Muslim and Jewish scholars to translate Greek medical books into clear Arabic.",
+              "source_context": "Inside Baghdad’s House of Wisdom, Christian physician Hunayn ibn Ishaq worked beside Muslim and Jewish scholars to translate Greek medical books into clear Arabic. **Hinge Question:** What does Caliph al-Ma’mun hiring Christian, Jewish, and Muslim translators side by side reveal about Baghdad’s House of Wisdom?",
               "question_badge": "HUNAYN IBN ISHAQ MEDICAL TEXT",
               "question": "Who wrote Source B, and how did his translations rescue ancient medical knowledge?",
-              "model_answer": "Source B comes from Hunayn ibn Ishaq, a Christian doctor in Baghdad who translated fragile Greek medical scrolls into clear Arabic and added careful diagrams and corrections so knowledge was saved and improved.",
-              "provenance": "Medieval Arabic manuscript leaf of Hunayn ibn Ishaq’s medical introduction based on Galen (library manuscript collection)."
+              "model_answer": "Source B comes from Hunayn ibn Ishaq, a Christian doctor in Baghdad who translated fragile Greek medical scrolls into clear Arabic and added helpful diagrams.",
+              "provenance": "Medieval Arabic medical manuscript page from Hunayn ibn Ishaq’s translation of Greek medicine."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. AD 800–900: Visionary Women Patrons — Fatima al-Fihri & Queen Zubayda",
-          "text": "<span class=\"para-ref\">[2.5]</span> Generous women across the Islamic world also shaped this Golden Age as visionary **patrons**. In **AD 859**, **Fatima al-Fihri** spent her family inheritance in the Moroccan city of **Fez**. She founded **al-Qarawiyyin**, a grand mosque and teaching college that still welcomes eager students today! Learners travelled to Fez to study mathematics, star maps, grammar, and law.<br><br><span class=\"para-ref\">[2.6]</span> Earlier in Baghdad, **Queen Zubayda**, wife of Harun al-Rashid, funded a giant desert water project. Thirsty pilgrims walking the scorching **Hajj road** to Mecca often ran low on fresh water. Zubayda paid stonemasons to dig deep **wells** and reservoirs along that trail, saving thousands of travellers!",
-          "content": "<span class=\"para-ref\">[2.5]</span> Generous women across the Islamic world also shaped this Golden Age as visionary **patrons**. In **AD 859**, **Fatima al-Fihri** spent her family inheritance in the Moroccan city of **Fez**. She founded **al-Qarawiyyin**, a grand mosque and teaching college that still welcomes eager students today! Learners travelled to Fez to study mathematics, star maps, grammar, and law.<br><br><span class=\"para-ref\">[2.6]</span> Earlier in Baghdad, **Queen Zubayda**, wife of Harun al-Rashid, funded a giant desert water project. Thirsty pilgrims walking the scorching **Hajj road** to Mecca often ran low on fresh water. Zubayda paid stonemasons to dig deep **wells** and reservoirs along that trail, saving thousands of travellers!",
+          "text": "<span class=\"para-ref\">[2.5]</span> Generous women also shaped the **Islamic Golden Age** as visionary **patrons** funding public works. In **AD 859**, **Fatima al-Fihri** spent her family wealth in **Fez**, Morocco. She founded **al-Qarawiyyin** [al-kah-rah-wee-YEEN], a grand mosque and teaching college. Students still gather there today to study maths, star maps, and law!<br><br><span class=\"para-ref\">[2.6]</span> Earlier in Baghdad, **Queen Zubayda** [zoo-BAY-dah], wife of Harun al-Rashid, planned a desert water lifeline. Thirsty pilgrims walking the hot **Hajj road** to **Mecca** needed water. Zubayda paid masons to dig stone **wells** and pools that saved thousands!",
+          "content": "<span class=\"para-ref\">[2.5]</span> Generous women also shaped the **Islamic Golden Age** as visionary **patrons** funding public works. In **AD 859**, **Fatima al-Fihri** spent her family wealth in **Fez**, Morocco. She founded **al-Qarawiyyin** [al-kah-rah-wee-YEEN], a grand mosque and teaching college. Students still gather there today to study maths, star maps, and law!<br><br><span class=\"para-ref\">[2.6]</span> Earlier in Baghdad, **Queen Zubayda** [zoo-BAY-dah], wife of Harun al-Rashid, planned a desert water lifeline. Thirsty pilgrims walking the hot **Hajj road** to **Mecca** needed water. Zubayda paid masons to dig stone **wells** and pools that saved thousands!",
           "image": "/units/ks2_early_islamic_baghdad/assets/house_of_wisdom_inventions_ks2.png",
           "image_alt": "Key Stage 2 illustrated diagram highlighting four Golden Age breakthroughs linked to Baghdad’s House of Wisdom",
           "caption": "Key Stage 2 summary diagram showing how paper, translation, star observation, and patronage powered Golden Age breakthroughs.",
@@ -956,16 +1106,16 @@ window.UNIT_DATA = {
               "type": "architecture",
               "src": "/units/ks2_early_islamic_baghdad/assets/samarkand_shah_i_zinda_domes.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/samarkand_shah_i_zinda_domes.jpg",
-              "title": "Source C: Turquoise Tiled Domes of Samarkand — The Silk Road Oasis Where Paper-Making Spread West",
-              "caption": "Glazed turquoise domes at Samarkand in Central Asia, the famous Silk Road oasis city through which Chinese paper-making reached Baghdad.",
+              "title": "Source C: Turquoise Tiled Domes of Samarkand on the Silk Road",
+              "caption": "Glazed turquoise domes at Samarkand in Central Asia, the Silk Road oasis city through which Chinese paper-making reached Baghdad.",
               "author": "Central Asian Master Builders & Tilemakers, Samarkand",
               "date": "Medieval Silk Road Monument, Samarkand",
-              "context": "Standing halfway between China and Persia along the overland Silk Roads, the ancient oasis city of Samarkand linked Chinese and Islamic craftworkers in the AD 750s.",
-              "source_context": "Standing halfway between China and Persia along the overland Silk Roads, the ancient oasis city of Samarkand linked Chinese and Islamic craftworkers in the AD 750s.",
+              "context": "Positioned halfway between China and Persia along the Silk Roads, Samarkand became famous in the AD 750s for fine rag paper that inspired Baghdad’s paper mills.",
+              "source_context": "Positioned halfway between China and Persia along the Silk Roads, Samarkand became famous in the AD 750s for fine rag paper that inspired Baghdad’s paper mills. **Hinge Question:** How did Silk Road cities like Samarkand carry life-changing inventions as well as luxury silk and spices?",
               "question_badge": "SAMARKAND SILK ROAD OASIS",
               "question": "What crucial craft reached Baghdad from China via the Silk Road city in Source C?",
-              "model_answer": "Through the Central Asian Silk Road oasis of Samarkand shown in Source C, Islamic craftworkers learned the Chinese secret of beating cotton and linen rags into smooth, cheap paper.",
-              "provenance": "Turquoise ribbed domes of the Shah-i-Zinda complex in Samarkand, Uzbekistan (historic Silk Road oasis)."
+              "model_answer": "Through the Silk Road oasis of Samarkand in Source C, craftworkers learned the Chinese secret of beating cotton and linen rags into smooth, affordable paper.",
+              "provenance": "Turquoise tiled domes of the historic Silk Road oasis city of Samarkand, Uzbekistan."
             },
             {
               "id": "ks2_early_islamic_baghdad_l2_src_d",
@@ -974,16 +1124,16 @@ window.UNIT_DATA = {
               "type": "manuscript",
               "src": "/units/ks2_early_islamic_baghdad/assets/al_sufi_orion_star_manuscript.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/al_sufi_orion_star_manuscript.jpg",
-              "title": "Source D: Astronomer Abd al-Rahman al-Sufi’s Arabic Book of Fixed Stars — Orion Page (AD 964)",
-              "caption": "Illustrated Arabic manuscript page from al-Sufi’s AD 964 Book of Fixed Stars, mapping the bright stars of the constellation Orion.",
+              "title": "Source D: Astronomer Al-Sufi’s Arabic Book of Fixed Stars (AD 964)",
+              "caption": "Illustrated Arabic page from astronomer al-Sufi’s AD 964 Book of Fixed Stars, mapping the bright stars of the constellation Orion.",
               "author": "Abd al-Rahman al-Sufi (Astronomer, AD 903–986)",
               "date": "AD 964 (Medieval Manuscript Copy)",
-              "context": "Building on Greek star catalogues translated into Arabic, astronomer al-Sufi observed the night sky himself to correct star positions and record the earliest note of the Andromeda Galaxy!",
-              "source_context": "Building on Greek star catalogues translated into Arabic, astronomer al-Sufi observed the night sky himself to correct star positions and record the earliest note of the Andromeda Galaxy!",
+              "context": "Building on Greek star lists translated into Arabic, astronomer al-Sufi checked the night sky himself to fix star positions and note the Andromeda Galaxy!",
+              "source_context": "Building on Greek star lists translated into Arabic, astronomer al-Sufi checked the night sky himself to fix star positions and note the Andromeda Galaxy! **Hinge Question:** How does Source D prove Golden Age scholars tested and improved ancient Greek books rather than just copying them?",
               "question_badge": "AL-SUFI STAR CHART",
               "question": "Inspect the red dots and Arabic labels on Source D. How did al-Sufi improve star maps?",
-              "model_answer": "Instead of blindly copying Greek star charts, al-Sufi checked the night sky himself, marking exact star positions and brightnesses with neat dots and giving stars Arabic names we still use today!",
-              "provenance": "Constellation of Orion (al-Jabbar) from Abd al-Rahman al-Sufi’s Kitab Suwar al-Kawakib (Book of Fixed Stars, AD 964)."
+              "model_answer": "Instead of copying old Greek charts blindly, al-Sufi observed the night sky himself, marking exact star positions and brightnesses and giving stars Arabic names used today!",
+              "provenance": "Constellation of Orion from Abd al-Rahman al-Sufi’s Arabic Book of Fixed Stars (AD 964)."
             }
           ]
         }
@@ -996,16 +1146,16 @@ window.UNIT_DATA = {
           "type": "manuscript",
           "src": "/units/ks2_early_islamic_baghdad/assets/eleventh_century_kufic_quran_page.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/eleventh_century_kufic_quran_page.jpg",
-          "title": "Source A: 11th-Century Kufic Arabic Qur’an Page Written on Rag Paper With Gold Medallions",
-          "caption": "An 11th-century Qur’an page written in bold Kufic calligraphy on smooth rag paper and decorated with shimmering gold medallions.",
+          "title": "Source A: 11th-Century Arabic Qur’an Page on Rag Paper With Gold Medallions",
+          "caption": "An 11th-century Qur’an page written in bold Kufic calligraphy on smooth rag paper and decorated with shining gold medallions.",
           "author": "Master Calligrapher & Illuminator in the Eastern Islamic World",
           "date": "11th Century (c. AD 1000–1099)",
-          "context": "Once Islamic craftworkers learned paper-making from Chinese makers via Samarkand, smooth rag paper replaced expensive animal-skin parchment for sacred texts, poetry, and science books.",
-          "source_context": "Once Islamic craftworkers learned paper-making from Chinese makers via Samarkand, smooth rag paper replaced expensive animal-skin parchment for sacred texts, poetry, and science books.",
+          "context": "Once Islamic craftworkers learned paper-making via Samarkand, smooth rag paper replaced costly animal-skin parchment for sacred texts, poetry, and science books.",
+          "source_context": "Once Islamic craftworkers learned paper-making via Samarkand, smooth rag paper replaced costly animal-skin parchment for sacred texts, poetry, and science books. **Hinge Question:** Why did switching from calfskin parchment to cotton-and-rag paper let Baghdad open over 100 bookshops?",
           "question_badge": "PAPER QUR’AN MANUSCRIPT",
           "question": "Look closely at Source A. Why was rag paper a breakthrough compared with European parchment?",
-          "model_answer": "Cotton-and-rag paper in Source A was light, smooth for ink and gold leaf, and far quicker and cheaper to make than scraping hundreds of calfskins for parchment, making books affordable across Baghdad.",
-          "provenance": "11th-century Kufic Arabic Qur’an folio on paper with gold verse markers and marginal medallions (museum manuscript collection)."
+          "model_answer": "Cotton-and-rag paper in Source A was light, smooth for ink and gold leaf, and far cheaper to make than scraping animal skins for parchment, making books widely affordable.",
+          "provenance": "11th-century Kufic Arabic Qur’an page written on rag paper with gold medallions."
         },
         {
           "id": "ks2_early_islamic_baghdad_l2_src_b",
@@ -1014,16 +1164,16 @@ window.UNIT_DATA = {
           "type": "manuscript",
           "src": "/units/ks2_early_islamic_baghdad/assets/hunayn_ibn_ishaq_galen_manuscript.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/hunayn_ibn_ishaq_galen_manuscript.jpg",
-          "title": "Source B: Medieval Arabic Manuscript Page From Translator Hunayn ibn Ishaq’s Medical Guide",
-          "caption": "An Arabic medical manuscript page preserving the work of Baghdad’s famous Christian scholar-translator Hunayn ibn Ishaq (AD 809–873).",
+          "title": "Source B: Arabic Medical Page From Translator Hunayn ibn Ishaq",
+          "caption": "An Arabic medical manuscript page preserving the work of Baghdad’s famous Christian doctor and translator Hunayn ibn Ishaq (AD 809–873).",
           "author": "Hunayn ibn Ishaq (Baghdad Translator & Physician, AD 809–873)",
           "date": "Original c. AD 850 (Medieval Arabic Manuscript Copy)",
-          "context": "Copied in clear Arabic script with geometric diagrams, this medieval medical manuscript comes from ninth-century Baghdad's famous Translation Movement.",
-          "source_context": "Copied in clear Arabic script with geometric diagrams, this medieval medical manuscript comes from ninth-century Baghdad's famous Translation Movement.",
+          "context": "Inside Baghdad’s House of Wisdom, Christian physician Hunayn ibn Ishaq worked beside Muslim and Jewish scholars to translate Greek medical books into clear Arabic.",
+          "source_context": "Inside Baghdad’s House of Wisdom, Christian physician Hunayn ibn Ishaq worked beside Muslim and Jewish scholars to translate Greek medical books into clear Arabic. **Hinge Question:** What does Caliph al-Ma’mun hiring Christian, Jewish, and Muslim translators side by side reveal about Baghdad’s House of Wisdom?",
           "question_badge": "HUNAYN IBN ISHAQ MEDICAL TEXT",
           "question": "Who wrote Source B, and how did his translations rescue ancient medical knowledge?",
-          "model_answer": "Source B comes from Hunayn ibn Ishaq, a Christian doctor in Baghdad who translated fragile Greek medical scrolls into clear Arabic and added careful diagrams and corrections so knowledge was saved and improved.",
-          "provenance": "Medieval Arabic manuscript leaf of Hunayn ibn Ishaq’s medical introduction based on Galen (library manuscript collection)."
+          "model_answer": "Source B comes from Hunayn ibn Ishaq, a Christian doctor in Baghdad who translated fragile Greek medical scrolls into clear Arabic and added helpful diagrams.",
+          "provenance": "Medieval Arabic medical manuscript page from Hunayn ibn Ishaq’s translation of Greek medicine."
         },
         {
           "id": "ks2_early_islamic_baghdad_l2_src_c",
@@ -1032,16 +1182,16 @@ window.UNIT_DATA = {
           "type": "architecture",
           "src": "/units/ks2_early_islamic_baghdad/assets/samarkand_shah_i_zinda_domes.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/samarkand_shah_i_zinda_domes.jpg",
-          "title": "Source C: Turquoise Tiled Domes of Samarkand — The Silk Road Oasis Where Paper-Making Spread West",
-          "caption": "Glazed turquoise domes at Samarkand in Central Asia, the famous Silk Road oasis city through which Chinese paper-making reached Baghdad.",
+          "title": "Source C: Turquoise Tiled Domes of Samarkand on the Silk Road",
+          "caption": "Glazed turquoise domes at Samarkand in Central Asia, the Silk Road oasis city through which Chinese paper-making reached Baghdad.",
           "author": "Central Asian Master Builders & Tilemakers, Samarkand",
           "date": "Medieval Silk Road Monument, Samarkand",
-          "context": "Standing halfway between China and Persia along the overland Silk Roads, the ancient oasis city of Samarkand linked Chinese and Islamic craftworkers in the AD 750s.",
-          "source_context": "Standing halfway between China and Persia along the overland Silk Roads, the ancient oasis city of Samarkand linked Chinese and Islamic craftworkers in the AD 750s.",
+          "context": "Positioned halfway between China and Persia along the Silk Roads, Samarkand became famous in the AD 750s for fine rag paper that inspired Baghdad’s paper mills.",
+          "source_context": "Positioned halfway between China and Persia along the Silk Roads, Samarkand became famous in the AD 750s for fine rag paper that inspired Baghdad’s paper mills. **Hinge Question:** How did Silk Road cities like Samarkand carry life-changing inventions as well as luxury silk and spices?",
           "question_badge": "SAMARKAND SILK ROAD OASIS",
           "question": "What crucial craft reached Baghdad from China via the Silk Road city in Source C?",
-          "model_answer": "Through the Central Asian Silk Road oasis of Samarkand shown in Source C, Islamic craftworkers learned the Chinese secret of beating cotton and linen rags into smooth, cheap paper.",
-          "provenance": "Turquoise ribbed domes of the Shah-i-Zinda complex in Samarkand, Uzbekistan (historic Silk Road oasis)."
+          "model_answer": "Through the Silk Road oasis of Samarkand in Source C, craftworkers learned the Chinese secret of beating cotton and linen rags into smooth, affordable paper.",
+          "provenance": "Turquoise tiled domes of the historic Silk Road oasis city of Samarkand, Uzbekistan."
         },
         {
           "id": "ks2_early_islamic_baghdad_l2_src_d",
@@ -1050,16 +1200,16 @@ window.UNIT_DATA = {
           "type": "manuscript",
           "src": "/units/ks2_early_islamic_baghdad/assets/al_sufi_orion_star_manuscript.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/al_sufi_orion_star_manuscript.jpg",
-          "title": "Source D: Astronomer Abd al-Rahman al-Sufi’s Arabic Book of Fixed Stars — Orion Page (AD 964)",
-          "caption": "Illustrated Arabic manuscript page from al-Sufi’s AD 964 Book of Fixed Stars, mapping the bright stars of the constellation Orion.",
+          "title": "Source D: Astronomer Al-Sufi’s Arabic Book of Fixed Stars (AD 964)",
+          "caption": "Illustrated Arabic page from astronomer al-Sufi’s AD 964 Book of Fixed Stars, mapping the bright stars of the constellation Orion.",
           "author": "Abd al-Rahman al-Sufi (Astronomer, AD 903–986)",
           "date": "AD 964 (Medieval Manuscript Copy)",
-          "context": "Building on Greek star catalogues translated into Arabic, astronomer al-Sufi observed the night sky himself to correct star positions and record the earliest note of the Andromeda Galaxy!",
-          "source_context": "Building on Greek star catalogues translated into Arabic, astronomer al-Sufi observed the night sky himself to correct star positions and record the earliest note of the Andromeda Galaxy!",
+          "context": "Building on Greek star lists translated into Arabic, astronomer al-Sufi checked the night sky himself to fix star positions and note the Andromeda Galaxy!",
+          "source_context": "Building on Greek star lists translated into Arabic, astronomer al-Sufi checked the night sky himself to fix star positions and note the Andromeda Galaxy! **Hinge Question:** How does Source D prove Golden Age scholars tested and improved ancient Greek books rather than just copying them?",
           "question_badge": "AL-SUFI STAR CHART",
           "question": "Inspect the red dots and Arabic labels on Source D. How did al-Sufi improve star maps?",
-          "model_answer": "Instead of blindly copying Greek star charts, al-Sufi checked the night sky himself, marking exact star positions and brightnesses with neat dots and giving stars Arabic names we still use today!",
-          "provenance": "Constellation of Orion (al-Jabbar) from Abd al-Rahman al-Sufi’s Kitab Suwar al-Kawakib (Book of Fixed Stars, AD 964)."
+          "model_answer": "Instead of copying old Greek charts blindly, al-Sufi observed the night sky himself, marking exact star positions and brightnesses and giving stars Arabic names used today!",
+          "provenance": "Constellation of Orion from Abd al-Rahman al-Sufi’s Arabic Book of Fixed Stars (AD 964)."
         }
       ],
       "causal_domino_spine": {
@@ -1076,7 +1226,7 @@ window.UNIT_DATA = {
             "trigger": "Caliphs Harun al-Rashid and al-Ma’mun expanded the House of Wisdom while cotton-and-rag paper from Samarkand replaced costly parchment.",
             "connective": "Cheap, smooth paper made copying and sharing thousands of new Arabic books rapid and affordable.",
             "question": "How did Samarkand paper-making transform Baghdad’s book markets?",
-            "prose_hash": "4f14ad1fd5",
+            "prose_hash": "8f6dbbcc5a",
             "questionHeading": "How did Samarkand paper-making transform Baghdad’s book markets?",
             "focusClue": "How did Samarkand paper-making transform Baghdad’s book markets?",
             "dates": "c. AD 786–833",
@@ -1092,7 +1242,7 @@ window.UNIT_DATA = {
             "trigger": "Muslim, Christian, and Jewish scholars like Hunayn ibn Ishaq translated Greek, Persian, and Sanskrit books into Arabic and tested every claim.",
             "connective": "Rescued world science in one shared Arabic language and sparked fresh discoveries across Islamic lands.",
             "question": "How did the Translation Movement rescue and improve ancient world knowledge?",
-            "prose_hash": "6fc6afb51b",
+            "prose_hash": "a939116ae7",
             "questionHeading": "How did the Translation Movement rescue and improve ancient world knowledge?",
             "focusClue": "How did the Translation Movement rescue and improve ancient world knowledge?",
             "dates": "c. AD 830–900",
@@ -1108,7 +1258,7 @@ window.UNIT_DATA = {
             "trigger": "Fatima al-Fihri founded al-Qarawiyyin in Fez (AD 859), and Queen Zubayda built stone wells and reservoirs along the desert Hajj road.",
             "connective": "Spread higher education and safe travel routes right across the Islamic world.",
             "question": "How did Fatima al-Fihri and Queen Zubayda shape the Islamic Golden Age?",
-            "prose_hash": "defedd05c3",
+            "prose_hash": "faf6009679",
             "questionHeading": "How did Fatima al-Fihri and Queen Zubayda shape the Islamic Golden Age?",
             "focusClue": "How did Fatima al-Fihri and Queen Zubayda shape the Islamic Golden Age?",
             "dates": "c. AD 800–900",
@@ -1144,7 +1294,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 786–833",
           "para_ref": "[2.1]",
           "paraRef": "[2.1]",
-          "prose_hash": "4f14ad1fd5"
+          "prose_hash": "8f6dbbcc5a"
         },
         {
           "step": 2,
@@ -1173,7 +1323,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 830–900",
           "para_ref": "[2.3]",
           "paraRef": "[2.3]",
-          "prose_hash": "6fc6afb51b"
+          "prose_hash": "a939116ae7"
         },
         {
           "step": 3,
@@ -1202,7 +1352,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 800–900",
           "para_ref": "[2.5]",
           "paraRef": "[2.5]",
-          "prose_hash": "defedd05c3"
+          "prose_hash": "faf6009679"
         }
       ],
       "tasks": [
@@ -1291,78 +1441,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "What was Baghdad’s famous royal library and research academy called in English and Arabic?",
-          "q": "What was Baghdad’s famous royal library and research academy called in English and Arabic?",
+          "question": "Which two Abbasid Caliphs expanded Baghdad’s royal library into the famous House of Wisdom?",
+          "q": "Which two Abbasid Caliphs expanded Baghdad’s royal library into the famous House of Wisdom?",
           "options": [
-            "The House of Wisdom (Bayt al-Hikma)",
-            "The Hall of Shields (Valhalla)",
-            "The Stone Circle (Stonehenge)",
-            "The Tower of London"
+            "al-Mansur and Hulagu Khan",
+            "Harun al-Rashid and his son al-Ma’mun",
+            "Darius I and Xerxes",
+            "Offa and Alfred"
           ],
-          "correct": 0,
-          "answer": "The House of Wisdom (Bayt al-Hikma)",
-          "a": "The House of Wisdom (Bayt al-Hikma)",
-          "explanation": "Expanded by Caliphs Harun al-Rashid and al-Ma’mun, the House of Wisdom (Bayt al-Hikma) welcomed scholars and translators from many lands."
+          "correct": 1,
+          "answer": "Harun al-Rashid and his son al-Ma’mun",
+          "a": "Harun al-Rashid and his son al-Ma’mun",
+          "explanation": "Caliph Harun al-Rashid and his son Caliph al-Ma’mun expanded Baghdad’s royal collection into the world-famous House of Wisdom."
         },
         {
           "stage": 1,
-          "question": "Through which Central Asian Silk Road city did Chinese paper-making reach Baghdad, replacing costly European parchment?",
-          "q": "Through which Central Asian Silk Road city did Chinese paper-making reach Baghdad, replacing costly European parchment?",
+          "question": "What was the House of Wisdom called in Arabic?",
+          "q": "What was the House of Wisdom called in Arabic?",
+          "options": [
+            "Madinat al-Salam",
+            "Al-Andalus",
+            "Bayt al-Hikma",
+            "Bimaristan"
+          ],
+          "correct": 2,
+          "answer": "Bayt al-Hikma",
+          "a": "Bayt al-Hikma",
+          "explanation": "In Arabic, Baghdad’s famous library and research centre was called Bayt al-Hikma (\"House of Wisdom\")."
+        },
+        {
+          "stage": 1,
+          "question": "Through which Central Asian Silk Road city did Chinese paper-making reach the Islamic world?",
+          "q": "Through which Central Asian Silk Road city did Chinese paper-making reach the Islamic world?",
           "options": [
             "Winchester",
-            "Samarkand",
             "Athens",
-            "Rome"
+            "Toledo",
+            "Samarkand"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Samarkand",
           "a": "Samarkand",
-          "explanation": "Craftworkers via Samarkand taught Islamic mills how to beat cotton and linen rags into cheap, smooth paper, sparking over 100 bookshops in Baghdad."
+          "explanation": "Craftworkers learned the Chinese secret of rag paper-making through the Silk Road oasis city of Samarkand."
+        },
+        {
+          "stage": 1,
+          "question": "What materials did Baghdad’s watermills beat into smooth, cheap sheets of paper?",
+          "q": "What materials did Baghdad’s watermills beat into smooth, cheap sheets of paper?",
+          "options": [
+            "Old cotton and linen rags",
+            "Scraped cow and sheep skins",
+            "Crushed sea shells and sand",
+            "Thin sheets of hammered tin"
+          ],
+          "correct": 0,
+          "answer": "Old cotton and linen rags",
+          "a": "Old cotton and linen rags",
+          "explanation": "Beating recycled cotton and linen rags in watermills made smooth paper far cheaper than Europe’s scraped calfskin parchment."
+        },
+        {
+          "stage": 1,
+          "question": "How many lively bookshops sprang up in Baghdad’s Paper Sellers’ Market thanks to cheap rag paper?",
+          "q": "How many lively bookshops sprang up in Baghdad’s Paper Sellers’ Market thanks to cheap rag paper?",
+          "options": [
+            "Just two small stalls",
+            "Over 100 bookshops",
+            "Exactly twelve bookshops",
+            "Zero bookshops"
+          ],
+          "correct": 1,
+          "answer": "Over 100 bookshops",
+          "a": "Over 100 bookshops",
+          "explanation": "Affordable rag paper sparked a reading boom in Baghdad, with over 100 bookshops lining the Paper Sellers’ Market!"
         },
         {
           "stage": 2,
-          "question": "Who was Hunayn ibn Ishaq inside ninth-century Baghdad’s House of Wisdom?",
-          "q": "Who was Hunayn ibn Ishaq inside ninth-century Baghdad’s House of Wisdom?",
+          "question": "Which three ancient languages were translated into Arabic during the House of Wisdom’s Translation Movement?",
+          "q": "Which three ancient languages were translated into Arabic during the House of Wisdom’s Translation Movement?",
           "options": [
-            "A Viking sea captain",
-            "A Roman gladiator",
-            "A gifted Christian doctor who translated Greek medical books into Arabic",
-            "An Anglo-Saxon blacksmith"
+            "English, French, and German",
+            "Norse, Welsh, and Gaelic",
+            "Greek, Persian, and Sanskrit",
+            "Mayan, Aztec, and Inca"
           ],
           "correct": 2,
-          "answer": "A gifted Christian doctor who translated Greek medical books into Arabic",
-          "a": "A gifted Christian doctor who translated Greek medical books into Arabic",
-          "explanation": "Hunayn ibn Ishaq worked alongside Muslim and Jewish colleagues, translating Greek medical scrolls into clear Arabic and testing their ideas."
+          "answer": "Greek, Persian, and Sanskrit",
+          "a": "Greek, Persian, and Sanskrit",
+          "explanation": "Scholars translated rare ancient Greek, Persian, and Indian Sanskrit manuscripts into one shared Arabic scientific language."
         },
         {
-          "stage": 3,
-          "question": "What lasting centre of learning did Fatima al-Fihri found in Fez, Morocco, in AD 859?",
-          "q": "What lasting centre of learning did Fatima al-Fihri found in Fez, Morocco, in AD 859?",
+          "stage": 2,
+          "question": "Scholars of which faiths worked side by side inside Baghdad’s House of Wisdom?",
+          "q": "Scholars of which faiths worked side by side inside Baghdad’s House of Wisdom?",
           "options": [
-            "The Colosseum",
-            "Skara Brae",
-            "The Hanging Gardens",
-            "Al-Qarawiyyin mosque and teaching college"
+            "Only royal soldiers",
+            "Only visitors from Rome",
+            "Only desert camel drivers",
+            "Muslim, Christian, and Jewish scholars together"
           ],
           "correct": 3,
-          "answer": "Al-Qarawiyyin mosque and teaching college",
-          "a": "Al-Qarawiyyin mosque and teaching college",
-          "explanation": "Fatima al-Fihri used her family inheritance in AD 859 to build al-Qarawiyyin in Fez, which still welcomes students today!"
+          "answer": "Muslim, Christian, and Jewish scholars together",
+          "a": "Muslim, Christian, and Jewish scholars together",
+          "explanation": "Caliph al-Ma’mun welcomed Muslim, Christian, and Jewish scholars to translate and debate side by side."
+        },
+        {
+          "stage": 2,
+          "question": "Who was Baghdad’s star Christian doctor and translator, said to be paid the weight of his books in gold?",
+          "q": "Who was Baghdad’s star Christian doctor and translator, said to be paid the weight of his books in gold?",
+          "options": [
+            "Hunayn ibn Ishaq",
+            "Yahya al-Wasiti",
+            "Hulagu Khan",
+            "King Offa"
+          ],
+          "correct": 0,
+          "answer": "Hunayn ibn Ishaq",
+          "a": "Hunayn ibn Ishaq",
+          "explanation": "Christian physician Hunayn ibn Ishaq mastered Greek, Syriac, and Arabic to translate vital medical texts."
+        },
+        {
+          "stage": 2,
+          "question": "What did Baghdad’s scholars do instead of copying ancient writers blindly?",
+          "q": "What did Baghdad’s scholars do instead of copying ancient writers blindly?",
+          "options": [
+            "They burned every old scroll unread",
+            "They tested every claim, fixed mistakes, and added new discoveries",
+            "They locked books underground so nobody could read them",
+            "They translated books only into Norse runes"
+          ],
+          "correct": 1,
+          "answer": "They tested every claim, fixed mistakes, and added new discoveries",
+          "a": "They tested every claim, fixed mistakes, and added new discoveries",
+          "explanation": "As al-Sufi’s star chart (Source D) shows, Golden Age thinkers checked nature with their own eyes and corrected errors."
+        },
+        {
+          "stage": 2,
+          "question": "Inspect Source D from AD 964. How did astronomer Abd al-Rahman al-Sufi improve ancient Greek star maps?",
+          "q": "Inspect Source D from AD 964. How did astronomer Abd al-Rahman al-Sufi improve ancient Greek star maps?",
+          "options": [
+            "By inventing electric telescopes",
+            "By guessing star positions indoors at noon",
+            "By observing the night sky himself and recording the Andromeda Galaxy",
+            "By erasing every constellation"
+          ],
+          "correct": 2,
+          "answer": "By observing the night sky himself and recording the Andromeda Galaxy",
+          "a": "By observing the night sky himself and recording the Andromeda Galaxy",
+          "explanation": "Al-Sufi checked star brightnesses and positions first-hand in AD 964 and wrote the earliest record of the Andromeda Galaxy."
         },
         {
           "stage": 3,
-          "question": "How did Baghdad royal patron Queen Zubayda save thousands of travellers’ lives?",
-          "q": "How did Baghdad royal patron Queen Zubayda save thousands of travellers’ lives?",
+          "question": "What word describes a generous person who funds schools, libraries, hospitals, or public works?",
+          "q": "What word describes a generous person who funds schools, libraries, hospitals, or public works?",
           "options": [
-            "She built lighthouses in Scotland",
-            "She funded stone wells and water reservoirs along the scorching desert Hajj road to Mecca",
-            "She invented steam trains",
-            "She planted oak forests across Doggerland"
+            "A gladiator",
+            "A hoplite",
+            "A Viking",
+            "A patron"
+          ],
+          "correct": 3,
+          "answer": "A patron",
+          "a": "A patron",
+          "explanation": "Visionary women and rulers across the Islamic world acted as patrons who paid for mosques, colleges, and water supplies."
+        },
+        {
+          "stage": 3,
+          "question": "What famous centre of learning did Fatima al-Fihri found in Fez, Morocco, in AD 859?",
+          "q": "What famous centre of learning did Fatima al-Fihri found in Fez, Morocco, in AD 859?",
+          "options": [
+            "Al-Qarawiyyin mosque and teaching college",
+            "The Green Dome Palace",
+            "The Great Library of Alexandria",
+            "The Tower of London"
+          ],
+          "correct": 0,
+          "answer": "Al-Qarawiyyin mosque and teaching college",
+          "a": "Al-Qarawiyyin mosque and teaching college",
+          "explanation": "In AD 859, Fatima al-Fihri used her inheritance to found al-Qarawiyyin in Fez, which still teaches students today!"
+        },
+        {
+          "stage": 3,
+          "question": "How did Queen Zubayda of Baghdad help thousands of thirsty travellers?",
+          "q": "How did Queen Zubayda of Baghdad help thousands of thirsty travellers?",
+          "options": [
+            "By building wooden warships at Basra",
+            "By funding stone wells and water pools along the hot desert Hajj road to Mecca",
+            "By inventing brass astrolabes in Aleppo",
+            "By carving marble columns in Spain"
           ],
           "correct": 1,
-          "answer": "She funded stone wells and water reservoirs along the scorching desert Hajj road to Mecca",
-          "a": "She funded stone wells and water reservoirs along the scorching desert Hajj road to Mecca",
-          "explanation": "Queen Zubayda, wife of Harun al-Rashid, paid stonemasons to build deep wells and reservoirs all along the desert pilgrimage route to Mecca."
+          "answer": "By funding stone wells and water pools along the hot desert Hajj road to Mecca",
+          "a": "By funding stone wells and water pools along the hot desert Hajj road to Mecca",
+          "explanation": "Queen Zubayda paid stonemasons to dig deep wells and reservoirs right across the scorching desert pilgrimage trail to Mecca."
+        },
+        {
+          "stage": 3,
+          "question": "While Baghdad made rag paper, what expensive writing material did scribes in medieval Europe still use?",
+          "q": "While Baghdad made rag paper, what expensive writing material did scribes in medieval Europe still use?",
+          "options": [
+            "Baked clay tablets",
+            "Smooth silk ribbons",
+            "Scraped calfskin parchment",
+            "Pressed banana leaves"
+          ],
+          "correct": 2,
+          "answer": "Scraped calfskin parchment",
+          "a": "Scraped calfskin parchment",
+          "explanation": "European monasteries still scraped animal hides to make costly parchment, needing a whole herd of calves for one large book."
+        },
+        {
+          "stage": 3,
+          "question": "Which subjects travelled students study at Fatima al-Fihri’s college in Fez?",
+          "q": "Which subjects travelled students study at Fatima al-Fihri’s college in Fez?",
+          "options": [
+            "Chariot racing and spear throwing",
+            "Viking ship-building and runes",
+            "Coal mining and steam engines",
+            "Mathematics, star maps, grammar, and law"
+          ],
+          "correct": 3,
+          "answer": "Mathematics, star maps, grammar, and law",
+          "a": "Mathematics, star maps, grammar, and law",
+          "explanation": "Learners came from far and wide to al-Qarawiyyin in Fez to study mathematics, astronomy, grammar, and Islamic law."
         }
       ],
       "video": [
@@ -1418,10 +1718,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Working in Baghdad’s House of Wisdom, Muhammad al-Khwarizmi championed Hindu-Arabic numerals (0–9 including zero, *sifr*) and wrote *al-Jabr*, giving the world \"algebra\" and \"algorithm\". **Hinge Question:** Why is multiplying or dividing numbers like 408 by 12 so much easier with 0–9 and zero than with Roman numerals like CCCCVIII?",
-          "Source B": "Master makers — including the tenth-century female astronomer-craftworker Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers. **Hinge Question:** How could holding a pocket-sized brass astrolabe up to the stars help both sea captains and worshippers on land?",
-          "Source C": "Known in Europe as Abulcasis, surgeon al-Zahrawi drew over 200 precision surgical instruments so apprentice doctors knew the exact shape and safe use of every tool, alongside dissolving catgut stitches. **Hinge Question:** Why did al-Zahrawi draw clear pictures of all 200 surgical tools instead of only describing them in words?",
-          "Source D": "Every major Islamic *bimaristan* (free hospital) ran its own inspected pharmacy (*saydala*) where trained pharmacists measured syrups, balms, and herbal medicines in clean glazed jars. **Hinge Question:** Why was having a clean, inspected pharmacy right inside a free bimaristan hospital so helpful for sick patients?"
+          "Source A": "Working in Baghdad’s House of Wisdom, Muhammad al-Khwarizmi championed digits 0–9 (including zero, sifr) and wrote al-Jabr, giving us \"algebra\" and \"algorithm\". **Hinge Question:** Why is multiplying or dividing numbers like 408 by 12 so much easier with 0–9 and zero than with Roman numerals like CCCCVIII?",
+          "Source B": "Skilled makers — including tenth-century woman astronomer Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers. **Hinge Question:** How could holding a pocket-sized brass astrolabe up to the stars help both sea captains and worshippers on land?",
+          "Source C": "Surgeon al-Zahrawi drew over 200 metal surgical tools so trainee doctors knew the exact shape and safe use of every instrument, alongside dissolving catgut stitches. **Hinge Question:** Why did al-Zahrawi draw clear pictures of all 200 surgical tools instead of only describing them in words?",
+          "Source D": "Every major Islamic bimaristan (free hospital) ran its own inspected pharmacy where trained pharmacists measured syrups, balms, and herbal medicines. **Hinge Question:** Why was having a clean, inspected pharmacy right inside a free bimaristan hospital so helpful for sick patients?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -1556,24 +1856,24 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. AD 820–1206: Zero, Algebra, Astrolabes & the Elephant Clock",
-          "text": "<span class=\"para-ref\">[3.1]</span> Working in Baghdad's House of Wisdom, mathematician **Muhammad al-Khwarizmi** championed **Hindu-Arabic numerals** from **0 to 9**. Including **zero**, called **sifr** in Arabic, made big sums far clearer than clumsy Roman numerals! His landmark book **al-Jabr** gave the world **algebra**, while his own name gave us **algorithm**.<br><br><span class=\"para-ref\">[3.2]</span> Skilled makers like **Mariam al-Asturlabi** crafted intricate brass **astrolabes** engraved with star maps. Travellers held up an astrolabe to check prayer times, sail oceans, and find **Mecca**. Later, master engineer **al-Jazari** built his marvellous **Elephant Water Clock** to mark each half hour. Hidden water floats inside the elephant made mechanical figures whirl, chirp, and clash loud brass cymbals!",
-          "content": "<span class=\"para-ref\">[3.1]</span> Working in Baghdad's House of Wisdom, mathematician **Muhammad al-Khwarizmi** championed **Hindu-Arabic numerals** from **0 to 9**. Including **zero**, called **sifr** in Arabic, made big sums far clearer than clumsy Roman numerals! His landmark book **al-Jabr** gave the world **algebra**, while his own name gave us **algorithm**.<br><br><span class=\"para-ref\">[3.2]</span> Skilled makers like **Mariam al-Asturlabi** crafted intricate brass **astrolabes** engraved with star maps. Travellers held up an astrolabe to check prayer times, sail oceans, and find **Mecca**. Later, master engineer **al-Jazari** built his marvellous **Elephant Water Clock** to mark each half hour. Hidden water floats inside the elephant made mechanical figures whirl, chirp, and clash loud brass cymbals!",
+          "text": "<span class=\"para-ref\">[3.1]</span> In **Baghdad's** House of Wisdom, **Muhammad al-Khwarizmi** [al-kwah-RIZ-mee] championed **Hindu-Arabic numerals** from **0 to 9**. Using **zero**, called **sifr** [SIF-er], made big sums far easier than clumsy Roman numerals! His **maths** book **al-Jabr** gave us **algebra**, and his own name gave us **algorithm**.<br><br><span class=\"para-ref\">[3.2]</span> Makers like **Mariam al-Asturlabi** [al-as-toor-LAH-bee] crafted brass **astrolabes** to map bright stars. Travellers held them up to check prayer times, sail seas, and find **Mecca**. Engineer **al-Jazari** [al-jah-ZAH-ree] also built **clocks** like his **Elephant Water Clock**. Hidden floats clashed brass cymbals every half hour to advance **science**!",
+          "content": "<span class=\"para-ref\">[3.1]</span> In **Baghdad's** House of Wisdom, **Muhammad al-Khwarizmi** [al-kwah-RIZ-mee] championed **Hindu-Arabic numerals** from **0 to 9**. Using **zero**, called **sifr** [SIF-er], made big sums far easier than clumsy Roman numerals! His **maths** book **al-Jabr** gave us **algebra**, and his own name gave us **algorithm**.<br><br><span class=\"para-ref\">[3.2]</span> Makers like **Mariam al-Asturlabi** [al-as-toor-LAH-bee] crafted brass **astrolabes** to map bright stars. Travellers held them up to check prayer times, sail seas, and find **Mecca**. Engineer **al-Jazari** [al-jah-ZAH-ree] also built **clocks** like his **Elephant Water Clock**. Hidden floats clashed brass cymbals every half hour to advance **science**!",
           "image": "/units/ks2_early_islamic_baghdad/assets/al_jazari_elephant_water_clock.jpg",
           "image_alt": "Colourful medieval manuscript painting of al-Jazari’s mechanical Elephant Water Clock with figures and dragon levers",
-          "caption": "Engineer al-Jazari’s famous mechanical Elephant Water Clock, combining Indian, Greek, Chinese, and Islamic technology to strike every half hour.",
-          "image_caption": "Engineer al-Jazari’s famous mechanical Elephant Water Clock, combining Indian, Greek, Chinese, and Islamic technology to strike every half hour.",
+          "caption": "Engineer al-Jazari’s mechanical Elephant Water Clock, combining Indian, Greek, Chinese, and Islamic ideas to strike every half hour.",
+          "image_caption": "Engineer al-Jazari’s mechanical Elephant Water Clock, combining Indian, Greek, Chinese, and Islamic ideas to strike every half hour.",
           "isReversed": false,
           "sources": []
         },
         {
           "act": 2,
           "title": "c. AD 965–1040: Ibn al-Haytham’s Light Proof & Free Bimaristans",
-          "text": "<span class=\"para-ref\">[3.3]</span> For centuries, ancient Greek writers claimed invisible rays shot out of human eyes to see things. Scientist **Ibn al-Haytham** doubted that idea and tested light inside a pitch-dark room with a tiny pinhole. Inside his pinhole **camera obscura**, he proved that light travels in **straight lines** directly into our eyes! His careful experiments inspired modern cameras and eyeglasses.<br><br><span class=\"para-ref\">[3.4]</span> Islamic cities also opened free teaching hospitals called **bimaristans** for rich and poor citizens alike. Each **bimaristan** had separate **clean wards**, cooling fountains, and a stocked **pharmacy**. Patients even received clean clothes and pocket money to rest at home after recovering!",
-          "content": "<span class=\"para-ref\">[3.3]</span> For centuries, ancient Greek writers claimed invisible rays shot out of human eyes to see things. Scientist **Ibn al-Haytham** doubted that idea and tested light inside a pitch-dark room with a tiny pinhole. Inside his pinhole **camera obscura**, he proved that light travels in **straight lines** directly into our eyes! His careful experiments inspired modern cameras and eyeglasses.<br><br><span class=\"para-ref\">[3.4]</span> Islamic cities also opened free teaching hospitals called **bimaristans** for rich and poor citizens alike. Each **bimaristan** had separate **clean wards**, cooling fountains, and a stocked **pharmacy**. Patients even received clean clothes and pocket money to rest at home after recovering!",
+          "text": "<span class=\"para-ref\">[3.3]</span> Ancient Greek writers once claimed invisible rays shot out of human eyes to see! Scientist **Ibn al-Haytham** [IB-in al-HAY-thum] doubted that story and tested **light** carefully. Inside a dark room with a tiny hole, he built a pinhole **camera obscura**. He proved light travels in **straight lines** into our eyes, inspiring modern cameras!<br><br><span class=\"para-ref\">[3.4]</span> Islamic cities also built free teaching hospitals called **bimaristans** [bee-MAH-rih-stahnz] for rich and poor alike. Each **bimaristan** had **clean wards**, cool fountains, and a stocked **pharmacy**. Recovering patients even got clean clothes and pocket money to rest at home!",
+          "content": "<span class=\"para-ref\">[3.3]</span> Ancient Greek writers once claimed invisible rays shot out of human eyes to see! Scientist **Ibn al-Haytham** [IB-in al-HAY-thum] doubted that story and tested **light** carefully. Inside a dark room with a tiny hole, he built a pinhole **camera obscura**. He proved light travels in **straight lines** into our eyes, inspiring modern cameras!<br><br><span class=\"para-ref\">[3.4]</span> Islamic cities also built free teaching hospitals called **bimaristans** [bee-MAH-rih-stahnz] for rich and poor alike. Each **bimaristan** had **clean wards**, cool fountains, and a stocked **pharmacy**. Recovering patients even got clean clothes and pocket money to rest at home!",
           "image": "/units/ks2_early_islamic_baghdad/assets/nuri_bimaristan_hospital_portal.jpg",
           "image_alt": "Carved stone muqarnas entrance portal of the medieval Nuri Bimaristan teaching hospital",
-          "caption": "The carved stone muqarnas doorway of the medieval Nuri Bimaristan — a famous free teaching hospital and medical school.",
-          "image_caption": "The carved stone muqarnas doorway of the medieval Nuri Bimaristan — a famous free teaching hospital and medical school.",
+          "caption": "The carved stone doorway of the medieval Nuri Bimaristan — a famous free teaching hospital and medical school.",
+          "image_caption": "The carved stone doorway of the medieval Nuri Bimaristan — a famous free teaching hospital and medical school.",
           "isReversed": true,
           "sources": [
             {
@@ -1583,16 +1883,16 @@ window.UNIT_DATA = {
               "type": "manuscript",
               "src": "/units/ks2_early_islamic_baghdad/assets/al_khwarizmi_algebra_manuscript.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/al_khwarizmi_algebra_manuscript.jpg",
-              "title": "Source A: Arabic Manuscript Page From Muhammad al-Khwarizmi’s Kitab al-Jabr With Geometric Squares",
-              "caption": "A medieval Arabic manuscript page from al-Khwarizmi’s Kitab al-Jabr (c. AD 820), using neat geometric squares to prove algebra rules.",
+              "title": "Source A: Arabic Maths Page From Al-Khwarizmi’s Kitab al-Jabr",
+              "caption": "A medieval Arabic maths page from al-Khwarizmi’s book al-Jabr (c. AD 820), using neat squares to prove algebra rules.",
               "author": "Muhammad ibn Musa al-Khwarizmi (Baghdad Mathematician, c. AD 780–850)",
               "date": "c. AD 820 (Medieval Manuscript Copy)",
-              "context": "Written in Baghdad around AD 820 by mathematician Muhammad ibn Musa al-Khwarizmi, Kitab al-Jabr introduced step-by-step problem-solving with Hindu-Arabic numerals.",
-              "source_context": "Written in Baghdad around AD 820 by mathematician Muhammad ibn Musa al-Khwarizmi, Kitab al-Jabr introduced step-by-step problem-solving with Hindu-Arabic numerals.",
+              "context": "Working in Baghdad’s House of Wisdom, Muhammad al-Khwarizmi championed digits 0–9 (including zero, sifr) and wrote al-Jabr, giving us \"algebra\" and \"algorithm\".",
+              "source_context": "Working in Baghdad’s House of Wisdom, Muhammad al-Khwarizmi championed digits 0–9 (including zero, sifr) and wrote al-Jabr, giving us \"algebra\" and \"algorithm\". **Hinge Question:** Why is multiplying or dividing numbers like 408 by 12 so much easier with 0–9 and zero than with Roman numerals like CCCCVIII?",
               "question_badge": "AL-KHWARIZMI ALGEBRA PAGE",
               "question": "Which two everyday maths and computing words come directly from Source A’s author?",
-              "model_answer": "The title of al-Khwarizmi’s book al-Jabr gave us the word \"algebra\", and the Latin spelling of al-Khwarizmi’s own name gave us \"algorithm\" — the step-by-step rules inside every computer!",
-              "provenance": "Arabic manuscript folio from Muhammad ibn Musa al-Khwarizmi’s Kitab al-Mukhtasar fi Hisab al-Jabr wa-l-Muqabala (Bodleian / Oxford manuscript copy)."
+              "model_answer": "The title of al-Khwarizmi’s book al-Jabr gave us \"algebra\", and the Latin spelling of his own name gave us \"algorithm\" — the step-by-step rules inside computers!",
+              "provenance": "Arabic maths page from Muhammad al-Khwarizmi’s book al-Jabr (copied from his c. AD 820 Baghdad guide)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l3_src_b",
@@ -1601,28 +1901,28 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
-              "title": "Source B: Finely Engraved Islamic Brass Planispheric Astrolabe",
-              "caption": "An intricate medieval Islamic brass planispheric astrolabe with rotating star pointers used to calculate time, latitude, and direction.",
+              "title": "Source B: Engraved Medieval Islamic Brass Astrolabe",
+              "caption": "An engraved medieval Islamic flat brass star-map (astrolabe) with rotating star pointers used to find time and direction.",
               "author": "Medieval Islamic Brass Instrument Maker (Tradition of Mariam al-Asturlabi)",
               "date": "Medieval Islamic Golden Age",
-              "context": "Master makers — including the tenth-century female astronomer-craftworker Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers.",
-              "source_context": "Master makers — including the tenth-century female astronomer-craftworker Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers.",
+              "context": "Skilled makers — including tenth-century woman astronomer Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers.",
+              "source_context": "Skilled makers — including tenth-century woman astronomer Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers. **Hinge Question:** How could holding a pocket-sized brass astrolabe up to the stars help both sea captains and worshippers on land?",
               "question_badge": "BRASS STAR ASTROLABE",
               "question": "Look at the pointers and dials on Source B. Mention three jobs an astrolabe did.",
-              "model_answer": "By lining up Source B’s sights with the sun or bright stars and turning its engraved brass dial, users could tell the exact time, navigate across seas or deserts, and find the direction of Mecca for prayer.",
-              "provenance": "Engraved Islamic brass planispheric astrolabe with pierced star-pointer rete (museum history of science collection)."
+              "model_answer": "By lining up Source B with the sun or stars and turning its brass dial, travellers could tell the exact time, steer ships across seas, and find the direction of Mecca.",
+              "provenance": "Engraved medieval Islamic brass astrolabe with rotating star pointers."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. AD 900–1013: Master Doctors Al-Razi & Al-Zahrawi",
-          "text": "<span class=\"para-ref\">[3.5]</span> Before choosing a site for Baghdad's hospital, chief doctor **al-Razi** hung fresh meat across different districts. He picked the spot where the meat rotted slowest because the air there was cleanest! By writing careful bedside notes, al-Razi became the first doctor to distinguish **measles** from **smallpox**. Trained nurses served healthy meals while students learned on the wards.<br><br><span class=\"para-ref\">[3.6]</span> Far west in Spain, royal surgeon **al-Zahrawi** wrote a thirty-volume illustrated medical guide around **AD 1000**. He invented over **200 surgical tools**, including forceps, scalpels, and delicate bone saws still used today. Al-Zahrawi even discovered that **catgut stitches** dissolve safely inside the body as wounds heal!",
-          "content": "<span class=\"para-ref\">[3.5]</span> Before choosing a site for Baghdad's hospital, chief doctor **al-Razi** hung fresh meat across different districts. He picked the spot where the meat rotted slowest because the air there was cleanest! By writing careful bedside notes, al-Razi became the first doctor to distinguish **measles** from **smallpox**. Trained nurses served healthy meals while students learned on the wards.<br><br><span class=\"para-ref\">[3.6]</span> Far west in Spain, royal surgeon **al-Zahrawi** wrote a thirty-volume illustrated medical guide around **AD 1000**. He invented over **200 surgical tools**, including forceps, scalpels, and delicate bone saws still used today. Al-Zahrawi even discovered that **catgut stitches** dissolve safely inside the body as wounds heal!",
+          "text": "<span class=\"para-ref\">[3.5]</span> Before building Baghdad's hospital, chief doctor **al-Razi** [al-RAH-zee] hung fresh meat across town. He picked the spot where meat rotted slowest because the air was cleanest! Careful bedside notes helped al-Razi tell **measles** apart from **smallpox**. Trained nurses served healthy meals to help **sick people** recover.<br><br><span class=\"para-ref\">[3.6]</span> In Spain around **AD 1000**, royal surgeon **al-Zahrawi** [al-zah-RAH-wee] wrote an illustrated medical guide. He drew over **200 surgical tools**, including forceps, scalpels, and delicate bone saws. He also discovered **catgut stitches** that dissolved **safely** inside wounds as patients began to **heal**!",
+          "content": "<span class=\"para-ref\">[3.5]</span> Before building Baghdad's hospital, chief doctor **al-Razi** [al-RAH-zee] hung fresh meat across town. He picked the spot where meat rotted slowest because the air was cleanest! Careful bedside notes helped al-Razi tell **measles** apart from **smallpox**. Trained nurses served healthy meals to help **sick people** recover.<br><br><span class=\"para-ref\">[3.6]</span> In Spain around **AD 1000**, royal surgeon **al-Zahrawi** [al-zah-RAH-wee] wrote an illustrated medical guide. He drew over **200 surgical tools**, including forceps, scalpels, and delicate bone saws. He also discovered **catgut stitches** that dissolved **safely** inside wounds as patients began to **heal**!",
           "image": "/units/ks2_early_islamic_baghdad/assets/dioscorides_honey_medicine_baghdad.jpg",
           "image_alt": "1224 Baghdad manuscript illustration showing an Arab physician stirring honey medicine over a brazier",
-          "caption": "An AD 1224 Baghdad manuscript painting showing a physician carefully preparing soothing honey medicine for a patient.",
-          "image_caption": "An AD 1224 Baghdad manuscript painting showing a physician carefully preparing soothing honey medicine for a patient.",
+          "caption": "An AD 1224 Baghdad manuscript painting showing a doctor carefully preparing soothing honey medicine for a patient.",
+          "image_caption": "An AD 1224 Baghdad manuscript painting showing a doctor carefully preparing soothing honey medicine for a patient.",
           "isReversed": false,
           "sources": [
             {
@@ -1632,16 +1932,16 @@ window.UNIT_DATA = {
               "type": "manuscript",
               "src": "/units/ks2_early_islamic_baghdad/assets/al_zahrawi_surgical_tools_page.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/al_zahrawi_surgical_tools_page.jpg",
-              "title": "Source C: Illustrated Page of Surgical Tools From Al-Zahrawi’s Medical Encyclopedia (c. AD 1000)",
-              "caption": "Hand-drawn diagrams of scalpels, hooks, and forceps from royal surgeon al-Zahrawi’s AD 1000 surgical handbook in Córdoba, Spain.",
+              "title": "Source C: Illustrated Page of Surgical Tools From Al-Zahrawi (c. AD 1000)",
+              "caption": "Hand-drawn diagrams of scalpels, hooks, and forceps from surgeon al-Zahrawi’s AD 1000 medical guide in Córdoba, Spain.",
               "author": "Abu al-Qasim al-Zahrawi (Surgeon in Córdoba, AD 936–1013)",
               "date": "c. AD 1000 (Medieval Manuscript Copy)",
-              "context": "Known in Europe as Abulcasis, surgeon al-Zahrawi drew over 200 precision surgical instruments so apprentice doctors knew the exact shape and safe use of every tool, alongside dissolving catgut stitches.",
-              "source_context": "Known in Europe as Abulcasis, surgeon al-Zahrawi drew over 200 precision surgical instruments so apprentice doctors knew the exact shape and safe use of every tool, alongside dissolving catgut stitches.",
+              "context": "Surgeon al-Zahrawi drew over 200 metal surgical tools so trainee doctors knew the exact shape and safe use of every instrument, alongside dissolving catgut stitches.",
+              "source_context": "Surgeon al-Zahrawi drew over 200 metal surgical tools so trainee doctors knew the exact shape and safe use of every instrument, alongside dissolving catgut stitches. **Hinge Question:** Why did al-Zahrawi draw clear pictures of all 200 surgical tools instead of only describing them in words?",
               "question_badge": "AL-ZAHRAWI SURGICAL TOOLS",
               "question": "Inspect the tool drawings in Source C. How did al-Zahrawi make surgery safer?",
-              "model_answer": "Al-Zahrawi designed over 200 specialised metal tools — drawn clearly in Source C so smiths and trainee surgeons made no mistakes — and pioneered catgut stitches that dissolved harmlessly inside healing wounds.",
-              "provenance": "Illustrated surgical instruments folio from Book 30 of al-Zahrawi’s Kitab al-Tasrif (c. AD 1000)."
+              "model_answer": "Al-Zahrawi designed over 200 specialised metal tools — drawn clearly in Source C so trainee surgeons made no mistakes — and pioneered catgut stitches that dissolved safely.",
+              "provenance": "Illustrated surgical instruments page from Book 30 of al-Zahrawi’s medical guide (c. AD 1000)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l3_src_d",
@@ -1650,16 +1950,16 @@ window.UNIT_DATA = {
               "type": "manuscript",
               "src": "/units/ks2_early_islamic_baghdad/assets/dioscorides_herbal_pharmacy_baghdad.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/dioscorides_herbal_pharmacy_baghdad.jpg",
-              "title": "Source D: 1224 Baghdad Manuscript Painting of Doctors & Pharmacists Mixing Herbal Medicines",
-              "caption": "A colourful AD 1224 Baghdad manuscript illustration showing physicians and pharmacists measuring and heating herbal remedies in jars.",
+              "title": "Source D: 1224 Baghdad Painting of Doctors & Pharmacists Mixing Remedies",
+              "caption": "A colourful AD 1224 Baghdad manuscript painting showing doctors and pharmacists measuring and heating herbal remedies in clean jars.",
               "author": "Baghdad Medical Illustrator (Arabic Materia Medica, AD 1224)",
               "date": "AD 1224 (Baghdad)",
-              "context": "Every major Islamic *bimaristan* (free hospital) ran its own inspected pharmacy (*saydala*) where trained pharmacists measured syrups, balms, and herbal medicines in clean glazed jars.",
-              "source_context": "Every major Islamic *bimaristan* (free hospital) ran its own inspected pharmacy (*saydala*) where trained pharmacists measured syrups, balms, and herbal medicines in clean glazed jars.",
+              "context": "Every major Islamic bimaristan (free hospital) ran its own inspected pharmacy where trained pharmacists measured syrups, balms, and herbal medicines.",
+              "source_context": "Every major Islamic bimaristan (free hospital) ran its own inspected pharmacy where trained pharmacists measured syrups, balms, and herbal medicines. **Hinge Question:** Why was having a clean, inspected pharmacy right inside a free bimaristan hospital so helpful for sick patients?",
               "question_badge": "BAGHDAD HOSPITAL PHARMACY",
               "question": "What clues in Source D show that Baghdad’s pharmacies were carefully organised?",
-              "model_answer": "Source D shows trained pharmacists using neat rows of storage jars, bowls, and heating pots to measure exact doses of herbal remedies for hospital patients.",
-              "provenance": "Pharmacy scene from an Arabic manuscript of De Materia Medica copied and illustrated in Baghdad, Iraq, AD 1224."
+              "model_answer": "Source D shows trained pharmacists using neat rows of glazed storage jars, measuring bowls, and heating pots to prepare exact doses of medicine for hospital patients.",
+              "provenance": "Pharmacy scene from an Arabic herbal medicine book copied and painted in Baghdad, Iraq (AD 1224)."
             }
           ]
         }
@@ -1672,16 +1972,16 @@ window.UNIT_DATA = {
           "type": "manuscript",
           "src": "/units/ks2_early_islamic_baghdad/assets/al_khwarizmi_algebra_manuscript.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/al_khwarizmi_algebra_manuscript.jpg",
-          "title": "Source A: Arabic Manuscript Page From Muhammad al-Khwarizmi’s Kitab al-Jabr With Geometric Squares",
-          "caption": "A medieval Arabic manuscript page from al-Khwarizmi’s Kitab al-Jabr (c. AD 820), using neat geometric squares to prove algebra rules.",
+          "title": "Source A: Arabic Maths Page From Al-Khwarizmi’s Kitab al-Jabr",
+          "caption": "A medieval Arabic maths page from al-Khwarizmi’s book al-Jabr (c. AD 820), using neat squares to prove algebra rules.",
           "author": "Muhammad ibn Musa al-Khwarizmi (Baghdad Mathematician, c. AD 780–850)",
           "date": "c. AD 820 (Medieval Manuscript Copy)",
-          "context": "Written in Baghdad around AD 820 by mathematician Muhammad ibn Musa al-Khwarizmi, Kitab al-Jabr introduced step-by-step problem-solving with Hindu-Arabic numerals.",
-          "source_context": "Written in Baghdad around AD 820 by mathematician Muhammad ibn Musa al-Khwarizmi, Kitab al-Jabr introduced step-by-step problem-solving with Hindu-Arabic numerals.",
+          "context": "Working in Baghdad’s House of Wisdom, Muhammad al-Khwarizmi championed digits 0–9 (including zero, sifr) and wrote al-Jabr, giving us \"algebra\" and \"algorithm\".",
+          "source_context": "Working in Baghdad’s House of Wisdom, Muhammad al-Khwarizmi championed digits 0–9 (including zero, sifr) and wrote al-Jabr, giving us \"algebra\" and \"algorithm\". **Hinge Question:** Why is multiplying or dividing numbers like 408 by 12 so much easier with 0–9 and zero than with Roman numerals like CCCCVIII?",
           "question_badge": "AL-KHWARIZMI ALGEBRA PAGE",
           "question": "Which two everyday maths and computing words come directly from Source A’s author?",
-          "model_answer": "The title of al-Khwarizmi’s book al-Jabr gave us the word \"algebra\", and the Latin spelling of al-Khwarizmi’s own name gave us \"algorithm\" — the step-by-step rules inside every computer!",
-          "provenance": "Arabic manuscript folio from Muhammad ibn Musa al-Khwarizmi’s Kitab al-Mukhtasar fi Hisab al-Jabr wa-l-Muqabala (Bodleian / Oxford manuscript copy)."
+          "model_answer": "The title of al-Khwarizmi’s book al-Jabr gave us \"algebra\", and the Latin spelling of his own name gave us \"algorithm\" — the step-by-step rules inside computers!",
+          "provenance": "Arabic maths page from Muhammad al-Khwarizmi’s book al-Jabr (copied from his c. AD 820 Baghdad guide)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l3_src_b",
@@ -1690,16 +1990,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
-          "title": "Source B: Finely Engraved Islamic Brass Planispheric Astrolabe",
-          "caption": "An intricate medieval Islamic brass planispheric astrolabe with rotating star pointers used to calculate time, latitude, and direction.",
+          "title": "Source B: Engraved Medieval Islamic Brass Astrolabe",
+          "caption": "An engraved medieval Islamic flat brass star-map (astrolabe) with rotating star pointers used to find time and direction.",
           "author": "Medieval Islamic Brass Instrument Maker (Tradition of Mariam al-Asturlabi)",
           "date": "Medieval Islamic Golden Age",
-          "context": "Master makers — including the tenth-century female astronomer-craftworker Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers.",
-          "source_context": "Master makers — including the tenth-century female astronomer-craftworker Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers.",
+          "context": "Skilled makers — including tenth-century woman astronomer Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers.",
+          "source_context": "Skilled makers — including tenth-century woman astronomer Mariam al-Asturlabi in Aleppo — engraved rotating brass astrolabes that worked like pocket star computers. **Hinge Question:** How could holding a pocket-sized brass astrolabe up to the stars help both sea captains and worshippers on land?",
           "question_badge": "BRASS STAR ASTROLABE",
           "question": "Look at the pointers and dials on Source B. Mention three jobs an astrolabe did.",
-          "model_answer": "By lining up Source B’s sights with the sun or bright stars and turning its engraved brass dial, users could tell the exact time, navigate across seas or deserts, and find the direction of Mecca for prayer.",
-          "provenance": "Engraved Islamic brass planispheric astrolabe with pierced star-pointer rete (museum history of science collection)."
+          "model_answer": "By lining up Source B with the sun or stars and turning its brass dial, travellers could tell the exact time, steer ships across seas, and find the direction of Mecca.",
+          "provenance": "Engraved medieval Islamic brass astrolabe with rotating star pointers."
         },
         {
           "id": "ks2_early_islamic_baghdad_l3_src_c",
@@ -1708,16 +2008,16 @@ window.UNIT_DATA = {
           "type": "manuscript",
           "src": "/units/ks2_early_islamic_baghdad/assets/al_zahrawi_surgical_tools_page.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/al_zahrawi_surgical_tools_page.jpg",
-          "title": "Source C: Illustrated Page of Surgical Tools From Al-Zahrawi’s Medical Encyclopedia (c. AD 1000)",
-          "caption": "Hand-drawn diagrams of scalpels, hooks, and forceps from royal surgeon al-Zahrawi’s AD 1000 surgical handbook in Córdoba, Spain.",
+          "title": "Source C: Illustrated Page of Surgical Tools From Al-Zahrawi (c. AD 1000)",
+          "caption": "Hand-drawn diagrams of scalpels, hooks, and forceps from surgeon al-Zahrawi’s AD 1000 medical guide in Córdoba, Spain.",
           "author": "Abu al-Qasim al-Zahrawi (Surgeon in Córdoba, AD 936–1013)",
           "date": "c. AD 1000 (Medieval Manuscript Copy)",
-          "context": "Known in Europe as Abulcasis, surgeon al-Zahrawi drew over 200 precision surgical instruments so apprentice doctors knew the exact shape and safe use of every tool, alongside dissolving catgut stitches.",
-          "source_context": "Known in Europe as Abulcasis, surgeon al-Zahrawi drew over 200 precision surgical instruments so apprentice doctors knew the exact shape and safe use of every tool, alongside dissolving catgut stitches.",
+          "context": "Surgeon al-Zahrawi drew over 200 metal surgical tools so trainee doctors knew the exact shape and safe use of every instrument, alongside dissolving catgut stitches.",
+          "source_context": "Surgeon al-Zahrawi drew over 200 metal surgical tools so trainee doctors knew the exact shape and safe use of every instrument, alongside dissolving catgut stitches. **Hinge Question:** Why did al-Zahrawi draw clear pictures of all 200 surgical tools instead of only describing them in words?",
           "question_badge": "AL-ZAHRAWI SURGICAL TOOLS",
           "question": "Inspect the tool drawings in Source C. How did al-Zahrawi make surgery safer?",
-          "model_answer": "Al-Zahrawi designed over 200 specialised metal tools — drawn clearly in Source C so smiths and trainee surgeons made no mistakes — and pioneered catgut stitches that dissolved harmlessly inside healing wounds.",
-          "provenance": "Illustrated surgical instruments folio from Book 30 of al-Zahrawi’s Kitab al-Tasrif (c. AD 1000)."
+          "model_answer": "Al-Zahrawi designed over 200 specialised metal tools — drawn clearly in Source C so trainee surgeons made no mistakes — and pioneered catgut stitches that dissolved safely.",
+          "provenance": "Illustrated surgical instruments page from Book 30 of al-Zahrawi’s medical guide (c. AD 1000)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l3_src_d",
@@ -1726,16 +2026,16 @@ window.UNIT_DATA = {
           "type": "manuscript",
           "src": "/units/ks2_early_islamic_baghdad/assets/dioscorides_herbal_pharmacy_baghdad.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/dioscorides_herbal_pharmacy_baghdad.jpg",
-          "title": "Source D: 1224 Baghdad Manuscript Painting of Doctors & Pharmacists Mixing Herbal Medicines",
-          "caption": "A colourful AD 1224 Baghdad manuscript illustration showing physicians and pharmacists measuring and heating herbal remedies in jars.",
+          "title": "Source D: 1224 Baghdad Painting of Doctors & Pharmacists Mixing Remedies",
+          "caption": "A colourful AD 1224 Baghdad manuscript painting showing doctors and pharmacists measuring and heating herbal remedies in clean jars.",
           "author": "Baghdad Medical Illustrator (Arabic Materia Medica, AD 1224)",
           "date": "AD 1224 (Baghdad)",
-          "context": "Every major Islamic *bimaristan* (free hospital) ran its own inspected pharmacy (*saydala*) where trained pharmacists measured syrups, balms, and herbal medicines in clean glazed jars.",
-          "source_context": "Every major Islamic *bimaristan* (free hospital) ran its own inspected pharmacy (*saydala*) where trained pharmacists measured syrups, balms, and herbal medicines in clean glazed jars.",
+          "context": "Every major Islamic bimaristan (free hospital) ran its own inspected pharmacy where trained pharmacists measured syrups, balms, and herbal medicines.",
+          "source_context": "Every major Islamic bimaristan (free hospital) ran its own inspected pharmacy where trained pharmacists measured syrups, balms, and herbal medicines. **Hinge Question:** Why was having a clean, inspected pharmacy right inside a free bimaristan hospital so helpful for sick patients?",
           "question_badge": "BAGHDAD HOSPITAL PHARMACY",
           "question": "What clues in Source D show that Baghdad’s pharmacies were carefully organised?",
-          "model_answer": "Source D shows trained pharmacists using neat rows of storage jars, bowls, and heating pots to measure exact doses of herbal remedies for hospital patients.",
-          "provenance": "Pharmacy scene from an Arabic manuscript of De Materia Medica copied and illustrated in Baghdad, Iraq, AD 1224."
+          "model_answer": "Source D shows trained pharmacists using neat rows of glazed storage jars, measuring bowls, and heating pots to prepare exact doses of medicine for hospital patients.",
+          "provenance": "Pharmacy scene from an Arabic herbal medicine book copied and painted in Baghdad, Iraq (AD 1224)."
         }
       ],
       "causal_domino_spine": {
@@ -1751,10 +2051,10 @@ window.UNIT_DATA = {
             "tag": "🔢 MATHS & STARS",
             "trigger": "Al-Khwarizmi championed 0–9 numerals (*sifr*), algebra, and algorithms, while Mariam al-Asturlabi made brass astrolabes and al-Jazari built water clocks.",
             "connective": "Accurate numbers and measuring tools empowered scientists to test nature with real experiments.",
-            "question": "How did Golden Age maths, astrolabes, and clocks advance world science?",
-            "prose_hash": "dd57b4feb0",
-            "questionHeading": "How did Golden Age maths, astrolabes, and clocks advance world science?",
-            "focusClue": "How did Golden Age maths, astrolabes, and clocks advance world science?",
+            "question": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
+            "prose_hash": "023a6d9051",
+            "questionHeading": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
+            "focusClue": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
             "dates": "c. AD 820–960",
             "paraRef": "[3.1]"
           },
@@ -1767,10 +2067,10 @@ window.UNIT_DATA = {
             "tag": "🔬 LIGHT & HOSPITALS",
             "trigger": "Ibn al-Haytham used a pinhole *camera obscura* to prove light enters our eyes in straight lines, while cities built free *bimaristan* hospitals.",
             "connective": "Careful observation and public hospital wards allowed doctors to study illnesses and surgery systematically.",
-            "question": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
-            "prose_hash": "1cc5d1f484",
-            "questionHeading": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
-            "focusClue": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
+            "question": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
+            "prose_hash": "ad47647d1c",
+            "questionHeading": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
+            "focusClue": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
             "dates": "c. AD 965–1040",
             "paraRef": "[3.3]"
           },
@@ -1783,10 +2083,10 @@ window.UNIT_DATA = {
             "tag": "🩺 SURGERY & WARDS",
             "trigger": "Al-Razi tested Baghdad’s cleanest air and told measles from smallpox, while al-Zahrawi designed 200 surgical tools and dissolving catgut stitches.",
             "connective": "Set medical and surgical standards studied across the Islamic world and Europe for centuries.",
-            "question": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
-            "prose_hash": "e633fc5fbb",
-            "questionHeading": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
-            "focusClue": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
+            "question": "How did al-Razi and al-Zahrawi help sick people heal well?",
+            "prose_hash": "a15f20fd9e",
+            "questionHeading": "How did al-Razi and al-Zahrawi help sick people heal well?",
+            "focusClue": "How did al-Razi and al-Zahrawi help sick people heal well?",
             "dates": "c. AD 900–1013",
             "paraRef": "[3.5]"
           }
@@ -1795,8 +2095,8 @@ window.UNIT_DATA = {
       "workbook_stages": [
         {
           "step": 1,
-          "heading": "How did Golden Age maths, astrolabes, and clocks advance world science?",
-          "focus_clue": "How did Golden Age maths, astrolabes, and clocks advance world science?",
+          "heading": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
+          "focus_clue": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
           "words": [
             {
               "term": "Muhammad al-Khwarizmi",
@@ -1813,19 +2113,19 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "<strong>Muhammad al-Khwarizmi</strong> gave us algebra and algorithms, <strong>Mariam al-Asturlabi</strong> crafted brass astrolabes, and al-Jazari built the <strong>Elephant Water Clock</strong>.",
           "title": "c. AD 820–1206: Zero, Algebra, Astrolabes & the Elephant Clock",
-          "question": "How did Golden Age maths, astrolabes, and clocks advance world science?",
-          "questionHeading": "How did Golden Age maths, astrolabes, and clocks advance world science?",
-          "focusClue": "How did Golden Age maths, astrolabes, and clocks advance world science?",
+          "question": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
+          "questionHeading": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
+          "focusClue": "How did Baghdad’s maths, astrolabes, and clocks advance world science?",
           "date": "c. AD 820–1206",
           "dates": "c. AD 820–1206",
           "para_ref": "[3.1]",
           "paraRef": "[3.1]",
-          "prose_hash": "dd57b4feb0"
+          "prose_hash": "023a6d9051"
         },
         {
           "step": 2,
-          "heading": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
-          "focus_clue": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
+          "heading": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
+          "focus_clue": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
           "words": [
             {
               "term": "Ibn al-Haytham",
@@ -1842,19 +2142,19 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "<strong>Ibn al-Haytham</strong> used a pinhole <strong>camera obscura</strong> to prove light enters our eyes, while cities opened free <strong>bimaristans</strong> for sick patients.",
           "title": "c. AD 965–1040: Ibn al-Haytham’s Light Proof & Free Bimaristans",
-          "question": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
-          "questionHeading": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
-          "focusClue": "What did Ibn al-Haytham prove about light, and how did bimaristans care for people?",
+          "question": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
+          "questionHeading": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
+          "focusClue": "What did Ibn al-Haytham prove about light, and how did bimaristans help?",
           "date": "c. AD 965–1040",
           "dates": "c. AD 965–1040",
           "para_ref": "[3.3]",
           "paraRef": "[3.3]",
-          "prose_hash": "1cc5d1f484"
+          "prose_hash": "ad47647d1c"
         },
         {
           "step": 3,
-          "heading": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
-          "focus_clue": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
+          "heading": "How did al-Razi and al-Zahrawi help sick people heal well?",
+          "focus_clue": "How did al-Razi and al-Zahrawi help sick people heal well?",
           "words": [
             {
               "term": "al-Razi",
@@ -1871,14 +2171,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "In Baghdad, <strong>al-Razi</strong> told measles from smallpox, while surgeon <strong>al-Zahrawi</strong> invented 200 surgical tools and dissolving <strong>catgut stitches</strong>.",
           "title": "c. AD 900–1013: Master Doctors Al-Razi & Al-Zahrawi",
-          "question": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
-          "questionHeading": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
-          "focusClue": "How did al-Razi and al-Zahrawi make medicine and surgery far safer?",
+          "question": "How did al-Razi and al-Zahrawi help sick people heal well?",
+          "questionHeading": "How did al-Razi and al-Zahrawi help sick people heal well?",
+          "focusClue": "How did al-Razi and al-Zahrawi help sick people heal well?",
           "date": "c. AD 900–1013",
           "dates": "c. AD 900–1013",
           "para_ref": "[3.5]",
           "paraRef": "[3.5]",
-          "prose_hash": "e633fc5fbb"
+          "prose_hash": "a15f20fd9e"
         }
       ],
       "tasks": [
@@ -1967,78 +2267,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Which Baghdad mathematician championed 0–9 numerals (including zero, sifr) and gave us the words \"algebra\" and \"algorithm\"?",
-          "q": "Which Baghdad mathematician championed 0–9 numerals (including zero, sifr) and gave us the words \"algebra\" and \"algorithm\"?",
+          "question": "Which number system (including zero, called sifr) did Baghdad mathematician Muhammad al-Khwarizmi champion?",
+          "q": "Which number system (including zero, called sifr) did Baghdad mathematician Muhammad al-Khwarizmi champion?",
           "options": [
-            "Muhammad al-Khwarizmi",
-            "Pythagoras of Samos",
-            "Emperor Claudius",
-            "Boudicca"
+            "Hindu-Arabic numerals (0 to 9)",
+            "Roman numerals (I, V, X, C)",
+            "Babylonian wedge marks",
+            "Greek alphabet tallies"
           ],
           "correct": 0,
-          "answer": "Muhammad al-Khwarizmi",
-          "a": "Muhammad al-Khwarizmi",
-          "explanation": "Muhammad al-Khwarizmi’s book al-Jabr gave us \"algebra\", while his own name in Latin gave us \"algorithm\"."
+          "answer": "Hindu-Arabic numerals (0 to 9)",
+          "a": "Hindu-Arabic numerals (0 to 9)",
+          "explanation": "Al-Khwarizmi championed Hindu-Arabic numerals from 0 to 9, including zero (sifr), making big calculations clear and fast."
         },
         {
           "stage": 1,
-          "question": "What precision brass instrument did tenth-century craftworker Mariam al-Asturlabi make to map stars, time, and Mecca?",
-          "q": "What precision brass instrument did tenth-century craftworker Mariam al-Asturlabi make to map stars, time, and Mecca?",
+          "question": "Which two modern words come from al-Khwarizmi’s book al-Jabr and his own name?",
+          "q": "Which two modern words come from al-Khwarizmi’s book al-Jabr and his own name?",
           "options": [
-            "A flint handaxe",
-            "An astrolabe",
-            "A steam engine",
-            "A magnetic telegraph"
+            "Geometry and stadium",
+            "Algebra and algorithm",
+            "Telescope and microscope",
+            "Compass and calendar"
           ],
           "correct": 1,
-          "answer": "An astrolabe",
-          "a": "An astrolabe",
-          "explanation": "Mariam al-Asturlabi crafted intricate brass astrolabes used by astronomers, sailors, and travellers across the Islamic world."
+          "answer": "Algebra and algorithm",
+          "a": "Algebra and algorithm",
+          "explanation": "His book al-Jabr gave us \"algebra\", and the Latin form of al-Khwarizmi’s name gave us \"algorithm\"."
+        },
+        {
+          "stage": 1,
+          "question": "Who was Mariam al-Asturlabi, and what precision brass instrument did she craft?",
+          "q": "Who was Mariam al-Asturlabi, and what precision brass instrument did she craft?",
+          "options": [
+            "A weaver who made silk carpets",
+            "A potter who glazed blue bowls",
+            "A skilled woman astronomer-maker who crafted brass astrolabes",
+            "A captain who sailed Viking longships"
+          ],
+          "correct": 2,
+          "answer": "A skilled woman astronomer-maker who crafted brass astrolabes",
+          "a": "A skilled woman astronomer-maker who crafted brass astrolabes",
+          "explanation": "Tenth-century craftworker Mariam al-Asturlabi made intricate brass astrolabes used to map stars, check prayer times, and navigate."
+        },
+        {
+          "stage": 1,
+          "question": "How often did master engineer al-Jazari’s mechanical Elephant Water Clock strike brass cymbals?",
+          "q": "How often did master engineer al-Jazari’s mechanical Elephant Water Clock strike brass cymbals?",
+          "options": [
+            "Once a year",
+            "Every ten days",
+            "Only at midnight",
+            "Every half hour"
+          ],
+          "correct": 3,
+          "answer": "Every half hour",
+          "a": "Every half hour",
+          "explanation": "Hidden water floats inside al-Jazari’s Elephant Water Clock made figures whirl and clash cymbals every half hour!"
+        },
+        {
+          "stage": 1,
+          "question": "What did the Arabic word \"sifr\" refer to in Golden Age mathematics?",
+          "q": "What did the Arabic word \"sifr\" refer to in Golden Age mathematics?",
+          "options": [
+            "The number zero (0)",
+            "A camel caravan",
+            "A hospital ward",
+            "A wooden warship"
+          ],
+          "correct": 0,
+          "answer": "The number zero (0)",
+          "a": "The number zero (0)",
+          "explanation": "Sifr meant zero (empty), giving English both \"zero\" and \"cipher\"."
         },
         {
           "stage": 2,
-          "question": "What did scientist Ibn al-Haytham prove inside his pitch-dark pinhole room (camera obscura)?",
-          "q": "What did scientist Ibn al-Haytham prove inside his pitch-dark pinhole room (camera obscura)?",
+          "question": "What wrong ancient Greek idea about human eyesight did scientist Ibn al-Haytham challenge?",
+          "q": "What wrong ancient Greek idea about human eyesight did scientist Ibn al-Haytham challenge?",
           "options": [
-            "Invisible laser beams shoot out of human eyes",
-            "Moonlight turns lead into gold",
-            "Light travels in straight lines from objects into our eyes",
-            "Heavy stones float upwards in the dark"
-          ],
-          "correct": 2,
-          "answer": "Light travels in straight lines from objects into our eyes",
-          "a": "Light travels in straight lines from objects into our eyes",
-          "explanation": "By watching an upside-down outdoor scene shine through a tiny pinhole onto a dark wall, Ibn al-Haytham proved light travels in straight lines into our eyes."
-        },
-        {
-          "stage": 3,
-          "question": "Why did Baghdad’s chief physician al-Razi hang fresh pieces of meat across different parts of the city?",
-          "q": "Why did Baghdad’s chief physician al-Razi hang fresh pieces of meat across different parts of the city?",
-          "options": [
-            "To feed wild eagles",
-            "To dry snacks for Silk Road camels",
-            "To test which wind blew loudest",
-            "To find where meat rotted slowest so he could build a hospital in the cleanest air"
-          ],
-          "correct": 3,
-          "answer": "To find where meat rotted slowest so he could build a hospital in the cleanest air",
-          "a": "To find where meat rotted slowest so he could build a hospital in the cleanest air",
-          "explanation": "Al-Razi chose the spot where the meat rotted slowest, knowing clean air would help bimaristan patients recover!"
-        },
-        {
-          "stage": 3,
-          "question": "Alongside inventing over 200 surgical tools around AD 1000, what clever wound-closing discovery did surgeon al-Zahrawi make?",
-          "q": "Alongside inventing over 200 surgical tools around AD 1000, what clever wound-closing discovery did surgeon al-Zahrawi make?",
-          "options": [
-            "Plastic sticky tape",
-            "Catgut stitches that dissolve harmlessly inside the body as wounds heal",
-            "Iron staples hammered cold",
-            "Cobweb bandages soaked in seawater"
+            "That people could see through solid brick walls",
+            "That invisible rays shot out of human eyes to touch objects",
+            "That human eyes glowed bright green in the dark",
+            "That sunlight travelled in zig-zag circles"
           ],
           "correct": 1,
-          "answer": "Catgut stitches that dissolve harmlessly inside the body as wounds heal",
-          "a": "Catgut stitches that dissolve harmlessly inside the body as wounds heal",
-          "explanation": "Working in Córdoba, Spain, al-Zahrawi discovered that natural catgut thread dissolves safely inside healing wounds."
+          "answer": "That invisible rays shot out of human eyes to touch objects",
+          "a": "That invisible rays shot out of human eyes to touch objects",
+          "explanation": "For centuries ancient writers claimed rays beamed out of our eyes, until Ibn al-Haytham tested light experimentally."
+        },
+        {
+          "stage": 2,
+          "question": "What did Ibn al-Haytham prove inside his dark-room pinhole \"camera obscura\"?",
+          "q": "What did Ibn al-Haytham prove inside his dark-room pinhole \"camera obscura\"?",
+          "options": [
+            "That candles burn underwater",
+            "That sound travels faster than lightning",
+            "That light travels in straight lines directly into our eyes",
+            "That glass mirrors block every shadow"
+          ],
+          "correct": 2,
+          "answer": "That light travels in straight lines directly into our eyes",
+          "a": "That light travels in straight lines directly into our eyes",
+          "explanation": "Inside a pitch-dark room with a tiny pinhole, Ibn al-Haytham proved light travels in straight lines into the eye."
+        },
+        {
+          "stage": 2,
+          "question": "What was a \"bimaristan\" in Baghdad and other Golden Age Islamic cities?",
+          "q": "What was a \"bimaristan\" in Baghdad and other Golden Age Islamic cities?",
+          "options": [
+            "A fortified roadside camel inn",
+            "A covered spice market",
+            "A royal silk workshop",
+            "A free teaching hospital welcoming both rich and poor patients"
+          ],
+          "correct": 3,
+          "answer": "A free teaching hospital welcoming both rich and poor patients",
+          "a": "A free teaching hospital welcoming both rich and poor patients",
+          "explanation": "Islamic bimaristans were clean, free teaching hospitals where rich and poor citizens alike received medical care."
+        },
+        {
+          "stage": 2,
+          "question": "How did a bimaristan care for recovering patients even as they left to go home?",
+          "q": "How did a bimaristan care for recovering patients even as they left to go home?",
+          "options": [
+            "Patients received clean clothes and pocket money to rest at home while recovering",
+            "Patients had to build a brick wall to pay their bill",
+            "Only royal princes were allowed inside the wards",
+            "Patients were told to sleep outdoors on river reeds"
+          ],
+          "correct": 0,
+          "answer": "Patients received clean clothes and pocket money to rest at home while recovering",
+          "a": "Patients received clean clothes and pocket money to rest at home while recovering",
+          "explanation": "Bimaristans featured separate clean wards, cooling fountains, an inspected pharmacy, and recovery money for poorer patients."
+        },
+        {
+          "stage": 2,
+          "question": "Which modern inventions owe a debt to Ibn al-Haytham’s pinhole camera obscura and optics experiments?",
+          "q": "Which modern inventions owe a debt to Ibn al-Haytham’s pinhole camera obscura and optics experiments?",
+          "options": [
+            "Steam locomotives and iron bridges",
+            "Modern cameras, eyeglasses, and microscopes",
+            "Wooden trebuchets and bronze rams",
+            "Windcatcher towers and waterwheels"
+          ],
+          "correct": 1,
+          "answer": "Modern cameras, eyeglasses, and microscopes",
+          "a": "Modern cameras, eyeglasses, and microscopes",
+          "explanation": "Understanding how light enters lenses in straight lines paved the way for spectacles, microscopes, and modern cameras."
+        },
+        {
+          "stage": 3,
+          "question": "Why did chief doctor al-Razi hang pieces of fresh meat across different parts of Baghdad?",
+          "q": "Why did chief doctor al-Razi hang pieces of fresh meat across different parts of Baghdad?",
+          "options": [
+            "To feed hungry market falcons",
+            "To dry spiced meat for Silk Road caravans",
+            "To find where meat rotted slowest so he could build the hospital in the cleanest air",
+            "To test which district had the hottest ovens"
+          ],
+          "correct": 2,
+          "answer": "To find where meat rotted slowest so he could build the hospital in the cleanest air",
+          "a": "To find where meat rotted slowest so he could build the hospital in the cleanest air",
+          "explanation": "Al-Razi cleverly picked the neighbourhood where fresh meat stayed fresh longest, proving the air there was cleanest for patients!"
+        },
+        {
+          "stage": 3,
+          "question": "Which two dangerous childhood illnesses was Baghdad doctor al-Razi the first to tell apart clearly?",
+          "q": "Which two dangerous childhood illnesses was Baghdad doctor al-Razi the first to tell apart clearly?",
+          "options": [
+            "Toothache and broken bones",
+            "Sunburn and frostbite",
+            "Scurvy and seasickness",
+            "Measles and smallpox"
+          ],
+          "correct": 3,
+          "answer": "Measles and smallpox",
+          "a": "Measles and smallpox",
+          "explanation": "By keeping careful bedside notes on patient rashes and fevers, al-Razi wrote the first medical guide distinguishing measles from smallpox."
+        },
+        {
+          "stage": 3,
+          "question": "Around AD 1000 in Spain, how many surgical tools did royal surgeon al-Zahrawi draw in his medical guide?",
+          "q": "Around AD 1000 in Spain, how many surgical tools did royal surgeon al-Zahrawi draw in his medical guide?",
+          "options": [
+            "Over 200 surgical tools, including forceps, scalpels, and bone saws",
+            "Only three wooden spoons",
+            "Exactly twelve bronze shields",
+            "Fifty glass mosque lamps"
+          ],
+          "correct": 0,
+          "answer": "Over 200 surgical tools, including forceps, scalpels, and bone saws",
+          "a": "Over 200 surgical tools, including forceps, scalpels, and bone saws",
+          "explanation": "Al-Zahrawi illustrated over 200 precision surgical tools in Source C so trainee surgeons could recognise and use each safely."
+        },
+        {
+          "stage": 3,
+          "question": "What clever discovery did surgeon al-Zahrawi make using natural catgut thread?",
+          "q": "What clever discovery did surgeon al-Zahrawi make using natural catgut thread?",
+          "options": [
+            "Strings for brass astrolabes",
+            "Internal stitches that dissolved safely inside the body as wounds healed",
+            "Ropes for stitching wooden dhow hulls",
+            "Wicks for enamelled glass lamps"
+          ],
+          "correct": 1,
+          "answer": "Internal stitches that dissolved safely inside the body as wounds healed",
+          "a": "Internal stitches that dissolved safely inside the body as wounds healed",
+          "explanation": "Al-Zahrawi discovered that natural catgut stitches dissolved harmlessly inside the body without needing a second cut!"
+        },
+        {
+          "stage": 3,
+          "question": "Inspect Source D from AD 1224. Who worked inside a bimaristan’s pharmacy?",
+          "q": "Inspect Source D from AD 1224. Who worked inside a bimaristan’s pharmacy?",
+          "options": [
+            "Untrained street jugglers",
+            "Armoured cavalry guards",
+            "Trained pharmacists measuring herbal syrups and remedies in clean jars",
+            "Stonecutters carving marble pillars"
+          ],
+          "correct": 2,
+          "answer": "Trained pharmacists measuring herbal syrups and remedies in clean jars",
+          "a": "Trained pharmacists measuring herbal syrups and remedies in clean jars",
+          "explanation": "Inspected hospital pharmacies employed trained pharmacists who measured exact doses of syrups and herbal medicines."
         }
       ],
       "video": [
@@ -2094,10 +2544,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Arab shipbuilders stitched flexible wooden hull planks together with coconut-husk rope and hoisted triangular sails to ride Indian Ocean monsoon winds from Basra to India and China. **Hinge Question:** Why were stitched wooden planks and triangular sails so useful for captains crossing stormy Indian Ocean waters?",
-          "Source B": "Trusted from Central Asia to Northern Europe for their pure silver weight, hundreds of thousands of Abbasid dirhams travelled north along Russian rivers into Viking Scandinavia and Jorvik (York). **Hinge Question:** Why have archaeologists dug up thousands of Arabic silver dirhams in Viking Jorvik and Scandinavia when Vikings could not read Arabic?",
-          "Source C": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars. **Hinge Question:** Why were tiny, lightweight sacks of pepper, cardamom, and cinnamon worth so much silver in Baghdad’s bazaars?",
-          "Source D": "Baghdad did not merely buy foreign luxuries; skilled Iraqi and Persian workshops blew and wheel-cut crystal-clear glass flasks, glazed lustre bowls, and wove textiles exported as far east as China! **Hinge Question:** What does Source D prove about whether Baghdad only bought goods from abroad or also made luxury crafts to sell?"
+          "Source A": "Arab shipbuilders stitched flexible wooden hull planks with coconut-husk rope and raised triangular sails to ride Indian Ocean winds from Basra to India and China. **Hinge Question:** Why were stitched wooden planks and triangular sails so useful for captains crossing stormy Indian Ocean waters?",
+          "Source B": "Trusted from Central Asia to Northern Europe for their pure silver weight, thousands of Abbasid dirhams travelled up Russian rivers into Viking Scandinavia and Jorvik. **Hinge Question:** Why have archaeologists dug up thousands of Arabic silver dirhams in Viking Jorvik and Scandinavia when Vikings could not read Arabic?",
+          "Source C": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth high sums in Baghdad’s markets. **Hinge Question:** Why were tiny, lightweight sacks of pepper, cardamom, and cinnamon worth so much silver in Baghdad’s bazaars?",
+          "Source D": "Baghdad did not only buy foreign goods; skilled Iraqi and Persian workshops blew and carved clear glass flasks, glazed lustre bowls, and silk cloth sold as far as China! **Hinge Question:** What does Source D prove about whether Baghdad only bought goods from abroad or also made luxury crafts to sell?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2232,8 +2682,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. AD 850–1000: Covered Bazaars, Silk Caravans & Roadside Caravanserais",
-          "text": "<span class=\"para-ref\">[4.1]</span> Baghdad sat right where Asia, Africa, and Europe met, making its markets world famous. Shaded covered **bazaars**, called **souks**, smelled of Indian pepper, green cardamom, and sweet cinnamon. Stalls gleamed with Chinese silk, white porcelain bowls, Persian carpets, and delicate blown glass. Long **caravans** of two-humped camels carried these treasures across hot **Silk Road** desert trails.<br><br><span class=\"para-ref\">[4.2]</span> Every thirty kilometres along the trail stood a walled roadside inn called a **caravanserai**. Thick brick walls and locked gates sheltered merchants from desert bandits while camels drank well water. Traders shared hot spiced stews and travel news by firelight before marching onward at dawn.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Baghdad sat right where Asia, Africa, and Europe met, making its markets world famous. Shaded covered **bazaars**, called **souks**, smelled of Indian pepper, green cardamom, and sweet cinnamon. Stalls gleamed with Chinese silk, white porcelain bowls, Persian carpets, and delicate blown glass. Long **caravans** of two-humped camels carried these treasures across hot **Silk Road** desert trails.<br><br><span class=\"para-ref\">[4.2]</span> Every thirty kilometres along the trail stood a walled roadside inn called a **caravanserai**. Thick brick walls and locked gates sheltered merchants from desert bandits while camels drank well water. Traders shared hot spiced stews and travel news by firelight before marching onward at dawn.",
+          "text": "<span class=\"para-ref\">[4.1]</span> **Baghdad** sat where Asia, Africa, and Europe met, making its **markets** world famous. Shaded **bazaars**, or **souks**, smelled of Indian pepper, cardamom, and sweet cinnamon. Stalls gleamed with Chinese silk, white porcelain, Persian rugs, and blown glass. Long **caravans** of two-humped **camels** crossed hot **Silk Road** desert **trails**.<br><br><span class=\"para-ref\">[4.2]</span> Every **thirty kilometres** along the road stood a **walled** **inn** called a **caravanserai** [kar-uh-VAN-suh-ry]. Locked brick gates kept traders safe from desert bandits at night. Tired camels drank cool well water while merchants shared spiced stews by firelight!",
+          "content": "<span class=\"para-ref\">[4.1]</span> **Baghdad** sat where Asia, Africa, and Europe met, making its **markets** world famous. Shaded **bazaars**, or **souks**, smelled of Indian pepper, cardamom, and sweet cinnamon. Stalls gleamed with Chinese silk, white porcelain, Persian rugs, and blown glass. Long **caravans** of two-humped **camels** crossed hot **Silk Road** desert **trails**.<br><br><span class=\"para-ref\">[4.2]</span> Every **thirty kilometres** along the road stood a **walled** **inn** called a **caravanserai** [kar-uh-VAN-suh-ry]. Locked brick gates kept traders safe from desert bandits at night. Tired camels drank cool well water while merchants shared spiced stews by firelight!",
           "image": "/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg",
           "image_alt": "Medieval Baghdad manuscript painting by Yahya al-Wasiti showing travellers and pack camels on a Silk Road caravan",
           "caption": "A Silk Road camel caravan painted in Baghdad by Yahya al-Wasiti in AD 1237, showing pack camels hauling goods between desert stops.",
@@ -2244,12 +2694,12 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "c. AD 850–1000: Indian Ocean Dhow Ships & Paper Sakk Cheques",
-          "text": "<span class=\"para-ref\">[4.3]</span> River boats also carried crates down the Tigris to the busy port of **Basra**. Sailors loaded wooden **dhow** ships built from planks stitched tightly with coconut rope. Tall triangular sails caught ocean winds across the **Indian Ocean** towards India and China. Captains steered safely across open water at night by measuring star heights with brass **astrolabes**.<br><br><span class=\"para-ref\">[4.4]</span> Carrying heavy sacks of gold and silver coins across deserts or seas risked pirate attacks. Clever Baghdad bankers solved this by writing signed paper payment slips called a **sakk**. Merchants cashed their paper **sakk** safely in distant cities, giving English our modern word **cheque**!",
-          "content": "<span class=\"para-ref\">[4.3]</span> River boats also carried crates down the Tigris to the busy port of **Basra**. Sailors loaded wooden **dhow** ships built from planks stitched tightly with coconut rope. Tall triangular sails caught ocean winds across the **Indian Ocean** towards India and China. Captains steered safely across open water at night by measuring star heights with brass **astrolabes**.<br><br><span class=\"para-ref\">[4.4]</span> Carrying heavy sacks of gold and silver coins across deserts or seas risked pirate attacks. Clever Baghdad bankers solved this by writing signed paper payment slips called a **sakk**. Merchants cashed their paper **sakk** safely in distant cities, giving English our modern word **cheque**!",
+          "text": "<span class=\"para-ref\">[4.3]</span> River boats also carried crates south down the Tigris to the busy sea port of **Basra**. Sailors loaded wooden **dhow** [DOW] ships built from planks stitched tightly with coconut rope! Tall triangular sails caught ocean winds across the **Indian Ocean** towards India and China. Captains steered safely at night by checking star heights with brass **astrolabes**.<br><br><span class=\"para-ref\">[4.4]</span> Carrying heavy coin sacks on **long-distance trade** risked bandit or pirate attacks. Clever Baghdad bankers solved this by writing signed paper slips called a **sakk** [SAHK]. Merchants cashed them safely afar, giving English our word **cheque**!",
+          "content": "<span class=\"para-ref\">[4.3]</span> River boats also carried crates south down the Tigris to the busy sea port of **Basra**. Sailors loaded wooden **dhow** [DOW] ships built from planks stitched tightly with coconut rope! Tall triangular sails caught ocean winds across the **Indian Ocean** towards India and China. Captains steered safely at night by checking star heights with brass **astrolabes**.<br><br><span class=\"para-ref\">[4.4]</span> Carrying heavy coin sacks on **long-distance trade** risked bandit or pirate attacks. Clever Baghdad bankers solved this by writing signed paper slips called a **sakk** [SAHK]. Merchants cashed them safely afar, giving English our word **cheque**!",
           "image": "/units/ks2_early_islamic_baghdad/assets/brick_silk_road_caravanserai.jpg",
           "image_alt": "Arched brick courtyard of a fortified Silk Road caravanserai roadside inn where camel caravans rested safely",
-          "caption": "Arched brick courtyard of a Silk Road caravanserai — fortified roadside inns built a day’s camel march (about 30 km) apart.",
-          "image_caption": "Arched brick courtyard of a Silk Road caravanserai — fortified roadside inns built a day’s camel march (about 30 km) apart.",
+          "caption": "Arched brick courtyard of a Silk Road caravanserai — walled roadside inns built a day’s camel march (about 30 km) apart.",
+          "image_caption": "Arched brick courtyard of a Silk Road caravanserai — walled roadside inns built a day’s camel march (about 30 km) apart.",
           "isReversed": true,
           "sources": [
             {
@@ -2259,16 +2709,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/wasiti_indian_ocean_dhow_ship.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/wasiti_indian_ocean_dhow_ship.jpg",
-              "title": "Source A: Painted Arab Dhow Ship Sailing the Indian Ocean (Baghdad Manuscript, AD 1237)",
-              "caption": "A stitched wooden Arab dhow ship painted by Baghdad artist Yahya al-Wasiti in AD 1237, showing sailors and passengers crossing the Indian Ocean.",
+              "title": "Source A: Painted Arab Dhow Ship on the Indian Ocean (Baghdad, AD 1237)",
+              "caption": "A stitched wooden Arab dhow ship painted by Baghdad artist Yahya al-Wasiti in AD 1237, showing sailors and merchants at sea.",
               "author": "Yahya ibn Mahmud al-Wasiti (Baghdad Manuscript Illuminator)",
               "date": "AD 1237 (illustrating Abbasid sea trade)",
-              "context": "Arab shipbuilders stitched flexible wooden hull planks together with coconut-husk rope and hoisted triangular sails to ride Indian Ocean monsoon winds from Basra to India and China.",
-              "source_context": "Arab shipbuilders stitched flexible wooden hull planks together with coconut-husk rope and hoisted triangular sails to ride Indian Ocean monsoon winds from Basra to India and China.",
+              "context": "Arab shipbuilders stitched flexible wooden hull planks with coconut-husk rope and raised triangular sails to ride Indian Ocean winds from Basra to India and China.",
+              "source_context": "Arab shipbuilders stitched flexible wooden hull planks with coconut-husk rope and raised triangular sails to ride Indian Ocean winds from Basra to India and China. **Hinge Question:** Why were stitched wooden planks and triangular sails so useful for captains crossing stormy Indian Ocean waters?",
               "question_badge": "INDIAN OCEAN DHOW",
               "question": "Look closely at Source A. How did wooden dhow ships connect Baghdad to distant lands?",
-              "model_answer": "Source A shows a stitched wooden dhow ship carrying merchants and sailors from Basra across the Indian Ocean. Using triangular sails and brass astrolabes, captains traded glass and dates for Indian spices, pearls, and Chinese porcelain.",
-              "provenance": "Miniature of an Indian Ocean dhow from the Maqamat of al-Hariri, illustrated by Yahya al-Wasiti in Baghdad (AD 1237, Bibliothèque nationale de France)."
+              "model_answer": "Source A shows a stitched wooden dhow carrying merchants from Basra across the Indian Ocean, using triangular sails and brass astrolabes to trade for spices and porcelain.",
+              "provenance": "Painting of an Indian Ocean dhow ship by Yahya al-Wasiti in Baghdad (AD 1237)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l4_src_b",
@@ -2277,24 +2727,24 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/abbasid_silver_dirham_coin.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/abbasid_silver_dirham_coin.jpg",
-              "title": "Source B: Abbasid Silver Dirham Coin Stamped with Kufic Arabic Script (9th Century AD)",
-              "caption": "A pure silver Abbasid dirham coin stamped with crisp Kufic Arabic calligraphy — the exact coin type unearthed in Viking hoards across Scandinavia and York.",
+              "title": "Source B: Pure Silver Abbasid Dirham Coin With Arabic Script (9th Century)",
+              "caption": "A pure silver Abbasid dirham coin stamped with crisp Arabic script — the exact coin type dug up in Viking hoards near York.",
               "author": "Abbasid Royal Mint Craftworkers",
               "date": "c. AD 800–950",
-              "context": "Trusted from Central Asia to Northern Europe for their pure silver weight, hundreds of thousands of Abbasid dirhams travelled north along Russian rivers into Viking Scandinavia and Jorvik (York).",
-              "source_context": "Trusted from Central Asia to Northern Europe for their pure silver weight, hundreds of thousands of Abbasid dirhams travelled north along Russian rivers into Viking Scandinavia and Jorvik (York).",
+              "context": "Trusted from Central Asia to Northern Europe for their pure silver weight, thousands of Abbasid dirhams travelled up Russian rivers into Viking Scandinavia and Jorvik.",
+              "source_context": "Trusted from Central Asia to Northern Europe for their pure silver weight, thousands of Abbasid dirhams travelled up Russian rivers into Viking Scandinavia and Jorvik. **Hinge Question:** Why have archaeologists dug up thousands of Arabic silver dirhams in Viking Jorvik and Scandinavia when Vikings could not read Arabic?",
               "question_badge": "ABBASID SILVER DIRHAM",
               "question": "Why did Viking traders in Jorvik and Scandinavia prize Islamic silver coins like Source B?",
-              "model_answer": "Vikings prized Abbasid silver dirhams like Source B because their silver was remarkably pure and reliable. Even without reading the Kufic Arabic script, Viking merchants weighed the silver to buy furs, amber, and swords.",
-              "provenance": "Abbasid silver dirham coin inscribed in Kufic Arabic script (9th–10th century AD, numismatic museum collection)."
+              "model_answer": "Vikings prized Abbasid silver dirhams like Source B because their silver was pure and reliable; even without reading Arabic, Vikings weighed the silver to buy furs and swords.",
+              "provenance": "Pure silver Abbasid dirham coin stamped in Kufic Arabic script (9th–10th century AD)."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. AD 774–1000: Viking Silver Dirhams in Jorvik & King Offa’s Gold Coin",
-          "text": "<span class=\"para-ref\">[4.5]</span> Amazingly, silver coins struck for Baghdad’s caliphs travelled north to snowy **Scandinavia** and **Britain**! Pure Abbasid silver **dirhams**, stamped with Arabic script, flowed along Russian rivers with fur traders. **Vikings** prized this trusted Islamic silver and buried shining hoards near **Jorvik**, modern **York**. Archaeologists have dug up thousands of Baghdad silver dirhams from Scandinavian and British soil!<br><br><span class=\"para-ref\">[4.6]</span> Even earlier, Anglo-Saxon **King Offa of Mercia** admired golden Islamic coins reaching western Europe. Around **AD 774**, Offa minted a famous gold coin copying an Abbasid Arabic **dinar**! His coin copied swirling Arabic script beside Offa’s name, proving Baghdad’s trade reached medieval Britain.",
-          "content": "<span class=\"para-ref\">[4.5]</span> Amazingly, silver coins struck for Baghdad’s caliphs travelled north to snowy **Scandinavia** and **Britain**! Pure Abbasid silver **dirhams**, stamped with Arabic script, flowed along Russian rivers with fur traders. **Vikings** prized this trusted Islamic silver and buried shining hoards near **Jorvik**, modern **York**. Archaeologists have dug up thousands of Baghdad silver dirhams from Scandinavian and British soil!<br><br><span class=\"para-ref\">[4.6]</span> Even earlier, Anglo-Saxon **King Offa of Mercia** admired golden Islamic coins reaching western Europe. Around **AD 774**, Offa minted a famous gold coin copying an Abbasid Arabic **dinar**! His coin copied swirling Arabic script beside Offa’s name, proving Baghdad’s trade reached medieval Britain.",
+          "text": "<span class=\"para-ref\">[4.5]</span> Silver **trade coins** struck for **Baghdad's** caliphs even reached snowy **Scandinavia** and **Britain**! Pure Abbasid silver **dirhams** [DEER-hamz] with Arabic script flowed north up Russian rivers. **Vikings** prized this trusted silver for buying furs and swords. They even buried shining dirham hoards near **Jorvik** [YOR-vik], modern **York**!<br><br><span class=\"para-ref\">[4.6]</span> Even earlier, in **Anglo-Saxon Britain**, **King Offa of Mercia** admired Islamic gold coins. Around **AD 774**, Offa minted a famous gold coin copying an Abbasid Arabic **dinar**. Swirling Arabic letters beside Offa's name prove how far Baghdad's trade reached!",
+          "content": "<span class=\"para-ref\">[4.5]</span> Silver **trade coins** struck for **Baghdad's** caliphs even reached snowy **Scandinavia** and **Britain**! Pure Abbasid silver **dirhams** [DEER-hamz] with Arabic script flowed north up Russian rivers. **Vikings** prized this trusted silver for buying furs and swords. They even buried shining dirham hoards near **Jorvik** [YOR-vik], modern **York**!<br><br><span class=\"para-ref\">[4.6]</span> Even earlier, in **Anglo-Saxon Britain**, **King Offa of Mercia** admired Islamic gold coins. Around **AD 774**, Offa minted a famous gold coin copying an Abbasid Arabic **dinar**. Swirling Arabic letters beside Offa's name prove how far Baghdad's trade reached!",
           "image": "/units/ks2_early_islamic_baghdad/assets/viking_europe_dirham_hoard_map.jpg",
           "image_alt": "Map showing archaeological finds of Islamic silver dirham coin hoards across Viking Russia, Scandinavia, and Britain",
           "caption": "Map of Islamic silver dirham hoards uncovered across Viking trade routes from Russia and Scandinavia right into Britain.",
@@ -2308,16 +2758,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
               "image": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
-              "title": "Source C: Fragrant Cardamom, Star Anise, Mace & Cumin Traded into Baghdad’s Bazaars",
-              "caption": "Source C: Whole Star Anise Pods, Rolled Cinnamon Bark Quills & Cloves — High-Value Eastern Spices Traded Through Baghdad’s Bazaars.",
+              "title": "Source C: Cardamom, Star Anise & Cinnamon Traded in Baghdad’s Bazaars",
+              "caption": "Whole star anise pods, rolled cinnamon bark, cardamom, and cloves — precious eastern spices sold in Baghdad’s covered bazaars.",
               "author": "Maritime Spice Route & Silk Road Merchants",
               "date": "c. AD 850–1000 Trade Goods",
-              "context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars.",
-              "source_context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars.",
+              "context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth high sums in Baghdad’s markets.",
+              "source_context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth high sums in Baghdad’s markets. **Hinge Question:** Why were tiny, lightweight sacks of pepper, cardamom, and cinnamon worth so much silver in Baghdad’s bazaars?",
               "question_badge": "SILK ROAD SPICES",
               "question": "Inspect Source C. Why were spices such prized cargoes for dhow captains and camel caravans?",
-              "model_answer": "Spices in Source C were light to carry over thousands of miles yet grew only in distant lands like India and Southeast Asia. Wealthy Baghdad families paid high prices to flavour feasts, scent perfumes, and mix medicines.",
-              "provenance": "Whole culinary and medicinal spices traded along Indian Ocean and Silk Road routes (cardamom, star anise, mace, and cumin)."
+              "model_answer": "Spices in Source C were light to carry over thousands of miles yet grew only in distant tropical lands, so wealthy buyers paid high prices for feasts and medicines.",
+              "provenance": "Whole cooking and medicinal spices traded along Indian Ocean and Silk Road routes into Baghdad."
             },
             {
               "id": "ks2_early_islamic_baghdad_l4_src_d",
@@ -2326,16 +2776,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/early_islamic_cut_glass_flask.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/early_islamic_cut_glass_flask.jpg",
-              "title": "Source D: Carved Early Islamic Cut-Glass Perfume Flask (9th–10th Century AD)",
-              "caption": "A finely wheel-cut early Islamic glass flask crafted in Iraq or Persia to hold precious rosewater or scented oil for Silk Road export.",
+              "title": "Source D: Carved Early Islamic Clear Glass Perfume Flask (9th–10th Century)",
+              "caption": "A finely cut clear glass flask crafted in Iraq or Persia to hold sweet rosewater or scented oil for Silk Road export.",
               "author": "Abbasid Master Glassmaker (Iraq or Iran)",
               "date": "9th–10th Century AD",
-              "context": "Baghdad did not merely buy foreign luxuries; skilled Iraqi and Persian workshops blew and wheel-cut crystal-clear glass flasks, glazed lustre bowls, and wove textiles exported as far east as China!",
-              "source_context": "Baghdad did not merely buy foreign luxuries; skilled Iraqi and Persian workshops blew and wheel-cut crystal-clear glass flasks, glazed lustre bowls, and wove textiles exported as far east as China!",
+              "context": "Baghdad did not only buy foreign goods; skilled Iraqi and Persian workshops blew and carved clear glass flasks, glazed lustre bowls, and silk cloth sold as far as China!",
+              "source_context": "Baghdad did not only buy foreign goods; skilled Iraqi and Persian workshops blew and carved clear glass flasks, glazed lustre bowls, and silk cloth sold as far as China! **Hinge Question:** What does Source D prove about whether Baghdad only bought goods from abroad or also made luxury crafts to sell?",
               "question_badge": "ISLAMIC CUT GLASS",
               "question": "What does Source D reveal about the skill of craftworkers inside the early Islamic world?",
-              "model_answer": "Source D reveals that early Islamic glassmakers were master craftworkers who blew and carved delicate geometric patterns into clear glass flasks. Merchants exported Iraqi glass and rosewater eastwards to China and westwards to Europe.",
-              "provenance": "Wheel-cut colourless early Islamic glass flask, Iraq or Iran (9th–10th century AD, museum decorative arts collection)."
+              "model_answer": "Source D shows early Islamic glassmakers blew and carved neat geometric patterns into clear glass flasks that merchants exported east to China and west to Europe.",
+              "provenance": "Carved clear glass perfume flask made in Iraq or Persia (9th–10th century AD)."
             }
           ]
         }
@@ -2348,16 +2798,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/wasiti_indian_ocean_dhow_ship.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/wasiti_indian_ocean_dhow_ship.jpg",
-          "title": "Source A: Painted Arab Dhow Ship Sailing the Indian Ocean (Baghdad Manuscript, AD 1237)",
-          "caption": "A stitched wooden Arab dhow ship painted by Baghdad artist Yahya al-Wasiti in AD 1237, showing sailors and passengers crossing the Indian Ocean.",
+          "title": "Source A: Painted Arab Dhow Ship on the Indian Ocean (Baghdad, AD 1237)",
+          "caption": "A stitched wooden Arab dhow ship painted by Baghdad artist Yahya al-Wasiti in AD 1237, showing sailors and merchants at sea.",
           "author": "Yahya ibn Mahmud al-Wasiti (Baghdad Manuscript Illuminator)",
           "date": "AD 1237 (illustrating Abbasid sea trade)",
-          "context": "Arab shipbuilders stitched flexible wooden hull planks together with coconut-husk rope and hoisted triangular sails to ride Indian Ocean monsoon winds from Basra to India and China.",
-          "source_context": "Arab shipbuilders stitched flexible wooden hull planks together with coconut-husk rope and hoisted triangular sails to ride Indian Ocean monsoon winds from Basra to India and China.",
+          "context": "Arab shipbuilders stitched flexible wooden hull planks with coconut-husk rope and raised triangular sails to ride Indian Ocean winds from Basra to India and China.",
+          "source_context": "Arab shipbuilders stitched flexible wooden hull planks with coconut-husk rope and raised triangular sails to ride Indian Ocean winds from Basra to India and China. **Hinge Question:** Why were stitched wooden planks and triangular sails so useful for captains crossing stormy Indian Ocean waters?",
           "question_badge": "INDIAN OCEAN DHOW",
           "question": "Look closely at Source A. How did wooden dhow ships connect Baghdad to distant lands?",
-          "model_answer": "Source A shows a stitched wooden dhow ship carrying merchants and sailors from Basra across the Indian Ocean. Using triangular sails and brass astrolabes, captains traded glass and dates for Indian spices, pearls, and Chinese porcelain.",
-          "provenance": "Miniature of an Indian Ocean dhow from the Maqamat of al-Hariri, illustrated by Yahya al-Wasiti in Baghdad (AD 1237, Bibliothèque nationale de France)."
+          "model_answer": "Source A shows a stitched wooden dhow carrying merchants from Basra across the Indian Ocean, using triangular sails and brass astrolabes to trade for spices and porcelain.",
+          "provenance": "Painting of an Indian Ocean dhow ship by Yahya al-Wasiti in Baghdad (AD 1237)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l4_src_b",
@@ -2366,16 +2816,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/abbasid_silver_dirham_coin.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/abbasid_silver_dirham_coin.jpg",
-          "title": "Source B: Abbasid Silver Dirham Coin Stamped with Kufic Arabic Script (9th Century AD)",
-          "caption": "A pure silver Abbasid dirham coin stamped with crisp Kufic Arabic calligraphy — the exact coin type unearthed in Viking hoards across Scandinavia and York.",
+          "title": "Source B: Pure Silver Abbasid Dirham Coin With Arabic Script (9th Century)",
+          "caption": "A pure silver Abbasid dirham coin stamped with crisp Arabic script — the exact coin type dug up in Viking hoards near York.",
           "author": "Abbasid Royal Mint Craftworkers",
           "date": "c. AD 800–950",
-          "context": "Trusted from Central Asia to Northern Europe for their pure silver weight, hundreds of thousands of Abbasid dirhams travelled north along Russian rivers into Viking Scandinavia and Jorvik (York).",
-          "source_context": "Trusted from Central Asia to Northern Europe for their pure silver weight, hundreds of thousands of Abbasid dirhams travelled north along Russian rivers into Viking Scandinavia and Jorvik (York).",
+          "context": "Trusted from Central Asia to Northern Europe for their pure silver weight, thousands of Abbasid dirhams travelled up Russian rivers into Viking Scandinavia and Jorvik.",
+          "source_context": "Trusted from Central Asia to Northern Europe for their pure silver weight, thousands of Abbasid dirhams travelled up Russian rivers into Viking Scandinavia and Jorvik. **Hinge Question:** Why have archaeologists dug up thousands of Arabic silver dirhams in Viking Jorvik and Scandinavia when Vikings could not read Arabic?",
           "question_badge": "ABBASID SILVER DIRHAM",
           "question": "Why did Viking traders in Jorvik and Scandinavia prize Islamic silver coins like Source B?",
-          "model_answer": "Vikings prized Abbasid silver dirhams like Source B because their silver was remarkably pure and reliable. Even without reading the Kufic Arabic script, Viking merchants weighed the silver to buy furs, amber, and swords.",
-          "provenance": "Abbasid silver dirham coin inscribed in Kufic Arabic script (9th–10th century AD, numismatic museum collection)."
+          "model_answer": "Vikings prized Abbasid silver dirhams like Source B because their silver was pure and reliable; even without reading Arabic, Vikings weighed the silver to buy furs and swords.",
+          "provenance": "Pure silver Abbasid dirham coin stamped in Kufic Arabic script (9th–10th century AD)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l4_src_c",
@@ -2384,16 +2834,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
           "image": "/images/upgraded/ks2-world/baghdad_l4_srcc_spices_star_anise_cardamom.jpg",
-          "title": "Source C: Fragrant Cardamom, Star Anise, Mace & Cumin Traded into Baghdad’s Bazaars",
-          "caption": "Source C: Whole Star Anise Pods, Rolled Cinnamon Bark Quills & Cloves — High-Value Eastern Spices Traded Through Baghdad’s Bazaars.",
+          "title": "Source C: Cardamom, Star Anise & Cinnamon Traded in Baghdad’s Bazaars",
+          "caption": "Whole star anise pods, rolled cinnamon bark, cardamom, and cloves — precious eastern spices sold in Baghdad’s covered bazaars.",
           "author": "Maritime Spice Route & Silk Road Merchants",
           "date": "c. AD 850–1000 Trade Goods",
-          "context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars.",
-          "source_context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth huge sums once carried to Baghdad’s covered bazaars.",
+          "context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth high sums in Baghdad’s markets.",
+          "source_context": "Spices like pepper, cardamom, cinnamon, and star anise grew in tropical India and Southeast Asia, making them worth high sums in Baghdad’s markets. **Hinge Question:** Why were tiny, lightweight sacks of pepper, cardamom, and cinnamon worth so much silver in Baghdad’s bazaars?",
           "question_badge": "SILK ROAD SPICES",
           "question": "Inspect Source C. Why were spices such prized cargoes for dhow captains and camel caravans?",
-          "model_answer": "Spices in Source C were light to carry over thousands of miles yet grew only in distant lands like India and Southeast Asia. Wealthy Baghdad families paid high prices to flavour feasts, scent perfumes, and mix medicines.",
-          "provenance": "Whole culinary and medicinal spices traded along Indian Ocean and Silk Road routes (cardamom, star anise, mace, and cumin)."
+          "model_answer": "Spices in Source C were light to carry over thousands of miles yet grew only in distant tropical lands, so wealthy buyers paid high prices for feasts and medicines.",
+          "provenance": "Whole cooking and medicinal spices traded along Indian Ocean and Silk Road routes into Baghdad."
         },
         {
           "id": "ks2_early_islamic_baghdad_l4_src_d",
@@ -2402,16 +2852,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/early_islamic_cut_glass_flask.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/early_islamic_cut_glass_flask.jpg",
-          "title": "Source D: Carved Early Islamic Cut-Glass Perfume Flask (9th–10th Century AD)",
-          "caption": "A finely wheel-cut early Islamic glass flask crafted in Iraq or Persia to hold precious rosewater or scented oil for Silk Road export.",
+          "title": "Source D: Carved Early Islamic Clear Glass Perfume Flask (9th–10th Century)",
+          "caption": "A finely cut clear glass flask crafted in Iraq or Persia to hold sweet rosewater or scented oil for Silk Road export.",
           "author": "Abbasid Master Glassmaker (Iraq or Iran)",
           "date": "9th–10th Century AD",
-          "context": "Baghdad did not merely buy foreign luxuries; skilled Iraqi and Persian workshops blew and wheel-cut crystal-clear glass flasks, glazed lustre bowls, and wove textiles exported as far east as China!",
-          "source_context": "Baghdad did not merely buy foreign luxuries; skilled Iraqi and Persian workshops blew and wheel-cut crystal-clear glass flasks, glazed lustre bowls, and wove textiles exported as far east as China!",
+          "context": "Baghdad did not only buy foreign goods; skilled Iraqi and Persian workshops blew and carved clear glass flasks, glazed lustre bowls, and silk cloth sold as far as China!",
+          "source_context": "Baghdad did not only buy foreign goods; skilled Iraqi and Persian workshops blew and carved clear glass flasks, glazed lustre bowls, and silk cloth sold as far as China! **Hinge Question:** What does Source D prove about whether Baghdad only bought goods from abroad or also made luxury crafts to sell?",
           "question_badge": "ISLAMIC CUT GLASS",
           "question": "What does Source D reveal about the skill of craftworkers inside the early Islamic world?",
-          "model_answer": "Source D reveals that early Islamic glassmakers were master craftworkers who blew and carved delicate geometric patterns into clear glass flasks. Merchants exported Iraqi glass and rosewater eastwards to China and westwards to Europe.",
-          "provenance": "Wheel-cut colourless early Islamic glass flask, Iraq or Iran (9th–10th century AD, museum decorative arts collection)."
+          "model_answer": "Source D shows early Islamic glassmakers blew and carved neat geometric patterns into clear glass flasks that merchants exported east to China and west to Europe.",
+          "provenance": "Carved clear glass perfume flask made in Iraq or Persia (9th–10th century AD)."
         }
       ],
       "causal_domino_spine": {
@@ -2427,10 +2877,10 @@ window.UNIT_DATA = {
             "tag": "🐪 SILK ROAD",
             "trigger": "Camel caravans trekked across deserts, resting every 30 km inside walled caravanserais to bring Chinese silk, porcelain, and Persian rugs to Baghdad’s souks.",
             "connective": "Connected overland Silk Road trails directly to Iraq’s rivers and southern sea ports.",
-            "question": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
-            "prose_hash": "1ba786e490",
-            "questionHeading": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
-            "focusClue": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
+            "question": "How did camel trails and walled inns supply Baghdad’s busy markets?",
+            "prose_hash": "b7b37bc289",
+            "questionHeading": "How did camel trails and walled inns supply Baghdad’s busy markets?",
+            "focusClue": "How did camel trails and walled inns supply Baghdad’s busy markets?",
             "dates": "c. AD 850–1000",
             "paraRef": "[4.1]"
           },
@@ -2444,7 +2894,7 @@ window.UNIT_DATA = {
             "trigger": "Triangular-sailed wooden dhows sailed from Basra across the Indian Ocean using astrolabes, while bankers invented paper sakk cheques.",
             "connective": "Flooded Abbasid markets with silver wealth that soon flowed north along river routes towards Europe.",
             "question": "How did wooden dhows and paper sakk cheques boost long-distance trade?",
-            "prose_hash": "0b542336f9",
+            "prose_hash": "7205795961",
             "questionHeading": "How did wooden dhows and paper sakk cheques boost long-distance trade?",
             "focusClue": "How did wooden dhows and paper sakk cheques boost long-distance trade?",
             "dates": "c. AD 850–1000",
@@ -2460,7 +2910,7 @@ window.UNIT_DATA = {
             "trigger": "Thousands of pure Abbasid silver dirhams reached Viking Scandinavia and Jorvik (York), while King Offa of Mercia copied an Arabic gold dinar.",
             "connective": "Proves Baghdad’s Golden Age trade network reached all the way to medieval Britain.",
             "question": "What proves Baghdad’s trade coins reached Viking Jorvik and Anglo-Saxon Britain?",
-            "prose_hash": "f92b86e705",
+            "prose_hash": "0e0c722fe2",
             "questionHeading": "What proves Baghdad’s trade coins reached Viking Jorvik and Anglo-Saxon Britain?",
             "focusClue": "What proves Baghdad’s trade coins reached Viking Jorvik and Anglo-Saxon Britain?",
             "dates": "c. AD 774–1000",
@@ -2471,8 +2921,8 @@ window.UNIT_DATA = {
       "workbook_stages": [
         {
           "step": 1,
-          "heading": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
-          "focus_clue": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
+          "heading": "How did camel trails and walled inns supply Baghdad’s busy markets?",
+          "focus_clue": "How did camel trails and walled inns supply Baghdad’s busy markets?",
           "words": [
             {
               "term": "bazaars",
@@ -2489,14 +2939,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "Long camel <strong>caravans</strong> rested safely inside walled <strong>caravanserai</strong> inns every thirty kilometres on their way to Baghdad’s covered <strong>bazaars</strong>.",
           "title": "c. AD 850–1000: Covered Bazaars, Silk Caravans & Roadside Caravanserais",
-          "question": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
-          "questionHeading": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
-          "focusClue": "How did camel caravans and caravanserais supply Baghdad’s covered bazaars?",
+          "question": "How did camel trails and walled inns supply Baghdad’s busy markets?",
+          "questionHeading": "How did camel trails and walled inns supply Baghdad’s busy markets?",
+          "focusClue": "How did camel trails and walled inns supply Baghdad’s busy markets?",
           "date": "c. AD 850–1000",
           "dates": "c. AD 850–1000",
           "para_ref": "[4.1]",
           "paraRef": "[4.1]",
-          "prose_hash": "1ba786e490"
+          "prose_hash": "b7b37bc289"
         },
         {
           "step": 2,
@@ -2525,7 +2975,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 850–1000",
           "para_ref": "[4.3]",
           "paraRef": "[4.3]",
-          "prose_hash": "0b542336f9"
+          "prose_hash": "7205795961"
         },
         {
           "step": 3,
@@ -2554,7 +3004,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 774–1000",
           "para_ref": "[4.5]",
           "paraRef": "[4.5]",
-          "prose_hash": "f92b86e705"
+          "prose_hash": "0e0c722fe2"
         }
       ],
       "tasks": [
@@ -2643,78 +3093,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Roughly how far apart were fortified roadside caravanserais built along the Silk Road?",
-          "q": "Roughly how far apart were fortified roadside caravanserais built along the Silk Road?",
+          "question": "What were Baghdad’s shaded covered marketplaces called?",
+          "q": "What were Baghdad’s shaded covered marketplaces called?",
           "options": [
-            "Every five hundred kilometres",
-            "Every thirty kilometres (about one day’s camel march)",
-            "Only inside capital cities",
-            "Every two metres"
+            "Agoras and forums",
+            "Bazaars (or souks)",
+            "Amphitheatres",
+            "Barracks"
           ],
           "correct": 1,
-          "answer": "Every thirty kilometres (about one day’s camel march)",
-          "a": "Every thirty kilometres (about one day’s camel march)",
-          "explanation": "Spacing walled caravanserais every 30 km meant camel caravans could reach safe shelter, water, and locked gates before nightfall."
+          "answer": "Bazaars (or souks)",
+          "a": "Bazaars (or souks)",
+          "explanation": "Baghdad’s shaded covered market streets were called bazaars or souks, fragrant with spices and stacked with silk and glass."
         },
         {
-          "stage": 2,
-          "question": "What type of stitched wooden sailing ship carried merchants from Basra across the Indian Ocean?",
-          "q": "What type of stitched wooden sailing ship carried merchants from Basra across the Indian Ocean?",
+          "stage": 1,
+          "question": "Which luxury goods arrived in Baghdad’s bazaars along overland Silk Road trails?",
+          "q": "Which luxury goods arrived in Baghdad’s bazaars along overland Silk Road trails?",
           "options": [
-            "A Roman trireme",
-            "A Viking longship",
-            "An Iron Age coracle",
-            "An Arab dhow with triangular sails"
+            "Potatoes, sweetcorn, and rubber",
+            "Coal, steam engines, and iron rails",
+            "Indian pepper and spices, Chinese silk and porcelain, and Persian rugs",
+            "Kangaroo skins and boomerangs"
+          ],
+          "correct": 2,
+          "answer": "Indian pepper and spices, Chinese silk and porcelain, and Persian rugs",
+          "a": "Indian pepper and spices, Chinese silk and porcelain, and Persian rugs",
+          "explanation": "Two-humped camel caravans trekked across Asia carrying Indian spices, Chinese silk and white porcelain, and Persian carpets."
+        },
+        {
+          "stage": 1,
+          "question": "Roughly how far apart were walled roadside caravanserai inns built along the Silk Road?",
+          "q": "Roughly how far apart were walled roadside caravanserai inns built along the Silk Road?",
+          "options": [
+            "Every five hundred kilometres",
+            "Every two metres",
+            "Only inside port cities",
+            "Every thirty kilometres (about one day’s camel march)"
           ],
           "correct": 3,
-          "answer": "An Arab dhow with triangular sails",
-          "a": "An Arab dhow with triangular sails",
-          "explanation": "Stitched wooden dhows rigged with triangular sails rode monsoon winds across the Indian Ocean while captains navigated with brass astrolabes."
+          "answer": "Every thirty kilometres (about one day’s camel march)",
+          "a": "Every thirty kilometres (about one day’s camel march)",
+          "explanation": "Spacing walled caravanserais 30 km apart meant camel caravans could reach locked gates, water wells, and hot food before nightfall."
+        },
+        {
+          "stage": 1,
+          "question": "How did a roadside caravanserai protect merchants and their camels overnight?",
+          "q": "How did a roadside caravanserai protect merchants and their camels overnight?",
+          "options": [
+            "Thick brick walls and locked gates kept desert bandits out while camels drank well water",
+            "Armed wooden triremes sailed around the desert",
+            "Underground ice tunnels froze bandits solid",
+            "Merchants hid their camels high up in date palms"
+          ],
+          "correct": 0,
+          "answer": "Thick brick walls and locked gates kept desert bandits out while camels drank well water",
+          "a": "Thick brick walls and locked gates kept desert bandits out while camels drank well water",
+          "explanation": "Each fortified caravanserai surrounded a central courtyard with high brick walls, sturdy gates, stables, and fresh water."
+        },
+        {
+          "stage": 1,
+          "question": "Inspect Source C. Why could camel drivers and sailors earn big profits carrying spices like pepper and cinnamon?",
+          "q": "Inspect Source C. Why could camel drivers and sailors earn big profits carrying spices like pepper and cinnamon?",
+          "options": [
+            "Spices weighed ten tonnes per seed",
+            "Spices were light to carry yet grew only in distant tropical lands like India",
+            "Spices grew wild in every English garden",
+            "Spices were used to bake mud city bricks"
+          ],
+          "correct": 1,
+          "answer": "Spices were light to carry yet grew only in distant tropical lands like India",
+          "a": "Spices were light to carry yet grew only in distant tropical lands like India",
+          "explanation": "Lightweight sacks of tropical spices took little cargo space yet fetched high silver prices for feasts, perfumes, and remedies."
         },
         {
           "stage": 2,
-          "question": "Which Arabic banking word for a signed paper payment slip gave English the word \"cheque\"?",
-          "q": "Which Arabic banking word for a signed paper payment slip gave English the word \"cheque\"?",
+          "question": "From which busy southern Iraqi port did wooden ships sail out towards the Indian Ocean?",
+          "q": "From which busy southern Iraqi port did wooden ships sail out towards the Indian Ocean?",
           "options": [
-            "Sakk",
-            "Souk",
-            "Quffa",
-            "Sifr"
+            "Winchester",
+            "Jorvik",
+            "Basra",
+            "Fez"
+          ],
+          "correct": 2,
+          "answer": "Basra",
+          "a": "Basra",
+          "explanation": "River boats carried goods down the Tigris to the port of Basra, where ocean-going ships loaded cargo for India and China."
+        },
+        {
+          "stage": 2,
+          "question": "How were the wooden hull planks of an Arab \"dhow\" trading ship held tightly together?",
+          "q": "How were the wooden hull planks of an Arab \"dhow\" trading ship held tightly together?",
+          "options": [
+            "With heavy steel bolts",
+            "With melted plastic glue",
+            "With concrete mortar",
+            "Stitched tightly together with strong coconut-husk rope"
+          ],
+          "correct": 3,
+          "answer": "Stitched tightly together with strong coconut-husk rope",
+          "a": "Stitched tightly together with strong coconut-husk rope",
+          "explanation": "Shipbuilders stitched wooden dhow planks together with flexible coconut-husk cord and hoisted tall triangular sails!"
+        },
+        {
+          "stage": 2,
+          "question": "Which instrument did dhow captains hold up to the night stars to steer safely across the Indian Ocean?",
+          "q": "Which instrument did dhow captains hold up to the night stars to steer safely across the Indian Ocean?",
+          "options": [
+            "A brass astrolabe",
+            "A marble kleroterion",
+            "A pinhole camera",
+            "A clay ostrakon"
           ],
           "correct": 0,
-          "answer": "Sakk",
-          "a": "Sakk",
-          "explanation": "Baghdad merchants carried a signed paper sakk instead of heavy gold bags and cashed it safely in distant cities."
+          "answer": "A brass astrolabe",
+          "a": "A brass astrolabe",
+          "explanation": "Measuring star heights above the horizon with a brass astrolabe told sea captains their latitude across open water."
+        },
+        {
+          "stage": 2,
+          "question": "What was an Abbasid paper \"sakk\", and which modern English banking word comes from it?",
+          "q": "What was an Abbasid paper \"sakk\", and which modern English banking word comes from it?",
+          "options": [
+            "A silk saddlebag; gave us \"sack\"",
+            "A signed paper payment slip cashed in another city; gave us \"cheque\"",
+            "A silver coin; gave us \"shilling\"",
+            "A spice jar; gave us \"sugar\""
+          ],
+          "correct": 1,
+          "answer": "A signed paper payment slip cashed in another city; gave us \"cheque\"",
+          "a": "A signed paper payment slip cashed in another city; gave us \"cheque\"",
+          "explanation": "Instead of hauling heavy coin bags past bandits or pirates, merchants carried a signed paper sakk — ancestor of our word \"cheque\"!"
+        },
+        {
+          "stage": 2,
+          "question": "Look at Source D. What does this 9th-century carved glass flask prove about workshops in Iraq and Persia?",
+          "q": "Look at Source D. What does this 9th-century carved glass flask prove about workshops in Iraq and Persia?",
+          "options": [
+            "They only bought goods and never made anything",
+            "Glass had not been invented yet",
+            "Skilled local glassmakers crafted luxury flasks and bowls exported abroad",
+            "Flasks were carved out of solid ice"
+          ],
+          "correct": 2,
+          "answer": "Skilled local glassmakers crafted luxury flasks and bowls exported abroad",
+          "a": "Skilled local glassmakers crafted luxury flasks and bowls exported abroad",
+          "explanation": "Baghdad and nearby workshops exported blown and cut glass flasks, lustreware bowls, and woven textiles across Asia and Europe."
         },
         {
           "stage": 3,
-          "question": "Near which Viking city in England have archaeologists dug up hoards containing Abbasid silver dirhams?",
-          "q": "Near which Viking city in England have archaeologists dug up hoards containing Abbasid silver dirhams?",
+          "question": "What were pure silver Abbasid coins stamped with Arabic script called?",
+          "q": "What were pure silver Abbasid coins stamped with Arabic script called?",
           "options": [
-            "Tintagel in Cornwall",
-            "Skara Brae in Orkney",
-            "Jorvik (modern York)",
-            "Bath in Somerset"
+            "Owl tetradrachms",
+            "Roman denarii",
+            "Paper sakks",
+            "Silver dirhams"
           ],
-          "correct": 2,
-          "answer": "Jorvik (modern York)",
-          "a": "Jorvik (modern York)",
-          "explanation": "Viking traders brought pure Islamic silver dirhams along Russian rivers to Scandinavia and Viking Yorkshire around Jorvik!"
+          "correct": 3,
+          "answer": "Silver dirhams",
+          "a": "Silver dirhams",
+          "explanation": "Pure Abbasid silver coins stamped in Arabic calligraphy were called dirhams."
+        },
+        {
+          "stage": 3,
+          "question": "How did thousands of Baghdad’s silver dirhams reach Viking Scandinavia and Jorvik (modern York)?",
+          "q": "How did thousands of Baghdad’s silver dirhams reach Viking Scandinavia and Jorvik (modern York)?",
+          "options": [
+            "Traded north along Russian rivers by fur and amber merchants",
+            "Dropped from hot-air balloons",
+            "Carried west by Roman legions in 146 BC",
+            "Minted inside Anglo-Saxon timber huts"
+          ],
+          "correct": 0,
+          "answer": "Traded north along Russian rivers by fur and amber merchants",
+          "a": "Traded north along Russian rivers by fur and amber merchants",
+          "explanation": "Viking traders swapped northern furs and amber along Russian rivers for pure Islamic silver dirhams, burying hoards near York!"
+        },
+        {
+          "stage": 3,
+          "question": "Why did Vikings in Jorvik and Scandinavia prize Abbasid dirhams even though they could not read Arabic?",
+          "q": "Why did Vikings in Jorvik and Scandinavia prize Abbasid dirhams even though they could not read Arabic?",
+          "options": [
+            "They used the coins as arrowheads",
+            "They trusted the high, pure silver weight of Abbasid coins",
+            "They thought the coins were magical sun discs",
+            "They melted them to make wooden shields"
+          ],
+          "correct": 1,
+          "answer": "They trusted the high, pure silver weight of Abbasid coins",
+          "a": "They trusted the high, pure silver weight of Abbasid coins",
+          "explanation": "Viking bullion traders weighed silver on folding scales and trusted the reliable purity of Abbasid dirhams."
         },
         {
           "stage": 3,
           "question": "Which Anglo-Saxon king minted a famous gold coin around AD 774 copying an Abbasid Arabic dinar?",
           "q": "Which Anglo-Saxon king minted a famous gold coin around AD 774 copying an Abbasid Arabic dinar?",
           "options": [
-            "Harold Godwinson",
+            "King Leonidas",
+            "King Alfred’s grandson",
             "King Offa of Mercia",
-            "Boudicca of the Iceni",
-            "Julius Caesar"
+            "King Alexander"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "King Offa of Mercia",
           "a": "King Offa of Mercia",
-          "explanation": "King Offa’s moneyers copied an Abbasid gold dinar complete with Kufic Arabic lettering alongside \"OFFA REX\"!"
+          "explanation": "Around AD 774, Anglo-Saxon King Offa of Mercia struck a gold coin copying swirling Arabic script from an Abbasid gold dinar!"
+        },
+        {
+          "stage": 3,
+          "question": "What modern English city stands where Viking traders buried silver hoards at \"Jorvik\"?",
+          "q": "What modern English city stands where Viking traders buried silver hoards at \"Jorvik\"?",
+          "options": [
+            "Bath",
+            "Winchester",
+            "Canterbury",
+            "York"
+          ],
+          "correct": 3,
+          "answer": "York",
+          "a": "York",
+          "explanation": "Viking Jorvik is modern-day York in northern England, where nearby hoards preserved Islamic silver dirhams."
         }
       ],
       "video": [
@@ -2770,10 +3370,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in dazzling cobalt blue or shimmering metallic lustreware! **Hinge Question:** How did Chinese trade inspire Iraqi potters to invent brand-new styles of glazed tableware like Source A?",
-          "Source B": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art form — painting wise proverbs and blessings in angular Kufic script around dinner bowls! **Hinge Question:** Why did early Islamic artists treat beautiful Arabic handwriting (calligraphy) as one of the highest forms of art?",
-          "Source C": "State-run weaving workshops produced luxurious silk brocades and embroidered tiraz bands gifted by caliphs as marks of honour to scholars, ambassadors, and officials. **Hinge Question:** What maths skills did weavers need to make interlocking star patterns repeat without a single mistake across silk cloth?",
-          "Source D": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s courts and homes — and gave us \"checkmate\" from Arabic/Persian Shah mat (\"the King is helpless\")! **Hinge Question:** Why are the kings, elephants, and riders in Source D shaped as smooth geometric pieces instead of carved human faces?"
+          "Source A": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in cobalt blue or shimmering metallic lustreware! **Hinge Question:** How did Chinese trade inspire Iraqi potters to invent brand-new styles of glazed tableware like Source A?",
+          "Source B": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art — painting wise proverbs and blessings around dinner bowls! **Hinge Question:** Why did early Islamic artists treat beautiful Arabic handwriting (calligraphy) as one of the highest forms of art?",
+          "Source C": "Royal weaving workshops produced colourful silk cloth and embroidered tiraz bands gifted by caliphs as marks of honour to scholars and ambassadors. **Hinge Question:** What maths skills did weavers need to make interlocking star patterns repeat without a single mistake across silk cloth?",
+          "Source D": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s homes — giving us \"checkmate\" from Shah mat (\"the King is helpless\")! **Hinge Question:** Why are the kings, elephants, and riders in Source D shaped as smooth geometric pieces instead of carved human faces?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2908,8 +3508,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "c. AD 900: Cool Courtyard Houses, Windcatchers & Public Hammams",
-          "text": "<span class=\"para-ref\">[5.1]</span> Summer afternoons in Iraq blazed fiercely hot, yet Baghdad’s builders kept family homes remarkably cool. Thick brick walls surrounded shaded inner **courtyards** splashed by stone fountains and fragrant orange trees. Above the roofs rose tall **windcatcher** towers, called **badgirs**, facing straight into the breeze. These clever towers scooped cool outdoor air down indoors while pushing hot air outside!<br><br><span class=\"para-ref\">[5.2]</span> Cleanliness and fresh water mattered deeply in daily Islamic life before prayers and family meals. Every neighbourhood had steamed public bathhouses called **hammams**, with hot and cool tiled rooms. Bathers scrubbed with scented olive-oil **soap** bars and splashed sweet **rosewater** onto clean linen robes.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Summer afternoons in Iraq blazed fiercely hot, yet Baghdad’s builders kept family homes remarkably cool. Thick brick walls surrounded shaded inner **courtyards** splashed by stone fountains and fragrant orange trees. Above the roofs rose tall **windcatcher** towers, called **badgirs**, facing straight into the breeze. These clever towers scooped cool outdoor air down indoors while pushing hot air outside!<br><br><span class=\"para-ref\">[5.2]</span> Cleanliness and fresh water mattered deeply in daily Islamic life before prayers and family meals. Every neighbourhood had steamed public bathhouses called **hammams**, with hot and cool tiled rooms. Bathers scrubbed with scented olive-oil **soap** bars and splashed sweet **rosewater** onto clean linen robes.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Summer afternoons in Iraq blazed hot, yet **Baghdad's** builders kept **homes** wonderfully **cool**. Thick brick walls sheltered shaded inner **courtyards** splashed by stone fountains and orange trees. Above the roofs rose tall **windcatcher** towers, called **badgirs** [bad-GEERZ], facing the breeze. They scooped cool outdoor air down indoors while pushing hot air out!<br><br><span class=\"para-ref\">[5.2]</span> Keeping **clean** mattered deeply before daily prayers and **families'** meals. Every district had steamed public bathhouses called **hammams** [hah-MAHMZ] with tiled hot and cool rooms. Bathers scrubbed with olive-oil **soap** bars and splashed sweet **rosewater**!",
+          "content": "<span class=\"para-ref\">[5.1]</span> Summer afternoons in Iraq blazed hot, yet **Baghdad's** builders kept **homes** wonderfully **cool**. Thick brick walls sheltered shaded inner **courtyards** splashed by stone fountains and orange trees. Above the roofs rose tall **windcatcher** towers, called **badgirs** [bad-GEERZ], facing the breeze. They scooped cool outdoor air down indoors while pushing hot air out!<br><br><span class=\"para-ref\">[5.2]</span> Keeping **clean** mattered deeply before daily prayers and **families'** meals. Every district had steamed public bathhouses called **hammams** [hah-MAHMZ] with tiled hot and cool rooms. Bathers scrubbed with olive-oil **soap** bars and splashed sweet **rosewater**!",
           "image": "/units/ks2_early_islamic_baghdad/assets/courtyard_house_windcatcher_tower.jpg",
           "image_alt": "Traditional brick courtyard house topped by a tall windcatcher cooling tower funneling breezes indoors",
           "caption": "A shaded courtyard house crowned with a tall windcatcher (badgir) tower — ancient natural air-conditioning for scorching summers!",
@@ -2920,8 +3520,8 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "c. AD 900: Citrus Orchards, Spiced Kitchens & Geometric Mosque Art",
-          "text": "<span class=\"para-ref\">[5.3]</span> Canal waterwheels irrigated lush orchards around Baghdad bursting with exciting new crops from Asia. Farmers grew tangy **lemons**, sweet **oranges**, purple **aubergines**, fresh green **spinach**, and ruby **pomegranates**. Cooks simmered spiced stews with crushed **almonds** and **cane sugar**, served on metallic **lustreware** bowls.<br><br><span class=\"para-ref\">[5.4]</span> Inside mosques, artists avoided carving human or animal statues so worshippers honoured God alone. Instead, craftworkers used brass rulers and compasses to tile dazzling eight-pointed **geometric** star mosaics. Flowing leaf vines called **arabesque** curled smoothly beside sacred **Arabic calligraphy** from the Qur’an. Every repeating star pattern reminded viewers of the endless order and beauty of creation.",
-          "content": "<span class=\"para-ref\">[5.3]</span> Canal waterwheels irrigated lush orchards around Baghdad bursting with exciting new crops from Asia. Farmers grew tangy **lemons**, sweet **oranges**, purple **aubergines**, fresh green **spinach**, and ruby **pomegranates**. Cooks simmered spiced stews with crushed **almonds** and **cane sugar**, served on metallic **lustreware** bowls.<br><br><span class=\"para-ref\">[5.4]</span> Inside mosques, artists avoided carving human or animal statues so worshippers honoured God alone. Instead, craftworkers used brass rulers and compasses to tile dazzling eight-pointed **geometric** star mosaics. Flowing leaf vines called **arabesque** curled smoothly beside sacred **Arabic calligraphy** from the Qur’an. Every repeating star pattern reminded viewers of the endless order and beauty of creation.",
+          "text": "<span class=\"para-ref\">[5.3]</span> Around **AD 900**, canal waterwheels fed lush orchards around **Baghdad** filled with tasty new **foods**. Farmers grew tangy **lemons**, sweet **oranges**, purple **aubergines**, green **spinach**, and ruby **pomegranates**. Cooks simmered spiced stews with crushed **almonds** and **cane sugar**. Families served warm dishes on shiny metallic **lustreware** bowls.<br><br><span class=\"para-ref\">[5.4]</span> Inside mosques, **art styles** avoided human or animal statues so worshippers honoured God alone. Using compasses, tilers made eight-pointed **geometric** stars and curling **arabesque** [ar-uh-BESK] leaf vines. Sacred **Arabic calligraphy** from the Qur'an completed every wall in calm symmetry!",
+          "content": "<span class=\"para-ref\">[5.3]</span> Around **AD 900**, canal waterwheels fed lush orchards around **Baghdad** filled with tasty new **foods**. Farmers grew tangy **lemons**, sweet **oranges**, purple **aubergines**, green **spinach**, and ruby **pomegranates**. Cooks simmered spiced stews with crushed **almonds** and **cane sugar**. Families served warm dishes on shiny metallic **lustreware** bowls.<br><br><span class=\"para-ref\">[5.4]</span> Inside mosques, **art styles** avoided human or animal statues so worshippers honoured God alone. Using compasses, tilers made eight-pointed **geometric** stars and curling **arabesque** [ar-uh-BESK] leaf vines. Sacred **Arabic calligraphy** from the Qur'an completed every wall in calm symmetry!",
           "image": "/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg",
           "image_alt": "Intricate green, blue, and gold Islamic eight-pointed geometric star mosaic tilework",
           "caption": "Dazzling eight-pointed Islamic geometric star mosaic tilework laid out using compasses, rulers, and symmetry.",
@@ -2935,16 +3535,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/abbasid_cobalt_blue_glazed_bowl.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/abbasid_cobalt_blue_glazed_bowl.jpg",
-              "title": "Source A: 9th-Century Abbasid Cobalt-Blue-on-White Glazed Ceramic Bowl (Iraq)",
-              "caption": "An Iraqi earthenware bowl from the 9th century AD, painted in rich cobalt-blue floral and geometric designs over a snowy-white tin glaze.",
+              "title": "Source A: 9th-Century Cobalt-Blue-on-White Glazed Bowl From Iraq",
+              "caption": "An Iraqi clay bowl from the 9th century AD, painted in rich cobalt-blue floral and geometric designs over a snowy-white glaze.",
               "author": "Abbasid Master Potter in Iraq (Basra or Baghdad)",
               "date": "9th Century AD",
-              "context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in dazzling cobalt blue or shimmering metallic lustreware!",
-              "source_context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in dazzling cobalt blue or shimmering metallic lustreware!",
+              "context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in cobalt blue or shimmering metallic lustreware!",
+              "source_context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in cobalt blue or shimmering metallic lustreware! **Hinge Question:** How did Chinese trade inspire Iraqi potters to invent brand-new styles of glazed tableware like Source A?",
               "question_badge": "COBALT GLAZED BOWL",
               "question": "Look closely at Source A. How did Iraqi potters make everyday clay bowls look so luxurious?",
-              "model_answer": "Iraqi potters coated reddish local clay in a snowy-white tin glaze inspired by Chinese porcelain, then painted vivid cobalt-blue floral and geometric patterns or metallic lustre glazes before firing.",
-              "provenance": "Abbasid tin-glazed earthenware bowl painted in cobalt blue, Iraq (9th century AD, Metropolitan Museum of Art)."
+              "model_answer": "Iraqi potters coated local clay in a snowy-white tin glaze inspired by Chinese porcelain, then painted rich cobalt-blue patterns or metallic glazes before firing.",
+              "provenance": "Abbasid white-glazed clay bowl painted in cobalt blue, made in Iraq (9th century AD)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l5_src_b",
@@ -2953,24 +3553,24 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/nishapur_kufic_calligraphy_bowl.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/nishapur_kufic_calligraphy_bowl.jpg",
-              "title": "Source B: 10th-Century White Ceramic Bowl Ringed with Kufic Arabic Calligraphy",
-              "caption": "A crisp 10th-century white slipware bowl encircled by bold black Kufic Arabic calligraphy sharing a wise proverb about generosity and learning.",
+              "title": "Source B: 10th-Century White Bowl Ringed With Arabic Calligraphy",
+              "caption": "A crisp 10th-century white-coated clay bowl encircled by bold black Kufic Arabic calligraphy sharing a wise proverb about learning.",
               "author": "Early Islamic Potter & Calligrapher (Nishapur)",
               "date": "10th Century AD",
-              "context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art form — painting wise proverbs and blessings in angular Kufic script around dinner bowls!",
-              "source_context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art form — painting wise proverbs and blessings in angular Kufic script around dinner bowls!",
+              "context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art — painting wise proverbs and blessings around dinner bowls!",
+              "source_context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art — painting wise proverbs and blessings around dinner bowls! **Hinge Question:** Why did early Islamic artists treat beautiful Arabic handwriting (calligraphy) as one of the highest forms of art?",
               "question_badge": "KUFIC CALLIGRAPHY BOWL",
               "question": "Inspect the black lettering around Source B. Why was calligraphy prized across the Islamic world?",
-              "model_answer": "Calligraphy was prized because Arabic was the sacred language of the Qur’an. Skilled artists stretched and balanced bold Kufic letters so beautifully that sacred verses and wise proverbs decorated mosques, coins, and dinner bowls.",
-              "provenance": "Earthenware bowl painted in black Kufic Arabic script on white slip, Nishapur, Iran (10th century AD, museum collection)."
+              "model_answer": "Calligraphy was prized because Arabic was the sacred language of the Qur’an, inspiring artists to balance bold letters across mosques, coins, and bowls.",
+              "provenance": "White-coated clay bowl painted in black Kufic Arabic script, Nishapur, Iran (10th century AD)."
             }
           ]
         },
         {
           "act": 3,
           "title": "c. AD 900: Silk Tiraz Robes, Glass Mosque Lamps & Shatranj Chess",
-          "text": "<span class=\"para-ref\">[5.5]</span> Beyond mosques, skilled workshops filled Baghdad’s homes with bright silk textiles and glowing glasswork. Royal looms wove luxury silk robes trimmed with embroidered Arabic name bands called **tiraz**. Master glassblowers also gilded enamelled **mosque lamps** inscribed with glowing verses about divine light.<br><br><span class=\"para-ref\">[5.6]</span> When evening breezes cooled the courtyard, families gathered on woven carpets for poetry and riddles. Happy guests sipped chilled fruit syrups sweetened with sugar and fragrant drops of rosewater. Best loved of all was **shatranj**, an ancient strategy board game that became modern **chess**! Clever players cried *Shah mat*, meaning the king is helpless, giving English our word **checkmate**!",
-          "content": "<span class=\"para-ref\">[5.5]</span> Beyond mosques, skilled workshops filled Baghdad’s homes with bright silk textiles and glowing glasswork. Royal looms wove luxury silk robes trimmed with embroidered Arabic name bands called **tiraz**. Master glassblowers also gilded enamelled **mosque lamps** inscribed with glowing verses about divine light.<br><br><span class=\"para-ref\">[5.6]</span> When evening breezes cooled the courtyard, families gathered on woven carpets for poetry and riddles. Happy guests sipped chilled fruit syrups sweetened with sugar and fragrant drops of rosewater. Best loved of all was **shatranj**, an ancient strategy board game that became modern **chess**! Clever players cried *Shah mat*, meaning the king is helpless, giving English our word **checkmate**!",
+          "text": "<span class=\"para-ref\">[5.5]</span> Skilled workshops helped **people** in **Baghdad** **dress** finely and **light** their **homes**. Royal looms wove bright silk robes trimmed with embroidered Arabic name bands called **tiraz** [tee-RAHZ]. Master glassblowers also gilded enamelled glass **mosque lamps** inscribed with glowing verses.<br><br><span class=\"para-ref\">[5.6]</span> When evening breezes cooled the courtyard, families sat on woven carpets. Guests sipped sweet fruit syrups with rosewater and loved to **play** strategy games! Everyone prized **shatranj** [shat-RANJ], the ancient board game that became **chess**. Clever winners cried *Shah mat*, giving English our word **checkmate**!",
+          "content": "<span class=\"para-ref\">[5.5]</span> Skilled workshops helped **people** in **Baghdad** **dress** finely and **light** their **homes**. Royal looms wove bright silk robes trimmed with embroidered Arabic name bands called **tiraz** [tee-RAHZ]. Master glassblowers also gilded enamelled glass **mosque lamps** inscribed with glowing verses.<br><br><span class=\"para-ref\">[5.6]</span> When evening breezes cooled the courtyard, families sat on woven carpets. Guests sipped sweet fruit syrups with rosewater and loved to **play** strategy games! Everyone prized **shatranj** [shat-RANJ], the ancient board game that became **chess**. Clever winners cried *Shah mat*, giving English our word **checkmate**!",
           "image": "/units/ks2_early_islamic_baghdad/assets/gilded_enameled_mosque_lamp_met.jpg",
           "image_alt": "Gilded and enamelled Islamic glass mosque lamp inscribed with flowing Arabic calligraphy",
           "caption": "A gilded and enamelled Islamic glass mosque lamp inscribed with sacred Arabic calligraphy that glowed softly when lit with oil.",
@@ -2984,16 +3584,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/woven_islamic_silk_brocade.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/woven_islamic_silk_brocade.jpg",
-              "title": "Source C: Woven Islamic Silk Brocade Textile with Interlocking Geometric Stars",
-              "caption": "Richly woven silk brocade cloth patterned with interlocking geometric stars and arabesque motifs, prized for fine robes and cushions.",
+              "title": "Source C: Woven Silk Textile With Interlocking Geometric Stars",
+              "caption": "Richly woven silk cloth patterned with interlocking geometric stars and leafy arabesque vines, prized for robes and cushions.",
               "author": "Royal Tiraz Silk Weavers",
               "date": "Medieval Islamic Period",
-              "context": "State-run weaving workshops produced luxurious silk brocades and embroidered tiraz bands gifted by caliphs as marks of honour to scholars, ambassadors, and officials.",
-              "source_context": "State-run weaving workshops produced luxurious silk brocades and embroidered tiraz bands gifted by caliphs as marks of honour to scholars, ambassadors, and officials.",
+              "context": "Royal weaving workshops produced colourful silk cloth and embroidered tiraz bands gifted by caliphs as marks of honour to scholars and ambassadors.",
+              "source_context": "Royal weaving workshops produced colourful silk cloth and embroidered tiraz bands gifted by caliphs as marks of honour to scholars and ambassadors. **Hinge Question:** What maths skills did weavers need to make interlocking star patterns repeat without a single mistake across silk cloth?",
               "question_badge": "SILK STAR BROCADE",
               "question": "Look at the repeating stars on Source C. What skills did Islamic silk weavers need?",
-              "model_answer": "Islamic weavers needed clever geometry and symmetry to count hundreds of coloured silk threads accurately, making eight-pointed stars interlock seamlessly across robes and tiraz banners.",
-              "provenance": "Woven Islamic silk brocade textile with geometric star lattice (medieval Islamic textile collection)."
+              "model_answer": "Islamic weavers needed strong geometry and symmetry to count hundreds of coloured silk threads accurately so eight-pointed stars interlocked across the cloth.",
+              "provenance": "Woven medieval Islamic silk brocade cloth patterned with interlocking geometric stars."
             },
             {
               "id": "ks2_early_islamic_baghdad_l5_src_d",
@@ -3003,15 +3603,15 @@ window.UNIT_DATA = {
               "src": "/units/ks2_early_islamic_baghdad/assets/medieval_islamic_ceramic_chess_set.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/medieval_islamic_ceramic_chess_set.jpg",
               "title": "Source D: Complete 32-Piece Glazed Ceramic Shatranj Chess Set (12th Century)",
-              "caption": "A complete thirty-two-piece turquoise glazed ceramic Islamic shatranj chess set — shaped in neat abstract forms rather than human statues.",
+              "caption": "A complete thirty-two-piece turquoise glazed clay shatranj chess set — shaped as smooth geometric pieces rather than human figures.",
               "author": "Nishapur Ceramic Craftworker",
               "date": "12th Century AD (continuing Abbasid shatranj tradition)",
-              "context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s courts and homes — and gave us \"checkmate\" from Arabic/Persian Shah mat (\"the King is helpless\")!",
-              "source_context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s courts and homes — and gave us \"checkmate\" from Arabic/Persian Shah mat (\"the King is helpless\")!",
+              "context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s homes — giving us \"checkmate\" from Shah mat (\"the King is helpless\")!",
+              "source_context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s homes — giving us \"checkmate\" from Shah mat (\"the King is helpless\")! **Hinge Question:** Why are the kings, elephants, and riders in Source D shaped as smooth geometric pieces instead of carved human faces?",
               "question_badge": "SHATRANJ CHESS SET",
               "question": "Examine Source D. What does this shatranj set reveal about leisure and art in Islamic homes?",
-              "model_answer": "Source D shows families and scholars loved playing clever strategy games like shatranj (chess) indoors, while shaping pieces in smooth geometric styles rather than lifelike human statues.",
-              "provenance": "Complete 32-piece turquoise-glazed fritware shatranj chess set from Nishapur (12th century AD, Metropolitan Museum of Art)."
+              "model_answer": "Source D shows families loved playing clever strategy games like shatranj (chess) together while shaping pieces in smooth geometric forms rather than human statues.",
+              "provenance": "Complete 32-piece turquoise-glazed clay shatranj chess set from Nishapur (12th century AD)."
             }
           ]
         }
@@ -3024,16 +3624,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/abbasid_cobalt_blue_glazed_bowl.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/abbasid_cobalt_blue_glazed_bowl.jpg",
-          "title": "Source A: 9th-Century Abbasid Cobalt-Blue-on-White Glazed Ceramic Bowl (Iraq)",
-          "caption": "An Iraqi earthenware bowl from the 9th century AD, painted in rich cobalt-blue floral and geometric designs over a snowy-white tin glaze.",
+          "title": "Source A: 9th-Century Cobalt-Blue-on-White Glazed Bowl From Iraq",
+          "caption": "An Iraqi clay bowl from the 9th century AD, painted in rich cobalt-blue floral and geometric designs over a snowy-white glaze.",
           "author": "Abbasid Master Potter in Iraq (Basra or Baghdad)",
           "date": "9th Century AD",
-          "context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in dazzling cobalt blue or shimmering metallic lustreware!",
-          "source_context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in dazzling cobalt blue or shimmering metallic lustreware!",
+          "context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in cobalt blue or shimmering metallic lustreware!",
+          "source_context": "Inspired by snowy-white Chinese porcelain arriving on dhow ships, Iraqi potters invented creamy tin-glazed bowls painted in cobalt blue or shimmering metallic lustreware! **Hinge Question:** How did Chinese trade inspire Iraqi potters to invent brand-new styles of glazed tableware like Source A?",
           "question_badge": "COBALT GLAZED BOWL",
           "question": "Look closely at Source A. How did Iraqi potters make everyday clay bowls look so luxurious?",
-          "model_answer": "Iraqi potters coated reddish local clay in a snowy-white tin glaze inspired by Chinese porcelain, then painted vivid cobalt-blue floral and geometric patterns or metallic lustre glazes before firing.",
-          "provenance": "Abbasid tin-glazed earthenware bowl painted in cobalt blue, Iraq (9th century AD, Metropolitan Museum of Art)."
+          "model_answer": "Iraqi potters coated local clay in a snowy-white tin glaze inspired by Chinese porcelain, then painted rich cobalt-blue patterns or metallic glazes before firing.",
+          "provenance": "Abbasid white-glazed clay bowl painted in cobalt blue, made in Iraq (9th century AD)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l5_src_b",
@@ -3042,16 +3642,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/nishapur_kufic_calligraphy_bowl.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/nishapur_kufic_calligraphy_bowl.jpg",
-          "title": "Source B: 10th-Century White Ceramic Bowl Ringed with Kufic Arabic Calligraphy",
-          "caption": "A crisp 10th-century white slipware bowl encircled by bold black Kufic Arabic calligraphy sharing a wise proverb about generosity and learning.",
+          "title": "Source B: 10th-Century White Bowl Ringed With Arabic Calligraphy",
+          "caption": "A crisp 10th-century white-coated clay bowl encircled by bold black Kufic Arabic calligraphy sharing a wise proverb about learning.",
           "author": "Early Islamic Potter & Calligrapher (Nishapur)",
           "date": "10th Century AD",
-          "context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art form — painting wise proverbs and blessings in angular Kufic script around dinner bowls!",
-          "source_context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art form — painting wise proverbs and blessings in angular Kufic script around dinner bowls!",
+          "context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art — painting wise proverbs and blessings around dinner bowls!",
+          "source_context": "Because the Qur’an was revealed in Arabic, calligraphers turned handwriting into a treasured art — painting wise proverbs and blessings around dinner bowls! **Hinge Question:** Why did early Islamic artists treat beautiful Arabic handwriting (calligraphy) as one of the highest forms of art?",
           "question_badge": "KUFIC CALLIGRAPHY BOWL",
           "question": "Inspect the black lettering around Source B. Why was calligraphy prized across the Islamic world?",
-          "model_answer": "Calligraphy was prized because Arabic was the sacred language of the Qur’an. Skilled artists stretched and balanced bold Kufic letters so beautifully that sacred verses and wise proverbs decorated mosques, coins, and dinner bowls.",
-          "provenance": "Earthenware bowl painted in black Kufic Arabic script on white slip, Nishapur, Iran (10th century AD, museum collection)."
+          "model_answer": "Calligraphy was prized because Arabic was the sacred language of the Qur’an, inspiring artists to balance bold letters across mosques, coins, and bowls.",
+          "provenance": "White-coated clay bowl painted in black Kufic Arabic script, Nishapur, Iran (10th century AD)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l5_src_c",
@@ -3060,16 +3660,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/woven_islamic_silk_brocade.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/woven_islamic_silk_brocade.jpg",
-          "title": "Source C: Woven Islamic Silk Brocade Textile with Interlocking Geometric Stars",
-          "caption": "Richly woven silk brocade cloth patterned with interlocking geometric stars and arabesque motifs, prized for fine robes and cushions.",
+          "title": "Source C: Woven Silk Textile With Interlocking Geometric Stars",
+          "caption": "Richly woven silk cloth patterned with interlocking geometric stars and leafy arabesque vines, prized for robes and cushions.",
           "author": "Royal Tiraz Silk Weavers",
           "date": "Medieval Islamic Period",
-          "context": "State-run weaving workshops produced luxurious silk brocades and embroidered tiraz bands gifted by caliphs as marks of honour to scholars, ambassadors, and officials.",
-          "source_context": "State-run weaving workshops produced luxurious silk brocades and embroidered tiraz bands gifted by caliphs as marks of honour to scholars, ambassadors, and officials.",
+          "context": "Royal weaving workshops produced colourful silk cloth and embroidered tiraz bands gifted by caliphs as marks of honour to scholars and ambassadors.",
+          "source_context": "Royal weaving workshops produced colourful silk cloth and embroidered tiraz bands gifted by caliphs as marks of honour to scholars and ambassadors. **Hinge Question:** What maths skills did weavers need to make interlocking star patterns repeat without a single mistake across silk cloth?",
           "question_badge": "SILK STAR BROCADE",
           "question": "Look at the repeating stars on Source C. What skills did Islamic silk weavers need?",
-          "model_answer": "Islamic weavers needed clever geometry and symmetry to count hundreds of coloured silk threads accurately, making eight-pointed stars interlock seamlessly across robes and tiraz banners.",
-          "provenance": "Woven Islamic silk brocade textile with geometric star lattice (medieval Islamic textile collection)."
+          "model_answer": "Islamic weavers needed strong geometry and symmetry to count hundreds of coloured silk threads accurately so eight-pointed stars interlocked across the cloth.",
+          "provenance": "Woven medieval Islamic silk brocade cloth patterned with interlocking geometric stars."
         },
         {
           "id": "ks2_early_islamic_baghdad_l5_src_d",
@@ -3079,15 +3679,15 @@ window.UNIT_DATA = {
           "src": "/units/ks2_early_islamic_baghdad/assets/medieval_islamic_ceramic_chess_set.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/medieval_islamic_ceramic_chess_set.jpg",
           "title": "Source D: Complete 32-Piece Glazed Ceramic Shatranj Chess Set (12th Century)",
-          "caption": "A complete thirty-two-piece turquoise glazed ceramic Islamic shatranj chess set — shaped in neat abstract forms rather than human statues.",
+          "caption": "A complete thirty-two-piece turquoise glazed clay shatranj chess set — shaped as smooth geometric pieces rather than human figures.",
           "author": "Nishapur Ceramic Craftworker",
           "date": "12th Century AD (continuing Abbasid shatranj tradition)",
-          "context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s courts and homes — and gave us \"checkmate\" from Arabic/Persian Shah mat (\"the King is helpless\")!",
-          "source_context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s courts and homes — and gave us \"checkmate\" from Arabic/Persian Shah mat (\"the King is helpless\")!",
+          "context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s homes — giving us \"checkmate\" from Shah mat (\"the King is helpless\")!",
+          "source_context": "Adopted from India via Persia, the strategy game shatranj (chess) swept Baghdad’s homes — giving us \"checkmate\" from Shah mat (\"the King is helpless\")! **Hinge Question:** Why are the kings, elephants, and riders in Source D shaped as smooth geometric pieces instead of carved human faces?",
           "question_badge": "SHATRANJ CHESS SET",
           "question": "Examine Source D. What does this shatranj set reveal about leisure and art in Islamic homes?",
-          "model_answer": "Source D shows families and scholars loved playing clever strategy games like shatranj (chess) indoors, while shaping pieces in smooth geometric styles rather than lifelike human statues.",
-          "provenance": "Complete 32-piece turquoise-glazed fritware shatranj chess set from Nishapur (12th century AD, Metropolitan Museum of Art)."
+          "model_answer": "Source D shows families loved playing clever strategy games like shatranj (chess) together while shaping pieces in smooth geometric forms rather than human statues.",
+          "provenance": "Complete 32-piece turquoise-glazed clay shatranj chess set from Nishapur (12th century AD)."
         }
       ],
       "causal_domino_spine": {
@@ -3104,7 +3704,7 @@ window.UNIT_DATA = {
             "trigger": "Families beat scorching Iraqi heat inside shaded courtyard homes cooled by tall windcatcher (badgir) towers and washed in public hammams with soap and rosewater.",
             "connective": "Canal water also irrigated lush new orchards and gardens all around Baghdad.",
             "question": "How did Baghdad’s homes and hammams keep families cool and clean?",
-            "prose_hash": "ecf250a59f",
+            "prose_hash": "a475ce87de",
             "questionHeading": "How did Baghdad’s homes and hammams keep families cool and clean?",
             "focusClue": "How did Baghdad’s homes and hammams keep families cool and clean?",
             "dates": "c. AD 900",
@@ -3119,10 +3719,10 @@ window.UNIT_DATA = {
             "tag": "⭐ GEOMETRIC ART",
             "trigger": "Orchards grew lemons, oranges, aubergines, spinach, pomegranates, almonds, and cane sugar, while mosque artists mastered geometric stars, arabesque vines, and calligraphy.",
             "connective": "Inspired potters, weavers, and glassmakers to decorate everyday objects with symmetry and script.",
-            "question": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
-            "prose_hash": "8787c9425d",
-            "questionHeading": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
-            "focusClue": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
+            "question": "What new foods and art styles flourished in Baghdad around AD 900?",
+            "prose_hash": "b5d328d67f",
+            "questionHeading": "What new foods and art styles flourished in Baghdad around AD 900?",
+            "focusClue": "What new foods and art styles flourished in Baghdad around AD 900?",
             "dates": "c. AD 900",
             "paraRef": "[5.3]"
           },
@@ -3135,10 +3735,10 @@ window.UNIT_DATA = {
             "tag": "♟️ SHATRANJ CHESS",
             "trigger": "Workshops crafted silk tiraz robes, gilded mosque lamps, and metallic lustreware bowls, while families played shatranj (chess) on evening carpets.",
             "connective": "Created a vibrant urban culture admired across Europe, Africa, and Asia.",
-            "question": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
-            "prose_hash": "322d308531",
-            "questionHeading": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
-            "focusClue": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
+            "question": "How did people in Baghdad dress, light their homes, and play?",
+            "prose_hash": "b4054d7a92",
+            "questionHeading": "How did people in Baghdad dress, light their homes, and play?",
+            "focusClue": "How did people in Baghdad dress, light their homes, and play?",
             "dates": "c. AD 900",
             "paraRef": "[5.5]"
           }
@@ -3172,12 +3772,12 @@ window.UNIT_DATA = {
           "dates": "c. AD 900",
           "para_ref": "[5.1]",
           "paraRef": "[5.1]",
-          "prose_hash": "ecf250a59f"
+          "prose_hash": "a475ce87de"
         },
         {
           "step": 2,
-          "heading": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
-          "focus_clue": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
+          "heading": "What new foods and art styles flourished in Baghdad around AD 900?",
+          "focus_clue": "What new foods and art styles flourished in Baghdad around AD 900?",
           "words": [
             {
               "term": "cane sugar",
@@ -3194,19 +3794,19 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "Cooks sweetened dishes with <strong>cane sugar</strong>, while mosque artists paired <strong>geometric</strong> star tiles with flowing <strong>Arabic calligraphy</strong>.",
           "title": "c. AD 900: Citrus Orchards, Spiced Kitchens & Geometric Mosque Art",
-          "question": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
-          "questionHeading": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
-          "focusClue": "What new foods and non-figurative art styles flourished in Baghdad c. AD 900?",
+          "question": "What new foods and art styles flourished in Baghdad around AD 900?",
+          "questionHeading": "What new foods and art styles flourished in Baghdad around AD 900?",
+          "focusClue": "What new foods and art styles flourished in Baghdad around AD 900?",
           "date": "c. AD 900",
           "dates": "c. AD 900",
           "para_ref": "[5.3]",
           "paraRef": "[5.3]",
-          "prose_hash": "8787c9425d"
+          "prose_hash": "b5d328d67f"
         },
         {
           "step": 3,
-          "heading": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
-          "focus_clue": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
+          "heading": "How did people in Baghdad dress, light their homes, and play?",
+          "focus_clue": "How did people in Baghdad dress, light their homes, and play?",
           "words": [
             {
               "term": "tiraz",
@@ -3223,14 +3823,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "Artisans wove silk <strong>tiraz</strong> robes and gilded glass <strong>mosque lamps</strong>, while families played clever <strong>shatranj</strong> chess matches at dusk.",
           "title": "c. AD 900: Silk Tiraz Robes, Glass Mosque Lamps & Shatranj Chess",
-          "question": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
-          "questionHeading": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
-          "focusClue": "How did Baghdad’s families dress, decorate their homes, and spend evenings?",
+          "question": "How did people in Baghdad dress, light their homes, and play?",
+          "questionHeading": "How did people in Baghdad dress, light their homes, and play?",
+          "focusClue": "How did people in Baghdad dress, light their homes, and play?",
           "date": "c. AD 900",
           "dates": "c. AD 900",
           "para_ref": "[5.5]",
           "paraRef": "[5.5]",
-          "prose_hash": "322d308531"
+          "prose_hash": "b4054d7a92"
         }
       ],
       "tasks": [
@@ -3319,78 +3919,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "How did a tall windcatcher (badgir) tower cool a Baghdad courtyard house without electricity?",
-          "q": "How did a tall windcatcher (badgir) tower cool a Baghdad courtyard house without electricity?",
+          "question": "How did a tall rooftop windcatcher tower (badgir) cool a Baghdad house without electricity?",
+          "q": "How did a tall rooftop windcatcher tower (badgir) cool a Baghdad house without electricity?",
           "options": [
-            "By burning coal in the cellar",
-            "By blocks of Arctic sea ice shipped from Norway",
-            "By scooping high outdoor breezes down indoors while pushing hot air out",
-            "By blocking every window with solid iron shutters"
+            "It scooped cool high breezes down indoors while pushing hot air out",
+            "It burned coal to spin iron ceiling fans",
+            "It pumped freezing seawater from the Atlantic Ocean",
+            "It sealed every room underground in total darkness"
           ],
-          "correct": 2,
-          "answer": "By scooping high outdoor breezes down indoors while pushing hot air out",
-          "a": "By scooping high outdoor breezes down indoors while pushing hot air out",
-          "explanation": "Facing into the wind above rooftop level, badgir windcatcher towers funnelled cool air straight into shaded courtyard rooms."
+          "correct": 0,
+          "answer": "It scooped cool high breezes down indoors while pushing hot air out",
+          "a": "It scooped cool high breezes down indoors while pushing hot air out",
+          "explanation": "Facing into the breeze above the roof, badgir windcatcher towers funnelled cool air down into shaded courtyard rooms."
         },
         {
           "stage": 1,
-          "question": "Which group of crops spread through Baghdad’s irrigated orchards and kitchens around AD 900?",
-          "q": "Which group of crops spread through Baghdad’s irrigated orchards and kitchens around AD 900?",
+          "question": "What stood at the centre of a traditional Baghdad family courtyard home to keep the air pleasant?",
+          "q": "What stood at the centre of a traditional Baghdad family courtyard home to keep the air pleasant?",
           "options": [
-            "Lemons, oranges, aubergines, spinach, pomegranates, almonds, and cane sugar",
-            "Potatoes, tomatoes, sweetcorn, and pineapples from America",
-            "Only wild acorns and nettles",
-            "Frozen turnips and reindeer moss"
+            "A smoky iron forge",
+            "Stone fountains and fragrant orange trees",
+            "A herd of two-humped camels",
+            "A wooden siege catapult"
+          ],
+          "correct": 1,
+          "answer": "Stone fountains and fragrant orange trees",
+          "a": "Stone fountains and fragrant orange trees",
+          "explanation": "Thick outer brick walls shaded peaceful inner courtyards cooled by splashing fountains and citrus trees."
+        },
+        {
+          "stage": 1,
+          "question": "What were Baghdad’s steamed neighbourhood public bathhouses called?",
+          "q": "What were Baghdad’s steamed neighbourhood public bathhouses called?",
+          "options": [
+            "Agoras",
+            "Bimaristans",
+            "Hammams",
+            "Caravanserais"
+          ],
+          "correct": 2,
+          "answer": "Hammams",
+          "a": "Hammams",
+          "explanation": "Every Baghdad neighbourhood had steamed tiled public bathhouses called hammams with hot and cool washing rooms."
+        },
+        {
+          "stage": 1,
+          "question": "What did bathers in Baghdad use to wash and scent themselves at the hammam?",
+          "q": "What did bathers in Baghdad use to wash and scent themselves at the hammam?",
+          "options": [
+            "Cold river mud and ash",
+            "Rough sand and vinegar",
+            "Whale blubber and pine tar",
+            "Scented olive-oil soap bars and sweet rosewater"
+          ],
+          "correct": 3,
+          "answer": "Scented olive-oil soap bars and sweet rosewater",
+          "a": "Scented olive-oil soap bars and sweet rosewater",
+          "explanation": "Cleanliness mattered deeply in daily Islamic life, and bathers washed with olive-oil soap and splashed fragrant rosewater."
+        },
+        {
+          "stage": 1,
+          "question": "Why was fresh, clean water so important in daily life across Baghdad’s neighbourhoods?",
+          "q": "Why was fresh, clean water so important in daily life across Baghdad’s neighbourhoods?",
+          "options": [
+            "For washing before daily prayers, bathhouses, fountains, and family meals",
+            "Only for floating giant warships inside narrow streets",
+            "To freeze outdoor ice-skating rinks in July",
+            "Because rain fell nonstop every afternoon in Iraq"
           ],
           "correct": 0,
-          "answer": "Lemons, oranges, aubergines, spinach, pomegranates, almonds, and cane sugar",
-          "a": "Lemons, oranges, aubergines, spinach, pomegranates, almonds, and cane sugar",
-          "explanation": "Canal waterwheels allowed citrus fruits, aubergines, spinach, pomegranates, almonds, and sweet cane sugar to flourish."
+          "answer": "For washing before daily prayers, bathhouses, fountains, and family meals",
+          "a": "For washing before daily prayers, bathhouses, fountains, and family meals",
+          "explanation": "Washing before daily prayers and keeping clean at the hammam made fresh water infrastructure central to Baghdad."
         },
         {
           "stage": 2,
-          "question": "Why did artists decorating mosques avoid carving human or animal statues?",
-          "q": "Why did artists decorating mosques avoid carving human or animal statues?",
+          "question": "Which delicious crops watered by canal wheels flourished in orchards around Baghdad?",
+          "q": "Which delicious crops watered by canal wheels flourished in orchards around Baghdad?",
           "options": [
-            "They had no chisels or paintbrushes",
-            "Stone was banned inside cities",
-            "Nobody knew how to draw shapes",
-            "So worshippers focused purely on honouring God rather than statues, inspiring geometry, arabesque, and calligraphy"
-          ],
-          "correct": 3,
-          "answer": "So worshippers focused purely on honouring God rather than statues, inspiring geometry, arabesque, and calligraphy",
-          "a": "So worshippers focused purely on honouring God rather than statues, inspiring geometry, arabesque, and calligraphy",
-          "explanation": "Avoiding idols in worship inspired Islamic artists to master mathematical star mosaics, leafy arabesques, and sacred Arabic calligraphy."
-        },
-        {
-          "stage": 3,
-          "question": "What were shimmering metallic-glazed ceramic dishes and royal embroidered silk bands called in Baghdad?",
-          "q": "What were shimmering metallic-glazed ceramic dishes and royal embroidered silk bands called in Baghdad?",
-          "options": [
-            "Amphorae and togas",
-            "Lustreware bowls and tiraz silk robes",
-            "Bell Beakers and kilts",
-            "Samian ware and chainmail"
+            "Potatoes, tomatoes, and maize",
+            "Lemons, oranges, aubergines, spinach, and pomegranates",
+            "Turnips, cabbages, and oats only",
+            "Coconuts, bananas, and cocoa beans"
           ],
           "correct": 1,
-          "answer": "Lustreware bowls and tiraz silk robes",
-          "a": "Lustreware bowls and tiraz silk robes",
-          "explanation": "Iraqi potters invented metallic lustreware glazes that shone like gold, while royal tiraz workshops wove honoured silk robes."
+          "answer": "Lemons, oranges, aubergines, spinach, and pomegranates",
+          "a": "Lemons, oranges, aubergines, spinach, and pomegranates",
+          "explanation": "Canal waterwheels irrigated orchards bursting with lemons, oranges, aubergines, spinach, and ruby pomegranates introduced across Asia."
+        },
+        {
+          "stage": 2,
+          "question": "What shimmering glazed pottery did Iraqi potters invent to gleam like precious metal on dinner tables?",
+          "q": "What shimmering glazed pottery did Iraqi potters invent to gleam like precious metal on dinner tables?",
+          "options": [
+            "Black-figure amphorae",
+            "Rough unbaked mud trays",
+            "Metallic lustreware and cobalt-blue-on-white bowls",
+            "Carved wooden trenchers"
+          ],
+          "correct": 2,
+          "answer": "Metallic lustreware and cobalt-blue-on-white bowls",
+          "a": "Metallic lustreware and cobalt-blue-on-white bowls",
+          "explanation": "Inspired by white Chinese porcelain, Iraqi potters invented snowy tin-glazed cobalt bowls (Source A) and metallic lustreware."
+        },
+        {
+          "stage": 2,
+          "question": "Why did artists avoid placing human or animal statues inside mosques?",
+          "q": "Why did artists avoid placing human or animal statues inside mosques?",
+          "options": [
+            "They had no chisels or hammers",
+            "Stone crumbled instantly in warm weather",
+            "Caliphs banned all colours except grey",
+            "So worshippers honoured God alone without idol statues"
+          ],
+          "correct": 3,
+          "answer": "So worshippers honoured God alone without idol statues",
+          "a": "So worshippers honoured God alone without idol statues",
+          "explanation": "To focus worship solely on God, mosque decoration celebrated mathematical geometry, plant patterns, and sacred script instead of statues."
+        },
+        {
+          "stage": 2,
+          "question": "Which three non-figurative art styles decorated mosques, bowls, and books across the Islamic world?",
+          "q": "Which three non-figurative art styles decorated mosques, bowls, and books across the Islamic world?",
+          "options": [
+            "Geometric star patterns, flowing leafy arabesque vines, and Arabic calligraphy",
+            "Oil portraits, bronze warhorses, and comic theatre masks",
+            "Cave handprints, mammoth carvings, and chalk horses",
+            "Stained-glass saints, gargoyles, and coats of arms"
+          ],
+          "correct": 0,
+          "answer": "Geometric star patterns, flowing leafy arabesque vines, and Arabic calligraphy",
+          "a": "Geometric star patterns, flowing leafy arabesque vines, and Arabic calligraphy",
+          "explanation": "Using rulers and compasses, craftworkers combined interlocking geometric stars, curling arabesque vines, and balanced Arabic calligraphy."
+        },
+        {
+          "stage": 2,
+          "question": "Look at Source B. Why was Arabic calligraphy honoured as such a high art form?",
+          "q": "Look at Source B. Why was Arabic calligraphy honoured as such a high art form?",
+          "options": [
+            "It was used only for secret spy codes",
+            "Arabic was the sacred language in which the Qur’an was revealed",
+            "Only one person in Baghdad knew how to hold a reed pen",
+            "Ink was made from melted diamonds"
+          ],
+          "correct": 1,
+          "answer": "Arabic was the sacred language in which the Qur’an was revealed",
+          "a": "Arabic was the sacred language in which the Qur’an was revealed",
+          "explanation": "Because the Qur’an was revealed in Arabic, calligraphers shaped harmonious Kufic and cursive scripts on pages, walls, and bowls."
         },
         {
           "stage": 3,
-          "question": "Which strategy board game loved in Baghdad gave English the word \"checkmate\" (from Shah mat)?",
-          "q": "Which strategy board game loved in Baghdad gave English the word \"checkmate\" (from Shah mat)?",
+          "question": "What were \"tiraz\" bands woven onto luxury silk robes in Baghdad?",
+          "q": "What were \"tiraz\" bands woven onto luxury silk robes in Baghdad?",
           "options": [
-            "Dominoes",
-            "Snakes and Ladders",
-            "Shatranj (chess)",
-            "Nine Men’s Morris"
+            "Heavy bronze armour plates",
+            "Leather camel bridles",
+            "Embroidered bands of Arabic calligraphy gifted as marks of honour",
+            "Woollen winter boots"
           ],
           "correct": 2,
-          "answer": "Shatranj (chess)",
-          "a": "Shatranj (chess)",
-          "explanation": "Adopted from India via Persia, shatranj swept Baghdad’s homes and courts before spreading through Islamic Spain to Europe as chess!"
+          "answer": "Embroidered bands of Arabic calligraphy gifted as marks of honour",
+          "a": "Embroidered bands of Arabic calligraphy gifted as marks of honour",
+          "explanation": "Royal looms wove fine silk garments trimmed with embroidered Arabic name and blessing bands called tiraz."
+        },
+        {
+          "stage": 3,
+          "question": "How were mosques and grand rooms lit softly in the evening?",
+          "q": "How were mosques and grand rooms lit softly in the evening?",
+          "options": [
+            "By electric neon tubes",
+            "By coal gas streetlamps",
+            "By burning bundles of wet reeds",
+            "By gilded and enamelled glass lamps lit with oil and inscribed with verses"
+          ],
+          "correct": 3,
+          "answer": "By gilded and enamelled glass lamps lit with oil and inscribed with verses",
+          "a": "By gilded and enamelled glass lamps lit with oil and inscribed with verses",
+          "explanation": "Master glassblowers crafted enamelled glass mosque lamps inscribed with verses about light that glowed warmly when lit with oil."
+        },
+        {
+          "stage": 3,
+          "question": "Which ancient strategy board game played on Baghdad’s evening carpets became modern chess?",
+          "q": "Which ancient strategy board game played on Baghdad’s evening carpets became modern chess?",
+          "options": [
+            "Shatranj",
+            "Pok-ta-Pok",
+            "Stadion",
+            "Knucklebones"
+          ],
+          "correct": 0,
+          "answer": "Shatranj",
+          "a": "Shatranj",
+          "explanation": "Adopted from India via Persia, shatranj became a favourite evening game of skill across Baghdad’s courts and homes."
+        },
+        {
+          "stage": 3,
+          "question": "Where does our English chess word \"checkmate\" come from?",
+          "q": "Where does our English chess word \"checkmate\" come from?",
+          "options": [
+            "From the Greek word for shield wall",
+            "From the phrase \"Shah mat\", meaning \"the King is helpless\"",
+            "From the Viking word for silver hoard",
+            "From the Latin word for lighthouse"
+          ],
+          "correct": 1,
+          "answer": "From the phrase \"Shah mat\", meaning \"the King is helpless\"",
+          "a": "From the phrase \"Shah mat\", meaning \"the King is helpless\"",
+          "explanation": "When a player trapped the opponent’s king in shatranj, they called \"Shah mat\" — giving English \"checkmate\"!"
+        },
+        {
+          "stage": 3,
+          "question": "Inspect the turquoise ceramic shatranj chess set in Source D. Why are the pieces smooth geometric shapes?",
+          "q": "Inspect the turquoise ceramic shatranj chess set in Source D. Why are the pieces smooth geometric shapes?",
+          "options": [
+            "The potter forgot to finish carving them",
+            "Waves wore them smooth on a beach",
+            "Islamic craftworkers favoured neat abstract geometric forms rather than tiny human statues",
+            "Round pieces rolled across the board by themselves"
+          ],
+          "correct": 2,
+          "answer": "Islamic craftworkers favoured neat abstract geometric forms rather than tiny human statues",
+          "a": "Islamic craftworkers favoured neat abstract geometric forms rather than tiny human statues",
+          "explanation": "Shaping kings, elephants, and riders as sleek abstract forms matched Islamic artistic traditions while staying easy to grip."
         }
       ],
       "video": [
@@ -3446,10 +4196,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "When Hulagu Khan’s Mongol army surrounded Baghdad in January 1258, engineers built towering wooden counterweight trebuchets that hurled heavy boulders day and night until Baghdad’s brick walls cracked. **Hinge Question:** Why couldn’t Baghdad’s famous brick walls hold back Hulagu Khan’s Mongol siege engineers in February 1258?",
-          "Source B": "Centuries before 1258, copies of Baghdad’s greatest books had reached Al-Andalus (Islamic Spain). In Toledo, Christian, Jewish, and Muslim translators turned Arabic maths, medicine, and optics books into Latin for European universities! **Hinge Question:** Why did translating Arabic books into Latin at Toledo stop Baghdad’s Golden Age discoveries from being lost in 1258?",
-          "Source C": "Made more than two hundred years AFTER the 1258 Siege of Baghdad, Source C is the only complete medieval spherical astrolabe surviving in the world — proving Islamic astronomy kept advancing in Cairo, Damascus, and Samarkand! **Hinge Question:** How does the AD 1480 date of Source C prove that Islamic science did NOT end when Baghdad fell in 1258?",
-          "Source D": "Building on Hunayn ibn Ishaq’s eye diagrams and Ibn al-Haytham’s Book of Optics, Arabic scientists mapped the cornea, lens, and optic nerves — laying the foundations for eyeglasses, microscopes, telescopes, and modern cameras! **Hinge Question:** Which modern inventions in your classroom or pocket rely on Golden Age discoveries about lenses and light in Source D?"
+          "Source A": "When Hulagu Khan’s Mongol army surrounded Baghdad in January 1258, engineers built tall wooden counterweight trebuchets that flung heavy boulders until the walls cracked. **Hinge Question:** Why couldn’t Baghdad’s famous brick walls hold back Hulagu Khan’s Mongol siege engineers in February 1258?",
+          "Source B": "Centuries before 1258, copies of Baghdad’s greatest books reached Al-Andalus (Islamic Spain). In Toledo, Christian, Jewish, and Muslim translators turned them into Latin! **Hinge Question:** Why did translating Arabic books into Latin at Toledo stop Baghdad’s Golden Age discoveries from being lost in 1258?",
+          "Source C": "Made by master craftworker Musa in AD 1480, Source C is the only complete medieval spherical astrolabe in the world — proving Islamic astronomy kept thriving! **Hinge Question:** How does the AD 1480 date of Source C prove that Islamic science did NOT end when Baghdad fell in 1258?",
+          "Source D": "Building on Hunayn ibn Ishaq’s eye studies and Ibn al-Haytham’s Book of Optics, Arabic scientists mapped the eye’s lens and nerves — inspiring glasses and cameras! **Hinge Question:** Which modern inventions in your classroom or pocket rely on Golden Age discoveries about lenses and light in Source D?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -3584,8 +4334,8 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "January–February AD 1258: Hulagu Khan & the Mongol Siege of Baghdad",
-          "text": "<span class=\"para-ref\">[6.1]</span> Over centuries, the huge Abbasid Empire slowly split into smaller rival kingdoms. Baghdad remained a proud centre of learning, yet its weakened army could not guard borders. In **January 1258**, a vast **Mongol army** led by **Hulagu Khan** marched from Central Asia. Hundreds of thousands of Mongol horsemen surrounded Baghdad along both banks of the River Tigris.<br><br><span class=\"para-ref\">[6.2]</span> Mongol engineers built giant wooden **trebuchets** that hurled heavy boulders at Baghdad’s brick walls. In **February 1258**, Hulagu’s troops stormed through the broken walls and sacked the city. Fires destroyed palaces, canals, and the **House of Wisdom**, ending Abbasid rule in Baghdad.",
-          "content": "<span class=\"para-ref\">[6.1]</span> Over centuries, the huge Abbasid Empire slowly split into smaller rival kingdoms. Baghdad remained a proud centre of learning, yet its weakened army could not guard borders. In **January 1258**, a vast **Mongol army** led by **Hulagu Khan** marched from Central Asia. Hundreds of thousands of Mongol horsemen surrounded Baghdad along both banks of the River Tigris.<br><br><span class=\"para-ref\">[6.2]</span> Mongol engineers built giant wooden **trebuchets** that hurled heavy boulders at Baghdad’s brick walls. In **February 1258**, Hulagu’s troops stormed through the broken walls and sacked the city. Fires destroyed palaces, canals, and the **House of Wisdom**, ending Abbasid rule in Baghdad.",
+          "text": "<span class=\"para-ref\">[6.1]</span> Over centuries, the huge Abbasid Empire split into smaller rival kingdoms. **Baghdad** stayed proud in learning, yet its weak army could not guard wide borders. In **January 1258**, a vast **Mongol army** led by **Hulagu Khan** [hoo-LAH-goo KAHN] marched from Central Asia. Thousands of horsemen surrounded Baghdad along both banks of the River Tigris.<br><br><span class=\"para-ref\">[6.2]</span> Mongol engineers built giant wooden **trebuchets** [TREB-yoo-shets] that hurled heavy boulders at Baghdad's brick walls. In **February 1258**, Mongol troops stormed through the broken walls. Fires ruined palaces, canals, and the **House of Wisdom**, ending Abbasid rule.",
+          "content": "<span class=\"para-ref\">[6.1]</span> Over centuries, the huge Abbasid Empire split into smaller rival kingdoms. **Baghdad** stayed proud in learning, yet its weak army could not guard wide borders. In **January 1258**, a vast **Mongol army** led by **Hulagu Khan** [hoo-LAH-goo KAHN] marched from Central Asia. Thousands of horsemen surrounded Baghdad along both banks of the River Tigris.<br><br><span class=\"para-ref\">[6.2]</span> Mongol engineers built giant wooden **trebuchets** [TREB-yoo-shets] that hurled heavy boulders at Baghdad's brick walls. In **February 1258**, Mongol troops stormed through the broken walls. Fires ruined palaces, canals, and the **House of Wisdom**, ending Abbasid rule.",
           "image": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg",
           "image_alt": "14th-century Persian manuscript painting showing Hulagu Khan’s Mongol army besieging walled Baghdad beside a boat bridge on the Tigris in 1258",
           "caption": "A 14th-century Persian manuscript showing Hulagu Khan’s Mongol army and siege engines surrounding Baghdad on the River Tigris in AD 1258.",
@@ -3596,12 +4346,12 @@ window.UNIT_DATA = {
         {
           "act": 2,
           "title": "Cairo, Córdoba & Toledo: Why Golden Age Knowledge Survived",
-          "text": "<span class=\"para-ref\">[6.3]</span> Did the **Golden Age** vanish forever in **1258** when Baghdad’s famous library burned down? Thankfully not, because paper copies already sat safely in **Cairo**, **Damascus**, and **Samarkand**! Far west in Islamic Spain, called **Al-Andalus**, **Córdoba** shone with street lamps and seventy libraries. Spanish Muslim rulers also built the carved arches and marble courtyards of the **Alhambra** palace.<br><br><span class=\"para-ref\">[6.4]</span> Crucially, the Spanish city of **Toledo** became Europe’s greatest bridge for sharing Arabic science. Muslim, Jewish, and Christian translators worked together turning **al-Khwarizmi**, **Ibn al-Haytham**, and **Ibn Sina** into **Latin**. Those rescued books reached European universities and helped spark the scientific rebirth called the **Renaissance**!",
-          "content": "<span class=\"para-ref\">[6.3]</span> Did the **Golden Age** vanish forever in **1258** when Baghdad’s famous library burned down? Thankfully not, because paper copies already sat safely in **Cairo**, **Damascus**, and **Samarkand**! Far west in Islamic Spain, called **Al-Andalus**, **Córdoba** shone with street lamps and seventy libraries. Spanish Muslim rulers also built the carved arches and marble courtyards of the **Alhambra** palace.<br><br><span class=\"para-ref\">[6.4]</span> Crucially, the Spanish city of **Toledo** became Europe’s greatest bridge for sharing Arabic science. Muslim, Jewish, and Christian translators worked together turning **al-Khwarizmi**, **Ibn al-Haytham**, and **Ibn Sina** into **Latin**. Those rescued books reached European universities and helped spark the scientific rebirth called the **Renaissance**!",
+          "text": "<span class=\"para-ref\">[6.3]</span> Did **Golden Age** **knowledge** vanish in **1258** when Baghdad's library burned? Thankfully not, because paper copies sat safely in **cities** like **Cairo**, **Damascus**, and **Samarkand**! Far west in Islamic Spain, called **Al-Andalus** [al-AN-duh-loos], **Córdoba** [KOR-doh-bah] shone with street lamps and seventy libraries. Rulers there also built Granada's carved **Alhambra** palace.<br><br><span class=\"para-ref\">[6.4]</span> Next, Spanish **Toledo** became Europe's bridge for rescuing Arabic science. Muslim, Jewish, and Christian translators worked side by side there. Turning **al-Khwarizmi**, **Ibn al-Haytham**, and **Ibn Sina** [IB-in SEE-nah] into **Latin** helped spark Europe's **Renaissance**!",
+          "content": "<span class=\"para-ref\">[6.3]</span> Did **Golden Age** **knowledge** vanish in **1258** when Baghdad's library burned? Thankfully not, because paper copies sat safely in **cities** like **Cairo**, **Damascus**, and **Samarkand**! Far west in Islamic Spain, called **Al-Andalus** [al-AN-duh-loos], **Córdoba** [KOR-doh-bah] shone with street lamps and seventy libraries. Rulers there also built Granada's carved **Alhambra** palace.<br><br><span class=\"para-ref\">[6.4]</span> Next, Spanish **Toledo** became Europe's bridge for rescuing Arabic science. Muslim, Jewish, and Christian translators worked side by side there. Turning **al-Khwarizmi**, **Ibn al-Haytham**, and **Ibn Sina** [IB-in SEE-nah] into **Latin** helped spark Europe's **Renaissance**!",
           "image": "/units/ks2_early_islamic_baghdad/assets/cordoba_great_mosque_gold_arches.jpg",
           "image_alt": "Glowing gold and blue floral mosaics framing scalloped arches inside the Great Mosque of Córdoba in Spain",
-          "caption": "Gold and blue mosaics inside the Great Mosque of Córdoba in Spain (Al-Andalus), where hundreds of thousands of Arabic books thrived far from Mongol armies.",
-          "image_caption": "Gold and blue mosaics inside the Great Mosque of Córdoba in Spain (Al-Andalus), where hundreds of thousands of Arabic books thrived far from Mongol armies.",
+          "caption": "Gold and blue mosaics inside the Great Mosque of Córdoba in Spain (Al-Andalus), where hundreds of thousands of Arabic books thrived.",
+          "image_caption": "Gold and blue mosaics inside the Great Mosque of Córdoba in Spain (Al-Andalus), where hundreds of thousands of Arabic books thrived.",
           "isReversed": true,
           "sources": [
             {
@@ -3611,16 +4361,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/rashid_al_din_siege_trebuchet.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/rashid_al_din_siege_trebuchet.jpg",
-              "title": "Source A: Counterweight Siege Trebuchet Hurling Stones at Brick Walls (AD 1307 Manuscript)",
-              "caption": "A 1307 Persian manuscript painting from Rashid al-Din’s Jami al-Tawarikh showing Mongol siege engineers firing a giant wooden counterweight trebuchet.",
+              "title": "Source A: Mongol Siege Trebuchet Hurling Stones at Walls (AD 1307 Painting)",
+              "caption": "A 1307 Persian manuscript painting showing Mongol siege engineers firing a giant wooden counterweight trebuchet at brick walls.",
               "author": "Workshop of Historian Rashid al-Din (Tabriz)",
               "date": "AD 1307 (depicting 13th-century Mongol siege warfare)",
-              "context": "Painted in a fourteenth-century historical manuscript (Jami al-Tawarikh), this scene records Hulagu Khan's Mongol army surrounding Baghdad in January–February 1258.",
-              "source_context": "Painted in a fourteenth-century historical manuscript (Jami al-Tawarikh), this scene records Hulagu Khan's Mongol army surrounding Baghdad in January–February 1258.",
+              "context": "When Hulagu Khan’s Mongol army surrounded Baghdad in January 1258, engineers built tall wooden counterweight trebuchets that flung heavy boulders until the walls cracked.",
+              "source_context": "When Hulagu Khan’s Mongol army surrounded Baghdad in January 1258, engineers built tall wooden counterweight trebuchets that flung heavy boulders until the walls cracked. **Hinge Question:** Why couldn’t Baghdad’s famous brick walls hold back Hulagu Khan’s Mongol siege engineers in February 1258?",
               "question_badge": "MONGOL SIEGE TREBUCHET",
               "question": "Look closely at Source A. How did siege engines help Hulagu Khan capture Baghdad in 1258?",
-              "model_answer": "Source A shows a giant wooden counterweight trebuchet flinging heavy stone boulders with tremendous force. Firing non-stop in January and February 1258, Hulagu Khan’s siege machines smashed breaches through Baghdad’s brick walls in less than two weeks.",
-              "provenance": "Counterweight siege trebuchet miniature from Rashid al-Din’s Jami al-Tawarikh (AD 1307, Edinburgh University Library)."
+              "model_answer": "Source A shows a tall wooden counterweight trebuchet flinging heavy boulders with huge force, smashing gaps through Baghdad’s brick walls in February 1258.",
+              "provenance": "Siege trebuchet painting from Persian historian Rashid al-Din’s World History (AD 1307)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l6_src_b",
@@ -3629,28 +4379,28 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/toledo_medieval_bridge_spain.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/toledo_medieval_bridge_spain.jpg",
-              "title": "Source B: Medieval Stone Bridge & Walled City of Toledo in Spain",
-              "caption": "The medieval city of Toledo in Spain — famous meeting place where Muslim, Jewish, and Christian scholars translated Arabic science books into Latin.",
+              "title": "Source B: Medieval Stone Bridge & Walled Hilltop City of Toledo, Spain",
+              "caption": "The medieval city of Toledo in Spain — famous meeting place where Muslim, Jewish, and Christian scholars translated Arabic books into Latin.",
               "author": "Medieval Spanish Civic & Bridge Builders (Toledo)",
               "date": "Medieval Period (12th–13th Century Translation Hub)",
-              "context": "High above the Tagus River in central Spain, medieval Toledo brought together Arabic-, Hebrew-, and Latin-speaking scholars after the eleventh century.",
-              "source_context": "High above the Tagus River in central Spain, medieval Toledo brought together Arabic-, Hebrew-, and Latin-speaking scholars after the eleventh century.",
+              "context": "Centuries before 1258, copies of Baghdad’s greatest books reached Al-Andalus (Islamic Spain). In Toledo, Christian, Jewish, and Muslim translators turned them into Latin!",
+              "source_context": "Centuries before 1258, copies of Baghdad’s greatest books reached Al-Andalus (Islamic Spain). In Toledo, Christian, Jewish, and Muslim translators turned them into Latin! **Hinge Question:** Why did translating Arabic books into Latin at Toledo stop Baghdad’s Golden Age discoveries from being lost in 1258?",
               "question_badge": "TOLEDO TRANSLATION HUB",
               "question": "Why was the Spanish city of Toledo in Source B so important for European science?",
-              "model_answer": "Toledo held vast libraries of Arabic manuscripts copied from Baghdad, Cairo, and Córdoba. There, Muslim, Jewish, and Christian scholars translated al-Khwarizmi, Ibn al-Haytham, and Ibn Sina into Latin, sparking Europe’s Renaissance!",
-              "provenance": "Historic stone bridge (Puente de Alcántara / San Martín) and hilltop city of Toledo, Castilla-La Mancha, Spain."
+              "model_answer": "Toledo held rich libraries of Arabic books copied from Baghdad and Córdoba, where Muslim, Jewish, and Christian translators turned them into Latin for Europe’s universities!",
+              "provenance": "Historic stone bridge and walled hilltop city of Toledo in central Spain."
             }
           ]
         },
         {
           "act": 3,
           "title": "From 1258 to Today: Arabic Words & Ideas in Our Everyday Lives",
-          "text": "<span class=\"para-ref\">[6.5]</span> Even today, Golden Age breakthroughs shape your classroom, hospital, and pocket phone every single day! Writing digits **0 to 9**, solving **algebra**, or running a computer **algorithm** uses Baghdad’s maths. **Ibn al-Haytham’s** dark-room light experiments led straight to spectacles, microscopes, and smartphone cameras. Clean hospital wards, busy pharmacies, and surgical tools also build upon early Islamic medicine.<br><br><span class=\"para-ref\">[6.6]</span> You even speak everyday Arabic words whenever you say **zero**, **chemistry**, **sugar**, **lemon**, or **orange**! Cosy home words like **sofa** and **cotton** also travelled into English through Arabic trade. Though Hulagu’s siege shattered Baghdad’s walls in **1258**, Golden Age ideas changed our world forever.",
-          "content": "<span class=\"para-ref\">[6.5]</span> Even today, Golden Age breakthroughs shape your classroom, hospital, and pocket phone every single day! Writing digits **0 to 9**, solving **algebra**, or running a computer **algorithm** uses Baghdad’s maths. **Ibn al-Haytham’s** dark-room light experiments led straight to spectacles, microscopes, and smartphone cameras. Clean hospital wards, busy pharmacies, and surgical tools also build upon early Islamic medicine.<br><br><span class=\"para-ref\">[6.6]</span> You even speak everyday Arabic words whenever you say **zero**, **chemistry**, **sugar**, **lemon**, or **orange**! Cosy home words like **sofa** and **cotton** also travelled into English through Arabic trade. Though Hulagu’s siege shattered Baghdad’s walls in **1258**, Golden Age ideas changed our world forever.",
+          "text": "<span class=\"para-ref\">[6.5]</span> **Today**, the **Early Islamic** **Golden Age** still shapes **our lives** at school and home! Writing digits **0 to 9**, solving **algebra**, or running a phone **algorithm** uses Baghdad's maths. **Ibn al-Haytham's** light tests led straight to glasses, microscopes, and smartphone cameras. Clean hospital wards and pharmacies also build on Islamic medicine.<br><br><span class=\"para-ref\">[6.6]</span> You even speak everyday Arabic words like **zero**, **chemistry**, **sugar**, **lemon**, and **orange**! Cosy home words like **sofa** and **cotton** arrived through Arabic trade too. Though Baghdad's walls fell in **1258**, Golden Age ideas live on!",
+          "content": "<span class=\"para-ref\">[6.5]</span> **Today**, the **Early Islamic** **Golden Age** still shapes **our lives** at school and home! Writing digits **0 to 9**, solving **algebra**, or running a phone **algorithm** uses Baghdad's maths. **Ibn al-Haytham's** light tests led straight to glasses, microscopes, and smartphone cameras. Clean hospital wards and pharmacies also build on Islamic medicine.<br><br><span class=\"para-ref\">[6.6]</span> You even speak everyday Arabic words like **zero**, **chemistry**, **sugar**, **lemon**, and **orange**! Cosy home words like **sofa** and **cotton** arrived through Arabic trade too. Though Baghdad's walls fell in **1258**, Golden Age ideas live on!",
           "image": "/units/ks2_early_islamic_baghdad/assets/alhambra_carved_stucco_courtyard.jpg",
           "image_alt": "Slender marble columns and finely carved stucco arches surrounding a sunlit courtyard at the Alhambra palace in Granada, Spain",
-          "caption": "Carved stucco arches and slender marble columns at the Alhambra palace in Granada, Spain — built even after 1258 as Islamic art and architecture shone on.",
-          "image_caption": "Carved stucco arches and slender marble columns at the Alhambra palace in Granada, Spain — built even after 1258 as Islamic art and architecture shone on.",
+          "caption": "Carved arches and slender marble columns at the Alhambra palace in Granada, Spain — built even after 1258 as Islamic art shone on.",
+          "image_caption": "Carved arches and slender marble columns at the Alhambra palace in Granada, Spain — built even after 1258 as Islamic art shone on.",
           "isReversed": false,
           "sources": [
             {
@@ -3660,16 +4410,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_spherical_astrolabe.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_spherical_astrolabe.jpg",
-              "title": "Source C: Rare Medieval Islamic Brass Spherical Astrolabe (c. AD 1480)",
-              "caption": "An extraordinarily rare medieval Islamic spherical brass astrolabe engraved with degree lines, star pointers, and Arabic numerals — showing Golden Age astronomy thriving long after 1258!",
+              "title": "Source C: Rare Islamic Brass Spherical Astrolabe (AD 1480)",
+              "caption": "A rare medieval Islamic round brass astrolabe engraved with degree lines, star pointers, and Arabic numerals — made over 200 years after 1258!",
               "author": "Musa, Eastern Islamic Master Instrument Maker",
               "date": "AD 1480–1481 (Post-1258 Islamic Astronomy)",
-              "context": "Signed by master maker Musa in AD 1480–1481 and preserved at Oxford's History of Science Museum, this rare brass globe is a medieval spherical astrolabe.",
-              "source_context": "Signed by master maker Musa in AD 1480–1481 and preserved at Oxford's History of Science Museum, this rare brass globe is a medieval spherical astrolabe.",
+              "context": "Made by master craftworker Musa in AD 1480, Source C is the only complete medieval spherical astrolabe in the world — proving Islamic astronomy kept thriving!",
+              "source_context": "Made by master craftworker Musa in AD 1480, Source C is the only complete medieval spherical astrolabe in the world — proving Islamic astronomy kept thriving! **Hinge Question:** How does the AD 1480 date of Source C prove that Islamic science did NOT end when Baghdad fell in 1258?",
               "question_badge": "SPHERICAL ASTROLABE",
               "question": "Source C was crafted two centuries after 1258. What does that prove about Islamic science?",
-              "model_answer": "Because Source C was precision-engineered in brass around AD 1480 — over two hundred years after Hulagu’s siege — it proves Islamic astronomers and instrument-makers kept innovating in other great cities long after 1258!",
-              "provenance": "Brass spherical astrolabe signed by Musa (AD 1480–1481, History of Science Museum, University of Oxford)."
+              "model_answer": "Because Source C was finely engineered in brass around AD 1480 — two centuries after Hulagu’s siege — it proves Islamic astronomers kept innovating in other cities!",
+              "provenance": "Brass spherical astrolabe signed by master maker Musa (AD 1480–1481)."
             },
             {
               "id": "ks2_early_islamic_baghdad_l6_src_d",
@@ -3678,16 +4428,16 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_early_islamic_baghdad/assets/arabic_anatomy_of_the_eye_diagram.jpg",
               "image": "/units/ks2_early_islamic_baghdad/assets/arabic_anatomy_of_the_eye_diagram.jpg",
-              "title": "Source D: Medieval Arabic Scientific Diagram of the Human Eye & Optic Nerves",
+              "title": "Source D: Medieval Arabic Diagram of the Human Eye & Optic Nerves",
               "caption": "Detailed Arabic medical and optical manuscript diagram mapping the lenses, chambers, and crossed optic nerves of the human eye.",
               "author": "Medieval Arabic Optical & Medical Scholar",
               "date": "c. AD 1200 Manuscript Copy (building on Hunayn & Ibn al-Haytham)",
-              "context": "Copied around AD 1200 in the Islamic world, this careful anatomical diagram builds on Ibn al-Haytham's famous eleventh-century Book of Optics.",
-              "source_context": "Copied around AD 1200 in the Islamic world, this careful anatomical diagram builds on Ibn al-Haytham's famous eleventh-century Book of Optics.",
+              "context": "Building on Hunayn ibn Ishaq’s eye studies and Ibn al-Haytham’s Book of Optics, Arabic scientists mapped the eye’s lens and nerves — inspiring glasses and cameras!",
+              "source_context": "Building on Hunayn ibn Ishaq’s eye studies and Ibn al-Haytham’s Book of Optics, Arabic scientists mapped the eye’s lens and nerves — inspiring glasses and cameras! **Hinge Question:** Which modern inventions in your classroom or pocket rely on Golden Age discoveries about lenses and light in Source D?",
               "question_badge": "ARABIC EYE DIAGRAM",
               "question": "Inspect Source D. How did Arabic eye and light studies shape inventions we use today?",
-              "model_answer": "Source D mapped how light enters the eye’s lens and reaches the brain along optic nerves. Translated into Latin, these Arabic optics studies inspired reading glasses, telescopes, microscopes, and every modern phone camera!",
-              "provenance": "Arabic manuscript diagram of the anatomy of the human eye and optic chiasm (c. AD 1200, Cairo / museum collection)."
+              "model_answer": "Source D mapped how light enters the eye’s lens and reaches the brain; translated into Latin, these Arabic studies inspired eyeglasses, microscopes, and phone cameras!",
+              "provenance": "Medieval Arabic scientific diagram of the human eye and optic nerves (c. AD 1200)."
             }
           ]
         }
@@ -3700,16 +4450,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/rashid_al_din_siege_trebuchet.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/rashid_al_din_siege_trebuchet.jpg",
-          "title": "Source A: Counterweight Siege Trebuchet Hurling Stones at Brick Walls (AD 1307 Manuscript)",
-          "caption": "A 1307 Persian manuscript painting from Rashid al-Din’s Jami al-Tawarikh showing Mongol siege engineers firing a giant wooden counterweight trebuchet.",
+          "title": "Source A: Mongol Siege Trebuchet Hurling Stones at Walls (AD 1307 Painting)",
+          "caption": "A 1307 Persian manuscript painting showing Mongol siege engineers firing a giant wooden counterweight trebuchet at brick walls.",
           "author": "Workshop of Historian Rashid al-Din (Tabriz)",
           "date": "AD 1307 (depicting 13th-century Mongol siege warfare)",
-          "context": "Painted in a fourteenth-century historical manuscript (Jami al-Tawarikh), this scene records Hulagu Khan's Mongol army surrounding Baghdad in January–February 1258.",
-          "source_context": "Painted in a fourteenth-century historical manuscript (Jami al-Tawarikh), this scene records Hulagu Khan's Mongol army surrounding Baghdad in January–February 1258.",
+          "context": "When Hulagu Khan’s Mongol army surrounded Baghdad in January 1258, engineers built tall wooden counterweight trebuchets that flung heavy boulders until the walls cracked.",
+          "source_context": "When Hulagu Khan’s Mongol army surrounded Baghdad in January 1258, engineers built tall wooden counterweight trebuchets that flung heavy boulders until the walls cracked. **Hinge Question:** Why couldn’t Baghdad’s famous brick walls hold back Hulagu Khan’s Mongol siege engineers in February 1258?",
           "question_badge": "MONGOL SIEGE TREBUCHET",
           "question": "Look closely at Source A. How did siege engines help Hulagu Khan capture Baghdad in 1258?",
-          "model_answer": "Source A shows a giant wooden counterweight trebuchet flinging heavy stone boulders with tremendous force. Firing non-stop in January and February 1258, Hulagu Khan’s siege machines smashed breaches through Baghdad’s brick walls in less than two weeks.",
-          "provenance": "Counterweight siege trebuchet miniature from Rashid al-Din’s Jami al-Tawarikh (AD 1307, Edinburgh University Library)."
+          "model_answer": "Source A shows a tall wooden counterweight trebuchet flinging heavy boulders with huge force, smashing gaps through Baghdad’s brick walls in February 1258.",
+          "provenance": "Siege trebuchet painting from Persian historian Rashid al-Din’s World History (AD 1307)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l6_src_b",
@@ -3718,16 +4468,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/toledo_medieval_bridge_spain.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/toledo_medieval_bridge_spain.jpg",
-          "title": "Source B: Medieval Stone Bridge & Walled City of Toledo in Spain",
-          "caption": "The medieval city of Toledo in Spain — famous meeting place where Muslim, Jewish, and Christian scholars translated Arabic science books into Latin.",
+          "title": "Source B: Medieval Stone Bridge & Walled Hilltop City of Toledo, Spain",
+          "caption": "The medieval city of Toledo in Spain — famous meeting place where Muslim, Jewish, and Christian scholars translated Arabic books into Latin.",
           "author": "Medieval Spanish Civic & Bridge Builders (Toledo)",
           "date": "Medieval Period (12th–13th Century Translation Hub)",
-          "context": "High above the Tagus River in central Spain, medieval Toledo brought together Arabic-, Hebrew-, and Latin-speaking scholars after the eleventh century.",
-          "source_context": "High above the Tagus River in central Spain, medieval Toledo brought together Arabic-, Hebrew-, and Latin-speaking scholars after the eleventh century.",
+          "context": "Centuries before 1258, copies of Baghdad’s greatest books reached Al-Andalus (Islamic Spain). In Toledo, Christian, Jewish, and Muslim translators turned them into Latin!",
+          "source_context": "Centuries before 1258, copies of Baghdad’s greatest books reached Al-Andalus (Islamic Spain). In Toledo, Christian, Jewish, and Muslim translators turned them into Latin! **Hinge Question:** Why did translating Arabic books into Latin at Toledo stop Baghdad’s Golden Age discoveries from being lost in 1258?",
           "question_badge": "TOLEDO TRANSLATION HUB",
           "question": "Why was the Spanish city of Toledo in Source B so important for European science?",
-          "model_answer": "Toledo held vast libraries of Arabic manuscripts copied from Baghdad, Cairo, and Córdoba. There, Muslim, Jewish, and Christian scholars translated al-Khwarizmi, Ibn al-Haytham, and Ibn Sina into Latin, sparking Europe’s Renaissance!",
-          "provenance": "Historic stone bridge (Puente de Alcántara / San Martín) and hilltop city of Toledo, Castilla-La Mancha, Spain."
+          "model_answer": "Toledo held rich libraries of Arabic books copied from Baghdad and Córdoba, where Muslim, Jewish, and Christian translators turned them into Latin for Europe’s universities!",
+          "provenance": "Historic stone bridge and walled hilltop city of Toledo in central Spain."
         },
         {
           "id": "ks2_early_islamic_baghdad_l6_src_c",
@@ -3736,16 +4486,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_spherical_astrolabe.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_spherical_astrolabe.jpg",
-          "title": "Source C: Rare Medieval Islamic Brass Spherical Astrolabe (c. AD 1480)",
-          "caption": "An extraordinarily rare medieval Islamic spherical brass astrolabe engraved with degree lines, star pointers, and Arabic numerals — showing Golden Age astronomy thriving long after 1258!",
+          "title": "Source C: Rare Islamic Brass Spherical Astrolabe (AD 1480)",
+          "caption": "A rare medieval Islamic round brass astrolabe engraved with degree lines, star pointers, and Arabic numerals — made over 200 years after 1258!",
           "author": "Musa, Eastern Islamic Master Instrument Maker",
           "date": "AD 1480–1481 (Post-1258 Islamic Astronomy)",
-          "context": "Signed by master maker Musa in AD 1480–1481 and preserved at Oxford's History of Science Museum, this rare brass globe is a medieval spherical astrolabe.",
-          "source_context": "Signed by master maker Musa in AD 1480–1481 and preserved at Oxford's History of Science Museum, this rare brass globe is a medieval spherical astrolabe.",
+          "context": "Made by master craftworker Musa in AD 1480, Source C is the only complete medieval spherical astrolabe in the world — proving Islamic astronomy kept thriving!",
+          "source_context": "Made by master craftworker Musa in AD 1480, Source C is the only complete medieval spherical astrolabe in the world — proving Islamic astronomy kept thriving! **Hinge Question:** How does the AD 1480 date of Source C prove that Islamic science did NOT end when Baghdad fell in 1258?",
           "question_badge": "SPHERICAL ASTROLABE",
           "question": "Source C was crafted two centuries after 1258. What does that prove about Islamic science?",
-          "model_answer": "Because Source C was precision-engineered in brass around AD 1480 — over two hundred years after Hulagu’s siege — it proves Islamic astronomers and instrument-makers kept innovating in other great cities long after 1258!",
-          "provenance": "Brass spherical astrolabe signed by Musa (AD 1480–1481, History of Science Museum, University of Oxford)."
+          "model_answer": "Because Source C was finely engineered in brass around AD 1480 — two centuries after Hulagu’s siege — it proves Islamic astronomers kept innovating in other cities!",
+          "provenance": "Brass spherical astrolabe signed by master maker Musa (AD 1480–1481)."
         },
         {
           "id": "ks2_early_islamic_baghdad_l6_src_d",
@@ -3754,16 +4504,16 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_early_islamic_baghdad/assets/arabic_anatomy_of_the_eye_diagram.jpg",
           "image": "/units/ks2_early_islamic_baghdad/assets/arabic_anatomy_of_the_eye_diagram.jpg",
-          "title": "Source D: Medieval Arabic Scientific Diagram of the Human Eye & Optic Nerves",
+          "title": "Source D: Medieval Arabic Diagram of the Human Eye & Optic Nerves",
           "caption": "Detailed Arabic medical and optical manuscript diagram mapping the lenses, chambers, and crossed optic nerves of the human eye.",
           "author": "Medieval Arabic Optical & Medical Scholar",
           "date": "c. AD 1200 Manuscript Copy (building on Hunayn & Ibn al-Haytham)",
-          "context": "Copied around AD 1200 in the Islamic world, this careful anatomical diagram builds on Ibn al-Haytham's famous eleventh-century Book of Optics.",
-          "source_context": "Copied around AD 1200 in the Islamic world, this careful anatomical diagram builds on Ibn al-Haytham's famous eleventh-century Book of Optics.",
+          "context": "Building on Hunayn ibn Ishaq’s eye studies and Ibn al-Haytham’s Book of Optics, Arabic scientists mapped the eye’s lens and nerves — inspiring glasses and cameras!",
+          "source_context": "Building on Hunayn ibn Ishaq’s eye studies and Ibn al-Haytham’s Book of Optics, Arabic scientists mapped the eye’s lens and nerves — inspiring glasses and cameras! **Hinge Question:** Which modern inventions in your classroom or pocket rely on Golden Age discoveries about lenses and light in Source D?",
           "question_badge": "ARABIC EYE DIAGRAM",
           "question": "Inspect Source D. How did Arabic eye and light studies shape inventions we use today?",
-          "model_answer": "Source D mapped how light enters the eye’s lens and reaches the brain along optic nerves. Translated into Latin, these Arabic optics studies inspired reading glasses, telescopes, microscopes, and every modern phone camera!",
-          "provenance": "Arabic manuscript diagram of the anatomy of the human eye and optic chiasm (c. AD 1200, Cairo / museum collection)."
+          "model_answer": "Source D mapped how light enters the eye’s lens and reaches the brain; translated into Latin, these Arabic studies inspired eyeglasses, microscopes, and phone cameras!",
+          "provenance": "Medieval Arabic scientific diagram of the human eye and optic nerves (c. AD 1200)."
         }
       ],
       "causal_domino_spine": {
@@ -3780,7 +4530,7 @@ window.UNIT_DATA = {
             "trigger": "After the Abbasid Empire weakened into rival states, Hulagu Khan’s Mongol army breached Baghdad’s walls with counterweight trebuchets in February 1258 and destroyed the House of Wisdom.",
             "connective": "Ended Abbasid rule in Baghdad, yet copies of Arabic books already lived safely in other great cities.",
             "question": "Why did Baghdad fall to Hulagu Khan’s Mongol army in February 1258?",
-            "prose_hash": "fa9752efca",
+            "prose_hash": "ae75c5651d",
             "questionHeading": "Why did Baghdad fall to Hulagu Khan’s Mongol army in February 1258?",
             "focusClue": "Why did Baghdad fall to Hulagu Khan’s Mongol army in February 1258?",
             "dates": "Jan–Feb AD 1258",
@@ -3796,7 +4546,7 @@ window.UNIT_DATA = {
             "trigger": "Copies of Arabic books survived in Cairo, Damascus, Samarkand, and Córdoba, while translators in Toledo turned them into Latin.",
             "connective": "Carried al-Khwarizmi, Ibn al-Haytham, and Ibn Sina into European universities to spark the Renaissance.",
             "question": "How did cities like Cairo, Córdoba, and Toledo rescue Golden Age knowledge?",
-            "prose_hash": "e9343443f1",
+            "prose_hash": "5e6ea0f865",
             "questionHeading": "How did cities like Cairo, Córdoba, and Toledo rescue Golden Age knowledge?",
             "focusClue": "How did cities like Cairo, Córdoba, and Toledo rescue Golden Age knowledge?",
             "dates": "12th–15th Century AD",
@@ -3811,10 +4561,10 @@ window.UNIT_DATA = {
             "tag": "🌍 OUR WORLD TODAY",
             "trigger": "Digits 0–9, algebra, algorithms, camera optics, hospital wards, and words like zero, chemistry, sugar, lemon, orange, sofa, and cotton live on today.",
             "connective": "Proves ideas and books outlasted empires and still shape our everyday lives.",
-            "question": "How does the Early Islamic Golden Age still shape our lives and language today?",
-            "prose_hash": "ee502e3d87",
-            "questionHeading": "How does the Early Islamic Golden Age still shape our lives and language today?",
-            "focusClue": "How does the Early Islamic Golden Age still shape our lives and language today?",
+            "question": "How does the Early Islamic Golden Age still shape our lives today?",
+            "prose_hash": "80c3cd03af",
+            "questionHeading": "How does the Early Islamic Golden Age still shape our lives today?",
+            "focusClue": "How does the Early Islamic Golden Age still shape our lives today?",
             "dates": "AD 1258 to Today",
             "paraRef": "[6.5]"
           }
@@ -3848,7 +4598,7 @@ window.UNIT_DATA = {
           "dates": "Jan–Feb AD 1258",
           "para_ref": "[6.1]",
           "paraRef": "[6.1]",
-          "prose_hash": "fa9752efca"
+          "prose_hash": "ae75c5651d"
         },
         {
           "step": 2,
@@ -3877,12 +4627,12 @@ window.UNIT_DATA = {
           "dates": "12th–15th Century AD",
           "para_ref": "[6.3]",
           "paraRef": "[6.3]",
-          "prose_hash": "e9343443f1"
+          "prose_hash": "5e6ea0f865"
         },
         {
           "step": 3,
-          "heading": "How does the Early Islamic Golden Age still shape our lives and language today?",
-          "focus_clue": "How does the Early Islamic Golden Age still shape our lives and language today?",
+          "heading": "How does the Early Islamic Golden Age still shape our lives today?",
+          "focus_clue": "How does the Early Islamic Golden Age still shape our lives today?",
           "words": [
             {
               "term": "algorithm",
@@ -3899,14 +4649,14 @@ window.UNIT_DATA = {
           ],
           "model_sentence": "Every computer <strong>algorithm</strong>, camera lens inspired by <strong>Ibn al-Haytham</strong>, and Arabic word like <strong>cotton</strong> or sugar keeps the Golden Age alive today!",
           "title": "From 1258 to Today: Arabic Words & Ideas in Our Everyday Lives",
-          "question": "How does the Early Islamic Golden Age still shape our lives and language today?",
-          "questionHeading": "How does the Early Islamic Golden Age still shape our lives and language today?",
-          "focusClue": "How does the Early Islamic Golden Age still shape our lives and language today?",
+          "question": "How does the Early Islamic Golden Age still shape our lives today?",
+          "questionHeading": "How does the Early Islamic Golden Age still shape our lives today?",
+          "focusClue": "How does the Early Islamic Golden Age still shape our lives today?",
           "date": "AD 1258 to Today",
           "dates": "AD 1258 to Today",
           "para_ref": "[6.5]",
           "paraRef": "[6.5]",
-          "prose_hash": "ee502e3d87"
+          "prose_hash": "80c3cd03af"
         }
       ],
       "tasks": [
@@ -3995,78 +4745,228 @@ window.UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "Which Mongol commander besieged and captured Baghdad in January–February AD 1258?",
-          "q": "Which Mongol commander besieged and captured Baghdad in January–February AD 1258?",
+          "question": "Why had the Abbasid Empire grown harder for Baghdad’s Caliph to defend by the 1250s?",
+          "q": "Why had the Abbasid Empire grown harder for Baghdad’s Caliph to defend by the 1250s?",
           "options": [
+            "It had slowly split into smaller rival kingdoms with a weakened army",
+            "The River Tigris had frozen into solid ice",
+            "Everyone in Baghdad had moved to Anglo-Saxon Britain",
+            "Caliphs banned brick walls around cities"
+          ],
+          "correct": 0,
+          "answer": "It had slowly split into smaller rival kingdoms with a weakened army",
+          "a": "It had slowly split into smaller rival kingdoms with a weakened army",
+          "explanation": "Over several centuries, the vast Abbasid Empire fragmented into smaller rival states, leaving Baghdad’s defences weakened."
+        },
+        {
+          "stage": 1,
+          "question": "Which Mongol commander led a vast army from Central Asia to besiege Baghdad in January 1258?",
+          "q": "Which Mongol commander led a vast army from Central Asia to besiege Baghdad in January 1258?",
+          "options": [
+            "King Xerxes",
             "Hulagu Khan",
             "Caliph al-Mansur",
-            "King Offa of Mercia",
             "Alexander the Great"
           ],
-          "correct": 0,
+          "correct": 1,
           "answer": "Hulagu Khan",
           "a": "Hulagu Khan",
-          "explanation": "Hulagu Khan’s vast Mongol army surrounded Baghdad on the Tigris in January 1258 and breached its walls with counterweight trebuchets in February."
+          "explanation": "In January 1258, Mongol commander Hulagu Khan surrounded Baghdad along both banks of the River Tigris."
         },
         {
-          "stage": 2,
-          "question": "Why weren’t all of Baghdad’s Golden Age discoveries lost forever when the House of Wisdom burned in 1258?",
-          "q": "Why weren’t all of Baghdad’s Golden Age discoveries lost forever when the House of Wisdom burned in 1258?",
+          "stage": 1,
+          "question": "What giant wooden siege machines in Source A did Mongol engineers build to smash Baghdad’s brick walls?",
+          "q": "What giant wooden siege machines in Source A did Mongol engineers build to smash Baghdad’s brick walls?",
           "options": [
-            "Every book had been carved onto solid iron plates",
-            "Vikings hid the House of Wisdom underneath York",
-            "Copies written on paper already sat safely in libraries in Cairo, Damascus, Samarkand, and Islamic Spain",
-            "Printing presses in London had already printed millions of copies in AD 900"
+            "Bronze battering rams on triremes",
+            "Iron steam cannons",
+            "Counterweight trebuchets hurling heavy stone boulders",
+            "Tall windcatcher towers"
           ],
           "correct": 2,
-          "answer": "Copies written on paper already sat safely in libraries in Cairo, Damascus, Samarkand, and Islamic Spain",
-          "a": "Copies written on paper already sat safely in libraries in Cairo, Damascus, Samarkand, and Islamic Spain",
-          "explanation": "Because cheap paper had spread centuries earlier, scholars across the wider Islamic world already owned thousands of manuscript copies!"
+          "answer": "Counterweight trebuchets hurling heavy stone boulders",
+          "a": "Counterweight trebuchets hurling heavy stone boulders",
+          "explanation": "Mongol siege engineers built towering wooden counterweight trebuchets that flung heavy boulders until Baghdad’s walls cracked."
+        },
+        {
+          "stage": 1,
+          "question": "In which month and year did Hulagu Khan’s troops storm into Baghdad and destroy the House of Wisdom?",
+          "q": "In which month and year did Hulagu Khan’s troops storm into Baghdad and destroy the House of Wisdom?",
+          "options": [
+            "July AD 762",
+            "April AD 859",
+            "October AD 1066",
+            "February AD 1258"
+          ],
+          "correct": 3,
+          "answer": "February AD 1258",
+          "a": "February AD 1258",
+          "explanation": "After surrounding the city in January, Mongol forces breached the walls in February 1258 and burned the House of Wisdom."
+        },
+        {
+          "stage": 1,
+          "question": "What ended in Baghdad as a result of the devastating Mongol siege of February 1258?",
+          "q": "What ended in Baghdad as a result of the devastating Mongol siege of February 1258?",
+          "options": [
+            "Five centuries of Abbasid Caliphate rule in Baghdad",
+            "All star-gazing anywhere in the world",
+            "The use of digits 0 to 9 in mathematics",
+            "All trade along the Mediterranean Sea"
+          ],
+          "correct": 0,
+          "answer": "Five centuries of Abbasid Caliphate rule in Baghdad",
+          "a": "Five centuries of Abbasid Caliphate rule in Baghdad",
+          "explanation": "Fires ruined palaces, libraries, and canals, ending Abbasid rule in Baghdad — though copies of books survived elsewhere!"
         },
         {
           "stage": 2,
-          "question": "In which Spanish city did Muslim, Jewish, and Christian scholars translate Arabic science books into Latin?",
-          "q": "In which Spanish city did Muslim, Jewish, and Christian scholars translate Arabic science books into Latin?",
+          "question": "Why did Golden Age knowledge NOT vanish when Baghdad’s House of Wisdom burned in 1258?",
+          "q": "Why did Golden Age knowledge NOT vanish when Baghdad’s House of Wisdom burned in 1258?",
           "options": [
-            "Jorvik",
-            "Toledo",
-            "Happisburgh",
-            "Canterbury"
+            "Mongol horses carried every scroll back to China",
+            "Paper copies of thousands of Arabic books already sat safely in cities like Cairo, Damascus, Samarkand, and Córdoba",
+            "Every book had been carved onto solid bronze shields",
+            "Anglo-Saxon London held copies of every Arabic book in AD 900"
           ],
           "correct": 1,
-          "answer": "Toledo",
-          "a": "Toledo",
-          "explanation": "Toledo’s famous multi-faith translation workshops turned al-Khwarizmi, Ibn al-Haytham, and Ibn Sina into Latin, helping spark Europe’s Renaissance."
+          "answer": "Paper copies of thousands of Arabic books already sat safely in cities like Cairo, Damascus, Samarkand, and Córdoba",
+          "a": "Paper copies of thousands of Arabic books already sat safely in cities like Cairo, Damascus, Samarkand, and Córdoba",
+          "explanation": "Thanks to Samarkand rag paper, copies of Baghdad’s books were already stored safely across libraries from Central Asia to Egypt and Spain!"
         },
         {
-          "stage": 3,
-          "question": "Which magnificent palace in Granada, Spain, shows Islamic architecture flourishing in Al-Andalus even after 1258?",
-          "q": "Which magnificent palace in Granada, Spain, shows Islamic architecture flourishing in Al-Andalus even after 1258?",
+          "stage": 2,
+          "question": "What Arabic name was given to Islamic Spain, where Córdoba shone with street lamps and seventy libraries?",
+          "q": "What Arabic name was given to Islamic Spain, where Córdoba shone with street lamps and seventy libraries?",
           "options": [
-            "Maiden Castle",
-            "Stonehenge",
-            "Skara Brae",
-            "The Alhambra"
+            "Madinat al-Salam",
+            "Bayt al-Hikma",
+            "Al-Andalus",
+            "Jorvik"
+          ],
+          "correct": 2,
+          "answer": "Al-Andalus",
+          "a": "Al-Andalus",
+          "explanation": "In Al-Andalus (Islamic Spain), Córdoba boasted paved, lit streets and seventy libraries, alongside Granada’s Alhambra palace."
+        },
+        {
+          "stage": 2,
+          "question": "Why did the Spanish city of Toledo (Source B) become famous across medieval Europe?",
+          "q": "Why did the Spanish city of Toledo (Source B) become famous across medieval Europe?",
+          "options": [
+            "It built the Pharos Lighthouse",
+            "It hosted the first Olympic Games",
+            "It minted King Offa’s coins",
+            "Muslim, Jewish, and Christian translators turned Arabic science books into Latin there"
           ],
           "correct": 3,
-          "answer": "The Alhambra",
-          "a": "The Alhambra",
-          "explanation": "With its carved stucco arches, geometric tiles, and marble courtyards, the Alhambra in Spain showcases continuing Islamic artistry."
+          "answer": "Muslim, Jewish, and Christian translators turned Arabic science books into Latin there",
+          "a": "Muslim, Jewish, and Christian translators turned Arabic science books into Latin there",
+          "explanation": "In Toledo, scholars of three faiths worked together translating Arabic maths, optics, and medicine books into Latin for European universities."
+        },
+        {
+          "stage": 2,
+          "question": "Alongside al-Khwarizmi and Ibn al-Haytham, which famous Golden Age medical writer was translated into Latin at Toledo?",
+          "q": "Alongside al-Khwarizmi and Ibn al-Haytham, which famous Golden Age medical writer was translated into Latin at Toledo?",
+          "options": [
+            "Ibn Sina",
+            "Pericles",
+            "Themistocles",
+            "Leonidas"
+          ],
+          "correct": 0,
+          "answer": "Ibn Sina",
+          "a": "Ibn Sina",
+          "explanation": "Translated into Latin, books by al-Khwarizmi, Ibn al-Haytham, and master doctor Ibn Sina trained European students for centuries."
+        },
+        {
+          "stage": 2,
+          "question": "Which great European cultural and scientific rebirth was helped by Latin translations of Arabic books?",
+          "q": "Which great European cultural and scientific rebirth was helped by Latin translations of Arabic books?",
+          "options": [
+            "The Bronze Age",
+            "The Renaissance",
+            "The Iron Age",
+            "The Peloponnesian War"
+          ],
+          "correct": 1,
+          "answer": "The Renaissance",
+          "a": "The Renaissance",
+          "explanation": "Rescued Greek and Golden Age Arabic discoveries flowing through Toledo and Italy helped spark Europe’s Renaissance!"
         },
         {
           "stage": 3,
-          "question": "Which of these everyday English word groups all entered our language from Arabic?",
-          "q": "Which of these everyday English word groups all entered our language from Arabic?",
+          "question": "Look at Source C (made in AD 1480). What does its date prove about science in the Islamic world?",
+          "q": "Look at Source C (made in AD 1480). What does its date prove about science in the Islamic world?",
           "options": [
-            "Algebra, algorithm, zero, chemistry, sugar, lemon, orange, sofa, and cotton",
-            "Window, husband, sky, egg, and Thursday",
-            "Aqueduct, villa, gladiator, senate, and legion",
-            "Igloo, kayak, anorak, and husky"
+            "No astrolabes were ever made before AD 1480",
+            "It was made by Roman legionaries",
+            "Islamic astronomy and instrument-making kept thriving for centuries after 1258",
+            "Brass melted during the 1258 siege"
+          ],
+          "correct": 2,
+          "answer": "Islamic astronomy and instrument-making kept thriving for centuries after 1258",
+          "a": "Islamic astronomy and instrument-making kept thriving for centuries after 1258",
+          "explanation": "Crafted more than 200 years after 1258, Musa’s rare spherical astrolabe proves Islamic astronomy kept advancing in other cities."
+        },
+        {
+          "stage": 3,
+          "question": "Which everyday English food and home words travelled into our language through Arabic trade and scholarship?",
+          "q": "Which everyday English food and home words travelled into our language through Arabic trade and scholarship?",
+          "options": [
+            "School, dinosaur, planet, and theatre",
+            "Window, sky, egg, and husband",
+            "Gladiator, villa, mosaic, and forum",
+            "Zero, chemistry, sugar, lemon, orange, sofa, and cotton"
+          ],
+          "correct": 3,
+          "answer": "Zero, chemistry, sugar, lemon, orange, sofa, and cotton",
+          "a": "Zero, chemistry, sugar, lemon, orange, sofa, and cotton",
+          "explanation": "Every time you say zero, chemistry, sugar, lemon, orange, sofa, or cotton, you echo words carried through the Arabic-speaking world!"
+        },
+        {
+          "stage": 3,
+          "question": "Inspect Source D. How did Arabic diagrams of the eye’s lens and optic nerves shape modern technology?",
+          "q": "Inspect Source D. How did Arabic diagrams of the eye’s lens and optic nerves shape modern technology?",
+          "options": [
+            "They laid vital foundations for reading glasses, microscopes, telescopes, and smartphone cameras",
+            "They proved invisible fire shoots out of human eyes",
+            "They showed doctors how to mix cobalt-blue pottery glaze",
+            "They taught sailors how to stitch coconut-rope hulls"
           ],
           "correct": 0,
-          "answer": "Algebra, algorithm, zero, chemistry, sugar, lemon, orange, sofa, and cotton",
-          "a": "Algebra, algorithm, zero, chemistry, sugar, lemon, orange, sofa, and cotton",
-          "explanation": "All nine everyday science, maths, food, and home words travelled into English from Arabic scholarship and trade!"
+          "answer": "They laid vital foundations for reading glasses, microscopes, telescopes, and smartphone cameras",
+          "a": "They laid vital foundations for reading glasses, microscopes, telescopes, and smartphone cameras",
+          "explanation": "Mapping how light passes through the eye’s lens inspired corrective spectacles, microscopes, telescopes, and digital cameras."
+        },
+        {
+          "stage": 3,
+          "question": "Whenever a computer or phone follows step-by-step code instructions today, which Baghdad thinker’s name is echoed?",
+          "q": "Whenever a computer or phone follows step-by-step code instructions today, which Baghdad thinker’s name is echoed?",
+          "options": [
+            "Caliph al-Mansur",
+            "Muhammad al-Khwarizmi (\"algorithm\")",
+            "Yahya al-Wasiti",
+            "Hunayn ibn Ishaq"
+          ],
+          "correct": 1,
+          "answer": "Muhammad al-Khwarizmi (\"algorithm\")",
+          "a": "Muhammad al-Khwarizmi (\"algorithm\")",
+          "explanation": "Every modern computer algorithm carries the Latinised name of House of Wisdom mathematician Muhammad al-Khwarizmi!"
+        },
+        {
+          "stage": 3,
+          "question": "Which architectural masterpiece in Granada, Spain, shows Islamic art and courtyard design thriving even after 1258?",
+          "q": "Which architectural masterpiece in Granada, Spain, shows Islamic art and courtyard design thriving even after 1258?",
+          "options": [
+            "The Lion Gate",
+            "The Parthenon",
+            "The Alhambra palace",
+            "The Erechtheion"
+          ],
+          "correct": 2,
+          "answer": "The Alhambra palace",
+          "a": "The Alhambra palace",
+          "explanation": "Built in Al-Andalus with slender marble columns and carved arches, Granada’s Alhambra palace shows Islamic artistry shining on after 1258."
         }
       ],
       "video": [

@@ -16,7 +16,7 @@ window.UNIT_DATA = {
   "homepage_background": "/units/ks2_romans/assets/banner_unit_hero.jpg",
   "cover_image": "/units/ks2_romans/assets/banner_unit_hero.jpg",
   "cover_image_position": "center 35%",
-  "cover_caption": "Roman legionaries in gleaming lorica segmentata iron strip armour locking curved red-and-gold scutum shields to hurl pilum javelins (CC BY-SA 3.0, MatthiasKabel).",
+  "cover_caption": "Roman legionaries in gleaming lorica segmentata iron strip armour locking curved red-and-gold scutum shields to hurl pilum javelins.",
   "enquiry": "How did the Roman Empire conquer Britain and change life on our island forever?",
   "enquiry_question": "How did the Roman Empire conquer Britain and change life on our island forever?",
   "workbooks": [
@@ -30,10 +30,10 @@ window.UNIT_DATA = {
     {
       "id": "lesson_1",
       "skill": "Evidence & Everyday Life",
-      "title": "Enquiry 1: Celtic Britain Before the Romans (c. 500 BC – AD 43)",
+      "title": "Enquiry 1: Celtic Britain Before the Romans (c. 500 BC–AD 43)",
       "subtitle": "Iron Age Tribes, Hillforts, Thatched Roundhouses & Dazzling Gold Torcs",
-      "enquiryQuestion": "Who were the Iron Age Celts, and how did they live before the Roman legions arrived?",
-      "enquiry_question": "Who were the Iron Age Celts, and how did they live before the Roman legions arrived?",
+      "enquiryQuestion": "How did Iron Age Celts live before the Roman army arrived?",
+      "enquiry_question": "How did Iron Age Celts live before the Roman army arrived?",
       "prologue": "Before a single Roman road was built across Britain, dozens of proud Iron Age tribes farmed green valleys, crowned hilltops with giant earth ramparts, and twisted pure gold into gleaming neck rings. Step inside a smoky thatched roundhouse to discover how Celtic Britons really lived!",
       "blurb": "Before a single Roman road was built across Britain, dozens of proud Iron Age tribes farmed green valleys, crowned hilltops with giant earth ramparts, and twisted pure gold into gleaming neck rings. Step inside a smoky thatched roundhouse to discover how Celtic Britons really lived!",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l1_banner_british_camp.jpg",
@@ -59,10 +59,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden palisade fences to protect families and grain stores. **Hinge Question:** Why did Iron Age tribes go to such huge effort to dig three or four rings of steep earth banks around a hilltop?",
-          "Source B": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using authentic Iron Age tools and materials to test how families stayed warm and dry. **Hinge Question:** Why was building a thatched roundhouse WITHOUT a chimney hole actually a clever Iron Age design rather than a mistake?",
-          "Source C": "The bronze sheet on the Battersea Shield is too thin to stop heavy sword blows in battle. Instead, historians believe it was carried in ceremonies before being placed deliberately into the River Thames as a precious gift to the gods. **Hinge Question:** What does the dazzling craftsmanship of the Battersea Shield prove about Roman claims that Iron Age Britons were \"uncivilised savages\"?",
-          "Source D": "Because Iron Age Druids did not write books, our earliest written description of Britain comes from the Roman general Julius Caesar, who invaded Kent in 55 BC and 54 BC. Compare his words carefully against Celtic gold coins and metalwork! **Hinge Question:** Why must historians be careful when reading Julius Caesar's description of Celtic Britons?"
+          "Source A": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden fences to protect families and grain. **Hinge Question:** Why did Iron Age tribes go to such huge effort to dig steep earth banks around a hilltop?",
+          "Source B": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using Iron Age tools and materials to test how families stayed warm and dry. **Hinge Question:** Why was building a thatched roundhouse WITHOUT a chimney hole actually a clever Iron Age design?",
+          "Source C": "Found in the River Thames at Battersea in 1857, this gleaming bronze shield is too thin for sword blows and was placed deliberately in the water as a gift to river gods. **Hinge Question:** What does the dazzling skill of the Battersea Shield prove about Roman claims that Britons were \"uncivilised\"?",
+          "Source D": "Because Iron Age Druids did not write books, our earliest written account of Britain comes from Roman general Julius Caesar, who landed in Kent in 55 BC and 54 BC. **Hinge Question:** Why must historians read Julius Caesar's words carefully alongside Celtic gold coins and metalwork?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -112,7 +112,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 12-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -216,11 +216,11 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Tribes, Warriors & Giant Earth Hillforts",
-          "text": "<span class=\"para-ref\">[1.1]</span> Long before Roman soldiers marched into Britain, our green island was home to **Iron Age Celts**. Britain had no single ruler, so dozens of proud **tribes** ruled their own territories. These included the **Iceni** in the east, the **Catuvellauni** in the south, and the **Brigantes** in the north.<br><br><span class=\"para-ref\">[1.2]</span> Rival tribes sometimes raided neighbours for cattle, so communities built giant **hillforts** like **Maiden Castle** in Dorset. Steep earth **ramparts**, deep ditches, and wooden fences ringed each high hilltop. When **Julius Caesar** landed in **55 BC** and **54 BC**, fierce chariot warriors fought him off until he sailed back.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Long before Roman soldiers marched into Britain, our green island was home to **Iron Age Celts**. Britain had no single ruler, so dozens of proud **tribes** ruled their own territories. These included the **Iceni** in the east, the **Catuvellauni** in the south, and the **Brigantes** in the north.<br><br><span class=\"para-ref\">[1.2]</span> Rival tribes sometimes raided neighbours for cattle, so communities built giant **hillforts** like **Maiden Castle** in Dorset. Steep earth **ramparts**, deep ditches, and wooden fences ringed each high hilltop. When **Julius Caesar** landed in **55 BC** and **54 BC**, fierce chariot warriors fought him off until he sailed back.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Before Roman soldiers arrived, green Britain belonged to **Iron Age Celts**. Britain had no single king, as **separate tribes** ruled their own lands. They included the **Iceni** [eye-SEE-nee] in the east, the **Catuvellauni** [kat-oo-vel-AW-nee] in the south, and the **Brigantes** [brig-AN-teez] in the north.<br><br><span class=\"para-ref\">[1.2]</span> Tribes protected cattle inside giant **hillforts** like **Maiden Castle** in Dorset. Steep earth **ramparts**, deep ditches, and wooden fences ringed the hilltop. In **55 BC** and **54 BC**, chariot warriors fought **Julius Caesar** until he sailed back.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Before Roman soldiers arrived, green Britain belonged to **Iron Age Celts**. Britain had no single king, as **separate tribes** ruled their own lands. They included the **Iceni** [eye-SEE-nee] in the east, the **Catuvellauni** [kat-oo-vel-AW-nee] in the south, and the **Brigantes** [brig-AN-teez] in the north.<br><br><span class=\"para-ref\">[1.2]</span> Tribes protected cattle inside giant **hillforts** like **Maiden Castle** in Dorset. Steep earth **ramparts**, deep ditches, and wooden fences ringed the hilltop. In **55 BC** and **54 BC**, chariot warriors fought **Julius Caesar** until he sailed back.",
           "image": "/units/ks2_romans/assets/old_sarum_iron_age_ramparts.jpg",
           "image_alt": "Giant grass-covered Iron Age earth ramparts and ditches at Maiden Castle hillfort in Dorset",
-          "caption": "Surviving Iron Age earthwork ramparts and deep defensive ditch crowning a southern British hilltop. (CC BY-SA 4.0, Ethan Doyle White).",
+          "caption": "Surviving Iron Age earthwork ramparts and deep defensive ditch crowning a southern British hilltop.",
           "isReversed": false,
           "sources": [
             {
@@ -231,26 +231,26 @@ window.UNIT_DATA = {
               "src": "/images/upgraded/ks2-ancient/romans_l1_src0_maiden_castle_ramparts.jpg",
               "image": "/images/upgraded/ks2-ancient/romans_l1_src0_maiden_castle_ramparts.jpg",
               "title": "Source A: Giant Earth Ramparts of Maiden Castle Hillfort, Dorset (c. 450 BC)",
-              "caption": "The huge grass-covered chalk ramparts and deep ditches of Maiden Castle in Dorset, one of the largest Iron Age hillforts in Europe (CC BY-SA 2.0, Chris Heaton).",
+              "caption": "The huge grass-covered chalk ramparts and deep ditches of Maiden Castle in Dorset, one of the largest Iron Age hillforts in Europe.",
               "author": "Iron Age Durotriges Tribe Builders (Archaeological Site)",
               "date": "c. 450–100 BC",
-              "context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden palisade fences to protect families and grain stores.",
-              "source_context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden palisade fences to protect families and grain stores.",
+              "context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden fences to protect families and grain.",
+              "source_context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden fences to protect families and grain. **Hinge Question:** Why did Iron Age tribes go to such huge effort to dig steep earth banks around a hilltop?",
               "question_badge": "HILLFORT DEFENCES",
               "question": "Look closely at the steep earth banks in Source A. How did Maiden Castle hillfort protect a Celtic tribe from raiders?",
-              "model_answer": "Source A shows giant, steep earth ramparts and deep ditches ringing the hilltop. Attackers had to climb up exhausting slopes while defenders stood high behind wooden fences, making it much easier to spot and stop cattle raiders."
+              "model_answer": "Source A shows giant, steep earth ramparts and deep ditches ringing the hilltop. Raiders had to scramble up tiring slopes while defenders stood high behind wooden fences to stop them."
             }
           ],
-          "image_caption": "Surviving Iron Age earthwork ramparts and deep defensive ditch crowning a southern British hilltop. (CC BY-SA 4.0, Ethan Doyle White)."
+          "image_caption": "Surviving Iron Age earthwork ramparts and deep defensive ditch crowning a southern British hilltop."
         },
         {
           "act": 2,
           "title": "Inside a Smoky Thatched Roundhouse",
-          "text": "<span class=\"para-ref\">[1.3]</span> Most Celtic families were hardworking farmers who lived inside circular homes called **roundhouses**. Builders wove bendy hazel branches into **wattle-and-daub** walls plastered with sticky clay, mud, and straw. Overhead rose a tall cone-shaped **thatched roof** made of dry reeds or straw. Builders cleverly left **no chimney** so howling winds could not blow sparks inside.<br><br><span class=\"para-ref\">[1.4]</span> Smoke from the glowing central **hearth fire** drifted slowly out through the thick thatch. Rising woodsmoke cured meat hung in the rafters and drove away biting insects. Inside the warm room, parents wove bright woollen cloaks on tall wooden **looms**. Nearby, children turned heavy stone **quern stones** to grind golden wheat into flour.",
-          "content": "<span class=\"para-ref\">[1.3]</span> Most Celtic families were hardworking farmers who lived inside circular homes called **roundhouses**. Builders wove bendy hazel branches into **wattle-and-daub** walls plastered with sticky clay, mud, and straw. Overhead rose a tall cone-shaped **thatched roof** made of dry reeds or straw. Builders cleverly left **no chimney** so howling winds could not blow sparks inside.<br><br><span class=\"para-ref\">[1.4]</span> Smoke from the glowing central **hearth fire** drifted slowly out through the thick thatch. Rising woodsmoke cured meat hung in the rafters and drove away biting insects. Inside the warm room, parents wove bright woollen cloaks on tall wooden **looms**. Nearby, children turned heavy stone **quern stones** to grind golden wheat into flour.",
+          "text": "<span class=\"para-ref\">[1.3]</span> Most Celtic farming families lived inside circular homes called **roundhouses**. Builders wove hazel sticks into **wattle-and-daub** walls plastered with clay, mud, and straw. Above rose a cone **thatched roof** with **no chimney**, so wind could not blow sparks inside.<br><br><span class=\"para-ref\">[1.4]</span> Smoke from the central **hearth fire** drifted gently through the thatch. Rising woodsmoke cured meat in the rafters and chased away insects. Parents wove bright wool cloaks on tall wooden **looms**, while children turned heavy **quern stones** [KWURN] to grind wheat into flour.",
+          "content": "<span class=\"para-ref\">[1.3]</span> Most Celtic farming families lived inside circular homes called **roundhouses**. Builders wove hazel sticks into **wattle-and-daub** walls plastered with clay, mud, and straw. Above rose a cone **thatched roof** with **no chimney**, so wind could not blow sparks inside.<br><br><span class=\"para-ref\">[1.4]</span> Smoke from the central **hearth fire** drifted gently through the thatch. Rising woodsmoke cured meat in the rafters and chased away insects. Parents wove bright wool cloaks on tall wooden **looms**, while children turned heavy **quern stones** [KWURN] to grind wheat into flour.",
           "image": "/units/ks2_romans/assets/castell_henllys_roundhouse_interior.jpg",
           "image_alt": "Reconstructed Iron Age Celtic thatched roundhouse at Butser Ancient Farm",
-          "caption": "Reconstructed Iron Age Celtic roundhouse showing the steep conical thatched roof and timber doorway. (CC BY-SA 3.0, Keith Ruffles).",
+          "caption": "Reconstructed Iron Age Celtic roundhouse showing the steep cone-shaped thatched roof and timber doorway.",
           "isReversed": true,
           "sources": [
             {
@@ -261,26 +261,26 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/butser_iron_age_roundhouse.jpg",
               "image": "/units/ks2_romans/assets/butser_iron_age_roundhouse.jpg",
               "title": "Source B: Reconstructed Iron Age Thatched Roundhouse at Butser Ancient Farm",
-              "caption": "A full-size reconstruction of an Iron Age Celtic roundhouse built from archaeological post-holes, showing wattle-and-daub walls and a steep cone-shaped thatched roof with no chimney.",
+              "caption": "Full-size reconstruction of an Iron Age Celtic roundhouse at Butser Ancient Farm, showing wattle-and-daub walls and a steep thatched roof with no chimney.",
               "author": "Experimental Archaeologists at Butser Ancient Farm, Hampshire",
               "date": "Reconstructed from c. 300 BC Evidence",
-              "context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using authentic Iron Age tools and materials to test how families stayed warm and dry.",
-              "source_context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using authentic Iron Age tools and materials to test how families stayed warm and dry.",
+              "context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using Iron Age tools and materials to test how families stayed warm and dry.",
+              "source_context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using Iron Age tools and materials to test how families stayed warm and dry. **Hinge Question:** Why was building a thatched roundhouse WITHOUT a chimney hole actually a clever Iron Age design?",
               "question_badge": "ROUNDHOUSE DESIGN",
               "question": "Inspect Source B. What natural materials made a roundhouse warm and dry, and why did builders leave no chimney?",
-              "model_answer": "Source B shows circular wattle-and-daub walls made from woven hazel sticks and clay, topped by a steep cone roof of straw thatch that shed rainwater. Leaving out a chimney stopped strong winds blowing sparks onto the dry roof, while gently rising smoke cured meat and kept insects out."
+              "model_answer": "Source B has wattle-and-daub walls of woven hazel sticks and clay under a steep straw roof that shed rain. Leaving no chimney stopped wind blowing sparks onto dry thatch, while smoke cured meat overhead."
             }
           ],
-          "image_caption": "Reconstructed Iron Age Celtic roundhouse showing the steep conical thatched roof and timber doorway. (CC BY-SA 3.0, Keith Ruffles)."
+          "image_caption": "Reconstructed Iron Age Celtic roundhouse showing the steep cone-shaped thatched roof and timber doorway."
         },
         {
           "act": 3,
           "title": "Master Craftworkers, Druids & Sea Traders",
-          "text": "<span class=\"para-ref\">[1.5]</span> Far from being uncivilised, the Celts were dazzling metalworkers and wise storytellers. Skilled smiths twisted ropes of pure gold into heavy neck rings called **torcs**. They also decorated gleaming **bronze shields** with swirling red glass for water gods in sacred rivers. Wise priests called **Druids** memorised thousands of laws, poems, and prayers instead of writing books.<br><br><span class=\"para-ref\">[1.6]</span> Celtic Britons were also busy international **sea traders** sailing wooden boats. Ships crossed the **English Channel** carrying **Cornish tin**, iron, cattle hides, hunting dogs, and **wheat** to mainland Europe. Wealthy tribal rulers even minted shiny **gold stater coins**, spreading news of Britain's rich treasures straight to **Rome**.",
-          "content": "<span class=\"para-ref\">[1.5]</span> Far from being uncivilised, the Celts were dazzling metalworkers and wise storytellers. Skilled smiths twisted ropes of pure gold into heavy neck rings called **torcs**. They also decorated gleaming **bronze shields** with swirling red glass for water gods in sacred rivers. Wise priests called **Druids** memorised thousands of laws, poems, and prayers instead of writing books.<br><br><span class=\"para-ref\">[1.6]</span> Celtic Britons were also busy international **sea traders** sailing wooden boats. Ships crossed the **English Channel** carrying **Cornish tin**, iron, cattle hides, hunting dogs, and **wheat** to mainland Europe. Wealthy tribal rulers even minted shiny **gold stater coins**, spreading news of Britain's rich treasures straight to **Rome**.",
+          "text": "<span class=\"para-ref\">[1.5]</span> **Iron Age** Britons were skilled craftworkers and storytellers, not rough savages. Smiths twisted pure gold ropes into heavy neck rings called **gold torcs**. They placed gleaming **bronze shields** in sacred rivers, while wise **Druids** memorised laws and prayers without writing books.<br><br><span class=\"para-ref\">[1.6]</span> Busy sea traders sailed wooden boats across the **English Channel**. Ships carried **Cornish tin**, iron, cattle hides, hunting dogs, and **wheat** to Europe. Rulers even minted **gold stater coins**, spreading news of Britain's riches straight to **Rome**!",
+          "content": "<span class=\"para-ref\">[1.5]</span> **Iron Age** Britons were skilled craftworkers and storytellers, not rough savages. Smiths twisted pure gold ropes into heavy neck rings called **gold torcs**. They placed gleaming **bronze shields** in sacred rivers, while wise **Druids** memorised laws and prayers without writing books.<br><br><span class=\"para-ref\">[1.6]</span> Busy sea traders sailed wooden boats across the **English Channel**. Ships carried **Cornish tin**, iron, cattle hides, hunting dogs, and **wheat** to Europe. Rulers even minted **gold stater coins**, spreading news of Britain's riches straight to **Rome**!",
           "image": "/units/ks2_romans/assets/snettisham_great_torc.jpg",
           "image_alt": "The Snettisham Great Torc — an Iron Age twisted gold neck ring found in Norfolk",
-          "caption": "The Snettisham Great Torc (c. 150–50 BC), crafted in Norfolk from over a kilogram of twisted gold threads and decorated ring terminals.",
+          "caption": "The Snettisham Great Torc (c. 150–50 BC), crafted in Norfolk from over a kilogram of twisted gold threads.",
           "isReversed": false,
           "sources": [
             {
@@ -291,14 +291,14 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/battersea_shield_bronze.jpg",
               "image": "/units/ks2_romans/assets/battersea_shield_bronze.jpg",
               "title": "Source C: The Battersea Bronze & Red Glass Shield (c. 350–50 BC)",
-              "caption": "Dazzling sheet-bronze ceremonial shield inlaid with 27 discs of bright red glass (enamel), dredged from the mud of the River Thames at Battersea in 1857 (British Museum).",
+              "caption": "Sheet-bronze ceremonial Battersea Shield inlaid with 27 discs of bright red glass, found in the mud of the River Thames in London.",
               "author": "Master Celtic Metalsmith",
               "date": "c. 350–50 BC",
-              "context": "Dredged from the River Thames at Battersea in London in 1857, this gleaming Iron Age shield is crafted from thin sheet bronze inlaid with red glass.",
-              "source_context": "Dredged from the River Thames at Battersea in London in 1857, this gleaming Iron Age shield is crafted from thin sheet bronze inlaid with red glass.",
+              "context": "Found in the River Thames at Battersea in 1857, this gleaming bronze shield is too thin for sword blows and was placed deliberately in the water as a gift to river gods.",
+              "source_context": "Found in the River Thames at Battersea in 1857, this gleaming bronze shield is too thin for sword blows and was placed deliberately in the water as a gift to river gods. **Hinge Question:** What does the dazzling skill of the Battersea Shield prove about Roman claims that Britons were \"uncivilised\"?",
               "question_badge": "CELTIC METALWORK",
               "question": "What does Source C prove about the skill and beliefs of Iron Age craftworkers before the Romans arrived?",
-              "model_answer": "Source C proves that Iron Age Celts were brilliant artists and metalworkers, not rough savages. Its symmetrical swirling bronze patterns and red glass inlays required huge skill, and placing it in the River Thames shows their deep religious devotion to water gods."
+              "model_answer": "Source C proves Iron Age Celts were brilliant artists and metalworkers, not rough savages. Its swirling bronze curves and red glass discs took great skill, and placing it in the River Thames honoured water gods."
             },
             {
               "id": "ks2_romans_l1_src_d",
@@ -308,18 +308,19 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/celtic_gold_stater_coin.jpg",
               "image": "/units/ks2_romans/assets/celtic_gold_stater_coin.jpg",
               "title": "Source D: Iron Age Gold Stater Coin & Julius Caesar's Account of Britain (55–54 BC)",
-              "caption": "Celtic gold stater coin stamped with a stylised horse and chariot wheel (c. 55–45 BC), paired with Roman general Julius Caesar's description of Britain.",
+              "caption": "Celtic gold stater coin stamped with a galloping horse and chariot wheel (c. 55–45 BC), paired with Roman general Julius Caesar's description of Britain.",
               "author": "Celtic Mint & Julius Caesar (tr. H. J. Edwards, 1917)",
               "date": "c. 55–45 BC",
-              "context": "Because Iron Age Druids did not write books, our earliest written description of Britain comes from the Roman general Julius Caesar, who invaded Kent in 55 BC and 54 BC. Compare his words carefully against Celtic gold coins and metalwork!",
-              "source_context": "Because Iron Age Druids did not write books, our earliest written description of Britain comes from the Roman general Julius Caesar, who invaded Kent in 55 BC and 54 BC. Compare his words carefully against Celtic gold coins and metalwork!",
+              "context": "Because Iron Age Druids did not write books, our earliest written account of Britain comes from Roman general Julius Caesar, who landed in Kent in 55 BC and 54 BC.",
+              "source_context": "Because Iron Age Druids did not write books, our earliest written account of Britain comes from Roman general Julius Caesar, who landed in Kent in 55 BC and 54 BC. **Hinge Question:** Why must historians read Julius Caesar's words carefully alongside Celtic gold coins and metalwork?",
               "question_badge": "ROMAN EYEWITNESS & GOLD COIN",
               "question": "Compare Caesar's words and the gold coin in Source D. What proves Britain was rich, and why might Caesar exaggerate Celtic fierceness?",
-              "model_answer": "Source D shows that Britons minted shiny gold coins, kept many cattle, and mined valuable tin and iron. However, Caesar was a Roman general writing for people back in Rome, so describing blue-painted warriors with long hair made his own expedition sound even braver!",
-              "text": "Julius Caesar, The Gallic War, Book V, Chapters 12 & 14 (54 BC): \"The population is exceedingly large, the ground thickly studded with homesteads, closely resembling those of the Gauls, and the cattle very numerous. For money they use bronze, or gold coins, or iron tallies of a standard weight. In the midland districts of Britain tin is produced, in the maritime iron [...] All the Britons dye themselves with woad, which produces a bluish colour, and thereby have a more terrible appearance in fight. They wear their hair long.\"",
-              "provenance": "Julius Caesar, The Gallic War, Book V, Chapters 12 & 14 (c. 54 BC), translated by H. J. Edwards (Loeb Classical Library, 1917 — Public Domain)."
+              "model_answer": "Source D proves Britons minted gold coins, kept large cattle herds, and mined tin and iron. However, Caesar wrote to impress readers back in Rome, so describing blue-painted warriors made his own army sound even braver!",
+              "text": "Julius Caesar (54 BC): \"The cattle [are] very numerous. For money they use bronze, or gold coins... In Britain tin is produced, and iron... All the Britons dye themselves with woad, which produces a bluish colour, to look terrible in fight.\"<br><br><strong>In plain words:</strong> Britons keep huge herds of cattle, mine tin and iron, and use gold coins. Before battle, warriors paint their skin blue with woad to scare enemies!",
+              "provenance": "Celtic gold stater coin paired with Julius Caesar, The Gallic War (54 BC)."
             }
-          ]
+          ],
+          "image_caption": "The Snettisham Great Torc (c. 150–50 BC), crafted in Norfolk from over a kilogram of twisted gold threads."
         }
       ],
       "sources": [
@@ -331,14 +332,14 @@ window.UNIT_DATA = {
           "src": "/images/upgraded/ks2-ancient/romans_l1_src0_maiden_castle_ramparts.jpg",
           "image": "/images/upgraded/ks2-ancient/romans_l1_src0_maiden_castle_ramparts.jpg",
           "title": "Source A: Giant Earth Ramparts of Maiden Castle Hillfort, Dorset (c. 450 BC)",
-          "caption": "The huge grass-covered chalk ramparts and deep ditches of Maiden Castle in Dorset, one of the largest Iron Age hillforts in Europe (CC BY-SA 2.0, Chris Heaton).",
+          "caption": "The huge grass-covered chalk ramparts and deep ditches of Maiden Castle in Dorset, one of the largest Iron Age hillforts in Europe.",
           "author": "Iron Age Durotriges Tribe Builders (Archaeological Site)",
           "date": "c. 450–100 BC",
-          "context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden palisade fences to protect families and grain stores.",
-          "source_context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden palisade fences to protect families and grain stores.",
+          "context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden fences to protect families and grain.",
+          "source_context": "Iron Age communities dug massive rings of earth banks (ramparts) and deep ditches using antlers and iron picks, crowning the top with wooden fences to protect families and grain. **Hinge Question:** Why did Iron Age tribes go to such huge effort to dig steep earth banks around a hilltop?",
           "question_badge": "HILLFORT DEFENCES",
           "question": "Look closely at the steep earth banks in Source A. How did Maiden Castle hillfort protect a Celtic tribe from raiders?",
-          "model_answer": "Source A shows giant, steep earth ramparts and deep ditches ringing the hilltop. Attackers had to climb up exhausting slopes while defenders stood high behind wooden fences, making it much easier to spot and stop cattle raiders."
+          "model_answer": "Source A shows giant, steep earth ramparts and deep ditches ringing the hilltop. Raiders had to scramble up tiring slopes while defenders stood high behind wooden fences to stop them."
         },
         {
           "id": "ks2_romans_l1_src_b",
@@ -348,14 +349,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/butser_iron_age_roundhouse.jpg",
           "image": "/units/ks2_romans/assets/butser_iron_age_roundhouse.jpg",
           "title": "Source B: Reconstructed Iron Age Thatched Roundhouse at Butser Ancient Farm",
-          "caption": "A full-size reconstruction of an Iron Age Celtic roundhouse built from archaeological post-holes, showing wattle-and-daub walls and a steep cone-shaped thatched roof with no chimney.",
+          "caption": "Full-size reconstruction of an Iron Age Celtic roundhouse at Butser Ancient Farm, showing wattle-and-daub walls and a steep thatched roof with no chimney.",
           "author": "Experimental Archaeologists at Butser Ancient Farm, Hampshire",
           "date": "Reconstructed from c. 300 BC Evidence",
-          "context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using authentic Iron Age tools and materials to test how families stayed warm and dry.",
-          "source_context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using authentic Iron Age tools and materials to test how families stayed warm and dry.",
+          "context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using Iron Age tools and materials to test how families stayed warm and dry.",
+          "source_context": "Archaeologists found circles of rotted wooden post-holes in the soil and rebuilt roundhouses using Iron Age tools and materials to test how families stayed warm and dry. **Hinge Question:** Why was building a thatched roundhouse WITHOUT a chimney hole actually a clever Iron Age design?",
           "question_badge": "ROUNDHOUSE DESIGN",
           "question": "Inspect Source B. What natural materials made a roundhouse warm and dry, and why did builders leave no chimney?",
-          "model_answer": "Source B shows circular wattle-and-daub walls made from woven hazel sticks and clay, topped by a steep cone roof of straw thatch that shed rainwater. Leaving out a chimney stopped strong winds blowing sparks onto the dry roof, while gently rising smoke cured meat and kept insects out."
+          "model_answer": "Source B has wattle-and-daub walls of woven hazel sticks and clay under a steep straw roof that shed rain. Leaving no chimney stopped wind blowing sparks onto dry thatch, while smoke cured meat overhead."
         },
         {
           "id": "ks2_romans_l1_src_c",
@@ -365,14 +366,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/battersea_shield_bronze.jpg",
           "image": "/units/ks2_romans/assets/battersea_shield_bronze.jpg",
           "title": "Source C: The Battersea Bronze & Red Glass Shield (c. 350–50 BC)",
-          "caption": "Dazzling sheet-bronze ceremonial shield inlaid with 27 discs of bright red glass (enamel), dredged from the mud of the River Thames at Battersea in 1857 (British Museum).",
+          "caption": "Sheet-bronze ceremonial Battersea Shield inlaid with 27 discs of bright red glass, found in the mud of the River Thames in London.",
           "author": "Master Celtic Metalsmith",
           "date": "c. 350–50 BC",
-          "context": "Dredged from the River Thames at Battersea in London in 1857, this gleaming Iron Age shield is crafted from thin sheet bronze inlaid with red glass.",
-          "source_context": "Dredged from the River Thames at Battersea in London in 1857, this gleaming Iron Age shield is crafted from thin sheet bronze inlaid with red glass.",
+          "context": "Found in the River Thames at Battersea in 1857, this gleaming bronze shield is too thin for sword blows and was placed deliberately in the water as a gift to river gods.",
+          "source_context": "Found in the River Thames at Battersea in 1857, this gleaming bronze shield is too thin for sword blows and was placed deliberately in the water as a gift to river gods. **Hinge Question:** What does the dazzling skill of the Battersea Shield prove about Roman claims that Britons were \"uncivilised\"?",
           "question_badge": "CELTIC METALWORK",
           "question": "What does Source C prove about the skill and beliefs of Iron Age craftworkers before the Romans arrived?",
-          "model_answer": "Source C proves that Iron Age Celts were brilliant artists and metalworkers, not rough savages. Its symmetrical swirling bronze patterns and red glass inlays required huge skill, and placing it in the River Thames shows their deep religious devotion to water gods."
+          "model_answer": "Source C proves Iron Age Celts were brilliant artists and metalworkers, not rough savages. Its swirling bronze curves and red glass discs took great skill, and placing it in the River Thames honoured water gods."
         },
         {
           "id": "ks2_romans_l1_src_d",
@@ -382,16 +383,16 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/celtic_gold_stater_coin.jpg",
           "image": "/units/ks2_romans/assets/celtic_gold_stater_coin.jpg",
           "title": "Source D: Iron Age Gold Stater Coin & Julius Caesar's Account of Britain (55–54 BC)",
-          "caption": "Celtic gold stater coin stamped with a stylised horse and chariot wheel (c. 55–45 BC), paired with Roman general Julius Caesar's description of Britain.",
+          "caption": "Celtic gold stater coin stamped with a galloping horse and chariot wheel (c. 55–45 BC), paired with Roman general Julius Caesar's description of Britain.",
           "author": "Celtic Mint & Julius Caesar (tr. H. J. Edwards, 1917)",
           "date": "c. 55–45 BC",
-          "context": "Because Iron Age Druids did not write books, our earliest written description of Britain comes from the Roman general Julius Caesar, who invaded Kent in 55 BC and 54 BC. Compare his words carefully against Celtic gold coins and metalwork!",
-          "source_context": "Because Iron Age Druids did not write books, our earliest written description of Britain comes from the Roman general Julius Caesar, who invaded Kent in 55 BC and 54 BC. Compare his words carefully against Celtic gold coins and metalwork!",
+          "context": "Because Iron Age Druids did not write books, our earliest written account of Britain comes from Roman general Julius Caesar, who landed in Kent in 55 BC and 54 BC.",
+          "source_context": "Because Iron Age Druids did not write books, our earliest written account of Britain comes from Roman general Julius Caesar, who landed in Kent in 55 BC and 54 BC. **Hinge Question:** Why must historians read Julius Caesar's words carefully alongside Celtic gold coins and metalwork?",
           "question_badge": "ROMAN EYEWITNESS & GOLD COIN",
           "question": "Compare Caesar's words and the gold coin in Source D. What proves Britain was rich, and why might Caesar exaggerate Celtic fierceness?",
-          "model_answer": "Source D shows that Britons minted shiny gold coins, kept many cattle, and mined valuable tin and iron. However, Caesar was a Roman general writing for people back in Rome, so describing blue-painted warriors with long hair made his own expedition sound even braver!",
-          "text": "Julius Caesar, The Gallic War, Book V, Chapters 12 & 14 (54 BC): \"The population is exceedingly large, the ground thickly studded with homesteads, closely resembling those of the Gauls, and the cattle very numerous. For money they use bronze, or gold coins, or iron tallies of a standard weight. In the midland districts of Britain tin is produced, in the maritime iron [...] All the Britons dye themselves with woad, which produces a bluish colour, and thereby have a more terrible appearance in fight. They wear their hair long.\"",
-          "provenance": "Julius Caesar, The Gallic War, Book V, Chapters 12 & 14 (c. 54 BC), translated by H. J. Edwards (Loeb Classical Library, 1917 — Public Domain)."
+          "model_answer": "Source D proves Britons minted gold coins, kept large cattle herds, and mined tin and iron. However, Caesar wrote to impress readers back in Rome, so describing blue-painted warriors made his own army sound even braver!",
+          "text": "Julius Caesar (54 BC): \"The cattle [are] very numerous. For money they use bronze, or gold coins... In Britain tin is produced, and iron... All the Britons dye themselves with woad, which produces a bluish colour, to look terrible in fight.\"<br><br><strong>In plain words:</strong> Britons keep huge herds of cattle, mine tin and iron, and use gold coins. Before battle, warriors paint their skin blue with woad to scare enemies!",
+          "provenance": "Celtic gold stater coin paired with Julius Caesar, The Gallic War (54 BC)."
         }
       ],
       "causal_domino_spine": {
@@ -408,7 +409,7 @@ window.UNIT_DATA = {
             "trigger": "Dozens of separate Celtic tribes guarded their lands behind giant earth hillforts like Maiden Castle and fought off Julius Caesar in 55–54 BC.",
             "connective": "Sheltered busy farming communities living in circular family homes.",
             "question": "How was Iron Age Britain organised and defended before AD 43?",
-            "prose_hash": "c5dbaef5a8"
+            "prose_hash": "3d5d78f267"
           },
           {
             "step": 2,
@@ -420,7 +421,7 @@ window.UNIT_DATA = {
             "trigger": "Families built wattle-and-daub roundhouses with cone thatched roofs and no chimney, weaving wool on looms and grinding flour on quern stones.",
             "connective": "Supported skilled craftworkers, priests, and cross-Channel sea trade.",
             "question": "How did a chimney-free thatched roundhouse keep Celtic families warm and fed?",
-            "prose_hash": "baed68039e"
+            "prose_hash": "871aab6191"
           },
           {
             "step": 3,
@@ -432,7 +433,7 @@ window.UNIT_DATA = {
             "trigger": "Celts forged gold torcs and bronze shields, Druids memorised laws orally, and ships traded Cornish tin, wheat, and gold stater coins across the Channel.",
             "connective": "Spread stories of Britain's rich metals and farms straight to Rome!",
             "question": "What proves that Iron Age Britons were skilled craftworkers and traders?",
-            "prose_hash": "1306d20c75"
+            "prose_hash": "50074162cc"
           }
         ]
       },
@@ -464,7 +465,7 @@ window.UNIT_DATA = {
           "dates": "c. 500–54 BC",
           "para_ref": "[1.1]",
           "paraRef": "[1.1]",
-          "prose_hash": "c5dbaef5a8"
+          "prose_hash": "3d5d78f267"
         },
         {
           "step": 2,
@@ -493,7 +494,7 @@ window.UNIT_DATA = {
           "dates": "Everyday Iron Age",
           "para_ref": "[1.3]",
           "paraRef": "[1.3]",
-          "prose_hash": "baed68039e"
+          "prose_hash": "871aab6191"
         },
         {
           "step": 3,
@@ -522,7 +523,7 @@ window.UNIT_DATA = {
           "dates": "c. 350 BC – AD 43",
           "para_ref": "[1.5]",
           "paraRef": "[1.5]",
-          "prose_hash": "1306d20c75"
+          "prose_hash": "50074162cc"
         }
       ],
       "tasks": [
@@ -614,12 +615,12 @@ window.UNIT_DATA = {
           "question": "How was Iron Age Britain ruled before the Romans arrived?",
           "q": "How was Iron Age Britain ruled before the Romans arrived?",
           "options": [
-            "By one single King of all Britain in London",
             "By dozens of separate tribes each ruling their own lands",
+            "By one single King of all Britain in London",
             "By Egyptian pharaohs across the sea",
             "By elected Roman mayors in stone cities"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "By dozens of separate tribes each ruling their own lands",
           "a": "By dozens of separate tribes each ruling their own lands",
           "explanation": "Iron Age Britain was not one united country; dozens of separate tribes such as the Iceni, Catuvellauni, and Brigantes ruled their own territories."
@@ -629,12 +630,12 @@ window.UNIT_DATA = {
           "question": "Which massive Iron Age hillfort in Dorset was ringed with steep earth ramparts and wooden fences?",
           "q": "Which massive Iron Age hillfort in Dorset was ringed with steep earth ramparts and wooden fences?",
           "options": [
-            "Maiden Castle",
+            "Stonehenge Palace",
             "Hadrian's Wall",
             "The Tower of London",
-            "Stonehenge Palace"
+            "Maiden Castle"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "Maiden Castle",
           "a": "Maiden Castle",
           "explanation": "Maiden Castle in Dorset is a giant Iron Age hillfort ringed with steep earth ramparts and ditches to protect families and cattle."
@@ -645,11 +646,11 @@ window.UNIT_DATA = {
           "q": "In which two years did the Roman general Julius Caesar first land in Britain before sailing back to Gaul?",
           "options": [
             "500 BC and 450 BC",
-            "55 BC and 54 BC",
             "AD 43 and AD 60",
+            "55 BC and 54 BC",
             "AD 122 and AD 410"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "55 BC and 54 BC",
           "a": "55 BC and 54 BC",
           "explanation": "Julius Caesar crossed the Channel to Britain twice, in 55 BC and 54 BC, fighting Celtic chariot warriors before returning to Gaul."
@@ -660,26 +661,41 @@ window.UNIT_DATA = {
           "q": "Which Iron Age tribe lived in eastern Britain, while the Brigantes lived in the north?",
           "options": [
             "The Spartans",
-            "The Vikings",
             "The Iceni",
+            "The Vikings",
             "The Normans"
           ],
-          "correct": 2,
+          "correct": 1,
           "answer": "The Iceni",
           "a": "The Iceni",
           "explanation": "The Iceni ruled lands in eastern Britain (East Anglia), the Catuvellauni lived in the south, and the Brigantes lived in the north."
+        },
+        {
+          "stage": 1,
+          "question": "How did steep earth ramparts, deep ditches, and wooden fences help defend an Iron Age hillfort?",
+          "q": "How did steep earth ramparts, deep ditches, and wooden fences help defend an Iron Age hillfort?",
+          "options": [
+            "They flooded the hilltop to sail warships",
+            "Attackers tired out climbing steep banks while defenders watched from above",
+            "They hid secret underground railway tunnels",
+            "They kept heat inside like a greenhouse"
+          ],
+          "correct": 1,
+          "answer": "Attackers tired out climbing steep banks while defenders watched from above",
+          "a": "Attackers tired out climbing steep banks while defenders watched from above",
+          "explanation": "Towering earth ramparts and deep ditches slowed down cattle raiders and gave defenders high ground."
         },
         {
           "stage": 2,
           "question": "What mixture was used to build the circular \"wattle-and-daub\" walls of an Iron Age roundhouse?",
           "q": "What mixture was used to build the circular \"wattle-and-daub\" walls of an Iron Age roundhouse?",
           "options": [
-            "Carved marble blocks and concrete cement",
             "Woven hazel branches plastered with clay, mud, and straw",
+            "Carved marble blocks and concrete cement",
             "Fired red house bricks and glass windows",
             "Solid iron plates bolted together"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "Woven hazel branches plastered with clay, mud, and straw",
           "a": "Woven hazel branches plastered with clay, mud, and straw",
           "explanation": "Builders wove hazel branches into wattle panels and plastered them with sticky daub made of clay, mud, and straw."
@@ -690,11 +706,11 @@ window.UNIT_DATA = {
           "q": "Why did Iron Age builders deliberately make thatched roundhouse roofs WITHOUT a chimney hole?",
           "options": [
             "They forgot where smoke came from",
-            "So strong winds would not blow sparks into the dry thatch, and smoke cured meat",
+            "To keep pet birds trapped inside the rafters",
             "Romans banned chimneys across Europe",
-            "To keep pet birds trapped inside the rafters"
+            "So strong winds would not blow sparks into the dry thatch, and smoke cured meat"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "So strong winds would not blow sparks into the dry thatch, and smoke cured meat",
           "a": "So strong winds would not blow sparks into the dry thatch, and smoke cured meat",
           "explanation": "Having no chimney prevented winds blowing sparks onto the dry straw roof, while rising smoke cured meat and drove away insects."
@@ -704,12 +720,12 @@ window.UNIT_DATA = {
           "question": "What heavy stone tool did Celtic children turn inside a roundhouse to grind wheat into flour?",
           "q": "What heavy stone tool did Celtic children turn inside a roundhouse to grind wheat into flour?",
           "options": [
-            "Quern stones",
-            "A bronze shield",
             "A tall wooden loom",
+            "A bronze shield",
+            "Quern stones",
             "A gold stater"
           ],
-          "correct": 0,
+          "correct": 2,
           "answer": "Quern stones",
           "a": "Quern stones",
           "explanation": "Families turned heavy stone quern stones by hand to grind wheat grain into flour, while wooden looms were used to weave woollen cloaks."
@@ -728,6 +744,21 @@ window.UNIT_DATA = {
           "answer": "A tall wooden loom",
           "a": "A tall wooden loom",
           "explanation": "Parents wove brightly patterned woollen cloth and cloaks on tall upright wooden looms."
+        },
+        {
+          "stage": 2,
+          "question": "What two helpful jobs did rising woodsmoke from the central hearth fire do inside a roundhouse?",
+          "q": "What two helpful jobs did rising woodsmoke from the central hearth fire do inside a roundhouse?",
+          "options": [
+            "Powered iron steam engines and lit glass lamps",
+            "Cured meat hung in the rafters and chased away biting insects",
+            "Melted gold coins and baked red roof tiles",
+            "Watered indoor apple trees and cabbages"
+          ],
+          "correct": 1,
+          "answer": "Cured meat hung in the rafters and chased away biting insects",
+          "a": "Cured meat hung in the rafters and chased away biting insects",
+          "explanation": "Smoke drifting through the thatch smoked meat so it lasted through winter and kept insects out of the straw."
         },
         {
           "stage": 3,
@@ -750,11 +781,11 @@ window.UNIT_DATA = {
           "q": "Why did the Iron Age Celts leave behind no written history books of their own?",
           "options": [
             "They had no laws, poems, or stories to tell",
-            "Druids memorised thousands of laws, poems, and prayers instead of writing books",
+            "Speaking aloud was forbidden inside hillforts",
             "All their paper books washed across the Atlantic Ocean",
-            "Speaking aloud was forbidden inside hillforts"
+            "Druids memorised thousands of laws, poems, and prayers instead of writing books"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Druids memorised thousands of laws, poems, and prayers instead of writing books",
           "a": "Druids memorised thousands of laws, poems, and prayers instead of writing books",
           "explanation": "Celtic religious leaders called Druids trained for years to memorise laws, poems, and prayers by heart rather than writing them down."
@@ -766,10 +797,10 @@ window.UNIT_DATA = {
           "options": [
             "On top of snow-covered mountains",
             "Inside Roman stone amphitheatres",
-            "In sacred rivers such as the River Thames",
-            "Buried beneath desert sand dunes"
+            "Buried beneath desert sand dunes",
+            "In sacred rivers such as the River Thames"
           ],
-          "correct": 2,
+          "correct": 3,
           "answer": "In sacred rivers such as the River Thames",
           "a": "In sacred rivers such as the River Thames",
           "explanation": "Celts offered precious metalwork like the bronze-and-red-glass Battersea Shield to water gods in sacred rivers."
@@ -779,15 +810,30 @@ window.UNIT_DATA = {
           "question": "Which valuable metal from south-west Britain did Celtic sea traders ship across the English Channel alongside wheat and hides?",
           "q": "Which valuable metal from south-west Britain did Celtic sea traders ship across the English Channel alongside wheat and hides?",
           "options": [
-            "Cornish tin",
-            "uranium ore",
             "aluminium foil",
+            "uranium ore",
+            "Cornish tin",
             "titanium"
           ],
-          "correct": 0,
+          "correct": 2,
           "answer": "Cornish tin",
           "a": "Cornish tin",
           "explanation": "Ships crossed the English Channel trading Cornish tin, iron, cattle hides, hunting dogs, wheat, and gold stater coins."
+        },
+        {
+          "stage": 3,
+          "question": "What did wealthy Celtic rulers mint and stamp with horses, spreading news of Britain's riches to Rome?",
+          "q": "What did wealthy Celtic rulers mint and stamp with horses, spreading news of Britain's riches to Rome?",
+          "options": [
+            "Paper postage stamps",
+            "Gold stater coins",
+            "Wooden ink postcards",
+            "Marble mosaics"
+          ],
+          "correct": 1,
+          "answer": "Gold stater coins",
+          "a": "Gold stater coins",
+          "explanation": "Tribal rulers minted shiny gold stater coins stamped with horses and chariot wheels while trading across the Channel."
         }
       ],
       "video": [
@@ -809,15 +855,16 @@ window.UNIT_DATA = {
         "caption": "Iron Age Earthwork Ramparts at British Camp Hillfort (Herefordshire Beacon), Malvern Hills",
         "position": "center 52%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l1_banner_british_camp.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l1_banner_british_camp.jpg",
+      "enquiry": "How did Iron Age Celts live before the Roman army arrived?"
     },
     {
       "id": "lesson_2",
       "skill": "Cause & Consequence",
-      "title": "Enquiry 2: Why Did Emperor Claudius Invade Britain in AD 43?",
+      "title": "Enquiry 2: Emperor Claudius Invades Britain (AD 43)",
       "subtitle": "40,000 Roman Soldiers, Tortoise Shields & War Elephants at Colchester",
-      "enquiryQuestion": "Why did Emperor Claudius send 40,000 Roman soldiers and war elephants across the sea in AD 43?",
-      "enquiry_question": "Why did Emperor Claudius send 40,000 Roman soldiers and war elephants across the sea in AD 43?",
+      "enquiryQuestion": "Why and how did Emperor Claudius invade Britain in AD 43?",
+      "enquiry_question": "Why and how did Emperor Claudius invade Britain in AD 43?",
       "prologue": "In AD 43, hundreds of Roman warships appeared through the sea mist off the coast of Kent carrying 40,000 armored soldiers — followed weeks later by Emperor Claudius and trumpeting war elephants! Why did Claudius want Britain so badly, and what made the Roman army so tough to beat?",
       "blurb": "In AD 43, hundreds of Roman warships appeared through the sea mist off the coast of Kent carrying 40,000 armored soldiers — followed weeks later by Emperor Claudius and trumpeting war elephants! Why did Claudius want Britain so badly, and what made the Roman army so tough to beat?",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l2_banner_white_cliffs_dover.jpg",
@@ -843,10 +890,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Before becoming emperor in AD 41, Claudius had been mocked by his own family and Roman senators because of his limp and stammer. Sculptors carved noble marble statues across the Empire to present him as a strong, wise, victorious ruler. **Hinge Question:** Why did Emperor Claudius need a famous victory in faraway Britain even more than earlier Roman rulers?",
-          "Source B": "Instead of one stiff, heavy breastplate, Roman blacksmiths riveted curved strips of iron onto internal leather straps. This allowed a legionary to breathe, bend, build forts, and march 20 miles a day while turning aside sharp sword slashes. **Hinge Question:** Why was overlapping strip armour much more practical for marching Roman legionaries than a single solid piece of metal?",
-          "Source C": "Celtic warriors were brave fighters who swung long iron swords overhead, needing room around them. Roman legionaries fought shoulder-to-shoulder as one tight machine behind locked scutum shields, thrusting forward with short gladius swords. **Hinge Question:** Even though Celtic warriors were tall, fearless fighters, why did Roman equipment and teamwork usually win pitched battles?",
-          "Source D": "Richborough guarded the Kent coast where General Aulus Plautius landed his 40,000 troops in AD 43. Notice in Cassius Dio's history that Roman soldiers were frightened at first to sail \"outside the limits of the known world\", before Claudius arrived with elephants! **Hinge Question:** Why did General Aulus Plautius pause near the River Thames and wait for Emperor Claudius to arrive in person before capturing Camulodunum?"
+          "Source A": "Before becoming emperor in AD 41, Claudius had been mocked by Roman senators because of his limp and stutter, so sculptors carved noble statues to show him as a strong ruler. **Hinge Question:** Why did Emperor Claudius need a famous victory in Britain even more than earlier Roman rulers?",
+          "Source B": "Roman blacksmiths riveted curved strips of iron onto leather straps inside so legionaries could bend, build forts, and march 20 miles a day while stopping sword blows. **Hinge Question:** Why was overlapping strip armour much handier for marching legionaries than one stiff solid breastplate?",
+          "Source C": "Celtic warriors swung long iron swords needing space around them, whereas Roman legionaries fought shoulder-to-shoulder behind locked scutum shields with short stabbing swords. **Hinge Question:** Even though Celtic warriors were fearless, why did Roman armour and teamwork usually win open battles?",
+          "Source D": "Richborough guarded the Kent coast where General Aulus Plautius landed 40,000 troops in AD 43 before Emperor Claudius arrived with war elephants. **Hinge Question:** Why did General Aulus Plautius pause near the River Thames and wait for Emperor Claudius to arrive in person?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -896,7 +943,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 12-question Plenary Quiz."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz."
               }
             ]
           }
@@ -1030,11 +1077,11 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Britain's Riches & Claudius's Need for Glory",
-          "text": "<span class=\"para-ref\">[2.1]</span> Nearly ninety years after Julius Caesar sailed away, nervous **Emperor Claudius** took power in Rome in **AD 41**. Powerful **Roman senators** doubted Claudius because he walked with a **limp** and spoke with a **stutter**. Because he had never led an army in battle, Claudius badly needed a spectacular triumph to win respect.<br><br><span class=\"para-ref\">[2.2]</span> Conquering misty island Britain promised both **military glory** and dazzling new wealth. Rome wanted Britain's rich underground mines of **silver**, **Cornish tin**, **lead**, and **iron** for coins, water pipes, and weapons. Fertile southern farms also grew golden **wheat** for soldiers, and conquered tribes would pay heavy Roman **taxes**.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Nearly ninety years after Julius Caesar sailed away, nervous **Emperor Claudius** took power in Rome in **AD 41**. Powerful **Roman senators** doubted Claudius because he walked with a **limp** and spoke with a **stutter**. Because he had never led an army in battle, Claudius badly needed a spectacular triumph to win respect.<br><br><span class=\"para-ref\">[2.2]</span> Conquering misty island Britain promised both **military glory** and dazzling new wealth. Rome wanted Britain's rich underground mines of **silver**, **Cornish tin**, **lead**, and **iron** for coins, water pipes, and weapons. Fertile southern farms also grew golden **wheat** for soldiers, and conquered tribes would pay heavy Roman **taxes**.",
+          "text": "<span class=\"para-ref\">[2.1]</span> In **AD 41**, nervous **Emperor Claudius** [KLAW-dee-us] took power in Rome. Powerful Roman **senators** doubted him because he walked with a **limp** and spoke with a **stutter**. Having never led an army, Claudius needed **military glory** in **AD 43**.<br><br><span class=\"para-ref\">[2.2]</span> Conquering Britain also promised rich underground mines of **silver**, **Cornish tin**, **lead**, and **iron** for coins, pipes, and weapons. Southern farms grew golden **wheat** for troops, and conquered tribes would pay heavy Roman **taxes**.",
+          "content": "<span class=\"para-ref\">[2.1]</span> In **AD 41**, nervous **Emperor Claudius** [KLAW-dee-us] took power in Rome. Powerful Roman **senators** doubted him because he walked with a **limp** and spoke with a **stutter**. Having never led an army, Claudius needed **military glory** in **AD 43**.<br><br><span class=\"para-ref\">[2.2]</span> Conquering Britain also promised rich underground mines of **silver**, **Cornish tin**, **lead**, and **iron** for coins, pipes, and weapons. Southern farms grew golden **wheat** for troops, and conquered tribes would pay heavy Roman **taxes**.",
           "image": "/units/ks2_romans/assets/claudius_de_britann_coin.jpg",
           "image_alt": "Roman white marble portrait bust of Emperor Claudius wearing an oak-leaf crown",
-          "caption": "First-century Roman coin of Emperor Claudius celebrating his military triumph and imperial authority. (CC BY-SA 2.0, North Lincolnshire Museum, Martin Foreman, 2015-01-15 08:55:59).",
+          "caption": "First-century Roman coin of Emperor Claudius celebrating his military victory and imperial power.",
           "isReversed": false,
           "sources": [
             {
@@ -1045,23 +1092,23 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/emperor_claudius_bust.jpg",
               "image": "/units/ks2_romans/assets/emperor_claudius_bust.jpg",
               "title": "Source A: Roman Marble Bust of Emperor Claudius (Reigned AD 41–54)",
-              "caption": "Carved first-century Roman marble portrait bust of Emperor Claudius (Antikensammlung Berlin, Sk 1965.10 — CC BY 4.0, Mark Landon).",
+              "caption": "Carved first-century Roman marble portrait bust of Emperor Claudius.",
               "author": "Imperial Roman Sculptor",
               "date": "c. AD 41–54",
-              "context": "Before becoming emperor in AD 41, Claudius had been mocked by his own family and Roman senators because of his limp and stammer. Sculptors carved noble marble statues across the Empire to present him as a strong, wise, victorious ruler.",
-              "source_context": "Before becoming emperor in AD 41, Claudius had been mocked by his own family and Roman senators because of his limp and stammer. Sculptors carved noble marble statues across the Empire to present him as a strong, wise, victorious ruler.",
+              "context": "Before becoming emperor in AD 41, Claudius had been mocked by Roman senators because of his limp and stutter, so sculptors carved noble statues to show him as a strong ruler.",
+              "source_context": "Before becoming emperor in AD 41, Claudius had been mocked by Roman senators because of his limp and stutter, so sculptors carved noble statues to show him as a strong ruler. **Hinge Question:** Why did Emperor Claudius need a famous victory in Britain even more than earlier Roman rulers?",
               "question_badge": "CLAUDIUS'S NEED FOR GLORY",
               "question": "Look at the marble statue of Emperor Claudius in Source A. Why did Claudius want Romans to see him as a mighty conqueror?",
-              "model_answer": "Source A makes Claudius look calm, powerful, and crowned like a hero. In real life, Roman senators doubted him because he had a limp, a stutter, and zero battlefield experience, so conquering Britain across the sea proved he deserved to rule Rome."
+              "model_answer": "Source A makes Claudius look calm, noble, and powerful. In real life, senators doubted him because of his limp, stutter, and lack of army experience, so conquering Britain proved he was a strong ruler."
             }
           ],
-          "image_caption": "First-century Roman coin of Emperor Claudius celebrating his military triumph and imperial authority. (CC BY-SA 2.0, North Lincolnshire Museum, Martin Foreman, 2015-01-15 08:55:59)."
+          "image_caption": "First-century Roman coin of Emperor Claudius celebrating his military victory and imperial power."
         },
         {
           "act": 2,
           "title": "The Unstoppable Roman War Machine",
-          "text": "<span class=\"para-ref\">[2.3]</span> Unlike part-time Celtic fighters, Roman **legionaries** were tough full-time professional soldiers. Wearing hobnailed leather sandals called **caligae**, they marched **20 miles a day** in iron strip armour called **lorica segmentata**. When enemy arrows rained down, troops locked curved **scutum** shields overhead and in front like a **testudo** (\"tortoise\") shell.<br><br><span class=\"para-ref\">[2.4]</span> Every legionary trained each day to fight with calm, unstoppable teamwork. First, soldiers hurled a heavy iron-tipped javelin called a **pilum** at the charging enemy. Its soft iron neck bent on impact so warriors could not throw it back. Next, troops stepped close behind their shield wall, stabbing cleanly with a short sword called a **gladius**.",
-          "content": "<span class=\"para-ref\">[2.3]</span> Unlike part-time Celtic fighters, Roman **legionaries** were tough full-time professional soldiers. Wearing hobnailed leather sandals called **caligae**, they marched **20 miles a day** in iron strip armour called **lorica segmentata**. When enemy arrows rained down, troops locked curved **scutum** shields overhead and in front like a **testudo** (\"tortoise\") shell.<br><br><span class=\"para-ref\">[2.4]</span> Every legionary trained each day to fight with calm, unstoppable teamwork. First, soldiers hurled a heavy iron-tipped javelin called a **pilum** at the charging enemy. Its soft iron neck bent on impact so warriors could not throw it back. Next, troops stepped close behind their shield wall, stabbing cleanly with a short sword called a **gladius**.",
+          "text": "<span class=\"para-ref\">[2.3]</span> Full-time Roman **legionaries** marched **20 miles a day** in hobnailed **caligae** [KAL-ih-guy] sandals. They wore flexible iron strip armour called **lorica segmentata** [lor-EE-kuh seg-men-TAH-tuh]. Under arrow fire, troops locked curved **scutum** [SKOO-tum] shields into a **testudo** [tes-TOO-doh] (\"tortoise\") formation.<br><br><span class=\"para-ref\">[2.4]</span> Legionaries trained daily to fight as one calm team. First, they hurled a bending iron javelin called a **pilum** [PEE-lum] to ruin enemy shields. Next, soldiers stepped close behind their shield wall, stabbing with a short **gladius** [GLAD-ee-us] sword.",
+          "content": "<span class=\"para-ref\">[2.3]</span> Full-time Roman **legionaries** marched **20 miles a day** in hobnailed **caligae** [KAL-ih-guy] sandals. They wore flexible iron strip armour called **lorica segmentata** [lor-EE-kuh seg-men-TAH-tuh]. Under arrow fire, troops locked curved **scutum** [SKOO-tum] shields into a **testudo** [tes-TOO-doh] (\"tortoise\") formation.<br><br><span class=\"para-ref\">[2.4]</span> Legionaries trained daily to fight as one calm team. First, they hurled a bending iron javelin called a **pilum** [PEE-lum] to ruin enemy shields. Next, soldiers stepped close behind their shield wall, stabbing with a short **gladius** [GLAD-ee-us] sword.",
           "image": "/units/ks2_romans/assets/roman_testudo_formation.jpg",
           "image_alt": "Roman legionaries locking curved rectangular scutum shields overhead and in front in the testudo tortoise formation",
           "caption": "Roman legionaries locking their curved scutum shields in front and overhead to form the famous testudo (\"tortoise\") shell.",
@@ -1075,14 +1122,14 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/roman_legionary_armour.jpg",
               "image": "/units/ks2_romans/assets/roman_legionary_armour.jpg",
               "title": "Source B: Corbridge-Type Lorica Segmentata Iron Strip Armour (1st–2nd Century AD)",
-              "caption": "Overlapping iron shoulder and chest strips of Roman lorica segmentata armour, hinged with leather straps inside (modelled on pieces found buried in a wooden chest at Corbridge Roman site).",
+              "caption": "Overlapping iron shoulder and chest strips of Roman lorica segmentata armour, hinged inside on flexible leather straps.",
               "author": "Roman Army Armourers",
               "date": "c. AD 43–120",
-              "context": "First worn by Roman citizen legionaries in the first century AD, lorica segmentata replaced heavy chainmail shirts during Emperor Claudius's invasion of Britain.",
-              "source_context": "First worn by Roman citizen legionaries in the first century AD, lorica segmentata replaced heavy chainmail shirts during Emperor Claudius's invasion of Britain.",
+              "context": "Roman blacksmiths riveted curved strips of iron onto leather straps inside so legionaries could bend, build forts, and march 20 miles a day while stopping sword blows.",
+              "source_context": "Roman blacksmiths riveted curved strips of iron onto leather straps inside so legionaries could bend, build forts, and march 20 miles a day while stopping sword blows. **Hinge Question:** Why was overlapping strip armour much handier for marching legionaries than one stiff solid breastplate?",
               "question_badge": "IRON STRIP ARMOUR",
               "question": "Inspect Source B. How did the overlapping iron strips of lorica segmentata protect a Roman legionary without slowing him down?",
-              "model_answer": "Source B shows curved bands of iron joined on the inside with flexible leather straps. The overlapping metal strips stopped enemy spears and swords, yet bent smoothly at the waist and shoulders so soldiers could march 20 miles a day and dig ditches."
+              "model_answer": "Source B uses curved iron bands fastened onto flexible leather straps inside. They stopped enemy spears and swords while bending smoothly so soldiers could march 20 miles a day and dig camps."
             },
             {
               "id": "ks2_romans_l2_src_c",
@@ -1092,25 +1139,26 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/roman_legionary_kit_ks2.png",
               "image": "/units/ks2_romans/assets/roman_legionary_kit_ks2.png",
               "title": "Source C: Battlefield Comparison — Roman Legionary vs Celtic Warrior (AD 43)",
-              "caption": "Side-by-side comparison showing a professional Roman legionary (lorica segmentata, curved scutum shield, bending pilum, short gladius, caligae sandals) beside an Iron Age Celtic warrior with a long slashing sword and oval shield.",
+              "caption": "Side-by-side comparison showing a Roman legionary (strip armour, curved scutum shield, pilum, gladius, caligae sandals) beside a Celtic warrior with a long sword.",
               "author": "Historical Reconstruction Diagram",
               "date": "AD 43 Equipment Comparison",
-              "context": "Celtic warriors were brave fighters who swung long iron swords overhead, needing room around them. Roman legionaries fought shoulder-to-shoulder as one tight machine behind locked scutum shields, thrusting forward with short gladius swords.",
-              "source_context": "Celtic warriors were brave fighters who swung long iron swords overhead, needing room around them. Roman legionaries fought shoulder-to-shoulder as one tight machine behind locked scutum shields, thrusting forward with short gladius swords.",
+              "context": "Celtic warriors swung long iron swords needing space around them, whereas Roman legionaries fought shoulder-to-shoulder behind locked scutum shields with short stabbing swords.",
+              "source_context": "Celtic warriors swung long iron swords needing space around them, whereas Roman legionaries fought shoulder-to-shoulder behind locked scutum shields with short stabbing swords. **Hinge Question:** Even though Celtic warriors were fearless, why did Roman armour and teamwork usually win open battles?",
               "question_badge": "LEGIONARY VS CELT",
-              "question": "Compare the two fighters in Source C. Identify two differences in armour or weapons that gave the Roman legionary an advantage.",
-              "model_answer": "In Source C, the Roman legionary wears iron strip armour and an iron helmet, whereas most Celtic warriors fought with little body armour. Also, the Roman carries a bending pilum javelin to ruin enemy shields and a curved scutum shield to lock into a tight shield wall."
+              "question": "Compare the two fighters in Source C. Spot two differences in armour or weapons that gave the Roman legionary an advantage.",
+              "model_answer": "In Source C, the Roman wears an iron helmet and strip armour while most Celts had little body armour. The Roman also carries a bending pilum javelin and a curved scutum shield to lock into a tight wall."
             }
-          ]
+          ],
+          "image_caption": "Roman legionaries locking their curved scutum shields in front and overhead to form the famous testudo (\"tortoise\") shell."
         },
         {
           "act": 3,
           "title": "Landing at Richborough & Elephants at Camulodunum",
-          "text": "<span class=\"para-ref\">[2.5]</span> In **AD 43**, General **Aulus Plautius** sailed across the Channel with **four legions** and auxiliary troops. Around **40,000 soldiers** landed at **Richborough** in Kent, dug strong defensive ditches, and marched inland. After a fierce two-day battle at the **River Medway**, the disciplined Romans defeated brave Celtic leader **Caratacus**.<br><br><span class=\"para-ref\">[2.6]</span> Plautius halted near the River Thames and sent urgent word to Rome. **Emperor Claudius** arrived in person bringing towering **war elephants** whose strange smell and roars terrified Celtic horses. Claudius marched proudly into **Camulodunum** (**Colchester**), winning eleven kings' surrender and turning southern Britain into a Roman province.",
-          "content": "<span class=\"para-ref\">[2.5]</span> In **AD 43**, General **Aulus Plautius** sailed across the Channel with **four legions** and auxiliary troops. Around **40,000 soldiers** landed at **Richborough** in Kent, dug strong defensive ditches, and marched inland. After a fierce two-day battle at the **River Medway**, the disciplined Romans defeated brave Celtic leader **Caratacus**.<br><br><span class=\"para-ref\">[2.6]</span> Plautius halted near the River Thames and sent urgent word to Rome. **Emperor Claudius** arrived in person bringing towering **war elephants** whose strange smell and roars terrified Celtic horses. Claudius marched proudly into **Camulodunum** (**Colchester**), winning eleven kings' surrender and turning southern Britain into a Roman province.",
+          "text": "<span class=\"para-ref\">[2.5]</span> In **AD 43**, General **Aulus Plautius** [AW-lus PLAW-tee-us] sailed over with **four legions** — around **40,000** soldiers. Troops landed at **Richborough in Kent**, dug strong ditches, and marched inland. In a fierce two-day battle at the **River Medway**, Rome defeated brave **Caratacus** [ka-RAT-uh-kus].<br><br><span class=\"para-ref\">[2.6]</span> Plautius waited near the River Thames until **Emperor Claudius** arrived in person with towering **war elephants** that terrified Celtic horses! Claudius marched proudly into **Camulodunum** [kam-yoo-loh-DOO-num] (**Colchester**), winning eleven kings' surrender and turning southern Britain into a Roman **province**.",
+          "content": "<span class=\"para-ref\">[2.5]</span> In **AD 43**, General **Aulus Plautius** [AW-lus PLAW-tee-us] sailed over with **four legions** — around **40,000** soldiers. Troops landed at **Richborough in Kent**, dug strong ditches, and marched inland. In a fierce two-day battle at the **River Medway**, Rome defeated brave **Caratacus** [ka-RAT-uh-kus].<br><br><span class=\"para-ref\">[2.6]</span> Plautius waited near the River Thames until **Emperor Claudius** arrived in person with towering **war elephants** that terrified Celtic horses! Claudius marched proudly into **Camulodunum** [kam-yoo-loh-DOO-num] (**Colchester**), winning eleven kings' surrender and turning southern Britain into a Roman **province**.",
           "image": "/units/ks2_romans/assets/dover_roman_pharos_lighthouse.jpg",
           "image_alt": "Massive Roman stone fort walls standing at Richborough in Kent",
-          "caption": "The surviving first-century Roman stone lighthouse (Pharos) at Dover (Dubris), which guided Roman fleets across the English Channel into Kent. (CC BY-SA 2.0, Michael Garlick).",
+          "caption": "The surviving first-century Roman stone lighthouse at Dover, which guided Roman ships across the English Channel into Kent.",
           "isReversed": false,
           "sources": [
             {
@@ -1121,19 +1169,19 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/richborough_roman_fort.jpg",
               "image": "/units/ks2_romans/assets/richborough_roman_fort.jpg",
               "title": "Source D: Richborough Roman Fort (Kent) & Cassius Dio's Account of AD 43",
-              "caption": "Massive Roman stone walls at Richborough (Rutupiae) in Kent — marking the historic landing beachhead of AD 43 — paired with Roman historian Cassius Dio's account.",
+              "caption": "Massive Roman stone walls at Richborough in Kent — marking the AD 43 landing site — paired with Roman historian Cassius Dio's account.",
               "author": "Roman Army Builders & Senator Cassius Dio (tr. Earnest Cary, 1925)",
               "date": "AD 43 Landing (History written c. AD 215)",
-              "context": "Richborough guarded the Kent coast where General Aulus Plautius landed his 40,000 troops in AD 43. Notice in Cassius Dio's history that Roman soldiers were frightened at first to sail \"outside the limits of the known world\", before Claudius arrived with elephants!",
-              "source_context": "Richborough guarded the Kent coast where General Aulus Plautius landed his 40,000 troops in AD 43. Notice in Cassius Dio's history that Roman soldiers were frightened at first to sail \"outside the limits of the known world\", before Claudius arrived with elephants!",
+              "context": "Richborough guarded the Kent coast where General Aulus Plautius landed 40,000 troops in AD 43 before Emperor Claudius arrived with war elephants.",
+              "source_context": "Richborough guarded the Kent coast where General Aulus Plautius landed 40,000 troops in AD 43 before Emperor Claudius arrived with war elephants. **Hinge Question:** Why did General Aulus Plautius pause near the River Thames and wait for Emperor Claudius to arrive in person?",
               "question_badge": "RICHBOROUGH & ELEPHANTS",
-              "question": "Read Cassius Dio's account in Source D. How did soldiers feel before sailing, and how did Claudius claim credit for victory?",
-              "model_answer": "Source D reveals that Roman soldiers grumbled with fear at sailing \"outside the limits of the known world\" to island Britain! Once Aulus Plautius defeated Caratacus, Claudius joined the army near the Thames with war elephants so he could personally lead the final capture of Camulodunum and claim the glory.",
-              "text": "Cassius Dio, Roman History, Book 60, Chapters 19–21: \"Aulus Plautius, a senator of great renown, made a campaign against Britain [...] the soldiers were indignantly complaining at the thought of carrying on a campaign outside the limits of the known world. [...] When at last he did find them, he first defeated Caratacus and then Togodumnus [...] Claudius himself now joined the expedition, for which great preparations had been made, including even elephants; and taking charge of the legions that were waiting for him near the Thames, he crossed the stream, engaged the barbarians who had gathered at his approach, defeated them, and captured Camulodunum.\"",
-              "provenance": "Cassius Dio, Roman History, Book 60, Chapters 19–21 (c. AD 215), translated by Earnest Cary (Loeb Classical Library, 1925 — Public Domain)."
+              "question": "Read Source D. How did Roman soldiers feel before sailing, and how did Claudius claim credit for victory?",
+              "model_answer": "Source D shows soldiers grumbled in fear at sailing \"outside the limits of the known world\"! After Plautius beat Caratacus, Claudius joined the army near the Thames with war elephants to lead the capture of Camulodunum himself.",
+              "text": "Cassius Dio: \"The soldiers were complaining at carrying on a campaign outside the limits of the known world... Plautius first defeated Caratacus... Claudius himself now joined the expedition, including even elephants; he crossed the Thames and captured Camulodunum.\"<br><br><strong>In plain words:</strong> At first, frightened Roman soldiers grumbled about sailing across the sea to Britain. After General Plautius beat Caratacus, Emperor Claudius arrived with war elephants to capture Colchester!",
+              "provenance": "Richborough Roman Fort (Kent) paired with Cassius Dio, Roman History (c. AD 215)."
             }
           ],
-          "image_caption": "The surviving first-century Roman stone lighthouse (Pharos) at Dover (Dubris), which guided Roman fleets across the English Channel into Kent. (CC BY-SA 2.0, Michael Garlick)."
+          "image_caption": "The surviving first-century Roman stone lighthouse at Dover, which guided Roman ships across the English Channel into Kent."
         }
       ],
       "sources": [
@@ -1145,14 +1193,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/emperor_claudius_bust.jpg",
           "image": "/units/ks2_romans/assets/emperor_claudius_bust.jpg",
           "title": "Source A: Roman Marble Bust of Emperor Claudius (Reigned AD 41–54)",
-          "caption": "Carved first-century Roman marble portrait bust of Emperor Claudius (Antikensammlung Berlin, Sk 1965.10 — CC BY 4.0, Mark Landon).",
+          "caption": "Carved first-century Roman marble portrait bust of Emperor Claudius.",
           "author": "Imperial Roman Sculptor",
           "date": "c. AD 41–54",
-          "context": "Before becoming emperor in AD 41, Claudius had been mocked by his own family and Roman senators because of his limp and stammer. Sculptors carved noble marble statues across the Empire to present him as a strong, wise, victorious ruler.",
-          "source_context": "Before becoming emperor in AD 41, Claudius had been mocked by his own family and Roman senators because of his limp and stammer. Sculptors carved noble marble statues across the Empire to present him as a strong, wise, victorious ruler.",
+          "context": "Before becoming emperor in AD 41, Claudius had been mocked by Roman senators because of his limp and stutter, so sculptors carved noble statues to show him as a strong ruler.",
+          "source_context": "Before becoming emperor in AD 41, Claudius had been mocked by Roman senators because of his limp and stutter, so sculptors carved noble statues to show him as a strong ruler. **Hinge Question:** Why did Emperor Claudius need a famous victory in Britain even more than earlier Roman rulers?",
           "question_badge": "CLAUDIUS'S NEED FOR GLORY",
           "question": "Look at the marble statue of Emperor Claudius in Source A. Why did Claudius want Romans to see him as a mighty conqueror?",
-          "model_answer": "Source A makes Claudius look calm, powerful, and crowned like a hero. In real life, Roman senators doubted him because he had a limp, a stutter, and zero battlefield experience, so conquering Britain across the sea proved he deserved to rule Rome."
+          "model_answer": "Source A makes Claudius look calm, noble, and powerful. In real life, senators doubted him because of his limp, stutter, and lack of army experience, so conquering Britain proved he was a strong ruler."
         },
         {
           "id": "ks2_romans_l2_src_b",
@@ -1162,14 +1210,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/roman_legionary_armour.jpg",
           "image": "/units/ks2_romans/assets/roman_legionary_armour.jpg",
           "title": "Source B: Corbridge-Type Lorica Segmentata Iron Strip Armour (1st–2nd Century AD)",
-          "caption": "Overlapping iron shoulder and chest strips of Roman lorica segmentata armour, hinged with leather straps inside (modelled on pieces found buried in a wooden chest at Corbridge Roman site).",
+          "caption": "Overlapping iron shoulder and chest strips of Roman lorica segmentata armour, hinged inside on flexible leather straps.",
           "author": "Roman Army Armourers",
           "date": "c. AD 43–120",
-          "context": "First worn by Roman citizen legionaries in the first century AD, lorica segmentata replaced heavy chainmail shirts during Emperor Claudius's invasion of Britain.",
-          "source_context": "First worn by Roman citizen legionaries in the first century AD, lorica segmentata replaced heavy chainmail shirts during Emperor Claudius's invasion of Britain.",
+          "context": "Roman blacksmiths riveted curved strips of iron onto leather straps inside so legionaries could bend, build forts, and march 20 miles a day while stopping sword blows.",
+          "source_context": "Roman blacksmiths riveted curved strips of iron onto leather straps inside so legionaries could bend, build forts, and march 20 miles a day while stopping sword blows. **Hinge Question:** Why was overlapping strip armour much handier for marching legionaries than one stiff solid breastplate?",
           "question_badge": "IRON STRIP ARMOUR",
           "question": "Inspect Source B. How did the overlapping iron strips of lorica segmentata protect a Roman legionary without slowing him down?",
-          "model_answer": "Source B shows curved bands of iron joined on the inside with flexible leather straps. The overlapping metal strips stopped enemy spears and swords, yet bent smoothly at the waist and shoulders so soldiers could march 20 miles a day and dig ditches."
+          "model_answer": "Source B uses curved iron bands fastened onto flexible leather straps inside. They stopped enemy spears and swords while bending smoothly so soldiers could march 20 miles a day and dig camps."
         },
         {
           "id": "ks2_romans_l2_src_c",
@@ -1179,14 +1227,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/roman_legionary_kit_ks2.png",
           "image": "/units/ks2_romans/assets/roman_legionary_kit_ks2.png",
           "title": "Source C: Battlefield Comparison — Roman Legionary vs Celtic Warrior (AD 43)",
-          "caption": "Side-by-side comparison showing a professional Roman legionary (lorica segmentata, curved scutum shield, bending pilum, short gladius, caligae sandals) beside an Iron Age Celtic warrior with a long slashing sword and oval shield.",
+          "caption": "Side-by-side comparison showing a Roman legionary (strip armour, curved scutum shield, pilum, gladius, caligae sandals) beside a Celtic warrior with a long sword.",
           "author": "Historical Reconstruction Diagram",
           "date": "AD 43 Equipment Comparison",
-          "context": "Celtic warriors were brave fighters who swung long iron swords overhead, needing room around them. Roman legionaries fought shoulder-to-shoulder as one tight machine behind locked scutum shields, thrusting forward with short gladius swords.",
-          "source_context": "Celtic warriors were brave fighters who swung long iron swords overhead, needing room around them. Roman legionaries fought shoulder-to-shoulder as one tight machine behind locked scutum shields, thrusting forward with short gladius swords.",
+          "context": "Celtic warriors swung long iron swords needing space around them, whereas Roman legionaries fought shoulder-to-shoulder behind locked scutum shields with short stabbing swords.",
+          "source_context": "Celtic warriors swung long iron swords needing space around them, whereas Roman legionaries fought shoulder-to-shoulder behind locked scutum shields with short stabbing swords. **Hinge Question:** Even though Celtic warriors were fearless, why did Roman armour and teamwork usually win open battles?",
           "question_badge": "LEGIONARY VS CELT",
-          "question": "Compare the two fighters in Source C. Identify two differences in armour or weapons that gave the Roman legionary an advantage.",
-          "model_answer": "In Source C, the Roman legionary wears iron strip armour and an iron helmet, whereas most Celtic warriors fought with little body armour. Also, the Roman carries a bending pilum javelin to ruin enemy shields and a curved scutum shield to lock into a tight shield wall."
+          "question": "Compare the two fighters in Source C. Spot two differences in armour or weapons that gave the Roman legionary an advantage.",
+          "model_answer": "In Source C, the Roman wears an iron helmet and strip armour while most Celts had little body armour. The Roman also carries a bending pilum javelin and a curved scutum shield to lock into a tight wall."
         },
         {
           "id": "ks2_romans_l2_src_d",
@@ -1196,16 +1244,16 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/richborough_roman_fort.jpg",
           "image": "/units/ks2_romans/assets/richborough_roman_fort.jpg",
           "title": "Source D: Richborough Roman Fort (Kent) & Cassius Dio's Account of AD 43",
-          "caption": "Massive Roman stone walls at Richborough (Rutupiae) in Kent — marking the historic landing beachhead of AD 43 — paired with Roman historian Cassius Dio's account.",
+          "caption": "Massive Roman stone walls at Richborough in Kent — marking the AD 43 landing site — paired with Roman historian Cassius Dio's account.",
           "author": "Roman Army Builders & Senator Cassius Dio (tr. Earnest Cary, 1925)",
           "date": "AD 43 Landing (History written c. AD 215)",
-          "context": "Richborough guarded the Kent coast where General Aulus Plautius landed his 40,000 troops in AD 43. Notice in Cassius Dio's history that Roman soldiers were frightened at first to sail \"outside the limits of the known world\", before Claudius arrived with elephants!",
-          "source_context": "Richborough guarded the Kent coast where General Aulus Plautius landed his 40,000 troops in AD 43. Notice in Cassius Dio's history that Roman soldiers were frightened at first to sail \"outside the limits of the known world\", before Claudius arrived with elephants!",
+          "context": "Richborough guarded the Kent coast where General Aulus Plautius landed 40,000 troops in AD 43 before Emperor Claudius arrived with war elephants.",
+          "source_context": "Richborough guarded the Kent coast where General Aulus Plautius landed 40,000 troops in AD 43 before Emperor Claudius arrived with war elephants. **Hinge Question:** Why did General Aulus Plautius pause near the River Thames and wait for Emperor Claudius to arrive in person?",
           "question_badge": "RICHBOROUGH & ELEPHANTS",
-          "question": "Read Cassius Dio's account in Source D. How did soldiers feel before sailing, and how did Claudius claim credit for victory?",
-          "model_answer": "Source D reveals that Roman soldiers grumbled with fear at sailing \"outside the limits of the known world\" to island Britain! Once Aulus Plautius defeated Caratacus, Claudius joined the army near the Thames with war elephants so he could personally lead the final capture of Camulodunum and claim the glory.",
-          "text": "Cassius Dio, Roman History, Book 60, Chapters 19–21: \"Aulus Plautius, a senator of great renown, made a campaign against Britain [...] the soldiers were indignantly complaining at the thought of carrying on a campaign outside the limits of the known world. [...] When at last he did find them, he first defeated Caratacus and then Togodumnus [...] Claudius himself now joined the expedition, for which great preparations had been made, including even elephants; and taking charge of the legions that were waiting for him near the Thames, he crossed the stream, engaged the barbarians who had gathered at his approach, defeated them, and captured Camulodunum.\"",
-          "provenance": "Cassius Dio, Roman History, Book 60, Chapters 19–21 (c. AD 215), translated by Earnest Cary (Loeb Classical Library, 1925 — Public Domain)."
+          "question": "Read Source D. How did Roman soldiers feel before sailing, and how did Claudius claim credit for victory?",
+          "model_answer": "Source D shows soldiers grumbled in fear at sailing \"outside the limits of the known world\"! After Plautius beat Caratacus, Claudius joined the army near the Thames with war elephants to lead the capture of Camulodunum himself.",
+          "text": "Cassius Dio: \"The soldiers were complaining at carrying on a campaign outside the limits of the known world... Plautius first defeated Caratacus... Claudius himself now joined the expedition, including even elephants; he crossed the Thames and captured Camulodunum.\"<br><br><strong>In plain words:</strong> At first, frightened Roman soldiers grumbled about sailing across the sea to Britain. After General Plautius beat Caratacus, Emperor Claudius arrived with war elephants to capture Colchester!",
+          "provenance": "Richborough Roman Fort (Kent) paired with Cassius Dio, Roman History (c. AD 215)."
         }
       ],
       "causal_domino_spine": {
@@ -1222,7 +1270,7 @@ window.UNIT_DATA = {
             "trigger": "Doubted by senators for his limp and stutter, Emperor Claudius wanted a famous triumph plus Britain's silver, Cornish tin, lead, iron, wheat, and taxes.",
             "connective": "Ordered Rome's professional legions to prepare an invasion fleet.",
             "question": "Why did Emperor Claudius decide to invade Britain in AD 43?",
-            "prose_hash": "73fe4ed517"
+            "prose_hash": "f686c8b1c7"
           },
           {
             "step": 2,
@@ -1234,7 +1282,7 @@ window.UNIT_DATA = {
             "trigger": "Legionaries marched 20 miles a day in caligae sandals and lorica segmentata armour, locking scutum shields into the testudo and fighting with pilum and gladius.",
             "connective": "Gave Rome a disciplined battlefield edge over part-time tribal warriors.",
             "question": "What made the Roman army so tough to beat in open battle?",
-            "prose_hash": "b52ad9333c"
+            "prose_hash": "0005c62e92"
           },
           {
             "step": 3,
@@ -1246,7 +1294,7 @@ window.UNIT_DATA = {
             "trigger": "Aulus Plautius landed 40,000 troops at Richborough and beat Caratacus at the Medway before Claudius arrived with war elephants to capture Camulodunum.",
             "connective": "Turned southern Britain into a conquered, tax-paying Roman province.",
             "question": "How did Rome capture Camulodunum (Colchester) in AD 43?",
-            "prose_hash": "5c6080571e"
+            "prose_hash": "e0084650fe"
           }
         ]
       },
@@ -1278,7 +1326,7 @@ window.UNIT_DATA = {
           "dates": "AD 41–43",
           "para_ref": "[2.1]",
           "paraRef": "[2.1]",
-          "prose_hash": "73fe4ed517"
+          "prose_hash": "f686c8b1c7"
         },
         {
           "step": 2,
@@ -1307,7 +1355,7 @@ window.UNIT_DATA = {
           "dates": "AD 43 Campaign",
           "para_ref": "[2.3]",
           "paraRef": "[2.3]",
-          "prose_hash": "b52ad9333c"
+          "prose_hash": "0005c62e92"
         },
         {
           "step": 3,
@@ -1336,7 +1384,7 @@ window.UNIT_DATA = {
           "dates": "Summer AD 43",
           "para_ref": "[2.5]",
           "paraRef": "[2.5]",
-          "prose_hash": "5c6080571e"
+          "prose_hash": "e0084650fe"
         }
       ],
       "tasks": [
@@ -1428,12 +1476,12 @@ window.UNIT_DATA = {
           "question": "Why did powerful Roman senators doubt Emperor Claudius when he became ruler in AD 41?",
           "q": "Why did powerful Roman senators doubt Emperor Claudius when he became ruler in AD 41?",
           "options": [
-            "He lived in Britain instead of Italy",
             "He walked with a limp, spoke with a stutter, and had never led an army",
+            "He lived in Britain instead of Italy",
             "He refused to wear a toga in Rome",
             "He could only speak the Celtic language"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "He walked with a limp, spoke with a stutter, and had never led an army",
           "a": "He walked with a limp, spoke with a stutter, and had never led an army",
           "explanation": "Senators doubted Claudius because of his limp, his stutter, and his lack of military experience, giving him a strong motive to win glory in Britain."
@@ -1443,12 +1491,12 @@ window.UNIT_DATA = {
           "question": "Which underground metals did Rome want to mine in Britain for coins, water pipes, and weapons?",
           "q": "Which underground metals did Rome want to mine in Britain for coins, water pipes, and weapons?",
           "options": [
-            "Silver, Cornish tin, lead, and iron",
+            "Coal and uranium",
             "Diamonds, rubies, and platinum",
             "Aluminium and titanium",
-            "Coal and uranium"
+            "Silver, Cornish tin, lead, and iron"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "Silver, Cornish tin, lead, and iron",
           "a": "Silver, Cornish tin, lead, and iron",
           "explanation": "Rome prized Britain's silver, Cornish tin, lead, and iron mines alongside southern wheat farms and new taxes."
@@ -1459,11 +1507,11 @@ window.UNIT_DATA = {
           "q": "Besides metals and wheat, what payments would conquered British tribes have to hand over to Rome?",
           "options": [
             "Gold torcs every Sunday",
-            "Heavy Roman taxes",
             "Free war elephants",
+            "Heavy Roman taxes",
             "Printed paper banknotes"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Heavy Roman taxes",
           "a": "Heavy Roman taxes",
           "explanation": "Once Britain became a Roman province, conquered tribes had to pay regular Roman taxes."
@@ -1474,26 +1522,41 @@ window.UNIT_DATA = {
           "q": "In which year did Emperor Claudius launch the full-scale Roman invasion of Britain?",
           "options": [
             "55 BC",
-            "AD 1",
             "AD 43",
+            "AD 1",
             "AD 410"
           ],
-          "correct": 2,
+          "correct": 1,
           "answer": "AD 43",
           "a": "AD 43",
           "explanation": "Claudius launched the invasion of Britain in AD 43, nearly ninety-seven years after Julius Caesar's landings."
+        },
+        {
+          "stage": 1,
+          "question": "Why did southern Britain's fertile wheat farms attract Emperor Claudius's invasion planners?",
+          "q": "Why did southern Britain's fertile wheat farms attract Emperor Claudius's invasion planners?",
+          "options": [
+            "Romans had never tasted bread before AD 43",
+            "Golden British wheat could feed thousands of Roman soldiers stationed across the Empire",
+            "Wheat stalks were melted down to make bronze shields",
+            "Claudius wanted straw to thatch Rome's marble temples"
+          ],
+          "correct": 1,
+          "answer": "Golden British wheat could feed thousands of Roman soldiers stationed across the Empire",
+          "a": "Golden British wheat could feed thousands of Roman soldiers stationed across the Empire",
+          "explanation": "Fertile southern British farms grew rich harvests of wheat to feed Roman garrisons alongside taxes and metals."
         },
         {
           "stage": 2,
           "question": "How far were full-time Roman legionaries trained to march in a single day wearing hobnailed caligae sandals?",
           "q": "How far were full-time Roman legionaries trained to march in a single day wearing hobnailed caligae sandals?",
           "options": [
-            "2 miles a day",
-            "5 miles a day",
             "20 miles a day",
+            "5 miles a day",
+            "2 miles a day",
             "100 miles a day"
           ],
-          "correct": 2,
+          "correct": 0,
           "answer": "20 miles a day",
           "a": "20 miles a day",
           "explanation": "Full-time Roman legionaries marched 20 miles a day carrying heavy packs, tools, and armour."
@@ -1503,12 +1566,12 @@ window.UNIT_DATA = {
           "question": "What was the Latin name for a legionary's flexible iron strip armour?",
           "q": "What was the Latin name for a legionary's flexible iron strip armour?",
           "options": [
-            "Lorica segmentata",
+            "Wattle and daub",
             "Caligae",
             "Quern stone",
-            "Wattle and daub"
+            "Lorica segmentata"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "Lorica segmentata",
           "a": "Lorica segmentata",
           "explanation": "Lorica segmentata was made of overlapping curved iron strips fastened onto flexible leather straps inside."
@@ -1533,27 +1596,42 @@ window.UNIT_DATA = {
           "question": "How were the Roman \"pilum\" and \"gladius\" used in sequence during battle?",
           "q": "How were the Roman \"pilum\" and \"gladius\" used in sequence during battle?",
           "options": [
-            "Throw the bending pilum javelin first, then step close with the short stabbing gladius sword",
-            "Shoot arrows from the gladius, then dig ditches with the pilum",
             "Swing the long pilum on horseback, then throw the gladius",
+            "Shoot arrows from the gladius, then dig ditches with the pilum",
+            "Throw the bending pilum javelin first, then step close with the short stabbing gladius sword",
             "Bang both together solely to scare war elephants"
           ],
-          "correct": 0,
+          "correct": 2,
           "answer": "Throw the bending pilum javelin first, then step close with the short stabbing gladius sword",
           "a": "Throw the bending pilum javelin first, then step close with the short stabbing gladius sword",
           "explanation": "Legionaries hurled their bending pilum javelin to tangle enemy shields, then closed in behind their shield wall with the short stabbing gladius."
+        },
+        {
+          "stage": 2,
+          "question": "Why was the soft iron neck of a Roman pilum javelin cleverly designed to bend when it hit an enemy shield?",
+          "q": "Why was the soft iron neck of a Roman pilum javelin cleverly designed to bend when it hit an enemy shield?",
+          "options": [
+            "Because Roman blacksmiths ran out of hard iron",
+            "So enemy warriors could not pull it out or throw it back at the Romans",
+            "So soldiers could fold it neatly inside their sandals",
+            "To bounce harmlessly off wooden fences"
+          ],
+          "correct": 1,
+          "answer": "So enemy warriors could not pull it out or throw it back at the Romans",
+          "a": "So enemy warriors could not pull it out or throw it back at the Romans",
+          "explanation": "A bent pilum dragged down a warrior's shield and could not be hurled back at the advancing Roman line."
         },
         {
           "stage": 3,
           "question": "Which Roman general commanded the initial landing of four legions (around 40,000 soldiers) in AD 43?",
           "q": "Which Roman general commanded the initial landing of four legions (around 40,000 soldiers) in AD 43?",
           "options": [
-            "Julius Caesar",
             "Aulus Plautius",
+            "Julius Caesar",
             "King Prasutagus",
             "Emperor Nero"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "Aulus Plautius",
           "a": "Aulus Plautius",
           "explanation": "General Aulus Plautius led the four invasion legions and auxiliaries across the Channel in AD 43."
@@ -1564,11 +1642,11 @@ window.UNIT_DATA = {
           "q": "At which coastal site in Kent did the Roman invasion fleet land and dig strong defensive ditches in AD 43?",
           "options": [
             "Maiden Castle in Dorset",
-            "Richborough in Kent",
+            "York in Northern England",
             "Anglesey in North Wales",
-            "York in Northern England"
+            "Richborough in Kent"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Richborough in Kent",
           "a": "Richborough in Kent",
           "explanation": "The AD 43 invasion fleet landed at Richborough in Kent before marching inland to the River Medway."
@@ -1578,12 +1656,12 @@ window.UNIT_DATA = {
           "question": "Which brave Celtic leader fought the Romans for two days at the Battle of the River Medway?",
           "q": "Which brave Celtic leader fought the Romans for two days at the Battle of the River Medway?",
           "options": [
-            "Caratacus",
+            "Aulus Plautius",
             "Claudius",
             "Neville Chamberlain",
-            "Aulus Plautius"
+            "Caratacus"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "Caratacus",
           "a": "Caratacus",
           "explanation": "Caratacus led fierce British resistance during the two-day Battle of the River Medway."
@@ -1602,6 +1680,21 @@ window.UNIT_DATA = {
           "answer": "Towering war elephants",
           "a": "Towering war elephants",
           "explanation": "Emperor Claudius arrived in person with towering war elephants that terrified Celtic horses as Rome captured Camulodunum (Colchester)."
+        },
+        {
+          "stage": 3,
+          "question": "What did southern Britain officially become after Claudius captured Camulodunum (Colchester) in AD 43?",
+          "q": "What did southern Britain officially become after Claudius captured Camulodunum (Colchester) in AD 43?",
+          "options": [
+            "An independent Viking kingdom",
+            "A tax-paying Roman province",
+            "An empty nature reserve",
+            "The new capital city of Italy"
+          ],
+          "correct": 1,
+          "answer": "A tax-paying Roman province",
+          "a": "A tax-paying Roman province",
+          "explanation": "Capturing Camulodunum turned conquered southern Britain into the Roman province of Britannia."
         }
       ],
       "video": [
@@ -1623,15 +1716,16 @@ window.UNIT_DATA = {
         "caption": "Panoramic Sea View of the White Cliffs of Dover Across the English Channel",
         "position": "center 62%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l2_banner_white_cliffs_dover.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l2_banner_white_cliffs_dover.jpg",
+      "enquiry": "Why and how did Emperor Claudius invade Britain in AD 43?"
     },
     {
       "id": "lesson_3",
       "skill": "Cause, Consequence & Perspectives",
-      "title": "Enquiry 3: Boudicca's Rebellion — Why Did the Iceni Rise Up? (AD 60–61)",
+      "title": "Enquiry 3: Boudicca's Iceni Rebellion (AD 60–61)",
       "subtitle": "Broken Promises, Burning Londinium & The Final Battle of Watling Street",
-      "enquiryQuestion": "Why did Queen Boudicca lead a huge rebellion against Rome in AD 60, and why did it fail?",
-      "enquiry_question": "Why did Queen Boudicca lead a huge rebellion against Rome in AD 60, and why did it fail?",
+      "enquiryQuestion": "Why did Queen Boudicca rebel against Rome—and why did she lose?",
+      "enquiry_question": "Why did Queen Boudicca rebel against Rome—and why did she lose?",
       "prologue": "Seventeen years after Claudius's invasion, Roman Britain nearly collapsed in flames! Enraged by broken Roman promises and cruel treatment, Queen Boudicca of the Iceni united rebel tribes and burned three Roman towns into red ash — before facing 10,000 Roman legionaries in a narrow valley along Watling Street.",
       "blurb": "Seventeen years after Claudius's invasion, Roman Britain nearly collapsed in flames! Enraged by broken Roman promises and cruel treatment, Queen Boudicca of the Iceni united rebel tribes and burned three Roman towns into red ash — before facing 10,000 Roman legionaries in a narrow valley along Watling Street.",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l3_banner_colchester_roman_wall.jpg",
@@ -1657,10 +1751,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Boudicca left no written diary of her own. Everything we read about her speeches and treatment comes from Roman writers — especially Tacitus, whose own father-in-law Agricola served as a young Roman officer in Britain during the revolt! **Hinge Question:** Why is it surprising that a Roman senator like Tacitus admitted Roman officers acted greedily and unfairly towards King Prasutagus's family?",
-          "Source B": "When Boudicca attacked Camulodunum in AD 60, the proud Roman town had no strong stone city wall yet, so defenders were trapped inside the Temple of Claudius. Afterwards, Rome surrounded Colchester with thick stone walls and the giant Balkerne Gate! **Hinge Question:** What does building massive stone gates like the Balkerne Gate AFTER AD 61 tell us about how badly Boudicca shocked the Romans?",
-          "Source C": "Studying the map explains WHY Boudicca succeeded at first! Governor Suetonius Paulinus and his main legions were hundreds of miles northwest attacking Druids on Anglesey, leaving south-east Britain's towns wide open. **Hinge Question:** Looking at Source C, how did the straight Roman road of Watling Street help Governor Suetonius Paulinus respond to the crisis?",
-          "Source D": "Deep underneath modern London streets near this wall lies the \"Boudiccan destruction layer\" — a 40cm band of bright red burnt clay, ash, charred wheat, and melted bronze coins from AD 60. Above it, Rome rebuilt Londinium stronger than ever inside stone walls. **Hinge Question:** How do underground layers of burnt red clay AND surviving stone walls at Tower Hill work together to prove Tacitus's story is true?"
+          "Source A": "Boudicca left no written diary, so her story comes from Roman writers like Tacitus, whose father-in-law Agricola served as a young officer in Britain during the revolt. **Hinge Question:** Why is it surprising that a Roman writer like Tacitus admitted Roman officers acted greedily and unfairly?",
+          "Source B": "When Boudicca attacked Camulodunum in AD 60, the town had no stone city wall yet, so afterwards Rome surrounded Colchester with thick stone walls and the Balkerne Gate. **Hinge Question:** What does building massive stone gates AFTER AD 61 tell us about how badly Boudicca shocked the Romans?",
+          "Source C": "Governor Suetonius Paulinus and his legions were hundreds of miles north-west on Anglesey when Boudicca rose up, leaving south-east towns undefended. **Hinge Question:** Looking at Source C, how did the straight Roman road of Watling Street help Suetonius respond?",
+          "Source D": "Deep beneath modern London streets lies a 40-centimetre band of burnt red clay, ash, and melted coins from AD 60, while above ground Rome rebuilt Londinium inside stone walls. **Hinge Question:** How do burnt red clay underground AND stone walls at Tower Hill work together to prove Tacitus's story?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -1710,7 +1804,7 @@ window.UNIT_DATA = {
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 12-question Plenary Quiz."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz."
               }
             ]
           }
@@ -1844,11 +1938,11 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Broken Roman Promises to the Iceni",
-          "text": "<span class=\"para-ref\">[3.1]</span> At first, Rome let several friendly British rulers keep their thrones in peace. In **East Anglia**, **King Prasutagus** of the **Iceni** tribe stayed a loyal ally of Rome. When Prasutagus died in **AD 60**, he left half his wealth to **Emperor Nero** and half to his two daughters. He trusted Rome to protect his royal family and lands.<br><br><span class=\"para-ref\">[3.2]</span> Greedy Roman officials cruelly broke that solemn promise at once. Soldiers marched into Iceni territory, seized noble farms, and demanded heavy Roman **loans** and taxes back immediately. When **Queen Boudicca** protested, officers had her **flogged** with whips and **mistreated her daughters**, sparking fury across East Anglia.",
-          "content": "<span class=\"para-ref\">[3.1]</span> At first, Rome let several friendly British rulers keep their thrones in peace. In **East Anglia**, **King Prasutagus** of the **Iceni** tribe stayed a loyal ally of Rome. When Prasutagus died in **AD 60**, he left half his wealth to **Emperor Nero** and half to his two daughters. He trusted Rome to protect his royal family and lands.<br><br><span class=\"para-ref\">[3.2]</span> Greedy Roman officials cruelly broke that solemn promise at once. Soldiers marched into Iceni territory, seized noble farms, and demanded heavy Roman **loans** and taxes back immediately. When **Queen Boudicca** protested, officers had her **flogged** with whips and **mistreated her daughters**, sparking fury across East Anglia.",
+          "text": "<span class=\"para-ref\">[3.1]</span> At first, Rome let friendly British rulers keep their thrones. In **East Anglia**, **King Prasutagus** [praz-oo-TAY-gus] of the **Iceni** stayed a peaceful ally of Rome. Dying in **AD 60**, he left half his wealth to **Emperor Nero** and half to his two daughters.<br><br><span class=\"para-ref\">[3.2]</span> Greedy Roman officials cruelly broke that promise at once! Soldiers marched in, **seized Iceni lands**, and demanded heavy Roman **loans** and taxes back. When **Queen Boudicca** [BOO-dik-uh] protested, officers had her **flogged** and **mistreated her daughters**.",
+          "content": "<span class=\"para-ref\">[3.1]</span> At first, Rome let friendly British rulers keep their thrones. In **East Anglia**, **King Prasutagus** [praz-oo-TAY-gus] of the **Iceni** stayed a peaceful ally of Rome. Dying in **AD 60**, he left half his wealth to **Emperor Nero** and half to his two daughters.<br><br><span class=\"para-ref\">[3.2]</span> Greedy Roman officials cruelly broke that promise at once! Soldiers marched in, **seized Iceni lands**, and demanded heavy Roman **loans** and taxes back. When **Queen Boudicca** [BOO-dik-uh] protested, officers had her **flogged** and **mistreated her daughters**.",
           "image": "/units/ks2_romans/assets/colchester_temple_of_claudius_castle.jpg",
           "image_alt": "Bronze statue at Westminster Bridge showing Queen Boudicca and her daughters in an Iceni war chariot",
-          "caption": "Colchester (Camulodunum), built directly atop the massive stone podium of the Roman Temple of Claudius burned during Boudicca’s AD 60 rebellion. (CC BY-SA 3.0, The original uploader was Sannse at English Wikipedia .).",
+          "caption": "Colchester (Camulodunum), standing above the stone base of the Roman Temple of Claudius burned during Boudicca's AD 60 rebellion.",
           "isReversed": false,
           "sources": [
             {
@@ -1859,28 +1953,28 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/boudicca_chariot_westminster.jpg",
               "image": "/units/ks2_romans/assets/boudicca_chariot_westminster.jpg",
               "title": "Source A: Statue of Boudicca in Her Chariot & Tacitus's Account of AD 60",
-              "caption": "Bronze statue of Queen Boudicca and her two daughters riding an Iceni war chariot beside Westminster Bridge in London (sculpted by Thomas Thornycroft), paired with Roman historian Tacitus's account.",
+              "caption": "Bronze statue of Queen Boudicca and her daughters in an Iceni war chariot in London, paired with Roman historian Tacitus's account.",
               "author": "Thomas Thornycroft Statue & Senator Tacitus (tr. Church & Brodribb, 1876)",
               "date": "Events of AD 60 (Annals written c. AD 115)",
-              "context": "Boudicca left no written diary of her own. Everything we read about her speeches and treatment comes from Roman writers — especially Tacitus, whose own father-in-law Agricola served as a young Roman officer in Britain during the revolt!",
-              "source_context": "Boudicca left no written diary of her own. Everything we read about her speeches and treatment comes from Roman writers — especially Tacitus, whose own father-in-law Agricola served as a young Roman officer in Britain during the revolt!",
+              "context": "Boudicca left no written diary, so her story comes from Roman writers like Tacitus, whose father-in-law Agricola served as a young officer in Britain during the revolt.",
+              "source_context": "Boudicca left no written diary, so her story comes from Roman writers like Tacitus, whose father-in-law Agricola served as a young officer in Britain during the revolt. **Hinge Question:** Why is it surprising that a Roman writer like Tacitus admitted Roman officers acted greedily and unfairly?",
               "question_badge": "BROKEN ROMAN PROMISES",
-              "question": "Read Tacitus's words in Source A. What had King Prasutagus hoped would happen when he died, and what did Roman officials actually do?",
-              "model_answer": "Source A explains that King Prasutagus named the Roman Emperor heir alongside his two daughters, trusting this peaceful gift would keep his kingdom and family safe. Instead, Roman officers broke the agreement, plundered Iceni homes like prizes of war, stripped nobles of their lands, and mistreated Boudicca and her daughters.",
-              "text": "Tacitus, Annals, Book 14, Chapters 31 & 35: \"Prasutagus, king of the Iceni, famed for his long prosperity, had named the emperor his heir along with his two daughters, under the impression that this token of submission would put his kingdom and his house out of the reach of wrong. What happened was the reverse. Kingdom and household were alike plundered like prizes of war [...] All the chief men of the Iceni were stripped of their ancestral possessions [...] Boudicea, with her daughters before her in a chariot, went up to tribe after tribe, protesting that it was indeed usual for Britons to fight under the leadership of women. 'Now,' she said, 'as one of the people, I am avenging lost freedom!'\"",
-              "provenance": "Cornelius Tacitus, Annals, Book 14, Chapters 31 & 35 (c. AD 115), translated by Alfred John Church and William Jackson Brodribb (1876 — Public Domain)."
+              "question": "Read Tacitus's words in Source A. What had King Prasutagus hoped would happen, and what did Roman officials actually do?",
+              "model_answer": "King Prasutagus shared his kingdom with the Roman Emperor to keep his family and people safe. Instead, greedy Roman officers stole Iceni homes like war prizes and mistreated Boudicca and her daughters.",
+              "text": "Tacitus: \"Prasutagus, king of the Iceni, had named the emperor his heir along with his two daughters... Kingdom and household were alike plundered like prizes of war... Boudicca, with her daughters in a chariot, cried: 'I am avenging lost freedom!'\"<br><br><strong>In plain words:</strong> King Prasutagus shared his riches with Rome to keep his family safe, but greedy Roman officers stole Iceni homes anyway. Queen Boudicca rode out in her chariot to fight back for freedom!",
+              "provenance": "Westminster Boudicca monument paired with Tacitus, Annals (c. AD 115)."
             }
           ],
-          "image_caption": "Colchester (Camulodunum), built directly atop the massive stone podium of the Roman Temple of Claudius burned during Boudicca’s AD 60 rebellion. (CC BY-SA 3.0, The original uploader was Sannse at English Wikipedia .)."
+          "image_caption": "Colchester (Camulodunum), standing above the stone base of the Roman Temple of Claudius burned during Boudicca's AD 60 rebellion."
         },
         {
           "act": 2,
           "title": "Three Roman Towns Burn to Red Clay",
-          "text": "<span class=\"para-ref\">[3.3]</span> Riding tall in her wooden war chariot, **Queen Boudicca** united the **Iceni**, the **Trinovantes**, and other angry tribes. Better still for the rebels, Roman Governor **Suetonius Paulinus** was hundreds of miles away in **Anglesey** in north Wales. Boudicca struck first at **Camulodunum** (**Colchester**), burning the hated Roman temple right to ashes.<br><br><span class=\"para-ref\">[3.4]</span> Next, Boudicca's huge rebel army swept south to torch bustling **Londinium** (**London**) and **Verulamium** (**St Albans**). Timber shops and clay houses burned so fiercely that they baked into a scorching **red clay \"destruction layer\"**. Even today, **archaeologists** digging deep beneath modern London streets still uncover blackened coins and melted pottery!",
-          "content": "<span class=\"para-ref\">[3.3]</span> Riding tall in her wooden war chariot, **Queen Boudicca** united the **Iceni**, the **Trinovantes**, and other angry tribes. Better still for the rebels, Roman Governor **Suetonius Paulinus** was hundreds of miles away in **Anglesey** in north Wales. Boudicca struck first at **Camulodunum** (**Colchester**), burning the hated Roman temple right to ashes.<br><br><span class=\"para-ref\">[3.4]</span> Next, Boudicca's huge rebel army swept south to torch bustling **Londinium** (**London**) and **Verulamium** (**St Albans**). Timber shops and clay houses burned so fiercely that they baked into a scorching **red clay \"destruction layer\"**. Even today, **archaeologists** digging deep beneath modern London streets still uncover blackened coins and melted pottery!",
+          "text": "<span class=\"para-ref\">[3.3]</span> Riding tall in her wooden war **chariot**, **Queen Boudicca** united the **Iceni**, the **Trinovantes** [trin-oh-VAN-teez], and angry neighbours. Roman Governor **Suetonius Paulinus** [swee-TOH-nee-us paw-LY-nus] was hundreds of miles away in **Anglesey** in north Wales! Rebels attacked **Camulodunum** (**Colchester**) first and burned its Roman temple.<br><br><span class=\"para-ref\">[3.4]</span> Next, Boudicca's huge army torched busy **Londinium** [lun-DIN-ee-um] (**London**) and **Verulamium** [ver-oo-LAY-mee-um] (**St Albans**). Burning timber shops baked into a scorching **red clay destruction layer**. Even today, **archaeologists** digging deep under London still find blackened coins and melted pots!",
+          "content": "<span class=\"para-ref\">[3.3]</span> Riding tall in her wooden war **chariot**, **Queen Boudicca** united the **Iceni**, the **Trinovantes** [trin-oh-VAN-teez], and angry neighbours. Roman Governor **Suetonius Paulinus** [swee-TOH-nee-us paw-LY-nus] was hundreds of miles away in **Anglesey** in north Wales! Rebels attacked **Camulodunum** (**Colchester**) first and burned its Roman temple.<br><br><span class=\"para-ref\">[3.4]</span> Next, Boudicca's huge army torched busy **Londinium** [lun-DIN-ee-um] (**London**) and **Verulamium** [ver-oo-LAY-mee-um] (**St Albans**). Burning timber shops baked into a scorching **red clay destruction layer**. Even today, **archaeologists** digging deep under London still find blackened coins and melted pots!",
           "image": "/units/ks2_romans/assets/colchester_balkerne_gate_1876.jpg",
           "image_alt": "Historic 1876 illustration of the Roman Balkerne Gate masonry ruins at Colchester",
-          "caption": "Historic engraving of the Roman Balkerne Gate at Colchester (Camulodunum) — where Boudicca's united rebel army struck first while Governor Suetonius Paulinus was far away in Anglesey.",
+          "caption": "Historic engraving of the Roman Balkerne Gate at Colchester — where Boudicca's rebel army struck first while Suetonius was in Anglesey.",
           "isReversed": true,
           "sources": [
             {
@@ -1891,14 +1985,14 @@ window.UNIT_DATA = {
               "src": "/images/upgraded/ks2-ancient/romans_l3_src1_colchester_balkerne_gate.jpg",
               "image": "/images/upgraded/ks2-ancient/romans_l3_src1_colchester_balkerne_gate.jpg",
               "title": "Source B: Roman Stone Balkerne Gate at Colchester (Camulodunum)",
-              "caption": "Surviving Roman stone archway and red-brick guardhouse wall of the Balkerne Gate in Colchester — built to defend Camulodunum after Boudicca's army burned the undefended town in AD 60 (CC BY 4.0, HJ Mitchell).",
+              "caption": "Surviving Roman stone archway and guardhouse wall of the Balkerne Gate in Colchester, built after Boudicca burned the town in AD 60.",
               "author": "Romano-British Stone Builders at Camulodunum",
               "date": "Built c. AD 65–80 (after Boudicca's fire)",
-              "context": "Standing in Colchester (Roman Camulodunum) today, the towering stone Balkerne Gate was constructed by Roman engineers in the years after AD 61.",
-              "source_context": "Standing in Colchester (Roman Camulodunum) today, the towering stone Balkerne Gate was constructed by Roman engineers in the years after AD 61.",
+              "context": "When Boudicca attacked Camulodunum in AD 60, the town had no stone city wall yet, so afterwards Rome surrounded Colchester with thick stone walls and the Balkerne Gate.",
+              "source_context": "When Boudicca attacked Camulodunum in AD 60, the town had no stone city wall yet, so afterwards Rome surrounded Colchester with thick stone walls and the Balkerne Gate. **Hinge Question:** What does building massive stone gates AFTER AD 61 tell us about how badly Boudicca shocked the Romans?",
               "question_badge": "COLCHESTER REBUILT IN STONE",
               "question": "Why did the Romans build thick stone walls and gateways like Source B around Colchester after AD 61?",
-              "model_answer": "Source B shows the heavy stone Balkerne Gate built after Boudicca's rebellion. In AD 60, Camulodunum had no town walls and burned to the ground, so the terrified Romans rebuilt Colchester inside strong stone defences so rebels could never surprise it again."
+              "model_answer": "In AD 60, undefended Camulodunum burned right to the ground. Shocked Roman engineers built thick stone walls and the Balkerne Gate so rebels could never surprise Colchester again."
             },
             {
               "id": "ks2_romans_l3_src_c",
@@ -1908,25 +2002,26 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/roman_britain_map_ks2.png",
               "image": "/units/ks2_romans/assets/roman_britain_map_ks2.png",
               "title": "Source C: Map of Roman Britain — Iceni Lands, Burned Cities & Watling Street",
-              "caption": "Map of Roman Britain showing Iceni territory in East Anglia, distant Anglesey in north Wales, the three burned towns (Camulodunum, Londinium, Verulamium), and the Roman road Watling Street.",
+              "caption": "Map of Roman Britain showing Iceni lands in East Anglia, Anglesey in north Wales, the three burned towns, and Watling Street.",
               "author": "Historical Cartography Map for KS2",
               "date": "AD 60–61 Rebellion Route",
-              "context": "This campaign map traces the key locations of AD 60–61 across Roman Britain, from Anglesey in north-west Wales to East Anglia, Colchester, London, and St Albans.",
-              "source_context": "This campaign map traces the key locations of AD 60–61 across Roman Britain, from Anglesey in north-west Wales to East Anglia, Colchester, London, and St Albans.",
+              "context": "Governor Suetonius Paulinus and his legions were hundreds of miles north-west on Anglesey when Boudicca rose up, leaving south-east towns undefended.",
+              "source_context": "Governor Suetonius Paulinus and his legions were hundreds of miles north-west on Anglesey when Boudicca rose up, leaving south-east towns undefended. **Hinge Question:** Looking at Source C, how did the straight Roman road of Watling Street help Suetonius respond?",
               "question_badge": "MAP OF THE REVOLT",
               "question": "Use the map in Source C to explain why Governor Suetonius Paulinus could not save Colchester or London straight away in AD 60.",
-              "model_answer": "Source C shows that while the Iceni rose up in East Anglia in the east, Governor Suetonius Paulinus was far away on the island of Anglesey off north-west Wales. Marching back down Watling Street took weeks, giving Boudicca time to burn Colchester, London, and St Albans."
+              "model_answer": "Source C shows Suetonius Paulinus was far away on Anglesey off north-west Wales when East Anglia rebelled. Marching back down Watling Street took weeks, giving Boudicca time to burn three towns."
             }
-          ]
+          ],
+          "image_caption": "Historic engraving of the Roman Balkerne Gate at Colchester — where Boudicca's rebel army struck first while Suetonius was in Anglesey."
         },
         {
           "act": 3,
           "title": "Showdown at the Battle of Watling Street (AD 61)",
-          "text": "<span class=\"para-ref\">[3.5]</span> In **AD 61**, Governor **Suetonius Paulinus** marched rapidly back along **Watling Street** with **10,000 disciplined legionaries**. Heavily outnumbered, Suetonius cleverly chose a **narrow wooded valley** that protected both his sides. Confident of easy victory, Iceni families parked a half-circle of **wooden wagons** behind the battlefield to watch.<br><br><span class=\"para-ref\">[3.6]</span> When the Britons charged forward, the narrow funnel squashed warriors together so they could barely swing long swords. Advancing in **tight wedges**, Roman troops hurled javelins and pushed the rebels backward into their own **ring of wagons**. Rome won the battle, Boudicca died soon after, and **Londinium** was rebuilt inside mighty **stone walls**.",
-          "content": "<span class=\"para-ref\">[3.5]</span> In **AD 61**, Governor **Suetonius Paulinus** marched rapidly back along **Watling Street** with **10,000 disciplined legionaries**. Heavily outnumbered, Suetonius cleverly chose a **narrow wooded valley** that protected both his sides. Confident of easy victory, Iceni families parked a half-circle of **wooden wagons** behind the battlefield to watch.<br><br><span class=\"para-ref\">[3.6]</span> When the Britons charged forward, the narrow funnel squashed warriors together so they could barely swing long swords. Advancing in **tight wedges**, Roman troops hurled javelins and pushed the rebels backward into their own **ring of wagons**. Rome won the battle, Boudicca died soon after, and **Londinium** was rebuilt inside mighty **stone walls**.",
+          "text": "<span class=\"para-ref\">[3.5]</span> In **AD 61**, **Suetonius Paulinus** marched down **Watling Street** with **10,000** legionaries. Outnumbered, he chose a **narrow wooded valley** to guard his sides. Behind the field, confident Iceni families parked a **ring of wooden wagons** to watch.<br><br><span class=\"para-ref\">[3.6]</span> Charging Britons were squashed together so they could barely swing long swords. Marching in **tight wedges**, Romans hurled javelins and pinned rebels against their own wagons. Rome won, Boudicca died soon after, and **Londinium** was rebuilt inside **stone walls**.",
+          "content": "<span class=\"para-ref\">[3.5]</span> In **AD 61**, **Suetonius Paulinus** marched down **Watling Street** with **10,000** legionaries. Outnumbered, he chose a **narrow wooded valley** to guard his sides. Behind the field, confident Iceni families parked a **ring of wooden wagons** to watch.<br><br><span class=\"para-ref\">[3.6]</span> Charging Britons were squashed together so they could barely swing long swords. Marching in **tight wedges**, Romans hurled javelins and pinned rebels against their own wagons. Rome won, Boudicca died soon after, and **Londinium** was rebuilt inside **stone walls**.",
           "image": "/units/ks2_romans/assets/verulamium_roman_wall_st_albans.jpg",
           "image_alt": "Surviving Roman stone and red-tile city wall of Londinium at Tower Hill in London",
-          "caption": "Surviving Roman masonry at Verulamium (modern St Albans), rebuilt in stone after Queen Boudicca’s rebel army burned the early settlement. (CC BY-SA 2.0, Carole Raddato from FRANKFURT, Germany).",
+          "caption": "Surviving Roman stone wall at Verulamium (modern St Albans), rebuilt after Queen Boudicca's rebel army burned the early town.",
           "isReversed": false,
           "sources": [
             {
@@ -1937,17 +2032,17 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/roman_wall_londinium_tower_hill.jpg",
               "image": "/units/ks2_romans/assets/roman_wall_londinium_tower_hill.jpg",
               "title": "Source D: Rebuilt Roman Stone & Red-Tile Wall of Londinium at Tower Hill",
-              "caption": "Surviving section of the Roman city wall of Londinium at Tower Hill in London, showing squared Kentish ragstone blocks banded with flat red Roman bonding tiles.",
+              "caption": "Surviving section of the Roman city wall of Londinium at Tower Hill in London, built of squared stone blocks and flat red tiles.",
               "author": "Romano-British Masons in Londinium",
               "date": "Rebuilt Roman Defences of Londinium",
-              "context": "Deep underneath modern London streets near this wall lies the \"Boudiccan destruction layer\" — a 40cm band of bright red burnt clay, ash, charred wheat, and melted bronze coins from AD 60. Above it, Rome rebuilt Londinium stronger than ever inside stone walls.",
-              "source_context": "Deep underneath modern London streets near this wall lies the \"Boudiccan destruction layer\" — a 40cm band of bright red burnt clay, ash, charred wheat, and melted bronze coins from AD 60. Above it, Rome rebuilt Londinium stronger than ever inside stone walls.",
+              "context": "Deep beneath modern London streets lies a 40-centimetre band of burnt red clay, ash, and melted coins from AD 60, while above ground Rome rebuilt Londinium inside stone walls.",
+              "source_context": "Deep beneath modern London streets lies a 40-centimetre band of burnt red clay, ash, and melted coins from AD 60, while above ground Rome rebuilt Londinium inside stone walls. **Hinge Question:** How do burnt red clay underground AND stone walls at Tower Hill work together to prove Tacitus's story?",
               "question_badge": "LONDINIUM'S STONE WALLS",
               "question": "What physical clues survive in London today, both underground and in Source D, from Boudicca's rebellion and its aftermath?",
-              "model_answer": "Underground, archaeologists dig up a scorching red clay destruction layer full of ash and melted pottery proving Londinium burned in AD 60. Above ground, Source D shows how Rome rebuilt Londinium as Britain's main port protected by thick stone and red-tile walls."
+              "model_answer": "Underground, diggers uncover a scorching red clay destruction layer of ash and melted pots from AD 60. Above ground, Source D shows the strong stone and red-tile walls Rome built around rebuilt Londinium."
             }
           ],
-          "image_caption": "Surviving Roman masonry at Verulamium (modern St Albans), rebuilt in stone after Queen Boudicca’s rebel army burned the early settlement. (CC BY-SA 2.0, Carole Raddato from FRANKFURT, Germany)."
+          "image_caption": "Surviving Roman stone wall at Verulamium (modern St Albans), rebuilt after Queen Boudicca's rebel army burned the early town."
         }
       ],
       "sources": [
@@ -1959,16 +2054,16 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/boudicca_chariot_westminster.jpg",
           "image": "/units/ks2_romans/assets/boudicca_chariot_westminster.jpg",
           "title": "Source A: Statue of Boudicca in Her Chariot & Tacitus's Account of AD 60",
-          "caption": "Bronze statue of Queen Boudicca and her two daughters riding an Iceni war chariot beside Westminster Bridge in London (sculpted by Thomas Thornycroft), paired with Roman historian Tacitus's account.",
+          "caption": "Bronze statue of Queen Boudicca and her daughters in an Iceni war chariot in London, paired with Roman historian Tacitus's account.",
           "author": "Thomas Thornycroft Statue & Senator Tacitus (tr. Church & Brodribb, 1876)",
           "date": "Events of AD 60 (Annals written c. AD 115)",
-          "context": "Boudicca left no written diary of her own. Everything we read about her speeches and treatment comes from Roman writers — especially Tacitus, whose own father-in-law Agricola served as a young Roman officer in Britain during the revolt!",
-          "source_context": "Boudicca left no written diary of her own. Everything we read about her speeches and treatment comes from Roman writers — especially Tacitus, whose own father-in-law Agricola served as a young Roman officer in Britain during the revolt!",
+          "context": "Boudicca left no written diary, so her story comes from Roman writers like Tacitus, whose father-in-law Agricola served as a young officer in Britain during the revolt.",
+          "source_context": "Boudicca left no written diary, so her story comes from Roman writers like Tacitus, whose father-in-law Agricola served as a young officer in Britain during the revolt. **Hinge Question:** Why is it surprising that a Roman writer like Tacitus admitted Roman officers acted greedily and unfairly?",
           "question_badge": "BROKEN ROMAN PROMISES",
-          "question": "Read Tacitus's words in Source A. What had King Prasutagus hoped would happen when he died, and what did Roman officials actually do?",
-          "model_answer": "Source A explains that King Prasutagus named the Roman Emperor heir alongside his two daughters, trusting this peaceful gift would keep his kingdom and family safe. Instead, Roman officers broke the agreement, plundered Iceni homes like prizes of war, stripped nobles of their lands, and mistreated Boudicca and her daughters.",
-          "text": "Tacitus, Annals, Book 14, Chapters 31 & 35: \"Prasutagus, king of the Iceni, famed for his long prosperity, had named the emperor his heir along with his two daughters, under the impression that this token of submission would put his kingdom and his house out of the reach of wrong. What happened was the reverse. Kingdom and household were alike plundered like prizes of war [...] All the chief men of the Iceni were stripped of their ancestral possessions [...] Boudicea, with her daughters before her in a chariot, went up to tribe after tribe, protesting that it was indeed usual for Britons to fight under the leadership of women. 'Now,' she said, 'as one of the people, I am avenging lost freedom!'\"",
-          "provenance": "Cornelius Tacitus, Annals, Book 14, Chapters 31 & 35 (c. AD 115), translated by Alfred John Church and William Jackson Brodribb (1876 — Public Domain)."
+          "question": "Read Tacitus's words in Source A. What had King Prasutagus hoped would happen, and what did Roman officials actually do?",
+          "model_answer": "King Prasutagus shared his kingdom with the Roman Emperor to keep his family and people safe. Instead, greedy Roman officers stole Iceni homes like war prizes and mistreated Boudicca and her daughters.",
+          "text": "Tacitus: \"Prasutagus, king of the Iceni, had named the emperor his heir along with his two daughters... Kingdom and household were alike plundered like prizes of war... Boudicca, with her daughters in a chariot, cried: 'I am avenging lost freedom!'\"<br><br><strong>In plain words:</strong> King Prasutagus shared his riches with Rome to keep his family safe, but greedy Roman officers stole Iceni homes anyway. Queen Boudicca rode out in her chariot to fight back for freedom!",
+          "provenance": "Westminster Boudicca monument paired with Tacitus, Annals (c. AD 115)."
         },
         {
           "id": "ks2_romans_l3_src_b",
@@ -1978,14 +2073,14 @@ window.UNIT_DATA = {
           "src": "/images/upgraded/ks2-ancient/romans_l3_src1_colchester_balkerne_gate.jpg",
           "image": "/images/upgraded/ks2-ancient/romans_l3_src1_colchester_balkerne_gate.jpg",
           "title": "Source B: Roman Stone Balkerne Gate at Colchester (Camulodunum)",
-          "caption": "Surviving Roman stone archway and red-brick guardhouse wall of the Balkerne Gate in Colchester — built to defend Camulodunum after Boudicca's army burned the undefended town in AD 60 (CC BY 4.0, HJ Mitchell).",
+          "caption": "Surviving Roman stone archway and guardhouse wall of the Balkerne Gate in Colchester, built after Boudicca burned the town in AD 60.",
           "author": "Romano-British Stone Builders at Camulodunum",
           "date": "Built c. AD 65–80 (after Boudicca's fire)",
-          "context": "Standing in Colchester (Roman Camulodunum) today, the towering stone Balkerne Gate was constructed by Roman engineers in the years after AD 61.",
-          "source_context": "Standing in Colchester (Roman Camulodunum) today, the towering stone Balkerne Gate was constructed by Roman engineers in the years after AD 61.",
+          "context": "When Boudicca attacked Camulodunum in AD 60, the town had no stone city wall yet, so afterwards Rome surrounded Colchester with thick stone walls and the Balkerne Gate.",
+          "source_context": "When Boudicca attacked Camulodunum in AD 60, the town had no stone city wall yet, so afterwards Rome surrounded Colchester with thick stone walls and the Balkerne Gate. **Hinge Question:** What does building massive stone gates AFTER AD 61 tell us about how badly Boudicca shocked the Romans?",
           "question_badge": "COLCHESTER REBUILT IN STONE",
           "question": "Why did the Romans build thick stone walls and gateways like Source B around Colchester after AD 61?",
-          "model_answer": "Source B shows the heavy stone Balkerne Gate built after Boudicca's rebellion. In AD 60, Camulodunum had no town walls and burned to the ground, so the terrified Romans rebuilt Colchester inside strong stone defences so rebels could never surprise it again."
+          "model_answer": "In AD 60, undefended Camulodunum burned right to the ground. Shocked Roman engineers built thick stone walls and the Balkerne Gate so rebels could never surprise Colchester again."
         },
         {
           "id": "ks2_romans_l3_src_c",
@@ -1995,14 +2090,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/roman_britain_map_ks2.png",
           "image": "/units/ks2_romans/assets/roman_britain_map_ks2.png",
           "title": "Source C: Map of Roman Britain — Iceni Lands, Burned Cities & Watling Street",
-          "caption": "Map of Roman Britain showing Iceni territory in East Anglia, distant Anglesey in north Wales, the three burned towns (Camulodunum, Londinium, Verulamium), and the Roman road Watling Street.",
+          "caption": "Map of Roman Britain showing Iceni lands in East Anglia, Anglesey in north Wales, the three burned towns, and Watling Street.",
           "author": "Historical Cartography Map for KS2",
           "date": "AD 60–61 Rebellion Route",
-          "context": "This campaign map traces the key locations of AD 60–61 across Roman Britain, from Anglesey in north-west Wales to East Anglia, Colchester, London, and St Albans.",
-          "source_context": "This campaign map traces the key locations of AD 60–61 across Roman Britain, from Anglesey in north-west Wales to East Anglia, Colchester, London, and St Albans.",
+          "context": "Governor Suetonius Paulinus and his legions were hundreds of miles north-west on Anglesey when Boudicca rose up, leaving south-east towns undefended.",
+          "source_context": "Governor Suetonius Paulinus and his legions were hundreds of miles north-west on Anglesey when Boudicca rose up, leaving south-east towns undefended. **Hinge Question:** Looking at Source C, how did the straight Roman road of Watling Street help Suetonius respond?",
           "question_badge": "MAP OF THE REVOLT",
           "question": "Use the map in Source C to explain why Governor Suetonius Paulinus could not save Colchester or London straight away in AD 60.",
-          "model_answer": "Source C shows that while the Iceni rose up in East Anglia in the east, Governor Suetonius Paulinus was far away on the island of Anglesey off north-west Wales. Marching back down Watling Street took weeks, giving Boudicca time to burn Colchester, London, and St Albans."
+          "model_answer": "Source C shows Suetonius Paulinus was far away on Anglesey off north-west Wales when East Anglia rebelled. Marching back down Watling Street took weeks, giving Boudicca time to burn three towns."
         },
         {
           "id": "ks2_romans_l3_src_d",
@@ -2012,14 +2107,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/roman_wall_londinium_tower_hill.jpg",
           "image": "/units/ks2_romans/assets/roman_wall_londinium_tower_hill.jpg",
           "title": "Source D: Rebuilt Roman Stone & Red-Tile Wall of Londinium at Tower Hill",
-          "caption": "Surviving section of the Roman city wall of Londinium at Tower Hill in London, showing squared Kentish ragstone blocks banded with flat red Roman bonding tiles.",
+          "caption": "Surviving section of the Roman city wall of Londinium at Tower Hill in London, built of squared stone blocks and flat red tiles.",
           "author": "Romano-British Masons in Londinium",
           "date": "Rebuilt Roman Defences of Londinium",
-          "context": "Deep underneath modern London streets near this wall lies the \"Boudiccan destruction layer\" — a 40cm band of bright red burnt clay, ash, charred wheat, and melted bronze coins from AD 60. Above it, Rome rebuilt Londinium stronger than ever inside stone walls.",
-          "source_context": "Deep underneath modern London streets near this wall lies the \"Boudiccan destruction layer\" — a 40cm band of bright red burnt clay, ash, charred wheat, and melted bronze coins from AD 60. Above it, Rome rebuilt Londinium stronger than ever inside stone walls.",
+          "context": "Deep beneath modern London streets lies a 40-centimetre band of burnt red clay, ash, and melted coins from AD 60, while above ground Rome rebuilt Londinium inside stone walls.",
+          "source_context": "Deep beneath modern London streets lies a 40-centimetre band of burnt red clay, ash, and melted coins from AD 60, while above ground Rome rebuilt Londinium inside stone walls. **Hinge Question:** How do burnt red clay underground AND stone walls at Tower Hill work together to prove Tacitus's story?",
           "question_badge": "LONDINIUM'S STONE WALLS",
           "question": "What physical clues survive in London today, both underground and in Source D, from Boudicca's rebellion and its aftermath?",
-          "model_answer": "Underground, archaeologists dig up a scorching red clay destruction layer full of ash and melted pottery proving Londinium burned in AD 60. Above ground, Source D shows how Rome rebuilt Londinium as Britain's main port protected by thick stone and red-tile walls."
+          "model_answer": "Underground, diggers uncover a scorching red clay destruction layer of ash and melted pots from AD 60. Above ground, Source D shows the strong stone and red-tile walls Rome built around rebuilt Londinium."
         }
       ],
       "causal_domino_spine": {
@@ -2036,7 +2131,7 @@ window.UNIT_DATA = {
             "trigger": "After King Prasutagus left half his wealth to Emperor Nero, officials broke the agreement, seized Iceni lands, demanded loans back, flogged Boudicca, and mistreated her daughters.",
             "connective": "United the furious Iceni and Trinovantes tribes in open rebellion.",
             "question": "Why did Queen Boudicca and the Iceni rise up against Rome in AD 60?",
-            "prose_hash": "795b8d3fb2"
+            "prose_hash": "66710162e8"
           },
           {
             "step": 2,
@@ -2048,7 +2143,7 @@ window.UNIT_DATA = {
             "trigger": "With Suetonius Paulinus far away in Anglesey, Boudicca burned Camulodunum, Londinium, and Verulamium into a scorching red clay destruction layer.",
             "connective": "Forced Governor Suetonius Paulinus to race south down Watling Street.",
             "question": "Which three towns did Boudicca burn, and what clue survives underground?",
-            "prose_hash": "edc6c2cccb"
+            "prose_hash": "ca5dc1cf99"
           },
           {
             "step": 3,
@@ -2060,7 +2155,7 @@ window.UNIT_DATA = {
             "trigger": "In a narrow wooded valley, 10,000 Roman legionaries in tight wedges pushed the squashed Britons back against their own ring of wooden wagons.",
             "connective": "Ended the revolt and led Rome to rebuild Londinium inside strong stone walls.",
             "question": "Why did Rome win the Battle of Watling Street despite being outnumbered?",
-            "prose_hash": "ab6d3ee358"
+            "prose_hash": "9eac031ec4"
           }
         ]
       },
@@ -2092,7 +2187,7 @@ window.UNIT_DATA = {
           "dates": "AD 60",
           "para_ref": "[3.1]",
           "paraRef": "[3.1]",
-          "prose_hash": "795b8d3fb2"
+          "prose_hash": "66710162e8"
         },
         {
           "step": 2,
@@ -2121,7 +2216,7 @@ window.UNIT_DATA = {
           "dates": "AD 60",
           "para_ref": "[3.3]",
           "paraRef": "[3.3]",
-          "prose_hash": "edc6c2cccb"
+          "prose_hash": "ca5dc1cf99"
         },
         {
           "step": 3,
@@ -2150,7 +2245,7 @@ window.UNIT_DATA = {
           "dates": "AD 61",
           "para_ref": "[3.5]",
           "paraRef": "[3.5]",
-          "prose_hash": "ab6d3ee358"
+          "prose_hash": "9eac031ec4"
         }
       ],
       "tasks": [
@@ -2242,12 +2337,12 @@ window.UNIT_DATA = {
           "question": "Which tribe in East Anglia did King Prasutagus and Queen Boudicca rule?",
           "q": "Which tribe in East Anglia did King Prasutagus and Queen Boudicca rule?",
           "options": [
-            "The Brigantes",
             "The Iceni",
+            "The Brigantes",
             "The Spartans",
             "The Gauls"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "The Iceni",
           "a": "The Iceni",
           "explanation": "King Prasutagus and Queen Boudicca ruled the Iceni tribe in East Anglia."
@@ -2259,10 +2354,10 @@ window.UNIT_DATA = {
           "options": [
             "Emperor Claudius",
             "Julius Caesar",
-            "Emperor Nero",
-            "Aulus Plautius"
+            "Aulus Plautius",
+            "Emperor Nero"
           ],
-          "correct": 2,
+          "correct": 3,
           "answer": "Emperor Nero",
           "a": "Emperor Nero",
           "explanation": "When King Prasutagus died in AD 60, he left half his wealth to Emperor Nero and half to his two daughters."
@@ -2287,27 +2382,42 @@ window.UNIT_DATA = {
           "question": "Which neighbouring British tribe joined the Iceni to fight alongside Queen Boudicca?",
           "q": "Which neighbouring British tribe joined the Iceni to fight alongside Queen Boudicca?",
           "options": [
-            "The Trinovantes",
             "The Vikings",
+            "The Trinovantes",
             "The Romans",
             "The Athenians"
           ],
-          "correct": 0,
+          "correct": 1,
           "answer": "The Trinovantes",
           "a": "The Trinovantes",
           "explanation": "Queen Boudicca united her own Iceni tribe with the neighbouring Trinovantes and other angry Britons."
+        },
+        {
+          "stage": 1,
+          "question": "Why had King Prasutagus originally trusted Rome before his death in AD 60?",
+          "q": "Why had King Prasutagus originally trusted Rome before his death in AD 60?",
+          "options": [
+            "He was born in Italy as Emperor Nero's brother",
+            "He had ruled peacefully as a loyal British ally of Rome",
+            "He commanded a Roman legion at Dover",
+            "He built stone bathhouses in Rome"
+          ],
+          "correct": 1,
+          "answer": "He had ruled peacefully as a loyal British ally of Rome",
+          "a": "He had ruled peacefully as a loyal British ally of Rome",
+          "explanation": "Prasutagus had stayed a friendly, peaceful ally of Rome and expected Rome to honour his will."
         },
         {
           "stage": 2,
           "question": "Where was Roman Governor Suetonius Paulinus campaigning with his soldiers when Boudicca's revolt began in AD 60?",
           "q": "Where was Roman Governor Suetonius Paulinus campaigning with his soldiers when Boudicca's revolt began in AD 60?",
           "options": [
-            "Richborough in Kent",
             "Anglesey in north Wales",
+            "Richborough in Kent",
             "Maiden Castle in Dorset",
             "Rome in Italy"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "Anglesey in north Wales",
           "a": "Anglesey in north Wales",
           "explanation": "Governor Suetonius Paulinus was hundreds of miles away in Anglesey in north Wales, leaving south-east towns vulnerable."
@@ -2317,12 +2427,12 @@ window.UNIT_DATA = {
           "question": "Which Roman town (modern Colchester) did Boudicca's rebel army attack and burn first?",
           "q": "Which Roman town (modern Colchester) did Boudicca's rebel army attack and burn first?",
           "options": [
-            "Camulodunum",
+            "Aquae Sulis",
             "Londinium",
             "Verulamium",
-            "Aquae Sulis"
+            "Camulodunum"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "Camulodunum",
           "a": "Camulodunum",
           "explanation": "Boudicca struck first at Camulodunum (Colchester), burning the hated Roman temple to ashes."
@@ -2333,11 +2443,11 @@ window.UNIT_DATA = {
           "q": "After burning Camulodunum, which TWO other Roman towns did Boudicca's army torch?",
           "options": [
             "York and Bath",
-            "Londinium (London) and Verulamium (St Albans)",
             "Dover and Canterbury",
+            "Londinium (London) and Verulamium (St Albans)",
             "Chester and Lincoln"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Londinium (London) and Verulamium (St Albans)",
           "a": "Londinium (London) and Verulamium (St Albans)",
           "explanation": "Boudicca's army swept south to burn bustling Londinium (London) and then Verulamium (St Albans)."
@@ -2348,14 +2458,29 @@ window.UNIT_DATA = {
           "q": "What remarkable evidence from AD 60 do archaeologists still dig up deep beneath modern London streets today?",
           "options": [
             "Intact wooden Iceni war chariots with horses",
-            "A scorching red clay \"destruction layer\" with blackened coins and melted pottery",
             "Photographs taken by Roman reporters",
+            "A scorching red clay \"destruction layer\" with blackened coins and melted pottery",
             "Frozen snow from the Ice Age"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "A scorching red clay \"destruction layer\" with blackened coins and melted pottery",
           "a": "A scorching red clay \"destruction layer\" with blackened coins and melted pottery",
           "explanation": "Fiercely burning timber and clay houses baked into a scorching red clay destruction layer still found beneath London streets."
+        },
+        {
+          "stage": 2,
+          "question": "What hated Roman building in Camulodunum (Colchester) did Boudicca's rebels burn to ashes first?",
+          "q": "What hated Roman building in Camulodunum (Colchester) did Boudicca's rebels burn to ashes first?",
+          "options": [
+            "Housesteads stone latrines",
+            "The Temple of Claudius",
+            "Fishbourne Palace mosaic hall",
+            "York's Multangular Tower"
+          ],
+          "correct": 1,
+          "answer": "The Temple of Claudius",
+          "a": "The Temple of Claudius",
+          "explanation": "In Camulodunum, rebels burned the hated Roman Temple of Claudius right to the ground."
         },
         {
           "stage": 3,
@@ -2378,11 +2503,11 @@ window.UNIT_DATA = {
           "q": "Why did Suetonius Paulinus choose a narrow wooded valley for his 10,000 outnumbered legionaries?",
           "options": [
             "So his soldiers could pick apples before battle",
-            "It protected his sides and squashed Boudicca's huge army together so they could barely swing long swords",
+            "Because Roman soldiers refused to stand on flat grass",
             "To hide war elephants up in the oak trees",
-            "Because Roman soldiers refused to stand on flat grass"
+            "It protected his sides and squashed Boudicca's huge army together so they could barely swing long swords"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "It protected his sides and squashed Boudicca's huge army together so they could barely swing long swords",
           "a": "It protected his sides and squashed Boudicca's huge army together so they could barely swing long swords",
           "explanation": "The narrow wooded funnel protected Roman flanks and squashed charging Britons together so they could not swing their long swords."
@@ -2394,10 +2519,10 @@ window.UNIT_DATA = {
           "options": [
             "The English Channel",
             "Hadrian's stone wall",
-            "Their own half-circle ring of parked wooden family wagons",
-            "A deep volcanic crater"
+            "A deep volcanic crater",
+            "Their own half-circle ring of parked wooden family wagons"
           ],
-          "correct": 2,
+          "correct": 3,
           "answer": "Their own half-circle ring of parked wooden family wagons",
           "a": "Their own half-circle ring of parked wooden family wagons",
           "explanation": "Confident Iceni families had parked a half-circle of wooden wagons behind the battlefield to watch, accidentally trapping retreating warriors."
@@ -2407,15 +2532,30 @@ window.UNIT_DATA = {
           "question": "How did the Romans protect rebuilt Londinium (London) after defeating Boudicca's rebellion?",
           "q": "How did the Romans protect rebuilt Londinium (London) after defeating Boudicca's rebellion?",
           "options": [
-            "They built mighty stone walls around the city",
-            "They moved Londinium to the top of a Scottish mountain",
             "They banned boats from sailing up the River Thames",
+            "They moved Londinium to the top of a Scottish mountain",
+            "They built mighty stone walls around the city",
             "They surrounded London with thatched wattle fences"
           ],
-          "correct": 0,
+          "correct": 2,
           "answer": "They built mighty stone walls around the city",
           "a": "They built mighty stone walls around the city",
           "explanation": "After winning at Watling Street, Rome rebuilt Londinium inside strong stone walls, parts of which still stand at Tower Hill today."
+        },
+        {
+          "stage": 3,
+          "question": "In what tightly packed shape did Roman legionaries advance to break Boudicca's charge at Watling Street?",
+          "q": "In what tightly packed shape did Roman legionaries advance to break Boudicca's charge at Watling Street?",
+          "options": [
+            "Loose single lines one mile apart",
+            "Tight wedges behind locked shields",
+            "Mounted on towering war elephants",
+            "Sailing in flat wooden river boats"
+          ],
+          "correct": 1,
+          "answer": "Tight wedges behind locked shields",
+          "a": "Tight wedges behind locked shields",
+          "explanation": "Disciplined Roman troops advanced in tight wedges, hurling javelins and pushing the squashed rebels back."
         }
       ],
       "video": [
@@ -2437,15 +2577,16 @@ window.UNIT_DATA = {
         "caption": "Surviving Roman Stone and Red-Tile Town Wall of Camulodunum in Colchester Castle Park",
         "position": "center 68%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l3_banner_colchester_roman_wall.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l3_banner_colchester_roman_wall.jpg",
+      "enquiry": "Why did Queen Boudicca rebel against Rome—and why did she lose?"
     },
     {
       "id": "lesson_4",
       "skill": "Evidence & Diversity",
-      "title": "Enquiry 4: Hadrian's Wall & Diverse Soldiers on the Frontier (AD 122–400)",
+      "title": "Enquiry 4: Hadrian's Wall & Frontier Soldiers (AD 122–400)",
       "subtitle": "73 Miles From Sea to Sea, Vindolanda Wooden Letters & Troops From Three Continents",
-      "enquiryQuestion": "Why did Emperor Hadrian build a 73-mile stone wall across northern Britain, and who guarded it?",
-      "enquiry_question": "Why did Emperor Hadrian build a 73-mile stone wall across northern Britain, and who guarded it?",
+      "enquiryQuestion": "Why did Hadrian build a 73-mile wall, and who guarded it?",
+      "enquiry_question": "Why did Hadrian build a 73-mile wall, and who guarded it?",
       "prologue": "In AD 122, Emperor Hadrian ordered Roman soldiers to build a 73-mile stone wall right across northern Britain from sea to sea. Buried in wet mud and carved onto stone tombstones, amazing clues reveal birthday parties, woollen socks, and soldiers from Europe, Syria, and North Africa guarding the cold frontier!",
       "blurb": "In AD 122, Emperor Hadrian ordered Roman soldiers to build a 73-mile stone wall right across northern Britain from sea to sea. Buried in wet mud and carved onto stone tombstones, amazing clues reveal birthday parties, woollen socks, and soldiers from Europe, Syria, and North Africa guarding the cold frontier!",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l4_banner_hadrians_wall_steel_rigg.jpg",
@@ -2471,10 +2612,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Every single Roman mile along the 73-mile frontier, soldiers built a fortified stone gatehouse called a milecastle where patrols checked travellers, stopped cattle raids, and collected customs taxes. **Hinge Question:** Why did Emperor Hadrian include guarded gateways every mile along his Wall instead of blocking off the north completely?",
-          "Source B": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers. Keeping hundreds of troops healthy required stone drains, water tanks, and communal flushing toilets. **Hinge Question:** Why did Roman army commanders spend so much time building clean stone toilets and drains at remote frontier forts?",
-          "Source C": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda just south of Hadrian's Wall, wooden ink letters reveal warm friendships, family life, and parcels of socks and underpants sent to chilly soldiers. **Hinge Question:** How do personal wooden letters like Claudia Severa's invitation change our view of life at a Roman frontier fort?",
-          "Source D": "Arbeia guarded sea supplies for Hadrian's Wall. Tombstones found outside the fort prove that people from Syria, North Africa (Mauretania), Spain, and southern British tribes lived side by side along the Tyne. **Hinge Question:** Why are carved Roman tombstones at forts like Arbeia such valuable clues for historians studying who lived in Roman Britain?"
+          "Source A": "Every single Roman mile along the 73-mile frontier, soldiers built a stone gatehouse called a milecastle to check travellers, stop cattle raids, and collect border taxes. **Hinge Question:** Why did Emperor Hadrian build guarded gateways every mile instead of blocking off the north completely?",
+          "Source B": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers with stone drains, water tanks, and flushing communal toilets. **Hinge Question:** Why did Roman commanders spend time building clean stone toilets and drains at remote frontier forts?",
+          "Source C": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers. **Hinge Question:** How do personal letters like Claudia Severa's party invitation change our picture of life on a Roman frontier?",
+          "Source D": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side. **Hinge Question:** Why are carved Roman tombstones at forts like Arbeia such valuable clues about who lived in Roman Britain?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2645,11 +2786,11 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "73 Miles of Stone From Sea to Sea (AD 122)",
-          "text": "<span class=\"para-ref\">[4.1]</span> In **AD 122**, **Emperor Hadrian** visited Britain and ordered a mighty stone **frontier** wall across the north. **Hadrian's Wall** stretched **73 miles** (**80 Roman miles**) from **Wallsend** on the River Tyne to **Bowness-on-Solway**. The towering stone barrier separated Roman Britain from **Caledonia** (modern Scotland) and showed Rome's power from sea to sea.<br><br><span class=\"para-ref\">[4.2]</span> At every Roman mile stood a guarded stone gatehouse called a **milecastle**. Soldiers stopped surprise cattle raids there and collected **taxes** from peaceful traders crossing the border. Two stone watchtowers stood between milecastles, backed by **16 large forts** like **Housesteads**. Inside Housesteads, flowing rainwater channels flushed communal multi-seat stone **latrines**.",
-          "content": "<span class=\"para-ref\">[4.1]</span> In **AD 122**, **Emperor Hadrian** visited Britain and ordered a mighty stone **frontier** wall across the north. **Hadrian's Wall** stretched **73 miles** (**80 Roman miles**) from **Wallsend** on the River Tyne to **Bowness-on-Solway**. The towering stone barrier separated Roman Britain from **Caledonia** (modern Scotland) and showed Rome's power from sea to sea.<br><br><span class=\"para-ref\">[4.2]</span> At every Roman mile stood a guarded stone gatehouse called a **milecastle**. Soldiers stopped surprise cattle raids there and collected **taxes** from peaceful traders crossing the border. Two stone watchtowers stood between milecastles, backed by **16 large forts** like **Housesteads**. Inside Housesteads, flowing rainwater channels flushed communal multi-seat stone **latrines**.",
+          "text": "<span class=\"para-ref\">[4.1]</span> In **AD 122**, **Emperor Hadrian** visited Britain and ordered a stone **frontier** wall across the north. **Hadrian's Wall** ran **73 miles** (**80 Roman miles**) from **Wallsend** on the River Tyne to **Bowness-on-Solway**, dividing Roman Britain from **Caledonia** [kal-ih-DOH-nee-uh] (modern Scotland).<br><br><span class=\"para-ref\">[4.2]</span> At every Roman mile stood a guarded stone gatehouse called a **milecastle** to stop cattle raids and collect border **taxes**. Backed by **16** large forts like **Housesteads**, soldiers even used communal stone **latrines** flushed clean by rainwater channels!",
+          "content": "<span class=\"para-ref\">[4.1]</span> In **AD 122**, **Emperor Hadrian** visited Britain and ordered a stone **frontier** wall across the north. **Hadrian's Wall** ran **73 miles** (**80 Roman miles**) from **Wallsend** on the River Tyne to **Bowness-on-Solway**, dividing Roman Britain from **Caledonia** [kal-ih-DOH-nee-uh] (modern Scotland).<br><br><span class=\"para-ref\">[4.2]</span> At every Roman mile stood a guarded stone gatehouse called a **milecastle** to stop cattle raids and collect border **taxes**. Backed by **16** large forts like **Housesteads**, soldiers even used communal stone **latrines** flushed clean by rainwater channels!",
           "image": "/images/upgraded/ks2-ancient/romans_l4_blk0_housesteads_crags.jpg",
           "image_alt": "Hadrian's Wall snaking along steep rocky crags near Housesteads in Northumberland",
-          "caption": "Hadrian's Wall climbing the dramatic volcanic crags near Housesteads in Northumberland — part of the 73-mile stone frontier begun in AD 122 (CC BY-SA 4.0, Benjamin Smith).",
+          "caption": "Hadrian's Wall climbing the steep rocky crags near Housesteads in Northumberland — part of the 73-mile stone frontier begun in AD 122.",
           "isReversed": false,
           "sources": [
             {
@@ -2659,15 +2800,15 @@ window.UNIT_DATA = {
               "type": "visual",
               "src": "/units/ks2_romans/assets/milecastle_39_hadrians_wall.jpg",
               "image": "/units/ks2_romans/assets/milecastle_39_hadrians_wall.jpg",
-              "title": "Source A: Milecastle 39 ('Castle Nick') on Hadrian's Wall, Northumberland",
-              "caption": "Stone ruins of Milecastle 39 ('Castle Nick') perched along the high volcanic crags of Hadrian's Wall in Northumberland, built by Roman legionaries from AD 122.",
+              "title": "Source A: Milecastle 39 on Hadrian's Wall, Northumberland (Built from AD 122)",
+              "caption": "Stone ruins of a guarded Roman milecastle perched along high rocky crags on Hadrian's Wall in Northumberland.",
               "author": "Roman Second, Sixth, and Twentieth Legions (Archaeological Site)",
               "date": "c. AD 122–128",
-              "context": "Every single Roman mile along the 73-mile frontier, soldiers built a fortified stone gatehouse called a milecastle where patrols checked travellers, stopped cattle raids, and collected customs taxes.",
+              "context": "Every single Roman mile along the 73-mile frontier, soldiers built a stone gatehouse called a milecastle to check travellers, stop cattle raids, and collect border taxes.",
               "question_badge": "GUARDED FRONTIER GATE",
-              "question": "Look closely at Source A. How did building Milecastle 39 along steep crags help Roman soldiers control the northern border?",
-              "model_answer": "Source A shows thick stone walls built right along high rocky cliffs, giving Roman sentries a clear view for miles across the hills while forcing travellers and traders to pass through guarded milecastle gates.",
-              "source_context": "Every single Roman mile along the 73-mile frontier, soldiers built a fortified stone gatehouse called a milecastle where patrols checked travellers, stopped cattle raids, and collected customs taxes."
+              "question": "Look closely at Source A. How did building this milecastle along steep crags help Roman soldiers control the northern border?",
+              "model_answer": "Source A sits right on top of high rocky cliffs, giving sentries a clear view for miles while forcing travellers and traders to pass through guarded gates.",
+              "source_context": "Every single Roman mile along the 73-mile frontier, soldiers built a stone gatehouse called a milecastle to check travellers, stop cattle raids, and collect border taxes. **Hinge Question:** Why did Emperor Hadrian build guarded gateways every mile instead of blocking off the north completely?"
             },
             {
               "id": "ks2_romans_l4_src_b",
@@ -2676,26 +2817,27 @@ window.UNIT_DATA = {
               "type": "visual",
               "src": "/units/ks2_romans/assets/housesteads_roman_latrines.jpg",
               "image": "/units/ks2_romans/assets/housesteads_roman_latrines.jpg",
-              "title": "Source B: Communal Stone Latrines at Housesteads Roman Fort (Vercovicium)",
-              "caption": "Remains of the multi-seat communal stone toilet block at Housesteads Fort on Hadrian's Wall, where rainwater channels flushed waste away beneath the seats.",
+              "title": "Source B: Communal Stone Latrines at Housesteads Roman Fort",
+              "caption": "Multi-seat stone toilet block at Housesteads Fort on Hadrian's Wall, where rainwater channels flushed waste away underneath.",
               "author": "Roman Military Engineers at Vercovicium (Housesteads)",
               "date": "2nd Century AD",
-              "context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers. Keeping hundreds of troops healthy required stone drains, water tanks, and communal flushing toilets.",
+              "context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers with stone drains, water tanks, and flushing communal toilets.",
               "question_badge": "ROMAN FORT HYGIENE",
-              "question": "What does Source B reveal about how the Roman army looked after the health of 800 soldiers living together at Housesteads Fort?",
-              "model_answer": "Source B shows neatly carved stone toilet seats set above deep water channels that washed waste out of the fort, proving the Roman army cared about hygiene so soldiers did not fall sick from dirty water.",
-              "source_context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers. Keeping hundreds of troops healthy required stone drains, water tanks, and communal flushing toilets."
+              "question": "What does Source B reveal about how the Roman army looked after the health of 800 soldiers at Housesteads Fort?",
+              "model_answer": "Source B shows neat stone toilet seats set over deep water channels that washed waste outside the fort, keeping soldiers clean and healthy.",
+              "source_context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers with stone drains, water tanks, and flushing communal toilets. **Hinge Question:** Why did Roman commanders spend time building clean stone toilets and drains at remote frontier forts?"
             }
-          ]
+          ],
+          "image_caption": "Hadrian's Wall climbing the steep rocky crags near Housesteads in Northumberland — part of the 73-mile stone frontier begun in AD 122."
         },
         {
           "act": 2,
           "title": "Postcards in the Mud: The Vindolanda Tablets",
-          "text": "<span class=\"para-ref\">[4.3]</span> Just south of the Wall stood **Vindolanda Fort**, where wet, **oxygen-free mud** stopped buried wood and leather from rotting. Archaeologists dug up hundreds of wafer-thin **wooden ink tablets** **preserved** underground since around **AD 100**. These fragile handwritten letters capture real everyday voices from the chilly northern frontier.<br><br><span class=\"para-ref\">[4.4]</span> On one famous tablet, commander's wife **Claudia Severa** invited her friend **Sulpicia Lepidina** to a **birthday party** on 11 September. Her warm greeting holds the oldest surviving **Latin handwriting by a woman**! Another famous tablet lists a cosy parcel for a cold soldier: **woollen socks**, two pairs of **sandals**, and two pairs of **underpants**.",
-          "content": "<span class=\"para-ref\">[4.3]</span> Just south of the Wall stood **Vindolanda Fort**, where wet, **oxygen-free mud** stopped buried wood and leather from rotting. Archaeologists dug up hundreds of wafer-thin **wooden ink tablets** **preserved** underground since around **AD 100**. These fragile handwritten letters capture real everyday voices from the chilly northern frontier.<br><br><span class=\"para-ref\">[4.4]</span> On one famous tablet, commander's wife **Claudia Severa** invited her friend **Sulpicia Lepidina** to a **birthday party** on 11 September. Her warm greeting holds the oldest surviving **Latin handwriting by a woman**! Another famous tablet lists a cosy parcel for a cold soldier: **woollen socks**, two pairs of **sandals**, and two pairs of **underpants**.",
+          "text": "<span class=\"para-ref\">[4.3]</span> Just south of the Wall stood **Vindolanda Fort** [vin-doh-LAN-duh]. There, wet, **oxygen-free mud** **preserved** hundreds of thin **wooden ink tablets** from around **AD 100** without rotting.<br><br><span class=\"para-ref\">[4.4]</span> On one tablet, **Claudia Severa** [KLAW-dee-uh seh-VAIR-uh] invited her friend **Sulpicia Lepidina** to a **birthday party** on 11 September — the oldest surviving **Latin handwriting by a woman**! Another tablet lists a parcel for a chilly soldier: **woollen socks**, two pairs of **sandals**, and two pairs of **underpants**.",
+          "content": "<span class=\"para-ref\">[4.3]</span> Just south of the Wall stood **Vindolanda Fort** [vin-doh-LAN-duh]. There, wet, **oxygen-free mud** **preserved** hundreds of thin **wooden ink tablets** from around **AD 100** without rotting.<br><br><span class=\"para-ref\">[4.4]</span> On one tablet, **Claudia Severa** [KLAW-dee-uh seh-VAIR-uh] invited her friend **Sulpicia Lepidina** to a **birthday party** on 11 September — the oldest surviving **Latin handwriting by a woman**! Another tablet lists a parcel for a chilly soldier: **woollen socks**, two pairs of **sandals**, and two pairs of **underpants**.",
           "image": "/images/upgraded/ks2-ancient/romans_l4_blk1_vindolanda_ruins.jpg",
           "image_alt": "Excavated stone foundations of Vindolanda Roman Fort south of Hadrian's Wall",
-          "caption": "Stone ruins of Vindolanda Roman Fort in Northumberland, where wet, oxygen-free mud preserved hundreds of thin wooden ink letters from around AD 100 (CC BY-SA 2.0, Jeff Buck).",
+          "caption": "Stone ruins of Vindolanda Roman Fort in Northumberland, where wet, oxygen-free mud preserved thin wooden ink letters from around AD 100.",
           "isReversed": true,
           "sources": [
             {
@@ -2705,28 +2847,29 @@ window.UNIT_DATA = {
               "type": "artefact",
               "src": "/units/ks2_romans/assets/vindolanda_birthday_tablet_291.jpg",
               "image": "/units/ks2_romans/assets/vindolanda_birthday_tablet_291.jpg",
-              "title": "Source C: Vindolanda Wooden Ink Tablet 291 — Claudia Severa's Birthday Invitation (c. AD 100)",
-              "caption": "Wafer-thin birchwood leaf tablet written in carbon ink at Vindolanda around AD 100, containing the oldest surviving Latin handwriting by a woman (British Museum).",
+              "title": "Source C: Vindolanda Wooden Ink Letters — Birthday Party & Warm Socks (c. AD 100)",
+              "caption": "Paper-thin birchwood letter written in black ink at Vindolanda around AD 100, holding the oldest surviving Latin handwriting by a woman.",
               "author": "Claudia Severa (wife of fort commander Aelius Brocchus)",
               "date": "c. AD 100",
-              "context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda just south of Hadrian's Wall, wooden ink letters reveal warm friendships, family life, and parcels of socks and underpants sent to chilly soldiers.",
+              "context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers.",
               "question_badge": "OLDEST FEMALE HANDWRITING IN LATIN",
               "question": "Read Source C. What surprises you most about frontier life from Claudia Severa's letter and the soldier's clothes parcel?",
-              "model_answer": "Source C shows that Roman forts were not only full of marching soldiers — commanders' wives like Claudia Severa hosted warm birthday parties for close friends, while ordinary soldiers felt the cold British rain and needed parcels of woollen socks and underpants!",
-              "source_context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda just south of Hadrian's Wall, wooden ink letters reveal warm friendships, family life, and parcels of socks and underpants sent to chilly soldiers.",
-              "text": "Direct translation from Latin (Tab. Vindol. II 291): \"Claudia Severa sends warm greetings to her Lepidina. On 11 September, sister, for the celebration day of my birthday, I warmly ask that you make sure you come to us, to make the day much happier for me by your arrival... [In Claudia's own hand:] I shall expect you, sister. Farewell, sister, my dearest soul, as I hope to prosper, and hail.\" | Companion Parcel Tablet (Tab. Vindol. II 346): \"...I have sent you pairs of woollen socks from Sattua, two pairs of sandals, and two pairs of underpants...\"",
-              "provenance": "Vindolanda Ink Leaf Tablets Tab. Vindol. II 291 & II 346 (c. AD 97–105, excavated at Vindolanda, Northumberland; fresh direct translation from the original public-domain Latin text)."
+              "model_answer": "Source C proves Roman forts were not just stern army camps — officers' wives like Claudia Severa threw warm birthday parties for friends, while cold soldiers needed parcels of woollen socks and underpants!",
+              "source_context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers. **Hinge Question:** How do personal letters like Claudia Severa's party invitation change our picture of life on a Roman frontier?",
+              "text": "Vindolanda wooden ink letters (c. AD 100): \"On 11 September, sister, for my birthday, I warmly ask that you come to us, to make the day happier... Farewell, my dearest soul.\" \"I have sent you woollen socks, sandals, and underpants.\"<br><br><strong>In plain words:</strong> One wooden letter invites Claudia Severa's best friend to her birthday party on 11 September. Another letter lists a cosy parcel of warm socks, sandals, and underpants for a cold soldier!",
+              "provenance": "Wooden ink letters excavated from wet mud at Vindolanda Roman Fort, Northumberland (c. AD 100)."
             }
-          ]
+          ],
+          "image_caption": "Stone ruins of Vindolanda Roman Fort in Northumberland, where wet, oxygen-free mud preserved thin wooden ink letters from around AD 100."
         },
         {
           "act": 3,
           "title": "Soldiers & Families From Across the Roman Empire",
-          "text": "<span class=\"para-ref\">[4.5]</span> Soldiers in **auxiliary** regiments from **three continents** guarded Hadrian's Wall, arriving from Europe, the Middle East, and North Africa. **Batavian** troops from the Netherlands served at Vindolanda, and **Syrian archers** watched the windy hills from Carvoran. Meanwhile, North African **Aurelian Moors** stood guard near the western coast at **Burgh-by-Sands**.<br><br><span class=\"para-ref\">[4.6]</span> Bustling civilian settlements called **vici** grew outside fort gates where soldiers' families and traders lived together. At **Arbeia Fort** (South Shields), a Syrian flag-trader named **Barates** married **Regina**, a freedwoman from the British **Catuvellauni** tribe. Nearby, another carved Roman tombstone honours **Victor**, a young freedman from **Mauretania** in North Africa.",
-          "content": "<span class=\"para-ref\">[4.5]</span> Soldiers in **auxiliary** regiments from **three continents** guarded Hadrian's Wall, arriving from Europe, the Middle East, and North Africa. **Batavian** troops from the Netherlands served at Vindolanda, and **Syrian archers** watched the windy hills from Carvoran. Meanwhile, North African **Aurelian Moors** stood guard near the western coast at **Burgh-by-Sands**.<br><br><span class=\"para-ref\">[4.6]</span> Bustling civilian settlements called **vici** grew outside fort gates where soldiers' families and traders lived together. At **Arbeia Fort** (South Shields), a Syrian flag-trader named **Barates** married **Regina**, a freedwoman from the British **Catuvellauni** tribe. Nearby, another carved Roman tombstone honours **Victor**, a young freedman from **Mauretania** in North Africa.",
+          "text": "<span class=\"para-ref\">[4.5]</span> **Auxiliary** regiments from **three continents** — Europe, the Middle East, and **North Africa** — guarded Hadrian's Wall. **Batavian** soldiers from Europe, **Syrian archers**, and North African **Aurelian Moors** at **Burgh-by-Sands** all patrolled the windy northern border.<br><br><span class=\"para-ref\">[4.6]</span> Busy civilian towns called **vici** [WEE-kee] grew outside fort gates where families and shopkeepers lived. At **Arbeia Fort** [ar-BAY-uh] (South Shields), carved tombstones honour **Barates** [ba-RAH-teez] from **Syria**, his British **Catuvellauni** wife **Regina**, and young **Victor** from **Mauretania** in North Africa.",
+          "content": "<span class=\"para-ref\">[4.5]</span> **Auxiliary** regiments from **three continents** — Europe, the Middle East, and **North Africa** — guarded Hadrian's Wall. **Batavian** soldiers from Europe, **Syrian archers**, and North African **Aurelian Moors** at **Burgh-by-Sands** all patrolled the windy northern border.<br><br><span class=\"para-ref\">[4.6]</span> Busy civilian towns called **vici** [WEE-kee] grew outside fort gates where families and shopkeepers lived. At **Arbeia Fort** [ar-BAY-uh] (South Shields), carved tombstones honour **Barates** [ba-RAH-teez] from **Syria**, his British **Catuvellauni** wife **Regina**, and young **Victor** from **Mauretania** in North Africa.",
           "image": "/units/ks2_romans/assets/regina_tombstone_south_shields.jpg",
           "image_alt": "Reconstructed twin-tower Roman stone gatehouse at Arbeia Fort in South Shields",
-          "caption": "Archaeological remains along the Hadrian’s Wall frontier corridor where soldiers and traders from Europe, Syria, and North Africa lived and served. (CC BY 4.0, Abigail Baker and Alison Cooley).",
+          "caption": "Archaeological remains along the Hadrian's Wall frontier, where soldiers and traders from Europe, Syria, and North Africa lived and served.",
           "isReversed": false,
           "sources": [
             {
@@ -2736,20 +2879,20 @@ window.UNIT_DATA = {
               "type": "visual",
               "src": "/images/upgraded/ks2-ancient/romans_l4_src3_arbeia_gatehouse.jpg",
               "image": "/images/upgraded/ks2-ancient/romans_l4_src3_arbeia_gatehouse.jpg",
-              "title": "Source D: Reconstructed Gatehouse & Tombstone Inscriptions at Arbeia Roman Fort (South Shields)",
-              "caption": "Full-scale reconstructed twin-tower stone gatehouse at Arbeia Roman supply fort at the mouth of the River Tyne, where tombstones record residents from Syria, North Africa, and southern Britain (CC BY-SA 4.0, Chris McKenna).",
+              "title": "Source D: Reconstructed Gatehouse & Tombstones at Arbeia Roman Fort (South Shields)",
+              "caption": "Twin-tower stone gatehouse at Arbeia Roman supply fort on the River Tyne, where carved tombstones remember residents from Syria, North Africa, and Britain.",
               "author": "Arbeia Roman Fort & Carved Latin Tombstones RIB 1064 & RIB 1065",
               "date": "2nd–3rd Century AD",
-              "context": "Arbeia guarded sea supplies for Hadrian's Wall. Tombstones found outside the fort prove that people from Syria, North Africa (Mauretania), Spain, and southern British tribes lived side by side along the Tyne.",
+              "context": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side.",
               "question_badge": "THREE CONTINENTS ON THE TYNE",
               "question": "Read the two Arbeia Fort tombstone inscriptions in Source D. What do Barates, Regina, and Victor prove about Roman Britain?",
-              "model_answer": "The tombstones at Arbeia prove that Roman Britain was home to people from three continents: Barates travelled from Palmyra in Syria and married Regina from the British Catuvellauni tribe, while Victor came all the way from Mauretania in North Africa.",
-              "source_context": "Arbeia guarded sea supplies for Hadrian's Wall. Tombstones found outside the fort prove that people from Syria, North Africa (Mauretania), Spain, and southern British tribes lived side by side along the Tyne.",
-              "text": "Direct translations from the Latin tombstones at Arbeia (South Shields): [1] Tombstone of Regina (RIB 1065): \"To the spirits of the departed: Regina, freedwoman and wife of Barates of Palmyra [Syria], a woman of the Catuvellaunian tribe, died aged 30.\" | [2] Tombstone of Victor (RIB 1064): \"To the spirits of the departed: Victor, of the Moorish nation [Mauretania, North Africa], aged 20, freedman of Numerianus, cavalryman of the First Wing of Asturians, who most devotedly led him to his burial.\"",
-              "provenance": "Roman Inscriptions of Britain RIB 1065 (Regina, Arbeia Museum, South Shields) & RIB 1064 (Victor the Moor, Arbeia Museum); fresh direct translation from the original Latin stone inscriptions."
+              "model_answer": "The tombstones prove Roman Britain brought people together from three continents: Barates travelled from Syria and married Regina from southern Britain, while Victor came from Mauretania in North Africa.",
+              "source_context": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side. **Hinge Question:** Why are carved Roman tombstones at forts like Arbeia such valuable clues about who lived in Roman Britain?",
+              "text": "Carved Roman tombstones at Arbeia Fort: \"Regina, freedwoman and wife of Barates of Palmyra [in Syria], a woman of the Catuvellaunian tribe, died aged 30.\" — \"Victor, of the Moorish nation [North Africa], aged 20, freedman of Numerianus.\"<br><br><strong>In plain words:</strong> These stone memorials show that people from across the world lived beside Hadrian's Wall. Barates came from Syria and married British-born Regina, while young Victor came from North Africa!",
+              "provenance": "Carved Roman tombstones excavated outside Arbeia Fort, South Shields (2nd century AD)."
             }
           ],
-          "image_caption": "Archaeological remains along the Hadrian’s Wall frontier corridor where soldiers and traders from Europe, Syria, and North Africa lived and served. (CC BY 4.0, Abigail Baker and Alison Cooley)."
+          "image_caption": "Archaeological remains along the Hadrian's Wall frontier, where soldiers and traders from Europe, Syria, and North Africa lived and served."
         }
       ],
       "sources": [
@@ -2760,15 +2903,15 @@ window.UNIT_DATA = {
           "type": "visual",
           "src": "/units/ks2_romans/assets/milecastle_39_hadrians_wall.jpg",
           "image": "/units/ks2_romans/assets/milecastle_39_hadrians_wall.jpg",
-          "title": "Source A: Milecastle 39 ('Castle Nick') on Hadrian's Wall, Northumberland",
-          "caption": "Stone ruins of Milecastle 39 ('Castle Nick') perched along the high volcanic crags of Hadrian's Wall in Northumberland, built by Roman legionaries from AD 122.",
+          "title": "Source A: Milecastle 39 on Hadrian's Wall, Northumberland (Built from AD 122)",
+          "caption": "Stone ruins of a guarded Roman milecastle perched along high rocky crags on Hadrian's Wall in Northumberland.",
           "author": "Roman Second, Sixth, and Twentieth Legions (Archaeological Site)",
           "date": "c. AD 122–128",
-          "context": "Every single Roman mile along the 73-mile frontier, soldiers built a fortified stone gatehouse called a milecastle where patrols checked travellers, stopped cattle raids, and collected customs taxes.",
+          "context": "Every single Roman mile along the 73-mile frontier, soldiers built a stone gatehouse called a milecastle to check travellers, stop cattle raids, and collect border taxes.",
           "question_badge": "GUARDED FRONTIER GATE",
-          "question": "Look closely at Source A. How did building Milecastle 39 along steep crags help Roman soldiers control the northern border?",
-          "model_answer": "Source A shows thick stone walls built right along high rocky cliffs, giving Roman sentries a clear view for miles across the hills while forcing travellers and traders to pass through guarded milecastle gates.",
-          "source_context": "Every single Roman mile along the 73-mile frontier, soldiers built a fortified stone gatehouse called a milecastle where patrols checked travellers, stopped cattle raids, and collected customs taxes."
+          "question": "Look closely at Source A. How did building this milecastle along steep crags help Roman soldiers control the northern border?",
+          "model_answer": "Source A sits right on top of high rocky cliffs, giving sentries a clear view for miles while forcing travellers and traders to pass through guarded gates.",
+          "source_context": "Every single Roman mile along the 73-mile frontier, soldiers built a stone gatehouse called a milecastle to check travellers, stop cattle raids, and collect border taxes. **Hinge Question:** Why did Emperor Hadrian build guarded gateways every mile instead of blocking off the north completely?"
         },
         {
           "id": "ks2_romans_l4_src_b",
@@ -2777,15 +2920,15 @@ window.UNIT_DATA = {
           "type": "visual",
           "src": "/units/ks2_romans/assets/housesteads_roman_latrines.jpg",
           "image": "/units/ks2_romans/assets/housesteads_roman_latrines.jpg",
-          "title": "Source B: Communal Stone Latrines at Housesteads Roman Fort (Vercovicium)",
-          "caption": "Remains of the multi-seat communal stone toilet block at Housesteads Fort on Hadrian's Wall, where rainwater channels flushed waste away beneath the seats.",
+          "title": "Source B: Communal Stone Latrines at Housesteads Roman Fort",
+          "caption": "Multi-seat stone toilet block at Housesteads Fort on Hadrian's Wall, where rainwater channels flushed waste away underneath.",
           "author": "Roman Military Engineers at Vercovicium (Housesteads)",
           "date": "2nd Century AD",
-          "context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers. Keeping hundreds of troops healthy required stone drains, water tanks, and communal flushing toilets.",
+          "context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers with stone drains, water tanks, and flushing communal toilets.",
           "question_badge": "ROMAN FORT HYGIENE",
-          "question": "What does Source B reveal about how the Roman army looked after the health of 800 soldiers living together at Housesteads Fort?",
-          "model_answer": "Source B shows neatly carved stone toilet seats set above deep water channels that washed waste out of the fort, proving the Roman army cared about hygiene so soldiers did not fall sick from dirty water.",
-          "source_context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers. Keeping hundreds of troops healthy required stone drains, water tanks, and communal flushing toilets."
+          "question": "What does Source B reveal about how the Roman army looked after the health of 800 soldiers at Housesteads Fort?",
+          "model_answer": "Source B shows neat stone toilet seats set over deep water channels that washed waste outside the fort, keeping soldiers clean and healthy.",
+          "source_context": "Housesteads was one of 16 major stone forts backing Hadrian's Wall, housing around 800 soldiers with stone drains, water tanks, and flushing communal toilets. **Hinge Question:** Why did Roman commanders spend time building clean stone toilets and drains at remote frontier forts?"
         },
         {
           "id": "ks2_romans_l4_src_c",
@@ -2794,17 +2937,17 @@ window.UNIT_DATA = {
           "type": "artefact",
           "src": "/units/ks2_romans/assets/vindolanda_birthday_tablet_291.jpg",
           "image": "/units/ks2_romans/assets/vindolanda_birthday_tablet_291.jpg",
-          "title": "Source C: Vindolanda Wooden Ink Tablet 291 — Claudia Severa's Birthday Invitation (c. AD 100)",
-          "caption": "Wafer-thin birchwood leaf tablet written in carbon ink at Vindolanda around AD 100, containing the oldest surviving Latin handwriting by a woman (British Museum).",
+          "title": "Source C: Vindolanda Wooden Ink Letters — Birthday Party & Warm Socks (c. AD 100)",
+          "caption": "Paper-thin birchwood letter written in black ink at Vindolanda around AD 100, holding the oldest surviving Latin handwriting by a woman.",
           "author": "Claudia Severa (wife of fort commander Aelius Brocchus)",
           "date": "c. AD 100",
-          "context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda just south of Hadrian's Wall, wooden ink letters reveal warm friendships, family life, and parcels of socks and underpants sent to chilly soldiers.",
+          "context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers.",
           "question_badge": "OLDEST FEMALE HANDWRITING IN LATIN",
           "question": "Read Source C. What surprises you most about frontier life from Claudia Severa's letter and the soldier's clothes parcel?",
-          "model_answer": "Source C shows that Roman forts were not only full of marching soldiers — commanders' wives like Claudia Severa hosted warm birthday parties for close friends, while ordinary soldiers felt the cold British rain and needed parcels of woollen socks and underpants!",
-          "source_context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda just south of Hadrian's Wall, wooden ink letters reveal warm friendships, family life, and parcels of socks and underpants sent to chilly soldiers.",
-          "text": "Direct translation from Latin (Tab. Vindol. II 291): \"Claudia Severa sends warm greetings to her Lepidina. On 11 September, sister, for the celebration day of my birthday, I warmly ask that you make sure you come to us, to make the day much happier for me by your arrival... [In Claudia's own hand:] I shall expect you, sister. Farewell, sister, my dearest soul, as I hope to prosper, and hail.\" | Companion Parcel Tablet (Tab. Vindol. II 346): \"...I have sent you pairs of woollen socks from Sattua, two pairs of sandals, and two pairs of underpants...\"",
-          "provenance": "Vindolanda Ink Leaf Tablets Tab. Vindol. II 291 & II 346 (c. AD 97–105, excavated at Vindolanda, Northumberland; fresh direct translation from the original public-domain Latin text)."
+          "model_answer": "Source C proves Roman forts were not just stern army camps — officers' wives like Claudia Severa threw warm birthday parties for friends, while cold soldiers needed parcels of woollen socks and underpants!",
+          "source_context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers. **Hinge Question:** How do personal letters like Claudia Severa's party invitation change our picture of life on a Roman frontier?",
+          "text": "Vindolanda wooden ink letters (c. AD 100): \"On 11 September, sister, for my birthday, I warmly ask that you come to us, to make the day happier... Farewell, my dearest soul.\" \"I have sent you woollen socks, sandals, and underpants.\"<br><br><strong>In plain words:</strong> One wooden letter invites Claudia Severa's best friend to her birthday party on 11 September. Another letter lists a cosy parcel of warm socks, sandals, and underpants for a cold soldier!",
+          "provenance": "Wooden ink letters excavated from wet mud at Vindolanda Roman Fort, Northumberland (c. AD 100)."
         },
         {
           "id": "ks2_romans_l4_src_d",
@@ -2813,17 +2956,17 @@ window.UNIT_DATA = {
           "type": "visual",
           "src": "/images/upgraded/ks2-ancient/romans_l4_src3_arbeia_gatehouse.jpg",
           "image": "/images/upgraded/ks2-ancient/romans_l4_src3_arbeia_gatehouse.jpg",
-          "title": "Source D: Reconstructed Gatehouse & Tombstone Inscriptions at Arbeia Roman Fort (South Shields)",
-          "caption": "Full-scale reconstructed twin-tower stone gatehouse at Arbeia Roman supply fort at the mouth of the River Tyne, where tombstones record residents from Syria, North Africa, and southern Britain (CC BY-SA 4.0, Chris McKenna).",
+          "title": "Source D: Reconstructed Gatehouse & Tombstones at Arbeia Roman Fort (South Shields)",
+          "caption": "Twin-tower stone gatehouse at Arbeia Roman supply fort on the River Tyne, where carved tombstones remember residents from Syria, North Africa, and Britain.",
           "author": "Arbeia Roman Fort & Carved Latin Tombstones RIB 1064 & RIB 1065",
           "date": "2nd–3rd Century AD",
-          "context": "Arbeia guarded sea supplies for Hadrian's Wall. Tombstones found outside the fort prove that people from Syria, North Africa (Mauretania), Spain, and southern British tribes lived side by side along the Tyne.",
+          "context": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side.",
           "question_badge": "THREE CONTINENTS ON THE TYNE",
           "question": "Read the two Arbeia Fort tombstone inscriptions in Source D. What do Barates, Regina, and Victor prove about Roman Britain?",
-          "model_answer": "The tombstones at Arbeia prove that Roman Britain was home to people from three continents: Barates travelled from Palmyra in Syria and married Regina from the British Catuvellauni tribe, while Victor came all the way from Mauretania in North Africa.",
-          "source_context": "Arbeia guarded sea supplies for Hadrian's Wall. Tombstones found outside the fort prove that people from Syria, North Africa (Mauretania), Spain, and southern British tribes lived side by side along the Tyne.",
-          "text": "Direct translations from the Latin tombstones at Arbeia (South Shields): [1] Tombstone of Regina (RIB 1065): \"To the spirits of the departed: Regina, freedwoman and wife of Barates of Palmyra [Syria], a woman of the Catuvellaunian tribe, died aged 30.\" | [2] Tombstone of Victor (RIB 1064): \"To the spirits of the departed: Victor, of the Moorish nation [Mauretania, North Africa], aged 20, freedman of Numerianus, cavalryman of the First Wing of Asturians, who most devotedly led him to his burial.\"",
-          "provenance": "Roman Inscriptions of Britain RIB 1065 (Regina, Arbeia Museum, South Shields) & RIB 1064 (Victor the Moor, Arbeia Museum); fresh direct translation from the original Latin stone inscriptions."
+          "model_answer": "The tombstones prove Roman Britain brought people together from three continents: Barates travelled from Syria and married Regina from southern Britain, while Victor came from Mauretania in North Africa.",
+          "source_context": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side. **Hinge Question:** Why are carved Roman tombstones at forts like Arbeia such valuable clues about who lived in Roman Britain?",
+          "text": "Carved Roman tombstones at Arbeia Fort: \"Regina, freedwoman and wife of Barates of Palmyra [in Syria], a woman of the Catuvellaunian tribe, died aged 30.\" — \"Victor, of the Moorish nation [North Africa], aged 20, freedman of Numerianus.\"<br><br><strong>In plain words:</strong> These stone memorials show that people from across the world lived beside Hadrian's Wall. Barates came from Syria and married British-born Regina, while young Victor came from North Africa!",
+          "provenance": "Carved Roman tombstones excavated outside Arbeia Fort, South Shields (2nd century AD)."
         }
       ],
       "tasks": [
@@ -2915,12 +3058,12 @@ window.UNIT_DATA = {
           "question": "In what year did Emperor Hadrian visit Britain and order his northern stone wall to be built?",
           "q": "In what year did Emperor Hadrian visit Britain and order his northern stone wall to be built?",
           "options": [
-            "55 BC",
-            "AD 43",
             "AD 122",
+            "AD 43",
+            "55 BC",
             "AD 410"
           ],
-          "correct": 2,
+          "correct": 0,
           "answer": "AD 122",
           "a": "AD 122",
           "explanation": "Emperor Hadrian visited Britain in AD 122 and ordered his legions to construct the northern frontier wall."
@@ -2931,11 +3074,11 @@ window.UNIT_DATA = {
           "q": "How long was Hadrian's Wall from Wallsend on the River Tyne to Bowness-on-Solway?",
           "options": [
             "25 miles (30 Roman miles)",
-            "73 miles (80 Roman miles)",
+            "10 miles (12 Roman miles)",
             "150 miles (165 Roman miles)",
-            "10 miles (12 Roman miles)"
+            "73 miles (80 Roman miles)"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "73 miles (80 Roman miles)",
           "a": "73 miles (80 Roman miles)",
           "explanation": "Hadrian's Wall stretched for 73 modern miles (80 Roman miles) from sea to sea across northern Britain."
@@ -2946,11 +3089,11 @@ window.UNIT_DATA = {
           "q": "What was built at every Roman mile along Hadrian's Wall to stop raids and collect taxes from traders?",
           "options": [
             "A wooden roundhouse",
-            "A guarded gatehouse called a milecastle",
             "A marble palace",
+            "A guarded gatehouse called a milecastle",
             "An underground tunnel"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "A guarded gatehouse called a milecastle",
           "a": "A guarded gatehouse called a milecastle",
           "explanation": "Soldiers built a fortified gatehouse called a milecastle at every Roman mile to check travellers and collect border taxes."
@@ -2960,27 +3103,42 @@ window.UNIT_DATA = {
           "question": "How were the communal multi-seat stone latrines at Housesteads Roman Fort kept clean?",
           "q": "How were the communal multi-seat stone latrines at Housesteads Roman Fort kept clean?",
           "options": [
-            "Rainwater channels flushed waste away",
             "Ocean waves washed through the fort",
+            "Rainwater channels flushed waste away",
             "Hot volcanic steam cleaned the seats",
             "Horses pulled wooden carts underneath"
           ],
-          "correct": 0,
+          "correct": 1,
           "answer": "Rainwater channels flushed waste away",
           "a": "Rainwater channels flushed waste away",
           "explanation": "At Housesteads Fort, engineered rainwater channels flowed beneath the communal stone latrines to flush waste away."
+        },
+        {
+          "stage": 1,
+          "question": "What did the Romans call the unconquered northern lands of modern Scotland beyond Hadrian's Wall?",
+          "q": "What did the Romans call the unconquered northern lands of modern Scotland beyond Hadrian's Wall?",
+          "options": [
+            "Gaul",
+            "Caledonia",
+            "Mauretania",
+            "Lusitania"
+          ],
+          "correct": 1,
+          "answer": "Caledonia",
+          "a": "Caledonia",
+          "explanation": "Hadrian's Wall divided the province of Roman Britain from the northern tribes of Caledonia (modern Scotland)."
         },
         {
           "stage": 2,
           "question": "Why did wafer-thin wooden ink tablets survive for nearly 2,000 years underground at Vindolanda Fort?",
           "q": "Why did wafer-thin wooden ink tablets survive for nearly 2,000 years underground at Vindolanda Fort?",
           "options": [
-            "They were frozen inside solid icebergs",
             "Wet, oxygen-free mud stopped the buried wood from rotting",
+            "They were frozen inside solid icebergs",
             "They were baked into hard red bricks",
             "They were sealed inside glass bottles"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "Wet, oxygen-free mud stopped the buried wood from rotting",
           "a": "Wet, oxygen-free mud stopped the buried wood from rotting",
           "explanation": "Waterlogged, oxygen-free mud at Vindolanda stopped wood-rotting bacteria from destroying the thin wooden ink letters."
@@ -2991,11 +3149,11 @@ window.UNIT_DATA = {
           "q": "Why is Claudia Severa's birthday party invitation from around AD 100 famous around the world?",
           "options": [
             "It is written in solid gold ink",
-            "It holds the oldest surviving Latin handwriting by a woman",
+            "It was signed by Julius Caesar",
             "It contains a secret map to buried treasure",
-            "It was signed by Julius Caesar"
+            "It holds the oldest surviving Latin handwriting by a woman"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "It holds the oldest surviving Latin handwriting by a woman",
           "a": "It holds the oldest surviving Latin handwriting by a woman",
           "explanation": "Claudia Severa's handwritten farewell greeting to Sulpicia Lepidina is the oldest known example of Latin writing by a woman."
@@ -3006,11 +3164,11 @@ window.UNIT_DATA = {
           "q": "Who did Claudia Severa warmly invite to celebrate her birthday on her Vindolanda wooden tablet?",
           "options": [
             "Queen Boudicca",
-            "Her friend Sulpicia Lepidina",
             "Emperor Hadrian",
+            "Her friend Sulpicia Lepidina",
             "Regina of the Catuvellauni"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Her friend Sulpicia Lepidina",
           "a": "Her friend Sulpicia Lepidina",
           "explanation": "Claudia Severa wrote to invite her close friend Sulpicia Lepidina, wife of Vindolanda's commander, to her birthday celebration."
@@ -3021,14 +3179,29 @@ window.UNIT_DATA = {
           "q": "Which cosy items were sent in a parcel to a chilly soldier on another Vindolanda tablet?",
           "options": [
             "A fur hat, mittens, and snow boots",
-            "Woollen socks, two pairs of sandals, and two pairs of underpants",
             "An iron helmet and a bronze shield",
+            "Woollen socks, two pairs of sandals, and two pairs of underpants",
             "Silk robes and golden slippers"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Woollen socks, two pairs of sandals, and two pairs of underpants",
           "a": "Woollen socks, two pairs of sandals, and two pairs of underpants",
           "explanation": "One Vindolanda ink tablet records a parcel containing warm woollen socks, two pairs of sandals, and two pairs of underpants."
+        },
+        {
+          "stage": 2,
+          "question": "On what date did Claudia Severa invite Sulpicia Lepidina to celebrate her birthday at Vindolanda?",
+          "q": "On what date did Claudia Severa invite Sulpicia Lepidina to celebrate her birthday at Vindolanda?",
+          "options": [
+            "25 December",
+            "11 September",
+            "1 January",
+            "15 March"
+          ],
+          "correct": 1,
+          "answer": "11 September",
+          "a": "11 September",
+          "explanation": "Claudia Severa's wooden letter warmly invited her friend Lepidina to visit for her birthday on 11 September."
         },
         {
           "stage": 3,
@@ -3051,11 +3224,11 @@ window.UNIT_DATA = {
           "q": "Where did the Aurelian Moors who guarded Hadrian's Wall at Burgh-by-Sands come from?",
           "options": [
             "Caledonia (Scotland)",
-            "North Africa",
+            "Denmark",
             "Northern Gaul",
-            "Denmark"
+            "North Africa"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "North Africa",
           "a": "North Africa",
           "explanation": "The Numerus Maurorum Aurelianorum (Aurelian Moors) stationed at Burgh-by-Sands came from North Africa."
@@ -3066,11 +3239,11 @@ window.UNIT_DATA = {
           "q": "What did Romans call the bustling civilian settlements where families and traders lived outside fort gates?",
           "options": [
             "Hillforts",
-            "Vici",
+            "Amphitheatres",
             "Testudos",
-            "Amphitheatres"
+            "Vici"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Vici",
           "a": "Vici",
           "explanation": "Busy civilian towns called vici (singular: vicus) grew outside frontier forts to house families, shopkeepers, and craftspeople."
@@ -3081,14 +3254,29 @@ window.UNIT_DATA = {
           "q": "At Arbeia Fort (South Shields), where had the trader Barates and the young freedman Victor originally come from?",
           "options": [
             "Both came from Rome in Italy",
-            "Barates came from Syria and Victor came from Mauretania in North Africa",
             "Both came from the Iceni tribe in Norfolk",
+            "Barates came from Syria and Victor came from Mauretania in North Africa",
             "Barates came from Caledonia and Victor came from Ireland"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Barates came from Syria and Victor came from Mauretania in North Africa",
           "a": "Barates came from Syria and Victor came from Mauretania in North Africa",
           "explanation": "Carved tombstones at Arbeia show Barates came from Palmyra in Syria (marrying British freedwoman Regina) and Victor came from Mauretania in North Africa."
+        },
+        {
+          "stage": 3,
+          "question": "Which British tribe had Regina (wife of Syrian trader Barates at Arbeia Fort) been born into?",
+          "q": "Which British tribe had Regina (wife of Syrian trader Barates at Arbeia Fort) been born into?",
+          "options": [
+            "The Picts of Caledonia",
+            "The Catuvellauni tribe",
+            "The Batavians",
+            "The Visigoths"
+          ],
+          "correct": 1,
+          "answer": "The Catuvellauni tribe",
+          "a": "The Catuvellauni tribe",
+          "explanation": "Regina's carved tombstone at South Shields records that she came from the southern British Catuvellauni tribe."
         }
       ],
       "video": [
@@ -3118,7 +3306,7 @@ window.UNIT_DATA = {
             "trigger": "In AD 122, Emperor Hadrian ordered a 73-mile stone wall from Wallsend to Bowness-on-Solway with milecastles every Roman mile and 16 forts like Housesteads.",
             "connective": "Controlled movement, stopped northern raids, and taxed cross-border traders.",
             "question": "Why did Emperor Hadrian build milecastles and forts along a 73-mile wall?",
-            "prose_hash": "8b1de3713d"
+            "prose_hash": "40c90d1209"
           },
           {
             "step": 2,
@@ -3130,7 +3318,7 @@ window.UNIT_DATA = {
             "trigger": "Wet, oxygen-free mud at Vindolanda preserved wooden ink letters including Claudia Severa's birthday invitation and a parcel of woollen socks and underpants.",
             "connective": "Revealed real friendships, women's voices, and chilly daily life on the frontier.",
             "question": "What did oxygen-free mud preserve underground at Vindolanda Fort?",
-            "prose_hash": "0aed15999d"
+            "prose_hash": "39e83eb3cc"
           },
           {
             "step": 3,
@@ -3142,7 +3330,7 @@ window.UNIT_DATA = {
             "trigger": "Batavians, Syrian archers, and North African Aurelian Moors guarded the Wall while Arbeia tombstones record Syrian Barates, British Regina, and Moorish Victor.",
             "connective": "Turned northern Roman Britain into a bustling, multi-continental frontier society.",
             "question": "Who guarded Hadrian's Wall and lived in the vici towns outside the forts?",
-            "prose_hash": "07c305aac9"
+            "prose_hash": "bc1fffead6"
           }
         ]
       },
@@ -3174,7 +3362,7 @@ window.UNIT_DATA = {
           "dates": "AD 122",
           "para_ref": "[4.1]",
           "paraRef": "[4.1]",
-          "prose_hash": "8b1de3713d"
+          "prose_hash": "40c90d1209"
         },
         {
           "step": 2,
@@ -3203,7 +3391,7 @@ window.UNIT_DATA = {
           "dates": "c. AD 100",
           "para_ref": "[4.3]",
           "paraRef": "[4.3]",
-          "prose_hash": "0aed15999d"
+          "prose_hash": "39e83eb3cc"
         },
         {
           "step": 3,
@@ -3232,7 +3420,7 @@ window.UNIT_DATA = {
           "dates": "AD 122–400",
           "para_ref": "[4.5]",
           "paraRef": "[4.5]",
-          "prose_hash": "07c305aac9"
+          "prose_hash": "bc1fffead6"
         }
       ],
       "card_position": "center 42%",
@@ -3241,15 +3429,16 @@ window.UNIT_DATA = {
         "caption": "Panoramic View of Hadrian's Wall Skirting the Volcanic Crags at Steel Rigg, Northumberland",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l4_banner_hadrians_wall_steel_rigg.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l4_banner_hadrians_wall_steel_rigg.jpg",
+      "enquiry": "Why did Hadrian build a 73-mile wall, and who guarded it?"
     },
     {
       "id": "lesson_5",
       "skill": "Change & Continuity",
       "title": "Enquiry 5: Life in Roman Towns — Roads, Baths & Villas",
       "subtitle": "Straight Stone Highways, Aquae Sulis Steam Baths, Hypocaust Heating & Mosaics",
-      "enquiryQuestion": "How did Roman roads, bathhouses, and stone towns transform everyday life in Britain?",
-      "enquiry_question": "How did Roman roads, bathhouses, and stone towns transform everyday life in Britain?",
+      "enquiryQuestion": "How did Roman roads, baths, and towns change life in Britain?",
+      "enquiry_question": "How did Roman roads, baths, and towns change life in Britain?",
       "prologue": "Roman engineers laid 10,000 miles of straight stone roads, piped fresh water into steaming bathhouses like Aquae Sulis, and heated dolphin-mosaic villas from underneath! Yet out in the countryside, did life really change for everyone?",
       "blurb": "Roman engineers laid 10,000 miles of straight stone roads, piped fresh water into steaming bathhouses like Aquae Sulis, and heated dolphin-mosaic villas from underneath! Yet out in the countryside, did life really change for everyone?",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l5_banner_corbridge_roman_town.jpg",
@@ -3275,10 +3464,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "Using a wooden sighting instrument called a groma, Roman engineers laid 10,000 miles of layered stone roads across Britain with cambered surfaces and side ditches so rainwater ran straight off. **Hinge Question:** Why was building 10,000 miles of all-weather stone roads essential for keeping Roman control over Britain?",
-          "Source B": "Major Roman towns and fortress settlements featured oval stone amphitheatres where up to 6,000 soldiers and townspeople cheered gladiator bouts, beast hunts, and military parades. **Hinge Question:** Why did Roman governors and wealthy town leaders pay for free gladiator shows inside grand stone amphitheatres?",
-          "Source C": "Both public bathhouses like Aquae Sulis (Bath) and wealthy countryside villas used hypocaust central heating: enslaved stokers kept a furnace burning so hot air circulated between stacks of brick tiles (pilae) under mosaic floors. **Hinge Question:** Who did the hard, smoky work needed to keep luxurious Roman bathhouses and villa floors warm?",
-          "Source D": "Wealthy Romano-British elites — such as allied British rulers and senior officials — decorated grand stone villas like Fishbourne with colourful mosaic floors while almost nine out of ten rural Britons kept living in thatched roundhouses. **Hinge Question:** Does a magnificent mosaic floor at Fishbourne Palace prove that EVERY family in Roman Britain lived in luxury?"
+          "Source A": "Using a wooden sighting tool called a groma, Roman engineers laid 10,000 miles of stone roads with curved surfaces and side ditches so rainwater ran straight off. **Hinge Question:** Why was building 10,000 miles of all-weather stone roads essential for keeping Roman control over Britain?",
+          "Source B": "Major Roman towns and fortress settlements built oval stone amphitheatres where up to 6,000 spectators cheered gladiator bouts and parades. **Hinge Question:** Why did Roman governors and wealthy town leaders pay for free gladiator shows inside stone amphitheatres?",
+          "Source C": "Public bathhouses like Aquae Sulis and wealthy villas used hypocaust heating: enslaved workers stoked a wood furnace so hot air flowed between brick tile stacks under the floor. **Hinge Question:** Who did the hard, smoky work needed to keep luxurious Roman bathhouses and villa floors warm?",
+          "Source D": "Wealthy leaders decorated stone villas like Fishbourne Palace with mosaic floors, while almost nine out of ten country Britons kept living in thatched roundhouses. **Hinge Question:** Does a grand mosaic floor at Fishbourne Palace prove that EVERY family in Roman Britain lived in luxury?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -3449,11 +3638,11 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Straight Stone Roads & Bustling Market Forums",
-          "text": "<span class=\"para-ref\">[5.1]</span> Before Rome arrived, Britons travelled slowly along muddy, rutted dirt tracks. Roman surveyors used a wooden sighting tool called a **groma** to lay **10,000 miles** of dead-straight stone highways. Soldiers stacked rammed gravel and **cambered** (gently curved) paving stones between deep **side ditches**. Rainwater drained away fast, so heavy wooden carts rolled smoothly in all weathers.<br><br><span class=\"para-ref\">[5.2]</span> Where major highways met, Romans built neat grid towns protected by tall stone walls. At each town's heart stood the **forum**, an open marketplace edged by shops and a grand hall called a **basilica**. Nearby, oval stone **amphitheatres** like **Caerleon** in South Wales seated thousands of cheering townspeople for **gladiator** shows.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Before Rome arrived, Britons travelled slowly along muddy, rutted dirt tracks. Roman surveyors used a wooden sighting tool called a **groma** to lay **10,000 miles** of dead-straight stone highways. Soldiers stacked rammed gravel and **cambered** (gently curved) paving stones between deep **side ditches**. Rainwater drained away fast, so heavy wooden carts rolled smoothly in all weathers.<br><br><span class=\"para-ref\">[5.2]</span> Where major highways met, Romans built neat grid towns protected by tall stone walls. At each town's heart stood the **forum**, an open marketplace edged by shops and a grand hall called a **basilica**. Nearby, oval stone **amphitheatres** like **Caerleon** in South Wales seated thousands of cheering townspeople for **gladiator** shows.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Before Rome arrived, Britons travelled slowly along muddy dirt tracks. Roman surveyors used a wooden sighting **groma** [GROH-muh] to lay **10,000 miles** of dead-straight stone roads. Gently curved (**cambered**) paving stones and deep **side ditches** drained rainwater so carts rolled smoothly in all weathers.<br><br><span class=\"para-ref\">[5.2]</span> Where major highways met, Romans built walled grid towns around an open market **forum** and a **basilica** [buh-SIL-ih-kuh] town hall. Nearby, oval stone **amphitheatres** like **Caerleon** [kar-LEE-on] in South Wales seated cheering crowds for **gladiator** shows.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Before Rome arrived, Britons travelled slowly along muddy dirt tracks. Roman surveyors used a wooden sighting **groma** [GROH-muh] to lay **10,000 miles** of dead-straight stone roads. Gently curved (**cambered**) paving stones and deep **side ditches** drained rainwater so carts rolled smoothly in all weathers.<br><br><span class=\"para-ref\">[5.2]</span> Where major highways met, Romans built walled grid towns around an open market **forum** and a **basilica** [buh-SIL-ih-kuh] town hall. Nearby, oval stone **amphitheatres** like **Caerleon** [kar-LEE-on] in South Wales seated cheering crowds for **gladiator** shows.",
           "image": "/units/ks2_romans/assets/wheeldale_roman_road_yorkshire.jpg",
           "image_alt": "Straight stone-paved Roman highway crossing moorland at Blackstone Edge",
-          "caption": "Excavated stretch of cambered Roman stone roadway with kerbstones and drainage ditches built to carry military supplies and trade carts. (CC BY-SA 2.0, Colin Park).",
+          "caption": "Excavated stretch of gently curved Roman stone roadway with kerbstones and side ditches built for army supplies and carts.",
           "isReversed": false,
           "sources": [
             {
@@ -3464,14 +3653,14 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/blackstone_edge_roman_road.jpg",
               "image": "/units/ks2_romans/assets/blackstone_edge_roman_road.jpg",
               "title": "Source A: Paved Roman Stone Highway over Blackstone Edge, Pennines",
-              "caption": "Surviving stretch of straight, cambered Roman stone paving climbing across Blackstone Edge in northern England, flanked by drainage kerbs.",
+              "caption": "Surviving stretch of straight, gently curved Roman stone paving climbing across Blackstone Edge in northern England.",
               "author": "Roman Military Surveyors & Road Builders",
               "date": "1st–2nd Century AD",
-              "context": "Using a wooden sighting instrument called a groma, Roman engineers laid 10,000 miles of layered stone roads across Britain with cambered surfaces and side ditches so rainwater ran straight off.",
+              "context": "Using a wooden sighting tool called a groma, Roman engineers laid 10,000 miles of stone roads with curved surfaces and side ditches so rainwater ran straight off.",
               "question_badge": "ALL-WEATHER STONE HIGHWAY",
               "question": "Look closely at the stone road in Source A. How was a Roman highway better than muddy Iron Age tracks?",
-              "model_answer": "Source A shows tightly fitted stone blocks laid in a straight, gently curved (cambered) surface with drainage channels, allowing Roman armies, messengers, and merchant carts to travel swiftly even in heavy rain.",
-              "source_context": "Using a wooden sighting instrument called a groma, Roman engineers laid 10,000 miles of layered stone roads across Britain with cambered surfaces and side ditches so rainwater ran straight off."
+              "model_answer": "Source A has tightly fitted stone blocks with a gently curved surface and side drains, letting Roman soldiers, messengers, and carts travel fast even in heavy rain.",
+              "source_context": "Using a wooden sighting tool called a groma, Roman engineers laid 10,000 miles of stone roads with curved surfaces and side ditches so rainwater ran straight off. **Hinge Question:** Why was building 10,000 miles of all-weather stone roads essential for keeping Roman control over Britain?"
             },
             {
               "id": "ks2_romans_l5_src_b",
@@ -3481,26 +3670,26 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/caerleon_roman_amphitheatre.jpg",
               "image": "/units/ks2_romans/assets/caerleon_roman_amphitheatre.jpg",
               "title": "Source B: Roman Legionary Amphitheatre at Caerleon (Isca Augusta), South Wales",
-              "caption": "Oval stone arena and grassy seating banks of the Roman amphitheatre at Caerleon in South Wales (built c. AD 90), which held up to 6,000 spectators.",
+              "caption": "Oval stone arena and grassy seating banks of the Roman amphitheatre at Caerleon in South Wales, which held up to 6,000 spectators.",
               "author": "Second Augustan Legion (Legio II Augusta)",
               "date": "c. AD 90",
-              "context": "Major Roman towns and fortress settlements featured oval stone amphitheatres where up to 6,000 soldiers and townspeople cheered gladiator bouts, beast hunts, and military parades.",
+              "context": "Major Roman towns and fortress settlements built oval stone amphitheatres where up to 6,000 spectators cheered gladiator bouts and parades.",
               "question_badge": "ARENA FOR 6,000 SPECTATORS",
               "question": "What does the oval stone arena at Caerleon in Source B show about entertainment in Roman towns?",
-              "model_answer": "Source B shows a huge oval arena surrounded by high banked seating entrances for thousands of spectators, proving that Roman towns introduced mass public entertainment like gladiator fights and parades to Britain.",
-              "source_context": "Major Roman towns and fortress settlements featured oval stone amphitheatres where up to 6,000 soldiers and townspeople cheered gladiator bouts, beast hunts, and military parades."
+              "model_answer": "Source B shows a big oval arena ringed by high seating banks for thousands of spectators, proving Roman towns brought public gladiator shows and parades to Britain.",
+              "source_context": "Major Roman towns and fortress settlements built oval stone amphitheatres where up to 6,000 spectators cheered gladiator bouts and parades. **Hinge Question:** Why did Roman governors and wealthy town leaders pay for free gladiator shows inside stone amphitheatres?"
             }
           ],
-          "image_caption": "Excavated stretch of cambered Roman stone roadway with kerbstones and drainage ditches built to carry military supplies and trade carts. (CC BY-SA 2.0, Colin Park)."
+          "image_caption": "Excavated stretch of gently curved Roman stone roadway with kerbstones and side ditches built for army supplies and carts."
         },
         {
           "act": 2,
           "title": "Aqueducts, Steam Baths & Underfloor Heating",
-          "text": "<span class=\"para-ref\">[5.3]</span> Stone water channels called **aqueducts** and underground **lead pipes** carried fresh spring water straight into Roman towns. Clean running water fed street fountains, flushing sewers, and public bathhouses like **Aquae Sulis** (modern **Bath**). Visiting the noisy public baths was a favourite daily routine to exercise, chat with friends, and wash clean.<br><br><span class=\"para-ref\">[5.4]</span> Public bathhouses and rich homes used **hypocaust** underfloor central heating. Enslaved workers stoked a roaring wood furnace so hot air blew under floors raised on brick stacks called **pilae**. Bathers relaxed in steaming hot rooms before scraping perfumed **olive oil**, sweat, and dirt off with a curved bronze **strigil**.",
-          "content": "<span class=\"para-ref\">[5.3]</span> Stone water channels called **aqueducts** and underground **lead pipes** carried fresh spring water straight into Roman towns. Clean running water fed street fountains, flushing sewers, and public bathhouses like **Aquae Sulis** (modern **Bath**). Visiting the noisy public baths was a favourite daily routine to exercise, chat with friends, and wash clean.<br><br><span class=\"para-ref\">[5.4]</span> Public bathhouses and rich homes used **hypocaust** underfloor central heating. Enslaved workers stoked a roaring wood furnace so hot air blew under floors raised on brick stacks called **pilae**. Bathers relaxed in steaming hot rooms before scraping perfumed **olive oil**, sweat, and dirt off with a curved bronze **strigil**.",
+          "text": "<span class=\"para-ref\">[5.3]</span> Stone **aqueducts** and underground **lead pipes** carried fresh spring water into **Roman** towns, fountains, sewers, and **bathhouses** like **Aquae Sulis** [AK-wee SOO-lis] (**Bath**). Townsfolk visited the noisy public baths daily to exercise, chat, and wash.<br><br><span class=\"para-ref\">[5.4]</span> Bathhouses and rich homes used **hypocaust** [HY-poh-kawst] underfloor heating. Enslaved workers stoked a wood furnace so hot air blew between brick **pilae** [PEE-ly] stacks. Bathers rubbed on **olive oil**, then scraped oil and dirt off with a curved bronze **strigil** [STRIJ-il].",
+          "content": "<span class=\"para-ref\">[5.3]</span> Stone **aqueducts** and underground **lead pipes** carried fresh spring water into **Roman** towns, fountains, sewers, and **bathhouses** like **Aquae Sulis** [AK-wee SOO-lis] (**Bath**). Townsfolk visited the noisy public baths daily to exercise, chat, and wash.<br><br><span class=\"para-ref\">[5.4]</span> Bathhouses and rich homes used **hypocaust** [HY-poh-kawst] underfloor heating. Enslaved workers stoked a wood furnace so hot air blew between brick **pilae** [PEE-ly] stacks. Bathers rubbed on **olive oil**, then scraped oil and dirt off with a curved bronze **strigil** [STRIJ-il].",
           "image": "/units/ks2_romans/assets/great_bath_aquae_sulis.jpg",
           "image_alt": "Steaming green spring waters of the Roman Great Bath at Aquae Sulis in Bath",
-          "caption": "The Great Bath at Aquae Sulis (Bath), where Roman aqueducts, lead pipes, and steaming hot rooms turned bathing into a daily social event.",
+          "caption": "The Great Bath at Aquae Sulis (Bath), where Roman aqueducts, lead pipes, and hot rooms turned bathing into a daily social event.",
           "isReversed": true,
           "sources": [
             {
@@ -3511,25 +3700,26 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/chedworth_hypocaust_pilae.jpg",
               "image": "/units/ks2_romans/assets/chedworth_hypocaust_pilae.jpg",
               "title": "Source C: Underfloor Hypocaust Brick Pillars (Pilae) at Chedworth Roman Villa",
-              "caption": "Neatly stacked red-tile pillars (pilae) beneath the floor of Chedworth Roman Villa in Gloucestershire, allowing hot air from a wood furnace to warm the rooms above.",
+              "caption": "Stacked red-tile pillars (pilae) beneath the floor of Chedworth Roman Villa in Gloucestershire, letting hot air warm the rooms above.",
               "author": "Romano-British Architect & Stonemasons (Chedworth, Gloucestershire)",
               "date": "2nd–4th Century AD",
-              "context": "Uncovered beneath the floors of Chedworth Roman Villa in Gloucestershire and Aquae Sulis in Bath, these rows of stacked clay tiles were called pilae.",
+              "context": "Public bathhouses like Aquae Sulis and wealthy villas used hypocaust heating: enslaved workers stoked a wood furnace so hot air flowed between brick tile stacks under the floor.",
               "question_badge": "ROMAN UNDERFLOOR HEATING",
               "question": "Look at the small brick pillars in Source C. How did a hypocaust system heat Roman bathhouses and rich villas?",
-              "model_answer": "Source C shows rows of stacked brick tiles (pilae) that held up the floor so hot air from a roaring wood furnace could flow underneath, warming the stone floor and walls of bathhouses and wealthy homes.",
-              "source_context": "Uncovered beneath the floors of Chedworth Roman Villa in Gloucestershire and Aquae Sulis in Bath, these rows of stacked clay tiles were called pilae."
+              "model_answer": "Source C shows rows of stacked brick tiles (pilae) holding up the floor so hot air from a wood furnace could flow underneath and warm the stone rooms.",
+              "source_context": "Public bathhouses like Aquae Sulis and wealthy villas used hypocaust heating: enslaved workers stoked a wood furnace so hot air flowed between brick tile stacks under the floor. **Hinge Question:** Who did the hard, smoky work needed to keep luxurious Roman bathhouses and villa floors warm?"
             }
-          ]
+          ],
+          "image_caption": "The Great Bath at Aquae Sulis (Bath), where Roman aqueducts, lead pipes, and hot rooms turned bathing into a daily social event."
         },
         {
           "act": 3,
           "title": "Dolphin Mosaics vs Countryside Roundhouses",
-          "text": "<span class=\"para-ref\">[5.5]</span> In peaceful southern Britain, wealthy officials and friendly Celtic leaders built grand stone country **villas** like **Fishbourne Palace** in Sussex. Skilled craftspeople pressed thousands of tiny coloured stone cubes called **tesserae** into wet mortar to make **mosaic** floors. Rich diners feasted on new foods like **grapes**, **cherries**, **walnuts**, and salty fish sauce called **garum**.<br><br><span class=\"para-ref\">[5.6]</span> Yet Roman rule did not change everyone's home equally across the island. Out in the countryside, almost **nine out of ten Britons** still farmed the land inside smoky **thatched roundhouses**. Most country families kept speaking Celtic languages while working hard to pay **Roman taxes**.",
-          "content": "<span class=\"para-ref\">[5.5]</span> In peaceful southern Britain, wealthy officials and friendly Celtic leaders built grand stone country **villas** like **Fishbourne Palace** in Sussex. Skilled craftspeople pressed thousands of tiny coloured stone cubes called **tesserae** into wet mortar to make **mosaic** floors. Rich diners feasted on new foods like **grapes**, **cherries**, **walnuts**, and salty fish sauce called **garum**.<br><br><span class=\"para-ref\">[5.6]</span> Yet Roman rule did not change everyone's home equally across the island. Out in the countryside, almost **nine out of ten Britons** still farmed the land inside smoky **thatched roundhouses**. Most country families kept speaking Celtic languages while working hard to pay **Roman taxes**.",
+          "text": "<span class=\"para-ref\">[5.5]</span> In peaceful southern Britain, wealthy leaders built grand stone country **villas** like **Fishbourne Palace** in Sussex. Craftspeople pressed thousands of tiny coloured stone **tesserae** [TESS-er-ee] cubes into wet mortar to make **mosaic** floors. Rich diners tasted new foods like **grapes**, **cherries**, **walnuts**, and salty **garum** [GA-rum] fish sauce.<br><br><span class=\"para-ref\">[5.6]</span> Yet life did not change equally for rural **British** farmers. Across the countryside, almost **nine out of ten Britons** kept farming in smoky **thatched roundhouses** and speaking Celtic while paying **Roman taxes**.",
+          "content": "<span class=\"para-ref\">[5.5]</span> In peaceful southern Britain, wealthy leaders built grand stone country **villas** like **Fishbourne Palace** in Sussex. Craftspeople pressed thousands of tiny coloured stone **tesserae** [TESS-er-ee] cubes into wet mortar to make **mosaic** floors. Rich diners tasted new foods like **grapes**, **cherries**, **walnuts**, and salty **garum** [GA-rum] fish sauce.<br><br><span class=\"para-ref\">[5.6]</span> Yet life did not change equally for rural **British** farmers. Across the countryside, almost **nine out of ten Britons** kept farming in smoky **thatched roundhouses** and speaking Celtic while paying **Roman taxes**.",
           "image": "/units/ks2_romans/assets/bignor_roman_villa_mosaic.jpg",
           "image_alt": "Roman mosaic floor showing Cupid riding a dolphin at Fishbourne Roman Palace in Sussex",
-          "caption": "Intricate geometric and figurative Romano-British floor mosaic laid from thousands of tiny coloured stone cubes (tesserae) in a wealthy country villa. (CC BY 2.0, Mike Prince from Bangalore, India).",
+          "caption": "Colourful Romano-British floor mosaic laid from thousands of tiny stone cubes (tesserae) inside a wealthy country villa.",
           "isReversed": false,
           "sources": [
             {
@@ -3540,17 +3730,17 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/fishbourne_cupid_dolphin_mosaic.jpg",
               "image": "/units/ks2_romans/assets/fishbourne_cupid_dolphin_mosaic.jpg",
               "title": "Source D: 'Cupid on a Dolphin' Floor Mosaic at Fishbourne Roman Palace, Sussex (c. AD 160)",
-              "caption": "Intricate Roman floor mosaic at Fishbourne Palace near Chichester, made from over 360,000 tiny coloured stone and tile cubes (tesserae) showing winged Cupid riding a dolphin.",
+              "caption": "Roman floor mosaic at Fishbourne Palace in Sussex, made from tiny coloured stone cubes (tesserae) showing winged Cupid riding a dolphin.",
               "author": "Master Mosaic Craftspeople at Fishbourne Palace",
               "date": "c. AD 160",
-              "context": "Laid inside the grand stone palace at Fishbourne in West Sussex around AD 75, this famous floor depicts Cupid riding a dolphin across tiny stone cubes (tesserae).",
+              "context": "Wealthy leaders decorated stone villas like Fishbourne Palace with mosaic floors, while almost nine out of ten country Britons kept living in thatched roundhouses.",
               "question_badge": "360,000 TINY TESSERAE CUBES",
               "question": "What does Source D show about rich villa owners, and why shouldn't we assume every Briton lived like this?",
-              "model_answer": "Source D shows a dazzling floor picture made from thousands of tiny coloured tesserae cubes, proving rich villa owners lived in grand Roman style — yet historians know almost nine out of ten ordinary Britons still farmed in countryside roundhouses.",
-              "source_context": "Laid inside the grand stone palace at Fishbourne in West Sussex around AD 75, this famous floor depicts Cupid riding a dolphin across tiny stone cubes (tesserae)."
+              "model_answer": "Source D shows a detailed floor picture of tiny coloured stone cubes in a rich palace — yet historians know almost nine out of ten Britons still farmed in thatched roundhouses.",
+              "source_context": "Wealthy leaders decorated stone villas like Fishbourne Palace with mosaic floors, while almost nine out of ten country Britons kept living in thatched roundhouses. **Hinge Question:** Does a grand mosaic floor at Fishbourne Palace prove that EVERY family in Roman Britain lived in luxury?"
             }
           ],
-          "image_caption": "Intricate geometric and figurative Romano-British floor mosaic laid from thousands of tiny coloured stone cubes (tesserae) in a wealthy country villa. (CC BY 2.0, Mike Prince from Bangalore, India)."
+          "image_caption": "Colourful Romano-British floor mosaic laid from thousands of tiny stone cubes (tesserae) inside a wealthy country villa."
         }
       ],
       "sources": [
@@ -3562,14 +3752,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/blackstone_edge_roman_road.jpg",
           "image": "/units/ks2_romans/assets/blackstone_edge_roman_road.jpg",
           "title": "Source A: Paved Roman Stone Highway over Blackstone Edge, Pennines",
-          "caption": "Surviving stretch of straight, cambered Roman stone paving climbing across Blackstone Edge in northern England, flanked by drainage kerbs.",
+          "caption": "Surviving stretch of straight, gently curved Roman stone paving climbing across Blackstone Edge in northern England.",
           "author": "Roman Military Surveyors & Road Builders",
           "date": "1st–2nd Century AD",
-          "context": "Using a wooden sighting instrument called a groma, Roman engineers laid 10,000 miles of layered stone roads across Britain with cambered surfaces and side ditches so rainwater ran straight off.",
+          "context": "Using a wooden sighting tool called a groma, Roman engineers laid 10,000 miles of stone roads with curved surfaces and side ditches so rainwater ran straight off.",
           "question_badge": "ALL-WEATHER STONE HIGHWAY",
           "question": "Look closely at the stone road in Source A. How was a Roman highway better than muddy Iron Age tracks?",
-          "model_answer": "Source A shows tightly fitted stone blocks laid in a straight, gently curved (cambered) surface with drainage channels, allowing Roman armies, messengers, and merchant carts to travel swiftly even in heavy rain.",
-          "source_context": "Using a wooden sighting instrument called a groma, Roman engineers laid 10,000 miles of layered stone roads across Britain with cambered surfaces and side ditches so rainwater ran straight off."
+          "model_answer": "Source A has tightly fitted stone blocks with a gently curved surface and side drains, letting Roman soldiers, messengers, and carts travel fast even in heavy rain.",
+          "source_context": "Using a wooden sighting tool called a groma, Roman engineers laid 10,000 miles of stone roads with curved surfaces and side ditches so rainwater ran straight off. **Hinge Question:** Why was building 10,000 miles of all-weather stone roads essential for keeping Roman control over Britain?"
         },
         {
           "id": "ks2_romans_l5_src_b",
@@ -3579,14 +3769,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/caerleon_roman_amphitheatre.jpg",
           "image": "/units/ks2_romans/assets/caerleon_roman_amphitheatre.jpg",
           "title": "Source B: Roman Legionary Amphitheatre at Caerleon (Isca Augusta), South Wales",
-          "caption": "Oval stone arena and grassy seating banks of the Roman amphitheatre at Caerleon in South Wales (built c. AD 90), which held up to 6,000 spectators.",
+          "caption": "Oval stone arena and grassy seating banks of the Roman amphitheatre at Caerleon in South Wales, which held up to 6,000 spectators.",
           "author": "Second Augustan Legion (Legio II Augusta)",
           "date": "c. AD 90",
-          "context": "Major Roman towns and fortress settlements featured oval stone amphitheatres where up to 6,000 soldiers and townspeople cheered gladiator bouts, beast hunts, and military parades.",
+          "context": "Major Roman towns and fortress settlements built oval stone amphitheatres where up to 6,000 spectators cheered gladiator bouts and parades.",
           "question_badge": "ARENA FOR 6,000 SPECTATORS",
           "question": "What does the oval stone arena at Caerleon in Source B show about entertainment in Roman towns?",
-          "model_answer": "Source B shows a huge oval arena surrounded by high banked seating entrances for thousands of spectators, proving that Roman towns introduced mass public entertainment like gladiator fights and parades to Britain.",
-          "source_context": "Major Roman towns and fortress settlements featured oval stone amphitheatres where up to 6,000 soldiers and townspeople cheered gladiator bouts, beast hunts, and military parades."
+          "model_answer": "Source B shows a big oval arena ringed by high seating banks for thousands of spectators, proving Roman towns brought public gladiator shows and parades to Britain.",
+          "source_context": "Major Roman towns and fortress settlements built oval stone amphitheatres where up to 6,000 spectators cheered gladiator bouts and parades. **Hinge Question:** Why did Roman governors and wealthy town leaders pay for free gladiator shows inside stone amphitheatres?"
         },
         {
           "id": "ks2_romans_l5_src_c",
@@ -3596,14 +3786,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/chedworth_hypocaust_pilae.jpg",
           "image": "/units/ks2_romans/assets/chedworth_hypocaust_pilae.jpg",
           "title": "Source C: Underfloor Hypocaust Brick Pillars (Pilae) at Chedworth Roman Villa",
-          "caption": "Neatly stacked red-tile pillars (pilae) beneath the floor of Chedworth Roman Villa in Gloucestershire, allowing hot air from a wood furnace to warm the rooms above.",
+          "caption": "Stacked red-tile pillars (pilae) beneath the floor of Chedworth Roman Villa in Gloucestershire, letting hot air warm the rooms above.",
           "author": "Romano-British Architect & Stonemasons (Chedworth, Gloucestershire)",
           "date": "2nd–4th Century AD",
-          "context": "Uncovered beneath the floors of Chedworth Roman Villa in Gloucestershire and Aquae Sulis in Bath, these rows of stacked clay tiles were called pilae.",
+          "context": "Public bathhouses like Aquae Sulis and wealthy villas used hypocaust heating: enslaved workers stoked a wood furnace so hot air flowed between brick tile stacks under the floor.",
           "question_badge": "ROMAN UNDERFLOOR HEATING",
           "question": "Look at the small brick pillars in Source C. How did a hypocaust system heat Roman bathhouses and rich villas?",
-          "model_answer": "Source C shows rows of stacked brick tiles (pilae) that held up the floor so hot air from a roaring wood furnace could flow underneath, warming the stone floor and walls of bathhouses and wealthy homes.",
-          "source_context": "Uncovered beneath the floors of Chedworth Roman Villa in Gloucestershire and Aquae Sulis in Bath, these rows of stacked clay tiles were called pilae."
+          "model_answer": "Source C shows rows of stacked brick tiles (pilae) holding up the floor so hot air from a wood furnace could flow underneath and warm the stone rooms.",
+          "source_context": "Public bathhouses like Aquae Sulis and wealthy villas used hypocaust heating: enslaved workers stoked a wood furnace so hot air flowed between brick tile stacks under the floor. **Hinge Question:** Who did the hard, smoky work needed to keep luxurious Roman bathhouses and villa floors warm?"
         },
         {
           "id": "ks2_romans_l5_src_d",
@@ -3613,14 +3803,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/fishbourne_cupid_dolphin_mosaic.jpg",
           "image": "/units/ks2_romans/assets/fishbourne_cupid_dolphin_mosaic.jpg",
           "title": "Source D: 'Cupid on a Dolphin' Floor Mosaic at Fishbourne Roman Palace, Sussex (c. AD 160)",
-          "caption": "Intricate Roman floor mosaic at Fishbourne Palace near Chichester, made from over 360,000 tiny coloured stone and tile cubes (tesserae) showing winged Cupid riding a dolphin.",
+          "caption": "Roman floor mosaic at Fishbourne Palace in Sussex, made from tiny coloured stone cubes (tesserae) showing winged Cupid riding a dolphin.",
           "author": "Master Mosaic Craftspeople at Fishbourne Palace",
           "date": "c. AD 160",
-          "context": "Laid inside the grand stone palace at Fishbourne in West Sussex around AD 75, this famous floor depicts Cupid riding a dolphin across tiny stone cubes (tesserae).",
+          "context": "Wealthy leaders decorated stone villas like Fishbourne Palace with mosaic floors, while almost nine out of ten country Britons kept living in thatched roundhouses.",
           "question_badge": "360,000 TINY TESSERAE CUBES",
           "question": "What does Source D show about rich villa owners, and why shouldn't we assume every Briton lived like this?",
-          "model_answer": "Source D shows a dazzling floor picture made from thousands of tiny coloured tesserae cubes, proving rich villa owners lived in grand Roman style — yet historians know almost nine out of ten ordinary Britons still farmed in countryside roundhouses.",
-          "source_context": "Laid inside the grand stone palace at Fishbourne in West Sussex around AD 75, this famous floor depicts Cupid riding a dolphin across tiny stone cubes (tesserae)."
+          "model_answer": "Source D shows a detailed floor picture of tiny coloured stone cubes in a rich palace — yet historians know almost nine out of ten Britons still farmed in thatched roundhouses.",
+          "source_context": "Wealthy leaders decorated stone villas like Fishbourne Palace with mosaic floors, while almost nine out of ten country Britons kept living in thatched roundhouses. **Hinge Question:** Does a grand mosaic floor at Fishbourne Palace prove that EVERY family in Roman Britain lived in luxury?"
         }
       ],
       "tasks": [
@@ -3712,12 +3902,12 @@ window.UNIT_DATA = {
           "question": "What wooden sighting tool did Roman surveyors use to line up dead-straight highways?",
           "q": "What wooden sighting tool did Roman surveyors use to line up dead-straight highways?",
           "options": [
-            "A bronze strigil",
             "A groma",
+            "A bronze strigil",
             "A hypocaust",
             "A gladius"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "A groma",
           "a": "A groma",
           "explanation": "Roman surveyors used a wooden sighting cross with hanging weights called a groma to plot dead-straight roads."
@@ -3729,10 +3919,10 @@ window.UNIT_DATA = {
           "options": [
             "500 miles",
             "1,200 miles",
-            "10,000 miles",
-            "50,000 miles"
+            "50,000 miles",
+            "10,000 miles"
           ],
-          "correct": 2,
+          "correct": 3,
           "answer": "10,000 miles",
           "a": "10,000 miles",
           "explanation": "Roman engineers and legionaries laid around 10,000 miles of layered stone highways across Britain."
@@ -3742,12 +3932,12 @@ window.UNIT_DATA = {
           "question": "Why were Roman road surfaces cambered (gently curved) with deep ditches along both sides?",
           "q": "Why were Roman road surfaces cambered (gently curved) with deep ditches along both sides?",
           "options": [
-            "So rainwater drained off and carts could move in all weathers",
-            "To stop horses galloping too quickly",
             "To trap enemy chariots in puddles",
+            "To stop horses galloping too quickly",
+            "So rainwater drained off and carts could move in all weathers",
             "To grow cabbages along the middle of the road"
           ],
-          "correct": 0,
+          "correct": 2,
           "answer": "So rainwater drained off and carts could move in all weathers",
           "a": "So rainwater drained off and carts could move in all weathers",
           "explanation": "A gently curved (cambered) stone surface and side ditches drained rainwater away so roads did not turn to mud."
@@ -3766,6 +3956,21 @@ window.UNIT_DATA = {
           "answer": "The forum",
           "a": "The forum",
           "explanation": "Every planned Roman town had a central open marketplace called a forum bordered by shops and a basilica town hall."
+        },
+        {
+          "stage": 1,
+          "question": "What crowds cheered inside oval stone amphitheatres like Caerleon in South Wales?",
+          "q": "What crowds cheered inside oval stone amphitheatres like Caerleon in South Wales?",
+          "options": [
+            "Steam train races",
+            "Gladiator shows and military parades",
+            "Jousting medieval knights",
+            "Olympic ski jumping"
+          ],
+          "correct": 1,
+          "answer": "Gladiator shows and military parades",
+          "a": "Gladiator shows and military parades",
+          "explanation": "Oval stone amphitheatres like Caerleon held thousands of townspeople and soldiers cheering gladiator bouts."
         },
         {
           "stage": 2,
@@ -3789,10 +3994,10 @@ window.UNIT_DATA = {
           "options": [
             "Camulodunum",
             "Eboracum",
-            "Aquae Sulis",
-            "Vindolanda"
+            "Vindolanda",
+            "Aquae Sulis"
           ],
-          "correct": 2,
+          "correct": 3,
           "answer": "Aquae Sulis",
           "a": "Aquae Sulis",
           "explanation": "The Romans built a magnificent temple and steaming bath complex called Aquae Sulis around the hot springs at Bath."
@@ -3802,12 +4007,12 @@ window.UNIT_DATA = {
           "question": "How did a Roman hypocaust warm bathhouses and wealthy villa rooms?",
           "q": "How did a Roman hypocaust warm bathhouses and wealthy villa rooms?",
           "options": [
-            "Hot air from a wood furnace blew under floors raised on stacks of brick tiles (pilae)",
-            "Glass mirrors reflected sunshine onto stone walls",
             "Bonfires were lit right in the middle of mosaic carpets",
+            "Glass mirrors reflected sunshine onto stone walls",
+            "Hot air from a wood furnace blew under floors raised on stacks of brick tiles (pilae)",
             "Boiling water was poured over woollen curtains"
           ],
-          "correct": 0,
+          "correct": 2,
           "answer": "Hot air from a wood furnace blew under floors raised on stacks of brick tiles (pilae)",
           "a": "Hot air from a wood furnace blew under floors raised on stacks of brick tiles (pilae)",
           "explanation": "In a hypocaust, enslaved workers fed a furnace so hot air circulated beneath raised floors supported on brick pilae stacks."
@@ -3818,26 +4023,41 @@ window.UNIT_DATA = {
           "q": "Instead of soap, what tool did Roman bathers use to scrape perfumed olive oil and dirt from their skin?",
           "options": [
             "A wooden groma",
-            "A curved bronze strigil",
             "A sea sponge on a spear",
+            "A curved bronze strigil",
             "A silver dinner spoon"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "A curved bronze strigil",
           "a": "A curved bronze strigil",
           "explanation": "Bathers rubbed olive oil onto their skin in the hot room and scraped oil, sweat, and dirt away with a curved bronze strigil."
+        },
+        {
+          "stage": 2,
+          "question": "Who did the hot, smoky work of stoking wood furnaces to keep Roman hypocaust floors warm?",
+          "q": "Who did the hot, smoky work of stoking wood furnaces to keep Roman hypocaust floors warm?",
+          "options": [
+            "Roman emperors visiting from Italy",
+            "Enslaved workers",
+            "Celtic Druids from Anglesey",
+            "Wealthy villa guests"
+          ],
+          "correct": 1,
+          "answer": "Enslaved workers",
+          "a": "Enslaved workers",
+          "explanation": "Enslaved workers kept wood furnaces roaring so hot air flowed between the brick pilae stacks underneath."
         },
         {
           "stage": 3,
           "question": "What were the thousands of tiny coloured stone cubes pressed into mortar to make a Roman mosaic floor called?",
           "q": "What were the thousands of tiny coloured stone cubes pressed into mortar to make a Roman mosaic floor called?",
           "options": [
-            "Pilae",
             "Tesserae",
+            "Pilae",
             "Castra",
             "Vici"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "Tesserae",
           "a": "Tesserae",
           "explanation": "Craftspeople cut thousands of tiny coloured stone and tile cubes called tesserae to create detailed mosaic pictures."
@@ -3848,11 +4068,11 @@ window.UNIT_DATA = {
           "q": "Which grand Roman villa palace in Sussex is famous for its mosaic of Cupid riding a dolphin?",
           "options": [
             "Housesteads Fort",
-            "Fishbourne Palace",
+            "Caerleon",
             "Maiden Castle",
-            "Caerleon"
+            "Fishbourne Palace"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Fishbourne Palace",
           "a": "Fishbourne Palace",
           "explanation": "Fishbourne Roman Palace in Sussex features magnificent mosaic floors including Cupid riding a dolphin (c. AD 160)."
@@ -3863,11 +4083,11 @@ window.UNIT_DATA = {
           "q": "Along with grapes, cherries, and walnuts, what was garum — a popular flavouring brought by the Romans?",
           "options": [
             "Sweet heather honey",
-            "Salty Roman fish sauce",
+            "Melted goat cheese",
             "Spiced apple cider",
-            "Melted goat cheese"
+            "Salty Roman fish sauce"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Salty Roman fish sauce",
           "a": "Salty Roman fish sauce",
           "explanation": "Garum was a pungent, salty fermented fish sauce used by Romans to flavour rich banquet dishes."
@@ -3878,14 +4098,29 @@ window.UNIT_DATA = {
           "q": "How did almost nine out of ten ordinary Britons continue to live during the Roman period?",
           "options": [
             "Inside marble palaces with swimming pools",
-            "Farming in the countryside in thatched roundhouses while paying Roman taxes",
             "Inside stone amphitheatres in Wales",
+            "Farming in the countryside in thatched roundhouses while paying Roman taxes",
             "Sailing cargo ships back and forth to Italy"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Farming in the countryside in thatched roundhouses while paying Roman taxes",
           "a": "Farming in the countryside in thatched roundhouses while paying Roman taxes",
           "explanation": "Almost nine out of ten Britons carried on farming in rural thatched roundhouses and speaking Celtic while paying Roman taxes."
+        },
+        {
+          "stage": 3,
+          "question": "Which everyday language did most countryside farming families in Britain keep speaking under Roman rule?",
+          "q": "Which everyday language did most countryside farming families in Britain keep speaking under Roman rule?",
+          "options": [
+            "Ancient Egyptian",
+            "Celtic languages",
+            "Modern English",
+            "Norse"
+          ],
+          "correct": 1,
+          "answer": "Celtic languages",
+          "a": "Celtic languages",
+          "explanation": "While towns and officials used Latin, most rural farming families kept speaking Celtic in their roundhouses."
         }
       ],
       "video": [
@@ -3915,7 +4150,7 @@ window.UNIT_DATA = {
             "trigger": "Using a wooden groma, Romans laid 10,000 miles of cambered stone roads linking walled grid towns with forums, basilicas, and amphitheatres like Caerleon.",
             "connective": "Connected forts and markets in all weathers and created Britain's first stone towns.",
             "question": "How did Roman roads and market forums transform travel and trade?",
-            "prose_hash": "7fbdadfc58"
+            "prose_hash": "c4fdd8ca24"
           },
           {
             "step": 2,
@@ -3927,7 +4162,7 @@ window.UNIT_DATA = {
             "trigger": "Aqueducts and lead pipes fed fountains and bathhouses like Aquae Sulis, heated underneath by furnace-fed hypocaust pilae while bathers used bronze strigils.",
             "connective": "Brought running water, sewers, and underfloor central heating to urban Britain.",
             "question": "How did aqueducts and hypocausts work inside Roman bathhouses?",
-            "prose_hash": "a3e0d18901"
+            "prose_hash": "7c97e411d5"
           },
           {
             "step": 3,
@@ -3939,7 +4174,7 @@ window.UNIT_DATA = {
             "trigger": "Rich elites built mosaic villas like Fishbourne Palace and ate cherries and garum, yet almost nine in ten Britons kept farming in thatched roundhouses.",
             "connective": "Showed striking luxury for a wealthy few alongside deep continuity in the countryside.",
             "question": "Did life change equally for rich villa owners and rural British farmers?",
-            "prose_hash": "d789885b61"
+            "prose_hash": "c98289f1c2"
           }
         ]
       },
@@ -3971,7 +4206,7 @@ window.UNIT_DATA = {
           "dates": "1st–2nd Century AD",
           "para_ref": "[5.1]",
           "paraRef": "[5.1]",
-          "prose_hash": "7fbdadfc58"
+          "prose_hash": "c4fdd8ca24"
         },
         {
           "step": 2,
@@ -4000,7 +4235,7 @@ window.UNIT_DATA = {
           "dates": "1st–4th Century AD",
           "para_ref": "[5.3]",
           "paraRef": "[5.3]",
-          "prose_hash": "a3e0d18901"
+          "prose_hash": "7c97e411d5"
         },
         {
           "step": 3,
@@ -4029,7 +4264,7 @@ window.UNIT_DATA = {
           "dates": "AD 100–400",
           "para_ref": "[5.5]",
           "paraRef": "[5.5]",
-          "prose_hash": "d789885b61"
+          "prose_hash": "c98289f1c2"
         }
       ],
       "card_position": "center 62%",
@@ -4038,15 +4273,16 @@ window.UNIT_DATA = {
         "caption": "Excavated Stone Granaries, Columns, and Paved Main Street at Corbridge Roman Town (Coria), Northumberland",
         "position": "center 56%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l5_banner_corbridge_roman_town.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l5_banner_corbridge_roman_town.jpg",
+      "enquiry": "How did Roman roads, baths, and towns change life in Britain?"
     },
     {
       "id": "lesson_6",
       "skill": "Historical Significance & Legacy",
-      "title": "Enquiry 6: Farewell to the Legions — What Was Rome's Lasting Legacy? (AD 410 & Beyond)",
+      "title": "Enquiry 6: Farewell to the Legions & Roman Legacy (AD 410 & Beyond)",
       "subtitle": "Emperor Honorius's Reply, Buried Silver Hoards & Roman Clues All Around Us Today",
-      "enquiryQuestion": "Why did the Roman army leave Britain around AD 410, and what did the Romans leave behind for us today?",
-      "enquiry_question": "Why did the Roman army leave Britain around AD 410, and what did the Romans leave behind for us today?",
+      "enquiryQuestion": "Why did the Romans leave Britain, and what did they leave behind?",
+      "enquiry_question": "Why did the Romans leave Britain, and what did they leave behind?",
       "prologue": "By AD 410, raiders struck every coast and Emperor Honorius told Britain's towns they must defend themselves! Families buried chests of glittering silver underground as bathhouses crumbled — yet from London and straight A-roads to our ABC alphabet, July, apples, and rabbits, Roman clues still surround us every single day.",
       "blurb": "By AD 410, raiders struck every coast and Emperor Honorius told Britain's towns they must defend themselves! Families buried chests of glittering silver underground as bathhouses crumbled — yet from London and straight A-roads to our ABC alphabet, July, apples, and rabbits, Roman clues still surround us every single day.",
       "hero_image": "/images/upgraded/ks2-ancient/romans_l6_banner_burgh_castle_fort.jpg",
@@ -4072,10 +4308,10 @@ window.UNIT_DATA = {
           }
         ],
         "source_context": {
-          "Source A": "By AD 410, Visigoth armies were attacking Italy itself while Picts, Scotti, Angles, and Saxons raided Britain. With no spare legions left, Emperor Honorius wrote telling British cities to defend themselves. **Hinge Question:** Did the Romans leave Britain in AD 410 because Britain defeated them, or because Rome itself was in terrible danger?",
-          "Source B": "Packed neatly inside a wooden chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and only rediscovered in 1992 when a farmer searched a Suffolk field for a lost hammer! **Hinge Question:** What does the fact that nobody ever came back to dig up the Hoxne Hoard suggest about Britain around AD 410?",
-          "Source C": "Discovered in Suffolk in 1942 alongside 33 other silver spoons, bowls, and platters, the Great Dish of the Mildenhall Treasure shows both dazzling 4th-century wealth and the sudden fear that drove families to bury silver hoards. **Hinge Question:** Why did so many buried silver hoards turn up in eastern Britain near the North Sea coast?",
-          "Source D": "Built with neat courses of small limestone blocks and red tile bands around AD 306, York's Multangular Tower is a visible reminder that Britain's major cities, roads, language, and calendar still stand on Roman foundations today. **Hinge Question:** Which Roman legacy affects your own life more every day: surviving stone towers like Source D, or invisible legacies like our ABC alphabet and calendar?"
+          "Source A": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send. **Hinge Question:** Did the Romans leave Britain in AD 410 because Britain defeated them, or because Rome itself was in danger?",
+          "Source B": "Packed inside an oak chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and found in 1992 by a Suffolk farmer. **Hinge Question:** What does the fact that nobody ever came back to dig up the Hoxne Hoard suggest about Britain around AD 410?",
+          "Source C": "Found in Suffolk in 1942 alongside 33 silver spoons and bowls, the Great Dish of the Mildenhall Treasure shows both rich villa wealth and the fear of coastal raids. **Hinge Question:** Why did so many buried Roman silver hoards turn up in eastern Britain near the North Sea coast?",
+          "Source D": "Built of neat limestone blocks and red tile bands around AD 306, York's Multangular Tower reminds us that Britain's cities, roads, alphabet, and calendar stand on Roman roots. **Hinge Question:** Which Roman legacy shapes your own life more every day: stone towers like Source D, or our ABC alphabet and calendar?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -4246,11 +4482,11 @@ window.UNIT_DATA = {
         {
           "act": 1,
           "title": "Raiders on Every Coast & Leaving in AD 410",
-          "text": "<span class=\"para-ref\">[6.1]</span> After nearly four centuries of rule, the mighty **Roman Empire** faced fierce attacks everywhere at once. Around **AD 400**, **Picts** from Scotland, **Scotti** from Ireland, and seafaring **Angles and Saxons** raided Britain's coasts and villages. At the very same time, **Visigoth** armies invaded **Italy** and threatened the city of **Rome** itself.<br><br><span class=\"para-ref\">[6.2]</span> One by one, Roman legions marched away from Britain and sailed across the Channel to defend the Empire. Worried British town leaders wrote begging for military help in **AD 410**. **Emperor Honorius** sent a famous reply warning that Rome had no spare troops left, so **British towns must defend themselves**.",
-          "content": "<span class=\"para-ref\">[6.1]</span> After nearly four centuries of rule, the mighty **Roman Empire** faced fierce attacks everywhere at once. Around **AD 400**, **Picts** from Scotland, **Scotti** from Ireland, and seafaring **Angles and Saxons** raided Britain's coasts and villages. At the very same time, **Visigoth** armies invaded **Italy** and threatened the city of **Rome** itself.<br><br><span class=\"para-ref\">[6.2]</span> One by one, Roman legions marched away from Britain and sailed across the Channel to defend the Empire. Worried British town leaders wrote begging for military help in **AD 410**. **Emperor Honorius** sent a famous reply warning that Rome had no spare troops left, so **British towns must defend themselves**.",
+          "text": "<span class=\"para-ref\">[6.1]</span> Around **AD 400**, after nearly four hundred years in Britain, the **Roman Empire** faced fierce attacks everywhere. **Picts** from Scotland, **Scotti** from Ireland, and seafaring **Angles and Saxons** raided Britain's coasts. Meanwhile, **Visigoth** [VIZ-ih-goth] armies invaded **Italy** and threatened **Rome** itself.<br><br><span class=\"para-ref\">[6.2]</span> Roman legions sailed away across the Channel to defend Italy. When worried British towns begged for help in **AD 410**, **Emperor Honorius** [hoh-NOR-ee-us] replied that Rome had no spare soldiers left, so **British towns must defend themselves**.",
+          "content": "<span class=\"para-ref\">[6.1]</span> Around **AD 400**, after nearly four hundred years in Britain, the **Roman Empire** faced fierce attacks everywhere. **Picts** from Scotland, **Scotti** from Ireland, and seafaring **Angles and Saxons** raided Britain's coasts. Meanwhile, **Visigoth** [VIZ-ih-goth] armies invaded **Italy** and threatened **Rome** itself.<br><br><span class=\"para-ref\">[6.2]</span> Roman legions sailed away across the Channel to defend Italy. When worried British towns begged for help in **AD 410**, **Emperor Honorius** [hoh-NOR-ee-us] replied that Rome had no spare soldiers left, so **British towns must defend themselves**.",
           "image": "/units/ks2_romans/assets/pevensey_roman_saxon_shore_fort.jpg",
           "image_alt": "Ten-sided Roman stone Multangular Tower standing at Eboracum in York",
-          "caption": "Massive late-Roman stone walls of the Saxon Shore fort at Pevensey (Anderitum), built to defend southern Britain against seaborne raiders.",
+          "caption": "Massive late-Roman stone walls of the coastal fort at Pevensey, built to guard southern Britain against sea raiders.",
           "isReversed": false,
           "sources": [
             {
@@ -4261,27 +4497,28 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/honorius_gold_solidus_coin.jpg",
               "image": "/units/ks2_romans/assets/honorius_gold_solidus_coin.jpg",
               "title": "Source A: Gold Solidus Coin of Emperor Honorius & Zosimus's Account of AD 410",
-              "caption": "Gold solidus coin struck for Western Roman Emperor Honorius (reigned AD 395–423), whose AD 410 letter warned British towns to look to their own defence.",
+              "caption": "Gold coin struck for Emperor Honorius, whose AD 410 letter warned British towns to look after their own defence.",
               "author": "Imperial Mint of Honorius & Ancient Historian Zosimus (New History VI.10)",
               "date": "c. AD 395–410",
-              "context": "Minted during the final years of Roman rule in Britain, this gold solidus coin shows Western Roman Emperor Honorius alongside Greek historian Zosimus's account of AD 410.",
+              "context": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send.",
               "question_badge": "EMPEROR HONORIUS IN AD 410",
               "question": "Read Zosimus's words beside Emperor Honorius's gold coin in Source A. Why couldn't Honorius send legions to Britain in AD 410?",
-              "model_answer": "Source A shows that Emperor Honorius had to tell British towns to guard themselves because enemy armies like the Visigoths were attacking Italy and Rome itself, leaving no spare soldiers to send back across the Channel.",
-              "source_context": "Minted during the final years of Roman rule in Britain, this gold solidus coin shows Western Roman Emperor Honorius alongside Greek historian Zosimus's account of AD 410.",
-              "text": "Direct translation from the ancient Greek of Zosimus, New History (Historia Nova VI.10.2): \"Honorius wrote letters to the cities in Britain, bidding them to guard themselves and look to their own safety.\"",
-              "provenance": "Gold Solidus of Emperor Honorius (c. AD 395–410) paired with Zosimus, Historia Nova Book VI, Chapter 10.2 (public-domain ancient Greek text; fresh direct English translation)."
+              "model_answer": "Source A shows enemy armies were attacking the Empire everywhere, including Italy itself, so Honorius had no spare troops and told British towns to guard themselves.",
+              "source_context": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send. **Hinge Question:** Did the Romans leave Britain in AD 410 because Britain defeated them, or because Rome itself was in danger?",
+              "text": "Zosimus on AD 410: \"The barbarians above the Rhine attacked everywhere at once, and Honorius wrote letters to the cities in Britain, bidding them to guard themselves and look to their own safety.\"<br><br><strong>In plain words:</strong> Because enemy armies were attacking the Roman Empire on every side, Emperor Honorius wrote to British towns in AD 410 warning that they had to protect themselves!",
+              "provenance": "Gold coin of Emperor Honorius paired with Greek historian Zosimus, New History (5th century AD)."
             }
-          ]
+          ],
+          "image_caption": "Massive late-Roman stone walls of the coastal fort at Pevensey, built to guard southern Britain against sea raiders."
         },
         {
           "act": 2,
           "title": "Buried Silver Treasure & Crumbling Bathhouses",
-          "text": "<span class=\"para-ref\">[6.3]</span> Once the Roman army left Britain, fresh shipments of **Roman coins** stopped arriving to pay soldiers' wages. Busy town markets quickly shrank, and potters' workshops closed their doors. Nobody repaired leaky stone aqueducts, **hypocausts**, or public bathhouses. Soon those grand Roman buildings crumbled into silent, overgrown ruins.<br><br><span class=\"para-ref\">[6.4]</span> Fearing coastal raiders, anxious rich families buried chests of gold coins, silver spoons, and pepper pots underground as a **hoard**. They hoped to dig their precious silver back up when peace returned, yet many owners never came home. Centuries later, Suffolk farmers ploughing fields unearthed glittering treasures like the **Hoxne Hoard** and the **Mildenhall Treasure**.",
-          "content": "<span class=\"para-ref\">[6.3]</span> Once the Roman army left Britain, fresh shipments of **Roman coins** stopped arriving to pay soldiers' wages. Busy town markets quickly shrank, and potters' workshops closed their doors. Nobody repaired leaky stone aqueducts, **hypocausts**, or public bathhouses. Soon those grand Roman buildings crumbled into silent, overgrown ruins.<br><br><span class=\"para-ref\">[6.4]</span> Fearing coastal raiders, anxious rich families buried chests of gold coins, silver spoons, and pepper pots underground as a **hoard**. They hoped to dig their precious silver back up when peace returned, yet many owners never came home. Centuries later, Suffolk farmers ploughing fields unearthed glittering treasures like the **Hoxne Hoard** and the **Mildenhall Treasure**.",
+          "text": "<span class=\"para-ref\">[6.3]</span> Once the Roman army left Britain, fresh **Roman coins** stopped arriving to pay soldiers' **wages**. Busy town markets shrank and pottery workshops closed their doors. Nobody fixed leaky stone **aqueducts**, **hypocausts**, or **bathhouses**, so grand buildings slowly **crumbled** into silent ruins.<br><br><span class=\"para-ref\">[6.4]</span> Fearing coastal raiders, rich families buried wooden chests of gold coins, spoons, and silver plates underground in a secret **hoard**. Many owners never came home! Centuries later, **Suffolk** farmers ploughed up the glittering **Hoxne Hoard** [HOKS-un] and **Mildenhall Treasure**.",
+          "content": "<span class=\"para-ref\">[6.3]</span> Once the Roman army left Britain, fresh **Roman coins** stopped arriving to pay soldiers' **wages**. Busy town markets shrank and pottery workshops closed their doors. Nobody fixed leaky stone **aqueducts**, **hypocausts**, or **bathhouses**, so grand buildings slowly **crumbled** into silent ruins.<br><br><span class=\"para-ref\">[6.4]</span> Fearing coastal raiders, rich families buried wooden chests of gold coins, spoons, and silver plates underground in a secret **hoard**. Many owners never came home! Centuries later, **Suffolk** farmers ploughed up the glittering **Hoxne Hoard** [HOKS-un] and **Mildenhall Treasure**.",
           "image": "/units/ks2_romans/assets/constantine_statue_york_minster.jpg",
           "image_alt": "Carved solid silver Great Dish from the Mildenhall Treasure found in Suffolk",
-          "caption": "Monument to Roman Emperor Constantine the Great at Eboracum (York), reminding us of nearly four centuries of imperial rule before AD 410.",
+          "caption": "Bronze monument to Roman Emperor Constantine the Great at York (Eboracum), recalling nearly four centuries of Roman rule.",
           "isReversed": true,
           "sources": [
             {
@@ -4292,14 +4529,14 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/hoxne_hoard_empress_pepper_pot.jpg",
               "image": "/units/ks2_romans/assets/hoxne_hoard_empress_pepper_pot.jpg",
               "title": "Source B: Silver 'Empress' Pepper Pot from the Hoxne Hoard, Suffolk (Buried After AD 407)",
-              "caption": "Gilded silver pepper pot shaped like a wealthy Roman lady from the Hoxne Hoard — buried inside an oak chest in Suffolk with over 15,000 gold and silver coins after AD 407 (British Museum).",
+              "caption": "Gilded silver pepper pot shaped like a wealthy Roman lady from the Hoxne Hoard, buried inside an oak chest in Suffolk with over 15,000 coins.",
               "author": "Late Roman Silversmith (Buried near Hoxne, Suffolk)",
               "date": "Buried after AD 407 (Found 1992)",
-              "context": "Packed neatly inside a wooden chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and only rediscovered in 1992 when a farmer searched a Suffolk field for a lost hammer!",
+              "context": "Packed inside an oak chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and found in 1992 by a Suffolk farmer.",
               "question_badge": "15,000 COINS & SILVER PEPPER POT",
               "question": "Inspect the silver pepper pot in Source B. Why did a rich family bury it after AD 407, and what does its discovery prove?",
-              "model_answer": "Source B shows a costly silver spice pot buried carefully with thousands of coins to keep it safe from raiders as Roman rule collapsed — and because the owners never returned to dig it up, historians can see how uncertain and dangerous the early 400s became.",
-              "source_context": "Packed neatly inside a wooden chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and only rediscovered in 1992 when a farmer searched a Suffolk field for a lost hammer!"
+              "model_answer": "A wealthy family buried this costly silver spice pot with thousands of coins to hide it from raiders, and never returning for it shows how dangerous the early 400s became.",
+              "source_context": "Packed inside an oak chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and found in 1992 by a Suffolk farmer. **Hinge Question:** What does the fact that nobody ever came back to dig up the Hoxne Hoard suggest about Britain around AD 410?"
             },
             {
               "id": "ks2_romans_l6_src_c",
@@ -4309,26 +4546,26 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/mildenhall_great_silver_dish.jpg",
               "image": "/units/ks2_romans/assets/mildenhall_great_silver_dish.jpg",
               "title": "Source C: The Great Silver Dish of the Mildenhall Treasure, Suffolk (4th Century AD)",
-              "caption": "Magnificent 60-centimetre solid silver banquet dish weighing over 8 kilograms, carved with sea-gods and dancing figures, ploughed up by a Suffolk farmer in 1942 (British Museum).",
+              "caption": "Solid silver banquet dish weighing over 8 kilograms from the Mildenhall Treasure, ploughed up by a Suffolk farmer in 1942.",
               "author": "Roman Master Silversmith (Mildenhall Treasure, Suffolk)",
               "date": "4th Century AD",
-              "context": "Discovered in Suffolk in 1942 alongside 33 other silver spoons, bowls, and platters, the Great Dish of the Mildenhall Treasure shows both dazzling 4th-century wealth and the sudden fear that drove families to bury silver hoards.",
+              "context": "Found in Suffolk in 1942 alongside 33 silver spoons and bowls, the Great Dish of the Mildenhall Treasure shows both rich villa wealth and the fear of coastal raids.",
               "question_badge": "8KG SOLID SILVER BANQUET DISH",
               "question": "What two stories does the Mildenhall Great Dish in Source C tell: first when it was made, and second when it was buried?",
-              "model_answer": "When it was made, the gleaming 8-kilogram silver dish proved how fabulously rich some 4th-century Romano-British villa families were; when it was buried underground in Suffolk, it showed how frightened they felt as North Sea raiders struck and Roman legions left.",
-              "source_context": "Discovered in Suffolk in 1942 alongside 33 other silver spoons, bowls, and platters, the Great Dish of the Mildenhall Treasure shows both dazzling 4th-century wealth and the sudden fear that drove families to bury silver hoards."
+              "model_answer": "When made, the heavy silver dish showed how rich some Romano-British villa families were; when buried in Suffolk, it showed their fear as raiders struck and legions left.",
+              "source_context": "Found in Suffolk in 1942 alongside 33 silver spoons and bowls, the Great Dish of the Mildenhall Treasure shows both rich villa wealth and the fear of coastal raids. **Hinge Question:** Why did so many buried Roman silver hoards turn up in eastern Britain near the North Sea coast?"
             }
           ],
-          "image_caption": "Massive late-Roman stone walls of the Saxon Shore fort at Pevensey (Anderitum), built to defend southern Britain against seaborne raiders. (CC BY-SA 3.0, Pevensey_Castle_aerial_view.jpg : Lieven Smits derivative work: Hchc2009 ( talk ))."
+          "image_caption": "Bronze monument to Roman Emperor Constantine the Great at York (Eboracum), recalling nearly four centuries of Roman rule."
         },
         {
           "act": 3,
           "title": "Roman Footprints Still Shaping Britain Today",
-          "text": "<span class=\"para-ref\">[6.5]</span> Even though the legions marched away, Rome's lasting **legacy** still shapes Britain all around us today. Bustling **Londinium** grew into our capital city **London**, and modern **A-roads** still follow straight Roman highways. Town names ending in **-chester** or **-caster**, such as Manchester and Lancaster, mark old Roman army forts (**castra**).<br><br><span class=\"para-ref\">[6.6]</span> Every single day we write using the **Latin** **ABC alphabet** and read **Roman numerals** (**I, V, X**) on clockfaces. Our **12-month calendar** still names **July** (Julius Caesar) and **August** (Emperor Augustus) after famous Roman leaders. Rome even brought **Christianity**, written laws, sweet **apples**, **cabbages**, **rabbits**, and **stinging nettles** to Britain!",
-          "content": "<span class=\"para-ref\">[6.5]</span> Even though the legions marched away, Rome's lasting **legacy** still shapes Britain all around us today. Bustling **Londinium** grew into our capital city **London**, and modern **A-roads** still follow straight Roman highways. Town names ending in **-chester** or **-caster**, such as Manchester and Lancaster, mark old Roman army forts (**castra**).<br><br><span class=\"para-ref\">[6.6]</span> Every single day we write using the **Latin** **ABC alphabet** and read **Roman numerals** (**I, V, X**) on clockfaces. Our **12-month calendar** still names **July** (Julius Caesar) and **August** (Emperor Augustus) after famous Roman leaders. Rome even brought **Christianity**, written laws, sweet **apples**, **cabbages**, **rabbits**, and **stinging nettles** to Britain!",
+          "text": "<span class=\"para-ref\">[6.5]</span> Even after the legions left, Rome left a lasting **legacy** all around us today. **Londinium** grew into **London**, and straight modern **A-roads** follow old Roman highways. Town names ending in **-chester** or **-caster**, like Manchester and Lancaster, mark Roman army forts (**castra** [KAS-truh]).<br><br><span class=\"para-ref\">[6.6]</span> Every day we write with the **Latin** **ABC alphabet** and read **Roman numerals** (**I, V, X**) on clocks. Our **12-month calendar** names **July** and **August** after Roman leaders, and Rome brought **Christianity**, **apples**, **cabbages**, **rabbits**, and **stinging nettles**!",
+          "content": "<span class=\"para-ref\">[6.5]</span> Even after the legions left, Rome left a lasting **legacy** all around us today. **Londinium** grew into **London**, and straight modern **A-roads** follow old Roman highways. Town names ending in **-chester** or **-caster**, like Manchester and Lancaster, mark Roman army forts (**castra** [KAS-truh]).<br><br><span class=\"para-ref\">[6.6]</span> Every day we write with the **Latin** **ABC alphabet** and read **Roman numerals** (**I, V, X**) on clocks. Our **12-month calendar** names **July** and **August** after Roman leaders, and Rome brought **Christianity**, **apples**, **cabbages**, **rabbits**, and **stinging nettles**!",
           "image": "/units/ks2_romans/assets/roman_britain_map_ks2.png",
           "image_alt": "Decorated bronze Roman parade cavalry helmet discovered at Ribchester in Lancashire",
-          "caption": "Map of Roman Britain showing straight Roman roads, Hadrian's Wall, and fortress towns (-chester / castra) that still shape modern Britain.",
+          "caption": "Map of Roman Britain showing straight Roman highways, Hadrian's Wall, and fortress towns (-chester / castra) that still shape Britain today.",
           "isReversed": false,
           "sources": [
             {
@@ -4339,17 +4576,17 @@ window.UNIT_DATA = {
               "src": "/units/ks2_romans/assets/york_roman_multangular_tower.jpg",
               "image": "/units/ks2_romans/assets/york_roman_multangular_tower.jpg",
               "title": "Source D: The Roman Multangular Tower at Eboracum (York), Built c. AD 306",
-              "caption": "Ten-sided Roman stone corner tower of the legionary fortress at Eboracum (modern York), still standing tall in York Museum Gardens nearly 1,700 years after it was built.",
+              "caption": "Ten-sided Roman stone corner tower at Eboracum (modern York), still standing tall nearly 1,700 years after it was built.",
               "author": "Roman Fortress Masons at Eboracum (York)",
               "date": "c. AD 306",
-              "context": "Built with neat courses of small limestone blocks and red tile bands around AD 306, York's Multangular Tower is a visible reminder that Britain's major cities, roads, language, and calendar still stand on Roman foundations today.",
+              "context": "Built of neat limestone blocks and red tile bands around AD 306, York's Multangular Tower reminds us that Britain's cities, roads, alphabet, and calendar stand on Roman roots.",
               "question_badge": "STANDING FOR 1,700 YEARS",
               "question": "Look at the Roman tower in York in Source D. Besides stone walls and straight roads, what everyday legacies did Rome leave us?",
-              "model_answer": "Alongside tough stone fortress towers like York's Multangular Tower and straight A-roads, the Romans left us cities like London (Londinium) and -chester fort towns, our Latin ABC alphabet, Roman numerals (I, V, X), the 12-month calendar (July and August), Christianity, and foods like apples and cabbages.",
-              "source_context": "Built with neat courses of small limestone blocks and red tile bands around AD 306, York's Multangular Tower is a visible reminder that Britain's major cities, roads, language, and calendar still stand on Roman foundations today."
+              "model_answer": "Alongside stone walls and straight A-roads, Rome left us cities like London and -chester towns, our Latin ABC alphabet, Roman numerals (I, V, X), the 12-month calendar, Christianity, and apples and cabbages.",
+              "source_context": "Built of neat limestone blocks and red tile bands around AD 306, York's Multangular Tower reminds us that Britain's cities, roads, alphabet, and calendar stand on Roman roots. **Hinge Question:** Which Roman legacy shapes your own life more every day: stone towers like Source D, or our ABC alphabet and calendar?"
             }
           ],
-          "image_caption": "Monument to Roman Emperor Constantine the Great outside York Minster—proclaimed Emperor at Eboracum (York) in AD 306. (CC BY 3.0, Gernot Keller)."
+          "image_caption": "Map of Roman Britain showing straight Roman highways, Hadrian's Wall, and fortress towns (-chester / castra) that still shape Britain today."
         }
       ],
       "sources": [
@@ -4361,16 +4598,16 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/honorius_gold_solidus_coin.jpg",
           "image": "/units/ks2_romans/assets/honorius_gold_solidus_coin.jpg",
           "title": "Source A: Gold Solidus Coin of Emperor Honorius & Zosimus's Account of AD 410",
-          "caption": "Gold solidus coin struck for Western Roman Emperor Honorius (reigned AD 395–423), whose AD 410 letter warned British towns to look to their own defence.",
+          "caption": "Gold coin struck for Emperor Honorius, whose AD 410 letter warned British towns to look after their own defence.",
           "author": "Imperial Mint of Honorius & Ancient Historian Zosimus (New History VI.10)",
           "date": "c. AD 395–410",
-          "context": "Minted during the final years of Roman rule in Britain, this gold solidus coin shows Western Roman Emperor Honorius alongside Greek historian Zosimus's account of AD 410.",
+          "context": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send.",
           "question_badge": "EMPEROR HONORIUS IN AD 410",
           "question": "Read Zosimus's words beside Emperor Honorius's gold coin in Source A. Why couldn't Honorius send legions to Britain in AD 410?",
-          "model_answer": "Source A shows that Emperor Honorius had to tell British towns to guard themselves because enemy armies like the Visigoths were attacking Italy and Rome itself, leaving no spare soldiers to send back across the Channel.",
-          "source_context": "Minted during the final years of Roman rule in Britain, this gold solidus coin shows Western Roman Emperor Honorius alongside Greek historian Zosimus's account of AD 410.",
-          "text": "Direct translation from the ancient Greek of Zosimus, New History (Historia Nova VI.10.2): \"Honorius wrote letters to the cities in Britain, bidding them to guard themselves and look to their own safety.\"",
-          "provenance": "Gold Solidus of Emperor Honorius (c. AD 395–410) paired with Zosimus, Historia Nova Book VI, Chapter 10.2 (public-domain ancient Greek text; fresh direct English translation)."
+          "model_answer": "Source A shows enemy armies were attacking the Empire everywhere, including Italy itself, so Honorius had no spare troops and told British towns to guard themselves.",
+          "source_context": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send. **Hinge Question:** Did the Romans leave Britain in AD 410 because Britain defeated them, or because Rome itself was in danger?",
+          "text": "Zosimus on AD 410: \"The barbarians above the Rhine attacked everywhere at once, and Honorius wrote letters to the cities in Britain, bidding them to guard themselves and look to their own safety.\"<br><br><strong>In plain words:</strong> Because enemy armies were attacking the Roman Empire on every side, Emperor Honorius wrote to British towns in AD 410 warning that they had to protect themselves!",
+          "provenance": "Gold coin of Emperor Honorius paired with Greek historian Zosimus, New History (5th century AD)."
         },
         {
           "id": "ks2_romans_l6_src_b",
@@ -4380,14 +4617,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/hoxne_hoard_empress_pepper_pot.jpg",
           "image": "/units/ks2_romans/assets/hoxne_hoard_empress_pepper_pot.jpg",
           "title": "Source B: Silver 'Empress' Pepper Pot from the Hoxne Hoard, Suffolk (Buried After AD 407)",
-          "caption": "Gilded silver pepper pot shaped like a wealthy Roman lady from the Hoxne Hoard — buried inside an oak chest in Suffolk with over 15,000 gold and silver coins after AD 407 (British Museum).",
+          "caption": "Gilded silver pepper pot shaped like a wealthy Roman lady from the Hoxne Hoard, buried inside an oak chest in Suffolk with over 15,000 coins.",
           "author": "Late Roman Silversmith (Buried near Hoxne, Suffolk)",
           "date": "Buried after AD 407 (Found 1992)",
-          "context": "Packed neatly inside a wooden chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and only rediscovered in 1992 when a farmer searched a Suffolk field for a lost hammer!",
+          "context": "Packed inside an oak chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and found in 1992 by a Suffolk farmer.",
           "question_badge": "15,000 COINS & SILVER PEPPER POT",
           "question": "Inspect the silver pepper pot in Source B. Why did a rich family bury it after AD 407, and what does its discovery prove?",
-          "model_answer": "Source B shows a costly silver spice pot buried carefully with thousands of coins to keep it safe from raiders as Roman rule collapsed — and because the owners never returned to dig it up, historians can see how uncertain and dangerous the early 400s became.",
-          "source_context": "Packed neatly inside a wooden chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and only rediscovered in 1992 when a farmer searched a Suffolk field for a lost hammer!"
+          "model_answer": "A wealthy family buried this costly silver spice pot with thousands of coins to hide it from raiders, and never returning for it shows how dangerous the early 400s became.",
+          "source_context": "Packed inside an oak chest with gold bracelets, silver spoons, and over 15,000 coins, the Hoxne Hoard was buried after AD 407 and found in 1992 by a Suffolk farmer. **Hinge Question:** What does the fact that nobody ever came back to dig up the Hoxne Hoard suggest about Britain around AD 410?"
         },
         {
           "id": "ks2_romans_l6_src_c",
@@ -4397,14 +4634,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/mildenhall_great_silver_dish.jpg",
           "image": "/units/ks2_romans/assets/mildenhall_great_silver_dish.jpg",
           "title": "Source C: The Great Silver Dish of the Mildenhall Treasure, Suffolk (4th Century AD)",
-          "caption": "Magnificent 60-centimetre solid silver banquet dish weighing over 8 kilograms, carved with sea-gods and dancing figures, ploughed up by a Suffolk farmer in 1942 (British Museum).",
+          "caption": "Solid silver banquet dish weighing over 8 kilograms from the Mildenhall Treasure, ploughed up by a Suffolk farmer in 1942.",
           "author": "Roman Master Silversmith (Mildenhall Treasure, Suffolk)",
           "date": "4th Century AD",
-          "context": "Discovered in Suffolk in 1942 alongside 33 other silver spoons, bowls, and platters, the Great Dish of the Mildenhall Treasure shows both dazzling 4th-century wealth and the sudden fear that drove families to bury silver hoards.",
+          "context": "Found in Suffolk in 1942 alongside 33 silver spoons and bowls, the Great Dish of the Mildenhall Treasure shows both rich villa wealth and the fear of coastal raids.",
           "question_badge": "8KG SOLID SILVER BANQUET DISH",
           "question": "What two stories does the Mildenhall Great Dish in Source C tell: first when it was made, and second when it was buried?",
-          "model_answer": "When it was made, the gleaming 8-kilogram silver dish proved how fabulously rich some 4th-century Romano-British villa families were; when it was buried underground in Suffolk, it showed how frightened they felt as North Sea raiders struck and Roman legions left.",
-          "source_context": "Discovered in Suffolk in 1942 alongside 33 other silver spoons, bowls, and platters, the Great Dish of the Mildenhall Treasure shows both dazzling 4th-century wealth and the sudden fear that drove families to bury silver hoards."
+          "model_answer": "When made, the heavy silver dish showed how rich some Romano-British villa families were; when buried in Suffolk, it showed their fear as raiders struck and legions left.",
+          "source_context": "Found in Suffolk in 1942 alongside 33 silver spoons and bowls, the Great Dish of the Mildenhall Treasure shows both rich villa wealth and the fear of coastal raids. **Hinge Question:** Why did so many buried Roman silver hoards turn up in eastern Britain near the North Sea coast?"
         },
         {
           "id": "ks2_romans_l6_src_d",
@@ -4414,14 +4651,14 @@ window.UNIT_DATA = {
           "src": "/units/ks2_romans/assets/york_roman_multangular_tower.jpg",
           "image": "/units/ks2_romans/assets/york_roman_multangular_tower.jpg",
           "title": "Source D: The Roman Multangular Tower at Eboracum (York), Built c. AD 306",
-          "caption": "Ten-sided Roman stone corner tower of the legionary fortress at Eboracum (modern York), still standing tall in York Museum Gardens nearly 1,700 years after it was built.",
+          "caption": "Ten-sided Roman stone corner tower at Eboracum (modern York), still standing tall nearly 1,700 years after it was built.",
           "author": "Roman Fortress Masons at Eboracum (York)",
           "date": "c. AD 306",
-          "context": "Built with neat courses of small limestone blocks and red tile bands around AD 306, York's Multangular Tower is a visible reminder that Britain's major cities, roads, language, and calendar still stand on Roman foundations today.",
+          "context": "Built of neat limestone blocks and red tile bands around AD 306, York's Multangular Tower reminds us that Britain's cities, roads, alphabet, and calendar stand on Roman roots.",
           "question_badge": "STANDING FOR 1,700 YEARS",
           "question": "Look at the Roman tower in York in Source D. Besides stone walls and straight roads, what everyday legacies did Rome leave us?",
-          "model_answer": "Alongside tough stone fortress towers like York's Multangular Tower and straight A-roads, the Romans left us cities like London (Londinium) and -chester fort towns, our Latin ABC alphabet, Roman numerals (I, V, X), the 12-month calendar (July and August), Christianity, and foods like apples and cabbages.",
-          "source_context": "Built with neat courses of small limestone blocks and red tile bands around AD 306, York's Multangular Tower is a visible reminder that Britain's major cities, roads, language, and calendar still stand on Roman foundations today."
+          "model_answer": "Alongside stone walls and straight A-roads, Rome left us cities like London and -chester towns, our Latin ABC alphabet, Roman numerals (I, V, X), the 12-month calendar, Christianity, and apples and cabbages.",
+          "source_context": "Built of neat limestone blocks and red tile bands around AD 306, York's Multangular Tower reminds us that Britain's cities, roads, alphabet, and calendar stand on Roman roots. **Hinge Question:** Which Roman legacy shapes your own life more every day: stone towers like Source D, or our ABC alphabet and calendar?"
         }
       ],
       "tasks": [
@@ -4513,12 +4750,12 @@ window.UNIT_DATA = {
           "question": "Which groups raided Roman Britain from Scotland, Ireland, and across the North Sea around AD 400?",
           "q": "Which groups raided Roman Britain from Scotland, Ireland, and across the North Sea around AD 400?",
           "options": [
-            "Vikings, Normans, and Mongols",
             "Picts, Scotti, and Angles and Saxons",
+            "Vikings, Normans, and Mongols",
             "Persians, Greeks, and Egyptians",
             "Gauls, Spartans, and Trojans"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "Picts, Scotti, and Angles and Saxons",
           "a": "Picts, Scotti, and Angles and Saxons",
           "explanation": "Around AD 400, Picts raided from Scotland, Scotti from Ireland, and Angles and Saxons sailed across the North Sea."
@@ -4528,12 +4765,12 @@ window.UNIT_DATA = {
           "question": "Why were Roman legions called away from Britain in the early fifth century?",
           "q": "Why were Roman legions called away from Britain in the early fifth century?",
           "options": [
-            "To defend Italy and Rome itself against invading armies like the Visigoths",
+            "To sail across the Atlantic Ocean",
             "Because British winters had turned tropical",
             "To build pyramids in Egypt",
-            "To sail across the Atlantic Ocean"
+            "To defend Italy and Rome itself against invading armies like the Visigoths"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "To defend Italy and Rome itself against invading armies like the Visigoths",
           "a": "To defend Italy and Rome itself against invading armies like the Visigoths",
           "explanation": "Roman troops marched away from Britain to defend Italy and Rome itself as Visigoth armies attacked the heart of the Empire."
@@ -4545,10 +4782,10 @@ window.UNIT_DATA = {
           "options": [
             "AD 43",
             "AD 61",
-            "AD 122",
-            "AD 410"
+            "AD 410",
+            "AD 122"
           ],
-          "correct": 3,
+          "correct": 2,
           "answer": "AD 410",
           "a": "AD 410",
           "explanation": "In AD 410, Emperor Honorius wrote to British cities warning that Rome could send no troops and they must guard themselves."
@@ -4569,16 +4806,31 @@ window.UNIT_DATA = {
           "explanation": "Emperor Honorius warned British towns that they had to look to their own safety and defend themselves."
         },
         {
+          "stage": 1,
+          "question": "Where did the Picts and the Scotti sail and march from when raiding Roman Britain around AD 400?",
+          "q": "Where did the Picts and the Scotti sail and march from when raiding Roman Britain around AD 400?",
+          "options": [
+            "Picts from Italy and Scotti from Egypt",
+            "Picts from Scotland and Scotti from Ireland",
+            "Picts from Spain and Scotti from Greece",
+            "Picts from Syria and Scotti from Gaul"
+          ],
+          "correct": 1,
+          "answer": "Picts from Scotland and Scotti from Ireland",
+          "a": "Picts from Scotland and Scotti from Ireland",
+          "explanation": "Around AD 400, Picts raided south from Scotland, Scotti sailed across from Ireland, and Angles and Saxons crossed the North Sea."
+        },
+        {
           "stage": 2,
           "question": "Why did fresh shipments of new Roman coins stop arriving in Britain after the legions left?",
           "q": "Why did fresh shipments of new Roman coins stop arriving in Britain after the legions left?",
           "options": [
-            "Gold mines on the Moon closed down",
             "There were no longer Roman soldiers in Britain receiving army wages",
+            "Gold mines on the Moon closed down",
             "People preferred using seashells instead",
             "Emperor Claudius banned coins"
           ],
-          "correct": 1,
+          "correct": 0,
           "answer": "There were no longer Roman soldiers in Britain receiving army wages",
           "a": "There were no longer Roman soldiers in Britain receiving army wages",
           "explanation": "Rome shipped new coins mainly to pay soldiers' wages; once the legions departed, fresh coinage stopped arriving."
@@ -4589,11 +4841,11 @@ window.UNIT_DATA = {
           "q": "What happened to many Roman stone bathhouses, aqueducts, and hypocausts after AD 410?",
           "options": [
             "They were turned into railway stations",
-            "Nobody repaired them, so they slowly crumbled into overgrown ruins",
+            "They were covered in solid gold",
             "They were shipped brick by brick back to Italy",
-            "They were covered in solid gold"
+            "Nobody repaired them, so they slowly crumbled into overgrown ruins"
           ],
-          "correct": 1,
+          "correct": 3,
           "answer": "Nobody repaired them, so they slowly crumbled into overgrown ruins",
           "a": "Nobody repaired them, so they slowly crumbled into overgrown ruins",
           "explanation": "Without town wealth and engineers to maintain them, leaky aqueducts, hypocausts, and bathhouses fell into ruin."
@@ -4604,11 +4856,11 @@ window.UNIT_DATA = {
           "q": "Why did anxious wealthy families bury chests of silver plates, spoons, and coins underground as a hoard?",
           "options": [
             "To grow silver trees in their orchards",
-            "To hide their valuables safely from raiders, hoping to dig them up when danger passed",
             "Because they disliked shiny metal",
+            "To hide their valuables safely from raiders, hoping to dig them up when danger passed",
             "To pay taxes to Queen Boudicca"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "To hide their valuables safely from raiders, hoping to dig them up when danger passed",
           "a": "To hide their valuables safely from raiders, hoping to dig them up when danger passed",
           "explanation": "Fearing raiders and unrest, wealthy families buried precious silver hoards for safekeeping — though many never returned."
@@ -4619,26 +4871,41 @@ window.UNIT_DATA = {
           "q": "Name two famous buried Roman silver treasures discovered centuries later by farmers in Suffolk.",
           "options": [
             "The Sutton Hoo Ship and the Rosetta Stone",
-            "The Hoxne Hoard and the Mildenhall Treasure",
             "The Battersea Shield and the Snettisham Torc",
+            "The Hoxne Hoard and the Mildenhall Treasure",
             "The Crown Jewels and Excalibur"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "The Hoxne Hoard and the Mildenhall Treasure",
           "a": "The Hoxne Hoard and the Mildenhall Treasure",
           "explanation": "Suffolk farmers unearthed both the Mildenhall Treasure (including the Great Silver Dish) and the Hoxne Hoard (including the Empress Pepper Pot)."
+        },
+        {
+          "stage": 2,
+          "question": "What happened to town markets and pottery workshops in Britain once Roman army wages stopped arriving?",
+          "q": "What happened to town markets and pottery workshops in Britain once Roman army wages stopped arriving?",
+          "options": [
+            "Every village opened ten new marble shopping forums",
+            "Markets shrank rapidly and potters' workshops closed their doors",
+            "Potters began exporting millions of plates to China",
+            "Emperor Honorius paid every potter in solid gold"
+          ],
+          "correct": 1,
+          "answer": "Markets shrank rapidly and potters' workshops closed their doors",
+          "a": "Markets shrank rapidly and potters' workshops closed their doors",
+          "explanation": "Without soldiers spending silver coins, busy Roman town markets shrank and mass-produced pottery workshops closed."
         },
         {
           "stage": 3,
           "question": "Which Roman port on the River Thames grew into Britain's modern capital city?",
           "q": "Which Roman port on the River Thames grew into Britain's modern capital city?",
           "options": [
-            "Eboracum",
-            "Camulodunum",
             "Londinium (London)",
+            "Camulodunum",
+            "Eboracum",
             "Aquae Sulis"
           ],
-          "correct": 2,
+          "correct": 0,
           "answer": "Londinium (London)",
           "a": "Londinium (London)",
           "explanation": "Roman Londinium on the River Thames grew into London, the capital city of the United Kingdom today."
@@ -4648,12 +4915,12 @@ window.UNIT_DATA = {
           "question": "What does a British town name ending in -chester or -caster (like Manchester or Lancaster) reveal?",
           "q": "What does a British town name ending in -chester or -caster (like Manchester or Lancaster) reveal?",
           "options": [
-            "It grew on the site of a Roman fort (castra)",
+            "It was an Iron Age roundhouse farm",
             "It was founded by Julius Caesar's elephants",
             "It had no roads nearby",
-            "It was an Iron Age roundhouse farm"
+            "It grew on the site of a Roman fort (castra)"
           ],
-          "correct": 0,
+          "correct": 3,
           "answer": "It grew on the site of a Roman fort (castra)",
           "a": "It grew on the site of a Roman fort (castra)",
           "explanation": "Town names ending in -chester or -caster come from castra, the Latin word for a Roman camp or fort."
@@ -4665,10 +4932,10 @@ window.UNIT_DATA = {
           "options": [
             "January and February",
             "March and April",
-            "July and August",
-            "November and December"
+            "November and December",
+            "July and August"
           ],
-          "correct": 2,
+          "correct": 3,
           "answer": "July and August",
           "a": "July and August",
           "explanation": "July honours Julius Caesar and August honours Rome's first emperor, Augustus, in our 12-month Roman calendar."
@@ -4679,14 +4946,29 @@ window.UNIT_DATA = {
           "q": "Along with the Latin ABC alphabet and Roman numerals (I, V, X), which foods and wildlife did the Romans introduce to Britain?",
           "options": [
             "Potatoes, tomatoes, and kangaroos",
-            "Apples, cabbages, rabbits, and stinging nettles",
             "Bananas, pineapples, and polar bears",
+            "Apples, cabbages, rabbits, and stinging nettles",
             "Sweetcorn, chocolate, and llamas"
           ],
-          "correct": 1,
+          "correct": 2,
           "answer": "Apples, cabbages, rabbits, and stinging nettles",
           "a": "Apples, cabbages, rabbits, and stinging nettles",
           "explanation": "The Romans introduced cultivated apples, cabbages, rabbits, and stinging nettles to Britain alongside Christianity and written laws."
+        },
+        {
+          "stage": 3,
+          "question": "What do modern British main roads (\"A-roads\") and clockface numbers like I, V, and X have in common?",
+          "q": "What do modern British main roads (\"A-roads\") and clockface numbers like I, V, and X have in common?",
+          "options": [
+            "Both were invented by Iron Age Druids before AD 43",
+            "Both are lasting Roman legacies still used across Britain every day",
+            "Both arrived from North America in the 1900s",
+            "Both were banned by Emperor Hadrian"
+          ],
+          "correct": 1,
+          "answer": "Both are lasting Roman legacies still used across Britain every day",
+          "a": "Both are lasting Roman legacies still used across Britain every day",
+          "explanation": "Many straight modern A-roads follow Roman highways, and clockfaces still display Roman numerals (I, V, X)!"
         }
       ],
       "video": [
@@ -4716,7 +4998,7 @@ window.UNIT_DATA = {
             "trigger": "Picts, Scotti, Angles, and Saxons raided Britain while Visigoths attacked Italy; legions left and in AD 410 Emperor Honorius told British towns to defend themselves.",
             "connective": "Ended nearly four hundred years of Roman military rule in Britain.",
             "question": "Why did the Roman army leave Britain around AD 410?",
-            "prose_hash": "d92de09a2a"
+            "prose_hash": "ac82db298d"
           },
           {
             "step": 2,
@@ -4728,7 +5010,7 @@ window.UNIT_DATA = {
             "trigger": "New Roman coins stopped arriving, bathhouses crumbled into ruin, and anxious families buried silver chests like the Hoxne Hoard and Mildenhall Treasure.",
             "connective": "Left glittering buried time capsules discovered by Suffolk farmers centuries later.",
             "question": "Why did families bury silver hoards as bathhouses crumbled?",
-            "prose_hash": "a2f6a6d6e5"
+            "prose_hash": "99852d4b3b"
           },
           {
             "step": 3,
@@ -4740,7 +5022,7 @@ window.UNIT_DATA = {
             "trigger": "Londinium became London, -chester towns mark Roman forts (castra), A-roads follow Roman routes, and we still use Latin ABCs, Roman numerals, and the 12-month calendar.",
             "connective": "Ensured Roman ideas, language, towns, and foods still shape our daily lives today.",
             "question": "What lasting Roman legacy still shapes Britain every day?",
-            "prose_hash": "b7d524f381"
+            "prose_hash": "206c40421a"
           }
         ]
       },
@@ -4772,7 +5054,7 @@ window.UNIT_DATA = {
           "dates": "AD 400–410",
           "para_ref": "[6.1]",
           "paraRef": "[6.1]",
-          "prose_hash": "d92de09a2a"
+          "prose_hash": "ac82db298d"
         },
         {
           "step": 2,
@@ -4801,7 +5083,7 @@ window.UNIT_DATA = {
           "dates": "After AD 407–410",
           "para_ref": "[6.3]",
           "paraRef": "[6.3]",
-          "prose_hash": "a2f6a6d6e5"
+          "prose_hash": "99852d4b3b"
         },
         {
           "step": 3,
@@ -4830,7 +5112,7 @@ window.UNIT_DATA = {
           "dates": "AD 410 – Today",
           "para_ref": "[6.5]",
           "paraRef": "[6.5]",
-          "prose_hash": "b7d524f381"
+          "prose_hash": "206c40421a"
         }
       ],
       "card_position": "center 48%",
@@ -4839,7 +5121,8 @@ window.UNIT_DATA = {
         "caption": "Late-Roman Saxon Shore Stone Fort Walls and Bastions at Burgh Castle (Gariannonum), Norfolk",
         "position": "center 48%"
       },
-      "banner_image": "/images/upgraded/ks2-ancient/romans_l6_banner_burgh_castle_fort.jpg"
+      "banner_image": "/images/upgraded/ks2-ancient/romans_l6_banner_burgh_castle_fort.jpg",
+      "enquiry": "Why did the Romans leave Britain, and what did they leave behind?"
     }
   ],
   "key_individuals": [
