@@ -859,7 +859,92 @@ window.UNIT_DATA = {
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg",
-      "enquiry": "How did the Maya build stone rainforest cities without metal or wheels?"
+      "enquiry": "How did the Maya build stone rainforest cities without metal or wheels?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "ks2_maya_civilisation_l01_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 1",
+        "datesBadge": "c. 2000 BC–AD 900",
+        "topicLabel": "Enquiry 01: Stone Cities in the Rainforest (c. 2000 BC–AD 600)",
+        "title": "How Did the Maya Build Stone Rainforest Cities Without Metal or Wheels?",
+        "spokenTitle": "How did the Maya build stone rainforest cities without metal or wheels?",
+        "thumbUrl": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg",
+        "bridges": [
+          "Stored Water",
+          "Stone Plazas",
+          "Jungle Marvels"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Three Mesoamerican Zones",
+            "date": "c. 2000 BC–AD 250",
+            "img": "/units/ks2_maya_civilisation/assets/maya_mesoamerica_cities_map_ks2.png",
+            "mode": "contain-light",
+            "stat": "Highland Obsidian, Rainforest & Limestone",
+            "connective": "How did the Maya build stone rainforest cities without metal or wheels?",
+            "html": "Across <strong>Mesoamerica</strong>, Maya traders linked volcanic highlands rich in black <strong>obsidian and jade</strong> with rainforest lowlands and flat Yucatán. Villages grew without metal ploughs or <strong>wheeled carts</strong>.",
+            "paired_prose_hash": "f846a71df7",
+            "spoken": "How did the Maya build stone rainforest cities without metal or wheels? <short pause> Across Mesoamerica , Maya traders linked volcanic highlands rich in black obsidian and jade with rainforest lowlands and flat Yucatán. Villages grew without metal ploughs or wheeled carts ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Cenotes & Three Sisters Crops",
+            "date": "c. 1000 BC–AD 600",
+            "img": "/units/ks2_maya_civilisation/assets/sacred_cenote_limestone_sinkhole.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Sinkhole Wells, Chultuns & Maize-Bean-Squash",
+            "connective": "Because rain sank through porous limestone, engineers and farmers worked cleverly.",
+            "html": "Families drew water from deep <strong>cenote sinkholes</strong> and plastered underground <strong>chultun reservoirs</strong>. Farmers planted <strong>Three Sisters</strong> crops together — tall maize, climbing beans, and shady squash.",
+            "paired_prose_hash": "6631e8d701",
+            "spoken": "Because rain sank through porous limestone, engineers and farmers worked cleverly. <short pause> Families drew water from deep cenote sinkholes and plastered underground chultun reservoirs . Farmers planted Three Sisters crops together, tall maize, climbing beans, and shady squash."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Pyramids vs Anglo-Saxon Halls",
+            "date": "c. AD 600–900",
+            "img": "/units/ks2_maya_civilisation/assets/uxmal_pyramid_of_the_magician.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Towering Limestone Cities vs Timber Villages",
+            "connective": "Clever water storage and harvests supported gleaming stone cities.",
+            "html": "At <strong>Uxmal and Tikal</strong>, masons stacked pale limestone into tall <strong>step-pyramids</strong> beside busy markets. Across the Atlantic around AD 900, <strong>Anglo-Saxon Britain</strong> still built small timber halls.",
+            "paired_prose_hash": "47e7de271a",
+            "spoken": "Clever water storage and harvests supported gleaming stone cities. <short pause> At Uxmal and Tikal , masons stacked pale limestone into tall step-pyramids beside busy markets. Across the Atlantic around AD 900, Anglo-Saxon Britain still built small timber halls."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Thriving Rainforest Cities",
+            "date": "Classic Period",
+            "img": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Tens of Thousands Fed Without Metal Tools",
+            "connective": "Smart farming and stone engineering mastered a tough tropical landscape.",
+            "html": "Using sharp <strong>stone tools</strong>, plastered reservoirs, and <strong>maize harvests</strong>, the Maya raised towering rainforest capitals. Their painted plazas rivalled any city in the <strong>medieval world</strong>.",
+            "spoken": "Smart farming and stone engineering mastered a tough tropical landscape. <short pause> Using sharp stone tools , plastered reservoirs, and maize harvests , the Maya raised towering rainforest capitals. Their painted plazas rivalled any city in the medieval world ."
+          }
+        ],
+        "takeaway": "Without metal tools or wheeled carts, Maya builders used cenote wells, plastered reservoirs, and Three Sisters farming to raise towering limestone rainforest cities.",
+        "vocab": [
+          [
+            "1. Obsidian",
+            "Sharp black volcanic glass chipped into blades without metal."
+          ],
+          [
+            "2. Cenote",
+            "Deep natural limestone sinkhole holding cool underground water."
+          ],
+          [
+            "3. Maize",
+            "Sacred corn grown with beans and squash to feed Maya cities."
+          ]
+        ],
+        "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Without metal tools or wheeled carts, Maya builders used cenote wells, plastered reservoirs, and Three Sisters farming to raise towering limestone rainforest cities."
+      }
     },
     {
       "id": "lesson_2",
@@ -1685,7 +1770,91 @@ window.UNIT_DATA = {
         "position": "center 45%"
       },
       "banner_image": "/images/upgraded/ks2-world/maya_l2_banner_palenque_panorama.jpg",
-      "enquiry": "How did powerful kings and queens rule rival Maya city-states?"
+      "enquiry": "How did powerful kings and queens rule rival Maya city-states?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "ks2_maya_civilisation_l02_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 2",
+        "datesBadge": "c. AD 250–900",
+        "topicLabel": "Enquiry 02: Step Pyramids, Pakal & Maya Rulers (c. AD 250–900)",
+        "title": "How Did Powerful Kings and Queens Rule Rival Maya City-States?",
+        "spokenTitle": "How did powerful kings and queens rule rival Maya city-states?",
+        "thumbUrl": "/units/ks2_maya_civilisation/assets/palenque_temple_of_inscriptions.jpg",
+        "bridges": [
+          "Jade & Tombs",
+          "Queens & Feasts",
+          "Sacred Rule"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "40+ Rival Cities & Holy Ajaws",
+            "date": "AD 250–900",
+            "img": "/units/ks2_maya_civilisation/assets/calakmul_stela_and_jungle_pyramid.jpg",
+            "mode": "contain",
+            "stat": "40+ Independent City-States & Step-Pyramids",
+            "connective": "How did powerful kings and queens rule rival Maya city-states?",
+            "html": "Over forty rival <strong>Maya city-states</strong> like Tikal, Calakmul, and Palenque competed without forming one empire. Each obeyed a sacred <strong>K'uhul Ajaw</strong> atop tall <strong>step-pyramids</strong>.",
+            "paired_prose_hash": "6c033d662e",
+            "spoken": "How did powerful kings and queens rule rival Maya city-states? <short pause> Over forty rival Maya city-states like Tikal, Calakmul, and Palenque competed without forming one empire. Each obeyed a sacred K'uhul Ajaw atop tall step-pyramids ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "King Pakal & His Jade Mask",
+            "date": "AD 615–683",
+            "img": "/units/ks2_maya_civilisation/assets/king_pakal_jade_funerary_mask.jpg",
+            "mode": "contain",
+            "stat": "68-Year Reign at Palenque & Hidden Pyramid Tomb",
+            "connective": "At Palenque, a twelve-year-old boy became one of Mesoamerica's greatest kings.",
+            "html": "Crowned in AD 615, <strong>Pakal the Great</strong> ruled peacefully for <strong>sixty-eight years</strong> and raised white palaces. Beneath the Temple of the Inscriptions, a mosaic <strong>green jade mask</strong> covered his face.",
+            "paired_prose_hash": "d06e5f5644",
+            "spoken": "At Palenque, a twelve-year-old boy became one of Mesoamerica's greatest kings. <short pause> Crowned in AD 615, Pakal the Great ruled peacefully for sixty-eight years and raised white palaces. Beneath the Temple of the Inscriptions, a mosaic green jade mask covered his face."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Royal Queens & Painted Courts",
+            "date": "c. AD 600–800",
+            "img": "/units/ks2_maya_civilisation/assets/bonampak_painted_court_murals.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Lady Six Sky's Stelae & Bonampak Murals",
+            "connective": "Powerful royal women and vibrant palace feasts also shaped Maya kingdoms.",
+            "html": "Leaders like <strong>Lady Sak K'uk'</strong> and warrior queen <strong>Lady Six Sky</strong> governed kingdoms and stood on carved stelae. At <strong>Bonampak</strong>, vivid murals showed royal horns, turtle-shell drums, and dancers.",
+            "paired_prose_hash": "df543d92ab",
+            "spoken": "Powerful royal women and vibrant palace feasts also shaped Maya kingdoms. <short pause> Leaders like Lady Sak K'uk' and warrior queen Lady Six Sky governed kingdoms and stood on carved stelae. At Bonampak , vivid murals showed royal horns, turtle-shell drums, and dancers."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Sacred Power Carved in Stone",
+            "date": "Classic Maya",
+            "img": "/units/ks2_maya_civilisation/assets/palenque_temple_of_inscriptions.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Pyramids, Stelae & Jade Proved Royal Rule",
+            "connective": "Architecture, green jade, and carved stone monuments broadcast royal power.",
+            "html": "Towering <strong>step-pyramids</strong>, carved <strong>limestone stelae</strong>, and quetzal plumes linked holy rulers with the gods. Rival kings and queens turned rainforest plazas into <strong>royal stages</strong>.",
+            "spoken": "Architecture, green jade, and carved stone monuments broadcast royal power. <short pause> Towering step-pyramids , carved limestone stelae , and quetzal plumes linked holy rulers with the gods. Rival kings and queens turned rainforest plazas into royal stages ."
+          }
+        ],
+        "takeaway": "Across forty rival Maya city-states, holy Ajaw kings like Pakal and queens like Lady Six Sky ruled from step-pyramids adorned with green jade and carved stelae.",
+        "vocab": [
+          [
+            "1. Ajaw",
+            "Sacred Classic Maya king or lord who spoke with the gods."
+          ],
+          [
+            "2. Jade",
+            "Lustrous green stone prized above gold for royal masks and beads."
+          ],
+          [
+            "3. Stelae",
+            "Tall carved stone monuments showing Maya rulers and victory dates."
+          ]
+        ],
+        "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Across forty rival Maya city-states, holy Ajaw kings like Pakal and queens like Lady Six Sky ruled from step-pyramids adorned with green jade and carved stelae."
+      }
     },
     {
       "id": "lesson_3",
@@ -2512,7 +2681,91 @@ window.UNIT_DATA = {
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg",
-      "enquiry": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?"
+      "enquiry": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "ks2_maya_civilisation_l03_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 3",
+        "datesBadge": "c. AD 300–900",
+        "topicLabel": "Enquiry 03: Maya Glyphs, Bark Books & Inventing Zero (c. AD 300–900)",
+        "title": "Why Were Maya Writers, Sky-Watchers, and Mathematicians So Ahead of Their Time?",
+        "spokenTitle": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?",
+        "thumbUrl": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg",
+        "bridges": [
+          "Inventing Zero",
+          "Venus & Stars",
+          "Master Scholars"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "800+ Glyphs & Fig-Bark Books",
+            "date": "c. AD 300–900",
+            "img": "/units/ks2_maya_civilisation/assets/copan_hieroglyphic_stairway_stela.jpg",
+            "mode": "contain",
+            "stat": "2,000+ Stairway Glyphs & Accordion Codices",
+            "connective": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time?",
+            "html": "Maya scribes combined over <strong>800 hieroglyphs</strong> to carve stone stelae and Copán's 63-step stairway. Using turkey-quill brushes, they painted accordion-folded <strong>fig-bark codices</strong> like the <strong>Dresden Codex</strong>.",
+            "paired_prose_hash": "57d798ce29",
+            "spoken": "Why were Maya writers, sky-watchers, and mathematicians so ahead of their time? <short pause> Maya scribes combined over 800 hieroglyphs to carve stone stelae and Copán's 63-step stairway. Using turkey-quill brushes, they painted accordion-folded fig-bark codices like the Dresden Codex ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Shell, Dot, Bar & Place Zero",
+            "date": "c. AD 350–900",
+            "img": "/units/ks2_maya_civilisation/assets/maya_number_calendar_system_ks2.png",
+            "mode": "contain-light",
+            "stat": "Shell = 0, Dot = 1, Bar = 5 in Base-20 Maths",
+            "connective": "While Europe used Roman numerals without zero, Maya mathematicians leaped ahead.",
+            "html": "Counting in <strong>base-20</strong>, scholars invented <strong>place-value zero</strong> all on their own! Stacking a <strong>carved shell (0)</strong>, pebble dot (1), and wooden bar (5) tallied huge sums accurately.",
+            "paired_prose_hash": "5452665835",
+            "spoken": "While Europe used Roman numerals without zero, Maya mathematicians leaped ahead. <short pause> Counting in base-20 , scholars invented place-value zero all on their own! Stacking a carved shell (0) , pebble dot (1), and wooden bar (5) tallied huge sums accurately."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "El Caracol & Twin Calendars",
+            "date": "c. AD 600–900",
+            "img": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "260-Day Tzolk'in & 365-Day Haab' Sync in 52 Yrs",
+            "connective": "Without glass telescopes, priests tracked bright Venus from stone towers.",
+            "html": "From Chichén Itzá's round <strong>El Caracol</strong> tower, sky-watchers tracked eclipses and planets. They linked the 260-day <strong>Tzolk'in</strong> and 365-day solar <strong>Haab' calendar</strong> like interlocking cogwheels.",
+            "paired_prose_hash": "099d1ba5c9",
+            "spoken": "Without glass telescopes, priests tracked bright Venus from stone towers. <short pause> From Chichén Itzá's round El Caracol tower, sky-watchers tracked eclipses and planets. They linked the 260-day Tzolk'in and 365-day solar Haab' calendar like interlocking cogwheels."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Science Carved in Bark & Stone",
+            "date": "Centuries Ahead",
+            "img": "/units/ks2_maya_civilisation/assets/catherwood_copan_jungle_stela_1844.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Full Writing, Independent Zero & Exact Star Maps",
+            "connective": "Writing, zero, and sky-watching made Maya cities centres of exact science.",
+            "html": "Inventing <strong>800 glyphs</strong>, independent <strong>place-value zero</strong>, and exact solar calendars guided Maya harvests and temples. Modern scholars still marvel at their <strong>mathematical precision</strong>.",
+            "spoken": "Writing, zero, and sky-watching made Maya cities centres of exact science. <short pause> Inventing 800 glyphs , independent place-value zero , and exact solar calendars guided Maya harvests and temples. Modern scholars still marvel at their mathematical precision ."
+          }
+        ],
+        "takeaway": "Maya scholars created over 800 hieroglyphs, painted fig-bark codices, independently invented place-value zero, and tracked Venus to run interlocking calendars.",
+        "vocab": [
+          [
+            "1. Glyphs",
+            "Over 800 carved or painted Maya signs for words and syllables."
+          ],
+          [
+            "2. Codices",
+            "Accordion-folded Maya books painted on plastered fig-tree bark."
+          ],
+          [
+            "3. Base-20",
+            "Maya counting system using shells (0), dots (1), and bars (5)."
+          ]
+        ],
+        "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Maya scholars created over 800 hieroglyphs, painted fig-bark codices, independently invented place-value zero, and tracked Venus to run interlocking calendars."
+      }
     },
     {
       "id": "lesson_4",
@@ -3338,7 +3591,93 @@ window.UNIT_DATA = {
         "position": "center 46%"
       },
       "banner_image": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
-      "enquiry": "What did Maya families eat, trade, and play in everyday life?"
+      "enquiry": "What did Maya families eat, trade, and play in everyday life?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "ks2_maya_civilisation_l04_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 4",
+        "datesBadge": "c. AD 600–900",
+        "topicLabel": "Enquiry 04: Maize Tortillas, Frothy Cacao & Pok-ta-Pok (c. AD 600–900)",
+        "title": "What Did Maya Families Eat, Trade, and Play in Everyday Life?",
+        "spokenTitle": "What did Maya families eat, trade, and play in everyday life?",
+        "thumbUrl": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
+        "bridges": [
+          "Cacao Cash",
+          "Sacred Ballgame",
+          "Vibrant Plazas"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Metate Maize & Spiced Cacao",
+            "date": "Every Dawn",
+            "img": "/units/ks2_maya_civilisation/assets/stone_metate_maize_grinding_troughs.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "Limewater Maize Tortillas & Chilli Chocolate",
+            "connective": "What did Maya families eat, trade, and play in everyday life?",
+            "html": "Soaking <strong>maize</strong> in limewater unlocked vital nutrients before cooks ground soft dough on volcanic <strong>stone metates</strong>. Growers also roasted bitter <strong>cacao seeds</strong> for frothy chilli-spiced drinks.",
+            "paired_prose_hash": "56054d79e7",
+            "spoken": "What did Maya families eat, trade, and play in everyday life? <short pause> Soaking maize in limewater unlocked vital nutrients before cooks ground soft dough on volcanic stone metates . Growers also roasted bitter cacao seeds for frothy chilli-spiced drinks."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Cacao Money, Jade & Porters",
+            "date": "AD 600–900",
+            "img": "/units/ks2_maya_civilisation/assets/ripe_cacao_pods_and_beans.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "10 Beans = 1 Rabbit • 100 Beans = 1 Turkey",
+            "connective": "Out in shaded city plazas, dried chocolate beans even worked as money!",
+            "html": "Traders spent <strong>cacao beans</strong> like cash while judges checked for clay fakes. Without horses or carts, human <strong>porters and canoes</strong> carried salt, black obsidian, and <strong>green jade</strong>.",
+            "paired_prose_hash": "f7c911bbde",
+            "spoken": "Out in shaded city plazas, dried chocolate beans even worked as money! <short pause> Traders spent cacao beans like cash while judges checked for clay fakes. Without horses or carts, human porters and canoes carried salt, black obsidian, and green jade ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Sacred Pok-ta-Pok Ballcourts",
+            "date": "AD 600–900",
+            "img": "/units/ks2_maya_civilisation/assets/copan_ballcourt_macaw_marker.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "4kg Solid Rubber Ball & Padded Hip Yokes",
+            "connective": "Beside the pyramids, roaring crowds gathered around sloping stone ballcourts.",
+            "html": "Playing sacred <strong>Pok-ta-Pok</strong>, athletes wore thick <strong>hip yokes</strong> to bounce a heavy four-kilogram <strong>rubber ball</strong>. Without using hands or feet, teams aimed at high stone rings.",
+            "paired_prose_hash": "0673080330",
+            "spoken": "Beside the pyramids, roaring crowds gathered around sloping stone ballcourts. <short pause> Playing sacred Pok-ta-Pok , athletes wore thick hip yokes to bounce a heavy four-kilogram rubber ball . Without using hands or feet, teams aimed at high stone rings."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Work, Markets & Sacred Sport",
+            "date": "c. AD 600–900",
+            "img": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Daily Food, Long Trade & Honouring the Gods",
+            "connective": "Kitchens, bustling markets, and roaring ballcourts connected every Maya town.",
+            "html": "From dawn <strong>tortillas</strong> and <strong>cacao-bean markets</strong> to fierce matches in stone ballcourts, Maya communities worked hard together. Everyday food, trade, and sport honoured <strong>sun and rain</strong>.",
+            "spoken": "Kitchens, bustling markets, and roaring ballcourts connected every Maya town. <short pause> From dawn tortillas and cacao-bean markets to fierce matches in stone ballcourts, Maya communities worked hard together. Everyday food, trade, and sport honoured sun and rain ."
+          }
+        ],
+        "takeaway": "Maya families ground limewater maize on stone metates, spent cacao beans as market cash, traded jade by porter and canoe, and played sacred Pok-ta-Pok.",
+        "vocab": [
+          [
+            "1. Metate",
+            "Volcanic grinding stone used to crush soaked maize into dough."
+          ],
+          [
+            "2. Cacao",
+            "Seeds used for frothy spiced chocolate drinks and market money."
+          ],
+          [
+            "3. Pok-ta-Pok",
+            "Sacred Maya game bouncing a heavy rubber ball off padded hips."
+          ]
+        ],
+        "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Maya families ground limewater maize on stone metates, spent cacao beans as market cash, traded jade by porter and canoe, and played sacred Pok-ta-Pok."
+      }
     },
     {
       "id": "lesson_5",
@@ -4164,7 +4503,93 @@ window.UNIT_DATA = {
         "position": "center 52%"
       },
       "banner_image": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
-      "enquiry": "How did Maya beliefs about gods and calendars shape their temples?"
+      "enquiry": "How did Maya beliefs about gods and calendars shape their temples?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "ks2_maya_civilisation_l05_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 5",
+        "datesBadge": "c. AD 600–1200",
+        "topicLabel": "Enquiry 05: Maize Gods, Rain Caves & Chichén Itzá (c. AD 600–1200)",
+        "title": "How Did Maya Beliefs About Gods and Calendars Shape Their Temples?",
+        "spokenTitle": "How did Maya beliefs about gods and calendars shape their temples?",
+        "thumbUrl": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
+        "bridges": [
+          "365 Stone Steps",
+          "Equinox Shadow",
+          "Living Stone"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Popol Vuh, Xibalba & Chaac",
+            "date": "c. AD 600–900",
+            "img": "/units/ks2_maya_civilisation/assets/kabah_codz_poop_chaac_rain_masks.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Maize-Dough Humans & Sacred Rain Caves",
+            "connective": "How did Maya beliefs about gods and calendars shape their temples?",
+            "html": "Sacred <strong>Popol Vuh</strong> tales told how the gods kneaded humans from <strong>maize dough</strong> and how the Hero Twins outwitted dark Xibalba. Priests burned incense in caves for rain god <strong>Chaac</strong>.",
+            "paired_prose_hash": "af35dc5f11",
+            "spoken": "How did Maya beliefs about gods and calendars shape their temples? <short pause> Sacred Popol Vuh tales told how the gods kneaded humans from maize dough and how the Hero Twins outwitted dark Xibalba. Priests burned incense in caves for rain god Chaac ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "El Castillo's 365 Stone Steps",
+            "date": "c. AD 800–1100",
+            "img": "/units/ks2_maya_civilisation/assets/chichen_itza_equinox_serpent_shadow.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "4 × 91 Stairs + 1 Top Platform = 365 Days",
+            "connective": "At Chichén Itzá, architects turned their solar calendar into a giant pyramid.",
+            "html": "Dedicated to feathered serpent god <strong>Kukulkan</strong>, four staircases of 91 steps plus the top platform equalled <strong>365 days</strong>. Priests climbed <strong>El Castillo</strong> to announce maize planting dates.",
+            "paired_prose_hash": "99b0fc72ae",
+            "spoken": "At Chichén Itzá, architects turned their solar calendar into a giant pyramid. <short pause> Dedicated to feathered serpent god Kukulkan , four staircases of 91 steps plus the top platform equalled 365 days . Priests climbed El Castillo to announce maize planting dates."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Equinox Serpent Shadow Glides",
+            "date": "Spring & Autumn",
+            "img": "/units/ks2_maya_civilisation/assets/kukulkan_feathered_serpent_head.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "7 Sunlit Triangles Meet Kukulkan's Stone Head",
+            "connective": "Twice a year on the equinox, afternoon sunlight worked a breathtaking trick.",
+            "html": "On each spring and autumn <strong>equinox</strong>, seven sunlit triangles rippled down the staircase to join <strong>Kukulkan's carved head</strong>. Crowds celebrated rain and harvests with unfading <strong>Maya Blue</strong> gifts.",
+            "paired_prose_hash": "eb2350e06e",
+            "spoken": "Twice a year on the equinox, afternoon sunlight worked a breathtaking trick. <short pause> On each spring and autumn equinox , seven sunlit triangles rippled down the staircase to join Kukulkan's carved head . Crowds celebrated rain and harvests with unfading Maya Blue gifts."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Earth, Sky & Faith Joined",
+            "date": "c. AD 600–1200",
+            "img": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Exact Astronomy Built Into Sacred Pyramids",
+            "connective": "Every staircase, carved mask, and shadow linked religion with sky science.",
+            "html": "Honouring <strong>Chaac and Kukulkan</strong> inspired Maya builders to align pyramids with the <strong>sun and seasons</strong>. Temples worked as giant <strong>stone calendars</strong> guiding farming life.",
+            "spoken": "Every staircase, carved mask, and shadow linked religion with sky science. <short pause> Honouring Chaac and Kukulkan inspired Maya builders to align pyramids with the sun and seasons . Temples worked as giant stone calendars guiding farming life."
+          }
+        ],
+        "takeaway": "Inspired by Popol Vuh creation stories, rain god Chaac, and Kukulkan, Maya builders designed Chichén Itzá's 365-step pyramid to cast an equinox serpent shadow.",
+        "vocab": [
+          [
+            "1. Popol Vuh",
+            "Sacred Maya book telling how gods shaped humans from maize dough."
+          ],
+          [
+            "2. Chaac",
+            "Long-nosed Maya god of rain, thunder, and life-giving storms."
+          ],
+          [
+            "3. Equinox",
+            "Spring and autumn days when daytime and nighttime are equal."
+          ]
+        ],
+        "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Inspired by Popol Vuh creation stories, rain god Chaac, and Kukulkan, Maya builders designed Chichén Itzá's 365-step pyramid to cast an equinox serpent shadow."
+      }
     },
     {
       "id": "lesson_6",
@@ -4990,7 +5415,93 @@ window.UNIT_DATA = {
         "position": "center 46%"
       },
       "banner_image": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
-      "enquiry": "Why did southern Maya cities empty—and why didn’t the Maya vanish?"
+      "enquiry": "Why did southern Maya cities empty—and why didn’t the Maya vanish?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "ks2_maya_civilisation_l06_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 6",
+        "datesBadge": "AD 800 – Today",
+        "topicLabel": "Enquiry 06: The AD 900 Mystery & Seven Million Living Maya",
+        "title": "Why Did Southern Maya Cities Empty—and Why Didn't the Maya Vanish?",
+        "spokenTitle": "Why did southern Maya cities empty, and why didn't the Maya vanish?",
+        "thumbUrl": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
+        "bridges": [
+          "Move North",
+          "Living Culture",
+          "Never Vanished"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Three Linked Causes Around 900",
+            "date": "AD 800–950",
+            "img": "/units/ks2_maya_civilisation/assets/tikal_north_acropolis_limestone_ruins.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Severe Drought, Deforestation & Royal Wars",
+            "connective": "Why did southern Maya cities empty, and why didn't the Maya vanish?",
+            "html": "Between AD 800 and 950, families gradually left southern cities like <strong>Tikal and Palenque</strong>. Snail-shell clues show a <strong>multi-causal mix</strong> of severe <strong>drought, deforestation, and warfare</strong>.",
+            "paired_prose_hash": "cfa604827d",
+            "spoken": "Why did southern Maya cities empty, and why didn't the Maya vanish? <short pause> Between AD 800 and 950, families gradually left southern cities like Tikal and Palenque . Snail-shell clues show a multi-causal mix of severe drought, deforestation, and warfare ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Thriving Northern Sea Cities",
+            "date": "AD 950–1520",
+            "img": "/units/ks2_maya_civilisation/assets/tulum_cliffside_coastal_maya_temple.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Cenote Cities & Caribbean Sea-Canoe Ports",
+            "connective": "Crucially, the Maya people did not disappear when southern plazas fell quiet.",
+            "html": "Families moved north towards deep Yucatán cenotes at <strong>Chichén Itzá and Uxmal</strong>. During the <strong>Postclassic era</strong>, cliffside <strong>Tulum</strong> bustled with giant sea-canoe traders.",
+            "paired_prose_hash": "8167f8440d",
+            "spoken": "Crucially, the Maya people did not disappear when southern plazas fell quiet. <short pause> Families moved north towards deep Yucatán cenotes at Chichén Itzá and Uxmal . During the Postclassic era , cliffside Tulum bustled with giant sea-canoe traders."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "7 Million Living Maya Today",
+            "date": "1500s – Today",
+            "img": "/units/ks2_maya_civilisation/assets/guatemala_maya_backstrap_loom_weaver.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "30+ Mayan Languages, Maize & Huipil Weaving",
+            "connective": "Despite Spanish invasion in the 1500s, Maya communities endured with pride.",
+            "html": "Island Maya resisted conquest until 1697, and over <strong>seven million Maya</strong> thrive today. Families speak <strong>thirty Mayan languages</strong>, weave bright <strong>huipil blouses</strong>, and read ancient glyphs aloud!",
+            "paired_prose_hash": "3118c34c9e",
+            "spoken": "Despite Spanish invasion in the 1500s, Maya communities endured with pride. <short pause> Island Maya resisted conquest until 1697, and over seven million Maya thrive today. Families speak thirty Mayan languages , weave bright huipil blouses , and read ancient glyphs aloud!"
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Cities Shifted, People Endured",
+            "date": "AD 900 – Today",
+            "img": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Ancient Heritage Alive Across Five Countries",
+            "connective": "History's evidence shatters the old myth that the Maya mysteriously vanished.",
+            "html": "Drought and war emptied <strong>southern jungle capitals</strong>, yet northern ports boomed for centuries. Today, <strong>living Maya communities</strong> proudly keep their languages, farming, and <strong>heritage alive</strong>.",
+            "spoken": "History's evidence shatters the old myth that the Maya mysteriously vanished. <short pause> Drought and war emptied southern jungle capitals , yet northern ports boomed for centuries. Today, living Maya communities proudly keep their languages, farming, and heritage alive ."
+          }
+        ],
+        "takeaway": "Drought, deforestation, and warfare emptied southern cities around AD 900, yet northern ports like Tulum thrived and over seven million Maya live proudly today.",
+        "vocab": [
+          [
+            "1. Drought",
+            "Long stretch of dry years that emptied reservoirs and hurt crops."
+          ],
+          [
+            "2. Multi-causal",
+            "Explaining big change through several linked causes working together."
+          ],
+          [
+            "3. Huipil",
+            "Traditional Maya blouse hand-woven on a backstrap loom."
+          ]
+        ],
+        "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Drought, deforestation, and warfare emptied southern cities around AD 900, yet northern ports like Tulum thrived and over seven million Maya live proudly today."
+      }
     }
   ],
   "key_individuals": [

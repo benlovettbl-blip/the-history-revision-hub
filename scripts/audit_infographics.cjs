@@ -59,6 +59,13 @@ const units = [
   'great_war_part2',
   'the_shoah',
   'post_war_britain',
+  'ks2_stone_to_iron_age',
+  'ks2_romans',
+  'ks2_anglo_saxons_vikings',
+  'ks2_ancient_egypt',
+  'ks2_ancient_greece',
+  'ks2_early_islamic_baghdad',
+  'ks2_maya_civilisation',
   'ks2_ww2',
 ];
 
@@ -117,7 +124,7 @@ for (const unitId of units) {
         console.error(`  ❌ ${prefix} Missing or invalid authentic thumbUrl on disk: ${item.thumbUrl}`);
         totalErrors++;
       }
-      const expectedCardCount = unitId === 'ks2_ww2' ? 4 : 6;
+      const expectedCardCount = unitId.startsWith('ks2_') ? 4 : 6;
       if (!Array.isArray(item.keyPoints) || item.keyPoints.length !== expectedCardCount) {
         console.error(`  ❌ ${prefix} Expected ${expectedCardCount} keyPoints, got ${item.keyPoints?.length || 0}`);
         totalErrors++;

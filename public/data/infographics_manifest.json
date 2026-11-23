@@ -2226,7 +2226,7 @@
       "type": "visual_story_sheet",
       "aspect": "landscape",
       "image": "",
-      "thumbUrl": "/units/great_war/assets/map_africa_1914.png",
+      "thumbUrl": "/images/great_war/maps/gw1_map_l2_scramble_africa_morocco_crises_1884_1911.svg",
       "interactiveUrl": "/units/great_war/visual_sheets/lesson_02_visual_story.html",
       "keyPoints": [
         "Stage 1 (1884–1885): Carving Up Africa in Berlin — “Effective Occupation” Triggered Colonial Rush",
@@ -2266,7 +2266,7 @@
       "type": "visual_story_sheet",
       "aspect": "landscape",
       "image": "",
-      "thumbUrl": "/units/great_war/assets/balkans_1914_simple_map.png",
+      "thumbUrl": "/images/great_war/gw1_l4_b3_bosnian_crisis_1908_petit_journal.jpg",
       "interactiveUrl": "/units/great_war/visual_sheets/lesson_04_visual_story.html",
       "keyPoints": [
         "Stage 1 (1879–1882): The Central Triple Alliance — Germany, Austria-Hungary & Italy Allied (1882)",
@@ -2286,7 +2286,7 @@
       "type": "visual_story_sheet",
       "aspect": "landscape",
       "image": "",
-      "thumbUrl": "/units/great_war/assets/archduke_sarajevo_car_1914.jpg",
+      "thumbUrl": "/images/great_war/gw1_l5_b0_franz_ferdinand_sarajevo_car_1914.jpg",
       "interactiveUrl": "/units/great_war/visual_sheets/lesson_05_visual_story.html",
       "keyPoints": [
         "Stage 1 (28 June 1914): Two Shots in Sarajevo — Fatal Wrong Turn Beside Gavrilo Princip",
@@ -3433,6 +3433,776 @@
         "Stage 4 (Oct 1990–July 1991): Reunification & Pact Ends — 3 Oct 1990 Germany • 1 July 1991 Pact Ends",
         "Stage 5 (1990–Aug 1991): Shortages & August Coup — Baltic Secession • Yeltsin Defeats Coup",
         "Stage 6 (25 Dec 1991): Gorbachev Resigns — CIS Replaces USSR • 15 New States"
+      ]
+    }
+  ],
+  "ks2_stone_to_iron_age": [
+    {
+      "unit": "ks2_stone_to_iron_age",
+      "lessonId": "lesson_1",
+      "slug": "ks2_stone_to_iron_age_l01_visual_story_sheet",
+      "title": "How Did Stone Age Hunters Survive and How Did Britain Become an Island? (c. 850,000–4000 BC)",
+      "topic": "Enquiry 01: Ice Age Hunters & Sunken Doggerland",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg",
+      "interactiveUrl": "/units/ks2_stone_to_iron_age/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 850,000 BC): Ice Age Caves & Flint Handaxes — Happisburgh Footprints & Chipped Flint Tools",
+        "Stage 2 (c. 10,000 BC): Cheddar Man & Antler Masks — Gough's Cave Skeleton & Star Carr Lake Camp",
+        "Stage 3 (c. 6500 BC): Sinking of Green Doggerland — Melting Ice Floods the North Sea Land Bridge",
+        "⚡ Outcome (By 4000 BC): Britain Becomes an Island — Mammoth Teeth Dredged from the Sea Floor"
+      ]
+    },
+    {
+      "unit": "ks2_stone_to_iron_age",
+      "lessonId": "lesson_2",
+      "slug": "ks2_stone_to_iron_age_l02_visual_story_sheet",
+      "title": "How Did Farming and Stone Villages Change Stone Age Life? (c. 4000–2500 BC)",
+      "topic": "Enquiry 02: The First Farmers & Skara Brae",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg",
+      "interactiveUrl": "/units/ks2_stone_to_iron_age/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 4000 BC): Boats Bring the First Farms — Wheat, Sheep & Polished Stone Axes Arrive",
+        "Stage 2 (c. 3100 BC): Storm Uncovers Skara Brae — 8 Snug Orkney Flagstone Homes Found in 1850",
+        "Stage 3 (c. 3650 BC): West Kennet Long Barrow — Nearly 50 Ancestors Placed in Stone Chambers",
+        "⚡ Outcome (By 2500 BC): From Roaming Camps to Villages — Year-Round Villages, Pottery & Ancestor Tombs"
+      ]
+    },
+    {
+      "unit": "ks2_stone_to_iron_age",
+      "lessonId": "lesson_3",
+      "slug": "ks2_stone_to_iron_age_l03_visual_story_sheet",
+      "title": "How and Why Did Stone Age People Build Giant Stonehenge? (c. 3000–2200 BC)",
+      "topic": "Enquiry 03: Secrets of Stonehenge",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg",
+      "interactiveUrl": "/units/ks2_stone_to_iron_age/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 3000–2500 BC): Chalk Henge & Welsh Bluestones — 80 Bluestones Hauled 140 Miles from Wales",
+        "Stage 2 (c. 2500 BC): Sarsen Arches & Feast Village — 25-Tonne Sarsens Locked into Tall Trilithons",
+        "Stage 3 (c. 2500–2200 BC): The Heel Stone & Solstice Sun — Aligned with Midsummer & Midwinter Sunbeams",
+        "⚡ Outcome (By 2200 BC): Giant Stone Calendar & Shrine — Built Over Centuries Without Metal or Wheels"
+      ]
+    },
+    {
+      "unit": "ks2_stone_to_iron_age",
+      "lessonId": "lesson_4",
+      "slug": "ks2_stone_to_iron_age_l04_visual_story_sheet",
+      "title": "How Did Beaker Newcomers and Bronze Metal Change Life in Britain? (c. 2500–1200 BC)",
+      "topic": "Enquiry 04: Enter the Bronze Age & Beaker People",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
+      "interactiveUrl": "/units/ks2_stone_to_iron_age/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 2400 BC): Beaker Folk & Copper Mines — Great Orme Copper & Cornish Tin Smelted",
+        "Stage 2 (c. 2100 BC): Casting Tough Golden Bronze — 9 Parts Copper + 1 Part Tin in Stone Moulds",
+        "Stage 3 (c. 2300 BC): Gold Capes & Amesbury Archer — 100+ Grave Goods & Tooth Clues from the Alps",
+        "⚡ Outcome (By 1500 BC): Trade Routes End the Stone Age — Metal Axes, Wider Farmland & European Trade"
+      ]
+    },
+    {
+      "unit": "ks2_stone_to_iron_age",
+      "lessonId": "lesson_5",
+      "slug": "ks2_stone_to_iron_age_l05_visual_story_sheet",
+      "title": "What Did the Sunken Village at Must Farm Reveal About Bronze Age Homes? (c. 1200–800 BC)",
+      "topic": "Enquiry 05: Must Farm — \"Britain's Pompeii\"",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_age_roundhouse.jpg",
+      "interactiveUrl": "/units/ks2_stone_to_iron_age/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 900 BC): Stilt Homes & Sudden Fire — Airless River Mud Seals 'Britain's Pompeii'",
+        "Stage 2 (c. 900 BC): Porridge Spoons & Oldest Wheel — 1-Metre Ash Wheel, Cloth & Wicker Eel Traps",
+        "Stage 3 (c. 1550–900 BC): Sacred Waters & Dover Boat — Oak Planks Stitched Together with Yew Twigs",
+        "⚡ Outcome (Late Bronze Age): A Snapshot of Bronze Age Life — Skilled Carpenters, Weavers & Sea Traders"
+      ]
+    },
+    {
+      "unit": "ks2_stone_to_iron_age",
+      "lessonId": "lesson_6",
+      "slug": "ks2_stone_to_iron_age_l06_visual_story_sheet",
+      "title": "How Did Iron Tools and Giant Hillforts Shape Celtic Britain? (c. 800 BC–AD 43)",
+      "topic": "Enquiry 06: Iron Age Celts & Giant Hillforts",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
+      "interactiveUrl": "/units/ks2_stone_to_iron_age/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 800–400 BC): Iron Ploughs & Roundhouses — Blacksmith Furnaces, Querns & Thatch Homes",
+        "Stage 2 (c. 400–100 BC): Celtic Tribes & Maiden Castle — Towering Chalk Ramparts & Slingshot Gates",
+        "Stage 3 (100 BC–AD 43): Gold Torcs, Coins & AD 43 — Snettisham Great Torc & Claudius's Legions",
+        "⚡ Outcome (AD 43): Written History Begins in AD 43 — 800,000+ Years of British Prehistory Close"
+      ]
+    }
+  ],
+  "ks2_romans": [
+    {
+      "unit": "ks2_romans",
+      "lessonId": "lesson_1",
+      "slug": "ks2_romans_l01_visual_story_sheet",
+      "title": "How Did Iron Age Celts Live Before the Roman Army Arrived? (c. 500 BC–AD 43)",
+      "topic": "Enquiry 01: Celtic Britain Before the Romans",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_romans/assets/snettisham_great_torc.jpg",
+      "interactiveUrl": "/units/ks2_romans/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 500–54 BC): Separate Tribes & Hillforts — Iceni, Brigantes & Maiden Castle Ramparts",
+        "Stage 2 (Iron Age): Warm Thatched Roundhouses — Wattle-and-Daub Walls & No-Chimney Thatch",
+        "Stage 3 (c. 150 BC–AD 43): Gold Torcs, Druids & Traders — Cornish Tin, Gold Staters & Channel Ships",
+        "⚡ Outcome (Before AD 43): A Rich Island Tempts Rome — Fertile Wheat Farms, Metal Mines & Tribal Gold"
+      ]
+    },
+    {
+      "unit": "ks2_romans",
+      "lessonId": "lesson_2",
+      "slug": "ks2_romans_l02_visual_story_sheet",
+      "title": "Why and How Did Emperor Claudius Invade Britain in AD 43? (AD 43)",
+      "topic": "Enquiry 02: Emperor Claudius Invades Britain",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_romans/assets/roman_testudo_formation.jpg",
+      "interactiveUrl": "/units/ks2_romans/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 41–43): Claudius Seeks Glory & Metals — Silver, Tin, Lead, Wheat & Roman Taxes",
+        "Stage 2 (AD 43): Tortoise Shields & Legionaries — 20-Mile Marches, Pilum Javelins & Testudo",
+        "Stage 3 (Summer AD 43): Richborough & War Elephants — 4 Legions Defeat Caratacus & Enter Colchester",
+        "⚡ Outcome (From AD 43): Southern Britain Joins Rome — 11 Kings Surrender in New Province Britannia"
+      ]
+    },
+    {
+      "unit": "ks2_romans",
+      "lessonId": "lesson_3",
+      "slug": "ks2_romans_l03_visual_story_sheet",
+      "title": "Why Did Queen Boudicca Rebel Against Rome and Why Did She Lose? (AD 60–61)",
+      "topic": "Enquiry 03: Boudicca's Iceni Rebellion",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_romans/assets/boudicca_chariot_westminster.jpg",
+      "interactiveUrl": "/units/ks2_romans/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 60): Broken Promises to the Iceni — Iceni Lands Seized After King Prasutagus Dies",
+        "Stage 2 (AD 60): Three Roman Towns Burned Red — Colchester, Londinium & Verulamium Torched",
+        "Stage 3 (AD 61): Battle of Watling Street — 10,000 Legionaries Win Narrow Valley Clash",
+        "⚡ Outcome (After AD 61): Stone Walls Secure Britannia — Londinium Rebuilt Inside Strong Stone Walls"
+      ]
+    },
+    {
+      "unit": "ks2_romans",
+      "lessonId": "lesson_4",
+      "slug": "ks2_romans_l04_visual_story_sheet",
+      "title": "Why Did Hadrian Build a 73-Mile Wall and Who Guarded It? (AD 122–400)",
+      "topic": "Enquiry 04: Hadrian's Wall & Frontier Soldiers",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-ancient/romans_l4_blk0_housesteads_crags.jpg",
+      "interactiveUrl": "/units/ks2_romans/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (From AD 122): 73 Miles of Stone Frontier — 80 Roman Miles, Milecastles & 16 Stone Forts",
+        "Stage 2 (c. AD 100): Vindolanda's Wooden Letters — Birthday Invite & Warm Socks Saved in Wet Mud",
+        "Stage 3 (2nd–4th Century): Troops from Three Continents — Europe, Syria & North Africa Guard the North",
+        "⚡ Outcome (AD 122–400): Empire Border & Busy Towns — Rome's Most Famous Frontier Monument in Britain"
+      ]
+    },
+    {
+      "unit": "ks2_romans",
+      "lessonId": "lesson_5",
+      "slug": "ks2_romans_l05_visual_story_sheet",
+      "title": "How Did Roman Roads, Baths, and Towns Change Life in Britain? (AD 43–400)",
+      "topic": "Enquiry 05: Life in Roman Towns — Roads, Baths & Villas",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_romans/assets/great_bath_aquae_sulis.jpg",
+      "interactiveUrl": "/units/ks2_romans/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1st–4th Century): Straight Roads & Town Forums — 10,000 Miles of Stone Highways & Amphitheatres",
+        "Stage 2 (1st–4th Century): Aqueducts, Baths & Hypocausts — Aquae Sulis Baths & Underfloor Hot-Air Pillars",
+        "Stage 3 (2nd–4th Century): Villas vs Country Roundhouses — 9 in 10 Rural Britons Still Farmed in Thatch",
+        "⚡ Outcome (Romano-British Era): New Comforts & Unequal Change — Stone Towns & Villas Alongside Celtic Farms"
+      ]
+    },
+    {
+      "unit": "ks2_romans",
+      "lessonId": "lesson_6",
+      "slug": "ks2_romans_l06_visual_story_sheet",
+      "title": "Why Did the Romans Leave Britain and What Did They Leave Behind? (AD 410 & Beyond)",
+      "topic": "Enquiry 06: Farewell to the Legions & Roman Legacy",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_romans/assets/mildenhall_great_silver_dish.jpg",
+      "interactiveUrl": "/units/ks2_romans/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 400–410): Raiders Strike & AD 410 Reply — Emperor Honorius Tells Towns to Guard Themselves",
+        "Stage 2 (After AD 410): Crumbling Baths & Silver Hoards — Hoxne & Mildenhall Silver Buried for Safety",
+        "Stage 3 (AD 410–Today): Roman Clues All Around Today — London, Straight A-Roads, Latin ABC & Calendar",
+        "⚡ Outcome (Lasting Legacy): Four Centuries That Shaped Us — Roads, Cities, Language & Laws Still Used Today"
+      ]
+    }
+  ],
+  "ks2_anglo_saxons_vikings": [
+    {
+      "unit": "ks2_anglo_saxons_vikings",
+      "lessonId": "lesson_1",
+      "slug": "ks2_anglo_saxons_vikings_l01_visual_story_sheet",
+      "title": "Why Did Angles, Saxons, and Jutes Cross the Sea to Settle in Britain? (c. AD 410–600)",
+      "topic": "Enquiry 01: Angles, Saxons & Jutes Settle in Britain",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+      "interactiveUrl": "/units/ks2_anglo_saxons_vikings/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 410–500): North Sea Push & Pull Reasons — Flooded Homelands Push; Rich British Farms Pull",
+        "Stage 2 (5th–6th Century): Timber Villages & Mead Halls — West Stow Craft Huts & Roaring Hearth Feasts",
+        "Stage 3 (c. AD 550–650): Seven Kingdoms & Old English — Heptarchy Kingdoms, -ham/-ton Towns & Weekdays",
+        "⚡ Outcome (By AD 600): A New Anglo-Saxon Culture — Language, Place-Names & Kingdoms Take Root"
+      ]
+    },
+    {
+      "unit": "ks2_anglo_saxons_vikings",
+      "lessonId": "lesson_2",
+      "slug": "ks2_anglo_saxons_vikings_l02_visual_story_sheet",
+      "title": "What Do Sutton Hoo and Monasteries Tell Us About Saxon Britain? (c. AD 597–750)",
+      "topic": "Enquiry 02: Sutton Hoo & Christian Monasteries",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+      "interactiveUrl": "/units/ks2_anglo_saxons_vikings/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 625 / 1939): Ghost Ship at Sutton Hoo — 27-Metre Ship Outline & Royal Helmet in Mound 1",
+        "Stage 2 (AD 597–635): Canterbury & Holy Island — Augustine in Kent & Monk Aidan on Lindisfarne",
+        "Stage 3 (AD 664–731): Painted Gospels & Monk Bede — Lindisfarne Gospels & Bede's English History",
+        "⚡ Outcome (By AD 750): Warrior Kings & Book Learning — Dazzling Craftwork, Trade & Written History"
+      ]
+    },
+    {
+      "unit": "ks2_anglo_saxons_vikings",
+      "lessonId": "lesson_3",
+      "slug": "ks2_anglo_saxons_vikings_l03_visual_story_sheet",
+      "title": "Why Did Vikings Raid Britain and How Did They Conquer Kingdoms? (AD 793–878)",
+      "topic": "Enquiry 03: Viking Longships, Lindisfarne & Conquest",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+      "interactiveUrl": "/units/ks2_anglo_saxons_vikings/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (8 June AD 793): Shock Raid on Lindisfarne — Unarmed Island Monastery Looted for Silver",
+        "Stage 2 (8th–9th Century): Fast Clinker-Built Longships — 1-Metre Shallow Draught Rows Up Inland Rivers",
+        "Stage 3 (AD 865–877): The Great Heathen Army Lands — Jorvik, East Anglia & Mercia Seized; Wessex Left",
+        "⚡ Outcome (By AD 877): Raiders Become Conquerors — Only Wessex Stands Against Viking Rule"
+      ]
+    },
+    {
+      "unit": "ks2_anglo_saxons_vikings",
+      "lessonId": "lesson_4",
+      "slug": "ks2_anglo_saxons_vikings_l04_visual_story_sheet",
+      "title": "How Did King Alfred Save Wessex from Viking Conquest in AD 878? (AD 871–899)",
+      "topic": "Enquiry 04: Alfred the Great, Burhs & The Danelaw",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-ancient/asv_l4_blk1_alfred_statue_winchester.jpg",
+      "interactiveUrl": "/units/ks2_anglo_saxons_vikings/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (Jan–May AD 878): Athelney Marshes to Edington — Somerset Marsh Hideout & Shield-Wall Victory",
+        "Stage 2 (AD 878–886): Peace Treaty & The Danelaw — Guthrum Baptised & Border Set on Watling Street",
+        "Stage 3 (AD 880–899): 33 Burhs, Ships & Schools — No Village Over 20 Miles from a Walled Burh",
+        "⚡ Outcome (By AD 899): Why Alfred Earned 'The Great' — Only English Monarch Named 'The Great'"
+      ]
+    },
+    {
+      "unit": "ks2_anglo_saxons_vikings",
+      "lessonId": "lesson_5",
+      "slug": "ks2_anglo_saxons_vikings_l05_visual_story_sheet",
+      "title": "Were Vikings Only Fierce Raiders or Peaceful Traders and Settlers? (c. AD 876–1000)",
+      "topic": "Enquiry 05: Everyday Viking Life in Jorvik",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
+      "interactiveUrl": "/units/ks2_anglo_saxons_vikings/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 876–950): 40,000 Finds Under Coppergate — Wet York Peat Saves Shoes, Skates & Antler Combs",
+        "Stage 2 (9th–10th Century): Baghdad Coins & Ocean Knarrs — Byzantine Silk, Arabic Dirhams & North Atlantic",
+        "Stage 3 (9th–11th Century): Farms, Women & Thing Laws — Household Keys, Tynwald Hill & Old Norse Words",
+        "⚡ Outcome (Danelaw Era): More Than Just Fierce Raiders — Craftworkers, Global Merchants & Law-Makers"
+      ]
+    },
+    {
+      "unit": "ks2_anglo_saxons_vikings",
+      "lessonId": "lesson_6",
+      "slug": "ks2_anglo_saxons_vikings_l06_visual_story_sheet",
+      "title": "How Was One England Forged and Why Did 1066 Change Everything? (AD 900–1066)",
+      "topic": "Enquiry 06: Aethelflaed, Athelstan, Cnut & 1066",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+      "interactiveUrl": "/units/ks2_anglo_saxons_vikings/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 911–939): Aethelflaed & King Athelstan — Derby Recaptured & First King of All England",
+        "Stage 2 (AD 991–1065): Danegeld & King Cnut's Empire — England, Denmark & Norway Ruled Together",
+        "Stage 3 (Jan–Oct 1066): Three Rivals Clash in 1066 — Stamford Bridge (25 Sept) & Hastings (14 Oct)",
+        "⚡ Outcome (After Oct 1066): Saxon & Viking Eras Close — Norman Conquest Begins a New Chapter"
+      ]
+    }
+  ],
+  "ks2_ancient_egypt": [
+    {
+      "unit": "ks2_ancient_egypt",
+      "lessonId": "lesson_1",
+      "slug": "ks2_ancient_egypt_l01_visual_story_sheet",
+      "title": "Why Did Ancient Egypt Grow So Strong Beside the River Nile? (c. 3500–2700 BC)",
+      "topic": "Enquiry 01: Four River Cradles & The Gift of the Nile",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_egypt/assets/nile_black_red_land_luxor.jpg",
+      "interactiveUrl": "/units/ks2_ancient_egypt/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 3500 BC): River Cradles & Black Silt — Annual Summer Flood Leaves Rich Kemet Mud",
+        "Stage 2 (c. 3500–3100 BC): Shaduf Levers & Nile Boats — Wheat, Flax, Papyrus Reeds & River Highway",
+        "Stage 3 (c. 3100 BC): King Narmer's Double Crown — Upper & Lower Egypt Joined Into One Land",
+        "⚡ Outcome (From 3100 BC): Thriving Kingdom on the Nile — 3,000 Years of Harvests, Cities & Pharaohs"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_egypt",
+      "lessonId": "lesson_2",
+      "slug": "ks2_ancient_egypt_l02_visual_story_sheet",
+      "title": "How and Why Did Egyptians Build the Giant Pyramids of Giza? (c. 2670–2500 BC)",
+      "topic": "Enquiry 02: Pyramids of Giza & The Great Sphinx",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg",
+      "interactiveUrl": "/units/ks2_ancient_egypt/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 2670–2560 BC): Imhotep & Khufu's Pyramid — 146m Tall from 2.3 Million Limestone Blocks",
+        "Stage 2 (c. 2560 BC): Barges & Wet-Sand Sledges — Water Poured Ahead of Wooden Sledges",
+        "Stage 3 (c. 2560–2500 BC): Paid Builders & Great Sphinx — Bakeries, Fish Rations & Doctor Care Found",
+        "⚡ Outcome (For 3,800+ Years): Tallest Wonders on Earth — Giza Pyramids & Sphinx Still Stand Today"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_egypt",
+      "lessonId": "lesson_3",
+      "slug": "ks2_ancient_egypt_l03_visual_story_sheet",
+      "title": "What Was Daily Life Like and How Were Hieroglyphs Cracked? (c. 2500–196 BC / 1822)",
+      "topic": "Enquiry 03: Scribes, Hieroglyphs & Everyday Life",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_egypt/assets/rosetta_stone_three_scripts.jpg",
+      "interactiveUrl": "/units/ks2_ancient_egypt/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 2500–1200 BC): Egypt's Tall Social Pyramid — Pharaoh & Viziers Above Millions of Farmers",
+        "Stage 2 (Daily Life): Mud-Brick Homes, Linen & Senet — Whitewashed Walls, Flat Roofs & 30-Square Senet",
+        "Stage 3 (196 BC–AD 1822): Scribes & The Rosetta Stone — Champollion Matches Greek to Royal Cartouches",
+        "⚡ Outcome (Since AD 1822): Egypt's Own Voices Unlocked — 3,000 Years of Scrolls & Temples Read Again"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_egypt",
+      "lessonId": "lesson_4",
+      "slug": "ks2_ancient_egypt_l04_visual_story_sheet",
+      "title": "Why Did Ancient Egyptians Make Mummies for the Afterlife? (c. 2000–1000 BC)",
+      "topic": "Enquiry 04: Gods, Mummies & Weighing the Heart",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
+      "interactiveUrl": "/units/ks2_ancient_egypt/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 2000–1000 BC): Gods & Twin Spirits Ka and Ba — Ra, Osiris, Isis, Horus & Tomb Guardian Anubis",
+        "Stage 2 (70-Day Process): 70 Days of Natron & Linen — 4 Canopic Jars, 40 Days in Natron & Shabtis",
+        "Stage 3 (Afterlife Trial): Book of the Dead & Scales — Heart Balanced Against Ma'at's Feather of Truth",
+        "⚡ Outcome (Eternal Life): Forever in the Field of Reeds — Kind Light Hearts Pass Osiris Into Paradise"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_egypt",
+      "lessonId": "lesson_5",
+      "slug": "ks2_ancient_egypt_l05_visual_story_sheet",
+      "title": "What Made Hatshepsut, Nefertiti, and Ramesses II Famous Rulers? (c. 1500–1213 BC)",
+      "topic": "Enquiry 05: Hatshepsut, Nefertiti & Ramesses II",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
+      "interactiveUrl": "/units/ks2_ancient_egypt/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 1479–1458 BC): Hatshepsut Sails to Punt — Female Pharaoh Brings Back Frankincense Trees",
+        "Stage 2 (c. 1353–1336 BC): Nefertiti & Sun-Disc Aten — New Capital at Amarna & Thutmose's Painted Bust",
+        "Stage 3 (1279–1213 BC): Ramesses II & Kadesh Peace — 66-Year Reign & World's Oldest Written Treaty",
+        "⚡ Outcome (c. 1550–1213 BC): Peak of Egypt's New Kingdom — Trade Voyages, Bold Art & Diplomacy in Stone"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_egypt",
+      "lessonId": "lesson_6",
+      "slug": "ks2_ancient_egypt_l06_visual_story_sheet",
+      "title": "Why Did Tutankhamun's Tomb Survive and How Did Pharaonic Egypt End? (1332–30 BC & AD 1922)",
+      "topic": "Enquiry 06: Tutankhamun's Tomb & Cleopatra VII",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_throne.jpg",
+      "interactiveUrl": "/units/ks2_ancient_egypt/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1332–1323 BC): Boy-King Hidden Under Rubble — KV62 Steps Buried Safely in Valley of the Kings",
+        "Stage 2 (November 1922): Carter & KV62's 5,000 Finds — 16 Buried Steps Lead to 11kg Gold Death Mask",
+        "Stage 3 (332–30 BC): Cleopatra VII & Mighty Rome — 9 Languages Spoken Before Rome Conquers in 30 BC",
+        "⚡ Outcome (30 BC–Today): A Civilisation Remembered — 3,000+ Years of Pharaohs, Tombs & Wonder"
+      ]
+    }
+  ],
+  "ks2_ancient_greece": [
+    {
+      "unit": "ks2_ancient_greece",
+      "lessonId": "lesson_1",
+      "slug": "ks2_ancient_greece_l01_visual_story_sheet",
+      "title": "Why Was Ancient Greece Split into Rival City-States, Yet United by Culture? (c. 800–500 BC)",
+      "topic": "Enquiry 01: Mountains, Islands & Rival City-States (c. 800–500 BC)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
+      "interactiveUrl": "/units/ks2_ancient_greece/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 2000–500 BC): Mountains, Islands & Poleis — 1,000+ Aegean Islands & Rival City-States",
+        "Stage 2 (c. 800–500 BC): High Acropolis & Busy Agora — Fortified Hilltop Temples & Open Market",
+        "Stage 3 (From c. 800 BC): 24 Letters & Sea Trade — 24-Letter Alphabet, Olive Oil & Pottery",
+        "⚡ Outcome (By 500 BC): Rival Towns, One Greek Family — Shared Language, Gods & Alphabet Across Sea"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_greece",
+      "lessonId": "lesson_2",
+      "slug": "ks2_ancient_greece_l02_visual_story_sheet",
+      "title": "How Different Was Daily Life in Democratic Athens and Warrior Sparta? (c. 508–430 BC)",
+      "topic": "Enquiry 02: Growing Up in Athens and Sparta (c. 508–430 BC)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
+      "interactiveUrl": "/units/ks2_ancient_greece/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (From c. 508 BC): People-Power on the Pnyx — 500 Random Jurors & Ostrakon Shard Votes",
+        "Stage 2 (From Age 7): Sparta's Tough Agoge Barracks — 2 Kings, Helot Farms & Age-7 Army Drills",
+        "Stage 3 (5th Century BC): Schoolrooms vs Outdoor Sport — Athenian Tutors vs Spartan Women Landowners",
+        "⚡ Outcome (c. 508–430 BC): Votes & Art vs Army Order — Sea-Trading Democracy vs Land Army Power"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_greece",
+      "lessonId": "lesson_3",
+      "slug": "ks2_ancient_greece_l03_visual_story_sheet",
+      "title": "How Did Greek Gods Inspire Temples, Myths, and the Olympic Games? (776–400 BC)",
+      "topic": "Enquiry 03: Mount Olympus, Myths & The Ancient Olympics (776–400 BC)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
+      "interactiveUrl": "/units/ks2_ancient_greece/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (400s BC): Mount Olympus & Marble Temples — 12 Olympian Gods & Athens's Marble Parthenon",
+        "Stage 2 (c. 600–400 BC): Delphi's Oracle & Vase Myths — Apollo's Priestess & Painted Clay Story Jars",
+        "Stage 3 (From 776 BC): 776 BC: Games at Olympia — Sacred Truce, Chariots & Wild-Olive Crowns",
+        "⚡ Outcome (776–400 BC): Faith Uniting Rival Greeks — One Stadium Track & Shared Hero Stories"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_greece",
+      "lessonId": "lesson_4",
+      "slug": "ks2_ancient_greece_l04_visual_story_sheet",
+      "title": "How Did Tiny Greek City-States Defeat the Giant Persian Empire? (490–479 BC)",
+      "topic": "Enquiry 04: Marathon, Thermopylae & Salamis (490–479 BC)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
+      "interactiveUrl": "/units/ks2_ancient_greece/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (490 BC): 490 BC: Phalanx at Marathon — Shield-Wall Charge & 26-Mile Victory Run",
+        "Stage 2 (480 BC): 480 BC: Stand at Thermopylae — 300 Spartans Hold Narrow Pass for 3 Days",
+        "Stage 3 (480–479 BC): Triremes Win at Salamis — 170 Oarsmen & Bronze Rams in Narrow Strait",
+        "⚡ Outcome (After 479 BC): United City-States Stay Free — Teamwork, Smart Tactics & Local Geography"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_greece",
+      "lessonId": "lesson_5",
+      "slug": "ks2_ancient_greece_l05_visual_story_sheet",
+      "title": "How Did Greek Thinkers, Doctors, and Writers Change Human Knowledge? (c. 460–322 BC)",
+      "topic": "Enquiry 05: Greek Theatre, Philosophy, Maths & Medicine (c. 460–322 BC)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
+      "interactiveUrl": "/units/ks2_ancient_greece/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 460–330 BC): Hillside Theatres & Masks — 14,000 Seats at Epidaurus for Greek Plays",
+        "Stage 2 (c. 430–322 BC): Socrates, Plato & Aristotle — Questioning Beliefs & Sorting Nature's Facts",
+        "Stage 3 (c. 420–212 BC): Hippocrates, Geometry & Eureka — Bedside Notes, Triangles & Clever Levers",
+        "⚡ Outcome (Golden Age Legacy): Testing Ideas Through Reason — Roots of Modern Drama, Medicine & Maths"
+      ]
+    },
+    {
+      "unit": "ks2_ancient_greece",
+      "lessonId": "lesson_6",
+      "slug": "ks2_ancient_greece_l06_visual_story_sheet",
+      "title": "How Did Alexander Spread Greek Ideas That Still Shape Our World Today? (336 BC – Today)",
+      "topic": "Enquiry 06: Alexander the Great & Greece’s Legacy Today (336–146 BC)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
+      "interactiveUrl": "/units/ks2_ancient_greece/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (336–323 BC): Alexander & Vast Conquests — 11 Unbeaten Years Across Egypt to India",
+        "Stage 2 (323–146 BC): Alexandria's Library & Rome — Hundreds of Thousands of Scrolls & 146 BC",
+        "Stage 3 (1896 – Today): Votes, Words & 1896 Olympics — 14 Nations Revive Modern Olympics in Athens",
+        "⚡ Outcome (2,000+ Year Legacy): Greek Ideas Across the World — Democracy, Science, Architecture & Sport"
+      ]
+    }
+  ],
+  "ks2_early_islamic_baghdad": [
+    {
+      "unit": "ks2_early_islamic_baghdad",
+      "lessonId": "lesson_1",
+      "slug": "ks2_early_islamic_baghdad_l01_visual_story_sheet",
+      "title": "Why Was the Round City of Baghdad Built, and How Big Did It Grow? (AD 750–900)",
+      "topic": "Enquiry 01: Building the Round City of Baghdad (AD 750–900)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
+      "interactiveUrl": "/units/ks2_early_islamic_baghdad/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 750–762): Choosing the River Tigris — Tigris-Euphrates Canals & Silk Road Crossroads",
+        "Stage 2 (AD 762–766): The Round City of Peace — 2km Brick Circle, 4 Iron Gates & Green Dome",
+        "Stage 3 (c. AD 900): Baghdad vs Anglo-Saxon Towns — Nearly 1,000,000 Citizens vs 10,000 in London",
+        "⚡ Outcome (c. AD 900): Crossroads of Three Continents — One of Earth's Largest & Richest Cities"
+      ]
+    },
+    {
+      "unit": "ks2_early_islamic_baghdad",
+      "lessonId": "lesson_2",
+      "slug": "ks2_early_islamic_baghdad_l02_visual_story_sheet",
+      "title": "How Did Cheap Paper and Baghdad's House of Wisdom Save World Knowledge? (c. AD 800–1000)",
+      "topic": "Enquiry 02: Paper & The House of Wisdom (c. AD 800–1000)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
+      "interactiveUrl": "/units/ks2_early_islamic_baghdad/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 786–833): Rag Paper & 100+ Bookshops — Samarkand Paper Mills vs Costly Calfskin",
+        "Stage 2 (c. AD 830–900): Translating Ancient Scrolls — Greek, Persian & Sanskrit Texts into Arabic",
+        "Stage 3 (c. AD 800–859): Fatima al-Fihri & Zubayda — AD 859 Fez College & Desert Hajj Wells",
+        "⚡ Outcome (Golden Age): World Knowledge Saved & Tested — Libraries, Colleges & Shared Scientific Truth"
+      ]
+    },
+    {
+      "unit": "ks2_early_islamic_baghdad",
+      "lessonId": "lesson_3",
+      "slug": "ks2_early_islamic_baghdad_l03_visual_story_sheet",
+      "title": "What Amazing Discoveries Did Baghdad's Doctors and Scientists Make? (c. AD 820–1050)",
+      "topic": "Enquiry 03: Zero, Astrolabes & Free Hospitals (c. AD 820–1050)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
+      "interactiveUrl": "/units/ks2_early_islamic_baghdad/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 820–1206): Zero, Algebra & Star Tools — Digits 0–9, Brass Astrolabes & Water Clocks",
+        "Stage 2 (c. AD 965–1040): Light Tests & Free Hospitals — Pinhole Camera Obscura & Free Clean Wards",
+        "Stage 3 (c. AD 900–1013): Doctors Al-Razi & Al-Zahrawi — 200+ Surgical Tools & Dissolving Stitches",
+        "⚡ Outcome (Lasting Impact): Foundations of Modern Science — Maths, Cameras & Clean Hospital Care"
+      ]
+    },
+    {
+      "unit": "ks2_early_islamic_baghdad",
+      "lessonId": "lesson_4",
+      "slug": "ks2_early_islamic_baghdad_l04_visual_story_sheet",
+      "title": "How Did Baghdad's Traders Connect the World All the Way to Britain? (c. AD 850–1000)",
+      "topic": "Enquiry 04: Silk Road Caravans, Dhows & Viking Coins (c. AD 850–1000)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
+      "interactiveUrl": "/units/ks2_early_islamic_baghdad/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 850–1000): Bazaars & Silk Road Caravans — Walled Caravanserai Inns Every 30 Kilometres",
+        "Stage 2 (c. AD 850–1000): Ocean Dhows & Paper Cheques — Stitched Wooden Hulls & Signed Sakk Notes",
+        "Stage 3 (c. AD 774–1000): Silver Dirhams in Viking York — Jorvik Silver Hoards & King Offa's Gold Coin",
+        "⚡ Outcome (c. AD 850–1000): From China Right to Britain — Three Continents Linked by Ships & Caravans"
+      ]
+    },
+    {
+      "unit": "ks2_early_islamic_baghdad",
+      "lessonId": "lesson_5",
+      "slug": "ks2_early_islamic_baghdad_l05_visual_story_sheet",
+      "title": "What Was Everyday Family Life Like in Baghdad Around AD 900? (c. AD 900)",
+      "topic": "Enquiry 05: Courtyards, Tilework & Chess in Baghdad (c. AD 900)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
+      "interactiveUrl": "/units/ks2_early_islamic_baghdad/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 900): Windcatchers & Clean Hammams — Rooftop Cooling Towers & Rosewater Soap",
+        "Stage 2 (c. AD 900): Citrus Feasts & Star Tilework — Oranges, Sugar & 8-Pointed Geometric Stars",
+        "Stage 3 (c. AD 900): Glass Lamps & Shatranj Chess — Silk Tiraz Robes, Gilded Glass & Checkmate",
+        "⚡ Outcome (c. AD 900): Comfort, Beauty & Clever Craft — Natural Cooling, Hygiene, Orchards & Art"
+      ]
+    },
+    {
+      "unit": "ks2_early_islamic_baghdad",
+      "lessonId": "lesson_6",
+      "slug": "ks2_early_islamic_baghdad_l06_visual_story_sheet",
+      "title": "Why Did Baghdad Fall in 1258, and How Did Its Ideas Survive? (AD 1258 – Today)",
+      "topic": "Enquiry 06: The 1258 Siege of Baghdad & Surviving Ideas",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
+      "interactiveUrl": "/units/ks2_early_islamic_baghdad/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (Jan–Feb 1258): AD 1258: Mongol Siege & Fall — Hulagu Khan's Trebuchets Break Brick Walls",
+        "Stage 2 (1200s – 1400s): Saved in Cairo, Córdoba & Toledo — 70 Libraries in Córdoba & Latin Translations",
+        "Stage 3 (Today): Arabic Words & Maths Today — 0–9 Digits, Cameras, Zero, Sugar & Sofa",
+        "⚡ Outcome (1258 – Today): Walls Fell, Wisdom Lived On — Shared Books Outlasted Empire Walls"
+      ]
+    }
+  ],
+  "ks2_maya_civilisation": [
+    {
+      "unit": "ks2_maya_civilisation",
+      "lessonId": "lesson_1",
+      "slug": "ks2_maya_civilisation_l01_visual_story_sheet",
+      "title": "How Did the Maya Build Stone Rainforest Cities Without Metal or Wheels? (c. 2000 BC–AD 900)",
+      "topic": "Enquiry 01: Stone Cities in the Rainforest (c. 2000 BC–AD 600)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_maya_civilisation/assets/tikal_pyramids_above_rainforest.jpg",
+      "interactiveUrl": "/units/ks2_maya_civilisation/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. 2000 BC–AD 250): Three Mesoamerican Zones — Highland Obsidian, Rainforest & Limestone",
+        "Stage 2 (c. 1000 BC–AD 600): Cenotes & Three Sisters Crops — Sinkhole Wells, Chultuns & Maize-Bean-Squash",
+        "Stage 3 (c. AD 600–900): Pyramids vs Anglo-Saxon Halls — Towering Limestone Cities vs Timber Villages",
+        "⚡ Outcome (Classic Period): Thriving Rainforest Cities — Tens of Thousands Fed Without Metal Tools"
+      ]
+    },
+    {
+      "unit": "ks2_maya_civilisation",
+      "lessonId": "lesson_2",
+      "slug": "ks2_maya_civilisation_l02_visual_story_sheet",
+      "title": "How Did Powerful Kings and Queens Rule Rival Maya City-States? (c. AD 250–900)",
+      "topic": "Enquiry 02: Step Pyramids, Pakal & Maya Rulers (c. AD 250–900)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_maya_civilisation/assets/palenque_temple_of_inscriptions.jpg",
+      "interactiveUrl": "/units/ks2_maya_civilisation/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 250–900): 40+ Rival Cities & Holy Ajaws — 40+ Independent City-States & Step-Pyramids",
+        "Stage 2 (AD 615–683): King Pakal & His Jade Mask — 68-Year Reign at Palenque & Hidden Pyramid Tomb",
+        "Stage 3 (c. AD 600–800): Royal Queens & Painted Courts — Lady Six Sky's Stelae & Bonampak Murals",
+        "⚡ Outcome (Classic Maya): Sacred Power Carved in Stone — Pyramids, Stelae & Jade Proved Royal Rule"
+      ]
+    },
+    {
+      "unit": "ks2_maya_civilisation",
+      "lessonId": "lesson_3",
+      "slug": "ks2_maya_civilisation_l03_visual_story_sheet",
+      "title": "Why Were Maya Writers, Sky-Watchers, and Mathematicians So Ahead of Their Time? (c. AD 300–900)",
+      "topic": "Enquiry 03: Maya Glyphs, Bark Books & Inventing Zero (c. AD 300–900)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_maya_civilisation/assets/el_caracol_observatory_chichen_itza.jpg",
+      "interactiveUrl": "/units/ks2_maya_civilisation/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 300–900): 800+ Glyphs & Fig-Bark Books — 2,000+ Stairway Glyphs & Accordion Codices",
+        "Stage 2 (c. AD 350–900): Shell, Dot, Bar & Place Zero — Shell = 0, Dot = 1, Bar = 5 in Base-20 Maths",
+        "Stage 3 (c. AD 600–900): El Caracol & Twin Calendars — 260-Day Tzolk'in & 365-Day Haab' Sync in 52 Yrs",
+        "⚡ Outcome (Centuries Ahead): Science Carved in Bark & Stone — Full Writing, Independent Zero & Exact Star Maps"
+      ]
+    },
+    {
+      "unit": "ks2_maya_civilisation",
+      "lessonId": "lesson_4",
+      "slug": "ks2_maya_civilisation_l04_visual_story_sheet",
+      "title": "What Did Maya Families Eat, Trade, and Play in Everyday Life? (c. AD 600–900)",
+      "topic": "Enquiry 04: Maize Tortillas, Frothy Cacao & Pok-ta-Pok (c. AD 600–900)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/maya_l4_banner_chichen_itza_ball_court.jpg",
+      "interactiveUrl": "/units/ks2_maya_civilisation/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (Every Dawn): Metate Maize & Spiced Cacao — Limewater Maize Tortillas & Chilli Chocolate",
+        "Stage 2 (AD 600–900): Cacao Money, Jade & Porters — 10 Beans = 1 Rabbit • 100 Beans = 1 Turkey",
+        "Stage 3 (AD 600–900): Sacred Pok-ta-Pok Ballcourts — 4kg Solid Rubber Ball & Padded Hip Yokes",
+        "⚡ Outcome (c. AD 600–900): Work, Markets & Sacred Sport — Daily Food, Long Trade & Honouring the Gods"
+      ]
+    },
+    {
+      "unit": "ks2_maya_civilisation",
+      "lessonId": "lesson_5",
+      "slug": "ks2_maya_civilisation_l05_visual_story_sheet",
+      "title": "How Did Maya Beliefs About Gods and Calendars Shape Their Temples? (c. AD 600–1200)",
+      "topic": "Enquiry 05: Maize Gods, Rain Caves & Chichén Itzá (c. AD 600–1200)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/maya_l5_banner_temple_of_warriors_columns.jpg",
+      "interactiveUrl": "/units/ks2_maya_civilisation/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 600–900): Popol Vuh, Xibalba & Chaac — Maize-Dough Humans & Sacred Rain Caves",
+        "Stage 2 (c. AD 800–1100): El Castillo's 365 Stone Steps — 4 × 91 Stairs + 1 Top Platform = 365 Days",
+        "Stage 3 (Spring & Autumn): Equinox Serpent Shadow Glides — 7 Sunlit Triangles Meet Kukulkan's Stone Head",
+        "⚡ Outcome (c. AD 600–1200): Earth, Sky & Faith Joined — Exact Astronomy Built Into Sacred Pyramids"
+      ]
+    },
+    {
+      "unit": "ks2_maya_civilisation",
+      "lessonId": "lesson_6",
+      "slug": "ks2_maya_civilisation_l06_visual_story_sheet",
+      "title": "Why Did Southern Maya Cities Empty—and Why Didn't the Maya Vanish? (AD 800 – Today)",
+      "topic": "Enquiry 06: The AD 900 Mystery & Seven Million Living Maya",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/images/upgraded/ks2-world/maya_l6_banner_lake_atitlan_maya_highlands.jpg",
+      "interactiveUrl": "/units/ks2_maya_civilisation/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 800–950): Three Linked Causes Around 900 — Severe Drought, Deforestation & Royal Wars",
+        "Stage 2 (AD 950–1520): Thriving Northern Sea Cities — Cenote Cities & Caribbean Sea-Canoe Ports",
+        "Stage 3 (1500s – Today): 7 Million Living Maya Today — 30+ Mayan Languages, Maize & Huipil Weaving",
+        "⚡ Outcome (AD 900 – Today): Cities Shifted, People Endured — Ancient Heritage Alive Across Five Countries"
       ]
     }
   ]

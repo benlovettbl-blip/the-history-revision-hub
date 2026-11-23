@@ -1,0 +1,890 @@
+{
+  "unit_id": "gcse_cold_war",
+  "widgets": [
+    {
+      "lesson_id": "lesson_1",
+      "block_index": 2,
+      "expected_heading": "The Yalta Conference at the Peak of Unity",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Summit Dossier",
+        "title": "The Yalta Conference (February 1945): Three Grand Alliance Agreements & One Sharp Faultline",
+        "default_index": 0,
+        "caption": "Click each summit dossier to compare what Roosevelt, Churchill, and Stalin agreed at Yalta in February 1945—and why Poland already exposed deep division.",
+        "items": [
+          {
+            "tab_label": "1. Four Zones",
+            "title": "Four-Power Occupation of Germany & Berlin",
+            "dates": "February 1945 • Yalta Agreement",
+            "badge": "Unanimous Deal",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Big Three",
+                "value": "Roosevelt, Churchill & Stalin"
+              },
+              {
+                "label": "Occupation",
+                "value": "US, British, French & Soviet Zones"
+              },
+              {
+                "label": "Capital Split",
+                "value": "Four-Zone Berlin Inside Soviet Zone"
+              }
+            ],
+            "takeaway": "With Nazi defeat imminent, the Big Three agreed to divide both defeated Germany and Berlin—deep inside the Soviet zone—into four occupation zones."
+          },
+          {
+            "tab_label": "2. $20bn & Japan",
+            "title": "German Reparations & War Against Japan",
+            "dates": "February 1945 • Economic & Pacific Deal",
+            "badge": "Half to Moscow",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "metrics": [
+              {
+                "label": "Reparations Bill",
+                "value": "$20 Billion Total Set"
+              },
+              {
+                "label": "Soviet Share",
+                "value": "Half ($10 Billion) to Moscow"
+              },
+              {
+                "label": "Pacific Pledge",
+                "value": "USSR Joins War 3 Months After V-E"
+              }
+            ],
+            "takeaway": "The Allies set German reparations at $20 billion (half going to the USSR), while Stalin confirmed Soviet entry against Japan within three months of German surrender."
+          },
+          {
+            "tab_label": "3. Liberated Europe",
+            "title": "Declaration on Liberated Europe",
+            "dates": "February 1945 • Political Pledge",
+            "badge": "Free Elections Promised",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Ground Reality",
+                "value": "Red Army Held Eastern Europe"
+              },
+              {
+                "label": "Written Pledge",
+                "value": "Declaration on Liberated Europe"
+              },
+              {
+                "label": "Core Promise",
+                "value": "Free Elections Across Region"
+              }
+            ],
+            "takeaway": "Even though Red Army troops already occupied much of Eastern Europe, Stalin signed the Declaration on Liberated Europe promising free elections across liberated nations."
+          },
+          {
+            "tab_label": "4. Poland Split",
+            "title": "The Polish Faultline: Lublin Poles vs London Poles",
+            "dates": "February 1945 • Key Dispute",
+            "badge": "Sharp Division",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Stalin’s Demand",
+                "value": "Recognise Pro-Soviet Lublin Poles"
+              },
+              {
+                "label": "Churchill’s Aim",
+                "value": "Back Democratic London Poles"
+              },
+              {
+                "label": "Soviet Motive",
+                "value": "Guarantee Friendly Buffer Zone"
+              }
+            ],
+            "takeaway": "With Red Army troops already in Poland, Stalin insisted on recognising the pro-Soviet Lublin Poles to secure a buffer zone, clashing with Churchill’s support for the exiled London Poles."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_2",
+      "block_index": 4,
+      "expected_heading": "Stalin’s Counter-Bloc: Cominform & Comecon",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Soviet Counter-Bloc",
+        "title": "Stalin’s Eastern Bloc Consolidation (1947–1949): Cominform ↔ Expulsion of Tito ↔ Comecon",
+        "default_index": 0,
+        "caption": "Slide or click across the three pillars to see how Stalin countered the Truman Doctrine and Marshall Plan by locking Eastern Europe into an ideological and economic bloc.",
+        "stops": [
+          {
+            "short_label": "1. Cominform (Sept 1947)",
+            "label": "1. Cominform: Moscow’s Ideological Command Bureau (September 1947)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "Established in September 1947 to counter the Truman Doctrine and Marshall Plan, Cominform placed European Communist parties under Moscow’s strict ideological direction and ordered strikes against Marshall Aid.",
+            "traits": [
+              {
+                "category": "Founded",
+                "glyph": "leader",
+                "value": "September 1947 by Joseph Stalin"
+              },
+              {
+                "category": "Core Purpose",
+                "glyph": "language",
+                "value": "Strict Ideological Line from Moscow"
+              },
+              {
+                "category": "Western Action",
+                "glyph": "people",
+                "value": "French & Italian Anti-Marshall Strikes"
+              },
+              {
+                "category": "US Target",
+                "glyph": "law",
+                "value": "Countered Truman & Marshall Plans"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Tito Expelled (1948)",
+            "label": "2. Disciplining Defiance: Yugoslavia Expelled from Cominform (1948)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "When Marshal Josip Broz Tito insisted on running Communist Yugoslavia independently rather than taking Stalin’s orders, Cominform expelled Yugoslavia in 1948 as a warning to all satellite leaders.",
+            "traits": [
+              {
+                "category": "Independent Leader",
+                "glyph": "leader",
+                "value": "Marshal Josip Broz Tito"
+              },
+              {
+                "category": "Offence",
+                "glyph": "law",
+                "value": "Refused Direct Orders from Stalin"
+              },
+              {
+                "category": "1948 Punishment",
+                "glyph": "people",
+                "value": "Yugoslavia Expelled from Cominform"
+              },
+              {
+                "category": "Bloc Message",
+                "glyph": "language",
+                "value": "Zero Tolerance for Deviation"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Comecon (Jan 1949)",
+            "label": "3. Comecon: Economic Integration & Trade Wall (January 1949)",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "summary": "Created in January 1949 as Moscow’s answer to Marshall Aid, Comecon specialised Eastern Bloc production around Soviet priorities while cutting off trade with Western Europe.",
+            "traits": [
+              {
+                "category": "Founded",
+                "glyph": "law",
+                "value": "January 1949 Economic Council"
+              },
+              {
+                "category": "Funding Contrast",
+                "glyph": "leader",
+                "value": "No US-Style Multi-Billion Grants"
+              },
+              {
+                "category": "Specialisation",
+                "glyph": "clothes",
+                "value": "Bulgarian Farms & Czech Industry"
+              },
+              {
+                "category": "Trade Barrier",
+                "glyph": "people",
+                "value": "Cut Off Trade with Western Europe"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_3",
+      "block_index": 4,
+      "expected_heading": "The Nuclear Arms Race & The Warsaw Pact (1949–55)",
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "Interactive Escalation Meter",
+        "title": "Nuclear & Alliance Escalation (1949–1957): From Soviet A-Bomb to Warsaw Pact & ICBMs",
+        "default_index": 2,
+        "caption": "Click each milestone from August 1949 to 1957 to watch the US nuclear monopoly give way to thermonuclear H-bombs, rival European military alliances, and long-range missiles.",
+        "eras": [
+          {
+            "year": "Aug 1949",
+            "headline": "Soviet Atomic Bomb Ends US Four-Year Monopoly",
+            "color": "#ef4444",
+            "summary": "In August 1949, the Soviet Union tested its first atomic bomb, ending America’s four-year nuclear monopoly and dramatically intensifying superpower rivalry.",
+            "pillars": [
+              {
+                "actor": "United States & NATO Allies",
+                "share": 60,
+                "status": "Four-Year Nuclear Monopoly Ended",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Soviet Union & Eastern Satellites",
+                "share": 40,
+                "status": "First Soviet Atomic Bomb Tested",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "1952–1953",
+            "headline": "Superpowers Detonate Rival Hydrogen Bombs (1,000x Hiroshima)",
+            "color": "#f59e0b",
+            "summary": "Determined to stay ahead, the USA detonated an H-bomb in November 1952 (roughly 1,000 times Hiroshima), matched within nine months by a Soviet H-bomb in August 1953.",
+            "pillars": [
+              {
+                "actor": "United States & NATO Allies",
+                "share": 52,
+                "status": "US H-Bomb Detonated (Nov 1952)",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Soviet Union & Eastern Satellites",
+                "share": 48,
+                "status": "Soviet H-Bomb Follows (Aug 1953)",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "May 1955",
+            "headline": "West Germany Joins NATO & Khrushchev Forms Warsaw Pact",
+            "color": "#a855f7",
+            "summary": "When NATO admitted a rearmed West Germany (FRG) in May 1955, Nikita Khrushchev founded the Warsaw Pact on 14 May 1955, uniting the USSR and seven Eastern European satellites under Soviet command.",
+            "pillars": [
+              {
+                "actor": "NATO (With Rearmed West Germany)",
+                "share": 50,
+                "status": "FRG Admitted to Western Alliance",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Warsaw Pact (USSR + 7 Satellites)",
+                "share": 50,
+                "status": "Unified Soviet Command (14 May 1955)",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "1957",
+            "headline": "Soviet ICBMs Place North America Within Strike Range",
+            "color": "#10b981",
+            "summary": "By 1957, Soviet intercontinental ballistic missiles (ICBMs) could strike North America directly, locking Europe and both superpowers into two nuclear-armed camps.",
+            "pillars": [
+              {
+                "actor": "NATO Nuclear & Conventional Bloc",
+                "share": 50,
+                "status": "North America Now Reachable by Missile",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Warsaw Pact & Soviet ICBM Force",
+                "share": 50,
+                "status": "Intercontinental Strike Capability",
+                "color": "#ef4444"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_5",
+      "block_index": 0,
+      "expected_heading": "The East German Refugee Crisis & Brain Drain",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Berlin Faultline",
+        "title": "Why Millions Fled East (1949–1961): West Berlin Showcase ↔ GDR ‘Brain Drain’ ↔ Nov 1958 Ultimatum",
+        "default_index": 1,
+        "caption": "Slide or click across the three stages to see why 2.7 to 3 million East Germans fled through West Berlin—and why Khrushchev issued his six-month Berlin Ultimatum on 27 November 1958.",
+        "stops": [
+          {
+            "short_label": "1. West Berlin ‘Window’",
+            "label": "1. Prosperous Capitalist ‘Window to the West’ (1950s)",
+            "color": "#2563eb",
+            "bg_color": "rgba(37, 99, 235, 0.2)",
+            "summary": "Boosted by Marshall Plan investment deep inside Communist East Germany, West Berlin showcased abundant consumer goods, higher living standards, and democratic freedoms.",
+            "traits": [
+              {
+                "category": "Economic Boost",
+                "glyph": "law",
+                "value": "Thriving Marshall Plan Investment"
+              },
+              {
+                "category": "Daily Life",
+                "glyph": "clothes",
+                "value": "Abundant Western Consumer Goods"
+              },
+              {
+                "category": "Political System",
+                "glyph": "language",
+                "value": "Open Democratic Freedoms"
+              },
+              {
+                "category": "Escape Route",
+                "glyph": "people",
+                "value": "Open Crossing to Fly to FRG"
+              }
+            ]
+          },
+          {
+            "short_label": "2. GDR ‘Brain Drain’",
+            "label": "2. Stasi Repression & The 2.7–3 Million ‘Brain Drain’ (1949–1961)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "Fleeing low wages, forced collectivisation, and Stasi repression under unpopular GDR leader Walter Ulbricht, 2.7 to 3 million citizens—including young doctors, engineers, and teachers—left East Germany.",
+            "traits": [
+              {
+                "category": "GDR Regime",
+                "glyph": "leader",
+                "value": "Walter Ulbricht & Stasi Police"
+              },
+              {
+                "category": "Push Factors",
+                "glyph": "law",
+                "value": "Low Wages & Collectivisation"
+              },
+              {
+                "category": "Total Exodus",
+                "glyph": "people",
+                "value": "2.7m–3m Citizens Fled (1949–61)"
+              },
+              {
+                "category": "Skilled Loss",
+                "glyph": "language",
+                "value": "Doctors, Engineers & Teachers"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Nov 1958 Ultimatum",
+            "label": "3. Khrushchev’s Six-Month Berlin Ultimatum (27 November 1958)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "With the GDR nearing economic collapse, Soviet leader Nikita Khrushchev issued his Berlin Ultimatum on 27 November 1958, demanding Western troops withdraw within six months to leave a demilitarised ‘free city’.",
+            "traits": [
+              {
+                "category": "Date & Author",
+                "glyph": "leader",
+                "value": "Khrushchev (27 November 1958)"
+              },
+              {
+                "category": "Deadline",
+                "glyph": "law",
+                "value": "Six Months for West to Withdraw"
+              },
+              {
+                "category": "Proposed Status",
+                "glyph": "church",
+                "value": "Demilitarised ‘Free City’"
+              },
+              {
+                "category": "Core Aim",
+                "glyph": "people",
+                "value": "Shut Escape Route & Save GDR"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_6",
+      "block_index": 2,
+      "expected_heading": "U-2 Discovery & Kennedy’s Naval Quarantine",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive ExComm Crisis Choices",
+        "title": "14–24 October 1962: Kennedy’s ExComm Options After U-2 Photos of San Cristóbal",
+        "default_index": 1,
+        "caption": "After U-2 photos on 14 October revealed R-12 (SS-4) missile sites in Cuba with a ten-minute strike window on Washington, slide across the three responses weighed by ExComm.",
+        "stops": [
+          {
+            "short_label": "1. Diplomacy Alone",
+            "label": "1. Diplomatic Protest Only (Rejected as Too Weak)",
+            "color": "#64748b",
+            "bg_color": "rgba(100, 116, 139, 0.2)",
+            "summary": "Relying on diplomatic protest alone avoided immediate military clash, but ExComm warned it would leave Soviet R-12 medium-range nuclear missiles operational within ten minutes of major US cities.",
+            "traits": [
+              {
+                "category": "14 Oct Discovery",
+                "glyph": "language",
+                "value": "U-2 Photos of San Cristóbal Sites"
+              },
+              {
+                "category": "Missile Threat",
+                "glyph": "leader",
+                "value": "Soviet R-12 (SS-4) Launch Pads"
+              },
+              {
+                "category": "Strike Window",
+                "glyph": "people",
+                "value": "10 Minutes to Washington, D.C."
+              },
+              {
+                "category": "Fatal Flaw",
+                "glyph": "law",
+                "value": "Left Nuclear Bases Operational"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Naval Quarantine (Chosen)",
+            "label": "2. 500-Mile Naval ‘Quarantine’ & DEFCON 2 (22–24 October 1962)",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "summary": "On 22 October, Kennedy exposed the bases on TV, raised US forces to DEFCON 2, and ordered a 500-mile naval ‘quarantine’ (avoiding the warlike term blockade)—prompting Soviet missile ships to turn back on 24 October.",
+            "traits": [
+              {
+                "category": "22 Oct TV Speech",
+                "glyph": "leader",
+                "value": "Exposed Bases & Set DEFCON 2"
+              },
+              {
+                "category": "Careful Wording",
+                "glyph": "law",
+                "value": "500-Mile ‘Quarantine’ (Not Blockade)"
+              },
+              {
+                "category": "Naval Line",
+                "glyph": "people",
+                "value": "US Warships Halted Missile Ships"
+              },
+              {
+                "category": "24 Oct Turning Point",
+                "glyph": "language",
+                "value": "Khrushchev Ordered Vessels Back"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Airstrike & Invasion",
+            "label": "3. Immediate Airstrikes & Invasion of Cuba (Rejected Hawk Option)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "Bombing San Cristóbal and invading Cuba promised to destroy the launch pads directly, but risked killing Soviet troops on the ground and igniting full-scale nuclear war.",
+            "traits": [
+              {
+                "category": "Military Plan",
+                "glyph": "leader",
+                "value": "Immediate Bombing & Invasion"
+              },
+              {
+                "category": "Ground Danger",
+                "glyph": "people",
+                "value": "Risked Killing Soviet Troops"
+              },
+              {
+                "category": "Escalation Risk",
+                "glyph": "law",
+                "value": "Could Ignite Full Nuclear War"
+              },
+              {
+                "category": "ExComm Verdict",
+                "glyph": "language",
+                "value": "Held Back in Favour of Quarantine"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_8",
+      "block_index": 0,
+      "expected_heading": "The Warsaw Pact Invasion of August 1968",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Invasion Anatomy",
+        "title": "20–21 August 1968: How 500,000 Warsaw Pact Troops Seized Czechoslovakia",
+        "default_index": 0,
+        "caption": "Click each stage to trace the Soviet Politburo’s 17 August decision, the overnight four-nation invasion, and Moscow’s fabricated ‘fraternal assistance’ claim.",
+        "items": [
+          {
+            "tab_label": "1. 17 Aug Vote",
+            "title": "Failed Summits & The Politburo Invasion Vote",
+            "dates": "July – 17 August 1968 • Moscow",
+            "badge": "Intervention Ordered",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Prior Summits",
+                "value": "Čierna nad Tisou & Bratislava"
+              },
+              {
+                "label": "Dubček’s Stance",
+                "value": "Refused Press Censorship"
+              },
+              {
+                "label": "17 Aug 1968",
+                "value": "Soviet Politburo Voted to Invade"
+              }
+            ],
+            "takeaway": "Convinced after the Čierna nad Tisou and Bratislava summits that Alexander Dubček would never reimpose censorship or silence anti-Soviet newspapers, the Soviet Politburo voted on 17 August for armed intervention."
+          },
+          {
+            "tab_label": "2. 20–21 Aug Blitz",
+            "title": "500,000 Troops & Seizure of Ruzyňe Airport",
+            "dates": "Night of 20–21 August 1968 • Prague",
+            "badge": "500,000 Troops",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Invasion Force",
+                "value": "~500,000 Warsaw Pact Soldiers"
+              },
+              {
+                "label": "Four Invaders",
+                "value": "USSR, Poland, Hungary & Bulgaria"
+              },
+              {
+                "label": "Key Capture",
+                "value": "Paratroopers Seized Ruzyňe Airport"
+              }
+            ],
+            "takeaway": "Late on 20–21 August 1968, tanks painted with white invasion stripes rumbled into Prague while Soviet paratroopers seized Ruzyňe Airport after a transport plane requested an emergency landing."
+          },
+          {
+            "tab_label": "3. Pretext & Restraint",
+            "title": "Moscow’s Unsigned Appeal & Svoboda’s Barracks Order",
+            "dates": "21 August 1968 • Prague",
+            "badge": "Army Held in Barracks",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Moscow’s Claim",
+                "value": "Requested ‘Fraternal Assistance’"
+              },
+              {
+                "label": "True Reality",
+                "value": "No Senior Prague Leader Signed"
+              },
+              {
+                "label": "Pres. Svoboda",
+                "value": "Ordered Czech Army to Barracks"
+              }
+            ],
+            "takeaway": "Although Moscow’s state news agency claimed Czechoslovak Communists had requested ‘fraternal assistance’, no senior leader had signed it, and President Ludvík Svoboda kept the army in barracks to prevent bloodshed."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_9",
+      "block_index": 0,
+      "expected_heading": "Superpower Pressures Behind Détente",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Détente Drivers",
+        "title": "Why Both Superpowers Wanted Détente (1970–1972): US Pressures ↔ Shared MAD Fear ↔ Soviet Needs",
+        "default_index": 1,
+        "caption": "Slide or click across the three sets of pressures to compare why Washington and Moscow both sought a relaxation of Cold War tension in the early 1970s.",
+        "stops": [
+          {
+            "short_label": "1. US Pressures (Vietnam)",
+            "label": "1. American Pressures: Vietnam Drain, Inflation & Protest (Early 1970s)",
+            "color": "#2563eb",
+            "bg_color": "rgba(37, 99, 235, 0.2)",
+            "summary": "Under President Richard Nixon and adviser Henry Kissinger, the USA was drained by the Vietnam War—costing over $150 billion, killing 58,000 Americans, fuelling inflation, and sparking fierce protests.",
+            "traits": [
+              {
+                "category": "US Policymakers",
+                "glyph": "leader",
+                "value": "Richard Nixon & Henry Kissinger"
+              },
+              {
+                "category": "Financial Drain",
+                "glyph": "law",
+                "value": "Over $150bn Vietnam War Cost"
+              },
+              {
+                "category": "Human Toll",
+                "glyph": "people",
+                "value": "58,000 Americans Killed"
+              },
+              {
+                "category": "Home Front",
+                "glyph": "language",
+                "value": "Rising Inflation & Anti-War Protests"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Shared Nuclear & Cost Fear",
+            "label": "2. Mutual Incentive: Avoiding MAD & Curbing Arms Spending (Post-1962)",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "summary": "Ever since the 1962 Cuban Missile Crisis, both superpowers feared Mutually Assured Destruction (MAD) and having reached rough nuclear parity, both wanted to curb ruinous arms spending.",
+            "traits": [
+              {
+                "category": "1962 Lesson",
+                "glyph": "leader",
+                "value": "Cuban Missile Crisis Near-Miss"
+              },
+              {
+                "category": "Nuclear Reality",
+                "glyph": "law",
+                "value": "Mutually Assured Destruction (MAD)"
+              },
+              {
+                "category": "Strategic Balance",
+                "glyph": "people",
+                "value": "Rough US–Soviet Nuclear Parity"
+              },
+              {
+                "category": "Budget Goal",
+                "glyph": "language",
+                "value": "Curb Ruinous Arms Spending"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Soviet Pressures (Grain & China)",
+            "label": "3. Soviet Pressures: Stagnant Living Standards & The China Split (1970–72)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "Leonid Brezhnev needed Western grain imports and industrial technology for stagnant Soviet living standards, while fearing isolation after the Sino-Soviet split and Nixon’s February 1972 visit to China.",
+            "traits": [
+              {
+                "category": "Soviet Leader",
+                "glyph": "leader",
+                "value": "Leonid Brezhnev"
+              },
+              {
+                "category": "Economic Need",
+                "glyph": "clothes",
+                "value": "Western Grain & Modern Technology"
+              },
+              {
+                "category": "Border Rivalry",
+                "glyph": "people",
+                "value": "Bitter Sino-Soviet Split"
+              },
+              {
+                "category": "February 1972",
+                "glyph": "language",
+                "value": "Nixon Visited Communist China"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_10",
+      "block_index": 0,
+      "expected_heading": "Crisis in Kabul & The Soviet Invasion",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Causal Chain",
+        "title": "April 1978 – December 1979: Why Brezhnev Invaded Afghanistan",
+        "default_index": 0,
+        "caption": "Click each stage from the April 1978 Saur Revolution to the December 1979 Kabul assault to see why Brezhnev intervened—and trapped the USSR in a ten-year war.",
+        "items": [
+          {
+            "tab_label": "1. Saur Rev (Apr 1978)",
+            "title": "PDPA Takeover & Mujahideen Rebellion",
+            "dates": "April 1978 • Afghanistan",
+            "badge": "Civil War Ignited",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Communist Party",
+                "value": "Pro-Soviet PDPA (Taraki)"
+              },
+              {
+                "label": "PDPA Policies",
+                "value": "Radical Land & Secular Reforms"
+              },
+              {
+                "label": "Armed Backlash",
+                "value": "Islamic Mujahideen Guerrillas"
+              }
+            ],
+            "takeaway": "After the April 1978 Saur Revolution brought Nur Muhammad Taraki’s pro-Soviet PDPA to power, radical land and secular reforms provoked fierce armed rebellion from Islamic Mujahideen guerrillas."
+          },
+          {
+            "tab_label": "2. Amin Coup (Sept 1979)",
+            "title": "Hafizullah Amin Murders Taraki & Seizes Power",
+            "dates": "September 1979 • Kabul",
+            "badge": "Taraki Murdered",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "metrics": [
+              {
+                "label": "New Ruler",
+                "value": "PM Hafizullah Amin"
+              },
+              {
+                "label": "Sept 1979 Coup",
+                "value": "Overthrew & Murdered Taraki"
+              },
+              {
+                "label": "Kremlin Doubt",
+                "value": "Suspected Secret US Contacts"
+              }
+            ],
+            "takeaway": "In September 1979, Prime Minister Hafizullah Amin seized power and had Taraki murdered, while Moscow suspected the unpredictable Amin of secretly contacting the USA."
+          },
+          {
+            "tab_label": "3. Brezhnev’s Fears",
+            "title": "Iranian Spillover Fear & The Brezhnev Doctrine",
+            "dates": "1979 • Soviet Central Asia",
+            "badge": "30m Soviet Muslims",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Regional Shock",
+                "value": "1979 Iranian Revolution Next Door"
+              },
+              {
+                "label": "Border Worry",
+                "value": "30m Muslims in Soviet Central Asia"
+              },
+              {
+                "label": "Justification",
+                "value": "Invoked Brezhnev Doctrine"
+              }
+            ],
+            "takeaway": "Watching the 1979 Iranian Revolution next door, Leonid Brezhnev feared Islamic fundamentalism spreading into 30 million Soviet Central Asian Muslims and invoked the Brezhnev Doctrine."
+          },
+          {
+            "tab_label": "4. Dec 1979 Invasion",
+            "title": "Soviet Forces Storm Kabul & Install Babrak Karmal",
+            "dates": "24–27 December 1979 • Kabul",
+            "badge": "10-Year Quagmire",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Assault Force",
+                "value": "Soviet Airborne & Armoured Columns"
+              },
+              {
+                "label": "Regime Change",
+                "value": "Amin Killed; Babrak Karmal Installed"
+              },
+              {
+                "label": "Long-Term Cost",
+                "value": "Trapped in 10-Year Guerrilla War"
+              }
+            ],
+            "takeaway": "Between 24 and 27 December 1979, Soviet airborne and armoured forces stormed Kabul’s presidential palace, killed Amin, and installed Moscow-backed Babrak Karmal—starting a costly ten-year war."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_12",
+      "block_index": 2,
+      "expected_heading": "Eastern European Revolutions, Reunification & The Warsaw Pact",
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "Interactive Bloc Collapse",
+        "title": "Unravelling the Soviet Bloc (Nov 1989 – 1 July 1991): Revolutions, Reunification & End of the Warsaw Pact",
+        "default_index": 2,
+        "caption": "Click each turning point after the opening of the Berlin Wall to watch Communist rule collapse across Eastern Europe, Germany reunite inside NATO, and the Warsaw Pact dissolve.",
+        "eras": [
+          {
+            "year": "Nov–Dec 1989",
+            "headline": "Domino Collapse Across Czechoslovakia, Bulgaria & Romania",
+            "color": "#f59e0b",
+            "summary": "Czechoslovakia’s peaceful Velvet Revolution made playwright Václav Havel president, Bulgaria ousted Todor Zhivkov, and Romania’s violent December uprising overthrew and executed Nicolae Ceaușescu.",
+            "pillars": [
+              {
+                "actor": "Democratic & Reform Governments",
+                "share": 65,
+                "status": "Havel Elected; Zhivkov & Ceaușescu Ousted",
+                "color": "#10b981"
+              },
+              {
+                "actor": "NATO Western Alliance",
+                "share": 20,
+                "status": "Backs Peaceful Democratic Transition",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Warsaw Pact & Soviet Control",
+                "share": 15,
+                "status": "Rapid Domino Collapse in 1989",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "3 Oct 1990",
+            "headline": "Formal German Reunification Inside NATO",
+            "color": "#38bdf8",
+            "summary": "Backed by Western financial loans, Chancellor Helmut Kohl won Mikhail Gorbachev’s consent for formal German reunification on 3 October 1990, with a united democratic Germany remaining inside NATO.",
+            "pillars": [
+              {
+                "actor": "Democratic Eastern Europe",
+                "share": 45,
+                "status": "Demand Soviet Garrison Withdrawal",
+                "color": "#10b981"
+              },
+              {
+                "actor": "NATO (With Reunited Germany)",
+                "share": 45,
+                "status": "United Germany Inside NATO (3 Oct 1990)",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Warsaw Pact Military Bloc",
+                "share": 10,
+                "status": "Strategic Purpose Evaporating",
+                "color": "#64748b"
+              }
+            ]
+          },
+          {
+            "year": "Mar–Jul 1991",
+            "headline": "Warsaw Pact Military Structures & Alliance Dissolved",
+            "color": "#10b981",
+            "summary": "After elected governments in Poland, Hungary, and Czechoslovakia demanded Soviet troop withdrawal, Warsaw Pact military structures dissolved in March 1991 and the alliance formally ended on 1 July 1991.",
+            "pillars": [
+              {
+                "actor": "Sovereign Eastern European Democracies",
+                "share": 55,
+                "status": "Poland, Hungary & Czechs Exit Bloc",
+                "color": "#10b981"
+              },
+              {
+                "actor": "NATO Alliance",
+                "share": 45,
+                "status": "Surviving Transatlantic Security Pact",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Warsaw Pact (1955–1991)",
+                "share": 0,
+                "status": "Formally Ended on 1 July 1991",
+                "color": "#64748b"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

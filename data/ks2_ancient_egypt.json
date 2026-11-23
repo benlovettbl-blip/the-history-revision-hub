@@ -859,7 +859,89 @@
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_ancient_egypt/assets/nile_delta_satellite_space.jpg",
-      "enquiry": "Why did Ancient Egypt grow so strong beside the River Nile?"
+      "enquiry": "Why did Ancient Egypt grow so strong beside the River Nile?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "ks2_ancient_egypt_l01_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 1",
+        "datesBadge": "c. 3500–2700 BC",
+        "topicLabel": "Enquiry 01: Four River Cradles & The Gift of the Nile",
+        "title": "Why Did Ancient Egypt Grow So Strong Beside the River Nile?",
+        "spokenTitle": "Why did Ancient Egypt grow so strong beside the River Nile?",
+        "thumbUrl": "/units/ks2_ancient_egypt/assets/nile_black_red_land_luxor.jpg",
+        "provenanceNote": "Metropolitan Museum of Art, British Museum, NASA Earth Observatory & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Shaduf Canals",
+          "North & South",
+          "One Kingdom"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "River Cradles & Black Silt",
+            "date": "c. 3500 BC",
+            "img": "/units/ks2_ancient_egypt/assets/nile_black_red_land_luxor.jpg",
+            "mode": "landscape",
+            "stat": "Annual Summer Flood Leaves Rich Kemet Mud",
+            "connective": "Why did Ancient Egypt grow so strong beside the River Nile?",
+            "html": "Like Sumer, the Indus, and Shang China, Ancient Egypt rose beside a life-giving river. Every summer, the Nile's <strong>inundation</strong> flood left fertile black mud called <strong>Kemet</strong> beside dry <strong>Red Land</strong> desert.",
+            "paired_prose_hash": "e32beb1de3",
+            "spoken": "Why did Ancient Egypt grow so strong beside the River Nile? <short pause> Like Sumer, the Indus, and Shang China, Ancient Egypt rose beside a life-giving river. Every summer, the Nile's inundation flood left fertile black mud called Kemet beside dry Red Land desert."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Shaduf Levers & Nile Boats",
+            "date": "c. 3500–3100 BC",
+            "img": "/units/ks2_ancient_egypt/assets/sennedjem_tomb_mural_deir.jpg",
+            "mode": "contain",
+            "stat": "Wheat, Flax, Papyrus Reeds & River Highway",
+            "connective": "Clever farmers watered fields and turned the river into a busy highway.",
+            "html": "Villagers swung weighted wooden <strong>shadufs</strong> to lift water onto golden wheat, blue flax, and tall <strong>papyrus</strong> reeds. Wooden <strong>Nile boats</strong> drifted north on the current and sailed south with the wind.",
+            "paired_prose_hash": "4e8cfce122",
+            "spoken": "Clever farmers watered fields and turned the river into a busy highway. <short pause> Villagers swung weighted wooden shadufs to lift water onto golden wheat, blue flax, and tall papyrus reeds. Wooden Nile boats drifted north on the current and sailed south with the wind."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "King Narmer's Double Crown",
+            "date": "c. 3100 BC",
+            "img": "/units/ks2_ancient_egypt/assets/ancient_egypt_nile_map_ks2.png",
+            "mode": "contain-light",
+            "stat": "Upper & Lower Egypt Joined Into One Land",
+            "connective": "Rival kings once ruled hilly southern Upper Egypt and marshy northern Lower Egypt.",
+            "html": "Around 3100 BC, southern warrior <strong>King Narmer</strong> marched north to unite both Nile lands. Celebrated on the carved <strong>Narmer Palette</strong>, rulers joined white and red crowns into one <strong>Double Crown</strong>.",
+            "paired_prose_hash": "6ea1f89ead",
+            "spoken": "Rival kings once ruled hilly southern Upper Egypt and marshy northern Lower Egypt. <short pause> Around 3100 BC, southern warrior King Narmer marched north to unite both Nile lands. Celebrated on the carved Narmer Palette , rulers joined white and red crowns into one Double Crown ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Thriving Kingdom on the Nile",
+            "date": "From 3100 BC",
+            "img": "/units/ks2_ancient_egypt/assets/nile_delta_satellite_space.jpg",
+            "mode": "landscape",
+            "stat": "3,000 Years of Harvests, Cities & Pharaohs",
+            "connective": "Rich black silt and one united river highway powered a lasting civilisation.",
+            "html": "Yearly floods, <strong>shaduf irrigation</strong>, and easy boat trade fed growing cities amid dry desert sands. United under one crown, <strong>Ancient Egypt</strong> flourished beside the <strong>River Nile</strong> for three thousand years.",
+            "spoken": "Rich black silt and one united river highway powered a lasting civilisation. <short pause> Yearly floods, shaduf irrigation , and easy boat trade fed growing cities amid dry desert sands. United under one crown, Ancient Egypt flourished beside the River Nile for three thousand years."
+          }
+        ],
+        "takeaway": "Yearly Nile floods left fertile black Kemet silt for wheat and papyrus, and around 3100 BC King Narmer united Upper and Lower Egypt under one Double Crown.",
+        "vocab": [
+          [
+            "1. Inundation",
+            "Annual summer Nile flood that left rich dark farming mud."
+          ],
+          [
+            "2. Kemet",
+            "Egyptians' name for their fertile valley, meaning Black Land."
+          ],
+          [
+            "3. Shaduf",
+            "Weighted wooden lever and bucket used to lift Nile water."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Yearly Nile floods left fertile black Kemet silt for wheat and papyrus, and around 3100 BC King Narmer united Upper and Lower Egypt under one Double Crown."
+      }
     },
     {
       "id": "lesson_2",
@@ -1686,7 +1768,89 @@
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg",
-      "enquiry": "How and why did Egyptians build the giant Pyramids of Giza?"
+      "enquiry": "How and why did Egyptians build the giant Pyramids of Giza?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "ks2_ancient_egypt_l02_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 2",
+        "datesBadge": "c. 2670–2500 BC",
+        "topicLabel": "Enquiry 02: Pyramids of Giza & The Great Sphinx",
+        "title": "How and Why Did Egyptians Build the Giant Pyramids of Giza?",
+        "spokenTitle": "How and why did Egyptians build the giant Pyramids of Giza?",
+        "thumbUrl": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg",
+        "provenanceNote": "Metropolitan Museum of Art, British Museum, NASA Earth Observatory & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Wet-Sand Ramps",
+          "Skilled Crews",
+          "Stone Guardians"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Imhotep & Khufu's Pyramid",
+            "date": "c. 2670–2560 BC",
+            "img": "/units/ks2_ancient_egypt/assets/step_pyramid_djoser_saqqara.jpg",
+            "mode": "landscape",
+            "stat": "146m Tall from 2.3 Million Limestone Blocks",
+            "connective": "How and why did Egyptians build the giant Pyramids of Giza?",
+            "html": "Old Kingdom Egyptians honoured each <strong>Pharaoh</strong> as a living god. After <strong>Imhotep's</strong> Step Pyramid at Saqqara, <strong>Pharaoh Khufu</strong> raised Giza's 146-metre Great Pyramid from 2.3 million limestone blocks!",
+            "paired_prose_hash": "d67d56c54d",
+            "spoken": "How and why did Egyptians build the giant Pyramids of Giza? <short pause> Old Kingdom Egyptians honoured each Pharaoh as a living god. After Imhotep's Step Pyramid at Saqqara, Pharaoh Khufu raised Giza's 146-metre Great Pyramid from 2.3 million limestone blocks!"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Barges & Wet-Sand Sledges",
+            "date": "c. 2560 BC",
+            "img": "/units/ks2_ancient_egypt/assets/khufu_great_pyramid_temple.jpg",
+            "mode": "landscape",
+            "stat": "Water Poured Ahead of Wooden Sledges",
+            "connective": "Without iron tools or wheeled trucks, masons used smart physics.",
+            "html": "Quarry crews shaped stone with <strong>copper chisels</strong> and floated white Tura limestone across the flooded Nile on barges. Pouring water onto desert sand halved friction so teams hauled <strong>wooden sledges</strong> up <strong>ramps</strong>.",
+            "paired_prose_hash": "256ba7407c",
+            "spoken": "Without iron tools or wheeled trucks, masons used smart physics. <short pause> Quarry crews shaped stone with copper chisels and floated white Tura limestone across the flooded Nile on barges. Pouring water onto desert sand halved friction so teams hauled wooden sledges up ramps ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Paid Builders & Great Sphinx",
+            "date": "c. 2560–2500 BC",
+            "img": "/units/ks2_ancient_egypt/assets/deir_el_medina_workers_village.jpg",
+            "mode": "landscape",
+            "stat": "Bakeries, Fish Rations & Doctor Care Found",
+            "connective": "Modern archaeology also busted the old myth of whipped pyramid slaves.",
+            "html": "Excavated <strong>builders' villages</strong> held giant bread bakeries, daily fish rations, and bones healed by doctors for <strong>paid Egyptian workers</strong>. Nearby, Pharaoh Khafre carved the lion-bodied <strong>Great Sphinx</strong>.",
+            "paired_prose_hash": "1e0eb607a9",
+            "spoken": "Modern archaeology also busted the old myth of whipped pyramid slaves. <short pause> Excavated builders' villages held giant bread bakeries, daily fish rations, and bones healed by doctors for paid Egyptian workers . Nearby, Pharaoh Khafre carved the lion-bodied Great Sphinx ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Tallest Wonders on Earth",
+            "date": "For 3,800+ Years",
+            "img": "/units/ks2_ancient_egypt/assets/great_sphinx_giza_khafre.jpg",
+            "mode": "landscape",
+            "stat": "Giza Pyramids & Sphinx Still Stand Today",
+            "connective": "Organised teamwork raised royal tombs built to last for eternity.",
+            "html": "Khufu's <strong>Great Pyramid</strong> stayed the tallest building on Earth for nearly four thousand years. Guarded by the <strong>Great Sphinx</strong>, Giza proves the skill of <strong>Old Kingdom</strong> engineers and craftworkers.",
+            "spoken": "Organised teamwork raised royal tombs built to last for eternity. <short pause> Khufu's Great Pyramid stayed the tallest building on Earth for nearly four thousand years. Guarded by the Great Sphinx , Giza proves the skill of Old Kingdom engineers and craftworkers."
+          }
+        ],
+        "takeaway": "Using copper chisels, Nile barges, wet-sand sledges, and well-fed paid teams, Old Kingdom Egyptians built Khufu's 146-metre Great Pyramid and Khafre's Great Sphinx at Giza.",
+        "vocab": [
+          [
+            "1. Pharaoh",
+            "Supreme ruler of Ancient Egypt honoured as a living god."
+          ],
+          [
+            "2. Quarry",
+            "Open rock cliff where masons cut limestone blocks with chisels."
+          ],
+          [
+            "3. Sphinx",
+            "Giant guardian statue with a lion's body and a Pharaoh's head."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using copper chisels, Nile barges, wet-sand sledges, and well-fed paid teams, Old Kingdom Egyptians built Khufu's 146-metre Great Pyramid and Khafre's Great Sphinx at Giza."
+      }
     },
     {
       "id": "lesson_3",
@@ -2512,7 +2676,89 @@
         "position": "center 42%"
       },
       "banner_image": "/images/upgraded/ks2-world/egypt_l3_banner_karnak_panorama.jpg",
-      "enquiry": "What was daily life like in Egypt—and how were hieroglyphs cracked?"
+      "enquiry": "What was daily life like in Egypt—and how were hieroglyphs cracked?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "ks2_ancient_egypt_l03_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 3",
+        "datesBadge": "c. 2500–196 BC / 1822",
+        "topicLabel": "Enquiry 03: Scribes, Hieroglyphs & Everyday Life",
+        "title": "What Was Daily Life Like and How Were Hieroglyphs Cracked?",
+        "spokenTitle": "What was daily life like, and how were hieroglyphs cracked?",
+        "thumbUrl": "/units/ks2_ancient_egypt/assets/rosetta_stone_three_scripts.jpg",
+        "provenanceNote": "Metropolitan Museum of Art, British Museum, NASA Earth Observatory & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Cool Mud Homes",
+          "700 Signs",
+          "Code Cracked"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Egypt's Tall Social Pyramid",
+            "date": "c. 2500–1200 BC",
+            "img": "/units/ks2_ancient_egypt/assets/egyptian_social_pyramid_ks2.png",
+            "mode": "contain-light",
+            "stat": "Pharaoh & Viziers Above Millions of Farmers",
+            "connective": "What was daily life like, and how were hieroglyphs cracked?",
+            "html": "At the top of Egypt's <strong>social pyramid</strong> stood the Pharaoh, chief <strong>viziers</strong>, priests, and trained scribes. Below worked skilled craftworkers — makers of blue hippo William — and millions of <strong>peasant farmers</strong>.",
+            "paired_prose_hash": "9395f7af8c",
+            "spoken": "What was daily life like, and how were hieroglyphs cracked? <short pause> At the top of Egypt's social pyramid stood the Pharaoh, chief viziers , priests, and trained scribes. Below worked skilled craftworkers, makers of blue hippo William, and millions of peasant farmers ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Mud-Brick Homes, Linen & Senet",
+            "date": "Daily Life",
+            "img": "/images/upgraded/ks2-world/egypt_l3_srcc_senet_board_amenhotep_iii.jpg",
+            "mode": "contain-light",
+            "stat": "Whitewashed Walls, Flat Roofs & 30-Square Senet",
+            "connective": "Ordinary families designed cool homes and games for blazing desert weather.",
+            "html": "Villagers painted <strong>mud-brick houses</strong> white to bounce away heat and slept on breezy flat roofs. Families wore airy <strong>white linen</strong> and reed sandals, ate flatbread with figs, and raced counters in <strong>Senet</strong>!",
+            "paired_prose_hash": "112effcce6",
+            "spoken": "Ordinary families designed cool homes and games for blazing desert weather. <short pause> Villagers painted mud-brick houses white to bounce away heat and slept on breezy flat roofs. Families wore airy white linen and reed sandals, ate flatbread with figs, and raced counters in Senet !"
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Scribes & The Rosetta Stone",
+            "date": "196 BC–AD 1822",
+            "img": "/units/ks2_ancient_egypt/assets/rosetta_stone_three_scripts.jpg",
+            "mode": "contain",
+            "stat": "Champollion Matches Greek to Royal Cartouches",
+            "connective": "Centuries later, nobody could read the scribes' seven hundred picture signs.",
+            "html": "Scribe pupils painted <strong>700 hieroglyphs</strong> with reed brushes on papyrus scrolls. After soldiers found the three-script <strong>Rosetta Stone</strong> in 1799, <strong>Jean-François Champollion</strong> matched Greek royal names to cartouches in 1822!",
+            "paired_prose_hash": "7018a7cf16",
+            "spoken": "Centuries later, nobody could read the scribes' seven hundred picture signs. <short pause> Scribe pupils painted 700 hieroglyphs with reed brushes on papyrus scrolls. After soldiers found the three-script Rosetta Stone in 1799, Jean-François Champollion matched Greek royal names to cartouches in 1822!"
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Egypt's Own Voices Unlocked",
+            "date": "Since AD 1822",
+            "img": "/units/ks2_ancient_egypt/assets/karnak_carved_hieroglyphs.jpg",
+            "mode": "landscape",
+            "stat": "3,000 Years of Scrolls & Temples Read Again",
+            "connective": "Cracking that ancient code let Egyptians speak directly to modern historians.",
+            "html": "Reading <strong>hieroglyphs</strong> unlocked royal temple walls, medical papyrus scrolls, and grain records across Egypt. Alongside mud-brick villages and <strong>Senet boards</strong>, scribes' words brought <strong>everyday Egyptian life</strong> alive.",
+            "spoken": "Cracking that ancient code let Egyptians speak directly to modern historians. <short pause> Reading hieroglyphs unlocked royal temple walls, medical papyrus scrolls, and grain records across Egypt. Alongside mud-brick villages and Senet boards , scribes' words brought everyday Egyptian life alive."
+          }
+        ],
+        "takeaway": "Farmers and craftworkers lived in cool whitewashed mud-brick homes and played Senet, while Champollion used the three-script Rosetta Stone in 1822 to crack 700 hieroglyphs.",
+        "vocab": [
+          [
+            "1. Scribe",
+            "Trained reader and writer who painted hieroglyphs on papyrus."
+          ],
+          [
+            "2. Hieroglyphs",
+            "Sacred Egyptian writing using over 700 picture and sound signs."
+          ],
+          [
+            "3. Cartouche",
+            "Oval loop drawn around the sacred hieroglyphic name of a ruler."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Farmers and craftworkers lived in cool whitewashed mud-brick homes and played Senet, while Champollion used the three-script Rosetta Stone in 1822 to crack 700 hieroglyphs."
+      }
     },
     {
       "id": "lesson_4",
@@ -3339,7 +3585,89 @@
         "caption": "Ra, Osiris & Anubis, 70-Day Mummification, Canopic Jars, Shabtis & Weighing the Heart",
         "position": "center 35%"
       },
-      "enquiry": "Why did Ancient Egyptians make mummies for the afterlife?"
+      "enquiry": "Why did Ancient Egyptians make mummies for the afterlife?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "ks2_ancient_egypt_l04_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 4",
+        "datesBadge": "c. 2000–1000 BC",
+        "topicLabel": "Enquiry 04: Gods, Mummies & Weighing the Heart",
+        "title": "Why Did Ancient Egyptians Make Mummies for the Afterlife?",
+        "spokenTitle": "Why did Ancient Egyptians make mummies for the afterlife?",
+        "thumbUrl": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
+        "provenanceNote": "Metropolitan Museum of Art, British Museum, NASA Earth Observatory & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "70-Day Ritual",
+          "Truth Feather",
+          "Field of Reeds"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Gods & Twin Spirits Ka and Ba",
+            "date": "c. 2000–1000 BC",
+            "img": "/units/ks2_ancient_egypt/assets/osiris_isis_horus_gold_triad.jpg",
+            "mode": "contain",
+            "stat": "Ra, Osiris, Isis, Horus & Tomb Guardian Anubis",
+            "connective": "Why did Ancient Egyptians make mummies for the afterlife?",
+            "html": "<strong>Polytheistic</strong> Egyptians worshipped gods like sun-god Ra, underworld ruler <strong>Osiris</strong>, Isis, and jackal-headed Anubis. People believed twin spirits called the <strong>ka and ba</strong> needed a preserved body in the tomb.",
+            "paired_prose_hash": "97e7c40a85",
+            "spoken": "Why did Ancient Egyptians make mummies for the afterlife? <short pause> Polytheistic Egyptians worshipped gods like sun-god Ra, underworld ruler Osiris , Isis, and jackal-headed Anubis. People believed twin spirits called the ka and ba needed a preserved body in the tomb."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "70 Days of Natron & Linen",
+            "date": "70-Day Process",
+            "img": "/units/ks2_ancient_egypt/assets/gilded_wooden_mummy_coffin.jpg",
+            "mode": "contain",
+            "stat": "4 Canopic Jars, 40 Days in Natron & Shabtis",
+            "connective": "Priests preserved the body carefully over seventy days while leaving the heart inside.",
+            "html": "Organs went into four <strong>Canopic jars</strong> while dry <strong>natron salt</strong> soaked up moisture for forty days. Priests wrapped sweet-oiled skin in <strong>linen bandages</strong> with a heart scarab and shabti servants.",
+            "paired_prose_hash": "9f5e75efe1",
+            "spoken": "Priests preserved the body carefully over seventy days while leaving the heart inside. <short pause> Organs went into four Canopic jars while dry natron salt soaked up moisture for forty days. Priests wrapped sweet-oiled skin in linen bandages with a heart scarab and shabti servants."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Book of the Dead & Scales",
+            "date": "Afterlife Trial",
+            "img": "/units/ks2_ancient_egypt/assets/dendera_hathor_temple_corridor.jpg",
+            "mode": "landscape",
+            "stat": "Heart Balanced Against Ma'at's Feather of Truth",
+            "connective": "Painted Book of the Dead scrolls guided spirits to the golden scales.",
+            "html": "In the Hall of Two Truths, <strong>Anubis</strong> weighed each heart against <strong>Ma'at's feather of truth</strong> while Thoth recorded the result. Heavy, unkind hearts faced fierce <strong>Ammit</strong> beside the scales!",
+            "paired_prose_hash": "aacc8e1bae",
+            "spoken": "Painted Book of the Dead scrolls guided spirits to the golden scales. <short pause> In the Hall of Two Truths, Anubis weighed each heart against Ma'at's feather of truth while Thoth recorded the result. Heavy, unkind hearts faced fierce Ammit beside the scales!"
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Forever in the Field of Reeds",
+            "date": "Eternal Life",
+            "img": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
+            "mode": "contain-light",
+            "stat": "Kind Light Hearts Pass Osiris Into Paradise",
+            "connective": "Passing that test promised a joyful afterlife beside the gods.",
+            "html": "Anyone with a kind, light heart walked past green-skinned <strong>Osiris</strong> into the sunny <strong>Field of Reeds</strong>. Carefully wrapped <strong>mummies</strong> and tomb treasures prepared Egyptians to live forever.",
+            "spoken": "Passing that test promised a joyful afterlife beside the gods. <short pause> Anyone with a kind, light heart walked past green-skinned Osiris into the sunny Field of Reeds . Carefully wrapped mummies and tomb treasures prepared Egyptians to live forever."
+          }
+        ],
+        "takeaway": "Believing the ka and ba spirits needed a lasting body, priests dried mummies in natron salt for 70 days so kind hearts could pass Ma'at's feather into the Field of Reeds.",
+        "vocab": [
+          [
+            "1. Mummification",
+            "Preserving a body over 70 days with natron salt, oils, and linen."
+          ],
+          [
+            "2. Natron",
+            "Natural dry desert salt packed for 40 days to soak up moisture."
+          ],
+          [
+            "3. Canopic Jars",
+            "Four guardian-topped stone jars holding preserved internal organs."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Believing the ka and ba spirits needed a lasting body, priests dried mummies in natron salt for 70 days so kind hearts could pass Ma'at's feather into the Field of Reeds."
+      }
     },
     {
       "id": "lesson_5",
@@ -4166,7 +4494,89 @@
         "caption": "Thebes & Karnak, Hatshepsut's Voyage to Punt, Nefertiti at Amarna, Kadesh Peace Treaty & Abu Simbel",
         "position": "center 35%"
       },
-      "enquiry": "What made Hatshepsut, Nefertiti, and Ramesses II such famous rulers?"
+      "enquiry": "What made Hatshepsut, Nefertiti, and Ramesses II such famous rulers?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "ks2_ancient_egypt_l05_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 5",
+        "datesBadge": "c. 1500–1213 BC",
+        "topicLabel": "Enquiry 05: Hatshepsut, Nefertiti & Ramesses II",
+        "title": "What Made Hatshepsut, Nefertiti, and Ramesses II Famous Rulers?",
+        "spokenTitle": "What made Hatshepsut, Nefertiti, and Ramesses II famous rulers?",
+        "thumbUrl": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
+        "provenanceNote": "Metropolitan Museum of Art, British Museum, NASA Earth Observatory & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Sun-Disc Aten",
+          "Kadesh Treaty",
+          "Golden Empire"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Hatshepsut Sails to Punt",
+            "date": "c. 1479–1458 BC",
+            "img": "/units/ks2_ancient_egypt/assets/hatshepsut_temple_deir_el_bahari.jpg",
+            "mode": "landscape",
+            "stat": "Female Pharaoh Brings Back Frankincense Trees",
+            "connective": "What made Hatshepsut, Nefertiti, and Ramesses II famous rulers?",
+            "html": "Crowned full pharaoh in royal false beard, <strong>Hatshepsut</strong> chose overseas trade during Egypt's New Kingdom. Five Red Sea ships sailed to the <strong>Land of Punt</strong>, returning with gold and living <strong>frankincense</strong> trees.",
+            "paired_prose_hash": "407f1a24f2",
+            "spoken": "What made Hatshepsut, Nefertiti, and Ramesses II famous rulers? <short pause> Crowned full pharaoh in royal false beard, Hatshepsut chose overseas trade during Egypt's New Kingdom. Five Red Sea ships sailed to the Land of Punt , returning with gold and living frankincense trees."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Nefertiti & Sun-Disc Aten",
+            "date": "c. 1353–1336 BC",
+            "img": "/units/ks2_ancient_egypt/assets/karnak_giant_hypostyle_columns.jpg",
+            "mode": "contain",
+            "stat": "New Capital at Amarna & Thutmose's Painted Bust",
+            "connective": "Over a century later, two royal reformers shocked Egypt's priests.",
+            "html": "Pharaoh <strong>Akhenaten</strong> and powerful <strong>Queen Nefertiti</strong> turned from old temple gods to worship one sun-disc, <strong>Aten</strong>, at Amarna. Sculptor Thutmose carved Nefertiti's famous blue-crowned bust before priests restored Karnak.",
+            "paired_prose_hash": "9bf026cc31",
+            "spoken": "Over a century later, two royal reformers shocked Egypt's priests. <short pause> Pharaoh Akhenaten and powerful Queen Nefertiti turned from old temple gods to worship one sun-disc, Aten , at Amarna. Sculptor Thutmose carved Nefertiti's famous blue-crowned bust before priests restored Karnak."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Ramesses II & Kadesh Peace",
+            "date": "1279–1213 BC",
+            "img": "/units/ks2_ancient_egypt/assets/luxor_avenue_of_sphinxes.jpg",
+            "mode": "landscape",
+            "stat": "66-Year Reign & World's Oldest Written Treaty",
+            "connective": "Then Ramesses II ruled for sixty-six years of chariots and giant stone temples.",
+            "html": "After clashing with Hittite chariots at <strong>Kadesh</strong> in 1274 BC, <strong>Ramesses II</strong> signed the world's oldest surviving written <strong>peace treaty</strong> around 1259 BC. He also carved colossal statues at Abu Simbel.",
+            "paired_prose_hash": "8a1884c744",
+            "spoken": "Then Ramesses II ruled for sixty-six years of chariots and giant stone temples. <short pause> After clashing with Hittite chariots at Kadesh in 1274 BC, Ramesses II signed the world's oldest surviving written peace treaty around 1259 BC. He also carved colossal statues at Abu Simbel."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Peak of Egypt's New Kingdom",
+            "date": "c. 1550–1213 BC",
+            "img": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
+            "mode": "landscape",
+            "stat": "Trade Voyages, Bold Art & Diplomacy in Stone",
+            "connective": "Trade ships, bold new art, and diplomacy marked Egypt's golden age.",
+            "html": "From Deir el-Bahari and Amarna to <strong>Abu Simbel's</strong> 20-metre cliffs, <strong>New Kingdom rulers</strong> shaped history through more than war. Voyages, religious change, and <strong>peace treaties</strong> left lasting monuments.",
+            "spoken": "Trade ships, bold new art, and diplomacy marked Egypt's golden age. <short pause> From Deir el-Bahari and Amarna to Abu Simbel's 20-metre cliffs, New Kingdom rulers shaped history through more than war. Voyages, religious change, and peace treaties left lasting monuments."
+          }
+        ],
+        "takeaway": "New Kingdom rulers made Egypt famous through Hatshepsut's trading voyage to Punt, Nefertiti and Akhenaten's sun-disc city at Amarna, and Ramesses II's Kadesh peace treaty and Abu Simbel temples.",
+        "vocab": [
+          [
+            "1. Expedition",
+            "Carefully planned voyage, like Hatshepsut's ships to Punt."
+          ],
+          [
+            "2. Frankincense",
+            "Sweet-smelling tree resin burned as precious temple incense."
+          ],
+          [
+            "3. Peace Treaty",
+            "Written agreement between rival rulers promising to stop war."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> New Kingdom rulers made Egypt famous through Hatshepsut's trading voyage to Punt, Nefertiti and Akhenaten's sun-disc city at Amarna, and Ramesses II's Kadesh peace treaty and Abu Simbel temples."
+      }
     },
     {
       "id": "lesson_6",
@@ -4992,7 +5402,89 @@
         "caption": "Sun-baked limestone cliffs of the Valley of the Kings on the West Bank at Thebes (Luxor), royal burial valley of Tutankhamun.",
         "position": "center 28%"
       },
-      "enquiry": "Why did Tutankhamun’s treasure survive—and how did pharaonic Egypt end?"
+      "enquiry": "Why did Tutankhamun’s treasure survive—and how did pharaonic Egypt end?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "ks2_ancient_egypt_l06_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 6",
+        "datesBadge": "1332–30 BC & AD 1922",
+        "topicLabel": "Enquiry 06: Tutankhamun's Tomb & Cleopatra VII",
+        "title": "Why Did Tutankhamun's Tomb Survive and How Did Pharaonic Egypt End?",
+        "spokenTitle": "Why did Tutankhamun's tomb survive, and how did pharaonic Egypt end?",
+        "thumbUrl": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_throne.jpg",
+        "provenanceNote": "Metropolitan Museum of Art, British Museum, NASA Earth Observatory & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "1922 Discovery",
+          "Cleopatra & Rome",
+          "3,000-Year Story"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Boy-King Hidden Under Rubble",
+            "date": "1332–1323 BC",
+            "img": "/units/ks2_ancient_egypt/assets/valley_of_the_kings_cliffs.jpg",
+            "mode": "landscape",
+            "stat": "KV62 Steps Buried Safely in Valley of the Kings",
+            "connective": "Why did Tutankhamun's tomb survive, and how did pharaonic Egypt end?",
+            "html": "Crowned aged nine, boy-pharaoh <strong>Tutankhamun</strong> restored traditional gods before dying aged nineteen in 1323 BC. Later builders dumped limestone rubble over tomb <strong>KV62</strong> in the <strong>Valley of the Kings</strong>, hiding it from robbers!",
+            "paired_prose_hash": "e985bfb624",
+            "spoken": "Why did Tutankhamun's tomb survive, and how did pharaonic Egypt end? <short pause> Crowned aged nine, boy-pharaoh Tutankhamun restored traditional gods before dying aged nineteen in 1323 BC. Later builders dumped limestone rubble over tomb KV62 in the Valley of the Kings , hiding it from robbers!"
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Carter & KV62's 5,000 Finds",
+            "date": "November 1922",
+            "img": "/units/ks2_ancient_egypt/assets/howard_carter_opening_shrine_1923.jpg",
+            "mode": "contain",
+            "stat": "16 Buried Steps Lead to 11kg Gold Death Mask",
+            "connective": "Three thousand years later, searchers uncovered a hidden stone step.",
+            "html": "In November 1922, water-boy <strong>Hussein Abdel Rassoul</strong>, Egyptian excavators, and <strong>Howard Carter</strong> opened sealed KV62. Ten years of careful cataloguing recorded <strong>5,000 treasures</strong>, including Tutankhamun's 11kg solid gold mask!",
+            "paired_prose_hash": "abae11713d",
+            "spoken": "Three thousand years later, searchers uncovered a hidden stone step. <short pause> In November 1922, water-boy Hussein Abdel Rassoul , Egyptian excavators, and Howard Carter opened sealed KV62. Ten years of careful cataloguing recorded 5,000 treasures , including Tutankhamun's 11kg solid gold mask!"
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Cleopatra VII & Mighty Rome",
+            "date": "332–30 BC",
+            "img": "/images/upgraded/ks2-world/egypt_l6_blk3_philae_temple_of_isis.jpg",
+            "mode": "landscape",
+            "stat": "9 Languages Spoken Before Rome Conquers in 30 BC",
+            "connective": "Long after Tutankhamun, Greek-speaking Ptolemaic rulers governed from coastal Alexandria.",
+            "html": "After Alexander founded <strong>Alexandria</strong>, wise Ptolemaic ruler <strong>Queen Cleopatra VII</strong> spoke Egyptian alongside eight other languages. In <strong>30 BC</strong>, however, Roman armies defeated Cleopatra's fleet and ended pharaonic rule.",
+            "paired_prose_hash": "9cf84c3cbb",
+            "spoken": "Long after Tutankhamun, Greek-speaking Ptolemaic rulers governed from coastal Alexandria. <short pause> After Alexander founded Alexandria , wise Ptolemaic ruler Queen Cleopatra VII spoke Egyptian alongside eight other languages. In 30 BC , however, Roman armies defeated Cleopatra's fleet and ended pharaonic rule."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "A Civilisation Remembered",
+            "date": "30 BC–Today",
+            "img": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_throne.jpg",
+            "mode": "contain",
+            "stat": "3,000+ Years of Pharaohs, Tombs & Wonder",
+            "connective": "Even as a Roman province, Egypt's golden legacy never faded.",
+            "html": "From Narmer's crown to <strong>Cleopatra VII</strong> in 30 BC, pharaohs ruled the Nile for three millennia. Saved inside <strong>KV62</strong>, <strong>Tutankhamun's treasures</strong> still amaze millions of people today.",
+            "spoken": "Even as a Roman province, Egypt's golden legacy never faded. <short pause> From Narmer's crown to Cleopatra VII in 30 BC, pharaohs ruled the Nile for three millennia. Saved inside KV62 , Tutankhamun's treasures still amaze millions of people today."
+          }
+        ],
+        "takeaway": "Limestone rubble hid boy-king Tutankhamun's 5,000 tomb treasures until 1922, while Roman armies defeated multi-lingual Queen Cleopatra VII in 30 BC to end pharaonic rule.",
+        "vocab": [
+          [
+            "1. Valley of the Kings",
+            "Secret desert canyon near Thebes holding rock-cut royal tombs."
+          ],
+          [
+            "2. Sarcophagus",
+            "Heavy carved stone outer coffin protecting gilded royal coffins."
+          ],
+          [
+            "3. Dynasty",
+            "Line of kings and queens from one royal family across generations."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Limestone rubble hid boy-king Tutankhamun's 5,000 tomb treasures until 1922, while Roman armies defeated multi-lingual Queen Cleopatra VII in 30 BC to end pharaonic rule."
+      }
     }
   ],
   "key_individuals": [

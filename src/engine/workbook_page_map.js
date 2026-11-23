@@ -43,10 +43,18 @@ export const WORKBOOK_PAGE_MAP = {
     }
   },
   "cme_new": {
+    "lesson_0": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Key Topic 1 Booklet (12p)",
+      "unitId": "cme_new",
+      "lessonIndex": 0
+    },
     "lesson_1": {
       "page": 2,
       "endPage": 3,
-      "spread": "Pages 2–3",
+      "spread": "pp. 2–3",
       "booklet": "Key Topic 1 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 1
@@ -54,7 +62,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_2": {
       "page": 4,
       "endPage": 5,
-      "spread": "Pages 4–5",
+      "spread": "pp. 4–5",
       "booklet": "Key Topic 1 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 2
@@ -62,7 +70,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_3": {
       "page": 8,
       "endPage": 9,
-      "spread": "Pages 8–9",
+      "spread": "pp. 8–9",
       "booklet": "Key Topic 1 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 3
@@ -70,7 +78,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_4": {
       "page": 2,
       "endPage": 3,
-      "spread": "Pages 2–3",
+      "spread": "pp. 2–3",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 4
@@ -78,7 +86,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_5": {
       "page": 4,
       "endPage": 5,
-      "spread": "Pages 4–5",
+      "spread": "pp. 4–5",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 5
@@ -86,7 +94,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_6": {
       "page": 6,
       "endPage": 7,
-      "spread": "Pages 6–7",
+      "spread": "pp. 6–7",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 6
@@ -94,7 +102,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_7": {
       "page": 10,
       "endPage": 11,
-      "spread": "Pages 10–11",
+      "spread": "pp. 10–11",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 7
@@ -102,7 +110,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_8": {
       "page": 12,
       "endPage": 13,
-      "spread": "Pages 12–13",
+      "spread": "pp. 12–13",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "cme_new",
       "lessonIndex": 8
@@ -110,7 +118,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_9": {
       "page": 2,
       "endPage": 3,
-      "spread": "Pages 2–3",
+      "spread": "pp. 2–3",
       "booklet": "Key Topic 3 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 9
@@ -118,7 +126,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_10": {
       "page": 4,
       "endPage": 5,
-      "spread": "Pages 4–5",
+      "spread": "pp. 4–5",
       "booklet": "Key Topic 3 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 10
@@ -126,79 +134,65 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_11": {
       "page": 8,
       "endPage": 9,
-      "spread": "Pages 8–9",
+      "spread": "pp. 8–9",
       "booklet": "Key Topic 3 Booklet (12p)",
       "unitId": "cme_new",
       "lessonIndex": 11
     }
   },
-  "gcse_cold_war": {
-    "lesson_1": { "page": 2, "endPage": 3, "spread": "Pages 2–3", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 0 },
-    "lesson_2": { "page": 4, "endPage": 5, "spread": "Pages 4–5", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 1 },
-    "lesson_3": { "page": 6, "endPage": 7, "spread": "Pages 6–7", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 2 },
-    "lesson_4": { "page": 10, "endPage": 11, "spread": "Pages 10–11", "booklet": "Key Topic 1 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 3 },
-    "lesson_5": { "page": 2, "endPage": 3, "spread": "Pages 2–3", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 4 },
-    "lesson_6": { "page": 4, "endPage": 5, "spread": "Pages 4–5", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 5 },
-    "lesson_7": { "page": 6, "endPage": 7, "spread": "Pages 6–7", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 6 },
-    "lesson_8": { "page": 10, "endPage": 11, "spread": "Pages 10–11", "booklet": "Key Topic 2 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 7 },
-    "lesson_9": { "page": 2, "endPage": 3, "spread": "Pages 2–3", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 8 },
-    "lesson_10": { "page": 4, "endPage": 5, "spread": "Pages 4–5", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 9 },
-    "lesson_11": { "page": 6, "endPage": 7, "spread": "Pages 6–7", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 10 },
-    "lesson_12": { "page": 10, "endPage": 11, "spread": "Pages 10–11", "booklet": "Key Topic 3 Booklet (16p)", "unitId": "gcse_cold_war", "lessonIndex": 11 }
-  },
   "cold_war": {
     "lesson_1": {
       "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
+      "endPage": 3,
+      "spread": "pp. 2–3",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 0
     },
     "lesson_2": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
+      "endPage": 5,
+      "spread": "pp. 4–5",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 1
     },
     "lesson_3": {
       "page": 6,
-      "endPage": 6,
-      "spread": "Page 6",
+      "endPage": 7,
+      "spread": "pp. 6–7",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 2
     },
     "lesson_4": {
       "page": 8,
-      "endPage": 8,
-      "spread": "Page 8",
+      "endPage": 9,
+      "spread": "pp. 8–9",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 3
     },
     "lesson_5": {
       "page": 12,
-      "endPage": 12,
-      "spread": "Page 12",
+      "endPage": 13,
+      "spread": "pp. 12–13",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 4
     },
     "lesson_6": {
       "page": 14,
-      "endPage": 14,
-      "spread": "Page 14",
+      "endPage": 15,
+      "spread": "pp. 14–15",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 5
     },
     "lesson_7": {
       "page": 16,
-      "endPage": 16,
-      "spread": "Page 16",
+      "endPage": 17,
+      "spread": "pp. 16–17",
       "booklet": "Pupil Workbook",
       "unitId": "cold_war",
       "lessonIndex": 6
@@ -418,7 +412,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_1_1": {
       "page": 2,
       "endPage": 3,
-      "spread": "Pages 2–3",
+      "spread": "pp. 2–3",
       "booklet": "Key Topic 1 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 0
@@ -426,7 +420,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_1_2": {
       "page": 4,
       "endPage": 5,
-      "spread": "Pages 4–5",
+      "spread": "pp. 4–5",
       "booklet": "Key Topic 1 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 1
@@ -434,7 +428,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_1_3": {
       "page": 6,
       "endPage": 7,
-      "spread": "Pages 6–7",
+      "spread": "pp. 6–7",
       "booklet": "Key Topic 1 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 2
@@ -442,7 +436,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_1_4": {
       "page": 10,
       "endPage": 11,
-      "spread": "Pages 10–11",
+      "spread": "pp. 10–11",
       "booklet": "Key Topic 1 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 3
@@ -450,7 +444,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_2_1": {
       "page": 2,
       "endPage": 3,
-      "spread": "Pages 2–3",
+      "spread": "pp. 2–3",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 4
@@ -458,7 +452,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_2_2": {
       "page": 4,
       "endPage": 5,
-      "spread": "Pages 4–5",
+      "spread": "pp. 4–5",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 5
@@ -466,7 +460,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_2_3": {
       "page": 6,
       "endPage": 7,
-      "spread": "Pages 6–7",
+      "spread": "pp. 6–7",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 6
@@ -474,7 +468,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_2_4": {
       "page": 10,
       "endPage": 11,
-      "spread": "Pages 10–11",
+      "spread": "pp. 10–11",
       "booklet": "Key Topic 2 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 7
@@ -482,7 +476,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_3_1": {
       "page": 2,
       "endPage": 3,
-      "spread": "Pages 2–3",
+      "spread": "pp. 2–3",
       "booklet": "Key Topic 3 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 8
@@ -490,7 +484,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_3_2": {
       "page": 4,
       "endPage": 5,
-      "spread": "Pages 4–5",
+      "spread": "pp. 4–5",
       "booklet": "Key Topic 3 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 9
@@ -498,7 +492,7 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_3_3": {
       "page": 6,
       "endPage": 7,
-      "spread": "Pages 6–7",
+      "spread": "pp. 6–7",
       "booklet": "Key Topic 3 Booklet (16p)",
       "unitId": "eee",
       "lessonIndex": 10
@@ -506,9 +500,149 @@ export const WORKBOOK_PAGE_MAP = {
     "lesson_3_4": {
       "page": 10,
       "endPage": 11,
-      "spread": "Pages 10–11",
+      "spread": "pp. 10–11",
       "booklet": "Key Topic 3 Booklet (16p)",
       "unitId": "eee",
+      "lessonIndex": 11
+    }
+  },
+  "first_british_empire": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "first_british_empire",
+      "lessonIndex": 4
+    }
+  },
+  "gcse_cold_war": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Key Topic 1 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Key Topic 1 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Key Topic 1 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Key Topic 1 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Key Topic 2 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Key Topic 2 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 5
+    },
+    "lesson_7": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Key Topic 2 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 6
+    },
+    "lesson_8": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Key Topic 2 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 7
+    },
+    "lesson_9": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Key Topic 3 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 8
+    },
+    "lesson_10": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Key Topic 3 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 9
+    },
+    "lesson_11": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Key Topic 3 Booklet (16p)",
+      "unitId": "gcse_cold_war",
+      "lessonIndex": 10
+    },
+    "lesson_12": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Key Topic 3 Booklet (16p)",
+      "unitId": "gcse_cold_war",
       "lessonIndex": 11
     }
   },
@@ -554,9 +688,9 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 4
     },
     "lesson_6": {
-      "page": 12,
-      "endPage": 13,
-      "spread": "pp. 12–13",
+      "page": 14,
+      "endPage": 15,
+      "spread": "pp. 14–15",
       "booklet": "Pupil Workbook",
       "unitId": "great_war",
       "lessonIndex": 5
@@ -646,6 +780,446 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 4
     }
   },
+  "ks2_ancient_egypt": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_egypt",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_egypt",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_egypt",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_egypt",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_egypt",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_egypt",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_ancient_greece": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_greece",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_greece",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_greece",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_greece",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_greece",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ancient_greece",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_anglo_saxons_vikings": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_anglo_saxons_vikings",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_anglo_saxons_vikings",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_anglo_saxons_vikings",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_anglo_saxons_vikings",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_anglo_saxons_vikings",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_anglo_saxons_vikings",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_early_islamic_baghdad": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_maya_civilisation": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_maya_civilisation",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_maya_civilisation",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_maya_civilisation",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_maya_civilisation",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_maya_civilisation",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_maya_civilisation",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_romans": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_romans",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_romans",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_romans",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_romans",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_romans",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_romans",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_stone_to_iron_age": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_ww2": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 5
+    },
+    "lesson_7": {
+      "page": 15,
+      "endPage": 16,
+      "spread": "pp. 15–16",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 6
+    },
+    "lesson_8": {
+      "page": 17,
+      "endPage": 18,
+      "spread": "pp. 17–18",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 7
+    },
+    "lesson_9": {
+      "page": 19,
+      "endPage": 20,
+      "spread": "pp. 19–20",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 8
+    },
+    "lesson_10": {
+      "page": 21,
+      "endPage": 22,
+      "spread": "pp. 21–22",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 9
+    },
+    "lesson_11": {
+      "page": 23,
+      "endPage": 24,
+      "spread": "pp. 23–24",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_ww2",
+      "lessonIndex": 10
+    }
+  },
   "medieval_england": {
     "lesson_1": {
       "page": 2,
@@ -688,6 +1262,48 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 4
     }
   },
+  "monarchy_religion_power": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "monarchy_religion_power",
+      "lessonIndex": 4
+    }
+  },
   "post_war_britain": {
     "lesson_1": {
       "page": 2,
@@ -727,6 +1343,48 @@ export const WORKBOOK_PAGE_MAP = {
       "spread": "pp. 12–13",
       "booklet": "Pupil Workbook",
       "unitId": "post_war_britain",
+      "lessonIndex": 4
+    }
+  },
+  "second_british_empire": {
+    "lesson_1": {
+      "page": 2,
+      "endPage": 3,
+      "spread": "pp. 2–3",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 4,
+      "endPage": 5,
+      "spread": "pp. 4–5",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 6,
+      "endPage": 7,
+      "spread": "pp. 6–7",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 10,
+      "endPage": 11,
+      "spread": "pp. 10–11",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 12,
+      "endPage": 13,
+      "spread": "pp. 12–13",
+      "booklet": "Pupil Workbook",
+      "unitId": "second_british_empire",
       "lessonIndex": 4
     }
   },
@@ -788,133 +1446,132 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 6
     }
   },
-  "trip_ypres": {},
   "usa": {
     "lesson_1_1": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 1 Booklet",
+      "page": 4,
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 0
     },
     "lesson_1_2": {
       "page": 7,
-      "endPage": 7,
-      "spread": "Page 7",
-      "booklet": "Key Topic 1 Booklet",
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 1
     },
     "lesson_1_3": {
       "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
-      "booklet": "Key Topic 1 Booklet",
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 2
     },
     "lesson_1_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
-      "booklet": "Key Topic 1 Booklet",
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 3
     },
     "lesson_2_1": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
-      "booklet": "Key Topic 2 Booklet",
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 4
     },
     "lesson_2_2": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 2 Booklet",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 5
     },
     "lesson_2_3": {
       "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
-      "booklet": "Key Topic 2 Booklet",
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 6
     },
     "lesson_2_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
-      "booklet": "Key Topic 2 Booklet",
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 7
     },
     "lesson_3_1": {
       "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
-      "booklet": "Key Topic 3 Booklet",
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 8
     },
     "lesson_3_2": {
       "page": 7,
-      "endPage": 7,
-      "spread": "Page 7",
-      "booklet": "Key Topic 3 Booklet",
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 9
     },
     "lesson_3_3": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 3 Booklet",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 10
     },
     "lesson_3_4": {
-      "page": 4,
-      "endPage": 4,
-      "spread": "Page 4",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 13,
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 11
     },
     "lesson_4_1": {
-      "page": 7,
-      "endPage": 7,
-      "spread": "Page 7",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 4,
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 12
     },
     "lesson_4_2": {
-      "page": 10,
-      "endPage": 10,
-      "spread": "Page 10",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 13
     },
     "lesson_4_3": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 14
     },
     "lesson_4_4": {
-      "page": 27,
-      "endPage": 27,
-      "spread": "Page 27",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 13,
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "usa",
       "lessonIndex": 15
     }
@@ -961,9 +1618,9 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 4
     },
     "lesson_6": {
-      "page": 12,
-      "endPage": 13,
-      "spread": "pp. 12–13",
+      "page": 14,
+      "endPage": 15,
+      "spread": "pp. 14–15",
       "booklet": "Pupil Workbook",
       "unitId": "water_and_sanitation",
       "lessonIndex": 5
@@ -971,315 +1628,133 @@ export const WORKBOOK_PAGE_MAP = {
   },
   "weimar_nazi_germany": {
     "lesson_1_1": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 1 Booklet",
+      "page": 4,
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 0
     },
     "lesson_1_2": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 1 Booklet",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 1
     },
     "lesson_1_3": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 1 Booklet",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 2
     },
     "lesson_1_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
-      "booklet": "Key Topic 1 Booklet",
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 1 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 3
     },
     "lesson_2_1": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 2 Booklet",
+      "page": 4,
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 4
     },
     "lesson_2_2": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 2 Booklet",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 5
     },
     "lesson_2_3": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 2 Booklet",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 6
     },
     "lesson_2_4": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 2 Booklet",
+      "page": 13,
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 2 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 7
     },
     "lesson_3_1": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 3 Booklet",
+      "page": 4,
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 8
     },
     "lesson_3_2": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 3 Booklet",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 9
     },
     "lesson_3_3": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 3 Booklet",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 10
     },
     "lesson_3_4": {
       "page": 13,
-      "endPage": 13,
-      "spread": "Page 13",
-      "booklet": "Key Topic 3 Booklet",
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 3 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 11
     },
     "lesson_4_1": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 4,
+      "endPage": 6,
+      "spread": "pp. 4–6",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 12
     },
     "lesson_4_2": {
-      "page": 3,
-      "endPage": 3,
-      "spread": "Page 3",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 7,
+      "endPage": 9,
+      "spread": "pp. 7–9",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 13
     },
     "lesson_4_3": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 10,
+      "endPage": 12,
+      "spread": "pp. 10–12",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 14
     },
     "lesson_4_4": {
-      "page": 2,
-      "endPage": 2,
-      "spread": "Page 2",
-      "booklet": "Key Topic 4 Booklet",
+      "page": 13,
+      "endPage": 15,
+      "spread": "pp. 13–15",
+      "booklet": "Key Topic 4 Booklet (20p)",
       "unitId": "weimar_nazi_germany",
       "lessonIndex": 15
     }
-  },
-  "first_british_empire": {
-    "lesson_1": {
-      "page": 2,
-      "endPage": 3,
-      "spread": "pp. 2–3",
-      "booklet": "Pupil Workbook",
-      "unitId": "first_british_empire",
-      "lessonIndex": 0
-    },
-    "lesson_2": {
-      "page": 4,
-      "endPage": 5,
-      "spread": "pp. 4–5",
-      "booklet": "Pupil Workbook",
-      "unitId": "first_british_empire",
-      "lessonIndex": 1
-    },
-    "lesson_3": {
-      "page": 6,
-      "endPage": 7,
-      "spread": "pp. 6–7",
-      "booklet": "Pupil Workbook",
-      "unitId": "first_british_empire",
-      "lessonIndex": 2
-    },
-    "lesson_4": {
-      "page": 10,
-      "endPage": 11,
-      "spread": "pp. 10–11",
-      "booklet": "Pupil Workbook",
-      "unitId": "first_british_empire",
-      "lessonIndex": 3
-    },
-    "lesson_5": {
-      "page": 12,
-      "endPage": 13,
-      "spread": "pp. 12–13",
-      "booklet": "Pupil Workbook",
-      "unitId": "first_british_empire",
-      "lessonIndex": 4
-    }
-  },
-  "monarchy_religion_power": {
-    "lesson_1": {
-      "page": 2,
-      "endPage": 3,
-      "spread": "pp. 2–3",
-      "booklet": "Pupil Workbook",
-      "unitId": "monarchy_religion_power",
-      "lessonIndex": 0
-    },
-    "lesson_2": {
-      "page": 4,
-      "endPage": 5,
-      "spread": "pp. 4–5",
-      "booklet": "Pupil Workbook",
-      "unitId": "monarchy_religion_power",
-      "lessonIndex": 1
-    },
-    "lesson_3": {
-      "page": 6,
-      "endPage": 7,
-      "spread": "pp. 6–7",
-      "booklet": "Pupil Workbook",
-      "unitId": "monarchy_religion_power",
-      "lessonIndex": 2
-    },
-    "lesson_4": {
-      "page": 10,
-      "endPage": 11,
-      "spread": "pp. 10–11",
-      "booklet": "Pupil Workbook",
-      "unitId": "monarchy_religion_power",
-      "lessonIndex": 3
-    },
-    "lesson_5": {
-      "page": 12,
-      "endPage": 13,
-      "spread": "pp. 12–13",
-      "booklet": "Pupil Workbook",
-      "unitId": "monarchy_religion_power",
-      "lessonIndex": 4
-    }
-  },
-  "second_british_empire": {
-    "lesson_1": {
-      "page": 2,
-      "endPage": 3,
-      "spread": "pp. 2–3",
-      "booklet": "Pupil Workbook",
-      "unitId": "second_british_empire",
-      "lessonIndex": 0
-    },
-    "lesson_2": {
-      "page": 4,
-      "endPage": 5,
-      "spread": "pp. 4–5",
-      "booklet": "Pupil Workbook",
-      "unitId": "second_british_empire",
-      "lessonIndex": 1
-    },
-    "lesson_3": {
-      "page": 6,
-      "endPage": 7,
-      "spread": "pp. 6–7",
-      "booklet": "Pupil Workbook",
-      "unitId": "second_british_empire",
-      "lessonIndex": 2
-    },
-    "lesson_4": {
-      "page": 10,
-      "endPage": 11,
-      "spread": "pp. 10–11",
-      "booklet": "Pupil Workbook",
-      "unitId": "second_british_empire",
-      "lessonIndex": 3
-    },
-    "lesson_5": {
-      "page": 12,
-      "endPage": 13,
-      "spread": "pp. 12–13",
-      "booklet": "Pupil Workbook",
-      "unitId": "second_british_empire",
-      "lessonIndex": 4
-    }
-  },
-  "ks2_stone_to_iron_age": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_stone_to_iron_age", "lessonIndex": 5 }
-  },
-  "ks2_romans": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_romans", "lessonIndex": 5 }
-  },
-  "ks2_anglo_saxons_vikings": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_anglo_saxons_vikings", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_anglo_saxons_vikings", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_anglo_saxons_vikings", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_anglo_saxons_vikings", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_anglo_saxons_vikings", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_anglo_saxons_vikings", "lessonIndex": 5 }
-  },
-  "ks2_ancient_egypt": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_egypt", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_egypt", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_egypt", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_egypt", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_egypt", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_egypt", "lessonIndex": 5 }
-  },
-  "ks2_ancient_greece": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_greece", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_greece", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_greece", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_greece", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_greece", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_ancient_greece", "lessonIndex": 5 }
-  },
-  "ks2_early_islamic_baghdad": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_early_islamic_baghdad", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_early_islamic_baghdad", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_early_islamic_baghdad", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_early_islamic_baghdad", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_early_islamic_baghdad", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_early_islamic_baghdad", "lessonIndex": 5 }
-  },
-  "ks2_maya_civilisation": {
-    "lesson_1": { "page": 3, "endPage": 4, "spread": "pp. 3–4", "booklet": "Pupil Workbook", "unitId": "ks2_maya_civilisation", "lessonIndex": 0 },
-    "lesson_2": { "page": 5, "endPage": 6, "spread": "pp. 5–6", "booklet": "Pupil Workbook", "unitId": "ks2_maya_civilisation", "lessonIndex": 1 },
-    "lesson_3": { "page": 7, "endPage": 8, "spread": "pp. 7–8", "booklet": "Pupil Workbook", "unitId": "ks2_maya_civilisation", "lessonIndex": 2 },
-    "lesson_4": { "page": 9, "endPage": 10, "spread": "pp. 9–10", "booklet": "Pupil Workbook", "unitId": "ks2_maya_civilisation", "lessonIndex": 3 },
-    "lesson_5": { "page": 11, "endPage": 12, "spread": "pp. 11–12", "booklet": "Pupil Workbook", "unitId": "ks2_maya_civilisation", "lessonIndex": 4 },
-    "lesson_6": { "page": 13, "endPage": 14, "spread": "pp. 13–14", "booklet": "Pupil Workbook", "unitId": "ks2_maya_civilisation", "lessonIndex": 5 }
   }
 };
 
@@ -1305,8 +1780,19 @@ export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
 
   if (!entry) return null;
 
-  const isMultiBooklet = ['cme_new', 'edexcel_medicine', 'eee', 'usa', 'weimar_nazi_germany'].includes(unitId);
-  const spreadLabel = entry.spread || (entry.endPage && entry.endPage !== entry.page ? `pp. ${entry.page}–${entry.endPage}` : `Page ${entry.page}`);
+  const isMultiBooklet = [
+    'cme_new',
+    'edexcel_medicine',
+    'eee',
+    'gcse_cold_war',
+    'usa',
+    'weimar_nazi_germany',
+  ].includes(unitId);
+  const spreadLabel =
+    entry.spread ||
+    (entry.endPage && entry.endPage !== entry.page
+      ? `pp. ${entry.page}–${entry.endPage}`
+      : `Page ${entry.page}`);
 
   if (isMultiBooklet && entry.booklet) {
     return {
@@ -1315,7 +1801,7 @@ export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
       spread: spreadLabel,
       booklet: entry.booklet,
       label: `${spreadLabel} (${entry.booklet})`,
-      shortLabel: spreadLabel
+      shortLabel: spreadLabel,
     };
   }
   return {
@@ -1324,6 +1810,6 @@ export function getWorkbookPageAnchor(unitId, lessonOrId, fallbackIdx = 0) {
     spread: spreadLabel,
     booklet: 'Workbook',
     label: spreadLabel,
-    shortLabel: spreadLabel
+    shortLabel: spreadLabel,
   };
 }

@@ -856,7 +856,90 @@
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg",
-      "enquiry": "How did Stone Age hunters survive—and how did Britain become an island?"
+      "enquiry": "How did Stone Age hunters survive—and how did Britain become an island?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "ks2_stone_to_iron_age_l01_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 1",
+        "datesBadge": "c. 850,000–4000 BC",
+        "topicLabel": "Enquiry 01: Ice Age Hunters & Sunken Doggerland",
+        "title": "How Did Stone Age Hunters Survive and How Did Britain Become an Island?",
+        "spokenTitle": "How did Stone Age hunters survive, and how did Britain become an island?",
+        "thumbUrl": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg",
+        "provenanceNote": "British Museum, Royal BC Museum, Historic Environment Scotland & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Warming Forests",
+          "Melting Ice",
+          "Island Britain"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Ice Age Caves & Flint Handaxes",
+            "date": "c. 850,000 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/creswell_crags_ice_age_cave.jpg",
+            "mode": "landscape",
+            "stat": "Happisburgh Footprints & Chipped Flint Tools",
+            "connective": "How did Stone Age hunters survive, and how did Britain become an island?",
+            "html": "During the freezing <strong>Old Stone Age</strong>, families sheltered inside limestone caves like <strong>Creswell Crags</strong>. Makers chipped sharp <strong>flint handaxes</strong> and tracked giant woolly mammoths for food and warm hides.",
+            "paired_prose_hash": "60eadac5e6",
+            "spoken": "How did Stone Age hunters survive, and how did Britain become an island? <short pause> During the freezing Old Stone Age , families sheltered inside limestone caves like Creswell Crags . Makers chipped sharp flint handaxes and tracked giant woolly mammoths for food and warm hides."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Cheddar Man & Antler Masks",
+            "date": "c. 10,000 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/goughs_cave_cheddar_gorge.jpg",
+            "mode": "landscape",
+            "stat": "Gough's Cave Skeleton & Star Carr Lake Camp",
+            "connective": "Around ten thousand BC, the Ice Age ended and green forests spread.",
+            "html": "<strong>Hunter-gatherers</strong> fished rivers and moved camp with the seasons as red deer filled new woods. Archaeologists found <strong>Cheddar Man</strong> in Somerset and carved <strong>antler headdresses</strong> at Star Carr.",
+            "paired_prose_hash": "93d4b85ba9",
+            "spoken": "Around ten thousand BC, the Ice Age ended and green forests spread. <short pause> Hunter-gatherers fished rivers and moved camp with the seasons as red deer filled new woods. Archaeologists found Cheddar Man in Somerset and carved antler headdresses at Star Carr."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Sinking of Green Doggerland",
+            "date": "c. 6500 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/prehistoric_britain_doggerland_map_ks2.png",
+            "mode": "contain-light",
+            "stat": "Melting Ice Floods the North Sea Land Bridge",
+            "connective": "For thousands of years, families could still walk dry-footed from Europe.",
+            "html": "Hunters camped across <strong>Doggerland</strong>, a wide green land bridge linking Britain to Europe. Around <strong>6500 BC</strong>, melting ice sheets flooded those low marshes under the <strong>North Sea</strong>.",
+            "paired_prose_hash": "74fed1802d",
+            "spoken": "For thousands of years, families could still walk dry-footed from Europe. <short pause> Hunters camped across Doggerland , a wide green land bridge linking Britain to Europe. Around 6500 BC , melting ice sheets flooded those low marshes under the North Sea ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Britain Becomes an Island",
+            "date": "By 4000 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/woolly_mammoth_reconstruction.jpg",
+            "mode": "landscape",
+            "pos": "center 30%",
+            "stat": "Mammoth Teeth Dredged from the Sea Floor",
+            "connective": "Rising waves changed Britain's map and Stone Age life forever.",
+            "html": "Flooding <strong>Doggerland</strong> cut Britain off from mainland Europe as an <strong>island</strong>. Clever <strong>Stone Age families</strong> had survived freezing ice, warming forests, and rising seas.",
+            "spoken": "Rising waves changed Britain's map and Stone Age life forever. <short pause> Flooding Doggerland cut Britain off from mainland Europe as an island . Clever Stone Age families had survived freezing ice, warming forests, and rising seas."
+          }
+        ],
+        "takeaway": "Stone Age hunter-gatherers survived the Ice Age with chipped flint tools before melting ice flooded Doggerland around 6500 BC and turned Britain into an island.",
+        "vocab": [
+          [
+            "1. Palaeolithic",
+            "The Old Stone Age when Ice Age hunters chipped flint handaxes."
+          ],
+          [
+            "2. Knapping",
+            "Striking flint stones carefully to chip off razor-sharp tool flakes."
+          ],
+          [
+            "3. Doggerland",
+            "Green land bridge to Europe flooded by the North Sea around 6500 BC."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Stone Age hunter-gatherers survived the Ice Age with chipped flint tools before melting ice flooded Doggerland around 6500 BC and turned Britain into an island."
+      }
     },
     {
       "id": "lesson_2",
@@ -1680,7 +1763,89 @@
         "position": "center 48%"
       },
       "banner_image": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg",
-      "enquiry": "How did farming and stone villages change Stone Age life?"
+      "enquiry": "How did farming and stone villages change Stone Age life?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "ks2_stone_to_iron_age_l02_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 2",
+        "datesBadge": "c. 4000–2500 BC",
+        "topicLabel": "Enquiry 02: The First Farmers & Skara Brae",
+        "title": "How Did Farming and Stone Villages Change Stone Age Life?",
+        "spokenTitle": "How did farming and stone villages change Stone Age life?",
+        "thumbUrl": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg",
+        "provenanceNote": "British Museum, Royal BC Museum, Historic Environment Scotland & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Settled Harvests",
+          "Stone Houses",
+          "Permanent Homes"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Boats Bring the First Farms",
+            "date": "c. 4000 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/neolithic_thatched_farmhouses.jpg",
+            "mode": "landscape",
+            "stat": "Wheat, Sheep & Polished Stone Axes Arrive",
+            "connective": "How did farming and stone villages change Stone Age life?",
+            "html": "Around 4000 BC, newcomers sailed wooden boats to Britain with tame sheep, cattle, and <strong>wheat seeds</strong>. Using <strong>polished stone axes</strong> and flint sickles, <strong>Neolithic farmers</strong> cleared woods for crops.",
+            "paired_prose_hash": "3a96c9d655",
+            "spoken": "How did farming and stone villages change Stone Age life? <short pause> Around 4000 BC, newcomers sailed wooden boats to Britain with tame sheep, cattle, and wheat seeds . Using polished stone axes and flint sickles, Neolithic farmers cleared woods for crops."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Storm Uncovers Skara Brae",
+            "date": "c. 3100 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/skara_brae_orkney_village.jpg",
+            "mode": "landscape",
+            "stat": "8 Snug Orkney Flagstone Homes Found in 1850",
+            "connective": "Steady harvests meant families could build lasting villages all year round.",
+            "html": "In 1850, a winter storm in Orkney uncovered <strong>Skara Brae</strong> beneath tall sand dunes. Eight flagstone houses still held <strong>stone box beds</strong>, warm central hearths, and <strong>stone dressers</strong>.",
+            "paired_prose_hash": "c5d4e10028",
+            "spoken": "Steady harvests meant families could build lasting villages all year round. <short pause> In 1850, a winter storm in Orkney uncovered Skara Brae beneath tall sand dunes. Eight flagstone houses still held stone box beds , warm central hearths, and stone dressers ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "West Kennet Long Barrow",
+            "date": "c. 3650 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/west_kennet_long_barrow_stones.jpg",
+            "mode": "landscape",
+            "stat": "Nearly 50 Ancestors Placed in Stone Chambers",
+            "connective": "Settled farming villages also honoured their ancestors on high hills.",
+            "html": "Villagers in Wiltshire raised <strong>West Kennet Long Barrow</strong> with heavy boulders guarding five dark chambers. Families placed nearly fifty <strong>ancestors</strong> inside beside hand-coiled <strong>clay bowls</strong> and beads.",
+            "paired_prose_hash": "5f81109f43",
+            "spoken": "Settled farming villages also honoured their ancestors on high hills. <short pause> Villagers in Wiltshire raised West Kennet Long Barrow with heavy boulders guarding five dark chambers. Families placed nearly fifty ancestors inside beside hand-coiled clay bowls and beads."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "From Roaming Camps to Villages",
+            "date": "By 2500 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/skara_brae_stone_dresser_hero.jpg",
+            "mode": "landscape",
+            "stat": "Year-Round Villages, Pottery & Ancestor Tombs",
+            "connective": "Farming transformed how families lived, ate, and worked together.",
+            "html": "Instead of moving camp every season, <strong>Neolithic families</strong> lived in permanent <strong>villages</strong> all year. Growing crops, making <strong>clay pottery</strong>, and building barrows rooted communities to their land.",
+            "spoken": "Farming transformed how families lived, ate, and worked together. <short pause> Instead of moving camp every season, Neolithic families lived in permanent villages all year. Growing crops, making clay pottery , and building barrows rooted communities to their land."
+          }
+        ],
+        "takeaway": "Around 4000 BC, Neolithic farming let families settle in year-round villages like stone-built Skara Brae and raise giant ancestor tombs like West Kennet Long Barrow.",
+        "vocab": [
+          [
+            "1. Neolithic",
+            "The New Stone Age when Britain's first farmers built settled villages."
+          ],
+          [
+            "2. Skara Brae",
+            "5,000-year-old Orkney stone village uncovered by a storm in 1850."
+          ],
+          [
+            "3. Long Barrow",
+            "Long chalk-and-earth mound with stone chambers for village ancestors."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Around 4000 BC, Neolithic farming let families settle in year-round villages like stone-built Skara Brae and raise giant ancestor tombs like West Kennet Long Barrow."
+      }
     },
     {
       "id": "lesson_3",
@@ -2504,7 +2669,89 @@
         "position": "center 48%"
       },
       "banner_image": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg",
-      "enquiry": "How and why did Stone Age people build giant Stonehenge?"
+      "enquiry": "How and why did Stone Age people build giant Stonehenge?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "ks2_stone_to_iron_age_l03_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 3",
+        "datesBadge": "c. 3000–2200 BC",
+        "topicLabel": "Enquiry 03: Secrets of Stonehenge",
+        "title": "How and Why Did Stone Age People Build Giant Stonehenge?",
+        "spokenTitle": "How and why did Stone Age people build giant Stonehenge?",
+        "thumbUrl": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg",
+        "provenanceNote": "British Museum, Royal BC Museum, Historic Environment Scotland & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "25-Tonne Sarsens",
+          "Solstice Sun",
+          "Sacred Calendar"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Chalk Henge & Welsh Bluestones",
+            "date": "c. 3000–2500 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/stonehenge_wide_circle_view.jpg",
+            "mode": "landscape",
+            "stat": "80 Bluestones Hauled 140 Miles from Wales",
+            "connective": "How and why did Stone Age people build giant Stonehenge?",
+            "html": "Around 3000 BC, workers dug a circular chalk <strong>henge</strong> on Salisbury Plain using <strong>antler picks</strong>. Later, teams hauled eighty spotted <strong>bluestones</strong> 140 miles from the Preseli Hills in Wales.",
+            "paired_prose_hash": "24ce856541",
+            "spoken": "How and why did Stone Age people build giant Stonehenge? <short pause> Around 3000 BC, workers dug a circular chalk henge on Salisbury Plain using antler picks . Later, teams hauled eighty spotted bluestones 140 miles from the Preseli Hills in Wales."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Sarsen Arches & Feast Village",
+            "date": "c. 2500 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/durrington_walls_builders_village.jpg",
+            "mode": "landscape",
+            "stat": "25-Tonne Sarsens Locked into Tall Trilithons",
+            "connective": "Next, builders dragged even bigger grey sandstone boulders across Wiltshire.",
+            "html": "Without wheels or cranes, crews pulled <strong>25-tonne sarsens</strong> on wooden sledges and locked them into three-stone <strong>trilithons</strong>. Nearby at <strong>Durrington Walls</strong>, builders shared huge winter pork feasts.",
+            "paired_prose_hash": "008c4c221d",
+            "spoken": "Next, builders dragged even bigger grey sandstone boulders across Wiltshire. <short pause> Without wheels or cranes, crews pulled 25-tonne sarsens on wooden sledges and locked them into three-stone trilithons . Nearby at Durrington Walls , builders shared huge winter pork feasts."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "The Heel Stone & Solstice Sun",
+            "date": "c. 2500–2200 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/stonehenge_solstice_heel_stone.jpg",
+            "mode": "contain",
+            "stat": "Aligned with Midsummer & Midwinter Sunbeams",
+            "connective": "Careful stone positions lined the circle up with the sky.",
+            "html": "Outside the circle stands the lone <strong>Heel Stone</strong> watching the horizon. At the <strong>Midsummer solstice</strong> sunrise and <strong>Midwinter</strong> sunset, sunlight shines straight through Stonehenge's giant stone arches.",
+            "paired_prose_hash": "1cf246cd91",
+            "spoken": "Careful stone positions lined the circle up with the sky. <short pause> Outside the circle stands the lone Heel Stone watching the horizon. At the Midsummer solstice sunrise and Midwinter sunset, sunlight shines straight through Stonehenge's giant stone arches."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Giant Stone Calendar & Shrine",
+            "date": "By 2200 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/stonehenge_sarsen_trilithons.jpg",
+            "mode": "landscape",
+            "stat": "Built Over Centuries Without Metal or Wheels",
+            "connective": "Hundreds of years of teamwork left an unforgettable monument.",
+            "html": "Working without metal tools, <strong>Neolithic communities</strong> united thousands of helpers across Britain. Together they raised <strong>Stonehenge</strong> as a sacred <strong>solar calendar</strong> and gathering place for ancestors.",
+            "spoken": "Hundreds of years of teamwork left an unforgettable monument. <short pause> Working without metal tools, Neolithic communities united thousands of helpers across Britain. Together they raised Stonehenge as a sacred solar calendar and gathering place for ancestors."
+          }
+        ],
+        "takeaway": "Using antler picks, wooden sledges, and huge teamwork, Stone Age builders hauled Welsh bluestones and 25-tonne sarsens to align Stonehenge with the solstice sun.",
+        "vocab": [
+          [
+            "1. Henge",
+            "Circular prehistoric earthwork with an inner ditch and outer bank."
+          ],
+          [
+            "2. Trilithon",
+            "Giant three-stone arch with two uprights and one top lintel."
+          ],
+          [
+            "3. Solstice",
+            "Longest summer day or shortest winter day aligned with Stonehenge."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using antler picks, wooden sledges, and huge teamwork, Stone Age builders hauled Welsh bluestones and 25-tonne sarsens to align Stonehenge with the solstice sun."
+      }
     },
     {
       "id": "lesson_4",
@@ -3359,7 +3606,89 @@
         "position": "center 52%"
       },
       "banner_image": "/images/upgraded/ks2-world/stone_l4_banner_king_barrows.jpg",
-      "enquiry": "How did Beaker newcomers and bronze metal change life in Britain?"
+      "enquiry": "How did Beaker newcomers and bronze metal change life in Britain?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "ks2_stone_to_iron_age_l04_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 4",
+        "datesBadge": "c. 2500–1200 BC",
+        "topicLabel": "Enquiry 04: Enter the Bronze Age & Beaker People",
+        "title": "How Did Beaker Newcomers and Bronze Metal Change Life in Britain?",
+        "spokenTitle": "How did Beaker newcomers and bronze metal change life in Britain?",
+        "thumbUrl": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
+        "provenanceNote": "British Museum, Royal BC Museum, Historic Environment Scotland & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Copper Plus Tin",
+          "Gold & Graves",
+          "Metal Age Begins"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Beaker Folk & Copper Mines",
+            "date": "c. 2400 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/great_orme_bronze_age_copper_mine.jpg",
+            "mode": "landscape",
+            "stat": "Great Orme Copper & Cornish Tin Smelted",
+            "connective": "How did Beaker newcomers and bronze metal change life in Britain?",
+            "html": "Around 2400 BC, the <strong>Beaker people</strong> arrived from Europe with patterned clay pots and metalworking skills. Miners dug green copper at <strong>Great Orme</strong> and <strong>smelted</strong> rock over fierce fires.",
+            "paired_prose_hash": "10def65659",
+            "spoken": "How did Beaker newcomers and bronze metal change life in Britain? <short pause> Around 2400 BC, the Beaker people arrived from Europe with patterned clay pots and metalworking skills. Miners dug green copper at Great Orme and smelted rock over fierce fires."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Casting Tough Golden Bronze",
+            "date": "c. 2100 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/stone_bronze_iron_tools_comparison_ks2.png",
+            "mode": "contain-light",
+            "stat": "9 Parts Copper + 1 Part Tin in Stone Moulds",
+            "connective": "Pure copper bent too easily, so smiths blended two metals together.",
+            "html": "Clever smiths mixed nine parts <strong>copper</strong> with one part Cornish <strong>tin</strong> to make tough <strong>bronze</strong>. Poured into hollow two-piece moulds, bronze axes cleared woodland fast and could be recast.",
+            "paired_prose_hash": "66eae15ae5",
+            "spoken": "Pure copper bent too easily, so smiths blended two metals together. <short pause> Clever smiths mixed nine parts copper with one part Cornish tin to make tough bronze . Poured into hollow two-piece moulds, bronze axes cleared woodland fast and could be recast."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Gold Capes & Amesbury Archer",
+            "date": "c. 2300 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/amesbury_archer_skeleton_grave.jpg",
+            "mode": "landscape",
+            "stat": "100+ Grave Goods & Tooth Clues from the Alps",
+            "connective": "Metal wealth also created powerful Bronze Age leaders and travellers.",
+            "html": "Rulers wore beaten gold <strong>lunulae</strong> collars and the gleaming Mold Gold Cape. Near Stonehenge, the <strong>Amesbury Archer</strong> was buried with five beakers, copper knives, and <strong>Alpine</strong> tooth clues.",
+            "paired_prose_hash": "07eff83caa",
+            "spoken": "Metal wealth also created powerful Bronze Age leaders and travellers. <short pause> Rulers wore beaten gold lunulae collars and the gleaming Mold Gold Cape. Near Stonehenge, the Amesbury Archer was buried with five beakers, copper knives, and Alpine tooth clues."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Trade Routes End the Stone Age",
+            "date": "By 1500 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/bell_beaker_pottery_vessels.jpg",
+            "mode": "landscape",
+            "stat": "Metal Axes, Wider Farmland & European Trade",
+            "connective": "Shining bronze tools and long trade links reshaped island Britain.",
+            "html": "Recyclable <strong>bronze tools</strong> felled thick forests for wider sunny farms across Britain. Guarding <strong>copper, tin, and gold</strong> routes connected British chieftains to distant <strong>European traders</strong>.",
+            "spoken": "Shining bronze tools and long trade links reshaped island Britain. <short pause> Recyclable bronze tools felled thick forests for wider sunny farms across Britain. Guarding copper, tin, and gold routes connected British chieftains to distant European traders ."
+          }
+        ],
+        "takeaway": "Beaker newcomers introduced metalworking around 2400 BC, and mixing Welsh copper with Cornish tin gave Bronze Age Britain tough cast axes and rich trade links.",
+        "vocab": [
+          [
+            "1. Smelting",
+            "Heating crushed metal rock in a hot fire until liquid metal runs out."
+          ],
+          [
+            "2. Bronze",
+            "Tough golden metal made by mixing nine parts copper with one part tin."
+          ],
+          [
+            "3. Mould",
+            "Hollow two-piece stone shape filled with liquid bronze to cast tools."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Beaker newcomers introduced metalworking around 2400 BC, and mixing Welsh copper with Cornish tin gave Bronze Age Britain tough cast axes and rich trade links."
+      }
     },
     {
       "id": "lesson_5",
@@ -4209,7 +4538,89 @@
           "model_answer": "Recall: They stood directly above a slow-moving Cambridgeshire river.\nExplain: Burning houses fell into thick, airless wet silt where wood, cloth, and porridge could not rot away.\nChallenge: Families weren't trapped on water — they also drove wheeled carts across dry fields nearby!"
         }
       ],
-      "enquiry": "What did the sunken village at Must Farm reveal about Bronze Age homes?"
+      "enquiry": "What did the sunken village at Must Farm reveal about Bronze Age homes?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "ks2_stone_to_iron_age_l05_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 5",
+        "datesBadge": "c. 1200–800 BC",
+        "topicLabel": "Enquiry 05: Must Farm — \"Britain's Pompeii\"",
+        "title": "What Did the Sunken Village at Must Farm Reveal About Bronze Age Homes?",
+        "spokenTitle": "What did the sunken village at Must Farm reveal about Bronze Age homes?",
+        "thumbUrl": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_age_roundhouse.jpg",
+        "provenanceNote": "British Museum, Royal BC Museum, Historic Environment Scotland & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Sealed in Mud",
+          "Channel Boats",
+          "Daily Life Saved"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Stilt Homes & Sudden Fire",
+            "date": "c. 900 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/must_farm_stilt_village_dig.jpg",
+            "mode": "landscape",
+            "stat": "Airless River Mud Seals 'Britain's Pompeii'",
+            "connective": "What did the sunken village at Must Farm reveal about Bronze Age homes?",
+            "html": "Around 900 BC, families built wooden roundhouses on oak <strong>stilts</strong> above a river at <strong>Must Farm</strong>. When fire struck, homes dropped into airless <strong>waterlogged mud</strong> as \"Britain's Pompeii\".",
+            "paired_prose_hash": "ad3f6d1af1",
+            "spoken": "What did the sunken village at Must Farm reveal about Bronze Age homes? <short pause> Around 900 BC, families built wooden roundhouses on oak stilts above a river at Must Farm . When fire struck, homes dropped into airless waterlogged mud as \"Britain's Pompeii\"."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Porridge Spoons & Oldest Wheel",
+            "date": "c. 900 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/flag_fen_wetland_causeway.jpg",
+            "mode": "landscape",
+            "stat": "1-Metre Ash Wheel, Cloth & Wicker Eel Traps",
+            "connective": "Deep wet mud stopped fragile wood, food, and cloth from rotting.",
+            "html": "Archaeologists uncovered bowls of <strong>charred porridge</strong> with a wooden spoon, fine woven cloth, and <strong>wicker eel traps</strong>. Beside marshy Flag Fen lay a one-metre <strong>wooden wheel</strong>, Britain's oldest!",
+            "paired_prose_hash": "2de0f1a378",
+            "spoken": "Deep wet mud stopped fragile wood, food, and cloth from rotting. <short pause> Archaeologists uncovered bowls of charred porridge with a wooden spoon, fine woven cloth, and wicker eel traps . Beside marshy Flag Fen lay a one-metre wooden wheel , Britain's oldest!"
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Sacred Waters & Dover Boat",
+            "date": "c. 1550–900 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/dover_bronze_age_oak_boat.jpg",
+            "mode": "landscape",
+            "stat": "Oak Planks Stitched Together with Yew Twigs",
+            "connective": "Bronze Age Britons also sailed far beyond their wetland rivers.",
+            "html": "Mediterranean <strong>glass beads</strong> reached Must Farm while villagers lowered bronze shields into sacred waters at <strong>Flag Fen</strong>. Sailors crossed the Channel in the <strong>Dover sewn-plank boat</strong> stitched with yew.",
+            "paired_prose_hash": "1eadf610fd",
+            "spoken": "Bronze Age Britons also sailed far beyond their wetland rivers. <short pause> Mediterranean glass beads reached Must Farm while villagers lowered bronze shields into sacred waters at Flag Fen . Sailors crossed the Channel in the Dover sewn-plank boat stitched with yew."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "A Snapshot of Bronze Age Life",
+            "date": "Late Bronze Age",
+            "img": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_age_roundhouse.jpg",
+            "mode": "landscape",
+            "stat": "Skilled Carpenters, Weavers & Sea Traders",
+            "connective": "Must Farm froze one ordinary Bronze Age day in amazing detail.",
+            "html": "Preserved timbers, <strong>wooden wheels</strong>, and cosy roundhouse goods proved Bronze Age families were skilled <strong>carpenters and weavers</strong>. Seagoing <strong>oak boats</strong> linked British villages straight to Europe.",
+            "spoken": "Must Farm froze one ordinary Bronze Age day in amazing detail. <short pause> Preserved timbers, wooden wheels , and cosy roundhouse goods proved Bronze Age families were skilled carpenters and weavers . Seagoing oak boats linked British villages straight to Europe."
+          }
+        ],
+        "takeaway": "Sealed in wet river mud around 900 BC, Must Farm preserved stilt roundhouses, charred porridge, woven cloth, and Britain's oldest complete wooden wheel.",
+        "vocab": [
+          [
+            "1. Stilts",
+            "Sturdy oak posts holding wooden houses safely above river water."
+          ],
+          [
+            "2. Waterlogged",
+            "Soaked in airless wet mud that stops wood and cloth from rotting."
+          ],
+          [
+            "3. Sewn-plank boat",
+            "Bronze Age oak ship stitched together with twisted yew branches."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sealed in wet river mud around 900 BC, Must Farm preserved stilt roundhouses, charred porridge, woven cloth, and Britain's oldest complete wooden wheel."
+      }
     },
     {
       "id": "lesson_6",
@@ -5059,7 +5470,89 @@
           "model_answer": "Recall: They heated iron ore in super-hot furnaces and hammered the glowing metal on anvils.\nExplain: Growing Celtic tribes built earth-banked hillforts to guard families, livestock, and grain stores from rivals.\nChallenge: Emperor Claudius sent Roman armies across the Channel in AD 43, beginning Roman Britain and written records."
         }
       ],
-      "enquiry": "How did iron tools and giant hillforts shape Celtic Britain?"
+      "enquiry": "How did iron tools and giant hillforts shape Celtic Britain?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "ks2_stone_to_iron_age_l06_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 6",
+        "datesBadge": "c. 800 BC–AD 43",
+        "topicLabel": "Enquiry 06: Iron Age Celts & Giant Hillforts",
+        "title": "How Did Iron Tools and Giant Hillforts Shape Celtic Britain?",
+        "spokenTitle": "How did iron tools and giant hillforts shape Celtic Britain?",
+        "thumbUrl": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
+        "provenanceNote": "British Museum, Royal BC Museum, Historic Environment Scotland & Original Hub Cartography (Zero AI Imagery)",
+        "bridges": [
+          "Bumper Harvests",
+          "Gold & Coins",
+          "Prehistory Ends"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Iron Ploughs & Roundhouses",
+            "date": "c. 800–400 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/castell_henllys_hillfort_roundhouse.jpg",
+            "mode": "landscape",
+            "stat": "Blacksmith Furnaces, Querns & Thatch Homes",
+            "connective": "How did iron tools and giant hillforts shape Celtic Britain?",
+            "html": "From 800 BC, <strong>blacksmiths</strong> heated local iron ore to hammer tough <strong>iron ploughshares</strong> that sliced heavy clay soil. Celtic families ground flour on <strong>rotary querns</strong> inside thatched roundhouses.",
+            "paired_prose_hash": "64879897fe",
+            "spoken": "How did iron tools and giant hillforts shape Celtic Britain? <short pause> From 800 BC, blacksmiths heated local iron ore to hammer tough iron ploughshares that sliced heavy clay soil. Celtic families ground flour on rotary querns inside thatched roundhouses."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Celtic Tribes & Maiden Castle",
+            "date": "c. 400–100 BC",
+            "img": "/units/ks2_stone_to_iron_age/assets/maiden_castle_earth_ramparts.jpg",
+            "mode": "landscape",
+            "stat": "Towering Chalk Ramparts & Slingshot Gates",
+            "connective": "Bigger harvests grew rival Celtic tribes that needed strong defences.",
+            "html": "Tribes crowned high ridges with giant <strong>hillforts</strong> like <strong>Maiden Castle</strong> in Dorset. Steep earth <strong>ramparts</strong>, winding gates, and slingshot stones guarded grain pits while chalk hills held the Uffington Horse.",
+            "paired_prose_hash": "d0f43689c0",
+            "spoken": "Bigger harvests grew rival Celtic tribes that needed strong defences. <short pause> Tribes crowned high ridges with giant hillforts like Maiden Castle in Dorset. Steep earth ramparts , winding gates, and slingshot stones guarded grain pits while chalk hills held the Uffington Horse."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Gold Torcs, Coins & AD 43",
+            "date": "100 BC–AD 43",
+            "img": "/units/ks2_stone_to_iron_age/assets/uffington_white_horse_hillfort.jpg",
+            "mode": "landscape",
+            "stat": "Snettisham Great Torc & Claudius's Legions",
+            "connective": "Skilled Celtic smiths and traders soon caught the eye of Rome.",
+            "html": "Wise <strong>Druids</strong> memorised laws while smiths twisted gold ropes into the <strong>Snettisham Great Torc</strong> and minted horse coins. In <strong>AD 43</strong>, Emperor Claudius invaded with four Roman legions.",
+            "paired_prose_hash": "706e259c97",
+            "spoken": "Skilled Celtic smiths and traders soon caught the eye of Rome. <short pause> Wise Druids memorised laws while smiths twisted gold ropes into the Snettisham Great Torc and minted horse coins. In AD 43 , Emperor Claudius invaded with four Roman legions."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Written History Begins in AD 43",
+            "date": "AD 43",
+            "img": "/units/ks2_stone_to_iron_age/assets/snettisham_twisted_gold_torc.jpg",
+            "mode": "landscape",
+            "stat": "800,000+ Years of British Prehistory Close",
+            "connective": "Roman soldiers brought Latin writing to a thriving Celtic island.",
+            "html": "Iron ploughs, towering <strong>hillforts</strong>, and dazzling <strong>gold torcs</strong> had built a rich Celtic land. When <strong>Roman legions</strong> landed in AD 43, British prehistory ended and written history began.",
+            "spoken": "Roman soldiers brought Latin writing to a thriving Celtic island. <short pause> Iron ploughs, towering hillforts , and dazzling gold torcs had built a rich Celtic land. When Roman legions landed in AD 43, British prehistory ended and written history began."
+          }
+        ],
+        "takeaway": "Tough iron ploughs, thatched roundhouses, giant hillforts like Maiden Castle, and gold torcs shaped Celtic Britain until Rome invaded in AD 43.",
+        "vocab": [
+          [
+            "1. Rotary quern",
+            "Two heavy round stones spun with a handle to grind grain into flour."
+          ],
+          [
+            "2. Hillfort",
+            "Hilltop town ringed by steep earth ramparts, ditches, and gates."
+          ],
+          [
+            "3. Torc",
+            "Heavy neck ring twisted from gold or silver worn by Celtic leaders."
+          ]
+        ],
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Tough iron ploughs, thatched roundhouses, giant hillforts like Maiden Castle, and gold torcs shaped Celtic Britain until Rome invaded in AD 43."
+      }
     }
   ],
   "key_individuals": [

@@ -113,7 +113,7 @@ if (typeof window !== 'undefined') {
     }
 
     if (pdfLink) {
-      if (ed.pdfUrl && isVerifiedPdf(ed.pdfUrl)) {
+      if (ed.pdfUrl && (isVerifiedPdf(ed.pdfUrl) || bucketKey === 'literaryAnthology')) {
         pdfLink.href = ed.pdfUrl;
         pdfLink.setAttribute('download', ed.downloadName || ed.pdfUrl.split('/').pop());
         pdfLink.target = '_blank';
@@ -196,7 +196,12 @@ function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, s
   const dlName = defaultItem.downloadName || bucket.downloadName || (pdfUrl ? pdfUrl.split('/').pop() : 'booklet.pdf');
   const pages = defaultItem.pages || bucket.pages || 'Booklet';
   const safeTitle = String(defaultItem.label || bucket.title || bucket.label).replace(/'/g, "\\'");
-  const hasPdf = Boolean(pdfUrl && isVerifiedPdf(pdfUrl));
+  const hasPdf = Boolean(
+    pdfUrl && (isVerifiedPdf(pdfUrl) || bucketKey === 'literaryAnthology' || bucket.optionalBadge),
+  );
+  const badgeLabel = bucket.staffOnly
+    ? 'STAFF GUIDE'
+    : bucket.optionalBadge || (bucketKey === 'literaryAnthology' ? 'OPTIONAL ANTHOLOGY' : 'PDF BOOKLET');
 
   const msHtml = defaultItem.msHtmlUrl || bucket.markSchemeHtmlUrl || '';
   const msPdf = defaultItem.msPdfUrl || bucket.markSchemePdfUrl || '';
@@ -230,7 +235,7 @@ function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, s
       <div>
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 7px;">
           <span style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 7px; border-radius: 4px; ${badgeClass}">
-            ${bucket.staffOnly ? 'STAFF GUIDE' : 'PDF BOOKLET'}
+            ${badgeLabel}
           </span>
           <span class="urb-pages-badge" style="font-size: 0.69rem; font-weight: 700; color: #475569; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px 7px; border-radius: 4px;">${pages}</span>
         </div>
@@ -321,10 +326,21 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
     : '';
 
   // 3. Build Printable Booklets Panel
+  const isKs2OrKs3 = isKs2 || cfg.stage === 'ks2' || cfg.stage === 'ks3';
   const bookletCards = [
     renderBookletCard(unitId, 'textbook', cfg.textbook, '#2563eb', 'background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;', staffActive),
     renderBookletCard(unitId, 'workbook', cfg.workbook, '#d97706', 'background:#fffbeb;color:#b45309;border:1px solid #fde68a;', staffActive),
     renderBookletCard(unitId, 'retrieval', cfg.retrieval, '#7c3aed', 'background:#f5f3ff;color:#6d28d9;border:1px solid #ddd6fe;', staffActive),
+    isKs2OrKs3
+      ? renderBookletCard(
+          unitId,
+          'literaryAnthology',
+          cfg.literaryAnthology,
+          '#4f46e5',
+          'background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;',
+          staffActive,
+        )
+      : '',
     renderBookletCard(unitId, 'revisionGuide', cfg.revisionGuide, '#0d9488', 'background:#f0fdfa;color:#0f766e;border:1px solid #99f6e4;', staffActive),
     renderWorksheetsCard(unitId, cfg.worksheets),
     renderBookletCard(unitId, 'schemeOfWork', cfg.schemeOfWork, '#be185d', 'background:#fdf2f8;color:#9d174d;border:1px solid #fbcfe8;', staffActive),

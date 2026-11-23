@@ -1,0 +1,997 @@
+{
+  "unit_id": "edexcel_medicine",
+  "delivery_plans": {
+    "lesson_4_1": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Mendel, Photograph 51 & The 1953 Double Helix (Stages 1–3) (50 mins)",
+          "focus": "Mendel, Photograph 51 & The 1953 Double Helix (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving 1831–54 industrial cholera outbreaks, John Snow’s 1854 Broad Street pump mapping and Southwark/Lambeth water comparison, the 1858 Great Stink, and the compulsory 1875 Public Health Act from KT 3.5.",
+              "instruction": "Complete the spaced Do Now retrieving 1831–54 industrial cholera outbreaks, John Snow’s 1854 Broad Street pump mapping and Southwark/Lambeth water comparison, the 1858 Great Stink, and the compulsory 1875 Public Health Act from KT 3.5."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Contrast 19th-century bacteriology (Pasteur and Koch isolating external microbes) with 20th-century hereditary mysteries like haemophilia, tracing how Rosalind Franklin and Raymond Gosling’s X-ray crystallography (Photograph 51) at King’s College London enabled James Watson and Francis Crick’s 1953 Cavendish double-helix model.",
+              "instruction": "Contrast 19th-century bacteriology (Pasteur and Koch isolating external microbes) with 20th-century hereditary mysteries like haemophilia, tracing how Rosalind Franklin and Raymond Gosling’s X-ray crystallography (Photograph 51) at King’s College London enabled James Watson and Francis Crick’s 1953 Cavendish double-helix model."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Shared reading of Stages 1–3 covering chromosomal inheritance, Photograph 51, and chemical base pairing (Adenine–Thymine, Cytosine–Guanine), completing Workbook Verso Spine stages 1–3.",
+              "instruction": "Shared reading of Stages 1–3 covering chromosomal inheritance, Photograph 51, and chemical base pairing (Adenine–Thymine, Cytosine–Guanine), completing Workbook Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Gregor Mendel’s inheritance laws) with Source B (Rosalind Franklin’s 1952 MRC crystallography report) to test how high-resolution physics unlocked biological causation.",
+              "instruction": "Compare Source A (Gregor Mendel’s inheritance laws) with Source B (Rosalind Franklin’s 1952 MRC crystallography report) to test how high-resolution physics unlocked biological causation."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Human Genome Project, Screening & Paper 1 Writing (Stages 4–5) (50 mins)",
+          "focus": "Human Genome Project, Screening & Paper 1 Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on why Germ Theory could not explain hereditary disease, Franklin’s X-ray diffraction proof, and Watson and Crick’s 1953 base-pairing model.",
+              "instruction": "Spaced recall check on why Germ Theory could not explain hereditary disease, Franklin’s X-ray diffraction proof, and Watson and Crick’s 1953 base-pairing model."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the international Human Genome Project (1990–2003 mapping 3 billion base pairs with supercomputers) and modern genetic screening (BRCA1/2 preventative surgery, Down’s/cystic fibrosis testing) versus the ‘treatment gap’ where gene therapy still lags behind diagnosis, examining Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on the international Human Genome Project (1990–2003 mapping 3 billion base pairs with supercomputers) and modern genetic screening (BRCA1/2 preventative surgery, Down’s/cystic fibrosis testing) versus the ‘treatment gap’ where gene therapy still lags behind diagnosis, examining Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way scientific methods for investigating disease causes in c1950–c2000 differed from c1870–c1900 [4m] and Q4 Explain why there was rapid progress in understanding the causes of disease c1950–present [12m].",
+              "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way scientific methods for investigating disease causes in c1950–c2000 differed from c1870–c1900 [4m] and Q4 Explain why there was rapid progress in understanding the causes of disease c1950–present [12m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Green-pen DIRT check: verify Q3 contrasts BOTH eras explicitly, and check Q4 links teamwork (King’s/Cavendish/HGP), technology (X-ray crystallography, electron microscopes, supercomputers), and government/Wellcome funding.",
+              "instruction": "Green-pen DIRT check: verify Q3 contrasts BOTH eras explicitly, and check Q4 links teamwork (King’s/Cavendish/HGP), technology (X-ray crystallography, electron microscopes, supercomputers), and government/Wellcome funding."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_4_2": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: X-Rays, Endoscopy & CT/MRI Scanning (Stages 1–3) (50 mins)",
+          "focus": "X-Rays, Endoscopy & CT/MRI Scanning (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving haemophilia as an inherited condition, Rosalind Franklin at King’s College London, Watson and Crick at the Cavendish Laboratory (1953), and the Human Genome Project from KT 4.1.",
+              "instruction": "Complete the spaced Do Now retrieving haemophilia as an inherited condition, Rosalind Franklin at King’s College London, Watson and Crick at the Cavendish Laboratory (1953), and the Human Genome Project from KT 4.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Trace how 20th-century technology ended blind exploratory surgery: Wilhelm Röntgen’s 1895 X-rays imaging bones, mid-century automated blood labs, sphygmomanometers, and flexible fibre-optic endoscopes, and Godfrey Hounsfield’s 1971 EMI CT scanner alongside MRI soft-tissue scans.",
+              "instruction": "Trace how 20th-century technology ended blind exploratory surgery: Wilhelm Röntgen’s 1895 X-rays imaging bones, mid-century automated blood labs, sphygmomanometers, and flexible fibre-optic endoscopes, and Godfrey Hounsfield’s 1971 EMI CT scanner alongside MRI soft-tissue scans."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking that pupils distinguish dense skeletal 2D X-rays from computerised 3D cross-sectional CT/MRI soft-tissue imaging.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking that pupils distinguish dense skeletal 2D X-rays from computerised 3D cross-sectional CT/MRI soft-tissue imaging."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (Röntgen’s December 1895 paper on X-rays) alongside Source B (1960s clinical introduction of fibre-optic endoscopy) to evaluate how physics and engineering transformed bedside diagnosis.",
+              "instruction": "Scrutinise Source A (Röntgen’s December 1895 paper on X-rays) alongside Source B (1960s clinical introduction of fibre-optic endoscopy) to evaluate how physics and engineering transformed bedside diagnosis."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Lifestyle Factors, State Campaigns & Paper 1 Essay (Stages 4–5) (50 mins)",
+          "focus": "Lifestyle Factors, State Campaigns & Paper 1 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve Röntgen’s 1895 X-rays, routine blood testing and fibre-optic endoscopes, and why Hounsfield’s 1971 CT scanner detected brain tumours missed by conventional radiography.",
+              "instruction": "Retrieve Röntgen’s 1895 X-rays, routine blood testing and fibre-optic endoscopes, and why Hounsfield’s 1971 CT scanner detected brain tumours missed by conventional radiography."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Britain’s post-1950 epidemiological transition from infectious epidemics to chronic lifestyle illnesses (smoking, diet, alcohol, inactivity, UV tanning) and state prevention campaigns (1956 Clean Air Act, screening, Change4Life/Healthier You), interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Britain’s post-1950 epidemiological transition from infectious epidemics to chronic lifestyle illnesses (smoking, diet, alcohol, inactivity, UV tanning) and state prevention campaigns (1956 Clean Air Act, screening, Change4Life/Healthier You), interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way methods of diagnosing illness in c1970–present differed from the nineteenth century [4m] and Q5/6 ‘Technological innovations in medical diagnosis were more important than public health lifestyle campaigns in improving health in Britain c1900–present.’ How far do you agree? [16m + 4m SPaG].",
+              "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way methods of diagnosing illness in c1970–present differed from the nineteenth century [4m] and Q5/6 ‘Technological innovations in medical diagnosis were more important than public health lifestyle campaigns in improving health in Britain c1900–present.’ How far do you agree? [16m + 4m SPaG]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Audit Q5/6 essays using DIRT: check balanced evaluation across diagnostic tech (CT/MRI/blood screening), state lifestyle legislation/campaigns, and a third factor (antibiotics/NHS treatments) plus accurate SPaG terminology.",
+              "instruction": "Audit Q5/6 essays using DIRT: check balanced evaluation across diagnostic tech (CT/MRI/blood screening), state lifestyle legislation/campaigns, and a third factor (antibiotics/NHS treatments) plus accurate SPaG terminology."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_4_3": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Salvarsan 606, Prontosil & The 1942 Beveridge Report (Stages 1–3) (50 mins)",
+          "focus": "Salvarsan 606, Prontosil & The 1942 Beveridge Report (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Wilhelm Röntgen’s 1895 X-rays, ABO blood-group testing, conventional X-ray soft-tissue limits, and Godfrey Hounsfield’s 1971 CT scanner from KT 4.2.",
+              "instruction": "Complete the spaced Do Now retrieving Wilhelm Röntgen’s 1895 X-rays, ABO blood-group testing, conventional X-ray soft-tissue limits, and Godfrey Hounsfield’s 1971 CT scanner from KT 4.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain how bacteriology finally yielded internal chemical cures and universal state care: Paul Ehrlich and Sahachiro Hata’s Salvarsan 606 for syphilis (1909, first ‘magic bullet’), Gerhard Domagk’s red dye Prontosil for streptococcal sepsis (1932), and wartime momentum behind William Beveridge’s November 1942 report.",
+              "instruction": "Explain how bacteriology finally yielded internal chemical cures and universal state care: Paul Ehrlich and Sahachiro Hata’s Salvarsan 606 for syphilis (1909, first ‘magic bullet’), Gerhard Domagk’s red dye Prontosil for streptococcal sepsis (1932), and wartime momentum behind William Beveridge’s November 1942 report."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting pre-1948 exclusion of women, children, and the elderly under the 1911 National Insurance Act with Beveridge’s plan to slay the ‘Five Giants’.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting pre-1948 exclusion of women, children, and the elderly under the 1911 National Insurance Act with Beveridge’s plan to slay the ‘Five Giants’."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Ehrlich’s 1913 address on Salvarsan 606’s arsenic risks) with Source B (Domagk’s February 1935 Prontosil paper curing his daughter Hildegard) to trace how sulphonamides broke the 23-year deadlock.",
+              "instruction": "Compare Source A (Ehrlich’s 1913 address on Salvarsan 606’s arsenic risks) with Source B (Domagk’s February 1935 Prontosil paper curing his daughter Hildegard) to trace how sulphonamides broke the 23-year deadlock."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Aneurin Bevan, The 1948 NHS & High-Tech Care (Stages 4–5 & Paper 1 Essay) (50 mins)",
+          "focus": "Aneurin Bevan, The 1948 NHS & High-Tech Care (Stages 4–5 & Paper 1 Essay)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on Ehrlich’s Salvarsan 606, Domagk’s Prontosil, the limits of the 1911 National Insurance Act, and the 1942 Beveridge Report.",
+              "instruction": "Spaced recall check on Ehrlich’s Salvarsan 606, Domagk’s Prontosil, the limits of the 1911 National Insurance Act, and the 1942 Beveridge Report."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Health Minister Aneurin Bevan overcoming fierce BMA resistance (allowing consultants private fee-paying beds and GPs capitation salaries) to launch the NHS free at the point of delivery on 5 July 1948, followed by hip replacements, dialysis, transplants, radiotherapy, and rising NHS costs, analysing Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Health Minister Aneurin Bevan overcoming fierce BMA resistance (allowing consultants private fee-paying beds and GPs capitation salaries) to launch the NHS free at the point of delivery on 5 July 1948, followed by hip replacements, dialysis, transplants, radiotherapy, and rising NHS costs, analysing Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way healthcare access after 1948 differed from the 1930s [4m] and Q5/6 ‘The establishment of the National Health Service in 1948 was the most significant turning point in medical care in the period c1900–present.’ How far do you agree? [16m + 4m SPaG].",
+              "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way healthcare access after 1948 differed from the 1930s [4m] and Q5/6 ‘The establishment of the National Health Service in 1948 was the most significant turning point in medical care in the period c1900–present.’ How far do you agree? [16m + 4m SPaG]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Review essays via DIRT: reward weighing universal free access (tripling GP/hospital uptake for women and the poor) against magic bullets/antibiotics and high-tech surgical/diagnostic breakthroughs that gave the NHS effective cures to deliver.",
+              "instruction": "Review essays via DIRT: reward weighing universal free access (tripling GP/hospital uptake for women and the poor) against magic bullets/antibiotics and high-tech surgical/diagnostic breakthroughs that gave the NHS effective cures to deliver."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_4_4": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Fleming’s 1928 Mould, Oxford Extraction & Albert Alexander (Stages 1–3) (50 mins)",
+          "focus": "Fleming’s 1928 Mould, Oxford Extraction & Albert Alexander (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Paul Ehrlich’s magic bullet concept, Gerhard Domagk’s Prontosil (1932), 1911 National Insurance exclusions, and Aneurin Bevan’s 1948 NHS compromise from KT 4.3.",
+              "instruction": "Complete the spaced Do Now retrieving Paul Ehrlich’s magic bullet concept, Gerhard Domagk’s Prontosil (1932), 1911 National Insurance exclusions, and Aneurin Bevan’s 1948 NHS compromise from KT 4.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Unpack why penicillin required three distinct stages rather than lone genius: Alexander Fleming’s accidental September 1928 Penicillium notatum observation at St Mary’s, Howard Florey, Ernst Chain, and Norman Heatley’s 1938–40 Oxford purification, and the 1940 eight-mouse trial plus February 1941 human test on policeman Albert Alexander.",
+              "instruction": "Unpack why penicillin required three distinct stages rather than lone genius: Alexander Fleming’s accidental September 1928 Penicillium notatum observation at St Mary’s, Howard Florey, Ernst Chain, and Norman Heatley’s 1938–40 Oxford purification, and the 1940 eight-mouse trial plus February 1941 human test on policeman Albert Alexander."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, explaining why chemical instability defeated Fleming in 1929 and why Albert Alexander died when Oxford’s improvised bedpan supply ran out.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, explaining why chemical instability defeated Fleming in 1929 and why Albert Alexander died when Oxford’s improvised bedpan supply ran out."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Fleming’s 1928–29 culture plate and paper) with Source B (Norman Heatley’s 1940 improvised Oxford extraction setup) to highlight the shift from individual observation to funded biochemical teamwork.",
+              "instruction": "Compare Source A (Fleming’s 1928–29 culture plate and paper) with Source B (Norman Heatley’s 1940 improvised Oxford extraction setup) to highlight the shift from individual observation to funded biochemical teamwork."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: US Deep-Tank Mass Production, D-Day & Superbugs (Stages 4–5 & Paper 1 Writing) (50 mins)",
+          "focus": "US Deep-Tank Mass Production, D-Day & Superbugs (Stages 4–5 & Paper 1 Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve why Fleming stopped working on penicillin after 1929, how Heatley purified penicillin at Oxford, and what Albert Alexander’s February 1941 trial proved.",
+              "instruction": "Retrieve why Fleming stopped working on penicillin after 1929, how Heatley purified penicillin at Oxford, and what Albert Alexander’s February 1941 trial proved."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Florey and Heatley’s July 1941 mission to Peoria, US wartime government grants ($80m+), 10,000-gallon deep-tank corn-steep fermentation producing 2.3 million doses for June 1944 D-Day, and Fleming’s 1945 warning foreshadowing MRSA antibiotic resistance, interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Florey and Heatley’s July 1941 mission to Peoria, US wartime government grants ($80m+), 10,000-gallon deep-tank corn-steep fermentation producing 2.3 million doses for June 1944 D-Day, and Fleming’s 1945 warning foreshadowing MRSA antibiotic resistance, interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way Fleming’s 1928 discovery of penicillin was similar to Edward Jenner’s 1796 smallpox vaccine [4m] and Q4 Explain why penicillin was successfully developed and mass-produced in the period 1928–1945 [12m].",
+              "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way Fleming’s 1928 discovery of penicillin was similar to Edward Jenner’s 1796 smallpox vaccine [4m] and Q4 Explain why penicillin was successfully developed and mass-produced in the period 1928–1945 [12m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Green-pen DIRT on Q4: verify three analytical paragraphs linking individual/team science (Fleming -> Florey, Chain, Heatley), industrial technology (freeze-drying, deep-tank vats), and Second World War US/UK government funding.",
+              "instruction": "Green-pen DIRT on Q4: verify three analytical paragraphs linking individual/team science (Fleming -> Florey, Chain, Heatley), industrial technology (freeze-drying, deep-tank vats), and Second World War US/UK government funding."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_4_5": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Late Detection, PET-CT Diagnosis & Keyhole/CyberKnife Care (Stages 1–3) (50 mins)",
+          "focus": "Late Detection, PET-CT Diagnosis & Keyhole/CyberKnife Care (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Fleming’s September 1928 St Mary’s discovery, Florey and Chain’s 1938 Oxford revival, the May 1940 mouse trial, and US deep-tank fermentation from KT 4.4.",
+              "instruction": "Complete the spaced Do Now retrieving Fleming’s September 1928 St Mary’s discovery, Florey and Chain’s 1938 Oxford revival, the May 1940 mouse trial, and US deep-tank fermentation from KT 4.4."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Introduce the modern lung cancer case study: explain why scarce pain receptors in lung tissue cause silent late-stage presentation alongside mass 20th-century smoking, and how low-dose CT, metabolic PET-CT scans, fibre-optic bronchoscopy, keyhole VATS lobectomy, and CyberKnife radiotherapy transformed clinical care.",
+              "instruction": "Introduce the modern lung cancer case study: explain why scarce pain receptors in lung tissue cause silent late-stage presentation alongside mass 20th-century smoking, and how low-dose CT, metabolic PET-CT scans, fibre-optic bronchoscopy, keyhole VATS lobectomy, and CyberKnife radiotherapy transformed clinical care."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting inaccurate 2D chest X-rays and traumatic open thoracotomy against 3D PET-CT staging and robotic stereotactic beams.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting inaccurate 2D chest X-rays and traumatic open thoracotomy against 3D PET-CT staging and robotic stereotactic beams."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (Richard Doll and Austin Bradford Hill’s September 1950 BMJ epidemiological study proving the smoking link) alongside Source B (modern NHS low-dose CT, PET-CT, and bronchoscopy pathway).",
+              "instruction": "Scrutinise Source A (Richard Doll and Austin Bradford Hill’s September 1950 BMJ epidemiological study proving the smoking link) alongside Source B (modern NHS low-dose CT, PET-CT, and bronchoscopy pathway)."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Genetic Oncology, Anti-Smoking Laws & Paper 1 Essay (Stages 4–5) (50 mins)",
+          "focus": "Genetic Oncology, Anti-Smoking Laws & Paper 1 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on Doll and Bradford Hill (1950), why scarce lung pain nerves delay symptoms, and how PET-CT and keyhole VATS surgery improved survival.",
+              "instruction": "Spaced recall check on Doll and Bradford Hill (1950), why scarce lung pain nerves delay symptoms, and how PET-CT and keyhole VATS surgery improved survival."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on pharmacogenomics, tumour DNA sequencing, and T-cell immunotherapy alongside escalating UK government compulsion: 1965 TV cigarette ad ban (2005 all ads), July 2007 indoor smoking ban, raising purchase age to 18 (2007), 2015 car-with-children ban, and 2016 standardised plain packaging, examining Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on pharmacogenomics, tumour DNA sequencing, and T-cell immunotherapy alongside escalating UK government compulsion: 1965 TV cigarette ad ban (2005 all ads), July 2007 indoor smoking ban, raising purchase age to 18 (2007), 2015 car-with-children ban, and 2016 standardised plain packaging, examining Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way twenty-first-century lung cancer diagnosis differed from the nineteenth century [4m] and Q5/6 ‘Government action was the main reason for progress in combating lung cancer in the twenty-first century.’ How far do you agree? [16m + 4m SPaG].",
+              "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way twenty-first-century lung cancer diagnosis differed from the nineteenth century [4m] and Q5/6 ‘Government action was the main reason for progress in combating lung cancer in the twenty-first century.’ How far do you agree? [16m + 4m SPaG]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Check Q5/6 essays via DIRT: ensure pupils weigh state legislation, taxation, and mass campaigns (preventing incidence) against high-tech PET-CT/bronchoscopy screening and targeted genetic/immunotherapy treatments.",
+              "instruction": "Check Q5/6 essays via DIRT: ensure pupils weigh state legislation, taxation, and mass campaigns (preventing incidence) against high-tech PET-CT/bronchoscopy screening and targeted genetic/immunotherapy treatments."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5_1": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Flanders Terrain, Zig-Zag Trenches & Evacuation Bottlenecks (Stages 1–3) (50 mins)",
+          "focus": "Flanders Terrain, Zig-Zag Trenches & Evacuation Bottlenecks (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving cigarette smoking’s link to lung cancer, why 2D chest X-rays missed early tumours, and keyhole VATS surgery from KT 4.5 before transitioning to Paper 1 Section A (The British Sector of the Western Front, 1914–18).",
+              "instruction": "Complete the spaced Do Now retrieving cigarette smoking’s link to lung cancer, why 2D chest X-rays missed early tumours, and keyhole VATS surgery from KT 4.5 before transitioning to Paper 1 Section A (The British Sector of the Western Front, 1914–18)."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Map the British Sector from Flanders (Ypres Salient) down to the Somme, Arras, and Cambrai, explaining why Ypres’s low-lying waterlogged clay overlooked on three sides by German ridges and 6–7ft zig-zag trench traverses created severe casualty-evacuation bottlenecks.",
+              "instruction": "Map the British Sector from Flanders (Ypres Salient) down to the Somme, Arras, and Cambrai, explaining why Ypres’s low-lying waterlogged clay overlooked on three sides by German ridges and 6–7ft zig-zag trench traverses created severe casualty-evacuation bottlenecks."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 covering Ypres topography (1914, 1915, Passchendaele 1917), firesteps, duckboards, and 90-degree traverses across frontline, support, and reserve trenches linked by narrow communication ditches, completing Verso Spine stages 1–3.",
+              "instruction": "Read Stages 1–3 covering Ypres topography (1914, 1915, Passchendaele 1917), firesteps, duckboards, and 90-degree traverses across frontline, support, and reserve trenches linked by narrow communication ditches, completing Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Interrogate Source A (3 January 1918 Belgian aerial reconnaissance photo of zig-zag Flanders trenches) and Source B (October 1917 RAMC Field Ambulance War Diary at Ypres) on why stretcher squads could not carry casualties swiftly.",
+              "instruction": "Interrogate Source A (3 January 1918 Belgian aerial reconnaissance photo of zig-zag Flanders trenches) and Source B (October 1917 RAMC Field Ambulance War Diary at Ypres) on why stretcher squads could not carry casualties swiftly."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Arras Underground Hospital, Mass Offensives & Section A Sources (Stages 4–5) (50 mins)",
+          "focus": "Arras Underground Hospital, Mass Offensives & Section A Sources (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve why the Ypres Salient flooded easily, why trenches used 90-degree zig-zag traverses, and why narrow communication trenches slowed four-man stretcher teams.",
+              "instruction": "Retrieve why the Ypres Salient flooded easily, why trenches used 90-degree zig-zag traverses, and why narrow communication trenches slowed four-man stretcher teams."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on British and New Zealand tunnellers carving the 700-bed underground hospital in Arras’s chalk caves (Thompson’s Cave: electric lighting, piped water, operating theatres, April 1917) and mass industrial battles at the Somme (57,470 day-one casualties, 1 July 1916) and Cambrai (November 1917), analysing Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on British and New Zealand tunnellers carving the 700-bed underground hospital in Arras’s chalk caves (Thompson’s Cave: electric lighting, piped water, operating theatres, April 1917) and mass industrial battles at the Somme (57,470 day-one casualties, 1 July 1916) and Cambrai (November 1917), analysing Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) communication trenches [2m]; (b) underground hospital at Arras / Thompson’s Cave [2m]) and Q2(a) How useful are Sources A and B for an enquiry into the problems of evacuating wounded soldiers in the Ypres Salient? [8m].",
+              "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) communication trenches [2m]; (b) underground hospital at Arras / Thompson’s Cave [2m]) and Q2(a) How useful are Sources A and B for an enquiry into the problems of evacuating wounded soldiers in the Ypres Salient? [8m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Model Paper 1 Q2(a) marking criteria during DIRT: evaluate BOTH sources separately for specific content quotes, provenance (nature, origin, purpose at Third Ypres), and precise contextual knowledge (Passchendaele mud/shellfire).",
+              "instruction": "Model Paper 1 Q2(a) marking criteria during DIRT: evaluate BOTH sources separately for specific content quotes, provenance (nature, origin, purpose at Third Ypres), and precise contextual knowledge (Passchendaele mud/shellfire)."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5_2": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Trench Foot, Whale-Oil Discipline & Lice/Trench Fever (Stages 1–3) (50 mins)",
+          "focus": "Trench Foot, Whale-Oil Discipline & Lice/Trench Fever (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the Ypres Salient bulge, 6–7ft zig-zag trench layouts, frontline/support/reserve networks, Arras chalk caves, and Somme casualties from KT 5.1.",
+              "instruction": "Complete the spaced Do Now retrieving the Ypres Salient bulge, 6–7ft zig-zag trench layouts, frontline/support/reserve networks, Arras chalk caves, and Somme casualties from KT 5.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Examine how the physical trench environment generated mass non-combat manpower losses: freezing waterlogged mud causing necrotic trench foot in winter 1914–15, officer-enforced preventative routines from 1915, and uniform-seam body lice spreading Bartonella quintana trench fever.",
+              "instruction": "Examine how the physical trench environment generated mass non-combat manpower losses: freezing waterlogged mud causing necrotic trench foot in winter 1914–15, officer-enforced preventative routines from 1915, and uniform-seam body lice spreading Bartonella quintana trench fever."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking mechanical pumps, duckboards, daily whale-oil rubbing with spare socks, and 1918 confirmation of lice transmission alongside Thresh steam delousing chambers.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking mechanical pumps, duckboards, daily whale-oil rubbing with spare socks, and 1918 confirmation of lice transmission alongside Thresh steam delousing chambers."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (c.1915 clinical photograph of bilateral gangrenous trench foot) with Source B (December 1915 2nd Battalion Routine Standing Orders) to test why strict officer accountability outperformed voluntary advice.",
+              "instruction": "Compare Source A (c.1915 clinical photograph of bilateral gangrenous trench foot) with Source B (December 1915 2nd Battalion Routine Standing Orders) to test why strict officer accountability outperformed voluntary advice."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Dysentery Sanitation, Shell Shock (NYDN) & Section A Follow-Up (Stages 4–5) (50 mins)",
+          "focus": "Dysentery Sanitation, Shell Shock (NYDN) & Section A Follow-Up (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on how prolonged cold immersion caused trench foot, daily whale-oil foot inspections, and how body lice transmitted five-day relapsing trench fever.",
+              "instruction": "Spaced recall check on how prolonged cold immersion caused trench foot, daily whale-oil foot inspections, and how body lice transmitted five-day relapsing trench fever."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on RAMC Sanitary Sections combating dysentery (fly-proof latrines and chloride of lime water-cart chlorination) and evolving army responses to 80,000 shell-shock cases—from early cowardice stigma to ‘NYDN (Not Yet Diagnosed, Nervous)’ forward rest centres and Dr William Rivers at Craiglockhart, interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on RAMC Sanitary Sections combating dysentery (fly-proof latrines and chloride of lime water-cart chlorination) and evolving army responses to 80,000 shell-shock cases—from early cowardice stigma to ‘NYDN (Not Yet Diagnosed, Nervous)’ forward rest centres and Dr William Rivers at Craiglockhart, interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) methods used to prevent trench foot [2m]; (b) causes of trench fever [2m]) and Q2(b) Study Source B: How could you follow up Source B to find out more about the effectiveness of army preventative measures against trench foot? [4m].",
+              "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) methods used to prevent trench foot [2m]; (b) causes of trench fever [2m]) and Q2(b) Study Source B: How could you follow up Source B to find out more about the effectiveness of army preventative measures against trench foot? [4m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Check all four linked rows of Q2(b) in DIRT: (1) specific quote/detail from Source B, (2) focused historical question on effectiveness, (3) concrete Western Front archival record (e.g. 2nd Battalion RAMC sick-return / casualty war diary), and (4) how that record answers the question.",
+              "instruction": "Check all four linked rows of Q2(b) in DIRT: (1) specific quote/detail from Source B, (2) focused historical question on effectiveness, (3) concrete Western Front archival record (e.g. 2nd Battalion RAMC sick-return / casualty war diary), and (4) how that record answers the question."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5_3": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Artillery Shrapnel, Soil Gas Gangrene & Brodie Helmets (Stages 1–3) (50 mins)",
+          "focus": "Artillery Shrapnel, Soil Gas Gangrene & Brodie Helmets (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving winter 1914–15 waterlogged mud, daily whale-oil inspections, body lice in woollen seams, and chloride of lime water treatment from KT 5.2.",
+              "instruction": "Complete the spaced Do Now retrieving winter 1914–15 waterlogged mud, daily whale-oil inspections, body lice in woollen seams, and chloride of lime water treatment from KT 5.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain why industrialised Western Front firepower overwhelmed 1914 peacetime aseptic surgery: artillery caused ~58% of all wounds, driving jagged shrapnel and manure-soaked khaki cloth into deep airless muscle containing Clostridium tetani and lethal Clostridium welchii (gas gangrene), while soft caps left heads exposed until the late-1915 Brodie steel helmet.",
+              "instruction": "Explain why industrialised Western Front firepower overwhelmed 1914 peacetime aseptic surgery: artillery caused ~58% of all wounds, driving jagged shrapnel and manure-soaked khaki cloth into deep airless muscle containing Clostridium tetani and lethal Clostridium welchii (gas gangrene), while soft caps left heads exposed until the late-1915 Brodie steel helmet."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting effective late-1914 anti-tetanus serum injections against untreatable 24–48h gas gangrene and tracking the ~80% drop in fatal head wounds under Brodie helmets.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting effective late-1914 anti-tetanus serum injections against untreatable 24–48h gas gangrene and tracking the ~80% drop in fatal head wounds under Brodie helmets."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (1916 Consulting Surgeon report on high-explosive shrapnel vs rifle bullets) with Source B (1916 RAMC Surgical Report on Flanders soil bacteria and gas gangrene).",
+              "instruction": "Compare Source A (1916 Consulting Surgeon report on high-explosive shrapnel vs rifle bullets) with Source B (1916 RAMC Surgical Report on Flanders soil bacteria and gas gangrene)."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Chlorine, Phosgene, Mustard Gas & Section A Utility Writing (Stages 4–5) (50 mins)",
+          "focus": "Chlorine, Phosgene, Mustard Gas & Section A Utility Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve why artillery shrapnel (~58% of wounds) triggered worse sepsis than bullets, why heavily manured Flanders soil bred Clostridium welchii, and the impact of John Brodie’s pressed-steel helmet.",
+              "instruction": "Retrieve why artillery shrapnel (~58% of wounds) triggered worse sepsis than bullets, why heavily manured Flanders soil bred Clostridium welchii, and the impact of John Brodie’s pressed-steel helmet."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on chemical warfare: Second Ypres chlorine gas (22 April 1915) and phosgene (December 1915) countered rapidly from urine-soaked pads and PH chemical hoods to the August 1916 Small Box Respirator, followed by July 1917 Ypres blistering mustard gas, analysing Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on chemical warfare: Second Ypres chlorine gas (22 April 1915) and phosgene (December 1915) countered rapidly from urine-soaked pads and PH chemical hoods to the August 1916 Small Box Respirator, followed by July 1917 Ypres blistering mustard gas, analysing Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) effects of poison gas attacks [2m]; (b) design of the British Brodie steel helmet [2m]) and Q2(a) How useful are Sources D and E for an enquiry into the impact of poison gas attacks and the development of gas protection on the Western Front? [8m].",
+              "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) effects of poison gas attacks [2m]; (b) design of the British Brodie steel helmet [2m]) and Q2(a) How useful are Sources D and E for an enquiry into the impact of poison gas attacks and the development of gas protection on the Western Front? [8m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Green-pen DIRT on Q2(a): verify students evaluate Source D’s April 1915 eyewitness shock alongside Source E’s July 1916 PH-helmet staged/operational context, adding precise knowledge of phosgene, 1917 mustard gas, and the Small Box Respirator.",
+              "instruction": "Green-pen DIRT on Q2(a): verify students evaluate Source D’s April 1915 eyewitness shock alongside Source E’s July 1916 PH-helmet staged/operational context, adding precise knowledge of phosgene, 1917 mustard gas, and the Small Box Respirator."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5_4": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Stretcher Bearers, Regimental Aid Posts & Dressing Stations (Stages 1–3) (50 mins)",
+          "focus": "Stretcher Bearers, Regimental Aid Posts & Dressing Stations (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving artillery’s 58% wound share, manured farmland and gas gangrene, 1914 cloth caps vs 1915 Brodie helmets, and chlorine/mustard gas protection from KT 5.3.",
+              "instruction": "Complete the spaced Do Now retrieving artillery’s 58% wound share, manured farmland and gas gangrene, 1914 cloth caps vs 1915 Brodie helmets, and chlorine/mustard gas protection from KT 5.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Map the RAMC Chain of Evacuation from No Man’s Land rearward: sixteen battalion stretcher bearers carrying casualties under shellfire to the frontline Regimental Aid Post (RAP, within 200–300 yards), then half a mile back to Field Ambulance Main and Advanced Dressing Stations (ADS) served by horse and Red Cross/FANY motor ambulances.",
+              "instruction": "Map the RAMC Chain of Evacuation from No Man’s Land rearward: sixteen battalion stretcher bearers carrying casualties under shellfire to the frontline Regimental Aid Post (RAP, within 200–300 yards), then half a mile back to Field Ambulance Main and Advanced Dressing Stations (ADS) served by horse and Red Cross/FANY motor ambulances."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, clarifying why the single Battalion Medical Officer at the RAP treated shock and haemorrhage with bandages, splints, and morphine rather than operating.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, clarifying why the single Battalion Medical Officer at the RAP treated shock and haemorrhage with bandages, splints, and morphine rather than operating."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (1917 Passchendaele photograph of six-man/four-man stretcher squads knee-deep in liquid mud) alongside Source B (Captain J. C. Dunn’s 1916 RAP war diary) to diagnose frontline evacuation delays.",
+              "instruction": "Scrutinise Source A (1917 Passchendaele photograph of six-man/four-man stretcher squads knee-deep in liquid mud) alongside Source B (Captain J. C. Dunn’s 1916 RAP war diary) to diagnose frontline evacuation delays."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Casualty Clearing Stations, Base Hospitals & Section A Follow-Up (Stages 4–5) (50 mins)",
+          "focus": "Casualty Clearing Stations, Base Hospitals & Section A Follow-Up (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on battalion stretcher bearers, why RAPs avoided major surgery, and how Field Ambulances and FANY motor convoys moved wounded men through Dressing Stations.",
+              "instruction": "Spaced recall check on battalion stretcher bearers, why RAPs avoided major surgery, and how Field Ambulances and FANY motor convoys moved wounded men through Dressing Stations."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Casualty Clearing Stations (CCS) 7–12 miles back beside railway junctions—using three-category triage to operate within the 24-hour gas-gangrene window—followed by ambulance trains, smooth canal barges, specialist coastal Base Hospitals (Boulogne, Le Havre, Étaples), and hospital ships to Britain, examining Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Casualty Clearing Stations (CCS) 7–12 miles back beside railway junctions—using three-category triage to operate within the 24-hour gas-gangrene window—followed by ambulance trains, smooth canal barges, specialist coastal Base Hospitals (Boulogne, Le Havre, Étaples), and hospital ships to Britain, examining Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) triage system at Casualty Clearing Stations [2m]; (b) work of the First Aid Nursing Yeomanry / FANY [2m]) and Q2(b) Study Source A: How could you follow up Source A to find out more about the difficulties stretcher bearers faced evacuating casualties? [4m].",
+              "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) triage system at Casualty Clearing Stations [2m]; (b) work of the First Aid Nursing Yeomanry / FANY [2m]) and Q2(b) Study Source A: How could you follow up Source A to find out more about the difficulties stretcher bearers faced evacuating casualties? [4m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Verify Q2(b) precision during DIRT: check that pupils pick a visual detail from Source A (e.g. knee-deep Passchendaele mud requiring extra bearers), pose a linked question, name a valid contemporary record (e.g. Third Ypres RAMC Field Ambulance war diary), and link it to the enquiry.",
+              "instruction": "Verify Q2(b) precision during DIRT: check that pupils pick a visual detail from Source A (e.g. knee-deep Passchendaele mud requiring extra bearers), pose a linked question, name a valid contemporary record (e.g. Third Ypres RAMC Field Ambulance war diary), and link it to the enquiry."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5_5": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Wound Debridement, Carrel-Dakin Irrigation & Thomas Splint (Stages 1–3) (50 mins)",
+          "focus": "Wound Debridement, Carrel-Dakin Irrigation & Thomas Splint (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving 16 battalion stretcher bearers, frontline RAP dugouts, Advanced Dressing Stations, Casualty Clearing Stations 7–12 miles back, and coastal Base Hospitals from KT 5.4.",
+              "instruction": "Complete the spaced Do Now retrieving 16 battalion stretcher bearers, frontline RAP dugouts, Advanced Dressing Stations, Casualty Clearing Stations 7–12 miles back, and coastal Base Hospitals from KT 5.4."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain how Western Front surgeons conquered gas gangrene and fatal compound femur fractures between 1914 and 1916: replacing ineffective carbolic washes with radical surgical wound debridement, Alexis Carrel and Henry Dakin’s continuous sodium hypochlorite tube irrigation, and Sir Robert Jones’s December 1915 rollout of the rigid Thomas Splint.",
+              "instruction": "Explain how Western Front surgeons conquered gas gangrene and fatal compound femur fractures between 1914 and 1916: replacing ineffective carbolic washes with radical surgical wound debridement, Alexis Carrel and Henry Dakin’s continuous sodium hypochlorite tube irrigation, and Sir Robert Jones’s December 1915 rollout of the rigid Thomas Splint."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how applying traction at the RAP/ADS stopped jagged femur ends severing the femoral artery and slashed mortality from ~80% to under 20%.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how applying traction at the RAP/ADS stopped jagged femur ends severing the femoral artery and slashed mortality from ~80% to under 20%."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (No. 23 CCS prefabricated operating hut at Lozinghem, July 1916) with Source B (Carrel and Dakin’s 1916 wound-treatment paper) on why chemical sterility failed unless dead tissue was excised first.",
+              "instruction": "Compare Source A (No. 23 CCS prefabricated operating hut at Lozinghem, July 1916) with Source B (Carrel and Dakin’s 1916 wound-treatment paper) on why chemical sterility failed unless dead tissue was excised first."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Mobile X-Ray Vans, Technical Limits & Section A Utility Writing (Stages 4–5) (50 mins)",
+          "focus": "Mobile X-Ray Vans, Technical Limits & Section A Utility Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve why surface antiseptics failed in 1914, how perforated Carrel-Dakin tubes flushed deep wounds every two hours, and how the Thomas Splint cut compound femur deaths from 80% to under 20%.",
+              "instruction": "Retrieve why surface antiseptics failed in 1914, how perforated Carrel-Dakin tubes flushed deep wounds every two hours, and how the Thomas Splint cut compound femur deaths from 80% to under 20%."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on six British Sector mobile X-ray vans (and Marie Curie’s Petites Curies) taking two-angle plates before debridement, alongside battlefield radiology’s limits—invisible khaki cloth fragments, overheating glass Crookes tubes requiring three-tube rotation, and shattered plates on shell-torn roads—interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on six British Sector mobile X-ray vans (and Marie Curie’s Petites Curies) taking two-angle plates before debridement, alongside battlefield radiology’s limits—invisible khaki cloth fragments, overheating glass Crookes tubes requiring three-tube rotation, and shattered plates on shell-torn roads—interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Thomas Splint [2m]; (b) Carrel-Dakin method [2m]) and Q2(a) How useful are Sources B and C for an enquiry into how new surgical and orthopaedic techniques improved survival rates on the Western Front? [8m].",
+              "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Thomas Splint [2m]; (b) Carrel-Dakin method [2m]) and Q2(a) How useful are Sources B and C for an enquiry into how new surgical and orthopaedic techniques improved survival rates on the Western Front? [8m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Audit Q2(a) responses in DIRT: check that pupils judge Source B (Carrel/Dakin scientific paper) and Source C (Sir Robert Jones’s 1917 official report) on content, authorial purpose/scope, and contextual knowledge of debridement and RAP splint training.",
+              "instruction": "Audit Q2(a) responses in DIRT: check that pupils judge Source B (Carrel/Dakin scientific paper) and Source C (Sir Robert Jones’s 1917 official report) on content, authorial purpose/scope, and contextual knowledge of debridement and RAP splint training."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5_6": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Sodium Citrate, Citrate-Glucose & Cambrai Blood Depot (Stages 1–3) (50 mins)",
+          "focus": "Sodium Citrate, Citrate-Glucose & Cambrai Blood Depot (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving why 1914 wound stitching failed, Carrel-Dakin sodium hypochlorite irrigation, 80% compound femur mortality before the Thomas Splint, and overheating mobile X-ray tubes from KT 5.5.",
+              "instruction": "Complete the spaced Do Now retrieving why 1914 wound stitching failed, Carrel-Dakin sodium hypochlorite irrigation, 80% compound femur mortality before the Thomas Splint, and overheating mobile X-ray tubes from KT 5.5."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Trace how Western Front doctors conquered fatal haemorrhagic shock by turning direct vein-to-vein transfusion into the world’s first blood bank: Karl Landsteiner’s 1901 ABO typing + Hustin/Lewisohn’s 1914–15 sodium citrate anticoagulant, Rous and Turner’s 1916 citrate-glucose four-week refrigeration, and Captain Oswald Robertson’s November 1917 Cambrai Blood Depot.",
+              "instruction": "Trace how Western Front doctors conquered fatal haemorrhagic shock by turning direct vein-to-vein transfusion into the world’s first blood bank: Karl Landsteiner’s 1901 ABO typing + Hustin/Lewisohn’s 1914–15 sodium citrate anticoagulant, Rous and Turner’s 1916 citrate-glucose four-week refrigeration, and Captain Oswald Robertson’s November 1917 Cambrai Blood Depot."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how Robertson pre-stored 22 bottles of universal O-negative/Type O blood in ice-packed ammunition boxes for shocked casualties before surgery.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how Robertson pre-stored 22 bottles of universal O-negative/Type O blood in ice-packed ammunition boxes for shocked casualties before surgery."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Dr Richard Lewisohn’s 1915 sodium citrate report) with Source B (Peyton Rous and Joseph Turner’s 1916 citrate-dextrose study) to explain why stopping clotting alone only preserved blood for 48 hours.",
+              "instruction": "Compare Source A (Dr Richard Lewisohn’s 1915 sodium citrate report) with Source B (Peyton Rous and Joseph Turner’s 1916 citrate-dextrose study) to explain why stopping clotting alone only preserved blood for 48 hours."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Cushing’s Brain Surgery, Gillies at Sidcup & Section A Follow-Up (Stages 4–5) (50 mins)",
+          "focus": "Cushing’s Brain Surgery, Gillies at Sidcup & Section A Follow-Up (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on sodium citrate preventing clotting, Rous and Turner’s 1916 citrate-glucose preserving red blood cells for four weeks, and Captain Oswald Robertson’s 1917 Cambrai Blood Depot.",
+              "instruction": "Spaced recall check on sodium citrate preventing clotting, Rous and Turner’s 1916 citrate-glucose preserving red blood cells for four weeks, and Captain Oswald Robertson’s 1917 Cambrai Blood Depot."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Major Harvey Cushing’s neurosurgery at Mendinghem CCS No. 46 (using local anaesthetic to prevent brain swelling and electromagnets to extract steel fragments, cutting mortality from ~50%+ to ~29%) and Major Harold Gillies’s plastic reconstruction at Queen’s Hospital, Sidcup (opened June 1917, pioneering living ‘tubed pedicle’ skin grafts across >11,000 operations), analysing Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Major Harvey Cushing’s neurosurgery at Mendinghem CCS No. 46 (using local anaesthetic to prevent brain swelling and electromagnets to extract steel fragments, cutting mortality from ~50%+ to ~29%) and Major Harold Gillies’s plastic reconstruction at Queen’s Hospital, Sidcup (opened June 1917, pioneering living ‘tubed pedicle’ skin grafts across >11,000 operations), analysing Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Harvey Cushing’s head-wound techniques [2m]; (b) Harold Gillies’s surgical methods at Sidcup [2m]) and Q2(b) Study Source C: How could you follow up Source C to find out more about the success of stored blood transfusions at the Battle of Cambrai in 1917? [4m].",
+              "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Harvey Cushing’s head-wound techniques [2m]; (b) Harold Gillies’s surgical methods at Sidcup [2m]) and Q2(b) Study Source C: How could you follow up Source C to find out more about the success of stored blood transfusions at the Battle of Cambrai in 1917? [4m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Final DIRT check on Q2(b): ensure pupils select a concrete detail from Robertson’s Cambrai report (e.g. 11 of 20 severely shocked soldiers surviving), frame a wider statistical question, cite Third Army CCS surgical/transfusion registers from November–December 1917, and explain how that tests wider survival impact.",
+              "instruction": "Final DIRT check on Q2(b): ensure pupils select a concrete detail from Robertson’s Cambrai report (e.g. 11 of 20 severely shocked soldiers surviving), frame a wider statistical question, cite Third Army CCS surgical/transfusion registers from November–December 1917, and explain how that tests wider survival impact."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "vocab_phonetics": {
+    "lesson_1_1": {
+      "God's Punishment": "godz PUN-ish-munt",
+      "Flagellation": "flaj-uh-LAY-shun",
+      "Astrology": "uh-STROL-uh-jee",
+      "Miasma": "my-AZ-muh",
+      "The Medieval Church": "thuh med-ee-EE-vul church"
+    },
+    "lesson_1_2": {
+      "Four Humours": "for HYOO-murz",
+      "Theory of Opposites": "THEER-ee ov OP-uh-zits",
+      "Hippocratic Oath": "hip-uh-KRAT-ik ohth",
+      "Clinical Observation": "KLIN-ih-kul ob-zur-VAY-shun",
+      "Galenic Dogma": "guh-LEN-ik DOG-muh"
+    },
+    "lesson_1_3": {
+      "Bloodletting": "BLUD-let-ing",
+      "Purging": "PUR-jing",
+      "Regimen Sanitatis": "REJ-ih-men san-ih-TAH-tis",
+      "Theriaca": "theer-ee-AH-kuh",
+      "Herbal Remedies": "HUR-bul REM-uh-deez"
+    },
+    "lesson_1_4": {
+      "Monastic Infirmary": "muh-NAS-tik in-FUR-muh-ree",
+      "Barber-Surgeon": "BAR-bur SUR-jun",
+      "Apothecary": "uh-POTH-uh-kuh-ree",
+      "University-Trained Physician": "yoo-nih-VUR-sih-tee traynd fih-ZISH-un",
+      "Wise Woman": "WYZ woom-un"
+    },
+    "lesson_1_5": {
+      "Black Death": "BLAK deth",
+      "Buboes": "BYOO-bohz",
+      "Quarantine": "KWOR-un-teen",
+      "Pomander": "puh-MAN-dur",
+      "Winchester Cemetery Order": "WIN-chuh-stur SEM-uh-tree OR-dur"
+    },
+    "lesson_2_1": {
+      "Church Monasteries": "church MON-uh-streez",
+      "Printing Press": "PRIN-ting pres",
+      "The Royal Society": "thuh ROY-ul suh-SY-uh-tee",
+      "Nullius in Verba": "NUL-ee-us in VUR-buh",
+      "Philosophical Transactions": "fil-uh-SOF-ih-kul tranz-AK-shunz",
+      "Renaissance Paradox": "rih-NAY-suns PAR-uh-doks"
+    },
+    "lesson_2_2": {
+      "English Hippocrates": "ING-glish hih-POK-ruh-teez",
+      "Observationes Medicae (1676)": "ob-zur-vay-see-OH-neez MED-ih-kee",
+      "Disease Classification": "dih-ZEEZ klas-ih-fih-KAY-shun",
+      "Cinchona Bark": "sin-KOH-nuh bark",
+      "Cooling Regime": "KOO-ling ray-ZHEEM",
+      "Humoural Persistence": "HYOO-muh-rul pur-SIS-tuns"
+    },
+    "lesson_2_3": {
+      "De Fabrica (1543)": "day FAB-rih-kuh",
+      "Padua Anatomical Theatre": "PAD-yoo-uh an-uh-TOM-ih-kul THEE-uh-tur",
+      "Cathedra": "kuh-THEE-druh",
+      "Galenic Errors": "guh-LEN-ik ER-urz",
+      "Heart Septum": "hart SEP-tum",
+      "Empirical Anatomy": "im-PIR-ih-kul uh-NAT-uh-mee"
+    },
+    "lesson_2_4": {
+      "De Motu Cordis (1628)": "day MOH-too KOR-dis",
+      "Mechanical Pump": "muh-KAN-ih-kul pump",
+      "Vein Valves": "VAYN valvz",
+      "Circulator": "SUR-kyoo-lay-tur",
+      "Capillaries": "kuh-PIL-uh-reez",
+      "Blood Volume Calculation": "blud VOL-yoom kal-kyoo-LAY-shun"
+    },
+    "lesson_2_5": {
+      "Bills of Mortality": "bilz ov mor-TAL-ih-tee",
+      "Municipal Quarantine": "myoo-NIS-ih-pul KWOR-un-teen",
+      "Searchers of the Dead": "SUR-churz ov thuh ded",
+      "Plague Doctor Beak": "PLAYG dok-tur beek",
+      "Miasmatic Pomander": "my-az-MAT-ik puh-MAN-dur",
+      "Mass Lime Pits": "mas LYM pits"
+    },
+    "lesson_3_1": {
+      "Spontaneous Generation": "spon-TAY-nee-us jen-uh-RAY-shun",
+      "Germ Theory (1861)": "JURM theer-ee",
+      "Agar Jelly": "AY-gar JEL-ee",
+      "Aniline Dyes": "AN-ih-leen dyz",
+      "Koch’s Postulates (1882)": "KOKS POS-tyoo-luts"
+    },
+    "lesson_3_2": {
+      "Inoculation": "ih-nok-yoo-LAY-shun",
+      "Vaccination": "vak-sih-NAY-shun",
+      "Cowpox": "KOW-poks",
+      "1853 Compulsory Act": "ay-TEEN fif-tee-THREE kum-PUL-suh-ree akt",
+      "Anti-Vaccination League": "AN-tee vak-sih-NAY-shun leeg"
+    },
+    "lesson_3_3": {
+      "Hospitalism": "HOS-pih-tul-iz-um",
+      "Scutari Barrack Hospital": "skoo-TAH-ree BAR-uk HOS-pih-tul",
+      "Coxcomb (Polar Area Chart)": "KOKS-kohm (POH-lur AIR-ee-uh chart)",
+      "Pavilion Hospital Plan": "puh-VIL-yun HOS-pih-tul plan",
+      "Nightingale Training School (1860)": "NY-ting-gayl TRAY-ning skool"
+    },
+    "lesson_3_4": {
+      "Chloroform (1847)": "KLOR-uh-form",
+      "The \"Black Period\" of Surgery": "thuh BLAK PEER-ee-ud ov SUR-juh-ree",
+      "Antiseptic Surgery": "an-tee-SEP-tik SUR-juh-ree",
+      "Aseptic Surgery": "ay-SEP-tik SUR-juh-ree",
+      "Autoclave (1881)": "AW-toh-klayv"
+    },
+    "lesson_3_5": {
+      "Cholera": "KOL-uh-ruh",
+      "Laissez-faire": "les-ay-FAIR",
+      "Broad Street Pump (1854)": "BRAWD street pump",
+      "The Great Stink (1858)": "thuh GRAYT stink",
+      "1875 Public Health Act": "ay-TEEN sev-un-tee-FYV PUB-lik helth akt"
+    },
+    "lesson_4_1": {
+      "DNA (Deoxyribonucleic Acid)": "dee-en-AY (dee-ok-see-ry-boh-nyoo-KLAY-ik AS-id)",
+      "X-ray Crystallography": "EKS-ray kris-tuh-LOG-ruh-fee",
+      "Human Genome Project": "HYOO-mun JEE-nohm PROJ-ekt",
+      "Hereditary Disease": "huh-RED-ih-tuh-ree dih-ZEEZ",
+      "Base Pairing": "BAYS pair-ing"
+    },
+    "lesson_4_2": {
+      "X-ray": "EKS-ray",
+      "CT Scanner (Computed Tomography)": "see-TEE SKAN-ur (kum-PYOO-tid tuh-MOG-ruh-fee)",
+      "MRI (Magnetic Resonance Imaging)": "em-ar-EYE (mag-NET-ik REZ-uh-nuns IM-ij-ing)",
+      "Endoscope": "EN-duh-skohp",
+      "Epidemiological Transition": "ep-ih-dee-mee-uh-LOJ-ih-kul tran-ZISH-un"
+    },
+    "lesson_4_3": {
+      "Magic Bullet": "MAJ-ik BOOL-it",
+      "Salvarsan 606": "SAL-vur-san siks-oh-SIKS",
+      "Prontosil": "PRON-toh-sil",
+      "National Health Service (NHS)": "NASH-nul helth SUR-vis (en-aych-ES)",
+      "Beveridge Report": "BEV-rij rih-PORT"
+    },
+    "lesson_4_4": {
+      "Penicillin": "pen-ih-SIL-in",
+      "Antibiotic": "an-tee-by-OT-ik",
+      "Freeze-Drying": "FREEZ-dry-ing",
+      "Deep-Tank Fermentation": "DEEP-tank fur-men-TAY-shun",
+      "Antibiotic Resistance": "an-tee-by-OT-ik rih-ZIS-tuns"
+    },
+    "lesson_4_5": {
+      "Carcinoma": "kar-sih-NOH-muh",
+      "Epidemiology": "ep-ih-dee-mee-OL-uh-jee",
+      "Bronchoscopy": "bron-KOS-kuh-pee",
+      "Immunotherapy": "im-yoo-noh-THER-uh-pee",
+      "Plain Packaging": "PLAYN PAK-ij-ing"
+    },
+    "lesson_5_1": {
+      "Frontline Trench": "FRUNT-lyn trench",
+      "Communication Trench": "kuh-myoo-nih-KAY-shun trench",
+      "Traverse": "TRAV-urs",
+      "Ypres Salient": "EE-pruh SAY-lee-unt",
+      "Thompson’s Cave": "TOMP-sunz kayv"
+    },
+    "lesson_5_2": {
+      "Trench Foot": "TRENCH-fut",
+      "Whale Oil": "WAYL oyl",
+      "Trench Fever": "TRENCH fee-vur",
+      "Body Lice": "BOD-ee lys",
+      "Chloride of Lime": "KLOR-yd ov lym"
+    },
+    "lesson_5_3": {
+      "High-Explosive Shell": "HY-ik-sploh-siv shel",
+      "Gas Gangrene": "GAS GANG-green",
+      "Tetanus": "TET-uh-nus",
+      "Brodie Helmet": "BROH-dee HEL-mit",
+      "Mustard Gas": "MUS-turd gas"
+    },
+    "lesson_5_4": {
+      "Chain of Evacuation": "CHAYN ov ih-vak-yoo-AY-shun",
+      "Regimental Aid Post (RAP)": "rej-ih-MEN-tul AYD pohst (ar-ay-PEE)",
+      "Casualty Clearing Station (CCS)": "KAZH-yoo-ul-tee KLEER-ing STAY-shun (see-see-ES)",
+      "Triage": "TREE-ahzh",
+      "FANY": "FAN-ee (furst ayd NUR-sing YOH-mun-ree)"
+    },
+    "lesson_5_5": {
+      "Compound Fracture": "KOM-pownd FRAK-chur",
+      "Thomas Splint": "TOM-us splint",
+      "Traction": "TRAK-shun",
+      "Wound Debridement": "woond DEE-bride-munt",
+      "Carrel-Dakin Method": "KAH-rel DAY-kin METH-ud"
+    },
+    "lesson_5_6": {
+      "Sodium Citrate": "SOH-dee-um SIT-rayt",
+      "Blood Depot": "BLUD DEP-oh",
+      "Harvey Cushing": "HAR-vee KOOSH-ing",
+      "Harold Gillies": "HAR-uld GIL-eez",
+      "Tubed Pedicle": "TYOOBD PED-ih-kul"
+    }
+  }
+}

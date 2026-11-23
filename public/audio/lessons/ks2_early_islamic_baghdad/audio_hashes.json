@@ -1,0 +1,114 @@
+{
+  "unitId": "ks2_early_islamic_baghdad",
+  "voiceKey": "female_historian",
+  "blocks": {
+    "lesson_6_b1": {
+      "hash": "b67573b2896b3fa1",
+      "bytes": 212780,
+      "words": 91,
+      "updatedAt": "2026-11-23T20:42:18.406Z"
+    },
+    "lesson_6_b2": {
+      "hash": "ab345033c893bc04",
+      "bytes": 199148,
+      "words": 85,
+      "updatedAt": "2026-11-23T20:42:18.929Z"
+    },
+    "lesson_6_b3": {
+      "hash": "72c8555a2009edbb",
+      "bytes": 197612,
+      "words": 87,
+      "updatedAt": "2026-11-23T20:42:19.510Z"
+    },
+    "lesson_1_b1": {
+      "hash": "4d63ea38d53a5c8a",
+      "bytes": 167948,
+      "words": 89,
+      "updatedAt": "2026-11-23T20:42:28.819Z"
+    },
+    "lesson_1_b2": {
+      "hash": "7bdb8d9501d28ff7",
+      "bytes": 176780,
+      "words": 87,
+      "updatedAt": "2026-11-23T20:42:29.353Z"
+    },
+    "lesson_1_b3": {
+      "hash": "05169f49a6ef4b82",
+      "bytes": 190220,
+      "words": 83,
+      "updatedAt": "2026-11-23T20:42:29.875Z"
+    },
+    "lesson_2_b1": {
+      "hash": "4e22969fc3330f66",
+      "bytes": 182252,
+      "words": 87,
+      "updatedAt": "2026-11-23T20:42:30.430Z"
+    },
+    "lesson_2_b2": {
+      "hash": "00c21c813622e423",
+      "bytes": 173420,
+      "words": 84,
+      "updatedAt": "2026-11-23T20:42:30.939Z"
+    },
+    "lesson_2_b3": {
+      "hash": "8a5f6423f27da69c",
+      "bytes": 179372,
+      "words": 86,
+      "updatedAt": "2026-11-23T20:42:31.419Z"
+    },
+    "lesson_3_b1": {
+      "hash": "81af08ca42c17b6e",
+      "bytes": 184268,
+      "words": 90,
+      "updatedAt": "2026-11-23T20:42:32.012Z"
+    },
+    "lesson_3_b2": {
+      "hash": "9f9485706782e023",
+      "bytes": 185420,
+      "words": 92,
+      "updatedAt": "2026-11-23T20:42:32.515Z"
+    },
+    "lesson_3_b3": {
+      "hash": "1d81c748eaa03eba",
+      "bytes": 192812,
+      "words": 88,
+      "updatedAt": "2026-11-23T20:42:33.016Z"
+    },
+    "lesson_4_b1": {
+      "hash": "1be2e2d1fd90a8ac",
+      "bytes": 186092,
+      "words": 86,
+      "updatedAt": "2026-11-23T20:42:33.507Z"
+    },
+    "lesson_4_b2": {
+      "hash": "f46e10a1cec74335",
+      "bytes": 177740,
+      "words": 92,
+      "updatedAt": "2026-11-23T20:42:34.019Z"
+    },
+    "lesson_4_b3": {
+      "hash": "a6f05fe5d857d162",
+      "bytes": 191180,
+      "words": 86,
+      "updatedAt": "2026-11-23T20:42:34.526Z"
+    },
+    "lesson_5_b1": {
+      "hash": "e4109a9a1b20f24c",
+      "bytes": 190412,
+      "words": 87,
+      "updatedAt": "2026-11-23T20:42:35.020Z"
+    },
+    "lesson_5_b2": {
+      "hash": "9e439477432f8e12",
+      "bytes": 206060,
+      "words": 86,
+      "updatedAt": "2026-11-23T20:42:35.528Z"
+    },
+    "lesson_5_b3": {
+      "hash": "c3f2fc23f7222532",
+      "bytes": 176300,
+      "words": 84,
+      "updatedAt": "2026-11-23T20:42:36.011Z"
+    }
+  }
+}

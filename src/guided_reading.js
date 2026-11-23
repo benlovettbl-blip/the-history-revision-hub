@@ -1164,6 +1164,9 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       <button type="button" id="btn-masthead-qr-share" class="btn" style="background: #be185d; color: #ffffff; border: 1px solid #f472b6; font-weight: 800; font-size: 0.8rem; padding: 6px 11px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;">
         <i class="fa-solid fa-qrcode"></i> <span>${isStaffModeActive() ? 'Set Homework / QR' : 'Phone QR'}</span>
       </button>
+      <a href="/pdfs/${unitId}_literary_companion.pdf" data-anthology-html="/units/${unitId}/literary_companion.html" id="btn-masthead-anthology-pdf" target="_blank" rel="noopener noreferrer" class="btn" title="Preview or download the Optional Saddle-Stitch Literary Companion Anthology PDF booklet" style="background: #4f46e5; color: #ffffff; border: 1px solid #818cf8; font-weight: 800; font-size: 0.8rem; padding: 6px 11px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; white-space: nowrap;">
+        <i class="fa-solid fa-file-pdf" style="color: #fde68a;"></i> <span>Anthology PDF</span>
+      </a>
       <a href="${bookletUrl}" target="_blank" rel="noopener noreferrer" class="btn" style="background: rgba(255,255,255,0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.25); font-weight: 700; font-size: 0.8rem; padding: 6px 11px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; white-space: nowrap;">
         <i class="fa-solid ${isBookletPdf ? 'fa-file-pdf' : 'fa-book-open'}" style="color: ${isBookletPdf ? '#f87171' : '#38bdf8'};"></i> <span>${bookletLabel}</span>
       </a>
@@ -1175,6 +1178,23 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   if (mastheadQrBtn) {
     mastheadQrBtn.onclick = () => {
       openReadingShareModal(unitId, activeIndex, activeReading ? activeReading.book_title : '');
+    };
+  }
+
+  const mastheadAnthologyBtn = masthead.querySelector('#btn-masthead-anthology-pdf');
+  if (mastheadAnthologyBtn) {
+    mastheadAnthologyBtn.onclick = (ev) => {
+      const htmlPath = `/units/${unitId}/literary_companion.html`;
+      const pdfPath = `/pdfs/${unitId}_literary_companion.pdf`;
+      if (typeof window !== 'undefined' && typeof window.openCurricularPillar === 'function') {
+        ev.preventDefault();
+        window.openCurricularPillar(
+          htmlPath,
+          'Literary Companion Anthology',
+          pdfPath,
+          'OPTIONAL ANTHOLOGY'
+        );
+      }
     };
   }
 

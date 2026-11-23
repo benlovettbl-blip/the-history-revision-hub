@@ -68,6 +68,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS2_Stone_Age_to_Iron_Age_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Stone Age to Iron Age Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 prehistoric stories & eyewitness voices with UK audio QR codes and Parent/Tutor Guide.',
+      htmlUrl: '/units/ks2_stone_to_iron_age/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_stone_to_iron_age_literary_companion.pdf',
+      downloadName: 'KS2_Stone_Age_to_Iron_Age_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
     schemeOfWork: {
       title: 'Walk-In Primary Teacher Guide & 6-Lesson Scheme of Work',
       label: 'Teacher Guide & SOW',
@@ -123,6 +134,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/ks2_ancient_egypt/quiz_pack.html',
       pdfUrl: '/pdfs/ks2_ancient_egypt_retrieval_companion.pdf',
       downloadName: 'KS2_Ancient_Egypt_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'Ancient Egypt Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 Egyptian stories, hymns & eyewitness accounts with UK audio QR codes and Parent/Tutor Guide.',
+      htmlUrl: '/units/ks2_ancient_egypt/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_ancient_egypt_literary_companion.pdf',
+      downloadName: 'KS2_Ancient_Egypt_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     schemeOfWork: {
@@ -182,6 +204,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS2_Ancient_Greece_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Ancient Greece Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 Greek epics, speeches & stories with UK audio QR codes and Parent/Tutor Guide.',
+      htmlUrl: '/units/ks2_ancient_greece/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_ancient_greece_literary_companion.pdf',
+      downloadName: 'KS2_Ancient_Greece_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
     schemeOfWork: {
       title: 'Walk-In Primary Teacher Guide & 6-Lesson Scheme of Work',
       label: 'Teacher Guide & SOW',
@@ -237,6 +270,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/ks2_early_islamic_baghdad/quiz_pack.html',
       pdfUrl: '/pdfs/ks2_early_islamic_baghdad_retrieval_companion.pdf',
       downloadName: 'KS2_Early_Islamic_Baghdad_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'Early Islamic Baghdad Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 Baghdad tales, Silk Road accounts & micro-stories with UK audio QR codes and Guide.',
+      htmlUrl: '/units/ks2_early_islamic_baghdad/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_early_islamic_baghdad_literary_companion.pdf',
+      downloadName: 'KS2_Early_Islamic_Baghdad_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     schemeOfWork: {
@@ -296,6 +340,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS2_Ancient_Maya_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'The Ancient Maya Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 Maya myths, Popol Vuh tales & archaeological stories with UK audio QR codes and Guide.',
+      htmlUrl: '/units/ks2_maya_civilisation/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_maya_civilisation_literary_companion.pdf',
+      downloadName: 'KS2_Ancient_Maya_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
     schemeOfWork: {
       title: 'Walk-In Primary Teacher Guide & 6-Lesson Scheme of Work',
       label: 'Teacher Guide & SOW',
@@ -351,6 +406,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/ks2_romans/quiz_pack.html',
       pdfUrl: '/pdfs/ks2_romans_retrieval_companion.pdf',
       downloadName: 'KS2_Romans_in_Britain_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'Romans in Britain Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 Roman Britain letters, stories & eyewitness accounts with UK audio QR codes and Guide.',
+      htmlUrl: '/units/ks2_romans/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_romans_literary_companion.pdf',
+      downloadName: 'KS2_Romans_in_Britain_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     schemeOfWork: {
@@ -410,6 +476,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS2_Anglo_Saxons_and_Vikings_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Anglo-Saxons & Vikings Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 Beowulf, Bede, Lindisfarne & Jorvik voices with UK audio QR codes and Guide.',
+      htmlUrl: '/units/ks2_anglo_saxons_vikings/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_anglo_saxons_vikings_literary_companion.pdf',
+      downloadName: 'KS2_Anglo_Saxons_and_Vikings_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
     schemeOfWork: {
       title: 'Walk-In Primary Teacher Guide & 6-Lesson Scheme of Work',
       label: 'Teacher Guide & SOW',
@@ -465,6 +542,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/ks2_ww2/quiz_pack.html',
       pdfUrl: '/pdfs/ks2_ww2_retrieval_companion.pdf',
       downloadName: 'KS2_WWII_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'World War II & Home Front Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '16 Pages',
+      desc: 'Optional 16-page home reading & tutor-time anthology across all 11 wartime broadcasts, stories & testimonies with QR audio, 33-Q Quiz & Guide.',
+      htmlUrl: '/units/ks2_ww2/literary_companion.html',
+      pdfUrl: '/pdfs/ks2_ww2_literary_companion.pdf',
+      downloadName: 'KS2_WWII_Home_Front_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     schemeOfWork: {
@@ -532,6 +620,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Water_and_Sanitation_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Water & Sanitation Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 stories, satires & eyewitness accounts with UK audio QR codes and Conversation Guide.',
+      htmlUrl: '/units/water_and_sanitation/literary_companion.html',
+      pdfUrl: '/pdfs/water_and_sanitation_literary_companion.pdf',
+      downloadName: 'KS3_Water_and_Sanitation_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
   },
 
   medieval_england: {
@@ -567,6 +666,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/medieval_england/medieval_england_retrieval_companion.html',
       pdfUrl: '/pdfs/medieval_england_retrieval_companion.pdf',
       downloadName: 'KS3_Medieval_England_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'Medieval England Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 medieval stories, chronicles & literature with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/medieval_england/literary_companion.html',
+      pdfUrl: '/pdfs/medieval_england_literary_companion.pdf',
+      downloadName: 'KS3_Medieval_England_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
@@ -606,6 +716,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Crown_Church_Parliament_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Crown, Church & Parliament Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 Tudor & Stuart speeches, diaries & stories with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/monarchy_religion_power/literary_companion.html',
+      pdfUrl: '/pdfs/monarchy_religion_power_literary_companion.pdf',
+      downloadName: 'KS3_Crown_Church_Parliament_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
   },
 
   first_british_empire: {
@@ -641,6 +762,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/first_british_empire/first_british_empire_retrieval_companion.html',
       pdfUrl: '/pdfs/first_british_empire_retrieval_companion.pdf',
       downloadName: 'KS3_First_British_Empire_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'The First British Empire Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 imperial & Atlantic eyewitness voices with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/first_british_empire/literary_companion.html',
+      pdfUrl: '/pdfs/first_british_empire_literary_companion.pdf',
+      downloadName: 'KS3_First_British_Empire_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
@@ -680,6 +812,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Industrialisation_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Industrialisation, Power & Protest Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 industrial poems, novels & eyewitness stories with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/industrialisation_and_empire/literary_companion.html',
+      pdfUrl: '/pdfs/industrialisation_and_empire_literary_companion.pdf',
+      downloadName: 'KS3_Industrialisation_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
   },
 
   second_british_empire: {
@@ -715,6 +858,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/second_british_empire/second_british_empire_retrieval_companion.html',
       pdfUrl: '/pdfs/second_british_empire_retrieval_companion.pdf',
       downloadName: 'KS3_Second_British_Empire_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'The Second British Empire Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 imperial voices, literature & micro-stories with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/second_british_empire/literary_companion.html',
+      pdfUrl: '/pdfs/second_british_empire_literary_companion.pdf',
+      downloadName: 'KS3_Second_British_Empire_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
@@ -754,6 +908,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Australia_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Invasion & Survival in Australia Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 First Nations, convict & bush ballad voices with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/australia/literary_companion.html',
+      pdfUrl: '/pdfs/australia_literary_companion.pdf',
+      downloadName: 'KS3_Australia_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
   },
 
   great_war: {
@@ -789,6 +954,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/great_war/great_war_retrieval_companion.html',
       pdfUrl: '/pdfs/great_war_retrieval_companion.pdf',
       downloadName: 'KS3_Causes_of_Great_War_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'Causes of the Great War Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 6 pre-1914 literature, war poetry & Sarajevo stories with UK audio QR codes and Guide.',
+      htmlUrl: '/units/great_war/literary_companion.html',
+      pdfUrl: '/pdfs/great_war_literary_companion.pdf',
+      downloadName: 'KS3_Causes_of_Great_War_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
@@ -848,6 +1024,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Course_of_Great_War_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'The Course of the Great War Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 trench poems, memoirs & global WWI voices with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/great_war_part2/literary_companion.html',
+      pdfUrl: '/pdfs/great_war_part2_literary_companion.pdf',
+      downloadName: 'KS3_Course_of_Great_War_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
   },
 
   the_shoah: {
@@ -883,6 +1070,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/the_shoah/the_shoah_retrieval_companion.html',
       pdfUrl: '/pdfs/the_shoah_retrieval_companion.pdf',
       downloadName: 'KS3_The_Shoah_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'The Shoah Witness & Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '12 Pages',
+      desc: 'Optional 12-page reading & tutor-time anthology across all 7 Jewish diaries, archives & testimonies with UK audio QR codes, 21-Q Quiz & Guide.',
+      htmlUrl: '/units/the_shoah/literary_companion.html',
+      pdfUrl: '/pdfs/the_shoah_literary_companion.pdf',
+      downloadName: 'KS3_The_Shoah_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
   },
@@ -922,6 +1120,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Post_War_Britain_Retrieval_Companion.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    literaryAnthology: {
+      title: 'Post-War Britain Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '8 Pages',
+      desc: 'Optional home reading & tutor-time anthology across all 5 Suffragette, NHS, Windrush & protest voices with UK audio QR codes, 15-Q Quiz & Guide.',
+      htmlUrl: '/units/post_war_britain/literary_companion.html',
+      pdfUrl: '/pdfs/post_war_britain_literary_companion.pdf',
+      downloadName: 'KS3_Post_War_Britain_Literary_Companion_Anthology.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
   },
 
   cold_war: {
@@ -957,6 +1166,17 @@ export const UNIT_RESOURCES_CATALOG = {
       htmlUrl: '/units/cold_war/cold_war_master_retrieval_companion.html',
       pdfUrl: '/pdfs/cold_war_retrieval_companion.pdf',
       downloadName: 'Cold_War_Retrieval_Companion.pdf',
+      printSpec: PRINT_SPEC_A3,
+    },
+    literaryAnthology: {
+      title: 'Cold War & Global Flashpoints Literary Companion Anthology',
+      label: 'Literary Companion Anthology',
+      optionalBadge: 'OPTIONAL ANTHOLOGY',
+      pages: '12 Pages',
+      desc: 'Optional 12-page home reading & tutor-time anthology across all 7 Cold War speeches, dispatches & stories with UK audio QR codes, 21-Q Quiz & Guide.',
+      htmlUrl: '/units/cold_war/literary_companion.html',
+      pdfUrl: '/pdfs/cold_war_literary_companion.pdf',
+      downloadName: 'KS3_Cold_War_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
     courseInfographics: [
@@ -1586,7 +1806,15 @@ export const UNIT_RESOURCES_CATALOG = {
 // Build fast HTML -> PDF lookup index across all units, editions, mark schemes, and worksheets
 const HTML_TO_PDF_MAP = new Map();
 for (const cfg of Object.values(UNIT_RESOURCES_CATALOG)) {
-  const buckets = [cfg.textbook, cfg.workbook, cfg.retrieval, cfg.revisionGuide, cfg.masteryExamPack, cfg.schemeOfWork];
+  const buckets = [
+    cfg.textbook,
+    cfg.workbook,
+    cfg.retrieval,
+    cfg.literaryAnthology,
+    cfg.revisionGuide,
+    cfg.masteryExamPack,
+    cfg.schemeOfWork,
+  ];
   for (const b of buckets) {
     if (!b) continue;
     if (b.htmlUrl && b.pdfUrl) HTML_TO_PDF_MAP.set(b.htmlUrl, b.pdfUrl);
@@ -1626,6 +1854,9 @@ export function resolveCanonicalPdfUrl(url, explicitPdfUrl = null) {
     }
     if (file.includes('mock') || file.includes('notebook')) {
       return `/pdfs/mocks/${u}/${file}.pdf`;
+    }
+    if (file === 'literary_companion') {
+      return `/pdfs/${u}_literary_companion.pdf`;
     }
     if (file.includes('retrieval') || file.includes('companion') || file === 'quiz_pack') {
       return `/pdfs/${u}_retrieval_companion.pdf`;

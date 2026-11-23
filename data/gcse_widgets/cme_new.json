@@ -1,0 +1,769 @@
+{
+  "unit_id": "cme_new",
+  "widgets": [
+    {
+      "lesson_id": "lesson_3",
+      "block_index": 0,
+      "expected_heading": "The Gaza Raid",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Escalation Chain",
+        "title": "The Gaza Raid (28 Feb 1955): From Fedayeen Raids to Nasser’s Arms Pivot",
+        "default_index": 0,
+        "caption": "Click each stage to trace how cross-border guerrilla raids and Israel’s Operation Black Arrow humiliated Gamal Abdel Nasser and triggered Egypt’s quest for modern weapons.",
+        "items": [
+          {
+            "tab_label": "1. Fedayeen Raids",
+            "title": "Pan-Arab Leadership & Gaza Fedayeen Sabotage",
+            "dates": "1954 – Early 1955 • Gaza Border",
+            "badge": "Border Sabotage",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Egyptian Leader",
+                "value": "Col. Gamal Abdel Nasser (1954)"
+              },
+              {
+                "label": "Ideology",
+                "value": "Champion of Pan-Arab Nationalism"
+              },
+              {
+                "label": "Border Flashpoint",
+                "value": "Fedayeen Raids from Gaza"
+              }
+            ],
+            "takeaway": "Emerging as Egypt’s leader in 1954, Nasser championed Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to mount armed sabotage raids into southern Israel from Egyptian-held Gaza."
+          },
+          {
+            "tab_label": "2. Black Arrow",
+            "title": "Operation Black Arrow Strikes the Gaza Garrison",
+            "dates": "28 February 1955 • Gaza",
+            "badge": "38 Egyptians Killed",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Israeli Leaders",
+                "value": "Ben-Gurion & Moshe Dayan"
+              },
+              {
+                "label": "Strike Force",
+                "value": "Israeli Paratrooper Assault"
+              },
+              {
+                "label": "Egyptian Losses",
+                "value": "38 Soldiers & Policemen Killed"
+              }
+            ],
+            "takeaway": "Authorised by Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan on 28 February 1955, Israeli paratroopers stormed an Egyptian military garrison in Gaza in a major reprisal raid."
+          },
+          {
+            "tab_label": "3. Nasser’s Pivot",
+            "title": "Army Humiliation & Urgent Quest for Modern Arms",
+            "dates": "Post-February 1955 • Cairo",
+            "badge": "Deterrence Crisis",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Political Shock",
+                "value": "Humiliated Before Army Officers"
+              },
+              {
+                "label": "Military Lesson",
+                "value": "Egyptian Forces Exposed as Weak"
+              },
+              {
+                "label": "Hardware Needed",
+                "value": "Modern Jets, Tanks & Artillery"
+              }
+            ],
+            "takeaway": "Operation Black Arrow exposed the weakness of Egypt’s armed forces before Nasser’s own officers, convincing him that Egypt could not deter Israel without modern jet fighters, tanks, and heavy artillery."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_4",
+      "block_index": 2,
+      "expected_heading": "Syrian Support for Fatah Border Raids",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Border Escalation",
+        "title": "Guerrilla War & Syrian Patronage (1965–1966): Fatah ↔ Damascus Regime ↔ Golan Shelling",
+        "default_index": 1,
+        "caption": "Slide or click across the three stages to trace how Yasser Arafat’s Fatah raids and Syrian military backing escalated border tension along the Golan Heights.",
+        "stops": [
+          {
+            "short_label": "1. Fatah Raids (Jan 1965)",
+            "label": "1. Yasser Arafat & Fatah’s Revolutionary Strategy (Kuwait – Jan 1965)",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "summary": "Frustrated by conservative Arab diplomacy, younger Palestinian militants led by Yasser Arafat founded Fatah in Kuwait to wage independent guerrilla attacks designed to ignite a wider Arab-Israeli war.",
+            "traits": [
+              {
+                "category": "Founder & Origin",
+                "glyph": "leader",
+                "value": "Yasser Arafat (Formed in Kuwait)"
+              },
+              {
+                "category": "Core Doctrine",
+                "glyph": "people",
+                "value": "Independent Guerrilla Warfare"
+              },
+              {
+                "category": "January 1965",
+                "glyph": "law",
+                "value": "First Raid on Israeli Water Canal"
+              },
+              {
+                "category": "Strategic Goal",
+                "glyph": "language",
+                "value": "Ignite Wider Arab-Israeli Conflict"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Damascus Backing (1966)",
+            "label": "2. Radical Military Regime in Damascus Arms Fatah (1966)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "After a radical military regime seized power in Damascus in 1966, Syria became Fatah’s primary state sponsor—supplying advanced weaponry, training camps, and safe operational bases.",
+            "traits": [
+              {
+                "category": "1966 Shift",
+                "glyph": "leader",
+                "value": "Radical Military Coup in Damascus"
+              },
+              {
+                "category": "Weapons & Aid",
+                "glyph": "law",
+                "value": "Advanced Arms & Training Camps"
+              },
+              {
+                "category": "Safe Haven",
+                "glyph": "people",
+                "value": "Operational Sanctuary in Syria"
+              },
+              {
+                "category": "Regional Effect",
+                "glyph": "language",
+                "value": "Sustained Cross-Border Sabotage"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Golan Shelling & Warnings",
+            "label": "3. Golan Heights Artillery & Israeli Retaliation Warnings (1966–67)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "From fortified bunkers high on the Golan Heights, Syrian artillery routinely shelled Israeli tractors and farming kibbutzim in the Hula Valley below, provoking stern warnings of Israeli military retaliation.",
+            "traits": [
+              {
+                "category": "High Ground",
+                "glyph": "church",
+                "value": "Fortified Golan Artillery Bunkers"
+              },
+              {
+                "category": "Targets Below",
+                "glyph": "people",
+                "value": "Hula Valley Tractors & Kibbutzim"
+              },
+              {
+                "category": "Israeli Warning",
+                "glyph": "leader",
+                "value": "Threat of Devastating Retaliation"
+              },
+              {
+                "category": "Crisis Trajectory",
+                "glyph": "law",
+                "value": "Pushed Frontier Toward Open War"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_5",
+      "block_index": 0,
+      "expected_heading": "Soviet Warning, UNEF Expelled & Straits of Tiran Closed",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Ten-Day Countdown",
+        "title": "13–22 May 1967: How False Intelligence Triggered the Straits of Tiran Crisis",
+        "default_index": 0,
+        "caption": "Click each milestone across the ten-day May 1967 escalation to see how a false Soviet intelligence tip led Nasser to cross Israel’s explicit 1957 red line.",
+        "items": [
+          {
+            "tab_label": "1. 13 May: Soviet Tip",
+            "title": "False Soviet Warning of an Israeli Buildup",
+            "dates": "13 May 1967 • Moscow to Cairo",
+            "badge": "False Intelligence",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "metrics": [
+              {
+                "label": "Soviet Claim",
+                "value": "10–12 Israeli Brigades on Syria"
+              },
+              {
+                "label": "UN Verification",
+                "value": "Confirmed No Buildup Existed"
+              },
+              {
+                "label": "Political Trap",
+                "value": "Nasser Could Not Look Weak"
+              }
+            ],
+            "takeaway": "Although UN observers confirmed no Israeli troop buildup existed on Syria’s border, Moscow’s false 13 May warning forced Nasser to act boldly to defend his prestige as champion of Pan-Arabism."
+          },
+          {
+            "tab_label": "2. 14–15 May: Sinai",
+            "title": "Egyptian Army Mobilises Across the Sinai Peninsula",
+            "dates": "14–15 May 1967 • Sinai Peninsula",
+            "badge": "100,000 Troops",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Infantry",
+                "value": "100,000 Egyptian Soldiers"
+              },
+              {
+                "label": "Armour",
+                "value": "1,000 Tanks into Sinai"
+              },
+              {
+                "label": "16 May Demand",
+                "value": "Ordered UNEF Peacekeepers Out"
+              }
+            ],
+            "takeaway": "On 14–15 May 1967, Nasser marched 100,000 troops and 1,000 tanks into Sinai, demanding on 16 May that United Nations Emergency Force (UNEF) peacekeepers withdraw."
+          },
+          {
+            "tab_label": "3. UNEF Withdrawn",
+            "title": "U Thant Withdraws UNEF & Sharm el-Sheikh Occupied",
+            "dates": "16–21 May 1967 • Gulf of Aqaba",
+            "badge": "Buffer Removed",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "UN Decision",
+                "value": "U Thant Withdrew UNEF Rapidly"
+              },
+              {
+                "label": "Missing Check",
+                "value": "No Security Council Debate"
+              },
+              {
+                "label": "Key Chokepoint",
+                "value": "Egypt Occupied Sharm el-Sheikh"
+              }
+            ],
+            "takeaway": "When UN Secretary-General U Thant withdrew UNEF without Security Council debate, the peacekeeping buffer vanished and Egyptian forces occupied Sharm el-Sheikh overlooking the Gulf of Aqaba."
+          },
+          {
+            "tab_label": "4. 22 May: Tiran",
+            "title": "Nasser Closes the Straits of Tiran to Israeli Shipping",
+            "dates": "22 May 1967 • Straits of Tiran",
+            "badge": "1957 Red Line Crossed",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Blocked Port",
+                "value": "Israeli Shipping Bound for Eilat"
+              },
+              {
+                "label": "Strategic Cargo",
+                "value": "Vital Oil Tankers Cut Off"
+              },
+              {
+                "label": "Israeli Stance",
+                "value": "Act of War Warning Since 1957"
+              }
+            ],
+            "takeaway": "Closing the Straits of Tiran on 22 May choked off Eilat’s shipping and vital oil tankers, crossing the explicit red line Israel had warned since 1957 would constitute an act of war."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_7",
+      "block_index": 1,
+      "expected_heading": "The Dawson’s Field Airline Hijackings",
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "Interactive Sovereignty Crisis",
+        "title": "State Within a State: Jordanian Authority vs PFLP Militancy (Late 1960s – 6 Sept 1970)",
+        "default_index": 2,
+        "caption": "Click each stage of the Dawson’s Field crisis to see how Dr George Habash’s Marxist PFLP challenged both Yasser Arafat and King Hussein’s control over Jordan.",
+        "eras": [
+          {
+            "year": "Late 1960s",
+            "headline": "Marxist PFLP Challenges Arafat & Pioneers Hijackings",
+            "color": "#0284c7",
+            "summary": "Dr George Habash’s Marxist PFLP challenged Arafat’s moderate leadership by pioneering international airliner hijackings to publicise the Palestinian struggle and free jailed guerrillas.",
+            "pillars": [
+              {
+                "actor": "King Hussein (Jordanian State)",
+                "share": 45,
+                "status": "Strained Sovereign Host",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Arafat’s Mainstream Leadership",
+                "share": 30,
+                "status": "Challenged by Marxist Rivals",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "Habash’s Marxist PFLP",
+                "share": 25,
+                "status": "Pioneers International Hijackings",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "6 Sept 1970",
+            "headline": "Simultaneous Hijacking of Four Western Airliners",
+            "color": "#f59e0b",
+            "summary": "PFLP operatives hijacked four Western passenger airliners simultaneously, forcing three aircraft onto Dawson’s Field—a remote desert landing strip inside Jordan—with over 300 civilian hostages.",
+            "pillars": [
+              {
+                "actor": "King Hussein (Jordanian State)",
+                "share": 20,
+                "status": "Bypassed Inside Own Borders",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Arafat’s Mainstream Leadership",
+                "share": 20,
+                "status": "Sidelined by PFLP Spectacle",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "Habash’s Marxist PFLP",
+                "share": 60,
+                "status": "Controls Airstrip & 300+ Hostages",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "Sept 1970 TV",
+            "headline": "Airliners Blown Up Before Global Television Cameras",
+            "color": "#ef4444",
+            "summary": "After evacuating over 300 civilian hostages, PFLP militants blew up the empty airliners on world television—humiliating King Hussein and proving armed groups operated beyond Jordanian government control.",
+            "pillars": [
+              {
+                "actor": "King Hussein (Jordanian State)",
+                "share": 10,
+                "status": "Publicly Humiliated on World TV",
+                "color": "#64748b"
+              },
+              {
+                "actor": "Arafat’s Mainstream Leadership",
+                "share": 15,
+                "status": "Unable to Restrain Militants",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "Habash’s Marxist PFLP",
+                "share": 75,
+                "status": "Defies Jordanian Rule Openly",
+                "color": "#ef4444"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_8",
+      "block_index": 0,
+      "expected_heading": "The War of Attrition",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Canal Conflict",
+        "title": "The War of Attrition (March 1969 – August 1970): Suez Shelling ↔ Deep Raids ↔ Superpower Truce",
+        "default_index": 1,
+        "caption": "Slide or click across the three phases to see how Nasser’s grinding Suez Canal campaign escalated toward a dangerous US–Soviet confrontation before the August 1970 ceasefire.",
+        "stops": [
+          {
+            "short_label": "1. Nasser’s Strategy (Mar 1969)",
+            "label": "1. Nasser Launches the War of Attrition Along the Suez Canal (March 1969)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "In March 1969, President Nasser launched a grinding artillery war along the Suez Canal to inflict casualties on Israel, stop the 1967 ceasefire line becoming permanent, and force superpower intervention.",
+            "traits": [
+              {
+                "category": "Launch & Front",
+                "glyph": "leader",
+                "value": "March 1969 Along Suez Canal"
+              },
+              {
+                "category": "Israeli Pressure",
+                "glyph": "people",
+                "value": "Exploit Sensitivity to Casualties"
+              },
+              {
+                "category": "Border Goal",
+                "glyph": "law",
+                "value": "Prevent Permanent 1967 Line"
+              },
+              {
+                "category": "Diplomatic Aim",
+                "glyph": "language",
+                "value": "Push Superpowers on Sinai"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Bar-Lev & Deep Raids",
+            "label": "2. Concrete Bar-Lev Bunkers & Deep Israeli Air Strikes (1969–70)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "While Israeli troops endured heavy Egyptian artillery barrages inside reinforced concrete bunkers along the Bar-Lev Line, Israeli jets struck deep inside the Egyptian heartland.",
+            "traits": [
+              {
+                "category": "Israeli Defence",
+                "glyph": "church",
+                "value": "Reinforced Bar-Lev Line Bunkers"
+              },
+              {
+                "category": "Egyptian Fire",
+                "glyph": "people",
+                "value": "Relentless Heavy Shellfire"
+              },
+              {
+                "category": "Israeli Air Counter",
+                "glyph": "leader",
+                "value": "Deep Bombing Inside Egypt"
+              },
+              {
+                "category": "Military Result",
+                "glyph": "law",
+                "value": "Escalating Mutual Attrition"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Soviet Aid & Aug 1970 Truce",
+            "label": "3. Soviet SAMs, Combat Pilots & US-Brokered Ceasefire (August 1970)",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "summary": "When Moscow deployed advanced surface-to-air missiles and Soviet combat pilots to defend Cairo, fear of direct superpower clash drove Egypt and Israel to accept a US-brokered ceasefire in August 1970.",
+            "traits": [
+              {
+                "category": "Soviet Shield",
+                "glyph": "leader",
+                "value": "Advanced SAMs & Combat Pilots"
+              },
+              {
+                "category": "Global Danger",
+                "glyph": "law",
+                "value": "Direct Superpower Confrontation"
+              },
+              {
+                "category": "August 1970",
+                "glyph": "language",
+                "value": "US-Brokered Ceasefire Agreed"
+              },
+              {
+                "category": "Sinai Status",
+                "glyph": "people",
+                "value": "Canal Quiet, Occupation Unresolved"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_9",
+      "block_index": 4,
+      "expected_heading": "Arab Boycott & The Assassination of Sadat",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Treaty Fallout",
+        "title": "The Price of Separate Peace (1979–1981): Arab League Boycott & Sadat’s Assassination",
+        "default_index": 0,
+        "caption": "Click each stage to trace how Egypt’s bilateral peace treaty with Israel triggered Arab diplomatic isolation, domestic Islamist assassination, and a lasting ‘cold peace’.",
+        "items": [
+          {
+            "tab_label": "1. Arab Boycott",
+            "title": "Arab League Expulsion & Sweeping Economic Boycott",
+            "dates": "1979 • Cairo to Tunis",
+            "badge": "Egypt Isolated",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Core Charge",
+                "value": "Betrayed Palestinian Rights"
+              },
+              {
+                "label": "Arab League",
+                "value": "Suspended Egypt & Moved to Tunis"
+              },
+              {
+                "label": "Sanctions",
+                "value": "Severed Ties & Business Boycotts"
+              }
+            ],
+            "takeaway": "Condemning Sadat for recovering Egyptian territory via a separate treaty, the Arab League suspended Egypt, moved its headquarters from Cairo to Tunis, and imposed sweeping economic boycotts."
+          },
+          {
+            "tab_label": "2. 6 Oct 1981",
+            "title": "Assassination at the Cairo Victory Parade",
+            "dates": "6 October 1981 • Cairo",
+            "badge": "Sadat Assassinated",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Domestic Critics",
+                "value": "Islamist Fundamentalist Groups"
+              },
+              {
+                "label": "Assassins",
+                "value": "Egyptian Islamic Jihad Soldiers"
+              },
+              {
+                "label": "Occasion",
+                "value": "1973 Canal Crossing Parade"
+              }
+            ],
+            "takeaway": "Condemned by domestic Islamist fundamentalists as a traitor to the Islamic cause, Sadat was shot dead on 6 October 1981 by Egyptian Islamic Jihad soldiers while reviewing a Cairo military parade."
+          },
+          {
+            "tab_label": "3. Treaty Upheld",
+            "title": "Treaty Preserved & Gradual Arab Reintegration",
+            "dates": "Post-October 1981 • 1980s",
+            "badge": "Treaty Endures",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "metrics": [
+              {
+                "label": "Israeli Peace",
+                "value": "Formal Peace Treaty Upheld"
+              },
+              {
+                "label": "Arab Diplomacy",
+                "value": "Severed Ties Gradually Repaired"
+              },
+              {
+                "label": "Timescale",
+                "value": "Rebuilt Over Following Decade"
+              }
+            ],
+            "takeaway": "Sadat’s successor upheld the formal peace treaty with Israel while steadily repairing Egypt’s severed diplomatic relations with Arab neighbours over the following decade."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_10",
+      "block_index": 0,
+      "expected_heading": "The Israeli Invasion of Lebanon",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Escalation Sequence",
+        "title": "From UN Recognition to Tunis Exile (1974–1982): PLO Lebanon Raids & Operation Peace for Galilee",
+        "default_index": 0,
+        "caption": "Click each milestone from November 1974 to August 1982 to trace how PLO operations in southern Lebanon led to Israel’s siege of Beirut and the PLO’s sea evacuation to Tunis.",
+        "items": [
+          {
+            "tab_label": "1. UN Speech (1974)",
+            "title": "Arafat’s ‘Olive Branch & Gun’ Speech Wins UN Status",
+            "dates": "November 1974 • UN General Assembly",
+            "badge": "Observer Status",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "metrics": [
+              {
+                "label": "Speaker",
+                "value": "PLO Chairman Yasser Arafat"
+              },
+              {
+                "label": "Famous Phrase",
+                "value": "Olive Branch & Freedom Fighter Gun"
+              },
+              {
+                "label": "UN Outcome",
+                "value": "Official UN Observer Status Won"
+              }
+            ],
+            "takeaway": "Addressing the UN General Assembly in November 1974, Arafat won official UN observer status and international recognition for Palestinian self-determination."
+          },
+          {
+            "tab_label": "2. Litani (1978)",
+            "title": "‘Fatahland’ Raids, Operation Litani & UNIFIL",
+            "dates": "1974–1978 • Southern Lebanon",
+            "badge": "UNIFIL Deployed",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "PLO Base",
+                "value": "Southern Lebanon (‘Fatahland’)"
+              },
+              {
+                "label": "1978 Incursion",
+                "value": "Israel’s Operation Litani"
+              },
+              {
+                "label": "UN Buffer",
+                "value": "UNIFIL Peacekeepers Deployed"
+              }
+            ],
+            "takeaway": "Ongoing PLO cross-border rocket and guerrilla raids from southern Lebanon (‘Fatahland’) provoked Israel’s 1978 Operation Litani incursion and the deployment of UNIFIL peacekeepers."
+          },
+          {
+            "tab_label": "3. June 1982 Invasion",
+            "title": "Ariel Sharon Launches Operation Peace for Galilee",
+            "dates": "June 1982 • Border to Beirut",
+            "badge": "10-Week Beirut Siege",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Architect",
+                "value": "Defence Minister Ariel Sharon"
+              },
+              {
+                "label": "Stated Limit",
+                "value": "Push PLO 40 km North of Border"
+              },
+              {
+                "label": "Actual Advance",
+                "value": "10-Week Siege of Beirut"
+              }
+            ],
+            "takeaway": "Intended to push PLO forces 40 kilometres north of Israel’s border, Ariel Sharon’s armoured invasion advanced far beyond cabinet limits to lay siege to Beirut for ten weeks."
+          },
+          {
+            "tab_label": "4. Tunis Exile (Aug 1982)",
+            "title": "US-Mediated Sea Evacuation of 14,000 PLO Fighters",
+            "dates": "August 1982 • Beirut to Tunis",
+            "badge": "14,000 Evacuated",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Mediator",
+                "value": "United States Diplomacy"
+              },
+              {
+                "label": "Evacuated Force",
+                "value": "Arafat & 14,000 PLO Fighters"
+              },
+              {
+                "label": "New HQ",
+                "value": "Distant Sea Exile in Tunis"
+              }
+            ],
+            "takeaway": "In August 1982, US mediation ended the Beirut siege by evacuating Yasser Arafat and 14,000 PLO fighters by sea to distant exile in Tunis."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_11",
+      "block_index": 0,
+      "expected_heading": "The Madrid Peace Conference",
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "Interactive Diplomatic Leverage",
+        "title": "Road to Madrid (1989–Oct 1991): How the Soviet Collapse & Gulf War Reshaped Leverage",
+        "default_index": 2,
+        "caption": "Click each geopolitical shift from 1989 to October 1991 to see how Washington gained unrivalled Middle East leverage to convene the historic Madrid Peace Conference.",
+        "eras": [
+          {
+            "year": "Pre-1991",
+            "headline": "Cold War Patronage Sustains Diplomatic Deadlock",
+            "color": "#ef4444",
+            "summary": "Before 1991, Soviet superpower arms, UN diplomatic vetoes, and financial patronage shielded Arab confrontation states, while Gulf Arab states funded the PLO.",
+            "pillars": [
+              {
+                "actor": "United States Diplomacy",
+                "share": 40,
+                "status": "Balanced by Moscow in Region",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Soviet Patronage & Arab Hardliners",
+                "share": 35,
+                "status": "Arms, Vetoes & Financial Aid",
+                "color": "#ef4444"
+              },
+              {
+                "actor": "PLO (Gulf-Funded Bargaining)",
+                "share": 25,
+                "status": "Backed by Saudi & Kuwaiti Aid",
+                "color": "#f59e0b"
+              }
+            ]
+          },
+          {
+            "year": "1990–91",
+            "headline": "Gulf War Victory, Soviet Collapse & Arafat’s Miscalculation",
+            "color": "#f59e0b",
+            "summary": "The 1991 Soviet collapse ended Moscow’s patronage, US Gulf War victory left Washington dominant, and Arafat’s support for Iraq’s Saddam Hussein cost the PLO hundreds of millions in Saudi and Kuwaiti funding.",
+            "pillars": [
+              {
+                "actor": "United States (Bush & Baker)",
+                "share": 80,
+                "status": "Unrivalled Post-Gulf War Leverage",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Soviet Patronage",
+                "share": 5,
+                "status": "1991 Collapse Ends Arms & Vetoes",
+                "color": "#64748b"
+              },
+              {
+                "actor": "PLO (Bankrupted After Backing Iraq)",
+                "share": 15,
+                "status": "Lost Gulf Aid; Desperate for Talks",
+                "color": "#f59e0b"
+              }
+            ]
+          },
+          {
+            "year": "Oct 1991",
+            "headline": "Madrid Peace Conference Breaks 43-Year Taboo",
+            "color": "#10b981",
+            "summary": "President George H. W. Bush and James Baker brought Israeli, Syrian, Lebanese, and joint Jordanian-Palestinian delegations face to face in Madrid—breaking 43 years of taboos despite PM Yitzhak Shamir’s hardline Likud stance.",
+            "pillars": [
+              {
+                "actor": "US Co-Sponsors (Bush & Baker)",
+                "share": 55,
+                "status": "Convene Face-to-Face Talks",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Israel (Shamir’s Likud Stance)",
+                "share": 30,
+                "status": "Attends Talks; Stalls Land Deals",
+                "color": "#10b981"
+              },
+              {
+                "actor": "Arab & Jordanian-Palestinian Teams",
+                "share": 15,
+                "status": "43-Year Direct Talk Taboo Broken",
+                "color": "#f59e0b"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

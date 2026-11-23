@@ -19,7 +19,7 @@ STRICT RULE: You are STRICTLY FORBIDDEN from using the name of the user's school
 2. **Zero-Prompt Tablet Handoff:** Whenever the user opens with `"hi"`, `"hey"`, `"where are we?"`, or `"continue"`, immediately read `.agents/task.md` and the latest git commit, then reply with a concise 3-bullet briefing: (a) Exact project status, (b) Last completed work, and (c) Single recommended next step.
 3. **High-Signal Output Standard & Bold AI Model Guidance (Zero Clutter):**
    - Finish turns with a concise summary, clickable `file://` links, and **at most ONE single, clear next step** (1–2 sentences).
-   - **Mandatory Bold AI Model Guidance:** Whenever doing or proposing improvements, ALWAYS guide the user **in BOLD** on which AI model to select for the task/next step (e.g., `**Recommended AI Model: Gemini 4 Carbon (Medium)**` for multi-file curriculum, specification, and print-geometry work; `**Recommended AI Model: Gemini 4 Carbon (High)**` for deep architectural debugging; `**Recommended AI Model: Gemini 3.8 Flash (High)**` for fast single-file lookups/edits).
+   - **Mandatory Bold AI Model Guidance:** Whenever doing or proposing improvements, ALWAYS guide the user **in BOLD** on which AI model to select for the task/next step (e.g., `**Recommended AI Model: Gemini 4 Neon (Medium)**` for everyday single-file edits, UI tweaks, questions, and publishing; `**Recommended AI Model: Gemini 4 Carbon (Medium)**` for multi-file curriculum, specification, and print-geometry work; `**Recommended AI Model: Gemini 4 Carbon (High)**` for deep architectural debugging or large parallel `/swarm` sweeps).
    - **Strict Ban on Rollout Compass Churn & 3-Recommendation Dumps:** Never paste the "Workbook Rollout Compass" block or multi-option essay dumps at the end of turns unless the user explicitly asks for strategy/options. Progress lives in `WORKBOOK_STATUS_AND_ROLLOUT_TRACKER.md` and `.agents/task.md`.
 4. **Strict Unit Containment & Data Loss Prevention:**
    - Unless asked to work globally, do NOT modify files in units outside the user's current target unit. Wrap shared-script unit overrides in explicit `unitId` checks when needed.
@@ -36,7 +36,7 @@ Before executing any specialized publishing or generation workflow, read the mat
 - **KS3 Unit Orchestration & Stage Sync:** `.agents/skills/ks3-publishing-engine/SKILL.md`
 - **KS3 & GCSE Pupil Workbooks + Edexcel Tariffs:** `.agents/skills/pupil-workbook-engine/SKILL.md`
 - **Master Knowledge Retrieval Companions ("Quiz Packs"):** `.agents/skills/retrieval-companion-engine/SKILL.md`
-- **KS2 & KS3 Literary Companions (3-Voice Read-Aloud Studio):** `.agents/skills/literary-companion-engine/SKILL.md`
+- **KS2 & KS3 Literary Companions (3-Voice Read-Aloud Studio & Optional Saddle-Stitch Anthology PDFs):** `.agents/skills/literary-companion-engine/SKILL.md`
 - **Quiz & Vocab Injection:** `.agents/skills/auto-quiz-generator/SKILL.md` & `.agents/skills/auto-vocab-generator/SKILL.md`
 - **Pre-Production Security, Bundle & Asset Hygiene:** `.agents/skills/production-release-gate/SKILL.md`
 

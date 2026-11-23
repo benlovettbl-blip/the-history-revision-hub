@@ -851,7 +851,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "Civil rights activist and later Congressman, writing in his memoir *Walking with the Wind: A Memoir of the Movement* (1998) about growing up in rural Troy, Alabama. **Hinge Question:** How does John Lewis's childhood experience illustrate the difference between the physical enforcement of segregation and its psychological impact on young Black Americans?"
+        "source_context": "Civil rights activist and later Congressman, writing in his memoir *Walking with the Wind: A Memoir of the Movement* (1998) about growing up in rural Troy, Alabama. **Hinge Question:** How does John Lewis's childhood experience illustrate the difference between the physical enforcement of segregation and its psychological impact on young Black Americans?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Plessy, Jim Crow & Voter Disenfranchisement (Stages 1–3) (50 mins)",
+            "focus": "Plessy, Jim Crow & Voter Disenfranchisement (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Baseline Do Now retrieving US federal vs state powers, post-Civil War Reconstruction Amendments (13th, 14th, 15th), and Second World War Allied anti-fascism.",
+                "instruction": "Baseline Do Now retrieving US federal vs state powers, post-Civil War Reconstruction Amendments (13th, 14th, 15th), and Second World War Allied anti-fascism."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain de jure vs de facto segregation, trace the 1896 Plessy v. Ferguson \"separate but equal\" ruling, and map how poll taxes and literacy tests suppressed Southern Black voters.",
+                "instruction": "Explain de jure vs de facto segregation, trace the 1896 Plessy v. Ferguson \"separate but equal\" ruling, and map how poll taxes and literacy tests suppressed Southern Black voters."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 aloud and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 aloud and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (1952 Mississippi State Code §7785) and Source B (\"Colored Waiting Room\" sign) to test how state law policed everyday life.",
+                "instruction": "Interrogate Source A (1952 Mississippi State Code §7785) and Source B (\"Colored Waiting Room\" sign) to test how state law policed everyday life."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: NAACP Litigation, CORE & Paper 3 Inference / Causation (Stages 4–5) (50 mins)",
+            "focus": "NAACP Litigation, CORE & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "6-question retrieval check on Lesson 1 (Plessy v. Ferguson, 17 Jim Crow states, poll taxes, literacy tests, and 15th Amendment loopholes).",
+                "instruction": "6-question retrieval check on Lesson 1 (Plessy v. Ferguson, 17 Jim Crow states, poll taxes, literacy tests, and 15th Amendment loopholes)."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5, complete Verso boxes 4–5, and evaluate Sources C–E (Amzie Moore’s 1954 Mississippi voter deposition, Thurgood Marshall’s Cold War address, and the 1953 school segregation map).",
+                "instruction": "Read Stages 4–5, complete Verso boxes 4–5, and evaluate Sources C–E (Amzie Moore’s 1954 Mississippi voter deposition, Thurgood Marshall’s Cold War address, and the 1953 school segregation map)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences from Source A (pairing each inference with a verbatim quote) and Q2 [12m] Explain why exercising civil rights was difficult in the early 1950s.",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences from Source A (pairing each inference with a verbatim quote) and Q2 [12m] Explain why exercising civil rights was difficult in the early 1950s."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Self-assess against the Grade 9 benchmark tiers, highlighting two distinct inferences in Q1 and causal links back to the question stem in Q2.",
+                "instruction": "Self-assess against the Grade 9 benchmark tiers, highlighting two distinct inferences in Q1 and causal links back to the question stem in Q2."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "What was the position of Black Americans in the early 1950s?",
@@ -933,27 +1004,37 @@
         {
           "term": "Jim Crow Laws",
           "def": "State and local statutory laws in the American South mandating racial segregation in all public facilities, schools, and transportation.",
-          "definition": "State and local statutory laws in the American South mandating racial segregation in all public facilities, schools, and transportation."
+          "definition": "State and local statutory laws in the American South mandating racial segregation in all public facilities, schools, and transportation.",
+          "phonetic": "JIM KROH LAWZ",
+          "pronunciation": "JIM KROH LAWZ"
         },
         {
           "term": "Plessy v. Ferguson",
           "def": "The 1896 Supreme Court ruling establishing the 'separate but equal' legal doctrine justifying racial segregation.",
-          "definition": "The 1896 Supreme Court ruling establishing the 'separate but equal' legal doctrine justifying racial segregation."
+          "definition": "The 1896 Supreme Court ruling establishing the 'separate but equal' legal doctrine justifying racial segregation.",
+          "phonetic": "PLES-ee ver-sus FUR-guh-sun",
+          "pronunciation": "PLES-ee ver-sus FUR-guh-sun"
         },
         {
           "term": "NAACP",
           "def": "The National Association for the Advancement of Colored People, founded in 1909 to dismantle segregation through federal court challenges.",
-          "definition": "The National Association for the Advancement of Colored People, founded in 1909 to dismantle segregation through federal court challenges."
+          "definition": "The National Association for the Advancement of Colored People, founded in 1909 to dismantle segregation through federal court challenges.",
+          "phonetic": "en-dub-ul-ay-see-PEE",
+          "pronunciation": "en-dub-ul-ay-see-PEE"
         },
         {
           "term": "CORE",
           "def": "Congress of Racial Equality, an interracial civil rights group formed in 1942 that pioneered non-violent direct action and sit-ins.",
-          "definition": "Congress of Racial Equality, an interracial civil rights group formed in 1942 that pioneered non-violent direct action and sit-ins."
+          "definition": "Congress of Racial Equality, an interracial civil rights group formed in 1942 that pioneered non-violent direct action and sit-ins.",
+          "phonetic": "KAWR",
+          "pronunciation": "KAWR"
         },
         {
           "term": "Disenfranchisement",
           "def": "The systematic denial of voting rights to Black citizens through poll taxes, literacy tests, and violent intimidation.",
-          "definition": "The systematic denial of voting rights to Black citizens through poll taxes, literacy tests, and violent intimidation."
+          "definition": "The systematic denial of voting rights to Black citizens through poll taxes, literacy tests, and violent intimidation.",
+          "phonetic": "dis-in-FRAN-chize-munt",
+          "pronunciation": "dis-in-FRAN-chize-munt"
         }
       ],
       "narrative_blocks": [
@@ -2565,7 +2646,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "One of the 'Little Rock Nine' students, recalling her attempt to enter Central High School in Arkansas on September 4, 1957. **Hinge Question:** Elizabeth Eckford was just 15 years old. Why do you think school desegregation provoked such intense personal anger from ordinary white citizens?"
+        "source_context": "One of the 'Little Rock Nine' students, recalling her attempt to enter Central High School in Arkansas on September 4, 1957. **Hinge Question:** Elizabeth Eckford was just 15 years old. Why do you think school desegregation provoked such intense personal anger from ordinary white citizens?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Brown v. Topeka, Massive Resistance & Faubus at Little Rock (Stages 1–3) (50 mins)",
+            "focus": "Brown v. Topeka, Massive Resistance & Little Rock (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 1.1 (Plessy v. Ferguson, poll taxes, Thurgood Marshall’s NAACP court strategy, and CORE’s early sit-ins).",
+                "instruction": "Spaced retrieval Do Now on KT 1.1 (Plessy v. Ferguson, poll taxes, Thurgood Marshall’s NAACP court strategy, and CORE’s early sit-ins)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Unpack Chief Justice Earl Warren’s unanimous May 1954 Brown ruling, the weakness of Brown II (\"all deliberate speed\"), the 1956 Southern Manifesto, and Governor Orval Faubus blocking the Little Rock Nine.",
+                "instruction": "Unpack Chief Justice Earl Warren’s unanimous May 1954 Brown ruling, the weakness of Brown II (\"all deliberate speed\"), the 1956 Southern Manifesto, and Governor Orval Faubus blocking the Little Rock Nine."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Warren’s Brown v. Board opinion) alongside Source B (the Southern Manifesto signed by 101 congressmen) to diagnose why federal rulings met state obstruction.",
+                "instruction": "Scrutinise Source A (Warren’s Brown v. Board opinion) alongside Source B (the Southern Manifesto signed by 101 congressmen) to diagnose why federal rulings met state obstruction."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: The 101st Airborne, The Lost Year & Paper 3 Exam Practice (Stages 4–5) (50 mins)",
+            "focus": "101st Airborne, The Lost Year & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check contrasting Plessy (1896) with Brown (1954), the Southern Manifesto, and Faubus’s deployment of the Arkansas National Guard.",
+                "instruction": "Retrieval check contrasting Plessy (1896) with Brown (1954), the Southern Manifesto, and Faubus’s deployment of the Arkansas National Guard."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5, complete Verso boxes 4–5, and interrogate Sources C–E (Faubus’s 2 Sept 1957 broadcast, Elizabeth Eckford facing the mob, and Eisenhower deploying the 101st Airborne) before Faubus’s 1958–59 \"Lost Year\" school closures.",
+                "instruction": "Read Stages 4–5, complete Verso boxes 4–5, and interrogate Sources C–E (Faubus’s 2 Sept 1957 broadcast, Elizabeth Eckford facing the mob, and Eisenhower deploying the 101st Airborne) before Faubus’s 1958–59 \"Lost Year\" school closures."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on 1957 school opposition and Q2 [12m] Explain why Brown v. Board (1954) was a turning point in the struggle for civil rights.",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on 1957 school opposition and Q2 [12m] Explain why Brown v. Board (1954) was a turning point in the struggle for civil rights."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-check Q2 paragraphs using DIRT highlighters to verify three distinct thematic reasons (constitutional shift, psychological boost, federal intervention catalyst) without narrative drift.",
+                "instruction": "Peer-check Q2 paragraphs using DIRT highlighters to verify three distinct thematic reasons (constitutional shift, psychological boost, federal intervention catalyst) without narrative drift."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "How did developments in education challenge segregation (1954–57)?",
@@ -2645,27 +2797,37 @@
         {
           "term": "Brown v. Board of Education",
           "def": "The landmark 1954 Supreme Court decision ruling unanimously that segregated public schools were inherently unequal and unconstitutional.",
-          "definition": "The landmark 1954 Supreme Court decision ruling unanimously that segregated public schools were inherently unequal and unconstitutional."
+          "definition": "The landmark 1954 Supreme Court decision ruling unanimously that segregated public schools were inherently unequal and unconstitutional.",
+          "phonetic": "BROWN ver-sus BAWRD uv ed-yoo-KAY-shun",
+          "pronunciation": "BROWN ver-sus BAWRD uv ed-yoo-KAY-shun"
         },
         {
           "term": "Earl Warren",
           "def": "The progressive US Supreme Court Chief Justice who orchestrated the unanimous 9-0 ruling striking down school segregation.",
-          "definition": "The progressive US Supreme Court Chief Justice who orchestrated the unanimous 9-0 ruling striking down school segregation."
+          "definition": "The progressive US Supreme Court Chief Justice who orchestrated the unanimous 9-0 ruling striking down school segregation.",
+          "phonetic": "URL WOR-un",
+          "pronunciation": "URL WOR-un"
         },
         {
           "term": "Orval Faubus",
           "def": "The segregationist Governor of Arkansas who deployed the state National Guard to block nine Black students from Central High School.",
-          "definition": "The segregationist Governor of Arkansas who deployed the state National Guard to block nine Black students from Central High School."
+          "definition": "The segregationist Governor of Arkansas who deployed the state National Guard to block nine Black students from Central High School.",
+          "phonetic": "AWR-vul FAW-bus",
+          "pronunciation": "AWR-vul FAW-bus"
         },
         {
           "term": "101st Airborne Division",
           "def": "Elite US Army paratroopers deployed by President Eisenhower to Little Rock to escort the Little Rock Nine and enforce federal court orders.",
-          "definition": "Elite US Army paratroopers deployed by President Eisenhower to Little Rock to escort the Little Rock Nine and enforce federal court orders."
+          "definition": "Elite US Army paratroopers deployed by President Eisenhower to Little Rock to escort the Little Rock Nine and enforce federal court orders.",
+          "phonetic": "wun-oh-FURST AIR-bawn dih-VIZH-un",
+          "pronunciation": "wun-oh-FURST AIR-bawn dih-VIZH-un"
         },
         {
           "term": "The Lost Year",
           "def": "The 1958–59 school year when Governor Faubus closed all Little Rock public high schools to prevent court-ordered desegregation.",
-          "definition": "The 1958–59 school year when Governor Faubus closed all Little Rock public high schools to prevent court-ordered desegregation."
+          "definition": "The 1958–59 school year when Governor Faubus closed all Little Rock public high schools to prevent court-ordered desegregation.",
+          "phonetic": "thuh LOST YEER",
+          "pronunciation": "thuh LOST YEER"
         }
       ],
       "narrative_blocks": [
@@ -4224,7 +4386,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "President of the Women's Political Council (WPC), recalling the night of Rosa Parks's arrest in December 1955. **Hinge Question:** Rosa Parks's arrest is famous, but Jo Ann Robinson's account shows the massive organization behind the scenes. How does this source challenge the idea that the boycott was just a spontaneous event?"
+        "source_context": "President of the Women's Political Council (WPC), recalling the night of Rosa Parks's arrest in December 1955. **Hinge Question:** Rosa Parks's arrest is famous, but Jo Ann Robinson's account shows the massive organization behind the scenes. How does this source challenge the idea that the boycott was just a spontaneous event?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Rosa Parks, the MIA & the 381-Day Carpool (Stages 1–3) (50 mins)",
+            "focus": "Rosa Parks, the MIA & the 381-Day Carpool (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now revisiting KT 1.1–1.2 (Jim Crow transport codes, NAACP legal action, Brown v. Topeka, and Little Rock Central High).",
+                "instruction": "Spaced retrieval Do Now revisiting KT 1.1–1.2 (Jim Crow transport codes, NAACP legal action, Brown v. Topeka, and Little Rock Central High)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace Rosa Parks’s 1 Dec 1955 arrest on James Blake’s bus, Jo Ann Robinson’s overnight Women’s Political Council flyers, the founding of the MIA under Martin Luther King Jr., and the 300-car volunteer carpool.",
+                "instruction": "Trace Rosa Parks’s 1 Dec 1955 arrest on James Blake’s bus, Jo Ann Robinson’s overnight Women’s Political Council flyers, the founding of the MIA under Martin Luther King Jr., and the 300-car volunteer carpool."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Parks’s police arrest docket) and Source B (Robinson’s 2 Dec 1955 WPC leaflet) to test whether Montgomery began from above or from grassroots women’s networks.",
+                "instruction": "Compare Source A (Parks’s police arrest docket) and Source B (Robinson’s 2 Dec 1955 WPC leaflet) to test whether Montgomery began from above or from grassroots women’s networks."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Browder v. Gayle & Paper 3 Section B Interpretations (Stages 4–5) (50 mins)",
+            "focus": "Browder v. Gayle & Paper 3 Interpretations Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Rosa Parks, the WPC, MIA leadership, and how 40,000 Black commuters sustained the boycott economically.",
+                "instruction": "Retrieval check on Rosa Parks, the WPC, MIA leadership, and how 40,000 Black commuters sustained the boycott economically."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Browder v. Gayle Supreme Court ruling and 20 Dec 1956 integration), examine Sources C–E, and contrast Interpretation 1 (Danielle McGuire on working-class Black women) against Interpretation 2 (David Lewis on King’s moral leadership and federal litigation).",
+                "instruction": "Read Stages 4–5 (Browder v. Gayle Supreme Court ruling and 20 Dec 1956 integration), examine Sources C–E, and contrast Interpretation 1 (Danielle McGuire on working-class Black women) against Interpretation 2 (David Lewis on King’s moral leadership and federal litigation)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B practice: Q3(b) [4m] Main Difference, Q3(c) [4m] Why Interpretations Differ, and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 on why the Montgomery Bus Boycott succeeded?",
+                "instruction": "Complete Paper 3 Section B practice: Q3(b) [4m] Main Difference, Q3(c) [4m] Why Interpretations Differ, and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 on why the Montgomery Bus Boycott succeeded?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Audit Q3(d) responses against Edexcel Level 4 criteria: sustained judgement weighing both interpretations with precise contextual own knowledge and accurate SPaG.",
+                "instruction": "Audit Q3(d) responses against Edexcel Level 4 criteria: sustained judgement weighing both interpretations with precise contextual own knowledge and accurate SPaG."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "How did the Montgomery Bus Boycott happen, and why did it succeed?",
@@ -4304,27 +4537,37 @@
         {
           "term": "Rosa Parks",
           "def": "NAACP secretary whose refusal to give up her bus seat to a white man in Montgomery, Alabama sparked the Montgomery Bus Boycott.",
-          "definition": "NAACP secretary whose refusal to give up her bus seat to a white man in Montgomery, Alabama sparked the Montgomery Bus Boycott."
+          "definition": "NAACP secretary whose refusal to give up her bus seat to a white man in Montgomery, Alabama sparked the Montgomery Bus Boycott.",
+          "phonetic": "ROH-zuh PAHKS",
+          "pronunciation": "ROH-zuh PAHKS"
         },
         {
           "term": "Montgomery Improvement Association",
           "def": "The grassroots organization formed by Black community leaders and ministers to organize and direct the Montgomery Bus Boycott.",
-          "definition": "The grassroots organization formed by Black community leaders and ministers to organize and direct the Montgomery Bus Boycott."
+          "definition": "The grassroots organization formed by Black community leaders and ministers to organize and direct the Montgomery Bus Boycott.",
+          "phonetic": "munt-GUM-uh-ree im-PROOV-munt uh-soh-see-AY-shun",
+          "pronunciation": "munt-GUM-uh-ree im-PROOV-munt uh-soh-see-AY-shun"
         },
         {
           "term": "Martin Luther King Jr.",
           "def": "The charismatic 26-year-old Baptist minister elected leader of the MIA, who championed non-violent civil disobedience and Christian love.",
-          "definition": "The charismatic 26-year-old Baptist minister elected leader of the MIA, who championed non-violent civil disobedience and Christian love."
+          "definition": "The charismatic 26-year-old Baptist minister elected leader of the MIA, who championed non-violent civil disobedience and Christian love.",
+          "phonetic": "MAH-tin LOO-thuh KING JOON-yuh",
+          "pronunciation": "MAH-tin LOO-thuh KING JOON-yuh"
         },
         {
           "term": "381 Days",
           "def": "The remarkable duration of the Montgomery Bus Boycott from 5 December 1955 to 20 December 1956, sustained by 40,000 Black citizens.",
-          "definition": "The remarkable duration of the Montgomery Bus Boycott from 5 December 1955 to 20 December 1956, sustained by 40,000 Black citizens."
+          "definition": "The remarkable duration of the Montgomery Bus Boycott from 5 December 1955 to 20 December 1956, sustained by 40,000 Black citizens.",
+          "phonetic": "three HUN-drid und AY-tee-wun DAYZ",
+          "pronunciation": "three HUN-drid und AY-tee-wun DAYZ"
         },
         {
           "term": "Browder v. Gayle",
           "def": "The landmark 1956 Supreme Court ruling declaring that segregated seating on municipal public buses was unconstitutional.",
-          "definition": "The landmark 1956 Supreme Court ruling declaring that segregated seating on municipal public buses was unconstitutional."
+          "definition": "The landmark 1956 Supreme Court ruling declaring that segregated seating on municipal public buses was unconstitutional.",
+          "phonetic": "BROW-duh ver-sus GAYL",
+          "pronunciation": "BROW-duh ver-sus GAYL"
         }
       ],
       "narrative_blocks": [
@@ -6427,7 +6670,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "Emmett Till's great-uncle, testifying at the trial of the killers in Mississippi (September 1955). **Hinge Question:** Why was Mose Wright's action in court—openly accusing and pointing at white men in Mississippi—considered a revolutionary act of bravery in 1955?"
+        "source_context": "Emmett Till's great-uncle, testifying at the trial of the killers in Mississippi (September 1955). **Hinge Question:** Why was Mose Wright's action in court—openly accusing and pointing at white men in Mississippi—considered a revolutionary act of bravery in 1955?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: White Citizens’ Councils, Emmett Till & Jury Impunity (Stages 1–3) (50 mins)",
+            "focus": "White Citizens’ Councils, Emmett Till & Jury Impunity (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now covering KT 1.1–1.3 (disenfranchisement kept juries all-white, Brown v. Topeka, the Southern Manifesto, and Browder v. Gayle).",
+                "instruction": "Spaced retrieval Do Now covering KT 1.1–1.3 (disenfranchisement kept juries all-white, Brown v. Topeka, the Southern Manifesto, and Browder v. Gayle)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain how Robert Patterson’s White Citizens’ Councils waged \"respectable\" economic reprisals alongside the August 1955 murder of 14-year-old Emmett Till, Mamie Till-Mobley’s open-casket funeral, and the Sumner acquittal.",
+                "instruction": "Explain how Robert Patterson’s White Citizens’ Councils waged \"respectable\" economic reprisals alongside the August 1955 murder of 14-year-old Emmett Till, Mamie Till-Mobley’s open-casket funeral, and the Sumner acquittal."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (1959 Little Rock segregationist rally) and Source B (The Chicago Defender on Emmett Till) to assess how Northern media exposure clashed with Deep South impunity.",
+                "instruction": "Interrogate Source A (1959 Little Rock segregationist rally) and Source B (The Chicago Defender on Emmett Till) to assess how Northern media exposure clashed with Deep South impunity."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: KKK Bombings, the 1957 Civil Rights Act & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "KKK Terror, the 1957 Act & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Quick recall check on White Citizens’ Councils, Moses Wright’s courtroom testimony in Sumner, and earlier KT1 federal court victories.",
+                "instruction": "Quick recall check on White Citizens’ Councils, Moses Wright’s courtroom testimony in Sumner, and earlier KT1 federal court victories."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (resurgent KKK dynamite bombings and Dixiecrats watering down the Civil Rights Act of 1957), scrutinise Sources C–E, and compare Interpretations 1 and 2 (violent terror vs institutional political obstruction).",
+                "instruction": "Read Stages 4–5 (resurgent KKK dynamite bombings and Dixiecrats watering down the Civil Rights Act of 1957), scrutinise Sources C–E, and compare Interpretations 1 and 2 (violent terror vs institutional political obstruction)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on 1955 racial terror and Q2 [12m] Explain why white segregationists mounted \"Massive Resistance\" across the South between 1954 and 1960.",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on 1955 racial terror and Q2 [12m] Explain why white segregationists mounted \"Massive Resistance\" across the South between 1954 and 1960."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Model-answer DIRT check: verify each Q2 paragraph explains the political, social, and economic motives behind segregationist defiance rather than merely listing events.",
+                "instruction": "Model-answer DIRT check: verify each Q2 paragraph explains the political, social, and economic motives behind segregationist defiance rather than merely listing events."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did white people in the South resist integration, and how did they do it?",
@@ -6507,27 +6821,37 @@
         {
           "term": "The Southern Manifesto",
           "def": "A 1956 resolution signed by 101 Southern congressmen pledging 'massive resistance' against federal school integration rulings.",
-          "definition": "A 1956 resolution signed by 101 Southern congressmen pledging 'massive resistance' against federal school integration rulings."
+          "definition": "A 1956 resolution signed by 101 Southern congressmen pledging 'massive resistance' against federal school integration rulings.",
+          "phonetic": "thuh SUTH-un man-ih-FES-toh",
+          "pronunciation": "thuh SUTH-un man-ih-FES-toh"
         },
         {
           "term": "White Citizens' Councils",
           "def": "Networks of white business and professional elites formed in 1954 to wage economic warfare and intimidation against civil rights supporters.",
-          "definition": "Networks of white business and professional elites formed in 1954 to wage economic warfare and intimidation against civil rights supporters."
+          "definition": "Networks of white business and professional elites formed in 1954 to wage economic warfare and intimidation against civil rights supporters.",
+          "phonetic": "WYTE SIT-ih-zunz KOWN-sulz",
+          "pronunciation": "WYTE SIT-ih-zunz KOWN-sulz"
         },
         {
           "term": "Ku Klux Klan",
           "def": "A violent white supremacist terrorist organization that revived in the 1950s, using bombings, lynchings, and arson to terrorize activists.",
-          "definition": "A violent white supremacist terrorist organization that revived in the 1950s, using bombings, lynchings, and arson to terrorize activists."
+          "definition": "A violent white supremacist terrorist organization that revived in the 1950s, using bombings, lynchings, and arson to terrorize activists.",
+          "phonetic": "KOO KLUKS KLAN",
+          "pronunciation": "KOO KLUKS KLAN"
         },
         {
           "term": "Dixiecrats",
           "def": "Conservative Southern Democrats who used their congressional seniority and filibusters to block federal civil rights legislation.",
-          "definition": "Conservative Southern Democrats who used their congressional seniority and filibusters to block federal civil rights legislation."
+          "definition": "Conservative Southern Democrats who used their congressional seniority and filibusters to block federal civil rights legislation.",
+          "phonetic": "DIK-see-krats",
+          "pronunciation": "DIK-see-krats"
         },
         {
           "term": "Civil Rights Act of 1957",
           "def": "The first federal civil rights statute passed since 1875, creating a Civil Rights Division in the Justice Department with modest powers.",
-          "definition": "The first federal civil rights statute passed since 1875, creating a Civil Rights Division in the Justice Department with modest powers."
+          "definition": "The first federal civil rights statute passed since 1875, creating a Civil Rights Division in the Justice Department with modest powers.",
+          "phonetic": "SIV-ul RYTES AKT uv nine-teen fif-tee-SEV-un",
+          "pronunciation": "SIV-ul RYTES AKT uv nine-teen fif-tee-SEV-un"
         }
       ],
       "narrative_blocks": [
@@ -8687,7 +9011,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "One of the 'Greensboro Four' student activists, recalling the sit-in on February 1, 1960. **Hinge Question:** How can sitting quietly at a lunch counter be a powerful form of protest? Why was the police officer unable to stop them?"
+        "source_context": "One of the 'Greensboro Four' student activists, recalling the sit-in on February 1, 1960. **Hinge Question:** How can sitting quietly at a lunch counter be a powerful form of protest? Why was the police officer unable to stop them?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Greensboro Sit-Ins, SNCC & the 1961 Freedom Rides (Stages 1–3) (50 mins)",
+            "focus": "Greensboro Sit-Ins, SNCC & the Freedom Rides (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now retrieving KT1 (CORE’s founding, Montgomery non-violence, Browder v. Gayle, White Citizens’ Councils, and the 1957 Civil Rights Act).",
+                "instruction": "Spaced retrieval Do Now retrieving KT1 (CORE’s founding, Montgomery non-violence, Browder v. Gayle, White Citizens’ Councils, and the 1957 Civil Rights Act)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Track the generational shift of 1960–61: the Greensboro Four at Woolworth’s (1 Feb 1960), Ella Baker’s founding of SNCC at Shaw University, and CORE’s May 1961 Freedom Rides testing Boynton v. Virginia.",
+                "instruction": "Track the generational shift of 1960–61: the Greensboro Four at Woolworth’s (1 Feb 1960), Ella Baker’s founding of SNCC at Shaw University, and CORE’s May 1961 Freedom Rides testing Boynton v. Virginia."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Examine Source A (sit-in students enduring lunch-counter abuse) and Source B (SNCC non-violent discipline code) to test why strict restraint was essential for media leverage.",
+                "instruction": "Examine Source A (sit-in students enduring lunch-counter abuse) and Source B (SNCC non-violent discipline code) to test why strict restraint was essential for media leverage."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Anniston, the ICC Order, James Meredith & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Anniston, the ICC Order & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval starter on the Greensboro Four, Ella Baker’s role in SNCC, Boynton v. Virginia, and Little Rock (1957) as a federal precedent.",
+                "instruction": "Retrieval starter on the Greensboro Four, Ella Baker’s role in SNCC, Boynton v. Virginia, and Little Rock (1957) as a federal precedent."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (the Mother’s Day Anniston bus firebombing, Birmingham mob beatings, Robert Kennedy’s Sept 1961 ICC desegregation order, and James Meredith at Ole Miss in 1962) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (the Mother’s Day Anniston bus firebombing, Birmingham mob beatings, Robert Kennedy’s Sept 1961 ICC desegregation order, and James Meredith at Ole Miss in 1962) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on student sit-in discipline and Q2 [12m] Explain why peaceful direct action succeeded in desegregating public facilities between 1960 and 1961 (or Q3a [8m] Utility of Sources B & C).",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on student sit-in discipline and Q2 [12m] Explain why peaceful direct action succeeded in desegregating public facilities between 1960 and 1961 (or Q3a [8m] Utility of Sources B & C)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Consolidate with exemplar DIRT: check that Q2 links grassroots provocation directly to Cold War embarrassment and federal enforcement.",
+                "instruction": "Consolidate with exemplar DIRT: check that Q2 links grassroots provocation directly to Cold War embarrassment and federal enforcement."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
@@ -8767,27 +9162,37 @@
         {
           "term": "Greensboro Sit-Ins",
           "def": "The historic February 1960 lunch-counter sit-ins at Woolworth's in North Carolina that ignited a wave of student direct action across the South.",
-          "definition": "The historic February 1960 lunch-counter sit-ins at Woolworth's in North Carolina that ignited a wave of student direct action across the South."
+          "definition": "The historic February 1960 lunch-counter sit-ins at Woolworth's in North Carolina that ignited a wave of student direct action across the South.",
+          "phonetic": "GREENZ-buh-ruh SIT-inz",
+          "pronunciation": "GREENZ-buh-ruh SIT-inz"
         },
         {
           "term": "SNCC",
           "def": "The Student Nonviolent Coordinating Committee, founded in April 1960 by student activists to organize frontline non-violent direct action.",
-          "definition": "The Student Nonviolent Coordinating Committee, founded in April 1960 by student activists to organize frontline non-violent direct action."
+          "definition": "The Student Nonviolent Coordinating Committee, founded in April 1960 by student activists to organize frontline non-violent direct action.",
+          "phonetic": "SNIK (ess-en-see-see)",
+          "pronunciation": "SNIK (ess-en-see-see)"
         },
         {
           "term": "Freedom Rides",
           "def": "The 1961 integrated bus journeys organized by CORE through the Deep South to enforce federal desegregation of interstate travel.",
-          "definition": "The 1961 integrated bus journeys organized by CORE through the Deep South to enforce federal desegregation of interstate travel."
+          "definition": "The 1961 integrated bus journeys organized by CORE through the Deep South to enforce federal desegregation of interstate travel.",
+          "phonetic": "FREE-dum RYDZ",
+          "pronunciation": "FREE-dum RYDZ"
         },
         {
           "term": "Anniston Bus Bombing",
           "def": "The Mother's Day 1961 attack in Anniston, Alabama, where a white mob firebombed a Freedom Rider bus and beat escaping passengers.",
-          "definition": "The Mother's Day 1961 attack in Anniston, Alabama, where a white mob firebombed a Freedom Rider bus and beat escaping passengers."
+          "definition": "The Mother's Day 1961 attack in Anniston, Alabama, where a white mob firebombed a Freedom Rider bus and beat escaping passengers.",
+          "phonetic": "AN-ih-stun BUS BOM-ing",
+          "pronunciation": "AN-ih-stun BUS BOM-ing"
         },
         {
           "term": "James Meredith",
           "def": "Air Force veteran who became the first Black student admitted to the University of Mississippi in 1962, requiring federal military intervention.",
-          "definition": "Air Force veteran who became the first Black student admitted to the University of Mississippi in 1962, requiring federal military intervention."
+          "definition": "Air Force veteran who became the first Black student admitted to the University of Mississippi in 1962, requiring federal military intervention.",
+          "phonetic": "JAYMZ MEH-ruh-dith",
+          "pronunciation": "JAYMZ MEH-ruh-dith"
         }
       ],
       "narrative_blocks": [
@@ -10397,7 +10802,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "Recalling her experience as an 8-year-old participant in the 'Bloody Sunday' march in Selma, Alabama on March 7, 1965. **Hinge Question:** Given the extreme danger, why do you think civil rights leaders allowed children to march? How did the public reaction to this violence change federal policy?"
+        "source_context": "Recalling her experience as an 8-year-old participant in the 'Bloody Sunday' march in Selma, Alabama on March 7, 1965. **Hinge Question:** Given the extreme danger, why do you think civil rights leaders allowed children to march? How did the public reaction to this violence change federal policy?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Birmingham Project C, the March on Washington & the 1964 Act (Stages 1–3) (50 mins)",
+            "focus": "Birmingham, March on Washington & the 1964 Act (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now drawing on KT 2.1 and KT1 (SNCC sit-ins, Anniston Freedom Ride firebombing, ICC order, and 15th Amendment voter barriers).",
+                "instruction": "Spaced retrieval Do Now drawing on KT 2.1 and KT1 (SNCC sit-ins, Anniston Freedom Ride firebombing, ICC order, and 15th Amendment voter barriers)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain why SCLC targeted Bull Connor in Birmingham (April–May 1963 Children’s Crusade), how televised dogs and firehoses forced Kennedy’s hand, the 250,000-strong March on Washington, and LBJ passing the Civil Rights Act of July 1964.",
+                "instruction": "Explain why SCLC targeted Bull Connor in Birmingham (April–May 1963 Children’s Crusade), how televised dogs and firehoses forced Kennedy’s hand, the 250,000-strong March on Washington, and LBJ passing the Civil Rights Act of July 1964."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (King’s Letter from Birmingham Jail to white clergymen) and Source B (Lincoln Memorial address) on why direct action could no longer \"wait\".",
+                "instruction": "Interrogate Source A (King’s Letter from Birmingham Jail to white clergymen) and Source B (Lincoln Memorial address) on why direct action could no longer \"wait\"."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Selma’s \"Bloody Sunday\", the 1965 Voting Rights Act & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Selma, the 1965 Voting Rights Act & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check contrasting the provisions of the 1957 and 1964 Civil Rights Acts, Bull Connor’s tactics, and why Southern Black voting remained blocked.",
+                "instruction": "Retrieval check contrasting the provisions of the 1957 and 1964 Civil Rights Acts, Bull Connor’s tactics, and why Southern Black voting remained blocked."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (2% Black registration in Dallas County, 7 March 1965 \"Bloody Sunday\" on the Edmund Pettus Bridge, and LBJ signing the 6 August 1965 Voting Rights Act) and evaluate Sources C–E.",
+                "instruction": "Read Stages 4–5 (2% Black registration in Dallas County, 7 March 1965 \"Bloody Sunday\" on the Edmund Pettus Bridge, and LBJ signing the 6 August 1965 Voting Rights Act) and evaluate Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on the 1963 March on Washington and Q2 [12m] Explain why the Civil Rights Act was passed in 1964 (with stretch review of Q3a [8m] Source Utility).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on the 1963 March on Washington and Q2 [12m] Explain why the Civil Rights Act was passed in 1964 (with stretch review of Q3a [8m] Source Utility)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT check against Grade 9 exemplars: ensure Q2 balances grassroots SCLC campaigning, media shock, Kennedy’s assassination, and LBJ’s congressional skill.",
+                "instruction": "DIRT check against Grade 9 exemplars: ensure Q2 balances grassroots SCLC campaigning, media shock, Kennedy’s assassination, and LBJ’s congressional skill."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
@@ -10477,27 +10953,37 @@
         {
           "term": "Eugene 'Bull' Connor",
           "def": "The aggressive segregationist Birmingham Public Safety Commissioner who deployed attack dogs and high-pressure firehoses against peaceful marchers.",
-          "definition": "The aggressive segregationist Birmingham Public Safety Commissioner who deployed attack dogs and high-pressure firehoses against peaceful marchers."
+          "definition": "The aggressive segregationist Birmingham Public Safety Commissioner who deployed attack dogs and high-pressure firehoses against peaceful marchers.",
+          "phonetic": "yoo-JEEN BUL KON-uh",
+          "pronunciation": "yoo-JEEN BUL KON-uh"
         },
         {
           "term": "Children's Crusade",
           "def": "The pivotal May 1963 marches in Birmingham where hundreds of school children marched peacefully and were arrested and attacked by police.",
-          "definition": "The pivotal May 1963 marches in Birmingham where hundreds of school children marched peacefully and were arrested and attacked by police."
+          "definition": "The pivotal May 1963 marches in Birmingham where hundreds of school children marched peacefully and were arrested and attacked by police.",
+          "phonetic": "CHIL-drunz kroo-SAYD",
+          "pronunciation": "CHIL-drunz kroo-SAYD"
         },
         {
           "term": "March on Washington",
           "def": "The historic 28 August 1963 demonstration where 250,000 Americans gathered at the Lincoln Memorial to demand federal civil rights legislation.",
-          "definition": "The historic 28 August 1963 demonstration where 250,000 Americans gathered at the Lincoln Memorial to demand federal civil rights legislation."
+          "definition": "The historic 28 August 1963 demonstration where 250,000 Americans gathered at the Lincoln Memorial to demand federal civil rights legislation.",
+          "phonetic": "MAHCH on WOSH-ing-tun",
+          "pronunciation": "MAHCH on WOSH-ing-tun"
         },
         {
           "term": "16th Street Baptist Church",
           "def": "The Birmingham church bombed by the KKK on 15 September 1963, killing four young Black girls and galvanizing national outrage.",
-          "definition": "The Birmingham church bombed by the KKK on 15 September 1963, killing four young Black girls and galvanizing national outrage."
+          "definition": "The Birmingham church bombed by the KKK on 15 September 1963, killing four young Black girls and galvanizing national outrage.",
+          "phonetic": "SIKS-teenth STREET BAP-tist CHURCH",
+          "pronunciation": "SIKS-teenth STREET BAP-tist CHURCH"
         },
         {
           "term": "Letter from Birmingham Jail",
           "def": "Martin Luther King Jr.'s eloquent moral manifesto defending non-violent direct action and civil disobedience against unjust laws.",
-          "definition": "Martin Luther King Jr.'s eloquent moral manifesto defending non-violent direct action and civil disobedience against unjust laws."
+          "definition": "Martin Luther King Jr.'s eloquent moral manifesto defending non-violent direct action and civil disobedience against unjust laws.",
+          "phonetic": "LET-uh frum BUR-ming-ham JAYL",
+          "pronunciation": "LET-uh frum BUR-ming-ham JAYL"
         }
       ],
       "narrative_blocks": [
@@ -12036,7 +12522,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "Communications Secretary for the Black Panther Party, interviewed in 1968 about the philosophy of Black Power and self-defense. **Hinge Question:** How did the Black Power philosophy shift the goal of the movement from 'integration' to 'self-determination'? What were the potential benefits and risks of this new approach?"
+        "source_context": "Communications Secretary for the Black Panther Party, interviewed in 1968 about the philosophy of Black Power and self-defense. **Hinge Question:** How did the Black Power philosophy shift the goal of the movement from 'integration' to 'self-determination'? What were the potential benefits and risks of this new approach?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Malcolm X, Stokely Carmichael & Founding the Black Panthers (Stages 1–3) (50 mins)",
+            "focus": "Malcolm X, Black Power & the Black Panthers (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 2.1–2.2 and KT1 (de jure vs de facto segregation, SNCC’s early non-violence, 1964 Civil Rights Act, and Selma’s Voting Rights Act).",
+                "instruction": "Spaced retrieval Do Now on KT 2.1–2.2 and KT1 (de jure vs de facto segregation, SNCC’s early non-violence, 1964 Civil Rights Act, and Selma’s Voting Rights Act)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Contrast Martin Luther King Jr.’s integrationism with Malcolm X and the Nation of Islam, trace Stokely Carmichael’s June 1966 \"Black Power\" turn on the Meredith March, and introduce Huey Newton and Bobby Seale founding the Black Panthers in Oakland (Oct 1966).",
+                "instruction": "Contrast Martin Luther King Jr.’s integrationism with Malcolm X and the Nation of Islam, trace Stokely Carmichael’s June 1966 \"Black Power\" turn on the Meredith March, and introduce Huey Newton and Bobby Seale founding the Black Panthers in Oakland (Oct 1966)."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Muhammad Speaks front page) and Source B (Malcolm X’s April 1964 \"The Ballot or the Bullet\" speech) to distinguish self-defence from unprovoked violence.",
+                "instruction": "Scrutinise Source A (Muhammad Speaks front page) and Source B (Malcolm X’s April 1964 \"The Ballot or the Bullet\" speech) to distinguish self-defence from unprovoked violence."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Panther Survival Programmes, 1968 Mexico Olympics & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Panther Programmes, Mexico Olympics & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Malcolm X’s critique of King, the 1966 March Against Fear, and why Northern urban Black voters felt untouched by Southern desegregation laws.",
+                "instruction": "Retrieval check on Malcolm X’s critique of King, the 1966 March Against Fear, and why Northern urban Black voters felt untouched by Southern desegregation laws."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Black Panther Ten-Point Platform, Free Breakfast for Children clinics, and Tommie Smith and John Carlos’s podium salute at the Oct 1968 Mexico City Olympics) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (Black Panther Ten-Point Platform, Free Breakfast for Children clinics, and Tommie Smith and John Carlos’s podium salute at the Oct 1968 Mexico City Olympics) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on the 1968 Olympic protest, Q2 [12m] Explain why the Voting Rights Act was passed in 1965 (spaced exam tariff), or Q3(a) [8m] Utility of Sources B & C on Black nationalism.",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on the 1968 Olympic protest, Q2 [12m] Explain why the Voting Rights Act was passed in 1965 (spaced exam tariff), or Q3(a) [8m] Utility of Sources B & C on Black nationalism."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Self-audit Q3(a) / Q2 answers with highlighters to verify provenance analysis (audience and purpose of Cleveland and Mississippi speeches) alongside contextual own knowledge.",
+                "instruction": "Self-audit Q3(a) / Q2 answers with highlighters to verify provenance analysis (audience and purpose of Cleveland and Mississippi speeches) alongside contextual own knowledge."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "What was the Black Power movement, and how did it differ from non-violent protests?",
@@ -12115,27 +12672,39 @@
       "vocab": [
         {
           "term": "Malcolm X",
-          "def": "Prominent spokesperson for the Nation of Islam until 1964 who rejected integration in favour of Black pride, separate Black institutions, and armed self-defence against racist violence."
+          "def": "Prominent spokesperson for the Nation of Islam until 1964 who rejected integration in favour of Black pride, separate Black institutions, and armed self-defence against racist violence.",
+          "phonetic": "MAL-kum EKS",
+          "pronunciation": "MAL-kum EKS"
         },
         {
           "term": "The Ballot or the Bullet",
-          "def": "Malcolm X's famous April 1964 speech warning American politicians that Black citizens would demand full voting rights or be forced to defend their communities."
+          "def": "Malcolm X's famous April 1964 speech warning American politicians that Black citizens would demand full voting rights or be forced to defend their communities.",
+          "phonetic": "thuh BAL-ut aw thuh BUL-it",
+          "pronunciation": "thuh BAL-ut aw thuh BUL-it"
         },
         {
           "term": "Stokely Carmichael",
-          "def": "Chairman of SNCC from 1966 who popularised the slogan 'Black Power' during the March Against Fear in Mississippi after growing frustrated with slow non-violent progress."
+          "def": "Chairman of SNCC from 1966 who popularised the slogan 'Black Power' during the March Against Fear in Mississippi after growing frustrated with slow non-violent progress.",
+          "phonetic": "STOHK-lee kah-MY-kul",
+          "pronunciation": "STOHK-lee kah-MY-kul"
         },
         {
           "term": "Black Power",
-          "def": "Movement emerging in the mid-1960s demanding Black political self-determination, cultural pride, economic control of Black neighbourhoods, and protection against police brutality."
+          "def": "Movement emerging in the mid-1960s demanding Black political self-determination, cultural pride, economic control of Black neighbourhoods, and protection against police brutality.",
+          "phonetic": "BLAK POW-uh",
+          "pronunciation": "BLAK POW-uh"
         },
         {
           "term": "Black Panther Party",
-          "def": "Militant organisation founded by Huey Newton and Bobby Seale in Oakland, California in October 1966 that combined armed police-watch patrols with community survival programmes such as free breakfasts for children."
+          "def": "Militant organisation founded by Huey Newton and Bobby Seale in Oakland, California in October 1966 that combined armed police-watch patrols with community survival programmes such as free breakfasts for children.",
+          "phonetic": "BLAK PAN-thuh PAH-tee",
+          "pronunciation": "BLAK PAN-thuh PAH-tee"
         },
         {
           "term": "1968 Mexico Olympics",
-          "def": "International sporting stage where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the 200m medal podium to protest racial injustice and poverty in America."
+          "def": "International sporting stage where US sprinters Tommie Smith and John Carlos raised black-gloved fists on the 200m medal podium to protest racial injustice and poverty in America.",
+          "phonetic": "nine-teen siks-tee-AYT MEK-sih-koh uh-LIM-piks",
+          "pronunciation": "nine-teen siks-tee-AYT MEK-sih-koh uh-LIM-piks"
         }
       ],
       "narrative_blocks": [
@@ -13681,7 +14250,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "An anonymous resident of Watts, Los Angeles, interviewed during the Watts Uprising in August 1965. **Hinge Question:** According to this resident, why did federal laws like the Civil Rights Act fail to prevent urban riots? What does this tell us about the limits of legal rights when economic misery remains?"
+        "source_context": "An anonymous resident of Watts, Los Angeles, interviewed during the Watts Uprising in August 1965. **Hinge Question:** According to this resident, why did federal laws like the Civil Rights Act fail to prevent urban riots? What does this tell us about the limits of legal rights when economic misery remains?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Watts, Chicago & the 1967 \"Long, Hot Summer\" Riots (Stages 1–3) (50 mins)",
+            "focus": "Watts, Chicago & the 1967 Urban Riots (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now revisiting KT 2.2–2.3 (1964/1965 Acts, de facto Northern segregation, Malcolm X, Stokely Carmichael, and the Black Panthers).",
+                "instruction": "Spaced retrieval Do Now revisiting KT 2.2–2.3 (1964/1965 Acts, de facto Northern segregation, Malcolm X, Stokely Carmichael, and the Black Panthers)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Examine why Northern and Western ghettos erupted days after the Voting Rights Act: the August 1965 Watts uprising (34 deaths), King’s stalled 1966 Chicago Freedom Movement against redlining, and the 1967 Newark and Detroit riots.",
+                "instruction": "Examine why Northern and Western ghettos erupted days after the Voting Rights Act: the August 1965 Watts uprising (34 deaths), King’s stalled 1966 Chicago Freedom Movement against redlining, and the 1967 Newark and Detroit riots."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Watts resident Tommy Jacquette) with Source B (Feb 1968 Kerner Commission warning of \"two societies, one black, one white—separate and unequal\").",
+                "instruction": "Compare Source A (Watts resident Tommy Jacquette) with Source B (Feb 1968 Kerner Commission warning of \"two societies, one black, one white—separate and unequal\")."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: King’s Assassination, the 1968 Fair Housing Act & Paper 3 Section B (Stages 4–5) (50 mins)",
+            "focus": "King’s Assassination, Fair Housing & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Marquette Frye’s arrest in Watts, Chicago open-housing marches, Detroit 1967, and the Kerner Commission’s root-cause verdict.",
+                "instruction": "Retrieval check on Marquette Frye’s arrest in Watts, Chicago open-housing marches, Detroit 1967, and the Kerner Commission’s root-cause verdict."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (4 April 1968 assassination of King in Memphis, the 11 April Fair Housing Act, and Resurrection City), inspect Sources C–E, and contrast Interpretation 1 (Harvard Sitkoff on economic ghetto despair) with Interpretation 2 (Clayborne Carson on Black Power militancy).",
+                "instruction": "Read Stages 4–5 (4 April 1968 assassination of King in Memphis, the 11 April Fair Housing Act, and Resurrection City), inspect Sources C–E, and contrast Interpretation 1 (Harvard Sitkoff on economic ghetto despair) with Interpretation 2 (Clayborne Carson on Black Power militancy)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] testing how far you agree with Interpretation 2 on the causes of the 1965–67 urban riots (or Workbook Q2 [12m] on Black Power growth).",
+                "instruction": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] testing how far you agree with Interpretation 2 on the causes of the 1965–67 urban riots (or Workbook Q2 [12m] on Black Power growth)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-review Q3(b)–(d): check paired quotes in Q3(b), source/focus weighting in Q3(c), and balanced evaluation of Sitkoff vs Carson in Q3(d).",
+                "instruction": "Peer-review Q3(b)–(d): check paired quotes in Q3(b), source/focus weighting in Q3(c), and balanced evaluation of Sitkoff vs Carson in Q3(d)."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did riots break out in American cities between 1965 and 1968?",
@@ -13760,23 +14400,33 @@
       "vocab": [
         {
           "term": "Watts Riots",
-          "def": "Six-day uprising in the Watts district of Los Angeles in August 1965—sparked by a white highway patrol arrest—leaving 34 people dead, over 1,000 injured, and $40 million in damage."
+          "def": "Six-day uprising in the Watts district of Los Angeles in August 1965—sparked by a white highway patrol arrest—leaving 34 people dead, over 1,000 injured, and $40 million in damage.",
+          "phonetic": "WOTS RY-uts",
+          "pronunciation": "WOTS RY-uts"
         },
         {
           "term": "Long, Hot Summers",
-          "def": "Wave of over 150 urban riots across northern and western US cities between 1965 and 1967—most severely in Newark and Detroit in 1967—driven by poverty, slum housing, and police brutality."
+          "def": "Wave of over 150 urban riots across northern and western US cities between 1965 and 1967—most severely in Newark and Detroit in 1967—driven by poverty, slum housing, and police brutality.",
+          "phonetic": "LONG HOT SUM-uhz",
+          "pronunciation": "LONG HOT SUM-uhz"
         },
         {
           "term": "Kerner Commission",
-          "def": "Presidential inquiry appointed by Lyndon Johnson whose March 1968 report blamed urban riots on white racism and warned America was moving toward 'two societies, one black, one white—separate and unequal'."
+          "def": "Presidential inquiry appointed by Lyndon Johnson whose March 1968 report blamed urban riots on white racism and warned America was moving toward 'two societies, one black, one white—separate and unequal'.",
+          "phonetic": "KUR-nuh kuh-MISH-un",
+          "pronunciation": "KUR-nuh kuh-MISH-un"
         },
         {
           "term": "De Facto Segregation",
-          "def": "Racial separation in northern and western cities caused in practice by discriminatory housing ('redlining'), unequal inner-city schools, and job discrimination rather than formal Jim Crow laws."
+          "def": "Racial separation in northern and western cities caused in practice by discriminatory housing ('redlining'), unequal inner-city schools, and job discrimination rather than formal Jim Crow laws.",
+          "phonetic": "day FAK-toh seg-rih-GAY-shun",
+          "pronunciation": "day FAK-toh seg-rih-GAY-shun"
         },
         {
           "term": "White Backlash",
-          "def": "Growing resentment among many white voters toward urban riots, Black Power, and open-housing campaigns, helping elect Richard Nixon on a 'law and order' platform in 1968."
+          "def": "Growing resentment among many white voters toward urban riots, Black Power, and open-housing campaigns, helping elect Richard Nixon on a 'law and order' platform in 1968.",
+          "phonetic": "WYTE BAK-lash",
+          "pronunciation": "WYTE BAK-lash"
         }
       ],
       "narrative_blocks": [
@@ -16014,7 +16664,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "A Buddhist monk and eyewitness to the self-immolation of Thich Quang Duc in Saigon on June 11, 1963. **Hinge Question:** What does this extreme act of protest reveal about the intensity of Buddhist opposition to Diem? How did this impact US support for Diem?"
+        "source_context": "A Buddhist monk and eyewitness to the self-immolation of Thich Quang Duc in Saigon on June 11, 1963. **Hinge Question:** What does this extreme act of protest reveal about the intensity of Buddhist opposition to Diem? How did this impact US support for Diem?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Dien Bien Phu, Ngo Dinh Diem & Birth of the Vietcong (Stages 1–3) (50 mins)",
+            "focus": "Dien Bien Phu, Diem & the Vietcong (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now connecting US Cold War containment fears and Eisenhower/Kennedy presidencies from KT1–2 (1954–63 domestic timeline) to global anti-communism.",
+                "instruction": "Spaced retrieval Do Now connecting US Cold War containment fears and Eisenhower/Kennedy presidencies from KT1–2 (1954–63 domestic timeline) to global anti-communism."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Map the May 1954 French defeat at Dien Bien Phu, the Geneva Accords (17th Parallel), Eisenhower’s Domino Theory, Ngo Dinh Diem’s rigged Oct 1955 referendum (98.2%), and rural repression sparking the Dec 1960 Vietcong (NLF).",
+                "instruction": "Map the May 1954 French defeat at Dien Bien Phu, the Geneva Accords (17th Parallel), Eisenhower’s Domino Theory, Ngo Dinh Diem’s rigged Oct 1955 referendum (98.2%), and rural repression sparking the Dec 1960 Vietcong (NLF)."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (Eisenhower’s April 1954 Domino Theory press conference) alongside Source B (map of the 17th Parallel and infiltration trails).",
+                "instruction": "Interrogate Source A (Eisenhower’s April 1954 Domino Theory press conference) alongside Source B (map of the 17th Parallel and infiltration trails)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Strategic Hamlets, the Buddhist Crisis, Diem’s Coup & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Strategic Hamlets, Diem’s Overthrow & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the 1954 Geneva Accords, 17th Parallel, Ho Chi Minh vs Ngo Dinh Diem, and why Diem cancelled the promised 1956 nationwide elections.",
+                "instruction": "Retrieval check on the 1954 Geneva Accords, 17th Parallel, Ho Chi Minh vs Ngo Dinh Diem, and why Diem cancelled the promised 1956 nationwide elections."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (failure of the 1962 Strategic Hamlet Program, Thich Quang Duc’s June 1963 self-immolation during the Buddhist Crisis, and the US-approved Nov 1963 military coup killing Diem) with Sources C–E (Cable 243 and CIA intelligence).",
+                "instruction": "Read Stages 4–5 (failure of the 1962 Strategic Hamlet Program, Thich Quang Duc’s June 1963 self-immolation during the Buddhist Crisis, and the US-approved Nov 1963 military coup killing Diem) with Sources C–E (Cable 243 and CIA intelligence)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Eisenhower’s Domino Theory and Q2 [12m] Explain why the United States became increasingly involved in Vietnam between 1954 and 1963.",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Eisenhower’s Domino Theory and Q2 [12m] Explain why the United States became increasingly involved in Vietnam between 1954 and 1963."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Exemplar DIRT check: verify Q2 links Cold War Domino Theory, ARVN/Diem weakness, and Kennedy’s expansion of US military advisers to 16,000.",
+                "instruction": "Exemplar DIRT check: verify Q2 links Cold War Domino Theory, ARVN/Diem weakness, and Kennedy’s expansion of US military advisers to 16,000."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
@@ -16093,31 +16814,45 @@
       "vocab": [
         {
           "term": "Geneva Accords",
-          "def": "July 1954 international peace agreement ending French colonial rule in Indochina and temporarily dividing Vietnam along the 17th Parallel ahead of planned 1956 elections."
+          "def": "July 1954 international peace agreement ending French colonial rule in Indochina and temporarily dividing Vietnam along the 17th Parallel ahead of planned 1956 elections.",
+          "phonetic": "juh-NEE-vuh uh-KAWRDZ",
+          "pronunciation": "juh-NEE-vuh uh-KAWRDZ"
         },
         {
           "term": "17th Parallel",
-          "def": "Temporary border set in 1954 separating Ho Chi Minh’s communist North Vietnam (Hanoi) from US-backed anti-communist South Vietnam (Saigon)."
+          "def": "Temporary border set in 1954 separating Ho Chi Minh’s communist North Vietnam (Hanoi) from US-backed anti-communist South Vietnam (Saigon).",
+          "phonetic": "SEV-un-teenth PA-ruh-lel",
+          "pronunciation": "SEV-un-teenth PA-ruh-lel"
         },
         {
           "term": "Domino Theory",
-          "def": "Cold War belief promoted by President Eisenhower that if South Vietnam fell to communism, neighbouring Southeast Asian nations such as Laos, Cambodia, and Thailand would fall one after another."
+          "def": "Cold War belief promoted by President Eisenhower that if South Vietnam fell to communism, neighbouring Southeast Asian nations such as Laos, Cambodia, and Thailand would fall one after another.",
+          "phonetic": "DOM-ih-noh THEER-ee",
+          "pronunciation": "DOM-ih-noh THEER-ee"
         },
         {
           "term": "Ngo Dinh Diem",
-          "def": "Strongly anti-communist Roman Catholic President of South Vietnam (1955–63) backed with billions in US aid and military advisers despite corruption, nepotism, and persecuting Buddhists."
+          "def": "Strongly anti-communist Roman Catholic President of South Vietnam (1955–63) backed with billions in US aid and military advisers despite corruption, nepotism, and persecuting Buddhists.",
+          "phonetic": "NOH DIN ZYEM",
+          "pronunciation": "NOH DIN ZYEM"
         },
         {
           "term": "Strategic Hamlets",
-          "def": "Fortified villages surrounded by ditches and barbed wire introduced in 1962 to isolate rural peasants from the Vietcong, which angered villagers forced off ancestral land."
+          "def": "Fortified villages surrounded by ditches and barbed wire introduced in 1962 to isolate rural peasants from the Vietcong, which angered villagers forced off ancestral land.",
+          "phonetic": "struh-TEE-jik HAM-lits",
+          "pronunciation": "struh-TEE-jik HAM-lits"
         },
         {
           "term": "Buddhist Crisis",
-          "def": "Mass protests in South Vietnam in 1963 against Diem’s persecution of the Buddhist majority, brought to global attention when monk Thich Quang Duc burned himself to death in Saigon."
+          "def": "Mass protests in South Vietnam in 1963 against Diem’s persecution of the Buddhist majority, brought to global attention when monk Thich Quang Duc burned himself to death in Saigon.",
+          "phonetic": "BUUD-ist KRY-sis",
+          "pronunciation": "BUUD-ist KRY-sis"
         },
         {
           "term": "Diem Coup",
-          "def": "Overthrow and assassination of Ngo Dinh Diem by South Vietnamese army generals in November 1963 after Washington signalled it would not block a change of leadership."
+          "def": "Overthrow and assassination of Ngo Dinh Diem by South Vietnamese army generals in November 1963 after Washington signalled it would not block a change of leadership.",
+          "phonetic": "ZYEM KOO",
+          "pronunciation": "ZYEM KOO"
         }
       ],
       "narrative_blocks": [
@@ -17645,7 +18380,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "US Navy pilot flying over the Gulf of Tonkin on the night of August 4, 1964. **Hinge Question:** If the second Gulf of Tonkin attack was a 'ghost' event, how does this affect the moral and political justification for the US escalation of the war?"
+        "source_context": "US Navy pilot flying over the Gulf of Tonkin on the night of August 4, 1964. **Hinge Question:** If the second Gulf of Tonkin attack was a 'ghost' event, how does this affect the moral and political justification for the US escalation of the war?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Saigon Instability & the August 1964 Gulf of Tonkin Crisis (Stages 1–3) (50 mins)",
+            "focus": "Saigon Instability & the Gulf of Tonkin Resolution (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 3.1 (17th Parallel, Domino Theory, Strategic Hamlets, Thich Quang Duc, and the Nov 1963 overthrow of Diem).",
+                "instruction": "Spaced retrieval Do Now on KT 3.1 (17th Parallel, Domino Theory, Strategic Hamlets, Thich Quang Duc, and the Nov 1963 overthrow of Diem)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace post-Diem junta chaos in Saigon, the August 1964 USS Maddox intelligence patrol and disputed second torpedo attack, and Congress passing the 7 August 1964 Gulf of Tonkin Resolution (416–0 House, 88–2 Senate).",
+                "instruction": "Trace post-Diem junta chaos in Saigon, the August 1964 USS Maddox intelligence patrol and disputed second torpedo attack, and Congress passing the 7 August 1964 Gulf of Tonkin Resolution (416–0 House, 88–2 Senate)."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Cross-reference Source A (Capt. Herrick’s declassified 4 Aug 1964 cable doubting the second attack) with Source B (Radio Hanoi) and Source C (the Resolution text).",
+                "instruction": "Cross-reference Source A (Capt. Herrick’s declassified 4 Aug 1964 cable doubting the second attack) with Source B (Radio Hanoi) and Source C (the Resolution text)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Pleiku, Operation Rolling Thunder, Da Nang & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Rolling Thunder, Da Nang Marines & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the USS Maddox incident, why the Gulf of Tonkin Resolution acted as a presidential \"blank cheque\", and LBJ’s 1964 election calculations.",
+                "instruction": "Retrieval check on the USS Maddox incident, why the Gulf of Tonkin Resolution acted as a presidential \"blank cheque\", and LBJ’s 1964 election calculations."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (the Feb 1965 Vietcong mortar raid on Pleiku, Operation Rolling Thunder sustained bombing from March 1965, and 3,500 US Marines landing at Da Nang on 8 March 1965) and examine Sources D–E.",
+                "instruction": "Read Stages 4–5 (the Feb 1965 Vietcong mortar raid on Pleiku, Operation Rolling Thunder sustained bombing from March 1965, and 3,500 US Marines landing at Da Nang on 8 March 1965) and examine Sources D–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on the Da Nang landing and Q2 [12m] Explain why US military involvement in Vietnam escalated under President Johnson between 1964 and 1965 (or Q3a [8m] Source Utility).",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on the Da Nang landing and Q2 [12m] Explain why US military involvement in Vietnam escalated under President Johnson between 1964 and 1965 (or Q3a [8m] Source Utility)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Highlight causal chains in Q2 during DIRT: ARVN near-collapse, Gulf of Tonkin legal authority, and Pleiku triggering air and ground escalation.",
+                "instruction": "Highlight causal chains in Q2 during DIRT: ARVN near-collapse, Gulf of Tonkin legal authority, and Pleiku triggering air and ground escalation."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
@@ -17724,27 +18530,39 @@
       "vocab": [
         {
           "term": "Gulf of Tonkin Incident",
-          "def": "August 1964 naval confrontation in which North Vietnamese torpedo boats attacked the USS Maddox—followed by a disputed second radar report two days later—triggering US escalation."
+          "def": "August 1964 naval confrontation in which North Vietnamese torpedo boats attacked the USS Maddox—followed by a disputed second radar report two days later—triggering US escalation.",
+          "phonetic": "GULF uv TON-kin IN-sih-dunt",
+          "pronunciation": "GULF uv TON-kin IN-sih-dunt"
         },
         {
           "term": "Gulf of Tonkin Resolution",
-          "def": "Resolution passed by the US Congress on 7 August 1964 giving President Johnson sweeping authority to take 'all necessary measures' in Vietnam without declaring war."
+          "def": "Resolution passed by the US Congress on 7 August 1964 giving President Johnson sweeping authority to take 'all necessary measures' in Vietnam without declaring war.",
+          "phonetic": "GULF uv TON-kin rez-uh-LOO-shun",
+          "pronunciation": "GULF uv TON-kin rez-uh-LOO-shun"
         },
         {
           "term": "Pleiku",
-          "def": "Vietcong mortar attack on the US military base at Pleiku in February 1965 that killed eight American servicemen and prompted Johnson to order sustained bombing of North Vietnam."
+          "def": "Vietcong mortar attack on the US military base at Pleiku in February 1965 that killed eight American servicemen and prompted Johnson to order sustained bombing of North Vietnam.",
+          "phonetic": "PLAY-koo",
+          "pronunciation": "PLAY-koo"
         },
         {
           "term": "Operation Rolling Thunder",
-          "def": "Sustained US bombing campaign against North Vietnam from March 1965 to November 1968 aimed at cutting supply routes and forcing Hanoi to abandon the Vietcong."
+          "def": "Sustained US bombing campaign against North Vietnam from March 1965 to November 1968 aimed at cutting supply routes and forcing Hanoi to abandon the Vietcong.",
+          "phonetic": "op-uh-RAY-shun ROH-ling THUN-duh",
+          "pronunciation": "op-uh-RAY-shun ROH-ling THUN-duh"
         },
         {
           "term": "Da Nang Landing",
-          "def": "Arrival of 3,500 US Marines at Da Nang on 8 March 1965—the first American ground combat troops sent to Vietnam—shifting America from military advisers to direct combat."
+          "def": "Arrival of 3,500 US Marines at Da Nang on 8 March 1965—the first American ground combat troops sent to Vietnam—shifting America from military advisers to direct combat.",
+          "phonetic": "dah NANG LAN-ding",
+          "pronunciation": "dah NANG LAN-ding"
         },
         {
           "term": "General William Westmoreland",
-          "def": "Commander of US forces in Vietnam (1964–68) who pursued an aggressive war of attrition aimed at killing more enemy fighters ('body count') than Hanoi could replace."
+          "def": "Commander of US forces in Vietnam (1964–68) who pursued an aggressive war of attrition aimed at killing more enemy fighters ('body count') than Hanoi could replace.",
+          "phonetic": "JEN-uh-rul WIL-yum west-MAWR-lund",
+          "pronunciation": "JEN-uh-rul WIL-yum west-MAWR-lund"
         }
       ],
       "narrative_blocks": [
@@ -19391,7 +20209,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "A female Vietcong guerrilla fighter, interviewed about surviving search-and-destroy missions in the Cu Chi tunnels. **Hinge Question:** How did the Vietcong use the tunnels and hit-and-run tactics to render the US military's technological superiority ineffective?"
+        "source_context": "A female Vietcong guerrilla fighter, interviewed about surviving search-and-destroy missions in the Cu Chi tunnels. **Hinge Question:** How did the Vietcong use the tunnels and hit-and-run tactics to render the US military's technological superiority ineffective?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Vietcong Guerrilla Warfare, Cu Chi Tunnels & Ho Chi Minh Trail (Stages 1–3) (50 mins)",
+            "focus": "Vietcong Guerrilla Tactics, Tunnels & Ho Chi Minh Trail (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 3.1–3.2 (Strategic Hamlets, Gulf of Tonkin Resolution, Operation Rolling Thunder, Da Nang Marines, and General Westmoreland).",
+                "instruction": "Spaced retrieval Do Now on KT 3.1–3.2 (Strategic Hamlets, Gulf of Tonkin Resolution, Operation Rolling Thunder, Da Nang Marines, and General Westmoreland)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Unpack General Vo Nguyen Giap’s \"hanging onto American belts\" guerrilla doctrine, the 250km multi-level Cu Chi tunnel complexes and punji traps, and the 40,000-worker Ho Chi Minh Trail running through Laos and Cambodia.",
+                "instruction": "Unpack General Vo Nguyen Giap’s \"hanging onto American belts\" guerrilla doctrine, the 250km multi-level Cu Chi tunnel complexes and punji traps, and the 40,000-worker Ho Chi Minh Trail running through Laos and Cambodia."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Cu Chi tunnel cutaway) and Source B (1967 MACV booby-trap manual) to explain why conventional firepower could not pin down insurgents.",
+                "instruction": "Scrutinise Source A (Cu Chi tunnel cutaway) and Source B (1967 MACV booby-trap manual) to explain why conventional firepower could not pin down insurgents."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Defoliation, Search & Destroy & Paper 3 Section B Interpretations (Stages 4–5) (50 mins)",
+            "focus": "Agent Orange, Search & Destroy & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Vietcong \"respect the peasants\" codes, Cu Chi tunnels, and why Rolling Thunder failed to sever the Ho Chi Minh Trail.",
+                "instruction": "Retrieval check on Vietcong \"respect the peasants\" codes, Cu Chi tunnels, and why Rolling Thunder failed to sever the Ho Chi Minh Trail."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Operation Ranch Hand’s 20m gallons of Agent Orange, Napalm, and Westmoreland’s helicopter Search & Destroy / \"Zippo raids\"), inspect Sources C–E, and contrast Interpretation 1 (Christian Appy on flawed US attrition alienating peasants) with Interpretation 2 (Guenter Lewy on Vietcong guerrilla discipline and external logistics).",
+                "instruction": "Read Stages 4–5 (Operation Ranch Hand’s 20m gallons of Agent Orange, Napalm, and Westmoreland’s helicopter Search & Destroy / \"Zippo raids\"), inspect Sources C–E, and contrast Interpretation 1 (Christian Appy on flawed US attrition alienating peasants) with Interpretation 2 (Guenter Lewy on Vietcong guerrilla discipline and external logistics)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B practice: Q3(a) [8m] Utility of Sources B & C and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 on why US military tactics failed (1965–68)?",
+                "instruction": "Complete Paper 3 Section B practice: Q3(a) [8m] Utility of Sources B & C and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 on why US military tactics failed (1965–68)?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Audit Q3(d) essays against Edexcel criteria: verify explicit evaluation of both Appy’s and Lewy’s arguments supported by precise tactical detail.",
+                "instruction": "Audit Q3(d) essays against Edexcel criteria: verify explicit evaluation of both Appy’s and Lewy’s arguments supported by precise tactical detail."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
@@ -19470,27 +20359,39 @@
       "vocab": [
         {
           "term": "Guerrilla Warfare",
-          "def": "Vietcong strategy of avoiding open pitched battles against superior US firepower by using ambushes, booby traps ('punji stakes'), hit-and-run raids, and blending into peasant villages."
+          "def": "Vietcong strategy of avoiding open pitched battles against superior US firepower by using ambushes, booby traps ('punji stakes'), hit-and-run raids, and blending into peasant villages.",
+          "phonetic": "guh-RIL-uh WAWR-fair",
+          "pronunciation": "guh-RIL-uh WAWR-fair"
         },
         {
           "term": "Cu Chi Tunnels",
-          "def": "Vast underground network of Vietcong tunnels, hospitals, weapon stores, and sleeping quarters dug near Saigon to survive US bombing and ambush patrols."
+          "def": "Vast underground network of Vietcong tunnels, hospitals, weapon stores, and sleeping quarters dug near Saigon to survive US bombing and ambush patrols.",
+          "phonetic": "KOO CHEE TUN-ulz",
+          "pronunciation": "KOO CHEE TUN-ulz"
         },
         {
           "term": "Ho Chi Minh Trail",
-          "def": "Jungle network of tracks and roads running from North Vietnam through Laos and Cambodia to supply the Vietcong with weapons, food, and fighters despite heavy US bombing."
+          "def": "Jungle network of tracks and roads running from North Vietnam through Laos and Cambodia to supply the Vietcong with weapons, food, and fighters despite heavy US bombing.",
+          "phonetic": "HOH CHEE MIN TRAYL",
+          "pronunciation": "HOH CHEE MIN TRAYL"
         },
         {
           "term": "Search and Destroy",
-          "def": "US tactic flying troops by helicopter into villages to hunt and kill Vietcong fighters, which often burned peasant homes ('Zippo raids') and turned civilians against the USA."
+          "def": "US tactic flying troops by helicopter into villages to hunt and kill Vietcong fighters, which often burned peasant homes ('Zippo raids') and turned civilians against the USA.",
+          "phonetic": "SURCH und dih-STROY",
+          "pronunciation": "SURCH und dih-STROY"
         },
         {
           "term": "Agent Orange",
-          "def": "Toxic chemical weedkiller sprayed in millions of gallons by US aircraft to strip jungle cover and crops, causing severe cancers and birth defects."
+          "def": "Toxic chemical weedkiller sprayed in millions of gallons by US aircraft to strip jungle cover and crops, causing severe cancers and birth defects.",
+          "phonetic": "AY-junt OR-inj",
+          "pronunciation": "AY-junt OR-inj"
         },
         {
           "term": "Napalm",
-          "def": "Jellied petrol firebomb dropped by US aircraft that burned at extreme heat to clear jungle bunkers, inflicting horrific civilian burns that damaged America’s image."
+          "def": "Jellied petrol firebomb dropped by US aircraft that burned at extreme heat to clear jungle bunkers, inflicting horrific civilian burns that damaged America’s image.",
+          "phonetic": "NAY-pahm",
+          "pronunciation": "NAY-pahm"
         }
       ],
       "narrative_blocks": [
@@ -21612,7 +22513,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "A soldier in the South Vietnamese army, recalling the disastrous invasion of Laos (Operation Lam Son 719) in 1971. **Hinge Question:** What does this soldier's account of the Laos invasion tell us about the practical weaknesses and failures of Nixon's 'Vietnamization' policy?"
+        "source_context": "A soldier in the South Vietnamese army, recalling the disastrous invasion of Laos (Operation Lam Son 719) in 1971. **Hinge Question:** What does this soldier's account of the Laos invasion tell us about the practical weaknesses and failures of Nixon's 'Vietnamization' policy?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: The Jan 1968 Tet Offensive, Walter Cronkite & the Nixon Doctrine (Stages 1–3) (50 mins)",
+            "focus": "Tet Offensive, Credibility Gap & Nixon Doctrine (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now revisiting KT 3.2–3.3 (Rolling Thunder, Westmoreland’s \"body count\" attrition, Search & Destroy, and the Ho Chi Minh Trail).",
+                "instruction": "Spaced retrieval Do Now revisiting KT 3.2–3.3 (Rolling Thunder, Westmoreland’s \"body count\" attrition, Search & Destroy, and the Ho Chi Minh Trail)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain the paradox of the 30–31 Jan 1968 Tet Offensive across 100+ cities and the Saigon US Embassy: a heavy Vietcong military defeat (~50,000 losses) that shattered public trust via Walter Cronkite’s \"stalemate\" broadcast and drove LBJ out of the 1968 race.",
+                "instruction": "Explain the paradox of the 30–31 Jan 1968 Tet Offensive across 100+ cities and the Saigon US Embassy: a heavy Vietcong military defeat (~50,000 losses) that shattered public trust via Walter Cronkite’s \"stalemate\" broadcast and drove LBJ out of the 1968 race."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Cronkite’s 27 Feb 1968 CBS broadcast) with Source B (Nixon visiting the 1st Infantry at Di An, July 1969) on managing public perception.",
+                "instruction": "Compare Source A (Cronkite’s 27 Feb 1968 CBS broadcast) with Source B (Nixon visiting the 1st Infantry at Di An, July 1969) on managing public perception."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Vietnamisation, Cambodia/Laos Incursions & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Vietnamisation, Cross-Border Incursions & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the Tet Offensive paradox, the \"Credibility Gap\", LBJ’s March 1968 announcement, and the 1969 Nixon Doctrine.",
+                "instruction": "Retrieval check on the Tet Offensive paradox, the \"Credibility Gap\", LBJ’s March 1968 announcement, and the 1969 Nixon Doctrine."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Vietnamisation transfer to the ARVN, secret bombing and the April 1970 Cambodian / March 1971 Laotian Lam Son 719 incursions, and US conscript morale collapse) alongside Sources C–E and Interpretations 1 & 2.",
+                "instruction": "Read Stages 4–5 (Vietnamisation transfer to the ARVN, secret bombing and the April 1970 Cambodian / March 1971 Laotian Lam Son 719 incursions, and US conscript morale collapse) alongside Sources C–E and Interpretations 1 & 2."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Nixon’s 1969 troop visit and Q2 [12m] Explain why the Tet Offensive of January 1968 was a decisive turning point in the Vietnam War.",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Nixon’s 1969 troop visit and Q2 [12m] Explain why the Tet Offensive of January 1968 was a decisive turning point in the Vietnam War."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT review: verify Q2 contrasts military losses for the Vietcong with political shock at home, halting escalation and triggering peace talks.",
+                "instruction": "DIRT review: verify Q2 contrasts military losses for the Vietcong with political shock at home, halting escalation and triggering peace talks."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
@@ -21691,27 +22663,39 @@
       "vocab": [
         {
           "term": "Tet Offensive",
-          "def": "Surprise communist offensive launched on 30–31 January 1968 across over 100 South Vietnamese towns and cities—including the US Embassy compound in Saigon—that shocked the American public."
+          "def": "Surprise communist offensive launched on 30–31 January 1968 across over 100 South Vietnamese towns and cities—including the US Embassy compound in Saigon—that shocked the American public.",
+          "phonetic": "TET uh-FEN-siv",
+          "pronunciation": "TET uh-FEN-siv"
         },
         {
           "term": "Credibility Gap",
-          "def": "Growing public distrust between the US government’s optimistic claims that the war was nearly won and the grim reality shown nightly on television."
+          "def": "Growing public distrust between the US government’s optimistic claims that the war was nearly won and the grim reality shown nightly on television.",
+          "phonetic": "kred-ih-BIL-ih-tee GAP",
+          "pronunciation": "kred-ih-BIL-ih-tee GAP"
         },
         {
           "term": "Walter Cronkite",
-          "def": "Trusted CBS television news anchor who visited Vietnam after Tet in February 1968 and declared on air that the war was 'mired in stalemate', shaking President Johnson's support."
+          "def": "Trusted CBS television news anchor who visited Vietnam after Tet in February 1968 and declared on air that the war was 'mired in stalemate', shaking President Johnson's support.",
+          "phonetic": "WAWL-tuh KRON-kyte",
+          "pronunciation": "WAWL-tuh KRON-kyte"
         },
         {
           "term": "Nixon Doctrine",
-          "def": "1969 policy announced by President Nixon stating that Asian allies would have to take primary responsibility for their own ground defence while the USA supplied money, training, and air power."
+          "def": "1969 policy announced by President Nixon stating that Asian allies would have to take primary responsibility for their own ground defence while the USA supplied money, training, and air power.",
+          "phonetic": "NIK-sun DOK-trin",
+          "pronunciation": "NIK-sun DOK-trin"
         },
         {
           "term": "Vietnamisation",
-          "def": "Nixon’s strategy from 1969 of gradually withdrawing US ground combat troops while expanding, training, and equipping the South Vietnamese army (ARVN) to fight in their place."
+          "def": "Nixon’s strategy from 1969 of gradually withdrawing US ground combat troops while expanding, training, and equipping the South Vietnamese army (ARVN) to fight in their place.",
+          "phonetic": "vee-et-nam-eye-ZAY-shun",
+          "pronunciation": "vee-et-nam-eye-ZAY-shun"
         },
         {
           "term": "Cambodian Incursion",
-          "def": "April 1970 invasion of neutral Cambodia by US and ARVN troops ordered by Nixon to destroy North Vietnamese bases, which sparked furious anti-war protests across American universities."
+          "def": "April 1970 invasion of neutral Cambodia by US and ARVN troops ordered by Nixon to destroy North Vietnamese bases, which sparked furious anti-war protests across American universities.",
+          "phonetic": "kam-BOH-dee-un in-KUR-zhun",
+          "pronunciation": "kam-BOH-dee-un in-KUR-zhun"
         }
       ],
       "narrative_blocks": [
@@ -23962,7 +24946,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "Decorated US Marine veteran paralyzed in Vietnam and author of the memoir *Born on the Fourth of July* (1976). **Hinge Question:** Why did testimonies from returning veterans like Ron Kovic have such a powerful emotional and political impact on the American public compared to student protests?"
+        "source_context": "Decorated US Marine veteran paralyzed in Vietnam and author of the memoir *Born on the Fourth of July* (1976). **Hinge Question:** Why did testimonies from returning veterans like Ron Kovic have such a powerful emotional and political impact on the American public compared to student protests?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: The \"Living Room War\", Draft Inequity & the My Lai Massacre (Stages 1–3) (50 mins)",
+            "focus": "Media, the Draft & My Lai Massacre (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 3.3–3.4 (Search & Destroy \"body counts\", Tet Offensive, Walter Cronkite, Credibility Gap, and Nixon’s April 1970 Cambodian incursion).",
+                "instruction": "Spaced retrieval Do Now on KT 3.3–3.4 (Search & Destroy \"body counts\", Tet Offensive, Walter Cronkite, Credibility Gap, and Nixon’s April 1970 Cambodian incursion)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Examine three domestic shockwaves: uncensored colour TV coverage (\"Living Room War\"), class and racial inequities in Selective Service college deferments, and the Nov 1969 exposure of Lt. William Calley’s March 1968 My Lai massacre.",
+                "instruction": "Examine three domestic shockwaves: uncensored colour TV coverage (\"Living Room War\"), class and racial inequities in Selective Service college deferments, and the Nov 1969 exposure of Lt. William Calley’s March 1968 My Lai massacre."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (helicopter pilot Hugh Thompson Jr. halting killings at My Lai) and Source B (Haeberle/Ridenhour photographic evidence sent to Congress).",
+                "instruction": "Interrogate Source A (helicopter pilot Hugh Thompson Jr. halting killings at My Lai) and Source B (Haeberle/Ridenhour photographic evidence sent to Congress)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Kent State, the Pentagon Papers & Paper 3 Section B Practice (Stages 4–5) (50 mins)",
+            "focus": "Kent State, Pentagon Papers & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on college draft deferments, the Dec 1969 draft lottery, Muhammad Ali’s draft refusal, and why My Lai took 20 months to reach the press.",
+                "instruction": "Retrieval check on college draft deferments, the Dec 1969 draft lottery, Muhammad Ali’s draft refusal, and why My Lai took 20 months to reach the press."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (4 May 1970 Kent State shootings killing four students and Daniel Ellsberg’s June 1971 Pentagon Papers leak), scrutinise Sources C–E, and contrast Interpretation 1 (Chester Pach on TV media shock) with Interpretation 2 (Melvin Small on casualties, the draft, and campus mobilisation).",
+                "instruction": "Read Stages 4–5 (4 May 1970 Kent State shootings killing four students and Daniel Ellsberg’s June 1971 Pentagon Papers leak), scrutinise Sources C–E, and contrast Interpretation 1 (Chester Pach on TV media shock) with Interpretation 2 (Melvin Small on casualties, the draft, and campus mobilisation)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about the main reason for growing anti-war opposition (1968–71)?",
+                "instruction": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about the main reason for growing anti-war opposition (1968–71)?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Self-assess Q3(c) and Q3(d): confirm Q3(c) explains how historians weight different evidence (Source B broadcast vs Source C SDS leaflet) and Q3(d) reaches a clear substantiated verdict.",
+                "instruction": "Self-assess Q3(c) and Q3(d): confirm Q3(c) explains how historians weight different evidence (Source B broadcast vs Source C SDS leaflet) and Q3(d) reaches a clear substantiated verdict."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
@@ -24041,27 +25096,39 @@
       "vocab": [
         {
           "term": "Living Room War",
-          "def": "Name given to Vietnam as the first conflict broadcast uncensored on nightly colour television news, bringing graphic images of wounded soldiers and burning villages into American homes."
+          "def": "Name given to Vietnam as the first conflict broadcast uncensored on nightly colour television news, bringing graphic images of wounded soldiers and burning villages into American homes.",
+          "phonetic": "LIV-ing ROOM WAWR",
+          "pronunciation": "LIV-ing ROOM WAWR"
         },
         {
           "term": "Military Draft",
-          "def": "Compulsory conscription system for young American men aged 18–25, widely condemned because college deferments spared wealthier white students while working-class and Black men bore heavy casualties."
+          "def": "Compulsory conscription system for young American men aged 18–25, widely condemned because college deferments spared wealthier white students while working-class and Black men bore heavy casualties.",
+          "phonetic": "MIL-ih-tuh-ree DRAHFT",
+          "pronunciation": "MIL-ih-tuh-ree DRAHFT"
         },
         {
           "term": "My Lai Massacre",
-          "def": "Killing of between 347 and 504 unarmed South Vietnamese civilians—mostly women, children, and old men—by US Charlie Company troops in March 1968, exposed to horrified public outcry in November 1969."
+          "def": "Killing of between 347 and 504 unarmed South Vietnamese civilians—mostly women, children, and old men—by US Charlie Company troops in March 1968, exposed to horrified public outcry in November 1969.",
+          "phonetic": "MEE LY MAS-uh-kuh",
+          "pronunciation": "MEE LY MAS-uh-kuh"
         },
         {
           "term": "Kent State University",
-          "def": "Ohio university where National Guardsmen fired live rounds into an unarmed student protest against the Cambodian invasion on 4 May 1970, killing four students and sparking nationwide campus strikes."
+          "def": "Ohio university where National Guardsmen fired live rounds into an unarmed student protest against the Cambodian invasion on 4 May 1970, killing four students and sparking nationwide campus strikes.",
+          "phonetic": "KENT STAYT yoo-nih-VUR-sih-tee",
+          "pronunciation": "KENT STAYT yoo-nih-VUR-sih-tee"
         },
         {
           "term": "Pentagon Papers",
-          "def": "Secret Defense Department study leaked by Daniel Ellsberg in June 1971 proving that four successive US presidents had misled Congress and the American public over Vietnam."
+          "def": "Secret Defense Department study leaked by Daniel Ellsberg in June 1971 proving that four successive US presidents had misled Congress and the American public over Vietnam.",
+          "phonetic": "PEN-tuh-gun PAY-puhz",
+          "pronunciation": "PEN-tuh-gun PAY-puhz"
         },
         {
           "term": "Vietnam Veterans Against the War",
-          "def": "Organisation of returning US servicemen who campaigned against the conflict, testified about wartime abuses, and threw their combat medals onto the steps of the US Capitol in April 1971."
+          "def": "Organisation of returning US servicemen who campaigned against the conflict, testified about wartime abuses, and threw their combat medals onto the steps of the US Capitol in April 1971.",
+          "phonetic": "vee-et-NAM VET-uh-runz uh-GENST thuh WAWR",
+          "pronunciation": "vee-et-NAM VET-uh-runz uh-GENST thuh WAWR"
         }
       ],
       "narrative_blocks": [
@@ -26202,7 +27269,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "A New York construction worker (hardhat) interviewed after the 'Hardhat Riots' of May 8, 1970. **Hinge Question:** How did the anti-war movement create deep social and class divisions in American society? How did Nixon capitalize on these divisions?"
+        "source_context": "A New York construction worker (hardhat) interviewed after the 'Hardhat Riots' of May 8, 1970. **Hinge Question:** How did the anti-war movement create deep social and class divisions in American society? How did Nixon capitalize on these divisions?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Cold War Patriotism, the \"Silent Majority\" & Hard Hat Riots (Stages 1–3) (50 mins)",
+            "focus": "Patriotism, the Silent Majority & Hard Hat Riots (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 4.1 and KT 2.4 (Kent State shootings, draft protests, VVAW, and 1968 \"law and order\" voter backlash).",
+                "instruction": "Spaced retrieval Do Now on KT 4.1 and KT 2.4 (Kent State shootings, draft protests, VVAW, and 1968 \"law and order\" voter backlash)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Challenge the myth that all Americans opposed the war: unpack Cold War anti-communist patriotism, Nixon’s 3 Nov 1969 televised \"Silent Majority\" appeal, and the 8 May 1970 Wall Street Hard Hat Riots.",
+                "instruction": "Challenge the myth that all Americans opposed the war: unpack Cold War anti-communist patriotism, Nixon’s 3 Nov 1969 televised \"Silent Majority\" appeal, and the 8 May 1970 Wall Street Hard Hat Riots."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Nixon’s \"Silent Majority\" speech) and Source B (construction workers clashing with student protesters in Manhattan) to analyse class and generational divides.",
+                "instruction": "Compare Source A (Nixon’s \"Silent Majority\" speech) and Source B (construction workers clashing with student protesters in Manhattan) to analyse class and generational divides."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Congressional Hawks, Nixon’s 1972 Landslide & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Congressional Hawks, 1972 Landslide & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Nixon’s 3 Nov 1969 speech, the Oct/Nov 1969 Moratorium marches it countered, and Wall Street Hard Hat grievances.",
+                "instruction": "Retrieval check on Nixon’s 3 Nov 1969 speech, the Oct/Nov 1969 Moratorium marches it countered, and Wall Street Hard Hat grievances."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Congressional Hawks warning of national humiliation and Nixon’s 49-state Nov 1972 landslide over George McGovern) and evaluate Sources C–E (including the May 1970 Gallup poll showing 58% blamed Kent State students).",
+                "instruction": "Read Stages 4–5 (Congressional Hawks warning of national humiliation and Nixon’s 49-state Nov 1972 landslide over George McGovern) and evaluate Sources C–E (including the May 1970 Gallup poll showing 58% blamed Kent State students)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Nixon’s \"Silent Majority\" address and Q2 [12m] Explain why Nixon introduced \"Vietnamization\" in 1969 (plus Q3a [8m] Utility of Sources B & C).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Nixon’s \"Silent Majority\" address and Q2 [12m] Explain why Nixon introduced \"Vietnamization\" in 1969 (plus Q3a [8m] Utility of Sources B & C)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT check on Q3(a) / Q2: verify pupils use polling data (Source D) as contextual knowledge to test how representative pro-war street action really was.",
+                "instruction": "DIRT check on Q3(a) / Q2: verify pupils use polling data (Source D) as contextual knowledge to test how representative pro-war street action really was."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "Why did some Americans support the Vietnam War and the 'Silent Majority'?",
@@ -26281,27 +27419,39 @@
       "vocab": [
         {
           "term": "Cold War Patriotism",
-          "def": "Widespread belief among millions of Americans that fighting communism in Vietnam was a patriotic duty vital to defending democracy and supporting American troops."
+          "def": "Widespread belief among millions of Americans that fighting communism in Vietnam was a patriotic duty vital to defending democracy and supporting American troops.",
+          "phonetic": "KOHLD WAWR PAT-ree-uh-tiz-um",
+          "pronunciation": "KOHLD WAWR PAT-ree-uh-tiz-um"
         },
         {
           "term": "Silent Majority",
-          "def": "Phrase used by President Nixon in his televised speech of 3 November 1969 to rally law-abiding middle- and working-class voters who backed his gradual withdrawal plan and disliked noisy protests."
+          "def": "Phrase used by President Nixon in his televised speech of 3 November 1969 to rally law-abiding middle- and working-class voters who backed his gradual withdrawal plan and disliked noisy protests.",
+          "phonetic": "SY-lunt muh-JOR-ih-tee",
+          "pronunciation": "SY-lunt muh-JOR-ih-tee"
         },
         {
           "term": "Hard Hat Riots",
-          "def": "Violent clash in New York City on 8 May 1970 when around 200 pro-war construction workers marched on Wall Street and attacked student anti-war demonstrators."
+          "def": "Violent clash in New York City on 8 May 1970 when around 200 pro-war construction workers marched on Wall Street and attacked student anti-war demonstrators.",
+          "phonetic": "HAHD HAT RY-uts",
+          "pronunciation": "HAHD HAT RY-uts"
         },
         {
           "term": "Congressional Hawks",
-          "def": "Politicians and commentators who favoured stronger military action and heavy bombing to defeat communism, in contrast to anti-war 'Doves' who wanted rapid withdrawal."
+          "def": "Politicians and commentators who favoured stronger military action and heavy bombing to defeat communism, in contrast to anti-war 'Doves' who wanted rapid withdrawal.",
+          "phonetic": "kun-GRESH-uh-nul HAWKS",
+          "pronunciation": "kun-GRESH-uh-nul HAWKS"
         },
         {
           "term": "Honour and National Credibility",
-          "def": "Argument made by Nixon and Kissinger that an immediate retreat from Vietnam would humiliate the USA and convince allies worldwide that Washington could not be trusted."
+          "def": "Argument made by Nixon and Kissinger that an immediate retreat from Vietnam would humiliate the USA and convince allies worldwide that Washington could not be trusted.",
+          "phonetic": "ON-uh und NASH-uh-nul kred-ih-BIL-ih-tee",
+          "pronunciation": "ON-uh und NASH-uh-nul kred-ih-BIL-ih-tee"
         },
         {
           "term": "1972 Presidential Landslide",
-          "def": "November 1972 election in which Richard Nixon defeated anti-war Democrat George McGovern in 49 out of 50 states, showing strong voter support for Nixon’s handling of the war."
+          "def": "November 1972 election in which Richard Nixon defeated anti-war Democrat George McGovern in 49 out of 50 states, showing strong voter support for Nixon’s handling of the war.",
+          "phonetic": "nine-teen sev-un-tee-TOO prez-ih-DEN-shul LAND-slyde",
+          "pronunciation": "nine-teen sev-un-tee-TOO prez-ih-DEN-shul LAND-slyde"
         }
       ],
       "narrative_blocks": [
@@ -27841,7 +28991,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "A South Vietnamese employee at the US Embassy in Saigon, recalling the chaotic evacuation on April 29-30, 1975. **Hinge Question:** How does this eyewitness account challenge the idea that the US exit from Vietnam was an orderly, honorable retreat? What was the human cost of the sudden withdrawal?"
+        "source_context": "A South Vietnamese employee at the US Embassy in Saigon, recalling the chaotic evacuation on April 29-30, 1975. **Hinge Question:** How does this eyewitness account challenge the idea that the US exit from Vietnam was an orderly, honorable retreat? What was the human cost of the sudden withdrawal?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Secret Paris Talks, 1972 Christmas Bombings & the Peace Accords (Stages 1–3) (50 mins)",
+            "focus": "Secret Talks, Linebacker II & Paris Peace Accords (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now retrieving KT 3.4–4.2 (Vietnamisation, Lam Son 719 in Laos, Pentagon Papers, and Nixon’s Nov 1972 re-election).",
+                "instruction": "Spaced retrieval Do Now retrieving KT 3.4–4.2 (Vietnamisation, Lam Son 719 in Laos, Pentagon Papers, and Nixon’s Nov 1972 re-election)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace Henry Kissinger and Le Duc Tho’s secret Paris talks (from Aug 1969), President Thieu’s Oct 1972 veto, Nixon’s Dec 1972 Operation Linebacker II (\"Christmas Bombings\"), and the 27 Jan 1973 Paris Peace Accords.",
+                "instruction": "Trace Henry Kissinger and Le Duc Tho’s secret Paris talks (from Aug 1969), President Thieu’s Oct 1972 veto, Nixon’s Dec 1972 Operation Linebacker II (\"Christmas Bombings\"), and the 27 Jan 1973 Paris Peace Accords."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (formal Paris signing photo) alongside Source B (the treaty text allowing 150,000+ North Vietnamese troops to remain inside South Vietnam).",
+                "instruction": "Interrogate Source A (formal Paris signing photo) alongside Source B (the treaty text allowing 150,000+ North Vietnamese troops to remain inside South Vietnam)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: US Troop Exit, the War Powers Act & Fall of Saigon (Stages 4–5) (50 mins)",
+            "focus": "US Withdrawal, War Powers Act & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Kissinger vs Le Duc Tho, Linebacker II B-52 raids, and why Thieu called the Jan 1973 Accords a virtual surrender.",
+                "instruction": "Retrieval check on Kissinger vs Le Duc Tho, Linebacker II B-52 raids, and why Thieu called the Jan 1973 Accords a virtual surrender."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (29 March 1973 final US combat exit, Operation Homecoming POWs, the June 1973 Case-Church funding ban, and the Nov 1973 War Powers Act passed over Nixon’s veto) alongside Sources C–E (Gen. Van Tien Dung and President Ford).",
+                "instruction": "Read Stages 4–5 (29 March 1973 final US combat exit, Operation Homecoming POWs, the June 1973 Case-Church funding ban, and the Nov 1973 War Powers Act passed over Nixon’s veto) alongside Sources C–E (Gen. Van Tien Dung and President Ford)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on the Paris Peace Accords signing and Q2 [12m] Explain why the Paris Peace Accords were signed in January 1973.",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on the Paris Peace Accords signing and Q2 [12m] Explain why the Paris Peace Accords were signed in January 1973."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-audit Q2 paragraphs using DIRT highlighters to ensure coverage of military stalemate, Sino-Soviet Détente diplomacy, domestic pressure, and Linebacker II.",
+                "instruction": "Peer-audit Q2 paragraphs using DIRT highlighters to ensure coverage of military stalemate, Sino-Soviet Détente diplomacy, domestic pressure, and Linebacker II."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
@@ -27920,27 +29141,39 @@
       "vocab": [
         {
           "term": "Henry Kissinger",
-          "def": "President Nixon's National Security Adviser and Secretary of State who conducted secret peace talks in Paris with North Vietnamese negotiator Le Duc Tho."
+          "def": "President Nixon's National Security Adviser and Secretary of State who conducted secret peace talks in Paris with North Vietnamese negotiator Le Duc Tho.",
+          "phonetic": "HEN-ree KIS-in-juh",
+          "pronunciation": "HEN-ree KIS-in-juh"
         },
         {
           "term": "1972 Christmas Bombings",
-          "def": "Intense eleven-day US B-52 bombing campaign against Hanoi and Haiphong in December 1972 ordered by Nixon to force North Vietnam back to peace talks and reassure South Vietnam."
+          "def": "Intense eleven-day US B-52 bombing campaign against Hanoi and Haiphong in December 1972 ordered by Nixon to force North Vietnam back to peace talks and reassure South Vietnam.",
+          "phonetic": "nine-teen sev-un-tee-TOO KRIS-mus BOM-ingz",
+          "pronunciation": "nine-teen sev-un-tee-TOO KRIS-mus BOM-ingz"
         },
         {
           "term": "Paris Peace Accords",
-          "def": "Ceasefire signed on 27 January 1973 ending direct US combat involvement and freeing American prisoners of war, while allowing over 150,000 North Vietnamese soldiers to stay in South Vietnam."
+          "def": "Ceasefire signed on 27 January 1973 ending direct US combat involvement and freeing American prisoners of war, while allowing over 150,000 North Vietnamese soldiers to stay in South Vietnam.",
+          "phonetic": "PA-ris PEES uh-KAWRDZ",
+          "pronunciation": "PA-ris PEES uh-KAWRDZ"
         },
         {
           "term": "Case-Church Amendment",
-          "def": "Law passed by the US Congress in June 1973 cutting off funding for any renewed American bombing or combat operations in Vietnam, Laos, or Cambodia."
+          "def": "Law passed by the US Congress in June 1973 cutting off funding for any renewed American bombing or combat operations in Vietnam, Laos, or Cambodia.",
+          "phonetic": "KAYS CHURCH uh-MEND-munt",
+          "pronunciation": "KAYS CHURCH uh-MEND-munt"
         },
         {
           "term": "Ho Chi Minh Campaign",
-          "def": "Major North Vietnamese military offensive launched in spring 1975 that rapidly overwhelmed the demoralised and under-supplied South Vietnamese army (ARVN)."
+          "def": "Major North Vietnamese military offensive launched in spring 1975 that rapidly overwhelmed the demoralised and under-supplied South Vietnamese army (ARVN).",
+          "phonetic": "HOH CHEE MIN kam-PAYN",
+          "pronunciation": "HOH CHEE MIN kam-PAYN"
         },
         {
           "term": "Fall of Saigon",
-          "def": "Capture of South Vietnam’s capital by North Vietnamese tanks on 30 April 1975 as US helicopters evacuated the last Americans and South Vietnamese allies from rooftops, ending the war."
+          "def": "Capture of South Vietnam’s capital by North Vietnamese tanks on 30 April 1975 as US helicopters evacuated the last Americans and South Vietnamese allies from rooftops, ending the war.",
+          "phonetic": "FAWL uv sy-GON",
+          "pronunciation": "FAWL uv sy-GON"
         }
       ],
       "narrative_blocks": [
@@ -29455,7 +30688,78 @@
             "question": "Which factor had the greatest enduring long-term consequence for the United States?"
           }
         ],
-        "source_context": "US Army historian and veteran, recounting an exchange in Hanoi in April 1975 with North Vietnamese Colonel Nguyen Don Tu. **Hinge Question:** Why is it possible to win every military battle but still lose a war? How does this sum up the core failure of the US intervention in Vietnam?"
+        "source_context": "US Army historian and veteran, recounting an exchange in Hanoi in April 1975 with North Vietnamese Colonel Nguyen Don Tu. **Hinge Question:** Why is it possible to win every military battle but still lose a war? How does this sum up the core failure of the US intervention in Vietnam?",
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: The 1975 Spring Offensive, Fall of Saigon & Asymmetric Will (Stages 1–3) (50 mins)",
+            "focus": "Fall of Saigon & Vietnamese Asymmetric Will (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Synoptic Do Now retrieving across KT3–4 (Diem’s Strategic Hamlets, Giap’s guerrilla tactics, Tet, My Lai, the Jan 1973 Paris Accords, and the Case-Church Amendment).",
+                "instruction": "Synoptic Do Now retrieving across KT3–4 (Diem’s Strategic Hamlets, Giap’s guerrilla tactics, Tet, My Lai, the Jan 1973 Paris Accords, and the Case-Church Amendment)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace the 1974–75 collapse of an under-supplied ARVN, North Vietnam’s Spring 1975 Ho Chi Minh Campaign, Operation Frequent Wind’s rooftop helicopter evacuation (29–30 April 1975), and the decisive role of Vietnamese revolutionary nationalism.",
+                "instruction": "Trace the 1974–75 collapse of an under-supplied ARVN, North Vietnam’s Spring 1975 Ho Chi Minh Campaign, Operation Frequent Wind’s rooftop helicopter evacuation (29–30 April 1975), and the decisive role of Vietnamese revolutionary nationalism."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (exhausted US infantryman in the Mekong Delta) and Source B (camouflaged Ho Chi Minh Trail supply column) on endurance vs technology.",
+                "instruction": "Compare Source A (exhausted US infantryman in the Mekong Delta) and Source B (camouflaged Ho Chi Minh Trail supply column) on endurance vs technology."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Synthesising US Failure & Synoptic Paper 3 Section B Essay (Stages 4–5) (50 mins)",
+            "focus": "Explaining US Failure & Paper 3 Synoptic Essay (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Operation Frequent Wind (30 April 1975), Soviet and Chinese logistical aid, and why \"Hearts and Minds\" failed in rural South Vietnam.",
+                "instruction": "Retrieval check on Operation Frequent Wind (30 April 1975), Soviet and Chinese logistical aid, and why \"Hearts and Minds\" failed in rural South Vietnam."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Saigon regime corruption and failure of industrial warfare vs collapse of the US home front after 58,220 US deaths and $168bn spent), review Sources C–E, and contrast Interpretations 1 & 2 (Communist guerrilla resilience vs US domestic and congressional collapse).",
+                "instruction": "Read Stages 4–5 (Saigon regime corruption and failure of industrial warfare vs collapse of the US home front after 58,220 US deaths and $168bn spent), review Sources C–E, and contrast Interpretations 1 & 2 (Communist guerrilla resilience vs US domestic and congressional collapse)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q2 [12m] Explain why South Vietnam collapsed so rapidly in 1975 OR full synoptic Q3(d) [16m + 4 SPaG] evaluating why the USA failed to win the Vietnam War.",
+                "instruction": "Write Paper 3 Q2 [12m] Explain why South Vietnam collapsed so rapidly in 1975 OR full synoptic Q3(d) [16m + 4 SPaG] evaluating why the USA failed to win the Vietnam War."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Final synoptic DIRT check: verify explicit relative-importance weighing (\"the underlying cause that made military flaws fatal was...\") and accurate Tier-3 terminology.",
+                "instruction": "Final synoptic DIRT check: verify explicit relative-importance weighing (\"the underlying cause that made military flaws fatal was...\") and accurate Tier-3 terminology."
+              }
+            ]
+          }
+        }
       },
       "learning_objectives": {
         "overarching": "What were the main reasons why the US failed to win the war in Vietnam?",
@@ -29534,27 +30838,39 @@
       "vocab": [
         {
           "term": "Guerrilla Tactics",
-          "def": "Vietcong ambushes, booby traps, and underground tunnels that neutralised America’s huge advantage in conventional weapons and prevented decisive battlefield victories."
+          "def": "Vietcong ambushes, booby traps, and underground tunnels that neutralised America’s huge advantage in conventional weapons and prevented decisive battlefield victories.",
+          "phonetic": "guh-RIL-uh TAK-tiks",
+          "pronunciation": "guh-RIL-uh TAK-tiks"
         },
         {
           "term": "Hearts and Minds",
-          "def": "Failed US campaign to win the loyalty of South Vietnamese peasants, fatally undermined by Strategic Hamlets, Search-and-Destroy raids, Napalm, and Agent Orange."
+          "def": "Failed US campaign to win the loyalty of South Vietnamese peasants, fatally undermined by Strategic Hamlets, Search-and-Destroy raids, Napalm, and Agent Orange.",
+          "phonetic": "HAHTS und MYNDZ",
+          "pronunciation": "HAHTS und MYNDZ"
         },
         {
           "term": "Saigon Regime Corruption",
-          "def": "Deep unpopularity, rigging, and corruption inside South Vietnam’s governments from Diem to Thieu, which left the ARVN with low morale and high desertion rates."
+          "def": "Deep unpopularity, rigging, and corruption inside South Vietnam’s governments from Diem to Thieu, which left the ARVN with low morale and high desertion rates.",
+          "phonetic": "sy-GON ray-ZHEEM kuh-RUP-shun",
+          "pronunciation": "sy-GON ray-ZHEEM kuh-RUP-shun"
         },
         {
           "term": "Domestic Anti-War Opposition",
-          "def": "Mounting opposition inside the USA—fuelled by casualties, television coverage, the draft, Tet, and My Lai—that eroded political will and led Congress to cut war funding."
+          "def": "Mounting opposition inside the USA—fuelled by casualties, television coverage, the draft, Tet, and My Lai—that eroded political will and led Congress to cut war funding.",
+          "phonetic": "duh-MES-tik an-tee-WAWR op-uh-ZISH-un",
+          "pronunciation": "duh-MES-tik an-tee-WAWR op-uh-ZISH-un"
         },
         {
           "term": "Soviet and Chinese Aid",
-          "def": "Billions of dollars in rifles, artillery, fuel, trucks, and anti-aircraft missiles supplied by the USSR and China that kept North Vietnam and the Vietcong fighting."
+          "def": "Billions of dollars in rifles, artillery, fuel, trucks, and anti-aircraft missiles supplied by the USSR and China that kept North Vietnam and the Vietcong fighting.",
+          "phonetic": "SOH-vee-et und chy-NEEZ AYD",
+          "pronunciation": "SOH-vee-et und chy-NEEZ AYD"
         },
         {
           "term": "War Powers Act of 1973",
-          "def": "Law passed by Congress in November 1973 over Nixon's veto requiring presidents to notify Congress within 48 hours of sending US troops abroad and limiting deployments without congressional consent."
+          "def": "Law passed by Congress in November 1973 over Nixon's veto requiring presidents to notify Congress within 48 hours of sending US troops abroad and limiting deployments without congressional consent.",
+          "phonetic": "WAWR POW-uhz AKT uv nine-teen sev-un-tee-THREE",
+          "pronunciation": "WAWR POW-uhz AKT uv nine-teen sev-un-tee-THREE"
         }
       ],
       "narrative_blocks": [

@@ -1,0 +1,494 @@
+{
+  "lesson_1": {
+    "num": "01",
+    "slug": "ks2_anglo_saxons_vikings_l01_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 1",
+    "datesBadge": "c. AD 410–600",
+    "topicLabel": "Enquiry 01: Angles, Saxons & Jutes Settle in Britain",
+    "title": "Why Did Angles, Saxons, and Jutes Cross the Sea to Settle in Britain?",
+    "spokenTitle": "Why did Angles, Saxons, and Jutes cross the sea to settle in Britain?",
+    "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+    "provenanceNote": "British Museum, British Library, Lindisfarne Priory, Ribe VikingeCenter & Original Hub Cartography (Zero AI Imagery)",
+    "bridges": [
+      "Timber Villages",
+      "Seven Kingdoms",
+      "Englaland Born"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "North Sea Push & Pull Reasons",
+        "date": "c. AD 410–500",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/nydam_oak_boat_migration.jpg",
+        "mode": "landscape",
+        "stat": "Flooded Homelands Push; Rich British Farms Pull",
+        "connective": "Why did Angles, Saxons, and Jutes cross the sea to settle in Britain?",
+        "html": "Flooded North Sea marshes pushed <strong>Angles, Saxons, and Jutes</strong> from Denmark and northern Germany. Unguarded, <strong>fertile farmland</strong> in Britain pulled whole families across in long <strong>oak rowing boats</strong>.",
+        "paired_prose_hash": "70aef22ab9",
+        "spoken": "Why did Angles, Saxons, and Jutes cross the sea to settle in Britain? <short pause> Flooded North Sea marshes pushed Angles, Saxons, and Jutes from Denmark and northern Germany. Unguarded, fertile farmland in Britain pulled whole families across in long oak rowing boats ."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Timber Villages & Mead Halls",
+        "date": "5th–6th Century",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+        "mode": "landscape",
+        "stat": "West Stow Craft Huts & Roaring Hearth Feasts",
+        "connective": "Avoiding crumbling Roman ruins, settlers cleared cosy riverside villages.",
+        "html": "Free farmers called <strong>ceorls</strong> wove wool and forged iron inside thatched workshops like <strong>West Stow</strong>. At the centre, a warrior <strong>cyning</strong> shared honey mead and gold rings in his timber hall.",
+        "paired_prose_hash": "f64d811736",
+        "spoken": "Avoiding crumbling Roman ruins, settlers cleared cosy riverside villages. <short pause> Free farmers called ceorls wove wool and forged iron inside thatched workshops like West Stow . At the centre, a warrior cyning shared honey mead and gold rings in his timber hall."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Seven Kingdoms & Old English",
+        "date": "c. AD 550–650",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_viking_britain_map_ks2.png",
+        "mode": "contain-light",
+        "stat": "Heptarchy Kingdoms, -ham/-ton Towns & Weekdays",
+        "connective": "Rival warbands gradually joined together into seven major kingdoms.",
+        "html": "The <strong>Heptarchy</strong> united kingdoms like Northumbria, Mercia, and Wessex across <em>Englaland</em>. Settlers spoke <strong>Old English</strong>, leaving <strong>-ham and -ton</strong> town names plus weekdays named after Woden and Thunor!",
+        "paired_prose_hash": "93473a5251",
+        "spoken": "Rival warbands gradually joined together into seven major kingdoms. <short pause> The Heptarchy united kingdoms like Northumbria, Mercia, and Wessex across Englaland . Settlers spoke Old English , leaving -ham and -ton town names plus weekdays named after Woden and Thunor!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "A New Anglo-Saxon Culture",
+        "date": "By AD 600",
+        "img": "/images/upgraded/ks2-ancient/asv_l1_banner_west_stow_village.jpg",
+        "mode": "landscape",
+        "stat": "Language, Place-Names & Kingdoms Take Root",
+        "connective": "Across eastern and southern Britain, a new way of life took root.",
+        "html": "North Sea <strong>migration</strong> replaced Roman city rule with timber halls and seven kingdoms. Everyday <strong>English words</strong>, village names, and days of the week still echo those <strong>early settlers</strong>.",
+        "spoken": "Across eastern and southern Britain, a new way of life took root. <short pause> North Sea migration replaced Roman city rule with timber halls and seven kingdoms. Everyday English words , village names, and days of the week still echo those early settlers ."
+      }
+    ],
+    "takeaway": "Pushed by flooded marshes and pulled by rich farmland, Angles, Saxons, and Jutes built timber mead-hall villages, formed seven kingdoms, and gave England its name and language.",
+    "vocab": [
+      [
+        "1. Migration",
+        "Moving across land or sea to make a permanent new home."
+      ],
+      [
+        "2. Mead Hall",
+        "Grand timber hall where an Anglo-Saxon king feasted with warriors."
+      ],
+      [
+        "3. Heptarchy",
+        "The seven main Anglo-Saxon kingdoms, including Mercia and Wessex."
+      ]
+    ],
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Pushed by flooded marshes and pulled by rich farmland, Angles, Saxons, and Jutes built timber mead-hall villages, formed seven kingdoms, and gave England its name and language."
+  },
+  "lesson_2": {
+    "num": "02",
+    "slug": "ks2_anglo_saxons_vikings_l02_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 2",
+    "datesBadge": "c. AD 597–750",
+    "topicLabel": "Enquiry 02: Sutton Hoo & Christian Monasteries",
+    "title": "What Do Sutton Hoo and Monasteries Tell Us About Saxon Britain?",
+    "spokenTitle": "What do Sutton Hoo and monasteries tell us about Saxon Britain?",
+    "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+    "provenanceNote": "British Museum, British Library, Lindisfarne Priory, Ribe VikingeCenter & Original Hub Cartography (Zero AI Imagery)",
+    "bridges": [
+      "Two Missions",
+      "Vellum Books",
+      "Faith & Learning"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Ghost Ship at Sutton Hoo",
+        "date": "c. AD 625 / 1939",
+        "img": "/images/upgraded/ks2-ancient/asv_l2_blk0_sutton_hoo_mounds.jpg",
+        "mode": "landscape",
+        "stat": "27-Metre Ship Outline & Royal Helmet in Mound 1",
+        "connective": "What do Sutton Hoo and monasteries tell us about Saxon Britain?",
+        "html": "In 1939, Edith Pretty and <strong>Basil Brown</strong> uncovered rusted rivets tracing a 27-metre ship inside <strong>Sutton Hoo</strong>. Dazzling <strong>grave goods</strong> held a warrior helmet, Indian garnets, and Byzantine spoons.",
+        "paired_prose_hash": "514b05617b",
+        "spoken": "What do Sutton Hoo and monasteries tell us about Saxon Britain? <short pause> In 1939, Edith Pretty and Basil Brown uncovered rusted rivets tracing a 27-metre ship inside Sutton Hoo . Dazzling grave goods held a warrior helmet, Indian garnets, and Byzantine spoons."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Canterbury & Holy Island",
+        "date": "AD 597–635",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/st_martins_church_canterbury.jpg",
+        "mode": "landscape",
+        "stat": "Augustine in Kent & Monk Aidan on Lindisfarne",
+        "connective": "Those Christian silver spoons showed a new faith spreading from two directions.",
+        "html": "In AD 597, missionary <strong>Augustine</strong> founded England's first cathedral at <strong>Canterbury</strong> with King Ethelbert and Queen Bertha. In AD 635, monk <strong>Aidan</strong> sailed from Iona to build Lindisfarne monastery.",
+        "paired_prose_hash": "8bc2514e80",
+        "spoken": "Those Christian silver spoons showed a new faith spreading from two directions. <short pause> In AD 597, missionary Augustine founded England's first cathedral at Canterbury with King Ethelbert and Queen Bertha. In AD 635, monk Aidan sailed from Iona to build Lindisfarne monastery."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Painted Gospels & Monk Bede",
+        "date": "AD 664–731",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/st_pauls_church_jarrow_bede.jpg",
+        "mode": "landscape",
+        "stat": "Lindisfarne Gospels & Bede's English History",
+        "connective": "Quiet stone monasteries soon blossomed into centres of art and books.",
+        "html": "Abbess Hilda led Whitby while scribes painted the <strong>Lindisfarne Gospels</strong> on smooth calfskin <strong>vellum</strong>. At Jarrow in AD 731, scholar-monk <strong>Venerable Bede</strong> wrote his famous English history using AD dates.",
+        "paired_prose_hash": "f0d5410e7f",
+        "spoken": "Quiet stone monasteries soon blossomed into centres of art and books. <short pause> Abbess Hilda led Whitby while scribes painted the Lindisfarne Gospels on smooth calfskin vellum . At Jarrow in AD 731, scholar-monk Venerable Bede wrote his famous English history using AD dates."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Warrior Kings & Book Learning",
+        "date": "By AD 750",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+        "mode": "contain",
+        "stat": "Dazzling Craftwork, Trade & Written History",
+        "connective": "Together, buried treasures and painted books transformed our view of the era.",
+        "html": "Far from a dark age, <strong>Sutton Hoo's helmet</strong> and glowing <strong>monastery manuscripts</strong> prove Saxon skill and long trade links. Christian <strong>monks and nuns</strong> brought reading and written history back.",
+        "spoken": "Together, buried treasures and painted books transformed our view of the era. <short pause> Far from a dark age, Sutton Hoo's helmet and glowing monastery manuscripts prove Saxon skill and long trade links. Christian monks and nuns brought reading and written history back."
+      }
+    ],
+    "takeaway": "Sutton Hoo's royal ship burial and Christian monasteries at Canterbury, Lindisfarne, and Jarrow reveal dazzling Anglo-Saxon craftwork, trade, and vellum scholarship.",
+    "vocab": [
+      [
+        "1. Grave Goods",
+        "Precious weapons, coins, and jewellery buried beside a ruler."
+      ],
+      [
+        "2. Monastery",
+        "Community of monks or nuns devoted to prayer, study, and books."
+      ],
+      [
+        "3. Vellum",
+        "Smooth calfskin writing sheets used for painted manuscripts."
+      ]
+    ],
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sutton Hoo's royal ship burial and Christian monasteries at Canterbury, Lindisfarne, and Jarrow reveal dazzling Anglo-Saxon craftwork, trade, and vellum scholarship."
+  },
+  "lesson_3": {
+    "num": "03",
+    "slug": "ks2_anglo_saxons_vikings_l03_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 3",
+    "datesBadge": "AD 793–878",
+    "topicLabel": "Enquiry 03: Viking Longships, Lindisfarne & Conquest",
+    "title": "Why Did Vikings Raid Britain and How Did They Conquer Kingdoms?",
+    "spokenTitle": "Why did Vikings raid Britain, and how did they conquer kingdoms?",
+    "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+    "provenanceNote": "British Museum, British Library, Lindisfarne Priory, Ribe VikingeCenter & Original Hub Cartography (Zero AI Imagery)",
+    "bridges": [
+      "Shallow Hulls",
+      "Heathen Army",
+      "Kingdoms Fall"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Shock Raid on Lindisfarne",
+        "date": "8 June AD 793",
+        "img": "/images/upgraded/ks2-ancient/asv_l3_blk0_lindisfarne_priory.jpg",
+        "mode": "landscape",
+        "stat": "Unarmed Island Monastery Looted for Silver",
+        "connective": "Why did Vikings raid Britain, and how did they conquer kingdoms?",
+        "html": "On 8 June AD 793, <strong>Viking</strong> warships from Scandinavia stormed the island monastery at <strong>Lindisfarne</strong>. Unarmed coastal churches held gleaming <strong>silver chalices</strong> and gold reliquaries, sending shockwaves across Europe.",
+        "paired_prose_hash": "095ceb694a",
+        "spoken": "Why did Vikings raid Britain, and how did they conquer kingdoms? <short pause> On the eighth of June AD 793, Viking warships from Scandinavia stormed the island monastery at Lindisfarne . Unarmed coastal churches held gleaming silver chalices and gold reliquaries, sending shockwaves across Europe."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Fast Clinker-Built Longships",
+        "date": "8th–9th Century",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/viking_longship_anatomy_ks2.png",
+        "mode": "contain-light",
+        "stat": "1-Metre Shallow Draught Rows Up Inland Rivers",
+        "connective": "Clever oak shipbuilding gave Norse crews unmatched speed and surprise.",
+        "html": "<strong>Clinker-built longships</strong> used overlapping oak planks, square woollen sails, and long oars to cross stormy seas. A <strong>1-metre shallow draught</strong> let flat hulls beach on sand or row up <strong>inland rivers</strong>.",
+        "paired_prose_hash": "55ff14f98c",
+        "spoken": "Clever oak shipbuilding gave Norse crews unmatched speed and surprise. <short pause> Clinker-built longships used overlapping oak planks, square woollen sails, and long oars to cross stormy seas. A 1-metre shallow draught let flat hulls beach on sand or row up inland rivers ."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "The Great Heathen Army Lands",
+        "date": "AD 865–877",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/repton_anglo_saxon_crypt.jpg",
+        "mode": "landscape",
+        "stat": "Jorvik, East Anglia & Mercia Seized; Wessex Left",
+        "connective": "Short of farmland at home, Vikings soon came to conquer and stay.",
+        "html": "In AD 865, the <strong>Great Heathen Army</strong> landed under Ivar the Boneless, Halfdan, and Guthrum, wintering at camps like Repton. Vikings conquered <strong>Jorvik</strong>, East Anglia, and Mercia, leaving only <strong>Wessex</strong> free!",
+        "paired_prose_hash": "606ad7e7bd",
+        "spoken": "Short of farmland at home, Vikings soon came to conquer and stay. <short pause> In AD 865, the Great Heathen Army landed under Ivar the Boneless, Halfdan, and Guthrum, wintering at camps like Repton. Vikings conquered Jorvik , East Anglia, and Mercia, leaving only Wessex free!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Raiders Become Conquerors",
+        "date": "By AD 877",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/gokstad_viking_longship.jpg",
+        "mode": "landscape",
+        "stat": "Only Wessex Stands Against Viking Rule",
+        "connective": "Within eighty years, summer hit-and-run raids had toppled three Saxon kingdoms.",
+        "html": "Fast <strong>oak longships</strong> and winter camps turned seafaring raiders into permanent rulers across northern and eastern Britain. By AD 877, <strong>Anglo-Saxon survival</strong> hung on one last kingdom: <strong>Wessex</strong>.",
+        "spoken": "Within eighty years, summer hit-and-run raids had toppled three Saxon kingdoms. <short pause> Fast oak longships and winter camps turned seafaring raiders into permanent rulers across northern and eastern Britain. By AD 877, Anglo-Saxon survival hung on one last kingdom: Wessex ."
+      }
+    ],
+    "takeaway": "Using fast, shallow-draught oak longships, Vikings raided Lindisfarne in AD 793 before the Great Heathen Army landed in AD 865 and conquered every Saxon kingdom except Wessex.",
+    "vocab": [
+      [
+        "1. Clinker-Built",
+        "Shipbuilding with overlapping split oak planks and iron rivets."
+      ],
+      [
+        "2. Shallow Draught",
+        "Needing barely 1 metre of water to beach or row up rivers."
+      ],
+      [
+        "3. Great Heathen Army",
+        "Huge Viking invasion force that landed in AD 865 to conquer land."
+      ]
+    ],
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using fast, shallow-draught oak longships, Vikings raided Lindisfarne in AD 793 before the Great Heathen Army landed in AD 865 and conquered every Saxon kingdom except Wessex."
+  },
+  "lesson_4": {
+    "num": "04",
+    "slug": "ks2_anglo_saxons_vikings_l04_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 4",
+    "datesBadge": "AD 871–899",
+    "topicLabel": "Enquiry 04: Alfred the Great, Burhs & The Danelaw",
+    "title": "How Did King Alfred Save Wessex from Viking Conquest in AD 878?",
+    "spokenTitle": "How did King Alfred save Wessex from Viking conquest in AD 878?",
+    "thumbUrl": "/images/upgraded/ks2-ancient/asv_l4_blk1_alfred_statue_winchester.jpg",
+    "provenanceNote": "British Museum, British Library, Lindisfarne Priory, Ribe VikingeCenter & Original Hub Cartography (Zero AI Imagery)",
+    "bridges": [
+      "Watling Treaty",
+      "33 Walled Burhs",
+      "Wessex Saved"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Athelney Marshes to Edington",
+        "date": "Jan–May AD 878",
+        "img": "/images/upgraded/ks2-ancient/asv_l4_blk0_athelney_monument.jpg",
+        "mode": "landscape",
+        "stat": "Somerset Marsh Hideout & Shield-Wall Victory",
+        "connective": "How did King Alfred save Wessex from Viking conquest in AD 878?",
+        "html": "Driven into the misty <strong>Athelney marshes</strong> after Guthrum's midwinter attack, <strong>King Alfred</strong> planned a bold spring fightback. Summoning loyal Wessex <strong>fyrd</strong> warriors, his shield wall crushed Guthrum at Edington!",
+        "paired_prose_hash": "06b448aceb",
+        "spoken": "How did King Alfred save Wessex from Viking conquest in AD 878? <short pause> Driven into the misty Athelney marshes after Guthrum's midwinter attack, King Alfred planned a bold spring fightback. Summoning loyal Wessex fyrd warriors, his shield wall crushed Guthrum at Edington!"
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Peace Treaty & The Danelaw",
+        "date": "AD 878–886",
+        "img": "/images/upgraded/ks2-ancient/asv_l4_blk1_alfred_statue_winchester.jpg",
+        "mode": "contain",
+        "stat": "Guthrum Baptised & Border Set on Watling Street",
+        "connective": "Wise Alfred chose lasting peace and clear borders over endless bloodshed.",
+        "html": "<strong>Guthrum</strong> was baptised as a Christian while Alfred recaptured walled London by AD 886. Their <strong>Treaty of Alfred and Guthrum</strong> divided Saxon Wessex from the northern and eastern <strong>Danelaw</strong>.",
+        "paired_prose_hash": "5262241aac",
+        "spoken": "Wise Alfred chose lasting peace and clear borders over endless bloodshed. <short pause> Guthrum was baptised as a Christian while Alfred recaptured walled London by AD 886. Their Treaty of Alfred and Guthrum divided Saxon Wessex from the northern and eastern Danelaw ."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "33 Burhs, Ships & Schools",
+        "date": "AD 880–899",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/wareham_saxon_burh_walls.jpg",
+        "mode": "landscape",
+        "stat": "No Village Over 20 Miles from a Walled Burh",
+        "connective": "Alfred then fortified every corner of Wessex and revived English learning.",
+        "html": "Alfred ringed Wessex with <strong>33 fortified burhs</strong> like Wareham and built 60-oar warships. Opening court schools, he translated Latin books into <strong>Old English</strong> and began the <strong>Anglo-Saxon Chronicle</strong>.",
+        "paired_prose_hash": "5fea073898",
+        "spoken": "Alfred then fortified every corner of Wessex and revived English learning. <short pause> Alfred ringed Wessex with 33 fortified burhs like Wareham and built 60-oar warships. Opening court schools, he translated Latin books into Old English and began the Anglo-Saxon Chronicle ."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Why Alfred Earned 'The Great'",
+        "date": "By AD 899",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/viking_palisade_shield_wall.jpg",
+        "mode": "landscape",
+        "stat": "Only English Monarch Named 'The Great'",
+        "connective": "Strong ramparts, warships, and books kept Wessex safe and united.",
+        "html": "Combining <strong>shield-wall courage</strong> at Edington with walled <strong>burhs</strong> and Old English scholarship saved Anglo-Saxon rule. Alfred laid the foundations for his family to unite all <strong>England</strong>.",
+        "spoken": "Strong ramparts, warships, and books kept Wessex safe and united. <short pause> Combining shield-wall courage at Edington with walled burhs and Old English scholarship saved Anglo-Saxon rule. Alfred laid the foundations for his family to unite all England ."
+      }
+    ],
+    "takeaway": "After regrouping in the Somerset marshes to win at Edington in AD 878, King Alfred agreed the Danelaw border, built 33 fortified burhs, and revived English books.",
+    "vocab": [
+      [
+        "1. Shield wall",
+        "Tight battle line locking round wooden shields shoulder to shoulder."
+      ],
+      [
+        "2. Danelaw",
+        "Northern and eastern England ruled under Danish laws after AD 878."
+      ],
+      [
+        "3. Burh",
+        "Fortified Anglo-Saxon town ringed with high earth ramparts and gates."
+      ]
+    ],
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> After regrouping in the Somerset marshes to win at Edington in AD 878, King Alfred agreed the Danelaw border, built 33 fortified burhs, and revived English books."
+  },
+  "lesson_5": {
+    "num": "05",
+    "slug": "ks2_anglo_saxons_vikings_l05_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 5",
+    "datesBadge": "c. AD 876–1000",
+    "topicLabel": "Enquiry 05: Everyday Viking Life in Jorvik",
+    "title": "Were Vikings Only Fierce Raiders or Peaceful Traders and Settlers?",
+    "spokenTitle": "Were Vikings only fierce raiders, or peaceful traders and settlers?",
+    "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
+    "provenanceNote": "British Museum, British Library, Lindisfarne Priory, Ribe VikingeCenter & Original Hub Cartography (Zero AI Imagery)",
+    "bridges": [
+      "Global Trade",
+      "Farms & Things",
+      "Norse Legacy"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "40,000 Finds Under Coppergate",
+        "date": "c. AD 876–950",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_woodshop.jpg",
+        "mode": "landscape",
+        "stat": "Wet York Peat Saves Shoes, Skates & Antler Combs",
+        "connective": "Were Vikings only fierce raiders, or peaceful traders and settlers?",
+        "html": "Diggers beneath <strong>Coppergate</strong> in Viking <strong>Jorvik</strong> (York) uncovered over 40,000 everyday objects preserved in wet peat. Timber workshops made leather shoes, bone skates, strategy games, and neat <strong>deer-antler combs</strong>!",
+        "paired_prose_hash": "891fe45ffd",
+        "spoken": "Were Vikings only fierce raiders, or peaceful traders and settlers? <short pause> Diggers beneath Coppergate in Viking Jorvik (York) uncovered over 40,000 everyday objects preserved in wet peat. Timber workshops made leather shoes, bone skates, strategy games, and neat deer-antler combs !"
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Baghdad Coins & Ocean Knarrs",
+        "date": "9th–10th Century",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/viking_islamic_dirham_coins.jpg",
+        "mode": "contain-light",
+        "stat": "Byzantine Silk, Arabic Dirhams & North Atlantic",
+        "connective": "Busy Jorvik also linked northern England to global trade routes.",
+        "html": "Merchants traded furs along eastern rivers for Byzantine silk, Red Sea shells, and Arabic <strong>silver dirhams</strong> from <strong>Baghdad</strong>. Westwards, wide cargo <strong>knarrs</strong> sailed across the Atlantic to Iceland, Greenland, and Vinland.",
+        "paired_prose_hash": "aa521199ff",
+        "spoken": "Busy Jorvik also linked northern England to global trade routes. <short pause> Merchants traded furs along eastern rivers for Byzantine silk, Red Sea shells, and Arabic silver dirhams from Baghdad . Westwards, wide cargo knarrs sailed across the Atlantic to Iceland, Greenland, and Vinland."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Farms, Women & Thing Laws",
+        "date": "9th–11th Century",
+        "img": "/images/upgraded/ks2-ancient/asv_l5_blk2_tynwald_hill.jpg",
+        "mode": "landscape",
+        "stat": "Household Keys, Tynwald Hill & Old Norse Words",
+        "connective": "Across the Danelaw countryside, Norse families farmed and governed together.",
+        "html": "Married Viking <strong>women</strong> wore household keys, ran farms, and owned land while free farmers voted outdoors at a <strong>Thing</strong> assembly. Settlers gave English <strong>Old Norse</strong> words like sky, window, egg, and knife!",
+        "paired_prose_hash": "1b8c2c030e",
+        "spoken": "Across the Danelaw countryside, Norse families farmed and governed together. <short pause> Married Viking women wore household keys, ran farms, and owned land while free farmers voted outdoors at a Thing assembly. Settlers gave English Old Norse words like sky, window, egg, and knife!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "More Than Just Fierce Raiders",
+        "date": "Danelaw Era",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
+        "mode": "landscape",
+        "stat": "Craftworkers, Global Merchants & Law-Makers",
+        "connective": "Archaeology proved monk chronicles told only half of the Viking story.",
+        "html": "Alongside coastal raids, Vikings were skilled <strong>Jorvik craftworkers</strong>, bold ocean navigators, and Danelaw farmers. Norse settlers married Saxons and shaped <strong>British towns, laws, and speech</strong> forever.",
+        "spoken": "Archaeology proved monk chronicles told only half of the Viking story. <short pause> Alongside coastal raids, Vikings were skilled Jorvik craftworkers , bold ocean navigators, and Danelaw farmers. Norse settlers married Saxons and shaped British towns, laws, and speech forever."
+      }
+    ],
+    "takeaway": "Excavations under Coppergate in Jorvik reveal that Vikings were skilled craftworkers, global merchants trading Baghdad silver dirhams, and farmers who gave English words like sky and egg.",
+    "vocab": [
+      [
+        "1. Jorvik",
+        "Bustling Viking workshop capital and river port — modern York."
+      ],
+      [
+        "2. Dirham",
+        "Silver coin from Islamic cities like Baghdad traded by Vikings."
+      ],
+      [
+        "3. Thing",
+        "Outdoor Viking community assembly where settlers voted on laws."
+      ]
+    ],
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Excavations under Coppergate in Jorvik reveal that Vikings were skilled craftworkers, global merchants trading Baghdad silver dirhams, and farmers who gave English words like sky and egg."
+  },
+  "lesson_6": {
+    "num": "06",
+    "slug": "ks2_anglo_saxons_vikings_l06_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 6",
+    "datesBadge": "AD 900–1066",
+    "topicLabel": "Enquiry 06: Aethelflaed, Athelstan, Cnut & 1066",
+    "title": "How Was One England Forged and Why Did 1066 Change Everything?",
+    "spokenTitle": "How was one England forged, and why did 1066 change everything?",
+    "thumbUrl": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+    "provenanceNote": "British Museum, British Library, Lindisfarne Priory, Ribe VikingeCenter & Original Hub Cartography (Zero AI Imagery)",
+    "bridges": [
+      "North Sea Crown",
+      "Two Battles",
+      "Norman Rule"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Aethelflaed & King Athelstan",
+        "date": "AD 911–939",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/aethelflaed_statue_tamworth.jpg",
+        "mode": "landscape",
+        "stat": "Derby Recaptured & First King of All England",
+        "connective": "How was one England forged, and why did 1066 change everything?",
+        "html": "Alfred's bold daughter <strong>Aethelflaed</strong>, Lady of the Mercians, built walled burhs and recaptured Viking Derby and Leicester. Her nephew <strong>Athelstan</strong> took York and won Brunanburh in AD 937 as <strong>First King of All England</strong>!",
+        "paired_prose_hash": "fa1d4bb1e5",
+        "spoken": "How was one England forged, and why did 1066 change everything? <short pause> Alfred's bold daughter Aethelflaed , Lady of the Mercians, built walled burhs and recaptured Viking Derby and Leicester. Her nephew Athelstan took York and won Brunanburh in AD 937 as First King of All England !"
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Danegeld & King Cnut's Empire",
+        "date": "AD 991–1065",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/king_cnut_queen_emma_manuscript.jpg",
+        "mode": "contain",
+        "stat": "England, Denmark & Norway Ruled Together",
+        "connective": "Fresh Danish raids returned, bringing silver taxes and a North Sea king.",
+        "html": "After King Aethelred paid heavy silver <strong>Danegeld</strong> bribes, Danish prince <strong>King Cnut</strong> won England's crown in AD 1016. Cnut ruled a peaceful <strong>North Sea Empire</strong> before Saxon King Edward built Westminster Abbey.",
+        "paired_prose_hash": "f9baab6053",
+        "spoken": "Fresh Danish raids returned, bringing silver taxes and a North Sea king. <short pause> After King Aethelred paid heavy silver Danegeld bribes, Danish prince King Cnut won England's crown in AD 1016. Cnut ruled a peaceful North Sea Empire before Saxon King Edward built Westminster Abbey."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Three Rivals Clash in 1066",
+        "date": "Jan–Oct 1066",
+        "img": "/images/upgraded/ks2-ancient/asv_l6_blk2_stamford_bridge.jpg",
+        "mode": "landscape",
+        "stat": "Stamford Bridge (25 Sept) & Hastings (14 Oct)",
+        "connective": "When childless Edward died in January 1066, three rivals claimed one crown.",
+        "html": "Newly crowned <strong>Harold Godwinson</strong> marched north to crush Viking Harald Hardrada at <strong>Stamford Bridge</strong> on 25 September. Exhausted after marching 250 miles south, Harold fell against <strong>Duke William</strong> at Hastings on 14 October!",
+        "paired_prose_hash": "7fbf29958e",
+        "spoken": "When childless Edward died in January 1066, three rivals claimed one crown. <short pause> Newly crowned Harold Godwinson marched north to crush Viking Harald Hardrada at Stamford Bridge on the twenty-fifth of September. Exhausted after marching 250 miles south, Harold fell against Duke William at Hastings on the fourteenth of October!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Saxon & Viking Eras Close",
+        "date": "After Oct 1066",
+        "img": "/units/ks2_anglo_saxons_vikings/assets/bayeux_harold_coronation_1066.jpg",
+        "mode": "contain-light",
+        "stat": "Norman Conquest Begins a New Chapter",
+        "connective": "Two dramatic autumn battles ended over six centuries of Saxon and Viking rule.",
+        "html": "Stamford Bridge closed the <strong>Viking Age</strong>, and three weeks later <strong>Hastings</strong> ended Anglo-Saxon kingship. Duke William's <strong>Norman Conquest</strong> began, ruling the united Kingdom of England forged before 1066.",
+        "spoken": "Two dramatic autumn battles ended over six centuries of Saxon and Viking rule. <short pause> Stamford Bridge closed the Viking Age , and three weeks later Hastings ended Anglo-Saxon kingship. Duke William's Norman Conquest began, ruling the united Kingdom of England forged before 1066."
+      }
+    ],
+    "takeaway": "Aethelflaed and Athelstan forged one Kingdom of England and Cnut ruled a North Sea Empire before 1066 ended both the Viking Age at Stamford Bridge and Saxon rule at Hastings.",
+    "vocab": [
+      [
+        "1. Danegeld",
+        "Silver tax paid by English kings to persuade Viking raiders to leave."
+      ],
+      [
+        "2. Witan",
+        "Royal council of Anglo-Saxon earls and bishops who chose the king."
+      ],
+      [
+        "3. Conquest",
+        "Taking control of a country by force, like William's 1066 victory."
+      ]
+    ],
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Aethelflaed and Athelstan forged one Kingdom of England and Cnut ruled a North Sea Empire before 1066 ended both the Viking Age at Stamford Bridge and Saxon rule at Hastings."
+  }
+}

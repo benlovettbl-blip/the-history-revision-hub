@@ -1,0 +1,156 @@
+{
+  "unitId": "ks2_early_islamic_baghdad",
+  "voiceKey": "female_historian",
+  "clips": {
+    "l01_s1": {
+      "hash": "63b767d8e403b9e5",
+      "bytes": 87596,
+      "updatedAt": "2026-11-23T20:51:48.941Z"
+    },
+    "l01_s2": {
+      "hash": "1012558753dbdab0",
+      "bytes": 92588,
+      "updatedAt": "2026-11-23T20:51:49.357Z"
+    },
+    "l01_s3": {
+      "hash": "ac241e2d4a80b346",
+      "bytes": 93932,
+      "updatedAt": "2026-11-23T20:51:49.721Z"
+    },
+    "l01_s4": {
+      "hash": "1e46ab8179260637",
+      "bytes": 86540,
+      "updatedAt": "2026-11-23T20:51:50.110Z"
+    },
+    "l01_takeaway": {
+      "hash": "8a8dcc0929deb9ff",
+      "bytes": 73100,
+      "updatedAt": "2026-11-23T20:51:50.434Z"
+    },
+    "l02_s1": {
+      "hash": "164ab6a8842af87d",
+      "bytes": 89420,
+      "updatedAt": "2026-11-23T20:51:50.767Z"
+    },
+    "l02_s2": {
+      "hash": "0bb2161cfaabc3dc",
+      "bytes": 90572,
+      "updatedAt": "2026-11-23T20:51:51.121Z"
+    },
+    "l02_s3": {
+      "hash": "712ff16096077d66",
+      "bytes": 98540,
+      "updatedAt": "2026-11-23T20:51:51.530Z"
+    },
+    "l02_s4": {
+      "hash": "097eb2e6f6d3002f",
+      "bytes": 82220,
+      "updatedAt": "2026-11-23T20:51:51.888Z"
+    },
+    "l02_takeaway": {
+      "hash": "b0a002d6f881549d",
+      "bytes": 68972,
+      "updatedAt": "2026-11-23T20:51:52.285Z"
+    },
+    "l03_s1": {
+      "hash": "d24c9c79fcd161e8",
+      "bytes": 81260,
+      "updatedAt": "2026-11-23T20:51:52.655Z"
+    },
+    "l03_s2": {
+      "hash": "67a7cadf5a0276ac",
+      "bytes": 88940,
+      "updatedAt": "2026-11-23T20:51:53.103Z"
+    },
+    "l03_s3": {
+      "hash": "b67053fb87d363d4",
+      "bytes": 93548,
+      "updatedAt": "2026-11-23T20:51:53.661Z"
+    },
+    "l03_s4": {
+      "hash": "7fefa0ed655b0c4b",
+      "bytes": 88268,
+      "updatedAt": "2026-11-23T20:51:54.130Z"
+    },
+    "l03_takeaway": {
+      "hash": "4615d43a440f3955",
+      "bytes": 79148,
+      "updatedAt": "2026-11-23T20:51:54.463Z"
+    },
+    "l04_s1": {
+      "hash": "b83007bdd4c5e13d",
+      "bytes": 90092,
+      "updatedAt": "2026-11-23T20:51:57.106Z"
+    },
+    "l04_s2": {
+      "hash": "72edb76dac4979fd",
+      "bytes": 99020,
+      "updatedAt": "2026-11-23T20:51:57.487Z"
+    },
+    "l04_s3": {
+      "hash": "b155273db611b72e",
+      "bytes": 90860,
+      "updatedAt": "2026-11-23T20:51:57.951Z"
+    },
+    "l04_s4": {
+      "hash": "f4e7ea18527d5f4f",
+      "bytes": 87692,
+      "updatedAt": "2026-11-23T20:51:58.319Z"
+    },
+    "l04_takeaway": {
+      "hash": "9170a04c45939f19",
+      "bytes": 73388,
+      "updatedAt": "2026-11-23T20:51:58.660Z"
+    },
+    "l05_s1": {
+      "hash": "bf65be03c3dff3a9",
+      "bytes": 81932,
+      "updatedAt": "2026-11-23T20:51:59.073Z"
+    },
+    "l05_s2": {
+      "hash": "469d34983885a59d",
+      "bytes": 103820,
+      "updatedAt": "2026-11-23T20:51:59.487Z"
+    },
+    "l05_s3": {
+      "hash": "cf2c3f64d7ba4b9c",
+      "bytes": 97292,
+      "updatedAt": "2026-11-23T20:51:59.888Z"
+    },
+    "l05_s4": {
+      "hash": "f30d3c54186d1c3d",
+      "bytes": 88748,
+      "updatedAt": "2026-11-23T20:52:00.340Z"
+    },
+    "l05_takeaway": {
+      "hash": "a5275d190299652e",
+      "bytes": 77420,
+      "updatedAt": "2026-11-23T20:52:00.691Z"
+    },
+    "l06_s1": {
+      "hash": "da68c3b596c3bda5",
+      "bytes": 92012,
+      "updatedAt": "2026-11-23T20:52:01.044Z"
+    },
+    "l06_s2": {
+      "hash": "392bbdd8fe5033d2",
+      "bytes": 83948,
+      "updatedAt": "2026-11-23T20:52:01.381Z"
+    },
+    "l06_s3": {
+      "hash": "c2cc1a570bea074d",
+      "bytes": 94412,
+      "updatedAt": "2026-11-23T20:52:01.742Z"
+    },
+    "l06_s4": {
+      "hash": "85d528d3b1b174ba",
+      "bytes": 88460,
+      "updatedAt": "2026-11-23T20:52:02.179Z"
+    },
+    "l06_takeaway": {
+      "hash": "be96873425f09b59",
+      "bytes": 74732,
+      "updatedAt": "2026-11-23T20:52:02.518Z"
+    }
+  }
+}

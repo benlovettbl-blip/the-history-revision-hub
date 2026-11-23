@@ -1,0 +1,979 @@
+{
+  "unit_id": "cme_new",
+  "delivery_plans": {
+    "lesson_0": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Wartime Pledges: McMahon, Sykes-Picot & Balfour (Stages 1–3) (50 mins)",
+          "focus": "Wartime Pledges: McMahon, Sykes-Picot & Balfour (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Run the baseline Do Now on Eastern Mediterranean and Red Sea geography, First World War dates (1914–18), empires and colonies, and Jerusalem’s sacred significance to Judaism, Christianity, and Islam.",
+              "instruction": "Run the baseline Do Now on Eastern Mediterranean and Red Sea geography, First World War dates (1914–18), empires and colonies, and Jerusalem’s sacred significance to Judaism, Christianity, and Islam."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Map Ottoman rule across the Middle East and explain why wartime desperation led Britain into three clashing commitments: McMahon’s October 1915 letters to Sharif Hussein, the secret May 1916 Sykes-Picot partition with France, and Arthur Balfour’s November 1917 pledge of a Jewish national home.",
+              "instruction": "Map Ottoman rule across the Middle East and explain why wartime desperation led Britain into three clashing commitments: McMahon’s October 1915 letters to Sharif Hussein, the secret May 1916 Sykes-Picot partition with France, and Arthur Balfour’s November 1917 pledge of a Jewish national home."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Narrative Stages 1–3 aloud as a class, tracking why Arab leaders felt betrayed by Sykes-Picot and how the Balfour Declaration created contradictory promises, then complete full-sentence responses in Workbook Verso Spine stages 1–3.",
+              "instruction": "Read Narrative Stages 1–3 aloud as a class, tracking why Arab leaders felt betrayed by Sykes-Picot and how the Balfour Declaration created contradictory promises, then complete full-sentence responses in Workbook Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (McMahon’s exclusion of land “west of the districts of Damascus”) with Source B (the straight imperial borders of the Sykes-Picot map) to test why Palestine became contested before 1918.",
+              "instruction": "Compare Source A (McMahon’s exclusion of land “west of the districts of Damascus”) with Source B (the straight imperial borders of the Sykes-Picot map) to test why Palestine became contested before 1918."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: The British Mandate, Arab Revolt & 1939 White Paper (Stages 4–5 & Writing) (50 mins)",
+          "focus": "The British Mandate, Arab Revolt & 1939 White Paper (Stages 4–5 & Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve the three wartime pledges from Lesson 1 (McMahon-Hussein 1915, Sykes-Picot 1916, Balfour Declaration 1917) and check why both Arab nationalists and Zionists claimed British backing.",
+              "instruction": "Retrieve the three wartime pledges from Lesson 1 (McMahon-Hussein 1915, Sykes-Picot 1916, Balfour Declaration 1917) and check why both Arab nationalists and Zionists claimed British backing."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the 1922 League of Nations Mandate, 1930s Jewish immigration fleeing Nazi persecution, the 1936–39 Arab Revolt, and the May 1939 White Paper (75,000 five-year cap), then examine Sources C, D, and E on why both communities rejected the White Paper.",
+              "instruction": "Read Stages 4–5 on the 1922 League of Nations Mandate, 1930s Jewish immigration fleeing Nazi persecution, the 1936–39 Arab Revolt, and the May 1939 White Paper (75,000 five-year cap), then examine Sources C, D, and E on why both communities rejected the White Paper."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Introduce Paper 2 Period Study consequence paragraphs (two 4-mark consequences = 8 marks) by drafting a consequence paragraph on the 1939 White Paper alongside the Evaluative Ranking Ladder weighing wartime pledges, 1930s immigration, and 1939 policy.",
+              "instruction": "Introduce Paper 2 Period Study consequence paragraphs (two 4-mark consequences = 8 marks) by drafting a consequence paragraph on the 1939 White Paper alongside the Evaluative Ranking Ladder weighing wartime pledges, 1930s immigration, and 1939 policy."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Peer-check each paragraph for a clear consequence statement supported by precise 1936–39 Mandate evidence, then verify justification sentences on the Ranking Ladder.",
+              "instruction": "Peer-check each paragraph for a clear consequence statement supported by precise 1936–39 Mandate evidence, then verify justification sentences on the Ranking Ladder."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_1": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Post-War Quotas, Insurgency & King David Hotel (Stages 1–3) (50 mins)",
+          "focus": "Post-War Quotas, Insurgency & King David Hotel (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving pre-1945 Mandate pledges, the May 1939 White Paper quota, Allied victory in 1945, Holocaust displacement in Europe, and Britain’s post-war economic exhaustion under Clement Attlee.",
+              "instruction": "Complete the spaced Do Now retrieving pre-1945 Mandate pledges, the May 1939 White Paper quota, Allied victory in 1945, Holocaust displacement in Europe, and Britain’s post-war economic exhaustion under Clement Attlee."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain why Ernest Bevin enforced the 1,500 monthly immigration cap to preserve Arab oil and strategic ties while Harry Truman demanded 100,000 entry certificates, driving the Haganah, Irgun, and Lehi into the October 1945 United Resistance Movement.",
+              "instruction": "Explain why Ernest Bevin enforced the 1,500 monthly immigration cap to preserve Arab oil and strategic ties while Harry Truman demanded 100,000 entry certificates, driving the Haganah, Irgun, and Lehi into the October 1945 United Resistance Movement."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Shared reading of Stages 1–3 covering European DP camps, paramilitary railway and radar sabotage, Operation Agatha, and the Irgun’s 22 July 1946 bombing of British headquarters at the King David Hotel (91 killed), completing Verso Spine stages 1–3.",
+              "instruction": "Shared reading of Stages 1–3 covering European DP camps, paramilitary railway and radar sabotage, Operation Agatha, and the Irgun’s 22 July 1946 bombing of British headquarters at the King David Hotel (91 killed), completing Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (Bergen-Belsen survivors, 1945) and Source B (Jewish leaders detained at Latrun after Operation Agatha, June 1946) to diagnose why compromise between British policing and Zionist immigration demands broke down.",
+              "instruction": "Scrutinise Source A (Bergen-Belsen survivors, 1945) and Source B (Jewish leaders detained at Latrun after Operation Agatha, June 1946) to diagnose why compromise between British policing and Zionist immigration demands broke down."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Sergeants Affair, SS Exodus & UN Resolution 181 (Stages 4–5 & Paper 2 Writing) (50 mins)",
+          "focus": "Sergeants Affair, SS Exodus & UN Resolution 181 (Stages 4–5 & Paper 2 Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on Bevin’s 1,500 monthly limit, the United Resistance Movement, and the July 1946 King David Hotel bombing before introducing the crises of summer 1947.",
+              "instruction": "Spaced recall check on Bevin’s 1,500 monthly limit, the United Resistance Movement, and the July 1946 King David Hotel bombing before introducing the crises of summer 1947."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Britain’s £100 million garrison burden, the July 1947 Sergeants Affair in Netanya, the Royal Navy interception of SS Exodus 1947, and UN Resolution 181 (November 1947 partition: ~55–56% Jewish state, ~43% Arab state, international Jerusalem), interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Britain’s £100 million garrison burden, the July 1947 Sergeants Affair in Netanya, the Royal Navy interception of SS Exodus 1947, and UN Resolution 181 (November 1947 partition: ~55–56% Jewish state, ~43% Arab state, international Jerusalem), interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete two 4-mark consequence responses (Q1: King David Hotel bombing, 1946; UN Resolution 181, 1947 [8m pair]) and the 8-mark Importance response (Q3: importance of conflicting Jewish and Arab demands for Britain’s 1947 withdrawal).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete two 4-mark consequence responses (Q1: King David Hotel bombing, 1946; UN Resolution 181, 1947 [8m pair]) and the 8-mark Importance response (Q3: importance of conflicting Jewish and Arab demands for Britain’s 1947 withdrawal)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Model how a high-tariff Paper 2 Importance paragraph links X directly to Y (how irreconcilable demands made Mandate rule ungovernable and forced handover to UNSCOP), with green-pen DIRT.",
+              "instruction": "Model how a high-tariff Paper 2 Importance paragraph links X directly to Y (how irreconcilable demands made Mandate rule ungovernable and forced handover to UNSCOP), with green-pen DIRT."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_2": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: 14 May 1948, First UN Truce & The Nakba (Stages 1–3) (50 mins)",
+          "focus": "14 May 1948, First UN Truce & The Nakba (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the Do Now retrieving Bevin’s immigration limits, Menachem Begin’s Irgun insurgency, the SS Exodus 1947 scandal, and UN Resolution 181’s partition terms from KT 1.1.",
+              "instruction": "Complete the Do Now retrieving Bevin’s immigration limits, Menachem Begin’s Irgun insurgency, the SS Exodus 1947 scandal, and UN Resolution 181’s partition terms from KT 1.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Trace the sequence from British withdrawal and David Ben-Gurion’s 14 May 1948 proclamation of Israel to the 15 May entry of Egyptian, Jordanian, Syrian, Iraqi, and Lebanese armies, highlighting how the June 1948 First UN Truce and Czech arms reversed the military balance.",
+              "instruction": "Trace the sequence from British withdrawal and David Ben-Gurion’s 14 May 1948 proclamation of Israel to the 15 May entry of Egyptian, Jordanian, Syrian, Iraqi, and Lebanese armies, highlighting how the June 1948 First UN Truce and Czech arms reversed the military balance."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 on Israel’s declaration, unified IDF command and Czech weapons during the four-week truce, and the Palestinian refugee crisis (Al-Nakba, Deir Yassin, over 700,000 displaced, and UNRWA’s creation), completing Verso Spine stages 1–3.",
+              "instruction": "Read Stages 1–3 on Israel’s declaration, unified IDF command and Czech weapons during the four-week truce, and the Palestinian refugee crisis (Al-Nakba, Deir Yassin, over 700,000 displaced, and UNRWA’s creation), completing Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (rival Arab and Israeli explanations of the 15 May 1948 invasion) with Source B (the Czech-supplied Avia S-199 fighter, June 1948) to test why Arab disunity and Israeli rearmament turned the war.",
+              "instruction": "Compare Source A (rival Arab and Israeli explanations of the 15 May 1948 invasion) with Source B (the Czech-supplied Avia S-199 fighter, June 1948) to test why Arab disunity and Israeli rearmament turned the war."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: 1949 Rhodes Armistices & Law of Return (Stages 4–5 & Paper 2 Narrative Writing) (50 mins)",
+          "focus": "1949 Rhodes Armistices & Law of Return (Stages 4–5 & Paper 2 Narrative Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Quick retrieval check on 14 May 1948, the June 1948 First Truce, Czech arms, and Al-Nakba alongside synoptic links to UN Resolution 181.",
+              "instruction": "Quick retrieval check on 14 May 1948, the June 1948 First Truce, Czech arms, and Al-Nakba alongside synoptic links to UN Resolution 181."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Dr Ralph Bunche’s 1949 Rhodes Armistice Agreements (the Green Line leaving Israel with 78%, Jordan holding the West Bank and East Jerusalem, and Egypt administering Gaza) and the July 1950 Law of Return, analysing Sources C (Khan Yunis camp), D (Arab Legion in Jerusalem), and E (Haifa arrivals).",
+              "instruction": "Read Stages 4–5 on Dr Ralph Bunche’s 1949 Rhodes Armistice Agreements (the Green Line leaving Israel with 78%, Jordan holding the West Bank and East Jerusalem, and Egypt administering Gaza) and the July 1950 Law of Return, analysing Sources C (Khan Yunis camp), D (Arab Legion in Jerusalem), and E (Haifa arrivals)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the two 4-mark consequence questions (Palestinian refugee status; 1950 Law of Return) and the 8-mark Analytical Narrative (Q2: analysing key events of the 1948–49 Arab-Israeli War).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the two 4-mark consequence questions (Palestinian refugee status; 1950 Law of Return) and the 8-mark Analytical Narrative (Q2: analysing key events of the 1948–49 Arab-Israeli War)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Audit pupils’ 8-mark narratives for three chronologically ordered stages (May 1948 outbreak -> June truce & Czech rearmament -> 1949 Rhodes Green Line) joined by explicit causal linking phrases.",
+              "instruction": "Audit pupils’ 8-mark narratives for three chronologically ordered stages (May 1948 outbreak -> June truce & Czech rearmament -> 1949 Rhodes Green Line) joined by explicit causal linking phrases."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_3": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Gaza Raid, Czech Arms & Suez Nationalisation (Stages 1–3) (50 mins)",
+          "focus": "Gaza Raid, Czech Arms & Suez Nationalisation (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving 14 May 1948, Count Bernadotte and the First Truce, Al-Nakba, and the 1949 Rhodes Armistice borders from KT 1.2.",
+              "instruction": "Complete the spaced Do Now retrieving 14 May 1948, Count Bernadotte and the First Truce, Al-Nakba, and the 1949 Rhodes Armistice borders from KT 1.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Contextualise Colonel Gamal Abdel Nasser’s Pan-Arab nationalism within the Cold War, tracing the causal chain from Israel’s February 1955 Gaza Raid to the September 1955 Czech Arms Deal, cancelled US/British Aswan High Dam loans, and the 26 July 1956 nationalisation of the Suez Canal.",
+              "instruction": "Contextualise Colonel Gamal Abdel Nasser’s Pan-Arab nationalism within the Cold War, tracing the causal chain from Israel’s February 1955 Gaza Raid to the September 1955 Czech Arms Deal, cancelled US/British Aswan High Dam loans, and the 26 July 1956 nationalisation of the Suez Canal."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine stages 1–3, checking that pupils connect Nasser’s blockade of the Straits of Tiran and Aswan funding crisis directly to canal nationalisation.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine stages 1–3, checking that pupils connect Nasser’s blockade of the Straits of Tiran and Aswan funding crisis directly to canal nationalisation."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Interrogate Source A (rival readings of the February 1955 Gaza Raid) and Source B (Nasser with Nehru at Bandung and the September 1955 Czech Arms Deal) to check why Cold War conditions escalated a border clash.",
+              "instruction": "Interrogate Source A (rival readings of the February 1955 Gaza Raid) and Source B (Nasser with Nehru at Bandung and the September 1955 Czech Arms Deal) to check why Cold War conditions escalated a border clash."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Secret Sèvres Plot, US Pressure & UNEF (Stages 4–5 & Paper 2 Narrative Writing) (50 mins)",
+          "focus": "Secret Sèvres Plot, US Pressure & UNEF (Stages 4–5 & Paper 2 Narrative Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve the Gaza Raid, 1955 Czech Arms Deal, Aswan Dam loan withdrawal, and 26 July 1956 Suez nationalisation from Lesson 1.",
+              "instruction": "Retrieve the Gaza Raid, 1955 Czech Arms Deal, Aswan Dam loan withdrawal, and 26 July 1956 Suez nationalisation from Lesson 1."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the October 1956 Secret Protocol of Sèvres (Anthony Eden, Guy Mollet, David Ben-Gurion), Operation Musketeer, President Eisenhower’s financial and UN pressure forcing Anglo-French retreat, UNEF’s Sinai deployment, and the 1958 UAR, examining Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on the October 1956 Secret Protocol of Sèvres (Anthony Eden, Guy Mollet, David Ben-Gurion), Operation Musketeer, President Eisenhower’s financial and UN pressure forcing Anglo-French retreat, UNEF’s Sinai deployment, and the 1958 UAR, examining Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: answer the two 4-mark consequence questions (February 1955 Gaza Raid; 1956 Suez Crisis for Britain and France) and the 8-mark Analytical Narrative (Q2: analysing the key events of the 1956 Suez Crisis).",
+              "instruction": "Timed Edexcel Paper 2 practice: answer the two 4-mark consequence questions (February 1955 Gaza Raid; 1956 Suez Crisis for Britain and France) and the 8-mark Analytical Narrative (Q2: analysing the key events of the 1956 Suez Crisis)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Self-assess against Paper 2 narrative criteria: verify causal links from Aswan/nationalisation -> Sèvres collusion & Sinai/Port Said landings -> Eisenhower’s ultimatum & UNEF withdrawal.",
+              "instruction": "Self-assess against Paper 2 narrative criteria: verify causal links from Aswan/nationalisation -> Sèvres collusion & Sinai/Port Said landings -> Eisenhower’s ultimatum & UNEF withdrawal."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_4": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: 1964 Cairo Summit, River Jordan Water & Fatah Raids (Stages 1–3) (50 mins)",
+          "focus": "1964 Cairo Summit, River Jordan Water & Fatah Raids (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Nasser’s Pan-Arabism, the 1955 Czech Arms Deal, 26 July 1956 Suez nationalisation, and UNEF’s buffer role in Sinai from KT 1.3.",
+              "instruction": "Complete the spaced Do Now retrieving Nasser’s Pan-Arabism, the 1955 Czech Arms Deal, 26 July 1956 Suez nationalisation, and UNEF’s buffer role in Sinai from KT 1.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain why relative calm on the Egyptian border shifted tension northward between 1964 and 1966: the January 1964 Cairo Summit founding the PLO, clashes over Israel’s National Water Carrier and Syrian headwater diversions, and Ba’athist Syria’s sponsorship of Yasser Arafat’s Fatah raids.",
+              "instruction": "Explain why relative calm on the Egyptian border shifted tension northward between 1964 and 1966: the January 1964 Cairo Summit founding the PLO, clashes over Israel’s National Water Carrier and Syrian headwater diversions, and Ba’athist Syria’s sponsorship of Yasser Arafat’s Fatah raids."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Shared reading of Stages 1–3 and completion of Workbook Verso Spine boxes 1–3, distinguishing the Arab League’s umbrella PLO from Fatah’s independent guerrilla strategy.",
+              "instruction": "Shared reading of Stages 1–3 and completion of Workbook Verso Spine boxes 1–3, distinguishing the Arab League’s umbrella PLO from Fatah’s independent guerrilla strategy."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (the 1964 PLO Charter vs Prime Minister Levi Eshkol) with Source B (the Banias Spring headwater in Syrian-held territory) to test why water security sparked cross-border artillery strikes.",
+              "instruction": "Compare Source A (the 1964 PLO Charter vs Prime Minister Levi Eshkol) with Source B (the Banias Spring headwater in Syrian-held territory) to test why water security sparked cross-border artillery strikes."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: The Samu Raid & 7 April 1967 Dogfight (Stages 4–5 & Paper 2 Importance Writing) (50 mins)",
+          "focus": "The Samu Raid & 7 April 1967 Dogfight (Stages 4–5 & Paper 2 Importance Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Recall check on the January 1964 Cairo Summit, the National Water Carrier dispute, and Syrian backing for Fatah raids from Lesson 1.",
+              "instruction": "Recall check on the January 1964 Cairo Summit, the National Water Carrier dispute, and Syrian backing for Fatah raids from Lesson 1."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Israel’s 13 November 1966 reprisal raid on Samu in the Jordanian West Bank and the 7 April 1967 Golan tractor clash and air battle (six Syrian MiGs shot down), analysing Sources C (Golan relief map), D (UNSC Resolution 228 on Samu), and E (rival air-battle accounts).",
+              "instruction": "Read Stages 4–5 on Israel’s 13 November 1966 reprisal raid on Samu in the Jordanian West Bank and the 7 April 1967 Golan tractor clash and air battle (six Syrian MiGs shot down), analysing Sources C (Golan relief map), D (UNSC Resolution 228 on Samu), and E (rival air-battle accounts)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the November 1966 Samu Raid and the 8-mark Importance question (Q3: importance of the 1964 Cairo Conference and growth of Fatah for escalating tension, 1964–67).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the November 1966 Samu Raid and the 8-mark Importance question (Q3: importance of the 1964 Cairo Conference and growth of Fatah for escalating tension, 1964–67)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Review Q3 answers using DIRT to ensure pupils explain how Cairo/Fatah triggered reprisals like Samu that undermined moderate Jordan and dragged Damascus and Cairo toward crisis.",
+              "instruction": "Review Q3 answers using DIRT to ensure pupils explain how Cairo/Fatah triggered reprisals like Samu that undermined moderate Jordan and dragged Damascus and Cairo toward crisis."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_5": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: May 1967 Brinkmanship & Operation Focus (Stages 1–3) (50 mins)",
+          "focus": "May 1967 Brinkmanship & Operation Focus (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the 1964 Cairo Summit, National Water Carrier, Yasser Arafat’s Fatah raids, the November 1966 Samu Raid, and the 7 April 1967 air clash from KT 2.1.",
+              "instruction": "Complete the spaced Do Now retrieving the 1964 Cairo Summit, National Water Carrier, Yasser Arafat’s Fatah raids, the November 1966 Samu Raid, and the 7 April 1967 air clash from KT 2.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Walk through the three-week escalation of May 1967: the false 13 May Soviet warning of Israeli brigades on Syria’s border, Nasser expelling UNEF (16 May) and closing the Straits of Tiran (22 May), King Hussein’s 30 May Joint Defence Pact, and Israel’s pre-emptive air strike (Operation Focus) at 07:45 on 5 June.",
+              "instruction": "Walk through the three-week escalation of May 1967: the false 13 May Soviet warning of Israeli brigades on Syria’s border, Nasser expelling UNEF (16 May) and closing the Straits of Tiran (22 May), King Hussein’s 30 May Joint Defence Pact, and Israel’s pre-emptive air strike (Operation Focus) at 07:45 on 5 June."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracing why encirclement and failed Western naval diplomacy convinced Eshkol and Defence Minister Moshe Dayan to strike first.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracing why encirclement and failed Western naval diplomacy convinced Eshkol and Defence Minister Moshe Dayan to strike first."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (Nasser and Eshkol on closing the Straits of Tiran) alongside Source B (the 30 May Egyptian-Jordanian Defence Pact) to test why diplomatic off-ramps closed before 5 June.",
+              "instruction": "Scrutinise Source A (Nasser and Eshkol on closing the Straits of Tiran) alongside Source B (the 30 May Egyptian-Jordanian Defence Pact) to test why diplomatic off-ramps closed before 5 June."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Sinai, East Jerusalem & Golan Victory (Stages 4–5 & Paper 2 Narrative Writing) (50 mins)",
+          "focus": "Sinai, East Jerusalem & Golan Victory (Stages 4–5 & Paper 2 Narrative Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on the 13 May Soviet intelligence report, UNEF expulsion, 22 May Tiran closure, 30 May Jordan Pact, and Operation Focus.",
+              "instruction": "Spaced recall check on the 13 May Soviet intelligence report, UNEF expulsion, 22 May Tiran closure, 30 May Jordan Pact, and Operation Focus."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on how total air supremacy enabled Israeli armoured divisions to sweep Sinai and Gaza, capture East Jerusalem and the West Bank after Jordanian shelling (5–8 June), and storm the Syrian Golan Heights (9–10 June), interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on how total air supremacy enabled Israeli armoured divisions to sweep Sinai and Gaza, capture East Jerusalem and the West Bank after Jordanian shelling (5–8 June), and storm the Syrian Golan Heights (9–10 June), interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: answer the two 4-mark consequence prompts (events of 7 April 1967; outbreak of the Six-Day War) and the 8-mark Analytical Narrative (Q2: key events leading up to and during the Six-Day War, May–June 1967).",
+              "instruction": "Timed Edexcel Paper 2 practice: answer the two 4-mark consequence prompts (events of 7 April 1967; outbreak of the Six-Day War) and the 8-mark Analytical Narrative (Q2: key events leading up to and during the Six-Day War, May–June 1967)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Check narrative structure across May brinkmanship -> 5 June Operation Focus air supremacy -> three-front territorial conquest by 10 June, adding precise dates and causal connectives in green pen.",
+              "instruction": "Check narrative structure across May brinkmanship -> 5 June Operation Focus air supremacy -> three-front territorial conquest by 10 June, adding precise dates and causal connectives in green pen."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_6": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Occupied Territories, Khartoum & UN Resolution 242 (Stages 1–3) (50 mins)",
+          "focus": "Occupied Territories, Khartoum & UN Resolution 242 (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving UNEF’s expulsion, closure of the Straits of Tiran, 07:45 Operation Focus on 5 June 1967, and the territories captured during the Six-Day War.",
+              "instruction": "Complete the spaced Do Now retrieving UNEF’s expulsion, closure of the Straits of Tiran, 07:45 Operation Focus on 5 June 1967, and the territories captured during the Six-Day War."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain how June 1967 transformed the conflict: Israel now administered Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights alongside over a million Palestinians and 300,000+ new refugees, prompting Khartoum’s “Three Noes” (August–September 1967) and UN Resolution 242 (22 November 1967).",
+              "instruction": "Explain how June 1967 transformed the conflict: Israel now administered Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights alongside over a million Palestinians and 300,000+ new refugees, prompting Khartoum’s “Three Noes” (August–September 1967) and UN Resolution 242 (22 November 1967)."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, unpacking Lord Caradon’s “Land for Peace” formula and why omitting “the” before “territories occupied” created rival interpretations.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, unpacking Lord Caradon’s “Land for Peace” formula and why omitting “the” before “territories occupied” created rival interpretations."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (CIA post-June 1967 territorial map) with Source B (the Khartoum Resolution’s “no peace, no recognition, no negotiations” vs Israeli reactions) to diagnose diplomatic deadlock.",
+              "instruction": "Compare Source A (CIA post-June 1967 territorial map) with Source B (the Khartoum Resolution’s “no peace, no recognition, no negotiations” vs Israeli reactions) to diagnose diplomatic deadlock."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Bar-Lev Line & Early Settlements (Stages 4–5 & Paper 2 Importance Writing) (50 mins)",
+          "focus": "Bar-Lev Line & Early Settlements (Stages 4–5 & Paper 2 Importance Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Quick recall check on the five territories occupied in June 1967, the Khartoum “Three Noes”, and the wording dispute inside UN Resolution 242.",
+              "instruction": "Quick recall check on the five territories occupied in June 1967, the Khartoum “Three Noes”, and the wording dispute inside UN Resolution 242."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the blocked Suez Canal, Haim Bar-Lev’s fortified sand ramparts (the Bar-Lev Line), the Allon Plan along the Jordan Valley, and early West Bank settlements, examining Sources C (Resolution 242 readings), D (Bar-Lev Line plan), and E (Allon Plan map).",
+              "instruction": "Read Stages 4–5 on the blocked Suez Canal, Haim Bar-Lev’s fortified sand ramparts (the Bar-Lev Line), the Allon Plan along the Jordan Valley, and early West Bank settlements, examining Sources C (Resolution 242 readings), D (Bar-Lev Line plan), and E (Allon Plan map)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the continued Suez Canal dispute after June 1967 and the 8-mark Importance question (Q3: importance of UN Resolution 242 for Arab-Israeli relations after the Six-Day War).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the continued Suez Canal dispute after June 1967 and the 8-mark Importance question (Q3: importance of UN Resolution 242 for Arab-Israeli relations after the Six-Day War)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Model how strong Q3 responses balance Resolution 242’s enduring diplomatic benchmark (“Land for Peace” later underpinning Camp David and Oslo) against its immediate failure to break the post-Khartoum impasse.",
+              "instruction": "Model how strong Q3 responses balance Resolution 242’s enduring diplomatic benchmark (“Land for Peace” later underpinning Camp David and Oslo) against its immediate failure to break the post-Khartoum impasse."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_7": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Karameh, Dawson’s Field & Black September (Stages 1–3) (50 mins)",
+          "focus": "Karameh, Dawson’s Field & Black September (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the 1967 refugee exodus into Jordan, the Khartoum Summit’s “Three Noes”, and UN Resolution 242 from KT 2.3.",
+              "instruction": "Complete the spaced Do Now retrieving the 1967 refugee exodus into Jordan, the Khartoum Summit’s “Three Noes”, and UN Resolution 242 from KT 2.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Trace why Arab state defeat in 1967 pushed Palestinian armed groups to the forefront: the 21 March 1968 Battle of Karameh propelling Arafat to PLO Chairman (1969), George Habash’s PFLP hijackings at Dawson’s Field (September 1970), and King Hussein’s Black September civil war expelling the PLO from Jordan.",
+              "instruction": "Trace why Arab state defeat in 1967 pushed Palestinian armed groups to the forefront: the 21 March 1968 Battle of Karameh propelling Arafat to PLO Chairman (1969), George Habash’s PFLP hijackings at Dawson’s Field (September 1970), and King Hussein’s Black September civil war expelling the PLO from Jordan."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, explaining why armed fedayeen checkpoints acted as a “state-within-a-state” that forced King Hussein to crush the militias and drive the PLO to Lebanon.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, explaining why armed fedayeen checkpoints acted as a “state-within-a-state” that forced King Hussein to crush the militias and drive the PLO to Lebanon."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Interrogate Source A (Arafat photographed in battle fatigues, 1969) and Source B (three empty airliners blown up before television cameras at Dawson’s Field, 12 September 1970) on how publicity tactics backfired in Jordan.",
+              "instruction": "Interrogate Source A (Arafat photographed in battle fatigues, 1969) and Source B (three empty airliners blown up before television cameras at Dawson’s Field, 12 September 1970) on how publicity tactics backfired in Jordan."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Munich Olympics & Israeli Retaliation (Stages 4–5 & Paper 2 Importance Writing) (50 mins)",
+          "focus": "Munich Olympics & Israeli Retaliation (Stages 4–5 & Paper 2 Importance Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve the Battle of Karameh (1968), PFLP hijackings at Dawson’s Field, and the PLO’s expulsion from Jordan in September 1970.",
+              "instruction": "Retrieve the Battle of Karameh (1968), PFLP hijackings at Dawson’s Field, and the PLO’s expulsion from Jordan in September 1970."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the 5 September 1972 Black September attack at the Munich Olympics (eleven Israeli athletes and coaches killed) and Golda Meir’s air raids and Operation Wrath of God, analysing Sources C (Jordan fedayeen map), D (Meir vs Black September statements), and E (Arafat at the UN, 1974).",
+              "instruction": "Read Stages 4–5 on the 5 September 1972 Black September attack at the Munich Olympics (eleven Israeli athletes and coaches killed) and Golda Meir’s air raids and Operation Wrath of God, analysing Sources C (Jordan fedayeen map), D (Meir vs Black September statements), and E (Arafat at the UN, 1974)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the 1970 expulsion of the PLO from Jordan and the 8-mark Importance question (Q3: importance of Black September and the 1972 Munich Olympics for international attitudes towards the Palestine issue).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the 1970 expulsion of the PLO from Jordan and the 8-mark Importance question (Q3: importance of Black September and the 1972 Munich Olympics for international attitudes towards the Palestine issue)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Use exemplar DIRT to sharpen the dual impact in Q3: Western revulsion at international terrorism alongside heightened global visibility that could no longer treat Palestinians solely as a refugee issue.",
+              "instruction": "Use exemplar DIRT to sharpen the dual impact in Q3: Western revulsion at international terrorism alongside heightened global visibility that could no longer treat Palestinians solely as a refugee issue."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_8": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: War of Attrition, Sadat’s Pivot & 6 October Crossing (Stages 1–3) (50 mins)",
+          "focus": "War of Attrition, Sadat’s Pivot & 6 October Crossing (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the March 1968 Battle of Karameh, Arafat’s 1969 PLO chairmanship, Dawson’s Field, and Black September (1970) alongside synoptic recall of the Bar-Lev Line.",
+              "instruction": "Complete the spaced Do Now retrieving the March 1968 Battle of Karameh, Arafat’s 1969 PLO chairmanship, Dawson’s Field, and Black September (1970) alongside synoptic recall of the Bar-Lev Line."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain the strategic road from Nasser’s 1969–70 War of Attrition along the Suez Canal to Anwar Sadat’s rejected February 1971 peace offer, his July 1972 expulsion of 15,000 Soviet advisers, and the coordinated Egyptian-Syrian surprise assault on Yom Kippur (6 October 1973).",
+              "instruction": "Explain the strategic road from Nasser’s 1969–70 War of Attrition along the Suez Canal to Anwar Sadat’s rejected February 1971 peace offer, his July 1972 expulsion of 15,000 Soviet advisers, and the coordinated Egyptian-Syrian surprise assault on Yom Kippur (6 October 1973)."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how Egyptian water cannons breached the Bar-Lev sand wall under a dense Soviet SAM-6 and Sagger missile umbrella.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how Egyptian water cannons breached the Bar-Lev sand wall under a dense Soviet SAM-6 and Sagger missile umbrella."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Nasser and Israeli commanders on the War of Attrition) with Source B (Sadat’s 1971 peace initiative vs Golda Meir’s refusal) to test why diplomatic stalemate drove Sadat to a limited war strategy.",
+              "instruction": "Compare Source A (Nasser and Israeli commanders on the War of Attrition) with Source B (Sadat’s 1971 peace initiative vs Golda Meir’s refusal) to test why diplomatic stalemate drove Sadat to a limited war strategy."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Superpower Airlifts, DEFCON 3 & OPEC Oil Weapon (Stages 4–5 & Paper 2 Narrative Writing) (50 mins)",
+          "focus": "Superpower Airlifts, DEFCON 3 & OPEC Oil Weapon (Stages 4–5 & Paper 2 Narrative Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on the 1969–70 War of Attrition, Sadat’s 1972 expulsion of Soviet advisers, and the 6 October 1973 Suez Canal crossing.",
+              "instruction": "Spaced recall check on the 1969–70 War of Attrition, Sadat’s 1972 expulsion of Soviet advisers, and the 6 October 1973 Suez Canal crossing."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on US Operation Nickel Grass, Ariel Sharon’s west-bank crossing at Deversoir, the brief US DEFCON 3 nuclear alert, OPEC’s 17 October 1973 oil embargo quadrupling oil prices, and UN Resolution 338, examining Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on US Operation Nickel Grass, Ariel Sharon’s west-bank crossing at Deversoir, the brief US DEFCON 3 nuclear alert, OPEC’s 17 October 1973 oil embargo quadrupling oil prices, and UN Resolution 338, examining Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the 1973 Yom Kippur War and the 8-mark Analytical Narrative (Q2: Egyptian relations with Israel, the USA, and the USSR in the years 1969–73).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the 1973 Yom Kippur War and the 8-mark Analytical Narrative (Q2: Egyptian relations with Israel, the USA, and the USSR in the years 1969–73)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Audit narratives for clear superpower causation: Soviet advisers in Attrition -> Sadat’s 1972 expulsion & 1973 war -> rival airlifts, OPEC oil shock, and Washington replacing Moscow as indispensable broker.",
+              "instruction": "Audit narratives for clear superpower causation: Soviet advisers in Attrition -> Sadat’s 1972 expulsion & 1973 war -> rival airlifts, OPEC oil shock, and Washington replacing Moscow as indispensable broker."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_9": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Shuttle Diplomacy, Jerusalem Visit & Camp David (Stages 1–3) (50 mins)",
+          "focus": "Shuttle Diplomacy, Jerusalem Visit & Camp David (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the 1969–70 War of Attrition, Anwar Sadat’s succession, the Bar-Lev Line breach, and the October 1973 OPEC oil shock from KT 2.5.",
+              "instruction": "Complete the spaced Do Now retrieving the 1969–70 War of Attrition, Anwar Sadat’s succession, the Bar-Lev Line breach, and the October 1973 OPEC oil shock from KT 2.5."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Trace how the 1973 oil crisis and superpower rivalry drove Henry Kissinger’s 1974–75 Shuttle Diplomacy (Sinai I, Golan pullback, Sinai II, Suez reopening), Menachem Begin’s May 1977 Likud victory, Sadat’s November 1977 Knesset visit, and Jimmy Carter’s thirteen-day September 1978 Camp David Summit.",
+              "instruction": "Trace how the 1973 oil crisis and superpower rivalry drove Henry Kissinger’s 1974–75 Shuttle Diplomacy (Sinai I, Golan pullback, Sinai II, Suez reopening), Menachem Begin’s May 1977 Likud victory, Sadat’s November 1977 Knesset visit, and Jimmy Carter’s thirteen-day September 1978 Camp David Summit."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting Camp David’s concrete Sinai withdrawal framework with its vague five-year Palestinian autonomy pledge.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting Camp David’s concrete Sinai withdrawal framework with its vague five-year Palestinian autonomy pledge."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Kissinger’s US mediation excluding Moscow) with Source B (Sadat’s 20 November 1977 Knesset appeal for “durable peace” vs Begin’s insistence on Jewish historic rights) to pinpoint the core sticking point.",
+              "instruction": "Compare Source A (Kissinger’s US mediation excluding Moscow) with Source B (Sadat’s 20 November 1977 Knesset appeal for “durable peace” vs Begin’s insistence on Jewish historic rights) to pinpoint the core sticking point."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: 1979 Treaty of Washington, Boycott & Sadat’s Murder (Stages 4–5 & Paper 2 Writing) (50 mins)",
+          "focus": "1979 Treaty of Washington, Boycott & Sadat’s Murder (Stages 4–5 & Paper 2 Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Quick recall check on Kissinger’s Sinai II agreement, Sadat’s November 1977 Jerusalem visit, and the two unequal frameworks agreed at Camp David in September 1978.",
+              "instruction": "Quick recall check on Kissinger’s Sinai II agreement, Sadat’s November 1977 Jerusalem visit, and the two unequal frameworks agreed at Camp David in September 1978."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the 26 March 1979 Egypt-Israel Peace Treaty (Treaty of Washington: full Sinai return, mutual diplomatic recognition, US economic and military aid), the Arab League’s suspension of Egypt to Tunis, and Sadat’s 6 October 1981 assassination, analysing Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on the 26 March 1979 Egypt-Israel Peace Treaty (Treaty of Washington: full Sinai return, mutual diplomatic recognition, US economic and military aid), the Arab League’s suspension of Egypt to Tunis, and Sadat’s 6 October 1981 assassination, analysing Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the 1979 Treaty of Washington and the 8-mark Importance question (Q3: importance of US President Carter and Camp David 1978 for peace between Israel and Egypt).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on the 1979 Treaty of Washington and the 8-mark Importance question (Q3: importance of US President Carter and Camp David 1978 for peace between Israel and Egypt)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Check Q3 paragraphs during DIRT: reward precise explanation of Carter’s personal line-by-line mediation at Camp David and US aid guarantees that secured Israel’s southern border while isolating Egypt in the Arab world.",
+              "instruction": "Check Q3 paragraphs during DIRT: reward precise explanation of Carter’s personal line-by-line mediation at Camp David and US aid guarantees that secured Israel’s southern border while isolating Egypt in the Arab world."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_10": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: 1982 Lebanon Invasion, Sabra & Shatila & First Intifada (Stages 1–3) (50 mins)",
+          "focus": "1982 Lebanon Invasion, Sabra & Shatila & First Intifada (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Kissinger’s Shuttle Diplomacy, Sadat’s November 1977 Knesset address, Jimmy Carter’s Camp David Accords, and the 1979 Treaty of Washington from KT 3.1.",
+              "instruction": "Complete the spaced Do Now retrieving Kissinger’s Shuttle Diplomacy, Sadat’s November 1977 Knesset address, Jimmy Carter’s Camp David Accords, and the 1979 Treaty of Washington from KT 3.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Connect the PLO’s post-1970 base in southern Lebanon (“Fatahland”) and Arafat’s November 1974 UN speech to Israel’s June 1982 Operation Peace for Galilee (expelling the PLO to Tunis), the September 1982 Sabra and Shatila Phalangist massacres, and the December 1987 Gaza crash that ignited the grassroots First Intifada.",
+              "instruction": "Connect the PLO’s post-1970 base in southern Lebanon (“Fatahland”) and Arafat’s November 1974 UN speech to Israel’s June 1982 Operation Peace for Galilee (expelling the PLO to Tunis), the September 1982 Sabra and Shatila Phalangist massacres, and the December 1987 Gaza crash that ignited the grassroots First Intifada."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how local UNLU committees coordinated strikes, tax boycotts, and civil resistance inside Gaza and the West Bank.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how local UNLU committees coordinated strikes, tax boycotts, and civil resistance inside Gaza and the West Bank."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (Lebanese civilians beside an Israeli carrier during Operation Litani, 1978) and Source B (Defence Minister Ariel Sharon above Beirut, 1982) to explain why the Kahan Commission damaged Israel’s standing.",
+              "instruction": "Scrutinise Source A (Lebanese civilians beside an Israeli carrier during Operation Litani, 1978) and Source B (Defence Minister Ariel Sharon above Beirut, 1982) to explain why the Kahan Commission damaged Israel’s standing."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Iron Fist, Rise of Hamas & 1988 PLO Shift (Stages 4–5 & Paper 2 Importance Writing) (50 mins)",
+          "focus": "Iron Fist, Rise of Hamas & 1988 PLO Shift (Stages 4–5 & Paper 2 Importance Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve Arafat’s 1974 UN observer status, the 1982 expulsion of the PLO to Tunis, Sabra and Shatila, and the December 1987 outbreak of the First Intifada.",
+              "instruction": "Retrieve Arafat’s 1974 UN observer status, the 1982 expulsion of the PLO to Tunis, Sabra and Shatila, and the December 1987 outbreak of the First Intifada."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Yitzhak Rabin’s “Iron Fist” crackdown, television coverage of troops confronting stone-throwing youths, the 1987 founding of Hamas, Jordan relinquishing the West Bank (July 1988), and Arafat’s November–December 1988 Algiers/Geneva statements accepting UN Resolution 242 and renouncing terrorism, examining Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Yitzhak Rabin’s “Iron Fist” crackdown, television coverage of troops confronting stone-throwing youths, the 1987 founding of Hamas, Jordan relinquishing the West Bank (July 1988), and Arafat’s November–December 1988 Algiers/Geneva statements accepting UN Resolution 242 and renouncing terrorism, examining Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on Arafat’s 1988 UN renunciation of terrorism and the 8-mark Importance question (Q3: importance of the First Palestinian Intifada, 1987–93, for attempts to find a solution).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the 4-mark consequence question on Arafat’s 1988 UN renunciation of terrorism and the 8-mark Importance question (Q3: importance of the First Palestinian Intifada, 1987–93, for attempts to find a solution)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Consolidate with DIRT: verify that Q3 answers link grassroots pressure, Hamas’s rivalry, and Israeli moral/economic strain directly to Arafat’s 1988 diplomatic pivot and Washington lifting its ban on PLO talks.",
+              "instruction": "Consolidate with DIRT: verify that Q3 answers link grassroots pressure, Hamas’s rivalry, and Israeli moral/economic strain directly to Arafat’s 1988 diplomatic pivot and Washington lifting its ban on PLO talks."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_11": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Madrid 1991, Secret Oslo Channel & 1993 Handshake (Stages 1–3) (50 mins)",
+          "focus": "Madrid 1991, Secret Oslo Channel & 1993 Handshake (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the PLO’s 1974 UN Permanent Observer status, Lebanon’s civil war, UNLU leaflets in the First Intifada, and Arafat’s December 1988 Geneva statement from KT 3.2.",
+              "instruction": "Complete the spaced Do Now retrieving the PLO’s 1974 UN Permanent Observer status, Lebanon’s civil war, UNLU leaflets in the First Intifada, and Arafat’s December 1988 Geneva statement from KT 3.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain why 1991 reshaped regional diplomacy: the Soviet collapse removed Arab confrontation patronage, Arafat’s backing of Saddam Hussein in the 1991 Gulf War bankrupted the PLO, Washington convened the October 1991 Madrid Conference, and Yitzhak Rabin’s 1992 Labour government authorised secret talks in Oslo.",
+              "instruction": "Explain why 1991 reshaped regional diplomacy: the Soviet collapse removed Arab confrontation patronage, Arafat’s backing of Saddam Hussein in the 1991 Gulf War bankrupted the PLO, Washington convened the October 1991 Madrid Conference, and Yitzhak Rabin’s 1992 Labour government authorised secret talks in Oslo."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3 on the 13 September 1993 Oslo I Accord (mutual recognition, Palestinian National Authority interim self-rule in Gaza and Jericho, and five-year deferral of Jerusalem, refugees, settlements, and borders).",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3 on the 13 September 1993 Oslo I Accord (mutual recognition, Palestinian National Authority interim self-rule in Gaza and Jericho, and five-year deferral of Jerusalem, refugees, settlements, and borders)."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (the multilateral table at Madrid, October 1991) with Source B (Shimon Peres signing the Oslo Declaration, September 1993) to explain why secret Norwegian back-channel talks succeeded where public diplomacy stalled.",
+              "instruction": "Compare Source A (the multilateral table at Madrid, October 1991) with Source B (Shimon Peres signing the Oslo Declaration, September 1993) to explain why secret Norwegian back-channel talks succeeded where public diplomacy stalled."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Oslo II Areas A–C, Extremist Spoilers & Rabin’s Murder (Stages 4–5 & Paper 2 Writing) (50 mins)",
+          "focus": "Oslo II Areas A–C, Extremist Spoilers & Rabin’s Murder (Stages 4–5 & Paper 2 Writing)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on the 1991 Gulf War / Soviet collapse, the Madrid Conference, mutual PLO-Israel recognition, and the deferred final-status issues in Oslo I.",
+              "instruction": "Spaced recall check on the 1991 Gulf War / Soviet collapse, the Madrid Conference, mutual PLO-Israel recognition, and the deferred final-status issues in Oslo I."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the October 1994 Israel-Jordan Peace Treaty, September 1995 Oslo II (dividing the West Bank into Areas A, B, and C), Baruch Goldstein’s 1994 Hebron massacre, Hamas suicide bus bombings, and Yigal Amir’s 4 November 1995 assassination of Yitzhak Rabin, interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on the October 1994 Israel-Jordan Peace Treaty, September 1995 Oslo II (dividing the West Bank into Areas A, B, and C), Baruch Goldstein’s 1994 Hebron massacre, Hamas suicide bus bombings, and Yigal Amir’s 4 November 1995 assassination of Yitzhak Rabin, interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 practice: complete the two 4-mark consequence questions (setting up the PNA in 1994; assassination of Yitzhak Rabin in November 1995) and the 8-mark Analytical Narrative (Q2: attempts at a solution between Israel and the Palestinians, 1993–95).",
+              "instruction": "Timed Edexcel Paper 2 practice: complete the two 4-mark consequence questions (setting up the PNA in 1994; assassination of Yitzhak Rabin in November 1995) and the 8-mark Analytical Narrative (Q2: attempts at a solution between Israel and the Palestinians, 1993–95)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Run final exemplar DIRT checking three linked narrative stages: 1993 Oslo I breakthrough -> 1994–95 PNA & Oslo II Area A/B/C expansion -> extremist violence and Rabin’s murder stalling momentum.",
+              "instruction": "Run final exemplar DIRT checking three linked narrative stages: 1993 Oslo I breakthrough -> 1994–95 PNA & Oslo II Area A/B/C expansion -> extremist violence and Rabin’s murder stalling momentum."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "vocab_phonetics": {
+    "lesson_0": {
+      "Sykes-Picot Agreement": "syks pee-KOH uh-GREE-munt",
+      "Mandate": "MAN-dayt",
+      "Balfour Declaration": "BAL-foor dek-luh-RAY-shun",
+      "Zionism": "ZY-uh-niz-um",
+      "Arab Nationalism": "AR-ub NASH-nul-iz-um",
+      "Chokepoint": "CHOHK-poynt"
+    },
+    "lesson_1": {
+      "1939 White Paper": "nyn-TEEN THUR-tee-nyn wyt PAY-pur",
+      "Jewish Agency": "JOO-ish AY-jun-see",
+      "Irgun": "eer-GOON",
+      "King David Hotel": "king DAY-vid hoh-TEL",
+      "Mandate": "MAN-dayt",
+      "UN Resolution 181": "yoo-EN rez-uh-LOO-shun wun-ayt-WUN"
+    },
+    "lesson_2": {
+      "Declaration of the State of Israel": "dek-luh-RAY-shun ov thuh stayt ov IZ-ray-ul",
+      "First Truce": "furst TROOS",
+      "Al-Nakba": "al-NAK-buh",
+      "Green Line": "GREEN lyn",
+      "UNRWA": "UN-ruh",
+      "Law of Return": "law ov rih-TURN"
+    },
+    "lesson_3": {
+      "Pan-Arabism": "pan-AR-uh-biz-um",
+      "Czech Arms Deal": "chek ARMZ deel",
+      "Nationalisation": "nash-nul-eye-ZAY-shun",
+      "Secret Sèvres Agreement": "SEE-krit SEHV-ruh uh-GREE-munt",
+      "UNEF": "YOO-nef",
+      "Straits of Tiran": "strayts ov tih-RAHN"
+    },
+    "lesson_4": {
+      "Cairo Conference (1964)": "KY-roh KON-fruns",
+      "PLO (Palestine Liberation Organisation)": "pee-el-OH (PAL-uh-styn lib-uh-RAY-shun or-guh-ny-ZAY-shun)",
+      "Fatah": "FAT-ah",
+      "National Water Carrier": "NASH-nul WAW-tur KAR-ee-ur",
+      "Samu Raid (1966)": "sah-MOO rayd",
+      "7 April 1967 Dogfight": "SEV-un AY-prul DOG-fyt"
+    },
+    "lesson_5": {
+      "UNEF (UN Emergency Force)": "YOO-nef (yoo-EN ih-MUR-jun-see fors)",
+      "Straits of Tiran": "strayts ov tih-RAHN",
+      "Pre-emptive Strike": "pree-EMP-tiv stryk",
+      "Air Supremacy": "air soo-PREM-uh-see",
+      "West Bank": "WEST-bank",
+      "Western Wall": "WES-turn wawl"
+    },
+    "lesson_6": {
+      "Occupied Territories": "OK-yoo-pyd TER-ih-tuh-reez",
+      "Khartoum Conference": "kar-TOOM KON-fruns",
+      "The Three Noes": "thuh THREE nohz",
+      "UN Resolution 242": "yoo-EN rez-uh-LOO-shun too-for-TOO",
+      "Land for Peace": "LAND for pees",
+      "Israeli Settlements": "iz-RAY-lee SET-ul-munts"
+    },
+    "lesson_7": {
+      "Fedayeen": "fed-uh-YEEN",
+      "Battle of Karameh (1968)": "BAT-ul ov kah-RAH-meh",
+      "PFLP": "pee-ef-el-PEE",
+      "Dawson's Field (1970)": "DAW-sunz feeld",
+      "Black September (1970)": "BLAK sep-TEM-bur",
+      "Munich Olympics (1972)": "MYOO-nik oh-LIM-piks"
+    },
+    "lesson_8": {
+      "War of Attrition": "wor ov uh-TRISH-un",
+      "Bar-Lev Line": "bar-LEV lyn",
+      "Anwar Sadat": "AN-war suh-DAT",
+      "Yom Kippur": "yom kih-POOR",
+      "OPEC Oil Embargo": "OH-pek oyl im-BAR-goh",
+      "Shuttle Diplomacy": "SHUT-ul dih-PLOH-muh-see"
+    },
+    "lesson_9": {
+      "Stagflation": "stag-FLAY-shun",
+      "Shuttle Diplomacy": "SHUT-ul dih-PLOH-muh-see",
+      "Sinai II Agreement": "SY-ny TOO uh-GREE-munt",
+      "Likud": "lih-KOOD",
+      "Camp David Accords": "kamp DAY-vid uh-KORDZ",
+      "Treaty of Washington": "TREE-tee ov WOSH-ing-tun"
+    },
+    "lesson_10": {
+      "UN Resolution 3236": "yoo-EN rez-uh-LOO-shun three-too-three-SIKS",
+      "Fatahland": "FAT-ah-land",
+      "Operation Peace for Galilee": "op-uh-RAY-shun PEES for GAL-ih-lee",
+      "Sabra and Shatila": "SAH-bruh and shuh-TEE-luh",
+      "First Intifada": "furst in-tih-FAH-duh",
+      "Iron Fist Policy": "EYE-urn fist POL-ih-see"
+    },
+    "lesson_11": {
+      "Two-State Solution": "TOO-stayt suh-LOO-shun",
+      "Madrid Conference": "muh-DRID KON-fruns",
+      "Oslo I Accords": "OZ-loh WUN uh-KORDZ",
+      "Oslo II Accords": "OZ-loh TOO uh-KORDZ",
+      "Area A, B, C": "AIR-ee-uh AY, BEE, SEE",
+      "Yigal Amir": "yih-GAHL ah-MEER"
+    }
+  }
+}

@@ -512,14 +512,25 @@ export function renderSidebar() {
   }
 
   if (window.currentUnitId === 'usa') {
-    const tradingLink = document.createElement('a');
-    tradingLink.className = 'lesson-link';
-    tradingLink.innerHTML =
-      '<i class="fa-solid fa-layer-group" style="color: #facc15; margin-right: 8px;"></i> Historical Hooligans (Top Trumps)';
-    tradingLink.href = '/units/usa/trading_cards.html';
-    tradingLink.target = '_blank';
-    tradingLink.style.marginTop = '8px';
-    navContainer.appendChild(tradingLink);
+    if (Array.isArray(unitData?.key_individuals) && unitData.key_individuals.length > 0) {
+      const individualsLink = document.createElement('a');
+      individualsLink.className = 'lesson-link';
+      individualsLink.innerHTML =
+        '<i class="fa-solid fa-id-card" style="color: #facc15; margin-right: 8px;"></i> Key Individuals & Organisations';
+      individualsLink.href = '#';
+      individualsLink.style.marginTop = '8px';
+      individualsLink.addEventListener('click', async (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.lesson-link').forEach((l) => l.classList.remove('active'));
+        individualsLink.classList.add('active');
+        const { initKeyIndividualsTask } = await import('../key_individuals.js');
+        const contentArea = document.getElementById('content-area');
+        contentArea.innerHTML = '';
+        initKeyIndividualsTask(contentArea, unitData.key_individuals);
+        (document.getElementById('content-area') || window).scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      navContainer.appendChild(individualsLink);
+    }
 
     const worksheetLink = document.createElement('a');
     worksheetLink.className = 'lesson-link';

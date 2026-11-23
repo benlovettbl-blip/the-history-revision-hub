@@ -1535,27 +1535,37 @@
         {
           "term": "God's Punishment",
           "def": "The widespread medieval belief that epidemic disease was a divine retribution sent by God to punish humanity for its sins and test Christian faith.",
-          "definition": "The widespread medieval belief that epidemic disease was a divine retribution sent by God to punish humanity for its sins and test Christian faith."
+          "definition": "The widespread medieval belief that epidemic disease was a divine retribution sent by God to punish humanity for its sins and test Christian faith.",
+          "phonetic": "godz PUN-ish-munt",
+          "pronunciation": "godz PUN-ish-munt"
         },
         {
           "term": "Flagellation",
           "def": "A ritual of public self-scourging with knotted ropes and iron tips undertaken by religious penitents to appease divine wrath during plague outbreaks.",
-          "definition": "A ritual of public self-scourging with knotted ropes and iron tips undertaken by religious penitents to appease divine wrath during plague outbreaks."
+          "definition": "A ritual of public self-scourging with knotted ropes and iron tips undertaken by religious penitents to appease divine wrath during plague outbreaks.",
+          "phonetic": "flaj-uh-LAY-shun",
+          "pronunciation": "flaj-uh-LAY-shun"
         },
         {
           "term": "Astrology",
           "def": "The medical belief that celestial movements, planetary conjunctions, and eclipses directly influenced bodily humours and precipitated epidemics.",
-          "definition": "The medical belief that celestial movements, planetary conjunctions, and eclipses directly influenced bodily humours and precipitated epidemics."
+          "definition": "The medical belief that celestial movements, planetary conjunctions, and eclipses directly influenced bodily humours and precipitated epidemics.",
+          "phonetic": "uh-STROL-uh-jee",
+          "pronunciation": "uh-STROL-uh-jee"
         },
         {
           "term": "Miasma",
           "def": "A harmful, invisible vapour or bad air emanating from rotting organic matter, stagnant water, and cesspools, believed to cause disease when inhaled.",
-          "definition": "A harmful, invisible vapour or bad air emanating from rotting organic matter, stagnant water, and cesspools, believed to cause disease when inhaled."
+          "definition": "A harmful, invisible vapour or bad air emanating from rotting organic matter, stagnant water, and cesspools, believed to cause disease when inhaled.",
+          "phonetic": "my-AZ-muh",
+          "pronunciation": "my-AZ-muh"
         },
         {
           "term": "The Medieval Church",
           "def": "The supreme institutional authority that controlled education, medical training, libraries, and hospitals, enforcing strict adherence to Christian and Galenic orthodoxy.",
-          "definition": "The supreme institutional authority that controlled education, medical training, libraries, and hospitals, enforcing strict adherence to Christian and Galenic orthodoxy."
+          "definition": "The supreme institutional authority that controlled education, medical training, libraries, and hospitals, enforcing strict adherence to Christian and Galenic orthodoxy.",
+          "phonetic": "thuh med-ee-EE-vul church",
+          "pronunciation": "thuh med-ee-EE-vul church"
         }
       ],
       "vocab_cloze_text": "In medieval England, ordinary people and clergy firmly believed that epidemic sickness was [God's Punishment] sent to cleanse sinful souls. In desperation, religious zealots engaged in public [Flagellation] with knotted leather cords to demonstrate physical penance and appease divine fury. Physicians also consulted celestial charts, believing that medical [Astrology] and planetary conjunctions (such as the 1345 alignment of Saturn, Jupiter, and Mars) disrupted human bodies. At the same time, authorities feared [Miasma], an invisible cloud of foul air rising from decaying matter and stagnant swamps that corrupted internal humours. Throughout this era, [The Medieval Church] dominated hospital care, education, and medical libraries, fiercely suppressing any rational challenge to traditional doctrine.",
@@ -3147,27 +3157,37 @@
         {
           "term": "Four Humours",
           "def": "The foundational ancient medical doctrine asserting that human health depended on an equilibrium among four bodily fluids: blood, phlegm, yellow bile, and black bile.",
-          "definition": "The foundational ancient medical doctrine asserting that human health depended on an equilibrium among four bodily fluids: blood, phlegm, yellow bile, and black bile."
+          "definition": "The foundational ancient medical doctrine asserting that human health depended on an equilibrium among four bodily fluids: blood, phlegm, yellow bile, and black bile.",
+          "phonetic": "for HYOO-murz",
+          "pronunciation": "for HYOO-murz"
         },
         {
           "term": "Theory of Opposites",
           "def": "Galen's therapeutic principle prescribing remedies possessing qualities contrary to the disease (e.g. treating cold, wet phlegm with hot, dry pepper).",
-          "definition": "Galen's therapeutic principle prescribing remedies possessing qualities contrary to the disease (e.g. treating cold, wet phlegm with hot, dry pepper)."
+          "definition": "Galen's therapeutic principle prescribing remedies possessing qualities contrary to the disease (e.g. treating cold, wet phlegm with hot, dry pepper).",
+          "phonetic": "THEER-ee ov OP-uh-zits",
+          "pronunciation": "THEER-ee ov OP-uh-zits"
         },
         {
           "term": "Hippocratic Oath",
           "def": "An ancient ethical code sworn by medical practitioners binding them to treat patients diligently, protect life, and preserve confidentiality.",
-          "definition": "An ancient ethical code sworn by medical practitioners binding them to treat patients diligently, protect life, and preserve confidentiality."
+          "definition": "An ancient ethical code sworn by medical practitioners binding them to treat patients diligently, protect life, and preserve confidentiality.",
+          "phonetic": "hip-uh-KRAT-ik ohth",
+          "pronunciation": "hip-uh-KRAT-ik ohth"
         },
         {
           "term": "Clinical Observation",
           "def": "The diagnostic practice pioneered by Hippocrates of carefully examining, recording, and monitoring a patient's symptoms at the bedside before formulating a diagnosis.",
-          "definition": "The diagnostic practice pioneered by Hippocrates of carefully examining, recording, and monitoring a patient's symptoms at the bedside before formulating a diagnosis."
+          "definition": "The diagnostic practice pioneered by Hippocrates of carefully examining, recording, and monitoring a patient's symptoms at the bedside before formulating a diagnosis.",
+          "phonetic": "KLIN-ih-kul ob-zur-VAY-shun",
+          "pronunciation": "KLIN-ih-kul ob-zur-VAY-shun"
         },
         {
           "term": "Galenic Dogma",
           "def": "The unchallengeable medical authority attributed to Claudius Galen, whose anatomical writings were preserved and dogmatically enforced by the Catholic Church.",
-          "definition": "The unchallengeable medical authority attributed to Claudius Galen, whose anatomical writings were preserved and dogmatically enforced by the Catholic Church."
+          "definition": "The unchallengeable medical authority attributed to Claudius Galen, whose anatomical writings were preserved and dogmatically enforced by the Catholic Church.",
+          "phonetic": "guh-LEN-ik DOG-muh",
+          "pronunciation": "guh-LEN-ik DOG-muh"
         }
       ],
       "vocab_cloze_text": "Rational medieval medicine was anchored in the ancient Greek concept of the [Four Humours], which maintained that good health required an exact balance between blood, phlegm, yellow bile, and black bile. Building upon this, Claudius Galen introduced the [Theory of Opposites], arguing that cold and wet sicknesses (like winter colds) should be cured with hot and dry foods like pepper. Trainee physicians swore the sacred [Hippocratic Oath], pledging ethical conduct and confidentiality, and learned the practice of [Clinical Observation] to monitor fever patterns and examine urine flasks at the patient's bedside. However, medical training soon ossified into rigid [Galenic Dogma], because the Roman Catholic Church heavily promoted Galen's anatomical texts as divine proof that God had engineered the human body for a purposeful creator.",
@@ -4747,27 +4767,37 @@
         {
           "term": "Bloodletting",
           "def": "Draining excess blood by cutting a vein, applying leeches, or using heated cups to rebalance the Four Humours.",
-          "definition": "Draining excess blood by cutting a vein, applying leeches, or using heated cups to rebalance the Four Humours."
+          "definition": "Draining excess blood by cutting a vein, applying leeches, or using heated cups to rebalance the Four Humours.",
+          "phonetic": "BLUD-let-ing",
+          "pronunciation": "BLUD-let-ing"
         },
         {
           "term": "Purging",
           "def": "Emptying the stomach or bowels using emetics (to cause vomiting) or laxatives to clear excess humours.",
-          "definition": "Emptying the stomach or bowels using emetics (to cause vomiting) or laxatives to clear excess humours."
+          "definition": "Emptying the stomach or bowels using emetics (to cause vomiting) or laxatives to clear excess humours.",
+          "phonetic": "PUR-jing",
+          "pronunciation": "PUR-jing"
         },
         {
           "term": "Regimen Sanitatis",
           "def": "Preventative health rules on diet, exercise, bathing, sleep, and clean air prescribed by physicians to stay healthy.",
-          "definition": "Preventative health rules on diet, exercise, bathing, sleep, and clean air prescribed by physicians to stay healthy."
+          "definition": "Preventative health rules on diet, exercise, bathing, sleep, and clean air prescribed by physicians to stay healthy.",
+          "phonetic": "REJ-ih-men san-ih-TAH-tis",
+          "pronunciation": "REJ-ih-men san-ih-TAH-tis"
         },
         {
           "term": "Theriaca",
           "def": "A costly spice-and-herb mixture containing up to 70 ingredients, widely trusted as a cure-all remedy.",
-          "definition": "A costly spice-and-herb mixture containing up to 70 ingredients, widely trusted as a cure-all remedy."
+          "definition": "A costly spice-and-herb mixture containing up to 70 ingredients, widely trusted as a cure-all remedy.",
+          "phonetic": "theer-ee-AH-kuh",
+          "pronunciation": "theer-ee-AH-kuh"
         },
         {
           "term": "Herbal Remedies",
           "def": "Everyday medicines mixed from plants, herbs, and honey—such as aloe vera, mint, and camomile—by apothecaries and wise women.",
-          "definition": "Everyday medicines mixed from plants, herbs, and honey—such as aloe vera, mint, and camomile—by apothecaries and wise women."
+          "definition": "Everyday medicines mixed from plants, herbs, and honey—such as aloe vera, mint, and camomile—by apothecaries and wise women.",
+          "phonetic": "HUR-bul REM-uh-deez",
+          "pronunciation": "HUR-bul REM-uh-deez"
         }
       ],
       "vocab_cloze_text": "To restore internal balance when humours became unbalanced, medieval healers relied on [Bloodletting], draining excess blood by cutting a vein, cupping, or applying leeches. Patients also underwent [Purging] with bitter emetics and laxatives to empty their stomachs and bowels. To prevent illness, wealthy citizens followed the [Regimen Sanitatis], a set of rules advising moderate diet, restful sleep, bathing, and exercise. Rich patients bought [Theriaca], a costly spice paste containing up to seventy ingredients. Most everyday illnesses were treated with [Herbal Remedies] mixed from mint, camomile, aloe vera, and honey.",
@@ -6440,27 +6470,37 @@
         {
           "term": "Monastic Infirmary",
           "def": "Hospital wards established inside medieval monasteries and abbeys offering hospitality, shelter, and palliative care to travellers, pilgrims, and the infirm.",
-          "definition": "Hospital wards established inside medieval monasteries and abbeys offering hospitality, shelter, and palliative care to travellers, pilgrims, and the infirm."
+          "definition": "Hospital wards established inside medieval monasteries and abbeys offering hospitality, shelter, and palliative care to travellers, pilgrims, and the infirm.",
+          "phonetic": "muh-NAS-tik in-FUR-muh-ree",
+          "pronunciation": "muh-NAS-tik in-FUR-muh-ree"
         },
         {
           "term": "Barber-Surgeon",
           "def": "Practical craftsmen who performed minor surgery, bloodletting, bone-setting, and tooth extraction using blades without university medical degrees.",
-          "definition": "Practical craftsmen who performed minor surgery, bloodletting, bone-setting, and tooth extraction using blades without university medical degrees."
+          "definition": "Practical craftsmen who performed minor surgery, bloodletting, bone-setting, and tooth extraction using blades without university medical degrees.",
+          "phonetic": "BAR-bur SUR-jun",
+          "pronunciation": "BAR-bur SUR-jun"
         },
         {
           "term": "Apothecary",
           "def": "Tradespeople who prepared, mixed, and sold botanical tinctures, herbal remedies, and ointments in urban shops.",
-          "definition": "Tradespeople who prepared, mixed, and sold botanical tinctures, herbal remedies, and ointments in urban shops."
+          "definition": "Tradespeople who prepared, mixed, and sold botanical tinctures, herbal remedies, and ointments in urban shops.",
+          "phonetic": "uh-POTH-uh-kuh-ree",
+          "pronunciation": "uh-POTH-uh-kuh-ree"
         },
         {
           "term": "University-Trained Physician",
           "def": "Elite practitioners who studied Latin texts, astrological charts, and humoral theory at universities, rarely performing physical surgery.",
-          "definition": "Elite practitioners who studied Latin texts, astrological charts, and humoral theory at universities, rarely performing physical surgery."
+          "definition": "Elite practitioners who studied Latin texts, astrological charts, and humoral theory at universities, rarely performing physical surgery.",
+          "phonetic": "yoo-nih-VUR-sih-tee traynd fih-ZISH-un",
+          "pronunciation": "yoo-nih-VUR-sih-tee traynd fih-ZISH-un"
         },
         {
           "term": "Wise Woman",
           "def": "Respected female community healers who provided folk remedies, botanical brews, and midwifery services to poor rural villagers.",
-          "definition": "Respected female community healers who provided folk remedies, botanical brews, and midwifery services to poor rural villagers."
+          "definition": "Respected female community healers who provided folk remedies, botanical brews, and midwifery services to poor rural villagers.",
+          "phonetic": "WYZ woom-un",
+          "pronunciation": "WYZ woom-un"
         }
       ],
       "vocab_cloze_text": "Medical care in medieval society was divided among very different practitioners. Monks and nuns ran the [Monastic Infirmary], providing quiet shelter, clean bedding, herbal broths, and spiritual solace to elderly or chronically ill pilgrims rather than curative medical surgery. Manual treatments fell to the [Barber-Surgeon], who used razor-sharp blades to amputate gangrenous limbs, extract decayed teeth, and perform phlebotomy for modest fees. Botanical cures and ointments were compounded and sold by the [Apothecary], who trained in guilds to mix herbs, wines, and minerals into commercial tinctures. The elite social tier was occupied by the [University-Trained Physician], who charged high fees to rich clients for academic consultations based on astrological charts and pulse readings without ever performing physical surgery. In remote rural hamlets, most peasant families turned to the local [Wise Woman], whose generationally inherited herbal remedies, bone-setting, and midwifery provided vital frontline care.",
@@ -8156,27 +8196,37 @@
         {
           "term": "Black Death",
           "def": "The catastrophic bubonic and pneumonic plague pandemic that swept England in 1348–49, killing between 30% and 50% of the population.",
-          "definition": "The catastrophic bubonic and pneumonic plague pandemic that swept England in 1348–49, killing between 30% and 50% of the population."
+          "definition": "The catastrophic bubonic and pneumonic plague pandemic that swept England in 1348–49, killing between 30% and 50% of the population.",
+          "phonetic": "BLAK deth",
+          "pronunciation": "BLAK deth"
         },
         {
           "term": "Buboes",
           "def": "Excruciating, dark inflammatory swellings of the lymph nodes in the groin, armpits, and neck characteristic of bubonic plague.",
-          "definition": "Excruciating, dark inflammatory swellings of the lymph nodes in the groin, armpits, and neck characteristic of bubonic plague."
+          "definition": "Excruciating, dark inflammatory swellings of the lymph nodes in the groin, armpits, and neck characteristic of bubonic plague.",
+          "phonetic": "BYOO-bohz",
+          "pronunciation": "BYOO-bohz"
         },
         {
           "term": "Quarantine",
           "def": "The enforced isolation of infected households, travellers, or ships to halt the transmission of contagious disease.",
-          "definition": "The enforced isolation of infected households, travellers, or ships to halt the transmission of contagious disease."
+          "definition": "The enforced isolation of infected households, travellers, or ships to halt the transmission of contagious disease.",
+          "phonetic": "KWOR-un-teen",
+          "pronunciation": "KWOR-un-teen"
         },
         {
           "term": "Pomander",
           "def": "A perforated metal or ceramic container filled with aromatic herbs and spices carried to neutralise foul, pestilential miasma.",
-          "definition": "A perforated metal or ceramic container filled with aromatic herbs and spices carried to neutralise foul, pestilential miasma."
+          "definition": "A perforated metal or ceramic container filled with aromatic herbs and spices carried to neutralise foul, pestilential miasma.",
+          "phonetic": "puh-MAN-dur",
+          "pronunciation": "puh-MAN-dur"
         },
         {
           "term": "Winchester Cemetery Order",
           "def": "The urgent public health measure by authorities to establish mass burial grounds outside town walls to prevent contamination from plague pits.",
-          "definition": "The urgent public health measure by authorities to establish mass burial grounds outside town walls to prevent contamination from plague pits."
+          "definition": "The urgent public health measure by authorities to establish mass burial grounds outside town walls to prevent contamination from plague pits.",
+          "phonetic": "WIN-chuh-stur SEM-uh-tree OR-dur",
+          "pronunciation": "WIN-chuh-stur SEM-uh-tree OR-dur"
         }
       ],
       "vocab_cloze_text": "In the scorching summer of 1348, the lethal pandemic known as the [Black Death] reached the southern ports of Dorset and swept across England, killing roughly half the population. Terrified victims suffered fever, violent vomiting, and hideous egg-sized [Buboes] swelling painfully in the armpits and groin that oozed pus before turning black. To check the terrifying airborne contagion, wealthy gentlemen carried a sweet-smelling [Pomander] filled with dried lavender and rose petals to ward off the deadly miasma. Desperate town magistrates enforced strict [Quarantine], boarding up infected households and burning pitch barrels in city alleys to purify polluted air. In London, municipal authorities issued the [Winchester Cemetery Order], consecrating vast communal burial grounds outside the city gates at West Smithfield and Spitalfields to bury the overwhelming mountain of corpses in deep lime trenches.",
@@ -9344,27 +9394,39 @@
       "vocab": [
         {
           "term": "Church Monasteries",
-          "def": "Medieval abbey libraries where monks copied Latin medical manuscripts by hand under strict Church control."
+          "def": "Medieval abbey libraries where monks copied Latin medical manuscripts by hand under strict Church control.",
+          "phonetic": "church MON-uh-streez",
+          "pronunciation": "church MON-uh-streez"
         },
         {
           "term": "Printing Press",
-          "def": "Gutenberg’s mechanical press (c1440) using metal type to mass-produce identical medical books and anatomical drawings across Europe."
+          "def": "Gutenberg’s mechanical press (c1440) using metal type to mass-produce identical medical books and anatomical drawings across Europe.",
+          "phonetic": "PRIN-ting pres",
+          "pronunciation": "PRIN-ting pres"
         },
         {
           "term": "The Royal Society",
-          "def": "An elite scientific institution founded in London in 1660 and granted a Royal Charter by Charles II in 1662 to advance laboratory experimentation."
+          "def": "An elite scientific institution founded in London in 1660 and granted a Royal Charter by Charles II in 1662 to advance laboratory experimentation.",
+          "phonetic": "thuh ROY-ul suh-SY-uh-tee",
+          "pronunciation": "thuh ROY-ul suh-SY-uh-tee"
         },
         {
           "term": "Nullius in Verba",
-          "def": "The Latin motto of the Royal Society meaning \"Take nobody's word for it\", demanding physical experimental demonstration over ancient authority."
+          "def": "The Latin motto of the Royal Society meaning \"Take nobody's word for it\", demanding physical experimental demonstration over ancient authority.",
+          "phonetic": "NUL-ee-us in VUR-buh",
+          "pronunciation": "NUL-ee-us in VUR-buh"
         },
         {
           "term": "Philosophical Transactions",
-          "def": "The world's first peer-reviewed scientific journal, launched by the Royal Society in 1665 to publish and debate experimental findings."
+          "def": "The world's first peer-reviewed scientific journal, launched by the Royal Society in 1665 to publish and debate experimental findings.",
+          "phonetic": "fil-uh-SOF-ih-kul tranz-AK-shunz",
+          "pronunciation": "fil-uh-SOF-ih-kul tranz-AK-shunz"
         },
         {
           "term": "Renaissance Paradox",
-          "def": "The historical reality that revolutionary advances in anatomy, scientific method, and communication occurred alongside complete stagnation in medical cures."
+          "def": "The historical reality that revolutionary advances in anatomy, scientific method, and communication occurred alongside complete stagnation in medical cures.",
+          "phonetic": "rih-NAY-suns PAR-uh-doks",
+          "pronunciation": "rih-NAY-suns PAR-uh-doks"
         }
       ],
       "vocab_cloze_text": "Throughout the medieval period, medical books had to be hand-copied in [Church Monasteries], which was slow and heavily censored. In c1440, Johannes Gutenberg invented [Printing Press], which allowed identical scientific books and anatomical plates to be mass-produced cheaply across Europe. In 1660, British natural philosophers established [The Royal Society], receiving a royal charter from Charles II. Operating under their motto [Nullius in Verba], members rejected classical dogma in favour of empirical experiments. In 1665, they published [Philosophical Transactions], creating the world’s first peer-reviewed scientific journal. However, because microscopic discoveries were not linked to germs, ordinary healthcare remained trapped in the [Renaissance Paradox].",
@@ -10967,27 +11029,39 @@
       "vocab": [
         {
           "term": "English Hippocrates",
-          "def": "Honorary title given to Thomas Sydenham because of his commitment to clinical observation at the bedside and natural healing."
+          "def": "Honorary title given to Thomas Sydenham because of his commitment to clinical observation at the bedside and natural healing.",
+          "phonetic": "ING-glish hih-POK-ruh-teez",
+          "pronunciation": "ING-glish hih-POK-ruh-teez"
         },
         {
           "term": "Observationes Medicae (1676)",
-          "def": "Sydenham’s landmark medical textbook classifying diseases into separate species based on detailed symptom clusters."
+          "def": "Sydenham’s landmark medical textbook classifying diseases into separate species based on detailed symptom clusters.",
+          "phonetic": "ob-zur-vay-see-OH-neez MED-ih-kee",
+          "pronunciation": "ob-zur-vay-see-OH-neez MED-ih-kee"
         },
         {
           "term": "Disease Classification",
-          "def": "The revolutionary idea that diseases are distinct external entities that affect different people identically, rather than unique personal imbalances."
+          "def": "The revolutionary idea that diseases are distinct external entities that affect different people identically, rather than unique personal imbalances.",
+          "phonetic": "dih-ZEEZ klas-ih-fih-KAY-shun",
+          "pronunciation": "dih-ZEEZ klas-ih-fih-KAY-shun"
         },
         {
           "term": "Cinchona Bark",
-          "def": "Peruvian tree bark containing natural quinine, imported from South America and prescribed by Sydenham to cure malarial fevers."
+          "def": "Peruvian tree bark containing natural quinine, imported from South America and prescribed by Sydenham to cure malarial fevers.",
+          "phonetic": "sin-KOH-nuh bark",
+          "pronunciation": "sin-KOH-nuh bark"
         },
         {
           "term": "Cooling Regime",
-          "def": "Sydenham’s common-sense smallpox treatment replacing suffocating heating blankets with open windows, fresh air, and cool fluids."
+          "def": "Sydenham’s common-sense smallpox treatment replacing suffocating heating blankets with open windows, fresh air, and cool fluids.",
+          "phonetic": "KOO-ling ray-ZHEEM",
+          "pronunciation": "KOO-ling ray-ZHEEM"
         },
         {
           "term": "Humoural Persistence",
-          "def": "The enduring reliance of physicians (including Sydenham) on bleeding and purging due to the lack of knowledge about germs."
+          "def": "The enduring reliance of physicians (including Sydenham) on bleeding and purging due to the lack of knowledge about germs.",
+          "phonetic": "HYOO-muh-rul pur-SIS-tuns",
+          "pronunciation": "HYOO-muh-rul pur-SIS-tuns"
         }
       ],
       "vocab_cloze_text": "Thomas Sydenham was nicknamed the [English Hippocrates] because he rejected theoretical university book-learning in favour of close bedside observation. In his 1676 masterwork [Observationes Medicae (1676)], he pioneered [Disease Classification], arguing that illnesses were distinct external species like plants in a botany book, allowing him to separate measles from scarlet fever. For treatments, he prescribed [Cinchona Bark] containing quinine for malaria and introduced a revolutionary [Cooling Regime] for smallpox patients. However, because germs were unknown, Sydenham still practised [Humoural Persistence], routinely bleeding and purging his patients.",
@@ -12687,27 +12761,39 @@
       "vocab": [
         {
           "term": "De Fabrica (1543)",
-          "def": "De Humani Corporis Fabrica (\"On the Fabric of the Human Body\"), Vesalius’s masterwork featuring 200+ accurate anatomical woodcuts."
+          "def": "De Humani Corporis Fabrica (\"On the Fabric of the Human Body\"), Vesalius’s masterwork featuring 200+ accurate anatomical woodcuts.",
+          "phonetic": "day FAB-rih-kuh",
+          "pronunciation": "day FAB-rih-kuh"
         },
         {
           "term": "Padua Anatomical Theatre",
-          "def": "The famous tiered lecture theatre at Padua University where Vesalius performed direct human dissections before crowds of students."
+          "def": "The famous tiered lecture theatre at Padua University where Vesalius performed direct human dissections before crowds of students.",
+          "phonetic": "PAD-yoo-uh an-uh-TOM-ih-kul THEE-uh-tur",
+          "pronunciation": "PAD-yoo-uh an-uh-TOM-ih-kul THEE-uh-tur"
         },
         {
           "term": "Cathedra",
-          "def": "The elevated professor’s pulpit in medieval universities from which professors chanted Galen without touching the cadaver."
+          "def": "The elevated professor’s pulpit in medieval universities from which professors chanted Galen without touching the cadaver.",
+          "phonetic": "kuh-THEE-druh",
+          "pronunciation": "kuh-THEE-druh"
         },
         {
           "term": "Galenic Errors",
-          "def": "Over 300 anatomical mistakes made by Galen (such as the 2-part jawbone and liver lobes) caused by dissecting animals instead of humans."
+          "def": "Over 300 anatomical mistakes made by Galen (such as the 2-part jawbone and liver lobes) caused by dissecting animals instead of humans.",
+          "phonetic": "guh-LEN-ik ER-urz",
+          "pronunciation": "guh-LEN-ik ER-urz"
         },
         {
           "term": "Heart Septum",
-          "def": "The solid central muscular wall dividing the heart ventricles, which Vesalius proved had no invisible pores, challenging Galen’s circulation theory."
+          "def": "The solid central muscular wall dividing the heart ventricles, which Vesalius proved had no invisible pores, challenging Galen’s circulation theory.",
+          "phonetic": "hart SEP-tum",
+          "pronunciation": "hart SEP-tum"
         },
         {
           "term": "Empirical Anatomy",
-          "def": "The scientific method of studying human anatomy based purely on physical, visible evidence observed through personal dissection."
+          "def": "The scientific method of studying human anatomy based purely on physical, visible evidence observed through personal dissection.",
+          "phonetic": "im-PIR-ih-kul uh-NAT-uh-mee",
+          "pronunciation": "im-PIR-ih-kul uh-NAT-uh-mee"
         }
       ],
       "vocab_cloze_text": "In 1537, Andreas Vesalius became professor of surgery at the [Padua Anatomical Theatre]. He shocked traditionalists by descending from the elevated [Cathedra] to perform human dissections himself. In his 1543 masterwork [De Fabrica (1543)], he corrected over 300 [Galenic Errors], proving that the ancient Roman had only dissected animals. For example, he proved that the human [Heart Septum] was solid with no invisible holes. By replacing dogma with [Empirical Anatomy], Vesalius revolutionised surgical education, even though accurate anatomy could not cure infectious disease.",
@@ -14316,27 +14402,39 @@
       "vocab": [
         {
           "term": "De Motu Cordis (1628)",
-          "def": "Harvey’s revolutionary book proving that blood circulates continuously in a closed loop pumped by the heart."
+          "def": "Harvey’s revolutionary book proving that blood circulates continuously in a closed loop pumped by the heart.",
+          "phonetic": "day MOH-too KOR-dis",
+          "pronunciation": "day MOH-too KOR-dis"
         },
         {
           "term": "Mechanical Pump",
-          "def": "Harvey’s model of the heart as a muscle that contracts to push blood under pressure into arteries, inspired by water pumps."
+          "def": "Harvey’s model of the heart as a muscle that contracts to push blood under pressure into arteries, inspired by water pumps.",
+          "phonetic": "muh-KAN-ih-kul pump",
+          "pronunciation": "muh-KAN-ih-kul pump"
         },
         {
           "term": "Vein Valves",
-          "def": "One-way internal flaps in veins discovered by Fabricius that Harvey proved only permit blood to flow toward the heart."
+          "def": "One-way internal flaps in veins discovered by Fabricius that Harvey proved only permit blood to flow toward the heart.",
+          "phonetic": "VAYN valvz",
+          "pronunciation": "VAYN valvz"
         },
         {
           "term": "Circulator",
-          "def": "A derogatory 17th-century insult used by conservative physicians to mock Harvey as an irrational charlatan or quack."
+          "def": "A derogatory 17th-century insult used by conservative physicians to mock Harvey as an irrational charlatan or quack.",
+          "phonetic": "SUR-kyoo-lay-tur",
+          "pronunciation": "SUR-kyoo-lay-tur"
         },
         {
           "term": "Capillaries",
-          "def": "Microscopic blood vessels connecting arteries and veins, invisible to Harvey and discovered by Marcello Malpighi in 1661."
+          "def": "Microscopic blood vessels connecting arteries and veins, invisible to Harvey and discovered by Marcello Malpighi in 1661.",
+          "phonetic": "kuh-PIL-uh-reez",
+          "pronunciation": "kuh-PIL-uh-reez"
         },
         {
           "term": "Blood Volume Calculation",
-          "def": "Harvey’s mathematical proof showing the heart pumps 540 pints an hour, disproving Galen’s liver theory."
+          "def": "Harvey’s mathematical proof showing the heart pumps 540 pints an hour, disproving Galen’s liver theory.",
+          "phonetic": "blud VOL-yoom kal-kyoo-LAY-shun",
+          "pronunciation": "blud VOL-yoom kal-kyoo-LAY-shun"
         }
       ],
       "vocab_cloze_text": "In 1628, William Harvey published [De Motu Cordis (1628)], completely disproving Galen’s theory that blood was burned as fuel. Harvey modelled the heart as a [Mechanical Pump] driving blood through arteries. Using a [Blood Volume Calculation], he showed the heart pumped 540 pints an hour, which no liver could manufacture. In arm experiments, he proved that [Vein Valves] forced blood to flow in only one direction. Although conservative critics dismissed him as a [Circulator], Harvey was correct, though he could not see microscopic [Capillaries] connecting the vessels.",
@@ -16111,27 +16209,39 @@
       "vocab": [
         {
           "term": "Bills of Mortality",
-          "def": "Weekly published casualty lists in London recording deaths parish by parish, an early form of epidemiological tracking."
+          "def": "Weekly published casualty lists in London recording deaths parish by parish, an early form of epidemiological tracking.",
+          "phonetic": "bilz ov mor-TAL-ih-tee",
+          "pronunciation": "bilz ov mor-TAL-ih-tee"
         },
         {
           "term": "Municipal Quarantine",
-          "def": "The compulsory 28-day boarding up of infected houses with red crosses and watchmen enforced by the Mayor of London."
+          "def": "The compulsory 28-day boarding up of infected houses with red crosses and watchmen enforced by the Mayor of London.",
+          "phonetic": "myoo-NIS-ih-pul KWOR-un-teen",
+          "pronunciation": "myoo-NIS-ih-pul KWOR-un-teen"
         },
         {
           "term": "Searchers of the Dead",
-          "def": "Women appointed by London parishes to inspect corpses, identify plague symptoms, and report causes of death."
+          "def": "Women appointed by London parishes to inspect corpses, identify plague symptoms, and report causes of death.",
+          "phonetic": "SUR-churz ov thuh ded",
+          "pronunciation": "SUR-churz ov thuh ded"
         },
         {
           "term": "Plague Doctor Beak",
-          "def": "Bird-like leather mask stuffed with sweet herbs and spices to filter out poisonous miasmas while treating victims."
+          "def": "Bird-like leather mask stuffed with sweet herbs and spices to filter out poisonous miasmas while treating victims.",
+          "phonetic": "PLAYG dok-tur beek",
+          "pronunciation": "PLAYG dok-tur beek"
         },
         {
           "term": "Miasmatic Pomander",
-          "def": "A hollow ball or orange studded with cloves and herbs carried to ward off bad smells believed to cause the plague."
+          "def": "A hollow ball or orange studded with cloves and herbs carried to ward off bad smells believed to cause the plague.",
+          "phonetic": "my-az-MAT-ik puh-MAN-dur",
+          "pronunciation": "my-az-MAT-ik puh-MAN-dur"
         },
         {
           "term": "Mass Lime Pits",
-          "def": "Deep communal trenches dug outside London city walls where corpses collected by dead-carts were buried in quicklime."
+          "def": "Deep communal trenches dug outside London city walls where corpses collected by dead-carts were buried in quicklime.",
+          "phonetic": "mas LYM pits",
+          "pronunciation": "mas LYM pits"
         }
       ],
       "vocab_cloze_text": "During the 1665 epidemic, London parishes published weekly [Bills of Mortality] to monitor casualties. Parishes appointed [Searchers of the Dead] to inspect corpses for buboes. To contain the spread, the Mayor enforced strict [Municipal Quarantine], padlocking infected houses for 28 days with red crosses. Physicians wore a protective [Plague Doctor Beak] packed with dried herbs, while citizens carried a [Miasmatic Pomander] against foul air. At night, dead-carts dumped bodies into [Mass Lime Pits] outside the city walls. Yet because rat fleas were unknown, these civic efforts could not stop the epidemic.",
@@ -17837,23 +17947,33 @@
       "vocab": [
         {
           "term": "Spontaneous Generation",
-          "definition": "The ancient, incorrect belief that living microscopic organisms, maggots, and fleas naturally generated out of rotting, decaying organic matter."
+          "definition": "The ancient, incorrect belief that living microscopic organisms, maggots, and fleas naturally generated out of rotting, decaying organic matter.",
+          "phonetic": "spon-TAY-nee-us jen-uh-RAY-shun",
+          "pronunciation": "spon-TAY-nee-us jen-uh-RAY-shun"
         },
         {
           "term": "Germ Theory (1861)",
-          "definition": "Louis Pasteur’s revolutionary discovery that microscopic airborne microorganisms (bacteria) cause fermentation, decay, and human infectious disease."
+          "definition": "Louis Pasteur’s revolutionary discovery that microscopic airborne microorganisms (bacteria) cause fermentation, decay, and human infectious disease.",
+          "phonetic": "JURM theer-ee",
+          "pronunciation": "JURM theer-ee"
         },
         {
           "term": "Agar Jelly",
-          "definition": "A nutrient-rich seaweed gelatin used in flat glass Petri dishes by Robert Koch to grow pure, unmixed colonies of individual bacteria."
+          "definition": "A nutrient-rich seaweed gelatin used in flat glass Petri dishes by Robert Koch to grow pure, unmixed colonies of individual bacteria.",
+          "phonetic": "AY-gar JEL-ee",
+          "pronunciation": "AY-gar JEL-ee"
         },
         {
           "term": "Aniline Dyes",
-          "definition": "Synthetic industrial chemical dyes (such as methyl violet) used by Robert Koch to stain transparent bacteria so they stood out sharply under microscopes."
+          "definition": "Synthetic industrial chemical dyes (such as methyl violet) used by Robert Koch to stain transparent bacteria so they stood out sharply under microscopes.",
+          "phonetic": "AN-ih-leen dyz",
+          "pronunciation": "AN-ih-leen dyz"
         },
         {
           "term": "Koch’s Postulates (1882)",
-          "definition": "A strict four-step scientific method established by Robert Koch to conclusively prove that a specific microbe causes a specific disease."
+          "definition": "A strict four-step scientific method established by Robert Koch to conclusively prove that a specific microbe causes a specific disease.",
+          "phonetic": "KOKS POS-tyoo-luts",
+          "pronunciation": "KOKS POS-tyoo-luts"
         }
       ],
       "vocab_cloze_text": "For centuries, physicians believed in [Spontaneous Generation], assuming that decaying organic matter created microbes out of nothing. In 1861, French chemist Louis Pasteur published his groundbreaking [Germ Theory (1861)], using swan-neck flasks to prove that airborne microbes caused decay. However, British doctors resisted because Pasteur was a chemist. The deadlock was broken by German physician Robert Koch, who grew pure bacterial cultures on [Agar Jelly] and stained microbes with synthetic [Aniline Dyes]. In 1882, Koch published [Koch’s Postulates (1882)], establishing four scientific rules to prove that specific microbes caused specific diseases.",
@@ -19572,23 +19692,33 @@
       "vocab": [
         {
           "term": "Inoculation",
-          "definition": "The risky 18th-century practice of scratching live smallpox pus into a healthy person’s skin to try to build immunity."
+          "definition": "The risky 18th-century practice of scratching live smallpox pus into a healthy person’s skin to try to build immunity.",
+          "phonetic": "ih-nok-yoo-LAY-shun",
+          "pronunciation": "ih-nok-yoo-LAY-shun"
         },
         {
           "term": "Vaccination",
-          "definition": "Edward Jenner’s revolutionary 1796 method of preventing smallpox by injecting benign cowpox matter (from Latin vacca for cow)."
+          "definition": "Edward Jenner’s revolutionary 1796 method of preventing smallpox by injecting benign cowpox matter (from Latin vacca for cow).",
+          "phonetic": "vak-sih-NAY-shun",
+          "pronunciation": "vak-sih-NAY-shun"
         },
         {
           "term": "Cowpox",
-          "definition": "A mild blistering disease caught by dairy milkmaids from cows that protected people against deadly smallpox."
+          "definition": "A mild blistering disease caught by dairy milkmaids from cows that protected people against deadly smallpox.",
+          "phonetic": "KOW-poks",
+          "pronunciation": "KOW-poks"
         },
         {
           "term": "1853 Compulsory Act",
-          "definition": "A landmark parliamentary law making infant smallpox vaccination legally mandatory in Britain, marking a major retreat from laissez-faire."
+          "definition": "A landmark parliamentary law making infant smallpox vaccination legally mandatory in Britain, marking a major retreat from laissez-faire.",
+          "phonetic": "ay-TEEN fif-tee-THREE kum-PUL-suh-ree akt",
+          "pronunciation": "ay-TEEN fif-tee-THREE kum-PUL-suh-ree akt"
         },
         {
           "term": "Anti-Vaccination League",
-          "definition": "A protest organisation formed in the 1860s by British citizens who campaigned against mandatory vaccination on religious and civil liberty grounds."
+          "definition": "A protest organisation formed in the 1860s by British citizens who campaigned against mandatory vaccination on religious and civil liberty grounds.",
+          "phonetic": "AN-tee vak-sih-NAY-shun leeg",
+          "pronunciation": "AN-tee vak-sih-NAY-shun leeg"
         }
       ],
       "vocab_cloze_text": "In the eighteenth century, wealthy Britons paid for dangerous [Inoculation], which used active smallpox pus and risked starting lethal epidemics. In 1796, Gloucestershire doctor Edward Jenner pioneered safe [Vaccination] using benign [Cowpox] taken from milkmaid Sarah Nelmes. Jenner tested his theory on eight-year-old James Phipps, proving he was immune. Parliament granted Jenner £30,000, and the [1853 Compulsory Act] made infant vaccination mandatory. Despite opposition from the [Anti-Vaccination League], Jenner had created the first scientific preventative vaccine in world history.",
@@ -21249,23 +21379,33 @@
       "vocab": [
         {
           "term": "Hospitalism",
-          "definition": "A 19th-century medical term describing the deadly infections (gangrene, septicaemia) caught by patients inside filthy, overcrowded hospital wards."
+          "definition": "A 19th-century medical term describing the deadly infections (gangrene, septicaemia) caught by patients inside filthy, overcrowded hospital wards.",
+          "phonetic": "HOS-pih-tul-iz-um",
+          "pronunciation": "HOS-pih-tul-iz-um"
         },
         {
           "term": "Scutari Barrack Hospital",
-          "definition": "The British military hospital near Constantinople during the Crimean War where Florence Nightingale introduced military-grade sanitary reforms."
+          "definition": "The British military hospital near Constantinople during the Crimean War where Florence Nightingale introduced military-grade sanitary reforms.",
+          "phonetic": "skoo-TAH-ree BAR-uk HOS-pih-tul",
+          "pronunciation": "skoo-TAH-ree BAR-uk HOS-pih-tul"
         },
         {
           "term": "Coxcomb (Polar Area Chart)",
-          "definition": "A revolutionary statistical circular chart invented by Florence Nightingale in 1858 to visually prove that preventable disease killed more soldiers than combat."
+          "definition": "A revolutionary statistical circular chart invented by Florence Nightingale in 1858 to visually prove that preventable disease killed more soldiers than combat.",
+          "phonetic": "KOKS-kohm (POH-lur AIR-ee-uh chart)",
+          "pronunciation": "KOKS-kohm (POH-lur AIR-ee-uh chart)"
         },
         {
           "term": "Pavilion Hospital Plan",
-          "definition": "An architectural design championed by Nightingale featuring separate detached wards with large facing windows for cross-ventilation and glazed wipeable walls."
+          "definition": "An architectural design championed by Nightingale featuring separate detached wards with large facing windows for cross-ventilation and glazed wipeable walls.",
+          "phonetic": "puh-VIL-yun HOS-pih-tul plan",
+          "pronunciation": "puh-VIL-yun HOS-pih-tul plan"
         },
         {
           "term": "Nightingale Training School (1860)",
-          "definition": "The world’s first professional nursing academy, founded at St Thomas’ Hospital in London, establishing nursing as a respected scientific career."
+          "definition": "The world’s first professional nursing academy, founded at St Thomas’ Hospital in London, establishing nursing as a respected scientific career.",
+          "phonetic": "NY-ting-gayl TRAY-ning skool",
+          "pronunciation": "NY-ting-gayl TRAY-ning skool"
         }
       ],
       "vocab_cloze_text": "In the early nineteenth century, hospitals were lethal centres of [Hospitalism], where patients caught deadly infections from unwashed bedding and doctors’ hands. In 1854, during the Crimean War, Florence Nightingale led 38 nurses to [Scutari Barrack Hospital], cutting the death rate from 42% to 2% through strict hygiene. In 1858, she invented the [Coxcomb (Polar Area Chart)] to prove to Queen Victoria that filth caused more deaths than battle. She redesigned hospitals using the [Pavilion Hospital Plan] with large facing windows, and established the [Nightingale Training School (1860)] at St Thomas’ Hospital to professionalise nursing.",
@@ -22886,23 +23026,33 @@
       "vocab": [
         {
           "term": "Chloroform (1847)",
-          "definition": "A potent, non-flammable liquid chemical vapour discovered by James Simpson that produced painless surgical anaesthesia and unconsciousness."
+          "definition": "A potent, non-flammable liquid chemical vapour discovered by James Simpson that produced painless surgical anaesthesia and unconsciousness.",
+          "phonetic": "KLOR-uh-form",
+          "pronunciation": "KLOR-uh-form"
         },
         {
           "term": "The \"Black Period\" of Surgery",
-          "definition": "The era between 1846 and 1865 when surgical infection deaths rose because anaesthetics led doctors to perform longer operations with unwashed hands."
+          "definition": "The era between 1846 and 1865 when surgical infection deaths rose because anaesthetics led doctors to perform longer operations with unwashed hands.",
+          "phonetic": "thuh BLAK PEER-ee-ud ov SUR-juh-ree",
+          "pronunciation": "thuh BLAK PEER-ee-ud ov SUR-juh-ree"
         },
         {
           "term": "Antiseptic Surgery",
-          "definition": "Joseph Lister’s technique of using chemical carbolic acid wash and spray to actively kill bacteria already present in wounds and on instruments."
+          "definition": "Joseph Lister’s technique of using chemical carbolic acid wash and spray to actively kill bacteria already present in wounds and on instruments.",
+          "phonetic": "an-tee-SEP-tik SUR-juh-ree",
+          "pronunciation": "an-tee-SEP-tik SUR-juh-ree"
         },
         {
           "term": "Aseptic Surgery",
-          "definition": "The modern surgical method of sterilising the entire operating environment (instruments, gowns, gloves, air) to keep all germs out completely."
+          "definition": "The modern surgical method of sterilising the entire operating environment (instruments, gowns, gloves, air) to keep all germs out completely.",
+          "phonetic": "ay-SEP-tik SUR-juh-ree",
+          "pronunciation": "ay-SEP-tik SUR-juh-ree"
         },
         {
           "term": "Autoclave (1881)",
-          "definition": "A sealed pressurised steam chamber invented by Charles Chamberland to sterilise surgical instruments at temperatures far above boiling water."
+          "definition": "A sealed pressurised steam chamber invented by Charles Chamberland to sterilise surgical instruments at temperatures far above boiling water.",
+          "phonetic": "AW-toh-klayv",
+          "pronunciation": "AW-toh-klayv"
         }
       ],
       "vocab_cloze_text": "Before the 1840s, surgery was paralysed by pain, bleeding, and infection. In 1847, Edinburgh doctor James Simpson discovered [Chloroform (1847)], which conquered pain but sparked the [The \"Black Period\" of Surgery], during which infection deaths skyrocketed because surgeons operated deeper with dirty hands. In 1865, Glasgow surgeon Joseph Lister pioneered [Antiseptic Surgery], applying carbolic acid to James Greenlees’ compound fracture. Lister cut mortality from 45% to 15%. By the 1890s, medicine transitioned to [Aseptic Surgery], using high-pressure steam [Autoclave (1881)] chambers, sterile gowns, and rubber gloves.",
@@ -24714,23 +24864,33 @@
       "vocab": [
         {
           "term": "Cholera",
-          "definition": "A deadly water-borne bacterial disease that caused fatal dehydration through violent diarrhoea and vomiting, killing thousands in 19th-century Britain."
+          "definition": "A deadly water-borne bacterial disease that caused fatal dehydration through violent diarrhoea and vomiting, killing thousands in 19th-century Britain.",
+          "phonetic": "KOL-uh-ruh",
+          "pronunciation": "KOL-uh-ruh"
         },
         {
           "term": "Laissez-faire",
-          "definition": "The British government policy of non-interference in local affairs, believing taxpayers should not pay for public sanitation or sewer networks."
+          "definition": "The British government policy of non-interference in local affairs, believing taxpayers should not pay for public sanitation or sewer networks.",
+          "phonetic": "les-ay-FAIR",
+          "pronunciation": "les-ay-FAIR"
         },
         {
           "term": "Broad Street Pump (1854)",
-          "definition": "The public water pump in Soho, London, identified by Dr John Snow as the source of a lethal cholera epidemic due to a leaking nearby cesspool."
+          "definition": "The public water pump in Soho, London, identified by Dr John Snow as the source of a lethal cholera epidemic due to a leaking nearby cesspool.",
+          "phonetic": "BRAWD street pump",
+          "pronunciation": "BRAWD street pump"
         },
         {
           "term": "The Great Stink (1858)",
-          "definition": "A summer heatwave that caused London’s sewage-filled River Thames to ferment, forcing Parliament to fund Bazalgette’s massive sewer network."
+          "definition": "A summer heatwave that caused London’s sewage-filled River Thames to ferment, forcing Parliament to fund Bazalgette’s massive sewer network.",
+          "phonetic": "thuh GRAYT stink",
+          "pronunciation": "thuh GRAYT stink"
         },
         {
           "term": "1875 Public Health Act",
-          "definition": "A landmark compulsory parliamentary act legally forcing all British town councils to provide clean water, sewers, refuse collection, and medical officers."
+          "definition": "A landmark compulsory parliamentary act legally forcing all British town councils to provide clean water, sewers, refuse collection, and medical officers.",
+          "phonetic": "ay-TEEN sev-un-tee-FYV PUB-lik helth akt",
+          "pronunciation": "ay-TEEN sev-un-tee-FYV PUB-lik helth akt"
         }
       ],
       "vocab_cloze_text": "During the nineteenth century, British cities suffered lethal epidemics of water-borne [Cholera]. The government maintained a strict [Laissez-faire] policy, refusing to fund public sewers. In 1854, John Snow mapped deaths in Soho and proved the [Broad Street Pump (1854)] was contaminated by a leaking cesspool. Although the Board of Health rejected his findings, the [The Great Stink (1858)] forced Parliament to build London’s intercepting sewers. Finally, the compulsory [1875 Public Health Act] forced all local councils to provide clean water and drainage, wiping out cholera from Britain.",
@@ -25946,6 +26106,77 @@
           "Source C": "Watson and Crick’s DNA Double Helix Demonstration Model, Science Museum, London (1953). Built at Cambridge’s Cavendish Laboratory in 1953 using Rosalind Franklin’s X-ray measurements and Erwin Chargaff’s chemical ratios, thirty-eight of the original precision-cut metal base plates are preserved in this Science Museum model (Object 1977-310). **Hinge Question:** Why did unlocking the exact physical geometry of DNA in Source C revolutionise the diagnosis of genetic disorders decades before doctors could cure them?",
           "Source D": "President Bill Clinton and Prime Minister Tony Blair, Joint Declaration on the Human Genome Project (26 June 2000). The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly. **Hinge Question:** Why has diagnosing genetic disease through screening progressed much faster than discovering genetic cures like gene editing?",
           "Source E": "Dr Francis Collins, Commentary on the 'Treatment Gap' in Genomic Medicine (2003). In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative surgery, but repairing faulty genes with gene therapy remains extremely difficult. **Hinge Question:** How does knowing you carry a genetic disease without having an available cure change the psychological and ethical role of the doctor?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Mendel, Photograph 51 & The 1953 Double Helix (Stages 1–3) (50 mins)",
+            "focus": "Mendel, Photograph 51 & The 1953 Double Helix (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving 1831–54 industrial cholera outbreaks, John Snow’s 1854 Broad Street pump mapping and Southwark/Lambeth water comparison, the 1858 Great Stink, and the compulsory 1875 Public Health Act from KT 3.5.",
+                "instruction": "Complete the spaced Do Now retrieving 1831–54 industrial cholera outbreaks, John Snow’s 1854 Broad Street pump mapping and Southwark/Lambeth water comparison, the 1858 Great Stink, and the compulsory 1875 Public Health Act from KT 3.5."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Contrast 19th-century bacteriology (Pasteur and Koch isolating external microbes) with 20th-century hereditary mysteries like haemophilia, tracing how Rosalind Franklin and Raymond Gosling’s X-ray crystallography (Photograph 51) at King’s College London enabled James Watson and Francis Crick’s 1953 Cavendish double-helix model.",
+                "instruction": "Contrast 19th-century bacteriology (Pasteur and Koch isolating external microbes) with 20th-century hereditary mysteries like haemophilia, tracing how Rosalind Franklin and Raymond Gosling’s X-ray crystallography (Photograph 51) at King’s College London enabled James Watson and Francis Crick’s 1953 Cavendish double-helix model."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Shared reading of Stages 1–3 covering chromosomal inheritance, Photograph 51, and chemical base pairing (Adenine–Thymine, Cytosine–Guanine), completing Workbook Verso Spine stages 1–3.",
+                "instruction": "Shared reading of Stages 1–3 covering chromosomal inheritance, Photograph 51, and chemical base pairing (Adenine–Thymine, Cytosine–Guanine), completing Workbook Verso Spine stages 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Gregor Mendel’s inheritance laws) with Source B (Rosalind Franklin’s 1952 MRC crystallography report) to test how high-resolution physics unlocked biological causation.",
+                "instruction": "Compare Source A (Gregor Mendel’s inheritance laws) with Source B (Rosalind Franklin’s 1952 MRC crystallography report) to test how high-resolution physics unlocked biological causation."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Human Genome Project, Screening & Paper 1 Writing (Stages 4–5) (50 mins)",
+            "focus": "Human Genome Project, Screening & Paper 1 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced recall check on why Germ Theory could not explain hereditary disease, Franklin’s X-ray diffraction proof, and Watson and Crick’s 1953 base-pairing model.",
+                "instruction": "Spaced recall check on why Germ Theory could not explain hereditary disease, Franklin’s X-ray diffraction proof, and Watson and Crick’s 1953 base-pairing model."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on the international Human Genome Project (1990–2003 mapping 3 billion base pairs with supercomputers) and modern genetic screening (BRCA1/2 preventative surgery, Down’s/cystic fibrosis testing) versus the ‘treatment gap’ where gene therapy still lags behind diagnosis, examining Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on the international Human Genome Project (1990–2003 mapping 3 billion base pairs with supercomputers) and modern genetic screening (BRCA1/2 preventative surgery, Down’s/cystic fibrosis testing) versus the ‘treatment gap’ where gene therapy still lags behind diagnosis, examining Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way scientific methods for investigating disease causes in c1950–c2000 differed from c1870–c1900 [4m] and Q4 Explain why there was rapid progress in understanding the causes of disease c1950–present [12m].",
+                "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way scientific methods for investigating disease causes in c1950–c2000 differed from c1870–c1900 [4m] and Q4 Explain why there was rapid progress in understanding the causes of disease c1950–present [12m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Green-pen DIRT check: verify Q3 contrasts BOTH eras explicitly, and check Q4 links teamwork (King’s/Cavendish/HGP), technology (X-ray crystallography, electron microscopes, supercomputers), and government/Wellcome funding.",
+                "instruction": "Green-pen DIRT check: verify Q3 contrasts BOTH eras explicitly, and check Q4 links teamwork (King’s/Cavendish/HGP), technology (X-ray crystallography, electron microscopes, supercomputers), and government/Wellcome funding."
+              }
+            ]
+          }
         }
       },
       "fun_facts": [
@@ -26266,27 +26497,37 @@
         {
           "term": "DNA (Deoxyribonucleic Acid)",
           "definition": "The double-stranded helical molecule inside cell nuclei that carries genetic instructions for living organisms.",
-          "example": "Watson and Crick discovered the double-helix structure of DNA in 1953."
+          "example": "Watson and Crick discovered the double-helix structure of DNA in 1953.",
+          "phonetic": "dee-en-AY (dee-ok-see-ry-boh-nyoo-KLAY-ik AS-id)",
+          "pronunciation": "dee-en-AY (dee-ok-see-ry-boh-nyoo-KLAY-ik AS-id)"
         },
         {
           "term": "X-ray Crystallography",
           "definition": "A laboratory imaging technique that passes X-rays through crystallised molecules to produce diffraction patterns revealing molecular structure.",
-          "example": "Rosalind Franklin used X-ray crystallography to produce Photograph 51."
+          "example": "Rosalind Franklin used X-ray crystallography to produce Photograph 51.",
+          "phonetic": "EKS-ray kris-tuh-LOG-ruh-fee",
+          "pronunciation": "EKS-ray kris-tuh-LOG-ruh-fee"
         },
         {
           "term": "Human Genome Project",
           "definition": "An international 13-year scientific research project (1990–2003) that mapped all 3 billion base pairs in human DNA.",
-          "example": "The Human Genome Project identified 20,000–25,000 human genes, aiding hereditary disease prediction."
+          "example": "The Human Genome Project identified 20,000–25,000 human genes, aiding hereditary disease prediction.",
+          "phonetic": "HYOO-mun JEE-nohm PROJ-ekt",
+          "pronunciation": "HYOO-mun JEE-nohm PROJ-ekt"
         },
         {
           "term": "Hereditary Disease",
           "definition": "An illness caused by faulty gene mutations passed directly from biological parents to their offspring.",
-          "example": "Cystic fibrosis and haemophilia are hereditary diseases caused by genetic mutations."
+          "example": "Cystic fibrosis and haemophilia are hereditary diseases caused by genetic mutations.",
+          "phonetic": "huh-RED-ih-tuh-ree dih-ZEEZ",
+          "pronunciation": "huh-RED-ih-tuh-ree dih-ZEEZ"
         },
         {
           "term": "Base Pairing",
           "definition": "The strict chemical rule where Adenine pairs with Thymine, and Cytosine pairs with Guanine across the DNA ladder.",
-          "example": "Complementary base pairing allows DNA to unzip and replicate identical copies during cell division."
+          "example": "Complementary base pairing allows DNA to unzip and replicate identical copies during cell division.",
+          "phonetic": "BAYS pair-ing",
+          "pronunciation": "BAYS pair-ing"
         }
       ],
       "vocab_cloze_text": "For centuries, doctors were baffled by hereditary illnesses that passed down family lines without bacterial infection. In 1952, Rosalind Franklin used [X-ray Crystallography] to create Photograph 51, proving that [DNA (Deoxyribonucleic Acid)] formed a double helix. In 1953, James Watson and Francis Crick built their famous model, discovering the rule of complementary [Base Pairing] (A-T, C-G). Between 1990 and 2003, the [Human Genome Project] sequenced all 3 billion chemical base pairs, allowing modern geneticists to identify specific mutations causing [Hereditary Disease] like cystic fibrosis and breast cancer.",
@@ -27559,6 +27800,77 @@
           "Source C": "Clinician Positioning a Patient in Godfrey Hounsfield’s Original EMI CT Brain Scanner (early 1970s). Electrical engineer Godfrey Hounsfield developed the prototype CT scanner at EMI Laboratories, first scanning a living patient with a suspected brain cyst at Atkinson Morley’s Hospital, Wimbledon, in October 1971. **Hinge Question:** Why did the invention of the digital computer matter as much to twentieth-century hospital diagnosis as discoveries in biological laboratories?",
           "Source D": "Sir Godfrey Hounsfield, Nobel Lecture on Computed Medical Imaging (8 December 1979). Hounsfield shared the 1979 Nobel Prize in Physiology or Medicine with South African physicist Allan Cormack. The 'Hounsfield Unit' (HU) remains the standard quantitative scale for describing radiodensity in CT scans worldwide. **Hinge Question:** How did the invention of CT scanning shift medicine from treating outward symptoms to pinpointing internal microscopic pathology?",
           "Source E": "Department of Health & Social Security, 'Prevention and Health: Everybody's Business' (1976). This 1976 consultation paper marked the official recognition that twentieth-century lifestyle diseases had replaced infectious pathogens as the primary threat to British public health, prompting national campaigns like 'Look After Yourself' and dietary guidelines. **Hinge Question:** Why is persuading citizens to change personal lifestyle habits (eating, smoking) harder for governments than building sewers or providing free vaccines?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: X-Rays, Endoscopy & CT/MRI Scanning (Stages 1–3) (50 mins)",
+            "focus": "X-Rays, Endoscopy & CT/MRI Scanning (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving haemophilia as an inherited condition, Rosalind Franklin at King’s College London, Watson and Crick at the Cavendish Laboratory (1953), and the Human Genome Project from KT 4.1.",
+                "instruction": "Complete the spaced Do Now retrieving haemophilia as an inherited condition, Rosalind Franklin at King’s College London, Watson and Crick at the Cavendish Laboratory (1953), and the Human Genome Project from KT 4.1."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace how 20th-century technology ended blind exploratory surgery: Wilhelm Röntgen’s 1895 X-rays imaging bones, mid-century automated blood labs, sphygmomanometers, and flexible fibre-optic endoscopes, and Godfrey Hounsfield’s 1971 EMI CT scanner alongside MRI soft-tissue scans.",
+                "instruction": "Trace how 20th-century technology ended blind exploratory surgery: Wilhelm Röntgen’s 1895 X-rays imaging bones, mid-century automated blood labs, sphygmomanometers, and flexible fibre-optic endoscopes, and Godfrey Hounsfield’s 1971 EMI CT scanner alongside MRI soft-tissue scans."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking that pupils distinguish dense skeletal 2D X-rays from computerised 3D cross-sectional CT/MRI soft-tissue imaging.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking that pupils distinguish dense skeletal 2D X-rays from computerised 3D cross-sectional CT/MRI soft-tissue imaging."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Röntgen’s December 1895 paper on X-rays) alongside Source B (1960s clinical introduction of fibre-optic endoscopy) to evaluate how physics and engineering transformed bedside diagnosis.",
+                "instruction": "Scrutinise Source A (Röntgen’s December 1895 paper on X-rays) alongside Source B (1960s clinical introduction of fibre-optic endoscopy) to evaluate how physics and engineering transformed bedside diagnosis."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Lifestyle Factors, State Campaigns & Paper 1 Essay (Stages 4–5) (50 mins)",
+            "focus": "Lifestyle Factors, State Campaigns & Paper 1 Essay (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieve Röntgen’s 1895 X-rays, routine blood testing and fibre-optic endoscopes, and why Hounsfield’s 1971 CT scanner detected brain tumours missed by conventional radiography.",
+                "instruction": "Retrieve Röntgen’s 1895 X-rays, routine blood testing and fibre-optic endoscopes, and why Hounsfield’s 1971 CT scanner detected brain tumours missed by conventional radiography."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on Britain’s post-1950 epidemiological transition from infectious epidemics to chronic lifestyle illnesses (smoking, diet, alcohol, inactivity, UV tanning) and state prevention campaigns (1956 Clean Air Act, screening, Change4Life/Healthier You), interrogating Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on Britain’s post-1950 epidemiological transition from infectious epidemics to chronic lifestyle illnesses (smoking, diet, alcohol, inactivity, UV tanning) and state prevention campaigns (1956 Clean Air Act, screening, Change4Life/Healthier You), interrogating Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way methods of diagnosing illness in c1970–present differed from the nineteenth century [4m] and Q5/6 ‘Technological innovations in medical diagnosis were more important than public health lifestyle campaigns in improving health in Britain c1900–present.’ How far do you agree? [16m + 4m SPaG].",
+                "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way methods of diagnosing illness in c1970–present differed from the nineteenth century [4m] and Q5/6 ‘Technological innovations in medical diagnosis were more important than public health lifestyle campaigns in improving health in Britain c1900–present.’ How far do you agree? [16m + 4m SPaG]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Audit Q5/6 essays using DIRT: check balanced evaluation across diagnostic tech (CT/MRI/blood screening), state lifestyle legislation/campaigns, and a third factor (antibiotics/NHS treatments) plus accurate SPaG terminology.",
+                "instruction": "Audit Q5/6 essays using DIRT: check balanced evaluation across diagnostic tech (CT/MRI/blood screening), state lifestyle legislation/campaigns, and a third factor (antibiotics/NHS treatments) plus accurate SPaG terminology."
+              }
+            ]
+          }
         }
       },
       "fun_facts": [
@@ -27873,27 +28185,37 @@
         {
           "term": "X-ray",
           "definition": "Electromagnetic radiation discovered by Wilhelm Röntgen in 1895 that penetrates soft tissue to reveal dense bones.",
-          "example": "WWI field hospitals used mobile X-rays to locate shrapnel inside wounded soldiers."
+          "example": "WWI field hospitals used mobile X-rays to locate shrapnel inside wounded soldiers.",
+          "phonetic": "EKS-ray",
+          "pronunciation": "EKS-ray"
         },
         {
           "term": "CT Scanner (Computed Tomography)",
           "definition": "A diagnostic machine invented by Godfrey Hounsfield in 1971 combining rotating X-rays and computers to produce 3D cross-sectional slices.",
-          "example": "The CT scanner allowed doctors to visualise brain tumours without cutting open the skull."
+          "example": "The CT scanner allowed doctors to visualise brain tumours without cutting open the skull.",
+          "phonetic": "see-TEE SKAN-ur (kum-PYOO-tid tuh-MOG-ruh-fee)",
+          "pronunciation": "see-TEE SKAN-ur (kum-PYOO-tid tuh-MOG-ruh-fee)"
         },
         {
           "term": "MRI (Magnetic Resonance Imaging)",
           "definition": "A non-invasive diagnostic scan using powerful magnetic fields and radio waves to render detailed soft-tissue images without radiation.",
-          "example": "MRI scans are particularly effective for examining brain tissue, spinal cords, and torn ligaments."
+          "example": "MRI scans are particularly effective for examining brain tissue, spinal cords, and torn ligaments.",
+          "phonetic": "em-ar-EYE (mag-NET-ik REZ-uh-nuns IM-ij-ing)",
+          "pronunciation": "em-ar-EYE (mag-NET-ik REZ-uh-nuns IM-ij-ing)"
         },
         {
           "term": "Endoscope",
           "definition": "A flexible thin tube with a camera and light source used to examine the interior of organs such as the stomach or colon.",
-          "example": "Endoscopes allow surgeons to detect internal ulcers and early stomach cancers without major surgery."
+          "example": "Endoscopes allow surgeons to detect internal ulcers and early stomach cancers without major surgery.",
+          "phonetic": "EN-duh-skohp",
+          "pronunciation": "EN-duh-skohp"
         },
         {
           "term": "Epidemiological Transition",
           "definition": "The historical shift where the leading cause of death changed from infectious diseases to chronic lifestyle conditions.",
-          "example": "In the 20th century, Britain underwent an epidemiological transition toward heart disease and cancer."
+          "example": "In the 20th century, Britain underwent an epidemiological transition toward heart disease and cancer.",
+          "phonetic": "ep-ih-dee-mee-uh-LOJ-ih-kul tran-ZISH-un",
+          "pronunciation": "ep-ih-dee-mee-uh-LOJ-ih-kul tran-ZISH-un"
         }
       ],
       "vocab_cloze_text": "In the 20th century, Britain experienced a major [Epidemiological Transition] as clean water and antibiotics conquered infectious plagues, replacing them with chronic lifestyle illnesses like heart disease and cancer. In 1895, Wilhelm Röntgen discovered [X-ray], enabling doctors to see fractures inside living limbs. In 1971, British engineer Godfrey Hounsfield invented the [CT Scanner (Computed Tomography)], using rotating radiation beams and computers to produce 3D cross-sectional slices of soft tissue. Later, [MRI (Magnetic Resonance Imaging)] used magnetic fields to scan organs safely without radiation, while flexible [Endoscope] allowed doctors to view internal organs directly.",
@@ -29174,6 +29496,77 @@
           "Source C": "Sir William Beveridge, 'Social Insurance and Allied Services' (The Beveridge Report, November 1942). Published during the darkest days of the Second World War, the Beveridge Report became an instant sensation, selling over 600,000 copies with queues stretching around bookshops. It unified wartime British society around the promise of a fairer society after victory. **Hinge Question:** Why did the shared collective sacrifice of total war make British citizens demand free healthcare for all?",
           "Source D": "Ministry of Health Household Leaflet, \"The New National Health Service\" (1948). Delivered to British homes ahead of 5 July 1948, this leaflet reassured working-class families—who hated the humiliating stigma of Victorian Poor Law charity—that free GP, hospital, dental, and nursing care was now a universal civic right paid for through general taxation. **Hinge Question:** Why did the Ministry of Health deliberately print \"It is not a 'charity'. You are all paying for it, mainly as taxpayers\" in bold on Source D?",
           "Source E": "Aneurin Bevan, Minister of Health, House of Commons Speech on the NHS Bill (30 April 1946). Aneurin Bevan was a former Welsh coal miner who famously overcame bitter opposition from doctors by 'stuffing their mouths with gold'—allowing hospital consultants to retain lucrative private patients within NHS pay beds. **Hinge Question:** Why was hospital nationalisation in 1948 considered the most radical element of the post-war welfare reforms?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Salvarsan 606, Prontosil & The 1942 Beveridge Report (Stages 1–3) (50 mins)",
+            "focus": "Salvarsan 606, Prontosil & The 1942 Beveridge Report (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving Wilhelm Röntgen’s 1895 X-rays, ABO blood-group testing, conventional X-ray soft-tissue limits, and Godfrey Hounsfield’s 1971 CT scanner from KT 4.2.",
+                "instruction": "Complete the spaced Do Now retrieving Wilhelm Röntgen’s 1895 X-rays, ABO blood-group testing, conventional X-ray soft-tissue limits, and Godfrey Hounsfield’s 1971 CT scanner from KT 4.2."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain how bacteriology finally yielded internal chemical cures and universal state care: Paul Ehrlich and Sahachiro Hata’s Salvarsan 606 for syphilis (1909, first ‘magic bullet’), Gerhard Domagk’s red dye Prontosil for streptococcal sepsis (1932), and wartime momentum behind William Beveridge’s November 1942 report.",
+                "instruction": "Explain how bacteriology finally yielded internal chemical cures and universal state care: Paul Ehrlich and Sahachiro Hata’s Salvarsan 606 for syphilis (1909, first ‘magic bullet’), Gerhard Domagk’s red dye Prontosil for streptococcal sepsis (1932), and wartime momentum behind William Beveridge’s November 1942 report."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting pre-1948 exclusion of women, children, and the elderly under the 1911 National Insurance Act with Beveridge’s plan to slay the ‘Five Giants’.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting pre-1948 exclusion of women, children, and the elderly under the 1911 National Insurance Act with Beveridge’s plan to slay the ‘Five Giants’."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Ehrlich’s 1913 address on Salvarsan 606’s arsenic risks) with Source B (Domagk’s February 1935 Prontosil paper curing his daughter Hildegard) to trace how sulphonamides broke the 23-year deadlock.",
+                "instruction": "Compare Source A (Ehrlich’s 1913 address on Salvarsan 606’s arsenic risks) with Source B (Domagk’s February 1935 Prontosil paper curing his daughter Hildegard) to trace how sulphonamides broke the 23-year deadlock."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Aneurin Bevan, The 1948 NHS & High-Tech Care (Stages 4–5 & Paper 1 Essay) (50 mins)",
+            "focus": "Aneurin Bevan, The 1948 NHS & High-Tech Care (Stages 4–5 & Paper 1 Essay)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced recall check on Ehrlich’s Salvarsan 606, Domagk’s Prontosil, the limits of the 1911 National Insurance Act, and the 1942 Beveridge Report.",
+                "instruction": "Spaced recall check on Ehrlich’s Salvarsan 606, Domagk’s Prontosil, the limits of the 1911 National Insurance Act, and the 1942 Beveridge Report."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on Health Minister Aneurin Bevan overcoming fierce BMA resistance (allowing consultants private fee-paying beds and GPs capitation salaries) to launch the NHS free at the point of delivery on 5 July 1948, followed by hip replacements, dialysis, transplants, radiotherapy, and rising NHS costs, analysing Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on Health Minister Aneurin Bevan overcoming fierce BMA resistance (allowing consultants private fee-paying beds and GPs capitation salaries) to launch the NHS free at the point of delivery on 5 July 1948, followed by hip replacements, dialysis, transplants, radiotherapy, and rising NHS costs, analysing Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way healthcare access after 1948 differed from the 1930s [4m] and Q5/6 ‘The establishment of the National Health Service in 1948 was the most significant turning point in medical care in the period c1900–present.’ How far do you agree? [16m + 4m SPaG].",
+                "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way healthcare access after 1948 differed from the 1930s [4m] and Q5/6 ‘The establishment of the National Health Service in 1948 was the most significant turning point in medical care in the period c1900–present.’ How far do you agree? [16m + 4m SPaG]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Review essays via DIRT: reward weighing universal free access (tripling GP/hospital uptake for women and the poor) against magic bullets/antibiotics and high-tech surgical/diagnostic breakthroughs that gave the NHS effective cures to deliver.",
+                "instruction": "Review essays via DIRT: reward weighing universal free access (tripling GP/hospital uptake for women and the poor) against magic bullets/antibiotics and high-tech surgical/diagnostic breakthroughs that gave the NHS effective cures to deliver."
+              }
+            ]
+          }
         }
       },
       "fun_facts": [
@@ -29504,27 +29897,37 @@
         {
           "term": "Magic Bullet",
           "definition": "A chemical compound that targets and destroys specific disease-causing microbes without poisoning human body cells.",
-          "example": "Salvarsan 606 was the first magic bullet, discovered by Paul Ehrlich and Sahachiro Hata in 1909."
+          "example": "Salvarsan 606 was the first magic bullet, discovered by Paul Ehrlich and Sahachiro Hata in 1909.",
+          "phonetic": "MAJ-ik BOOL-it",
+          "pronunciation": "MAJ-ik BOOL-it"
         },
         {
           "term": "Salvarsan 606",
           "definition": "An arsenic-based chemical drug discovered in 1909 that cured syphilis, the first synthetic antibacterial magic bullet.",
-          "example": "Salvarsan 606 killed Treponema pallidum spirochetes without killing the patient."
+          "example": "Salvarsan 606 killed Treponema pallidum spirochetes without killing the patient.",
+          "phonetic": "SAL-vur-san siks-oh-SIKS",
+          "pronunciation": "SAL-vur-san siks-oh-SIKS"
         },
         {
           "term": "Prontosil",
           "definition": "A red industrial dye derivative discovered by Gerhard Domagk in 1932 that cured fatal streptococcal blood poisoning.",
-          "example": "Domagk used Prontosil to cure his daughter of septic blood poisoning from an infected needle."
+          "example": "Domagk used Prontosil to cure his daughter of septic blood poisoning from an infected needle.",
+          "phonetic": "PRON-toh-sil",
+          "pronunciation": "PRON-toh-sil"
         },
         {
           "term": "National Health Service (NHS)",
           "definition": "The UK state healthcare system established on 5 July 1948, providing comprehensive medical care free at the point of delivery.",
-          "example": "Aneurin Bevan launched the NHS to ensure healthcare was funded by general taxation for all citizens."
+          "example": "Aneurin Bevan launched the NHS to ensure healthcare was funded by general taxation for all citizens.",
+          "phonetic": "NASH-nul helth SUR-vis (en-aych-ES)",
+          "pronunciation": "NASH-nul helth SUR-vis (en-aych-ES)"
         },
         {
           "term": "Beveridge Report",
           "definition": "A landmark 1942 government report by William Beveridge recommending a welfare state to fight Want, Disease, Ignorance, Squalor, and Idleness.",
-          "example": "The Beveridge Report provided the social blueprint for the post-war National Health Service."
+          "example": "The Beveridge Report provided the social blueprint for the post-war National Health Service.",
+          "phonetic": "BEV-rij rih-PORT",
+          "pronunciation": "BEV-rij rih-PORT"
         }
       ],
       "vocab_cloze_text": "In the early 1900s, Paul Ehrlich sought a [Magic Bullet] that could destroy specific bacteria without harming patient cells. In 1909, Sahachiro Hata tested hundreds of arsenic compounds to discover [Salvarsan 606], which cured syphilis. In 1932, Gerhard Domagk discovered [Prontosil], curing streptococcal infections. While science produced drugs, healthcare remained private until the 1942 [Beveridge Report] called for a war on Disease. On 5 July 1948, Minister of Health Aneurin Bevan overcame doctor opposition to launch the [National Health Service (NHS)], offering free healthcare funded by taxation to all citizens.",
@@ -30801,6 +31204,77 @@
           "Source C": "Allied Wartime Penicillin Motivational Poster: 'Penicillin Saves Soldiers' Lives!' (1944). By D-Day in June 1944, Allied pharmaceutical plants were producing 300 billion units of penicillin a month—enough to treat every single Allied casualty of the Normandy invasion, cutting bacterial wound deaths by 85%. **Hinge Question:** Would penicillin have been industrialised in the 1940s without the wartime financial backing of the American and British governments?",
           "Source D": "Howard Florey, Ernst Chain, and Norman Heatley, 'Further Observations on Penicillin', 'The Lancet' (16 August 1941). Albert Alexander's tragic death galvanised Florey and Heatley to travel to the United States in July 1941, where they convinced the US Department of Agriculture Northern Regional Research Laboratory in Peoria, Illinois, to develop deep-tank corn steep liquor fermentation. **Hinge Question:** Why was recycling penicillin out of the patient's urine necessary in the 1941 Oxford trials?",
           "Source E": "Sir Alexander Fleming, Nobel Prize Acceptance Lecture, Stockholm (11 December 1945). Fleming's 1945 warning proved remarkably prescient: by the late twentieth century, over-prescription of antibiotics and widespread agricultural use led to the emergence of MRSA and pan-resistant 'superbugs', creating one of modern medicine's greatest global crises. **Hinge Question:** How does the rise of antibiotic resistance prove that medical progress is an ongoing battle rather than a permanent victory?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Fleming’s 1928 Mould, Oxford Extraction & Albert Alexander (Stages 1–3) (50 mins)",
+            "focus": "Fleming’s 1928 Mould, Oxford Extraction & Albert Alexander (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving Paul Ehrlich’s magic bullet concept, Gerhard Domagk’s Prontosil (1932), 1911 National Insurance exclusions, and Aneurin Bevan’s 1948 NHS compromise from KT 4.3.",
+                "instruction": "Complete the spaced Do Now retrieving Paul Ehrlich’s magic bullet concept, Gerhard Domagk’s Prontosil (1932), 1911 National Insurance exclusions, and Aneurin Bevan’s 1948 NHS compromise from KT 4.3."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Unpack why penicillin required three distinct stages rather than lone genius: Alexander Fleming’s accidental September 1928 Penicillium notatum observation at St Mary’s, Howard Florey, Ernst Chain, and Norman Heatley’s 1938–40 Oxford purification, and the 1940 eight-mouse trial plus February 1941 human test on policeman Albert Alexander.",
+                "instruction": "Unpack why penicillin required three distinct stages rather than lone genius: Alexander Fleming’s accidental September 1928 Penicillium notatum observation at St Mary’s, Howard Florey, Ernst Chain, and Norman Heatley’s 1938–40 Oxford purification, and the 1940 eight-mouse trial plus February 1941 human test on policeman Albert Alexander."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, explaining why chemical instability defeated Fleming in 1929 and why Albert Alexander died when Oxford’s improvised bedpan supply ran out.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, explaining why chemical instability defeated Fleming in 1929 and why Albert Alexander died when Oxford’s improvised bedpan supply ran out."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Fleming’s 1928–29 culture plate and paper) with Source B (Norman Heatley’s 1940 improvised Oxford extraction setup) to highlight the shift from individual observation to funded biochemical teamwork.",
+                "instruction": "Compare Source A (Fleming’s 1928–29 culture plate and paper) with Source B (Norman Heatley’s 1940 improvised Oxford extraction setup) to highlight the shift from individual observation to funded biochemical teamwork."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: US Deep-Tank Mass Production, D-Day & Superbugs (Stages 4–5 & Paper 1 Writing) (50 mins)",
+            "focus": "US Deep-Tank Mass Production, D-Day & Superbugs (Stages 4–5 & Paper 1 Writing)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieve why Fleming stopped working on penicillin after 1929, how Heatley purified penicillin at Oxford, and what Albert Alexander’s February 1941 trial proved.",
+                "instruction": "Retrieve why Fleming stopped working on penicillin after 1929, how Heatley purified penicillin at Oxford, and what Albert Alexander’s February 1941 trial proved."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on Florey and Heatley’s July 1941 mission to Peoria, US wartime government grants ($80m+), 10,000-gallon deep-tank corn-steep fermentation producing 2.3 million doses for June 1944 D-Day, and Fleming’s 1945 warning foreshadowing MRSA antibiotic resistance, interrogating Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on Florey and Heatley’s July 1941 mission to Peoria, US wartime government grants ($80m+), 10,000-gallon deep-tank corn-steep fermentation producing 2.3 million doses for June 1944 D-Day, and Fleming’s 1945 warning foreshadowing MRSA antibiotic resistance, interrogating Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way Fleming’s 1928 discovery of penicillin was similar to Edward Jenner’s 1796 smallpox vaccine [4m] and Q4 Explain why penicillin was successfully developed and mass-produced in the period 1928–1945 [12m].",
+                "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way Fleming’s 1928 discovery of penicillin was similar to Edward Jenner’s 1796 smallpox vaccine [4m] and Q4 Explain why penicillin was successfully developed and mass-produced in the period 1928–1945 [12m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Green-pen DIRT on Q4: verify three analytical paragraphs linking individual/team science (Fleming -> Florey, Chain, Heatley), industrial technology (freeze-drying, deep-tank vats), and Second World War US/UK government funding.",
+                "instruction": "Green-pen DIRT on Q4: verify three analytical paragraphs linking individual/team science (Fleming -> Florey, Chain, Heatley), industrial technology (freeze-drying, deep-tank vats), and Second World War US/UK government funding."
+              }
+            ]
+          }
         }
       },
       "fun_facts": [
@@ -31100,27 +31574,37 @@
         {
           "term": "Penicillin",
           "definition": "The world’s first true antibiotic, derived from the fungus Penicillium notatum, which destroys bacterial cell walls.",
-          "example": "Penicillin killed staphylococcus bacteria without harming human white blood cells."
+          "example": "Penicillin killed staphylococcus bacteria without harming human white blood cells.",
+          "phonetic": "pen-ih-SIL-in",
+          "pronunciation": "pen-ih-SIL-in"
         },
         {
           "term": "Antibiotic",
           "definition": "A chemical substance produced by microorganisms that kills or inhibits the growth of bacteria inside a living body.",
-          "example": "Penicillin and streptomycin are antibiotics that transformed 20th-century medicine."
+          "example": "Penicillin and streptomycin are antibiotics that transformed 20th-century medicine.",
+          "phonetic": "an-tee-by-OT-ik",
+          "pronunciation": "an-tee-by-OT-ik"
         },
         {
           "term": "Freeze-Drying",
           "definition": "A low-temperature dehydration process using a vacuum to purify and stabilise heat-sensitive chemical compounds.",
-          "example": "Ernst Chain used freeze-drying to isolate pure penicillin powder without destroying the drug."
+          "example": "Ernst Chain used freeze-drying to isolate pure penicillin powder without destroying the drug.",
+          "phonetic": "FREEZ-dry-ing",
+          "pronunciation": "FREEZ-dry-ing"
         },
         {
           "term": "Deep-Tank Fermentation",
           "definition": "An industrial manufacturing method using 10,000-gallon sterilised steel vats pumped with oxygen to mass-produce mould.",
-          "example": "American pharmaceutical factories used deep-tank fermentation to produce millions of doses for D-Day."
+          "example": "American pharmaceutical factories used deep-tank fermentation to produce millions of doses for D-Day.",
+          "phonetic": "DEEP-tank fur-men-TAY-shun",
+          "pronunciation": "DEEP-tank fur-men-TAY-shun"
         },
         {
           "term": "Antibiotic Resistance",
           "definition": "The evolutionary process where bacteria mutate to survive exposure to antibiotic drugs, creating superbugs like MRSA.",
-          "example": "Fleming warned in 1945 that improper dosing would lead to dangerous antibiotic resistance."
+          "example": "Fleming warned in 1945 that improper dosing would lead to dangerous antibiotic resistance.",
+          "phonetic": "an-tee-by-OT-ik rih-ZIS-tuns",
+          "pronunciation": "an-tee-by-OT-ik rih-ZIS-tuns"
         }
       ],
       "vocab_cloze_text": "In September 1928, Alexander Fleming accidentally discovered that a spore of Penicillium notatum had landed on his staphylococcus plate, creating [Penicillin]. Fleming recognised it as a revolutionary [Antibiotic], but could not chemically isolate it. In 1938, Howard Florey and Ernst Chain assembled a team at Oxford, using [Freeze-Drying] to purify the unstable substance. After proving it cured mice in 1940, they tested it on police constable Albert Alexander in 1941. In July 1941, Florey flew to the United States, where factories used corn steep liquor and [Deep-Tank Fermentation] to manufacture 2.3 million doses in time for the D-Day landings in June 1944. Today, modern doctors face the growing danger of [Antibiotic Resistance].",
@@ -32385,6 +32869,77 @@
           "Source C": "Royal College of Physicians of London, 'Smoking and Health' (March 1962). The 1962 RCP report created a media firestorm in Britain and prompted the US Surgeon General's landmark 1964 report. Television cigarette adverts were subsequently banned in the UK in 1965. **Hinge Question:** Why did it take forty-five years from the 1962 RCP report to the 2007 indoor smoking ban?",
           "Source D": "Health Act 2006 (c. 28), Statutory Prohibition of Smoking in Public Places. Despite predictions that British pubs would face bankruptcy, compliance with the 1 July 2007 smoking ban exceeded 98% within weeks, rapidly reshaping British social norms. **Hinge Question:** Was the 2007 public indoor smoking ban justified to protect public health, or did it infringe on personal freedom?",
           "Source E": "Standardised Plain Cigarette Packaging Retail Display (Pantone 448 C Statutory Model, 2012 / UK 2016). Consumer psychology trials commissioned by health ministries found that Pantone 448 C (\"opaque couché\") was perceived as the least attractive colour, associated with tar and death. After Australia introduced plain packs in 2012, the UK Parliament enacted identical legislation effective May 2016. **Hinge Question:** Why did global tobacco corporations fight plain-packaging laws like Source E in the High Court even more fiercely than televised health warnings?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Late Detection, PET-CT Diagnosis & Keyhole/CyberKnife Care (Stages 1–3) (50 mins)",
+            "focus": "Late Detection, PET-CT Diagnosis & Keyhole/CyberKnife Care (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving Fleming’s September 1928 St Mary’s discovery, Florey and Chain’s 1938 Oxford revival, the May 1940 mouse trial, and US deep-tank fermentation from KT 4.4.",
+                "instruction": "Complete the spaced Do Now retrieving Fleming’s September 1928 St Mary’s discovery, Florey and Chain’s 1938 Oxford revival, the May 1940 mouse trial, and US deep-tank fermentation from KT 4.4."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Introduce the modern lung cancer case study: explain why scarce pain receptors in lung tissue cause silent late-stage presentation alongside mass 20th-century smoking, and how low-dose CT, metabolic PET-CT scans, fibre-optic bronchoscopy, keyhole VATS lobectomy, and CyberKnife radiotherapy transformed clinical care.",
+                "instruction": "Introduce the modern lung cancer case study: explain why scarce pain receptors in lung tissue cause silent late-stage presentation alongside mass 20th-century smoking, and how low-dose CT, metabolic PET-CT scans, fibre-optic bronchoscopy, keyhole VATS lobectomy, and CyberKnife radiotherapy transformed clinical care."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting inaccurate 2D chest X-rays and traumatic open thoracotomy against 3D PET-CT staging and robotic stereotactic beams.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting inaccurate 2D chest X-rays and traumatic open thoracotomy against 3D PET-CT staging and robotic stereotactic beams."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Richard Doll and Austin Bradford Hill’s September 1950 BMJ epidemiological study proving the smoking link) alongside Source B (modern NHS low-dose CT, PET-CT, and bronchoscopy pathway).",
+                "instruction": "Scrutinise Source A (Richard Doll and Austin Bradford Hill’s September 1950 BMJ epidemiological study proving the smoking link) alongside Source B (modern NHS low-dose CT, PET-CT, and bronchoscopy pathway)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Genetic Oncology, Anti-Smoking Laws & Paper 1 Essay (Stages 4–5) (50 mins)",
+            "focus": "Genetic Oncology, Anti-Smoking Laws & Paper 1 Essay (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced recall check on Doll and Bradford Hill (1950), why scarce lung pain nerves delay symptoms, and how PET-CT and keyhole VATS surgery improved survival.",
+                "instruction": "Spaced recall check on Doll and Bradford Hill (1950), why scarce lung pain nerves delay symptoms, and how PET-CT and keyhole VATS surgery improved survival."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on pharmacogenomics, tumour DNA sequencing, and T-cell immunotherapy alongside escalating UK government compulsion: 1965 TV cigarette ad ban (2005 all ads), July 2007 indoor smoking ban, raising purchase age to 18 (2007), 2015 car-with-children ban, and 2016 standardised plain packaging, examining Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on pharmacogenomics, tumour DNA sequencing, and T-cell immunotherapy alongside escalating UK government compulsion: 1965 TV cigarette ad ban (2005 all ads), July 2007 indoor smoking ban, raising purchase age to 18 (2007), 2015 car-with-children ban, and 2016 standardised plain packaging, examining Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way twenty-first-century lung cancer diagnosis differed from the nineteenth century [4m] and Q5/6 ‘Government action was the main reason for progress in combating lung cancer in the twenty-first century.’ How far do you agree? [16m + 4m SPaG].",
+                "instruction": "Timed Edexcel Paper 1 Section B practice: complete Q3 Explain one way twenty-first-century lung cancer diagnosis differed from the nineteenth century [4m] and Q5/6 ‘Government action was the main reason for progress in combating lung cancer in the twenty-first century.’ How far do you agree? [16m + 4m SPaG]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Check Q5/6 essays via DIRT: ensure pupils weigh state legislation, taxation, and mass campaigns (preventing incidence) against high-tech PET-CT/bronchoscopy screening and targeted genetic/immunotherapy treatments.",
+                "instruction": "Check Q5/6 essays via DIRT: ensure pupils weigh state legislation, taxation, and mass campaigns (preventing incidence) against high-tech PET-CT/bronchoscopy screening and targeted genetic/immunotherapy treatments."
+              }
+            ]
+          }
         }
       },
       "fun_facts": [
@@ -32697,27 +33252,37 @@
         {
           "term": "Carcinoma",
           "definition": "A type of cancer that starts in cells that make up the skin or the tissue lining organs, such as the lungs.",
-          "example": "Lung carcinoma surged in the 20th century due to mass cigarette smoking."
+          "example": "Lung carcinoma surged in the 20th century due to mass cigarette smoking.",
+          "phonetic": "kar-sih-NOH-muh",
+          "pronunciation": "kar-sih-NOH-muh"
         },
         {
           "term": "Epidemiology",
           "definition": "The scientific study of how often diseases occur in different groups of people and why, tracking statistical patterns.",
-          "example": "Doll and Hill used epidemiology to prove that smoking causes lung cancer."
+          "example": "Doll and Hill used epidemiology to prove that smoking causes lung cancer.",
+          "phonetic": "ep-ih-dee-mee-OL-uh-jee",
+          "pronunciation": "ep-ih-dee-mee-OL-uh-jee"
         },
         {
           "term": "Bronchoscopy",
           "definition": "A procedure where a thin, lighted tube is passed through the nose or mouth into the lungs to examine airways and take biopsies.",
-          "example": "Bronchoscopy allows modern oncologists to view lung tumours directly and extract tissue."
+          "example": "Bronchoscopy allows modern oncologists to view lung tumours directly and extract tissue.",
+          "phonetic": "bron-KOS-kuh-pee",
+          "pronunciation": "bron-KOS-kuh-pee"
         },
         {
           "term": "Immunotherapy",
           "definition": "A modern medical treatment that uses substances to stimulate or reprogram the patient’s own immune system to recognise and attack cancer cells.",
-          "example": "Immunotherapy drugs like pembrolizumab train T-cells to destroy lung cancer tumours."
+          "example": "Immunotherapy drugs like pembrolizumab train T-cells to destroy lung cancer tumours.",
+          "phonetic": "im-yoo-noh-THER-uh-pee",
+          "pronunciation": "im-yoo-noh-THER-uh-pee"
         },
         {
           "term": "Plain Packaging",
           "definition": "Standardised olive-green packaging for cigarettes stripped of brand logos and covered with mandatory graphic health warnings.",
-          "example": "The UK introduced compulsory plain packaging in 2016 to deter young people from smoking."
+          "example": "The UK introduced compulsory plain packaging in 2016 to deter young people from smoking.",
+          "phonetic": "PLAYN PAK-ij-ing",
+          "pronunciation": "PLAYN PAK-ij-ing"
         }
       ],
       "vocab_cloze_text": "In 1950, Richard Doll and Austin Bradford Hill used [Epidemiology] to prove that cigarette smoking caused lung [Carcinoma]. Doctors face severe diagnostic challenges because lung tumours grow silently; today, specialists use low-dose CT scans and [Bronchoscopy] to inspect bronchial tubes and take biopsies. In treating cancer, oncologists combine robotic surgery, radiotherapy, chemotherapy, and revolutionary [Immunotherapy], which trains the patient’s immune system to attack cancer. Simultaneously, government intervention ended laissez-faire through the 2007 ban on smoking in public places and the 2016 compulsory [Plain Packaging] law.",
@@ -33939,6 +34504,77 @@
           "Source C": "Troops Crossing Chateau Wood on a Duckboard Track, Ypres Salient (29 October 1917). Taken on 29 October 1917 during the Battle of Passchendaele (Third Ypres), Frank Hurley’s photograph captures how shattered Flanders drainage turned the battlefield into a sea of flooded craters bridged only by narrow wooden duckboard ribbons. **Hinge Question:** Why did evacuating a single stretcher case across duckboard tracks like Source C at Passchendaele often require six to eight bearers instead of the standard two?",
           "Source D": "From an Account by a British Army Medical Officer at the Underground Hospital, Arras (April 1917). Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour. **Hinge Question:** Why was the subterranean chalk geology of Arras impossible to replicate in the mud and high water table of the Ypres Salient?",
           "Source E": "From an Official Report by the Director-General of Army Medical Services on Casualties at the Somme (1916). Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history. **Hinge Question:** How did the medical catastrophe of 1 July 1916 compel the RAMC to expand Casualty Clearing Stations into major surgical hospitals?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Flanders Terrain, Zig-Zag Trenches & Evacuation Bottlenecks (Stages 1–3) (50 mins)",
+            "focus": "Flanders Terrain, Zig-Zag Trenches & Evacuation Bottlenecks (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving cigarette smoking’s link to lung cancer, why 2D chest X-rays missed early tumours, and keyhole VATS surgery from KT 4.5 before transitioning to Paper 1 Section A (The British Sector of the Western Front, 1914–18).",
+                "instruction": "Complete the spaced Do Now retrieving cigarette smoking’s link to lung cancer, why 2D chest X-rays missed early tumours, and keyhole VATS surgery from KT 4.5 before transitioning to Paper 1 Section A (The British Sector of the Western Front, 1914–18)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Map the British Sector from Flanders (Ypres Salient) down to the Somme, Arras, and Cambrai, explaining why Ypres’s low-lying waterlogged clay overlooked on three sides by German ridges and 6–7ft zig-zag trench traverses created severe casualty-evacuation bottlenecks.",
+                "instruction": "Map the British Sector from Flanders (Ypres Salient) down to the Somme, Arras, and Cambrai, explaining why Ypres’s low-lying waterlogged clay overlooked on three sides by German ridges and 6–7ft zig-zag trench traverses created severe casualty-evacuation bottlenecks."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 covering Ypres topography (1914, 1915, Passchendaele 1917), firesteps, duckboards, and 90-degree traverses across frontline, support, and reserve trenches linked by narrow communication ditches, completing Verso Spine stages 1–3.",
+                "instruction": "Read Stages 1–3 covering Ypres topography (1914, 1915, Passchendaele 1917), firesteps, duckboards, and 90-degree traverses across frontline, support, and reserve trenches linked by narrow communication ditches, completing Verso Spine stages 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (3 January 1918 Belgian aerial reconnaissance photo of zig-zag Flanders trenches) and Source B (October 1917 RAMC Field Ambulance War Diary at Ypres) on why stretcher squads could not carry casualties swiftly.",
+                "instruction": "Interrogate Source A (3 January 1918 Belgian aerial reconnaissance photo of zig-zag Flanders trenches) and Source B (October 1917 RAMC Field Ambulance War Diary at Ypres) on why stretcher squads could not carry casualties swiftly."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Arras Underground Hospital, Mass Offensives & Section A Sources (Stages 4–5) (50 mins)",
+            "focus": "Arras Underground Hospital, Mass Offensives & Section A Sources (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieve why the Ypres Salient flooded easily, why trenches used 90-degree zig-zag traverses, and why narrow communication trenches slowed four-man stretcher teams.",
+                "instruction": "Retrieve why the Ypres Salient flooded easily, why trenches used 90-degree zig-zag traverses, and why narrow communication trenches slowed four-man stretcher teams."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on British and New Zealand tunnellers carving the 700-bed underground hospital in Arras’s chalk caves (Thompson’s Cave: electric lighting, piped water, operating theatres, April 1917) and mass industrial battles at the Somme (57,470 day-one casualties, 1 July 1916) and Cambrai (November 1917), analysing Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on British and New Zealand tunnellers carving the 700-bed underground hospital in Arras’s chalk caves (Thompson’s Cave: electric lighting, piped water, operating theatres, April 1917) and mass industrial battles at the Somme (57,470 day-one casualties, 1 July 1916) and Cambrai (November 1917), analysing Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) communication trenches [2m]; (b) underground hospital at Arras / Thompson’s Cave [2m]) and Q2(a) How useful are Sources A and B for an enquiry into the problems of evacuating wounded soldiers in the Ypres Salient? [8m].",
+                "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) communication trenches [2m]; (b) underground hospital at Arras / Thompson’s Cave [2m]) and Q2(a) How useful are Sources A and B for an enquiry into the problems of evacuating wounded soldiers in the Ypres Salient? [8m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Model Paper 1 Q2(a) marking criteria during DIRT: evaluate BOTH sources separately for specific content quotes, provenance (nature, origin, purpose at Third Ypres), and precise contextual knowledge (Passchendaele mud/shellfire).",
+                "instruction": "Model Paper 1 Q2(a) marking criteria during DIRT: evaluate BOTH sources separately for specific content quotes, provenance (nature, origin, purpose at Third Ypres), and precise contextual knowledge (Passchendaele mud/shellfire)."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": [
@@ -34469,27 +35105,37 @@
         {
           "term": "Frontline Trench",
           "definition": "The foremost defensive trench situated closest to enemy lines, featuring a firestep, sandbag parapet, and barbed wire entanglements, where infantry mounted guard.",
-          "def": "The foremost defensive trench situated closest to enemy lines, featuring a firestep, sandbag parapet, and barbed wire entanglements, where infantry mounted guard."
+          "def": "The foremost defensive trench situated closest to enemy lines, featuring a firestep, sandbag parapet, and barbed wire entanglements, where infantry mounted guard.",
+          "phonetic": "FRUNT-lyn trench",
+          "pronunciation": "FRUNT-lyn trench"
         },
         {
           "term": "Communication Trench",
           "definition": "Deep, connecting trenches dug at right angles to parallel lines, allowing fresh troops, ammunition, food, and stretcher-borne casualties to move under cover.",
-          "def": "Deep, connecting trenches dug at right angles to parallel lines, allowing fresh troops, ammunition, food, and stretcher-borne casualties to move under cover."
+          "def": "Deep, connecting trenches dug at right angles to parallel lines, allowing fresh troops, ammunition, food, and stretcher-borne casualties to move under cover.",
+          "phonetic": "kuh-myoo-nih-KAY-shun trench",
+          "pronunciation": "kuh-myoo-nih-KAY-shun trench"
         },
         {
           "term": "Traverse",
           "definition": "A sharp 90-degree bend or earthwork buttress constructed into trench lines to prevent enemy riflemen firing down the ditch and contain artillery shell bursts.",
-          "def": "A sharp 90-degree bend or earthwork buttress constructed into trench lines to prevent enemy riflemen firing down the ditch and contain artillery shell bursts."
+          "def": "A sharp 90-degree bend or earthwork buttress constructed into trench lines to prevent enemy riflemen firing down the ditch and contain artillery shell bursts.",
+          "phonetic": "TRAV-urs",
+          "pronunciation": "TRAV-urs"
         },
         {
           "term": "Ypres Salient",
           "definition": "A highly vulnerable, low-lying British military bulge around the medieval town of Ypres, surrounded on three sides by German forces holding higher commanding ridges.",
-          "def": "A highly vulnerable, low-lying British military bulge around the medieval town of Ypres, surrounded on three sides by German forces holding higher commanding ridges."
+          "def": "A highly vulnerable, low-lying British military bulge around the medieval town of Ypres, surrounded on three sides by German forces holding higher commanding ridges.",
+          "phonetic": "EE-pruh SAY-lee-unt",
+          "pronunciation": "EE-pruh SAY-lee-unt"
         },
         {
           "term": "Thompson’s Cave",
           "definition": "A vast subterranean 700-bed British military hospital constructed inside ancient chalk quarries beneath Arras, featuring electric lighting and operating theatres.",
-          "def": "A vast subterranean 700-bed British military hospital constructed inside ancient chalk quarries beneath Arras, featuring electric lighting and operating theatres."
+          "def": "A vast subterranean 700-bed British military hospital constructed inside ancient chalk quarries beneath Arras, featuring electric lighting and operating theatres.",
+          "phonetic": "TOMP-sunz kayv",
+          "pronunciation": "TOMP-sunz kayv"
         }
       ],
       "quick_quiz": [
@@ -35628,6 +36274,77 @@
           "Source C": "British Wounded at an Advanced Dressing Station near Boesinghe, Battle of Pilckem Ridge (31 July 1917). IWM photograph Q 5730, Battle of Pilckem Ridge (Third Battle of Ypres), 31 July 1917. **Hinge Question:** Why did the concentration of hundreds of stretcher cases in the open outside dressing stations during major offensives make them so vulnerable to enemy long-range artillery?",
           "Source D": "From a Report by the British War Office Committee on Trench Fever (February 1918). War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1. **Hinge Question:** Why did it take until 1918 for scientists to definitively prove that body lice were the vector of trench fever?",
           "Source E": "From Medical Case Notes of an RAMC Medical Officer on Shellshock (Recorded as NYDN, 1917). RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war. **Hinge Question:** Why did the British high command introduce the neutral term 'NYDN' instead of allowing medical officers to diagnose 'shellshock' at the frontline?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Trench Foot, Whale-Oil Discipline & Lice/Trench Fever (Stages 1–3) (50 mins)",
+            "focus": "Trench Foot, Whale-Oil Discipline & Lice/Trench Fever (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving the Ypres Salient bulge, 6–7ft zig-zag trench layouts, frontline/support/reserve networks, Arras chalk caves, and Somme casualties from KT 5.1.",
+                "instruction": "Complete the spaced Do Now retrieving the Ypres Salient bulge, 6–7ft zig-zag trench layouts, frontline/support/reserve networks, Arras chalk caves, and Somme casualties from KT 5.1."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Examine how the physical trench environment generated mass non-combat manpower losses: freezing waterlogged mud causing necrotic trench foot in winter 1914–15, officer-enforced preventative routines from 1915, and uniform-seam body lice spreading Bartonella quintana trench fever.",
+                "instruction": "Examine how the physical trench environment generated mass non-combat manpower losses: freezing waterlogged mud causing necrotic trench foot in winter 1914–15, officer-enforced preventative routines from 1915, and uniform-seam body lice spreading Bartonella quintana trench fever."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking mechanical pumps, duckboards, daily whale-oil rubbing with spare socks, and 1918 confirmation of lice transmission alongside Thresh steam delousing chambers.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking mechanical pumps, duckboards, daily whale-oil rubbing with spare socks, and 1918 confirmation of lice transmission alongside Thresh steam delousing chambers."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (c.1915 clinical photograph of bilateral gangrenous trench foot) with Source B (December 1915 2nd Battalion Routine Standing Orders) to test why strict officer accountability outperformed voluntary advice.",
+                "instruction": "Compare Source A (c.1915 clinical photograph of bilateral gangrenous trench foot) with Source B (December 1915 2nd Battalion Routine Standing Orders) to test why strict officer accountability outperformed voluntary advice."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Dysentery Sanitation, Shell Shock (NYDN) & Section A Follow-Up (Stages 4–5) (50 mins)",
+            "focus": "Dysentery Sanitation, Shell Shock (NYDN) & Section A Follow-Up (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced recall check on how prolonged cold immersion caused trench foot, daily whale-oil foot inspections, and how body lice transmitted five-day relapsing trench fever.",
+                "instruction": "Spaced recall check on how prolonged cold immersion caused trench foot, daily whale-oil foot inspections, and how body lice transmitted five-day relapsing trench fever."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on RAMC Sanitary Sections combating dysentery (fly-proof latrines and chloride of lime water-cart chlorination) and evolving army responses to 80,000 shell-shock cases—from early cowardice stigma to ‘NYDN (Not Yet Diagnosed, Nervous)’ forward rest centres and Dr William Rivers at Craiglockhart, interrogating Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on RAMC Sanitary Sections combating dysentery (fly-proof latrines and chloride of lime water-cart chlorination) and evolving army responses to 80,000 shell-shock cases—from early cowardice stigma to ‘NYDN (Not Yet Diagnosed, Nervous)’ forward rest centres and Dr William Rivers at Craiglockhart, interrogating Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) methods used to prevent trench foot [2m]; (b) causes of trench fever [2m]) and Q2(b) Study Source B: How could you follow up Source B to find out more about the effectiveness of army preventative measures against trench foot? [4m].",
+                "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) methods used to prevent trench foot [2m]; (b) causes of trench fever [2m]) and Q2(b) Study Source B: How could you follow up Source B to find out more about the effectiveness of army preventative measures against trench foot? [4m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Check all four linked rows of Q2(b) in DIRT: (1) specific quote/detail from Source B, (2) focused historical question on effectiveness, (3) concrete Western Front archival record (e.g. 2nd Battalion RAMC sick-return / casualty war diary), and (4) how that record answers the question.",
+                "instruction": "Check all four linked rows of Q2(b) in DIRT: (1) specific quote/detail from Source B, (2) focused historical question on effectiveness, (3) concrete Western Front archival record (e.g. 2nd Battalion RAMC sick-return / casualty war diary), and (4) how that record answers the question."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": [
@@ -35973,27 +36690,37 @@
         {
           "term": "Trench Foot",
           "definition": "A painful, necrotic condition of the lower feet caused by prolonged exposure to cold, wet mud and poor circulation, which could degenerate into gangrene requiring amputation.",
-          "def": "A painful, necrotic condition of the lower feet caused by prolonged exposure to cold, wet mud and poor circulation, which could degenerate into gangrene requiring amputation."
+          "def": "A painful, necrotic condition of the lower feet caused by prolonged exposure to cold, wet mud and poor circulation, which could degenerate into gangrene requiring amputation.",
+          "phonetic": "TRENCH-fut",
+          "pronunciation": "TRENCH-fut"
         },
         {
           "term": "Whale Oil",
           "definition": "A thick, pungent animal grease supplied in large barrels to frontline British troops, rubbed into bare feet daily to create a water-resistant protective barrier.",
-          "def": "A thick, pungent animal grease supplied in large barrels to frontline British troops, rubbed into bare feet daily to create a water-resistant protective barrier."
+          "def": "A thick, pungent animal grease supplied in large barrels to frontline British troops, rubbed into bare feet daily to create a water-resistant protective barrier.",
+          "phonetic": "WAYL oyl",
+          "pronunciation": "WAYL oyl"
         },
         {
           "term": "Trench Fever",
           "definition": "A debilitating bacterial infection (Pyrexia of Unknown Origin) caused by Bartonella quintana and transmitted by body lice faeces, producing severe shin pains and high fevers.",
-          "def": "A debilitating bacterial infection (Pyrexia of Unknown Origin) caused by Bartonella quintana and transmitted by body lice faeces, producing severe shin pains and high fevers."
+          "def": "A debilitating bacterial infection (Pyrexia of Unknown Origin) caused by Bartonella quintana and transmitted by body lice faeces, producing severe shin pains and high fevers.",
+          "phonetic": "TRENCH fee-vur",
+          "pronunciation": "TRENCH fee-vur"
         },
         {
           "term": "Body Lice",
           "definition": "Small wingless parasitic insects that nested in the warm seams of woollen service uniforms, biting human skin and spreading trench fever across the Western Front.",
-          "def": "Small wingless parasitic insects that nested in the warm seams of woollen service uniforms, biting human skin and spreading trench fever across the Western Front."
+          "def": "Small wingless parasitic insects that nested in the warm seams of woollen service uniforms, biting human skin and spreading trench fever across the Western Front.",
+          "phonetic": "BOD-ee lys",
+          "pronunciation": "BOD-ee lys"
         },
         {
           "term": "Chloride of Lime",
           "definition": "A chemical bleaching powder (calcium hypochlorite) added systematically to water-cart tanks and latrine pits to disinfect drinking water and suppress waterborne dysentery.",
-          "def": "A chemical bleaching powder (calcium hypochlorite) added systematically to water-cart tanks and latrine pits to disinfect drinking water and suppress waterborne dysentery."
+          "def": "A chemical bleaching powder (calcium hypochlorite) added systematically to water-cart tanks and latrine pits to disinfect drinking water and suppress waterborne dysentery.",
+          "phonetic": "KLOR-yd ov lym",
+          "pronunciation": "KLOR-yd ov lym"
         }
       ],
       "quick_quiz": [
@@ -37084,6 +37811,77 @@
           "Source C": "Report of RAMC Consulting Surgeons to the War Office on Steel Helmets and Cranial Wounds (1916). Before autumn 1915, British soldiers wore soft peaked cloth caps in trenches under constant overhead shrapnel air-bursts. John Leopold Brodie’s steel helmet cut fatal head wounds by around 80%, turning previously instant deaths into survivable hospital admissions. **Hinge Question:** Why did the number of wounded soldiers admitted to hospitals with head injuries initially go UP after the Brodie steel helmet was issued, and why was that actually proof of success?",
           "Source D": "From an Account by an RAMC Medical Officer of the First Chlorine Gas Attack at Second Ypres (22 April 1915). First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders. **Hinge Question:** Why did ammonia in human urine help neutralise chlorine gas as a desperate temporary expedient?",
           "Source E": "British Vickers Machine-Gun Crew Wearing PH Anti-Gas Helmets near Ovillers, Battle of the Somme (July 1916). Issued in millions during 1915–1916 to counter German phosgene and chlorine clouds, the PH helmet had to be tucked tightly inside the tunic collar. From August 1916 onward, it was superseded by Edward Harrison’s Small Box Respirator with a charcoal filter canister. **Hinge Question:** What clues in Source E suggest this photograph was posed behind the immediate firing line, and what later 1917 gas weapon made these flannel hoods obsolete?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Artillery Shrapnel, Soil Gas Gangrene & Brodie Helmets (Stages 1–3) (50 mins)",
+            "focus": "Artillery Shrapnel, Soil Gas Gangrene & Brodie Helmets (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving winter 1914–15 waterlogged mud, daily whale-oil inspections, body lice in woollen seams, and chloride of lime water treatment from KT 5.2.",
+                "instruction": "Complete the spaced Do Now retrieving winter 1914–15 waterlogged mud, daily whale-oil inspections, body lice in woollen seams, and chloride of lime water treatment from KT 5.2."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain why industrialised Western Front firepower overwhelmed 1914 peacetime aseptic surgery: artillery caused ~58% of all wounds, driving jagged shrapnel and manure-soaked khaki cloth into deep airless muscle containing Clostridium tetani and lethal Clostridium welchii (gas gangrene), while soft caps left heads exposed until the late-1915 Brodie steel helmet.",
+                "instruction": "Explain why industrialised Western Front firepower overwhelmed 1914 peacetime aseptic surgery: artillery caused ~58% of all wounds, driving jagged shrapnel and manure-soaked khaki cloth into deep airless muscle containing Clostridium tetani and lethal Clostridium welchii (gas gangrene), while soft caps left heads exposed until the late-1915 Brodie steel helmet."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting effective late-1914 anti-tetanus serum injections against untreatable 24–48h gas gangrene and tracking the ~80% drop in fatal head wounds under Brodie helmets.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting effective late-1914 anti-tetanus serum injections against untreatable 24–48h gas gangrene and tracking the ~80% drop in fatal head wounds under Brodie helmets."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (1916 Consulting Surgeon report on high-explosive shrapnel vs rifle bullets) with Source B (1916 RAMC Surgical Report on Flanders soil bacteria and gas gangrene).",
+                "instruction": "Compare Source A (1916 Consulting Surgeon report on high-explosive shrapnel vs rifle bullets) with Source B (1916 RAMC Surgical Report on Flanders soil bacteria and gas gangrene)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Chlorine, Phosgene, Mustard Gas & Section A Utility Writing (Stages 4–5) (50 mins)",
+            "focus": "Chlorine, Phosgene, Mustard Gas & Section A Utility Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieve why artillery shrapnel (~58% of wounds) triggered worse sepsis than bullets, why heavily manured Flanders soil bred Clostridium welchii, and the impact of John Brodie’s pressed-steel helmet.",
+                "instruction": "Retrieve why artillery shrapnel (~58% of wounds) triggered worse sepsis than bullets, why heavily manured Flanders soil bred Clostridium welchii, and the impact of John Brodie’s pressed-steel helmet."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on chemical warfare: Second Ypres chlorine gas (22 April 1915) and phosgene (December 1915) countered rapidly from urine-soaked pads and PH chemical hoods to the August 1916 Small Box Respirator, followed by July 1917 Ypres blistering mustard gas, analysing Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on chemical warfare: Second Ypres chlorine gas (22 April 1915) and phosgene (December 1915) countered rapidly from urine-soaked pads and PH chemical hoods to the August 1916 Small Box Respirator, followed by July 1917 Ypres blistering mustard gas, analysing Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) effects of poison gas attacks [2m]; (b) design of the British Brodie steel helmet [2m]) and Q2(a) How useful are Sources D and E for an enquiry into the impact of poison gas attacks and the development of gas protection on the Western Front? [8m].",
+                "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) effects of poison gas attacks [2m]; (b) design of the British Brodie steel helmet [2m]) and Q2(a) How useful are Sources D and E for an enquiry into the impact of poison gas attacks and the development of gas protection on the Western Front? [8m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Green-pen DIRT on Q2(a): verify students evaluate Source D’s April 1915 eyewitness shock alongside Source E’s July 1916 PH-helmet staged/operational context, adding precise knowledge of phosgene, 1917 mustard gas, and the Small Box Respirator.",
+                "instruction": "Green-pen DIRT on Q2(a): verify students evaluate Source D’s April 1915 eyewitness shock alongside Source E’s July 1916 PH-helmet staged/operational context, adding precise knowledge of phosgene, 1917 mustard gas, and the Small Box Respirator."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": [
@@ -37535,27 +38333,37 @@
         {
           "term": "High-Explosive Shell",
           "definition": "Heavy artillery ammunition filled with TNT that detonated on impact, shattering its steel casing into thousands of jagged, high-velocity shrapnel fragments.",
-          "def": "Heavy artillery ammunition filled with TNT that detonated on impact, shattering its steel casing into thousands of jagged, high-velocity shrapnel fragments."
+          "def": "Heavy artillery ammunition filled with TNT that detonated on impact, shattering its steel casing into thousands of jagged, high-velocity shrapnel fragments.",
+          "phonetic": "HY-ik-sploh-siv shel",
+          "pronunciation": "HY-ik-sploh-siv shel"
         },
         {
           "term": "Gas Gangrene",
           "definition": "A ferocious, life-threatening infection caused by anaerobic bacteria (Clostridium welchii) from manured soil that produced gas bubbles and rotted living muscle tissue.",
-          "def": "A ferocious, life-threatening infection caused by anaerobic bacteria (Clostridium welchii) from manured soil that produced gas bubbles and rotted living muscle tissue."
+          "def": "A ferocious, life-threatening infection caused by anaerobic bacteria (Clostridium welchii) from manured soil that produced gas bubbles and rotted living muscle tissue.",
+          "phonetic": "GAS GANG-green",
+          "pronunciation": "GAS GANG-green"
         },
         {
           "term": "Tetanus",
           "definition": "A lethal bacterial disease (Clostridium tetani) from soil causing severe muscle spasms and lockjaw, successfully prevented by routine injections of tetanus antitoxin.",
-          "def": "A lethal bacterial disease (Clostridium tetani) from soil causing severe muscle spasms and lockjaw, successfully prevented by routine injections of tetanus antitoxin."
+          "def": "A lethal bacterial disease (Clostridium tetani) from soil causing severe muscle spasms and lockjaw, successfully prevented by routine injections of tetanus antitoxin.",
+          "phonetic": "TET-uh-nus",
+          "pronunciation": "TET-uh-nus"
         },
         {
           "term": "Brodie Helmet",
           "definition": "A pressed-steel combat helmet patented in 1915 by John Brodie, featuring a wide brim to protect soldiers’ heads from downward-falling artillery shrapnel.",
-          "def": "A pressed-steel combat helmet patented in 1915 by John Brodie, featuring a wide brim to protect soldiers’ heads from downward-falling artillery shrapnel."
+          "def": "A pressed-steel combat helmet patented in 1915 by John Brodie, featuring a wide brim to protect soldiers’ heads from downward-falling artillery shrapnel.",
+          "phonetic": "BROH-dee HEL-mit",
+          "pronunciation": "BROH-dee HEL-mit"
         },
         {
           "term": "Mustard Gas",
           "definition": "An oily, blister-producing chemical agent (vesicant) introduced in 1917 that burned through clothing, causing internal and external blisters and blinding troops.",
-          "def": "An oily, blister-producing chemical agent (vesicant) introduced in 1917 that burned through clothing, causing internal and external blisters and blinding troops."
+          "def": "An oily, blister-producing chemical agent (vesicant) introduced in 1917 that burned through clothing, causing internal and external blisters and blinding troops.",
+          "phonetic": "MUS-turd gas",
+          "pronunciation": "MUS-turd gas"
         }
       ],
       "quick_quiz": [
@@ -38693,6 +39501,77 @@
           "Source C": "RAMC Stretcher-Bearers Removing a Wounded Soldier Under Fire by Gilbert Rogers (1919). Commissioned in 1919 to record the wartime work of the Royal Army Medical Corps, Gilbert Rogers drew on his own frontline service in Flanders to depict unarmed Red Cross brassard-wearing bearers hoisting casualties out of narrow trenches when traverses were blocked. **Hinge Question:** How does knowing that artist Gilbert Rogers served as an RAMC officer on the Western Front affect the historical value of Source C?",
           "Source D": "From the Memoir of an Ambulance Driver in the First Aid Nursing Yeomanry (FANY), Calais Sector (1917). FANY driver memoir, 1917. FANY was founded in 1907; the British Army formally accepted female ambulance drivers in January 1916. **Hinge Question:** Why was motor ambulance transport so critical to bridging the gap between dressing stations and Casualty Clearing Stations?",
           "Source E": "From an Inspection Report on Advanced Dressing Stations in the Somme Sector (August 1916). Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line. **Hinge Question:** Why was administering hot fluids and treating surgical shock at dressing stations essential before moving casualties by motor ambulance?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Stretcher Bearers, Regimental Aid Posts & Dressing Stations (Stages 1–3) (50 mins)",
+            "focus": "Stretcher Bearers, Regimental Aid Posts & Dressing Stations (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving artillery’s 58% wound share, manured farmland and gas gangrene, 1914 cloth caps vs 1915 Brodie helmets, and chlorine/mustard gas protection from KT 5.3.",
+                "instruction": "Complete the spaced Do Now retrieving artillery’s 58% wound share, manured farmland and gas gangrene, 1914 cloth caps vs 1915 Brodie helmets, and chlorine/mustard gas protection from KT 5.3."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Map the RAMC Chain of Evacuation from No Man’s Land rearward: sixteen battalion stretcher bearers carrying casualties under shellfire to the frontline Regimental Aid Post (RAP, within 200–300 yards), then half a mile back to Field Ambulance Main and Advanced Dressing Stations (ADS) served by horse and Red Cross/FANY motor ambulances.",
+                "instruction": "Map the RAMC Chain of Evacuation from No Man’s Land rearward: sixteen battalion stretcher bearers carrying casualties under shellfire to the frontline Regimental Aid Post (RAP, within 200–300 yards), then half a mile back to Field Ambulance Main and Advanced Dressing Stations (ADS) served by horse and Red Cross/FANY motor ambulances."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, clarifying why the single Battalion Medical Officer at the RAP treated shock and haemorrhage with bandages, splints, and morphine rather than operating.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, clarifying why the single Battalion Medical Officer at the RAP treated shock and haemorrhage with bandages, splints, and morphine rather than operating."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (1917 Passchendaele photograph of six-man/four-man stretcher squads knee-deep in liquid mud) alongside Source B (Captain J. C. Dunn’s 1916 RAP war diary) to diagnose frontline evacuation delays.",
+                "instruction": "Scrutinise Source A (1917 Passchendaele photograph of six-man/four-man stretcher squads knee-deep in liquid mud) alongside Source B (Captain J. C. Dunn’s 1916 RAP war diary) to diagnose frontline evacuation delays."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Casualty Clearing Stations, Base Hospitals & Section A Follow-Up (Stages 4–5) (50 mins)",
+            "focus": "Casualty Clearing Stations, Base Hospitals & Section A Follow-Up (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced recall check on battalion stretcher bearers, why RAPs avoided major surgery, and how Field Ambulances and FANY motor convoys moved wounded men through Dressing Stations.",
+                "instruction": "Spaced recall check on battalion stretcher bearers, why RAPs avoided major surgery, and how Field Ambulances and FANY motor convoys moved wounded men through Dressing Stations."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on Casualty Clearing Stations (CCS) 7–12 miles back beside railway junctions—using three-category triage to operate within the 24-hour gas-gangrene window—followed by ambulance trains, smooth canal barges, specialist coastal Base Hospitals (Boulogne, Le Havre, Étaples), and hospital ships to Britain, examining Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on Casualty Clearing Stations (CCS) 7–12 miles back beside railway junctions—using three-category triage to operate within the 24-hour gas-gangrene window—followed by ambulance trains, smooth canal barges, specialist coastal Base Hospitals (Boulogne, Le Havre, Étaples), and hospital ships to Britain, examining Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) triage system at Casualty Clearing Stations [2m]; (b) work of the First Aid Nursing Yeomanry / FANY [2m]) and Q2(b) Study Source A: How could you follow up Source A to find out more about the difficulties stretcher bearers faced evacuating casualties? [4m].",
+                "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) triage system at Casualty Clearing Stations [2m]; (b) work of the First Aid Nursing Yeomanry / FANY [2m]) and Q2(b) Study Source A: How could you follow up Source A to find out more about the difficulties stretcher bearers faced evacuating casualties? [4m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Verify Q2(b) precision during DIRT: check that pupils pick a visual detail from Source A (e.g. knee-deep Passchendaele mud requiring extra bearers), pose a linked question, name a valid contemporary record (e.g. Third Ypres RAMC Field Ambulance war diary), and link it to the enquiry.",
+                "instruction": "Verify Q2(b) precision during DIRT: check that pupils pick a visual detail from Source A (e.g. knee-deep Passchendaele mud requiring extra bearers), pose a linked question, name a valid contemporary record (e.g. Third Ypres RAMC Field Ambulance war diary), and link it to the enquiry."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": [
@@ -39205,27 +40084,37 @@
         {
           "term": "Chain of Evacuation",
           "definition": "The organised, multi-stage medical evacuation network designed to transport wounded soldiers from the frontline firestep back to specialist hospitals in Britain.",
-          "def": "The organised, multi-stage medical evacuation network designed to transport wounded soldiers from the frontline firestep back to specialist hospitals in Britain."
+          "def": "The organised, multi-stage medical evacuation network designed to transport wounded soldiers from the frontline firestep back to specialist hospitals in Britain.",
+          "phonetic": "CHAYN ov ih-vak-yoo-AY-shun",
+          "pronunciation": "CHAYN ov ih-vak-yoo-AY-shun"
         },
         {
           "term": "Regimental Aid Post (RAP)",
           "definition": "The foremost medical dugout located within 200–300 yards of the frontline, where the medical officer administered field dressings, morphine, and tetanus antitoxin.",
-          "def": "The foremost medical dugout located within 200–300 yards of the frontline, where the medical officer administered field dressings, morphine, and tetanus antitoxin."
+          "def": "The foremost medical dugout located within 200–300 yards of the frontline, where the medical officer administered field dressings, morphine, and tetanus antitoxin.",
+          "phonetic": "rej-ih-MEN-tul AYD pohst (ar-ay-PEE)",
+          "pronunciation": "rej-ih-MEN-tul AYD pohst (ar-ay-PEE)"
         },
         {
           "term": "Casualty Clearing Station (CCS)",
           "definition": "The critical surgical field hospital situated 7–12 miles behind the front line beside rail networks, equipped with sterile operating theatres, X-rays, and female nurses.",
-          "def": "The critical surgical field hospital situated 7–12 miles behind the front line beside rail networks, equipped with sterile operating theatres, X-rays, and female nurses."
+          "def": "The critical surgical field hospital situated 7–12 miles behind the front line beside rail networks, equipped with sterile operating theatres, X-rays, and female nurses.",
+          "phonetic": "KAZH-yoo-ul-tee KLEER-ing STAY-shun (see-see-ES)",
+          "pronunciation": "KAZH-yoo-ul-tee KLEER-ing STAY-shun (see-see-ES)"
         },
         {
           "term": "Triage",
           "definition": "The systematic sorting of casualties into three categories upon arrival at a CCS (walking wounded, immediate surgery, and moribund) to prioritise life-saving operations.",
-          "def": "The systematic sorting of casualties into three categories upon arrival at a CCS (walking wounded, immediate surgery, and moribund) to prioritise life-saving operations."
+          "def": "The systematic sorting of casualties into three categories upon arrival at a CCS (walking wounded, immediate surgery, and moribund) to prioritise life-saving operations.",
+          "phonetic": "TREE-ahzh",
+          "pronunciation": "TREE-ahzh"
         },
         {
           "term": "FANY",
           "definition": "First Aid Nursing Yeomanry: a courageous voluntary women’s organisation whose members drove motor ambulances and operated frontline field kitchen stations in France.",
-          "def": "First Aid Nursing Yeomanry: a courageous voluntary women’s organisation whose members drove motor ambulances and operated frontline field kitchen stations in France."
+          "def": "First Aid Nursing Yeomanry: a courageous voluntary women’s organisation whose members drove motor ambulances and operated frontline field kitchen stations in France.",
+          "phonetic": "FAN-ee (furst ayd NUR-sing YOH-mun-ree)",
+          "pronunciation": "FAN-ee (furst ayd NUR-sing YOH-mun-ree)"
         }
       ],
       "quick_quiz": [
@@ -40308,6 +41197,77 @@
           "Source C": "From an Official Report by Sir Robert Jones on the Use of the Thomas Splint (1917). Sir Robert Jones, report on the Thomas Splint, 1917. Jones was Inspector of Military Orthopaedics. **Hinge Question:** Why was applying mechanical traction on the battlefield more effective at preventing death than treating shock after arrival at hospital?",
           "Source D": "Marie Curie at the Wheel of a Mobile Field Radiography Car ('Petite Curie') on the Western Front (c.1915). Marie Curie equipped 20 mobile field radiography vehicles ('petites Curies') and trained 150 female technicians, examining over one million wounded soldiers during the war. **Hinge Question:** Why was adapting X-ray machines into mobile automotive units crucial for saving lives during high-casualty frontline offensives?",
           "Source E": "From the Memoir of a British Army Surgeon at CCS No. 44 near Poperinghe (1917). Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres. **Hinge Question:** How did the concept of the 'golden hours' revolutionise the entire structure of the British evacuation chain?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Wound Debridement, Carrel-Dakin Irrigation & Thomas Splint (Stages 1–3) (50 mins)",
+            "focus": "Wound Debridement, Carrel-Dakin Irrigation & Thomas Splint (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving 16 battalion stretcher bearers, frontline RAP dugouts, Advanced Dressing Stations, Casualty Clearing Stations 7–12 miles back, and coastal Base Hospitals from KT 5.4.",
+                "instruction": "Complete the spaced Do Now retrieving 16 battalion stretcher bearers, frontline RAP dugouts, Advanced Dressing Stations, Casualty Clearing Stations 7–12 miles back, and coastal Base Hospitals from KT 5.4."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain how Western Front surgeons conquered gas gangrene and fatal compound femur fractures between 1914 and 1916: replacing ineffective carbolic washes with radical surgical wound debridement, Alexis Carrel and Henry Dakin’s continuous sodium hypochlorite tube irrigation, and Sir Robert Jones’s December 1915 rollout of the rigid Thomas Splint.",
+                "instruction": "Explain how Western Front surgeons conquered gas gangrene and fatal compound femur fractures between 1914 and 1916: replacing ineffective carbolic washes with radical surgical wound debridement, Alexis Carrel and Henry Dakin’s continuous sodium hypochlorite tube irrigation, and Sir Robert Jones’s December 1915 rollout of the rigid Thomas Splint."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how applying traction at the RAP/ADS stopped jagged femur ends severing the femoral artery and slashed mortality from ~80% to under 20%.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, highlighting how applying traction at the RAP/ADS stopped jagged femur ends severing the femoral artery and slashed mortality from ~80% to under 20%."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (No. 23 CCS prefabricated operating hut at Lozinghem, July 1916) with Source B (Carrel and Dakin’s 1916 wound-treatment paper) on why chemical sterility failed unless dead tissue was excised first.",
+                "instruction": "Compare Source A (No. 23 CCS prefabricated operating hut at Lozinghem, July 1916) with Source B (Carrel and Dakin’s 1916 wound-treatment paper) on why chemical sterility failed unless dead tissue was excised first."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Mobile X-Ray Vans, Technical Limits & Section A Utility Writing (Stages 4–5) (50 mins)",
+            "focus": "Mobile X-Ray Vans, Technical Limits & Section A Utility Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieve why surface antiseptics failed in 1914, how perforated Carrel-Dakin tubes flushed deep wounds every two hours, and how the Thomas Splint cut compound femur deaths from 80% to under 20%.",
+                "instruction": "Retrieve why surface antiseptics failed in 1914, how perforated Carrel-Dakin tubes flushed deep wounds every two hours, and how the Thomas Splint cut compound femur deaths from 80% to under 20%."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on six British Sector mobile X-ray vans (and Marie Curie’s Petites Curies) taking two-angle plates before debridement, alongside battlefield radiology’s limits—invisible khaki cloth fragments, overheating glass Crookes tubes requiring three-tube rotation, and shattered plates on shell-torn roads—interrogating Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on six British Sector mobile X-ray vans (and Marie Curie’s Petites Curies) taking two-angle plates before debridement, alongside battlefield radiology’s limits—invisible khaki cloth fragments, overheating glass Crookes tubes requiring three-tube rotation, and shattered plates on shell-torn roads—interrogating Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Thomas Splint [2m]; (b) Carrel-Dakin method [2m]) and Q2(a) How useful are Sources B and C for an enquiry into how new surgical and orthopaedic techniques improved survival rates on the Western Front? [8m].",
+                "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Thomas Splint [2m]; (b) Carrel-Dakin method [2m]) and Q2(a) How useful are Sources B and C for an enquiry into how new surgical and orthopaedic techniques improved survival rates on the Western Front? [8m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Audit Q2(a) responses in DIRT: check that pupils judge Source B (Carrel/Dakin scientific paper) and Source C (Sir Robert Jones’s 1917 official report) on content, authorial purpose/scope, and contextual knowledge of debridement and RAP splint training.",
+                "instruction": "Audit Q2(a) responses in DIRT: check that pupils judge Source B (Carrel/Dakin scientific paper) and Source C (Sir Robert Jones’s 1917 official report) on content, authorial purpose/scope, and contextual knowledge of debridement and RAP splint training."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": [
@@ -40658,27 +41618,37 @@
         {
           "term": "Compound Fracture",
           "definition": "A severe bone fracture where jagged broken bone ends pierce through muscle and skin, creating an open wound highly vulnerable to lethal bacterial infection.",
-          "def": "A severe bone fracture where jagged broken bone ends pierce through muscle and skin, creating an open wound highly vulnerable to lethal bacterial infection."
+          "def": "A severe bone fracture where jagged broken bone ends pierce through muscle and skin, creating an open wound highly vulnerable to lethal bacterial infection.",
+          "phonetic": "KOM-pownd FRAK-chur",
+          "pronunciation": "KOM-pownd FRAK-chur"
         },
         {
           "term": "Thomas Splint",
           "definition": "A rigid metal frame designed by Hugh Owen Thomas and championed by Robert Jones, applying traction to broken thigh bones and reducing femur mortality from 80% to 20%.",
-          "def": "A rigid metal frame designed by Hugh Owen Thomas and championed by Robert Jones, applying traction to broken thigh bones and reducing femur mortality from 80% to 20%."
+          "def": "A rigid metal frame designed by Hugh Owen Thomas and championed by Robert Jones, applying traction to broken thigh bones and reducing femur mortality from 80% to 20%.",
+          "phonetic": "TOM-us splint",
+          "pronunciation": "TOM-us splint"
         },
         {
           "term": "Traction",
           "definition": "The steady mechanical pulling force applied to a fractured limb to counteract violent muscle spasms, pull bone ends into alignment, and prevent internal haemorrhaging.",
-          "def": "The steady mechanical pulling force applied to a fractured limb to counteract violent muscle spasms, pull bone ends into alignment, and prevent internal haemorrhaging."
+          "def": "The steady mechanical pulling force applied to a fractured limb to counteract violent muscle spasms, pull bone ends into alignment, and prevent internal haemorrhaging.",
+          "phonetic": "TRAK-shun",
+          "pronunciation": "TRAK-shun"
         },
         {
           "term": "Wound Debridement",
           "definition": "The surgical cutting away (excision) of all dead, devitalised tissue and foreign matter around a wound to starve anaerobic bacteria of the material they need to cause gangrene.",
-          "def": "The surgical cutting away (excision) of all dead, devitalised tissue and foreign matter around a wound to starve anaerobic bacteria of the material they need to cause gangrene."
+          "def": "The surgical cutting away (excision) of all dead, devitalised tissue and foreign matter around a wound to starve anaerobic bacteria of the material they need to cause gangrene.",
+          "phonetic": "woond DEE-bride-munt",
+          "pronunciation": "woond DEE-bride-munt"
         },
         {
           "term": "Carrel-Dakin Method",
           "definition": "The continuous irrigation of open wound cavities with dilute sodium hypochlorite (buffered bleach) through perforated rubber tubes to disinfect deep tissue safely.",
-          "def": "The continuous irrigation of open wound cavities with dilute sodium hypochlorite (buffered bleach) through perforated rubber tubes to disinfect deep tissue safely."
+          "def": "The continuous irrigation of open wound cavities with dilute sodium hypochlorite (buffered bleach) through perforated rubber tubes to disinfect deep tissue safely.",
+          "phonetic": "KAH-rel DAY-kin METH-ud",
+          "pronunciation": "KAH-rel DAY-kin METH-ud"
         }
       ],
       "quick_quiz": [
@@ -41816,6 +42786,77 @@
           "Source C": "From a Report by Captain Oswald H. Robertson on Stored Blood Transfusions at the Battle of Cambrai (1917). Captain Oswald Robertson, BMJ report on stored blood, 1918. Robertson was an American doctor working with the British Army. **Hinge Question:** Why was universal Group O blood essential for frontline emergency transfusions where laboratory cross-matching was impossible?",
           "Source D": "From the Western Front War Diary of Major Harvey Cushing at CCS No. 46, Mendinghem (August 1917). Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery. **Hinge Question:** Why did Cushing insist on operating under local anaesthesia rather than general anaesthesia for brain injuries?",
           "Source E": "From an Account by Sir Harold Gillies on the Foundation of Queen's Hospital, Sidcup (1920). Sir Harold Gillies, Plastic Surgery of the Face, 1920. Gillies is recognised as the father of modern plastic surgery. **Hinge Question:** Why was the creation of a specialised hospital like Sidcup necessary rather than treating facial trauma in general civilian hospitals?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Sodium Citrate, Citrate-Glucose & Cambrai Blood Depot (Stages 1–3) (50 mins)",
+            "focus": "Sodium Citrate, Citrate-Glucose & Cambrai Blood Depot (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Complete the spaced Do Now retrieving why 1914 wound stitching failed, Carrel-Dakin sodium hypochlorite irrigation, 80% compound femur mortality before the Thomas Splint, and overheating mobile X-ray tubes from KT 5.5.",
+                "instruction": "Complete the spaced Do Now retrieving why 1914 wound stitching failed, Carrel-Dakin sodium hypochlorite irrigation, 80% compound femur mortality before the Thomas Splint, and overheating mobile X-ray tubes from KT 5.5."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace how Western Front doctors conquered fatal haemorrhagic shock by turning direct vein-to-vein transfusion into the world’s first blood bank: Karl Landsteiner’s 1901 ABO typing + Hustin/Lewisohn’s 1914–15 sodium citrate anticoagulant, Rous and Turner’s 1916 citrate-glucose four-week refrigeration, and Captain Oswald Robertson’s November 1917 Cambrai Blood Depot.",
+                "instruction": "Trace how Western Front doctors conquered fatal haemorrhagic shock by turning direct vein-to-vein transfusion into the world’s first blood bank: Karl Landsteiner’s 1901 ABO typing + Hustin/Lewisohn’s 1914–15 sodium citrate anticoagulant, Rous and Turner’s 1916 citrate-glucose four-week refrigeration, and Captain Oswald Robertson’s November 1917 Cambrai Blood Depot."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how Robertson pre-stored 22 bottles of universal O-negative/Type O blood in ice-packed ammunition boxes for shocked casualties before surgery.",
+                "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how Robertson pre-stored 22 bottles of universal O-negative/Type O blood in ice-packed ammunition boxes for shocked casualties before surgery."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Dr Richard Lewisohn’s 1915 sodium citrate report) with Source B (Peyton Rous and Joseph Turner’s 1916 citrate-dextrose study) to explain why stopping clotting alone only preserved blood for 48 hours.",
+                "instruction": "Compare Source A (Dr Richard Lewisohn’s 1915 sodium citrate report) with Source B (Peyton Rous and Joseph Turner’s 1916 citrate-dextrose study) to explain why stopping clotting alone only preserved blood for 48 hours."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Cushing’s Brain Surgery, Gillies at Sidcup & Section A Follow-Up (Stages 4–5) (50 mins)",
+            "focus": "Cushing’s Brain Surgery, Gillies at Sidcup & Section A Follow-Up (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced recall check on sodium citrate preventing clotting, Rous and Turner’s 1916 citrate-glucose preserving red blood cells for four weeks, and Captain Oswald Robertson’s 1917 Cambrai Blood Depot.",
+                "instruction": "Spaced recall check on sodium citrate preventing clotting, Rous and Turner’s 1916 citrate-glucose preserving red blood cells for four weeks, and Captain Oswald Robertson’s 1917 Cambrai Blood Depot."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 on Major Harvey Cushing’s neurosurgery at Mendinghem CCS No. 46 (using local anaesthetic to prevent brain swelling and electromagnets to extract steel fragments, cutting mortality from ~50%+ to ~29%) and Major Harold Gillies’s plastic reconstruction at Queen’s Hospital, Sidcup (opened June 1917, pioneering living ‘tubed pedicle’ skin grafts across >11,000 operations), analysing Sources C, D, and E.",
+                "instruction": "Read Stages 4–5 on Major Harvey Cushing’s neurosurgery at Mendinghem CCS No. 46 (using local anaesthetic to prevent brain swelling and electromagnets to extract steel fragments, cutting mortality from ~50%+ to ~29%) and Major Harold Gillies’s plastic reconstruction at Queen’s Hospital, Sidcup (opened June 1917, pioneering living ‘tubed pedicle’ skin grafts across >11,000 operations), analysing Sources C, D, and E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Harvey Cushing’s head-wound techniques [2m]; (b) Harold Gillies’s surgical methods at Sidcup [2m]) and Q2(b) Study Source C: How could you follow up Source C to find out more about the success of stored blood transfusions at the Battle of Cambrai in 1917? [4m].",
+                "instruction": "Timed Edexcel Paper 1 Section A practice: complete Q1 Describe two features ((a) Harvey Cushing’s head-wound techniques [2m]; (b) Harold Gillies’s surgical methods at Sidcup [2m]) and Q2(b) Study Source C: How could you follow up Source C to find out more about the success of stored blood transfusions at the Battle of Cambrai in 1917? [4m]."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Final DIRT check on Q2(b): ensure pupils select a concrete detail from Robertson’s Cambrai report (e.g. 11 of 20 severely shocked soldiers surviving), frame a wider statistical question, cite Third Army CCS surgical/transfusion registers from November–December 1917, and explain how that tests wider survival impact.",
+                "instruction": "Final DIRT check on Q2(b): ensure pupils select a concrete detail from Robertson’s Cambrai report (e.g. 11 of 20 severely shocked soldiers surviving), frame a wider statistical question, cite Third Army CCS surgical/transfusion registers from November–December 1917, and explain how that tests wider survival impact."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": [
@@ -42283,27 +43324,37 @@
         {
           "term": "Sodium Citrate",
           "definition": "A chemical anticoagulant added to fresh blood in 1914 by Hustin and Agote that stopped blood from clotting outside the body by binding calcium ions.",
-          "def": "A chemical anticoagulant added to fresh blood in 1914 by Hustin and Agote that stopped blood from clotting outside the body by binding calcium ions."
+          "def": "A chemical anticoagulant added to fresh blood in 1914 by Hustin and Agote that stopped blood from clotting outside the body by binding calcium ions.",
+          "phonetic": "SOH-dee-um SIT-rayt",
+          "pronunciation": "SOH-dee-um SIT-rayt"
         },
         {
           "term": "Blood Depot",
           "definition": "The world’s first blood bank established by Captain Oswald Robertson at the Battle of Cambrai (1917), storing citrated blood in ice chests for up to 28 days.",
-          "def": "The world’s first blood bank established by Captain Oswald Robertson at the Battle of Cambrai (1917), storing citrated blood in ice chests for up to 28 days."
+          "def": "The world’s first blood bank established by Captain Oswald Robertson at the Battle of Cambrai (1917), storing citrated blood in ice chests for up to 28 days.",
+          "phonetic": "BLUD DEP-oh",
+          "pronunciation": "BLUD DEP-oh"
         },
         {
           "term": "Harvey Cushing",
           "definition": "Pioneering American neurosurgeon who operated under local anaesthetic and used electromagnets to extract shrapnel from brain tissue, reducing head wound mortality to 29%.",
-          "def": "Pioneering American neurosurgeon who operated under local anaesthetic and used electromagnets to extract shrapnel from brain tissue, reducing head wound mortality to 29%."
+          "def": "Pioneering American neurosurgeon who operated under local anaesthetic and used electromagnets to extract shrapnel from brain tissue, reducing head wound mortality to 29%.",
+          "phonetic": "HAR-vee KOOSH-ing",
+          "pronunciation": "HAR-vee KOOSH-ing"
         },
         {
           "term": "Harold Gillies",
           "definition": "New Zealand-born surgeon who founded Queen’s Hospital, Sidcup, pioneering modern plastic surgery and the tubed pedicle skin flap for disfigured soldiers.",
-          "def": "New Zealand-born surgeon who founded Queen’s Hospital, Sidcup, pioneering modern plastic surgery and the tubed pedicle skin flap for disfigured soldiers."
+          "def": "New Zealand-born surgeon who founded Queen’s Hospital, Sidcup, pioneering modern plastic surgery and the tubed pedicle skin flap for disfigured soldiers.",
+          "phonetic": "HAR-uld GIL-eez",
+          "pronunciation": "HAR-uld GIL-eez"
         },
         {
           "term": "Tubed Pedicle",
           "definition": "A revolutionary surgical technique where a living flap of skin was rolled into a tube to maintain blood supply while grafting new skin onto facial wounds.",
-          "def": "A revolutionary surgical technique where a living flap of skin was rolled into a tube to maintain blood supply while grafting new skin onto facial wounds."
+          "def": "A revolutionary surgical technique where a living flap of skin was rolled into a tube to maintain blood supply while grafting new skin onto facial wounds.",
+          "phonetic": "TYOOBD PED-ih-kul",
+          "pronunciation": "TYOOBD PED-ih-kul"
         }
       ],
       "quick_quiz": [

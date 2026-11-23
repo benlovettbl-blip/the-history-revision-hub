@@ -1,0 +1,979 @@
+{
+  "unit_id": "eee",
+  "delivery_plans": {
+    "lesson_1_1": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Accession, Royal Court & Legitimacy Doubts (Stages 1–3) (50 mins)",
+          "focus": "Accession, Royal Court & Legitimacy Doubts (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Run the baseline Do Now retrieving Henry VII’s 1485 Tudor dynasty, Henry VIII’s 1530s break with Rome, Anne Boleyn’s execution, and the religious swings under Edward VI and Mary I.",
+              "instruction": "Run the baseline Do Now retrieving Henry VII’s 1485 Tudor dynasty, Henry VIII’s 1530s break with Rome, Anne Boleyn’s execution, and the religious swings under Edward VI and Mary I."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Introduce Tudor society’s Great Chain of Being and explain why twenty-five-year-old Elizabeth faced immediate domestic doubts in November 1558: £300,000 Crown debt, debased coinage, patriarchal hostility to a Queen Regnant, and Catholic rejection of Henry VIII’s divorce.",
+              "instruction": "Introduce Tudor society’s Great Chain of Being and explain why twenty-five-year-old Elizabeth faced immediate domestic doubts in November 1558: £300,000 Crown debt, debased coinage, patriarchal hostility to a Queen Regnant, and Catholic rejection of Henry VIII’s divorce."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Shared reading of Stages 1–3 covering inherited financial crisis, patronage and factions inside the 19-member Privy Council under Sir William Cecil, and legitimacy/marriage pressures, completing Workbook Verso Spine stages 1–3.",
+              "instruction": "Shared reading of Stages 1–3 covering inherited financial crisis, patronage and factions inside the 19-member Privy Council under Sir William Cecil, and legitimacy/marriage pressures, completing Workbook Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (the 1559 Coronation Portrait’s orb, sceptre, and cloth of estate) with Source B (Sir William Cecil) and Source C (John Knox’s 1558 blast against female rule) to test how Elizabeth projected authority.",
+              "instruction": "Compare Source A (the 1559 Coronation Portrait’s orb, sceptre, and cloth of estate) with Source B (Sir William Cecil) and Source C (John Knox’s 1558 blast against female rule) to test how Elizabeth projected authority."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Local Shires, Foreign Encirclement & Paper 2 B4 Writing (Stages 4–5) (50 mins)",
+          "focus": "Local Shires, Foreign Encirclement & Paper 2 B4 Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on Crown debt (£300,000), royal patronage in the Privy Council, and Catholic canon-law objections to Elizabeth’s legitimacy.",
+              "instruction": "Spaced recall check on Crown debt (£300,000), royal patronage in the Privy Council, and Catholic canon-law objections to Elizabeth’s legitimacy."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Parliament’s extraordinary taxation, unpaid Lords Lieutenant and Justices of the Peace in the shires, the loss of Calais, and Franco-Scottish encirclement via the Auld Alliance and Mary Stuart’s claim, examining Sources D and E.",
+              "instruction": "Read Stages 4–5 on Parliament’s extraordinary taxation, unpaid Lords Lieutenant and Justices of the Peace in the shires, the loss of Calais, and Franco-Scottish encirclement via the Auld Alliance and Mary Stuart’s claim, examining Sources D and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558; Elizabeth’s character and strengths [4m: 2×2m]) and Q2 Explain why Elizabeth’s legitimacy, gender, and marriage were a problem in 1558 [12m].",
+              "instruction": "Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558; Elizabeth’s character and strengths [4m: 2×2m]) and Q2 Explain why Elizabeth’s legitimacy, gender, and marriage were a problem in 1558 [12m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Green-pen DIRT check: verify each 2-mark feature pairs an identified feature with specific supporting detail, and check that the 12-mark essay develops three distinct analytical paragraphs without narrative drift.",
+              "instruction": "Green-pen DIRT check: verify each 2-mark feature pairs an identified feature with specific supporting detail, and check that the 12-mark essay develops three distinct analytical paragraphs without narrative drift."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_1_2": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: 1558 Religious Divide, Supremacy & Uniformity (Stages 1–3) (50 mins)",
+          "focus": "1558 Religious Divide, Supremacy & Uniformity (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Elizabeth’s November 1558 accession, Principal Secretary Sir William Cecil, John Knox’s objections to female rule, £300,000 debt, and the Auld Alliance from KT 1.1.",
+              "instruction": "Complete the spaced Do Now retrieving Elizabeth’s November 1558 accession, Principal Secretary Sir William Cecil, John Knox’s objections to female rule, £300,000 debt, and the Auld Alliance from KT 1.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Map England’s geographical religious divide in 1558 (conservative Catholic north-west vs Protestant London, East Anglia, and returning Marian exiles) to explain why Elizabeth sought a ‘Middle Way’ through the May 1559 Acts of Supremacy and Uniformity.",
+              "instruction": "Map England’s geographical religious divide in 1558 (conservative Catholic north-west vs Protestant London, East Anglia, and returning Marian exiles) to explain why Elizabeth sought a ‘Middle Way’ through the May 1559 Acts of Supremacy and Uniformity."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 on religious divisions, adopting the title ‘Supreme Governor’ under the Act of Supremacy, and the 1559 Book of Common Prayer compromises + 12d (1s) recusancy fine under Uniformity, completing Verso Spine stages 1–3.",
+              "instruction": "Read Stages 1–3 on religious divisions, adopting the title ‘Supreme Governor’ under the Act of Supremacy, and the 1559 Book of Common Prayer compromises + 12d (1s) recusancy fine under Uniformity, completing Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (1559 Act of Supremacy roll) alongside Source B (1559 Book of Common Prayer title page) to test how deliberately ambiguous communion wording encouraged outward conformity.",
+              "instruction": "Scrutinise Source A (1559 Act of Supremacy roll) alongside Source B (1559 Book of Common Prayer title page) to test how deliberately ambiguous communion wording encouraged outward conformity."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Royal Injunctions, Visitations & Paper 2 B4 Writing (Stages 4–5) (50 mins)",
+          "focus": "Royal Injunctions, Visitations & Paper 2 B4 Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve England’s regional religious divide, why Elizabeth chose ‘Supreme Governor’ over ‘Supreme Head’, and the 1559 Act of Uniformity’s 1s Sunday fine.",
+              "instruction": "Retrieve England’s regional religious divide, why Elizabeth chose ‘Supreme Governor’ over ‘Supreme Head’, and the 1559 Act of Uniformity’s 1s Sunday fine."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Cecil’s 57 Royal Injunctions, the autumn 1559 nationwide visitations (400 clergy resigning or deprived out of ~8,000), and the parish church’s daily social and judicial role, interrogating Sources C, D, and E (Pope Pius IV’s cautious 1560 response).",
+              "instruction": "Read Stages 4–5 on Cecil’s 57 Royal Injunctions, the autumn 1559 nationwide visitations (400 clergy resigning or deprived out of ~8,000), and the parish church’s daily social and judicial role, interrogating Sources C, D, and E (Pope Pius IV’s cautious 1560 response)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (role of the Church of England; religious divisions in 1558 [4m]) and Q2 Explain why Elizabeth’s 1559 Religious Settlement took the form it did [12m] (or Q3 16m evaluative extension).",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (role of the Church of England; religious divisions in 1558 [4m]) and Q2 Explain why Elizabeth’s 1559 Religious Settlement took the form it did [12m] (or Q3 16m evaluative extension)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Peer-assess 12-mark explanations against domestic peace, Marian bishops in the House of Lords, and avoiding a joint Franco-Spanish Catholic crusade.",
+              "instruction": "Peer-assess 12-mark explanations against domestic peace, Marian bishops in the House of Lords, and avoiding a joint Franco-Spanish Catholic crusade."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_1_3": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Puritan Crucifix & Vestments Controversies (Stages 1–3) (50 mins)",
+          "focus": "Puritan Crucifix & Vestments Controversies (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Geneva exiles, the 1559 Acts of Supremacy and Uniformity, Royal Injunctions, and Church Courts from KT 1.2.",
+              "instruction": "Complete the spaced Do Now retrieving Geneva exiles, the 1559 Acts of Supremacy and Uniformity, Royal Injunctions, and Church Courts from KT 1.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Contrast the internal theological challenge of radical Puritans with the subdued domestic posture of English ‘Church Papists’ during the early 1560s, unpacking why crucifixes and the white linen surplice tested royal supremacy.",
+              "instruction": "Contrast the internal theological challenge of radical Puritans with the subdued domestic posture of English ‘Church Papists’ during the early 1560s, unpacking why crucifixes and the white linen surplice tested royal supremacy."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Shared reading of Stages 1–3 covering Puritan opposition to ‘popish’ remnants, Elizabeth backing down on parish crucifixes before Archbishop Matthew Parker’s 1566 Book of Advertisements sacked 37 London ministers, and early Catholic conformity, completing Verso Spine stages 1–3.",
+              "instruction": "Shared reading of Stages 1–3 covering Puritan opposition to ‘popish’ remnants, Elizabeth backing down on parish crucifixes before Archbishop Matthew Parker’s 1566 Book of Advertisements sacked 37 London ministers, and early Catholic conformity, completing Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Bishop Jewel on the 1560 Crucifix Controversy) with Source B (Parker’s March 1566 Lambeth vestments confrontation) to check why Puritan defiance lacked popular noble backing.",
+              "instruction": "Compare Source A (Bishop Jewel on the 1560 Crucifix Controversy) with Source B (Parker’s March 1566 Lambeth vestments confrontation) to check why Puritan defiance lacked popular noble backing."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Counter-Reformation Abroad, Genoese Loan & Paper 2 B4 Essay (Stages 4–5) (50 mins)",
+          "focus": "Counter-Reformation Abroad, Genoese Loan & Paper 2 B4 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on the Crucifix and Vestments controversies, Archbishop Parker’s 1566 crackdown, and why most English Catholics acted as Church Papists before 1568.",
+              "instruction": "Spaced recall check on the Crucifix and Vestments controversies, Archbishop Parker’s 1566 crackdown, and why most English Catholics acted as Church Papists before 1568."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the 1562 French Wars of Religion (Treaty of Troyes), the Duke of Alba’s 10,000 Spanish troops marching into the Netherlands in 1567, William Allen’s 1568 Douai seminary, and Elizabeth’s November 1568 seizure of the £85,000 Genoese Loan sparking the Antwerp embargo, analysing Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on the 1562 French Wars of Religion (Treaty of Troyes), the Duke of Alba’s 10,000 Spanish troops marching into the Netherlands in 1567, William Allen’s 1568 Douai seminary, and Elizabeth’s November 1568 seizure of the £85,000 Genoese Loan sparking the Antwerp embargo, analysing Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Puritan challenge; role of the Papacy and foreign powers, 1559–69 [4m]) and Q3 ‘The Catholic challenge was a greater threat to Elizabeth’s religious settlement than the Puritan challenge in the years 1559–69.’ How far do you agree? [16m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Puritan challenge; role of the Papacy and foreign powers, 1559–69 [4m]) and Q3 ‘The Catholic challenge was a greater threat to Elizabeth’s religious settlement than the Puritan challenge in the years 1559–69.’ How far do you agree? [16m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Check Q3 essays during DIRT for sustained balanced criteria (scale of domestic support, threat to royal authority, and foreign military danger from Alba/Spain) leading to a substantiated verdict.",
+              "instruction": "Check Q3 essays during DIRT for sustained balanced criteria (scale of domestic support, threat to royal authority, and foreign military danger from Alba/Spain) leading to a substantiated verdict."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_1_4": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Mary Stuart’s Claim, Darnley’s Murder & Lochleven Escape (Stages 1–3) (50 mins)",
+          "focus": "Mary Stuart’s Claim, Darnley’s Murder & Lochleven Escape (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Puritans, the 1559–60 Crucifix Controversy, Church Papists, Alba’s army in the Netherlands, and the 1568 Genoese Loan from KT 1.3.",
+              "instruction": "Complete the spaced Do Now retrieving Puritans, the 1559–60 Crucifix Controversy, Church Papists, Alba’s army in the Netherlands, and the 1568 Genoese Loan from KT 1.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain why Mary, Queen of Scots’ sudden arrival in Cumbria in May 1568 trapped Elizabeth: as Henry VII’s Catholic great-granddaughter via Margaret Tudor, Mary possessed an unimpeachable blood claim, yet helping, freeing, or executing an anointed queen each carried severe diplomatic and domestic perils.",
+              "instruction": "Explain why Mary, Queen of Scots’ sudden arrival in Cumbria in May 1568 trapped Elizabeth: as Henry VII’s Catholic great-granddaughter via Margaret Tudor, Mary possessed an unimpeachable blood claim, yet helping, freeing, or executing an anointed queen each carried severe diplomatic and domestic perils."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 on Mary’s dynastic claim, the February 1567 murder of Lord Darnley at Kirk o’ Field and marriage to Bothwell, and her forced abdication at Lochleven Castle and flight into England, completing Verso Spine stages 1–3.",
+              "instruction": "Read Stages 1–3 on Mary’s dynastic claim, the February 1567 murder of Lord Darnley at Kirk o’ Field and marriage to Bothwell, and her forced abdication at Lochleven Castle and flight into England, completing Verso Spine stages 1–3."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Interrogate Source A (Mary Stuart’s portrait) alongside Source C (the 24 July 1567 Lochleven Deed of Abdication) to evaluate why provenance undermines claims that Mary freely renounced her crown.",
+              "instruction": "Interrogate Source A (Mary Stuart’s portrait) alongside Source C (the 24 July 1567 Lochleven Deed of Abdication) to evaluate why provenance undermines claims that Mary freely renounced her crown."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: York Inquiry, Casket Letters & Captivity (Stages 4–5 & Paper 2 B4 Essay) (50 mins)",
+          "focus": "York Inquiry, Casket Letters & Captivity (Stages 4–5 & Paper 2 B4 Essay)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Recall check on Margaret Tudor’s bloodline, Lord Darnley’s murder at Kirk o’ Field, Regent Moray, and why Elizabeth refused to restore Mary by force.",
+              "instruction": "Recall check on Margaret Tudor’s bloodline, Lord Darnley’s murder at Kirk o’ Field, Regent Moray, and why Elizabeth refused to restore Mary by force."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the October 1568–January 1569 York/Westminster Inquiry, Regent Moray’s presentation of the disputed Casket Letters, Elizabeth’s ‘not proven’ political stalemate, and Mary’s captivity at Bolton and Tutbury inspiring the 1569 Norfolk marriage scheme, examining Sources B, D, and E.",
+              "instruction": "Read Stages 4–5 on the October 1568–January 1569 York/Westminster Inquiry, Regent Moray’s presentation of the disputed Casket Letters, Elizabeth’s ‘not proven’ political stalemate, and Mary’s captivity at Bolton and Tutbury inspiring the 1569 Norfolk marriage scheme, examining Sources B, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (relations between Elizabeth and Mary, 1568–69; Mary’s claim to the English throne [4m]) and Q3 ‘Mary, Queen of Scots’ claim to the English throne was the main problem in relations between Elizabeth and Mary in the years 1568–69.’ How far do you agree? [16m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (relations between Elizabeth and Mary, 1568–69; Mary’s claim to the English throne [4m]) and Q3 ‘Mary, Queen of Scots’ claim to the English throne was the main problem in relations between Elizabeth and Mary in the years 1568–69.’ How far do you agree? [16m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Run exemplar DIRT checking that Q3 weighs Mary’s Catholic dynastic claim against the Darnley murder scandal, foreign Franco-Spanish intrigue, and court plotting around the Duke of Norfolk.",
+              "instruction": "Run exemplar DIRT checking that Q3 weighs Mary’s Catholic dynastic claim against the Darnley murder scandal, foreign Franco-Spanish intrigue, and court plotting around the Duke of Norfolk."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_2_1": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Northern Earls, 1570 Papal Bull, Ridolfi & Throckmorton (Stages 1–3) (50 mins)",
+          "focus": "Northern Earls, 1570 Papal Bull, Ridolfi & Throckmorton (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Margaret Tudor’s lineage, Lord Darnley and the Earl of Bothwell, the Casket Letters at York, and the 1569 Norfolk marriage plan from KT 1.4.",
+              "instruction": "Complete the spaced Do Now retrieving Margaret Tudor’s lineage, Lord Darnley and the Earl of Bothwell, the Casket Letters at York, and the 1569 Norfolk marriage plan from KT 1.4."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Chart how domestic Catholic resistance escalated from feudal northern rebellion to foreign-backed assassination plots: the November 1569 Revolt of the Northern Earls (Northumberland and Westmorland), Pope Pius V’s February 1570 bull Regnans in Excelsis, the 1571 Ridolfi Plot, and the 1583 Throckmorton Plot.",
+              "instruction": "Chart how domestic Catholic resistance escalated from feudal northern rebellion to foreign-backed assassination plots: the November 1569 Revolt of the Northern Earls (Northumberland and Westmorland), Pope Pius V’s February 1570 bull Regnans in Excelsis, the 1571 Ridolfi Plot, and the 1583 Throckmorton Plot."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting Durham Cathedral’s Catholic Mass, Elizabeth raising 14,000 royal troops, £20 monthly recusancy fines (1581), and the 1584 Bond of Association.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting Durham Cathedral’s Catholic Mass, Elizabeth raising 14,000 royal troops, £20 monthly recusancy fines (1581), and the 1584 Bond of Association."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Earl of Northumberland) and Source B (Duke of Norfolk, executed 1572 after Ridolfi) with Source C (Francis Throckmorton’s 1583 Tower interrogation) to explain why Parliament passed the 1585 Act for the Queen’s Safety.",
+              "instruction": "Compare Source A (Earl of Northumberland) and Source B (Duke of Norfolk, executed 1572 after Ridolfi) with Source C (Francis Throckmorton’s 1583 Tower interrogation) to explain why Parliament passed the 1585 Act for the Queen’s Safety."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Babington Cipher Trap, Mary’s Execution & Paper 2 B4 Writing (Stages 4–5) (50 mins)",
+          "focus": "Babington Cipher Trap, Mary’s Execution & Paper 2 B4 Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on why the 1569 Northern Revolt failed, the impact of the 1570 Papal Bull on English Catholics’ loyalty dilemma, Ridolfi (1571), and Throckmorton (1583).",
+              "instruction": "Spaced recall check on why the 1569 Northern Revolt failed, the impact of the 1570 Papal Bull on English Catholics’ loyalty dilemma, Ridolfi (1571), and Throckmorton (1583)."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Sir Francis Walsingham and cryptanalyst Thomas Phelippes intercepting Anthony Babington’s 1586 beer-barrel cipher letters at Chartley Hall, Mary’s trial and 8 February 1587 execution at Fotheringhay Castle, and Philip II inheriting her claim, analysing Sources D and E.",
+              "instruction": "Read Stages 4–5 on Sir Francis Walsingham and cryptanalyst Thomas Phelippes intercepting Anthony Babington’s 1586 beer-barrel cipher letters at Chartley Hall, Mary’s trial and 8 February 1587 execution at Fotheringhay Castle, and Philip II inheriting her claim, analysing Sources D and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Walsingham’s spy network; Revolt of the Northern Earls [4m]) and Q2 Explain why Mary, Queen of Scots was executed in 1587 [12m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Walsingham’s spy network; Revolt of the Northern Earls [4m]) and Q2 Explain why Mary, Queen of Scots was executed in 1587 [12m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Audit 12-mark essays using DIRT: ensure paragraphs connect Walsingham’s forensic cipher proof, the 1584–85 Bond/Act legal mechanism, and the immediate Spanish invasion menace after 1585.",
+              "instruction": "Audit 12-mark essays using DIRT: ensure paragraphs connect Walsingham’s forensic cipher proof, the 1584–85 Bond/Act legal mechanism, and the immediate Spanish invasion menace after 1585."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_2_2": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Dutch Revolt, New World Privateering & Circumnavigation (Stages 1–3) (50 mins)",
+          "focus": "Dutch Revolt, New World Privateering & Circumnavigation (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Northumberland and Westmorland (1569), Pope Pius V’s Regnans in Excelsis (1570), the 1583 Throckmorton Plot, and Walsingham’s 1586 Babington trap from KT 2.1.",
+              "instruction": "Complete the spaced Do Now retrieving Northumberland and Westmorland (1569), Pope Pius V’s Regnans in Excelsis (1570), the 1583 Throckmorton Plot, and Walsingham’s 1586 Babington trap from KT 2.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Unpack the three intertwined strands of Anglo-Spanish rivalry between 1569 and 1585: strategic/religious alarm over Spanish armies in the Netherlands (1576 Spanish Fury and Pacification of Ghent), commercial clashes after San Juan de Ulúa (1568), and Francis Drake’s 1577–80 Pacific raids aboard the Golden Hind.",
+              "instruction": "Unpack the three intertwined strands of Anglo-Spanish rivalry between 1569 and 1585: strategic/religious alarm over Spanish armies in the Netherlands (1576 Spanish Fury and Pacification of Ghent), commercial clashes after San Juan de Ulúa (1568), and Francis Drake’s 1577–80 Pacific raids aboard the Golden Hind."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking Elizabeth’s indirect financial aid (£100,000 / Casimir’s mercenaries) alongside Drake’s capture of the Cacafuego (£140,000+ silver haul, £400,000 total return).",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking Elizabeth’s indirect financial aid (£100,000 / Casimir’s mercenaries) alongside Drake’s capture of the Cacafuego (£140,000+ silver haul, £400,000 total return)."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source B (Sir Francis Drake) and Source C (Sir John Hawkins and San Juan de Ulúa) with Source D (Hondius’s circumnavigation map) to test whether greed or strategic defence drove privateering.",
+              "instruction": "Compare Source B (Sir Francis Drake) and Source C (Sir John Hawkins and San Juan de Ulúa) with Source D (Hondius’s circumnavigation map) to test whether greed or strategic defence drove privateering."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Deptford Knighting, Joinville & Nonsuch (Stages 4–5 & Paper 2 B4 Essay) (50 mins)",
+          "focus": "Deptford Knighting, Joinville & Nonsuch (Stages 4–5 & Paper 2 B4 Essay)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve the 1576 Spanish Fury at Antwerp, the 1568 ambush at San Juan de Ulúa, and Drake’s capture of the Cacafuego during his 1577–80 circumnavigation.",
+              "instruction": "Retrieve the 1576 Spanish Fury at Antwerp, the 1568 ambush at San Juan de Ulúa, and Drake’s capture of the Cacafuego during his 1577–80 circumnavigation."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Philip II’s 1580 annexation of Portugal, Elizabeth publicly knighting Drake on the Golden Hind at Deptford (April 1581), the Duke of Parma’s reconquest, William of Orange’s July 1584 assassination, the Catholic Treaty of Joinville (December 1584), and the Anglo-Dutch Treaty of Nonsuch (August 1585), examining Sources A and E.",
+              "instruction": "Read Stages 4–5 on Philip II’s 1580 annexation of Portugal, Elizabeth publicly knighting Drake on the Golden Hind at Deptford (April 1581), the Duke of Parma’s reconquest, William of Orange’s July 1584 assassination, the Catholic Treaty of Joinville (December 1584), and the Anglo-Dutch Treaty of Nonsuch (August 1585), examining Sources A and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Drake’s privateering; political and religious rivalry with Spain [4m]) and Q3 ‘Commercial rivalry was the main reason for rivalry between England and Spain in the years 1569–85.’ How far do you agree? [16m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Drake’s privateering; political and religious rivalry with Spain [4m]) and Q3 ‘Commercial rivalry was the main reason for rivalry between England and Spain in the years 1569–85.’ How far do you agree? [16m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Review Q3 judgements with green-pen DIRT, checking that essays weigh New World treasure/trade clashes against Dutch Channel security, Joinville encirclement, and religious Counter-Reformation hostility.",
+              "instruction": "Review Q3 judgements with green-pen DIRT, checking that essays weigh New World treasure/trade clashes against Dutch Channel security, Joinville encirclement, and religious Counter-Reformation hostility."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_2_3": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Leicester in the Netherlands, Deventer & Raid on Cadiz (Stages 1–3) (50 mins)",
+          "focus": "Leicester in the Netherlands, Deventer & Raid on Cadiz (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Philip II’s rule, the 1568 clash at San Juan de Ulúa, Drake’s 1577–80 circumnavigation, the 1584 Treaty of Joinville, and the August 1585 Treaty of Nonsuch from KT 2.2.",
+              "instruction": "Complete the spaced Do Now retrieving Philip II’s rule, the 1568 clash at San Juan de Ulúa, Drake’s 1577–80 circumnavigation, the 1584 Treaty of Joinville, and the August 1585 Treaty of Nonsuch from KT 2.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain why English intervention in the Netherlands stumbled between 1585 and 1587 while Drake’s naval strike bought England crucial time: Robert Dudley accepting ‘Governor-General’ (January 1586), Sir William Stanley’s Catholic defection at Deventer and Rowland York’s betrayal of Zutphen Fort, and Drake’s April 1587 raid on Cadiz.",
+              "instruction": "Explain why English intervention in the Netherlands stumbled between 1585 and 1587 while Drake’s naval strike bought England crucial time: Robert Dudley accepting ‘Governor-General’ (January 1586), Sir William Stanley’s Catholic defection at Deventer and Rowland York’s betrayal of Zutphen Fort, and Drake’s April 1587 raid on Cadiz."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how burning ~30 warships at Cadiz (“Singeing the King of Spain’s Beard”) delayed Philip II’s Armada by a year.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how burning ~30 warships at Cadiz (“Singeing the King of Spain’s Beard”) delayed Philip II’s Armada by a year."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source B (1585 Treaty of Nonsuch terms) with Source C (Elizabeth’s furious 10 February 1586 letter read before the Dutch Estates-General) to diagnose why limited war aims undermined Leicester.",
+              "instruction": "Compare Source B (1585 Treaty of Nonsuch terms) with Source C (Elizabeth’s furious 10 February 1586 letter read before the Dutch Estates-General) to diagnose why limited war aims undermined Leicester."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Burned Barrel Staves, Armada Flaws & Paper 2 B4 Essay (Stages 4–5) (50 mins)",
+          "focus": "Burned Barrel Staves, Armada Flaws & Paper 2 B4 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on Flushing and Brielle, why Dudley’s Governor-General title enraged Elizabeth, betrayals at Deventer and Zutphen, and the April 1587 Cadiz raid.",
+              "instruction": "Spaced recall check on Flushing and Brielle, why Dudley’s Governor-General title enraged Elizabeth, betrayals at Deventer and Zutphen, and the April 1587 Cadiz raid."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Drake burning seasoned oak barrel staves off Cape St Vincent (rotting 1588 provisions in green wood), Admiral Santa Cruz’s death and Medina Sidonia’s reluctant appointment, and the fatal rendezvous flaw requiring deep-draught galleons to meet Parma’s 27,000 troops without a deep-water Dutch port, interrogating Sources A, D, and E.",
+              "instruction": "Read Stages 4–5 on Drake burning seasoned oak barrel staves off Cape St Vincent (rotting 1588 provisions in green wood), Admiral Santa Cruz’s death and Medina Sidonia’s reluctant appointment, and the fatal rendezvous flaw requiring deep-draught galleons to meet Parma’s 27,000 troops without a deep-water Dutch port, interrogating Sources A, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Drake’s 1587 raid on Cadiz; English direct involvement in the Netherlands [4m]) and Q3 ‘The actions of Robert Dudley were the main reason for deteriorating relations with Spain in the years 1585–88.’ How far do you agree? [16m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Drake’s 1587 raid on Cadiz; English direct involvement in the Netherlands [4m]) and Q3 ‘The actions of Robert Dudley were the main reason for deteriorating relations with Spain in the years 1585–88.’ How far do you agree? [16m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "DIRT check on Q3: ensure pupils evaluate Dudley’s Dutch campaign alongside Nonsuch itself, Drake’s Cadiz offensive, Mary Stuart’s February 1587 execution, and Philip II’s religious mission.",
+              "instruction": "DIRT check on Q3: ensure pupils evaluate Dudley’s Dutch campaign alongside Nonsuch itself, Drake’s Cadiz offensive, Mary Stuart’s February 1587 execution, and Philip II’s religious mission."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_2_4": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Channel Crescent, Calais Fireships & Battle of Gravelines (Stages 1–3) (50 mins)",
+          "focus": "Channel Crescent, Calais Fireships & Battle of Gravelines (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the Earl of Leicester’s 1585 Dutch expedition, his Governor-General title, Drake’s April 1587 Cadiz raid and Cape St Vincent barrel staves, and Parma’s Army of Flanders from KT 2.3.",
+              "instruction": "Complete the spaced Do Now retrieving the Earl of Leicester’s 1585 Dutch expedition, his Governor-General title, Drake’s April 1587 Cadiz raid and Cape St Vincent barrel staves, and Parma’s Army of Flanders from KT 2.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Map the tactical turning points of July–August 1588: Medina Sidonia’s disciplined 130-ship crescent sailing past Plymouth and the Isle of Wight, eight midnight English fireships sent into Calais Roads on 6–7 August, and the nine-hour gunnery duel off Gravelines on 8 August.",
+              "instruction": "Map the tactical turning points of July–August 1588: Medina Sidonia’s disciplined 130-ship crescent sailing past Plymouth and the Isle of Wight, eight midnight English fireships sent into Calais Roads on 6–7 August, and the nine-hour gunnery duel off Gravelines on 8 August."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting John Hawkins’s fast race-built galleons firing rapid broadsides on four-wheeled carriages against slow-reloading Spanish grappling tactics.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting John Hawkins’s fast race-built galleons firing rapid broadsides on four-wheeled carriages against slow-reloading Spanish grappling tactics."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (fireships and Gravelines engagement) alongside Source D (Medina Sidonia’s post-action report to Philip II) to test why cutting anchor cables at Calais ruined the Parma rendezvous.",
+              "instruction": "Scrutinise Source A (fireships and Gravelines engagement) alongside Source D (Medina Sidonia’s post-action report to Philip II) to test why cutting anchor cables at Calais ruined the Parma rendezvous."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Gales, Tilbury Prestige & Paper 2 B4 Writing (Stages 4–5) (50 mins)",
+          "focus": "Gales, Tilbury Prestige & Paper 2 B4 Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve why the Spanish crescent held firm up the Channel, how Calais fireships broke formation, and why English naval gunnery dominated at Gravelines on 8 August 1588.",
+              "instruction": "Retrieve why the Spanish crescent held firm up the Channel, how Calais fireships broke formation, and why English naval gunnery dominated at Gravelines on 8 August 1588."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the south-westerly ‘Protestant Wind’ driving battered ships lacking anchors and maps around Scotland and Ireland (~65 ships returning), Elizabeth’s 18 August Tilbury speech, and the propaganda triumph of the Armada Portrait and medal, analysing Sources B, C, and E.",
+              "instruction": "Read Stages 4–5 on the south-westerly ‘Protestant Wind’ driving battered ships lacking anchors and maps around Scotland and Ireland (~65 ships returning), Elizabeth’s 18 August Tilbury speech, and the propaganda triumph of the Armada Portrait and medal, analysing Sources B, C, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Spanish invasion plans; key events of the Armada [4m]) and Q2 Explain why the English achieved victory over the Spanish Armada in 1588 [12m] (or Q3 16m evaluative prompt).",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Spanish invasion plans; key events of the Armada [4m]) and Q2 Explain why the English achieved victory over the Spanish Armada in 1588 [12m] (or Q3 16m evaluative prompt)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Use exemplar DIRT to verify causal synthesis across three factors: English ship design and tactics (Hawkins/Howard/Drake), Spanish planning and communication flaws (Parma linkup/ammunition), and Atlantic weather.",
+              "instruction": "Use exemplar DIRT to verify causal synthesis across three factors: English ship design and tactics (Hawkins/Howard/Drake), Spanish planning and communication flaws (Parma linkup/ammunition), and Atlantic weather."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_3_1": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Humanist Literacy, Grammar Schools & Noble Education (Stages 1–3) (50 mins)",
+          "focus": "Humanist Literacy, Grammar Schools & Noble Education (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the 130-ship Spanish Armada, Medina Sidonia, Hawkins’s race-built warships, Calais fireships, and Gravelines from KT 2.4.",
+              "instruction": "Complete the spaced Do Now retrieving the 130-ship Spanish Armada, Medina Sidonia, Hawkins’s race-built warships, Calais fireships, and Gravelines from KT 2.4."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Shift to Elizabethan society (KT3), explaining how Renaissance humanism and Protestantism spurred educational growth while preserving strict class and gender divides across petty/dame schools, 72 newly endowed grammar schools, Oxford/Cambridge, and noble household tutoring.",
+              "instruction": "Shift to Elizabethan society (KT3), explaining how Renaissance humanism and Protestantism spurred educational growth while preserving strict class and gender divides across petty/dame schools, 72 newly endowed grammar schools, Oxford/Cambridge, and noble household tutoring."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking male literacy rising to ~30% (female ~10%) while landless labourers and girls remained largely excluded from formal Latin schooling.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking male literacy rising to ~30% (female ~10%) while landless labourers and girls remained largely excluded from formal Latin schooling."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Elizabethan wooden hornbook) with Source B (Roger Ascham’s 1570 The Scholemaster) and Source C (Oxford navigational studies, 1577) to evaluate continuity and change in Tudor education.",
+              "instruction": "Compare Source A (Elizabethan wooden hornbook) with Source B (Roger Ascham’s 1570 The Scholemaster) and Source C (Oxford navigational studies, 1577) to evaluate continuity and change in Tudor education."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Class-Divided Pastimes, London Playhouses & Paper 2 B4 Essay (Stages 4–5) (50 mins)",
+          "focus": "Class-Divided Pastimes, London Playhouses & Paper 2 B4 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on petty vs dame schools, the Latin curriculum of Elizabethan grammar schools, noble home tutoring, and why overall female literacy stayed around 10%.",
+              "instruction": "Spaced recall check on petty vs dame schools, the Latin curriculum of Elizabethan grammar schools, noble home tutoring, and why overall female literacy stayed around 10%."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on rank-stratified leisure (noble hunting, hawking, real tennis vs parish mob football, cock-fighting, and Southwark bear-baiting) and the explosion of purpose-built theatres (The Theatre 1576, The Rose, The Globe, penny groundlings vs gallery lords, and Puritan hostility), examining Sources D and E (De Witt’s Swan Theatre sketch).",
+              "instruction": "Read Stages 4–5 on rank-stratified leisure (noble hunting, hawking, real tennis vs parish mob football, cock-fighting, and Southwark bear-baiting) and the explosion of purpose-built theatres (The Theatre 1576, The Rose, The Globe, penny groundlings vs gallery lords, and Puritan hostility), examining Sources D and E (De Witt’s Swan Theatre sketch)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (sport and pastimes; education in the home [4m]) and Q3 ‘The growth of the theatre was the most significant feature of sport, pastimes and the theatre in early Elizabethan England.’ How far do you agree? [16m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (sport and pastimes; education in the home [4m]) and Q3 ‘The growth of the theatre was the most significant feature of sport, pastimes and the theatre in early Elizabethan England.’ How far do you agree? [16m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Audit Q3 essays via DIRT: reward explicit comparison between socially shared theatre audiences (supported by royal patronage like the Queen’s Men) and sharply segregated noble/peasant sports.",
+              "instruction": "Audit Q3 essays via DIRT: reward explicit comparison between socially shared theatre audiences (supported by royal patronage like the Queen’s Men) and sharply segregated noble/peasant sports."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_3_2": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Population Surge, Sheep Enclosure & Categories of Poor (Stages 1–3) (50 mins)",
+          "focus": "Population Surge, Sheep Enclosure & Categories of Poor (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving Tudor hornbooks, fee-paying grammar schools, Roger Ascham’s The Scholemaster, and Southwark playhouses from KT 3.1.",
+              "instruction": "Complete the spaced Do Now retrieving Tudor hornbooks, fee-paying grammar schools, Roger Ascham’s The Scholemaster, and Southwark playhouses from KT 3.1."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Trace the structural causes of Elizabethan poverty: England’s ~35% population surge (3 million to 4.1 million, 1551–1601), 1590s harvest failures, coinage debasement, Antwerp cloth slumps, and gentry sheep enclosure evicting rural tenants alongside Tudor divisions between the ‘impotent poor’ and ‘sturdy beggars’.",
+              "instruction": "Trace the structural causes of Elizabethan poverty: England’s ~35% population surge (3 million to 4.1 million, 1551–1601), 1590s harvest failures, coinage debasement, Antwerp cloth slumps, and gentry sheep enclosure evicting rural tenants alongside Tudor divisions between the ‘impotent poor’ and ‘sturdy beggars’."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking why cloth accounting for over 80% of English exports incentivised conversion from labour-intensive arable farming to fenced pasture.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking why cloth accounting for over 80% of English exports incentivised conversion from labour-intensive arable farming to fenced pasture."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Cecil’s memoranda on bad harvests and grain prices) with Source B (1560s enclosure complaints) and Source C (William Harrison’s 1577 three categories of poor) to test Tudor perceptions of unemployment.",
+              "instruction": "Compare Source A (Cecil’s memoranda on bad harvests and grain prices) with Source B (1560s enclosure complaints) and Source C (William Harrison’s 1577 three categories of poor) to test Tudor perceptions of unemployment."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: 1572 Vagabonds Act, 1576 Poor Relief Act & Paper 2 B4 Essay (Stages 4–5) (50 mins)",
+          "focus": "1572 Vagabonds Act, 1576 Poor Relief Act & Paper 2 B4 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve England’s population growth, why sheep enclosure caused rural eviction and rack-renting, and the legal distinction between the impotent poor and idle/able-bodied vagabonds.",
+              "instruction": "Retrieve England’s population growth, why sheep enclosure caused rural eviction and rack-renting, and the legal distinction between the impotent poor and idle/able-bodied vagabonds."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on the Turning-Point Statutes: the 1572 Vagabonds Act (compulsory local poor rate + ear-boring/whipping for vagrants) and the 1576 Act for the Relief of the Poor (JPs supplying raw wool/hemp to the unemployed + Houses of Correction/Bridewells, culminating in 1601), interrogating Sources D and E.",
+              "instruction": "Read Stages 4–5 on the Turning-Point Statutes: the 1572 Vagabonds Act (compulsory local poor rate + ear-boring/whipping for vagrants) and the 1576 Act for the Relief of the Poor (JPs supplying raw wool/hemp to the unemployed + Houses of Correction/Bridewells, culminating in 1601), interrogating Sources D and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (policies towards the poor; changing attitudes towards the poor [4m]) and Q3 ‘Economic pressures were the main reason for the increase in poverty and vagabondage in the years 1558–88.’ How far do you agree? [16m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (policies towards the poor; changing attitudes towards the poor [4m]) and Q3 ‘Economic pressures were the main reason for the increase in poverty and vagabondage in the years 1558–88.’ How far do you agree? [16m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Check Q3 balance during DIRT: contrast long-term demographic growth against agricultural enclosure, cloth-trade slumps (1568 Antwerp embargo), and bad harvests.",
+              "instruction": "Check Q3 balance during DIRT: contrast long-term demographic growth against agricultural enclosure, cloth-trade slumps (1568 Antwerp embargo), and bad harvests."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_3_3": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Navigational Science, Race-Built Galleons & Trade Routes (Stages 1–3) (50 mins)",
+          "focus": "Navigational Science, Race-Built Galleons & Trade Routes (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving England’s population rise, rural sheep enclosure, the impotent vs idle poor, and the 1572/1576 Poor Laws from KT 3.2.",
+              "instruction": "Complete the spaced Do Now retrieving England’s population rise, rural sheep enclosure, the impotent vs idle poor, and the 1572/1576 Poor Laws from KT 3.2."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Explain the technological and commercial engines behind Elizabethan oceanic expansion: brass astrolabes, quadrants, log-and-line speed measurement, Gerardus Mercator’s 1569 map projection, John Hawkins’s race-built galleons, and joint-stock companies (Muscovy 1555, Eastland, Levant) seeking markets after Antwerp collapsed.",
+              "instruction": "Explain the technological and commercial engines behind Elizabethan oceanic expansion: brass astrolabes, quadrants, log-and-line speed measurement, Gerardus Mercator’s 1569 map projection, John Hawkins’s race-built galleons, and joint-stock companies (Muscovy 1555, Eastland, Levant) seeking markets after Antwerp collapsed."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, ensuring pupils link triangular lateen sails, lowered forecastles, and long-range culverins to transoceanic survival.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, ensuring pupils link triangular lateen sails, lowered forecastles, and long-range culverins to transoceanic survival."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Scrutinise Source A (mariner’s astrolabe) alongside Source B (the race-built Ark Royal, 1587) and Source C (Ryther’s sea chart) to test how technology reduced oceanic hazard.",
+              "instruction": "Scrutinise Source A (mariner’s astrolabe) alongside Source B (the race-built Ark Royal, 1587) and Source C (Ryther’s sea chart) to test how technology reduced oceanic hazard."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Drake’s 1577–80 Circumnavigation & Paper 2 B4 Writing (Stages 4–5) (50 mins)",
+          "focus": "Drake’s 1577–80 Circumnavigation & Paper 2 B4 Writing (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Spaced recall check on astrolabes/quadrants, Mercator’s 1569 projection, Hawkins’s race-built galleon design, and why the Antwerp cloth slump drove joint-stock exploration.",
+              "instruction": "Spaced recall check on astrolabes/quadrants, Mercator’s 1569 projection, Hawkins’s race-built galleon design, and why the Antwerp cloth slump drove joint-stock exploration."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Francis Drake’s December 1577 departure from Plymouth, navigating the Strait of Magellan in the Golden Hind, capturing the Cacafuego, claiming Nova Albion (June 1579), and returning £400,000 in treasure (4,700% investor dividend) and Moluccan spice treaties, analysing Sources D and E (Mendoza’s angry 1580 dispatch).",
+              "instruction": "Read Stages 4–5 on Francis Drake’s December 1577 departure from Plymouth, navigating the Strait of Magellan in the Golden Hind, capturing the Cacafuego, claiming Nova Albion (June 1579), and returning £400,000 in treasure (4,700% investor dividend) and Moluccan spice treaties, analysing Sources D and E (Mendoza’s angry 1580 dispatch)."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (impact of new technology on ships and sailing; Drake’s circumnavigation [4m]) and Q2 Explain why Drake’s circumnavigation of the globe (1577–80) was significant [12m].",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (impact of new technology on ships and sailing; Drake’s circumnavigation [4m]) and Q2 Explain why Drake’s circumnavigation of the globe (1577–80) was significant [12m]."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Green-pen DIRT check on Q2: verify three analytical themes—financial boost to Crown/investors, shattering Spain’s Pacific monopoly and Anglo-Spanish diplomacy, and inspiring Nova Albion/global trade ambitions.",
+              "instruction": "Green-pen DIRT check on Q2: verify three analytical themes—financial boost to Crown/investors, shattering Spain’s Pacific monopoly and Anglo-Spanish diplomacy, and inspiring Nova Albion/global trade ambitions."
+            }
+          ]
+        }
+      }
+    },
+    "lesson_3_4": {
+      "delivery_plan": {
+        "format": "2-Lesson Sequence (50 mins each)",
+        "lesson_1": {
+          "title": "Lesson 1: Raleigh’s 1584 Patent, Recruitment & Wreck of the Tiger (Stages 1–3) (50 mins)",
+          "focus": "Raleigh’s 1584 Patent, Recruitment & Wreck of the Tiger (Stages 1–3)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Complete the spaced Do Now retrieving the mariner’s astrolabe, Sir John Hawkins’s race-built galleons, the Muscovy Company, and Drake’s £400,000 return aboard the Golden Hind from KT 3.3.",
+              "instruction": "Complete the spaced Do Now retrieving the mariner’s astrolabe, Sir John Hawkins’s race-built galleons, the Muscovy Company, and Drake’s £400,000 return aboard the Golden Hind from KT 3.3."
+            },
+            {
+              "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+              "time": "15m",
+              "label": "Teacher Exposition",
+              "activity": "Examine Sir Walter Raleigh’s blueprint for colonising Virginia: the March 1584 royal patent, Barlowe and Amadas’s reconnaissance bringing Manteo and Wanchese to London, Richard Hakluyt’s Discourse of Western Planting, flawed 1585 recruitment (107 all-male soldiers/gentlemen, late April departure), and the Tiger grounding at Ocracoke Inlet ruining seed corn.",
+              "instruction": "Examine Sir Walter Raleigh’s blueprint for colonising Virginia: the March 1584 royal patent, Barlowe and Amadas’s reconnaissance bringing Manteo and Wanchese to London, Richard Hakluyt’s Discourse of Western Planting, flawed 1585 recruitment (107 all-male soldiers/gentlemen, late April departure), and the Tiger grounding at Ocracoke Inlet ruining seed corn."
+            },
+            {
+              "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+              "time": "17m",
+              "label": "Shared Reading & Spine",
+              "activity": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting cousin Richard Grenville’s aggressive naval mindset and Ralph Lane’s garrison rule with scientist Thomas Harriot and artist John White.",
+              "instruction": "Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting cousin Richard Grenville’s aggressive naval mindset and Ralph Lane’s garrison rule with scientist Thomas Harriot and artist John White."
+            },
+            {
+              "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+              "time": "10m",
+              "label": "Hinge Check",
+              "activity": "Compare Source A (Sir Walter Raleigh) with Source B (John White’s 1585 Roanoke Island map showing treacherous outer sandbars) to explain why Roanoke failed both as a self-sufficient farm and a deep-water privateering base.",
+              "instruction": "Compare Source A (Sir Walter Raleigh) with Source B (John White’s 1585 Roanoke Island map showing treacherous outer sandbars) to explain why Roanoke failed both as a self-sufficient farm and a deep-water privateering base."
+            }
+          ]
+        },
+        "lesson_2": {
+          "title": "Lesson 2: Chief Wingina, The 1587 Lost Colony & Paper 2 B4 Essay (Stages 4–5) (50 mins)",
+          "focus": "Chief Wingina, The 1587 Lost Colony & Paper 2 B4 Essay (Stages 4–5)",
+          "phases": [
+            {
+              "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+              "time": "8m",
+              "label": "Spaced Retrieval Starter",
+              "activity": "Retrieve Raleigh’s 1584 patent, Manteo and Wanchese, why recruiting 107 gentlemen and soldiers weakened the 1585 expedition, and how the wreck of the Tiger caused winter food dependency.",
+              "instruction": "Retrieve Raleigh’s 1584 patent, Manteo and Wanchese, why recruiting 107 gentlemen and soldiers weakened the 1585 expedition, and how the wreck of the Tiger caused winter food dependency."
+            },
+            {
+              "phase": "Phase 2: Stages 4–5 & Sources C–E (17 mins)",
+              "time": "17m",
+              "label": "Narrative & Sources",
+              "activity": "Read Stages 4–5 on Grenville burning Aquascogoc, Ralph Lane’s June 1586 ambush killing Secotan Chief Wingina (Pemisapan) and evacuation aboard Drake’s fleet, and John White’s 1587 family colony stranded for three years by the 1588 Armada shipping ban until only ‘CROATOAN’ remained in August 1590, interrogating Sources C, D, and E.",
+              "instruction": "Read Stages 4–5 on Grenville burning Aquascogoc, Ralph Lane’s June 1586 ambush killing Secotan Chief Wingina (Pemisapan) and evacuation aboard Drake’s fleet, and John White’s 1587 family colony stranded for three years by the 1588 Armada shipping ban until only ‘CROATOAN’ remained in August 1590, interrogating Sources C, D, and E."
+            },
+            {
+              "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
+              "time": "20m",
+              "label": "Exam Writing",
+              "activity": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Raleigh’s role in colonising Virginia; first settlement in Virginia [4m]) and Q3 ‘The drive to expand trade was the main reason for the attempted colonisation of Virginia.’ How far do you agree? [16m] (or 16m Roanoke failure essay).",
+              "instruction": "Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Raleigh’s role in colonising Virginia; first settlement in Virginia [4m]) and Q3 ‘The drive to expand trade was the main reason for the attempted colonisation of Virginia.’ How far do you agree? [16m] (or 16m Roanoke failure essay)."
+            },
+            {
+              "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+              "time": "5m",
+              "label": "Consolidate & DIRT",
+              "activity": "Final DIRT review on Q3: weigh commercial/raw-material independence from Europe against anti-Spanish privateering bases, Protestant rivalry with Philip II’s empire, and population relief.",
+              "instruction": "Final DIRT review on Q3: weigh commercial/raw-material independence from Europe against anti-Spanish privateering bases, Protestant rivalry with Philip II’s empire, and population relief."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "vocab_phonetics": {
+    "lesson_1_1": {
+      "Great Chain of Being": "GRAYT chayn ov BEE-ing",
+      "Patronage": "PAT-run-ij",
+      "Privy Council": "PRIV-ee KOWN-sul",
+      "Queen Regnant": "kween REG-nunt",
+      "Legitimacy": "luh-JIT-ih-muh-see",
+      "Debasement": "dih-BAYS-munt"
+    },
+    "lesson_1_2": {
+      "Act of Supremacy": "akt ov soo-PREM-uh-see",
+      "Act of Uniformity": "akt ov yoo-nih-FOR-mih-tee",
+      "Royal Injunctions": "ROY-ul in-JUNK-shunz",
+      "Visitations": "viz-ih-TAY-shunz",
+      "Puritan": "PYOOR-ih-tun",
+      "Recusant": "REK-yoo-zunt"
+    },
+    "lesson_1_3": {
+      "Papal Bull": "PAY-pul bul",
+      "Excommunication": "eks-kuh-myoo-nih-KAY-shun",
+      "Counter-Reformation": "KOWN-tur ref-ur-MAY-shun",
+      "Seminary": "SEM-ih-nuh-ree",
+      "Crucifix Controversy": "KROO-sih-fiks KON-truh-vur-see",
+      "Vestment Controversy": "VEST-munt KON-truh-vur-see"
+    },
+    "lesson_1_4": {
+      "Abdicate": "AB-dih-kayt",
+      "Divine Right of Kings": "dih-VYN ryt ov KINGZ",
+      "Conference of York": "KON-fruns ov YORK",
+      "Casket Letters": "KAH-skit LET-urz",
+      "Heir Presumptive": "air priz-UMP-tiv",
+      "Lord Darnley": "lord DARN-lee"
+    },
+    "lesson_2_1": {
+      "Revolt of the Northern Earls": "rih-VOHLT ov thuh NOR-thurn urlz",
+      "Ridolfi Plot": "rih-DOL-fee plot",
+      "Throckmorton Plot": "THROK-mor-tun plot",
+      "Babington Plot": "BAB-ing-tun plot",
+      "Walsingham's Spy Network": "WAWL-sing-umz SPY net-wurk",
+      "Bond of Association": "bond ov uh-soh-see-AY-shun"
+    },
+    "lesson_2_2": {
+      "Privateer": "pry-vuh-TEER",
+      "San Juan de Ulúa": "san HWAN day oo-LOO-uh",
+      "Spanish Fury": "SPAN-ish FYOOR-ee",
+      "Circumnavigation": "sur-kum-nav-ih-GAY-shun",
+      "Cacafuego": "kah-kuh-FWAY-goh",
+      "Treaty of Joinville": "TREE-tee ov ZHWAN-veel"
+    },
+    "lesson_2_3": {
+      "Treaty of Nonsuch": "TREE-tee ov NUN-such",
+      "Robert Dudley": "ROB-urt DUD-lee",
+      "Flushing": "FLUSH-ing",
+      "Duke of Parma": "dyook ov PAR-muh",
+      "Cadiz": "kuh-DIZ",
+      "Barrel staves": "BAR-ul stayvz"
+    },
+    "lesson_2_4": {
+      "Armada": "ar-MAH-duh",
+      "Duke of Medina Sidonia": "dyook ov meh-DEE-nuh sih-DOH-nee-uh",
+      "Galleon": "GAL-ee-un",
+      "Fireships": "FYR-ships",
+      "Battle of Gravelines": "BAT-ul ov GRAV-leen",
+      "Protestant Wind": "PROT-uh-stunt wind"
+    },
+    "lesson_3_1": {
+      "Grammar School": "GRAM-ur skool",
+      "Petty School": "PET-ee skool",
+      "Humanism": "HYOO-muh-niz-um",
+      "Literacy": "LIT-ruh-see",
+      "Pastimes": "PAH-stymz",
+      "The Theatre": "thuh THEE-uh-tur"
+    },
+    "lesson_3_2": {
+      "Enclosure": "in-KLOH-zhur",
+      "Impotent Poor": "IM-puh-tunt poor",
+      "Able-Bodied Poor": "AY-bul BOD-eed poor",
+      "Vagabond": "VAG-uh-bond",
+      "Poor Rate": "POOR rayt",
+      "1601 Poor Law": "siks-TEEN oh-WUN POOR law"
+    },
+    "lesson_3_3": {
+      "Circumnavigation": "sur-kum-nav-ih-GAY-shun",
+      "Astrolabe": "AS-truh-layb",
+      "Quadrant": "KWOD-runt",
+      "Log and Line": "log and LYN",
+      "Mercator Projection": "mur-KAY-tur pruh-JEK-shun",
+      "Golden Hind": "GOHL-dun hynd"
+    },
+    "lesson_3_4": {
+      "Royal Charter": "ROY-ul CHAR-tur",
+      "Virginia": "vur-JIN-yuh",
+      "Roanoke": "ROH-uh-nohk",
+      "Algonquian": "al-GON-kwee-un",
+      "Manteo and Wanchese": "MAN-tee-oh and wan-CHEE-see",
+      "Lost Colony": "lost KOL-uh-nee"
+    }
+  }
+}

@@ -1,23 +1,29 @@
 ---
 name: Literary Companion Engine
-description: Unified KS2 & KS3 Home Read-Aloud & Literary Companion Engine enforcing the 3-Voice Literary Diet (Lacey-style True Micro-Stories, Public-Domain Classic Literature/Verse/Myth, and Intimate Eyewitness Voices), age-calibrated oral readability ceilings, SEND visual ergonomics, zero-marking classroom accountability, and Studio Cast TTS synchronization.
+description: Unified KS2 & KS3 Home Read-Aloud & Literary Companion Engine enforcing the 3-Voice Literary Diet (Lacey-style True Micro-Stories, Public-Domain Classic Literature/Verse/Myth, and Intimate Eyewitness Voices), age-calibrated oral readability ceilings, SEND visual ergonomics, zero-marking classroom accountability, Studio Cast TTS synchronization, and Optional Saddle-Stitch Anthology PDF Booklets.
 ---
 
 # KS2 & KS3 Literary Companion Engine
 
 ## Trigger
-Activate this skill whenever authoring, upgrading, validating, or syncing **Literary Companions** (`guided_reading` arrays across all 20 KS2 & KS3 units, `src/guided_reading.js`, `scripts/audit_literary_companions.cjs`, `scripts/sync_literary_companion.cjs`, or `scripts/sync_guided_reading_studio_audio.mjs`).
+Activate this skill whenever authoring, upgrading, validating, syncing, or compiling **Literary Companions** (`guided_reading` arrays across all 20 KS2 & KS3 units, `src/guided_reading.js`, `scripts/audit_literary_companions.cjs`, `scripts/sync_literary_companion.cjs`, `scripts/sync_guided_reading_studio_audio.mjs`, or `scripts/render_literary_companion_booklets.cjs`).
 
 ---
 
-## 1. Strategic Scope & Format Rules
+## 1. Strategic Scope & Dual Delivery Formats
 1. **Strictly KS2 & KS3 Only (`20` Units • `119` Lessons • Ages 9–14):**
    - Every lesson across all 8 KS2 units (`53` lessons) and all 12 KS3 units (`66` lessons) MUST have a 1-to-1 matched `guided_reading[i]` Literary Companion.
-   - GCSE (Key Stage 4) units (`edexcel_medicine`, `eee`, `gcse_cold_war`, `cme_new`, `weimar_nazi_germany`, `usa`) MUST NOT carry `guided_reading` arrays.
-2. **Digital-First + 1-Sheet Offline Print Fallback:**
-   - Do NOT compile multi-page Literary Companion PDF booklets per unit (prevents school reprographic bloat alongside Textbooks, Workbooks, and Retrieval Companions).
-   - Provide a clean `@media print` 1-Sheet A4 Homework Print layout inside `src/guided_reading.js` (with QR code + `Parent/Carer Initials: ______` box) for offline households.
-3. **Canonical Source of Truth:**
+   - GCSE (Key Stage 4) units (`edexcel_medicine`, `eee`, `gcse_cold_war`, `cme_new`, `weimar_nazi_germany`, `usa`) MUST NOT carry `guided_reading` arrays or `literaryAnthology` catalog entries.
+2. **Digital-First Studio + 1-Sheet Offline Homework Print:**
+   - The interactive web reader (`src/guided_reading.js`) provides zero-login QR sharing, SEND tint/font/size controls, tap-to-hear vocabulary phonetics, sentence-by-sentence Studio Cast UK audio, 3-question tap-to-check MCQs, and a clean `@media print` 1-Sheet A4 Homework Print layout (with QR code + `Parent/Carer Initials: ______` box).
+3. **Optional Saddle-Stitch Anthology PDF Booklet Engine (`scripts/render_literary_companion_booklets.cjs`):**
+   - Alongside Digital-First + 1-Sheet Print, each of the 20 KS2 & KS3 units compiles an **Optional Home Reading & Tutor-Time Anthology** (`public/units/<unit_id>/literary_companion.html`, `units/<unit_id>/literary_companion.html`, and `public/pdfs/<unit_id>_literary_companion.pdf`), surfaced under the `"OPTIONAL ANTHOLOGY"` badge in `src/data/unit_resources_catalog.js` (`literaryAnthology`), `src/engine/hero_launchpad.js`, and the `[📄 Anthology PDF]` header action button in `src/guided_reading.js`.
+   - Every anthology booklet MUST hit an exact A3 saddle-stitch multiple of 4 pages (`210mm × 297mm` portrait pages, `margin: 0`, `0px` DOM overflow, story prose `>= 10.2pt` Lora via inline `autoFitPages()`, and `pdf-parse` physical page count assertion):
+     - **5-Enquiry Units (`8` KS3 units) -> `8` Pages (`pdf.numpages === 8`):** Cover + Sign-Off Passport (p. 1), Stories 1–5 with corner Audio QR codes (pp. 2–6), 15-Question Story Check Quiz (p. 7), Parent/Tutor Conversation Guide & Answer Key (p. 8).
+     - **6-Enquiry Units (`9` KS2/KS3 units) -> `8` Pages (`pdf.numpages === 8`):** Cover + Sign-Off Passport (p. 1), Stories 1–6 with corner Audio QR codes (pp. 2–7), Parent/Tutor Conversation Guide & 18-Answer Key (p. 8).
+     - **7-Enquiry Units (`the_shoah`, `cold_war`) -> `12` Pages (`pdf.numpages === 12`):** Cover + Passport (p. 1), Voices of the Era & Master Phonetic Vocabulary Guide (p. 2), Stories 1–7 (pp. 3–9), 21-Question Story Check Quiz (p. 10), Parent/Tutor Guide & Answer Key (pp. 11–12).
+     - **11-Enquiry Unit (`ks2_ww2`) -> `16` Pages (`pdf.numpages === 16`):** Cover + 11-Story Directory (p. 1), Home Reading Passport & Wartime Voices Guide (p. 2), Stories 1–11 (pp. 3–13), 33-Question Story Check Quiz (p. 14), Parent/Carer Guide & Answer Key (pp. 15–16).
+4. **Canonical Source of Truth:**
    - Author via `data/literary_companions/<unit_id>.json` and sync into `units/<unit_id>/data.js` (`public/units/<unit_id>/data.js`, `data/<unit_id>.json`, `public/data/<unit_id>.json`, and `public/database.json`) using `node scripts/sync_literary_companion.cjs <unit_id>`.
 
 ---
@@ -60,10 +66,11 @@ Each item in `guided_reading` MUST include:
 
 ---
 
-## 5. Verification Commands
+## 5. Verification & Booklet Compilation Commands
 ```bash
 node scripts/sync_literary_companion.cjs <unit_id>
 node scripts/audit_literary_companions.cjs <unit_id>
+node scripts/render_literary_companion_booklets.cjs <unit_id>
 node scripts/sync_guided_reading_studio_audio.mjs <unit_id>
 node scripts/verify_sanitization.cjs
 ```

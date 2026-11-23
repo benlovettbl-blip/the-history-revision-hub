@@ -859,7 +859,92 @@
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
-      "enquiry": "Why was Ancient Greece split into rival city-states, yet united by culture?"
+      "enquiry": "Why was Ancient Greece split into rival city-states, yet united by culture?",
+      "visual_story_sheet": {
+        "num": "01",
+        "slug": "ks2_ancient_greece_l01_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 1",
+        "datesBadge": "c. 800–500 BC",
+        "topicLabel": "Enquiry 01: Mountains, Islands & Rival City-States (c. 800–500 BC)",
+        "title": "Why Was Ancient Greece Split into Rival City-States, Yet United by Culture?",
+        "spokenTitle": "Why was Ancient Greece split into rival city-states, yet united by culture?",
+        "thumbUrl": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
+        "bridges": [
+          "Walled Hilltops",
+          "Shared Speech",
+          "One Culture"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Mountains, Islands & Poleis",
+            "date": "c. 2000–500 BC",
+            "img": "/units/ks2_ancient_greece/assets/ancient_greece_aegean_map_ks2.png",
+            "mode": "contain-light",
+            "stat": "1,000+ Aegean Islands & Rival City-States",
+            "connective": "Why was Ancient Greece split into rival city-states, yet united by culture?",
+            "html": "Steep mountains and over a thousand <strong>Aegean islands</strong> kept Greek valleys apart. Instead of one king, towns like <strong>Athens and Sparta</strong> formed rival <strong>city-states</strong> with their own laws.",
+            "paired_prose_hash": "7566ad3f98",
+            "spoken": "Why was Ancient Greece split into rival city-states, yet united by culture? <short pause> Steep mountains and over a thousand Aegean islands kept Greek valleys apart. Instead of one king, towns like Athens and Sparta formed rival city-states with their own laws."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "High Acropolis & Busy Agora",
+            "date": "c. 800–500 BC",
+            "img": "/units/ks2_ancient_greece/assets/athens_acropolis_rock_panorama.jpg",
+            "mode": "landscape",
+            "pos": "center 42%",
+            "stat": "Fortified Hilltop Temples & Open Market",
+            "connective": "Even when city-states argued, almost every Greek town shared two key spaces.",
+            "html": "Families sheltered on a rocky walled hilltop called the <strong>Acropolis</strong>, crowned with marble temples. Below lay the sunny <strong>Agora marketplace</strong>, where traders sold figs and men <strong>debated city laws</strong>.",
+            "paired_prose_hash": "a93764bbf4",
+            "spoken": "Even when city-states argued, almost every Greek town shared two key spaces. <short pause> Families sheltered on a rocky walled hilltop called the Acropolis , crowned with marble temples. Below lay the sunny Agora marketplace , where traders sold figs and men debated city laws ."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "24 Letters & Sea Trade",
+            "date": "From c. 800 BC",
+            "img": "/units/ks2_ancient_greece/assets/athenian_agora_hephaestus_temple.jpg",
+            "mode": "landscape",
+            "pos": "center 38%",
+            "stat": "24-Letter Alphabet, Olive Oil & Pottery",
+            "connective": "Across the sea, wooden trading ships carried goods and ideas together.",
+            "html": "Proud Greeks called themselves <strong>Hellenes</strong> and adapted Phoenician signs into a <strong>24-letter alphabet</strong> with vowels. Merchant ships traded golden <strong>olive oil and painted pottery</strong> overseas for vital wheat grain.",
+            "paired_prose_hash": "c4e34606ef",
+            "spoken": "Across the sea, wooden trading ships carried goods and ideas together. <short pause> Proud Greeks called themselves Hellenes and adapted Phoenician signs into a 24-letter alphabet with vowels. Merchant ships traded golden olive oil and painted pottery overseas for vital wheat grain."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Rival Towns, One Greek Family",
+            "date": "By 500 BC",
+            "img": "/units/ks2_ancient_greece/assets/cape_sounion_poseidon_aegean.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Shared Language, Gods & Alphabet Across Sea",
+            "connective": "Geography divided Greek valleys, yet sea routes bound their culture together.",
+            "html": "Rival <strong>poleis</strong> guarded their own walls, laws, and silver coins. Yet busy sea routes united Greeks through <strong>one shared language</strong>, one alphabet, and the <strong>Olympian gods</strong>.",
+            "spoken": "Geography divided Greek valleys, yet sea routes bound their culture together. <short pause> Rival poleis guarded their own walls, laws, and silver coins. Yet busy sea routes united Greeks through one shared language , one alphabet, and the Olympian gods ."
+          }
+        ],
+        "takeaway": "Steep mountains and Aegean islands split Greece into rival city-states, yet sea trade, a 24-letter alphabet, and shared gods united all Hellenes.",
+        "vocab": [
+          [
+            "1. Polis",
+            "An independent Greek city-state with its own laws and farmland."
+          ],
+          [
+            "2. Acropolis",
+            "The high walled hilltop of a city-state crowned with temples."
+          ],
+          [
+            "3. Agora",
+            "Open-air marketplace where citizens shopped and debated city laws."
+          ]
+        ],
+        "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Steep mountains and Aegean islands split Greece into rival city-states, yet sea trade, a 24-letter alphabet, and shared gods united all Hellenes."
+      }
     },
     {
       "id": "lesson_2",
@@ -1686,7 +1771,91 @@
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
-      "enquiry": "How different was daily life in democratic Athens and warrior Sparta?"
+      "enquiry": "How different was daily life in democratic Athens and warrior Sparta?",
+      "visual_story_sheet": {
+        "num": "02",
+        "slug": "ks2_ancient_greece_l02_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 2",
+        "datesBadge": "c. 508–430 BC",
+        "topicLabel": "Enquiry 02: Growing Up in Athens and Sparta (c. 508–430 BC)",
+        "title": "How Different Was Daily Life in Democratic Athens and Warrior Sparta?",
+        "spokenTitle": "How different was daily life in democratic Athens and warrior Sparta?",
+        "thumbUrl": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
+        "bridges": [
+          "Rival Sparta",
+          "Boys & Girls",
+          "Two Worlds"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "People-Power on the Pnyx",
+            "date": "From c. 508 BC",
+            "img": "/units/ks2_ancient_greece/assets/erechtheion_caryatid_porch.jpg",
+            "mode": "contain",
+            "stat": "500 Random Jurors & Ostrakon Shard Votes",
+            "connective": "How different was daily life in democratic Athens and warrior Sparta?",
+            "html": "Around 508 BC, male citizens in <strong>Athens</strong> invented <strong>direct democracy</strong> and voted on the rocky Pnyx hill. Yet women, enslaved people, and foreign <strong>metics</strong> were shut out from voting.",
+            "paired_prose_hash": "e94cdcfb5f",
+            "spoken": "How different was daily life in democratic Athens and warrior Sparta? <short pause> Around 508 BC, male citizens in Athens invented direct democracy and voted on the rocky Pnyx hill. Yet women, enslaved people, and foreign metics were shut out from voting."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Sparta's Tough Agoge Barracks",
+            "date": "From Age 7",
+            "img": "/units/ks2_ancient_greece/assets/sparta_valley_mount_taygetos.jpg",
+            "mode": "landscape",
+            "pos": "center 40%",
+            "stat": "2 Kings, Helot Farms & Age-7 Army Drills",
+            "connective": "Far inland beneath snowy mountains, warrior Sparta chose a very different path.",
+            "html": "Ruled by <strong>two kings</strong>, Sparta used conquered <strong>helot farmworkers</strong> so citizen men trained full-time for war. At age seven, barefoot boys entered harsh <strong>agoge barracks</strong> and slept on river reeds.",
+            "paired_prose_hash": "19b7b388f9",
+            "spoken": "Far inland beneath snowy mountains, warrior Sparta chose a very different path. <short pause> Ruled by two kings , Sparta used conquered helot farmworkers so citizen men trained full-time for war. At age seven, barefoot boys entered harsh agoge barracks and slept on river reeds."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Schoolrooms vs Outdoor Sport",
+            "date": "5th Century BC",
+            "img": "/units/ks2_ancient_greece/assets/athens_vs_sparta_comparison_ks2.png",
+            "mode": "contain-light",
+            "stat": "Athenian Tutors vs Spartan Women Landowners",
+            "connective": "Childhood for boys and girls looked completely different in the two cities.",
+            "html": "Wealthy <strong>Athenian boys</strong> studied reading, music, and poetry while girls learned weaving indoors. Meanwhile, <strong>Spartan girls</strong> wrestled and threw javelins outdoors, and <strong>Spartan women</strong> owned land themselves.",
+            "paired_prose_hash": "a6ed34f215",
+            "spoken": "Childhood for boys and girls looked completely different in the two cities. <short pause> Wealthy Athenian boys studied reading, music, and poetry while girls learned weaving indoors. Meanwhile, Spartan girls wrestled and threw javelins outdoors, and Spartan women owned land themselves."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Votes & Art vs Army Order",
+            "date": "c. 508–430 BC",
+            "img": "/units/ks2_ancient_greece/assets/pnyx_speakers_platform_athens.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Sea-Trading Democracy vs Land Army Power",
+            "connective": "Athens and Sparta proved two Greek cities could live in opposite ways.",
+            "html": "Sea-trading Athens prized <strong>citizen debates</strong>, silver coins, and marble art, though women lacked rights. Landlocked Sparta rejected luxury for <strong>strict army discipline</strong>, yet gave women far <strong>greater freedom</strong>.",
+            "spoken": "Athens and Sparta proved two Greek cities could live in opposite ways. <short pause> Sea-trading Athens prized citizen debates , silver coins, and marble art, though women lacked rights. Landlocked Sparta rejected luxury for strict army discipline , yet gave women far greater freedom ."
+          }
+        ],
+        "takeaway": "Sea-trading Athens invented citizen democracy and prized arts, while warrior Sparta trained boys in agoge barracks from age seven and gave women greater freedom.",
+        "vocab": [
+          [
+            "1. Democracy",
+            "Rule by the people, where male Athenian citizens voted on laws."
+          ],
+          [
+            "2. Ostrakon",
+            "Broken pottery shard scratched with a name to banish a leader."
+          ],
+          [
+            "3. Agoge",
+            "Sparta's tough army training barracks entered by boys at age seven."
+          ]
+        ],
+        "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sea-trading Athens invented citizen democracy and prized arts, while warrior Sparta trained boys in agoge barracks from age seven and gave women greater freedom."
+      }
     },
     {
       "id": "lesson_3",
@@ -2513,7 +2682,91 @@
         "position": "center 35%"
       },
       "banner_image": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
-      "enquiry": "How did Greek gods inspire temples, myths, and the Olympic Games?"
+      "enquiry": "How did Greek gods inspire temples, myths, and the Olympic Games?",
+      "visual_story_sheet": {
+        "num": "03",
+        "slug": "ks2_ancient_greece_l03_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 3",
+        "datesBadge": "776–400 BC",
+        "topicLabel": "Enquiry 03: Mount Olympus, Myths & The Ancient Olympics (776–400 BC)",
+        "title": "How Did Greek Gods Inspire Temples, Myths, and the Olympic Games?",
+        "spokenTitle": "How did Greek gods inspire temples, myths, and the Olympic Games?",
+        "thumbUrl": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
+        "bridges": [
+          "Oracle & Myths",
+          "Sacred Truce",
+          "Shared Pride"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Mount Olympus & Marble Temples",
+            "date": "400s BC",
+            "img": "/units/ks2_ancient_greece/assets/parthenon_doric_marble_columns.jpg",
+            "mode": "contain",
+            "stat": "12 Olympian Gods & Athens's Marble Parthenon",
+            "connective": "How did Greek gods inspire temples, myths, and the Olympic Games?",
+            "html": "Greeks believed twelve gods ruled from snowy <strong>Mount Olympus</strong>, led by thunder-hurling <strong>Zeus</strong>. Cities built gleaming temples like Athens's <strong>Parthenon</strong> and roasted offerings at outdoor altars.",
+            "paired_prose_hash": "07feb36425",
+            "spoken": "How did Greek gods inspire temples, myths, and the Olympic Games? <short pause> Greeks believed twelve gods ruled from snowy Mount Olympus , led by thunder-hurling Zeus . Cities built gleaming temples like Athens's Parthenon and roasted offerings at outdoor altars."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Delphi's Oracle & Vase Myths",
+            "date": "c. 600–400 BC",
+            "img": "/units/ks2_ancient_greece/assets/delphi_mountain_tholos_sanctuary.jpg",
+            "mode": "contain",
+            "stat": "Apollo's Priestess & Painted Clay Story Jars",
+            "connective": "Leaders and families also looked to sacred shrines and exciting hero tales.",
+            "html": "Before wars, generals climbed mountain <strong>Delphi</strong> to hear riddles from Apollo's <strong>Oracle</strong>. Potters also painted brave heroes like <strong>Heracles and Odysseus</strong> onto glossy black-figure and red-figure vases.",
+            "paired_prose_hash": "720bb39550",
+            "spoken": "Leaders and families also looked to sacred shrines and exciting hero tales. <short pause> Before wars, generals climbed mountain Delphi to hear riddles from Apollo's Oracle . Potters also painted brave heroes like Heracles and Odysseus onto glossy black-figure and red-figure vases."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "776 BC: Games at Olympia",
+            "date": "From 776 BC",
+            "img": "/units/ks2_ancient_greece/assets/olympia_temple_of_zeus_ruins.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Sacred Truce, Chariots & Wild-Olive Crowns",
+            "connective": "Every four summers, honouring Zeus brought rival cities together in peace.",
+            "html": "From <strong>776 BC</strong>, a <strong>Sacred Truce</strong> paused wars so athletes travelled safely to Olympia. Barefoot runners, wrestlers, and charioteers competed for a sacred wild-olive <strong>kotinos crown</strong>.",
+            "paired_prose_hash": "91aa806de4",
+            "spoken": "Every four summers, honouring Zeus brought rival cities together in peace. <short pause> From 776 BC , a Sacred Truce paused wars so athletes travelled safely to Olympia. Barefoot runners, wrestlers, and charioteers competed for a sacred wild-olive kotinos crown ."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Faith Uniting Rival Greeks",
+            "date": "776–400 BC",
+            "img": "/units/ks2_ancient_greece/assets/olympia_ancient_running_track.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "One Stadium Track & Shared Hero Stories",
+            "connective": "Temples, painted jars, and stadium races wove Greek life into one story.",
+            "html": "Worshipping the <strong>twelve Olympians</strong> filled Greece with marble temples and painted <strong>myth vases</strong>. Every four years at <strong>Olympia's running track</strong>, warring city-states cheered side by side.",
+            "spoken": "Temples, painted jars, and stadium races wove Greek life into one story. <short pause> Worshipping the twelve Olympians filled Greece with marble temples and painted myth vases . Every four years at Olympia's running track , warring city-states cheered side by side."
+          }
+        ],
+        "takeaway": "Belief in the twelve Olympian gods inspired marble temples like the Parthenon, hero myths on painted vases, and peaceful Olympic Games from 776 BC.",
+        "vocab": [
+          [
+            "1. Parthenon",
+            "White-marble temple high on Athens's Acropolis honouring Athena."
+          ],
+          [
+            "2. Oracle",
+            "Sacred shrine at Delphi where a priestess spoke advice from Apollo."
+          ],
+          [
+            "3. Sacred Truce",
+            "Peace deal pausing Greek wars during the Ancient Olympic Games."
+          ]
+        ],
+        "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Belief in the twelve Olympian gods inspired marble temples like the Parthenon, hero myths on painted vases, and peaceful Olympic Games from 776 BC."
+      }
     },
     {
       "id": "lesson_4",
@@ -3339,7 +3592,92 @@
         "position": "center 45%"
       },
       "banner_image": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
-      "enquiry": "How did tiny Greek city-states defeat the giant Persian Empire?"
+      "enquiry": "How did tiny Greek city-states defeat the giant Persian Empire?",
+      "visual_story_sheet": {
+        "num": "04",
+        "slug": "ks2_ancient_greece_l04_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 4",
+        "datesBadge": "490–479 BC",
+        "topicLabel": "Enquiry 04: Marathon, Thermopylae & Salamis (490–479 BC)",
+        "title": "How Did Tiny Greek City-States Defeat the Giant Persian Empire?",
+        "spokenTitle": "How did tiny Greek city-states defeat the giant Persian Empire?",
+        "thumbUrl": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
+        "bridges": [
+          "Xerxes Marches",
+          "Narrow Sea Trap",
+          "Greece Stays Free"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "490 BC: Phalanx at Marathon",
+            "date": "490 BC",
+            "img": "/units/ks2_ancient_greece/assets/marathon_athenian_burial_mound.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Shield-Wall Charge & 26-Mile Victory Run",
+            "connective": "How did tiny Greek city-states defeat the giant Persian Empire?",
+            "html": "In <strong>490 BC</strong>, King Darius's Persian army landed at <strong>Marathon</strong> to punish Athens. Charging citizen <strong>hoplites</strong> locked bronze shields in a tight phalanx and smashed the invaders.",
+            "paired_prose_hash": "f37c86d95b",
+            "spoken": "How did tiny Greek city-states defeat the giant Persian Empire? <short pause> In 490 BC , King Darius's Persian army landed at Marathon to punish Athens. Charging citizen hoplites locked bronze shields in a tight phalanx and smashed the invaders."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "480 BC: Stand at Thermopylae",
+            "date": "480 BC",
+            "img": "/images/upgraded/ks2-world/greece_l4_banner_thermopylae_defile_1816.jpg",
+            "mode": "contain-light",
+            "stat": "300 Spartans Hold Narrow Pass for 3 Days",
+            "connective": "Ten years later, Darius's son King Xerxes led an even bigger invasion.",
+            "html": "Spartan <strong>King Leonidas</strong> and <strong>300 Spartans</strong> guarded the narrow coastal pass of <strong>Thermopylae</strong> for three days. When a traitor showed Xerxes a mountain path, Leonidas fought on so allies escaped.",
+            "paired_prose_hash": "d6966cd2d7",
+            "spoken": "Ten years later, Darius's son King Xerxes led an even bigger invasion. <short pause> Spartan King Leonidas and 300 Spartans guarded the narrow coastal pass of Thermopylae for three days. When a traitor showed Xerxes a mountain path, Leonidas fought on so allies escaped."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Triremes Win at Salamis",
+            "date": "480–479 BC",
+            "img": "/units/ks2_ancient_greece/assets/olympias_wooden_greek_trireme.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "170 Oarsmen & Bronze Rams in Narrow Strait",
+            "connective": "At sea, clever Admiral Themistocles set a trap in narrow waters.",
+            "html": "<strong>Themistocles</strong> lured Persia's huge fleet into the tight <strong>Strait of Salamis</strong>. Powered by 170 rowers, nimble Greek <strong>triremes</strong> rammed the crowded Persian ships and won.",
+            "paired_prose_hash": "bedf901139",
+            "spoken": "At sea, clever Admiral Themistocles set a trap in narrow waters. <short pause> Themistocles lured Persia's huge fleet into the tight Strait of Salamis . Powered by 170 rowers, nimble Greek triremes rammed the crowded Persian ships and won."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "United City-States Stay Free",
+            "date": "After 479 BC",
+            "img": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Teamwork, Smart Tactics & Local Geography",
+            "connective": "Teamwork and smart tactics defeated the largest empire in the ancient world.",
+            "html": "Using <strong>hoplite shield-walls</strong>, narrow mountain passes, and fast <strong>wooden triremes</strong>, united Greeks beat Persia by 479 BC. Keeping their <strong>freedom</strong> sparked Athens's Golden Age.",
+            "spoken": "Teamwork and smart tactics defeated the largest empire in the ancient world. <short pause> Using hoplite shield-walls , narrow mountain passes, and fast wooden triremes , united Greeks beat Persia by 479 BC. Keeping their freedom sparked Athens's Golden Age."
+          }
+        ],
+        "takeaway": "By uniting together and using hoplite shield-walls, narrow passes, and fast trireme warships, tiny Greek city-states defeated mighty Persia between 490 and 479 BC.",
+        "vocab": [
+          [
+            "1. Hoplite",
+            "Heavily armed Greek citizen-soldier with bronze shield and spear."
+          ],
+          [
+            "2. Phalanx",
+            "Tight shoulder-to-shoulder block of hoplites locking shields."
+          ],
+          [
+            "3. Trireme",
+            "Fast Greek warship rowed by 170 oarsmen with a bronze ram."
+          ]
+        ],
+        "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> By uniting together and using hoplite shield-walls, narrow passes, and fast trireme warships, tiny Greek city-states defeated mighty Persia between 490 and 479 BC."
+      }
     },
     {
       "id": "lesson_5",
@@ -4165,7 +4503,92 @@
         "position": "center 48%"
       },
       "banner_image": "/images/upgraded/ks2-world/greece_l5_banner_delphi_athena_pronaia.jpg",
-      "enquiry": "How did Greek thinkers, doctors, and writers change human knowledge?"
+      "enquiry": "How did Greek thinkers, doctors, and writers change human knowledge?",
+      "visual_story_sheet": {
+        "num": "05",
+        "slug": "ks2_ancient_greece_l05_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 5",
+        "datesBadge": "c. 460–322 BC",
+        "topicLabel": "Enquiry 05: Greek Theatre, Philosophy, Maths & Medicine (c. 460–322 BC)",
+        "title": "How Did Greek Thinkers, Doctors, and Writers Change Human Knowledge?",
+        "spokenTitle": "How did Greek thinkers, doctors, and writers change human knowledge?",
+        "thumbUrl": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
+        "bridges": [
+          "Sharp Questions",
+          "Symptoms & Maths",
+          "Lasting Science"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Hillside Theatres & Masks",
+            "date": "c. 460–330 BC",
+            "img": "/units/ks2_ancient_greece/assets/epidaurus_stone_theatre_bowl.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "14,000 Seats at Epidaurus for Greek Plays",
+            "connective": "How did Greek thinkers, doctors, and writers change human knowledge?",
+            "html": "Carved into sunny hillsides like <strong>Epidaurus</strong>, stone amphitheatres seated <strong>14,000 spectators</strong> with clear acoustics. Masked actors performed sad <strong>tragedies and funny comedies</strong> for rich and poor citizens.",
+            "paired_prose_hash": "5d144ce834",
+            "spoken": "How did Greek thinkers, doctors, and writers change human knowledge? <short pause> Carved into sunny hillsides like Epidaurus , stone amphitheatres seated 14,000 spectators with clear acoustics. Masked actors performed sad tragedies and funny comedies for rich and poor citizens."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Socrates, Plato & Aristotle",
+            "date": "c. 430–322 BC",
+            "img": "/units/ks2_ancient_greece/assets/death_of_socrates_david_painting.jpg",
+            "mode": "landscape",
+            "pos": "center 35%",
+            "stat": "Questioning Beliefs & Sorting Nature's Facts",
+            "connective": "In Athens, philosophers — meaning lovers of wisdom — asked bold new questions.",
+            "html": "Barefoot <strong>Socrates</strong> questioned citizens in the Agora, while <strong>Plato</strong> opened his Academy school. Next, <strong>Aristotle</strong> observed and sorted hundreds of plants and animals to build science.",
+            "paired_prose_hash": "b4759ba133",
+            "spoken": "In Athens, philosophers — meaning lovers of wisdom — asked bold new questions. <short pause> Barefoot Socrates questioned citizens in the Agora, while Plato opened his Academy school. Next, Aristotle observed and sorted hundreds of plants and animals to build science."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Hippocrates, Geometry & Eureka",
+            "date": "c. 420–212 BC",
+            "img": "/units/ks2_ancient_greece/assets/kos_asclepieion_healing_terraces.jpg",
+            "mode": "landscape",
+            "pos": "center 50%",
+            "stat": "Bedside Notes, Triangles & Clever Levers",
+            "connective": "Doctors and mathematicians also looked for natural rules instead of magic.",
+            "html": "On Kos, doctor <strong>Hippocrates</strong> checked natural symptoms and wrote the ethical <strong>Hippocratic Oath</strong>. Meanwhile, Pythagoras and <strong>Euclid</strong> mastered geometry, and Archimedes shouted \"Eureka!\" over water puzzles.",
+            "paired_prose_hash": "c10bf492f0",
+            "spoken": "Doctors and mathematicians also looked for natural rules instead of magic. <short pause> On Kos, doctor Hippocrates checked natural symptoms and wrote the ethical Hippocratic Oath . Meanwhile, Pythagoras and Euclid mastered geometry, and Archimedes shouted \"Eureka!\" over water puzzles."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Testing Ideas Through Reason",
+            "date": "Golden Age Legacy",
+            "img": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
+            "mode": "contain-light",
+            "stat": "Roots of Modern Drama, Medicine & Maths",
+            "connective": "Together, Greek writers and scientists changed how humans study the world.",
+            "html": "Instead of blaming everything on angry gods, Greeks used <strong>careful observation</strong>, <strong>geometry</strong>, and open debate. Their plays, medical notes, and maths still guide <strong>modern classrooms</strong>.",
+            "spoken": "Together, Greek writers and scientists changed how humans study the world. <short pause> Instead of blaming everything on angry gods, Greeks used careful observation , geometry , and open debate. Their plays, medical notes, and maths still guide modern classrooms ."
+          }
+        ],
+        "takeaway": "Greek playwrights, philosophers like Socrates and Aristotle, doctor Hippocrates, and mathematicians like Euclid taught people to question, observe nature, and prove ideas.",
+        "vocab": [
+          [
+            "1. Amphitheatre",
+            "Open-air stone theatre with curved rows carved into a hillside."
+          ],
+          [
+            "2. Philosopher",
+            "A 'lover of wisdom' who searches for truth through questions."
+          ],
+          [
+            "3. Geometry",
+            "Branch of mathematics studying lines, angles, and shapes."
+          ]
+        ],
+        "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Greek playwrights, philosophers like Socrates and Aristotle, doctor Hippocrates, and mathematicians like Euclid taught people to question, observe nature, and prove ideas."
+      }
     },
     {
       "id": "lesson_6",
@@ -4991,7 +5414,92 @@
         "position": "center 45%"
       },
       "banner_image": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
-      "enquiry": "How did Alexander spread Greek ideas that still shape our world today?"
+      "enquiry": "How did Alexander spread Greek ideas that still shape our world today?",
+      "visual_story_sheet": {
+        "num": "06",
+        "slug": "ks2_ancient_greece_l06_visual_story_sheet",
+        "ktBadge": "KS2 • Enquiry 6",
+        "datesBadge": "336 BC – Today",
+        "topicLabel": "Enquiry 06: Alexander the Great & Greece’s Legacy Today (336–146 BC)",
+        "title": "How Did Alexander Spread Greek Ideas That Still Shape Our World Today?",
+        "spokenTitle": "How did Alexander spread Greek ideas that still shape our world today?",
+        "thumbUrl": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
+        "bridges": [
+          "Great Library",
+          "Rome Admires",
+          "Living Legacy"
+        ],
+        "cards": [
+          {
+            "badge": "Stage 1",
+            "heading": "Alexander & Vast Conquests",
+            "date": "336–323 BC",
+            "img": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg",
+            "mode": "landscape",
+            "pos": "center 25%",
+            "stat": "11 Unbeaten Years Across Egypt to India",
+            "connective": "How did Alexander spread Greek ideas that still shape our world today?",
+            "html": "Taught by Aristotle and riding wild <strong>Bucephalus</strong>, young <strong>Alexander the Great</strong> marched from Macedon to India. Founding new cities blended Greek and eastern ways into <strong>Hellenistic culture</strong>.",
+            "paired_prose_hash": "3e36889504",
+            "spoken": "How did Alexander spread Greek ideas that still shape our world today? <short pause> Taught by Aristotle and riding wild Bucephalus , young Alexander the Great marched from Macedon to India. Founding new cities blended Greek and eastern ways into Hellenistic culture ."
+          },
+          {
+            "badge": "Stage 2",
+            "heading": "Alexandria's Library & Rome",
+            "date": "323–146 BC",
+            "img": "/units/ks2_ancient_greece/assets/euclid_geometry_papyrus_diagram.jpg",
+            "mode": "contain-light",
+            "stat": "Hundreds of Thousands of Scrolls & 146 BC",
+            "connective": "In Egypt, port Alexandria became a beacon of Greek science and books.",
+            "html": "Scholars studied stars and geometry inside <strong>Alexandria's Great Library</strong> beside the tall <strong>Pharos Lighthouse</strong>. Even after <strong>Roman legions</strong> conquered Greece in 146 BC, Romans copied Greek art and books.",
+            "paired_prose_hash": "9bacf928c4",
+            "spoken": "In Egypt, port Alexandria became a beacon of Greek science and books. <short pause> Scholars studied stars and geometry inside Alexandria's Great Library beside the tall Pharos Lighthouse . Even after Roman legions conquered Greece in 146 BC, Romans copied Greek art and books."
+          },
+          {
+            "badge": "Stage 3",
+            "heading": "Votes, Words & 1896 Olympics",
+            "date": "1896 – Today",
+            "img": "/units/ks2_ancient_greece/assets/panathenaic_stadium_1896_athens.jpg",
+            "mode": "landscape",
+            "pos": "center 55%",
+            "stat": "14 Nations Revive Modern Olympics in Athens",
+            "connective": "More than two thousand years later, Greek gifts still surround us every day.",
+            "html": "Elections, juries, stone <strong>columns</strong>, and words like <em>school</em>, <em>planet</em>, and <em>history</em> come from Greece. In <strong>1896</strong>, fourteen nations launched the <strong>Modern Olympic Games</strong> inside Athens's marble stadium.",
+            "paired_prose_hash": "bd51477bdf",
+            "spoken": "More than two thousand years later, Greek gifts still surround us every day. <short pause> Elections, juries, stone columns , and words like school , planet , and history come from Greece. In 1896 , fourteen nations launched the Modern Olympic Games inside Athens's marble stadium."
+          },
+          {
+            "badge": "⚡ Outcome",
+            "isOutcome": true,
+            "heading": "Greek Ideas Across the World",
+            "date": "2,000+ Year Legacy",
+            "img": "/images/upgraded/ks2-world/greece_l6_banner_library_of_celsus_ephesus.jpg",
+            "mode": "landscape",
+            "pos": "center 45%",
+            "stat": "Democracy, Science, Architecture & Sport",
+            "connective": "Conquests, libraries, and Roman admirers carried Greek ideas across centuries.",
+            "html": "From <strong>Alexandria's scrolls</strong> to modern town halls and sports tracks, Ancient Greece left a <strong>lasting legacy</strong>. Its curiosity still shapes <strong>democracy, language, and science</strong> worldwide.",
+            "spoken": "Conquests, libraries, and Roman admirers carried Greek ideas across centuries. <short pause> From Alexandria's scrolls to modern town halls and sports tracks, Ancient Greece left a lasting legacy . Its curiosity still shapes democracy, language, and science worldwide."
+          }
+        ],
+        "takeaway": "Alexander the Great and Alexandria's Great Library spread Greek learning afar, leaving a lasting legacy in our democracy, language, buildings, and Olympic Games.",
+        "vocab": [
+          [
+            "1. Hellenistic",
+            "Blended culture mixing Greek language and art with eastern ideas."
+          ],
+          [
+            "2. Alexandria",
+            "Egyptian port famed for the Pharos Lighthouse and Great Library."
+          ],
+          [
+            "3. Legacy",
+            "Ideas, words, and traditions handed down that shape life today."
+          ]
+        ],
+        "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Alexander the Great and Alexandria's Great Library spread Greek learning afar, leaving a lasting legacy in our democracy, language, buildings, and Olympic Games."
+      }
     }
   ],
   "key_individuals": [

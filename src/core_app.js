@@ -2332,20 +2332,39 @@ window.closeQuizModal = function () {
 let glossaryPopover = null;
 let activeVocabElement = null;
 
-if (typeof window !== 'undefined' && !window.speakVocabWord) {
-  window.speakVocabWord = function (word) {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+if (typeof window !== 'undefined') {
+  window.speakVocabWord = function (word, btnEl) {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window) || !word) return;
     try {
       window.speechSynthesis.cancel();
-      const utter = new SpeechSynthesisUtterance(word);
+      if (typeof document !== 'undefined') {
+        document.querySelectorAll('.is-speaking').forEach((el) => {
+          if (el !== btnEl) el.classList.remove('is-speaking');
+        });
+      }
+      const utter = new SpeechSynthesisUtterance(String(word).trim());
+      utter.lang = 'en-GB';
       utter.rate = 0.88;
-      const voices = window.speechSynthesis.getVoices();
-      const ukVoice = voices.find(
-        (v) => (v.lang === 'en-GB' || v.lang === 'en_GB') && !v.name.includes('espeak'),
-      );
+      const voices = window.speechSynthesis.getVoices() || [];
+      const ukVoice =
+        voices.find(
+          (v) =>
+            /en[-_]GB/i.test(v.lang) &&
+            !/espeak/i.test(v.name) &&
+            /natural|sonia|ryan|libby|maisie|thomas|google|serena|daniel|martha|arthur/i.test(v.name),
+        ) ||
+        voices.find((v) => /en[-_]GB/i.test(v.lang) && !/espeak/i.test(v.name)) ||
+        voices.find((v) => /en[-_]GB/i.test(v.lang));
       if (ukVoice) utter.voice = ukVoice;
+      if (btnEl && btnEl.classList) {
+        btnEl.classList.add('is-speaking');
+        const reset = () => btnEl.classList.remove('is-speaking');
+        utter.onend = reset;
+        utter.onerror = reset;
+      }
       window.speechSynthesis.speak(utter);
     } catch (err) {
+      if (btnEl && btnEl.classList) btnEl.classList.remove('is-speaking');
       console.warn('Speech synthesis error on vocab word:', err);
     }
   };
@@ -2398,7 +2417,7 @@ function initGlossaryPopover() {
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px;">
         <span style="font-size: 1.05rem; font-weight: 700; color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">${term}</span>
         <div style="display: flex; align-items: center; gap: 6px;">
-          <button type="button" class="btn-vocab-speak" onclick="event.stopPropagation(); window.speakVocabWord && window.speakVocabWord('${safeWordForAudio}');" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #38bdf8; border-radius: 4px; padding: 2px 7px; font-size: 0.78rem; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;" title="Listen to pronunciation">
+          <button type="button" class="btn-vocab-speak" onclick="event.stopPropagation(); window.speakVocabWord && window.speakVocabWord('${safeWordForAudio}', this);" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #38bdf8; border-radius: 4px; padding: 2px 7px; font-size: 0.78rem; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;" title="Listen to pronunciation">
             <i class="fa-solid fa-volume-high"></i>
           </button>
         </div>

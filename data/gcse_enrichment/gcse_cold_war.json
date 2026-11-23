@@ -1,0 +1,116 @@
+{
+  "unit_id": "gcse_cold_war",
+  "delivery_plans": {},
+  "vocab_phonetics": {
+    "lesson_1": {
+      "Grand Alliance": "GRAND uh-LY-uns",
+      "Capitalism": "KAP-ih-tuh-liz-um",
+      "Communism": "KOM-yoo-niz-um",
+      "Second Front": "SEK-und FRUNT",
+      "Declaration on Liberated Europe": "dek-luh-RAY-shun on LIB-uh-ray-tid YOOR-up",
+      "Reparations": "rep-uh-RAY-shunz"
+    },
+    "lesson_2": {
+      "Containment": "kun-TAYN-munt",
+      "Satellite States": "SAT-uh-lyte STAYTS",
+      "Truman Doctrine": "TROO-mun DOK-trin",
+      "Marshall Plan": "MAH-shul PLAN",
+      "Dollar Imperialism": "DOL-uh im-PEER-ee-uh-liz-um",
+      "Cominform": "KOM-in-fawm",
+      "Comecon": "KOM-ih-kon"
+    },
+    "lesson_3": {
+      "Bizonia & Trizonia": "by-ZOH-nee-uh und try-ZOH-nee-uh",
+      "Deutschmark": "DOYCH-mahk",
+      "Berlin Airlift": "bur-LIN AIR-lift",
+      "FRG & GDR": "ef-ahr-JEE und jee-dee-AHR",
+      "NATO": "NAY-toh",
+      "Warsaw Pact": "WAW-saw PAKT"
+    },
+    "lesson_4": {
+      "De-Stalinisation": "dee-STAH-lin-eye-ZAY-shun",
+      "ÁVH": "ah-vay-HAH",
+      "Imre Nagy": "IM-reh NODJ",
+      "Operation Whirlwind": "op-uh-RAY-shun WURL-wind",
+      "János Kádár": "YAH-nosh KAH-dahr",
+      "Suez Crisis": "SOO-iz KRY-sis"
+    },
+    "lesson_5": {
+      "Brain Drain": "BRAYN DRAYN",
+      "Berlin Ultimatum": "bur-LIN ul-tih-MAY-tum",
+      "Camp David Summit": "KAMP DAY-vid SUM-it",
+      "U-2 Incident": "YOO-TOO IN-sih-dunt",
+      "Vienna Summit": "vee-EN-uh SUM-it",
+      "Berlin Wall": "bur-LIN WAWL",
+      "Checkpoint Charlie": "CHEK-poynt CHAH-lee",
+      "Ich bin ein Berliner": "ikh bin ine bair-LEE-nuh"
+    },
+    "lesson_6": {
+      "Cuban Revolution": "KYOO-bun rev-uh-LOO-shun",
+      "Bay of Pigs": "BAY uv PIGZ",
+      "ExComm": "EKS-kom",
+      "Naval Quarantine": "NAY-vul KWOR-un-teen",
+      "Hotline": "HOT-lyne",
+      "Limited Test Ban Treaty": "LIM-ih-tid TEST BAN TREE-tee",
+      "Outer Space Treaty": "OW-tuh SPAYS TREE-tee",
+      "Nuclear Non-Proliferation Treaty": "NYOO-klee-uh non-pruh-lif-uh-RAY-shun TREE-tee"
+    },
+    "lesson_7": {
+      "Antonín Novotný": "AN-toh-neen NOH-vot-nee",
+      "StB": "ess-teh-BEH",
+      "Alexander Dubček": "al-ig-ZAHN-duh DOOB-chek",
+      "Prague Spring": "PRAHG SPRING",
+      "Action Programme": "AK-shun PROH-gram",
+      "Socialism with a human face": "SOH-shuh-liz-um with uh HYOO-mun FAYS",
+      "Two Thousand Words": "TOO THOW-zund WURDZ",
+      "Warsaw Letter": "WAW-saw LET-uh"
+    },
+    "lesson_8": {
+      "Passive Resistance": "PAS-iv rih-ZIS-tuns",
+      "Jan Palach": "YAHN PAL-akh",
+      "Moscow Protocol": "MOS-koh PROH-tuh-kol",
+      "Gustáv Husák": "GUUS-tahv HUU-sahk",
+      "Normalisation": "naw-muh-ly-ZAY-shun",
+      "Brezhnev Doctrine": "BREZH-nev DOK-trin",
+      "Eurocommunism": "yoor-oh-KOM-yoo-niz-um"
+    },
+    "lesson_9": {
+      "Détente": "day-TONT",
+      "Mutually Assured Destruction (MAD)": "MYOO-choo-uh-lee uh-SHOORD dih-STRUK-shun (MAD)",
+      "SALT 1": "SAWLT WUN",
+      "Anti-Ballistic Missile (ABM) Treaty": "an-tee-buh-LIS-tik MIS-yle (ay-bee-EM) TREE-tee",
+      "MIRV": "MURV",
+      "Apollo–Soyuz Mission": "uh-POL-oh SOY-yuuz MISH-un",
+      "Helsinki Accords": "hel-SIN-kee uh-KAWRDZ",
+      "SALT 2": "SAWLT TOO"
+    },
+    "lesson_10": {
+      "Mujahideen": "moo-jah-hih-DEEN",
+      "Carter Doctrine": "KAH-tuh DOK-trin",
+      "Operation Cyclone": "op-uh-RAY-shun SY-klohn",
+      "Olympic Boycotts": "uh-LIM-pik BOY-kots",
+      "Second Cold War": "SEK-und KOHLD WAWR",
+      "Evil Empire Speech": "EE-vul EM-py-uh SPEECH",
+      "Reagan Doctrine": "RAY-gun DOK-trin",
+      "Strategic Defence Initiative (SDI)": "struh-TEE-jik dih-FENS ih-NISH-uh-tiv (ess-dee-EYE)"
+    },
+    "lesson_11": {
+      "New Thinking": "NYOO THING-king",
+      "Perestroika": "peh-ruh-STROY-kuh",
+      "Glasnost": "GLAZ-nost",
+      "Chernobyl": "chuh-NOH-bil",
+      "Reykjavik Summit": "RAYK-yuh-vik SUM-it",
+      "INF Treaty": "eye-en-EF TREE-tee",
+      "Malta Summit": "MAWL-tuh SUM-it"
+    },
+    "lesson_12": {
+      "Sinatra Doctrine": "sih-NAH-truh DOK-trin",
+      "Solidarity": "sol-ih-DA-rih-tee",
+      "Velvet Revolution": "VEL-vit rev-uh-LOO-shun",
+      "German Reunification": "JUR-mun ree-yoo-nih-fih-KAY-shun",
+      "Gang of Eight": "GANG uv AYT",
+      "Boris Yeltsin": "BOR-is YELT-sin",
+      "Commonwealth of Independent States": "KOM-un-welth uv in-dih-PEN-dunt STAYTS"
+    }
+  }
+}

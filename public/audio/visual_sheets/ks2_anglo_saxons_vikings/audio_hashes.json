@@ -1,0 +1,156 @@
+{
+  "unitId": "ks2_anglo_saxons_vikings",
+  "voiceKey": "male_historian",
+  "clips": {
+    "l04_s1": {
+      "hash": "50cc01736d8f44fa",
+      "bytes": 84140,
+      "updatedAt": "2026-11-23T20:53:51.868Z"
+    },
+    "l04_s2": {
+      "hash": "6cb6148ca7bb7a53",
+      "bytes": 91628,
+      "updatedAt": "2026-11-23T20:53:52.221Z"
+    },
+    "l04_s3": {
+      "hash": "7c5e3863d0a112a4",
+      "bytes": 92012,
+      "updatedAt": "2026-11-23T20:53:52.563Z"
+    },
+    "l04_s4": {
+      "hash": "ddee3ee13c630630",
+      "bytes": 81932,
+      "updatedAt": "2026-11-23T20:53:52.974Z"
+    },
+    "l04_takeaway": {
+      "hash": "ff3cc86b42e04b3c",
+      "bytes": 69452,
+      "updatedAt": "2026-11-23T20:53:53.291Z"
+    },
+    "l05_s1": {
+      "hash": "4e07e7f114f4ac25",
+      "bytes": 92492,
+      "updatedAt": "2026-11-23T20:53:53.624Z"
+    },
+    "l05_s2": {
+      "hash": "64c3a730ce9fee32",
+      "bytes": 87980,
+      "updatedAt": "2026-11-23T20:53:54.046Z"
+    },
+    "l05_s3": {
+      "hash": "6b6e35cc8af214d0",
+      "bytes": 91820,
+      "updatedAt": "2026-11-23T20:53:54.383Z"
+    },
+    "l05_s4": {
+      "hash": "85770213935d1555",
+      "bytes": 84140,
+      "updatedAt": "2026-11-23T20:53:54.710Z"
+    },
+    "l05_takeaway": {
+      "hash": "35da938dfa6ea28c",
+      "bytes": 70988,
+      "updatedAt": "2026-11-23T20:53:55.024Z"
+    },
+    "l06_s1": {
+      "hash": "d6d82124c3827aa7",
+      "bytes": 104300,
+      "updatedAt": "2026-11-23T20:53:55.480Z"
+    },
+    "l06_s2": {
+      "hash": "a9eb1f3677c43c5a",
+      "bytes": 96908,
+      "updatedAt": "2026-11-23T20:53:55.821Z"
+    },
+    "l06_s3": {
+      "hash": "c8fbd2fa3e4e3781",
+      "bytes": 108812,
+      "updatedAt": "2026-11-23T20:53:56.188Z"
+    },
+    "l06_s4": {
+      "hash": "822dde96d5e4de20",
+      "bytes": 92300,
+      "updatedAt": "2026-11-23T20:53:56.555Z"
+    },
+    "l06_takeaway": {
+      "hash": "95f7df83cbdbd66b",
+      "bytes": 74732,
+      "updatedAt": "2026-11-23T20:53:56.877Z"
+    },
+    "l01_s1": {
+      "hash": "5975d6f2006a992d",
+      "bytes": 86252,
+      "updatedAt": "2026-11-23T20:53:58.048Z"
+    },
+    "l01_s2": {
+      "hash": "6d1c1a84c15029e1",
+      "bytes": 87980,
+      "updatedAt": "2026-11-23T20:53:58.445Z"
+    },
+    "l01_s3": {
+      "hash": "9fa1ea0b61307218",
+      "bytes": 88172,
+      "updatedAt": "2026-11-23T20:53:58.873Z"
+    },
+    "l01_s4": {
+      "hash": "dc83331981ff39cc",
+      "bytes": 76172,
+      "updatedAt": "2026-11-23T20:53:59.208Z"
+    },
+    "l01_takeaway": {
+      "hash": "447292d09ead2234",
+      "bytes": 75980,
+      "updatedAt": "2026-11-23T20:53:59.543Z"
+    },
+    "l02_s1": {
+      "hash": "885ad64de836c8fd",
+      "bytes": 91820,
+      "updatedAt": "2026-11-23T20:53:59.898Z"
+    },
+    "l02_s2": {
+      "hash": "18f179c9e14dc6e6",
+      "bytes": 101612,
+      "updatedAt": "2026-11-23T20:54:00.296Z"
+    },
+    "l02_s3": {
+      "hash": "29d406c628162536",
+      "bytes": 96620,
+      "updatedAt": "2026-11-23T20:54:00.674Z"
+    },
+    "l02_s4": {
+      "hash": "6308021d5b49605b",
+      "bytes": 82028,
+      "updatedAt": "2026-11-23T20:54:01.009Z"
+    },
+    "l02_takeaway": {
+      "hash": "d59e10efcd634af4",
+      "bytes": 66668,
+      "updatedAt": "2026-11-23T20:54:01.429Z"
+    },
+    "l03_s1": {
+      "hash": "e9d5bd22ec76081f",
+      "bytes": 99212,
+      "updatedAt": "2026-11-23T20:54:01.793Z"
+    },
+    "l03_s2": {
+      "hash": "f9d4c4a6666350b4",
+      "bytes": 89708,
+      "updatedAt": "2026-11-23T20:54:02.155Z"
+    },
+    "l03_s3": {
+      "hash": "e878abb015f855c0",
+      "bytes": 97772,
+      "updatedAt": "2026-11-23T20:54:02.523Z"
+    },
+    "l03_s4": {
+      "hash": "7b52beceb080b88d",
+      "bytes": 98540,
+      "updatedAt": "2026-11-23T20:54:02.898Z"
+    },
+    "l03_takeaway": {
+      "hash": "a5eef3bec52f9925",
+      "bytes": 81740,
+      "updatedAt": "2026-11-23T20:54:03.236Z"
+    }
+  }
+}

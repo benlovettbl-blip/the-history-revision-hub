@@ -1548,6 +1548,70 @@ export function renderArchivalSourceDiscussionBox(
   `;
 }
 
+export function lookupLessonVocabEntry(rawTerm, lessonObj) {
+  if (!rawTerm) return { term: '', phonetic: '' };
+  if (typeof rawTerm === 'object') {
+    const t = String(rawTerm.term || '').trim();
+    const p = String(rawTerm.phonetic || rawTerm.pronunciation || '').trim();
+    if (p || !lessonObj) return { term: t, phonetic: p };
+  }
+  const termStr = typeof rawTerm === 'object' ? String(rawTerm.term || '').trim() : String(rawTerm || '').trim();
+  if (!termStr) return { term: '', phonetic: '' };
+  const list = Array.isArray(lessonObj?.vocab)
+    ? lessonObj.vocab
+    : Array.isArray(lessonObj?.vocabulary)
+      ? lessonObj.vocabulary
+      : [];
+  const lower = termStr.toLowerCase();
+  const match = list.find(
+    (v) => v && typeof v === 'object' && String(v.term || '').trim().toLowerCase() === lower,
+  );
+  const phonetic = match ? String(match.phonetic || match.pronunciation || '').trim() : '';
+  return { term: termStr, phonetic };
+}
+
+export function renderSpeakableVocabChipHTML(rawTerm, lessonObj = null, opts = {}) {
+  const { term, phonetic } = lookupLessonVocabEntry(rawTerm, lessonObj);
+  if (!term) return '';
+  const safeJs = term
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/"/g, '&quot;')
+    .replace(/\r?\n/g, ' ');
+  const safeAttr = term
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  const safePhoneticHtml = phonetic
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  const safePhoneticAttr = safePhoneticHtml.replace(/"/g, '&quot;');
+  const speakTitle = phonetic
+    ? `Pronounce ${safeAttr} [${safePhoneticAttr}]`
+    : `Pronounce ${safeAttr} (British English)`;
+
+  if (opts.interactive === false) {
+    return `<button type="button" class="vocab-pronounce-btn wb-static-speak-pill" onclick="event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJs}', this); }" title="${speakTitle}"><i class="fa-solid fa-volume-high"></i><span>${term}</span>${phonetic ? `<span class="vocab-phonetic-tag">[${safePhoneticHtml}]</span>` : ''}</button>`;
+  }
+
+  const isSourceVariant = opts.variant === 'source';
+  const baseTitle =
+    opts.title ||
+    (isSourceVariant
+      ? 'In Source / Provenance (useful for quotes & NOP — tap word to cross off)'
+      : opts.variant === 'own'
+        ? 'External Own Knowledge (beyond the source — tap word to cross off)'
+        : 'Tap word to cross off once used');
+  const chipTitle = phonetic ? `${baseTitle} • [${safePhoneticAttr}]` : baseTitle;
+  const bg = isSourceVariant ? '#eff6ff' : '#f0fdfa';
+  const border = isSourceVariant ? '#bfdbfe' : '#99f6e4';
+  const color = isSourceVariant ? '#1e40af' : '#115e59';
+
+  return `<span class="wb-interactive-chip wb-vocab-speak-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="${chipTitle}" style="background: ${bg}; border: 1px solid ${border}; color: ${color}; font-size: 0.8rem; font-weight: 700; padding: 2px 6px 2px 9px; border-radius: 12px;"><span class="wb-chip-term-text">${term}</span>${phonetic ? `<span class="wb-chip-phonetic-hint">[${safePhoneticHtml}]</span>` : ''}<button type="button" class="wb-chip-speak-btn no-print" onclick="event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJs}', this); }" title="${speakTitle}" aria-label="${speakTitle}"><i class="fa-solid fa-volume-high"></i></button></span>`;
+}
+
 export function getGoldenSentenceExemplar(lesson, vocabTermsList = []) {
   if (lesson && lesson.vocab_golden_sentence) {
     return lesson.vocab_golden_sentence;
@@ -3813,10 +3877,10 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId, les
             ? `<div id="su-wb-${suUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
                   <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">Core Vocabulary Bank:</span>
-                  <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                  <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap word to cross off &bull; <i class="fa-solid fa-volume-high" style="color: #0d9488;"></i> to hear</span>
                 </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                  ${rawWords.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                  ${rawWords.map((w) => renderSpeakableVocabChipHTML(w, lessonObj)).join('')}
                 </div>
               </div>`
             : '';
@@ -4207,10 +4271,10 @@ export function renderHistoricalInterpretationsTaskHTML(
             ? `<div id="hi-wb-${hiUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
                   <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">Core Vocabulary Bank:</span>
-                  <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                  <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap word to cross off &bull; <i class="fa-solid fa-volume-high" style="color: #0d9488;"></i> to hear</span>
                 </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                  ${rawWords.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                  ${rawWords.map((w) => renderSpeakableVocabChipHTML(w, lessonObj)).join('')}
                 </div>
               </div>`
             : '';

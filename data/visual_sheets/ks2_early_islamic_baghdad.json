@@ -1,0 +1,504 @@
+{
+  "lesson_1": {
+    "num": "01",
+    "slug": "ks2_early_islamic_baghdad_l01_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 1",
+    "datesBadge": "AD 750–900",
+    "topicLabel": "Enquiry 01: Building the Round City of Baghdad (AD 750–900)",
+    "title": "Why Was the Round City of Baghdad Built, and How Big Did It Grow?",
+    "spokenTitle": "Why was the Round City of Baghdad built, and how big did it grow?",
+    "thumbUrl": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
+    "bridges": [
+      "100,000 Builders",
+      "Million Citizens",
+      "World Capital"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Choosing the River Tigris",
+        "date": "AD 750–762",
+        "img": "/units/ks2_early_islamic_baghdad/assets/quffa_round_boats_tigris_baghdad.jpg",
+        "mode": "landscape",
+        "pos": "center 48%",
+        "stat": "Tigris-Euphrates Canals & Silk Road Crossroads",
+        "connective": "Why was the Round City of Baghdad built, and how big did it grow?",
+        "html": "In <strong>AD 762</strong>, Abbasid <strong>Caliph al-Mansur</strong> chose a fertile bend on the <strong>River Tigris</strong> for his new capital. Deep canals watered green crops and linked round river boats to Silk Road routes.",
+        "paired_prose_hash": "1e63e4cdec",
+        "spoken": "Why was the Round City of Baghdad built, and how big did it grow? <short pause> In AD 762 , Abbasid Caliph al-Mansur chose a fertile bend on the River Tigris for his new capital. Deep canals watered green crops and linked round river boats to Silk Road routes."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "The Round City of Peace",
+        "date": "AD 762–766",
+        "img": "/units/ks2_early_islamic_baghdad/assets/baghdad_round_city_silk_road_map_ks2.png",
+        "mode": "contain-light",
+        "stat": "2km Brick Circle, 4 Iron Gates & Green Dome",
+        "connective": "Next, al-Mansur gathered 100,000 workers to build a remarkable circular capital.",
+        "html": "Traced in flaming cotton seeds, <strong>Baghdad's Round City</strong> rose inside double mud-brick walls called <strong>Madinat al-Salam</strong>. Four iron gates led straight to the <strong>Great Mosque and Palace</strong>.",
+        "paired_prose_hash": "de893470b3",
+        "spoken": "Next, al-Mansur gathered 100,000 workers to build a remarkable circular capital. <short pause> Traced in flaming cotton seeds, Baghdad's Round City rose inside double mud-brick walls called Madinat al-Salam . Four iron gates led straight to the Great Mosque and Palace ."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Baghdad vs Anglo-Saxon Towns",
+        "date": "c. AD 900",
+        "img": "/units/ks2_early_islamic_baghdad/assets/abbasid_palace_muqarnas_arch_baghdad.jpg",
+        "mode": "contain",
+        "stat": "Nearly 1,000,000 Citizens vs 10,000 in London",
+        "connective": "Markets and gardens soon spilled far beyond the original circular walls.",
+        "html": "By <strong>AD 900</strong>, paved streets, canals, and libraries served nearly <strong>one million people</strong> in Baghdad. Meanwhile, smoky timber towns in <strong>Anglo-Saxon Britain</strong> held only 5,000 to 10,000 residents.",
+        "paired_prose_hash": "551663a713",
+        "spoken": "Markets and gardens soon spilled far beyond the original circular walls. <short pause> By AD 900 , paved streets, canals, and libraries served nearly one million people in Baghdad. Meanwhile, smoky timber towns in Anglo-Saxon Britain held only 5,000 to 10,000 residents."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Crossroads of Three Continents",
+        "date": "c. AD 900",
+        "img": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "One of Earth's Largest & Richest Cities",
+        "connective": "Clever planning and river waterways turned Baghdad into a world capital.",
+        "html": "Linked by <strong>river canals</strong> and desert trails, the <strong>City of Peace</strong> outgrew tiny European towns. Its bustling gates welcomed traders, craftworkers, and <strong>scholars</strong> from three continents.",
+        "spoken": "Clever planning and river waterways turned Baghdad into a world capital. <short pause> Linked by river canals and desert trails, the City of Peace outgrew tiny European towns. Its bustling gates welcomed traders, craftworkers, and scholars from three continents."
+      }
+    ],
+    "takeaway": "Founded by Caliph al-Mansur beside the River Tigris in AD 762, circular Baghdad grew to nearly one million people—dwarfing Anglo-Saxon towns in Britain.",
+    "vocab": [
+      [
+        "1. Caliph",
+        "Supreme political and spiritual ruler of the early Islamic Empire."
+      ],
+      [
+        "2. Canals",
+        "Human-made waterways dug to water crops and carry trading boats."
+      ],
+      [
+        "3. Madinat al-Salam",
+        "Arabic for 'City of Peace', official name of Round Baghdad."
+      ]
+    ],
+    "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Founded by Caliph al-Mansur beside the River Tigris in AD 762, circular Baghdad grew to nearly one million people, dwarfing Anglo-Saxon towns in Britain."
+  },
+  "lesson_2": {
+    "num": "02",
+    "slug": "ks2_early_islamic_baghdad_l02_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 2",
+    "datesBadge": "c. AD 800–1000",
+    "topicLabel": "Enquiry 02: Paper & The House of Wisdom (c. AD 800–1000)",
+    "title": "How Did Cheap Paper and Baghdad's House of Wisdom Save World Knowledge?",
+    "spokenTitle": "How did cheap paper and Baghdad's House of Wisdom save world knowledge?",
+    "thumbUrl": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
+    "bridges": [
+      "Scrolls Rescued",
+      "Women Patrons",
+      "Books for All"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Rag Paper & 100+ Bookshops",
+        "date": "c. AD 786–833",
+        "img": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg",
+        "mode": "contain",
+        "stat": "Samarkand Paper Mills vs Costly Calfskin",
+        "connective": "How did cheap paper and Baghdad's House of Wisdom save world knowledge?",
+        "html": "Caliphs Harun al-Rashid and al-Ma'mun expanded Baghdad's royal <strong>House of Wisdom</strong>. Using Chinese <strong>rag paper-making</strong> from Samarkand, over <strong>100 bookshops</strong> buzzed while Europe scraped costly parchment.",
+        "paired_prose_hash": "8f6dbbcc5a",
+        "spoken": "How did cheap paper and Baghdad's House of Wisdom save world knowledge? <short pause> Caliphs Harun al-Rashid and al-Ma'mun expanded Baghdad's royal House of Wisdom . Using Chinese rag paper-making from Samarkand, over 100 bookshops buzzed while Europe scraped costly parchment."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Translating Ancient Scrolls",
+        "date": "c. AD 830–900",
+        "img": "/units/ks2_early_islamic_baghdad/assets/hunayn_ibn_ishaq_galen_manuscript.jpg",
+        "mode": "contain",
+        "stat": "Greek, Persian & Sanskrit Texts into Arabic",
+        "connective": "Inside the academy, scholars of different faiths worked side by side.",
+        "html": "Muslim, Christian, and Jewish thinkers led the <strong>Translation Movement</strong> into <strong>Arabic</strong>. Star doctor <strong>Hunayn ibn Ishaq</strong> translated medical scrolls while scholars tested old claims and fixed mistakes.",
+        "paired_prose_hash": "a939116ae7",
+        "spoken": "Inside the academy, scholars of different faiths worked side by side. <short pause> Muslim, Christian, and Jewish thinkers led the Translation Movement into Arabic . Star doctor Hunayn ibn Ishaq translated medical scrolls while scholars tested old claims and fixed mistakes."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Fatima al-Fihri & Zubayda",
+        "date": "c. AD 800–859",
+        "img": "/units/ks2_early_islamic_baghdad/assets/qarawiyyin_courtyard_fountain_fez.jpg",
+        "mode": "contain",
+        "stat": "AD 859 Fez College & Desert Hajj Wells",
+        "connective": "Generous women patrons also funded lasting colleges and desert lifelines.",
+        "html": "In AD 859, <strong>Fatima al-Fihri</strong> founded <strong>al-Qarawiyyin</strong> college in Fez, where students still study today. Earlier, Baghdad's <strong>Queen Zubayda</strong> funded stone wells along the hot Hajj road.",
+        "paired_prose_hash": "faf6009679",
+        "spoken": "Generous women patrons also funded lasting colleges and desert lifelines. <short pause> In AD 859, Fatima al-Fihri founded al-Qarawiyyin college in Fez, where students still study today. Earlier, Baghdad's Queen Zubayda funded stone wells along the hot Hajj road."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "World Knowledge Saved & Tested",
+        "date": "Golden Age",
+        "img": "/images/upgraded/ks2-world/baghdad_l2_banner_mustansiriya_madrasah.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Libraries, Colleges & Shared Scientific Truth",
+        "connective": "Together, cheap paper, translators, and patrons sparked a Golden Age.",
+        "html": "Instead of letting fragile scrolls crumble, Baghdad's <strong>paper mills</strong> and <strong>House of Wisdom</strong> rescued ancient learning. Testing every idea carefully launched bold <strong>new science</strong>.",
+        "spoken": "Together, cheap paper, translators, and patrons sparked a Golden Age. <short pause> Instead of letting fragile scrolls crumble, Baghdad's paper mills and House of Wisdom rescued ancient learning. Testing every idea carefully launched bold new science ."
+      }
+    ],
+    "takeaway": "Cheap rag paper, Baghdad's House of Wisdom translators, and patrons like Fatima al-Fihri rescued ancient scrolls and sparked fresh Golden Age discoveries.",
+    "vocab": [
+      [
+        "1. House of Wisdom",
+        "Baghdad's famous royal library and research academy (Bayt al-Hikma)."
+      ],
+      [
+        "2. Translation Movement",
+        "Effort turning Greek, Persian, and Indian scrolls into Arabic."
+      ],
+      [
+        "3. Patrons",
+        "Wealthy supporters who funded libraries, colleges, or public wells."
+      ]
+    ],
+    "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Cheap rag paper, Baghdad's House of Wisdom translators, and patrons like Fatima al-Fihri rescued ancient scrolls and sparked fresh Golden Age discoveries."
+  },
+  "lesson_3": {
+    "num": "03",
+    "slug": "ks2_early_islamic_baghdad_l03_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 3",
+    "datesBadge": "c. AD 820–1050",
+    "topicLabel": "Enquiry 03: Zero, Astrolabes & Free Hospitals (c. AD 820–1050)",
+    "title": "What Amazing Discoveries Did Baghdad's Doctors and Scientists Make?",
+    "spokenTitle": "What amazing discoveries did Baghdad's doctors and scientists make?",
+    "thumbUrl": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
+    "bridges": [
+      "Light & Wards",
+      "Master Surgeons",
+      "Modern Science"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Zero, Algebra & Star Tools",
+        "date": "c. AD 820–1206",
+        "img": "/units/ks2_early_islamic_baghdad/assets/al_jazari_elephant_water_clock.jpg",
+        "mode": "contain",
+        "stat": "Digits 0–9, Brass Astrolabes & Water Clocks",
+        "connective": "What amazing discoveries did Baghdad's doctors and scientists make?",
+        "html": "<strong>Al-Khwarizmi</strong> championed digits <strong>0 to 9</strong> and wrote the book that gave us <strong>algebra</strong>. Meanwhile, Mariam al-Asturlabi crafted brass astrolabes and al-Jazari built his Elephant Clock.",
+        "paired_prose_hash": "023a6d9051",
+        "spoken": "What amazing discoveries did Baghdad's doctors and scientists make? <short pause> Al-Khwarizmi championed digits 0 to 9 and wrote the book that gave us algebra . Meanwhile, Mariam al-Asturlabi crafted brass astrolabes and al-Jazari built his Elephant Clock."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Light Tests & Free Hospitals",
+        "date": "c. AD 965–1040",
+        "img": "/units/ks2_early_islamic_baghdad/assets/nuri_bimaristan_hospital_portal.jpg",
+        "mode": "contain",
+        "stat": "Pinhole Camera Obscura & Free Clean Wards",
+        "connective": "Scientists also tested how human eyes see and opened hospitals for all.",
+        "html": "Using a dark pinhole <strong>camera obscura</strong>, <strong>Ibn al-Haytham</strong> proved light travels straight into our eyes. Cities also built free <strong>bimaristan hospitals</strong> with clean wards and pharmacies.",
+        "paired_prose_hash": "ad47647d1c",
+        "spoken": "Scientists also tested how human eyes see and opened hospitals for all. <short pause> Using a dark pinhole camera obscura , Ibn al-Haytham proved light travels straight into our eyes. Cities also built free bimaristan hospitals with clean wards and pharmacies."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Doctors Al-Razi & Al-Zahrawi",
+        "date": "c. AD 900–1013",
+        "img": "/units/ks2_early_islamic_baghdad/assets/dioscorides_honey_medicine_baghdad.jpg",
+        "mode": "contain",
+        "stat": "200+ Surgical Tools & Dissolving Stitches",
+        "connective": "Careful bedside notes and clever new tools helped sick patients heal.",
+        "html": "Chief doctor <strong>al-Razi</strong> picked Baghdad's cleanest air and told measles apart from smallpox. In Spain, surgeon <strong>al-Zahrawi</strong> drew <strong>200 surgical tools</strong> and discovered dissolving catgut stitches.",
+        "paired_prose_hash": "a15f20fd9e",
+        "spoken": "Careful bedside notes and clever new tools helped sick patients heal. <short pause> Chief doctor al-Razi picked Baghdad's cleanest air and told measles apart from smallpox. In Spain, surgeon al-Zahrawi drew 200 surgical tools and discovered dissolving catgut stitches."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Foundations of Modern Science",
+        "date": "Lasting Impact",
+        "img": "/units/ks2_early_islamic_baghdad/assets/islamic_brass_planispheric_astrolabe.jpg",
+        "mode": "contain",
+        "stat": "Maths, Cameras & Clean Hospital Care",
+        "connective": "Testing ideas through real experiments transformed maths, optics, and medicine.",
+        "html": "From <strong>algorithms and zero</strong> to pinhole optics and <strong>free hospital wards</strong>, Islamic scholars checked evidence rather than guessing. Their breakthroughs power <strong>modern computers and medicine</strong>.",
+        "spoken": "Testing ideas through real experiments transformed maths, optics, and medicine. <short pause> From algorithms and zero to pinhole optics and free hospital wards , Islamic scholars checked evidence rather than guessing. Their breakthroughs power modern computers and medicine ."
+      }
+    ],
+    "takeaway": "Scholars like al-Khwarizmi, Ibn al-Haytham, al-Razi, and al-Zahrawi transformed world science with zero, algebra, pinhole optics, surgical tools, and free hospitals.",
+    "vocab": [
+      [
+        "1. Algebra",
+        "Maths using balanced equations, named after al-Khwarizmi's al-Jabr."
+      ],
+      [
+        "2. Astrolabe",
+        "Engraved brass star tool for telling time and sailing oceans."
+      ],
+      [
+        "3. Bimaristan",
+        "Free Islamic teaching hospital with clean wards and a pharmacy."
+      ]
+    ],
+    "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Scholars like al-Khwarizmi, Ibn al-Haytham, al-Razi, and al-Zahrawi transformed world science with zero, algebra, pinhole optics, surgical tools, and free hospitals."
+  },
+  "lesson_4": {
+    "num": "04",
+    "slug": "ks2_early_islamic_baghdad_l04_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 4",
+    "datesBadge": "c. AD 850–1000",
+    "topicLabel": "Enquiry 04: Silk Road Caravans, Dhows & Viking Coins (c. AD 850–1000)",
+    "title": "How Did Baghdad's Traders Connect the World All the Way to Britain?",
+    "spokenTitle": "How did Baghdad's traders connect the world all the way to Britain?",
+    "thumbUrl": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
+    "bridges": [
+      "Ocean Dhows",
+      "Northern Silver",
+      "Global Web"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Bazaars & Silk Road Caravans",
+        "date": "c. AD 850–1000",
+        "img": "/units/ks2_early_islamic_baghdad/assets/wasiti_camel_caravan_silk_road.jpg",
+        "mode": "contain-light",
+        "stat": "Walled Caravanserai Inns Every 30 Kilometres",
+        "connective": "How did Baghdad's traders connect the world all the way to Britain?",
+        "html": "Shaded <strong>bazaars</strong> gleamed with Chinese silk, Indian spices, and blown glass carried by camel caravans. Every thirty kilometres, walled <strong>caravanserai inns</strong> sheltered traders safely along the <strong>Silk Road</strong>.",
+        "paired_prose_hash": "b7b37bc289",
+        "spoken": "How did Baghdad's traders connect the world all the way to Britain? <short pause> Shaded bazaars gleamed with Chinese silk, Indian spices, and blown glass carried by camel caravans. Every thirty kilometres, walled caravanserai inns sheltered traders safely along the Silk Road ."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Ocean Dhows & Paper Cheques",
+        "date": "c. AD 850–1000",
+        "img": "/units/ks2_early_islamic_baghdad/assets/wasiti_indian_ocean_dhow_ship.jpg",
+        "mode": "contain-light",
+        "stat": "Stitched Wooden Hulls & Signed Sakk Notes",
+        "connective": "South from Basra port, sailors also rode ocean winds towards India and China.",
+        "html": "Captains steered stitched wooden <strong>dhow ships</strong> across the Indian Ocean using brass <strong>astrolabes</strong>. Instead of hauling heavy coin sacks, merchants cashed signed paper <strong>sakk cheques</strong> afar.",
+        "paired_prose_hash": "7205795961",
+        "spoken": "South from Basra port, sailors also rode ocean winds towards India and China. <short pause> Captains steered stitched wooden dhow ships across the Indian Ocean using brass astrolabes . Instead of hauling heavy coin sacks, merchants cashed signed paper sakk cheques afar."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Silver Dirhams in Viking York",
+        "date": "c. AD 774–1000",
+        "img": "/units/ks2_early_islamic_baghdad/assets/abbasid_silver_dirham_coin.jpg",
+        "mode": "landscape",
+        "pos": "center 50%",
+        "stat": "Jorvik Silver Hoards & King Offa's Gold Coin",
+        "connective": "Archaeologists have even dug up Baghdad's coins in Scandinavian and British soil.",
+        "html": "Pure silver <strong>dirhams</strong> travelled up Russian rivers to Vikings, who buried hoards near <strong>Jorvik (York)</strong>. Earlier, Mercia's <strong>King Offa</strong> even minted a gold coin copying Arabic script.",
+        "paired_prose_hash": "0e0c722fe2",
+        "spoken": "Archaeologists have even dug up Baghdad's coins in Scandinavian and British soil. <short pause> Pure silver dirhams travelled up Russian rivers to Vikings, who buried hoards near Jorvik (York) . Earlier, Mercia's King Offa even minted a gold coin copying Arabic script."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "From China Right to Britain",
+        "date": "c. AD 850–1000",
+        "img": "/images/upgraded/ks2-world/baghdad_l4_banner_desert_camel_caravan.jpg",
+        "mode": "landscape",
+        "pos": "center 55%",
+        "stat": "Three Continents Linked by Ships & Caravans",
+        "connective": "Overland trails, ocean sails, and river routes wove a giant trading web.",
+        "html": "Baghdad's <strong>caravans, dhow ships</strong>, and trusted <strong>silver dirhams</strong> linked Asia, Africa, and Europe. Goods, banking ideas, and coins reached all the way to <strong>medieval Britain</strong>.",
+        "spoken": "Overland trails, ocean sails, and river routes wove a giant trading web. <short pause> Baghdad's caravans, dhow ships , and trusted silver dirhams linked Asia, Africa, and Europe. Goods, banking ideas, and coins reached all the way to medieval Britain ."
+      }
+    ],
+    "takeaway": "Camel caravans, stitched Indian Ocean dhows, paper sakk cheques, and trusted silver dirhams connected Baghdad's markets from China all the way to Viking Britain.",
+    "vocab": [
+      [
+        "1. Caravanserai",
+        "Walled roadside inn built every 30 km for Silk Road caravans."
+      ],
+      [
+        "2. Sakk",
+        "Signed paper payment slip cashed afar—origin of our word cheque."
+      ],
+      [
+        "3. Dirham",
+        "Pure silver coin with Arabic script found in Viking York hoards."
+      ]
+    ],
+    "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Camel caravans, stitched Indian Ocean dhows, paper sakk cheques, and trusted silver dirhams connected Baghdad's markets from China all the way to Viking Britain."
+  },
+  "lesson_5": {
+    "num": "05",
+    "slug": "ks2_early_islamic_baghdad_l05_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 5",
+    "datesBadge": "c. AD 900",
+    "topicLabel": "Enquiry 05: Courtyards, Tilework & Chess in Baghdad (c. AD 900)",
+    "title": "What Was Everyday Family Life Like in Baghdad Around AD 900?",
+    "spokenTitle": "What was everyday family life like in Baghdad around AD 900?",
+    "thumbUrl": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
+    "bridges": [
+      "Orchards & Tiles",
+      "Lamps & Chess",
+      "Rich Daily Life"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Windcatchers & Clean Hammams",
+        "date": "c. AD 900",
+        "img": "/units/ks2_early_islamic_baghdad/assets/courtyard_house_windcatcher_tower.jpg",
+        "mode": "landscape",
+        "pos": "center 40%",
+        "stat": "Rooftop Cooling Towers & Rosewater Soap",
+        "connective": "What was everyday family life like in Baghdad around AD 900?",
+        "html": "Rooftop <strong>windcatcher towers</strong> scooped breezes into shaded fountain <strong>courtyards</strong> during hot summers. Neighbours also washed with olive-oil soap and sweet rosewater inside tiled public <strong>hammams</strong>.",
+        "paired_prose_hash": "a475ce87de",
+        "spoken": "What was everyday family life like in Baghdad around AD 900? <short pause> Rooftop windcatcher towers scooped breezes into shaded fountain courtyards during hot summers. Neighbours also washed with olive-oil soap and sweet rosewater inside tiled public hammams ."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Citrus Feasts & Star Tilework",
+        "date": "c. AD 900",
+        "img": "/units/ks2_early_islamic_baghdad/assets/islamic_geometric_star_tilework.jpg",
+        "mode": "landscape",
+        "pos": "center 50%",
+        "stat": "Oranges, Sugar & 8-Pointed Geometric Stars",
+        "connective": "Waterwheels fed lush orchards while master tilers decorated calm mosque walls.",
+        "html": "Families enjoyed <strong>lemons, oranges, and cane sugar</strong> served on shiny lustreware bowls. Avoiding statues in mosques, artists crafted <strong>geometric stars</strong>, leafy arabesques, and flowing <strong>Arabic calligraphy</strong>.",
+        "paired_prose_hash": "b5d328d67f",
+        "spoken": "Waterwheels fed lush orchards while master tilers decorated calm mosque walls. <short pause> Families enjoyed lemons, oranges, and cane sugar served on shiny lustreware bowls. Avoiding statues in mosques, artists crafted geometric stars , leafy arabesques, and flowing Arabic calligraphy ."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Glass Lamps & Shatranj Chess",
+        "date": "c. AD 900",
+        "img": "/units/ks2_early_islamic_baghdad/assets/medieval_islamic_ceramic_chess_set.jpg",
+        "mode": "contain-light",
+        "stat": "Silk Tiraz Robes, Gilded Glass & Checkmate",
+        "connective": "As evening breezes cooled the courtyard, families gathered on woven carpets.",
+        "html": "Workshops wove silk <strong>tiraz robes</strong> and gilded glowing glass <strong>mosque lamps</strong>. At dusk, families sipped fruit syrups and played <strong>shatranj chess</strong>, shouting <em>Shah mat</em> — our word checkmate!",
+        "paired_prose_hash": "b4054d7a92",
+        "spoken": "As evening breezes cooled the courtyard, families gathered on woven carpets. <short pause> Workshops wove silk tiraz robes and gilded glowing glass mosque lamps . At dusk, families sipped fruit syrups and played shatranj chess , shouting Shah mat, our word checkmate!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Comfort, Beauty & Clever Craft",
+        "date": "c. AD 900",
+        "img": "/images/upgraded/ks2-world/baghdad_l5_banner_islamic_courtyard_coste.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Natural Cooling, Hygiene, Orchards & Art",
+        "connective": "Science, trade, and skilled craft made daily life comfortable and vibrant.",
+        "html": "From <strong>breezy courtyard homes</strong> and steamed hammams to <strong>star mosaics and chess</strong>, Baghdad blended beauty with clever design. Many foods and games reached <strong>homes worldwide</strong>.",
+        "spoken": "Science, trade, and skilled craft made daily life comfortable and vibrant. <short pause> From breezy courtyard homes and steamed hammams to star mosaics and chess , Baghdad blended beauty with clever design. Many foods and games reached homes worldwide ."
+      }
+    ],
+    "takeaway": "Around AD 900, Baghdad families enjoyed windcatcher-cooled courtyards, clean hammam bathhouses, citrus foods, geometric star tilework, and shatranj chess.",
+    "vocab": [
+      [
+        "1. Windcatcher",
+        "Rooftop cooling tower funnelling fresh breezes down indoors."
+      ],
+      [
+        "2. Hammam",
+        "Steamed public bathhouse where neighbours washed with soap."
+      ],
+      [
+        "3. Calligraphy",
+        "Artistic Arabic handwriting turning sacred verses into visual art."
+      ]
+    ],
+    "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Around AD 900, Baghdad families enjoyed windcatcher-cooled courtyards, clean hammam bathhouses, citrus foods, geometric star tilework, and shatranj chess."
+  },
+  "lesson_6": {
+    "num": "06",
+    "slug": "ks2_early_islamic_baghdad_l06_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 6",
+    "datesBadge": "AD 1258 – Today",
+    "topicLabel": "Enquiry 06: The 1258 Siege of Baghdad & Surviving Ideas",
+    "title": "Why Did Baghdad Fall in 1258, and How Did Its Ideas Survive?",
+    "spokenTitle": "Why did Baghdad fall in 1258, and how did its ideas survive?",
+    "thumbUrl": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
+    "bridges": [
+      "Copies Abroad",
+      "Words & Maths",
+      "Living Legacy"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "AD 1258: Mongol Siege & Fall",
+        "date": "Jan–Feb 1258",
+        "img": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg",
+        "mode": "contain",
+        "stat": "Hulagu Khan's Trebuchets Break Brick Walls",
+        "connective": "Why did Baghdad fall in 1258, and how did its ideas survive?",
+        "html": "In <strong>January 1258</strong>, <strong>Hulagu Khan's</strong> Mongol army surrounded weakened Baghdad and fired giant wooden <strong>trebuchets</strong>. Fires ruined canals and the House of Wisdom, ending Abbasid rule.",
+        "paired_prose_hash": "ae75c5651d",
+        "spoken": "Why did Baghdad fall in 1258, and how did its ideas survive? <short pause> In January 1258 , Hulagu Khan's Mongol army surrounded weakened Baghdad and fired giant wooden trebuchets . Fires ruined canals and the House of Wisdom, ending Abbasid rule."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Saved in Cairo, Córdoba & Toledo",
+        "date": "1200s – 1400s",
+        "img": "/units/ks2_early_islamic_baghdad/assets/cordoba_great_mosque_gold_arches.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "70 Libraries in Córdoba & Latin Translations",
+        "connective": "Even when Baghdad's library burned, Golden Age books were not lost.",
+        "html": "Paper copies survived safely in Cairo, Samarkand, and <strong>Córdoba</strong> in Islamic <strong>Al-Andalus</strong>. In Spanish <strong>Toledo</strong>, Muslim, Jewish, and Christian translators turned Arabic science into Latin.",
+        "paired_prose_hash": "5e6ea0f865",
+        "spoken": "Even when Baghdad's library burned, Golden Age books were not lost. <short pause> Paper copies survived safely in Cairo, Samarkand, and Córdoba in Islamic Al-Andalus . In Spanish Toledo , Muslim, Jewish, and Christian translators turned Arabic science into Latin."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Arabic Words & Maths Today",
+        "date": "Today",
+        "img": "/units/ks2_early_islamic_baghdad/assets/alhambra_carved_stucco_courtyard.jpg",
+        "mode": "contain",
+        "stat": "0–9 Digits, Cameras, Zero, Sugar & Sofa",
+        "connective": "Those rescued books helped spark Europe's Renaissance and shape our world today.",
+        "html": "Every sum using <strong>digits 0 to 9</strong>, phone <strong>algorithm</strong>, and camera lens builds on Golden Age science. Everyday English words like <strong>zero, sugar, lemon, and sofa</strong> come from Arabic.",
+        "paired_prose_hash": "80c3cd03af",
+        "spoken": "Those rescued books helped spark Europe's Renaissance and shape our world today. <short pause> Every sum using digits 0 to 9 , phone algorithm , and camera lens builds on Golden Age science. Everyday English words like zero, sugar, lemon, and sofa come from Arabic."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Walls Fell, Wisdom Lived On",
+        "date": "1258 – Today",
+        "img": "/images/upgraded/ks2-world/baghdad_l6_banner_cordoba_bridge_mezquita.jpg",
+        "mode": "landscape",
+        "pos": "center 55%",
+        "stat": "Shared Books Outlasted Empire Walls",
+        "connective": "Copying books onto paper meant no single siege could erase human learning.",
+        "html": "Although <strong>Mongol trebuchets</strong> broke Baghdad's walls in 1258, libraries from Cairo to <strong>Spain</strong> kept its discoveries safe. Early Islamic <strong>science and words</strong> still enrich daily life.",
+        "spoken": "Copying books onto paper meant no single siege could erase human learning. <short pause> Although Mongol trebuchets broke Baghdad's walls in 1258, libraries from Cairo to Spain kept its discoveries safe. Early Islamic science and words still enrich daily life."
+      }
+    ],
+    "takeaway": "Hulagu Khan's Mongol siege destroyed Baghdad in 1258, yet paper copies in Cairo, Córdoba, and Toledo saved Islamic maths, medicine, and words for today.",
+    "vocab": [
+      [
+        "1. Trebuchet",
+        "Giant counterweight catapult used to hurl boulders at walls."
+      ],
+      [
+        "2. Al-Andalus",
+        "Medieval Islamic Spain and Portugal, famed for great libraries."
+      ],
+      [
+        "3. Renaissance",
+        "Europe's rebirth of science and art, aided by Arabic books."
+      ]
+    ],
+    "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Hulagu Khan's Mongol siege destroyed Baghdad in 1258, yet paper copies in Cairo, Córdoba, and Toledo saved Islamic maths, medicine, and words for today."
+  }
+}

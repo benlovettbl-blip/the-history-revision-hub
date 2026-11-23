@@ -27,6 +27,34 @@ function fmtInlineDossierText(val) {
     .replace(/(^|[^<a-zA-Z0-9*])\*([^*\n<]+)\*(?=[^*]|$)/g, '$1<em>$2</em>');
 }
 
+function buildEntityPronounceBtnHTML(person, compact = false) {
+  const rawName = String(person?.name || '').trim();
+  if (!rawName) return '';
+  const phonetic = String(person?.phonetic || person?.pronunciation || '').trim();
+  const safeJsName = rawName
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/"/g, '&quot;')
+    .replace(/\r?\n/g, ' ');
+  const safeAttrName = rawName
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  const safePhoneticHtml = phonetic
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  const safePhoneticAttr = safePhoneticHtml.replace(/"/g, '&quot;');
+  const titleText = phonetic
+    ? `Pronounce ${safeAttrName} [${safePhoneticAttr}]`
+    : `Pronounce ${safeAttrName} (British English)`;
+  if (compact) {
+    return `<span role="button" tabindex="0" class="ki-pronounce-btn ki-pronounce-compact no-print" onclick="event.preventDefault(); event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJsName}', this); }" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJsName}', this); } }" title="${titleText}" aria-label="${titleText}"><i class="fa-solid fa-volume-high"></i>${phonetic ? `<span class="ki-phonetic-label">[${safePhoneticHtml}]</span>` : ''}</span>`;
+  }
+  return `<button type="button" class="ki-pronounce-btn no-print" onclick="event.preventDefault(); event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJsName}', this); }" title="${titleText}" aria-label="${titleText}"><i class="fa-solid fa-volume-high"></i><span>${phonetic ? `[${safePhoneticHtml}]` : 'Pronounce'}</span></button>`;
+}
+
 export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   const isOrg = isOrganisationEntity(person);
   const anchor = anchorTitle || person.anchor_title || '';
@@ -176,6 +204,7 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
           <span class="archival-drawer-title" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.84rem; color: #1e293b; font-weight: 700; line-height: 1.35; white-space: normal; overflow-wrap: break-word;">
             ${person.name}${dateLabel ? ` (${dateLabel})` : ''}${anchorSubtext}
           </span>
+          ${buildEntityPronounceBtnHTML(person, true)}
         </div>
         <span class="drawer-toggle-indicator" style="font-size: 0.68rem; color: #64748b; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; flex-shrink: 0; white-space: nowrap;">
           ${toggleLabel} &bull; <span class="drawer-state-expand">Expand</span><span class="drawer-state-collapse">Collapse</span> <span class="drawer-caret">&#9660;</span>
@@ -192,9 +221,12 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
               </span>
               ${dateLabel ? `<span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">(${dateLabel})</span>` : ''}
             </div>
-            <h3 style="margin: 0; color: #0f172a; font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; font-weight: 700; line-height: 1.3;">
-              ${person.name}
-            </h3>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <h3 style="margin: 0; color: #0f172a; font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; font-weight: 700; line-height: 1.3;">
+                ${person.name}
+              </h3>
+              ${buildEntityPronounceBtnHTML(person, false)}
+            </div>
             ${person.role ? `<div style="font-size: 0.85rem; color: #475569; font-weight: 600; margin-top: 2px;">${person.role}</div>` : ''}
             ${originsHtml}
             ${person.significance || person.bio
@@ -313,7 +345,10 @@ export function generateKeyIndividualCardHTML(person) {
         <i class="fa-solid ${pillIcon}" style="margin-right: 4px;"></i>${pillText}
       </span>
     </div>
-    <h3 style="margin: 0 0 12px 0; color: var(--primary); font-family: var(--font-heading); text-align: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 10px; font-size: 1.15rem;">${person.name}</h3>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin: 0 0 12px 0; border-bottom: 1px solid var(--border-glass); padding-bottom: 10px;">
+      <h3 style="margin: 0; color: var(--primary); font-family: var(--font-heading); text-align: center; font-size: 1.15rem;">${person.name}</h3>
+      ${buildEntityPronounceBtnHTML(person, true)}
+    </div>
   `;
 
   let hasDetailedContent = false;
@@ -430,7 +465,10 @@ export function generateKeyIndividualCardHTML(person) {
                 <i class="fa-solid ${pillIcon}"></i> ${pillText}
               </span>
             </div>
-            <h3 style="margin: 0 0 4px 0; color: var(--primary); font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.28;">${person.name}</h3>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 0 0 4px 0;">
+              <h3 style="margin: 0; color: var(--primary); font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.28;">${person.name}</h3>
+              ${buildEntityPronounceBtnHTML(person, false)}
+            </div>
             ${lifespanHtml}
             <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.35;">${person.role || person.group || ''}</p>
             ${basicBio}

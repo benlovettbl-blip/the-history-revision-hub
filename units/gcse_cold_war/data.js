@@ -588,6 +588,107 @@ export default {
                 "hinge": "Why did placing Western sectors of Berlin 100 miles inside the Soviet Zone give Moscow an immediate geographic lever in 1948 and 1958–61?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Summit Dossier",
+            "title": "The Yalta Conference (February 1945): Three Grand Alliance Agreements & One Sharp Faultline",
+            "default_index": 0,
+            "caption": "Click each summit dossier to compare what Roosevelt, Churchill, and Stalin agreed at Yalta in February 1945—and why Poland already exposed deep division.",
+            "items": [
+              {
+                "tab_label": "1. Four Zones",
+                "title": "Four-Power Occupation of Germany & Berlin",
+                "dates": "February 1945 • Yalta Agreement",
+                "badge": "Unanimous Deal",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Big Three",
+                    "value": "Roosevelt, Churchill & Stalin"
+                  },
+                  {
+                    "label": "Occupation",
+                    "value": "US, British, French & Soviet Zones"
+                  },
+                  {
+                    "label": "Capital Split",
+                    "value": "Four-Zone Berlin Inside Soviet Zone"
+                  }
+                ],
+                "takeaway": "With Nazi defeat imminent, the Big Three agreed to divide both defeated Germany and Berlin—deep inside the Soviet zone—into four occupation zones."
+              },
+              {
+                "tab_label": "2. $20bn & Japan",
+                "title": "German Reparations & War Against Japan",
+                "dates": "February 1945 • Economic & Pacific Deal",
+                "badge": "Half to Moscow",
+                "color": "#059669",
+                "bg_color": "rgba(5, 150, 105, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Reparations Bill",
+                    "value": "$20 Billion Total Set"
+                  },
+                  {
+                    "label": "Soviet Share",
+                    "value": "Half ($10 Billion) to Moscow"
+                  },
+                  {
+                    "label": "Pacific Pledge",
+                    "value": "USSR Joins War 3 Months After V-E"
+                  }
+                ],
+                "takeaway": "The Allies set German reparations at $20 billion (half going to the USSR), while Stalin confirmed Soviet entry against Japan within three months of German surrender."
+              },
+              {
+                "tab_label": "3. Liberated Europe",
+                "title": "Declaration on Liberated Europe",
+                "dates": "February 1945 • Political Pledge",
+                "badge": "Free Elections Promised",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Ground Reality",
+                    "value": "Red Army Held Eastern Europe"
+                  },
+                  {
+                    "label": "Written Pledge",
+                    "value": "Declaration on Liberated Europe"
+                  },
+                  {
+                    "label": "Core Promise",
+                    "value": "Free Elections Across Region"
+                  }
+                ],
+                "takeaway": "Even though Red Army troops already occupied much of Eastern Europe, Stalin signed the Declaration on Liberated Europe promising free elections across liberated nations."
+              },
+              {
+                "tab_label": "4. Poland Split",
+                "title": "The Polish Faultline: Lublin Poles vs London Poles",
+                "dates": "February 1945 • Key Dispute",
+                "badge": "Sharp Division",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Stalin’s Demand",
+                    "value": "Recognise Pro-Soviet Lublin Poles"
+                  },
+                  {
+                    "label": "Churchill’s Aim",
+                    "value": "Back Democratic London Poles"
+                  },
+                  {
+                    "label": "Soviet Motive",
+                    "value": "Guarantee Friendly Buffer Zone"
+                  }
+                ],
+                "takeaway": "With Red Army troops already in Poland, Stalin insisted on recognising the pro-Soviet Lublin Poles to secure a buffer zone, clashing with Churchill’s support for the exiled London Poles."
+              }
+            ]
           }
         },
         {
@@ -940,27 +1041,39 @@ export default {
       "vocab": [
         {
           "term": "Grand Alliance",
-          "definition": "The wartime coalition formed in 1941 between the United States, Britain, and the Soviet Union to defeat Nazi Germany and its Axis partners."
+          "definition": "The wartime coalition formed in 1941 between the United States, Britain, and the Soviet Union to defeat Nazi Germany and its Axis partners.",
+          "phonetic": "GRAND uh-LY-uns",
+          "pronunciation": "GRAND uh-LY-uns"
         },
         {
           "term": "Capitalism",
-          "definition": "The Western political and economic system based on multi-party democratic elections, private ownership of business, and free-market competition."
+          "definition": "The Western political and economic system based on multi-party democratic elections, private ownership of business, and free-market competition.",
+          "phonetic": "KAP-ih-tuh-liz-um",
+          "pronunciation": "KAP-ih-tuh-liz-um"
         },
         {
           "term": "Communism",
-          "definition": "The Soviet Marxist-Leninist system built on one-party Communist rule, state ownership of industry and land, and a centrally planned economy."
+          "definition": "The Soviet Marxist-Leninist system built on one-party Communist rule, state ownership of industry and land, and a centrally planned economy.",
+          "phonetic": "KOM-yoo-niz-um",
+          "pronunciation": "KOM-yoo-niz-um"
         },
         {
           "term": "Second Front",
-          "definition": "The Allied invasion of Nazi-occupied northern France launched in June 1944 (promised at Tehran for May 1944) to relieve German military pressure on the USSR."
+          "definition": "The Allied invasion of Nazi-occupied northern France launched in June 1944 (promised at Tehran for May 1944) to relieve German military pressure on the USSR.",
+          "phonetic": "SEK-und FRUNT",
+          "pronunciation": "SEK-und FRUNT"
         },
         {
           "term": "Declaration on Liberated Europe",
-          "definition": "The February 1945 Yalta pledge committing the Big Three to help nations freed from Nazi rule establish democratic governments through free elections."
+          "definition": "The February 1945 Yalta pledge committing the Big Three to help nations freed from Nazi rule establish democratic governments through free elections.",
+          "phonetic": "dek-luh-RAY-shun on LIB-uh-ray-tid YOOR-up",
+          "pronunciation": "dek-luh-RAY-shun on LIB-uh-ray-tid YOOR-up"
         },
         {
           "term": "Reparations",
-          "definition": "Compensation in money, industrial machinery, or goods demanded from defeated Germany to repair wartime damage, especially in the USSR."
+          "definition": "Compensation in money, industrial machinery, or goods demanded from defeated Germany to repair wartime damage, especially in the USSR.",
+          "phonetic": "rep-uh-RAY-shunz",
+          "pronunciation": "rep-uh-RAY-shunz"
         }
       ],
       "vocab_cloze_text": "Forged only against Hitler in 1941, the [Grand Alliance] temporarily united Western [Capitalism] with Stalin’s one-party [Communism]. While Roosevelt secured Soviet support by promising a French [Second Front] at Tehran and signing the [Declaration on Liberated Europe] at Yalta, Nazi defeat, Truman’s atomic bomb, and clashes over Poland and German [Reparations] shattered wartime cooperation at Potsdam.",
@@ -1908,6 +2021,102 @@ export default {
                 "hinge": "Why was Tito able to defy Stalin in 1948 whereas Communist leaders in Poland, Hungary, and Czechoslovakia could not?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Soviet Counter-Bloc",
+            "title": "Stalin’s Eastern Bloc Consolidation (1947–1949): Cominform ↔ Expulsion of Tito ↔ Comecon",
+            "default_index": 0,
+            "caption": "Slide or click across the three pillars to see how Stalin countered the Truman Doctrine and Marshall Plan by locking Eastern Europe into an ideological and economic bloc.",
+            "stops": [
+              {
+                "short_label": "1. Cominform (Sept 1947)",
+                "label": "1. Cominform: Moscow’s Ideological Command Bureau (September 1947)",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "summary": "Established in September 1947 to counter the Truman Doctrine and Marshall Plan, Cominform placed European Communist parties under Moscow’s strict ideological direction and ordered strikes against Marshall Aid.",
+                "traits": [
+                  {
+                    "category": "Founded",
+                    "glyph": "leader",
+                    "value": "September 1947 by Joseph Stalin"
+                  },
+                  {
+                    "category": "Core Purpose",
+                    "glyph": "language",
+                    "value": "Strict Ideological Line from Moscow"
+                  },
+                  {
+                    "category": "Western Action",
+                    "glyph": "people",
+                    "value": "French & Italian Anti-Marshall Strikes"
+                  },
+                  {
+                    "category": "US Target",
+                    "glyph": "law",
+                    "value": "Countered Truman & Marshall Plans"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Tito Expelled (1948)",
+                "label": "2. Disciplining Defiance: Yugoslavia Expelled from Cominform (1948)",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "summary": "When Marshal Josip Broz Tito insisted on running Communist Yugoslavia independently rather than taking Stalin’s orders, Cominform expelled Yugoslavia in 1948 as a warning to all satellite leaders.",
+                "traits": [
+                  {
+                    "category": "Independent Leader",
+                    "glyph": "leader",
+                    "value": "Marshal Josip Broz Tito"
+                  },
+                  {
+                    "category": "Offence",
+                    "glyph": "law",
+                    "value": "Refused Direct Orders from Stalin"
+                  },
+                  {
+                    "category": "1948 Punishment",
+                    "glyph": "people",
+                    "value": "Yugoslavia Expelled from Cominform"
+                  },
+                  {
+                    "category": "Bloc Message",
+                    "glyph": "language",
+                    "value": "Zero Tolerance for Deviation"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Comecon (Jan 1949)",
+                "label": "3. Comecon: Economic Integration & Trade Wall (January 1949)",
+                "color": "#7c3aed",
+                "bg_color": "rgba(124, 58, 237, 0.2)",
+                "summary": "Created in January 1949 as Moscow’s answer to Marshall Aid, Comecon specialised Eastern Bloc production around Soviet priorities while cutting off trade with Western Europe.",
+                "traits": [
+                  {
+                    "category": "Founded",
+                    "glyph": "law",
+                    "value": "January 1949 Economic Council"
+                  },
+                  {
+                    "category": "Funding Contrast",
+                    "glyph": "leader",
+                    "value": "No US-Style Multi-Billion Grants"
+                  },
+                  {
+                    "category": "Specialisation",
+                    "glyph": "clothes",
+                    "value": "Bulgarian Farms & Czech Industry"
+                  },
+                  {
+                    "category": "Trade Barrier",
+                    "glyph": "people",
+                    "value": "Cut Off Trade with Western Europe"
+                  }
+                ]
+              }
+            ]
           }
         }
       ],
@@ -2227,31 +2436,45 @@ export default {
       "vocab": [
         {
           "term": "Containment",
-          "definition": "The US Cold War strategy of using economic, political, and military power to stop communism spreading beyond countries where it already existed."
+          "definition": "The US Cold War strategy of using economic, political, and military power to stop communism spreading beyond countries where it already existed.",
+          "phonetic": "kun-TAYN-munt",
+          "pronunciation": "kun-TAYN-munt"
         },
         {
           "term": "Satellite States",
-          "definition": "Eastern European nations (such as Poland, Hungary, and Czechoslovakia) that were formally independent but tightly controlled politically and economically by Moscow."
+          "definition": "Eastern European nations (such as Poland, Hungary, and Czechoslovakia) that were formally independent but tightly controlled politically and economically by Moscow.",
+          "phonetic": "SAT-uh-lyte STAYTS",
+          "pronunciation": "SAT-uh-lyte STAYTS"
         },
         {
           "term": "Truman Doctrine",
-          "definition": "President Truman’s March 1947 pledge of US military and economic support (starting with $400m for Greece and Turkey) for free nations resisting Communist takeover."
+          "definition": "President Truman’s March 1947 pledge of US military and economic support (starting with $400m for Greece and Turkey) for free nations resisting Communist takeover.",
+          "phonetic": "TROO-mun DOK-trin",
+          "pronunciation": "TROO-mun DOK-trin"
         },
         {
           "term": "Marshall Plan",
-          "definition": "The 1947–52 US European Recovery Program supplying over $13 billion ($17bn total) to rebuild 16 Western European economies and prevent communism taking root."
+          "definition": "The 1947–52 US European Recovery Program supplying over $13 billion ($17bn total) to rebuild 16 Western European economies and prevent communism taking root.",
+          "phonetic": "MAH-shul PLAN",
+          "pronunciation": "MAH-shul PLAN"
         },
         {
           "term": "Dollar Imperialism",
-          "definition": "The Soviet propaganda term used by Stalin and Molotov to condemn the Marshall Plan as an American plot to dominate Europe economically."
+          "definition": "The Soviet propaganda term used by Stalin and Molotov to condemn the Marshall Plan as an American plot to dominate Europe economically.",
+          "phonetic": "DOL-uh im-PEER-ee-uh-liz-um",
+          "pronunciation": "DOL-uh im-PEER-ee-uh-liz-um"
         },
         {
           "term": "Cominform",
-          "definition": "The Communist Information Bureau created by Stalin in September 1947 to enforce strict Moscow ideological control over European Communist parties."
+          "definition": "The Communist Information Bureau created by Stalin in September 1947 to enforce strict Moscow ideological control over European Communist parties.",
+          "phonetic": "KOM-in-fawm",
+          "pronunciation": "KOM-in-fawm"
         },
         {
           "term": "Comecon",
-          "definition": "The Council for Mutual Economic Assistance established by Moscow in January 1949 to coordinate trade and state planning across Eastern Bloc economies."
+          "definition": "The Council for Mutual Economic Assistance established by Moscow in January 1949 to coordinate trade and state planning across Eastern Bloc economies.",
+          "phonetic": "KOM-ih-kon",
+          "pronunciation": "KOM-ih-kon"
         }
       ],
       "vocab_cloze_text": "Guided by Kennan’s 1946 Long Telegram, President Truman abandoned isolationism through the March 1947 [Truman Doctrine], making [Containment] official US policy. Backed economically by the multi-billion-dollar [Marshall Plan], Washington rebuilt Western Europe while Stalin tightened his Eastern European [Satellite States], denouncing US aid as [Dollar Imperialism] and locking his bloc behind [Cominform] and [Comecon].",
@@ -3230,6 +3453,95 @@ export default {
                 "hinge": "How did the rapid shift from atomic bombs to thermonuclear H-bombs between 1949 and 1955 reshape both deterrence and Cold War tension?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "power_seesaw",
+            "eyebrow": "Interactive Escalation Meter",
+            "title": "Nuclear & Alliance Escalation (1949–1957): From Soviet A-Bomb to Warsaw Pact & ICBMs",
+            "default_index": 2,
+            "caption": "Click each milestone from August 1949 to 1957 to watch the US nuclear monopoly give way to thermonuclear H-bombs, rival European military alliances, and long-range missiles.",
+            "eras": [
+              {
+                "year": "Aug 1949",
+                "headline": "Soviet Atomic Bomb Ends US Four-Year Monopoly",
+                "color": "#ef4444",
+                "summary": "In August 1949, the Soviet Union tested its first atomic bomb, ending America’s four-year nuclear monopoly and dramatically intensifying superpower rivalry.",
+                "pillars": [
+                  {
+                    "actor": "United States & NATO Allies",
+                    "share": 60,
+                    "status": "Four-Year Nuclear Monopoly Ended",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Soviet Union & Eastern Satellites",
+                    "share": 40,
+                    "status": "First Soviet Atomic Bomb Tested",
+                    "color": "#ef4444"
+                  }
+                ]
+              },
+              {
+                "year": "1952–1953",
+                "headline": "Superpowers Detonate Rival Hydrogen Bombs (1,000x Hiroshima)",
+                "color": "#f59e0b",
+                "summary": "Determined to stay ahead, the USA detonated an H-bomb in November 1952 (roughly 1,000 times Hiroshima), matched within nine months by a Soviet H-bomb in August 1953.",
+                "pillars": [
+                  {
+                    "actor": "United States & NATO Allies",
+                    "share": 52,
+                    "status": "US H-Bomb Detonated (Nov 1952)",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Soviet Union & Eastern Satellites",
+                    "share": 48,
+                    "status": "Soviet H-Bomb Follows (Aug 1953)",
+                    "color": "#ef4444"
+                  }
+                ]
+              },
+              {
+                "year": "May 1955",
+                "headline": "West Germany Joins NATO & Khrushchev Forms Warsaw Pact",
+                "color": "#a855f7",
+                "summary": "When NATO admitted a rearmed West Germany (FRG) in May 1955, Nikita Khrushchev founded the Warsaw Pact on 14 May 1955, uniting the USSR and seven Eastern European satellites under Soviet command.",
+                "pillars": [
+                  {
+                    "actor": "NATO (With Rearmed West Germany)",
+                    "share": 50,
+                    "status": "FRG Admitted to Western Alliance",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Warsaw Pact (USSR + 7 Satellites)",
+                    "share": 50,
+                    "status": "Unified Soviet Command (14 May 1955)",
+                    "color": "#ef4444"
+                  }
+                ]
+              },
+              {
+                "year": "1957",
+                "headline": "Soviet ICBMs Place North America Within Strike Range",
+                "color": "#10b981",
+                "summary": "By 1957, Soviet intercontinental ballistic missiles (ICBMs) could strike North America directly, locking Europe and both superpowers into two nuclear-armed camps.",
+                "pillars": [
+                  {
+                    "actor": "NATO Nuclear & Conventional Bloc",
+                    "share": 50,
+                    "status": "North America Now Reachable by Missile",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Warsaw Pact & Soviet ICBM Force",
+                    "share": 50,
+                    "status": "Intercontinental Strike Capability",
+                    "color": "#ef4444"
+                  }
+                ]
+              }
+            ]
           }
         }
       ],
@@ -3549,27 +3861,39 @@ export default {
       "vocab": [
         {
           "term": "Bizonia & Trizonia",
-          "definition": "The economic merger of the British and American German occupation zones in 1947 (Bizonia), joined by the French zone in 1948 (Trizonia)."
+          "definition": "The economic merger of the British and American German occupation zones in 1947 (Bizonia), joined by the French zone in 1948 (Trizonia).",
+          "phonetic": "by-ZOH-nee-uh und try-ZOH-nee-uh",
+          "pronunciation": "by-ZOH-nee-uh und try-ZOH-nee-uh"
         },
         {
           "term": "Deutschmark",
-          "definition": "The new Western currency introduced into Trizonia and West Berlin in June 1948, directly triggering Stalin’s Berlin Blockade."
+          "definition": "The new Western currency introduced into Trizonia and West Berlin in June 1948, directly triggering Stalin’s Berlin Blockade.",
+          "phonetic": "DOYCH-mahk",
+          "pronunciation": "DOYCH-mahk"
         },
         {
           "term": "Berlin Airlift",
-          "definition": "The 11-month Allied aerial supply operation (June 1948–May 1949) that flew over 275,000 loads of food and coal into blockaded West Berlin."
+          "definition": "The 11-month Allied aerial supply operation (June 1948–May 1949) that flew over 275,000 loads of food and coal into blockaded West Berlin.",
+          "phonetic": "bur-LIN AIR-lift",
+          "pronunciation": "bur-LIN AIR-lift"
         },
         {
           "term": "FRG & GDR",
-          "definition": "The two separate German states created in 1949: the capitalist Federal Republic of Germany (West, May 1949) and Communist German Democratic Republic (East, October 1949)."
+          "definition": "The two separate German states created in 1949: the capitalist Federal Republic of Germany (West, May 1949) and Communist German Democratic Republic (East, October 1949).",
+          "phonetic": "ef-ahr-JEE und jee-dee-AHR",
+          "pronunciation": "ef-ahr-JEE und jee-dee-AHR"
         },
         {
           "term": "NATO",
-          "definition": "The North Atlantic Treaty Organisation founded in April 1949 binding the USA, Canada, and 10 Western European nations in collective military defence."
+          "definition": "The North Atlantic Treaty Organisation founded in April 1949 binding the USA, Canada, and 10 Western European nations in collective military defence.",
+          "phonetic": "NAY-toh",
+          "pronunciation": "NAY-toh"
         },
         {
           "term": "Warsaw Pact",
-          "definition": "The rival Eastern Bloc military alliance created by Khrushchev in May 1955 uniting the USSR and seven satellite states after West Germany joined NATO."
+          "definition": "The rival Eastern Bloc military alliance created by Khrushchev in May 1955 uniting the USSR and seven satellite states after West Germany joined NATO.",
+          "phonetic": "WAW-saw PAKT",
+          "pronunciation": "WAW-saw PAKT"
         }
       ],
       "vocab_cloze_text": "When the Western Allies merged their zones into [Bizonia & Trizonia] and introduced the [Deutschmark] in June 1948, Stalin cut land access to West Berlin. Defeated peacefully by the 11-month [Berlin Airlift], the crisis produced two rival German states—[FRG & GDR]—and locked Europe into two nuclear-armed alliances: Western [NATO] (1949) and the Soviet-led [Warsaw Pact] (1955).",
@@ -4800,27 +5124,39 @@ export default {
       "vocab": [
         {
           "term": "De-Stalinisation",
-          "definition": "Nikita Khrushchev’s policy launched in his February 1956 Secret Speech denouncing Stalin’s purges and loosening some Stalinist terror without ending one-party rule."
+          "definition": "Nikita Khrushchev’s policy launched in his February 1956 Secret Speech denouncing Stalin’s purges and loosening some Stalinist terror without ending one-party rule.",
+          "phonetic": "dee-STAH-lin-eye-ZAY-shun",
+          "pronunciation": "dee-STAH-lin-eye-ZAY-shun"
         },
         {
           "term": "ÁVH",
-          "definition": "The brutal Hungarian Communist state security police under Mátyás Rákosi that arrested, tortured, and imprisoned hundreds of thousands of political opponents."
+          "definition": "The brutal Hungarian Communist state security police under Mátyás Rákosi that arrested, tortured, and imprisoned hundreds of thousands of political opponents.",
+          "phonetic": "ah-vay-HAH",
+          "pronunciation": "ah-vay-HAH"
         },
         {
           "term": "Imre Nagy",
-          "definition": "The reformist Communist appointed Hungarian Prime Minister in October 1956 whose pledge of free elections and withdrawal from the Warsaw Pact triggered Soviet invasion."
+          "definition": "The reformist Communist appointed Hungarian Prime Minister in October 1956 whose pledge of free elections and withdrawal from the Warsaw Pact triggered Soviet invasion.",
+          "phonetic": "IM-reh NODJ",
+          "pronunciation": "IM-reh NODJ"
         },
         {
           "term": "Operation Whirlwind",
-          "definition": "The massive 4 November 1956 Soviet military invasion of Hungary using over 1,000 tanks to crush Nagy’s government, killing ~2,500 Hungarians."
+          "definition": "The massive 4 November 1956 Soviet military invasion of Hungary using over 1,000 tanks to crush Nagy’s government, killing ~2,500 Hungarians.",
+          "phonetic": "op-uh-RAY-shun WURL-wind",
+          "pronunciation": "op-uh-RAY-shun WURL-wind"
         },
         {
           "term": "János Kádár",
-          "definition": "The loyal pro-Soviet Communist leader installed by Khrushchev in November 1956 to restore one-party control and keep Hungary inside the Warsaw Pact."
+          "definition": "The loyal pro-Soviet Communist leader installed by Khrushchev in November 1956 to restore one-party control and keep Hungary inside the Warsaw Pact.",
+          "phonetic": "YAH-nosh KAH-dahr",
+          "pronunciation": "YAH-nosh KAH-dahr"
         },
         {
           "term": "Suez Crisis",
-          "definition": "The simultaneous October–November 1956 invasion of Egypt by Britain, France, and Israel that divided NATO and distracted global attention from Hungary."
+          "definition": "The simultaneous October–November 1956 invasion of Egypt by Britain, France, and Israel that divided NATO and distracted global attention from Hungary.",
+          "phonetic": "SOO-iz KRY-sis",
+          "pronunciation": "SOO-iz KRY-sis"
         }
       ],
       "vocab_cloze_text": "After years of [ÁVH] secret-police terror under Rákosi, Khrushchev’s 1956 policy of [De-Stalinisation] sparked protests in Budapest. When new Prime Minister [Imre Nagy] announced free elections and Hungary’s exit from the Warsaw Pact, Khrushchev launched [Operation Whirlwind] on 4 November 1956, installing [János Kádár] while nuclear fears and the [Suez Crisis] prevented Western military intervention.",
@@ -5737,6 +6073,102 @@ export default {
                 "hinge": "How could the Berlin Wall be a practical success for Khrushchev and Ulbricht yet simultaneously a devastating propaganda defeat for communism?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Berlin Faultline",
+            "title": "Why Millions Fled East (1949–1961): West Berlin Showcase ↔ GDR ‘Brain Drain’ ↔ Nov 1958 Ultimatum",
+            "default_index": 1,
+            "caption": "Slide or click across the three stages to see why 2.7 to 3 million East Germans fled through West Berlin—and why Khrushchev issued his six-month Berlin Ultimatum on 27 November 1958.",
+            "stops": [
+              {
+                "short_label": "1. West Berlin ‘Window’",
+                "label": "1. Prosperous Capitalist ‘Window to the West’ (1950s)",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.2)",
+                "summary": "Boosted by Marshall Plan investment deep inside Communist East Germany, West Berlin showcased abundant consumer goods, higher living standards, and democratic freedoms.",
+                "traits": [
+                  {
+                    "category": "Economic Boost",
+                    "glyph": "law",
+                    "value": "Thriving Marshall Plan Investment"
+                  },
+                  {
+                    "category": "Daily Life",
+                    "glyph": "clothes",
+                    "value": "Abundant Western Consumer Goods"
+                  },
+                  {
+                    "category": "Political System",
+                    "glyph": "language",
+                    "value": "Open Democratic Freedoms"
+                  },
+                  {
+                    "category": "Escape Route",
+                    "glyph": "people",
+                    "value": "Open Crossing to Fly to FRG"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. GDR ‘Brain Drain’",
+                "label": "2. Stasi Repression & The 2.7–3 Million ‘Brain Drain’ (1949–1961)",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "summary": "Fleeing low wages, forced collectivisation, and Stasi repression under unpopular GDR leader Walter Ulbricht, 2.7 to 3 million citizens—including young doctors, engineers, and teachers—left East Germany.",
+                "traits": [
+                  {
+                    "category": "GDR Regime",
+                    "glyph": "leader",
+                    "value": "Walter Ulbricht & Stasi Police"
+                  },
+                  {
+                    "category": "Push Factors",
+                    "glyph": "law",
+                    "value": "Low Wages & Collectivisation"
+                  },
+                  {
+                    "category": "Total Exodus",
+                    "glyph": "people",
+                    "value": "2.7m–3m Citizens Fled (1949–61)"
+                  },
+                  {
+                    "category": "Skilled Loss",
+                    "glyph": "language",
+                    "value": "Doctors, Engineers & Teachers"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Nov 1958 Ultimatum",
+                "label": "3. Khrushchev’s Six-Month Berlin Ultimatum (27 November 1958)",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "summary": "With the GDR nearing economic collapse, Soviet leader Nikita Khrushchev issued his Berlin Ultimatum on 27 November 1958, demanding Western troops withdraw within six months to leave a demilitarised ‘free city’.",
+                "traits": [
+                  {
+                    "category": "Date & Author",
+                    "glyph": "leader",
+                    "value": "Khrushchev (27 November 1958)"
+                  },
+                  {
+                    "category": "Deadline",
+                    "glyph": "law",
+                    "value": "Six Months for West to Withdraw"
+                  },
+                  {
+                    "category": "Proposed Status",
+                    "glyph": "church",
+                    "value": "Demilitarised ‘Free City’"
+                  },
+                  {
+                    "category": "Core Aim",
+                    "glyph": "people",
+                    "value": "Shut Escape Route & Save GDR"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -6115,42 +6547,58 @@ export default {
         {
           "term": "Brain Drain",
           "def": "The mass emigration of roughly 2.7–3 million East Germans—especially young doctors, engineers, and skilled workers—to the West via West Berlin by 1961.",
-          "definition": "The mass emigration of roughly 2.7–3 million East Germans—especially young doctors, engineers, and skilled workers—to the West via West Berlin by 1961."
+          "definition": "The mass emigration of roughly 2.7–3 million East Germans—especially young doctors, engineers, and skilled workers—to the West via West Berlin by 1961.",
+          "phonetic": "BRAYN DRAYN",
+          "pronunciation": "BRAYN DRAYN"
         },
         {
           "term": "Berlin Ultimatum",
           "def": "Nikita Khrushchev’s November 1958 demand giving the USA, Britain, and France six months to withdraw troops from West Berlin and make it a demilitarised \"free city\".",
-          "definition": "Nikita Khrushchev’s November 1958 demand giving the USA, Britain, and France six months to withdraw troops from West Berlin and make it a demilitarised \"free city\"."
+          "definition": "Nikita Khrushchev’s November 1958 demand giving the USA, Britain, and France six months to withdraw troops from West Berlin and make it a demilitarised \"free city\".",
+          "phonetic": "bur-LIN ul-tih-MAY-tum",
+          "pronunciation": "bur-LIN ul-tih-MAY-tum"
         },
         {
           "term": "Camp David Summit",
           "def": "The friendly September 1959 summit in Maryland between President Eisenhower and Nikita Khrushchev where Khrushchev temporarily withdrew his Berlin Ultimatum.",
-          "definition": "The friendly September 1959 summit in Maryland between President Eisenhower and Nikita Khrushchev where Khrushchev temporarily withdrew his Berlin Ultimatum."
+          "definition": "The friendly September 1959 summit in Maryland between President Eisenhower and Nikita Khrushchev where Khrushchev temporarily withdrew his Berlin Ultimatum.",
+          "phonetic": "KAMP DAY-vid SUM-it",
+          "pronunciation": "KAMP DAY-vid SUM-it"
         },
         {
           "term": "U-2 Incident",
           "def": "The shooting down of CIA pilot Francis Gary Powers’s high-altitude spy plane over the USSR on 1 May 1960, causing Khrushchev to walk out of the Paris Summit.",
-          "definition": "The shooting down of CIA pilot Francis Gary Powers’s high-altitude spy plane over the USSR on 1 May 1960, causing Khrushchev to walk out of the Paris Summit."
+          "definition": "The shooting down of CIA pilot Francis Gary Powers’s high-altitude spy plane over the USSR on 1 May 1960, causing Khrushchev to walk out of the Paris Summit.",
+          "phonetic": "YOO-TOO IN-sih-dunt",
+          "pronunciation": "YOO-TOO IN-sih-dunt"
         },
         {
           "term": "Vienna Summit",
           "def": "The tense June 1961 summit where Khrushchev tried to intimidate new President John F. Kennedy by renewing his six-month ultimatum over Berlin.",
-          "definition": "The tense June 1961 summit where Khrushchev tried to intimidate new President John F. Kennedy by renewing his six-month ultimatum over Berlin."
+          "definition": "The tense June 1961 summit where Khrushchev tried to intimidate new President John F. Kennedy by renewing his six-month ultimatum over Berlin.",
+          "phonetic": "vee-EN-uh SUM-it",
+          "pronunciation": "vee-EN-uh SUM-it"
         },
         {
           "term": "Berlin Wall",
           "def": "The fortified 3.6-metre concrete barrier, barbed wire, and mined \"Death Strip\" built around West Berlin from 13 August 1961 to stop East Germans escaping.",
-          "definition": "The fortified 3.6-metre concrete barrier, barbed wire, and mined \"Death Strip\" built around West Berlin from 13 August 1961 to stop East Germans escaping."
+          "definition": "The fortified 3.6-metre concrete barrier, barbed wire, and mined \"Death Strip\" built around West Berlin from 13 August 1961 to stop East Germans escaping.",
+          "phonetic": "bur-LIN WAWL",
+          "pronunciation": "bur-LIN WAWL"
         },
         {
           "term": "Checkpoint Charlie",
           "def": "The main Allied crossing point between American and Soviet sectors in Berlin, site of a tense 18-hour US–Soviet tank standoff in October 1961.",
-          "definition": "The main Allied crossing point between American and Soviet sectors in Berlin, site of a tense 18-hour US–Soviet tank standoff in October 1961."
+          "definition": "The main Allied crossing point between American and Soviet sectors in Berlin, site of a tense 18-hour US–Soviet tank standoff in October 1961.",
+          "phonetic": "CHEK-poynt CHAH-lee",
+          "pronunciation": "CHEK-poynt CHAH-lee"
         },
         {
           "term": "Ich bin ein Berliner",
           "def": "President Kennedy’s famous declaration (\"I am a Berliner\") in West Berlin on 26 June 1963 affirming US solidarity and democratic freedom.",
-          "definition": "President Kennedy’s famous declaration (\"I am a Berliner\") in West Berlin on 26 June 1963 affirming US solidarity and democratic freedom."
+          "definition": "President Kennedy’s famous declaration (\"I am a Berliner\") in West Berlin on 26 June 1963 affirming US solidarity and democratic freedom.",
+          "phonetic": "ikh bin ine bair-LEE-nuh",
+          "pronunciation": "ikh bin ine bair-LEE-nuh"
         }
       ],
       "flashcards": [
@@ -7139,6 +7587,102 @@ export default {
                 "hinge": "Why did keeping the Turkish Jupiter missile withdrawal secret boost Kennedy’s prestige while contributing to Khrushchev’s downfall in 1964?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive ExComm Crisis Choices",
+            "title": "14–24 October 1962: Kennedy’s ExComm Options After U-2 Photos of San Cristóbal",
+            "default_index": 1,
+            "caption": "After U-2 photos on 14 October revealed R-12 (SS-4) missile sites in Cuba with a ten-minute strike window on Washington, slide across the three responses weighed by ExComm.",
+            "stops": [
+              {
+                "short_label": "1. Diplomacy Alone",
+                "label": "1. Diplomatic Protest Only (Rejected as Too Weak)",
+                "color": "#64748b",
+                "bg_color": "rgba(100, 116, 139, 0.2)",
+                "summary": "Relying on diplomatic protest alone avoided immediate military clash, but ExComm warned it would leave Soviet R-12 medium-range nuclear missiles operational within ten minutes of major US cities.",
+                "traits": [
+                  {
+                    "category": "14 Oct Discovery",
+                    "glyph": "language",
+                    "value": "U-2 Photos of San Cristóbal Sites"
+                  },
+                  {
+                    "category": "Missile Threat",
+                    "glyph": "leader",
+                    "value": "Soviet R-12 (SS-4) Launch Pads"
+                  },
+                  {
+                    "category": "Strike Window",
+                    "glyph": "people",
+                    "value": "10 Minutes to Washington, D.C."
+                  },
+                  {
+                    "category": "Fatal Flaw",
+                    "glyph": "law",
+                    "value": "Left Nuclear Bases Operational"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Naval Quarantine (Chosen)",
+                "label": "2. 500-Mile Naval ‘Quarantine’ & DEFCON 2 (22–24 October 1962)",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.22)",
+                "summary": "On 22 October, Kennedy exposed the bases on TV, raised US forces to DEFCON 2, and ordered a 500-mile naval ‘quarantine’ (avoiding the warlike term blockade)—prompting Soviet missile ships to turn back on 24 October.",
+                "traits": [
+                  {
+                    "category": "22 Oct TV Speech",
+                    "glyph": "leader",
+                    "value": "Exposed Bases & Set DEFCON 2"
+                  },
+                  {
+                    "category": "Careful Wording",
+                    "glyph": "law",
+                    "value": "500-Mile ‘Quarantine’ (Not Blockade)"
+                  },
+                  {
+                    "category": "Naval Line",
+                    "glyph": "people",
+                    "value": "US Warships Halted Missile Ships"
+                  },
+                  {
+                    "category": "24 Oct Turning Point",
+                    "glyph": "language",
+                    "value": "Khrushchev Ordered Vessels Back"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Airstrike & Invasion",
+                "label": "3. Immediate Airstrikes & Invasion of Cuba (Rejected Hawk Option)",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "summary": "Bombing San Cristóbal and invading Cuba promised to destroy the launch pads directly, but risked killing Soviet troops on the ground and igniting full-scale nuclear war.",
+                "traits": [
+                  {
+                    "category": "Military Plan",
+                    "glyph": "leader",
+                    "value": "Immediate Bombing & Invasion"
+                  },
+                  {
+                    "category": "Ground Danger",
+                    "glyph": "people",
+                    "value": "Risked Killing Soviet Troops"
+                  },
+                  {
+                    "category": "Escalation Risk",
+                    "glyph": "law",
+                    "value": "Could Ignite Full Nuclear War"
+                  },
+                  {
+                    "category": "ExComm Verdict",
+                    "glyph": "language",
+                    "value": "Held Back in Favour of Quarantine"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -7490,42 +8034,58 @@ export default {
         {
           "term": "Cuban Revolution",
           "def": "Fidel Castro and Che Guevara’s January 1959 overthrow of pro-American dictator Fulgencio Batista just 90 miles off the coast of Florida.",
-          "definition": "Fidel Castro and Che Guevara’s January 1959 overthrow of pro-American dictator Fulgencio Batista just 90 miles off the coast of Florida."
+          "definition": "Fidel Castro and Che Guevara’s January 1959 overthrow of pro-American dictator Fulgencio Batista just 90 miles off the coast of Florida.",
+          "phonetic": "KYOO-bun rev-uh-LOO-shun",
+          "pronunciation": "KYOO-bun rev-uh-LOO-shun"
         },
         {
           "term": "Bay of Pigs",
           "def": "The failed CIA-backed landing of 1,400 Cuban exiles (Brigade 2506) in April 1961, crushed within 72 hours by Castro’s forces and humiliating President Kennedy.",
-          "definition": "The failed CIA-backed landing of 1,400 Cuban exiles (Brigade 2506) in April 1961, crushed within 72 hours by Castro’s forces and humiliating President Kennedy."
+          "definition": "The failed CIA-backed landing of 1,400 Cuban exiles (Brigade 2506) in April 1961, crushed within 72 hours by Castro’s forces and humiliating President Kennedy.",
+          "phonetic": "BAY uv PIGZ",
+          "pronunciation": "BAY uv PIGZ"
         },
         {
           "term": "ExComm",
           "def": "The Executive Committee of the National Security Council convened secretly by President Kennedy in October 1962 to manage the Cuban Missile Crisis.",
-          "definition": "The Executive Committee of the National Security Council convened secretly by President Kennedy in October 1962 to manage the Cuban Missile Crisis."
+          "definition": "The Executive Committee of the National Security Council convened secretly by President Kennedy in October 1962 to manage the Cuban Missile Crisis.",
+          "phonetic": "EKS-kom",
+          "pronunciation": "EKS-kom"
         },
         {
           "term": "Naval Quarantine",
           "def": "The 500-mile US Navy zone ordered around Cuba on 22 October 1962 to stop Soviet ships delivering nuclear weapons without declaring formal war.",
-          "definition": "The 500-mile US Navy zone ordered around Cuba on 22 October 1962 to stop Soviet ships delivering nuclear weapons without declaring formal war."
+          "definition": "The 500-mile US Navy zone ordered around Cuba on 22 October 1962 to stop Soviet ships delivering nuclear weapons without declaring formal war.",
+          "phonetic": "NAY-vul KWOR-un-teen",
+          "pronunciation": "NAY-vul KWOR-un-teen"
         },
         {
           "term": "Hotline",
           "def": "The direct teletype communication link established between Moscow and Washington in June 1963 to enable rapid leader-to-leader contact in emergencies.",
-          "definition": "The direct teletype communication link established between Moscow and Washington in June 1963 to enable rapid leader-to-leader contact in emergencies."
+          "definition": "The direct teletype communication link established between Moscow and Washington in June 1963 to enable rapid leader-to-leader contact in emergencies.",
+          "phonetic": "HOT-lyne",
+          "pronunciation": "HOT-lyne"
         },
         {
           "term": "Limited Test Ban Treaty",
           "def": "The August 1963 agreement signed by the USA, USSR, and Britain banning nuclear weapons tests in the atmosphere, outer space, and underwater.",
-          "definition": "The August 1963 agreement signed by the USA, USSR, and Britain banning nuclear weapons tests in the atmosphere, outer space, and underwater."
+          "definition": "The August 1963 agreement signed by the USA, USSR, and Britain banning nuclear weapons tests in the atmosphere, outer space, and underwater.",
+          "phonetic": "LIM-ih-tid TEST BAN TREE-tee",
+          "pronunciation": "LIM-ih-tid TEST BAN TREE-tee"
         },
         {
           "term": "Outer Space Treaty",
           "def": "The 1967 international treaty forbidding states from placing nuclear weapons or weapons of mass destruction in Earth orbit, on the Moon, or in outer space.",
-          "definition": "The 1967 international treaty forbidding states from placing nuclear weapons or weapons of mass destruction in Earth orbit, on the Moon, or in outer space."
+          "definition": "The 1967 international treaty forbidding states from placing nuclear weapons or weapons of mass destruction in Earth orbit, on the Moon, or in outer space.",
+          "phonetic": "OW-tuh SPAYS TREE-tee",
+          "pronunciation": "OW-tuh SPAYS TREE-tee"
         },
         {
           "term": "Nuclear Non-Proliferation Treaty",
           "def": "The 1968 treaty (NPT) committing nuclear-armed states not to share nuclear weapons technology with non-nuclear countries.",
-          "definition": "The 1968 treaty (NPT) committing nuclear-armed states not to share nuclear weapons technology with non-nuclear countries."
+          "definition": "The 1968 treaty (NPT) committing nuclear-armed states not to share nuclear weapons technology with non-nuclear countries.",
+          "phonetic": "NYOO-klee-uh non-pruh-lif-uh-RAY-shun TREE-tee",
+          "pronunciation": "NYOO-klee-uh non-pruh-lif-uh-RAY-shun TREE-tee"
         }
       ],
       "flashcards": [
@@ -8883,42 +9443,58 @@ export default {
         {
           "term": "Antonín Novotný",
           "def": "Hardline Stalinist leader of Czechoslovakia (1957–68) whose StB repression and economic stagnation sparked opposition.",
-          "definition": "The hardline Stalinist First Secretary of Czechoslovakia (1957–68) whose refusal of de-Stalinisation, StB censorship, and 1960s economic decline provoked widespread opposition."
+          "definition": "The hardline Stalinist First Secretary of Czechoslovakia (1957–68) whose refusal of de-Stalinisation, StB censorship, and 1960s economic decline provoked widespread opposition.",
+          "phonetic": "AN-toh-neen NOH-vot-nee",
+          "pronunciation": "AN-toh-neen NOH-vot-nee"
         },
         {
           "term": "StB",
           "def": "The feared Czechoslovak Communist state security police used to censor writers and arrest dissidents.",
-          "definition": "Státní bezpečnost — the Czechoslovak Communist secret police used under Novotný (and later Husák) to enforce censorship, surveillance, and political repression."
+          "definition": "Státní bezpečnost — the Czechoslovak Communist secret police used under Novotný (and later Husák) to enforce censorship, surveillance, and political repression.",
+          "phonetic": "ess-teh-BEH",
+          "pronunciation": "ess-teh-BEH"
         },
         {
           "term": "Alexander Dubček",
           "def": "Reformist Slovak Communist appointed First Secretary in January 1968 who launched the Prague Spring.",
-          "definition": "The reformist Slovak Communist appointed First Secretary in January 1968 who introduced the Prague Spring reforms while pledging loyalty to the Warsaw Pact."
+          "definition": "The reformist Slovak Communist appointed First Secretary in January 1968 who introduced the Prague Spring reforms while pledging loyalty to the Warsaw Pact.",
+          "phonetic": "al-ig-ZAHN-duh DOOB-chek",
+          "pronunciation": "al-ig-ZAHN-duh DOOB-chek"
         },
         {
           "term": "Prague Spring",
           "def": "The 1968 period of sweeping political and economic liberalisation in Czechoslovakia under Dubček.",
-          "definition": "The brief period of political, cultural, and economic liberalisation in Czechoslovakia between January and August 1968 under Alexander Dubček."
+          "definition": "The brief period of political, cultural, and economic liberalisation in Czechoslovakia between January and August 1968 under Alexander Dubček.",
+          "phonetic": "PRAHG SPRING",
+          "pronunciation": "PRAHG SPRING"
         },
         {
           "term": "Action Programme",
           "def": "Dubček’s April 1968 reform manifesto abolishing censorship and introducing market decentralisation.",
-          "definition": "The April 1968 Czechoslovak Communist Party manifesto launching \"Socialism with a human face\" by ending press censorship, allowing Western travel, and decentralising the economy."
+          "definition": "The April 1968 Czechoslovak Communist Party manifesto launching \"Socialism with a human face\" by ending press censorship, allowing Western travel, and decentralising the economy.",
+          "phonetic": "AK-shun PROH-gram",
+          "pronunciation": "AK-shun PROH-gram"
         },
         {
           "term": "Socialism with a human face",
           "def": "Dubček’s slogan for combining Communist Party socialism with free speech, civil rights, and consumer choice.",
-          "definition": "The guiding slogan of Dubček’s 1968 reforms aiming to make socialism genuinely popular by combining state socialism with civil liberties and uncensored debate."
+          "definition": "The guiding slogan of Dubček’s 1968 reforms aiming to make socialism genuinely popular by combining state socialism with civil liberties and uncensored debate.",
+          "phonetic": "SOH-shuh-liz-um with uh HYOO-mun FAYS",
+          "pronunciation": "SOH-shuh-liz-um with uh HYOO-mun FAYS"
         },
         {
           "term": "Two Thousand Words",
           "def": "Ludvík Vaculík’s June 1968 uncensored manifesto urging grassroots pressure against Communist hardliners.",
-          "definition": "The radical June 1968 manifesto written by Ludvík Vaculík urging citizens to use strikes and protests to remove corrupt officials, deeply alarming Moscow."
+          "definition": "The radical June 1968 manifesto written by Ludvík Vaculík urging citizens to use strikes and protests to remove corrupt officials, deeply alarming Moscow.",
+          "phonetic": "TOO THOW-zund WURDZ",
+          "pronunciation": "TOO THOW-zund WURDZ"
         },
         {
           "term": "Warsaw Letter",
           "def": "Joint 15 July 1968 warning from five Eastern Bloc leaders declaring Czech reforms threatened all socialist states.",
-          "definition": "The 15 July 1968 ultimatum signed by the USSR, East Germany, Poland, Hungary, and Bulgaria warning Prague that its reforms endangered the entire Communist bloc."
+          "definition": "The 15 July 1968 ultimatum signed by the USSR, East Germany, Poland, Hungary, and Bulgaria warning Prague that its reforms endangered the entire Communist bloc.",
+          "phonetic": "WAW-saw LET-uh",
+          "pronunciation": "WAW-saw LET-uh"
         }
       ],
       "vocab_cloze_text": "After years of economic decline and [StB] secret-police repression under hardliner Antonín Novotný, new First Secretary [Alexander Dubček] launched the 1968 [Prague Spring]. Although his April [Action Programme] promised popular \"Socialism with a human face\" while staying loyal to the Warsaw Pact, Vaculík’s radical [Two Thousand Words] manifesto alarmed Brezhnev and prompted five Eastern Bloc states to issue the stern July [Warsaw Letter].",
@@ -9892,6 +10468,84 @@ export default {
                 "hinge": "Why did the Vietnam War and nuclear deterrence prevent the United States from going beyond verbal protest in August 1968?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Invasion Anatomy",
+            "title": "20–21 August 1968: How 500,000 Warsaw Pact Troops Seized Czechoslovakia",
+            "default_index": 0,
+            "caption": "Click each stage to trace the Soviet Politburo’s 17 August decision, the overnight four-nation invasion, and Moscow’s fabricated ‘fraternal assistance’ claim.",
+            "items": [
+              {
+                "tab_label": "1. 17 Aug Vote",
+                "title": "Failed Summits & The Politburo Invasion Vote",
+                "dates": "July – 17 August 1968 • Moscow",
+                "badge": "Intervention Ordered",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Prior Summits",
+                    "value": "Čierna nad Tisou & Bratislava"
+                  },
+                  {
+                    "label": "Dubček’s Stance",
+                    "value": "Refused Press Censorship"
+                  },
+                  {
+                    "label": "17 Aug 1968",
+                    "value": "Soviet Politburo Voted to Invade"
+                  }
+                ],
+                "takeaway": "Convinced after the Čierna nad Tisou and Bratislava summits that Alexander Dubček would never reimpose censorship or silence anti-Soviet newspapers, the Soviet Politburo voted on 17 August for armed intervention."
+              },
+              {
+                "tab_label": "2. 20–21 Aug Blitz",
+                "title": "500,000 Troops & Seizure of Ruzyňe Airport",
+                "dates": "Night of 20–21 August 1968 • Prague",
+                "badge": "500,000 Troops",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Invasion Force",
+                    "value": "~500,000 Warsaw Pact Soldiers"
+                  },
+                  {
+                    "label": "Four Invaders",
+                    "value": "USSR, Poland, Hungary & Bulgaria"
+                  },
+                  {
+                    "label": "Key Capture",
+                    "value": "Paratroopers Seized Ruzyňe Airport"
+                  }
+                ],
+                "takeaway": "Late on 20–21 August 1968, tanks painted with white invasion stripes rumbled into Prague while Soviet paratroopers seized Ruzyňe Airport after a transport plane requested an emergency landing."
+              },
+              {
+                "tab_label": "3. Pretext & Restraint",
+                "title": "Moscow’s Unsigned Appeal & Svoboda’s Barracks Order",
+                "dates": "21 August 1968 • Prague",
+                "badge": "Army Held in Barracks",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Moscow’s Claim",
+                    "value": "Requested ‘Fraternal Assistance’"
+                  },
+                  {
+                    "label": "True Reality",
+                    "value": "No Senior Prague Leader Signed"
+                  },
+                  {
+                    "label": "Pres. Svoboda",
+                    "value": "Ordered Czech Army to Barracks"
+                  }
+                ],
+                "takeaway": "Although Moscow’s state news agency claimed Czechoslovak Communists had requested ‘fraternal assistance’, no senior leader had signed it, and President Ludvík Svoboda kept the army in barracks to prevent bloodshed."
+              }
+            ]
           }
         },
         {
@@ -10270,37 +10924,51 @@ export default {
         {
           "term": "Passive Resistance",
           "def": "Non-violent civilian defiance in August 1968—removing street signs, secret radios, and peaceful protests.",
-          "definition": "The non-violent defiance ordered by Dubček in August 1968—including removing road signs, clandestine radio broadcasts, and peaceful street protests—keeping deaths below 100."
+          "definition": "The non-violent defiance ordered by Dubček in August 1968—including removing road signs, clandestine radio broadcasts, and peaceful street protests—keeping deaths below 100.",
+          "phonetic": "PAS-iv rih-ZIS-tuns",
+          "pronunciation": "PAS-iv rih-ZIS-tuns"
         },
         {
           "term": "Jan Palach",
           "def": "Prague university student who set himself alight in Wenceslas Square in January 1969 protesting censorship.",
-          "definition": "The 20-year-old Prague university student who set himself alight in Wenceslas Square on 16 January 1969 to protest Soviet occupation and public resignation."
+          "definition": "The 20-year-old Prague university student who set himself alight in Wenceslas Square on 16 January 1969 to protest Soviet occupation and public resignation.",
+          "phonetic": "YAHN PAL-akh",
+          "pronunciation": "YAHN PAL-akh"
         },
         {
           "term": "Moscow Protocol",
           "def": "The 26 August 1968 agreement Dubček was forced to sign in Moscow restoring censorship and Soviet garrisons.",
-          "definition": "The coerced 26 August 1968 agreement signed by arrested Czechoslovak leaders in Moscow reinstating censorship, banning opposition clubs, and stationing Red Army troops."
+          "definition": "The coerced 26 August 1968 agreement signed by arrested Czechoslovak leaders in Moscow reinstating censorship, banning opposition clubs, and stationing Red Army troops.",
+          "phonetic": "MOS-koh PROH-tuh-kol",
+          "pronunciation": "MOS-koh PROH-tuh-kol"
         },
         {
           "term": "Gustáv Husák",
           "def": "Hardline pro-Soviet leader installed in April 1969 to replace Dubček and enforce \"normalisation\".",
-          "definition": "The loyal pro-Soviet hardliner who replaced Alexander Dubček as Czechoslovak Party leader in April 1969 and ruled for twenty years."
+          "definition": "The loyal pro-Soviet hardliner who replaced Alexander Dubček as Czechoslovak Party leader in April 1969 and ruled for twenty years.",
+          "phonetic": "GUUS-tahv HUU-sahk",
+          "pronunciation": "GUUS-tahv HUU-sahk"
         },
         {
           "term": "Normalisation",
           "def": "Husák’s post-1969 purge of ~500,000 reformists and restoration of strict one-party StB control.",
-          "definition": "Gustáv Husák’s policy from 1969 onwards reversing all Prague Spring reforms, purging nearly 500,000 Party members, and restoring StB censorship."
+          "definition": "Gustáv Husák’s policy from 1969 onwards reversing all Prague Spring reforms, purging nearly 500,000 Party members, and restoring StB censorship.",
+          "phonetic": "naw-muh-ly-ZAY-shun",
+          "pronunciation": "naw-muh-ly-ZAY-shun"
         },
         {
           "term": "Brezhnev Doctrine",
           "def": "1968 Soviet policy claiming the right to intervene militarily in any Warsaw Pact state where communism was threatened.",
-          "definition": "Leonid Brezhnev’s autumn 1968 doctrine declaring Warsaw Pact states had a collective right and duty to intervene militarily wherever one-party Communist rule was threatened."
+          "definition": "Leonid Brezhnev’s autumn 1968 doctrine declaring Warsaw Pact states had a collective right and duty to intervene militarily wherever one-party Communist rule was threatened.",
+          "phonetic": "BREZH-nev DOK-trin",
+          "pronunciation": "BREZH-nev DOK-trin"
         },
         {
           "term": "Eurocommunism",
           "def": "Independent democratic communism adopted by French and Italian Communist Parties after condemning the 1968 invasion.",
-          "definition": "The movement led by Western European Communist Parties (notably in Italy and France) rejecting Soviet control in favour of independent multi-party democracy after Prague 1968."
+          "definition": "The movement led by Western European Communist Parties (notably in Italy and France) rejecting Soviet control in favour of independent multi-party democracy after Prague 1968.",
+          "phonetic": "yoor-oh-KOM-yoo-niz-um",
+          "pronunciation": "yoor-oh-KOM-yoo-niz-um"
         }
       ],
       "vocab_cloze_text": "When 500,000 Warsaw Pact troops invaded in August 1968, Dubček urged peaceful [Passive Resistance] to prevent a bloodbath. Arrested and forced to sign the [Moscow Protocol], Dubček was replaced in April 1969 by [Gustáv Husák], whose twenty-year policy of [Normalisation] purged half a million reformers. While the [Brezhnev Doctrine] locked Eastern Europe under one-party rule, Western European parties broke from Moscow toward [Eurocommunism].",
@@ -11268,6 +11936,102 @@ export default {
                 "hinge": "Why did Basket 1 initially look like a triumph for Brezhnev, yet Basket 3 prove a long-term political trap for Communist regimes?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "Interactive Détente Drivers",
+            "title": "Why Both Superpowers Wanted Détente (1970–1972): US Pressures ↔ Shared MAD Fear ↔ Soviet Needs",
+            "default_index": 1,
+            "caption": "Slide or click across the three sets of pressures to compare why Washington and Moscow both sought a relaxation of Cold War tension in the early 1970s.",
+            "stops": [
+              {
+                "short_label": "1. US Pressures (Vietnam)",
+                "label": "1. American Pressures: Vietnam Drain, Inflation & Protest (Early 1970s)",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.2)",
+                "summary": "Under President Richard Nixon and adviser Henry Kissinger, the USA was drained by the Vietnam War—costing over $150 billion, killing 58,000 Americans, fuelling inflation, and sparking fierce protests.",
+                "traits": [
+                  {
+                    "category": "US Policymakers",
+                    "glyph": "leader",
+                    "value": "Richard Nixon & Henry Kissinger"
+                  },
+                  {
+                    "category": "Financial Drain",
+                    "glyph": "law",
+                    "value": "Over $150bn Vietnam War Cost"
+                  },
+                  {
+                    "category": "Human Toll",
+                    "glyph": "people",
+                    "value": "58,000 Americans Killed"
+                  },
+                  {
+                    "category": "Home Front",
+                    "glyph": "language",
+                    "value": "Rising Inflation & Anti-War Protests"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Shared Nuclear & Cost Fear",
+                "label": "2. Mutual Incentive: Avoiding MAD & Curbing Arms Spending (Post-1962)",
+                "color": "#059669",
+                "bg_color": "rgba(5, 150, 105, 0.2)",
+                "summary": "Ever since the 1962 Cuban Missile Crisis, both superpowers feared Mutually Assured Destruction (MAD) and having reached rough nuclear parity, both wanted to curb ruinous arms spending.",
+                "traits": [
+                  {
+                    "category": "1962 Lesson",
+                    "glyph": "leader",
+                    "value": "Cuban Missile Crisis Near-Miss"
+                  },
+                  {
+                    "category": "Nuclear Reality",
+                    "glyph": "law",
+                    "value": "Mutually Assured Destruction (MAD)"
+                  },
+                  {
+                    "category": "Strategic Balance",
+                    "glyph": "people",
+                    "value": "Rough US–Soviet Nuclear Parity"
+                  },
+                  {
+                    "category": "Budget Goal",
+                    "glyph": "language",
+                    "value": "Curb Ruinous Arms Spending"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Soviet Pressures (Grain & China)",
+                "label": "3. Soviet Pressures: Stagnant Living Standards & The China Split (1970–72)",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "summary": "Leonid Brezhnev needed Western grain imports and industrial technology for stagnant Soviet living standards, while fearing isolation after the Sino-Soviet split and Nixon’s February 1972 visit to China.",
+                "traits": [
+                  {
+                    "category": "Soviet Leader",
+                    "glyph": "leader",
+                    "value": "Leonid Brezhnev"
+                  },
+                  {
+                    "category": "Economic Need",
+                    "glyph": "clothes",
+                    "value": "Western Grain & Modern Technology"
+                  },
+                  {
+                    "category": "Border Rivalry",
+                    "glyph": "people",
+                    "value": "Bitter Sino-Soviet Split"
+                  },
+                  {
+                    "category": "February 1972",
+                    "glyph": "language",
+                    "value": "Nixon Visited Communist China"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -11649,42 +12413,58 @@ export default {
         {
           "term": "Détente",
           "def": "The 1970s period of relaxed superpower tension managed through summit diplomacy, arms limits, and trade.",
-          "definition": "The 1970s period of relaxed superpower tension managed through summit diplomacy, arms limits, and trade."
+          "definition": "The 1970s period of relaxed superpower tension managed through summit diplomacy, arms limits, and trade.",
+          "phonetic": "day-TONT",
+          "pronunciation": "day-TONT"
         },
         {
           "term": "Mutually Assured Destruction (MAD)",
           "def": "Nuclear deterrence logic holding that a first strike by either superpower would trigger total mutual annihilation.",
-          "definition": "Nuclear deterrence logic holding that a first strike by either superpower would trigger total mutual annihilation."
+          "definition": "Nuclear deterrence logic holding that a first strike by either superpower would trigger total mutual annihilation.",
+          "phonetic": "MYOO-choo-uh-lee uh-SHOORD dih-STRUK-shun (MAD)",
+          "pronunciation": "MYOO-choo-uh-lee uh-SHOORD dih-STRUK-shun (MAD)"
         },
         {
           "term": "SALT 1",
           "def": "May 1972 Moscow accords comprising the ABM Treaty, five-year Interim Agreement on ICBMs/SLBMs, and Basic Principles.",
-          "definition": "May 1972 Moscow accords comprising the ABM Treaty, five-year Interim Agreement on ICBMs/SLBMs, and Basic Principles."
+          "definition": "May 1972 Moscow accords comprising the ABM Treaty, five-year Interim Agreement on ICBMs/SLBMs, and Basic Principles.",
+          "phonetic": "SAWLT WUN",
+          "pronunciation": "SAWLT WUN"
         },
         {
           "term": "Anti-Ballistic Missile (ABM) Treaty",
           "def": "1972 treaty restricting the USA and USSR to two defensive anti-missile sites each so nuclear deterrence remained intact.",
-          "definition": "1972 treaty restricting the USA and USSR to two defensive anti-missile sites each so nuclear deterrence remained intact."
+          "definition": "1972 treaty restricting the USA and USSR to two defensive anti-missile sites each so nuclear deterrence remained intact.",
+          "phonetic": "an-tee-buh-LIS-tik MIS-yle (ay-bee-EM) TREE-tee",
+          "pronunciation": "an-tee-buh-LIS-tik MIS-yle (ay-bee-EM) TREE-tee"
         },
         {
           "term": "MIRV",
           "def": "Multiple Independently Targetable Re-entry Vehicle—a single missile carrying several nuclear warheads aimed at separate targets.",
-          "definition": "Multiple Independently Targetable Re-entry Vehicle—a single missile carrying several nuclear warheads aimed at separate targets."
+          "definition": "Multiple Independently Targetable Re-entry Vehicle—a single missile carrying several nuclear warheads aimed at separate targets.",
+          "phonetic": "MURV",
+          "pronunciation": "MURV"
         },
         {
           "term": "Apollo–Soyuz Mission",
           "def": "July 1975 joint US–Soviet spaceflight in which astronauts and cosmonauts docked in orbit and shook hands.",
-          "definition": "July 1975 joint US–Soviet spaceflight in which astronauts and cosmonauts docked in orbit and shook hands."
+          "definition": "July 1975 joint US–Soviet spaceflight in which astronauts and cosmonauts docked in orbit and shook hands.",
+          "phonetic": "uh-POL-oh SOY-yuuz MISH-un",
+          "pronunciation": "uh-POL-oh SOY-yuuz MISH-un"
         },
         {
           "term": "Helsinki Accords",
           "def": "August 1975 agreement signed by 35 nations across three Baskets covering European borders, cooperation, and human rights.",
-          "definition": "August 1975 agreement signed by 35 nations across three Baskets covering European borders, cooperation, and human rights."
+          "definition": "August 1975 agreement signed by 35 nations across three Baskets covering European borders, cooperation, and human rights.",
+          "phonetic": "hel-SIN-kee uh-KAWRDZ",
+          "pronunciation": "hel-SIN-kee uh-KAWRDZ"
         },
         {
           "term": "SALT 2",
           "def": "June 1979 Vienna treaty capping strategic nuclear launchers at 2,400 and limiting MIRVs, withdrawn by Carter after Afghanistan.",
-          "definition": "June 1979 Vienna treaty capping strategic nuclear launchers at 2,400 and limiting MIRVs, withdrawn by Carter after Afghanistan."
+          "definition": "June 1979 Vienna treaty capping strategic nuclear launchers at 2,400 and limiting MIRVs, withdrawn by Carter after Afghanistan.",
+          "phonetic": "SAWLT TOO",
+          "pronunciation": "SAWLT TOO"
         }
       ],
       "flashcards": [
@@ -12646,6 +13426,107 @@ export default {
                 "hinge": "Why did the Soviet invasion of Afghanistan immediately kill 1970s Détente and trigger the 1980 and 1984 Olympic boycotts?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "Interactive Causal Chain",
+            "title": "April 1978 – December 1979: Why Brezhnev Invaded Afghanistan",
+            "default_index": 0,
+            "caption": "Click each stage from the April 1978 Saur Revolution to the December 1979 Kabul assault to see why Brezhnev intervened—and trapped the USSR in a ten-year war.",
+            "items": [
+              {
+                "tab_label": "1. Saur Rev (Apr 1978)",
+                "title": "PDPA Takeover & Mujahideen Rebellion",
+                "dates": "April 1978 • Afghanistan",
+                "badge": "Civil War Ignited",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Communist Party",
+                    "value": "Pro-Soviet PDPA (Taraki)"
+                  },
+                  {
+                    "label": "PDPA Policies",
+                    "value": "Radical Land & Secular Reforms"
+                  },
+                  {
+                    "label": "Armed Backlash",
+                    "value": "Islamic Mujahideen Guerrillas"
+                  }
+                ],
+                "takeaway": "After the April 1978 Saur Revolution brought Nur Muhammad Taraki’s pro-Soviet PDPA to power, radical land and secular reforms provoked fierce armed rebellion from Islamic Mujahideen guerrillas."
+              },
+              {
+                "tab_label": "2. Amin Coup (Sept 1979)",
+                "title": "Hafizullah Amin Murders Taraki & Seizes Power",
+                "dates": "September 1979 • Kabul",
+                "badge": "Taraki Murdered",
+                "color": "#7c3aed",
+                "bg_color": "rgba(124, 58, 237, 0.2)",
+                "metrics": [
+                  {
+                    "label": "New Ruler",
+                    "value": "PM Hafizullah Amin"
+                  },
+                  {
+                    "label": "Sept 1979 Coup",
+                    "value": "Overthrew & Murdered Taraki"
+                  },
+                  {
+                    "label": "Kremlin Doubt",
+                    "value": "Suspected Secret US Contacts"
+                  }
+                ],
+                "takeaway": "In September 1979, Prime Minister Hafizullah Amin seized power and had Taraki murdered, while Moscow suspected the unpredictable Amin of secretly contacting the USA."
+              },
+              {
+                "tab_label": "3. Brezhnev’s Fears",
+                "title": "Iranian Spillover Fear & The Brezhnev Doctrine",
+                "dates": "1979 • Soviet Central Asia",
+                "badge": "30m Soviet Muslims",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.22)",
+                "metrics": [
+                  {
+                    "label": "Regional Shock",
+                    "value": "1979 Iranian Revolution Next Door"
+                  },
+                  {
+                    "label": "Border Worry",
+                    "value": "30m Muslims in Soviet Central Asia"
+                  },
+                  {
+                    "label": "Justification",
+                    "value": "Invoked Brezhnev Doctrine"
+                  }
+                ],
+                "takeaway": "Watching the 1979 Iranian Revolution next door, Leonid Brezhnev feared Islamic fundamentalism spreading into 30 million Soviet Central Asian Muslims and invoked the Brezhnev Doctrine."
+              },
+              {
+                "tab_label": "4. Dec 1979 Invasion",
+                "title": "Soviet Forces Storm Kabul & Install Babrak Karmal",
+                "dates": "24–27 December 1979 • Kabul",
+                "badge": "10-Year Quagmire",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Assault Force",
+                    "value": "Soviet Airborne & Armoured Columns"
+                  },
+                  {
+                    "label": "Regime Change",
+                    "value": "Amin Killed; Babrak Karmal Installed"
+                  },
+                  {
+                    "label": "Long-Term Cost",
+                    "value": "Trapped in 10-Year Guerrilla War"
+                  }
+                ],
+                "takeaway": "Between 24 and 27 December 1979, Soviet airborne and armoured forces stormed Kabul’s presidential palace, killed Amin, and installed Moscow-backed Babrak Karmal—starting a costly ten-year war."
+              }
+            ]
           }
         },
         {
@@ -13027,42 +13908,58 @@ export default {
         {
           "term": "Mujahideen",
           "def": "Islamic guerrilla fighters in Afghanistan who waged holy war against the pro-Soviet PDPA regime and occupying Red Army (1979–89), backed by US Operation Cyclone.",
-          "definition": "Islamic guerrilla fighters in Afghanistan who waged holy war against the pro-Soviet PDPA regime and occupying Red Army (1979–89), backed by US Operation Cyclone."
+          "definition": "Islamic guerrilla fighters in Afghanistan who waged holy war against the pro-Soviet PDPA regime and occupying Red Army (1979–89), backed by US Operation Cyclone.",
+          "phonetic": "moo-jah-hih-DEEN",
+          "pronunciation": "moo-jah-hih-DEEN"
         },
         {
           "term": "Carter Doctrine",
           "def": "January 1980 pledge by President Jimmy Carter that the USA would use military force if necessary to defend the oil-rich Persian Gulf against outside aggression.",
-          "definition": "January 1980 pledge by President Jimmy Carter that the USA would use military force if necessary to defend the oil-rich Persian Gulf against outside aggression."
+          "definition": "January 1980 pledge by President Jimmy Carter that the USA would use military force if necessary to defend the oil-rich Persian Gulf against outside aggression.",
+          "phonetic": "KAH-tuh DOK-trin",
+          "pronunciation": "KAH-tuh DOK-trin"
         },
         {
           "term": "Operation Cyclone",
           "def": "Covert CIA programme launched under Carter and expanded under Reagan to channel money and weapons (including Stinger missiles) via Pakistan to Afghan Mujahideen.",
-          "definition": "Covert CIA programme launched under Carter and expanded under Reagan to channel money and weapons (including Stinger missiles) via Pakistan to Afghan Mujahideen."
+          "definition": "Covert CIA programme launched under Carter and expanded under Reagan to channel money and weapons (including Stinger missiles) via Pakistan to Afghan Mujahideen.",
+          "phonetic": "op-uh-RAY-shun SY-klohn",
+          "pronunciation": "op-uh-RAY-shun SY-klohn"
         },
         {
           "term": "Olympic Boycotts",
           "def": "Tit-for-tat Cold War sporting protests in which 60+ US-led nations boycotted the 1980 Moscow Olympics and 14 Soviet-led Eastern Bloc states boycotted 1984 Los Angeles.",
-          "definition": "Tit-for-tat Cold War sporting protests in which 60+ US-led nations boycotted the 1980 Moscow Olympics and 14 Soviet-led Eastern Bloc states boycotted 1984 Los Angeles."
+          "definition": "Tit-for-tat Cold War sporting protests in which 60+ US-led nations boycotted the 1980 Moscow Olympics and 14 Soviet-led Eastern Bloc states boycotted 1984 Los Angeles.",
+          "phonetic": "uh-LIM-pik BOY-kots",
+          "pronunciation": "uh-LIM-pik BOY-kots"
         },
         {
           "term": "Second Cold War",
           "def": "Period of renewed superpower confrontation (1979–85) marked by the Afghan war, collapsed arms control, massive US defence spending, and fierce ideological rhetoric.",
-          "definition": "Period of renewed superpower confrontation (1979–85) marked by the Afghan war, collapsed arms control, massive US defence spending, and fierce ideological rhetoric."
+          "definition": "Period of renewed superpower confrontation (1979–85) marked by the Afghan war, collapsed arms control, massive US defence spending, and fierce ideological rhetoric.",
+          "phonetic": "SEK-und KOHLD WAWR",
+          "pronunciation": "SEK-und KOHLD WAWR"
         },
         {
           "term": "Evil Empire Speech",
           "def": "Ronald Reagan’s 8 March 1983 address calling the USSR an \"evil empire\", rejecting Détente’s moral equivalence in favour of ideological confrontation.",
-          "definition": "Ronald Reagan’s 8 March 1983 address calling the USSR an \"evil empire\", rejecting Détente’s moral equivalence in favour of ideological confrontation."
+          "definition": "Ronald Reagan’s 8 March 1983 address calling the USSR an \"evil empire\", rejecting Détente’s moral equivalence in favour of ideological confrontation.",
+          "phonetic": "EE-vul EM-py-uh SPEECH",
+          "pronunciation": "EE-vul EM-py-uh SPEECH"
         },
         {
           "term": "Reagan Doctrine",
           "def": "US policy of providing overt and covert military aid to anti-communist insurgents in Afghanistan, Nicaragua, and Angola to roll back Soviet influence.",
-          "definition": "US policy of providing overt and covert military aid to anti-communist insurgents in Afghanistan, Nicaragua, and Angola to roll back Soviet influence."
+          "definition": "US policy of providing overt and covert military aid to anti-communist insurgents in Afghanistan, Nicaragua, and Angola to roll back Soviet influence.",
+          "phonetic": "RAY-gun DOK-trin",
+          "pronunciation": "RAY-gun DOK-trin"
         },
         {
           "term": "Strategic Defence Initiative (SDI)",
           "def": "Reagan’s 23 March 1983 \"Star Wars\" programme proposing orbiting laser satellites to destroy Soviet ICBMs in space, threatening MAD and straining the Soviet economy.",
-          "definition": "Reagan’s 23 March 1983 \"Star Wars\" programme proposing orbiting laser satellites to destroy Soviet ICBMs in space, threatening MAD and straining the Soviet economy."
+          "definition": "Reagan’s 23 March 1983 \"Star Wars\" programme proposing orbiting laser satellites to destroy Soviet ICBMs in space, threatening MAD and straining the Soviet economy.",
+          "phonetic": "struh-TEE-jik dih-FENS ih-NISH-uh-tiv (ess-dee-EYE)",
+          "pronunciation": "struh-TEE-jik dih-FENS ih-NISH-uh-tiv (ess-dee-EYE)"
         }
       ],
       "flashcards": [
@@ -14431,37 +15328,51 @@ export default {
         {
           "term": "New Thinking",
           "def": "Gorbachev’s overarching 1985–89 reform programme combining domestic restructuring with nuclear disarmament and ending Cold War confrontation.",
-          "definition": "Gorbachev’s overarching 1985–89 reform programme combining domestic restructuring with nuclear disarmament and ending Cold War confrontation."
+          "definition": "Gorbachev’s overarching 1985–89 reform programme combining domestic restructuring with nuclear disarmament and ending Cold War confrontation.",
+          "phonetic": "NYOO THING-king",
+          "pronunciation": "NYOO THING-king"
         },
         {
           "term": "Perestroika",
           "def": "Economic \"restructuring\" in the USSR from 1985–87 introducing decentralised planning, limited private cooperatives, and military budget cuts.",
-          "definition": "Economic \"restructuring\" in the USSR from 1985–87 introducing decentralised planning, limited private cooperatives, and military budget cuts."
+          "definition": "Economic \"restructuring\" in the USSR from 1985–87 introducing decentralised planning, limited private cooperatives, and military budget cuts.",
+          "phonetic": "peh-ruh-STROY-kuh",
+          "pronunciation": "peh-ruh-STROY-kuh"
         },
         {
           "term": "Glasnost",
           "def": "Political \"openness\" relaxing Soviet state censorship, releasing dissidents such as Andrei Sakharov, and permitting open criticism and contested elections.",
-          "definition": "Political \"openness\" relaxing Soviet state censorship, releasing dissidents such as Andrei Sakharov, and permitting open criticism and contested elections."
+          "definition": "Political \"openness\" relaxing Soviet state censorship, releasing dissidents such as Andrei Sakharov, and permitting open criticism and contested elections.",
+          "phonetic": "GLAZ-nost",
+          "pronunciation": "GLAZ-nost"
         },
         {
           "term": "Chernobyl",
           "def": "The April 1986 Soviet nuclear power-plant explosion in Ukraine that exposed technological stagnation, costly clean-up bills, and Communist secrecy.",
-          "definition": "The April 1986 Soviet nuclear power-plant explosion in Ukraine that exposed technological stagnation, costly clean-up bills, and Communist secrecy."
+          "definition": "The April 1986 Soviet nuclear power-plant explosion in Ukraine that exposed technological stagnation, costly clean-up bills, and Communist secrecy.",
+          "phonetic": "chuh-NOH-bil",
+          "pronunciation": "chuh-NOH-bil"
         },
         {
           "term": "Reykjavik Summit",
           "def": "The October 1986 Iceland summit where Reagan and Gorbachev nearly abolished ballistic missiles before talks broke down over Reagan’s refusal to scrap SDI.",
-          "definition": "The October 1986 Iceland summit where Reagan and Gorbachev nearly abolished ballistic missiles before talks broke down over Reagan’s refusal to scrap SDI."
+          "definition": "The October 1986 Iceland summit where Reagan and Gorbachev nearly abolished ballistic missiles before talks broke down over Reagan’s refusal to scrap SDI.",
+          "phonetic": "RAYK-yuh-vik SUM-it",
+          "pronunciation": "RAYK-yuh-vik SUM-it"
         },
         {
           "term": "INF Treaty",
           "def": "The December 1987 Intermediate-Range Nuclear Forces Treaty eliminating all US and Soviet land-based missiles of 500–5,500 km range with on-site inspections.",
-          "definition": "The December 1987 Intermediate-Range Nuclear Forces Treaty eliminating all US and Soviet land-based missiles of 500–5,500 km range with on-site inspections."
+          "definition": "The December 1987 Intermediate-Range Nuclear Forces Treaty eliminating all US and Soviet land-based missiles of 500–5,500 km range with on-site inspections.",
+          "phonetic": "eye-en-EF TREE-tee",
+          "pronunciation": "eye-en-EF TREE-tee"
         },
         {
           "term": "Malta Summit",
           "def": "The December 1989 summit off the coast of Malta where Mikhail Gorbachev and US President George H. W. Bush formally declared the Cold War over.",
-          "definition": "The December 1989 summit off the coast of Malta where Mikhail Gorbachev and US President George H. W. Bush formally declared the Cold War over."
+          "definition": "The December 1989 summit off the coast of Malta where Mikhail Gorbachev and US President George H. W. Bush formally declared the Cold War over.",
+          "phonetic": "MAWL-tuh SUM-it",
+          "pronunciation": "MAWL-tuh SUM-it"
         }
       ],
       "flashcards": [
@@ -15473,6 +16384,93 @@ export default {
                 "hinge": "Why did the failed hardline Communist coup of August 1991 accelerate the exact breakup of the USSR its plotters hoped to prevent?"
               }
             ]
+          },
+          "concept_widget": {
+            "type": "power_seesaw",
+            "eyebrow": "Interactive Bloc Collapse",
+            "title": "Unravelling the Soviet Bloc (Nov 1989 – 1 July 1991): Revolutions, Reunification & End of the Warsaw Pact",
+            "default_index": 2,
+            "caption": "Click each turning point after the opening of the Berlin Wall to watch Communist rule collapse across Eastern Europe, Germany reunite inside NATO, and the Warsaw Pact dissolve.",
+            "eras": [
+              {
+                "year": "Nov–Dec 1989",
+                "headline": "Domino Collapse Across Czechoslovakia, Bulgaria & Romania",
+                "color": "#f59e0b",
+                "summary": "Czechoslovakia’s peaceful Velvet Revolution made playwright Václav Havel president, Bulgaria ousted Todor Zhivkov, and Romania’s violent December uprising overthrew and executed Nicolae Ceaușescu.",
+                "pillars": [
+                  {
+                    "actor": "Democratic & Reform Governments",
+                    "share": 65,
+                    "status": "Havel Elected; Zhivkov & Ceaușescu Ousted",
+                    "color": "#10b981"
+                  },
+                  {
+                    "actor": "NATO Western Alliance",
+                    "share": 20,
+                    "status": "Backs Peaceful Democratic Transition",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Warsaw Pact & Soviet Control",
+                    "share": 15,
+                    "status": "Rapid Domino Collapse in 1989",
+                    "color": "#ef4444"
+                  }
+                ]
+              },
+              {
+                "year": "3 Oct 1990",
+                "headline": "Formal German Reunification Inside NATO",
+                "color": "#38bdf8",
+                "summary": "Backed by Western financial loans, Chancellor Helmut Kohl won Mikhail Gorbachev’s consent for formal German reunification on 3 October 1990, with a united democratic Germany remaining inside NATO.",
+                "pillars": [
+                  {
+                    "actor": "Democratic Eastern Europe",
+                    "share": 45,
+                    "status": "Demand Soviet Garrison Withdrawal",
+                    "color": "#10b981"
+                  },
+                  {
+                    "actor": "NATO (With Reunited Germany)",
+                    "share": 45,
+                    "status": "United Germany Inside NATO (3 Oct 1990)",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Warsaw Pact Military Bloc",
+                    "share": 10,
+                    "status": "Strategic Purpose Evaporating",
+                    "color": "#64748b"
+                  }
+                ]
+              },
+              {
+                "year": "Mar–Jul 1991",
+                "headline": "Warsaw Pact Military Structures & Alliance Dissolved",
+                "color": "#10b981",
+                "summary": "After elected governments in Poland, Hungary, and Czechoslovakia demanded Soviet troop withdrawal, Warsaw Pact military structures dissolved in March 1991 and the alliance formally ended on 1 July 1991.",
+                "pillars": [
+                  {
+                    "actor": "Sovereign Eastern European Democracies",
+                    "share": 55,
+                    "status": "Poland, Hungary & Czechs Exit Bloc",
+                    "color": "#10b981"
+                  },
+                  {
+                    "actor": "NATO Alliance",
+                    "share": 45,
+                    "status": "Surviving Transatlantic Security Pact",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Warsaw Pact (1955–1991)",
+                    "share": 0,
+                    "status": "Formally Ended on 1 July 1991",
+                    "color": "#64748b"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -15821,37 +16819,51 @@ export default {
         {
           "term": "Sinatra Doctrine",
           "def": "Soviet spokesman Gennady Gerasimov’s October 1989 nickname for Gorbachev’s policy allowing Warsaw Pact nations to choose their own political path (\"their way\") without Red Army intervention.",
-          "definition": "Soviet spokesman Gennady Gerasimov’s October 1989 nickname for Gorbachev’s policy allowing Warsaw Pact nations to choose their own political path (\"their way\") without Red Army intervention."
+          "definition": "Soviet spokesman Gennady Gerasimov’s October 1989 nickname for Gorbachev’s policy allowing Warsaw Pact nations to choose their own political path (\"their way\") without Red Army intervention.",
+          "phonetic": "sih-NAH-truh DOK-trin",
+          "pronunciation": "sih-NAH-truh DOK-trin"
         },
         {
           "term": "Solidarity",
           "def": "The independent Polish trade union led by Lech Wałęsa that won Poland’s June 1989 semi-free elections, forming the Eastern Bloc’s first non-communist government since 1948.",
-          "definition": "The independent Polish trade union led by Lech Wałęsa that won Poland’s June 1989 semi-free elections, forming the Eastern Bloc’s first non-communist government since 1948."
+          "definition": "The independent Polish trade union led by Lech Wałęsa that won Poland’s June 1989 semi-free elections, forming the Eastern Bloc’s first non-communist government since 1948.",
+          "phonetic": "sol-ih-DA-rih-tee",
+          "pronunciation": "sol-ih-DA-rih-tee"
         },
         {
           "term": "Velvet Revolution",
           "def": "The peaceful November–December 1989 mass protests in Czechoslovakia that ended Communist rule without bloodshed and made dissident Václav Havel president.",
-          "definition": "The peaceful November–December 1989 mass protests in Czechoslovakia that ended Communist rule without bloodshed and made dissident Václav Havel president."
+          "definition": "The peaceful November–December 1989 mass protests in Czechoslovakia that ended Communist rule without bloodshed and made dissident Václav Havel president.",
+          "phonetic": "VEL-vit rev-uh-LOO-shun",
+          "pronunciation": "VEL-vit rev-uh-LOO-shun"
         },
         {
           "term": "German Reunification",
           "def": "The formal union of East Germany (GDR) and West Germany (FRG) into a single democratic state inside NATO on 3 October 1990.",
-          "definition": "The formal union of East Germany (GDR) and West Germany (FRG) into a single democratic state inside NATO on 3 October 1990."
+          "definition": "The formal union of East Germany (GDR) and West Germany (FRG) into a single democratic state inside NATO on 3 October 1990.",
+          "phonetic": "JUR-mun ree-yoo-nih-fih-KAY-shun",
+          "pronunciation": "JUR-mun ree-yoo-nih-fih-KAY-shun"
         },
         {
           "term": "Gang of Eight",
           "def": "The eight hardline Communist Party, KGB, and military officials who staged the failed 19–21 August 1991 coup against Gorbachev in Moscow.",
-          "definition": "The eight hardline Communist Party, KGB, and military officials who staged the failed 19–21 August 1991 coup against Gorbachev in Moscow."
+          "definition": "The eight hardline Communist Party, KGB, and military officials who staged the failed 19–21 August 1991 coup against Gorbachev in Moscow.",
+          "phonetic": "GANG uv AYT",
+          "pronunciation": "GANG uv AYT"
         },
         {
           "term": "Boris Yeltsin",
           "def": "The democratically elected President of the Russian republic who defied the August 1991 coup from atop a tank, banned the Communist Party in Russia, and co-founded the CIS.",
-          "definition": "The democratically elected President of the Russian republic who defied the August 1991 coup from atop a tank, banned the Communist Party in Russia, and co-founded the CIS."
+          "definition": "The democratically elected President of the Russian republic who defied the August 1991 coup from atop a tank, banned the Communist Party in Russia, and co-founded the CIS.",
+          "phonetic": "BOR-is YELT-sin",
+          "pronunciation": "BOR-is YELT-sin"
         },
         {
           "term": "Commonwealth of Independent States",
           "def": "The loose association (CIS) formed in December 1991 by Russia, Ukraine, Belarus, and eight other former republics that formally replaced the dissolved USSR.",
-          "definition": "The loose association (CIS) formed in December 1991 by Russia, Ukraine, Belarus, and eight other former republics that formally replaced the dissolved USSR."
+          "definition": "The loose association (CIS) formed in December 1991 by Russia, Ukraine, Belarus, and eight other former republics that formally replaced the dissolved USSR.",
+          "phonetic": "KOM-un-welth uv in-dih-PEN-dunt STAYTS",
+          "pronunciation": "KOM-un-welth uv in-dih-PEN-dunt STAYTS"
         }
       ],
       "flashcards": [

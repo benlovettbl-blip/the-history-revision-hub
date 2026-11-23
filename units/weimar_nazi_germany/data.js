@@ -77,6 +77,77 @@ export default {
           "Source C": "The official promulgated text of the Weimar Constitution passed by the National Assembly on 31 July 1919 and signed into law by President Friedrich Ebert on 11 August 1919. Hinge Question: Why did the inclusion of Article 48 in the Weimar Constitution ultimately prove more dangerous to democracy than the proportional representation voting system?",
           "Source D": "On the morning of 9 November 1918, Chancellor Prince Max von Baden unilaterally announced the Kaiser's abdication to prevent a general strike from escalating into a bloody revolution, handing the Chancellorship to SPD leader Friedrich Ebert. Hinge Question: Why did Prince Max von Baden announce the Kaiser's abdication before Wilhelm II had personally signed an official instrument of renunciation?",
           "Source E": "In February 1919, following democratic elections with an 83% turnout, Friedrich Ebert opened the National Assembly in Weimar, seeking to build democratic legitimacy while warning Allied victors at Versailles against crushing terms. Hinge Question: Why did Friedrich Ebert emphasise both lawful democratic order at home and resistance to Allied vengeance abroad in his opening address?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Kiel Mutiny, Abdication & the Ebert-Groener Pact (Stages 1–3) (50 mins)",
+            "focus": "Kiel Mutiny, Abdication & Ebert-Groener Pact (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Baseline Do Now retrieving pre-1918 Imperial rule under Kaiser Wilhelm II, Western Front stalemate, the British naval blockade, and the 1917 Bolshevik Revolution.",
+                "instruction": "Baseline Do Now retrieving pre-1918 Imperial rule under Kaiser Wilhelm II, Western Front stalemate, the British naval blockade, and the 1917 Bolshevik Revolution."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace Germany’s autumn 1918 collapse: \"Turnip Winter\" civilian starvation (750,000 deaths), the Kiel sailors’ mutiny, Kaiser Wilhelm II’s 9 Nov abdication, Scheidemann’s improvised Republic proclamation, the 11 Nov Armistice, and the secret Ebert-Groener Pact.",
+                "instruction": "Trace Germany’s autumn 1918 collapse: \"Turnip Winter\" civilian starvation (750,000 deaths), the Kiel sailors’ mutiny, Kaiser Wilhelm II’s 9 Nov abdication, Scheidemann’s improvised Republic proclamation, the 11 Nov Armistice, and the secret Ebert-Groener Pact."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (armed Berlin barricades) and Source B (Prince Max von Baden’s unilateral abdication notice) to test why moderates feared a Bolshevik-style revolution.",
+                "instruction": "Interrogate Source A (armed Berlin barricades) and Source B (Prince Max von Baden’s unilateral abdication notice) to test why moderates feared a Bolshevik-style revolution."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: The Weimar Constitution & Paper 3 Inference / Causation (Stages 4–5) (50 mins)",
+            "focus": "Weimar Constitution & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the Kiel Mutiny, 9 Nov 1918 abdication, Philipp Scheidemann vs Karl Liebknecht, and why Ebert needed General Groener’s army.",
+                "instruction": "Retrieval check on the Kiel Mutiny, 9 Nov 1918 abdication, Philipp Scheidemann vs Karl Liebknecht, and why Ebert needed General Groener’s army."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (the Jan 1919 83%-turnout National Assembly in Weimar and the August 1919 Constitution), examine Sources C–E, and weigh universal suffrage (aged 20+) against Proportional Representation coalitions and Article 48.",
+                "instruction": "Read Stages 4–5 (the Jan 1919 83%-turnout National Assembly in Weimar and the August 1919 Constitution), examine Sources C–E, and weigh universal suffrage (aged 20+) against Proportional Representation coalitions and Article 48."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on conditions in Berlin (Nov 1918) and Q2 [12m] Explain why the Weimar Republic was established in 1918–1919 (or Q3a [8m] Utility of Sources B & C).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on conditions in Berlin (Nov 1918) and Q2 [12m] Explain why the Weimar Republic was established in 1918–1919 (or Q3a [8m] Utility of Sources B & C)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Self-assess against Edexcel benchmark answers: confirm two quoted inferences in Q1 and three distinct causal paragraphs (military defeat, domestic revolution, Allied peace conditions) in Q2.",
+                "instruction": "Self-assess against Edexcel benchmark answers: confirm two quoted inferences in Q1 and three distinct causal paragraphs (military defeat, domestic revolution, Allied peace conditions) in Q2."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -160,64 +231,73 @@ export default {
           "term": "Reichstag",
           "definition": "The main house of the German state parliament where elected politicians met to pass laws.",
           "syllables": "Reichs-tag",
-          "phonetic": "ˈraɪçstɑːk",
-          "tier": "3"
+          "phonetic": "RYKES-tahg",
+          "tier": "3",
+          "pronunciation": "RYKES-tahg"
         },
         {
           "term": "Reichsrat",
           "definition": "The second (upper) house of parliament, made up of representatives from Germany's 18 local regions (Länder).",
           "syllables": "Rei-chsrat",
-          "phonetic": "reichsrat",
-          "tier": "3"
+          "phonetic": "RYKES-raht",
+          "tier": "3",
+          "pronunciation": "RYKES-raht"
         },
         {
           "term": "Armistice",
           "definition": "A formal agreement to end hostilities in a war (Signed 11 November 1918).",
           "syllables": "ar-mi-stice",
-          "phonetic": "ˈɑːmɪstɪs",
-          "tier": "3"
+          "phonetic": "AH-mih-stis",
+          "tier": "3",
+          "pronunciation": "AH-mih-stis"
         },
         {
           "term": "Constitution",
           "definition": "A set of written rules and laws that sets out exactly how a country is governed.",
           "syllables": "Co-nsti-tution",
-          "phonetic": "constitution",
-          "tier": "3"
+          "phonetic": "kon-stih-TYOO-shun",
+          "tier": "3",
+          "pronunciation": "kon-stih-TYOO-shun"
         },
         {
           "term": "Dolchstoßlegende",
           "definition": "The toxic right-wing myth that the German army was not defeated on the battlefield but betrayed by politicians at home.",
           "syllables": "Do-lchstoßle-ge-nde",
-          "phonetic": "dolchstoßlegende",
-          "tier": "3"
+          "phonetic": "DOLKH-shtohss-leh-gen-duh",
+          "tier": "3",
+          "pronunciation": "DOLKH-shtohss-leh-gen-duh"
         },
         {
           "term": "November Criminals",
           "definition": "The insulting nickname given by right-wing nationalists to the democratic politicians who accepted the Armistice.",
           "syllables": "No-ve-mber Cri-minals",
-          "phonetic": "november criminals",
-          "tier": "2"
+          "phonetic": "noh-VEM-buh KRIM-ih-nulz",
+          "tier": "2",
+          "pronunciation": "noh-VEM-buh KRIM-ih-nulz"
         },
         {
           "term": "Proportional Representation (PR)",
           "definition": "An electoral method where the proportion of seats a party gains is exactly equal to its share of the vote.",
           "syllables": "Pro-po-rtio-nal Re-pre-se-nta-tion (PR)",
-          "phonetic": "proportional representation (pr)",
-          "tier": "3"
+          "phonetic": "pruh-PAW-shuh-nul rep-rih-zen-TAY-shun (pee-AHR)",
+          "tier": "3",
+          "pronunciation": "pruh-PAW-shuh-nul rep-rih-zen-TAY-shun (pee-AHR)"
         },
         {
           "term": "Coalition Government",
           "definition": "A government formed of two or more political parties joining together when no single party wins a majority.",
           "syllables": "co-a-li-tion Go-ve-rnment",
-          "phonetic": "ˌkəʊəˈlɪʃən government",
-          "tier": "2"
+          "phonetic": "koh-uh-LISH-un GUV-un-munt",
+          "tier": "2",
+          "pronunciation": "koh-uh-LISH-un GUV-un-munt"
         },
         {
           "term": "Article 48",
           "definition": "A constitutional emergency clause allowing the President to rule by decree, bypassing the Reichstag.",
           "syllables": "Ar-ti-cle 48",
-          "phonetic": "ˈɑːtɪkl",
-          "tier": "3"
+          "phonetic": "AH-tih-kul FAW-tee-AYT",
+          "tier": "3",
+          "pronunciation": "AH-tih-kul FAW-tee-AYT"
         }
       ],
       "vocab_cloze_text": "Following the sudden signing of the [Armistice] in 1918, furious right-wing nationalists spread the [Dolchstoßlegende] (stab-in-the-back myth), branding the democratic politicians who surrendered as treasonous [November Criminals]. The new Weimar Constitution created a highly democratic system where the lower house, the [Reichstag], passed laws while the upper house, the Reichsrat, could delay them. However, the voting system of [Proportional Representation (PR)] meant no single party could win a majority, leading to weak, shifting coalition governments. This instability forced the President to frequently rely on the emergency powers granted by [Article 48] to rule by decree.",
@@ -1855,6 +1935,77 @@ export default {
           "Source C": "During the 1923 hyperinflation triggered by passive resistance in the Ruhr, the Reichsbank printed astronomical banknote denominations with blank backs to save ink and paper. Hinge Question: Why did hyperinflation inflict far greater psychological trauma on the German middle class than on industrial tycoons who owned physical assets?",
           "Source D": "During the 1923 hyperinflation crisis, the value of the German mark collapsed completely following the French invasion of the Ruhr and the government's policy of printing unbacked money to fund passive resistance. Hinge Question: Why did the 1923 hyperinflation destroy middle-class trust in parliamentary democracy far more deeply than the military defeat of 1918?",
           "Source E": "In January 1919, 100,000 revolutionary workers and Spartacists revolted in Berlin, seizing newspaper offices before Defence Minister Gustav Noske deployed right-wing Freikorps brigades to crush the rebellion with extreme violence. Hinge Question: Why did the brutal suppression of the Spartacist Uprising create a permanent, irreconcilable hatred between the SPD and the Communist Party (KPD)?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Spartacists, Versailles Diktat & the Kapp Putsch (Stages 1–3) (50 mins)",
+            "focus": "Spartacists, Versailles & the Kapp Putsch (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 1.1 (11 Nov Armistice, \"November Criminals\", Ebert-Groener Pact, Proportional Representation, and Article 48).",
+                "instruction": "Spaced retrieval Do Now on KT 1.1 (11 Nov Armistice, \"November Criminals\", Ebert-Groener Pact, Proportional Representation, and Article 48)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Compare left- and right-wing threats alongside the 28 June 1919 Treaty of Versailles (Article 231 War Guilt, £6.6bn reparations, 100,000 army cap): the Jan 1919 Spartacist Uprising crushed by Freikorps vs the March 1920 Kapp Putsch defeated by a Berlin general strike.",
+                "instruction": "Compare left- and right-wing threats alongside the 28 June 1919 Treaty of Versailles (Article 231 War Guilt, £6.6bn reparations, 100,000 army cap): the Jan 1919 Spartacist Uprising crushed by Freikorps vs the March 1920 Kapp Putsch defeated by a Berlin general strike."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Spartacists at the Brandenburg Gate) and Source B (1919 Dolchstoß \"Stab in the Back\" postcard) to diagnose why General von Seeckt refused to fire on Kapp’s troops.",
+                "instruction": "Scrutinise Source A (Spartacists at the Brandenburg Gate) and Source B (1919 Dolchstoß \"Stab in the Back\" postcard) to diagnose why General von Seeckt refused to fire on Kapp’s troops."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Assassinations, 1923 Ruhr Hyperinflation & Paper 3 Section B (Stages 4–5) (50 mins)",
+            "focus": "Ruhr Crisis, Hyperinflation & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Rosa Luxemburg and Karl Liebknecht, Versailles LAMB terms, and how Berlin workers defeated Wolfgang Kapp.",
+                "instruction": "Retrieval check on Rosa Luxemburg and Karl Liebknecht, Versailles LAMB terms, and how Berlin workers defeated Wolfgang Kapp."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (376 political murders including Erzberger and Rathenau; the Jan 1923 Franco-Belgian Ruhr occupation, passive resistance, and Nov 1923 hyperinflation), inspect Sources C–E, and contrast Interpretation 1 (Richard J. Evans on political violence and army disloyalty) with Interpretation 2 (Mary Fulbrook on 1923 economic catastrophe).",
+                "instruction": "Read Stages 4–5 (376 political murders including Erzberger and Rathenau; the Jan 1923 Franco-Belgian Ruhr occupation, passive resistance, and Nov 1923 hyperinflation), inspect Sources C–E, and contrast Interpretation 1 (Richard J. Evans on political violence and army disloyalty) with Interpretation 2 (Mary Fulbrook on 1923 economic catastrophe)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B practice: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about the challenges facing the Weimar Republic (1919–23)?",
+                "instruction": "Complete Paper 3 Section B practice: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about the challenges facing the Weimar Republic (1919–23)?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-check Q3(d) responses using DIRT highlighters: verify sustained engagement with both Evans and Fulbrook backed by precise 1919–23 evidence and accurate SPaG.",
+                "instruction": "Peer-check Q3(d) responses using DIRT highlighters: verify sustained engagement with both Evans and Fulbrook backed by precise 1919–23 evidence and accurate SPaG."
+              }
+            ]
+          }
         }
       },
       "video": [
@@ -1981,50 +2132,57 @@ export default {
           "term": "Diktat",
           "definition": "A dictated peace; the bitter German view of the Treaty of Versailles because they were not allowed to negotiate its terms.",
           "syllables": "dik-tat",
-          "phonetic": "dɪkˈtæt",
-          "tier": "3"
+          "phonetic": "DIK-tat",
+          "tier": "3",
+          "pronunciation": "DIK-tat"
         },
         {
           "term": "Reparations",
           "definition": "Massive compensation payments demanded by the victorious Allies to pay for war damage.",
           "syllables": "rep-a-ra-tions",
-          "phonetic": "ˌrɛpəˈreɪʃənz",
-          "tier": "3"
+          "phonetic": "rep-uh-RAY-shunz",
+          "tier": "3",
+          "pronunciation": "rep-uh-RAY-shunz"
         },
         {
           "term": "Spartacist League",
           "definition": "An extreme left-wing (communist) group led by Rosa Luxemburg and Karl Liebknecht.",
           "syllables": "Spa-rta-cist Lea-gue",
-          "phonetic": "spartacist league",
-          "tier": "2"
+          "phonetic": "SPAH-tuh-sist LEEG",
+          "tier": "2",
+          "pronunciation": "SPAH-tuh-sist LEEG"
         },
         {
           "term": "Freikorps",
           "definition": "Right-wing, anti-communist private armies made up of fiercely nationalistic, demobilised ex-soldiers.",
           "syllables": "Frei-korps",
-          "phonetic": "ˈfraɪˌkɔːr",
-          "tier": "3"
+          "phonetic": "FRY-kaw",
+          "tier": "3",
+          "pronunciation": "FRY-kaw"
         },
         {
           "term": "Putsch",
           "definition": "A violent, armed attempt to overthrow the government.",
           "syllables": "Putsch",
-          "phonetic": "putsch",
-          "tier": "2"
+          "phonetic": "PUUCH",
+          "tier": "2",
+          "pronunciation": "PUUCH"
         },
         {
           "term": "Passive Resistance",
           "definition": "A non-violent refusal to work or cooperate, used by German workers against the French in the Ruhr in 1923.",
           "syllables": "Pa-ssi-ve re-sist-ance",
-          "phonetic": "passive rɪˈzɪstəns",
-          "tier": "2"
+          "phonetic": "PAS-iv rih-ZIS-tuns",
+          "tier": "2",
+          "pronunciation": "PAS-iv rih-ZIS-tuns"
         },
         {
           "term": "Hyperinflation",
           "definition": "A catastrophic economic crisis where the value of money plummets uncontrollably, leading to massive, rapid price rises.",
           "syllables": "hy-per-in-fla-tion",
-          "phonetic": "ˌhaɪpərɪnˈfleɪʃən",
-          "tier": "3"
+          "phonetic": "hy-puh-in-FLAY-shun",
+          "tier": "3",
+          "pronunciation": "hy-puh-in-FLAY-shun"
         }
       ],
       "flashcards": [
@@ -3986,6 +4144,77 @@ export default {
           "Source C": "Signed in Paris in 1928 by 62 nations, the Kellogg-Briand Pact outlawed aggressive war, demonstrating Germany's reintegration as a trusted great power, though nationalists attacked it for renouncing the military reconquest of lost territories. Hinge Question: Why did German nationalist parties fiercely denounce Stresemann for signing the Kellogg-Briand Pact when it offered moral protection against foreign invasion?",
           "Source D": "In 1929, the Young Plan reduced total German reparations from £6.6 billion to £2 billion payable over 59 years, but media baron Alfred Hugenberg and Adolf Hitler launched a vicious campaign branding it the \"enslavement of future generations\". Hinge Question: How did the national campaign against the Young Plan in 1929 allow Adolf Hitler to gain nationwide mainstream political respectability and media coverage?",
           "Source E": "In September 1925, Foreign Minister Gustav Stresemann was preparing to negotiate the Locarno Treaties with Britain and France, pursuing his policy of \"fulfillment\" while reassuring conservative monarchists that he had not abandoned German nationalist ambitions. Hinge Question: Does Source C prove that Stresemann was a cynical nationalist pretending to be a European peacemaker, or a realistic statesman protecting Germany's vital national interests?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Stresemann’s Rentenmark, the Dawes Plan & Locarno (Stages 1–3) (50 mins)",
+            "focus": "Rentenmark, Dawes Plan & Locarno Pact (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now revisiting KT 1.2 (£6.6bn reparations, Jan 1923 Ruhr occupation, passive resistance, and winners/losers of Nov 1923 hyperinflation).",
+                "instruction": "Spaced retrieval Do Now revisiting KT 1.2 (£6.6bn reparations, Jan 1923 Ruhr occupation, passive resistance, and winners/losers of Nov 1923 hyperinflation)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain Gustav Stresemann’s twin economic and diplomatic rescue: ending passive resistance, introducing the Nov 1923 Rentenmark (1924 Reichsmark), securing 800m gold marks in US loans via the 1924 Dawes Plan, and voluntarily signing the Oct 1925 Locarno Pact.",
+                "instruction": "Explain Gustav Stresemann’s twin economic and diplomatic rescue: ending passive resistance, introducing the Nov 1923 Rentenmark (1924 Reichsmark), securing 800m gold marks in US loans via the 1924 Dawes Plan, and voluntarily signing the Oct 1925 Locarno Pact."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (Stresemann’s Rentenmark decree) and Source B ($1,000 Dawes Loan Wall Street bond) to expose Germany’s reliance on short-term US credit.",
+                "instruction": "Compare Source A (Stresemann’s Rentenmark decree) and Source B ($1,000 Dawes Loan Wall Street bond) to expose Germany’s reliance on short-term US credit."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: League of Nations, Young Plan & \"Dancing on a Volcano\" (Stages 4–5) (50 mins)",
+            "focus": "League Entry, Young Plan & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check contrasting Versailles (1919, dictated) with Locarno (1925, voluntary western borders), Rentenmark stability, and Dawes Plan loans.",
+                "instruction": "Retrieval check contrasting Versailles (1919, dictated) with Locarno (1925, voluntary western borders), Rentenmark stability, and Dawes Plan loans."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Sept 1926 League of Nations Council seat, 1928 Kellogg-Briand Pact, 1929 Young Plan cutting reparations to £2bn over 59 years, and Stresemann’s \"dancing on a volcano\" warning) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (Sept 1926 League of Nations Council seat, 1928 Kellogg-Briand Pact, 1929 Young Plan cutting reparations to £2bn over 59 years, and Stresemann’s \"dancing on a volcano\" warning) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on post-1924 recovery and Q2 [12m] Explain why the German economy and international standing recovered in the years 1924–1929 (plus Q3a [8m] Source Utility review).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on post-1924 recovery and Q2 [12m] Explain why the German economy and international standing recovered in the years 1924–1929 (plus Q3a [8m] Source Utility review)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT audit: check Q2 distinguishes currency stabilisation, American capital inflows, and Stresemann’s fulfilment diplomacy (Erfüllungspolitik).",
+                "instruction": "DIRT audit: check Q2 distinguishes currency stabilisation, American capital inflows, and Stresemann’s fulfilment diplomacy (Erfüllungspolitik)."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -4067,50 +4296,57 @@ export default {
           "term": "Rentenmark",
           "definition": "The temporary currency introduced by Stresemann in November 1923 to end hyperinflation, based on property and land values.",
           "syllables": "Ren-ten-mark",
-          "phonetic": "ˈrɛntənˌmɑːrk",
-          "tier": "3"
+          "phonetic": "REN-tun-mahk",
+          "tier": "3",
+          "pronunciation": "REN-tun-mahk"
         },
         {
           "term": "Reichsmark",
           "definition": "The permanent, stable new German currency introduced in 1924, backed by gold reserves.",
           "syllables": "Rei-chsmark",
-          "phonetic": "reichsmark",
-          "tier": "2"
+          "phonetic": "RYKES-mahk",
+          "tier": "2",
+          "pronunciation": "RYKES-mahk"
         },
         {
           "term": "Dawes Plan (1924)",
           "definition": "An economic agreement where the USA lent Germany 800 million gold marks to rebuild its industry and restructured reparation payments.",
           "syllables": "Da-wes Plan (1924)",
-          "phonetic": "dawes plan (1924)",
-          "tier": "2"
+          "phonetic": "DAWZ PLAN (nine-teen twen-tee-FAWR)",
+          "tier": "2",
+          "pronunciation": "DAWZ PLAN (nine-teen twen-tee-FAWR)"
         },
         {
           "term": "Young Plan (1929)",
           "definition": "A renegotiation of the Treaty of Versailles that reduced total reparations from £6.6 billion to £2 billion and gave Germany 59 extra years to pay.",
           "syllables": "Young Plan (1929)",
-          "phonetic": "young plan (1929)",
-          "tier": "3"
+          "phonetic": "YUNG PLAN (nine-teen twen-tee-NYNE)",
+          "tier": "3",
+          "pronunciation": "YUNG PLAN (nine-teen twen-tee-NYNE)"
         },
         {
           "term": "Locarno Pact (1925)",
           "definition": "A diplomatic treaty between Germany, Britain, France, Italy, and Belgium where Germany agreed to accept its western borders.",
           "syllables": "Lo-ca-rno Pact (1925)",
-          "phonetic": "locarno pact (1925)",
-          "tier": "3"
+          "phonetic": "loh-KAH-noh PAKT (nine-teen twen-tee-FYVE)",
+          "tier": "3",
+          "pronunciation": "loh-KAH-noh PAKT (nine-teen twen-tee-FYVE)"
         },
         {
           "term": "League of Nations",
           "definition": "The international peacekeeping organization; Germany was admitted in 1926, restoring its status as a trusted 'great power'.",
           "syllables": "Lea-gue of Na-tions",
-          "phonetic": "league of nations",
-          "tier": "2"
+          "phonetic": "LEEG uv NAY-shunz",
+          "tier": "2",
+          "pronunciation": "LEEG uv NAY-shunz"
         },
         {
           "term": "Kellogg-Briand Pact (1928)",
           "definition": "An international agreement signed by 65 countries, including Germany, promising to resolve conflicts peacefully rather than using war.",
           "syllables": "Ke-llogg-Briand Pact (1928)",
-          "phonetic": "kellogg-briand pact (1928)",
-          "tier": "3"
+          "phonetic": "KEL-og bree-OND PAKT (nine-teen twen-tee-AYT)",
+          "tier": "3",
+          "pronunciation": "KEL-og bree-OND PAKT (nine-teen twen-tee-AYT)"
         }
       ],
       "flashcards": [
@@ -5718,6 +5954,77 @@ export default {
           "Source C": "Fritz Lang's 1927 masterpiece Metropolis made Weimar Germany the undisputed center of global cinema, pioneering visual special effects while exploring profound fears that industrial technology would turn human beings into soulless cogs. Hinge Question: How did Fritz Lang's Metropolis reflect Weimar Germany's deep anxiety over industrial modernization, mass mechanization, and class conflict?",
           "Source D": "Under Article 155 of the Constitution, the Weimar Republic committed to providing healthy housing for all citizens; between 1924 and 1931, over two million new homes were built with municipal subsidies and progressive architecture. Hinge Question: How did large-scale municipal housing projects like the Hufeisensiedlung demonstrate the social welfare priorities of Weimar local governments?",
           "Source E": "Throughout the late 1920s, conservative and nationalist parties like the DNVP capitalized on deep moral unease outside Berlin, attacking Weimar modernism as degenerate and promising a return to traditional Prussian Christian values. Hinge Question: Why did right-wing traditionalists label modern architecture, jazz, and female independence as \"Cultural Bolshevism\"?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Living Standards, the \"New Woman\" & the Bauhaus Movement (Stages 1–3) (50 mins)",
+            "focus": "Wages, the \"New Woman\" & Bauhaus (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 1.1 and KT 1.3 (1919 Constitution universal suffrage, hyperinflation trauma for savers, Rentenmark, Dawes Plan, and Young Plan).",
+                "instruction": "Spaced retrieval Do Now on KT 1.1 and KT 1.3 (1919 Constitution universal suffrage, hyperinflation trauma for savers, Rentenmark, Dawes Plan, and Young Plan)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Assess social change in the \"Golden Twenties\": rising real wages (10–25%) and the 1927 Unemployment Insurance Act vs rural debt, emancipation of the urban \"New Woman\" (Neue Frau) under Article 109, and Walter Gropius’s Bauhaus design school.",
+                "instruction": "Assess social change in the \"Golden Twenties\": rising real wages (10–25%) and the 1927 Unemployment Insurance Act vs rural debt, emancipation of the urban \"New Woman\" (Neue Frau) under Article 109, and Walter Gropius’s Bauhaus design school."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (Bruno Taut’s modernist Horseshoe Estate in Berlin) and Source B (Alice Rühle-Gerstel on \"The New Woman\", 1927) to test urban progress vs daily reality.",
+                "instruction": "Interrogate Source A (Bruno Taut’s modernist Horseshoe Estate in Berlin) and Source B (Alice Rühle-Gerstel on \"The New Woman\", 1927) to test urban progress vs daily reality."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Neue Sachlichkeit, Weimar Cinema, Cultural Backlash & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Weimar Culture, Conservative Backlash & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the 1927 Unemployment Insurance Act, Article 109 female Reichstag deputies, and Bauhaus functionalist architecture.",
+                "instruction": "Retrieval check on the 1927 Unemployment Insurance Act, Article 109 female Reichstag deputies, and Bauhaus functionalist architecture."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Otto Dix’s Neue Sachlichkeit paintings, Fritz Lang’s Metropolis at UFA studios, and conservative DNVP anger at \"cultural degeneracy\"), examine Sources C–E, and contrast Interpretations 1 & 2 (Eric Weitz vs Helen Boak on Weimar women).",
+                "instruction": "Read Stages 4–5 (Otto Dix’s Neue Sachlichkeit paintings, Fritz Lang’s Metropolis at UFA studios, and conservative DNVP anger at \"cultural degeneracy\"), examine Sources C–E, and contrast Interpretations 1 & 2 (Eric Weitz vs Helen Boak on Weimar women)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on 1920s women and Q2 [12m] Explain why there were significant cultural and social changes in Weimar Germany (1924–29), or tackle Section B Q3(b)–(d).",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on 1920s women and Q2 [12m] Explain why there were significant cultural and social changes in Weimar Germany (1924–29), or tackle Section B Q3(b)–(d)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Consolidate with exemplar DIRT: verify Q2 links abolition of Kaiser-era censorship, constitutional equality, and post-war economic stabilisation.",
+                "instruction": "Consolidate with exemplar DIRT: verify Q2 links abolition of Kaiser-era censorship, constitutional equality, and post-war economic stabilisation."
+              }
+            ]
+          }
         }
       },
       "video": [
@@ -5834,50 +6141,57 @@ export default {
           "term": "Standard of Living",
           "definition": "The level of wealth, comfort, and material goods available to a certain socioeconomic class.",
           "syllables": "Sta-ndard of Li-ving",
-          "phonetic": "standard of living",
-          "tier": "2"
+          "phonetic": "STAN-duhd uv LIV-ing",
+          "tier": "2",
+          "pronunciation": "STAN-duhd uv LIV-ing"
         },
         {
           "term": "Unemployment Insurance Act (1927)",
           "definition": "A national scheme requiring workers and employers to contribute to a central fund, which provided benefits to the unemployed and sick.",
           "syllables": "U-ne-mploy-ment I-nsu-ra-nce Act (1927)",
-          "phonetic": "unemployment insurance act (1927)",
-          "tier": "3"
+          "phonetic": "un-im-PLOY-munt in-SHOOR-uns AKT (nine-teen twen-tee-SEV-un)",
+          "tier": "3",
+          "pronunciation": "un-im-PLOY-munt in-SHOOR-uns AKT (nine-teen twen-tee-SEV-un)"
         },
         {
           "term": "New Woman (Neue Frau)",
           "definition": "The media's term for the liberated, independent, and fashion-conscious young women of 1920s city life.",
           "syllables": "New Wo-man (Neue Frau)",
-          "phonetic": "new woman (neue frau)",
-          "tier": "2"
+          "phonetic": "NYOO WUUM-un (NOY-uh FROW)",
+          "tier": "2",
+          "pronunciation": "NYOO WUUM-un (NOY-uh FROW)"
         },
         {
           "term": "Article 109",
           "definition": "The clause in the Weimar Constitution that legally guaranteed women equal rights with men.",
           "syllables": "A-rticle 109",
-          "phonetic": "article 109",
-          "tier": "2"
+          "phonetic": "AH-tih-kul wun-oh-NYNE",
+          "tier": "2",
+          "pronunciation": "AH-tih-kul wun-oh-NYNE"
         },
         {
           "term": "Avant-garde",
           "definition": "New, experimental, and radical ideas in art and culture.",
           "syllables": "A-vant-ga-rde",
-          "phonetic": "avant-garde",
-          "tier": "2"
+          "phonetic": "av-ont-GAHD",
+          "tier": "2",
+          "pronunciation": "av-ont-GAHD"
         },
         {
           "term": "New Objectivity (Neue Sachlichkeit)",
           "definition": "An artistic movement that rejected romanticism and instead painted the harsh, gritty, and often ugly reality of everyday German society.",
           "syllables": "New O-bjecti-vity (Neue Sa-chlichkeit)",
-          "phonetic": "new objectivity (neue sachlichkeit)",
-          "tier": "2"
+          "phonetic": "NYOO ob-jek-TIV-ih-tee (NOY-uh ZAKH-likh-kyte)",
+          "tier": "2",
+          "pronunciation": "NYOO ob-jek-TIV-ih-tee (NOY-uh ZAKH-likh-kyte)"
         },
         {
           "term": "Bauhaus",
           "definition": "A revolutionary school of architecture and design, founded by Walter Gropius, that focused on simplicity, modern materials, and functionality.",
           "syllables": "Bau-haus",
-          "phonetic": "bauhaus",
-          "tier": "2"
+          "phonetic": "BOW-hows",
+          "tier": "2",
+          "pronunciation": "BOW-hows"
         }
       ],
       "flashcards": [
@@ -7708,6 +8022,77 @@ export default {
           "Source C": "In December 1920, the NSDAP bought the struggling Munich newspaper Völkischer Beobachter for 60,000 marks, giving Hitler a permanent publishing organ to spread anti-republican propaganda and unify party followers. Hinge Question: Why was owning an independent daily newspaper essential for Hitler to establish party discipline and broadcast his message beyond Munich beer halls?",
           "Source D": "Printed in thousands of copies by the party's publisher Franz Eher Nachfolger, broadsheets of the 25-Point Programme were distributed at street corners and beer halls to recruit members and raise funds. Hinge Question: How did the physical distribution of cheap printed leaflets help the early NSDAP recruit members from demobilised soldiers and the lower middle class?",
           "Source E": "Throughout 1920–1922, Bavarian police detectives regularly attended Hitler's speeches to monitor his rhetoric and the paramilitary violence of the SA, creating detailed surveillance files. Hinge Question: Why did Bavarian conservative authorities and police officials treat early Nazi street violence and inflammatory rhetoric with notable leniency between 1920 and 1922?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Anton Drexler’s DAP, the 25-Point Programme & NSDAP Rebranding (Stages 1–3) (50 mins)",
+            "focus": "DAP, 25-Point Programme & NSDAP Rebranding (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now retrieving KT 1.1–1.2 (Armistice \"Stab in the Back\" myth, Versailles Article 231, Freikorps paramilitaries, and right-wing Bavarian politics).",
+                "instruction": "Spaced retrieval Do Now retrieving KT 1.1–1.2 (Armistice \"Stab in the Back\" myth, Versailles Article 231, Freikorps paramilitaries, and right-wing Bavarian politics)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Track Hitler’s rise from Sept 1919 army intelligence spy at Anton Drexler’s Munich DAP meetings to unveiling the Feb 1920 25-Point Programme (2,000 listeners at the Hofbräuhaus) and rebranding the NSDAP with the swastika and Völkischer Beobachter.",
+                "instruction": "Track Hitler’s rise from Sept 1919 army intelligence spy at Anton Drexler’s Munich DAP meetings to unveiling the Feb 1920 25-Point Programme (2,000 listeners at the Hofbräuhaus) and rebranding the NSDAP with the swastika and Völkischer Beobachter."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Drexler’s Sept 1919 DAP manifesto) and Source B (the 25-Point Programme) to see how Hitler fused nationalist, antisemitic, and anti-capitalist appeals.",
+                "instruction": "Scrutinise Source A (Drexler’s Sept 1919 DAP manifesto) and Source B (the 25-Point Programme) to see how Hitler fused nationalist, antisemitic, and anti-capitalist appeals."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Führerprinzip, Ernst Röhm’s SA & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Führerprinzip, the SA & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Anton Drexler, key nationalist vs socialist clauses of the 25-Point Programme, and purchase of the Völkischer Beobachter (Dec 1920).",
+                "instruction": "Retrieval check on Anton Drexler, key nationalist vs socialist clauses of the 25-Point Programme, and purchase of the Völkischer Beobachter (Dec 1920)."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Hitler’s July 1921 resignation ultimatum seizing sole power under the Führerprinzip and the August 1921 creation of Ernst Röhm’s Brownshirt SA) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (Hitler’s July 1921 resignation ultimatum seizing sole power under the Führerprinzip and the August 1921 creation of Ernst Röhm’s Brownshirt SA) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Hitler’s 1921 Munich beer-hall speeches and Q2 [12m] Explain why the Nazi Party (NSDAP) developed rapidly in the years 1920–1922.",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Hitler’s 1921 Munich beer-hall speeches and Q2 [12m] Explain why the Nazi Party (NSDAP) developed rapidly in the years 1920–1922."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Highlight Q2 paragraphs in DIRT to verify three distinct analytical threads: Hitler’s charismatic oratory, visual/programme rebranding, and SA paramilitary intimidation.",
+                "instruction": "Highlight Q2 paragraphs in DIRT to verify three distinct analytical threads: Hitler’s charismatic oratory, visual/programme rebranding, and SA paramilitary intimidation."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -7789,57 +8174,65 @@ export default {
           "term": "DAP (German Workers' Party)",
           "definition": "The original, tiny political party founded by Anton Drexler in 1919.",
           "syllables": "DAP (Ge-rman Wo-rkers' Pa-rty)",
-          "phonetic": "dap (german workers' party)",
-          "tier": "2"
+          "phonetic": "dee-ay-PEE (JUR-mun WUR-kuhz PAH-tee)",
+          "tier": "2",
+          "pronunciation": "dee-ay-PEE (JUR-mun WUR-kuhz PAH-tee)"
         },
         {
           "term": "NSDAP (National Socialist German Workers' Party)",
           "definition": "The new name given to the DAP by Hitler in 1920 (abbreviated to 'Nazi').",
           "syllables": "NSDAP (Na-tio-nal So-cia-list Ge-rman Wo-rkers' Pa-rty)",
-          "phonetic": "nsdap (national socialist german workers' party)",
-          "tier": "3"
+          "phonetic": "en-ess-dee-ay-PEE (NASH-uh-nul SOH-shuh-list JUR-mun WUR-kuhz PAH-tee)",
+          "tier": "3",
+          "pronunciation": "en-ess-dee-ay-PEE (NASH-uh-nul SOH-shuh-list JUR-mun WUR-kuhz PAH-tee)"
         },
         {
           "term": "25-Point Programme",
           "definition": "The foundational manifesto of the Nazi Party, written in 1920, containing their core political demands.",
           "syllables": "25-Point Pro-gramme",
-          "phonetic": "25-point programme",
-          "tier": "3"
+          "phonetic": "twen-tee-FYVE POYNT PROH-gram",
+          "tier": "3",
+          "pronunciation": "twen-tee-FYVE POYNT PROH-gram"
         },
         {
           "term": "Nationalism",
           "definition": "A fierce, devoted love of one's country, often coupled with the belief that it is superior to others and must be kept militarily strong.",
           "syllables": "na-tion-al-ism",
-          "phonetic": "ˈnæʃənəlɪzəm",
-          "tier": "3"
+          "phonetic": "NASH-uh-nuh-liz-um",
+          "tier": "3",
+          "pronunciation": "NASH-uh-nuh-liz-um"
         },
         {
           "term": "Socialism",
           "definition": "A political idea where wealth and property are shared more equally among the working people, and large corporations are controlled by the state.",
           "syllables": "So-cia-lism",
-          "phonetic": "socialism",
-          "tier": "3"
+          "phonetic": "SOH-shuh-liz-um",
+          "tier": "3",
+          "pronunciation": "SOH-shuh-liz-um"
         },
         {
           "term": "SA (Sturmabteilung)",
           "definition": "The private army of the Nazi Party, also known as the 'Brownshirts', set up in 1921 and commanded by Ernst Röhm.",
           "syllables": "S-A (Stu-rmabtei-lung)",
-          "phonetic": "ˌɛs ˈeɪ (sturmabteilung)",
-          "tier": "3"
+          "phonetic": "ess-AY (SHTOORM-ab-ty-luung)",
+          "tier": "3",
+          "pronunciation": "ess-AY (SHTOORM-ab-ty-luung)"
         },
         {
           "term": "Stosstrupp (Shock Troop)",
           "definition": "An elite, highly trusted unit selected from the SA to act as Hitler's personal bodyguard.",
           "syllables": "Sto-sstrupp (Shock Troop)",
-          "phonetic": "stosstrupp (shock troop)",
-          "tier": "3"
+          "phonetic": "SHTOHSS-truup (SHOK TROOP)",
+          "tier": "3",
+          "pronunciation": "SHTOHSS-truup (SHOK TROOP)"
         },
         {
           "term": "Völkischer Beobachter",
           "definition": "The official newspaper of the Nazi Party, purchased in 1920 to spread their propaganda.",
           "syllables": "Völki-scher Beo-ba-chter",
-          "phonetic": "völkischer beobachter",
-          "tier": "3"
+          "phonetic": "FERL-kish-uh bay-OH-bakh-tuh",
+          "tier": "3",
+          "pronunciation": "FERL-kish-uh bay-OH-bakh-tuh"
         }
       ],
       "vocab_cloze_text": "In 1919, Anton Drexler founded the tiny [DAP (German Workers' Party)]. A year later, Hitler rebranded it as the [NSDAP (National Socialist German Workers' Party)] and helped write the [25-Point Programme]. This manifesto blended extreme [Nationalism] with ideas of [Socialism] to appeal to the working class. To spread their message, the party purchased the [Völkischer Beobachter] newspaper. By 1921, Hitler set up the [SA (Sturmabteilung)] to protect meetings, but later created an elite [Stosstrupp (Shock Troop)] as his personal bodyguard.",
@@ -9414,6 +9807,77 @@ export default {
           "Source C": "Written in Landsberg Prison in 1924, Mein Kampf outlined Hitler's core ideology: the biological necessity of living space (Lebensraum) in Eastern Europe, anti-Semitism, and absolute obedience to one leader (Führerprinzip). Hinge Question: Why did Hitler consider the democratic principle of majority voting to be unnatural, demanding instead the absolute authority of the Führerprinzip?",
           "Source D": "On the morning of 9 November 1923, following the abduction of Bavarian leaders in the Bürgerbräukeller, 2,000 armed Nazis marched towards the Bavarian War Ministry before being crushed by state police gunfire at the Feldherrnhalle. Hinge Question: Why did Hitler believe that seizing municipal buildings in Munich would trigger a nationwide March on Berlin modeled on Mussolini's 1922 coup in Rome?",
           "Source E": "In 1929, DNVP leader Alfred Hugenberg invited Hitler to join a national committee campaigning against the Young Plan; although the referendum failed, it gave Hitler access to Hugenberg's media empire and wealthy industrial donors. Hinge Question: How did Hitler's alliance with press baron Alfred Hugenberg in the 1929 anti-Young Plan campaign rescue the Nazi Party from political irrelevance at the end of the \"Lean Years\"?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: The Nov 1923 Munich Putsch, Treason Trial & Landsberg (Stages 1–3) (50 mins)",
+            "focus": "Munich Putsch, Treason Trial & Mein Kampf (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now combining KT 1.2 and KT 2.1 (1923 Ruhr crisis, Stresemann calling off passive resistance, Nov 1923 hyperinflation, Führerprinzip, and Röhm’s SA).",
+                "instruction": "Spaced retrieval Do Now combining KT 1.2 and KT 2.1 (1923 Ruhr crisis, Stresemann calling off passive resistance, Nov 1923 hyperinflation, Führerprinzip, and Röhm’s SA)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Reconstruct the 8–9 Nov 1923 Munich Putsch (holding Bavarian leaders von Kahr, Lossow, and Seisser at gunpoint in the Bürgerbräukeller; 16 Nazis shot dead at the Residenzstrasse), Hitler’s Feb 1924 trial propaganda triumph, and dictating Mein Kampf in Landsberg.",
+                "instruction": "Reconstruct the 8–9 Nov 1923 Munich Putsch (holding Bavarian leaders von Kahr, Lossow, and Seisser at gunpoint in the Bürgerbräukeller; 16 Nazis shot dead at the Residenzstrasse), Hitler’s Feb 1924 trial propaganda triumph, and dictating Mein Kampf in Landsberg."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (von Kahr’s official report on 8 Nov 1923) with Source B (armed SA on Marienplatz) and Source C (Hitler’s courtroom speech) on why short-term failure yielded national fame.",
+                "instruction": "Compare Source A (von Kahr’s official report on 8 Nov 1923) with Source B (armed SA on Marienplatz) and Source C (Hitler’s courtroom speech) on why short-term failure yielded national fame."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Refounding the NSDAP, Bamberg (1926) & the \"Lean Years\" (Stages 4–5) (50 mins)",
+            "focus": "Bamberg Conference, Lean Years & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on why the Munich Putsch collapsed (loss of Kahr/army support), Hitler’s lenient 5-year sentence (9 months served), and core ideas in Mein Kampf.",
+                "instruction": "Retrieval check on why the Munich Putsch collapsed (loss of Kahr/army support), Hitler’s lenient 5-year sentence (9 months served), and core ideas in Mein Kampf."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Feb 1925 party relaunch on the \"legal path\", Gauleiter reorganisation and creation of the SS, crushing Gregor Strasser at the Feb 1926 Bamberg Conference, and winning just 2.6% / 12 seats in May 1928 during Stresemann’s recovery) with Sources D–E.",
+                "instruction": "Read Stages 4–5 (Feb 1925 party relaunch on the \"legal path\", Gauleiter reorganisation and creation of the SS, crushing Gregor Strasser at the Feb 1926 Bamberg Conference, and winning just 2.6% / 12 seats in May 1928 during Stresemann’s recovery) with Sources D–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on the 1924 treason trial and Q2 [12m] Explain why the Nazi Party changed its strategy during the \"Lean Years\" (1924–1929).",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on the 1924 treason trial and Q2 [12m] Explain why the Nazi Party changed its strategy during the \"Lean Years\" (1924–1929)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-assess Q2 answers: verify pupils link armed failure in Munich, Hitler’s Landsberg rethink, nationwide Gau machinery, and Weimar prosperity starving extremists of votes.",
+                "instruction": "Peer-assess Q2 answers: verify pupils link armed failure in Munich, Hitler’s Landsberg rethink, nationwide Gau machinery, and Weimar prosperity starving extremists of votes."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -9495,57 +9959,65 @@ export default {
           "term": "The Bavarian Triumvirate",
           "def": "The three men who ruled the region of Bavaria in 1923: Gustav von Kahr, Otto von Lossow, and Hans von Seisser.",
           "syllables": "The Ba-varian Triu-mvi-rate",
-          "phonetic": "the bavarian triumvirate",
-          "tier": "2"
+          "phonetic": "thuh buh-VAIR-ee-un try-UM-vih-rut",
+          "tier": "2",
+          "pronunciation": "thuh buh-VAIR-ee-un try-UM-vih-rut"
         },
         {
           "term": "Treason",
           "def": "The crime of betraying one's country or attempting to overthrow the government.",
           "syllables": "Trea-son",
-          "phonetic": "treason",
-          "tier": "2"
+          "phonetic": "TREE-zun",
+          "tier": "2",
+          "pronunciation": "TREE-zun"
         },
         {
           "term": "Landsberg Prison",
           "def": "The castle fortress where Hitler was imprisoned after the Munich Putsch.",
           "syllables": "La-ndsberg Pri-son",
-          "phonetic": "landsberg prison",
-          "tier": "2"
+          "phonetic": "LANDZ-burg PRIZ-un",
+          "tier": "2",
+          "pronunciation": "LANDZ-burg PRIZ-un"
         },
         {
           "term": "Mein Kampf ('My Struggle')",
           "def": "Hitler's autobiography and political manifesto, dictated while he was in prison.",
           "syllables": "Mein Kampf ('My Stru-ggle')",
-          "phonetic": "mein kampf ('my struggle')",
-          "tier": "2"
+          "phonetic": "MYNE KAMPF (MY STRUG-ul)",
+          "tier": "2",
+          "pronunciation": "MYNE KAMPF (MY STRUG-ul)"
         },
         {
           "term": "Führerprinzip (The Leadership Principle)",
           "def": "The core Nazi belief that the party (and later Germany) must be run by one dictator with absolute, unquestionable power.",
           "syllables": "Führe-rprinzip (The Lea-de-rship Pri-nciple)",
-          "phonetic": "führerprinzip (the leadership principle)",
-          "tier": "2"
+          "phonetic": "FYOOR-uh-prin-tseep (thuh LEE-duh-ship PRIN-sih-pul)",
+          "tier": "2",
+          "pronunciation": "FYOOR-uh-prin-tseep (thuh LEE-duh-ship PRIN-sih-pul)"
         },
         {
           "term": "Gauleiter",
           "def": "A regional leader of the Nazi Party, appointed by Hitler to run a specific local area (a Gau) of Germany.",
           "syllables": "Gau-lei-ter",
-          "phonetic": "gauleiter",
-          "tier": "2"
+          "phonetic": "GOW-ly-tuh",
+          "tier": "2",
+          "pronunciation": "GOW-ly-tuh"
         },
         {
           "term": "SS (Schutzstaffel)",
           "def": "A ruthless and fiercely loyal private bodyguard unit created in 1925, completely separate from the SA.",
           "syllables": "S-S (Schu-tzstaffel)",
-          "phonetic": "ˌɛs ˈɛs (schutzstaffel)",
-          "tier": "2"
+          "phonetic": "ess-ESS (SHUUTS-shtaf-ul)",
+          "tier": "2",
+          "pronunciation": "ess-ESS (SHUUTS-shtaf-ul)"
         },
         {
           "term": "Aryan",
           "def": "The Nazi term for what they considered the 'master race' of Germanic/Nordic peoples.",
           "syllables": "A-ryan",
-          "phonetic": "aryan",
-          "tier": "2"
+          "phonetic": "AIR-ee-un",
+          "tier": "2",
+          "pronunciation": "AIR-ee-un"
         }
       ],
       "vocab_cloze_text": "In 1923, Hitler attempted to overthrow the government with the help of [The Bavarian Triumvirate], but it failed and he was charged with [Treason]. While serving a lenient sentence in [Landsberg Prison], he dictated his manifesto, [Mein Kampf ('My Struggle')], which outlined his belief in the supremacy of the [Aryan] race and the need for absolute dictatorship through the [Führerprinzip (The Leadership Principle)]. Realising he needed a new political machine, Hitler appointed regional leaders called [Gauleiter] to organise the party, and later created the elite, black-uniformed [SS (Schutzstaffel)] as his fiercely loyal personal bodyguard.",
@@ -11398,6 +11870,77 @@ export default {
           "Source C": "By 1932, the SA had grown to over 400,000 men, marching through working-class neighbourhoods to intimidate communist opponents and demonstrate that the Nazi Party possessed the physical power to restore order. Hinge Question: How did the SA's military parades and street battles with Communist Red Front fighters project an impression of order and discipline to fearful middle-class Germans?",
           "Source D": "During the July 1932 Reichstag election, the Nazi Party became the largest party in Germany with 230 seats (37.3%), utilizing targeted posters promising practical relief to workers, farmers, and shopkeepers. Hinge Question: Why did the simple slogan \"Work and Bread\" resonate far more powerfully with German voters in 1932 than the complex constitutional debates of democratic parties?",
           "Source E": "Written by a middle-class Berlin teenager who joined the Hitler Youth movement in 1932, Maschmann's memoir provides deep insight into why respectable German families turned to Hitler out of dread of Communism and economic ruin. Hinge Question: Why was the intense fear of a Communist revolution the primary factor that drove Germany's middle class (Mittelstand) to support Adolf Hitler?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Wall Street Crash, Brüning’s Austerity & Fear of Communism (Stages 1–3) (50 mins)",
+            "focus": "Wall Street Crash, Brüning & Negative Cohesion (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 1.3 and KT 2.2 (Stresemann’s \"dancing on a volcano\" warning over US loans, Article 48, Nazi national reorganisation, and 12 seats in May 1928).",
+                "instruction": "Spaced retrieval Do Now on KT 1.3 and KT 2.2 (Stresemann’s \"dancing on a volcano\" warning over US loans, Article 48, Nazi national reorganisation, and 12 seats in May 1928)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace the causal chain from the Oct 1929 Wall Street Crash and US loan recalls to 6 million unemployed, \"Hunger Chancellor\" Heinrich Brüning ruling by Article 48 decrees (66 decrees by 1932), and KPD electoral gains driving terrified middle-class voters to Hitler.",
+                "instruction": "Trace the causal chain from the Oct 1929 Wall Street Crash and US loan recalls to 6 million unemployed, \"Hunger Chancellor\" Heinrich Brüning ruling by Article 48 decrees (66 decrees by 1932), and KPD electoral gains driving terrified middle-class voters to Hitler."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (Berlin police report on 1930 evictions) and Source B (Brüning’s Dec 1931 austerity decree) to explain collapsing faith in Weimar parliamentary democracy.",
+                "instruction": "Interrogate Source A (Berlin police report on 1930 evictions) and Source B (Brüning’s Dec 1931 austerity decree) to explain collapsing faith in Weimar parliamentary democracy."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Goebbels’ Propaganda, 230 Seats & Paper 3 Section B Practice (Stages 4–5) (50 mins)",
+            "focus": "Goebbels’ Campaigns, 230 Seats & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Dawes/Young loan recalls, 6 million jobless, why Müller’s Grand Coalition fell in March 1930, and \"negative cohesion\" against the KPD.",
+                "instruction": "Retrieval check on Dawes/Young loan recalls, 6 million jobless, why Müller’s Grand Coalition fell in March 1930, and \"negative cohesion\" against the KPD."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Joseph Goebbels’ \"Hitler over Germany\" flights, \"Work and Bread\" slogans, and the July 1932 breakthrough to 230 Reichstag seats / 37.3%), examine Sources C–E, and contrast Interpretation 1 (William Carr on economic despair) with Interpretation 2 (Richard J. Evans on Nazi propaganda, Hitler’s appeal, and SA street order).",
+                "instruction": "Read Stages 4–5 (Joseph Goebbels’ \"Hitler over Germany\" flights, \"Work and Bread\" slogans, and the July 1932 breakthrough to 230 Reichstag seats / 37.3%), examine Sources C–E, and contrast Interpretation 1 (William Carr on economic despair) with Interpretation 2 (Richard J. Evans on Nazi propaganda, Hitler’s appeal, and SA street order)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about the reasons for the growth in Nazi support (1929–32)?",
+                "instruction": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about the reasons for the growth in Nazi support (1929–32)?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Audit Q3(d) essays against Level 4 mark-scheme descriptors: check that pupils weigh structural Depression misery (Carr) as the precondition activated by Nazi campaigning (Evans).",
+                "instruction": "Audit Q3(d) essays against Level 4 mark-scheme descriptors: check that pupils weigh structural Depression misery (Carr) as the precondition activated by Nazi campaigning (Evans)."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -11479,50 +12022,57 @@ export default {
           "term": "The Wall Street Crash",
           "def": "The catastrophic collapse of the US stock market in October 1929 that triggered a global economic depression.",
           "syllables": "The Wall Street Crash",
-          "phonetic": "the wall street crash",
-          "tier": "2"
+          "phonetic": "thuh WAWL STREET KRASH",
+          "tier": "2",
+          "pronunciation": "thuh WAWL STREET KRASH"
         },
         {
           "term": "KPD (Communist Party of Germany)",
           "def": "The extreme left-wing party that wanted a Russian-style revolution; their support surged among unemployed workers.",
           "syllables": "KPD (Co-mmu-nist Pa-rty of Ge-rma-ny)",
-          "phonetic": "kpd (communist party of germany)",
-          "tier": "2"
+          "phonetic": "kay-pee-DEE (KOM-yoo-nist PAH-tee uv JUR-muh-nee)",
+          "tier": "2",
+          "pronunciation": "kay-pee-DEE (KOM-yoo-nist PAH-tee uv JUR-muh-nee)"
         },
         {
           "term": "Hermann Müller",
           "def": "The Weimar Chancellor whose 'Grand Coalition' collapsed in 1930 because politicians could not agree on how to handle the economic crisis.",
           "syllables": "He-rmann Müller",
-          "phonetic": "hermann müller",
-          "tier": "2"
+          "phonetic": "HAIR-man MYOO-luh",
+          "tier": "2",
+          "pronunciation": "HAIR-man MYOO-luh"
         },
         {
           "term": "Heinrich Brüning",
           "def": "The Weimar Chancellor (1930–1932) whose harsh economic policies earned him the nickname the 'Hunger Chancellor'.",
           "syllables": "Hei-nrich Brüning",
-          "phonetic": "heinrich brüning",
-          "tier": "2"
+          "phonetic": "HYNE-rikh BROO-ning",
+          "tier": "2",
+          "pronunciation": "HYNE-rikh BROO-ning"
         },
         {
           "term": "Article 48",
           "def": "The emergency decree clause in the constitution, heavily overused by President Hindenburg after 1930, bypassing the democratic Reichstag.",
           "syllables": "Ar-ti-cle 48",
-          "phonetic": "ˈɑːtɪkl",
-          "tier": "3"
+          "phonetic": "AH-tih-kul FAW-tee-AYT",
+          "tier": "3",
+          "pronunciation": "AH-tih-kul FAW-tee-AYT"
         },
         {
           "term": "Negative Cohesion",
           "def": "The idea that people supported the Nazis not because they shared Nazi beliefs, but because they shared the same fears and hatreds (e.g., a shared terror of communism).",
           "syllables": "Ne-gati-ve Co-hesion",
-          "phonetic": "negative cohesion",
-          "tier": "2"
+          "phonetic": "NEG-uh-tiv koh-HEE-zhun",
+          "tier": "2",
+          "pronunciation": "NEG-uh-tiv koh-HEE-zhun"
         },
         {
           "term": "Rotfrontkämpferbund (Red Front Fighters' League)",
           "def": "The violent paramilitary wing of the Communist Party.",
           "syllables": "Ro-tfrontkämpfe-rbund (Red Front Fi-ghters' Lea-gue)",
-          "phonetic": "rotfrontkämpferbund (red front fighters' league)",
-          "tier": "2"
+          "phonetic": "ROHT-front-kemp-fuh-buund (RED FRUNT FY-tuhz LEEG)",
+          "tier": "2",
+          "pronunciation": "ROHT-front-kemp-fuh-buund (RED FRUNT FY-tuhz LEEG)"
         }
       ],
       "vocab_cloze_text": "Following the [The Wall Street Crash] in 1929, Germany suffered massive unemployment. The democratic government failed to cope; [Hermann Müller] resigned when his coalition collapsed, and his replacement, [Heinrich Brüning], relied heavily on [Article 48] to pass harsh laws. As unemployment rose, many workers flocked to the [KPD (Communist Party of Germany)], who used their violent [Rotfrontkämpferbund (Red Front Fighters' League)] to fight in the streets. Terrified of a communist revolution, many middle-class Germans began to support the Nazis through [Negative Cohesion]—not because they loved Hitler, but because they shared his hatred of communists.",
@@ -13798,6 +14348,77 @@ export default {
           "Source C": "On 30 January 1933, Adolf Hitler was officially sworn in as Chancellor of Germany; Goebbels recorded the jubilant atmosphere inside the Nazi headquarters at the Hotel Kaiserhof. Hinge Question: How did Goebbels immediately use the mass torchlight parade through Berlin to create an irresistible psychological impression that a new era had begun?",
           "Source D": "General Kurt von Schleicher served as Chancellor for just 57 days; his failure to build a parliamentary majority and his alienation of wealthy Prussian landowners led directly to Hindenburg turning to Hitler. Hinge Question: Why did General von Schleicher's attempt to split the Nazi Party by offering the Vice-Chancellorship to Gregor Strasser end in complete disaster?",
           "Source E": "On 30 January 1933, the new coalition cabinet was photographed in the Reich Chancellery: out of twelve ministers, only three were National Socialists (Hitler, Frick, Göring), giving conservatives the illusion of control. Hinge Question: How did the photograph of the conservative-dominated cabinet deceive foreign diplomats and moderate Germans into believing Hitler would be restrained?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Nov 1932 Nazi Setback, Papen vs Schleicher & Schröder’s Villa (Stages 1–3) (50 mins)",
+            "focus": "Nov 1932 Setback, Schleicher & Backstairs Deals (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 2.3 and KT 1.1 (Hindenburg’s presidential powers, Brüning’s sacking in May 1932, and why Hindenburg refused Hitler the Chancellorship despite 230 seats in July 1932).",
+                "instruction": "Spaced retrieval Do Now on KT 2.3 and KT 1.1 (Hindenburg’s presidential powers, Brüning’s sacking in May 1932, and why Hindenburg refused Hitler the Chancellorship despite 230 seats in July 1932)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Unpack the political deadlock of late 1932: Nazi votes falling to 196 seats in Nov 1932 amid party bankruptcy, Franz von Papen’s isolated \"Cabinet of Barons\", Kurt von Schleicher’s failed Dec 1932 bid to split Gregor Strasser, and Papen’s secret Jan 1933 pact with Hitler at banker Schröder’s villa.",
+                "instruction": "Unpack the political deadlock of late 1932: Nazi votes falling to 196 seats in Nov 1932 amid party bankruptcy, Franz von Papen’s isolated \"Cabinet of Barons\", Kurt von Schleicher’s failed Dec 1932 bid to split Gregor Strasser, and Papen’s secret Jan 1933 pact with Hitler at banker Schröder’s villa."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Nov 1932 election drop from 230 to 196 seats) and Source B (General von Schleicher) to bust the myth that Hitler was swept into office at his electoral peak.",
+                "instruction": "Scrutinise Source A (Nov 1932 election drop from 230 to 196 seats) and Source B (General von Schleicher) to bust the myth that Hitler was swept into office at his electoral peak."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: \"Pushing Hitler into a Corner\", 30 Jan 1933 & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "30 Jan 1933 Appointment & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the July vs Nov 1932 Reichstag seat totals, Gregor Strasser’s resignation, and why Schleicher lost Hindenburg’s trust.",
+                "instruction": "Retrieval check on the July vs Nov 1932 Reichstag seat totals, Gregor Strasser’s resignation, and why Schleicher lost Hindenburg’s trust."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Camarilla intrigue involving Oskar von Hindenburg, Papen’s boast to \"push Hitler into a corner\" with only two other Nazis in cabinet, and Hitler’s legal swearing-in on 30 Jan 1933), inspect Sources C–E, and contrast Interpretations 1 & 2 (Ian Kershaw on democratic collapse vs Henry Ashby Turner on elite miscalculation).",
+                "instruction": "Read Stages 4–5 (Camarilla intrigue involving Oskar von Hindenburg, Papen’s boast to \"push Hitler into a corner\" with only two other Nazis in cabinet, and Hitler’s legal swearing-in on 30 Jan 1933), inspect Sources C–E, and contrast Interpretations 1 & 2 (Ian Kershaw on democratic collapse vs Henry Ashby Turner on elite miscalculation)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Papen’s scheme and Q2 [12m] Explain why Adolf Hitler was appointed Chancellor of Germany in January 1933 (or Section B Q3d).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Papen’s scheme and Q2 [12m] Explain why Adolf Hitler was appointed Chancellor of Germany in January 1933 (or Section B Q3d)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT check: confirm Q2 connects Nazi electoral weight (largest party) directly to Weimar parliamentary paralysis and conservative Camarilla intrigue.",
+                "instruction": "DIRT check: confirm Q2 connects Nazi electoral weight (largest party) directly to Weimar parliamentary paralysis and conservative Camarilla intrigue."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -13879,43 +14500,49 @@ export default {
           "term": "Paul von Hindenburg",
           "def": "The 84-year-old conservative President of the Weimar Republic and former WW1 military hero.",
           "syllables": "Paul von Hi-ndenburg",
-          "phonetic": "paul von hindenburg",
-          "tier": "2"
+          "phonetic": "POWL fon HIN-dun-burg",
+          "tier": "2",
+          "pronunciation": "POWL fon HIN-dun-burg"
         },
         {
           "term": "The Camarilla",
           "def": "The small, powerful inner circle of advisors who heavily influenced President Hindenburg (including his son, Oskar, and Otto von Meissner).",
           "syllables": "The Ca-mari-lla",
-          "phonetic": "the camarilla",
-          "tier": "2"
+          "phonetic": "thuh kam-uh-RIL-uh",
+          "tier": "2",
+          "pronunciation": "thuh kam-uh-RIL-uh"
         },
         {
           "term": "Franz von Papen",
           "def": "A wealthy, conservative nobleman and Chancellor (1932) who plotted to put Hitler in power so he could control him.",
           "syllables": "Franz von Pa-pen",
-          "phonetic": "franz von papen",
-          "tier": "2"
+          "phonetic": "FRANTS fon PAH-pun",
+          "tier": "2",
+          "pronunciation": "FRANTS fon PAH-pun"
         },
         {
           "term": "Kurt von Schleicher",
           "def": "An influential army general and Chancellor (1932–1933) who warned against a Nazi government but was ultimately betrayed by Papen.",
           "syllables": "Kurt von Schlei-cher",
-          "phonetic": "kurt von schleicher",
-          "tier": "2"
+          "phonetic": "KUURT fon SHLY-khuh",
+          "tier": "2",
+          "pronunciation": "KUURT fon SHLY-khuh"
         },
         {
           "term": "Backstairs Intrigue",
           "def": "Secret political deal-making done behind closed doors by a small group of elites, ignoring the democratic process.",
           "syllables": "Ba-ckstairs I-ntri-gue",
-          "phonetic": "backstairs intrigue",
-          "tier": "2"
+          "phonetic": "BAK-stairz IN-treeg",
+          "tier": "2",
+          "pronunciation": "BAK-stairz IN-treeg"
         },
         {
           "term": "Cabinet",
           "def": "The committee of senior government ministers who help the Chancellor run the country.",
           "syllables": "Ca-binet",
-          "phonetic": "cabinet",
-          "tier": "2"
+          "phonetic": "KAB-ih-nit",
+          "tier": "2",
+          "pronunciation": "KAB-ih-nit"
         }
       ],
       "vocab_cloze_text": "By 1932, the ageing President [Paul von Hindenburg] was heavily influenced by a small group of advisors known as [The Camarilla]. After the fall of Brüning, the President appointed the conservative [Franz von Papen] as Chancellor, but he lacked support. Following the brief and disastrous Chancellorship of [Kurt von Schleicher], Papen engaged in [Backstairs Intrigue]—secretly plotting to make Hitler Chancellor. The elites severely underestimated Hitler; they believed that by restricting the number of Nazis in the [Cabinet], they could easily control him.",
@@ -16033,6 +16660,77 @@ export default {
           "Source C": "Speaking before an assembly surrounded by armed SA and SS men chanting threats of execution, Otto Wels led the 94 SPD deputies present in voting against the Enabling Act, preserving the party's democratic honour. Hinge Question: Why did the SPD stand alone in voting against the Enabling Act while the Catholic Centre Party voted in favour?",
           "Source D": "By 1934, Ernst Röhm commanded nearly 3 million SA men and openly criticized Hitler for compromising with big business and the Prussian military aristocracy, demanding that the SA absorb the regular Reichswehr. Hinge Question: Why did Ernst Röhm's vision of replacing the regular army with a mass SA people's militia represent an existential threat to Hitler's alliance with the German General Staff?",
           "Source E": "On the Night of the Long Knives (30 June 1934), the SS murdered over 80 SA leaders, conservative politicians, and critics; in this speech, Hitler openly declared himself the \"supreme judge\" whose will superseded all written laws. Hinge Question: How did Hitler's self-proclamation as the \"Supreme Judge\" (Oberster Gerichtsherr) fundamentally subvert the rule of law in Germany?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Reichstag Fire, Emergency Decree & the Enabling Act (Stages 1–3) (50 mins)",
+            "focus": "Reichstag Fire, Emergency Decree & Enabling Act (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 2.4 and KT 1.1 (why conservatives thought Hitler was \"boxed in\" with 3 of 12 cabinet posts on 30 Jan 1933, Article 48, and Röhm’s 3-million-strong SA).",
+                "instruction": "Spaced retrieval Do Now on KT 2.4 and KT 1.1 (why conservatives thought Hitler was \"boxed in\" with 3 of 12 cabinet posts on 30 Jan 1933, Article 48, and Röhm’s 3-million-strong SA)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace the legal destruction of Weimar democracy in four weeks: Marinus van der Lubbe and the 27 Feb 1933 Reichstag Fire, the 28 Feb Article 48 Emergency Decree jailing 4,000 communists, the March election (43.9%), and the 23 March Enabling Act passed 444–94 at the Kroll Opera House.",
+                "instruction": "Trace the legal destruction of Weimar democracy in four weeks: Marinus van der Lubbe and the 27 Feb 1933 Reichstag Fire, the 28 Feb Article 48 Emergency Decree jailing 4,000 communists, the March election (43.9%), and the 23 March Enabling Act passed 444–94 at the Kroll Opera House."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (the Reichstag Fire Decree suspending civil liberties) with Source B (SPD leader Otto Wels’s courageous speech opposing the Enabling Act).",
+                "instruction": "Compare Source A (the Reichstag Fire Decree suspending civil liberties) with Source B (SPD leader Otto Wels’s courageous speech opposing the Enabling Act)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Gleichschaltung, Night of the Long Knives, Führer Oath & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Night of the Long Knives, Führer Oath & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the 28 Feb Reichstag Fire Decree vs the 23 March Enabling Act (4-year lawmaking without Reichstag or President) and why KPD deputies were absent.",
+                "instruction": "Retrieval check on the 28 Feb Reichstag Fire Decree vs the 23 March Enabling Act (4-year lawmaking without Reichstag or President) and why KPD deputies were absent."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Gleichschaltung abolishing trade unions in May and all rival parties in July 1933; the 30 June 1934 Night of the Long Knives purging Ernst Röhm and von Schleicher; Hindenburg’s death on 2 Aug 1934 and the army’s personal oath to Hitler) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (Gleichschaltung abolishing trade unions in May and all rival parties in July 1933; the 30 June 1934 Night of the Long Knives purging Ernst Röhm and von Schleicher; Hindenburg’s death on 2 Aug 1934 and the army’s personal oath to Hitler) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on the Reichstag Fire Decree and Q2 [12m] Explain why the Nazi regime was able to establish a one-party dictatorship by August 1934.",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on the Reichstag Fire Decree and Q2 [12m] Explain why the Nazi regime was able to establish a one-party dictatorship by August 1934."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-review Q2 answers with DIRT highlighters to verify chronological accuracy and distinct analysis of legal powers, Gleichschaltung, and winning Wehrmacht backing.",
+                "instruction": "Peer-review Q2 answers with DIRT highlighters to verify chronological accuracy and distinct analysis of legal powers, Gleichschaltung, and winning Wehrmacht backing."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -16578,43 +17276,49 @@ export default {
           "term": "The Reichstag Fire",
           "definition": "The arson attack on the German parliament building in February 1933, blamed on communists and used to suspend civil liberties.",
           "syllables": "The Reichs-tag Fire",
-          "phonetic": "the ˈraɪçstɑːk fire",
-          "tier": "3"
+          "phonetic": "thuh RYKES-tahg FY-uh",
+          "tier": "3",
+          "pronunciation": "thuh RYKES-tahg FY-uh"
         },
         {
           "term": "The Enabling Act (1933)",
           "definition": "Emergency legislation passed in March 1933 that granted Hitler dictatorial power to enact laws without the Reichstag.",
           "syllables": "The E-na-bling Act (1933)",
-          "phonetic": "the enabling act (1933)",
-          "tier": "3"
+          "phonetic": "thuh in-AY-bling AKT (nine-teen thur-tee-THREE)",
+          "tier": "3",
+          "pronunciation": "thuh in-AY-bling AKT (nine-teen thur-tee-THREE)"
         },
         {
           "term": "Gleichschaltung",
           "definition": "The Nazi policy of 'coordination'—bringing every aspect of German society, institutions, and government under total Nazi control.",
           "syllables": "Gleich-schal-tung",
-          "phonetic": "ˈɡlaɪçˌʃaltʊŋ",
-          "tier": "3"
+          "phonetic": "GLYKE-shal-tuung",
+          "tier": "3",
+          "pronunciation": "GLYKE-shal-tuung"
         },
         {
           "term": "Trade Unions",
           "definition": "Workers' organisations banned and destroyed by the Nazis in May 1933 to prevent strikes and control industrial labour.",
           "syllables": "Tra-de U-nions",
-          "phonetic": "trade unions",
-          "tier": "3"
+          "phonetic": "TRAYD YOON-yunz",
+          "tier": "3",
+          "pronunciation": "TRAYD YOON-yunz"
         },
         {
           "term": "The Night of the Long Knives (1934)",
           "definition": "Hitler's bloody purge in June 1934 where the SS murdered Ernst Röhm and senior SA leaders to secure army loyalty.",
           "syllables": "The Night of the Long Kni-ves (1934)",
-          "phonetic": "the night of the long knives (1934)",
-          "tier": "2"
+          "phonetic": "thuh NYTE uv thuh LONG NYVZ (nine-teen thur-tee-FAWR)",
+          "tier": "2",
+          "pronunciation": "thuh NYTE uv thuh LONG NYVZ (nine-teen thur-tee-FAWR)"
         },
         {
           "term": "Führer",
           "definition": "The supreme title ('Leader') assumed by Adolf Hitler in August 1934 when he merged the roles of Chancellor and President.",
           "syllables": "Füh-rer",
-          "phonetic": "ˈfjʊərər",
-          "tier": "3"
+          "phonetic": "FYOOR-uh",
+          "tier": "3",
+          "pronunciation": "FYOOR-uh"
         }
       ],
       "narrative_blocks": [
@@ -17907,6 +18611,77 @@ export default {
           "Source C": "Enraged by the traditional Supreme Court's acquittal of three communist leaders in the Reichstag fire trial, Hitler established the People's Court with fanatical Nazi assessors, where death sentences became standard for political dissent. Hinge Question: Why did Hitler insist on creating a parallel political court system rather than relying exclusively on the existing German judiciary?",
           "Source D": "After Hitler repeatedly violated the 1933 Concordat by shutting Catholic youth groups and arresting priests on fabricated currency and immorality charges, Pope Pius XI issued this scathing encyclical, sparking ferocious Gestapo retaliation. Hinge Question: Why did the Catholic Church issue a public theological condemnation of Nazi racial idolatry yet avoid directly calling for political rebellion against Hitler?",
           "Source E": "Formed in reaction to Ludwig Müller's Nazi-controlled \"German Christians\" who attempted to remove the Old Testament and exclude baptized Jews, the Confessing Church asserted that the Church answered only to Christ, not the totalitarian Führer. Hinge Question: Why was the Confessing Church able to resist Nazi control over church doctrine without actively challenging the regime's political atrocities or anti-Semitism?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Himmler’s SS, the Gestapo & Nazified Courts (Stages 1–3) (50 mins)",
+            "focus": "The SS, Gestapo & People’s Court (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 3.1 (28 Feb Emergency Decree, Enabling Act, Gleichschaltung, and how the Night of the Long Knives elevated Himmler’s SS over the SA).",
+                "instruction": "Spaced retrieval Do Now on KT 3.1 (28 Feb Emergency Decree, Enabling Act, Gleichschaltung, and how the Night of the Long Knives elevated Himmler’s SS over the SA)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Examine the machinery of the Nazi police state: Himmler’s 240,000-man SS and Dachau concentration camp (March 1933), Heydrich’s small Gestapo (32,000 officers for 70m citizens) relying on neighbour denunciations and Schutzhaft, and Roland Freisler’s People’s Court (Volksgerichtshof).",
+                "instruction": "Examine the machinery of the Nazi police state: Himmler’s 240,000-man SS and Dachau concentration camp (March 1933), Heydrich’s small Gestapo (32,000 officers for 70m citizens) relying on neighbour denunciations and Schutzhaft, and Roland Freisler’s People’s Court (Volksgerichtshof)."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (Himmler’s press statement opening Dachau) and Source B (1936 Düsseldorf Gestapo denunciation dossier) to bust the myth of an all-seeing Gestapo.",
+                "instruction": "Interrogate Source A (Himmler’s press statement opening Dachau) and Source B (1936 Düsseldorf Gestapo denunciation dossier) to bust the myth of an all-seeing Gestapo."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: The Vatican Concordat, Reich Church vs Confessing Church & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Nazi Church Policy & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on SS vs SD vs Gestapo roles, Schutzhaft (\"protective custody\"), Block Wardens, and the People’s Court.",
+                "instruction": "Retrieval check on SS vs SD vs Gestapo roles, Schutzhaft (\"protective custody\"), Block Wardens, and the People’s Court."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (the broken July 1933 Vatican Concordat and Pope Pius XI’s smuggled 1937 encyclical Mit brennender Sorge; Reich Bishop Ludwig Müller’s Nazified Protestant Reich Church vs Martin Niemöller’s Confessing Church) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (the broken July 1933 Vatican Concordat and Pope Pius XI’s smuggled 1937 encyclical Mit brennender Sorge; Reich Bishop Ludwig Müller’s Nazified Protestant Reich Church vs Martin Niemöller’s Confessing Church) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on public fear of the Gestapo and Q2 [12m] Explain why the Nazi police state and control over the churches was effective in the years 1933–1939 (or Q3a [8m] Source Utility).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on public fear of the Gestapo and Q2 [12m] Explain why the Nazi police state and control over the churches was effective in the years 1933–1939 (or Q3a [8m] Source Utility)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT check: ensure Q2 explains how terror worked alongside public self-policing and institutional compromise with church hierarchies.",
+                "instruction": "DIRT check: ensure Q2 explains how terror worked alongside public self-policing and institutional compromise with church hierarchies."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -17988,50 +18763,57 @@ export default {
           "term": "SS (Schutzstaffel)",
           "definition": "Originally Hitler’s private bodyguards, they became the most powerful armed force in Germany, running the police state and concentration camps under Heinrich Himmler.",
           "syllables": "S-S (Schu-tzstaffel)",
-          "phonetic": "ˌɛs ˈɛs (schutzstaffel)",
-          "tier": "2"
+          "phonetic": "ess-ESS (SHUUTS-shtaf-ul)",
+          "tier": "2",
+          "pronunciation": "ess-ESS (SHUUTS-shtaf-ul)"
         },
         {
           "term": "SD (Sicherheitsdienst)",
           "definition": "The intelligence and security agency of the Nazi Party, commanded by Reinhard Heydrich. They spied on opponents.",
           "syllables": "SD (Si-cherhei-tsdienst)",
-          "phonetic": "sd (sicherheitsdienst)",
-          "tier": "3"
+          "phonetic": "ess-DEE (ZIKH-uh-hytes-deenst)",
+          "tier": "3",
+          "pronunciation": "ess-DEE (ZIKH-uh-hytes-deenst)"
         },
         {
           "term": "Gestapo",
           "definition": "The official non-uniformed Secret State Police. Their primary job was to identify, arrest, and interrogate political opponents.",
           "syllables": "Ge-sta-po",
-          "phonetic": "ɡəˈstɑːpəʊ",
-          "tier": "3"
+          "phonetic": "guh-STAH-poh",
+          "tier": "3",
+          "pronunciation": "guh-STAH-poh"
         },
         {
           "term": "Schutzhaft (Protective Custody)",
           "definition": "A Nazi legal loophole that allowed the Gestapo to arrest and imprison anyone indefinitely without a trial or judge's permission.",
           "syllables": "Schu-tzhaft (Pro-te-cti-ve Cu-sto-dy)",
-          "phonetic": "schutzhaft (protective custody)",
-          "tier": "3"
+          "phonetic": "SHUUTS-haft (pruh-TEK-tiv KUS-tuh-dee)",
+          "tier": "3",
+          "pronunciation": "SHUUTS-haft (pruh-TEK-tiv KUS-tuh-dee)"
         },
         {
           "term": "The Concordat (1933)",
           "definition": "A formal treaty signed between the Nazi government and the Catholic Pope.",
           "syllables": "The con-cor-dat (1933)",
-          "phonetic": "the kənˈkɔːdæt (1933)",
-          "tier": "3"
+          "phonetic": "thuh kon-KAW-dat (nine-teen thur-tee-THREE)",
+          "tier": "3",
+          "pronunciation": "thuh kon-KAW-dat (nine-teen thur-tee-THREE)"
         },
         {
           "term": "Reich Church",
           "definition": "A Nazified version of the Protestant Church, which merged traditional Christianity with Nazi racial ideas.",
           "syllables": "Reich Church",
-          "phonetic": "reich church",
-          "tier": "3"
+          "phonetic": "RYKE CHURCH",
+          "tier": "3",
+          "pronunciation": "RYKE CHURCH"
         },
         {
           "term": "Confessional Church",
           "definition": "An illegal, breakaway Protestant church set up in direct opposition to the Nazis' interference in religion.",
           "syllables": "Co-nfessio-nal Church",
-          "phonetic": "confessional church",
-          "tier": "3"
+          "phonetic": "kun-FESH-uh-nul CHURCH",
+          "tier": "3",
+          "pronunciation": "kun-FESH-uh-nul CHURCH"
         }
       ],
       "vocab_cloze_text": "To enforce absolute terror, Heinrich Himmler expanded the [SS (Schutzstaffel)] into a massive racial elite that controlled the entire police apparatus, including the intelligence-gathering [SD (Sicherheitsdienst)]. The secret police, the [Gestapo], ruthlessly hunted down opposition, utilizing [Schutzhaft (Protective Custody)] to throw thousands of political prisoners into concentration camps without trial. While Hitler initially tried to pacify Catholics by signing [The Concordat (1933)], he soon broke his promises, and also forced Protestants into a unified, Nazi-aligned [Reich Church], which prompted dissenting pastors to break away and form the opposition [Confessional Church].",
@@ -19695,6 +20477,77 @@ export default {
           "Source C": "Staged annually each September at Albert Speer's colossal stadium complex, the Nuremberg Rallies brought together over 500,000 participants in highly choreographed displays of military power, torchlight processions, and emotional veneration of the Führer. Hinge Question: To what extent were Nazi mass rallies designed to intimidate domestic and foreign observers rather than merely entertain party loyalists?",
           "Source D": "Following the notorious 1937 'Degenerate Art' exhibition in Munich, Goebbels and the Reich Chamber of Music mounted the 'Degenerate Music' exhibition in Düsseldorf to denounce jazz, atonal music, and Jewish composers like Mendelssohn and Mahler as racial poison. Hinge Question: Why did the Nazi regime expend so much state energy persecuting modernist painters and jazz musicians when economic and military rearmament were underway?",
           "Source E": "Through the 1933 Editors' Law and mandatory daily press conferences, the Propaganda Ministry dictated exact headlines, prohibited negative domestic news, and ordered fabricated stories, turning all 3,000 German newspapers into mouthpieces of the state. Hinge Question: Why was secret daily editorial guidance from the Propaganda Ministry more effective at controlling the press than simply shutting down every non-Nazi newspaper?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Goebbels’ Ministry, the People’s Receiver & Nuremberg Rallies (Stages 1–3) (50 mins)",
+            "focus": "Goebbels, Radio Censorship & Nuremberg Rallies (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now connecting KT 1.4 and KT 2.3–3.2 (Weimar Bauhaus/modernist culture, Goebbels’ 1930–32 election campaigns, and Gestapo surveillance).",
+                "instruction": "Spaced retrieval Do Now connecting KT 1.4 and KT 2.3–3.2 (Weimar Bauhaus/modernist culture, Goebbels’ 1930–32 election campaigns, and Gestapo surveillance)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Unpack Goebbels’ dual weapon of censorship and spectacle: the March 1933 Propaganda Ministry and Reich Chamber of Culture, the cheap 76-mark Volksempfänger radio (in 70% of homes by 1939, unable to tune foreign stations), and Albert Speer’s Nuremberg \"Cathedral of Light\".",
+                "instruction": "Unpack Goebbels’ dual weapon of censorship and spectacle: the March 1933 Propaganda Ministry and Reich Chamber of Culture, the cheap 76-mark Volksempfänger radio (in 70% of homes by 1939, unable to tune foreign stations), and Albert Speer’s Nuremberg \"Cathedral of Light\"."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (Goebbels’ 15 March 1933 address) and Source B (the VE301 Volksempfänger) on piping ideology directly into family living rooms and cafés.",
+                "instruction": "Scrutinise Source A (Goebbels’ 15 March 1933 address) and Source B (the VE301 Volksempfänger) on piping ideology directly into family living rooms and cafés."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: 1936 Berlin Olympics, Degenerate Art & Paper 3 Section B (Stages 4–5) (50 mins)",
+            "focus": "1936 Olympics, Cultural Purge & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on the Reich Chamber of Culture, Editors’ Law press censorship, Volksempfänger reach, and Nuremberg Rally choreography.",
+                "instruction": "Retrieval check on the Reich Chamber of Culture, Editors’ Law press censorship, Volksempfänger reach, and Nuremberg Rally choreography."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (hiding antisemitic signs for the Aug 1936 Berlin Olympics and Jesse Owens’s 4 golds; May 1933 student book burnings and the 1937 Entartete Kunst exhibition), inspect Sources C–E, and contrast Interpretation 1 (David Welch on persuasive propaganda and genuine enthusiasm) with Interpretation 2 (Richard J. Evans on coercive Gestapo terror).",
+                "instruction": "Read Stages 4–5 (hiding antisemitic signs for the Aug 1936 Berlin Olympics and Jesse Owens’s 4 golds; May 1933 student book burnings and the 1937 Entartete Kunst exhibition), inspect Sources C–E, and contrast Interpretation 1 (David Welch on persuasive propaganda and genuine enthusiasm) with Interpretation 2 (Richard J. Evans on coercive Gestapo terror)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about Nazi methods of controlling attitudes (1933–39)?",
+                "instruction": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about Nazi methods of controlling attitudes (1933–39)?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Self-audit Q3(d) essays: verify balanced evaluation of consent/persuasion (Welch) vs underlying fear of camps and denunciations (Evans).",
+                "instruction": "Self-audit Q3(d) essays: verify balanced evaluation of consent/persuasion (Welch) vs underlying fear of camps and denunciations (Evans)."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -19776,43 +20629,49 @@ export default {
           "term": "Censorship",
           "definition": "The government banning or hiding information, preventing the public from seeing anything critical of the regime.",
           "syllables": "Ce-nsorship",
-          "phonetic": "censorship",
-          "tier": "2"
+          "phonetic": "SEN-suh-ship",
+          "tier": "2",
+          "pronunciation": "SEN-suh-ship"
         },
         {
           "term": "Propaganda",
           "definition": "Spreading highly biased, one-sided information to manipulate how people think and behave.",
           "syllables": "prop-a-gan-da",
-          "phonetic": "ˌprɒpəˈɡændə",
-          "tier": "2"
+          "phonetic": "prop-uh-GAN-duh",
+          "tier": "2",
+          "pronunciation": "prop-uh-GAN-duh"
         },
         {
           "term": "Ministry of Public Enlightenment and Propaganda",
           "definition": "The government department created in 1933, led by Dr Joseph Goebbels, to control the media.",
           "syllables": "Mi-ni-stry of Pu-blic E-nlighte-nment and prop-a-gan-da",
-          "phonetic": "ministry of public enlightenment and ˌprɒpəˈɡændə",
-          "tier": "2"
+          "phonetic": "MIN-ih-stree uv PUB-lik in-LY-tun-munt und prop-uh-GAN-duh",
+          "tier": "2",
+          "pronunciation": "MIN-ih-stree uv PUB-lik in-LY-tun-munt und prop-uh-GAN-duh"
         },
         {
           "term": "Volksempfänger (People’s Receiver)",
           "definition": "A cheap, mass-produced radio designed so that ordinary Germans could afford to listen to Hitler's speeches.",
           "syllables": "Vo-lksempfänger (Peo-ple’s Re-cei-ver)",
-          "phonetic": "volksempfänger (people’s receiver)",
-          "tier": "2"
+          "phonetic": "FOLKS-emp-feng-uh (PEE-pulz rih-SEE-vuh)",
+          "tier": "2",
+          "pronunciation": "FOLKS-emp-feng-uh (PEE-pulz rih-SEE-vuh)"
         },
         {
           "term": "Reich Chamber of Culture",
           "definition": "A state-run organisation that controlled all the arts; you could not work as an artist or musician unless you were a member.",
           "syllables": "Reich Cha-mber of Cu-ltu-re",
-          "phonetic": "reich chamber of culture",
-          "tier": "2"
+          "phonetic": "RYKE CHAYM-buh uv KUL-chuh",
+          "tier": "2",
+          "pronunciation": "RYKE CHAYM-buh uv KUL-chuh"
         },
         {
           "term": "Entartete Kunst (Degenerate Art)",
           "definition": "The Nazi term for modern, abstract, or expressionist art, which they banned for being 'un-German'.",
           "syllables": "E-ntarte-te Kunst (De-gene-rate Art)",
-          "phonetic": "entartete kunst (degenerate art)",
-          "tier": "3"
+          "phonetic": "ent-AH-tuh-tuh KUUNST (dih-JEN-uh-rut AHT)",
+          "tier": "3",
+          "pronunciation": "ent-AH-tuh-tuh KUUNST (dih-JEN-uh-rut AHT)"
         }
       ],
       "vocab_cloze_text": "Under Joseph Goebbels' leadership, the powerful [Ministry of Public Enlightenment and Propaganda] relentlessly manipulated the German public through positive [Propaganda] and strict [Censorship] of all opposing viewpoints. To ensure Hitler's voice reached every home, the government mass-produced cheap radios known as the [Volksempfänger (People’s Receiver)]. All artists, writers, and musicians were forced to join the [Reich Chamber of Culture] to produce ideologically pure work, while any modern, abstract, or Jewish-influenced art was publicly mocked and banned as [Entartete Kunst (Degenerate Art)].",
@@ -21740,6 +22599,77 @@ export default {
           "Source C": "Following the suspension of civil liberties and total ban on opposition parties in 1933, socialist and communist couriers smuggled millions of tiny anti-fascist booklets across the border, disguised as innocent literary classics, cooking guides, or seed packets to evade Gestapo searches. Hinge Question: Why did underground political resisters invest immense resources into producing camouflaged literature when possession of such booklets carried the death penalty or concentration camp internment?",
           "Source D": "Banned from teaching by the Gestapo in 1936, Bonhoeffer trained clandestine pastors at Finkenwalde, arguing that Christians could not merely bandage the victims under the wheel of state injustice, but were morally obligated to jam a spoke into the wheel itself. Hinge Question: Why did Bonhoeffer argue that Christian duty under a criminal regime required active political resistance rather than passive spiritual non-cooperation?",
           "Source E": "Smuggled across the Czech border to the exiled SPD leadership, the Sopade reports provided the most comprehensive, realistic intelligence on the mood of ordinary German workers, recording quiet resentment tempered by paralyzing fear of the Gestapo. Hinge Question: Why did widespread economic grumbling and workplace dissatisfaction rarely translate into active political resistance against Hitler's dictatorship?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Conformity, Left-Wing Underground & the Edelweiss Pirates (Stages 1–3) (50 mins)",
+            "focus": "Conformity, Sopade Cells & Edelweiss Pirates (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 3.1–3.3 (banning of SPD/KPD and unions, Gestapo denunciations, Schutzhaft, and Goebbels’ monopoly over press and radio).",
+                "instruction": "Spaced retrieval Do Now on KT 3.1–3.3 (banning of SPD/KPD and unions, Gestapo denunciations, Schutzhaft, and Goebbels’ monopoly over press and radio)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Distinguish conformity, grumbling, passive resistance, and active resistance: explain why falling unemployment and terror kept open revolt rare, trace exiled SPD Sopade smugglers and KPD cells, and examine working-class Edelweiss Pirates in Cologne and Essen.",
+                "instruction": "Distinguish conformity, grumbling, passive resistance, and active resistance: explain why falling unemployment and terror kept open revolt rare, trace exiled SPD Sopade smugglers and KPD cells, and examine working-class Edelweiss Pirates in Cologne and Essen."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (1937 Sopade underground report on worker morale) and Source B (camouflaged Tarnschrift anti-Nazi pamphlet) on why organised resistance struggled.",
+                "instruction": "Compare Source A (1937 Sopade underground report on worker morale) and Source B (camouflaged Tarnschrift anti-Nazi pamphlet) on why organised resistance struggled."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Swing Youth, Christian Defiance & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Swing Youth, Church Opposition & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check contrasting passive dissent vs active resistance, Sopade smuggling methods, and Edelweiss Pirates’ clashes with Hitler Youth patrols.",
+                "instruction": "Retrieval check contrasting passive dissent vs active resistance, Sopade smuggling methods, and Edelweiss Pirates’ clashes with Hitler Youth patrols."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (affluent Swing Youth playing banned American jazz in Hamburg/Berlin; Pastor Niemöller in Sachsenhausen, Dietrich Bonhoeffer’s underground seminary, and Catholic pulpit protests), inspect Sources C–E, and compare Interpretations 1 & 2 (Helmreich vs Ericksen & Heschel on the churches).",
+                "instruction": "Read Stages 4–5 (affluent Swing Youth playing banned American jazz in Hamburg/Berlin; Pastor Niemöller in Sachsenhausen, Dietrich Bonhoeffer’s underground seminary, and Catholic pulpit protests), inspect Sources C–E, and compare Interpretations 1 & 2 (Helmreich vs Ericksen & Heschel on the churches)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on the Edelweiss Pirates and Q2 [12m] Explain why active opposition to the Nazi regime was limited in the years 1933–1939.",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on the Edelweiss Pirates and Q2 [12m] Explain why active opposition to the Nazi regime was limited in the years 1933–1939."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT check on Q2: confirm paragraphs balance Gestapo/SS repression, fragmentation of opposition leaders after 1933, and genuine approval of economic/foreign-policy gains.",
+                "instruction": "DIRT check on Q2: confirm paragraphs balance Gestapo/SS repression, fragmentation of opposition leaders after 1933, and genuine approval of economic/foreign-policy gains."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -21821,43 +22751,49 @@ export default {
           "term": "Conformity",
           "definition": "Obeying Nazi rules and blending into the crowd in public to avoid drawing the attention of the Gestapo.",
           "syllables": "Co-nformi-ty",
-          "phonetic": "conformity",
-          "tier": "3"
+          "phonetic": "kun-FAW-mih-tee",
+          "tier": "3",
+          "pronunciation": "kun-FAW-mih-tee"
         },
         {
           "term": "Passive Resistance",
           "definition": "Low-level, non-violent opposition, such as refusing to give the Nazi salute or circulating anti-Nazi jokes.",
           "syllables": "Pa-ssi-ve re-sist-ance",
-          "phonetic": "passive rɪˈzɪstəns",
-          "tier": "3"
+          "phonetic": "PAS-iv rih-ZIS-tuns",
+          "tier": "3",
+          "pronunciation": "PAS-iv rih-ZIS-tuns"
         },
         {
           "term": "Active Resistance",
           "definition": "Dangerous, direct actions aimed at overthrowing the regime, including sabotage, assassinations, and anti-Nazi leaflets.",
           "syllables": "A-cti-ve re-sist-ance",
-          "phonetic": "active rɪˈzɪstəns",
-          "tier": "3"
+          "phonetic": "AK-tiv rih-ZIS-tuns",
+          "tier": "3",
+          "pronunciation": "AK-tiv rih-ZIS-tuns"
         },
         {
           "term": "Pastor Niemöller",
           "definition": "Protestant pastor who co-founded the Confessional Church to oppose Nazi interference and was jailed in Sachsenhausen and Dachau.",
           "syllables": "Pas-tor Nie-möl-ler",
-          "phonetic": "pastor niemöller",
-          "tier": "3"
+          "phonetic": "PAH-stuh NEE-mer-luh",
+          "tier": "3",
+          "pronunciation": "PAH-stuh NEE-mer-luh"
         },
         {
           "term": "Edelweiss Pirates",
           "definition": "A working-class youth opposition movement that rejected the regimentation of the Hitler Youth and ambushed Nazi patrols.",
           "syllables": "E-de-lweiss Pi-rates",
-          "phonetic": "edelweiss pirates",
-          "tier": "3"
+          "phonetic": "AY-dul-vyss PY-ruts",
+          "tier": "3",
+          "pronunciation": "AY-dul-vyss PY-ruts"
         },
         {
           "term": "Swing Youth",
           "definition": "Middle-class teenagers who defied Nazi cultural controls by listening to banned American jazz music and wearing Western clothes.",
           "syllables": "Swing Youth",
-          "phonetic": "swing youth",
-          "tier": "3"
+          "phonetic": "SWING YOOTH",
+          "tier": "3",
+          "pronunciation": "SWING YOOTH"
         }
       ],
       "vocab_cloze_text": "While fear of the Gestapo ensured widespread [Conformity] across society, many citizens expressed quiet dissent through [Passive Resistance], such as telling political jokes or refusing the Nazi salute. In the Protestant churches, [Pastor Niemöller] co-founded the Confessional Church to resist Nazi control and was sent to a concentration camp. Far fewer risked their lives in open [Active Resistance]. Among the young, rebellion was cultural: middle-class teenagers formed the jazz-loving [Swing Youth], while working-class youths joined the rebellious [Edelweiss Pirates] to beat up Hitler Youth members.",
@@ -23813,6 +24749,77 @@ export default {
           "Source C": "Key statutory clauses from the Law for the Encouragement of Marriage, enacted by the Nazi government on 1 June 1933. Hinge Question: Did the marriage loan scheme succeed more as an employment measure or as an instrument of demographic engineering?",
           "Source D": "Statutory articles from the Law for the Prevention of Hereditarily Diseased Offspring, enacted on 14 July 1933. Hinge Question: How did the sterilization laws expose the fundamental divide in Nazi policy between racially favored Aryan mothers and citizens deemed biologically inferior?",
           "Source E": "Underground intelligence dispatch compiled by the exiled Social Democratic Party (Sopade) in December 1938 on the return of women to factories. Hinge Question: Why was the Nazi regime compelled to abandon its core domestic ideology for women when preparing for total war?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Kinder, Küche, Kirche, Marriage Loans & the Mother’s Cross (Stages 1–3) (50 mins)",
+            "focus": "Domestic Ideal, Marriage Loans & Lebensborn (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now contrasting KT 1.4 Weimar \"New Woman\" rights (Article 109, 32+ female MPs, professional careers) with KT 3.1 Gleichschaltung.",
+                "instruction": "Spaced retrieval Do Now contrasting KT 1.4 Weimar \"New Woman\" rights (Article 109, 32+ female MPs, professional careers) with KT 3.1 Gleichschaltung."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Explain Nazi gender reversal from 1933: sacking female doctors and civil servants, the 10% university cap, June 1933 1,000-mark Marriage Loans (25% written off per child if wives left work), the Mother’s Cross (4 bronze, 6 silver, 8+ gold), and Himmler’s Lebensborn clinics.",
+                "instruction": "Explain Nazi gender reversal from 1933: sacking female doctors and civil servants, the 10% university cap, June 1933 1,000-mark Marriage Loans (25% written off per child if wives left work), the Mother’s Cross (4 bronze, 6 silver, 8+ gold), and Himmler’s Lebensborn clinics."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Interrogate Source A (Goebbels’ March 1933 \"The Woman\" speech) and Source B (the June 1933 Marriage Loan law) to link demographic aims with cutting male unemployment.",
+                "instruction": "Interrogate Source A (Goebbels’ March 1933 \"The Woman\" speech) and Source B (the June 1933 Marriage Loan law) to link demographic aims with cutting male unemployment."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Forced Sterilisation, the 1937 Rearmament U-Turn & Paper 3 Writing (Stages 4–5) (50 mins)",
+            "focus": "Sterilisation, 1937 Labour U-Turn & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Kinder, Küche, Kirche, Gertrud Scholtz-Klink (NSF/DFW), 1,000-mark Marriage Loan conditions, and Lebensborn aims.",
+                "instruction": "Retrieval check on Kinder, Küche, Kirche, Gertrud Scholtz-Klink (NSF/DFW), 1,000-mark Marriage Loan conditions, and Lebensborn aims."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (compulsory sterilisation of ~300,000–400,000 people under the July 1933 Hereditary Health Law vs the 1937–39 rearmament labour shortage forcing Marriage-Loan wives and Duty Year girls back into factories and farms) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (compulsory sterilisation of ~300,000–400,000 people under the July 1933 Hereditary Health Law vs the 1937–39 rearmament labour shortage forcing Marriage-Loan wives and Duty Year girls back into factories and farms) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Q1 [4m] Two Inferences on propaganda for German mothers and Q2 [12m] Explain why Nazi policies towards women changed in the years 1933–1939.",
+                "instruction": "Complete Paper 3 Q1 [4m] Two Inferences on propaganda for German mothers and Q2 [12m] Explain why Nazi policies towards women changed in the years 1933–1939."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Peer-audit Q2 responses: check pupils explain the sharp contradiction between 1933 domestic ideology/job cuts and post-1936 Four-Year Plan rearmament shortages.",
+                "instruction": "Peer-audit Q2 responses: check pupils explain the sharp contradiction between 1933 domestic ideology/job cuts and post-1936 Four-Year Plan rearmament shortages."
+              }
+            ]
+          }
         }
       },
       "video": [
@@ -23929,50 +24936,57 @@ export default {
           "term": "Kinder, Küche, Kirche",
           "definition": "\"Children, Kitchen, Church\" – the traditional slogan that summarised the Nazi ideal for women.",
           "syllables": "Ki-nder, Küche, Ki-rche",
-          "phonetic": "kinder, küche, kirche",
-          "tier": "3"
+          "phonetic": "KIN-duh, KYOO-khuh, KEER-khuh",
+          "tier": "3",
+          "pronunciation": "KIN-duh, KYOO-khuh, KEER-khuh"
         },
         {
           "term": "Law for the Encouragement of Marriage (1933)",
           "definition": "A law providing government loans to young couples, provided the wife left her job.",
           "syllables": "Law for the E-ncou-rage-ment of Ma-rria-ge (1933)",
-          "phonetic": "law for the encouragement of marriage (1933)",
-          "tier": "2"
+          "phonetic": "LAW faw thuh in-KUR-ij-munt uv MA-rij (nine-teen thur-tee-THREE)",
+          "tier": "2",
+          "pronunciation": "LAW faw thuh in-KUR-ij-munt uv MA-rij (nine-teen thur-tee-THREE)"
         },
         {
           "term": "The Mother’s Cross (Mutterkreuz)",
           "definition": "An award given to women who had large numbers of children, treated like a military medal.",
           "syllables": "The Mo-ther’s Cross (Mu-tterkreuz)",
-          "phonetic": "the mother’s cross (mutterkreuz)",
-          "tier": "3"
+          "phonetic": "thuh MUTH-uhz KROS (MUU-tuh-kroyts)",
+          "tier": "3",
+          "pronunciation": "thuh MUTH-uhz KROS (MUU-tuh-kroyts)"
         },
         {
           "term": "Lebensborn (Spring of Life)",
           "definition": "A program started by Heinrich Himmler in 1935 to breed 'racially pure' Aryan children.",
           "syllables": "Le-be-nsborn (Spring of Li-fe)",
-          "phonetic": "lebensborn (spring of life)",
-          "tier": "2"
+          "phonetic": "LAY-bunz-bawn (SPRING uv LYFE)",
+          "tier": "2",
+          "pronunciation": "LAY-bunz-bawn (SPRING uv LYFE)"
         },
         {
           "term": "NS-Frauenschaft (NSF)",
           "definition": "The elite National Socialist Women's League.",
           "syllables": "NS-Fraue-nschaft (NSF)",
-          "phonetic": "ns-frauenschaft (nsf)",
-          "tier": "2"
+          "phonetic": "en-ess FROW-un-shaft (en-ess-EF)",
+          "tier": "2",
+          "pronunciation": "en-ess FROW-un-shaft (en-ess-EF)"
         },
         {
           "term": "Deutsches Frauenwerk (DFW)",
           "definition": "The massive German Women's Enterprise, overseen by the NSF, designed to educate women on domestic duties.",
           "syllables": "Deu-tsches Fraue-nwerk (DFW)",
-          "phonetic": "deutsches frauenwerk (dfw)",
-          "tier": "2"
+          "phonetic": "DOY-chus FROW-un-vairk (dee-ef-DUB-ul-yoo)",
+          "tier": "2",
+          "pronunciation": "DOY-chus FROW-un-vairk (dee-ef-DUB-ul-yoo)"
         },
         {
           "term": "Gertrud Scholtz-Klink",
           "definition": "The Reich Women's Leader, appointed by Hitler to oversee all women's organisations.",
           "syllables": "Ge-rtrud Scholtz-Klink",
-          "phonetic": "gertrud scholtz-klink",
-          "tier": "2"
+          "phonetic": "GAIR-truud SHOLTS-klink",
+          "tier": "2",
+          "pronunciation": "GAIR-truud SHOLTS-klink"
         }
       ],
       "vocab_cloze_text": "The Nazi regime firmly believed that a woman's true purpose was restricted to [Kinder, Küche, Kirche] (Children, Kitchen, Church). To boost the declining birth rate, the state passed the [Law for the Encouragement of Marriage (1933)], providing loans to young couples, and proudly awarded [The Mother’s Cross (Mutterkreuz)] to women who had large families. SS leaders like Himmler even went further by establishing the radical [Lebensborn (Spring of Life)] program to breed 'racially pure' children. To coordinate female indoctrination, the government dissolved independent women's groups and forced them to join the massive [Deutsches Frauenwerk (DFW)] and the elite [NS-Frauenschaft (NSF)], both overseen by the loyal Nazi leader [Gertrud Scholtz-Klink].",
@@ -25499,6 +26513,77 @@ export default {
           "Source C": "Mathematical word problems from an approved German secondary school textbook published in 1935 under the Reich Ministry of Education. Hinge Question: What made the incorporation of eugenics into basic math problems more insidious than political speeches?",
           "Source D": "Statutory clauses from the First Decree for the Implementation of the Law on the Hitler Youth, issued on 25 March 1939 making membership strictly compulsory. Hinge Question: Does the regime’s use of criminal penalties in Source A indicate the success or the failure of voluntary Nazi youth recruitment?",
           "Source E": "Clandestine intelligence report by the exiled Social Democratic Party (Sopade) in Autumn 1938 describing widespread evasion and drill fatigue in the Hitler Youth. Hinge Question: Why did the transformation of the Hitler Youth from a voluntary adventure club into a compulsory military drill unit alienate so many German teenagers?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: Hitler Youth, League of German Girls & Compulsory Laws (Stages 1–3) (50 mins)",
+            "focus": "Hitler Youth, BDM & Compulsory Laws (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now on KT 3.4 and KT 4.1 (Edelweiss Pirates, Swing Youth, Kinder, Küche, Kirche, and Nazi demographic war preparation).",
+                "instruction": "Spaced retrieval Do Now on KT 3.4 and KT 4.1 (Edelweiss Pirates, Swing Youth, Kinder, Küche, Kirche, and Nazi demographic war preparation)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Compare gendered youth conditioning under Baldur von Schirach: rifle drill, map-reading, and boxing in the Hitlerjugend (HJ) vs fitness and domestic motherhood training in the Bund Deutscher Mädel (BDM), reinforced by the Dec 1936 and March 1939 compulsory laws.",
+                "instruction": "Compare gendered youth conditioning under Baldur von Schirach: rifle drill, map-reading, and boxing in the Hitlerjugend (HJ) vs fitness and domestic motherhood training in the Bund Deutscher Mädel (BDM), reinforced by the Dec 1936 and March 1939 compulsory laws."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (March 1939 compulsory HJ conscription decree) and Source B (Hitler’s 1935 Nuremberg Youth speech) on why voluntary enthusiasm gave way to legal coercion.",
+                "instruction": "Scrutinise Source A (March 1939 compulsory HJ conscription decree) and Source B (Hitler’s 1935 Nuremberg Youth speech) on why voluntary enthusiasm gave way to legal coercion."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Nazifying Staffrooms, Racial Textbooks & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Nazified Schools, Curriculum & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on Jungvolk vs HJ, BDM vs Faith and Beauty Society, and why church and scout youth clubs were dissolved.",
+                "instruction": "Retrieval check on Jungvolk vs HJ, BDM vs Faith and Beauty Society, and why church and scout youth clubs were dissolved."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (Bernhard Rust sacking Jewish/democratic teachers, 97% joining the NSLB, compulsory Eugenics/Race Studies, 15% of timetable on PE, militarised Maths problems, and elite Napolas / Adolf Hitler Schools) alongside Sources C–E.",
+                "instruction": "Read Stages 4–5 (Bernhard Rust sacking Jewish/democratic teachers, 97% joining the NSLB, compulsory Eugenics/Race Studies, 15% of timetable on PE, militarised Maths problems, and elite Napolas / Adolf Hitler Schools) alongside Sources C–E."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Hitler Youth physical training and Q2 [12m] Explain why the Nazi regime placed such high importance on controlling the youth in the years 1933–1939 (or Q3a [8m] Source Utility).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Hitler Youth physical training and Q2 [12m] Explain why the Nazi regime placed such high importance on controlling the youth in the years 1933–1939 (or Q3a [8m] Source Utility)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "DIRT check against Grade 9 exemplars: verify Q2 covers future Wehrmacht soldiers, future Aryan mothers, and securing a \"Thousand-Year Reich\" loyal to Hitler above parents.",
+                "instruction": "DIRT check against Grade 9 exemplars: verify Q2 covers future Wehrmacht soldiers, future Aryan mothers, and securing a \"Thousand-Year Reich\" loyal to Hitler above parents."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -25580,50 +26665,57 @@ export default {
           "term": "Indoctrination",
           "definition": "Brainwashing people to accept a set of beliefs without question.",
           "syllables": "I-ndoctri-nation",
-          "phonetic": "indoctrination",
-          "tier": "2"
+          "phonetic": "in-dok-trih-NAY-shun",
+          "tier": "2",
+          "pronunciation": "in-dok-trih-NAY-shun"
         },
         {
           "term": "National Socialist Teachers' League (NSLB)",
           "definition": "The compulsory Nazi union for all teachers.",
           "syllables": "Na-tio-nal So-cia-list Tea-chers' Lea-gue (NSLB)",
-          "phonetic": "national socialist teachers' league (nslb)",
-          "tier": "3"
+          "phonetic": "NASH-uh-nul SOH-shuh-list TEE-chuhz LEEG (en-ess-el-BEE)",
+          "tier": "3",
+          "pronunciation": "NASH-uh-nul SOH-shuh-list TEE-chuhz LEEG (en-ess-el-BEE)"
         },
         {
           "term": "Bernhard Rust",
           "definition": "The Nazi Minister of Science, Education and National Culture.",
           "syllables": "Be-rnhard Rust",
-          "phonetic": "bernhard rust",
-          "tier": "3"
+          "phonetic": "BAIRN-hahd RUUST",
+          "tier": "3",
+          "pronunciation": "BAIRN-hahd RUUST"
         },
         {
           "term": "Eugenics (Race Studies)",
           "definition": "The pseudo-science of selective breeding to improve the 'Aryan' race, taught as a compulsory subject.",
           "syllables": "Eu-genics (Ra-ce Stu-dies)",
-          "phonetic": "eugenics (race studies)",
-          "tier": "2"
+          "phonetic": "yoo-JEN-iks (RAYS STUD-eez)",
+          "tier": "2",
+          "pronunciation": "yoo-JEN-iks (RAYS STUD-eez)"
         },
         {
           "term": "Hitlerjugend (HJ)",
           "definition": "The Hitler Youth (for boys aged 14–18).",
           "syllables": "Hi-tlerju-gend (HJ)",
-          "phonetic": "hitlerjugend (hj)",
-          "tier": "2"
+          "phonetic": "HIT-luh-yoo-gund (aych-JAY)",
+          "tier": "2",
+          "pronunciation": "HIT-luh-yoo-gund (aych-JAY)"
         },
         {
           "term": "Bund Deutscher Mädel (BDM)",
           "definition": "The League of German Maidens (for girls aged 14–18).",
           "syllables": "Bund Deu-tscher Mädel (BDM)",
-          "phonetic": "bund deutscher mädel (bdm)",
-          "tier": "2"
+          "phonetic": "BUUND DOY-chuh MAY-dul (bee-dee-EM)",
+          "tier": "2",
+          "pronunciation": "BUUND DOY-chuh MAY-dul (bee-dee-EM)"
         },
         {
           "term": "Faith and Beauty Society",
           "definition": "A Nazi organisation for women aged 17–21, designed to bridge the gap between the BDM and adult life.",
           "syllables": "Faith and Beau-ty So-cie-ty",
-          "phonetic": "faith and beauty society",
-          "tier": "3"
+          "phonetic": "FAYTH und BYOO-tee suh-SY-uh-tee",
+          "tier": "3",
+          "pronunciation": "FAYTH und BYOO-tee suh-SY-uh-tee"
         }
       ],
       "vocab_cloze_text": "To secure the future of the Thousand Year Reich, the Nazis subjected children to relentless [Indoctrination] both inside and outside the classroom. Under the direction of Education Minister [Bernhard Rust], all teachers were forced to join the [National Socialist Teachers' League (NSLB)] and implement a heavily biased curriculum that included the pseudo-science of [Eugenics (Race Studies)]. Outside of school, boys were trained for military service in the [Hitlerjugend (HJ)], while girls in the [Bund Deutscher Mädel (BDM)] were taught domestic skills before graduating to the [Faith and Beauty Society] to prepare for motherhood.",
@@ -27108,6 +28200,77 @@ export default {
           "Source C": "Key statutory articles from the Reich Labour Service Law (RAD Law), promulgated on 26 June 1935 making six months of manual labor compulsory. Hinge Question: Was the Reich Labour Service primarily an economic public works program or a paramilitary conditioning camp?",
           "Source D": "Underground intelligence dispatch compiled by the exiled Social Democratic Party (Sopade) in Winter 1938 on 60-hour weeks and food shortages. Hinge Question: Why did the Nazi regime freeze industrial wages while continuously demanding longer working hours and higher output?",
           "Source E": "Historical statistical comparison of official registered unemployment data with categories of invisible unemployment, 1933–1939. Hinge Question: If millions were merely hidden by conscription and racial exclusion, how genuinely healthy was the pre-war German economy?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: DAF, Reich Labour Service (RAD) & \"Invisible Unemployment\" (Stages 1–3) (50 mins)",
+            "focus": "DAF, RAD & Invisible Unemployment (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Spaced retrieval Do Now linking KT 2.3, KT 3.1, and KT 4.1 (6 million unemployed in 1932, May 1933 destruction of trade unions, and removing women from jobs via Marriage Loans).",
+                "instruction": "Spaced retrieval Do Now linking KT 2.3, KT 3.1, and KT 4.1 (6 million unemployed in 1932, May 1933 destruction of trade unions, and removing women from jobs via Marriage Loans)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Interrogate Hitler’s \"economic miracle\" (unemployment falling from 6m to under 300,000 by 1939): Robert Ley’s DAF replacing unions, compulsory 6-month RAD labour camps and Autobahn building, March 1935 conscription (1.4m troops by 1939), and \"invisible unemployment\" hiding sacked Jews and women.",
+                "instruction": "Interrogate Hitler’s \"economic miracle\" (unemployment falling from 6m to under 300,000 by 1939): Robert Ley’s DAF replacing unions, compulsory 6-month RAD labour camps and Autobahn building, March 1935 conscription (1.4m troops by 1939), and \"invisible unemployment\" hiding sacked Jews and women."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Compare Source A (June 1935 RAD Law) and Source B (Fritz Todt’s 1936 Autobahn report) with Source C (statistical breakdown of invisible unemployment).",
+                "instruction": "Compare Source A (June 1935 RAD Law) and Source B (Fritz Todt’s 1936 Autobahn report) with Source C (statistical breakdown of invisible unemployment)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Strength Through Joy (KdF), Four-Year Plan & Paper 3 Section B (Stages 4–5) (50 mins)",
+            "focus": "KdF, Autarky & Paper 3 Interpretations (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check on why workers could not strike under the DAF, compulsory RAD conditions, 1935 conscription numbers, and groups omitted from jobless statistics.",
+                "instruction": "Retrieval check on why workers could not strike under the DAF, compulsory RAD conditions, 1935 conscription numbers, and groups omitted from jobless statistics."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (KdF subsidised holidays and the unfulfilled Volkswagen scheme, SdA canteen upgrades, and Hermann Göring’s 1936 Four-Year Plan for Autarky, Ersatz goods, and longer 49-hour weeks), review Sources D–E, and contrast Interpretation 1 (Richard Grunberger on job security and KdF leisure) with Interpretation 2 (Tim Mason on lost union rights, compulsory deductions, and longer hours).",
+                "instruction": "Read Stages 4–5 (KdF subsidised holidays and the unfulfilled Volkswagen scheme, SdA canteen upgrades, and Hermann Göring’s 1936 Four-Year Plan for Autarky, Ersatz goods, and longer 49-hour weeks), review Sources D–E, and contrast Interpretation 1 (Richard Grunberger on job security and KdF leisure) with Interpretation 2 (Tim Mason on lost union rights, compulsory deductions, and longer hours)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about German workers’ living standards (1933–39)?",
+                "instruction": "Complete Paper 3 Section B writing: Q3(b) [4m], Q3(c) [4m], and Q3(d) [16m + 4 SPaG] How far do you agree with Interpretation 2 about German workers’ living standards (1933–39)?"
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Self-assess Q3(d) essays: verify pupils weigh material relief from 1932 mass unemployment (Grunberger) against coercive wage freezes and lost freedoms (Mason).",
+                "instruction": "Self-assess Q3(d) essays: verify pupils weigh material relief from 1932 mass unemployment (Grunberger) against coercive wage freezes and lost freedoms (Mason)."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -27189,57 +28352,65 @@ export default {
           "term": "Invisible Unemployment",
           "definition": "The Nazi practice of manipulating statistics to hide the true number of people out of work.",
           "syllables": "I-nvi-si-ble U-ne-mploy-ment",
-          "phonetic": "invisible unemployment",
-          "tier": "3"
+          "phonetic": "in-VIZ-ih-bul un-im-PLOY-munt",
+          "tier": "3",
+          "pronunciation": "in-VIZ-ih-bul un-im-PLOY-munt"
         },
         {
           "term": "Autarky",
           "definition": "The economic policy of self-sufficiency; trying to produce everything Germany needed so it would not rely on imports during a war.",
           "syllables": "au-tar-ky",
-          "phonetic": "ˈɔːtɑːki",
-          "tier": "3"
+          "phonetic": "AW-tah-kee",
+          "tier": "3",
+          "pronunciation": "AW-tah-kee"
         },
         {
           "term": "Ersatz",
           "definition": "Artificial substitute goods developed to help achieve Autarky (e.g., making rubber from coal).",
           "syllables": "E-rsatz",
-          "phonetic": "ersatz",
-          "tier": "3"
+          "phonetic": "AIR-zats",
+          "tier": "3",
+          "pronunciation": "AIR-zats"
         },
         {
           "term": "Hermann Goering",
           "definition": "The Nazi minister put in charge of the 'Four Year Plan' in 1936 to prepare the economy for war.",
           "syllables": "He-rmann Goe-ring",
-          "phonetic": "hermann goering",
-          "tier": "3"
+          "phonetic": "HAIR-man GUR-ing",
+          "tier": "3",
+          "pronunciation": "HAIR-man GUR-ing"
         },
         {
           "term": "National Labour Service (RAD)",
           "definition": "A scheme providing manual work for the unemployed, made compulsory for young men in 1935.",
           "syllables": "Na-tio-nal La-bour Se-rvi-ce (RAD)",
-          "phonetic": "national labour service (rad)",
-          "tier": "2"
+          "phonetic": "NASH-uh-nul LAY-buh SUR-vis (ahr-ay-DEE)",
+          "tier": "2",
+          "pronunciation": "NASH-uh-nul LAY-buh SUR-vis (ahr-ay-DEE)"
         },
         {
           "term": "German Labour Front (DAF)",
           "definition": "The Nazi organisation that replaced trade unions, led by Robert Ley.",
           "syllables": "Ge-rman La-bour Front (DAF)",
-          "phonetic": "german labour front (daf)",
-          "tier": "3"
+          "phonetic": "JUR-mun LAY-buh FRUNT (dee-ay-EF)",
+          "tier": "3",
+          "pronunciation": "JUR-mun LAY-buh FRUNT (dee-ay-EF)"
         },
         {
           "term": "Strength Through Joy (KdF)",
           "definition": "A subdivision of the DAF that provided cheap leisure activities to bribe workers into compliance.",
           "syllables": "Strength Through Joy (KdF)",
-          "phonetic": "strength through joy (kdf)",
-          "tier": "3"
+          "phonetic": "STRENGTH throo JOY (kah-day-EF)",
+          "tier": "3",
+          "pronunciation": "STRENGTH throo JOY (kah-day-EF)"
         },
         {
           "term": "Beauty of Labour (SdA)",
           "definition": "A subdivision of the DAF aimed at improving workplace conditions (like canteens and lighting).",
           "syllables": "Beau-ty of La-bour (SdA)",
-          "phonetic": "beauty of labour (sda)",
-          "tier": "2"
+          "phonetic": "BYOO-tee uv LAY-buh (ess-day-AH)",
+          "tier": "2",
+          "pronunciation": "BYOO-tee uv LAY-buh (ess-day-AH)"
         }
       ],
       "vocab_cloze_text": "Hitler boasted of fixing Germany's economic crisis, but much of this miracle was achieved through [Invisible Unemployment] by quietly removing Jews and women from the official statistics. The unemployed were forced to dig ditches and plant forests in the [National Labour Service (RAD)], while trade unions were crushed and replaced by the state-run [German Labour Front (DAF)]. Under [Hermann Goering], the Four Year Plan drove Germany toward absolute self-sufficiency, known as [Autarky], forcing the country to rely on synthetic [Ersatz] goods like coffee made from acorns. To pacify the overworked populace, the regime established the [Strength Through Joy (KdF)] program to provide cheap holidays, and the [Beauty of Labour (SdA)] initiative to supposedly improve factory conditions.",
@@ -29215,6 +30386,77 @@ export default {
           "Source C": "Key statutory sections from the Nuremberg Laws, passed unanimously by the Reichstag in Nuremberg on 15 September 1935. Hinge Question: How did the Nuremberg Laws fundamentally alter the legal status of Jews from equal citizens into rightless subjects within Germany?",
           "Source D": "Secret urgent telex sent by Reinhard Heydrich at 1:20 AM on 10 November 1938 coordinating the Kristallnacht pogrom. Hinge Question: Why did the Nazi leadership take great care in Source D to protect non-Jewish property while commanding the destruction of Jewish institutions?",
           "Source E": "Confidential diplomatic dispatch written by British Consul-General Robert Smallbones in Frankfurt on 11 November 1938 recording Kristallnacht. Hinge Question: Why is an independent foreign diplomatic report particularly valuable when evaluating whether ordinary Germans supported the Kristallnacht pogrom?"
+        },
+        "delivery_plan": {
+          "format": "2-Lesson Sequence (50 mins each)",
+          "lesson_1": {
+            "title": "Lesson 1: April 1933 Boycott, 1935 Nuremberg Laws & \"Unfit\" Minorities (Stages 1–3) (50 mins)",
+            "focus": "1933 Boycott, Nuremberg Laws & Minorities (Stages 1–3)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Synoptic Do Now retrieving across KT2–4 (Mein Kampf racial hierarchy, April 1933 Civil Service Law, July 1933 Hereditary Health Law sterilisations, and school Race Studies).",
+                "instruction": "Synoptic Do Now retrieving across KT2–4 (Mein Kampf racial hierarchy, April 1933 Civil Service Law, July 1933 Hereditary Health Law sterilisations, and school Race Studies)."
+              },
+              {
+                "phase": "Phase 2: Teacher Exposition & Context (15 mins)",
+                "time": "15m",
+                "label": "Teacher Exposition",
+                "activity": "Trace escalating legal persecution from 1933 to 1935: Aryan Herrenvolk vs Untermenschen ideology, the 1 April 1933 SA shop boycott, the Sept 1935 Nuremberg Laws (stripping citizenship and outlawing Jewish–Aryan marriage), and camp persecution of Roma/Sinti (Marzahn) and gay men (Paragraph 175).",
+                "instruction": "Trace escalating legal persecution from 1933 to 1935: Aryan Herrenvolk vs Untermenschen ideology, the 1 April 1933 SA shop boycott, the Sept 1935 Nuremberg Laws (stripping citizenship and outlawing Jewish–Aryan marriage), and camp persecution of Roma/Sinti (Marzahn) and gay men (Paragraph 175)."
+              },
+              {
+                "phase": "Phase 3: Shared Reading & Verso Spine Stages 1–3 (17 mins)",
+                "time": "17m",
+                "label": "Shared Reading & Spine",
+                "activity": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3.",
+                "instruction": "Read Narrative Stages 1–3 and complete full-sentence answers in Workbook Verso Spine boxes 1–3."
+              },
+              {
+                "phase": "Phase 4: Hinge Diagnostic & Source Scrutiny (10 mins)",
+                "time": "10m",
+                "label": "Hinge Check",
+                "activity": "Scrutinise Source A (1935 school racial-hygiene textbook) and Source B (SA stormtroopers picketing Jewish shops on 1 April 1933) alongside Source C (Nuremberg Laws text).",
+                "instruction": "Scrutinise Source A (1935 school racial-hygiene textbook) and Source B (SA stormtroopers picketing Jewish shops on 1 April 1933) alongside Source C (Nuremberg Laws text)."
+              }
+            ]
+          },
+          "lesson_2": {
+            "title": "Lesson 2: Kristallnacht (Nov 1938), Aryanisation & Paper 3 Practice (Stages 4–5) (50 mins)",
+            "focus": "Kristallnacht, Aryanisation & Paper 3 Writing (Stages 4–5)",
+            "phases": [
+              {
+                "phase": "Phase 1: Spaced Retrieval Starter (8 mins)",
+                "time": "8m",
+                "label": "Spaced Retrieval Starter",
+                "activity": "Retrieval check distinguishing the Reich Citizenship Law from the Law for the Protection of German Blood and Honour (Sept 1935) and why persecution paused briefly during the 1936 Berlin Olympics.",
+                "instruction": "Retrieval check distinguishing the Reich Citizenship Law from the Law for the Protection of German Blood and Honour (Sept 1935) and why persecution paused briefly during the 1936 Berlin Olympics."
+              },
+              {
+                "phase": "Phase 2: Stages 4–5 & Sources C–E / Interpretations (17 mins)",
+                "time": "17m",
+                "label": "Narrative & Sources",
+                "activity": "Read Stages 4–5 (9–10 Nov 1938 Kristallnacht pogrom—267+ synagogues burned, 7,500 shops smashed, 30,000 Jewish men sent to camps—followed by Göring’s 1bn-mark fine, forced Aryanisation, and Heydrich’s emigration office), inspect Sources D–E, and compare Interpretations 1 & 2 (Saul Friedländer vs Ian Kershaw).",
+                "instruction": "Read Stages 4–5 (9–10 Nov 1938 Kristallnacht pogrom—267+ synagogues burned, 7,500 shops smashed, 30,000 Jewish men sent to camps—followed by Göring’s 1bn-mark fine, forced Aryanisation, and Heydrich’s emigration office), inspect Sources D–E, and compare Interpretations 1 & 2 (Saul Friedländer vs Ian Kershaw)."
+              },
+              {
+                "phase": "Phase 3: Edexcel Paper 3 Exam Practice (20 mins)",
+                "time": "20m",
+                "label": "Exam Writing",
+                "activity": "Write Paper 3 Q1 [4m] Two Inferences on Kristallnacht destruction and Q2 [12m] Explain why persecution of Jews and other minorities escalated in Nazi Germany (1933–39) (or Section B Q3d).",
+                "instruction": "Write Paper 3 Q1 [4m] Two Inferences on Kristallnacht destruction and Q2 [12m] Explain why persecution of Jews and other minorities escalated in Nazi Germany (1933–39) (or Section B Q3d)."
+              },
+              {
+                "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
+                "time": "5m",
+                "label": "Consolidate & DIRT",
+                "activity": "Final DIRT check: verify Q2 traces the deliberate step-by-step radicalisation from 1933 boycotts to 1935 legal exclusion and 1938 state-directed violence.",
+                "instruction": "Final DIRT check: verify Q2 traces the deliberate step-by-step radicalisation from 1933 boycotts to 1935 legal exclusion and 1938 state-directed violence."
+              }
+            ]
+          }
         }
       },
       "learning_objectives": {
@@ -29296,50 +30538,57 @@ export default {
           "term": "Volksgemeinschaft",
           "definition": "The 'People's Community'—the Nazi ideal of a pure, strong, and united Aryan society.",
           "syllables": "Vo-lksge-mei-nschaft",
-          "phonetic": "volksgemeinschaft",
-          "tier": "3"
+          "phonetic": "FOLKS-guh-myne-shaft",
+          "tier": "3",
+          "pronunciation": "FOLKS-guh-myne-shaft"
         },
         {
           "term": "Social Darwinism",
           "definition": "The twisted Nazi belief that human races evolve like animals, and the 'strong' (Aryans) must destroy the 'weak' to survive.",
           "syllables": "So-cial Da-rwi-nism",
-          "phonetic": "social darwinism",
-          "tier": "3"
+          "phonetic": "SOH-shul DAH-win-iz-um",
+          "tier": "3",
+          "pronunciation": "SOH-shul DAH-win-iz-um"
         },
         {
           "term": "Untermenschen",
           "definition": "'Sub-humans'—groups the Nazis believed were biologically inferior (Jews, Roma/Sinti, Slavs).",
           "syllables": "U-nterme-nschen",
-          "phonetic": "untermenschen",
-          "tier": "3"
+          "phonetic": "UUN-tuh-men-shun",
+          "tier": "3",
+          "pronunciation": "UUN-tuh-men-shun"
         },
         {
           "term": "Asocials",
           "definition": "People who did not fit the Nazi social ideal of the Volksgemeinschaft (e.g., homosexuals, vagrants, alcoholics).",
           "syllables": "A-socials",
-          "phonetic": "asocials",
-          "tier": "3"
+          "phonetic": "ay-SOH-shulz",
+          "tier": "3",
+          "pronunciation": "ay-SOH-shulz"
         },
         {
           "term": "Anti-Semitism",
           "definition": "Hatred or discrimination against Jewish people.",
           "syllables": "Anti-Se-mitism",
-          "phonetic": "anti-semitism",
-          "tier": "2"
+          "phonetic": "an-tee-SEM-ih-tiz-um",
+          "tier": "2",
+          "pronunciation": "an-tee-SEM-ih-tiz-um"
         },
         {
           "term": "Eugenics",
           "definition": "The pseudo-science of selective breeding to 'purify' the human race.",
           "syllables": "Eu-genics",
-          "phonetic": "eugenics",
-          "tier": "2"
+          "phonetic": "yoo-JEN-iks",
+          "tier": "2",
+          "pronunciation": "yoo-JEN-iks"
         },
         {
           "term": "Aryanisation",
           "definition": "The forced transfer of Jewish-owned businesses and property to Aryans at a fraction of their value.",
           "syllables": "A-rya-nisa-tion",
-          "phonetic": "aryanisation",
-          "tier": "3"
+          "phonetic": "air-ee-uh-ny-ZAY-shun",
+          "tier": "3",
+          "pronunciation": "air-ee-uh-ny-ZAY-shun"
         }
       ],
       "vocab_cloze_text": "The Nazi regime envisioned a racially pure [Volksgemeinschaft] (People's Community) built entirely upon the pseudo-scientific principles of [Social Darwinism] and [Eugenics]. Anyone who did not fit this ideal, including the disabled, homosexuals, and vagrants, were branded as [Asocials] and subjected to forced sterilization or imprisonment. However, the most extreme persecution was driven by virulent [Anti-Semitism], as the Nazis targeted Jews as subhuman [Untermenschen], systematically stripping their wealth and businesses through a process of forced [Aryanisation].",

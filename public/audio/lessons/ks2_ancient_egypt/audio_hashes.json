@@ -1,0 +1,114 @@
+{
+  "unitId": "ks2_ancient_egypt",
+  "voiceKey": "female_historian",
+  "blocks": {
+    "lesson_6_b1": {
+      "hash": "67d139658de5a374",
+      "bytes": 174860,
+      "words": 80,
+      "updatedAt": "2026-11-23T20:36:25.737Z"
+    },
+    "lesson_6_b2": {
+      "hash": "de6277b6fc78032c",
+      "bytes": 205292,
+      "words": 81,
+      "updatedAt": "2026-11-23T20:36:26.295Z"
+    },
+    "lesson_6_b3": {
+      "hash": "5a61fb48bbcaa79c",
+      "bytes": 173612,
+      "words": 80,
+      "updatedAt": "2026-11-23T20:36:26.775Z"
+    },
+    "lesson_1_b1": {
+      "hash": "fa4febde4b4a8b0b",
+      "bytes": 176108,
+      "words": 83,
+      "updatedAt": "2026-11-23T20:36:29.479Z"
+    },
+    "lesson_1_b2": {
+      "hash": "234d9672988bebfe",
+      "bytes": 164300,
+      "words": 79,
+      "updatedAt": "2026-11-23T20:36:29.994Z"
+    },
+    "lesson_1_b3": {
+      "hash": "cf25e670cf63b744",
+      "bytes": 164012,
+      "words": 79,
+      "updatedAt": "2026-11-23T20:36:30.514Z"
+    },
+    "lesson_2_b1": {
+      "hash": "7922f502b7b3cb1c",
+      "bytes": 179180,
+      "words": 84,
+      "updatedAt": "2026-11-23T20:36:31.098Z"
+    },
+    "lesson_2_b2": {
+      "hash": "b36f575962404233",
+      "bytes": 173228,
+      "words": 81,
+      "updatedAt": "2026-11-23T20:36:31.558Z"
+    },
+    "lesson_2_b3": {
+      "hash": "d93296f3e10e1ded",
+      "bytes": 166988,
+      "words": 80,
+      "updatedAt": "2026-11-23T20:36:32.122Z"
+    },
+    "lesson_3_b1": {
+      "hash": "9c28f047c6829eac",
+      "bytes": 157292,
+      "words": 79,
+      "updatedAt": "2026-11-23T20:36:32.590Z"
+    },
+    "lesson_3_b2": {
+      "hash": "e418e358e276754a",
+      "bytes": 174380,
+      "words": 81,
+      "updatedAt": "2026-11-23T20:36:33.050Z"
+    },
+    "lesson_3_b3": {
+      "hash": "5032c8c4e4914875",
+      "bytes": 185420,
+      "words": 82,
+      "updatedAt": "2026-11-23T20:36:33.552Z"
+    },
+    "lesson_4_b1": {
+      "hash": "d1752ccd5170f506",
+      "bytes": 180332,
+      "words": 79,
+      "updatedAt": "2026-11-23T20:36:34.047Z"
+    },
+    "lesson_4_b2": {
+      "hash": "3851242092b670ff",
+      "bytes": 163628,
+      "words": 81,
+      "updatedAt": "2026-11-23T20:36:34.502Z"
+    },
+    "lesson_4_b3": {
+      "hash": "5964f25b12e3cda1",
+      "bytes": 144620,
+      "words": 79,
+      "updatedAt": "2026-11-23T20:36:34.921Z"
+    },
+    "lesson_5_b1": {
+      "hash": "cd7feef01cb5d24e",
+      "bytes": 166892,
+      "words": 82,
+      "updatedAt": "2026-11-23T20:36:35.399Z"
+    },
+    "lesson_5_b2": {
+      "hash": "699f448689d0204a",
+      "bytes": 177068,
+      "words": 82,
+      "updatedAt": "2026-11-23T20:36:35.861Z"
+    },
+    "lesson_5_b3": {
+      "hash": "f34f534eeb65c9a4",
+      "bytes": 171308,
+      "words": 83,
+      "updatedAt": "2026-11-23T20:36:36.351Z"
+    }
+  }
+}

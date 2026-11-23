@@ -1,0 +1,594 @@
+{
+  "unit_id": "eee",
+  "widgets": [
+    {
+      "lesson_id": "lesson_1_1",
+      "block_index": 4,
+      "expected_heading": "Foreign Threats: France & Scotland",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Strategic Encirclement",
+        "title": "Elizabeth’s Catholic Encirclement in 1558: Loss of Calais ↔ The Auld Alliance ↔ Mary Stuart’s Claim",
+        "default_index": 1,
+        "caption": "Slide or click across the three foreign threats Elizabeth inherited in 1558 across the English Channel, along the Scottish border, and against her royal title.",
+        "stops": [
+          {
+            "short_label": "1. Loss of Calais (Jan 1558)",
+            "label": "1. Humiliating Loss of Calais in Mary I’s French War (January 1558)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "During Mary I’s disastrous French war alongside Habsburg Spain, England lost Calais in January 1558—stripping Tudor prestige and leaving the southern coast exposed across the narrow English Channel.",
+            "traits": [
+              {
+                "category": "Date & Cause",
+                "glyph": "leader",
+                "value": "Jan 1558 in Mary I’s French War"
+              },
+              {
+                "category": "Territorial Blow",
+                "glyph": "law",
+                "value": "Lost Last Continental Foothold"
+              },
+              {
+                "category": "Prestige Impact",
+                "glyph": "language",
+                "value": "Damaged Tudor Military Standing"
+              },
+              {
+                "category": "Channel Danger",
+                "glyph": "people",
+                "value": "Southern Coastline Left Exposed"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Scottish Auld Alliance",
+            "label": "2. France’s Traditional Auld Alliance on the Northern Border (1558)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "To the north, France’s traditional Auld Alliance with Scotland stationed veteran French soldiers alongside Regent Mary of Guise right along England’s land frontier.",
+            "traits": [
+              {
+                "category": "Diplomatic Pact",
+                "glyph": "law",
+                "value": "Franco-Scottish Auld Alliance"
+              },
+              {
+                "category": "Scottish Ruler",
+                "glyph": "leader",
+                "value": "Catholic Regent Mary of Guise"
+              },
+              {
+                "category": "Military Threat",
+                "glyph": "people",
+                "value": "Veteran French Troops on Border"
+              },
+              {
+                "category": "Strategic Risk",
+                "glyph": "church",
+                "value": "Two-Front Catholic Encirclement"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Mary Stuart’s Claim",
+            "label": "3. Mary, Queen of Scots & The French Dynastic Challenge (1558)",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "summary": "Married to the French Dauphin Francis, Catholic claimant Mary, Queen of Scots openly quartered the English royal arms with her own to assert her dynastic claim to Elizabeth’s throne.",
+            "traits": [
+              {
+                "category": "Rival Claimant",
+                "glyph": "leader",
+                "value": "Catholic Mary, Queen of Scots"
+              },
+              {
+                "category": "French Marriage",
+                "glyph": "people",
+                "value": "Wed to French Dauphin Francis"
+              },
+              {
+                "category": "Heraldic Defiance",
+                "glyph": "clothes",
+                "value": "Quartered English Royal Arms"
+              },
+              {
+                "category": "Crown Threat",
+                "glyph": "church",
+                "value": "Rival Catholic Claim to Throne"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_1_4",
+      "block_index": 2,
+      "expected_heading": "Abdication, Lochleven & Escape",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Royal Dilemma",
+        "title": "May 1568: Why Mary’s Flight Across the Solway Firth Trapped Elizabeth",
+        "default_index": 3,
+        "caption": "After forced abdication at Lochleven (July 1567) and defeat at Langside (May 1568), Mary fled into England. Click each option to weigh why every choice carried danger for Elizabeth.",
+        "items": [
+          {
+            "tab_label": "1. Restore by Force",
+            "title": "Option A: Send English Troops to Restore Mary",
+            "dates": "May 1568 Dilemma • Rejected",
+            "badge": "Alienates Ally",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Scottish Regent",
+                "value": "Protestant Earl of Moray"
+              },
+              {
+                "label": "Infant King",
+                "value": "One-Year-Old James VI"
+              },
+              {
+                "label": "Strategic Flaw",
+                "value": "Wrecks Friendly Protestant Ally"
+              }
+            ],
+            "takeaway": "Sending an English army to put a Catholic monarch back on the Scottish throne would alienate Moray’s friendly Protestant regency governing for young James VI."
+          },
+          {
+            "tab_label": "2. Hand Mary Back",
+            "title": "Option B: Return Mary to the Scottish Lords",
+            "dates": "May 1568 Dilemma • Rejected",
+            "badge": "Execution Risk",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "July 1567 Crisis",
+                "value": "Lochleven Forced Abdication"
+              },
+              {
+                "label": "May 1568 Defeat",
+                "value": "6,000 Routed at Langside"
+              },
+              {
+                "label": "Royal Danger",
+                "value": "Risked Trial & Execution"
+              }
+            ],
+            "takeaway": "Handing an anointed fellow queen back to the rebel Protestant lords who had imprisoned her at Lochleven risked Mary’s execution."
+          },
+          {
+            "tab_label": "3. Release Abroad",
+            "title": "Option C: Allow Mary to Sail to Europe",
+            "dates": "May 1568 Dilemma • Rejected",
+            "badge": "French Invasion Risk",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "metrics": [
+              {
+                "label": "Likely Destination",
+                "value": "Catholic Court of France"
+              },
+              {
+                "label": "Military Threat",
+                "value": "Foreign Crusade for Her Claim"
+              },
+              {
+                "label": "Channel Security",
+                "value": "Invited French Invasion"
+              }
+            ],
+            "takeaway": "Allowing Mary to leave England for the continent risked Catholic France backing an armed invasion to place her on the English throne."
+          },
+          {
+            "tab_label": "4. House Arrest",
+            "title": "Option D: Detain Under House Arrest in England",
+            "dates": "From May 1568 • Chosen Path",
+            "badge": "Invited Catholic Plots",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Entry Point",
+                "value": "Fled Across Solway Firth"
+              },
+              {
+                "label": "Elizabeth’s Choice",
+                "value": "Guarded English House Arrest"
+              },
+              {
+                "label": "Hidden Cost",
+                "value": "Magnet for Domestic Plots"
+              }
+            ],
+            "takeaway": "Keeping Mary under guarded house arrest inside England avoided immediate foreign war, yet turned the captive Catholic claimant into a magnet for domestic plots."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_2_1",
+      "block_index": 0,
+      "expected_heading": "The Revolt of the Northern Earls",
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "Interactive Rebellion Meter",
+        "title": "The Revolt of the Northern Earls (Nov 1569 – Jan 1570): Rising, Isolation & Royal Control",
+        "default_index": 2,
+        "caption": "Click each stage from November 1569 to January 1570 to trace why Northumberland and Westmorland’s rising collapsed without Spanish landings or northern gentry support.",
+        "eras": [
+          {
+            "year": "Nov 1569",
+            "headline": "Durham Cathedral Rising & Defiant Latin Mass",
+            "color": "#ef4444",
+            "summary": "After Norfolk’s arrest, the Earls of Northumberland and Westmorland marched 4,600 men into Durham Cathedral, tore up the English Bible and prayer book, and celebrated a Latin Mass.",
+            "pillars": [
+              {
+                "actor": "Northern Earls (4,600 Rebels)",
+                "share": 55,
+                "status": "Seize Durham & Restore Latin Mass",
+                "color": "#ef4444"
+              },
+              {
+                "actor": "Elizabeth & Loyal Royal Forces",
+                "share": 35,
+                "status": "Mobilising Crown Response",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Promised Spanish Aid (Alba)",
+                "share": 10,
+                "status": "Awaited at Hartlepool Port",
+                "color": "#f59e0b"
+              }
+            ]
+          },
+          {
+            "year": "Dec 1569",
+            "headline": "Hartlepool Isolation, Loyal Gentry & Mary Moved South",
+            "color": "#f59e0b",
+            "summary": "Promised Spanish troops from Alba never landed at Hartlepool, most northern gentry stayed loyal to Elizabeth, Mary Stuart was moved from Tutbury to Coventry, and Sussex marched north.",
+            "pillars": [
+              {
+                "actor": "Northern Earls (Isolated Force)",
+                "share": 25,
+                "status": "Loyal Gentry Refuse to Join",
+                "color": "#ef4444"
+              },
+              {
+                "actor": "Elizabeth & Earl of Sussex’s Army",
+                "share": 75,
+                "status": "Mary Secured at Coventry; Army Advances",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Promised Spanish Aid (Alba)",
+                "share": 0,
+                "status": "Zero Troops Land at Hartlepool",
+                "color": "#64748b"
+              }
+            ]
+          },
+          {
+            "year": "Jan 1570",
+            "headline": "Martial Law Executions & Reshaped Council of the North",
+            "color": "#10b981",
+            "summary": "As Northumberland and Westmorland fled into Scotland, Elizabeth ordered 450 rebels executed under martial law and reshaped the Council of the North to tighten royal authority.",
+            "pillars": [
+              {
+                "actor": "Northern Earls (Fled to Scotland)",
+                "share": 5,
+                "status": "Revolt Crushed; 450 Rebels Executed",
+                "color": "#64748b"
+              },
+              {
+                "actor": "Elizabeth & Reshaped Council of the North",
+                "share": 95,
+                "status": "Tightened Royal Grip Over the North",
+                "color": "#10b981"
+              },
+              {
+                "actor": "Promised Spanish Aid (Alba)",
+                "share": 0,
+                "status": "No Intervention",
+                "color": "#64748b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_2_4",
+      "block_index": 3,
+      "expected_heading": "The Winds & Atlantic Retreat",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Retreat Disaster",
+        "title": "August–September 1588: How Gales, Cut Anchors & Poor Charts Wrecked the Armada",
+        "default_index": 0,
+        "caption": "Click each stage of Spain’s perilous northern retreat to see why Medina Sidonia’s battered fleet suffered catastrophic losses off Scotland and Ireland.",
+        "items": [
+          {
+            "tab_label": "1. 9 Aug Gale",
+            "title": "The ‘Protestant Wind’ Forces the Fleet North",
+            "dates": "9 August 1588 • Off Flanders to North Sea",
+            "badge": "Forced Northward",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Weather Shift",
+                "value": "Strong South-Westerly Gale"
+              },
+              {
+                "label": "Fleet Supplies",
+                "value": "Short of Shot & Foul Water"
+              },
+              {
+                "label": "Forced Route",
+                "value": "Around Scotland & West Ireland"
+              }
+            ],
+            "takeaway": "Driven off Flanders (Calais and Dunkirk), a strong south-westerly gale on 9 August—hailed in England as the ‘Protestant Wind’—blew Medina Sidonia’s fleet into the North Sea."
+          },
+          {
+            "tab_label": "2. Irish Wrecks",
+            "title": "Cut Anchors, Poor Sea Charts & Atlantic Storms",
+            "dates": "Autumn 1588 • Scottish & Irish Coasts",
+            "badge": "25+ Ships Wrecked",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Missing Gear",
+                "value": "Heavy Anchors Cut at Calais"
+              },
+              {
+                "label": "Navigation Flaw",
+                "value": "Misled by Poor Sea Charts"
+              },
+              {
+                "label": "Coastal Toll",
+                "value": "Over 25 Ships Wrecked Ashore"
+              }
+            ],
+            "takeaway": "Caught in fierce autumn storms without the heavy anchors cut earlier at Calais and misled by poor sea charts, over twenty-five Spanish ships wrecked on rocky Scottish and Irish shores."
+          },
+          {
+            "tab_label": "3. Final Toll",
+            "title": "Shattered Survivors Reach Spanish Ports",
+            "dates": "September 1588 • Return to Spain",
+            "badge": "Over 15,000 Lost",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "metrics": [
+              {
+                "label": "Commander",
+                "value": "Duke of Medina Sidonia"
+              },
+              {
+                "label": "Surviving Fleet",
+                "value": "Barely 67 Ships Limped Home"
+              },
+              {
+                "label": "Human Losses",
+                "value": "Over 15,000 Men Lost"
+              }
+            ],
+            "takeaway": "Thousands perished along the Scottish and Irish coasts; barely 67 ships limped back to Spain, with over 15,000 men lost across the campaign."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_3_3",
+      "block_index": 3,
+      "expected_heading": "Drake’s Circumnavigation",
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "Interactive Voyage Log",
+        "title": "Sir Francis Drake’s Circumnavigation of the Globe (Dec 1577 – Sept 1580)",
+        "default_index": 0,
+        "caption": "Click each stage of the three-year voyage to trace how Drake’s flagship Golden Hind raided Spanish Pacific silver, claimed Nova Albion, and returned to Plymouth.",
+        "items": [
+          {
+            "tab_label": "1. Magellan (1577–78)",
+            "title": "Secret Backing & Storms in the Strait of Magellan",
+            "dates": "Dec 1577 – Sept 1578 • Atlantic to Pacific",
+            "badge": "1 Flagship Enters Pacific",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "metrics": [
+              {
+                "label": "Departure",
+                "value": "Plymouth: 5 Ships & 164 Men"
+              },
+              {
+                "label": "Secret Backers",
+                "value": "Elizabeth, Walsingham & Leicester"
+              },
+              {
+                "label": "Motive",
+                "value": "Raid Spain & Avenge San Juan (1568)"
+              }
+            ],
+            "takeaway": "Sailing in December 1577 to raid Spanish ports and avenge the 1568 San Juan de Ulúa ambush, fierce storms in the Strait of Magellan left only Drake’s flagship Golden Hind in the Pacific by September 1578."
+          },
+          {
+            "tab_label": "2. Cacafuego (1578–79)",
+            "title": "Pacific Port Raids & Capture of the Silver Ship Cacafuego",
+            "dates": "Late 1578 – Early 1579 • Pacific Coast",
+            "badge": "Silver Treasure Seized",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Ports Passed",
+                "value": "Valparaíso & Callao Raided"
+              },
+              {
+                "label": "Prize Vessel",
+                "value": "Silver-Laden Ship Cacafuego"
+              },
+              {
+                "label": "Flagship",
+                "value": "Golden Hind Loaded with Bullion"
+              }
+            ],
+            "takeaway": "Sailing north up the unguarded South American coast past Valparaíso and Callao, Drake captured Spain’s rich silver-laden treasure ship Cacafuego."
+          },
+          {
+            "tab_label": "3. Nova Albion (June 1579)",
+            "title": "Miwok Welcome & Claiming Nova Albion",
+            "dates": "June 1579 • North American Coast",
+            "badge": "‘New England’ Claimed",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "metrics": [
+              {
+                "label": "Landing Region",
+                "value": "North America (Likely California)"
+              },
+              {
+                "label": "Indigenous Hosts",
+                "value": "Welcomed by Friendly Miwok People"
+              },
+              {
+                "label": "Royal Claim",
+                "value": "Named Nova Albion for Elizabeth"
+              }
+            ],
+            "takeaway": "Landing on the North American coast in June 1579 and welcomed by friendly Miwok people, Drake claimed the territory as Nova Albion (‘New England’) for Queen Elizabeth."
+          },
+          {
+            "tab_label": "4. Homeward (Sept 1580)",
+            "title": "Moluccas Clove Trade & Return to Plymouth",
+            "dates": "1579 – September 1580 • Indian & Atlantic Oceans",
+            "badge": "Globe Circumnavigated",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "metrics": [
+              {
+                "label": "Spice Islands",
+                "value": "Traded for Cloves in Moluccas"
+              },
+              {
+                "label": "Homeward Route",
+                "value": "Rounded the Coast of Africa"
+              },
+              {
+                "label": "Homecoming",
+                "value": "Plymouth Sound (September 1580)"
+              }
+            ],
+            "takeaway": "Crossing the Pacific to trade for cloves in the Moluccas and rounding Africa, Drake anchored back in Plymouth Sound in September 1580."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_3_4",
+      "block_index": 2,
+      "expected_heading": "The First Roanoke Colony & Disaster",
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "Interactive Colonial Breakdown",
+        "title": "Ralph Lane’s First Roanoke Colony (1585–1586): Wreck of the Tiger ↔ Food Reliance ↔ Disease & Mistrust",
+        "default_index": 0,
+        "caption": "Slide or click across the three stages to trace how late departure and the Ocracoke sandbar wreck made Lane’s 107 colonists dependent on Algonquian food and skills.",
+        "stops": [
+          {
+            "short_label": "1. Tiger Wreck (June 1585)",
+            "label": "1. Late Departure & The Wreck of the Tiger (April–June 1585)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "Leaving Plymouth on 9 April 1585—already too late to plant spring crops—flagship Tiger struck a sandbar at Ocracoke Inlet on 29 June 1585, flooding the hold with seawater.",
+            "traits": [
+              {
+                "category": "9 April 1585",
+                "glyph": "leader",
+                "value": "Sailed Too Late for Spring Crops"
+              },
+              {
+                "category": "29 June 1585",
+                "glyph": "law",
+                "value": "Tiger Hit Ocracoke Sandbar"
+              },
+              {
+                "category": "Ruined Food",
+                "glyph": "people",
+                "value": "Seed Corn, Salt & Dried Peas"
+              },
+              {
+                "category": "Lost Stores",
+                "glyph": "clothes",
+                "value": "Gunpowder Spoiled by Seawater"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Algonquian Reliance",
+            "label": "2. 107 Colonists Dependent on Native Maize & Fish Traps (From Aug 1585)",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.22)",
+            "summary": "Once Grenville sailed home for supplies in August 1585, Ralph Lane’s 107 men at Roanoke depended on local Algonquians for maize and woven reed Secotan fish traps they could neither build nor mend.",
+            "traits": [
+              {
+                "category": "August 1585",
+                "glyph": "leader",
+                "value": "Grenville Sailed Home; 107 Left"
+              },
+              {
+                "category": "Vital Crops",
+                "glyph": "people",
+                "value": "Relied on Algonquian Maize"
+              },
+              {
+                "category": "Secotan Skill",
+                "glyph": "clothes",
+                "value": "Woven Reed Secotan Fish Traps"
+              },
+              {
+                "category": "English Gap",
+                "glyph": "language",
+                "value": "Could Neither Build Nor Mend Traps"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Disease & Mistrust",
+            "label": "3. European Epidemics & Collapsing Relations (1585–1586)",
+            "color": "#dc2626",
+            "bg_color": "rgba(220, 38, 38, 0.2)",
+            "summary": "Food pressure was worsened by deadly European diseases carried by the English, which caused deaths inside Native Algonquian villages and deepened mutual mistrust.",
+            "traits": [
+              {
+                "category": "Biological Shock",
+                "glyph": "people",
+                "value": "Unfamiliar European Diseases"
+              },
+              {
+                "category": "Village Toll",
+                "glyph": "church",
+                "value": "Sparked Deaths in Native Towns"
+              },
+              {
+                "category": "Supply Crisis",
+                "glyph": "law",
+                "value": "Strained Food Demands on Clans"
+              },
+              {
+                "category": "Diplomatic Result",
+                "glyph": "language",
+                "value": "Deepening Fear & Mistrust"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

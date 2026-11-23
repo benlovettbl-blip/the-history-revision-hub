@@ -66,6 +66,7 @@ import {
   renderArchivalSourceDiscussionBox,
   getGoldenSentenceExemplar,
   getOddOneOutExemplars,
+  renderSpeakableVocabChipHTML,
   isPaintingSource,
   getRetrievalStarterActions,
   renderDoNowInlineTimerHTML,
@@ -1704,6 +1705,34 @@ export function renderLesson(lesson) {
 
   const hasVocab = lesson.vocab && lesson.vocab.length > 0;
   if (hasVocab) {
+    const pronounceStripPills = lesson.vocab
+      .map((v) => {
+        const termText = String(v?.term || '').trim();
+        if (!termText) return '';
+        const phonetic = String(v?.phonetic || v?.pronunciation || '').trim();
+        const safeJs = termText
+          .replace(/\\/g, '\\\\')
+          .replace(/'/g, "\\'")
+          .replace(/"/g, '&quot;')
+          .replace(/\r?\n/g, ' ');
+        const safeAttr = termText
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        const safePhoneticHtml = phonetic
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        const safePhoneticAttr = safePhoneticHtml.replace(/"/g, '&quot;');
+        const titleAttr = phonetic
+          ? `Listen to ${safeAttr} [${safePhoneticAttr}] in British English`
+          : `Listen to ${safeAttr} in British English`;
+        return `<button type="button" class="vocab-pronounce-btn" onclick="event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJs}', this); }" title="${titleAttr}"><i class="fa-solid fa-volume-high"></i><span>${termText}</span>${phonetic ? `<span class="vocab-phonetic-tag">[${safePhoneticHtml}]</span>` : ''}</button>`;
+      })
+      .filter(Boolean)
+      .join('');
+
     htmlVocabInner += `
         <div class="vocab-panel-content">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 8px;">
@@ -1712,13 +1741,41 @@ export function renderLesson(lesson) {
               </span>
             </div>
             <div style="padding: 4px 0;">
+              ${
+                pronounceStripPills
+                  ? `<div class="vocab-pronounce-strip no-print">
+                      <span class="vocab-pronounce-strip-label"><i class="fa-solid fa-volume-high"></i> Reference &amp; Pronunciation (UK):</span>
+                      <div class="vocab-pronounce-strip-pills">${pronounceStripPills}</div>
+                    </div>`
+                  : ''
+              }
               <p style="color: #475569; margin-bottom: 16px; font-size: 0.95rem;"><strong>Vocabulary Practice:</strong> Tap a term on the left, then tap its matching definition on the right to master the key vocabulary.</p>
               <div id="vocab-match-game" class="vocab-match-asymmetric">
                 <div class="match-terms">
       `;
 
     lesson.vocab.forEach((v, idx) => {
-      htmlVocabInner += `<button class="btn btn-secondary match-term-btn" data-idx="${idx}">${v.term}</button>`;
+      const termText = String(v?.term || '').trim();
+      const phonetic = String(v?.phonetic || v?.pronunciation || '').trim();
+      const safeJs = termText
+        .replace(/\\/g, '\\\\')
+        .replace(/'/g, "\\'")
+        .replace(/"/g, '&quot;')
+        .replace(/\r?\n/g, ' ');
+      const safeAttr = termText
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      const safePhoneticAttr = phonetic
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      const btnTitle = phonetic
+        ? `Pronounce ${safeAttr} [${safePhoneticAttr}]`
+        : `Pronounce ${safeAttr} (British English)`;
+      htmlVocabInner += `<div class="match-term-row"><button class="btn btn-secondary match-term-btn" data-idx="${idx}">${v.term}</button><button type="button" class="match-term-speak-btn no-print" onclick="event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeJs}', this); }" title="${btnTitle}" aria-label="${btnTitle}"><i class="fa-solid fa-volume-high"></i></button></div>`;
     });
 
     htmlVocabInner += `</div><div class="match-defs">`;
@@ -4633,6 +4690,59 @@ export function renderLesson(lesson) {
             </div>
           </div>
         `;
+      } else if (hasStageHookMap && hasConceptWidget) {
+        const hookMapHtml = renderInteractiveHotspotMapHTML(block.stage_hook_map, index, {
+          isStageHook: true,
+        });
+        const conceptWidgetHtml = renderConceptWidgetHTML(block.concept_widget, index);
+        const dualHookId = `dual-stage-hook-${String((lesson && lesson.id) || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-')}-${index}`;
+
+        window.postRenderHooks.push(() => {
+          const wrap = document.getElementById(dualHookId);
+          if (!wrap || wrap.dataset.modeBound === '1') return;
+          wrap.dataset.modeBound = '1';
+          const btns = wrap.querySelectorAll('[data-hook-mode-btn]');
+          const panes = wrap.querySelectorAll('[data-hook-mode-pane]');
+          btns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const targetMode = btn.getAttribute('data-hook-mode-btn');
+              btns.forEach((b) => {
+                const active = b.getAttribute('data-hook-mode-btn') === targetMode;
+                b.classList.toggle('is-active', active);
+                b.setAttribute('aria-pressed', active ? 'true' : 'false');
+              });
+              panes.forEach((p) => {
+                const show = p.getAttribute('data-hook-mode-pane') === targetMode;
+                p.classList.toggle('is-hidden', !show);
+                if (show) {
+                  p.removeAttribute('hidden');
+                } else {
+                  p.setAttribute('hidden', 'hidden');
+                }
+              });
+            });
+          });
+        });
+
+        topNarrativeHtml = `
+          ${isHeaderUnified ? headerBlockHtml : ''}
+          <div class="stage-hook-map-row has-dual-hook-modes" style="${isReversed ? 'flex-direction: row-reverse;' : ''}">
+            ${narrativeChunkHtml}
+            <div class="stage-hook-map-col" id="${dualHookId}">
+              <div class="stage-hook-mode-bar no-print" role="group" aria-label="Stage visual mode">
+                <button type="button" class="stage-hook-mode-btn is-active" data-hook-mode-btn="widget" aria-pressed="true">Concept diagram</button>
+                <span class="stage-hook-mode-sep" aria-hidden="true">|</span>
+                <button type="button" class="stage-hook-mode-btn" data-hook-mode-btn="pins" aria-pressed="false">Interactive map</button>
+              </div>
+              <div class="stage-hook-mode-pane" data-hook-mode-pane="widget">
+                ${conceptWidgetHtml}
+              </div>
+              <div class="stage-hook-mode-pane is-hidden" data-hook-mode-pane="pins" hidden="hidden">
+                ${hookMapHtml}
+              </div>
+            </div>
+          </div>
+        `;
       } else if (hasStageHookMap) {
         const hookMapHtml = renderInteractiveHotspotMapHTML(block.stage_hook_map, index, {
           isStageHook: true,
@@ -5495,7 +5605,7 @@ export function renderLesson(lesson) {
                           ${vocabBadgeText}
                         </strong>
                         <div style="display: flex; flex-wrap: wrap; gap: 5px;">
-                          ${words.map((w) => `<span style="background: #e2e8f0; color: #1e293b; font-size: 0.74rem; font-weight: 600; padding: 2px 7px; border-radius: 4px;">${w}</span>`).join('')}
+                          ${words.map((w) => renderSpeakableVocabChipHTML(w, lesson, { interactive: false })).join('')}
                         </div>
                       </div>
                     `
@@ -6149,7 +6259,7 @@ export function renderLesson(lesson) {
                     </button>
                   </div>
                 </div>
-                ${tfWords.length > 0 ? `<div id="tf-wb-${tfUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;"><div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">${tfWords.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}</div></div>` : ''}
+                ${tfWords.length > 0 ? `<div id="tf-wb-${tfUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;"><div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">${tfWords.map((w) => renderSpeakableVocabChipHTML(w, lesson)).join('')}</div></div>` : ''}
                 ${renderInlineTaskTimerBarHTML(tfUid, tfMins)}
               </div>
             `;
@@ -6473,10 +6583,10 @@ export function renderLesson(lesson) {
                 ? `<div id="ks3-wb-${ks3TaskUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
                     <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
                       <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">${wbTitleLabel}:</span>
-                      <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                      <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap word to cross off &bull; <i class="fa-solid fa-volume-high" style="color: #0d9488;"></i> to hear</span>
                     </div>
                     <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                      ${wordBank.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                      ${wordBank.map((w) => renderSpeakableVocabChipHTML(w, lesson)).join('')}
                     </div>
                   </div>`
                 : '';
@@ -7058,11 +7168,15 @@ export function renderLesson(lesson) {
 
         // 3. WEIMAR & NAZI GERMANY (weimar_nazi_germany)
         if (unitId === 'weimar_nazi_germany') {
-          const startPg = 2 + lNum * 2;
-          const endPg = startPg + 1;
+          const mapEntry =
+            WORKBOOK_PAGE_MAP?.weimar_nazi_germany?.[lessonId] ||
+            WORKBOOK_PAGE_MAP?.weimar_nazi_germany?.[`lesson_${ktNum}_${lNum}`];
+          const startPg = mapEntry?.page ? mapEntry.page + 1 : 2 + lNum * 3;
+          const endPg = mapEntry?.endPage || startPg + 1;
+          const booklet = mapEntry?.booklet ? ` (${mapEntry.booklet})` : '';
 
           if (type.includes('inference') || text.includes('two things you can infer')) {
-            return { inWorkbook: true, label: `In Printed Workbook • Page ${endPg}` };
+            return { inWorkbook: true, label: `In Printed Workbook • Page ${endPg}${booklet}` };
           }
           if (
             type.includes('causation') ||
@@ -7070,7 +7184,7 @@ export function renderLesson(lesson) {
             tariff.includes('12 mark') ||
             type.includes('12m')
           ) {
-            return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
+            return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}${booklet}` };
           }
           const isWeimarUtility =
             type.includes('utility') ||
@@ -7130,8 +7244,12 @@ export function renderLesson(lesson) {
 
         // 5. USA: CONFLICT AT HOME AND ABROAD (usa)
         if (unitId === 'usa') {
-          const startPg = 2 + lNum * 2;
-          const endPg = startPg + 1;
+          const mapEntry =
+            WORKBOOK_PAGE_MAP?.usa?.[lessonId] ||
+            WORKBOOK_PAGE_MAP?.usa?.[`lesson_${ktNum}_${lNum}`];
+          const startPg = mapEntry?.page ? mapEntry.page + 1 : 2 + lNum * 3;
+          const endPg = mapEntry?.endPage || startPg + 1;
+          const booklet = mapEntry?.booklet ? ` (${mapEntry.booklet})` : '';
           const isUsaUtility =
             type.includes('utility') ||
             text.includes('how useful') ||
@@ -7146,7 +7264,7 @@ export function renderLesson(lesson) {
             if (isPrintedUsaQ3a) {
               return {
                 inWorkbook: true,
-                label: qObj?.workbook_badge || 'In Printed Workbook • Pages 16–17',
+                label: qObj?.workbook_badge || `In Printed Workbook • Pages 16–17${booklet}`,
               };
             }
             return {
@@ -7159,16 +7277,16 @@ export function renderLesson(lesson) {
             };
           }
           if (tariff.includes('4 mark') || type.includes('inference_4m')) {
-            return { inWorkbook: true, label: `In Printed Workbook • Page ${endPg}` };
+            return { inWorkbook: true, label: `In Printed Workbook • Page ${endPg}${booklet}` };
           }
           if (
             tariff.includes('8 mark') ||
             tariff.includes('12 mark') ||
             tariff.includes('16 mark')
           ) {
-            return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
+            return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}${booklet}` };
           }
-          return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}` };
+          return { inWorkbook: true, label: `In Printed Workbook • Pages ${startPg}–${endPg}${booklet}` };
         }
 
         // 6. COLD WAR & OTHER UNITS WITH COMPANION WORKBOOKS
@@ -7201,7 +7319,11 @@ export function renderLesson(lesson) {
           'ks2_ww2',
         ];
 
-        if (unitsWithWorkbooks.includes(unitId)) {
+        if (WORKBOOK_PAGE_MAP?.[unitId] || unitsWithWorkbooks.includes(unitId)) {
+          const anchor = getWorkbookPageAnchor(unitId, lessonId, Math.max(0, lNum - 1));
+          if (anchor?.label) {
+            return { inWorkbook: true, label: `In Printed Workbook • ${anchor.label}` };
+          }
           return { inWorkbook: true, label: 'In Printed Workbook • Companion Spread' };
         }
 
@@ -8136,9 +8258,9 @@ export function renderLesson(lesson) {
                   <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
                     ${ordered
                       .map((item) =>
-                        item.inSource
-                          ? `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="In Source / Provenance (useful for quotes &amp; NOP — tap to cross off)" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${item.term}</span>`
-                          : `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="External Own Knowledge (beyond the source — tap to cross off)" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${item.term}</span>`,
+                        renderSpeakableVocabChipHTML(item.term, lesson, {
+                          variant: item.inSource ? 'source' : 'own',
+                        }),
                       )
                       .join('')}
                   </div>
@@ -8149,10 +8271,10 @@ export function renderLesson(lesson) {
                 <div>
                   <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
                     <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">${wbSectionHeading}</span>
-                    <span style="font-size: 0.72rem; font-weight: 600; color: #64748b; margin-left: 2px;">Tap to cross off</span>
+                    <span style="font-size: 0.72rem; font-weight: 600; color: #64748b; margin-left: 2px;">Tap word to cross off &bull; <i class="fa-solid fa-volume-high" style="color: #0d9488;"></i> to hear</span>
                   </div>
                   <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                    ${resolvedVocabBank.map((term) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${term}</span>`).join('')}
+                    ${resolvedVocabBank.map((term) => renderSpeakableVocabChipHTML(term, lesson)).join('')}
                   </div>
                 </div>
               `;
@@ -9415,7 +9537,7 @@ export function renderLesson(lesson) {
               Key Word Bank:
             </strong>
             <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              ${lesson.extended.word_bank.map((w) => `<span style="background: white; border: 1px solid #bbf7d0; color: #14532d; font-size: 0.85rem; font-weight: 600; padding: 2px 8px; border-radius: 4px;">${w}</span>`).join('')}
+              ${lesson.extended.word_bank.map((w) => renderSpeakableVocabChipHTML(w, lesson, { interactive: false })).join('')}
             </div>
           </div>
         `;
@@ -9552,10 +9674,10 @@ export function renderLesson(lesson) {
                       ? `<div id="ext-wb-${extUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
                           <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
                             <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">Key Word Bank:</span>
-                            <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                            <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap word to cross off &bull; <i class="fa-solid fa-volume-high" style="color: #0d9488;"></i> to hear</span>
                           </div>
                           <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                            ${lesson.extended.word_bank.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                            ${lesson.extended.word_bank.map((w) => renderSpeakableVocabChipHTML(w, lesson)).join('')}
                           </div>
                         </div>`
                       : ''
@@ -9886,10 +10008,10 @@ export function renderLesson(lesson) {
                     ? `<div id="gt-wb-${gtUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
                         <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 6px;">
                           <span style="font-size: 0.78rem; font-weight: 800; color: #0f766e; text-transform: uppercase;">GCSE Key Vocabulary Bank:</span>
-                          <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap to cross off</span>
+                          <span style="font-size: 0.72rem; font-weight: 600; color: #64748b;">Tap word to cross off &bull; <i class="fa-solid fa-volume-high" style="color: #0d9488;"></i> to hear</span>
                         </div>
                         <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                          ${vocabList.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.8rem; font-weight: 700; padding: 2px 9px; border-radius: 12px;">${w}</span>`).join('')}
+                          ${vocabList.map((w) => renderSpeakableVocabChipHTML(w, lesson)).join('')}
                         </div>
                       </div>`
                     : ''
